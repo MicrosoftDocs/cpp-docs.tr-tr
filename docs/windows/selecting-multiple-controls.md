@@ -18,42 +18,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 42629df8eeda1bbd2bda2057dfee619b52928cba
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 72daa8e4bebfb8a3483c26a25c1f1d253faee8c2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015594"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611988"
 ---
 # <a name="selecting-multiple-controls"></a>Birden Çok Denetim Seçme
-### <a name="to-select-multiple-controls"></a>Birden çok denetim seçin  
-  
-1.  İçinde [araç penceresi](/visualstudio/ide/reference/toolbox)seçin **işaretçi** aracı.  
-  
-2.  İletişim kutusunda istediğiniz denetimlerin çevresinde bir seçim kutusu çizmek için işaretçiyi sürükleyin.  
-  
-     Fare düğmesini bıraktığınızda, tüm denetimleri iç ve seçim kutusu seçili kesişen.  
-  
-     \- veya -  
-  
--   Basılı **Shift** basıp seçime dahil etmek istediğiniz denetimlerin tıklayın.  
-  
-     \- veya -  
-  
--   Basılı **Ctrl** basıp seçime dahil etmek istediğiniz denetimlerin tıklayın.  
-  
-### <a name="to-remove-a-control-from-a-group-of-selected-controls-or-to-add-a-control-to-a-group-of-selected-controls"></a>Bir denetim seçili denetimlerin bir gruptan kaldırmak için veya bir denetim seçili denetimlerin bir gruba eklemek için  
-  
-1.  Seçili denetimleri grubuyla basılı **Shift** basıp kaldırın veya mevcut seçime eklemek istediğiniz denetim tıklayın.  
-  
-    > [!NOTE]
-    >  Basılı **Ctrl** anahtarı ve bir seçim denetimine tıklayarak hale getirir, bu seçimdeki baskın denetim. Daha fazla bilgi için [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetimleri seçme](../windows/selecting-controls.md)   
- [İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)
+
+### <a name="to-select-multiple-controls"></a>Birden çok denetim seçin
+
+1. İçinde [araç penceresi](/visualstudio/ide/reference/toolbox)seçin **işaretçi** aracı.
+
+2. İletişim kutusunda istediğiniz denetimlerin çevresinde bir seçim kutusu çizmek için işaretçiyi sürükleyin.
+
+   Fare düğmesini bıraktığınızda, tüm denetimleri iç ve seçim kutusu seçili kesişen.
+
+   \- veya -
+
+- Basılı **Shift** basıp seçime dahil etmek istediğiniz denetimlerin tıklayın.
+
+   \- veya -
+
+- Basılı **Ctrl** basıp seçime dahil etmek istediğiniz denetimlerin tıklayın.
+
+### <a name="to-remove-a-control-from-a-group-of-selected-controls-or-to-add-a-control-to-a-group-of-selected-controls"></a>Bir denetim seçili denetimlerin bir gruptan kaldırmak için veya bir denetim seçili denetimlerin bir gruba eklemek için
+
+1. Seçili denetimleri grubuyla basılı **Shift** basıp kaldırın veya mevcut seçime eklemek istediğiniz denetim tıklayın.
+
+   > [!NOTE]
+   > Basılı **Ctrl** anahtarı ve bir seçim denetimine tıklayarak hale getirir, bu seçimdeki baskın denetim. Daha fazla bilgi için [baskın denetimi belirtme](../windows/specifying-the-dominant-control.md).
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetim Seçme](../windows/selecting-controls.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)

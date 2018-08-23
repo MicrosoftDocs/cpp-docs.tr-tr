@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 075c1ae368df59e735d90d8d98d9e8fd23ac8ad9
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5a672ce0d3397e4f69a44d7a888cdacaa467dd49
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017350"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610492"
 ---
 # <a name="moduledecrementobjectcount-method"></a>Module::DecrementObjectCount Yöntemi
-Nesne sayısını modülü tarafından izlenen azaltır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-virtual long DecrementObjectCount();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Azaltma işleminden önce sayısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL
- 
+
+Nesne sayısını modülü tarafından izlenen azaltır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual long DecrementObjectCount();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Azaltma işleminden önce sayısı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Modül Sınıfı](../windows/module-class.md)

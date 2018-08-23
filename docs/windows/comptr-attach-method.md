@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 78b5039268bd122ade815ed6040a1df546e0f293
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: f02d8585778dcb10013a5673c7443b0355535555
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641336"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600202"
 ---
 # <a name="comptrattach-method"></a>ComPtr::Attach Yöntemi
-Bu ilişkilendirir **ComPtr** geçerli bir şablon türü parametresi tarafından belirtilen arabirim türüne sahip.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void Attach(  
-   _In_opt_ InterfaceType* other  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Diğer*  
- Bir arabirim türü.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr Sınıfı](../windows/comptr-class.md)
+
+Bu ilişkilendirir **ComPtr** geçerli bir şablon türü parametresi tarafından belirtilen arabirim türüne sahip.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void Attach(
+   _In_opt_ InterfaceType* other
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Diğer*  
+Bir arabirim türü.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtr Sınıfı](../windows/comptr-class.md)

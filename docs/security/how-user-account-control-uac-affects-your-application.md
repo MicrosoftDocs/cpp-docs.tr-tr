@@ -13,16 +13,16 @@ helpviewer_keywords:
 - user accounts [C++]
 - User Account Control [C++]
 ms.assetid: 0d001870-253e-4989-b689-f78035953799
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91c5af565ac7de14d947f2376ae408caa0f890fe
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 23266ca4b4d32146ed8627c6ce3ab1cc878d59cd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013583"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600658"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın, kullanıcı hesaplarının ayrıcalıkları sınırlı bir özelliktir. Bu sitelerdeki UAC hakkında ayrıntılı bilgi bulabilirsiniz:  

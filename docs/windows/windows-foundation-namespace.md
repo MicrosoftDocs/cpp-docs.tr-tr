@@ -18,35 +18,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d82e31e75cf0180670ebdbc875628fdefcef57bb
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 0ec2fea7b0aa320a40e70a56b9980d1993cee2fa
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014643"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610686"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
-Nesne ve Fabrika oluşturma gibi temel Windows çalışma zamanı işlevleri sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-namespace Windows::Foundation;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="functions"></a>İşlevler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[ActivateInstance İşlevi](../windows/activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|  
-|[GetActivationFactory İşlevi](../windows/getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Windows  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)
+
+Nesne ve Fabrika oluşturma gibi temel Windows çalışma zamanı işlevleri sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+namespace Windows::Foundation;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="functions"></a>İşlevler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[ActivateInstance İşlevi](../windows/activateinstance-function.md)|Kaydeder ve belirtilen sınıf kimliğinde tanımlanan belirli bir türün bir örneğini alır.|
+|[GetActivationFactory İşlevi](../windows/getactivationfactory-function.md)|Şablon parametresi tarafından belirtilen tür için bir etkinleştirme üretecini alır.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Windows
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)

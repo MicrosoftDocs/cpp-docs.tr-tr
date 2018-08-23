@@ -17,26 +17,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 718a62d627f99eff24fd7c10e0280607a52e2be7
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 45c85502b7d0768f5fa3e275393a4071fd8649e4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646893"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598871"
 ---
 # <a name="eventsourcetargetspointerlock-data-member"></a>EventSource::targetsPointerLock_ Veri Üyesi
-Bunun için olay işleyicileri çalışırken bile iç veri üyelerine erişimi eşitler **EventSource** kaldırılan veya çağrılan eklenmektedir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-Wrappers::SRWLock targetsPointerLock_;  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::WRL
- 
- ## <a name="see-also"></a>Ayrıca Bkz.
- [EventSource Sınıfı](../windows/eventsource-class.md)
+
+Bunun için olay işleyicileri çalışırken bile iç veri üyelerine erişimi eşitler **EventSource** kaldırılan veya çağrılan eklenmektedir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+Wrappers::SRWLock targetsPointerLock_;
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+[EventSource Sınıfı](../windows/eventsource-class.md)

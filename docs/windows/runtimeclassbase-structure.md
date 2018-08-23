@@ -15,34 +15,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0dc0a5ac68a8d4354f3cf0f8f5df1bc698135b6f
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 1f8b2175ef001ac3b8e934bf61033ccdb7f0da9a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020128"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611668"
 ---
 # <a name="runtimeclassbase-structure"></a>RuntimeClassBase Yapısı
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-struct RuntimeClassBase;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Algılamak için kullanılan `RuntimeClass` içinde [olun](../windows/make-function.md) işlevi.  
-  
- **RuntimeClassBase** boş bir yapıdır.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `RuntimeClassBase`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+struct RuntimeClassBase;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Algılamak için kullanılan `RuntimeClass` içinde [olun](../windows/make-function.md) işlevi.
+
+**RuntimeClassBase** boş bir yapıdır.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`RuntimeClassBase`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

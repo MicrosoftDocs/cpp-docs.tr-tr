@@ -5,30 +5,30 @@ ms.date: 06/19/2018
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 5247f6c7-6a0a-4021-97c9-21c868bd9455
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66c0e6bc9d987c400c709e74586e6e37ccc0b715
-ms.sourcegitcommit: 301bb19056e5bae84ff50f7d1df1e546efe225ba
+ms.openlocfilehash: ea0ac57b178baed76e6ccb7418c778c1ba2306f4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36306001"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613308"
 ---
 # <a name="casting-ccx"></a>Atama (C + +/ CX)
 
-Dört farklı atama işleçleri uygulamak için Windows çalışma zamanı türleri: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **static_cast** dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) ayrıca derleme zamanı tür denetimi gerçekleştirir. **dynamic_cast** döndürür **nullptr** türü dönüştürme işlemi başarısız olursa. Ancak **reinterpret_cast** boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz **reinterpret_cast** dönüştürme başarılı olur bilmiyorsanız. Ayrıca, C türü Atamalar, C + kullanmamanızı öneririz +/ CX kod özdeş olduğundan **reinterpret_cast**.
+Dört farklı atama işleçleri, Windows çalışma zamanı türleri için geçerlidir: [static_cast işleci](../cpp/static-cast-operator.md), [dynamic_cast işleci](../cpp/dynamic-cast-operator.md), **safe_cast işleci**, ve [ reinterpret_cast işleci](../cpp/reinterpret-cast-operator.md). **safe_cast** ve **static_cast** dönüştürme gerçekleştirilemediğinde; bir özel durum [static_cast işleci](../cpp/static-cast-operator.md) de derleme zamanı tür denetimi gerçekleştirir. **dynamic_cast** döndürür **nullptr** türüne dönüştürme başarısız olursa. Ancak **reinterpret_cast** boş olmayan bir değer döndürür geçersiz olabilir. Bu nedenle, değil kullanmanızı öneririz **reinterpret_cast** atama başarılı olduğunu bilmiyorsanız. Ayrıca, C stili atamaları, C +'da kullanmamanızı öneririz +/ CX kod aynı olduklarından **reinterpret_cast**.
 
-Derleyici ve çalışma zamanı örtük atamalar da gerçekleştirmek — Örneğin, bir değer veya yerleşik türü geçirildiğinde bağımsız değişken olarak bir yöntem parametresi işlemleri kutulama türüdür `Object^`. Örtük bir dönüştürme işlemi, teorik olarak hiçbir zaman bu çalışma zamanında bir özel durum neden olmalıdır; Derleyici örtük bir dönüştürme gerçekleştirilemiyor, derleme sırasında bir hata oluşturur.
+Derleyici ve çalışma zamanı ayrıca örtük atamalar gerçekleştirmek — Örneğin, bir yöntem parametresi bağımsız değişken olarak bir değer türü veya yerleşik tür geçirilir, işlemleri kutulama türüdür `Object^`. Teorik olarak bir örtük tür dönüştürme hiçbir zaman çalışma zamanında bir özel durum neden olmaz; Derleyici örtük bir dönüştürme gerçekleştirilemiyor, derleme sırasında bir hata oluşturur.
 
-Windows çalışma zamanı özel durumları yerine HRESULT hata kodlarını kullanır COM bir Özet biter. Genel olarak, [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) bir alt düzey E_NOINTERFACE COM hata gösterir.
+Windows çalışma zamanı özel durumları yerine HRESULT hata kodları kullanan COM bir Özet biter. Genel olarak, [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) e_noınterface bir alt düzey COM hata gösterir.
 
 ## <a name="staticcast"></a>static_cast
 
-A **static_cast** iki türleri arasında bir devralma ilişkisi olup olmadığını belirlemek için derleme zamanında denetlenir. Türleri birbiriyle ilgili olmayan, cast derleyici hatası neden olur.
+A **static_cast** iki tür arasında devralma ilişkisi olup olmadığını belirlemek için derleme zamanında denetlenir. Atama türleri birbiriyle ilgili olmayan bir derleyici hatasına neden olur.
 
-A **static_cast** başvuru üzerinde sınıfı ayrıca bir çalışma zamanı denetimi gerçekleştirilecek neden olur. A **static_cast** bir başvuru üzerinde sınıfı derleme zamanı doğrulama geçirmek ancak hala başarısız çalışma zamanında; bu durumda bir `Platform::InvalidCastException` oluşturulur. Genel olarak, neredeyse her zaman geliştirme ve sınama sırasında çıkarabilirsiniz programlama hataları belirttiğinden, bu özel durumları işleme gerekmez.
+A **static_cast** başvuru üzerinde sınıfı da bir çalışma zamanı denetimi gerçekleştirilecek neden olur. A **static_cast** başvuru üzerinde sınıfı derleme zamanı doğrulama başarılı ancak yine de başarısız çalışma zamanında; bu durumda bir `Platform::InvalidCastException` oluşturulur. Genel olarak, neredeyse her zaman geliştirme ve test sırasında ortadan kaldırabilir programlama hatalarını belirttiğinden, bu özel durumları işlemek zorunda değilsiniz.
 
 Kullanım **static_cast** kod iki tür arasında bir ilişki açıkça bildirir ve bu nedenle emin cast çalışması gerekir.
 
@@ -43,9 +43,9 @@ Kullanım **static_cast** kod iki tür arasında bir ilişki açıkça bildirir 
 
 ## <a name="safecast"></a>safe_cast
 
-**Safe_cast** işleci Windows çalışma zamanı bir parçasıdır. Bir çalışma zamanı tür denetimi gerçekleştirir ve oluşturur bir `Platform::InvalidCastException` dönüştürme başarısız olursa. Kullanım **safe_cast** zaman bir çalışma zamanı hatası gösterdiği olağanüstü bir koşul. Birincil amacı **safe_cast** geliştirme sırasında programlama hataları belirlemenize yardımcı olur ve sonuçları ortaya çıktıkları noktada aşamaları test etme. İşlenmeyen özel hata noktası tanımladığından özel durumu işlemek gerekmez.
+**Safe_cast** işleci Windows çalışma zamanı'nın bir parçasıdır. Bir çalışma zamanı tür denetimi gerçekleştirir ve oluşturur bir `Platform::InvalidCastException` dönüştürme başarısız olursa. Kullanım **safe_cast** ne zaman bir olağanüstü durum çalışma zamanı hata gösterir. Birincil amacı **safe_cast** geliştirme sırasında programlama hataları belirlemenize yardımcı olur ve sonuçları ortaya çıktıkları noktada aşamaları test. İşlenmeyen özel hata noktasını tanımladığından işlemesi gerekmez.
 
-Safe_cast kodu ilişki bildirmiyor ancak cast çalışmalıdır eminseniz kullanın.
+Kod ilişki bildirmiyor ancak cast çalışmalıdır emin safe_cast kullanın.
 
 ```cpp
     // A and B are not related
@@ -62,7 +62,7 @@ Safe_cast kodu ilişki bildirmiyor ancak cast çalışmalıdır eminseniz kullan
 
 ## <a name="dynamiccast"></a>dynamic_cast
 
-Kullanım **dynamic_cast** cast ne zaman bir nesne (daha açık belirtmek gerekirse bir hat **^**) fazla türetilmiş bir tür için iki, hedef beklediğiniz nesne bazen olabilir **nullptr** veya dönüştürme başarısız olabilir ve bu koşulun normal kod yolu yerine bir özel durum olarak işlemek istiyorsanız. Örneğin, **boş uygulama (Evrensel Windows)** proje şablonu, `OnLaunched` app.xamp.cpp kullanır yönteminde **dynamic_cast** uygulaması penceresini içerik olup olmadığını sınamak için. İçerik yoksa, bir hata değildir; Bu beklenen bir durumdur. `Windows::Current::Content` olan bir `Windows::UI::XAML::UIElement` ve dönüştürme için bir `Windows::UI.XAML::Controls::Frame`, devralma hiyerarşisinde daha türetilmiş bir tür değil.
+Kullanım **dynamic_cast** cast ne zaman bir nesne (daha açık belirtmek gerekirse bir hat **^**) daha türetilmiş bir tür için ya da, hedef beklediğiniz nesne bazen olabilir **nullptr** veya dönüştürme başarısız olabilir ve bu koşul, bir normal kod yolu yerine bir özel durum olarak işlemek istediğiniz. Örneğin, **boş uygulama (Evrensel Windows)** proje şablonu, `OnLaunched` app.xamp.cpp kullandığı yönteminde **dynamic_cast** uygulama penceresinin içeriği olup olmadığını sınamak için. İçerik yoksa, bir hata değildir; Bu beklenen bir durumdur. `Windows::Current::Content` olan bir `Windows::UI::XAML::UIElement` ve dönüştürme bir `Windows::UI.XAML::Controls::Frame`, devralma hiyerarşisinde daha türetilmiş türü.
 
 ```cpp
 void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEventArgs^ args)
@@ -81,15 +81,15 @@ void App::OnLaunched(Windows::ApplicationModel::Activation::LaunchActivatedEvent
 }
 ```
 
-Başka bir kullanımını **dynamic_cast** araştırma için bir `Object^` paketlenmiş değer türü içerip içermediğini belirlemek için. Bu durumda, dener bir `dynamic_cast<Platform::Box>` veya `dynamic_cast<Platform::IBox>`.
+Başka bir kullanımını **dynamic_cast** araştırma için bir `Object^` paketlenmiş değer türü içerip içermediğini belirlemek için. Bu durumda, denemeden bir `dynamic_cast<Platform::Box>` veya `dynamic_cast<Platform::IBox>`.
 
 ## <a name="dynamiccast-and-tracking-references-"></a>dynamic_cast ve izleme başvuruları (%)
 
-Aynı zamanda uygulanabilir bir **dynamic_cast** izleme başvurusu, ancak bu durumda dönüştürme gibi davranır **safe_cast**. Bunu oluşturur `Platform::InvalidCastException` hatasında izleme başvurusu değeri olduğundan **nullptr**.
+Ayrıca uygulama bir **dynamic_cast** izleme başvurusu, ancak bu durumda, tür dönüştürme gibi davranır **safe_cast**. Atar `Platform::InvalidCastException` hatasında bir değeri bir izleme başvurusu olamaz çünkü **nullptr**.
 
 ## <a name="reinterpretcast"></a>reinterpret_cast
 
-Değil kullanmanızı öneririz [reinterpret_cast](../cpp/reinterpret-cast-operator.md) bir derleme zamanı denetimi ne bir çalışma zamanı denetimi yapıldığından. En kötü durumda, bir **reinterpret_cast** programlama geliştirme anında algılanmayan gidip programınızın davranışını Zarif veya yıkıcı hata neden hatalarını mümkün kılar. Bu nedenle, kullanmanızı öneririz **reinterpret_cast** ilgisiz türleri arasında dönüştürme ve Dönüştürme başarılı olur bildiğiniz yalnızca bu nadir durumlarda. Windows çalışma zamanı türü, temel alınan ABI türüne dönüştürmek için nadir bir kullanım örneği olan — bu nesne için sayım başvuru denetimin kaplayan anlamına gelir. Bunu yapmak için kullanmanız önerilir [ComPtr sınıfı](../cpp/com-ptr-t-class.md) akıllı işaretçi. Aksi takdirde, özellikle yayın arabirimde çağırmanız gerekir. Aşağıdaki örnek, bir başvuru sınıf nasıl atanabilecek gösterir bir `IInspectable*`.
+Değil kullanmanızı öneririz [reinterpret_cast](../cpp/reinterpret-cast-operator.md) çünkü bir derleme zamanı denetimi ya da bir çalışma zamanı denetimi gerçekleştirilir. En kötü durumda, bir **reinterpret_cast** programlama hatalarını geliştirme zamanında algılanmayan gidip, programın davranışını ince veya yıkıcı hatalara neden mümkün kılar. Bu nedenle, kullanmanızı öneririz **reinterpret_cast** ilgisiz türleri arasında dönüştürme gerekir ve atama başarılı olduğunu biliyorsanız, yalnızca bu nadir durumlarda. Bir Windows çalışma zamanı türü, temel alınan ABI türüne dönüştürmek için nadir kullanım örneği olan — bu başvuru sayma nesne için denetimin sürüp anlamına gelir. Bunu yapmak için kullanmanızı öneririz [ComPtr sınıfı](../cpp/com-ptr-t-class.md) akıllı işaretçi. Aksi takdirde, arabirimde özellikle sürüm çağırmanız gerekir. Aşağıdaki örnek, bir başvuru sınıfının nasıl atanabilecek gösterir. bir `IInspectable*`.
 
 ```cpp
 #include <wrl.h>
@@ -99,21 +99,21 @@ ComPtr<IInspectable> inspectable = reinterpret_cast<IInspectable*>(winRtObject);
 // ...
 ```
 
-Kullanırsanız **reinterpret_cast** oneWindows çalışma zamanı arabiriminden diğerine dönüştürmek için iki kez yayımlanacak nesnesi neden. Bu nedenle, olmayan bir dönüştürürken yalnızca bu atama kullanın[!INCLUDE[cppwrt](../cppcx/includes/cppwrt-md.md)] arabirimi.
+Kullanırsanız **reinterpret_cast** oneWindows çalışma zamanı arabiriminden diğerine dönüştürmek için nesnenin iki kez serbest bırakılması neden olur. Bu nedenle, olmayan - Visual C++ bileşen uzantıları arabirimine dönüştürülürken yalnızca bu tür dönüştürme kullanın.
 
 ## <a name="abi-types"></a>ABI türleri
 
-- ABI türleri Windows SDK üstbilgilerindeki Canlı. Üstbilgileri sonra ad alanlarını uygun şekilde, adlandırılır — Örneğin, `windows.storage.h`.
+- Windows SDK'sı üstbilgilerinde Canlı ABI türleri. Üstbilgileri sonra ad alanlarını uygun şekilde, adlandırılır — Örneğin, `windows.storage.h`.
 
-- ABI türleri canlı bir özel ad ABI — Örneğin, `ABI::Windows::Storage::Streams::IBuffer*`.
+- ABI türlerine özel bir isim uzayında ABI Canlı — Örneğin, `ABI::Windows::Storage::Streams::IBuffer*`.
 
-- Windows çalışma zamanı arabirim türü ve eşdeğer ABI türü arasında dönüştürme güvenli her zaman — diğer bir deyişle, `IBuffer^` için `ABI::IBuffer*`.
+- Bir Windows çalışma zamanı arabirimi tür ve eşdeğer ABI türü arasında dönüştürme güvenli her zaman — diğer bir deyişle, `IBuffer^` için `ABI::IBuffer*`.
 
-- Windows Çalışma Zamanı Modülü çalışma zamanı sınıf her zaman için dönüştürülüp dönüştürülmeyeceğini `IInspectable*` veya, biliniyorsa, varsayılan arabirimi.
+- Bir Windows Çalışma Zamanı Modülü çalışma zamanı sınıf her zaman değerine dönüştürülüp `IInspectable*` veya biliniyorsa, kendi varsayılan arabirim.
 
-- ABI türlerine dönüştürdükten sonra türü ömrü kendi ve COM kurallara uymalıdır. Kullanmanızı öneririz `WRL::ComPtr` ABI işaretçileri ömür yönetimini basitleştirmek için.
+- ABI türlerine dönüştürdükten sonra kendi türü ömrünü ve COM kurallara uymanız gerekir. Kullanmanızı öneririz `WRL::ComPtr` ABI işaretçiler ömrü yönetimini kolaylaştırmak için.
 
-Aşağıdaki tabloda özetlenmiştir olduğu güvenli durumları **reinterpret_cast**. Her durumda dönüştürme her iki yönde de güvenlidir.
+Aşağıdaki tabloda özetlenmiştir olduğu kullanmak üzere güvenli çalışmaları **reinterpret_cast**. Her durumda, her iki yönde de cast güvenlidir.
 
 |||
 |-|-|

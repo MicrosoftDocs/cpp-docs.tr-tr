@@ -13,77 +13,81 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1931b81a187065d4c4f04ea6f9fe91f7df0ca9b2
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: c3dc1743b0c0b795d7aaa10a7a47689de2336094
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646159"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600401"
 ---
 # <a name="how-to-activate-and-use-a-windows-runtime-component-using-wrl"></a>Nasıl yapılır: WRL Kullanarak Windows Çalışma Zamanı Bileşenini Etkinleştirme ve Kullanma
-Bu belge, Windows çalışma zamanı'nı başlatmak için Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı ve Windows çalışma zamanı bileşenini etkinleştirme ve kullanma işlemini gösterir.  
-  
- Bir bileşeni kullanmak için bileşen tarafından uygulanan türü bir arabirim işaretçisine edinmeniz gerekir. Ve Windows çalışma zamanı temel teknoloji, Bileşen Nesne Modeli (COM) olduğundan, türün bir örneğini korumak için COM kuralları izlemelidir. Örneğin, korumalıdır *başvuru sayısı* türü bellekten silindiğinde belirler.  
-  
- Windows çalışma zamanı kullanımını basitleştirmek için akıllı işaretçi şablon, Windows çalışma zamanı C++ Şablon kitaplığı sağlar [ComPtr\<T >](../windows/comptr-class.md), bu otomatik başvuru sayımı gerçekleştirir. Bir değişken bildirdiğinizde belirtin `ComPtr<` *arabirim adı* `>` *tanımlayıcı*. Bir arabirim üyesi erişmek için ok üye erişim işleci Uygula (`->`) tanımlayıcı.  
-  
+
+Bu belge, Windows çalışma zamanı'nı başlatmak için Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanmayı ve Windows çalışma zamanı bileşenini etkinleştirme ve kullanma işlemini gösterir.
+
+Bir bileşeni kullanmak için bileşen tarafından uygulanan türü bir arabirim işaretçisine edinmeniz gerekir. Ve Windows çalışma zamanı temel teknoloji, Bileşen Nesne Modeli (COM) olduğundan, türün bir örneğini korumak için COM kuralları izlemelidir. Örneğin, korumalıdır *başvuru sayısı* türü bellekten silindiğinde belirler.
+
+Windows çalışma zamanı kullanımını basitleştirmek için akıllı işaretçi şablon, Windows çalışma zamanı C++ Şablon kitaplığı sağlar [ComPtr\<T >](../windows/comptr-class.md), bu otomatik başvuru sayımı gerçekleştirir. Bir değişken bildirdiğinizde belirtin `ComPtr<` *arabirim adı* `>` *tanımlayıcı*. Bir arabirim üyesi erişmek için ok üye erişim işleci Uygula (`->`) tanımlayıcı.
+
 > [!IMPORTANT]
->  Her zaman bir arabirim işlevini çağırdığınızda, HRESULT dönüş değerini test edin.  
-  
-## <a name="activating-and-using-a-windows-runtime-component"></a>Etkinleştirme ve bir Windows çalışma zamanı bileşeni kullanma  
- Aşağıdaki adımları kullanın `Windows::Foundation::IUriRuntimeClass` özellik değerini almak bir etkinleştirme fabrikası bir Windows çalışma zamanı bileşeni oluşturma ve bu bileşen örneği oluşturma işlemini göstermek için arabirim. Bunlar ayrıca, Windows çalışma zamanı başlatma işlemini göstermektedir. Eksiksiz bir örnek aşağıda verilmiştir.  
-  
+> Her zaman bir arabirim işlevini çağırdığınızda, HRESULT dönüş değerini test edin.
+
+## <a name="activating-and-using-a-windows-runtime-component"></a>Etkinleştirme ve bir Windows çalışma zamanı bileşeni kullanma
+
+Aşağıdaki adımları kullanın `Windows::Foundation::IUriRuntimeClass` özellik değerini almak bir etkinleştirme fabrikası bir Windows çalışma zamanı bileşeni oluşturma ve bu bileşen örneği oluşturma işlemini göstermek için arabirim. Bunlar ayrıca, Windows çalışma zamanı başlatma işlemini göstermektedir. Eksiksiz bir örnek aşağıda verilmiştir.
+
 > [!IMPORTANT]
->  Genellikle bir evrensel Windows Platformu (UWP) uygulaması Windows çalışma zamanı C++ Şablon kitaplığı kullanırsınız, ancak bu örnek bir konsol uygulaması çizim için kullanılır. Gibi işlevler `wprintf_s` bir UWP uygulaması kullanılabilir değil. Bir UWP uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamaları için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).  
-  
-#### <a name="to-activate-and-use-a-windows-runtime-component"></a>Bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma için  
-  
-1.  İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ve standart C++ Kitaplığı üstbilgilerini gerekli.  
-  
-     [!code-cpp[wrl-consume-component#2](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_1.cpp)]  
-  
-     Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.  
-  
-2.  İçinde uygulamayı yürüten iş parçacığı başlatın. Her uygulamanın kendi iş parçacığı ve iş parçacığı modeli başlatmanız gerekir. Bu örnekte [Microsoft::WRL::Wrappers::RoInitializeWrapper](../windows/roinitializewrapper-class.md) belirtir ve Windows çalışma zamanı'nı başlatmak için sınıf [RO_INIT_MULTITHREADED](http://msdn.microsoft.com/library/windows/apps/br224661.aspx) iş parçacığı modeli olarak. `RoInitializeWrapper` Sınıf çağrıları `Windows::Foundation::Initialize` , yapım sırasında ve `Windows::Foundation::Uninitialize` zaman yok.  
-  
-     [!code-cpp[wrl-consume-component#3](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_2.cpp)]  
-  
-     İkinci deyim içinde [RoInitializeWrapper::HRESULT](../windows/roinitializewrapper-hresult-parens-operator.md) işleci döndürür `HRESULT` çağrısından `Windows::Foundation::Initialize`.  
-  
-3.  Oluşturma bir *etkinleştirme fabrikası* için `ABI::Windows::Foundation::IUriRuntimeClassFactory` arabirimi.  
-  
-     [!code-cpp[wrl-consume-component#4](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_3.cpp)]  
-  
-     Windows çalışma zamanı türlerini tanımlamak üzere tam olarak nitelenmiş adlar kullanır. `RuntimeClass_Windows_Foundation_Uri` Parametredir, Windows çalışma zamanı tarafından sağlanan ve gerekli çalışma zamanı sınıf adı içeren bir dize.  
-  
-4.  Başlatma bir [Microsoft::WRL::Wrappers::HString](../windows/hstring-class.md) URI temsil eden değişken `"http://www.microsoft.com"`.  
-  
-     [!code-cpp[wrl-consume-component#6](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]  
-  
-     Windows çalışma zamanı'nda Windows çalışma zamanı kullanan bir dize için bellek ayırmayın. Bunun yerine, Windows çalışma zamanı, korur ve işlemleri için kullanır ve ardından, oluşturduğunuz bir tanıtıcı arabelleğe döndürür bir arabellek, dizenin bir kopyasını oluşturur.  
-  
-5.  Kullanım `IUriRuntimeClassFactory::CreateUri` oluşturmak için Üreteç yöntemi bir `ABI::Windows::Foundation::IUriRuntimeClass` nesne.  
-  
-     [!code-cpp[wrl-consume-component#7](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_5.cpp)]  
-  
-6.  Çağrı `IUriRuntimeClass::get_Domain` değerini almak için yöntemi `Domain` özelliği.  
-  
-     [!code-cpp[wrl-consume-component#8](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_6.cpp)]  
-  
-7.  Etki alanı adı konsola yazdırma ve döndürür. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanır.  
-  
-     [!code-cpp[wrl-consume-component#9](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_7.cpp)]  
-  
-     [WindowsGetStringRawBuffer](http://msdn.microsoft.com/library/windows/apps/br224636.aspx) işlevi URI dizesinin temel alınan Unicode biçiminde alır.  
-  
- Tam bir örnek aşağıda verilmiştir:  
-  
- [!code-cpp[wrl-consume-component#1](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_8.cpp)]  
-  
-## <a name="compiling-the-code"></a>Kod Derleniyor  
- Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-component.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
-  
- `cl.exe wrl-consume-component.cpp runtimeobject.lib`  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)
+> Genellikle bir evrensel Windows Platformu (UWP) uygulaması Windows çalışma zamanı C++ Şablon kitaplığı kullanırsınız, ancak bu örnek bir konsol uygulaması çizim için kullanılır. Gibi işlevler `wprintf_s` bir UWP uygulaması kullanılabilir değil. Bir UWP uygulamasında kullanabileceğiniz işlevleri ve türleri hakkında daha fazla bilgi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md) ve [Win32 ve COM UWP uygulamaları için](/uwp/win32-and-com/win32-and-com-for-uwp-apps).
+
+#### <a name="to-activate-and-use-a-windows-runtime-component"></a>Bir Windows çalışma zamanı bileşenini etkinleştirme ve kullanma için
+
+1. İçerir (`#include`) Windows çalışma zamanı, Windows çalışma zamanı C++ Şablon kitaplığı ve standart C++ Kitaplığı üstbilgilerini gerekli.
+
+   [!code-cpp[wrl-consume-component#2](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_1.cpp)]
+
+   Öneririz, makineler'den `using namespace` kod daha okunabilir yapmak için .cpp dosyanızdaki yönergesi.
+
+2. İçinde uygulamayı yürüten iş parçacığı başlatın. Her uygulamanın kendi iş parçacığı ve iş parçacığı modeli başlatmanız gerekir. Bu örnekte [Microsoft::WRL::Wrappers::RoInitializeWrapper](../windows/roinitializewrapper-class.md) belirtir ve Windows çalışma zamanı'nı başlatmak için sınıf [RO_INIT_MULTITHREADED](http://msdn.microsoft.com/library/windows/apps/br224661.aspx) iş parçacığı modeli olarak. `RoInitializeWrapper` Sınıf çağrıları `Windows::Foundation::Initialize` , yapım sırasında ve `Windows::Foundation::Uninitialize` zaman yok.
+
+   [!code-cpp[wrl-consume-component#3](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_2.cpp)]
+
+   İkinci deyim içinde [RoInitializeWrapper::HRESULT](../windows/roinitializewrapper-hresult-parens-operator.md) işleci döndürür `HRESULT` çağrısından `Windows::Foundation::Initialize`.
+
+3. Oluşturma bir *etkinleştirme fabrikası* için `ABI::Windows::Foundation::IUriRuntimeClassFactory` arabirimi.
+
+   [!code-cpp[wrl-consume-component#4](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_3.cpp)]
+
+   Windows çalışma zamanı türlerini tanımlamak üzere tam olarak nitelenmiş adlar kullanır. `RuntimeClass_Windows_Foundation_Uri` Parametredir, Windows çalışma zamanı tarafından sağlanan ve gerekli çalışma zamanı sınıf adı içeren bir dize.
+
+4. Başlatma bir [Microsoft::WRL::Wrappers::HString](../windows/hstring-class.md) URI temsil eden değişken `"http://www.microsoft.com"`.
+
+   [!code-cpp[wrl-consume-component#6](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_4.cpp)]
+
+   Windows çalışma zamanı'nda Windows çalışma zamanı kullanan bir dize için bellek ayırmayın. Bunun yerine, Windows çalışma zamanı, korur ve işlemleri için kullanır ve ardından, oluşturduğunuz bir tanıtıcı arabelleğe döndürür bir arabellek, dizenin bir kopyasını oluşturur.
+
+5. Kullanım `IUriRuntimeClassFactory::CreateUri` oluşturmak için Üreteç yöntemi bir `ABI::Windows::Foundation::IUriRuntimeClass` nesne.
+
+   [!code-cpp[wrl-consume-component#7](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_5.cpp)]
+
+6. Çağrı `IUriRuntimeClass::get_Domain` değerini almak için yöntemi `Domain` özelliği.
+
+   [!code-cpp[wrl-consume-component#8](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_6.cpp)]
+
+7. Etki alanı adı konsola yazdırma ve döndürür. Tüm `ComPtr` ve RAII nesneleri kapsam bırakın ve otomatik olarak yayımlanır.
+
+   [!code-cpp[wrl-consume-component#9](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_7.cpp)]
+
+   [WindowsGetStringRawBuffer](http://msdn.microsoft.com/library/windows/apps/br224636.aspx) işlevi URI dizesinin temel alınan Unicode biçiminde alır.
+
+Tam bir örnek aşağıda verilmiştir:
+
+[!code-cpp[wrl-consume-component#1](../windows/codesnippet/CPP/how-to-activate-and-use-a-windows-runtime-component-using-wrl_8.cpp)]
+
+## <a name="compiling-the-code"></a>Kod Derleniyor
+
+Kodu derlemek için kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `wrl-consume-component.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.
+
+`cl.exe wrl-consume-component.cpp runtimeobject.lib`
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)

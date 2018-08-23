@@ -15,15 +15,15 @@ helpviewer_keywords:
 - CVE-2017-5753
 - Speculative Execution
 author: mamillmsft
-ms.author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abf51432e5803de001610da07d97d5bad1796085
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 378c6fe9a86cc44d80252f69367cf8c70234f469
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018851"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613252"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
 

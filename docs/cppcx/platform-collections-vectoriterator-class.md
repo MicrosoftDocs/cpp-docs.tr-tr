@@ -11,16 +11,16 @@ dev_langs:
 helpviewer_keywords:
 - VectorIterator Class
 ms.assetid: d531cb42-27e0-48a6-bf5e-c265891a18ff
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68198edb54c79d0872b3181d4ffe36df21a8cf02
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: af033a2e67885b35bb0f6341cb50f022efb14c53
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208477"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613049"
 ---
 # <a name="platformcollectionsvectoriterator-class"></a>Platform::Collections:: vectorıterator sınıfı
 Windows çalışma zamanı Ivector arabirimden türetilmiş nesneler için bir standart Şablon kitaplığı yineleyici sağlar.  

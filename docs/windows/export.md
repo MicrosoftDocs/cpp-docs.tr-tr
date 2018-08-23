@@ -17,58 +17,62 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ad5f886c4d475cb51b370ae25549387f191ab4b6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e696b3c141a83882af67e72039c164a0f917d446
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653137"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611206"
 ---
 # <a name="export"></a>dışarı aktar
-Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[export]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Dışarı** C++ öznitelik, bir veri yapısı .idl dosyasına yerleştirilmesini ve herhangi bir dil ile kullanmak için kullanılabilir hale getirir ikili ile uyumlu bir biçimde tür kitaplığında kullanılabilir olması için neden olur.  
-  
- Uygulayamazsınız **dışarı** sınıfı yalnızca Genel üyeler olsa bile bir sınıf özniteliği (denk bir **yapı**).  
-  
- Adsız dışarı aktarırsanız **enum**s veya **yapı**s, bunlar ile başlayan adlar olacaktır **__unnamed *** x*burada *x* bir sıralı sayı.  
-  
- Tür tanımları dışarı aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod nasıl kullanılacağını gösterir **dışarı** özniteliği:  
-  
-```cpp  
-// cpp_attr_ref_export.cpp  
-// compile with: /LD  
-[module(name="MyLibrary")];  
-  
-[export]  
-struct MyStruct {  
-   int i;  
-};  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**birleşim**, **typedef**, **enum**, **yapı**, veya **arabirimi**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
+
+Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[export]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Dışarı** C++ öznitelik, bir veri yapısı .idl dosyasına yerleştirilmesini ve herhangi bir dil ile kullanmak için kullanılabilir hale getirir ikili ile uyumlu bir biçimde tür kitaplığında kullanılabilir olması için neden olur.
+
+Uygulayamazsınız **dışarı** sınıfı yalnızca Genel üyeler olsa bile bir sınıf özniteliği (denk bir **yapı**).
+
+Adlandırılmamış bir dışa aktarmak istemiyorsanız **enum** veya **yapı**, ile başlayan bir ad verilir **__unnamed**<em>x</em>burada *x* sıralı bir sayıdır.
+
+Tür tanımları dışarı aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod nasıl kullanılacağını gösterir **dışarı** özniteliği:
+
+```cpp
+// cpp_attr_ref_export.cpp
+// compile with: /LD
+[module(name="MyLibrary")];
+
+[export]
+struct MyStruct {
+   int i;
+};
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**birleşim**, **typedef**, **enum**, **yapı**, veya **arabirimi**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  

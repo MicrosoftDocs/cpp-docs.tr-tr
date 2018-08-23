@@ -17,94 +17,100 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c9a7caba7ccfb8f5764a1f460835ff540c838975
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 0f033fc20fac656e6b9fcfa9ac822099ea929d62
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641047"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611811"
 ---
 # <a name="classfactory-class"></a>ClassFactory Sınıfı
-Temel işlevselliğini uygular `IClassFactory` arabirimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template <  
-   typename I0 = Details::Nil,  
-   typename I1 = Details::Nil,  
-   typename I2 = Details::Nil  
->  
-class ClassFactory : public Details::RuntimeClass<  
-   typename Details::InterfaceListHelper<IClassFactory,   
-   I0,   
-   I1,   
-   I2,   
-   Details::Nil>::TypeT,   
-   RuntimeClassFlags<ClassicCom | InhibitWeakReference>,   
-      false>;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *I0*  
- Sıfırıncı arabirim.  
-  
- *I1*  
- İlk arabirim.  
-  
- *I2*  
- İkinci arabirim.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yazılımınız **ClassFactory** Fabrika kullanıcı tanımlı bir uygulama sağlamak için.  
-  
- Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](../windows/implements-structure.md) yapısı üzerinde bir sınıf üreteci üçten fazla arabirimleri belirtin.  
-  
- `struct MyFactory : ClassFactory<Implements<I1, I2, I3>, I4, I5>`  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[ClassFactory::ClassFactory Oluşturucusu](../windows/classfactory-classfactory-constructor.md)||  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ClassFactory** nesne.|  
-|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.|  
-|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirim işaretçisi alır.|  
-|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Başvuru için geçerli sayısını azaltır **ClassFactory** nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `I0`  
-  
- `ChainInterfaces`  
-  
- `I0`  
-  
- `RuntimeClassBase`  
-  
- `ImplementsHelper`  
-  
- `DontUseNewUseMake`  
-  
- `RuntimeClassFlags`  
-  
- `RuntimeClassBaseT`  
-  
- `RuntimeClass`  
-  
- `ClassFactory`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)   
- [RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)
+
+Temel işlevselliğini uygular `IClassFactory` arabirimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <
+   typename I0 = Details::Nil,
+   typename I1 = Details::Nil,
+   typename I2 = Details::Nil
+>
+class ClassFactory : public Details::RuntimeClass<
+   typename Details::InterfaceListHelper<IClassFactory,
+   I0,
+   I1,
+   I2,
+   Details::Nil>::TypeT,
+   RuntimeClassFlags<ClassicCom | InhibitWeakReference>,
+      false>;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*I0*  
+Sıfırıncı arabirim.
+
+*I1*  
+İlk arabirim.
+
+*I2*  
+İkinci arabirim.
+
+## <a name="remarks"></a>Açıklamalar
+
+Yazılımınız **ClassFactory** Fabrika kullanıcı tanımlı bir uygulama sağlamak için.
+
+Aşağıdaki programlama deseni nasıl kullanılacağını gösteren [uygular](../windows/implements-structure.md) yapısı üzerinde bir sınıf üreteci üçten fazla arabirimleri belirtin.
+
+`struct MyFactory : ClassFactory<Implements<I1, I2, I3>, I4, I5>`
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[ClassFactory::ClassFactory Oluşturucusu](../windows/classfactory-classfactory-constructor.md)||
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[ClassFactory::AddRef Metodu](../windows/classfactory-addref-method.md)|Geçerli başvuru sayısını artırır **ClassFactory** nesne.|
+|[ClassFactory::LockServer Metodu](../windows/classfactory-lockserver-method.md)|Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.|
+|[ClassFactory::QueryInterface Metodu](../windows/classfactory-queryinterface-method.md)|Parametresi tarafından belirtilen arabirim işaretçisi alır.|
+|[ClassFactory::Release Metodu](../windows/classfactory-release-method.md)|Başvuru için geçerli sayısını azaltır **ClassFactory** nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`I0`
+
+`ChainInterfaces`
+
+`I0`
+
+`RuntimeClassBase`
+
+`ImplementsHelper`
+
+`DontUseNewUseMake`
+
+`RuntimeClassFlags`
+
+`RuntimeClassBaseT`
+
+`RuntimeClass`
+
+`ClassFactory`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)  
+[RuntimeClassType Sabit Listesi](../windows/runtimeclasstype-enumeration.md)

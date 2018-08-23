@@ -18,26 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8de31ab9009a84c04e594837a0c4fbf30758fea
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: f7cbfd0e8b9ef95aac083b367980571c5535e6a7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694634"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599048"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
-C++ hızlandırılmış yoğun paralellik (C++ AMP), bir grafik işlemci birimi (GPU) gibi veri paralel donanım üzerinde ayrı ekran kartı yararlanarak C++ kod yürütmeyi hızlandırır. C++ AMP kullanarak, böylece heterojen donanımda paralellik kullanarak yürütme hızlandırılabilir çok boyutlu veri algoritmaları kodlayabilirsiniz. Çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve matematiksel işlev kitaplığının C++ AMP programlama modeli içerir. C++ AMP dil uzantıları, böylece performansı artırabilir nasıl veriler CPU'su tarafından GPU ve geri taşınır denetlemek için kullanabilirsiniz.  
+C++ Accelerated Massive Parallelism (C++ AMP) ayrı ekran kartı üzerindeki grafik işlemci birimi (GPU) gibi veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP kullanarak çok boyutlu veri algoritmaları kodlayabilirsiniz, böylece türdeş olmayan donanımda paralellik kullanarak yürütme hızlandırılabilir. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını performansı artırabilirsiniz, böylece nasıl verilerin CPU'dan GPU'ya ve geri taşındığını kontrol etmek için kullanabilirsiniz.  
   
 ## <a name="system-requirements"></a>Sistem Gereksinimleri  
   
-- [!INCLUDE[win7](../../build/includes/win7_md.md)], [!INCLUDE[win8](../../build/reference/includes/win8_md.md)], [!INCLUDE[winsvr08_r2](../../parallel/amp/includes/winsvr08_r2_md.md)], veya [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)]  
+- Windows 7, Windows 8, Windows Server 2008 R2 veya Windows Server 2012  
   
--   DirectX 11 özelliği düzeyi 11.0 veya üstü donanım  
+- DirectX 11 özelliği düzey 11.0 veya daha sonraki bir donanım  
   
--   Yazılım öykünücüsünde hata ayıklama için [!INCLUDE[win8](../../build/reference/includes/win8_md.md)] veya [!INCLUDE[winserver8](../../build/reference/includes/winserver8_md.md)] gereklidir. Donanımda hata ayıklamak için grafik kartınız için sürücüleri yüklemeniz gerekir. Daha fazla bilgi için bkz: [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).  
+- Yazılım benzetmesi üzerinde hata ayıklama için Windows 8 veya Windows Server 2012 gereklidir. Donanım üzerinde hata ayıklamak için ekran kartınızın sürücülerini yüklemeniz gerekir. Daha fazla bilgi için [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code).  
   
 ## <a name="introduction"></a>Giriş  
- C++ AMP'ın birincil bileşenlerini aşağıdaki iki örnek gösterilmektedir. İki boyutlu diziler karşılık gelen öğelerini eklemek istediğinizi varsayalım. Örneğin, eklemek isteyebilirsiniz `{1, 2, 3, 4, 5}` ve `{6, 7, 8, 9, 10}` almak için `{7, 9, 11, 13, 15}`. C++ AMP kullanmadan, sayıları ve sonuçları görüntülemek için aşağıdaki kodu yazabilirsiniz.  
+ 
+Aşağıdaki iki örnek C++ AMP birincil bileşenlerini göstermektedir. Karşılık gelen öğelerle iki tek boyutlu diziler eklemek istediğinizi varsayalım. Örneğin, eklemek isteyebilirsiniz `{1, 2, 3, 4, 5}` ve `{6, 7, 8, 9, 10}` edinme `{7, 9, 11, 13, 15}`. C++ AMP kullanmadan sayıları toplamak ve sonuçları görüntülemek için aşağıdaki kodu yazabilirsiniz.  
   
 ```cpp  
 #include <iostream>  
@@ -58,16 +59,15 @@ void StandardMethod() {
         std::cout << sumCPP[idx] << "\n";  
     }  
 }  
-  
 ```  
   
- Kod önemli kısımlarını aşağıdaki gibidir:  
+Kodun önemli bölümleri aşağıdaki gibidir:  
   
--   Veri: Veriler üç dizi oluşur. Aynı derece (bir) ve uzunluğu (beş) sahip.  
+- Veri: Veri üç diziden oluşur. Tümü aynı boyut sayısına (bir) ve uzunluğa (beş) sahiptir.  
   
--   Yineleme: İlk `for` döngü öğeleri diziler üzerinden yineleme için bir mekanizma sağlar. Toplamları hesaplamak için çalıştırmak istediğiniz kod ilk bulunan `for` bloğu.  
+- Yineleme: İlk `for` döngüsü dizilerde öğelerin arasında dolaşmak için bir mekanizma sağlar. Toplamları hesaplamak için yürütmek istediğiniz kod ilk bulunan `for` blok.  
   
--   Dizin: `idx` değişkeni dizi ayrı ayrı öğeler erişir.  
+- Dizin: `idx` değişkeni dizilerin tek tek öğelerine erişir.  
   
  C++ AMP kullanarak, aşağıdaki kodu yerine yazabilirsiniz.  
   
@@ -105,21 +105,22 @@ void CppAmpMethod() {
 }  
 ```  
   
- Aynı temel öğeleri var, ancak C++ AMP yapıları kullanılır:  
+Aynı temel öğeler vardır, ancak C++ AMP yapıları kullanılır:  
   
--   Veri: C++ dizileri üç C++ AMP oluşturmak için kullandığınız [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri. Oluşturmak için dört değerlerini sağlamak bir `array_view` nesnesi: veri değerleri, derecesini, öğe türü ve uzunluğu `array_view` her boyut nesnesi. Rank ve türü türü parametreleri olarak geçirilir. Veri ve uzunluğu Oluşturucusu parametre olarak geçirilir. Bu örnekte, oluşturucuya iletilen C++ tek boyutlu dizidir. Rank ve uzunluğu verileri dikdörtgen şekline oluşturmak için kullanılan `array_view` nesne ve veri değerleri dizisi doldurmak için kullanılır. Çalışma zamanı kitaplığı da içerir [array sınıfı](../../parallel/amp/reference/array-class.md), benzer bir arabirimi olan `array_view` sınıfı ve bu makalenin sonraki bölümlerinde ele alınmıştır.  
+- Veri: C++ dizilerini üç C++ AMP oluşturmak için kullandığınız [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri. Oluşturmak için 4 değer sağlarsınız bir `array_view` nesne: veri değerleri, boyut, öğe türü ve uzunluğunu `array_view` her boyutundaki nesne. Boyut sayısı ve türü, tür parametreleri geçirilir. Veri ve uzunluk Oluşturucu parametreler olarak geçirilir. Bu örnekte, oluşturucuya iletilen C++ dizisi tek boyutlu. Boyut sayısı ve uzunluğu dikdörtgen şeklindeki verileri oluşturmak için kullanılan `array_view` nesnesi ve veri değerleri diziyi doldurmak için kullanılır. Ayrıca çalışma zamanı kitaplığı içeren [array sınıfı](../../parallel/amp/reference/array-class.md), benzer bir arabirim olduğu `array_view` sınıfı ve bu makalenin sonraki bölümlerinde ele alınmıştır.  
   
--   Yineleme: [parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri yineleme için bir mekanizma sağlar veya *etki alanı işlem*. Bu örnekte, işlem etki alanı tarafından belirtilen `sum.extent`. Çalıştırmak istediğiniz kod lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP hızlandırabilir C++ dili alt kullanıldığını belirtir.  
+- Yineleme: [parallel_for_each işlevi (C++ AMP)](reference/concurrency-namespace-functions-amp.md#parallel_for_each) veri öğeleri boyunca yineleme için bir mekanizma sağlar veya *hesaplama alanı*. Bu örnekte, hesaplama alanı tarafından belirtilen `sum.extent`. Yürütmek istediğiniz kod bir lambda ifadesinde bulunan veya *çekirdek işlevi*. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.  
   
--   Dizin: [index sınıfı](../../parallel/amp/reference/index-class.md) değişkeni `idx`, bir derecesini eşleşecek şekilde bir derece bildirilmiş `array_view` nesnesi. Dizini kullanarak, ayrı ayrı öğeler erişebilirsiniz `array_view` nesneleri.  
+- Dizin: [index sınıfı](../../parallel/amp/reference/index-class.md) değişken `idx`, bir boyut sayısı eşleştirilecek derecesi ile bildirilen `array_view` nesne. Dizini kullanarak, tek tek öğelerine erişebilirsiniz `array_view` nesneleri.  
   
-## <a name="shaping-and-indexing-data-index-and-extent"></a>Şekillendirme ve dizin oluşturma verileri: dizin ve kapsamı  
- Veri değerleri tanımlayın ve çekirdek kod çalıştırmadan önce veri şekli bildirin. Tüm verileri bir dizi (dikdörtgen) olarak tanımlanır ve tüm dereceye (dimensions sayısı) için dizi tanımlayabilirsiniz. Veri boyutları hiçbirinde herhangi bir boyutta olabilir.  
+## <a name="shaping-and-indexing-data-index-and-extent"></a>Veri şekillendirme ve dizinleme: dizin ve kapsam  
+ 
+Veri değerlerini tanımlamalı ve verinin şeklini çekirdek kodu çalıştırmadan önce bildirme gerekir. Tüm verileri bir dizi olarak (dikdörtgen) olacak şekilde tanımlandı ve herhangi bir boyut (boyut sayısı) için bir dizi tanımlayabilirsiniz. Veriler, herhangi bir boyutta herhangi bir büyüklükte olabilir.  
   
 ### <a name="index-class"></a>index Sınıfı  
- [İndex sınıfı](../../parallel/amp/reference/index-class.md) bir konumda belirtir `array` veya `array_view` her boyutundaki başlangıç uzaklığı bir nesnesine Kapsüllenen nesne. Bir dizi konumda eriştiğinizde, geçirdiğiniz bir `index` dizin oluşturma işleci nesnesine `[]`, tamsayı dizinler listesi yerine. Her boyut öğeleri kullanarak erişebilirsiniz [array:: operator() işleci](reference/array-class.md#operator_call) veya [array_view:: operator() işleci](reference/array-view-class.md#operator_call).  
+[İndex sınıfı](../../parallel/amp/reference/index-class.md) bir konumu belirtir `array` veya `array_view` her boyuttaki başlangıca olan uzaklığı tek bir nesneye Kapsüllenen nesne. Dizideki bir konuma eriştiğinizde, geçirdiğiniz bir `index` nesne dizinleme işlecine `[]`, bir tamsayı dizin listesi yerine. Kullanarak, her boyuttaki öğelere erişebilirsiniz [array:: operator() işleci](reference/array-class.md#operator_call) veya [array_view:: operator() işleci](reference/array-view-class.md#operator_call).  
   
- Aşağıdaki örnek, üçüncü öğe içinde tek boyutlu belirtir tek boyutlu bir dizin oluşturur `array_view` nesnesi. Dizin üçüncü öğesinde yazdırmak için kullanılan `array_view` nesnesi. Çıktı 3'tür.  
+Aşağıdaki örnek, bir tek boyutlu üçüncü öğeyi belirten bir tek boyutlu bir dizin oluşturur. `array_view` nesne. Dizin üçüncü öğeyi yazdırmak için kullanılan `array_view` nesne. Çıktı 3'tür.  
   
 ```cpp  
 int aCPP[] = {1, 2, 3, 4, 5};  
@@ -131,7 +132,7 @@ std::cout << a[idx] << "\n";
 // Output: 3  
 ```  
   
- Aşağıdaki örnek, öğe belirtir iki boyutlu bir dizin oluşturur. burada satır = 1 ve sütun 2'de iki boyutlu bir = `array_view` nesnesi. İlk parametreyi `index` Oluşturucusu satır bileşenidir ve ikinci parametre sütun bileşendir. Çıktı 6'dır.  
+Aşağıdaki örnek, olan öğeyi belirten bir iki boyutlu bir dizin oluşturur. burada satır = 1 ve sütun 2'de bir iki boyutlu = `array_view` nesne. İlk parametre `index` oluşturucudur satır bileşeni ve ikinci parametre de sütun bileşenidir. Çıkış 6'dır.  
   
 ```cpp  
 int aCPP[] = {1, 2, 3, 4, 5, 6};  
@@ -143,7 +144,7 @@ std::cout <<a[idx] << "\n";
 // Output: 6  
 ```  
   
- Aşağıdaki örnek, öğe belirtir üç boyutlu bir dizin oluşturur. burada derinliği = 0, satır = 1 ve sütun 3'te bir üç boyutlu = `array_view` nesnesi. İlk parametre derinliği bileşenidir, ikinci parametre satır bileşenidir ve üçüncü parametre sütun bileşendir dikkat edin. Çıktı 8'dir.  
+Aşağıdaki örnek, olan öğeyi belirten bir üç boyutlu bir dizin oluşturur. burada derinliği 0, satır = 1 ve sütun 3'te bir üç boyutlu = `array_view` nesne. İlk parametrenin derinlik bileşeni olduğundan, ikinci parametre satır bileşeni olduğu ve üçüncü parametre de sütun bileşenidir dikkat edin. Çıkış 8'dir.  
   
 ```cpp  
 int aCPP[] = {  
@@ -160,7 +161,7 @@ std::cout << a[idx] << "\n";
 ```  
   
 ### <a name="extent-class"></a>extent Sınıfı  
- [Extent sınıfı](../../parallel/amp/reference/extent-class.md) veriler her boyut belirtir `array` veya `array_view` nesnesi. Bir kapsam oluşturabilir ve oluşturmak için kullanın bir `array` veya `array_view` nesnesi. Varolan ölçüde de alabilirsiniz `array` veya `array_view` nesnesi. Aşağıdaki örnekte her boyut içindeki kapsamı uzunluğu yazdırır bir `array_view` nesnesi.  
+[Extent sınıfı](../../parallel/amp/reference/extent-class.md) her boyutundaki verinin uzunluğunu belirtir `array` veya `array_view` nesne. Bir uzantı oluşturma ve oluşturmak için kullanmak bir `array` veya `array_view` nesne. Ayrıca, varolan bir ölçüde alabilirsiniz `array` veya `array_view` nesne. Aşağıdaki örnek her boyutunun kapsam uzunluğunu yazdırır bir `array_view` nesne.  
   
 ```cpp  
 int aCPP[] = {  
@@ -175,7 +176,7 @@ std::cout << "The depth is " << a.extent[0] << "\n";
 std::cout << "Length in most significant dimension is " << a.extent[0] << "\n";  
 ```  
   
- Aşağıdaki örnekte bir `array_view` aynı olan nesneyi boyutları önceki örnekte, ancak bu örnek nesne olarak kullandığı bir `extent` açık parametrelerinde kullanmak yerine nesne `array_view` Oluşturucusu.  
+Aşağıdaki örnek, oluşturur bir `array_view` aynı nesne boyutlarını önceki örnekte, ancak bu örnek nesne olarak kullandığı bir `extent` içinde belirli parametreler yerine nesne `array_view` Oluşturucusu.  
   
 ```cpp  
 int aCPP[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24};  
@@ -188,11 +189,12 @@ std::cout << "The number of rows is " << a.extent[1] << "\n";
 std::cout << "The depth is " << a.extent[0] << "\n";  
 ```  
   
-## <a name="moving-data-to-the-accelerator-array-and-arrayview"></a>Hızlandırıcı veri taşıma: dizi ve array_view  
- Hızlandırıcı veri taşımak için kullanılan iki veri kapsayıcı Çalışma Zamanı Kitaplığı'nda tanımlanır. Bunlar [array sınıfı](../../parallel/amp/reference/array-class.md) ve [array_view sınıfı](../../parallel/amp/reference/array-view-class.md). `array` Sınıftır nesnesi oluşturulduğunda, veri derin bir kopyasını oluşturan bir kapsayıcı. `array_view` Çekirdek işlevi veri eriştiğinde, verileri kopyalayan bir sarmalayıcı sınıfı bir sınıftır. Veri kaynağı cihazda verileri gerektiğinde geri kopyalanır.  
+## <a name="moving-data-to-the-accelerator-array-and-arrayview"></a>Veri hızlandırıcıya taşıma: array ve array_view  
+ 
+Veri hızlandırıcıya taşımakta kullanılan iki veri kapsayıcı çalışma zamanı kitaplığında tanımlanır. Bunlar [array sınıfı](../../parallel/amp/reference/array-class.md) ve [array_view sınıfı](../../parallel/amp/reference/array-view-class.md). `array` Nesne oluşturulduğunda verinin derin kopya oluşturan bir kapsayıcı sınıfı. `array_view` Veriyi çekirdek işlevi veriye eriştiğinde kopyalayan sarmalayıcı sınıfı. Veri kaynağı cihazda gerektiğinde veri geri kopyalanır.  
   
 ### <a name="array-class"></a>array Sınıfı  
- Zaman bir `array` nesne yapılandırılmıştır, veri kümesi için bir işaretçi içeren bir oluşturucu kullanırsanız, verilerin derin bir kopyasını Hızlandırıcı üzerinde oluşturulur. Çekirdek işlevi Hızlandırıcı kopyasında değişiklik yapar. Çekirdek işlevi yürütme tamamlandığında, veri kaynağı veri yapısı geri kopyalamanız gerekir. Aşağıdaki örnekte bir vektör her bir öğe tarafından 10 çarpar. Çekirdek işlevi tamamlandıktan sonra `vector conversion operator` vektör nesnesine verileri kopyalamak için kullanılır.  
+Olduğunda bir `array` nesnesi oluşturulduğunda, veri kümesi için bir işaretçi içeren bir oluşturucu kullanırsanız, verileri bir derin kopyası Hızlandırıcı üzerinde yaratılır. Çekirdek işlevi Hızlandırıcı üzerindeki kopyada değişiklik yapar. Çekirdek işlevinin yürütülmesi tamamlandığında, veriyi kaynak veri yapısına geri kopyalamanız gerekir. Aşağıdaki örnek, bir vektör içindeki her öğeyi 10 ile çarpar. Çekirdek işlevi tamamlandıktan sonra `vector conversion operator` veriyi vektör nesnesine geri kopyalamak için kullanılır.  
   
 ```cpp  
 std::vector<int> data(5);
@@ -218,28 +220,28 @@ for (int i = 0; i < 5; i++)
 ```  
   
 ### <a name="arrayview-class"></a>array_view Sınıfı  
- `array_view` Neredeyse aynı üyelere sahip `array` sınıfı, temel alınan davranış değildir ancak aynı. Veri geçirilen `array_view` Oluşturucusu çoğaltılmaz GPU üzerinde sahip olduğu gibi bir `array` Oluşturucusu. Bunun yerine, çekirdek işlevi çalıştırıldığında verileri Hızlandırıcı kopyalanır. Bu nedenle, iki oluşturursanız `array_view` aynı veri kullanan nesnelerinin her ikisi de `array_view` nesneleri aynı bellek alanına bakın. Bunu yaptığınızda, herhangi bir birden çok iş parçacıklı erişim eşitlemesi gerekir. Kullanmanın ana avantajı `array_view` sınıfı, yalnızca gerekli olduğunda veri taşınır.  
+`array_view` Hemen hemen aynı üyelere sahiptir `array` sınıfı, ancak arka plandaki davranışı aynı değildir. Aktarılan veriler `array_view` Oluşturucusu çoğaltılmaz GPU üzerinde sahip olduğu gibi bir `array` Oluşturucusu. Bunun yerine, veri çekirdek işlev çalıştırıldığında hızlandırıcıya kopyalanır. Bu nedenle, iki oluşturursanız `array_view` aynı verileri kullanan nesneler her ikisi de `array_view` nesneleri aynı bellek alanına bakın. Bunu yaptığınızda, herhangi bir çok iş parçacıklı erişimi eşitlemeniz gerekir. Kullanmanın ana avantajı `array_view` sınıfı, yalnızca gerekli olduğunda veri taşınır.  
   
-### <a name="comparison-of-array-and-arrayview"></a>Dizi ve array_view karşılaştırması  
- Aşağıdaki tabloda benzerlikleri özetler ve arasındaki farklar `array` ve `array_view` sınıfları.  
+### <a name="comparison-of-array-and-arrayview"></a>Array ve array_view karşılaştırması  
+Aşağıdaki tabloda benzerlikler özetler ve arasındaki farklar `array` ve `array_view` sınıfları.  
   
 |Açıklama|array sınıfı|array_view sınıfı|  
 |-----------------|-----------------|-----------------------|  
-|Rank zaman belirlenir|Derleme zamanında.|Derleme zamanında.|  
-|Ölçüde zaman belirlenir|Çalışma zamanında.|Çalışma zamanında.|  
+|Boyut sayısı belirlendiğinde|Derleme zamanında.|Derleme zamanında.|  
+|Kapsam belirlendiğinde|Çalışma zamanında.|Çalışma zamanında.|  
 |Şekil|Dikdörtgen.|Dikdörtgen.|  
-|Veri depolama|Bir veri kapsayıcıdır.|Bir veri sarmalayıcı olur.|  
-|Kopyala|Tanımı açık ve derin kopya.|Çekirdek işlevi tarafından erişildiğinde örtük kopyalayın.|  
-|Veri alma|Dizi veri kopyalamak için bir nesne CPU iş parçacığı üzerinde yedekleyin.|Doğrudan erişimi tarafından `array_view` nesne veya göre çağırma [array_view::synchronize yöntemi](reference/array-view-class.md#synchronize) özgün kapsayıcı verileri erişmeye devam etmek için.|  
+|Veri depolama|Bir veri kapsayıcıdır.|Bir veri sarmalayıcıdır.|  
+|Kopyala|Tanım anında açık ve derin kopya.|Çekirdek işlevi kullanılarak erişildiğinde örtülü kopya.|  
+|Veri alma|Dizin verisini CPU iş parçacığında bir nesneye geri kopyalayarak.|Doğrudan erişerek `array_view` nesne veya çağırarak [array_view::synchronize metodu](reference/array-view-class.md#synchronize) orijinal kapsayıcıdan veri erişmeye devam etmek için.|  
   
-### <a name="shared-memory-with-array-and-arrayview"></a>Dizi ve array_view içeren paylaşılan bellek  
- Paylaşılan bellek hem CPU hem de Hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımını ortadan kaldırır veya CPU ve Hızlandırıcı arasında veri kopyalama yükünü önemli ölçüde azaltır. Bellek paylaşılmasına karşın, hem CPU hem de Hızlandırıcı tarafından eşzamanlı olarak erişilemez ve bunun nedenle tanımsız davranışlara neden olur.  
+### <a name="shared-memory-with-array-and-arrayview"></a>Array ve array_view ile paylaşılan bellek  
+Paylaşılan bellek, CPU ve Hızlandırıcı tarafından erişilebilen bellektir. Paylaşılan bellek kullanımı ortadan kaldırır veya CPU ve Hızlandırıcı arasında veri kopyalama yükünü önemli ölçüde azaltır. Belleğin paylaşılmasına rağmen CPU ve Hızlandırıcı tarafından aynı anda erişilemez ve bunu yaparsanız, bu nedenle tanımsız davranışa neden olur.  
   
- `array` nesneleri ilişkili Hızlandırıcı destekliyorsa, paylaşılan bellek kullanımı üzerinde ayrıntılı denetim belirtmek için kullanılabilir. Hızlandırıcı paylaşılan bellek destekleyip desteklemediğini Hızlandırıcı tarafından 's belirlenir [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndürür özelliği `true` paylaşılan bellek olduğunda desteklenir. Paylaşılan bellek destekleniyorsa, varsayılan [access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) için bellek ayırma Hızlandırıcı üzerinde tarafından belirlenir `default_cpu_access_type` özelliği. Varsayılan olarak, `array` ve `array_view` nesneleri almak için aynı `access_type` ilişkili birincil olarak `accelerator`.  
+`array` nesneleri paylaşılan belleğin kullanımı üzerinde ayrıntılı denetim ilgili Hızlandırıcı desteklerse belirtmek için kullanılabilir. Bir Hızlandırıcı paylaşılan belleği destekleyip desteklemediğini hızlandırıcının belirlenir [supports_cpu_shared_memory](reference/accelerator-class.md#supports_cpu_shared_memory) döndüren özellik **true** paylaşılan bellek destekliyorsa. Paylaşılan bellek destekleniyorsa, varsayılan [access_type numaralandırması](reference/concurrency-namespace-enums-amp.md#access_type) bellek ayırmaları hızlandırıcıda göre belirlenir `default_cpu_access_type` özelliği. Varsayılan olarak, `array` ve `array_view` nesneler aynı devralır `access_type` ilişkili birincil olarak `accelerator`.  
   
- Ayarlayarak [array::cpu_access_type veri üyesi](reference/array-class.md#cpu_access_type) özelliği bir `array` açıkça, böylece uygulama donanım performansı için en iyi duruma getirebilirsiniz alıştırma hassas nasıl paylaşılan bellek kullanılır, kontrol edebilirsiniz Hesaplama tekrar bellek erişim düzenlerini esas alarak özellikleri. Bir `array_view` aynı yansıtır `cpu_access_type` olarak `array` ; ile ilişkili veya array_view bir veri kaynağı oluşturulursa, `access_type` ilk depolama alanı ayırmak neden ortamı yansıtır. İlk (CPU) ana bilgisayar tarafından erişilen, CPU veri kaynağı ve paylaşımlar oluşturulan gibi diğer bir deyişle, sonra da davranır `access_type` , `accelerator_view` ilk varsa ancak tarafından erişilen; yakalama ile ilişkili bir `accelerator_view`, onu değilmiş gibi davranır sonra üzerinde oluşturulan bir `array` üzerinde oluşturulan `accelerator_view` ve paylaşımları `array`'s `access_type`.  
+Ayarlayarak [array::cpu_access_type veri üyesi](reference/array-class.md#cpu_access_type) özelliği bir `array` açıkça, böylece uygulamanın donanımının performans için en iyi duruma getirebilirsiniz alıştırma ayrıntılı nasıl paylaşılan bellek kullanılır, denetleyebilirsiniz Hesaplama çekirdeklerinin bellek erişim düzenlerini esas alarak özellikleri. Bir `array_view` aynı `cpu_access_type` olarak `array` ; ile ilişkili veya array_view veri kaynağı olmadan oluşturulursa, `access_type` öncelikle depoyu dağıtmaya neden olan ortamı etkiler. Bu ilk (CPU) ana bilgisayar tarafından erişilirse, CPU veri kaynağı ve paylaşımları üzerinde oluşturulmuş gibi diğer bir deyişle, ardından davranır `access_type` , `accelerator_view` yakalamayla ilişkilendirilen; ancak ilk olarak ancak tarafından erişilen bir `accelerator_view`, sanki olarak davranır üzerinde oluşturulan bir `array` üzerinde oluşturulan `accelerator_view` ve paylaşımları `array`'s `access_type`.  
   
- Aşağıdaki kod örneği, varsayılan Hızlandırıcı paylaşılan bellek destekler ve farklı cpu_access_type yapılandırmalarının birkaç diziler oluşturur olup olmadığını belirlemek gösterilmiştir.  
+Aşağıdaki kod örneği, varsayılan hızlandırıcının paylaşılan belleği destekleyen ve ardından farklı cpu_access_type yapılandırmalarına sahip çeşitli diziler oluşturur olup olmadığını belirlemek gösterilmektedir.  
   
 ```cpp  
 #include <amp.h>  
@@ -279,8 +281,9 @@ int main()
 }  
 ```  
   
-## <a name="executing-code-over-data-parallelforeach"></a>Kod veri yürütme: parallel_for_each  
- [Parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) işlevi tanımlayan Hızlandırıcı verileri karşı çalıştırmak istediğiniz kod `array` veya `array_view` nesnesi. Giriş, bu konunun aşağıdaki kodu göz önünde bulundurun.  
+## <a name="executing-code-over-data-parallelforeach"></a>Veriye göre kod yürütme: parallel_for_each  
+ 
+[Parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) işlevi veriye karşı Hızlandırıcı üzerinde çalıştırmak istediğiniz kodu tanımlar `array` veya `array_view` nesne. Aşağıdaki kod bu konunun girişindeki göz önünde bulundurun.  
   
 ```cpp  
 #include <amp.h>  
@@ -310,13 +313,13 @@ void AddArrays() {
 }  
 ```  
   
- `parallel_for_each` Yöntemi iki bağımsız değişken, bir işlem etki alanı ve bir lambda ifadesi alır.  
+`parallel_for_each` Yöntemi iki bağımsız değişken, bir hesaplama alanı ve bir lambda ifadesi alır.  
   
- *Etki alanı işlem* olan bir `extent` nesnesi veya bir `tiled_extent` Paralel yürütme için oluşturmak için iş parçacığı kümesini tanımlayan nesne. Hesaplama etki alanındaki her öğe için bir iş parçacığı oluşturulur. Bu durumda, `extent` nesnesi tek boyutlu ve beş öğesine sahip. Bu nedenle, beş iş parçacığı başlatılır.  
+*Hesaplama alanı* olduğu bir `extent` nesnesi veya bir `tiled_extent` paralel yürütmek için Yaratılacak iş parçacıkları kümesini tanımlayan nesne. Hesaplama etki alanındaki her öğe için bir iş parçacığı oluşturulur. Bu durumda, `extent` nesnesi tek boyutludur ve beş öğeye sahiptir. Bu nedenle, beş iş parçacığı başlatılır.  
   
- *Lambda ifadesi* her iş parçacığı üzerinde çalıştırmak için kod tanımlar. Yakalama yan tümcesi `[=]`, lambda ifadesi gövdesi, bu durumda olan değer ile tüm yakalanan değişkenleri erişen belirtir `a`, `b`, ve `sum`. Bu örnekte, parametre listesi bir tek boyutlu oluşturur `index` adlı değişken `idx`. Değeri `idx[0]` ilk iş parçacığında 0'dır ve bir sonraki her iş parçacığı tarafından artırır. `restrict(amp)` Yalnızca C++ AMP hızlandırabilir C++ dili alt kullanıldığını belirtir.  Kısıtlama değiştiricisi olan işlevler sınırlamalar açıklanan [sınırla (C++ AMP)](../../cpp/restrict-cpp-amp.md). Daha fazla bilgi için bkz: [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md).  
+*Lambda ifadesi* her iş parçacığı üzerinde çalıştırılacak kodu tanımlar. Yakalama yan tümcesi `[=]`, lambda ifadesinin gövdesi, bu durumda olan değere göre yakalanan tüm değişkenlere erişimi olduğunu belirtir `a`, `b`, ve `sum`. Bu örnekte, tek boyutlu bir parametre listesi oluşturur `index` adlı değişken `idx`. Değerini `idx[0]` ilk iş parçacığında 0'dır ve sonraki her iş parçacığında bir artırılır. `restrict(amp)` Yalnızca C++ AMP'nin hızlandırabileceği C++ dilinin alt kullanıldığını gösterir.  Kısıtlama değiştiricisine sahip işlevlerin kısıtlamaları açıklanan [sınırla (C++ AMP)](../../cpp/restrict-cpp-amp.md). Daha fazla bilgi için bkz: [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).  
   
- Lambda ifadesi yürütmek için kodu içerebilir veya ayrı çekirdek işlevi çağırabilirsiniz. Çekirdek işlevini içermelidir `restrict(amp)` değiştiricisi. Aşağıdaki örnek önceki örneğe eşdeğerdir ancak ayrı çekirdek işlevi çağırır.  
+Lambda ifadesi yürütülecek kodu içerebilir veya ayrı bir çekirdek işlevi çağırabilir. Çekirdek işlevi içermelidir `restrict(amp)` değiştiricisi. Aşağıdaki örnek önceki örnekle eşdeğerdir ancak ayrı bir çekirdek işlevi çağırır.  
   
 ```cpp  
 #include <amp.h>  
@@ -354,18 +357,17 @@ void AddArraysWithFunction() {
 }  
 ```  
   
-## <a name="accelerating-code-tiles-and-barriers"></a>Hızlandırma kodu: Döşeme ve engelleri  
+## <a name="accelerating-code-tiles-and-barriers"></a>Kodu hızlandırma: Döşeme ve Bariyerler  
 
- Döşeme kullanarak ek hızlandırma elde edebilirsiniz. Döşeme böler iş parçacıklarının eşit dikdörtgen alt kümeler veya *kutucukları*. Veri kümenizi ve kodlama algoritma göre uygun döşeme boyutunu belirler. Her iş parçacığı için erişiminiz *genel* bir veri öğesi tüm göreli konumunu `array` veya `array_view` erişim *yerel* döşemeye göre konumu. Dizin değerlerinden genel yerel çevirmek için kod yazmanız gerekmez çünkü yerel dizin değerini kullanarak kodunuzu basitleştirir. Döşeme kullanmak için arama [extent::tile yöntemi](reference/extent-class.md#tile) işlem etki alanında bulunan `parallel_for_each` yöntemi ve kullanım bir [tiled_index](../../parallel/amp/reference/tiled-index-class.md) lambda ifadesi nesne.  
+Döşeme kullanarak ek hızlandırma elde edebilirsiniz. Döşeme iş parçacıklarını eşit dikdörtgen altkümelere, böler veya *kutucukları*. Size uygun döşeme boyutunu veri kümenize ve Kodladığınız algoritması göre belirleyin. Her iş parçacığı için erişiminiz *genel* bir veri öğesi tam göreli konumunu `array` veya `array_view` erişim *yerel* göreceli dizinine ve döşemeye konumu. Dizin değerlerini Genelden yerele çevirmek için kod yazmanız gerekmez çünkü yerel dizin değerlerini kullanmak kodunuzu basitleştirir. Döşemeyi kullanmak için çağrı [extent::tile yöntemi](reference/extent-class.md#tile) hesaplama alanında `parallel_for_each` yöntemi ve kullanım bir [tiled_index](../../parallel/amp/reference/tiled-index-class.md) lambda ifadesindeki nesne.  
   
- Tipik uygulamalarda kutucuk öğeleri herhangi bir yolla ilişkili olan ve erişmek ve değerleri arasında döşeme izlemek koduna sahip. Kullanım [tile_static anahtar sözcüğü](../../cpp/tile-static-keyword.md) anahtar sözcüğü ve [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait) bunu gerçekleştirmek için. Sahip bir değişken `tile_static` anahtar sözcüğü bir kapsam tüm bir kutucuğu varsa ve her bölme için değişken bir örneği oluşturulur. Değişkene döşeme iş parçacığı erişimi eşitlenmesi işlemelidir. [Tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait) döşemesinin tüm iş parçacıklarının çağrısı ulaştınız kadar geçerli iş parçacığının çalışmayı durdurur `tile_barrier::wait`. Kullanarak değerleri arasında döşeme birikebilir şekilde `tile_static` değişkenleri. Ardından tüm değerleri erişim gerektiren tüm hesaplamalar bitirebilirsiniz.  
-
+Tipik uygulamalarda, başka bir yolla ilgili bir döşeme içindeki öğeler ve erişmek ve değerleri döşeme içindeki izlemek kod vardır. Kullanım [tile_static anahtar sözcüğü](../../cpp/tile-static-keyword.md) anahtar sözcüğü ve [tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait) bunu sağlamak için. Sahip bir değişken **tile_static** anahtar sözcüğü bir kapsamı bütün bir döşemedir sahiptir ve her döşeme için değişkenin bir örneği oluşturulur. Değişkene döşeme iş parçacığı erişimi eşitlenmesini işlemesi gerekir. [Tile_barrier::wait yöntemi](reference/tile-barrier-class.md#wait) döşemedeki tüm iş parçacıkları çağrıya ulaşıncaya kadar geçerli iş parçacığının yürütülmesini durdurur `tile_barrier::wait`. Döşeme içindeki değerleri kullanarak toplayabilirsiniz şekilde **tile_static** değişkenleri. Ardından tüm değerleri erişmesi gereken tüm hesaplamaları sonlandırabilirsiniz.  
   
- Aşağıdaki diyagramda döşemeleri düzenlenmiş veri örnekleme, iki boyutlu bir dizi temsil eder.  
+Aşağıdaki diyagram döşemeler şeklinde düzenlenmiş veri örnekleme, iki boyutlu bir dizi temsil eder.  
   
- ![Dizin döşeli ölçüde değerleri](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")  
+![Döşenmiş kapsamın değerleri dizin](../../parallel/amp/media/camptiledgridexample.png "camptiledgridexample")  
   
- Aşağıdaki kod örneği, önceki diyagramda örnekleme verileri kullanır. Kod döşemesinin değerlerin ortalamasını tarafından döşeme yer alan her değerin yerini alır.  
+Aşağıdaki kod örneği önceki diyagramdaki örnekleme verisini kullanır. Kod her değeri döşemenin değerlerinin ortalaması ile değiştirir.  
   
 ```cpp  
 // Sample data:  
@@ -427,9 +429,9 @@ for (int i = 0; i <4; i++) {
 ```  
   
 ## <a name="math-libraries"></a>Matematik kitaplıkları  
- C++ AMP iki matematik kitaplıklarını içerir. Çift duyarlıklı Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevleri için destek sağlar. Çift duyarlıklı destek donanımda hala gerekli olmasına rağmen tek duyarlıklı işlevleri için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlıklı desteklemesi gerekir. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı math Kitaplığı'ndaki [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), matematik işlevleri başka bir kümesini içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha hızlı yürütme ancak çift duyarlıklı math kitaplığı de olarak kesin değildir. İşlevler bulunan \<amp_math.h > üst bilgi dosyasını ve tüm ile bildirildiğinde `restrict(amp)`. İşlevlerde \<cmath > Üstbilgi dosyası içine aktarılır `fast_math` ve `precise_math` ad alanları. `restrict` Ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ve C++ AMP sürümü. Aşağıdaki kod hızlı yöntemini işlem etki alanındaki her bir değerin 10 tabanında logaritmasını hesaplar.  
+ 
+C++ AMP, iki matematik kitaplığı içerir. Çift duyarlık Kitaplığı'nda [Concurrency::precise_math Namespace](../../parallel/amp/reference/concurrency-precise-math-namespace.md) çift duyarlıklı işlevler için destek sağlar. Donanımda çift duyarlık desteği yine de gereklidir tek duyarlıklı işlevler için de destek sağlar. İle uyumlu [C99 belirtimi (ISO/IEC 9899)](http://go.microsoft.com/fwlink/p/?linkid=225887). Hızlandırıcı tam çift duyarlık desteği sağlamalıdır. Değerini kontrol ederek mevcut olup olmadığını belirlemek [accelerator::supports_double_precision veri üyesi](reference/accelerator-class.md#supports_double_precision). Hızlı matematik kitaplığı, [Concurrency::fast_math Namespace](../../parallel/amp/reference/concurrency-fast-math-namespace.md), başka bir matematiksel işlevler kümesi içerir. Bu işlevler yalnızca Destek `float` işlenenler, daha çabuk yürütülürler ancak kitaplığındakiler kadar çift duyarlık matematik Kitaplığı'nda değildir. İşlevleri içerdiği \<amp_math.h > üstbilgi dosyasını ve tüm ile bildirilir `restrict(amp)`. İşlevler \<cmath > Üstbilgi dosyası her ikisini de kopyalayıp aktarılır `fast_math` ve `precise_math` ad alanları. **Kısıtlama** ayırt etmek için kullanılan anahtar sözcüğü \<cmath > sürümü ile C++ AMP sürüm. Aşağıdaki kodu kullanarak hızlı yöntemi hesaplama etki alanındaki her değerin 10 tabanında logaritmasını hesaplar.  
 
-  
 ```cpp  
 #include <amp.h>  
 #include <amp_math.h>  
@@ -452,35 +454,37 @@ void MathExample() {
         std::cout << logs[i] << "\n";  
     }  
 }  
-  
 ```  
   
 ## <a name="graphics-library"></a>Grafik kitaplığı  
- C++ AMP hızlandırılmış grafik programlama için tasarlanmış bir grafik kitaplık içerir. Bu kitaplık yerel grafik işlevlerini destekleyen cihazlarda kullanılır. Yöntemleri [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md) ve içerdiği \<amp_graphics.h > Üstbilgi dosyası. Grafik kitaplığının anahtar bileşenleri şunlardır:  
+ 
+C++ AMP hızlandırılmış grafik programlama için tasarlanmış bir grafik kitaplığı içerir. Bu kitaplık sadece doğal grafik işlevselliği destekleyen cihazlarda kullanılır. Yöntemler [Concurrency::graphics Namespace](../../parallel/amp/reference/concurrency-graphics-namespace.md) ve içerdiği \<amp_graphics.h > üst bilgi dosyası. Grafik kitaplığı anahtar bileşenleri şunlardır:  
   
-- [texture sınıfı](../../parallel/amp/reference/texture-class.md): bellek veya bir dosyadan doku oluşturmak için doku sınıfını kullanabilirsiniz. Dokular diziler veri içerir ve atama ve kopyalama yapım göre C++ Standart Kitaplığı kapsayıcılarında benzer olduğundan benzer. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../../standard-library/stl-containers.md). Şablon parametrelerini `texture` öğe türü ve derecesini sınıfı bulunur. Derece 1, 2 veya 3 olabilir. Öğe türü bu makalenin sonraki bölümlerinde açıklanan kısa vektör türlerden biri olabilir.  
+- [texture sınıfı](../../parallel/amp/reference/texture-class.md): doku sınıfını kullanarak bellekten ya da bir dosyadan doku oluşturmak için kullanabilirsiniz. Dokular veri içerdikleri ve bunların atama ve kopya oluşumuna göre C++ Standart Kitaplığı kapsayıcıları benzer çünkü dizilerine benzer. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../../standard-library/stl-containers.md). Şablon parametreleri için `texture` öğe türü ve boyut sınıfı bulunur. Boyut sayısı 1, 2 veya 3 olabilir. Öğe türü, bu makalenin sonraki bölümlerinde açıklanan kısa vektör türlerinden biri olabilir.  
   
-- [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): tüm doku yalnızca yazma erişimi sağlar.  
+- [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): herhangi bir dokuya salt yazılır erişim sağlar.  
   
-- [Kısa vektör Kitaplığı](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve temel alan 4 kısa vektör türleri kümesini tanımlayan `int`, `uint`, `float`, `double`, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
+- [Kısa vektör Kitaplığı](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
   
 ## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları  
- Diğer C++ kitaplıkları gibi UWP uygulamalarında C++ AMP kullanabilirsiniz. Bu makaleler C++, C#, Visual Basic veya JavaScript kullanılarak oluşturulan C++ AMP kodunu uygulamalarında nasıl ekleneceğini açıklar:  
+ 
+Diğer C++ kitaplıkları gibi UWP uygulamalarında C++ AMP kullanabilirsiniz. Bu makaleler, C++, C#, Visual Basic veya JavaScript kullanılarak oluşturulan C++ AMP kodunu uygulamaları nasıl ekleyeceğinizi açıklar:  
   
 - [UWP Uygulamalarında C++ AMP Kullanma](../../parallel/amp/using-cpp-amp-in-windows-store-apps.md)  
   
-- [İzlenecek yol: C++ ve JavaScript'ten çağırma temel Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249077)  
+- [İzlenecek yol: C++ ve JavaScript çağırma temel bir Windows çalışma zamanı bileşeni oluşturma](http://go.microsoft.com/fwlink/p/?linkid=249077)  
   
-- [Bing Haritalar seyahat iyileştirici, bir Windows mağazası uygulaması JavaScript ve C++](http://go.microsoft.com/fwlink/p/?linkid=249078)  
+- [Bing Haritalar seyahat iyileştirici, JavaScript ve C++'ta bir pencere Store uygulaması](http://go.microsoft.com/fwlink/p/?linkid=249078)  
   
-- [C# Windows çalışma zamanı kullanarak üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249080)  
+- [C# kullanarak Windows çalışma zamanı C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249080)  
   
-- [C# üzerinden C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249081)  
+- [C#, C++ AMP kullanma](http://go.microsoft.com/fwlink/p/?linkid=249081)  
   
 - [Yönetilen Koddan Yerel İşlevleri Çağırma](../../dotnet/calling-native-functions-from-managed-code.md)  
   
 ## <a name="c-amp-and-concurrency-visualizer"></a>C++ AMP ve eşzamanlılık görselleştiricisi  
- Eşzamanlılık görselleştiricisi C++ AMP kodunun performansını çözümlemek için destek içerir. Bu makaleler, bu özellikleri açıklar:  
+ 
+Eşzamanlılık görselleştiricisi C++ AMP kod performansını çözümlemek için destek içerir. Bu makaleler, bu özellikleri açıklar:  
   
 - [GPU Etkinlik Grafiği](/visualstudio/profiling/gpu-activity-graph)  
   
@@ -495,10 +499,12 @@ void MathExample() {
 - [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)  
   
 ## <a name="performance-recommendations"></a>Performans önerileri  
- Modulus ve imzasız tamsayılar bölme mod ve imzalı tamsayılar bölümünün daha önemli ölçüde daha iyi performans sahiptir. Mümkün olduğunda imzasız tamsayılar kullanmanızı öneririz.  
+ 
+İşaretsiz tamsayılar sayılarda işaretli tam sayılarda önemli ölçüde daha iyi performansa sahip. Mümkün olduğunda, işaretsiz tamsayılar kullanmanızı öneririz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md)   
- [Başvuru (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)   
- [Yerel kod günlüğündeki paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=238472)
+ 
+[C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
+[Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md)   
+[Başvuru (C++ AMP)](../../parallel/amp/reference/reference-cpp-amp.md)   
+[Yerel kod Blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=238472)

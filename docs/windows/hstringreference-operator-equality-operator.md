@@ -15,46 +15,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7620cee350ab69f55737e6336b275218a70b6891
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: b07df3dc50704a87883e1a387fe9c842c1732b54
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39607719"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610539"
 ---
 # <a name="hstringreferenceoperator-operator"></a>HStringReference::Operator== İşleci
-İki parametrenin eşit olup olmadığını gösterir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-inline bool operator==(  
-               const HStringReference& lhs,   
-               const HStringReference& rhs) throw()  
-  
-inline bool operator==(  
-               const HSTRING& lhs,   
-               const HStringReference& rhs) throw()  
-  
-inline bool operator==(  
-               const HStringReference& lhs,   
+
+İki parametrenin eşit olup olmadığını gösterir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+inline bool operator==(
+               const HStringReference& lhs,
+               const HStringReference& rhs) throw()
+
+inline bool operator==(
+               const HSTRING& lhs,
+               const HStringReference& rhs) throw()
+
+inline bool operator==(
+               const HStringReference& lhs,
                const HSTRING& rhs) throw()  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lhs*  
- Karşılaştırılacak ilk parametre. *lhs* olabilir bir **HStringReference** nesnesi veya bir HSTRING tanıtıcısına.  
-  
- *Sol*  
- Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir **HStringReference** nesnesi veya bir HSTRING tanıtıcısına.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- **doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde **false**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HStringReference Sınıfı](../windows/hstringreference-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lhs*  
+Karşılaştırılacak ilk parametre. *lhs* olabilir bir **HStringReference** nesnesi veya bir HSTRING tanıtıcısına.
+
+*Sol*  
+Karşılaştırılacak ikinci parametre.  *Sol* olabilir bir **HStringReference** nesnesi veya bir HSTRING tanıtıcısına.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**doğru** varsa *lhs* ve *sol* parametreleri eşit; Aksi takdirde **false**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HStringReference Sınıfı](../windows/hstringreference-class.md)

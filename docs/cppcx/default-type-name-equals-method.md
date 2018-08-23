@@ -1,5 +1,5 @@
 ---
-title: 'Varsayılan:: (type_name):: eşittir yöntemi | Microsoft Docs'
+title: 'Varsayılan:: (type_name):: Equals yöntemini | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -9,16 +9,16 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 4450f835-06fc-4758-8d0a-72cf00007873
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2a8246597715ee2be2f55ba396a57f0ed014819
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36bd6e933d4e7bb1563ec6738c7ba3ed314c1cfd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087672"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612391"
 ---
 # <a name="defaulttypenameequals-method"></a>Varsayılan:: (type_name):: eşittir yöntemi
 Belirtilen nesnenin geçerli nesneyle eşit olup olmadığını belirler.  
@@ -33,16 +33,16 @@ bool Equals(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Obj  
+ obj  
  Karşılaştırma yapılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Aksi takdirde nesneleri eşitse, `false`.  
+ `true` Aksi takdirde nesneler eşitse, `false`.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
  **Namespace:** varsayılan  
   

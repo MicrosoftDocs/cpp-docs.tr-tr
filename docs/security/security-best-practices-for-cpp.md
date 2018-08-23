@@ -15,15 +15,15 @@ helpviewer_keywords:
 - security [C++], best practices
 ms.assetid: 86acaccf-cdb4-4517-bd58-553618e3ec42
 author: mikeblome
-ms.author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e16a00d83f7917cf21f114b2a80fa1ad55a90875
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e941c15d734ce85513696d60da13184cfbfd2355
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015630"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610059"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -34,7 +34,7 @@ Bu makale, güvenlik araçları ve uygulamaları hakkında bilgi içerir. Bunlar
  Bu güvenlik özellikleri, Visual C++ Derleyici ve bağlayıcı yerleşik:  
   
  [/guard (Denetim Akışı Korumasını Etkinleştirme)](../build/reference/guard-enable-control-flow-guard.md)  
- Denetim akışı dolaylı çağrı hedefler için derleme zamanında için analiz etmek derleyicinin ve çalışma zamanında hedefleri doğrulamak için kod eklenemedi.  
+ Denetim akışı dolaylı çağrı hedefler için derleme zamanında çözümlemek derleyicinin ve çalışma zamanında hedefleri doğrulamak için kod eklenemedi.  
   
  [/GS (Arabellek Güvenlik Denetimi)](../build/reference/gs-buffer-security-check.md)  
  Derleyicinin yararlanılmasını bir risk altında olan işlevler halinde taşması algılama kod eklemesini söyler. Bir taşma algılandığında, yürütme durduruldu. Varsayılan olarak, bu seçenek açıktır.  

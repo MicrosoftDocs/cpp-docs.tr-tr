@@ -16,32 +16,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 098ce812b18e64409e24d58675144f2c660bcdd7
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 0f504573de959286cc2fadb5c42c2a216c5073de
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465655"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600576"
 ---
 # <a name="atl-predefined-symbols"></a>ATL Önceden Tanımlanmış Semboller
-Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, iletişim kutuları ağırlıklı olarak kullanılır. Çalışırken iletişim kutuları ve denetimleri ile de [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeler görünür **özellikleri** ortak denetimleri ile ilişkili penceresi. Örneği için iletişim kutusu varsa bir **iptal** düğmesini komut IDCANCEL sembolü ile ilişkilendirilmesi, [Özellikler penceresi](/visualstudio/ide/reference/properties-window).  
-  
-|||  
-|-|-|  
-|IDABORT|Denetim: İletişim kutusunda İptal düğmesi|  
-|IDC_STATIC|Denetimi: Statik denetim|  
-|IDCANCEL|Denetim: İletişim kutusunda İptal düğmesi|  
-|IDIGNORE|Denetim: İletişim kutusu yoksay düğmesi|  
-|IDNO|Denetim: İletişim kutusu düğmesi yok|  
-|IDOK|Denetim: İletişim kutusunda Tamam düğmesi|  
-|IDR_ACCELERATOR1|Kaynak: Hızlandırıcı tablosu|  
-|IDRETRY|Denetim: İletişim kutusunu yeniden dene düğmesi|  
-|IDS_PROJNAME|Dizesi: Geçerli uygulama adı|  
-|IDYES|Denetimi: Button iletişim kutusu Evet|  
-  
-## <a name="requirements"></a>Gereksinimler  
- ATL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Önceden tanımlanmış sembol kimlikleri](../windows/predefined-symbol-ids.md)   
- [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)
+
+Bu simgeleri ATL üstbilgi dosyalarında tanımlanır, ancak standart Windows uygulama işlevler ve Eylemler destekler. Bu simgeler, iletişim kutuları ağırlıklı olarak kullanılır. Çalışırken iletişim kutuları ve denetimleri ile de [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md), bu simgeler görünür **özellikleri** ortak denetimleri ile ilişkili penceresi. Örneği için iletişim kutusu varsa bir **iptal** düğmesini komut IDCANCEL sembolü ile ilişkilendirilmesi, [Özellikler penceresi](/visualstudio/ide/reference/properties-window).
+
+|||
+|-|-|
+|IDABORT|Denetim: İletişim kutusunda İptal düğmesi|
+|IDC_STATIC|Denetimi: Statik denetim|
+|IDCANCEL|Denetim: İletişim kutusunda İptal düğmesi|
+|IDIGNORE|Denetim: İletişim kutusu yoksay düğmesi|
+|IDNO|Denetim: İletişim kutusu düğmesi yok|
+|IDOK|Denetim: İletişim kutusunda Tamam düğmesi|
+|IDR_ACCELERATOR1|Kaynak: Hızlandırıcı tablosu|
+|IDRETRY|Denetim: İletişim kutusunu yeniden dene düğmesi|
+|IDS_PROJNAME|Dizesi: Geçerli uygulama adı|
+|IDYES|Denetimi: Button iletişim kutusu Evet|
+
+## <a name="requirements"></a>Gereksinimler
+
+ATL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)  
+[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)

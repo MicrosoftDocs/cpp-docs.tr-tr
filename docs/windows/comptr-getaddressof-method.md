@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1be1dd844b08be23312848f007e4a57dbd893b5
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 98609ce9cc15940586d626c52d24b5ca506164e7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646991"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599000"
 ---
 # <a name="comptrgetaddressof-method"></a>ComPtr::GetAddressOf Metodu
-Adresini alır [ptr_](../windows/comptr-ptr-data-member.md) bu tarafından temsil edilen arabirimi için bir işaretçi içeren veri üyesi **ComPtr**.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T* const* GetAddressOf() const;  
-T** GetAddressOf();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir değişkenin adresidir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr Sınıfı](../windows/comptr-class.md)
+
+Adresini alır [ptr_](../windows/comptr-ptr-data-member.md) bu tarafından temsil edilen arabirimi için bir işaretçi içeren veri üyesi **ComPtr**.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+T* const* GetAddressOf() const;
+T** GetAddressOf();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir değişkenin adresidir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtr Sınıfı](../windows/comptr-class.md)

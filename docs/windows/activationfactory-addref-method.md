@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bb4221a0432acdfcccb4e7ce77a2d16245e48a03
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 9b3790e0fb3d1b304359677ddedab2b65dcfe89d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650878"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42575747"
 ---
 # <a name="activationfactoryaddref-method"></a>ActivationFactory::AddRef Yöntemi
-Geçerli başvuru sayısını artırır **ActivationFactory** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ActivationFactory Sınıfı](../windows/activationfactory-class.md)
+
+Geçerli başvuru sayısını artırır **ActivationFactory** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ActivationFactory Sınıfı](../windows/activationfactory-class.md)

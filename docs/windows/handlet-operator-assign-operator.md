@@ -17,38 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa253bec9f150d08f699333cd5d5f6d4538fc2d6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: cf539082ef88abb5fb27f09d92b73403dc2d03a5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653163"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611348"
 ---
 # <a name="handletoperator-operator"></a>HandleT::operator= İşleci
-Belirtilen değer taşır **HandleT** geçerli nesneye **HandleT** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-HandleT& operator=(  
-   _Inout_ HandleT&& h  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *h*  
- Bir rvalue başvuru için bir tanıtıcı.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir başvuru **HandleT** nesne.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlem geçersiz kılar **HandleT** parametresi tarafından belirtilen nesne *h*.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT Sınıfı](../windows/handlet-class.md)
+
+Belirtilen değer taşır **HandleT** geçerli nesneye **HandleT** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+HandleT& operator=(
+   _Inout_ HandleT&& h
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*h*  
+Bir rvalue başvuru için bir tanıtıcı.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Geçerli bir başvuru **HandleT** nesne.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlem geçersiz kılar **HandleT** parametresi tarafından belirtilen nesne *h*.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HandleT Sınıfı](../windows/handlet-class.md)

@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3a6036db01ecdd66bcfe06405515c174628810a1
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 801799c3472d156825149c83fb51ffe586de0997
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650156"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611024"
 ---
 # <a name="ftmbaseftmbase-constructor"></a>FtmBase::FtmBase Oluşturucusu
-Yeni bir örneğini başlatır **FtmBase** sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-FtmBase();  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase Sınıfı](../windows/ftmbase-class.md)
+
+Yeni bir örneğini başlatır **FtmBase** sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+FtmBase();
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[FtmBase Sınıfı](../windows/ftmbase-class.md)

@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ValueType Class
 ms.assetid: 79aa8754-b140-4974-a5b1-be046938a10a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1994aa6445c67bae138a51f1d3eebb2a54f9b17d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 12766e81ddd90b257830b6bf5adefd2562781d9e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088212"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611053"
 ---
 # <a name="platformvaluetype-class"></a>Platform::ValueType sınıfı
-Taban sınıfı için değer türleri örnekleri.  
+Temel sınıf için değer türlerinin örnekleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,22 +35,22 @@ public ref class ValueType : Object
   
 |||  
 |-|-|  
-|[ValueType::ToString](#tostring)|Nesnenin dize gösterimini döndürür. Devralınan [Platform::Object](../cppcx/platform-object-class.md).|  
+|[ValueType::ToString](#tostring)|Bir nesnenin dize gösterimini döndürür. Devralınan [Platform::Object](../cppcx/platform-object-class.md).|  
   
 ### <a name="remarks"></a>Açıklamalar  
- ValueType sınıf değer türleri oluşturmak için kullanılır. ValueType temel üyelere sahip nesnesinden türetilir. Ancak, derleyici ValueType sınıfından türetilen türlerin temel bu üyelerinden ayırır. Değer türü Kutulu zaman derleyici bu temel üyeler reattaches.  
+ ValueType sınıfı, değer türleri oluşturmak için kullanılır. ValueType temel üye var. nesneden elde edilir. Ancak, derleyici bu temel ValueType sınıfından türetilen türlerin üyelerinden ayırır. Bir değer türü kutulandığında, derleyici bu temel üyeler etkilenebilecek.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
 
 ## <a name="tostring"></a> ValueType::ToString yöntemi
-Nesnenin dize gösterimini döndürür.  
+Bir nesnenin dize gösterimini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -59,7 +59,7 @@ Platform::String ToString();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Değerin temsil eden Platform::String.  
+ Değeri temsil eden Platform::String.  
     
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

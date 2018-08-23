@@ -17,29 +17,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e842dcb70e6f4a4ec4751ed7f4f231b41af2d288
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 31ba668078d80b927d6a898d4700efe1e546ea1e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645665"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600103"
 ---
 # <a name="copying-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-copy-a-device-image"></a>Cihaz görüntüsü kopyalama  
-  
-1.  Üzerinde **görüntü** menüsünde tıklatın **açık cihaz görüntüsü** ve geçerli görüntüleri listesinden görüntü seçin. Örneğin, 32 × 32 bir simge 16 renk sürümünü seçin.  
-  
-2.  Şu anda görüntülenen simge görüntüsü kopyalama (**Ctrl**+**C**).  
-  
-3.  Farklı bir simge görüntüsü başka bir programda açık **Resim Düzenleyicisi** penceresi. Örneğin, 16 x 16, simgenin 16 renk sürümü açın.  
-  
-4.  Simge görüntüsü yapıştırın (**Ctrl**+**V**) birinden **Resim Düzenleyicisi** diğer pencere. Daha büyük bir boyutu daha küçük bir boyuta yapıştırıyorsanız, görüntüyü yeniden boyutlandırmak için simge tutamaçlarını kullanabilirsiniz.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)   
- [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)
+
+### <a name="to-copy-a-device-image"></a>Cihaz görüntüsü kopyalama
+
+1. Üzerinde **görüntü** menüsünde tıklatın **açık cihaz görüntüsü** ve geçerli görüntüleri listesinden görüntü seçin. Örneğin, 32 × 32 bir simge 16 renk sürümünü seçin.
+
+2. Şu anda görüntülenen simge görüntüsü kopyalama (**Ctrl**+**C**).
+
+3. Farklı bir simge görüntüsü başka bir programda açık **Resim Düzenleyicisi** penceresi. Örneğin, 16 x 16, simgenin 16 renk sürümü açın.
+
+4. Simge görüntüsü yapıştırın (**Ctrl**+**V**) birinden **Resim Düzenleyicisi** diğer pencere. Daha büyük bir boyutu daha küçük bir boyuta yapıştırıyorsanız, görüntüyü yeniden boyutlandırmak için simge tutamaçlarını kullanabilirsiniz.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Simgeler ve İmleçler: görüntüleme cihazları için görüntü kaynakları](../windows/icons-and-cursors-image-resources-for-display-devices-image-editor-for-icons.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)

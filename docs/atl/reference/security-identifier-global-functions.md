@@ -1,5 +1,5 @@
 ---
-title: Güvenlik tanımlayıcısı genel işlevler | Microsoft Docs
+title: Güvenlik tanımlayıcısı genel işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -47,18 +47,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 153436ab5d05d0355d85ca165b2bfba9ae86d534
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b567c56c8c4ca5c25fc870e91c8c608e17280557
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32365161"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610239"
 ---
-# <a name="security-identifier-global-functions"></a>Güvenlik tanımlayıcısı genel işlevler
-Bu işlevler ortak iyi bilinen SID nesneleri döndürür.  
+# <a name="security-identifier-global-functions"></a>Güvenlik tanımlayıcısı genel işlevleri
+Bu işlevler, nesneler ortak iyi bilinen SID döndürür.  
   
 > [!IMPORTANT]
->  Windows çalışma zamanı'nda yürütme uygulamalarda aşağıdaki tabloda listelenen işlevleri kullanılamaz.  
+>  Aşağıdaki tabloda listelenen İşlevler, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
   
 |||  
 |-|-|  
@@ -196,9 +196,9 @@ CSid NetworkService() throw(...);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir CPerfMon güvenlik nesnesine okumak NT AUTHORITY\NetworkService kullanıcı etkinleştirmek için ağ hizmeti kullanın. NetworkService DLL ağ hizmeti hesabı altında oturum açmanıza olanak tanıyan ATLServer koduna bir SecurityAttribute ekler [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] ve büyük işletim sistemi.  
+ NetworkService CPerfMon güvenlik nesnesine okumak NT AUTHORITY\NetworkService kullanıcı etkinleştirmek için kullanın. NetworkService bir SecurityAttribute DLL Windows XP Home Edition, Windows XP Professional, Windows Server 2003 ve büyük işletim sistemi NetworkService hesabı altında oturum açmak için izin veren ATLServer kodu ekler.  
   
- Özel günlük sayaçları Perfmon MMC'de ATLServer CPerfMon sınıfıyla oluşturulduğunda sayaçları gerçek zamanlı görünümünde doğru görünür ancak günlük dosyasını görüntülerken görünmeyebilir. CPerfMon özel performans sayaçları yok "Performans Günlükleri ve Uyarıları" hizmetini (smlogsvc.exe) altında çalıştırmak için gerekli izinlere sahip [!INCLUDE[WinXpFamily](../../atl/reference/includes/winxpfamily_md.md)] (veya daha büyük) işletim sistemleri. Bu hizmet "NT AUTHORITY\NetworkService" hesabı altında çalışır.  
+ Özel günlük sayaçları Perfmon MMC'de ATLServer CPerfMon sınıfı ile oluşturulduğunda sayaçları gerçek zamanlı Görünümü'nde doğru görünür ancak günlük dosyasını görüntülerken görünmeyebilir. Özel performans Sayaçlarınızı CPerfMon (smlogsvc.exe) "Performans Günlükleri ve Uyarıları" hizmetinin altında Windows XP Home Edition, Windows XP Professional, Windows Server 2003 (veya üstü) işletim sistemlerini çalıştıran için gerekli izniniz yok. Bu hizmet "NT AUTHORITY\NetworkService" hesabı altında çalışır.  
   
 ##  <a name="null"></a>  Sids::null  
  SECURITY_NULL_RID SID döndürür.  

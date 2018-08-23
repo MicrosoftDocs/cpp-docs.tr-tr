@@ -17,31 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 85ff68b4a3739c9a258e8664f261c61bb47971db
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d75e3e0592d21672397e8d54c565734d53e72614
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018526"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599786"
 ---
 # <a name="synclocktsynclockt-destructor"></a>SyncLockT::~SyncLockT Yok Edicisi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-~SyncLockT();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Örneği başlatılmasını geri alır **SyncLockT** sınıfı.  
-  
- Bu yok Edicisi de geçerli kilidini açarak **SyncLockT** örneği.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SyncLockT Sınıfı](../windows/synclockt-class.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+~SyncLockT();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Örneği başlatılmasını geri alır **SyncLockT** sınıfı.
+
+Bu yok Edicisi de geçerli kilidini açarak **SyncLockT** örneği.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SyncLockT Sınıfı](../windows/synclockt-class.md)

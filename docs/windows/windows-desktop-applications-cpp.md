@@ -20,31 +20,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f78fa02b991fbdf7c18457a8018ea46b0c240585
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 23028ee742f05016509da5147c8f6c0ab6b1a532
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647963"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598164"
 ---
 # <a name="windows-desktop-applications-c"></a>Windows Masaüstü uygulamaları (C++)
-Bu bölümde bir penceresinde çalıştırın, C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.  
 
-> [!TIP]  
+Bu bölümde bir penceresinde çalıştırın, C++ masaüstü uygulamalarının nasıl oluşturulacağını açıklar.
+
+> [!TIP]
 > Windows 10 için Microsoft Store aracılığıyla dağıtımı için var olan masaüstü uygulamanızı paketlemek için Masaüstü uygulamasını dönüştürücüyü kullanabilirsiniz. Daha fazla bilgi için [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [için evrensel Windows Platformu (UWP) Masaüstü Köprüsü ile masaüstü uygulamanızı taşıyın](https://msdn.microsoft.com/windows/uwp/porting/desktop-to-uwp-root).
-  
-## <a name="prerequisites"></a>Önkoşullar  
- Bu konular, C++ dili temellerini anladığınızı varsayar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
--   [Win32 Uygulama Sihirbazı](../windows/win32-application-wizard.md)  
-  
--   [İzlenecek yol: Windows Masaüstü Uygulamaları Oluşturma (C++)](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)  
-  
--   [Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)  
-  
--   [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md)
+
+## <a name="prerequisites"></a>Önkoşullar
+
+Bu konular, C++ dili temellerini anladığınızı varsayar.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+- [Win32 Uygulama Sihirbazı](../windows/win32-application-wizard.md)
+
+- [İzlenecek yol: Windows Masaüstü Uygulamaları Oluşturma (C++)](../windows/walkthrough-creating-windows-desktop-applications-cpp.md)
+
+- [Boş Windows Masaüstü Uygulaması Oluşturma](../windows/creating-an-empty-windows-desktop-application.md)
+
+- [Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md)

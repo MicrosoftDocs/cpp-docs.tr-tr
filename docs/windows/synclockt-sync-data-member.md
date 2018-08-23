@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7fa3193e505480a0acb8616510d8c2cdbc4f5d94
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d6f1c2f9aba65fd96603f966649d3ba62f25cde7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016359"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612304"
 ---
 # <a name="synclocktsync-data-member"></a>SyncLockT::sync_ Veri Üyesi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typename SyncTraits::Type sync_;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Temel alınan kaynak tarafından temsil edilen tutar **SyncLockT** sınıfı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SyncLockT Sınıfı](../windows/synclockt-class.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typename SyncTraits::Type sync_;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Temel alınan kaynak tarafından temsil edilen tutar **SyncLockT** sınıfı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SyncLockT Sınıfı](../windows/synclockt-class.md)

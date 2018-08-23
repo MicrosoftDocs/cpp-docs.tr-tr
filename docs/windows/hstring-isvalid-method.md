@@ -15,29 +15,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ed78c9276603c8b6dbdab74a32ea1940bf39544f
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 05efb34a2d03264ca0fb6da1da22a2610c800c30
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012576"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600822"
 ---
 # <a name="hstringisvalid-method"></a>HString::IsValid Yöntemi
-Belirtir olup olmadığını geçerli **Hstrıng** veya nesne boş.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+Belirtir olup olmadığını geçerli **Hstrıng** veya nesne boş.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 bool IsValid() const throw()  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- **doğru** varsa geçerli **Hstrıng** nesnesi boş; Aksi takdirde değil **false**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HString Sınıfı](../windows/hstring-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+**doğru** varsa geçerli **Hstrıng** nesnesi boş; Aksi takdirde değil **false**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HString Sınıfı](../windows/hstring-class.md)

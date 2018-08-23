@@ -21,19 +21,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d53e8020bbb7649d78232025ef9c63c1dc868fee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f360cd075ac4a86c39f5c33391e974e62f481455
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409013"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613488"
 ---
 # <a name="windows-platforms-crt"></a>Windows Platformları (CRT)
 
-Visual Studio için C çalışma zamanı kitaplıkları geçerli Windows ve Windows Server sürümleri desteği [!INCLUDE[win8](../build/reference/includes/win8_md.md)], [!INCLUDE[winserver8](../build/reference/includes/winserver8_md.md)], [!INCLUDE[win7](../build/includes/win7_md.md)], [!INCLUDE[winsvr08](../build/reference/includes/winsvr08_md.md)]ve Windows Vista ve isteğe bağlı destek [!INCLUDE[winxp](../build/includes/winxp_md.md)] x86, Service Pack 3 (SP3) [!INCLUDE[winxp](../build/includes/winxp_md.md)] Service Pack 2 (SP2) x64, ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] Service Pack 2 (SP2) hem x86 hem x64. Tüm bu işletim sistemlerinin Windows Masaüstü API (Win32) destekler ve Unicode desteği sağlar. Ayrıca, herhangi bir Win32 uygulaması birden çok baytlı karakter kümesi (MBCS) kullanabilirsiniz.
+C çalışma zamanı kitaplıkları Visual Studio için Windows ve Windows Server, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 ve Windows Vista'nın geçerli sürümleri destekler ve isteğe bağlı olarak Windows XP Service Pack 3 (SP3) x86, Windows XP hizmet desteği X64 ve Windows Server 2003 Service Pack 2 (SP2) x86 hem x64 Paketi 2 (SP2). Bu işletim sistemlerinin tümünde Windows Masaüstü (Win32) API desteği ve Unicode desteği sağlar. Ayrıca, herhangi bir Win32 uygulaması, bir çok baytlı karakter kümesi (MBCS) kullanabilirsiniz.
 
 > [!NOTE]
-> Varsayılan yüklemesini **C++ ile masaüstü geliştirme** Visual Studio 2017 iş yükü için destek içermez [!INCLUDE[winxp](../build/includes/winxp_md.md)] ve [!INCLUDE[WinXPSvr](../build/includes/winxpsvr_md.md)] geliştirme. İsteğe bağlı bileşen yüklemeniz gerekir **C++ Windows XP desteği** bir Windows XP platform araç takımı etkinleştirmek için.
+> Varsayılan yüklemesi **C++ ile masaüstü geliştirme** iş yükünü Visual Studio 2017'de, Windows XP ve Windows Server 2003 geliştirme desteği dahil değildir. İsteğe bağlı bileşen yüklemeniz gerekir **C++ için Windows XP desteği** Windows XP platform araç takımını etkinleştirmek için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

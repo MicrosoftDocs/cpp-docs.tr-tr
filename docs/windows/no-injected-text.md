@@ -17,43 +17,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc0dcba6597b6b8a3b37c240bf1c4a58f30b6b23
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e63b0b47dcc3f53ecd5af2d51505df844f66437a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020349"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599392"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
-Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ no_injected_text(  
-   boolean  
-) ];  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Boole* (isteğe bağlı)  
- **doğru** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- En yaygın kullanımı **no_injected_text** C++ özniteliktir [/Fx](../build/reference/fx-merge-injected-code.md) ekleyen derleyici seçeneği **no_injected_text** .mrg dosyasına özniteliği.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Her yerde|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Öznitelikleri](../windows/compiler-attributes.md)   
+
+Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ no_injected_text(
+   boolean
+) ];
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Boole* (isteğe bağlı)  
+**doğru** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.
+
+## <a name="remarks"></a>Açıklamalar
+
+En yaygın kullanımı **no_injected_text** C++ özniteliktir [/Fx](../build/reference/fx-merge-injected-code.md) ekleyen derleyici seçeneği **no_injected_text** .mrg dosyasına özniteliği.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Her yerde|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  

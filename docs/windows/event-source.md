@@ -22,71 +22,75 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bd38dcf02de661a063df356b7d915eed9814f192
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 6fc8d8100786f78d516bb5f880e4238b7e3a2388
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652412"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611870"
 ---
 # <a name="eventsource"></a>event_source
-Olay kaynağı oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ event_source(  
-   type,  
-   optimize=[speed | size],  
-   decorate=[true | false]  
-) ]  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Türü*  
- Sabit listesi aşağıdaki değerlerden biri:  
-  
--   `native` Yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).  
-  
--   `com` COM kodu için. Kullanmalısınız `coclass` olduğunda `type` = `com`. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:  
-  
-    ```cpp  
-    #define _ATL_ATTRIBUTES  
-    #include <atlbase.h>  
-    #include <atlcom.h>  
-    ```  
-  
- *optimize*  
- Zaman *türü* olduğu `native`, belirtebilirsiniz `optimize=size`olduğunu depolamanın 4 bayt (en az) için tüm olayları bir sınıfta belirtmek için veya `optimize=speed` (4 olduğunu göstermek için varsayılan) * (olay sayısı) depolama baytı.  
-  
- *İşaretleme*  
- Zaman *türü* olduğu `native`, belirtebileceğiniz `decorate=false`, birleştirilmiş (.mrg) dosyasında genişletilmiş adının kapsayan sınıf adını içermemelidir belirtmek için. [/FX](../build/reference/fx-merge-injected-code.md) .mrg dosyaları oluşturmanıza olanak tanır. `decorate=false`, varsayılan değer, tam olarak nitelenmiş tür adlarını birleştirilmiş dosya sonuçlanıyor.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Event_source** C++ özniteliği, sınıf veya yapı, uygulandığı bir olay kaynağı olacağını belirtir.  
-  
- **event_source** ile birlikte kullanılan [event_receiver](../windows/event-receiver.md) özniteliği ve [__event](../cpp/event.md) anahtar sözcüğü. Kullanım `event_receiver` Olay alıcıları oluşturmak için. Kullanım **__event** olaylar olarak söz konusu yöntemleri belirtmek için olay kaynağı içindeki yöntemlerde.  
-  
+
+Olay kaynağı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ event_source(
+   type,
+   optimize=[speed | size],
+   decorate=[true | false]
+) ]
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Türü*  
+Sabit listesi aşağıdaki değerlerden biri:
+
+- `native` Yönetilmeyen C/C++ kodu için (yönetilmeyen sınıflar için varsayılan).
+
+- `com` COM kodu için. Kullanmalısınız `coclass` olduğunda `type` = `com`. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:
+
+    ```cpp
+    #define _ATL_ATTRIBUTES
+    #include <atlbase.h>
+    #include <atlcom.h>
+    ```
+
+*optimize*  
+Zaman *türü* olduğu `native`, belirtebilirsiniz `optimize=size`olduğunu depolamanın 4 bayt (en az) için tüm olayları bir sınıfta belirtmek için veya `optimize=speed` (4 olduğunu göstermek için varsayılan) * (olay sayısı) depolama baytı.
+
+*İşaretleme*  
+Zaman *türü* olduğu `native`, belirtebileceğiniz `decorate=false`, birleştirilmiş (.mrg) dosyasında genişletilmiş adının kapsayan sınıf adını içermemelidir belirtmek için. [/FX](../build/reference/fx-merge-injected-code.md) .mrg dosyaları oluşturmanıza olanak tanır. `decorate=false`, varsayılan değer, tam olarak nitelenmiş tür adlarını birleştirilmiş dosya sonuçlanıyor.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Event_source** C++ özniteliği, sınıf veya yapı, uygulandığı bir olay kaynağı olacağını belirtir.
+
+**event_source** ile birlikte kullanılan [event_receiver](../windows/event-receiver.md) özniteliği ve [__event](../cpp/event.md) anahtar sözcüğü. Kullanım `event_receiver` Olay alıcıları oluşturmak için. Kullanım **__event** olaylar olarak söz konusu yöntemleri belirtmek için olay kaynağı içindeki yöntemlerde.
+
 > [!NOTE]
->  Şablonlu bir alan veya yapı, olay içeremez.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**sınıf**, **yapısı**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|**coclass'ı** olduğunda `type`=`com`|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [event_receiver](../windows/event-receiver.md)   
- [__Event](../cpp/event.md)   
- [__hook](../cpp/hook.md)   
- [__unhook](../cpp/unhook.md)   
- [Sınıf Öznitelikleri](../windows/class-attributes.md)   
+> Şablonlu bir alan veya yapı, olay içeremez.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|**coclass'ı** olduğunda `type`=`com`|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[event_receiver](../windows/event-receiver.md)  
+[__event](../cpp/event.md)  
+[__hook](../cpp/hook.md)  
+[__unhook](../cpp/unhook.md)  
+[Sınıf Öznitelikleri](../windows/class-attributes.md)  

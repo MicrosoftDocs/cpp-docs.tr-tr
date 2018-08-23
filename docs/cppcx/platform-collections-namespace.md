@@ -11,26 +11,26 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Collections Namespace
 ms.assetid: b5042864-5f22-40b7-b7a5-c0691f65cc47
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b4e38d6a051481b2b5f642c6b4de3c837f8fbfd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 171fdfe8e174d0d3b5d1c69e9aa5a777a3148ee0
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088043"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612537"
 ---
 # <a name="platformcollections-namespace"></a>Platform::Collections Namespace
 
-Platform::Collections ad alanında `Map`, `MapView`, `Vector`, ve `VectorView` sınıfları. Bu sınıfların tanımlanan karşılık gelen arabirimler somut uygulamalarıdır [Windows::Foundation::Collections](http://go.microsoft.com/fwlink/p/?LinkId=262645) ad alanı. Somut koleksiyon türleri (örneğin bir Javascript veya C# C++ bileşeni çağrılarını program) ABI üzerinden taşınabilir değildir, ancak karşılık gelen arabirimi türlerini örtük olarak dönüştürülebilir. Örneğin, doldurur ve koleksiyonu döndüren bir genel yöntem uygularsanız, daha sonra kullanmak [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) koleksiyonu dahili olarak uygulamak ve kullanmak için [Windows::Foundation::Collections: : IVector](http://go.microsoft.com/fwlink/p/?LinkId=262410) dönüş türü. Daha fazla bilgi için bkz: [koleksiyonları](../cppcx/collections-c-cx.md) ve [C++'da Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+Platform::Collections ad alanı içeren `Map`, `MapView`, `Vector`, ve `VectorView` sınıfları. Bu sınıfların tanımlanan karşılık gelen arabirimin somut uygulamalarıdır [Windows::Foundation:: Collections](http://go.microsoft.com/fwlink/p/?LinkId=262645) ad alanı. Somut koleksiyon türleri (örneğin, Javascript veya C# programı bir C++ bileşeni çağırıyor) ABI arasında taşınabilir değildir, ancak bunlar karşılık gelen onların arabirim türleri için örtük olarak dönüştürülebilir. Örneğin, doldurur ve bir koleksiyonu döndüren genel bir yöntem uygularsanız, ardından kullanmak [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) koleksiyon dahili olarak uygulamak ve kullanmak için [Windows::Foundation:: Collections: : Ivector](http://go.microsoft.com/fwlink/p/?LinkId=262410) dönüş türü. Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md) ve [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-Gelen bir platform::Collections:: Vector oluşturabileceğiniz bir [std::vector](../standard-library/vector-class.md) ve [Platform::Collections](../cppcx/platform-collections-map-class.md) gelen bir [std::map](../standard-library/map-class.md).
+Gelen bir platform::Collections:: Vector oluşturabilirsiniz bir [std::vector](../standard-library/vector-class.md) ve [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) gelen bir [std::map](../standard-library/map-class.md).
 
-Ayrıca, Platform::Collections ad alanı geri INSERT ve giriş yineleyiciler için destek sağlar ve `Vector` ve `VectorView` yineleyiciler.
+Ayrıca, Platform::Collections ad alanı geri ekleme ve giriş yineleyiciler için destek sağlar ve `Vector` ve `VectorView` yineleyiciler.
 
-Eklemeniz gerekir (`#include`) türlerine Platform::Collections ad alanını kullanmak için collection.h üstbilgi.
+Eklemeniz gerekir (`#include`) collection.h üst bilgiyi Platform::Collections ad alanı türleri kullanın.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -45,14 +45,14 @@ Bu ad alanı, aşağıdaki üyeleri içerir.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[Platform::Collections::BackInsertIterator Sınıfı](../cppcx/platform-collections-backinsertiterator-class.md)|Bir koleksiyonun sonuna bir öğe ekler yineleyici temsil eder.|
-|[Platform::Collections::InputIterator Sınıfı](../cppcx/platform-collections-inputiterator-class.md)|Bir koleksiyon başına bir öğe ekler yineleyici temsil eder.|
-|[Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)|Bir anahtar tarafından erişilen anahtar-değer çiftleri değiştirilebilir bir koleksiyonunu temsil eder. Benzer şekilde [std::map](../standard-library/map-class.md).|
-|[Platform::Collections::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)|Bir anahtar tarafından erişilen anahtar-değer çiftleri salt okunur bir koleksiyonunu temsil eder.|
-|[Platform::Collections::Vector Sınıfı](../cppcx/platform-collections-vector-class.md)|Öğeleri değiştirilebilir bir dizi temsil eder. Benzer şekilde [std::vector](../standard-library/vector-class.md).|
-|[Platform::Collections::VectorIterator Sınıfı](../cppcx/platform-collections-vectoriterator-class.md)|Geçeceğini yineleyici temsil eden bir `Vector` koleksiyonu.|
-|[Platform::Collections::VectorView Sınıfı](../cppcx/platform-collections-vectorview-class.md)|Öğe salt okunur bir dizi temsil eder.|
-|[Platform::Collections::VectorViewIterator Sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)|Geçeceğini yineleyici temsil eden bir `VectorView` koleksiyonu.|
+|[Platform::Collections::BackInsertIterator Sınıfı](../cppcx/platform-collections-backinsertiterator-class.md)|Bir toplamanın sonunda bir öğe ekleyen bir yineleyici temsil eder.|
+|[Platform::Collections::InputIterator Sınıfı](../cppcx/platform-collections-inputiterator-class.md)|Bir koleksiyonun başında bir öğe ekleyen bir yineleyici temsil eder.|
+|[Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)|Değiştirilebilir bir anahtar tarafından erişilen anahtar-değer çifti koleksiyonunu temsil eder. Benzer şekilde [std::map](../standard-library/map-class.md).|
+|[Platform::Collections::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)|Bir salt okunur bir anahtar tarafından erişilen anahtar-değer çifti koleksiyonunu temsil eder.|
+|[Platform::Collections::Vector Sınıfı](../cppcx/platform-collections-vector-class.md)|Öğelerin değiştirilebilir bir dizisini temsil eder. Benzer şekilde [std::vector](../standard-library/vector-class.md).|
+|[Platform::Collections::VectorIterator Sınıfı](../cppcx/platform-collections-vectoriterator-class.md)|Trafiğiyle bir yineleyiciyi temsil eden bir `Vector` koleksiyonu.|
+|[Platform::Collections::VectorView Sınıfı](../cppcx/platform-collections-vectorview-class.md)|Bir salt okunur dizi öğeleri temsil eder.|
+|[Platform::Collections::VectorViewIterator Sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)|Trafiğiyle bir yineleyiciyi temsil eden bir `VectorView` koleksiyonu.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,7 +60,7 @@ Bu ad alanı, aşağıdaki üyeleri içerir.
 
 ### <a name="requirements"></a>Gereksinimler
 
-**Meta veriler:** platform.winmd
+**Meta veri:** platform.winmd
 
 **Namespace:** Platform::Collections
 

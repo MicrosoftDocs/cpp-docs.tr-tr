@@ -13,19 +13,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::IntPtr Struct
 ms.assetid: 6c0326e8-edfd-4e53-a963-240b845dcde8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b54facc94be3f43b500e38371e0eba9e00d130a4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a97d77f0b84366c83f09f6a6c72afe1bbb25dc6d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088160"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612135"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
-İmzalı bir işaretçi veya tanıtıcısı ve özelliği temsil eden platforma özgü boyutudur (32 bit veya 64 bit).  
+İmzalı bir işaretçi veya tanıtıcı ve ayarlanmış gösteren boyutudur, platforma özgü (32 bit veya 64-bit).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,25 +34,25 @@ public value struct IntPtr
 ```  
   
 ### <a name="members"></a>Üyeler  
- IntPtr aşağıdaki üyeleri vardır:  
+ IntPtr aşağıdaki üyeleri içerir:  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
 |[IntPtr::IntPtr](#ctor)|IntPtr yeni bir örneğini başlatır.|  
-|[IntPtr::op_Explicit işleci](#op-explicit)|Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.|  
-|[IntPtr::ToInt32](#toint32)|Geçerli IntPtr 32-bit tamsayıya dönüştürür.|  
+|[IntPtr::op_Explicit işleci](#op-explicit)|Belirtilen parametre bir IntPtr ya da bir işaretçi bir IntPtr değerine dönüştürür.|  
+|[IntPtr::ToInt32](#toint32)|Geçerli IntPtr bir 32-bit tamsayıya dönüştürür.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
 
 ## <a name="ctor"> </a> IntPtr::IntPtr Oluşturucusu
-Belirtilen değerle IntPtr yeni bir örneğini başlatır.  
+Belirtilen değerle bir IntPtr yeni bir örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -62,12 +62,12 @@ IntPtr( __int64 handle-or-pointer );   IntPtr( void* value );   IntPtr( int 32-b
   
 ### <a name="parameters"></a>Parametreler  
  value  
- Bir 64-bit tanıtıcı veya işaretçi veya 64-bitlik bir değer veya 64-bit değerine dönüştürülebilir 32 bitlik bir değer için bir işaretçi.  
+ Bir 64-bit tanıtıcı veya işaretçi veya 64-bit bir değer ya da bir 64-bit değere dönüştürülebilir 32-bit bir değer için bir işaretçi.  
   
 
 
 ## <a name="op-explicit"> </a> IntPtr::op_Explicit işleci
-Belirtilen parametre IntPtr veya bir işaretçi bir IntPtr değerine dönüştürür.  
+Belirtilen parametre bir IntPtr ya da bir işaretçi bir IntPtr değerine dönüştürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -77,16 +77,16 @@ static IntPtr::operator IntPtr( void* value1);   static IntPtr::operator IntPtr(
   
 ### <a name="parameters"></a>Parametreler  
  Değer1  
- Bir işaretçi bir tanıtıcı veya IntPtr.  
+ Tanıtıcı ya da IntPtr yönelik işaretçi.  
   
  Value2  
- Bir IntPtr dönüştürülebilir bir 32 bit tam sayı.  
+ İçin bir IntPtr dönüştürülebilir bir 32 bit tamsayı.  
   
- Değer3  
- IntPtr.  
+ Değeri3  
+ Bir IntPtr.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Birinci ve ikinci işleçleri IntPtr döndür. Üçüncü işleci geçerli IntPtr tarafından temsil edilen değer için bir işaretçi döndürür.  
+ Birinci ve ikinci işleçleri bir IntPtr döndürür. Üçüncü işleci bir işaretçi geçerli IntPtr tarafından temsil edilen değeri döndürür.  
   
 
 

@@ -30,16 +30,16 @@ helpviewer_keywords:
 - portability [C++], character sets
 - MBCS [C++], international programming
 ms.assetid: a1bb27ac-abe5-4c6b-867d-f761d4b93205
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8eaf5425bab79d31391e6ccd82e03c667de1271c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: ed4232c73122e797a3b0e7aa17c43cde5ab47cf5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016632"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42610720"
 ---
 # <a name="text-and-strings-in-visual-c"></a>Visual C++'da Metin ve Dizeler
 Uluslararası pazarlar için uygulama geliştirmenin önemli bir yönüdür yerel karakter kümeleri yeterli gösterimidir. ASCII karakter kümesi aralığı için 0x00 0x7F karakter tanımlar. Karakterler için 0x00 0x7F aralık içinde aynı şekilde ASCII karakter kümesi tanımlayan ve ayrıca genişletilmiş bir karakter 0x80 için 0xFF kümesini tanımlamak öncelikle Avrupa, diğer karakter kümesi vardır. Bu nedenle, 8-bit, tek baytlı karakter kümesi (SBCS) birçok Avrupa dilleri için karakter kümesi yanı sıra ASCII karakter kümesi temsil etmek yeterli olur. Ancak, bazı Avrupa dışı karakter kümeleri, Japonca Kanji gibi tek bayt kodlama düzenini temsil eden ve çok baytlı karakter kodlaması (MBCS) ayarlayın. Bu nedenle gerekli olandan çok daha fazla karakter içerir.  

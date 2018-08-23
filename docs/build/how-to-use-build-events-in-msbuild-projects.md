@@ -16,38 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2367c85dbd4a4ef7b10d927592c0fb10a417f0e6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59863911072b491eb19a1296f3cb40d4f4ab4dce
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369779"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613062"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
-Bir komut bir yapı olayıdır, [!INCLUDE[vstecmsbuild](../build/includes/vstecmsbuild_md.md)] derleme sürecindeki belirli bir aşamada gerçekleştirir. *Oluşturma öncesi* olayı, yapı başlamadan önce oluşur; *bağlama öncesi* olayı bağlantı adım başlamadan önce; oluşur ve *oluşturma sonrası* olay oluştuktan sonra derleme başarılı bir şekilde sona erer. Yalnızca ilişkili derleme adımı oluşursa bir yapı olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
+Bir derleme olay MSBuild yapı işleminde belirli bir aşamada gerçekleştirir bir komuttur. *Derleme öncesi* olayı oluşturma başlamadan önce oluşur; *bağlama öncesi* olaylarının bağlantı adım başlatılmadan önce; ve *derleme sonrası* olay yapıdan sonra gerçekleşir başarılı bir şekilde sona erer. İlişkili derleme adımı oluşursa bir derleme olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
   
- Üç yapı olayların her biri bir öğesi tanım grubunda command öğesi tarafından temsil edilen (`<Command>`), yürütüldüğünde ve bir ileti öğesi (`<Message>`) diğer bir deyişle ne zaman görüntülenen **MSBuild** yapı olayı gerçekleştirir. Her öğe isteğe bağlıdır ve birden çok kez aynı öğeye belirtirseniz, son a geçişi önceliklidir.  
+ Üç derleme olayların her biri bir öğe tanım grubu içinde bir command öğesi tarafından temsil edilen (`<Command>`), yürütülür ve bir ileti öğesi (`<Message>`) diğer bir deyişle olduğunda görüntülenen **MSBuild** derleme olayı gerçekleştirir. Her öğe isteğe bağlıdır ve birden çok kez aynı öğeye belirtirseniz, son oluşum önceliklidir.  
   
- İsteğe bağlı bir *kullanım yapısı* öğesi (`<`* oluşturmak-olay ***UseInBuild**`>`) derleme olayının yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *kullanım yapısı* öğesidir ya da `true` veya `false`. Varsayılan olarak, bir derleme olayının sürece yürütülen ilgili *kullanım yapısı* ayarlanır `false`.  
+ İsteğe bağlı *yapı içinde kullanımı* öğesi (`<`* oluşturmak-olay ***UseInBuild**`>`) derleme olay yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *yapı içinde kullanımı* öğedir ya da `true` veya `false`. Varsayılan olarak, bir derleme olay sürece yürütülür, karşılık gelen *yapı içinde kullanımı* ayarlanır `false`.  
   
- Aşağıdaki tabloda her bir yapı olay XML öğesi listelenmektedir:  
+ Aşağıdaki tabloda, her yapı olay XML öğesi listelenmektedir:  
   
 |XML öğesi|Açıklama|  
 |-----------------|-----------------|  
-|`PreBuildEvent`|Yapı başlamadan önce bu olay yürütür.|  
+|`PreBuildEvent`|Oluşturma başlamadan önce bu olay yürütür.|  
 |`PreLinkEvent`|Bağlantı adım başlamadan önce bu olay yürütür.|  
-|`PostBuildEvent`|Yapı tamamlandıktan sonra bu olay yürütür.|  
+|`PostBuildEvent`|Derleme tamamlandıktan sonra bu olay yürütür.|  
   
- Aşağıdaki tabloda her listeler *kullanım yapısı* öğe:  
+ Aşağıdaki tabloda her listeler *yapı içinde kullanımı* öğesi:  
   
 |XML öğesi|Açıklama|  
 |-----------------|-----------------|  
-|`PreBuildEventUseInBuild`|Yürütülecek belirtir *oluşturma öncesi* olay.|  
+|`PreBuildEventUseInBuild`|Yürütülecek belirtir *derleme öncesi* olay.|  
 |`PreLinkEventUseInBuild`|Yürütülecek belirtir *bağlama öncesi* olay.|  
-|`PostBuildEventUseInBuild`|Yürütülecek belirtir *oluşturma sonrası* olay.|  
+|`PostBuildEventUseInBuild`|Yürütülecek belirtir *derleme sonrası* olay.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, Project öğesi içinde oluşturulan myproject.vcxproj dosyasının içinde eklenebilir [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *oluşturma öncesi* bir main.cpp kopyasını; bir olay yapar *bağlama öncesi* main.obj; kopyasını bir ve bir olay yapar *oluşturma sonrası* olay myproject.exe bir kopyasını sağlar. Proje bir yayın yapılandırma kullanılarak oluşturulmuştur, derleme olaylarını yürütülür. Projeyi hata ayıklama Yapılandırması'nı kullanarak oluşturulursa, derleme olaylarını yürütülmedi.  
+ Aşağıdaki örnek, oluşturduğunuz myproject.vcxproj dosyanın proje öğesi içinde eklenebilir [izlenecek yol: Visual C++ projesi oluşturmak için MSBuild kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md). A *derleme öncesi* olay yaptığı bir kopyasını Main.cpp olarak; bir *bağlama öncesi* bir kopyasını main.obj; ve bir olay yapar *derleme sonrası* olay myproject.exe bir kopyasını getirir. Proje yayın yapılandırma kullanılarak oluşturulmuşsa, derleme olayları yürütülür. Proje hata ayıklama Yapılandırması kullanılarak oluşturulmuşsa, derleme olayları yürütülmedi.  
   
 ```  
 <ItemDefinitionGroup>  

@@ -1,5 +1,5 @@
 ---
-title: Platform::Runtime::InteropServices Namespace | Microsoft Docs
+title: 'Platform::Runtime:: InteropServices Namespace | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Runtime::InteropServices Namespace
 ms.assetid: 546b981a-a360-4a78-b89f-fdf0df848747
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90f28946355dccefc56600ac241c3ba3f9517822
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a28f07990d5958f48f032b1355a565d2a4a559e9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086921"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611588"
 ---
-# <a name="platformruntimeinteropservices-namespace"></a>Platform::Runtime::InteropServices Namespace
-Bu ad yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  
+# <a name="platformruntimeinteropservices-namespace"></a>Platform::Runtime:: InteropServices Namespace
+Bu ad alanı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,7 +35,7 @@ namespace Platform {
 ```  
   
 ### <a name="members"></a>Üyeler  
- Bu ad alanı iç kullanım için tasarlanmıştır ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.  
+ Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.  
   
 |Ad|Açıklama|  
 |----------|------------|  
@@ -50,7 +50,7 @@ namespace Platform {
  `Platform`  
   
 ### <a name="requirements"></a>Gereksinimler  
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
  **Namespace:** Platform::InteropServices  
   

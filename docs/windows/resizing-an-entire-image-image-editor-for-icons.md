@@ -18,32 +18,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75c4558f0d783152cee2eeb53f06ee341b785994
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5465ccacf6fb051e787cf390c82108cb9344d203
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012173"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613115"
 ---
 # <a name="resizing-an-entire-image-image-editor-for-icons"></a>Görüntünün Tümünü Yeniden Boyutlandırma (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırma  
-  
-1.  Özelliklerini değiştirmek istediğiniz görüntüyü açın.  
-  
-2.  İçinde **genişliği** ve **yükseklik** kutularındaki [Özellikler penceresi](/visualstudio/ide/reference/properties-window), istediğiniz boyutları yazın.  
-  
-     Resmin boyutu artırıyorsanız **görüntü** Düzenleyicisi resmi sağa, aşağı, veya her ikisi de genişletir ve yeni bölge geçerli arka plan rengi ile doldurur. Görüntü uzatılabilir değil.  
-  
-     Görüntü boyutunu azaltarak, **görüntü** Düzenleyicisi sağ veya alt kenarı veya her ikisi de resmi kırpar.  
-  
-    > [!NOTE]
-    >  Kullanabileceğiniz **genişliği** ve **yükseklik** kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntü yalnızca yeniden boyutlandırmak için özellikleri.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)
+
+### <a name="to-resize-an-entire-image-using-the-properties-window"></a>Özellikler penceresini kullanarak görüntünün tümünü yeniden boyutlandırma
+
+1. Özelliklerini değiştirmek istediğiniz görüntüyü açın.
+
+2. İçinde **genişliği** ve **yükseklik** kutularındaki [Özellikler penceresi](/visualstudio/ide/reference/properties-window), istediğiniz boyutları yazın.
+
+   Resmin boyutu artırıyorsanız **görüntü** Düzenleyicisi resmi sağa, aşağı, veya her ikisi de genişletir ve yeni bölge geçerli arka plan rengi ile doldurur. Görüntü uzatılabilir değil.
+
+   Görüntü boyutunu azaltarak, **görüntü** Düzenleyicisi sağ veya alt kenarı veya her ikisi de resmi kırpar.
+
+   > [!NOTE]
+   > Kullanabileceğiniz **genişliği** ve **yükseklik** kısmi bir seçim değil yeniden boyutlandırmak için tüm görüntü yalnızca yeniden boyutlandırmak için özellikleri.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)

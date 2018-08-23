@@ -12,15 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e3e5ab742335cfd6bb47a5105995d7339c7c36a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 99c228d018402d44186efdda264d1eec83b0332f
+ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687458"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "42465718"
 ---
 # <a name="using-lambdas-function-objects-and-restricted-functions"></a>Lambda'lar, İşlev Nesneleri ve Kısıtlanmış İşlevler Kullanma
-Hızlandırıcı üzerinde çalıştırmak istediğiniz C++ AMP kodu bir bağımsız değişken için bir çağrı olarak belirtilen [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu bağımsız değişken olarak bir lambda ifadesi veya bir işlev nesnesi (functor) sağlayabilir. Ayrıca, lambda ifadesi veya işlev nesnesi C++ AMP kısıtlanmış işlevi çağırabilirsiniz. Bu konu, Lambda'lar, işlev nesneleri ve kısıtlanmış işlevler göstermek için bir dizi ek algoritma kullanır. Aşağıdaki örnek, C++ AMP kodu olmadan algoritmasını gösterir. İki 1 boyutlu diziler eşit uzunlukta oluşturulur. Karşılık gelen tamsayı öğeleri eklendi ve üçüncü 1 boyutlu bir dizi içinde depolanır. C++ AMP kullanılmaz.  
+Hızlandırıcı da çalıştırmayı istediğiniz C++ AMP kodunu çağrısında bağımsız değişken olarak belirtilen [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu bağımsız değişken olarak bir lambda ifadesi veya işlev nesnesi (functor) sağlayabilir. Ayrıca, lambda ifadesi veya işlev nesnesi bir C++ AMP-kısıtlı işlevi çağırabilir. Bu konu, lambdaları, işlev nesneleri ve kısıtlı işlevleri göstermek için bir dizi toplama algoritması kullanır. Aşağıdaki örnek, C++ AMP kodu olmayan algoritmayı gösterir. Eşit uzunluktaki iki 1 boyutlu dizi oluşturulur. Karşılık tamsayı öğeleri eklenir ve üçüncü 1 boyutlu dizide depolanan. C++ AMP kullanılmaz.  
   
 ```cpp  
 void CpuMethod() {  
@@ -39,11 +39,11 @@ void CpuMethod() {
     std::cout <<sumCPP[idx] <<"\n";  
  }  
 }  
- 
 ```  
   
 ## <a name="lambda-expression"></a>Lambda ifadesi  
- Kodu yeniden C++ AMP kullanılacak en doğrudan yolu bir lambda ifadesi kullanmaktır.  
+ 
+Bir lambda ifadesini kullanma, C++ AMP kodunu yeniden yazmak için kullanılacak en direkt yoldur.  
   
 ```cpp  
 void AddArraysWithLambda() {  
@@ -59,7 +59,6 @@ void AddArraysWithLambda() {
 
     sum.discard_data();
 
- 
     parallel_for_each(
  sum.extent, 
  [=](index<1> idx) restrict(amp)  
@@ -67,18 +66,17 @@ void AddArraysWithLambda() {
     sum[idx] = a[idx] + b[idx];  
  });
 
- 
     for (int i = 0; i <5; i++) {  
     std::cout <<sum[i] <<"\n";  
  }  
 }  
- 
 ```  
   
- Lambda ifadesi bir dizin oluşturma parametre içermelidir ve içermelidir `restrict(amp)`. Örnekte, [array_view](../../parallel/amp/reference/array-view-class.md) `sum` nesnesi 1 derecesini sahiptir. Bu nedenle, lambda ifadesi parametresidir bir [dizin](../../parallel/amp/reference/index-class.md) , derece 1 sahip bir nesne. Çalışma zamanında lambda ifadesi bir kez her öğe için çalıştırılmasını [array_view](../../parallel/amp/reference/array-view-class.md) nesnesi. Daha fazla bilgi için bkz: [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md).  
+Lambda ifadesi bir dizin parametresi ve içermelidir `restrict(amp)`. Örnekte, [array_view](../../parallel/amp/reference/array-view-class.md) `sum` nesnesinin derecesi 1 vardır. Bu nedenle lambda ifadesi parametresi olan bir [dizin](../../parallel/amp/reference/index-class.md) 1. dereceli bir nesne. Çalışma zamanında, lambda ifadesi bir defa her öğe için yürütülür [array_view](../../parallel/amp/reference/array-view-class.md) nesne. Daha fazla bilgi için [Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md).  
   
 ## <a name="function-object"></a>İşlev Nesnesi  
- Hızlandırıcı kod işlevi nesnesine öğeli.  
+ 
+Hızlandırıcı kodunu işlen bir işlev nesnesine ayırabilirsiniz.  
   
 ```cpp  
 class AdditionFunctionObject  
@@ -103,7 +101,6 @@ private:
 };  
  
 void AddArraysWithFunctionObject() {  
- 
     int aCPP[] = {1, 2, 3, 4, 5};  
     int bCPP[] = {6, 7, 8, 9, 10};  
     int sumCPP[5];  
@@ -116,23 +113,21 @@ void AddArraysWithFunctionObject() {
 
     sum.discard_data();
 
- 
     parallel_for_each(
  sum.extent, 
     AdditionFunctionObject(a, b, sum));
 
- 
     for (int i = 0; i <5; i++) {  
     std::cout <<sum[i] <<"\n";  
  }  
 }  
- 
 ```  
 
- İşlev nesnesi bir oluşturucu içermelidir ve işlev çağırma işleci aşırı içermelidir. İşlev çağırma işleci bir dizin oluşturma parametre içermelidir. İşlev nesnesi örneği ikinci bağımsız değişken olarak geçirilen [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu örnekte, üç [array_view](../../parallel/amp/reference/array-view-class.md) nesneleri işlevi nesne oluşturucuya geçirilir. [Array_view](../../parallel/amp/reference/array-view-class.md) nesne `sum` 1 derecesini sahiptir. Bu nedenle, işlev çağırma işleci parametresidir bir [dizin](../../parallel/amp/reference/index-class.md) , derece 1 sahip bir nesne. Çalışma zamanında işlevi kez her öğe için yürütülür [array_view](../../parallel/amp/reference/array-view-class.md) nesnesi. Daha fazla bilgi için bkz: [işlevini çağırın](../../cpp/function-call-cpp.md) ve [işlev nesneleri C++ Standart Kitaplığı'nda](../../standard-library/function-objects-in-the-stl.md).  
+İşlev nesnesi bir oluşturucu ve bir işlev çağrısı işleci aşırı yüklemesi içermelidir. İşlev çağrısı işleci, bir dizin oluşturma parametresi de içermelidir. İkinci bağımsız değişkeni olarak geçirilen işlev nesnesinin bir örneği [parallel_for_each](reference/concurrency-namespace-functions-amp.md#parallel_for_each) yöntemi. Bu örnekte, üç [array_view](../../parallel/amp/reference/array-view-class.md) nesne işlev nesnesi oluşturucusuna geçirilmektedir geçirilir. [Array_view](../../parallel/amp/reference/array-view-class.md) nesne `sum` derecesi 1 sahiptir. Bu nedenle, işlev çağrısı işleci parametresi olan bir [dizin](../../parallel/amp/reference/index-class.md) 1. dereceli bir nesne. Çalışma zamanında işlev bir defa her öğe için yürütülür [array_view](../../parallel/amp/reference/array-view-class.md) nesne. Daha fazla bilgi için [işlevi çağrısı](../../cpp/function-call-cpp.md) ve [C++ Standart kitaplığındaki işlev nesneleri](../../standard-library/function-objects-in-the-stl.md).  
   
-## <a name="c-amp-restricted-function"></a>C++ AMP kısıtlanmış işlevi  
- Daha fazla kısıtlı işlevi oluşturarak ve lambda ifadesi veya bir işlev nesnesi çağırma Hızlandırıcı kod öğeli. Aşağıdaki kod örneği, bir lambda ifadesinden kısıtlı bir işlevi çağırmak gösterilmiştir.  
+## <a name="c-amp-restricted-function"></a>C++ AMP-kısıtlı işlevi  
+ 
+Sınırlı bir işlev oluşturarak ve bir lambda ifadesi veya işlev nesnesi çağırarak Hızlandırıcı kodunu daha da ayırabilirsiniz. Aşağıdaki kod örneği, bir lambda ifadesinden sınırlı bir işlev çağrısı gösterilmiştir.  
   
 ```cpp  
 void AddElementsWithRestrictedFunction(index<1> idx, array_view<int, 1> sum, array_view<int, 1> a, array_view<int, 1> b) restrict(amp)  
@@ -154,29 +149,25 @@ void AddArraysWithFunction() {
 
     sum.discard_data();
 
- 
     parallel_for_each(
  sum.extent, 
  [=](index<1> idx) restrict(amp)  
  {  
     AddElementsWithRestrictedFunction(idx, sum, a, b);
-
  });
 
- 
     for (int i = 0; i <5; i++) {  
     std::cout <<sum[i] <<"\n";  
  }  
 }  
- 
 ```  
   
- Sınırlı işlev içermelidir `restrict(amp)` ve açıklanan kısıtlamaları uygun [(C++ AMP) kısıtlamak](../../cpp/restrict-cpp-amp.md).  
+Sınırlı işlev içermelidir `restrict(amp)` ve şurada açıklanan kısıtlamalarına uymak [(C++ AMP) kısıtlama](../../cpp/restrict-cpp-amp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
- [Lambda ifadesi sözdizimi](../../cpp/lambda-expression-syntax.md)   
- [İşlev çağrısı](../../cpp/function-call-cpp.md)   
- [C++ Standart Kitaplığı'nda işlev nesneleri](../../standard-library/function-objects-in-the-stl.md)   
- [restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)
-
+ 
+[C++ AMP (C++ hızlandırılmış yoğun paralellik)](../../parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)   
+[Lambda ifadesi söz dizimi](../../cpp/lambda-expression-syntax.md)   
+[İşlev çağrısı](../../cpp/function-call-cpp.md)   
+[C++ Standart kitaplığındaki işlev nesneleri](../../standard-library/function-objects-in-the-stl.md)   
+[restrict (C++ AMP)](../../cpp/restrict-cpp-amp.md)

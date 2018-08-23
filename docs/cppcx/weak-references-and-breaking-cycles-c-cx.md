@@ -1,25 +1,25 @@
 ---
-title: Zayıf başvurular ve kesme döngüleri (C + +/ CX) | Microsoft Docs
+title: Zayıf başvurular ve döngüleri kesme (C + +/ CX) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 1acb6402-05f0-4951-af94-0e9dab41c53e
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48b5d73d85383056b17c806e061b131b12d821a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 92076ac919664fb8ebf6a01513b9382ade52f2a5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089084"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598303"
 ---
-# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve kesme döngüleri (C + +/ CX)
-Başvuru sayım dayalı herhangi türü sistemde, tür başvuruları kurabilir *döngüleri*— diğer bir deyişle, bir nesne ikinci bir nesneye başvuruyor, bazı son nesnenin geri başvurduğu kadar üçüncü, vb. nesne ikinci nesneden başvuruyor ilk nesne. Bir nesnenin başvuru sayısı sıfır olduğunda bir döngüsünde doğru nesneleri silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [gidermek](../cppcx/platform-weakreference-class.md#resolve) nesne artık var veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne Canlı ancak türündedeğil`T`.  
+# <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C + +/ CX)
+Başvuru türleri için başvuru sayımı alan hiçbir tür sistemindeki kurabilir *döngüleri*— diğer bir deyişle, bir nesne, ikinci bir nesneye başvurur, ikinci nesne bazı son nesnenin geri başvurduğu kadar üçüncü vb. nesnesini ifade eder. ilk nesne. Bir nesnenin başvuru sayısının sıfır olduğunda bir döngüsünde doğru nesneler silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [çözmek](../cppcx/platform-weakreference-class.md#resolve) nesnesi artık yok veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne, Canlı ancak türündedeğil`T`.  
   
- Bir senaryoda `WeakReference` kullanılmalıdır olduğunda `this` işaretçi, olay işleyici tanımlamak için kullanılan bir lambda ifadesinde yakalanır. Olay işleyicileri tanımladığınızda, ancak bir lambda, olay işleyicisi için kullanmak istiyorsanız, adlandırılmış yöntemleri kullanmanızı öneririz; veya bir başvuru diğer bir durum döngüsünde sayım bölüneceği varsa — kullanmak `WeakReference`. Örnek buradadır:  
+ Bir senaryoda `WeakReference` kullanılmalıdır olduğunda `this` işaretçi bir olay işleyicisi tanımlamak için kullanılan bir lambda ifadesinde yakalanan. Olay işleyicilerini tanımlar, ancak bir lambda, olay işleyicisi için kullanmak istediğiniz adlandırılmış yöntemleri kullanmanızı öneririz — ya da diğer bazı durumlarda döngü sayımı bir başvuru ayırmak varsa — kullanın `WeakReference`. Örnek buradadır:  
   
 ```  
   
@@ -57,7 +57,7 @@ Class1::Class1()
 }  
 ```  
   
- Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyici abone listesinden kaldırmak neden olur.  
+ Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyicisi abone listeden kaldırmak neden olur.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

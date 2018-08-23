@@ -20,54 +20,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93cf3eba3301b0ae000b9f461851b46be592a119
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: c33745eca92a421049fb0169ad1b70921b38bf3d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650289"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600089"
 ---
 # <a name="adding-or-deleting-a-string"></a>Dize Ekleme veya Silme
-Dize tablosu kullanarak yeni girişler hızla ekleyebilirsiniz **dize** Düzenleyici. Yeni dizeler tablonun sonuna yerleştirilir ve sonraki kullanılabilir tanımlayıcı verilir. Daha sonra düzenleyebilirsiniz **kimliği**, **değer**, veya **açıklamalı alt yazı** özelliklerinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gerektiğinde.  
-  
- **Dize** Düzenleyicisi sağlar zaten kullanımda bir kimliği kullanmayın. Bir kimliği kullanımda, zaten seçerseniz **dize** Düzenleyicisi bunu size bildirir ve ardından genel benzersiz kimliği örneğin Ata `IDS_STRING58113`.  
-  
-### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için  
-  
-1.  Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
-  
-    > [!NOTE]
-    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Dize tablosu içinde sağ tıklatın ve seçin **yeni dize** kısayol menüsünden.  
-  
-3.  İçinde **dize** Düzenleyicisi'ni seçin bir **kimliği** kimliği aşağı açılan listesinden veya türü kimliği ile doğrudan bir yerde.  
-  
-4.  Düzen **değer**, gerekirse.  
-  
-5.  İçin bir giriş türü **açıklamalı alt yazı**.  
-  
-    > [!NOTE]
-    >  Null dizeler Windows dize tablolarında izin verilmez. Boş bir dize olan dize tablosunda bir giriş oluşturmak, "Lütfen gir bir dize Bu tablo girişi için" için soran bir ileti alırsınız.  
-  
-### <a name="to-delete-a-string-table-entry"></a>Dize tablosu girişi silmek için  
-  
-1.  Silmek istediğiniz girişini seçin.  
-  
-2.  Üzerinde **Düzenle** menüsünde tıklatın **Sil**.  
-  
- \- veya -  
-  
--   Sağ tıklayın ve silmek istediğiniz dizeyi **Sil** kısayol menüsünden.  
-  
- \- veya -  
-  
--   Tuşuna **Sil** anahtarı.  
-  
- Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dize Düzenleyicisi](../windows/string-editor.md)   
+
+Dize tablosu kullanarak yeni girişler hızla ekleyebilirsiniz **dize** Düzenleyici. Yeni dizeler tablonun sonuna yerleştirilir ve sonraki kullanılabilir tanımlayıcı verilir. Daha sonra düzenleyebilirsiniz **kimliği**, **değer**, veya **açıklamalı alt yazı** özelliklerinde [Özellikler penceresi](/visualstudio/ide/reference/properties-window) gerektiğinde.
+
+**Dize** Düzenleyicisi sağlar zaten kullanımda bir kimliği kullanmayın. Bir kimliği kullanımda, zaten seçerseniz **dize** Düzenleyicisi bunu size bildirir ve ardından genel benzersiz kimliği örneğin Ata `IDS_STRING58113`.
+
+### <a name="to-add-a-string-table-entry"></a>Dize tablo girdisi eklemek için
+
+1. Dize tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+2. Dize tablosu içinde sağ tıklatın ve seçin **yeni dize** kısayol menüsünden.
+
+3. İçinde **dize** Düzenleyicisi'ni seçin bir **kimliği** kimliği aşağı açılan listesinden veya türü kimliği ile doğrudan bir yerde.
+
+4. Düzen **değer**, gerekirse.
+
+5. İçin bir giriş türü **açıklamalı alt yazı**.
+
+   > [!NOTE]
+   > Null dizeler Windows dize tablolarında izin verilmez. Boş bir dize olan dize tablosunda bir giriş oluşturmak, "Lütfen gir bir dize Bu tablo girişi için" için soran bir ileti alırsınız.
+
+### <a name="to-delete-a-string-table-entry"></a>Dize tablosu girişi silmek için
+
+1. Silmek istediğiniz girişini seçin.
+
+2. Üzerinde **Düzenle** menüsünde tıklatın **Sil**.
+
+\- veya -
+
+- Sağ tıklayın ve silmek istediğiniz dizeyi **Sil** kısayol menüsünden.
+
+\- veya -
+
+- Tuşuna **Sil** anahtarı.
+
+Yönetilen projelere kaynak (Bu ortak dil çalışma zamanını hedefleyen) ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [izlenecek yol: Windows formlarını yerelleştirme](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5) ve [İzlenecek yol: ASP.NET ile yerelleştirme için kaynakların kullanarak](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dize Düzenleyicisi](../windows/string-editor.md)  

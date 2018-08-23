@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 276024be7b3d75edf308e43a08e4d2cbe9901c1e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: aeab6c448818d9d54ca96832a8c7875ebaa97091
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652061"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611365"
 ---
 # <a name="classfactoryaddref-method"></a>ClassFactory::AddRef Yöntemi
-Geçerli başvuru sayısını artırır **ClassFactory** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD_(  
-   ULONG,  
-   AddRef  
-)();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ClassFactory Sınıfı](../windows/classfactory-class.md)
+
+Geçerli başvuru sayısını artırır **ClassFactory** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ClassFactory Sınıfı](../windows/classfactory-class.md)

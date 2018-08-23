@@ -17,38 +17,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2a2ed2393f25dac416cf3b6dfd1b178190d368a6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8783d30aa018e0b29705c4c6bdda3b9e2a47af4a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647108"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613238"
 ---
 # <a name="activationfactoryqueryinterface-method"></a>ActivationFactory::QueryInterface Yöntemi
-Belirtilen arabirim işaretçisi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   QueryInterface  
-)(REFIID riid, _Deref_out_ void **ppvObject);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *riid*  
- Bir arabirim kimliği.  
-  
- *ppvObject*  
- Bu işlem tamamlandığında, parametre tarafından belirtilen arabirim işaretçisi *riid*.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ActivationFactory Sınıfı](../windows/activationfactory-class.md)
+
+Belirtilen arabirim işaretçisi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)(REFIID riid, _Deref_out_ void **ppvObject);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*  
+Bir arabirim kimliği.
+
+*ppvObject*  
+Bu işlem tamamlandığında, parametre tarafından belirtilen arabirim işaretçisi *riid*.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ActivationFactory Sınıfı](../windows/activationfactory-class.md)

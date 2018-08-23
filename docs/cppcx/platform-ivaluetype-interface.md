@@ -1,5 +1,5 @@
 ---
-title: Platform::IValueType arabirimi | Microsoft Docs
+title: Platform::ıvaluetype arabirimi | Microsoft Docs
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -9,19 +9,19 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 8b89b21e-0d7b-4cc2-baa3-93b17c82945c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67d5a9df66678e7c5c40d1570fa6149ba3f28ff8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2f1e83c285274326be2501a8f9b006c8df05204
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089265"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613392"
 ---
-# <a name="platformivaluetype-interface"></a>Platform::IValueType arabirimi
-`Platform::IValueType` değer sınıflar ve değer yapılar tarafından uygulanan bir altyapı arabirimdir. Kodunuzda açıkça kullanılacak değil.  
+# <a name="platformivaluetype-interface"></a>Platform::ıvaluetype arabirimi
+`Platform::IValueType` değer sınıfları ve değer yapıları tarafından uygulanan bir altyapı arabirimidir. Kodunuzda açıkça kullanılacak değil.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

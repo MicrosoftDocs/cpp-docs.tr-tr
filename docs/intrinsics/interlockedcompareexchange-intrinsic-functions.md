@@ -1,5 +1,5 @@
 ---
-title: _InterlockedCompareExchange iç işlevler | Microsoft Docs
+title: _Interlockedcompareexchange iç işlevleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -58,17 +58,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b0fc52585171df740f70e12d81d849e3726dcd7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7eff5cab57c1288af1f6e1109fae458c35e0fa7b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339189"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611389"
 ---
-# <a name="interlockedcompareexchange-intrinsic-functions"></a>_InterlockedCompareExchange iç işlevler
-**Microsoft özel**  
+# <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
+**Microsoft'a özgü**  
   
- Bir exchange ve ınterlocked karşılaştırmak gerçekleştirir.  
+ Bir birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -186,14 +186,14 @@ __int64 _InterlockedCompareExchange64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `Destination`  
- Hedef değer işaretçi. Oturum açma göz ardı edilir.  
+ [out içinde] `Destination`  
+ Hedef değer işaretçisi. Oturum yok sayılır.  
   
  [in] `Exchange`  
- Exchange değeri. Oturum açma göz ardı edilir.  
+ Exchange değeri. Oturum yok sayılır.  
   
  [in] `Comparand`  
- Hedefe Karşılaştırılacak değer. Oturum açma göz ardı edilir.  
+ Hedefe Karşılaştırılacak değer. Oturum yok sayılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri ilk değeri `Destination` işaretçi.  
@@ -202,30 +202,30 @@ __int64 _InterlockedCompareExchange64_rel(
   
 |İç|Mimari|Üstbilgi|  
 |---------------|------------------|------------|  
-|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
+|`_InterlockedCompareExchange`, `_InterlockedCompareExchange8`, `_InterlockedCompareExchange16`, `_InterlockedCompareExchange64`|x86, ARM, x64|\<intrin.h >|  
 |`_InterlockedCompareExchange_acq`, `_InterlockedCompareExchange_rel`, `_InterlockedCompareExchange8_acq`, `_InterlockedCompareExchange8_nf`, `_InterlockedCompareExchange8_rel`,`_InterlockedCompareExchange16_acq`, `_InterlockedCompareExchange16_nf`, `_InterlockedCompareExchange16_rel`, `_InterlockedCompareExchange64_acq`, `_InterlockedCompareExchange64_nf`, `_InterlockedCompareExchange64_rel`,|ARM|\<intrin.h >|  
-|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|[!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<intrin.h >|  
-|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, [!INCLUDE[vcprx64](../assembler/inline/includes/vcprx64_md.md)]|\<immintrin.h >|  
+|`_InterlockedCompareExchange_np`, `_InterlockedCompareExchange16_np`, `_InterlockedCompareExchange64_np`|X64|\<intrin.h >|  
+|`_InterlockedCompareExchange_HLEAcquire`, `_InterlockedCompareExchange_HLERelease`, `_InterlockedCompareExchange64_HLEAcquire`, `_InterlockedCompareExchange64_HLERelease`|x86, x64|\<immintrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `_InterlockedCompareExchange` bir atomik karşılaştırması gerçekleştirir `Destination` değerini `Comparand` değeri. Varsa `Destination` değerdir eşit `Comparand` değeri `Exchange` değeri tarafından belirtilen adresi depolanır `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.  
+ `_InterlockedCompareExchange` atomik bir karşılaştırma gerçekleştirir `Destination` değerini `Comparand` değeri. Varsa `Destination` değeri eşittir `Comparand` değeri `Exchange` değeri tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.  
   
- `_InterlockedCompareExchange` derleyici iç Win32 desteği sağlar [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] [InterlockedCompareExchange](http://msdn.microsoft.com/library/ms683560.aspx) işlevi.  
+ `_InterlockedCompareExchange` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [InterlockedCompareExchange](/windows/desktop/api/winbase/nf-winbase-interlockedcompareexchange) işlevi.  
   
- Birkaç Çeşitlemeler vardır `_InterlockedCompareExchange` , bunlar içeren veri türleri ve işlemci özgü olup elde göre farklılık veya yayın semantiği kullanılır.  
+ Bazı farklılıklar vardır `_InterlockedCompareExchange` , bunlar içeren veri türleri ve olup işlemciye özgü alma göre farklılık veya release semantikleri kullanılır.  
   
- Sırada `_InterlockedCompareExchange` işlev çalışır uzun tamsayı değerlerine `_InterlockedCompareExchange8` 8 bit tam sayı değerleri üzerinde çalışır `_InterlockedCompareExchange16` kısa tamsayı değerler üzerinde çalışır ve `_InterlockedCompareExchange64` 64 bit tam sayı değerleri üzerinde çalışır.  
+ Sırada `_InterlockedCompareExchange` işlevi uzun tamsayı değerleri üzerinde çalışır `_InterlockedCompareExchange8` 8 bit tam sayı değerleri üzerinde çalışan `_InterlockedCompareExchange16` kısa tamsayı değerler üzerinde çalışır ve `_InterlockedCompareExchange64` 64-bit tamsayı değerler üzerinde çalışır.  
   
- İç bilgiler ile ARM platformlarda kullanın `_acq` ve `_rel` sonekleri edinme ve yayın anlamları gibi önemli bir bölümü başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ ARM platformlarında, yapı içleri ile kullanmak `_acq` ve `_rel` sonekleri edinme ve sürüm semantiği gibi kritik bir bölüm başında ve sonunda. ARM iç bilgileri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.  
   
- İç bilgiler ile bir `_np` ("hiçbir hazırlık") soneki derleyici tarafından eklenen bir olası hazırlık işlemin engelleme.  
+ Yapı içleri ile bir `_np` ("hiçbir hazırlık") soneki, derleyici tarafından eklenen bir olası önceden getirme işleminin engelle.  
   
- Donanım kilidi Elision (HLE) yönergeleri, iç bilgileri ile destek Intel platformlarda `_HLEAcquire` ve `_HLERelease` son ekleri kapsayacak performans donanım kilidi yazma adımda ortadan kaldırarak hızlandırabilir işlemci ipucu. Bu yapı HLE desteklemeyen platformlarda çağrıldıklarında ipucu yoksayıldı.  
+ Donanım kilit eleme (HLE) yönergeleri yapı içleri ile destekleyen Intel platformlarında `_HLEAcquire` ve `_HLERelease` sonekleri kapsayacak performans donanım kilit yazma adımda ortadan kaldırarak hızlandırabilir işlemci bir ipucu verir. Bu iç HLE desteklemeyen platformları üzerinde çağrılırsa ipucu yoksayıldı.  
   
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, `_InterlockedCompareExchange` basit alt düzey iş parçacığı eşitleme için kullanılır. Bir yaklaşım, birden çok iş parçacıklı programlama için temel olarak kendi sınırlamaları vardır; ınterlocked iç bilgileri tipik kullanımını göstermek için sunulur. En iyi sonuçlar için Windows API kullanın. Birden çok iş parçacıklı programlama hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).  
+ Aşağıdaki örnekte, `_InterlockedCompareExchange` basit düzey iş parçacığı eşitleme için kullanılır. Yaklaşım, birden çok iş parçacıklı programlama için temel olarak kendi sınırlamaları vardır; birbirine kenetlenmiş yapı içlerini tipik kullanımını göstermek için sunulur. En iyi sonuçlar için Windows API kullanın. Çok iş parçacıklı programlama hakkında daha fazla bilgi için bkz: [bir çoklu iş parçacığı kullanan Win32 programı yazma](../parallel/writing-a-multithreaded-win32-program.md).  
   
 ```  
 // intrinExample.cpp  
@@ -436,11 +436,11 @@ int main(
 <29  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_InterlockedCompareExchange128](../intrinsics/interlockedcompareexchange128.md)   
- [_InterlockedCompareExchangePointer iç işlevler](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)   
+ [_Interlockedcompareexchangepointer iç işlevleri](../intrinsics/interlockedcompareexchangepointer-intrinsic-functions.md)   
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   
- [Anahtar sözcükler](../cpp/keywords-cpp.md)   
+ [anahtar sözcükler](../cpp/keywords-cpp.md)   
  [x86 Derleyicisi ile Çakışma](../build/conflicts-with-the-x86-compiler.md)

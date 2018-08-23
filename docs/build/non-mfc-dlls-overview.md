@@ -15,27 +15,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61ad8e6d1107dfdacc91c32d48ca1e3624a0211
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 037f6d7bc80956536a7098ee67275425c41a2f68
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368648"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42613225"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
-MFC dışı DLL MFC dahili olarak kullanmayan DLL'dir ve MFC veya MFC dışı çalıştırılabilir dosyalar tarafından DLL dışarı aktarılan işlevler çağrılabilir. İşlevler, genellikle standart C arabirimi kullanan MFC dışı DLL'den dışarı aktarılır.  
+MFC olmayan DLL, MFC dahili olarak kullanmayan bir DLL modülüdür ve DLL'deki dışarı aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. İşlevleri, genellikle standart C arabirimi kullanan MFC olmayan DLL'den dışarı aktarılır.  
   
- MFC dışı DLL'ler hakkında daha fazla bilgi için bkz: [dinamik bağlantı kitaplıkları](http://msdn.microsoft.com/library/windows/desktop/ms682589) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitaplıklarını](http://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
--   [İzlenecek yol: Oluşturma ve dinamik bağlantı kitaplığı kullanma](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
+-   [İzlenecek yol: Oluşturma ve bir dinamik bağlantı kitaplığı kullanma](../build/walkthrough-creating-and-using-a-dynamic-link-library-cpp.md)  
   
 -   [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)  
   
 -   [Bir yürütülebilir dosyayı DLL’ye bağlama](../build/linking-an-executable-to-a-dll.md)  
   
--   [DLL başlatma](../build/run-time-library-behavior.md#initializing-a-dll)  
+-   [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   

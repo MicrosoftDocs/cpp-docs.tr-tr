@@ -17,43 +17,49 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b849c7578b29a3d4595a9ecd07c4339dc751e9dd
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 6c2de62df47e46183c1169956a18ddc10822b22a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652955"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42611927"
 ---
 # <a name="dontusenewusemakeoperator-new-operator"></a>DontUseNewUseMake::operator new İşleci
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void* operator new(  
-   size_t,  
-   _In_ void* placement  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *__unnamed0*  
- Bir adlandırılmamış parametresi ayrılacak bellek bayt sayısını belirtir.  
-  
- *yerleştirme*  
- Ayrılacak türü.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşleç işlecini aşırı yüklediyseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar **yeni**.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İşleç aşırı **yeni** ve içinde kullanılmasını engeller `RuntimeClass`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DontUseNewUseMake sınıfı](../windows/dontusenewusemake-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void* operator new(
+   size_t,
+   _In_ void* placement
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*__unnamed0*  
+Bir adlandırılmamış parametresi ayrılacak bellek bayt sayısını belirtir.
+
+*yerleştirme*  
+Ayrılacak türü.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşleç işlecini aşırı yüklediyseniz ek bağımsız değişkenleri geçirmek için bir yol sağlar **yeni**.
+
+## <a name="remarks"></a>Açıklamalar
+
+İşleç aşırı **yeni** ve içinde kullanılmasını engeller `RuntimeClass`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DontUseNewUseMake Sınıfı](../windows/dontusenewusemake-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -18,29 +18,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3b88f13d0073c47d5c43908d4fea38c4337a5e1a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f1322f4146c4b4f8d497dfe4f7a2c06df18394b7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011412"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612122"
 ---
 # <a name="load-palette-colors-dialog-box-image-editor-for-icons"></a>Palet Renkleri Yükle İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
-Projenizde kullanılacak özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).  
-  
-### <a name="look-in"></a>İçine bak  
- Bir dosya veya klasörü bulmak için istediğiniz konumu belirtir. Başka bir konum seçmek için oka tıklayın veya düzeyleri yukarı taşımak için araç çubuğundaki klasör simgesine tıklayın.  
-  
-### <a name="file-name"></a>Dosya adı  
- Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar. Hızlıca önceden açmış olduğunuz bir dosyayı bulmak için aşağı açılan listede, dosya adı varsa tıklayın.  
-  
- Bir dosya için arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, yazabilirsiniz \*.\* tüm dosyaların listesini görmek için. Ayrıca, örneğin, C:\My Documents\MyColorPalette.pal dosyasının tam yolunu yazın veya \\\NetworkServer\MyFolder\MyColorPalette.pal.  
-  
-### <a name="files-of-type"></a>Dosya türü  
- Görüntülenecek dosya türlerini listeler. Palet (* .pal) renk paletlerini için varsayılan dosya türüdür.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+
+Projenizde kullanılacak özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).
+
+### <a name="look-in"></a>İçine bak
+
+Bir dosya veya klasörü bulmak için istediğiniz konumu belirtir. Başka bir konum seçmek için oka tıklayın veya düzeyleri yukarı taşımak için araç çubuğundaki klasör simgesine tıklayın.
+
+### <a name="file-name"></a>Dosya adı
+
+Açmak istediğiniz dosyanın adını yazmanız için bir alan sağlar. Hızlıca önceden açmış olduğunuz bir dosyayı bulmak için aşağı açılan listede, dosya adı varsa tıklayın.
+
+Bir dosya için arıyorsanız, joker karakter olarak yıldız işareti (*) kullanabilirsiniz. Örneğin, yazabilirsiniz \*.\* tüm dosyaların listesini görmek için. Ayrıca, örneğin, C:\My Documents\MyColorPalette.pal dosyasının tam yolunu yazın veya \\\NetworkServer\MyFolder\MyColorPalette.pal.
+
+### <a name="files-of-type"></a>Dosya türü
+
+Görüntülenecek dosya türlerini listeler. Palet (* .pal) renk paletlerini için varsayılan dosya türüdür.
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

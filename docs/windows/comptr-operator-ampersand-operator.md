@@ -17,34 +17,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0afff1699a4c7a3a14f07967cfb5ba5727ba0320
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: f513ac83e0ee83109f42cf87b80b4fcc4960db1f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461568"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598609"
 ---
 # <a name="comptroperatoramp-operator"></a>ComPtr::operator&amp; işleci
-Şununla ilişkili arabirimini yayımlar **ComPtr** nesne ve adresini alır. **ComPtr** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-Details::ComPtrRef<WeakRef> operator&()  
-  
-const Details::ComPtrRef<const WeakRef> operator&() const  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Geçerli zayıf bir başvuru **ComPtr**.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem farklıdır [ComPtr::GetAddressOf](../windows/comptr-getaddressof-method.md) , bu yöntem bir arabirim işaretçisi başvurusu serbest bırakır. Kullanım `ComPtr::GetAddressOf` kullandığınızda arabirim işaretçisi adresini gerektirir ancak bu arabirimi serbest bırakmak istiyor musunuz.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr Sınıfı](../windows/comptr-class.md)
+
+Şununla ilişkili arabirimini yayımlar **ComPtr** nesne ve adresini alır. **ComPtr** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+Details::ComPtrRef<WeakRef> operator&()
+
+const Details::ComPtrRef<const WeakRef> operator&() const
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Geçerli zayıf bir başvuru **ComPtr**.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yöntem farklıdır [ComPtr::GetAddressOf](../windows/comptr-getaddressof-method.md) , bu yöntem bir arabirim işaretçisi başvurusu serbest bırakır. Kullanım `ComPtr::GetAddressOf` kullandığınızda arabirim işaretçisi adresini gerektirir ancak bu arabirimi serbest bırakmak istiyor musunuz.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtr Sınıfı](../windows/comptr-class.md)

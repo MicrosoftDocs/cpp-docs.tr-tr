@@ -1,5 +1,5 @@
 ---
-title: '-Zc: auto (değişken türünü) | Microsoft Docs'
+title: '-Zc: auto (değişken türünü türet) | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/28/2018
 ms.technology:
@@ -19,16 +19,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caa64f64b75145c850c6f6393570dc3f9ba0b0d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b306a104b9f71d536684e62f6dda1cac45b1d9dd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379581"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42612947"
 ---
 # <a name="zcauto-deduce-variable-type"></a>/Zc:auto (Değişken Türünü Türet)
 
-**/Zc:auto [-]** derleyici seçeneği derleyici nasıl kullanılacağını söyler [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md) değişkenleri bildirmek için. Varsayılan seçenek belirtirseniz, **/Zc:auto**, derleyici, başlatma ifadesinden bildirilen değişkeninin türü deduces. Belirtirseniz **/Zc:auto-**, otomatik depolama sınıfı değişkenine derleyici ayırır.
+**/Zc:auto [-]** derleyici seçeneği derleyiciye nasıl kullanılacağını [auto anahtar sözcüğü](../../cpp/auto-keyword.md) değişkenler bildirmek için. Varsayılan seçeneğini belirtirseniz **/Zc:auto**, derleyici, başlatma ifadesinden bildirilmiş bir değişken türü çıkarır. Belirtirseniz **/Zc:auto-**, derleyici değişkenin otomatik depolama sınıfı için ayırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,13 +36,13 @@ ms.locfileid: "32379581"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ standart bir özgün ve için yeniden düzenlenen bir anlam tanımlar `auto` anahtar sözcüğü. Önce [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü otomatik depolama sınıfı bir değişkende bildirir; diğer bir deyişle, yerel bir yaşam süresi sahip bir değişken. İle başlayarak [!INCLUDE[cpp_dev10_long](../../build/includes/cpp_dev10_long_md.md)], anahtar sözcüğü bir değişken bildirimi 's başlatma ifadesinden türünü deduces. Kullanmak **/Zc:auto [-]** özgün ya da düzeltilmiş anlamını kullanmak için derleyicisi bildirmek için derleyici seçeneği `auto` anahtar sözcüğü. **/Zc:auto** seçeneği varsayılan olarak açıktır. [/ İzin veren-](permissive-standards-conformance.md) seçenek varsayılan ayar değiştirmez **/Zc:auto**.
+C++ standardı bir özgün ve düzeltilmiş bir anlamı tanımlar `auto` anahtar sözcüğü. Visual C++ 2010'dan önce anahtar sözcüğü bir değişkende otomatik depolama sınıfı bildirir; diğer bir deyişle, bir değişken, yerel kullanım ömrüne sahiptir. Visual C++ 2010 ile başlayarak, anahtar sözcüğü bir değişken bildirimin başlatma ifadesinden türünü çıkarır. Kullanma **/Zc:auto [-]** derleyici seçeneği, derleyicinin özgün ve düzeltilmiş anlamını kullanmasını söylemeniz `auto` anahtar sözcüğü. **/Zc:auto** seçeneği varsayılan olarak açıktır. [/ Permissive-](permissive-standards-conformance.md) seçeneği, varsayılan ayarı değişmez **/Zc:auto**.
 
-Derleyici, uygun bir tanılama iletisi verir kullanımınız `auto` anahtar sözcüğü çelişir geçerli **/Zc:auto** derleyici seçeneği. Daha fazla bilgi için bkz: [anahtar sözcüğü otomatik](../../cpp/auto-keyword.md). Visual C++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Derleyici, uygun bir tanılama iletisi sorunları kullanımınız `auto` anahtar sözcüğü geçerli çelişir **/Zc:auto** derleyici seçeneği. Daha fazla bilgi için [auto anahtar sözcüğü](../../cpp/auto-keyword.md). Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
-### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio'da Bu derleyici seçeneği ayarlamak için
+### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 

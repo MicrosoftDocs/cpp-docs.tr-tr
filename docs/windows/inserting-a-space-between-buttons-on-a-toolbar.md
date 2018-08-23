@@ -16,33 +16,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 985dbf5ca03af3edae0ecf25796690059868ffc1
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d45fb3c7d0d61e1895ff03fff64ab75c828eda0e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019542"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42599672"
 ---
 # <a name="inserting-a-space-between-buttons-on-a-toolbar"></a>Araç Çubuğundaki Düğmeler Arasına Boşluk Koyma
-Genel olarak, düğmeler arasına boşluk eklemek için bunları birbirine uzağa araç sürüklemeniz yeterlidir. Alanı kaldırmak için bunları birbirine doğru sürükleyin.  
-  
-### <a name="to-insert-a-space-before-a-button-that-is-not-followed-by-a-space"></a>Boşluk önce bir boşluk tarafından izlenmeyen bir düğme eklemek için  
-  
-1.  İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.  
-  
-### <a name="to-insert-a-space-before-a-button-which-is-followed-by-a-space-and-to-retain-that-trailing-space"></a>Ardından bir boşluk bir düğme öncesinde bir boşluk eklemek ve bu boşluk korumak için  
-  
-1.  Düğmeyi kadar sağa sürükleyin veya alt kenarı yalnızca İleri düğmesine oncollisionstay veya yalnızca çakışıyor.  
-  
-### <a name="to-insert-a-space-before-a-button-that-is-followed-by-a-space-and-close-up-that-following-space"></a>Ardından bir boşluk bir düğme önce bir boşluk ekleyin ve aşağıdaki söz konusu alanı kapatmak için  
-  
-1.  İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- MFC veya ATL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md)   
- [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
+
+Genel olarak, düğmeler arasına boşluk eklemek için bunları birbirine uzağa araç sürüklemeniz yeterlidir. Alanı kaldırmak için bunları birbirine doğru sürükleyin.
+
+### <a name="to-insert-a-space-before-a-button-that-is-not-followed-by-a-space"></a>Boşluk önce bir boşluk tarafından izlenmeyen bir düğme eklemek için
+
+1. İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.
+
+### <a name="to-insert-a-space-before-a-button-which-is-followed-by-a-space-and-to-retain-that-trailing-space"></a>Ardından bir boşluk bir düğme öncesinde bir boşluk eklemek ve bu boşluk korumak için
+
+1. Düğmeyi kadar sağa sürükleyin veya alt kenarı yalnızca İleri düğmesine oncollisionstay veya yalnızca çakışıyor.
+
+### <a name="to-insert-a-space-before-a-button-that-is-followed-by-a-space-and-close-up-that-following-space"></a>Ardından bir boşluk bir düğme önce bir boşluk ekleyin ve aşağıdaki söz konusu alanı kapatmak için
+
+1. İleri düğmesine hakkında yarı yarıya çakışıyor kadar aşağı ya da sağ düğme sürükleyin.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+MFC veya ATL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
