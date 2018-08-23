@@ -15,35 +15,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1234c667426937f5d40937c5f2bcc72949e827ae
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b5a1838c153dc7a0a4def9f98e5e043e36ae9414
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012400"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603851"
 ---
 # <a name="simpleactivationfactorygettrustlevel-method"></a>SimpleActivationFactory::GetTrustLevel Metodu
-Tarafından belirtilen sınıfın bir örneği güven düzeyini alır `Base` sınıfı şablon parametresi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   GetTrustLevel  
-)(_Out_ TrustLevel* trustLvl);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *trustLvl*  
- Bu işlem tamamlandığında geçerli sınıf nesnesi güven düzeyi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Her zaman S_OK.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)
+
+Tarafından belirtilen sınıfın bir örneği güven düzeyini alır `Base` sınıfı şablon parametresi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*trustLvl*  
+Bu işlem tamamlandığında geçerli sınıf nesnesi güven düzeyi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Her zaman S_OK.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SimpleActivationFactory Sınıfı](../windows/simpleactivationfactory-class.md)

@@ -29,15 +29,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: fd28a97b9e1b6238e4f231845282739a6d15aeb2
-ms.sourcegitcommit: b8b1cba85ff423142d73c888be26baa8c33f3cdc
+ms.openlocfilehash: 2cdc00280db8c764d06739499b65ff75f9e331d4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39092987"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602796"
 ---
 # <a name="graphics-operations-ccli"></a>Grafik İşlemleri (C++/CLI)
-Görüntü işleme kullanmayı gösterir [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  
+Görüntü işleme Windows SDK'sını kullanarak gösterir.  
   
  Aşağıdaki konular kullanımını gösteren <xref:System.Drawing.Image?displayProperty=fullName> görüntü işleme gerçekleştirmek için sınıf.  
   

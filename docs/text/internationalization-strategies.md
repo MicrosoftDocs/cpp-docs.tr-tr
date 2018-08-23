@@ -17,16 +17,16 @@ helpviewer_keywords:
 - character sets [C++], international programming strategies
 - localization [C++], character sets
 ms.assetid: b09d9854-0709-4b9a-a00c-b0b8bc4199b1
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a3b8a47e70efa3268ae9b36eda311d267be2ded
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d92b95cac23eed029a49239d791df237377d8376
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018935"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42587135"
 ---
 # <a name="internationalization-strategies"></a>Uluslararası Duruma Getirme Stratejileri
 Hedef işletim sistemleri ve pazarlara bağlı olarak birkaç uluslararası duruma getirme stratejileri vardır:  

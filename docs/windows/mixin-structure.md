@@ -17,48 +17,54 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fb5fa5288829ef51bf818ad8b7cf3b46edb59bf
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 6ccea9a053f47ae206cbe5c8412c387f07bd5b52
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014292"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603433"
 ---
 # <a name="mixin-structure"></a>MixIn Yapısı
-Bir çalışma zamanı sınıf varsa Windows çalışma zamanı arabirimleri ve ardından klasik COM arabirimleri türetilen sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template<  
-   typename Derived,  
-   typename MixInType,  
-   bool hasImplements = __is_base_of(Details::ImplementsBase,  
+
+Bir çalışma zamanı sınıf varsa Windows çalışma zamanı arabirimleri ve ardından klasik COM arabirimleri türetilen sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<
+   typename Derived,
+   typename MixInType,
+   bool hasImplements = __is_base_of(Details::ImplementsBase,
    MixInType)  
->  
-struct MixIn;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Türetilmiş*  
- Türetilmiş bir tür [uygular](../windows/implements-structure.md) yapısı.  
-  
- *MixInType*  
- Bir taban türü.  
-  
- *hasImplements*  
- **doğru** varsa *MixInType* olan geçerli uygulamasından türetilmiş temel tür; **false** Aksi takdirde.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Windows çalışma zamanı hem sınıf COM arabirimleri türetilmiş bir sınıf, sınıf bildirimi listesi Windows çalışma zamanı arabirimlerden önce listelemesi gerekir ve ardından tüm klasik COM arabirimleri. **MixIn** arabirimler doğru sırada belirtilir sağlar.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `MixIn`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+>
+struct MixIn;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Türetilmiş*  
+Türetilmiş bir tür [uygular](../windows/implements-structure.md) yapısı.
+
+*MixInType*  
+Bir taban türü.
+
+*hasImplements*  
+**doğru** varsa *MixInType* olan geçerli uygulamasından türetilmiş temel tür; **false** Aksi takdirde.
+
+## <a name="remarks"></a>Açıklamalar
+
+Windows çalışma zamanı hem sınıf COM arabirimleri türetilmiş bir sınıf, sınıf bildirimi listesi Windows çalışma zamanı arabirimlerden önce listelemesi gerekir ve ardından tüm klasik COM arabirimleri. **MixIn** arabirimler doğru sırada belirtilir sağlar.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`MixIn`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

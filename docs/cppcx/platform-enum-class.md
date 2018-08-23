@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Enum Struct
 ms.assetid: cf82f0eb-7a37-4e4e-bbe7-e4aebbc9ec0a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcb6dddb02f13a2138689672535f01c935383740
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3d4f893099c129f82cfa08650c6f1f3fbbb2c46
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088296"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608553"
 ---
 # <a name="platformenum-class"></a>Platform::Enum sınıfı
-Adlandırılmış sabitler kümesini temsil eden bir değer sınıf.  
+Adlandırılmış sabitler kümesini temsil eden bir değer sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,19 +32,19 @@ public class Enum
 ```  
   
 ### <a name="members"></a>Üyeler  
- Enum sınıfı Equals(), GetHashCode() ve ToString() yöntemleri devralır [Platform::Object sınıfı](../cppcx/platform-object-class.md).  
+ Sabit listesi sınıfı ' lerin üzerine yaz ve GetHashCode() ToString() yöntemleri devralan [Platform::Object sınıfı](../cppcx/platform-object-class.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [ortak enum sınıfı](../windows/enum-class-cpp-component-extensions.md) numaralandırmalar oluşturmak için anahtar sözcüğü. Platform::Enum Türü açıkça kullanmayın. Daha fazla bilgi için bkz: [numaralandırmaları](../cppcx/enums-c-cx.md).  
+ Kullanım [genel sabit listesi sınıfı](../windows/enum-class-cpp-component-extensions.md) sabit listeleri oluşturmak için anahtar sözcüğü. Platform::Enum Türü açıkça kullanmayın. Daha fazla bilgi için [numaralandırmalar](../cppcx/enums-c-cx.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

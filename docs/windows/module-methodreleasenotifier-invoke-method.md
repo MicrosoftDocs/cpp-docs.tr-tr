@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aecfcb724207b51ef17220735c4019e14b799ec0
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d41c864f4198b0db34253c5dc300f8f9728f4d21
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019818"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607443"
 ---
 # <a name="modulemethodreleasenotifierinvoke-method"></a>Module::MethodReleaseNotifier::Invoke Yöntemi
-Geçerli ile ilişkili olay işleyicisini çağırır **Module::MethodReleaseNotifier** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void Invoke();  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Module::MethodReleaseNotifier Sınıfı](../windows/module-methodreleasenotifier-class.md)
+
+Geçerli ile ilişkili olay işleyicisini çağırır **Module::MethodReleaseNotifier** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void Invoke();
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Module::MethodReleaseNotifier Sınıfı](../windows/module-methodreleasenotifier-class.md)

@@ -17,32 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 125ffe998e7c3f225f72e3fb47df4ef3525c37f9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: f8bb81ca1591fc398b1d0814fca918309169e82c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649054"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42600990"
 ---
 # <a name="weakrefoperatoramp-operator"></a>WeakRef::operator&amp; işleci
-Döndürür bir `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+Döndürür bir `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 Details::ComPtrRef<WeakRef> operator&() throw()  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- A `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kodunuzda kullanılmak üzere tasarlanmamıştır iç Yardımcısı operatörün budur.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [WeakRef Sınıfı](../windows/weakref-class.md)
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+A `ComPtrRef` geçerli temsil eden nesne **WeakRef** nesne.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kodunuzda kullanılmak üzere tasarlanmamıştır iç Yardımcısı operatörün budur.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[WeakRef Sınıfı](../windows/weakref-class.md)

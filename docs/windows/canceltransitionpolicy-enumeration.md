@@ -19,35 +19,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bd203ee0413b60bc7aa713e7923fd4d69bde665e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: abc49a62e1cc9fb4abdc56b329b8fa057edebde7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642964"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42583523"
 ---
 # <a name="canceltransitionpolicy-enumeration"></a>CancelTransitionPolicy Numaralandırması
-Ne zaman uyumsuz bir işlem denemesi bir terminal durumuna geçirmeye gösteren tamamlanmış veya hata, bir istemci tarafından istenen iptal edilmiş duruma göre davranır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum CancelTransitionPolicy;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="values"></a>Değerler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`RemainCanceled`|Zaman uyumsuz işlemi şu anda bir istemci tarafından istenen iptal edildi durumunda ise bunun aksine, bir terminal tamamlandı ya da hata durumuna geçiş işlemi iptal edildi durumunda kalır gösterir.|  
-|`TransitionFromCanceled`|Zaman uyumsuz işlemi şu anda bir istemci tarafından istenen iptal edildi durumunda ise, bu durum, terminal durumuna iptal edilmiş duruma tamamlandı geçiş gösterir veya bu bayrağı yararlanan çağrı tarafından belirlenen şekilde bir hata oluştu.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Ne zaman uyumsuz bir işlem denemesi bir terminal durumuna geçirmeye gösteren tamamlanmış veya hata, bir istemci tarafından istenen iptal edilmiş duruma göre davranır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum CancelTransitionPolicy;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="values"></a>Değerler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`RemainCanceled`|Zaman uyumsuz işlemi şu anda bir istemci tarafından istenen iptal edildi durumunda ise bunun aksine, bir terminal tamamlandı ya da hata durumuna geçiş işlemi iptal edildi durumunda kalır gösterir.|
+|`TransitionFromCanceled`|Zaman uyumsuz işlemi şu anda bir istemci tarafından istenen iptal edildi durumunda ise, bu durum, terminal durumuna iptal edilmiş duruma tamamlandı geçiş gösterir veya bu bayrağı yararlanan çağrı tarafından belirlenen şekilde bir hata oluştu.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

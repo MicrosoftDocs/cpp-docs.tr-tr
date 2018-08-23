@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 472cdaeec78c30d49f3160ac4d632eb95ef8e71a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 54c370029b4e6fc90d1f210164de7d7ecb22f3a5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641879"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595425"
 ---
 # <a name="comptrrefoperator-t-operator"></a>ComPtrRef::operator T* İşleci
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-operator T*();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli veri üyesi **ComPtrRef** nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtrRef sınıfı](../windows/comptrref-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+operator T*();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Değerini döndürür [ptr_](../windows/comptrrefbase-ptr-data-member.md) geçerli veri üyesi **ComPtrRef** nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtrRef Sınıfı](../windows/comptrref-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

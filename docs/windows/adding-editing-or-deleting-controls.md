@@ -17,38 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4488ca0e32bc9522e29028536efdcd5fea925301
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: d8b1b1452eceefbe6e04200d8aded544fdc4d1da
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649991"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590982"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
-Kullanarak **iletişim** Düzenleyicisi, yeniden boyutlandırma ekleyebilir, düzenleme ve silme iletişim kutularındaki denetimler. Ayrıca kendi kimliği gibi bir denetimin özelliklerini düzenleyebilir ya da çalışma zamanında başlangıçta görünür olup.  
-  
- Kısayol menüsünde kullanabilirsiniz **iletişim** Düzenleyicisi hızlı bir şekilde eklemek için kayıtlı bir iletişim kutusuna ActiveX denetimleri ve ActiveX denetimlerine ekleyebilirsiniz **araç kutusu** hızlı erişim için (daha fazla bilgi için bkz. [Özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).  
-  
--   [İletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)  
-  
--   [Bir denetimi eklerken boyutu](sizing-a-control-while-you-add-it.md)  
-  
--   [Birden çok denetim ekleme](adding-multiple-controls.md)  
-  
--   [İletişim kutusuna ActiveX denetimi Ekle](viewing-and-adding-activex-controls-to-a-dialog-box.md)  
-  
--   [Bir denetim veya denetimlerin özelliklerini Düzenle](editing-control-properties.md)  
-  
--   [Denetimi silme](deleting-a-control.md)  
-  
--   [Araç kutusu penceresini gösterin veya gizleyin](showing-or-hiding-the-dialog-editor-toolbar.md)  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutularındaki denetimler](controls-in-dialog-boxes.md)   
- [İletişim kutusu denetimleri için olay işleyicileri ekleme](adding-event-handlers-for-dialog-box-controls.md)   
- [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)
+
+Kullanarak **iletişim** Düzenleyicisi, yeniden boyutlandırma ekleyebilir, düzenleme ve silme iletişim kutularındaki denetimler. Ayrıca kendi kimliği gibi bir denetimin özelliklerini düzenleyebilir ya da çalışma zamanında başlangıçta görünür olup.
+
+Kısayol menüsünde kullanabilirsiniz **iletişim** Düzenleyicisi hızlı bir şekilde eklemek için kayıtlı bir iletişim kutusuna ActiveX denetimleri ve ActiveX denetimlerine ekleyebilirsiniz **araç kutusu** hızlı erişim için (daha fazla bilgi için bkz. [Özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
+
+- [İletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)
+
+- [Bir denetimi eklerken boyutu](sizing-a-control-while-you-add-it.md)
+
+- [Birden çok denetim ekleme](adding-multiple-controls.md)
+
+- [İletişim kutusuna ActiveX denetimi Ekle](viewing-and-adding-activex-controls-to-a-dialog-box.md)
+
+- [Bir denetim veya denetimlerin özelliklerini Düzenle](editing-control-properties.md)
+
+- [Denetimi silme](deleting-a-control.md)
+
+- [Araç kutusu penceresini gösterin veya gizleyin](showing-or-hiding-the-dialog-editor-toolbar.md)
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutularındaki Denetimler](controls-in-dialog-boxes.md)  
+[İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme](adding-event-handlers-for-dialog-box-controls.md)  
+[İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)

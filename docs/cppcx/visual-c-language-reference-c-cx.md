@@ -5,45 +5,45 @@ ms.date: 09/15/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 3f6abf92-4e5e-4ed8-8e11-f9252380d30a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b251a89eee456905fae1e2096a74362fc6c44ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 801a88573133a68beec4855dc499fcba27bb64e8
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090163"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593875"
 ---
 # <a name="visual-c-language-reference-ccx"></a>Visual C++ Dil Başvurusu (C + +/ CX)
 
-C + +/ CX C++ dili için Windows uygulamaları ve modern için olabildiğince C++ kapatmak gibi bir deyim Windows çalışma zamanı bileşenleri oluşturulmasını sağlamak uzantıları kümesidir. Kullanın: C + +/ CX Windows uygulamaları ve bileşenleri kolayca Visual C#, Visual Basic ve JavaScript ile etkileşim yerel kod ve Windows çalışma zamanı desteği diğer diller yazma. Ham COM arabirimleri ya da özel durumlu olmayan kod doğrudan erişim gerektiren bu nadir durumlarda kullandığınız [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+C + +/ CX Windows uygulamaları ve Windows çalışma zamanı bileşenleri olabildiğince ve modern C++ kapatmak gibi bir deyim oluşturulmasını sağlayan C++ dil uzantıları kümesidir. Kullanmak C + +/ CX Windows uygulamaları ve bileşenleri Visual C#, Visual Basic ve JavaScript ile kolayca etkileşim yerel kod ve Windows çalışma zamanı desteği diğer diller yazılacak. Ham COM arabirimleri ya da özel durumlu olmayan kod doğrudan erişim gerektiren taşıdığı nadir durumlarda, kullandığınız [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
 
 > [!NOTE]
-> C + +/ WinRT olan yeni, standart C ++ 17 dil projeksiyon Windows çalışma zamanı API'leri için. En son Windows 10 SDK'sı sürümünden 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlamak üzere tasarlanmıştır.
+> C + +/ WinRT olan yeni, standart C ++ 17 dil projeksiyon Windows Runtime API'ları için. En son Windows 10 SDK sürüm 1803 ileriye doğru kullanılabilir. C + +/ WinRT tamamen üstbilgi dosyalarında uygulanan ve modern Windows API ile birinci sınıf erişim sağlayacak şekilde tasarlanmıştır.
 
-> İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı herhangi standartlarıyla uyumlu C ++ 17 derleyici kullanarak API'leri yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için başka bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. C + desteklemek devam +/ CX ve WRL, ancak yüksek oranda yeni uygulamalar C + kullanmanızı öneririz +/ WinRT. Daha fazla bilgi için bkz: [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
+> İle C + +/ WinRT, size hem kullanabilir ve Windows çalışma zamanı API'leri kullanarak tüm standartlara uyumlu C ++ 17 derleyici yazar. C + +/ WinRT genellikle daha iyi gerçekleştirir ve Windows çalışma zamanı için diğer bir dil seçeneği değerinden daha küçük ikili dosyaları üretir. Biz C + desteklemeye devam edecektir +/ CX ve WRL, ancak yüksek yeni uygulama C + kullanmanız +/ WinRT. Daha fazla bilgi için [C + +/ WinRT](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/index).
 
 
 Kullanarak C + +/ CX, oluşturabilirsiniz:
 
-- XAML kullanıcı tanımlamak için kullanmak C++ Evrensel Windows Platformu (UWP) uygulamaları arabirim ve yerel yığın kullanın. Daha fazla bilgi için bkz: [bir "hello world" uygulaması C++ (UWP) oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
+- Kullanıcıyı tanımlamak için XAML kullanan C++ Evrensel Windows Platformu (UWP) uygulamaları arabirim ve yerel yığın kullanın. Daha fazla bilgi için [bir "hello world" uygulaması C++ (UWP) oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp).
 
-- JavaScript tabanlı Windows uygulamaları tarafından kullanılabilecek C++ Windows çalışma zamanı bileşenleri. Daha fazla bilgi için bkz: [C++'da Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+- JavaScript tabanlı Windows uygulamaları tarafından tüketilebilecek bir C++ Windows çalışma zamanı bileşenleri. Daha fazla bilgi için [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-- Windows DirectX oyunları ve grafik yoğun uygulamalar. Daha fazla bilgi için bkz: [DirectX ile basit UWP oyun oluşturmak](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game).
+- Windows DirectX oyunlar ve grafik kullanımı yoğun uygulamalar. Daha fazla bilgi için [DirectX ile basit bir UWP oyunu oluşturma](/windows/uwp/gaming/tutorial--create-your-first-metro-style-directx-game).
 
 ## <a name="related-articles"></a>İlgili makaleler
 
 |||
 |-|-|
-|[Hızlı Başvuru](../cppcx/quick-reference-c-cx.md)|Tablosu anahtar sözcükleri ve işleçler için C + +/ CX.|
-|[Tür Sistemi](../cppcx/type-system-c-cx.md)|Açıklar temel C + +/ CX türleri ve programlama yapıları ve nasıl kullanan C + +/ CX kullanabilir ve Windows çalışma zamanı türleri oluşturmak için.|
-|[Yapı uygulamalar ve kitaplıklar](../cppcx/building-apps-and-libraries-c-cx.md)|IDE uygulamaları ve statik kitaplıklarından aned DLL'leri bağlantı oluşturmak için nasıl kullanılacağını açıklar.|
-|[Diğer dilleri ile birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)|Anlatılmaktadır nasıl C + kullanılarak yazılan bileşenleri +/ CX kullanılabilir JavaScript'te yazılmış bileşenleri ile dil, yönetilen veya [!INCLUDE[cppwrl](../cppcx/includes/cppwrl-md.md)].|
-|[İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)|Oluşturduğunuz bileşenlerin iş parçacığı oluşturma ve hazırlama davranışı belirtmek nasıl ele alınmaktadır.|
+|[Hızlı Başvuru](../cppcx/quick-reference-c-cx.md)|Tablo anahtar sözcükleri ve işleçler için C + +/ CX.|
+|[Tür Sistemi](../cppcx/type-system-c-cx.md)|Açıklar temel C + +/ CX türleri ve programlama yapıları ve nasıl kullanmak C + +/ CX kullanma ve Windows çalışma zamanı türleri oluşturmak için.|
+|[Uygulamaları oluşturma ve kitaplıkları](../cppcx/building-apps-and-libraries-c-cx.md)|IDE uygulamaları ve statik kitaplıklar aned DLL'leri bağlantı oluşturmak için nasıl kullanılacağını açıklar.|
+|[Diğer dillerle birlikte çalışma](../cppcx/interoperating-with-other-languages-c-cx.md)|Açıklar nasıl C + kullanılarak yazılan bileşenleri +/ CX kullanılabilir JavaScript'te yazılmış bileşenler ile tüm yönetilen dil ya da Windows çalışma zamanı C++ Şablon kitaplığı.|
+|[İş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md)|Oluşturduğunuz bileşenlerin iş parçacığı oluşturma ve hazırlama davranışını belirtmek nasıl ele alınmaktadır.|
 |[Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)|Varsayılan ad alanı, Platform ad alanı, Platform::Collections ve ilgili ad alanları için başvuru belgeleri.|
 |[Evrensel Windows Platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md)|Windows çalışma zamanı uygulamaları için kullanılabilir olmayan CRT işlevleri listeler.|
-|[Nasıl yapılır kılavuzları Windows 10 uygulamaları için](http://msdn.microsoft.com/library/windows/apps/xaml/mt244352.aspx)|Windows 10 uygulamaları ve daha fazla bilgi için bağlantılar hakkında üst düzey rehberlik sağlar.|
-|[C + +/ CX parçası 0 \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C + +/ CX parçası 1 \[n\]: basit bir sınıf](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C + +/ CX Kısım 2 / \[n\]: şapkalar takmak türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C + +/ CX parçası 3 \[n\]: aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C + +/ CX parçası 4 \[n\]: statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|Bir tanıtım Visual C++ blog seriyi C + +/ CX.|
+|[Nasıl yapılır kılavuzları, Windows 10 uygulamaları için](http://msdn.microsoft.com/library/windows/apps/xaml/mt244352.aspx)|Windows 10 uygulamaları ve daha fazla bilgi için bağlantılar hakkında ileri düzey rehberlik sağlar.|
+|[C + +/ CX parçası 0 \[n\]: Giriş](https://blogs.msdn.microsoft.com/vcblog/2012/08/29/ccx-part-0-of-n-an-introduction/)<br /><br />[C + +/ CX bölüm 1 / \[n\]: basit bir sınıfı](https://blogs.msdn.microsoft.com/vcblog/2012/09/05/ccx-part-1-of-n-a-simple-class/)<br /><br />[C + +/ CX parçası 2 \[n\]: Hats Wear türleri](https://blogs.msdn.microsoft.com/vcblog/2012/09/17/ccx-part-2-of-n-types-that-wear-hats/)<br /><br />[C + +/ CX parçası 3 \[n\]: aşamasında](https://blogs.msdn.microsoft.com/vcblog/2012/10/05/ccx-part-3-of-n-under-construction/)<br /><br />[C + +/ CX parçası 4 \[n\]: statik üye işlevleri](https://blogs.msdn.microsoft.com/vcblog/2012/10/19/ccx-part-4-of-n-static-member-functions/)|Bir tanıtım Visual C++ blog serisini C + +/ CX.|

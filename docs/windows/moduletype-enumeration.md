@@ -17,38 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 831f1fbcb2da205fa08286a1fbbbf414e66075d4
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: fe8d41aded38db7cde5316e04cfa1689845aa4e7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019936"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595478"
 ---
 # <a name="moduletype-enumeration"></a>ModuleType Numaralandırması
-Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum ModuleType;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="values"></a>Değerler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`InProc`|Bir işlem sunucusu.|  
-|`OutOfProc`|Bir işlem dışı sunucu.|  
-|`DisableCaching`|Önbelleğe alma mekanizması modül devre dışı bırakın.|  
-|`InProcDisableCaching`|Birleşimi `InProc` ve `DisableCaching`.|  
-|`OutOfProcDisableCaching`|Birleşimi `OutOfProc` ve `DisableCaching`.|  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Bir modülü bir işlem sunucusu veya bir işlem dışı sunucu desteklemesi gerekip gerekmediğini belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum ModuleType;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="values"></a>Değerler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`InProc`|Bir işlem sunucusu.|
+|`OutOfProc`|Bir işlem dışı sunucu.|
+|`DisableCaching`|Önbelleğe alma mekanizması modül devre dışı bırakın.|
+|`InProcDisableCaching`|Birleşimi `InProc` ve `DisableCaching`.|
+|`OutOfProcDisableCaching`|Birleşimi `OutOfProc` ve `DisableCaching`.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

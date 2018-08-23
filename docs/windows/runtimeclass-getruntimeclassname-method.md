@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 126133c5e542414f1fb38635e1cb14314bc55d52
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5e367f956fbaeb36837733d619b19cdc8363ca3a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020401"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606833"
 ---
 # <a name="runtimeclassgetruntimeclassname-method"></a>RuntimeClass::GetRuntimeClassName Metodu
 
@@ -37,6 +37,7 @@ STDMETHOD( GetRuntimeClassName )(
 ```
 
 ### <a name="parameters"></a>Parametreler
+
 *runtimeName*  
 Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
 
@@ -55,4 +56,5 @@ Assert hata durumunda yayıldığını `__WRL_STRICT__` veya `__WRL_FORCE_INSPEC
 **Namespace:** Microsoft::WRL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [RuntimeClass Sınıfı](../windows/runtimeclass-class.md)
+
+[RuntimeClass Sınıfı](../windows/runtimeclass-class.md)

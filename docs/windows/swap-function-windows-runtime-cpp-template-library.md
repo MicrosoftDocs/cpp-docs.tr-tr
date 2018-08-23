@@ -15,41 +15,46 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2d42a108d461e3f0238612171b3445e28138194
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 6b5273127b4f4329427f50c82f1bb15a4ad2634e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019621"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590215"
 ---
 # <a name="swap-function-windows-runtime-c-template-library"></a>Swap İşlevi (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-WRL_NOTHROW inline void Swap(  
-   _Inout_ T& left,  
-   _Inout_ T& right  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Sol*  
- İlk bağımsız değişken.  
-  
- *sağ*  
- İkinci bağımsız değişkeni.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
-  
-## <a name="remarks"></a>Açıklamalar  
- İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** internal.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+WRL_NOTHROW inline void Swap(
+   _Inout_ T& left,
+   _Inout_ T& right
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Sol*  
+İlk bağımsız değişken.
+
+*sağ*  
+İkinci bağımsız değişkeni.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+## <a name="remarks"></a>Açıklamalar
+
+İki belirtilen bağımsız değişken değerlerini birbiriyle değiştirir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** internal.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

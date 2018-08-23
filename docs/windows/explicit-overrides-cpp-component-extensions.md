@@ -15,166 +15,173 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1dcf129f551900792638018fa846557120e53e96
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 3ce2f65fd740fd2bf133d65b25cbb52838c53dd2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39644358"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601218"
 ---
 # <a name="explicit-overrides--c-component-extensions"></a>Açık Geçersiz Kılmalar (C++ Bileşen Uzantıları)
-Bu konu, temel sınıfta veya arabirimde üye açıkça geçersiz kılma anlatılmaktadır. (Açık) adlandırılmış bir geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemi ile bir yöntemi geçersiz kılmak için yalnızca kullanılmalıdır.  
-  
-## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
-### <a name="syntax"></a>Sözdizimi
-  
-```cpp  
-overriding-function-declarator = type::function [,type::function] { overriding-function-definition }  
-overriding-function-declarator = function { overriding-function-definition }  
-```  
 
-### <a name="parameters"></a>Parametreler 
- *geçersiz kılma-işlevi-declarator*  
- Geçersiz kılma işlev dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi geçersiz kılınmasını işlevi aynı ada sahip olmadığını unutmayın.  
-  
- *Türü*  
- Geçersiz kılmak için bir işlevi içeren temel türü.  
-  
- *İşlevi*  
- Geçersiz kılmak için bir veya daha fazla işlev adlarının virgülle ayrılmış listesi.  
-  
- *geçersiz kılma-işlevi-definition*  
- Geçersiz kılma işlevi tanımlayan işlev gövdesi deyimleri.  
-  
+Bu konu, temel sınıfta veya arabirimde üye açıkça geçersiz kılma anlatılmaktadır. (Açık) adlandırılmış bir geçersiz kılma, farklı bir ada sahip bir türetilmiş yöntemi ile bir yöntemi geçersiz kılmak için yalnızca kullanılmalıdır.
+
+## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+overriding-function-declarator = type::function [,type::function] { overriding-function-definition }
+overriding-function-declarator = function { overriding-function-definition }
+```
+
+### <a name="parameters"></a>Parametreler
+
+*geçersiz kılma-işlevi-declarator*  
+Geçersiz kılma işlev dönüş türü, adı ve bağımsız değişken listesi.  Geçersiz kılma işlevi geçersiz kılınmasını işlevi aynı ada sahip olmadığını unutmayın.
+
+*Türü*  
+Geçersiz kılmak için bir işlevi içeren temel türü.
+
+*İşlevi*  
+Geçersiz kılmak için bir veya daha fazla işlev adlarının virgülle ayrılmış listesi.
+
+*geçersiz kılma-işlevi-definition*  
+Geçersiz kılma işlevi tanımlayan işlev gövdesi deyimleri.
+
 ### <a name="remarks"></a>Açıklamalar
-  
- Geçersiz kılmalar için bir yöntem imzası bir diğer ad oluşturmak veya yöntemleri witht aynı imzaya için farklı uygulamalarını sağlamak için açık kullanın.  
-  
- Devralınan türlerin ve devralınan tür üyeleri davranışını değiştirme hakkında daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md).  
-  
-## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
-  
-### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: `/ZW`  
-  
-## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
+
+Geçersiz kılmalar için bir yöntem imzası bir diğer ad oluşturmak veya yöntemleri witht aynı imzaya için farklı uygulamalarını sağlamak için açık kullanın.
+
+Devralınan türlerin ve devralınan tür üyeleri davranışını değiştirme hakkında daha fazla bilgi için bkz: [geçersiz kılma tanımlayıcıları](../windows/override-specifiers-cpp-component-extensions.md).
+
+## <a name="windows-runtime"></a>Windows Çalışma Zamanı
+
+### <a name="requirements"></a>Gereksinimler
+
+Derleyici seçeneği: `/ZW`
+
+## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
+
 ### <a name="remarks"></a>Açıklamalar
-  
- Açık hakkında bilgi yerel kodda geçersiz kılar veya derlenmiş kodu `/clr:oldSyntax`, bkz: [açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).  
-  
-### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: `/clr`  
-  
-### <a name="examples"></a>Örnekler   
-  
- Aşağıdaki kod örneği basit, örtük geçersiz kılma ve üye uygulaması temel bir arabirimde açık geçersiz kılmalar kullanmayan gösterir.  
-  
-```cpp  
-// explicit_override_1.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
-};  
-  
-ref class X : public I1 {  
-public:  
-   virtual void f() {  
-      System::Console::WriteLine("X::f override of I1::f");  
-   }  
-};  
-  
-int main() {  
-   I1 ^ MyI = gcnew X;  
-   MyI -> f();  
-}  
-```  
-  
-```Output  
-X::f override of I1::f  
-```  
-  
- Aşağıdaki kod örneği, ortak bir imzaya sahip tüm arabirim üyelerini açık geçersiz kılma sözdiziminin uygulamak gösterilmektedir.  
-  
-```cpp  
-// explicit_override_2.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
-};  
-  
-interface struct I2 {  
-   virtual void f();  
-};  
-  
-ref struct X : public I1, I2 {  
-   virtual void f() = I1::f, I2::f {  
-      System::Console::WriteLine("X::f override of I1::f and I2::f");  
-   }  
-};  
-  
-int main() {  
-   I1 ^ MyI = gcnew X;  
-   I2 ^ MyI2 = gcnew X;  
-   MyI -> f();  
-   MyI2 -> f();  
-}  
-```  
-  
-```Output  
-X::f override of I1::f and I2::f  
-X::f override of I1::f and I2::f  
-```  
-  
- Aşağıdaki kod örneği, nasıl bir işlevi geçersiz kılma uyguladığı işlevden farklı bir ad olabilir gösterir.  
-  
-```cpp  
-// explicit_override_3.cpp  
-// compile with: /clr  
-interface struct I1 {  
-   virtual void f();  
-};  
-  
-ref class X : public I1 {  
-public:  
-   virtual void g() = I1::f {  
-      System::Console::WriteLine("X::g");  
-   }  
-};  
-  
-int main() {  
-   I1 ^ a = gcnew X;  
-   a->f();  
-}  
-```  
-  
-```Output  
-X::g  
-```  
-  
- Aşağıdaki kod örneği, türü güvenli koleksiyonu uygulayan açık arabirim uygulaması gösterir.  
-  
-```cpp  
-// explicit_override_4.cpp  
-// compile with: /clr /LD  
-using namespace System;  
-ref class R : ICloneable {  
-   int X;  
-  
-   virtual Object^ C() sealed = ICloneable::Clone {  
-      return this->Clone();  
-   }  
-  
-public:  
-   R() : X(0) {}  
-   R(int x) : X(x) {}  
-  
-   virtual R^ Clone() {  
-      R^ r = gcnew R;  
-      r->X = this->X;  
-      return r;  
-   }  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+
+Açık hakkında bilgi yerel kodda geçersiz kılar veya derlenmiş kodu `/clr:oldSyntax`, bkz: [açık geçersiz kılmalar](../cpp/explicit-overrides-cpp.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+Derleyici seçeneği: `/clr`
+
+### <a name="examples"></a>Örnekler
+
+Aşağıdaki kod örneği basit, örtük geçersiz kılma ve üye uygulaması temel bir arabirimde açık geçersiz kılmalar kullanmayan gösterir.
+
+```cpp
+// explicit_override_1.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
+};
+
+ref class X : public I1 {
+public:
+   virtual void f() {
+      System::Console::WriteLine("X::f override of I1::f");
+   }
+};
+
+int main() {
+   I1 ^ MyI = gcnew X;
+   MyI -> f();
+}
+```
+
+```Output
+X::f override of I1::f
+```
+
+Aşağıdaki kod örneği, ortak bir imzaya sahip tüm arabirim üyelerini açık geçersiz kılma sözdiziminin uygulamak gösterilmektedir.
+
+```cpp
+// explicit_override_2.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
+};
+
+interface struct I2 {
+   virtual void f();
+};
+
+ref struct X : public I1, I2 {
+   virtual void f() = I1::f, I2::f {
+      System::Console::WriteLine("X::f override of I1::f and I2::f");
+   }
+};
+
+int main() {
+   I1 ^ MyI = gcnew X;
+   I2 ^ MyI2 = gcnew X;
+   MyI -> f();
+   MyI2 -> f();
+}
+```
+
+```Output
+X::f override of I1::f and I2::f
+X::f override of I1::f and I2::f
+```
+
+Aşağıdaki kod örneği, nasıl bir işlevi geçersiz kılma uyguladığı işlevden farklı bir ad olabilir gösterir.
+
+```cpp
+// explicit_override_3.cpp
+// compile with: /clr
+interface struct I1 {
+   virtual void f();
+};
+
+ref class X : public I1 {
+public:
+   virtual void g() = I1::f {
+      System::Console::WriteLine("X::g");
+   }
+};
+
+int main() {
+   I1 ^ a = gcnew X;
+   a->f();
+}
+```
+
+```Output
+X::g
+```
+
+Aşağıdaki kod örneği, türü güvenli koleksiyonu uygulayan açık arabirim uygulaması gösterir.
+
+```cpp
+// explicit_override_4.cpp
+// compile with: /clr /LD
+using namespace System;
+ref class R : ICloneable {
+   int X;
+
+   virtual Object^ C() sealed = ICloneable::Clone {
+      return this->Clone();
+   }
+
+public:
+   R() : X(0) {}
+   R(int x) : X(x) {}
+
+   virtual R^ Clone() {
+      R^ r = gcnew R;
+      r->X = this->X;
+      return r;
+   }
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

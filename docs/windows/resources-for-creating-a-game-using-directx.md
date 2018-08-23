@@ -17,27 +17,27 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0b2df54063c78b920f9c5e88df5348d31ec077d9
-ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
+ms.openlocfilehash: 19e36c51e255996e17ccd5ad4b1fc62057a064d7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35253912"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590625"
 ---
 # <a name="resources-for-creating-a-game-using-directx"></a>DirectX Kullanarak Oyun Oluşturmak için Kaynaklar
 
-En iyi masaüstü oyunları oluşturmak Visual C++ ile DirectX kullanın.  
-  
+En iyi masaüstü oyunları oluşturmak Visual C++ ile DirectX kullanın.
+
 ## <a name="resources"></a>Kaynaklar
 
-Visual C++, Visual Studio'nun tüm sürümlerinde bulunur, ancak varsayılan olarak yüklü değildir. Visual Studio ve C++ geliştirme araçlarını yükleme hakkında daha fazla bilgi için bkz: [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md).  
-  
-DirectX SDK'sı, Windows 8.1 ve sonraki sürümlerinde, Windows SDK'ın dahil edilir. Ekstra bir şey indirmek zorunda değilsiniz. Daha fazla bilgi için bkz: [DirectX SDK nerede?](http://msdn.microsoft.com/library/windows/desktop/ee663275.aspx).  
-  
-Windows 7, Windows Vista veya Windows XP için DirectX uygulamaları oluşturmak için tek başına indirebilirsiniz [DirectX SDK](http://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).  
-  
-[DirectX grafikler ve oyun](http://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) bilgi ve örnekler yardımcı olması için DirectX ile Başlarken programlama.  
-  
-[Win32 Windows uygulamaları](../windows/windows-desktop-applications-cpp.md) temel bir Windows Masaüstü uygulamasının nasıl oluşturulacağını açıklayan makaleler içerir.  
-  
-[Oyunlar geliştirme](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) Evrensel Windows platformu oyun geliştirme açıklar ancak birçok kavramlar Masaüstü oyunlar için de geçerlidir.
+Visual C++, Visual Studio'nun tüm sürümlerinde bulunur, ancak varsayılan olarak yüklü değildir. Visual Studio ve C++ Geliştirme Araçları'nı yükleme hakkında daha fazla bilgi için bkz: [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md).
+
+DirectX SDK'sı, Windows 8.1 ve sonraki sürümlerinde, Windows SDK'yı dahildir. Ekstra bir şey indirmek zorunda değilsiniz. Daha fazla bilgi için [DirectX SDK nerede?](http://msdn.microsoft.com/library/windows/desktop/ee663275.aspx).
+
+Windows 7, Windows Vista veya Windows XP için DirectX uygulamaları oluşturmak için tek başına indirebilirsiniz [DirectX SDK](http://www.microsoft.com/download/details.aspx?displaylang=en&id=6812).
+
+[DirectX grafik ve oyun](http://msdn.microsoft.com/library/windows/desktop/ee663274\(v=vs.85\).aspx) bilgi yardımcı olmak için başlangıç ve örnekler ile DirectX programlama.
+
+[Win32 Windows uygulamaları](../windows/windows-desktop-applications-cpp.md) temel bir Windows masaüstü uygulaması oluşturmayı anlatan makaleler içerir.
+
+[Oyun Geliştirme](http://msdn.microsoft.com/library/windows/apps/hh452744.aspx) Evrensel Windows platformu oyun geliştirme ele alınmaktadır ancak kavramlardan bir çoğunu da Masaüstü oyunlarına uygulanabilir geçerlidir.

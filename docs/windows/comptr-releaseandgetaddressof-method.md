@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3bded6992abc5b22e2c02a3364431a3f68b76ad6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e3efdce7cde39431a8d6f097aace2ed2f5a66b4d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649854"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589953"
 ---
 # <a name="comptrreleaseandgetaddressof-method"></a>ComPtr::ReleaseAndGetAddressOf Yöntemi
-Şununla ilişkili arabirimini yayımlar **ComPtr** ve adresini alır. [ptr_](../windows/comptr-ptr-data-member.md) yayımlanan arabirimi için bir işaretçi içeren veri üyesi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T** ReleaseAndGetAddressOf();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Adresini [ptr_](../windows/comptr-ptr-data-member.md) veri üyesi bu **ComPtr**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr sınıfı](../windows/comptr-class.md)   
- [ComPtr::ptr_ Veri Üyesi](../windows/comptr-ptr-data-member.md)
+
+Şununla ilişkili arabirimini yayımlar **ComPtr** ve adresini alır. [ptr_](../windows/comptr-ptr-data-member.md) yayımlanan arabirimi için bir işaretçi içeren veri üyesi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+T** ReleaseAndGetAddressOf();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Adresini [ptr_](../windows/comptr-ptr-data-member.md) veri üyesi bu **ComPtr**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtr Sınıfı](../windows/comptr-class.md)  
+[ComPtr::ptr_ Veri Üyesi](../windows/comptr-ptr-data-member.md)

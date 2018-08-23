@@ -17,51 +17,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 59753f592f099f80396f408fa531756ba91b308e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 2bbf6cb67973d7538aa7aea0d846cbadf030d585
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652545"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590658"
 ---
 # <a name="eventtargetarrayeventtargetarray-constructor"></a>EventTargetArray::EventTargetArray Oluşturucusu
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-EventTargetArray(  
-   _Out_ HRESULT* hr,  
-   size_t items  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *İK*  
- Bu oluşturucu işlemlerinden sonra parametre *ik* dizinin ayırma başarılı veya başarısız olduğunu gösterir. İçin olası değerler aşağıdaki tabloda *ik*.  
-  
- S_OK  
- İşlem başarılı oldu.  
-  
- E_OUTOFMEMORY  
- Dizi için bellek ayrılamıyor.  
-  
- S_FALSE  
- Parametre *öğeleri* sıfırdan küçük veya ona eşit.  
-  
- *Öğeleri*  
- Ayrılacak dizi öğelerinin sayısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yeni bir örneğini başlatır **EventTargetArray** sınıfı.  
-  
- **EventTargetArray** bir dizi olay işleyicileri tutmak için kullanılan bir `EventSource` nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EventTargetArray sınıfı](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+EventTargetArray(
+   _Out_ HRESULT* hr,
+   size_t items
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*İK*  
+Bu oluşturucu işlemlerinden sonra parametre *ik* dizinin ayırma başarılı veya başarısız olduğunu gösterir. İçin olası değerler aşağıdaki tabloda *ik*.
+
+S_OK işlemi başarılı oldu.
+
+Dizi için E_OUTOFMEMORY bellek ayrılamıyor.
+
+S_FALSE parametresi *öğeleri* sıfırdan küçük veya ona eşit.
+
+*Öğeleri*  
+Ayrılacak dizi öğelerinin sayısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Yeni bir örneğini başlatır **EventTargetArray** sınıfı.
+
+**EventTargetArray** bir dizi olay işleyicileri tutmak için kullanılan bir `EventSource` nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

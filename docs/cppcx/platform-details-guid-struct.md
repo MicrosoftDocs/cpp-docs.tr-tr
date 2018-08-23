@@ -1,5 +1,5 @@
 ---
-title: Platform::details::__GUID yapısı | Microsoft Docs
+title: 'Platform::details:: __guıd yapısı | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Details::__GUID Struct
 ms.assetid: 507cc577-b34d-4952-b1a9-ff4ae98bb6dd
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 975e5ae8fd59b327e52a838f913257312175bf79
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0aaaffb4254fc676e95f6c6bb315d5f257d64e48
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086583"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592427"
 ---
-# <a name="platformdetailsguid-struct"></a>Platform::details::__GUID yapısı
-Bu yapı, yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  
+# <a name="platformdetailsguid-struct"></a>Platform::details:: __guıd yapısı
+Bu yapı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,13 +33,13 @@ ref struct __GUID;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yapı tarayıcılarla Denetlenmekte olduğundan yalnızca bütünlük açısından sağlanır.  
+ Tarayıcılarla inceledi çünkü bu yapının yalnızca bütünlük açısından sağlanır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Platform`  
   
 ### <a name="requirements"></a>Gereksinimler  
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
  **Namespace:** Platform::Details  
   

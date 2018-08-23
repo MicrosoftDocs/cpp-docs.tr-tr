@@ -15,33 +15,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 72da3eeebdf99ca637708e9e493f64730a350327
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: fce2bbb0866f0260e8948677bd52c8e9f36b57c6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465525"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607799"
 ---
 # <a name="attributes-by-usage"></a>Kullanıma Göre Öznitelikler
-Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.  
-  
- Öznitelik özniteliğin kapsam içinde değil bir Visual C++ öğesi önceyse, öznitelik blok açıklama olarak kabul edilir.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|[Modül Öznitelikleri](../windows/module-attributes.md)|Uygulandığı [Modülü](../windows/module-cpp.md) özniteliği.|  
-|[Arabirim Öznitelikleri](../windows/interface-attributes.md)|Uygulandığı [__interface](../cpp/interface.md) C++ anahtar sözcüğü.|  
-|[Sınıf Öznitelikleri](../windows/class-attributes.md)|C++ anahtar sözcüğü için geçerlidir.|  
-|[Yöntem Öznitelikleri](../windows/method-attributes.md)|Bir sınıf, coclass'ı veya arabirim yöntemleri için geçerlidir.|  
-|[Parametre Öznitelikleri](../windows/parameter-attributes.md)|Bir sınıf veya arabirim yönteminin parametreleri geçerlidir.|  
-|[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)|Veri üyeleri sınıf, coclass'ı veya arabirim uygular.|  
-|[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)|C++ anahtar sözcükleri için geçerlidir.|  
-|[Dizi Öznitelikleri](../windows/array-attributes.md)|Diziler için geçerlidir veya `SAFEARRAY`s.|  
-|[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)|Bir kod satırı gibi çalışır, ancak C++ anahtar sözcüğü çalışmaz. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.|  
-|[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Meta verileri genişletme izin verir.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ öznitelikleri başvurusu](../windows/cpp-attributes-reference.md)   
- [Kavramları](../windows/attributed-programming-concepts.md)   
- [Gruplara göre öznitelikler](../windows/attributes-by-group.md)   
- [Öznitelikler Alfabetik Başvurusu](../windows/attributes-alphabetical-reference.md)
+
+Bu konu, özniteliklere göre uygulandıkları C++ Dil öğelerini listeler.
+
+Öznitelik özniteliğin kapsam içinde değil bir Visual C++ öğesi önceyse, öznitelik blok açıklama olarak kabul edilir.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|[Modül Öznitelikleri](../windows/module-attributes.md)|Uygulandığı [Modülü](../windows/module-cpp.md) özniteliği.|
+|[Arabirim Öznitelikleri](../windows/interface-attributes.md)|Uygulandığı [__interface](../cpp/interface.md) C++ anahtar sözcüğü.|
+|[Sınıf Öznitelikleri](../windows/class-attributes.md)|C++ anahtar sözcüğü için geçerlidir.|
+|[Yöntem Öznitelikleri](../windows/method-attributes.md)|Bir sınıf, coclass'ı veya arabirim yöntemleri için geçerlidir.|
+|[Parametre Öznitelikleri](../windows/parameter-attributes.md)|Bir sınıf veya arabirim yönteminin parametreleri geçerlidir.|
+|[Veri Üyesi Öznitelikleri](../windows/data-member-attributes.md)|Veri üyeleri sınıf, coclass'ı veya arabirim uygular.|
+|[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)|C++ anahtar sözcükleri için geçerlidir.|
+|[Dizi Öznitelikleri](../windows/array-attributes.md)|Diziler için geçerlidir veya `SAFEARRAY`s.|
+|[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)|Bir kod satırı gibi çalışır, ancak C++ anahtar sözcüğü çalışmaz. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.|
+|[Özel öznitelikler](../windows/custom-attributes-cpp.md)|Meta verileri genişletme izin verir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C++ Öznitelikleri Başvurusu](../windows/cpp-attributes-reference.md)  
+[Kavramları](../windows/attributed-programming-concepts.md)  
+[Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)  
+[Öznitelikler Alfabetik Başvurusu](../windows/attributes-alphabetical-reference.md)

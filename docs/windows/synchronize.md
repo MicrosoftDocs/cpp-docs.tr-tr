@@ -17,69 +17,73 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 583f05e3496ea6308dac8c7fa37c7e350165e74b
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: a72d305cfae3ba76a7c61ee7f2a6a604e6832631
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020059"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604702"
 ---
 # <a name="synchronize"></a>eşitle
-Hedef yöntemin erişimi eşitler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[synchronize]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Eşitleme** C++ özniteliği hedef yöntemin bir nesnenin eşitlemek için destek uygular. Hedef yöntemin erişim denetleyerek ortak bir kaynak (örneğin, bir sınıfın yöntemini) kullanmak birden çok nesne eşitlenmesine izin verir.  
-  
- Bu öznitelik tarafından eklenen kod uygun çağırır `Lock` hedef yöntemin başında yöntemi (iş parçacığı modeli tarafından belirlenir). Yönteminden çıkıldı, `Unlock` otomatik olarak çağrılır. Bu işlevler hakkında daha fazla bilgi için bkz. [CComAutoThreadModule::Lock](../atl/reference/ccomautothreadmodule-class.md#lock)  
-  
- Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.  
-  
-## <a name="example"></a>Örnek  
- Eşitleme için aşağıdaki kodu sağlar `UpdateBalance` yöntemi `CMyClass` nesne.  
-  
-```cpp  
-// cpp_attr_ref_synchronize.cpp  
-// compile with: /LD  
-#define _ATL_ATTRIBUTES  
-#include "atlbase.h"  
-#include "atlcom.h"  
-  
-[module(name="SYNC")];  
-  
-[coclass,  
- threading(both),  
- vi_progid("MyProject.MyClass"),  
- progid("MyProject.MyClass.1"),  
+
+Hedef yöntemin erişimi eşitler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[synchronize]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Eşitleme** C++ özniteliği hedef yöntemin bir nesnenin eşitlemek için destek uygular. Hedef yöntemin erişim denetleyerek ortak bir kaynak (örneğin, bir sınıfın yöntemini) kullanmak birden çok nesne eşitlenmesine izin verir.
+
+Bu öznitelik tarafından eklenen kod uygun çağırır `Lock` hedef yöntemin başında yöntemi (iş parçacığı modeli tarafından belirlenir). Yönteminden çıkıldı, `Unlock` otomatik olarak çağrılır. Bu işlevler hakkında daha fazla bilgi için bkz. [CComAutoThreadModule::Lock](../atl/reference/ccomautothreadmodule-class.md#lock)
+
+Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.
+
+## <a name="example"></a>Örnek
+
+Eşitleme için aşağıdaki kodu sağlar `UpdateBalance` yöntemi `CMyClass` nesne.
+
+```cpp
+// cpp_attr_ref_synchronize.cpp
+// compile with: /LD
+#define _ATL_ATTRIBUTES
+#include "atlbase.h"
+#include "atlcom.h"
+
+[module(name="SYNC")];
+
+[coclass,
+ threading(both),
+ vi_progid("MyProject.MyClass"),
+ progid("MyProject.MyClass.1"),
  uuid("7a7baa0d-59b8-4576-b754-79d07e1d1cc3")  
-]  
-class CMyClass {  
-   float m_nBalance;  
-  
-   [synchronize]  
-   void UpdateBalance(float nAdjust) {  
-      m_nBalance += nAdjust;  
-   }  
-};  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Sınıf yöntemi yöntemi|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [COM Öznitelikleri](../windows/com-attributes.md)   
+]
+class CMyClass {
+   float m_nBalance;
+
+   [synchronize]
+   void UpdateBalance(float nAdjust) {
+      m_nBalance += nAdjust;
+   }
+};
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Sınıf yöntemi yöntemi|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Bir veya daha fazlasını: `coclass`, `progid`, veya `vi_progid`.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[COM Öznitelikleri](../windows/com-attributes.md)  

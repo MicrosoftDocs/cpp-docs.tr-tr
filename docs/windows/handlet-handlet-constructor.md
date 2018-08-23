@@ -17,40 +17,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a0bb864fa1356089552fb3c48461fef2a63920b
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 4a932428b274f8ef8fcda88cd48a4d24464e818c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641385"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597222"
 ---
 # <a name="handlethandlet-constructor"></a>HandleT::HandleT Oluşturucusu
-Yeni bir örneğini başlatır **HandleT** sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-explicit HandleT(  
-   typename HandleTraits::Type h =   
+
+Yeni bir örneğini başlatır **HandleT** sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+explicit HandleT(
+   typename HandleTraits::Type h =
       HandleTraits::GetInvalidValue()  
-);  
-  
-HandleT(  
-   _Inout_ HandleT&& h  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *h*  
- Tanıtıcı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İlk Oluşturucu başlatan bir **HandleT** değil bir nesne için geçerli bir tanıtıcı nesnesi. İkinci oluşturucu yeni bir oluşturur **HandleT** parametre nesneden *h*.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT Sınıfı](../windows/handlet-class.md)
+);
+
+HandleT(
+   _Inout_ HandleT&& h
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*h*  
+Tanıtıcı.
+
+## <a name="remarks"></a>Açıklamalar
+
+İlk Oluşturucu başlatan bir **HandleT** değil bir nesne için geçerli bir tanıtıcı nesnesi. İkinci oluşturucu yeni bir oluşturur **HandleT** parametre nesneden *h*.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HandleT Sınıfı](../windows/handlet-class.md)

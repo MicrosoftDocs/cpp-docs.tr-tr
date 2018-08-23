@@ -17,38 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee858346fdb70e136edfbc562c2dfffb1f63e462
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 5ea76974359da2002178a342ab7d9b5523c52889
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652381"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584144"
 ---
 # <a name="classfactorylockserver-method"></a>ClassFactory::LockServer Yöntemi
-Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   LockServer  
-)(BOOL fLock);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *fLock*  
- **doğru** izlenen nesne sayısını artırmak için. **false** izlenen nesnelerin sayısını azaltmak için.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, E_FAIL.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **ClassFactory** temel örneği nesneleri izler [Modülü](../windows/module-class.md) sınıfı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ClassFactory Sınıfı](../windows/classfactory-class.md)
+
+Artırır veya azaltır temel sayısını nesneleri geçerli tarafından izlenen **ClassFactory** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   LockServer
+)(BOOL fLock);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*fLock*  
+**doğru** izlenen nesne sayısını artırmak için. **false** izlenen nesnelerin sayısını azaltmak için.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, E_FAIL.
+
+## <a name="remarks"></a>Açıklamalar
+
+**ClassFactory** temel örneği nesneleri izler [Modülü](../windows/module-class.md) sınıfı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ClassFactory Sınıfı](../windows/classfactory-class.md)

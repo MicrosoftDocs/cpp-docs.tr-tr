@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7a8705f6c1ed1030f1beeb7c2302f0d629c5d17d
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b66d6d3a7da6c9e3084ce2ef6fa18922e015a459
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012199"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604285"
 ---
 # <a name="overview-of-windows-programming-in-c"></a>C++'da Windows Programlamasına Genel Bakış
 
@@ -26,14 +26,14 @@ Bir Windows server, Bulut veya Xbox üzerinde birçok türde bir Windows PC (x 8
 - verimli bellek gereksinimleri
 - güç tüketiminde ekonomiktir 
 - birden fazla çekirdekli ve çok çekirdekli cihazlar tam olarak yararlanmak kullanabilirsiniz
-- Genel üzerindeki grafik işlemci birimi (GPGPU) bilgi işlem yapmak kullanabilirsiniz   
+- Genel üzerindeki grafik işlemci birimi (GPGPU) bilgi işlem yapmak kullanabilirsiniz  
 - Donanım diğer son gelişmelerden yararlanmak kullanabilirsiniz.
 
 Visual C++ ile geliştirdiğiniz Windows uygulamaları birkaç kategoriden vardır. Bu kategoriler, farklı programlama modelleri veya yıllar içinde kullanıma sunulan uygulama modelleri sahip. Her model, pencereler ve iletişim kutuları gibi kullanıcı arabirimleri oluşturun ve platforma erişim sağlamak için farklı kitaplıklarını ve API'lerini kullanır. C++ Standart Kitaplığı yanı sıra üçüncü taraf kitaplıkların UWP için bazı kısıtlamalar ile aşağıdaki kategorilerden herhangi birine içinde kullanılabilir.
 
 - [Windows Evrensel uygulamaları](#BK_WindowsUniversal). Üçüncü kategori Windows uygulamalarını Windows 8 ile kullanıma sunulmuştur ve bu kategoriyi uygulama için destek Windows 10'da devam eder. Bu uygulamaları sık "Windows uygulamaları" olarak adlandırılır ve çeşitli cihazları hedefleyen Masaüstü ve mobil uygulamaları içerirler. Bu uygulamaları C + yazabileceğiniz +/ CX, bir Windows çalışma zamanı geliştirme veya standart C++ ile Windows çalışma zamanı kitaplığı (WRL) kullanarak COM desteği içeren C++ SQL diyalektiği. Bu uygulamaları Windows 10'da kullanıcılar bunları masaüstü penceresinde çalışan seçeneğiniz vardır. ancak tam ekran, çalıştırılacak üzere tasarlanmıştır. Bu uygulamalar, dokunma odaklı, ancak kullanıcıların tercih ederseniz veya dokunmatik ekran kullanılabilir değilse, çalışılacak fare kullanmak daha kolaydır. Bu uygulamalar Microsoft Store, bunları "Store" uygulamaları çağrılan sonuçlanan bir olgu üzerinden dağıtılır.
 
-UWP uygulamaları, tabletler ve cep telefonları gibi tüm Windows 10 cihazlarında yanı sıra Masaüstü çalıştırabilir. Bir masaüstü pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki cihazlarda da çalıştırabilirsiniz.  UWP uygulamaları kullanıcı arabirimi öğeleri, hizmetleri ve Windows üzerinde desteklenen çeşitli donanım aygıtları için bir arabirim sağlayan Windows Runtime çalıştırın.  
+UWP uygulamaları, tabletler ve cep telefonları gibi tüm Windows 10 cihazlarında yanı sıra Masaüstü çalıştırabilir. Bir masaüstü pencere olarak çalıştırılabilmesi için masaüstünde yerine her zaman tam ekran çalışıyor. Bu uygulamalar, Xbox ve gelecekteki cihazlarda da çalıştırabilirsiniz.  UWP uygulamaları kullanıcı arabirimi öğeleri, hizmetleri ve Windows üzerinde desteklenen çeşitli donanım aygıtları için bir arabirim sağlayan Windows Runtime çalıştırın.
 
 UWP uygulamaları C + yazabileceğiniz +/ CX, C++, bir SQL diyalektiği kullanabileceğiniz [C + +/ WinRT Kitaplığı](https://moderncpp.com/)bazı senaryolar için. UWP uygulamaları için yerel kod derleme ve XAML kullanıcı arabirimine sahip ya da DirectX kullanın. UWP uygulamaları diğer dillerde yazılmış tüketebileceği yerel kod halinde yazılmış Windows çalışma zamanı bileşenleri. Daha fazla bilgi için [c++'ta bir evrensel Windows platformu uygulaması oluşturma](http://go.microsoft.com/fwlink/?LinkID=534976), [DirectX kullanarak ilk UWP oyununuzu oluşturun](http://go.microsoft.com/fwlink/p/?LinkId=244656), ve [C++'ta Windows çalışma zamanı oluşturma bileşenleri](http://go.microsoft.com/fwlink/p/?LinkId=244658).
 
@@ -84,7 +84,7 @@ DirectX oyunları, PC veya Xbox üzerinde çalıştırabilirsiniz. Daha fazla bi
 
 ## <a name="sdks-libraries-and-header-files"></a>SDK'lar, kitaplıklar ve üst bilgi dosyaları
 
-Visual C++, C çalışma zamanı kitaplığı (CRT), C++ Standart Kitaplığı ve Microsoft'a özel diğer kitaplıkları içerir. Bu kitaplıklara ilişkin üst bilgi dosyaları içeren içerme klasörleri ya da Visual Studio yükleme dizininde \VC\ klasörünün altında ya da söz konusu olduğunda Windows SDK'sını yükleme klasöründeki CRT yer alır.   
+Visual C++, C çalışma zamanı kitaplığı (CRT), C++ Standart Kitaplığı ve Microsoft'a özel diğer kitaplıkları içerir. Bu kitaplıklara ilişkin üst bilgi dosyaları içeren içerme klasörleri ya da Visual Studio yükleme dizininde \VC\ klasörünün altında ya da söz konusu olduğunda Windows SDK'sını yükleme klasöründeki CRT yer alır.
 
 Kullanabileceğiniz [Vcpkg Paket Yöneticisi](../vcpkg.md) Windows için üçüncü taraf açık kaynak kitaplıkları yüzlerce rahatça yüklenecek.
 
@@ -100,7 +100,7 @@ Microsoft kitaplıkları şunları içerir:
 
 Birçok Windows programlama senaryosunda ayrıca, Windows işletim sistemi bileşenlerine erişimi etkinleştiren başlık dosyalarını içeren Windows SDK gerekir. Varsayılan olarak, Visual Studio, Windows SDK'sı bir evrensel Windows uygulama geliştirmeyi sağlayan C++ Masaüstü iş yükü bileşeni olarak yükler. UWP uygulamaları geliştirme için Windows SDK'sının Windows 10 sürümü gerekir. Bilgi için [Windows 10 SDK'sı](https://dev.windows.com/downloads/windows-10-sdk). (Windows, önceki sürümler için Windows SDK'ları hakkında daha fazla bilgi için bkz. [Windows SDK arşivi](https://developer.microsoft.com/windows/downloads/sdk-archive)). 
 
-**Program dosyaları (x86) \Windows Setleri** yüklü olduğu Windows SDK'ın tüm sürümleri için varsayılan konum için.
+**Program dosyaları (x86) \Windows Setleri** yüklü olduğu Windows SDK'ın tüm sürümleri için varsayılan konumdur.
 
 Xbox ve Azure gibi diğer platformların kendi SDK'ları vardır ve bunları yüklemeniz gerekebilir. Daha fazla bilgi için bkz. DirectX Geliştirici Merkezi ve Azure Geliştirici Merkezi.
 

@@ -7,19 +7,19 @@ ms.topic: reference
 f1_keywords:
 - Platform::WeakReference
 ms.assetid: 8cfe1977-a8c7-4b7b-b539-25c77ed4c5f1
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8db5c855b6a377a0202183d48b8fd34e93b6072
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77cd035b6cf84b16f4f6d5d92f3dd247f1251509
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088384"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601567"
 ---
 # <a name="platformweakreference-class"></a>Platform::WeakReference sınıfı
-Ref sınıfının bir örneği zayıf başvuru temsil eder.  
+Bir başvuru sınıfının bir örneğini zayıf bir başvuruyu temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,23 +35,23 @@ class WeakReference
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[WeakReference::WeakReference](#ctor)|WeakReference sınıfı yeni bir örneğini başlatır.|  
+|[WeakReference::WeakReference](#ctor)|WeakReference sınıfının yeni bir örneğini başlatır.|  
   
 ### <a name="methods"></a>Yöntemler  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[WeakReference::Resolve](#resolve)|Nesne artık varsa bir tanıtıcı temel ref sınıfı veya nullptr döndürür.|  
+|[WeakReference::Resolve](#resolve)|Nesne artık mevcut değilse temel başvuru sınıfı veya nullptr için bir tanıtıcı döndürür.|  
   
 ### <a name="operators"></a>İşleçler  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[WeakReference::operator =](#operator-assign)|Yeni bir değer WeakReference nesneye atar.|  
-|[WeakReference::operator BoolType](#booltype)|Güvenli bool deseni uygular.|  
+|[WeakReference::operator =](#operator-assign)|WeakReference nesnesine yeni bir değer atar.|  
+|[WeakReference::operator BoolType](#booltype)|Güvenli bool desenini uygular.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- WeakReference sınıfı ref sınıfı değil ve bu nedenle Platform::Object devralmıyor ^ ve bir genel yöntem imzada kullanılamaz.  
+ WeakReference sınıfı başvuru sınıfı değil ve bu nedenle Platform::Object devralmayan ^ ve genel bir yöntem imzasında kullanılamaz.  
 
 ## <a name="operator-assign"></a> WeakReference::operator =
 Bir değer için bir WeakReference atar.  
@@ -66,10 +66,10 @@ WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yukarıdaki listede son aşırı WeakReference değişkenine ref sınıfı atamanızı sağlar. Bu durumda ref alta sınıftır [Platform::Object](../cppcx/platform-object-class.md)^. Özgün türü daha sonra tür parametresi için bağımsız değişken olarak belirterek geri [WeakReference::Resolve\<T >](#resolve) üye işlevi.  
+ Son aşırı yükü, yukarıdaki listede bir başvuru sınıfının bir WeakReference değişkene atamanıza olanak sağlar. Bu durumda başvuru sınıfı alta [Platform::Object](../cppcx/platform-object-class.md)^. Özgün türü daha sonra tür parametresi için bağımsız değişken olarak belirterek geri [WeakReference::Resolve\<T >](#resolve) üye işlevi.  
   
 ## <a name="booltype"></a> WeakReference::operator BoolType
-WeakReference sınıfı için güvenli bool deseni uygular. Açıkça kodunuzdan çağrılması değil.  
+WeakReference sınıfı güvenli bool desenini uygular. Açıkça kodunuzdan çağrılması değil.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -78,7 +78,7 @@ BoolType BoolType()
 ```  
 
 ## <a name="resolve"></a> WeakReference::Resolve yöntemi (Platform ad alanı)
-Özgün ref sınıfı için bir işleyici döner veya `nullptr` nesne artık yoksa.  
+Özgün başvuru sınıfı için bir tanıtıcı döndürür veya `nullptr` nesnesi artık mevcut değilse.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -91,10 +91,10 @@ T^ Resolve() const
 ### <a name="parameters"></a>Parametreler  
   
 ### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
- WeakReference nesne daha önce ilişkili ref sınıfı veya nullptr işleyici.  
+ WeakReference nesne daha önce ile ilişkilendirildi başvuru sınıfı veya nullptr tanıtıcı.  
   
 ### <a name="example"></a>Örnek  
- Bu kod örneği açıklamasıdır.  
+ Bu kod örneği için açıklamasıdır.  
   
 ```  
   
@@ -108,11 +108,11 @@ if (bar != nullptr)
 }  
 ```  
   
- Tür parametresi T, değil T olduğuna dikkat edin ^.  
+ Tür parametresinin T, T değil olduğunu unutmayın ^.  
   
  
 ## <a name="ctor"></a> WeakReference::WeakReference Oluşturucusu
-Bir WeakReference oluşturmak için çeşitli yöntemler sağlar.  
+Bir WeakReference oluşturmak için çeşitli yollar sağlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

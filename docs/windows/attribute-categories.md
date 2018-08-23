@@ -15,28 +15,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3a97cc367c1e4bda6218e30c57b36426395c8331
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: a53577446db1001b354f5765c9c7b6c5e0e1e06b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33859387"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604201"
 ---
 # <a name="attribute-categories"></a>Öznitelik Kategorileri
-Öznitelik başvurusu çeşitli Visual c++'ta kullanabileceğiniz öznitelikler açıklanmaktadır.  
+Öznitelik başvurusu, Visual c++'ta kullanabileceğiniz özniteliklerin çeşitli türleri açıklanmaktadır.
   
-## <a name="related-sections"></a>İlgili Bölümler  
+## <a name="related-sections"></a>İlgili Bölümler
  [COM Öznitelikleri](../windows/com-attributes.md)  
- COM Geliştirme çeşitli alanlar destekleyecek kodu yerleştirir.  
+ COM geliştirmenin çeşitli alanlarını desteklemek için kod ekler.
   
  [IDL öznitelikleri](../windows/idl-attributes.md)  
- Oluşturur veya ilişkili .idl dosyayı bir sihirbaz yapısı ve bu dosyayı sözdizimi ile tanıdık olmadan ve kaynak kodu dosyasının içinden değiştirir kod yerleştirir.  
+ Oluşturur veya değiştirir ilişkili .idl dosyayı bir sihirbaz ve bu dosyanın söz dizimi ve yapısı ile tanıdık olmadan bir kaynak kodu dosyası içinden kodu ekler.
   
  [OLE DB Tüketici Öznitelikleri](../windows/ole-db-consumer-attributes.md)  
- Temel kod yerleştirir [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları yürütülürken ve verilere erişim açılış tabloları gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.  
+ Temel kodu ekler [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları çalıştırma ve veri erişimi açılış tablolar gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.
   
  [Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
- Çeşitli genel programlama görevleri gerçekleştiren kod yerleştirir.  
+ Çeşitli programlama ortak görevleri gerçekleştiren bir kod ekler.
   
  [Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  
  Öznitelikli Programlama açıklayan kavramsal konulara bağlantılar sağlar.

@@ -15,29 +15,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67a8bf626d2e3f26a2f182f2e1f099f14d29b779
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b8f00619e716ae0b906714691c652a6854eb8754
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013346"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606735"
 ---
 # <a name="hstringget-method"></a>HString::Get Metodu
-Temel HSTRING tanıtıcısının değerini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+Temel HSTRING tanıtıcısının değerini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 HSTRING Get() const throw()  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Temel HSTRING tanıtıcısının değerini  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HString Sınıfı](../windows/hstring-class.md)
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Temel HSTRING tanıtıcısının değerini
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HString Sınıfı](../windows/hstring-class.md)

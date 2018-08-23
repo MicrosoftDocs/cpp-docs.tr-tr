@@ -1,5 +1,5 @@
 ---
-title: end Function | Microsoft Docs
+title: end işlevi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - end Function
 ms.assetid: fb837bff-fc76-4bae-9096-facf0e03041c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 771d7e83024f9c258df1437ff902d638bffc8478
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec25b92ca9ce21f72ff2fb573aae316ef1c19eac
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086427"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596656"
 ---
-# <a name="end-function"></a>Son işlevi
-Belirtilen arabirim parametresi tarafından erişilebilen bir koleksiyon ötesinde işaret yineleyici döndürür.  
+# <a name="end-function"></a>end işlevi
+Bir koleksiyonun belirtilen arabirim parametresi tarafından erişilen ötesinde gösteren bir yineleyici döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,26 +49,26 @@ template <typename T>
   
 #### <a name="parameters"></a>Parametreler  
  `T`  
- Şablon türü parametresi.  
+ Bir şablon türü parametresine.  
   
  `v`  
- Vektör koleksiyonu\<T > veya VectorView\<T > bir IVector tarafından erişilen nesneler\<T >, veya IVectorView\<T > arabirimini.  
+ Vektör koleksiyonunu\<T > ya da VectorView\<T > bir Ivector tarafından erişilen nesneler\<T >, veya IVectorView\<T > arabirimini.  
   
  `i`  
- Bir IIterable tarafından erişilen nesneleri arbitraty Windows çalışma zamanı topluluğu\<T > arabirimini.  
+ Windows çalışma zamanı arbitraty koleksiyonunu bir Iıterable tarafından erişilen nesneler\<T > arabirimini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Topluluğun sonuna işaret yineleyici.  
+ Koleksiyonun sonunu gösteren bir yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk iki şablon işlevleri yineleyiciler dönün ve giriş yineleyici üçüncü şablon işlevi döndürür.  
+ İlk iki şablon işlevi Yineleyicilerin dönün ve üçüncü şablon işlevi bir giriş yineleyici döndürür.  
   
- [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) tarafından döndürülen nesne `end` türündeki öğeler depolayan bir proxy yineleyici olduğu `VectorProxy<T>`. Ancak, proxy nesnesi neredeyse hiç kullanıcı kodu görünür olur. Daha fazla bilgi için bkz: [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
+ [Platform::Collections:: vectorviewıterator](../cppcx/platform-collections-vectorviewiterator-class.md) tarafından döndürülen nesne `end` türünde öğeler depolayan bir ara sunucu yineleyici `VectorProxy<T>`. Ancak, proxy neredeyse hiç kullanıcı kodu tarafından nesnedir. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** collection.h  
   
- **Namespace:** Windows::Foundation::Collections  
+ **Namespace:** Windows::Foundation:: Collections  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+ [Windows::Foundation:: Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

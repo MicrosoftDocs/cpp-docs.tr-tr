@@ -17,60 +17,65 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 662e40dd7e111b976be105129861b8ea26e5d0d9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: cb3b9ecae955ac78c6139156c3379fcd97511671
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646182"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584379"
 ---
 # <a name="ftmbase-class"></a>FtmBase Sınıfı
-Ücretsiz iş parçacıklı bir Sıralayıcı nesnesini temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-class FtmBase : public Microsoft::WRL::Implements<  
-   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,   
-   Microsoft::WRL::CloakedIid<IMarshal> >;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [RuntimeClass sınıfının](runtimeclass-class.md).  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[FtmBase::FtmBase Oluşturucusu](../windows/ftmbase-ftmbase-constructor.md)|Yeni bir örneğini başlatır **FtmBase** sınıfı.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[FtmBase::CreateGlobalInterfaceTable Metodu](../windows/ftmbase-createglobalinterfacetable-method.md)|Bir genel arabirim tablosu (GIT) oluşturur.|  
-|[FtmBase::DisconnectObject Metodu](../windows/ftmbase-disconnectobject-method.md)|Zorla tüm dış bağlantılar kurulmasına nesnenin serbest bırakır. Nesnenin sunucu nesnenin uygulaması kapatmadan önce bu yöntemi çağırır.|  
-|[FtmBase::GetMarshalSizeMax Metodu](../windows/ftmbase-getmarshalsizemax-method.md)|Belirtilen nesneyi belirtilen arabirim işaretçisini hazırlamak için gereken bayt sayısı üst sınırı alın.|  
-|[FtmBase::GetUnmarshalClass Metodu](../windows/ftmbase-getunmarshalclass-method.md)|COM kodu için karşılık gelen proxy içeren DLL bulmak için kullandığı CLSID değerini alır. COM proxy'si başlatılmamış bir örneğini oluşturmak için bu DLL'yi yükler.|  
-|[FtmBase::MarshalInterface Metodu](../windows/ftmbase-marshalinterface-method.md)|Bir akışa bir proxy nesnesi içinde bazı istemci işlemini başlatmak için gerekli verileri yazar.|  
-|[FtmBase::ReleaseMarshalData Metodu](../windows/ftmbase-releasemarshaldata-method.md)|Bir sıralanmış veri paketi yok eder.|  
-|[FtmBase::UnmarshalInterface Metodu](../windows/ftmbase-unmarshalinterface-method.md)|Yeni oluşturulan proxy başlatır ve proxy için bir arabirim işaretçisini döndürür.|  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[FtmBase::marshaller_ Veri Üyesi](../windows/ftmbase-marshaller-data-member.md)|Ücretsiz iş parçacıklı Sıralayıcı bir başvuru içerir.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `FtmBase`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Ücretsiz iş parçacıklı bir Sıralayıcı nesnesini temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+class FtmBase : public Microsoft::WRL::Implements<
+   Microsoft::WRL::RuntimeClassFlags<WinRtClassicComMix>,
+   Microsoft::WRL::CloakedIid<IMarshal> >;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Daha fazla bilgi için [RuntimeClass sınıfının](runtimeclass-class.md).
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[FtmBase::FtmBase Oluşturucusu](../windows/ftmbase-ftmbase-constructor.md)|Yeni bir örneğini başlatır **FtmBase** sınıfı.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[FtmBase::CreateGlobalInterfaceTable Metodu](../windows/ftmbase-createglobalinterfacetable-method.md)|Bir genel arabirim tablosu (GIT) oluşturur.|
+|[FtmBase::DisconnectObject Metodu](../windows/ftmbase-disconnectobject-method.md)|Zorla tüm dış bağlantılar kurulmasına nesnenin serbest bırakır. Nesnenin sunucu nesnenin uygulaması kapatmadan önce bu yöntemi çağırır.|
+|[FtmBase::GetMarshalSizeMax Metodu](../windows/ftmbase-getmarshalsizemax-method.md)|Belirtilen nesneyi belirtilen arabirim işaretçisini hazırlamak için gereken bayt sayısı üst sınırı alın.|
+|[FtmBase::GetUnmarshalClass Metodu](../windows/ftmbase-getunmarshalclass-method.md)|COM kodu için karşılık gelen proxy içeren DLL bulmak için kullandığı CLSID değerini alır. COM proxy'si başlatılmamış bir örneğini oluşturmak için bu DLL'yi yükler.|
+|[FtmBase::MarshalInterface Metodu](../windows/ftmbase-marshalinterface-method.md)|Bir akışa bir proxy nesnesi içinde bazı istemci işlemini başlatmak için gerekli verileri yazar.|
+|[FtmBase::ReleaseMarshalData Metodu](../windows/ftmbase-releasemarshaldata-method.md)|Bir sıralanmış veri paketi yok eder.|
+|[FtmBase::UnmarshalInterface Metodu](../windows/ftmbase-unmarshalinterface-method.md)|Yeni oluşturulan proxy başlatır ve proxy için bir arabirim işaretçisini döndürür.|
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[FtmBase::marshaller_ Veri Üyesi](../windows/ftmbase-marshaller-data-member.md)|Ücretsiz iş parçacıklı Sıralayıcı bir başvuru içerir.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`FtmBase`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

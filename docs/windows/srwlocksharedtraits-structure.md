@@ -17,44 +17,48 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: db9a16671be21b2df7a4ce4f9d87a8b66e097e33
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 50bcfc728a2f228e4fa8444fe41cc25c3ff449a2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020154"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602252"
 ---
 # <a name="srwlocksharedtraits-structure"></a>SRWLockSharedTraits Yapısı
-Genel özelliklerini açıklayan `SRWLock` paylaşılan kilit modu sınıfta.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-struct SRWLockSharedTraits;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|`Type`|İşaretçisi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[SRWLockSharedTraits::GetInvalidValue Metodu](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.|  
-|[SRWLockSharedTraits::Unlock Metodu](../windows/srwlocksharedtraits-unlock-method.md)|Belirtilen özel denetim serbest `SRWLock` nesne.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `SRWLockSharedTraits`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Genel özelliklerini açıklayan `SRWLock` paylaşılan kilit modu sınıfta.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+struct SRWLockSharedTraits;
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|`Type`|İşaretçisi için eş anlamlı [SRWLOCK](../windows/srwlock-class.md) sınıfı.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[SRWLockSharedTraits::GetInvalidValue Metodu](../windows/srwlocksharedtraits-getinvalidvalue-method.md)|Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.|
+|[SRWLockSharedTraits::Unlock Metodu](../windows/srwlocksharedtraits-unlock-method.md)|Belirtilen özel denetim serbest `SRWLock` nesne.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`SRWLockSharedTraits`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

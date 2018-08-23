@@ -17,40 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 011cf954a0b111e46afcaf6e55a54914075864db
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 7921ff48adf2f987844557f9af3be5adcd6736de
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014568"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602768"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
-Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabileceğiniz çağıran söyler `GetLastError` hata kodu alınamıyor.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[usesgetlasterror]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL özniteliği.  
-  
-## <a name="example"></a>Örnek  
- Bkz: [idl_module](../windows/idl-module.md) nasıl kullanılacağına ilişkin bir örnek için örnek **usesgetlasterror**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**Modül** özniteliği|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
+
+Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabileceğiniz çağıran söyler `GetLastError` hata kodu alınamıyor.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[usesgetlasterror]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL özniteliği.
+
+## <a name="example"></a>Örnek
+
+Bkz: [idl_module](../windows/idl-module.md) nasıl kullanılacağına ilişkin bir örnek için örnek **usesgetlasterror**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**Modül** özniteliği|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  

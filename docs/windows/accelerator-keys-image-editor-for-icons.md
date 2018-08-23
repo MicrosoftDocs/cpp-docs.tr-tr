@@ -19,63 +19,66 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80ab38a73a142d3ad9f80767ffe8cc8e29b0f7c6
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 09597e0aff65e8bc2e8f9c92452c80ea4b7618fa
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650933"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602112"
 ---
 # <a name="accelerator-keys-image-editor-for-icons"></a>Hızlandırma Tuşları (Simgeler İçin Görüntü Düzenleyicisi)
-Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları için hızlandırma tuşları aşağıdadır. Hızlandırıcı tuşları değiştirmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünde ve ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).  
-  
+
+Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları için hızlandırma tuşları aşağıdadır. Hızlandırıcı tuşları değiştirmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünde ve ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
+
 > [!NOTE]
->  İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
-  
-|Komut|anahtarları|Açıklama|  
-|-------------|----------|-----------------|  
-|Image.AirBrushTool|**CTRL** + **A**|Seçili boyuta ve renge sahip püskürtme kabı kullanarak çizer.|  
-|Image.BrushTool|**CTRL** + **B**|Seçilen şekle, boyutu ve rengi bir fırça kullanarak çizer.|  
-|Image.CopyAndOutlineSelection|**CTRL** + **Shift** + **U**|Geçerli seçimin bir kopyasını oluşturur ve bunu açıklar. Arka plan rengi geçerli seçimse, içeriyorsa, varsa hariç tutulacaktır [saydam](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md) seçili.|  
-|Image.DrawOpaque|**CTRL** + **J**|Geçerli seçimi ya da yapar [opak ya da şeffaf](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).|  
-|Image.EllipseTool|**CTRL** + **P**|Seçilen çizgi genişliği ve rengine sahip bir elips çizer.|  
-|Image.EraserTool|**CTRL** + **Shift** + **ediyorum**|Bir kısmını (geçerli arka plan rengiyle) görüntüyü siler.|  
-|Image.FilledEllipseTool|**CTRL** + **Shift** + **Alt** + **P**|Dolu bir elips çizer.|  
-|Image.FilledRectangleTool|**CTRL** + **Shift** + **Alt** + **R**|Dolu bir dikdörtgen çizer.|  
-|Image.FilledRoundRectangleTool|**CTRL** + **Shift** + **Alt** + **W**|Dolu bir Yuvarlatılmış dikdörtgen çizer.|  
-|Image.FillTool|**CTRL** + **F**|Bir alan doldurur.|  
-|Image.FlipHorizontal|**CTRL** + **H**|Görüntüyü ya da seçimi yatay çevirir.|  
-|Image.FlipVertical|**Shift**+ **Alt** + **H**|Görüntüyü ya da seçimi dikey çevirir.|  
-|Image.LargerBrush|**CTRL** + **=**|Fırça boyutunu her yönde bir piksel artırır. Fırça boyutunu azaltmak için bu tablodaki Image.smallerbrush'a bakın.|  
-|Image.LineTool|**CTRL** + **m**|Seçilen şekle, boyutu ve rengi düz bir çizgi çizer.|  
-|Image.MagnificationTool|**CTRL** + **M**|Etkinleştirir **Magnıfy** görüntünüzün belirli bölümlerini büyütmenize izin veren bir araç.|  
-|Image.Magnify|**CTRL** + **Shift** + **M**|Geçerli büyütme ve 1:1 büyütme arasında geçiş yapar.|  
-|Image.NewImageType|**Ekle**|Başlatan [yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) ile farklı bir görüntü türü için bir görüntü oluşturabilirsiniz.|  
-|Image.NextColor|**CTRL** + **]**<br /><br /> - veya -<br /><br /> **CTRL** + **sağ ok**|Çizim ön plan rengini sonraki palet rengine değiştirir.|  
-|Image.NextRightColor|**CTRL** + **Shift** + **]**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sağ ok**|Çizim arkaplan rengini sonraki palet rengine değiştirir.|  
-|Image.OutlinedEllipseTool|**Shift** + **Alt** + **P**|Bir dış dolu bir elips çizer.|  
-|Image.OutlinedRectangleTool|**Shift** + **Alt** + **R**|Bir dış dolu bir dikdörtgen çizer.|  
-|Image.OutlinedRoundRectangleTool|**Shift** + **Alt** + **W**|Bir dış dolu bir Yuvarlatılmış dikdörtgen çizer.|  
-|Image.PencilTool|**CTRL** + **ediyorum**|Tek piksellik bir kalem kullanarak çizer.|  
-|Image.PreviousColor|**CTRL** + **[**<br /><br /> - veya -<br /><br /> **CTRL** + **sol ok**|Çizim ön plan rengini önceki palet rengine değiştirir.|  
-|Image.PreviousRightColor|**CTRL** + **Shift** + **[**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sol ok**|Çizim arkaplan rengini önceki palet rengine değiştirir.|  
-|Image.RectangleSelectionTool|**Shift** + **Alt** + **S**|Taşıma, kopyalama veya düzenlemek üzere görüntünün dikdörtgen bir bölümünü seçer.|  
-|Image.RectangleTool|ATL + R|Seçilen çizgi genişliği ve rengine sahip bir dikdörtgen çizer.|  
-|Image.Rotate90Degrees|**CTRL** + **Shift** + **H**|Görüntüyü ya da seçimi 90 derece çevirir.|  
-|Image.RoundedRectangleTool|**Alt** + **W**|Seçilen çizgi genişliği ve rengine sahip bir Yuvarlatılmış dikdörtgen çizer.|  
-|Image.ShowGrid|**CTRL** + **Alt** + **S**|Piksel kılavuzunu açıp kapatır (seçer veya temizler **piksel kılavuzunu** seçeneğini [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|  
-|Image.ShowTileGrid|**CTRL** + **Shift** + **Alt** + **S**|Döşeme kılavuzunu açıp kapatır (seçer veya temizler **döşeme** seçeneğini [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|  
-|Image.SmallBrush|**Ctrl** + **.** (nokta)|Azaltır **fırça** boyutunu bir piksele. (Ayrıca Image.largerbrush ve Image.smallerbrush bu tabloya bakın.)|  
-|Image.SmallerBrush|**CTRL**  +  **-** (eksi)|Fırça boyutunu her yönde bir piksel azaltır. Fırça boyutunu tekrar artırmak için bu tablodaki Image.largerbrush'a bakın.|  
-|Image.TextTool|**CTRL** + **T**|Açılır [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md).|  
-|Image.UseSelectionAsBrush|**CTRL** + **U**|Geçerli seçimi bir fırça gibi kullanarak çizer.|  
-|Image.ZoomIn|**CTRL** + **Shift** + **.** (nokta)<br /><br /> - veya -<br /><br /> **CTRL** + **yukarı ok**|Geçerli görünümün büyütmesini artırır.|  
-|Image.ZoomOut|**CTRL** + **,** (virgül)<br /><br /> - veya -<br /><br /> **CTRL** + **aşağı ok**|Geçerli görünümün büyütmesini azaltır.|  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+> İletişim kutuları, adları ve konumları gördüğünüz gibi menü komutlarının Seçenekleri Yardımı'nda, etkin ayarlarınıza ve sürüm bağlı olarak açıklanan nedir öğesinden farklı olabilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+
+|Komut|anahtarları|Açıklama|
+|-------------|----------|-----------------|
+|Image.AirBrushTool|**CTRL** + **A**|Seçili boyuta ve renge sahip püskürtme kabı kullanarak çizer.|
+|Image.BrushTool|**CTRL** + **B**|Seçilen şekle, boyutu ve rengi bir fırça kullanarak çizer.|
+|Image.CopyAndOutlineSelection|**CTRL** + **Shift** + **U**|Geçerli seçimin bir kopyasını oluşturur ve bunu açıklar. Arka plan rengi geçerli seçimse, içeriyorsa, varsa hariç tutulacaktır [saydam](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md) seçili.|
+|Image.DrawOpaque|**CTRL** + **J**|Geçerli seçimi ya da yapar [opak ya da şeffaf](../windows/choosing-a-transparent-or-opaque-background-image-editor-for-icons.md).|
+|Image.EllipseTool|**CTRL** + **P**|Seçilen çizgi genişliği ve rengine sahip bir elips çizer.|
+|Image.EraserTool|**CTRL** + **Shift** + **ediyorum**|Bir kısmını (geçerli arka plan rengiyle) görüntüyü siler.|
+|Image.FilledEllipseTool|**CTRL** + **Shift** + **Alt** + **P**|Dolu bir elips çizer.|
+|Image.FilledRectangleTool|**CTRL** + **Shift** + **Alt** + **R**|Dolu bir dikdörtgen çizer.|
+|Image.FilledRoundRectangleTool|**CTRL** + **Shift** + **Alt** + **W**|Dolu bir Yuvarlatılmış dikdörtgen çizer.|
+|Image.FillTool|**CTRL** + **F**|Bir alan doldurur.|
+|Image.FlipHorizontal|**CTRL** + **H**|Görüntüyü ya da seçimi yatay çevirir.|
+|Image.FlipVertical|**Shift**+ **Alt** + **H**|Görüntüyü ya da seçimi dikey çevirir.|
+|Image.LargerBrush|**CTRL** + **=**|Fırça boyutunu her yönde bir piksel artırır. Fırça boyutunu azaltmak için bu tablodaki Image.smallerbrush'a bakın.|
+|Image.LineTool|**CTRL** + **m**|Seçilen şekle, boyutu ve rengi düz bir çizgi çizer.|
+|Image.MagnificationTool|**CTRL** + **M**|Etkinleştirir **Magnıfy** görüntünüzün belirli bölümlerini büyütmenize izin veren bir araç.|
+|Image.Magnify|**CTRL** + **Shift** + **M**|Geçerli büyütme ve 1:1 büyütme arasında geçiş yapar.|
+|Image.NewImageType|**Ekle**|Başlatan [yeni \<cihaz > görüntü türü iletişim kutusu](../windows/new-device-image-type-dialog-box-image-editor-for-icons.md) ile farklı bir görüntü türü için bir görüntü oluşturabilirsiniz.|
+|Image.NextColor|**CTRL** + **]**<br /><br /> - veya -<br /><br /> **CTRL** + **sağ ok**|Çizim ön plan rengini sonraki palet rengine değiştirir.|
+|Image.NextRightColor|**CTRL** + **Shift** + **]**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sağ ok**|Çizim arkaplan rengini sonraki palet rengine değiştirir.|
+|Image.OutlinedEllipseTool|**Shift** + **Alt** + **P**|Bir dış dolu bir elips çizer.|
+|Image.OutlinedRectangleTool|**Shift** + **Alt** + **R**|Bir dış dolu bir dikdörtgen çizer.|
+|Image.OutlinedRoundRectangleTool|**Shift** + **Alt** + **W**|Bir dış dolu bir Yuvarlatılmış dikdörtgen çizer.|
+|Image.PencilTool|**CTRL** + **ediyorum**|Tek piksellik bir kalem kullanarak çizer.|
+|Image.PreviousColor|**CTRL** + **[**<br /><br /> - veya -<br /><br /> **CTRL** + **sol ok**|Çizim ön plan rengini önceki palet rengine değiştirir.|
+|Image.PreviousRightColor|**CTRL** + **Shift** + **[**<br /><br /> - veya -<br /><br /> **Shift** + **Ctrl** + **sol ok**|Çizim arkaplan rengini önceki palet rengine değiştirir.|
+|Image.RectangleSelectionTool|**Shift** + **Alt** + **S**|Taşıma, kopyalama veya düzenlemek üzere görüntünün dikdörtgen bir bölümünü seçer.|
+|Image.RectangleTool|ATL + R|Seçilen çizgi genişliği ve rengine sahip bir dikdörtgen çizer.|
+|Image.Rotate90Degrees|**CTRL** + **Shift** + **H**|Görüntüyü ya da seçimi 90 derece çevirir.|
+|Image.RoundedRectangleTool|**Alt** + **W**|Seçilen çizgi genişliği ve rengine sahip bir Yuvarlatılmış dikdörtgen çizer.|
+|Image.ShowGrid|**CTRL** + **Alt** + **S**|Piksel kılavuzunu açıp kapatır (seçer veya temizler **piksel kılavuzunu** seçeneğini [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|
+|Image.ShowTileGrid|**CTRL** + **Shift** + **Alt** + **S**|Döşeme kılavuzunu açıp kapatır (seçer veya temizler **döşeme** seçeneğini [kılavuz Ayarları iletişim kutusu](../windows/grid-settings-dialog-box-image-editor-for-icons.md)).|
+|Image.SmallBrush|**Ctrl** + **.** (nokta)|Azaltır **fırça** boyutunu bir piksele. (Ayrıca Image.largerbrush ve Image.smallerbrush bu tabloya bakın.)|
+|Image.SmallerBrush|**CTRL**  +  **-** (eksi)|Fırça boyutunu her yönde bir piksel azaltır. Fırça boyutunu tekrar artırmak için bu tablodaki Image.largerbrush'a bakın.|
+|Image.TextTool|**CTRL** + **T**|Açılır [metin aracı iletişim kutusu](../windows/text-tool-dialog-box-image-editor-for-icons.md).|
+|Image.UseSelectionAsBrush|**CTRL** + **U**|Geçerli seçimi bir fırça gibi kullanarak çizer.|
+|Image.ZoomIn|**CTRL** + **Shift** + **.** (nokta)<br /><br /> - veya -<br /><br /> **CTRL** + **yukarı ok**|Geçerli görünümün büyütmesini artırır.|
+|Image.ZoomOut|**CTRL** + **,** (virgül)<br /><br /> - veya -<br /><br /> **CTRL** + **aşağı ok**|Geçerli görünümün büyütmesini azaltır.|
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

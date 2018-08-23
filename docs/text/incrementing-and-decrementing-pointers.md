@@ -13,57 +13,57 @@ helpviewer_keywords:
 - pointers [C++], multibyte characters
 - decrementing pointers
 ms.assetid: 0872b4a0-e2bd-4004-8319-070efb76f2fd
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82a6f792ce622481cbbab821b8a5446186bd692d
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f4fff5d7ec20ce052e4d831f1556432186ebc7bb
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33857135"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603366"
 ---
 # <a name="incrementing-and-decrementing-pointers"></a>İşaretçileri Artırma ve Azaltma
 Aşağıdaki ipuçlarını kullanın:  
   
--   Noktası ön baytlar, baytlara değil. Sondaki bayt gösteren bir işaretçi sağlamak için genellikle güvenli değildir. Genellikle bir dize İleri yerine ters tarama daha güvenlidir.  
+-   İşaret baytlara değil, ön baytlar. Sondaki baytı işaretçiniz güvenli değil. Genellikle ileri yerine ters bir dizesini tara daha güvenlidir.  
   
--   İşaretçi artırma/azaltma işlevleri ve tüm bir karakter üzerinden taşıma makroları vardır:  
+-   İşaretçi artırma/azaltma işlevleri ve tam bir karakter üzerinden taşınan makroları vardır:  
   
     ```  
     sz1++;  
     ```  
   
-     Olur:  
+     olur:  
   
     ```  
     sz1 = _mbsinc( sz1 );  
     ```  
   
-     `_mbsinc` Ve `_mbsdec` işlevleri doğru artırmak ve içinde azaltma `character` karakter boyutu bakılmaksızın birimleri.  
+     `_mbsinc` Ve `_mbsdec` işlevleri doğru bir şekilde artırın ve içinde azaltma `character` birimi, karakter boyutundan bağımsız olarak.  
   
--   Azaltır için aşağıdaki gibi dize head gösteren bir işaretçi gerekir:  
+-   Azaltır için bir işaretçi olduğu aşağıdaki gibi dize karşılaştırması gerekir:  
   
     ```  
     sz2--;  
     ```  
   
-     Olur:  
+     olur:  
   
     ```  
     sz2 = _mbsdec( sz2Head, sz2 );  
     ```  
   
-     Alternatif olarak, geçerli bir karakter dizesi içinde baş işaretçinizi olabilir şekilde:  
+     Alternatif olarak, geçerli bir karakter dizesi, baş işaretçinizi olabilir gibi:  
   
     ```  
     sz2Head < sz2  
     ```  
   
-     Bilinen geçerli baytı gösteren bir işaretçi olması gerekir.  
+     Bilinen geçerli baytı için bir işaretçi olması gerekir.  
   
--   Daha hızlı çağrılar için önceki karakteri gösteren bir işaretçi korumak isteyebilirsiniz `_mbsdec`.  
+-   Daha hızlı çağrılar için önceki karaktere bir işaretçi korumak isteyebileceğiniz `_mbsdec`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   

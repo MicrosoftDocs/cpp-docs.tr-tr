@@ -16,21 +16,21 @@ dev_langs:
 helpviewer_keywords:
 - Platform::WriteOnlyArray Class
 ms.assetid: 92d7dd56-ec58-4b8c-88ba-9c903668b687
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f5c1f1f0260d4f1d1c4a6fb640b7cbf1e9d3f2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3871b6ad3aead88c32c906726f689d949eb945ba
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33091493"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603352"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray sınıfı
-Arayan doldurmak yöntemi için bir dizi geçtiğinde giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.  
+Doldur yönteminin bir dizi çağırana başarılı olduğunda giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.  
   
- Bu ref sınıf private vccorlib.h olarak bildirilmiş; Bu nedenle, meta verilerde yayılan değil ve yalnızca C++ içinden tüketilebilir. Bu sınıf yalnızca çağıran ayrılmış sahip bir dizi alan giriş parametresi olarak kullanıma yöneliktir. Kullanıcı kodundan oluşturulabilir değil. Doğrudan bu diziye yazmak bir C++ yöntemi sağlar — olarak bilinen bir deseni *FillArray* düzeni. Daha fazla bilgi için bkz: [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
+ Bu başvuru sınıfı, private olarak vccorlib.h bildirilir; Bu nedenle, meta verilerde yayılır değildir ve yalnızca C++'tan tüketilebilir. Bu sınıf, çağırana ayırdığı bir dizi alan bir giriş parametresi olarak kullanılmak üzere yalnızca yöneliktir. Kullanıcı kodundan atmamalıdır değil. Doğrudan bu diziye yazmak C++ yöntemi sağlar — olarak bilinen bir deseni *FillArray* deseni. Daha fazla bilgi için [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,17 +41,17 @@ private ref class WriteOnlyArray<T, 1>
 ### <a name="members"></a>Üyeler  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
- Bu yöntemler iç erişilebilirlik sahip — diğer bir deyişle, bunlar yalnızca C++ uygulama veya bileşen içinde erişilebilir.  
+ Bu yöntemleri dahili erişilebilirlik sahip — diğer bir deyişle, bunlar yalnızca C++ uygulama veya bileşen içinde erişilebilir.  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 
-|[WriteOnlyArray::begin](#begin)| Dizinin ilk öğesi işaret yineleyici. |  
+|[WriteOnlyArray::begin](#begin)| Dizinin ilk öğeyi gösteren bir yineleyici. |  
 |[WriteOnlyArray::Data](#data)| Veri arabelleği için bir işaretçi. |  
-|[WriteOnlyArray::end](#end)| Bir dizi son öğesi geçmiş işaret yineleyici. |  
-|[WriteOnlyArray::FastPass](#fastpass)| Dizi saydam sistem tarafından gerçekleştirilen bir iyileştirme FastPass mekanizması kullanıp kullanamayacağını belirtir. Bu, kodunuzda kullanma |  
-|[WriteOnlyArray::Length](#length)| Dizide öğe sayısını döndürür. |  
-|[WriteOnlyArray::set](#set)| Belirtilen öğe belirtilen değere ayarlar. |  
+|[WriteOnlyArray::end](#end)| Dizi içindeki son öğeden bir öncekine gösteren bir yineleyici. |  
+|[WriteOnlyArray::FastPass](#fastpass)| Dizi şeffaf bir şekilde sistem tarafından gerçekleştirilen bir iyileştirme FastPass mekanizması kullanıp kullanamayacağını belirtir. Bu, kodunuzdaki kullanmayın |  
+|[WriteOnlyArray::Length](#length)| Dizideki öğelerin sayısını döndürür. |  
+|[WriteOnlyArray::set](#set)| Belirtilen öğeyi belirtilen değere ayarlar. |  
 
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
@@ -60,12 +60,12 @@ private ref class WriteOnlyArray<T, 1>
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
   
- **Meta veriler:** Platform.winmd  
+ **Meta veri:** Platform.winmd  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
 
 ## <a name="begin"></a>  WriteOnlyArray::begin yöntemi
-Dizinin ilk öğe için bir işaretçi döndürür.  
+Dizideki ilk öğe için bir işaretçi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -74,15 +74,15 @@ T* begin() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizinin ilk öğe için bir işaretçi.  
+ Dizideki ilk öğe işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yineleyici STL algoritmalarıyla gibi kullanılabilir `std::sort` dizideki öğeler üzerinde çalışılacak.  
+ STL algoritmaları ile bu yineleyici gibi kullanılabilir `std::sort` dizideki öğeler üzerinde çalışılacak.  
   
 
 
 ## <a name="data"></a>  WriteOnlyArray::Data özelliği
-Veri arabelleği işaretçi.  
+Veri arabelleği için işaretçi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -93,12 +93,12 @@ property T* Data{
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Ham dizi bayt gösteren bir işaretçi.  
+ Dizinin ham bayt için bir işaretçi.  
   
 
 
 ## <a name="end"></a>  WriteOnlyArray::end yöntemi
-Bir dizi son öğesi geçmiş bir işaretçi döndürür.  
+Dizi içindeki son öğeden bir öncekine bir işaretçi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -107,15 +107,15 @@ T* end() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşaretçi yineleyici bir dizi son öğesi geçti.  
+ Dizi içindeki son öğeden bir öncekine işaretçi yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yineleyici STL algoritmalarıyla gibi işlemleri gerçekleştirmek için kullanılabilir `std::sort` dizi öğelerde.  
+ STL algoritmaları ile bu yineleyici gibi işlemleri gerçekleştirmek için kullanılabilir `std::sort` dizi öğeleri üzerinde.  
   
 
 
 ## <a name="fastpass"></a>  WriteOnlyArray::FastPass özelliği
-İç FastPass iyileştirme gerçekleştirip gerçekleştirmediğini belirtir. Kullanıcı kodu tarafından kullanılmaya değil.  
+İç FastPass iyileştirme gerçekleştirip gerçekleştirmediğini belirtir. Kullanıcı kodu tarafından kullanılmak üzere tasarlanmamıştır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -126,7 +126,7 @@ property bool FastPass{
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizi FastPass olup olmadığını belirten Boolean değeri.  
+ Dizi FastPass olup olmadığını gösteren Boole değeri.  
   
 
 
@@ -148,7 +148,7 @@ T& get(
 
 
 ## <a name="length"></a>  WriteOnlyArray::Length özelliği
-Arayana ayrılan dizisinde öğe sayısını döndürür.  
+Arayana ayrılan dizideki öğelerin sayısını döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -164,7 +164,7 @@ property unsigned int Length{
 
 
 ## <a name="set"></a>  WriteOnlyArray::set işlevi
-Dizideki belirtilen dizindeki belirtilen değere ayarlar.  
+Dizi belirtilen dizindeki belirtilen değere ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -176,18 +176,18 @@ T& set(
   
 ### <a name="parameters"></a>Parametreler  
  `indexArg`  
- Ayarlamak için öğenin dizini.  
+ Ayarlanacak öğenin dizini.  
   
  `valueArg`  
- Konumundaki ayarlanacak değer `indexArg`.  
+ Ayarlanan değer `indexArg`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir başvuru öğesine ayarlamanız yeterlidir.  
+ Ayarlamanız yeterlidir öğeye bir başvuru.  
   
 
   
 ### <a name="remarks"></a>Açıklamalar  
- HRESULT değeri yorumlama hakkında daha fazla bilgi için bkz: [COM hata kodları yapısı](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+ HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

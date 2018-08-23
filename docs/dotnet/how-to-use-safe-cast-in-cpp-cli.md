@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: safe_cast kullanma C + +/ CLI | Microsoft Docs'
+title: 'Nasıl yapılır: safe_cast kullanmak C + +/ CLI | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0f695c45d5202f376a4ce4daf14c37a7fd9a1904
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd1582179a64327afda6a4dc16cde9588b19397f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33136681"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607920"
 ---
 # <a name="how-to-use-safecast-in-ccli"></a>Nasıl yapılır: C++/CLI üzerinde safe_cast kullanma
-Bu makalede safe_cast C + kullanmayı gösterir +/ CLI uygulamalar. Safe_cast içinde hakkında bilgi için [!INCLUDE[cppwrt_short](../build/reference/includes/cppwrt_short_md.md)], bkz: [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
+Bu makale safe_cast kullanma C + +/ CLI uygulamalarında. Bilgileri safe_cast C + +/ CX, bakın [safe_cast](../windows/safe-cast-cpp-component-extensions.md).  
   
-## <a name="upcasting"></a>Üst türe çevirme  
- Bir türetilmiş bir tür dönüştürme temel sınıflarından biri için bir yukarı çevrim olur. Bu atama güvenlidir ve açık atama gösterimi gerektirmez. Aşağıdaki örnek, bir yukarı çevrim ile gerçekleştirmek gösterilmiştir `safe_cast` ve olmadan.  
+## <a name="upcasting"></a>Yukarı çevrim  
+ Yukarı çevrim türetilmiş bir tür değerinden bool değerine atama için temel sınıflarının biri olur. Bu tür dönüştürme güvenlidir ve açık tür dönüştürme gösterimi gerektirmez. Aşağıdaki örnek, bir yukarı çevrim ile yapma işlemi açıklanır `safe_cast` ve olmadan.  
   
 ```cpp  
 // safe_upcast.cpp  
@@ -75,8 +75,8 @@ in C::Test
 in B::Test2  
 ```  
   
-## <a name="downcasting"></a>Alt türe çevirme  
- Bir alta temel sınıfından türetilmiş bir sınıf için bir taban sınıftan bir cast ' dir.  Bir alta çalışma zamanında ele nesne türetilmiş sınıf nesnesi gerçekte yalnızca adresleme, güvenli değildir.  Farklı `static_cast`, `safe_cast` dinamik denetimi gerçekleştirir ve oluşturur <xref:System.InvalidCastException> dönüştürme başarısız olursa.  
+## <a name="downcasting"></a>Alta dönüştürme işlemi  
+ Alta bir temel sınıftan türetilmiş bir sınıf bir temel sınıftan bir atamanın olur.  Bir alta dönüştürme işlemi yalnızca çalışma zamanında ele nesne aslında bir türetilmiş sınıf nesnesinde ele alıyor mu, güvenli değildir.  Farklı `static_cast`, `safe_cast` dinamik denetimi gerçekleştirir ve oluşturur <xref:System.InvalidCastException> dönüştürme başarısız olursa.  
   
 ```cpp  
 // safe_downcast.cpp  
@@ -128,7 +128,7 @@ in B::Test2()
 ```  
   
 ## <a name="safecast-with-user-defined-conversions"></a>safe_cast ile kullanıcı tanımlı dönüşümler  
- Sonraki örnek nasıl kullanabileceğinizi gösterir `safe_cast` kullanıcı tanımlı dönüşümler çağırmak için.  
+ Sonraki örnek nasıl kullanılacağını göstermektedir `safe_cast` kullanıcı tanımlı dönüşümler çağırmak için.  
   
 ```cpp  
 // safe_cast_udc.cpp  
@@ -185,9 +185,9 @@ in operator V^(R^ r)
   
 ### <a name="boxing"></a>Kutulama  
   
- Kutulama derleyici tarafından eklenen, kullanıcı tanımlı bir dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` CLR yığınındaki bir değer kutusuna için.  
+ Kutulama, derleyici tarafından eklenen, kullanıcı tanımlı dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` box'ta CLR yığındaki bir değer.  
   
- Aşağıdaki örnek, basit ve kullanıcı tanımlı değeri türleri kutulama gösterir.  A `safe_cast` yerel yığında böylece atık toplanan yığında bir değişkene atanabilir olan bir değer türü değişkeni kutuları.  
+ Aşağıdaki örnek, basit ve kullanıcı tanımlı değer türleri ile kutulama gösterir.  A `safe_cast` yerel yığında olan ve böylece atık olarak toplanmış yığındaki bir değişkene atanabilir bir değer türü değişkeni kutular.  
   
 ```cpp  
 // safe_cast_boxing.cpp  
@@ -213,7 +213,7 @@ int main() {
 }  
 ```  
   
- Kutulama kullanıcı tanımlı bir dönüştürmede üzerinden önceliğine sahip sonraki örnek göstermektedir bir `safe_cast` işlemi.  
+ Sonraki örnek kutulama, bir kullanıcı tanımlı dönüştürme üzerinden öncelikli olduğunu gösterir bir `safe_cast` işlemi.  
   
 ```cpp  
 // safe_cast_boxing_2.cpp  
@@ -248,9 +248,9 @@ int main() {
   
 ### <a name="unboxing"></a>Kutudan çıkarma  
   
- Kutudan çıkarma derleyici tarafından eklenen, kullanıcı tanımlı bir dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` değerin CLR yığınındaki için.  
+ Kutudan çıkarma derleyici tarafından eklenen, kullanıcı tanımlı dönüştürme olarak tanımlanır.  Bu nedenle, kullanabileceğiniz `safe_cast` CLR yığındaki bir değerin için.  
   
- Kutudan çıkarma kullanıcı tanımlı bir dönüştürme olmakla birlikte, kutudan çıkarma kutulama aksine, gerekir açık olması — diğer bir deyişle, onu tarafından gerçekleştirilmesi gereken bir `static_cast`, C tarzı cast, veya `safe_cast`; kutudan çıkarma gerçekleştirilemiyor örtük olarak.  
+ Kutudan çıkarma, bir kullanıcı tanımlı dönüştürme olduğu halde kutulama aksine, kutudan çıkarma gerekir açık olması — diğer bir deyişle, tarafından gerçekleştirilmesi gereken bir `static_cast`, C stili tür dönüştürme; veya `safe_cast`; kutudan çıkarma gerçekleştirilemez örtük olarak.  
   
 ```cpp  
 // safe_cast_unboxing.cpp  
@@ -261,7 +261,7 @@ int main() {
 }  
 ```  
   
- Değer türleri ve ilkel türler ile kutudan çıkarma aşağıdaki örnek gösterilmektedir.  
+ Aşağıdaki örnek ile değer türleri ve basit türler kutudan çıkarma gösterilmektedir.  
   
 ```cpp  
 // safe_cast_unboxing_2.cpp  
@@ -308,7 +308,7 @@ int main() {
 ```  
   
 ## <a name="safecast-and-generic-types"></a>safe_cast ve genel türler  
- Sonraki örnek nasıl kullanabileceğinizi gösterir `safe_cast` genel bir tür ile alta dönüştürme gerçekleştirmek için.  
+ Sonraki örnek nasıl kullanılacağını göstermektedir `safe_cast` ile bir genel tür alta dönüştürme gerçekleştirmek için.  
   
 ```cpp  
 // safe_cast_generic_types.cpp  

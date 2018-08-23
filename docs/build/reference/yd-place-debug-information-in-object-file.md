@@ -19,15 +19,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39b03b0faf975caba8c5a287c88afcdf53f7a71f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 86cb8a42b77cd0a932530455f1125125a9f546d9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378239"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42585973"
 ---
 # <a name="yd-place-debug-information-in-object-file"></a>/Yd (Hata Ayıklama Bilgilerini Nesne Dosyasına Yerleştir)
-Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan kullanıldığında önceden derlenmiş üst bilgi (.pch) dosyasından [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.  
+Hata ayıklama bilgileri tüm nesne dosyalarına tam oşluklar oluşturulan önceden derlenmiş üst bilgi (.pch) dosyasından ile kullanıldığında [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/z7](../../build/reference/z7-zi-zi-debug-information-format.md) seçenekleri. Kullanım dışı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,15 +36,15 @@ Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan 
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **/YD** kullanım dışıdır; [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] tek .pdb dosyasına yazılırken birden fazla nesne artık destekler kullanmak **/zı** yerine. Kullanım dışı derleyici seçeneklerinin listesi için bkz: **kullanım dışı ve kaldırılmış derleyici seçenekleri** içinde [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
+ **/YD** kullanım dışı; Visual C++ artık birden çok nesne tek .pdb dosyasına yazılırken destekler, kullanın **/zi** yerine. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).  
   
- Bir kitaplık içeren hata ayıklama bilgilerini dağıtmak gerekli olmadıkça kullanmak [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği yerine **/Z7** ve **/Yd**.  
+ Bir kitaplığı içeren hata ayıklama bilgileri dağıtmak gerekli olmadıkça kullanın [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) seçeneği yerine **/z7** ve **/Yd**.  
   
- Her .obj dosyasında tam hata ayıklama bilgilerini depolamak, yalnızca hata ayıklama bilgileri içeren kitaplıkları dağıtmak gereklidir. Derleme yavaşlatır ve önemli ölçüde disk alanı gerektirir. Zaman **/Yc** ve **/Z7** olmadan kullanılan **/Yd**, derleyici .pch dosyasından oluşturulan ilk .obj dosyasında ortak hata ayıklama bilgileri depolar. Derleyici, bu bilgileri daha sonra .pch dosyasından oluşturulan .obj dosyaları içine eklemez; çapraz başvurular bilgi ekler. Kaç tane .obj dosyaları .pch dosyası kullanımı olsun, yalnızca bir .obj dosyası ortak hata ayıklama bilgileri içerir.  
+ Her .obj dosyasında tam hata ayıklama bilgilerinin depolanması, yalnızca hata ayıklama bilgilerini içeren kitaplıkları dağıtmak gereklidir. Bu derleme yavaşlatır ve önemli ölçüde disk alanı gerektirir. Zaman **/Yc** ve **/z7** olmadan kullanılan **/Yd**, derleyici, .pch dosyasından oluşturulan ilk .obj dosyasındaki ortak hata ayıklama bilgilerini depolar. Derleyici, bu bilgileri .obj dosyaları daha sonra .pch dosyasından oluşturulan içine eklemez; Bu bilgilere çapraz başvurular ekler. .Pch dosyası Adlandır kaç .obj dosyaları kullanımı ne olursa olsun, yalnızca bir .obj dosyası genel hata ayıklama bilgileri içerir.  
   
- Bu varsayılan davranış sonuçlarında daha hızlı kez yapı ve disk alanı gereksinimlerini azaltır, ancak küçük değişiklikler ortak hata ayıklama bilgileri içeren .obj dosyasını yeniden oluşturma gerektiriyorsa istenmeyen. Bu durumda, derleyici, özgün .obj dosyaya çapraz başvurular içeren tüm .obj dosyaları yeniden oluşturmanız gerekir. Ayrıca, bir ortak .pch dosyası farklı projeler tarafından kullanılıyorsa, tek .obj dosyaya çapraz başvurular bağımlılık zordur.  
+ Bu varsayılan davranışı sonuçları daha hızlı derleme sürelerini ve disk alanı taleplerini azaltır olsa da, küçük bir değişiklik içeren genel hata ayıklama bilgileri .obj dosyasına yeniden gerektiriyorsa, istenmeyen. Bu durumda, derleyici, özgün .obj dosyasına çapraz başvuru içeren tüm .obj dosyalarını yeniden oluşturmanız gerekir. Ayrıca, bir ortak .pch dosyası farklı projeleri tarafından kullanılıyorsa, tek bir .obj dosyasına çapraz güvenme zordur.  
   
- Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz:  
+ Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:  
   
 -   [/Y (Önceden Derlenmiş Üst Bilgiler)](../../build/reference/y-precompiled-headers.md)  
   
@@ -52,41 +52,41 @@ Hata ayıklama bilgisi tüm nesne dosyalarında tam meleri boşluk oluşturulan 
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **C/C++** klasör.  
+2.  Tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **komut satırı** özellik sayfası.  
+3.  Tıklayın **komut satırı** özellik sayfası.  
   
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
+4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   
 -   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## <a name="examples"></a>Örnekler  
- İki temel dosyaları, F.cpp ve bunlar her içeren G.cpp olduğunu varsayalım **#include** deyimleri:  
+ F.cpp ve bunlar her içeren G.cpp, iki temel dosyası olduğunu varsayalım **#include** ifadeleri:  
   
 ```  
 #include "windows.h"  
 #include "etc.h"  
 ```  
   
- Önceden derlenmiş üst bilgi aşağıdaki komut oluşturur dosya ETC.pch ve F.obj nesne dosyası:  
+ Aşağıdaki komut, önceden derlenmiş üst bilgi oluşturur. dosya ETC.pch ve F.obj nesne dosyası:  
   
 ```  
 CL /YcETC.H /Z7 F.CPP  
 ```  
   
- Nesne dosyası F.obj türü ve sembol bilgileri WINDOWS.h ve ETC.h (ve içerirler diğer üstbilgi dosyaları) içerir. Artık kaynak dosyaları G.cpp derlemek için önceden derlenmiş üst bilgi ETC.pch kullanabilirsiniz:  
+ Nesne dosyası F.obj türüne ve sembol bilgilerini WINDOWS.h ve ETC.h (ve içerdikleri diğer üst bilgi dosyaları) içerir. Artık G.cpp kaynak dosyasını derlemek için önceden derlenmiş üst bilgi ETC.pch kullanabilirsiniz:  
   
 ```  
 CL /YuETC.H /Z7 G.CPP  
 ```  
   
- Nesne dosyası G.obj önceden derlenmiş üst bilgi için hata ayıklama bilgilerini içermez ancak yalnızca bu bilgileri F.obj dosyasına başvuruyor. F.obj dosyasıyla bağlamanız gerekir unutmayın.  
+ G.obj nesne dosyası önceden derlenmiş üst bilgi için hata ayıklama bilgisi içermez, ancak yalnızca bu bilgileri F.obj başvuruyor. F.obj dosyayla bağlantı unutmayın.  
   
- Önceden derlenmiş üstbilgi ile derlenmemiş varsa **/Z7**, bunu kullanarak sonraki derlemeleri içinde kullanmaya devam edebilirsiniz **/Z7**. Ancak, geçerli nesne dosyasında hata ayıklama bilgileri yerleştirilir ve işlevleri ve önceden derlenmiş üst bilgi tanımlanan türler için yerel semboller hata ayıklayıcısı için kullanılabilir değil.  
+ Varsa, önceden derlenmiş üst bilgi ile derlenmemiş **/z7**, onu kullanarak sonraki derlemelerde kullanmaya devam edebilirsiniz **/z7**. Ancak, hata ayıklama bilgileri geçerli nesne dosyasında yerleştirilir ve işlevleri ve derlenmiş üstbilgide tanımlanan türleri için yerel semboller hata ayıklayıcısı için kullanılabilir değil.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   

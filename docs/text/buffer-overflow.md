@@ -12,16 +12,16 @@ helpviewer_keywords:
 - buffer overflows [C++]
 - MBCS [C++], buffer overflow
 ms.assetid: f2b7e40a-f02b-46d8-a449-51d26fc0c663
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bb362be360986371200c8cde292b3fff5acd7cd
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 11a3da883dae4d292a55eb2537fd98609404b5a9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020193"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609518"
 ---
 # <a name="buffer-overflow"></a>Arabellek Taşması
 Karakter boyutları değişen bir arabelleğe karakter yerleştirdiğinizde sorunlara neden olabilir. Karakterleri bir dizeden kopyalar, aşağıdaki kodu düşünün `sz`, bir arabelleğine `rgch`:  

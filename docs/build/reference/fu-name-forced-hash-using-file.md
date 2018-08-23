@@ -1,5 +1,5 @@
 ---
-title: '-FU (adı zorlanmış #using) | Microsoft Docs'
+title: '-FU (zorlanan adı #using) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,15 +20,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c9a27d8c689b198bde47047969d38cf14b41c46
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a92e8d30d2c15ac07bc5a6ff3e6438da46438674
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375681"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597507"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU (Zorlanan #using Dosyasını Adlandır)
-Bir dosya adıyla geçirme alternatif olarak kullanabileceğiniz bir derleyici seçeneği [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md) kaynak kodunda.  
+Alternatif dosya adı olarak kullanabileceğiniz bir derleyici seçeneği [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md) kaynak kodundaki.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -38,18 +38,18 @@ Bir dosya adıyla geçirme alternatif olarak kullanabileceğiniz bir derleyici s
   
 ## <a name="arguments"></a>Arguments  
  `file`  
- Bu derlemede başvurmak için meta veri dosyası belirtir.  
+ Bu derlemeye başvurmak için meta veri dosyası belirtir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- /FU anahtar yalnızca bir dosya adı alır. Birden çok dosya belirtmek için her birinde /FU kullanın.  
+ /FU anahtarı yalnızca bir dosya adı alır. Birden çok dosyayı belirtmek için her biri ile /FU kullanın.  
   
- Kullanıyorsanız [!INCLUDE[cppcli](../../build/reference/includes/cppcli_md.md)] ve kullanmak için meta veri başvuran [arkadaş derlemeleri](../../dotnet/friend-assemblies-cpp.md) özelliğini kullanamaz **/FU**. Kullanarak kodda metadata başvurmalıdır `#using`— ile birlikte `[as friend]` özniteliği. Arkadaş derlemeleri desteklenmez [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]).  
+ C + kullanıyorsanız +/ CLI ve kullanmak için meta verileri başvuru [arkadaş derlemeleri](../../dotnet/friend-assemblies-cpp.md) özelliğini kullanamaz **/FU**. Kullanarak kod meta verilerde başvurmalıdır `#using`— ile birlikte `[as friend]` özniteliği. Arkadaş derlemeleri desteklenmez Visual C++ bileşeni uzantılarında C + +/ CX.  
   
- Bir derlemeyi ya da ortak dil çalışma zamanı (CLR) için modülü oluşturma hakkında daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). Yapı içinde hakkında bilgi için [!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)], bkz: [uygulamaları ve kitaplıkları derleme](../../cppcx/building-apps-and-libraries-c-cx.md).  
+ Bir derleme veya modül için ortak dil çalışma zamanı (CLR) oluşturma hakkında daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). C + oluşturma hakkında daha fazla bilgi için +/ CX'deki bkz [uygulamaları ve kitaplıkları oluşturmak](../../cppcx/building-apps-and-libraries-c-cx.md).  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **C/C++** klasör.  
   

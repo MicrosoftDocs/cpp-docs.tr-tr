@@ -16,26 +16,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6fda61fcaace9df1df69317149c719a716c6da6
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 759ed60206ef9cb68ea2b0f502c1241c9ce5b6cd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012159"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602979"
 ---
 # <a name="inserting-a-new-menu-between-existing-menus"></a>Varolan Menülerin Arasına Yeni Menü Ekleme
-### <a name="to-insert-a-new-menu-between-existing-menus"></a>Mevcut menülerin arasına yeni menü eklemek için  
-  
-1.  Var olan bir menü adı ve ENTER tuşuna seçin **Ekle** anahtarı. **Yeni öğe** kutusu önce seçilen öğe eklenir.  
-  
-     \- veya -  
-  
-2.  Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Menü Düzenleyicisi](../windows/menu-editor.md)   
+
+### <a name="to-insert-a-new-menu-between-existing-menus"></a>Mevcut menülerin arasına yeni menü eklemek için
+
+1. Var olan bir menü adı ve ENTER tuşuna seçin **Ekle** anahtarı. **Yeni öğe** kutusu önce seçilen öğe eklenir.
+
+   \- veya -
+
+2. Menü çubuğunda sağ tıklatın ve seçin **yeni Ekle** kısayol menüsünden.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Menü Düzenleyicisi](../windows/menu-editor.md)  

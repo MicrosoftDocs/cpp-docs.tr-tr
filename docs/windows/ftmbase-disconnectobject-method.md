@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0bb6b6be87736d55eabc6b487101ec68fc16e378
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: b467162d2f5cc5b04bc43a6d31019eb08e17e750
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646146"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595412"
 ---
 # <a name="ftmbasedisconnectobject-method"></a>FtmBase::DisconnectObject Yöntemi
-Zorla tüm dış bağlantılar kurulmasına nesnenin serbest bırakır. Nesnenin sunucu nesnenin uygulaması kapatmadan önce bu yöntemi çağırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHODIMP DisconnectObject(  
-   __in DWORD dwReserved  
-) override;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *dwReserved*  
- Gelecekte kullanılmak üzere ayrılmış; sıfır olmalıdır.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase Sınıfı](../windows/ftmbase-class.md)
+
+Zorla tüm dış bağlantılar kurulmasına nesnenin serbest bırakır. Nesnenin sunucu nesnenin uygulaması kapatmadan önce bu yöntemi çağırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHODIMP DisconnectObject(
+   __in DWORD dwReserved
+) override;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*dwReserved*  
+Gelecekte kullanılmak üzere ayrılmış; sıfır olmalıdır.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[FtmBase Sınıfı](../windows/ftmbase-class.md)

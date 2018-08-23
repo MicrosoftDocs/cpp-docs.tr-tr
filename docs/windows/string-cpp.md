@@ -17,55 +17,59 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 459f786863f7d10797008b87e276afb0c95e184a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: eb3a57cec78c0ea02e16edd890d2a66362bfc011
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020092"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594875"
 ---
 # <a name="string-c"></a>string (C++)
-Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[string]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Dize** C++ özniteliği ile aynı işlevlere sahip [dize](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL özniteliği.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod nasıl kullanılacağını gösterir **dize** bir arabirimde ve bir tür tanımı:  
-  
-```cpp  
-// cpp_attr_ref_string.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="ATLFIRELib")];  
-[export, string] typedef char a[21];  
-[dispinterface, restricted, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface IFireTabCtrl  
-{  
-   [id(1)] HRESULT Method3([in, string] char *pC);  
-};  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Dizi veya işaretçiyi bir dizi, arabirimi parametreyi, arabirim yöntemi|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Dizi öznitelikleri](../windows/array-attributes.md)   
- [export](../windows/export.md)   
+
+Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[string]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Dize** C++ özniteliği ile aynı işlevlere sahip [dize](http://msdn.microsoft.com/library/windows/desktop/aa367270) MIDL özniteliği.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod nasıl kullanılacağını gösterir **dize** bir arabirimde ve bir tür tanımı:
+
+```cpp
+// cpp_attr_ref_string.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="ATLFIRELib")];
+[export, string] typedef char a[21];
+[dispinterface, restricted, uuid("00000000-0000-0000-0000-000000000001")]
+__interface IFireTabCtrl
+{
+   [id(1)] HRESULT Method3([in, string] char *pC);
+};
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Dizi veya işaretçiyi bir dizi, arabirimi parametreyi, arabirim yöntemi|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Dizi Öznitelikleri](../windows/array-attributes.md)  
+[export](../windows/export.md)  

@@ -17,36 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d6adf747fd7612c2bcaa0964f91ecb585bbfbef0
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 1f127b8435f934e5cf203de2aaa6f2d0c3a58d13
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018058"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603076"
 ---
 # <a name="weakreferencesetunknown-method"></a>WeakReference::SetUnknown Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void SetUnknown(  
-   _In_ IUnknown* unk  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *UNK*  
- Bir işaretçi `IUnknown` bir nesnenin arabirimi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Güçlü Başvuru geçerli ayarlar **WeakReference** belirtilen arabirim işaretçisini için nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void SetUnknown(
+   _In_ IUnknown* unk
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*UNK*  
+Bir işaretçi `IUnknown` bir nesnenin arabirimi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Güçlü Başvuru geçerli ayarlar **WeakReference** belirtilen arabirim işaretçisini için nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
 ## <a name="see-also"></a>Ayrıca Bkz.
- [WeakReference sınıfı](../windows/weakreference-class1.md)  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+[WeakReference sınıfı](../windows/weakreference-class1.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

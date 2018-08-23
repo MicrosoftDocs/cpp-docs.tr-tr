@@ -15,16 +15,16 @@ helpviewer_keywords:
 - character sets [C++], Unicode
 - localization [C++], character sets
 - Unicode [C++], installing support
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53c71e1efad109daea689725ebbbb7dd9b100d30
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 6b4f83d4d991b55ec7151db22a9b21424914bd04
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020180"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590201"
 ---
 # <a name="support-for-unicode"></a>Unicode Desteği
 

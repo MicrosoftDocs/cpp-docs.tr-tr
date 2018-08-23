@@ -5,36 +5,36 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 3ad43894-c574-477c-ad3e-240301f381d4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ddefed444c447fbfd300a656c36be45899177b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ff2fc36582e6ffbff8f7608a5a26cc472687132e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090266"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598096"
 ---
 # <a name="wrl-integration-ccx"></a>WRL tümleştirme (C + +/ CX)
 
-WRL koduyla serbestçe karıştırabilirsiniz [!INCLUDE[cppwrl](includes/cppwrl-md.md)] ([!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)]) kodu. Aynı çeviri biriminde WRL tanıtıcı-için-nesnesiyle bildirilen nesneleri kullanabilirsiniz (`^`) gösterimi ve [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] akıllı işaretçisi (`ComPtr<T>`) gösterimi. Ancak, el ile dönüş değerleri işlemesi gerekir ve [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] HRESULT hata kodları ve WRL özel durumları.
+Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kod WRL koduyla serbestçe karıştırabilirsiniz. WRL tanıtıcı nesne ile bildirilen nesneler aynı çeviri biriminde kullanabilirsiniz (`^`) Akıllı işaretçi gösterimini ve WRL (`ComPtr<T>`) gösterimi. Ancak, el ile dönüş değerleri ve WRL HRESULT hata kodları ve WRL özel durumlarını işlemelidir.
   
-## <a name="includecppwrlshortincludescppwrl-short-mdmd-development"></a>[!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] Geliştirme
+## <a name="wrl-development"></a>WRL geliştirme
 
-Geliştirme ve kullanma hakkında daha fazla bilgi için [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] bileşenleri bkz [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
+Yazma ve WRL bileşenlerinin kullanma hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
 
 ### <a name="example"></a>Örnek
 
-Aşağıdaki kod parçacığını WRL kullanarak gösterir ve [!INCLUDE[cppwrl_short](includes/cppwrl-short-md.md)] tüketmeye [!INCLUDE[wrt](includes/wrt-md.md)] sınıfları ve meta veri dosyasını inceleyin.
+Aşağıdaki kod parçacığı, Windows çalışma zamanı sınıflar kullanma ve bir meta veri dosyasını incelemek için WRL ve WRL'ı kullanmayı gösterir.
 
-Örnek kod parçacığını yapı Microsoft deposu apps Forumunda alınır. Bu kod parçacığını yazarı aşağıdaki bildirimler ve stipulations sunar:
+Örnek bir kod parçacığı oluşturma Microsoft Store uygulamaları forumdaki alınır. Bu kod parçacığı yazarının, aşağıdaki sorumluluk reddi ve stipulations sunar:
 
-1. C++ yansıtacak şekilde belirli API'leri sunmaz [!INCLUDE[wrt](includes/wrt-md.md)] türleri, ancak Windows meta veri dosyaları (.winmd) bir tür için CLR meta veri dosyaları ile tamamen uyumlu. Windows sağlayan yeni meta veri bulma API'leri için belirli bir türde .winmd dosyasına almak için (RoGetMetaDataFile). Ancak, bir sınıfın örneği oluşturulamıyor için bu API'leri C++ geliştiricilere sınırlı kullanım durumdadır.
+1. C++ Windows çalışma zamanı türlerini yansıtacak şekilde belirli API'lar sağlamaz, ancak Windows meta veri (.winmd) bir tür için CLR meta veri dosyaları ile tamamen uyumlu dosyalarıdır. Windows sağlayan yeni meta veri bulma API'ları (RoGetMetaDataFile verilen tür için .winmd dosyası almak için). Ancak, bir sınıfın örneği oluşturulamıyor çünkü bu API'leri sınırlı kullanım C++ geliştiricileri için uygulanır.
 
-1. Derlenmiş kod sonra Runtimeobject.lib ve Rometadata.lib bağlayıcıya geçmesi gerekir.
+1. Kod derlendikten sonra Runtimeobject.lib ve Rometadata.lib bağlayıcıya geçmesi gerekir.
 
-1. Bu kod parçası olarak sunulan-değil. Doğru çalışması için beklenen olsa da, büyük olasılıkla hataları içerebilir.
+1. Bu kod parçacığı olarak sunulan-olduğu. Düzgün çalışması beklenir, ancak muhtemelen hataları içerebilir.
 
 ```cpp
 #include <hstring.h>
@@ -120,4 +120,4 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Diğer dilleri ile birlikte çalışma](interoperating-with-other-languages-c-cx.md)  
+[Diğer dillerle birlikte çalışma](interoperating-with-other-languages-c-cx.md)  

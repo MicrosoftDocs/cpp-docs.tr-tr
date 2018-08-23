@@ -16,27 +16,30 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0404c11def5ac70c9020adc28309b7c12aa1cf67
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5d96c68f7800a0819ea150ab970a6a84e6ee8ee0
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017479"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592038"
 ---
 # <a name="removing-space-between-buttons-on-a-toolbar"></a>Araç Çubuğundaki Düğmeler Arasındaki Boşluğu Kaldırma
-Aşağıdaki yordamı, araç çubuğundaki düğmeler arasına boşluk kaldırma işlemini göstermektedir.  
-  
-### <a name="to-remove-a-space-between-buttons-on-a-toolbar"></a>Araç çubuğundaki düğmeler arasına boşluk kaldırmak için  
-  
-1.  Kadar olan sürenin yarısına ulaşıldığında hakkında İleri düğmesine çakışıyor düğmeyi bir düğmeyi diğer tarafta doğru alanı alanı tarafında sürükleyin.  
-  
-     Liste kutusundan sürükleyerek düğmeyi kenarındaki boşluk olmaması ve düğmeyi birden fazla bitişik düğmesi, son yarısı sürükleyin **araç** Düzenleyicisi de diğer tarafında boşluk olduğunuz düğmenin ekler sürükleme.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- MFC veya ATL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri](../windows/creating-moving-and-editing-toolbar-buttons.md)   
- [Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)
+
+Aşağıdaki yordamı, araç çubuğundaki düğmeler arasına boşluk kaldırma işlemini göstermektedir.
+
+### <a name="to-remove-a-space-between-buttons-on-a-toolbar"></a>Araç çubuğundaki düğmeler arasına boşluk kaldırmak için
+
+1. Kadar olan sürenin yarısına ulaşıldığında hakkında İleri düğmesine çakışıyor düğmeyi bir düğmeyi diğer tarafta doğru alanı alanı tarafında sürükleyin.
+
+   Liste kutusundan sürükleyerek düğmeyi kenarındaki boşluk olmaması ve düğmeyi birden fazla bitişik düğmesi, son yarısı sürükleyin **araç** Düzenleyicisi de diğer tarafında boşluk olduğunuz düğmenin ekler sürükleme.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+MFC veya ATL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme](../windows/creating-moving-and-editing-toolbar-buttons.md)  
+[Araç Çubuğu Düzenleyicisi](../windows/toolbar-editor.md)

@@ -9,19 +9,19 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 21d0bf92-fac4-48cd-9108-c6f57ba1196a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66006281bfc4a29bd1acc2bc360b6f3c08f5ac8b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 915b2e0c15d3afb3f040b59c22b2de40af2aabb5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087154"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597774"
 ---
-# <a name="defaulttypenamegettype-method"></a>Varsayılan:: (type_name):: GetType yöntemi
-Bir Platform::Type döndürür ^, geçerli türünü temsil eder.  
+# <a name="defaulttypenamegettype-method"></a>Varsayılan:: (type_name):: GetType metodu
+Döndürür bir Platform::Type ^, geçerli türü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,7 +36,7 @@ Platform::Type^ GetType()
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
  **Namespace:** varsayılan  
   

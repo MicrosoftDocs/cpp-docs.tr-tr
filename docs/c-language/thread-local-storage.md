@@ -18,36 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c98cca6afb096cc9b5e88fe31aa949621d326c98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 35f651e7f6f35ceca02003ef24ccda98ada6f6c1
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390030"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596990"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İş parçacığı yerel depolaması (TLS) verilen birden çok iş parçacıklı işlemdeki her bir iş parçacığı için iş parçacığına özgü veri depolama ayırır mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacığı kapsamlı bir açıklama için bkz: [işlemleri ve iş parçacıklarını](http://msdn.microsoft.com/library/windows/desktop/ms684841) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+ İş parçacığı yerel depolaması (TLS) verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığı için iş parçacığına özgü veri depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacıklarını tam bir açıklaması için bkz: [işlemleri ve iş parçacıklarını](http://msdn.microsoft.com/library/windows/desktop/ms684841) Windows SDK.  
   
- Microsoft C Dili Genişletilmiş depolama sınıfı öznitelik __declspec anahtar sözcüğü ile bir iş parçacığı yerel değişken bildirmek için kullanılan iş parçacığı içerir. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişken bildirir ve bir değerle başlatır:  
+ Microsoft C dili, genişletilmiş depolama sınıfı özniteliği, __declspec anahtar sözcüğü ile bir iş parçacığı yerel değişkenini bildirmek için kullanılan iş parçacığı içerir. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bir değer ile başlatır:  
   
 ```  
 __declspec( thread ) int tls_i = 1;  
 ```  
   
- Bu yönergeler, yerel değişkenleri statik olarak bağlı iş parçacığı bildirme uyulması gerekir:  
+ Bu yönergeleri, yerel değişkenleri statik olarak bağlı bir iş parçacığı bildirme uyulması gerekir:  
   
--   Dinamik başlatma sahip iş parçacığı yerel değişkenleri yalnızca DLL'yi yükleme iş parçacığı ve zaten işlemde çalışan iş parçacıklarının başlatılır. Daha fazla bilgi için bkz: [iş parçacığı](../cpp/thread.md).  
+-   Dinamik olarak başlatılması sahip iş parçacığı yerel değişkenleri yalnızca DLL'yi yüklemek iş parçacığı ve işlemin çalışmakta olan iş parçacığı başlatılır. Daha fazla bilgi için [iş parçacığı](../cpp/thread.md).  
   
--   İş parçacığı özniteliği yalnızca veri bildirimler ve tanımlar uygulayabilirsiniz. İşlev bildirimleri veya tanımlarında kullanılamaz. Örneğin, aşağıdaki kod derleyici hatası oluşturur:  
+-   İş parçacığı özniteliği, sadece veri bildirimlerine ve tanımlarına uygulayabilirsiniz. İşlev bildirimlerinde veya tanımlarında kullanılamaz. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:  
   
     ```  
     #define Thread   __declspec( thread )  
     Thread void func();      /* Error */  
     ```  
   
--   İş parçacığı özniteliği yalnızca veri öğeleri statik depolama süresi ile belirtebilirsiniz. Bu, genel verileri (statik ve extern) ve yerel statik verileri içerir. İş parçacığı özniteliği olan otomatik veri bildiremezsiniz. Örneğin, aşağıdaki kod derleyici hataları üretir:  
+-   İş parçacığı özniteliği yalnızca statik depolama süresine sahip veri öğelerini belirtebilirsiniz. Bu, genel verileri (statik ve extern) ve yerel statik veriler içerir. İş parçacığı özniteliği ile otomatik veri bildiremezsiniz. Örneğin, aşağıdaki kod derleyici hataları oluşturur:  
   
     ```  
     #define Thread   __declspec( thread )  
@@ -62,7 +62,7 @@ __declspec( thread ) int tls_i = 1;
     }  
     ```  
   
--   Bildirim ve aynı dosya veya ayrı dosyalar olup bildirim ve tanımı meydana bağımsız olarak iş parçacığı yerel veriler tanımı için iş parçacığı özniteliği kullanmanız gerekir. Örneğin, aşağıdaki kodu bir hata oluşturur:  
+-   İş parçacığı özniteliği bildirimi ve tanımı olup aynı dosya veya ayrı dosyalarda bildirimi ve tanımı ortaya bağımsız olarak iş parçacığı yerel veri için kullanmanız gerekir. Örneğin, aşağıdaki kod bir hata oluşturur:  
   
     ```  
     #define Thread   __declspec( thread )  
@@ -70,13 +70,13 @@ __declspec( thread ) int tls_i = 1;
     int Thread tls_i;     /* declaration and the definition differ. */  
     ```  
   
--   İş parçacığı özniteliği bir tür değiştiricisi olarak kullanamazsınız. Örneğin, aşağıdaki kod derleyici hatası oluşturur:  
+-   İş parçacığı özniteliğini tür değiştiricisi olarak kullanamazsınız. Örneğin, aşağıdaki kod bir derleyici hatası oluşturur:  
   
     ```  
     char *ch __declspec( thread );      /* Error */  
     ```  
   
--   İş parçacığı yerel değişken adresini sürekli olarak kabul edilmez ve böyle bir adres içeren herhangi bir ifade sabit bir ifade olarak kabul edilmez. Başka bir deyişle, bir iş parçacığı yerel değişken adresi için bir işaretçi bir başlatıcı olarak kullanamazsınız. Örneğin, derleyici aşağıdaki kod hata olarak işaretler:  
+-   İş parçacığı yerel değişkenin adresi sabit olarak kabul edilmez ve böyle bir adres içeren herhangi bir ifade sabit bir ifade olarak kabul edilmez. Bu, iş parçacığı yerel değişkenin adresi için bir işaretçi bir başlatıcı olarak kullanamayacağınız anlamına gelir. Örneğin, derleyici aşağıdaki kodu hata olarak işaretler:  
   
     ```  
     #define Thread   __declspec( thread )  
@@ -84,7 +84,7 @@ __declspec( thread ) int tls_i = 1;
     int *p = &tls_i;      /* Error */  
     ```  
   
--   C başlatma bir değişkenin kendisine, ancak yalnızca statik olmayan uzantı nesneleri için bir başvuru içeren bir ifade ile verir. Örneğin:  
+-   C kendisi, ancak yalnızca statik olmayan uzantı nesneleri için bir başvuru içeren bir ifadeyle bir değişkenin başlatılması izin verir. Örneğin:  
   
     ```  
     #define Thread   __declspec( thread )  
@@ -93,13 +93,13 @@ __declspec( thread ) int tls_i = 1;
     Thread int tls_i = sizeof( tls_i )    /* Okay  */  
     ```  
   
-     Başlatılmakta değişkeni içeren bir sizeof ifadesi kendisine bir başvuru niteliğinde değildir ve izin unutmayın.  
+     Başlatılmakta değişkeni içeren bir sizeof ifadesi kendisine bir başvuru oluşturmadığına ve izin unutmayın.  
   
--   Kullanımını **__declspec(thread)** ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL'SİNİN alır **.**  
+-   Kullanımını **gt;__declspec(thread)** ile etkileyebilir [gecikme yükleme](../build/reference/linker-support-for-delay-loaded-dlls.md) DLL içe aktarma **.**  
   
- İş parçacığı özniteliğini kullanma hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
+ İş parçacığı özniteliği kullanma hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı konuları](../parallel/multithreading-support-for-older-code-visual-cpp.md).  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C Genişletilmiş Depolama Sınıfı Öznitelikler](../c-language/c-extended-storage-class-attributes.md)

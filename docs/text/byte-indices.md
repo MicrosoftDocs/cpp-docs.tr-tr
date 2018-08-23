@@ -11,28 +11,28 @@ helpviewer_keywords:
 - MBCS [C++], byte indices
 - byte indices [C++]
 ms.assetid: f6e7774a-86c6-41c2-89e3-74fd46432e47
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509e66c7ea458519eaa9dc4f52c8a6b65c789d0f
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 5beb69ef7d9d3356eddef40c6bce6483079d934a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33863806"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590806"
 ---
 # <a name="byte-indices"></a>Bayt Endeksleri
 Aşağıdaki ipuçlarını kullanın:  
   
--   Bir dizede dizini ile çalışma bir dizeye işaretçi işleme tarafından teşkil benzer sorunları gösterir. Bu örnekte, bir dizesi bir ters eğik çizgi karakteri tarar göz önünde bulundurun:  
+-   Bir dizede dizini çalışmak bir dizeye işaretçi düzenlenmesiyle teşkil benzer sorunları gösterir. Bu örnekte, bir dize bir ters eğik çizgi karakteri tarar göz önünde bulundurun:  
   
     ```  
     while ( rgch[ i ] != '\\' )  
         i++;  
     ```  
   
-     Bu izi byte, bir ön bayt dizin ve böylece öğesine işaret değil bir `character`.  
+     Bu, bir bayt, bir ön bayt dizin ve bu nedenle onu işaret değil bir `character`.  
   
 -   Kullanım [_mbclen](../c-runtime-library/reference/mbclen-mblen-mblen-l.md) işlevi önceki sorunu çözmek için:  
   
@@ -41,7 +41,7 @@ Aşağıdaki ipuçlarını kullanın:
         i += _mbclen ( rgch + i );  
     ```  
   
-     Bu ön bayt için bu nedenle doğru dizinler için bir `character`. `_mbclen` İşlevi bir karakter (1 veya 2 bayt) boyutunu belirler.  
+     Bu ön bayt için bu nedenle doğru dizinler için bir `character`. `_mbclen` İşlevi, bir karakter (1 veya 2 bayt) boyutunu belirler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   

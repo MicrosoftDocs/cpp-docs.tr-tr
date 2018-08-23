@@ -21,15 +21,14 @@ ms.assetid: 1e2f0ae3-ae98-4410-85b5-222d6abc865a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 133cbb01ba54ccc8bc0ce0c31b5d7b4436c2488d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 8aaf699f2130c94729b8db9cc21dd17b9699d66c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403056"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606464"
 ---
 # <a name="extern-c"></a>extern (C++)
 

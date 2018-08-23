@@ -25,27 +25,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d87f95b456e3f99598f48e6ffa8ad29806aa168
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 7909884a355ccad5e1bf9d18a38dd3e4690296ee
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33862283"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42587513"
 ---
 # <a name="building-an-attributed-program"></a>Öznitelikli Program Derleme
-Visual C++ öznitelikleri kaynak kodunuz yerleştirdiğiniz sonra sizin için bir tür kitaplığı ve .idl dosya oluşturmak için Visual C++ Derleyici isteyebilirsiniz. Aşağıdaki bağlayıcı .tlb ve .idl dosyalarını derleme yardım seçenekleri:  
-  
--   [/ IDLOUT](../build/reference/idlout-name-midl-output-files.md)  
-  
--   [/ IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)  
-  
--   [/ MIDL](../build/reference/midl-specify-midl-command-line-options.md)  
-  
--   [/ TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)  
-  
- Bazı projeleri birden çok bağımsız .idl dosyalarını içerir. Bunlar, iki veya daha fazla .tlb dosyaları üretmek ve isteğe bağlı olarak bunları kaynak bloğuna bağlamak için kullanılır. Bu senaryo, Visual C++'da şu anda desteklenmiyor.  
-  
- Ayrıca, Visual C++ bağlayıcı tüm öznitelik IDL ilgili bilgileri tek bir MIDL dosyasına çıkarır. İki tür kitaplıklarının tek bir proje oluşturmak mümkün olacaktır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../windows/attributed-programming-concepts.md)
+
+Kaynak kodunuza Visual C++ öznitelikleri geçirdikten sonra sizin için bir tür kitaplığı ve .idl dosyası oluşturmak için Visual C++ derleyicisi isteyebilirsiniz. Aşağıdaki bağlayıcı Yardım .tlb ve .idl dosyalarını derleme seçenekleri:
+
+- [/ IDLOUT](../build/reference/idlout-name-midl-output-files.md)
+
+- [/ IGNOREIDL](../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+
+- [/ MIDL](../build/reference/midl-specify-midl-command-line-options.md)
+
+- [/ TLBOUT](../build/reference/tlbout-name-dot-tlb-file.md)
+
+Bazı projeler, birden çok bağımsız .idl dosyaları içerir. Bunlar, iki veya daha fazla .tlb dosyaları oluşturur ve isteğe bağlı olarak bunları kaynak bloğu içine bağlamak için kullanılır. Bu senaryo, Visual C++'da şu anda desteklenmiyor.
+
+Ayrıca, Visual C++ bağlayıcı tüm öznitelik IDL ile ilgili bilgileri tek bir MIDL dosyasına çıkarır. İki tür kitaplıklarının tek bir projeden oluşturmak olanaksız olacaktır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../windows/attributed-programming-concepts.md)

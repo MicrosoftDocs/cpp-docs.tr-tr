@@ -15,27 +15,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f172eea3108771e129636e9aa95d721d45c99609
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b35675ba0081ec4ea7a1c9559f9a8fb71347cd54
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168652"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42583825"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
-Dinamik bağlantı kitaplıklarını (DLL'ler) paketlenmiş genişletilmiş saklı yordamlar Visual C++ ile geliştirilmiş işlevler aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar DLL'ler içinde işlevler olarak uygulanır. İşlevler ek olarak, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevlerinin](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  
+Genişletilmiş saklı yordamlar, dinamik bağlantı kitaplıkları (DLL'ler), paketlenmiş işlevleri Visual C++ ile geliştirilmiş aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar, DLL'leri iç işlev olarak uygulanır. Ek İşlevler, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevleri](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  
   
- Bir istemci bir genişletilmiş saklı yordamı yürütüldüğünde, DLL için SQL Server aramaları genişletilmiş saklı yordamı ile ilişkili ve DLL'yi yükler. SQL Server istenen genişletilmiş saklı yordamı çağırır ve belirtilen güvenlik bağlamı altında çalışır. Geçişleri sonuç ayarlar ve parametreleri sunucuya geri döndürür genişletilmiş saklı yordamı.  
+ Bir istemci bir genişletilmiş saklı yordamı yürütüldüğünde, SQL Server aramaları DLL için genişletilmiş saklı yordamı ile ilişkili ve DLL'yi yükler. SQL Server, istenen genişletilmiş saklı yordam çağrıları ve belirtilen güvenlik bağlamı altında çalışır. Geçişleri sonucu ayarlar ve parametreler sunucuya geri döndürür genişletilmiş saklı yordamı.  
   
- [!INCLUDE[sqprsqlong](../dotnet/includes/sqprsqlong_md.md)] Transact-SQL (SQL Server'a doğrulanabilen derlemeler yükleme olanak tanımak için T-SQL) uzantıları sağlar. SQL Server izin kümesi güvenlik bağlamı aşağıdaki güvenlik düzeylerini belirtir:  
+ SQL Server Transact-SQL (SQL Server ile doğrulanabilen derlemeler yüklemek, izin vermek için T-SQL) uzantıları sağlar. SQL Server izin kümesi, aşağıdaki güvenlik düzeyleri ile güvenlik bağlamını belirtir:  
   
--   Kısıtlanmamış mod: kendi sorumluluğunuzdadır; kodu çalıştırma kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.  
+-   Kısıtlanmamış modu: kendi sorumluluğunuzdadır; kod çalıştırma kod doğrulanabilir şekilde tür kullanımı uyumlu olması gerekmez.  
   
 -   Güvenli mod: doğrulanabilir şekilde typesafe kodunu çalıştırın / CLR: safe ile derlenmiş.  
   
- Güvenli mod doğrulanabilir typesafe olması için yürütülen derlemeler gerektirir.  
+ Güvenli mod yürütülen derlemeler doğrulanabilir şekilde uyumlu olmasını gerektirir.  
   
- Oluşturmak ve SQL Server'a doğrulanabilir bir derleme yüklemek için aşağıdaki gibi derleme oluştur ve DROP ASSEMBLY Transact-SQL komutlarını kullanın:  
+ Oluşturma ve doğrulanabilir bir derleme SQL Server'a yükleme hakkında bilgi için CREATE ASSEMBLY ve DROP ASSEMBLY Transact-SQL komutlarını şu şekilde kullanın:  
   
 ```  
 CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH   
@@ -43,9 +43,9 @@ CREATE ASSEMBLY <assemblyName> FROM <'Assembly UNC Path'> WITH
 DROP ASSEMBLY <assemblyName>  
 ```  
   
- Permıssıon_set komutu güvenlik bağlamını belirtir ve KISITLAMASIZ, güvenli veya genişletilmiş değerlere sahip olabilir.  
+ Permıssıon_set komut güvenlik bağlamını belirtir ve SINIRSIZ, güvenli ve genişletilmiş değerlere sahip olabilir.  
   
- Ayrıca, bir sınıf yöntemi adlarında bağlamak için CREATE FUNCTION komutunu kullanabilirsiniz:  
+ Ayrıca, bir sınıf, yöntem adları bağlamak için CREATE FUNCTION komutunu kullanabilirsiniz:  
   
 ```  
 CREATE FUNCTION <FunctionName>(<FunctionParams>)  
@@ -54,7 +54,7 @@ RETURNS returnType
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki SQL betiğini (örneğin, "MyScript.sql" adındaki) SQL Server'a bir derleme yükler ve bir sınıfın bir yöntem kullanılabilir hale getirir:  
+ Aşağıdaki SQL betiğini (örneğin, adlandırılmış "MyScript.sql"), SQL Server içinde bir derlemeyi yükler ve bir sınıfın bir yöntem kullanılabilir hale getirir:  
   
 ```  
 -- Create assembly without external access  
@@ -78,7 +78,7 @@ select dbo.GetQuoteNoEA('MSFT')
 go  
 ```  
   
- SQL komut dosyaları SQL Query Analyzer'da veya sqlcmd.exe yardımcı programı ile komut satırında etkileşimli olarak çalıştırılabilir. Aşağıdaki komut satırını için MyServer bağlanır, varsayılan veritabanı kullanan, güvenilen bir bağlantı, MyScript.sql girdileri ve MyResult.txt çıkarır.  
+ SQL betikleri SQL Query Analyzer veya sqlcmd.exe yardımcı programını komut satırından etkileşimli olarak çalıştırılabilir. Aşağıdaki komut satırı için MyServer bağlanır, varsayılan veritabanı kullanır, güvenilir bir bağlantı kullanır, MyScript.sql girdileri ve MyResult.txt çıkarır.  
   
 ```  
 sqlcmd -S MyServer -E -i myScript.sql -o myResult.txt  

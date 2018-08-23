@@ -1,5 +1,5 @@
 ---
-title: Platform::details::HeapAllocationTrackingLevel numaralandırma | Microsoft Docs
+title: 'Platform::details:: heapallocationtrackinglevel numaralandırması | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Details::HeapAllocationTrackingLevel Enumeration
 ms.assetid: dc341bc0-b47b-4eb2-9445-fbaf788e7b1a
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc1c3dd382604e51f049ac157faba38e0d7d0032
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d80a91c8dcca5b2b66f0225a39c3cb208656b46c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086934"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593854"
 ---
-# <a name="platformdetailsheapallocationtrackinglevel-enumeration"></a>Platform::details::HeapAllocationTrackingLevel numaralandırması
-Bu numaralandırma, yalnızca dahili kullanım içindir ve geliştirme için kullanılmak üzere tasarlanmamıştır.  
+# <a name="platformdetailsheapallocationtrackinglevel-enumeration"></a>Platform::details:: heapallocationtrackinglevel numaralandırması
+Bu sabit listesi, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,13 +33,13 @@ enumm class HeapAllocationTrackingLevel;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu numaralandırma tarayıcılarla Denetlenmekte olduğundan yalnızca bütünlük açısından sağlanır.  
+ Tarayıcılarla inceledi çünkü bu sabit listesi yalnızca bütünlük açısından sağlanır.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Platform`  
   
 ### <a name="requirements"></a>Gereksinimler  
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
  **Namespace:** Platform::Details  
   

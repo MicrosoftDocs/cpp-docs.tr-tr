@@ -21,52 +21,53 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 480839316cc8d47b2af4be1cd81c0d02f09fad25
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 0223e342bf2312919247d42564445a9e116ca59b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688875"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607401"
 ---
 # <a name="multithreading-creating-user-interface-threads"></a>Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma
-Bir kullanıcı arabirimi iş parçacığı kullanıcı girişini işlemek ve diğer uygulama bölümlerini çalışan iş parçacıklarının bağımsız olarak kullanıcı olaylarına tepki vermek için yaygın olarak kullanılır. Ana uygulama iş parçacığı (sağlanan, `CWinApp`-türetilmiş sınıf) daha önce oluşturduğunuz ve sizin için başlatıldı. Bu konu, ek kullanıcı arabirimi iş parçacıkları oluşturmak için gereken adımları açıklar.  
+Bir kullanıcı arabirimi iş parçacığı, genellikle kullanıcı girişlerini işler ve uygulamanın diğer kısımlarını çalışan iş parçacıklarının bağımsız olarak kullanıcı olayları yanıtlamak için kullanılır. Ana uygulama iş parçacığı (sağlanan, `CWinApp`-türetilmiş sınıf) zaten oluşturulur ve sizin için başlatıldı. Bu konu, ek kullanıcı arabirimi iş parçacığı oluşturmak gereken adımları açıklar.  
   
- Bir kullanıcı arabirimi iş parçacığı oluşturulurken gerçekleştirmelisiniz ilk şey öğesinden bir sınıf türetin [CWinThread](../mfc/reference/cwinthread-class.md). Bildirme ve bunu uygulamak sınıfı, kullanarak [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) ve [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) makroları. Bu sınıf, bazı işlevleri geçersiz kılmanız gerekir ve diğerlerini geçersiz kılabilir. Aşağıdaki tabloda, bu işlevler ve bunların ne yapması gerektiğini sunulur.  
+Bir kullanıcı arabirimi iş parçacığı oluşturulurken gerçekleştirmelisiniz ilk öğesinden bir sınıf türetin şeydir [CWinThread](../mfc/reference/cwinthread-class.md). Bildirme ve bunu kullanarak sınıf [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) ve [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) makroları. Bu sınıf, bazı işlevler geçersiz kılmanız gerekir ve diğerlerini geçersiz kılabilir. Aşağıdaki tabloda, bu işlevler ve bunların ne yapması gerektiğini sunulur.  
   
 ### <a name="functions-to-override-when-creating-a-user-interface-thread"></a>Bir kullanıcı arabirimi iş parçacığı oluşturulurken geçersiz kılmak için işlevleri  
   
 |İşlev|Amaç|  
 |--------------|-------------|  
 
-|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)| İş parçacığı sonlandırıldığında temizleme işlemi gerçekleştirin. Genellikle geçersiz kılınmaz. |  
-|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)| İş parçacığı örneği başlatma gerçekleştirir. Geçersiz kılınmalıdır. |  
+|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)| İş parçacığı sonlandığında temizleme işlemi gerçekleştirin. Genellikle geçersiz kılındı. |  
+|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)| İş parçacığı örneği başlatma gerçekleştirin. Geçersiz kılınmalıdır. |  
 |[ONIDLE](../mfc/reference/cwinthread-class.md#onidle)| İş parçacığına özgü boşta kalma süresi işlemini gerçekleştirin. Genellikle geçersiz kılınmaz. |  
-|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)| İçin dağıtılan önce iletilerine filtre **TranslateMessage** ve **DispatchMessage**. Genellikle geçersiz kılınmaz. |  
-|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)| İş parçacığının ileti ve komut işleyicileri tarafından oluşturulan işlenmeyen özel durumları kesebilir. Genellikle geçersiz kılınmaz. |  
-|[Çalıştırma](../mfc/reference/cwinthread-class.md#run)| İş parçacığı için işlevi denetleme. İleti Pompalama içerir. Nadiren geçersiz kılındı. |  
+|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)| İletileri için dağıtılmadan önce filtrelemek `TranslateMessage` ve `DispatchMessage`. Genellikle geçersiz kılınmaz. |  
+|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)| İş parçacığının ve ileti işleyici tarafından oluşturulan yakalanamayan özel durum uğratabilir. Genellikle geçersiz kılınmaz. |  
+|[Çalıştırma](../mfc/reference/cwinthread-class.md#run)| Denetleme işlevi iş parçacığı için. İleti pompası içerir. Nadiren geçersiz kılındı. |  
 
   
- MFC sağlayan iki sürümü `AfxBeginThread` parametre aşırı: bir çalışan iş parçacıkları ve bir kullanıcı arabirimi iş parçacıkları veya çalışan iş parçacığı oluşturabilir yalnızca oluşturabilirsiniz. Kullanıcı arabirimi iş parçacığı başlatmak için ikinci aşırı yüklemesini çağırın [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlar:  
+MFC sağlayan iki sürümünü `AfxBeginThread` parametresi aşırı yükleme yoluyla: biri yalnızca bir kullanıcı arabirimi iş parçacıkları veya çalışan iş parçacıkları oluşturabilirsiniz ve bir çalışan iş parçacıkları oluşturabilirsiniz. İkinci aşırı yüklemesi, kullanıcı arabirimi iş parçacığı için çağrı [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlayarak:  
   
--   [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) öğesinden türetilmiş sınıf `CWinThread`.  
+- [RUNTIME_CLASS](../mfc/reference/run-time-object-model-services.md#runtime_class) sınıfından türetilen sınıfın `CWinThread`.  
   
--   (İsteğe bağlı) İstenen öncelik düzeyi. Normal öncelikli varsayılandır. Varolan öncelik düzeyleri hakkında daha fazla bilgi için bkz: [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+- (İsteğe bağlı) İstenen öncelik düzeyi. Varsayılan, normal önceliktir. Kullanılabilir öncelik düzeyleri hakkında daha fazla bilgi için bkz: [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK.  
   
--   (İsteğe bağlı) İş parçacığı için istenen yığın boyutu. Aynı boyut yığın oluşturma iş parçacığı olarak varsayılandır.  
+- (İsteğe bağlı) İş parçacığının istenen yığın boyutu. Oluşturulan iş parçacığıyla aynı boyutta bir yığına varsayılandır.  
   
--   (İsteğe bağlı) **AfxBeginThread'e** askıya alınmış durumda oluşturulacak iş parçacığı istiyorsanız. Varsayılan değer 0'dır veya normal iş parçacığı başlatılamıyor.  
+- (İsteğe bağlı) CREATE_SUSPENDED iş parçacığının askıya alınmış durumda oluşturulmasını istiyorsanız. Varsayılan, 0 veya iş parçacığını normal olarak başlatın.  
   
--   (İsteğe bağlı) İstenen güvenlik öznitelikleri. Üst iş parçacığı aynı erişim varsayılandır. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz: [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)].  
+- (İsteğe bağlı) İstenen güvenlik öznitelikleri. Varsayılan ana iş parçacığıyla aynı erişimdir. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz. [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
   
- `AfxBeginThread` işlerin çoğunu sizin için yapar. Sınıfının yeni bir nesne oluşturur, sağladığınız bilgileri ve çağrıları başlatır [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) iş parçacığının başlatmak için. Denetimleri prosedür boyunca tüm nesneleri düzgün herhangi bir kısmını oluşturma başarısız olması kaldırıldığından emin olmak için yapılır.  
+`AfxBeginThread` işin çoğunu sizin için halleder. Sınıfının yeni bir nesne oluşturur, sağladığınız bilgiler ve çağrı başlatır [CWinThread::CreateThread](../mfc/reference/cwinthread-class.md#createthread) iş parçacığını yürütmeye başlamak için. Denetimleri, tüm nesnelerin düzgün bir şekilde oluşturmayı, herhangi bir bölümü başarısız olması serbest bırakıldığından emin olmak için yordam boyunca gerçekleştirilir.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
--   [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](../parallel/multithreading-terminating-threads.md)  
+- [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](../parallel/multithreading-terminating-threads.md)  
   
--   [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../parallel/multithreading-creating-worker-threads.md)  
+- [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../parallel/multithreading-creating-worker-threads.md)  
   
--   [İşlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
+- [İşlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ 
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

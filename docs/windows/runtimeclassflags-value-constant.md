@@ -17,26 +17,26 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a9deb05bcb38acb157eaefcc392e9906bea6253
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: b64cb5c4e09cd72d96ff0ad7924f6ab5f203b015
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33895742"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605280"
 ---
 # <a name="runtimeclassflagsvalue-constant"></a>RuntimeClassFlags::value Sabiti
-İçeren bir alanın bir [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.  
+İçeren bir alanda bir [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.
   
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
   
-```cpp  
-static const unsigned int value = flags;  
-```  
+```cpp
+static const unsigned int value = flags;
+```
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
+## <a name="requirements"></a>Gereksinimler
+ **Başlık:** implements.h
   
- **Namespace:** Microsoft::WRL  
+ **Namespace:** Microsoft::WRL
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
  [RuntimeClassFlags Yapısı](../windows/runtimeclassflags-structure.md)

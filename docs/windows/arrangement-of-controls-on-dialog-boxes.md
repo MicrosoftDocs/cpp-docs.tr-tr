@@ -17,39 +17,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3414c6856619f602ec21297ebb330e060e98906b
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: d47e3602e151f64fab0a543882c759225410f6dc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645779"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42583573"
 ---
 # <a name="arrangement-of-controls-on-dialog-boxes"></a>İletişim Kutularındaki Denetimlerin Düzenlenmesi
-**İletişim** Düzenleyicisi, hizalama ve denetimleri boyut otomatik düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm **iletişim kutusu Düzenleyicisi** araç çubuğu komutlarını kullanılabilir ayrıca **biçimi** menü ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).  
-  
- İletişim kutuları için Düzen komutların çoğu yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçin ve birden fazla denetim seçildiğinde, seçtiğiniz birinci varsayılan olarak "baskın" denetimidir. Denetimleri ve baskın denetimi seçme hakkında daha fazla bilgi için bkz: [seçerek denetimleri](../windows/selecting-controls.md).  
-  
- Konum, yükseklik ve genişlik geçerli denetimin durum çubuğunun sağ alt köşesinde görüntülenir. Tüm iletişim kutusu seçildiğinde durum çubuğunda bir bütün ve yüksekliğini ve genişliğini iletişim kutusunun konumunu görüntüler.  
-  
--   [İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)  
-  
--   [İletişim Kutusundaki Radyo Düğmelerini Gruplama](../windows/grouping-radio-buttons-on-a-dialog-box.md)  
-  
--   [Denetim Gruplarını Hizalama](../windows/aligning-groups-of-controls.md)  
-  
--   [Denetimler Arasındaki Boşlukları Eşitleme](../windows/evening-the-spacing-between-controls.md)  
-  
--   [İletişim Kutusunda Denetimleri Ortalama](../windows/centering-controls-in-a-dialog-box.md)  
-  
--   [Basma Düğmelerini İletişim Kutusunun Sağında veya Altında Düzenleme](../windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md)  
-  
--   [Denetimlerin Sekme Sırasını Değiştirme](../windows/changing-the-tab-order-of-controls.md)  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+**İletişim** Düzenleyicisi, hizalama ve denetimleri boyut otomatik düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm **iletişim kutusu Düzenleyicisi** araç çubuğu komutlarını kullanılabilir ayrıca **biçimi** menü ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).
+
+İletişim kutuları için Düzen komutların çoğu yalnızca birden fazla denetim seçildiğinde kullanılabilir. Tek bir denetim veya birden çok denetim seçin ve birden fazla denetim seçildiğinde, seçtiğiniz birinci varsayılan olarak "baskın" denetimidir. Denetimleri ve baskın denetimi seçme hakkında daha fazla bilgi için bkz: [seçerek denetimleri](../windows/selecting-controls.md).
+
+Konum, yükseklik ve genişlik geçerli denetimin durum çubuğunun sağ alt köşesinde görüntülenir. Tüm iletişim kutusu seçildiğinde durum çubuğunda bir bütün ve yüksekliğini ve genişliğini iletişim kutusunun konumunu görüntüler.
+
+- [İletişim Kutusu Düzenleyicisi Durumları (Kılavuzlar ve Izgaralar)](../windows/dialog-editor-states-guides-and-grids.md)
+
+- [İletişim Kutusundaki Radyo Düğmelerini Gruplama](../windows/grouping-radio-buttons-on-a-dialog-box.md)
+
+- [Denetim Gruplarını Hizalama](../windows/aligning-groups-of-controls.md)
+
+- [Denetimler Arasındaki Boşlukları Eşitleme](../windows/evening-the-spacing-between-controls.md)
+
+- [İletişim Kutusunda Denetimleri Ortalama](../windows/centering-controls-in-a-dialog-box.md)
+
+- [Basma Düğmelerini İletişim Kutusunun Sağında veya Altında Düzenleme](../windows/arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box.md)
+
+- [Denetimlerin Sekme Sırasını Değiştirme](../windows/changing-the-tab-order-of-controls.md)
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[Denetimler](../mfc/controls-mfc.md)

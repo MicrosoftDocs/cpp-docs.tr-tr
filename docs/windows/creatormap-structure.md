@@ -18,51 +18,56 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 173b41c6d36d36b7d8a0f4e7b024e845eec6ae4a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: c0a622eaa40cedfd7bf22259cf81382290f20f3a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650511"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593740"
 ---
 # <a name="creatormap-structure"></a>CreatorMap Yapısı
-Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-struct CreatorMap;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.  
-  
- **CreatorMap** aşağıdaki bilgileri içerir:  
-  
--   Başlatma, kaydedin ve nesneleri kaydını nasıl.  
-  
--   Klasik COM ya da Windows çalışma zamanı fabrikası bağlı olarak etkinleştirme verileri karşılaştırma yapma.  
-  
--   Bir arabirim üreteci önbellek ve sunucu adı hakkında bilgi.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-data-members"></a>Ortak Veri Üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CreatorMap::activationId Veri Üyesi](../windows/creatormap-activationid-data-member.md)|Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.|  
-|[CreatorMap::factoryCache Veri Üyesi](../windows/creatormap-factorycache-data-member.md)|Üreteci önbellek için yönelik bir işaretçi depolayan **CreatorMap**.|  
-|[CreatorMap::factoryCreator Veri Üyesi](../windows/creatormap-factorycreator-data-member.md)|İçin belirtilen bir Üreteç oluşturur **CreatorMap**.|  
-|[CreatorMap::serverName Veri Üyesi](../windows/creatormap-servername-data-member.md)|Sunucu adını depolar **CreatorMap**.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CreatorMap`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+Windows çalışma zamanı C++ Şablon kitaplığı altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+struct CreatorMap;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Nesneleri kaydını başlatmak ve kaydetme hakkında bilgi içerir.
+
+**CreatorMap** aşağıdaki bilgileri içerir:
+
+- Başlatma, kaydedin ve nesneleri kaydını nasıl.
+
+- Klasik COM ya da Windows çalışma zamanı fabrikası bağlı olarak etkinleştirme verileri karşılaştırma yapma.
+
+- Bir arabirim üreteci önbellek ve sunucu adı hakkında bilgi.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-data-members"></a>Ortak Veri Üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CreatorMap::activationId Veri Üyesi](../windows/creatormap-activationid-data-member.md)|Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.|
+|[CreatorMap::factoryCache Veri Üyesi](../windows/creatormap-factorycache-data-member.md)|Üreteci önbellek için yönelik bir işaretçi depolayan **CreatorMap**.|
+|[CreatorMap::factoryCreator Veri Üyesi](../windows/creatormap-factorycreator-data-member.md)|İçin belirtilen bir Üreteç oluşturur **CreatorMap**.|
+|[CreatorMap::serverName Veri Üyesi](../windows/creatormap-servername-data-member.md)|Sunucu adını depolar **CreatorMap**.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CreatorMap`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

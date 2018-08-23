@@ -19,110 +19,119 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a6478e8ee5474687928692763c5231091f7ad1ce
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: c2745ed1a17311f92fda6fc61743fed65882b952
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017025"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601114"
 ---
 # <a name="interiorptr-ccli"></a>interior_ptr (C++/CLI)
-Bir *işaretçiye* bir başvuru türü içinde ancak nesnenin kendisi için bir işaretçiyi bildirir. İç işaretçi, başvuru tanıtıcı, değer türü, Kutulu tür tanıtıcı, bir yönetilen türün üye veya yönetilen bir dizinin bir öğesine işaret edebilir.  
-  
-## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- (Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)  
-  
-## <a name="windows-runtime"></a>Windows Çalışma Zamanı  
- (Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)  
-  
-### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: `/ZW`  
-  
-## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı  
- Aşağıdaki sözdizimi örneği iç işaretçiye gösterir.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-cli::interior_ptr<cv_qualifier type> var = &initializer;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *cv_qualifier*  
- **const** veya **geçici** niteleyicileri.  
-  
- *Türü*  
- Türünü *Başlatıcı*.  
-  
- *var*  
- Adını **interior_ptr** değişkeni.  
-  
- *Başlatıcı*  
- Bir başvuru türü, yönetilen bir diziyi veya yerel bir işaretçiye atayabilirsiniz herhangi bir nesne öğesi üyesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Öğe, konum değiştikçe, sonuçları bir nesnenin örneklerini çöp toplayıcı yönetilen yığında izlemek yerel bir işaretçi kuramıyor. Doğru örneğine başvurmak bir işaretçi için çalışma zamanı konumlandırılmış yeni nesneye işaretçi güncelleştirmek gerekir.  
-  
- Bir **interior_ptr** yerel bir işaretçi bir işlevselliğin temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilir herhangi bir şey de atanabilir bir **interior_ptr**.  İç işaretçiye karşılaştırma ve işaretçi aritmetiğini dahil olmak üzere, yerel işaretçiler olarak aynı işlemleri kümesini gerçekleştirmek için izin verilir.  
-  
- İç işaretçiye yalnızca yığında bildirilebilir.  İç işaretçiye bir sınıf üyesi olarak bildirilemez.  
-  
- Yalnızca yığında iç işaretçiler mevcut olduğundan, iç işaretçiye adresinin alınmasına bir yönetilmeyen işaretçi verir.  
-  
- **interior_ptr** örtük dönüştürmeleri vardır **bool**, veren kullanımını koşullu ifadeler için.  
-  
- Atık toplanan yığında taşınamaz bir nesneye işaret eden bir işaretçiye bildirme hakkında daha fazla bilgi için bkz: [pin_ptr](../windows/pin-ptr-cpp-cli.md).  
-  
- **interior_ptr** CLI ad alanındadır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.  
-  
- İç işaretçiler hakkında daha fazla bilgi için bkz.  
-  
--   [Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)](../windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)  
-  
--   [Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)](../windows/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)  
-  
--   [Nasıl yapılır: İç İşaretçiler ve Yerel İşaretçilerle İşlevleri Tekrar Yükleme (C++/CLI)](../windows/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)  
-  
--   [Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)](../windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)  
-  
-### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: `/clr`  
-  
-### <a name="examples"></a>Örnekler  
-  
- Aşağıdaki örnek, bildirme ve bir başvuru türü iç işaretçiye kullanma işlemi gösterilmektedir.  
-  
-```cpp  
-// interior_ptr.cpp  
-// compile with: /clr  
-using namespace System;  
-  
-ref class MyClass {  
-public:  
-   int data;  
-};  
-  
-int main() {  
-   MyClass ^ h_MyClass = gcnew MyClass;  
-   h_MyClass->data = 1;  
-   Console::WriteLine(h_MyClass->data);  
-  
-   interior_ptr<int> p = &(h_MyClass->data);  
-   *p = 2;  
-   Console::WriteLine(h_MyClass->data);  
-  
-   // alternatively  
-   interior_ptr<MyClass ^> p2 = &h_MyClass;  
-   (*p2)->data = 3;  
-   Console::WriteLine((*p2)->data);  
-}  
-``` 
-  
-```Output  
-1  
-2  
-3  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)
+
+Bir *işaretçiye* bir başvuru türü içinde ancak nesnenin kendisi için bir işaretçiyi bildirir. İç işaretçi, başvuru tanıtıcı, değer türü, Kutulu tür tanıtıcı, bir yönetilen türün üye veya yönetilen bir dizinin bir öğesine işaret edebilir.
+
+## <a name="all-runtimes"></a>Tüm Çalışma Zamanları
+
+(Bu dil özelliğinin tüm çalışma zamanları için geçerli olan açıklaması yoktur.)
+
+## <a name="windows-runtime"></a>Windows Çalışma Zamanı
+
+(Bu dil özelliğinin yalnızca Windows çalışma zamanı için geçerli olan açıklaması yoktur.)
+
+### <a name="requirements"></a>Gereksinimler
+
+Derleyici seçeneği: `/ZW`
+
+## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
+
+Aşağıdaki sözdizimi örneği iç işaretçiye gösterir.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+cli::interior_ptr<cv_qualifier type> var = &initializer;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*cv_qualifier*  
+**const** veya **geçici** niteleyicileri.
+
+*Türü*  
+Türünü *Başlatıcı*.
+
+*var*  
+Adını **interior_ptr** değişkeni.
+
+*Başlatıcı*  
+Bir başvuru türü, yönetilen bir diziyi veya yerel bir işaretçiye atayabilirsiniz herhangi bir nesne öğesi üyesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Öğe, konum değiştikçe, sonuçları bir nesnenin örneklerini çöp toplayıcı yönetilen yığında izlemek yerel bir işaretçi kuramıyor. Doğru örneğine başvurmak bir işaretçi için çalışma zamanı konumlandırılmış yeni nesneye işaretçi güncelleştirmek gerekir.
+
+Bir **interior_ptr** yerel bir işaretçi bir işlevselliğin temsil eder.  Bu nedenle, yerel bir işaretçiye atanabilir herhangi bir şey de atanabilir bir **interior_ptr**.  İç işaretçiye karşılaştırma ve işaretçi aritmetiğini dahil olmak üzere, yerel işaretçiler olarak aynı işlemleri kümesini gerçekleştirmek için izin verilir.
+
+İç işaretçiye yalnızca yığında bildirilebilir.  İç işaretçiye bir sınıf üyesi olarak bildirilemez.
+
+Yalnızca yığında iç işaretçiler mevcut olduğundan, iç işaretçiye adresinin alınmasına bir yönetilmeyen işaretçi verir.
+
+**interior_ptr** örtük dönüştürmeleri vardır **bool**, veren kullanımını koşullu ifadeler için.
+
+Atık toplanan yığında taşınamaz bir nesneye işaret eden bir işaretçiye bildirme hakkında daha fazla bilgi için bkz: [pin_ptr](../windows/pin-ptr-cpp-cli.md).
+
+**interior_ptr** CLI ad alanındadır.  Bkz: [Platform, varsayılan ve cli ad alanları](../windows/platform-default-and-cli-namespaces-cpp-component-extensions.md) daha fazla bilgi için.
+
+İç işaretçiler hakkında daha fazla bilgi için bkz.
+
+- [Nasıl yapılır: İç İşaretçiler ve Yönetilen Diziler Bildirme ve Kullanma (C++/CLI)](../windows/how-to-declare-and-use-interior-pointers-and-managed-arrays-cpp-cli.md)
+
+- [Nasıl yapılır: interior_ptr Anahtar Sözcüğü ile Değer Türleri Bildirme (C++/CLI)](../windows/how-to-declare-value-types-with-the-interior-ptr-keyword-cpp-cli.md)
+
+- [Nasıl yapılır: İç İşaretçiler ve Yerel İşaretçilerle İşlevleri Tekrar Yükleme (C++/CLI)](../windows/how-to-overload-functions-with-interior-pointers-and-native-pointers-cpp-cli.md)
+
+- [Nasıl yapılır: const Anahtar Sözcüğü ile İç İşaretçileri Bildirme (C++/CLI)](../windows/how-to-declare-interior-pointers-with-the-const-keyword-cpp-cli.md)
+
+### <a name="requirements"></a>Gereksinimler
+
+Derleyici seçeneği: `/clr`
+
+### <a name="examples"></a>Örnekler
+
+Aşağıdaki örnek, bildirme ve bir başvuru türü iç işaretçiye kullanma işlemi gösterilmektedir.
+
+```cpp
+// interior_ptr.cpp
+// compile with: /clr
+using namespace System;
+
+ref class MyClass {
+public:
+   int data;
+};
+
+int main() {
+   MyClass ^ h_MyClass = gcnew MyClass;
+   h_MyClass->data = 1;
+   Console::WriteLine(h_MyClass->data);
+
+   interior_ptr<int> p = &(h_MyClass->data);
+   *p = 2;
+   Console::WriteLine(h_MyClass->data);
+
+   // alternatively
+   interior_ptr<MyClass ^> p2 = &h_MyClass;
+   (*p2)->data = 3;
+   Console::WriteLine((*p2)->data);
+}
+```
+
+```Output
+1
+2
+3
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çalışma Zamanı Platformları için Bileşen Uzantıları](../windows/component-extensions-for-runtime-platforms.md)

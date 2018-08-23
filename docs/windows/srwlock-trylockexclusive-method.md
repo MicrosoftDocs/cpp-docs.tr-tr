@@ -17,37 +17,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 674a7dced019926e6ea07b41641eb42db70c45a0
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 2ec8275b1db692410677276e762f79ccf23548cc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013486"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606237"
 ---
 # <a name="srwlocktrylockexclusive-method"></a>SRWLock::TryLockExclusive Yöntemi
-Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen özel modda **SRWLock** nesne. Çağrı başarılı olursa, çağıran iş parçacığını kilidi sahipliğini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-SyncLockExclusive TryLockExclusive();  
-  
-static SyncLockExclusive TryLockExclusive(  
-   _In_ SRWLOCK* lock  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lock*  
- İşaretçi bir **SRWLock** nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, bir **SRWLock** Dışlayıcı ve çağıran iş parçacığını nesne kilidi sahipliğini alır. Aksi takdirde, bir **SRWLock** nesne durumu geçersiz.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLock Sınıfı](../windows/srwlock-class.md)
+
+Almaya çalışır bir **SRWLock** nesne için geçerli veya belirtilen özel modda **SRWLock** nesne. Çağrı başarılı olursa, çağıran iş parçacığını kilidi sahipliğini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+SyncLockExclusive TryLockExclusive();
+
+static SyncLockExclusive TryLockExclusive(
+   _In_ SRWLOCK* lock
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lock*  
+İşaretçi bir **SRWLock** nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa, bir **SRWLock** Dışlayıcı ve çağıran iş parçacığını nesne kilidi sahipliğini alır. Aksi takdirde, bir **SRWLock** nesne durumu geçersiz.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SRWLock Sınıfı](../windows/srwlock-class.md)

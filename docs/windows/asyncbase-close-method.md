@@ -17,34 +17,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3ce391e95aa9e08ae7d99e3cbdf064721ce21dbe
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 732eb6f8668f7742e23e1ea410dcc659bc3d36c7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643543"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605352"
 ---
 # <a name="asyncbaseclose-method"></a>AsyncBase::Close Yöntemi
-Zaman uyumsuz işlemi kapatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   Close  
-)(void) override;  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşlemi kapatır veya zaten S_OK kapalı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Çağrısının** varsayılan uygulamasıdır `IAsyncInfo::Close`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten kapatmak için geçersiz kılma `OnClose()` saf sanal yöntemi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase Sınıfı](../windows/asyncbase-class.md)
+
+Zaman uyumsuz işlemi kapatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   Close
+)(void) override;
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşlemi kapatır veya zaten S_OK kapalı; Aksi takdirde, E_ILLEGAL_STATE_CHANGE.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Çağrısının** varsayılan uygulamasıdır `IAsyncInfo::Close`, ve hiçbir asıl işi yapar. Zaman uyumsuz bir işlem gerçekten kapatmak için geçersiz kılma `OnClose()` saf sanal yöntemi.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)

@@ -17,37 +17,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 922220c9406f02568299dc60960b04a9820a7e95
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 6218bfe1bbdc27749bed1395108b7a30533c50b7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40010967"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596889"
 ---
 # <a name="srwlocklockexclusive-method"></a>SRWLock::LockExclusive Yöntemi
-Alması bir **SRWLock** özel modda nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-SyncLockExclusive LockExclusive();  
-  
-static SyncLockExclusive LockExclusive(  
-   _In_ SRWLOCK* lock  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lock*  
- İşaretçi bir **SRWLock** nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Bir **SRWLock** özel modda nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLock Sınıfı](../windows/srwlock-class.md)
+
+Alması bir **SRWLock** özel modda nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+SyncLockExclusive LockExclusive();
+
+static SyncLockExclusive LockExclusive(
+   _In_ SRWLOCK* lock
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lock*  
+İşaretçi bir **SRWLock** nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Bir **SRWLock** özel modda nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SRWLock Sınıfı](../windows/srwlock-class.md)

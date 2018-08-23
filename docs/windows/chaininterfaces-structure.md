@@ -17,115 +17,120 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7765ab5159f7cfd604f67b79a05fde8eaf57fad8
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: f0fc65d2aeab01de022e23d0645682800a7d555d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646711"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602371"
 ---
 # <a name="chaininterfaces-structure"></a>ChainInterfaces Yapısı
-Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template <  
-   typename I0,  
-   typename I1,  
-   typename I2 = Details::Nil,  
-   typename I3 = Details::Nil,  
-   typename I4 = Details::Nil,  
-   typename I5 = Details::Nil,  
-   typename I6 = Details::Nil,  
-   typename I7 = Details::Nil,  
-   typename I8 = Details::Nil,  
-   typename I9 = Details::Nil  
->  
-struct ChainInterfaces : I0;  
-template <  
-   typename DerivedType,  
-   typename BaseType,  
-   bool hasImplements,  
-   typename I1,  
-   typename I2,  
-   typename I3,  
-   typename I4,  
-   typename I5,  
-   typename I6,  
-   typename I7,  
-   typename I8,  
-   typename I9  
->  
-struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *I0*  
- (Gerekli) Arabirim Kimliği: 0.  
-  
- *I1*  
- (Gerekli) Arabirim kimliği 1.  
-  
- *I2*  
- (İsteğe bağlı) Arabirim kimliği 2.  
-  
- *I3*  
- (İsteğe bağlı) Arabirim Kimliği 3.  
-  
- *I4*  
- (İsteğe bağlı) Arabirim Kimliği 4.  
-  
- *I5*  
- (İsteğe bağlı) Arabirim kimliği 5.  
-  
- *I6*  
- (İsteğe bağlı) Arabirim kimliği 6.  
-  
- *I7*  
- (İsteğe bağlı) Arabirim kimliği 7.  
-  
- *I8*  
- (İsteğe bağlı) 8 arabirim kimliği.  
-  
- *I9*  
- (İsteğe bağlı) Arabirim Kimliği 9.  
-  
- *DerivedType*  
- Türetilmiş bir tür.  
-  
- *BaseType*  
- Türetilmiş türün temel türü.  
-  
- *hasImplements*  
- Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Her tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirten **ChainInterface** şablon parametreleri.|  
-|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.|  
-|[ChainInterfaces::FillArrayWithIid Metodu](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.|  
-|[ChainInterfaces::Verify Metodu](../windows/chaininterfaces-verify-method.md)|Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.|  
-  
-### <a name="protected-constants"></a>Korumalı sabitleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[ChainInterfaces::IidCount Sabiti](../windows/chaininterfaces-iidcount-constant.md)|Arabirim kimlikleri şablon parametreleri tarafından belirtilen arabirimlerden bulunan toplam sayısı *I0* aracılığıyla *I9*.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `I0`  
-  
- `ChainInterfaces`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Arabirim kimlikleri kümesine uygulanabilir doğrulama ve başlatma işlevleri belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <
+   typename I0,
+   typename I1,
+   typename I2 = Details::Nil,
+   typename I3 = Details::Nil,
+   typename I4 = Details::Nil,
+   typename I5 = Details::Nil,
+   typename I6 = Details::Nil,
+   typename I7 = Details::Nil,
+   typename I8 = Details::Nil,
+   typename I9 = Details::Nil
+>
+struct ChainInterfaces : I0;
+template <
+   typename DerivedType,
+   typename BaseType,
+   bool hasImplements,
+   typename I1,
+   typename I2,
+   typename I3,
+   typename I4,
+   typename I5,
+   typename I6,
+   typename I7,
+   typename I8,
+   typename I9
+>
+struct ChainInterfaces<MixIn<DerivedType, BaseType, hasImplements>, I1, I2, I3, I4, I5, I6, I7, I8, I9>;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*I0*  
+(Gerekli) Arabirim Kimliği: 0.
+
+*I1*  
+(Gerekli) Arabirim kimliği 1.
+
+*I2*  
+(İsteğe bağlı) Arabirim kimliği 2.
+
+*I3*  
+(İsteğe bağlı) Arabirim Kimliği 3.
+
+*I4*  
+(İsteğe bağlı) Arabirim Kimliği 4.
+
+*I5*  
+(İsteğe bağlı) Arabirim kimliği 5.
+
+*I6*  
+(İsteğe bağlı) Arabirim kimliği 6.
+
+*I7*  
+(İsteğe bağlı) Arabirim kimliği 7.
+
+*I8*  
+(İsteğe bağlı) 8 arabirim kimliği.
+
+*I9*  
+(İsteğe bağlı) Arabirim Kimliği 9.
+
+*DerivedType*  
+Türetilmiş bir tür.
+
+*BaseType*  
+Türetilmiş türün temel türü.
+
+*hasImplements*  
+Bir Boole değeri olması durumunda **true**, kullanamazsınız anlamına gelir. bir [MixIn](../windows/mixin-structure.md) türünden türemez bir sınıf ile yapı [uygular](../windows/implements-structure.md) yapıda.
+
+## <a name="members"></a>Üyeler
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[ChainInterfaces::CanCastTo Metodu](../windows/chaininterfaces-cancastto-method.md)|Her tarafından tanımlanan uzmanlıkları belirtilen arabirim kimliği içerip içermeyeceğini belirten **ChainInterface** şablon parametreleri.|
+|[ChainInterfaces::CastToUnknown Metodu](../windows/chaininterfaces-casttounknown-method.md)|Arabirim işaretçisi tarafından tanımlanan tür yayınlar *I0* şablon parametresi için bir işaretçi olarak `IUnknown`.|
+|[ChainInterfaces::FillArrayWithIid Metodu](../windows/chaininterfaces-fillarraywithiid-method.md)|Arabirim kimliği tarafından tanımlanan depoları *I0* şablon parametresi belirtilen bir dizisinde belirtilen bir konuma arabiriminin kimlikleri.|
+|[ChainInterfaces::Verify Metodu](../windows/chaininterfaces-verify-method.md)|Her arabirim şablon parametreleri tarafından tanımlanan doğrular *I0* aracılığıyla *I9* devraldığı `IUnknown` ve/veya `IInspectable`ve *I0* devralır *I1* aracılığıyla *I9*.|
+
+### <a name="protected-constants"></a>Korumalı sabitleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[ChainInterfaces::IidCount Sabiti](../windows/chaininterfaces-iidcount-constant.md)|Arabirim kimlikleri şablon parametreleri tarafından belirtilen arabirimlerden bulunan toplam sayısı *I0* aracılığıyla *I9*.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`I0`
+
+`ChainInterfaces`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

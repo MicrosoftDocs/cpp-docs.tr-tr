@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a99eee63496632b8f0918ee888e6a824424b757d
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8b2bc46f916e4aaaedc74e8b6d94faafa1ead3b9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649896"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595493"
 ---
 # <a name="asyncbaseputonprogress-method"></a>AsyncBase::PutOnProgress Yöntemi
-Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   PutOnProgress  
-)(TProgress* progressHandler);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *progressHandler*  
- İstediğiniz ilerleme olay işleyicisinin nasıl ayarlandığını adresi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase Sınıfı](../windows/asyncbase-class.md)
+
+Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   PutOnProgress
+)(TProgress* progressHandler);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*progressHandler*  
+İstediğiniz ilerleme olay işleyicisinin nasıl ayarlandığını adresi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)

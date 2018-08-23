@@ -18,35 +18,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: eb15dbd56656c72bc0f96491d24fc43fb96de84c
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f419f9c370c58c1e3ebf07d3b78f15499a072d4e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017818"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603504"
 ---
 # <a name="moving-or-copying-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı Tablosu Girişini Başka Bir Kaynak Betik Dosyasına Taşıma veya Kopyalama
-### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına taşınacak veya kopyalanacak  
-  
-1.  Hızlandırıcı tablolarını, hem kaynak kod dosyalarını açın.  
-  
-    > [!NOTE]
-    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Taşımak istediğiniz girişini seçin.  
-  
-3.  Gelen **Düzenle** menüsünde seçin **kopyalama** veya **Kes**.  
-  
-4.  Hedef kaynak kod dosyasında bir giriş seçin.  
-  
-5.  Gelen **Düzenle** menüsünde seçin **Yapıştır**.  
-  
-    > [!NOTE]
-    >  Ayrıca, kopyalama ve yapıştırma için kısayol tuşlarını kullanabilirsiniz.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı tablolarını düzenleme](../windows/editing-accelerator-tables.md)   
- [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)
+
+### <a name="to-move-or-copy-an-accelerator-table-entry-to-another-resource-script-file"></a>Hızlandırıcı tablosu girişini başka bir kaynak betik dosyasına taşınacak veya kopyalanacak
+
+1. Hızlandırıcı tablolarını, hem kaynak kod dosyalarını açın.
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+2. Taşımak istediğiniz girişini seçin.
+
+3. Gelen **Düzenle** menüsünde seçin **kopyalama** veya **Kes**.
+
+4. Hedef kaynak kod dosyasında bir giriş seçin.
+
+5. Gelen **Düzenle** menüsünde seçin **Yapıştır**.
+
+   > [!NOTE]
+   > Ayrıca, kopyalama ve yapıştırma için kısayol tuşlarını kullanabilirsiniz.
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)  
+[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

@@ -19,30 +19,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f083364f839f963867234a4d3548ac1c00258cc8
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: fd8f3bd94f163e72c908568a167b870ccf0d8051
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649965"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596753"
 ---
 # <a name="deleting-a-version-information-block"></a>Sürüm Bilgileri Bloğunu Silme
-### <a name="to-delete-a-version-information-block"></a>Sürüm bilgi bloğu silmek için  
-  
-1.  Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
-  
-    > [!NOTE]
-    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Ardından silmek istediğiniz blok başlığına sağ tıklayarak **sürüm bilgi bloğunu silme** kısayol menüsünden.  
-  
-     Bu komut, seçilen üst bilgi siler ve kalan sürüm bilgilerini dokunmaz. Lütfen eylemi geri alamazsınız unutmayın.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
+
+### <a name="to-delete-a-version-information-block"></a>Sürüm bilgi bloğu silmek için
+
+1. Sürüm bilgileri kaynağında simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+2. Ardından silmek istediğiniz blok başlığına sağ tıklayarak **sürüm bilgi bloğunu silme** kısayol menüsünden.
+
+   Bu komut, seçilen üst bilgi siler ve kalan sürüm bilgilerini dokunmaz. Lütfen eylemi geri alamazsınız unutmayın.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
 ## <a name="requirements"></a>Gereksinimler
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sürüm bilgileri Düzenleyicisi](../windows/version-information-editor.md)   
- [Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sürüm Bilgileri Düzenleyicisi](../windows/version-information-editor.md)  
+[Sürüm bilgileri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms646981.aspx)

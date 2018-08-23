@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::NullReferenceException
 ms.assetid: be202577-d898-4716-83cd-e3556fe8a241
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27e74ea7753ddb66a7daa8403874e803dca91f10
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 78d0cf9ec994d21845e1910b5affc9e3b5d74a8d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088082"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590333"
 ---
 # <a name="platformnullreferenceexception-class"></a>Platform::NullReferenceException sınıfı
-Null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.  
+Bir null Nesne başvurusu başvuru girişimi olduğunda oluşturulur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,16 +33,16 @@ public ref class NullReferenceException : COMException,    IException,    IPrint
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
+ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

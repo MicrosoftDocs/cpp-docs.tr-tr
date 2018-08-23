@@ -17,32 +17,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0d6d767a77b68ad8585da711861d942abbe6b686
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e602a8d2eef8e495ad732dcd61d0e8aa0b242130
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013499"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601006"
 ---
 # <a name="invokehelpercallback-data-member"></a>InvokeHelper::callback_ Veri Üyesi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-TCallback callback_;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.  
-  
- `TCallback` Şablon parametresi, olay işleyicisi türünü belirtir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Invokehelper yapısı](../windows/invokehelper-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+TCallback callback_;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir olay oluştuğunda çağrılacak olay işleyicisini temsil eder.
+
+`TCallback` Şablon parametresi, olay işleyicisi türünü belirtir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[InvokeHelper Yapısı](../windows/invokehelper-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

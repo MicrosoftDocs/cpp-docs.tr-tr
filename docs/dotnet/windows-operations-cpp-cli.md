@@ -54,17 +54,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 7a303e80b58207e555dbd9067982ee1e2c506bb3
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 0f9566fb6e3117b10d0d6f4a2bccbe56fe33a28a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110027"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609355"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
-Kullanarak çeşitli Windows özgü görevler gösterilmiş [!INCLUDE[winsdklong](../dotnet/includes/winsdklong_md.md)].  
+Windows SDK'sını kullanarak Windows özgü çeşitli görevleri gösterir.  
   
- Aşağıdaki konular ile gerçekleştirilen çeşitli Windows işlemlerini gösterir [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] Visual C++ kullanarak.  
+ Aşağıdaki konular Windows Visual C++ kullanarak SDK ile gerçekleştirilen çeşitli Windows işlemlerini gösterir.  
 
 ## <a name="determine_shutdown"></a> Kapatmanın başlayıp başlamadığını belirleme
 Aşağıdaki kod örneği, uygulamanın veya .NET Framework şu anda sonlandırıyor olup olmadığını belirlemek nasıl gösterir. Bu, .NET Framework'teki statik öğeler bu yapıları kapatma sırasında sistem tarafından kesin ve güvenilir bir şekilde kullanılamaz çünkü erişmek için kullanışlıdır. Denetleyerek <xref:System.Environment.HasShutdownStarted%2A> özelliği ilk olarak, bu öğeleri erişilmemesi olası hataları önleyebilirsiniz.  

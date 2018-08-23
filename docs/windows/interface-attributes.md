@@ -16,49 +16,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6f57cdce20a54b8bc56b804e12f59f92855c7f69
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 8c61aeb0dcf3a9e0e001f89b9872b43b0af092b2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33880211"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593329"
 ---
 # <a name="interface-attributes"></a>Arabirim Öznitelikleri
-Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../cpp/interface.md) C++ anahtar sözcüğü.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|[async_uuid](../windows/async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyici yönlendirir UUID belirtir.|  
-|[Özel](../windows/custom-cpp.md)|Kendi özniteliklerine tanımlamanıza olanak sağlar.|  
-|[dispinterface](../windows/dispinterface.md)|Arabirim dağıtma arabirimi .idl dosyasına yerleştirir.|  
-|[dual](../windows/dual.md)|Arabirim çift arabirim .idl dosyasına yerleştirir.|  
-|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesini neden olur.|  
-|[helpcontext](../windows/helpcontext.md)|Kullanıcı görünümü öğeyle ilgili bilgi bu Yardım dosyasındaki olanak sağlayan bir içerik Kimliğini belirtir.|  
-|[helpfile](../windows/helpfile.md)|Tür Kitaplığı Yardım dosyasının adını ayarlar.|  
-|[helpstring](../windows/helpstring.md)|Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir.|  
-|[helpstringcontext](../windows/helpstringcontext.md)|Yardım konusunun Kimliğini bir .hlp veya .chm dosyasında belirtir.|  
-|[helpstringdll](../windows/helpstringdll.md)|Belge dize araması (yerelleştirme) gerçekleştirmek için kullanılacak DLL adını belirtir.|  
-|[hidden](../windows/hidden.md)|Öğe var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir.|  
-|[library_block](../windows/library-block.md)|.İdl dosyanın kitaplığı bloktaki bir yapı yerleştirir.|  
-|[Yerel](../windows/local-cpp.md)|MIDL derleyici arabirimi üstbilgisinde kullanıldığında bir üstbilgi oluşturucuyu olarak kullanmanıza olanak sağlar. Tek bir işlev kullanıldığında, kendisi için hiçbir saplamalar oluşturulan yerel bir yordam belirler.|  
-|[nonextensible](../windows/nonextensible.md)|Belirleyen `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenen ve çalışma zamanında ek üyeleriyle genişletilemez. Bu öznitelik yalnızca geçerli bir [çift](../windows/dual.md) arabirimi.|  
-|[odl](../windows/odl.md)|Arabirim bir nesne Açıklama Dili (ODL) arabirimi olarak tanımlar.|  
-|[object](../windows/object-cpp.md)|Özel bir arabirim tanımlar.|  
-|[oleautomation](../windows/oleautomation.md)|Arabirim otomasyon ile uyumlu olup olmadığını gösterir.|  
-|[pointer_default](../windows/pointer-default.md)|Varsayılan işaretçi özniteliği için tüm işaretçiler görünür üst düzey işaretçileri dışında parametre listelerinde belirtir.|  
-|[ptr](../windows/ptr.md)|Bir işaretçi tam bir işaretçi olarak belirler.|  
-|[restricted](../windows/restricted.md)|Hangi kitaplık üyeleri rasgele çağrılamaz belirler.|  
-|[uuid](../windows/uuid-cpp-attributes.md)|Kitaplık için benzersiz kimlik sağlar|  
-  
- Bir arabirim tanımlamak için bu kurallara uymanız gerekir:  
-  
--   Çağırma kuralı varsayılandır [__stdcall](../cpp/stdcall.md).  
-  
--   Bir belirtmezseniz bir GUID sağlandı.  
-  
--   Hiçbir aşırı yüklenmiş yöntemler izin verilir.  
-  
- Değil belirtirken [UUID](../windows/uuid-cpp-attributes.md) özniteliği ve aynı arabirim adı farklı öznitelik projelerinde kullanarak, aynı GUID'ye oluşturulur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)
+
+Aşağıdaki öznitelikler uygulamak [arabirimi (veya __interface)](../cpp/interface.md) C++ anahtar sözcüğü.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|[async_uuid](../windows/async-uuid.md)|COM arabirimi zaman uyumlu ve zaman uyumsuz sürümlerini tanımlamak için MIDL derleyicisi yönergelerinin sağlandığı UUID belirtir.|
+|[Özel](../windows/custom-cpp.md)|Kendi özniteliklerine tanımlamanızı sağlar.|
+|[dispinterface](../windows/dispinterface.md)|Bir arabirim gönderme arabirimi olarak .idl dosyasına yerleştirir.|
+|[dual](../windows/dual.md)|Bir arabirim çift arabirim .idl dosyasına yerleştirir.|
+|[export](../windows/export.md)|Bir veri yapısı .idl dosyasında yerleştirilmesine neden olur.|
+|[helpcontext](../windows/helpcontext.md)|Kullanıcı Yardım dosyasında bu öğe hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir.|
+|[helpfile](../windows/helpfile.md)|Bir tür kitaplığı için Yardım dosyasına adını ayarlar.|
+|[helpstring](../windows/helpstring.md)|Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir.|
+|[helpstringcontext](../windows/helpstringcontext.md)|Bir .hlp veya .chm dosyasında bir Yardım konusu Kimliğini belirtir.|
+|[helpstringdll](../windows/helpstringdll.md)|Belge dize arama (yerelleştirme) gerçekleştirmek için kullanılacak DLL'in adını belirtir.|
+|[hidden](../windows/hidden.md)|Öğe var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir.|
+|[library_block](../windows/library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
+|[Yerel](../windows/local-cpp.md)|MIDL derleyicisi arabirimi başlığı kullanıldığında bir üstbilgi Oluşturucu olarak kullanmanıza olanak tanır. Tek bir işlevde kullanıldığında, hiçbir saptamalar oluşturulan yerel bir yordam belirler.|
+|[nonextensible](../windows/nonextensible.md)|Belirten `IDispatch` uygulaması yalnızca özellikleri içerir ve yöntemleri arabirimi açıklamasında listelenir ve çalışma zamanında ek üyeleriyle genişletilemez. Bu öznitelik yalnızca geçerli bir [çift](../windows/dual.md) arabirimi.|
+|[odl](../windows/odl.md)|Arabirimdeki bir nesne Açıklama Dili (ODL) arabirim tanımlar.|
+|[object](../windows/object-cpp.md)|Özel bir arabirim tanımlar.|
+|[oleautomation](../windows/oleautomation.md)|Bir arabirim otomasyon ile uyumlu olduğunu gösterir.|
+|[pointer_default](../windows/pointer-default.md)|Görünen üst düzey işaretçileri dışındaki tüm işaretçiler için varsayılan işaretçi öznitelik parametre listelerindeki belirtir.|
+|[ptr](../windows/ptr.md)|Bir işaretçinin tam bir işaretçi olarak belirler.|
+|[restricted](../windows/restricted.md)|Hangi üyelerin kitaplığının rasgele çağrılamaz belirler.|
+|[uuid](../windows/uuid-cpp-attributes.md)|Kitaplık için benzersiz kimliği sağlar|
+
+Bu kurallar, bir arabirim tanımlamak için uymanız gerekir:
+
+- Çağırma kuralı varsayılan [__stdcall](../cpp/stdcall.md).
+
+- Bir belirtmezseniz sizin için bir GUID sağlanır.
+
+- Hiçbir aşırı yüklenmiş yöntemler izin verilir.
+
+Değil belirtirken [UUID](../windows/uuid-cpp-attributes.md) özniteliği ve farklı öznitelik projelerde aynı arabirimi adı kullanarak, aynı GUID oluşturulur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

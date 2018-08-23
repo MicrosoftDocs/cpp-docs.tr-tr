@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b7b31161ab0539a6b31b574c8cf306b4ae33378
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e987be9ae368917a70e8dcbb5796bb12228da81b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651603"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592361"
 ---
 # <a name="handletget-method"></a>HandleT::Get Metodu
-Temel alınan tanıtıcısının değerini alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-typename HandleTraits::Type Get() const;  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Tanıtıcı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT Sınıfı](../windows/handlet-class.md)
+
+Temel alınan tanıtıcısının değerini alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+typename HandleTraits::Type Get() const;
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Tanıtıcı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HandleT Sınıfı](../windows/handlet-class.md)

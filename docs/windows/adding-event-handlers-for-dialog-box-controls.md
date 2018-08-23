@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2dce9b2ce59eb98c59c7a6cf04be52f3d439fdb0
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ad7b007728d3de949fec678249edd56c7032d250
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642857"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605743"
 ---
 # <a name="adding-event-handlers-for-dialog-box-controls"></a>İletişim Kutusu Denetimleri için Olay İşleyicileri Ekleme
 
@@ -49,13 +49,13 @@ Olay işleyicileri oluşturduğunuzda, bir sınıf ile ilişkili olan proje ilet
 
    - BN_SETFOCUS
 
-    > [!NOTE]
-    > Alternatif olarak, iletişim kutusunu seçip tıklayın **ControlEvents'i** tüm denetimler için ortak Windows olayları listesi iletişim kutusunda görüntülenecek düğmesi.
+   > [!NOTE]
+   > Alternatif olarak, iletişim kutusunu seçip tıklayın **ControlEvents'i** tüm denetimler için ortak Windows olayları listesi iletişim kutusunda görüntülenecek düğmesi.
 
 3. İçinde **özellikleri** penceresinde işlenecek olay yanındaki sağ sütuna tıklayın ve ardından önerilen bildirim olay adını seçin (örneğin, `OnBnClickedOK` BN_CLICKED işler).
 
-    > [!NOTE]
-    > Alternatif olarak, varsayılan olay işleyicisi adı seçmek yerine kendi seçtiğiniz bir olay işleyicisi adı sağlayabilirsiniz.
+   > [!NOTE]
+   > Alternatif olarak, varsayılan olay işleyicisi adı seçmek yerine kendi seçtiğiniz bir olay işleyicisi adı sağlayabilirsiniz.
 
    Olayı seçtikten sonra Visual Studio açılır **metin düzenleyici** ve olay işleyicinin kodunu görüntüler. Örneğin, aşağıdaki kod için varsayılan eklenir `OnBnClickedOK`:
 
@@ -71,14 +71,16 @@ Olay işleyicisi bir sınıfa dışındaki bir iletişim kutusu uygulama eklemek
 Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 
 ## <a name="requirements"></a>Gereksinimler
- Win32
+
+Win32
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Varsayılan Denetim Olayları](../windows/default-control-events.md)  
- [İletişim Kutusu Denetimleri için Üye Değişkenleri Tanımlama](../windows/defining-member-variables-for-dialog-controls.md)  
- [İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)  
- [Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)  
- [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)  
- [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)  
- [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)  
- [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)  
+
+[Varsayılan Denetim Olayları](../windows/default-control-events.md)  
+[İletişim Kutusu Denetimleri için Üye Değişkenleri Tanımlama](../windows/defining-member-variables-for-dialog-controls.md)  
+[İletişim Kutusu Denetimleri ve Değişken Türleri](../ide/dialog-box-controls-and-variable-types.md)  
+[Sınıf ekleme](../ide/adding-a-class-visual-cpp.md)  
+[Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)  
+[Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)  
+[Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)  
+[MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)  

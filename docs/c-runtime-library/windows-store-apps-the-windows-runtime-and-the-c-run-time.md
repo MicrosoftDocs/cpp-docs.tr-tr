@@ -12,46 +12,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29e1a67ce57e4ddf726ba64923bbe5a95b5b2f1c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78f76b6f61eb5d8e7370e61e9cc1f466bdfb4c43
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410846"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592725"
 ---
 # <a name="uwp-apps-the-windows-runtime-and-the-c-run-time"></a>UWP uygulamaları, Windows çalışma zamanı ve C çalışma zamanı
 
-Evrensel Windows Platformu (UWP) uygulamaları üzerinde yürütür Windows çalışma zamanı çalışan programlardır [!INCLUDE[win8](../build/reference/includes/win8_md.md)]. Windows çalışma zamanı işlevleri, değişkenleri ve bir UWP uygulaması kullanılabilir kaynaklar denetleyen güvenilir bir ortamdır. Ancak, tasarım gereği, Windows çalışma zamanı kısıtlamaları UWP uygulamalarında çoğu C çalışma zamanı kitaplığı (CRT) özellikleri kullanımını engeller.
+Evrensel Windows Platformu (UWP) uygulamaları, Windows 8'de yürüten Windows çalışma zamanı içinde çalışan programlardır. Windows çalışma zamanı işlevleri, değişkenler ve UWP uygulaması için kaynaklar denetleyen güvenilir bir ortamdır. Ancak, tasarım gereği, Windows çalışma zamanı kısıtlamalarını UWP uygulamalarında çoğu C çalışma zamanı kitaplığı (CRT) özelliklerinin kullanımını engelleyin.
 
-Windows çalışma zamanı aşağıdaki CRT özellikleri desteklemez:
+Windows çalışma zamanı, aşağıdaki CRT özellikleri desteklemez:
 
-- Desteklenmeyen işlevsellik ilgili çoğu CRT işlevleri.
+- Desteklenmeyen işlevsellik ile ilgili birçok CRT işlevleri.
 
-   Bir UWP uygulaması bir işlemi kullanarak örneğin, oluşturamazsınız **exec** ve **spawn** yordamları aileleri.
+   Bir UWP uygulaması bir işlemi kullanarak örneğin, oluşturamazsınız **exec** ve **üretme** aileleri yordamları.
 
-   Ne zaman olgu kendi başvurusu makalesinde not aldığınız bir UWP uygulamasında CRT işlevi desteklenmiyor.
+   Ne zaman bir CRT işlevini olgu, başvuru makalesinde not aldığınız bir UWP uygulamasında desteklenmiyor.
 
 - En çok baytlı karakter ve dize işlevleri.
 
-   Ancak, Unicode ve ANSI text desteklenir.
+   Ancak, hem Unicode hem de ANSI metinler desteklenir.
 
 - Konsol uygulamaları ve komut satırı bağımsız değişkenleri.
 
-   Ancak, geleneksel masaüstü uygulamaları hala konsol ve komut satırı bağımsız değişkenleri destekler.
+   Ancak, geleneksel masaüstü uygulamaları hala komut satırı bağımsız değişkenleri ve konsolu destekler.
 
 - Ortam değişkenleri.
 
-- Geçerli çalışma dizini kavramı.
+- Geçerli çalışma dizinine kavramı.
 
-- UWP uygulamalar ve statik olarak CRT bağlı ve kullanılarak oluşturulmuş DLL'leri [/MT](../build/reference/md-mt-ld-use-run-time-library.md) veya `/MTd` derleyici seçenekleri.
+- UWP uygulamaları ve statik olarak CRT'ye bağlı ve kullanılarak oluşturulan DLL'ler [/MT](../build/reference/md-mt-ld-use-run-time-library.md) veya `/MTd` derleyici seçenekleri.
 
    Diğer bir deyişle, CRT çoklu iş parçacığı, statik bir sürümünü kullanan bir uygulama.
 
-- Kullanılarak oluşturulmuş bir uygulama [/MDd](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneği.
+- Kullanılarak oluşturulan bir uygulamayı [/MDd](../build/reference/md-mt-ld-use-run-time-library.md) derleyici seçeneği.
 
-   Diğer bir deyişle, bir hata ayıklama, çoklu iş parçacığı kullanan ve CRT DLL özgü sürümü. Bu tür bir uygulamayı Windows çalışma zamanı'desteklenmiyor.
+   Diğer bir deyişle, bir hata ayıklama, çoklu iş parçacıklı ve DLL'ye özgü CRT sürümü. Böyle bir uygulamayı Windows çalışma zamanı üzerinde desteklenmiyor.
 
-UWP uygulama ve önerileri alternatif işlevleri için kullanılamayan CRT işlevleri tam bir listesi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+Kullanılamayan bir UWP uygulaması ve diğer işlevler için öneriler, CRT işlevleri tam bir listesi için bkz. [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

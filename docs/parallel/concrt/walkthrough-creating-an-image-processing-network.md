@@ -1,5 +1,5 @@
 ---
-title: 'İzlenecek yol: bir görüntü işleme ağı oluşturma | Microsoft Docs'
+title: 'İzlenecek yol: görüntü işleme ağı oluşturma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e66de10879596b0e0877eb70f5ac95e082b8ae31
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2586a8fb15d21375ff056164d54f1f5f98891f98
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693659"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42588148"
 ---
 # <a name="walkthrough-creating-an-image-processing-network"></a>İzlenecek yol: Görüntü İşleme Ağı Oluşturma
-Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti blokları bir ağ oluşturmak gösterilmiştir.  
+Bu belge ağ görüntü işleme gerçekleştiren zaman uyumsuz ileti blokları oluşturma işlemini gösterir.  
   
- Ağ onun özelliklerini temel alarak görüntüdeki gerçekleştirmek için hangi işlemleri belirler. Bu örnekte *veri akışı* rota görüntülerine ağ üzerinden model. Veri akışı modelinde iletileri göndererek bağımsız bir program bileşenlerinin birbirleriyle iletişim. Bir bileşen bir ileti aldığında, bu bazı eylemler gerçekleştirme ve başka bir bileşen daha sonra bu eylemin sonucu geçirin. Bu karşılaştırma *kontrol akışı* modeli, hangi uygulama kullanan denetim yapıları, örneğin, koşullu deyimler, döngüler ve benzeri işlemlerin bir programda sırasını denetlemek için.  
+ Ağ özelliklerini temel alarak bir görüntüye gerçekleştirilecek işlemleri belirler. Bu örnekte *veri akışı* rota görüntülerini ağ üzerinden için model. Veri akışı modelinde, bir program bağımsız bileşenleri birbirleriyle iletiler göndererek iletişim. Bir bileşenin bir ileti aldığında, bu bazı eylemler gerçekleştirme ve ardından bu eylemin sonucu başka bir bileşene geçirin. Şununla Karşılaştır *denetim akışı* modelini, uygulamanın kullandığı denetim yapıları, örneğin, koşullu deyimler, döngüler ve benzeri işlemlerin bir programda sırasını denetlemek için.  
   
- Üzerinde veri akışı tabanlı bir ağ oluşturur bir *ardışık düzen* görevler. Her aşama ardışık genel görevinin parçası eşzamanlı olarak gerçekleştirir. Benzetme bu otomobil üretim için bir derleme satırdır. Her araç derleme satırın geçerken bir istasyon çerçeve derler, başka bir altyapısı vb. yükler. Aynı anda birleştirilen birden çok taşıtlardan etkinleştirerek, derleme satır aynı anda tam taşıtlardan bir birleştirme daha iyi verimlilik sağlar.  
+ Veri akışı üzerinde temel bir ağ oluşturur bir *işlem hattı* görev. Ardışık düzenin her aşaması, eşzamanlı olarak genel görevinin bir parçası yapar. Bu bir benzerliği otomobil üretimde montaj ' dir. Her araç montaj hattı geçerken çerçevenin bir istasyondan birleştirir, başka altyapısı ve benzeri yükler. Aynı anda birleştirilmeleri birden çok Araçlar sağlayarak montaj hattı tam araçları bir anda derleyerek daha iyi aktarım hızı sağlar.  
   
 ## <a name="prerequisites"></a>Önkoşullar  
  Bu kılavuza başlamadan önce aşağıdaki belgeleri okuyun:  
@@ -38,70 +38,70 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
 -   [İzlenecek Yol: Veri Akışı Aracısı Oluşturma](../../parallel/concrt/walkthrough-creating-a-dataflow-agent.md)  
   
- Ayrıca, temel bilgileri anladığınızdan öneririz [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] bu kılavuza başlamadan önce.  
+ Temel GDI +'da bu kılavuza başlamadan önce anlamanız da öneririz.  
   
-##  <a name="top"></a> Bölümler  
- Bu kılavuz aşağıdaki bölümleri içerir:  
+##  <a name="top"></a> Bölümleri  
+ Bu izlenecek yol aşağıdaki bölümleri içerir:  
   
 -   [Görüntü işleme işlevleri tanımlama](#functionality)  
   
 -   [Görüntü işleme ağı oluşturma](#network)  
   
--   [Tam bir örnek](#complete)  
+-   [Tam örnek](#complete)  
   
 ##  <a name="functionality"></a> Görüntü işleme işlevleri tanımlama  
- Bu bölümde diskten okunan görüntüleri ile çalışmak için görüntü işleme ağı kullanır destek işlevlerini gösterir.  
+ Bu bölüm, görüntü işleme ağı diskten okunan görüntüleri çalışmak için kullandığı destek işlevlerini gösterir.  
   
- Aşağıdaki işlevleri `GetRGB` ve `MakeColor`, ayıklar ve belirli bir renk tek tek bileşenlerini sırasıyla birleştirir.  
+ Aşağıdaki işlevleri `GetRGB` ve `MakeColor`, ayıklayın ve belirli renk bileşenleri tek tek sırasıyla birleştirin.  
   
  [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_1.cpp)]  
   
 
- Aşağıdaki işlevi `ProcessImage`, çağrıları verilen [std::function](../../standard-library/function-class.md) her piksel renk değerini dönüştürmek için nesne bir [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] [bit eşlem](https://msdn.microsoft.com/library/ms534420.aspx) nesnesi. `ProcessImage` İşlev kullandığı [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) paralel eşleminde her satır işlemek için algoritması.  
+ Aşağıdaki işlev `ProcessImage`, çağrıları verilen [std::function](../../standard-library/function-class.md) GDI +'daki her piksel renk değerini dönüştürmek için nesne [bit eşlem](/windows/desktop/api/gdiplusheaders/nl-gdiplusheaders-bitmap) nesne. `ProcessImage` İşlevini kullanan [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) algoritmasını paralel bit eşlemin her satır işlenecek.  
 
   
  [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_2.cpp)]  
   
- Aşağıdaki işlevleri `Grayscale`, `Sepiatone`, `ColorMask`, ve `Darken`, çağrı `ProcessImage` her piksel renk değerini dönüştürmek için işlev bir `Bitmap` nesnesi. Bu işlevlerin her biri bir lambda ifadesi bir piksel renk dönüşümü tanımlamak için kullanır.  
+ Aşağıdaki işlevleri `Grayscale`, `Sepiatone`, `ColorMask`, ve `Darken`, çağrı `ProcessImage` her piksel renk değerini dönüştürmek için işlevi bir `Bitmap` nesne. Bu işlevlerin her biri bir piksel renk dönüştürülmesini tanımlamak için bir lambda ifadesi kullanır.  
   
  [!code-cpp[concrt-image-processing-filter#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_3.cpp)]  
   
- Aşağıdaki işlevi `GetColorDominance`, ayrıca çağırır `ProcessImage` işlevi. Bununla birlikte, her renk değerinin değiştirilmesi yerine bu işlev kullanır [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) kırmızı, yeşil veya mavi renk bileşeni görüntü dominates olup olmadığını işlem nesnelere.  
+ Aşağıdaki işlev `GetColorDominance`, ayrıca çağırır `ProcessImage` işlevi. Ancak, bu işlev her renk değerinin değiştirilmesi yerine kullanır [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) kırmızı, yeşil ve mavi renk bileşeni görüntü kaplamaktadır olmadığını hesaplamak için nesne.  
   
  [!code-cpp[concrt-image-processing-filter#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_4.cpp)]  
   
- Aşağıdaki işlevi `GetEncoderClsid`, sınıf tanımlayıcısı bir kodlayıcı belirtilen MIME türünü alır. Uygulama bu işlev bir bit eşlem kodlayıcıdan almak için kullanır.  
+ Aşağıdaki işlev `GetEncoderClsid`, sınıf tanımlayıcısı bir kodlayıcı belirtilen MIME türünü alır. Uygulama için bir bit eşlem Kodlayıcı almak için bu işlevi kullanır.  
   
  [!code-cpp[concrt-image-processing-filter#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_5.cpp)]  
   
  [[Üst](#top)]  
   
 ##  <a name="network"></a> Görüntü işleme ağı oluşturma  
- Bu bölümde bir ağ üzerinde görüntü işleme gerçekleştirmek zaman uyumsuz ileti blokları oluşturma açıklar her [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] belirli bir dizinde (.jpg) görüntüsü. Ağ aşağıdaki görüntü işleme işlemleri gerçekleştirir:  
+ Bu bölümde belirli bir dizinin her JPEG (.jpg) görüntüye görüntü işleme gerçekleştiren zaman uyumsuz ileti blokları ağı oluşturmayı açıklar. Ağ aşağıdaki görüntü işleme işlemleri gerçekleştirir:  
   
-1.  Zel tarafından yazılan herhangi bir görüntü için gri tonlamalı dönüştürün.  
+1.  Tom tarafından yazılan herhangi bir görüntü için gri tonlamaya dönüştürme.  
   
-2.  Baskın rengi kırmızı sahip herhangi bir görüntü için yeşil ve mavi bileşenleri kaldırın ve ardından koyu.  
+2.  Baskın renk olarak kırmızı sahip herhangi bir görüntü için yeşil ve mavi bileşenlerinin kaldırın ve sonra koyu.  
   
-3.  Sepya tonlama diğer herhangi bir görüntü için geçerlidir.  
+3.  Sepya tonlama başka herhangi bir görüntü için geçerlidir.  
   
- Ağ, aşağıdaki durumlardan birinde eşleşen yalnızca ilk görüntü işleme işlemi uygular. Örneğin, bir görüntü zel tarafından yazılan ve kırmızı baskın rengini olarak varsa, görüntüyü yalnızca gri tonlamalı dönüştürülür.  
+ Ağ, Bu koşullardan biri eşleşen yalnızca ilk görüntü işleme işlemi uygular. Örneğin, bir görüntü Tom tarafından yazılan ve baskın rengini kırmızı varsa, görüntünün yalnızca gri tonlamaya dönüştürülür.  
   
- Ağ her görüntü işleme işlemi gerçekleştirdikten sonra bir bit eşlem (.bmp) dosyası olarak diske resmi kaydeder.  
+ Ağ her görüntü işleme işlemi gerçekleştirdikten sonra görüntüyü bir bit eşlem (.bmp) dosyası olarak diske kaydeder.  
   
- Aşağıdaki adımlar bu görüntü işleme ağı uygulayan ve o ağ geçerli bir işlev oluşturma gösterir her [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] belirli bir dizinde görüntü.  
+ Aşağıdaki adımlar, bu görüntü ağ işleme uygular ve her bir JPEG görüntüsünü belirli bir dizinde söz konusu ağ uygulandığı bir işlev oluşturma işlemi gösterilmektedir.  
   
 #### <a name="to-create-the-image-processing-network"></a>Görüntü işleme ağı oluşturma  
   
-1.  Bir işlev oluşturun `ProcessImages`, diskte, bir dizinin adını alır.  
+1.  Bir işlev oluşturma `ProcessImages`, disk üzerinde bir dizinin adını alır.  
   
      [!code-cpp[concrt-image-processing-filter#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_6.cpp)]  
   
-2.  İçinde `ProcessImages` işlev, oluşturma bir `countdown_event` değişkeni. `countdown_event` Sınıfı, bu kılavuzda daha sonra gösterilir.  
+2.  İçinde `ProcessImages` işlev, oluşturun bir `countdown_event` değişkeni. `countdown_event` Sınıfı bu yönergelerin ilerleyen bölümünde gösterilir.  
   
      [!code-cpp[concrt-image-processing-filter#8](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_7.cpp)]  
   
-3.  Oluşturma bir [std::map](../../standard-library/map-class.md) ilişkilendirir nesnesi bir `Bitmap` özgün dosya adına sahip nesne.  
+3.  Oluşturma bir [std::map](../../standard-library/map-class.md) ilişkilendirir nesne bir `Bitmap` özgün dosya adıyla nesne.  
   
      [!code-cpp[concrt-image-processing-filter#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_8.cpp)]  
   
@@ -113,37 +113,37 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
      [!code-cpp[concrt-image-processing-filter#11](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_10.cpp)]  
   
-6.  Ağ head için her birinin tam yolunu göndermek için aşağıdaki kodu ekleyin [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] dizinde dosya.  
+6.  Ağ başı her JPEG dosyasının tam yolu dizinde göndermek için aşağıdaki kodu ekleyin.  
   
      [!code-cpp[concrt-image-processing-filter#12](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_11.cpp)]  
   
-7.  Bekle `countdown_event` sıfır ulaşması değişkeni.  
+7.  Bekle `countdown_event` değişkeni sıfır ulaşmak için.  
   
      [!code-cpp[concrt-image-processing-filter#13](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_12.cpp)]  
   
- Aşağıdaki tabloda ağ üyeleri açıklanmaktadır.  
+ Aşağıdaki tabloda, ağ üyelerini açıklar.  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|`load_bitmap`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) yükler nesnesi bir `Bitmap` nesne diskten ve bir giriş eklemeden `map` görüntü özgün dosya adıyla ilişkilendirmek için nesne.|  
-|`loaded_bitmaps`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) yüklenen görüntü için görüntü işleme filtreleri gönderir nesnesi.|  
-|`grayscale`|A `transformer` gri tonlamalı zel tarafından yazılan görüntüleri dönüştürür Nesne. Görüntü meta verilerini, yazarı belirlemek için kullanır.|  
-|`colormask`|A `transformer` baskın rengi kırmızı sahip görüntüleri yeşil ve mavi renk bileşenlerini kaldırır nesnesi.|  
-|`darken`|A `transformer` baskın rengi kırmızı sahip görüntüleri koyulaştırır nesnesi.|  
-|`sepiatone`|A `transformer` sepya tonlama zel tarafından yazılmaz ve daha kırmızı olmayan görüntüler için uygulanan nesnesi.|  
-|`save_bitmap`|A `transformer` işlenen kaydeder nesne `image` bir bit eşlem olarak diske. `save_bitmap` Özgün dosya adını alır `map` nesne ve .bmp için dosya adı uzantısını değiştirir.|  
-|`delete_bitmap`|A `transformer` görüntüleri için bellek boşaltır nesnesi.|  
-|`decrement`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) ağ terminal düğüm olarak davranan nesnesi. Bunu azaltır `countdown_event` görüntüyü işlenmiş olan ana uygulama sinyal nesnesi.|  
+|`load_bitmap`|A [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) yükler nesne bir `Bitmap` diskten nesnesi ve bir girişi ekler `map` görüntünün özgün dosya adıyla ilişkilendirmek için nesne.|  
+|`loaded_bitmaps`|A [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) yüklenen görüntü için görüntü işleme filtreleri gönderen nesne.|  
+|`grayscale`|A `transformer` nesnesini gri tonlamaya Tom tarafından yazılmış iş görüntüleri dönüştürür. Görüntü meta verilerini yazarı belirlemek için kullanır.|  
+|`colormask`|A `transformer` nesnesini kırmızı olarak baskın renge sahip görüntüleri yeşil ve mavi renk bileşenlerine kaldırır.|  
+|`darken`|A `transformer` kırmızı olarak baskın renge sahip görüntüleri koyulaştırır nesne.|  
+|`sepiatone`|A `transformer` sepya tonlama Tom tarafından yazılan değil ve genellikle kırmızı olmayan görüntüleri için geçerli bir nesne.|  
+|`save_bitmap`|A `transformer` işlenen kaydeder nesne `image` diske bir bit eşlem olarak. `save_bitmap` Özgün dosya adını alır. `map` nesne ve .bmp için dosya adı uzantısını değiştirir.|  
+|`delete_bitmap`|A `transformer` görüntüleri için bellek serbest bırakan bir nesne.|  
+|`decrement`|A [concurrency::call](../../parallel/concrt/reference/call-class.md) ağ terminal düğümün gören nesne. Bunu azaltır `countdown_event` ana uygulama görüntü işlendiğini göstermek için nesne.|  
   
- `loaded_bitmaps` İleti arabelleği önemlidir çünkü, olarak bir `unbounded_buffer` nesnesi, sunduğu `Bitmap` birden çok alıcı nesnelere. Hedef blok ne zaman kabul bir `Bitmap` nesnesi `unbounded_buffer` nesnesi değil sunar, `Bitmap` diğer hedefler için nesne. Bu nedenle, hangi bağlantı sipariş nesneleri için bir `unbounded_buffer` nesne önemlidir. `grayscale`, `colormask`, Ve `sepiatone` ileti blokları her kabul etmek için bir filtre kullanmak yalnızca belirli `Bitmap` nesneleri. `decrement` İleti arabelleği önemli bir hedefi olan `loaded_bitmaps` tüm kabul ettiğinden arabellek ileti `Bitmap` bir ileti arabelleklerinin tarafından reddedilen nesneleri. Bir `unbounded_buffer` nesne sırasındaki iletilere yayılması için gereklidir. Bu nedenle, bir `unbounded_buffer` nesne yeni bir hedef blok ona bağlı ve geçerli bir hedef blok bu iletiyi kabul ederse iletisini kabul eden kadar engeller.  
+ `loaded_bitmaps` İleti arabelleği önemlidir çünkü, olarak bir `unbounded_buffer` nesne, sunduğu `Bitmap` birden çok alıcı nesneleri. Ne zaman bir hedef bloğu kabul eden bir `Bitmap` nesnesi `unbounded_buffer` nesne, sunmaz `Bitmap` nesneyi diğer tüm hedeflerden. Bu nedenle, bir bağlantı sırası nesneleri için bir `unbounded_buffer` nesne önemlidir. `grayscale`, `colormask`, Ve `sepiatone` ileti blokları her kabul etmek için bir filtre kullanan yalnızca belirli `Bitmap` nesneleri. `decrement` İleti arabelleği önemli bir hedefi olan `loaded_bitmaps` tüm kabul ettiğinden ileti arabelleği `Bitmap` diğer ileti arabelleklerinin tarafından reddedilen nesneleri. Bir `unbounded_buffer` nesnesinin sırasındaki iletilere yaymak için gereklidir. Bu nedenle, bir `unbounded_buffer` nesne, yeni bir hedef blok ona bağlı ve geçerli bir hedef blok bu iletiyi kabul ediyorsa, iletiyi kabul kadar engeller.  
   
- Uygulamanız birden çok ileti blokları işlemi yalnızca ilk iletisini kabul eden bir ileti bloğu yerine ileti gerektiriyorsa başka bir ileti blok türü gibi kullanabilir `overwrite_buffer`. `overwrite_buffer` Sınıf, bir kerede tek bir ileti içerir, ancak bu ileti her hedeflerine yayar.  
+ Uygulamanızı birden çok ileti işlemi yalnızca ilk iletiyi kabul bir ileti bloğu yerine ileti engeller gerektiriyorsa, başka bir mesaj engelleme türü gibi kullanabilirsiniz `overwrite_buffer`. `overwrite_buffer` Sınıf, bir kerede tek bir ileti içerir, ancak hedeflerinin her biri için bu iletiyi yayar.  
   
  Görüntü işleme ağı aşağıda gösterilmiştir:  
   
  ![Görüntü işleme ağı](../../parallel/concrt/media/concrt_imageproc.png "concrt_imageproc")  
   
- `countdown_event` Nesne bu örnekte tüm görüntüleri işlendiğinde ana uygulama bildirmek görüntü işleme ağı sağlar. `countdown_event` Sınıfını kullanan bir [concurrency::event](../../parallel/concrt/reference/event-class.md) bir sayaç değeri sıfır ulaştığında sinyal nesnesi. Olan bir dosya adı ağ gönderir her zaman ana uygulama sayaç artırılır. Ağ azaltır terminal düğümünün her görüntü işlendikten sonra sayacı. Belirtilen dizin ana uygulama eriştikten sonra onu bekler `countdown_event` kendi sayaç sıfır ulaştı sinyal nesnesi.  
+ `countdown_event` Nesnesi bu örnekte, tüm görüntüleri işlendiğinde ana uygulama bildirmek görüntü işleme ağı sağlar. `countdown_event` Sınıfını kullanan bir [concurrency::event](../../parallel/concrt/reference/event-class.md) sayaç değeri sıfır ulaştığında göstermek için nesne. BT'nin, ağ dosya adı gönderir her zaman ana uygulama sayaç artırılır. Ağ azaltır düzenin terminal düğümünden her görüntü işlendikten sonra sayacı. Belirtilen dizin ana uygulama eriştikten sonra bekler `countdown_event` kendi sayaç sıfır ulaştı göstermek için nesne.  
   
  Aşağıdaki örnekte gösterildiği `countdown_event` sınıfı:  
   
@@ -151,23 +151,23 @@ Bu belgenin, görüntü işlemeyi gerçekleştirmek zaman uyumsuz ileti bloklar�
   
  [[Üst](#top)]  
   
-##  <a name="complete"></a> Tam bir örnek  
- Aşağıdaki kod, tam bir örnek gösterilir. `wmain` İşlevi yönetir [!INCLUDE[ndptecgdiplus](../../parallel/concrt/includes/ndptecgdiplus_md.md)] kitaplığı ve çağrıları `ProcessImages` işlev işleme [!INCLUDE[TLA#tla_jpeg](../../parallel/concrt/includes/tlasharptla_jpeg_md.md)] dosyalar `Sample Pictures` dizin.  
+##  <a name="complete"></a> Tam örnek  
+ Aşağıdaki kod, tam bir örnek gösterir. `wmain` İşlevi yönetir GDI +'KİTAPLIĞI ve çağrıları `ProcessImages` JPEG işlenecek işlevi dosyaları `Sample Pictures` dizin.  
   
  [!code-cpp[concrt-image-processing-filter#15](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_14.cpp)]  
   
- Örnek çıktı aşağıda gösterilmektedir. Her kaynak görüntü, karşılık gelen değiştirilmiş görüntüsüdür.  
+ Örnek çıktı aşağıda gösterilmiştir. Her kaynak görüntüsü, karşılık gelen değiştirilmiş görüntüsüdür.  
   
  ![Örnek çıktı örneğin](../../parallel/concrt/media/concrt_imageout.png "concrt_imageout")  
   
- `Lighthouse` zel Alphin tarafından yazılan ve bu nedenle gri tonlamalı dönüştürülür. `Chrysanthemum`, `Desert`, `Koala`, ve `Tulips` baskın rengi kırmızı varsa ve bu nedenle sahip kaldırılan mavi ve yeşil renk bileşenlerini ve koyu. `Hydrangeas`, `Jellyfish`, ve `Penguins` varsayılan ölçütlere uyan ve bu nedenle toned sepya.  
+ `Lighthouse` Tom Alphin tarafından yazılan ve bu nedenle gri tonlamaya dönüştürülür. `Chrysanthemum`, `Desert`, `Koala`, ve `Tulips` baskın renk olarak kırmızı varsa ve bu nedenle kaldırıldı mavi ve yeşil renk bileşenlerine sahip ve koyu. `Hydrangeas`, `Jellyfish`, ve `Penguins` varsayılan ölçütlerle eşleşen ve bu nedenle toned sepya.  
   
  [[Üst](#top)]  
   
 ### <a name="compiling-the-code"></a>Kod Derleniyor  
- Örnek kodu kopyalayın ve bir Visual Studio projesi yapıştırın veya adlı bir dosyaya yapıştırın `image-processing-network.cpp` ve ardından Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
+ Örnek kodu kopyalayın ve bir Visual Studio projesine yapıştırın veya adlı bir dosyaya yapıştırın `image-processing-network.cpp` ve Visual Studio komut istemi penceresinde aşağıdaki komutu çalıştırın.  
   
- **cl.exe /DUNICODE /EHsc görüntü işleme network.cpp/Link gdiplus.lib**  
+ **cl.exe /DUNICODE/ehsc görüntü işleme network.cpp/Link gdiplus.lib**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Çalışma Zamanı İzlenecek Yollar](../../parallel/concrt/concurrency-runtime-walkthroughs.md)

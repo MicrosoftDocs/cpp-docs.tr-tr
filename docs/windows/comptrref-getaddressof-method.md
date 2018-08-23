@@ -17,33 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7811bcc61d5390257b7cbee95e2c504d3e376298
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: b1ef298dbc8c15dddafedd74c83476663328d42f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641147"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602666"
 ---
 # <a name="comptrrefgetaddressof-method"></a>ComPtrRef::GetAddressOf Metodu
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-InterfaceType* const * GetAddressOf() const;  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Adres geçerli tarafından temsil edilen arabirimi için bir işaretçi **ComPtrRef** nesne.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Adresi geçerli tarafından temsil edilen arabirimi için bir işaretçi alır **ComPtrRef** nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtrRef sınıfı](../windows/comptrref-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+InterfaceType* const * GetAddressOf() const;
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Adres geçerli tarafından temsil edilen arabirimi için bir işaretçi **ComPtrRef** nesne.
+
+## <a name="remarks"></a>Açıklamalar
+
+Adresi geçerli tarafından temsil edilen arabirimi için bir işaretçi alır **ComPtrRef** nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtrRef Sınıfı](../windows/comptrref-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

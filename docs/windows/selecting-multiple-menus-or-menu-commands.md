@@ -17,24 +17,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 02293fce154fa9c4c98c583de02e8967f4d3957b
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: a90aab0fae3edbb54dfdd9176ffe47a18ad1796a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40020219"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596947"
 ---
 # <a name="selecting-multiple-menus-or-menu-commands"></a>Birden Çok Menü veya Menü Komutu Seçme
-Birden çok menü adları ya da menü komutlarını silme veya özelliklerini değiştirme gibi toplu işlemleri gerçekleştirmek için seçebilirsiniz.  
-  
-### <a name="to-select-multiple-menu-commands"></a>Birden çok menü komutları seçmek için  
-  
-1.  Tutarken **Ctrl** anahtar, menüler ya da alt menü komutları, istediğiniz tıklayın.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Menü Düzenleyicisi](../windows/menu-editor.md)
+
+Birden çok menü adları ya da menü komutlarını silme veya özelliklerini değiştirme gibi toplu işlemleri gerçekleştirmek için seçebilirsiniz.
+
+### <a name="to-select-multiple-menu-commands"></a>Birden çok menü komutları seçmek için
+
+1. Tutarken **Ctrl** anahtar, menüler ya da alt menü komutları, istediğiniz tıklayın.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Menü Düzenleyicisi](../windows/menu-editor.md)

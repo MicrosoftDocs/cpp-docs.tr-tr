@@ -5,71 +5,71 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 914da30b-aac5-4cd7-9da3-a5ac08cdd72c
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0296422ce0f9ef49b096d5ea8512530871fc733b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec0de469c208f4fcb027f7757054f5618d12a651
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33094263"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604750"
 ---
 # <a name="collections-ccx"></a>Koleksiyonlar (C + +/ CX)
-C + +/ CX programı standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı koleksiyon türü boş kullanımını yapabilir. Ancak, geçirdiğiniz zaman koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabirimi (ABI) — Örneğin, bir XAML denetimi veya bir JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  
+C + +/ CX programı, standart Şablon kitaplığı (STL) kapsayıcıları veya herhangi bir kullanıcı tanımlı toplama türü ücretsiz kullanımını yapabilirsiniz. Ancak, gönderdiğinizde koleksiyonları ve geriye Windows çalışma zamanı uygulama ikili arabiriminde (ABI) — Örneğin, bir XAML denetimi veya JavaScript istemci — Windows çalışma zamanı koleksiyon türleri kullanmanız gerekir.  
   
- Windows Çalışma Zamanı Modülü arabirimler koleksiyonları ve ilgili türleri ve C + için tanımlar +/ CX collection.h üstbilgi dosyası somut C++ uygulamalarında sağlar. Bu çizim koleksiyon türleri arasındaki ilişkileri göstermektedir:  
+ Windows çalışma zamanı tanımlar arabirimleri koleksiyonları ve ilgili türleri ve C + +/ CX collection.h üstbilgi dosyasında somut C++ uygulamalarını sağlar. Bu çizimde, koleksiyon türleri arasındaki ilişkiler gösterilmektedir:  
   
- ![C&#43;&#43;&#47;CX devralma ağacında koleksiyon türleri için](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
+ ![C&#43;&#43;&#47;CX koleksiyon türleri için devralma ağacı](../cppcx/media/cppcxcollectionsinheritancetree.png "CPPCXCollectionsInheritanceTree")  
   
 -   [Platform::Collections:: Vector sınıfı](../cppcx/platform-collections-vector-class.md) benzer [std::vector sınıfı](../standard-library/vector-class.md).  
   
--   [Platform::Collections sınıfı](../cppcx/platform-collections-map-class.md) sınıfı benzer [std::map sınıfı](../standard-library/map-class.md).  
+-   [Platform::Collections:: Map sınıfı](../cppcx/platform-collections-map-class.md) sınıfına benzer [std::map sınıfı](../standard-library/map-class.md).  
   
--   [Platform::Collections::VectorView sınıfı](../cppcx/platform-collections-vectorview-class.md) ve[Platform::Collections::MapView sınıfı](../cppcx/platform-collections-mapview-class.md) salt okunur sürümleri `Vector` ve `Map`.  
+-   [Platform::Collections:: vectorview sınıfı](../cppcx/platform-collections-vectorview-class.md) ve[Platform::Collections:: mapview sınıfı](../cppcx/platform-collections-mapview-class.md) salt okunur sürümleri `Vector` ve `Map`.  
   
--   Yineleyiciler tanımlanmış [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). Bu yineleyiciler STL yineleyiciler gereksinimlerini karşılamak ve kullanımını etkinleştirmek [std::find](../standard-library/algorithm-functions.md#find), [std::count_if](../standard-library/algorithm-functions.md#count_if)ve herhangi diğer STL algoritmaları [Windows::Foundation::Collections](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) arabirim türü veya [Platform::Collections](../cppcx/platform-collections-namespace.md) somut türü. Örneğin, bu, C# içinde oluşturulur ve bir STL algoritma uygulayan bir Windows çalışma zamanı bileşeni koleksiyonunda yineleyebilirsiniz anlamına gelir.  
+-   Yineleyiciler tanımlanmış [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md). Bu yineleyiciler STL yineleyici için gereksinimleri karşılaması ve kullanımını etkinleştirmek [std::find](../standard-library/algorithm-functions.md#find), [std::count_if](../standard-library/algorithm-functions.md#count_if)ve herhangi başka bir STL algoritmaları [Windows::Foundation:: Collections](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.aspx) arabirimi türüne veya [Platform::Collections](../cppcx/platform-collections-namespace.md) somut türü. Örneğin, bu bir koleksiyonda bir STL algoritması uygulamak ve C# içinde oluşturulan bir Windows çalışma zamanı bileşeni yineleyebilirsiniz anlamına gelir.  
   
     > [!IMPORTANT]
-    >  Proxy yineleyiciler `VectorIterator` ve `VectorViewIterator` proxy nesnelerini kullanan `VectoryProxy<T>` ve `ArrowProxy<T>` STL kapsayıcıları ile kullanımını etkinleştirmek için. Daha fazla bilgi için bu makalenin sonraki bölümlerinde "VectorProxy öğeler" bölümüne bakın.  
+    >  Proxy yineleyiciler `VectorIterator` ve `VectorViewIterator` proxy nesneleri kullanan `VectoryProxy<T>` ve `ArrowProxy<T>` STL kapsayıcıları ile kullanımını etkinleştirmek için. Daha fazla bilgi için bu makalenin sonraki bölümlerinde yer alan "VectorProxy öğeler" bkz.  
   
--   C + +/ CX koleksiyon türleri desteği aynı iş parçacığı güvenliği garanti STL kapsayıcıları destekler.  
+-   C + +/ CX koleksiyon türleri desteği aynı iş parçacığı güvenliği garanti eder, STL kapsayıcıları destekler.  
   
--   [Windows::Foundation::Collections::IObservableVector](http://msdn.microsoft.com/library/windows/apps/br226052.aspx) ve [Windows::Foundation::Collections::IObservableMap](http://msdn.microsoft.com/library/windows/apps/br226050.aspx) koleksiyonu çeşitli şekillerde değiştirdiğinde tetiklenen olayları tanımlayın. Bu arabirimleri uygulayarak [Platform::Collections](../cppcx/platform-collections-map-class.md) ve [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) XAML koleksiyonları ile veri bağlamayı destekler. Örneğin, bir `Vector` , veri bağlama için bir `Grid`, ne zaman, bir koleksiyon için bir öğe ekleme, değiştirme kılavuz Arabiriminde yansıtılır.  
+-   [Windows::Foundation::Collections::IObservableVector](/uwp/api/Windows.Foundation.Collections.IObservableVector_T_) ve [Windows::Foundation::Collections::IObservableMap](/uwp/api/Windows.Foundation.Collections.IObservableMap_K_V_) çeşitli şekillerde koleksiyonu değiştiğinde tetikleyen olayları tanımlayın. Bu arabirimler uygulayarak [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) ve [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) XAML koleksiyonları ile veri bağlama desteği. Örneğin, bir `Vector` , veri bağlama için bir `Grid`olduğunda, bir koleksiyona bir öğe eklemek, bu değişiklik kılavuz kullanıcı Arabiriminde yansıtılır.  
   
 ## <a name="vector-usage"></a>Vektör kullanımı  
- Sınıfınıza dizisi kapsayıcı başka bir Windows çalışma zamanı bileşenine geçmek olduğunda, kullanın [Windows::Foundation::Collections:: IVector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) parametresi veya dönüş türü olarak ve [Platform:: Collections::Vector\<T >](../cppcx/platform-collections-vector-class.md) somut uygulaması olarak. Kullanmayı denerseniz, bir `Vector` türü ortak dönüş değeri veya parametre, derleyici hatası C3986 harekete geçirilen. Değiştirerek hatayı düzeltmek `Vector` için bir `IVector`.  
+ Başka bir Windows çalışma zamanı bileşeni için bir sıralı kapsayıcı geçirilecek sınıfınız varsa kullanın [Windows::Foundation:: Collections:: Ivector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) parametre veya dönüş türü olarak ve [Platform:: Collections::Vector\<T >](../cppcx/platform-collections-vector-class.md) somut bir uygulama olarak. Kullanmayı denerseniz bir `Vector` türü ortak dönüş değeri veya parametre, derleyici hatası C3986 yükseltilir. Hata değiştirerek düzeltebilirsiniz `Vector` için bir `IVector`.  
   
 > [!IMPORTANT]
->  Bir dizi kendi programında geçirilirse, ardından kullanın ya da `Vector` veya `std::vector` daha verimlidir olduklarından `IVector`. Kullanım `IVector` yalnızca kapsayıcı arasında ABI geçirdiğiniz zaman.  
+>  Kendi programında bir dizisini geçiriyorsanız, ya da kullanmak `Vector` veya `std::vector` daha verimlidir çünkü `IVector`. Kullanım `IVector` yalnızca kapsayıcı arasında ABI gönderdiğinizde.  
 >   
->  Windows çalışma zamanı tür sistemi basit diziler kavramını desteklemez ve bu nedenle bir IVector geçiremezsiniz < Platform::Array\<T >> bir dönüş değeri veya yöntem parametresi olarak. Basit bir dizi veya bir dizi sıraları ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
+>  Windows çalışma zamanı tür sistemi, düzensiz diziler kavramını desteklemiyor ve bu nedenle bir Ivector geçirilemez < Platform::Array\<T >> dönüş değeri veya yöntemin parametre olarak. Basit bir dizi veya sıralarının ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
   
- `Vector<T>` ekleme, kaldırma ve erişme öğelerini koleksiyonda ve örtük olarak dönüştürülebilir için gerekli olan yöntemleri sağlayan `IVector<T>`. STL algoritmaları örneklerinde kullanabilirsiniz `Vector<T>`. Aşağıdaki örnek, bazı temel kullanım gösterir. [İşlevi başlamak](../cppcx/begin-function.md) ve [bitiş işlevi](../cppcx/end-function.md) aşağıda verilmiştir `Platform::Collections` ad alanı, değil `std` ad alanı.  
+ `Vector<T>` Koleksiyonda öğe ekleme, kaldırma ve erişme ve örtük olarak dönüştürülebilir için gerekli olan yöntemler sunar `IVector<T>`. STL algoritmaları örneklerinde kullanabilirsiniz `Vector<T>`. Aşağıdaki örnek, bazı temel kullanım gösterir. [Begin işlevi](../cppcx/begin-function.md) ve [end işlevi](../cppcx/end-function.md) aşağıda verilmiştir `Platform::Collections` ad alanı değil `std` ad alanı.  
   
  [!code-cpp[cx_collections#01](../cppcx/codesnippet/CPP/collections/class1.cpp#01)]  
   
- Kullanan var olan kodu varsa `std::vector` ve bir Windows çalışma zamanı bileşenini yeniden, yalnızca birini kullanmak istediğiniz `Vector` alır oluşturucular bir `std::vector` veya oluşturmak için yineleyiciler çiftinin bir `Vector` burada geçirdiğiniz noktada ABI koleksiyonunda. Aşağıdaki örnekte nasıl kullanılacağını gösterir `Vector` taşıma Oluşturucusu verimli başlatma işlemi için bir `std::vector`. Özgün taşıma işleminden sonra `vec` değişkeni artık geçerli değil.  
+ Kullanan mevcut kodu varsa `std::vector` istediğiniz bir Windows çalışma zamanı bileşeni yeniden kullanmak için yalnızca birini kullanın ve `Vector` alan oluşturucular bir `std::vector` veya oluşturmak için Yineleyicilerin bir çiftini bir `Vector` burada geçirdiğiniz bir noktada ABI koleksiyonunda. Aşağıdaki örnek nasıl kullanılacağını gösterir `Vector` taşıma Oluşturucu verimli başlatmadan için bir `std::vector`. Özgün taşıma işlemi sonrasında `vec` değişken artık geçerli değil.  
   
  [!code-cpp[cx_collections#02](../cppcx/codesnippet/CPP/collections/class1.cpp#02)]  
   
- Gelecekteki bir noktada ABI arasında geçmesi gereken dizeleri vektörü varsa dizesi oluşturmak karar vermeniz gerekir başlangıçta olarak `std::wstring` türleri veya as `Platform::String^` türleri. Dizelerde işleme çok yapmanız gereken, ardından kullanın `wstring`. Aksi takdirde, dize olarak oluşturun `Platform::String^` türleri ve daha sonra dönüştürme maliyetini kaçının. Ayrıca bu dizeleri almaya karar vermeniz gerekir bir `std:vector` veya `Platform::Collections::Vector` dahili olarak. Genel bir uygulama olarak kullanmak `std::vector` ve ardından oluşturun bir `Platform::Vector` arasında ABI kapsayıcı geçirdiğinizde almaktır.  
+ Gelecekte bir noktada ABI üzerinden geçmelidir dizelerden oluşan bir vektörü varsa, dizeleri oluşturmak karar vermeniz gerekir başlangıçta olarak `std::wstring` türleri veya as `Platform::String^` türleri. Çok fazla işleme dizelerde yapmanız gerekiyorsa, ardından kullanmak `wstring`. Aksi takdirde, dize olarak oluşturun `Platform::String^` türlerini ve bunları daha sonra dönüştürme maliyeti kaçının. Ayrıca bu dizelere koymak karar vermeniz gerekir bir `std:vector` veya `Platform::Collections::Vector` dahili olarak. Genel bir uygulama olarak kullanın `std::vector` ve oluşturup bir `Platform::Vector` ABI arasında kapsayıcı geçirdiğinizde ait.  
   
-## <a name="value-types-in-vector"></a>Vektör değer türleri  
- Depolanması için herhangi bir öğe bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) eşitlik karşılaştırması örtük veya özel bir kullanarak desteklemelidir [std::equal_to](../standard-library/equal-to-struct.md) sağladığınız karşılaştırıcı. Tüm başvuru türleri ve örtük olarak eşitlik karşılaştırmaları destekleyen tüm skaler türler. Skaler olmayan için değer türleri gibi [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx), veya özel karşılaştırmaları — Örneğin, `objA->UniqueID == objB->UniqueID`— özel işlev nesnesi sağlamanız gerekir.  
+## <a name="value-types-in-vector"></a>Vektör içindeki değer türleri  
+ Depolanması için herhangi bir öğenin bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) eşitlik karşılaştırması, örtük olarak ya da özel bir kullanarak desteklemelidir [std::equal_to](../standard-library/equal-to-struct.md) sağladığınız karşılaştırıcı. Tüm başvuru türleri ve tüm skaler türleri eşitlik karşılaştırmaları örtülü olarak destekler. Skaler olmayan için değer türleri gibi [Windows::Foundation::DateTime](http://msdn.microsoft.com/library/windows/apps/windows.foundation.datetime.aspx), ya da özel karşılaştırmalar için — örneğin, `objA->UniqueID == objB->UniqueID`— bir özel işlev nesnesini sağlamanız gerekir.  
    
   
 ## <a name="vectorproxy-elements"></a>VectorProxy öğeleri  
- [Platform::Collections::VectorIterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections::VectorViewIterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmalar gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ IVector\<T >](http://msdn.microsoft.com/en-us/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemiyor işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](http://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](http://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu yineleyiciler proxy sınıfları kullanan `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` ayrı ayrı öğeler erişim sağlamak için `*`, `->`, ve `[]` STL gerektirdiği işleçler. NET olarak söylemek verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olan `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuzu saydam nesnesidir. Bu proxy nesneleri, çünkü bunlar yalnızca yineleyiciler tarafından dahili kullanım içindir, ancak mekanizması nasıl çalıştığını anlamak kullanışlıdır açıklanmamıştır.  
+ [Platform::Collections:: vectorıterator](../cppcx/platform-collections-vectoriterator-class.md) ve [Platform::Collections:: vectorviewıterator](../cppcx/platform-collections-vectorviewiterator-class.md) kullanımını etkinleştirmek `range for` döngüler ve algoritmaları gibi [std::sort](../standard-library/algorithm-functions.md#sort) bir ile[ Ivector\<T >](http://msdn.microsoft.com/en-us/library/windows/apps/br206631.aspx) kapsayıcı. Ancak `IVector` öğeleri C++ erişilemez bir işaretçiye; yalnızca aracılığıyla erişilebilen [GetAt](http://msdn.microsoft.com/library/windows/apps/br206634.aspx) ve [SetAt](http://msdn.microsoft.com/library/windows/apps/br206642.aspx) yöntemleri. Bu nedenle, bu Yineleyicilerde proxy sınıfları kullanması `Platform::Details::VectorProxy<T>` ve `Platform::Details::ArrowProxy<T>` tek tek öğelerine erişim sağlamak için `*`, `->`, ve `[]` işleçleri, STL gerektirdiği gibi. NET olarak söylemek gerekirse, verilen bir `IVector<Person^> vec`, türü `*begin(vec)` olduğu `VectorProxy<Person^>`. Ancak, proxy neredeyse her zaman kodunuza saydam nesnedir. Yineleyiciler tarafından iç kullanım için yalnızca olduklarından, ancak mekanizması nasıl çalıştığını bilmek yararlıdır çünkü bu proxy nesneleri açıklanmamıştır.  
   
- Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılar, kullanma `auto&&` doğru olarak bağlamak için yineleyici değişken etkinleştirmek için `VectorProxy` öğeleri. Kullanırsanız `auto` veya `auto&`, derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` uyarı metni belirtiliyor.  
+ Kullandığınızda, bir `range for` üzerinden döngü `IVector` kapsayıcılarını, `auto&&` doğru olarak bağlamak için yineleyici değişken etkinleştirmek için `VectorProxy` öğeleri. Kullanırsanız `auto` veya `auto&`, derleyici uyarısı C4239 oluşturulur ve `VectoryProxy` uyarı metinde açıklanan.  
   
- Aşağıdaki çizimde gösterildiği bir `range for` üzerinden döngü bir `IVector<Person^>`. Yürütme satırında 64 kesme durdurulur dikkat edin. **QuickWatch** penceresi gösterir, yineleyici değişken `p` aslında bir `VectorProxy<Person^>` olan `m_v` ve `m_i` üye değişkenleri. Çağırdığınızda ancak `GetType` isteğe bağlı olarak bu değişken üzerinde aynı türde döndürür `Person` örneği `p2`. Takeaway rağmen olan `VectorProxy` ve `ArrowProxy` görünebilir **QuickWatch**, hata ayıklayıcı belirli derleyici hataları veya başka bir yerde, genellikle açıkça kendileri için kod gerekmez.  
+ Aşağıdaki çizimde gösterildiği bir `range for` üzerinden döngü bir `IVector<Person^>`. Yürütme 64 satırında bir kesme noktasında durdurulduğunu dikkat edin. **QuickWatch** penceresi gösterir, yineleyici değişkeni `p` aslında bir `VectorProxy<Person^>` olan `m_v` ve `m_i` üye değişkenleri. Ancak, çağırdığınızda `GetType` isteğe bağlı olarak bu değişken için aynı türde döndürür `Person` örneği `p2`. Ancak olan takeaway `VectorProxy` ve `ArrowProxy` görünebilir **QuickWatch**, hata ayıklayıcı belirli derleyici hataları veya diğer yerler genellikle bunlar için kod gerekmez.  
   
- ![Aralıktaki VectorProxy&#45;döngü için temel](../cppcx/media/vectorproxy-1.png "VectorProxy_1")  
+ ![Aralıktaki VectorProxy&#45;tabanlı for döngüsü](../cppcx/media/vectorproxy-1.png "VectorProxy_1")  
   
- Sahip olduğunuz koduna proxy nesnesi geçici bir senaryo gerçekleştirmek sahip olduğunda bir `dynamic_cast` öğelerde — Örneğin, ne zaman aradığınız XAML nesneleri belirli bir türdeki bir `UIElement` öğe koleksiyonu. Bu durumda, ilk öğeye atamalısınız [Platform::Object](../cppcx/platform-object-class.md)^ ve dinamik atama gerçekleştirin:  
+ Sahip olduğunuz koda proxy nesne çevresinde bir senaryo gerçekleştirmek için sahip olduğunda bir `dynamic_cast` öğelerde — Örneğin, ne zaman aradığınız XAML nesneleri belirli bir türün bir `UIElement` öğe koleksiyonu. Bu durumda, ilk öğeye dönüştürmelisiniz [Platform::Object](../cppcx/platform-object-class.md)^ ve dinamik atama gerçekleştirin:  
   
 ```  
   
@@ -87,61 +87,61 @@ void FindButton(UIElementCollection^ col)
 }  
 ```  
   
-## <a name="map-usage"></a>Harita kullanımı  
- Bu örnek öğeleri eklemek ve de aramak gösterilmektedir bir [Platform::Collections](../cppcx/platform-collections-map-class.md)ve sonra geri dönüp `Map` salt okunur olarak [Windows::Foundation::Collections::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx) türü.  
+## <a name="map-usage"></a>Eşleme kullanımı  
+ Bu örnek, aramak ve öğeleri eklemek nasıl gösterir bir [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md)ve ardından dönün `Map` olarak bir salt okunur [Windows::Foundation::Collections::IMapView] / uwp/api / Windows.Foundation.Collections.IMapView_K_V_) türü.  
   
  [!code-cpp[cx_collections#04](../cppcx/codesnippet/CPP/collections/class1.cpp#04)]  
   
- Genel olarak, iç harita işlevselliği için tercih ettiğiniz `std::map` performans nedenleriyle türü. Kapsayıcı ABI arasında geçirmek varsa oluşturmak bir [Platform::Collections](../cppcx/platform-collections-map-class.md) gelen [std::map](../standard-library/map-class.md) ve geri dönüp `Map` olarak bir [Windows::Foundation:: Collections::IMap](http://msdn.microsoft.com/library/windows/apps/br226042.aspx). Kullanmayı denerseniz, bir `Map` türü ortak dönüş değeri veya parametre, derleyici hatası C3986 harekete geçirilen. Değiştirerek hatayı düzeltmek `Map` için bir `IMap`. Bazı durumlarda — Örneğin, çok sayıda aramaları veya eklemeleri yetişememe ve koleksiyon sık arasında ABI geçtiğiniz — kullanmak daha ucuz olabilir `Platform::Collections::Map` başlangıçtan itibaren ve dönüştürmemaliyetinikaçının`std::map`. Herhangi bir durumda, arama önlemek ve işlemleri eklemek bir `IMap` bu üç tür en az kullanıcı olduğundan. Dönüştür `IMap` yalnızca kapsayıcı ABI arasında geçirmek noktada.  
+ Genel olarak, iç eşleme işlevselliği için tercih ettiğiniz `std::map` Performans nedeniyle türü. ABI arasında kapsayıcı geçirmek zorundaysanız, oluşturun bir [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) gelen [std::map](../standard-library/map-class.md) ve dönüş `Map` olarak bir [Windows::Foundation:: Collections::IMap](/uwp/api/Windows.Foundation.Collections.IMap_K_V_). Kullanmayı denerseniz bir `Map` türü ortak dönüş değeri veya parametre, derleyici hatası C3986 yükseltilir. Hata değiştirerek düzeltebilirsiniz `Map` için bir `IMap`. Bazı durumlarda — Örneğin, çok sayıda aramaları veya eklemeler yaparak değil ve koleksiyon sık ABI geçirdiğinizden — kullanmak daha ucuz olabilir `Platform::Collections::Map` baştan ve dönüştürmemaliyetiönlemek`std::map`. Herhangi bir durumda, arama önlemek ve üzerinde ekleme işlemlerinin bir `IMap` çünkü bunlar en yüksek performanslı üç tür. Dönüştürme `IMap` yalnızca kapsayıcı ABI arasında geçirmek noktada.  
   
-## <a name="value-types-in-map"></a>Haritadaki değer türleri  
- Öğeleri bir [Platform::Collections](../cppcx/platform-collections-map-class.md) sıralanır. Depolanması için herhangi bir öğe bir `Map` daha az desteklemelidir-sıralama, dolaylı ya da özel bir kullanarak strict zayıf ile karşılaştırma daha [stl::less](../standard-library/less-struct.md) sağladığınız karşılaştırıcı. Skaler türler karşılaştırma örtük olarak destekler. Skaler olmayan için değer türleri gibi `Windows::Foundation::DateTime`, veya özel karşılaştırmaları — Örneğin, `objA->UniqueID < objB->UniqueID`— özel bir karşılaştırıcı sağlamanız gerekir.  
+## <a name="value-types-in-map"></a>Eşlem içindeki değer türleri  
+ Öğeleri bir [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) sıralanır. Depolanması için herhangi bir öğenin bir `Map` daha az desteklemesi gerekir-örtük olarak ya da özel bir kullanarak sıralama katı zayıf ile karşılaştırması [stl::less](../standard-library/less-struct.md) sağladığınız karşılaştırıcı. Skaler türleri, karşılaştırma dolaylı olarak destekler. Skaler olmayan için değer türleri gibi `Windows::Foundation::DateTime`, ya da özel karşılaştırmalar için — örneğin, `objA->UniqueID < objB->UniqueID`— özel bir karşılaştırıcı sağlamanız gerekir.  
   
 ## <a name="collection-types"></a>Koleksiyon türleri  
- Koleksiyonları dört kategoriye ayrılır: salt okunur sürümleri dizisi koleksiyonları ve ilişkilendirilebilir koleksiyonları ve değiştirilebilir. Ayrıca, C + +/ CX koleksiyonları erişmeyi kolaylaştırmak üç yineleyici sınıfları sağlayarak koleksiyonları geliştirir. 
+ Koleksiyonlar, dört kategoriye ayrılır: salt okunur sürümleri sıra koleksiyonlar ve ilişkili koleksiyonlar ve değiştirilebilir. Ayrıca, C + +/ CX koleksiyonları erişme basitleştiren üç yineleyici sınıflar sağlayarak koleksiyonları geliştirir. 
   
- Değiştirilebilir bir koleksiyonun öğelerini değiştirilebilir, ancak olarak bilinen bir salt okunur koleksiyonun öğelerini bir *Görünüm*, salt okunur. Öğeleri bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) veya[Platform::Collections::VectorView](../cppcx/platform-collections-vectorview-class.md) koleksiyonu erişilebilir yineleyici veya koleksiyonun kullanarak [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) ve bir dizin. İlişkilendirilebilir bir koleksiyonun öğelerini erişilebilir koleksiyonunun kullanarak [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar.  
+ Değiştirilebilir bir koleksiyonun öğeleri değiştirilebilir, ancak olarak bilinen bir salt okunur koleksiyon öğelerini bir *görünümü*, salt okunur. Öğeleri bir [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) veya[Platform::Collections:: vectorview](../cppcx/platform-collections-vectorview-class.md) koleksiyonu, bir yineleyici veya koleksiyonun kullanarak erişilebilir [Vector::GetAt](../cppcx/platform-collections-vector-class.md#getat) ve dizin. İlişkili bir koleksiyon öğelerini koleksiyonun kullanarak erişilebilir [Map::Lookup](../cppcx/platform-collections-map-class.md#lookup) ve bir anahtar.  
   
  [Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)  
- Değiştirilebilir, ilişkilendirilebilir koleksiyonu. Harita, anahtar-değer çiftleri öğelerdir. İlişkili değerini ve tüm anahtar-değer çiftleri yineleme almak için bir anahtar bakarak, her ikisi de desteklenir.  
+ Değiştirilebilir, ilişkili bir koleksiyon. Harita öğelerine anahtar-değer çiftleridir. İlişkili değerini ve tüm anahtar-değer çiftleri yineleme almak için bir anahtar arama, her ikisi de desteklenir.  
   
- `Map` ve `MapView` üzerinde şablonlu olan `<K, V, C = std::less<K>>`; bu nedenle, karşılaştırıcı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` üzerinde şablonlu olan `<T, E = std::equal_to<T>>` davranışını özelleştirebilirsiniz böylece `IndexOf()`. Bu çoğunlukla önemlidir `Vector` ve `VectorView` değeri yapılar. Örneğin, bir vektör oluşturmak için\<Windows::Foundation::DateTime >, DateTime aşırı değil çünkü özel bir karşılaştırıcı sağlamalısınız == işleci.  
+ `Map` ve `MapView` şablonlu üzerinde olan `<K, V, C = std::less<K>>`; bu nedenle karşılaştırıcı özelleştirebilirsiniz.  Ayrıca, `Vector` ve `VectorView` şablonlu üzerinde olan `<T, E = std::equal_to<T>>` davranışını özelleştirebilmeniz için `IndexOf()`. Bu çoğunlukla için önemlidir `Vector` ve `VectorView` değeri yapılar. Örneğin, bir vektör oluşturmak için\<Windows::Foundation::DateTime >, DateTime aşırı yüklenebilir değil çünkü özel bir karşılaştırıcı sağlamalısınız == işleci.  
   
  [Platform::Collections::MapView Sınıfı](../cppcx/platform-collections-mapview-class.md)  
- Bir salt okunur sürümünü bir `Map`.  
+ Salt okunur bir sürümünü bir `Map`.  
   
  [Platform::Collections::Vector Sınıfı](../cppcx/platform-collections-vector-class.md)  
- Değiştirilebilir dizisi koleksiyonu. `Vector<T>` sabiti zamanı rasgele erişim ve amortized-sabiti-time destekler [Append](../cppcx/platform-collections-vector-class.md#append) işlemleri...  
+ Değiştirilebilir dizisi koleksiyonu. `Vector<T>` sabiti zamanı rastgele erişim ve amorti edilmiş-sabit zamanlı destekler [ekleme](../cppcx/platform-collections-vector-class.md#append) işlemleri...  
   
  [Platform::Collections::VectorView Sınıfı](../cppcx/platform-collections-vectorview-class.md)  
- Bir salt okunur sürümünü bir `Vector`.  
+ Salt okunur bir sürümünü bir `Vector`.  
   
  [Platform::Collections::InputIterator Sınıfı](../cppcx/platform-collections-inputiterator-class.md)  
- STL giriş yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
+ Bir STL giriş yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
   
  [Platform::Collections::VectorIterator Sınıfı](../cppcx/platform-collections-vectoriterator-class.md)  
- STL değişebilir rasgele erişim yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
+ STL değişebilir rastgele erişim yineleyici gereksinimlerini karşılayan bir STL yineleyici.  
   
  [Platform::Collections::VectorViewIterator Sınıfı](../cppcx/platform-collections-vectorviewiterator-class.md)  
- Bir STL gereksinimlerini karşılayan bir STL yineleyici `const` rasgele erişim yineleyici.  
+ Bir STL gereksinimlerini karşılayan bir STL yineleyici `const` rasgele erişim yineleyicisi.  
   
-### <a name="begin-and-end-functions"></a>Begin() ve end() işlevleri  
- İşlenecek STL kullanımını kolaylaştırmak için `Vector`, `VectorView`, `Map`, `MapView`ve rasgele `Windows::Foundation::Collections` nesneleri, C + +/ CX destekleyen aşırı [işlevi başlamak](../cppcx/begin-function.md) ve [bitiş İşlev](../cppcx/end-function.md) olmayan üye işlevleri.  
+### <a name="begin-and-end-functions"></a>const_iterator ve end() işlevleri  
+ İşlenecek STL kullanımını basitleştirmek için `Vector`, `VectorView`, `Map`, `MapView`ve rastgele `Windows::Foundation::Collections` nesneleri, C + +/ CX aşırı yüklemeleri destekler [begin işlevi](../cppcx/begin-function.md) ve [bitiş İşlev](../cppcx/end-function.md) üye harici işlevleri.  
   
  Aşağıdaki tabloda kullanılabilir yineleyiciler ve işlevleri listeler.  
   
 |Yineleyiciler|İşlevler|  
 |---------------|---------------|  
-|[Platform::Collections::VectorIterator\<T >](../cppcx/platform-collections-vectoriterator-class.md)<br /><br /> (Dahili olarak depolar [Windows::Foundation::Collections:: IVector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) ve tamsayı)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md)([Windows::Foundation::Collections:: IVector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx))|  
-|[Platform::Collections::VectorViewIterator\<T >](../cppcx/platform-collections-vectorviewiterator-class.md)<br /><br /> (Dahili olarak depolar [IVectorView\<T >](http://msdn.microsoft.com/library/windows/apps/br226058.aspx)^ ve tamsayı)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([IVectorView\<T >](http://msdn.microsoft.com/library/windows/apps/br226058.aspx)^)|  
-|[Platform::Collections::InputIterator\<T >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolar [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([IIterable\<T >](http://msdn.microsoft.com/library/windows/apps/br226024.aspx))|  
-|[Platform::Collections::InputIterator < IKeyValuePair\<K, V > ^ >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolar [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([IMAP\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226042.aspx).|  
-|[Platform::Collections::InputIterator < IKeyValuePair\<K, V > ^ >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolar [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[Begin](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([Windows::Foundation::Collections::IMapView](http://msdn.microsoft.com/library/windows/apps/br226037.aspx))|  
+|[Platform::Collections:: vectorıterator\<T >](../cppcx/platform-collections-vectoriterator-class.md)<br /><br /> (Dahili olarak depolayan [Windows::Foundation:: Collections:: Ivector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) ve tamsayı)|[başlamak](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md)([Windows::Foundation:: Collections:: Ivector\<T >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx))|  
+|[Platform::Collections:: vectorviewıterator\<T >](../cppcx/platform-collections-vectorviewiterator-class.md)<br /><br /> (Dahili olarak depolayan [IVectorView\<T >](http://msdn.microsoft.com/library/windows/apps/br226058.aspx)^ ve tamsayı)|[başlamak](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([IVectorView\<T >](http://msdn.microsoft.com/library/windows/apps/br226058.aspx)^)|  
+|[Platform::Collections:: ınputıterator\<T >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolayan [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[başlamak](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([Iıterable\<T >](http://msdn.microsoft.com/library/windows/apps/br226024.aspx))|  
+|[Platform::Collections:: ınputıterator < IKeyValuePair\<K, V > ^ >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolayan [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[başlamak](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([IMAP\<K, V >](/uwp/api/Windows.Foundation.Collections.IMap_K_V_).|  
+|[Platform::Collections:: ınputıterator < IKeyValuePair\<K, V > ^ >](../cppcx/platform-collections-inputiterator-class.md)<br /><br /> (Dahili olarak depolayan [IIterator\<T >](http://msdn.microsoft.com/library/windows/apps/br226026.aspx)^ ve t)|[başlamak](../cppcx/begin-function.md)/ [son](../cppcx/end-function.md) ([Windows:: Foundation::Collections::IMapView]/uwp/api/Windows.Foundation.Collections.IMapView_K_V_))|  
   
-### <a name="collection-change-events"></a>Koleksiyon değişikliği olayları  
- `Vector` ve `Map` bir koleksiyon nesnesi değiştirildiğinde meydana gelen olayları veya sıfırlama uygulayarak XAML koleksiyonları veri bağlamasını destekleyen veya bir koleksiyonun herhangi bir öğe eklendiğinde, kaldırıldı veya değiştirildi. Devralınan olamaz rağmen bu destek databinding kendi türlerine yazabilirsiniz `Map` veya `Vector` bu türlerde korumalı için.  
+### <a name="collection-change-events"></a>Toplama değişiklik olayları  
+ `Vector` ve `Map` koleksiyon nesnesi değiştirildiğinde meydana gelen olayları veya sıfırlama uygulayarak XAML koleksiyonları'nda veri bağlama desteği veya bir koleksiyonun herhangi bir öğe eklendiğinde, kaldırıldı veya değiştirildi. Öğesinden devralamaz olsa da bu destek veri bağlama kendi türlerinizi yazabilirsiniz `Map` veya `Vector` türlerine korumalı olduğundan.  
   
- [Windows::Foundation::Collections::VectorChangedEventHandler](http://msdn.microsoft.com/library/windows/apps/br206656.aspx) ve [Windows::Foundation::Collections::MapChangedEventHandler](http://msdn.microsoft.com/library/windows/apps/br206644.aspx) temsilcileri belirtmek için olay işleyicileri imzaları Koleksiyon olayları değiştirin. [Windows::Foundation::Collections::CollectionChange](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) ortak enum sınıfı ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` ref sınıfları depolamak olay neyin neden olduğunu belirlemek için olay bağımsız değişkenler. *`EventArgs` Türleri tanımlanmış `Details` ad alanı oluşturmak veya bunları açıkça kullandığınızda tüketen gerekmez çünkü `Map` veya `Vector`.  
+ [Windows::Foundation::Collections::VectorChangedEventHandler](/uwp/api/windows.foundation.collections.vectorchangedeventhandler) ve [Windows::Foundation::Collections::MapChangedEventHandler](/uwp/api/windows.foundation.collections.mapchangedeventhandler) temsilcileri belirtmek için olay işleyicileri imzaları değişiklik olayları koleksiyonu. [Windows::Foundation::Collections::CollectionChange](http://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.collectionchange.aspx) genel sabit listesi sınıfı ve `Platform::Collection::Details::MapChangedEventArgs` ve `Platform::Collections::Details::VectorChangedEventArgs` başvuru sınıfları depolamak olay nedenini belirlemek için olay bağımsız değişkenleri. *`EventArgs` Türleri `Details` ad alanı oluşturmak veya bunları açıkça kullandığınızda kullanmak durumunda olmadığınızdan dolayı `Map` veya `Vector`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür sistemi](../cppcx/type-system-c-cx.md)   

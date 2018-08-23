@@ -13,18 +13,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 56b6642bb24107da4c09856dbd8daaf70fb7dfd5
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 7ba556ee3803bb00f07032e0589209af2d32addf
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015013"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591759"
 ---
 # <a name="universal-windows-apps-c"></a>Evrensel Windows Uygulamaları (C++)
 
 Evrensel Windows Platformu (UWP) uygulamaları otomatik olarak farklı cihazlardaki farklı ekran boyutları için ayarlar içeriğin etrafında ortalanır basit kullanıcı arabirimlerini vurgulayan tasarım ilkeleri kümesini gerçekleştirir. XAML biçimlendirme ve yerel C++ kodunu arka plan kullanıcı arabirimini oluşturun. Ayrıca, diğer dillerde yazılmış UWP uygulamaları tarafından kullanılan bileşenler (DLL'ler) oluşturabilirsiniz. UWP uygulamaları için API yüzeyi, çok çeşitli işletim sistemi hizmetleri sağlayan, katsayıları iyi belirlenmiş bir kitaplıktır Windows Runtime ' dir.
 
-> [!TIP]  
+> [!TIP]
 > Windows 10 için Microsoft Store aracılığıyla dağıtımı için var olan masaüstü uygulamanızı paketlemek için Masaüstü Köprüsü uygulaması dönüştürücüyü kullanabilirsiniz. Daha fazla bilgi için [kullanarak Visual C++ çalışma zamanı Centennial projesinde](https://blogs.msdn.microsoft.com/vcblog/2016/07/07/using-visual-c-runtime-in-centennial-project) ve [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
 ## <a name="uwp-apps-that-use-cwinrt"></a>UWP uygulamaları kullanmak C + +/ WinRT
@@ -46,4 +46,5 @@ C + +/ WinRT olan yeni, yalnızca üstbilgi kitaplık tabanlı C++ dil projeksiy
 Windows çalışma zamanı C++ Şablon kitaplığı, Windows çalışma zamanı özel durum gerektirmeyen bir ortamda erişebilmeniz için ISO C++ kod tarafından alt düzey COM arabirimleri sağlar. Çoğu durumda, C + kullanmanızı öneririz +/ WinRT ya da C + +/ CX UWP uygulama geliştirme için Windows çalışma zamanı C++ Şablon kitaplığı yerine. Windows çalışma zamanı C++ Şablon Kitaplığı hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Visual C++](../visual-cpp-in-visual-studio.md)<br/>
+
+[Visual C++](../visual-cpp-in-visual-studio.md)<br/>

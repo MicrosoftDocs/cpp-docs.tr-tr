@@ -17,33 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5ff52245f518158c3ca5c44c6af88307d9a55ab4
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: c80372070589e1a5c57d2ea08f80fea0467b5dc7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39644849"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596725"
 ---
 # <a name="comptrrefbaseptr-data-member"></a>ComPtrRefBase::ptr_ Veri Üyesi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T* ptr_;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **ptr_** korunan verilerin üyesidir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtrRefBase sınıfı](../windows/comptrrefbase-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+T* ptr_;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Geçerli bir şablon parametresi tarafından belirtilen tür işaretçisi.
+
+## <a name="remarks"></a>Açıklamalar
+
+**ptr_** korunan verilerin üyesidir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtrRefBase Sınıfı](../windows/comptrrefbase-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

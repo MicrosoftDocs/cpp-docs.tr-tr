@@ -15,19 +15,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::STAThreadAttribute Class
 ms.assetid: f97960fc-e673-4d9e-910a-54c8415411c4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab58409bf86af77c9b1f751b9978b5e7103bd043
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 90194dd72b5192fab71065c2275adb4e066bcb0e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089359"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590789"
 ---
 # <a name="platformstathreadattribute-class"></a>Platform::STAThreadAttribute sınıfı
-Bir uygulama için iş parçacığı modelini tek iş parçacıklı (STA) olduğunu gösterir.  
+Bir uygulama için iş parçacığı modeli tek iş parçacıklı grup (STA) olduğunu gösterir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,7 +44,7 @@ public ref class STAThreadAttribute sealed : Attribute
 |[STAThreadAttribute Oluşturucusu 1](#ctor)|Sınıfının yeni bir örneğini başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
- STAThreadAttribute özniteliği devraldığı [Platform::Object sınıfı](../cppcx/platform-object-class.md). STAThreadAttribute overloads ya da aşağıdaki üyeleri vardır:  
+ STAThreadAttribute özniteliğini devraldığı [Platform::Object sınıfı](../cppcx/platform-object-class.md). STAThreadAttribute aşırı veya aşağıdaki üyeleri içerir:  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -58,7 +58,7 @@ public ref class STAThreadAttribute sealed : Attribute
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** collection.h  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
 
 
 
@@ -83,11 +83,11 @@ public:virtual override bool Equals(  Object^ obj)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- Obj  
+ obj  
  Karşılaştırma yapılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` nesneleri eşitse; Aksi takdirde `false`.  
+ `true` nesneler eşit ise; Aksi takdirde, `false`.  
   
 
 

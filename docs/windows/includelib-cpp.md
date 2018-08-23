@@ -17,58 +17,63 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d6f6a4dc4f23460b3661da4ed3775708cac9b6d
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 551ae176504e3bbbca034ca91894ef793ea268fd
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016183"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584348"
 ---
 # <a name="includelib-c"></a>includelib (C++)
-Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ includelib(  
-   name.idl  
-) ];  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Name.idl*  
- Oluşturulan .idl dosyasının bir parçası olarak dahil istediğiniz .idl dosyasının adı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **İncludelib** C++ öznitelik neden olur, sonra oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası `importlib` deyimi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kodu, .cpp dosyasında gösterilir:  
-  
-```cpp  
-// cpp_attr_ref_includelib.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[includelib("includelib.idl")];  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Her yerde|  
-|**Tekrarlanabilir**|Evet|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [içeri aktarma](../windows/import.md)   
- [importidl](../windows/importidl.md)   
- [İçerir](../windows/include-cpp.md)   
- [importlib](../windows/importlib.md)   
+
+Oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası neden olur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ includelib(
+   name.idl
+) ];
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Name.idl*  
+Oluşturulan .idl dosyasının bir parçası olarak dahil istediğiniz .idl dosyasının adı.
+
+## <a name="remarks"></a>Açıklamalar
+
+**İncludelib** C++ öznitelik neden olur, sonra oluşturulan .idl dosyasına eklenecek bir .idl veya .h dosyası `importlib` deyimi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kodu, .cpp dosyasında gösterilir:
+
+```cpp
+// cpp_attr_ref_includelib.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[includelib("includelib.idl")];
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Her yerde|
+|**Tekrarlanabilir**|Evet|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
+[import](../windows/import.md)  
+[importidl](../windows/importidl.md)  
+[İçerir](../windows/include-cpp.md)  
+[importlib](../windows/importlib.md)  

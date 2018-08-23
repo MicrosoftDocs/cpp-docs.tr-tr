@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 14c78a92ac66ee998e11f7101a6a8306be73862a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 46e2a87515e2b129c31f68e31b3231eb1699e844
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641121"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591114"
 ---
 # <a name="boolstructmember-data-member"></a>BoolStruct::Member Veri Üyesi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-int Member;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirten bir [ComPtr](../windows/comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** internal.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [BoolStruct yapısı](../windows/boolstruct-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+int Member;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirten bir [ComPtr](../windows/comptr-class.md) ya da bir arabirimin nesnenin ömrünü yönetmek değildir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** internal.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[BoolStruct Yapısı](../windows/boolstruct-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

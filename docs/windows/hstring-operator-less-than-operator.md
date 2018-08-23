@@ -15,38 +15,43 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1bdc6d54a6c9b60036d7434edec960715db304e2
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 0a89054dd7ce105f059083f3bd5ebb8db685396f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017688"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42591948"
 ---
 # <a name="hstringoperatorlt-operator"></a>HString::Operator&lt; işleci
-İkinci parametre ilk parametre olup değerinden gösterir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-inline bool operator<(  
-    const HString& lhs,   
+
+İkinci parametre ilk parametre olup değerinden gösterir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+inline bool operator<(
+    const HString& lhs,
     const HString& rhs) throw()  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *lhs*  
- Karşılaştırılacak ilk parametre. *lhs* başvuru olabilir bir **Hstrıng**.  
-  
- *Sol*  
- Karşılaştırılacak ikinci parametre. *Sol* başvuru olabilir bir **Hstrıng**.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- **doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HString Sınıfı](../windows/hstring-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*lhs*  
+Karşılaştırılacak ilk parametre. *lhs* başvuru olabilir bir **Hstrıng**.
+
+*Sol*  
+Karşılaştırılacak ikinci parametre. *Sol* başvuru olabilir bir **Hstrıng**.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**doğru** varsa *lhs* parametresi değerinden daha küçük *sol* parametre; Aksi takdirde **false**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HString Sınıfı](../windows/hstring-class.md)

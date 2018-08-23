@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 57444d41efffcb36e023c7055335159b69737a8a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: a8721bd4754ff64fb6e7068da25775e165cae066
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40018809"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584202"
 ---
 # <a name="srwlocksharedtraitsgetinvalidvalue-method"></a>SRWLockSharedTraits::GetInvalidValue Metodu
-Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-inline static Type GetInvalidValue();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İçin bir tanıtıcı bir **SRWLockSharedTraits** nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLockSharedTraits Yapısı](../windows/srwlocksharedtraits-structure.md)
+
+Alır bir **SRWLockSharedTraits** her zaman geçersiz bir nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+inline static Type GetInvalidValue();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İçin bir tanıtıcı bir **SRWLockSharedTraits** nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SRWLockSharedTraits Yapısı](../windows/srwlocksharedtraits-structure.md)

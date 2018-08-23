@@ -1,5 +1,5 @@
 ---
-title: 'Varsayılan:: (type_name):: GetHashCode Yöntemi | Microsoft Docs'
+title: 'Varsayılan:: (type_name):: GetHashCode metot | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -9,18 +9,18 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 58ea60f8-f820-4103-9b9b-b6635ada3fa5
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93e48e515ef1bd5461e91b0cf7ea29ff4ec4728c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d6461e6c94a6889c956ac0319c55c9ee5d2a361
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086414"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608294"
 ---
-# <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode Yöntemi
+# <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode metodu
 Bu örneğin karma kodunu döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
@@ -35,7 +35,7 @@ public:int GetHashCode()
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
  **Namespace:** varsayılan  
   

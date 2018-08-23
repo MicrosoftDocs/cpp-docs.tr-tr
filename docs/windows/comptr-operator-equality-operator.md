@@ -15,52 +15,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e68566b5f8fa519a3cfcd5a406cc812edfaf8480
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 24ca52eccc814b82e5f9bdd6ddac6458fb5992fe
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648600"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607142"
 ---
 # <a name="comptroperator-operator"></a>ComPtr::operator== İşleci
-Belirtir olup iki **ComPtr** nesneler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-bool operator==(  
-   const ComPtr<T>& a,  
-   const ComPtr<U>& b  
-);  
-  
-bool operator==(  
-   const ComPtr<T>& a,  
+
+Belirtir olup iki **ComPtr** nesneler.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+bool operator==(
+   const ComPtr<T>& a,
+   const ComPtr<U>& b
+);
+
+bool operator==(
+   const ComPtr<T>& a,
    decltype(__nullptr)  
-);  
-  
-bool operator==(  
-   decltype(__nullptr),  
-   const ComPtr<T>& a  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *a*  
- Bir başvuru bir **ComPtr** nesne.  
-  
- *b*  
- Başka bir başvuru **ComPtr** nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.  
-  
- İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşittir **nullptr**; Aksi takdirde **false**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Namespace](../windows/microsoft-wrl-namespace.md)   
- [ComPtr Sınıfı](../windows/comptr-class.md)
+);
+
+bool operator==(
+   decltype(__nullptr),
+   const ComPtr<T>& a
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*a*  
+Bir başvuru bir **ComPtr** nesne.
+
+*b*  
+Başka bir başvuru **ComPtr** nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İlk işleç sayıları **true** , nesne *bir* nesneye eşit olup *b*; Aksi takdirde **false**.
+
+İkinci ve üçüncü işleçleri yield **true** , nesne *bir* eşittir **nullptr**; Aksi takdirde **false**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)  
+[ComPtr Sınıfı](../windows/comptr-class.md)

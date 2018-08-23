@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ChangedStateException
 ms.assetid: f894beac-9e80-4fac-ac25-89f1dbc0a6a4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04daf6229ffa3f5ce41087a34ab53d92e3a1361c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 029242a466b7fbac0d967596c114eb0ad45aa569
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087955"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603218"
 ---
 # <a name="platformchangedstateexception-class"></a>Platform::ChangedStateException sınıfı
-Bir nesnenin iç durumu değiştiğinde, böylece yöntemi sonuçlarını geçersiz kılmalarını oluşturulur.  
+Bir nesnenin iç durumu değiştiğinde, dolayısıyla yöntemin sonuçları geçersiz kılarak anında oluşturulur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,18 +33,18 @@ public ref class ChangedStateException : COMException,    IException,    IPrinta
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir koleksiyon yineleyici veya bir koleksiyon görünümü yöntemlerini yöntemi sonuçlarını geçersiz kılmalarını üst koleksiyon değiştikten sonra çağrıldığında, bu özel durum bir örnektir.  
+ Yöntemin sonuçları geçersiz kılmalarını üst koleksiyon değiştikten sonra bir koleksiyon yineleyici veya koleksiyon görünümü yöntemler çağrıldığında, bu özel durum burada örnek verilebilir.  
   
- Daha fazla bilgi için bkz: [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
+ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

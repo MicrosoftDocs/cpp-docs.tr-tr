@@ -28,15 +28,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2949a3d60af6d9058f02d12aac1fd86dead5affa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7e30fb37be6738b7100b84a1898c02ab4230c41b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378151"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597579"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
-**/Za** derleyici seçeneği ANSI C89 veya ISO C ++ 11 ile uyumlu olmayan dil yapıları için bir hata gösterir. **/Ze** varsayılan olarak etkindir, derleyici seçeneği Microsoft uzantıları sağlar.  
+**/Za** derleyici seçeneği, ANSI C89 veya ISO C ++ 11 ile uyumlu olmayan dil yapıları için bir hata gösterir. **/Ze** derleyici seçeneği, varsayılan olarak açıktır, Microsoft uzantıları sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,23 +48,23 @@ ms.locfileid: "32378151"
 ## <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  **/Ze** davranışını varsayılan olarak açık olduğundan seçeneği kullanım dışıdır. Şunu kullanmanızı öneririz [/Zc (Uyumluluk)](../../build/reference/zc-conformance.md) belirli bir dil uzantısı özellikleri denetlemek için derleyici seçenekleri. Kullanım dışı derleyici seçeneklerinin listesi için bkz: **kullanım dışı ve kaldırılmış derleyici seçenekleri** bölümüne [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
+>  **/Ze** davranışını varsayılan olarak açık olduğundan seçeneği kullanım dışı. Kullanmanızı öneririz [/Zc (Uyumluluk)](../../build/reference/zc-conformance.md) belirli bir dil uzantısı özellikleri denetlemek için derleyici seçenekleri. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).  
   
- [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] Derleyici ANSI C89, ISO C99 veya ISO C++ standartlarını belirtilenler dışında birçok özellik sunar. Bu özellikler, topluca C ve C++ için Microsoft uzantıları olarak bilinir. Varsayılan olarak kullanılabilir ve kullanılamıyorsa bu uzantıları ne zaman **/Za** seçeneği belirtildi. Belirli uzantıları hakkında daha fazla bilgi için bkz: [C ve C++ için Microsoft Extensions](../../build/reference/microsoft-extensions-to-c-and-cpp.md).  
+ Visual C++ derleyicisi ANSI C89, ISO C99 veya ISO C++ standartlarına içinde belirtilen dışında özellikleri sunar. Bu özellikler, topluca C ve C++ için Microsoft uzantıları bilinir. Varsayılan olarak kullanılabilir ve kullanılabilir değil bu uzantılar ne zaman **/Za** seçeneği belirtildi. Belirli uzantılar hakkında daha fazla bilgi için bkz. [C ve C++ için Microsoft Extensions](../../build/reference/microsoft-extensions-to-c-and-cpp.md).  
   
- Belirterek dil uzantılarını devre dışı öneririz **/Za** programınızı diğer ortamlara bağlantı noktası planlıyorsanız seçeneği. Zaman **/Za** belirtilirse, derleyici değerlendirir basit tanımlayıcıları olarak anahtar sözcükler genişletilmiş Microsoft, diğer Microsoft uzantıları devre dışı bırakır ve otomatik olarak tanımlayan `__STDC__` C programları için önceden tanımlanmış makrosu.  
+ Belirterek dil uzantılarını devre dışı öneririz **/Za** programınızı diğer ortamlara bağlantı noktası planlıyorsanız seçeneği. Zaman **/Za** belirtilirse, derleyici Microsoft genişletilmiş anahtar sözcükleri basit tanımlayıcıları olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve otomatik olarak tanımlar `__STDC__` C programları için önceden tanımlanmış makro.  
   
- İle kullanılan diğer derleyici seçenekleri **/Za** nasıl derleyici standartlara uyum sağlar etkileyebilir. Örneğin, **/Za** ve [/fp (Floating-Point davranış belirtin)](../../build/reference/fp-specify-floating-point-behavior.md) uymuyor kayan nokta türü yükseltme davranışındaki ISO C99 veya C ++ 11 standartları neden olabilir.  
+ İle kullanılan diğer derleyici seçeneklerini **/Za** nasıl derleyici standartlara uyum sağlar etkileyebilir. Örneğin, **/Za** ve [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md) uymuyor kayan nokta türü promosyon davranışındaki ISO C99 veya C ++ 11 standartlar neden olabilir.  
   
- Belirli standartlarla davranış ayarları belirtmek için daha fazla yol için bkz: [/Zc](../../build/reference/zc-conformance.md) derleyici seçeneği.  
+ Belirli standartlarla uyumlu davranışı ayarları belirtmek daha fazla yolu için bkz [/Zc](../../build/reference/zc-conformance.md) derleyici seçeneği.  
   
- Uyumluluk sorunları hakkında daha fazla bilgi için [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)], bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).  
+ Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Gezinti Bölmesi'nde seçin **yapılandırma özellikleri**, **C/C++**, **dil**.  
+2.  Gezinti bölmesinde **yapılandırma özellikleri**, **C/C++**, **dil**.  
   
 3.  Değiştirme **dil uzantılarını devre dışı** özelliği.  
   

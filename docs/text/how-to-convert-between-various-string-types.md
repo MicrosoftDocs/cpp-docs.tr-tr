@@ -12,16 +12,16 @@ helpviewer_keywords:
 - string conversion [C++]
 - strings [C++], converting
 ms.assetid: e7e4f741-3c82-45f0-b8c0-1e1e343b0e77
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf7623c377e8fcce2a6a498176aaf9fb08a55b20
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e21473c887c6f51406eb72d3cbb03a08df9e01f6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015098"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608951"
 ---
 # <a name="how-to-convert-between-various-string-types"></a>Nasıl yapılır: Çeşitli Dize Türleri Arasında Dönüştürme Yapma
 Bu konuda çeşitli Visual C++ dize türlerinin diğer dizelere dönüştürülebileceği gösterilmektedir. Kapsanan dize türleri `char *`, `wchar_t*`, [_bstr_t](../cpp/bstr-t-class.md), [CComBSTR](../atl/reference/ccombstr-class.md), [CString](../atl-mfc-shared/using-cstring.md), [basic_string](../standard-library/basic-string-class.md), ve <xref:System.String?displayProperty=fullName>. Her durumda, yeni türe dönüştürüldüğünde dizenin kopyası yapılır. Yeni dizeye yapılan tüm değişiklikler orijinal dizeyi etkilemeyecektir ve bunun tersi de geçerlidir.  

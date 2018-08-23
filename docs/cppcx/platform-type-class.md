@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Type Class
 ms.assetid: d6b03f1e-b240-49b9-a08e-53a460030475
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc70f0a0f714cb6f5a2f4b28d922308d8fe4d645
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: e4d2931df50c6bfac126bc8e8ab1c70d61bdfe39
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255544"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596707"
 ---
 # <a name="platformtype-class"></a>Platform::type sınıfı
-Çalışma zamanı türü bilgileri içermektedir; özellikle, bir dize adı ve typecode. Çağırılarak alınır [Object::GetType](../cppcx/platform-object-class.md#gettype) herhangi bir nesne üzerinde veya veya kullanarak [TypeID](../windows/typeid-cpp-component-extensions.md) sınıfta veya yapı adı işleci.  
+Çalışma zamanı türü bilgilerini içerir — özellikle, bir dize adı ve typecode'u işlenemiyor. Çağırılarak [Object::GetType](../cppcx/platform-object-class.md#gettype) herhangi bir nesne üzerinde veya bu adı kullanıyor [TypeID](../windows/typeid-cpp-component-extensions.md) operatörü bir sınıfın veya yapının adı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,41 +35,41 @@ public ref class Platform::Type :
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Type` Sınıftır kullanarak doğrudan işleme gerekir uygulamalarda yararlı bir `if` veya `switch` dalları nesneyi çalışma zamanı türüne göre deyimi. Kategori türü açıklanır türü kodu kullanılarak alınır [Type::GetTypeCode](#gettypecode) üye işlevi.  
+ `Type` Sınıfı, işleme kullanarak yönlendirmelisiniz uygulamalarda kullanışlıdır bir `if` veya `switch` dallar, bir nesnenin çalışma zamanı türüne göre deyimi. Kategori türü tanımlayan türü kodu kullanılarak alınır [Type::GetTypeCode](#gettypecode) üye işlevi.  
   
 ## <a name="public-methods"></a>Genel yöntemler  
   
 |||  
 |-|-|  
-|[Type::GetTypeCode yöntemi](#gettypecode)|Döndürür bir [Platform::TypeCode numaralandırma](../cppcx/platform-typecode-enumeration.md) nesne değeri.| 
-|[Type::ToString yöntemi](#tostring)|Belirtildiği gibi meta verilerinde türünün adını döndürür.| 
+|[Type::GetTypeCode yöntemi](#gettypecode)|Döndürür bir [Platform::TypeCode numaralandırması](../cppcx/platform-typecode-enumeration.md) nesne değeri.| 
+|[Type::ToString yöntemi](#tostring)|Belirtilen meta tür adını döndürür.| 
 
  
-## <a name="public-properties"></a>Ortak Özellikler  
+## <a name="public-properties"></a>Genel Özellikler  
   
 |||  
 |-|-|  
-|[Type::FullName](#fullname)|Döndürür bir [Platform::String sınıfı](../cppcx/platform-string-class.md)^ türünün tam adını temsil eder ve kullanır. (bir ayırıcı olarak nokta) değil:: (çift iki nokta üst üste) — Örneğin, `MyNamespace.MyClass`.|  
+|[Type::FullName](#fullname)|Döndürür bir [Platform::String sınıfı](../cppcx/platform-string-class.md)^ türünün tam adını temsil eder ve kullanır. (bir ayırıcısı nokta) değil:: (çift virgül) — Örneğin, `MyNamespace.MyClass`.|  
   
 ## <a name="conversion-operators"></a>Dönüştürme işleçleri  
   
 |||  
 |-|-|  
-|[işleç türü ^](../cppcx/operator-type-hat.md)|Dönüştürme işlemini etkinleştirir `Windows::UI::Xaml::Interop::TypeName` için `Platform::Type`.|  
-|[Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Dönüştürme işlemini etkinleştirir `Platform::Type` için `Windows::UI::Xaml::Interop::TypeName`.|  
+|[işleç türü ^](../cppcx/operator-type-hat.md)|Dönüştürme sağlayan `Windows::UI::Xaml::Interop::TypeName` için `Platform::Type`.|  
+|[Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-windows-ui-xaml-interop-typename.md)|Dönüştürme sağlayan `Platform::Type` için `Windows::UI::Xaml::Interop::TypeName`.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
 
  
 ## <a name="fullname"></a> Type::FullName özelliği
-Biçiminde geçerli türünün tam adını alır `Namespace.Type`.  
+Biçiminde geçerli türünün tam adını alır. `Namespace.Type`.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -96,7 +96,7 @@ MainPage::MainPage()
 
 
 ## <a name="gettypecode"></a> Type::GetTypeCode yöntemi
-Yerleşik türler sayısal türün kategorisini alır.  
+Yerleşik türler sayısal türü kategorisini alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -105,13 +105,13 @@ Platform::TypeCode GetTypeCode();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Platform::TypeCode birini değerleri numaralandırılır.  
+ Platform::TypeCode birini numaralandırılmış değerlerinin.  
   
 ### <a name="remarks"></a>Açıklamalar  
  GetTypeCode() üye yöntemi eşdeğerdir `typeid` özelliği.
 
 ## <a name="tostring"></a> Type::ToString yöntemi
-Alır bir türünün adı.  
+Alır bir türün adı.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -120,7 +120,7 @@ Platform::String^ ToString();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen meta verilerinde türünün adı.    
+ Belirtilen meta tür adı.    
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

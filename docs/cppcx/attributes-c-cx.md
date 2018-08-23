@@ -5,34 +5,34 @@ ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 4438e03c-4de3-433d-abcc-31aa863bc0e0
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 627e89c844b97637897c9b5eb6c1cc7e32081fd6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7db8d6c527842cd3784623002fba001a4174c1fc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086850"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601144"
 ---
 # <a name="attributes-ccx"></a>Öznitelikler (C + +/ CX)
-Windows çalışma zamanı türleri ve yöntemleri meta veri oluşturma, belirli davranışlarını belirtmek için köşeli ayraçlar içinde $a ref sınıfı özel bir tür özniteliğidir. Önceden tanımlanmış birkaç öznitelikleri — Örneğin, [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)— C + yaygın olarak kullanılan +/ CX kodu. Bu örnek, bir sınıfa öznitelik nasıl uygulandığını gösterir:  
+Köşeli ayraç içinde meta verileri oluşturma belirli davranışları belirtmek için Windows çalışma zamanı türleri ve yöntemleri için $a başvuru sınıfının özel bir özniteliktir. Önceden tanımlanmış birkaç öznitelikleri — Örneğin, [Windows::Foundation::Metadata::WebHostHidden](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.webhosthiddenattribute.aspx)— C +'da yaygın olarak kullanılan +/ CX kod. Bu örnek, öznitelik bir sınıfa nasıl uygulanacağını gösterir:  
   
  [!code-cpp[cx_attributes#01](../cppcx/codesnippet/CPP/cx_attributes/class1.h#01)]  
   
 ## <a name="custom-attributes"></a>Özel öznitelikler  
- Özel öznitelikler de tanımlayabilirsiniz. Özel öznitelikler bu Windows çalışma zamanı kurallarına uyması gerekir:  
+ Ayrıca, özel öznitelikler tanımlayabilirsiniz. Özel öznitelikler, bu Windows çalışma zamanı kurallara uymalıdır:  
   
--   Özel öznitelikler yalnızca genel alanlar içerebilir.  
+-   Özel öznitelikleri yalnızca ortak alanlar içerebilir.  
   
 -   Öznitelik bir sınıfa uygulandığında özel öznitelik alanları başlatılabilir.  
   
--   Bir alan şu türlerden biri olabilir:  
+-   Bir alan, şu türlerden birinde olabilir:  
   
     -   Int32 (int)  
   
-    -   uint32 (imzasız int)  
+    -   uint32 (işaretsiz int)  
   
     -   bool  
   
@@ -42,13 +42,13 @@ Windows çalışma zamanı türleri ve yöntemleri meta veri oluşturma, belirli
   
     -   Platform::type ^  
   
-    -   Ortak enum sınıfı (kullanıcı tanımlı numaralandırmaları içerir)  
+    -   Genel sabit listesi sınıfı (kullanıcı tanımlı sabit listeleri içerir)  
   
- Aşağıdaki örnek, özel bir öznitelik tanımlamak ve kullandığınız zaman başlatma gösterilmektedir.  
+ Sonraki örnek, özel bir öznitelik tanımlayın ve bunları kullandığınızda başlatmak gösterilmektedir.  
   
  [!code-cpp[cx_attributes#02](../cppcx/codesnippet/CPP/cx_attributes/class1.h#02)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sistem türü (C + +/ CX)](../cppcx/type-system-c-cx.md)   
+ [Tür sistemi (C + +/ CX)](../cppcx/type-system-c-cx.md)   
  [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)   
  [Ad alanları başvurusu](../cppcx/namespaces-reference-c-cx.md)

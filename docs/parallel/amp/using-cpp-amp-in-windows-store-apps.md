@@ -12,20 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5736c84f21535222de5659780968efd98e1467da
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3676bc8f2c4ecbd89f01fb9257c7306a66827548
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696161"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584022"
 ---
 # <a name="using-c-amp-in-uwp-apps"></a>UWP uygulamalarında C++ AMP kullanma
-GPU (grafik işlem birimi) veya diğer hesaplama Hızlandırıcıları hesaplamalar için evrensel Windows Platformu (UWP) uygulamanızda C++ AMP (C++ hızlandırılmış yoğun paralellik) kullanabilirsiniz. Ancak, C++ AMP API'lerini doğrudan Windows çalışma zamanı türleri ile çalışmak için sağlamaz ve Windows çalışma zamanı C++ AMP için sarmalayıcı sağlamaz. Windows çalışma zamanı türleri kodunuzda kullandığınızda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlerine dönüştürmeniz gerekir.  
+GPU (grafik işleme birimi) veya diğer bilgisayar hızlandırıcılarında üzerinde hesaplamalar gerçekleştirmek için evrensel Windows Platformu (UWP) uygulamanızda C++ AMP (C++ Accelerated Massive Parallelism) kullanabilirsiniz. Bununla birlikte, C++ AMP, doğrudan Windows çalışma zamanı türleriyle çalışmak için API'lar sağlamaz ve Windows çalışma zamanı C++ AMP için bir sarmalayıcı sağlamaz. Windows çalışma zamanı türlerini kullandığınızda, kodunuzda — oluşturduğunuz kendiniz de dahil olmak üzere — bunları C++ AMP ile uyumlu türlere dönüştürmeniz gerekir.  
   
 ## <a name="performance-considerations"></a>Performans değerlendirmeleri  
- Kullanıyorsanız, [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) Evrensel Windows Platformu (UWP) uygulamanızı oluşturmak için düz eski veri (POD) türleri bitişik depolama ile birlikte kullanmanız önerilir — Örneğin, `std::vector` veya C tarzı dizileri — kullanılacak veriler için C++ AMP ile. Bu, hiçbir hazırlama oluşmasına olduğundan POD olmayan türleri veya Windows RT kapsayıcıları kullanarak daha yüksek performans elde yardımcı olabilir.  
+ 
+Visual C++ bileşen uzantıları C + kullanıyorsanız +/ CX, Evrensel Windows Platformu (UWP) uygulaması oluşturmak için düz eski veri (POD) türlerini bitişik depolamayla kullanmanızı öneririz — Örneğin, `std::vector` veya C stili diziler — olacak veriler için C++ AMP ile kullanılır. Bu, herhangi bir sıralama sahip POD harici türler veya Windows RT kapsayıcıları kullanarak daha fazla performans elde etmenize yardımcı olabilir.  
   
- Bu şekilde, depolanan verilere erişmek için bir C++ AMP Çekirdeği'nde yalnızca kaydırma `std::vector` veya depolama dizisi bir `concurrency::array_view` ve dizi görünümünde kullanmak bir `concurrency::parallel_for_each` döngü:  
+Bir C++ AMP Çekirdekte bu şekilde, depolanan verilere yalnızca kaydırma `std::vector` veya dizi deposunu bir `concurrency::array_view` ve ardından dizi görünümünü bir `concurrency::parallel_for_each` döngü:  
   
 ```cpp  
 // simple vector addition example  
@@ -46,22 +47,23 @@ concurrency::parallel_for_each(av0.extent, [=](concurrency::index<1> idx) restri
 ```  
   
 ## <a name="marshaling-windows-runtime-types"></a>Windows Çalışma Zamanı türlerini sıralama  
- Windows çalışma zamanı API'leri ile çalışırken, bir Windows çalışma zamanı kapsayıcısında gibi depolanan veriler üzerinde C++ AMP kullanmak isteyebileceği bir `Platform::Array<T>^` veya sınıf ya da kullanarak bildirilen yapının gibi karmaşık veri türlerini `ref` anahtar sözcüğü veya `value`</C4>anahtarsözcüğü. Bu durumlarda, C++ AMP verileri kullanılabilir duruma getirmek için bazı ek çalışmalar yapmanız gerekir.  
+ 
+Windows çalışma zamanı API'lar ile çalışırken, aşağıdaki gibi bir Windows çalışma zamanı kapsayıcısında depolanan veriler üzerinde C++ AMP kullanmak isteyebilirsiniz bir `Platform::Array<T>^` veya yapılar kullanarak bildirilen sınıflar veya yapılar gibi karmaşık veri türlerinde **ref** anahtar sözcüğü veya **değer** anahtar sözcüğü. Bu durumlarda verilerin to C++ AMP tarafından kullanılabilir hale getirmek ek iş yapması gerekir.  
   
-### <a name="platformarrayt-where-t-is-a-pod-type"></a>Platform::Array\<T > ^, burada T POD türü.  
- Ne zaman karşılaştığınız bir `Platform::Array<T>^` ve T POD türü, temel alınan depolama alanı yalnızca kullanarak erişebilirsiniz `get` üye fonksiyonu:  
+### <a name="platformarrayt-where-t-is-a-pod-type"></a>Platform::Array\<T > ^, burada T bir POD türü.  
+Ne zaman karşılaştığınız bir `Platform::Array<T>^` ve T bir POD türü, yalnızca kullanarak temel depoya erişebilirsiniz `get` üye işlevi:  
   
 ```cpp  
 Platform::Array<float>^ arr; // Assume that this was returned by a Windows Runtime API  
 concurrency::array_view<float, 1> av(arr->Length, &arr->get(0));
 ```  
   
- T POD türü değilse, açıklanan teknikleri aşağıdaki bölümdeki verileri C++ AMP ile kullanmak için kullanın.  
+Açıklanan tekniği aşağıdaki bölümde T bir POD türü değilse, verileri C++ AMP ile kullanmak için kullanın.  
   
 ### <a name="windows-runtime-types-ref-classes-and-value-classes"></a>Windows Çalışma Zamanı türleri: ref sınıfları ve değer sınıfları  
- C++ AMP karmaşık veri türlerini desteklemez. Bu POD olmayan türleri ve kullanarak bildirilen türleri içerir `ref` anahtar sözcüğü veya `value` anahtar sözcüğü. Desteklenmeyen bir tür kullanılıyorsa bir `restrict(amp)` bağlamı, derleme zamanı hatası oluşturulur.  
+C++ AMP karmaşık veri türlerini desteklemez. Bu POD harici türleri ve kullanılarak bildirilen tüm türleri içerir **ref** anahtar sözcüğü veya **değer** anahtar sözcüğü. Desteklenmeyen tür kullanılırsa bir `restrict(amp)` bağlam, bir derleme zamanı hatası oluşturulur.  
   
- Desteklenmeyen bir tür karşılaştığınızda, kendi veri ilginç bölümleri kopyalayabilirsiniz bir `concurrency::array` nesnesi. Verileri kullanmak C++ AMP için kullanıma ek olarak, bu el ile kopyalama yaklaşım ayrıca veri yere göre en üst düzeye çıkarma tarafından ve Hızlandırıcı kopyalanan kullanılmayacak verileri değil sağlayarak performansı artırabilir. Kullanarak daha fazla performansını iyileştirebilir bir *dizi hazırlama*, özel bir tür olduğu `concurrency::array` dizi ve diğer diziler arasındaki sık aktarım için üzerinde hale getirilmiştir AMP çalışma zamanı bir ipucu sağlar Belirtilen Hızlandırıcı.  
+Desteklenmeyen bir tür karşılaştığınızda verinin ilginç bölümlerini kopyalayıp bir `concurrency::array` nesne. Verileri C++ AMP'ı kullanmak için kullanılabilir hale getirmenin yanı sıra, bu el ile kopyalama yaklaşımı da yerel veri konumu en üst düzeye ve kullanılmayacak veri hızlandırıcıya sağlayarak performansı artırabilir. Kullanarak performansı artırabilirsiniz bir *yapıcı dizi*, özel olduğu `concurrency::array` dizisi ve diğer diziler arasında sık aktarım için üzerinde optimize edilmesini AMP çalışma zamanı bir ipucu sağlar Belirtilen Hızlandırıcı.  
   
 ```cpp  
 // pixel_color.h  
@@ -119,6 +121,6 @@ concurrency::parallel_for_each(av_red.extent, [=](index<1> idx) restrict(amp)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ kullanarak ilk UWP uygulamanızı oluşturma](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
- [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
-
+ 
+[C++ kullanarak ilk UWP uygulamanızı oluşturun](/windows/uwp/get-started/create-a-basic-windows-10-app-in-cpp)   
+[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 49ee69015837d27f7445db9f765739fc1d28152c
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e4817d0f0082ef4ec0a9a588982405772d733fe0
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642880"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42598038"
 ---
 # <a name="argtraitshelperargs-constant"></a>ArgTraitsHelper::args Sabiti
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-static const int args = Traits::args;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yardımcı [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) parametreleri sayısını takip edin `Invoke` yöntemi temsilci arabirimi.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ArgTraitsHelper yapısı](../windows/argtraitshelper-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+static const int args = Traits::args;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Yardımcı [ArgTraitsHelper::args](../windows/argtraitshelper-args-constant.md) parametreleri sayısını takip edin `Invoke` yöntemi temsilci arabirimi.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ArgTraitsHelper Yapısı](../windows/argtraitshelper-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -15,33 +15,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 193f0d16b03991e24cb16a90b3310512f6e86054
-ms.sourcegitcommit: 4586bfc32d8bc37ab08b24816d7fad5df709bfa3
+ms.openlocfilehash: 528c66da24c4cbf6c22af5b1b5f8dd3afffff64f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39604404"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604652"
 ---
 # <a name="roinitializewrapperroinitializewrapper-constructor"></a>RoInitializeWrapper::RoInitializeWrapper Oluşturucusu
-Yeni bir örneğini başlatır **Roınitializewrapper** sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+Yeni bir örneğini başlatır **Roınitializewrapper** sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 RoInitializeWrapper(   RO_INIT_TYPE flags)  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *bayrakları*  
- Windows çalışma zamanı tarafından sağlanan desteğin belirtir RO_INIT_TYPE numaralandırmalardan biri.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Roınitializewrapper** sınıfı çağırır `Windows::Foundation::Initialize(flags)`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT Sınıfı](../windows/handlet-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*bayrakları*  
+Windows çalışma zamanı tarafından sağlanan desteğin belirtir RO_INIT_TYPE numaralandırmalardan biri.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Roınitializewrapper** sınıfı çağırır `Windows::Foundation::Initialize(flags)`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HandleT Sınıfı](../windows/handlet-class.md)

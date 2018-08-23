@@ -1,29 +1,29 @@
 ---
-title: Diğer dilleri ile birlikte (C + +/ CX) | Microsoft Docs
+title: Diğer dillerle birlikte çalışma (C + +/ CX) | Microsoft Docs
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: f74db99f-7dbd-421e-99e6-c34bbebf5cea
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e096cda810085c0e0ce9e2772c7105843e486a39
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7d4aec775dc716a5e88e6b421a7cd7f818730c23
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087848"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589894"
 ---
-# <a name="interoperating-with-other-languages-ccx"></a>Diğer dilleri ile birlikte (C + +/ CX)
-Bu belge parçası C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıkları tarafından tüketilen Windows çalışma zamanı bileşenleri yazar. Tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönleri açıklanmaktadır, C + +/ CX uygulama JavaScript, bir .NET çerçevesi ile yönetilen dil ya da Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılan bileşenleri ile birlikte çalışır.  
+# <a name="interoperating-with-other-languages-ccx"></a>Diğer dillerle birlikte çalışma (C + +/ CX)
+Belgelerin bu bölümü C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıklar tarafından kullanılabilen Windows çalışma zamanı bileşenleri yazmak için. Ayrıca, tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönlerini tanımlar, C + +/ CX uygulama JavaScript, .NET Framework yönetilen dil veya Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılmış bileşenler birlikte çalışır.  
   
 ## <a name="related-topics"></a>İlgili konular  
   
 -   [JavaScript tümleştirme](../cppcx/javascript-integration-c-cx.md)  
   
--   [CLR tümleştirme](../cppcx/clr-integration-c-cx.md)  
+-   [CLR tümleştirmesi](../cppcx/clr-integration-c-cx.md)  
   
 -   [WRL tümleştirme](../cppcx/wrl-integration-c-cx.md)  
   

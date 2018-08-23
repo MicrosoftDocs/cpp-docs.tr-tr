@@ -10,19 +10,19 @@ helpviewer_keywords:
 - RuntimeClassName
 - Platform::Metadata::RuntimeClassName
 ms.assetid: fdef8f85-ab94-4edd-ba50-ee0da9358ff6
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 297a5089af7db43d837934e864e0925cd7b34a3d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 024d9d7dce234b07620a108b1f11c240bd842ac6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088238"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592584"
 ---
 # <a name="platformmetadataruntimeclassname"></a>Platform::Metadata::RuntimeClassName
-Bir sınıf tanımı uygulandığında, özel bir sınıf geçerli bir ad GetRuntimeClassName işlevinden döndürür sağlar...  
+Bir sınıf tanımına uygulandığında, özel bir sınıf GetRuntimeClassName işlevinden geçerli bir ad verir sağlar...  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,13 +33,13 @@ Bir sınıf tanımı uygulandığında, özel bir sınıf geçerli bir ad GetRun
 #### <a name="parameters"></a>Parametreler  
  name  
   
- Windows çalışma zamanı'nda görünür olan mevcut bir ortak türü adı.  
+ Windows çalışma zamanı'nda görülebilir mevcut bir ortak tür adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu öznitelik özel ref sınıflarında özel çalışma zamanı tür adı ve/veya ne zaman varolan adı gereksinimlerini karşılamıyor belirtmek için kullanın. Bir ad sınıfını uygulayan ortak bir arabirim belirtin.  
+ Bu öznitelik, bir özel çalışma zamanı tür adı ve/veya ne zaman var olan ad gereksinimlerini karşılamıyor belirtmek için özel başvuru sınıfları üzerinde kullanın. Sınıf uygulayan bir ortak arabirim bir ad belirtin.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnek, özniteliğin nasıl kullanılacağını gösterir. Bu örnekte, çalışma zamanı tür HellowWorldImpl Test::Native::MyComponent::IHelloWorld adıdır  
+ Aşağıdaki örnek, öznitelik kullanma işlemini gösterir. Bu örnekte, çalışma zamanı türü HellowWorldImpl Test::Native::MyComponent::IHelloWorld adıdır  
   
 ```  
   

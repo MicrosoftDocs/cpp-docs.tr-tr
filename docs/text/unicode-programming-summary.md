@@ -11,16 +11,16 @@ helpviewer_keywords:
 - Unicode [C++], programming with
 - Unicode [C++], MFC and C run-time functions
 ms.assetid: a4c9770f-6c9c-447c-996b-980920288bed
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65db0889b36cafa4b3942b7834229d1a7d9f5783
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 78e40e258334ed1e9622e31e8452810f231cb61f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40010366"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42582009"
 ---
 # <a name="unicode-programming-summary"></a>Unicode Programlama Özeti
 Unicode MFC ve C çalışma zamanı desteği avantajlarından yararlanmak için gerekir:  

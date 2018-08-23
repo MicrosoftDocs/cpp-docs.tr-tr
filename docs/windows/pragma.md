@@ -17,61 +17,65 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a9c9d347b319afc3ee84818e74029a98b1aa5484
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 4f8ff470af7b7c825fb1c1dc7bf118e969a4b992
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40014305"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603059"
 ---
 # <a name="pragma"></a>pragması
-Belirtilen dizeyi tırnak işaretleri kullanmanıza gerek kalmadan oluşturulan .idl dosyasına yayar. 
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ pragma(  
-   pragma_statement  
-) ];  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pragma_statement*  
- Oluşturulan .idl dosyasına gitmek istiyorsanız pragması.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Pragma** C++ özniteliği ile aynı işlevlere sahip [pragma](http://msdn.microsoft.com/library/windows/desktop/aa367143) MIDL özniteliği.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp  
-// cpp_attr_ref_pragma.cpp  
-// compile with: /LD  
-#include "unknwn.h"  
-[module(name="MyLib")];  
-[pragma(pack(4))];  
-  
-[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface A  
-{  
-   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);  
-};  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Her yerde|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [pack](../preprocessor/pack.md)   
+
+Belirtilen dizeyi tırnak işaretleri kullanmanıza gerek kalmadan oluşturulan .idl dosyasına yayar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ pragma(
+   pragma_statement
+) ];
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pragma_statement*  
+Oluşturulan .idl dosyasına gitmek istiyorsanız pragması.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Pragma** C++ özniteliği ile aynı işlevlere sahip [pragma](http://msdn.microsoft.com/library/windows/desktop/aa367143) MIDL özniteliği.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// cpp_attr_ref_pragma.cpp
+// compile with: /LD
+#include "unknwn.h"
+[module(name="MyLib")];
+[pragma(pack(4))];
+
+[dispinterface, uuid("00000000-0000-0000-0000-000000000001")]
+__interface A
+{
+   [id(1)] HRESULT MyMethod ([in, satype("BSTR")] SAFEARRAY **p);
+};
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Her yerde|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
+[pack](../preprocessor/pack.md)  

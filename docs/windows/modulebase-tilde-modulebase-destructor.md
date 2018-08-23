@@ -17,30 +17,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 223358d33fb7eab0663237e8eb8deb487b84109a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 071686e7ea4bf8a88beb340019b33d838e3aa806
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40010444"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603519"
 ---
 # <a name="modulebasemodulebase-destructor"></a>ModuleBase::~ModuleBase Yok Edicisi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-virtual ~ModuleBase();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Geçerli örneğinin başlatmasını geri alır **ModuleBase** sınıfı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ModuleBase sınıfı](../windows/modulebase-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual ~ModuleBase();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Geçerli örneğinin başlatmasını geri alır **ModuleBase** sınıfı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ModuleBase Sınıfı](../windows/modulebase-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

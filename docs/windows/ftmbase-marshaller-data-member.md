@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 37ad18c3daf6aee24c2e7c0c4c08c35caf87a602
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 27c94442c8b64a635439f42208d0b7b0d1876da1
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39642043"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596428"
 ---
 # <a name="ftmbasemarshaller-data-member"></a>FtmBase::marshaller_ Veri Üyesi
-Ücretsiz iş parçacıklı Sıralayıcı bir başvuru içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** ftm.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [FtmBase Sınıfı](../windows/ftmbase-class.md)
+
+Ücretsiz iş parçacıklı Sıralayıcı bir başvuru içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+Microsoft::WRL::ComPtr<IMarshal> marshaller_; ;
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** ftm.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[FtmBase Sınıfı](../windows/ftmbase-class.md)

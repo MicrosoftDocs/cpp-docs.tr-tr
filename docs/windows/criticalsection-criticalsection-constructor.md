@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f87f95a0683f6b4440d2be8b770902a7e4ecde59
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 892a32c6ff6f8e9a3a30452d05dd6e15c38a4fa8
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39644300"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605058"
 ---
 # <a name="criticalsectioncriticalsection-constructor"></a>CriticalSection::CriticalSection Oluşturucusu
-Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesi başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-explicit CriticalSection(  
-   ULONG spincount = 0  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *spincount*  
- Kritik bölüm nesnenin dönüş sayısı. Varsayılan değer 0’dır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kritik bölümler ve spincounts hakkında daha fazla bilgi için bkz: `InitializeCriticalSectionAndSpinCount` işlevi **eşitleme** Windows API platformlarının bölümü.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CriticalSection Sınıfı](../windows/criticalsection-class.md)
+
+Mutex nesnesine benzer, ancak yalnızca tek bir işlem iş parçacığı tarafından kullanılan bir eşitleme nesnesi başlatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+explicit CriticalSection(
+   ULONG spincount = 0
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*spincount*  
+Kritik bölüm nesnenin dönüş sayısı. Varsayılan değer 0’dır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kritik bölümler ve spincounts hakkında daha fazla bilgi için bkz: `InitializeCriticalSectionAndSpinCount` işlevi **eşitleme** Windows API platformlarının bölümü.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CriticalSection Sınıfı](../windows/criticalsection-class.md)

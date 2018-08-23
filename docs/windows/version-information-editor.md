@@ -19,39 +19,42 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a8ea040d5a549c61ba17f059260cb399d82bc430
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b87859735c2a67fa2c8ddd7c253418bb2c19d888
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013973"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42583675"
 ---
 # <a name="version-information-editor"></a>Sürüm Bilgileri Düzenleyicisi
-Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve ticari marka bildirimini oluşur. İle **sürüm bilgisi** Düzenleyicisi, oluşturduğunuz ve sürüm bilgileri kaynağında depolanan bu verileri korumak. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulamayı tanımlayan bilgileri toplamak için kullanışlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.  
-  
- Sürüm bilgileri kaynağında bir üst bloğu ve bir veya daha fazla alt blokları vardır: tek bir sabit bilgi bloğu üst ve alt (diğer diller ve/veya karakter kümesi için) bir veya daha fazla sürüm bilgi bloğu. Üst blok düzenlenebilir bir sayısal kutusu hem seçilebilir aşağı açılan listesi vardır. Alt bloklar yalnızca düzenlenebilir metin kutuları sahip.  
-  
+
+Sürüm bilgileri, şirket ve ürün kimliği, bir ürün sürüm numarasını ve telif hakkı ve ticari marka bildirimini oluşur. İle **sürüm bilgisi** Düzenleyicisi, oluşturduğunuz ve sürüm bilgileri kaynağında depolanan bu verileri korumak. Sürüm bilgileri kaynağında bir uygulama tarafından gerekli değildir, ancak uygulamayı tanımlayan bilgileri toplamak için kullanışlı bir yerdir. Sürüm bilgileri de API'leri kurulum tarafından kullanılır.
+
+Sürüm bilgileri kaynağında bir üst bloğu ve bir veya daha fazla alt blokları vardır: tek bir sabit bilgi bloğu üst ve alt (diğer diller ve/veya karakter kümesi için) bir veya daha fazla sürüm bilgi bloğu. Üst blok düzenlenebilir bir sayısal kutusu hem seçilebilir aşağı açılan listesi vardır. Alt bloklar yalnızca düzenlenebilir metin kutuları sahip.
+
 > [!NOTE]
->  Windows standart VS_VERSION_INFO adlı yalnızca bir sürümü kaynak sağlamaktır.  
-  
- **Sürüm bilgisi** Düzenleyicisi olanak sağlar:  
-  
--   [Sürüm bilgileri kaynağında dize düzenleme](../windows/editing-a-string-in-a-version-information-resource.md)  
-  
--   [(Yeni sürüm bilgi bloğu) başka bir dil için sürüm bilgileri ekleme](../windows/adding-version-information-for-another-language.md)  
-  
--   [Sürüm bilgi bloğu silinsin](../windows/deleting-a-version-information-block.md)  
-  
--   [Programınızdan erişim sürüm bilgileri](../windows/accessing-version-information-from-within-your-program.md)  
-  
-    > [!NOTE]
-    >  Kullanırken **sürüm bilgisi** düzenleyicisinde birçok örneği sağ kaynağa özgü komutların kısayol menüsünü görüntüleyin. Örneğin, bir blok üstbilgisi girişine işaret ederken tıklarsanız, kısayol menüsünü gösterir **yeni sürüm blok bilgisi** ve **sürüm blok bilgisi silme** komutları.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kaynak düzenleyicileri](../windows/resource-editors.md)   
- [Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+> Windows standart VS_VERSION_INFO adlı yalnızca bir sürümü kaynak sağlamaktır.
+
+**Sürüm bilgisi** Düzenleyicisi olanak sağlar:
+
+- [Sürüm bilgileri kaynağında dize düzenleme](../windows/editing-a-string-in-a-version-information-resource.md)
+
+- [(Yeni sürüm bilgi bloğu) başka bir dil için sürüm bilgileri ekleme](../windows/adding-version-information-for-another-language.md)
+
+- [Sürüm bilgi bloğu silinsin](../windows/deleting-a-version-information-block.md)
+
+- [Programınızdan erişim sürüm bilgileri](../windows/accessing-version-information-from-within-your-program.md)
+
+   > [!NOTE]
+   > Kullanırken **sürüm bilgisi** düzenleyicisinde birçok örneği sağ kaynağa özgü komutların kısayol menüsünü görüntüleyin. Örneğin, bir blok üstbilgisi girişine işaret ederken tıklarsanız, kısayol menüsünü gösterir **yeni sürüm blok bilgisi** ve **sürüm blok bilgisi silme** komutları.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+[Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

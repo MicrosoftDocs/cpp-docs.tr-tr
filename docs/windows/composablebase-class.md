@@ -15,30 +15,34 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 501f2d8a8747e631c108f0f02f4ed876d912b70e
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ce03608e796b21d8b6d87565490cc48c6d712d81
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648495"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594393"
 ---
 # <a name="composablebase-class"></a>ComposableBase Sınıfı
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template<  
-   typename FactoryInterface = IInspectable  
->  
-class ComposableBase;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *FactoryInterface*  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<
+   typename FactoryInterface = IInspectable
+>
+class ComposableBase;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*FactoryInterface*
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

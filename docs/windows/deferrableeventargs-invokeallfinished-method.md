@@ -13,32 +13,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1aaaf8c6849b30e26463810ff353234319960048
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 23d521b8373969abdd739b6e4f48eb334284664d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33883374"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605179"
 ---
 # <a name="deferrableeventargsinvokeallfinished-method"></a>DeferrableEventArgs::InvokeAllFinished Yöntemi
-Ertelenmiş olayını işlemek için tüm işleme tamamlandığını göstermek için çağrılır.  
+Ertelenmiş olayı işlemek için tüm işleme tamamlandığını göstermek için çağrılır.
   
-## <a name="syntax"></a>Sözdizimi  
+## <a name="syntax"></a>Sözdizimi
   
-```cpp  
+```cpp
 void InvokeAllFinished()  
-```  
+```
   
-## <a name="remarks"></a>Açıklamalar  
- Olay kaynağı çağrılarını sonra bu yöntemi çağırmanız gerekir [Invokeall](../windows/eventsource-invokeall-method.md). Bu yöntemin çağrılması daha fazla gerçekleştirilmesini deferrals engeller ve tamamlanma işleyicinin hiçbir deferrals gerçekleştirilen, yürütmeyi zorlar.  
+## <a name="remarks"></a>Açıklamalar
+ Olay kaynağı çağrılarını sonra bu yöntemi çağırmanız gerekir [Invokeall](../windows/eventsource-invokeall-method.md). Bu yöntemi çağırmadan, daha fazla gönderilemeyenler gerçekleştirilmesini önler ve hiçbir gönderilemeyenler alınan, yürütülecek tamamlama işleyicisine zorlar.
   
- Kod örneği için bkz: [DeferrableEventArgs sınıfı](../windows/deferrableeventargs-class.md).  
+ Kod örneği için bkz: [DeferrableEventArgs sınıfı](../windows/deferrableeventargs-class.md).
   
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
+## <a name="requirements"></a>Gereksinimler
+ **Başlık:** event.h
   
- **Namespace:** Microsoft::WRL  
+ **Namespace:** Microsoft::WRL
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DeferrableEventArgs sınıfı](../windows/deferrableeventargs-class.md)   
+## <a name="see-also"></a>Ayrıca Bkz.
+ [DeferrableEventArgs Sınıfı](../windows/deferrableeventargs-class.md)  
  [EventSource::InvokeAll Metodu](../windows/eventsource-invokeall-method.md)

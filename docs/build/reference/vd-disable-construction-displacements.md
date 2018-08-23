@@ -1,5 +1,5 @@
 ---
-title: -vd (yapı yer devre dışı bırak) | Microsoft Docs
+title: -vd (oluşturma yer değiştirmelerini devre dışı bırak) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6a7b9bacc95c668c1c0f59a3dba172d58c607d2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4e983da4521db077235c2b879e0d1277b9505e94
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377603"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605874"
 ---
 # <a name="vd-disable-construction-displacements"></a>/vd (Yapı Yer Değiştirmelerini Devre Dışı Bırak)
 ## <a name="syntax"></a>Sözdizimi  
@@ -42,36 +42,36 @@ ms.locfileid: "32377603"
   
 ## <a name="arguments"></a>Arguments  
  `0`  
- Vtordisp Oluşturucusu/yıkıcı öteleme üye gizler. Bu seçenek yalnızca tüm sınıf oluşturucular ve Yıkıcılar sanal çağrı eminseniz neredeyse işlevleri seçin.  
+ Vtordisp Oluşturucu/yıkıcı yer değiştirme üyesinin eklenmesini engeller. Bu seçenek yalnızca tüm sınıf oluşturucularının ve yıkıcılarının sanal çağrı eminseniz neredeyse İşlevler'i seçin.  
   
  `1`  
- Gizli vtordisp Oluşturucusu/yıkıcı öteleme üyeleri oluşturulmasını sağlar. Bu seçim varsayılandır.  
+ Gizli vtordisp Oluşturucu/yıkıcı yer değiştirme üyeleri oluşturulmasını sağlar. Bu seçim varsayılandır.  
   
  `2`  
- Sayesinde [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) yapılandırılan bir nesne üzerinde. Örneğin, bir dynamic_cast sanal temel sınıfından türetilmiş bir sınıf için.  
+ Kullanmanıza olanak tanır [dynamic_cast işleci](../../cpp/dynamic-cast-operator.md) yapılandırılmakta olan bir nesne üzerinde. Örneğin, sanal bir temel sınıftan türetilmiş bir sınıf dynamic_cast.  
   
- **/vd2** sanal temel sanal işlevlere sahip olduğunda vtordisp alan ekler. **/ vd1** yeterli olacaktır. En sık karşılaşılan durumda nerede **/vd2** gereklidir sanal tabanınızı yalnızca sanal işlevinde bir yıkıcı olur.  
+ **/ vd2** sanal işlevler içeren sanal bir temel olduğunda vtordisp alan ekler. **/ vd1** yeterli olur. En sık karşılaşılan durum nerede **/vd2** gereklidir, sanal temel yalnızca sanal işlev bir yok edici olduğunda.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu seçenekler yalnızca sanal tabanları kullanan C++ kodu için geçerlidir.  
+ Bu seçenekler, yalnızca sanal temeller kullanan C++ kodu için geçerlidir.  
   
- [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] C++ yapım öteleme destek sanal devralma kullanıldığı durumlarda uygular. Yapı yer oluşturulan bir sanal Bankası'nda bildirilir ve türetilen bir sınıfta geçersiz bir sanal işlev, sorunu çözmek, daha yeni olan türetilmiş bir sınıf oluşturma sırasında bir oluşturucusundan çağrılır.  
+ Visual C++, C++ yapı öteleme desteği sanal devralma kullanıldığı durumlarda uygular. Oluşturma yer değiştirmelerini oluşturulan bir sanal temel bildirildi ve türetilen bir sınıfta geçersiz kılınmış sanal bir işlev, sorunu çözmek için oluşturucudan daha fazla türetilmiş bir sınıf bir oluşumu sırasında çağrılır.  
   
- Sanal işlev yanlış bir geçirilebilir olduğunu sorunudur `this` işaretçi sonucunda sanal yer arasında tutarsızlık, taban sınıf ve türetilmiş sınıflarının için yer. Vtordisp alan bir sınıf için her sanal temel olarak adlandırılan tek yapım öteleme ayarlama, çözümü sağlar.  
+ Sanal işlev yanlış bir geçirilebilir olduğunu sorun `this` işaretçi sonuç olarak, yapı yer değiştirmelerini bırak sanal arasında tutarsızlık tabanları bir sınıf ve türetilmiş sınıflarının için yapı yer değiştirmelerini bırak. Vtordisp alana bir sınıf için her sanal temel olarak adlandırılan tek bir yapı öteleme ayarlama, çözümü sağlar.  
   
- Varsayılan olarak, kodu kullanıcı tanımlı oluşturucular ve Yıkıcılar tanımlar ve ayrıca sanal tabanları sanal işlevleri geçersiz kılar vtordisp alanları sunulur.  
+ Kod, kullanıcı tanımlı oluşturucular ve Yıkıcılar tanımlar ve ayrıca sanal temellere sanal işlevleri geçersiz kılar, varsayılan olarak, vtordisp alanları sunulmuştur.  
   
- Bu seçenekler, tüm kaynak dosyaları etkiler. Kullanım [vtordisp](../../preprocessor/vtordisp.md) bastırmak ve sınıfı tarafından sınıfı temelinde vtordisp alanları yeniden etkinleştirmek için.  
+ Bu seçenekler, tüm kaynak dosyalarını etkiler. Kullanım [vtordisp](../../preprocessor/vtordisp.md) gösterme ve ardından vtordisp alanlarını sınıf sınıf olarak yeniden etkinleştirin.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **C/C++** klasör.  
+2.  Tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **komut satırı** özellik sayfası.  
+3.  Tıklayın **komut satırı** özellik sayfası.  
   
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
+4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   

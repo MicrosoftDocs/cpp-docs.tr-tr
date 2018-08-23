@@ -17,33 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5e64cfcd0ad8a71a67815b592908d57725fef9f1
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 341333b0c4f51c42004ad638a5a8f4fcb7d7e466
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648652"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596497"
 ---
 # <a name="eventtargetarrayend-method"></a>EventTargetArray::End Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-ComPtr<IUnknown>* End();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Olay işleyicilerini iç dizi içindeki son öğeden adresi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Son öğenin adresi olay işleyicileri içinde iç dizisini alır.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EventTargetArray sınıfı](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+ComPtr<IUnknown>* End();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Olay işleyicilerini iç dizi içindeki son öğeden adresi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Son öğenin adresi olay işleyicileri içinde iç dizisini alır.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

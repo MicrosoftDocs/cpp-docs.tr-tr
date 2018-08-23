@@ -26,34 +26,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 23befed8800027553f69032a5f5cc32816396951
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: e6cb463f95bc68d6880fb593ba394ec94d585696
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648216"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597342"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
-**Renkleri** penceresinde iki bölümü vardır:  
-  
-1.  **Renkler paleti**, kullanabileceğiniz renkleri temsil eden renkli örnekleri dizisi. Grafik araçları kullanırken ön ve arka plan renkleri seçmek için örnekleri tıklayabilirsiniz.  
-  
-2.  **Renk göstergesi**, ön ve arka plan renkleri ve ekran ve ters renk seçicileri gösterir.  
-  
-     ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")  
-Renkler Penceresi  
-  
+
+**Renkleri** penceresinde iki bölümü vardır:
+
+1. **Renkler paleti**, kullanabileceğiniz renkleri temsil eden renkli örnekleri dizisi. Grafik araçları kullanırken ön ve arka plan renkleri seçmek için örnekleri tıklayabilirsiniz.
+
+2. **Renk göstergesi**, ön ve arka plan renkleri ve ekran ve ters renk seçicileri gösterir.
+
+   ![Renkler penceresini](../windows/media/vccolorswindow.gif "vcColorsWindow")  
+Renkler Penceresi
+
 > [!NOTE]
->  **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.  
-  
- Kullanabileceğiniz **renkleri** penceresiyle [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Renkler penceresini görüntüleme veya gizleme](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)   
- [Cihaz görüntülerinde saydam veya ters bölgeler oluşturma](../windows/creating-transparent-or-inverse-regions-in-device-images.md)   
- [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)   
- [Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)
+> **Ekran rengi** ve **ters renk** araçlardır yalnızca simgeler ve İmleçler için kullanılabilir.
+
+Kullanabileceğiniz **renkleri** penceresiyle [Resim Düzenleyicisi araç çubuğu](../windows/toolbar-image-editor-for-icons.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Renkler penceresini görüntüleme veya gizleme](../windows/displaying-or-hiding-the-colors-window-image-editor-for-icons.md)  
+[Cihaz görüntülerinde saydam veya ters bölgeler oluşturma](../windows/creating-transparent-or-inverse-regions-in-device-images.md)  
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Özel Renk Seçici iletişim kutusu](../windows/custom-color-selector-dialog-box-image-editor-for-icons.md)  
+[Simgeler için Görüntü Düzenleyicisi](../windows/image-editor-for-icons.md)

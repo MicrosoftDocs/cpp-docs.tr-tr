@@ -15,21 +15,23 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 10f97f1ce98bbc3de81e1888aad7c36f237f6396
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: dfa345ba4b9960e10ebbbd0f2392204c0af34241
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650355"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590642"
 ---
 # <a name="array-attributes"></a>Dizi Öznitelikleri
-Diziler için aşağıdaki öznitelikleri uygulanır veya `SAFEARRAY`s.  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|[library_block](../windows/library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|  
-|[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY` yapısı.|  
-|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)
+
+Diziler için aşağıdaki öznitelikleri uygulanır veya `SAFEARRAY`s.
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|[library_block](../windows/library-block.md)|.İdl dosyasının kitaplığı bloğu içinde bir yapısı yerleştirir.|
+|[satype](../windows/satype.md)|Veri türü belirtir `SAFEARRAY` yapısı.|
+|[string](../windows/string-cpp.md)|Bildiren tek boyutlu **char**, **wchar_t**, `byte` (veya eşdeğer) dizi ya da böyle bir dizinin işaretçisi gerekir kabul bir dize.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kullanıma Göre Öznitelikler](../windows/attributes-by-usage.md)

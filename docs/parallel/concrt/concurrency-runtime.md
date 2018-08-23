@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be177574aa78080f3a950fb674adc0a8fab0b5c4
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: b39fb35b21721cb9b93741a74f62d749b6fb1051
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208395"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608273"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 Eşzamanlılık Çalışma zamanı C++ için yazma sağlam, ölçeklenebilir ve hızlı yanıt veren paralel uygulamalar yardımcı olur. Böylece altyapı ayrıntılarını için eşzamanlılık ilgili yönetmek zorunda değilsiniz özet düzeyi başlatır. Servis taleplerini uygulamalarınızın kalitesini karşılayan zamanlama ilkeleri belirtmek için de kullanabilirsiniz. Eşzamanlılık Çalışma zamanı ile çalışmaya başlamanıza yardımcı olması için bu kaynakları kullanın.  
@@ -111,7 +111,7 @@ Eşzamanlılık Çalışma zamanı C++ için yazma sağlam, ölçeklenebilir ve 
 |[Eşzamanlılık Çalışma zamanı ve paralel desen Kitaplığı'nda Visual Studio 2010 için kod örnekleri](http://go.microsoft.com/fwlink/p/?linkid=183875)|Örnek uygulamalar ve Eşzamanlılık Çalışma zamanı gösteren yardımcı programları sağlar.|  
 |[Yerel kod blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleler sağlar.|  
 |[C++ ve yerel kod forumdaki paralel bilgi işlem](http://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmaları katılmasını sağlar.|  
-|[Paralel Programlama](/dotnet/standard/parallel-programming/index)|Kullanılabilir paralel programlama modeli hakkında öğretir [!INCLUDE[dnprdnshort](../../error-messages/tool-errors/includes/dnprdnshort_md.md)].|  
+|[Paralel Programlama](/dotnet/standard/parallel-programming/index)|.NET Framework'teki kullanılabilir paralel programlama modeli hakkında size öğretir.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Başvuru](../../parallel/concrt/reference/reference-concurrency-runtime.md)

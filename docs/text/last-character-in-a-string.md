@@ -11,32 +11,32 @@ helpviewer_keywords:
 - last character in string
 - MBCS [C++], last character in string
 ms.assetid: 0a180376-4e55-41e8-9c64-539c7b6d8047
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88cde1d2eb30103462f7ae8f8c06274a2977fc36
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9c5783fcdb1bccbfe7e2a316fa1ea4285519bb1b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33855649"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42593564"
 ---
 # <a name="last-character-in-a-string"></a>Dizedeki Son Karakter
 Aşağıdaki ipuçlarını kullanın:  
   
--   ASCII karakter birçok durumda kümesini izi bayt aralıkları çakışıyor. Bu gibi durumlarda, dizede taramaları güvenle herhangi bir denetim karakteri için (değerinden 32) kullanabilirsiniz.  
+-   ASCII karakter kümesini çoğu durumda izi bayt aralıkları çakışıyor. Bu gibi durumlarda, dizede taramalar güvenli bir şekilde, denetim karakterlerini (32 den küçük) için kullanabilirsiniz.  
   
--   Bir dizedeki son karakter bir ters bölü karakteri olup olmadığını denetleme kod aşağıdaki satırı göz önünde bulundurun:  
+-   Bir dizedeki son karakter bir ters eğik çizgi karakteri olup olmadığını görmek için denetimi yapıyor olabilir kod, aşağıdaki satırı göz önünde bulundurun:  
   
     ```  
     if ( sz[ strlen( sz ) - 1 ] == '\\' )    // Is last character a '\'?  
         // . . .  
     ```  
   
-     Çünkü `strlen` MBCS kullanmayan birden çok baytlı dizedeki karakter sayısını değil bayt sayısı döndürür. Bazı kod sayfalarında (örneğin, 932), ayrıca, unutmayın '\\' (0x5c) geçerli sondaki bayt olduğu (`sz` C dizedir).  
+     Çünkü `strlen` MBCS tanımayan çok baytlı bir dize karakter sayısını değil bayt sayısını döndürür. Ayrıca, bazı kod sayfalarında (örneğin, 932), Not '\\' (0x5c) olan geçerli bir bayt (`sz` C dizesi).  
   
-     Bu şekilde kodu yeniden için olası bir çözüm şöyledir:  
+     Bu şekilde, yeniden kod yazmak için olası bir çözüm şöyledir:  
   
     ```  
     char *pLast;  
@@ -45,7 +45,7 @@ Aşağıdaki ipuçlarını kullanın:
         // . . .  
     ```  
   
-     Bu kod MBCS işlevlerini kullanan `_mbsrchr` ve `_mbsinc`. Bu işlevler MBCS algılayan olduğundan, bunlar ayırt edebilirsiniz bir '\\'karakter ve sondaki bayt'\\'. Dizedeki son karakter ('\0') null ise kod bazı eylemleri gerçekleştirir.  
+     Bu kod MBCS işlevlerini kullanır `_mbsrchr` ve `_mbsinc`. Bu işlevler MBCS kullanan olduğundan, bunlar arasında ayrım yapabilme kolaylığı bir '\\'karakteri ve sondaki baytı'\\'. Dizedeki son karakter ('\0') null ise kod bazı eylemleri gerçekleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MBCS programlama ipuçları](../text/mbcs-programming-tips.md)   

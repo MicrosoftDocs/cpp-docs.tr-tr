@@ -19,44 +19,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30852b22c9ff4cc74c8f0c57b3a5ed9d79a34838
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 5ea169f196df1096d4732c88c0c5af9f9898f755
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011454"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604680"
 ---
 # <a name="symbol-name-restrictions"></a>Sembol Adı Kısıtlamaları
-Sembol adı kısıtlamaları aşağıdaki gibidir:  
-  
--   Tüm [sembolleri](../windows/symbols-resource-identifiers.md) uygulama kapsamında benzersiz olmalıdır. Bu, üstbilgi dosyalarında çakışan sembol tanımlarını engeller.  
-  
--   Sembol adı için geçerli karakterler, A-Z, a-z, 0-9 ve alt çizgi (_) içerir.  
-  
--   Sembol adları bir sayı ile başlayamaz ve 247 karakter ile sınırlıdır.  
-  
--   Sembol adları boşluk içeremez.  
-  
--   Sembol adları büyük/küçük harfe duyarlı değildir, ancak ilk sembol tanımı durumu korunur. Sembolleri tanımlar üstbilgi dosyası, kaynaklar bir kaynak dosyasında tanımlanan başvurmak için hem kaynak derleyici/Düzenleyicisi hem de C++ programlarının tarafından kullanılır. Yalnızca kaynak derleyici/Düzenleyici tek bir sembole başvuru olarak her iki adlarını görür ancak C++ program iki ayrı sembolleri görür durumunda, iki sembol adları için farklı.  
-  
-    > [!NOTE]
-    >  Standart sembol adı düzeni izlemeyin varsa (ID*_[keyword]) özetlenen aşağıda ve kaynak kod dosyasını derlenmeye çalışılıyor, kaynak kod derleyici bilinen bir anahtar sözcük görünüşte rastgele hatayla sonuçlanır. aynı olacak şekilde, sembol adı olur. tanı koymak güç oluşturma. Bunu önlemek için standart adlandırma şeması izliyor.  
-  
- Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklayıcı önekleri vardır. Açıklayıcı bu ön ekler metin birleşim kimliği ile başlayın Microsoft Foundation Class Kitaplığı'nı (MFC) aşağıdaki tabloda gösterilen simge adlandırma kurallarını kullanır.  
-  
-|Kategori|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|  
-|--------------|------------|---------|  
-|Kaynaklar|IDR_ IDD_ IDC_ IDI_ IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar) imleç simgesi bit eşlem iletişim kutusu|  
-|Menü öğeleri|ID_|Menü öğesi|  
-|Komutlar|ID_|Komut|  
-|Denetimleri ve alt pencereler|IDC_|Denetim|  
-|Dizeler|IDS_|Dize tablosunda dize|  
-|MFC|AFX_|Önceden tanımlanmış MFC sembolleri için ayrılmış|  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sembolü veya sembol adını (ID) değiştirme](../windows/changing-a-symbol-or-symbol-name-id.md)   
- [Sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md)   
- [Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)
+
+Sembol adı kısıtlamaları aşağıdaki gibidir:
+
+- Tüm [sembolleri](../windows/symbols-resource-identifiers.md) uygulama kapsamında benzersiz olmalıdır. Bu, üstbilgi dosyalarında çakışan sembol tanımlarını engeller.
+
+- Sembol adı için geçerli karakterler, A-Z, a-z, 0-9 ve alt çizgi (_) içerir.
+
+- Sembol adları bir sayı ile başlayamaz ve 247 karakter ile sınırlıdır.
+
+- Sembol adları boşluk içeremez.
+
+- Sembol adları büyük/küçük harfe duyarlı değildir, ancak ilk sembol tanımı durumu korunur. Sembolleri tanımlar üstbilgi dosyası, kaynaklar bir kaynak dosyasında tanımlanan başvurmak için hem kaynak derleyici/Düzenleyicisi hem de C++ programlarının tarafından kullanılır. Yalnızca kaynak derleyici/Düzenleyici tek bir sembole başvuru olarak her iki adlarını görür ancak C++ program iki ayrı sembolleri görür durumunda, iki sembol adları için farklı.
+
+   > [!NOTE]
+   > Standart sembol adı düzeni izlemeyin varsa (ID*_[keyword]) özetlenen aşağıda ve kaynak kod dosyasını derlenmeye çalışılıyor, kaynak kod derleyici bilinen bir anahtar sözcük görünüşte rastgele hatayla sonuçlanır. aynı olacak şekilde, sembol adı olur. tanı koymak güç oluşturma. Bunu önlemek için standart adlandırma şeması izliyor.
+
+Sembol adları, kaynak veya temsil ettikleri nesne türünü belirten açıklayıcı önekleri vardır. Açıklayıcı bu ön ekler metin birleşim kimliği ile başlayın Microsoft Foundation Class Kitaplığı'nı (MFC) aşağıdaki tabloda gösterilen simge adlandırma kurallarını kullanır.
+
+|Kategori|Ön eki|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
+|--------------|------------|---------|
+|Kaynaklar|IDR_ IDD_ IDC_ IDI_ IDB_|Hızlandırıcı veya menü (ve ilişkili ya da özel kaynaklar) imleç simgesi bit eşlem iletişim kutusu|
+|Menü öğeleri|ID_|Menü öğesi|
+|Komutlar|ID_|Komut|
+|Denetimleri ve alt pencereler|IDC_|Denetim|
+|Dizeler|IDS_|Dize tablosunda dize|
+|MFC|AFX_|Önceden tanımlanmış MFC sembolleri için ayrılmış|
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sembolü veya Sembol Adını (ID) Değiştirme](../windows/changing-a-symbol-or-symbol-name-id.md)  
+[Sembol Değeri Kısıtlamaları](../windows/symbol-value-restrictions.md)  
+[Önceden Tanımlanmış Sembol Kimlikleri](../windows/predefined-symbol-ids.md)

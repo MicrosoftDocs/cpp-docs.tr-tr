@@ -28,16 +28,16 @@ helpviewer_keywords:
 - Input Method Editor [C++]
 - MBCS [C++], enabling
 ms.assetid: 6179f6b7-bc61-4a48-9267-fb7951223e38
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d00495f95b3c67e4a6fc3613b949b8ae2946bd6
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f595a048d9f2e5795f69b7d1da6c4c6cf4ca0fa2
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40010392"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608686"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
 Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tümleşik Kaynak Kod Düzenleyicisi, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS özellikli, bellek penceresi dışında sistemidir.  
@@ -53,7 +53,7 @@ Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tüm
   
  ALT + tarafından etkinleştirilmiş IME\` tuş bileşimi, bir dizi düğmeler (bir göstergesi) ve bir dönüştürme pencere görüntülenir. Uygulama penceresi metin ekleme noktasından yerleştirir. Uygulama işlemelidir `WM_MOVE` ve `WM_SIZE` yeni konumu veya hedef penceresinin boyutunu uyacak şekilde dönüştürme penceresi yeniden konumlandırma tarafından iletileri.  
   
- Kullanıcıların uygulamanızın Kanji karakter girmeniz becerisine sahip olmak istiyorsanız, uygulamanın Windows IME iletileri işlemesi gerekir. IME programlama hakkında daha fazla bilgi için bkz. [Giriş Yöntemi Düzenleyicisi](https://msdn.microsoft.com/library/ms776145.aspx).  
+ Kullanıcıların uygulamanızın Kanji karakter girmeniz becerisine sahip olmak istiyorsanız, uygulamanın Windows IME iletileri işlemesi gerekir. IME programlama hakkında daha fazla bilgi için bkz. [Giriş Yöntemi Düzenleyicisi](/previous-versions/windows/desktop/ms776145\(v=vs.85\)).  
   
 ## <a name="visual-c-debugger"></a>Visual C++ hata ayıklayıcı  
  Visual C++ hata ayıklayıcı, kesme noktaları IME iletileri ayarlamanıza olanak sağlar. Ayrıca, bellek penceresini çift baytlık karakterler görüntüleyebilirsiniz.  

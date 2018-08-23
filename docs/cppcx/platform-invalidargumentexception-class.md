@@ -1,5 +1,5 @@
 ---
-title: Platform::InvalidArgumentException sınıfı | Microsoft Docs
+title: Platform::ınvalidargumentexception sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::InvalidArgumentException
 ms.assetid: 1a8d860b-3bcb-41a9-9346-6610616a0b46
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c26f0efb907520ea7e54b0b8bec8d2f4323a51cb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea9a2d1e2e956ae83498a5fc99878c5a4ef7bb3a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086681"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594007"
 ---
-# <a name="platforminvalidargumentexception-class"></a>Platform::InvalidArgumentException sınıfı
-Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli değilse oluşturulur.  
+# <a name="platforminvalidargumentexception-class"></a>Platform::ınvalidargumentexception sınıfı
+Bir yöntem için sağlanan bağımsız değişkenlerden biri geçerli olmadığında oluşturulur.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,16 +33,16 @@ public ref class InvalidArgumentException : COMException,    IException,    IPri
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
+ Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

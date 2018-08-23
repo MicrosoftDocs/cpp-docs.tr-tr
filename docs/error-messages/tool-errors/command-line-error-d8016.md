@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f9709da189403f2594d76751430d30554bffe5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c6ba57b7036aae652b9eb6d885f9105d8bf0826
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300624"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607609"
 ---
 # <a name="command-line-error-d8016"></a>Komut Satırı Hatası D8016
-'seçenek 1' ve 'Seçenek2' komut satırı seçenekleri uyumlu değil  
+'Seçenek1' ve 'Seçenek2' komut satırı seçenekleri uyumsuz  
   
  Komut satırı seçenekleri birlikte belirtilemez.  
   
- Ortam değişkenleri, CL gibi seçeneği özellikleriyle ilgili denetleyin.  
+ Gibi ortam değişkenlerini, CL, seçeneği belirtimleri için denetleyin.  
   
- **/ CLR** gelir **/EHa**, ve diğer belirtemezsiniz **/EH** derleyici seçeneği ile **/CLR**. Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
+ **/ CLR** gelir **/eha**, ve diğer belirtemezsiniz **/EH** derleyici seçeneğiyle **/CLR**. Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
   
- Güncelleştirdikten sonra D8016 alabilirsiniz bir [!INCLUDE[vcprvc](../../build/includes/vcprvc_md.md)] 6.0 proje: Proje Sihirbazı güncellemeyi etkinleştirebilir **eş yordamlarla/RTC** projesinde her kaynak kodu dosyasının için hangi geçersiz kılmaları **eş yordamlarla/RTC** ayarlama Proje.  Çözmek için değiştirme **eş yordamlarla/RTC** projesinde her kaynak kodu dosya için varsayılan ayar olarak ayarlama, yani proje ayarı **eş yordamlarla/RTC** her dosya için geçerli olacaktır.  
+ Visual C++ 6.0 proje güncelleştirdikten sonra D8016 alabilirsiniz: Proje Sihirbazı güncellemeyi sağlayabilir **/RTC** projedeki her kaynak kodu dosyası için kılan **/RTC** proje için ayarlama.  Çözümlemek için değiştirme **/RTC** her kaynak kodu dosyasında proje için varsayılan ayar olarak ayarlamak, yani proje ayarı **/RTC** her dosya için geçerli olur.  
   
- Bkz: [eş yordamlarla/RTC (çalışma zamanı hata denetler)](../../build/reference/rtc-run-time-error-checks.md) değiştirme hakkında bilgi için **eş yordamlarla/RTC** özellik ayarı.
+ Bkz: [/RTC (çalışma zamanı hata denetimleri)](../../build/reference/rtc-run-time-error-checks.md) değiştirme hakkında bilgi için **/RTC** özellik ayarı.

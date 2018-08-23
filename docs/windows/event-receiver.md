@@ -23,73 +23,77 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2b1b285437170c4059d5cd0d66d19188c99badd9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 23607eb9d59a5c860d89444205c675c95e2b907e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646792"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594075"
 ---
 # <a name="eventreceiver"></a>event_receiver
-Bir olay alıcısı (havuz) oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ event_receiver(  
-   type   
-   [, layout_dependent=false]   
-) ]  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Türü*  
- Sabit listesi aşağıdaki değerlerden biri:  
-  
--   `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıflar için).  
-  
--   `com` COM kodu için. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:  
-  
-    ```cpp  
-    #define _ATL_ATTRIBUTES  
-    #include <atlbase.h>  
-    #include <atlcom.h>  
-    ```  
-  
- *layout_dependent*  
- Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir Boole değeri:  
-  
--   **doğru** alıcı olanlar için bunlar kancalandı olay kaynağı tam olarak eşleşmelidir olay temsilci imzası anlamına gelir. Olay alıcısı işleyici adları, ilgili olay kaynak arabiriminde belirtilen adlarının eşleşmesi gerekmektedir. Kullanmalısınız `coclass` olduğunda *layout_dependent* olduğu **true**. Belirtmek için biraz daha verimlidir **true**.  
-  
--   **false** (varsayılan) anlamına çağırma kuralı ve depolama sınıfı (sanal, statik ve diğerleri) işleyici adlarının olay kaynağı arabirim yöntemi adları eşleşmesi gerekir ya da olay yöntemi ve işleyicileri; eşleşmesi gerekmez.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Event_receiver** C++ özniteliği, sınıf veya yapı, uygulandığı Visual C++ birleştirilmiş olay modeli kullanarak bir olay alıcısı olacağını belirtir.  
-  
- **event_receiver** ile kullanılan [event_source](../windows/event-source.md) özniteliği ve [__hook](../cpp/hook.md) ve [__unhook](../cpp/unhook.md) anahtar sözcükleri. Kullanım `event_source` olay kaynakları oluşturmak için. Kullanım **__hook** olayları olay kaynağı ("kanca") olay alıcı yöntemlere ilişkilendirilecek olay alıcısı'nın yöntemler içindeki. Kullanım **__unhook** bunları ilişkilendirmesini kaldırmak.  
-  
- *layout_dependent* COM Olay alıcıları için yalnızca belirtilen (`type`=**com**). İçin varsayılan *layout_dependent* olduğu **false**.  
-  
+
+Bir olay alıcısı (havuz) oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ event_receiver(
+   type
+   [, layout_dependent=false]
+) ]
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Türü*  
+Sabit listesi aşağıdaki değerlerden biri:
+
+- `native` Yönetilmeyen C/C++ kodu için (varsayılan yerel sınıflar için).
+
+- `com` COM kodu için. Bu değer, aşağıdaki üst bilgi dosyaları eklemenizi gerektirir:
+
+    ```cpp
+    #define _ATL_ATTRIBUTES
+    #include <atlbase.h>
+    #include <atlcom.h>
+    ```
+
+*layout_dependent*  
+Belirtin *layout_dependent* yalnızca `type` = **com**. *layout_dependent* bir Boole değeri:
+
+- **doğru** alıcı olanlar için bunlar kancalandı olay kaynağı tam olarak eşleşmelidir olay temsilci imzası anlamına gelir. Olay alıcısı işleyici adları, ilgili olay kaynak arabiriminde belirtilen adlarının eşleşmesi gerekmektedir. Kullanmalısınız `coclass` olduğunda *layout_dependent* olduğu **true**. Belirtmek için biraz daha verimlidir **true**.
+
+- **false** (varsayılan) anlamına çağırma kuralı ve depolama sınıfı (sanal, statik ve diğerleri) işleyici adlarının olay kaynağı arabirim yöntemi adları eşleşmesi gerekir ya da olay yöntemi ve işleyicileri; eşleşmesi gerekmez.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Event_receiver** C++ özniteliği, sınıf veya yapı, uygulandığı Visual C++ birleştirilmiş olay modeli kullanarak bir olay alıcısı olacağını belirtir.
+
+**event_receiver** ile kullanılan [event_source](../windows/event-source.md) özniteliği ve [__hook](../cpp/hook.md) ve [__unhook](../cpp/unhook.md) anahtar sözcükleri. Kullanım `event_source` olay kaynakları oluşturmak için. Kullanım **__hook** olayları olay kaynağı ("kanca") olay alıcı yöntemlere ilişkilendirilecek olay alıcısı'nın yöntemler içindeki. Kullanım **__unhook** bunları ilişkilendirmesini kaldırmak.
+
+*layout_dependent* COM Olay alıcıları için yalnızca belirtilen (`type`=**com**). İçin varsayılan *layout_dependent* olduğu **false**.
+
 > [!NOTE]
->  Şablonlu bir alan veya yapı, olay içeremez.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**sınıf**, **yapısı**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|`coclass` zaman *layout_dependent*=**true**|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [event_source](../windows/event-source.md)   
- [__Event](../cpp/event.md)   
- [__hook](../cpp/hook.md)   
- [__unhook](../cpp/unhook.md)   
- [Sınıf Öznitelikleri](../windows/class-attributes.md)   
+> Şablonlu bir alan veya yapı, olay içeremez.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|`coclass` zaman *layout_dependent*=**true**|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[event_source](../windows/event-source.md)  
+[__event](../cpp/event.md)  
+[__hook](../cpp/hook.md)  
+[__unhook](../cpp/unhook.md)  
+[Sınıf Öznitelikleri](../windows/class-attributes.md)  

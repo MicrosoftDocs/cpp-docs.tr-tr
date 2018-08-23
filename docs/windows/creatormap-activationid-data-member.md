@@ -17,40 +17,45 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3b9fd147f0821e14e825b2a8c0e8d7ad35104fe9
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: eeaaedeb4c3806af888f36e62c8fa8e54c47eb46
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653020"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595700"
 ---
 # <a name="creatormapactivationid-data-member"></a>CreatorMap::activationId Veri Üyesi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-union {   
-   const IID* clsid;  
-   const wchar_t* (*getRuntimeName)();  
-} activationId;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *CLSID*  
- Bir arabirim kimliği.  
-  
- *getRuntimeName*  
- Windows çalışma zamanı adı bir nesne alır. bir işlev.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CreatorMap yapısı](../windows/creatormap-structure.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+union {
+   const IID* clsid;
+   const wchar_t* (*getRuntimeName)();
+} activationId;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*CLSID*  
+Bir arabirim kimliği.
+
+*getRuntimeName*  
+Windows çalışma zamanı adı bir nesne alır. bir işlev.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir klasik COM sınıfı kimliği veya bir Windows çalışma zamanı adı tanımlanmış bir nesne kimliği temsil eder.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CreatorMap Yapısı](../windows/creatormap-structure.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

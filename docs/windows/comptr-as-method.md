@@ -17,47 +17,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: debf10e3c3d7ca68bd277a32e55c21b3e8bf3421
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ffb84fd072f4ddd3dc76445c720debef5c364642
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39645431"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590441"
 ---
 # <a name="comptras-method"></a>ComPtr::As Yöntemi
-Döndürür bir **ComPtr** belirtilen şablon parametresi tarafından belirlenen arabirimi temsil eden nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template<typename U>  
-HRESULT As(  
-   _Out_ ComPtr<U>* p  
-) const;  
-  
-template<typename U>  
-HRESULT As(  
-   _Out_ Details::ComPtrRef<ComPtr<U>> p  
-) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *U*  
- Parametresi tarafından temsil edilmesini arabirimi *p*.  
-  
- *p*  
- A **ComPtr** parametresi tarafından belirtilen arabirim temsil eden nesne *U*. Parametre *p* geçerli entityset'e başvurmadığından **ComPtr** nesne.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İlk şablon kodunuzda kullanması gereken biçimidir. İkinci şablonu olduğu gibi C++ dil özellikleri destekleyen bir iç, Yardımcısı özelleştirmesi [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü yazın.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** client.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ComPtr Sınıfı](../windows/comptr-class.md)
+
+Döndürür bir **ComPtr** belirtilen şablon parametresi tarafından belirlenen arabirimi temsil eden nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<typename U>
+HRESULT As(
+   _Out_ ComPtr<U>* p
+) const;
+
+template<typename U>
+HRESULT As(
+   _Out_ Details::ComPtrRef<ComPtr<U>> p
+) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*U*  
+Parametresi tarafından temsil edilmesini arabirimi *p*.
+
+*p*  
+A **ComPtr** parametresi tarafından belirtilen arabirim temsil eden nesne *U*. Parametre *p* geçerli entityset'e başvurmadığından **ComPtr** nesne.
+
+## <a name="remarks"></a>Açıklamalar
+
+İlk şablon kodunuzda kullanması gereken biçimidir. İkinci şablonu olduğu gibi C++ dil özellikleri destekleyen bir iç, Yardımcısı özelleştirmesi [otomatik](../cpp/auto-cpp.md) kesinti anahtar sözcüğü yazın.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** client.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ComPtr Sınıfı](../windows/comptr-class.md)

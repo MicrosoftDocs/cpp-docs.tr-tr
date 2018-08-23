@@ -1,5 +1,5 @@
 ---
-title: İşlev başlayın | Microsoft Docs
+title: begin işlevi | Microsoft Docs
 ms.custom: ''
 ms.date: 01/22/2017
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - begin Function
 ms.assetid: 5a44fb33-e247-49fd-b7a1-4a5b42e9e1e4
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c1a8c09e43613014b43ef4e3c075a54cdd90e08
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4954e98c1e6f1da30e321aad0c0e37cc5c1ab994
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086518"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606538"
 ---
-# <a name="begin-function"></a>İşlev başlayın
-Belirtilen arabirim parametresi tarafından erişilebilen bir koleksiyon başlangıcına işaret yineleyici döndürür.  
+# <a name="begin-function"></a>begin işlevi
+Belirtilen arabirim parametresi tarafından erişilebilen bir koleksiyon başına gösteren bir yineleyici döndürür.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,26 +49,26 @@ template <typename T>
   
 #### <a name="parameters"></a>Parametreler  
  `T`  
- Şablon türü parametresi.  
+ Bir şablon türü parametresine.  
   
  `v`  
- Vektör koleksiyonu\<T > veya VectorView\<T > bir IVector tarafından erişilen nesneler\<T > veya IVectorView\<T > arabirimini.  
+ Vektör koleksiyonunu\<T > ya da VectorView\<T > bir Ivector tarafından erişilen nesneler\<T > ya da IVectorView\<T > arabirimini.  
   
  `i`  
- Bir IIterable tarafından erişilen rasgele Windows çalışma zamanı nesneleri koleksiyonu\<T > arabirimini.  
+ Bir Iıterable tarafından erişilen rastgele Windows çalışma zamanı nesnelerinin bir koleksiyonunu\<T > arabirimini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Koleksiyon başlangıcına işaret yineleyici.  
+ Koleksiyon başına gösteren bir yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk iki şablon işlevleri yineleyiciler dönün ve giriş yineleyici üçüncü şablon işlevi döndürür.  
+ İlk iki şablon işlevi Yineleyicilerin dönün ve üçüncü şablon işlevi bir giriş yineleyici döndürür.  
   
- Tarafından döndürülen nesne başlamak VectorIterator VectorProxy türündeki öğeler depolayan bir proxy yineleyici olduğu\<T >. Ancak, proxy nesnesi neredeyse hiç kullanıcı kodu görünür olur. Daha fazla bilgi için bkz: [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
+ Tarafından döndürülen nesne başlamak VectorIterator VectorProxy türünde öğeler depolayan bir ara sunucu yineleyici olduğunu\<T >. Ancak, proxy neredeyse hiç kullanıcı kodu tarafından nesnedir. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** collection.h  
   
- **Namespace:** Windows::Foundation::Collections  
+ **Namespace:** Windows::Foundation:: Collections  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows::Foundation::Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)
+ [Windows::Foundation:: Collections Namespace](../cppcx/windows-foundation-collections-namespace-c-cx.md)

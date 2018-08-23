@@ -17,73 +17,78 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 529e6f3a8e2b30be38d80ec253d394077c9f7f0f
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 2ba62d3dfc1f71ab61b5041ebbd884be8b5e39f6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40017103"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592670"
 ---
 # <a name="import"></a>içeri aktar
-, Ana IDL başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ import(  
-   idl_file  
-) ];  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *idl_file*  
- Geçerli proje türü kitaplığına içeri aktarılan istediğiniz bir .idl dosyasının adı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Alma** C++ öznitelik neden bir `#import` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi. **Alma** özniteliği ile aynı işlevlere sahip [alma](http://msdn.microsoft.com/library/windows/desktop/aa367047) MIDL özniteliği.  
-  
- **Alma** özniteliği yalnızca yerleştirir belirtilen dosya; projeniz tarafından oluşturulan .idl dosyasına **alma** özniteliği, yapıları belirtilen dosyada kaynak koddan çağrı vermez Projenizde.  Kaynak kodu, projenizdeki belirtilen dosyada yapıları çağırmak için kullanın ya da [#import](../preprocessor/hash-import-directive-cpp.md) ve `embedded_idl` veya özniteliği için .h dosyası içerebilir *idl_file*, .h dosyası varsa.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kodu:  
-  
-```cpp  
-// cpp_attr_ref_import.cpp  
-// compile with: /LD  
-[module(name="MyLib")];  
-[import(import.idl)];  
-```  
-  
- oluşturulan .idl dosyasına aşağıdaki kodu üretir:  
-  
-```  
-import "docobj.idl";  
-import "import.idl";  
-  
-[ uuid(EED3644C-8488-3ECD-BA97-147DB3CDB499), version(1.0) ]  
-library MyLib {  
-   importlib("stdole2.tlb");  
-   importlib("olepro32.dll");  
-...  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Her yerde|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
- [importidl](../windows/importidl.md)   
- [importlib](../windows/importlib.md)   
- [İçerir](../windows/include-cpp.md)   
- [includelib](../windows/includelib-cpp.md)   
+
+, Ana IDL başvurmak istediğiniz tanımlarını içeren başka bir .idl, .odl veya üst bilgi dosyasını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ import(
+   idl_file
+) ];
+```
+
+### <a name="parameters"></a>Parametreler
+
+*idl_file*  
+Geçerli proje türü kitaplığına içeri aktarılan istediğiniz bir .idl dosyasının adı.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Alma** C++ öznitelik neden bir `#import` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi. **Alma** özniteliği ile aynı işlevlere sahip [alma](http://msdn.microsoft.com/library/windows/desktop/aa367047) MIDL özniteliği.
+
+**Alma** özniteliği yalnızca yerleştirir belirtilen dosya; projeniz tarafından oluşturulan .idl dosyasına **alma** özniteliği, yapıları belirtilen dosyada kaynak koddan çağrı vermez Projenizde.  Kaynak kodu, projenizdeki belirtilen dosyada yapıları çağırmak için kullanın ya da [#import](../preprocessor/hash-import-directive-cpp.md) ve `embedded_idl` veya özniteliği için .h dosyası içerebilir *idl_file*, .h dosyası varsa.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kodu:
+
+```cpp
+// cpp_attr_ref_import.cpp
+// compile with: /LD
+[module(name="MyLib")];
+[import(import.idl)];
+```
+
+oluşturulan .idl dosyasına aşağıdaki kodu üretir:
+
+```
+import "docobj.idl";
+import "import.idl";
+
+[ uuid(EED3644C-8488-3ECD-BA97-147DB3CDB499), version(1.0) ]
+library MyLib {
+   importlib("stdole2.tlb");
+   importlib("olepro32.dll");
+...
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Her yerde|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
+[importidl](../windows/importidl.md)  
+[importlib](../windows/importlib.md)  
+[İçerir](../windows/include-cpp.md)  
+[includelib](../windows/includelib-cpp.md)  

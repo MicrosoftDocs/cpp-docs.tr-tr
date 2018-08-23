@@ -1,5 +1,5 @@
 ---
-title: Platform::Collections::VectorView sınıfı | Microsoft Docs
+title: 'Platform::Collections:: vectorview sınıfı | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -16,19 +16,19 @@ dev_langs:
 helpviewer_keywords:
 - VectorView Class
 ms.assetid: 05cd461d-dce7-49d3-b0e7-2e5c78ed8192
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 937342c340b085f2e2bdeef8ed7df21dae826152
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0020937bae5f6392c7d9e5e8daf22f3cc4e6a31
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092916"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584112"
 ---
-# <a name="platformcollectionsvectorview-class"></a>Platform::Collections::VectorView sınıfı
-Sıralı bir koleksiyonu dizini tarafından erişilebilecek nesnelerin salt okunur bir görünümünü temsil eder. Koleksiyondaki her nesne türü şablon parametresi tarafından belirtilir.  
+# <a name="platformcollectionsvectorview-class"></a>Platform::Collections:: vectorview sınıfı
+Sıralı bir koleksiyonu tek tek dizin tarafından erişilebilen bir nesne salt okunur bir görünümünü temsil eder. Koleksiyondaki her bir nesnenin türü şablon parametresi tarafından belirtilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,13 +39,13 @@ template <typename T, typename E>
   
 #### <a name="parameters"></a>Parametreler  
  `T`  
- İçindeki öğe türü `VectorView` nesnesi.  
+ İçindeki öğe türünü `VectorView` nesne.  
   
  `E`  
- Eşitlik türü değerleri ile test için ikili bir koşul belirtir `T`. Varsayılan değer `std::equal_to<T>` şeklindedir.  
+ Türündeki değerlerle eşitlik testi için bir ikili koşula belirtir `T`. Varsayılan değer `std::equal_to<T>` şeklindedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `VectorView` Uygulayan sınıf [Windows::Foundation::Collections::IVectorView\<T >](http://go.microsoft.com/fwlink/p/?LinkId=262411) arabirimi ve standart Şablon kitaplığı yineleyiciler desteği.  
+ `VectorView` Sınıfının Implements [Windows::Foundation::Collections::IVectorView\<T >](http://go.microsoft.com/fwlink/p/?LinkId=262411) arabirimi ve standart Şablon kitaplığı yineleyicilerine desteği.  
   
 ### <a name="members"></a>Üyeler  
   
@@ -59,11 +59,11 @@ template <typename T, typename E>
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[VectorView::First](#first)|İlk öğe VectorView belirten yineleyici döndürür.|  
-|[VectorView::GetAt](#getat)|Belirtilen dizini tarafından belirtilen geçerli VectorView öğesi alır.|  
+|[VectorView::First](#first)|VectorView ilk öğeyi belirleyen bir yineleyici döndürür.|  
+|[VectorView::GetAt](#getat)|Belirtilen dizin tarafından belirtilen geçerli VectorView öğesi alır.|  
 |[VectorView::GetMany](#getmany)|Belirtilen dizinden başlayarak geçerli VectorView öğelerinin bir dizisini alır.|  
 |[VectorView::IndexOf](#indexof)|Geçerli VectorView belirtilen öğeyi arar ve bulundu, döndürür öğenin dizini.|  
-|[VectorView::Size](#size)|Geçerli VectorView nesnesinde öğe sayısını döndürür.|  
+|[VectorView::Size](#size)|Geçerli VectorView nesnesinde öğelerin sayısını döndürür.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `VectorView`  
@@ -74,7 +74,7 @@ template <typename T, typename E>
  **Namespace:** Platform::Collections  
 
 ## <a name="first"></a>  VectorView::First yöntemi
-İlk öğe VectorView belirten yineleyici döndürür.  
+VectorView ilk öğeyi belirleyen bir yineleyici döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -85,15 +85,15 @@ virtual Windows::Foundation::Collections::IIterator<T>^
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk öğe VectorView belirtir yineleyici.  
+ VectorView ilk öğeyi belirleyen bir yineleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüş değeri ile bildirilen bir değişken atamak için First() tarafından döndürülen yineleyici tutmak için kolay bir yol olduğu **otomatik** kesintisi anahtar sözcüğü yazın. Örneğin, `auto x = myVectorView->First();`.  
+ Dönüş değeri ile bildirilen bir değişken atamak First() tarafından döndürülen yineleyici tutmak için kullanışlı bir yol olan **otomatik** kesinti anahtar sözcüğü yazın. Örneğin, `auto x = myVectorView->First();`.  
   
 
 
 ## <a name="getat"></a>  VectorView::GetAt yöntemi
-Belirtilen dizini tarafından belirtilen geçerli VectorView öğesi alır.  
+Belirtilen dizin tarafından belirtilen geçerli VectorView öğesi alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -106,7 +106,7 @@ T GetAt(
   
 ### <a name="parameters"></a>Parametreler  
  `index`  
- Belirli bir öğeyle VectorView nesnesinde belirtir sıfır tabanlı, imzalanmamış bir tamsayı.  
+ Belirli bir öğenin VectorView nesnesinde belirten sıfır tabanlı, işaretsiz bir tamsayı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından belirtilen öğenin `index` parametresi. Öğe türü VectorView şablon parametresi tarafından belirtilen *T*.  
@@ -128,13 +128,13 @@ virtual unsigned int GetMany(
   
 ### <a name="parameters"></a>Parametreler  
  `startIndex`  
- Alınacak öğeleri başlangıcı sıfır tabanlı dizini.  
+ Alınacak öğelerin başladığı sıfır tabanlı dizini.  
   
  `dest`  
- Bu işlem tamamlandığında, bir dizi tarafından belirtilen öğede başlayan öğeleri `startIndex` ve VectorView son öğesi sonunda.  
+ Bu işlem tamamlandığında, bir dizi tarafından belirtilen öğede başlayan öğeleri `startIndex` ve sonunda VectorView içerisindeki son öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öğe sayısı aldı.  
+ Öğe sayısını alınır.  
   
 
 
@@ -156,17 +156,17 @@ virtual bool IndexOf(
  Bulunacak öğe.  
   
  `index`  
- Öğenin sıfır tabanlı dizini varsa parametre `value` bulundu; Aksi takdirde, 0.  
+ Öğenin sıfır tabanlı dizini, parametre `value` bulundu; Aksi takdirde, 0.  
   
- `index` Parametresi ise 0 öğe VectorView ilk öğedir veya öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi halde, öğe bulunamadı.  
+ `index` Parametresi ise 0 öğe VectorView ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Belirtilen öğe bulunursa; Aksi takdirde `false`.  
+ `true` Belirtilen öğe bulunursa; Aksi takdirde, `false`.  
   
 
 
 ## <a name="size"></a>  VectorView::Size yöntemi
-Geçerli VectorView nesnesinde öğe sayısını döndürür.  
+Geçerli VectorView nesnesinde öğelerin sayısını döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -176,7 +176,7 @@ virtual property unsigned int Size;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli VectorView öğe sayısı.  
+ Geçerli VectorView içindeki öğe sayısı.  
   
 
 
@@ -239,16 +239,16 @@ VectorView(
   
 ### <a name="parameters"></a>Parametreler  
  `InIt`  
- Geçerli VectorView başlatmak için kullanılan nesneleri koleksiyonu türü.  
+ Geçerli VectorView başlatmak için kullanılan bir koleksiyon nesnelerin türü.  
   
  IL  
  A [std::initializer_list](../standard-library/initializer-list-class.md) öğeleri VectorView başlatmak için kullanılır.  
   
  `N`  
- Geçerli VectorView başlatmak için kullanılan nesneleri koleksiyonu öğe sayısı.  
+ Bir koleksiyondaki öğeleri geçerli VectorView başlatmak için kullanılan nesnelerin sayısı.  
   
  `size`  
- VectorView öğe sayısı.  
+ VectorView içindeki öğe sayısı.  
   
  `value`  
  Her bir öğesinde geçerli VectorView başlatmak için kullanılan bir değer.  
@@ -266,10 +266,10 @@ VectorView(
  A [std::array](../standard-library/array-class-stl.md) geçerli VectorView başlatmak için kullanılan nesne.  
   
  `first`  
- Geçerli VectorView başlatmak için kullanılan nesnelerinin bir dizisi ilk öğe. Türü `first` yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+ Geçerli VectorView başlatmak için kullanılan nesnelerin bir dizideki ilk öğe. Türünü `first` yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
  `last`  
- Geçerli VectorView başlatmak için kullanılan nesnelerinin bir dizisi son öğesi. Türü `last` yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için bkz: [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
+ Son öğeden bir dizideki nesnelerin geçerli VectorView başlatmak için kullanılır. Türünü `last` yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).  
   
 
 

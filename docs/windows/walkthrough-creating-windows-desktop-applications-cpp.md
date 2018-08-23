@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 397b5274c22acd3a136925495fa350c3aa40dece
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 724772c0057d5defc8bfa3e2207df85d3a207f31
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653294"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590300"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
 Bu izlenecek yol, Visual Studio'da geleneksel Windows masaüstü uygulaması oluşturma işlemi gösterilmektedir. Örnek uygulama oluşturacağınız, "Hello, Windows Masaüstü!" görüntülemek için Windows API kullanır. bir pencere içinde. Diğer Windows Masaüstü uygulamaları oluşturmak için model Bu izlenecek yolda geliştirdiğiniz kodu kullanabilirsiniz.
 
-Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klasik API), Windows uygulamaları oluşturmak için bir C dili tabanlı çerçevedir. Bu, 1980 lerin beri var olmuştur ve onlarca Windows uygulamaları oluşturmak için kullanılır. Daha gelişmiş ve program daha kolay çerçeveleri, MFC, ATL ve .NET Framework gibi bu API üzerinde oluşturulmuş. C +'da yazılmış UWP ve Store uygulamaları için bile en modern kod +/ WinRT altında bu API kullanır. Windows API hakkında daha fazla bilgi için bkz. [Windows API dizin](https://msdn.microsoft.com/library/windows/desktop/ff818516.aspx). Windows uygulamaları oluşturmak için birçok yolu vardır, ancak bu ilk kuruluştur.
+Windows API (olarak da bilinen Win32 API, Windows Masaüstü API ve Windows Klasik API), Windows uygulamaları oluşturmak için bir C dili tabanlı çerçevedir. Bu, 1980 lerin beri var olmuştur ve onlarca Windows uygulamaları oluşturmak için kullanılır. Daha gelişmiş ve program daha kolay çerçeveleri, MFC, ATL ve .NET Framework gibi bu API üzerinde oluşturulmuş. C +'da yazılmış UWP ve Store uygulamaları için bile en modern kod +/ WinRT altında bu API kullanır. Windows API hakkında daha fazla bilgi için bkz. [Windows API dizin](/windows/desktop/apiindex/windows-api-list). Windows uygulamaları oluşturmak için birçok yolu vardır, ancak bu ilk kuruluştur.
 
 > [!IMPORTANT]
 > Konuyu uzatmamak amacıyla bazı kod deyimlerini metinde göz ardı edilir. [Kodu derlemek](#build-the-code) bölümü bu belgenin sonunda tam kod gösterilir.
@@ -570,4 +570,5 @@ Söz verdiğimiz gibi çalışan bir uygulama için tam kod aşağıda verilmiş
 Tebrikler! Siz bu kılavuzda tamamlayıp geleneksel Windows Masaüstü uygulamanızı oluşturdunuz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
- [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)
+
+[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)

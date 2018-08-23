@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::ArrayReference Class
 ms.assetid: 9ab3b15e-8a60-4600-8fcb-7d6c86284f4b
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8e4183c400cf45a23f24a98292b68f6df537da1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7b2a0fd8c4903852e88fa80f12bc05894625888
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33089120"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42588317"
 ---
 # <a name="platformarrayreference-class"></a>Platform::ArrayReference sınıfı
-`ArrayReference` için alternatif bir en iyi duruma getirme türü [Platform::Array ^](../cppcx/platform-array-class.md) C stili dizi giriş verilerle doldurmak istediğiniz zaman giriş parametrelerinde.  
+`ArrayReference` için yedek bir iyileştirme türü [Platform::Array ^](../cppcx/platform-array-class.md) bir C tarzı dizi giriş verileriyle doldurmak istediğiniz zaman giriş parametreleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,19 +44,19 @@ class ArrayReference
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[ArrayReference::operator() işleci](#operator-call)|Bu dönüştürür `ArrayReference` için bir `Platform::Array<T>^*`.|  
-|[ArrayReference::operator = işleci](#operator-assign)|İçeriği başka bir atar `ArrayReference` Bu örnek için.|  
+|[ArrayReference::operator = işleci](#operator-assign)|Başka bir deponun içeriğini atar `ArrayReference` Bu örneği.|  
   
 ## <a name="exceptions"></a>Özel Durumlar  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanarak `ArrayReference` C stili dizi doldurmak için ilk kopyalama söz konusu ek kopyalama işlemi kaçının bir `Platform::Array` değişken ve ardından halinde C tarzı dizi. Kullandığınızda `ArrayReference`, yalnızca bir kopyalama işlemi yoktur. Kod örneği için bkz: [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
+ Kullanarak `ArrayReference` bir C tarzı dizi doldurmak için ilk kopyalama söz konusu ek kopyalama işlemi kaçının bir `Platform::Array` değişken ve sonra C tarzı dizi. Kullanırken `ArrayReference`, yalnızca bir kopyalama işlemi yok. Kod örneği için bkz: [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
  **Başlık:** vccorlib.h  
   
@@ -73,20 +73,20 @@ ArrayReference(ArrayReference&& otherArg)
   
 ### <a name="parameters"></a>Parametreler  
  `dataArg`  
- Dizi veri için bir işaretçi.  
+ Dizi verileri için bir işaretçi.  
   
  `sizeArg`  
  Kaynak dizideki öğelerin sayısı.  
   
  `otherArg`  
- Bir `ArrayReference` verisini taşınacak yeni örneği başlatmak nesnesi.  
+ Bir `ArrayReference` nesnesinin verisini yeni örneği başlatmak için taşınacak.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 
 
 ## <a name="operator-assign"></a>  ArrayReference::operator = işleci
-Belirtilen nesne geçerli atar [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) taşıma semantiği kullanarak nesne.  
+Belirtilen nesnenin geçerli atar [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) taşıma semantiği kullanarak nesne.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -101,10 +101,10 @@ ArrayReference& operator=(ArrayReference&& otherArg);
  Geçerli taşınır nesne `ArrayReference` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir başvuru türünde bir nesne `ArrayReference`.  
+ Türü bir nesneye başvuru `ArrayReference`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Platform::ArrayReference` bir standart C++ sınıfı, ref sınıfı şablonudur.  
+ `Platform::ArrayReference` Standart C++ sınıf şablonu, başvuru sınıfı ' dir.  
   
 
 
@@ -120,10 +120,10 @@ Array<TArg>^ operator ();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir tanıtıcı için-nesne türü `Array<TArg>^`  
+ Bir tanıtıcı nesne türü `Array<TArg>^`  
   
 ### <a name="remarks"></a>Açıklamalar  
- [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) ve [Platform::Array](../cppcx/platform-array-class.md) standart C++ sınıf şablonları, değil ref sınıflarıdır.  
+ [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) ve [Platform::Array](../cppcx/platform-array-class.md) standart C++ sınıf şablonları, başvuru değil sınıflardır.  
   
 
 

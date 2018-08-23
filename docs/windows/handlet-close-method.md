@@ -17,31 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7cbe76cdea5c8fadef818ede1d63d88e4437bdae
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: ab919b3aeba45462a15900429493225f00909d5a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651073"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602460"
 ---
 # <a name="handletclose-method"></a>HandleT::Close Yöntemi
-Geçerli kapatır **HandleT** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void Close();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Geçerli altını tanıtıcı **HandleT** kapatılır ve **HandleT** geçersiz duruma ayarlanır.  
-  
- Tanıtıcı düzgün kapatmadığına, çağıran iş parçacığında bir özel durum oluşturulur.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HandleT Sınıfı](../windows/handlet-class.md)
+
+Geçerli kapatır **HandleT** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void Close();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Geçerli altını tanıtıcı **HandleT** kapatılır ve **HandleT** geçersiz duruma ayarlanır.
+
+Tanıtıcı düzgün kapatmadığına, çağıran iş parçacığında bir özel durum oluşturulur.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HandleT Sınıfı](../windows/handlet-class.md)

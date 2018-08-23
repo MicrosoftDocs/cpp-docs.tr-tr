@@ -1,5 +1,5 @@
 ---
-title: Windows::Foundation::Collections Namespace (C + +/ CX) | Microsoft Docs
+title: 'Windows::Foundation:: Collections Namespace (C + +/ CX) | Microsoft Docs'
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Windows::Foundation::Collections Namespace (C++/CX)
 ms.assetid: 04bd3543-e30f-4fd2-95ee-272a3fcd0158
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d889f68db2c631921f8c34f63d21ee1f5859bd0f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: de406267a4c18cace88882b26f6b249fc5a0efa3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090828"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42586717"
 ---
-# <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation::Collections Namespace (C + +/ CX)
-C + +/ CX Windows::Foundation::Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanarak basitleştirmek işlevlerle tamamlar.  
+# <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation:: Collections Namespace (C + +/ CX)
+C + +/ CX Windows::Foundation:: Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanmayı kolaylaştırmak işlevlerle tamamlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,13 +40,13 @@ namespace Windows {
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[back_inserter İşlevi](../cppcx/back-inserter-function.md)|Bir koleksiyonun sonuna bir değer eklemek için kullanılan bir yineleyici döndürür.|  
-|[begin İşlevi](../cppcx/begin-function.md)|Yineleyici işaret koleksiyonunun başına döndürür.|  
-|[end İşlevi](../cppcx/end-function.md)|Yineleyici işaret ötesinde bir koleksiyon döndürür.|  
-|[to_vector İşlevi](../cppcx/to-vector-function.md)|Bir koleksiyon bir std::vector olarak döndürür.|  
+|[back_inserter İşlevi](../cppcx/back-inserter-function.md)|Bir toplamanın sonunda bir değer eklemek için kullanılan bir yineleyici döndürür.|  
+|[begin İşlevi](../cppcx/begin-function.md)|Bir yineleyiciyi işaret koleksiyonunun başına döndürür.|  
+|[end İşlevi](../cppcx/end-function.md)|Bir koleksiyonun ötesinde işaret bir yineleyici döndürür.|  
+|[to_vector İşlevi](../cppcx/to-vector-function.md)|Bir koleksiyonu bir std::vector olarak döndürür.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** collection.h  
   
- **Namespace:** Windows::Foundation::Collections  
+ **Namespace:** Windows::Foundation:: Collections  
   

@@ -17,33 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 30386120492bcabd7ec1fc07f82e5e1ffd9c1821
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 88f8402cb6a01bc46aa25f99b2b8c60151a698ce
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39653111"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604042"
 ---
 # <a name="eventtargetarraylength-method"></a>EventTargetArray::Length Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-size_t Length();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Olay işleyicileri iç dizideki öğelerin sayısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EventTargetArray sınıfı](../windows/eventtargetarray-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+size_t Length();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Olay işleyicileri iç dizideki öğelerin sayısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Olay işleyicilerini iç dizisinde geçerli öğe sayısını alır.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EventTargetArray Sınıfı](../windows/eventtargetarray-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

@@ -16,26 +16,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3bb7ff68f9c17f7b90261c2c96630911454842a5
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 75f30fbe64251e0fbb7fdb48f1d0a628ec4563b8
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462498"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601231"
 ---
 # <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
-Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [oluşturma ve yönetme, Visual C++ projeleri](../ide/creating-and-managing-visual-cpp-projects.md).  
-  
- Proje derlenirken olarak önce derleyici bir nesne dosyası üretmek her C++ kaynak dosyası ayrıştırır. Ancak, derleyici bir öznitelik karşılaştığında, ayrıştırılır ve sözdizimsel olarak doğrulandı. Derleyici daha sonra kod ekleyin veya derleme zamanında başka değişiklikler yapmak için bir öznitelik sağlayıcısı dinamik olarak çağırır. Sağlayıcının uygulama özniteliği türüne bağlı olarak farklılık gösterir. Örneğin, ATL ilgili öznitelikleri Atlprov.dll tarafından uygulanır.  
-  
- Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki gösterilmektedir.  
-  
- ![Bileşen özniteliği iletişimini](../windows/media/vccompattrcomm.gif "vcCompAttrComm")  
-  
+
+Öznitelikleri projenize eklemek için üç yolu vardır. İlk olarak, bunları el ile kaynak kodunuza ekleyebilirsiniz. İkinci olarak, projenizde bir nesnenin özellik kılavuzu kullanarak bunları ekleyebilirsiniz. Son olarak, bunları çeşitli sihirbazlar kullanarak ekleyebilirsiniz. Kullanma hakkında daha fazla bilgi için **özellikleri** penceresi ve çeşitli sihirbazlar [oluşturma ve yönetme, Visual C++ projeleri](../ide/creating-and-managing-visual-cpp-projects.md).
+
+Proje derlenirken olarak önce derleyici bir nesne dosyası üretmek her C++ kaynak dosyası ayrıştırır. Ancak, derleyici bir öznitelik karşılaştığında, ayrıştırılır ve sözdizimsel olarak doğrulandı. Derleyici daha sonra kod ekleyin veya derleme zamanında başka değişiklikler yapmak için bir öznitelik sağlayıcısı dinamik olarak çağırır. Sağlayıcının uygulama özniteliği türüne bağlı olarak farklılık gösterir. Örneğin, ATL ilgili öznitelikleri Atlprov.dll tarafından uygulanır.
+
+Aşağıdaki şekil, derleyici ve öznitelik sağlayıcısı arasındaki ilişki gösterilmektedir.
+
+![Bileşen özniteliği iletişimini](../windows/media/vccompattrcomm.gif "vcCompAttrComm")
+
 > [!NOTE]
->  Öznitelik kullanımı, kaynak dosyasının içeriğini değiştirmez. Kodu oluşturulan özniteliği görünür olup yalnızca bir kez, hata ayıklama oturumları sırasında dir. Ayrıca, projedeki her kaynak dosyası için öznitelik değiştirme sonuçlarını görüntüleyen bir metin dosyası oluşturabilirsiniz. Bu yordamı hakkında daha fazla bilgi için bkz. [/Fx (eklenen kodu Birleştir)](../build/reference/fx-merge-injected-code.md) ve [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  
-  
- Çoğu C++ yapılarına uygun kullanımlarını tanımlayan bir dizi özellikleri özniteliklere sahiptir. Bu öznitelik bağlamı olarak adlandırılır ve öznitelik bağlamı tablosunda her öznitelik başvuru konusu ele. Örneğin, [coclass'ı](../windows/coclass.md) özniteliği yalnızca uygulanabilir bir varolan bir sınıf veya yapı, başlangıcı yerine sonundan [cpp_quote](../windows/cpp-quote.md) C++ kaynak dosyası içinde istenen yere eklenebileceğini özniteliği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../windows/attributed-programming-concepts.md)
+> Öznitelik kullanımı, kaynak dosyasının içeriğini değiştirmez. Kodu oluşturulan özniteliği görünür olup yalnızca bir kez, hata ayıklama oturumları sırasında dir. Ayrıca, projedeki her kaynak dosyası için öznitelik değiştirme sonuçlarını görüntüleyen bir metin dosyası oluşturabilirsiniz. Bu yordamı hakkında daha fazla bilgi için bkz. [/Fx (eklenen kodu Birleştir)](../build/reference/fx-merge-injected-code.md) ve [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).
+
+Çoğu C++ yapılarına uygun kullanımlarını tanımlayan bir dizi özellikleri özniteliklere sahiptir. Bu öznitelik bağlamı olarak adlandırılır ve öznitelik bağlamı tablosunda her öznitelik başvuru konusu ele. Örneğin, [coclass'ı](../windows/coclass.md) özniteliği yalnızca uygulanabilir bir varolan bir sınıf veya yapı, başlangıcı yerine sonundan [cpp_quote](../windows/cpp-quote.md) C++ kaynak dosyası içinde istenen yere eklenebileceğini özniteliği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../windows/attributed-programming-concepts.md)

@@ -18,32 +18,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7df4b20677c8dbccacdbfa21cc798da1ed4bb511
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 71e44b8d4fef02101c7b8d8f5878aeaa22a5c528
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39649227"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608729"
 ---
 # <a name="arranging-push-buttons-along-the-right-or-bottom-of-a-dialog-box"></a>Basma Düğmelerini İletişim Kutusunun Sağında veya Altında Düzenleme
-### <a name="to-arrange-push-buttons-along-the-right-or-bottom-of-a-dialog-box"></a>Basma düğmelerini iletişim kutusunun alt ve sağ düzenlemek için  
-  
-1.  Bir veya daha fazla basma düğmelerini seçin.  
-  
-2.  Gelen **biçimi** menüsünde seçin **Düzenle düğmeler**ve ardından aşağıdaki düzenlemeleri birini seçin:  
-  
-    -   `Right`: basma düğmelerini iletişim kutusunun sağ kenarı hizalar.  
-  
-    -   `Bottom`: basma düğmelerini iletişim kutusunun alt kenarı hizalar.  
-  
-         Bir denetimin bir itme düğmesi dışında seçerseniz konumuna etkilenmez.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
+
+### <a name="to-arrange-push-buttons-along-the-right-or-bottom-of-a-dialog-box"></a>Basma düğmelerini iletişim kutusunun alt ve sağ düzenlemek için
+
+1. Bir veya daha fazla basma düğmelerini seçin.
+
+2. Gelen **biçimi** menüsünde seçin **Düzenle düğmeler**ve ardından aşağıdaki düzenlemeleri birini seçin:
+
+   - `Right`: basma düğmelerini iletişim kutusunun sağ kenarı hizalar.
+
+   - `Bottom`: basma düğmelerini iletişim kutusunun alt kenarı hizalar.
+
+       Bir denetimin bir itme düğmesi dışında seçerseniz konumuna etkilenmez.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
 ## <a name="requirements"></a>Gereksinimler
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İletişim kutularındaki denetimlerin düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)   
- [İletişim kutularındaki denetimler](../windows/controls-in-dialog-boxes.md)   
- [Denetimler](../mfc/controls-mfc.md)
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İletişim Kutularındaki Denetimlerin Düzenlenmesi](../windows/arrangement-of-controls-on-dialog-boxes.md)  
+[İletişim Kutularındaki Denetimler](../windows/controls-in-dialog-boxes.md)  
+[Denetimler](../mfc/controls-mfc.md)

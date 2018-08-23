@@ -1,5 +1,5 @@
 ---
-title: Konsol uygulamaları Visual C++'ta | Microsoft Docs
+title: Konsol uygulamalarında Visual C++ | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -13,19 +13,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2f2ec6db3d169558856df72b1edfbaaa1fbcc63b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4899ed59e3d47fd8cc9ff05af411be476a57a3fa
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33870308"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589078"
 ---
 # <a name="console-applications-in-visual-c"></a>Visual C++'ta konsol uygulamaları
-Bir konsol uygulaması giriş kabul eder ve çıktı olarak da bilinen komut istemi olan konsola gönderir. Konsol uygulamaları temel iş yapmak için veya çok karmaşık görevleri gerçekleştirmek için oluşturabilirsiniz. Bir konsol uygulaması, daha sonra bir Windows masaüstü uygulaması veya evrensel Windows Platform uygulaması içine eklemek istediğiniz işlevselliği kavram kanıtı Tanıtımı olarak da kullanabilirsiniz. Konsol uygulamaları kanallar veya diğer RPC mekanizmaları yoluyla diğer Masaüstü uygulamaları ile iletişim kurabilir.  
+Bir konsol uygulaması girdi kabul eder ve komut istemi olarak da bilinen olan konsola çıktı gönderir. Konsol uygulamalarını basit işleri yapmak veya çok karmaşık görevler gerçekleştirmek için oluşturabilirsiniz. Bir konsol uygulaması, daha sonra bir Windows masaüstü uygulaması veya evrensel Windows platformu uygulaması içine dahil etmek istediğiniz işlevselliği kavram kanıtı Tanıtımı olarak da kullanabilirsiniz. Konsol uygulamaları kanallar veya diğer RPC mekanizmaları yoluyla diğer masaüstü uygulamalar ile iletişim kurabilir.
   
-## <a name="related-articles"></a>İlgili Makaleler  
+## <a name="related-articles"></a>İlgili Makaleler
   
-|Başlık|Açıklama|  
-|-----------|-----------------|  
-|[İzlenecek yol: Standart C++ Programı Oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)|Kullanıcılar komut satırından çalıştırabilir bir konsol uygulamasının nasıl oluşturulacağını açıklar.|  
+|Başlık|Açıklama|
+|-----------|-----------------|
+|[İzlenecek yol: Standart C++ Programı Oluşturma](../windows/walkthrough-creating-a-standard-cpp-program-cpp.md)|Kullanıcılar, komut satırından çalıştırabileceğiniz bir konsol uygulaması oluşturmayı açıklar.|
 |[Konsol Uygulaması Oluşturma](../windows/creating-a-console-application.md)|Konsol uygulamaları hakkında bilgi sağlar.|

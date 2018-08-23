@@ -17,59 +17,64 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: efbf2910fb025370e3373b91b418a4e2a2df5bc5
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: fff878cfecf6eb39d689c3a17c1eab0ab5c47d4f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015787"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589205"
 ---
 # <a name="progid"></a>progid
-Bir COM nesnesi için ProgID belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ progid(  
-   name  
-) ];  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Adı*  
- ProgID temsil eden nesne.  
-  
- Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **ProgID** C++ özniteliği için bir COM nesnesi ProgID belirtmenize olanak sağlar. Bir ProgID formundadır *name1.name2.version*. Belirtmezseniz, bir *sürüm* bir program kimliği için varsayılan sürüm 1'dir. Siz belirtmezseniz *name1.name2*, varsayılan ad *classname.classname*. Siz belirtmezseniz **ProgID** ve belirttiğiniz `vi_progid`, *name1.name2* alınmıştır `vi_progid` ve (bir sonraki sıralı numara) sürüm eklenir.  
-  
- Kullanan bir öznitelik bloğuna, **ProgID** ayrıca kullanmaz **UUID**, derleyici olmadığını görmek için kayıt defteri denetleyecek bir **UUID** belirtilen mevcut **program kimliği** . Varsa **ProgID** belirtilmezse, oluşturulacak sürümü (ve coclass'ı oluşturuyorsanız coclass'ı adı) kullanılacak bir **ProgID**.  
-  
- **progid** gelir `coclass` belirtirseniz, diğer bir deyişle, öznitelik **ProgID**, belirtmekle aynı şeydir `coclass` ve **ProgID** öznitelikleri.  
-  
- **ProgID** özniteliği bir sınıf belirtilen adla otomatik olarak kaydedilecek neden olur. Oluşturulan .idl dosyasının görüntülenmez **ProgID** değeri.  
-  
- Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, bu öznitelik ile belirtilen bilgileri kullanılan `GetProgID` işlevi tarafından eklenen `coclass` özniteliği. Daha fazla bilgi için [coclass'ı](../windows/coclass.md) özniteliği.  
-  
-## <a name="example"></a>Örnek  
- Örneğin bakın [coclass'ı](../windows/coclass.md) örnek kullanımı için **ProgID**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**sınıf**, **yapısı**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Sınıf öznitelikleri](../windows/class-attributes.md)   
- [TypeDef, Enum, Union ve Struct öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)   
- [ProgID anahtarı](http://msdn.microsoft.com/library/windows/desktop/dd542719)   
+
+Bir COM nesnesi için ProgID belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ progid(
+   name
+) ];
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Adı*  
+ProgID temsil eden nesne.
+
+Progid'ler COM/ActiveX nesneleri tanımlamak için kullanılan sınıf tanımlayıcısı (CLSID) kullanıcı tarafından okunabilen bir sürümü var.
+
+## <a name="remarks"></a>Açıklamalar
+
+**ProgID** C++ özniteliği için bir COM nesnesi ProgID belirtmenize olanak sağlar. Bir ProgID formundadır *name1.name2.version*. Belirtmezseniz, bir *sürüm* bir program kimliği için varsayılan sürüm 1'dir. Siz belirtmezseniz *name1.name2*, varsayılan ad *classname.classname*. Siz belirtmezseniz **ProgID** ve belirttiğiniz `vi_progid`, *name1.name2* alınmıştır `vi_progid` ve (bir sonraki sıralı numara) sürüm eklenir.
+
+Kullanan bir öznitelik bloğuna, **ProgID** ayrıca kullanmaz **UUID**, derleyici olmadığını görmek için kayıt defteri denetleyecek bir **UUID** belirtilen mevcut **program kimliği** . Varsa **ProgID** belirtilmezse, oluşturulacak sürümü (ve coclass'ı oluşturuyorsanız coclass'ı adı) kullanılacak bir **ProgID**.
+
+**progid** gelir `coclass` belirtirseniz, diğer bir deyişle, öznitelik **ProgID**, belirtmekle aynı şeydir `coclass` ve **ProgID** öznitelikleri.
+
+**ProgID** özniteliği bir sınıf belirtilen adla otomatik olarak kaydedilecek neden olur. Oluşturulan .idl dosyasının görüntülenmez **ProgID** değeri.
+
+Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, bu öznitelik ile belirtilen bilgileri kullanılan `GetProgID` işlevi tarafından eklenen `coclass` özniteliği. Daha fazla bilgi için [coclass'ı](../windows/coclass.md) özniteliği.
+
+## <a name="example"></a>Örnek
+
+Örneğin bakın [coclass'ı](../windows/coclass.md) örnek kullanımı için **ProgID**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Sınıf Öznitelikleri](../windows/class-attributes.md)  
+[Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
+[ProgID anahtarı](http://msdn.microsoft.com/library/windows/desktop/dd542719)  

@@ -21,45 +21,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b05922b826de81b5192b183e1c0afdfcda189f03
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b3556bace6c578edec8eaedffb528d21cb1644f5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688264"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606070"
 ---
 # <a name="multithreading-when-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıfları Ne Zaman Kullanılır?
-MFC ile sağlanan birden çok iş parçacıklı sınıfları iki kategoriye ayrılır: eşitleme nesneleri ([CSyncObject](../mfc/reference/csyncobject-class.md), [CSemaphore](../mfc/reference/csemaphore-class.md), [CMutex](../mfc/reference/cmutex-class.md), [ CCriticalSection](../mfc/reference/ccriticalsection-class.md), ve [CEvent](../mfc/reference/cevent-class.md)) ve eşitleme erişim nesneler ([CMultiLock](../mfc/reference/cmultilock-class.md) ve [CSingleLock](../mfc/reference/csinglelock-class.md)).  
+MFC ile sunulan çok iş parçacıklı sınıfları iki kategoriye ayrılır: eşitleme nesneleri ([CSyncObject](../mfc/reference/csyncobject-class.md), [CSemaphore](../mfc/reference/csemaphore-class.md), [CMutex](../mfc/reference/cmutex-class.md), [ CCriticalSection](../mfc/reference/ccriticalsection-class.md), ve [CEvent](../mfc/reference/cevent-class.md)) ve eşitleme erişim nesneleri ([CMultiLock](../mfc/reference/cmultilock-class.md) ve [CSingleLock](../mfc/reference/csinglelock-class.md)).  
   
- Eşitleme sınıfları kaynak bütünlüğünü sağlamak için bir kaynağa erişim denetlenmesi olduğunda kullanılır. Eşitleme erişim sınıfları bu denetimli kaynaklara erişmek için kullanılır. Bu konuda ne zaman her sınıf kullanılacağı açıklanmaktadır.  
+Eşitleme sınıfları, kaynak bütünlüğünü sağlamak için bir kaynağa erişim denetlenmesi kullanılır. Eşitleme erişim sınıfları, denetlenen bu kaynaklara erişmek için kullanılır. Bu konu ne zaman her sınıf kullanılacağını açıklar.  
   
- Hangi eşitleme sınıfının kullanmanız gerektiğini belirlemek için aşağıdaki dizi soru sorun:  
+Hangi eşitleme sınıfını kullanmanız gerektiğini belirlemek için aşağıdaki dizi soru sorun:  
   
-1.  Uygulama bir kaynağa erişmeden önce olmasını beklemek zorunda (önce bir dosyaya yazılır Örneğin, veri iletişimi bağlantı noktasından alınması gerektiğini)?  
+1. Uygulama bir kaynağa erişmeden önce olmasını beklemek zorunda olmadığını (önce bir dosyaya yazılır Örneğin, veri iletişim bağlantı noktasından alınması gerekir)?  
   
-     Yanıt Evet ise, kullanmak `CEvent`.  
+     Yanıt Evet ise kullanın `CEvent`.  
   
-2.  Birden fazla içindeki aynı uygulama erişimi bu kaynak iş parçacığı tek seferde (örneğin, aynı belge üzerinde görünümleri ile en fazla beş windows uygulamanız izin verir)?  
+2. Birden fazla aynı uygulama erişimi içinde bu kaynağı tek seferde iş parçacığı (örneğin, uygulamanızın en fazla beş windows aynı belgede görünümlerle sağlar)?  
   
-     Yanıt Evet ise, kullanmak `CSemaphore`.  
+     Yanıt Evet ise kullanın `CSemaphore`.  
   
-3.  Birden fazla uygulama bu kaynak kullanabilirsiniz (örneğin, kaynak DLL içinde'dır)?  
+3. Bu kaynak birden fazla uygulamayı kullanabilirsiniz (örneğin, kaynak DLL içinde'dır)?  
   
-     Yanıt Evet ise, kullanmak `CMutex`.  
+     Yanıt Evet ise kullanın `CMutex`.  
   
-     Öyle değilse, kullanmak `CCriticalSection`.  
+     Hayır ise, kullanın `CCriticalSection`.  
   
- **CSyncObject** asla doğrudan kullanılmaz. Diğer dört eşitleme sınıflar için temel sınıftır.  
+`CSyncObject` hiçbir zaman doğrudan kullanılmaz. Diğer dört eşitleme sınıfları için temel sınıftır.  
   
-## <a name="example-1-using-three-synchronization-classes"></a>Örnek 1: Üç eşitleme sınıflarını kullanma  
- Örnek olarak, bağlantılı hesapları listesini tutar bir uygulama olur. Bu uygulamanın ayrı windows incelenmesi en çok üç hesapları sağlar, ancak belirli bir zamanda yalnızca biri güncelleştirilebilir. Bir hesap güncelleştirildiğinde, güncelleştirilen verileri bir veri arşivine ağ üzerinden gönderilir.  
+## <a name="example-1-using-three-synchronization-classes"></a>Örnek 1: Üç eşitleme sınıfını kullanma  
+ 
+Örneğin, bağlantılı hesaplar listesini tutar uygulamanın yararlanın. Bu uygulamanın ayrı windows incelenmesi için en fazla üç hesapları sağlar, ancak belirli bir zamanda yalnızca biri güncelleştirilebilir. Bir hesap güncelleştirildiğinde güncelleştirilen verileri bir veri arşivine ağ üzerinden gönderilir.  
   
- Bu örnek uygulama üç tür eşitleme sınıfları kullanır. Bir kerede incelenmesi en çok üç hesapları izin verdiğinden, kullanan `CSemaphore` üç Görünüm nesnesine erişimi sınırlamak için. Görüntüleme girişiminde dördüncü bir hesabın oluşur, ilk üç windows birini kapatır veya başarısız kadar bekler ya da uygulama. Bir hesap güncelleştirildiğinde uygulamanın kullandığı `CCriticalSection` aynı anda yalnızca bir hesap güncelleştirildiğinden emin olmak için. Güncelleştirme başarılı olduktan sonra sinyalleri `CEvent`, olay bildirilmesini bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı yeni verileri veri arşivine gönderir.  
+Bu örnek uygulama, üç tür eşitleme sınıfları kullanır. Aynı anda incelenecek en fazla üç hesapları izin verdiğinden, kullandığı `CSemaphore` üç görünüm nesnelerine erişimi sınırlamak için. Görüntüleme girişiminde dördüncü bir hesabı meydana gelir, ilk üç windows birini kapatır veya başarısız kadar bekler ya da uygulama. Bir hesap güncelleştirildiğinde uygulamanın kullandığı `CCriticalSection` aynı anda yalnızca bir hesap güncelleştirildiğinden emin olmak için. Güncelleştirme başarılı olduktan sonra bildirir `CEvent`, sinyal olayı için bekleyen bir iş parçacığını serbest bırakır. Bu iş parçacığı veri arşivine yeni verileri gönderir.  
   
 ## <a name="example-2-using-synchronization-access-classes"></a>Örnek 2: Eşitleme erişim sınıfları kullanma  
- Kullanmak için hangi eşitleme erişim sınıfı daha kolay olduğunu belirleyin. Yalnızca tek bir kontrollü kaynağa erişme ile uygulamanızı kaygı kullanırsanız `CSingleLock`. Denetimli kaynak sayısı herhangi biri erişmesi gereken kullanırsanız `CMultiLock`. Örnek 1, `CSingleLock` her durumda belirli bir zamanda yalnızca bir kaynak gerektiğinden, kullanılabilirdi.  
+ 
+Hangi eşitleme erişimi sınıfını kullanmak için daha kolay seçme. Uygulamanız yalnızca tek bir denetimli kaynak erişimi ile ilgili kullanırsanız `CSingleLock`. Bir dizi denetimli kaynak herhangi birine erişmesi gerekiyorsa kullanın `CMultiLock`. Örnek 1'de, `CSingleLock` her durumda belirli bir zamanda yalnızca bir kaynak gerektiğinden, kullanılabilirdi.  
   
- Eşitleme sınıfları nasıl kullanıldığı konusunda daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../parallel/multithreading-how-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz: [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) içinde [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)]. MFC içinde çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz: [C++ ve MCF ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md).  
+Eşitleme sınıfları nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../parallel/multithreading-how-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz: [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı C++ ve MFC ile](../parallel/multithreading-with-cpp-and-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+ 
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)

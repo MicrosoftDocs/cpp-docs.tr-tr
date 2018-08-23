@@ -15,32 +15,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 157512ee556126291427c3db6578788a477505a6
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: c7bdf5c17fc9364eb69d86f067bbb00cf40ebc5d
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40016385"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595322"
 ---
 # <a name="hstringattach-method"></a>HString::Attach Yöntemi
-Belirtilen ilişkilendirir **Hstrıng** geçerli nesneyle **Hstrıng** nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-void Attach(  
-       HSTRING hstr  
+
+Belirtilen ilişkilendirir **Hstrıng** geçerli nesneyle **Hstrıng** nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+void Attach(
+       HSTRING hstr
        ) throw()  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *HSTR*  
- Mevcut bir **Hstrıng** nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [HString Sınıfı](../windows/hstring-class.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*HSTR*  
+Mevcut bir **Hstrıng** nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[HString Sınıfı](../windows/hstring-class.md)

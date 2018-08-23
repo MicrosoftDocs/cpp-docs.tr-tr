@@ -17,48 +17,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93df4ebf46b187cab63fbfaed2e273c55e7c0d84
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 59e748ef68d78f9cb77eb335f5c5cd44e058f0d4
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013255"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42601162"
 ---
 # <a name="weakreferenceresolve-method"></a>WeakReference::Resolve Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 STDMETHOD(Resolve)  
-   (REFIID riid,   
-   _Deref_out_opt_ IInspectable **ppvObject  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *riid*  
- Bir arabirim kimliği.  
-  
- *ppvObject*  
- Bu işlem tamamlandığında bir kopyasını güçlü başvuru sayısı sıfır değilse geçerli güçlü başvuru.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
-  
--   Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır olan. *PpvObject* parametrenin ayarlanmış **nullptr**.  
-  
--   Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır. *PpvObject* parametre güçlü başvuru.  
-  
--   Aksi takdirde, nedenini belirten bir HRESULT, bu işlem başarısız oldu.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [WeakReference sınıfı1](../windows/weakreference-class1.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+   (REFIID riid,
+   _Deref_out_opt_ IInspectable **ppvObject
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*  
+Bir arabirim kimliği.
+
+*ppvObject*  
+Bu işlem tamamlandığında bir kopyasını güçlü başvuru sayısı sıfır değilse geçerli güçlü başvuru.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+- Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır olan. *PpvObject* parametrenin ayarlanmış **nullptr**.
+
+- Bu işlem başarılı olursa S_OK ve güçlü başvuru sayısı sıfır. *PpvObject* parametre güçlü başvuru.
+
+- Aksi takdirde, nedenini belirten bir HRESULT, bu işlem başarısız oldu.
+
+## <a name="remarks"></a>Açıklamalar
+
+Güçlü Başvuru sayısı sıfır değilse belirtilen işaretçi geçerli güçlü başvuru değerine ayarlar.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[WeakReference Sınıfı1](../windows/weakreference-class1.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

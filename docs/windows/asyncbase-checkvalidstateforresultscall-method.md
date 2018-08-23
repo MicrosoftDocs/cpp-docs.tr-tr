@@ -17,29 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dfa3b7222a25ed56d014cc90dbffa5f57a2c9436
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 398f46d5f8eb15d961d80b9a7a20b758fffd09c3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651914"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42584242"
 ---
 # <a name="asyncbasecheckvalidstateforresultscall-method"></a>AsyncBase::CheckValidStateForResultsCall Yöntemi
-Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-inline HRESULT CheckValidStateForResultsCall();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- S_OK sonuçları toplanabilir; Aksi takdirde, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase Sınıfı](../windows/asyncbase-class.md)
+
+Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+inline HRESULT CheckValidStateForResultsCall();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+S_OK sonuçları toplanabilir; Aksi takdirde, E_ILLEGAL_METHOD_CALLE_ILLEGAL_METHOD_CALL.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)

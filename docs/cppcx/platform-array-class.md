@@ -13,19 +13,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::Array Class
 ms.assetid: 7815ab40-88c5-42b0-83b8-081cef0cda31
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65c45265714f869de10bdfd450c2b1349d6b526b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: fa689035a6e95db7f9471d4972063ec35486e0cb
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704678"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605891"
 ---
 # <a name="platformarray-class"></a>Platform::Array sınıfı
-Alınan ve uygulama ikili arabirimi (ABI) iletilen tek boyutlu, değiştirilebilir bir dizisini temsil eder.  
+Alınan ve uygulama ikili arabiriminde (ABI) geçirilen tek boyutlu, değiştirilebilir bir dizisini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,13 +37,13 @@ private ref class Array<TArg, 1> :
 ```  
   
 ### <a name="members"></a>Üyeler  
- Platform::Array devralan tüm alt yöntemleri [Platform::WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md) ve uygulayan `Value` özelliği [Platform::IBoxArray arabirimi](../cppcx/platform-iboxarray-interface.md).  
+ Platform::Array devralır, tüm yöntemlerden [Platform::WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md) ve uygulayan `Value` özelliği [Platform::ıboxarray arabirimi](../cppcx/platform-iboxarray-interface.md).  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi tarafından belirtilen türleri tek boyutlu, değiştirilebilir bir dizi başlatır *T*.|  
+|[Dizi oluşturucular](#ctor)|Sınıf şablonu parametresi tarafından belirtilen tür tek boyutlu, değiştirilebilir bir dizi başlatır *T*.|  
   
 ### <a name="methods"></a>Yöntemler  
  Bkz: [Platform::WriteOnlyArray sınıfı](../cppcx/platform-writeonlyarray-class.md).  
@@ -55,22 +55,22 @@ private ref class Array<TArg, 1> :
 |[Array::Value](#value)|Geçerli dizi için bir tanıtıcı alır.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Array sınıfı korumalı ve devralınan olamaz.  
+ Array sınıfı korumalı ve devralınamaz.  
   
- Windows çalışma zamanı tür sistemi basit diziler kavramını desteklemez ve bu nedenle bir IVector geçiremezsiniz < Platform::Array\<T >> bir dönüş değeri veya yöntem parametresi olarak. Basit bir dizi veya bir dizi sıraları ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
+ Windows çalışma zamanı tür sistemi, düzensiz diziler kavramını desteklemiyor ve bu nedenle bir Ivector geçirilemez < Platform::Array\<T >> dönüş değeri veya yöntemin parametre olarak. Basit bir dizi veya sıralarının ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
   
- Ne zaman ve nasıl Platform::Array kullanılacağı hakkında daha fazla bilgi için bkz: [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
+ Ne zaman ve nasıl Platform::Array kullanılacağı hakkında daha fazla bilgi için bkz. [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
   
- Windows çalışma zamanı tür sistemi basit diziler kavramını desteklemez ve bu nedenle bir IVector geçiremezsiniz < Platform::Array\<T >> bir dönüş değeri veya yöntem parametresi olarak. Basit bir dizi veya bir dizi sıraları ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
+ Windows çalışma zamanı tür sistemi, düzensiz diziler kavramını desteklemiyor ve bu nedenle bir Ivector geçirilemez < Platform::Array\<T >> dönüş değeri veya yöntemin parametre olarak. Basit bir dizi veya sıralarının ABI arasında geçirmek için kullanmak `IVector<IVector<T>^>`.  
   
- Bu sınıf, derleyici tarafından otomatik olarak dahil vccorlib.h başlığında tanımlanır. Platform.winmd içinde tanımlanan genel bir tür olduğundan IntelliSense ancak içinde değil Nesne Tarayıcısı görünür olur.  
+ Bu sınıf, derleyici tarafından otomatik olarak eklenir vccorlib.h üstbilgisinde tanımlanır. Platform.winmd içinde tanımlanan ortak bir tür olmadığından IntelliSense ancak içinde olmayan nesne tarayıcısı görülebilir.  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği: **/ZW**  
 
  
 ## <a name="ctor"></a>  Dizi oluşturucular
-Sınıf şablonu parametresi tarafından belirtilen türleri tek boyutlu, değiştirilebilir bir dizi başlatır *T*.  
+Sınıf şablonu parametresi tarafından belirtilen tür tek boyutlu, değiştirilebilir bir dizi başlatır *T*.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -81,19 +81,19 @@ Array(T* data, unsigned int size);
   
 #### <a name="parameters"></a>Parametreler  
  `T`  
- Şablon parametresi sınıfı.  
+ Şablon parametresi sınıf.  
   
  `size`  
  Dizideki öğelerin sayısı  
   
  `data`  
- Bir dizi veri türü için bir işaretçi `T` bu dizi nesneyi başlatmak için kullanılır.  
+ Bir dizi veri türü için bir işaretçi `T` bu dizi nesnesini başlatmak için kullanılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Platform::Array örnekleri oluşturma hakkında daha fazla bilgi için bkz: [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+ Platform::Array örnekleri oluşturma hakkında daha fazla bilgi için bkz. [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
 ## <a name="get"></a>  Array::GET yöntemi
-Belirtilen dizin konumundaki dizi öğesi için bir başvuru alır.  
+Belirtilen dizin konumundaki dizi öğesinin bir başvuru alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -103,10 +103,10 @@ T& get(unsigned int index)  const;
   
 #### <a name="parameters"></a>Parametreler  
  `index`  
- Dizideki bir öğe tanımlayan sıfır tabanlı dizini. Minimum dizini 0 ve en büyük dizin ile belirtilen değer `size` parametresinde [Array Oluşturucusu](#ctor).  
+ Dizideki bir öğe tanımlar sıfır tabanlı dizini. En düşük dizin 0 ve en fazla dizin tarafından belirtilen değer `size` parametresinde [Array Oluşturucusu](#ctor).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Dizi öğesi tarafından belirtilen `index` parametresi.  
+ Tarafından belirtilen dizi öğesi `index` parametresi.  
   
 ## <a name="value"></a>  Array::Value özelliği
 Geçerli dizi için bir tanıtıcı alır.  

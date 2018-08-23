@@ -17,45 +17,49 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a009c8e1d9a3db682a81e1f054ef999cffaf266d
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 67d1b32fe880a278bc2b737148a90afa5bd2ad6e
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39641450"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592088"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
+
 > [!WARNING]
->  Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).  
->   
->  C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
-  
- Kaynakları sunduğu geniş kapsamlı bilgilerini (örneğin bir bit eşlem, simgesi veya imleci); kullanıcı arabirimi öğeleri içeren öğelerin oluşabilir bir uygulamanın gereken verileri içeren özel kaynakları Kurulum API'leri tarafından kullanılan kaynakları sürümü; ve menü ve iletişim kutusu kaynakları.  
-  
- Yeni kaynakları projenize ekleyin ve kaynaklarla ilgili kaynak Düzenleyicisi'ni kullanarak değiştirin. Çoğu Visual C++ sihirbazları, projeniz için bir .rc dosyasını otomatik olarak oluşturur.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
- Kaynak dosyaları ve Windows masaüstü uygulamalarında nasıl kullanılacağını açıklar. Ayrıca, kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar sağlar.  
-  
- [Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
- Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.  
-  
- [Kaynak Düzenleyicileri](../windows/resource-editors.md)  
- Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her bir düzenleyiciyle değiştirebilirsiniz ve her Düzenleyicisi'ı kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Visual C++](../visual-cpp-in-visual-studio.md)  
- Visual C++ belgelerine ilişkin bağlantıları sağlar.  
-  
- [Visual Studio ile tanışın](http://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
- Eksiksiz karma dil çözümlerini oluşturulmasını kolaylaştırır ve tüm araçları paylaşmasına olanak sağlayan aynı tümleşik geliştirme ortamı (IDE) kullanabileceğiniz geliştirme araçlarını açıklar.  
-  
- [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
- Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)   
- [Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+> Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
+>
+> C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+
+Kaynakları sunduğu geniş kapsamlı bilgilerini (örneğin bir bit eşlem, simgesi veya imleci); kullanıcı arabirimi öğeleri içeren öğelerin oluşabilir bir uygulamanın gereken verileri içeren özel kaynakları Kurulum API'leri tarafından kullanılan kaynakları sürümü; ve menü ve iletişim kutusu kaynakları.
+
+Yeni kaynakları projenize ekleyin ve kaynaklarla ilgili kaynak Düzenleyicisi'ni kullanarak değiştirin. Çoğu Visual C++ sihirbazları, projeniz için bir .rc dosyasını otomatik olarak oluşturur.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Kaynak dosyaları](../windows/resource-files-visual-studio.md)  
+Kaynak dosyaları ve Windows masaüstü uygulamalarında nasıl kullanılacağını açıklar. Ayrıca, kaynak dosyalar nasıl kullanılacağını açıklayan konulara bağlantılar sağlar.
+
+[Semboller: Kaynak Tanımlayıcıları](../windows/symbols-resource-identifiers.md)  
+Sembolleri tanımlar ve kullanma hakkında bilgi sağlar **kaynak sembolleri** sembolleri projelerinizde yönetmek için iletişim kutusu.
+
+[Kaynak Düzenleyicileri](../windows/resource-editors.md)  
+Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, her bir düzenleyiciyle değiştirebilirsiniz ve her Düzenleyicisi'ı kullanma hakkında ayrıntılı bilgi için bağlantılar sağlar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[Visual C++](../visual-cpp-in-visual-studio.md)  
+Visual C++ belgelerine ilişkin bağlantıları sağlar.
+
+[Visual Studio ile tanışın](http://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
+Eksiksiz karma dil çözümlerini oluşturulmasını kolaylaştırır ve tüm araçları paylaşmasına olanak sağlayan aynı tümleşik geliştirme ortamı (IDE) kullanabileceğiniz geliştirme araçlarını açıklar.
+
+[Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
+Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)  
+[Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

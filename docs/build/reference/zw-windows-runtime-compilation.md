@@ -21,17 +21,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fce6c6825ed4ae715a2f4cde6b0e1ffa8b3b6733
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97a97158dda886a09fb6ccb00898a8c518d8e250
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380072"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42602268"
 ---
 # <a name="zw-windows-runtime-compilation"></a>/ZW (Windows Çalışma Zamanı Derlemesi)
-Kuyruktaki kaynak desteklemek için kodu [!INCLUDE[cppwrt](../../build/reference/includes/cppwrt_md.md)] ([!INCLUDE[cppwrt_short](../../build/reference/includes/cppwrt_short_md.md)]) Evrensel Windows Platformu (UWP) uygulamaları oluşturma.  
+Derler kaynak kodu destekleyen Visual C++ bileşen uzantıları C + +/ CX için evrensel Windows Platformu (UWP) uygulamaları oluşturma.  
   
- Kullandığınızda **/ZW** derlemek için her zaman belirtmeniz **/EHsc** de.  
+ Kullanırken **/ZW** derlemek için her zaman belirtin **/ehsc** de.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,18 +42,18 @@ Kuyruktaki kaynak desteklemek için kodu [!INCLUDE[cppwrt](../../build/reference
   
 ## <a name="arguments"></a>Arguments  
  nostdlib  
- Bu Platform.winmd, Windows.Foundation.winmd ve Windows Meta veriler (.winmd) dosyaları otomatik olarak derlemede bulunmayan diğer varsayılan gösterir. Bunun yerine, kullanmanız gerekir [/FU (zorlanan adı #using)](../../build/reference/fu-name-forced-hash-using-file.md) Windows meta veri dosyaları açıkça belirtmek için derleyici seçeneği.  
+ Bu Platform.winmd Windows.Foundation.winmd ve diğer varsayılan Windows meta veri (.winmd) dosyalarını otomatik olarak bir derlemede yer almaz gösterir. Bunun yerine, kullanmalısınız [/FU (zorlanan adı #using)](../../build/reference/fu-name-forced-hash-using-file.md) Windows meta veri dosyaları açıkça belirtmek için derleyici seçeneği.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Belirttiğinizde **/ZW** derleyici seçeneği bu özellikleri destekler:  
+ Belirttiğinizde **/ZW** derleyici seçeneği, bu özellikleri destekler:  
   
--   Gerekli meta veri dosyaları, ad alanları, veri türleri ve Windows çalışma zamanı'nda yürütmek için uygulamanızı gerektirir işlevleri.  
+-   Gerekli meta veri dosyaları, ad alanları, veri türleri ve uygulamanız için Windows çalışma zamanı'nda yürütmek için gerekli işlevleri.  
   
--   Otomatik başvuru sayımı Windows çalışma zamanı nesnelerinin ve otomatik başvuru sayısı sıfır olarak gittiğinde bir nesnenin atılıyor.  
+-   Otomatik başvuru sayımı Windows çalışma zamanı nesneleri ve otomatik bir nesne, başvuru sayısı sıfıra gittiğinde atılıyor.  
   
- Incremental bağlayıcı kullanılarak .obj dosyaları dahil Windows meta verileri desteklemediğinden **/ZW** seçeneği [/GM derlemeyi (etkinleştirmek en az yeniden derleme)](../../build/reference/gm-enable-minimal-rebuild.md) seçeneği ile uyumlu **/ZW** .  
+ Artımlı bağlayıcı kullanılarak .obj dosyalarında dahil Windows meta verileri desteklemediğinden **/ZW** seçeneği [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../../build/reference/gm-enable-minimal-rebuild.md) seçeneği ile uyumlu **/ZW** .  
   
- Daha fazla bilgi için bkz: [Visual C++ dil başvurusu](../../cppcx/visual-c-language-reference-c-cx.md).  
+ Daha fazla bilgi için [Visual C++ dil başvurusu](../../cppcx/visual-c-language-reference-c-cx.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

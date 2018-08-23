@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2214067aae84d1c6aae0a93cf008463829fafda4
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4089b786363f6b1bcbb50d08e16821efc186539a
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886056"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609505"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 Bu sınıfın temsil ettiği bir `CStringT` nesne.  
@@ -298,9 +298,9 @@ BSTR AllocSysString() const;
  MFC programlarda bir [CMemoryException sınıfı](../../mfc/reference/cmemoryexception-class.md) yetersiz bellek varsa oluşturulur. ATL programlarda bir [CAtlException](../../atl/reference/catlexception-class.md) oluşturulur. Bu işlev, normalde dizeleri için Otomasyon döndürmek için kullanılır.  
   
 
- Yaygın olarak, bu dize bir COM işlevine geçirilirse bir [] parametresi, ardından bu gerektirir çağıran dize boş. Bu kullanarak yapılabilir [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx)Windows SDK içinde açıklandığı gibi. Daha fazla bilgi için [Allocating ve BSTR için bellek serbest bırakma](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
+ Yaygın olarak, bu dize bir COM işlevine geçirilirse bir [] parametresi, ardından bu gerektirir çağıran dize boş. Bu kullanarak yapılabilir [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)Windows SDK içinde açıklandığı gibi. Daha fazla bilgi için [Allocating ve BSTR için bellek serbest bırakma](../../atl-mfc-shared/allocating-and-releasing-memory-for-a-bstr.md).  
   
- Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx) Windows SDK.  
+ Windows OLE ayırma işlevleri hakkında daha fazla bilgi için bkz. [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring) Windows SDK.  
 
   
 ### <a name="example"></a>Örnek  
@@ -552,7 +552,7 @@ CStringT(const YCHAR* pch, int nLength, IAtlStringMgr* pStringMgr) :
 - `CStringT`( `const unsigned char*` `psz` ): Oluşturulacağını sağlar bir `CStringT` işaretçisine **imzasız char**.  
   
 > [!NOTE]
->  Arasında örtük dize dönüştürme devre dışı bırakmak üzere _CSTRING_DISABLE_NARROW_WIDE_CONVERSION makroyu tanımla [!INCLUDE[vcpransi](../../atl-mfc-shared/reference/includes/vcpransi_md.md)] ve [!INCLUDE[TLA#tla_unicode](../../atl-mfc-shared/reference/includes/tlasharptla_unicode_md.md)] dizeleri. Makro dönüştürme desteği derleme oluşturucular dışlar.  
+>  Dizeleri ANSI ve Unicode arasında örtük dize dönüştürme devre dışı bırakmak üzere _CSTRING_DISABLE_NARROW_WIDE_CONVERSION makro tanımlayın. Makro dönüştürme desteği derleme oluşturucular dışlar.  
   
  Unutmayın *strSrc* parametresi ya da olabilir bir `CStringT` veya `CThisSimpleString` nesne. İçin `CStringT`, kendi varsayılan örneklemeleri birini kullanın (`CString`, `CStringA`, veya `CStringW`); `CThisSimpleString`, kullanan bir **bu** işaretçi. `CThisSimpleString` örneğini bildirir [CSimpleStringT sınıfı](../../atl-mfc-shared/reference/csimplestringt-class.md), daha az yerleşik işlevlerle daha küçük bir dize sınıf `CStringT` sınıfı.  
   

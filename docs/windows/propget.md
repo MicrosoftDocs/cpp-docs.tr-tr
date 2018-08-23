@@ -17,43 +17,47 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 32170ca02a9d36667ae4d718362774afa0711c60
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 17c5742fccdc32396b36d058188f3609caf08791
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019949"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42586752"
 ---
 # <a name="propget"></a>propget
-Bir özelliği erişimci işlevi belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[propget]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Propget** C++ özniteliği ile aynı işlevlere sahip [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL özniteliği.  
-  
-## <a name="example"></a>Örnek  
- Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **propget**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Yöntem|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|`propput`, `propputref`|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Yöntem öznitelikleri](../windows/method-attributes.md)   
- [propput](../windows/propput.md)   
- [propputref](../windows/propputref.md)   
+
+Bir özelliği erişimci işlevi belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[propget]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Propget** C++ özniteliği ile aynı işlevlere sahip [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL özniteliği.
+
+## <a name="example"></a>Örnek
+
+Örneğin bakın [bağlanabilir](../windows/bindable.md) örnek kullanımı için **propget**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Yöntem|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|`propput`, `propputref`|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Yöntem Öznitelikleri](../windows/method-attributes.md)  
+[propput](../windows/propput.md)  
+[propputref](../windows/propputref.md)  

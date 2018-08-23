@@ -5,39 +5,39 @@ ms.date: 01/22/2017
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 3175bf1c-86d8-4eda-8d8f-c5b6753d8e38
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9936280d25933afb787d883139725b5a7044db6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 050b11050cc280fc6d3aa8900487442bd723a57f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33092394"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42592779"
 ---
 # <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
-`delegate` Anahtar sözcüğü bir işlev nesnesi standart C++'ta Windows çalışma zamanı denk bir başvuru türü bildirmek için kullanılır. Bir işlev imzasına benzer bir temsilci bildirimi; sarmalanmış işlev olmalıdır parametre türleri ve dönüş türünü belirtir. Bir kullanıcı tarafından tanımlanan temsilci bildirimi şudur:  
+`delegate` Anahtar sözcüğü, bir işlev nesnesi standart C++'ta Windows çalışma zamanı eşdeğerdir bir başvuru türü bildirmek için kullanılır. Temsilci bildirimi için işlev imzasına benzer; Bu, sarmalanmış işlev olmalıdır parametre türleri ve dönüş türü belirtir. Bu kullanıcı tarafından tanımlanan temsilci bildirimi şu şekildedir:  
   
 ```cpp  
      public delegate void PrimeFoundHandler(int result);  
 ```  
   
- Temsilciler en yaygın olaylar ile birlikte kullanılır. Bir olay bir temsilci türü çok bir sınıf bir arabirim türü olabilir aynı şekilde vardır. Temsilci olay işleyicileri çok karşılayan bir sözleşme temsil eder. Önceden tanımlanmış temsilci türü olan bir olay sınıfı üyesi şöyledir:  
+ Temsilciler, olay ile birlikte en yaygın olarak kullanılır. Bir olay bir temsilci türü çok benzer bir sınıf bir arabirim türü olabilir aynı şekilde sahiptir. Temsilci, olay işleyicileri çok karşılayan bir sözleşmeyi temsil eder. Önceden tanımlanmış temsilci türü olan bir olay sınıf üyesi şu şekildedir:  
   
 ```cpp  
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- Açığa çıkarılması temsilciler Windows çalışma zamanı uygulama ikili arabirimi istemcilere bildirirken kullanmak [Windows::Foundation::TypedEventHandler\<TSender, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). Bu temsilci Javascript istemciler tarafından tüketilen etkinleştirmek proxy ve saplama ikili dosyalarını önceden tanımlanmış.  
+ Windows çalışma zamanı uygulama ikili arabiriminde kullanıma sunulacak temsilciler istemcilere bildirirken kullanın [typedeventhandler\<TSender, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). Bu temsilci etkinleştirmediğiniz Javascript istemciler tarafından kullanılacak proxy ve saplama ikili dosyaları önceden tanımlanmış.  
   
 ## <a name="consuming-delegates"></a>Temsilcileri kullanma  
- Bir evrensel Windows Platform uygulaması oluşturduğunuzda, genellikle bir Windows çalışma zamanı sınıf gösteren bir olay türü olarak bir temsilci ile çalışır. Bir olaya abone olmak için bir işlev belirterek kendi temsilci türünün bir örneğini oluşturun — veya lambda — temsilci imza eşleşir. Ardından `+=` temsilci nesne sınıfında olay üyesine geçirmek için işleci. Bu olaya abone olma olarak bilinir. Sınıf örneği "olay başlatıldığında" nesnenizin veya diğer nesneleri tarafından eklenen diğer işleyicilerin yanı sıra, işlev çağrılır.  
+ Bir evrensel Windows platformu uygulaması oluşturduğunuzda, genellikle bir Windows çalışma zamanı sınıfı bir olay türü olarak bir temsilci ile çalışır. Bir olaya abone olmak için bir işlev belirterek, temsilci türünün bir örneği oluşturma — veya lambda —, temsilci imzasında eşleşir. Ardından `+=` temsilci nesne sınıfında olay üyeye geçirilecek işleci. Bu olaya abone olma olarak bilinir. Sınıf örneği "olay oluşturulduğunda", nesnenizin veya diğer nesneleri tarafından eklenen herhangi bir işleyicileri birlikte, işlev çağrılır.  
   
 > [!TIP]
->  Olay işleyici oluşturduğunuzda, visual Studio sizin için çok fazla iş yapar. Örneğin, olay işleyici XAML biçimlendirme belirtirseniz, araç ipucu görünür. Araç İpucu seçerseniz, Visual Studio, otomatik olarak olay işleyicisi yöntemi oluşturur ve olay yayımlama sınıfı üzerinde ile ilişkilendirir.  
+>  Bir olay işleyicisi oluşturduğunuzda, visual Studio birçok iş sizin için halleder. Örneğin, bir olay işleyicisi XAML biçimlendirmede belirtirseniz, araç ipucu görünür. Araç İpucu seçerseniz Visual Studio otomatik olarak olay işleyicisi yöntemi oluşturur ve yayımlama sınıfı olayı ile ilişkilendirir.  
   
- Aşağıdaki örnek temel düzeni gösterir. `Windows::Foundation::TypedEventHandler` Temsilci türüdür. İşleyici işlevi, adlandırılmış işlevi kullanılarak oluşturulur.  
+ Aşağıdaki örnek, temel düzeni gösterir. `Windows::Foundation::TypedEventHandler` Temsilci türüdür. İşleyici işlevi, adlandırılmış bir işlevi kullanarak oluşturulur.  
   
  App.h içinde:  
   
@@ -48,87 +48,87 @@ event PrimeFoundHandler^ primeFoundEvent;
  [!code-cpp[cx_delegates#121](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#121)]  
   
 > [!WARNING]
->  Genel olarak, bir olay işleyicisi için döngüsel başvurulara önlemek için çok dikkatli almadıkça isimli bir işlev yerine bir lambda kullanmak en iyisidir. İsimli bir işlev "Bu" işaretçiyi zayıf başvuruya göre yakalar, ancak bir lambda güçlü başvuruya göre yakalar ve bir döngüsel başvuru oluşturur. Daha fazla bilgi için bkz: [zayıf başvurular ve kesme döngüleri](../cppcx/weak-references-and-breaking-cycles-c-cx.md).  
+>  Genel olarak, bir olay işleyicisi için döngüsel başvuru kaçınmak için dikkatli almadıkları sürece, bir lambda yerine adlandırılmış bir işlev kullanılması daha iyidir. Adlandırılmış bir işlev tarafından zayıf başvuru "Bu" işaretçiyi yakalar, ancak bir lambda güçlü başvuruya göre yakalayan ve döngüsel bir başvuru oluşturur. Daha fazla bilgi için [zayıf başvurular ve döngüleri kesme](../cppcx/weak-references-and-breaking-cycles-c-cx.md).  
   
- Kurala göre Windows çalışma zamanı tarafından tanımlanan olay işleyicisi temsilci adlarının biçimi şöyledir: * EventHandler — Örneğin, RoutedEventHandler, SizeChangedEventHandler veya SuspendingEventHandler. Ayrıca, kural tarafından olay işleyici temsilcileri iki parametreye sahiptir ve void döndürür. Türünde ilk parametre türü parametrelerine sahip olmayan bir temsilci, [Platform::Object ^](../cppcx/platform-object-class.md); olay harekete nesne gönderen bir başvuru içerir. Olay işleyicisi yönteminde bağımsız değişken kullanmadan önce geri özgün türe sahip. Tür parametreleri olan bir olay işleyici temsilcisi, ilk tür parametresi gönderen türünü belirtir ve ikinci parametre olayla ilgili bilgileri tutan bir ref sınıf için bir tanıtıcı olduğundan. Kurala göre o sınıfın adlı \*EventArgs. Örneğin, RoutedEventHandler RoutedEventArgs türünde ikinci bir parametresi temsilcinin ^, ve DragEventHander DragEventArgs türünde ikinci bir parametresi ^.  
+ Kural gereği, Windows çalışma zamanı tarafından tanımlanan olay işleyicisi temsilci adlarının biçimi şöyledir: * EventHandler — Örneğin, RoutedEventHandler, SizeChangedEventHandler veya SuspendingEventHandler. Ayrıca kural olarak, olay işleyici temsilcilerini iki parametreye sahiptir ve void döndürür. Türüdür ilk parametre tür parametrelerine sahip olmayan bir Temsilcide [Platform::Object ^](../cppcx/platform-object-class.md); olayı tetikleyen nesne gönderen bir başvuru içerir. Olay işleyicisi yönteminde bağımsız değişken kullanmadan önce yeniden orijinal türüne sahip. Tür parametreleri olan bir olay işleyici temsilcisini, gönderen türünü ilk tür parametresi belirtir ve ikinci parametresi olayla ilgili bilgileri içeren bir başvuru sınıfı için bir tanıtıcı. Kural olarak, bu sınıf adlı \*EventArgs. Örneğin, bir RoutedEventHandler temsilci RoutedEventArgs türünde ikinci bir parametresi vardır ^, ve DragEventHander DragEventArgs türünde ikinci bir parametre ^.  
   
- Kurala göre zaman uyumsuz bir işlem tamamlandığında yürütülen kodu sarmalamak temsilciler adlı * CompletedHandler. Bu temsilci sınıfındaki özellikleri olayları olarak değil olarak tanımlanır. Bu nedenle, kullanmadığınız `+=` ; abone olursanız işleci yalnızca bir temsilci nesnesi özelliğine atayın.  
+ Kural gereği, zaman uyumsuz bir işlem tamamlandığında yürütülen kod kaydırma temsilciler adlandırılır * CompletedHandler. Bu temsilciler sınıfındaki özellikleri olmayan olaylar olarak tanımlanır. Bu nedenle, kullanmadığınız `+=` abone olursanız; için işleci yalnızca bir temsilci nesnesinin özelliğine atayın.  
   
 > [!TIP]
->  C++ IntelliSense tam temsilci imza göstermez; Bu nedenle, onu EventArgs parametre türünü belirlemenize yardımcı değil. Türü bulmak için gidebilirsiniz **Nesne Tarayıcısı** ve bakmak `Invoke` temsilci yöntemi.  
+>  C++ IntelliSense, tüm temsilci imzasında göstermez; Bu nedenle, bu belirli türde bir EventArgs parametresi belirlemenize yardımcı olmaz. Tür bulmak için giderek **Nesne Tarayıcısı** bakın `Invoke` temsilci için yöntemi.  
   
 ## <a name="creating-custom-delegates"></a>Özel temsilci oluşturma  
- Olay işleyicileri tanımlamak veya özel işlevsellik, Windows çalışma zamanı bileşenine geçmek olanak sağlamak üzere kendi temsilciler tanımlayabilirsiniz. Diğer Windows çalışma zamanı türü gibi ortak bir temsilci olarak genel bildirilemez.  
+ Olay işleyicilerini tanımlamak için veya özel işlevler için Windows çalışma zamanı bileşeni geçmesine olanak sağlamak için kendi temsilcileri tanımlayabilirsiniz. Diğer Windows çalışma zamanı türü gibi genel temsilci genel'olarak bildirilemez.  
   
 ### <a name="declaration"></a>Bildirim  
- Bir temsilci bildirimi işlev bildirimi benzer temsilci türüdür. Genellikle, bir sınıf bildirimi temsilci bildiriminde ayrıca geçirebilmenize rağmen ad alanı kapsamında bir temsilci bildirin. Aşağıdaki temsilci gereken herhangi bir işlev yalıtan bir `ContactInfo^` giriş ve döndürür olarak bir `Platform::String^`.  
+ Temsilci bildirimi temsilci türü olan bir işlev bildirimi benzer. Genellikle, ayrıca bir sınıf bildiriminde bir temsilci bildirimini iç içe yerleştirebilseniz ad alanı kapsamında bir temsilci bildirin. Aşağıdaki temsilci isteyen herhangi bir işlevi kapsülleyen bir `ContactInfo^` giriş ve döndürür olarak bir `Platform::String^`.  
   
  [!code-cpp[cx_delegates#111](../cppcx/codesnippet/CPP/delegatesevents/class1.h#111)]  
   
- Bir temsilci türü belirtmesi sonra bu tür ya da bu tür nesneleri parametre olarak geçirmesine yöntemleri sınıf üyeleri bildirebilirsiniz. Ayrıca bir yöntem veya işlevi bir temsilci türü geri dönebilirsiniz. Aşağıdaki örnekte, `ToCustomString` yöntemi temsilci giriş parametresi olarak alır. Bazı veya tüm ortak özelliklerinin bir dize oluşturur özel bir işlev sağlamak istemci kodu yöntemi etkinleştirir bir `ContactInfo` nesnesi.  
+ Bir temsilci türü bildirdikten sonra sınıf üyeleri, tür veya bu tür nesneleri parametre olarak geçirmesine yöntemleri bildirebilirsiniz. Ayrıca, bir yöntem veya işlev temsilci türü döndürebilir. Aşağıdaki örnekte, `ToCustomString` yöntemi temsilci giriş parametresi olarak alır. Yöntem bir dizeden bazılarını veya tümünü genel özelliklerini oluşturan özel bir işlev sağlamak istemci kodu sağlar bir `ContactInfo` nesne.  
   
  [!code-cpp[Cx_delegates#112](../cppcx/codesnippet/CPP/delegatesevents/class1.h#112)]  
   
 > [!NOTE]
->  Kullandığınız "^" sembol temsilci türüne başvurduğunuzda türü tüm Windows çalışma zamanı ile yalnızca başvuru olarak.  
+>  Kullandığınız "^" sembol temsilci türüne başvurduğunuzda türü ile herhangi bir Windows çalışma zamanı yalnızca başvuru olarak.  
   
- Bir olay bildirimi her zaman bir temsilci türü vardır. Bu örnek, tipik bir temsilci gösterir Windows çalışma zamanı tür imzası:  
+ Her zaman bir olay bildirimi, bir temsilci türü vardır. Bu örnek, tipik bir temsilci gösterir. Windows çalışma zamanı tür imzası:  
   
  [!code-cpp[cx_delegates#122](../cppcx/codesnippet/CPP/delegatesevents/class1.h#122)]  
   
- `Click` Olayında `Windows:: UI::Xaml::Controls::Primitives::ButtonBase` sınıftır türü `RoutedEventHandler`. Daha fazla bilgi için bkz: [olayları](../cppcx/events-c-cx.md).  
+ `Click` Olayında `Windows:: UI::Xaml::Controls::Primitives::ButtonBase` sınıf türüdür `RoutedEventHandler`. Daha fazla bilgi için [olayları](../cppcx/events-c-cx.md).  
   
- İstemci kodu ilk kullanarak temsilci örneği oluşturur `ref new` ve temsilci imza ile uyumludur ve özel davranışını tanımlayan bir lambda sağlama.  
+ İstemci kodu ilk kullanarak temsilci örneği oluşturur `ref new` ve temsilci imzası ile uyumludur ve özel durum tanımlayan bir lambda sağlama.  
   
  [!code-cpp[Cx_delegates#113](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#113)]  
   
- Üye işlevini çağırır ve temsilci geçirir. Varsayımında `ci` olan bir `ContactInfo^` örneği ve `textBlock` bir XAML `TextBlock^`.  
+ Üye işlevini çağırır ve temsilci geçirir. Varsayımında `ci` olduğu bir `ContactInfo^` örneği ve `textBlock` olan bir XAML `TextBlock^`.  
   
  [!code-cpp[Cx_delegates#114](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#114)]  
   
- Sonraki örnekte, her öğe karşı temsilcisini yürütür bir Windows çalışma zamanı bileşeni ortak yönteminde özel temsilci bir istemci uygulaması geçirir bir `Vector`:  
+ Sonraki örnekte, bir istemci uygulama bir genel yöntem, her öğe karşı temsilci yürüten bir Windows çalışma zamanı bileşeni için özel bir temsilci geçirir bir `Vector`:  
   
  [!code-cpp[Cx_delegates#118](../cppcx/codesnippet/CPP/clientapp/mainpage.xaml.cpp#118)]  
   
  [!code-cpp[Cx_delegates#119](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#119)]  
   
-### <a name="construction"></a>Yapı  
- Bu nesnelerin herhangi biri bir temsilciyi oluşturmak:  
+### <a name="construction"></a>Oluşturma  
+ Bu nesnelerin herhangi bir temsilci oluşturabilirsiniz:  
   
 -   lambda  
   
 -   statik işlevi  
   
--   üye işaretçileri  
+-   işaretçi-üye  
   
 -   Std::Function  
   
- Aşağıdaki örnek, bu nesnelerin her biri bir temsilciyi oluşturmak gösterilmiştir. Tam olarak aynı şekilde, oluşturmak için kullanılan nesne türüne bakılmaksızın temsilcisi tüketebilir.  
+ Aşağıdaki örnek, bu nesnelerin her biri bir temsilciyi oluşturmak gösterilmektedir. Temsilci, onu oluşturmak için kullanılan nesne türü ne olursa olsun tam olarak aynı şekilde kullanır.  
   
  [!code-cpp[Cx_delegates#115](../cppcx/codesnippet/CPP/delegatesevents/class1.cpp#115)]  
   
 > [!WARNING]
->  "Bu" işaretçiyi yakalayan bir lambda kullanırsanız, kullandığınızdan emin olun `-=` lambda çıkmadan önce olaydan açıkça kaydını işleci. Daha fazla bilgi için bkz: [olayları](../cppcx/events-c-cx.md).  
+>  "Bu" işaretçiyi yakalayan bir lambda kullanırsanız, kullandığınızdan emin olun `-=` lambda çıkmadan önce bu olaydan açıkça kaydını işleci. Daha fazla bilgi için [olayları](../cppcx/events-c-cx.md).  
   
 ### <a name="generic-delegates"></a>Genel temsilciler  
- Genel temsilciler C + +/ CX Genel sınıflar bildirimleri için benzer kısıtlamaları vardır. Bunlar genel olarak bildirilemez. Özel bildirebilir iç genel temsilci ve C++ ancak .NET kullanabilir veya .winmd meta verileri yayılan değil çünkü JavaScript istemciler bunu kullanamayacaklarını. Bu örnek yalnızca C++ tarafından kullanılan genel bir temsilci bildirir:  
+ Genel temsilciler C + +/ CX genel sınıf bildirimleri için benzer kısıtlamalar vardır. Bunlar genel olarak bildirilemez. Özel bir bildirebilirsiniz iç genel temsilci ve C++, ancak .NET kullanma veya .winmd meta verilere yayılır değil çünkü JavaScript istemciler bunu kullanamıyor. Bu örnek yalnızca C++ tarafından tüketilebilecek bir genel temsilci bildirir:  
   
  [!code-cpp[Cx_delegates#116](../cppcx/codesnippet/CPP/delegatesevents/class1.h#116)]  
   
- Sonraki örnek bir sınıf tanımı içinde temsilci özelleştirilmiş bir örneğini bildirir:  
+ Sonraki örnek, bir sınıf tanımı içinde bir temsilci özelleşmiş bir örneğini bildirir:  
   
  [!code-cpp[Cx_delegates#117](../cppcx/codesnippet/CPP/delegatesevents/class1.h#117)]  
   
 ## <a name="delegates-and-threads"></a>Temsilciler ve iş parçacıkları  
- İşlev nesnesi gibi bir temsilci gelecekte bir zamanda yürütecek kodunu içerir. Oluşturur ve temsilci ve kabul eder ve temsilci yürüten işlev aktaran kodu aynı iş parçacığı üzerinde çalıştırıyorsanız, ardından görece basit noktalardır. Bu iş parçacığı kullanıcı Arabirimi iş parçacığı ise temsilci doğrudan kullanıcı arabirimi nesneleri XAML denetimleri gibi yönetebilirsiniz.  
+ Bir işlev nesnesi gibi bir temsilci, gelecekte bir zamanda yürütülen kodu içerir. Ardından oluşturur ve temsilci ve kabul eder ve temsilci yürüten işlev kodu aynı iş parçacığı üzerinde çalışıyorsa, şeyler oldukça basittir. Bu iş parçacığı UI iş parçacığı ise, temsilci doğrudan XAML denetimleri gibi kullanıcı arabirimi nesneleri değiştirebilirsiniz.  
   
- Bir iş parçacıklı grupta çalıştırır ve bu bileşen için bir temsilci sağlayan bir Windows çalışma zamanı bileşeni bir istemci uygulaması yüklenirse, varsayılan olarak doğrudan STA iş parçacığı üzerinde temsilci çağrılır. Çoğu Windows çalışma zamanı bileşenleri STA veya MTA içinde çalıştırabilirsiniz.  
+ Bir istemci uygulama bir iş parçacıklı apartmanda çalıştırır ve bu bileşene bir temsilci sağlayan bir Windows çalışma zamanı bileşeni yüklenirse, varsayılan olarak temsilci doğrudan STA iş parçacığı üzerinde çağrılır. Çoğu Windows çalışma zamanı bileşenleri STA veya MTA içinde çalıştırabilirsiniz.  
   
- Temsilci yürütülen kodunun farklı bir iş parçacığı üzerinde çalışıp çalışmadığını — Örneğin, bir concurrency::task nesne bağlamında — sonra Paylaşılan verilere erişimi eşitlemekten sorumludur. Örneğin, temsilciniz bir vektör başvuruyor ve XAML denetimi aynı vektör başvuruyor kilitlenmeleri veya temsilci ve XAML denetim vektör sam adresindeki erişmeyi denediğinde, ortaya çıkabilecek yarış durumları kaçınmak için adımları almalıdır e süre. Ayrıca temsilci temsilci çağrılmadan önce kapsamının dışına geçebilir başvuru yerel değişkenleri tarafından yakalama girişimi değil ilgilenebilmek gerekir.  
+ Temsilci yürütülen kod farklı bir iş parçacığı üzerinde çalışıp çalışmadığı — Örneğin, bir concurrency::task nesne bağlamında — Paylaşılan verilere erişimi eşitlemek için sorumlu olursunuz. Örneğin, temsilciniz bir vektör başvuru içeriyor ve bir XAML denetimi başvuru aynı vektör varsa, kilitlenmeleri veya temsilci hem XAML denetimi sam vektörünü erişmeyi denediğinde ortaya çıkabilecek yarış durumlarını kaçınmak için gerekli adımları atmanız e zaman. Size de temsilci metot temsilcisinin çağrılmadan önce kapsam dışına geçebilir başvuru yerel değişkenler yakalama çalışmaz ilgileniriz gerekir.  
   
- Oluşturulan temsilciniz oluşturulduğu aynı iş parçacığı üzerinde geri çağrılması istiyorsanız — örneğin, bir MTA grupta çalıştıran bileşenine geçirirseniz — ve Oluşturucusu aynı parçacığında çağrılan istiyor , ardından ikinci bir alan temsilci oluşturucusu kullanın `CallbackContext` parametresi. Yalnızca bu kayıtlı bir proxy/stub sahip yetkililer kullanın; tüm Windows.winmd içinde tanımlanan temsilcileri kaydedilir.  
+ Oluşturulan temsilciniz oluşturulmuş olan aynı iş parçacığında aranmak istiyorsanız — örneğin, bir MTA grupta çalışan bir bileşen için geçirirseniz — ve oluşturucusu olarak aynı iş parçacığında çağrılan istediğiniz , ardından ikinci bir alan temsilci oluşturucu aşırı yüklemesini kullanın `CallbackContext` parametresi. Yalnızca bu aşırı yükleme kayıtlı bir proxy/saplama sahip yetkililer kullanın. tüm Windows.winmd'i içinde tanımlanan temsilcileri kaydedilir.  
   
- Olay işleyicileri .NET içinde biliyorsanız, önerilen uygulama, yangın önce bir olay yerel bir kopyasını olduğunu biliyor. Bu olay yalnızca çağrılmadan önce olay işleyici kaldırılabilir yarış durumları önler. C + bunun gerekli değildir +/ CX olay işleyicileri zaman eklendiğinde veya kaldırıldığında olduğundan yeni bir işleyici listesi oluşturulur. Bir olay çağırmadan önce başvuru sayısı işleyici listesinde bir C++ nesnesi artırması nedeniyle, tüm işleyiciler geçerli olacağını garanti edilir. Ancak, bu da Süren iş parçacığı üzerinde bir olay işleyicisi kaldırırsanız, yayımlama nesne artık güncel değil listesinde kopyasını üzerinde çalışıyorsa bu işleyici hala çağrılan, anlamına gelir. Yayımlama nesne, olay harekete zamana kadar güncelleştirilmiş listesini almazsınız.  
+ . NET'te olay işleyicileri varsa, bir olay harekete, önce yerel bir kopyasını oluşturmak için önerilen uygulama olduğunu biliyorsunuz. Bu yalnızca olay çağrılmadan önce bir olay işleyicisi kaldırılabilir yarış durumları ortadan kaldırır. C +'da bunun gerekli değildir +/ CX olay işleyicileri zaman eklendiğinde veya kaldırıldığında olduğundan yeni bir işleyici listesi oluşturulur. Bir olay çağırmadan önce bir C++ nesnesi işleyicisi başvuru sayısını artırır çünkü tüm işleyiciler geçerli olacağı garanti edilir. Ancak, bu da tüketim iş parçacığı üzerinde bir olay işleyicisi kaldırırsanız, yayımlama nesnesi, artık güncel olmayan listenin kopyası üzerinde çalışıyorsa bu işleyici hala çağrılan, anlamına gelir. Yayımlama nesne, sonraki açışınızda kadar olayı tetikler güncelleştirilmiş listesini almazsınız.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür sistemi](../cppcx/type-system-c-cx.md)   

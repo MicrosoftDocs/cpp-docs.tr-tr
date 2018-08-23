@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: edc4658ebf0519ef9d1792d62b303f423e658835
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 8847083fe134c36f506e7080772b1e5f0e2a873c
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39643075"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42590188"
 ---
 # <a name="activationfactorygetruntimeclassname-method"></a>ActivationFactory::GetRuntimeClassName Metodu
-Nesnenin çalışma zamanı sınıf adını alır Geçerli **ActivationFactory** başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   GetRuntimeClassName  
-)(_Out_ HSTRING* runtimeName);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *runtimeName*  
- Bu işlem tamamlandığında, nesnenin çalışma zamanı sınıfının adını içeren bir dize için bir tanıtıcı, geçerli **ActivationFactory** başlatır.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ActivationFactory Sınıfı](../windows/activationfactory-class.md)
+
+Nesnenin çalışma zamanı sınıf adını alır Geçerli **ActivationFactory** başlatır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   GetRuntimeClassName
+)(_Out_ HSTRING* runtimeName);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*runtimeName*  
+Bu işlem tamamlandığında, nesnenin çalışma zamanı sınıfının adını içeren bir dize için bir tanıtıcı, geçerli **ActivationFactory** başlatır.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, hatayı açıklayan bir HRESULT.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ActivationFactory Sınıfı](../windows/activationfactory-class.md)

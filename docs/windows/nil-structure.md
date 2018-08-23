@@ -15,34 +15,39 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b824baae8044912e36dfe56054f4db1af7225fdb
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 628443cf967e70b5f05ecebc0975abbcd1d44650
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015653"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596178"
 ---
 # <a name="nil-structure"></a>Nil Yapısı
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-struct Nil;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirtilmeyen, isteğe bağlı şablon parametre göstermek için kullanılır.  
-  
- **Nil** boş bir yapıdır.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `Nil`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+struct Nil;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirtilmeyen, isteğe bağlı şablon parametre göstermek için kullanılır.
+
+**Nil** boş bir yapıdır.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`Nil`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

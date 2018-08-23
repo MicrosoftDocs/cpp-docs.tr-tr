@@ -20,24 +20,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2e9afcf3850d047452b201d9d1d84f1e0cf6cb4b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 4af8ccddce73e419bec468aefc1b0f63bee89ecf
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33876026"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604382"
 ---
 # <a name="ole-db-consumer-attributes"></a>OLE DB Tüketici Öznitelikleri
-OLE DB tüketici öznitelikleri temel kod ekleme [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları yürütülürken ve verilere erişim açılış tabloları gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.  
+OLE DB tüketici öznitelikleri temel kodu ekleme [OLE DB Tüketici Şablonları](../data/oledb/ole-db-consumer-templates-reference.md)komutları çalıştırma ve veri erişimi açılış tablolar gibi görevleri gerçekleştiren bir çalışma OLE DB tüketici oluşturmak için.
   
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|[db_accessor](../windows/db-accessor.md)|Sütunları satır kümesinde bağlar ve karşılık gelen erişimcisi eşlemeleri bağlar.|  
-|[db_column](../windows/db-column.md)|Belirtilen sütun, satır kümesine bağlar.|  
-|[db_command](../windows/db-command.md)|Bir OLE DB komutu yürütür.|  
-|[db_param](../windows/db-param.md)|Belirtilen üye değişkeni bir giriş veya çıkış parametresi ile ilişkilendirir.|  
-|[db_source](../windows/db-source.md)|Oluşturur ve bir veri kaynağı için bir sağlayıcı üzerinden bir bağlantı yalıtır.|  
-|[db_table](../windows/db-table.md)|OLE DB tablo açar.|  
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|[db_accessor](../windows/db-accessor.md)|Sütunları satır kümesinde bağlar ve bunların karşılık gelen erişimci eşlenir bağlar.|
+|[db_column](../windows/db-column.md)|Belirtilen sütun, satır kümesine bağlar.|
+|[db_command](../windows/db-command.md)|OLE DB komutu yürütür.|
+|[db_param](../windows/db-param.md)|Belirtilen üye değişkeni, bir giriş veya çıkış parametresi ile ilişkilendirir.|
+|[db_source](../windows/db-source.md)|Oluşturur ve bir veri kaynağı sağlayıcısı üzerinden bir bağlantı kapsüller.|
+|[db_table](../windows/db-table.md)|Bir OLE DB tablosu açılır.|
   
-## <a name="see-also"></a>Ayrıca Bkz.  
+## <a name="see-also"></a>Ayrıca Bkz.
  [Gruplara Göre Öznitelikler](../windows/attributes-by-group.md)

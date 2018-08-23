@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::UIntPtr Struct
 ms.assetid: dc4f5176-4c4d-4209-b68e-eb30f2c2465b
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71af53e294ac29146ab5aa116b0bac7f7af6b6fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ec2651ae44955a4adfa1319e5528b7fe948a15bf
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088225"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42581189"
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr değer sınıfı
-Büyüklüğü (32 bit veya 64 bit) platformu için uygun olan bir imzasız işaretçisi temsil eder.  
+Boyutu (32 bit veya 64-bit) platform için uygun olan bir işaretsiz işaretçi temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,11 +34,11 @@ public value struct UintPtr
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

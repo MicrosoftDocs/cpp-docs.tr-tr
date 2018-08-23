@@ -17,32 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 80c744431fe7df32be705fcf91eef0a8691b8fa4
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: d70a2c316f9e7994292f3dc29cef5bce993778ad
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015804"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42595069"
 ---
 # <a name="synclockwithstatustislocked-method"></a>SyncLockWithStatusT::IsLocked Metodu
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-bool IsLocked() const;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirtir olup olmadığını geçerli **SyncLockWithStatusT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockWithStatusT** nesnedir *kilitli*.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- **doğru** varsa **SyncLockWithStatusT** nesnedir kilitli; Aksi takdirde **false**.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+bool IsLocked() const;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirtir olup olmadığını geçerli **SyncLockWithStatusT** nesnesi bir kaynağa sahiptir; diğer bir deyişle, **SyncLockWithStatusT** nesnedir *kilitli*.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+**doğru** varsa **SyncLockWithStatusT** nesnedir kilitli; Aksi takdirde **false**.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SyncLockWithStatusT Sınıfı](../windows/synclockwithstatust-class.md)

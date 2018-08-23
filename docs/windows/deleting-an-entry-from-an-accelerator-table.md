@@ -16,34 +16,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a8f3a72f8f9a71f54a997c4ba76d51aad6fb200a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 0c191a2e37e4fe99c12486270c34a558cf4e8455
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39648327"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605413"
 ---
 # <a name="deleting-an-entry-from-an-accelerator-table"></a>Hızlandırıcı Tablosundan Giriş Silme
-### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan giriş silme  
-  
-1.  Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).  
-  
-    > [!NOTE]
-    >  Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).  
-  
-2.  Silmek istediğiniz girişini seçin. (Basılı **Ctrl** veya **Shift** birden çok girişi seçmek için anahtar tıklatırken.)  
-  
-3.  Sağ tıklatın ve seçin **Sil** kısayol menüsünden (veya **Sil** gelen **Düzenle** menü).  
-  
- \- veya -  
-  
--   Tuşuna **Sil** anahtarı.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Win32  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı tablolarını düzenleme](../windows/editing-accelerator-tables.md)   
- [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)
+
+### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan giriş silme
+
+1. Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+
+   > [!NOTE]
+   > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
+
+2. Silmek istediğiniz girişini seçin. (Basılı **Ctrl** veya **Shift** birden çok girişi seçmek için anahtar tıklatırken.)
+
+3. Sağ tıklatın ve seçin **Sil** kısayol menüsünden (veya **Sil** gelen **Düzenle** menü).
+
+\- veya -
+
+- Tuşuna **Sil** anahtarı.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
+
+## <a name="requirements"></a>Gereksinimler
+
+Win32
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hızlandırıcı Tablolarını Düzenleme](../windows/editing-accelerator-tables.md)  
+[Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

@@ -17,38 +17,44 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ab02da2dcae788e5eb4b1db15508d2f272ec546a
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 32d2d3cd633204b44e266bddea5d16361b5e9d19
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39651564"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42604456"
 ---
 # <a name="asyncbasegetid-method"></a>AsyncBase::get_Id Metodu
-Zaman uyumsuz işlem tanıtıcısını alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-STDMETHOD(  
-   get_Id  
-)(unsigned int *id) override;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *id*  
- Tanıtıcı depolanacak bulunduğu konumu.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem `IAsyncInfo::get_Id`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase Sınıfı](../windows/asyncbase-class.md)
+
+Zaman uyumsuz işlem tanıtıcısını alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+STDMETHOD(
+   get_Id
+)(unsigned int *id) override;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*id*  
+Tanıtıcı depolanacak bulunduğu konumu.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, E_ILLEGAL_METHOD_CALL.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yöntem `IAsyncInfo::get_Id`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)

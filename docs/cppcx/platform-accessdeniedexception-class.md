@@ -12,19 +12,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::AccessDeniedException
 ms.assetid: 6ae2155b-7b16-4587-8d2d-da05eab4c7e9
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4be26bfc87be55d36954429c64094cabd6a6cf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 808de08163f0f94e4c3d0064fced7cb81f83c931
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087620"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42597942"
 ---
 # <a name="platformaccessdeniedexception-class"></a>Platform::AccessDeniedException sınıfı
-Oluşturulan kaynak eriştiğinizde veya özellik engellendi.  
+Özel bir kaynağa eriştiğinizde veya özellik engellendi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,16 +33,16 @@ public ref class AccessDeniedException : COMException,    IException,    IPrinta
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu özel durumun isabet durumunda uygun özellik istenir ve gerekli bildirimleri, uygulamanızın paket bildirimi yapılan emin olun. Daha fazla bilgi için bkz: [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
+ Bu özel durumu, istenen uygun özellik ve gerekli bildirimleri uygulama paketi bildiriminde yapılan emin olun. Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd  
+ **Meta veri:** platform.winmd  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

@@ -18,25 +18,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7c32da2b56e3a19bda02f226645b98d746a39c7d
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 5b8d9ef624f17645da058ab86cd9b6a53cf17069
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39650322"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606027"
 ---
 # <a name="shrinking-or-stretching-part-of-an-image-image-editor-for-icons"></a>Görüntünün Bir Parçasını Küçültme veya Uzatma (Simgeler İçin Görüntü Düzenleyicisi)
-### <a name="to-shrink-or-stretch-part-of-an-image"></a>Küçültme veya uzatma bir görüntünün parçası  
-  
-1.  Görüntüyü yeniden boyutlandırmak istediğiniz bölümü seçin. Daha fazla bilgi için [görüntü alanını seçme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md).  
-  
-2.  İstenen Boyut seçimi olana kadar boyutlandırma tutamaçlarından birinin sürükleyin.  
-  
- Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).  
-  
-## <a name="requirements"></a>Gereksinimler  
- Yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)   
- [Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)
+
+### <a name="to-shrink-or-stretch-part-of-an-image"></a>Küçültme veya uzatma bir görüntünün parçası
+
+1. Görüntüyü yeniden boyutlandırmak istediğiniz bölümü seçin. Daha fazla bilgi için [görüntü alanını seçme](../windows/selecting-an-area-of-an-image-image-editor-for-icons.md).
+
+2. İstenen Boyut seçimi olana kadar boyutlandırma tutamaçlarından birinin sürükleyin.
+
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
+
+## <a name="requirements"></a>Gereksinimler
+
+Yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hızlandırıcı tuşları](../windows/accelerator-keys-image-editor-for-icons.md)  
+[Görüntüyü yeniden boyutlandırma](../windows/resizing-an-image-image-editor-for-icons.md)

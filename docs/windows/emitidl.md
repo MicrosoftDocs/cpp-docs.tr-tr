@@ -17,62 +17,66 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4c52b905420dcb576705d63be7d7bdce27c5eea6
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 566e78820dd382a4b4e05742a410057b681d1fdc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40015249"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603156"
 ---
 # <a name="emitidl"></a>emitidl
-Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Tüm sonraki IDL öznitelikleri işlenir ve oluşturulan .idl dosyasında yerleştirilmiş olup olmadığını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```cpp
 [ emitidl(state, defaultimports=boolean) ];
-```  
-  
-### <a name="parameters"></a>Parametreler  
+```
+
+### <a name="parameters"></a>Parametreler
+
 *durumu*  
-Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop`.  
-  
--   Varsa `true`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.  
-  
--   Varsa `false`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasına yerleştirilmez.  
-  
--   Varsa `restricted`, IDL öznitelikleri dosyasındaki olmasını sağlayan bir [Modülü](../windows/module-cpp.md) özniteliği. Derleyici bir .idl dosyası oluşturmaz.  
-  
--   Varsa `forced`, bir sonraki geçersiz kılar `restricted` sahip için dosya gerektirmiyor özniteliği, bir `module` IDL varsa özniteliği dosyasında öznitelikleri.  
-  
--   `push` Geçerli kaydetmenizi sağlayan **emitidl** ayarları bir iç **emitidl** yığını ve `pop` , ayarlamanıza imkan sağlar **emitidl** ne olursa olsun değer iç üstünde olduğu için **emitidl** yığını.  
-  
+Bu değerlerden biri: `true`, `false`, `forced`, `restricted`, `push`, veya `pop`.
+
+- Varsa `true`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasında yerleştirilir. İçin varsayılan ayar budur **emitidl**.
+
+- Varsa `false`, bir kaynak kodu dosyasında karşılaşılan kategori IDL öznitelikleri oluşturulan .idl dosyasına yerleştirilmez.
+
+- Varsa `restricted`, IDL öznitelikleri dosyasındaki olmasını sağlayan bir [Modülü](../windows/module-cpp.md) özniteliği. Derleyici bir .idl dosyası oluşturmaz.
+
+- Varsa `forced`, bir sonraki geçersiz kılar `restricted` sahip için dosya gerektirmiyor özniteliği, bir `module` IDL varsa özniteliği dosyasında öznitelikleri.
+
+- `push` Geçerli kaydetmenizi sağlayan **emitidl** ayarları bir iç **emitidl** yığını ve `pop` , ayarlamanıza imkan sağlar **emitidl** ne olursa olsun değer iç üstünde olduğu için **emitidl** yığını.
+
 `defaultimports=`*Boole* \(isteğe bağlı)  
--   Varsa *Boole* olduğu **true**, docobj.idl oluşturulan .idl dosyasına aktarılır. Ayrıca, bir .idl dosyası ile aynı adı taşıyan bir .h dosyası varsa `#include` kaynak kodu .h dosyası ile aynı dizinde bulunan ve ardından söz konusu .idl dosyası için bir içeri aktarma deyimi oluşturulan .idl dosyası içerir.  
-  
--   Varsa *Boole* olduğu **false**, docobj.idl oluşturulan .idl dosyasına alınmadı. .İdl dosyaları ile açıkça içeri aktarmanız gerekir [alma](../windows/import.md).  
-  
-## <a name="remarks"></a>Açıklamalar  
-Sonra **emitidl** C++ öznitelik, bir kaynak kodu dosyasında karşılaşıldığında, IDL kategori öznitelikler oluşturulan .idl dosyasında yerleştirilir. Yoksa hiçbir **emitidl** özniteliği, kaynak kod dosyasında IDL öznitelikleri oluşturulan .idl dosyasının çıkarılır.  
-  
-Birden çok olması mümkündür **emitidl** kaynak kodu dosyasında öznitelikleri. Varsa `[emitidl(false)];` sonraki olmadan bir dosya ile karşılaşılırsa `[emitidl(true)];`, sonra oluşturulan .idl dosyasına özniteliklere işlenir.  
-  
-Derleyici, yeni bir dosya karşılaştığında her zaman **emitidl** örtük olarak ayarlandığında **true**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|Her yerde|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
-Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Derleyici öznitelikleri](../windows/compiler-attributes.md)   
-[Tek başına öznitelikler](../windows/stand-alone-attributes.md)   
+- Varsa *Boole* olduğu **true**, docobj.idl oluşturulan .idl dosyasına aktarılır. Ayrıca, bir .idl dosyası ile aynı adı taşıyan bir .h dosyası varsa `#include` kaynak kodu .h dosyası ile aynı dizinde bulunan ve ardından söz konusu .idl dosyası için bir içeri aktarma deyimi oluşturulan .idl dosyası içerir.
+
+- Varsa *Boole* olduğu **false**, docobj.idl oluşturulan .idl dosyasına alınmadı. .İdl dosyaları ile açıkça içeri aktarmanız gerekir [alma](../windows/import.md).
+
+## <a name="remarks"></a>Açıklamalar
+
+Sonra **emitidl** C++ öznitelik, bir kaynak kodu dosyasında karşılaşıldığında, IDL kategori öznitelikler oluşturulan .idl dosyasında yerleştirilir. Yoksa hiçbir **emitidl** özniteliği, kaynak kod dosyasında IDL öznitelikleri oluşturulan .idl dosyasının çıkarılır.
+
+Birden çok olması mümkündür **emitidl** kaynak kodu dosyasında öznitelikleri. Varsa `[emitidl(false)];` sonraki olmadan bir dosya ile karşılaşılırsa `[emitidl(true)];`, sonra oluşturulan .idl dosyasına özniteliklere işlenir.
+
+Derleyici, yeni bir dosya karşılaştığında her zaman **emitidl** örtük olarak ayarlandığında **true**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|Her yerde|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
 [Öznitelikleri örnekleri](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

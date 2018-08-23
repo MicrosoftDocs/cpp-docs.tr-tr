@@ -17,47 +17,51 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2667c8ecb14e31388737366c4de6c527bdc40f9d
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: e8d69ccb0b5a0c0f0dd13d377841732d9f663e91
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012758"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42607591"
 ---
 # <a name="object-c"></a>nesne (C++)
-Özel bir arabirim tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[object]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir arabirim tanımı önce geldiği zaman **nesne** C++ özniteliği arabirimi .idl dosyası özel bir arabirim olarak yerleştirilmesini neden olur.  
-  
- Nesne ile işaretlenen herhangi bir arabirimde devralmalıdır `IUnknown`. Devralınan taban arabirimlerin herhangi, bu koşul sağlanana `IUnknown`. Temel arabirim devralır, `IUnknown`, derleyici ile işaretlenen arabirim neden olacak **nesne** türetmek için `IUnknown`.  
-  
-## <a name="example"></a>Örnek  
- Bkz: [nonbrowsable](../windows/nonbrowsable.md) nasıl kullanılacağına ilişkin bir örnek **nesne**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**interface**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|Yok.|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDL öznitelikleri](../windows/idl-attributes.md)   
- [Arabirim öznitelikleri](../windows/interface-attributes.md)   
- [Çift](../windows/dual.md)   
- [Dispinterface](../windows/dispinterface.md)   
- [Özel](../windows/custom-cpp.md)   
- [__interface](../cpp/interface.md)   
+
+Özel bir arabirim tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[object]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir arabirim tanımı önce geldiği zaman **nesne** C++ özniteliği arabirimi .idl dosyası özel bir arabirim olarak yerleştirilmesini neden olur.
+
+Nesne ile işaretlenen herhangi bir arabirimde devralmalıdır `IUnknown`. Devralınan taban arabirimlerin herhangi, bu koşul sağlanana `IUnknown`. Temel arabirim devralır, `IUnknown`, derleyici ile işaretlenen arabirim neden olacak **nesne** türetmek için `IUnknown`.
+
+## <a name="example"></a>Örnek
+
+Bkz: [nonbrowsable](../windows/nonbrowsable.md) nasıl kullanılacağına ilişkin bir örnek **nesne**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**interface**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|Yok.|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[IDL öznitelikleri](../windows/idl-attributes.md)  
+[Arabirim Öznitelikleri](../windows/interface-attributes.md)  
+[dual](../windows/dual.md)  
+[dispinterface](../windows/dispinterface.md)  
+[Özel](../windows/custom-cpp.md)  
+[__interface](../cpp/interface.md)  

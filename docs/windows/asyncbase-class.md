@@ -17,93 +17,98 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dcf5a095167e48a52405978a105cadaddfa870f2
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: cba5aaaec3303d9cd3534ff86cb677219c9c81c7
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39647820"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42586790"
 ---
 # <a name="asyncbase-class"></a>AsyncBase Sınıfı
-Windows çalışma zamanı zaman uyumsuz Durum makinesi uygular.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template <  
-   typename TComplete,  
-   typename TProgress = Details::Nil,  
-   AsyncResultType resultType = SingleResult  
->  
-class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;  
-  
-template <  
-   typename TComplete,  
-   AsyncResultType resultType  
->  
-class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *TComplete*  
- Bir zaman uyumsuz işlem tamamlandığında çağrılan bir olay işleyicisi.  
-  
- *TProgress*  
- Bir çalıştırma zaman uyumsuz işlem geçerli işlemin ilerlemesini bildirdiğinde çağrılan bir olay işleyicisi.  
-  
- *resulttype'ı*  
- Aşağıdakilerden birini [AsyncResultType](../windows/asyncresulttype-enumeration.md) sabit listesi değerleri. Varsayılan olarak, `SingleResult`.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[AsyncBase::AsyncBase Oluşturucusu](../windows/asyncbase-asyncbase-constructor.md)|Bir örneğini başlatır **AsyncBase** sınıfı.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[AsyncBase::Cancel Metodu](../windows/asyncbase-cancel-method.md)|Zaman uyumsuz bir işlem iptal eder.|  
-|[AsyncBase::Close Metodu](../windows/asyncbase-close-method.md)|Zaman uyumsuz işlemi kapatır.|  
-|[AsyncBase::FireCompletion Metodu](../windows/asyncbase-firecompletion-method.md)|Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilci sıfırlar.|  
-|[AsyncBase::FireProgress Metodu](../windows/asyncbase-fireprogress-method.md)|Geçerli ilerleme olay işleyicisini çağırır.|  
-|[AsyncBase::get_ErrorCode Metodu](../windows/asyncbase-get-errorcode-method.md)|Geçerli zaman uyumsuz işlem hata kodunu alır.|  
-|[AsyncBase::get_Id Metodu](../windows/asyncbase-get-id-method.md)|Zaman uyumsuz işlem tanıtıcısını alır.|  
-|[AsyncBase::get_Status Metodu](../windows/asyncbase-get-status-method.md)|Zaman uyumsuz işlemin durumunu gösteren bir değer alır.|  
-|[AsyncBase::GetOnComplete Metodu](../windows/asyncbase-getoncomplete-method.md)|Adres geçerli tamamlama olay işleyicisinin belirtilen değişkenine kopyalar.|  
-|[AsyncBase::GetOnProgress Metodu](../windows/asyncbase-getonprogress-method.md)|Adres geçerli ilerleme olay işleyicisinin belirtilen değişkenine kopyalar.|  
-|[AsyncBase::put_Id Metodu](../windows/asyncbase-put-id-method.md)|Zaman uyumsuz işlem tanıtıcısı ayarlar.|  
-|[AsyncBase::PutOnComplete Metodu](../windows/asyncbase-putoncomplete-method.md)|Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.|  
-|[AsyncBase::PutOnProgress Metodu](../windows/asyncbase-putonprogress-method.md)|Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.|  
-|[AsyncBase::Start Metodu](../windows/asyncbase-start-method.md)|Zaman uyumsuz işlemi başlatır.|  
-  
-### <a name="protected-methods"></a>Korumalı Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[AsyncBase::CheckValidStateForDelegateCall Metodu](../windows/asyncbase-checkvalidstatefordelegatecall-method.md)|Temsilci özellikleri geçerli zaman uyumsuz durumunda değiştirilebilir olup olmadığını sınar.|  
-|[AsyncBase::CheckValidStateForResultsCall Metodu](../windows/asyncbase-checkvalidstateforresultscall-method.md)|Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.|  
-|[AsyncBase::ContinueAsyncOperation Metodu](../windows/asyncbase-continueasyncoperation-method.md)|Zaman uyumsuz işlem işlemeye devam etmesi gerektiğinin veya durdurmak belirler.|  
-|[AsyncBase::CurrentStatus Metodu](../windows/asyncbase-currentstatus-method.md)|Geçerli zaman uyumsuz işlemin durumunu alır.|  
-|[AsyncBase::ErrorCode Metodu](../windows/asyncbase-errorcode-method.md)|Geçerli zaman uyumsuz işlem hata kodunu alır.|  
-|[AsyncBase::OnCancel Metodu](../windows/asyncbase-oncancel-method.md)|Türetilen bir sınıfta geçersiz kılındığında, bir zaman uyumsuz işlem iptal eder.|  
-|[AsyncBase::OnClose Metodu](../windows/asyncbase-onclose-method.md)|Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.|  
-|[AsyncBase::OnStart Metodu](../windows/asyncbase-onstart-method.md)|Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.|  
-|[AsyncBase::TryTransitionToCompleted Metodu](../windows/asyncbase-trytransitiontocompleted-method.md)|Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.|  
-|[AsyncBase::TryTransitionToError Metodu](../windows/asyncbase-trytransitiontoerror-method.md)|Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `AsyncBase`  
-  
- `AsyncBase`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+
+Windows çalışma zamanı zaman uyumsuz Durum makinesi uygular.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <
+   typename TComplete,
+   typename TProgress = Details::Nil,
+   AsyncResultType resultType = SingleResult
+>
+class AsyncBase : public AsyncBase<TComplete, Details::Nil, resultType>;
+
+template <
+   typename TComplete,
+   AsyncResultType resultType
+>
+class AsyncBase<TComplete, Details::Nil, resultType> : public Microsoft::WRL::Implements<IAsyncInfo>;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*TComplete*  
+Bir zaman uyumsuz işlem tamamlandığında çağrılan bir olay işleyicisi.
+
+*TProgress*  
+Bir çalıştırma zaman uyumsuz işlem geçerli işlemin ilerlemesini bildirdiğinde çağrılan bir olay işleyicisi.
+
+*resulttype'ı*  
+Aşağıdakilerden birini [AsyncResultType](../windows/asyncresulttype-enumeration.md) sabit listesi değerleri. Varsayılan olarak, `SingleResult`.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[AsyncBase::AsyncBase Oluşturucusu](../windows/asyncbase-asyncbase-constructor.md)|Bir örneğini başlatır **AsyncBase** sınıfı.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[AsyncBase::Cancel Metodu](../windows/asyncbase-cancel-method.md)|Zaman uyumsuz bir işlem iptal eder.|
+|[AsyncBase::Close Metodu](../windows/asyncbase-close-method.md)|Zaman uyumsuz işlemi kapatır.|
+|[AsyncBase::FireCompletion Metodu](../windows/asyncbase-firecompletion-method.md)|Tamamlanma olayı işleyicisini çağırır veya iç ilerleme temsilci sıfırlar.|
+|[AsyncBase::FireProgress Metodu](../windows/asyncbase-fireprogress-method.md)|Geçerli ilerleme olay işleyicisini çağırır.|
+|[AsyncBase::get_ErrorCode Metodu](../windows/asyncbase-get-errorcode-method.md)|Geçerli zaman uyumsuz işlem hata kodunu alır.|
+|[AsyncBase::get_Id Metodu](../windows/asyncbase-get-id-method.md)|Zaman uyumsuz işlem tanıtıcısını alır.|
+|[AsyncBase::get_Status Metodu](../windows/asyncbase-get-status-method.md)|Zaman uyumsuz işlemin durumunu gösteren bir değer alır.|
+|[AsyncBase::GetOnComplete Metodu](../windows/asyncbase-getoncomplete-method.md)|Adres geçerli tamamlama olay işleyicisinin belirtilen değişkenine kopyalar.|
+|[AsyncBase::GetOnProgress Metodu](../windows/asyncbase-getonprogress-method.md)|Adres geçerli ilerleme olay işleyicisinin belirtilen değişkenine kopyalar.|
+|[AsyncBase::put_Id Metodu](../windows/asyncbase-put-id-method.md)|Zaman uyumsuz işlem tanıtıcısı ayarlar.|
+|[AsyncBase::PutOnComplete Metodu](../windows/asyncbase-putoncomplete-method.md)|Tamamlama olay işleyicisinin adresi belirtilen değere ayarlar.|
+|[AsyncBase::PutOnProgress Metodu](../windows/asyncbase-putonprogress-method.md)|Devam eden olay işleyicisinin adresi belirtilen değere ayarlar.|
+|[AsyncBase::Start Metodu](../windows/asyncbase-start-method.md)|Zaman uyumsuz işlemi başlatır.|
+
+### <a name="protected-methods"></a>Korumalı Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[AsyncBase::CheckValidStateForDelegateCall Metodu](../windows/asyncbase-checkvalidstatefordelegatecall-method.md)|Temsilci özellikleri geçerli zaman uyumsuz durumunda değiştirilebilir olup olmadığını sınar.|
+|[AsyncBase::CheckValidStateForResultsCall Metodu](../windows/asyncbase-checkvalidstateforresultscall-method.md)|Geçerli zaman uyumsuz durumda zaman uyumsuz bir işlemin sonuçları toplanabilir olup olmadığını sınar.|
+|[AsyncBase::ContinueAsyncOperation Metodu](../windows/asyncbase-continueasyncoperation-method.md)|Zaman uyumsuz işlem işlemeye devam etmesi gerektiğinin veya durdurmak belirler.|
+|[AsyncBase::CurrentStatus Metodu](../windows/asyncbase-currentstatus-method.md)|Geçerli zaman uyumsuz işlemin durumunu alır.|
+|[AsyncBase::ErrorCode Metodu](../windows/asyncbase-errorcode-method.md)|Geçerli zaman uyumsuz işlem hata kodunu alır.|
+|[AsyncBase::OnCancel Metodu](../windows/asyncbase-oncancel-method.md)|Türetilen bir sınıfta geçersiz kılındığında, bir zaman uyumsuz işlem iptal eder.|
+|[AsyncBase::OnClose Metodu](../windows/asyncbase-onclose-method.md)|Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem kapatır.|
+|[AsyncBase::OnStart Metodu](../windows/asyncbase-onstart-method.md)|Türetilen bir sınıfta geçersiz kılındığında, zaman uyumsuz bir işlem başlatır.|
+|[AsyncBase::TryTransitionToCompleted Metodu](../windows/asyncbase-trytransitiontocompleted-method.md)|Geçerli zaman uyumsuz işlem tamamlanıp tamamlanmadığını gösterir.|
+|[AsyncBase::TryTransitionToError Metodu](../windows/asyncbase-trytransitiontoerror-method.md)|Belirtilen hata kodu iç hata durumunda değiştirip değiştiremeyeceğini belirtir.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`AsyncBase`
+
+`AsyncBase`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

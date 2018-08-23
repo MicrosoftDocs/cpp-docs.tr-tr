@@ -17,35 +17,40 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 19dcb3e90faef86fd291381a7082e8b5bfa89069
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: b3620a4b82aabb0058773f68938f545119f90791
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013463"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605604"
 ---
 # <a name="weakreferencedecrementstrongreference-method"></a>WeakReference::DecrementStrongReference Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-ULONG DecrementStrongReference();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Güçlü Başvuru geçerli sayısını azaltır **WeakReference** nesne.  
-  
- Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru kümesine **nullptr**.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İndirildiği güçlü başvuru sayısı.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [WeakReference sınıfı](../windows/weakreference-class1.md)  
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+ULONG DecrementStrongReference();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Güçlü Başvuru geçerli sayısını azaltır **WeakReference** nesne.
+
+Güçlü Başvuru sayısı sıfır olduğunda, güçlü başvuru kümesine **nullptr**.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İndirildiği güçlü başvuru sayısı.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[WeakReference sınıfı](../windows/weakreference-class1.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

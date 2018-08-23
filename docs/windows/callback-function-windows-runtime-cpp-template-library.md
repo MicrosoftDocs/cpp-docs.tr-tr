@@ -15,245 +15,251 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 799d0631ce29fcebd739f29232236e7cf87b74ac
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 57d1a3adc160323726bcdd31808cf82bc8da2e7f
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652581"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609260"
 ---
 # <a name="callback-function-windows-runtime-c-template-library"></a>Callback İşlevi (Windows Çalışma Zamanı C++ Şablon Kitaplığı)
-Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template<  
-   typename TDelegateInterface,  
-   typename TCallback  
->  
-ComPtr<TDelegateInterface> Callback(  
-   TCallbackcallback  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
+
+Üye işlevi bir geri çağırma yöntemi olan nesne oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template<
+   typename TDelegateInterface,
+   typename TCallback
+>
+ComPtr<TDelegateInterface> Callback(
+   TCallbackcallback
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)()  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
    _In_ HRESULT (TCallbackObject::* method)(TArg1)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
    TArg2)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
    TArg3)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
    TArg4)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
    TArg5)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
    TArg6)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
    TArg7)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
-   TArg7,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
+   TArg7,
    TArg8)  
-);  
-template<  
-   typename TDelegateInterface,  
-   typename TCallbackObject,  
-   typename TArg1,  
-   typename TArg2,  
-   typename TArg3,  
-   typename TArg4,  
-   typename TArg5,  
-   typename TArg6,  
-   typename TArg7,  
-   typename TArg8,  
-   typename TArg9  
->  
-ComPtr<TDelegateInterface> Callback(  
-   _In_ TCallbackObject *object,  
-   _In_ HRESULT (TCallbackObject::* method)(TArg1,  
-   TArg2,  
-   TArg3,  
-   TArg4,  
-   TArg5,  
-   TArg6,  
-   TArg7,  
-   TArg8,  
+);
+template<
+   typename TDelegateInterface,
+   typename TCallbackObject,
+   typename TArg1,
+   typename TArg2,
+   typename TArg3,
+   typename TArg4,
+   typename TArg5,
+   typename TArg6,
+   typename TArg7,
+   typename TArg8,
+   typename TArg9
+>
+ComPtr<TDelegateInterface> Callback(
+   _In_ TCallbackObject *object,
+   _In_ HRESULT (TCallbackObject::* method)(TArg1,
+   TArg2,
+   TArg3,
+   TArg4,
+   TArg5,
+   TArg6,
+   TArg7,
+   TArg8,
    TArg9)  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *TDelegateInterface*  
- Şablon parametresi bir olay oluştuğunda çağrılacak temsilci arabirimini belirtir.  
-  
- *TCallback*  
- Şablon parametresi bir nesne ve onun üye geri çağırma işlevini temsil eden bir nesne türünü belirtir.  
-  
- *TCallbackObject*  
- Şablon parametresi, üye işlevi olay oluştuğunda çağrılacak yöntem olan nesneyi belirtir.  
-  
- *TArg1*  
- Şablon parametresi ilk geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg2*  
- Şablon parametresi ikinci geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg3*  
- Şablon parametresi üçüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg4*  
- Şablon parametresi dördüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg5*  
- Şablon parametresi beşinci geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg6*  
- Şablon parametresi altıncı geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg7*  
- Şablon parametresi yedinci geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg8*  
- Şablon parametresi sekizinci geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *TArg9*  
- Şablon parametresi dokuzuncu geri çağırma yöntemi bağımsız değişken türünü belirtir.  
-  
- *geri çağırma*  
- Geri çağırma nesnesi ve onun üye işlevini temsil eden bir nesne.  
-  
- *object*  
- Bir olay oluştuğunda üye işlevi çağrılan nesne.  
-  
- *Yöntemi*  
- Bir olay oluştuğunda çağrılacak üye işlevi.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Üye işlevi, belirtilen geri çağırma yöntemi olan nesne.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir temsilci nesnesinin temeli olmalıdır `IUnknown`değil `IInspectable`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** event.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*TDelegateInterface*  
+Şablon parametresi bir olay oluştuğunda çağrılacak temsilci arabirimini belirtir.
+
+*TCallback*  
+Şablon parametresi bir nesne ve onun üye geri çağırma işlevini temsil eden bir nesne türünü belirtir.
+
+*TCallbackObject*  
+Şablon parametresi, üye işlevi olay oluştuğunda çağrılacak yöntem olan nesneyi belirtir.
+
+*TArg1*  
+Şablon parametresi ilk geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg2*  
+Şablon parametresi ikinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg3*  
+Şablon parametresi üçüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg4*  
+Şablon parametresi dördüncü geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg5*  
+Şablon parametresi beşinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg6*  
+Şablon parametresi altıncı geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg7*  
+Şablon parametresi yedinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg8*  
+Şablon parametresi sekizinci geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*TArg9*  
+Şablon parametresi dokuzuncu geri çağırma yöntemi bağımsız değişken türünü belirtir.
+
+*geri çağırma*  
+Geri çağırma nesnesi ve onun üye işlevini temsil eden bir nesne.
+
+*object*  
+Bir olay oluştuğunda üye işlevi çağrılan nesne.
+
+*Yöntemi*  
+Bir olay oluştuğunda çağrılacak üye işlevi.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Üye işlevi, belirtilen geri çağırma yöntemi olan nesne.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir temsilci nesnesinin temeli olmalıdır `IUnknown`değil `IInspectable`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** event.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)

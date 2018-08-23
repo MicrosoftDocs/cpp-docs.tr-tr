@@ -23,19 +23,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::String
 ms.assetid: 72dd04a4-a694-40d3-b899-eaa0b503eab8
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7a18b1a8ced533389b5938d44a73589336f717f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5a7852140b26260b56bd4436c2ee4f7abd2300b3
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33094832"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42587417"
 ---
 # <a name="platformstring-class"></a>Platform::String sınıfı
-Metin göstermek için kullanılan sıralı Unicode karakterler koleksiyonunu temsil eder. Daha fazla bilgi ve örnekler için bkz: [dizeleri](../cppcx/strings-c-cx.md).  
+Metin temsil etmek için kullanılan bir sıralı Unicode karakterler koleksiyonunu temsil eder. Daha fazla bilgi ve örnekler için bkz. [dizeleri](../cppcx/strings-c-cx.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,17 +48,17 @@ public ref class String sealed : Object,
 ```  
   
 ## <a name="iterators"></a>Yineleyiciler  
- String sınıfı üyesi olmayan iki yineleyici işlevleri ile kullanılabilir `std::for_each` bir dize nesnesi karakterleri numaralandırmak için şablon işlevi.  
+ Dize sınıfı üyesi olmayan iki yineleyici işlevleri ile kullanılabilir `std::for_each` şablon işlevi bir dize nesnesi karakterleri numaralandırılamadı.  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|`const char16* begin(String^ s)`|Bir işaretçi belirtilen dize nesnesi başlangıcını döndürür.|  
-|`const char16* end(String^ s)`|Belirtilen dize nesnesi sonunu aşan bir işaretçi döndürür.|  
+|`const char16* begin(String^ s)`|Belirtilen dize nesnesi başlangıcına bir işaretçi döndürür.|  
+|`const char16* end(String^ s)`|Belirtilen dize nesnesi sonunu geçen bir işaretçi döndürür.|  
   
 ### <a name="members"></a>Üyeler  
- String sınıfı nesne ve IDisposable, IEquatable ve IPrintable arabirimlerinden devralır.  
+ Dize sınıfı, nesne ve IDisposable IEquatable ve IPrintable arabirimleri devralır.  
   
- String sınıfı aşağıdaki türden üyeleri de vardır.  
+ Dize sınıfı, ayrıca aşağıdaki üye türlerinden sahiptir.  
   
  **Oluşturucular**  
   
@@ -68,48 +68,48 @@ public ref class String sealed : Object,
   
  **Yöntemler**  
   
- String sınıfı Equals(), Finalize(), GetHashCode(), GetType(), MemberwiseClose() ve ToString() yöntemleri devralır [Platform::Object sınıfı](../cppcx/platform-object-class.md). Dize ayrıca aşağıdaki yöntemleri içerir.  
+ Dize sınıfı ' lerin üzerine yaz, Finalize() ifadesini, GetHashCode(), GetType(), MemberwiseClose() ve ToString() yöntemler öğesinden devralan [Platform::Object sınıfı](../cppcx/platform-object-class.md). Dize, aşağıdaki yöntemleri de vardır.  
   
 |Yöntem|Açıklama|  
 |------------|-----------------|  
-|[String::Begin](#begin)|Bir işaretçi geçerli dize başlangıcını döndürür.|  
-|[String::CompareOrdinal](#compareordinal)|İki karşılaştırır `String` nesneleri tarafından temsil edilen iki dize değerlerini karşılık gelen karakterleri sayısal değerleri değerlendirme nesneleri.|  
-|[String::concat](#concat)|İki dize nesnelerini değerlerini art arda ekler.|  
-|[String::Data](#data)|Bir işaretçi geçerli dize başlangıcını döndürür.|  
+|[String::Begin](#begin)|Geçerli dizenin başlangıcına bir işaretçi döndürür.|  
+|[String::CompareOrdinal](#compareordinal)|İki karşılaştırır `String` karşılık gelen karakterler nesneleri tarafından temsil edilen iki dize değerleri, sayısal değerler değerlendirme nesneleri.|  
+|[String::concat](#concat)|İki dize nesnelerinin değerleri birleştirir.|  
+|[String::Data](#data)|Geçerli dizenin başlangıcına bir işaretçi döndürür.|  
 |[String::Dispose](#dispose)|Serbest bırakma veya kaynakları serbest bırakır.|  
-|[String::End](#end)|Geçerli dize sonu geçmiş bir işaretçi döndürür.|  
+|[String::End](#end)|Geçerli dizenin sonunu geçen bir işaretçi döndürür.|  
 |[String::Equals](#equals)|Belirtilen nesne geçerli nesneye eşit olup olmadığını gösterir.|  
 |[String::GetHashCode](#gethashcode)|Bu örneğin karma kodunu döndürür.|  
-|[String::IsEmpty](#isempty)|Geçerli dize nesnesi boş olup olmadığını gösterir.|  
-|[String::IsFastPass](#isfastpass)|Nesne geçerli dize katılıyor olup olmadığını belirten bir *hızlı geçişi* işlemi. İşlemi hızlı geçişi, başvuru sayımı askıya alınır.|  
-|[String::length](#length)|Geçerli dize nesnesi uzunluğunu alır.|  
-|[String::toString](#tostring)|Değeri geçerli dizesi ile aynı olan bir dize nesnesi döndürür.|  
+|[String::IsEmpty](#isempty)|Geçerli bir dize nesnesi boş olup olmadığını belirtir.|  
+|[String::IsFastPass](#isfastpass)|Geçerli dize nesnenin katıldığı olup olmadığını gösteren bir *hızlı geçişi* işlemi. İşlem hızlı geçmek için başvuru sayımı askıya alındı.|  
+|[String::length](#length)|Geçerli nesnenin dize uzunluğunu alır.|  
+|[String::toString](#tostring)|Geçerli dize ile aynı değeri olan bir dize nesnesi döndürür.|  
   
  **İşleçler**  
   
- Dize sınıfı aşağıdaki işleçleri sahiptir.  
+ Dize sınıfı, aşağıdaki işleçleri sahiptir.  
   
 |Üye|Açıklama|  
 |------------|-----------------|  
-|[String::operator == işleci](#operator-equality)|İki belirtilen dize nesnesi aynı değere sahip olup olmadığını gösterir.|  
-|[operator + işleci](#operator-plus)|İki dize nesnelerini yeni bir dize nesnesi art arda ekler.|  
-|[String::operator > işleci](#operator-greater-than)|Bir dize nesnesi değerini ikinci bir değerden daha büyük olup olmadığını belirten dize nesnesi.|  
+|[String::operator == işleci](#operator-equality)|İki belirtilen dize nesnesinin aynı değere sahip olup olmadığını gösterir.|  
+|[operator + işleci](#operator-plus)|İki dize nesnesi yeni bir dize nesnesi art arda ekler.|  
+|[String::operator > işleci](#operator-greater-than)|Değer bir dize nesnesinin ikinci bir değerden büyük olup olmadığını belirtir dize nesnesi.|  
 |[String::operator > = işleci](#operator-greater-than-or-equals)|Bir dize nesnesi değerini saniyenin değerine eşit veya daha büyük olup olmadığını belirten dize nesnesi.|  
-|[String::operator! = işleci](#operator-inequality)|İki belirtilen dize nesnesi farklı değerlere sahip olup olmadığını gösterir.|  
-|[String::operator < işleci](#operator-less-than)|Bir dize nesnesi değerini ikinci bir değerden daha küçük olup olmadığını belirten dize nesnesi.|  
+|[String::operator! = işleci](#operator-inequality)|Belirtilen dize nesnelerinin iki farklı değerlere sahip olup olmadığını gösterir.|  
+|[String::operator < işleci](#operator-less-than)|Bir dize nesnesi değerini saniyenin değerinden daha küçük olup olmadığını belirten dize nesnesi.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Üstbilgi** vccorlib.h (varsayılan olarak dahil)  
+ **Üst bilgi** vccorlib.h (varsayılan olarak dahil)  
 
  
 ## <a name="begin"></a>  String::Begin yöntemi
-Bir işaretçi geçerli dize başlangıcını döndürür.  
+Geçerli dizenin başlangıcına bir işaretçi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -119,10 +119,10 @@ char16* Begin()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli dize başlangıcını gösteren bir işaretçi.  
+ Geçerli dizenin başlangıç işaretçisi.  
   
 ## <a name="compareordinal"></a>  String::CompareOrdinal yöntemi
-İki karşılaştırır `String` nesneleri tarafından temsil edilen iki dize değerlerini karşılık gelen karakterleri sayısal değerleri değerlendirme nesneleri.  
+İki karşılaştırır `String` karşılık gelen karakterler nesneleri tarafından temsil edilen iki dize değerleri, sayısal değerler değerlendirme nesneleri.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -142,18 +142,18 @@ int CompareOrdinal(
  İkinci dize nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İki comparands sözcük ilişkisi belirten tamsayı. Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.  
+ Karşılaştırılan iki öğe arasındaki sözlü ilişkiyi gösteren bir tamsayı. Aşağıdaki tabloda olası dönüş değerleri listelenmektedir.  
   
 |Değer|Koşul|  
 |-----------|---------------|  
-|-1|`str1` olan değerinden `str2`.|  
+|-1|`str1` olan küçüktür `str2`.|  
 |0|`str1` eşittir `str2`.|  
-|1.|`str1` Daha fazla `str2`.|  
+|1.|`str1` büyüktür `str2`.|  
   
 
 
 ## <a name="concat"></a>  String::concat yöntemi
-İki dize nesnelerini değerlerini art arda ekler.  
+İki dize nesnelerinin değerleri birleştirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -163,20 +163,20 @@ String^ Concat( String^ str1, String^ str2)
   
 ### <a name="parameters"></a>Parametreler  
  `str1`  
- İlk dize nesnesi veya `null`.  
+ İlk dize nesnesinin veya `null`.  
   
  `str2`  
  İkinci dize nesnesi veya `null`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni bir dize ^ nesne değeri olan değerlerin birleşimini, `str1` ve `str2`.  
+ Yeni bir dize ^ nesne değeri olan değerleri birleşimi, `str1` ve `str2`.  
   
- Varsa `str1` olan `null` ve `str2` değil, `str1` döndürülür. Varsa `str2` olan `null` ve `str1` değil, `str2` döndürülür. Varsa `str1` ve `str2` her ikisi de `null`, boş dize ("M") döndürülür.  
+ Varsa `str1` olduğu `null` ve `str2` değil, `str1` döndürülür. Varsa `str2` olduğu `null` ve `str1` değil, `str2` döndürülür. Varsa `str1` ve `str2` her ikisi de `null`, boş bir dize ("M") döndürülür.  
   
 
 
 ## <a name="data"></a>  String::Data yöntemi
-Nesnenin veri arabelleği başına C tarzı dizisi olarak işaretçi döndüren `char16` (`wchar_t`) öğeleri.  
+Nesnenin veri arabelleği başlangıcına bir C tarzı dizi olarak bir işaretçi döndürür `char16` (`wchar_t`) öğeleri.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -185,10 +185,10 @@ const char16* Data()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi başına bir `const char16` Unicode karakter dizisi (`char16` typedef için olan `wchar_t`).  
+ Bir işaretçi başlangıcına bir `const char16` Unicode karakterler dizisi (`char16` için bir TypeDef `wchar_t`).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüştürmek için bu yöntemi kullanın `Platform::String^` için `wchar_t*`. Zaman `String` nesne kapsam dışında gider, veri işaretçi artık geçerli olması sağlanır. Özgün ömrü aşan veri depolamak için `String` nesne, kullanın [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) dizi kendiniz ayırmış olmanız belleğe kopyalamak için.  
+ Dönüştürmek için bu yöntemi kullanmak `Platform::String^` için `wchar_t*`. Zaman `String` nesne kapsam dışına gider, veri işaretçisine artık geçerli olması sağlanır. Özgün ömrünü aşan veri depolamak için `String` nesnesi [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) kendiniz ayrılan belleğe dizisine kopyalamak için.  
   
 
 
@@ -203,7 +203,7 @@ virtual override void Dispose()
 ```  
 
 ## <a name="end"></a>  String::End yöntemi
-Geçerli dize sonu geçmiş bir işaretçi döndürür.  
+Geçerli dizenin sonunu geçen bir işaretçi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -213,15 +213,15 @@ char16* End()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli dize sonu geçmiş bir işaretçi.  
+ Geçerli dizenin sonunu geçen bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- End() Begin() + uzunluk döndürür.  
+ End() Begin() + uzunluğunu döndürür.  
   
 
 
 ## <a name="equals"></a>  String::Equals yöntemi
-Belirtilen dize geçerli nesne ile aynı değere sahip olup olmadığını belirtir.  
+Belirtilen dize geçerli nesnenin aynı değere sahip olup olmadığını belirtir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -238,10 +238,10 @@ bool String::Equals(String^ str);
  Karşılaştırma yapılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `str` geçerli nesneye eşit; Aksi takdirde, `false`.  
+ `true` varsa `str` geçerli nesneye eşitse; Aksi takdirde, `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem eşdeğerdir [String::CompareOrdinal](#compareordinal). İlk aşırı içinde beklenen `str` parametresi bir dizeye dönüştürülür ^ nesnesi.  
+ Bu yöntem eşdeğerdir [String::CompareOrdinal](#compareordinal). İlk aşırı yükleme bekleniyor `str` parametreyi bir dizeye dönüştürülür ^ nesne.  
   
 
 
@@ -261,7 +261,7 @@ virtual override int GetHashCode()
 
 
 ## <a name="isempty"></a>  String::IsEmpty yöntemi
-Geçerli dize nesnesi boş olup olmadığını gösterir.  
+Geçerli bir dize nesnesi boş olup olmadığını belirtir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -270,12 +270,12 @@ bool IsEmpty()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Geçerli dize nesnesi ise `null` veya boş dize (L""); Aksi halde, `false`.  
+ `true` Geçerli bir dize nesnesi ise `null` ya da boş dize ("M"); Aksi takdirde `false`.  
   
 
 
 ## <a name="isfastpass"></a>  String::IsFastPass yöntemi
-Nesne geçerli dize katılıyor olup olmadığını belirten bir *hızlı geçişi* işlemi. İşlemi hızlı geçişi, başvuru sayımı askıya alınır.  
+Geçerli dize nesnenin katıldığı olup olmadığını gösteren bir *hızlı geçişi* işlemi. İşlem hızlı geçmek için başvuru sayımı askıya alındı.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -284,15 +284,15 @@ bool IsFastPass();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Geçerli dize nesnesi hızlı geçmiş Aksi takdirde `false`.  
+ `true` Geçerli bir dize nesnesi hızlı geçmiş Aksi takdirde, `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Burada başvuruları sayılan bir nesne bir parametre ve çağrılan işlev yalnızca söz konusu nesne okuyan bir işlev çağrısında derleyici Güvenli başvuru sayımı askıya alıp arama performansı. Kodunuzu bu özellik ile yapmak için kullanışlı bir şey yoktur. Sistem tüm ayrıntılarını işler.  
+ Burada bir başvurusu sayılan nesne bir parametredir ve çağrılan işlev bu nesne yalnızca okur. bir işlev çağrısı içinde derleyicinin güvenli bir şekilde başvuru sayımı askıya alıp Arama performansını. Kodunuzu bu özellik ile yapmak için faydalı bir şey yoktur. Sistem, tüm ayrıntılarını işler.  
   
 
 
 ## <a name="length"></a>  String::length yöntemi
-Geçerli dize nesnesi karakter sayısını alır.  
+Geçerli nesnenin dize karakter sayısını alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -301,22 +301,22 @@ unsigned int Length()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli dize nesnesi karakter sayısı.  
+ Geçerli bir dize nesnesi karakter sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hiçbir karakter içeren bir dize uzunluğu sıfır olur. Aşağıdaki dize uzunluğu 5.:  
+ Hiçbir karakter içeren bir dize uzunluğu sıfır olur. Aşağıdaki dizenin uzunluğu 5 şöyledir:  
   
 ```    
 String^ str = "Hello";  
 int len = str->Length(); //len = 5  
 ```  
   
- Tarafından döndürülen karakter dizisi [String::Data](#data) sonlandırma NULL ya da '\0' bir ek karakter içeriyor. Bu da iki bayt uzunluğundadır karakterdir.  
+ Tarafından döndürülen karakter dizisi [String::Data](#data) Sonlandırıcı NULL ya da '\0' bir ek karakter içeriyor. Bu da iki bayt uzunluğundadır karakterdir.  
   
 
 
 ## <a name="operator-plus"></a>  String::operator + işleci
-İki art arda ekler [dize](../cppcx/platform-string-class.md) yeni nesnelerine [dize](../cppcx/platform-string-class.md) nesnesi.
+İki art arda ekler [dize](../cppcx/platform-string-class.md) yeni nesneleri [dize](../cppcx/platform-string-class.md) nesne.
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -327,19 +327,19 @@ bool String::operator+( String^ str1, String^ str2)
   
 ### <a name="parameters"></a>Parametreler  
  `str1`  
- İlk `String` nesnesi.  
+ İlk `String` nesne.  
   
  `str2`  
- İkinci `String` içeriği için eklenecek nesne `str1`.  
+ İkinci `String` nesnenin içeriği için eklenir, `str1`.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `str1` eşittir `str2`; Aksi halde, `false`.  
+ `true` varsa `str1` eşittir `str2`; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç oluşturur bir `String^` iki işlenen veriler içeren nesne. Aşırı performans kritik olmadığında kolaylık sağlamak için kullanın. Birkaç çağrıları "`+`" bir işlevdeki fark edilmez büyük olasılıkla, ancak büyük nesneler veya metin veri sıkı döngü düzenleme, standart C++ mekanizmaları ve türlerini kullanın.  
+ Bu işleç oluşturur bir `String^` iki işlenen verileri içeren nesne. Yüksek performans kritik olmadığı durumlarda kolaylık olması için kullanın. Birkaç çağrısına "`+`" bir işlevde belirgin olur olmayabilir ancak sıkı bir döngüde metin verilerini veya büyük nesneler düzenleme, standart C++ mekanizmalar ve türleri kullanın.  
   
 ##  <a name="operator-equality"></a> String::operator == işleci
-Belirtilen iki dize nesnelerini aynı metin değeri içerip içermediğini belirtir.  
+Belirtilen iki dize nesnesi aynı değeri içerip içermediğini belirtir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -349,13 +349,13 @@ bool String::operator==( String^ str1, String^ str2)
   
 ### <a name="parameters"></a>Parametreler  
  `str1`  
- İlk dizesi Karşılaştırılacak nesne.  
+ İlk dize Karşılaştırılacak nesne.  
   
  `str2`  
  İkinci dize Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa içeriğini `str1` eşit olan `str2`; Aksi halde, `false`.  
+ `true` varsa içeriğini `str1` eşit olan `str2`; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleç eşdeğerdir [String::CompareOrdinal](#compareordinal).  
@@ -363,7 +363,7 @@ bool String::operator==( String^ str1, String^ str2)
 
 
 ##  <a name="operator-greater-than"></a>  String::operator&gt; 
-Bir dize nesnesi değerini ikinci bir değerden daha büyük olup olmadığını belirten dize nesnesi.  
+Değer bir dize nesnesinin ikinci bir değerden büyük olup olmadığını belirtir dize nesnesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -379,10 +379,10 @@ bool String::operator>( String^ str1, String^ str2)
  İkinci dize nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa değerini `str1` değerinden daha büyük `str2`; Aksi halde, `false`.  
+ `true` varsa değerini `str1` değerinden büyükse `str2`; Aksi takdirde `false`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işleç açıkça çağrısına eşdeğerdir [String::CompareOrdinal](#compareordinal) ve bir sonuç sıfırdan büyük alma.  
+ Bu işleç, açıkça çağırmak için eşdeğerdir [String::CompareOrdinal](#compareordinal) ve bir sonuç sıfırdan büyük alma.  
   
 
 
@@ -403,12 +403,12 @@ bool String::operator>=( String^ str1, String^ str2)
  İkinci dize nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa değerini `str1` değerine eşit veya daha büyük olan `str2`; Aksi halde, `false`.  
+ `true` varsa değerini `str1` değerine eşit veya değerinden `str2`; Aksi takdirde `false`.  
   
 
 
 ## <a name="operator-inequality"></a> String::operator! = 
-İki belirtilen dize nesnesi farklı değerlere sahip olup olmadığını gösterir.  
+Belirtilen dize nesnelerinin iki farklı değerlere sahip olup olmadığını gösterir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -418,17 +418,17 @@ bool String::operator!=( String^ str1, String^ str2)
   
 ### <a name="parameters"></a>Parametreler  
  `str1`  
- İlk dizesi Karşılaştırılacak nesne.  
+ İlk dize Karşılaştırılacak nesne.  
   
  `str2`  
  İkinci dize Karşılaştırılacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa `str1` eşit değil `str2`; Aksi halde, `false`.   
+ `true` varsa `str1` eşit değildir `str2`; Aksi takdirde `false`.   
 
 
 ## <a name="operator-less-than"></a> String::operator&lt; 
-Bir dize nesnesi değerini ikinci bir değerden daha küçük olup olmadığını belirten dize nesnesi.  
+Bir dize nesnesi değerini saniyenin değerinden daha küçük olup olmadığını belirten dize nesnesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -444,10 +444,10 @@ bool String::operator<( String^ str1, String^ str2)
  İkinci dize nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` varsa değerini `str1` değeri'dan küçük `str2`; Aksi halde, `false`.  
+ `true` varsa değerini `str1` değerini'dan küçük `str2`; Aksi takdirde `false`.  
   
 ## <a name="ctor"></a> String::String Oluşturucusu
-Giriş dizesi verilerin bir kopyasını, yeni bir String sınıfı örneğini başlatır.  
+Giriş dizesinin verilerin bir kopyasını yeni bir dize sınıfı örneğini başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -459,13 +459,13 @@ String(char16* s, unsigned int n)
   
 ### <a name="parameters"></a>Parametreler  
  `s`  
- Bir dizesini başlatır geniş karakter dizisi. char16  
+ Bir dizeyi başlatmak geniş karakter dizisi. char16  
   
  `n`  
- Dize uzunluğu belirten bir sayı.  
+ Dizenin uzunluğunu belirten bir sayı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Performans kritik ise ve kaynak dizesi ömrü denetlemek, kullanabileceğiniz [Platform::StringReference](../cppcx/platform-stringreference-class.md) dize yerine.  
+ Performans kritik ise ve kaynak dizesi ömrünü denetlemek, kullanabileceğiniz [Platform::StringReference](../cppcx/platform-stringreference-class.md) yerine dize.  
 ### <a name="example"></a>Örnek  
   
 ```cpp  
@@ -473,7 +473,7 @@ String^ s = L"Hello!";
 ```  
   
 ## <a name="tostring"></a> String::toString
-Değeri geçerli dizesi ile aynı olan bir dize nesnesi döndürür.  
+Geçerli dize ile aynı değeri olan bir dize nesnesi döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -482,7 +482,7 @@ String^ String::ToString()
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir dize nesnesi değeri geçerli dizesi ile aynıdır.  
+ Bir dize nesnesi değeri geçerli bir dize ile aynıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

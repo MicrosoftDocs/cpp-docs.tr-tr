@@ -21,35 +21,35 @@ helpviewer_keywords:
 - code pages [C++], locales
 - conventions [C++], international character support
 ms.assetid: bd937361-b6d3-4c98-af95-beb7c903187b
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1c7dd3c5356df7b80f21605e325158e87cc5a71
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 9952f0bf27202c468e38ff3fb6aa701a0d6f9163
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33858152"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594845"
 ---
 # <a name="locales-and-code-pages"></a>Yerel Ayarlar ve Kod Sayfaları
-Yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kuralları yansıtır. Belirli bir dile birden fazla ülke/bölge içinde konuşulan; Örneğin, Portekizce de olduğu gibi Portekiz Brezilya konuşulmaz. Buna karşılık, bir ülke veya bölgeye birden fazla resmi dili olabilir. Örneğin, iki dil Kanada vardır: İngilizce ve Fransızca. Bu nedenle, Kanada iki ayrı yerel ayarı vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.  
+Bir yerel ayar kimliği, belirli bir coğrafi bölge için dili ve yerel kurallarını yansıtır. Belirli bir dile birden fazla ülkede/bölgede konuşulan; Örneğin, Brezilya'da de Portekiz olduğu gibi Portekizce konuşulan. Buna karşılık, bir ülke/bölge, birden fazla dil olabilir. Örneğin, iki dilden Kanada vardır: İngilizce ve Fransızca. Bu nedenle, Kanada, iki farklı yerel ayarlar vardır: Kanada İngilizce ve Fransızca Kanada. Bazı yerel ayara bağımlı kategoriler tarih biçimlendirmesini ve parasal değerlerin görüntülenme biçimini içerir.  
   
- Metin ve biçimlendirme kurallarını ülke/bölge yerel kuralları belirlerken veri dilini belirler. Her dilin olanlar (örneğin, noktalama işaretleri ve sayılar) alfabedeki dışında karakterler içeren kod sayfaları tarafından temsil edilen bir benzersiz eşlemesi vardır. Kod sayfası, bir karakter kümesidir ve dille ilgili. Bu nedenle, bir [yerel](../c-runtime-library/locale.md) benzersiz bir dil, ülke/bölge ve kod sayfası birleşimidir. Yerel ayar ve kod sayfası ayarı çağırarak çalışma zamanında değiştirilebilir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevi.  
+ Metin ve biçimlendirme kurallarını ülke/bölge yerel kuralları belirlerken veri dili belirler. Her dil alfabe (örneğin, noktalama işaretleri ve sayılar) dışındaki karakterler içeren kod sayfaları tarafından temsil edilen bir benzersiz eşlemesi vardır. Bir kod sayfasında karakter kümesi ve dille ilgili. Bu nedenle, bir [yerel ayar](../c-runtime-library/locale.md) benzersiz bir dil, ülke/bölge ve kod sayfası birleşimidir. Yerel ayar ve kod sayfası ayarı çağırarak çalışma zamanında değiştirilebilir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) işlevi.  
   
- Farklı diller farklı kod sayfaları kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve birçok Avrupa dilleri için kullanılır ve ANSI kod sayfası 932 Japonca Kanji için kullanılır. Neredeyse tüm kod sayfaları ASCII karakter düşük 128 karakterden (0x00-0x7F) kümesini paylaşır.  
+ Farklı dillerde farklı kod sayfalarını kullanabilir. Örneğin, ANSI kod sayfası 1252 İngilizce ve birçok Avrupa dilleri için kullanılır ve ANSI kod sayfası 932'de Japonca Kanji için kullanılır. Neredeyse tüm kod sayfaları ASCII karakter düşük 128 karakter (0x00-0x7F) kümesini paylaşır.  
   
- Tüm tek baytlı kod sayfası (olan 256 girişleri) bir tabloda (sayıları ve noktalama işaretlerini dahil) karakter ya da karakterlerin bayt değerleri eşlemesi olarak gösterilebilir. Çok baytlı kod sayfası (64 K girişlerle) çok büyük bir tablo çift baytlık karakterler değerlerin olarak da temsil edilebilir. Uygulamada, ancak bunu genellikle temsil ilk 256 (tek baytlı) karakterler için tablo ve çift baytlı değerlerin aralıkları olarak.  
+ Herhangi bir tek baytlı kod sayfası (256 girişleri ile) bir tablodaki bayt değerleri (sayılar ve noktalama işaretleri dahil) karakteri veya karakterleri eşlemesi olarak gösterilebilir. Herhangi bir çok baytlı kod sayfasında karakter çift bayt değerleri (girişlerle 64 K) çok büyük bir tablo olarak da temsil edilebilir. Uygulamada, ancak bu genellikle gösterilir (tek bayt) ilk 256 karakteri için bir tabloyu ve çift bayt değerleri için aralığı olarak.  
   
- Kod sayfaları hakkında daha fazla bilgi için bkz: [kod sayfaları](../c-runtime-library/code-pages.md).  
+ Kod sayfaları hakkında daha fazla bilgi için bkz. [kod sayfaları](../c-runtime-library/code-pages.md).  
   
- C çalışma zamanı kitaplığı iç kod sayfaları iki tür vardır: yerel ayar ve çok baytlı. Program yürütülmesi sırasında geçerli kod sayfası değiştirebilirsiniz (belgelerine bakın [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md) işlevleri). Ayrıca, çalışma zamanı kitaplığı bir elde edilir ve program yürütme süresi için sabittir işletim sistemi kod sayfası değerini kullanın.  
+ C çalışma zamanı kitaplığı iç kod sayfaları iki tür vardır: yerel ayar ve çok baytlı. Program yürütülmesi sırasında mevcut kod sayfasında değiştirebilirsiniz (belgelerine bakın [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) ve [_setmbcp](../c-runtime-library/reference/setmbcp.md) işlevler). Ayrıca, çalışma zamanı kitaplığı bir almak ve program yürütme süresi boyunca sabit olan işletim sistemi kod sayfasını kullanın.  
   
- Yerel ayar kod sayfası değiştiğinde seçilen kod sayfası tarafından dikte işlevleri değişiklikler yerel ayara bağımlı kümesi davranışını. Varsayılan olarak, tüm yerel ayara bağımlı işlevleri yürütme "C" yerel ayar için benzersiz bir yerel ayar kod sayfası ile başlar. İç yerel ayar kod sayfası (yanı sıra diğer yerel ayarlara özgü özellikleri) çağırarak değiştirebileceğiniz `setlocale` işlevi. Çağrı `setlocale`(LC_ALL, "") yerel işletim sisteminin kullanıcı yerel ayarı tarafından belirtilen ayarlar.  
+ Yerel ayar kod sayfası değiştiğinde seçilen kod sayfası tarafından dikte işlevleri değişiklikleri yerel ayara bağımlı kümesini davranışı. Varsayılan olarak, tüm yerel ayara bağlı İşlevler, yürütme "C" yerel ayarı için benzersiz bir yerel ayar kod sayfası ile başlayın. İç yerel ayar kod sayfası (yanı sıra diğer yerel ayara özgü özellikleri) çağırarak değiştirebilirsiniz `setlocale` işlevi. Bir çağrı `setlocale`(LC_ALL, "") yerel ayarı işletim sistemi kullanıcı yerel ayar tarafından belirtilen ayarlar.  
   
- Benzer şekilde, birden çok baytlı kod sayfası değiştiğinde, birden çok baytlı işlevleri yapılan değişiklikler seçilen kod sayfası tarafından dikte davranışını. Varsayılan olarak, tüm birden çok baytlı işlevleri yürütme işletim sisteminin varsayılan kod sayfasına karşılık gelen bir birden çok baytlı kod sayfası ile başlar. İç birden çok baytlı kod sayfası çağırarak değiştirebileceğiniz `_setmbcp` işlevi.  
+ Benzer şekilde, çok baytlı kod sayfasına değiştiğinde, seçilen kod sayfası tarafından dikte çok baytlı işlevleri değişiklikleri davranışı. Varsayılan olarak, tüm çok baytlı işlevler işletim sisteminin varsayılan kod sayfasına karşılık gelen bir çok baytlı kod sayfası ile yürütme başlar. İç çok baytlı kod sayfası çağırarak değiştirebilirsiniz `_setmbcp` işlevi.  
   
- C çalışma zamanı işlevi `setlocale` ayarlar, değiştirir veya bazılarını veya tümünü geçerli programın yerel ayar bilgileri sorgular. [_Wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) yordamdır bir joker karakter sürümü `setlocale`; değişkenler ve dönüş değerleri `_wsetlocale` joker karakter dizelerdir.  
+ C çalışma zamanı işlevi `setlocale` ayarlar, değiştirir veya bazılarını veya tümünü geçerli programın yerel ayar bilgilerinin sorgular. [_Wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) yordamdır, bir geniş karakter sürümünü `setlocale`; bağımsız değişkenler ve dönüş değerleri `_wsetlocale` geniş karakterli dizelerdir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Unicode ve MBCS](../text/unicode-and-mbcs.md)   

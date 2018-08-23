@@ -17,36 +17,41 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 36c3f76e3fc137458acddacd834563d845057a24
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: 193f4d26f7e163707092f3d0bc8f981a02611a22
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646581"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603708"
 ---
 # <a name="asyncbasecurrentstatus-method"></a>AsyncBase::CurrentStatus Yöntemi
-Geçerli zaman uyumsuz işlemin durumunu alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-inline void CurrentStatus(  
-   Details::AsyncStatusInternal *status  
-);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Durumu*  
- Bu işlem geçerli durumu depoladığı konum.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu işlem, iş parçacığı açısından güvenlidir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** async.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [AsyncBase sınıfı](../windows/asyncbase-class.md)   
- [AsyncStatusInternal Sabit Listesi](../windows/asyncstatusinternal-enumeration.md)
+
+Geçerli zaman uyumsuz işlemin durumunu alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+inline void CurrentStatus(
+   Details::AsyncStatusInternal *status
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Durumu*  
+Bu işlem geçerli durumu depoladığı konum.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu işlem, iş parçacığı açısından güvenlidir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** async.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[AsyncBase Sınıfı](../windows/asyncbase-class.md)  
+[AsyncStatusInternal Sabit Listesi](../windows/asyncstatusinternal-enumeration.md)

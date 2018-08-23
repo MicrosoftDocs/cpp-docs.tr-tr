@@ -17,33 +17,38 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 65dc4dbca2e152a62bb79ed104f9533d2fa20569
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: f45f52f2e979b76128be02dc7c3e931bd3b9d2c5
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40019988"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594594"
 ---
 # <a name="modulebasedecrementobjectcount-method"></a>ModuleBase::DecrementObjectCount Yöntemi
-WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-virtual long DecrementObjectCount() = 0;  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Azaltma işleminden önce sayısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** implements.h  
-  
- **Namespace:** Microsoft::wrl:: details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ModuleBase sınıfı](../windows/modulebase-class.md)   
- [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)
+
+WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+virtual long DecrementObjectCount() = 0;
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Azaltma işleminden önce sayısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Uygulandığında, azaltır nesne sayısını modülü tarafından izlenir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** implements.h
+
+**Namespace:** Microsoft::wrl:: details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ModuleBase Sınıfı](../windows/modulebase-class.md)  
+[Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

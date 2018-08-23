@@ -18,47 +18,52 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1ef27e86ae356ddc67555390b7e053daa8d32a09
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: a46a2f9b18a45e7ea627488881b0289e733ddd7b
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40013359"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42608973"
 ---
 # <a name="version-c"></a>sürüm (C++)
-Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-[ version(  
-   "version"  
-) ]  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *Sürüm*  
- Sürüm numarasını `coclass`. Belirtilmezse, 1.0 .idl dosyasında yer alır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Sürüm** C++ özniteliği ile aynı işlevlere sahip [sürüm](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL özniteliği ve oluşturulan .idl dosyasına üzerinden geçirilir.  
-  
-## <a name="example"></a>Örnek  
- Bkz: [bağlanabilir](../windows/bindable.md) örnek kullanımını örneğin **sürüm**.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-### <a name="attribute-context"></a>Öznitelik bağlamı  
-  
-|||  
-|-|-|  
-|**İçin geçerlidir**|**sınıf**, **yapısı**|  
-|**Tekrarlanabilir**|Hayır|  
-|**Gerekli öznitelikleri**|**coclass**|  
-|**Geçersiz öznitelikler**|Yok.|  
-  
- Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici öznitelikleri](../windows/compiler-attributes.md)   
- [Sınıf Öznitelikleri](../windows/class-attributes.md)   
+
+Bir sınıfın birden çok sürümü arasında belirli bir sürümünü tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+[ version(
+   "version"
+) ]
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Sürüm*  
+Sürüm numarasını `coclass`. Belirtilmezse, 1.0 .idl dosyasında yer alır.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Sürüm** C++ özniteliği ile aynı işlevlere sahip [sürüm](http://msdn.microsoft.com/library/windows/desktop/aa367306) MIDL özniteliği ve oluşturulan .idl dosyasına üzerinden geçirilir.
+
+## <a name="example"></a>Örnek
+
+Bkz: [bağlanabilir](../windows/bindable.md) örnek kullanımını örneğin **sürüm**.
+
+## <a name="requirements"></a>Gereksinimler
+
+### <a name="attribute-context"></a>Öznitelik bağlamı
+
+|||
+|-|-|
+|**İçin geçerlidir**|**sınıf**, **yapısı**|
+|**Tekrarlanabilir**|Hayır|
+|**Gerekli öznitelikleri**|**coclass**|
+|**Geçersiz öznitelikler**|Yok.|
+
+Öznitelik bağlamları hakkında daha fazla bilgi için bkz: [öznitelik bağlamları](../windows/attribute-contexts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
+[Sınıf Öznitelikleri](../windows/class-attributes.md)  

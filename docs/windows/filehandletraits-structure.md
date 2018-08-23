@@ -17,33 +17,37 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: da8386959fcceead688976afe5da8736618004dc
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: be5e26fb433450c18ed0d079153698c283960ac9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39652918"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596247"
 ---
 # <a name="filehandletraits-structure"></a>FileHandleTraits Yapısı
-Bir dosya tanıtıcısı özelliklerini tanımlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-struct FileHandleTraits : HANDLETraits;  
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `HANDLETraits`  
-  
- `FileHandleTraits`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::WRL::Wrappers::HandleTraits  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)
+
+Bir dosya tanıtıcısı özelliklerini tanımlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+struct FileHandleTraits : HANDLETraits;
+```
+
+## <a name="members"></a>Üyeler
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`HANDLETraits`
+
+`FileHandleTraits`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::WRL::Wrappers::HandleTraits
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Microsoft::WRL::Wrappers::HandleTraits Ad Alanı](../windows/microsoft-wrl-wrappers-handletraits-namespace.md)

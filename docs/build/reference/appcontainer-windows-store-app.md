@@ -1,5 +1,5 @@
 ---
-title: / APPCONTAINER (UWP/Microsoft mağazası uygulaması) | Microsoft Docs
+title: / APPCONTAINER (UWP/Microsoft Store uygulaması) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,15 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ca1a3ed5adaada689d374eeb3e67bae6c989e0b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eab6a9bd8ac37dec250739e3554c370726dce9eb
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369298"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42589583"
 ---
-# <a name="appcontainer-microsoft-store-app"></a>/ APPCONTAINER (Microsoft mağazası uygulaması)
-Bağlayıcı bir uygulama kapsayıcısında çalıştırılmalıdır yürütülebilir bir görüntü oluşturup oluşturmayacağını belirtir.  
+# <a name="appcontainer-microsoft-store-app"></a>/ APPCONTAINER (Microsoft Store uygulaması)
+Bağlayıcı, bir uygulama kapsayıcısında çalıştırılması gereken bir yürütülebilir görüntü oluşturup oluşturmayacağını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -29,19 +29,19 @@ Bağlayıcı bir uygulama kapsayıcısında çalıştırılmalıdır yürütüle
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, /APPCONTAINER kapalıdır.  
+ Varsayılan olarak/appcontaıner kapalıdır.  
   
- Bu seçenek, uygulama ve appcontaıner işlem yalıtımı ortamında çalışan olup olmadığını belirtmek için yürütülebilir bir dosya değiştirir. Appcontaıner ortamında çalışması gereken bir uygulama için /APPCONTAINER belirtin — örneğin, bir evrensel Windows Platformu (UWP) veya Windows Phone 8.x uygulaması. (Bir şablondan bir evrensel Windows uygulaması oluşturma seçeneği otomatik olarak Visual Studio'da ayarlanır.) Bir masaüstü uygulamasının /APPCONTAINER:NO belirtin veya yalnızca seçeneğini atlayın.  
+ Bu seçenek, uygulamanın appcontainer işlem yalıtımı ortamında çalıştırılması gereken olup olmadığını belirtmek için bir yürütülebilir dosya değiştirir. Ortamında çalıştırılması gereken bir uygulama için/appcontaıner belirtin — örneğin, Evrensel Windows Platformu (UWP) veya Windows Phone 8.x uygulaması. (Bir şablondan bir evrensel Windows uygulaması oluştururken seçeneğini otomatik olarak Visual Studio'da ayarlanır.) Bir masaüstü uygulaması için /APPCONTAINER:NO belirtin veya seçeneği atlayın.  
   
- /APPCONTAINER seçeneği sunulmuştur [!INCLUDE[win8](../../build/reference/includes/win8_md.md)].  
+ / Appcontaıner seçeneği, Windows 8'de sunulmuştur.  
   
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneği ayarlamak için  
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
+2.  Genişletin **yapılandırma özellikleri** düğümü.  
   
-3.  Genişletme **bağlayıcı** düğümü.  
+3.  Genişletin **bağlayıcı** düğümü.  
   
 4.  Seçin **komut satırı** özellik sayfası.  
   

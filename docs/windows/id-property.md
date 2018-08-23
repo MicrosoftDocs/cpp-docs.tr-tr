@@ -15,19 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ebe701711de329d7b763b7bf3b3d3dbf1ce0ce93
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 89a6b3392491ad36a0b0c9d542ffac4738b7c0f6
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33881123"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42605365"
 ---
 # <a name="id-property"></a>ID Özelliği
-ID özelliği her Hızlandırıcı tablosu girişini program kodundaki başvurur. Bu kullanıcı kısayol tuşu veya tuş bileşimine bastığında program alacak komutu değerdir. (Hızlandırıcı tablo kodu menüsü kaynak kimliği ile aynı olduğu sürece) bir kısayol menü öğesi ile aynı olmak için kimlikleri aynı olun.  
+ID özelliği her Hızlandırıcı tablosu girişini program kodunda başvuruyor. Bu kullanıcı kısayol tuşunu ya da bir tuş bileşimi bastığında, program alırsınız komut değerdir. (Hızlandırıcı tablosu kimliği menüsü kaynak kimliği ile aynı olduğu sürece) bir kısayol menü öğesi ile aynı yapmak için kimlikleri aynı yapın.
   
-## <a name="requirements"></a>Gereksinimler  
- Win32  
+## <a name="requirements"></a>Gereksinimler
+ Win32
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hızlandırıcı özelliklerini ayarlama](../windows/setting-accelerator-properties.md)   
+## <a name="see-also"></a>Ayrıca Bkz.
+ [Hızlandırıcı Özelliklerini Ayarlama](../windows/setting-accelerator-properties.md)  
  [Hızlandırıcı Düzenleyicisi](../windows/accelerator-editor.md)

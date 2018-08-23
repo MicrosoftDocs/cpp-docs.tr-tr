@@ -15,16 +15,16 @@ helpviewer_keywords:
 - multibyte characters [C++]
 - MBCS [C++]
 ms.assetid: b498733c-a1e1-45e3-8f26-d6da3cb5f2dd
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46eb8a3db986c1709aa23da9b96b03867837066a
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: 523adf9f6f64c17d1ab728e416425d8f0d0ad5a9
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40012826"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606814"
 ---
 # <a name="support-for-multibyte-character-sets-mbcss"></a>Çok Baytlı Karakter Kümesi Desteği (MBCS'ler)
 Çok baytlı karakter kümeleri (MBCSler), Japonca ve Çince tek bir bayt ile gösterilemez gibi karakter kümesi desteklemek için gereken eski bir yaklaşım olan. Yeni geliştirme yapıyorsanız, belki de son kullanıcılar tarafından görülmez sistem dizeleri dışındaki tüm metin dizeleri Unicode kullanmanız gerekir. MBCS, eski bir teknolojidir ve yeni geliştirme projeleri için önerilmez.  

@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d47c3b8513883b3b9ee27457fa3a0d670acac13
-ms.sourcegitcommit: 37a10996022d738135999cbe71858379386bab3d
+ms.openlocfilehash: d3ab1f176029c872c121b816a4ea57b9f83ca6bc
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39646221"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42596843"
 ---
 # <a name="classfactoryclassfactory-constructor"></a>ClassFactory::ClassFactory Oluşturucusu
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-WRL_NOTHROW ClassFactory();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** module.h  
-  
- **Namespace:** Microsoft::WRL  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ClassFactory Sınıfı](../windows/classfactory-class.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+WRL_NOTHROW ClassFactory();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** module.h
+
+**Namespace:** Microsoft::WRL
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ClassFactory Sınıfı](../windows/classfactory-class.md)

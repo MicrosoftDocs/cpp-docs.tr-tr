@@ -5,67 +5,67 @@ ms.date: 02/06/2018
 ms.technology: cpp-windows
 ms.topic: language-reference
 ms.assetid: 5b8bcc57-64dd-4c54-9f24-26a25bd5dddd
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39c334c659980dccdca670ab91501f0e30c4e6d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ac06336e5ba80406157285ebe660080aff6e319
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088095"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42609838"
 ---
 # <a name="dlls-ccx"></a>DLL'ler (C + +/ CX)
 
-Standart Win32 DLL ya da Windows çalışma zamanı bileşeni Evrensel Windows Platformu (UWP) uygulamaları tarafından kullanılabilecek DLL oluşturmak için Visual Studio'yu kullanabilirsiniz. Visual Studio veya Visual Studio 2012 UWP uygulamasında doğru yüklenmeyebilir ve uygulaması doğrulama testi Microsoft Store iletebilir değil daha önceki Visual C++ Derleyici sürümü kullanılarak oluşturulmuş bir standart DLL.
+Visual Studio standart bir Win32 DLL ya da bir Windows çalışma zamanı bileşeni Evrensel Windows Platformu (UWP) uygulamaları tarafından tüketilebilecek DLL'i oluşturmak için kullanabilirsiniz. Visual Studio veya Visual C++ derleyicisi, Visual Studio 2012 bir UWP uygulamasında doğru yüklenmeyebilir ve uygulama doğrulama testi içinde Microsoft Store geçecek değil daha önceki bir sürümü kullanılarak oluşturulmuş olan standart bir DLL.
 
 ## <a name="windows-runtime-component-dlls"></a>Windows çalışma zamanı bileşeni DLL'leri
 
-Neredeyse tüm durumlarda oluşturmak istediğinizde bir DLL için bir UWP uygulamasında kullanma, o adı proje şablonunu kullanarak bir Windows çalışma zamanı bileşeni olarak oluşturun. Genel veya özel Windows çalışma zamanı türlerine sahip DLL'ler için bir Windows çalışma zamanı bileşeni proje oluşturabilirsiniz. Windows çalışma zamanı bileşeni herhangi bir Windows çalışma zamanı uyumlu dilde yazılan uygulamalardan erişilebilir. Varsayılan olarak, bir Windows çalışma zamanı bileşeni için derleyici ayarlarını proje kullanım **/ZW** geçin. Bir .winmd dosyası kök ad alanı var. aynı ada sahip olmalıdır. Örneğin, yalnızca A.winmd veya A.B.winmd veya A.B.C.winmd adlı bir meta veri dosyasında tanımlanırsa A.B.C.MyClass adlı bir sınıf oluşturulabilir. DLL adını .winmd dosya adı ile eşleşmesi için gerekli değildir.
+Hemen hemen tüm durumlarda oluşturmak istediğinizde bir DLL için bir UWP uygulamasında kullanmak, bu ada sahip proje şablonunu kullanarak bir Windows çalışma zamanı bileşeni olarak oluşturun. Genel veya özel Windows çalışma zamanı türlerine sahip dll dosyaları için bir Windows çalışma zamanı bileşeni projesi oluşturabilirsiniz. Bir Windows çalışma zamanı bileşeni, herhangi bir Windows çalışma zamanı ile uyumlu dilde yazılmış uygulamalardan erişilebilir. Varsayılan olarak, derleyici ayarları bir Windows çalışma zamanı bileşeni proje kullanım **/ZW** geçin. .Winmd dosyası, kök ad alanı olan aynı ada sahip olmalıdır. Örneğin, yalnızca A.winmd veya A.B.winmd veya A.B.C.winmd adlı bir meta veri dosyasında tanımlanan A.B.C.MyClass adlı bir sınıf oluşturulabilir. DLL adını .winmd dosyası adı ile eşleşmesi için gerekli değildir.
 
-Daha fazla bilgi için bkz: [C++'da Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+Daha fazla bilgi için [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
-### <a name="to-reference-a-third-party-windows-runtime-component-binary-in-your-project"></a>Bir üçüncü taraf Windows çalışma zamanı bileşeni projenize ikili başvurmak için
+### <a name="to-reference-a-third-party-windows-runtime-component-binary-in-your-project"></a>Bir üçüncü taraf Windows çalışma zamanı bileşeni projenize ikili k odkazu
 
-1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **ortak özellikleri** sayfasında, **Yeni Başvuru Ekle** düğmesi.
+1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **ortak özellikler** sayfasında **Yeni Başvuru Ekle** düğmesi.
 
-1. Windows çalışma zamanı bileşeni DLL dosyasının ve meta verileri içeren bir .winmd dosyası oluşur. Genellikle, bu dosyalar aynı klasörde bulunur. Sol bölmesinde **Başvuru Ekle** iletişim kutusunda, seçin **Gözat** düğmesine tıklayın ve ardından DLL ve .winmd dosyası konumuna gidin. Daha fazla bilgi için bkz: [uzantısı SDK'ları](/visualstudio/extensibility/creating-a-software-development-kit#ExtensionSDKs).
+1. Bir Windows çalışma zamanı bileşeni bir DLL dosyası ve meta veriler içeren bir .winmd dosyası oluşur. Genellikle, bu dosyalar aynı klasörde bulunur. Sol bölmesinde **Başvuru Ekle** iletişim kutusunda **Gözat** düğmesine tıklayın ve ardından DLL ve kendi .winmd dosyasının konumuna gidin. Daha fazla bilgi için [uzantı SDK'ları](/visualstudio/extensibility/creating-a-software-development-kit#ExtensionSDKs).
 
 ## <a name="standard-dlls"></a>Standart DLL'leri
 
-Standart bir DLL değil kullanabilir veya genel Windows çalışma zamanı tür üreten ve JavaScript'ten bir UWP uygulaması kullanma C++ kodu için oluşturabilirsiniz. Yalnızca Visual Studio'nun bu sürümünde derleme ancak kod Windows çalışma zamanı bileşeni projeye dönüştürmemenizi için var olan bir DLL geçirmek istediğiniz dinamik bağlantı kitaplığı (DLL) proje türü kullanın. Aşağıdaki adımları kullandığınızda, DLL uygulamanızı .appx paketinde yürütülebilir yanında dağıtılır.
+Kullanma veya ortak Windows çalışma zamanı türleri üretmek ve JavaScript'ten bir UWP uygulaması kullanma C++ kodu için standart bir DLL oluşturabilirsiniz. Yalnızca Visual Studio'nun bu sürümünde derleme ancak bir Windows çalışma zamanı bileşeni projesi için kod dönüştürmemenizi için mevcut bir DLL geçirmek istediğinizde dinamik bağlantı kitaplığı (DLL) projesi türünü kullanın. Aşağıdaki adımlarda kullandığınız zaman uygulamanızın .appx paketinde yürütülebilir yanı sıra DLL dağıtılır.
 
-### <a name="to-create-a-standard-dll-in-visual-studio"></a>Visual Studio'da standart DLL oluşturmak için
+### <a name="to-create-a-standard-dll-in-visual-studio"></a>Visual Studio'da standart bir DLL oluşturma
 
-1. Menü çubuğunda seçin **dosya**, **yeni**, **proje**ve ardından **dinamik bağlantı kitaplığı (DLL)** şablonu.
+1. Menü çubuğunda, **dosya**, **yeni**, **proje**ve ardından **dinamik bağlantı kitaplığı (DLL)** şablonu.
 
 1. Proje için bir ad girin ve ardından **Tamam** düğmesi.
 
-1. Kodu ekleyin. Kullandığınızdan emin olun `__declspec(dllexport)` dışarı aktarmak istediğiniz işlevler için — örneğin, `__declspec(dllexport) Add(int I, in j);`
+1. Kodu ekleyin. Kullandığınızdan emin olun `__declspec(dllexport)` dışarı aktarmak için istediğinize işlevler için — örneğin, `__declspec(dllexport) Add(int I, in j);`
 
-1. Ekleme `#include winapifamily.h` UWP uygulamalar için Windows SDK bu üst bilgi dosyasını dahil ve makrosu ayarlamak için `WINAPI_FAMILY=WINAPI_PARTITION_APP`.
+1. Ekleme `#include winapifamily.h` UWP uygulamaları için Windows SDK, üstbilgi dosyasını dahil edin ve makro ayarlamak için `WINAPI_FAMILY=WINAPI_PARTITION_APP`.
 
-### <a name="to-reference-a-standard-dll-project-from-the-same-solution"></a>Aynı çözümden başvuru standart DLL projesi
+### <a name="to-reference-a-standard-dll-project-from-the-same-solution"></a>Aynı çözümdeki standart bir DLL projesi başvurmak için
 
-1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **ortak özellikleri** sayfasında, **Yeni Başvuru Ekle** düğmesi.
+1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **ortak özellikler** sayfasında **Yeni Başvuru Ekle** düğmesi.
 
-1. Sol bölmede seçin **çözüm**ve ardından sağ bölmede uygun onay kutusunu seçin.
+1. Sol bölmede seçin **çözüm**ve ardından sağ bölmede ilgili onay kutusunu seçin.
 
-1. Kaynak kodu dosyalarınızda eklemek bir `#include` gerektiğinde DLL üstbilgi dosyası bildirimi.
+1. Kaynak kodu dosyalarında ekleme bir `#include` deyimi için gerektiği şekilde DLL üst bilgi dosyası.
 
-### <a name="to-reference-a-standard-dll-binary"></a>Standart bir DLL ikili başvurmak için
+### <a name="to-reference-a-standard-dll-binary"></a>Standart bir DLL ikili k odkazu
 
-1. DLL dosyası, .lib dosya ve üstbilgi dosyası kopyalayın ve bilinen bir konuma Yapıştır — Örneğin, geçerli proje klasörünüzdeki.
+1. DLL dosyasının, .lib dosyası ve üstbilgi dosyasını kopyalayın ve bunları bilinen bir konuma yapıştırın — Örneğin, geçerli proje klasörünüzdeki.
 
-1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **yapılandırma özellikleri**, **bağlayıcı**, **giriş** sayfasında, bir bağımlılık olarak .lib dosyası ekleyin.
+1. DLL kullanın ve ardından Proje için kısayol menüsünü açın **özellikleri**. Üzerinde **yapılandırma özellikleri**, **bağlayıcı**, **giriş** sayfasında, .lib dosyasına bağımlılık olarak ekleyin.
 
-1. Kaynak kodu dosyalarınızda eklemek bir `#include` gerektiğinde DLL üstbilgi dosyası bildirimi.
+1. Kaynak kodu dosyalarında ekleme bir `#include` deyimi için gerektiği şekilde DLL üst bilgi dosyası.
 
-### <a name="to-migrate-an-existing-win32-dll-for-uwp-app-compatibility"></a>UWP uygulama uyumluluğu için varolan bir Win32 DLL geçirmek için
+### <a name="to-migrate-an-existing-win32-dll-for-uwp-app-compatibility"></a>UWP uygulama uyumluluğu için mevcut bir Win32 DLL geçirmek için
 
-1. DLL (Evrensel Windows) türündeki bir proje oluşturun ve mevcut kaynak kodu ekleyin.
+1. DLL (Evrensel Windows) türü bir proje oluşturun ve mevcut kaynak kod ekleyin.
 
-1. Ekleme `#include winapifamily.h` UWP uygulamalar için Windows SDK bu üst bilgi dosyasını dahil ve makrosu ayarlamak için `WINAPI_FAMILY=WINAPI_PARTITION_APP`.
+1. Ekleme `#include winapifamily.h` UWP uygulamaları için Windows SDK, üstbilgi dosyasını dahil edin ve makro ayarlamak için `WINAPI_FAMILY=WINAPI_PARTITION_APP`.
 
-1. Kaynak kodu dosyalarınızda eklemek bir `#include` gerektiğinde DLL üstbilgi dosyası bildirimi.
+1. Kaynak kodu dosyalarında ekleme bir `#include` deyimi için gerektiği şekilde DLL üst bilgi dosyası.

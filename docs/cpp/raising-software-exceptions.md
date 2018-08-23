@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3eb98f0b66090a9c9e5f09b0cde3e3f94a6c0248
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 5b4469d7d53a7374f62e0ec232a7836e80ab75d8
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405194"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42606421"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 Sistem tarafından program hataların en yaygın kaynaklardan bazılarını özel durumlar olarak işaretlenmeyen. Örneğin, bir bellek bloğunu ayırmaya çalışır, ancak yeterli bellek çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
@@ -68,7 +68,7 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi geçirmek için kullanışlıdır ve bayrak ayarı işleyicileri yürütme devam etmesini engeller. Bkz: [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi [!INCLUDE[winsdkshort](../atl-mfc-shared/reference/includes/winsdkshort_md.md)] daha fazla bilgi için.  
+ Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi geçirmek için kullanışlıdır ve bayrak ayarı işleyicileri yürütme devam etmesini engeller. Bkz: [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) daha fazla bilgi için Windows SDK'sında işlev.  
   
  Özel durum işleme filtrelerinizi tanımladınız kodlarını sonra test edebilirsiniz. Örneğin:  
   

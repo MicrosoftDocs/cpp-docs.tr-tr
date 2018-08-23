@@ -1,5 +1,5 @@
 ---
-title: Platform::CallbackContext numaralandırma | Microsoft Docs
+title: Platform::CallbackContext numaralandırması | Microsoft Docs
 ms.custom: ''
 ms.date: 12/30/2016
 ms.technology: cpp-windows
@@ -11,19 +11,19 @@ dev_langs:
 helpviewer_keywords:
 - Platform::CallbackContext Enumeration
 ms.assetid: 60e0c7cb-5d8f-482a-bdca-ca9335ae4899
-author: ghogen
-ms.author: ghogen
+author: mikeblome
+ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 757de5f686bb809a5d2fb159a3ee547a20edc982
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b80fe7749fdb2f91e300cff007c01001edfa557
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33086960"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42603044"
 ---
 # <a name="platformcallbackcontext-enumeration"></a>Platform::CallbackContext numaralandırması
-İçinde bir geri çağırma işlevi (olay işleyicisi) yürüten iş parçacığı içeriği belirtir.  
+Bir geri çağırma işlevi (olay işleyicisi) yürütür iş parçacığı bağlamını belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,14 +35,14 @@ enum class CallbackContext {};
   
 |Türü kodu|Açıklama|  
 |---------------|-----------------|  
-|tüm|Geri çağırma işlevi her iş parçacığı bağlam yürütebilir.|  
-|Aynı|Geri çağırma işlevi, zaman uyumsuz işlemi başlatılan iş parçacığı içeriği yürütebilir.|  
+|Tüm|Geri çağırma işlevi, her iş parçacığı bağlam üzerinde çalıştırabilirsiniz.|  
+|Aynı|Zaman uyumsuz işlem başlatılan iş parçacığı bağlamı geri çağırma işlevi yürütebilir.|  
   
 ### <a name="requirements"></a>Gereksinimler  
  **Desteklenen en düşük istemci:** Windows 8  
   
- **Desteklenen en düşük sunucu:** Windows Server 2012  
+ **Sunucu desteklenen en düşük:** Windows Server 2012  
   
- **Namespace:** Platform  
+ **Namespace:** platformu  
   
- **Meta veriler:** platform.winmd
+ **Meta veri:** platform.winmd

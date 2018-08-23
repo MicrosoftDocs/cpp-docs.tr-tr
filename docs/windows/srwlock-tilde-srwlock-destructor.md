@@ -17,26 +17,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 099babd4c66e5237e8ecfbd7f39bdba9e597d63d
-ms.sourcegitcommit: 38af5a1bf35249f0a51e3aafc6e4077859c8f0d9
+ms.openlocfilehash: da5599aedcab352b73ef3df8285ea36cc88327ce
+ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40011958"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "42594758"
 ---
 # <a name="srwlocksrwlock-destructor"></a>SRWLock::~SRWLock Yok Edicisi
-Örneği başlatılmasını geri alır **SRWLock** sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-~SRWLock();  
-```  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** corewrappers.h  
-  
- **Namespace:** Microsoft::wrl:: Wrappers  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SRWLock Sınıfı](../windows/srwlock-class.md)
+
+Örneği başlatılmasını geri alır **SRWLock** sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+~SRWLock();
+```
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** corewrappers.h
+
+**Namespace:** Microsoft::wrl:: Wrappers
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SRWLock Sınıfı](../windows/srwlock-class.md)
