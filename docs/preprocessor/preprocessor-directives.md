@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5621c1a338ea6870d15dca65c303d4ac2bf8c7a
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: dc392454a6c5b152411fe8f6a7d0c12457389794
+ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122601"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "42465600"
 ---
 # <a name="preprocessor-directives"></a>Ön işlemci Yönergeleri
 
-Önişlemci yönergeleri gibi `#define` ve **#ifdef**, genellikle kaynak programlar değiştirmek kolay ve farklı bir yürütme ortamlarda derlemek kolay hale getirmek için kullanılır. Kaynak dosyasında yönergeleri belirli eylemleri gerçekleştirmek için önişlemci söyleyin. Örneğin, önişlemci metin belirteçleri değiştirin, diğer dosyaların içeriğini kaynak dosyaya ekleyin veya metin bölümlerini kaldırarak dosya derlenmesini bastır. Önişlemci satırları tanınan ve makrosu genişletme önce gerçekleştirilen. Bu nedenle, bir makro önişlemci komutu gibi görünen bir şey halinde genişler varsa, bu komut önişlemci tarafından tanınmıyor.
+Önişlemci yönergeleri, aşağıdaki gibi `#define` ve `#ifdef`, genellikle kaynak programların kolay değiştirilmesini ve farklı yürütme ortamlarında derlemek kolay hale getirmek için kullanılır. Kaynak dosyasındaki yönergeler önişlemciye belirli eylemleri gerçekleştirmesini söyler. Örneğin, önişlemci metin içindeki belirteçleri değiştirin, diğer dosyaların içeriklerini kaynak dosyaya ekleyin veya metnin bölümlerini kaldırarak dosyanın bir kısmının derlemesini bastır. Önişlemci satırları makro genişletmeden daha önce gerçekleştirilen ve tanınan. Bu nedenle makro önişlemci komutu gibi görünen bir şey genişletir, komut önişlemci tarafından tanınmıyor.
 
-Önişlemci deyimleri kaçış dizileri desteklenmiyor özel kaynak dosya deyimleri olarak ayarla aynı karakterini kullanın. Aynı önişlemci deyimlerinde kullanılan karakter kümesidir [yürütme karakter kümesi](http://msdn.microsoft.com/en-us/a7901c61-524d-47c6-beb6-d9dacc2e72ed). Önişlemci da negatif karakter değerleri tanır.
+Önişlemci deyimleri kaynak dosya deyimleriyle, çıkış sıraları desteklenmez olarak aynı karakter kullanın. Önişlemci deyimlerinde kullanılan karakter kümesi ile aynı olduğu [yürütme karakter kümesi](http://msdn.microsoft.com/a7901c61-524d-47c6-beb6-d9dacc2e72ed). Önişlemci ayrıca negatif karakter değerlerini tanır.
 
 Önişlemci aşağıdaki yönergeleri tanır:
 
@@ -37,9 +37,9 @@ ms.locfileid: "37122601"
 |[#else](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|[#ifdef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#line](../preprocessor/hash-line-directive-c-cpp.md)|[#endif](../preprocessor/hash-if-hash-elif-hash-else-and-hash-endif-directives-c-cpp.md)|
 |[#ifndef](../preprocessor/hash-ifdef-and-hash-ifndef-directives-c-cpp.md)|[#pragma](../preprocessor/pragma-directives-and-the-pragma-keyword.md)|||
 
-Sayı işareti (**#**) gerekir; yönergesi içeren satırda ilk alanı renkleri karakter olması sayı işareti ve yönergesi ilk harfini arasında boşluk karakterleri görünebilir. Bağımsız değişken veya değerleri bazı yönergeleri içerir. Tek satırlı açıklama sınırlayıcısı yönergesi (dışında bir bağımsız değişken veya yönergesi parçası olan değer) izleyen herhangi bir metin gelmelidir (**//**) veya açıklama sınırlayıcıları arasına ( __/ \*\*/__).   Önişlemci yönergeleri içeren satırları hemen satır sonu işaretçisi bir ters eğik çizgi ile koyarak devam etti (**\\**).
+Numara işareti (**#**) gerekir; yönergeyi içeren satırdaki ilk boşluk olmayan karakter olması beyaz boşluk karakterleri numara işaretleri ile yönergenin ilk harfi arasında görünür. Yönergelerden bazıları bağımsız değişkenler veya değerler içerir. Bir yönerge (dışında bir bağımsız değişken veya yönergenin bir parçası olan değer) takip eden herhangi bir metin tek satır açıklama sınırlayıcısı gelmelidir (**//**) veya açıklama sınırlayıcıları içinde yer almalıdır ( __/ \*\*/__).   Önişlemci yönergelerini içeren satırların hemen bir ters eğik çizgi ile satır sonu işareti koyarak devam ettirildi (**\\**).
 
-Önişlemci yönergeleri bir kaynak dosyasında herhangi bir yerde görünebilir, ancak bunlar yalnızca kaynak dosya kalanı için geçerlidir.
+Önişlemci yönergeleri kaynak dosyada her yerde görünebilir, ancak bunlar yalnızca kaynak dosyasının kalanı için geçerlidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

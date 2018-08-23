@@ -1,5 +1,5 @@
 ---
-title: Ayırma ve belleğin için BSTR bırakılması | Microsoft Docs
+title: Ayırma ve serbest bırakma BSTR için bellek serbest bırakma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,19 +21,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46ab5ae9d6f0bfa98231cbc41aa4ae0d10b89537
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 355d89a3cb5817cc64512ae885a075bf44ee2a86
+ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358331"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "42465929"
 ---
-# <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve için BSTR belleği serbest bırakma
-Oluşturduğunuzda `BSTR`s ve bunları COM nesneleri arasında geçişi, kullandıkları bellek sızıntıları önlemek için bellek değerlendirmesini ilgilenebilmek gerekir. Zaman bir `BSTR` bir arabirim içinde kalır, siz gerekir serbest kendi bellek ile bittiğinde. Ancak, bir `BSTR` geçişleri arabirim dışında alıcı nesnesini alır kendi bellek yönetimi sorumluluğunu.  
+# <a name="allocating-and-releasing-memory-for-a-bstr"></a>Ayırma ve serbest bırakma BSTR için bellek serbest bırakma
+Oluştururken `BSTR`s ve bunları COM nesneleri arasında geçmek için size bellek sızıntılarını önlemek için kullandıkları bellek değerlendirmesini olarak ölçeklendirilmesini gerekir. Olduğunda bir `BSTR` arabirim içinde kalır, siz gerekir ücretsiz kendi bellek ile işiniz bittiğinde. Ancak, bir `BSTR` geçişleri dışında bir arabirim alıcı nesne kendi bellek yönetimi sorumluluğunu alır.  
   
- Genel olarak, ayırma ve belleği serbest bırakma kuralları için ayrılan `BSTR`s aşağıdaki gibidir:  
+ Genel olarak, için ayırma ve bellek serbest bırakma kurallarını ayrılan `BSTR`s aşağıdaki gibidir:  
   
--   Bekleyen bir işlevdeki çağırdığınızda bir `BSTR` bağımsız değişkeni için bellek tahsis gerekir `BSTR` çağırmadan önce ve daha sonra bırakın. Örneğin:  
+-   Bekleyen bir işleve çağırdığınızda bir `BSTR` bağımsız değişkeni için bellek tahsis gerekir `BSTR` çağırmadan önce ve daha sonra serbest bırakın. Örneğin:  
   
      [!code-cpp[NVC_ATLMFC_Utilities#192](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_1.cpp)]  
   
@@ -45,13 +45,13 @@ Oluşturduğunuzda `BSTR`s ve bunları COM nesneleri arasında geçişi, kulland
   
      [!code-cpp[NVC_ATLMFC_Utilities#195](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_4.cpp)]  
   
--   Uygulama zaman döndüren bir işlev bir `BSTR`, dize tahsis ancak bunu boş değil. Alma işlevinin belleği serbest bırakır. Örneğin:  
+-   Döndüren bir işlev uyguladığınızda bir `BSTR`, dize tahsis ancak bunu boş değil. Alma işlevi belleği serbest bırakır. Örneğin:  
   
      [!code-cpp[NVC_ATLMFC_Utilities#196](../atl-mfc-shared/codesnippet/cpp/allocating-and-releasing-memory-for-a-bstr_5.cpp)]  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
  [CStringT::AllocSysString](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring)   
- [SysAllocString](https://msdn.microsoft.com/library/windows/desktop/ms221458.aspx)   
- [SysFreeString](https://msdn.microsoft.com/library/windows/desktop/ms221481.aspx)
+ [SysAllocString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysallocstring)   
+ [SysFreeString](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-sysfreestring)
 

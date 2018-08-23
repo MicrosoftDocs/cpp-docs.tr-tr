@@ -35,15 +35,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: cf7cde624eeaa8a65ba5d5a2b4729ee94847d0e9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e78caa689158f1820a5e146235bb1f2d506a925b
+ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338187"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "42466002"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
-Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](https://msdn.microsoft.com/library/ms712959.aspx).  
+Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)).  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -91,7 +91,7 @@ class IRowsetNotifyCP :
  Bildirimleri uygulama ile ilgili ayrıntılı bilgi için bkz: "Destek bildirimleri" [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md).  
 
 ## <a name="onfieldchange"></a> IRowsetNotifyCP::fire_onfieldchange
-Yayınlar bir [OnFieldChange](https://msdn.microsoft.com/library/ms715961.aspx) olay tüketicileri bir sütun değerine değişikliği bildirir.  
+Yayınlar bir [OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) olay tüketicileri bir sütun değerine değişikliği bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -106,10 +106,10 @@ HRESULT Fire_OnFieldChange(IRowset* pRowset,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetNotify::OnFieldChange](https://msdn.microsoft.com/library/ms715961.aspx) içinde *OLE DB Programcının Başvurusu*. 
+ Bkz: [IRowsetNotify::OnFieldChange](/previous-versions/windows/desktop/ms715961\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="onrowchange"></a> IRowsetNotifyCP::fire_onrowchange
-Yayınlar bir [OnRowChange](https://msdn.microsoft.com/library/ms722694.aspx) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` satırları etkileyen bir değişiklik tüketicilerinin bildirir.  
+Yayınlar bir [OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` satırları etkileyen bir değişiklik tüketicilerinin bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -123,10 +123,10 @@ HRESULT Fire_OnRowChange(IRowset* pRowset,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetNotify::OnRowChange](https://msdn.microsoft.com/library/ms722694.aspx) içinde *OLE DB Programcının Başvurusu*.  
+ Bkz: [IRowsetNotify::OnRowChange](/previous-versions/windows/desktop/ms722694\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="onrowsetchange"></a> IRowsetNotifyCP::fire_onrowsetchange
-Yayınlar bir [OnRowsetChange](https://msdn.microsoft.com/library/ms722669.aspx) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` tüm satır kümesini etkileyen bir değişiklik tüketicilerinin bildirir.  
+Yayınlar bir [OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) tüm dinleyici bağlantı noktası üzerinde olaya `IID_IRowsetNotify` tüm satır kümesini etkileyen bir değişiklik tüketicilerinin bildirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -138,7 +138,7 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetNotify::OnRowsetChange](https://msdn.microsoft.com/library/ms722669.aspx) içinde *OLE DB Programcının Başvurusu*.
+ Bkz: [IRowsetNotify::OnRowsetChange](/previous-versions/windows/desktop/ms722669\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
