@@ -1,5 +1,5 @@
 ---
-title: Visual C++ projelerinde CMake | Microsoft Docs
+title: Visual C++'da CMake projeleri | Microsoft Docs
 ms.custom: ''
 ms.date: 04/28/2018
 ms.reviewer: ''
@@ -16,116 +16,116 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38bcd102e94ac98aba56a4eb98b69df6d3f16111
-ms.sourcegitcommit: d06966efce25c0e66286c8047726ffe743ea6be0
+ms.openlocfilehash: b0e7852ad3fbd88b815aea8266bafc2879494d8a
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238571"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900673"
 ---
-# <a name="cmake-projects-in-visual-c"></a>Visual C++ projelerinde CMake
+# <a name="cmake-projects-in-visual-c"></a>Visual C++'da CMake projeleri
 
-Bu makale, CMake, birden fazla platformda çalışacak derleme işlemi tanımlamak için platformlar arası, açık kaynaklı bir aracı aşina olduğunuzu varsayar.
+Bu makalede, CMake, birden çok platformda çalışacak yapı işlemlerini tanımlamak için bir platformlar arası, açık kaynaklı araç aşina olduğunuzu varsayar.
 
-Visual Studio 2015'te Visual Studio kullanıcıların kullanabileceği bir [CMake Oluşturucu](https://cmake.org/cmake/help/v3.9/manual/cmake-generators.7.html) IDE sonra için IntelliSense kullanır, MSBuild proje dosyalarını oluşturmak için gözatma ve derleme. 
+Visual Studio 2015'te, Visual Studio kullanıcılarına kullanabileceğiniz bir [CMake Oluşturucu](https://cmake.org/cmake/help/v3.9/manual/cmake-generators.7.html) IDE için IntelliSense ardından tüketir, MSBuild proje dosyaları oluşturmak için göz atma ve derleme. 
 
-Visual Studio 2017 ' Başlangıç **CMake için Visual C++ Araçları** bileşen **Klasör Aç** doğrudan amacıyla CMake proje dosyalarını (örneğin, CMakeLists.txt) kullanmak IDE etkinleştirmek için özellik IntelliSense ve tarama. Visual Studio Oluşturucu kullanırsanız, bir geçici proje dosyası oluşturulur ve msbuild.exe için geçirilen ancak hiçbir zaman IntelliSense veya gözatma amaçları için yüklenir. 
+Visual Studio 2017'den itibaren **CMake için Visual C++ Araçları** bileşen **Klasör Aç** IDE CMake proje dosyaları (örneğin, CMakeLists.txt) doğrudan amaçları için kullanmak üzere etkinleştirmek için özelliği IntelliSense ve gözatma. Visual Studio Oluşturucu kullanırsanız, geçici bir proje dosyası oluşturulur ve msbuild.exe için geçirilen ancak hiçbir zaman IntelliSense ya amaçları için yüklenir. 
 
-**Visual Studio 2017 sürüm 15.3**: Destek Ninja ve Visual Studio oluşturucuları için sağlanır.
+**Visual Studio 2017 sürüm 15.3**: Ninja hem de Visual Studio oluşturucuları için destek sağlanır.
 
-**Visual Studio 2017 sürüm 15.4**: Linux'ta CMake için destek eklendi. Daha fazla bilgi için bkz: [bir Linux CMake proje yapılandırma](../linux/cmake-linux-project.md).
+**Visual Studio 2017 sürüm 15.4**: Linux'ta CMake için destek eklendi. Daha fazla bilgi için [Linux CMake projesi yapılandırma](../linux/cmake-linux-project.md).
 
-**Visual Studio 2017 sürüm 15,5**: varolan bir CMake önbelleğe almak için destek eklenir. Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve bir önceden doldurulmuş haldedir CMakeSettings.json dosyası oluşturur.
+**Visual Studio 2017 sürüm 15.5**: Destek, var olan bir CMake önbelleğe almak için eklenir. Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve önceden doldurulmuş bir CMakeSettings.json dosyasına oluşturur.
 
-**Visual Studio 2017 sürüm 15.7**: otomatik önbellek oluşturma, hedefleri görünümünde devre dışı bırakmak için destek eklenir **Çözüm Gezgini**ve tek dosyalı derleme.
+**Visual Studio 2017 sürüm 15.7**: otomatik önbellek oluşturma, hedefleri Görünümü'nde devre dışı bırakmak için destek eklendiğinde **Çözüm Gezgini**ve tek dosyalı derleme.
 
 ## <a name="installation"></a>Yükleme
 
-**CMake için Visual C++ Araçları** varsayılan olarak bir parçası olarak yüklenen **C++ ile masaüstü geliştirme** iş yükü.
+**CMake için Visual C++ Araçları** varsayılan olarak, bir parçası olarak yüklenen **C++ ile masaüstü geliştirme** iş yükü.
 
-![C++ Masaüstü iş yükü CMake bileşeni](media/cmake-install.png)
+![C++ Masaüstü iş yükünde CMake bileşeni](media/cmake-install.png)
  
 ## <a name="ide-integration"></a>IDE tümleştirme
 
-Seçtiğinizde **dosya | Açık | Klasör** CMakeLists.txt dosyasını içeren klasörü açmak için aşağıdakiler gerçekleşir:
+Seçeneğini belirlediğinizde **dosya | Açık | Klasör** CMakeLists.txt dosyasını içeren klasör Aç için aşağıdakiler gerçekleşir:
 
-- Visual Studio ekler bir **CMake** menü komutları görüntüleme ve düzenleme CMake komut dosyaları için ana menü öğesine.
+- Visual Studio ekler bir **CMake** görüntülemeyi ve düzenlemeyi CMake betikleri için komutlarla ana menüsüne menü öğesi.
 - **Çözüm Gezgini** dosya ve klasör yapısını görüntüler.
-- Visual Studio CMake.exe çalışır ve varsayılan CMake önbelleğine oluşturur *yapılandırma*, x86 olduğu hata ayıklama. CMake komut satırı görüntülenir **çıktı penceresi**, CMake ek çıktısını yanı sıra.  **Visual Studio 2017 15.7 ve sonraki sürümleri**: otomatik önbellek oluşturma devre dışı bırakılabilir içinde **Araçlar | Seçenekleri | CMake | Genel** iletişim.
-- Arka planda gözatma bilgilerinin, yeniden düzenleme, IntelliSense etkinleştirmek için kaynak dosyalarını dizini oluşturmak ve benzeri Visual Studio başlatır. Çalışırken, Visual Studio düzenleyicisinde ve ayrıca dizinini kaynakları ile eşitlenmiş tutmak için disk üzerinde yapılan değişiklikleri izler.
+- Visual Studio CMake.exe çalıştırır ve CMake önbelleği için varsayılan oluşturur *yapılandırma*, x86 olan hata ayıklama. CMake komut satırında görüntülenen **çıkış penceresine**, birlikte CMake ek çıktısı.  **Visual Studio 2017 sürüm 15.7 ve üzeri**: otomatik önbellek oluşturma devre dışı bırakılabilir içinde **araçları | Seçenekleri | CMake | Genel** iletişim.
+- Arka planda gözatma bilgilerinin, yeniden düzenleme, IntelliSense, etkinleştirmek için kaynak dosyaları dizini oluşturmak ve benzeri Visual Studio başlatılır. Çalışırken, Visual Studio Düzenleyicisi'nde ve ayrıca disk dizinini kaynakları ile eşitlenmiş tutmak için değişiklikleri izler.
  
-Herhangi bir sayıda CMake projeleri içeren klasörleri açabilirsiniz. Visual Studio algılar ve tüm "root" CMakeLists.txt dosyaları çalışma alanınızda yapılandırır. CMake işlemleri (yapılandırma, yapı, hata ayıklama) yanı sıra C++ IntelliSense ve göz atma, tüm CMake projeleri çalışma alanınızdaki kullanılabilir.
+Herhangi bir sayıda CMake projelerini içeren klasörleri açabilirsiniz. Visual Studio algılar ve çalışma alanınızdaki tüm "Kök" CMakeLists.txt dosyaları yapılandırır. CMake işlemleri (yapılandırma, derleme, hata ayıklama) yanı sıra C++ IntelliSense ve gözatma, çalışma alanınızdaki tüm CMake projelerini kullanılabilir.
 
-![Birden çok kök CMake projeyle](media/cmake-multiple-roots.png)  
+![Birden çok kök ile CMake projesi](media/cmake-multiple-roots.png)  
 
-**Visual Studio 2017 15.7 ve sonraki sürümleri**: mantıksal olarak hedeflerini göre düzenlenmiş projelerinizi de görüntüleyebilirsiniz. Seçin **hedefler Görünüm** açılır menüde gelen **Çözüm Gezgini** araç çubuğu:
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: mantıksal olarak hedefler tarafından düzenlenen projelerinizi da görüntüleyebilirsiniz. Seçin **hedefleyen görünümü** açılır listeden **Çözüm Gezgini** araç çubuğu:
 
 ![CMake hedefleri görüntüle düğmesi](media/cmake-targets-view.png)
 
-## <a name="import-an-existing-cache"></a>Varolan bir önbelleğe alma
+## <a name="import-an-existing-cache"></a>Mevcut bir önbelleğe alma
 
-Var olan bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve bunlar üzerinde dayalı bir önceden doldurulmuş haldedir CMakeSettings.json dosyası oluşturur. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya herhangi bir aracı ya da IDE oluşturmak için kullanılan ile kullanılabilir. Yeni CMakeSettings.json dosyası, projenin kök CMakeLists.txt yerleştirilir. Visual Studio'nun oluşturduğu yeni bir önbellek temel ayarları dosyası.  
+Var olan bir CMakeCache.txt dosyasını içe aktardığınızda, Visual Studio otomatik olarak özelleştirilmiş değişkenleri ayıklar ve bunları temel alan önceden doldurulmuş bir CMakeSettings.json dosyasına oluşturur. Özgün önbellek herhangi bir şekilde değiştirilmez ve hala komut satırından veya oluşturmak için kullanılan herhangi bir aracı veya IDE ile kullanılabilir. Projenin kök CMakeLists.txt yanı sıra yeni bir CMakeSettings.json dosyasına yerleştirilir. Visual Studio oluşturur, yeni bir önbellek temel ayarları dosyası.  
 
 
-**Visual Studio 2017 15.7 ve sonraki sürümleri**: otomatik önbellek oluşturma kılabilirsiniz **Araçlar | Seçenekleri | CMake | Genel** iletişim.
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: otomatik önbellek oluşturma işleminde geçersiz kılabilirsiniz **araçları | Seçenekleri | CMake | Genel** iletişim.
 
-Her şeyin önbelleğinde alınır.  Oluşturucunun ve derleyicileri konum gibi özellikleri de IDE ile çalışmak için bilinen varsayılanları ile değiştirilir.
+Her şey önbelleğinde aktarılır.  Oluşturucu ve derleyiciler konumu gibi özellikleri de IDE ile çalışacak şekilde bilinen varsayılan değerleri ile değiştirilir.
 
-### <a name="to-import-an-existing-cache"></a>Varolan bir önbelleğe almak için
+### <a name="to-import-an-existing-cache"></a>Mevcut bir önbellek içeri aktarmak için
 
 1. Ana menüden **dosya | Açık | CMake**:
 
-   ![Açık CMake](media/cmake-file-open.png "dosya, Aç, CMake") 
+   ![CMake açın](media/cmake-file-open.png "dosya, açık, CMake") 
 
-   Bu işlem sonrasında **alma CMake önbelleğinden** Sihirbazı. 
+   Bu işlem sonrasında **önbellekten içeri aktarma CMake** Sihirbazı. 
    
-2. İçeri aktarmak istediğiniz CMakeCache.txt dosyasına gidin ve ardından **Tamam**. **Önbelleğinden CMake projeyi içeri aktarma** Sihirbazı görünür:
+2. İçeri aktarmak istediğiniz CMakeCache.txt dosyasına gidin ve ardından **Tamam**. **Önbellekten CMake projesini içeri aktarma** Sihirbazı görünür:
 
-   ![Bir CMake önbelleğe alma](media/cmake-import-wizard.png "CMake alma önbellek Sihirbazı'nı açın") 
+   ![CMake önbellek alma](media/cmake-import-wizard.png "CMake önbelleği Sihirbazı içeri aktarma") 
 
-   Sihirbaz tamamlandığında yeni CMakeCache.txt dosyasında görebilirsiniz **Çözüm Gezgini** projenizi kök CMakeLists.txt dosyasında yanındaki.
+   Sihirbaz tamamlandığında, yeni CMakeCache.txt dosyasında gördüğünüz **Çözüm Gezgini** kök CMakeLists.txt dosyasını projenize yanında.
 
 
 ## <a name="building-cmake-projects"></a>CMake proje oluşturma
 
-CMake proje oluşturmak için bu seçeneğiniz vardır:
+CMake projesi oluşturmak için bu seçeneğiniz vardır:
 
-1. Hedef seçin **hata ayıklama** açılır ve tuşuna basın **F5**, veya **çalıştırmak** (yeşil üçgenle) düğmesini. Proje ilk olarak, yalnızca Visual Studio çözümü gibi otomatik olarak oluşturur.
-1. Sağ tıklayın CMakeLists.txt ve select **yapı** ve bağlam menüsünden. Birden çok hedef klasörü yapısı içinde varsa, tüm ya da tek bir belirli hedef yapı seçebilirsiniz veya
-1. Ana menüden seçin **yapı | Çözümü derlemek** (**F7** veya **Ctrl + Shift + B**). İçinde bir CMake hedef zaten seçili olduğundan emin olun **başlangıç öğesi** açılır listede **genel** araç.
+1. Hedef seçin **hata ayıklama** açılan basın **F5**, veya **çalıştırmak** (yeşil üçgeni) düğmesini. Projeyi ilk olarak, yalnızca Visual Studio çözümü gibi otomatik olarak oluşturur.
+1. Sağ tıklayın CMakeLists.txt ve select **derleme** bağlam menüsünden. Birden çok hedef klasör yapınız varsa, tüm veya tek bir belirli hedef oluşturmayı seçebilirsiniz veya
+1. Ana menüden **yapı | Çözüm yapı** (**F7** veya **Ctrl + Shift + B**). İçinde bir CMake hedef zaten seçili olduğundan emin olun **başlangıç öğesi** açılır menüde **genel** araç çubuğu.
 
-![CMake derleme menü komutu](media/cmake-build-menu.png "CMake yapı komut menüsü") 
+![CMake derleme menü komutu](media/cmake-build-menu.png "CMake derleme komutu menüsü") 
 
-Visual Studio Oluşturucu için etkin yapılandırma seçildiğinde MSBuild.exe çağrılıyor `-m -v:minimal` bağımsız değişkenler. CMakeSettings.json dosyası içindeki yapı özelleştirmek için derleme sistem geçirilmesi ek komut satırı bağımsız değişkenleri belirtebilirsiniz `buildCommandArgs` özelliği:
+Etkin yapılandırma için bir Visual Studio oluşturucuyu seçildiğinde, MSBuild.exe ile çağrılan `-m -v:minimal` bağımsız değişkenler. Bir CMakeSettings.json dosyasına içinde derleme özelleştirmek için yapı sistemine geçirilecek ek komut satırı bağımsız değişkenleri belirtebilirsiniz `buildCommandArgs` özelliği:
 
 ```json
 "buildCommandArgs": "-m:8 -v:minimal -p:PreferredToolArchitecture=x64"
 ```
 
-Beklediğiniz gibi yapı sonuçları gösterilmektedir **çıktı penceresi** ve **hata listesi**.
+Beklediğiniz gibi yapı sonuçlarını gösterilen **çıkış penceresine** ve **hata listesi**.
  
-![CMake derleme hataları](media/cmake-build-errors.png "CMake derleme hataları")
+![CMake derleme hatalarını](media/cmake-build-errors.png "CMake derleme hataları")
 
-Birden çok derleme hedefi bir klasörde seçtiğiniz **yapı** üzerinde öğesi **CMake** menüsü veya **CMakeLists.txt** bağlam menüsü oluşturmak için hangi CMake hedef belirtin. Tuşuna basarak **Ctrl + Shift + B** bir CMake projeyi geçerli etkin belgeyi oluşturur.
+Seçebileceğiniz birden çok derleme hedefi bir klasörde **derleme** üzerinde öğesi **CMake** menüsü veya **CMakeLists.txt** oluşturmak için hangi CMake hedef belirtmek için bağlam menüsü. Tuşuna basarak **Ctrl + Shift + B** bir CMake proje geçerli etkin belgeyi oluşturur.
 
-## <a name="debug-the-project"></a>Projeyi hata ayıklama
+## <a name="debug-the-project"></a>Proje hata ayıklama
 
-CMake projede hataları ayıklamak için tuşuna basın ve istenen yapılandırma tercih **F5**, veya basın **çalıştırmak** araç çubuğu düğmesini. Varsa **çalıştırmak** düğmesi "Başlangıç öğesi seçin" diyor, açılan oku seçin ve çalıştırmak istediğiniz bir hedef seçin. (CMake projesinde, "geçerli belgede" seçeneği geçerli yalnızca .cpp dosyaları için.) 
+CMake projesi hata ayıklamak için tuşuna basın ve istenen yapılandırmayı seçin **F5**, veya basın **çalıştırma** araç çubuğu düğmesi. Varsa **çalıştırma** düğmesi "Başlangıç öğesi seçin" ifadesini içeren, açılan oku seçin ve çalıştırmak istediğiniz bir hedef seçin. ("Geçerli belgede" bir CMake projesini içinde seçenektir yalnızca .cpp dosyaları için geçerli.) 
 
-![CMake Çalıştır düğmesini](media/cmake-run-button.png "çalıştırmak CMake düğmesi")
+![CMake Çalıştır düğmesini](media/cmake-run-button.png "CMake çalıştırma düğmesine")
 
-**Çalıştırmak** veya **F5** komutları önceki yapıdan sonra yapılan değişiklikler, proje önce oluşturun.
+**Çalıştırma** veya **F5** komutları son derlemeden sonra değişiklikler yapılıp yapılmadığını proje önce oluşturun.
 
-## <a name="configure-cmake-debugging-sessions"></a>Hata ayıklama oturumları CMake yapılandırın
+## <a name="configure-cmake-debugging-sessions"></a>Hata ayıklama oturumları CMake yapılandırma
 
-Tüm yürütülebilir CMake hedefleri gösterilen **başlangıç öğesi** açılır listede **genel** araç. Hata ayıklama oturumu başlatmak için birini seçin ve hata ayıklayıcısı başlatın.
+Tüm yürütülebilir CMake hedefleri gösterilen **başlangıç öğesi** açılır menüde **genel** araç çubuğu. Hata ayıklama oturumu başlatmak için birini seçin ve hata ayıklayıcıyı başlatın.
 
-![CMake başlangıç öğesi açılır](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılır")
+![CMake başlangıç öğesi açılan](media/cmake-startup-item-dropdown.png "CMake başlangıç öğesi açılır")
 
 
-Ayrıca, bir hata ayıklama oturumu CMake menülerden başlatabilirsiniz.
+CMake menülerden bir hata ayıklama oturumu da başlatabilirsiniz.
 
-Projenizdeki yürütülebilir herhangi CMake hedefi için hata ayıklayıcı ayarları özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. Alt menüde CMake hedef seçtiğinizde, launch.vs.json adlı bir dosya oluşturulur. Bu dosya, seçtiğiniz CMake hedef hakkındaki bilgilerle önceden doldurulmuştur ve program bağımsız değişken veya hata ayıklayıcı türü gibi ek parametreler belirtmenizi sağlar. Herhangi bir tuşa CMakeSettings.json dosyasına başvurmak için "CMake" ile yazdığınızdan Launch.vs.JSON içinde. Aşağıdaki örnek çeken bir basit launch.vs.json dosyası şu anda seçili yapılandırma CMakeSettings.json dosyasında "remoteCopySources" anahtar değeri gösterir:
+Herhangi bir yürütülebilir CMake hedef projesinde hata ayıklayıcısı ayarlarını özelleştirmek için belirli CMakeLists.txt dosyasını sağ tıklatın ve seçin **hata ayıklama ve başlatma ayarları**. CMake hedef alt menüde seçtiğinizde, launch.vs.json adlı bir dosya oluşturulur. Bu dosya seçtiğiniz CMake hedef ilgili bilgilerle önceden doldurulur ve program bağımsız değişkenleri veya hata ayıklayıcı türü gibi ek parametreleri belirtmenizi sağlar. Herhangi bir tuşa bir CMakeSettings.json dosyasına başvurmak için "CMake" ile başlayın Launch.vs.JSON içinde. Aşağıdaki örnek çeken bir basit launch.vs.json dosyası şu anda seçili yapılandırma için CMakeSettings.json dosyasındaki "remoteCopySources" anahtarının değerini gösterir:
 
 ```json
 {
@@ -143,9 +143,9 @@ Projenizdeki yürütülebilir herhangi CMake hedefi için hata ayıklayıcı aya
 }
 ```
 
-Launch.vs.json dosyası kaydedildiğinde bir giriş oluşturulan **başlangıç öğesi** yeni adıyla açılır. Launch.vs.json dosyasını düzenleyerek CMake hedefleri herhangi bir sayı için istediğiniz gibi birçok hata ayıklama yapılandırmaları gibi oluşturabilirsiniz.
+Launch.vs.json dosyası kaydedildiğinde bir giriş oluşturulan **başlangıç öğesi** Yeni adla açılır. Launch.vs.json dosyasını düzenleyerek CMake hedefleri herhangi bir sayıda için istediğiniz sayıda hata ayıklama yapılandırması gibi oluşturabilirsiniz.
 
-**Visual Studio 2017 sürüm 15.4**: Launch.vs.json CMakeSettings.json (aşağıya bakın) bildirilir ve şu anda seçili yapılandırma için geçerli olan değişkenleri destekler. Ayrıca, geçerli dizin başlatan uygulamanın ayarlar "currentDir" adlı bir anahtar vardır:
+**Visual Studio 2017 sürüm 15.4**: Launch.vs.json (aşağıya bakın) CMakeSettings.json dosyanızdaki bildirilir ve şu anda seçili yapılandırmanın geçerli değişkenleri destekler. Ayrıca, geçerli dizin başlatan uygulamanın ayarlar "currentDir" adlı bir anahtar vardır:
 
 
 ```json
@@ -158,7 +158,7 @@ Launch.vs.json dosyası kaydedildiğinde bir giriş oluşturulan **başlangıç 
 }
 ```
 
-Uygulama, değerini çalıştırdığınızda `currentDir` benzer bir şeyin
+Değerini uygulamayı çalıştırdığınızda `currentDir` benzer bir şeydir
 
 ```cmd
 C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
@@ -166,26 +166,26 @@ C:\Users\satyan\7f14809a-2626-873e-952e-cdf038211175\
 
 ## <a name="editing-cmakeliststxt-files"></a>CMakeLists.txt dosyalarını düzenleme
 
-CMakeLists.txt dosyayı düzenlemek için sağ dosyasında tıklayın **Çözüm Gezgini** ve **açık**. Dosyaya değişiklik yaparsanız, sarı durum çubuğu görüntülenir ve IntelliSense güncelleştirir ve güncelleştirme işlemi iptal fırsatı veren size bildirir. CMakeLists.txt hakkında daha fazla bilgi için bkz: [CMake belgelerine](https://cmake.org/documentation/).
+CMakeLists.txt dosyasını düzenlemek için sağ dosyasında tıklayın **Çözüm Gezgini** ve **açık**. Dosyaya değişiklik yaparsanız, sarı durum çubuğu görünür ve IntelliSense güncelleştirir ve güncelleştirme işlemi iptal etme fırsatı veren bildirir. CMakeLists.txt hakkında daha fazla bilgi için bkz. [CMake belgeleri](https://cmake.org/documentation/).
 
-   ![CMakeLists.txt dosyasını düzenleyerek](media/cmake-cmakelists.png "CMakeLists.txt dosya düzenleme")
+   ![CMakeLists.txt dosyasını düzenleyerek](media/cmake-cmakelists.png "CMakeLists.txt dosyasını düzenleme")
 
 
-Dosyayı kaydettikten hemen yapılandırma adımı otomatik olarak yeniden çalıştırır ve bilgileri görüntüler **çıkış** penceresi. Hatalar ve uyarılar içinde gösterilir **hata listesi** veya **çıkış** penceresi. Bir hata çift **hata listesi** CMakeLists.txt sorunlu satırına gidin.
+Dosyayı kaydettikten hemen sonra yapılandırma adımını otomatik olarak yeniden çalıştırır ve bilgilerini görüntüler **çıkış** penceresi. Hatalar ve uyarılar gösterilir **hata listesi** veya **çıkış** penceresi. Hataya çift **hata listesi** CMakeLists.txt sorunlu satıra gidin.
 
-   ![CMakeLists.txt dosya hataları](media/cmake-cmakelists-error.png "CMakeLists.txt dosya hataları")
+   ![CMakeLists.txt dosyası hatalarını](media/cmake-cmakelists-error.png "CMakeLists.txt dosyası hataları")
 
 ## <a name="cmake_settings"></a> CMake ayarları ve özel yapılandırmalar
 
-Varsayılan olarak, Visual Studio altı varsayılan CMake yapılandırmaları ("x86-Debug", "x86-sürüm", "x64-Debug", "x64-sürüm", "Linux-Debug" ve "Linux-sürüm") sağlar. Bu yapılandırmalar CMake.exe belirli bir projenin CMake önbelleği oluşturmak için nasıl çağrıldığını tanımlayın. Bu yapılandırmaları değiştirmeniz veya yeni bir özel yapılandırma oluşturmak için Seç **CMake | CMake Ayarları Değiştir**ve ardından ayarları uygulamak CMakeLists.txt dosyası seçin. **CMake ayarlarını değiştir** komutu dosyanın bağlam menüsünde kullanılabilir de **Çözüm Gezgini**. Bu komutu proje klasöründe bir CMakeSettings.json dosyası oluşturur. Bu dosya CMake önbellek dosyası örneğin sonra yeniden oluşturmak için kullanılan bir **temiz** işlemi. 
+Varsayılan olarak, Visual Studio altı varsayılan CMake yapılandırmaları ("x86-Debug", "sürüm x86", "x64-Debug", "x64 yayın", "Linux-Debug" ve "Linux-sürüm") sağlar. Bu yapılandırmaları nasıl CMake.exe belirtilen proje için CMake önbelleği oluşturmak için çağrılan tanımlar. Bu yapılandırmaları değiştirmeniz veya yeni özel yapılandırma oluşturmak için seçin **CMake | CMake ayarlarını değiştir**, ayarlarının uygulanacağı CMakeLists.txt dosyasını seçin. **CMake ayarlarını değiştir** komut dosyanın bağlam menüsünde kullanılabilir ayrıca **Çözüm Gezgini**. Bu komut, proje klasöründe bir CMakeSettings.json dosyasına oluşturur. Bu dosya CMake önbellek dosyası, örneğin sonra yeniden oluşturmak için kullanılan bir **temiz** işlemi. 
 
-   ![CMake ana menü komutu için ayarlarını değiştir](media/cmake-change-settings.png)
+   ![CMake ana menü komutunu değiştirme ayarları](media/cmake-change-settings.png)
 
-JSON IntelliSense CMakeSettings.json dosyasını düzenlemenize yardımcı olur:
+JSON IntelliSense CMakeSettings.json dosyasına düzenlemenize yardımcı olur:
 
    ![CMake JSON IntelliSense](media/cmake-json-intellisense.png "CMake JSON IntelliSense")
 
-Aşağıdaki örnek, başlangıç noktası olarak kendi CMakeSettings.json oluşturmak için kullanabileceğiniz örnek bir yapılandırma gösterir:
+Aşağıdaki örnek, başlangıç noktası olarak kendi CMakeSettings.json oluşturmak için kullanabileceğiniz örnek yapılandırması gösterilmektedir:
 
 ```json
     {
@@ -202,42 +202,44 @@ Aşağıdaki örnek, başlangıç noktası olarak kendi CMakeSettings.json oluş
 
 ```
 
-1. **ad**: C++ yapılandırma açılır listede görünen adı. Bu özellik değeri bir makro da kullanılabilir `${name}`, diğer özellik değerleri belirtin. Bir örnek için bkz: **buildRoot** CMakeSettings.json tanımında.
-1. **Oluşturucu**: eşlendiği **- G** geçin ve kullanılacak Oluşturucu belirtir. Bu özellik ayrıca, bir makro kullanılabilir `${generator}`, diğer özellik değerlerini belirtin yardımcı olacak. Visual Studio şu anda aşağıdaki CMake oluşturucuları destekler:
+1. **ad**: C++ yapılandırma açılan menüde görünen adı. Bu özellik değeri, bir makro ayrıca kullanılabilir `${name}`diğer özellik değerlerini belirtmek için. Bir örnek için bkz. **buildRoot** CMakeSettings.json tanımında.
+1. **Oluşturucu**: eşlendiği **- G** geçin ve kullanılacak Oluşturucu belirtir. Bu özellik, bir makro ayrıca kullanılabilir `${generator}`, diğer özellik değerlerini belirtin yardımcı olmak için. Visual Studio şu anda aşağıdaki CMake oluşturucuları destekler:
 
     - "Ninja"
     - "Visual Studio 14 2015"
-    - "Visual Studio 14 2015 ARM"
-    - "Visual Studio 14 2015 Win64"
+    - "Visual Studio 2015 14 ARM"
+    - "Visual Studio 2015 14 Win64"
     - "Visual Studio 15 2017"
     - "Visual Studio 15 2017 ARM"
     - "Visual Studio 15 2017 Win64"
 
-Ninja esneklik ve işlevi yerine hızlı derlemeleri hızları için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projeleri düzgün Ninja kullanarak oluşturamadı olabilir. Bu gerçekleşirse, bunun yerine Visual Studio projesi oluşturmak için CMake söyleyebilirsiniz.
+Ninja, esneklik ve işlevi yerine hızlı derlemeler hızları için tasarlandığından, varsayılan olarak ayarlanır. Ancak, bazı CMake projelerini Ninja kullanarak doğru şekilde derlenmesi olabilir. Bu meydana gelirse, bunun yerine Visual Studio projesi oluşturmak için CMake bildirebilirsiniz.
 
-Visual Studio Oluşturucu CMakeSettings.json ana menüden seçerek açın **CMake | CMake Ayarları Değiştir**. "Ninja" silin ve "V" yazın. İstediğiniz Oluşturucu seçmenize olanak tanıyan IntelliSense etkinleştirir.
+Visual Studio Oluşturucu CMakeSettings.json ana menüden seçerek açın **CMake | CMake ayarlarını değiştir**. "Ninja" silin ve "V" yazın. Bu, istediğiniz Oluşturucu seçmenize olanak sağlayan IntelliSense etkinleştirir.
 
-1. **buildRoot**: eşlendiği **-DCMAKE_BINARY_DIR** geçin ve CMake önbellek oluşturulacağı belirtir. Klasörün mevcut değilse oluşturulur.
-1. **değişkenleri**: ad-değer çifti olarak geçirilen CMake değişkenlerin içeren **-D**_adı_**=**_değeri_ CMake için. CMake proje derleme yönergeleri hiçbir değişkene doğrudan CMake önbellek dosyası eklenmesi belirtirseniz, bunları burada yerine eklediğiniz önerilir.
-1. **cmakeCommandArgs**: CMake.exe için geçirmek istediğiniz bir ek anahtar belirtir.
-1. **configurationType**: Seçilen Oluşturucu yapı yapılandırma türü tanımlar. Şu anda desteklenen değerler "Hata ayıklama", "MinSizeRel", "Yayın" ve "RelWithDebInfo" dir.
+1. **buildRoot**: eşlendiği **-DCMAKE_BINARY_DIR** geçin ve CMake önbelleği oluşturulacağı belirtir. Klasör mevcut değilse oluşturulur.
+1. **değişkenleri**: bir ad-değer çifti olarak geçirilen CMake değişkenlerinin içeren **-D**_adı_**=**_değeri_ CMake için. CMake projesi derleme Yönergeleriniz eklenmesi hiçbir değişkene doğrudan CMake önbellek dosyası belirtirseniz, bunları burada yerine eklemeniz önerilir.
+1. **cmakeCommandArgs**: istediğiniz CMake.exe için geçirilecek herhangi ek anahtarlar belirtir.
+1. **configurationType**: Seçili Oluşturucu için derleme yapılandırması türü tanımlar. Şu anda desteklenen değerler şunlardır: "Debug", "MinSizeRel", "Sürüm" ve "RelWithDebInfo".
+1. **ctestCommandArgs**: testler çalıştırıldığında Ctest'e geçirilecek ek anahtarları belirtir.
+1. **buildCommandArgs**: temel alınan geçirilecek ek anahtarlar derleme sistemi belirtir. Örneğin, Ninja oluşturucusunu kullanırken - v geçirme komut satırları çıkış Ninja zorlar.
 
 ### <a name="environment-variables"></a>Ortam değişkenleri
 
-CMakeSettings.json tüketim ortam değişkenleri herhangi bir yukarıda belirtilen özellikleri de destekler. Kullanmak için söz dizimi `${env.FOO}` % % ortam değişkeniyle FOO genişletin.
-Ayrıca bu dosya içinde yerleşik makroları erişim sahibi:
+CMakeSettings.json alıcı ortam değişkenlerini yukarıdaki özelliklerinden herhangi birini de da destekler. Kullanılacak söz dizimi `${env.FOO}` % ortam değişkeni % FOO genişletin.
+Ayrıca yerleşik makroları içinde bu dosyayı erişebilirsiniz:
 
-- `${workspaceRoot}` – Çalışma klasörün tam yolunu sağlar
-- `${workspaceHash}` – karma çalışma konumunun; yararlı (örneğin, klasör yollarında kullanmak için) geçerli çalışma alanı için benzersiz bir tanımlayıcı oluşturmak için
+- `${workspaceRoot}` – Çalışma klasörün tam yolunu sağlar.
+- `${workspaceHash}` – Çalışma alanı konumu; karması Geçerli çalışma alanına (örneğin, klasör yollarında kullanılacak) için benzersiz bir tanımlayıcı oluşturmak için yararlı
 - `${projectFile}` – kök CMakeLists.txt dosyasının tam yolu
-- `${projectDir}` – klasörünün kök CMakeLists.txt dosyasının tam yolu
+- `${projectDir}` – kök CMakeLists.txt dosyasını klasörün tam yolu
 - `${thisFile}` – CMakeSettings.json dosyasının tam yolu
 - `${name}` – yapılandırmasının adı
-- `${generator}` – Bu yapılandırmada kullanılan CMake oluşturucu adı
+- `${generator}` – Bu yapılandırmasında kullanılan CMake oluşturucu adı
 
 ### <a name="ninja-command-line-arguments"></a>Ninja komut satırı bağımsız değişkenleri
 
-'Default' hedef hedefleri belirtilmemişse oluşturur (el ile bakın).
+'Default' hedef hedefleri belirtilmemişse oluşturur (kılavuza bakın).
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise>ninja -?
@@ -247,42 +249,42 @@ usage: ninja [options] [targets...]
 
 |Seçenek|Açıklama|
 |--------------|------------|
-| --Sürüm  | Yazdırma ninja sürümü ("1.7.1")|
-|   -C DIR   | başka bir şey yapmadan önce DIR değiştirme|
+| --sürümü  | Yazdırma ninja sürümü ("1.7.1")|
+|   -C DİZİNİ   | başka bir şey yapmadan önce DIR değiştirme|
 |   -f dosyası  | Giriş derleme dosyası (default=build.ninja) belirtin|
-|   -j N     | N işleri paralel olarak çalıştırma (varsayılan = CPU kullanılabilir türetilmiş 14)|
-|   -k N     | N başarısız işleri kadar gidiyor (varsayılan = 1)|
-|   -l N     | Yük ortalama N büyükse, yeni işleri başlatma|
-|   -n      | kuru çalıştırın (komutları çalıştırma ancak bunlar başarılı gibi hareket)|
-|   -v       | derleme sırasında tüm komut satırları göster|
-|   -d modu  | (kullanım -d listesini modları) hata ayıklamayı etkinleştir|
-|   -t aracı  | subtool (kullanın -t listesini alt araçları) çalıştırın. TopLevel seçenekleri sonlandırır; Daha fazla bayrakları araç geçirilir| 
-|   -w BAYRAĞI  | Uyarılar (kullanın -w listesini uyarıları) ayarla|
+|   -j N     | N işleri paralel olarak çalıştırma (varsayılan = 14, CPU kullanılabilir türetilmiş)|
+|   -k N     | N başarısız işleri kadar kullanmaya devam edin (varsayılan = 1)|
+|   N -m     | Yük ortalama N büyükse, yeni iş başlatma|
+|   -n      | kuru çalıştırın (ancak bunlar başarılı gibi davranmasına komutlarını çalıştırma)|
+|   -v       | yapı sırasında tüm komut satırları göster|
+|   -d modu  | (-d listesini modları kullanın) hata ayıklamayı etkinleştir|
+|   -t aracı  | bir subtool (kullanın -t listesini alt araçları) çalıştırın. TopLevel seçenekleri sonlandırır; Daha fazla bayrakları araç geçirilir| 
+|   -w BAYRAĞI  | Uyarılar (kullanın -w listesini uyarılar) ayarlama|
 
-### <a name="inherited-environments-visual-studio-2017-version-155"></a>Devralınan ortamları (Visual Studio 2017 sürüm 15,5)
-CMakeSettings.json artık devralınan ortamları destekler. Bu özellik (1) varsayılan ortamları devralır ve (2) çalıştırıldığında CMake.exe için geçirilen özel ortam değişkenleri oluşturmanıza olanak sağlar.
+### <a name="inherited-environments-visual-studio-2017-version-155"></a>Devralınmış ortamların (Visual Studio 2017 sürüm 15.5)
+CMakeSettings.json devralınmış ortamların artık desteklemektedir. Bu özellik, (1) varsayılan ortamları devralır ve (2) çalıştığında CMake.exe için geçirilen özel ortam değişkenleri oluşturmanıza olanak sağlar.
 
 ```json
   "inheritEnvironments": [ "msvc_x64_x64" ]
 ```
 
-Yukarıdaki örnekte çalışan aynıdır **VS 2017 için geliştirici komut istemi** ile **-arch amd64 =-host_arch amd64 =** bağımsız değişkenler.
+Yukarıdaki örnekte çalışan aynıdır **VS 2017 için geliştirici komut istemi** ile **-arch = amd64-host_arch amd64 =** bağımsız değişkenler.
 
-Aşağıdaki tabloda, varsayılan değerleri ve komut satırı eşdeğerleri gösterilmektedir:
+Aşağıdaki tabloda, varsayılan değerleri ve komut satırı eşdeğerlerine gösterilmektedir:
 
-|Bağlam adı|Açıklama|
+|İçerik adı|Açıklama|
 |-----------|-----------------|
 |vsdev|Varsayılan Visual Studio ortamı|
 |msvc_x86|X86 kullanarak x86 için derleme araçları|
 |msvc_arm| X86 kullanarak ARM için derleme araçları|
-|msvc_arm64|X86 kullanarak derleme ARM64 için Araçlar|
-|msvc_x86_x64|X86 kullanarak derleme AMD64 için Araçlar|
+|msvc_arm64|ARM64 için x86 kullanarak derleme araçları|
+|msvc_x86_x64|AMD64 için x86 kullanarak derleme araçları|
 |msvc_x64_x64|AMD64 için 64-bit araçlarını kullanarak derleme|
 |msvc_arm_x64|64-bit araçlarını kullanarak ARM için derleme|
-|msvc_arm64_x64|Derleme ARM64 için 64-bit araçlarını kullanma|
+|msvc_arm64_x64|ARM64 için 64-bit araçlarını kullanarak derleme|
 
 ### <a name="custom-environment-variables"></a>Özel ortam değişkenleri
-CMakeSettings.json içinde özel ortam değişkenleri genel tanımlayabilirsiniz veya her yapılandırmada **ortamları** özelliği. Aşağıdaki örnek, bir genel değişkeni tanımlar **BuildDir**, x86 hata ayıklama ve x64-Debug yapılandırmalarını devralındı. Her yapılandırma değişkeni için değer belirtmek için kullanır. **buildRoot** bu yapılandırma için özellik. Ayrıca her yapılandırma nasıl kullandığını unutmayın **inheritEnvironments** özelliği yalnızca bu yapılandırma için geçerli bir değişken belirtin.
+CMakeSettings.json dosyanızda, özel ortam değişkenleri genel tanımlayabileceğiniz veya başına yapılandırmada **ortamları** özelliği. Aşağıdaki örnek bir genel değişken tanımlar **BuildDir**, x86 hata ayıklama ve x64 hata ayıklama yapılandırmaları devralınır. Her yapılandırma değişkeni değeri belirtmek için kullanır. **buildRoot** bu yapılandırma için özellik. Her yapılandırma nasıl kullandığını da unutmayın **inheritEnvironments** özelliği yalnızca o yapılandırmanız için geçerli bir değişken belirtin.
 
 ```json
 {
@@ -314,7 +316,7 @@ CMakeSettings.json içinde özel ortam değişkenleri genel tanımlayabilirsiniz
 }
 ```
 
-Sonraki örnekte kendi değerini x86 hata ayıklama yapılandırmasını tanımlayan **BuildDir** özellik ve bu değerin geçersiz kılmaları genel tarafından ayarlanan değer **BuildDir** özelliği böylece  **BuildRoot** değerlendiren `D:\custom-builddir\x86-Debug`.
+Sonraki örnekte, kendi değerini x86 hata ayıklama yapılandırmasını tanımlar **BuildDir** özelliği ve bu değeri geçersiz kılar, genel tarafından ayarlanan değer **BuildDir** özelliği böylece  **BuildRoot** değerlendiren `D:\custom-builddir\x86-Debug`.
 
 ```json
 {
@@ -358,27 +360,27 @@ Sonraki örnekte kendi değerini x86 hata ayıklama yapılandırmasını tanıml
 
 ## <a name="cmake-configure-step"></a>CMake yapılandırma adımı
 
-Önemli değişiklikler CMakeSettings.json veya CMakeLists.txt dosyalar, Visual Studio için otomatik olarak yapıldığında tekrar bölümlerini CMake adım yapılandırın. Yapılandırma adımı hatasız tamamlanırsa, toplanan bilgileri de yapı C++ IntelliSense ve dil Hizmetleri'nde kullanılabilir ve işlemleri hata ayıklama.
+Önemli değişiklikler CMakeSettings.json veya CMakeLists.txt dosyaları, Visual Studio otomatik olarak yapıldığında tekrar bölümlerini CMake adım yapılandırın. Yapılandırma adımı hatasız tamamlanırsa toplanan bilgileri de derlemede C++ IntelliSense ve dil hizmetlerini kullanılabilir ve hata ayıklama işlemleri.
 
-Birden çok CMake projeleri aynı CMake yapılandırma adı (örneğin, x86-Debug) kullandığınızda, bunların tümünün yapılandırılır ve (kendi yapı kök klasöründe) yerleşik bu yapılandırma seçildiğinde. Tüm bu CMake yapılandırmasında katılmak CMake projeleri hedeflerden ayıklayabilirsiniz.
+Birden çok CMake projeleri aynı CMake yapılandırma adı (örneğin, x86-Debug) kullandığınızda, bunların tümünün yapılandırılan ve oluşturulan (, kendi yapı kök klasöründe) Bu yapılandırma seçildiğinde. Tüm bu CMake yapılandırmasında katılan CMake projeleri hedeflerden ayıklayabilirsiniz.
 
    ![CMake yalnızca derleme menü öğesi](media/cmake-build-only.png "CMake yalnızca derleme menü öğesi")
 
-Yapıları sınırlamak ve projelerin çalışma alanında bir alt kümesini oturumlarını hata ayıklamak için CMakeSettings.json dosyasındaki benzersiz bir adla yeni bir yapılandırma oluşturmak ve yalnızca bu projeler için geçerlidir. Bu yapılandırma seçildiğinde, IntelliSense, yapı ve hata ayıklama komutları yalnızca belirtilen bu projeleri için etkinleştirilir.
+Yapıları sınırlamak ve projelerin çalışma alanında bir alt kümesini oturumları hata ayıklama için CMakeSettings.json dosyasındaki benzersiz bir adla yeni bir yapılandırma oluşturmak ve yalnızca bu projeler için geçerlidir. Bu yapılandırma seçildiğinde, IntelliSense ve derleme ve hata ayıklama komutları yalnızca belirtilen desteklediği projeleri için etkinleştirilir.
 
 ## <a name="troubleshooting-cmake-cache-errors"></a>CMake önbellek hatalarında sorun giderme
 
-Bir sorunu tanılamak için CMake önbellek durumuyla ilgili daha fazla bilgiye ihtiyacınız varsa, açık **CMake** ana menü veya **CMakeLists.txt** bağlam menüsünde **Çözüm Gezgini**aşağıdaki komutlardan birini çalıştırmak için:
+Bir sorunu tanılamak için CMake önbelleğini durumu hakkında daha fazla bilgiye ihtiyacınız varsa, açık **CMake** ana menü veya **CMakeLists.txt** bağlam menüsünde **Çözüm Gezgini**şu komutları çalıştırmak için:
 
-- **Önbellek görüntülemek** Düzenleyicisi'nde yapı kök klasörden CMakeCache.txt dosyasını açar. (Önbelleğini temizlemek, burada CMakeCache.txt için yaptığınız düzenlemeler temizlenir. Önbellek temizlendikten sonra kalıcı değişiklikler yapmak için bkz: [CMake ayarları ve özel yapılandırmaları](#cmake_settings) bu makalenin önceki.)
-- **Önbellek klasörü açın** yapı kök klasörüne Explorer penceresi açar.  
-- **Önbelleği Temizle** sonraki CMake yapılandırma adımı başlatır temiz önbelleğinden böylece yapı kök klasörünü siler.
-- **Önbellek oluşturmak** generate adım Visual Studio ortamında güncel göz önünde bulundurur olsa bile çalışmaya zorlar.
+- **Önbellek görüntülemek** CMakeCache.txt dosyasını derleme kök klasörden Düzenleyicisi'nde açılır. (Önbelleğini temizlemek, CMakeCache.txt için burada yaptığınız tüm düzenlemeleri temizlendiğinde. Önbelleği temizledikten sonra kalıcı değişiklikler yapmak için bkz: [CMake ayarları ve özel yapılandırmalar](#cmake_settings) bu makalenin üst kısmındaki.)
+- **Önbellek klasörü açın** derleme kök klasörü için bir Gezgin penceresi açılır.  
+- **Önbelleğini temizlemek** temiz önbellek'dan başlar adım böylece sonraki CMake yapılandırma derleme kök klasörü siler.
+- **Önbelleği oluşturması** bile Visual Studio ortamı güncel dikkate oluşturma adım zorlar.
  
-**Visual Studio 2017 15.7 ve sonraki sürümleri**: otomatik önbellek oluşturma devre dışı bırakılabilir içinde **Araçlar | Seçenekleri | CMake | Genel** iletişim.
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: otomatik önbellek oluşturma devre dışı bırakılabilir içinde **araçları | Seçenekleri | CMake | Genel** iletişim.
 
 ## <a name="single-file-compilation"></a>Tek Dosyalı derleme
 
-**Visual Studio 2017 15.7 ve sonraki sürümleri**: CMake projesinde tek bir dosya oluşturmak için dosyayı sağ tıklayın **Çözüm Gezgini** ve **derleme**. Ayrıca, ana CMake menüsünü kullanarak düzenleyicide açık olan dosya oluşturabilirsiniz:
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: tek bir dosya içinde bir CMake projesini oluşturmak için dosyada sağ **Çözüm Gezgini** ve **derleme**. Ayrıca, düzenleyicide açık olan ana CMake menüsünü kullanarak dosyayı oluşturabilirsiniz:
 
 ![CMake tek dosyalı derleme](media/cmake-single-file-compile.png)

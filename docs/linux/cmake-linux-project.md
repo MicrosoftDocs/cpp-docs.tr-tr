@@ -15,12 +15,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 8e9f5527917dcab663670d59f7a4ce0f51948bfb
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: bbc19b4c8e698c520be2283376ac5297cdae33df
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466055"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900518"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
@@ -87,10 +87,16 @@ Varsayılan CMake ayarlarını değiştirmek için seçin **CMake | CMake ayarla
       "remoteCMakeListsRoot": "/var/tmp/src/${workspaceHash}/${name}",
       "cmakeExecutable": "/usr/local/bin/cmake",
       "buildRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\build\\${name}",
+      "installRoot": "${env.LOCALAPPDATA}\\CMakeBuilds\\${workspaceHash}\\install\\${name}",
       "remoteBuildRoot": "/var/tmp/build/${workspaceHash}/build/${name}",
+      "remoteInstallRoot": "/var/tmp/build/${workspaceHash}/install/${name}",
       "remoteCopySources": true,
       "remoteCopySourcesOutputVerbosity": "Normal",
       "remoteCopySourcesConcurrentCopies": "10",
+      "remoteCopySourcesMethod": "rsync",
+      "remoteCopySourcesExclusionList": [".vs", ".git"],
+      "rsyncCommandArgs" : "-t --delete --delete-excluded",
+      "remoteCopyBuildOutput" : "false",
       "cmakeCommandArgs": "",
       "buildCommandArgs": "",
       "ctestCommandArgs": "",
@@ -98,7 +104,19 @@ Varsayılan CMake ayarlarını değiştirmek için seçin **CMake | CMake ayarla
 }
 ```
 
-`name` Dilediğiniz değeri olabilir. `remoteMachineName` Değer birden fazla olması durumunda hangi hedef, uzak sisteme belirtir. IntelliSense doğru sistemi seçmenize yardımcı olması Bu alan için etkinleştirilir. Alan `remoteCMakeListsRoot` proje kaynaklarınız için Uzak sistemde kopyalanacağı belirtir. Alan `remoteBuildRoot` , uzak sistemde yapı çıkışını oluşturulacağı olduğu. Çıkış da yerel olarak tarafından belirtilen konuma kopyalanır `buildRoot`.
+`name` Dilediğiniz değeri olabilir. `remoteMachineName` Değer birden fazla olması durumunda hangi hedef, uzak sisteme belirtir. IntelliSense doğru sistemi seçmenize yardımcı olması Bu alan için etkinleştirilir. Alan `remoteCMakeListsRoot` proje kaynaklarınız için Uzak sistemde kopyalanacağı belirtir. Alan `remoteBuildRoot` , uzak sistemde yapı çıkışını oluşturulacağı olduğu. Çıkış da yerel olarak tarafından belirtilen konuma kopyalanır `buildRoot`. `remoteInstallRoot` Ve `installRoot` alanları için benzer `remoteBuildRoot` ve `buildRoot`, bir cmake yüklemesi yapılırken geçerlidir. `remoteCopySources` Giriş, yerel kaynakları uzak makineye kopyalanan olup olmadığını denetler. Bunu false olarak çok sayıda dosya varsa ve zaten kaynakları kendinize eşitleniyor ayarlayabilirsiniz. `remoteCopyOutputVerbosity` Değer hataları tanılamak gerektiği durumlarda kopyalama adımı, ayrıntı düzeyini denetler. `remoteCopySourcesConcurrentCopies` Giriş kaç işlemleri kopyalamayı yapmak için kökenli denetler. `remoteCopySourcesMethod` Değer rsync veya sftp biri olabilir. `remoteCopySourcesExclusionList` Alan uzak makineye kopyalandı denetlemenize olanak verir. `rsyncCommandArgs` Değeri kopyalama rsync yöntemi denetlemenize olanak tanır. `remoteCopyBuildOutput` Alan denetimleri olup olmadığı uzak derleme çıktı, yerel bir yapı klasörüne kopyalanır.
+
+Daha fazla denetim için kullanabileceğiniz bazı isteğe bağlı ayarları vardır:
+
+```json
+{
+      "remotePreBuildCommand": "",
+      "remotePreGenerateCommand": "",
+      "remotePostBuildCommand": "",
+}
+```
+
+Bu seçenekler önce ve sonra yapı ve CMake oluşturma önce uzak çubuğundaki komutları çalıştırmanıza olanak sağlar. Herhangi bir geçerli komutu uzak kutusunda olabilirler. Çıkış, Visual Studio'ya dönün cmdlet'iyle yönetilir.
 
 ## <a name="build-a-supported-cmake-release-from-source"></a>Desteklenen bir CMake sürüm kaynağından alınan derleme
 

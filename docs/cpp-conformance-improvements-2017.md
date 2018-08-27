@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43bb06a4ef2229b2b9e98bf7acabbe757744fc73
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 3708bce00b01ee796067bf91d99645cb61f19a53
+ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465193"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42900706"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
 
@@ -1680,6 +1680,8 @@ struct S : Base<T> {
 ```
 
 Hatayı düzeltmek için değiştirme `return` ifadesine `return this->base_value;`.
+
+**Not:** Boost python Kitaplığı'nda olmuştur uzun bir süre için bir şablon iletme bildiriminde bir MSVC özgü geçici çözüm [unwind_type.hpp](https://github.com/boostorg/python/blame/develop/include/boost/python/detail/unwind_type.hpp). Altında [/ permissive-](build/reference/permissive-standards-conformance.md) Visual Studio 2017 sürüm 15,8 başlangıç modu (_MSC_VER 1915 =), bu geçici çözüm guard yapma ve diğer derleyiciler ile tutarlıdır ve bağımsız değişkene bağlı ad araması (ADL) desteklemez doğru MSVC derleyicisi gereksiz. Bu hatadan kaçınmak için *C3861: 'unwind_type': tanımlayıcı bulunamadı*, bakın [çekme isteği 229](https://github.com/boostorg/python/pull/229) Boostorg depodaki üstbilgi dosyasını güncelleştirin. Biz zaten yama [vcpkg](vcpkg.md) Boost paketi alın ya da Boost kaynaklarınızı vcpkg ' yükseltme ardından, ayrı olarak düzeltme eki uygulamaya gerek yoktur.
 
 ### <a name="forward-declarations-and-definitions-in-namespace-std"></a>iletme bildirimlerinin ve tanımlarının ad alanında std
 
