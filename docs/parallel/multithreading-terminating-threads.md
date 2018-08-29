@@ -1,7 +1,7 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: İş parçacıklarını sonlandırma | Microsoft Docs'
+title: 'Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -23,14 +23,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2411d11c154bef09b95d33e5b8598ba3c64dfb94
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3b192c0ee4bc7658fc39791545c4aa9334edd183
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608850"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131951"
 ---
-# <a name="multithreading-terminating-threads"></a>Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma
+# <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma
 İki durum iş parçacığının sonlandırılmasına neden olur: denetleyen işlev çıkar veya iş parçacığının tamamlanmaya kadar çalışmasına izin verilmez. Bir sözcük işlemcisi arka plan yazdırması için iş parçacığı kullandıysanız, başarıyla tamamlanmış yazdırma denetleyen işlev normal olarak sonlanırdı. Ancak kullanıcı yazdırmayı iptal etmek isterse, arka plan yazdırma iş parçacığının önce sonlandırılması gerekir. Bu konu, hem her durumun nasıl uygulanacağını hem de sonlandırıldıktan sonra bir iş parçacığı çıkış kodunu almak nasıl açıklar.  
   
 - [Normal iş parçacığı sonlandırma](#_core_normal_thread_termination)  
@@ -67,7 +67,7 @@ Nedenini belirlemek her iki yöntem sağlar bir `CWinThread` nesne sonlandırıl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C++ ve MFC ile çoklu iş parçacığı kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)   
+[C++ ve MFC ile çoklu iş parçacığı kullanımı](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
 [ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)

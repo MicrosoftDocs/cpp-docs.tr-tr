@@ -7,16 +7,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d93ad1fd32003444c9ddd991e1810fbc5bec79d5
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: adedfd2a6589d7d7d0fad453428d409932007e15
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42465842"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131911"
 ---
 # <a name="linux-development-with-c-documentation"></a>C++ belgeleri ile Linux geliştirme
 
-Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
+Visual Studio 2017, oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklama için kullanın.
 
 <ul class="panelContent cardsF">
     <li>
@@ -31,7 +31,7 @@ Oluşturma ve Linux'ta çalışan uygulamalarda hata ayıklayın.
                     </div>
                     <div class="cardText">
                         <h3>Yükleme ve Linux iş yükünü yapılandırma</h3>
-                        <p>C++ Linux uygulamalarında oluşturmak için Visual Studio ayarlamayı öğrenin.</p>
+                        <p>Visual Studio 2017'kurmak ve daha sonra C++ Linux uygulamalarında oluşturulacağını öğrenin.</p>
                     </div>
                 </div>
             </div>

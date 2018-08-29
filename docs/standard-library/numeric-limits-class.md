@@ -80,12 +80,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a14d5012e1db8dec0f1aa6c39d8764232169dec2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 70e980a33e88920afef9c6f19dcd8b2ecfca5071
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954883"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131444"
 ---
 # <a name="numericlimits-class"></a>numeric_limits Sınıfı
 
@@ -156,7 +156,7 @@ Rastgele bir uzmanlık için hiçbir üye anlamlı değerlere sahip. Sıfır anl
 En küçük sıfır döndürür değeri normalleştirilmişlikten çıkarılır.
 
 ```cpp
-static Type denorm_min() throw();
+static constexpr Type denorm_min() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,7 +215,7 @@ The smallest nonzero denormalized value
 Duyarlık kaybı yaşanmadan türü temsil edebilen taban basamak sayısını döndürür.
 
 ```cpp
-static const int digits = 0;
+static constexpr int digits = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -259,7 +259,7 @@ int main( )
 Duyarlık kaybı yaşanmadan türü temsil edebilen bir ondalık basamak sayısını döndürür.
 
 ```cpp
-static const int digits10 = 0;
+static constexpr int digits10 = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -303,7 +303,7 @@ The float is; 100000000
 İşlevi 1 ve en küçük değeri arasındaki fark için veri türünü gösterilebilir 1'den büyük olarak döndürür.
 
 ```cpp
-static Type epsilon() throw();
+static constexpr Type epsilon() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -355,7 +355,7 @@ The difference between 1 and the smallest value greater than 1
 Testleri izin verip bir tür değerleri normalleştirilmişlikten çıkarılır.
 
 ```cpp
-static const float_denorm_style has_denorm = denorm_absent;
+static constexpr float_denorm_style has_denorm = denorm_absent;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -401,7 +401,7 @@ Whether long int objects allow denormalized values: 0
 Doğruluk kaybı normalleştirilmişlikten çıkarma kayıp yerine kesin olmayan bir sonucu olarak algılanan olup olmadığını sınar.
 
 ```cpp
-static const bool has_denorm_loss = false;
+static constexpr bool has_denorm_loss = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -447,7 +447,7 @@ Whether long int objects can detect denormalized loss: 0
 Pozitif sonsuz temsili bir türe sahip olup olmadığını sınar.
 
 ```cpp
-static const bool has_infinity = false;
+static constexpr bool has_infinity = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -493,7 +493,7 @@ Whether long int objects have infinity: 0
 Nonsignaling olan bir sayı değil (NAN) bir sessiz temsili bir türe sahip olup olmadığını sınar.
 
 ```cpp
-static const bool has_quiet_NaN = false;
+static constexpr bool has_quiet_NaN = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -539,7 +539,7 @@ Whether long int objects have quiet_NaN: 0
 Bir tür sinyal sayı olmayan (NAN) bir gösterimi olup olmadığını test eder.
 
 ```cpp
-static const bool has_signaling_NaN = false;
+static constexpr bool has_signaling_NaN = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -585,7 +585,7 @@ Whether long int objects have a signaling_NaN: 0
 Pozitif sonsuz varsa türünün temsili.
 
 ```cpp
-static Type infinity() throw();
+static constexpr Type infinity() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -639,7 +639,7 @@ The representation of infinity for type long double is: inf
 Bir tür olarak temsil değerleri kümesi sınırlı olup olmadığını sınar.
 
 ```cpp
-static const bool is_bounded = false;
+static constexpr bool is_bounded = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -693,7 +693,7 @@ Whether unsigned char objects have bounded set of representable values: 1
 Test türü üzerinde yapılan hesaplamaları yuvarlama hataları ücretsizdir.
 
 ```cpp
-static const bool is_exact = false;
+static constexpr bool is_exact = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -747,7 +747,7 @@ Whether unsigned char objects have calculations free of rounding errors: 1
 Bir tür IEC 559 standartlara uygun olmadığını sınar.
 
 ```cpp
-static const bool is_iec559 = false;
+static constexpr bool is_iec559 = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -797,7 +797,7 @@ Whether unsigned char objects conform to iec559 standards: 0
 Bir tamsayı temsili bir türe sahip olmadığını sınar.
 
 ```cpp
-static const bool is_integer = false;
+static constexpr bool is_integer = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -847,7 +847,7 @@ Whether unsigned char objects have an integral representation: 1
 Olmadığını test eder bir **türü** sahip bir modül gösterimi.
 
 ```cpp
-static const bool is_modulo = false;
+static constexpr bool is_modulo = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -897,7 +897,7 @@ Whether unsigned char objects have a modulo representation: 1
 İmzalı bir gösterimi bir türe sahip olmadığını sınar.
 
 ```cpp
-static const bool is_signed = false;
+static constexpr bool is_signed = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -947,7 +947,7 @@ Whether unsigned char objects have a signed representation: 0
 Şablon sınıfı içinde tanımlanan bir açık özelleştirme bir türe sahip olmadığını test eder `numeric_limits`.
 
 ```cpp
-static const bool is_specialized = false;
+static constexpr bool is_specialized = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1001,7 +1001,7 @@ Whether int* objects have an explicit specialization in the class: 0
 En negatif sonlu değeri döndürür.
 
 ```cpp
-static Type lowest() throw();
+static constexpr Type lowest() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1017,7 +1017,7 @@ Türü için en negatif sonlu değeri döndürür (genelde `min()` tamsayı tür
 Bir tür için maksimum sonlu değeri döndürür.
 
 ```cpp
-static Type max() throw();
+static constexpr Type max() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1059,7 +1059,7 @@ int main() {
 İki ayrı türü değerleri farklı ondalık gösterimleri sahip olduğunuzdan emin olmak için gerekli ondalık basamak sayısını döndürür.
 
 ```cpp
-static int max_digits10 = 0;
+static constexpr int max_digits10 = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1075,7 +1075,7 @@ static int max_digits10 = 0;
 Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.
 
 ```cpp
-static const int max_exponent = 0;
+static constexpr int max_exponent = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1121,7 +1121,7 @@ The maximum radix-based exponent for type long double is:  1024
 Bir taban on gücü için harekete geçirildiğinde, kayan nokta türü sınırlı bir değeri temsil edebilir en fazla pozitif tam sayı üssü döndürür.
 
 ```cpp
-static const int max_exponent10 = 0;
+static constexpr int max_exponent10 = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1167,7 +1167,7 @@ The maximum base 10 exponent for type long double is:  308
 Bir tür için en düşük normalleştirilmiş değerini döndürür.
 
 ```cpp
-static Type min() throw();
+static constexpr Type min() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1217,7 +1217,7 @@ The minimum value for type short int is:  -32768
 Taban sınıfın, gücünü ortaya çıktığında, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.
 
 ```cpp
-static const int min_exponent = 0;
+static constexpr int min_exponent = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1263,7 +1263,7 @@ The minimum radix-based exponent for type long double is:  -1021
 On sınıfın gücü için oluştuğunda, kayan nokta türü sınırlı bir değeri temsil edebilir en büyük negatif tam sayı üs döndürür.
 
 ```cpp
-static const int min_exponent10 = 0;
+static constexpr int min_exponent10 = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1309,7 +1309,7 @@ The minimum base 10 exponent for type long double is:  -307
 Sessiz bir gösterimi türü için sayı olmayan (NAN) döndürür.
 
 ```cpp
-static Type quiet_NaN() throw();
+static constexpr Type quiet_NaN() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1355,7 +1355,7 @@ The quiet NaN for type long double is:  1.#QNAN
 İntegral taban döndürür taban bir türü gösterimi için kullanılan, olarak adlandırılır.
 
 ```cpp
-static const int radix = 0;
+static constexpr int radix = 0;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1401,7 +1401,7 @@ The base for type long double is:  2
 Hata türü için izin verilecek en fazla döndürür.
 
 ```cpp
-static Type round_error() throw();
+static constexpr Type round_error() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1443,7 +1443,7 @@ The maximum rounding error for type long double is:  0.5
 Bir kayan nokta değeri tamsayıya yuvarlama uygulaması seçim yapabileceği çeşitli yöntemleri tanımlayan bir değer döndürür.
 
 ```cpp
-static const float_round_style round_style = round_toward_zero;
+static constexpr float_round_style round_style = round_toward_zero;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1490,7 +1490,7 @@ The rounding style for an int type is: 0
 Bir sayı değil (NAN) sinyal temsilini türünü döndürür.
 
 ```cpp
-static Type signaling_NaN() throw();
+static constexpr Type signaling_NaN() throw();
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1530,7 +1530,7 @@ int main( )
 Bir tür değeri normalleştirilmiş bir değer olarak yuvarlama önce temsil etmek için çok küçük olduğunu anlayabilirsiniz olup olmadığını sınar.
 
 ```cpp
-static const bool tinyness_before = false;
+static constexpr bool tinyness_before = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1580,7 +1580,7 @@ Whether unsigned char types can detect tinyness before rounding: 0
 Test türü için aritmetik özel durumları yakalama, raporlar uygulanır.
 
 ```cpp
-static const bool traps = false;
+static constexpr bool traps = false;
 ```
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf48881b3baeb7dc5ab48483ae9b075a9c048a38
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 0698dbcb27e471218c39517676654156634aa022
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883573"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131392"
 ---
 # <a name="date-and-time-systemtime-support"></a>Tarih ve saat: SYSTEMTIME desteği
 [CTime](../atl-mfc-shared/reference/ctime-class.md) sınıfı Win32 sistem ve dosya sürelerinden kabul oluşturucular sahiptir. Kullanırsanız `CTime` nesneler bu amaçlar için başlatma bu makalede açıklandığı gibi uygun şekilde değiştirmeniz gerekir.  
@@ -52,8 +52,6 @@ ms.locfileid: "37883573"
 -   [Genel tarih ve saat programlama MFC](../atl-mfc-shared/date-and-time.md)  
   
 -   [Tarih ve saat programlama Otomasyon desteği](../atl-mfc-shared/date-and-time-automation-support.md)  
-  
--   [Tarih ve saat programlama için genel amaçlı sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tarih ve Saat](../atl-mfc-shared/date-and-time.md)

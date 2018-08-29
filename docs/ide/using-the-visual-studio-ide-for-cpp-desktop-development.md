@@ -1,5 +1,5 @@
 ---
-title: C++ Masaüstü geliştirmesi için Visual Studio IDE kullanarak | Microsoft Docs
+title: C++ Masaüstü geliştirmesi için Visual Studio IDE'yi kullanarak | Microsoft Docs
 ms.date: 06/08/2018
 ms.technology:
 - cpp-ide
@@ -14,28 +14,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b71f09914d509aa4202bfc856d52f6cea26cea3
-ms.sourcegitcommit: 1c2e035f98fb55d9b3c08ec3bb562179a368d0d1
+ms.openlocfilehash: a0678afc9d79499e4581feeca03b1a5bf9b7b963
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35253821"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131312"
 ---
 # <a name="using-the-visual-studio-ide-for-c-desktop-development"></a>C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma
 
-Visual Studio tümleşik geliştirme ortamı (IDE) yardımcı özellikler kümesini yönetmek büyük ve küçük kod projeleri, yazma, kodunuzu yeniden düzenlemeniz ve algılamak ve statik çözümleme ve güçlü hata ayıklama araçlarını kullanarak hataları düzeltin sunar. Bu makale kümesine projelerinizi yönetmek, yazma, test ve kodunuzdaki hataları ayıklamanıza ve başka bir bilgisayara dağıtmak için gerekir. her adım rehberlik için tasarlanmıştır.
+Visual Studio tümleşik geliştirme ortamı (IDE) yardımcı olan özellikler kümesini yönetmek büyük ve küçük kod projeleri, yazmak ve kodunuzu yeniden düzenleyin ve tespit edip hem statik analiz ve güçlü hata ayıklama araçları'nı kullanarak hataları düzeltin sunar. Bu makaleler kümesini projelerinizi yönetin, yazma, test edin ve kodunuzdaki hataları ayıklamanıza ve ardından başka bir bilgisayara dağıtmak için gereken her adım rehberlik için tasarlanmıştır.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-Visual Studio henüz yüklemediyseniz şimdi saattir. Yükleme bağlantıları ve hızlı bir kılavuz için bkz: [Visual Studio yükleme C++ Destek](../build/vscpp-step-0-installation.md). Visual Studio genel olarak yüklemek ve bir sorun, yaşanırsa sorun giderme ipuçları görmek hakkında daha fazla bilgi için [Visual Studio yükleme](/visualstudio/install/install-visual-studio). Seçtiğinizden emin olun **C++ ile masaüstü geliştirme** Visual Studio yüklediğinizde varsayılan olarak yüklü değil çünkü C++ Derleyicileri, Araçlar ve kitaplıkları içerecek şekilde iş yükü.
+Visual Studio henüz yüklemediyseniz, artık zamanı geldi. Hızlı bir kılavuz ve indirme bağlantıları [Visual Studio'da C++ yükleme desteği](../build/vscpp-step-0-installation.md). Visual Studio genel olarak yüklemek ve şeyler yanlış gittiğinde, sorun giderme ipuçları hakkında daha fazla bilgi için [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio). Seçtiğinizden emin olun **C++ ile masaüstü geliştirme** iş yüküne Visual Studio yüklediğinizde varsayılan olarak yüklü olmayan olduğundan C++ Derleyicileri, araçları ve kitaplıkları içerir.
 
-Bu izlenecek yollar, Visual Studio Visual C++ dili ve Windows Masaüstü geliştirme için gerekli bileşenlerin yüklü olduğunu varsayalım. C++ dili ile ilgili temel bilgileri anladığınızdan varsayıyoruz. C++ öğrenmek gerekiyorsa, birçok books ve web kaynakları kullanılabilir yok. Başlamak için bir yerdir [Get Started](https://isocpp.org/get-started) standart C++ Foundation Web sitesi sayfası.
+Bu izlenecek yollar, Visual Studio ve Visual C++ dili ve Windows Masaüstü geliştirmesi için gerekli bileşenleri yükledikten varsayılır. C++ dilinin temellerini anlamanız da varsayılır. C++ öğrenmek gerekiyorsa, birçok kitaplardan ve web kaynaklarından kullanılabilen vardır. Başlatmak için bir videodur [Başlarken](https://isocpp.org/get-started) standart C++ temel Web sayfası.
+
+Visual Studio henüz yüklemediyseniz, artık zamanı geldi. 
+
+**Visual Studio 2017 yüklemesi**
+
+Visual Studio 2017 almak için buradan indirebilirsiniz [Visual Studio indirmeleri](http://www.visualstudio.com/downloads/download-visual-studio-vs.aspx). Visual Studio yüklediğinizde, varsayılan olarak yüklü değil çünkü Visual C++ geliştirme araçları eklediğinizden emin olun. Visual Studio yükleme hakkında daha fazla bilgi için bkz. [Visual Studio'yu yükleyin](/visualstudio/install/install-visual-studio).
+
+**Visual Studio 2015 yüklemesi**
+
+ Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin. 
+
+ Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
 
 Visual Studio yüklemenizin tamamlandıktan sonra devam etmek hazır olursunuz.
 
 ## <a name="get-started"></a>Kullanmaya başlayın
 
-C++ uygulamaları geliştirmek için Visual Studio IDE'yi kullanmaya başlamak için her sırada bu konuların üzerinden çalışır. Her biri, önceki konular, tamamlandı iş oluşturur:
+C++ uygulamaları geliştirmek için Visual Studio IDE'yi kullanmaya başlamak için her birini sırayla Bu konular çalışır. Her biri, önceki konu başlıklarında tamamladığı işi üzerine inşa edilmiştir:
 
 - [İzlenecek Yol: Projelerle ve Çözümlerle Çalışma (C++)](../ide/walkthrough-working-with-projects-and-solutions-cpp.md)
 
@@ -49,8 +61,8 @@ C++ uygulamaları geliştirmek için Visual Studio IDE'yi kullanmaya başlamak i
 
 ## <a name="next-steps"></a>Sonraki adımlar
 
-Bu izlenecek yollar tamamladıktan sonra kendi projelerinizi oluşturmaya başlamak hazırsınız. Daha fazla bilgi ve kaynaklar Visual C++ geliştirme için bkz: [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md).
+Bu izlenecek yollar tamamladığınızda, kendi projenizi oluşturmaya başlamak hazırsınız. Daha fazla bilgi ve kaynaklar için Visual C++ geliştirme için bkz. [Visual Studio'da Visual C++](../visual-cpp-in-visual-studio.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Visual Studio ile Geliştirmeye Başlarken](/visualstudio/ide/get-started-developing-with-visual-studio)
+[Visual Studio ile geliştirmeye başlayın](/visualstudio/ide/get-started-developing-with-visual-studio)

@@ -1,5 +1,5 @@
 ---
-title: Visual Studio'da C++ desteği yükleme | Microsoft Docs
+title: Visual Studio 2017'de C++ desteği yükleme | Microsoft Docs
 description: Visual C++ için Visual Studio desteği yükleme
 ms.custom: mvc
 ms.date: 06/21/2018
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfc91d25e4c843eaa004b59eab076bcfbe188253
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4ee0763608edde0f7ceff81983a324190b605ff7
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465273"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130897"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
 
-İndirilen ve henüz Visual Studio ve Visual C++ Araçları yüklü olmayan, kullanmaya nasıl başlayacağınızı aşağıda verilmiştir.
+İndirilen ve henüz Visual Studio 2017 ve Visual C++ Araçları yüklü olmayan, kullanmaya nasıl başlayacağınızı aşağıda verilmiştir.
 
 ## <a name="prerequisites"></a>Önkoşullar
 
@@ -35,7 +35,13 @@ ms.locfileid: "42465273"
 
 Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için bkz: [Visual Studio ürün ailesi sistem gereksinimleri](/visualstudio/productinfo/vs2017-system-requirements-vs). Yükleyici seçenekleri için ne kadar disk alanı gereklidir bildirir.
 
-## <a name="installation"></a>Yükleme
+## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 yüklemesi
+
+ Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin. 
+
+ Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
+
+## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi
 
 1. Windows için en son Visual Studio 2017 Yükleyicisi'ni indirin.
 

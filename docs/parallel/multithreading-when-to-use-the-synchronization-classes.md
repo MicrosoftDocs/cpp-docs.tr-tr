@@ -1,7 +1,7 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: Eşitleme sınıflarını kullanma zamanı | Microsoft Docs'
+title: 'Çoklu iş parçacığı kullanımı: Eşitleme MFC sınıflarını kullanmak ne zaman | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -21,14 +21,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3556bace6c578edec8eaedffb528d21cb1644f5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d88bb98388aaedac9499ab91ad94bef085c0b702
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606070"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132272"
 ---
-# <a name="multithreading-when-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıfları Ne Zaman Kullanılır?
+# <a name="multithreading-when-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: Ne zaman MFC eşitleme sınıflarını kullanma
 MFC ile sunulan çok iş parçacıklı sınıfları iki kategoriye ayrılır: eşitleme nesneleri ([CSyncObject](../mfc/reference/csyncobject-class.md), [CSemaphore](../mfc/reference/csemaphore-class.md), [CMutex](../mfc/reference/cmutex-class.md), [ CCriticalSection](../mfc/reference/ccriticalsection-class.md), ve [CEvent](../mfc/reference/cevent-class.md)) ve eşitleme erişim nesneleri ([CMultiLock](../mfc/reference/cmultilock-class.md) ve [CSingleLock](../mfc/reference/csinglelock-class.md)).  
   
 Eşitleme sınıfları, kaynak bütünlüğünü sağlamak için bir kaynağa erişim denetlenmesi kullanılır. Eşitleme erişim sınıfları, denetlenen bu kaynaklara erişmek için kullanılır. Bu konu ne zaman her sınıf kullanılacağını açıklar.  
@@ -61,8 +61,8 @@ Bu örnek uygulama, üç tür eşitleme sınıfları kullanır. Aynı anda incel
  
 Hangi eşitleme erişimi sınıfını kullanmak için daha kolay seçme. Uygulamanız yalnızca tek bir denetimli kaynak erişimi ile ilgili kullanırsanız `CSingleLock`. Bir dizi denetimli kaynak herhangi birine erişmesi gerekiyorsa kullanın `CMultiLock`. Örnek 1'de, `CSingleLock` her durumda belirli bir zamanda yalnızca bir kaynak gerektiğinden, kullanılabilirdi.  
   
-Eşitleme sınıfları nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../parallel/multithreading-how-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz: [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı C++ ve MFC ile](../parallel/multithreading-with-cpp-and-mfc.md).  
+Eşitleme sınıfları nasıl kullanıldığı hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](multithreading-how-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz: [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz: [çoklu iş parçacığı kullanımı C++ ve MFC ile](multithreading-with-cpp-and-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

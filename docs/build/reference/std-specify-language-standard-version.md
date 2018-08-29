@@ -1,5 +1,5 @@
 ---
-title: -std (dil standart sürümünü belirtin) | Microsoft Docs
+title: -std (dil standart sürümünü belirt) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/16/2017
 ms.topic: reference
@@ -14,57 +14,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fed80f0f9763b7e988c40a9d9f38f4e0f18eeb1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2b3254d61295e0cfe0fc398e4aa2a2f2a926dbb1
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378853"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130916"
 ---
-# <a name="std-specify-language-standard-version"></a>/Std (dil standart sürümünü belirtin)
+# <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)
 
-C++ dil özellikleri standart C++ dili belirtilen sürümünden etkinleştir desteklenir.
+C++ dil standardı'nın belirtilen sürümünden C++ dil özelliklerini etkinleştir desteklenmiyor.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> /Std: [c ++ 14 | c ++ 17 | c ++ son]
+> / Std: [c ++ 14 | c ++ 17 | c ++ latest]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Std** seçeneği sürüme özgü ISO C++ programlama dili standart özelliklerine kodunuzu derleme sırasında etkin denetlemek için kullanılır. Bu seçenek, belirli bir dil sürümü için uygun mevcut kodunuzu standart kesilebilir belirli özellikler için destek yeni dil ve Kitaplığı devre dışı bırakmanıza olanak tanır. Varsayılan olarak, **/Std: c ++ 14** belirtilirse, hangi devre dışı bırakır dil ve standart kitaplığı özellikleri C++ dili sonraki sürümlerini standart bulundu. Kullanım **/Std: c ++ 17** C ++ 17 standart özgü özellikler ve davranışı etkinleştirmek için. En son desteklenen derleyicisi ve standart kitaplığı özellikleri açıkça etkinleştirmek için **/Std: c ++ Son**.
+**/Std** seçenektir ve sonrasında Visual Studio 2017'de kullanılabilir. Sürüme özgü ISO C++ programlama dili standart özelliklerine kodunuzun derleme sırasında etkin denetlemek için kullanılır. Bu seçenek, belirli bir dil sürümüne uyan mevcut kod standart kesme belirli özellikler için destek yeni dil ve kitaplığa devre dışı bırakmanıza olanak tanır. Varsayılan olarak, **/Std: c ++ 14** belirtilirse, hangi devre dışı bırakır dili ve standart kitaplık özellikleri C++ dilinin sonraki sürümlerde, standart bulunamadı. Kullanım **/Std: c ++ 17** C ++ 17 standart özgü özellikler ve davranışı etkinleştirmek için. En son desteklenen derleyici ve standart kitaplık özellikleri açıkça etkinleştirmek için **/Std: c ++ Son**.
 
-Varsayılan **/Std: c ++ 14** seçeneği Visual C++ derleyicisi tarafından uygulanan C ++ 14 özellikleri kümesi sağlar. Bu seçenek derleyicisi ve standart kitaplığı desteği değiştirilen özellikler için veya yeni dil standart Visual C++ Derleyici önceki sürümlerde zaten uygulanmış bazı C ++ 17 özellikleri hariç olmak üzere daha yeni sürümlerinde devre dışı bırakır. Visual Studio 2015 güncelleştirme 2'ten itibaren kullanılabilir özellikler üzerinde bağımlılıkları zaten gerçekleştirmişsiniz kullanıcılar için önemli değişiklikler önlemek için bu özellikler ne zaman etkin kalmaya devam **/Std: c ++ 14** seçeneği belirtildiğinde:
+Varsayılan **/Std: c ++ 14** seçeneği, Visual C++ derleyicisi tarafından uygulanan C ++ 14 özellikleri kümesini sağlar. Bu seçenek derleyici ve değiştirilen özellikler veya yeni dil standardı, önceki sürümlerinde Visual C++ derleyicisi, zaten uygulanmış bazı C ++ 17 özellikleri hariç olmak üzere daha yeni sürümlerinde standart kitaplığı desteği devre dışı bırakır. Visual Studio 2015 güncelleştirme 2'den itibaren kullanılabilir özelliklere bağımlılıkları zaten kullanımda kullanıcılar için önemli değişiklikler önlemek için bu özellikleri ne zaman etkin kalmaya devam **/Std: c ++ 14** seçeneği belirtildiğinde:
 
-- [Otomatik braced-init-listeleriyle için kurallar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
+- [İle küme ayraçlı başlatma listelerinde auto için kuralları](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n3922.html)
 
 - [TypeName şablon şablon parametrelerinde](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4051.html)
 
-- [Trigrafları kaldırma](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
+- [Trigrafları kaldırılıyor](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4086.html)
 
-- [Ad alanları ve numaralandırmalar için öznitelikler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
+- [Ad alanlarında ve numaralandırıcılarda için öznitelikler](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4266.html)
 
 - [U8 karakter değişmez değerleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
-Ek bilgi için hangi C ++ 14 ve C ++ 17 özellikleri ne zaman etkin **/Std: c ++ 14** olduğu belirtilen notları bkz [Visual C++ dili uygunluk](../../visual-cpp-language-conformance.md).
+Ek bilgi için hangi C ++ 14 ve C ++ 17 özellikleri üzerinde ne zaman etkin **/Std: c ++ 14** olduğundan belirtilen notları bkz [Visual C++ dil uyumluluğu](../../visual-cpp-language-conformance.md).
   
-**/Std: c ++ 17** seçeneği tam Visual C++ derleyicisi tarafından uygulanan C ++ 17 özellikler kümesi sağlar. Bu seçenek, C ++ 17 sonra derleyicisi ve standart kitaplığı desteği değiştirilen özellikler için veya yeni C++ standart çalışma taslak ve hatasını güncelleştirmeleri sürümlerinde devre dışı bırakır.  
+**/Std: c ++ 17** seçeneği, Visual C++ derleyicisi tarafından uygulanan C ++ 17 özellikleri kümesini sağlar. Bu seçenek, C ++ 17 sonra derleyici ve değiştirilen özellikler veya yeni sürümlerinde C++ standart çalışma taslak ve hata güncelleştirmeleri standart kitaplığı desteği devre dışı bırakır.  
   
-**/Std: c ++ Son** seçeneği en izlemek için Visual C++ tarafından uygulanan C++ dili ve kitaplık özellikler kümesi sağlar C ++ 17 dahil edilmeyen yeni C ++ 20 çalışma taslak ve hatasını güncelleştirmelerini C++ standart. Post almak için bu anahtarı kullanın-C ++ 17 dil özellikleri derleyicisi ve standart kitaplığı tarafından desteklenir. Desteklenen Dil ve kitaplık özellikleri listesi için bkz: [Visual c++ yenilikleri](../../what-s-new-for-visual-cpp-in-visual-studio.md). **/Std: c ++ Son** seçeneği tarafından korumalı özellikleri etkinleştirmemeniz **/ Deneysel** geçin.  
+**/Std: c ++ Son** seçenek en çok izlemek için Visual C++ tarafından uygulanan C++ dil ve kitaplığa özellikler kümesi sağlar, ayrıca C ++ 17 bulunmayan C ++ 20 çalışma taslak ve hata güncel C++ standart. Post almak için bu anahtarı kullanın-C ++ 17 dil özellikleri standart kitaplık ve derleyici tarafından desteklenir. Desteklenen Dil ve kitaplık özelliklerinin listesi için bkz: [Visual C++ için Yenilikler](../../what-s-new-for-visual-cpp-in-visual-studio.md). **/Std: c ++ Son** seçeneği tarafından korunan özellikler sağlamaz **/ Deneysel** geçin.  
   
-**/Std** yürürlükte C++ derleme sırasında seçeneğini kullanarak algılanan [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) önişlemci makrosu. Daha fazla bilgi için bkz: [Önişlemci makroları](../../preprocessor/predefined-macros.md).
+**/Std** seçeneği geçerli bir C++ derleme sırasında kullanarak algılanamıyor [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) önişlemci makrosu. Daha fazla bilgi için [Önişlemci makroları](../../preprocessor/predefined-macros.md).
 
-**/Std: c ++ 14** ve **/Std: c ++ Son** seçeneklerdir Visual C++ 2015 güncelleştirme 3'te başlayarak bulunabilir. **/Std: c ++ 17** Visual C++ 2017 sürüm 15.3 başında bir seçenektir. Bazı C ++ 17 yukarıdaki standart belirtildiği gibi davranış etkin **/Std: c ++ 14** seçeneği, ancak diğer tüm C ++ 17 özellikleri etkindir **/Std: c ++ 17**.
+**/Std: c ++ 14** ve **/Std: c ++ Son** seçeneklerdir Visual C++ 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir. **/Std: c ++ 17** seçeneği olan Visual C++ 2017 sürüm 15.3 sonraki sürümlerinde kullanılabilir. Bazı C ++ 17 yukarıdaki standart belirtildiği gibi davranışı etkinleştirilir **/Std: c ++ 14** seçeneği yanı sıra, diğer tüm C ++ 17 özellikleri etkindir **/Std: c ++ 17**.
   
 > [!NOTE]
-> Visual C++ Derleyici sürümü veya güncelleştirme düzeyine bağlı olarak, belirli C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumluluğunu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual C++ 2017 RTM Derleyici tam olarak C ++ 14-uyumluluğunu desteklemez `constexpr`, ifade SFINAE ya da 2 aşamalı ad araması. C++ dili uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz: [Visual C++ dili uygunluk](../../visual-cpp-language-conformance.md). 
+> Visual C++ Derleyici sürümü veya güncelleştirme düzeyine bağlı olarak bazı C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumlu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual C++ 2017 RTM Derleyici tam C ++ 14-uyumlu desteklemez `constexpr`, Aşama 2 adı arama veya ifade SFINAE. C++ dil uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz. [Visual C++ dil uyumluluğu](../../visual-cpp-language-conformance.md). 
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
 2.  Seçin **yapılandırma özellikleri**, **C/C++**, **dil**.  
   
-3.  İçinde **C++ dili standart**, aşağı açılan denetiminden desteği, ardından seçin dil standart seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.  
+3.  İçinde **C++ dil standardı**, dil standardı açılır denetimden desteklemek ve ardından seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
   

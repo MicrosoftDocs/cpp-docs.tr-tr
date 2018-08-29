@@ -1,7 +1,7 @@
 ---
 title: Numaralandırmalar (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/01/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48f9328ef6a862ffc8888b99b16764978b0005c2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 00a1b940ad6c792abbb13ec91b7376b73b2be16b
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406259"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130956"
 ---
 # <a name="enumerations-c"></a>Numaralandırmalar [C++]
 Bir numaralandırma, numaralandırıcılar olarak bilinen adlandırılmış integral sabitleri kümesinden oluşan kullanıcı tanımlı bir tür ' dir.  
@@ -149,7 +149,8 @@ namespace ScopedEnumConversions
   
  Dikkat satır `hand = account_num;` hala daha önce gösterildiği gibi kapsamsız numaralandırmalar ile oluşan hataya neden. Bu, açık bir yayın ile izin verilir. Bununla birlikte, kapsamlı numaralandırmalar, denenen bir dönüştürme sonraki deyimi içinde `account_num = Suit::Hearts;`, artık açık bir yayın olmadan izin verilmez. 
 
-## <a name="enums-with-no-enumerators"></a>Numaralandırmalar ile hiçbir numaralandırıcıları
+## <a name="no_enumerators"></a> Numaralandırmalar ile hiçbir numaralandırıcıları
+
 **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): açık bir temel alınan türü ile hiçbir numaralandırıcılar enum (normal veya kapsamlı) tanımlayarak, aslında bir yeni ortaya çıkarabilir integral türü herhangi bir tür için örtük dönüştürme vardır. Yerleşik temel alınan türü yerine bu türü kullanarak, ince hatalar nedeniyle yanlışlıkla örtük dönüştürmeler tarafından olasılığını ortadan kaldırabilir.  
 
 

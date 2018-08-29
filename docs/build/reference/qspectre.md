@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a74c6c7c2ee7aab175d7e136e5cf02a8d9f8bfc
-ms.sourcegitcommit: bad2441d1930275ff506d44759d283d94cccd1c0
+ms.openlocfilehash: ec3509b71d78221c3e15607d34f674fc38d9f635
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39375883"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130995"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -32,7 +32,7 @@ Derleyici belirli Spectre değişkeni 1 güvenlik açıklarını gidermek için 
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Qspectre** seçeneği neden olan derleyiciye belirli azaltmak için yönergeler [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
+**/Qspectre** seçeneği bulunan Visual Studio 2017 sürüm 15.7 ve üzeri. Belirli azaltmak için yönergeler derleyiciye neden [Spectre güvenlik açıklarını](https://spectreattack.com/spectre.pdf). Olarak adlandırılan bu güvenlik açıklarına *kurgusal yürütme yan kanal saldırıları*, çok sayıda işletim sistemleri ve Intel, AMD, işlemcilerini dahil olmak üzere modern işlemciler etkiler ve ARM.
 
 **/Qspectre** seçeneği varsayılan olarak kapalıdır.
 

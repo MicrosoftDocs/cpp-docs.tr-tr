@@ -10,12 +10,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3708bce00b01ee796067bf91d99645cb61f19a53
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 9bce71c444426d5d1a2d5340c603118a09e8275f
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900706"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132249"
 ---
 # <a name="c-conformance-improvements-in-visual-studio-2017-versions-150-153improvements153-155improvements155-156improvements156-157improvements157-158update158"></a>Visual Studio 2017 sürüm 15.0,'deki C++ uyumluluk geliştirmeleri [15.3](#improvements_153), [15.5](#improvements_155), [15.6](#improvements_156), [15.7](#improvements_157), [15,8](#update_158)
 
@@ -55,19 +55,19 @@ Aralık tabanlı const_iterator ve end() aynı türe ait nesneleri iade döngül
 
 ### <a name="constexpr-lambdas"></a>constexpr lambdaları
 
-Lambda ifadeleri artık sabit ifadelerde kullanılabilir. Daha fazla bilgi için [Constexpr Lambda](http://open-std.org/JTC1/SC22/WG21/docs/papers/2015/n4487.pdf).
+Lambda ifadeleri artık sabit ifadelerde kullanılabilir. Daha fazla bilgi için [C++ constexpr lambda ifadelerinde](cpp/lambda-expressions-constexpr.md).
 
 ### <a name="if-constexpr-in-function-templates"></a>constexpr işlevi şablonlarındaki
 
-Bir işlev şablonu içerebilir `if constexpr` derleme zamanı dallanma etkinleştirmek için deyimleri. Daha fazla bilgi için [, constexpr](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0128r1.html).
+Bir işlev şablonu içerebilir `if constexpr` derleme zamanı dallanma etkinleştirmek için deyimleri. Daha fazla bilgi için [, constexpr deyimleri](cpp/if-else-statement-cpp.md#if_constexpr).
 
 ### <a name="selection-statements-with-initializers"></a>Başlatıcıları olan seçim deyimleri
 
-Bir `if` deyimi bir değişkene deyimi içinde blok kapsamındaki tanıtan bir başlatıcı içerebilir. Daha fazla bilgi için [seçim deyimleri başlatıcısıyla](http://www.open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0305r1.html).
+Bir `if` deyimi bir değişkene deyimi içinde blok kapsamındaki tanıtan bir başlatıcı içerebilir. Daha fazla bilgi için [varsa deyimleri başlatıcısıyla](cpp/if-else-statement-cpp.md#if_with_init).
 
 ### <a name="maybeunused-and-nodiscard-attributes"></a>[[maybe_unused]] ve [[nodiscard]] öznitelikleri
 
-Bir varlık olmadığında uyarı Sessiz ya da işlev çağrısının dönüş değerini atılır halinde bir uyarı oluşturmak için yeni öznitelikler. Daha fazla bilgi için [maybe_unused özniteliği için ifadesi](http://open-std.org/JTC1/SC22/WG21/docs/papers/2016/p0212r0.pdf) ve [kullanılmayan, nodiscard ve fallthrough özniteliklerin teklif](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0068r0.pdf).
+Bir varlık olmadığında uyarı Sessiz ya da işlev çağrısının dönüş değerini atılır halinde bir uyarı oluşturmak için yeni öznitelikler. Daha fazla bilgi için [c++ öznitelikleri](cpp/attributes.md).
 
 ### <a name="using-attribute-namespaces-without-repetition"></a>Yineleme olmadan öznitelik ad alanlarını kullanma
 
@@ -75,11 +75,11 @@ Bir öznitelik listesinde yalnızca tek bir ad tanımlayıcısı etkinleştirmek
 
 ### <a name="structured-bindings"></a>Yapılandırılmış bağlamalar
 
-Artık, tek bir bildirimde değer bir dizi, std::tuple veya std::pair veya tüm ortak statik olmayan veri üyelerine sahip olduğunda, bileşenleri için ayrı ayrı adlara sahip bir değer depolamak için de mümkündür. Daha fazla bilgi için [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf).
+Artık, tek bir bildirimde değer bir dizi, std::tuple veya std::pair veya tüm ortak statik olmayan veri üyelerine sahip olduğunda, bileşenleri için ayrı ayrı adlara sahip bir değer depolamak için de mümkündür. Daha fazla bilgi için [yapılandırılmış bağlamalar](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/p0144r0.pdf) ve [birden çok değer döndüren bir işlevden](cpp/functions-cpp.md#multi_val).
 
 ### <a name="construction-rules-for-enum-class-values"></a>Enum sınıfı değerleri için oluşturma kuralları
 
-Aynı zamanda hiçbir Numaralandırıcı, tanımını sunar ve bir liste başlatma söz dizimi kaynak kullanması durumunda şimdi bir örtük/olmayan-daraltma dönüşümü kapsamlı bir sabit listesinin temel alınan türünden numaralandırma kendisi için yoktur. Daha fazla bilgi için [oluşturma kuralları sabit listesi için değerleri sınıfı](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf).
+Aynı zamanda hiçbir Numaralandırıcı, tanımını sunar ve bir liste başlatma söz dizimi kaynak kullanması durumunda şimdi bir örtük/olmayan-daraltma dönüşümü kapsamlı bir sabit listesinin temel alınan türünden numaralandırma kendisi için yoktur. Daha fazla bilgi için [oluşturma kuralları sabit listesi için değerleri sınıfı](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0138r2.pdf) ve [numaralandırmalar](cpp/enumerations-cpp.md#no_enumerators).
 
 ### <a name="capturing-this-by-value"></a>Yakalama \*bu değere göre
 
@@ -212,6 +212,8 @@ struct B : A {
 
 B b(42L); // now calls B(int)
 ```
+
+Daha fazla bilgi için [oluşturucular](cpp/constructors-cpp.md#inheriting_constructors).
 
 ### <a name="c17-extended-aggregate-initialization"></a>C ++ 17 genişletilmiş toplu başlatma
 

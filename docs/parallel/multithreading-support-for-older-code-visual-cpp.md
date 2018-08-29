@@ -1,7 +1,7 @@
 ---
 title: Eski kod (Visual C++) için çoklu iş parçacığı desteği | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -20,25 +20,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c911ff2f0dcd43a6f07144f893b91f3a97c6708b
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7b1b301186036460acc07a526267503da8b97678
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465605"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132108"
 ---
 # <a name="multithreading-support-for-older-code-visual-c"></a>Eski Kod için Çoklu İş Parçacığı Kullanma Desteği (Visual C++)
 Visual C++ birden çok eşzamanlı iş parçacığı aynı anda çalışan yürütme sahip olmanızı sağlar. İle çoklu iş parçacığı, arka plan görevleri, eşzamanlı giriş akışları yönetme, bir kullanıcı arabirimi ve daha fazlasını yönetin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  
-[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)  
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)  
 Microsoft Windows ile çoklu iş parçacığı kullanan uygulamalar oluşturmak için destek sağlar.  
   
-[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)  
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)  
 İşlemler ve iş parçacıklarının ne olduğunu ve MFC yaklaşımının ne açıklar çoklu iş parçacığı kullanımı olan.  
   
-[Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](../parallel/multithreading-and-locales.md)  
+[Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar](multithreading-and-locales.md)  
 Hem C çalışma zamanı kitaplığı, hem de C++ Standart Kitaplığı çok iş parçacıklı bir uygulamada bulunan yerel ayar işlevselliği kullanıldığında ortaya çıkan sorunları açıklar.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  

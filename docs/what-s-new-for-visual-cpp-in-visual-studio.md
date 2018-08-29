@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9e432cb098c17a3ac03e5b394f304578bbe06f1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6d3a3ec1fec213cc6fa1bb5dc0ebfdadbe7d22b2
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590412"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131726"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -27,13 +27,10 @@ Visual Studio 2017, Visual C++ ortamına birçok güncelleştirme ve düzeltme g
 ### <a name="c-conformance-improvements"></a>C++ uyumluluk geliştirmeleri
 
 Bu sürümde, C++ derleyicisini ve standart kitaplığını C++11 ve C++14 özellikleri için desteği iyileştirecek, ayrıca C++17 standardına eklenmesi beklenen bazı özellikler için ön destek sağlayacak şekilde güncelleştirdik. Ayrıntılı bilgi için bkz. [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md).
-**Visual Studio 2017 sürüm 15.5**:  
 
-   Derleyici, yaklaşık %75 yapılandırılmış bağlamalar dahil olmak üzere C ++ 17'de yeni özellikleri destekler `constexpr` lambda ifadeleri, `if constexpr`, satır içi değişkenler, katlama ifadeleri ve ekleme `noexcept` tür sistemine. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)
+**Visual Studio 2017 sürüm 15.5**: derleyicinin yaklaşık %75 yapılandırılmış bağlamalar dahil olmak üzere C ++ 17'de yeni özellikleri destekler `constexpr` lambda ifadeleri, `if constexpr`, satır içi değişkenler, katlama ifadeleri ve ekleme `noexcept` için tür sistemi. Bunlar altında kullanılabilir **/Std: c ++ 17** seçeneği. Daha fazla bilgi için [Visual Studio 2017'deki C++ uyumluluk geliştirmeleri](cpp-conformance-improvements-2017.md)
 
-**Visual Studio 2017 sürüm 15.7**:  
-
-Visual Studio'da sürüm 15.7 MSVC derleyici araç takımı artık C++ standardı ile uyumludur. Daha fazla bilgi için [Announcing: MSVC uyan C++ standardına](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) ve [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md).
+**Visual Studio 2017 sürüm 15.7**: MSVC derleyici Araç Seti Visual Studio 15.7 Sürüm artık C++ standardı ile uyumlu. Daha fazla bilgi için [Announcing: MSVC uyan C++ standardına](https://blogs.msdn.microsoft.com/vcblog/2018/05/07/announcing-msvc-conforms-to-the-c-standard/) ve [Visual C++ dil uyumluluğu](visual-cpp-language-conformance.md).
 
 ### <a name="new-compiler-options"></a>Yeni derleyici seçenekleri
 

@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0506c7f4efd288417c8fbdcd4784446651c362ac
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 1e6bef9e707636d18ed5ecb78098661a753111ba
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466267"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132187"
 ---
 # <a name="multithreading-and-locales"></a>Çoklu İş Parçacığı Kullanımı ve Yerel Ayarlar
 Hem C Çalışma Zamanı Kitaplığı hem de C++ Standart Kitaplığı programınızın yerel ayarı değiştirmek için destek sağlar. Bu konu, çok iş parçacıklı bir uygulamada hem kitaplıkların yerel ayar işlevselliği kullanıldığında ortaya çıkan sorunları açıklar.  
@@ -446,7 +446,7 @@ unsigned __stdcall RunThreadB(void *params)
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 
-[Eski kod (Visual C++) için çoklu iş parçacığı desteği](../parallel/multithreading-support-for-older-code-visual-cpp.md)   
+[Eski kod (Visual C++) için çoklu iş parçacığı desteği](multithreading-support-for-older-code-visual-cpp.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
 [_configthreadlocale](../c-runtime-library/reference/configthreadlocale.md)   
 [setlocale](../preprocessor/setlocale.md)   

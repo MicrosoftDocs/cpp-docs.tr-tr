@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 643347915e97f1c803047f91b72311c5642e6eef
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 5eadb13e71e65e07c807812ad00fc1989c3a19f9
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879565"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132213"
 ---
 # <a name="date-and-time"></a>Tarih ve Saat
 MFC, tarihler ve saatler ile çalışma birkaç farklı yolunu destekler. Bu güncelleştirmeler şunlardır:  
@@ -34,8 +34,6 @@ MFC, tarihler ve saatler ile çalışma birkaç farklı yolunu destekler. Bu gü
 -   Otomasyon için destek [DATE veri türü](../atl-mfc-shared/date-type.md). Tarih desteklediği tarih, saat ve tarih/saat değerleri. [COleDateTime](../atl-mfc-shared/reference/coledatetime-class.md) ve [COleDateTimeSpan](../atl-mfc-shared/reference/coledatetimespan-class.md) sınıfları bu işlevselliğini kapsüller. Birlikte çalıştıkları [COleVariant](../mfc/reference/colevariant-class.md) kullanarak otomasyon desteği.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
-  
--   [Tarih ve Saat: Genel Amaçlı Sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)  
   
 -   [Tarih ve Saat: SYSTEMTIME Desteği](../atl-mfc-shared/date-and-time-systemtime-support.md)  
   

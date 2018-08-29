@@ -1,7 +1,7 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanmayı | Microsoft Docs'
+title: 'Çoklu iş parçacığı kullanımı: MFC eşitleme sınıflarının nasıl kullanılacağını | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -23,14 +23,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec2f873f1fc46ebac2e0f1714c8f46ebc10eac4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e36f63f74a0edc1f6cbcf28b85adceed954cce3d
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597895"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131268"
 ---
-# <a name="multithreading-how-to-use-the-synchronization-classes"></a>Çoklu İş Parçacığı Kullanımı: Eşitleme Sınıflarını Kullanma
+# <a name="multithreading-how-to-use-the-mfc-synchronization-classes"></a>Çoklu iş parçacığı kullanımı: nasıl MFC eşitleme sınıflarını kullanma
 İş parçacıkları arasında kaynak erişim eşitleme yaygın çok iş parçacıklı uygulamalarda yazılırken bir sorundur. İki veya daha fazla sorun aynı anda aynı verilere istenmeyen ve beklenmeyen sonuçlara yol açabilir, erişim iş parçacıkları. Örneğin, başka bir iş parçacığı aynı yapıya içeriğini okuyor sırasında bir iş parçacığı bir yapının içeriği güncelleştirme. Hangi verileri okuma iş parçacığında alacağı bilinmiyor: eski verileri, yeni yazılmış veri veya büyük olasılıkla ikisinin karışımı olamaz. MFC, çok sayıda eşitleme ve bu sorunun çözümüne yardımcı olmak için eşitleme erişim sınıfları sağlar. Bu konu, kullanılabilir sınıflar ve bunları tipik bir çok iş parçacıklı uygulamada iş parçacığı açısından güvenli sınıflar oluşturmak için nasıl kullanılacağını açıklar.  
   
 Tipik bir çok iş parçacıklı uygulamanın iş parçacıkları arasında paylaşılan bir kaynağı temsil eden bir sınıfı vardır. Düzgün bir şekilde tasarlanmış, tamamen iş parçacığı açısından güvenli sınıf herhangi bir eşitleme işlevi çağırmak gerektirmez. Her şey en iyi şekilde kullanmanız konusunda nasıl, bozulmuş değil hakkında sınıfı odaklanmasına olanak sağlayan bir sınıf için dahili olarak işlenir. Bir tam iş parçacığı açısından güvenli sınıf oluşturmak için bir etkili teknik kaynak sınıfına eşitleme sınıfını birleştirilmesidir. Eşitleme sınıfları paylaşılan sınıfına birleştirme, basit bir işlemdir.  
@@ -63,8 +63,8 @@ singleLock.Unlock();
   
 Bu yaklaşım dezavantajları sınıfı eklenen eşitleme nesneleri aynı sınıfa göre biraz daha yavaş olur ' dir. Ayrıca, birden fazla iş parçacığı nesnesi silebilir şansı varsa, birleştirilmiş bir yaklaşım her zaman çalışmayabilir. Bu durumda, ayrı bir eşitleme nesneleri korumak iyidir.  
   
-Farklı durumlarda kullanılacak hangi eşitleme sınıfını belirleme hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz. [eşitleme](http://msdn.microsoft.com/library/windows/desktop/ms686353) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı C++ ve MFC ile](../parallel/multithreading-with-cpp-and-mfc.md).  
+Farklı durumlarda kullanılacak hangi eşitleme sınıfını belirleme hakkında daha fazla bilgi için bkz [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](multithreading-when-to-use-the-synchronization-classes.md). Eşitleme hakkında daha fazla bilgi için bkz. [eşitleme](/windows/desktop/Sync/synchronization) Windows SDK. MFC çoklu iş parçacığı desteği hakkında daha fazla bilgi için bkz. [çoklu iş parçacığı kullanımı C++ ve MFC ile](multithreading-with-cpp-and-mfc.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

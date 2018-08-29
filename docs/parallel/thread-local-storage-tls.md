@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a71ed98e550d9db43a42289cfb26e3daaaf68027
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 43abbae434c21557a83463e1691e344123a940db
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466378"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132082"
 ---
 # <a name="thread-local-storage-tls"></a>İş Parçacığında Yerel Depolama (TLS)
 İş parçacığı yerel depolaması (TLS) tarafından verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığının iş parçacığına özgü verileri depolamak konumlar ayırabilirsiniz yöntemidir. Dinamik olarak bağlama (çalışma zamanı) iş parçacığına özgü verileri TLS API yoluyla desteklenir ([TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc).  Win32 ve Visual C++ derleyicisi artık statik olarak bağlı (yükleme zamanı) iş parçacığı başına veri mevcut API uygulamasına ek olarak destekler.  
@@ -117,4 +117,4 @@ Aşağıdaki yönergeler, statik olarak bildirme iş parçacığı yerel nesnele
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)   
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)   

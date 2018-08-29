@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5df81fa3d47005fc80bdb3b1c78cba050775cda6
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4ab667e372c8118a83b7a93444abbfbc5c19b6e0
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465535"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131524"
 ---
 # <a name="compiling-and-linking-multithread-programs"></a>Çoklu İş Parçacığı Kullanan Programları Derleme ve Bağlama
-Bounce.c programı sunulan [örnek çoklu iş parçacığı kullanan C programı](../parallel/sample-multithread-c-program.md).  
+Bounce.c programı sunulan [örnek çoklu iş parçacığı kullanan C programı](sample-multithread-c-program.md).  
   
 Programları derlenen varsayılan olarak birden çok iş parçacıklı.  
   
@@ -54,4 +54,4 @@ Programları derlenen varsayılan olarak birden çok iş parçacıklı.
   
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)
