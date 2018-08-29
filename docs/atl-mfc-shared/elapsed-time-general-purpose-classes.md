@@ -1,5 +1,5 @@
 ---
-title: 'Geçen süre: Genel amaçlı sınıfları | Microsoft Docs'
+title: 'Geçen zaman: Genel amaçlı sınıflar | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,24 +21,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff7ef11bb20124a05e2e85c408ce27de8f982546
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 98e3c07522ead22467455ce2d601270e7b624be0
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354272"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131620"
 ---
-# <a name="elapsed-time-general-purpose-classes"></a>Geçen süre: Genel amaçlı sınıfları
-Aşağıdaki yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu.  
-  
-#### <a name="to-calculate-elapsed-time"></a>Geçen süre hesaplamak için  
-  
-1.  Kullanım `CTime` ve `CTimeSpan` geçen süre gibi hesaplamak için nesneler:  
+# <a name="elapsed-time-general-purpose-classes"></a>Geçen zaman: Genel amaçlı sınıflar
+Aşağıdaki yordamda, iki arasındaki farkı hesaplamak gösterilmiştir `CTime` nesneleri ve get bir `CTimeSpan` sonucu. Kullanım `CTime` ve `CTimeSpan` geçen süreyi hesaplamak için aşağıdaki gibi nesneler:  
   
      [!code-cpp[NVC_ATLMFC_Utilities#174](../atl-mfc-shared/codesnippet/cpp/elapsed-time-general-purpose-classes_1.cpp)]  
   
-     Hesaplanan sonra `elapsedTime`, üye işlevlerini kullanabilirsiniz `CTimeSpan` geçen süre değerinin bileşenleri ayıklayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve Saat: Genel Amaçlı Sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+Hesaplanan sonra `elapsedTime`, üye işlevleri kullanabileceğinizi `CTimeSpan` geçen saat değerinin bileşenlerini ayıklamak için.  
 

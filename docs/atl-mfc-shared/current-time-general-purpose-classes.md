@@ -1,5 +1,5 @@
 ---
-title: 'Geçerli saat: Genel amaçlı sınıfları | Microsoft Docs'
+title: 'Geçerli zaman: Genel amaçlı sınıflar | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,37 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec71cf76f859457aa76e69b57b58db3940e974da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c99a2626c9f60c6407ca9b374bed9c83c981e5b3
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354601"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132013"
 ---
-# <a name="current-time-general-purpose-classes"></a>Geçerli saat: Genel amaçlı sınıfları
-Aşağıdaki yordam nasıl oluşturulacağını gösterir bir `CTime` nesne ve geçerli saati ile başlatılamadı.  
+# <a name="current-time-general-purpose-classes"></a>Geçerli zaman: Genel amaçlı sınıflar
+Aşağıdaki yordam nasıl oluşturulacağını gösterir. bir `CTime` nesne ve geçerli saati ile başlatır.  
   
-#### <a name="to-get-the-current-time"></a>Geçerli saati almak için  
+#### <a name="to-get-the-current-time"></a>Geçerli zamanı almak için  
   
-1.  Allocate bir `CTime` nesnesi, aşağıdaki gibi:  
+1.  Ayırma bir `CTime` nesnesini şu şekilde:  
   
      [!code-cpp[NVC_ATLMFC_Utilities#171](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_1.cpp)]  
   
     > [!NOTE]
-    >  Başlatılmamış `CTime` nesneleri için geçerli bir saat başlatılmadı.  
+    >  Başlatılmamış `CTime` nesneler için geçerli bir saat başlatılmadı.  
   
-2.  Çağrı `CTime::GetCurrentTime` işletim sisteminden geçerli saati alınacak işlev. Bu işlev döndüren bir `CTime` değerini ayarlamak için kullanılan nesne `CTime`aşağıdaki gibi:  
+2.  Çağrı `CTime::GetCurrentTime` işletim sisteminden geçerli zamanı almak için işlevi. Bu işlev döndürür bir `CTime` değerini ayarlamak için kullanılan nesne `CTime`gibi:  
   
      [!code-cpp[NVC_ATLMFC_Utilities#172](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_2.cpp)]  
   
-     Bu yana `GetCurrentTime` statik üye işlevinden olan `CTime` sınıfı, sınıf ve kapsam çözümü işleci adını adıyla nitelemeniz gerekir (`::`), `CTime::GetCurrentTime()`.  
+     Bu yana `GetCurrentTime` bir statik üye işlev olduğu `CTime` sınıf adı sınıf ve kapsam çözümleme işleci adıyla nitelemeniz gerekir (`::`), `CTime::GetCurrentTime()`.  
   
- Elbette, ana hatlarıyla iki adımı daha önce tek bir program ifadesine gibi birleştirilir:  
+ Elbette, iki ana hatlarıyla belirtilen adımları daha önce tek bir program ifadesi şu şekilde birleştirilir:  
   
  [!code-cpp[NVC_ATLMFC_Utilities#173](../atl-mfc-shared/codesnippet/cpp/current-time-general-purpose-classes_3.cpp)]  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tarih ve Saat: Genel Amaçlı Sınıflar](../atl-mfc-shared/date-and-time-general-purpose-classes.md)
+
 
 
 

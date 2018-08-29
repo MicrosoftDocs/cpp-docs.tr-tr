@@ -208,12 +208,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d905c8208bef98d584d3052c242de1ac127a4830
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 3314921d528624e5f08d9053f44f171d5c45b7f2
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209306"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132236"
 ---
 # <a name="ltalgorithmgt-functions"></a>&lt;algoritma&gt; işlevleri
 
@@ -255,15 +255,15 @@ Eşit ya da belirli bir koşulu karşılayan iki bitişik öğeyi arar.
 
 ```cpp
 template<class ForwardIterator>
-    ForwardIterator adjacent_find(
-        ForwardIterator first,
-        ForwardIterator last);
+ForwardIterator adjacent_find(
+    ForwardIterator first,
+    ForwardIterator last);
 
 template<class ForwardIterator , class BinaryPredicate>
-    ForwardIterator adjacent_find(
-        ForwardIterator first,
-        ForwardIterator last,
-        BinaryPredicate comp);
+ForwardIterator adjacent_find(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -352,10 +352,10 @@ Döndürür **true** koşul olduğunda verilen aralıktaki her bir öğede yok.
 
 ```cpp
 template<class InputIterator, class Predicate>
-    bool all_of(
-        InputIterator first,
-        InputIterator last,
-        BinaryPredicatecomp);
+bool all_of(
+    InputIterator first,
+    InputIterator last,
+    BinaryPredicatecomp);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -380,10 +380,10 @@ Döndürür **true** koşul olduğunda en az bir kez öğelerin belirtilen aral�
 
 ```cpp
 template<class InputIterator, class UnaryPredicate>
-    bool any_of(
-        InputIterator first,
-        InputIterator last,
-        UnaryPredicate comp);
+bool any_of(
+    InputIterator first,
+    InputIterator last,
+    UnaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -410,17 +410,17 @@ Belirtilen değere eşit sıralanmış bir aralıkta bir öğe olup olmadığın
 
 ```cpp
 template<class ForwardIterator, class Type>
-    bool binary_search(
-        ForwardIterator first,
-        ForwardIterator last,
-        const Type& value);
+bool binary_search(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value);
 
 template<class ForwardIterator,  class Type,  class BinaryPredicate>
-    bool binary_search(
-        ForwardIterator first,
-        ForwardIterator last,
-        const Type& value,
-        BinaryPredicate comp);
+bool binary_search(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value,
+    BinaryPredicate comp);
 
 ```
 
@@ -471,7 +471,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 
@@ -492,7 +492,7 @@ int main( )
     cout << ")" << endl;
 
     // default binary search for 10
-    if( binary_search(List1.begin(), List1.end(), 10) )
+    if ( binary_search(List1.begin(), List1.end(), 10) )
         cout << "There is an element in list List1 with a value equal to 10."
         << endl;
     else
@@ -501,7 +501,7 @@ int main( )
 
     // a binary_search under the binary predicate greater
     List1.sort(greater<int>());
-    if( binary_search(List1.begin(), List1.end(), 10, greater<int>()) )
+    if ( binary_search(List1.begin(), List1.end(), 10, greater<int>()) )
         cout << "There is an element in list List1 with a value greater than 10 "
         << "under greater than." << endl;
     else
@@ -511,7 +511,7 @@ int main( )
     // a binary_search under the user-defined binary predicate mod_lesser
     vector<int> v1;
 
-    for( auto i = -2; i <= 4; ++i )
+    for ( auto i = -2; i <= 4; ++i )
     {
         v1.push_back(i);
     }
@@ -519,11 +519,11 @@ int main( )
     sort(v1.begin(), v1.end(), mod_lesser);
 
     cout << "Ordered using mod_lesser, vector v1 = ( " ;
-    for( auto Iter : v1 )
+    for ( auto Iter : v1 )
         cout << Iter << " ";
     cout << ")" << endl;
 
-    if( binary_search(v1.begin(), v1.end(), -3, mod_lesser) )
+    if ( binary_search(v1.begin(), v1.end(), -3, mod_lesser) )
         cout << "There is an element with a value equivalent to -3 "
         << "under mod_lesser." << endl;
     else
@@ -538,10 +538,10 @@ Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, �
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-    OutputIterator copy(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator destBeg);
+OutputIterator copy(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator destBeg);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -628,10 +628,10 @@ Bir kaynak aralığındaki öğe değerlerini bir hedef aralığına atayarak, �
 
 ```cpp
 template<class BidirectionalIterator1, class BidirectionalIterator2>
-    BidirectionalIterator2 copy_backward(
-        BidirectionalIterator1 first,
-        BidirectionalIterator1 last,
-        BidirectionalIterator2 destEnd);
+BidirectionalIterator2 copy_backward(
+    BidirectionalIterator1 first,
+    BidirectionalIterator1 last,
+    BidirectionalIterator2 destEnd);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -715,11 +715,11 @@ int main() {
 
 ```cpp
 template<class InputIterator, class OutputIterator, class BinaryPredicate>
-    OutputIterator copy_if(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator dest,
-        Predicate pred);
+OutputIterator copy_if(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator dest,
+    Predicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -740,7 +740,7 @@ Eşittir bir çıkış yineleyici *dest* her öğe için koşulu karşılayan so
 
 Şablon işlevi değerlendirir
 
-`if (_Pred(*_First + N)) * dest++ = *(_First + N))`
+`if (pred(*_First + N)) * dest++ = *(_First + N))`
 
 her biri için bir kez `N` aralığında `[0, last - first)`, öğesinin artan değerleri için `N` en düşük değerden başlayarak. Varsa *dest* ve *ilk* depolama bölgelerini belirlemek *dest* aralığında olmamalıdır `[ first, last )`.
 
@@ -750,10 +750,10 @@ Belirtilen sayıda öğeyi kopyalar.
 
 ```cpp
 template<class InputIterator, class Size, class OutputIterator>
-    OutputIterator copy_n(
-        InputIterator first,
-        Size count,
-        OutputIterator dest);
+OutputIterator copy_n(
+    InputIterator first,
+    Size count,
+    OutputIterator dest);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -778,10 +778,10 @@ Değerleri belirtilen bir değerle eşleşen bir aralıktaki öğelerin sayısı
 
 ```cpp
 template<class InputIterator, class Type>
-    typename iterator_traits<InputIterator>::difference_type count(
-        InputIterator first,
-        InputIterator last,
-        const Type& val);
+typename iterator_traits<InputIterator>::difference_type count(
+    InputIterator first,
+    InputIterator last,
+    const Type& val);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -845,10 +845,10 @@ Değerleri, belirli bir koşulu karşılayan bir aralıktaki öğelerin sayısı
 
 ```cpp
 template<class InputIterator, class Predicate>
-    typename iterator_traits<InputIterator>::difference_type count_if(
-        InputIterator first,
-        InputIterator last,
-        Predicate pred);
+typename iterator_traits<InputIterator>::difference_type count_if(
+    InputIterator first,
+    InputIterator last,
+    Predicate pred);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -878,7 +878,7 @@ Bu şablonu işlev algoritmasının Genelleştirme, [sayısı](../standard-libra
 
 bool greater10(int value)
 {
-    return value >10;
+    return value > 10;
 }
 
 int main()
@@ -1063,17 +1063,17 @@ Algoritmanın karmaşıklığı, rasgele erişim yineleyicileri için logaritmik
 #include <string>
 using namespace std;
 
-template<class T> void dump_vector( const vector<T>& v, pair< typename vector<T>::iterator, typename vector<T>::iterator > range )
+template<class T> void dump_vector( const vector<T>& v, pair<typename vector<T>::iterator, typename vector<T>::iterator> range )
 {
     // prints vector v with range delimited by [ and ]
 
-    for( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
-        if( i == range.first )
+        if ( i == range.first )
         {
             cout << "[ ";
         }
-        if( i == range.second )
+        if ( i == range.second )
         {
             cout << "] ";
         }
@@ -1089,13 +1089,13 @@ template<class T> void equal_range_demo( const vector<T>& original_vector, T val
 
     sort( v.begin(), v.end() );
     cout << "Vector sorted by the default binary predicate <:" << endl << '\t';
-    for( vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
         cout << *i << " ";
     }
     cout << endl << endl;
 
-    pair< vector<T>::iterator, vector<T>::iterator > result
+    pair<vector<T>::iterator, vector<T>::iterator> result
         = equal_range( v.begin(), v.end(), val );
 
     cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
@@ -1109,13 +1109,13 @@ template<class T, class F> void equal_range_demo( const vector<T>& original_vect
 
     sort( v.begin(), v.end(), pred );
     cout << "Vector sorted by the binary predicate " << predname << ":" << endl << '\t';
-    for( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
+    for ( typename vector<T>::const_iterator i = v.begin(); i != v.end(); ++i )
     {
         cout << *i << " ";
     }
     cout << endl << endl;
 
-    pair< typename vector<T>::iterator, typename vector<T>::iterator > result
+    pair<typename vector<T>::iterator, typename vector<T>::iterator> result
         = equal_range( v.begin(), v.end(), val, pred );
 
     cout << "Result of equal_range with val = " << val << ":" << endl << '\t';
@@ -1140,12 +1140,12 @@ int main()
     vector<int> v1;
 
     // Constructing vector v1 with default less than ordering
-    for( int i = -1; i <= 4; ++i )
+    for ( int i = -1; i <= 4; ++i )
     {
         v1.push_back(i);
     }
 
-    for( int i =-3; i <= 0; ++i )
+    for ( int i =-3; i <= 0; ++i )
     {
         v1.push_back( i );
     }
@@ -1202,7 +1202,7 @@ Hedef aralığı geçerli olmalıdır; Tüm İşaretçiler tekrar başvurulabili
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -1400,7 +1400,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -1503,7 +1503,7 @@ ForwardIterator1 find_first_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*First1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
 
 *last1* çözümlenmesinde kullanılacak bir son öğeden aralığındaki konumu ele alan ileriye doğru yineleyici.
 
@@ -1511,7 +1511,7 @@ ForwardIterator1 find_first_of(
 
 *Soyadı2* eşlenmesi biri son öğeden aralığındaki konumu ele alan ileriye doğru yineleyici.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1539,7 +1539,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -1662,7 +1662,7 @@ Bu şablonu işlev algoritmasının Genelleştirme, [Bul](../standard-library/al
 using namespace std;
 
 template <typename S> void print(const S& s) {
-    for (const auto& p : s) {
+for (const auto& p : s) {
         cout << "(" << p << ") ";
     }
     cout << endl;
@@ -1775,7 +1775,7 @@ template<class InputIterator, class Function>
 Function for_each(
     InputIterator first,
     InputIterator last,
-    Function _Func);
+    Function func);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -1819,7 +1819,7 @@ public:
    }
 
    // The function call for the element to be multiplied
-   void operator ( ) ( Type& elem ) const
+   void operator( ) ( Type& elem ) const
    {
       elem *= Factor;
    }
@@ -1833,26 +1833,26 @@ private:
    long sum;      // The sum of the elements
 public:
    // Constructor initializes the value to multiply by
-   Average ( ) : num ( 0 ) , sum ( 0 )
+   Average( ) : num ( 0 ) , sum ( 0 )
    {
    }
 
    // The function call to process the next elment
-   void operator ( ) ( int elem ) \
+   void operator( ) ( int elem ) \
    {
       num++;      // Increment the element count
       sum += elem;   // Add the value to the partial sum
    }
 
    // return Average
-   operator double ( )
+   operator double( )
    {
       return  static_cast <double> (sum) /
       static_cast <double> (num);
    }
 };
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -1871,7 +1871,7 @@ int main( )
    cout << ")." << endl;
 
    // Using for_each to multiply each element by a Factor
-   for_each ( v1.begin ( ) , v1.end ( ) , MultValue<int> ( -2 ) );
+   for_each ( v1.begin( ), v1.end( ), MultValue<int> ( -2 ) );
 
    cout << "Multiplying the elements of the vector v1\n "
         <<  "by the factor -2 gives:\n v1mod1 = ( " ;
@@ -1881,7 +1881,7 @@ int main( )
 
    // The function object is templatized and so can be
    // used again on the elements with a different Factor
-   for_each (v1.begin ( ) , v1.end ( ) , MultValue<int> (5 ) );
+   for_each (v1.begin( ), v1.end( ), MultValue<int> (5 ) );
 
    cout << "Multiplying the elements of the vector v1mod\n "
         <<  "by the factor 5 gives:\n v1mod2 = ( " ;
@@ -1892,8 +1892,8 @@ int main( )
    // The local state of a function object can accumulate
    // information about a sequence of actions that the
    // return value can make available, here the Average
-   double avemod2 = for_each ( v1.begin ( ) , v1.end ( ) ,
-      Average ( ) );
+   double avemod2 = for_each ( v1.begin( ), v1.end( ),
+      Average( ) );
    cout << "The average of the elements of v1 is:\n Average ( v1mod2 ) = "
         << avemod2 << "." << endl;
 }
@@ -1950,7 +1950,7 @@ Tam olarak karmaşıklığı ile doğrusal ( `last`  -   `first`) gerektiği Olu
 #include <iostream>
 #include <ostream>
 
-int main( )
+int main()
 {
    using namespace std;
 
@@ -1960,7 +1960,7 @@ int main( )
    deque <int> deq1 ( 5 );
    deque <int>::iterator d1_Iter;
 
-   generate ( v1.begin ( ), v1.end ( ) , rand );
+   generate ( v1.begin( ), v1.end( ), rand );
 
    cout << "Vector v1 is ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -1968,7 +1968,7 @@ int main( )
    cout << ")." << endl;
 
    // Assigning random values to deque integer elements
-   generate ( deq1.begin ( ), deq1.end ( ) , rand );
+   generate ( deq1.begin( ), deq1.end( ), rand );
 
    cout << "Deque deq1 is ( " ;
    for ( d1_Iter = deq1.begin( ) ; d1_Iter != deq1.end( ) ; d1_Iter++ )
@@ -2125,7 +2125,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b;
@@ -2152,26 +2152,26 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b );
    vector <int>::iterator Iter2a,  Iter2b;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
-   v2a.pop_back ( );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
+   v2a.pop_back( );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is v2a = ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is v2b = ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
@@ -2179,28 +2179,28 @@ int main( )
    vector <int> v3a ( v1a ), v3b ( v1b ) ;
    vector <int>::iterator Iter3a, Iter3b;
    reverse (v3a.begin( ), v3a.end( ) );
-   v3a.pop_back ( );
-   v3a.pop_back ( );
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   v3a.pop_back( );
+   v3a.pop_back( );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is v3a = ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is v3b = ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To test for inclusion under an asscending order
-   // with the default binary predicate less <int> ( )
+   // with the default binary predicate less <int>( )
    bool Result1;
-   Result1 = includes ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) );
+   Result1 = includes ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ) );
    if ( Result1 )
       cout << "All the elements in vector v1b are "
            << "contained in vector v1a." << endl;
@@ -2211,8 +2211,8 @@ int main( )
    // To test for inclusion under descending
    // order specify binary predicate greater<int>( )
    bool Result2;
-   Result2 = includes ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) , greater <int> ( ) );
+   Result2 = includes ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ), greater <int>( ) );
    if ( Result2 )
       cout << "All the elements in vector v2b are "
            << "contained in vector v2a." << endl;
@@ -2223,8 +2223,8 @@ int main( )
    // To test for inclusion under a user
    // defined binary predicate mod_lesser
    bool Result3;
-   Result3 = includes ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   Result3 = includes ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), mod_lesser );
    if ( Result3 )
       cout << "All the elements in vector v3b are "
            << "contained under mod_lesser in vector v3a."
@@ -2311,7 +2311,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -2339,9 +2339,9 @@ int main( )
    // Constructing vector v2 with ranges sorted by greater
    vector <int> v2 ( v1 );
    vector <int>::iterator break2;
-   break2 = find ( v2.begin ( ) , v2.end ( ) , -5 );
-   sort ( v2.begin ( ) , break2 , greater<int> ( ) );
-   sort ( break2 , v2.end ( ) , greater<int> ( ) );
+   break2 = find ( v2.begin( ), v2.end( ), -5 );
+   sort ( v2.begin( ), break2 , greater<int>( ) );
+   sort ( break2 , v2.end( ), greater<int>( ) );
    cout << "Original vector v2 with subranges sorted by the\n "
         << "binary predicate greater is v2 = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
@@ -2351,9 +2351,9 @@ int main( )
    // Constructing vector v3 with ranges sorted by mod_lesser
    vector <int> v3 ( v1 );
    vector <int>::iterator break3;
-   break3 = find ( v3.begin ( ) , v3.end ( ) , -5 );
-   sort ( v3.begin ( ) , break3 , mod_lesser );
-   sort ( break3 , v3.end ( ) , mod_lesser );
+   break3 = find ( v3.begin( ), v3.end( ), -5 );
+   sort ( v3.begin( ), break3 , mod_lesser );
+   sort ( break3 , v3.end( ), mod_lesser );
    cout << "Original vector v3 with subranges sorted by the\n "
         << "binary predicate mod_lesser is v3 = ( " ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
@@ -2361,7 +2361,7 @@ int main( )
    cout << ")" << endl;
 
    vector <int>::iterator break1;
-   break1 = find (v1.begin ( ) , v1.end ( ) , -5 );
+   break1 = find (v1.begin( ), v1.end( ), -5 );
    inplace_merge ( v1.begin( ), break1, v1.end( ) );
    cout << "Merged inplace with default order,\n vector v1mod = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -2657,16 +2657,14 @@ Dosyanın ikinci sürümü, sağlamanızı bir `BinaryPredicate` döndüren işl
 
 ```cpp
 template<class ForwardIterator>
-    ForwardIterator is_sorted_until(
-        ForwardIterator first,
-        ForwardIterator last
-    );
+ForwardIterator is_sorted_until(
+    ForwardIterator first,
+    ForwardIterator last); 
 template<class ForwardIterator, class BinaryPredicate>
-    ForwardIterator is_sorted_until(
-        ForwardIterator first,
-        ForwardIterator last,
-        BinaryPredicate comp
-    );
+ForwardIterator is_sorted_until(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -2755,7 +2753,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    CInt c1 = 5, c2 = 1, c3 = 10;
    deque<CInt> deq1;
@@ -2772,7 +2770,7 @@ int main( )
    cout << " " << *d1_Iter << " )." << endl;
 
    // Exchanging first and last elements with iter_swap
-   iter_swap ( deq1.begin ( ) , --deq1.end ( ) );
+   iter_swap ( deq1.begin( ), --deq1.end( ) );
 
    cout << "The deque of CInts with first & last elements swapped is:\n deq1 = (";
    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
@@ -2781,7 +2779,7 @@ int main( )
    cout << " " << *d1_Iter << " )." << endl;
 
    // Swapping back first and last elements with swap
-   swap ( *deq1.begin ( ) , *(deq1.end ( ) -1 ) );
+   swap ( *deq1.begin( ), *(deq1.end( ) -1 ) );
 
    cout << "The deque of CInts with first & last elements swapped back is:\n deq1 = (";
    for ( d1_Iter = deq1.begin( ); d1_Iter != --deq1.end( ); d1_Iter++ )
@@ -2817,7 +2815,7 @@ int main( )
       cout << *d2_Iter << " ";
    cout << ")." << endl;
 
-   iter_swap ( v1.begin ( ) , deq2.begin ( ) );
+   iter_swap ( v1.begin( ), deq2.begin( ) );
 
    cout << "After exchanging first elements,\n vector v1 is: v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -2848,19 +2846,19 @@ Daha küçük olanı belirlemek için iki diziyi öğe öğe karşılaştırır.
 
 ```cpp
 template<class InputIterator1, class InputIterator2>
- bool lexicographical_compare(
-     InputIterator1  first1,
-     InputIterator1 Last1,
-     InputIterator2  first2,
-     InputIterator2 Last2  );
+bool lexicographical_compare(
+    InputIterator1  first1,
+    InputIterator1 Last1,
+    InputIterator2  first2,
+    InputIterator2 Last2  );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate>
 bool lexicographical_compare(
-     InputIterator1  first1,
-     InputIterator1 Last1,
-     InputIterator2  first2,
-     InputIterator2 Last2,
-     BinaryPredicate  comp  );
+    InputIterator1  first1,
+    InputIterator1 Last1,
+    InputIterator2  first2,
+    InputIterator2 Last2,
+    BinaryPredicate  comp  );
 
 ```
 
@@ -2906,7 +2904,7 @@ bool twice ( int elem1, int elem2 )
    return 2 * elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -2992,16 +2990,16 @@ Sıralı bir aralıkta belirtilen değere eşit ya da daha büyük bir değere s
 ```cpp
 template<class ForwardIterator, class Type>
 ForwardIterator lower_bound(
-     ForwardIterator first,
-     ForwardIterator last,
-     const Type& value );
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value );
 
 template<class ForwardIterator, class Type, class BinaryPredicate>
 ForwardIterator lower_bound(
-     ForwardIterator first,
-     ForwardIterator last,
-     const Type& value,
-     BinaryPredicate comp );
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& value,
+    BinaryPredicate comp );
 
 ```
 
@@ -3051,7 +3049,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 
@@ -3129,14 +3127,14 @@ Belirtilen bir aralıktaki öğeleri ilk öğenin en büyük olduğu ve onun iç
 ```cpp
 template<class RandomAccessIterator>
 void make_heap(
-     RandomAccessIterator first,
-     RandomAccessIterator last );
+    RandomAccessIterator first,
+    RandomAccessIterator last );
 
 template<class RandomAccessIterator, class BinaryPredicate>
 void make_heap(
-     RandomAccessIterator first,
-     RandomAccessIterator last,
-     BinaryPredicate comp );
+    RandomAccessIterator first,
+    RandomAccessIterator last,
+    BinaryPredicate comp );
 
 ```
 
@@ -3208,25 +3206,21 @@ int main() {
 
 ```cpp
 template<class Type>
-    const Type& max(
-        const Type& left,
-        const Type& right
-    );
+constexpr Type& max(
+    const Type& left,
+    const Type& right); 
 template<class Type, class Pr>
-    const Type& max(
-        const Type& left,
-        const Type& right,
-        BinaryPredicate comp
-    );
+constexpr Type& max(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
 template<class Type>
-    Type& max (
-        initializer_list<Type> _Ilist
-    );
+constexpr Type& max (
+    initializer_list<Type> ); 
 template<class Type, class Pr>
-    Type& max(
-        initializer_list<Type> _Ilist,
-        BinaryPredicate comp
-    );
+constexpr Type& max(
+    initializer_list<Type> ,
+    BinaryPredicate comp); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -3245,7 +3239,7 @@ Hiçbiri büyük değilse iki büyük, nesneleri; Bu durumda, ilk iki nesne dön
 
 ### <a name="remarks"></a>Açıklamalar
 
-`max` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını üzerinde çalışan bir işlev ihtiyacınız varsa, [max_element](../standard-library/algorithm-functions.md#max_element) yerine.
+`max` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını üzerinde çalışan bir işlev ihtiyacınız varsa, [max_element](../standard-library/algorithm-functions.md#max_element) yerine. Visual Studio 2017 tanır **constexpr** bir initializer_list aşırı üzerinde.
 
 ### <a name="example"></a>Örnek
 
@@ -3294,7 +3288,7 @@ bool abs_greater ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    int a = 6, b = -7;
    // Return the integer with the larger absolute value
@@ -3421,10 +3415,10 @@ Belirtilen bir aralıktaki en büyük öğenin geçtiği ilk yeri bulur, burada 
 
 ```cpp
 template<class ForwardIterator>
-ForwardIterator max_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last );
 
 template<class ForwardIterator, class BinaryPredicate>
-ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );
+constexpr ForwardIterator max_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp );
 
 ```
 
@@ -3492,7 +3486,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    // Searching a set container with elements of type CInt
    // for the maximum element
@@ -3510,7 +3504,7 @@ int main( )
    s1_Iter = --s1.end( );
    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = max_element ( s1.begin ( ) , s1.end ( ) );
+   s1_R1_Iter = max_element ( s1.begin( ), s1.end( ) );
 
    cout << "The largest element in s1 is: " << *s1_R1_Iter << endl;
    cout << endl;
@@ -3537,8 +3531,8 @@ int main( )
       cout << *v1_Iter << " ";
    cout << ")." << endl;
 
-   v1_R1_Iter = max_element ( v1.begin ( ) , v1.end ( ) );
-   v1_R2_Iter = max_element ( v1.begin ( ) , v1.end ( ), mod_lesser);
+   v1_R1_Iter = max_element ( v1.begin( ), v1.end( ) );
+   v1_R2_Iter = max_element ( v1.begin( ), v1.end( ), mod_lesser);
 
    cout << "The largest element in v1 is: " << *v1_R1_Iter << endl;
    cout << "The largest element in v1 under the mod_lesser"
@@ -3552,21 +3546,21 @@ int main( )
 
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
- OutputIterator merge(
-     InputIterator1 first1,
-     InputIterator1 last1,
-     InputIterator2 first2,
-     InputIterator2 last2,
-     OutputIterator result );
+OutputIterator merge(
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
 OutputIterator merge(
-     InputIterator1 first1,
-     InputIterator1 last1,
-     InputIterator2 first2,
-     InputIterator2 last2,
-     OutputIterator result,
-     BinaryPredicate comp );
+    InputIterator1 first1,
+    InputIterator1 last1,
+    InputIterator2 first2,
+    InputIterator2 last2,
+    OutputIterator result,
+    BinaryPredicate comp );
 
 ```
 
@@ -3645,49 +3639,49 @@ int main() {
 
    cout << "Original vector v1b with range sorted by the\n "
         << "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vector v2 with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a,  Iter2b, Iter2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vector v3 with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         << "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         << "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To merge inplace in ascending order with default binary
-   // predicate less <int> ( )
-   merge ( v1a.begin ( ) , v1a.end ( ) , v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // predicate less <int>( )
+   merge ( v1a.begin( ), v1a.end( ), v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Merged inplace with default order,\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
       cout << *Iter1 << " ";
@@ -3695,8 +3689,8 @@ int main() {
 
    // To merge inplace in descending order, specify binary
    // predicate greater<int>( )
-   merge ( v2a.begin ( ) , v2a.end ( ) , v2b.begin ( ) , v2b.end ( ) ,
-       v2.begin ( ) ,  greater <int> ( ) );
+   merge ( v2a.begin( ), v2a.end( ), v2b.begin( ), v2b.end( ),
+       v2.begin( ),  greater <int>( ) );
    cout << "Merged inplace with binary predicate greater specified,\n "
         << "vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != v2.end( ) ; Iter2++ )
@@ -3704,8 +3698,8 @@ int main() {
    cout << ")." << endl;
 
    // Applying A user-defined (UD) binary predicate mod_lesser
-   merge ( v3a.begin ( ) , v3a.end ( ) , v3b.begin ( ) , v3b.end ( ) ,
-       v3.begin ( ) ,  mod_lesser );
+   merge ( v3a.begin( ), v3a.end( ), v3b.begin( ), v3b.end( ),
+       v3.begin( ),  mod_lesser );
    cout << "Merged inplace with binary predicate mod_lesser specified,\n "
         << "vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != v3.end( ) ; Iter3++ )
@@ -3720,23 +3714,21 @@ int main() {
 
 ```cpp
 template<class Type>
-    const Type& min(
-        const Type& left,
-        const Type& right
-    );
+constexpr const Type& min(
+    const Type& left,
+    const Type& right); 
 template<class Type, class Pr>
-    const Type& min(
-        const Type& left,
-        const Type& right,
-        BinaryPredicate comp
-    );
+constexpr const Type& min(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
 template<class Type>
-    Type min ( initializer_list<Type> _Ilist
-    );
-template<class Type, class Pr>    Type min (
-        initializer_list<Type> _Ilist,
-        BinaryPredicate comp
-    );
+constexpr Type min( 
+    initializer_list<Type> ); 
+template<class Type, class Pr>
+constexpr Type min(
+    initializer_list<Type>,
+    BinaryPredicate comp); 
 
 ```
 
@@ -3756,7 +3748,7 @@ Hiçbiri daha az olmadığı sürece ikisinden küçük olanı, nesneleri; Bu du
 
 ### <a name="remarks"></a>Açıklamalar
 
-`min` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını kullanan bir işlev ihtiyacınız varsa, [min_element](../standard-library/algorithm-functions.md#min_element).
+`min` Algoritmasıdır parametre olarak geçirilen nesneleri etmeyle olağan dışı. Çoğu standart C++ Kitaplığı algoritmaları konumu parametre olarak geçirilen yineleyiciler tarafından belirtilen öğelerin bir aralığını üzerinde çalışır. Öğe aralığını kullanan bir işlev ihtiyacınız varsa, [min_element](../standard-library/algorithm-functions.md#min_element). [constexpr](../cpp/constexpr-cpp.md) üzerinde etkin `initializer_list` Visual Studio 2017'de aşırı yüklemeleri.
 
 ### <a name="example"></a>Örnek
 
@@ -3804,7 +3796,7 @@ bool mod_lesser ( int elem1, int elem2 )
     return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
     // Comparing integers directly using the min algorithm with
     // binary predicate mod_lesser & with default less than
@@ -3814,7 +3806,7 @@ int main( )
 
     cout << "The mod_lesser of the integers 6 & -7 is: "
         << result1 << "." << endl;
-     cout << "The lesser of the integers -7 & 7 is: "
+    cout << "The lesser of the integers -7 & 7 is: "
         << result2 << "." << endl;
     cout << endl;
 
@@ -3931,10 +3923,13 @@ Belirtilen bir aralıktaki en küçük öğenin geçtiği ilk yeri bulur, burada
 
 ```cpp
 template<class ForwardIterator>
-ForwardIterator min_element(ForwardIterator first, ForwardIterator last );
+constexpr ForwardIterator min_element(ForwardIterator first, ForwardIterator last );
 
 template<class ForwardIterator, class BinaryPredicate>
-ForwardIterator min_element(ForwardIterator first, ForwardIterator last, BinaryPredicate comp);
+constexpr ForwardIterator min_element(
+    ForwardIterator first,
+    ForwardIterator last,
+    BinaryPredicate comp);
 
 ```
 
@@ -4020,7 +4015,7 @@ int main()
    s1_Iter = --s1.end( );
    cout << " " << *s1_Iter << " )." << endl;
 
-   s1_R1_Iter = min_element ( s1.begin ( ) , s1.end ( ) );
+   s1_R1_Iter = min_element ( s1.begin( ), s1.end( ) );
 
    cout << "The smallest element in s1 is: " << *s1_R1_Iter << endl;
    cout << endl;
@@ -4047,8 +4042,8 @@ int main()
       cout << *v1_Iter << " ";
    cout << ")." << endl;
 
-   v1_R1_Iter = min_element ( v1.begin ( ) , v1.end ( ) );
-   v1_R2_Iter = min_element ( v1.begin ( ) , v1.end ( ), mod_lesser);
+   v1_R1_Iter = min_element ( v1.begin( ), v1.end( ) );
+   v1_R2_Iter = min_element ( v1.begin( ), v1.end( ), mod_lesser);
 
    cout << "The smallest element in v1 is: " << *v1_R1_Iter << endl;
    cout << "The smallest element in v1 under the mod_lesser"
@@ -4072,18 +4067,14 @@ Tarafından gerçekleştirilen işi yapar `min_element` ve `max_element` tek bir
 
 ```cpp
 template<class ForwardIterator>
-    pair< ForwardIterator, ForwardIterator >
-        minmax_element(
-            ForwardIterator  first,
-            ForwardIterator Last
-                 );
+constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
+    ForwardIterator first,
+    ForwardIterator Last); 
 template<class ForwardIterator, class BinaryPredicate>
-    pair< ForwardIterator, ForwardIterator >
-        minmax_element(
-            ForwardIterator  first,
-            ForwardIterator Last,
-            BinaryPredicate  comp
-                );
+constexpr pair<ForwardIterator, ForwardIterator> minmax_element(
+    ForwardIterator  first,
+    ForwardIterator Last,
+    BinaryPredicate  comp); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -4120,26 +4111,21 @@ Değiştirir dışında ikinci şablon işlevi aynı şekilde davranır `operato
 
 ```cpp
 template<class Type>
-    pair<const Type&, const Type&>
-        minmax(
-            const Type& left,
-            const Type& right
-        );
+constexpr pair<const Type&, const Type&> minmax(
+    const Type& left,
+    const Type& right); 
 template<class Type, class BinaryPredicate>
-    pair<const Type&, const Type&>
-        minmax(
-            const Type& left,
-            const Type& right,
-            BinaryPredicate comp
-        );
-template<class Type>     pair<Type&, Type&>         minmax(
-            initializer_list<Type> _Ilist
-        );
+constexpr pair<const Type&, const Type&> minmax(
+    const Type& left,
+    const Type& right,
+    BinaryPredicate comp); 
+template<class Type>
+ constexpr pair<Type&, Type&> minmax(
+    initializer_list<Type> ); 
 template<class Type, class BinaryPredicate>
-    pair<Type&, Type&>         minmax(
-            initializer_list<Type> _Ilist,
-            BinaryPredicate comp
-        );
+constexpr pair<Type&, Type&> minmax(
+    initializer_list<Type>,
+    BinaryPredicate comp); 
 
 ```
 
@@ -4173,33 +4159,33 @@ Bunlar değiştirir hariç, kalan şablon işlevleri aynı şekilde davranır *s
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2 );
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     BinaryPredicate Comp );
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    BinaryPredicate Comp );
 
 //C++14
 template<class InputIterator1, class InputIterator2>
 pair<InputIterator1, InputIterator2>>
 mismatch(
     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     InputIterator2 Last2 );
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    InputIterator2 Last2 );
 
 template<class InputIterator1, class InputIterator2, class BinaryPredicate> pair<InputIterator1, InputIterator2>>
 mismatch(
-     InputIterator1 First1,
-     InputIterator1 Last1,
-     InputIterator2 First2,
-     InputIterator2 Last2,
-     BinaryPredicate Comp);
+    InputIterator1 First1,
+    InputIterator1 Last1,
+    InputIterator2 First2,
+    InputIterator2 Last2,
+    BinaryPredicate Comp);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -4331,11 +4317,10 @@ Belirtilen aralıkla ilişkili öğeleri taşı.
 
 ```cpp
 template<class InputIterator, class OutputIterator>
-    OutputIterator move(
-        InputIterator first,
-        InputIterator last,
-        OutputIterator dest
-                  );
+OutputIterator move(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator dest); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -4456,7 +4441,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 };
 
-int main( )
+int main()
 {
    // Reordering the elements of type CInt in a deque
    // using the prev_permutation algorithm
@@ -4475,7 +4460,7 @@ int main( )
    d1_Iter = --deq1.end( );
    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = next_permutation ( deq1.begin ( ) , deq1.end ( ) );
+   deq1Result = next_permutation ( deq1.begin( ), deq1.end( ) );
 
    if ( deq1Result )
       cout << "The lexicographically next permutation "
@@ -4508,7 +4493,7 @@ int main( )
       cout << *Iter1 << " ";
    cout << ")." << endl;
 
-   next_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+   next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
    cout << "After the first next_permutation, vector v1 is:\n v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -4517,7 +4502,7 @@ int main( )
 
    int iii = 1;
    while ( iii <= 5 ) {
-      next_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+      next_permutation ( v1.begin( ), v1.end( ), mod_lesser );
       cout << "After another next_permutation of vector v1,\n v1 =   ( " ;
       for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
          cout << *Iter1  << " ";
@@ -4679,17 +4664,17 @@ Bir aralıktaki daha küçük öğelerin belirtilen sayısını azalmayan şekil
 
 ```cpp
 template<class RandomAccessIterator>
-   void partial_sort(
-      RandomAccessIterator first,
-      RandomAccessIterator sortEnd,
-      RandomAccessIterator last);
+void partial_sort(
+    RandomAccessIterator first,
+    RandomAccessIterator sortEnd,
+    RandomAccessIterator last);
 
 template<class RandomAccessIterator, class BinaryPredicate>
-   void partial_sort(
-      RandomAccessIterator first,
-      RandomAccessIterator sortEnd,
-      RandomAccessIterator last
-      BinaryPredicate comp);
+void partial_sort(
+    RandomAccessIterator first,
+    RandomAccessIterator sortEnd,
+    RandomAccessIterator last
+    BinaryPredicate comp);
 
 ```
 
@@ -4727,7 +4712,7 @@ bool UDgreater ( int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -4798,11 +4783,11 @@ RandomAccessIterator partial_sort_copy(
 
 template<class InputIterator, class RandomAccessIterator, class BinaryPredicate>
 RandomAccessIterator partial_sort_copy(
-     InputIterator first1,
-     InputIterator last1,
-     RandomAccessIterator first2,
-     RandomAccessIterator last2,
-     BinaryPredicate comp);
+    InputIterator first1,
+    InputIterator last1,
+    RandomAccessIterator first2,
+    RandomAccessIterator last2,
+    BinaryPredicate comp);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -4815,7 +4800,7 @@ RandomAccessIterator partial_sort_copy(
 
 *Soyadı2* konumu bir son öğeden sıralanmış bir hedef aralıktaki ele alan bir rasgele erişim yineleyicisi.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4909,10 +4894,10 @@ Bir aralıktaki öğeleri, onları karşılamada yetersiz koşulu önceleyen bir
 
 ```cpp
 template<class BidirectionalIterator, class Predicate>
-   BidirectionalIterator partition(
-      BidirectionalIterator first,
-      BidirectionalIterator last,
-      Predicate comp);
+BidirectionalIterator partition(
+    BidirectionalIterator first,
+    BidirectionalIterator last,
+    Predicate comp);
 
 ```
 
@@ -4946,10 +4931,10 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) uygulamalarının *comp*
 #include <iostream>
 
 bool greater5 ( int value ) {
-   return value >5;
+   return value > 5;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2;
@@ -4981,14 +4966,13 @@ Bir koşul olduğu öğeleri kopyalar **true** bir hedef ve koşulun **false** d
 
 ```cpp
 template<class InputIterator, class OutputIterator1, class OutputIterator2, class Predicate>
-    pair<OutputIterator1, OutputIterator2>
-        partition_copy(
-            InputIterator first,
-            InputIterator last,
-            OutputIterator1 dest1,
-            OutputIterator2 dest2,
-            Predicate pred
-        );
+pair<OutputIterator1, OutputIterator2>
+    partition_copy(
+    InputIterator first,
+    InputIterator last,
+    OutputIterator1 dest1,
+    OutputIterator2 dest2,
+    Predicate pred); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -5013,11 +4997,10 @@ Koşulu karşılamayan verili aralıktaki ilk öğeyi döndürür. Öğeler koş
 
 ```cpp
 template<class ForwardIterator, class Predicate>
-    ForwardIterator partition_point(
-        ForwardIterator first,
-        ForwardIterator last,
-        Predicate comp
-    );
+ForwardIterator partition_point(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate comp); 
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -5085,7 +5068,7 @@ Karmaşıklığı en fazla günlük gerektiren Logaritmik (* Soyadı - *) karş�
 #include <functional>
 #include <iostream>
 
-int main( )  {
+int main()  {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1, Iter2;
@@ -5143,15 +5126,15 @@ Bir aralıktaki öğeleri yeniden sıralar, böylece, önceki anlamı bir ikili 
 
 ```cpp
 template<class BidirectionalIterator>
-   bool prev_permutation(
-      BidirectionalIterator first,
-      BidirectionalIterator last);
+bool prev_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last);
 
 template<class BidirectionalIterator, class BinaryPredicate>
-   bool prev_permutation(
-      BidirectionalIterator first,
-      BidirectionalIterator last,
-      BinaryPredicate comp);
+bool prev_permutation(
+    BidirectionalIterator first,
+    BidirectionalIterator last,
+    BinaryPredicate comp);
 
 ```
 
@@ -5236,7 +5219,7 @@ int main() {
    d1_Iter = --deq1.end( );
    cout << " " << *d1_Iter << " )." << endl;
 
-   deq1Result = prev_permutation ( deq1.begin ( ) , deq1.end ( ) );
+   deq1Result = prev_permutation ( deq1.begin( ), deq1.end( ) );
 
    if ( deq1Result )
       cout << "The lexicographically previous permutation "
@@ -5267,7 +5250,7 @@ int main() {
       cout << *Iter1 << " ";
    cout << ")." << endl;
 
-   prev_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+   prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
 
    cout << "After the first prev_permutation, vector v1 is:\n v1 = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -5276,7 +5259,7 @@ int main() {
 
    int iii = 1;
    while ( iii <= 5 ) {
-      prev_permutation ( v1.begin ( ) , v1.end ( ) , mod_lesser );
+      prev_permutation ( v1.begin( ), v1.end( ), mod_lesser );
       cout << "After another prev_permutation of vector v1,\n v1 =   ( " ;
       for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ;Iter1 ++ )
          cout << *Iter1  << " ";
@@ -5358,7 +5341,7 @@ Karmaşıklığı en fazla günlük gerektiren Logaritmik ( *- Soyadı*) karşı
 #include <functional>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2;
@@ -5462,7 +5445,7 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitlik karşılaştır
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1, Iter2, new_end;
@@ -5626,7 +5609,7 @@ Bu işlevlerin nasıl davrandığı hakkında daha fazla bilgi için bkz: [Check
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
 int main() {
@@ -5672,7 +5655,10 @@ Kalan öğelerin sırasını bozmadan ve belirtilen değerin yeni aralığının
 
 ```cpp
 template<class ForwardIterator, class Predicate>
- ForwardIterator remove_if(ForwardIterator first, ForwardIterator last, Predicate pred);
+ForwardIterator remove_if(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate pred);
 
 ```
 
@@ -5710,10 +5696,10 @@ Liste, işaretçiler i Kaldır daha verimli bir üye işlev sürümü vardır.
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2, new_end;
@@ -5756,7 +5742,11 @@ Bir aralıktaki tüm öğeleri inceler ve belirtilen bir değerle eşleşiyorsa 
 
 ```cpp
 template<class ForwardIterator, class Type>
-void replace(ForwardIterator first, ForwardIterator last, const Type& _OldVal, const Type& _NewVal);
+void replace(
+    ForwardIterator first,
+    ForwardIterator last,
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -5788,7 +5778,7 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok ka
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -5827,8 +5817,8 @@ OutputIterator replace_copy(
     InputIterator first,
     InputIterator last,
     OutputIterator result,
-    const Type& _OldVal,
-    const Type& _NewVal);
+    const Type& oldVal,
+    const Type& newVal);
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -5867,7 +5857,7 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eş
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    list <int> L1 (15);
@@ -5966,10 +5956,10 @@ Karmaşıklığı doğrusal; vardır (`last` - `first`) eşitliği ve en çok ka
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    list <int> L1 (13);
@@ -6025,7 +6015,11 @@ Bir aralıktaki tüm öğeleri inceler ve belirtilen bir koşulu karşılıyorsa
 
 ```cpp
 template<class ForwardIterator, class Predicate, class Type>
-void replace_if(ForwardIterator first, ForwardIterator last, Predicate pred, const Type& val);
+void replace_if(
+    ForwardIterator first,
+    ForwardIterator last,
+    Predicate pred,
+    const Type& val);
 
 ```
 
@@ -6061,10 +6055,10 @@ Karmaşıklığı doğrusal: vardır (`last` - `first`) karşılaştırmalar eş
 #include <iostream>
 
 bool greater6 ( int value ) {
-   return value >6;
+   return value > 6;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -6101,7 +6095,7 @@ Bir aralık içindeki öğelerin sırasını tersine çevirir.
 
 ```cpp
 template<class BidirectionalIterator>
- void reverse(BidirectionalIterator first, BidirectionalIterator last);
+void reverse(BidirectionalIterator first, BidirectionalIterator last);
 
 ```
 
@@ -6124,7 +6118,7 @@ Başvurulan kaynak aralık geçerli olmalı; Tüm İşaretçiler tekrar başvuru
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    vector <int>::iterator Iter1;
@@ -6164,9 +6158,9 @@ Bir hedef aralığına kopyalanırken bir kaynak aralığındaki öğelerin sır
 ```cpp
 template<class BidirectionalIterator, class OutputIterator>
 OutputIterator reverse_copy(
-    BidirectionalIterator  first,
+    BidirectionalIterator first,
     BidirectionalIterator Last,
-    OutputIterator  result);
+    OutputIterator result);
 
 ```
 
@@ -6195,7 +6189,7 @@ Başvurulan kaynak ve hedef aralıklar geçerli olmalıdır; Tüm İşaretçiler
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2( 10 );
    vector <int>::iterator Iter1, Iter2;
@@ -6232,7 +6226,10 @@ int main( ) {
 
 ```cpp
 template<class ForwardIterator>
- void rotate(ForwardIterator first, ForwardIterator middle, ForwardIterator last);
+ void rotate(
+    ForwardIterator first,
+    ForwardIterator middle,
+    ForwardIterator last);
 
 ```
 
@@ -6260,7 +6257,7 @@ Karmaşıklığı en fazla ile doğrusal (`last` - `first`) değiştirir.
 #include <algorithm>
 #include <iostream>
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1;
    deque <int> d1;
@@ -6284,7 +6281,7 @@ int main( ) {
       cout << *v1Iter1  << " ";
    cout << ")." << endl;
 
-   rotate ( v1.begin ( ) , v1.begin ( ) + 3 , v1.end ( ) );
+   rotate ( v1.begin( ), v1.begin( ) + 3 , v1.end( ) );
    cout << "After rotating, vector v1 is ( " ;
    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
       cout << *v1Iter1  << " ";
@@ -6296,8 +6293,8 @@ int main( ) {
    cout << ")." << endl;
 
    int iii = 1;
-   while ( iii <= d1.end ( ) - d1.begin ( ) ) {
-      rotate ( d1.begin ( ) , d1.begin ( ) + 1 , d1.end ( ) );
+   while ( iii <= d1.end( ) - d1.begin( ) ) {
+      rotate ( d1.begin( ), d1.begin( ) + 1 , d1.end( ) );
       cout << "After the rotation of a single deque element to the back,\n d1 is   ( " ;
       for ( d1Iter1 = d1.begin( ) ; d1Iter1 != d1.end( ) ;d1Iter1 ++ )
          cout << *d1Iter1  << " ";
@@ -6389,7 +6386,7 @@ int main() {
       cout << *v1Iter  << " ";
    cout << ")." << endl;
 
-   rotate_copy ( v1.begin ( ) , v1.begin ( ) + 3 , v1.end ( ) , v2.begin ( ) );
+   rotate_copy ( v1.begin( ), v1.begin( ) + 3 , v1.end( ), v2.begin( ) );
    cout << "After rotating, the vector v1 remains unchanged as:\n v1 = ( " ;
    for ( v1Iter = v1.begin( ) ; v1Iter != v1.end( ) ;v1Iter ++ )
       cout << *v1Iter  << " ";
@@ -6406,9 +6403,9 @@ int main() {
    cout << ")." << endl;
 
    int iii = 1;
-   while ( iii <= d1.end ( ) - d1.begin ( ) )
+   while ( iii <= d1.end( ) - d1.begin( ) )
    {
-      rotate_copy ( d1.begin ( ) , d1.begin ( ) + iii , d1.end ( ) , d2.begin ( ) );
+      rotate_copy ( d1.begin( ), d1.begin( ) + iii , d1.end( ), d2.begin( ) );
       cout << "After the rotation of a single deque element to the back,\n d2 is   ( " ;
       for ( d2Iter = d2.begin( ) ; d2Iter != d2.end( ) ;d2Iter ++ )
          cout << *d2Iter  << " ";
@@ -6424,25 +6421,25 @@ int main() {
 
 ```cpp
 template<class ForwardIterator1, class ForwardIterator2>
-   ForwardIterator1 search(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      ForwardIterator2 first2,
-      ForwardIterator2 last2);
+ForwardIterator1 search(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2);
 
 template<class ForwardIterator1, class ForwardIterator2, class Predicate>
-   ForwardIterator1 search(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      ForwardIterator2 first2,
-      ForwardIterator2 last2
-      Predicate comp);
+ForwardIterator1 search(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    ForwardIterator2 first2,
+    ForwardIterator2 last2
+    Predicate comp);
 
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*First1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
 
 *last1* çözümlenmesinde kullanılacak bir son öğeden aralığındaki konumu ele alan ileriye doğru yineleyici.
 
@@ -6450,7 +6447,7 @@ template<class ForwardIterator1, class ForwardIterator2, class Predicate>
 
 *Soyadı2* eşlenmesi biri son öğeden aralığındaki konumu ele alan ileriye doğru yineleyici.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6480,7 +6477,7 @@ bool twice (int elem1, int elem2 )
    return 2 * elem1 == elem2;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    list <int> L1;
@@ -6568,25 +6565,25 @@ Belirli bir değere veya ikili bir koşula göre belirtilen değerle bir ilişki
 
 ```cpp
 template<class ForwardIterator1, class Diff2, class Type>
-   ForwardIterator1 search_n(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      Diff2 count,
-      const Type& val);
+ForwardIterator1 search_n(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    Diff2 count,
+    const Type& val);
 
 template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
-   ForwardIterator1 search_n(
-      ForwardIterator1 first1,
-      ForwardIterator1 last1,
-      Diff2 count,
-      const Type& val,
-      BinaryPredicate comp);
+ForwardIterator1 search_n(
+    ForwardIterator1 first1,
+    ForwardIterator1 last1,
+    Diff2 count,
+    const Type& val,
+    BinaryPredicate comp);
 
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
+*First1* aranacak aralıktaki ilk öğenin konumunu bulan ileriye doğru yineleyici.
 
 *last1* çözümlenmesinde kullanılacak bir son öğeden aralığındaki konumu ele alan ileriye doğru yineleyici.
 
@@ -6594,7 +6591,7 @@ template<class ForwardIterator1, class Diff2, class Type, class BinaryPredicate>
 
 *VAL* için aranacak dizideki öğelerin değeri.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6624,7 +6621,7 @@ bool one_half ( int elem1, int elem2 )
    return elem1 == 2 * elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -6698,11 +6695,11 @@ Sıralanmış ikinci bir kaynak aralığına sahip olanları değil, sıralanmı
 ```cpp
 template<class InputIterator1, class InputIterator2, class OutputIterator>
 OutputIterator set_difference(
-     InputIterator1  first1,
-     InputIterator1  last1,
-     InputIterator2  first2,
-     InputIterator2  last2,
-     OutputIterator  result );
+    InputIterator1  first1,
+    InputIterator1  last1,
+    InputIterator2  first2,
+    InputIterator2  last2,
+    OutputIterator  result );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryPredicate>
 OutputIterator set_difference(
@@ -6766,7 +6763,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -6793,50 +6790,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a difference in asscending
-   // order with the default binary predicate less <int> ( )
-   Result1 = set_difference ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // order with the default binary predicate less <int>( )
+   Result1 = set_difference ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Set_difference of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -6845,8 +6842,8 @@ int main( )
 
    // To combine into a difference in descending
    // order specify binary predicate greater<int>( )
-   Result2 = set_difference ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_difference ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Set_difference of source ranges with binary"
         << "predicate greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -6855,8 +6852,8 @@ int main( )
 
    // To combine into a difference applying a user
    // defined binary predicate mod_lesser
-   Result3 = set_difference (  v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_difference (  v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Set_difference of source ranges with binary "
         << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -6961,50 +6958,50 @@ int main() {
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         << "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         << "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) , v3 ( v1 );
    vector <int>::iterator Iter3a,  Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
            <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into an intersection in asscending order with the
-   // default binary predicate less <int> ( )
-   Result1 = set_intersection ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // default binary predicate less <int>( )
+   Result1 = set_intersection ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Intersection of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; ++Iter1 )
@@ -7013,8 +7010,8 @@ int main() {
 
    // To combine into an intersection in descending order, specify
    // binary predicate greater<int>( )
-   Result2 = set_intersection ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_intersection ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Intersection of source ranges with binary predicate"
         << " greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; ++Iter2 )
@@ -7023,8 +7020,8 @@ int main() {
 
    // To combine into an intersection applying a user-defined
    // binary predicate mod_lesser
-   Result3 = set_intersection ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_intersection ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Intersection of source ranges with binary predicate "
         << "mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; ++Iter3 )
@@ -7109,7 +7106,7 @@ bool mod_lesser (int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -7136,50 +7133,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) ,  v2 ( v1 );
    vector <int>::iterator Iter2a, Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a symmetric difference in ascending
-   // order with the default binary predicate less <int> ( )
-   Result1 = set_symmetric_difference ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+   // order with the default binary predicate less <int>( )
+   Result1 = set_symmetric_difference ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Set_symmetric_difference of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -7188,8 +7185,8 @@ int main( )
 
    // To combine into a symmetric difference in descending
    // order, specify binary predicate greater<int>( )
-   Result2 = set_symmetric_difference ( v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_symmetric_difference ( v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Set_symmetric_difference of source ranges with binary"
         << "predicate greater specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -7198,8 +7195,8 @@ int main( )
 
    // To combine into a symmetric difference applying a user
    // defined binary predicate mod_lesser
-   Result3 = set_symmetric_difference ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_symmetric_difference ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Set_symmetric_difference of source ranges with binary "
         << "predicate mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -7283,7 +7280,7 @@ bool mod_lesser ( int elem1, int elem2 )
    return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1a, v1b, v1 ( 12 );
@@ -7310,50 +7307,50 @@ int main( )
 
    cout << "Original vector v1b with range sorted by the\n "
         <<  "binary predicate less than is  v1b = ( " ;
-   for ( Iter1b = v1b.begin ( ) ; Iter1b != v1b.end ( ) ; Iter1b++ )
+   for ( Iter1b = v1b.begin( ) ; Iter1b != v1b.end( ) ; Iter1b++ )
       cout << *Iter1b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v2a & v2b with ranges sorted by greater
    vector <int> v2a ( v1a ) , v2b ( v1b ) , v2 ( v1 );
    vector <int>::iterator Iter2a,  Iter2b, Iter2, Result2;
-   sort ( v2a.begin ( ) , v2a.end ( ) , greater<int> ( ) );
-   sort ( v2b.begin ( ) , v2b.end ( ) , greater<int> ( ) );
+   sort ( v2a.begin( ), v2a.end( ), greater<int>( ) );
+   sort ( v2b.begin( ), v2b.end( ), greater<int>( ) );
 
    cout << "Original vector v2a with range sorted by the\n "
         <<  "binary predicate greater is   v2a =  ( " ;
-   for ( Iter2a = v2a.begin ( ) ; Iter2a != v2a.end ( ) ; Iter2a++ )
+   for ( Iter2a = v2a.begin( ) ; Iter2a != v2a.end( ) ; Iter2a++ )
       cout << *Iter2a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v2b with range sorted by the\n "
         <<  "binary predicate greater is   v2b =  ( " ;
-   for ( Iter2b = v2b.begin ( ) ; Iter2b != v2b.end ( ) ; Iter2b++ )
+   for ( Iter2b = v2b.begin( ) ; Iter2b != v2b.end( ) ; Iter2b++ )
       cout << *Iter2b << " ";
    cout << ")." << endl;
 
    // Constructing vectors v3a & v3b with ranges sorted by mod_lesser
    vector <int> v3a ( v1a ), v3b ( v1b ) ,  v3 ( v1 );
    vector <int>::iterator Iter3a, Iter3b, Iter3, Result3;
-   sort ( v3a.begin ( ) , v3a.end ( ) , mod_lesser );
-   sort ( v3b.begin ( ) , v3b.end ( ) , mod_lesser  );
+   sort ( v3a.begin( ), v3a.end( ), mod_lesser );
+   sort ( v3b.begin( ), v3b.end( ), mod_lesser  );
 
    cout << "Original vector v3a with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3a =  ( " ;
-   for ( Iter3a = v3a.begin ( ) ; Iter3a != v3a.end ( ) ; Iter3a++ )
+   for ( Iter3a = v3a.begin( ) ; Iter3a != v3a.end( ) ; Iter3a++ )
       cout << *Iter3a << " ";
    cout << ")." << endl;
 
    cout << "Original vector v3b with range sorted by the\n "
         <<  "binary predicate mod_lesser is   v3b =  ( " ;
-   for ( Iter3b = v3b.begin ( ) ; Iter3b != v3b.end ( ) ; Iter3b++ )
+   for ( Iter3b = v3b.begin( ) ; Iter3b != v3b.end( ) ; Iter3b++ )
       cout << *Iter3b << " ";
    cout << ")." << endl;
 
    // To combine into a union in ascending order with the default
-    // binary predicate less <int> ( )
-   Result1 = set_union ( v1a.begin ( ) , v1a.end ( ) ,
-      v1b.begin ( ) , v1b.end ( ) , v1.begin ( ) );
+    // binary predicate less <int>( )
+   Result1 = set_union ( v1a.begin( ), v1a.end( ),
+      v1b.begin( ), v1b.end( ), v1.begin( ) );
    cout << "Union of source ranges with default order,"
         << "\n vector v1mod =  ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != Result1 ; Iter1++ )
@@ -7362,8 +7359,8 @@ int main( )
 
    // To combine into a union in descending order, specify binary
    // predicate greater<int>( )
-   Result2 = set_union (  v2a.begin ( ) , v2a.end ( ) ,
-      v2b.begin ( ) , v2b.end ( ) ,v2.begin ( ) , greater <int> ( ) );
+   Result2 = set_union (  v2a.begin( ), v2a.end( ),
+      v2b.begin( ), v2b.end( ),v2.begin( ), greater <int>( ) );
    cout << "Union of source ranges with binary predicate greater "
         << "specified,\n vector v2mod  = ( " ;
    for ( Iter2 = v2.begin( ) ; Iter2 != Result2 ; Iter2++ )
@@ -7372,8 +7369,8 @@ int main( )
 
    // To combine into a union applying a user-defined
    // binary predicate mod_lesser
-   Result3 = set_union ( v3a.begin ( ) , v3a.end ( ) ,
-      v3b.begin ( ) , v3b.end ( ) , v3.begin ( ) , mod_lesser );
+   Result3 = set_union ( v3a.begin( ), v3a.end( ),
+      v3b.begin( ), v3b.end( ), v3.begin( ), mod_lesser );
    cout << "Union of source ranges with binary predicate "
         << "mod_lesser specified,\n vector v3mod  = ( " ; ;
    for ( Iter3 = v3.begin( ) ; Iter3 != Result3 ; Iter3++ )
@@ -7455,7 +7452,7 @@ bool UDgreater ( int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7641,10 +7638,10 @@ Başvurulan aralık geçerli olmalı; Tüm İşaretçiler tekrar başvurulabilir
 #include <iostream>
 
 bool greater5 ( int value ) {
-   return value >5;
+   return value > 5;
 }
 
-int main( ) {
+int main() {
    using namespace std;
    vector <int> v1, v2;
    vector <int>::iterator Iter1, Iter2, result;
@@ -7724,7 +7721,7 @@ bool UDgreater (int elem1, int elem2 )
    return elem1 > elem2;
 }
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7810,7 +7807,7 @@ template<class Type, size_t N>
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2;
@@ -7898,7 +7895,7 @@ Karmaşıklığı ile doğrusal *last1* - *first1* takasları gerçekleştirilir
 #include <algorithm>
 #include <iostream>
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1;
@@ -7928,7 +7925,7 @@ int main( )
       cout << *d1Iter1  << " ";
    cout << ")." << endl;
 
-   swap_ranges ( v1.begin ( ) , v1.end ( ) , d1.begin ( ) );
+   swap_ranges ( v1.begin( ), v1.end( ), d1.begin( ) );
 
    cout << "After the swap_range, vector v1 is ( " ;
    for ( v1Iter1 = v1.begin( ) ; v1Iter1 != v1.end( ) ;v1Iter1 ++ )
@@ -7959,7 +7956,7 @@ OutputIterator transform(
     InputIterator first1,
     InputIterator last1,
     OutputIterator result,
-    UnaryFunction _Func );
+    UnaryFunction func );
 
 template<class InputIterator1, class InputIterator2, class OutputIterator, class BinaryFunction>
 OutputIterator transform(
@@ -7967,7 +7964,7 @@ OutputIterator transform(
     InputIterator1 last1,
     InputIterator2 first2,
     OutputIterator result,
-    BinaryFunction _Func );
+    BinaryFunction func );
 ```
 
 ### <a name="parameters"></a>Parametreler
@@ -8016,13 +8013,13 @@ class MultValue
       }
 
       // The function call for the element to be multiplied
-      Type operator ( ) ( Type& elem ) const
+      Type operator( ) ( Type& elem ) const
       {
          return elem * Factor;
       }
 };
 
-int main( )
+int main()
 {
    using namespace std;
    vector <int> v1, v2 ( 7 ), v3 ( 7 );
@@ -8041,7 +8038,7 @@ int main( )
    cout << ")." << endl;
 
    // Modifying the vector v1 in place
-   transform (v1.begin ( ) , v1.end ( ) , v1.begin ( ) , MultValue<int> ( 2 ) );
+   transform (v1.begin( ), v1.end( ), v1.begin( ), MultValue<int> ( 2 ) );
    cout << "The elements of the vector v1 multiplied by 2 in place gives:"
         << "\n v1mod = ( " ;
    for ( Iter1 = v1.begin( ) ; Iter1 != v1.end( ) ; Iter1++ )
@@ -8049,7 +8046,7 @@ int main( )
    cout << ")." << endl;
 
    // Using transform to multiply each element by a factor of 5
-   transform ( v1.begin ( ) , v1.end ( ) , v2.begin ( ) , MultValue<int> ( 5 ) );
+   transform ( v1.begin( ), v1.end( ), v2.begin( ), MultValue<int> ( 5 ) );
 
    cout << "Multiplying the elements of the vector v1mod\n "
         <<  "by the factor 5 & copying to v2 gives:\n v2 = ( " ;
@@ -8059,8 +8056,8 @@ int main( )
 
    // The second version of transform used to multiply the
    // elements of the vectors v1mod & v2 pairwise
-   transform ( v1.begin ( ) , v1.end ( ) ,  v2.begin ( ) , v3.begin ( ) ,
-      multiplies <int> ( ) );
+   transform ( v1.begin( ), v1.end( ),  v2.begin( ), v3.begin( ),
+      multiplies <int>( ) );
 
    cout << "Multiplying elements of the vectors v1mod and v2 pairwise "
         <<  "gives:\n v3 = ( " ;
@@ -8105,7 +8102,7 @@ template<class ForwardIterator, class Predicate>
 
 *Son* bir önceki öğenin konumunu son öğesi için yinelenen kaldırma taranacak aralıktaki ileriye doğru yineleyici.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -8148,7 +8145,7 @@ bool mod_equal ( int elem1, int elem2 )
    return elem1 == elem2;
 };
 
-int main( )
+int main()
 {
    vector <int> v1;
    vector <int>::iterator v1_Iter1, v1_Iter2, v1_Iter3,
@@ -8174,7 +8171,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove consecutive duplicates
-   v1_NewEnd1 = unique ( v1.begin ( ) , v1.end ( ) );
+   v1_NewEnd1 = unique ( v1.begin( ), v1.end( ) );
 
    cout << "Removing adjacent duplicates from vector v1 gives\n ( " ;
    for ( v1_Iter1 = v1.begin( ) ; v1_Iter1 != v1_NewEnd1 ; v1_Iter1++ )
@@ -8182,7 +8179,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique ( v1.begin ( ) , v1_NewEnd1 , mod_equal );
+   v1_NewEnd2 = unique ( v1.begin( ), v1_NewEnd1 , mod_equal );
 
    cout << "Removing adjacent duplicates from vector v1 under the\n "
         << " binary predicate mod_equal gives\n ( " ;
@@ -8191,7 +8188,7 @@ int main( )
    cout << ")." << endl;
 
    // Remove elements if preceded by an element that was greater
-   v1_NewEnd3 = unique ( v1.begin ( ) , v1_NewEnd2, greater<int>( ) );
+   v1_NewEnd3 = unique ( v1.begin( ), v1_NewEnd2, greater<int>( ) );
 
    cout << "Removing adjacent elements satisfying the binary\n "
         << " predicate mod_equal from vector v1 gives ( " ;
@@ -8237,7 +8234,7 @@ OutputIterator unique_copy( InputIterator first,
 
 *Sonuç* ardışık çoğaltmaları olan kopyayı alan hedef aralıktaki ilk öğenin konumunu bulan çıktı yineleyici kaldırıldı.
 
-*comp* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
+*Kompozisyonu* gerçekleştirilecek iki öğe varsa karşılanması koşul tanımlayan kullanıcı tanımlı işlevin doğrulama nesnesi olarak eşdeğer. İkili koşulu, iki bağımsız değişkeni alır ve döndürür **true** karşılanmazsa ve **false** koşullar karşılanırsa.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -8301,7 +8298,7 @@ int main() {
    cout << ")." << endl;
 
    // Copy first half to second, removing consecutive duplicates
-   v1_NewEnd1 = unique_copy ( v1.begin ( ) , v1.begin ( ) + 8, v1.begin ( ) + 8 );
+   v1_NewEnd1 = unique_copy ( v1.begin( ), v1.begin( ) + 8, v1.begin( ) + 8 );
 
    cout << "Copying the first half of the vector to the second half\n "
         << "while removing adjacent duplicates gives\n ( " ;
@@ -8314,8 +8311,8 @@ int main() {
       v1.push_back( 10 );
 
    // Remove consecutive duplicates under the binary prediate mod_equals
-   v1_NewEnd2 = unique_copy ( v1.begin ( ) , v1.begin ( ) + 14,
-      v1.begin ( ) + 14 , mod_equal );
+   v1_NewEnd2 = unique_copy ( v1.begin( ), v1.begin( ) + 14,
+      v1.begin( ) + 14 , mod_equal );
 
    cout << "Copying the first half of the vector to the second half\n "
         << " removing adjacent duplicates under mod_equals gives\n ( " ;
@@ -8391,7 +8388,7 @@ bool mod_lesser( int elem1, int elem2 )
     return elem1 < elem2;
 }
 
-int main( )
+int main()
 {
     using namespace std;
 

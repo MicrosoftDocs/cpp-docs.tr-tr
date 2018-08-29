@@ -1,5 +1,5 @@
 ---
-title: -Tanılama (tanılama derleyici seçenekleri) | Microsoft Docs
+title: -diagnostics (derleyici tanılama seçenekleri) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/11/2016
 ms.technology:
@@ -19,16 +19,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d874e26a922a7f9cce7223b574d525d37733598
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3f1dce7c7c48e7c7c94da95ca187e0388b3f5d4d
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371778"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131647"
 ---
-# <a name="diagnostics-compiler-diagnostic-options"></a>/Diagnostics (tanılama derleyici seçenekleri)  
+# <a name="diagnostics-compiler-diagnostic-options"></a>/ Diagnostics (derleyici tanılama seçenekleri)  
   
-Kullanım **/diagnostics** derleyici seçeneği hata ve uyarı konum bilgileri görüntüsünü belirtin.  
+Kullanım **/Diagnostics** konum bilgilerini hata ve uyarı görünümünü belirtmek için derleyici seçeneği.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,25 +37,28 @@ Kullanım **/diagnostics** derleyici seçeneği hata ve uyarı konum bilgileri g
 ```  
 
 ## <a name="remarks"></a>Açıklamalar  
-**/Diagnostics** derleyici seçeneği hata ve uyarı bilgilerini görünümünü denetler.  
+
+Bu seçenek, Visual Studio 2017 ve sonraki sürümlerde desteklenir.
+
+**/Diagnostics** derleyici seçeneği, hata ve uyarı bilgilerini görünümünü denetler.  
   
-**/Diagnostics:classic** sorun bulunduğu satır numarası raporları varsayılan seçenektir.  
+**/Diagnostics:classic** raporları nereye sorunu bulundu satır numarasını varsayılan seçenektir.  
   
-**/Diagnostics:column** seçenek de sorun bulunduğu sütun içerir. Bu belirli bir dil yapı veya soruna neden olan karakter belirlemenize yardımcı olabilir.  
+**/Diagnostics:column** seçeneği de burada sorunu bulundu sütun içerir. Bu soruna neden olan karakter ya da belirli bir dil yapısı belirlemenize yardımcı olabilir.  
   
-**/Diagnostics:caret** seçenek, burada sorunu bulundu ve bir şapka (^) burada sorunu algılandı kod satırı altında konuma yerleştirir sütun içerir.  
+**/Diagnostics:caret** seçeneği nerede sorun bulundu ve bir şapka (^) sorunun algılandığı yere kod satırı altında konuma yerleştirir sütun içerir.  
   
-Bazı durumlarda, bir sorunun nerede oluştuğunu derleyici algılamaz unutmayın. Örneğin, diğer, beklenmeyen simgeleri karşılaştı kadar eksik noktalı algılanamayabilir. Sütun bildirilir ve düzeltme işareti burada derleyici bir şey her zaman, düzeltme yapmanız gereken burada olmayan yanlış olduğunu algılandı yerleştirilir.  
+Bazı durumlarda, derleyicinin bir sorun oluştuğu algılamaz unutmayın. Örneğin, diğer, beklenmeyen sembolleri karşılaştı kadar eksik noktalı virgül algılanamayabilir. Sütun bildirilir ve giriş işaretini derleyici bir şey her zaman düzeltmenizi yapmak gerek duyduğunuz değil yanlış olduğunu algılandığı yere yerleştirilir.  
   
-**/Diagnostics** Visual Studio 2017 başlangıç seçeneği kullanılabilir.  
+**/Diagnostics** seçenek, Visual Studio 2017'den itibaren kullanılabilir.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1. Projenizin açmak **özellik sayfaları** iletişim kutusu.   
+1. Projenizin açın **özellik sayfaları** iletişim kutusu.   
   
-2. Altında **yapılandırma özellikleri**, genişletin **C/C++** klasör ve **genel** özellik sayfası.  
+2. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **genel** özellik sayfası.  
   
-3. Açılır liste denetiminde kullanmak **tanılama biçimi** alan bir tanılama seçmek için görüntü seçeneği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.  
+3. Dropdown denetimi kullanın **tanılama biçimi** bir tanılama seçmek için alan görüntü seçeneği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   

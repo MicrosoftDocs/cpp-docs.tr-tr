@@ -1,7 +1,7 @@
 ---
 title: IDE ve Visual C++ geliştirme araçları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/02/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -14,106 +14,114 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3668fb438c2a0aa7fa14cff97f498a9becc67b36
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: df30bdea71a890eed25f546a53e7f329fa330762
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34705406"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43132026"
 ---
-# <a name="ide-and-tools-for-visual-c-development"></a>IDE ve Visual C++ geliştirme araçları
+# <a name="ide-and-tools-for-visual-c-development"></a>Visual C++ geliştirme araçları ve IDE
 
-Çok sayıda windows ve diğer dilleri ortak araçları, Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft Visual C++ (MSVC) paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, kod düzenleyicisini ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Genellikle, bir paylaşılan aracı ya da penceresini biraz farklı bir özellikler kümesi için C++ .NET dillerini veya Javascript için vardır. Bazı windows veya araçları yalnızca Visual Studio Pro veya Visual Studio Enterprise'da kullanılabilir.
+Visual Studio tümleşik geliştirme ortamı (IDE) parçası olarak, Microsoft Visual C++ (MSVC) birçok windows ve diğer diller ortak Araçlar paylaşır. Bu da dahil olmak üzere birçok **Çözüm Gezgini**, Kod Düzenleyicisi ve hata ayıklayıcı altında belgelenen [Visual Studio IDE](/visualstudio/ide/visual-studio-ide). Genellikle, paylaşılan bir aracı veya pencere biraz farklı bir özellik kümesi için C++ Javascript veya .NET dilleri için vardır. Bazı windows veya araçları yalnızca Visual Studio Pro veya Visual Studio Enterprise kullanılabilir.
 
-Visual Studio IDE paylaşılan araçlarında yanı sıra MSVC özellikle yerel kod geliştirme için çeşitli araçlar vardır. Bu araçları Ayrıca bu makalede listelenmektedir. Hangi Araçlar her Visual Studio sürümünde bir listesi için bkz: [Visual C++ Araçları ve özelliklerinin Visual Studio sürümlerinde](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
+Visual Studio IDE'de paylaşılan araçlara ek olarak, MSVC yerel kod geliştirme için özel olarak çeşitli araçları vardır. Bu araçlar, bu makalede de listelenir. Hangi Araçlar Visual Studio'nun her sürümünde bir listesi için bkz [Visual C++ Araçları ve özellikleri Visual Studio sürümlerinde](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md).
 
-## <a name="creating-a-solution-and-projects"></a>Çözüm ve proje oluşturma
+## <a name="creating-a-solution-and-projects"></a>Çözüm ve projeleri oluşturma
 
-A *proje* temelde kaynak kodu dosyaları ve kaynakları bir yürütülebilir dosyaya yerleşik görüntüleri veya veri dosyaları gibi kümesidir. Visual Studio 2017 herhangi bir yapı sistem veya göz atma ve hata ayıklama IntelliSense için tam destek ile kullanmak istediğiniz özel derleme araçları destekler:
+A *proje* temel bir kaynak kodu dosyaları ve yürütülebilir bir dosyada yerleşik görüntüleri veya veri dosyaları gibi kaynakları kümesidir. 
 
-- MSBuild Visual Studio için yerel yapı sistemi ve genellikle Evrensel Windows Platformu (UWP) uygulamaları veya MFC ya da ATL kullanan eski Windows Masaüstü uygulamaları için en iyi seçimdir. C++ MSBuild tabanlı projeler hakkında daha fazla bilgi için bkz: [oluşturma ve yönetme MSBuild tabanlı projeler](creating-and-managing-visual-cpp-projects.md).
-- CMake bir platformlar arası derleme C++ yüküyle masaüstü geliştirme yüklediğinizde Visual Studio IDE içinde tümleşik sisteminin ' dir. Daha fazla bilgi için bkz: [CMake Visual C++ projelerinde](cmake-tools-for-visual-cpp.md).
-- Dosyalar, gevşek topluluğu dahil olmak üzere diğer tüm C++ derleme sistemlere, Klasör Aç özelliği desteklenir. Yapı programınızı çağırma ve hata ayıklama oturumları yapılandırmak için basit JSON dosyaları oluşturun. Daha fazla bilgi için bkz: [C++ kodunuzu Visual Studio'ya Getir](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
+Visual Studio 2015, MSBuild projeleri için destek sağlar. Qt veya CMake gibi diğer yapı sistemleri için Visual Studio uzantıları karşıdan yükleyebilirsiniz.
+
+Visual Studio 2017, herhangi bir derleme sistemi veya tam IntelliSense, göz atma ve hata ayıklama desteği ile kullanmak istediğiniz özel derleme araçları için destek sağlar:
+
+- MSBuild Visual Studio için yerel derleme sistemi ve genellikle Evrensel Windows Platformu (UWP) uygulamaları veya MFC veya ATL'yi kullanan eski Windows Masaüstü uygulamaları için en iyi seçenek ise C++ MSBuild tabanlı projeler hakkında daha fazla bilgi için bkz. [oluşturma ve yönetme MSBuild tabanlı projeler](creating-and-managing-visual-cpp-projects.md).
+- CMake, platformlar arası derleme Masaüstü uygulama geliştirme ile C++ iş yükünü yüklediğinizde, Visual Studio IDE'ye tümleşik sistemi ' dir. Daha fazla bilgi için [Visual C++'da CMake projeleri](cmake-tools-for-visual-cpp.md).
+- Dosyaları, gevşek koleksiyonu dahil olmak üzere tüm diğer C++ derleme sistemi, Klasör Aç özelliği aracılığıyla desteklenir. Derleme programınızı çağırmak ve hata ayıklama oturumları yapılandırmak için basit JSON dosyalarını oluşturduğunuz. Daha fazla bilgi için [C++ kodunuzu Visual Studio'ya taşıyın](https://blogs.msdn.microsoft.com/vcblog/2017/04/14/bring-your-cpp-code-to-visual-studio/).
 
 ### <a name="project-templates-msbuild"></a>Proje şablonları (MSBuild)
 
-MSBuild tabanlı projeler için çeşitli şablonlar ile Visual Studio gelir; Bu şablonlar, başlatıcı kodu ve çeşitli temel program türlerini için gerekli ayarları içerir. Genellikle seçerek Başlat **dosya** > **yeni proje** bir proje şablonu bir proje oluşturmak için daha sonra bu projeye yeni kaynak kodu dosyaları ekleme veya sağlanan dosyalarında kod yazmaya başlayın. C++ projeleri ve proje sihirbazları özel bilgi için bkz: [oluşturma ve yönetme Visual C++ projeleri](../ide/creating-and-managing-visual-cpp-projects.md).
+Visual Studio, MSBuild tabanlı projeler için birkaç şablon ile birlikte gelir; Bu şablonlar, başlatıcı kodunu ve çeşitli temel program türleri için gerekli olan ayarları içerir. Genellikle seçerek başlayın **dosya** > **yeni proje** proje şablonundan bir proje oluşturmak için ardından bu projeye yeni kaynak kodu dosyaları ekleyin veya sağlanan dosyalarında kodlamaya başlayın. C++ projeleri ve proje sihirbazları özgü bilgiler için bkz: [oluşturma ve yönetme, Visual C++ projeleri](../ide/creating-and-managing-visual-cpp-projects.md).
 
 ### <a name="application-wizards-msbuild"></a>Uygulama sihirbazları (MSBuild)
 
-Visual Studio öğesini seçtiğinizde bu sihirbazlar için bazı MSBuild proje türleri sağlar **dosya** > **yeni proje**. Sihirbaz adım adım yeni proje oluşturma işleminde size kılavuzluk eder. Bu, çok sayıda seçeneklerini ve ayarlarını proje türleri için kullanışlıdır. Daha fazla bilgi için bkz: [oluşturma Masaüstü projeleri tarafından uygulama sihirbazlarını kullanma](../ide/creating-desktop-projects-by-using-application-wizards.md).
+Visual Studio seçtiğinizde bu sihirbazlar için bazı MSBuild proje türleri sağlar **dosya** > **yeni proje**. Sihirbaz, yeni proje oluşturma işleminde size adım adım yol gösterir. Bu, birçok seçenekler ve ayarlar olan proje türleri için kullanışlıdır. Daha fazla bilgi için [oluşturma Masaüstü projeleri tarafından uygulama sihirbazlarını kullanma](../ide/creating-desktop-projects-by-using-application-wizards.md).
 
-## <a name="creating-user-interfaces-with-designers-msbuild"></a>Kullanıcı arabirimleri (MSBuild) tasarımcılar ile oluşturma
+## <a name="creating-user-interfaces-with-designers-msbuild"></a>Kullanıcı arabirimlerinin (MSBuild) tasarımcılar ile oluşturma
 
-Programınızın bir kullanıcı arabirimi varsa, ilk görevi bu düğmeleri, liste kutuları gibi denetimleri ile vb. doldurmak için biridir. Visual Studio, bir görsel tasarım yüzeyi ve C++ uygulaması her özellik için bir araç içerir. Oluşturduğunuz uygulama türünü olsun, temel aynı fikirdir: bir denetim araç kutusu penceresinden sürükleyip istediğiniz konuma tasarım yüzeyine bırakın. Arka planda, Visual Studio kaynaklar ve tüm çalışması için gerekli kod oluşturur. Ardından denetimlerini veri ile doldurma veya bunların görünümünü ve davranışını özelleştirmek için kod yazın.
+Programınız bir kullanıcı arabirimi varsa, ilk görevi bu düğmeler, liste kutuları gibi denetimler ve benzeri doldurmak üzere biridir. Visual Studio, bir görsel tasarım yüzeyi ve C++ uygulaması her özellik için bir araç içerir. Oluşturmakta olduğunuz uygulamanın türü ne olursa olsun, temel aynı olur: bir denetimi araç penceresinden sürükleyip istenen konumundan tasarım yüzeyine bırakın. Arka planda, Visual Studio kaynakları ve her hale getirmeniz için gereken kod oluşturur. Ardından, görünümünü ve davranışını özelleştirin veya denetimlerin verilerle doldurulması için kodu yazın.
 
-Bir evrensel Windows Platform uygulaması için kullanıcı arabirimi tasarlama hakkında daha fazla bilgi için bkz: [tasarım ve kullanıcı Arabirimi](https://developer.microsoft.com/en-us/windows/design).
+Bir evrensel Windows platformu uygulaması için bir kullanıcı arabirimi tasarlama hakkında daha fazla bilgi için bkz. [tasarım ve UI](https://developer.microsoft.com/en-us/windows/design).
 
-MFC uygulaması için kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için bkz: [MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Win32 Windows programlar hakkında daha fazla bilgi için bkz: [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md).
+Bir MFC uygulaması için bir kullanıcı arabirimi oluşturma hakkında daha fazla bilgi için bkz. [MFC Masaüstü uygulamaları](../mfc/mfc-desktop-applications.md). Win32 Windows programlar hakkında daha fazla bilgi için bkz: [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md).
 
 ## <a name="writing-and-editing-code"></a>Yazma ve kod düzenleme
 
-### <a name="semantic-colorization"></a>Anlam renklendirme
+### <a name="semantic-colorization"></a>Semantik renklendirme
 
-Bir proje oluşturduğunuzda, tüm proje dosyalarını görüntülenen **Çözüm Gezgini** penceresi. Tıkladığınızda bir .h veya .cpp dosyasında **Çözüm Gezgini**, Kod Düzenleyicisi'nde dosya açılır. Özelleştirilmiş bir sözcük işlemci C++ kaynak kodu için kod düzenleyicisidir. Dil anahtar sözcükleri, yöntemi ve değişken adları ve diğer öğelerin kodunu daha okunabilir ve anlaşılması daha kolay hale kodunuzun renkli kodlarla gösterir.
+Bir projeyi oluşturduktan sonra tüm proje dosyaları içinde görüntülenen **Çözüm Gezgini** penceresi. Tıkladığınızda bir .h veya .cpp dosyada **Çözüm Gezgini**, dosya Kod düzenleyicisinde açılır. Özelleştirilmiş bir sözcük işlemcisi C++ kaynak kodu için kod düzenleyicisidir. Dil anahtar sözcükleri, yöntemi ve değişken adları ve diğer öğelerin kodunu daha okunabilir ve daha kolay anlaşılır hale getirmek için kodunuzu renkli kodlarla gösterir.
 
 ### <a name="intellisense"></a>IntelliSense
 
-Kod Düzenleyicisi birlikte IntelliSense bilinen çeşitli özellikler de destekler. Bir yöntem gelin ve bunu temel bazı belgelerine bakın. Bir sınıf değişken adını yazdıktan sonra ve bir. veya ->, bu sınıfın örnek üyelerin listesi görüntülenir. Bir sınıf adını yazın, ardından bir::, statik üyeler listesi görüntülenir. Bir sınıf veya yöntemin adını yazmaya başladığınızda, Kod düzenleyicisinde deyimini tamamlamak için öneriler sunar. Daha fazla bilgi için bkz: [kullanarak IntelliSense](/visualstudio/ide/using-intellisense).
+Kod Düzenleyicisi, IntelliSense birlikte bilinen bazı özellikleri de destekler. Bir yöntem gelin ve bunu temel bazı belgelerine bakın. Bir sınıf değişken adını yazdıktan sonra ve bir. veya ->, söz konusu sınıfın örnek üyeleri listesi görüntülenir. Bir sınıf adı yazarsanız ve ardından bir::, statik üye listesi görüntülenir. Bir sınıf veya yöntemin adını yazmaya başladığınızda, Kod Düzenleyicisi ' deyimini tamamlamak için öneriler sunar. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense).
 
 ### <a name="code-snippets"></a>Kod parçacıkları
 
-IntelliSense kod parçacıkları yaygın olarak kullanılan oluşturmak için kullanabileceğiniz veya bir kısayol tuş vuruşu ile karmaşık kodu oluşturur. Daha fazla bilgi için bkz: [kod parçacıkları](/visualstudio/ide/code-snippets).
+IntelliSense kod parçacıkları, sık kullanılan oluşturmak için kullanabilirsiniz veya bir kısayol tuş vuruşu ile karmaşık kodu oluşturur. Daha fazla bilgi için [kod parçacıkları](/visualstudio/ide/code-snippets).
 
-## <a name="navigating-code"></a>Kodda gezinme
+## <a name="navigating-code"></a>Kod gezinme
 
-**Görünüm** menü geçici kod dosyalarınızda gezinmek için erişim sağlar birçok windows ve araçları. Bu windows hakkında ayrıntılı bilgi için bkz: [kodunu yapısı görüntüleme](/visualstudio/ide/viewing-the-structure-of-code).
+**Görünümü** menü kod dosyalarınızı geçici olarak gezinmek için birçok windows ve araçlarına erişim sağlar. Bu windows hakkında ayrıntılı bilgi için bkz: [Structure of Code görüntüleme](/visualstudio/ide/viewing-the-structure-of-code).
 
 ### <a name="solution-explorer"></a>Çözüm Gezgini
 
-Visual Studio tüm sürümlerinde kullanmak **Çözüm Gezgini** proje dosyalarında arasında gezinmek için bölmesi. Dosya sınıfları görüntülemek için bir .h veya .cpp dosya simgesini genişletin. Üyelerini görmek için bir sınıf genişletin. Üye tanımı veya uygulama dosyasına gitmek için çift tıklayın.
+Visual Studio'nun tüm sürümleri kullanın **Çözüm Gezgini** projesindeki dosyalar arasında gezinmek için bölmesi. Sınıfları, dosyayı görüntülemek için bir .h veya .cpp dosyası simgesi genişletin. Bir sınıf üyelerini görmek için genişletin. Üye tanımı ya da uygulama dosyasına gitmek için çift tıklayın.
 
 ### <a name="class-view-and-code-definition-window"></a>Sınıf Görünümü ve kod tanımı penceresi
 
-Kullanım **sınıf görünümü** bölmesi ad alanları ve sınıfları kısmi sınıflar dahil olmak üzere tüm dosyalardaki, bkz. Her ad alanı veya kaynak dosyayı bu konuma gitmek için üye çift tıklayın ve üyelerini görmek için sınıf genişletebilirsiniz. Açarsanız **kod tanımı penceresi**, içinde seçtiğinizde tanım veya uygulama türü görüntüleyebilir **sınıf görünümü**.
+Kullanım **sınıf görünümü** bölmesinde kısmi sınıflar da dahil olmak üzere tüm dosyalardaki, ad alanlarını ve sınıfları görmek için. Her ad alanı veya sınıf üyeleri görebilir ve üye kaynak dosyada bu konuma gitmek için çift tıklayarak genişletebilirsiniz. Açarsanız **kod tanımı penceresi**, uygulama türü ve tanımı içinde seçtiğinizde görüntüleyebilirsiniz **sınıf görünümü**.
 
 ### <a name="object-browser"></a>Nesne Tarayıcısı
 
-Kullanım **Nesne Tarayıcısı** Windows çalışma zamanı bileşenleri (.winmd dosyaları) türü bilgileri keşfetmek için .NET derlemelerini ve COM kitaplıkları yazın. Win32 DLL'leri ile kullanılmaz.
+Kullanım **Nesne Tarayıcısı** Windows çalışma zamanı bileşenlerinde (.winmd dosyaları) tür bilgileri keşfetmek için .NET derlemelerini ve COM tür kitaplığı. Win32 DLL'leri ile kullanılmaz.
 
 ### <a name="go-to-definitiondeclaration"></a>Tanımı/bildirimine gidin
 
-Öğenin tanımına gitmek için herhangi bir API adı veya üye değişkeni üzerinde F12 tuşuna basın. Tanım dosyasında bir .winmd (bir UWP ya da Windows 8.x mağazası uygulaması) ise nesne tarayıcısında type Info seçmeniz gerekir. Ayrıca seçebilirsiniz **Tanıma Git** veya **bildirimi Git** değişken veya türü adına sağ tıklayıp bağlam menüsünden seçeneği seçerek.
+Kendi tanımına gitmek için tüm API adı veya üye değişkeni F12 tuşuna basın. Tanımı bir .winmd dosyasına (bir UWP veya Windows 8.x Store uygulaması) ise nesne tarayıcısında tür bilgisini seçmeniz gerekir. Ayrıca seçebilirsiniz **tanıma** veya **bildirimi Git** değişken veya türü adına sağ tıklayıp bağlam menüsünden seçeneği seçerek.
 
 ### <a name="find-all-references"></a>Tüm Başvuruları Bul
 
-Kaynak kodu dosyasının fare imleci ile bir türü veya yöntemi veya değişken adını sağ tıklatın ve seçin **tüm başvuruları Bul** türü kullanıldığı her konum listesi dosya, proje veya çözüm döndürmek için. **Tüm başvuruları Bul** Akıllı ve diğer değişkenleri farklı kapsamda aynı ada sahip olsa bile yalnızca aynı aynı değişkeni örneklerini döndürür.
+Bir kaynak kodu dosyası fare imleci bir tür veya yöntemi veya değişken adının üzerine sağ tıklayın ve seçin **tüm başvuruları Bul** türü kullanıldığı dosyası, proje veya çözümü her konum bir listesini döndürmek için. **Tüm başvuruları Bul** Akıllı ve diğer değişkenleri farklı kapsamda aynı ada sahip olsanız bile yalnızca aynı aynı değişken, bir örneğini döndürür.
 
 ## <a name="add-and-edit-resources--msbuild"></a>Ekleme ve düzenleme kaynakları (MSBuild)
 
-Terim *kaynak* Visual Studio bağlamında Masaüstü projesi iletişim kutuları, simgeler, yerelleştirilebilir dizeler, başlangıç ekranında, veritabanı bağlantı dizelerini veya dahil etmek istediğiniz herhangi bir rastgele veri gibi öğeleri içerir. yürütülebilir dosya.
+Terim *kaynak* Visual Studio bağlamında Masaüstü proje iletişim kutuları, simgeler, yerelleştirilebilir dize, Karşılama ekranları, veritabanı bağlantı dizelerini ve dahil etmek istediğiniz herhangi bir rastgele veri gibi öğeleri içerir. yürütülebilir dosya.
 
-Ekleme ve yerel Masaüstü C++ projelerine kaynakları düzenleme hakkında daha fazla bilgi için bkz: [kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md).
+Ekleme ve kaynakları yerel Masaüstü C++ projelerinde düzenleme hakkında daha fazla bilgi için bkz. [kaynak dosyalarıyla çalışma](../windows/working-with-resource-files.md).
 
-## <a name="build-compile-and-link"></a>Derleme (derleme ve bağlantı)
+## <a name="build-compile-and-link"></a>Derleme (derleme ve bağlama)
 
-Seçin **yapı** > **yapı çözümü** menüsünde çubuğunu ya da derlemek ve proje bağlamak için Ctrl + Shift + B tuş bileşimini girin. Yürütülebilir kod oluşturmak için Visual Studio kullanan [MSBuild](/visualstudio/msbuild/msbuild1) veya CMake veya belirlediğiniz başka bir yapı ortamı ayarladığınız aracılığıyla **Klasör Aç**. Genel Derleme seçenekleri altında ayarladığınız MSBuild projelerinde **Araçları** > **seçenekleri** > **projeler ve çözümler** ve özelliklerini ayarlama altında belirli projeler için **proje** > **özellikleri**. Derleme hataları ve uyarıları hata listesinde raporlanır (Ctrl +\\, E). MSBuild olmayan projeleri Çözüm Gezgini'nde oluşturduğunuz JSON dosyaları ile yapılandırılır. Ne olursa olsun, sistemi yapı **çıkış** penceresi (Alt + 2) oluşturma işlemi hakkında bilgi gösterir. MSBuild yapılandırmaları hakkında daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md) ve [Visual Studio'da C++ projeleri oluşturma](../ide/building-cpp-projects-in-visual-studio.md).
+Seçin **derleme** > **Çözümü Derle** menüsünde çubuk veya derlemek ve bir proje bağlamak için Ctrl + Shift + B tuş bileşimi girin. Yürütülebilir kodu oluşturmak için Visual Studio kullanan [MSBuild](/visualstudio/msbuild/msbuild1) veya CMake veya her ortamı oluşturmak ayarladığınız aracılığıyla **Klasör Aç**. MSBuild projeleri için genel derleme seçenekleri altında ayarladığınız **Araçları** > **seçenekleri** > **projeler ve çözümler** ve özellikleri ayarlayabilirsiniz. altında belirli projelerin **proje** > **özellikleri**. Derleme hataları ve uyarıları hata olarak raporlanır (Ctrl +\\, E). MSBuild dışındaki projeleri Çözüm Gezgini'nde oluşturduğunuz JSON dosyaları ile yapılandırılır. İnovasyonunuz ne olursa olsun kullanın, sistem yapı **çıkış** penceresi (Alt + 2), yapı işlemi hakkında bilgi gösterir. MSBuild yapılandırmaları hakkında daha fazla bilgi için bkz. [Working with Project Properties](../ide/working-with-project-properties.md) ve [Visual Studio'da C++ proje oluşturma](../ide/building-cpp-projects-in-visual-studio.md).
 
-Derleyici (cl.exe) ve diğer birçok yapı ilgili tek başına Araçlar NMAKE ve LIB gibi doğrudan komut satırından da kullanabilirsiniz. Daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
+Ayrıca, derleyici (cl.exe) ve diğer birçok derlemeyle ilgili tek başına Araçlar NMAKE ve LIB gibi komut satırından doğrudan da kullanabilirsiniz. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../build/building-on-the-command-line.md) ve [C/C++ oluşturma başvurusu](../build/reference/c-cpp-building-reference.md).
 
 ## <a name="test"></a>Test
 
-Visual Studio içeren bir birim testi çerçevesi yerel C++ hem C + +/ CLI. Daha fazla bilgi için bkz: [kullanarak birim testlerini doğrulama kodla](/visualstudio/test/unit-test-your-code) ve [yazma birim C++ için Microsoft birim testi çerçevesi ile C/C++ için testleri](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)
+Visual Studio, hem yerel C++ ve C + için birim test çerçevesi içerir +/ CLI. Daha fazla bilgi için [doğrulama kodunu kullanarak birim testleri tarafından](/visualstudio/test/unit-test-your-code) ve [yazma birim testleri için Microsoft birim testi çerçevesi ile C/C++ için C++](/visualstudio/test/writing-unit-tests-for-c-cpp-with-the-microsoft-unit-testing-framework-for-cpp)
+
+## <a name="analyze"></a>Çözümle
+
+Visual Studio statik kod çözümleme araçları için C++ uygulaması da dahil olmak üzere, içerir [C++ temel yönergeleri](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md) kareler kuralları. Daha fazla bilgi için [Code analysis for C/C++ genel bakış](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
 
 ## <a name="debug"></a>Hata ayıklama
 
-Tuşlarına basarak programınızı ayıklayabilirsiniz **F5** Debug proje yapılandırmanızı ayarlandığında. Hata ayıklama kesme noktaları tuşlarına basarak ayarlayabilirsiniz sırada **F9**, basarak adım kodlarda **F10**, belirtilen değişkenler veya kasaların değerlerini görüntülemek ve bazı durumlarda kodda değişiklik ve bile devam yeniden derleme olmadan hata ayıklama. Daha fazla bilgi için bkz: [Visual Studio'da hata ayıklamayı](/visualstudio/debugger/debugging-in-visual-studio).
+Tuşuna basarak, programınızın hatalarını ayıklayabilir **F5** hata ayıklama, proje yapılandırması ayarlandığında. Hata ayıklarken kesme noktaları tuşlarına basarak ayarlayabilirsiniz **F9**, kodu adımlayın tuşuna basarak **F10**, kayıtları, belirtilen değişkenler ve değerleri görüntülemek ve hatta bazı durumlarda kodda değişiklik ve devam hata ayıklama olmadan yeniden derleniyor. Daha fazla bilgi için [Visual Studio'da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio).
 
-## <a name="deploy-completed-applications"></a>Tamamlanan uygulamaları dağıtma
+## <a name="deploy-completed-applications"></a>Tamamlanan uygulamalar dağıtma
 
-Bir UWP uygulaması Microsoft Store aracılığıyla müşterilere dağıttığınız **proje** > **deposu** menü seçeneği. CRT dağıtımını otomatik olarak arka planda gerçekleştirilir. Daha fazla bilgi için bkz: [satış uygulamaları](http://go.microsoft.com/fwlink/p/?LinkId=262280).
+Bir UWP uygulaması Microsoft Store aracılığıyla müşterilere dağıttığınız **proje** > **Store** menü seçeneği. CRT dağıtımını arka planda otomatik olarak gerçekleştirilir. Daha fazla bilgi için [yayımlama Windows uygulamaları ve oyunları](/windows/uwp/publish/). 
 
-Bir yerel C++ masaüstü uygulaması başka bir bilgisayara dağıtırken, uygulama ve uygulamanın bağımlı herhangi bir kitaplık dosyasını yüklemeniz gerekir. Evrensel C++ çalışma zamanı (UCRT)'bir uygulama ile dağıtmak için üç yolu vardır: merkezi dağıtım, yerel dağıtım veya statik bağlama. Daha fazla bilgi için bkz: [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md).
+C++ yerel bir masaüstü uygulamasını başka bir bilgisayara dağıttığınızda, uygulama ve uygulamanın bağlı olduğu kitaplık dosyalarını yüklemeniz gerekir. Evrensel C++ çalışma zamanı (UCRT)'ile bir uygulama dağıtmanın üç yolu vardır: merkezi dağıtım, yerel dağıtım ya da statik bağlama. Daha fazla bilgi için [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md).
 
 C + dağıtma hakkında daha fazla bilgi için +/ CLI programını bkz [geliştiriciler için Dağıtım Kılavuzu](/dotnet/framework/deployment/deployment-guide-for-developers),
 
@@ -121,10 +129,10 @@ C + dağıtma hakkında daha fazla bilgi için +/ CLI programını bkz [gelişti
 
 |||
 |-|-|
-|[Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Hangi özelliklerin Visual Studio çeşitli sürümlerinde kullanılabilir olduğunu gösterir.|
-|[MSBuild tabanlı projeler oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)|C++ MSBuild tabanlı projeler Visual Studio ve bağlantılar oluşturmak ve bunları yönetmek nasıl açıklayan diğer makaleler için genel bir bakış sağlar.|
-|[Visual C++ projelerinde CMake](cmake-tools-for-visual-cpp.md).|CMake veya diğer MSBuild olmayan projeleri Visual C++'ta nasıl oluşturulacağını açıklar.|
-|[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)|C++ projeleri derleme açıklar.|
-|[Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)|C++ uygulamaları ve ayrıntılı dağıtım açıklayan diğer makalelere bağlantılar için dağıtım genel bir bakış sağlar.|
-|[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)|Visual Studio'nun önceki sürümleri oluşturulan C++ uygulamalarını yükseltme ve ayrıca dışında Visual Studio Araçları ile oluşturulmuş uygulamalar geçirme hakkında ayrıntılı bilgi.|
-|[Visual C++](../visual-cpp-in-visual-studio.md)|Visual Studio ve bağlantıları Visual C++ belge geri kalanı için Visual C++ anahtar özelliklerini açıklar.|
+|[Visual Studio Sürümlerinde Visual C++ Araçları ve Özellikleri](../ide/visual-cpp-tools-and-features-in-visual-studio-editions.md)|Çeşitli Visual Studio sürümlerinde hangi özelliklerin kullanılabilir gösterir.|
+|[MSBuild tabanlı projeler oluşturma ve yönetme](../ide/creating-and-managing-visual-cpp-projects.md)|C++ MSBuild tabanlı projeler Visual Studio ve oluşturmak ve bunları yönetmek nasıl açıklayan diğer makalelere bağlantılar genel bir bakış sağlar.|
+|[Visual C++'da CMake projeleri](cmake-tools-for-visual-cpp.md).|CMake veya diğer MSBuild olmayan projeler Visual C++'ta nasıl oluşturulduğu açıklanır.|
+|[C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)|C++ projeleri nasıl oluşturulduğu açıklanır.|
+|[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)|C++ uygulamaları ve ayrıntılı dağıtım açıklayan diğer makalelere bağlantılar dağıtımına genel bir bakış sunar.|
+|[Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)|Visual Studio'nun önceki sürümlerinde oluşturulan C++ uygulamalarını yükseltme ve ayrıca Visual Studio dışındaki araçlarla oluşturulmuş uygulamaları geçirme hakkında ayrıntılı bilgi.|
+|[Visual C++](../visual-cpp-in-visual-studio.md)|Visual c++ in Visual Studio ve Visual C++ belgelerinin geri kalanı için bağlantıları anahtar özelliklerini açıklar.|

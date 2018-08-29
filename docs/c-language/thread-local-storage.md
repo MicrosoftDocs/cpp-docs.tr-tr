@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f651e7f6f35ceca02003ef24ccda98ada6f6c1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6d6422162d0497ec97c3803e0aace298536cb87a
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596990"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131745"
 ---
 # <a name="thread-local-storage"></a>İş Parçacığında Yerel Depolama
 **Microsoft'a özgü**  
   
- İş parçacığı yerel depolaması (TLS) verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığı için iş parçacığına özgü veri depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacıklarını tam bir açıklaması için bkz: [işlemleri ve iş parçacıklarını](http://msdn.microsoft.com/library/windows/desktop/ms684841) Windows SDK.  
+ İş parçacığı yerel depolaması (TLS) verilen ve çok iş parçacıklı bir işlemdeki her iş parçacığı için iş parçacığına özgü veri depolama alanı ayırdığı mekanizmadır. Standart çok iş parçacıklı programlarda veriler belirli bir işlemin tüm iş parçacıkları arasında paylaşılırken, iş parçacığı yerel depolaması, her iş parçacığı verisi için ayrıma yapan mekanizmadır. İş parçacıklarını tam bir açıklaması için bkz: [işlemleri ve iş parçacıklarını](/windows/desktop/ProcThread/processes-and-threads) Windows SDK.  
   
  Microsoft C dili, genişletilmiş depolama sınıfı özniteliği, __declspec anahtar sözcüğü ile bir iş parçacığı yerel değişkenini bildirmek için kullanılan iş parçacığı içerir. Örneğin, aşağıdaki kod bir tamsayı iş parçacığı yerel değişkeni bildirir ve bir değer ile başlatır:  
   

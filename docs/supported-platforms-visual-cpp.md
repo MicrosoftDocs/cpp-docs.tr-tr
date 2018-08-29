@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58dc932981a0518acf3e48d085417ed49a3fa34
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 521e08b22abb40b6e1b1fedce2375a6e33cc7e73
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608047"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43130790"
 ---
 # <a name="supported-platforms-visual-c"></a>Desteklenen Platformlar (Visual C++)
 
@@ -43,9 +43,9 @@ Visual Studio kullanılarak oluşturulmuş uygulamalar gibi çeşitli platformla
 
 \* Visual Studio 2017, Visual Studio 2015, Visual Studio 2013 ve Visual Studio 2012 güncelleştirme 1 veya daha sonra Windows XP ve Windows Server 2003 projeleri derlemek için dahil Windows XP platform araç takımını kullanabilirsiniz. Bu platform Araç Takımı'nı kullanma hakkında daha fazla bilgi için bkz: [yapılandırma programlar için Windows XP](build/configuring-programs-for-windows-xp.md). Platform araç kümesini değiştirme hakkında ek bilgi için bkz: [nasıl yapılır: hedef Framework ve Platform araç kümesini değiştirme](build/how-to-modify-the-target-framework-and-platform-toolset.md).
 
-\*\* Yükleyebileceğiniz **C++ ile Mobil Geliştirme** iş yükünü Visual Studio Yükleyicisi'nde (veya isteğe bağlı **platformlar arası Mobil Geliştirme için Visual C++** Visual Studio 2015 kurulumundaki bileşen) için Hedef iOS veya Android platformlarını. Yönergeler için [platformlar arası Mobil Geliştirme için Visual C++ yükleme](/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development). İOS Kodu derlemek için bir Mac bilgisayara sahip ve diğer gereksinimleri karşılaması gerekir. Önkoşullar ve yükleme yönergeleri bir listesi için bkz. [yükleme ve yapılandırma araçları iOS kullanarak derlemeye](/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios). X86 veya hedef donanım eşleştirmek için ARM kodu oluşturabilirsiniz. İOS simülatörü, Android için Microsoft Visual Studio öykünücü ve bazı Android cihazlar için oluşturmak için yapılandırmaları x86 kullan. İOS cihazları ve çoğu Android cihazlar için oluşturmak için ARM yapılandırmalar kullanın.
+\*\* Yükleyebileceğiniz **C++ ile Mobil Geliştirme** iş yüküyle Visual Studio 2017 (veya isteğe bağlı **platformlar arası Mobil Geliştirme için Visual C++** Visual Studio 2015 kurulumundaki bileşen) için Hedef iOS veya Android platformlarını. Yönergeler için [platformlar arası Mobil Geliştirme için Visual C++ yükleme](/visualstudio/cross-platform/install-visual-cpp-for-cross-platform-mobile-development). İOS Kodu derlemek için bir Mac bilgisayara sahip ve diğer gereksinimleri karşılaması gerekir. Önkoşullar ve yükleme yönergeleri bir listesi için bkz. [yükleme ve yapılandırma araçları iOS kullanarak derlemeye](/visualstudio/cross-platform/install-and-configure-tools-to-build-using-ios). X86 veya hedef donanım eşleştirmek için ARM kodu oluşturabilirsiniz. İOS simülatörü, Android için Microsoft Visual Studio öykünücü ve bazı Android cihazlar için oluşturmak için yapılandırmaları x86 kullan. İOS cihazları ve çoğu Android cihazlar için oluşturmak için ARM yapılandırmalar kullanın.
 
-\*\*\* Yükleyebileceğiniz **C++ ile Linux geliştirme** Linux platformlarını hedeflemek için Visual Studio Yükleyicisi'nde iş yükü. Yönergeler için [indirin, yükleyin ve Linux iş yükünü Kurulum](linux/download-install-and-setup-the-linux-development-workload.md). Desteklenen her mimari için oluşturmanıza yardımcı olacak bu araç takımı, hedef makinede, yürütülebilir dosyanın derler.
+\*\*\* Yükleyebileceğiniz **C++ ile Linux geliştirme** Linux platformlarını hedeflemek için Visual Studio 2017 yükleyicisindeki iş yükü. Yönergeler için [indirin, yükleyin ve Linux iş yükünü Kurulum](linux/download-install-and-setup-the-linux-development-workload.md). Desteklenen her mimari için oluşturmanıza yardımcı olacak bu araç takımı, hedef makinede, yürütülebilir dosyanın derler.
 
 Hedef platform yapılandırmasını ayarlama hakkında daha fazla bilgi için bkz: [nasıl yapılır: Visual C++ projeleri hedef 64-Bit, x64 yapılandırma platformları](build/how-to-configure-visual-cpp-projects-to-target-64-bit-platforms.md).
 

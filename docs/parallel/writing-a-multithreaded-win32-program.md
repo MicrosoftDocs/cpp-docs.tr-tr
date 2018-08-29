@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 266bb7aa664489ee23c39554ebc91d1f99336f7e
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 98abce752ca02e40be68787d06fa8d4c17ce3e4b
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464650"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131209"
 ---
 # <a name="writing-a-multithreaded-win32-program"></a>Çoklu İş Parçacığı Kullanan Win32 Programı Yazma
 Birden çok iş parçacığı bir programla yazdığınızda, davranışları koordine ve [programın kaynaklarının kullanımını](#_core_sharing_common_resources_between_threads). Ayrıca her bir iş parçacığı aldığından emin olmak gerekir [kendi yığın](#_core_thread_stacks).  
@@ -37,7 +37,7 @@ Birden çok iş parçacığı bir programla yazdığınızda, davranışları ko
 ##  <a name="_core_sharing_common_resources_between_threads"></a> İş parçacıkları arasında ortak kaynakları paylaşma  
   
 > [!NOTE]
->  MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](../parallel/multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](../parallel/multithreading-when-to-use-the-synchronization-classes.md).  
+>  MFC açısından benzer bir tartışma için bkz: [çoklu iş parçacığı kullanımı: programlama ipuçları](multithreading-programming-tips.md) ve [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma zamanı](multithreading-when-to-use-the-synchronization-classes.md).  
   
 Her iş parçacığı kendi yığınını vardır ve kendi CPU kopyasını kaydeder. Dosyaları ve statik veri yığın bellek gibi diğer kaynaklar işlemdeki tüm iş parçacıkları tarafından paylaşılır. Bu ortak kaynakları kullanarak iş parçacıkları eşitlenmelidir. Win32 kaynakları semafor, kritik bölüm, olayları ve mutex'leri dahil olmak üzere, eşitleme için birçok yol sağlar.  
   
@@ -45,7 +45,7 @@ Birden çok iş parçacığı statik verilere erişirken, programınız için ol
   
 Bir mutex (kısaltması *mut*ual *ex*clusion), iş parçacıkları veya başka birine zaman uyumsuz olarak yürütülen işlemler arasında iletişim kurulurken bir yoludur. Bu iletişim, genellikle paylaşılan bir kaynağa erişimi kilitleme ve kaynak kilidi denetleyerek etkinliklerini birden çok iş parçacıkları veya işlemlerdeki, genellikle koordine etmek için kullanılır. Bunu çözmek için *x*,*y* koordinat güncelleştirme sorunu güncelleştirme iş parçacığı veri yapısı güncelleştirmeyi uygulamadan önce kullanımda olduğunu belirten bir mutex ayarlar. Her iki koordinat işlendikten sonra bu mutex'i temizler. Görüntü iş parçacığının görünen güncelleştirmeden önce temizlenmesini mutex beklemelisiniz. Bekleyen bir mutex için bu işlemi, çoğunlukla işlem engellenir ve mutex temizlenene kadar devam edemez çünkü dışlamada engelleme adı verilir.  
   
-Bounce.c programın gösterilen [örnek çoklu iş parçacığı kullanan C programı](../parallel/sample-multithread-c-program.md) adlandırılmış bir mutex kullanan `ScreenMutex` ekran güncelleştirmelerini koordine etmek için. Görüntü iş parçacıklarından ekrana yazmak için hazır olduğu her zaman çağırır `WaitForSingleObject` tanıtıcısını ile `ScreenMutex` ve göstermek için sabit SONSUZ `WaitForSingleObject` çağrı block mutex ve zaman aşımına uğramaz. Varsa `ScreenMutex` bekleme işlevi dışlamayı ayarlar, böylece görüntü ile diğer iş parçacıkları ve iş parçacığını yürütmeye devam ettirir. Mutex temizlenene kadar Aksi takdirde, iş parçacığını engeller. İş parçacığı görüntü güncelleştirme tamamlandığında çağırarak mutex serbest `ReleaseMutex`.  
+Bounce.c programın gösterilen [örnek çoklu iş parçacığı kullanan C programı](sample-multithread-c-program.md) adlandırılmış bir mutex kullanan `ScreenMutex` ekran güncelleştirmelerini koordine etmek için. Görüntü iş parçacıklarından ekrana yazmak için hazır olduğu her zaman çağırır `WaitForSingleObject` tanıtıcısını ile `ScreenMutex` ve göstermek için sabit SONSUZ `WaitForSingleObject` çağrı block mutex ve zaman aşımına uğramaz. Varsa `ScreenMutex` bekleme işlevi dışlamayı ayarlar, böylece görüntü ile diğer iş parçacıkları ve iş parçacığını yürütmeye devam ettirir. Mutex temizlenene kadar Aksi takdirde, iş parçacığını engeller. İş parçacığı görüntü güncelleştirme tamamlandığında çağırarak mutex serbest `ReleaseMutex`.  
   
 Ekran görüntüleri ve statik veriler yalnızca dikkatli yönetim gerektiren kaynaklara ikisidir. Örneğin, programınız aynı dosyaya erişen birden çok iş parçacığı sayısı olabilir. Dosya işaretçisini başka bir iş parçacığı taşınmış olduğundan, her iş parçacığı okuma veya yazma önce dosya işaretçisini sıfırlamanız gerekir. Ayrıca, her iş parçacığı, işaretçiyi vakit dosyasına erişir arasında etkisiz hale değil, emin olmanız gerekir. Bu iş parçacıkları ile her dosya erişimi köşeli ayraç kullanarak dosyaya erişim koordine etmek için semafor kullanmalısınız `WaitForSingleObject` ve `ReleaseMutex` çağırır. Aşağıdaki kod örneği, bu teknik gösterilmektedir:  
   
@@ -68,8 +68,8 @@ C çalışma zamanı kitaplığı veya Win32 API çağrılarını iş parçacık
   
 Her iş parçacığı kendi yığınını olduğundan, veri öğeleri üzerinde olası çakışmaları mümkün olduğunca az statik veri kullanarak önleyebilirsiniz. Programınızı otomatik yığın değişkenleri bir iş parçacığına özel tüm veriler için kullanılacak tasarlayın. Yalnızca genel Bounce.c programındaki mutex'leri ya da başlatıldıktan sonra hiçbir zaman değiştirme değişkenleri değişkenlerdir.  
   
-Win32 iş parçacığı yerel depolama (iş parçacığı başına verileri depolamak için TLS) de sağlar. Daha fazla bilgi için [iş parçacığı yerel depolaması (TLS)](../parallel/thread-local-storage-tls.md).  
+Win32 iş parçacığı yerel depolama (iş parçacığı başına verileri depolamak için TLS) de sağlar. Daha fazla bilgi için [iş parçacığı yerel depolaması (TLS)](thread-local-storage-tls.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-c-and-win32.md)
+[C ve Win32 ile Çoklu İş Parçacığı Kullanımı](multithreading-with-c-and-win32.md)

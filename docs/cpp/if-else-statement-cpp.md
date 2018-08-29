@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15748249a39813edc4446fa25511d20361b0706c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e4aea3a0125e2712203eb668197d42bd850aef5e
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405116"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131897"
 ---
 # <a name="if-else-statement-c"></a>if-else Deyimi (C++)
 Koşullu dallanmayı denetler. Deyimlerinde *If Bloğu* yalnızca yürütülen *IF ifadesi* bir sıfır olmayan bir değer (veya TRUE) değerlendirir. Varsa değerini *ifade* sıfır değilse, *Deyim1* bloğundaki herhangi bir deyim yürütülür ve else-bloğu, varsa atlanır. Varsa değerini *ifade* sıfırsa, ardından If Bloğu atlanır ve else-bloğu, varsa yürütülür. Sıfır olmayan için değerlendirme ifadeler
@@ -119,7 +119,8 @@ int main()
     }
 }
 ```  
-## <a name="if-statement-with-an-initializer"></a>bir başlatıcı with deyimi
+## <a name="if_with_init"></a> bir başlatıcı with deyimi
+
 **Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): bir **varsa** ifadesi bildirir ve adlandırılmış bir değişken başlatır bir ifade içerebilir. If Bloğu kapsamında değişken yalnızca gerektiğinde bu tür bir IF deyimi kullanın. 
 
 ```cpp
@@ -169,8 +170,8 @@ int main()
   
  **Başka** yan tümcesi bir `if...else` deyimi en yakın ilişkili önceki **varsa** deyimi karşılık gelen sahip değil aynı kapsamda **başka** deyimi.   
 
-## <a name="constexpr-if-statements"></a>constexpr varsa deyimleri
-**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlev şablonlarında kullanabilirsiniz bir `constexpr if` derleme zamanı dallanma birden çok başvurmadan gerek kalmadan kararları vermek için deyimi işlev aşırı yüklemelerinin. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz: 
+## <a name="a-nameifconstexpr-if-constexpr-statements"></a><a name="if_constexpr"> constexpr deyimleri
+**Visual Studio 2017 sürüm 15.3 ve üzeri** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)): işlev şablonlarında kullanabilirsiniz bir **, constexpr** deyimi olmadan derleme zamanı dallanma kararları vermek için birden çok işlev aşırı yükleme başvurmadan zorunda. Örneğin, tek bir işlev, (hiçbir sıfır parametresi aşırı yüklemesi gerekli değildir) bu tanıtıcıları parametresi açmak yazabilirsiniz: 
 
 ```cpp
 template <class T, class... Rest>
@@ -180,9 +181,8 @@ void f(T&& t, Rest&&... r)
    do_something(t);
 
    // handle r conditionally
-   constexpr if (sizeof...(r)) 
+   if constexpr (sizeof...(r)) 
    {
-      
       f(r...); 
    }
    else

@@ -60,7 +60,7 @@ void _aligned_free (
 
 **_aligned_free** işaretlenmiş `__declspec(noalias)`, işlevin genel değişkenleri garanti anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md).
 
-Bu işlev bir _aligned CRT işlevlerinin aksine, parametresinin doğrulamaz. Varsa *memblock* bir NULL işaretçiyse, bu işlev yalnızca eylem gerçekleştirir. Değiştirme `errno` ve geçersiz parametre işleyicisi çağırma kullanılamaz. _Aligned işlevleri daha önce bellek bloğu ayrılamadı kullanmayan nedeniyle işlevi içinde bir hata oluşursa veya bazı öngörülemeyen calamity nedeniyle bellek hizalanması gerçekleşir, işlev bir hata ayıklama raporu oluşturur [_RPT, _RPTF, _RPTW, _ Rptfw makrosu](rpt-rptf-rptw-rptfw-macros.md).
+Bu işlev bir _aligned CRT işlevlerinin aksine, parametresinin doğrulamaz. Varsa *memblock* bir NULL işaretçiyse, bu işlev yalnızca eylem gerçekleştirir. Değiştirme `errno` ve geçersiz parametre işleyicisi çağırma kullanılamaz. _Aligned işlevleri daha önce bellek bloğu ayrılamadı kullanmayan nedeniyle işlevi içinde bir hata oluşursa veya bazı öngörülemeyen calamity nedeniyle bellek hizalanması gerçekleşir, işlev bir hata ayıklama raporu oluşturur [_RPT, _RPTF, _RPTW, _Rptfw makrosu](rpt-rptf-rptw-rptfw-macros.md).
 
 ## <a name="requirements"></a>Gereksinimler
 

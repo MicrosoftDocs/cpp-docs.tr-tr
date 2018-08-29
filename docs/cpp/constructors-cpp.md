@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f60ba71a82bf09361e55f8c6b7cab82f49d47bd
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: d90a3f4b2cbacb3071dcd552fd88f6cb11bb5d43
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464474"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131848"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -598,7 +598,7 @@ Herhangi bir oluşturucunun işi biter bitmez, oluşturucular tarafından oluşt
 
 ## <a name="inheriting_constructors"></a> Devralma oluşturucular (C ++ 11)
 
-Türetilmiş bir sınıf kullanarak bir kullanarak oluşturucular doğrudan temel sınıftan devralıp aşağıdaki örnekte gösterildiği gibi bildirimi:
+Türetilmiş bir sınıf kullanarak oluşturucular doğrudan temel sınıftan devralıp bir **kullanarak** aşağıdaki örnekte gösterildiği gibi bildirimi:
 
 ```cpp
 #include <iostream>
@@ -647,7 +647,7 @@ Derived d3 = d2 calls: Base(Base&)
 Derived d4 calls: Base()*/
 ```
 
-Using deyimi, temel sınıftan türetilmiş bir sınıf içindeki Oluşturucu ile aynı imzaya sahip olanlar dışındaki tüm oluşturucular kapsamına getirir. Genel olarak, devralma oluşturucuları türetilen sınıfın yeni hiçbir veri üyeleri bildirir olduğunda veya oluşturucuları kullanmak en iyisidir.
+**Visual Studio 2017 sürüm 15.7 ve üzeri**: **kullanarak** deyiminde **/Std: c ++ 17** modu, tüm oluşturucular dışında aynı imzaya sahip bir temel sınıftan kapsamına getirir türetilmiş sınıf oluşturucular için. Genel olarak, devralma oluşturucuları türetilen sınıfın yeni hiçbir veri üyeleri bildirir olduğunda veya oluşturucuları kullanmak en iyisidir. Ayrıca bkz: [Visual Studio 2017 sürüm 15.7 geliştirmeleri](../cpp-conformance-improvements-2017.md#improvements_157).
 
 Bu tür bir temel sınıf belirtiyorsa bir sınıf şablonunun tür bağımsız değişkeninden tüm oluşturucuları devralabilir:
 

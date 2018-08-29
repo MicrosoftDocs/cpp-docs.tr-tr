@@ -1,7 +1,7 @@
 ---
-title: 'Çoklu iş parçacığı kullanımı: Kullanıcı arabirimi iş parçacıkları oluşturma | Microsoft Docs'
+title: 'Çoklu iş parçacığı kullanımı: MFC kullanıcı arabirimi iş parçacıkları oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-parallel
 ms.topic: conceptual
@@ -21,14 +21,14 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0223e342bf2312919247d42564445a9e116ca59b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 625518a76bb22c60a41175e649af7ae650161494
+ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607401"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "43131566"
 ---
-# <a name="multithreading-creating-user-interface-threads"></a>Çoklu İş Parçacığı Kullanımı: Kullanıcı Arabirimi İş Parçacıkları Oluşturma
+# <a name="multithreading-creating-mfc-user-interface-threads"></a>Çoklu iş parçacığı kullanımı: MFC kullanıcı arabirimi iş parçacıkları oluşturma
 Bir kullanıcı arabirimi iş parçacığı, genellikle kullanıcı girişlerini işler ve uygulamanın diğer kısımlarını çalışan iş parçacıklarının bağımsız olarak kullanıcı olayları yanıtlamak için kullanılır. Ana uygulama iş parçacığı (sağlanan, `CWinApp`-türetilmiş sınıf) zaten oluşturulur ve sizin için başlatıldı. Bu konu, ek kullanıcı arabirimi iş parçacığı oluşturmak gereken adımları açıklar.  
   
 Bir kullanıcı arabirimi iş parçacığı oluşturulurken gerçekleştirmelisiniz ilk öğesinden bir sınıf türetin şeydir [CWinThread](../mfc/reference/cwinthread-class.md). Bildirme ve bunu kullanarak sınıf [DECLARE_DYNCREATE](../mfc/reference/run-time-object-model-services.md#declare_dyncreate) ve [IMPLEMENT_DYNCREATE](../mfc/reference/run-time-object-model-services.md#implement_dyncreate) makroları. Bu sınıf, bazı işlevler geçersiz kılmanız gerekir ve diğerlerini geçersiz kılabilir. Aşağıdaki tabloda, bu işlevler ve bunların ne yapması gerektiğini sunulur.  
@@ -37,13 +37,12 @@ Bir kullanıcı arabirimi iş parçacığı oluşturulurken gerçekleştirmelisi
   
 |İşlev|Amaç|  
 |--------------|-------------|  
-
-|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)| İş parçacığı sonlandığında temizleme işlemi gerçekleştirin. Genellikle geçersiz kılındı. |  
-|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)| İş parçacığı örneği başlatma gerçekleştirin. Geçersiz kılınmalıdır. |  
-|[ONIDLE](../mfc/reference/cwinthread-class.md#onidle)| İş parçacığına özgü boşta kalma süresi işlemini gerçekleştirin. Genellikle geçersiz kılınmaz. |  
-|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)| İletileri için dağıtılmadan önce filtrelemek `TranslateMessage` ve `DispatchMessage`. Genellikle geçersiz kılınmaz. |  
-|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)| İş parçacığının ve ileti işleyici tarafından oluşturulan yakalanamayan özel durum uğratabilir. Genellikle geçersiz kılınmaz. |  
-|[Çalıştırma](../mfc/reference/cwinthread-class.md#run)| Denetleme işlevi iş parçacığı için. İleti pompası içerir. Nadiren geçersiz kılındı. |  
+|[ExitInstance](../mfc/reference/cwinthread-class.md#exitinstance)|İş parçacığı sonlandığında temizleme işlemi gerçekleştirin. Genellikle geçersiz kılınmış.|  
+|[InitInstance](../mfc/reference/cwinthread-class.md#initinstance)|İş parçacığı örneği başlatma gerçekleştirin. Geçersiz kılınmalıdır.|  
+|[ONIDLE](../mfc/reference/cwinthread-class.md#onidle)|İş parçacığına özgü boşta kalma süresi işlemini gerçekleştirin. Genellikle geçersiz kılınmaz.|  
+|[PreTranslateMessage](../mfc/reference/cwinthread-class.md#pretranslatemessage)|İletileri için dağıtılmadan önce filtrelemek `TranslateMessage` ve `DispatchMessage`. Genellikle geçersiz kılınmaz.|  
+|[ProcessWndProcException](../mfc/reference/cwinthread-class.md#processwndprocexception)|İş parçacığının ve ileti işleyici tarafından oluşturulan yakalanamayan özel durum uğratabilir. Genellikle geçersiz kılınmaz.|  
+|[Çalıştırma](../mfc/reference/cwinthread-class.md#run)|Denetleme işlevi iş parçacığı için. İleti pompası içerir. Nadiren geçersiz kılınmış.|  
 
   
 MFC sağlayan iki sürümünü `AfxBeginThread` parametresi aşırı yükleme yoluyla: biri yalnızca bir kullanıcı arabirimi iş parçacıkları veya çalışan iş parçacıkları oluşturabilirsiniz ve bir çalışan iş parçacıkları oluşturabilirsiniz. İkinci aşırı yüklemesi, kullanıcı arabirimi iş parçacığı için çağrı [AfxBeginThread](../mfc/reference/application-information-and-management.md#afxbeginthread), aşağıdaki bilgileri sağlayarak:  
@@ -62,12 +61,12 @@ MFC sağlayan iki sürümünü `AfxBeginThread` parametresi aşırı yükleme yo
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
-- [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](../parallel/multithreading-terminating-threads.md)  
+- [Çoklu İş Parçacığı Kullanımı: İş Parçacıklarını Sonlandırma](multithreading-terminating-threads.md)  
   
-- [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../parallel/multithreading-creating-worker-threads.md)  
+- [Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](multithreading-creating-worker-threads.md)  
   
-- [İşlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms684841)  
+- [İşlemler ve iş parçacıkları](/windows/desktop/ProcThread/processes-and-threads)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  
-[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](../parallel/multithreading-with-cpp-and-mfc.md)
+[C++ ve MCF ile Çoklu İş Parçacığı Kullanımı](multithreading-with-cpp-and-mfc.md)

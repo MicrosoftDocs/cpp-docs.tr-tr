@@ -176,7 +176,7 @@ STDMETHOD(Next)(
  *celt*  
  [in] İstenen öğe sayısı.  
   
- *http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp*  
+ *rgelt*  
  [out] Öğeleri ile doldurulacak dizisi.  
   
  *pceltFetched*  
