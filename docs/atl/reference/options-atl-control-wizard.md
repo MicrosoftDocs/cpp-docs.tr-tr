@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1fa026ecb0b25c17a793c31c3f64dcd0186f0e1
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 92c3ece3ddef00161a769c0c45a4d31712d6f691
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880106"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208767"
 ---
 # <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
 "Arama sonuçları" Özet buraya ekleyin.  
@@ -78,7 +78,7 @@ ms.locfileid: "37880106"
   
 -   **Özel**: doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.  
   
-     Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](http://msdn.microsoft.com/library/windows/desktop/ms692621) daha fazla bilgi için Windows SDK.  
+     Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](/windows/desktop/com/marshaling-details) daha fazla bilgi için Windows SDK.  
   
      Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemler için tüm parametreleri VARYANT olmalıdır uyumlu.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "37880106"
   
 -   **Bağlantı noktaları**: nesneniz için bağlantı noktaları sağlar, nesnenin sınıfı türetilen yaparak [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma izin veren.  
   
--   **Lisanslı**: denetim için destek ekler [lisanslama](http://msdn.microsoft.com/library/windows/desktop/ms690543). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.  
+-   **Lisanslı**: denetim için destek ekler [lisanslama](/windows/desktop/com/licensing). Lisanslı Denetimler, yalnızca istemci makinede doğru lisansa varsa barındırılabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)

@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 359a7ff75b2036960d8d8ffd40200f9175ccc21c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c0fbc3914f10bacdd286fe89c3e82de78b726cfc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960706"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216867"
 ---
 # <a name="coledatetime-class"></a>COleDateTime sınıfı
 Kapsülleyen `DATE` OLE Otomasyonu nesnesi etkin kullanılan veri türü.  
@@ -74,7 +74,7 @@ class COleDateTime
 |----------|-----------------|  
 |[COleDateTime::Format](#format)|Bir biçimlendirilmiş dize gösterimini oluşturur bir `COleDateTime` nesne.|  
 |[COleDateTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir `DBTIMESTAMP` veri yapısı.|  
-|[COleDateTime::GetAsSystemTime](#getassystemtime)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) veri yapısı.|  
+|[COleDateTime::GetAsSystemTime](#getassystemtime)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` nesnesinin bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) veri yapısı.|  
 |[COleDateTime::GetAsUDATE](#getasudate)|Sürede elde etmek için bu yöntemi çağırın `COleDateTime` olarak bir `UDATE` veri yapısı.|  
 |[COleDateTime::GetCurrentTime](#getcurrenttime)|Oluşturur bir `COleDateTime` (statik üye işlevini) geçerli zamanı temsil eden nesne.|  
 |[COleDateTime::GetDay](#getday)|Bu günlük döndürür `COleDateTime` nesnesi (1-31) temsil eder.|  
@@ -217,7 +217,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
  A `SYSTEMTIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne.  
   
  *filetimeSrc*  
- A `FILETIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](http://msdn.microsoft.com/library/windows/desktop/ms724290) daha fazla bilgi için Windows SDK.  
+ A `FILETIME` yapısı bir tarih/saat değerine dönüştürülür ve yeni kopyalanan `COleDateTime` nesne. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.  
   
  *nYear*, *nMonth*, *nhatalı günü*, *nHour*, *nMin*, *nSec*  
  Yeni içine kopyalanacak tarih ve saat değerleri gösterir `COleDateTime` nesne.  
@@ -256,7 +256,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
 - `COleDateTime(` *systimeSrc* **)** oluşturan bir `COleDateTime` nesnesinden bir `SYSTEMTIME` değeri.  
   
-- `COleDateTime(` `filetimeSrc` **)** Oluşturan bir `COleDateTime` nesnesinden bir `FILETIME` değeri. biçimindeki telefon numarasıdır. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](http://msdn.microsoft.com/library/windows/desktop/ms724290) daha fazla bilgi için Windows SDK.  
+- `COleDateTime(` `filetimeSrc` **)** Oluşturan bir `COleDateTime` nesnesinden bir `FILETIME` değeri. biçimindeki telefon numarasıdır. Unutmayın `FILETIME` Eşgüdümlü Evrensel Saat (UTC) kullanan yerel saati yapısında geçirirseniz, sonuçlarınızı yanlış olur. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.  
   
 - `COleDateTime(` `nYear``nMonth`, `nDay`, `nHour`, `nMin`, `nSec` **)** Oluşturan bir `COleDateTime` nesnesinden belirtilen sayısal değerler.  
   
@@ -264,7 +264,7 @@ COleDateTime(const DBTIMESTAMP& dbts) throw();
   
  Daha fazla bilgi için `time_t` veri türünü görmek [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi *çalışma zamanı kitaplığı başvurusu*.  
   
- Daha fazla bilgi için [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) yapıları, Windows SDK'sı.  
+ Daha fazla bilgi için [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapıları, Windows SDK'sı.  
   
  Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   
@@ -294,7 +294,7 @@ CString Format(UINT nFormatID) const;
 - VAR_DATEVALUEONLY Ayrıştırma sırasında saat kısmının yoksayın.  
   
  *lcid*  
- Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir. Dil tanımlayıcıları hakkında daha fazla bilgi için bkz. [Dil tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/dd318691).  
+ Dönüştürme için kullanılacak yerel ayar Kimliğini belirtir. Dil tanımlayıcıları hakkında daha fazla bilgi için bkz. [Dil tanımlayıcıları](/windows/desktop/Intl/language-identifiers).  
   
  *lpszFormat*  
  Bir biçimlendirme dizesi benzer `printf` biçimlendirme dizesi. Her bir yüzde öncesinde, kod biçimlendirme ( `%`) oturum açın, ilgili değiştirilir `COleDateTime` bileşeni. Biçimlendirme dizesi diğer karakterler döndürülen dizeye değiştirilmeden kopyalanır. Çalışma zamanı işlevi görmek [strftime](../../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) daha fazla bilgi için. Değer ve biçimlendirme kodları anlamını `Format` şunlardır:  
@@ -359,7 +359,7 @@ bool GetAsSystemTime(SYSTEMTIME& sysTime) const throw();
   
 ### <a name="parameters"></a>Parametreler  
  *sysTime*  
- Bir başvuru bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.  
+ Bir başvuru bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerinden almaya yapısı `COleDateTime` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sahipse TRUE değerini döndürür; FALSE dönüştürme başarısız olursa veya `COleDateTime` nesnedir NULL veya geçersiz.  
@@ -772,17 +772,17 @@ COleDateTime& operator=(const UDATE& udate) throw();
   
 - **operator = (** `timeSrc` **)** `time_t` veya `__time64_t` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.  
   
-- **operator = (** *systimeSrc* **)** [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.  
+- **operator = (** *systimeSrc* **)** [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz.  
   
 - **operator = (** `udate` **)** `UDATE` değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; başarısız ayarlanmış olup olmadığını geçersiz. A `UDATE` yapısı "paketten çıkarılan" bir tarihi temsil eder. İşlevi görmek [VarDateFromUdate](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-vardatefromudate) daha fazla ayrıntı için.  
   
-- **operator = (** `filetimeSrc` **)** [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; Aksi takdirde ayarlamak için geçersiz. `FILETIME` UTC saati yapısında geçirirseniz, sonuçlarınızı UTC zamanından yerel saate dönüştürülür ve değişken zaman olarak depolanacak şekilde Eşgüdümlü Evrensel Saat (UTC) kullanır. Bu davranış Visual C++ 6.0 ve Visual C++ .NET 2003 SP2 için de aynıdır. Bkz: [dosya zamanlarını](http://msdn.microsoft.com/library/windows/desktop/ms724290) daha fazla bilgi için Windows SDK.  
+- **operator = (** `filetimeSrc` **)** [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) değere dönüştürülür ve bu kopyalanan `COleDateTime` nesne. Dönüştürme başarılı olursa, bu nesnenin durumu geçerli ayarlanır; Aksi takdirde ayarlamak için geçersiz. `FILETIME` UTC saati yapısında geçirirseniz, sonuçlarınızı UTC zamanından yerel saate dönüştürülür ve değişken zaman olarak depolanacak şekilde Eşgüdümlü Evrensel Saat (UTC) kullanır. Bu davranış Visual C++ 6.0 ve Visual C++ .NET 2003 SP2 için de aynıdır. Bkz: [dosya zamanlarını](/windows/desktop/SysInfo/file-times) daha fazla bilgi için Windows SDK.  
   
  Daha fazla bilgi için [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girişi.  
   
  Daha fazla bilgi için `time_t` veri türünü görmek [zaman](../../c-runtime-library/reference/time-time32-time64.md) işlevi *çalışma zamanı kitaplığı başvurusu*.  
   
- Daha fazla bilgi için [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) yapıları, Windows SDK'sı.  
+ Daha fazla bilgi için [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapıları, Windows SDK'sı.  
   
  Sınırları hakkında daha fazla bilgi için `COleDateTime` değerleri başlıklı makaleye bakın [tarih ve saat: Otomasyon desteği](../../atl-mfc-shared/date-and-time-automation-support.md).  
   

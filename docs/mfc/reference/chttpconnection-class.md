@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03e773e57b4cdaee09331dab651f41f1fa8db211
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bbc42f1af6dab8c34c6092e604682669ab18b9bb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336068"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211583"
 ---
 # <a name="chttpconnection-class"></a>CHttpConnection sınıfı
 HTTP sunucusuyla olan bağlantınızı yönetir.  
@@ -129,7 +129,7 @@ CHttpConnection(
 |BOŞ olmayan bir dize|BOŞ olmayan bir dize|*pstrUserName*|*pstrPassword*|  
   
  *CertOpenStore*  
- Herhangi bir birleşimini **INTERNET_ FLAG_\***  bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) açıklamasını *CertOpenStore* değerleri.  
+ Herhangi bir birleşimini `INTERNET_FLAG_*` bayrakları. Bölümündeki tabloya bakın **açıklamalar** bölümünü [CHttpConnection::OpenRequest](#openrequest) açıklamasını *CertOpenStore* değerleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Asla oluşturma bir `CHttpConnection` doğrudan. Bunun yerine, çağırarak bir nesne oluşturma [CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).  

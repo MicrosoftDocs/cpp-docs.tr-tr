@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15bddcf3d94935f56fa2e23b6ebd0398ed379c54
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 88cf46d6352f0f58a91f4e5571006090ec693c42
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34569855"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215704"
 ---
 # <a name="getosfhandle"></a>_get_osfhandle
 
-Belirtilen dosya tanımlayıcısı ile ilişkili işletim sistemi dosya işleci alır.
+Belirtilen dosya tanımlayıcı ile ilişkili olan işletim sistemi dosya tanıtıcısı alır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,15 +57,15 @@ intptr_t _get_osfhandle(
 ### <a name="parameters"></a>Parametreler
 
 *FD*<br/>
-Varolan bir dosya tanımlayıcısı.
+Var olan bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya tanıtıcısı belirten. Derleyici uyarısı sonucu bir Win32 dosya işleci beklediğiniz çalışmalarında kullanıldığında önlemek için hangisine bir **İŞLEMEK** türü.
+Bir işletim sistemi dosya tanıtıcısı döndürür *fd* geçerlidir. Aksi takdirde, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **INVALID_HANDLE_VALUE** (-1) ve ayarlar **errno** için **EBADF**, geçersiz bir dosya işlemesi belirten. Sonucu bir Win32 dosya işleci beklediğiniz çalışmalarında kullanıldığında, bir derleyici uyarısı önlemek için yayınlayacağınızı bir **İŞLEMEK** türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İşletim sistemi (OS) dosya işleyici tarafından elde edilir bir dosyayı kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Çağırmayın **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya işleci tarafından sahip olunan *fd* tanımlayıcısı dosya ve ne zaman kapalı [_close](close.md) üzerinde adlı *fd*. Dosya tanımlayıcısı aitse bir **dosya \***  stream, ardından çağırma [fclose](fclose-fcloseall.md) üzerindeki **dosya \***  akış dosya tanımlayıcısı kapatır ve temel işletim sistemi dosya işleci. Bu durumda, çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
+Bir dosya olan işletim sistemi (OS) dosya tanıtıcısı ile elde edilir kapatmak için **_get_osfhandle**, çağrı [_close](close.md) dosya tanımlayıcısı üzerinde *fd*. Çağırmayın **CloseHandle** bu işlevin dönüş değeri. Temel işletim sistemi dosya tanıtıcısı tarafından sahip olunan *fd* dosya tanımlayıcısı ve kapatılır [_close](close.md) üzerinde çağrılır *fd*. Dosya tanımlayıcısı aitse bir `FILE *` akış, ardından arama [fclose](fclose-fcloseall.md) üzerindeki `FILE *` hem dosya tanımlayıcısı hem de temel alınan işletim sistemi dosya tanıtıcısı akışı kapatır. Bu durumda, çağırmayın [_close](close.md) üzerinde dosya tanımlayıcısı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,7 +73,7 @@ Bir işletim sistemi dosya işleci döndürür *fd* geçerlidir. Aksi takdirde, 
 |-------------|---------------------|
 |**_get_osfhandle**|\<io.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

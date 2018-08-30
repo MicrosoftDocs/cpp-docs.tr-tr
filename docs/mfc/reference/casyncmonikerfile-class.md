@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d16279b4de6c0cca0d37161a37ce5e39b85b7b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b0e961ecf45458dc039b932bdcc96c3bcc6f7521
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339364"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196338"
 ---
 # <a name="casyncmonikerfile-class"></a>CAsyncMonikerFile sınıfı
 ActiveX denetimlerinde zaman uyumsuz adların kullanılması için işlevsellik sağlar (eski adı OLE denetimleri).  
@@ -89,7 +89,7 @@ class CAsyncMonikerFile : public CMonikerFile
 |[CAsyncMonikerFile::OnStopBinding](#onstopbinding)|Zaman uyumsuz aktarım bittiğinde çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Öğesinden türetilen [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), hangi sırayla türetilmiş olan [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` kullanan [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) herhangi bir veri akışına erişmek için arabirimi zaman uyumsuz olarak dosyalarını bir URL'den zaman uyumsuz olarak yükleme dahil olmak üzere. Dosyaları datapath ActiveX denetimlerinin özelliklerini olabilir.  
+ Öğesinden türetilen [CMonikerFile](../../mfc/reference/cmonikerfile-class.md), hangi sırayla türetilmiş olan [COleStreamFile](../../mfc/reference/colestreamfile-class.md), `CAsyncMonikerFile` kullanan [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) herhangi bir veri akışına erişmek için arabirimi zaman uyumsuz olarak dosyalarını bir URL'den zaman uyumsuz olarak yükleme dahil olmak üzere. Dosyaları datapath ActiveX denetimlerinin özelliklerini olabilir.  
   
  Zaman uyumsuz adlar, öncelikle Internet özellikli uygulamalar ve ActiveX denetimleri, hızlı yanıt veren bir kullanıcı arabirimi dosya aktarımlarında sağlamak için kullanılır. Bu prime örneği kullanımıdır [CDataPathProperty](../../mfc/reference/cdatapathproperty-class.md) ActiveX denetimleri için zaman uyumsuz özellikler sağlamak için. `CDataPathProperty` Nesnesi tekrar tekrar uzun özelliği değişimi sırasında yeni verilerin kullanılabilirliğini belirtmek için bir geri alma.  
   
@@ -156,7 +156,7 @@ virtual IUnknown* CreateBindStatusCallback(IUnknown* pUnkControlling);
   
  [CAsyncMonikerFile::Open](#open) çağrıları `CreateBindStatusCallback`.  
   
- Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz. [IBindStatusCallback](http://msdn.microsoft.com/library/ie/ms775060) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](http://msdn.microsoft.com/library/windows/desktop/aa379152). Toplama için bkz [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Tüm üç Windows SDK'da konulardır.  
+ Zaman uyumsuz adlar ve zaman uyumsuz bağlama hakkında daha fazla bilgi için bkz. [IBindStatusCallback](https://msdn.microsoft.com/library/ie/ms775060) arabirimi ve [ne zaman uyumsuz bağlama ve depolama iş](/windows/desktop/Stg/how-asynchronous-binding-and-storage-work). Toplama için bkz [toplama](/windows/desktop/com/aggregation). Tüm üç Windows SDK'da konulardır.  
   
 ##  <a name="getbindinfo"></a>  CAsyncMonikerFile::GetBindInfo  
  Nasıl bağlanacağını istediği zaman uyumsuz ad bildirmek için istemciden zaman uyumsuz bir bilinen ad'ın adı.  
@@ -196,7 +196,7 @@ FORMATETC* GetFormatEtc() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Windows yapısı işaretçisi [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) şu anda açılan içerik akışı için. Zaman uyumsuz değilse, ad, bağlı değil veya zaman uyumsuz işlem başlatılmamıştır yoksa NULL döndürülür.  
+ Windows yapısı işaretçisi [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) şu anda açılan içerik akışı için. Zaman uyumsuz değilse, ad, bağlı değil veya zaman uyumsuz işlem başlatılmamıştır yoksa NULL döndürülür.  
   
 ##  <a name="getpriority"></a>  CAsyncMonikerFile::GetPriority  
  İş parçacığına bağlama işlemi için verilen öncelik almak bağlama işlemi başlattığında çağrılan zaman uyumsuz bir bilinen ad istemci.  
@@ -206,7 +206,7 @@ virtual LONG GetPriority() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Öncelik, zaman uyumsuz aktarımı yerini alacak. Standart iş parçacığı önceliği bayrakları birini: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Windows işlevi görmek [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) bu değerleri bir açıklaması.  
+ Öncelik, zaman uyumsuz aktarımı yerini alacak. Standart iş parçacığı önceliği bayrakları birini: THREAD_PRIORITY_ABOVE_NORMAL, THREAD_PRIORITY_BELOW_NORMAL, THREAD_PRIORITY_HIGHEST, THREAD_PRIORITY_IDLE, THREAD_PRIORITY_LOWEST, THREAD_PRIORITY_NORMAL ve THREAD_PRIORITY_TIME_CRITICAL. Windows işlevi görmek [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) bu değerleri bir açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `GetPriority` doğrudan çağrılmamalıdır. THREAD_PRIORITY_NORMAL varsayılan uygulama tarafından döndürülür.  
