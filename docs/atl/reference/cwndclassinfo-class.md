@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b328cb869f971afb0251750d7847d6850688731
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 11f61e89ab888b678bf54f65b999c0fd4394dbea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879841"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201668"
 ---
 # <a name="cwndclassinfo-class"></a>Cwndclassınfo sınıfı
 Bu sınıf, bir pencere sınıfının bilgileri kaydetmek için yöntemler sağlar.  
@@ -79,7 +79,7 @@ class CWndClassInfo
   
  [!code-cpp[NVC_ATL_Windowing#43](../../atl/codesnippet/cpp/cwndclassinfo-class_1.h)]  
   
- Pencere sınıfları hakkında daha fazla bilgi için bkz: [pencere sınıfları](http://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK.  
+ Pencere sınıfları hakkında daha fazla bilgi için bkz: [pencere sınıfları](https://msdn.microsoft.com/library/windows/desktop/ms632596) Windows SDK.  
   
  ATL kullanarak hakkında daha fazla bilgi için bkz [ATL pencere sınıfları](../../atl/atl-window-classes.md).  
   
@@ -138,7 +138,7 @@ TCHAR m_szAutoName[13];
  `CWndClassInfo` kullanan `m_szAutoName` NULL geçirilirse yalnızca `WndClassName` parametresi [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class), [DECLARE_WND_CLASS_EX](window-class-macros.md#declare_wnd_class_ex) veya [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) . Pencere sınıfı kaydedildiğinde ATL bir ad oluşturmak.  
   
 ##  <a name="m_wc"></a>  CWndClassInfo::m_wc  
- Pencere sınıfı bilgileri tutar bir [WNDCLASSEX](http://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.  
+ Pencere sınıfı bilgileri tutar bir [WNDCLASSEX](https://msdn.microsoft.com/library/windows/desktop/ms633577) yapısı.  
   
 ```
 WNDCLASSEX m_wc;

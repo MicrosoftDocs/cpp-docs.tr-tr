@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67e4c1755a4d7e5da451305260d4f88ac2c938bf
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e9932f8814855213f133323f2102e0cacf1e69c8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027894"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196717"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 Windows düğme denetimleri işlevlerini sağlar.  
@@ -360,7 +360,7 @@ BOOL GetIdealSize(SIZE* psize);
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi BCM_GETIDEALSIZE ileti işlevselliğini açıklandığı öykünür [düğmeleri](http://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
+ Bu üye işlevi BCM_GETIDEALSIZE ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
   
 ##  <a name="getimagelist"></a>  CButton::GetImageList  
  Görüntü listesi düğme denetiminden almak için bu yöntemi çağırın.  
@@ -377,7 +377,7 @@ BOOL GetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi BCM_GETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](http://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
+ Bu üye işlevi BCM_GETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
   
 ##  <a name="getnote"></a>  CButton::GetNote  
  Geçerli komut bağlantı denetimle ilişkili not metni alır.  
@@ -407,7 +407,7 @@ BOOL GetNote(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_COMMANDLINK BS_DEFCOMMANDLINK mi denetimleri ile kullanın.  
   
- Bu yöntem gönderir [BCM_GETNOTE](http://msdn.microsoft.com/library/windows/desktop/bb775965) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_GETNOTE](/windows/desktop/Controls/bcm-getnote) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getnotelength"></a>  CButton::GetNoteLength  
  Geçerli komut bağlantı denetimi için Not metnin uzunluğunu alır.  
@@ -422,7 +422,7 @@ UINT GetNoteLength() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_COMMANDLINK BS_DEFCOMMANDLINK mi denetimleri ile kullanın.  
   
- Bu yöntem gönderir [BCM_GETNOTELENGTH](http://msdn.microsoft.com/library/windows/desktop/bb775967) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_GETNOTELENGTH](/windows/desktop/Controls/bcm-getnotelength) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getsplitglyph"></a>  CButton::GetSplitGlyph  
  Geçerli Bölünmüş düğme denetimi ile ilişkili simge alır.  
@@ -439,7 +439,7 @@ TCHAR GetSplitGlyph() const;
   
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_GLYPH bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem glif alır `himlGlyph` yapı üyesi.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_GLYPH bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem glif alır `himlGlyph` yapı üyesi.  
   
 ##  <a name="getsplitimagelist"></a>  CButton::GetSplitImageList  
  Alır [görüntü listesi](../../mfc/reference/cimagelist-class.md) geçerli Bölünmüş düğme denetimi için.  
@@ -454,7 +454,7 @@ CImageList* GetSplitImageList() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_IMAGE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem, görüntü listesinden görüntü alır. `himlGlyph` yapı üyesi.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_IMAGE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem, görüntü listesinden görüntü alır. `himlGlyph` yapı üyesi.  
   
 ##  <a name="getsplitinfo"></a>  CButton::GetSplitInfo  
  Nasıl Windows geçerli bölünmüş düğmesi denetimi çizen belirlemek parametrelerini alır.  
@@ -467,7 +467,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) yapısı geçerli Bölünmüş düğme denetimi ile ilgili bilgileri alır. Yapı ayırma için çağıran sorumludur.|  
+|[out] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı geçerli Bölünmüş düğme denetimi ile ilgili bilgileri alır. Yapı ayırma için çağıran sorumludur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -475,7 +475,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bu yöntem gönderir [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getsplitsize"></a>  CButton::GetSplitSize  
  Geçerli Bölünmüş düğme denetimi aşağı açılan bileşeninin sınırlayıcı dikdörtgeni alır.  
@@ -488,7 +488,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pSize*|İşaretçi bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı bir dikdörtgen açıklamasını alır.|  
+|[out] *pSize*|İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı bir dikdörtgen açıklamasını alır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -498,7 +498,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
  Bölünmüş düğme denetimi genişletildiğinde, onu bir liste denetimini veya çağrı cihazı denetimi gibi bir açılan bileşen görüntüleyebilirsiniz. Bu yöntem açılan bileşeni içeren dikdörtgen alır.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_SIZE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem gelen sınırlayıcı dikdörtgeni alır `size` yapı üyesi.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_SIZE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem gelen sınırlayıcı dikdörtgeni alır `size` yapı üyesi.  
   
 ##  <a name="getsplitstyle"></a>  CButton::GetSplitStyle  
  Geçerli Bölünmüş düğme denetimi tanımlayan Bölünmüş düğme stilleri alır.  
@@ -508,14 +508,14 @@ UINT GetSplitStyle() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) yapısı.  
+ Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
  Bölünmüş düğme stilleri, hizalama, en boy oranı ve bir Bölünmüş düğme simgesi ile Windows çizer grafik biçiminde belirtin.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_STYLE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem, Bölünmüş düğme stillerini alır. `uSplitStyle` yapı üyesi.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_STYLE bayrağı ve ardından, yapı gönderir yapısıyla [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) açıklanan iletisi Windows SDK'sı. İleti işlevi döndüğünde, bu yöntem, Bölünmüş düğme stillerini alır. `uSplitStyle` yapı üyesi.  
   
 ##  <a name="getstate"></a>  CButton::GetState  
  Bir düğme denetimi durumunu alır.  
@@ -559,7 +559,7 @@ BOOL GetTextMargin(RECT* pmargin);
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi BCM_GETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](http://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
+ Bu üye işlevi BCM_GETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
   
 ##  <a name="setbitmap"></a>  CButton::SetBitmap  
  Yeni bir bit eşlem düğmesi ile ilişkilendirmek için bu üye işlevini çağırın.  
@@ -693,9 +693,9 @@ BOOL SetDropDownState(BOOL fDropDown);
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bölünmüş düğme denetimini BS_SPLITBUTTON veya BS_DEFSPLITBUTTON stili vardır ve bir düğmeyi ve sağındaki açılan oku oluşur. Daha fazla bilgi için [düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775951). Genellikle, kullanıcı aşağı açılan okunu tıkladığında açılan durumu ayarlanır. Aşağı açılan durum denetimi program üzerinden ayarlamak için bu yöntemi kullanın. Aşağı açılan oku durumu göstermek için gölgeli çizilir.  
+ Bölünmüş düğme denetimini BS_SPLITBUTTON veya BS_DEFSPLITBUTTON stili vardır ve bir düğmeyi ve sağındaki açılan oku oluşur. Daha fazla bilgi için [düğme stilleri](/windows/desktop/Controls/button-styles). Genellikle, kullanıcı aşağı açılan okunu tıkladığında açılan durumu ayarlanır. Aşağı açılan durum denetimi program üzerinden ayarlamak için bu yöntemi kullanın. Aşağı açılan oku durumu göstermek için gölgeli çizilir.  
   
- Bu yöntem gönderir [BCM_SETDROPDOWNSTATE](http://msdn.microsoft.com/library/windows/desktop/bb775973) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_SETDROPDOWNSTATE](/windows/desktop/Controls/bcm-setdropdownstate) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar *m_splitButton*diğer bir deyişle, Bölünmüş düğme denetimi programlı olarak erişmek için kullanılır. Bu değişken, aşağıdaki örnekte kullanılır.  
@@ -726,7 +726,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
 ### <a name="remarks"></a>Açıklamalar  
  Bir düğme veya komut bağlantı denetimi bir eylemi gerçekleştirmek için yükseltilmiş bir güvenlik izni gerektiriyorsa, denetimin kümesine `elevation required` durumu. Sonuç olarak, Windows kullanıcı hesabı denetimi (UAC) Kalkan simgesi denetiminde görüntüler. Daha fazla bilgi için bkz: "Kullanıcı hesabı denetimi" [MSDN](http://go.microsoft.com/fwlink/p/?linkid=18507).  
   
- Bu yöntem gönderir [BCM_SETSHIELD](http://msdn.microsoft.com/library/windows/desktop/bb775979) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_SETSHIELD](/windows/desktop/Controls/bcm-setshield) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="seticon"></a>  CButton::SetIcon  
  Rapordaki yeni simge, düğme ile ilişkilendirmek için bu üye işlevini çağırın.  
@@ -777,7 +777,7 @@ BOOL SetImageList(PBUTTON_IMAGELIST pbuttonImagelist);
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi BCM_SETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](http://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
+ Bu üye işlevi BCM_SETIMAGELIST ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
   
 ##  <a name="setnote"></a>  CButton::SetNote  
  Not metni geçerli komut bağlantı denetimi için ayarlar.  
@@ -798,7 +798,7 @@ BOOL SetNote(LPCTSTR lpszNote);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_COMMANDLINK BS_DEFCOMMANDLINK mi denetimleri ile kullanın.  
   
- Bu yöntem gönderir [BCM_SETNOTE](http://msdn.microsoft.com/library/windows/desktop/bb775977) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_SETNOTE](/windows/desktop/Controls/bcm-setnote) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar *m_cmdLink*, yani komut bağlantı denetimi programlı olarak erişmek için kullanılır. Bu değişken, aşağıdaki örnekte kullanılır.  
@@ -831,7 +831,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
   
  Bir karakter bir karakter, belirli bir yazı tipi fiziksel gösterimidir. *ChGlyph* parametresi karakter kullanılmaz, ancak bunun yerine sistem tarafından tanımlanan karakter kümesinden bir simge seçmek için kullanılır. Varsayılan açılan liste okunu karakter '6' karakteriyle belirtilir ve Unicode karakteri aşağı siyah ÜÇGEN (U + 25BC) benzer.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_GLYPH bayrağıyla yapısı ve `himlGlyph` üyesiyle *chGlyph* parametresi ve ardından gönderen içindeki yapı [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) Windows SDK'da açıklanan ileti.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_GLYPH bayrağıyla yapısı ve `himlGlyph` üyesiyle *chGlyph* parametresi ve ardından gönderen içindeki yapı [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="setsplitimagelist"></a>  CButton::SetSplitImageList  
  İlişkilendirir bir [görüntü listesi](../../mfc/reference/cimagelist-class.md) geçerli Bölünmüş düğme denetimi ile.  
@@ -852,7 +852,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_IMAGE bayrağıyla yapısı ve `himlGlyph` üyesiyle *pSplitImageList* parametresi ve gönderir Bu yapıda [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) Windows SDK'da açıklanan ileti.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_IMAGE bayrağıyla yapısı ve `himlGlyph` üyesiyle *pSplitImageList* parametresi ve gönderir Bu yapıda [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="setsplitinfo"></a>  CButton::SetSplitInfo  
  Nasıl Windows geçerli bölünmüş düğmesi denetimi çizen belirleyen parametreleri belirtir.  
@@ -865,7 +865,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) geçerli Bölünmüş düğme denetimi tanımlayan yapısını.|  
+|[in] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) geçerli Bölünmüş düğme denetimi tanımlayan yapısını.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -873,7 +873,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bu yöntem gönderir [BCM_SETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775981) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [BCM_SETSPLITINFO](/windows/desktop/Controls/bcm-setsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_splitButton`diğer bir deyişle, Bölünmüş düğme denetimi programlı olarak erişmek için kullanılır.  
@@ -896,7 +896,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pSize*|İşaretçi bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) sınırlayıcı bir dikdörtgen açıklayan yapısı.|  
+|[in] *pSize*|İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) sınırlayıcı bir dikdörtgen açıklayan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -906,7 +906,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
  Bölünmüş düğme denetimi genişletildiğinde, onu bir liste denetimini veya çağrı cihazı denetimi gibi bir açılan bileşen görüntüleyebilirsiniz. Bu yöntem açılan bileşeni içeren dikdörtgen boyutunu belirtir.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_SIZE bayrağıyla yapısı ve `size` üyesiyle *pSize* parametresi ve yapı gönderir içinde [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) Windows SDK'da açıklanan ileti.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_SIZE bayrağıyla yapısı ve `size` üyesiyle *pSize* parametresi ve yapı gönderir içinde [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_splitButton`diğer bir deyişle, Bölünmüş düğme denetimi programlı olarak erişmek için kullanılır. Bu değişken, aşağıdaki örnekte kullanılır.  
@@ -929,7 +929,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *uSplitStyle*|Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) yapısı.|  
+|[in] *uSplitStyle*|Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -937,9 +937,9 @@ BOOL SetSplitStyle(UINT uSplitStyle);
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca düğme stilini BS_SPLITBUTTON BS_DEFSPLITBUTTON mi denetimleri ile kullanın.  
   
- Bölünmüş düğme stilleri, hizalama, en boy oranı ve bir Bölünmüş düğme simgesi ile Windows çizer grafik biçiminde belirtin. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) yapısı.  
+ Bölünmüş düğme stilleri, hizalama, en boy oranı ve bir Bölünmüş düğme simgesi ile Windows çizer grafik biçiminde belirtin. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı.  
   
- Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775955) BCSIF_STYLE bayrağıyla yapısı ve `uSplitStyle` üyesiyle *uSplitStyle* parametresi ve ardından gönderen içindeki yapı [BCM_GETSPLITINFO](http://msdn.microsoft.com/library/windows/desktop/bb775969) Windows SDK'da açıklanan ileti.  
+ Bu yöntem başlatır `mask` üyesi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) BCSIF_STYLE bayrağıyla yapısı ve `uSplitStyle` üyesiyle *uSplitStyle* parametresi ve ardından gönderen içindeki yapı [BCM_GETSPLITINFO](/windows/desktop/Controls/bcm-getsplitinfo) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_splitButton`diğer bir deyişle, Bölünmüş düğme denetimi programlı olarak erişmek için kullanılır.  
@@ -985,7 +985,7 @@ BOOL SetTextMargin(RECT* pmargin);
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi BCM_SETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](http://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
+ Bu üye işlevi BCM_SETTEXTMARGIN ileti işlevselliğini açıklandığı öykünür [düğmeleri](https://msdn.microsoft.com/library/windows/desktop/bb775943) Windows SDK'sı bölümünü.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   

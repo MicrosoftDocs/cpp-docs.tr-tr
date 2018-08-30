@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 4) C4931 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f77d30a7e7d2386404c02c1b72cc30309bb6876c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20e39eda9f06330a84243634eba28fc9d351cafe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294579"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201548"
 ---
 # <a name="compiler-warning-level-4-c4931"></a>Derleyici Uyarısı (düzey 4) C4931
-tür kitaplığının sayı bit işaretçiler için oluşturulduğunu varsayıyoruz  
-  
- Açık bilgi ile değil sağlandı **ptrsize** özniteliği [#import](../../preprocessor/hash-import-directive-cpp.md) yönerge; derleyici sağlanana tür kitaplığı işaretçi boyutunu olduğunu ***numarası***.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+> tür kitaplığını oluşturulduğu varsayıyoruz *numarası*-bit işaretçiler
+
+Açık bilgi ile sağlanmadı **ptrsize** özniteliği [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi; derleyici adlı yönelik işaretçi boyutu tür kitaplığının olduğunu *numarası*.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.

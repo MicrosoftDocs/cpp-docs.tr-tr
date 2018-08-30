@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17da583b770fcab1d682868c38c04e0aa97155dd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 348f25718fe22e056da5097bca0d67013a56c4c8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026439"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203155"
 ---
 # <a name="cmemorystate-structure"></a>CMemoryState yapısı
 Programınızda bellek sızıntılarını algılamak için kullanışlı bir yol sağlar.  
@@ -172,7 +172,7 @@ void DumpStatistics() const;
   
 -   şu anda program (bayt cinsinden) tarafından kullanılan toplam bellek  
   
- Ücretsiz taşlarıdır olan ayırmayı kaldırma durumunda gecikti bloğu `afxMemDF` ayarlandı `delayFreeMemDF`. Daha fazla bilgi için [afxMemDF](diagnostic-services.md#afxmemdf), "MFC makroları ve genel öğeleri" bölümünde. Bkz: [hata ayıklama öbek üzerindeki blokları türleri](http://msdn.microsoft.com/db2e7f62-0679-4b39-a23f-26f2c2f407c5) bunlar hakkında daha fazla bilgi engellemek için türleri.  
+ Ücretsiz taşlarıdır olan ayırmayı kaldırma durumunda gecikti bloğu `afxMemDF` ayarlandı `delayFreeMemDF`. Daha fazla bilgi için [afxMemDF](diagnostic-services.md#afxmemdf), "MFC makroları ve genel öğeleri" bölümünde. Bkz: [hata ayıklama öbek üzerindeki blokları türleri](https://msdn.microsoft.com/db2e7f62-0679-4b39-a23f-26f2c2f407c5) bunlar hakkında daha fazla bilgi engellemek için türleri.  
   
 ### <a name="example"></a>Örnek  
   Aşağıdaki kod yerleştirilmelidir *projname*App.cpp. Aşağıdaki genel değişkenleri tanımlayın:  

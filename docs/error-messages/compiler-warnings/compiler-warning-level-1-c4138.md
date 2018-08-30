@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0865935c30c4934684c7a12e50ab26f3e8b12c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc3102f18021c16663bdf61dcde6df5e6893d46c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277039"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197094"
 ---
 # <a name="compiler-warning-level-1-c4138"></a>Derleyici Uyarısı (düzey 1) C4138
-' * /' yorum dışında bulundu  
+' * /' açıklama dışında bulundu  
   
- Bir açma açıklama sınırlayıcısı açıklaması kapatma sınırlayıcısı öncesinde değil. Yıldız arasında bir boşluk derleyici varsayar (**\****) ve eğik çizgi (/).  
+ Kapanış açıklama sınırlayıcısı bir açılış bir açıklama sınırlayıcısı gelmelidir değil. Yıldız arasında bir boşluk derleyici varsayar (<strong>\**</strong>) ve eğik çizgi (/).  
   
 ## <a name="example"></a>Örnek  
   
@@ -39,9 +39,9 @@ int main()
 }  
 ```  
   
- Bu uyarı açıklamaları iç içe deneyerek neden olabilir.  
+ Bu uyarı açıklamalar iç içe deneyerek neden olabilir.  
   
- Bu uyarı açıklamaları içeren, kodda içine kod bölümlerini çıkarırsanız çözümlenebilir bir **#if / #endif** engelleme ve denetleme ifade sıfır olarak ayarlayın:  
+ Bu uyarı açıklama içeren, kod içine kod bölümlerini çıkarırsanız çözümlenebilir bir **#if / #endif** blok ve denetleme ifadesiyle sıfır olarak ayarlayın:  
   
 ```  
 // C4138b.cpp  

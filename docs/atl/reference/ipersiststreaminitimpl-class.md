@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b862d6b0fc99184232621432ec1c2a1027f8a9d5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: f71ed0ca185d7806c12ce089589ce4fad7a26e61
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881509"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202622"
 ---
 # <a name="ipersiststreaminitimpl-class"></a>Ipersiststreamınitımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.  
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimi.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -64,7 +64,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 |[IPersistStreamInitImpl::Save](#save)|Nesnenin özelliklerini, belirtilen akışa kaydeder.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) nesnenizin yükler ve kalıcı verilerini tek bir akışın kaydeder istemek bir istemci arabirimi sağlar. Sınıf `IPersistStreamInitImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) nesnenizin yükler ve kalıcı verilerini tek bir akışın kaydeder istemek bir istemci arabirimi sağlar. Sınıf `IPersistStreamInitImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -84,7 +84,7 @@ STDMETHOD(GetClassID)(CLSID* pClassID);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersist::GetClassID](http://msdn.microsoft.com/library/windows/desktop/ms688664) Windows SDK içinde.  
+ Bkz: [IPersist::GetClassID](/windows/desktop/api/objidl/nf-objidl-ipersist-getclassid) Windows SDK içinde.  
   
 ##  <a name="getsizemax"></a>  IPersistStreamInitImpl::GetSizeMax  
  Nesnenin veri kaydetmek için gereken akışı VHD'nin boyutunu alır.  
@@ -97,7 +97,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersistStreamInit::GetSizeMax](http://msdn.microsoft.com/library/windows/desktop/ms687287) Windows SDK içinde.  
+ Bkz: [IPersistStreamInit::GetSizeMax](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-getsizemax) Windows SDK içinde.  
   
 ##  <a name="initnew"></a>  IPersistStreamInitImpl::InitNew  
  Yeni oluşturulan nesneyi başlatır.  
@@ -107,7 +107,7 @@ STDMETHOD(InitNew)();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersistStreamInit::InitNew](http://msdn.microsoft.com/library/windows/desktop/ms690234) Windows SDK içinde.  
+ Bkz: [IPersistStreamInit::InitNew](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) Windows SDK içinde.  
   
 ##  <a name="isdirty"></a>  IPersistStreamInitImpl::IsDirty  
  Nesne verileri son kez kaydedildiğinden beri değiştirilip değiştirilmediğini denetler.  
@@ -117,7 +117,7 @@ STDMETHOD(IsDirty)();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPersistStreamInit::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms680092) Windows SDK içinde.  
+ Bkz: [IPersistStreamInit::IsDirty](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-isdirty) Windows SDK içinde.  
   
 ##  <a name="load"></a>  IPersistStreamInitImpl::Load  
  Nesnenin özelliklerini belirtilen akışından yükler.  
@@ -129,7 +129,7 @@ STDMETHOD(Load)(LPSTREAM pStm);
 ### <a name="remarks"></a>Açıklamalar  
  ATL, bu bilgileri almak için nesnenin özellik eşlemesi kullanır.  
   
- Bkz: [IPersistStreamInit::Load](http://msdn.microsoft.com/library/windows/desktop/ms680730) Windows SDK içinde.  
+ Bkz: [IPersistStreamInit::Load](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-load) Windows SDK içinde.  
   
 ##  <a name="save"></a>  IPersistStreamInitImpl::Save  
  Nesnenin özelliklerini, belirtilen akışa kaydeder.  
@@ -141,8 +141,8 @@ STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ### <a name="remarks"></a>Açıklamalar  
  ATL nesnenin özellik eşlemesi bu bilgileri depolamak için kullanır.  
   
- Bkz: [IPersistStreamInit::Save](http://msdn.microsoft.com/library/windows/desktop/ms694439) Windows SDK içinde.  
+ Bkz: [IPersistStreamInit::Save](/windows/desktop/api/ocidl/nf-ocidl-ipersiststreaminit-save) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Depolar ve akışlar](http://msdn.microsoft.com/library/windows/desktop/aa380352)   
+ [Depolar ve akışlar](/windows/desktop/Stg/storages-and-streams)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

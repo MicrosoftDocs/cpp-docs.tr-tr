@@ -26,37 +26,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b99dae277fec7618c2e7caeb76229edce7a78c2
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: ed9d6ba12e65eac325008cb2a448abdab087ee46
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207766"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197966"
 ---
 # <a name="midl-property-pages-advanced"></a>MIDL Özellik Sayfaları: Gelişmiş
 **Gelişmiş** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:  
   
--   Hata denetimini etkinleştir ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Hata denetimini etkinleştir ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Ayrılan alanları denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Ayrılan alanları denetle ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Sınırları denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Sınırları denetle ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Sabit listesi aralıklarını denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Sabit listesi aralıklarını denetle ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Başvuru işaretçilerini denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Başvuru işaretçilerini denetle ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Saplama verilerini denetle ([/Error](http://msdn.microsoft.com/library/windows/desktop/aa367324))  
+-   Saplama verilerini denetle ([/Error](https://msdn.microsoft.com/library/windows/desktop/aa367324))  
   
--   Parametreleri doğrula ([/ robust](http://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
+-   Parametreleri doğrula ([/ robust](https://msdn.microsoft.com/library/windows/desktop/aa367363)) \*  
   
--   Struct üyesi hizalaması ([/ZP](http://msdn.microsoft.com/library/windows/desktop/aa367388))  
+-   Struct üyesi hizalaması ([/ZP](https://msdn.microsoft.com/library/windows/desktop/aa367388))  
   
--   Çıktı yeniden yönlendirme ([/o](http://msdn.microsoft.com/library/windows/desktop/aa367351))  
+-   Çıktı yeniden yönlendirme ([/o](https://msdn.microsoft.com/library/windows/desktop/aa367351))  
   
--   C ön işleme seçenekleri ([/cpp_opt](http://msdn.microsoft.com/library/windows/desktop/aa367318))  
+-   C ön işleme seçenekleri ([/cpp_opt](https://msdn.microsoft.com/library/windows/desktop/aa367318))  
   
--   Ön İşlemci tanımlarını Kaldır ([/U](http://msdn.microsoft.com/library/windows/desktop/aa367373))  
+-   Ön İşlemci tanımlarını Kaldır ([/U](https://msdn.microsoft.com/library/windows/desktop/aa367373))  
   
  \* / sağlam yalnızca Windows 2000 veya daha yeni bir makine için oluşturma sırasında kullanılır. Bir ATL projesi oluşturmak ve kullanmak istediğiniz / robust, dlldatax.c dosyasında şu satırı değiştirin:  
   

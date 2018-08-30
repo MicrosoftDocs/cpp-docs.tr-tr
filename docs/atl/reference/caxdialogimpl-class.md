@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd019112e846875bfa8e27faac5088fbcf1cdaef
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 88cb742464507fe7040b38d88355ab473b366bac
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881993"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196016"
 ---
 # <a name="caxdialogimpl-class"></a>Caxdialogımpl sınıfı
 Bu sınıf, bir iletişim kutusu (kalıcı veya kısıtlayıcı olmayan) barındıran ActiveX denetimlerini uygular.  
@@ -170,7 +170,7 @@ INT_PTR DoModal(
   
 ### <a name="parameters"></a>Parametreler  
  *hWndParent*  
- [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.  
+ [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.  
   
  *dwInitParam*  
  [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.  
@@ -235,7 +235,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
   
 ### <a name="parameters"></a>Parametreler  
  *pMsg*  
- İşaretçi bir [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) denetlenecek iletiyi içeren yapısı.  
+ İşaretçi bir [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) denetlenecek iletiyi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İleti işlenemiyor, yanlış Aksi durumda kalıp kalmadığını TRUE döndürür.  

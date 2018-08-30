@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e29bf1c8265a0d92200cda2704b750dfd8db3d6f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 78d846db4080c780bfa72fca52b7c9f6868edc2f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885646"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195349"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne tutamaçları bekler ve tutamaçlarından birinin sinyal, belirtilen istemci işlevi yürütür.  
@@ -232,7 +232,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tanıtıcı kaldırıldığında [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) geçildi ilişkili nesne üzerinde çağrılacak [AddHandle](#addhandle). Bu çağrı başarısız olursa `CWorkerThread` Windows'ın arayacağı [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211) tutamacı işlevi.  
+ Tanıtıcı kaldırıldığında [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) geçildi ilişkili nesne üzerinde çağrılacak [AddHandle](#addhandle). Bu çağrı başarısız olursa `CWorkerThread` Windows'ın arayacağı [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211) tutamacı işlevi.  
   
 ##  <a name="shutdown"></a>  CWorkerThread::Shutdown  
  Çalışan iş parçacığı kapatmak için bu yöntemi çağırın.  

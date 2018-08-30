@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cc725907c93955777cd09b5745651855892e4cd
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: b1a15397ee74c94c0d3af088a7b6eb80bd21c66d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465563"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195346"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap sınıfı
 Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) Win32 yığın ayırma işlevleri kullanarak.  
@@ -73,7 +73,7 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32Heap::m_hHeap](#m_hheap)|Yığın nesnesi için işler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CWin32Heap` bellek ayırma yöntemleri dahil olmak üzere Win32 yığın ayırma işlevleri kullanarak uygulayan [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597) ve [HeapFree](http://msdn.microsoft.com/library/windows/desktop/aa366701). Diğer yığın sınıfları aksine `CWin32Heap` bellek tahsis önce sağlanması için geçerli bir yığın tanıtıcısı gerektirir: işlem yığınını kullanmanın diğer sınıflar varsayılan. Oluşturucuya veya çok işleyici sağlanabilir [CWin32Heap::Attach](#attach) yöntemi. Bkz: [CWin32Heap::CWin32Heap](#cwin32heap) daha fazla ayrıntı için yöntemi.  
+ `CWin32Heap` bellek ayırma yöntemleri dahil olmak üzere Win32 yığın ayırma işlevleri kullanarak uygulayan [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc) ve [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree). Diğer yığın sınıfları aksine `CWin32Heap` bellek tahsis önce sağlanması için geçerli bir yığın tanıtıcısı gerektirir: işlem yığınını kullanmanın diğer sınıflar varsayılan. Oluşturucuya veya çok işleyici sağlanabilir [CWin32Heap::Attach](#attach) yöntemi. Bkz: [CWin32Heap::CWin32Heap](#cwin32heap) daha fazla ayrıntı için yöntemi.  
   
 ## <a name="example"></a>Örnek  
  Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -103,7 +103,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CWin32Heap::Free](#free) veya [CWin32Heap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [HeapAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366597).  
+ Kullanılarak uygulanan [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc).  
   
 ##  <a name="attach"></a>  CWin32Heap::Attach  
  Yığın nesnesi bir mevcut yığına ekler.  

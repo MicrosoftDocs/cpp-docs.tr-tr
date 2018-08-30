@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c88a517d600536d4f89b1621e225ad80666885a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: cabd6f331ed7348fe84a585a863ccb7e90b992fc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338655"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204011"
 ---
 # <a name="cfindreplacedialog-class"></a>CFindReplaceDialog sınıfı
 Standart dize Bul/Değiştir iletişim kutuları uygulamanıza olanak sağlar.  
@@ -95,9 +95,9 @@ class CFindReplaceDialog : public CCommonDialog
   
  Bir kez bir `CFindReplaceDialog` nesne oluşturulur, çağırmalısınız [Oluştur](#create) oluşturmak ve iletişim kutusunu görüntülemek için üye işlevi.  
   
- Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusunu başlatmak için yapı `Create`. `m_fr` Yapısıdır türünü [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Kullanım [m_fr](#m_fr) çağırmadan önce iletişim kutusunu başlatmak için yapı `Create`. `m_fr` Yapısıdır türünü [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
- Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) çerçeveniz içinde ileti eşleme makrosu Bu kayıtlı ileti işler penceresini açın.  
+ Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlev ve kullanmak [on_regıstered_message](message-map-macros-mfc.md#on_registered_message) çerçeveniz içinde ileti eşleme makrosu Bu kayıtlı ileti işler penceresini açın.  
   
  Kullanıcı iletişim kutusu sonlandırmak verdi olup olmadığını belirlemek `IsTerminating` üye işlevi.  
   
@@ -165,7 +165,7 @@ virtual BOOL Create(
  İletişim kutusu görüntülendiğinde varsayılan değiştirilen dizeye yönelik işaretçi. NULL ise varsayılan bir değiştirme dizesi iletişim kutusu içermiyor.  
   
  *CertOpenStore*  
- Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Arama aşağı yönde devam etmek üzere olduğunu belirten FR_DOWN varsayılan değerdir. Bkz: [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
+ Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Arama aşağı yönde devam etmek üzere olduğunu belirten FR_DOWN varsayılan değerdir. Bkz: [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
   
  *pParentWnd*  
  İletişim kutusunun üst veya sahip penceresine bir işaretçi. Bu bulma/değiştirme eylemi istenip istenmediğini belirten özel ileti alacak penceredir. NULL ise, uygulamanın ana pencere kullanılır.  
@@ -174,7 +174,7 @@ virtual BOOL Create(
  İletişim kutusu nesne başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi dönüş değeri olan uygulama örneği için benzersiz bir ileti numarası. Geri çağırma işlevi bildiren bir ileti eşleme girişi, çerçeve penceresi olmalıdır ( `OnFindReplace` örnekte) kayıtlı bu iletiyi işleyen. Aşağıdaki kod parçası adlı bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını örneğidir `CMyRichEditView`:  
+ Ana pencereyi Bul/Değiştir isteklerini almak için sırada Windows kullanmalısınız [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi dönüş değeri olan uygulama örneği için benzersiz bir ileti numarası. Geri çağırma işlevi bildiren bir ileti eşleme girişi, çerçeve penceresi olmalıdır ( `OnFindReplace` örnekte) kayıtlı bu iletiyi işleyen. Aşağıdaki kod parçası adlı bir çerçeve penceresi sınıfı için bunun nasıl yapılacağını örneğidir `CMyRichEditView`:  
   
  [!code-cpp[NVC_MFCDocView#171](../../mfc/codesnippet/cpp/cfindreplacedialog-class_2.h)]  
   
@@ -269,7 +269,7 @@ FINDREPLACE m_fr;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `m_fr` bir yapı türü [FINDREPLACE](http://msdn.microsoft.com/library/windows/desktop/ms646835). Özellikleri iletişim kutusu nesnesinin üyeleri depolayın. Oluşturma sonrasında bir `CFindReplaceDialog` nesne kullanabileceğiniz `m_fr` iletişim kutusunda çeşitli değerleri değiştirmek için.  
+ `m_fr` bir yapı türü [FINDREPLACE](/windows/desktop/api/commdlg/ns-commdlg-tagfindreplacea). Özellikleri iletişim kutusu nesnesinin üyeleri depolayın. Oluşturma sonrasında bir `CFindReplaceDialog` nesne kullanabileceğiniz `m_fr` iletişim kutusunda çeşitli değerleri değiştirmek için.  
   
  Bu yapı hakkında daha fazla bilgi için bkz. `FINDREPLACE` Windows SDK'sındaki yapısı.  
   

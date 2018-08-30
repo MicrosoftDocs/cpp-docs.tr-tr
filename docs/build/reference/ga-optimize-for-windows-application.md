@@ -20,15 +20,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 387732c5bde04970e3a467ca4f43f911afa7a9a6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61bf8844a5471a97214ca6f3d3b5b473c9cd6217
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374264"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194669"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
-İş parçacığı yerel depolaması (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kodu sonuçlanır.  
+İş parçacığı yerel depolama (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kod sonuçlanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -37,19 +37,19 @@ ms.locfileid: "32374264"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **/GA** veri erişimi hızlandıran bildirilen ile [__declspec(thread)](../../cpp/declspec.md) Windows tabanlı bir programı. Bu seçeneği ayarlarken [__tls_index](http://msdn.microsoft.com/library/windows/desktop/ms686749) makrosu 0 olarak varsayılır.  
+ **/GA** veri erişimi ile bildirilmiş [gt;__declspec(thread)](../../cpp/declspec.md) Windows tabanlı bir programı. Bu seçenek ayarlandığında [__tls_index](/windows/desktop/ProcThread/thread-local-storage) makrosu 0 olarak varsayılır.  
   
- Kullanarak **/GA** için DLL hatalı kod oluşturmasına neden olabilir.  
+ Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **C/C++** klasör.  
+2.  Tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **komut satırı** özellik sayfası.  
+3.  Tıklayın **komut satırı** özellik sayfası.  
   
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
+4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   

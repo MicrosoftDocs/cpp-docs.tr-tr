@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4295c0fbd0542ad6c7c819b6ef7024b2384304d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8a9465a51646dae16ae2a487a77206c712fef681
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382896"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204456"
 ---
 # <a name="default-signals"></a>Varsayılan Sinyaller
-**ANSI 4.7.1.1** durumunda denk **sinyal (***SIG***, sıg_dfl)** engelleme gerçekleştirilir sinyal bir sinyal işleyici çağrıdan önce yürütülmedi  
+**ANSI 4.7.1.1** durumunda denk **sinyal (**<em>sig</em>**, sıg_dfl)** olan sinyal engelleme sinyal tutucusu çağrısından önce yürütülmez ise gerçekleştirilen  
   
  Bir program çalışmaya başladığında, sinyaller varsayılan durumlarına ayarlanır.  
   

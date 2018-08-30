@@ -354,12 +354,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9ac21e909c8286ef6a7d1973837b0caf69b711c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0eb6e8da3caa9286e14072726488ad1c16f47b1e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464786"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203648"
 ---
 # <a name="cmfcvisualmanager-class"></a>CMFCVisualManager sınıfı
 Genel düzeyde, uygulamanızın görünümünü değiştirmek için destek sağlar. `CMFCVisualManager` Sınıfı, tutarlı bir stil kullanarak uygulamanızın GUI denetimlerini çizmek amacıyla yönergeler sağlayan bir sınıf birlikte çalışır. Bu diğer sınıflara görsel Yöneticiler denir ve bunlar devralınacak `CMFCBaseVisualManager`.  
@@ -790,7 +790,7 @@ virtual COLORREF GetAutoHideButtonTextColor(CMFCAutoHideButton* pButton);
  Otomatik Gizle düğmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) metin rengini belirten parametresi *pButton*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) metin rengini belirten parametresi *pButton*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta bir Otomatik Gizle düğmesi, uygulamanızda metin rengi özelleştirmek için bu yöntemi yok sayın. Bunu yapmak için metin rengi olarak kullanmak için uygulamanızı istediğiniz rengi döndürür.  
@@ -820,7 +820,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
  Başlık çubuğu için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) metin rengini gösteren parametresi *pBar*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) metin rengini gösteren parametresi *pBar*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Başlık çubuğu için metin rengi özelleştirmek için türetilmiş sınıf içinde bu yöntemi yok sayın. Geçersiz kılınan yönteminizi istediğiniz rengi döndürür.  
@@ -998,7 +998,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
  Framework çizim özellik listesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) arka plan rengini belirten bir parametre *pPropList*.  
+ A [COLORREF](/windows/desktop/gdi/colorref) arka plan rengini belirten bir parametre *pPropList*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev bir özellik listesinde, uygulamanızın arka plan rengi özelleştirmek için geçersiz kılın.  
@@ -1015,7 +1015,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
  Özellik listesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) özellik listesi metin rengini belirten bir parametre.  
+ A [COLORREF](/windows/desktop/gdi/colorref) özellik listesi metin rengini belirten bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev bir özellik listesi uygulamanızda metin rengi özelleştirmek için geçersiz kılın.  
@@ -1214,7 +1214,7 @@ virtual void GetTabFrameColors(
  Çerçevenin bir sekme burada çizim sekmeli penceresine bir işaretçi.  
   
  [out] *clrDark*  
- Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) koyu bir sekme kenarlığı rengini depoladığı bu yöntem parametresi.  
+ Bir başvuru bir [COLORREF](/windows/desktop/gdi/colorref) koyu bir sekme kenarlığı rengini depoladığı bu yöntem parametresi.  
   
  [out] *clrBlack*  
  Bu yöntem için sekmesinde pencerenin kenarlık rengi depoladığı COLORREF parametre bir başvuru. Kenarlığın varsayılan rengini siyah.  
@@ -1778,7 +1778,7 @@ virtual BOOL OnDrawBrowseButton(
  Düğmenin durumunu belirten bir numaralandırılmış değeri.  
   
  [out] *clrText*  
- Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Bu, ayrılmış bir değerdir ve şu anda kullanılmıyor.  
+ Bir başvuru bir [COLORREF](/windows/desktop/gdi/colorref) parametresi. Bu, ayrılmış bir değerdir ve şu anda kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -2578,7 +2578,7 @@ virtual COLORREF OnDrawPaneCaption(
  Resim yazılı düğmelerini sınırlarını belirten bir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) başlığı metin rengi gösteren parametresi.  
+ A [COLORREF](/windows/desktop/gdi/colorref) başlığı metin rengi gösteren parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir görsel yöneticiyi bölmesinin alt yazıların görünümünü özelleştirmek için bu yöntemi yok sayın.  
@@ -2805,7 +2805,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  Başlık çubuğu için bir işaretçi. Bu görsel yöneticiyi çizer [CMFCRibbonContextCaption sınıfı](../../mfc/reference/cmfcribboncontextcaption-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) başlık çubuğunda metin rengini belirten bir parametre.  
+ A [COLORREF](/windows/desktop/gdi/colorref) başlık çubuğunda metin rengini belirten bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta bir Şerit kategorisi için başlık çubuğunun görünümünü özelleştirmek için bu yöntemi yok sayın. Başlık çubuğu hakkında daha fazla bilgi için bkz: [CMFCRibbonContextCaption sınıfı](../../mfc/reference/cmfcribboncontextcaption-class.md).  
@@ -3590,7 +3590,7 @@ virtual void OnDrawStatusBarProgress(
  İlerleme çubuğu geçerli ilerleme durumu.  
   
  [in] *clrBar*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametre ilerleme çubuğu başlangıç rengini belirtir. , Bir renk gradyan başlangıcı ya da ilerleme çubuğu tam rengi değerdir.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parametre ilerleme çubuğu başlangıç rengini belirtir. , Bir renk gradyan başlangıcı ya da ilerleme çubuğu tam rengi değerdir.  
   
  [in] *clrProgressBarDest*  
  İlerleme çubuğu için bir renk gradyanı sonuna belirten COLORREF parametresi. Varsa *clrProgressBarDest* -1 ' dir framework İlerleme çubuğunda bir renk gradyanı olarak çekmek değil. Bunun yerine, belirtilen renk ile tüm ilerleme çubuğu doldurur *clrBar*.  
@@ -4250,7 +4250,7 @@ virtual void OnFillOutlookBarCaption(
  Başlık çubuğu sınırlarını belirten bir dikdörtgen.  
   
  [out] *clrText*  
- Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Yöntemi, bu parametre için başlık çubuğunda metin rengi yazar.  
+ Bir başvuru bir [COLORREF](/windows/desktop/gdi/colorref) parametresi. Yöntemi, bu parametre için başlık çubuğunda metin rengi yazar.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem varsayılan uygulamasını başlık çubuğu üzerinde geçerli dış tabanlı gölge rengi ile doldurur. Türetilen bir görsel yöneticiyi Outlook başlık çubuğu rengi özelleştirmek için bu yöntemi yok sayın.  
@@ -4281,7 +4281,7 @@ virtual void OnFillOutlookPageButton(
  Düğmeye basıldığında olup olmadığını belirten bir Boole parametresi.  
   
  [out] *clrText*  
- Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi. Bu yöntem, bu parametrede outlook sayfa düğmesinin metin rengi depolar.  
+ Bir başvuru bir [COLORREF](/windows/desktop/gdi/colorref) parametresi. Bu yöntem, bu parametrede outlook sayfa düğmesinin metin rengi depolar.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevde harcanan Outlook sayfa düğmelerini görünümünü özelleştirmek için türetilmiş bir görsel yöneticiyi geçersiz kılar.  

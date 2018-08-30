@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 515d74b30e63fbc40411ec9cd62b2b1ab6d92591
-ms.sourcegitcommit: b8b1cba85ff423142d73c888be26baa8c33f3cdc
+ms.openlocfilehash: 1d04f918c9c92c2de8ff6b654a8a0d4ee43c2130
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/17/2018
-ms.locfileid: "39093013"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196031"
 ---
 # <a name="file-handling-and-io-ccli"></a>Dosya İşleme ve G/Ç (C++/CLI)
 .NET Framework kullanan çeşitli dosya işlemlerini gösterir.  
@@ -337,6 +337,6 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.   
  [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
- [Dosya ve Stream g / Ç](http://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
+ [Dosya ve Stream g / Ç](https://msdn.microsoft.com/Library/4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2)
 
  [System.IO ad alanı](https://msdn.microsoft.com/library/system.io.aspx)

@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81c7572ffd5a53456cd4555b82a8d3e235286339
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f40fbed217bde0cfe0e917100a18bbdea91f0a8f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961714"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200352"
 ---
 # <a name="hashset-class"></a>hash_set Sınıfı
 
@@ -121,11 +121,14 @@ class hash_set
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* hash_set içinde depolanacak öğe veri türü.
+*Key*<br/>
+ Hash_set içinde depolanacak öğe veri türü.
 
-*Nitelikler* bir sınıfın iki işlev nesneleri içeren karşılaştırma türü diğer bir deyişle, bir birli koşul eşleştirme anahtar değerlerinin bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırmak için bir ikili koşula işaretsiz tam sayı türünde öğelere `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az ***\<anahtarı >>* varsayılan değerdir.
+*Nitelikler*<br/>
+ İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü diğer bir deyişle bir ikili koşula birli koşul eşleştirme anahtar değerleri öğelerin işaretsiz bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırmak için tamsayı türü `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
 
-*Allocator* hash_set'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı ***\<Key >.*
+*Ayırıcı*<br/>
+ Hash_set'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -559,7 +562,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* hash_set eşleştirilecek öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_set eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1025,7 +1029,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1111,13 +1116,17 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Where* hash_set kaldırılacak öğenin konumu.
+*_Where*<br/>
+ Hash_set kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu hash_set kaldırıldı.
+*ilk*<br/>
+ Hash_set kaldırılan ilk öğenin konumu.
 
-*Son* konumu yalnızca son öğeden sonra hash_set kaldırıldı.
+*Son*<br/>
+ Konum yalnızca son öğeden sonra hash_set kaldırıldı.
 
-*anahtar* hash_set kaldırılacak öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_set kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1225,7 +1234,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_set bir öğeyi sıralama anahtarı tarafından eşleştirilecek bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_set bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1423,7 +1433,7 @@ hash_set(
 |-|-|
 |*Al*|Bunun için kullanılacak depolama ayırıcı sınıf `hash_set` varsayılan olarak nesne `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü `const Traits` öğeleri sıralamak için kullanılan `hash_set`, bunun varsayılan `hash_compare`.|
-|*Sağ*|`hash_set` Biri oluşturulmuş `hash_set` bir kopyası olacak.|
+|*sağ*|`hash_set` Biri oluşturulmuş `hash_set` bir kopyası olacak.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 
@@ -1650,7 +1660,8 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2139,7 +2150,8 @@ void swap(hash_set& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef hash_set ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_set.
+*sağ*<br/>
+ Hedef hash_set ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_set.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2214,7 +2226,8 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_set bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

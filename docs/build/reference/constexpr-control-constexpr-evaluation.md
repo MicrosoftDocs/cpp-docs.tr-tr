@@ -1,5 +1,5 @@
 ---
-title: -constexpr (Denetim constexpr değerlendirme) | Microsoft Docs
+title: -constexpr (constexpr değerlendirmesini Denetle) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/15/2017
 ms.technology:
@@ -19,47 +19,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f83f1d9a505ebc4c05ce4e367bb1e978d6a14b78
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 475702792686a3de8d1ae52bd9e40ef113c49da1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373965"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202580"
 ---
-# <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (Denetim constexpr değerlendirme)  
+# <a name="constexpr-control-constexpr-evaluation"></a>/constexpr (constexpr değerlendirmesini Denetle)  
   
-Kullanım **/constexpr** denetim parametrelerini derleyici seçenekleri `constexpr` derleme zamanında değerlendirme.  
+Kullanım **/constexpr** denetim parametreleri için derleyici seçenekleri **constexpr** derleme zamanında değerlendirme.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-> /constexpr:Depth*N*  
-> /constexpr:backtrace*N*  
-> /constexpr:Steps*N*  
+> **/ constexpr: Depth**<em>N</em>  
+> **/ constexpr: backtrace**<em>N</em>  
+> **Steps**<em>N</em>  
   
 ## <a name="arguments"></a>Arguments  
   
-**Derinlik *** N*  
-Özyinelemeli derinliğini sınırlamak `constexpr` işlev çağrısı için *N* düzeyleri. Varsayılan değer 512'dir.  
+**Derinlik**<em>N</em>  
+Özyinelemeli derinliğini sınırlamak **constexpr** işlev çağrısı için *N* düzeyleri. Varsayılan değer 512'dır.  
   
-**backtrace *** N*  
-En fazla Göster *N* `constexpr` değerlendirmeleri tanılama. Varsayılan değer 10'dur.  
+**backtrace**<em>N</em>  
+En fazla Göster *N* **constexpr** değerlendirmeleri tanılama. Varsayılan değer 10'dur.  
   
-**adımları *** N*  
-Sonlandırma `constexpr` değerlendirmesinden sonra *N* adımları. Varsayılan değer 100. 000 ' dir.  
+**adımları**<em>N</em>  
+Sonlandırma **constexpr** değerlendirmesinden sonra *N* adımları. Varsayılan değer 100. 000 ' dir.  
   
 ## <a name="remarks"></a>Açıklamalar  
   
-**/Constexpr** derleyici seçeneklerini denetleme derleme zamanı değerlendirmesi `constexpr` ifadeler. Değerlendirme adımlar, özyineleme düzeyleri ve backtrace derinliği üzerinde çok fazla zaman harcama derleyici önlemek için denetlenir `constexpr` değerlendirme. Daha fazla bilgi için `constexpr` language öğesi bkz [constexpr (C++)](../../cpp/constexpr-cpp.md).  
+**/Constexpr** derleyici seçenekleri denetimi, derleme zamanı değerlendirmesi **constexpr** ifadeler. Derleyici, üzerinde çok fazla zaman harcama önlemek için değerlendirme adımlar, özyineleme düzeyi ve backtrace derinliği denetlenir **constexpr** değerlendirme. Daha fazla bilgi için **constexpr** dil öğesi için bkz: [constexpr (C++)](../../cpp/constexpr-cpp.md).  
 
-**/Constexpr** seçeneklerdir Visual Studio 2015'te başlayarak bulunabilir.  
+**/Constexpr** seçeneklerdir Visual Studio 2015'te sonraki sürümlerinde kullanılabilir.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1. Projenizin açmak **özellik sayfaları** iletişim kutusu.   
+1. Projenizin açın **özellik sayfaları** iletişim kutusu.   
   
-2. Altında **yapılandırma özellikleri**, genişletin **C/C++** klasör ve **komut satırı** özellik sayfası.  
+2. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **komut satırı** özellik sayfası.  
   
-3. Herhangi bir girin **/constexpr** derleyici seçenekleri **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydetmek için.  
+3. Tüm girin **/constexpr** derleyici seçenekleri **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   

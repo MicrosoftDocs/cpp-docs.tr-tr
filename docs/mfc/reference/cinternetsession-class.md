@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8eb030bb6827fd8df5a7f4826c4c1e4b3b47b5a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 83ff74a460c7cb34a50d0fbdf338eccc3da27f98
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197445"
 ---
 # <a name="cinternetsession-class"></a>Cınternetsession sınıfı
 
@@ -237,7 +237,7 @@ Zaman uyumsuz işlemler hakkında daha fazla bilgi için bkz [Internet ilk adım
 
 ## <a name="getcookie"></a>  CInternetSession::GetCookie
 
-Bu üye işlevi Win32 işlevinin davranışı uygulayan [InternetGetCookie](http://msdn.microsoft.com/library/windows/desktop/aa384710)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi Win32 işlevinin davranışı uygulayan [InternetGetCookie](/windows/desktop/api/wininet/nf-wininet-internetgetcookiea)Windows SDK içinde açıklandığı gibi.
 
 ```cpp
 static BOOL GetCookie(
@@ -269,7 +269,7 @@ Boyutun belirtmek değişkeni *pstrCookieData* arabellek. İşlev başarılı ol
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa TRUE veya FALSE döndürür. Çağrı başarısız olursa Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
+Başarılı olursa TRUE veya FALSE döndürür. Çağrı başarısız olursa Win32 işlevini çağırmak [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için. Aşağıdaki hata değerler geçerlidir:
 
 - ERROR_NO_MORE_ITEMS belirtilen URL için tanımlama bilgisi ve tüm üst öğelerinden yoktur.
 
@@ -476,7 +476,7 @@ Boyutu *lpvStatusInformation*.
 |INTERNET_STATUS_RESPONSE_RECEIVED|Başarıyla sunucusundan bir yanıt aldı. *LpvStatusInformation* parametredir NULL.|
 |INTERNET_STATUS_CLOSING_CONNECTION|Sunucuya bağlantı kesiliyor. *LpvStatusInformation* parametredir NULL.|
 |INTERNET_STATUS_CONNECTION_CLOSED|Sunucu bağlantısı başarıyla kapatıldı. *LpvStatusInformation* parametredir NULL.|
-|INTERNET_STATUS_HANDLE_CREATED|Win32 API işlev tarafından kullanılan [InternetConnect](http://msdn.microsoft.com/library/windows/desktop/aa384363) yeni işleyici oluşturduğunu göstermek için. Bu uygulama arama Win32 işlevini sağlar [InternetCloseHandle](http://msdn.microsoft.com/library/windows/desktop/aa384350) Bağlan çok uzun sürüyorsa, başka bir iş parçacığından. Windows SDKfor, bu işlevler hakkında daha fazla bilgi.|
+|INTERNET_STATUS_HANDLE_CREATED|Win32 API işlev tarafından kullanılan [InternetConnect](/windows/desktop/api/wininet/nf-wininet-internetconnecta) yeni işleyici oluşturduğunu göstermek için. Bu uygulama arama Win32 işlevini sağlar [InternetCloseHandle](/windows/desktop/api/wininet/nf-wininet-internetclosehandle) Bağlan çok uzun sürüyorsa, başka bir iş parçacığından. Windows SDKfor, bu işlevler hakkında daha fazla bilgi.|
 |INTERNET_STATUS_HANDLE_CLOSING|Bu işleyici değeri başarıyla sonlandırıldı.|
 
 Durumu geri çağırma yordamı gerçekleştirilmeden önce bazı eylemler zorunlu tutmak için bu üye işlevini geçersiz kılar.
@@ -589,7 +589,7 @@ Başarılı olursa TRUE veya FALSE döndürür. Söz konusu hata kodunu almak i�
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi Win32 ileti davranışı uygulayan [InternetSetCookie](http://msdn.microsoft.com/library/windows/desktop/aa385107)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi Win32 ileti davranışı uygulayan [InternetSetCookie](/windows/desktop/api/wininet/nf-wininet-internetsetcookiea)Windows SDK içinde açıklandığı gibi.
 
 ## <a name="setoption"></a>  CInternetSession::SetOption
 
@@ -612,7 +612,7 @@ BOOL SetOption(
 ### <a name="parameters"></a>Parametreler
 
 *dwOption*  
-Ayarlanacak Internet seçeneği. Bkz: [seçeneği bayrakları](http://msdn.microsoft.com/library/windows/desktop/aa385328) içinde Windows SDKfor olası seçeneklerin bir listesi.
+Ayarlanacak Internet seçeneği. Bkz: [seçeneği bayrakları](/windows/desktop/WinInet/option-flags) içinde Windows SDKfor olası seçeneklerin bir listesi.
 
 *lpBuffer*  
 Seçenek ayarı içeren bir arabelleği.
@@ -632,7 +632,7 @@ Seçenek ayarları içeren bir DWORD.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-İşlem başarılı olursa TRUE değeri döndürülür. Bir hata oluştu, FALSE değeri döndürülür. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
+İşlem başarılı olursa TRUE değeri döndürülür. Bir hata oluştu, FALSE değeri döndürülür. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

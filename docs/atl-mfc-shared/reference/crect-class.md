@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a1b968e09ed40959c30a649d4d4e17baea28703
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3d49b7a96f98c701c2748379ed880267bff3fa5a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881093"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196654"
 ---
 # <a name="crect-class"></a>CRect sınıfı
 Benzer şekilde bir Windows [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
@@ -375,7 +375,7 @@ void DeflateRect(int l, int t, int r, int b) throw();
  Üst ve alt deflate için birim sayısını belirtir `CRect`.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) deflate için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında deflate için birim sayısını ve `cy` değeri üst ve alt deflate için birim sayısını belirtir.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) deflate için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında deflate için birim sayısını ve `cy` değeri üst ve alt deflate için birim sayısını belirtir.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` her yan deflate için birim sayısını belirtir.  
@@ -494,7 +494,7 @@ void InflateRect(int l, int t, int r,  int b) throw();
  Üst ve alt doldurmak için birim sayısını belirtir `CRect`.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) doldurmak için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında doldurmak için birim sayısını ve `cy` değeri üst ve alt doldurmak için birim sayısını belirtir.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](csize-class.md) doldurmak için birim sayısını belirten `CRect`. `cx` Değerini belirtir ve sol tarafında doldurmak için birim sayısını ve `cy` değeri üst ve alt doldurmak için birim sayısını belirtir.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` her yan doldurmak için birim sayısını belirtir.  
@@ -753,7 +753,7 @@ void OffsetRect(SIZE size) throw();
  İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](cpoint-class.md) nesne taşımak, her iki boyutu belirtme.  
   
  *Boyutu*  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) nesne taşımak, her iki boyutu belirtme.  
+ İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) nesne taşımak, her iki boyutu belirtme.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Taşır `CRect` *x* birim x ekseni boyunca ve *y* birim y ekseni boyunca. *x* ve *y* parametreleri olan imzalı değerler, bu nedenle `CRect` taşınıp sola veya sağa ve yukarı veya aşağı doğru.  
@@ -919,7 +919,7 @@ void operator+=(LPCRECT lpRect) throw();
  A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` her iki tarafındaki doldurmak için birim sayısını içeren nesne `CRect`.  
@@ -958,7 +958,7 @@ void operator-=(LPCRECT lpRect) throw();
  A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](cpoint-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dikdörtgeni taşımak için birim sayısını belirten bir nesne.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` her iki tarafındaki deflate için birim sayısını içeren nesne `CRect`.  
@@ -1050,7 +1050,7 @@ CRect operator+(SIZE size) const throw();
  A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](cpoint-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](csize-class.md) dönüş değeri taşımak için birim sayısını belirten bir nesne.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki doldurmak için birim sayısını içeren nesne.  
@@ -1089,7 +1089,7 @@ CRect operator-(LPCRECT lpRect) const throw();
  A [noktası](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` dönüş değeri taşımak için birim sayısını belirten bir nesne.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` dönüş değeri taşımak için birim sayısını belirten bir nesne.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` dönüş değeri taşımak için birim sayısını belirten bir nesne.  
   
  *lpRect*  
  İşaret eden bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya `CRect` döndürülen değer her iki tarafındaki deflate için birim sayısını içeren nesne.  

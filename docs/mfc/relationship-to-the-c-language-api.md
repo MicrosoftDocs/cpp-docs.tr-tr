@@ -20,20 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d06c4adfa5493929a24c233fa923451c7bf0f95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d0bb7aa4f647ceeb61c20cccd626d9da999b241
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33379235"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200118"
 ---
 # <a name="relationship-to-the-c-language-api"></a>C Dili API'sına yönelik ilişki
-Diğer sınıf kitaplıkları dışında Windows için Microsoft Foundation Class (MFC) kitaplığı ayarlayan tek karakteristiğini, C dilinde yazılmış Windows API çok yakın eşlemedir. Ayrıca, genellikle sınıf kitaplığı çağrıları serbestçe doğrudan Windows API çağrıları ile karıştırabilirsiniz. Bu doğrudan erişim ancak sınıflar bu API için tam yenileme olduğunu göstermez. Geliştiriciler hala bazen olmalısınız bazı Windows işlevleri için doğrudan çağrılar gibi [SetCursor](http://msdn.microsoft.com/library/windows/desktop/ms648393) ve [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385), örneğin. Yalnızca bunu yapmak için açık bir avantajı olduğunda bir Windows işlevi bir sınıf üye işlevi tarafından paketlenir.  
+Microsoft Foundation Class (MFC) kitaplığı dışında diğer sınıf kitaplıkları için Windows ayarlar tek bir özellik C dilinde yazılan Windows API çok yakın eşleme bir. Ayrıca, genellikle çağrıları sınıf kitaplığı serbestçe Windows API'sine doğrudan çağrı içeren karıştırabilirsiniz. Bu doğrudan erişim ancak sınıfları bu API için tam bir değiştirme olduğunu göstermez. Geliştiriciler hala bazen olmalısınız bazı Windows işlevlere doğrudan çağrıları gibi [SetCursor](/windows/desktop/api/winuser/nf-winuser-setcursor) ve [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385), örneğin. Bunun yapılması için açık bir avantaj olduğunda bir Windows işlevi bir sınıf üyesi işlevi paketlenir.  
   
- Bazen yerel Windows işlev çağrıları yapma gerektiğinden, C dili Windows API belgelerine erişiminiz olması. Bu belge, Microsoft Visual C++ ile dahil edilir.  
+ Bazen yerel Windows işlev çağrıları yapmanız gerektiğinden, C dili Windows API belgelerine erişimi olmalıdır. Bu belge, Microsoft Visual C++ ile dahildir.  
   
 > [!NOTE]
->  MFC Kitaplığı framework nasıl çalıştığını genel bakış için bkz: [yazma uygulamaları Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).  
+>  MFC Kitaplığı Framework'te nasıl çalıştığı genel bakış için bkz: [yazma uygulamaları için Windows için sınıfları kullanma](../mfc/using-the-classes-to-write-applications-for-windows.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel Sınıf Tasarımı Felsefesi](../mfc/general-class-design-philosophy.md)

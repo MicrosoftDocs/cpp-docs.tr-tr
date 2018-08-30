@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fa450436bee52aa9cd13803e3bf51c6a500fa0e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 43d6d1ace739c50d471c7e57b8670d010319ae1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883381"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196053"
 ---
 # <a name="cominterfaceentry-macros"></a>COM_INTERFACE_ENTRY makroları  
  Bu makrolar böylece tarafından erişilebilecek bir nesnenin arabirimlerinin, COM eşlemesine girin. `QueryInterface`. Sipariş arabirimler için eşleşen bir IID sırasında edileceği COM eşlemesi girişleri sırasıdır `QueryInterface`.  
@@ -48,7 +48,7 @@ ms.locfileid: "37883381"
 |[COM_INTERFACE_ENTRY_AGGREGATE_BLIND](#com_interface_entry_aggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate)|Aynı [COM_INTERFACE_ENTRY_AGGREGATE](#com_interface_entry_aggregate), eğer dışında *punk* NULL ise tarafından açıklanan toplama otomatik olarak oluşturur *CLSID*.|  
 |[COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND](#com_interface_entry_autoaggregate_blind)|Aynı [COM_INTERFACE_ENTRY_AUTOAGGREGATE](#com_interface_entry_autoaggregate), sorgulama için bir IID sorguya iletme sonuçları hariç, *punk*ve eğer *punk* , NULL, otomatik olarak oluşturma tarafından açıklanan toplama *CLSID*.|  
-|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Programınızı çağırmak neden [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.|  
+|[COM_INTERFACE_ENTRY_BREAK](#com_interface_entry_break)|Programınızı çağırmak neden [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.|  
 |[COM_INTERFACE_ENTRY_CACHED_TEAR_OFF](#com_interface_entry_cached_tear_off)|Her örnek için arabirime özgü verileri kaydeder.|  
 |[COM_INTERFACE_ENTRY_TEAR_OFF](#com_interface_entry_tear_off)|Etiket arabirimleri kullanıma sunar.|  
 |[COM_INTERFACE_ENTRY_CHAIN](#com_interface_entry_chain)|İşleme bu girdiye COM eşlemesine ulaştığında temel sınıfın COM eşlemesine işler.|  
@@ -229,7 +229,7 @@ COM_INTERFACE_ENTRY_AUTOAGGREGATE_BLIND(punk, clsid)
  [!code-cpp[NVC_ATL_Windowing#115](../../atl/codesnippet/cpp/com-map-macros_7.h)]  
   
 ##  <a name="com_interface_entry_break"></a>  COM_INTERFACE_ENTRY_BREAK  
- Programınızı çağırmak neden [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.  
+ Programınızı çağırmak neden [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297) zaman belirtilen arabirim sorgulanan için.  
   
 ```
 COM_INTERFACE_ENTRY_BREAK(x)

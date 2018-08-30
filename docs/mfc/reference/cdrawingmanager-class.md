@@ -66,12 +66,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f19461b04f98ab06a2c828b0f61fb556f9a7d7d
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 52ded6eb4b6b757934bcdb62c280c6d57e1b171e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196066"
 ---
 # <a name="cdrawingmanager-class"></a>CDrawingManager sınıfı
 `CDrawingManager` Sınıfı karmaşık çizim algoritmaları uygular.  
@@ -169,7 +169,7 @@ static HBITMAP __stdcall CreateBitmap_32(
  Bu yöntem başarılı olursa yeni oluşturulan DIB bitmap işleyici; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- DIB bit eşlem oluşturma hakkında daha fazla bilgi için bkz. [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183491).  
+ DIB bit eşlem oluşturma hakkında daha fazla bilgi için bkz. [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap).  
   
 ##  <a name="drawalpha"></a>  CDrawingManager::DrawAlpha  
  Saydam veya yarı saydam fırçalarla piksel olan bit eşlemler görüntüler.  
@@ -196,7 +196,7 @@ void DrawAlpha(
  Kaynak dikdörtgenin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için iki bit eşlemler alfa karıştırma gerçekleştirir. Alfa karıştırma hakkında daha fazla bilgi için bkz: [AlphaBlend](http://msdn.microsoft.com/library/windows/desktop/dd183351) Windows SDK.  
+ Bu yöntem için iki bit eşlemler alfa karıştırma gerçekleştirir. Alfa karıştırma hakkında daha fazla bilgi için bkz: [AlphaBlend](/windows/desktop/api/wingdi/nf-wingdi-alphablend) Windows SDK.  
   
 ##  <a name="drawellipse"></a>  CDrawingManager::DrawEllipse  
  Sağlanan dolgu ve kenarlık renkleri bir elips çizer.  

@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3c291c7eb9b6a9cd87330f4af5135037a1f31de
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: a68d39746097bcc345e0b5e09bfbf1d419192b2f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464603"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199326"
 ---
 # <a name="chtmlview-class"></a>CHtmlView sınıfı
 MFC'nin belge/görünüm mimarisi bağlamında WebBrowser denetimi işlevlerini sağlar.  
@@ -268,14 +268,14 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnBeforeNavigate2](#onbeforenavigate2)|(Öğesindeki bir pencere veya çerçeve kümesi) verilen webtarayıcıya bir gezinti gerçekleşmeden önce çağrılır.|  
 |[CHtmlView::OnCommandStateChange](#oncommandstatechange)|Bir web tarayıcısı komutunun etkin durumunun değiştiğini uygulamaya bildirmek için çağırılır.|  
 |[CHtmlView::OnDocumentComplete](#ondocumentcomplete)|Bir belge READYSTATE_COMPLETE durumuna ulaştı uygulamaya bildirmek için çağırılır.|  
-|[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms687281), kapsayıcının belge penceresinde etkin veya devre dışı, etkin bir yerinde nesne bildirir.|  
+|[CHtmlView::OnDocWindowActivate](#ondocwindowactivate)|Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate), kapsayıcının belge penceresinde etkin veya devre dışı, etkin bir yerinde nesne bildirir.|  
 |[CHtmlView::OnDownloadBegin](#ondownloadbegin)|Yönlenme işleminin başladığını uygulamaya bildirmek için çağırılır.|  
 |[CHtmlView::OnDownloadComplete](#ondownloadcomplete)|Bir Yönlenme işlemi bittiğinde, durdurulduğunda veya başarısız olduğunda çağrılır.|  
 |[CHtmlView::OnEnableModeless](#onenablemodeless)|Etkinleştirmek veya kapsayıcı oluşturduğunda veya kalıcı bir iletişim kutusu yok eder kalıcı olmayan iletişim kutuları devre dışı bırakmak için çağrılır.|  
 |[CHtmlView::OnFilterDataObject](#onfilterdataobject)|Internet Explorer veya MSHTML konak ya da Internet Explorer MSHTML'ın veri nesnesini değiştirmek izin vermek için ana bilgisayarda çağrılır.|  
-|[CHtmlView::OnFrameWindowActivate](#onframewindowactivate)|Çağrılabilir [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) kapsayıcının en üst düzey nesneyi bildirmek için çerçeve penceresini etkinleştirmek veya etkinliğini sonlandırmak.|  
+|[CHtmlView::OnFrameWindowActivate](#onframewindowactivate)|Çağrılabilir [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) kapsayıcının en üst düzey nesneyi bildirmek için çerçeve penceresini etkinleştirmek veya etkinliğini sonlandırmak.|  
 |[CHtmlView::OnFullScreen](#onfullscreen)|FullScreen özelliği değiştiğinde çağırılır.|  
-|[CHtmlView::OnGetDropTarget](#ongetdroptarget)|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan veya Internet Explorer MSHTML çağırılır [ıdroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679).|  
+|[CHtmlView::OnGetDropTarget](#ongetdroptarget)|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan veya Internet Explorer MSHTML çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|  
 |[CHtmlView::OnGetExternal](#ongetexternal)|Ana bilgisayarın almak için Internet Explorer veya MSHTML tarafından adlandırılan `IDispatch` arabirimi.|  
 |[CHtmlView::OnGetHostInfo](#ongethostinfo)|Internet Explorer veya MSHTML konak kullanıcı Arabirimi özelliklerini alır.|  
 |[CHtmlView::OnGetOptionKeyPath](#ongetoptionkeypath)|Kullanıcı tercihleri altında ya da Internet Explorer MSHTML depolar kayıt defteri anahtarını döndürür.|  
@@ -287,7 +287,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnProgressChange](#onprogresschange)|Bir indirme işleminin ilerleme durumunu güncelleştirildiğini uygulamaya bildirmek için çağırılır.|  
 |[CHtmlView::OnPropertyChange](#onpropertychange)|Bir uygulamaya bildirmek için çağırılır, [PutProperty](#putproperty) yöntemi, bir özelliğin değerini değişti.|  
 |[CHtmlView::OnQuit](#onquit)|Internet Explorer uygulamasının çıkış için hazır olduğunu uygulamaya bildirmek için çağırılır. (Yalnızca Internet Explorer için geçerlidir)|  
-|[CHtmlView::OnResizeBorder](#onresizeborder)|Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.|  
+|[CHtmlView::OnResizeBorder](#onresizeborder)|Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.|  
 |[CHtmlView::OnShowContextMenu](#onshowcontextmenu)|Hakkında bağlam menüsünü göster olduğu veya Internet Explorer MSHTML çağrılır.|  
 |[CHtmlView::OnShowUI](#onshowui)|Araç çubukları ve menüler ya da Internet Explorer MSHTML görüntülemeden önce çağrılır.|  
 |[CHtmlView::OnStatusBar](#onstatusbar)|StatusBar özelliği değiştiğinde çağırılır.|  
@@ -295,7 +295,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::OnTheaterMode](#ontheatermode)|TheaterMode özelliği değiştiğinde çağırılır.|  
 |[CHtmlView::OnTitleChange](#ontitlechange)|Ya da değiştiğinde WebBrowser denetimindeki belgenin başlığı uygun olduğunda uygulamaya bildirmek için çağırılır.|  
 |[CHtmlView::OnToolBar](#ontoolbar)|ToolBar özelliği değiştirdiğinde çağırılır.|  
-|[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|Internet Explorer veya MSHTML tarafından adlandırılan olduğunda [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) veya [IOleControlSite::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693756) Hızlandırıcı tuşunu menü iletileri işlemek için çağırılır kapsayıcının ileti sırası.|  
+|[CHtmlView::OnTranslateAccelerator](#ontranslateaccelerator)|Internet Explorer veya MSHTML tarafından adlandırılan olduğunda [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) Hızlandırıcı tuşunu menü iletileri işlemek için çağırılır kapsayıcının ileti sırası.|  
 |[CHtmlView::OnTranslateUrl](#ontranslateurl)|Internet Explorer veya MSHTML tarafından ana bilgisayar URL'sini değiştirmek için bir fırsat izin vermek için yüklenecek çağrılır.|  
 |[CHtmlView::OnUpdateUI](#onupdateui)|Konak, komut durumu değiştirildiğinde bildirir.|  
 |[CHtmlView::OnVisible](#onvisible)|WebBrowser denetimi için pencere gösterilen/gizlenmesi gerektiğinde çağrılır.|  
@@ -393,7 +393,7 @@ virtual BOOL Create(
  Pencere stili özniteliklerini belirtir. Ws_vısıble ve WS_CHILD Windows stilleri varsayılan olarak ayarlanır.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.  
   
  *pParentWnd*  
  Denetiminin üst penceresine bir işaretçi.  
@@ -455,10 +455,10 @@ HRESULT ExecFormsCommand(
  İşaretçi bir `VARIANT` komut çıktısını almak için yapısı. NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini. Olası değerler tam bir listesi için bkz. [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) Windows SDK.  
+ Standart bir HRESULT değerini. Olası değerler tam bir listesi için bkz. [IOleCommandTarget::Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `ExecFormsCommand` davranışını uygulayan [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300) yöntemi.  
+ `ExecFormsCommand` davranışını uygulayan [IOleCommandTarget::Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec) yöntemi.  
   
 ##  <a name="execwb"></a>  CHtmlView::ExecWB  
  WebBrowser veya Internet Explorer'da bir komutu çalıştırmak için bu üye işlevini çağırın.  
@@ -987,7 +987,7 @@ void Navigate2(
   
 ### <a name="parameters"></a>Parametreler  
  *PIDL işaretçisiyle birlikte*  
- Bir işaretçi bir [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) yapısı.  
+ Bir işaretçi bir [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) yapısı.  
   
  *CertOpenStore*  
  Kaynak geçmişi listeye eklenip eklenmeyeceğini, okuma veya yazma önbellekten ve yeni bir pencerede kaynak görüntülenip görüntülenmeyeceğini belirten bir değişken bayraklar. Değişkeni tarafından tanımlanan değerlerin bir birleşimi olabilir [BrowserNavConstants](https://msdn.microsoft.com/library/aa768360.aspx) sabit listesi.  
@@ -1144,7 +1144,7 @@ virtual HRESULT OnFilterDataObject(
   
 ### <a name="parameters"></a>Parametreler  
  *pDataObject*  
- Adresi [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) Internet Explorer veya MSHTML tarafından sağlanan arabirim.  
+ Adresi [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) Internet Explorer veya MSHTML tarafından sağlanan arabirim.  
   
  *ppDataObject*  
  Alan adresi `IDataObject` ana bilgisayar tarafından sağlanan arabirim işaretçisi. Yöntemi başarısız olsa bile bu parametre içeriğini her zaman NULL olarak başlatılması gerekir.  
@@ -1156,7 +1156,7 @@ virtual HRESULT OnFilterDataObject(
  Geçersiz kılma `OnFilterDataObject` tepki için `FilterDataObject` Microsoft Web tarayıcısı denetiminden bildirim. Bkz: [IDocHostUIHandler::FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx) daha fazla bilgi için Windows SDK.  
   
 ##  <a name="onframewindowactivate"></a>  CHtmlView::OnFrameWindowActivate  
- Çağrılabilir [IOleInPlaceActiveObject::OnFrameWindowActivate](http://msdn.microsoft.com/library/windows/desktop/ms683969) kapsayıcının en üst düzey nesneyi bildirmek için çerçeve penceresini etkinleştirmek veya etkinliğini sonlandırmak.  
+ Çağrılabilir [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) kapsayıcının en üst düzey nesneyi bildirmek için çerçeve penceresini etkinleştirmek veya etkinliğini sonlandırmak.  
   
 ```  
 virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
@@ -1194,7 +1194,7 @@ virtual HRESULT OnGetDropTarget(
   
 ### <a name="parameters"></a>Parametreler  
  *pDropTarget*  
- [Idroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679) kullanmak Internet Explorer veya MSHTML önerir.  
+ [Idroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) kullanmak Internet Explorer veya MSHTML önerir.  
   
  *ppDropTarget*  
  Adresi `IDropTarget` alımların `IDropTarget` konak sağlamak isteyen arabirim işaretçisi.  
@@ -1250,7 +1250,7 @@ virtual HRESULT OnGetOptionKeyPath(
   
 ### <a name="parameters"></a>Parametreler  
  *pchKey*  
- Adresi bir `LPOLESTR` ana bilgisayarı, kendi varsayılan seçenekleri depoladığı kayıt defteri alt anahtarı dize alır. Bu alt anahtar HKEY_CURRENT_USER anahtarı altında olacaktır. Kullanarak bu bellek tahsis [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727). Çağıran uygulama kullanarak bu bellek boşaltma için sorumlu [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722). Yöntemi başarısız olsa bile bu parametre her zaman NULL olarak başlatılması gerekir.  
+ Adresi bir `LPOLESTR` ana bilgisayarı, kendi varsayılan seçenekleri depoladığı kayıt defteri alt anahtarı dize alır. Bu alt anahtar HKEY_CURRENT_USER anahtarı altında olacaktır. Kullanarak bu bellek tahsis [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc). Çağıran uygulama kullanarak bu bellek boşaltma için sorumlu [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree). Yöntemi başarısız olsa bile bu parametre her zaman NULL olarak başlatılması gerekir.  
   
  *dwReserved*  
  Daha sonraki kullanımlar için ayrılmıştır. Şu anda kullanılmıyor.  
@@ -1387,7 +1387,7 @@ virtual void OnQuit();
 ```  
   
 ##  <a name="onresizeborder"></a>  CHtmlView::OnResizeBorder  
- Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.  
+ Internet Explorer veya MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), kenarlık alanı yeniden boyutlandırmak için ihtiyaç duyduğu nesne uyarır.  
   
 ```  
 virtual HRESULT OnResizeBorder(
@@ -1404,7 +1404,7 @@ virtual HRESULT OnResizeBorder(
  Arabirim kenarlığını değişti çerçeve veya belge pencere nesnesi için işaretçi.  
   
  *fFrameWindow*  
- Çerçeve penceresi çağırıyorsa TRUE [IOleInPlaceActiveObject::ResizeBorder](http://msdn.microsoft.com/library/windows/desktop/ms680053), aksi durumda FALSE.  
+ Çerçeve penceresi çağırıyorsa TRUE [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder), aksi durumda FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya başka bir OLE tanımlı hata kodu.  
@@ -1431,7 +1431,7 @@ virtual HRESULT OnShowContextMenu(
  Ekran koordinatları menüsü.  
   
  *pcmdtReserved*  
- [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) komut durumunu sorgulamak ve bu nesnede komutları yürütmek için kullanılan arabirim.  
+ [IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget) komut durumunu sorgulamak ve bu nesnede komutları yürütmek için kullanılan arabirim.  
   
  *pdispReserved*  
  IDispatch arabirimi ekranında nesnenin koordinatları. Bu, daha belirli bir bağlam sağlamak için belirli nesneleri ayırt etmek bir konak sağlar.  
@@ -1459,16 +1459,16 @@ virtual HRESULT OnShowUI(
  Daha sonraki kullanımlar için ayrılmıştır.  
   
  *pActiveObject*  
- [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) şu anda etkin nesnenin arabirimi.  
+ [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) şu anda etkin nesnenin arabirimi.  
   
  *pCommandTarget*  
- [IOleCommandTarget](http://msdn.microsoft.com/library/windows/desktop/ms683797) nesnenin arabirimi.  
+ [IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget) nesnenin arabirimi.  
   
  *pFrame*  
- [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) nesnenin arabirimi. Bu, menüler ve araç çubukları için gereklidir.  
+ [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) nesnenin arabirimi. Bu, menüler ve araç çubukları için gereklidir.  
   
  *pDoc*  
- [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) nesne için arabirim. Bu araç çubukları için gereklidir.  
+ [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) nesne için arabirim. Bu araç çubukları için gereklidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bkz: [IDocHostUIHandler::ShowUI](https://msdn.microsoft.com/library/aa753265.aspx) değerlerin listesi için Windows SDK.  
@@ -1535,7 +1535,7 @@ virtual void OnToolBar(BOOL bToolBar);
  Internet Explorer'ın araç tarafından görülüp olursa sıfır dışı veya aksi halde sıfır.  
   
 ##  <a name="ontranslateaccelerator"></a>  CHtmlView::OnTranslateAccelerator  
- Internet Explorer veya MSHTML tarafından adlandırılan olduğunda [IOleInPlaceActiveObject::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693360) veya [IOleControlSite::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms693756) Hızlandırıcı tuşunu menü iletileri işlemek için çağırılır kapsayıcının ileti sırası.  
+ Internet Explorer veya MSHTML tarafından adlandırılan olduğunda [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) Hızlandırıcı tuşunu menü iletileri işlemek için çağırılır kapsayıcının ileti sırası.  
   
 ```  
 virtual HRESULT OnTranslateAccelerator(
@@ -1692,10 +1692,10 @@ HRESULT QueryFormsCommand(
  Bir işaretçi ise belirten Boole komutu (tarafından tanımlanan *dwCommandID*) denetlenir. TRUE ise komutu desteklenir. Aksi durumda FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini. Olası değerler tam bir listesi için bkz. [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) Windows SDK.  
+ Standart bir HRESULT değerini. Olası değerler tam bir listesi için bkz. [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryFormsCommand` davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
+ `QueryFormsCommand` davranışını uygulayan [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) yöntemi.  
   
 ##  <a name="querystatuswb"></a>  CHtmlView::QueryStatusWB  
  Bir komut durumunu sorgulamak için bu üye işlevini çağırın.  
@@ -1706,13 +1706,13 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
   
 ### <a name="parameters"></a>Parametreler  
  *cmdID*  
- [OLECMDID](http://msdn.microsoft.com/library/windows/desktop/ms691264) arayan için durum bilgilerini gereken komut değeri.  
+ [OLECMDID](/windows/desktop/api/docobj/ne-docobj-olecmdid) arayan için durum bilgilerini gereken komut değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Adresini [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) komutun durumunu alan değeri.  
+ Adresini [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf) komutun durumunu alan değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `QueryStatusWB` davranışını uygulayan [IOleCommandTarget::QueryStatus](http://msdn.microsoft.com/library/windows/desktop/ms688491) yöntemi.  
+ `QueryStatusWB` davranışını uygulayan [IOleCommandTarget::QueryStatus](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-querystatus) yöntemi.  
   
  Internet Explorer ve WebBrowser için geçerlidir.  
   

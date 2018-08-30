@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132936805d948257f8d6579f0f840aaf2fd15a0d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 60fb1c219068cc0c59f908688ea5c471946458ad
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849664"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204147"
 ---
 # <a name="cpen-class"></a>CPen sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) kalemi kapsüller.  
@@ -57,10 +57,10 @@ class CPen : public CGdiObject
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CPen::CreatePen](#createpen)|Mantıksal yüzeysel veya geometrik kalem belirtilen stili, genişliğini ve fırça öznitelikleri oluşturur ve ona ekler `CPen` nesne.|  
-|[CPen::CreatePenIndirect](#createpenindirect)|Kalem stili, genişliği ve belirtilen rengi oluşturur bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı ve ekler `CPen` nesne.|  
+|[CPen::CreatePenIndirect](#createpenindirect)|Kalem stili, genişliği ve belirtilen rengi oluşturur bir [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) yapısı ve ekler `CPen` nesne.|  
 |[CPen::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CPen` Windows HPEN verildiğinde nesne.|  
-|[CPen::GetExtLogPen](#getextlogpen)|Alır bir [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) yapısı temel.|  
-|[CPen::GetLogPen](#getlogpen)|Alır bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı temel.|  
+|[CPen::GetExtLogPen](#getextlogpen)|Alır bir [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) yapısı temel.|  
+|[CPen::GetLogPen](#getlogpen)|Alır bir [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) yapısı temel.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -144,7 +144,7 @@ CPen(
   
 - PS_JOIN_BEVEL birleşimler Eğimli.  
   
-- PS_JOIN_MITER birleşimler gönye belirlenen geçerli sınırı içinde olduğunda [SetMiterLimit](http://msdn.microsoft.com/library/windows/desktop/dd145076) işlevi. Birleşim bu sınırı aşarsa Eğimli.  
+- PS_JOIN_MITER birleşimler gönye belirlenen geçerli sınırı içinde olduğunda [SetMiterLimit](/windows/desktop/api/wingdi/nf-wingdi-setmiterlimit) işlevi. Birleşim bu sınırı aşarsa Eğimli.  
   
 - Birleşimler PS_JOIN_ROUND yuvarlatılmış.  
   
@@ -208,7 +208,7 @@ BOOL CreatePen(
  Bir RGB rengi kalemin içerir.  
   
  *pLogBrush*  
- İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı. Varsa *nPenStyle* PS_COSMETIC, olan `lbColor` üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle* üyesi `LOGBRUSH` yapısı, BS_ için ayarlanmış olması gerekir DOLU. NPenStyle PS_GEOMETRIC ise, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılmalıdır.  
+ İşaret eden bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) yapısı. Varsa *nPenStyle* PS_COSMETIC, olan `lbColor` üyesi `LOGBRUSH` yapısı kalemin rengini belirtir ve *lbStyle* üyesi `LOGBRUSH` yapısı, BS_ için ayarlanmış olması gerekir DOLU. NPenStyle PS_GEOMETRIC ise, tüm üyeleri kalem fırça özniteliklerini belirtmek için kullanılmalıdır.  
   
  *nStyleCount*  
  Doubleword birimindeki uzunluğu belirtir *lpStyle* dizisi. Bu değerin sıfır olması *nPenStyle* PS_USERSTYLE değil.  
@@ -290,7 +290,7 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
 ### <a name="parameters"></a>Parametreler  
  *pLogPen*  
- İşaret eden bir [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711) kalem hakkında bilgi içeren yapısı.  
+ İşaret eden bir [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen) kalem hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -300,13 +300,13 @@ int GetExtLogPen(EXTLOGPEN* pLogPen);
   
  Windows SDK'sındaki kalem öznitelikleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [EXTLOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd162711)  
+- [EXTLOGPEN](/windows/desktop/api/wingdi/ns-wingdi-tagextlogpen)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
-- [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705)  
+- [ExtCreatePen](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen)  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği arama gösterir `GetExtLogPen` bir kalem öznitelikleri almak ve sonra yeni, yüzeysel bir kalem ile aynı renge oluşturun.  
@@ -322,7 +322,7 @@ int GetLogPen(LOGPEN* pLogPen);
   
 ### <a name="parameters"></a>Parametreler  
  *pLogPen*  
- İşaret eden bir [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041) yapısı kalem hakkındaki bilgileri içerir.  
+ İşaret eden bir [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen) yapısı kalem hakkındaki bilgileri içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -334,9 +334,9 @@ int GetLogPen(LOGPEN* pLogPen);
   
  Windows SDK'sındaki kalem öznitelikleri hakkında daha fazla bilgi için aşağıdaki konulara bakın:  
   
-- [GetObject](http://msdn.microsoft.com/library/windows/desktop/dd144904)  
+- [GetObject](/windows/desktop/api/wingdi/nf-wingdi-getobject)  
   
-- [LOGPEN](http://msdn.microsoft.com/library/windows/desktop/dd145041)  
+- [LOGPEN](/windows/desktop/api/wingdi/ns-wingdi-taglogpen)  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği arama gösterir `GetLogPen` kalem karakter alıp sonra yeni, düz bir kalem ile aynı renge oluşturun.  
@@ -356,7 +356,7 @@ operator HPEN() const;
 ### <a name="remarks"></a>Açıklamalar  
  HPEN nesne doğrudan kullanımını destekleyen bir yayım işleciyle işlecidir.  
   
- Grafik nesneler kullanma hakkında daha fazla bilgi için bkz [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
+ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz [grafik nesneleri](/windows/desktop/gdi/graphic-objects) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#104](../../mfc/codesnippet/cpp/cpen-class_7.cpp)]  

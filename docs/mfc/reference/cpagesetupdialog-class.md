@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220a4fc1b97c30be28554faf68d5338b2a8e4ea8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: c134d2e1dc6f3782446afc57b8384279a615e86f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849987"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197463"
 ---
 # <a name="cpagesetupdialog-class"></a>CPageSetupDialog sınıfı
 Ayar ve yazdırma kenar boşluklarını değiştirmek için ek destek içeren Windows ortak OLE sayfa düzeni iletişim kutusu tarafından sağlanan hizmetleri kapsüller.  
@@ -146,7 +146,7 @@ CPageSetupDialog(
   
 - PSD_DISABLEORIENTATION sayfa yönünü iletişim denetimini devre dışı bırakır.  
   
-- PSD_RETURNDEFAULT neden `CPageSetupDialog` döndürülecek [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır. Her iki varsayılır `hDevNames` ve `hDevMode` NULL; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından (öncesindeki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca `hDevNames` döndürülür; `hDevMode` null.  
+- PSD_RETURNDEFAULT neden `CPageSetupDialog` döndürülecek [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları sistem varsayılan yazıcı için bir iletişim kutusu görüntülenmeden başlatılır. Her iki varsayılır `hDevNames` ve `hDevMode` NULL; Aksi halde, işlev hata döndürür. Bir eski yazıcı sürücüsü tarafından (öncesindeki Windows sürüm 3.0), sistem varsayılan yazıcı destekleniyorsa yalnızca `hDevNames` döndürülür; `hDevMode` null.  
   
 - PSD_DISABLEPAPER kağıt seçim denetimi devre dışı bırakır.  
   
@@ -172,7 +172,7 @@ CPageSetupDialog(
  [!code-cpp[NVC_MFCDocView#94](../../mfc/codesnippet/cpp/cpagesetupdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPageSetupDialog::CreatePrinterDC  
- Bir yazıcı cihaz bağlamında oluşturur [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
+ Bir yazıcı cihaz bağlamında oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
 ```  
 HDC CreatePrinterDC();
@@ -189,7 +189,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.  
   
  IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
@@ -223,7 +223,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK'da açıklanan işlevi.  
+ [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK'da açıklanan işlevi.  
   
 ##  <a name="getdrivername"></a>  CPageSetupDialog::GetDriverName  
  Çağırdıktan sonra bu işlevi çağırın [DoModal](../../mfc/reference/cprintdialog-class.md#domodal) sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını alamadı.  
@@ -286,7 +286,7 @@ PAGESETUPDLG m_psd;
   
  Değiştirirseniz `m_psd` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.  
   
- Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842) yapısı, Windows SDK'sı bakın.  
+ Daha fazla bilgi için [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda) yapısı, Windows SDK'sı bakın.  
   
  Örneğin bakın [CPageSetupDialog::CPageSetupDialog](#cpagesetupdialog).  
   
@@ -346,7 +346,7 @@ virtual UINT PreDrawPage(
   
 ### <a name="parameters"></a>Parametreler  
  *wPaper*  
- Sayfa boyutunu belirten bir değer belirtir. Bu değer şunlardan biri olabilir **DMPAPER_** değerleri açıklamasında listelenen [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) yapısı.  
+ Sayfa boyutunu belirten bir değer belirtir. Bu değer şunlardan biri olabilir **DMPAPER_** değerleri açıklamasında listelenen [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) yapısı.  
   
  *wFlags*  
  Kağıt veya Zarf yönünü belirtir ve yazıcı iğneli veya HPPCL (Hewlett Packard Yazıcı Denetim Dili) cihazı olup olmadığı. Bu parametre aşağıdaki değerlerden biri olabilir:  
@@ -368,7 +368,7 @@ virtual UINT PreDrawPage(
 -   0x01f (nokta vuruşlu) dikey modda zarfa koy  
   
  *pPSD*  
- İşaretçi bir `PAGESETUPDLG` yapısı. Daha fazla bilgi için [PAGESETUPDLG](http://msdn.microsoft.com/library/windows/desktop/ms646842), Windows SDK'sı bakın.  
+ İşaretçi bir `PAGESETUPDLG` yapısı. Daha fazla bilgi için [PAGESETUPDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpsda), Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlenen belirtilmişse sıfır dışı değer; Aksi durumda 0.  

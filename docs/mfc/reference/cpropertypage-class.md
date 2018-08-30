@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c6a5b0e031aebb658b4da20d3aa9a6dd47f8c2a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 632e8c0039dc0cac35fe46cff1fc539e534f8e20
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851567"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203409"
 ---
 # <a name="cpropertypage-class"></a>CPropertyPage sınıfı
 Aksi takdirde bir sekme iletişim kutusu bilinen bir özellik sayfası, her bir sayfayı temsil eder.  
@@ -80,7 +80,7 @@ class CPropertyPage : public CDialog
 |----------|-----------------|  
 |[CPropertyPage::CancelToClose](#canceltoclose)|Kapat okumak için Tamam düğmesine değiştirir ve bir kalıcı özellik sayfasını sayfasında kurtarılamaz bir değişiklikten sonra iptal düğmesi devre dışı bırakır.|  
 |[CPropertyPage::Construct](#construct)|Oluşturur bir `CPropertyPage` nesne. Kullanım `Construct` parametrelerinizi çalışma zamanında belirtmek istiyorsanız veya diziler kullanıyorsanız.|  
-|[CPropertyPage::GetPSP](#getpsp)|Windows alır [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) yapısı ile ilişkili `CPropertyPage` nesne.|  
+|[CPropertyPage::GetPSP](#getpsp)|Windows alır [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) yapısı ile ilişkili `CPropertyPage` nesne.|  
 |[CPropertyPage::OnApply](#onapply)|Şimdi Uygula düğmesine tıklandığında framework tarafından çağırılır.|  
 |[CPropertyPage::OnCancel](#oncancel)|İptal düğmesine tıklandığında framework tarafından çağırılır.|  
 |[CPropertyPage::OnKillActive](#onkillactive)|Geçerli sayfa artık etkin sayfa gerektiğinde framework tarafından çağırılır. Veri doğrulama gerçekleştirin.|  
@@ -98,7 +98,7 @@ class CPropertyPage : public CDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CPropertyPage::m_psp](#m_psp)|Windows [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) yapısı. Temel özellik sayfa parametrelerini erişim sağlar.|  
+|[CPropertyPage::m_psp](#m_psp)|Windows [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) yapısı. Temel özellik sayfa parametrelerini erişim sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Standart iletişim kutuları, öğesinden bir sınıf türetin gibi `CPropertyPage` , özellik sayfasında her sayfa için. Kullanılacak `CPropertyPage`-türetilmiş nesneler, ilk oluşturmak bir [CPropertySheet](../../mfc/reference/cpropertysheet-class.md) nesnesi ve ardından özellik sayfasında giden her sayfa için bir nesne oluşturun. Çağrı [CPropertySheet::AddPage](../../mfc/reference/cpropertysheet-class.md#addpage) her sayfada sayfasında ve özellik sayfası çağırarak görüntülemek [CPropertySheet::DoModal](../../mfc/reference/cpropertysheet-class.md#domodal) bir kalıcı özellik sayfası için veya [CPropertySheet:: Oluşturma](../../mfc/reference/cpropertysheet-class.md#create) modelsiz bir özellik sayfası için.  
@@ -263,7 +263,7 @@ CPropertyPage(
  [!code-cpp[NVC_MFCDocView#113](../../mfc/codesnippet/cpp/cpropertypage-class_2.cpp)]  
   
 ##  <a name="getpsp"></a>  CPropertyPage::GetPSP  
- Windows alır [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548) yapısı ile ilişkili `CPropertyPage` nesne.  
+ Windows alır [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2) yapısı ile ilişkili `CPropertyPage` nesne.  
   
 ```  
 const PROPSHEETPAGE& GetPSP() const;  
@@ -275,7 +275,7 @@ PROPSHEETPAGE& GetPSP();
  Bir başvuru `PROPSHEETPAGE` yapısı.  
   
 ##  <a name="m_psp"></a>  CPropertyPage::m_psp  
- `m_psp` bir yapı üyeleri özelliklerini depolamak [PROPSHEETPAGE](http://msdn.microsoft.com/library/windows/desktop/bb774548).  
+ `m_psp` bir yapı üyeleri özelliklerini depolamak [PROPSHEETPAGE](/windows/desktop/api/prsht/ns-prsht-_propsheetpagea_v2).  
   
 ```  
 PROPSHEETPAGE m_psp;  
@@ -306,7 +306,7 @@ virtual BOOL OnApply();
   
  Varsayılan uygulaması `OnApply` çağrıları `OnOK`.  
   
- Kullanıcı bir özellik sayfasında şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için bkz: [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) Windows SDK.  
+ Kullanıcı bir özellik sayfasında şimdi Uygula veya Tamam düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için bkz: [PSN_APPLY](/windows/desktop/Controls/psn-apply) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CPropertyPage::OnOK](#onok).  
@@ -352,7 +352,7 @@ virtual void OnOK();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı, Tamam'ı veya şimdi Uygula düğmesini seçtiğinde framework alır [PSN_APPLY](http://msdn.microsoft.com/library/windows/desktop/bb774552) özellik sayfasından bildirim. Çağrı `OnOK` çağırırsanız yapılan olmaz [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) çünkü özellik sayfası bu durumda bildirim göndermez.  
+ Kullanıcı, Tamam'ı veya şimdi Uygula düğmesini seçtiğinde framework alır [PSN_APPLY](/windows/desktop/Controls/psn-apply) özellik sayfasından bildirim. Çağrı `OnOK` çağırırsanız yapılan olmaz [CPropertySheet::PressButton](../../mfc/reference/cpropertysheet-class.md#pressbutton) çünkü özellik sayfası bu durumda bildirim göndermez.  
   
  Tüm özellik sayfası kullanıcı atar, o anda etkin sayfaya özgü ek davranışı uygulamak için bu üye işlevi geçersiz kılar.  
   
@@ -447,7 +447,7 @@ virtual BOOL OnWizardFinish();
   
  Kullanıcının son düğmesine basıldığında almalıdır bazı eylemleri belirtmek için bu üye işlevini geçersiz kılabilirsiniz. Bu işlev geçersiz kılarken, özellik sayfası yok ediliyor önlemek için FALSE döndürür.  
   
- Kullanıcı bir sihirbaz özellik sayfasında son düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için bkz. [PSN_WIZFINISH](http://msdn.microsoft.com/library/windows/desktop/bb774571) Windows SDK.  
+ Kullanıcı bir sihirbaz özellik sayfasında son düğmesine bastığında gönderilen bildirim iletileri hakkında daha fazla bilgi için bkz. [PSN_WIZFINISH](/windows/desktop/Controls/psn-wizfinish) Windows SDK.  
   
  Sihirbaz türü özellik sayfası yapma hakkında daha fazla bilgi için bkz. [CPropertySheet::SetWizardMode](../../mfc/reference/cpropertysheet-class.md#setwizardmode).  
   

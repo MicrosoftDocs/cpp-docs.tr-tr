@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4089b786363f6b1bcbb50d08e16821efc186539a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 481b50fa99e367859eab51b41a1c5e37d8602341
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609505"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197939"
 ---
 # <a name="cstringt-class"></a>CStringT sınıfı
 Bu sınıfın temsil ettiği bir `CStringT` nesne.  
@@ -705,7 +705,7 @@ void __cdecl FormatMessage(PCXSTR pszFormat, [, argument]...);
 > [!NOTE]
 > `FormatMessage` Yeni bir biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
   
- Her INSERT karşılık gelen bir parametre aşağıdaki olmalıdır *pszFormat* veya *nFormatID* parametresi. İleti metni içinde ileti dinamik olarak biçimlendirmek için çeşitli kaçış dizileri desteklenir. Daha fazla bilgi için bkz. Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) Windows SDK'sında işlev.  
+ Her INSERT karşılık gelen bir parametre aşağıdaki olmalıdır *pszFormat* veya *nFormatID* parametresi. İleti metni içinde ileti dinamik olarak biçimlendirmek için çeşitli kaçış dizileri desteklenir. Daha fazla bilgi için bkz. Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) Windows SDK'sında işlev.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#118](../../atl-mfc-shared/codesnippet/cpp/cstringt-class_13.cpp)]  
@@ -730,7 +730,7 @@ void FormatMessageV(PCXSTR pszFormat, va_list* pArgList);
 > [!NOTE]
 > `FormatMessageV` çağrıları [CStringT::FormatMessage](#formatmessage), yeni biçimlendirilmiş dize için sistem belleği ayırmaya çalışır. Bu girişim başarısız olursa, bir bellek özel durumu otomatik olarak oluşturulur.  
   
- Daha fazla bilgi için bkz. Windows [FormatMessage](http://msdn.microsoft.com/library/windows/desktop/ms679351) Windows SDK'sında işlev.  
+ Daha fazla bilgi için bkz. Windows [FormatMessage](/windows/desktop/api/winbase/nf-winbase-formatmessage) Windows SDK'sında işlev.  
   
 ##  <a name="formatv"></a>  CStringT::FormatV  
  Değişken bağımsız değişken listesini kullanarak bir ileti dizesi olarak biçimlendirir.  

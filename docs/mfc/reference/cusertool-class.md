@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51933ac5aeb3c14a25b3989809aab2e09686b9a3
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 90972e39bbad812f820452816ff3df982174539f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466374"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202982"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 Kullanıcı aracı dış uygulamayı çalıştıran menü öğesidir. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları eklemesine ve adını, komut, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.  
@@ -159,7 +159,7 @@ virtual BOOL Invoke();
  Komut başarıyla yürütüldü olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) kullanıcı aracı ile ilişkili bir komutu yürütülemedi. Komut boş ise veya işlev başarısız [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) başarısız olur.  
+ Çağrıları [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) kullanıcı aracı ile ilişkili bir komutu yürütülemedi. Komut boş ise veya işlev başarısız [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) başarısız olur.  
   
 ##  <a name="loaddefaulticon"></a>  CUserTool::LoadDefaultIcon  
  Kullanıcı aracı için varsayılan simgeyi yükler.  

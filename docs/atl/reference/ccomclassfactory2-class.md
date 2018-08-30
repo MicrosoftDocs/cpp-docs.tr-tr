@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42ee8ab5fe6e410cf812c7c147f4673803b81903
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fe4ddaab8de2369c7cb1b31132f686bc6037676b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880196"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205531"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
-Bu sınıfın uyguladığı [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.  
+Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,11 +45,11 @@ class CComClassFactory2 : public IClassFactory2,
  *Lisans*  
  Aşağıdaki statik işlevler uygulayan bir sınıf:  
   
-- **statik BOOL VerifyLicenseKey (BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **statik BOOL GetLicenseKey (DWORD** `dwReserved` **, BSTR\***  `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **statik BOOL IsLicenseValid ();**  
+- `static BOOL IsLicenseValid( );`  
   
 ## <a name="members"></a>Üyeler  
   
@@ -64,7 +64,7 @@ class CComClassFactory2 : public IClassFactory2,
 |[CComClassFactory2::RequestLicKey](#requestlickey)|Oluşturur ve bir lisans anahtarı döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory2` uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
+ `CComClassFactory2` uygulayan [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) uzantısıdır arabirimi, [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
   
  ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
@@ -149,7 +149,7 @@ STDMETHOD(CreateInstanceLic)(
  Kullanarak bir lisans anahtarı edinebilirsiniz [RequestLicKey](#requestlickey). Bir nesne üzerinde lisanssız bir makine oluşturmak için çağırmalıdır `CreateInstanceLic`.  
   
 ##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
- Dolduran bir [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) sınıf üreteci açıklayan bilgileri yapısıyla lisans özellikleri.  
+ Dolduran bir [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) sınıf üreteci açıklayan bilgileri yapısıyla lisans özellikleri.  
   
 ```
 STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
@@ -185,7 +185,7 @@ STDMETHOD(LockServer)(BOOL fLock);
  Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.  
   
 ##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
- Oluşturur ve döndürür, sağlanan bir lisans anahtarı `fRuntimeKeyAvail` üyesi [LICINFO](http://msdn.microsoft.com/library/windows/desktop/ms690590) TRUE yapısıdır.  
+ Oluşturur ve döndürür, sağlanan bir lisans anahtarı `fRuntimeKeyAvail` üyesi [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) TRUE yapısıdır.  
   
 ```
 STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);

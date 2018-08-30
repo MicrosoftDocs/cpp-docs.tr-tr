@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15623673651e2c1aa02a5c1b5baa779789961e2b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c4fc2eb252c81e903174d99d4a55b2f3c1eed321
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205293"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 Windows birleşik giriş kutusu işlevlerini sağlar.  
@@ -286,7 +286,7 @@ int AddString(LPCTSTR lpszString);
  Liste kutusu ile oluşturulmamışsa [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili, dize, listenin sonuna eklenir. Aksi takdirde, dize listesine eklenir ve Liste sıralanmıştır.  
   
 > [!NOTE]
->  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
+>  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](/windows/desktop/Controls/comboboxex-controls) Windows SDK.  
   
  Liste içindeki belirli bir konumun bir dize eklemek için kullanın [InsertString](#insertstring) üye işlevi.  
   
@@ -493,7 +493,7 @@ int Dir(
  Dönüş değeri 0'a eşit veya daha büyük ise, listeye eklenen son dosya adının sıfır tabanlı dizindir. Dönüş değeri CB_ERR ise bir hata oluşur. dönüş değeri CB_ERRSPACE ise yeni dizeleri depolamak yeterli alan kullanılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
+ Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](/windows/desktop/Controls/comboboxex-controls) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#10](../../mfc/reference/codesnippet/cpp/ccombobox-class_10.cpp)]  
@@ -537,7 +537,7 @@ int FindString(
  Dönüş değeri 0'a eşit veya daha büyük ise, eşleşen öğenin sıfır tabanlı dizini var. Arama başarısız olmuşsa CB_ERR var.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
+ Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](/windows/desktop/Controls/comboboxex-controls) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#12](../../mfc/reference/codesnippet/cpp/ccombobox-class_12.cpp)]  
@@ -576,13 +576,13 @@ BOOL GetComboBoxInfo(PCOMBOBOXINFO pcbi) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pcbi*  
- Bir işaretçi [COMBOBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775798) yapısı.  
+ Bir işaretçi [COMBOBOXINFO](/windows/desktop/api/winuser/ns-winuser-tagcomboboxinfo) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevselliğine öykünür [CB_GETCOMBOBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775839) Windows SDK içinde açıklandığı gibi ileti.  
+ Bu üye işlevi işlevselliğine öykünür [CB_GETCOMBOBOXINFO](/windows/desktop/Controls/cb-getcomboboxinfo) Windows SDK içinde açıklandığı gibi ileti.  
   
 ##  <a name="getcount"></a>  CComboBox::GetCount  
  Birleşik giriş kutusu liste kutusu bölümünde öğe sayısını almak için bu üye işlevini çağırın.  
@@ -625,7 +625,7 @@ BOOL GetCueBanner(
 ### <a name="remarks"></a>Açıklamalar  
  İşaret metni Kombo kutusu denetiminin giriş alanında görüntülenen bir uyarı içindir. Kullanıcı giriş yapana kadar işaret metni görüntülenir.  
   
- Bu yöntem gönderir [CB_GETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775843) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [CB_GETCUEBANNER](/windows/desktop/Controls/cb-getcuebanner) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getcursel"></a>  CComboBox::GetCurSel  
  Birleşik giriş kutusunda hangi öğenin seçilip seçilmediğini belirlemek için bu üye işlevini çağırın.  
@@ -754,13 +754,13 @@ DWORD_PTR GetItemData(int nIndex) const;
  Bir hata oluşursa öğe veya CB_ERR ile ilişkili 32-bit değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- 32-bit değere ayarlanabilir *dwItemData* parametresinin bir [Setıtemdata](#setitemdata) üye işlev çağrısı. Kullanım `GetItemDataPtr` 32-bit değeri alınacak bir işaretçi ise üye işlevi ( **void\***).  
+ 32-bit değere ayarlanabilir *dwItemData* parametresinin bir [Setıtemdata](#setitemdata) üye işlev çağrısı. Kullanım `GetItemDataPtr` 32-bit değeri alınacak bir işaretçi ise üye işlevi (**void** <strong>\*</strong>).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#21](../../mfc/reference/codesnippet/cpp/ccombobox-class_21.cpp)]  
   
 ##  <a name="getitemdataptr"></a>  CComboBox::GetItemDataPtr  
- Bir işaretçi olarak belirtilen birleşik giriş kutusu öğesi ile ilişkilendirilmiş uygulama tarafından sağlanan 32-bit değerini alır ( **void\***).  
+ Bir işaretçi olarak belirtilen birleşik giriş kutusu öğesi ile ilişkilendirilmiş uygulama tarafından sağlanan 32-bit değerini alır (**void** <strong>\*</strong>).  
   
 ```  
 void* GetItemDataPtr(int nIndex) const;  
@@ -869,7 +869,7 @@ int GetMinVisible() const;
  Geçerli aşağı açılan listesinde görünen öğeleri en küçük sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [CB_GETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [CB_GETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="gettopindex"></a>  CComboBox::GetTopIndex  
  Birleşik giriş kutusu liste kutusu bölümünde görünen ilk öğenin sıfır tabanlı dizinini alır.  
@@ -939,7 +939,7 @@ int InsertString(
  Farklı [AddString](#addstring) üye işlevini `InsertString` üye işlevi bir listesiyle neden olmaz [CBS_SORT](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) sıralanacak stili.  
   
 > [!NOTE]
->  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
+>  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](/windows/desktop/Controls/comboboxex-controls) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CComboBox#27](../../mfc/reference/codesnippet/cpp/ccombobox-class_27.cpp)]  
@@ -1056,7 +1056,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
 ### <a name="remarks"></a>Açıklamalar  
  İşaret metni Kombo kutusu denetiminin giriş alanında görüntülenen bir uyarı içindir. Kullanıcı giriş yapana kadar işaret metni görüntülenir.  
   
- Bu yöntem gönderir [CB_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb775897) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [CB_SETCUEBANNER](/windows/desktop/Controls/cb-setcuebanner) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar *m_combobox*, yani Kombo kutusu denetiminin programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -1133,7 +1133,7 @@ BOOL SetEditSel(
  Konumları sıfır tabanlıdır. İlk karakter düzenleme denetimi seçmek için bir başlangıç konumu 0 belirtin. Bitiş konumu seçmek için yalnızca son karakterine için karakterdir. Örneğin, ilk dört karakter düzenleme denetimi seçmek için başlangıç konumu 0 ve 4'ün bitiş konumu kullanırsınız.  
   
 > [!NOTE]
->  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775738) Windows SDK.  
+>  Bu işlev, Windows tarafından desteklenmiyor `ComboBoxEx` denetimi. Bu denetimi hakkında daha fazla bilgi için bkz. [ComboBoxEx denetimleri](/windows/desktop/Controls/comboboxex-controls) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CComboBox::GetEditSel](#geteditsel).  
@@ -1207,7 +1207,7 @@ int SetItemData(
  [!code-cpp[NVC_MFC_CComboBox#36](../../mfc/reference/codesnippet/cpp/ccombobox-class_38.cpp)]  
   
 ##  <a name="setitemdataptr"></a>  CComboBox::SetItemDataPtr  
- Belirtilen öğe belirtilen işaretçisi olacak şekilde bir birleşik giriş kutusunda ile ilişkili 32-bit değeri ayarlar ( **void\***).  
+ Belirtilen öğe belirtilen işaretçisi olacak şekilde bir birleşik giriş kutusunda ile ilişkili 32-bit değeri ayarlar (**void** <strong>\*</strong>).  
   
 ```  
 int SetItemDataPtr(
@@ -1297,7 +1297,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [CB_SETMINVISIBLE](http://msdn.microsoft.com/library/windows/desktop/bb775915) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [CB_SETMINVISIBLE](/windows/desktop/Controls/cb-setminvisible) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar *m_combobox*, yani Kombo kutusu denetiminin programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  

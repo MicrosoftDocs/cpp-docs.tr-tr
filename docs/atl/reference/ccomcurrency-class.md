@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6c883ef9c0c5866db1edf60668efcea7e819fc5
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 60d3d845f51f59e6072bd0425f34c63e0049dd31
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208773"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202543"
 ---
 # <a name="ccomcurrency-class"></a>CComCurrency sınıfı
 `CComCurrency` yöntemleri ve işleçleri oluşturma ve bir para birimi nesnesi yönetmek için vardır.  
@@ -559,5 +559,5 @@ HRESULT SetInteger(LONGLONG nInteger);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleCurrency sınıfı](../../mfc/reference/colecurrency-class.md)   
- [PARA BİRİMİ](http://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
+ [PARA BİRİMİ](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

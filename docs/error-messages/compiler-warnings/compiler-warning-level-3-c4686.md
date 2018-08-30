@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (Düzey 3) C4686 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,42 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1edbf438951644f63aae637a68f69d173ab7e1b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32a44cd929eb7629ef317ce9847950b613bde52c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292785"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202086"
 ---
 # <a name="compiler-warning-level-3-c4686"></a>Derleyici Uyarısı (Düzey 3) C4686
-**'**   
- ***Kullanıcı tanımlı tür* ': olası değişiklik davranış UDT değişikliği iade çağırma**  
-  
- Sınıf şablonu uzmanlık değildi bir dönüş türü kullanılmadan önce tanımlanır. Sınıf başlatır herhangi bir şey C4686 çözümleyecek; bir örneği bildirme veya üye erişme (C\<int >:: herhangi bir şey) de seçeneklerdir.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdakileri yerine deneyin,  
-  
-```  
-// C4686.cpp  
-// compile with: /W3  
-#pragma warning (default : 4686)  
-template <class T>  
-class C;  
-  
-template <class T>  
-C<T> f(T);  
-  
-template <class T>  
-class C {};  
-  
-int main() {  
-   f(1);   // C4686  
-}  
-  
-template <class T>  
-C<T> f(T) {  
-   return C<int>();  
-}  
+
+> '*kullanıcı tanımlı tür*': davranışta olası bir değişiklik, udt'de değişiklik iade çağırma kuralı
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir sınıf şablonu uzmanlığı değildi, dönüş türü içinde kullanılan önce tanımlanır. Sınıfın örneğini oluşturur, hiçbir şey C4686 çözümler; bir örneği bildirme veya bir üyeye (C\<int >:: herhangi bir şey) de seçeneklerdir.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdakileri deneyin:
+
+```cpp
+// C4686.cpp
+// compile with: /W3
+#pragma warning (default : 4686)
+template <class T>
+class C;
+
+template <class T>
+C<T> f(T);
+
+template <class T>
+class C {};
+
+int main() {
+   f(1);   // C4686
+}
+
+template <class T>
+C<T> f(T) {
+   return C<int>();
+}
 ```

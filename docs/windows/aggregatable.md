@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 66c85999e70e505176700ecaac69b75048ce2422
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a9d65f77126ceb4268d41610c6d5fe3a07968d02
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595248"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200574"
 ---
 # <a name="aggregatable"></a>toplanabilir
 
@@ -49,7 +49,7 @@ COM nesnesinin ne zaman toplanabilir belirtmek için bir parametre:
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Toplanabilir** C++ özniteliği ile aynı işlevlere sahip [toplanabilir](http://msdn.microsoft.com/library/windows/desktop/aa366721) MIDL özniteliği. Bu derleyici geçer anlamına gelir **toplanabilir** oluşturulan .idl dosyasına özniteliği aracılığıyla.
+**Toplanabilir** C++ özniteliği ile aynı işlevlere sahip [toplanabilir](/windows/desktop/Midl/aggregatable) MIDL özniteliği. Bu derleyici geçer anlamına gelir **toplanabilir** oluşturulan .idl dosyasına özniteliği aracılığıyla.
 
 Bu öznitelik gerektiren [coclass'ı](../windows/coclass.md), [ProgID](../windows/progid.md), veya [vi_progid](../windows/vi-progid.md) özniteliği (ya da bunlardan birini anlamına gelir. başka bir öznitelik) da uygulanabilir aynı öğeye. Herhangi bir tek öznitelik kullandıysanız, diğer iki otomatik olarak uygulanır. Örneğin, varsa `progid` uygulanan `vi_progid` ve `coclass` de uygulanır.
 
@@ -97,4 +97,4 @@ class CMyClass {};
 [IDL öznitelikleri](../windows/idl-attributes.md)  
 [Sınıf Öznitelikleri](../windows/class-attributes.md)  
 [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
-[Toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558)  
+[Toplama](/windows/desktop/com/aggregation)  

@@ -47,12 +47,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295fb6944c3c18c2e7794ca13ad5ab93b788a776
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6d87a3b0e4ed9c5c558c90a2935c538b4fb826be
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883485"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201686"
 ---
 # <a name="message-map-macros-atl"></a>İleti eşleme makroları (ATL)
 İleti eşlemeleri ve girişleri bu makroları tanımlar.  
@@ -346,7 +346,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
  **Başlık:** atlwin.h   
   
 ##  <a name="command_code_handler"></a>  COMMAND_CODE_HANDLER  
- Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti tabanlı yalnızca bildirim kod.  
+ Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti tabanlı yalnızca bildirim kod.  
   
 ```
 COMMAND_CODE_HANDLER(code, func)
@@ -380,7 +380,7 @@ COMMAND_HANDLER(id, code, func)
  [in] İleti işleyici işlevinin adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- COMMAND_HANDLER eşleyen bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti. Örneğin:  
+ COMMAND_HANDLER eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti. Örneğin:  
   
  [!code-cpp[NVC_ATL_Windowing#119](../../atl/codesnippet/cpp/message-map-macros-atl_6.h)]  
   
@@ -401,7 +401,7 @@ COMMAND_HANDLER(id, code, func)
  **Başlık:** atlwin.h   
   
 ##  <a name="command_id_handler"></a>  COMMAND_ID_HANDLER  
- Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti tabanlı menü öğesi, denetim ya da Hızlandırıcı, yalnızca tanımlayıcısı.  
+ Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak eşleyen bir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti tabanlı menü öğesi, denetim ya da Hızlandırıcı, yalnızca tanımlayıcısı.  
   
 ```
 COMMAND_ID_HANDLER(id, func)
@@ -418,7 +418,7 @@ COMMAND_ID_HANDLER(id, func)
  **Başlık:** atlwin.h   
   
 ##  <a name="command_range_code_handler"></a>  COMMAND_RANGE_CODE_HANDLER  
- Benzer şekilde [COMMAND_RANGE_HANDLER](#command_range_handler), ancak haritaları [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.  
+ Benzer şekilde [COMMAND_RANGE_HANDLER](#command_range_handler), ancak haritaları [WM_COMMAND](/windows/desktop/menurc/wm-command) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.  
   
 ```
 COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
@@ -444,7 +444,7 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
  **Başlık:** atlwin.h   
   
 ##  <a name="command_range_handler"></a>  COMMAND_RANGE_HANDLER  
- Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak haritaları [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) iletileri denetimleri aralığından tek işleyici işlevi.  
+ Benzer şekilde [COMMAND_HANDLER](#command_handler), ancak haritaları [WM_COMMAND](/windows/desktop/menurc/wm-command) iletileri denetimleri aralığından tek işleyici işlevi.  
   
 ```
 COMMAND_RANGE_HANDLER( idFirst, idLast, func)
@@ -553,7 +553,7 @@ MESSAGE_HANDLER( msg, func )
 > [!NOTE]
 >  Her zaman bir ileti eşlemesi ile başlayan [BEGIN_MSG_MAP](#begin_msg_map). Ardından, sonraki diğer ileti eşlemeleri ile bildirebilirsiniz [ALT_MSG_MAP](#alt_msg_map). [END_MSG_MAP](#end_msg_map) makrosu ileti eşlemede sonunu işaretler. Her ileti eşlemesi BEGIN_MSG_MAP ve END_MSG_MAP tek bir örneği olması gerekir.  
   
- MESSAGE_HANDLER ek olarak, kullandığınız [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) eşlemek için [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ve [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri , sırasıyla.  
+ MESSAGE_HANDLER ek olarak, kullandığınız [COMMAND_HANDLER](#command_handler) ve [NOTIFY_HANDLER](#notify_handler) eşlemek için [WM_COMMAND](/windows/desktop/menurc/wm-command) ve [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri , sırasıyla.  
   
  ATL ileti eşlemeleri hakkında daha fazla bilgi için bkz. [ileti eşlemeleri](../../atl/message-maps-atl.md).  
   
@@ -584,7 +584,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
  **Başlık:** atlwin.h   
   
 ##  <a name="notify_code_handler"></a>  NOTIFY_CODE_HANDLER  
- Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca bildirim kod.  
+ Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca bildirim kod.  
   
 ```
 NOTIFY_CODE_HANDLER(cd, func)
@@ -618,7 +618,7 @@ NOTIFY_HANDLER( id, cd, func )
  [in] İleti işleyici işlevinin adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- NOTIFY_HANDLER eşleyen bir [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti.  
+ NOTIFY_HANDLER eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) bildirim kodu ve denetim tanımlayıcısına göre belirtilen işleyici işlevine ileti.  
   
  NOTIFY_HANDLER makroda belirtilen herhangi bir işlev gibi tanımlanmış olması gerekir:  
   
@@ -640,7 +640,7 @@ NOTIFY_HANDLER( id, cd, func )
  **Başlık:** atlwin.h   
   
 ##  <a name="notify_id_handler"></a>  NOTIFY_ID_HANDLER  
- Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca denetim tanımlayıcısı.  
+ Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak eşleyen bir [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti tabanlı yalnızca denetim tanımlayıcısı.  
   
 ```
 NOTIFY_ID_HANDLER( id, func )
@@ -657,7 +657,7 @@ NOTIFY_ID_HANDLER( id, func )
  **Başlık:** atlwin.h   
   
 ##  <a name="notify_range_code_handler"></a>  NOTIFY_RANGE_CODE_HANDLER  
- Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak haritaları [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.  
+ Benzer şekilde [NOTIFY_RANGE_HANDLER](#notify_range_handler), ancak haritaları [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri kod içeren bir özel bildirim denetimlerini aralığından tek işleyici işlevi.  
   
 ```
 NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
@@ -683,7 +683,7 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
  **Başlık:** atlwin.h   
   
 ##  <a name="notify_range_handler"></a>  NOTIFY_RANGE_HANDLER  
- Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak haritaları [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri denetimleri aralığından tek işleyici işlevi.  
+ Benzer şekilde [NOTIFY_HANDLER](#notify_handler), ancak haritaları [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) iletileri denetimleri aralığından tek işleyici işlevi.  
   
 ```
 NOTIFY_RANGE_HANDLER( idFirst, idLast, func )

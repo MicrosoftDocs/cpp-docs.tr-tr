@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6184e5bb251a2b74e8500cc195a38f2d814c1b5f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c07de9e766b7c2126d0ce4c8d1daed631a8355c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319058"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194746"
 ---
 # <a name="project-build-error-prj0016"></a>Proje Derleme Hatası PRJ0016
-Kullanıcının güvenlik ayarları işlemi oluşturulmasını engeller. Bu ayarlar, yapı için gereklidir.  
+Kullanıcının güvenlik ayarları, işlemin oluşturulmasını önleyin. Bu ayarlar, derleme için gereklidir.  
   
- Bir işlemi kullanarak işlemleri oluşturmak için izinlere sahip olmayan bir kullanıcı olarak kaydedilir. Bu kullanıcı hesabı için izin düzeylerini değiştirme veya hesap yöneticinize başvurun.  
+ Bir işlem kullanarak işlemleri oluşturma izinlerine sahip olmayan bir kullanıcı olarak oturum açtınız. Bu kullanıcı hesabı için izin düzeylerini değiştirin veya hesap yöneticinize başvurun.  
   
- Bu hata ayrıca aşağıdaki kayıt defteri anahtarını ayarlayın oluşabilir:  
+ Aşağıdaki kayıt defteri anahtarını ayarlanmışsa bu hatayı da meydana gelebilir:  
   
  \\\HKCU\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\RestrictRun  
   
- Bu hatayı gidermek için RestrictRun anahtarını silin. Bu kayıt defteri anahtarı gerekiyorsa, append **vcspawn.exe** anahtar girişlerinde listesi.  
+ Bu hatayı gidermek için RestrictRun anahtarı silin. Bu kayıt defteri anahtarı gerekli olursa, ekleme **vcspawn.exe** anahtar girişlerinde listesi.  
   
- Bu hata başka bir nedeni, ilke ayarını VCSpawn.exe altındaki kayıt defteri anahtarının HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun bu kullanıcı hesabı için izin verilen bir pencere program içermediğine olmasıdır.  
+ Bu hata başka bir nedeni, ilke ayarını VCSpawn.exe HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\RestrictRun kayıt defteri anahtarı altında bu kullanıcı hesabı için izin verilen bir pencere program içermediğinden ' dir.  
   
  Ek bilgi için bkz:  
   
--   Kullanılabilen 324153, Bilgi Bankası makalesi [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 324153](http://support.microsoft.com/default.aspx?scid=kb;en-us;324153).  
+-   Kullanılabilir olan 324153, Bilgi Bankası makalesi [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 324153](http://support.microsoft.com/default.aspx?scid=kb;en-us;324153).  
   
--   [Sistem İlkesi ayarları uymak](http://msdn.microsoft.com/library/aa372139), "Yalnızca izin verilen Windows uygulamalarını çalıştır" üzerindeki bölümü.
+-   [Sistem İlkesi ayarları için bağlılığı](https://msdn.microsoft.com/library/aa372139), "Yalnızca izin verilen Windows uygulamaları Çalıştır" bölümü.

@@ -206,12 +206,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 318951b5216513c20cdb21ac4a4fcfff9c3e0ac7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6de4e448450aa346875bfef5e9455d713258b5d6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466459"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199927"
 ---
 # <a name="styles-used-by-mfc"></a>MFC Tarafından Kullanılan Stiller  
   
@@ -308,7 +308,7 @@ MFC'de kullanılabilen aşağıdaki birleşik giriş kutusu stilleri. Windows bi
   
 ## <a name="edit-styles"></a>  Düzenleme stilleri  
   
-Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CEdit::Create](../../mfc/reference/cedit-class.md#create). Windows düzenleme denetimi stilleri hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
+Düzenleme stilleri uygulamak için [CEdit sınıfı](../../mfc/reference/cedit-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CEdit::Create](../../mfc/reference/cedit-class.md#create). Windows düzenleme denetimi stilleri hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
@@ -403,7 +403,7 @@ Aşağıdaki ileti kutusu stilleri kullanılabilir.
   
 ## <a name="scroll-bar-styles"></a> Kaydırma çubuğu stilleri  
   
-Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). Kaydırma çubuğu denetimi stilleri Windows hakkında daha fazla bilgi için bkz: [kaydırma çubuğu denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533).  
+Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/reference/cscrollbar-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create). Kaydırma çubuğu denetimi stilleri Windows hakkında daha fazla bilgi için bkz: [kaydırma çubuğu denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
@@ -420,7 +420,7 @@ Kaydırma çubuğu stilleri uygulamak için [CScrollBar sınıfı](../../mfc/ref
   
 ## <a name="static-styles"></a> Statik stiller  
   
-Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CStatic::Create](../../mfc/reference/cstatic-class.md#create). Windows statik denetimi stilleri hakkında daha fazla bilgi için bkz: [statik denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773).  
+Statik stiller uygulamak için [CStatic sınıfı](../../mfc/reference/cstatic-class.md) nesneleri. Stilleri bir birleşimi belirler *dwStyle* parametresinin [CStatic::Create](../../mfc/reference/cstatic-class.md#create). Windows statik denetimi stilleri hakkında daha fazla bilgi için bkz: [statik denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773).  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
@@ -498,7 +498,7 @@ Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/refe
 |WS_EX_CONTEXTHELP|Pencerenin başlık çubuğundaki bir soru işareti içerir. Kullanıcı, soru işareti, imleç değişiklikleri bir işaretçiyle soru işaretine tıkladığında. Kullanıcı daha sonra bir alt pencere tıklarsa, alt WM_HELP iletisini alır.|  
 |WS_EX_CONTROLPARENT|Sekme tuşunu kullanarak penceresinin alt pencereleri arasında gezinmek kullanıcının sağlar.|  
 |WS_EX_DLGMODALFRAME|Bir pencere bir başlık çubuğu ws_captıon stili bayrağı belirtirseniz ile oluşturulabilir (isteğe bağlı olarak) çift kenarlıklı atayan *dwStyle* parametresi.|  
-|WS_EX_LAYERED|Pencere bir [katmanlı pencere](http://msdn.microsoft.com/library/ms632599.aspx#layered). Bu stil penceresi olup olmadığını kullanılamaz bir [sınıfı stili](http://msdn.microsoft.com/library/ms633574.aspx#class_styles) CS_OWNDC ya da CS_CLASSDC. Ancak, Microsoft Windows 8, burada önceki Windows sürümleri için yalnızca üst düzey pencerelere destekliyorsa, alt pencereler için WS_EX_LAYERED stili destekler.|  
+|WS_EX_LAYERED|Pencere bir [katmanlı pencere](/windows/desktop/winmsg/window-features). Bu stil penceresi olup olmadığını kullanılamaz bir [sınıfı stili](/windows/desktop/winmsg/about-window-classes) CS_OWNDC ya da CS_CLASSDC. Ancak, Microsoft Windows 8, burada önceki Windows sürümleri için yalnızca üst düzey pencerelere destekliyorsa, alt pencereler için WS_EX_LAYERED stili destekler.|  
 |WS_EX_LEFT|Pencere genel sola hizalanmış özellikleri sunar. Bu varsayılandır.|  
 |WS_EX_LEFTSCROLLBAR|Dikey kaydırma çubuğu istemci alanını soluna yerleştirir.|  
 |WS_EX_LTRREADING|Soldan sağa kullanarak pencere metni görüntüler sırası özellikleri okunurken. Bu varsayılandır.|  
@@ -524,14 +524,14 @@ Genişletilmiş pencere stilleri uygulamak için [CWnd sınıfı](../../mfc/refe
 [CScrollBar::Create](../../mfc/reference/cscrollbar-class.md#create)  
 [CStatic::Create](../../mfc/reference/cstatic-class.md#create)  
 [AfxMessageBox](../../mfc/reference/cstring-formatting-and-message-box-display.md#afxmessagebox)  
-[CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679)  
-[CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)  
+[CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)  
+[CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)  
 [Düğme stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775951)  
 [Birleşik giriş kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775796)  
-[Düzenleme denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb775464)  
+[Düzenleme denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775464)  
 [Liste kutusu stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb775149) 
 [MessageBox işlevi (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms645505) 
-[kaydırma çubuğu denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb787533)  
-[Statik denetim stilleri (Windows)](http://msdn.microsoft.com/library/windows/desktop/bb760773)  
+[kaydırma çubuğu denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb787533)  
+[Statik denetim stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/bb760773)  
 [Pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms632600)  
 [Genişletilmiş pencere stilleri (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff700543)  

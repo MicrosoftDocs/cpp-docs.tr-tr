@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b39fb35b21721cb9b93741a74f62d749b6fb1051
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b0a7a2bcabc045be7493174c8eea2362d074b221
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608273"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203949"
 ---
 # <a name="concurrency-runtime"></a>Eşzamanlılık Çalışma Zamanı
 Eşzamanlılık Çalışma zamanı C++ için yazma sağlam, ölçeklenebilir ve hızlı yanıt veren paralel uygulamalar yardımcı olur. Böylece altyapı ayrıntılarını için eşzamanlılık ilgili yönetmek zorunda değilsiniz özet düzeyi başlatır. Servis taleplerini uygulamalarınızın kalitesini karşılayan zamanlama ilkeleri belirtmek için de kullanabilirsiniz. Eşzamanlılık Çalışma zamanı ile çalışmaya başlamanıza yardımcı olması için bu kaynakları kullanın.  
@@ -107,7 +107,7 @@ Eşzamanlılık Çalışma zamanı C++ için yazma sağlam, ölçeklenebilir ve 
   
 |||  
 |-|-|  
-|[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Nasıl eşzamanlılık çalışma zamanı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.|  
+|[Zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx)|Nasıl eşzamanlılık çalışma zamanı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.|  
 |[Eşzamanlılık Çalışma zamanı ve paralel desen Kitaplığı'nda Visual Studio 2010 için kod örnekleri](http://go.microsoft.com/fwlink/p/?linkid=183875)|Örnek uygulamalar ve Eşzamanlılık Çalışma zamanı gösteren yardımcı programları sağlar.|  
 |[Yerel kod blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=183873)|Eşzamanlılık Çalışma zamanı içinde paralel programlama hakkında ek ayrıntılı blog makaleler sağlar.|  
 |[C++ ve yerel kod forumdaki paralel bilgi işlem](http://go.microsoft.com/fwlink/p/?linkid=183874)|Eşzamanlılık Çalışma zamanı hakkında topluluk tartışmaları katılmasını sağlar.|  

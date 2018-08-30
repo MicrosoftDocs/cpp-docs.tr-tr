@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 102585cf7148923f584591102712278847ee7573
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d971d4cce8dc3a9d01a666bc8e0e6333f85260c8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601260"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201380"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
-Temsil eden bir [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) Windows çalışma zamanı tür sisteminde türü.  
+Temsil eden bir [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) Windows çalışma zamanı tür sisteminde türü.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -151,7 +151,7 @@ Platform::Guid::operator!=
 
 
 ## <a name="operator-call"></a> Guid::operator() işleci
-Örtük olarak dönüştürür bir [GUID yapısı](http://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)bir Platform::Guid GUID.  
+Örtük olarak dönüştürür bir [GUID yapısı](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx)bir Platform::Guid GUID.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

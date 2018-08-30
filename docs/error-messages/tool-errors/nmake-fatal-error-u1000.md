@@ -1,7 +1,7 @@
 ---
 title: NMAKE önemli hatası U1000 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a8d4e0f150d82482dd8391efa1f2251ac37bc8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69909c542a02baf8aa261c8ef78413a877a223a7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325272"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194894"
 ---
 # <a name="nmake-fatal-error-u1000"></a>NMAKE Önemli Hatası U1000
-sözdizimi hatası: ')' makrosu çağırma eksik  
-  
- Sol parantez **(**, görünen eşleşen sağ parantez olmadan **)**, makrosu çağrısı. Doğru form **$(***adı***)**; `$` *n* tek karakter adları için izin verilir.
+
+> sözdizimi hatası: ')' makro çağrısı eksik
+
+Bir sol ayraç **(**, eşleşen bir sağ parantez olmadan görüntülenmektedir **)**, makro çağrısı. Doğru form **$(**<em>adı</em>**)**; **$** <em>n</em> tek karakterli adlar için izin verilir.

@@ -1,5 +1,5 @@
 ---
-title: Grafik nesneleri | Microsoft Docs
+title: Grafik nesneler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -51,20 +51,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cf7e2c56094727c6956d0e2e21708dd81be4f10
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: dd8fc67f7cdc11328c4da9643f57b65a1cc6bfd0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930852"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197191"
 ---
 # <a name="graphic-objects"></a>Grafik Nesneler
-Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar. Çizgiler, dolgu evin içindekiler ve metin çizmek için yazı tiplerini Fırçalar çizmek için Kalem sağlar. MFC Windows çizim araçları eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıfların ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcısı türleri gösterilmektedir.  
+Çizim Araçları, cihaz bağlamlarında kullanmak için çeşitli Windows sağlar. Bu, kalemler, çizgiler, Fırçalar dolgu evin içindekiler ve metin çizmek için yazı tiplerini çizmek için sağlar. MFC Windows de çizim araçlarından eşdeğer grafik nesne sınıfları sağlar. Aşağıdaki tabloda kullanılabilir sınıflar ve eşdeğer Windows grafik cihaz arabirimi (GDI) tanıtıcı türlerine gösterir.  
   
 > [!NOTE]
->  Daha fazla bilgi için GDI + SDK belgelerine bakın: [ http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
+>  Daha fazla bilgi için GDI +'da SDK belgelerine bakın: [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
   
- Bu makale, bu grafik nesne sınıfları kullanımını açıklar:  
+ Bu makalede, bu grafik nesne sınıfları kullanımını açıklar:  
   
 ### <a name="classes-for-windows-gdi-objects"></a>Windows GDI nesneleri için sınıflar  
   
@@ -80,26 +80,26 @@ Windows cihaz bağlamlarında kullanmak için Araçlar çizim çeşitli sağlar.
 > [!NOTE]
 >  Sınıf [Cımage](../atl-mfc-shared/reference/cimage-class.md) Gelişmiş bit eşlem desteği sağlar.  
   
- Sınıf Kitaplığı'nda her grafik nesne sınıfı, ardından uygun oluşturma işleviyle gibi başlatmalıdır o sınıfın grafik nesnelerini oluşturmanıza olanak tanır kurucusunun `CreatePen`.  
+ Sınıf Kitaplığı'nda her grafik nesne sınıfı, ardından uygun Oluştur işleviyle gibi başlatmalıdır söz konusu sınıfın grafik nesneleri oluşturma olanak tanıyan bir oluşturucusu vardır `CreatePen`.  
   
- Sınıf Kitaplığı'nda her grafik nesnesi sınıf MFC nesneye ilişkili Windows tanıtıcı cast atama işleci sahiptir. İlişkili nesne bu ayırır kadar sonuç tanıtıcı geçerli değil. Nesnenin kullanmak `Detach` tanıtıcı ayırmak için üye işlevi.  
+ Sınıf Kitaplığı'nda her grafik nesne sınıfı, ilişkili Windows işlenecek bir MFC nesne başvurusuna bir atama işleci vardır. İlişkili nesneyi ayırır kadar elde edilen tanıtıcısı geçerli değil. Nesnenin kullanın `Detach` tanıtıcısı ayrılamadı üye işlevi.  
   
- Aşağıdaki kod atamaları bir `CPen` Windows işlenecek nesne:  
+ Aşağıdaki kod yayınları bir `CPen` Windows işlemek için nesne:  
   
  [!code-cpp[NVC_MFCDocViewSDI#5](../mfc/codesnippet/cpp/graphic-objects_1.cpp)]  
   
-#### <a name="to-create-a-graphic-object-in-a-device-context"></a>Cihaz bağlamında bir grafik nesnesi oluşturmak için  
+#### <a name="to-create-a-graphic-object-in-a-device-context"></a>Bir cihaz bağlamında grafik nesnesi oluşturmak için  
   
-1.  Grafik nesnesi üzerinde yığın çerçevesi tanımlayın. Nesne türüne özgü oluştur işlevi ile gibi başlatılamıyor `CreatePen`. Alternatif olarak, oluşturucuda nesneyi başlatın. Açıklamalara [tek aşamalı ve iki aşamalı oluşturma](../mfc/one-stage-and-two-stage-construction-of-objects.md), örnek kod sağlar.  
+1.  Grafik nesnesi yığın çerçevesini tanımlar. Nesne türü-özel oluştur işlevi ile gibi başlatmak `CreatePen`. Alternatif olarak, oluşturucuda nesnesini başlatır. Açıklamalara [tek aşamalı ve iki aşamalı oluşturmayı](../mfc/one-stage-and-two-stage-construction-of-objects.md), kod örneği sağlar.  
   
-2.  [Geçerli cihaz bağlamına nesneyi seçin](../mfc/selecting-a-graphic-object-into-a-device-context.md), eski grafik nesnesi kaydetmeden önce seçilmedi.  
+2.  [Geçerli cihaz bağlamına nesneyi seçin](../mfc/selecting-a-graphic-object-into-a-device-context.md), eski grafik nesnesi, kaydetmeden önce seçilmiştir.  
   
-3.  Geçerli grafik nesnesi ile işiniz bittiğinde, eski grafik nesnesi durumuna geri yüklemek için geri cihaz bağlamına seçin.  
+3.  Geçerli grafik nesnesi ile işiniz bittiğinde, eski grafik nesnesinin durumunu geri yüklemek için geri cihaz bağlamına seçin.  
   
-4.  Kapsam çıkıldı olduğunda otomatik olarak silinecek çerçeve ayrılmış grafik nesnesi izin verin.  
+4.  Kapsam çıkıldı olduğunda otomatik olarak silinmesi çerçeve tarafından ayrılmış grafik nesnesi sağlar.  
   
 > [!NOTE]
->  Bir grafik nesnesi sürekli olarak kullanıyorsanız, bir kez ayırabilir ve gerektiğinde her zaman bir cihaz bağlamına seçin. Artık ihtiyacınız olduğunda bu tür bir nesneyi silmek istediğinizden emin olun.  
+>  Grafik nesnesi sürekli olarak kullanacağınız bir kez ayırın ve her zaman gerekli bir cihaz bağlamına seçin. Artık ihtiyacınız olmadığında, böyle bir nesnenin silmek istediğinizden emin olun.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

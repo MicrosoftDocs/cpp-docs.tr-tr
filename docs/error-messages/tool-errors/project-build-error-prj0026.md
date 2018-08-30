@@ -1,7 +1,7 @@
 ---
 title: Proje derleme hatası PRJ0026 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28f74b3c12520e16dad8306b16833544c34f925b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2402ee3f8e099a58c236ad7055a1a1487773dd9f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318447"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195056"
 ---
 # <a name="project-build-error-prj0026"></a>Proje Derleme Hatası PRJ0026
-Yanıt dosyası 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği alır.  
-  
- ***Dosya içeriğini UNICODE***  
-  
- Proje sistemi Unicode içeriği kullanıcının geçerli ANSI kod sayfasına doğru şekilde dönüştürülemeyen bir yanıt dosyası bulundu.  
-  
- ANSI kullanın veya bilgisayarınızda kod sayfasını yükleyin ve sistem varsayılan olarak ayarlamak için yanıt dosyasının içeriği güncelleştirmek için bu hata için çözünürlük olur.
+
+> Yanıt dosyası '*dosya*' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe sahip.
+>
+> *UNICODE dosya içeriği*
+
+Proje sistemi bir yanıt dosyasında doğru kullanıcının geçerli ANSI kod sayfasına çevrilemeyen Unicode içeriğe bulundu.
+
+Bu hata için çözüm ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için yanıt dosyasının içeriğini güncelleştirmektir.

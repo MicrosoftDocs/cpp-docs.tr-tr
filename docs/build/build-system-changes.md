@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3d6dffb4a4b0b4f5ef3a373cf2dcd0d93d1bd12
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e29d664824a01c0e2a0c0e738368f8d025a239ee
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613207"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202163"
 ---
 # <a name="build-system-changes"></a>Derleme Sistemi Değişiklikleri
 Visual C++ projeleri derlemek için MSBuild sistemi kullanılır. Ancak, Visual Studio 2008 ve önceki sürümlerde, VCBuild sistemi kullanıldı. Belirli dosya türleri ve üzerinde VCBuild bağımlı kavramları yok veya geçerli sistemde farklı şekilde temsil edilir. Bu belgede, geçerli derleme sistemi farklılıkları açıklar.  
@@ -55,7 +55,7 @@ Visual C++ projeleri derlemek için MSBuild sistemi kullanılır. Ancak, Visual 
   
  Geçerli sürümde, bir veya daha fazla değişmez değerler ve özelliği makroları birleşimi bir özelliğin değerini belirterek devralma desteklenir. **$(Inherit)** ve **$(noınherit)** makroları desteklenmez.  
   
- Aşağıdaki örnekte, noktalı virgül ile ayrılmış bir listeyi özellik sayfasında bir özelliğine atanır. Liste bitiştirilmiş halini oluşur  *\<değer >* je typu literal a değerini `MyProperty` makrosu gösterimi kullanılarak erişilen özelliği **$(***MyProperty***)** .  
+ Aşağıdaki örnekte, noktalı virgül ile ayrılmış bir listeyi özellik sayfasında bir özelliğine atanır. Liste bitiştirilmiş halini oluşur  *\<değer >* je typu literal a değerini `MyProperty` makrosu gösterimi kullanılarak erişilen özelliği **$(**  <em>MyProperty</em>**)**.  
   
 ```  
 Property=<value>;$(MyProperty)  

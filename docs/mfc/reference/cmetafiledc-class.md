@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1da8f48fc993ec2b6c963bf3648359cc39dfc8ce
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: fb2fd794798f96cceca893df4a69dc888196d9a6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338866"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197009"
 ---
 # <a name="cmetafiledc-class"></a>CMetaFileDC sınıfı
 İstediğiniz görüntüyü veya metni oluşturmanız için yeniden yürütebileceğiniz grafik cihaz arabirimi (GDI) komutları dizisini içeren bir Windows Meta dosyası uygular.  
@@ -66,9 +66,9 @@ class CMetaFileDC : public CDC
   
  Meta dosyası için istenen komutların gönderdikten sonra çağrı `Close` meta dosyası cihaz bağlamları kapatır ve bir meta dosyası tanıtıcı döndüren üye işlevi. Ardından elden `CMetaFileDC` nesne.  
   
- [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) ardından meta tanıtıcı meta tekrar tekrar oynatmak için kullanabilirsiniz. Meta dosyası ayrıca Windows işlevleri tarafından gibi yönetilebilir [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480), disk için bir meta dosyası kopyalar.  
+ [CDC::PlayMetaFile](../../mfc/reference/cdc-class.md#playmetafile) ardından meta tanıtıcı meta tekrar tekrar oynatmak için kullanabilirsiniz. Meta dosyası ayrıca Windows işlevleri tarafından gibi yönetilebilir [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea), disk için bir meta dosyası kopyalar.  
   
- Meta dosyası artık gerekli olmadığında, bellek ile Sil [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) Windows işlevi.  
+ Meta dosyası artık gerekli olmadığında, bellek ile Sil [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) Windows işlevi.  
   
  Ayrıca uygulayabilirsiniz `CMetaFileDC` işleyebileceği böylece hem de çıkış çağrıları ve öznitelik GDI çağrıları gibi nesne `GetTextExtent`. Böyle bir meta dosyası daha esnektir ve daha fazla çıkış ve öznitelik aramaları bir karışımını genellikle oluşan genel GDI kod kolayca yeniden kullanabilirsiniz. `CMetaFileDC` Sınıfından devralan iki cihaz bağlamları `m_hDC` ve `m_hAttribDC`, CDC öğesinden. `m_hDC` Cihaz bağlamı tüm işler [CDC](../../mfc/reference/cdc-class.md) GDI çıkış çağrıları ve `m_hAttribDC` cihaz bağlamı tüm CDC GDI öznitelik aramaları işler. Normalde, bu iki cihaz bağlamları aynı cihaza bakın. Durumunda, `CMetaFileDC`, DC öznitelik varsayılan olarak NULL olarak ayarlanır.  
   
@@ -97,9 +97,9 @@ HMETAFILE Close();
  İşlev başarılı olursa geçerli bir HMETAFILE; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Windows Meta dosyası tanıtıcı Windows işlevleri ile yazılmışsa gibi işlemek için de kullanılabilir [CopyMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183480).  
+ Windows Meta dosyası tanıtıcı Windows işlevleri ile yazılmışsa gibi işlemek için de kullanılabilir [CopyMetaFile](/windows/desktop/api/wingdi/nf-wingdi-copymetafilea).  
   
- Windows çağırarak meta kullandıktan sonra silin [DeleteMetaFile](http://msdn.microsoft.com/library/windows/desktop/dd183537) işlevi.  
+ Windows çağırarak meta kullandıktan sonra silin [DeleteMetaFile](/windows/desktop/api/wingdi/nf-wingdi-deletemetafile) işlevi.  
   
 ##  <a name="closeenhanced"></a>  CMetaFileDC::CloseEnhanced  
  Bir Gelişmiş Meta dosyası cihaz bağlamı kapatır ve bir biçim Gelişmiş Meta dosyası tanımlayan bir tanıtıcı döndürür.  

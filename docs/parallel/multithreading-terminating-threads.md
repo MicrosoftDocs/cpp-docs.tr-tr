@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b192c0ee4bc7658fc39791545c4aa9334edd183
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 1bd8abd7971c112f0d9e872df73b431c78259981
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131951"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205428"
 ---
 # <a name="multithreading-terminating-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC iş parçacıklarını sonlandırma
 İki durum iş parçacığının sonlandırılmasına neden olur: denetleyen işlev çıkar veya iş parçacığının tamamlanmaya kadar çalışmasına izin verilmez. Bir sözcük işlemcisi arka plan yazdırması için iş parçacığı kullandıysanız, başarıyla tamamlanmış yazdırma denetleyen işlev normal olarak sonlanırdı. Ancak kullanıcı yazdırmayı iptal etmek isterse, arka plan yazdırma iş parçacığının önce sonlandırılması gerekir. Bu konu, hem her durumun nasıl uygulanacağını hem de sonlandırıldıktan sonra bir iş parçacığı çıkış kodunu almak nasıl açıklar.  
@@ -43,7 +43,7 @@ ms.locfileid: "43131951"
  
 Bir çalışan iş parçacığı için normal iş parçacığının sonlandırılması basittir: denetleyen işlevden çıkın ve sonlandırma nedenini belirten bir değer döndürür. Kullanabilirsiniz [AfxEndThread](../mfc/reference/application-information-and-management.md#afxendthread) işlevi veya **dönüş** deyimi. Genellikle, 0 başarılı tamamlamayı belirtir, ancak size bağlıdır.  
   
-Bir kullanıcı arabirimi iş parçacığı için işlem basittir: kullanıcı arabirimi iş parçacığı içinde çağırmanıza [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) Windows SDK. Tek parametre, `PostQuitMessage` alır, iş parçacığının çıkış kodudur. Çalışan iş parçacıkları için 0 genellikle başarılı tamamlamayı belirtir.  
+Bir kullanıcı arabirimi iş parçacığı için işlem basittir: kullanıcı arabirimi iş parçacığı içinde çağırmanıza [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) Windows SDK. Tek parametre, `PostQuitMessage` alır, iş parçacığının çıkış kodudur. Çalışan iş parçacıkları için 0 genellikle başarılı tamamlamayı belirtir.  
   
 ##  <a name="_core_premature_thread_termination"></a> Erken iş parçacığı sonlandırma  
  
@@ -53,7 +53,7 @@ Bir iş parçacığı erken sonlandırma basittir: çağrı [AfxEndThread](../mf
   
 ##  <a name="_core_retrieving_the_exit_code_of_a_thread"></a> Bir iş parçacığı çıkış kodunu alma  
  
-Çalışan ya da kullanıcı arabirimi iş parçacığı çıkış kodunu almak için arama [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190) işlevi. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın. Bu işlev için iş parçacığı tanıtıcısını alır (depolanan `m_hThread` veri üyesi `CWinThread` nesneleri) ve bir DWORD adresidir.  
+Çalışan ya da kullanıcı arabirimi iş parçacığı çıkış kodunu almak için arama [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread) işlevi. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın. Bu işlev için iş parçacığı tanıtıcısını alır (depolanan `m_hThread` veri üyesi `CWinThread` nesneleri) ve bir DWORD adresidir.  
   
 İş parçacığı hala etkinse, `GetExitCodeThread` STILL_ACTIVE yerleştirir sağlanan DWORD adresi; Aksi takdirde, çıkış kodu bu adreste yerleştirilir.  
   
@@ -70,4 +70,4 @@ Nedenini belirlemek her iki yöntem sağlar bir `CWinThread` nesne sonlandırıl
 [C++ ve MFC ile çoklu iş parçacığı kullanımı](multithreading-with-cpp-and-mfc.md)   
 [_endthread, _endthreadex](../c-runtime-library/reference/endthread-endthreadex.md)   
 [_beginthread, _beginthreadex](../c-runtime-library/reference/beginthread-beginthreadex.md)   
-[ExitThread](http://msdn.microsoft.com/library/windows/desktop/ms682659)
+[ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread)

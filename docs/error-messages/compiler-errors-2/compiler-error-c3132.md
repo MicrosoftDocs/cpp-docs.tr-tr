@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb2ecc863bc06542e4bb2e78e71ce95279c004f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb32d65b119330e49773118e38e1c8b618d03cfc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252393"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204764"
 ---
 # <a name="compiler-error-c3132"></a>Derleyici Hatası C3132
-'işlev parametresinin': parametre dizileri 'tek boyutlu yönetilen array' türünde resmi olarak bağımsız değişken için yalnızca uygulanabilir  
+'işlev parametresi': parametre dizileri yalnızca 'single-dimensional yönetilen array' türündeki biçimsel bağımsız değişken için uygulanabilir  
   
- [ParamArray](https://msdn.microsoft.com/en-us/library/system.paramarrayattribute.aspx) öznitelik, bir tek boyutlu dizi değildi bir parametre uygulandı.  
+ [ParamArray](https://msdn.microsoft.com/library/system.paramarrayattribute.aspx) öznitelik, bir tek boyutlu dizi olmayan bir parametre uygulandı.  
   
- Aşağıdaki örnek C3132 oluşturur:  
+ Aşağıdaki örnek, C3132 oluşturur:  
   
 ```  
 // C3132.cpp  

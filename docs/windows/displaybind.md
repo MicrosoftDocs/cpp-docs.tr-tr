@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4beaeb35f23069c6ef8a5b411e7d83ecbe39f9e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fd153ae184eb2bdc9891099a8454ff353ebaa0bf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595778"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197221"
 ---
 # <a name="displaybind"></a>displaybind
 
@@ -36,7 +36,7 @@ Kullanıcıya bağlanabilir olarak görüntülenmesi gereken özelliği belirtir
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Displaybind** C++ özniteliği ile aynı işlevlere sahip [displaybind](http://msdn.microsoft.com/library/windows/desktop/aa366804) MIDL özniteliği.
+**Displaybind** C++ özniteliği ile aynı işlevlere sahip [displaybind](/windows/desktop/Midl/displaybind) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d6b3ba22fbe9feffc52d0f6ebfd970247929caa
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: ac677549c01f7e5360cfcda7c640dbf10318c172
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039488"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203315"
 ---
 # <a name="clineartransitionfromspeed-class"></a>CLinearTransitionFromSpeed sınıfı
-Hızı doğrusal geçiş yalıtır.  
+Bir doğrusal hızlı geçişi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,7 +46,7 @@ class CLinearTransitionFromSpeed : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinearTransitionFromSpeed::CLinearTransitionFromSpeed](#clineartransitionfromspeed)|Hızı doğrusal geçiş nesnesi oluşturur ve hız ve son değer ile başlatır.|  
+|[CLinearTransitionFromSpeed::CLinearTransitionFromSpeed](#clineartransitionfromspeed)|Bir doğrusal hızlı geçişi nesnesi oluşturur ve hız ve son değer ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -58,11 +58,11 @@ class CLinearTransitionFromSpeed : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinearTransitionFromSpeed::m_dblFinalValue](#m_dblfinalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
-|[CLinearTransitionFromSpeed::m_dblSpeed](#m_dblspeed)|Değişkenin hız mutlak değeri.|  
+|[CLinearTransitionFromSpeed::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
+|[CLinearTransitionFromSpeed::m_dblSpeed](#m_dblspeed)|Hız değişkenin mutlak değeri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Hızı doğrusal geçişi sırasında belirtilen bir hızda animasyon değişkenin değeri değişir. Geçiş süresi, ilk değer ve belirtilen son değeri arasındaki farkı tarafından belirlenir. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir doğrusal hızlı geçişi sırasında belirtilen bir fiyat karşılığında animasyon değişkenin değerini değiştirir. Geçiş süresi başlangıç değeri belirtilen son değeri arasındaki farkı tarafından belirlenir. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -75,7 +75,7 @@ class CLinearTransitionFromSpeed : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="clineartransitionfromspeed"></a>  CLinearTransitionFromSpeed::CLinearTransitionFromSpeed  
- Hızı doğrusal geçiş nesnesi oluşturur ve hız ve son değer ile başlatır.  
+ Bir doğrusal hızlı geçişi nesnesi oluşturur ve hız ve son değer ile başlatır.  
   
 ```  
 CLinearTransitionFromSpeed(
@@ -85,10 +85,10 @@ CLinearTransitionFromSpeed(
   
 ### <a name="parameters"></a>Parametreler  
  *dblSpeed*  
- Değişkenin hız mutlak değeri.  
+ Hız değişkenin mutlak değeri.  
   
  *dblFinalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ##  <a name="create"></a>  CLinearTransitionFromSpeed::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -101,20 +101,20 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_dblfinalvalue"></a>  CLinearTransitionFromSpeed::m_dblFinalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
 ##  <a name="m_dblspeed"></a>  CLinearTransitionFromSpeed::m_dblSpeed  
- Değişkenin hız mutlak değeri.  
+ Hız değişkenin mutlak değeri.  
   
 ```  
 DOUBLE m_dblSpeed;  

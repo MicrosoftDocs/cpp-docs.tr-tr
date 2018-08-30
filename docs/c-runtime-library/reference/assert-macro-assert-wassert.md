@@ -38,16 +38,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0318abde877e9b647c1781408d2e22cc9d70824e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c1d2bef607e80e2e972915bd8a8b0517b7c6e5eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397847"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200673"
 ---
 # <a name="assert-macro-assert-wassert"></a>Assert makrosu, _assert, _wassert
 
-İfade bir ve sonucu olduğunda değerlendirir **yanlış**, bir tanılama iletisi yazdırır ve programı durdurur.
+Bir ifade ve sonucu olduğunda değerlendirir **false**, bir tanılama iletisi yazdırır ve programı durdurur.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,31 +69,31 @@ void _wassert(
 
 ### <a name="parameters"></a>Parametreler
 
-*ifade* için sıfır olmayan değerlendiren (işaretçi ifadeleri dahil) bir skaler ifade (**true**) veya 0 (**false**).
+*ifade* için sıfır dışında değerlendirilen (işaretçi ifadeleri dahil) bir skaler ifade (**true**) veya 0 (**false**).
 
 *İleti* görüntülenecek ileti.
 
-*filename* kaynağının adını dosya onaylama işlemi başarısız oldu.
+*filename* dosyasının kaynak adını onaylama işlemi başarısız oldu.
 
-*Satır* başarısız onaylama kaynak dosyasında satır sayısı.
+*Satır* başarısız onaylama kaynak dosyadaki satır numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Assert** makrosu genellikle program geliştirme sırasında mantık hataları belirlemek için kullanılır. Beklenmeyen koşullar uygulayarak ortaya çıktığında program yürütme durdurmak için kullanın *ifade* için değerlendirmek için bağımsız değişken **false** yalnızca zaman program yanlış çalışıyor. Onaylama işlemi denetimleri açılabilir derleme zamanında makrosu tanımlayarak **NDEBUG**. Devre dışı bırakabilirsiniz **assert** kullanarak kaynak dosyalarınız değiştirmeden makrosu bir **/DNDEBUG** komut satırı seçeneği. Devre dışı bırakabilirsiniz **assert** makrosu kullanarak kaynak kodunuzda bir `#define NDEBUG` önce yönerge \<assert.h > bulunur.
+**Assert** makrosu genellikle program geliştirme sırasında mantık hataları tanımlamak için kullanılır. Beklenmeyen durumlar uygulayarak ortaya çıktığında, program yürütme durdurmak için kullanmak *ifade* bağımsız değişkeni için değerlendirilecek **false** yalnızca zaman programı hatalı biçimde çalışıyor. Onaylama işlemi denetimleri kapatılabilir derleme zamanında makro tanımlayarak **NDEBUG**. Devre dışı bırakabilirsiniz **assert** kaynak dosyalarını kullanarak değiştirmeden makro bir **/DNDEBUG** komut satırı seçeneği. Devre dışı bırakabilirsiniz **assert** makrosu kullanarak, kaynak kodunuzda bir `#define NDEBUG` önce yönerge \<assert.h > dahildir.
 
-**Assert** bir tanılama iletisi makrosu baskı siparişi *ifade* değerlendiren **false** (0) ve çağrıları [abort](abort.md) Programı sonlandırmak için yürütme. Hiçbir işlem yapılmadı *ifade* olan **true** (sıfır). Tanılama ileti başarısız ifadesi, onaylama işlemi başarısız olduğu kaynak dosyası ve satır numarası adını içerir.
+**Assert** bir tanılama iletisi makrosu yazdırır *ifade* değerlendiren **false** (0) ve çağrıları [iptal](abort.md) Programı sonlandırmak için yürütme. Hiçbir işlem yapılmadı, *ifade* olduğu **true** (sıfır dışında). Tanılama iletisi başarısız ifadesi, onaylama işlemi başarısız olduğu kaynak dosya ve satır numarası adını içerir.
 
-Tanılama iletisi geniş karakter yazdırılır. Dolayısıyla, ifade Unicode karakterler olsa beklendiği gibi çalışmaz.
+Tanılama iletisi geniş karakter yazdırılır. Bu nedenle, ifade Unicode karakterler olsa beklendiği gibi çalışır.
 
-Tanılama iletiyi hedef sıradan adlı uygulama türüne göre değişir. Konsol uygulamaları her zaman üzerinden ileti alma **stderr**. Windows tabanlı bir uygulama içinde **assert** Windows çağırır [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) iletiyle boyunca görüntülenecek bir ileti kutusu oluşturmak için işlevi bir **Tamam** düğmesi. Kullanıcı tıkladığında **Tamam**, program hemen durdurur.
+Tanılama iletisi hedefinin yordamı çağıran uygulama türüne bağlıdır. Konsol uygulamaları her zaman aracılığıyla iletisini alırsınız **stderr**. Windows tabanlı bir uygulama içinde **assert** Windows çağırır [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) beraber iletiyi görüntülemek için bir ileti kutusu oluşturmak için işlevi bir **Tamam** düğmesi. Kullanıcı tıkladığında **Tamam**, program hemen durdurur.
 
-Uygulama çalışma zamanı kitaplıkları ile bir hata ayıklama sürümü bağlandığında **assert** üç düğmeleriyle bir ileti kutusu oluşturur: **Abort**, **yeniden deneme**ve **Yoksay**. Kullanıcı tıklarsa **Abort**, program hemen durdurur. Kullanıcı tıklarsa **yeniden**, hata ayıklayıcı olarak adlandırılır ve tam zamanında (JIT) hata ayıklama etkinleştirilirse kullanıcı programı ayıklayabilirsiniz. Kullanıcı tıklarsa **Yoksay**, **assert** normal yürütülmesinin ile devam eder: ileti kutusu oluşturma **Tamam** düğmesi. Bu tıklatarak Not **Yoksay** ne zaman bir hata koşulu var. tanımsız davranışlara neden olabilir.
+Uygulama çalışma zamanı kitaplıklarının hata ayıklama sürümü ile ilişkilendirildiğinde **assert** üç düğme bir ileti kutusu oluşturur: **iptal**, **yeniden**ve **Yoksay**. Kullanıcı tıklarsa **iptal**, program hemen durdurur. Kullanıcı tıklarsa **yeniden**, hata ayıklayıcı adı verilir ve tam zamanında (JIT) hata ayıklama etkinleştirilirse kullanıcı programı hata ayıklaması yapabilirsiniz. Kullanıcı tıklarsa **Yoksay**, **assert** normal yürütülmeye devam eder: ileti kutusuyla oluşturma **Tamam** düğmesi. Sonuçlandığını unutmayın **Yoksay** bir hata koşulu olduğunda mevcut tanımsız davranışlara neden olabilir.
 
-CRT hata ayıklama hakkında daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
+CRT hata ayıklama hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
-**_Assert** ve **_wassert** işlevlerdir iç CRT işlevleri. Nesne dosyalarınızda onaylar desteklemek için gereken kodu en aza indirmenize yardımcı olurlar. Bu işlevler doğrudan çağırmanız önermiyoruz.
+**_Assert** ve **_wassert** iç CRT işlevleri işlevlerdir. Bunlar, nesne dosyalarında onaylar desteklemek için gerekli kodu en aza yardımcı olur. Bu işlevler doğrudan çağrı önermiyoruz.
 
-**Assert** makrosu her iki sürüm ve hata ayıklama sürümlerinde C çalışma zamanı kitaplıkları etkin olduğunda **NDEBUG** tanımlı değil. Zaman **NDEBUG** olan tanımlanan makrosu kullanılabilir ancak bağımsız değişken değerlendirmez ve herhangi bir etkisi olmaz. Etkinleştirildiğinde, **assert** makrosu çağrıları **_wassert** uygulaması için. Diğer onaylama makroları [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), de kullanılabilir, ancak bunlar yalnızca bunları ne zaman geçirilen ifadeleri değerlendirme [_DEBUG](../../c-runtime-library/debug.md) makrosu tanımlanmış ve C çalışma zamanı kitaplıkları hata ayıklama sürümü ile bağlantılı kodda olduklarında.
+**Assert** makrosu her iki sürüm ve hata ayıklama sürümleri C çalışma zamanı kitaplıklarının etkin olduğunda **NDEBUG** tanımlı değil. Zaman **NDEBUG** olan tanımlanan, makro kullanılabilir ancak bağımsız değerlendirmez ve hiçbir etkisi olmaz. Etkinleştirildiğinde, **assert** makrosu çağrıları **_wassert** uygulanması için. Diğer onaylama makroları [_ASSERT](assert-asserte-assert-expr-macros.md), [_ASSERTE](assert-asserte-assert-expr-macros.md) ve [_ASSERT_EXPR](assert-asserte-assert-expr-macros.md), ayrıca kullanılabilir ancak bunlar yalnızca bunları ne zaman geçirilen ifadeleri değerlendirme [_DEBUG](../../c-runtime-library/debug.md) makro tanımlandıktan ve kodda hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlı olduklarında.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -101,11 +101,11 @@ CRT hata ayıklama hakkında daha fazla bilgi için bkz: [CRT hata ayıklama tek
 |-------------|---------------------|
 |**Assert**, **_wassert**|\<Assert.h >|
 
-İmzası **_assert** işlevi kullanılamaz bir üstbilgi dosyası. İmzası **_wassert** işlevi yalnızca kullanılabilir olduğunda **NDEBUG** makrosu tanımlı değil.
+İmzası **_assert** işlevi kullanılabilir değil bir üstbilgi dosyasında. İmzası **_wassert** işlevi, yalnızca kullanılabilir olduğunda **NDEBUG** Makro tanımlı değil.
 
 ## <a name="example"></a>Örnek
 
-Bu programı **analyze_string** işlev kullandığı **assert** makrosu birkaç koşullarda test etmek için ilgili dize ve uzunluğu. Koşullardan herhangi biri başarısız olursa, başarısızlığın nedenini belirten bir ileti program yazdırır.
+Bu programa **analyze_string** işlevini kullanan **assert** çeşitli koşulları test etmeye yönelik makro dize uzunluğu ile ilgili. Program, koşullardan herhangi biri başarısız olursa hatanın nedenini belirten bir ileti yazdırır.
 
 ```C
 // crt_assert.c
@@ -138,7 +138,7 @@ void analyze_string( char * string )
 }
 ```
 
-Program, bu bir çıktı üretir:
+Program şu çıktıyı üretir:
 
 ```Output
 Analyzing string 'abc'
@@ -146,13 +146,13 @@ Analyzing string '(null)'
 Assertion failed: string != NULL, file crt_assert.c, line 25
 ```
 
-Çalışma zamanı kitaplığı ve işletim sistemi sürümüne bağlı olarak onaylama hatası sonra aşağıdakine benzer içeren bir ileti kutusu görebilirsiniz:
+Çalışma zamanı kitaplığı ve işletim sistemi sürümüne bağlı olarak bir onaylama işlemi hatası sonra aşağıdaki gibi içeren bir ileti kutusu görebilirsiniz:
 
 ```Output
 A problem caused the program to stop working correctly. Windows will close the program and notify you if a solution is available.
 ```
 
-Bir hata ayıklayıcısı yüklediyseniz seçin **hata ayıklama** hata ayıklayıcı başlatmak için düğmesini veya **Programı Kapat** çıkmak için.
+Bir hata ayıklayıcısı yüklüyse seçin **hata ayıklama** hata ayıklayıcıyı başlatmak için düğmeye veya **Programı Kapat** çıkmak için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

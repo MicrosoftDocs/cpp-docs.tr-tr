@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71cfea0f5dc62e9e7aee4ec5372464ed83bced15
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: c5a3746116679ba8cfee086b42359cce8003b282
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465085"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198132"
 ---
 # <a name="advanced-features-mfc-application-wizard"></a>Gelişmiş Özellikler, MFC Uygulama Sihirbazı
 Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek özelliklerin seçenekleri listelenmiştir. Her bölümde, bu gelişmiş özelliklere yönelik ek destek belirtin.  
@@ -47,17 +47,17 @@ Bu başlıkta; uygulamanıza yönelik, Yardım, yazdırma desteği vb. gibi ek �
  TCP/IP ağları üzerinden iletişim kuran uygulamaları yazmak için kullanabileceğiniz Windows yuvalarını destekler.  
   
  **Etkin Erişilebilirlik**  
- İçin destek ekler [IAccessible](http://msdn.microsoft.com/library/windows/desktop/dd318466) için [CWnd](../../mfc/reference/cwnd-class.md)-türetilmiş sınıflar, daha iyi Etkin Erişilebilirlik istemcileri için kullanıcı arabirimini özelleştirmek için kullanabilirsiniz.  
+ İçin destek ekler [IAccessible](/windows/desktop/api/oleacc/nn-oleacc-iaccessible) için [CWnd](../../mfc/reference/cwnd-class.md)-türetilmiş sınıflar, daha iyi Etkin Erişilebilirlik istemcileri için kullanıcı arabirimini özelleştirmek için kullanabilirsiniz.  
   
  **Ortak denetim bildirimi**  
  Varsayılan olarak etkindir. Microsoft Windows XP ve daha yeni işletim sistemleri ile birlikte gelen, Ortak Denetim DLL'sini etkinleştirmek üzere bir uygulama bildirimi oluşturur.  
   
  Ortak Denetim DLL 6 sürümü, varolan uygulamalarınızın kullandığı Ortak Denetimlerin önceki sürümünü otomatik olarak güncelleştirmez. Ortak Denetim DLL 6 sürümünü kullanmak için, uygulamanızı DLL'yi yüklemeye yönlendiren bir uygulama bildirimi oluşturmanız gerekir. Bu Ortak Denetim DLL Windows XP temalarını da destekler.  
   
- Bir uygulama bildirimi, diğer DLL'leri ve uygulamanızın ihtiyaç duyduğu sürümleri de belirtebilir. Uygulama bildirimleri hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar ve yan yana derlemeler](http://msdn.microsoft.com/library/dd408052) Windows SDK.  
+ Bir uygulama bildirimi, diğer DLL'leri ve uygulamanızın ihtiyaç duyduğu sürümleri de belirtebilir. Uygulama bildirimleri hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar ve yan yana derlemeler](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal) Windows SDK.  
   
  **Yeniden başlatma Yöneticisi desteği**  
- İçin destek ekler [Windows yeniden başlatma Yöneticisi](/windows/desktop/RstMgr/using-restart-manager). Bu videoda, MFC'den yeniden başlatma Yöneticisi işlemi gösterilir: [nasıl: kullanma yeni yeniden başlatma Yöneticisi](http://msdn.microsoft.com/vstudio/ee886407).  
+ İçin destek ekler [Windows yeniden başlatma Yöneticisi](/windows/desktop/RstMgr/using-restart-manager). Bu videoda, MFC'den yeniden başlatma Yöneticisi işlemi gösterilir: [nasıl: kullanma yeni yeniden başlatma Yöneticisi](https://msdn.microsoft.com/vstudio/ee886407).  
   
  **Gelişmiş çerçeve bölmeleri**  
  |Seçenek|Açıklama|  

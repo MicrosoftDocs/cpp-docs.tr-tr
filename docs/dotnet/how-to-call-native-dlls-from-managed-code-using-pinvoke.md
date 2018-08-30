@@ -18,22 +18,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: e82690e49daf324d0ff77f89710ecdd09b208c19
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ddd919fb621c971425e9763cf781e5ff0b1c731
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33129193"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195675"
 ---
 # <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen Koddan PInvoke Kullanarak Yerel DLL'leri Çağırma
-Platform Çağırma (P/Invoke) işlevselliği kullanılarak yönetilen koddan yönetilmeyen DLL'lere uygulanan işlevler çağrılabilir. DLL için kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte için tek seçenektir. Ancak, diğer .NET dilleri, Visual C++ alternatif P/Invoke sağlar. Daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
+Platform Çağırma (P/Invoke) işlevini kullanarak yönetilen koddan yönetilmeyen DLL'ler uygulanan işlevler çağrılabilir. DLL kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte çalışma için tek seçenektir. Ancak, diğer .NET dilleri farklı olarak, Visual C++ P/Invoke bir alternatif sunar. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde Win32 kullanan [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385) ekrandaki piksel cinsinden geçerli çözünürlüğü alınacak işlev.  
+ Aşağıdaki kod örneği, Win32 kullanan [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) ekrandaki piksel cinsinden geçerli çözünürlüğünü almak için işlevi.  
   
- Bağımsız değişken olarak yalnızca iç türlerini kullanan ve dönüş değerleri işlevleri için ek hiçbir iş gereklidir. İşlev işaretçileri, dizileri ve yapıları gibi diğer veri türlerine uygun verileri hazırlama sağlamak için ek öznitelikler gerektirir.  
+ Bağımsız değişken olarak yalnızca iç türleri ve dönüş değerleri işlevler için hiçbir ek iş gereklidir. İşlev işaretçileri, diziler ve yapılar, gibi diğer veri türlerine uygun veri hazırlama sağlamak için ek öznitelikler gerektirir.  
   
- Gerekli olmamasına karşın, böylece genel ad alanında yok Bu örnekte gösterildiği gibi bir değer sınıfının P/Invoke bildirimleri statik üyeler olun iyi bir uygulamadır.  
+ Gerekli olmamasına karşın, böylece genel ad alanında yok Bu örnekte gösterildiği gibi bir değer sınıfının P/Invoke bildirimleri statik üyeleri yapmak iyi bir uygulamadır.  
   
 ```  
 // pinvoke_basic.cpp  

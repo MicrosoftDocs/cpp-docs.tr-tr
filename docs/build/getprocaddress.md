@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cec73a7d7aa212c6f53bc2654db6fe40ff96472a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 91fd6b983d648b682cbd60fa6126189e102b9f1c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367972"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194365"
 ---
 # <a name="getprocaddress"></a>GetProcAddress
-DLL çağrı açıkça bağlama işlemleri [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL dışarı aktarılan bir işlevin adresini elde edin. Döndürülen işlev işaretçisi DLL işlevi çağırmak için kullanın. **GetProcAddress** DLL modül tanıtıcısını parametre alır (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve her iki istediğiniz işlevin adını alır Arama veya işlevin dışarı aktarma sıra.  
+Açıkça bir DLL'ye işlemleri [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL'de dışa aktarılan bir işlevin adresini almak için. DLL işlevini çağırmak için döndürülen işlev işaretçisini kullanırsınız. **GetProcAddress** DLL modül tanıtıcısını parametreler olarak alan (tarafından döndürülen **LoadLibrary**, `AfxLoadLibrary`, veya **GetModuleHandle**) ve ya da istediğiniz işlevin adını alır çağrı veya işlevin dışa aktarma sıra sayısı.  
   
- İşaretçi üzerinden DLL işlevi çağırma ve hiçbir derleme zamanı tür denetlemesi olduğundan, böylece etmez yığında ayrılan bellek overstep ve bir erişim ihlali neden işlev parametrelerinin doğru olduğundan emin olun. Tür güvenliği sağlamak için bir dışarı aktarılan işlevleri işlev prototipleri arayın ve işlev işaretçileri için eşleşen tür tanımları oluşturmak için yoludur. Örneğin:  
+ DLL işlevini bir işaretçiyle çağırdığınızdan emin ve derleme zamanı türü denetimi yoktur çünkü böylece etmez yığında ayrılan belleğin çağırdığınızdan ve erişim ihlaline neden işlev parametrelerinin doğru olduğundan emin olun. Tür güvenliğini sağlamaya yardımcı olacak bir yol dışarı aktarılan işlevlerin işlev prototipleri Ara ve işlev işaretçilerine ilişkin eşleşen tür tanımları oluşturmaktır. Örneğin:  
   
 ```  
 typedef UINT (CALLBACK* LPFNDLLFUNC1)(DWORD,UINT);  
@@ -58,21 +58,21 @@ if (hDLL != NULL)
 }  
 ```  
   
- Çağrılırken istediğiniz işlevi belirttiğiniz nasıl **GetProcAddress** nasıl DLL oluşturulduğuna bağlı.  
+ Belirttiğiniz çağrılırken istediğiniz işlevi nasıl **GetProcAddress** DLL nasıl oluşturulmuş bağlıdır.  
   
- Sıralı dışarı aktarma için bağlama DLL modül tanımlama (.def) dosyası ile oluşturulduysa ve sıra numaraları işlevleriyle listede yoksa yalnızca edinebilirsiniz **dışarı** DLL .def dosyası bölümü. Çağırma **GetProcAddress** verme ile işlev adı aksine sıra DLL birçok dışarı aktarılan işlevler varsa DLL'nin dizin tablo olarak dışarı aktarma sıra numaraları gördükleri için biraz daha hızlıdır. Bir verme sıra ile **GetProcAddress** DLL dışarı aktarma tablosundaki işlev adları için belirtilen ad karşılaştırma aksine doğrudan işlevi bulabilirsiniz. Ancak, çağırmalıdır **GetProcAddress** yalnızca .def dosyası dışarı aktarılan işlevler sıra numaraları atama üzerinde denetim varsa dışarı aktarma sıra ile.  
+ Bağlandığınız DLL modül tanımı (.def) dosyasıyla oluşturulursa ve sıra sayıları işlevlerle listelenirse yalnızca dışarı aktarma sırası edinebilirsiniz **dışarı AKTARMALARI** DLL'nin .def dosyası bölümünü. Çağırma **GetProcAddress** dışa işlev adının bir sıra DLL birçok dışa aktarılan işleve sahipse dışa aktarma sıra sayıları DLL içine Dizinler tabloyu dışarı aktarma gibi gördükleri için biraz daha hızlıdır. Bir dışarı aktarma sırası ile **GetProcAddress** işlevi DLL'nin dışarı aktarma tablosundaki işlev adlarını belirtilen adla karşılaştırarak değil doğrudan bulabilir. Ancak, çağırmalıdır **GetProcAddress** yalnızca .def dosyasında dışa aktarılan işlevlere sıra sayıları atama denetiminiz varsa dışarı aktarma sırası ile.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
--   [Bir DLL'e örtük olarak bağlanma](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
+-   [DLL'ye örtük olarak bağlama](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
   
--   [Hangi bağlama yöntemini kullanacağınızı belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
+-   [Hangi bağlama yönteminin kullanılacağını belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
 -   [LoadLibrary ve AfxLoadLibrary](../build/loadlibrary-and-afxloadlibrary.md)  
   
--   [FreeLibrary](http://msdn.microsoft.com/library/windows/desktop/ms683152)  
+-   [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152)  
   
 -   [DEF Dosyaları Kullanarak DLL'den Dışarı Aktarma](../build/exporting-from-a-dll-using-def-files.md)  
   

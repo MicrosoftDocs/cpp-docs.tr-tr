@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu denetiminin görünümünü özelleştirme | Microsoft Docs
+title: Bir araç çubuğu denetiminin görünümünü özelleştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,45 +21,45 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48825a264b7d82152f47e70c5911bea400c313db
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 54c512bd727b7ef36ee94eb5ccaf3018be692d14
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932123"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197701"
 ---
 # <a name="customizing-the-appearance-of-a-toolbar-control"></a>Bir Araç Çubuğu Denetiminin Görünümünü Özelleştirme
-Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etkileyen birçok stil sağlar. Araç çubuğu nesnesi ayarlayarak değiştirme `dwCtrlStyle` parametresinin `CToolBarCtrl::Create` (veya `CToolBar::CreateEx`) araç çubuğu denetimi ilk oluşturduğunuzda üye işlevi.  
+Sınıf `CToolBarCtrl` görünümü (ve bazen davranışı) araç nesnesinin etkileyen birçok stiller sağlar. Araç çubuğu nesnesi ayarlayarak değiştirme `dwCtrlStyle` parametresinin `CToolBarCtrl::Create` (veya `CToolBar::CreateEx`) araç çubuğu denetimi ilk oluşturduğunuzda üye işlevi.  
   
- Aşağıdaki stiller araç çubuğu düğmelerini "3B" yönünü ve düğme metni yerleşimini etkiler:  
+ Aşağıdaki stilleri araç çubuğu düğmeleri "3B" yönünü ve düğme metnini yerleşimini etkiler:  
   
--   **TBSTYLE_FLAT** hem araç hem de düğmeleri nerede saydam düz bir araç çubuğu oluşturur. Düğme metni düğme bit eşlemler altında görüntülenir. İmleç altındaki düğmesi, otomatik olarak bu stili kullanıldığında, vurgulanır.  
+-   **TBSTYLE_FLAT** hem araç hem de düğmeleri nerede saydam bir düz araç çubuğu oluşturur. Düğme metni düğme bit eşlemler altında görünür. Bu stil kullanıldığında, düğmenin imleç altında otomatik olarak vurgulanır.  
   
--   **TBSTYLE_TRANSPARENT** saydam bir araç çubuğu oluşturur. Saydam araç çubuğu araç saydamdır ancak düğmeleri değildir. Düğme metni düğme bit eşlemler altında görüntülenir.  
+-   **TBSTYLE_TRANSPARENT** saydam bir araç çubuğu oluşturur. Saydam araç çubuğundaki araç saydamdır ancak düğmeler değildir. Düğme metni düğme bit eşlemler altında görünür.  
   
--   **TBSTYLE_LIST** yerler düğmesini düğmesi bit eşlemler sağındaki metin.  
+-   **TBSTYLE_LIST** yerler metni sağa düğme bit eşlem düğmesi.  
   
 > [!NOTE]
->  Yeniden çizmeyi sorunları önlemek için **TBSTYLE_FLAT** ve **TBSTYLE_TRANSPARENT** stilleri araç çubuğu nesnesi görünür hale gelmeden önce ayarlanmalıdır.  
+>  Yeniden çizmeyi sorunları önlemek için **TBSTYLE_FLAT** ve **TBSTYLE_TRANSPARENT** stilleri araç çubuğu görünür olup önce ayarlanmalıdır.  
   
- Araç, kullanıcının düğmelerin Sürükle kullanan bir araç çubuğu nesnesi içinde yeniden konumlandırma ve bırakma izin verir, aşağıdaki stiller belirler:  
+ Araç düğmelerin Sürükle kullanan bir araç çubuğu nesnesi içinde yeniden konumlandırma ve bırakma açmasına olanak sağlar, aşağıdaki stilleri belirler:  
   
--   **TBSTYLE_ALTDRAG** kullanıcıların ALT tuşunu basılı tutarak sürükleyerek araç düğmenin konumu değiştirmesine izin verir. Bu stili belirtilmezse, kullanıcı bir düğme sürükleme sırasında SHIFT tuşunu basılı gerekir.  
+-   **TBSTYLE_ALTDRAG** kullanıcıların ALT tuşunu basılı tutarak sürükleyerek bir araç çubuğu düğmesinin konumu değiştirmesine izin verir. Bu stil belirtilmezse, kullanıcı bir düğmeyi sürüklerken SHIFT tuşunu basılı tutun gerekir.  
   
     > [!NOTE]
-    >  **CCS_ADJUSTABLE** stili sürüklenen araç çubuğu düğmeleri etkinleştirmek için belirtilmesi gerekir.  
+    >  **CCS_ADJUSTABLE** stili araç çubuğu düğmeleri sürüklenmesi etkinleştirmek için belirtilmesi gerekir.  
   
--   **TBSTYLE_REGISTERDROP** oluşturur **TBN_GETOBJECT** bildirim iletileri istemek için fare işaretçisini araç çubuğu düğmeleri geçerken hedef nesneler bırakın.  
+-   **TBSTYLE_REGISTERDROP** oluşturur **TBN_GETOBJECT** bildirim iletileri istemek için fare imlecini araç çubuğu düğmeleri geçerken hedef nesneleri bırakın.  
   
  Kalan stilleri araç çubuğu nesnesi yönlerini görsel ve görsel olmayan etkiler:  
   
--   **TBSTYLE_WRAPABLE** düğmelerinin birden çok satırı olan bir araç çubuğu oluşturur. "Araç aynı satırdaki tüm düğmeleri dahil etmek için çok dar olduğunda araç çubuğu düğmeleri sonraki satıra kayabilir". Kaydırma ayırma ve nongroup sınırları oluşur.  
+-   **TBSTYLE_WRAPABLE** düğmeleri birden fazla satır içeren bir araç çubuğu oluşturur. "Araç çubuğu düğmeleri araç aynı satırdaki tüm düğmeler eklemek için çok dar olduğunda sonraki satıra kayabilir". Kaydırma nongroup sınırları ve ayrılması gerçekleşir.  
   
--   **TBSTYLE_CUSTOMERASE** oluşturur **NM_CUSTOMDRAW** bildirim iletileri bu işlerken **WM_ERASEBKGND** iletileri.  
+-   **TBSTYLE_CUSTOMERASE** oluşturur **NM_CUSTOMDRAW** bildirim iletilerini işlerken, **WM_ERASEBKGND** iletileri.  
   
--   **TBSTYLE_TOOLTIPS** uygulama düğmelerinin açıklayıcı metin araç çubuğunda görüntülemek için kullanabileceğiniz bir araç ipucunu denetimini oluşturur.  
+-   **TBSTYLE_TOOLTIPS** uygulama araç çubuğunda düğme için açıklayıcı metni görüntülemek için kullanabileceğiniz bir araç ipucu denetimi oluşturur.  
   
- Araç çubuğu stilleri ve genişletilmiş stilleri tam bir listesi için bkz: [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439) ve [araç genişletilmiş stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760430) Windows SDK.  
+ Toolbar stilleri ve genişletilmiş stiller tam bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles) ve [araç genişletilmiş stiller](/windows/desktop/Controls/toolbar-extended-styles) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CToolBarCtrl kullanma](../mfc/using-ctoolbarctrl.md)   

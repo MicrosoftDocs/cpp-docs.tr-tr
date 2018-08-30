@@ -25,37 +25,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e1709c878a0b5f5325798b874e5549c5c8cb83f
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: eae97f795898c97bfb371637fc52a27c9e39039d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33329988"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204695"
 ---
 # <a name="midl-property-pages-general"></a>MIDL Özellik Sayfaları: Genel
-**Genel** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  
+**Genel** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:  
   
--   Önişlemci tanımları [(/D](http://msdn.microsoft.com/library/windows/desktop/aa367321))  
+-   Önişlemci tanımları [(/D](https://msdn.microsoft.com/library/windows/desktop/aa367321))  
   
--   Ek içeren dizinler ([/I](http://msdn.microsoft.com/library/windows/desktop/aa367328))  
+-   Ek içeren dizinler ([/I](https://msdn.microsoft.com/library/windows/desktop/aa367328))  
   
--   Standart dahil yol yoksay ([/no_def_idir](http://msdn.microsoft.com/library/windows/desktop/aa367347))  
+-   Standart yolu Ekle yoksay ([/no_def_idir](https://msdn.microsoft.com/library/windows/desktop/aa367347))  
   
--   MkTypLib uyumlu ([/mktyplib203](http://msdn.microsoft.com/library/windows/desktop/aa367332))  
+-   MkTypLib uyumluluğu ([/mktyplib203](https://msdn.microsoft.com/library/windows/desktop/aa367332))  
   
--   Uyarı düzeyi ([/W](http://msdn.microsoft.com/library/windows/desktop/aa367383))  
+-   Uyarı düzeyi ([/W](https://msdn.microsoft.com/library/windows/desktop/aa367383))  
   
--   Hata olarak uyar ([/WX](http://msdn.microsoft.com/library/windows/desktop/aa367387))  
+-   Hata ([wx](https://msdn.microsoft.com/library/windows/desktop/aa367387))  
   
--   Başlangıç başlığını gösterme ([/nologo](http://msdn.microsoft.com/library/windows/desktop/aa367341))  
+-   Başlangıç başlığını engelle ([/nologo](https://msdn.microsoft.com/library/windows/desktop/aa367341))  
   
--   MIDL Char türü ([/char](http://msdn.microsoft.com/library/windows/desktop/aa367314))  
+-   MIDL Char türü ([/char](https://msdn.microsoft.com/library/windows/desktop/aa367314))  
   
--   Hedef ortam ([/env](http://msdn.microsoft.com/library/windows/desktop/aa367323))  
+-   Hedef ortam ([/env](https://msdn.microsoft.com/library/windows/desktop/aa367323))  
   
--   Stubless proxy'leri oluştur ([/Oicf](http://msdn.microsoft.com/library/windows/desktop/aa367352))  
+-   Saplamasız proxy'ler oluştur ([/oicf](https://msdn.microsoft.com/library/windows/desktop/aa367352))  
   
- Nasıl erişileceği hakkında bilgi için **genel** özellik sayfasında **MIDL** klasörü, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+ Erişim hakkında daha fazla bilgi için **genel** özellik sayfasında **MIDL** klasörüne bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool> nesne.  
   

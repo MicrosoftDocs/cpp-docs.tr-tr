@@ -50,19 +50,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86822cfeb26428a53e94d50a3d831732241007ee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1d714499ebb33d1d4dc2636ab80b2ad727ccac39
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411669"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195164"
 ---
 # <a name="strinc-wcsinc-mbsinc-mbsincl"></a>_strinc, _wcsinc, _mbsinc, _mbsinc_l
 
-Bir dize işaretçisi bir karakter ilerletir.
+Dize işaretçisine bir karakter yoluyla ilerler.
 
 > [!IMPORTANT]
-> **_mbsinc** ve **_mbsinc_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsinc** ve **_mbsinc_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,25 +88,25 @@ unsigned char *_mbsinc_l(
 ### <a name="parameters"></a>Parametreler
 
 *Geçerli*<br/>
-Karakter işaretçi.
+Karakter işaretçisi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu yordamlar her bir işaretçi hemen izleyen karakterin döndürür *geçerli*.
+Bu yordamların her biri hemen izleyen karaktere bir işaretçi döndürür *geçerli*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsinc** işlevi hemen izleyen birden çok baytlı karakter ilk bayta kalan için bir işaretçi döndürür *geçerli*. **_mbsinc** göre çok baytlı karakter sıralarının tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) , şu anda kullanımda; **_mbsinc_l** yerine geçirilen yerel ayar parametresi kullanır dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_Mbsinc** işlevi hemen izleyen çok baytlı karakterin ilk baytına bir işaretçi döndürür *geçerli*. **_mbsinc** çok baytlı karakter sıralarına göre tanır [çok baytlı kod sayfasına](../../c-runtime-library/code-pages.md) , şu anda kullanımda; **_mbsinc_l** bunun yerine iletilen yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Genel metin işlevi **_tcsinc**, Tchar.h'de eşlenir tanımlı **_mbsinc** varsa **_MBCS** tanımlanmış, veya **_wcsinc** varsa **_UNICODE** tanımlandı. Aksi takdirde, **_tcsinc** eşlendiği **_strinc**. **_strinc** ve **_wcsinc** tek bayt karakter ve joker karakter sürümleri **_mbsinc**. **_strinc** ve **_wcsinc** yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
+Genel metin işlevi **_tcsinc**eşlenir Tchar.h'de tanımlanan **_mbsinc** varsa **_MBCS** tanımlanmış, veya **_wcsinc** varsa **_UNICODE** tanımlanmış. Aksi takdirde, **_tcsinc** eşlendiği **_strinc**. **_strinc** ve **_wcsinc** tek baytlık karakter ve geniş karakterli sürümleridir **_mbsinc**. **_strinc** ve **_wcsinc** yalnızca bu eşleşmeye ilişkin sağlanırlar ve aksi takdirde kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini kullanma](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
 
-Varsa *geçerli* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
+Varsa *geçerli* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
 
 > [!IMPORTANT]
-> Bu işlevler taşması tehditlerine karşı savunmasız olabilir. Arabellek aşırı çalıştırmaları unwarranted ayrıcalıkların nedeni sistem saldırıları için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler, arabellek taşma tehditlerine açık olabilir. Arabellek taşmaları, bir unwarranted ayrıcalık yükselmesine neden olabileceği için sistem saldırıları için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -117,7 +117,7 @@ Varsa *geçerli* olan **NULL**, açıklandığı gibi geçersiz parametre işley
 |**_strinc**|\<Tchar.h >|
 |**_wcsinc**|\<Tchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

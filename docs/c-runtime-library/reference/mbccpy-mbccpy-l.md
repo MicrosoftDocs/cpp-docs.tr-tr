@@ -44,19 +44,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d79ab8362eaa911b7a4aa936d6351aa29f610fa8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8fca6772c00715722acecd810595a42c60f77d86
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403176"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201393"
 ---
 # <a name="mbccpy-mbccpyl"></a>_mbccpy, _mbccpy_l
 
-Birden çok baytlı karakter başka bir dizeye bir dizeden kopyalar. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_mbccpy_s, _mbccpy_s_l](mbccpy-s-mbccpy-s-l.md).
+Çok baytlı karakteri bir dizeden başka bir dizeye kopyalar. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_mbccpy_s, _mbccpy_s_l](mbccpy-s-mbccpy-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -76,25 +76,25 @@ void _mbccpy_l(
 
 *Hedef* kopyalama hedefi.
 
-*src* kopyalamak için birden çok baytlı karakter.
+*src* kopyalanacak çok baytlı karakter.
 
 *yerel ayar* kullanılacak yerel ayar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbccpy** işlevi bir çok baytlı karakter kopyalar *src* için *taşınmaya*.
+**_Mbccpy** işlevi bir çok baytlı karakter kopyalar *src* için *dest*.
 
-Bu işlev parametrelerini doğrular. Varsa **_mbccpy** null işaretçi geçirilen *taşınmaya* veya *src*, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL**.
+Bu işlev, parametrelerini doğrular. Varsa **_mbccpy** bir null işaretçi geçirildi *dest* veya *src*, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL**.
 
-**_mbccpy** için tüm yerel ayara bağımlı davranış geçerli yerel ayarı kullanır. **_mbccpy_l** aynıdır **_mbccpy** dışında **_mbccpy_l** geçirilen tüm yerel ayara bağımlı davranışını yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_mbccpy** herhangi bir yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır. **_mbccpy_l** aynıdır **_mbccpy** dışında **_mbccpy_l** herhangi bir yerel ayara bağımlı davranış için geçirilen yerel ayarı kullanır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**Güvenlik Notu** null sonlandırılmış bir dize kullanın. Sonlandırılmış dize hedef arabellek boyutunu aşmamalıdır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795). Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır.
+**Güvenlik Notu** null ile sonlandırılmış bir dize kullanın. Null ile sonlandırılmış dize hedef arabelleğinin boyutunu aşamaz. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns). Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
 |Tchar.h yordamı|_UNICODE ve _MBCS tanımlanmaz|_MBCS tanımlanmış|_UNICODE tanımlanmış|
 |---------------------|--------------------------------------|--------------------|-----------------------|
-|**_tccpy**|Makro veya satır içi işlev eşlemeleri|**_mbccpy**|Makro veya satır içi işlev eşlemeleri|
+|**_tccpy**|Makro veya satır içi işleve eşlenir|**_mbccpy**|Makro veya satır içi işleve eşlenir|
 |**_tccpy_l**|yok|**_mbccpy_l**|yok|
 
 ## <a name="requirements"></a>Gereksinimler
@@ -104,7 +104,7 @@ Bu işlev parametrelerini doğrular. Varsa **_mbccpy** null işaretçi geçirile
 |**_mbccpy**|\<Mbctype.h >|
 |**_mbccpy_l**|\<Mbctype.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

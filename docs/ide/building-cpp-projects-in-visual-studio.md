@@ -16,75 +16,75 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7008e7fe670471301968482fbd4c6c758f0ff5e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 3ad6ef6ffaa6341e62b09920ab95d50c5720428c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340508"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195872"
 ---
 # <a name="building-c-projects-in-visual-studio"></a>Visual Studio'da C++ Projeleri Derleme
-Visual Studio tümleşik geliştirme ortamında (IDE), çözümün tamamında ya da tek bir proje oluşturmak için birkaç yolu vardır. Derleme ayarlarını değiştirin ve geliştirme sürecini daha verimli hale getirmek için özel derleme adımları belirtin.  
+Visual Studio tümleşik geliştirme ortamında (IDE) bütün bir çözüm ya da bunu yalnızca bir proje oluşturmak için birkaç yolu vardır. Ayrıca, derleme ayarlarını değiştirin ve geliştirme sürecini daha verimli hale getirmek için özel yapı adımları belirtin.  
   
- Visual Studio'da açın ve seçili bir çözümü oluşturmak için **Çözüm Gezgini**, şunları yapabilirsiniz:  
+ Visual Studio'da Aç ve seçili bir çözüm oluşturmak için **Çözüm Gezgini**, şunları yapabilirsiniz:  
   
--   Menü çubuğunda seçin **yapı**, **yapı çözümü**.  
+-   Menü çubuğunda, **derleme**, **Çözümü Derle**.  
   
--   Veya, **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **yapı çözümü**.  
+-   Veya **Çözüm Gezgini**, çözüm için kısayol menüsünü açın ve ardından **Çözümü Derle**.  
   
--   Veya F7 tuşuna basın. (C/C++ geliştirme ayarları için varsayılan klavye kısayolu budur.)  
+-   Veya F7'ye basın. (C/C++ geliştirme ayarları için varsayılan klavye kısayol budur.)  
   
--   Veya, [komut penceresi](/visualstudio/ide/reference/command-window) (menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **komut penceresi**), girin `Build.BuildSolution`.  
+-   Veya [komut penceresi](/visualstudio/ide/reference/command-window) (menü çubuğunda, **görünümü**, **diğer Windows**, **komut penceresi**), girin `Build.BuildSolution`.  
   
--   Veya, [hızlı başlatma](/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) kutusuna `build build solution`.  
+-   Veya [hızlı başlatma](/visualstudio/ide/reference/quick-launch-environment-options-dialog-box) kutusuna `build build solution`.  
   
- Seçili olan bir projeyi derleme için **Çözüm Gezgini**, şunları yapabilirsiniz:  
+ Seçili bir projeyi derlemek için **Çözüm Gezgini**, şunları yapabilirsiniz:  
   
--   Menü çubuğunda seçin **yapı**, **yapı \<proje adı >**.  
+-   Menü çubuğunda, **derleme**, **derleme \<proje adı >**.  
   
--   Veya, **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı**.  
+-   Veya **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **yapı**.  
   
--   Veya, komut penceresinde (menü çubuğunda seçin **Görünüm**, **diğer pencereler**, **komut penceresi**), girin `Build.BuildOnlyProject`.  
+-   Veya komut penceresinde (menü çubuğunda, **görünümü**, **diğer Windows**, **komut penceresi**), girin `Build.BuildOnlyProject`.  
   
 -   Veya, Hızlı Başlat kutusuna `build project only build only <project name>`.  
   
- Visual Studio'da bir Visual C++ uygulamasını derlerken, birçok projenin özellik sayfaları iletişim kutusunda yapı ayarı değiştirebilirsiniz. Proje özellikleri ayarlama hakkında daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+ Visual Studio'da Visual C++ uygulaması derlerken, birçok yapı ayarları projenin özellik sayfaları iletişim kutusunda değiştirebilirsiniz. Proje özelliklerini ayarlama hakkında daha fazla bilgi için bkz: [Working with Project Properties](../ide/working-with-project-properties.md).  
   
- IDE oluşturmak, yapı ve C++ projesi hata ayıklamak için nasıl kullanılacağı hakkında bir örnek için bkz: [izlenecek yol: Visual Studio IDE C++ ile keşfedin](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). C + oluşturmak için IDE'yi kullanmaya ilişkin bir örnek +/ CLR proje bkz [izlenecek yol: Visual Studio'da CLR'yi hedefleyen C++ programını derleme](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). Windows çalışma zamanı uygulama oluşturmak için IDE'yi kullanmaya ilişkin bir örnek için bkz: [C++ kullanarak ilk Windows çalışma zamanı uygulamanızı oluşturma](http://msdn.microsoft.com/library/windows/apps/hh974580.aspx).  
+ IDE'yi oluşturmak, derlemek ve C++ proje hata ayıklama için nasıl kullanılacağı hakkında bir örnek için bkz. [izlenecek yol: C++ ile Visual Studio IDE'yi keşfedin](/visualstudio/ide/getting-started-with-cpp-in-visual-studio). C + oluşturmak için IDE'yi kullanma hakkında bir örnek +/ CLR proje bkz [izlenecek yol: Visual Studio'da CLR'yi hedefleyen C++ programını derleme](../ide/walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md). Bir Windows çalışma zamanı uygulaması oluşturmak için IDE'yi kullanma hakkında bir örnek için bkz. [C++ kullanarak ilk Windows çalışma zamanı uygulamasını oluşturma](https://msdn.microsoft.com/library/windows/apps/hh974580.aspx).  
   
- Yapı, yapı ayarlarını değiştirin ve özel belirleme hakkında daha fazla adımları yapı okumak için aşağıdaki makalelere bakın.  
+ Derleme, derleme ayarlarını değiştirebilir ve özel belirleme hakkında daha fazla derleme adımları okumak için aşağıdaki makalelere bakın.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Özel Derleme Adımlarını ve Derleme Olaylarını Anlama](../ide/understanding-custom-build-steps-and-build-events.md)  
- Tümleşik geliştirme ortamını yapı işleminde özelleştirmeyi açıklar.  
+ Tümleşik geliştirme ortamında yapı işleminin nasıl özelleştirileceğini açıklar.  
   
  [Genel Derleme Komutları ve Özellikler Makroları](../ide/common-macros-for-build-commands-and-properties.md)  
- Dizeleri olduğu kabul edilir kullanabileceğiniz makroları listeler.  
+ Burada dizeleri kabul kullanabileceğiniz makroları listeler.  
   
  [Harici Projeler Derleme](../ide/building-external-projects.md)  
- Tümleşik geliştirme ortamı dışında özelliklerini kullanabilmeniz proje oluşturma açıklanır.  
+ Tümleşik geliştirme ortamı dışında olanakları kullanan proje oluşturma açıklanır.  
   
  [Proje Dosyaları](../ide/project-files.md)  
- .Vcxproj dosyasının XML yapısını gösterir.  
+ .Vcxproj dosyası XML yapısını gösterir.  
   
 ## <a name="related-sections"></a>İlgili Bölümler  
  [VC ++ dizinleri, projeler, Seçenekler iletişim kutusu](vcpp-directories-property-page.md)  
- (Yalnızca MSBuild Proje) Yürütülebilir dosyalar için arama yolu değiştirmek, bir derleme sırasında dosyaları, kitaplık dosyaları ve kaynak kodu dosyaları dahil etme açıklanmaktadır.  
+ (Yalnızca MSBuild Proje) Yürütülebilir dosyalar için arama yolunu değiştirirseniz, dosyaları, kitaplık dosyalarını ve kaynak kodu dosyaları derleme sırasında dahil anlatılmaktadır.  
   
  [Derleme ve Oluşturma](/visualstudio/ide/compiling-and-building-in-visual-studio)  
- Visual Studio içinde oluşturma hakkında bilgi sağlar.  
+ Visual Studio içinden yapı hakkında bilgiler sağlar.  
   
  [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
- Komut satırından veya Visual Studio tümleşik geliştirme ortamı'ndan programınızı oluşturma açıklayan konulara bağlantılar sağlar.  
+ Programınızın komut satırından veya Visual Studio'nun tümleşik geliştirme ortamından oluşturmayı açıklayan konulara bağlantılar sağlar.  
   
  [C/C++ Derleme Başvurusu](../build/reference/c-cpp-building-reference.md)  
- C++, derleyici ve bağlayıcı programları seçenekleri ve ek derleme araçları oluşturmaya genel bakış için bağlantılar sağlar.  
+ Bağlantılar programlarda, C++, derleyici ve bağlayıcı seçenekleri ve ek derleme araçları oluşturmaya genel bir bakış sağlar.  
   
  [Önceki Visual C++ Sürümü Projelerini Yükseltme](../porting/upgrading-projects-from-earlier-versions-of-visual-cpp.md)  
- C++ projenizi derleyici araç setini daha yeni sürümlerine yükseltme konusunda sorunlar kapsayan konulara bağlantılar sağlar.  
+ C++ projenize derleyici araç setini daha yeni sürümlerine yükseltme konuları kapsayan konulara bağlantılar sağlar.  
   
 [Visual C++ Taşıma ve Yükseltme Kılavuzu](../porting/visual-cpp-porting-and-upgrading-guide.md)  
-  Visual Studio'nun önceki sürümleri oluşturulan C++ uygulamalarını yükseltme ve ayrıca dışında Visual Studio Araçları ile oluşturulmuş uygulamalar geçirme hakkında ayrıntılı bilgi.  
+  Visual Studio'nun önceki sürümlerinde oluşturulan C++ uygulamalarını yükseltme ve ayrıca Visual Studio dışındaki araçlarla oluşturulmuş uygulamaları geçirme hakkında ayrıntılı bilgi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Evrensel Windows Uygulamaları (C++)](../windows/universal-windows-apps-cpp.md)

@@ -15,47 +15,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d1470911b13243a7c8b3befc627801368e89f04
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: cb6dc90a272c8e288a4370ae18ad3d1fda150eed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687380"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197554"
 ---
 # <a name="comparing-synchronization-data-structures-to-the-windows-api"></a>Eşitleme Veri Yapılarını Windows API ile Karşılaştırma
 Bu konu Windows API tarafından sağlanan için eşzamanlılık çalışma zamanı tarafından sağlanan eşitleme veri yapıları davranışını karşılaştırır.  
   
- Eşzamanlılık Çalışma zamanı tarafından sağlanan eşitleme veri yapıları izleyin *iş parçacığı modeli işbirlikçi*. İşbirlikçi iş parçacığı modeli eşitleme temelleri açıkça başka bir iş parçacığı için işlem kaynaklarını ödeme. Bu farklıdır *PreEmptive tarafından iş parçacığı modeli*, burada işlem kaynakları için başka bir iş parçacığı denetleme Zamanlayıcı veya işletim sistemi tarafından aktarılır.  
+ Eşzamanlılık Çalışma zamanı tarafından sağlanan eşitleme veri yapıları izleyin *iş parçacığı modeli Guyana*. Eşitleme temellerine, işbirliği yapan iş parçacığı modelinde, işlem kaynaklarını diğer iş parçacıkları açıkça yield. Bu farklıdır *preemptive iş parçacığı modeli*, burada işlem kaynakları için diğer iş parçacıklarını denetleme Zamanlayıcı veya işletim sistemi tarafından aktarılır.  
   
 ## <a name="criticalsection"></a>critical_section  
- [Concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfı benzer Windows `CRITICAL_SECTION` yalnızca bir işlem iş parçacığı tarafından kullanılabildiğinden yapılandırın. Windows API içinde kritik bölümler hakkında daha fazla bilgi için bkz: [kritik bölüm nesnelerin](http://msdn.microsoft.com/library/windows/desktop/ms682530).  
+ [Concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) sınıfına benzer Windows `CRITICAL_SECTION` yalnızca bir işlem iş parçacıklarının engellemelerinden kullanılabildiğinden yapılandırın. Windows API kritik olarak bölümlerde hakkında daha fazla bilgi için bkz: [kritik bölüm nesneleri](/windows/desktop/Sync/critical-section-objects).  
   
 ## <a name="readerwriterlock"></a>reader_writer_lock  
- [Concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) sınıfı benzer Windows ince Okuyucu/Yazıcı (SRW) kilitler. Aşağıdaki tabloda benzerlikler ve farklar açıklanmaktadır.  
+ [Concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) Windows ince Okuyucu / (SRW) yazıcı kilitleri sınıfına benzer. Aşağıdaki tabloda, benzerlikler ve farklar açıklanmaktadır.  
   
 |Özellik|`reader_writer_lock`|SRW Kilitle|  
 |-------------|--------------------------|--------------|  
 |Olmayan yeniden girme|Evet|Evet|  
-|Yazıcı (yükseltme desteği) için bir okuyucu yükseltebilirsiniz|Hayır|Hayır|  
-|Okuyucu (indirgeme desteği) için bir yazıcı indirgeyebilirsiniz|Hayır|Hayır|  
+|Bir yazıcı (yükseltme desteği) için bir okuyucu yükseltebilirsiniz|Hayır|Hayır|  
+|Bir okuyucu (Sürüm Düşürme desteği) için bir yazıcı indirgeyebilirsiniz|Hayır|Hayır|  
 |Yazma tercih Kilitle|Evet|Hayır|  
-|Yazarları FIFO erişimi|Evet|Hayır|  
+|Yazıcılar FIFO erişim|Evet|Hayır|  
   
- SRW kilitleri hakkında daha fazla bilgi için bkz: [ince Okuyucu/Yazıcı (SRW) kilitleri](http://msdn.microsoft.com/library/windows/desktop/aa904937) Platform SDK'sındaki.  
+ SRW kilitleri hakkında daha fazla bilgi için bkz: [ince Okuyucu/Yazıcı (SRW) kilitleri](https://msdn.microsoft.com/library/windows/desktop/aa904937) Platform SDK.  
   
 ## <a name="event"></a>olay  
- [Concurrency::event](../../parallel/concrt/reference/event-class.md) sınıfı adlandırılmamış, Windows el ile sıfırlama olaya benzer. Ancak, bir `event` nesne davranır işbirliği ile bir Windows olayı erken önlem davranır ancak. Windows olayları hakkında daha fazla bilgi için bkz: [olay nesneleri](http://msdn.microsoft.com/library/windows/desktop/ms682655).  
+ [Concurrency::event](../../parallel/concrt/reference/event-class.md) sınıfına benzer bir adlandırılmamış, Windows elle sıfırlama olayı. Ancak, bir `event` nesne davranışını işbirliği ile bir Windows olayı sıd'lerde davranır ancak. Windows olayları hakkında daha fazla bilgi için bkz: [olay nesneleri](/windows/desktop/Sync/event-objects).  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Daha iyi arasındaki farkı anlamak için `event` sınıfı ve Windows olaylarını, aşağıdaki örneği göz önünde bulundurun. Bu örnek en fazla iki eş zamanlı görevleri ve ardından iki benzer işlevleri kullanan çağrıları oluşturmak Zamanlayıcı'yı etkinleştirir `event` sınıfı ve bir Windows elle sıfırlama olayı. Her işlev ilk işaret hale paylaşılan bir olayı bekle çeşitli görevleri oluşturur. Her işlev için çalışmakta olan görevlerin verir ve olay işaret eder. Her işlev sonra iş olayı için bekler.  
+ Daha iyi arasındaki farkı anlamak için `event` sınıfı ve Windows olayları, aşağıdaki örneği göz önünde bulundurun. Bu örnek en fazla iki eşzamanlı görevlerini ve iki benzer işlevleri kullanan çağrıları oluşturmak Zamanlayıcı `event` sınıfı ve bir Windows elle sıfırlama olayı. Her işlevin ilk sinyal haline paylaşılan bir olay beklemek birkaç görev oluşturur. Her işlev için çalışmakta olan görevlerin ardından verir ve ardından olay sinyalini verir. Her işlev, ardından sinyal olayı için bekler.  
   
 ### <a name="code"></a>Kod  
  [!code-cpp[concrt-event-comparison#1](../../parallel/concrt/codesnippet/cpp/comparing-synchronization-data-structures-to-the-windows-api_1.cpp)]  
   
 ### <a name="comments"></a>Açıklamalar  
- Bu örnekte aşağıdaki örnek çıkışı üretir:  
+ Bu örnek, örnek aşağıdaki çıktıyı üretir:  
   
 ```Output  
 Cooperative event:  
@@ -84,9 +84,9 @@ Windows event:
     Context 13: received the event.  
 ```  
   
- Çünkü `event` sınıfı davranır işbirliği ile bir olay iş durumu girmek için beklediği sırada Zamanlayıcı başka bir bağlam için işlem kaynakları yeniden tahsis edebilirsiniz. Bu nedenle, daha fazla iş kullanan sürümü tarafından gerçekleştirilir `event` sınıfı. Sonraki görev başlatılmadan önce Windows olayları kullanan sürümünde her bekleme görev iş durumu girmeniz gerekir.  
+ Çünkü `event` sınıfı davranışını işbirliği içerisinde devamlılığı, olaya sinyal durumuna girmek için beklediği sırada Zamanlayıcı işlem kaynakları için başka bir bağlamı yeniden tahsis edebilirsiniz. Bu nedenle, daha fazla iş kullanan sürümü tarafından gerçekleştirilir `event` sınıfı. Sonraki görev başlatılmadan önce Windows olayları kullanan sürümünde her bekleyen görev sinyal verilmiş duruma dönmesine girmeniz gerekir.  
   
- Görevler hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
+ Görevler hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşitleme Veri Yapıları](../../parallel/concrt/synchronization-data-structures.md)

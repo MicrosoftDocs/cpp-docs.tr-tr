@@ -27,15 +27,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ea5da8b98c528eb6832c850e41b0a42c386f901
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0259716bb1106dbc5c2da5a3738cd78e5c8c877f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466172"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202481"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject sınıfı
-Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanan nesne için arabirim. Tanımı gereği, toplanan nesne bir dış nesne içinde yer alır. `CComAggObject` Sınıfı benzer [CComObject sınıfı](../../atl/reference/ccomobject-class.md)dışında dış istemcilere doğrudan erişilebilen bir arabirim sunar.  
+Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanan nesne için arabirim. Tanımı gereği, toplanan nesne bir dış nesne içinde yer alır. `CComAggObject` Sınıfı benzer [CComObject sınıfı](../../atl/reference/ccomobject-class.md)dışında dış istemcilere doğrudan erişilebilen bir arabirim sunar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,7 +76,7 @@ class CComAggObject : public IUnknown,
 |[CComAggObject::m_contained](#m_contained)|Temsilciler `IUnknown` çağrıları için dış bilinmeyen.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComAggObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanan nesne için. `CComAggObject` kendi `IUnknown` arabirimi, dış nesne ayrı `IUnknown` arabirim ve kendi başvuru sayısını tutar.  
+ `CComAggObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanan nesne için. `CComAggObject` kendi `IUnknown` arabirimi, dış nesne ayrı `IUnknown` arabirim ve kendi başvuru sayısını tutar.  
   
  Toplama hakkında daha fazla bilgi için bkz [ATL COM nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md).  
   
@@ -139,7 +139,7 @@ static HRESULT WINAPI CreateInstance(
   
 ### <a name="parameters"></a>Parametreler  
  *PP*  
- [out] Bir işaretçi bir **CComAggObject\<*** bulunan* **>** işaretçi. Varsa `CreateInstance` başarısız, *pp* NULL olarak ayarlandı.  
+ [out] Bir işaretçi bir **CComAggObject\<**<em>bulunan</em> **>** işaretçi. Varsa `CreateInstance` başarısız, *pp* NULL olarak ayarlandı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT değerini.  

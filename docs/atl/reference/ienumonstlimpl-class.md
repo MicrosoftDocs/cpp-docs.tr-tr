@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b70e8012d6126b39129cff6fc86366f72459dc02
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 15f0b26c5c86d023d98d6a13e6b92518756a3179
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883014"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206212"
 ---
 # <a name="ienumonstlimpl-class"></a>Ienumonstlımpl sınıfı
 Bu sınıf, bir C++ Standart Kitaplığı koleksiyonuna bağlı bir numaralandırıcı arabirimi tanımlar.  
@@ -45,7 +45,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
   
 #### <a name="parameters"></a>Parametreler  
  *temel*  
- Bir COM Numaralandırıcı ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) arabirimi.  
+ Bir COM Numaralandırıcı. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
   
  *piid*  
  Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.  
@@ -65,11 +65,11 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[IEnumOnSTLImpl::Clone](#clone)|Uygulamasını [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[IEnumOnSTLImpl::Clone](#clone)|Uygulamasını **kopya**.|  
 |[IEnumOnSTLImpl::Init](#init)|Numaralandırıcı başlatır.|  
-|[IEnumOnSTLImpl::Next](#next)|Uygulamasını [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[IEnumOnSTLImpl::Reset](#reset)|Uygulamasını [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[IEnumOnSTLImpl::Skip](#skip)|Uygulamasını [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[IEnumOnSTLImpl::Next](#next)|Uygulamasını **sonraki**.|  
+|[IEnumOnSTLImpl::Reset](#reset)|Uygulamasını **sıfırlama**.|  
+|[IEnumOnSTLImpl::Skip](#skip)|Uygulamasını **atla**.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
@@ -122,7 +122,7 @@ HRESULT Init(
  Numaralandırıcı arabirimine tüm istemciler için bir işaretçi geçirmeden önce bu yöntemi çağırmanız gerekir.  
   
 ##  <a name="clone"></a>  IEnumOnSTLImpl::Clone  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) türünde bir nesne oluşturarak yöntemi `CComEnumOnSTL`, aynı koleksiyon ve geçerli nesne tarafından kullanılan yineleyici başlatma ve üzerinde arabirimi döndüren Yeni oluşturulan nesne.  
+ Bu yöntem uygulamasını sağlar **kopya** türünde bir nesne oluşturarak yöntemi `CComEnumOnSTL`, aynı koleksiyon ve geçerli nesne tarafından kullanılan yineleyici başlatma ve üzerinde arabirimi döndüren yeni oluşturulan nesne.  
   
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -163,7 +163,7 @@ CollType::iterator m_iter;
 ```  
   
 ##  <a name="next"></a>  IEnumOnSTLImpl::Next  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **sonraki** yöntemi.  
   
 ```
 STDMETHOD(Next)(
@@ -186,7 +186,7 @@ STDMETHOD(Next)(
  Standart bir HRESULT değerini.  
   
 ##  <a name="reset"></a>  IEnumOnSTLImpl::Reset  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **sıfırlama** yöntemi.  
   
 ```
 STDMETHOD(Reset)(void);
@@ -196,7 +196,7 @@ STDMETHOD(Reset)(void);
  Standart bir HRESULT değerini.  
   
 ##  <a name="skip"></a>  IEnumOnSTLImpl::Skip  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **atla** yöntemi.  
   
 ```
 STDMETHOD(Skip)(ULONG celt);

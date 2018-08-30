@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa48af82fb5b6119e1efc14081c6851eafb85fa5
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 23c8776e462c2b275b0c7620e01b4bc82e7ad7ed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208708"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195750"
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
 Bu sınıf için bir sarmalayıcı olan `TOKEN_PRIVILEGES` yapısı.  
@@ -79,13 +79,13 @@ class CTokenPrivileges
 |[CTokenPrivileges::operator =](#operator_eq)|Atama işleci.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
- Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıkları tanımlamak için kullanılır. Yerel olarak benzersiz bir tanımlayıcı adlı bir 64-bit sayısı ayrıcalık oluşur ( [LUID'ini](http://msdn.microsoft.com/library/windows/desktop/aa379261)) ve bir tanımlayıcı dizesi.  
+ Erişim belirteci, her kullanıcıya verilen çeşitli güvenlik ayrıcalıkları tanımlamak için kullanılır. Yerel olarak benzersiz bir tanımlayıcı adlı bir 64-bit sayısı ayrıcalık oluşur ( [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid)) ve bir tanımlayıcı dizesi.  
   
- `CTokenPrivileges` İçin bir sarmalayıcı sınıftır [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yapısı ve 0 veya daha fazla ayrıcalık içerir. Silinmiş veya sorgulanan sağlanan sınıfı yöntemleri kullanarak ayrıcalıkları eklenebilir.  
+ `CTokenPrivileges` İçin bir sarmalayıcı sınıftır [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yapısı ve 0 veya daha fazla ayrıcalık içerir. Silinmiş veya sorgulanan sağlanan sınıfı yöntemleri kullanarak ayrıcalıkları eklenebilir.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -106,7 +106,7 @@ void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  TRUE ise ayrıcalık etkinleştirilir. False ise, ayrıcalık devre dışı bırakıldı.  
   
  *rPrivileges*  
- Başvuru bir [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yapısı. Öznitelikler ve ayrıcalıkları bu yapısından kopyalanır ve eklenen `CTokenPrivileges` nesne.  
+ Başvuru bir [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yapısı. Öznitelikler ve ayrıcalıkları bu yapısından kopyalanır ve eklenen `CTokenPrivileges` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem ilk formu ayrıcalıkları başarıyla eklendi, yanlış Aksi takdirde true değerini döndürür.  
@@ -125,7 +125,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
  `CTokenPrivileges` Yeni nesneye atamak için nesne.  
   
  *rPrivileges*  
- [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yeni atamak yapısı `CTokenPrivileges` nesne.  
+ [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yeni atamak yapısı `CTokenPrivileges` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CTokenPrivileges` Nesne isteğe bağlı olarak oluşturulabilir kullanarak bir `TOKEN_PRIVILEGES` yapısı veya önceden tanımlanmış `CTokenPrivileges` nesne.  
@@ -214,7 +214,7 @@ void GetLuidsAndAttributes(
   
 ### <a name="parameters"></a>Parametreler  
  *pPrivileges*  
- Bir dizi işaretçi [LUID'ini](http://msdn.microsoft.com/library/windows/desktop/aa379261) nesneleri. `CLUIDArray` typedef olarak tanımlanan `CAtlArray<LUID> CLUIDArray`.  
+ Bir dizi işaretçi [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) nesneleri. `CLUIDArray` typedef olarak tanımlanan `CAtlArray<LUID> CLUIDArray`.  
   
  *pAttributes*  
  DWORD nesnelerin dizisine yönelik işaretçi. Bu parametre belirtilmemişse veya NULL ise, öznitelikleri alınmamış. `CAttributes` typedef olarak tanımlanan `CAtlArray <DWORD> CAttributes`.  
@@ -251,7 +251,7 @@ const TOKEN_PRIVILEGES* GetPTOKEN_PRIVILEGES() const throw(...);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi döndürür [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yapısı.  
+ Bir işaretçi döndürür [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yapısı.  
   
 ##  <a name="lookupprivilege"></a>  CTokenPrivileges::LookupPrivilege  
  Verilen ayrıcalık adıyla ilişkili özniteliği alır.  
@@ -282,7 +282,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *rPrivileges*  
- [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) atamak için yapı `CTokenPrivileges` nesne.  
+ [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) atamak için yapı `CTokenPrivileges` nesne.  
   
  *Sol*  
  `CTokenPrivileges` Nesneye atamak için nesne.  
@@ -298,12 +298,12 @@ operator const TOKEN_PRIVILEGES *() const throw(...);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi değerine çevirir [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630) yapısı.  
+ Bir işaretçi değerine çevirir [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   
- [TOKEN_PRIVILEGES](http://msdn.microsoft.com/library/windows/desktop/aa379630)   
- [LUID'İNİ](http://msdn.microsoft.com/library/windows/desktop/aa379261)   
- [LUID_AND_ATTRIBUTES KONUSUNA](http://msdn.microsoft.com/library/windows/desktop/aa379263)   
+ [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)   
+ [LUID'İNİ](/windows/desktop/api/winnt/ns-winnt-_luid)   
+ [LUID_AND_ATTRIBUTES KONUSUNA](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b7f82988e8756a6894464c9d95ae47fe6baf922
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 6ef5728a20cc97d330540b10c2de325f62583b69
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336819"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203082"
 ---
 # <a name="cfontdialog-class"></a>CFontDialog sınıfı
 Bir yazı tipi seçimi iletişim kutusunu uygulamanıza eklemenize olanak sağlar.  
@@ -96,13 +96,13 @@ class CFontDialog : public CCommonDialog
   
  Oluşturmak için bir `CFontDialog` nesne, sağlanan bir oluşturucu kullanın veya yeni bir alt sınıf türetin ve kendi özel Oluşturucu kullanın.  
   
- Bir kez bir `CFontDialog` nesne oluşturulur, kullanabileceğiniz `m_cf` yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. [M_cf](#m_cf) yapısıdır türünü [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Bir kez bir `CFontDialog` nesne oluşturulur, kullanabileceğiniz `m_cf` yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. [M_cf](#m_cf) yapısıdır türünü [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  İletişim nesnenin denetimleri başlatılıyor sonra çağrı `DoModal` üye işlevi iletişim kutusunu görüntülemek ve bir yazı tipi Seç izin verin. `DoModal` Kullanıcı Tamam (IDOK) veya iptal edin (IDCANCEL) düğmesi seçili olup olmadığını döndürür.  
   
  Varsa `DoModal` IDOK, döndürür birini kullanabilirsiniz `CFontDialog`ait üye işlevleri tarafından kullanıcı giriş bilgileri alınamıyor.  
   
- Windows kullanabileceğiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Windows kullanabileceğiniz [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin. Bu işlev hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  `CFontDialog` üzerinde COMMDLG kullanır. Windows 3.1 ve sonraki sürümleri ile birlikte gelen DLL dosyası.  
   
@@ -147,13 +147,13 @@ CFontDialog(
   
 ### <a name="parameters"></a>Parametreler  
  *plfInitial*  
- Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) veri yapısı, bazı yazı tipinin özelliklerini ayarlamanıza olanak tanır.  
+ Bir işaretçi bir [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) veri yapısı, bazı yazı tipinin özelliklerini ayarlamanıza olanak tanır.  
   
  *charFormat*  
- Bir işaretçi bir [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) düzenleme denetimi veri yapısı, bazı yazı tipinin özelliklerine zengin içinde ayarlamanıza olanak tanır.  
+ Bir işaretçi bir [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) düzenleme denetimi veri yapısı, bazı yazı tipinin özelliklerine zengin içinde ayarlamanıza olanak tanır.  
   
  *CertOpenStore*  
- Bir veya daha fazla seçin-yazı tipi bayrakları belirtir. Bir veya daha fazla hazır değer Bitsel OR operatörü kullanılarak birleştirilebilir. Değiştirirseniz `m_cf.Flag`s yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullandığınızdan emin olun. Bu bayrakların her hakkında daha fazla bilgi için açıklamasına bakın [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK'sı yapısında.  
+ Bir veya daha fazla seçin-yazı tipi bayrakları belirtir. Bir veya daha fazla hazır değer Bitsel OR operatörü kullanılarak birleştirilebilir. Değiştirirseniz `m_cf.Flag`s yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullandığınızdan emin olun. Bu bayrakların her hakkında daha fazla bilgi için açıklamasına bakın [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) Windows SDK'sı yapısında.  
   
  *pdcPrinter*  
  Bir yazıcı cihaz bağlamı için bir işaretçi. Bu parametre belirtilirse, seçilmesi olan yazı tiplerinin yazıcı için bir yazıcı cihaz bağlamı gösteriyor.  
@@ -178,7 +178,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.  
   
  IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
@@ -199,7 +199,7 @@ void GetCharFormat(CHARFORMAT& cf) const;
   
 ### <a name="parameters"></a>Parametreler  
  *cf*  
- A [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) karakter seçili yazı tipini biçimlendirme hakkında bilgi içeren yapıya.  
+ A [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) karakter seçili yazı tipini biçimlendirme hakkında bilgi içeren yapıya.  
   
 ##  <a name="getcolor"></a>  CFontDialog::GetColor  
  Seçili yazı tipi rengini almak için bu işlevi çağırın.  
@@ -215,7 +215,7 @@ COLORREF GetColor() const;
  [!code-cpp[NVC_MFCDocView#79](../../mfc/codesnippet/cpp/cfontdialog-class_2.cpp)]  
   
 ##  <a name="getcurrentfont"></a>  CFontDialog::GetCurrentFont  
- Şu anda seçili yazı tipinin özellikleri üyelerine atamak için bu işlevi çağırın bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
+ Şu anda seçili yazı tipinin özellikleri üyelerine atamak için bu işlevi çağırın bir [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
 ```  
 void GetCurrentFont(LPLOGFONT lplf);
@@ -348,7 +348,7 @@ CHOOSEFONT m_cf;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `CFontDialog` nesne kullanabileceğiniz `m_cf` çağırmadan önce iletişim kutusu çeşitli yönlerini değiştirmek için `DoModal` üye işlevi. Bu yapı hakkında daha fazla bilgi için bkz. [CHOOSEFONT](http://msdn.microsoft.com/library/windows/desktop/ms646832) Windows SDK.  
+ Oluşturma sonrasında bir `CFontDialog` nesne kullanabileceğiniz `m_cf` çağırmadan önce iletişim kutusu çeşitli yönlerini değiştirmek için `DoModal` üye işlevi. Bu yapı hakkında daha fazla bilgi için bkz. [CHOOSEFONT](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#89](../../mfc/codesnippet/cpp/cfontdialog-class_12.cpp)]  

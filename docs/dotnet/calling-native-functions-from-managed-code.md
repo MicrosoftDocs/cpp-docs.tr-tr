@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: f3b8b266d44f9109a346160a1b2493f8644be839
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: a220f0dc2c979676ad2e28fd504ef80e0925f74d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207604"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195694"
 ---
 # <a name="calling-native-functions-from-managed-code"></a>Yönetilen Koddan Yerel İşlevleri Çağırma
 Platform çağırma Hizmetleri veya PInvoke sağlar yönetilen kodun yerel dinamik bağlantı kitaplıklarında (DLL'ler) C stili işlevleri çağırmak için ortak dil çalışma zamanı sağlar. Aynı veri sıralama, çalışma zamanı ile ve "It Just Works" öğesi veya IJW, mekanizma için COM birlikte çalışabilirlik için kullanılır.  
@@ -36,7 +36,7 @@ Platform çağırma Hizmetleri veya PInvoke sağlar yönetilen kodun yerel dinam
   
 -   [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)  
   
--   [Yakından Platform çağırma](http://msdn.microsoft.com/en-us/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
+-   [Yakından Platform çağırma](https://msdn.microsoft.com/ba9dd55b-2eaa-45cd-8afd-75cb8d64d243)  
   
  Bu bölümdeki örnekler yalnızca göstermek nasıl `PInvoke` kullanılabilir. `PInvoke` yordam sıralama kodu yazmak yerine bildirimli olarak öznitelikler sıralama bilgilerini sağlamak için özelleştirilmiş veri hazırlama basitleştirebilir.  
   

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40774d6307eb9b423ebd4fd303a48acbd87eda24
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 213a7c32204b8f96969b4ad7a94683916b66db10
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464992"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200848"
 ---
 # <a name="constraints-of-delay-loading-dlls"></a>DLL'leri Yüklemede Gecikme Kısıtlamaları
 İçeri aktarmalar Gecikmeli yüklenmesi ile ilgili kısıtlamalar vardır.  
@@ -42,9 +42,9 @@ ms.locfileid: "42464992"
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Gecikmeli yüklenen DLL'ler için bağlayıcı desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)   
- [LoadLibrary işlevi](http://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
- [GetModuleHandle işlevi](http://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
- [GetProcAddress işlevi](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
+ [LoadLibrary işlevi](https://msdn.microsoft.com/library/windows/desktop/ms684175.aspx)   
+ [GetModuleHandle işlevi](https://msdn.microsoft.com/library/windows/desktop/ms683199.aspx)   
+ [GetProcAddress işlevi](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx)   
  [TlsAlloc işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc)   
  [TlsFree işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsfree)   
  [TlsGetValue işlevi](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue)   

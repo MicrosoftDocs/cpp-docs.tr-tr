@@ -1,7 +1,7 @@
 ---
 title: Proje derleme hatası PRJ0002 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54e1870ce9137ba172f848a499dd31133119eea0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bc0e48130c17e04c2671395161452c9e66000047
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318282"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195721"
 ---
 # <a name="project-build-error-prj0002"></a>Proje Derleme Hatası PRJ0002
-hata sonuç 'komut satırından' döndürdü.  
-  
- Komut, bir ***komut satırı***, içinde kullanıcı girişinden oluşturulmuş **özellik sayfaları** iletişim kutusu, bir hata kodu ancak hiçbir bilgi döndürdü, çıktı penceresinde görüntülenir.  
-  
- Bu hatayı çözümlemeye hangi aracı hatayı oluşturan bağlıdır. MIDL için nelerin /o (Çıktı yeniden yönlendirme) tanımlanmışsa yanlış gittiğini hakkında bir fikir alırsınız.  
-  
- Özel derleme adımının veya hata koşulları hakkında bilgi verici olmayan yapı olay gibi bir toplu iş dosyası, ayrıca bu hatanın nedeni olabilir.
+
+> öğesinden döndürülen bir hata sonucu '*komut satırı*'.
+
+Komutu, bir *komut satırı*, içinde kullanıcı girişinden oluşturulmuş **özellik sayfaları** iletişim kutusu, bir hata kodu, ancak hiçbir bilgi döndürülen görünür **çıkış** penceresi .
+
+Bu hatayı çözümlemeye hangi aracı hatası mı bağlıdır. MIDL için /o (Çıktı yeniden yönlendirme) tanımlanmışsa çıktığına hakkında fikir alırsınız.
+
+Özel derleme adımının veya hata koşulları hakkında bilgilendirici olmayan derleme olay gibi bir toplu iş dosyası, ayrıca bu hatanın nedeni olabilir.

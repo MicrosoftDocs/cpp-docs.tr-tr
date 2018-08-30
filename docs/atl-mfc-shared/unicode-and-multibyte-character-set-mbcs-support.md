@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e9d212e74f77d21efa1b2ed030f8a1446d111fc
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 74f1f0f88828b5d6355c692aa8eaeecd5869bf57
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882955"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202940"
 ---
 # <a name="unicode-and-multibyte-character-set-mbcs-support"></a>Unicode ve çok baytlı karakter kümesi (MBCS) desteği
 
@@ -67,9 +67,9 @@ Bu kitaplık, hata ayıklayıcı ve DLL dosyaları MFC'de Unicode desteklemek i�
 
    - Burada kullandığınız TCHAR kullanın **char**.
 
-   - Burada kullandığınız LPTSTR kullanın **char\***.
+   - Burada kullandığınız LPTSTR kullanın **char**<strong>\*</strong>.
 
-   - Burada kullandığınız LPCTSTR kullanın **const char\***. `CString` işleç arasında dönüştürmek için LPCTSTR sağlar `CString` ve LPCTSTR.
+   - Burada kullandığınız LPCTSTR kullanın **const char**<strong>\*</strong>. `CString` işleç arasında dönüştürmek için LPCTSTR sağlar `CString` ve LPCTSTR.
 
 `CString` Ayrıca, Unicode uyumlu Oluşturucular, atama işleçleri ve Karşılaştırma işleçleri sağlar.
 
@@ -101,7 +101,7 @@ DBCS altında belirli bir dize tüm tek baytlık ANSI karakterler, tüm çift ba
 
 Genel metin işlevini eşlemeleri tüm çalışma zamanı dize işleme rutinleri için açıklanmıştır [C çalışma zamanı kitaplığı başvurusu](../c-runtime-library/c-run-time-library-reference.md). Bir liste için bkz. [uluslararası duruma getirme](../c-runtime-library/internationalization.md).
 
-Benzer şekilde, `CString` yöntemleri, genel veri türü eşlemeleri kullanılarak uygulanır. MFC MBCS ve Unicode hem etkinleştirmek için TCHAR için kullandığı **char** veya `wchar_t`, LPTSTR için **char\***  veya `wchar_t*`ve LPCTSTR için **const char\***  veya `const wchar_t*`. Bunlar MBCS veya Unicode için doğru eşlemeleri emin olun.
+Benzer şekilde, `CString` yöntemleri, genel veri türü eşlemeleri kullanılarak uygulanır. MFC MBCS ve Unicode hem etkinleştirmek için TCHAR için kullandığı **char** veya `wchar_t`, LPTSTR için **char** <strong>\*</strong> veya `wchar_t*`ve LPCTSTR için**const char** <strong>\*</strong> veya `const wchar_t*`. Bunlar MBCS veya Unicode için doğru eşlemeleri emin olun.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

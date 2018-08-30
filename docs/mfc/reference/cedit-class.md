@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45632fb870f1586453c2c591ef8edce23e625002
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 27ea5ccb0d15bd57a526c78cd3c57a4e83369ed0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465918"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199294"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Windows düzenleme denetimi işlevlerini sağlar.  
@@ -221,7 +221,7 @@ class CEdit : public CWnd
   
  Oluşturursanız, bir `CEdit` nesnesi bir pencere içinde de gerekebilir, yok. Oluşturursanız `CEdit` yığında nesne otomatik olarak bozulur. Oluşturursanız `CEdit` kullanarak yığında nesne **yeni** işlevini çağırmalıdır **Sil** kullanıcı Windows sonlandırıldığında yok etmek için nesneye düzenleme denetimi. Herhangi bir bellek ayırdığınızda `CEdit` nesne, geçersiz kılma `CEdit` ayrılmasını atmayı yıkıcı.  
   
- Belirli stilleri bir düzenleme denetimi (örneğin, ES_READONLY) değiştirileceğini denetimi kullanmak yerine belirli bir ileti göndermeyi gerekir [ModifyStyle](cwnd-class.md#modifystyle). Bkz: [Düzenle denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775464) Windows SDK içinde.  
+ Belirli stilleri bir düzenleme denetimi (örneğin, ES_READONLY) değiştirileceğini denetimi kullanmak yerine belirli bir ileti göndermeyi gerekir [ModifyStyle](cwnd-class.md#modifystyle). Bkz: [Düzenle denetim stilleri](/windows/desktop/Controls/edit-control-styles) Windows SDK içinde.  
   
  Daha fazla bilgi için `CEdit`, bkz:  
   
@@ -252,7 +252,7 @@ BOOL CanUndo() const;
  Son düzenleme işlemi için yapılan bir çağrı tarafından alınabilir olursa sıfır dışı `Undo` üye işlevi; 0 geri alınamaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_CANUNDO](http://msdn.microsoft.com/library/windows/desktop/bb775468) Windows SDK.  
+ Daha fazla bilgi için [EM_CANUNDO](/windows/desktop/Controls/em-canundo) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::Undo](#undo).  
@@ -289,7 +289,7 @@ int CharFromPos(CPoint pt) const;
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.  
   
- Daha fazla bilgi için [EM_CHARFROMPOS](http://msdn.microsoft.com/library/windows/desktop/bb761566) Windows SDK.  
+ Daha fazla bilgi için [EM_CHARFROMPOS](/windows/desktop/Controls/em-charfrompos) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#3](../../mfc/reference/codesnippet/cpp/cedit-class_2.cpp)]  
@@ -306,7 +306,7 @@ void Clear();
   
  Geçerli seçimi Sil ve Silinen içeriği panoya Yerleştir için çağrı [Kes](#cut) üye işlevi.  
   
- Daha fazla bilgi için [WM_CLEAR](http://msdn.microsoft.com/library/windows/desktop/ms649020) Windows SDK.  
+ Daha fazla bilgi için [WM_CLEAR](/windows/desktop/dataxchg/wm-clear) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#4](../../mfc/reference/codesnippet/cpp/cedit-class_3.cpp)]  
@@ -319,7 +319,7 @@ void Copy();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [WM_COPY](http://msdn.microsoft.com/library/windows/desktop/ms649022) Windows SDK.  
+ Daha fazla bilgi için [WM_COPY](/windows/desktop/dataxchg/wm-copy) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#5](../../mfc/reference/codesnippet/cpp/cedit-class_4.cpp)]  
@@ -354,7 +354,7 @@ virtual BOOL Create(
 ### <a name="remarks"></a>Açıklamalar  
  Oluşturmak bir `CEdit` iki adımda nesne. İlk olarak, çağrı `CEdit` oluşturucusu ve sonra çağrı `Create`, hangi Windows düzenleme denetimi oluşturur ve ona ekler `CEdit` nesne.  
   
- Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](http://msdn.microsoft.com/library/windows/desktop/ms632635), [WM_NCCALCSIZE](http://msdn.microsoft.com/library/windows/desktop/ms632634), [WM_CREATE](http://msdn.microsoft.com/library/windows/desktop/ms632619), ve [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) Düzenle denetim iletileri.  
+ Zaman `Create` yürütür, Windows gönderir [WM_NCCREATE](/windows/desktop/winmsg/wm-nccreate), [WM_NCCALCSIZE](/windows/desktop/winmsg/wm-nccalcsize), [WM_CREATE](/windows/desktop/winmsg/wm-create), ve [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) Düzenle denetim iletileri.  
   
  Bu iletiler tarafından varsayılan olarak işlenir [OnNcCreate](cwnd-class.md#onnccreate), [OnNcCalcSize](cwnd-class.md#onnccalcsize), [OnCreate](cwnd-class.md#oncreate), ve [Ongetminmaxınfo](cwnd-class.md#ongetminmaxinfo) üye işlevleri içinde `CWnd` temel sınıfı. Varsayılan ileti işleme genişletmek için öğesinden bir sınıf türetin `CEdit`, yeni sınıfa ileti eşlemesi ekleyin ve yukarıdaki ileti işleyicisi üye işlevleri geçersiz kılar. Geçersiz kılma `OnCreate`, örneğin, gerekli başlatma için yeni bir sınıf gerçekleştirmek için.  
   
@@ -385,7 +385,7 @@ void Cut();
   
  Silinen metin panoya koymadan geçerli seçimi silmek için çağrı [Temizle](#clear) üye işlevi.  
   
- Daha fazla bilgi için [WM_CUT](http://msdn.microsoft.com/library/windows/desktop/ms649023) Windows SDK.  
+ Daha fazla bilgi için [WM_CUT](/windows/desktop/dataxchg/wm-cut) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#6](../../mfc/reference/codesnippet/cpp/cedit-class_6.cpp)]  
@@ -402,7 +402,7 @@ void EmptyUndoBuffer();
   
  Otomatik olarak geri bayrağı olduğu zaman temizlenmiş [SetWindowText](../../mfc/reference/cwnd-class.md#setwindowtext) veya [SetHandle](#sethandle) `CWnd` üye işlevleri çağrılır.  
   
- Daha fazla bilgi için [EM_EMPTYUNDOBUFFER](http://msdn.microsoft.com/library/windows/desktop/bb761568) Windows SDK.  
+ Daha fazla bilgi için [EM_EMPTYUNDOBUFFER](/windows/desktop/Controls/em-emptyundobuffer) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#7](../../mfc/reference/codesnippet/cpp/cedit-class_7.cpp)]  
@@ -426,9 +426,9 @@ BOOL FmtLines(BOOL bAddEOL);
   
  Windows, yalnızca yanıt `CEdit` birden çok satırlı düzenleme denetimi bir nesnedir.  
   
- `FmtLines` yalnızca tarafından döndürülen arabellek etkiler [GetHandle](#gethandle) ve tarafından döndürülen metni [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627). Metin düzenleme denetiminde görüntüleme herhangi bir etkisi yoktur.  
+ `FmtLines` yalnızca tarafından döndürülen arabellek etkiler [GetHandle](#gethandle) ve tarafından döndürülen metni [WM_GETTEXT](/windows/desktop/winmsg/wm-gettext). Metin düzenleme denetiminde görüntüleme herhangi bir etkisi yoktur.  
   
- Daha fazla bilgi için [EM_FMTLINES](http://msdn.microsoft.com/library/windows/desktop/bb761570) Windows SDK.  
+ Daha fazla bilgi için [EM_FMTLINES](/windows/desktop/Controls/em-fmtlines) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#8](../../mfc/reference/codesnippet/cpp/cedit-class_8.cpp)]  
@@ -457,7 +457,7 @@ CString GetCueBanner() const;
  İkinci aşırı yükleme için bir [CString](../../atl-mfc-shared/using-cstring.md) yöntem başarılı; Aksi takdirde ise işaret metni içeren boş bir dize ("").  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_GETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb761572) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_GetCueBannerText](http://msdn.microsoft.com/library/windows/desktop/bb761695) makrosu.  
+ Bu yöntem gönderir [EM_GETCUEBANNER](/windows/desktop/Controls/em-getcuebanner) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_GetCueBannerText](/windows/desktop/api/commctrl/nf-commctrl-edit_getcuebannertext) makrosu.  
   
 ##  <a name="getfirstvisibleline"></a>  CEdit::GetFirstVisibleLine  
  Bir düzenleme denetimi en üstte görünür satırında belirlemek için bu işlevi çağırın.  
@@ -470,7 +470,7 @@ int GetFirstVisibleLine() const;
  En üstte görünür satırın sıfır tabanlı dizini. Tek satırlı düzenleme denetimleri için dönüş değeri 0'dır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_GETFIRSTVISIBLELINE](http://msdn.microsoft.com/library/windows/desktop/bb761574) Windows SDK.  
+ Daha fazla bilgi için [EM_GETFIRSTVISIBLELINE](/windows/desktop/Controls/em-getfirstvisibleline) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#9](../../mfc/reference/codesnippet/cpp/cedit-class_9.cpp)]  
@@ -495,7 +495,7 @@ HLOCAL GetHandle() const;
 > [!NOTE]
 > `GetHandle` Windows 95/98 ile çalışmaz. Eğer `GetHandle` Windows 95/98'de, NULL döndürür. `GetHandle` Windows NT 3.51 sürümü ve sonraki sürümler altında belirtildiği gibi çalışır.  
   
- Daha fazla bilgi için [EM_GETHANDLE](http://msdn.microsoft.com/library/windows/desktop/bb761576) Windows SDK.  
+ Daha fazla bilgi için [EM_GETHANDLE](/windows/desktop/Controls/em-gethandle) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#10](../../mfc/reference/codesnippet/cpp/cedit-class_10.cpp)]  
@@ -520,7 +520,7 @@ BOOL GetHighlight(
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_GETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761578) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  Bu metin sınırı almak için bu üye işlevi çağrısı `CEdit` nesne.  
@@ -538,7 +538,7 @@ UINT GetLimitText() const;
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.  
   
- Daha fazla bilgi için [EM_GETLIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761582) Windows SDK.  
+ Daha fazla bilgi için [EM_GETLIMITTEXT](/windows/desktop/Controls/em-getlimittext) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#11](../../mfc/reference/codesnippet/cpp/cedit-class_11.cpp)]  
@@ -573,7 +573,7 @@ int GetLine(
 ### <a name="remarks"></a>Açıklamalar  
  Kopyalanan satırın bir sonlandırma boş karakteri içermiyor.  
   
- Daha fazla bilgi için [EM_GETLINE](http://msdn.microsoft.com/library/windows/desktop/bb761584) Windows SDK.  
+ Daha fazla bilgi için [EM_GETLINE](/windows/desktop/Controls/em-getline) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::GetLineCount](#getlinecount).  
@@ -591,7 +591,7 @@ int GetLineCount() const;
 ### <a name="remarks"></a>Açıklamalar  
  `GetLineCount` yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
- Daha fazla bilgi için [EM_GETLINECOUNT](http://msdn.microsoft.com/library/windows/desktop/bb761586) Windows SDK.  
+ Daha fazla bilgi için [EM_GETLINECOUNT](/windows/desktop/Controls/em-getlinecount) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#12](../../mfc/reference/codesnippet/cpp/cedit-class_12.cpp)]  
@@ -612,7 +612,7 @@ DWORD GetMargins() const;
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.  
   
- Daha fazla bilgi için [EM_GETMARGINS](http://msdn.microsoft.com/library/windows/desktop/bb761590) Windows SDK.  
+ Daha fazla bilgi için [EM_GETMARGINS](/windows/desktop/Controls/em-getmargins) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
@@ -630,7 +630,7 @@ BOOL GetModify() const;
 ### <a name="remarks"></a>Açıklamalar  
  Windows düzenleme denetiminin içeriğini değiştirilmiş olup olmadığını belirten bir iç bayrağı tutar. Bu bayrak düzenleme denetiminin ilk oluşturulduğunda ve çağrı yaparak da temizlenmesi temizlenir [SetModify](#setmodify) üye işlevi.  
   
- Daha fazla bilgi için [EM_GETMODIFY](http://msdn.microsoft.com/library/windows/desktop/bb761592) Windows SDK.  
+ Daha fazla bilgi için [EM_GETMODIFY](/windows/desktop/Controls/em-getmodify) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#13](../../mfc/reference/codesnippet/cpp/cedit-class_13.cpp)]  
@@ -646,9 +646,9 @@ TCHAR GetPasswordChar() const;
  Kullanıcı yazılan karakter yerine görüntülenecek karakter belirtir. Dönüş değeri NULL ise hiç parola karakteri yok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ES_PASSWORD stiliyle düzenleme denetiminin oluşturursanız, Denetim DLL varsayılan parola karakteri belirler. Bildirim veya [InitCommonControlsEx](http://msdn.microsoft.com/library/windows/desktop/bb775697) yöntemi belirleyen DLL destekleyen düzenleme denetimi. User32.dll düzenleme denetimini destekler, varsayılan parola karakteri yıldız işareti ise ('* ', U + 002A). Comctl32.dll sürüm 6 düzenleme denetiminin destekliyorsa, varsayılan karakter ('●', U + 25CF) siyah DAİRE uygulanır. Ortak Denetimler DLL ve sürümünü destekleyen hakkında daha fazla bilgi için bkz [kabuk ve ortak denetimleri sürümleri](http://msdn.microsoft.com/library/windows/desktop/bb776779).  
+ ES_PASSWORD stiliyle düzenleme denetiminin oluşturursanız, Denetim DLL varsayılan parola karakteri belirler. Bildirim veya [InitCommonControlsEx](/windows/desktop/api/commctrl/nf-commctrl-initcommoncontrolsex) yöntemi belirleyen DLL destekleyen düzenleme denetimi. User32.dll düzenleme denetimini destekler, varsayılan parola karakteri yıldız işareti ise ('* ', U + 002A). Comctl32.dll sürüm 6 düzenleme denetiminin destekliyorsa, varsayılan karakter ('●', U + 25CF) siyah DAİRE uygulanır. Ortak Denetimler DLL ve sürümünü destekleyen hakkında daha fazla bilgi için bkz [kabuk ve ortak denetimleri sürümleri](https://msdn.microsoft.com/library/windows/desktop/bb776779).  
   
- Bu yöntem gönderir [EM_GETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761594) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [EM_GETPASSWORDCHAR](/windows/desktop/Controls/em-getpasswordchar) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#14](../../mfc/reference/codesnippet/cpp/cedit-class_14.cpp)]  
@@ -669,7 +669,7 @@ void GetRect(LPRECT lpRect) const;
   
  Çok satırlı düzenleme denetiminin biçimlendirme dikdörtgen tarafından değiştirilebilir [SetRect](#setrect) ve [SetRectNP](#setrectnp) üye işlevleri.  
   
- Daha fazla bilgi için [EM_GETRECT](http://msdn.microsoft.com/library/windows/desktop/bb761596) Windows SDK.  
+ Daha fazla bilgi için [EM_GETRECT](/windows/desktop/Controls/em-getrect) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::LimitText](#limittext).  
@@ -696,7 +696,7 @@ void GetSel(
  DWORD döndürür sürüm dwpoint seçiminde bitişinden sonra düşük düzey Word'ün başlangıç konumunu ve nonselected ilk karakterin konumu içeren bir değer döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_GETSEL](http://msdn.microsoft.com/library/windows/desktop/bb761598) Windows SDK.  
+ Daha fazla bilgi için [EM_GETSEL](/windows/desktop/Controls/em-getsel) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#15](../../mfc/reference/codesnippet/cpp/cedit-class_15.cpp)]  
@@ -712,7 +712,7 @@ BOOL HideBalloonTip();
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev gönderir [EM_HIDEBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761604) Windows SDK'da açıklanan ileti.  
+ Bu işlev gönderir [EM_HIDEBALLOONTIP](/windows/desktop/Controls/em-hideballoontip) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="limittext"></a>  CEdit::LimitText  
  Kullanıcının bir düzenleme denetimine girebilirsiniz metnin uzunluğunu sınırlamak için bu işlevi çağırın.  
@@ -731,7 +731,7 @@ void LimitText(int nChars = 0);
 > [!NOTE]
 >  Win32'de (Windows NT ve Windows 95/98) [SetLimitText](#setlimittext) bu işlevin yerini alır.  
   
- Daha fazla bilgi için [EM_LIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761607) Windows SDK.  
+ Daha fazla bilgi için [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#17](../../mfc/reference/codesnippet/cpp/cedit-class_16.cpp)]  
@@ -755,7 +755,7 @@ int LineFromChar(int nIndex = -1) const;
   
  Bu üye işlevi, yalnızca birden çok satırlı düzenleme denetimleri tarafından kullanılır.  
   
- Daha fazla bilgi için [EM_LINEFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761609) Windows SDK.  
+ Daha fazla bilgi için [EM_LINEFROMCHAR](/windows/desktop/Controls/em-linefromchar) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#18](../../mfc/reference/codesnippet/cpp/cedit-class_17.cpp)]  
@@ -779,7 +779,7 @@ int LineIndex(int nLine = -1) const;
   
  Bu üye işlevi, yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
- Daha fazla bilgi için [EM_LINEINDEX](http://msdn.microsoft.com/library/windows/desktop/bb761611) Windows SDK.  
+ Daha fazla bilgi için [EM_LINEINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761611) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#19](../../mfc/reference/codesnippet/cpp/cedit-class_18.cpp)]  
@@ -804,10 +804,10 @@ int LineLength(int nLine = -1) const;
   
  Varsa *evrimçi* parametresi, -1, dönüş değeri seçili karakterler içeren satırları seçili olmayan karakter sayısı. Örneğin, bir satırın sonraki satırın sonundaki sekizinci karakterinde dördüncü karakter seçimi geçerse, dönüş değeri 10'dur. Diğer bir deyişle, üç ilk satır ve yedi sonraki karakter.  
   
- TCHAR satır'tablosundaki TCHAR türü hakkında daha fazla bilgi için bkz. [Windows veri türleri](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
+ TCHAR satır'tablosundaki TCHAR türü hakkında daha fazla bilgi için bkz. [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tarafından desteklenen [EM_LINELENGTH](http://msdn.microsoft.com/library/windows/desktop/bb761613) Windows SDK'da açıklanan ileti.  
+ Bu yöntem tarafından desteklenen [EM_LINELENGTH](/windows/desktop/Controls/em-linelength) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::LineIndex](#lineindex).  
@@ -835,7 +835,7 @@ void LineScroll(
   
  `LineScroll` herhangi bir satırın son karakter yatay olarak kaydırmak için kullanılabilir.  
   
- Daha fazla bilgi için [EM_LINESCROLL](http://msdn.microsoft.com/library/windows/desktop/bb761615) Windows SDK.  
+ Daha fazla bilgi için [EM_LINESCROLL](/windows/desktop/Controls/em-linescroll) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::GetFirstVisibleLine](#getfirstvisibleline).  
@@ -850,7 +850,7 @@ void Paste();
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca Pano CF_TEXT biçiminde veri içeriyorsa, veriler eklenir.  
   
- Daha fazla bilgi için [WM_PASTE](http://msdn.microsoft.com/library/windows/desktop/ms649028) Windows SDK.  
+ Daha fazla bilgi için [WM_PASTE](/windows/desktop/dataxchg/wm-paste) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#20](../../mfc/reference/codesnippet/cpp/cedit-class_19.cpp)]  
@@ -875,7 +875,7 @@ CPoint PosFromChar(UINT nChar) const;
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.  
   
- Daha fazla bilgi için [EM_POSFROMCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761631) Windows SDK.  
+ Daha fazla bilgi için [EM_POSFROMCHAR](/windows/desktop/Controls/em-posfromchar) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::LineFromChar](#linefromchar).  
@@ -899,7 +899,7 @@ void ReplaceSel(LPCTSTR lpszNewText, BOOL bCanUndo = FALSE);
   
  Geçerli seçim yok ise, yerine konacak metin geçerli İmleç konumuna eklenir.  
   
- Daha fazla bilgi için [EM_REPLACESEL](http://msdn.microsoft.com/library/windows/desktop/bb761633) Windows SDK.  
+ Daha fazla bilgi için [EM_REPLACESEL](/windows/desktop/Controls/em-replacesel) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::LineIndex](#lineindex).  
@@ -931,7 +931,7 @@ BOOL SetCueBanner(
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_SETCUEBANNER](http://msdn.microsoft.com/library/windows/desktop/bb761639) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_SetCueBannerTextFocused](http://msdn.microsoft.com/library/windows/desktop/bb761703) makrosu.  
+ Bu yöntem gönderir [EM_SETCUEBANNER](/windows/desktop/Controls/em-setcuebanner) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_SetCueBannerTextFocused](/windows/desktop/api/commctrl/nf-commctrl-edit_setcuebannertextfocused) makrosu.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, gösterir [CEdit::SetCueBanner](#setcuebanner) yöntemi.  
@@ -947,7 +947,7 @@ void SetHandle(HLOCAL hBuffer);
   
 ### <a name="parameters"></a>Parametreler  
  *hBuffer*  
- Yerel bellek işleyici içerir. Bu işleyici önceki bir çağrı tarafından oluşturulmuş olması gerekir [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723) LMEM_MOVEABLE bayrağını kullanarak Windows işlevi. Bellek null ile sonlandırılmış bir dize içerdiği varsayılır. Durum bu değilse, ayrılan belleğin ilk bayt 0 olarak ayarlanması gerekir.  
+ Yerel bellek işleyici içerir. Bu işleyici önceki bir çağrı tarafından oluşturulmuş olması gerekir [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc) LMEM_MOVEABLE bayrağını kullanarak Windows işlevi. Bellek null ile sonlandırılmış bir dize içerdiği varsayılır. Durum bu değilse, ayrılan belleğin ilk bayt 0 olarak ayarlanması gerekir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Düzenleme denetimi şu anda görüntülenen metnin yerine kendi arabellek ayırma depolamak için bu arabellek sonra kullanır.  
@@ -963,7 +963,7 @@ void SetHandle(HLOCAL hBuffer);
 > [!NOTE]
 > `GetHandle` Windows 95/98 ile çalışmaz. Eğer `GetHandle` Windows 95/98'de, NULL döndürür. `GetHandle` Windows NT 3.51 sürümü ve sonraki sürümler altında belirtildiği gibi çalışır.  
   
- Daha fazla bilgi için [EM_SETHANDLE](http://msdn.microsoft.com/library/windows/desktop/bb761641), [LocalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366723), ve [LocalFree](http://msdn.microsoft.com/library/windows/desktop/aa366730) Windows SDK.  
+ Daha fazla bilgi için [EM_SETHANDLE](/windows/desktop/Controls/em-sethandle), [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc), ve [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#22](../../mfc/reference/codesnippet/cpp/cedit-class_21.cpp)]  
@@ -985,7 +985,7 @@ void SetHighlight(
 |[in] *ichEnd*|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_SETHILITE](http://msdn.microsoft.com/library/windows/desktop/bb761643) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  Bu metin sınırlamak için bu üye işlevini çağırın `CEdit` nesne.  
@@ -1005,7 +1005,7 @@ void SetLimitText(UINT nMax);
   
  Bu işlev değiştirir [LimitText](#limittext) Win32'de.  
   
- Daha fazla bilgi için [EM_SETLIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761647) Windows SDK.  
+ Daha fazla bilgi için [EM_SETLIMITTEXT](/windows/desktop/Controls/em-setlimittext) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
@@ -1031,7 +1031,7 @@ void SetMargins(
 > [!NOTE]
 >  Bu üye işlevi, Windows 95 ve Windows NT 4.0 sürümlerinde kullanılabilir olan.  
   
- Daha fazla bilgi için [EM_SETMARGINS](http://msdn.microsoft.com/library/windows/desktop/bb761649) Windows SDK.  
+ Daha fazla bilgi için [EM_SETMARGINS](/windows/desktop/Controls/em-setmargins) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEditView::GetEditCtrl](ceditview-class.md#geteditctrl).  
@@ -1050,7 +1050,7 @@ void SetModify(BOOL bModified = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Değiştirilen bayrağı, metin düzenleme denetiminin içinde değiştirilmiş olup olmadığını gösterir. Kullanıcının metni değiştiğinde otomatik olarak ayarlanır. Değeri ile alınabilir [GetModify](#getmodify) üye işlevi.  
   
- Daha fazla bilgi için [EM_SETMODIFY](http://msdn.microsoft.com/library/windows/desktop/bb761651) Windows SDK.  
+ Daha fazla bilgi için [EM_SETMODIFY](/windows/desktop/Controls/em-setmodify) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::GetModify](#getmodify).  
@@ -1073,9 +1073,9 @@ void SetPasswordChar(TCHAR ch);
   
  Zaman `SetPasswordChar` üye işlevi çağrıldığında `CEdit` tarafından belirtilen karakter kullanarak tüm görünür karakterleri yeniden çizer *ch*.  
   
- Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stili, varsayılan parola karakteri yıldız ayarlanır ( **\***). Bu stil, kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
+ Düzenleme denetimi ile oluşturulursa [ES_PASSWORD](styles-used-by-mfc.md#edit-styles) stili, varsayılan parola karakteri yıldız ayarlanır ( <strong>\*</strong>). Bu stil, kaldırılır `SetPasswordChar` çağrılır *ch* 0 olarak ayarlayın.  
   
- Daha fazla bilgi için [EM_SETPASSWORDCHAR](http://msdn.microsoft.com/library/windows/desktop/bb761653) Windows SDK.  
+ Daha fazla bilgi için [EM_SETPASSWORDCHAR](/windows/desktop/Controls/em-setpasswordchar) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#16](../../mfc/reference/codesnippet/cpp/cedit-class_22.cpp)]  
@@ -1097,7 +1097,7 @@ BOOL SetReadOnly(BOOL bReadOnly = TRUE);
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli ayarı test ederek bulunabilir [ES_READONLY](styles-used-by-mfc.md#edit-styles) dönüş değerini bayrağı [CWnd::GetStyle](cwnd-class.md#getstyle).  
   
- Daha fazla bilgi için [EM_SETREADONLY](http://msdn.microsoft.com/library/windows/desktop/bb761655) Windows SDK.  
+ Daha fazla bilgi için [EM_SETREADONLY](/windows/desktop/Controls/em-setreadonly) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#23](../../mfc/reference/codesnippet/cpp/cedit-class_23.cpp)]  
@@ -1122,7 +1122,7 @@ void SetRect(LPCRECT lpRect);
   
  Zaman `SetRect` çağrılır, düzenleme denetiminin metin de yeniden biçimlendirildi ve yeniden olduğu.  
   
- Daha fazla bilgi için [EM_SETRECT](http://msdn.microsoft.com/library/windows/desktop/bb761657) Windows SDK.  
+ Daha fazla bilgi için [EM_SETRECT](/windows/desktop/Controls/em-setrect) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#24](../../mfc/reference/codesnippet/cpp/cedit-class_24.cpp)]  
@@ -1149,7 +1149,7 @@ void SetRectNP(LPCRECT lpRect);
   
  Bu üye, yalnızca birden çok satırlı düzenleme denetimleri tarafından işlenir.  
   
- Daha fazla bilgi için [EM_SETRECTNP](http://msdn.microsoft.com/library/windows/desktop/bb761659) Windows SDK.  
+ Daha fazla bilgi için [EM_SETRECTNP](/windows/desktop/Controls/em-setrectnp) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::SetRect](#setrect).  
@@ -1183,7 +1183,7 @@ void SetSel(
  Bitiş konumu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_SETSEL](http://msdn.microsoft.com/library/windows/desktop/bb761661) Windows SDK.  
+ Daha fazla bilgi için [EM_SETSEL](/windows/desktop/Controls/em-setsel) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEdit::GetSel](#getsel).  
@@ -1223,7 +1223,7 @@ BOOL SetTabStops(
   
  `SetTabStops` otomatik olarak düzenleme penceresi çizmez. Metin düzenleme denetiminde zaten sekme durakları değiştirirseniz, çağrı [CWnd::InvalidateRect](cwnd-class.md#invalidaterect) düzenleme penceresi yeniden çizmek için.  
   
- Daha fazla bilgi için [EM_SETTABSTOPS](http://msdn.microsoft.com/library/windows/desktop/bb761663) ve [GetDialogBaseUnits](http://msdn.microsoft.com/library/windows/desktop/ms645475) Windows SDK.  
+ Daha fazla bilgi için [EM_SETTABSTOPS](/windows/desktop/Controls/em-settabstops) ve [GetDialogBaseUnits](/windows/desktop/api/winuser/nf-winuser-getdialogbaseunits) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CEditView::SetTabStops](ceditview-class.md#settabstops).  
@@ -1245,16 +1245,16 @@ BOOL ShowBalloonTip(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pEditBalloonTip*|İşaretçi bir [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) balon ipucu açıklayan yapısı.|  
+|[in] *pEditBalloonTip*|İşaretçi bir [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) balon ipucu açıklayan yapısı.|  
 |[in] *lpszTitle*|Balon ipucu başlığını içeren bir Unicode dize işaretçisi.|  
 |[in] *lpszText*|Balon ipucu metnini içeren bir Unicode dize işaretçisi.|  
-|[in] *ttiIcon*|Bir **INT** balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. TTI_NONE varsayılan değerdir. Daha fazla bilgi için `ttiIcon` üyesi [EDITBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb775466) yapısı.|  
+|[in] *ttiIcon*|Bir **INT** balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. TTI_NONE varsayılan değerdir. Daha fazla bilgi için `ttiIcon` üyesi [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev gönderir [EM_SHOWBALLOONTIP](http://msdn.microsoft.com/library/windows/desktop/bb761668) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_ShowBalloonTip](http://msdn.microsoft.com/library/windows/desktop/bb761707) makrosu.  
+ Bu işlev gönderir [EM_SHOWBALLOONTIP](/windows/desktop/Controls/em-showballoontip) Windows SDK'da açıklanan ileti. Daha fazla bilgi için [Edit_ShowBalloonTip](/windows/desktop/api/commctrl/nf-commctrl-edit_showballoontip) makrosu.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği bir değişkene tanımlar `m_cedit`, yani geçerli düzenleme denetiminin erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -1279,7 +1279,7 @@ BOOL Undo();
 ### <a name="remarks"></a>Açıklamalar  
  Geri alma işlemi geri alınabilir. Örneğin, ilk çağrı ile silinen metin geri yükleyebilirsiniz `Undo`. Müdahalede bulunan hiçbir düzenleme işlemi var olduğu sürece, ikinci çağrı metinle yeniden kaldırabilirsiniz `Undo`.  
   
- Daha fazla bilgi için [EM_UNDO](http://msdn.microsoft.com/library/windows/desktop/bb761670) Windows SDK.  
+ Daha fazla bilgi için [EM_UNDO](/windows/desktop/Controls/em-undo) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CEdit#25](../../mfc/reference/codesnippet/cpp/cedit-class_27.cpp)]  

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bc6080bf66ad9bb9d436832b1066214f8cdbfb7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7b3db7fbcf190aa2dda05cabd2d1553824fb076e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466057"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194733"
 ---
 # <a name="appearance-atl-control-wizard"></a>ATL denetimi Sihirbazı görünümü
 "Arama sonuçları" Özet buraya ekleyin.  
@@ -32,7 +32,7 @@ ms.locfileid: "42466057"
 **Durumu görüntüle**  
 Kapsayıcı içindeki denetiminin görünümünü ayarlar.  
   
- -   **Donuk**: içindeki bit VIEWSTATUS_OPAQUE ayarlar [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) numaralandırma ve geçirilen tüm denetim dikdörtgen çizer [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) yöntemi. Denetim tamamen opak görünür ve kapsayıcı hiçbiri denetim sınırlarını gösterir.      
+ -   **Donuk**: içindeki bit VIEWSTATUS_OPAQUE ayarlar [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) numaralandırma ve geçirilen tüm denetim dikdörtgen çizer [CComControlBase::OnDraw](../../atl/reference/ccomcontrolbase-class.md#ondraw) yöntemi. Denetim tamamen opak görünür ve kapsayıcı hiçbiri denetim sınırlarını gösterir.      
       
         Bu ayar, daha hızlı bir denetim çizmek kapsayıcı sağlar. Bu seçeneği seçili değilse, Denetim saydam bölümleri içerebilir.  
       
@@ -82,7 +82,7 @@ Görünümünü ve davranışını ek seçenekler denetimi için ayarlar.
   
  -   **Çalışma zamanında görünmez**: denetimin çalışma zamanında görünmez olmasını ayarlar. Görünmez denetimler, zaman aralıklarında olayları tetikleme gibi arka plan işlemleri gerçekleştirmek için kullanabilirsiniz.  
       
- -   **Düğme gibi davranan**: içindeki bit OLEMISC_ACTSLIKEBUTTON ayarlar [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) yapacak bir denetimi etkinleştirmek için sabit bir düğme ister. Bu seçeneğin belirlenmesi, kapsayıcı denetimin istemci site varsayılan düğme olarak işaretledi, kendi kendini bir kalın kenarlığa sahip çizim varsayılan düğme olarak görüntülemek, düğme denetimi sağlar. Bkz: [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) daha fazla bilgi için.  
+ -   **Düğme gibi davranan**: içindeki bit OLEMISC_ACTSLIKEBUTTON ayarlar [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) yapacak bir denetimi etkinleştirmek için sabit bir düğme ister. Bu seçeneğin belirlenmesi, kapsayıcı denetimin istemci site varsayılan düğme olarak işaretledi, kendi kendini bir kalın kenarlığa sahip çizim varsayılan düğme olarak görüntülemek, düğme denetimi sağlar. Bkz: [CComControlBase::GetAmbientDisplayAsDefault](../../atl/reference/ccomcontrolbase-class.md#getambientdisplayasdefault) daha fazla bilgi için.  
       
   -   **Etiket gibi davranan**: OLEMISC numaralandırmada bit OLEMISC_ACTSLIKELABEL kapsayıcının yerel etiketi değiştirmek bir denetimi etkinleştirmek için ayarlar. Kapsayıcı bu bayrağıyla yapmanız gerekenler herhangi bir şey olmadığını belirler.  
   

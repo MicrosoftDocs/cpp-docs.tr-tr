@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c182840ed3592a229b8d6c7b98930ade57a18b25
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 676d14b1027cbc9df68e4be26a9a1451a29d8c37
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883027"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204318"
 ---
 # <a name="crtthreadtraits-class"></a>CRTThreadTraits sınıfı
 Bu sınıf için CRT iş parçacığı oluşturma işlevi sağlar. Bu sınıf, iş parçacığı CRT işlevleri kullanacaksanız kullanın.  
@@ -48,7 +48,7 @@ class CRTThreadTraits
 |[CRTThreadTraits::CreateThread](#createthread)|(Statik) CRT işlevlerinin kullanabileceğiniz iş parçacığı oluşturmak için bu işlevi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İş parçacığı nitelikler iş parçacığı belirli bir tür için bir oluşturma işlevi sağlayan sınıflardır. Oluşturma işlevi aynı imza ve semantiğine sahip Windows [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) işlevi.  
+ İş parçacığı nitelikler iş parçacığı belirli bir tür için bir oluşturma işlevi sağlayan sınıflardır. Oluşturma işlevi aynı imza ve semantiğine sahip Windows [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) işlevi.  
   
  İş parçacığı nitelikler aşağıdaki sınıflar tarafından kullanılır:  
   
@@ -94,10 +94,10 @@ static HANDLE CreateThread(
  [out] Başarı durumunda, yeni oluşturulan iş parçacığının iş parçacığı kimliği alır, DWORD değişkenin adresidir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tanıtıcı, yeni oluşturulan iş parçacığına veya NULL'e hatası döndürür. Çağrı [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) genişletilmiş hata bilgilerini almak için.  
+ Tanıtıcı, yeni oluşturulan iş parçacığına veya NULL'e hatası döndürür. Çağrı [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) genişletilmiş hata bilgilerini almak için.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) bu işlev parametreleri hakkında daha fazla bilgi için.  
+ Bkz: [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) bu işlev parametreleri hakkında daha fazla bilgi için.  
   
  Bu işlev çağrıları [_beginthreadex](../../c-runtime-library/reference/beginthread-beginthreadex.md) iş parçacığı oluşturmak için.  
   

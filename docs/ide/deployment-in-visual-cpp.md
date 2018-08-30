@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 310f462414ce5e579ea16b40c44ce543bd74b107
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 1d7e82a384e3b2e8ca446843c91984e78754d6cc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337524"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204066"
 ---
 # <a name="deployment-in-visual-c"></a>Visual C++ üzerinde Dağıtım
 
@@ -58,7 +58,7 @@ Dinamik olarak bağlı kitaplıklarına ek olarak, Visual Studio kitaplıkların
 
 ## <a name="troubleshooting-deployment-issues"></a>Dağıtım sorunlarını giderme
 
-Visual C++ kitaplıklarının yüklenme sırasını sistem bağlıdır. Yükleyici sorunlarını tanılamak için depends.exe veya where.exe kullanın. Daha fazla bilgi için [dinamik bağlantı kitaplığı arama sırası (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
+Visual C++ kitaplıklarının yüklenme sırasını sistem bağlıdır. Yükleyici sorunlarını tanılamak için depends.exe veya where.exe kullanın. Daha fazla bilgi için [dinamik bağlantı kitaplığı arama sırası (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms682586.aspx).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

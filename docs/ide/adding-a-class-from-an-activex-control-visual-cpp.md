@@ -15,34 +15,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 793adf38da33808371a0df71f671c3e29da75326
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: b676e35dcf98ef7ae1f41e4a91922d689bd40409
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33322412"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202145"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX Denetiminden Sınıf Ekleme (Visual C++)
-Bir MFC sınıfı kullanılabilir ActiveX denetimindeki bir arabirim oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı ekleme bir [MFC uygulaması](../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimini](../mfc/reference/creating-an-mfc-activex-control.md).  
+Kullanılabilir bir ActiveX denetimi bir arabirimde bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı için ekleyebileceğiniz bir [MFC uygulaması](../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md).  
   
 > [!NOTE]
->  ActiveX denetiminden sınıf eklemek için etkin otomasyon ile MFC projesi oluşturmak gerekmez.  
+>  ActiveX denetiminden sınıf ekleme için etkinleştirilmiş Otomasyonu ile MFC projenizi oluşturmak gerekmez.  
   
- ActiveX denetimi, Bileşen Nesne Modeli (çok çeşitli OLE işlevselliğini destekleyen ve çok sayıda yazılım gereksinimlerine uyacak şekilde özelleştirilmiş COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, hem sıradan ActiveX denetimi kapsayıcıları ve World Wide Web sayfalarında Internet'te kullanımı için tasarlanmıştır.  
+ ActiveX denetimi Bileşen Nesne Modeli (çok çeşitli OLE işlevselliği destekleyen ve çok sayıda yazılım gereksinimlerini karşılayacak şekilde özelleştirilebilir COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, sıradan bir ActiveX denetim kapsayıcıları hem Internet World Wide Web sayfalarında kullanmak için tasarlanmıştır.  
   
-### <a name="to-add-an-mfc-class-from-an-activex-control"></a>ActiveX denetiminden bir MFC sınıfı ekleme  
+### <a name="to-add-an-mfc-class-from-an-activex-control"></a>ActiveX denetiminden MFC sınıfı ekleme  
   
-1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), ActiveX denetimi sınıfı eklemek istediğiniz proje adına sağ tıklayın.  
+1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), ActiveX denetim sınıfı eklemek istediğiniz proje adına sağ tıklayın.  
   
-2.  Kısayol menüsünden tıklatın **Ekle**ve ardından **sınıfı Ekle**.  
+2.  Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.  
   
-3.  İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) Şablonlar bölmesinde iletişim kutusu **MFC ActiveX denetim sınıfından**ve ardından **açık** görüntülemek için [activex'den sınıfı Ekle Denetim Sihirbazı](../ide/add-class-from-activex-control-wizard.md).  
+3.  İçinde [sınıfı Ekle](../ide/add-class-dialog-box.md) Şablonlar bölmesinde, iletişim kutusu **ActiveX denetiminden MFC sınıfı**ve ardından **açık** görüntülenecek [activex'den sınıfı Ekle Denetim Sihirbazı](../ide/add-class-from-activex-control-wizard.md).  
   
- Sihirbazda, birden fazla arabiriminde bir ActiveX denetimi ekleyebilirsiniz. Benzer şekilde, tek bir sihirbaz oturumunda birden fazla ActiveX denetiminden sınıfları oluşturabilirsiniz.  
+ Sihirbazda, birden fazla ActiveX denetimi arabiriminde ekleyebilirsiniz. Benzer şekilde, tek bir sihirbaz oturumunda birden fazla ActiveX denetiminden sınıf oluşturabilirsiniz.  
   
- ActiveX denetimlerinde sisteminizde kayıtlı sınıfları ekleyebilir veya ilk bunları sisteminizde kaydettirmeden türü kitaplık dosyalarını (.tlb, .olb, .dll, .ocx veya .exe) bulunan ActiveX denetimlerinde sınıfları ekleyebilirsiniz. Bkz: [kaydetme OLE denetimleri](../mfc/reference/registering-ole-controls.md) ActiveX denetimlerini kaydetme hakkında daha fazla bilgi.  
+ ActiveX denetimlerinde sisteminizdeki kayıtlı sınıfları ekleyebilirsiniz ya da ActiveX denetimlerinde ilk bunları sisteminizde kayıt olmadan tür kitaplığı dosyalarını (.tlb, .olb, .dll, .ocx veya .exe) içinde bulunan sınıfları ekleyebilirsiniz. Bkz: [kaydetme OLE denetimleri](../mfc/reference/registering-ole-controls.md) ActiveX denetimlerini kaydetme hakkında daha fazla bilgi.  
   
- Türetilen bir MFC Sınıf Sihirbazı'nı oluşturur [CWnd](../mfc/reference/cwnd-class.md) veya [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), seçili ActiveX denetiminden eklediğiniz her bir arabirim için.  
+ MFC sınıfından türetilen bir sihirbaz [CWnd](../mfc/reference/cwnd-class.md) veya [COleDispatchDriver](../mfc/reference/coledispatchdriver-class.md), seçilen ActiveX denetiminden eklediğiniz her arabirim için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   

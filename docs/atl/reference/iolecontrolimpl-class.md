@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34bdb0af5965b300e77a02858af3708c90fa63d0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6e3ba537568ba59c241378aeba83450db536511a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879289"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201343"
 ---
 # <a name="iolecontrolimpl-class"></a>Iolecontrolımpl sınıfı
 Bu sınıfın bir varsayılan uygulamayı sağlar `IOleControl` uygular ve arabirimi `IUnknown`.  
@@ -57,7 +57,7 @@ class IOleControlImpl
 |[IOleControlImpl::OnMnemonic](#onmnemonic)|Denetim, bir kullanıcının belirtilen bir tuş vuruşu bastığına bildirir. ATL uygulamasını E_NOTIMPL döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıf `IOleControlImpl` bir varsayılan uygulamayı sağlar [IOleControl](http://msdn.microsoft.com/library/windows/desktop/ms694320) arabirimi ve uygular `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ Sınıf `IOleControlImpl` bir varsayılan uygulamayı sağlar [IOleControl](/windows/desktop/api/ocidl/nn-ocidl-iolecontrol) arabirimi ve uygular `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -79,7 +79,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 ### <a name="remarks"></a>Açıklamalar  
  `FreezeEvents` ardından S_OK döndürür.  
   
- Bkz: [Iolecontrol::freezeevents](http://msdn.microsoft.com/library/windows/desktop/ms678482) Windows SDK içinde.  
+ Bkz: [Iolecontrol::freezeevents](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-freezeevents) Windows SDK içinde.  
   
 ##  <a name="getcontrolinfo"></a>  IOleControlImpl::GetControlInfo  
  Denetimin klavye davranışı hakkında bilgi doldurur.  
@@ -89,7 +89,7 @@ HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl:GetControlInfo](http://msdn.microsoft.com/library/windows/desktop/ms693730) Windows SDK içinde.  
+ Bkz: [IOleControl:GetControlInfo](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) Windows SDK içinde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  E_NOTIMPL döndürür.  
@@ -105,7 +105,7 @@ HRESULT OnAmbientPropertyChange(DISPID dispid);
  Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl::OnAmbientPropertyChange](http://msdn.microsoft.com/library/windows/desktop/ms690175) Windows SDK içinde.  
+ Bkz: [IOleControl::OnAmbientPropertyChange](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) Windows SDK içinde.  
   
 ##  <a name="onmnemonic"></a>  IOleControlImpl::OnMnemonic  
  Denetim, bir kullanıcının belirtilen bir tuş vuruşu bastığına bildirir.  
@@ -118,9 +118,9 @@ HRESULT OnMnemonic(LPMSG pMsg);
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleControl::OnMnemonic](http://msdn.microsoft.com/library/windows/desktop/ms680699) Windows SDK içinde.  
+ Bkz: [IOleControl::OnMnemonic](/windows/desktop/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ioleobjectımpl sınıfı](../../atl/reference/ioleobjectimpl-class.md)   
- [Arabirimleri ActiveX denetimleri](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
+ [Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

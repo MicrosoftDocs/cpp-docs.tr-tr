@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f33b6b1738e9027c88d171fc7bacc729fb507b10
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c1c75c8821a04c0270a79800e77cd4b57bf49c00
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592475"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202354"
 ---
 # <a name="strings-ccx"></a>Dizeler (C + +/ CX)
 Windows çalışma zamanı içinde metin temsil C + +/ CX tarafından [Platform::String sınıfı](../cppcx/platform-string-class.md). Kullanım `Platform::String Class` dizeleri ve geriye Windows çalışma zamanı sınıflar yöntemlere geçirdiğinizde veya uygulama ikili arabiriminde (ABI) sınırında diğer Windows çalışma zamanı bileşenleri ile etkileşim kurarken. `Platform::String Class` Dize tam özellikli bir sınıf olması için tasarlanmamış birkaç yaygın dize işlemleri ancak onun için yöntemler sağlar. C++ modülünüzde standart C++ dize türleri gibi kullanın [wstring](../standard-library/basic-string-class.md) tüm önemli metin işleme ve son sonucu için sonra dönüştürme [Platform::String ^](../cppcx/platform-string-class.md) için veya genel geçirmeden önce arabirim. Kolay ve verimli arasında dönüştürmek için `wstring` veya `wchar_t*` ve `Platform::String`.  
@@ -76,4 +76,4 @@ void GetDecodedStrings(std::vector<std::wstring> strings)
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yerleşik türler](http://msdn.microsoft.com/en-us/acc196fd-09da-4882-b554-6c94685ec75f)
+ [Yerleşik türler](https://msdn.microsoft.com/acc196fd-09da-4882-b554-6c94685ec75f)

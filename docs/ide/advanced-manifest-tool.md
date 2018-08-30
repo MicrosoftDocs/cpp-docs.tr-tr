@@ -1,5 +1,5 @@
 ---
-title: Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu | Microsoft Docs
+title: Gelişmiş, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,24 +18,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47d4dc3ab325a7346d0e787a15d69d646896827d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1b12c53f2793f7ac083ca06143be18aa6234f1de
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33326943"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201590"
 ---
-# <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Bildirim aracı, yapılandırma özellikleri, Gelişmiş &lt;Projectname&gt; özellik sayfaları iletişim kutusu
-Gelişmiş seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+# <a name="advanced-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Gelişmiş, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
+Gelişmiş seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
- Bu özellik sayfası iletişim kutusu erişmek için özellik sayfaları projenizi veya özellik sayfasını açın. Genişletme **bildirim aracı** düğümü altında **yapılandırma özellikleri**ve ardından **Gelişmiş**.  
+ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sayfası için özellik sayfalarını açın. Genişletin **bildirim aracında** düğümünde **yapılandırma özellikleri**ve ardından **Gelişmiş**.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Dosya karmalarını güncelleştir**  
- Bildirim aracı belirtilen dosya karması işlem belirtmek için /hashupdate seçeneğini kullanan `<file>` öğeleri ve karma öznitelikleri hesaplanan değerle sonra güncelleştirme.  
+ **Dosya karmalarını güncelle**  
+ Bildirim aracı tarafından belirtilen dosya karması bilgi işlem olduğunu belirtmek için /hashupdate seçeneğini kullanan `<file>` öğeleri ve karma öznitelikleri hesaplanan değerle güncelleştirin.  
   
- **Güncelleştirme dosyası karmaları arama yolu**  
- İçinde başvurulan dosyalar için arama yolu belirtir `<file>` öğeleri. Bu seçenek ayrıca /hashupdate seçeneğini kullanır.  
+ **Dosya karması arama yolunu güncelle**  
+ İçinde başvurulan dosyaları için arama yolunu belirtir `<file>` öğeleri. Bu seçenek ayrıca /hashupdate seçeneğini kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [\<Dosya > öğesi](/visualstudio/deployment/file-element-clickonce-application)   

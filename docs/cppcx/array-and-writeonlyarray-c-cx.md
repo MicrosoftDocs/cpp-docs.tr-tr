@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adad70bfa069a43382c06f60dea53bc2e53ff187
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8b90e1f40a4de3331dfb712d8dd0f113df5e9f9e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606118"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203758"
 ---
 # <a name="array-and-writeonlyarray-ccx"></a>Dizi ve WriteOnlyArray (C + +/ CX)
 Normal C stili diziler serbestçe kullanabilirsiniz veya [std::array](../standard-library/array-class-stl.md) C + +/ CX programı (ancak [std::vector](../standard-library/vector-class.md) genellikle daha iyi bir seçimdir), ancak meta verilerinde de yayımlanmaktadır herhangi API'SİNDE, bir C tarzı dizi dönüştürmeniz gerekir ya için vektör bir [Platform::Array](../cppcx/platform-array-class.md) veya [Platform::WriteOnlyArray](../cppcx/platform-writeonlyarray-class.md) nasıl kullanıldığını bağlı olarak tür. [Platform::Array](../cppcx/platform-array-class.md) türüdür kadar verimli ne kadar güçlü [std::vector](../standard-library/vector-class.md), genel bir kural olarak dizi işlemleri çok sayıda gerçekleştirir, iç kod kullanımını kaçınmalısınız. öğeleri.  
@@ -82,12 +82,12 @@ Normal C stili diziler serbestçe kullanabilirsiniz veya [std::array](../standar
 ## <a name="use-arrayreference-to-avoid-copying-data"></a>Veri kopyalama önlemek için ArrayReference kullanın  
  Burada veri geçirilen ABI arasında bazı senaryolarda bir [Platform::Array](../cppcx/platform-array-class.md)ve sonuçta bu verimlilik için bir C tarzı dizi verilerini işlemek istiyorsanız, kullanabileceğiniz [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) Ek kopyalama işlemi önlemek için. Gönderdiğinizde bir [Platform::ArrayReference](../cppcx/platform-arrayreference-class.md) bağımsız değişken alan bir parametre olarak bir `Platform::Array`, `ArrayReference` verilerin belirttiğiniz doğrudan bir C tarzı dizi içine depolar. Yalnızca unutmayın, `ArrayReference` kilit kaynak veri serileştirilmesini, verileri değiştiren veya çağrı tamamlanmadan önce başka bir iş parçacığında silindi, sonuçlar tanımsız olup olmayacağını.  
   
- Aşağıdaki kod parçacığı, sonuçları kopyalamak gösterilmiştir bir [DataReader](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) işlemi bir `Platform::Array` (normal desenin) ve ardından yerine nasıl `ArrayReference` verileri doğrudan C stili diziye kopyalamak için:  
+ Aşağıdaki kod parçacığı, sonuçları kopyalamak gösterilmiştir bir [DataReader](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.datareader.aspx) işlemi bir `Platform::Array` (normal desenin) ve ardından yerine nasıl `ArrayReference` verileri doğrudan C stili diziye kopyalamak için:  
   
  [!code-cpp[cx_arrays#07](../cppcx/codesnippet/CPP/js-array/class1.h#07)]  
   
 ## <a name="avoid-exposing-an-array-as-a-property"></a>Bir dizi özellik olarak kullanıma sunma kaçının  
- Genel olarak kullanıma sunma kaçınmalısınız bir `Platform::Array` türü bir başvuru sınıfının bir özellik olarak bile istemci kodunu yalnızca tek bir öğeye erişmeye çalıştığı sırada tüm dizi döndürdüğünden. Sıralı kapsayıcı ortak başvuru sınıfı, bir özellik olarak kullanıma sunmak ihtiyaç duyduğunuzda [Windows::Foundation::IVector](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) daha iyi bir seçimdir. (Bu meta verileri yayımlanmayan) API'leri, özel veya iç gibi standart bir C++ kapsayıcı kullanmayı düşünün [std::vector](../standard-library/vector-class.md).  
+ Genel olarak kullanıma sunma kaçınmalısınız bir `Platform::Array` türü bir başvuru sınıfının bir özellik olarak bile istemci kodunu yalnızca tek bir öğeye erişmeye çalıştığı sırada tüm dizi döndürdüğünden. Sıralı kapsayıcı ortak başvuru sınıfı, bir özellik olarak kullanıma sunmak ihtiyaç duyduğunuzda [Windows::Foundation::IVector](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) daha iyi bir seçimdir. (Bu meta verileri yayımlanmayan) API'leri, özel veya iç gibi standart bir C++ kapsayıcı kullanmayı düşünün [std::vector](../standard-library/vector-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür sistemi](../cppcx/type-system-c-cx.md)   

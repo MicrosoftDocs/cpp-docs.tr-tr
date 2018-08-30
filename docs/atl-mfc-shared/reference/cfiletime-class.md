@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a1e7abe1fbbf3667999852dd1810a8a337cac79
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 3ab0e457f90f3130295d287ae9a32d18ab212d50
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208669"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202609"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
 Bu sınıf, bir dosya ile ilişkilendirilmiş tarih ve saat değerlerini yönetmek için yöntemler sağlar.  
@@ -107,7 +107,7 @@ class CFileTime :  public FILETIME
 |Gün|Saat \* 24|  
 |Hafta|Gün \* 7|  
   
- **Not** tüm dosya sistemleri oluşturma kaydedebilir ve son erişim zamanı ve tüm dosya sistemleri kayıt bunları aynı şekilde. Örneğin, Windows NT FAT dosya sistemi oluşturmak için süresi 10 milisaniyeden çözünürlüğü var, yazma süresi 2 saniyelik bir çözüm olan ve erişim süresi 1 gün (erişim tarihi), bir çözüm olan. 1 saatlik bir çözüm, NTFS erişim zamanı var. Ayrıca, FAT defa diskte yerel saatle kaydeder, ancak NTFS disk saatleri UTC biçiminde kaydeder. Daha fazla bilgi için [dosya zamanlarını](http://msdn.microsoft.com/library/windows/desktop/ms724290).  
+ **Not** tüm dosya sistemleri oluşturma kaydedebilir ve son erişim zamanı ve tüm dosya sistemleri kayıt bunları aynı şekilde. Örneğin, Windows NT FAT dosya sistemi oluşturmak için süresi 10 milisaniyeden çözünürlüğü var, yazma süresi 2 saniyelik bir çözüm olan ve erişim süresi 1 gün (erişim tarihi), bir çözüm olan. 1 saatlik bir çözüm, NTFS erişim zamanı var. Ayrıca, FAT defa diskte yerel saatle kaydeder, ancak NTFS disk saatleri UTC biçiminde kaydeder. Daha fazla bilgi için [dosya zamanlarını](/windows/desktop/SysInfo/file-times).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `FILETIME`  
@@ -128,7 +128,7 @@ CFileTime(ULONGLONG nTime) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *ft*  
- A [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı.  
+ A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı.  
   
  *nZaman*  
  Tarih ve saat 64-bit bir değer ifade edilir.  
@@ -418,7 +418,7 @@ static const ULONGLONG Week = Day* 7;
  Örneğin bakın [CFileTime::Millisecond](#millisecond).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284)   
+ [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
  [CFileTimeSpan sınıfı](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
  [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b75016c6c783ae19d8e0f6739adaa34b8da977db
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ed0603482ffccf1bcb827d67b174768cfd3e3168
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338443"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196803"
 ---
 # <a name="clongbinary-class"></a>CLongBinary sınıfı
 Veritabanındaki (genellikle BLOB veya "büyük ikili nesneler" olarak adlandırılır) çok büyük ikili veri nesnelerle çalışmayı kolaylaştırır.  
@@ -86,7 +86,7 @@ SQLULEN m_dwDataLength;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu büyüklükteki veriler için ayrılan bellek blok boyutundan daha küçük olabilir. Win32 çağrı [GLobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593) ayrılmış boyutunu almak için işlevi.  
+ Bu büyüklükteki veriler için ayrılan bellek blok boyutundan daha küçük olabilir. Win32 çağrı [GLobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize) ayrılmış boyutunu almak için işlevi.  
   
 ##  <a name="m_hdata"></a>  CLongBinary::m_hData  
  Windows HGLOBAL işleyici gerçek ikili büyük nesne verilerini depolar.  

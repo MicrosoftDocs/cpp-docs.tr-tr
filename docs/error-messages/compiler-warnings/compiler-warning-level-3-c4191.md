@@ -16,35 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 892bf76a8480e573a71e768fbe24778e7e66f88b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c3b0198971064bec114e4665a499e070ddb61501
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291498"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197504"
 ---
 # <a name="compiler-warning-level-3-c4191"></a>Derleyici Uyarısı (Düzey 3) C4191
-'işlem başına işleci': 'gerekli türüne' 'türünden ifadesinin' güvensiz dönüştürme  
+' operator/operation': 'type of expression' öğesinden 'type required' güvenli olmayan dönüştürme  
   
- İşlev işaretçileri ilgili çeşitli işlemler güvenli olmadığı kabul edilir:  
+ İşlev işaretçileri içeren çeşitli işlemleri güvenli olarak değerlendirilir:  
   
--   Farklı çağırma kurallarını türleriyle işlevi.  
+-   İşlev türleri farklı çağırma kurallarına sahip.  
   
--   Farklı işlev türleriyle kuralları döndür.  
+-   İşlev türleri farklı olan dönüş kuralları.  
   
--   Bağımsız değişken veya return türleriyle farklı boyutlarda, türü kategorilerini ve sınıflandırmalarını.  
+-   Bağımsız değişken veya return türlerinin farklı boyutlarda, türü kategorilerini ve sınıflandırmalarını ile.  
   
--   Farklı bağımsız değişken listesi uzunlukları (üzerinde `__cdecl`, yalnızca daha kısa listesi, hatta daha uzun listeden dönüştürme daha kısa ise varargs).  
+-   Farklı bağımsız değişken listesi uzunlukları (üzerinde `__cdecl`, yalnızca kısa listesi, hatta daha uzun listeden dönüştürme kısa ise varargs).  
   
--   Veri işaretçisine (dışında **void\***) takma adlı bir işlev işaretçisi karşı.  
+-   Veri işaretçisine (dışında **void**<strong>\*</strong>) diğer adlı karşı işlevi işaretçisi.  
   
--   Üzerinde bir hata veya uyarı verecek herhangi bir tür fark bir `reinterpret_cast`.  
+-   Üzerinde bir hata veya uyarı verir herhangi bir türü fark bir `reinterpret_cast`.  
   
- Sonuç işaretçi aracılığıyla bu işlev çağırma programınızı çökmesine neden olabilir.  
+ İşaretçi aracılığıyla bu işlevi çağırmak, programın çökmesine neden olabilir.  
   
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
+ Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
   
- Aşağıdaki örnek C4191 oluşturur:  
+ Aşağıdaki örnek, C4191 oluşturur:  
   
 ```  
 // C4191.cpp  

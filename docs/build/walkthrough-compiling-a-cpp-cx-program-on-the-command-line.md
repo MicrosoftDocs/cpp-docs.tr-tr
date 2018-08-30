@@ -12,15 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b67d30ce301ec1a0b8952b780f52a5627e90df38
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bc4e6dbf3023256a6a0db556c02e08453bb1a730
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466007"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194281"
 ---
 # <a name="walkthrough-compiling-a-ccx-program-on-the-command-line"></a>İzlenecek Yol: Komut Satırında C++/CX Programı Derleme
-Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C + +/ CX için evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [bir tur, c + +/ CX](http://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  
+Windows çalışma zamanını hedefleyen ve onları komut satırında derleme Visual C++ programlar oluşturabilirsiniz. Visual C++, Visual C++ bileşen uzantıları destekler (C + +/ CX), Windows çalışma zamanı programlama modeli hedeflemek için ek türleri ve işleçler sahip. Kullanabileceğiniz C + +/ CX için evrensel Windows Platformu (UWP), Windows Phone 8.1 ve Windows Masaüstü uygulamaları oluşturmak için. Daha fazla bilgi için [bir tur, c + +/ CX](https://msdn.microsoft.com/magazine/dn166929.aspx) ve [çalışma zamanı platformları için bileşen uzantıları](../windows/component-extensions-for-runtime-platforms.md).  
   
  Bu kılavuzda, temel C + oluşturmak için bir metin düzenleyicisi kullanın +/ CX programı ve sonra komut satırında derleyin. (Kullanabileceğiniz kendi C + +/ CX programı gösterilen bir yazmak yerine veya kullanabileceğiniz bir C + +/ CX kod örneğini başka bir Yardım makalesi. Bu teknik oluşturmak ve UI öğesi içermeyen içeren küçük modülleri test etmek için kullanışlıdır.)  
   

@@ -16,27 +16,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18d54d22106742cab8d1cdfe9c32adc0a98fb41b
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 4919d9fd947a489ee9535abd5aa57d7861ba5a37
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929549"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198000"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
-Liste denetimi penceresi stilini değiştirebilirsiniz ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Pencere stili değiştirerek ekleyeceğini görünüm türünü değiştirin. Örneğin, Explorer benzetmek için menü öğeleri veya denetimleri farklı görünümleri arasında geçiş için araç çubuğu düğmeleri sağlayabilir: simge görünümü, liste görünümü ve benzeri.  
+Liste denetimi penceresi stilini değiştirebileceğinize ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Styl okna değiştirerek denetimi kullanan bir görünüm türünü değiştirin. Örneğin, Gezgin benzetmek için menü öğesi ya da araç çubuğu düğmeleri, denetimleri farklı görünümler arasında geçiş için sağladığınız: simge görünümünde, liste görünümü ve benzeri.  
   
- Örneğin, bir çağrı yapmak kullanıcı menü öğesine seçtiğinde [GetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633584) denetimi geçerli stilini alır ve ardından çağırmak için [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) stili sıfırlanır. Daha fazla bilgi için bkz: [liste görünümü denetimleri kullanarak](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows SDK.  
+ Örneğin, çağrı yapmak kullanıcı, menü öğesi seçtiğinde [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) geçerli bir denetimin stilini alır ve ardından çağırmak için [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) stili sıfırlanır. Daha fazla bilgi için [liste görünümü denetimi kullanarak](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
   
- Kullanılabilir stiller içinde listelenen [oluşturma](../mfc/reference/clistctrl-class.md#create). Stilleri **LVS_ICON**, **LVS_SMALLICON**, **LVS_LIST**, ve **LVS_REPORT** dört liste denetim görünümleri belirleyin.  
+ Kullanılabilir stiller içinde listelenen [Oluştur](../mfc/reference/clistctrl-class.md#create). Stilleri **LVS_ICON**, **komutu etkinleştir**, **LVS_LIST**, ve **LVS_REPORT** dört liste denetimi görünümleri belirleyin.  
   
-## <a name="extended-styles"></a>Genişletilmiş stilleri  
- Liste denetimi için standart stiller yanı sıra Genişletilmiş Stil olarak başvurulan başka bir grubu yok. İçinde açıklanan bu stiller [Genişletilmiş liste görünümü stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774732) Windows SDK'ın çeşitli liste denetiminiz davranışını özelleştiren kullanışlı özellikler sağlar. Belirli bir stil (örneğin, vurgulu seçimi) davranışını uygulamak için çağırmaya [CListCtrl::SetExtendedStyle](../mfc/reference/clistctrl-class.md#setextendedstyle), gerekli stili geçirme. Aşağıdaki örnek, işlev çağrısı gösterir:  
+## <a name="extended-styles"></a>Genişletilmiş stiller  
+ Bir list denetimi için standart stilleri yanı sıra başka bir kümesi, Genişletilmiş Stil olarak başvurulan yoktur. Makalesinde ele alındığı bu stiller, [Genişletilmiş liste görünümü stillerini](/windows/desktop/Controls/extended-list-view-styles) Windows SDK'da çeşitli listesi davranışını özelleştiren yararlı özellikleri sağlar. Davranışı (gelindiğinde seçimi gibi) belirli bir stil uygulamak için çağrı yapmak [CListCtrl::SetExtendedStyle](../mfc/reference/clistctrl-class.md#setextendedstyle), gerekli stil geçirme. Aşağıdaki örnek, işlev çağrısı göstermektedir:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#22](../mfc/codesnippet/cpp/changing-list-control-styles_1.cpp)]  
   
 > [!NOTE]
->  Vurgulu seçimi çalışmak de ya da olmalıdır **LVS_EX_ONECLICKACTIVATE** veya **LVS_EX_TWOCLICKACTIVATE** açık.  
+>  Üzerine gelindiğinde kullanılacak seçim çalışmak de sahip olmanız gerekir **LVS_EX_ONECLICKACTIVATE** veya **LVS_EX_TWOCLICKACTIVATE** açık.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   

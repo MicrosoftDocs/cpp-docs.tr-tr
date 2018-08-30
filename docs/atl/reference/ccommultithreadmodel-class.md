@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb6a75fe2d973b0330c66faaae6c4daede224c5e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 25c9e21aa4b0f09db83632973d3a5046e3e2aa4a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880511"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206126"
 ---
 # <a name="ccommultithreadmodel-class"></a>CComMultiThreadModel sınıfı
 `CComMultiThreadModel` iş parçacığı açısından güvenli yöntemleri artırma ve azaltma için bir değişkenin değerini sağlar.  
@@ -158,7 +158,7 @@ typedef CComCriticalSection CriticalSection;
  Bkz: [CComMultiThreadModel::AutoCriticalSection](#autocriticalsection).  
   
 ##  <a name="decrement"></a>  CComMultiThreadModel::Decrement  
- Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](http://msdn.microsoft.com/library/windows/desktop/ms683580), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.  
+ Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.  
   
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw ();
@@ -175,7 +175,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw ();
  `InterlockedDecrement` birden fazla iş parçacığı, bu değişken aynı anda kullanmasını önler.  
   
 ##  <a name="increment"></a>  CComMultiThreadModel::Increment  
- Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](http://msdn.microsoft.com/library/windows/desktop/ms683614), işaret ettiği değişken değerini artırır *p*.  
+ Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), işaret ettiği değişken değerini artırır *p*.  
   
 ```
 static ULONG WINAPI Increment(LPLONG p) throw ();

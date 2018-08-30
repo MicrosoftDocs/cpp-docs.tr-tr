@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d58fc816bea6672309e60a09528b0727c64c6fd
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 866d556c06cc7f627c2f5108384704b737eb0330
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880030"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205218"
 ---
 # <a name="ccomclassfactory-class"></a>CComClassFactory sınıfı
-Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
+Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,7 +47,7 @@ class CComClassFactory
 |[CComClassFactory::LockServer](#lockserver)|Sınıf üreteci bellekte kilitler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
+ `CComClassFactory` uygulayan [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
   
  ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Bu varsayılanı geçersiz kılmak için aşağıdakilerden birini belirtin `DECLARE_CLASSFACTORY` *XXX* sınıf tanımına makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](aggregation-and-class-factory-macros.md#declare_classfactory_ex) makrosu belirtilen sınıfı için sınıf üreteci kullanır:  
   

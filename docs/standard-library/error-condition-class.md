@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7305ff80c50c65e4b03a9879d39960e8c47786df
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 869eba484a5ffa4e9c57c9c65a9b74e0962114e3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027345"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204046"
 ---
 # <a name="errorcondition-class"></a>error_condition Sınıfı
 
@@ -157,7 +157,7 @@ error_condition(_Enum _Errcode,
 
 İlk Oluşturucu sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-İkinci oluşturucu depoları *val* hata kodu değeri ve bir işaretçi olarak [error_category](http://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
+İkinci oluşturucu depoları *val* hata kodu değeri ve bir işaretçi olarak [error_category](https://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
 
 Üçüncü Oluşturucu depoları `(value_type)_Errcode` hata kodu değeri ve bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category).
 

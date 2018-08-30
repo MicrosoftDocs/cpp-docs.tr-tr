@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b79700277486c43035bd7d448fc942f785f4cc8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ab1d229f2c1933025993aa1bc3a3a8b91b41a2cc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959946"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195821"
 ---
 # <a name="output-file-stream-member-functions"></a>Çıkış Dosya Akışı Üye İşlevleri
 
@@ -96,7 +96,7 @@ int main( )
 }
 ```
 
-`write` İşlevi değil Durdur tam sınıf yapısı yazıldığı şekilde bir null karakteri ulaştığında. İşlev iki bağımsız değişkeni alır: bir **char** işaretçi ve yazılacak karakter sayısı. Gerekli dönüştürme Not **char\***  yapısı nesnenin adresi önce.
+`write` İşlevi değil Durdur tam sınıf yapısı yazıldığı şekilde bir null karakteri ulaştığında. İşlev iki bağımsız değişkeni alır: bir **char** işaretçi ve yazılacak karakter sayısı. Gerekli dönüştürme Not **char** <strong>\*</strong> yapısı nesnenin adresi önce.
 
 ## <a name="the-seekp-and-tellp-functions"></a>Seekp ve tellp işlevleri
 
@@ -114,12 +114,12 @@ Bu üye işlevleri, bir akışa yazılırken hataları test etmek için kullanı
 
 |İşlev|Dönüş değeri|
 |--------------|------------------|
-|[hatalı](http://msdn.microsoft.com/Library/4038d331-e9c9-48b0-bf49-c6505744469c)|Döndürür **true** kurtarılamaz bir hata varsa.|
-|[Başarısız](http://msdn.microsoft.com/Library/619f1b36-1e72-4551-8b48-888ae4e370d2)|Döndürür **true** kurtarılamaz bir hata veya bir dönüştürme hatası gibi "beklenen" bir koşul ise veya dosya bulunamadı. İşleme genellikle çağrısı yapıldıktan sonra devam `clear` bir sıfır bağımsız değişken.|
-|[iyi](http://msdn.microsoft.com/Library/77f0aa17-2ae1-48ae-8040-592d301e3972)|Döndürür **true** (kurtarılamaz veya diğer) hiçbir hata koşulu ve dosya sonu bayrağı ayarlı değil.|
-|[eof](http://msdn.microsoft.com/Library/3087f631-1268-49cd-86cf-ff4108862329)|Döndürür **true** dosya sonu koşulu üzerinde.|
-|[Temizle](http://msdn.microsoft.com/Library/dc172694-1267-45f8-8f5c-e822e16fc271)|İç hata durumunu ayarlar. Varsayılan bağımsız değişkenleri ile çağırdıysanız, tüm hata BITS temizler.|
-|[rdstate](http://msdn.microsoft.com/Library/e235e4e2-7e95-4777-a160-3938d263dd9c)|Geçerli hata durumuna döndürür.|
+|[hatalı](basic-ios-class.md#bad)|Döndürür **true** kurtarılamaz bir hata varsa.|
+|[Başarısız](basic-ios-class.md#fail)|Döndürür **true** kurtarılamaz bir hata veya bir dönüştürme hatası gibi "beklenen" bir koşul ise veya dosya bulunamadı. İşleme genellikle çağrısı yapıldıktan sonra devam `clear` bir sıfır bağımsız değişken.|
+|[iyi](basic-ios-class.md#good)|Döndürür **true** (kurtarılamaz veya diğer) hiçbir hata koşulu ve dosya sonu bayrağı ayarlı değil.|
+|[eof](basic-ios-class.md#eof)|Döndürür **true** dosya sonu koşulu üzerinde.|
+|[Temizle](basic-ios-class.md#clear)|İç hata durumunu ayarlar. Varsayılan bağımsız değişkenleri ile çağırdıysanız, tüm hata BITS temizler.|
+|[rdstate] (temel-ios-class.md #rdstate|Geçerli hata durumuna döndürür.|
 
 **!** aynı işlevi gerçekleştirmek için işleci aşırı `fail` işlevi. Bu nedenle ifade:
 

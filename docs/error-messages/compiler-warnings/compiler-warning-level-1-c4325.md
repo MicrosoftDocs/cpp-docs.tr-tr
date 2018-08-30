@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4325 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,46 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 936433987f823ae7d5d22cfd075f188dd5d4b1e4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd265938afb51cc402dc84f38b7e95188c6292a7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277650"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197491"
 ---
 # <a name="compiler-warning-level-1-c4325"></a>Derleyici Uyarısı (düzey 1) C4325
-**Standart bölümü için öznitelikler '**   
- ***bölüm* ' yoksayıldı**  
-  
- Standart bir bölüm özniteliklerini değiştiremeyebilir. Örneğin:  
-  
-```  
-#pragma section(".sdata", long)  
-```  
-  
- Bu üzerine `.sdata` kullanan standart bölüm **kısa** veri türü ile **uzun** veri türü.  
-  
- Öznitelikleri değil değişebilir standart bölümler, kapsar.  
-  
--   .Data  
-  
--   .sdata  
-  
--   .BSS  
-  
--   .sbss  
-  
--   .Text  
-  
--   .const  
-  
--   .sconst  
-  
--   .rdata  
-  
--   .srdata  
-  
- Daha sonra ek bölümler eklenebilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [section](../../preprocessor/section.md)
+
+> Standart bölümün öznitelikleri '*bölüm*' yoksayıldı
+
+## <a name="remarks"></a>Açıklamalar
+
+Standart bir bölümün özniteliklerini değiştiremezsiniz. Örneğin:
+
+```cpp
+#pragma section(".sdata", long)
+```
+
+Bunun üzerine yazacak `.sdata` kullanan standart bölüm **kısa** veri türü ile **uzun** veri türü.
+
+Öznitelikleri değil değişebilir standart bölümler dahil,
+
+- .Data
+
+- .sdata
+
+- .BSS
+
+- .sbss
+
+- .Text
+
+- .const
+
+- .sconst
+
+- .rdata
+
+- .srdata
+
+Ek olarak bölümlerde daha sonra eklenebilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[section](../../preprocessor/section.md)

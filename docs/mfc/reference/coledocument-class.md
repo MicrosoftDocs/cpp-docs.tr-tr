@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb66d7435331124b4455c476c10986931b4c6e1d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 95eea7434fdaa12a6178ebd9648e8088b24b4dc8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205954"
 ---
 # <a name="coledocument-class"></a>COleDocument sınıfı
 Görsel düzenlemeyi destekleyen OLE belgeleri için taban sınıf.  
@@ -176,11 +176,11 @@ BOOL ApplyPrintDevice(const PRINTDLG* ppd);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev tüm öğeler için Hedefi Yazdır cihaz güncelleştirir, ancak bu öğeler için sunu önbellek yenilemez. Bir öğe için sunu önbelleği güncelleştirmek için çağrı [COleClientItem::UpdateLink](../../mfc/reference/coleclientitem-class.md#updatelink).  
   
- Bu işlev bağımsız değişkenleri OLE hedef cihazı tanımlamak için kullandığı bilgileri içerir. [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) yapısı Windows ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusu kapatıldıktan sonra Windows bu yapıda kullanıcının seçimler hakkındaki bilgileri döndürür. `m_pd` Üyesi bir [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesi bir `PRINTDLG` yapısı.  
+ Bu işlev bağımsız değişkenleri OLE hedef cihazı tanımlamak için kullandığı bilgileri içerir. [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) yapısı Windows ortak Yazdır iletişim kutusunu başlatmak için kullandığı bilgileri içerir. Kullanıcı iletişim kutusu kapatıldıktan sonra Windows bu yapıda kullanıcının seçimler hakkındaki bilgileri döndürür. `m_pd` Üyesi bir [CPrintDialog](../../mfc/reference/cprintdialog-class.md) nesnesi bir `PRINTDLG` yapısı.  
   
- Daha fazla bilgi için [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) Windows SDK'sındaki yapısı.  
   
- Daha fazla bilgi için [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) Windows SDK'sındaki yapısı.  
   
 ##  <a name="coledocument"></a>  COleDocument::COleDocument  
  Oluşturur bir `COleDocument` nesne.  

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e63a464b68267c8202cdf47717fd1cd81db639c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: cb0b50170de0ba5a5c38c1850369092d8453445a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884050"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203206"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 Bu sınıf ana bilgisayar adları hem IPv4 hem de IPv6 biçimlerini destekleyen konak adreslere dönüştürme yöntemleri sağlar.  
@@ -60,7 +60,7 @@ class CSocketAddr
 ## <a name="remarks"></a>Açıklamalar  
  Bu sınıf Windows ile kullanmak için ağ adresleri bakmak için belirsiz yaklaşım API işlevleri ve kitaplıklarında yuva sarmalayıcılar yuva IP sürümü sağlar.  
   
- Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevi kullanmanız [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520).  
+ Ağ adreslerini aramak için kullanılan bu sınıfın üyeleri Win32 API işlevi kullanmanız [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo).  
   
  Bu sınıf, her iki IPv4 andIPv6 ağ adreslerini destekler.  
   
@@ -124,7 +124,7 @@ int FindAddr(
  Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Konak adı parametresi IPv4 veya IPv6 biçiminde olabilir. Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Konak adı parametresi IPv4 veya IPv6 biçiminde olabilir. Bu yöntem Win32 API işlevini çağırır [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="findinet4addr"></a>  CSocketAddr::FindINET4Addr  
  IPv4 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.  
@@ -154,7 +154,7 @@ int FindINET4Addr(
  Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Bu yöntem Win32 API işlevini çağırır [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="findinet6addr"></a>  CSocketAddr::FindINET6Addr  
  IPv6 ana bilgisayar adı konak adresine dönüştürmek için bu yöntemi çağırın.  
@@ -184,7 +184,7 @@ int FindINET6Addr(
  Adres başarıyla hesaplanıp hesaplanmayacağını sıfır döndürür. Sıfır olmayan bir Windows yuva hata kodu hatası döndürür. Başarılı, hesaplanan adres kullanılarak başvurulabilir bağlantılı listesinde depolanıyorsa `CSocketAddr::GetAddrInfoList` ve `CSocketAddr::GetAddrInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem Win32 API işlevini çağırır [getaddrinfo](http://msdn.microsoft.com/library/windows/desktop/ms738520) dönüştürme gerçekleştirmek için.  
+ Bu yöntem Win32 API işlevini çağırır [getaddrinfo](/windows/desktop/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) dönüştürme gerçekleştirmek için.  
   
 ##  <a name="getaddrinfo"></a>  CSocketAddr::GetAddrInfo  
  Belirli bir öğeye bir işaretçiyi döndürmek için bu yöntemi çağıran `addrinfo` listesi.  
@@ -195,7 +195,7 @@ addrinfo* const GetAddrInfoint nIndex = 0) const;
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Belirli bir öğeye bir başvuru [addrinfo](http://msdn.microsoft.com/library/windows/desktop/ms737530) listesi.  
+ Belirli bir öğeye bir başvuru [addrinfo](https://msdn.microsoft.com/library/windows/desktop/ms737530) listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi döndürür `addrinfo` yapısı tarafından başvurulan *nIndex* konak yanıt bilgilerini içeren bağlantılı listesinde.  

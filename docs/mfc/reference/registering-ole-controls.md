@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 468eb677a0073e25c9ef33182aea0d321cded352
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4855ca5c461b7437345150f5d199521c48f0b253
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335629"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196559"
 ---
 # <a name="registering-ole-controls"></a>OLE Denetimlerini Kaydetme
 OLE denetimleri, diğer OLE server nesneleri gibi OLE kullanan diğer uygulamalar tarafından erişilebilir. Bu, denetimin tür kitaplığı ve sınıf kaydederek sağlanır.  
@@ -83,7 +83,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
   
 - `afxRegFreeThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar ücretsiz =.  
   
-     İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.  
+     İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.  
   
 > [!NOTE]
 >  MFC 4.2 önce MFC sürümlerinde **int** *nRegFlags* parametresi olan bir Boole parametresi *bInsertable*, izin verilen veya izin verilmeyen INSERT eklenecek denetimin Nesne iletişim kutusu.  
@@ -142,7 +142,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
  Denetim sınıfı kaydedildiği olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu denetimi kullanan OLE kapsayıcıları tarafından kullanılmak üzere denetim sağlar. `AfxOleRegisterControlClass` denetimin adı ve konumu sistem üzerindeki kayıt defterini güncelleştirir ve ayrıca kayıt defterinde denetimini destekleyen iş parçacığı modelini ayarlar. Daha fazla bilgi için [Teknik Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartman modeli iş parçacığı içinde OLE denetimleri," ve [ilgili işlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms681917) Windows SDK.  
+ Bu denetimi kullanan OLE kapsayıcıları tarafından kullanılmak üzere denetim sağlar. `AfxOleRegisterControlClass` denetimin adı ve konumu sistem üzerindeki kayıt defterini güncelleştirir ve ayrıca kayıt defterinde denetimini destekleyen iş parçacığı modelini ayarlar. Daha fazla bilgi için [Teknik Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartman modeli iş parçacığı içinde OLE denetimleri," ve [ilgili işlemler ve iş parçacıkları](/windows/desktop/ProcThread/about-processes-and-threads) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCAxCtl#11](../../mfc/reference/codesnippet/cpp/registering-ole-controls_1.cpp)]  
@@ -189,7 +189,7 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
  Denetim sınıfı kaydedildiği olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu özellik sayfası denetimi kullanan OLE kapsayıcıları tarafından kullanılacak sağlar. `AfxOleRegisterPropertyPageClass` özellik sayfası adını ve konumunu sistem üzerindeki kayıt defterini güncelleştirir ve ayrıca kayıt defterinde denetimini destekleyen iş parçacığı modelini ayarlar. Daha fazla bilgi için [Teknik Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartman modeli iş parçacığı içinde OLE denetimleri," ve [ilgili işlemler ve iş parçacıkları](http://msdn.microsoft.com/library/windows/desktop/ms681917) Windows SDK.  
+ Bu özellik sayfası denetimi kullanan OLE kapsayıcıları tarafından kullanılacak sağlar. `AfxOleRegisterPropertyPageClass` özellik sayfası adını ve konumunu sistem üzerindeki kayıt defterini güncelleştirir ve ayrıca kayıt defterinde denetimini destekleyen iş parçacığı modelini ayarlar. Daha fazla bilgi için [Teknik Not 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), "Apartman modeli iş parçacığı içinde OLE denetimleri," ve [ilgili işlemler ve iş parçacıkları](/windows/desktop/ProcThread/about-processes-and-threads) Windows SDK.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üst bilgi** afxctl.h  

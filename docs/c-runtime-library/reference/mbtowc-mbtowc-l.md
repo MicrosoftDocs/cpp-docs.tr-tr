@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eeba73be12fdf8e068800d192cef7df9462aa4fe
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b6600706690dea3573f8eb1aa47f68b592b3bff1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402793"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200313"
 ---
 # <a name="mbtowc-mbtowcl"></a>mbtowc, _mbtowc_l
 
-Birden çok baytlı karakter karşılık gelen bir geniş karakter dönüştürün.
+Çok baytlı karakteri karşılık gelen bir geniş karakter dönüştürün.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -65,10 +65,10 @@ int _mbtowc_l(
 ### <a name="parameters"></a>Parametreler
 
 *wchar*<br/>
-Geniş karakter adresini (tür **wchar_t**).
+Bir geniş karakter adresini (tür **wchar_t**).
 
 *mbchar*<br/>
-Adresi, bir dizi bayt (birden çok baytlı karakter).
+Bayt (bir çok baytlı karakter) sırasını adresi.
 
 *Sayısı*<br/>
 Denetlenecek bayt sayısı.
@@ -78,11 +78,11 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **mbchar** değil **NULL** ve nesne, *mbchar* formları için geçerli bir birden çok baytlı karakter işaret **mbtowc** uzunluğunu döndürür birden çok baytlı karakter bayt sayısı. Varsa *mbchar* olan **NULL** veya işaret nesnesi bir joker karakter null karakter (M '\0'), işlevi 0 değerini döndürür. Nesne, *mbchar* noktalarına ilk içinde geçerli bir birden çok baytlı karakter form değil *sayısı* karakteri -1 döndürür.
+Varsa **mbchar** değil **NULL** ve nesne, *mbchar* formları için geçerli bir çok baytlı karakter işaret **mbtowc** uzunluğunu döndürür çok baytlı karakterinin bayt. Varsa *mbchar* olduğu **NULL** veya işaret nesnesi geniş karakterli null karakteri (L '\0'), işlev 0 döndürür. Nesne, *mbchar* noktalarına geçerli çok baytlı bir karakterin ilk form değil *sayısı* karakterler, -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbtowc** işlev dönüştürür *sayısı* veya daha az sayıda bayt gösterdiği *mbchar*, *mbchar* değil **NULL**, karşılık gelen bir geniş karakter. **mbtowc** elde edilen geniş karakter depolar *wchar,* varsa *wchar* değil **NULL**. **mbtowc** değil inceleyin birden fazla **MB_CUR_MAX** bayt sayısı. **mbtowc** geçerli yerel ayar için yerel ayara bağımlı davranışı; kullanır **_mbtowc_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**Mbtowc** işlev dönüştürür *sayısı* ya da daha az bayt işaret ettiği *mbchar*, *mbchar* değil **NULL**, karşılık gelen bir geniş karakter. **mbtowc** elde edilen geniş karakter konumunda depolar *wchar,* varsa *wchar* değil **NULL**. **mbtowc** değil inceleyin birden fazla **MB_CUR_MAX** bayt. **mbtowc** yerel ayara bağlı davranışı için; geçerli yerel ayarı kullanır **_mbtowc_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -91,7 +91,7 @@ Varsa **mbchar** değil **NULL** ve nesne, *mbchar* formları için geçerli bir
 |**mbtowc**|\<stdlib.h >|
 |**_mbtowc_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -156,7 +156,7 @@ Attempt to convert a NULL pointer to a wide character:
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
-[MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
+[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>

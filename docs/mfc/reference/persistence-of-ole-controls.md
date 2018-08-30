@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 661735e91084bad45553de71e80a599afd674028
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: f07efa6ebbea70f83803238bf73e2d3e806ea457
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336832"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204575"
 ---
 # <a name="persistence-of-ole-controls"></a>OLE Denetimlerinin Kalıcılığı
 OLE denetimlerinin bir yetenek olduğu özellik kalıcılığı (veya seri hale getirme) okumak veya özellik değerleri için ve bir dosya veya akış yazmak OLE denetim sağlar. Kapsayıcılı bir uygulama seri hale getirme sonra bile, uygulama denetimi yok bir denetimin özellik değerlerini depolamak için kullanabilirsiniz. OLE denetim özelliği değerlerinin ardından dosyasından okunabilir veya daha sonraki bir zamanda akış denetimi yeni bir örneği oluşturulur.  
@@ -93,7 +93,7 @@ hBlobDefault
   
 -   Gerçek ikili veriler içeren bir bellek bloğu.  
   
- Unutmayın `PX_Blob` Windows kullanarak belleği ayırır [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) BLOB türü özellikleri yüklenirken API. Bu bellek boşaltma için sorumlu olursunuz. Bu nedenle, yok edici denetiminizin çağırmalıdır [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) herhangi bir BLOB türü özelliği, denetim için ayrılan belleği boşaltmak için tutamaçları yukarı.  
+ Unutmayın `PX_Blob` Windows kullanarak belleği ayırır [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) BLOB türü özellikleri yüklenirken API. Bu bellek boşaltma için sorumlu olursunuz. Bu nedenle, yok edici denetiminizin çağırmalıdır [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) herhangi bir BLOB türü özelliği, denetim için ayrılan belleği boşaltmak için tutamaçları yukarı.  
   
 ##  <a name="px_bool"></a>  PX_Bool  
  Denetiminizin içinde bu işlevi çağırın `DoPropExchange` seri hale getirmek ya da BOOL türünde bir özellik başlatmak için üye işlevi.  

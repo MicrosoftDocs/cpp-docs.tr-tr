@@ -20,70 +20,70 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4efef4c7dfb907120778390874a5e56222889350
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 46018d2ec8747b1fac459e1ac1d28b59eea2385b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392308"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203478"
 ---
 # <a name="debug-routines"></a>Hata ayıklama yordamları
 
-C çalışma zamanı kitaplığı hata ayıklama sürümü hata ayıklama programları kolaylaştırmak ve geliştiricilerin izin veren çok sayıda tanı hizmetleri sağlar:
+Hata ayıklama sürümü C çalışma zamanı kitaplığı hata ayıklama programlar kolaylaştırmak ve geliştiricilerin izin veren çok sayıda tanı hizmetleri sağlar:
 
 - Adımla doğrudan hata ayıklama sırasında çalışma zamanı işlevleri
 
-- Onaylar, hataları ve özel durumları çözmek
+- Onaylar, hatalar ve özel durumları çözmek
 
-- Yığın ayırma izleme ve bellek sızıntılarını önleme
+- Yığın ayırmaları izleme ve bellek sızıntılarını önleme
 
 - Kullanıcı raporu hata ayıklama iletileri
 
-## <a name="debug-versions-of-the-c-runtime-library-routines"></a>C çalışma zamanı kitaplığı yordamları sürümleri hata ayıklama
+## <a name="debug-versions-of-the-c-runtime-library-routines"></a>Hata ayıklama sürümleri C çalışma zamanı kitaplık yordamları
 
-Bu yordamlar kullanılacak [_DEBUG](../c-runtime-library/debug.md) bayrağı tanımlanması gerekir. Bu yordamlar tümünün bir uygulamanın bir perakende yapı içinde hiçbir şey yapmayın. Yeni hata ayıklama yordamları kullanma hakkında daha fazla bilgi için bkz: [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
+Bu yordamları kullanmak için [_DEBUG](../c-runtime-library/debug.md) bayrağı tanımlanmalıdır. Bu yordamların tümünde bir uygulamanın bir perakende yapı içinde hiçbir şey yapmayın. Yeni hata ayıklama yordamları kullanma hakkında daha fazla bilgi için bkz. [CRT hata ayıklama teknikleri](/visualstudio/debugger/crt-debugging-techniques).
 
 |Yordam|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |-------------|---------|
-|[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Bir ifade değerlendirme ve sonucu FALSE olduğunda hata ayıklama raporunu oluşturur|
-|[_ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Benzer şekilde **_ASSERT**, ancak oluşturulan rapora başarısız ifade içeriyor|
-|[_CrtCheckMemory](../c-runtime-library/reference/crtcheckmemory.md)|Hata ayıklama yığınında ayrılan bellek blokları bütünlüğünü onaylayın|
+|[_ASSERT](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Bir ifadeyi değerlendirir ve sonucu FALSE olduğunda, hata ayıklama raporunu oluşturur|
+|[_ASSERTE](../c-runtime-library/reference/assert-asserte-assert-expr-macros.md)|Benzer şekilde **_ASSERT**, ancak oluşturulan raporda başarısız ifadesi içerir|
+|[_CrtCheckMemory](../c-runtime-library/reference/crtcheckmemory.md)|Hata ayıklama yığın üzerinde ayrılan bellek blokları bütünlüğünü doğrulayın|
 |[_CrtDbgBreak](../c-runtime-library/reference/crtdbgbreak.md)|Bir kesme noktası ayarlar.|
-|[_CrtDbgReport, _CrtDbgReportW](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)|Bir kullanıcı iletiyle hata ayıklama rapor oluşturmak ve üç olası hedeflere raporu gönder|
-|[_CrtDoForAllClientObjects](../c-runtime-library/reference/crtdoforallclientobjects.md)|Tüm uygulama tarafından sağlanan bir işlevi çağırmak **_clıent_block** yığınındaki türler|
-|[_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md)|Önemli bellek sızıntısı oluştuğunda hata ayıklama yığınındaki bellek blokları tümünün dökümü|
-|[_CrtIsMemoryBlock](../c-runtime-library/reference/crtismemoryblock.md)|Belirtilen bellek bloğu yerel yığın içinde bulunur ve geçerli hata ayıklama yığını blok türü tanımlayıcısı olduğundan emin olun|
-|[_CrtIsValidHeapPointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Belirtilen bir işaretçi yerel yığınında olduğunu doğrular|
-|[_CrtIsValidPointer](../c-runtime-library/reference/crtisvalidpointer.md)|Belirtilen bellek aralığı okuma ve yazma için geçerli olduğunu doğrulayın|
-|[_CrtMemCheckpoint](../c-runtime-library/reference/crtmemcheckpoint.md)|Hata ayıklama yığınını geçerli durumunu almak ve bir uygulama tarafından sağlanan içinde depolamak **_CrtMemState** yapısı|
-|[_CrtMemDifference](../c-runtime-library/reference/crtmemdifference.md)|Önemli farklılıklar iki bellek durumlarını karşılaştırın ve sonuçları döndürür|
-|[_CrtMemDumpAllObjectsSince](../c-runtime-library/reference/crtmemdumpallobjectssince.md)|Belirtilen bir denetim noktası alındıktan sonra yığında veya program yürütme başından nesneler hakkındaki bilgileri dökümü|
-|[_CrtMemDumpStatistics](../c-runtime-library/reference/crtmemdumpstatistics.md)|Hata ayıklama üst bilgileri kullanıcı tarafından okunabilir bir biçimde belirtilen bellek durumu için döküm|
-|[_CrtReportBlockType](../c-runtime-library/reference/crtreportblocktype.md)|Belirli hata ayıklama yığını blok işaretçisi ile ilişkili blok türü/alt döndürür.|
-|[_CrtSetAllocHook](../c-runtime-library/reference/crtsetallochook.md)|C çalışma zamanı hata ayıklama bellek ayırma işlemine takma tarafından istemci tanımlı ayırma işlevini yükle|
-|[_CrtSetBreakAlloc](../c-runtime-library/reference/crtsetbreakalloc.md)|Belirtilen nesnenin ayırma sipariş numarası üzerinde bir kesme noktası ayarlama|
-|[_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md)|Almak veya durumunu değiştirme **_crtDbgFlag** hata ayıklama yığını Yöneticisi ayırma davranışını denetlemek için bayrağı|
-|[_CrtSetDumpClient](../c-runtime-library/reference/crtsetdumpclient.md)|Döküm için her bir hata ayıklama dökümü işlevi çağrıldığında çağrılan bir uygulama tanımlı işlevini Yükle **_clıent_block** bellek blokları|
-|[_CrtSetReportFile](../c-runtime-library/reference/crtsetreportfile.md)|Dosya ya da belirli bir rapor türü tarafından için hedef olarak kullanılacak akış tanımlamak **_CrtDbgReport**|
-|[_CrtSetReportHook](../c-runtime-library/reference/crtsetreporthook.md)|İşlem raporlama C çalışma zamanı hata ayıklama takma tarafından istemci tanımlı Raporlama işlevini yükle|
-|[_CrtSetReportHook2, _CrtSetReportHookW2](../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md)|Yükler veya istemci tarafından tanımlanan raporlama işlevi işlem raporlama C çalışma zamanı hata ayıklama takma tarafından kaldırır.|
+|[_CrtDbgReport, _CrtDbgReportW](../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md)|Kullanıcı iletisi ile bir hata ayıklama raporunu oluşturur ve raporu üç olası hedefe gönderin|
+|[_CrtDoForAllClientObjects](../c-runtime-library/reference/crtdoforallclientobjects.md)|Tüm uygulama tarafından sağlanan bir işlev çağrısı **_clıent_block** yığındaki türler|
+|[_CrtDumpMemoryLeaks](../c-runtime-library/reference/crtdumpmemoryleaks.md)|Önemli bir bellek sızıntısı oluşmadığında tüm bellek bloğu hata ayıklama yığınındaki dökümü|
+|[_CrtIsMemoryBlock](../c-runtime-library/reference/crtismemoryblock.md)|Belirtilen bellek bloğu yerel yığın içinde bulunur ve geçerli hata ayıklama yığın blok türü tanımlayıcısı olduğunu doğrulayın|
+|[_CrtIsValidHeapPointer](../c-runtime-library/reference/crtisvalidheappointer.md)|Belirtilen bir işaretçi yerel yığında olduğunu doğrular|
+|[_CrtIsValidPointer](../c-runtime-library/reference/crtisvalidpointer.md)|Belirtilen bellek aralığının okuma ve yazma için geçerli olduğunu doğrulayın|
+|[_CrtMemCheckpoint](../c-runtime-library/reference/crtmemcheckpoint.md)|Hata ayıklama yığınındaki geçerli durumunu almak ve bir uygulama tarafından sağlanan depolama **_CrtMemState** yapısı|
+|[_CrtMemDifference](../c-runtime-library/reference/crtmemdifference.md)|İki bellek durumu arasında önemli farklar için karşılaştırmak ve sonuçları döndürür|
+|[_CrtMemDumpAllObjectsSince](../c-runtime-library/reference/crtmemdumpallobjectssince.md)|Program yürütme başlangıcından ya da belirtilen bir denetim noktası alındıktan sonra yığındaki nesneler hakkında bilgi dökümü|
+|[_CrtMemDumpStatistics](../c-runtime-library/reference/crtmemdumpstatistics.md)|Hata ayıklama üst bilgi bilgileri bir kullanıcı tarafından okunabilir bir biçimde belirtilen bellek durumu için döküm|
+|[_CrtReportBlockType](../c-runtime-library/reference/crtreportblocktype.md)|Belirli hata ayıklama yığın blok işaretçisi ile ilişkili blok türü/alt döndürür.|
+|[_CrtSetAllocHook](../c-runtime-library/reference/crtsetallochook.md)|Bir istemci tanımlı ayırma işlevini C çalışma zamanı hata ayıklama bellek ayırma işlemine takma tarafından yükle|
+|[_CrtSetBreakAlloc](../c-runtime-library/reference/crtsetbreakalloc.md)|Belirtilen nesne ayırma sipariş numarası üzerinde bir kesme noktası ayarlayın|
+|[_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md)|Almak veya durumunu değiştirme **_crtDbgFlag** hata ayıklama yığını Yöneticisi ayırma davranışını denetleyen bayrak|
+|[_CrtSetDumpClient](../c-runtime-library/reference/crtsetdumpclient.md)|Uygulama tanımlı dökümünü almak için her bir hata ayıklama döküm işlevi çağrıldığında çağrılan bir işlev yükleme **_clıent_block** bellek blokları|
+|[_CrtSetReportFile](../c-runtime-library/reference/crtsetreportfile.md)|Dosya ya da hedef olarak belirli bir rapor türü tarafından kullanılan akış tanımlamak **_CrtDbgReport**|
+|[_CrtSetReportHook](../c-runtime-library/reference/crtsetreporthook.md)|Bir istemci tanımlı raporlama işlevi, işlem C çalışma zamanı hata ayıklama raporlama takma tarafından yükleyin|
+|[_CrtSetReportHook2, _CrtSetReportHookW2](../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md)|Yükler veya bir istemci tanımlı raporlama işlevi, işlem C çalışma zamanı hata ayıklama raporlama takma tarafından kaldırır.|
 |[_CrtSetReportMode](../c-runtime-library/reference/crtsetreportmode.md)|Tarafından oluşturulan belirli bir rapor türü için genel destination(s) belirtin **_CrtDbgReport**|
-|[_RPT&AMP;#91;0,1,2,3,4&AMP;#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Çağırarak bir hata ayıklama raporu oluşturarak uygulamanın ilerlemeyi **_CrtDbgReport** bir biçim dizesi ve değişken sayıda bağımsız değişken. Hiçbir kaynak dosya ve satır numarası bilgilerini sağlar.|
+|[_RPT&AMP;#91;0,1,2,3,4&AMP;#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Hata ayıklama raporunu çağırarak oluşturarak uygulamanın ilerlemeyi **_CrtDbgReport** bir biçim dizesi ve değişken sayıda bağımsız değişken. Hiçbir kaynak dosya ve satır numarası bilgileri sağlar.|
 |[_RPTF&AMP;#91;0,1,2,3,4&AMP;#93;](../c-runtime-library/reference/rpt-rptf-rptw-rptfw-macros.md)|Benzer şekilde **_RPTn** makroları, ancak rapor isteği geldiği kaynak dosya adı ve satır numarası sağlar|
-|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Bellek blokları ek alana sahip yığında belirtilen sayıda için hata ayıklama üstbilgi ayırmak ve arabellekleri üzerine yaz|
-|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Belirtilen bir öbek üzerinde bellek bloğu genişletme veya blok daraltılırken yeniden boyutlandırma|
-|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Yığın bellek bloğu boş|
-|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Belirtilen göreli yol için bir mutlak veya tam yol adı oluşturma kullanarak ad [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|[System::IO::File:: oluşturma](https://msdn.microsoft.com/en-us/library/system.io.file.create.aspx)|
-|[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Geçerli çalışma dizini get kullanarak [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|
-|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Bir ek alana sahip yığında bellek bloğu için hata ayıklama üstbilgi ayırın ve arabellekleri üzerine yazma|
-|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Yığın bellek bloğu boyutu hesaplanamadı|
-|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Belirtilen bir öbek üzerinde bellek bloğu taşıma ve/veya blok yeniden boyutlandırma yeniden ayırma|
-|[_strdup_dbg, _wcsdup_dbg](../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md)|Bir dize yineleme kullanılarak [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|
-|[_tempnam_dbg, _wtempnam_dbg](../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md)|Geçici dosyaları oluşturmak için kullanabileceğiniz kullanarak adları [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayıramadı.|
+|[_calloc_dbg](../c-runtime-library/reference/calloc-dbg.md)|Hata ayıklama üst bilgisi için ek alana sahip bir yığında bellek blokları belirtilen sayıda ayırmak ve arabellek üzerine|
+|[_expand_dbg](../c-runtime-library/reference/expand-dbg.md)|Belirtilen bir yığında bellek bloğu genişletme veya blok ihtiyaçlarımıza yeniden boyutlandırma|
+|[_free_dbg](../c-runtime-library/reference/free-dbg.md)|Yığında bir bellek öbeğini serbest|
+|[_fullpath_dbg, _wfullpath_dbg](../c-runtime-library/reference/fullpath-dbg-wfullpath-dbg.md)|Belirtilen göreli yol için bir mutlak ya da tam yol adı oluşturma kullanarak ad [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayrılamadı.|[System::IO::File:: oluşturma](https://msdn.microsoft.com/library/system.io.file.create.aspx)|
+|[_getcwd_dbg, _wgetcwd_dbg](../c-runtime-library/reference/getcwd-dbg-wgetcwd-dbg.md)|Geçerli çalışma dizinini Al kullanarak [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayrılamadı.|
+|[_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md)|Hata ayıklama üst bilgisi için bir ek alana sahip bir yığında bellek bloğu ayrılamadı ve arabellek üzerine yazma|
+|[_msize_dbg](../c-runtime-library/reference/msize-dbg.md)|Yığında bellek bloğunun boyutu hesaplanamadı|
+|[_realloc_dbg](../c-runtime-library/reference/realloc-dbg.md)|Belirtilen bir yığında bellek bloğu taşıma ve/veya yeniden boyutlandırma blok tarafından yeniden ayırın.|
+|[_strdup_dbg, _wcsdup_dbg](../c-runtime-library/reference/strdup-dbg-wcsdup-dbg.md)|Yineleyen bir dize kullanarak [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayrılamadı.|
+|[_tempnam_dbg, _wtempnam_dbg](../c-runtime-library/reference/tempnam-dbg-wtempnam-dbg.md)|Geçici dosyalar oluşturmak için kullanabileceğiniz kullanarak adları [_malloc_dbg](../c-runtime-library/reference/malloc-dbg.md) bellek ayrılamadı.|
 
-## <a name="c-runtime-routines-that-are-not-available-in-source-code-form"></a>Kodu biçiminde kullanılamayan C çalışma zamanı yordamları kaynağı
+## <a name="c-runtime-routines-that-are-not-available-in-source-code-form"></a>Kullanılamayan, C çalışma zamanı yordamları kod form kaynağı
 
-Hata ayıklayıcı kullanılabilir adıma hata ayıklama işlemi sırasında C çalışma zamanı yordamları çoğu için kaynak kodunu aracılığıyla. Ancak, Microsoft özel olması için bazı teknolojiler göz önünde bulundurur ve bu nedenle, bu yordamları bir kısmı için kaynak kodunu sağlamaz. Bu yordamlar çoğu özel durum işleme veya kayan nokta işleme grupları ile ait ancak birkaç diğerleri de dahil edilir. Aşağıdaki tabloda, bu yordamları listeler.
+Hata ayıklayıcı kullanılabilir hata ayıklama işlemi sırasında C çalışma zamanı yordamları çoğu için kaynak kodu boyunca adım adım. Ancak, Microsoft özel olması için bazı teknolojiler göz önünde bulundurur ve bu nedenle, kaynak kodu, bu yordamların bir alt kümesi için sağlamaz. Bu yordamlar çoğu özel durum işleme veya kayan nokta işleme grupları için ait, ancak birkaç diğerleri de dahil edilir. Aşağıdaki tabloda, bu yordamların listeler.
 
 ||||
 |-|-|-|
@@ -104,15 +104,15 @@ Hata ayıklayıcı kullanılabilir adıma hata ayıklama işlemi sırasında C �
 |[SİNH](../c-runtime-library/reference/sinh-sinhf-sinhl.md)|[sqrt](../c-runtime-library/reference/sqrt-sqrtf-sqrtl.md)|[_status87, _statusfp](../c-runtime-library/reference/status87-statusfp-statusfp2.md)|
 |[tan](../c-runtime-library/reference/tan-tanf-tanl.md)|[TANH](../c-runtime-library/reference/tanh-tanhf-tanhl.md)||
 
-Kaynak kodu çoğu için kullanılabilir olmasına rağmen **printf** ve **scanf** yordamları, yaptıkları bir iç çağrısının başka bir yordama için hangi kaynak kodu sağlanmadı.
+Kaynak kodu için çoğu kullanılabilir olmasına rağmen **printf** ve **scanf** yordamları, yaptıkları bir iç çağrı başka bir yordama için hangi kaynak kodu sağlanmadı.
 
-## <a name="routines-that-behave-differently-in-a-debug-build-of-an-application"></a>Hata ayıklama modunda farklı şekilde davranan yordamları bir uygulama oluşturma
+## <a name="routines-that-behave-differently-in-a-debug-build-of-an-application"></a>Hata ayıklama yapısında farklı şekilde davranan yordamları uygulama oluşturma
 
-Bazı C çalışma zamanı işlevleri ve C++ işleçleri bir uygulamanın hata ayıklama derleme çağrıldığında farklı şekilde davranır. (Bir uygulamanın hata ayıklama derlemesi ya da tanımlayarak yapılabilir Not `_DEBUG` bayrak veya C çalışma zamanı kitaplığı ile bir hata ayıklama sürümü'ile bağlanıyor.) Davranış farklılıkları genellikle ek özellikler veya hata ayıklama işlemi desteklemek için yordamı tarafından sağlanan bilgileri oluşur. Aşağıdaki tabloda, bu yordamları listeler.
+Bazı C çalışma zamanı işlevleri ve C++ işleçleri bir uygulamanın hata ayıklama derlemeden çağrıldığında farklı davranır. (Hata ayıklama derlemesi bir uygulamanın ya da tanımlayarak yapılabilir Not `_DEBUG` bayrak veya hata ayıklama sürümü C çalışma zamanı kitaplığı ile'ile bağlanıyor.) Ek özellik veya hata ayıklama işlemini desteklemek için yordamı tarafından sağlanan bilgiler, davranışsal farklılıklar genellikle oluşur. Aşağıdaki tabloda, bu yordamların listeler.
 
 |||
 |-|-|
-|C [abort](../c-runtime-library/reference/abort.md) yordamı|C++ [silmek](../cpp/delete-operator-cpp.md) işleci|
+|C [iptal](../c-runtime-library/reference/abort.md) yordamı|C++ [Sil](../cpp/delete-operator-cpp.md) işleci|
 |C [assert](../c-runtime-library/reference/assert-macro-assert-wassert.md) yordamı|C++ [yeni](../cpp/new-operator-cpp.md) işleci|
 
 ## <a name="see-also"></a>Ayrıca bkz.

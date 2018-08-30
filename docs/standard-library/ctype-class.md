@@ -46,12 +46,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a65008b01262ad6252e9942444a4e80602d4292
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: e34df871a655515bf4399b136de32db61d66ae0c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208643"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204873"
 ---
 # <a name="ctype-class"></a>ctype Sınıfı
 
@@ -66,7 +66,8 @@ class ctype : public ctype_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki karakterleri kodlamak için kullanılan tür.
+*CharType*<br/>
+ Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -74,17 +75,17 @@ Herhangi bir yerel ayar modelinde olduğu gibi, statik nesne kimliğinde depolan
 
 C++ Standart Kitaplığı, bu şablon sınıfının iki açık uzmanlığını tanımlar:
 
-- [CType](../standard-library/ctype-char-class.md)< `char`>, bir açık özelleştirme farklılıkları ayrı olarak açıklanmıştır.
+- `ctype<char>`, açık uzmanlığı farklılıkları ayrı olarak açıklanmıştır. Daha fazla bilgi için [ctype&lt;char&gt; sınıfı](../standard-library/ctype-char-class.md).
 
-- **CType**<`wchar_t`>, geniş karakterler olarak öğeleri işler.
+- `ctype<wchar_t>`, geniş karakterler olarak öğeleri işler.
 
-Şablon sınıfının diğer uzmanlıkları **ctype** \< **CharType**>:
+Şablon sınıfının diğer uzmanlıkları `ctype<CharType>`:
 
-- Bir değere Dönüştür ***ch*** türü `CharType` türünde bir değer için **char** ifadesiyle (`char`) **ch**.
+- Bir değere Dönüştür *ch* türü *CharType* türünde bir değer için **char** ifadesiyle `(char)ch`.
 
-- Bir değere Dönüştür ***bayt*** türü **char** türünde bir değer için `CharType` ifadesiyle **CharType** (**bayt**).
+- Bir değere Dönüştür *bayt* türü **char** türünde bir değer için *CharType* ifadesiyle `CharType(byte)`.
 
-Tüm diğer işlemler gerçekleştirilir **char** açık uzmanlığında olduğu gibi değerler **ctype**<`char`>.
+Tüm diğer işlemler gerçekleştirilir **char** açık uzmanlığında olduğu gibi değerler `ctype<char>`.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -149,7 +150,8 @@ explicit ctype(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -183,15 +185,20 @@ virtual const CharType *do_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* karakter olduğu test edilecek maske değeri.
+*maskVal*<br/>
+ Karakter test edilecek olduğu maske değeri.
 
-*CH* niteliklerini olan test edilecek karakter.
+*ch*<br/>
+ Test edilecek niteliklerini olan karakter.
 
-*İlk* niteliklerini olan sınıflandırılmaya aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Sınıflandırılması niteliklerini olan aralıktaki ilk karaktere bir işaretçi.
 
-*Son* niteliklerini olan sınıflandırılmaya aralıktaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Sınıflandırılması niteliklerini olan aralıktaki son karakter takip karaktere bir işaretçi.
 
-*Hedef* öznitelikleri her karakter characterizing maskesi değerleri nerede depolanacak dizinin başlangıcına bir işaretçi.
+*Hedef*<br/>
+ Nerede depolanacak öznitelikleri her karakter characterizing maskesi değerleri olan bir dizi başlangıcı için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -226,15 +233,20 @@ virtual const CharType* do_narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* karakter türü `Chartype` dönüştürülecek yerel ayar tarafından kullanılan.
+*ch*<br/>
+ Karakter türü `Chartype` dönüştürülecek yerel ayar tarafından kullanılan.
 
-*Varsayılan* karakter türünün üye işlevi tarafından atanan varsayılan değer `CharType` türü karşılık gelen karakterler olmayan **char**.
+*default*<br/>
+ Varsayılan değer türü karakterler için üye işlevi tarafından atanacak `CharType` türü karşılık gelen karakterler olmayan **char**.
 
-*İlk* dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
 
-*Hedef* türü ilk karakteri bir const işaretçisi **char** hedef aralıktaki dönüştürülmüş karakterleri depolar.
+*Hedef*<br/>
+ Türünün ilk karaktere bir const işaretçisi **char** hedef aralıktaki dönüştürülmüş karakterleri depolar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -263,11 +275,14 @@ virtual const CharType *do_scan_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* bir karakter eşleştirilecek maske değeri.
+*maskVal*<br/>
+ Bir karakter eşleştirilecek maske değeri.
 
-*İlk* taranacak aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Taranacak aralıktaki ilk karaktere bir işaretçi.
 
-*Son* taranacak aralıktaki son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Taranacak aralıktaki son karakter takip karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -294,11 +309,14 @@ virtual const CharType *do_scan_not(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* maskesi değer bir karakteri karşılaştırılamıyor.
+*maskVal*<br/>
+ Bir karakter değil eşleştirilecek maske değeri.
 
-*İlk* taranacak aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Taranacak aralıktaki ilk karaktere bir işaretçi.
 
-*Son* taranacak aralıktaki son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Taranacak aralıktaki son karakter takip karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -327,11 +345,14 @@ virtual const CharType *do_tolower(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* küçük harflere dönüştürülecek karakter.
+*ch*<br/>
+ Küçük harflere dönüştürülecek karakter.
 
-*İlk* dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek olan durumlarda karakterler aralığının son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığının son karakter hemen izleyen karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -360,11 +381,14 @@ virtual const CharType *do_toupper(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* büyük harfe dönüştürülecek karakter.
+*ch*<br/>
+ Büyük harfe dönüştürülecek karakter.
 
-*İlk* dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek olan durumlarda karakterler aralığının son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığının son karakter hemen izleyen karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -394,13 +418,17 @@ virtual const char *do_widen(
 
 ### <a name="parameters"></a>Parametreler
 
-*bayt* karakter türü **char** yerel karakter kümesindeki dönüştürülecek.
+*byte*<br/>
+ Karakter türü **char** yerel karakter kümesindeki dönüştürülecek.
 
-*İlk* dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
 
-*Hedef* türü ilk karaktere bir işaretçi `CharType` hedef aralıktaki dönüştürülmüş karakterleri depolar.
+*Hedef*<br/>
+ Türünün ilk karaktere bir işaretçi `CharType` hedef aralıktaki dönüştürülmüş karakterleri depolar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -432,15 +460,20 @@ const CharType *is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* karakter olduğu test edilecek maske değeri.
+*maskVal*<br/>
+ Karakter test edilecek olduğu maske değeri.
 
-*CH* niteliklerini olan test edilecek karakter.
+*ch*<br/>
+ Test edilecek niteliklerini olan karakter.
 
-*İlk* niteliklerini olan sınıflandırılmaya aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Sınıflandırılması niteliklerini olan aralıktaki ilk karaktere bir işaretçi.
 
-*Son* niteliklerini olan sınıflandırılmaya aralıktaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Sınıflandırılması niteliklerini olan aralıktaki son karakter takip karaktere bir işaretçi.
 
-*Hedef* öznitelikleri her karakter characterizing maskesi değerleri nerede depolanacak dizinin başlangıcına bir işaretçi.
+*Hedef*<br/>
+ Nerede depolanacak öznitelikleri her karakter characterizing maskesi değerleri olan bir dizi başlangıcı için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -508,15 +541,20 @@ const CharType* narrow(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* karakter türü `Chartype` dönüştürülecek yerel ayar tarafından kullanılan.
+*ch*<br/>
+ Karakter türü `Chartype` dönüştürülecek yerel ayar tarafından kullanılan.
 
-*Varsayılan* karakter türünün üye işlevi tarafından atanan varsayılan değer `CharType` türü karşılık gelen karakterler olmayan **char**.
+*default*<br/>
+ Varsayılan değer türü karakterler için üye işlevi tarafından atanacak `CharType` türü karşılık gelen karakterler olmayan **char**.
 
-*İlk* dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
 
-*Hedef* türü ilk karakteri bir const işaretçisi **char** hedef aralıktaki dönüştürülmüş karakterleri depolar.
+*Hedef*<br/>
+ Türünün ilk karaktere bir const işaretçisi **char** hedef aralıktaki dönüştürülmüş karakterleri depolar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -567,11 +605,14 @@ const CharType *scan_is(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* bir karakter eşleştirilecek maske değeri.
+*maskVal*<br/>
+ Bir karakter eşleştirilecek maske değeri.
 
-*İlk* taranacak aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Taranacak aralıktaki ilk karaktere bir işaretçi.
 
-*Son* taranacak aralıktaki son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Taranacak aralıktaki son karakter takip karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -620,11 +661,14 @@ const CharType *scan_not(
 
 ### <a name="parameters"></a>Parametreler
 
-*maskVal* maskesi değer bir karakteri karşılaştırılamıyor.
+*maskVal*<br/>
+ Bir karakter değil eşleştirilecek maske değeri.
 
-*İlk* taranacak aralıktaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Taranacak aralıktaki ilk karaktere bir işaretçi.
 
-*Son* taranacak aralıktaki son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Taranacak aralıktaki son karakter takip karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -673,11 +717,14 @@ const CharType *tolower(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* küçük harflere dönüştürülecek karakter.
+*ch*<br/>
+ Küçük harflere dönüştürülecek karakter.
 
-*İlk* dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek olan durumlarda karakterler aralığının son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığının son karakter hemen izleyen karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -725,11 +772,14 @@ const CharType *toupper(CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* büyük harfe dönüştürülecek karakter.
+*ch*<br/>
+ Büyük harfe dönüştürülecek karakter.
 
-*İlk* dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek olan durumlarda karakterler aralığının son karakter takip karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek olan durumlarda karakterler aralığının son karakter hemen izleyen karaktere bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -777,13 +827,17 @@ const char *widen(const char* first, const char* last, CharType* dest) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*bayt* yerel karakter char türüne karakter kümesi dönüştürülecek.
+*byte*<br/>
+ Dönüştürülecek karakter yerel karakter char türüne ayarlayın.
 
-*İlk* dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
+*ilk*<br/>
+ Dönüştürülecek karakter aralığındaki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
+*Son*<br/>
+ Dönüştürülecek karakter aralığındaki son karakter hemen izleyen karaktere bir işaretçi.
 
-*Hedef* türü ilk karaktere bir işaretçi `CharType` hedef aralıktaki dönüştürülmüş karakterleri depolar.
+*Hedef*<br/>
+ Türünün ilk karaktere bir işaretçi `CharType` hedef aralıktaki dönüştürülmüş karakterleri depolar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

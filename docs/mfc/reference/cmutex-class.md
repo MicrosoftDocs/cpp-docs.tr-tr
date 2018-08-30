@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3bde85e64fe8593ec2637e767e8c3c70d3b8200
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 8162ba8ffe70225980819d45ea55fb8427abd294
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038083"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196680"
 ---
 # <a name="cmutex-class"></a>CMutex sınıfı
-"Mutex" temsil eder — bir iş parçacığı birbirini dışlayan bir kaynağa erişim izni veren bir eşitleme nesnesi.  
+"Mutex" temsil eder; bir iş parçacığı bir kaynağa karşılıklı olarak dışlama erişimine izin veren bir eşitleme nesnesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,16 +40,16 @@ class CMutex : public CSyncObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMutex::CMutex](#cmutex)|Oluşturan bir `CMutex` nesnesi.|  
+|[CMutex::CMutex](#cmutex)|Oluşturur bir `CMutex` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Zaman uyumu sağlayıcılar, veri veya başka bir denetimli kaynak değiştirmek için aynı anda yalnızca bir iş parçacığı izin olduğunda yararlıdır. Örneğin, düğümleri bağlantılı bir listesine ekleyerek bir iş parçacığı tarafından aynı anda yalnızca izin verilecek bir işlemdir. Kullanarak bir `CMutex` aynı anda tek bir iş parçacığı listesine erişebilir yalnızca bağlantılı liste denetlemek için nesne.  
+ Veri veya denetlenen başka bir kaynak değiştirmek için aynı anda yalnızca tek bir iş parçacığı izin verildiğinde Mutex'leri yararlı olur. Örneğin, bağlı bir liste düğüm ekleme, yalnızca tek bir iş parçacığı tarafından aynı anda izin verilmesi, bir işlemdir. Kullanarak bir `CMutex` öbekleri bağlantılı listede aynı anda tek bir iş parçacığı listesine ulaşmak yalnızca denetlemek için nesne.  
   
- Kullanılacak bir `CMutex` nesne, oluşturmak `CMutex` nesne gerektiğinde. İstediğiniz beklemesi mutex adını belirtin ve uygulamanızı başlangıçta ait. Oluşturucusu döndürdüğünde mutex daha sonra erişebilirsiniz. Çağrı [CSyncObject::Unlock](../../mfc/reference/csyncobject-class.md#unlock) işiniz bittiğinde kontrollü bir kaynağa erişme.  
+ Kullanılacak bir `CMutex` nesne, oluşturmak `CMutex` gerektiğinde nesne. Üzerinde beklenilen istediğiniz mutex adını belirtin ve uygulamanızı başlangıçta ait. Oluşturucu döndürdüğünde mutex erişebilirsiniz. Çağrı [CSyncObject::Unlock](../../mfc/reference/csyncobject-class.md#unlock) işiniz bittiğinde kontrollü bir kaynağa erişme.  
   
- Kullanmak için alternatif bir yöntem `CMutex` nesnedir türünde bir değişken eklemek için `CMutex` denetimine istediğiniz sınıfı veri üyesi olarak. Denetlenen Nesne oluşturma sırasında oluşturucusunun çağrı `CMutex` veri üyesi mutex başlangıçta sahibi, (Bu işlem sınırlarında kullanılacaksa) mutex adını ve güvenlik öznitelikleri istenen belirtme.  
+ Alternatif bir yöntem kullanarak `CMutex` türünde bir değişken eklemek için nesneleri, `CMutex` denetimine istediğiniz sınıfı için bir veri üyesi olarak. Denetlenen Nesne oluşturma sırasında oluşturucusuna çağrı `CMutex` mutex ilk başta aitse, mutex (işlem sınırları arasında kullanılacak olan ise), adını ve istenen güvenlik öznitelikleri belirterek veri üyesi.  
   
- Denetlenen kaynaklara erişmek için `CMutex` nesneleri bu şekilde ilk oluşturun ya da türünde bir değişken [CSingleLock](../../mfc/reference/csinglelock-class.md) veya türü [CMultiLock](../../mfc/reference/cmultilock-class.md) , kaynağın erişim üye fonksiyonu içinde. Kilit nesnenin çağrısı `Lock` üye işlevi (örneğin, [CSingleLock::Lock](../../mfc/reference/csinglelock-class.md#lock)). Bu noktada, iş parçacığı ya da kaynağa erişim, yayımlanması ve erişim kazanmak veya zaman aşımı, kaynağa erişmek başarısız olan ve kaynak yayımlanacak bekleyin kaynak için bekleyin. Her iki durumda da, kaynak, bir iş parçacığı açısından güvenli şekilde erişilmedi. Kaynak serbest bırakmak için kilit nesnenin kullanın `Unlock` üye işlevi (örneğin, [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock)), veya kilit kapsamı dışında kalan nesnesine izin verin.  
+ Denetlenen kaynaklarına erişmek için `CMutex` nesnelere bu şekilde, ilk iki türünde bir değişken oluşturun [CSingleLock](../../mfc/reference/csinglelock-class.md) veya türü [CMultiLock](../../mfc/reference/cmultilock-class.md) kaynağınızın erişim üye işlev. Ardından kilit nesnenin çağrı `Lock` üye işlevi (örneğin, [CSingleLock::Lock](../../mfc/reference/csinglelock-class.md#lock)). Bu noktada, iş parçacığı ya da kaynağa erişim, kaynak serbest bırakılması ve erişim veya zaman aşımı, kaynağa erişmek başarısız olan ve kaynak yayımlanacak bekleyin için bekleyin. Her iki durumda da, kaynak, bir iş parçacığı açısından güvenli şekilde erişilmedi. Kaynağı serbest bırakmak için kilit nesnenin kullanın `Unlock` üye işlevi (örneğin, [CSingleLock::Unlock](../../mfc/reference/csinglelock-class.md#unlock)), veya kilit nesne kapsam dışına düşen izin verin.  
   
  Kullanma hakkında daha fazla bilgi için `CMutex` nesneleri başlıklı makaleye bakın [çoklu iş parçacığı kullanımı: eşitleme sınıflarını kullanma](../../parallel/multithreading-how-to-use-the-synchronization-classes.md).  
   
@@ -64,7 +64,7 @@ class CMutex : public CSyncObject
  **Başlık:** afxmt.h  
   
 ##  <a name="cmutex"></a>  CMutex::CMutex  
- Adlandırılmış veya adlandırılmamış oluşturur `CMutex` nesnesi.  
+ Adlandırışmış veya adlandırılmamış bir yapıları `CMutex` nesne.  
   
 ```  
 CMutex(
@@ -75,19 +75,19 @@ CMutex(
   
 ### <a name="parameters"></a>Parametreler  
  *bInitiallyOwn*  
- Belirtir iş parçacığı oluşturma `CMutex` nesne başlangıçta tarafından mutex denetimli kaynak erişimi vardır.  
+ Belirtir iş parçacığı oluşturma `CMutex` nesnenin başlangıçta mutex tarafından denetlenen kaynağa erişimi vardır.  
   
  *lpszName*  
- Adını `CMutex` nesnesi. Aynı ada sahip başka bir mutex varsa *lpszName* nesne işlem sınırlarında kullanılacaksa sağlanmalıdır. Varsa **NULL**, mutex adlandırılmamış olacaktır. Ad mevcut bir mutex eşleşirse, Oluşturucusu yeni yapılar `CMutex` adının mutex başvuruda bulunan nesne. Adı ile eşleşen bir mutex değil varolan bir eşitleme nesnesi oluşturma başarısız olur.  
+ Adını `CMutex` nesne. Aynı ada sahip başka bir mutex varsa *lpszName* işlem sınırları ötesinde nesneye kullanılacaksa sağlanmalıdır. Varsa **NULL**, mutex adlandırılmamış olacaktır. Oluşturucu ad var olan bir mutex eşleşiyorsa, yeni bir yapılar `CMutex` başvuran adının mutex nesnesi. Adla eşleşen bir mutex olmayan mevcut bir eşitleme nesnesi oluşturma başarısız olur.  
   
  *lpsaAttribute*  
- Mutex nesnesi için güvenlik öznitelikler. Bu yapı tam bir açıklaması için bkz: [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK'sındaki.  
+ Mutex nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Erişim veya serbest bir `CMutex` nesne, oluşturma bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [Unlock](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri. Varsa `CMutex` nesne kullanılan tek başına, çağrı kendi `Unlock` üye işlevi bırakın.  
+ Erişim veya yayın için bir `CMutex` nesne, oluşturun bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri. Varsa `CMutex` nesne kullanılan tek başına, çağrı kendi `Unlock` bunu serbest bırakmak için üye işlevi.  
   
 > [!IMPORTANT]
->  Oluşturduktan sonra `CMutex` nesne, kullanın [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten mevcut olduğundan emin olmak için. Mutex beklenmedik bir şekilde yoksa, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, önerilen güvenliğe tanıtıcı kapatın ve gibi varsa bir hata nesnesi oluşturulurken devam etmek için bir yordamdır.  
+>  Oluşturduktan sonra `CMutex` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex zaten yoktu emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CSyncObject sınıfı](../../mfc/reference/csyncobject-class.md)   

@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edc0e098e1f3e80a80dabeda8c0a5f7a58e5e697
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0be9c390b312cdd056c51474f202637dab16b3ff
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961148"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203902"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 Bu sınıf, depolanan veri türünü gösteren bir üye sağlama VARIANT türü sarmalar.  
@@ -401,7 +401,7 @@ HRESULT ReadFromStream(IStream* pStream);
   
 ### <a name="parameters"></a>Parametreler  
  *pStream*  
- [in] Bir işaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) akış verilerini içeren bir arabirimdeki.  
+ [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) akış verilerini içeren bir arabirimdeki.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT değerini.  
@@ -438,7 +438,7 @@ HRESULT WriteToStream(IStream* pStream);
   
 ### <a name="parameters"></a>Parametreler  
  *pStream*  
- [in] Bir işaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) arabirimdeki bir akış.  
+ [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) arabirimdeki bir akış.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT değerini.  

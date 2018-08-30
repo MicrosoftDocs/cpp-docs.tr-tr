@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4d4005479c1808ba2d396dfe8807f8a415f9322
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: eb826c89106358c338230d46dc8743e1ee4d60f4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131782"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200458"
 ---
 # <a name="visual-c-in-visual-studio"></a>Visual Studio'da Visual C++
 
@@ -144,7 +144,7 @@ CPU üzerinde yürütülen zaman uyumsuz ve paralel algoritmalar.
 [C++ AMP (C++ Accelerated Massive Parallelism)](parallel/amp/cpp-amp-cpp-accelerated-massive-parallelism.md)<br/>
 GPU üzerinde yürütülen yoğun paralel algoritmalar.
 
-[Windows çalışma zamanı Şablon kitaplığı (WRL)](http://msdn.microsoft.com/library/windows/apps/hh438466.aspx)<br/>
+[Windows çalışma zamanı Şablon kitaplığı (WRL)](https://msdn.microsoft.com/library/windows/apps/hh438466.aspx)<br/>
 Evrensel Windows Platformu (UWP) uygulamaları ve bileşenleri.
 
 [.NET programlama ile C + +/ CLI](dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)<br/>

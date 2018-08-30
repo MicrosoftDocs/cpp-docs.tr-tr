@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bb96db2ff3a927885bdb914665147dc0e7ce8da
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 71025785fbc9eab2b962e0f9e48ba9170edf1de1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881298"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204196"
 ---
 # <a name="atl-classes-and-structs"></a>ATL sınıfları ve yapıları
 Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Belirli bir sınıfın kategoriye göre bulmak için bkz: [ATL sınıfına genel bakış](../../atl/atl-class-overview.md).  
@@ -71,20 +71,20 @@ Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Be
 |[CAxWindow](../../atl/reference/caxwindow-class.md)|Bu sınıf, bir ActiveX denetimi barındırma pencere yönlendirmeye yönelik yöntemleri sağlar.|atlwin.h|  
 |[CAxWindow2T](../../atl/reference/caxwindow2t-class.md)|Bu sınıf, bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere yönlendirmeye yönelik yöntemleri sağlar.|atlwin.h|  
 |[CBindStatusCallback](../../atl/reference/cbindstatuscallback-class.md)|Bu sınıfın uyguladığı `IBindStatusCallback` arabirimi.|atlctl.h|  
-|[CComAggObject](../../atl/reference/ccomaggobject-class.md)|Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanan nesne için.|atlcom.h|  
+|[CComAggObject](../../atl/reference/ccomaggobject-class.md)|Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanan nesne için.|atlcom.h|  
 |[CComAllocator](../../atl/reference/ccomallocator-class.md)|Bu sınıf, COM bellek yordamları kullanarak bellek yönetmek için yöntemler sağlar.|atlbase.h|  
 |[CComApartment](../../atl/reference/ccomapartment-class.md)|Bu sınıf, bir iş parçacığı havuza EXE modülü bir grupta yönetmek için destek sağlar.|atlbase.h|  
 |[CComAutoCriticalSection](../../atl/reference/ccomautocriticalsection-class.md)|Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.|atlcore.h|  
 |[CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md)|ATL 7. 0'den itibaren `CComAutoThreadModule` artık kullanılmıyor: bkz [ATL modülleri](../../atl/atl-module-classes.md) daha fazla ayrıntı için.|atlbase.h|  
 |[CComBSTR](../../atl/reference/ccombstr-class.md)|BSTR'lerin için bir sarmalayıcı sınıftır.|atlbase.h|  
-|[CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)|Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bölünmüş arabirim.|atlcom.h|  
-|[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)|Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.|atlcom.h|  
-|[CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md)|Bu sınıfın uyguladığı [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.|atlcom.h|  
-|[CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md)|Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.|atlcom.h|  
+|[CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md)|Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) bölünmüş arabirim.|atlcom.h|  
+|[CComClassFactory](../../atl/reference/ccomclassfactory-class.md)|Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi.|atlcom.h|  
+|[CComClassFactory2](../../atl/reference/ccomclassfactory2-class.md)|Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.|atlcom.h|  
+|[CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md)|Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.|atlcom.h|  
 |[CComClassFactorySingleton](../../atl/reference/ccomclassfactorysingleton-class.md)|Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.|atlcom.h|  
 |[CComCoClass](../../atl/reference/ccomcoclass-class.md)|Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemler sağlar.|atlcom.h|  
 |[CComCompositeControl](../../atl/reference/ccomcompositecontrol-class.md)|Bu sınıf, bileşik denetim uygulamak için gereken yöntemleri sağlar.|atlctl.h|  
-|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahibi nesnenin temsilci tarafından `IUnknown`.|atlcom.h|  
+|[CComContainedObject](../../atl/reference/ccomcontainedobject-class.md)|Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) sahibi nesnenin temsilci tarafından `IUnknown`.|atlcom.h|  
 |[CComControl](../../atl/reference/ccomcontrol-class.md)|Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.|atlctl.h|  
 |[CComControlBase](../../atl/reference/ccomcontrolbase-class.md)|Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.|atlctl.h|  
 |[CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)|Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.|atlcore.h|  
@@ -208,20 +208,20 @@ Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Be
 |[IOleObjectImpl](../../atl/reference/ioleobjectimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve kapsayıcı bir denetimle iletişim asıl arabirimidir.|atlctl.h|  
 |[IPerPropertyBrowsingImpl](../../atl/reference/iperpropertybrowsingimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve bir istemci bir nesnenin özellik sayfalarındaki bilgilere erişmesine izin verir.|atlctl.h|  
 |[IPersistPropertyBagImpl](../../atl/reference/ipersistpropertybagimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve bir nesne için bir istemci tarafından sağlanan özellik paketi özelliklerini kaydetmek sağlar.|atlcom.h|  
-|[Ipersiststorageımpl](../../atl/reference/ipersiststorageimpl-class.md)|Bu sınıfın uyguladığı [IPersistStorage](http://msdn.microsoft.com/library/windows/desktop/ms679731) arabirimi.|atlcom.h|  
-|[Ipersiststreamınitımpl](../../atl/reference/ipersiststreaminitimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPersistStreamInit](http://msdn.microsoft.com/library/windows/desktop/ms682273) arabirimi.|atlcom.h|  
-|[Ipointerınactiveımpl](../../atl/reference/ipointerinactiveimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve [Ipointerınactive'i](http://msdn.microsoft.com/library/windows/desktop/ms693712) arabirim yöntemleri.|atlctl.h|  
-|[IPropertyNotifySinkCP](../../atl/reference/ipropertynotifysinkcp-class.md)|Bu sınıf sunan [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.|atlctl.h|  
+|[Ipersiststorageımpl](../../atl/reference/ipersiststorageimpl-class.md)|Bu sınıfın uyguladığı [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) arabirimi.|atlcom.h|  
+|[Ipersiststreamınitımpl](../../atl/reference/ipersiststreaminitimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPersistStreamInit](/windows/desktop/api/ocidl/nn-ocidl-ipersiststreaminit) arabirimi.|atlcom.h|  
+|[Ipointerınactiveımpl](../../atl/reference/ipointerinactiveimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve [Ipointerınactive'i](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) arabirim yöntemleri.|atlctl.h|  
+|[IPropertyNotifySinkCP](../../atl/reference/ipropertynotifysinkcp-class.md)|Bu sınıf sunan [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.|atlctl.h|  
 |[Ipropertypage2ımpl](../../atl/reference/ipropertypage2impl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamasını devralan [Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md).|atlctl.h|  
-|[Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) arabirimi.|atlctl.h|  
-|[IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) ve [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) yöntemleri.|atlcom.h|  
+|[Ipropertypageımpl](../../atl/reference/ipropertypageimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) arabirimi.|atlctl.h|  
+|[IProvideClassInfo2Impl](../../atl/reference/iprovideclassinfo2impl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ve [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) yöntemleri.|atlcom.h|  
 |[IQuickActivateImpl](../../atl/reference/iquickactivateimpl-class.md)|Bu sınıf, kapsayıcılar denetimi başlatma tek bir çağrı halinde birleştirir.|atlctl.h|  
-|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) arabirimi.|atlctl.h|  
+|[IRunnableObjectImpl](../../atl/reference/irunnableobjectimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi.|atlctl.h|  
 |[IServiceProviderImpl](../../atl/reference/iserviceproviderimpl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar `IServiceProvider` arabirimi.|atlcom.h|  
-|[Ispecifypropertypagesımpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) arabirimi.|atlcom.h|  
+|[Ispecifypropertypagesımpl](../../atl/reference/ispecifypropertypagesimpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [ISpecifyPropertyPages](/windows/desktop/api/ocidl/nn-ocidl-ispecifypropertypages) arabirimi.|atlcom.h|  
 |[Isupporterrorınfoımpl](../../atl/reference/isupporterrorinfoimpl-class.md)|Bu sınıfın bir varsayılan uygulamayı sağlar `ISupportErrorInfo Interface` arabirim ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.|atlcom.h|  
 |[IThreadPoolConfig Arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)|Bu arabirim, iş parçacığı havuzu yapılandırmak için yöntemler sağlar.|atlutil.h|  
-|[Iviewobjectexımpl](../../atl/reference/iviewobjecteximpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamalarını sağlar [IViewObject](http://msdn.microsoft.com/library/windows/desktop/ms680763), [IViewObject2](http://msdn.microsoft.com/library/windows/desktop/ms691318), ve [IViewObjectEx](http://msdn.microsoft.com/library/windows/desktop/ms682375) arabirimleri.|atlctl.h|  
+|[Iviewobjectexımpl](../../atl/reference/iviewobjecteximpl-class.md)|Bu sınıfın uyguladığı `IUnknown` ve varsayılan uygulamalarını sağlar [IViewObject](/windows/desktop/api/oleidl/nn-oleidl-iviewobject), [IViewObject2](/windows/desktop/api/oleidl/nn-oleidl-iviewobject2), ve [IViewObjectEx](/windows/desktop/api/ocidl/nn-ocidl-iviewobjectex) arabirimleri.|atlctl.h|  
 |[IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)|`IWorkerThreadClient` istemcileri tarafından uygulanan arabirimi [CWorkerThread](../../atl/reference/cworkerthread-class.md) sınıfı.|atlutil.h|  
 |[_U_menuorıd](../../atl/reference/u-menuorid-class.md)|Bu sınıfın sarmalayıcıları için sağladığı `CreateWindow` ve `CreateWindowEx`.|atlwin.h|  
 |[_U_RECT](../../atl/reference/u-rect-class.md)|Bu bağımsız değişken bağdaştırıcı sınıfı ya da tanır `RECT` işaretçiler veya başvurular açısından işaretçileri uygulanan bir işleve geçirilecek.|atlwin.h|  

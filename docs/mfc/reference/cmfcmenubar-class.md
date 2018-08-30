@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4d8961cc929196c21838fd21132146deddabcc1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2933ed9fbb9a464b4458ce357ce196f2ae9df8f6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466282"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196388"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 Yerleştirme uygulayan bir menü çubuğu.  
@@ -387,7 +387,7 @@ virtual BOOL CreateEx(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevi yerine kullanmalısınız [CMFCMenuBar::Create](#create) araç çubuğu stili yanı sıra stilleri belirtmek istediğinizde. Bazı sık kullanılan ek TBSTYLE_TRANSPARENT ve CBRS_TOP stillerdir.  
   
- Ek stilleri bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439), [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498), ve [ortak pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600).  
+ Ek stilleri bir listesi için bkz. [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles), [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles), ve [ortak pencere stilleri](https://msdn.microsoft.com/library/windows/desktop/ms632600).  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek nasıl kullanılacağını gösterir `CreateEx` yöntemi `CMFCMenuBar` sınıfı. Bu kod parçacığı parçasıdır [IE gösterim örneği](../../visual-cpp-samples.md).  
@@ -964,7 +964,7 @@ static BOOL SetMenuFont(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpLogFont*  
- Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/bb773327) ayarlamak için yazı tipini tanımlar yapısı.  
+ Bir işaretçi bir [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) ayarlamak için yazı tipini tanımlar yapısı.  
   
  [in] *bHorz*  
  İsterseniz TRUE *lpLogFont* yatay yazı tipi için kullanılacak istiyorsanız dikey yazı tipini FALSE kullanılacak parametre.  

@@ -15,23 +15,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a51697367480569e2d27a4cb67791f5fe4d39a8f
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 55888388158cbe005709cbe8a4989071213b5c77
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323881"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195734"
 ---
 # <a name="redistributing-database-support-files"></a>Veritabanı Destek Dosyalarını Yeniden Dağıtma
-Veri erişim nesneleri (DAO) ve Microsoft Data Access SDK veritabanı teknolojileri için destek dosyalarını yeniden dağıtabilirsiniz.  
+Veri erişim nesneleri (DAO) için ve Microsoft Data Access SDK'SİNDEKİ veritabanı teknolojileri için destek dosyalarını yeniden dağıtabilirsiniz.  
   
 ## <a name="installing-dao-support-files"></a>DAO destek dosyalarını yükleme  
- DAO en son sürümünü almak için bkz: [makale 239114: Microsoft Jet 4.0 veritabanı altyapısı için en son hizmet paketini edinmek nasıl](http://go.microsoft.com/fwlink/p/?linkid=198014) Microsoft Support Web sitesinde.  
+ DAO'nun en son sürümünü edinmek için bkz: [makale 239114: Microsoft Jet 4.0 Veritabanı Altyapısı'nın en son hizmet paketini almalarına nasıl](http://go.microsoft.com/fwlink/p/?linkid=198014) Microsoft Support Web sitesi.  
   
 ## <a name="installing-microsoft-data-access-sdk-support-files"></a>Microsoft Data Access SDK destek dosyalarını yükleme  
- ODBC, OLE DB, ActiveX Data Objects (ADO) ve Uzak Veri Hizmetleri (RDS) için destek yüklemek amacıyla Mdac_typ.exe'yi kullanın. Mdac_typ.exe'yi bulunduğu... Visual Studio yükleme medyasında \WCU\MDAC28\ klasör. Ayrıca Mdac_typ.exe'yi dan indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=198015) Web sitesi.  
+ ODBC, OLE DB, ActiveX Data Objects (ADO) ve Uzak Veri Hizmetleri (RDS) için destek yüklemek amacıyla Mdac_typ.exe'yi kullanın. Mdac_typ.exe bulunan... Visual Studio yükleme medyasında \WCU\MDAC28\ klasör. Mdac_typ.exe nden de indirebilirsiniz [Microsoft Download Center](http://go.microsoft.com/fwlink/p/?linkid=198015) Web sitesi.  
   
- Daha fazla bilgi için üzerinde [MSDN](http://go.microsoft.com/fwlink/p/?linkid=198016) Web sitesi, "MDAC 2.8 SP1'i yeniden dağıtma" arayın. Uygulamanızı dağıtmak için Visual Studio Kurulum projelerini kullanıyorsanız bkz [dağıtım ve bağımlılıkları](http://msdn.microsoft.com/en-us/49e9b84d-bd6a-4388-b9ac-46ea79cf0733).  
+ Daha fazla bilgi için üzerinde [MSDN](http://go.microsoft.com/fwlink/p/?linkid=198016) Web sitesi, "MDAC 2.8 SP1 yeniden dağıtma" arayın. Uygulamanızı dağıtmak için Visual Studio Kurulum projelerini kullanıyorsanız bkz [dağıtım ve bağımlılıkları](https://msdn.microsoft.com/49e9b84d-bd6a-4388-b9ac-46ea79cf0733).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

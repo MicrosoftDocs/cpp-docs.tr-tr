@@ -248,12 +248,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a629f372058e3e6688a57043d73e29717f3601d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 212637b55a422c11d82ae6ad9f548d9e429c41dd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466287"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198574"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli pencereler için temel işlevselliğini uygular.  
@@ -357,7 +357,7 @@ class CMFCBaseTabCtrl : public CWnd
 |[CMFCBaseTabCtrl::OnDragOver](#ondragover)||  
 |[CMFCBaseTabCtrl::OnDrop](#ondrop)||  
 |[CMFCBaseTabCtrl::OnRenameTab](#onrenametab)||  
-|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCBaseTabCtrl::RecalcLayout](#recalclayout)|İç sekmeli pencere düzenini yeniden hesaplar.|  
 |[CMFCBaseTabCtrl::RemoveAllTabs](#removealltabs)|Tüm sekmeler sekmeli penceresinden kaldırır.|  
 |[CMFCBaseTabCtrl::RemoveTab](#removetab)|Bir sekme sekmeli penceresinden kaldırır.|  
@@ -776,7 +776,7 @@ virtual COLORREF GetActiveTabColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) etkin sekmede arka plan rengini belirten bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) etkin sekmede arka plan rengini belirten bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak etkin sekmede arka plan rengini COLOR_WINDOW ' dir. Yöntemini kullanarak etkin sekmede arka plan rengini değiştirebilirsiniz [CMFCBaseTabCtrl::SetActiveTabColor](#setactivetabcolor).  
@@ -789,7 +789,7 @@ virtual COLORREF GetActiveTabTextColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) etkin sekmede metin rengini belirten bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) etkin sekmede metin rengini belirten bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak etkin sekmeler metin rengini SPI_GETHIGHCONTRAST ' dir. Metin rengi yöntemi değiştirebilirsiniz [CMFCBaseTabCtrl::SetActiveTabTextColor](#setactivetabtextcolor).  
@@ -812,7 +812,7 @@ const CArray<COLORREF,COLORREF>& GetAutoColors() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir dizi başvuru [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değerden [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesi için sekmesinde Otomatik renklendirme kullanır.  
+ Bir dizi başvuru [COLORREF](/windows/desktop/gdi/colorref) değerden [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesnesi için sekmesinde Otomatik renklendirme kullanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, çerçeve kitaplığı tarafından tanımlanan renklere renkleri dizisini başlatır. Yöntemini çağırarak renkleri özel bir dizi sağlayabilir [CMFCBaseTabCtrl::SetAutoColors](#setautocolors).  
@@ -958,7 +958,7 @@ virtual COLORREF GetTabBkColor(int iTab) const;
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) belirtilen sekme arka plan rengini gösteren değer; -1 ise *iTab* je mimo rozsah.  
+ A [COLORREF](/windows/desktop/gdi/colorref) belirtilen sekme arka plan rengini gösteren değer; -1 ise *iTab* je mimo rozsah.  
   
 ##  <a name="gettabbordersize"></a>  CMFCBaseTabCtrl::GetTabBorderSize  
  Sekme denetimi, kenarlıklar sekmesini VHD'nin boyutunu alır.  
@@ -1176,7 +1176,7 @@ virtual COLORREF GetTabTextColor(int iTab) const;
  Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) belirtilen sekme metin rengini gösteren parametre; -1 ise *iTab* je mimo rozsah.  
+ A [COLORREF](/windows/desktop/gdi/colorref) belirtilen sekme metin rengini gösteren parametre; -1 ise *iTab* je mimo rozsah.  
   
 ##  <a name="gettabwnd"></a>  CMFCBaseTabCtrl::GetTabWnd  
  Belirtilen sekmesinde bulunan bölmesine işaretçi döndürür.  
@@ -1844,7 +1844,7 @@ virtual void SetActiveTabColor(COLORREF clr);
  Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371)yöntemi.  
+ Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)yöntemi.  
   
 ##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor  
  Etkin sekmeler metin rengini belirler.  
@@ -1855,10 +1855,10 @@ virtual void SetActiveTabTextColor(COLORREF clr);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *clr*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi yeni metin rengini belirtir.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parametresi yeni metin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, çerçeve metin rengini alır [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
+ Varsayılan olarak, çerçeve metin rengini alır [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
   
 ##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors  
  Otomatik renge modunda framework kullanan sekme denetiminin rengini ayarlar.  
@@ -1929,7 +1929,7 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
  Her görüntü piksel cinsinden genişliği.  
   
  [in] *clrTransp*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) resminin saydam rengi belirten bir parametre.  
+ A [COLORREF](/windows/desktop/gdi/colorref) resminin saydam rengi belirten bir parametre.  
   
  [in] *hImageList*  
  Önceden yüklenmiş görüntü listesi için bir tanıtıcı.  
@@ -2114,7 +2114,7 @@ virtual BOOL SetTabTextColor(
  Sekme sıfır tabanlı dizini.  
   
  [in] *rengi*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yeni metin rengini belirten bir parametre.  
+ A [COLORREF](/windows/desktop/gdi/colorref) yeni metin rengini belirten bir parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  

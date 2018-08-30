@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8d933c80aa42ef9b954b6ae498632ab9835cb3d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 22e4cf19ec3b85d14d346bd56697f4bcc4ff687b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025945"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194474"
 ---
 # <a name="ltfilesystemgt-enumerations"></a>&lt;dosya sistemi&gt; sabit listeleri
 
@@ -38,7 +38,7 @@ Bu konuda, dosya sistemi üst bilgisindeki numaralandırmalar belgeler.
 
 ## <a name="copy_options"></a>  copy_options
 
-İle kullanılan bit maskesi değerlerinin numaralandırması [kopyalama](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve [copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) davranışını belirtmek için işlev.
+İle kullanılan bit maskesi değerlerinin numaralandırması [kopyalama](filesystem-functions.md#copy) ve [copy_file](filesystem-functions.md#copy_file) davranışını belirtmek için işlev.
 
 ### <a name="syntax"></a>Sözdizimi
 

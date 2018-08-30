@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b914e950fd94435768c355f327d3d48a653e0d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78e3d346bca087a6fd855e6428e6a53779cd7355
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407151"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202522"
 ---
 # <a name="setnewmode"></a>_set_new_mode
 
-Yeni bir işleyici modu için ayarlar **malloc**.
+İçin yeni bir işleyici modunu ayarlar **malloc**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,23 +54,23 @@ int _set_new_mode( int newhandlermode );
 ### <a name="parameters"></a>Parametreler
 
 *newhandlermode*<br/>
-Yeni işleyici modu için **malloc**; geçerli değer 0 veya 1'dir.
+İçin yeni işleyici modunu **malloc**; geçerli değer 0 veya 1'dir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Mod kümesi için önceki işleyicisini döndürür **malloc**. 1 değeri, gösterir, bellek ayırma hatası dönüş **malloc** daha önce yeni işleyici yordamı; adlı dönüş değerinin 0, belirtmiyor olduğunu gösterir. Varsa *newhandlermode* bağımsız değişkeni 0 veya 1 eşit değil, -1 döndürür.
+Önceki işleyici modu kümesi için döndürür **malloc**. Dönüş değeri 1 gösterir, bellek dağıtma hatasında **malloc** yeni işleyici rutinini; önceki adı olduğu değil, 0 değeri belirtir. Varsa *newhandlermode* bağımsız değişkeni 0 veya 1 eşit değildir, -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ **_set_new_mode** işlevi ayarlar için yeni işleyici modu [malloc](malloc.md). Yeni işleyici modunu gösterir, hatasında kullanılıp **malloc** belirlediği yeni işleyici yordamı çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** yeni işleyici yordamı bellek ayırma hatası çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** yeni işleyici yordamını aynı çağırıyor biçimi **yeni** işleci mu aynı nedenden dolayı başarısız olduğunda. Daha fazla bilgi için bkz: [yeni](../../cpp/new-operator-cpp.md) ve [silmek](../../cpp/delete-operator-cpp.md) işleçleri *C++ dil başvurusu*. Varsayılan değer geçersiz kılmak için arayın:
+C++ **_set_new_mode** işlevi için yeni işleyici modunu ayarlar [malloc](malloc.md). Yeni işleyici modunu gösterir mi, hata durumunda, **malloc** tarafından belirlenen yeni işleyici rutinini çağırmaktır [_set_new_handler](set-new-handler.md). Varsayılan olarak, **malloc** bellek dağıtma hatasında yeni işleyici rutinini çağırmaz. Bu varsayılan davranışı geçersiz kılabilirsiniz böylece, **malloc** bellek ayırmak başarısız **malloc** aynı yeni işleyici rutinini çağırır biçimi **yeni** işleci yok aynı nedenden dolayı başarısız olduğunda. Daha fazla bilgi için [yeni](../../cpp/new-operator-cpp.md) ve [Sil](../../cpp/delete-operator-cpp.md) işleçleri *C++ dil başvurusu*. Varsayılan geçersiz kılmak için çağırın:
 
 ```cpp
 _set_new_mode(1);
 ```
 
-program veya Newmode.obj bağlantısıyla erkenden (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
+program ya da Newmode.obj ile erken (bkz [bağlantı seçenekleri](../../c-runtime-library/link-options.md)).
 
-Bu işlev, parametre doğrular. Varsa *newhandlermode* 0 veya 1, işlev dışındaki çağırır geçersiz parametre işleyicisi olarak herhangi bir şey açıklanan [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_ *** set_new_mode** -1 döndürür ve ayarlar **errno** için **EINVAL**.
+Bu işlev, parametresini doğrular. Varsa *newhandlermode* 0 veya 1 ise, işlev dışındaki çağırır, geçersiz parametre işleyicisi olarak herhangi bir şey açıklanan [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse <strong>_set_new_mode</strong> -1 döndürür ve ayarlar **errno** için `EINVAL`.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -78,7 +78,7 @@ Bu işlev, parametre doğrular. Varsa *newhandlermode* 0 veya 1, işlev dışın
 |-------------|---------------------|
 |**_set_new_mode**|\<New.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

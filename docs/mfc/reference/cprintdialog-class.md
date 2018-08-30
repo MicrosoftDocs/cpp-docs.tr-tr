@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1495a0674cf29d5090c2fff3a1639f5a1646f490
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 6bd5f5c0840e90efe4d1e495181cbe5667c86b48
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852342"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197518"
 ---
 # <a name="cprintdialog-class"></a>CPrintDialog sınıfı
 Yazdırma için Windows ortak iletişim kutusu tarafından sağlanan hizmetleri kapsüller.  
@@ -112,7 +112,7 @@ class CPrintDialog : public CCommonDialog
   
  Uygulamanızın framework'ün katılımı olmadan yazdırmak işlemesini istiyorsanız, kullanabileceğiniz `CPrintDialog` sağlanan oluşturucuyla "olduğu gibi" sınıf ya da kendi iletişim sınıftan türetilip `CPrintDialog` ve ihtiyaçlarınıza uyacak şekilde bir oluşturucu yazma. Sınıfından türetildiği her iki durumda da, bu iletişim kutularından standart MFC iletişim kutuları gibi davranır `CCommonDialog`.  
   
- Kullanılacak bir `CPrintDialog` nesne, ilk nesnesini kullanarak oluşturun `CPrintDialog` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_pd](#m_pd) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. `m_pd` Yapısıdır türünü [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Kullanılacak bir `CPrintDialog` nesne, ilk nesnesini kullanarak oluşturun `CPrintDialog` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_pd](#m_pd) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. `m_pd` Yapısıdır türünü [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  Kendi işleyicileri sağlamazsanız `m_pd` için `hDevMode` ve `hDevNames` üyeleri, Windows işlevi çağırma mutlaka `GlobalFree` iletişim kutusu ile işiniz bittiğinde bu tanıtıcıları için. Framework'ün yazıcı ayarları uygulama tarafından sağlanan kullanırken `CWinApp::OnFilePrintSetup`, bu tanıtıcıları ücretsiz gerekmez. İşler tarafından korunur `CWinApp` ve serbest bırakılan `CWinApp`'s yıkıcı. Yalnızca bu tanıtıcıları kullanırken boşaltmak gerekli olan `CPrintDialog` tek başına.  
   
@@ -163,7 +163,7 @@ CPrintDialog(
  Standart Windows yazdırma iletişim kutusu veya yazıcı ayarları iletişim kutusunda görüntülenip görüntülenmeyeceğini belirtir. Bu parametre için standart Windows Sayfa Yapısı iletişim kutusu görüntülemek true olarak ayarlayın. Windows Yazdır iletişim kutusunu görüntülemek için FALSE olarak ayarlayın. Varsa *bPrintSetupOnly* yanlış, bir yazdırma Kurulumu yazdırma iletişim kutusunda seçenek düğmesini gösterilmeye devam eder.  
   
  *CertOpenStore*  
- Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, PD_ALLPAGES bayrağı, tüm belge sayfaları varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
+ Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, PD_ALLPAGES bayrağı, tüm belge sayfaları varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
   
  *pParentWnd*  
  İletişim kutusunun üst veya sahip penceresine bir işaretçi.  
@@ -171,13 +171,13 @@ CPrintDialog(
 ### <a name="remarks"></a>Açıklamalar  
  Bu üye işlevi yalnızca bir nesne oluşturur. Kullanım `DoModal` iletişim kutusunu görüntülemek için üye işlevi.  
   
- Oluşturucuyla çağırdığınızda unutmayın *bPrintSetupOnly* FALSE olarak ayarlanırsa PD_RETURNDC bayrağı otomatik olarak kullanılır. Arama sonra `DoModal`, `GetDefaults`, veya `GetPrinterDC`, yazıcı DC içinde döndürülen `m_pd.hDC`. Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) çağıran tarafından `CPrintDialog`.  
+ Oluşturucuyla çağırdığınızda unutmayın *bPrintSetupOnly* FALSE olarak ayarlanırsa PD_RETURNDC bayrağı otomatik olarak kullanılır. Arama sonra `DoModal`, `GetDefaults`, veya `GetPrinterDC`, yazıcı DC içinde döndürülen `m_pd.hDC`. Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) çağıran tarafından `CPrintDialog`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#174](../../mfc/codesnippet/cpp/cprintdialog-class_1.cpp)]  
   
 ##  <a name="createprinterdc"></a>  CPrintDialog::CreatePrinterDC  
- Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
+ Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
 ```  
 HDC CreatePrinterDC();
@@ -200,7 +200,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.  
   
  IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
@@ -209,7 +209,7 @@ virtual INT_PTR DoModal();
   
  Arama sonra `DoModal`, diğer üye işlevleri, kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırabilirsiniz.  
   
- Oluşturucuyla çağırdığınızda unutmayın *bPrintSetupOnly* FALSE olarak ayarlanırsa PD_RETURNDC bayrağı otomatik olarak kullanılır. Arama sonra `DoModal`, `GetDefaults`, veya `GetPrinterDC`, yazıcı DC içinde döndürülen `m_pd.hDC`. Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) çağıran tarafından `CPrintDialog`.  
+ Oluşturucuyla çağırdığınızda unutmayın *bPrintSetupOnly* FALSE olarak ayarlanırsa PD_RETURNDC bayrağı otomatik olarak kullanılır. Arama sonra `DoModal`, `GetDefaults`, veya `GetPrinterDC`, yazıcı DC içinde döndürülen `m_pd.hDC`. Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) çağıran tarafından `CPrintDialog`.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CPrintDialog::CreatePrinterDC](#createprinterdc).  
@@ -245,7 +245,7 @@ BOOL GetDefaults();
   
  Bazı durumlarda, bu işlev çağrısı çağıracak [Oluşturucusu](#cprintdialog) için `CPrintDialog` ile *bPrintSetupOnly* FALSE olarak ayarlayın. Bu gibi durumlarda, bir yazıcı DC ve `hDevNames` ve `hDevMode` (iki tanıtıcıları bulunan `m_pd` veri üyesi) otomatik olarak ayrılır.  
   
- IF için oluşturucu `CPrintDialog` ile çağrıldı *bPrintSetupOnly* FALSE olarak ayarlanırsa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` bulunan `m_pd.hDevNames` ve `m_pd.hDevMode`), çağırana ancak Ayrıca, bir yazıcı DC döndürür `m_pd.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialog` nesne.  
+ IF için oluşturucu `CPrintDialog` ile çağrıldı *bPrintSetupOnly* FALSE olarak ayarlanırsa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` bulunan `m_pd.hDevNames` ve `m_pd.hDevMode`), çağırana ancak Ayrıca, bir yazıcı DC döndürür `m_pd.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialog` nesne.  
   
 ### <a name="example"></a>Örnek  
  Bu kod parçası varsayılan yazıcının cihaz bağlamını alır ve yazıcı inç başına nokta çözünürlüğünü kullanıcıya bildirir. (Bu öznitelik yazıcının özellikler genellikle DPI adlandırılır.)  
@@ -278,7 +278,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK'da açıklanan işlevi.  
+ [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK'da açıklanan işlevi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) veya [GetDefaults](#getdefaults) yazdırma cihaz hakkında bilgi almak için.  
@@ -345,7 +345,7 @@ HDC GetPrinterDC() const;
  Başarılı olursa yazıcı cihaz bağlamı için bir tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *bPrintSetupOnly* parametresinin `CPrintDialog` Oluşturucusu olan FALSE (Yazdır iletişim kutusunun görüntülendiğini gösterir), ardından `GetPrinterDC` yazıcı cihaz bağlamı için bir tanıtıcı döndürür. Windows çağırmalıdır [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) işlevi işiniz bittiğinde, cihaz bağlam silmek için onu kullanarak.  
+ Varsa *bPrintSetupOnly* parametresinin `CPrintDialog` Oluşturucusu olan FALSE (Yazdır iletişim kutusunun görüntülendiğini gösterir), ardından `GetPrinterDC` yazıcı cihaz bağlamı için bir tanıtıcı döndürür. Windows çağırmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) işlevi işiniz bittiğinde, cihaz bağlam silmek için onu kullanarak.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#109](../../mfc/codesnippet/cpp/cprintdialog-class_5.cpp)]  
@@ -374,7 +374,7 @@ PRINTDLG& m_pd;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `CPrintDialog` nesne kullanabileceğiniz `m_pd` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak [DoModal](#domodal) üye işlevi. Daha fazla bilgi için `m_pd` yapısı için bkz: [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) Windows SDK.  
+ Oluşturma sonrasında bir `CPrintDialog` nesne kullanabileceğiniz `m_pd` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak [DoModal](#domodal) üye işlevi. Daha fazla bilgi için `m_pd` yapısı için bkz: [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) Windows SDK.  
   
  Değiştirirseniz `m_pd` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.  
   

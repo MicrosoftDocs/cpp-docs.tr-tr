@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: add135c353366ed54a24c63fcce2101c49d24fe7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c767b39874ff64082d8533f92a9e006f69835c97
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338587"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205941"
 ---
 # <a name="cclientdc-class"></a>CClientDC sınıfı
-Windows işlevlerini çağırma üstlenir [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) oluşturma zamanında ve [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) yok etme.  
+Windows işlevlerini çağırma üstlenir [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -77,7 +77,7 @@ explicit CClientDC(CWnd* pWnd);
  Pencere istemci alanını cihaz bağlamındaki erişim sağlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Windows işlevi oluşturucuyu çağırır [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871).  
+ Windows işlevi oluşturucuyu çağırır [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc).  
   
  Bir özel durum (tür `CResourceException`) oluşturulur Windows `GetDC` çağrısı başarısız olur. Bir cihaz bağlamı Windows zaten tüm kendi kullanılabilir cihaz bağlamları ayırdığı kullanılabilir olmayabilir. Uygulamanız için beş ortak görüntü bağlamlarında kullanılabilir Windows altında herhangi bir belirli zamanda rekabet.  
   

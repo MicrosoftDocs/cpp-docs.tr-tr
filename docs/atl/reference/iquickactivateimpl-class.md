@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9131a1cc1f8d0c66f2eb3616f4903db74ea4bdf0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6de7ee0ede844ce05b59b13e2f8acd7e6068220b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881379"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204514"
 ---
 # <a name="iquickactivateimpl-class"></a>Iquickactivateımpl sınıfı
 Bu sınıf, kapsayıcılar denetimi başlatma tek bir çağrı halinde birleştirir.  
@@ -58,7 +58,7 @@ class ATL_NO_VTABLE IQuickActivateImpl : public IQuickActivate
 |[IQuickActivateImpl::SetContentExtent](#setcontentextent)|Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IQuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms690146) arabirimi denetimleri, tek bir çağrı başlatma birleştirerek yüklenirken gecikmeleri önlemek kapsayıcıları yardımcı olur. `QuickActivate` Yöntemi sağlayan bir işaretçiyi kapsayıcıya bir [QACONTAINER](http://msdn.microsoft.com/library/windows/desktop/ms688630) tüm arabirimleri denetimi işaretçileri tutan yapı gerekiyor. Getirisi, denetim için bir işaretçi geri geçer bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı tarafından kullanılan kendi arabirimlerine işaretçileri tutan yapı. Sınıf `IQuickActivateImpl` bir varsayılan uygulamayı sağlar `IQuickActivate` ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IQuickActivate](/windows/desktop/api/ocidl/nn-ocidl-iquickactivate) arabirimi denetimleri, tek bir çağrı başlatma birleştirerek yüklenirken gecikmeleri önlemek kapsayıcıları yardımcı olur. `QuickActivate` Yöntemi sağlayan bir işaretçiyi kapsayıcıya bir [QACONTAINER](/windows/desktop/api/ocidl/ns-ocidl-tagqacontainer) tüm arabirimleri denetimi işaretçileri tutan yapı gerekiyor. Getirisi, denetim için bir işaretçi geri geçer bir [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) kapsayıcı tarafından kullanılan kendi arabirimlerine işaretçileri tutan yapı. Sınıf `IQuickActivateImpl` bir varsayılan uygulamayı sağlar `IQuickActivate` ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -80,7 +80,7 @@ STDMETHOD(GetContentExtent)(LPSIZEL pSize);
 ### <a name="remarks"></a>Açıklamalar  
  Denetimin tam işleme için büyüklüğünde ve HIMETRIC birimleri cinsinden belirtilir.  
   
- Bkz: [IQuickActivate::GetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms693792) Windows SDK içinde.  
+ Bkz: [IQuickActivate::GetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-getcontentextent) Windows SDK içinde.  
   
 ##  <a name="quickactivate"></a>  IQuickActivateImpl::QuickActivate  
  Hızlı Başlatma yüklenen denetimleri gerçekleştirir.  
@@ -92,9 +92,9 @@ STDMETHOD(QuickActivate)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yapısı, Denetim ve ortam bazı özelliklerin değerlerini tarafından gerekli arabirim işaretçileri içerir. İade sırasında denetim için bir işaretçi geçirir. bir [QACONTROL](http://msdn.microsoft.com/library/windows/desktop/ms693721) kapsayıcı gerektiren kendi arabirimleri ve ek durum bilgilerini işaretçileri içeren yapısı.  
+ Yapısı, Denetim ve ortam bazı özelliklerin değerlerini tarafından gerekli arabirim işaretçileri içerir. İade sırasında denetim için bir işaretçi geçirir. bir [QACONTROL](/windows/desktop/api/ocidl/ns-ocidl-tagqacontrol) kapsayıcı gerektiren kendi arabirimleri ve ek durum bilgilerini işaretçileri içeren yapısı.  
   
- Bkz: [IQuickActivate::QuickActivate](http://msdn.microsoft.com/library/windows/desktop/ms682421) Windows SDK içinde.  
+ Bkz: [IQuickActivate::QuickActivate](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-quickactivate) Windows SDK içinde.  
   
 ##  <a name="setcontentextent"></a>  IQuickActivateImpl::SetContentExtent  
  Kapsayıcı atanmış ne kadar görüntüleme alanı denetim bildirir.  
@@ -106,7 +106,7 @@ STDMETHOD(SetContentExtent)(LPSIZEL pSize);
 ### <a name="remarks"></a>Açıklamalar  
  Boyutunu HIMETRIC birimleri cinsinden belirtilir.  
   
- Bkz: [IQuickActivate::SetContentExtent](http://msdn.microsoft.com/library/windows/desktop/ms678806) Windows SDK içinde.  
+ Bkz: [IQuickActivate::SetContentExtent](/windows/desktop/api/ocidl/nf-ocidl-iquickactivate-setcontentextent) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   

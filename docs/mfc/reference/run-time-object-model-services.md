@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2704e39ffced414e84236302c9ad31586226dd8d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 13e04c7f1ae9873ebf2d044dd8b6d6948e55a120
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027692"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197478"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 Sınıfları [CObject](../../mfc/reference/cobject-class.md) ve [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) çalışma süresi sınıf bilgilerine, seri hale getirme ve dinamik Nesne oluşturma dahil olmak üzere birçok nesne Hizmetleri kapsüller. Tüm sınıflar türetilen `CObject` bu işlevselliği devralır.  
@@ -87,7 +87,7 @@ AFX_COMCTL32_IF_EXISTS(  proc );
  İşlev adı içeren null ile sonlandırılmış bir dize işaretçisi veya işlev sıra değeri belirtir. Bu parametre bir sıra değeri ise, düşük düzey Word'de olmalıdır; dwpoint sıfır olmalıdır. Bu parametre, Unicode biçiminde olmalıdır.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212).  
+ Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212).  
    
 ### <a name="requirements"></a>Gereksinimler  
  afxcomctl32.h, afxcomctl32.inl  
@@ -107,7 +107,7 @@ AFX_COMCTL32_IF_EXISTS2( proc );
  İşlev adı içeren null ile sonlandırılmış bir dize işaretçisi veya işlev sıra değeri belirtir. Bu parametre bir sıra değeri ise, düşük düzey Word'de olmalıdır; dwpoint sıfır olmalıdır. Bu parametre, Unicode biçiminde olmalıdır.  
    
 ### <a name="remarks"></a>Açıklamalar  
- Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212). Bu makro afx_comctl32_ıf_exısts Unicode sürümüdür.  
+ Ortak Denetimler kitaplığı tarafından işlevi belirtilen olup olmadığını belirlemek için bu makroyu kullanın *proc* (çağırmak yerine [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212). Bu makro afx_comctl32_ıf_exısts Unicode sürümüdür.  
    
 ### <a name="requirements"></a>Gereksinimler  
  afxcomctl32.h, afxcomctl32.inl  
@@ -330,7 +330,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
     -   `afxRegApartmentThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar Grup =.    
     -   `afxRegFreeThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar ücretsiz =.  
       
-         İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK. 
+         İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK. 
    
  *m*, *w1*, *w2*, *b1*, *b2*, *b3*, *b4* , *b5*, *b6*, *b7*, *b8*  
  Sınıfın CLSID bileşenleri.  
@@ -350,7 +350,7 @@ IMPLEMENT_OLECREATE_FLAGS( class_name, external_name, nFlags,
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
  [DECLARE_OLECREATE](#declare_olecreate)   
- [CLSID anahtarı](http://msdn.microsoft.com/library/windows/desktop/ms691424)
+ [CLSID anahtarı](/windows/desktop/com/clsid-key-hklm)
 
 
 ## <a name="implement_olecreate"></a> IMPLEMENT_OLECTLTYPE
@@ -368,12 +368,12 @@ DECLARE_OLECTLTYPE( class_name, idsUserTypeName, dwOleMisc )
  Denetimin dış adını içeren bir dize kaynak kimliği.  
   
  *dwOleMisc*  
- Bir veya daha fazla bayrakları içeren bir sabit listesi. Bu sabit listesi hakkında daha fazla bilgi için bkz. [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) Windows SDK.  
+ Bir veya daha fazla bayrakları içeren bir sabit listesi. Bu sabit listesi hakkında daha fazla bilgi için bkz. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK.  
    
 ### <a name="remarks"></a>Açıklamalar  
  Implement_olectltype ek olarak, denetim sınıf bildiriminizin DECLARE_OLECTLTYPE makrosu eklemeniz gerekir.  
   
- `GetUserTypeNameID` Üye işlevi denetim sınıfınıza tanımlayan kaynak dizesi döndürür. `GetMiscStatus` OLEMISC bitlerin denetiminizin döndürür. Bu numaralandırma denetiminizin çeşitli özelliklerini açıklayan bir ayarlar koleksiyonu belirtir. OLEMISC ayarlarının tam bir açıklaması için bkz. [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) Windows SDK.  
+ `GetUserTypeNameID` Üye işlevi denetim sınıfınıza tanımlayan kaynak dizesi döndürür. `GetMiscStatus` OLEMISC bitlerin denetiminizin döndürür. Bu numaralandırma denetiminizin çeşitli özelliklerini açıklayan bir ayarlar koleksiyonu belirtir. OLEMISC ayarlarının tam bir açıklaması için bkz. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) Windows SDK.  
   
 > [!NOTE]
 >  ActiveX ControlWizard tarafından kullanılan varsayılan ayarlar şunlardır: OLEMISC_ACTIVATEWHENVISIBLE, OLEMISC_SETCLIENTSITEFIRST OLEMISC_INSIDEOUT OLEMISC_CANTLINKINSIDE ve OLEMISC_RECOMPOSEONRESIZE.  

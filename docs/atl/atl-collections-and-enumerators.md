@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9837b42148062bdd2c44855c129f085ca47cdec0
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 00265d3ce0f8ea867021500777d93991d245be47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848800"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204819"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL Koleksiyonları ve Numaralandırmalar
 A `collection` veri öğelerinin (Ham verileri veya diğer nesneleri) bir gruba erişim sağlayan bir arabirim sunan bir COM nesnesi olması. Bir grup nesne erişimi sağlama olarak da bilinen için standartlarını takip eden bir arabirim bir *koleksiyon arabirimi*.  
@@ -31,7 +31,7 @@ A `collection` veri öğelerinin (Ham verileri veya diğer nesneleri) bir gruba 
   
  Bir `enumerator` bir koleksiyondaki öğelerin üzerinden yineleme için bir arabirim sunan bir COM nesnesi. Numaralandırıcı arabirimleri dört gerekli yöntemleri aracılığıyla bir koleksiyonun öğeleri seri erişim sağlar: `Next`, `Skip`, `Reset`, ve `Clone`.  
   
- Numaralandırıcı arabirimleri hakkında daha fazla bilgi okumayı archetypal (ancak tamamen sanal) tarafından edinebilirsiniz [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx) arabirimi.  
+ Numaralandırıcı arabirimleri okuyarak hakkında daha fazla başvuru içeriği aşağıdaki gibi edinebilirsiniz [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) arabirimi.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [ATL Koleksiyonu ve Numaralandırıcısı Sınıfları](../atl/atl-collection-and-enumerator-classes.md)  

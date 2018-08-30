@@ -1,5 +1,5 @@
 ---
-title: Visual C++ 64-bit, x64 için yapılandırma hedefleri | Microsoft Docs
+title: Visual C++ 64 bit x64 için yapılandırma hedefleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5eaae71fb55b176ee4903978a6b4b5a8624dc049
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e1054343d5e6afbc739fe302870b43eb9526f7d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366815"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196995"
 ---
-# <a name="configure-visual-c-for-64-bit-x64-targets"></a>Visual C++ 64-bit, x64 için yapılandırma hedefleri
+# <a name="configure-visual-c-for-64-bit-x64-targets"></a>Visual C++ 64 bit x64 için yapılandırma hedefleri
 
-Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım ile Visual C++ derleme araçları.  
+Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım Visual c++ derleme araçları.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
@@ -49,7 +49,7 @@ Bu bölümdeki konular içerir 64-bit x64 hedefleme hakkında donanım ile Visua
   
 [/favor (Mimari Özellikleri için İyileştirme)](../build/reference/favor-optimize-for-architecture-specifics.md)  
   
-[64-bit Windows için Programlama Kılavuzu](http://msdn.microsoft.com/library/windows/desktop/bb427430)  
+[64 bit Windows için Programlama Kılavuzu](/windows/desktop/WinProg64/programming-guide-for-64-bit-windows)  
   
 [x64 (ml64.exe) için MASM](../assembler/masm/masm-for-x64-ml64-exe.md)  
   

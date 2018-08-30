@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b68ebd20d449c11ac8c62a6a01c086dbe566811
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: ccfb9c8873ff7e954e4e8169fafb94c53e6a311e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027679"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205993"
 ---
 # <a name="ctime-class"></a>CTime sınıfı
 Bir mutlak saatini ve tarihini temsil eder.  
@@ -66,7 +66,7 @@ class CTime
 |[CTime::Format](#format)|Dönüştürür bir `CTime` bir biçimlendirilmiş dize nesnesine — yerel saat dilimi temel alınarak.|  
 |[CTime::FormatGmt](#formatgmt)|Dönüştürür bir `CTime` bir biçimlendirilmiş dize nesnesine — UTC temel.|  
 |[CTime::GetAsDBTIMESTAMP](#getasdbtimestamp)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu DBTIMESTAMP yapısı için nesne.|  
-|[CTime::GetAsSystemTime](#getassystemtime)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.|  
+|[CTime::GetAsSystemTime](#getassystemtime)|Depolanan saat bilgisi dönüştürür `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.|  
 |[CTime::GetCurrentTime](#getcurrenttime)|Oluşturur bir `CTime` (statik üye işlevini) geçerli zamanı temsil eden nesne.|  
 |[CTime::GetDay](#getday)|Günü temsil tarafından döndürür `CTime` nesne.|  
 |[CTime::GetDayOfWeek](#getdayofweek)|Tarafından temsil edilen haftanın gününü döndürür `CTime` nesne.|  
@@ -210,7 +210,7 @@ CTime(const DBTIMESTAMP& dbts,int nDST = -1) throw();
     > [!NOTE]
     >  Oluşturucu kullanılarak `DBTIMESTAMP` parametresi, yalnızca kullanılabilir biçim dahil edildiğinde.  
   
- Daha fazla bilgi için [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK'sındaki yapısı. Ayrıca bkz: [MS-DOS tarih ve saat](http://msdn.microsoft.com/library/windows/desktop/ms724503) Windows SDK'sı girişi.  
+ Daha fazla bilgi için [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) ve [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) Windows SDK'sındaki yapısı. Ayrıca bkz: [MS-DOS tarih ve saat](/windows/desktop/SysInfo/ms-dos-date-and-time) Windows SDK'sı girişi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#148](../../atl-mfc-shared/codesnippet/cpp/ctime-class_2.cpp)]  
@@ -288,7 +288,7 @@ bool GetAsDBTIMESTAMP(DBTIMESTAMP& dbts) const throw();
  [!code-cpp[NVC_ATLMFC_Utilities#150](../../atl-mfc-shared/codesnippet/cpp/ctime-class_4.cpp)]  
   
 ##  <a name="getassystemtime"></a>  CTime::GetAsSystemTime  
- Depolanan saat bilgisi dönüştürmek için bu üye işlevi çağrısı `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.  
+ Depolanan saat bilgisi dönüştürmek için bu üye işlevi çağrısı `CTime` Win32 uyumlu nesnesine [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.  
   
 ```  
 bool GetAsSystemTime(SYSTEMTIME& st) const throw();
@@ -296,7 +296,7 @@ bool GetAsSystemTime(SYSTEMTIME& st) const throw();
   
 ### <a name="parameters"></a>Parametreler  
  *timeDest*  
- Bir başvuru bir [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerini tutacak yapısı `CTime` nesne.  
+ Bir başvuru bir [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) dönüştürülen bir tarih/saat değerini tutacak yapısı `CTime` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  

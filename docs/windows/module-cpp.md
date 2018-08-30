@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e25f33e882769219200e6b9a6f8a0949a01d661
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a119ebcccea3881d7b595e0581e23f53c656b91c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593363"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200224"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -73,7 +73,7 @@ Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan 
 Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (** *libraryname* **)**.
 
 *lcid*  
-Yerelleştirme parametre. Bkz: [LCID](http://msdn.microsoft.com/library/windows/desktop/aa367067) daha fazla bilgi için.
+Yerelleştirme parametre. Bkz: [LCID](/windows/desktop/Midl/lcid) daha fazla bilgi için.
 
 *Denetim* (isteğe bağlı)  
 Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
@@ -82,7 +82,7 @@ Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
 Tür kitaplığını belirtir.
 
 *helpstringdll* (isteğe bağlı)  
-Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](http://msdn.microsoft.com/library/windows/desktop/aa366860) daha fazla bilgi için.
+Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](/windows/desktop/Midl/helpstringdll) daha fazla bilgi için.
 
 *HelpFile* (isteğe bağlı)  
 Adını **yardımcı** tür kitaplığı dosyası.
@@ -94,10 +94,10 @@ Adını **yardımcı** tür kitaplığı dosyası.
 Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.
 
 *Gizli* (isteğe bağlı)  
-Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.
+Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
 *kısıtlı* (isteğe bağlı)  
-Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) daha fazla bilgi için MIDL özniteliği.
+Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
 *özel* (isteğe bağlı)  
 Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
@@ -124,15 +124,15 @@ Bu öznitelik ATL kullanan bir proje içinde kullanılıyorsa, öznitelik davran
 
 - `type` = **dll**
 
-   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583), [DllRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](http://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](http://msdn.microsoft.com/library/windows/desktop/ms690368), ve [ DllGetClassObject](http://msdn.microsoft.com/library/windows/desktop/dd797891).
+   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) taban sınıfı ve standart DLL girdi kullanılan noktaları için bir COM sunucusu gerekir. Bu giriş noktalarıdır [DllMain](/windows/desktop/Dlls/dllmain), [DllRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms682162), [DllUnRegisterServer](https://msdn.microsoft.com/library/windows/desktop/ms691457), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](https://msdn.microsoft.com/library/windows/desktop/dd797891).
 
 - `type` = **exe**
 
-   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **Hizmet**
 
-   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559).
+   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) taban sınıfı ve standart bir yürütülebilir giriş noktası kullanılan [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559).
 
 - `type` = **Belirtilmemiş**
 
@@ -193,7 +193,7 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
 [Typedef, Enum, Union ve Struct Öznitelikleri](../windows/typedef-enum-union-and-struct-attributes.md)  
 [usesgetlasterror](../windows/usesgetlasterror.md)  
-[Kitaplık](http://msdn.microsoft.com/library/windows/desktop/aa367069)  
+[Kitaplık](/windows/desktop/Midl/library)  
 [helpcontext](../windows/helpcontext.md)  
 [helpstring](../windows/helpstring.md)  
 [helpfile](../windows/helpfile.md)  

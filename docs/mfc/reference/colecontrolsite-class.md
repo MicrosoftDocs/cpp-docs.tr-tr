@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c6f84f575edbcaf8ecc64f424f3225d969d6a7f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f79917e34a749048696f320a8311978acc2739f4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850361"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202861"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 Özel istemci tarafı denetim arabirimleri için destek sağlar.  
@@ -205,7 +205,7 @@ class COleControlSite : public CCmdTarget
 |[COleControlSite::m_rect](#m_rect)|Denetim site boyutları.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu destek, katıştırılmış bir ActiveX denetimi konumu ve görüntüleneceği site, takma adı, kullanıcı arabirimi, ortam özellikleri ve kapsayıcısı tarafından sağlanan diğer kaynaklar hakkında bilgi edinir birincil yoludur. `COleControlSite` tam olarak uygular [IOleControlSite](http://msdn.microsoft.com/library/windows/desktop/ms688502), [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706), [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638), `IBoundObjectSite`, `INotifyDBEvents`, [IRowsetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arabirimleri. Ayrıca, (ortam özellikleri ve olay havuzlar için destek sunarak) IDispatch de uygulanır.  
+ Bu destek, katıştırılmış bir ActiveX denetimi konumu ve görüntüleneceği site, takma adı, kullanıcı arabirimi, ortam özellikleri ve kapsayıcısı tarafından sağlanan diğer kaynaklar hakkında bilgi edinir birincil yoludur. `COleControlSite` tam olarak uygular [IOleControlSite](/windows/desktop/api/ocidl/nn-ocidl-iolecontrolsite), [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite), [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), `IBoundObjectSite`, `INotifyDBEvents`, [IRowsetNotify](../../data/oledb/irowsetnotifyimpl-class.md) arabirimleri. Ayrıca, (ortam özellikleri ve olay havuzlar için destek sunarak) IDispatch de uygulanır.  
   
  Bir ActiveX denetimi sitesi kullanılarak oluşturulacak `COleControlSite`, öğesinden bir sınıf türetin `COleControlSite`. İçinde `CWnd`-türetilmiş sınıf ' % s'kapsayıcı (örneğin, iletişim kutusu) için geçersiz kılma `CWnd::CreateControlSite` işlevi.  
   
@@ -406,7 +406,7 @@ virtual HRESULT DoVerb(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev denetimin doğrudan çağıran `IOleObject` belirtilen fiili yürütmek için arabirim. Bu işlev çağrısının sonucu olarak bir özel durum, bir HRESULT hata kodu döndürülür.  
   
- Daha fazla bilgi için [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK.  
+ Daha fazla bilgi için [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.  
   
 ##  <a name="enabledsc"></a>  COleControlSite::EnableDSC  
  Denetim site için kaynak Hizmeti'nden verinin sağlar.  
@@ -676,7 +676,7 @@ CONTROLINFO m_ctlInfo;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu bilgiler depolanan bir [CONTROLINFO](http://msdn.microsoft.com/library/windows/desktop/ms680734) yapısı.  
+ Bu bilgiler depolanan bir [CONTROLINFO](/windows/desktop/api/ocidl/ns-ocidl-tagcontrolinfo) yapısı.  
   
 ##  <a name="m_dweventsink"></a>  COleControlSite::m_dwEventSink  
  Denetimin olay havuzu öğesinden bağlantı noktasının tanımlama bilgisi içeriyor.  
@@ -693,10 +693,10 @@ DWORD m_dwMiscStatus;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497)Windows SDK.  
+ Daha fazla bilgi için [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc)Windows SDK.  
   
 ##  <a name="m_dwpropnotifysink"></a>  COleControlSite::m_dwPropNotifySink  
- İçeren [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) tanımlama bilgisi.  
+ İçeren [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) tanımlama bilgisi.  
   
 ```  
 DWORD m_dwPropNotifySink;  
@@ -731,7 +731,7 @@ UINT m_nID;
 ```  
   
 ##  <a name="m_pactiveobject"></a>  COleControlSite::m_pActiveObject  
- İçeren [IOleInPlaceActiveObject](http://msdn.microsoft.com/library/windows/desktop/ms691299) arabirim denetimi.  
+ İçeren [IOleInPlaceActiveObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceactiveobject) arabirim denetimi.  
   
 ```  
 LPOLEINPLACEACTIVEOBJECT m_pActiveObject;  
@@ -745,7 +745,7 @@ COleControlContainer* m_pCtrlCont;
 ```  
   
 ##  <a name="m_pinplaceobject"></a>  COleControlSite::m_pInPlaceObject  
- İçeren `IOleInPlaceObject` [IOleInPlaceObject](http://msdn.microsoft.com/library/windows/desktop/ms692646) arabirim denetimi.  
+ İçeren `IOleInPlaceObject` [IOleInPlaceObject](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceobject) arabirim denetimi.  
   
 ```  
 LPOLEINPLACEOBJECT m_pInPlaceObject;  
@@ -759,7 +759,7 @@ LPOLEOBJECT m_pObject;
 ```  
   
 ##  <a name="m_pwindowlessobject"></a>  COleControlSite::m_pWindowlessObject  
- İçeren `IOleInPlaceObjectWindowless` [IOleInPlaceObjectWindowless](http://msdn.microsoft.com/library/windows/desktop/ms687304) arabirim denetimi.  
+ İçeren `IOleInPlaceObjectWindowless` [IOleInPlaceObjectWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) arabirim denetimi.  
   
 ```  
 IOleInPlaceObjectWindowless* m_pWindowlessObject;  
@@ -797,7 +797,7 @@ virtual BOOL ModifyStyle(
  Geçerli pencere stilleri eklenecek stilleri.  
   
  *nFlags*  
- Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aksi halde sıfır stilleri değiştiğinde olursa sıfır dışı.  
@@ -805,7 +805,7 @@ virtual BOOL ModifyStyle(
 ### <a name="remarks"></a>Açıklamalar  
  Denetimin stok özelliği ws_dısabled ayarını eşleşecek şekilde değiştirilecek. Denetimin stok kenarlık stili özellik WS_BORDER istenen ayarını eşleşecek şekilde değiştirilecek. Varsa, doğrudan denetimin pencere işleyicisi, diğer tüm stiller uygulanır.  
   
- Pencere stilleri bir denetimin değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
+ Pencere stilleri bir denetimin değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyle` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -837,7 +837,7 @@ virtual BOOL ModifyStyleEx(
  Genişletilmiş stiller, geçerli pencere stilleri eklenecek.  
   
  *nFlags*  
- Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aksi halde sıfır stilleri değiştiğinde olursa sıfır dışı.  
@@ -845,7 +845,7 @@ virtual BOOL ModifyStyleEx(
 ### <a name="remarks"></a>Açıklamalar  
  Denetimin stoğu görünümü özelliği WS_EX_CLIENTEDGE ayarını eşleşecek şekilde değiştirilecek. Varsa, doğrudan denetimin pencere işleyicisi, diğer tüm genişletilmiş pencere stilleri uygulanır.  
   
- Genişletilmiş stiller denetim site nesnesinin penceresini değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
+ Genişletilmiş stiller denetim site nesnesinin penceresini değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -1051,7 +1051,7 @@ virtual BOOL SetWindowPos(
  Pencerenin yeni yüksekliği.  
   
  *nFlags*  
- Pencerenin boyutlandırma ve konumlandırma bayrakları belirtir. Olası değerler için için Açıklamalar bölümüne bakın [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK.  
+ Pencerenin boyutlandırma ve konumlandırma bayrakları belirtir. Olası değerler için için Açıklamalar bölümüne bakın [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıfır olmayan başarılı olursa sıfır, aksi takdirde.  

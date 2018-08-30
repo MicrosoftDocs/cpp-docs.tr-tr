@@ -1,7 +1,7 @@
 ---
 title: NMAKE önemli hatası U1059 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eb038befdb7c587c6fe2a734003abba585c3e2a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b54919398c757bfe05f747ff57341f31decfc61
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320709"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200796"
 ---
 # <a name="nmake-fatal-error-u1059"></a>NMAKE Önemli Hatası U1059
-sözdizimi hatası: '}' içinde bağımlı eksik  
-  
- Bağımlı bir arama yolu yanlış belirtildi. Yol veya kapanış ayracı ya da boşluk var (**}**) atlandı.  
-  
- Bağımlı bir dizin belirtimi sözdizimi  
-  
- **{**   
- ***dizinleri* } bağımlı**  
-  
- Burada `directories` bir veya daha fazla yolları, her bir noktalı virgülle ayrılmış belirtir (**;**). Boşluk izin verilir.  
-  
- Bölümünü veya tümünü bir arama yolu bir makro değiştirirse, boşluk makrosu genişletme var emin olun.
+
+> sözdizimi hatası: '}' bağımlıda eksik
+
+Bağımlı bir arama yolunu yanlış şekilde belirtildi. Ya da bir alan yolu veya kapanış ayracı var (**}**) atlandı.
+
+Bağımlı bir dizin belirtimi için sözdizimi
+
+> **{** *dizinleri* **} bağımlı**
+
+Burada *dizinleri* bir veya daha fazla yol, noktalı virgülle ayırarak belirtir (**;**). Boşluk olmayan izin verilir.
+
+Kısmını veya tümünü bir arama yolu bir makro tarafından değiştirilirse, makro genişletme içinde boşluk olmadan var olduğundan emin olun.

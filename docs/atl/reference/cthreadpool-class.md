@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f55f7d676988e43216adbf6e8a0b6c21afd958a3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d8371ec583bd8b9ee4962445e4c2b6f2fbfa6280
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884093"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196968"
 ---
 # <a name="cthreadpool-class"></a>CThreadPool sınıfı
 Bu sınıf, iş öğelerinin bir kuyruğu işleyen çalışan iş parçacığı havuzu sağlar.  
@@ -83,9 +83,9 @@ class CThreadPool : public IThreadPoolConfig
 ## <a name="remarks"></a>Açıklamalar  
  İş parçacığı havuzunda oluşturulur ve Havuz başlatılmadı, yeniden boyutlandırılabilir veya kapatma yok. Sınıfının bir örneğini *çalışan* havuzdaki her bir çalışan iş parçacığı yığını üzerinde oluşturulur. Her örnek, iş parçacığının ömrü boyunca Canlı.  
   
- Bir iş parçacığı oluşturulduktan hemen sonra *çalışan*:: `Initialize` bu iş parçacığıyla ilişkilendirilmiş nesne üzerinde çağrılır. Bir iş parçacığı yok edilmesini hemen önce *çalışan*:: `Terminate` olarak adlandırılır. Her iki yöntem de kabul etmesi gereken bir **void\***  bağımsız değişken. Bu bağımsız değişkenin değeri iş parçacığı havuzu ile geçirilecek *pvWorkerParam* parametresinin [CThreadPool::Initialize](#initialize).  
+ Bir iş parçacığı oluşturulduktan hemen sonra *çalışan*::`Initialize` bu iş parçacığıyla ilişkilendirilmiş nesne üzerinde çağrılır. Bir iş parçacığı yok edilmesini hemen önce *çalışan*::`Terminate` olarak adlandırılır. Her iki yöntem de kabul etmesi gereken bir **void** <strong>\*</strong> bağımsız değişken. Bu bağımsız değişkenin değeri iş parçacığı havuzu ile geçirilecek *pvWorkerParam* parametresinin [CThreadPool::Initialize](#initialize).  
   
- İş öğesi olmadığında kuyruk ve çalışan iş parçacıkları iş için kullanılabilir, iş parçacığı çağrı ve kuyruk devre dışı bir öğe çeker `Execute` yöntemi *çalışan* iş parçacığı için nesne. Üç öğe ardından yönteme geçirilen: kuyruk aynı öğesinden `pvWorkerParam` geçirilen *çalışan*:: `Initialize` ve *çalışan*:: `Terminate`, bir işaretçi [ÇAKIŞAN](http://msdn.microsoft.com/library/windows/desktop/ms684342) IO tamamlama bağlantı noktası sırası için kullanılan yapısı.  
+ İş öğesi olmadığında kuyruk ve çalışan iş parçacıkları iş için kullanılabilir, iş parçacığı çağrı ve kuyruk devre dışı bir öğe çeker `Execute` yöntemi *çalışan* iş parçacığı için nesne. Üç öğe ardından yönteme geçirilen: kuyruk aynı öğesinden `pvWorkerParam` geçirilen *çalışan*:: `Initialize` ve *çalışan*:: `Terminate`, bir işaretçi [ÇAKIŞAN](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) IO tamamlama bağlantı noktası sırası için kullanılan yapısı.  
   
  *Çalışan* sınıfı bildirir iş parçacığı havuzunda bir typedef sağlayarak Sıraya alınacak öğelerin türünü *çalışan*:: `RequestType`. Bu tür bir iç ULONG_PTR gelen ve giden cast uyumlu olması gerekir.  
   
@@ -308,7 +308,7 @@ void Shutdown(DWORD dwMaxWait = 0) throw();
  İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler. 0 veya herhangi bir değer sağlanmazsa, bu yöntem ayarlanan zaman aşımı kullanacağı [CThreadPool::SetTimeout](#settimeout).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, havuzdaki tüm iş parçacıkları bir kapatma isteği gönderir. Zaman aşımı süresi dolarsa, bu yöntemi çağıran [TerminateThread](http://msdn.microsoft.com/library/windows/desktop/ms686717) değil çıkmak herhangi bir iş parçacığı üzerinde. Bu yöntem, sınıf yok ediciden otomatik olarak çağrılır.  
+ Bu yöntem, havuzdaki tüm iş parçacıkları bir kapatma isteği gönderir. Zaman aşımı süresi dolarsa, bu yöntemi çağıran [TerminateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-terminatethread) değil çıkmak herhangi bir iş parçacığı üzerinde. Bu yöntem, sınıf yok ediciden otomatik olarak çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ithreadpoolconfig arabirimi](../../atl/reference/ithreadpoolconfig-interface.md)   

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd7e3b405f5724abd1df5e0e8fcc35dcd2149153
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 03a47ea35740a7e5d019e4c932ec879f18e0714e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880108"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204032"
 ---
 # <a name="cpoint-class"></a>CPoint sınıfı
 Windows için benzer `POINT` yapısı.  
@@ -65,7 +65,7 @@ class CPoint : public tagPOINT
 ## <a name="remarks"></a>Açıklamalar  
  Ayrıca yönlendirmek üzere öğe işlevleri içerir `CPoint` ve [noktası](../../mfc/reference/point-structure1.md) yapıları.  
   
- A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapıları iki birbirinin yerine olduğundan.  
+ A `CPoint` nesnesi olabilir yerde kullanılan bir `POINT` yapısı kullanılır. Bu sınıfın "boyutu" ile etkileşim işleçleri ya da kabul [CSize](../../atl-mfc-shared/reference/csize-class.md) nesneleri veya [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapıları iki birbirinin yerine olduğundan.  
   
 > [!NOTE]
 >  Bu sınıf türetilir `tagPOINT` yapısı. (Adın `tagPOINT` için daha az kullanılan addır `POINT` yapısı.) Veri üyeleri buna `POINT` yapısını `x` ve `y`, erişilebilir veri üyeleri `CPoint`.  
@@ -103,7 +103,7 @@ CPoint(LPARAM dwPoint) throw();
  [NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan değerleri belirten `CPoint`.  
   
  *initSize*  
- [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.  
+ [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) başlatmak için kullanılan değerleri belirten `CPoint`.  
   
  *dwPoint*  
  Kümeleri `x` alt sıra sözcüğüne üye *dwPoint* ve `y` dwpoint üye *dwPoint*.  
@@ -158,7 +158,7 @@ void Offset(SIZE size) throw();
  Belirtir ( [noktası](../../mfc/reference/point-structure1.md) veya `CPoint`) dengelemek için `CPoint`.  
   
  *Boyutu*  
- Belirtir ( [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.  
+ Belirtir ( [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) veya [CSize](../../atl-mfc-shared/reference/csize-class.md)) dengelemek için `CPoint`.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATLMFC_Utilities#28](../../atl-mfc-shared/codesnippet/cpp/cpoint-class_1.cpp)]  
@@ -207,7 +207,7 @@ void operator+=(POINT point) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *Boyutu*  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
+ İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
  *Noktası*  
  İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
@@ -232,7 +232,7 @@ void operator-=(POINT point) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *Boyutu*  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
+ İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
  *Noktası*  
  İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
@@ -258,7 +258,7 @@ CRect operator+(const RECT* lpRect) const throw();
   
 ### <a name="parameters"></a>Parametreler  
  *Boyutu*  
- İçeren bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
+ İçeren bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
  *Noktası*  
  İçeren bir [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
@@ -292,7 +292,7 @@ CPoint operator-() const throw();
  A [noktası](../../mfc/reference/point-structure1.md) yapısı veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) nesne.  
   
  *Boyutu*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya [CSize](../../atl-mfc-shared/reference/csize-class.md) nesne.  
   
  *lpRect*  
  Bir işaretçi bir [RECT](../../mfc/reference/rect-structure1.md) yapısı veya [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne.  

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e386c9024ea7736adb2766488c1c51c80ff7177b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9caf6c9a47a667b57220b6bf577080d3548e94e9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379139"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198556"
 ---
 # <a name="tsaware-create-terminal-server-aware-application"></a>/TSAWARE (Terminal Sunucusu Algılayan Uygulama Oluştur)
 ```  
@@ -34,27 +34,27 @@ ms.locfileid: "32379139"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- / TSAWARE seçeneği program görüntünün isteğe bağlı üstbilgi IMAGE_OPTIONAL_HEADER DllCharacteristics alanında bir bayrak ayarlar. Terminal sunucusu bu bayrağı ayarlandığında, bazı değişiklikler uygulamaya yapmaz.  
+ / TSAWARE seçeneği program görüntüsünün isteğe bağlı üst bilgisindeki ımage_optıonal_header DllCharacteristics alanında bir bayrak ayarlar. Bu bayrak ayarlandığında Terminal sunucusu uygulamada bazı değişiklikler yapmaz.  
   
- Bir uygulama Terminal sunucusu kullanan (aynı zamanda eski uygulamayı olarak da bilinir) değilse, Terminal sunucusu çok kullanıcılı bir ortamda düzgün çalışması için eski uygulamayı için bazı değişiklikleri yapar. Örneğin, her kullanıcı sisteminin Windows dizini alınırken yerine bir Windows klasörü alır, Terminal sunucusu sanal bir Windows klasörü oluşturun. Bu kullanıcıların kendi INI dosyalara erişim sağlar. Ayrıca, Terminal sunucusu bazı ayarlamalar için eski bir uygulama kayıt yapar. Bu değişiklikler eski uygulamayı Terminal sunucusu üzerinde yüklenmesini yavaşlatabilir.  
+ Terminal sunucusu kullanan (eski bir uygulama olarak da bilinir) bir uygulama olmadığı durumlarda, Terminal sunucusu çok kullanıcılı bir ortamda düzgün çalışması için eski uygulamayı bazı değişiklikler yapar. Örneğin, her kullanıcı bir Windows klasörü sisteminin Windows dizini alınırken yerine alır, Terminal sunucusu sanal bir Windows klasörü oluşturun. Bu kullanıcıların kendi INİ dosyaları için erişim sağlar. Ayrıca, Terminal sunucusu kayıt defteri eski bir uygulama için bazı ayarlamalar yapar. Bu değişiklikler, Terminal sunucusu üzerinde eski uygulamayı yüklenmesini yavaş.  
   
- Terminal sunucusu kullanan bir uygulama ise, onu gerekir INI dosyalarına dayanan ne yazma **HKEY_CURRENT_USER** Kurulum sırasında kayıt defteri.  
+ Terminal sunucusu kullanan bir uygulama ise, gerekir INI dosyalarına dayanan ne yazma **HKEY_CURRENT_USER** Kurulum sırasında kayıt defteri.  
   
- / TSAWARE kullanın ve uygulamanızı hala INİ dosyaları kullanıyorsa, dosya sistemi tüm kullanıcılar tarafından paylaşılır. / TSAWARE uygulamanızla hala kabul edilebilir değilse bağlayabilirsiniz; Aksi takdirde /TSAWARE:NO kullanmanız gerekir.  
+ / TSAWARE kullandığınız ve uygulamanızı INİ dosyaları yine de kullanıyorsa, dosya sisteminin tüm kullanıcılar tarafından paylaşılır. Kabul edilebilir ise, / TSAWARE uygulamanızla hala bağlantı oluşturabilirsiniz; Aksi takdirde: No kullanmanız gerekir.  
   
- / TSAWARE seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bkz: [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md) ve [/VERSION](../../build/reference/version-version-information.md) bilgi.  
+ / TSAWARE seçeneği, Windows ve konsol uygulamaları için varsayılan olarak etkindir. Bkz: [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) ve [/VERSION](../../build/reference/version-version-information.md) bilgi.  
   
- / TSAWARE sürücüleri, vxd ya da DLL'ler için geçerli değil.  
+ / TSAWARE, sürücüleri, VxD veya dll için geçerli değil.  
   
- / TSAWARE ile DUMPBIN uygulamanın bağlı olduğu [/HEADERS](../../build/reference/headers.md) belirten bilgi görüntüler.  
+ / TSAWARE ile DUMPBIN uygulamanın bağlı olduğu [OPTIONAL](../../build/reference/headers.md) belirlememişse bu bağlamda bilgileri görüntüler.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **bağlayıcı** klasör.  
+2.  Tıklayın **bağlayıcı** klasör.  
   
-3.  Tıklatın **sistem** özellik sayfası.  
+3.  Tıklayın **sistem** özellik sayfası.  
   
 4.  Değiştirme **Terminal sunucusu** özelliği.  
   
@@ -65,5 +65,5 @@ ms.locfileid: "32379139"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
  [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
- [Kullanıcıya özgü bilgileri depolayan](http://msdn.microsoft.com/library/aa383452)   
- [Terminal Hizmetleri ortamında eski uygulamaları](https://msdn.microsoft.com/en-us/library/aa382957.aspx)
+ [Kullanıcıya özgü bilgileri depolayan](/windows/desktop/TermServ/storing-user-specific-information)   
+ [Terminal Hizmetleri ortamında eski uygulamaları](https://msdn.microsoft.com/library/aa382957.aspx)

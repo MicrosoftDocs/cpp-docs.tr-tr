@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e16aa9377676e415f416dc4f7dae9cb9f2a40dab
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ed85edeaf5400805d4628e10acab4cdf4af52082
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202736"
 ---
 # <a name="cinternetfile-class"></a>Cınternetfile sınıfı
 Internet protokolleri kullanan uzak sistemlerdeki dosyalara erişimi sağlar.  
@@ -258,7 +258,7 @@ virtual LPTSTR ReadString(
  Bir başvuru [CString](../../atl-mfc-shared/reference/cstringt-class.md) okuma satırın alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arabelleğe alınan düz veriler içeren bir işaretçi [Cınternetfile](../../mfc/reference/cinternetfile-class.md) nesne. Bu yönteme geçirilen arabellek veri türünden bağımsız olarak, tüm işlemeleri (örneğin, Unicode dönüştürme) veri çubuğunda gerçekleştirmez, döndürülen veri yapısına eşlemeniz gerekir böylece beklediğiniz gibi **void\***  türü döndürüldü.  
+ Arabelleğe alınan düz veriler içeren bir işaretçi [Cınternetfile](../../mfc/reference/cinternetfile-class.md) nesne. Bu yönteme geçirilen arabellek veri türünden bağımsız olarak, tüm işlemeleri (örneğin, Unicode dönüştürme) veri çubuğunda gerçekleştirmez, döndürülen veri yapısına eşlemeniz gerekir böylece beklediğiniz gibi **void** <strong>\*</strong> türü döndürüldü.  
   
  Dosya sonu herhangi bir veri okumadan ulaştıysanız NULL; veya, boolean, dosya sonu ise FALSE herhangi bir veri okumadan ulaşıldı.  
   
@@ -317,7 +317,7 @@ BOOL SetReadBufferSize(UINT nReadSize);
  İstenen arabellek boyutu bayt cinsinden.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Temel alınan WinINet API'leri değil arabelleğe alma gerçekleştirin, böylece verileri verimli bir şekilde okunması gereken veri miktarı bağımsız olarak okumak için uygulamanıza izin veren bir arabellek boyutu seçin. Her çağırırsanız [okuma](#read) normalde büyük aount içerir verilerinin (örneğin, dört veya daha fazla kilobayt), bir arabellek yapmanız gerekmez. Ancak, çağırırsanız `Read` verileri küçük öbeklere almak veya kullanıyorsanız [ReadString'i](#readstring) Okuma arabelleği uygulama performansını artıran sonra bir defada tek satır okumak için.  
@@ -338,7 +338,7 @@ BOOL SetWriteBufferSize(UINT nWriteSize);
  Arabelleğin bayt cinsinden boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  WinINet API'leri yok gerçekleştirmek arabelleğe alma, temel alınan verimli bir şekilde yazılacak veri miktarından bağımsız olarak veri yazmak uygulamanızın izin veren bir arabellek boyutu için seçin. Her çağırırsanız [yazma](#write) genellikle büyük bir miktarını içerir verilerinin (örneğin, dört veya daha fazla kilobayt teker teker), bir arabellek yapmanız gerekmez. Ancak, eğer [yazma](#write) küçük öbekler halinde veri yazmak için bir yazma arabelleği uygulamanızın performansını artırır.  

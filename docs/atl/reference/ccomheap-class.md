@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d45a999f777a2d497542544c2d3c7f079b7a32b0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c456aaa6f3448cf4386e0556773f2a9839702ccd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881610"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202428"
 ---
 # <a name="ccomheap-class"></a>CComHeap sınıfı
 Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) COM bellek ayırma işlevlerini kullanma.  
@@ -52,7 +52,7 @@ class CComHeap : public IAtlMemMgr
 |[CComHeap::Reallocate](#reallocate)|Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComHeap` bellek ayırma işlevleri dahil olmak üzere COM ayırma işlevlerini kullanarak uygulayan [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727), [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722), [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226)ve [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280). INT_MAX (2147483647) bayt için ayrılan maksimum belleğin eşittir.  
+ `CComHeap` bellek ayırma işlevleri dahil olmak üzere COM ayırma işlevlerini kullanarak uygulayan [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree), [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize)ve [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc). INT_MAX (2147483647) bayt için ayrılan maksimum belleğin eşittir.  
   
 ## <a name="example"></a>Örnek  
  Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -82,7 +82,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CComHeap::Free](#free) veya [CComHeap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727).  
+ Kullanılarak uygulanan [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc).  
   
 ##  <a name="free"></a>  CComHeap::Free  
  Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.  
@@ -96,7 +96,7 @@ virtual void Free(void* p) throw();
  Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılarak uygulanan [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722).  
+ Kullanılarak uygulanan [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree).  
   
 ##  <a name="getsize"></a>  CComHeap::GetSize  
  Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.  
@@ -113,7 +113,7 @@ virtual size_t GetSize(void* p) throw();
  Ayrılan bellek blok boyutu bayt cinsinden döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılarak uygulanan [IMalloc::GetSize](http://msdn.microsoft.com/library/windows/desktop/ms691226).  
+ Kullanılarak uygulanan [IMalloc::GetSize](/windows/desktop/api/objidlbase/nf-objidlbase-imalloc-getsize).  
   
 ##  <a name="reallocate"></a>  CComHeap::Reallocate  
  Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.  
@@ -135,7 +135,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CComHeap::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280).  
+ Kullanılarak uygulanan [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DynamicConsumer örnek](../../visual-cpp-samples.md)   

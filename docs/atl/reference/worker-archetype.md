@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75f9e974a2969fa817598556e3e043626a826970
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fd9e665a83db3b824e03eb960baf54f296d15d4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881311"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204860"
 ---
 # <a name="worker-archetype"></a>Çalışan modeli
 Uygun sınıfları *çalışan* archetype işlem iş öğeleri koda sıraya alınmış bir iş parçacığı havuzunda sağlayın.  
@@ -31,8 +31,8 @@ Uygun sınıfları *çalışan* archetype işlem iş öğeleri koda sıraya alı
 |Yöntem|Açıklama|  
 |------------|-----------------|  
 |[Initialize](#initialize)|Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır [yürütme](#execute).|  
-|[Yürütme](#execute)|Bir iş öğesini işlemek için çağrılır.|  
-|[sonlandırma](#terminate)|Alt nesne için tüm istekleri geçildi; sonra kapatmak için çağrılan [yürütme](#execute).|  
+|[Execute](#execute)|Bir iş öğesini işlemek için çağrılır.|  
+|[Terminate](#terminate)|Alt nesne için tüm istekleri geçildi; sonra kapatmak için çağrılan [yürütme](#execute).|  
   
 |tür tanımı|Açıklama|  
 |-------------|-----------------|  
@@ -82,7 +82,7 @@ void Execute(
  Çalışan sınıfı tarafından anlaşılan bir özel parametre. Ayrıca geçirilen `WorkerArchetype::Initialize` ve `Terminate`.  
   
  *pOverlapped*  
- Bir işaretçi [ÇAKIŞAN](http://msdn.microsoft.com/library/windows/desktop/ms684342) yapısı üzerinde hangi iş öğelerini kuyruğa alındı sırayı oluşturmak için kullanılır.  
+ Bir işaretçi [ÇAKIŞAN](/windows/desktop/api/minwinbase/ns-minwinbase-_overlapped) yapısı üzerinde hangi iş öğelerini kuyruğa alındı sırayı oluşturmak için kullanılır.  
   
 ## <a name="initialize"></a> WorkerArchetype::Initialize
 Tüm istekler için geçirilmeden önce alt nesne başlatmak için çağırılır `WorkerArchetype::Execute`.  

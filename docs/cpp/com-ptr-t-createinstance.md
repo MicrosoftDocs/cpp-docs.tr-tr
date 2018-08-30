@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 677d3dcab98b9bff8df7a49ba584900bd0b72925
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: bde476af66ae0a5a560019db29d25385c718e517
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407224"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201808"
 ---
 # <a name="comptrtcreateinstance"></a>_com_ptr_t::CreateInstance
 **Microsoft'a özgü**  
@@ -69,9 +69,9 @@ HRESULT CreateInstance(
   
 -   **CreateInstance (***rclsid* **,***dwClsContext***)** bir verilmişbirnesneninyeniçalışanbirörneğinioluşturur`CLSID`.  
   
--   **CreateInstance (***clsidString* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir Bulunduran Unicode dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.        
+-   **CreateInstance (***clsidString* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir Bulunduran Unicode dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
--   **CreateInstance (***clsidStringA* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir bulunduran çok baytlı karakter dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.       Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
+-   **CreateInstance (***clsidStringA* **,***dwClsContext***)** verilmiş bir nesnenin yeni çalışan bir örneğini oluşturur bir bulunduran çok baytlı karakter dizesi bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`. Çağrıları [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
   
  **END Microsoft özgü**  
   

@@ -18,29 +18,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ccdec81251589ba36209f878f1fa8b727d7d2b98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8cd45a20557eb3a7b2af3b1c2ecba3cc858af503
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409283"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205266"
 ---
 # <a name="sbcs-and-mbcs-data-types"></a>SBCS ve MBCS Veri Türleri
 
-Yalnızca tek baytlı karakter veya birden çok baytlı karakter tek baytlık işleyen herhangi Microsoft MBCS çalışma zamanı kitaplığı yordamı bekliyor bir `unsigned int` bağımsız değişkeni (burada 0x00 < karakter değeri = < 0xFFFF ve 0x00 = < bayt değeri = < 0xFF =). Birden çok baytlı bayt veya karakter dizesi bağlamda işleyen bir MBCS yordamı olarak gösterilemeyecek kadar çok baytlı karakter dizesi bekliyor bir `unsigned char` işaretçi.
+Yalnızca bir çok baytlı karakter veya çok baytlı karakterin bir bayt işleyen herhangi bir Microsoft MBCS çalışma zamanı kitaplığı rutini bekliyor bir `unsigned int` bağımsız değişken (burada 0x00 < karakter değeri = < 0xFFFF ve 0x00 = < bayt değeri = < 0xFF =). Çok baytlı bayt veya karakter dizesi bağlamda işleyen bir MBCS yordamı olarak gösterilemeyecek kadar çok baytlı karakter dizesi bekliyor. bir `unsigned char` işaretçi.
 
 > [!CAUTION]
-> Birden çok baytlı karakter her baytlık bir 8 bit temsil edilebilir **char**. Ancak, bir SBCS veya MBCS tek baytlı karakter türü **char** 0x7F negatifse büyük bir değere sahip. Ne zaman böyle bir karakter dönüştürülür doğrudan bir **int** veya **uzun**, sonuç derleyici tarafından oturum genişletilmiş olacak ve bu nedenle beklenmeyen sonuçlara yol açabilir.
+> Her bayt çok baytlı karakterin bir 8 bit temsil edilebilir **char**. Ancak, bir türünün SBCS veya MBCS tek baytlık karakter **char** 0x7F değerinden büyük bir değere sahip. Ne tür bir karakter dönüştürülür doğrudan bir **int** veya **uzun**, sonuç derleyici tarafından işareti genişletilmiş ve bu nedenle beklenmeyen sonuçlara yol açabilir.
 
-Bu nedenle bir 8 bit olarak birden çok baytlı karakter baytını temsil etmek en iyisidir `unsigned char`. Veya negatif bir sonuç önlemek için yalnızca tek baytlı karakter türü dönüştürme **char** için bir `unsigned char` için dönüştürmeden önce bir **int** veya **uzun**.
+Bu nedenle bir 8-bit olarak çok baytlı karakterin bir baytını temsil eden en iyisidir `unsigned char`. Veya negatif bir sonuç önlemek için yalnızca bir tek baytlı karakter türü dönüştürme **char** için bir `unsigned char` için dönüştürmeden önce bir **int** veya **uzun**.
 
-Bazı SBCS dize işleme (işaretli) gördüğünden **char\***  parametreleri, bir tür uyuşmazlığı derleyici uyarısı sonuçlanacak zaman **_MBCS** tanımlanır. Bu uyarı, verimliliği sırasına önlemek için üç yol vardır:
+Bazı SBCS dize işleme işlevleri (imzalanmış) çünkü **char** <strong>\*</strong> parametre türü uyuşmazlığı derleyici uyarı neden olur, **_MBCS** olduğu tanımlı. Bu uyarı, verimliliği sırasına göre listelenen önlemek için üç yol vardır:
 
-1. Tür kullanımı uyumlu satır içi işlevler içinde TCHAR kullanın. H. Bu varsayılan davranıştır.
+1. Tür kullanımı uyumlu satır içi işlevleri TCHAR kullanın. H Bu varsayılan davranıştır.
 
-1. Doğrudan makroları TCHAR içinde kullanın. Tanımlayarak H **_MB_MAP_DIRECT** komut satırında. Bunu yaparsanız, türleri el ile eşleşmelidir. Bu en hızlı yoludur ancak tür kullanımı uyumlu değil.
+1. TCHAR içinde doğrudan makroları kullanın. Tanımlayarak H **_MB_MAP_DIRECT** komut satırında. Bunu yaparsanız, el ile türlerinin eşleşmesi gerekir. Bu, en hızlı yoludur ancak tür kullanımı uyumlu değil.
 
-1. Tür kullanımı uyumlu statik olarak bağlantılı kitaplık işlevleri TCHAR kullanabilirsiniz. H. Bunu yapmak için sabit tanımlamak **_NO_INLINING** komut satırında. En fazla tür kullanımı uyumlu ancak yavaş yöntem budur.
+1. Tür kullanımı uyumlu statik olarak bağlı bir kitaplığı işlevleri TCHAR kullanabilirsiniz. H Bunu yapmak için definovat konstantu **_NO_INLINING** komut satırında. Ancak en iyi tür açısından güvenli yavaş yöntem budur.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

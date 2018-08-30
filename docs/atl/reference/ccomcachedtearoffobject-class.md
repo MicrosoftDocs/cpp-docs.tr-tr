@@ -25,15 +25,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7aad2093ecc9511c3b15f68963b496130bf3c3f
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 62ed04d8e54e4bf107ae12b9a4165b663c9d10d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882117"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203877"
 ---
 # <a name="ccomcachedtearoffobject-class"></a>CComCachedTearOffObject sınıfı
-Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bölünmüş arabirim.  
+Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) bölünmüş arabirim.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,7 +76,7 @@ public CComObjectRootEx<contained
 |[CComCachedTearOffObject::m_contained](#m_contained)|A `CComContainedObject` , bölünmüş sınıftan türetilmiş bir nesneye (sınıfı `contained`).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComCachedTearOffObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bölünmüş arabirim. Bu sınıf farklıdır `CComTearOffObject` bakımından `CComCachedTearOffObject` kendi `IUnknown`sahibi nesnenin ayrı `IUnknown` (sahibi için etkinleştiriliyorken oluşturulmakta olan nesnesidir). `CComCachedTearOffObject` kendi tutar başvuru sayısı, `IUnknown` ve, başvuru sayısı sıfır olduğunda kendisini siler. Ancak, herhangi bir alt etkinleştiriliyorken sorgularsanız arabirimleri, sahibi nesnenin başvuru sayısını `IUnknown` artırılacaktır.  
+ `CComCachedTearOffObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) bölünmüş arabirim. Bu sınıf farklıdır `CComTearOffObject` bakımından `CComCachedTearOffObject` kendi `IUnknown`sahibi nesnenin ayrı `IUnknown` (sahibi için etkinleştiriliyorken oluşturulmakta olan nesnesidir). `CComCachedTearOffObject` kendi tutar başvuru sayısı, `IUnknown` ve, başvuru sayısı sıfır olduğunda kendisini siler. Ancak, herhangi bir alt etkinleştiriliyorken sorgularsanız arabirimleri, sahibi nesnenin başvuru sayısını `IUnknown` artırılacaktır.  
   
  Varsa `CComCachedTearOffObject` bölünmüş uygulama zaten oluşturulana ve etkinleştiriliyorken arabirimi yeniden aynı sorgulanan nesne `CComCachedTearOffObject` nesne yeniden kullanılabilir. Bölünmüş arabirim tarafından uygulanırsa, buna karşılık, bir `CComTearOffObject` yeniden için sahip nesne, sorgulanan başka bir `CComTearOffObject` örneği oluşturulur.  
   

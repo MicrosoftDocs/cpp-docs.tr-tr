@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a2d8668f0ed5d58ce3b8028fb02d572bb04f8bc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c463dbcb68b5a4b875dbb109eedc07a3b4b27c86
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613580"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203034"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView Sınıfı
 Bir salt okunur görünüme temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  
@@ -71,7 +71,7 @@ ref class UnorderedMapView sealed;
  **Namespace:** Platform::Collections  
 
 ## <a name="first"></a>  UnorderedMapView::First yöntemi
-İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) sıralanmamış eşleme öğesi.  
+İlk belirten bir yineleyici döndüren [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) sıralanmamış eşleme öğesi.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -126,7 +126,7 @@ V Lookup(K key);
 
 
 ## <a name="size"></a>  UnorderedMapView::Size yöntemi
-Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](http://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView öğeleri.  
+Sayısını döndürür [Windows::Foundation::Collections::IKeyValuePair\<K, V >](https://msdn.microsoft.com/library/windows/apps/br226031.aspx) UnorderedMapView öğeleri.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -221,7 +221,7 @@ UnorderedMapView(
  UnorderedMapView tür adı.  
   
  `H`  
- Bir anahtar için bir karma değer için bir işlev nesnesi. Varsayılan olarak [std::hash\<K >](http://msdn.microsoft.com/en-us/54f67435-af9d-4217-a29d-fa4d2491a104) türleri için `std::hash` destekler.  
+ Bir anahtar için bir karma değer için bir işlev nesnesi. Varsayılan olarak [std::hash\<K >](https://msdn.microsoft.com/54f67435-af9d-4217-a29d-fa4d2491a104) türleri için `std::hash` destekler.  
   
  `P`  
  Kendi eşitlik belirlemek için iki anahtarı karşılaştıran işlev nesnesi sağlayan tür. Varsayılan olarak [std::equal_to\<K >](../standard-library/equal-to-struct.md).  

@@ -42,44 +42,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45a2f99001d45de71ca3ea8a525152d53d67ee64
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: efda2666a1d7cf47a485a9e1ceb53c09f4966989
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33348576"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203838"
 ---
 # <a name="device-contexts"></a>Cihaz Bağlamları
-Bir cihaz bağlamı bir görünüm veya yazıcı gibi bir aygıtı çizim öznitelikleri hakkında bilgi içeren bir Windows veri yapısıdır. Tüm çizim çağrılar çizim satırları, Şekil ve metinler için Windows API'larını yalıtan bir aygıt-context nesnesi aracılığıyla yapılır. Cihaz bağlamları CİHAZDAN bağımsız çizim Windows izin verir. Cihaz bağlamları ekran, yazıcı veya bir meta dosyası çizmek için kullanılabilir.  
+Bir cihaz bağlamı, bir cihazın bir görüntü veya yazıcı gibi çizim öznitelikleri hakkında bilgi içeren Windows bir veri yapısıdır. Tüm çizim çağrıları çizim çizgiler, şekiller ve metin için Windows API'ları kapsülleyen bir cihaz bağlamındaki nesne ile yapılır. Cihaz bağlamları Windows CİHAZDAN bağımsız çizim izin verir. Cihaz bağlamları ekran, yazıcı veya bir meta dosyası çizmek için kullanılabilir.  
   
- [CPaintDC](../mfc/reference/cpaintdc-class.md) nesneleri kapsülleyen çağırma pencerelerinin ortak deyim `BeginPaint` işlevi, cihaz bağlamında çizim, sonra çağırma `EndPaint` işlevi. `CPaintDC` Oluşturucu çağrıları `BeginPaint` siz ve yıkıcı çağrıları için `EndPaint`. Basitleştirilmiş işlem oluşturmaktır [CDC](../mfc/reference/cdc-class.md) nesnesi, çizme ve ardından destroy `CDC` nesnesi. Framework'te çok bile bu işlemi otomatik hale getirilmiştir. Özellikle, `OnDraw` işlevi geçirilir bir `CPaintDC` önceden hazırlanmış (aracılığıyla `OnPrepareDC`), ve yalnızca içine çizin. Çerçevesi tarafından yok ve arka plandaki cihaz bağlamı dönüş çağrısı sırasında Windows yayımlanır, `OnDraw` işlevi.  
+ [CPaintDC](../mfc/reference/cpaintdc-class.md) nesneleri kapsülleyen çağırma Windows, ortak deyimidir `BeginPaint` işlevi, ardından cihaz bağlamında çizmek ardından çağırma `EndPaint` işlevi. `CPaintDC` Oluşturucu çağrıları `BeginPaint` ve yıkıcı çağrıları için `EndPaint`. Oluşturmak için Basitleştirilmiş işlemidir [CDC](../mfc/reference/cdc-class.md) nesne çizin ve ardından yok `CDC` nesne. Framework'te bile bu işlemin otomatikleştirildi. Özellikle, `OnDraw` işlevi geçirilen bir `CPaintDC` önceden hazırlanmış (aracılığıyla `OnPrepareDC`), ve yalnızca içine çizin. Framework tarafından yok edilir ve temel alınan cihaz bağlamı için Windows return çağrısından sonra serbest bırakılır, `OnDraw` işlevi.  
   
- [CClientDC](../mfc/reference/cclientdc-class.md) nesneleri kapsülleyen bir pencere yalnızca istemci alanını temsil eden bir cihaz bağlamı ile çalışma. `CClientDC` Oluşturucu çağrıları `GetDC` işlevi ve yıkıcı çağrıları `ReleaseDC` işlevi. [CWindowDC](../mfc/reference/cwindowdc-class.md) nesneleri kapsülleyen çerçevesini dahil olmak üzere tüm pencereyi temsil eden bir cihaz bağlamı.  
+ [CClientDC](../mfc/reference/cclientdc-class.md) nesneleri kapsülleyen yalnızca bir pencerenin istemci alanını temsil eden bir cihaz bağlamı ile çalışma. `CClientDC` Oluşturucu çağrıları `GetDC` işlevi ve yok edici çağrıları `ReleaseDC` işlevi. [CWindowDC](../mfc/reference/cwindowdc-class.md) nesneleri kapsülleyen çerçevesini dahil olmak üzere tüm pencereyi temsil eden bir cihaz bağlamı.  
   
- [CMetaFileDC](../mfc/reference/cmetafiledc-class.md) nesneleri çizim Windows Meta dosyası halinde yalıtma. Tersine için `CPaintDC` geçirilen `OnDraw`, bu durumda çağırmalısınız [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) kendiniz.  
+ [CMetaFileDC](../mfc/reference/cmetafiledc-class.md) nesneleri çizim bir Windows Meta dosyası halinde kapsüller. Tersine `CPaintDC` geçirilen `OnDraw`, bu durumda çağırmalıdır [OnPrepareDC](../mfc/reference/cview-class.md#onpreparedc) kendiniz.  
   
 ## <a name="mouse-drawing"></a>Fare çizim  
- Çoğu framework programında çizim — ve böylece çoğu cihaz bağlamı iş — görünümün içinde yapılır `OnDraw` üye işlevi. Bununla birlikte, cihaz bağlamı nesneleri başka bir amaçla kullanmaya devam edebilirsiniz. Örneğin, fare hareketini görünümünde izleme geri bildirim sağlamak için doğrudan görünüme beklemeden çizmek zorunda `OnDraw` çağrılabilir.  
+ Çoğu bir çerçeve programında çizim — ve böylece çoğu cihaz bağlamı iş — görünümün içinde yapılır `OnDraw` üye işlevi. Ancak, cihaz bağlamı nesnesinin diğer amaçlar için kullanmaya devam edebilirsiniz. Örneğin, bir görünümde fare hareketini izleme geri bildirim sağlamak için doğrudan görünüme beklemeden çizmek ihtiyacınız `OnDraw` çağrılabilir.  
   
- Böyle bir durumda kullanabileceğiniz bir [CClientDC](../mfc/reference/cclientdc-class.md) doğrudan görünüme çizmek için cihaz bağlam nesnesi.  
+ Böyle bir durumda, kullandığınız bir [CClientDC](../mfc/reference/cclientdc-class.md) doğrudan görünüme çizmek için cihaz bağlamındaki nesne.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Cihaz bağlamları (tanım)](http://msdn.microsoft.com/library/windows/desktop/dd183553)  
+-   [Cihaz bağlamları (tanım)](https://msdn.microsoft.com/library/windows/desktop/dd183553)  
   
 -   [Bir Görünümde Çizim Yapma](../mfc/drawing-in-a-view.md)  
   
 -   [Bir Görünümü Kullanarak Kullanıcı Girişini Yorumlama](../mfc/interpreting-user-input-through-a-view.md)  
   
--   [Çizgiler ve eğrilerle](http://msdn.microsoft.com/library/windows/desktop/dd145028)  
+-   [Çizgiler ve eğriler](https://msdn.microsoft.com/library/windows/desktop/dd145028)  
   
--   [Doldurulmuş şekiller](http://msdn.microsoft.com/library/windows/desktop/dd162714)  
+-   [Doldurulmuş şekiller](https://msdn.microsoft.com/library/windows/desktop/dd162714)  
   
--   [Yazı tipleri ve metin](http://msdn.microsoft.com/library/windows/desktop/dd144819)  
+-   [Yazı tipleri ve metin](/windows/desktop/gdi/fonts-and-text)  
   
--   [Renkler](http://msdn.microsoft.com/library/windows/desktop/dd183450)  
+-   [Renkler](https://msdn.microsoft.com/library/windows/desktop/dd183450)  
   
--   [Koordinat alanları ve dönüştürmeler](http://msdn.microsoft.com/library/windows/desktop/dd183475)  
+-   [Koordinat ve dönüştürmeler](https://msdn.microsoft.com/library/windows/desktop/dd183475)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pencere Nesneleri](../mfc/window-objects.md)

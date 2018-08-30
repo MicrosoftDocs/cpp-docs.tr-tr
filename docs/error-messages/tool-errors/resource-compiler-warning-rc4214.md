@@ -16,14 +16,14 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d7c18a81b2a7cf978ce056672cb318edca700fe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 654996499c0fbee2c7410663fd7dfbbac3d145b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319045"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199102"
 ---
 # <a name="resource-compiler-warning-rc4214"></a>Kaynak Derleyicisi Uyarısı RC4214
-Kod sayfası geçerli değil: yoksayıldı  
+Geçersiz kod sayfası: yoksayıldı  
   
- .Rc dosyanın codepage bağımsız değişkeni bulunan ve belirtilen kod sayfası geçersiz. Bkz: [IsValidCodePage](http://msdn.microsoft.com/library/windows/desktop/dd318674) daha fazla bilgi için.
+ .Rc dosyasına bir kod sayfası bağımsız değişkeni bulunan ve belirtilen kod sayfası geçersiz. Bkz: [IsValidCodePage](/windows/desktop/api/winnls/nf-winnls-isvalidcodepage) daha fazla bilgi için.

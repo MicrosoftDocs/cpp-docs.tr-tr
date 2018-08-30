@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 28501c0105ce9d62c72dc9013b881029f4bc8bfb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: faa2a3be7260eecb16599db967336bcb7b774c99
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590672"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200132"
 ---
 # <a name="switchtype"></a>switch_type
 
@@ -43,9 +43,9 @@ Anahtar türü, bir tamsayı, karakter, Boole veya numaralandırma türü olabil
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Switch_type** C++ özniteliği ile aynı işlevlere sahip [switch_type](http://msdn.microsoft.com/library/windows/desktop/aa367276) MIDL özniteliği.
+**Switch_type** C++ özniteliği ile aynı işlevlere sahip [switch_type](/windows/desktop/Midl/switch-type) MIDL özniteliği.
 
-C++ öznitelikleri desteklemiyor [birleşimler kapsüllenmiş](http://msdn.microsoft.com/library/windows/desktop/aa366811). [Nonencapsulated birleşimler](http://msdn.microsoft.com/library/windows/desktop/aa367119) yalnızca şu biçimde desteklenir:
+C++ öznitelikleri desteklemiyor [birleşimler kapsüllenmiş](/windows/desktop/Midl/encapsulated-unions). [Nonencapsulated birleşimler](/windows/desktop/Midl/nonencapsulated-unions) yalnızca şu biçimde desteklenir:
 
 ```cpp
 // cpp_attr_ref_switch_type.cpp

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a5604a1b1c469272889aa7b4e283b3ee6f23bf
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c2b2f8ab8828c994b729180805be0a51a83b3487
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882802"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203632"
 ---
 # <a name="ccomenumimpl-class"></a>Ccomenumımpl sınıfı
 Bu sınıf, numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirimi uygulamasını sağlar.  
@@ -48,7 +48,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 #### <a name="parameters"></a>Parametreler  
  *temel*  
- Bir COM Numaralandırıcı ( [IEnumXXXX](https://msdn.microsoft.com/library/ms680089.aspx)) arabirimi.  
+ COM Numaralandırıcı arabirimi. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği. 
   
  *piid*  
  Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.  
@@ -72,11 +72,11 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CComEnumImpl::Clone](#clone)|Uygulamasını [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx).|  
+|[CComEnumImpl::Clone](#clone)|Uygulamasını **kopya** numaralandırma arabirim yöntemi.|  
 |[CComEnumImpl::Init](#init)|Numaralandırıcı başlatır.|  
-|[CComEnumImpl::Next](#next)|Uygulamasını [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx).|  
-|[CComEnumImpl::Reset](#reset)|Uygulamasını [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx).|  
-|[CComEnumImpl::Skip](#skip)|Uygulamasını [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx).|  
+|[CComEnumImpl::Next](#next)|Uygulamasını **sonraki**.|  
+|[CComEnumImpl::Reset](#reset)|Uygulamasını **sıfırlama**.|  
+|[CComEnumImpl::Skip](#skip)|Uygulamasını **atla**.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
@@ -89,7 +89,7 @@ class ATL_NO_VTABLE CComEnumImpl : public Base
 |[CComEnumImpl::m_spUnk](#m_spunk)|`IUnknown` İşaretçi numaralandırılan koleksiyonu sağlayan nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComEnumImpl` Numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar. Bu sınıf için benzer `IEnumOnSTLImpl` Numaralandırıcı arabiriminin bir uygulamasını sağlar sınıfını, bir C++ Standart Kitaplığı kapsayıcı tabanlı.  
+Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) yöntem uygulamaları ilişkin bir örnek. `CComEnumImpl` Numaralandırılan öğeleri bir dizi içinde depolandığı bir COM Numaralandırıcı arabirim uygulamasını sağlar. Bu sınıf için benzer `IEnumOnSTLImpl` Numaralandırıcı arabiriminin bir uygulamasını sağlar sınıfını, bir C++ Standart Kitaplığı kapsayıcı tabanlı.  
   
 > [!NOTE]
 >  Daha fazla arasındaki farklar hakkında ayrıntılı bilgi için `CComEnumImpl` ve `IEnumOnSTLImpl`, bkz: [CComEnumImpl::Init](#init).  
@@ -175,7 +175,7 @@ enum CComEnumFlags
 >  Bu yöntem prototipi türü olacak şekilde dizi öğeleri belirtir `T`burada `T` sınıfı için şablon parametresi olarak tanımlanmıştır. COM arabirimi yoluyla metodunun aynı türü budur [CComEnumImpl::Next](#next). Bu olduğu çıkarımında, benzer nitelikte değildir [Ienumonstlımpl](../../atl/reference/ienumonstlimpl-class.md), bu sınıf kullanıma sunulan veri türleri ve farklı depolama desteklemez. Dizideki öğelerin veri türü, COM arabirimi yoluyla kullanıma sunulan veri türü ile aynı olmalıdır.  
   
 ##  <a name="clone"></a>  CComEnumImpl::Clone  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Clone](https://msdn.microsoft.com/library/ms690336.aspx) türünde bir nesne oluşturarak yöntemi `CComEnum`, aynı dizi ve geçerli nesne tarafından kullanılan yineleyici başlatma ve üzerinde arabirimi döndüren Yeni oluşturulan nesnenin.  
+ Bu yöntem uygulamasını sağlar **kopya** türünde bir nesne oluşturarak yöntemi `CComEnum`, aynı dizi ve geçerli nesne tarafından kullanılan yineleyici başlatma ve yeni oluşturulan üzerinde arabirimi döndüren nesne.  
   
 ```
 STDMETHOD(Clone)(Base** ppEnum);
@@ -227,7 +227,7 @@ DWORD m_dwFlags;
 ```  
   
 ##  <a name="next"></a>  CComEnumImpl::Next  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Next](https://msdn.microsoft.com/library/ms695273.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **sonraki** yöntemi.  
   
 ```
 STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
@@ -237,7 +237,7 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
  *celt*  
  [in] İstenen öğe sayısı.  
   
- *http://msdn.microsoft.com/library/default.asp?url=/library/en-us/winui/winui/windowsuserinterface/userinput/rawinput/rawinputreference/rawinputstructures/rawinputdevice.asp*  
+ *rgelt*  
  [out] Öğelerle doldurulması dizisi.  
   
  *pceltFetched*  
@@ -247,7 +247,7 @@ STDMETHOD(Next)(ULONG celt, T* rgelt, ULONG* pceltFetched);
  Standart bir HRESULT değerini.  
   
 ##  <a name="reset"></a>  CComEnumImpl::Reset  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Reset](https://msdn.microsoft.com/library/ms693414.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **sıfırlama** yöntemi.  
   
 ```
 STDMETHOD(Reset)(void);
@@ -257,7 +257,7 @@ STDMETHOD(Reset)(void);
  Standart bir HRESULT değerini.  
   
 ##  <a name="skip"></a>  CComEnumImpl::Skip  
- Bu yöntem uygulamasını sağlar [IEnumXXXX::Skip](https://msdn.microsoft.com/library/ms690392.aspx) yöntemi.  
+ Bu yöntem uygulamasını sağlar **atla** yöntemi.  
   
 ```
 STDMETHOD(Skip)(ULONG celt);

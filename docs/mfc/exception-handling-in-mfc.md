@@ -43,56 +43,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b246e9ed09cce2fdecf8a8d6327a912061247cad
-ms.sourcegitcommit: 59afc95d0e494af658cf464503f7f89bd1a8d2ce
+ms.openlocfilehash: 14887f5d85fc6c1a3fcd83474240c68c90ca2991
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35239443"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200773"
 ---
 # <a name="exception-handling-in-mfc"></a>MFC'de Özel Durum İşleme
-Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İki mekanizma vardır:  
+Bu makalede MFC'de özel durum işleme mekanizmalarını açıklar. İki mekanizma vardır:  
   
--   C++ özel durumlarını, kullanılabilir MFC sürüm 3.0 ve üstü  
+-   C++ özel durumlarını, MFC sürüm 3.0 kullanılabilir ve üzeri  
   
--   MFC özel durum makroları 1.0 MFC sürümlerde kullanılabilir ve üzeri  
+-   MFC özel durum makroları, MFC sürüm 1.0 ve üzeri  
   
- MFC kullanarak yeni bir uygulama yazıyorsanız, C++ mekanizması kullanmanız gerekir. Zaten mevcut uygulamanız bu mekanizması yaygın kullanıyorsa makrosu tabanlı mekanizma kullanabilirsiniz.  
+ MFC kullanarak yeni bir uygulama yazıyorsanız, C++ mekanizmasını kullanmanız gerekir. Mevcut uygulamanızı zaten bu mekanizması yaygın olarak kullanan makrosu tabanlı mekanizma kullanabilirsiniz.  
   
- C++ özel durumlarını yerine MFC özel durum makroları kullanmak için var olan kodu kolayca dönüştürebilirsiniz. Kod ve bunu yapmak için yönergeleri dönüştürme avantajları makalesinde açıklanan [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).  
+ C++ özel durumlarını yerine MFC özel durum makroları kullanmak için mevcut kodu kolayca dönüştürebilirsiniz. Bunu yapmak için yönergeleri ve kod dönüştürme avantajları makalesinde açıklanan [özel durumlar: MFC özel durum makrolarından dönüştürme](../mfc/exceptions-converting-from-mfc-exception-macros.md).  
   
- MFC özel durum makroları kullanarak bir uygulama zaten geliştirdiyseniz, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu bu makroları devam edebilirsiniz. Makaleyi [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeleri sağlar.  
+ MFC özel durum makroları kullanarak uygulama geliştirdiyseniz Bu makrolar, yeni kodunuzda C++ özel durumlarını kullanırken mevcut kodunuzu kullanmaya devam edebilirsiniz. Makaleyi [özel durumlar: sürüm 3.0 özel durum makrolarındaki değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md) Bunu yapmak için yönergeler sağlar.  
   
 > [!NOTE]
->  C++ özel durum kodunuzda işleme etkinleştirmek için projenin C/C++ klasöründeki kod oluşturma sayfasında C++ özel durumlarını etkinleştirmek seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/EHsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.  
+>  C++ özel durum işleme kodunuzda etkinleştirmek için C/C++ klasörü projeye ait kod oluşturma sayfasında C++ özel durumlarını etkinleştir seçin [özellik sayfaları](../ide/property-pages-visual-cpp.md) iletişim kutusu veya kullanım [/ehsc](../build/reference/eh-exception-handling-model.md) derleyici seçeneği.  
   
- Bu makalede aşağıdaki konuları içerir:  
+ Bu makalede, aşağıdaki konular ele alınmaktadır:  
   
 -   [Özel durumlar kullanma zamanı](#_core_when_to_use_exceptions)  
   
 -   [MFC özel durum desteği](#_core_mfc_exception_support)  
   
--   [Özel durumlar hakkında daha fazla bilgi](#_core_further_reading_about_exceptions)  
+-   [Özel durumları hakkında daha fazla bilgi](#_core_further_reading_about_exceptions)  
   
 ##  <a name="_core_when_to_use_exceptions"></a> Özel durumlar kullanma zamanı  
- Program yürütülmesi sırasında bir işlev çağrıldığında sonuçlar üç kategorisi oluşabilir: normal yürütme, hatalı yürütme veya anormal yürütme. Her kategori aşağıda açıklanmıştır.  
+ Program yürütülmesi sırasında bir işlev çağrıldığında sonuçlarını üç kategorisi oluşabilir: normal yürütmenin, hatalı yürütme veya anormal yürütme. Her kategori aşağıda açıklanmıştır.  
   
--   Normal yürütme  
+-   Normal yürütmenin  
   
-     İşlevi normal olarak yürütür ve döndürür. Bazı işlevler bir sonuç kodu işlevi sonucunu gösteren çağırana döndürür. Olası sonuç kodları işlevi için kesinlikle tanımlanır ve sonuçtan işlevinin aralığını temsil eder. Sonuç kodu, başarı veya başarısızlık belirtebilir veya belirli bir tür beklentilerini normal aralığı içinde hata bile gösterebilir. Örneğin, bir dosya durumunu işlevi dosya yok gösteren bir kod döndürebilir. Bir sonuç kodu birçok beklenen sonuçları birini temsil ettiğinden "hata kodu" terimi kullanılmaz unutmayın.  
+     İşlev, normalde yürütün ve dönüş. Bazı işlevler bir sonuç kodu işlev sonucunu gösteren çağırana döndürür. Olası sonuç kodları işlevi kesin olarak tanımlanır ve sonuçtan işlevin aralığını temsil eder. Sonuç kodu, başarı veya başarısızlık belirtebilir veya bile beklentileri normal aralığında ise hata belirli bir tür belirtebilirsiniz. Örneğin, bir dosya durumu işlevi dosya yok gösteren bir kod iade edebilirsiniz. Sonuç kodu birçok beklenen sonuçlar göstermesi "hata kodu" terimi kullanılmaz unutmayın.  
   
 -   Hatalı yürütme  
   
-     Çağıran işleve bağımsız değişkenleri geçirme içinde bazı hata yapan veya uygun olmayan bir bağlamda işlevi çağırır. Bu durum bir hataya neden olur ve program geliştirme sırasında bir onaylama işlemi tarafından algılanan. (Onaylar hakkında daha fazla bilgi için bkz: [C/C++ onayları](/visualstudio/debugger/c-cpp-assertions).)  
+     Çağıran işleve bağımsız değişkenleri geçirme içinde bazı hata yapar veya uygun olmayan bir bağlamda işlevini çağırır. Bu durum bir hataya neden olur ve program geliştirme sırasında onaylama algılanmalıdır. (Onaylar hakkında daha fazla bilgi için bkz. [C/C++ onaylamaları](/visualstudio/debugger/c-cpp-assertions).)  
   
 -   Olağan dışı yürütme  
   
-     Olağan dışı yürütme düşük bellek veya g/ç hataları gibi programın denetimi dışında kalan koşullar işlevin sonucu burada etkileyen durumlarda içerir. Anormal durumları yakalama ve özel durumları atma yapılması gerekir.  
+     Olağan dışı yürütme, düşük bellek veya g/ç hataları gibi programın denetimin dışında kalan koşullar işlev sonucunu burada etkileyen durumlarda içerir. Anormal durumları yakalama ve özel durumları atma yapılması gerekir.  
   
  Özel durumlar kullanma, anormal yürütme için özellikle uygundur.  
   
 ##  <a name="_core_mfc_exception_support"></a> MFC özel durum desteği  
- C++ özel durumlarını doğrudan kullanın ya da MFC özel durum makroları kullanmak isteyip kullanacağınız [CException sınıfı](../mfc/reference/cexception-class.md) veya `CException`-türetilmiş framework veya uygulamanız tarafından oluşturulan nesneleri.  
+ C++ özel durumlarını doğrudan kullanın ya da MFC özel durum makroları kullanmak isteyip kullanacağınız [CException sınıfı](../mfc/reference/cexception-class.md) veya `CException`-türetilmiş framework tarafından veya uygulamanız tarafından oluşturulan nesneleri.  
   
  MFC tarafından sağlanan önceden tanımlanmış özel durumlar aşağıdaki tabloda gösterilmektedir.  
   
@@ -101,19 +101,19 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
 |[CMemoryException Sınıfı](../mfc/reference/cmemoryexception-class.md)|Bellek yetersiz|  
 |[CFileException Sınıfı](../mfc/reference/cfileexception-class.md)|Dosya özel durumu|  
 |[CArchiveException Sınıfı](../mfc/reference/carchiveexception-class.md)|Arşiv/seri hale getirme özel durumu|  
-|[CNotSupportedException Sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Yanıt için desteklenmeyen hizmet isteği|  
+|[CNotSupportedException Sınıfı](../mfc/reference/cnotsupportedexception-class.md)|Yanıt için desteklenmeyen hizmet istemek için|  
 |[CResourceException Sınıfı](../mfc/reference/cresourceexception-class.md)|Windows kaynak ayırma özel durumu|  
 |[CDaoException Sınıfı](../mfc/reference/cdaoexception-class.md)|Veritabanı özel durumları (DAO sınıfları)|  
 |[CDBException Sınıfı](../mfc/reference/cdbexception-class.md)|Veritabanı özel durumları (ODBC sınıfları)|  
 |[COleException Sınıfı](../mfc/reference/coleexception-class.md)|OLE özel durumları|  
-|[COleDispatchException Sınıfı](../mfc/reference/coledispatchexception-class.md)|Gönderme (Otomasyonu) özel durumlar|  
-|[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Bir ileti kutusu kullanıcıyla uyarıları özel durum sonra genel oluşturur [CException sınıfı](../mfc/reference/cexception-class.md)|  
+|[COleDispatchException Sınıfı](../mfc/reference/coledispatchexception-class.md)|Gönderme (Otomasyon) özel durumları|  
+|[CUserException Sınıfı](../mfc/reference/cuserexception-class.md)|Uyaran bir ileti kutusu ile kullanıcı ardından Exception'a genel [CException sınıfı](../mfc/reference/cexception-class.md)|  
   
 > [!NOTE]
->  MFC C++ özel durumlarını ve MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) anlatıldığı gibi [yapılandırılmış özel durum işleme](http://msdn.microsoft.com/library/windows/desktop/ms680657).  
+>  MFC, C++ özel durumlarını hem MFC özel durum makroları destekler. MFC doğrudan desteklemez Windows NT yapılandırılmış özel durum işleyicileri (SEH) bölümünde açıklandığı gibi [yapılandırılmış özel durum işleme](https://msdn.microsoft.com/library/windows/desktop/ms680657).  
   
-##  <a name="_core_further_reading_about_exceptions"></a> Özel durumlar hakkında daha fazla okuma  
- Aşağıdaki makaleler, özel durum teslim etme için MFC kitaplığını kullanarak açıklamaktadır:  
+##  <a name="_core_further_reading_about_exceptions"></a> Özel durumları hakkında daha fazla okuma  
+ Aşağıdaki makaleler, özel durum teslim etme için MFC Kitaplığı'nı kullanarak açıklar:  
   
 -   [Özel Durumlar: Özel Durumları Yakalama ve Silme](../mfc/exceptions-catching-and-deleting-exceptions.md)  
   
@@ -127,7 +127,7 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
   
 -   [Özel durumlar: OLE Özel Durumları](../mfc/exceptions-ole-exceptions.md)  
   
- Aşağıdaki makaleler MFC özel durum makroları C++ özel durum sözcüklerle karşılaştırır ve kodunuzu nasıl uyarlayabilirsiniz açıklanmaktadır:  
+ Aşağıdaki makaleler, C++ özel durum anahtar sözcüklerini MFC özel durum makroları karşılaştırın ve kodunuzu nasıl uyarlayabileceğiniz açıklanmaktadır:  
   
 -   [Özel Durumlar: Sürüm 3.0'da Özel Durum Makrolarındaki Değişiklikler](../mfc/exceptions-changes-to-exception-macros-in-version-3-0.md)  
   
@@ -137,5 +137,5 @@ Bu makalede MFC'de özel durum işleme mekanizmalarını açıklanmaktadır. İk
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++ özel durum işleme](../cpp/cpp-exception-handling.md)   
- [I: kendi özel durum sınıfları nasıl oluşturulur](http://go.microsoft.com/fwlink/p/?linkid=128045)
+ [Nasıl yapılır: verilerimi kendi özel durum sınıfları oluşturma](http://go.microsoft.com/fwlink/p/?linkid=128045)
 

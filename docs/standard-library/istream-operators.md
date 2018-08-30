@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60ec526dd8874529b60558f7131c31f0bf4a2d3b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 1fdad6f34fed49ec851f027cba4c53ea08b48902
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961119"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195409"
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; işleçleri
 
@@ -90,7 +90,7 @@ basic_istream<Elem, Tr>& operator>>(
 
 en fazla ayıklar *N* - 1 öğeleri ve başlatma _ dizide saklar *Str*. Varsa `Istr`. [Genişlik](../standard-library/ios-base-class.md#width) , sıfırdan büyük *N* olduğu `Istr`. **Genişlik**; Aksi takdirde, en büyük dizi boyutu olan `Elem` , bildirilebilir. İşlev her zaman değeri depolar `Elem()` herhangi depoladığı öğeleri ayıklanan sonra. Ayıklama durdurur erken dosya sonu, bir karakter değeri ile üzerinde bulunan **Elem**(0) (hangi değil ayıklanır), veya herhangi bir öğede tarafından atılan (Bu ayıklanmadı) [ws](../standard-library/istream-functions.md#ws). Hiçbir öğe işlevi ayıklar, çağırdığı `Istr`. [setstate](../standard-library/basic-ios-class.md#setstate)(**failbit**). Her durumda çağıran `Istr`. **Genişlik**(0) ve döndürür *Istr*.
 
-**Güvenlik Notu** girdi akışından ayıklanırken null ile sonlandırılmış dize hedef arabelleğinin boyutunu aşamaz *str*. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** girdi akışından ayıklanırken null ile sonlandırılmış dize hedef arabelleğinin boyutunu aşamaz *str*. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 Şablon işlevi:
 
@@ -110,7 +110,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char* str);
 ```
 
-döndürür `Istr` >> ( `char` **\***) `str`.
+Döndürür `Istr >> ( char * ) str`.
 
 Şablon işlevi:
 
@@ -120,7 +120,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, signed char& Ch);
 ```
 
-döndürür `Istr` >> ( **char &**) `Ch`.
+Döndürür `Istr >> ( char& ) Ch`.
 
 Şablon işlevi:
 
@@ -130,7 +130,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char* str);
 ```
 
-döndürür `Istr` >> ( **char \*** ) `str`.
+Döndürür `Istr >> ( char * ) str`.
 
 Şablon işlevi:
 
@@ -140,7 +140,7 @@ basic_istream<char, Tr>& operator>>(
     basic_istream<char, Tr>& Istr, unsigned char& Ch);
 ```
 
-döndürür `Istr` >> ( **char &**) `Ch`.
+Döndürür `Istr >> ( char& ) Ch`.
 
 Şablon işlevi:
 
@@ -151,7 +151,7 @@ basic_istream<Elem, Tr>& operator>>(
     Type& val);
 ```
 
-döndürür `Istr` `>>` `val` (ve dönüştüren bir `rvalue reference` için `Istr` için bir `lvalue` işlemdeki).
+döndürür `Istr >> val` (ve rvalue başvurusuna çevirir `Istr` işleminde bir lvalue için).
 
 ### <a name="example"></a>Örnek
 

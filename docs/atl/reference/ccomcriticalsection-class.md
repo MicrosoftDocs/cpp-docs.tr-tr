@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5926f92ae636a13c1e5241792790151ee48ceddc
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b5957d55ae75723331e35984b9ab3c8e34c4fa78
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884876"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204964"
 ---
 # <a name="ccomcriticalsection-class"></a>CComCriticalSection sınıfı
 Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.  
@@ -84,7 +84,7 @@ CComCriticalSection() throw();
  Kümeleri [m_sec](#m_sec) veri üyesi null.  
   
 ##  <a name="init"></a>  CComCriticalSection::Init  
- Win32 işlevini çağırır [InitializeCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms683472), yer alan kritik bölüm nesnesi başlatır [m_sec](#m_sec) veri üyesi.  
+ Win32 işlevini çağırır [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection), yer alan kritik bölüm nesnesi başlatır [m_sec](#m_sec) veri üyesi.  
   
 ```
 HRESULT Init() throw();
@@ -94,7 +94,7 @@ HRESULT Init() throw();
  Başarılı, E_OUTOFMEMORY veya hata durumunda E_FAIL başarılıysa S_OK döndürür.  
   
 ##  <a name="lock"></a>  CComCriticalSection::Lock  
- Win32 işlevini çağırır [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), iş parçacığı kritik bölüm nesnenin içerdiği sahipliğini alabilir kadar hangi bekler [m_sec](#m_sec) veri üyesi.  
+ Win32 işlevini çağırır [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection), iş parçacığı kritik bölüm nesnenin içerdiği sahipliğini alabilir kadar hangi bekler [m_sec](#m_sec) veri üyesi.  
   
 ```
 HRESULT Lock() throw();
@@ -114,7 +114,7 @@ CRITICAL_SECTION m_sec;
 ```  
   
 ##  <a name="term"></a>  CComCriticalSection::Term  
- Win32 işlevini çağırır [DeleteCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682552), yer alan kritik bölüm nesnesi tarafından kullanılan tüm kaynakları serbest bırakır [m_sec](#m_sec) veri üyesi.  
+ Win32 işlevini çağırır [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), yer alan kritik bölüm nesnesi tarafından kullanılan tüm kaynakları serbest bırakır [m_sec](#m_sec) veri üyesi.  
   
 ```
 HRESULT Term() throw();
@@ -127,7 +127,7 @@ HRESULT Term() throw();
  Bir kez `Term` çağrılıp çağrılmadığını, kritik bölüm için eşitlemeyi artık kullanılabilir.  
   
 ##  <a name="unlock"></a>  CComCriticalSection::Unlock  
- Win32 işlevini çağırır [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169), yer alan kritik bölüm nesnenin sahipliğini serbest [m_sec](#m_sec) veri üyesi.  
+ Win32 işlevini çağırır [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection), yer alan kritik bölüm nesnenin sahipliğini serbest [m_sec](#m_sec) veri üyesi.  
   
 ```
 HRESULT Unlock() throw();

@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cff2dcb8d6b0ad3756a8a0047fcc9b982fb7bb8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 61d92c02c4410bdc01b76ac6307fb9bb2652880a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411451"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203614"
 ---
 # <a name="wctob"></a>wctob
 
-Geniş karakter için birden çok baytlı karakter karşılık gelir ve çok baytlı karakter gösterimini döndürür belirler.
+Bir geniş karakter karşılık gelen çok baytlı bir karakter ve çok baytlı karakterin gösterimine döndürür belirler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,17 +55,17 @@ int wctob(
 ### <a name="parameters"></a>Parametreler
 
 *wchar*<br/>
-Çevirmek için değer.
+Çevrilecek değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **wctob** başarıyla geniş karakter dönüştürür yalnızca birden çok baytlı karakter tam olarak bir bayt uzun olması durumunda, birden çok baytlı karakter gösterim döndürür. Varsa **wctob** karşılaştığı onu dönüştüremiyor birden çok baytlı karakter veya birden çok baytlı karakter geniş karakter olan tam bir bayt uzun, -1 döndürür.
+Varsa **wctob** başarıyla bir geniş karakter dönüştürür, çok baytlı karakter gösterimi yalnızca çok baytlı karakter tam olarak bir bayt uzunluğunda olup olmadığını döndürür. Varsa **wctob** karşılaşıyorsa, dönüştüremiyor bir çok baytlı karakter veya çok baytlı karakterin bir geniş karakterse tam olarak bir bayt uzunluğunda, -1 döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctob** işlevi içinde yer alan geniş karakter dönüştürür *wchar* dönüş tarafından geçirilen karşılık gelen birden çok baytlı karakter **int** , değeri çok baytlı tam olarak bir bayt uzun karakterdir.
+**Wctob** işlevi dönüştürür bulunan bir geniş karakter *wchar* dönüş tarafından geçirilen çok baytlı karaktere karşılık gelen **int** değerini ise çok baytlı tam olarak bir bayt uzunluğunda karakterdir.
 
-Varsa **wctob** başarısız oldu ve karşılık gelen hiçbir birden çok baytlı karakter bulundu, işlevi ayarlar **errno** için **EILSEQ** ve -1 döndürür.
+Varsa **wctob** başarısız oldu ve karşılık gelen hiçbir çok baytlı karakter bulundu, işlev ayarlar **errno** için **EILSEQ** ve -1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -73,11 +73,11 @@ Varsa **wctob** başarısız oldu ve karşılık gelen hiçbir birden çok baytl
 |-------------|---------------------|
 |**wctob**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu programın davranışını gösterilmektedir **wcstombs** işlevi.
+Bu program davranışlarını gösterir **wcstombs** işlevi.
 
 ```C
 // crt_wctob.c
@@ -118,4 +118,4 @@ Determined the corresponding multibyte character to be "A".
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>
+[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efebe74f0f2735b9f32b0114a3db68d0839b90f2
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 857c0614288240aeaf3001d03aa5d6372ccee1c9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965015"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196311"
 ---
 # <a name="hashmultimap-class"></a>hash_multimap Sınıfı
 
@@ -122,13 +122,17 @@ class hash_multimap
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* hash_multimap içinde depolanacak anahtar veri türü.
+*Key*<br/>
+ Hash_multimap içinde depolanacak anahtar veri türü.
 
-*Tür* hash_multimap içinde depolanacak öğe veri türü.
+*Türü*<br/>
+ Hash_multimap içinde depolanacak öğe veri türü.
 
-*Nitelikler* bir sınıfın iki işlev nesneleri içeren tür *nitelikler* birli koşul eşleştirme anahtarını olan bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırma mümkün olan işaretsiz tamsayı türü için öğe değerlerini `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
+*Nitelikler*<br/>
+ Bir sınıfın iki işlev nesneleri içeren tür *nitelikler* bir birli koşul eşleme için öğelerin anahtar değerleri olan bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırma mümkün olan İmzasız tamsayı türünün `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key>>` varsayılan değerdir.
 
-*Allocator* hash_multimap'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type>>`.
+*Ayırıcı*<br/>
+ Hash_multimap'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type>>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -474,11 +478,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılamaz.
 
-`const_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` *\< ***constKey, türü*** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
+`const_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
 Başvurulacak bir `const_iterator` `cIter` bir hash_multimap içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğenin anahtarının değerini erişmek için `cIter`  ->  **ilk**, eşit olduğu (\* `cIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `cIter`  ->  **ikinci**, eşit olduğu (\* `cIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `cIter->first`, eşdeğer olan `(*cIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `cIter->second`, eşdeğer olan `(*cIter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -572,11 +576,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 Bir tür `const_reverse_iterator` kullanın tersten hash_multimap yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
-`const_reverse_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const Key, türü >**, ilk üye öğesine bir anahtar ve ikinci olan üye eşlenen datum öğe tarafından tutulur.
+`const_reverse_iterator` Nesnelerin hash_multimap noktalarına göre tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
 
 Başvurulacak bir `const_reverse_iterator` `crIter` bir hash_multimap içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğenin anahtarının değerini erişmek için `crIter`  ->  **ilk**, eşit olduğu (\* `crIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `crIter`  ->  **ikinci**, eşit olduğu (\* `crIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `crIter->first`, eşdeğer olan `(*crIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `crIter->second`, eşdeğer olan `(*crIter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -595,7 +599,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* hash_multimap eşleştirilecek öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1090,7 +1095,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1180,13 +1186,17 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Where* hash_multimap kaldırılacak öğenin konumu.
+*_Where*<br/>
+ Hash_multimap kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu hash_multimap kaldırıldı.
+*ilk*<br/>
+ Hash_multimap kaldırılan ilk öğenin konumu.
 
-*Son* konumu yalnızca son öğeden sonra hash_multimap kaldırıldı.
+*Son*<br/>
+ Konum yalnızca son öğeden sonra hash_multimap kaldırıldı.
 
-*anahtar* hash_multimap kaldırılacak öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_multimap kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1300,7 +1310,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1517,7 +1528,7 @@ hash_multimap(
 |-|-|
 |*Al*|Varsayılan olarak bu hash_multimap nesne için kullanılacak depolama ayırıcı sınıf `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü `const Traits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `Traits`.|
-|*Sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
+|*sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Kopyalanacak initializer_list.|
@@ -1750,7 +1761,8 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2303,7 +2315,8 @@ void swap(hash_multimap& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan hash_multimap veya öğeleri olan hash_multimap olanlar değiştirilecek hash_multimap.
+*sağ*<br/>
+ Değiştirilecek öğeleri sağlayan hash_multimap veya öğeleri hash_multimap olanlar değiştirilecek olan hash_multimap.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2376,7 +2389,8 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

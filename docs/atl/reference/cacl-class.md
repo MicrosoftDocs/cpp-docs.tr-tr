@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3408e098b7d7b29ff9ee82775954734e3e768dcb
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 066f9ac076d4371692331231b5f6f212947b2001
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879988"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196490"
 ---
 # <a name="cacl-class"></a>CAcl sınıfı
 Bu sınıf için bir sarmalayıcı olan bir `ACL` yapısı (erişim denetim listesi).  
@@ -92,7 +92,7 @@ class CAcl
 |[CAcl::operator =](#operator_eq)|Atama işleci.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `ACL` Yapısıdır üst bilgisine bir ACL (erişim denetim listesi). Bir ACL sıfır veya daha fazla olan sıralı bir listesini içeren [ACE](http://msdn.microsoft.com/library/windows/desktop/aa374868) (erişim denetimi girdileri). Bir ACL içinde tek tek ACE'ler 0'dan numaralandırılır *n-1*burada *n* ACE acl'sindeki sayısıdır. Bir ACL düzenlerken, bir uygulama içinde ACL erişim denetimi girişi (ACE) tarafından dizinini ifade eder.  
+ `ACL` Yapısıdır üst bilgisine bir ACL (erişim denetim listesi). Bir ACL sıfır veya daha fazla olan sıralı bir listesini içeren [ACE](/windows/desktop/SecAuthZ/access-control-entries) (erişim denetimi girdileri). Bir ACL içinde tek tek ACE'ler 0'dan numaralandırılır *n-1*burada *n* ACE acl'sindeki sayısıdır. Bir ACL düzenlerken, bir uygulama içinde ACL erişim denetimi girişi (ACE) tarafından dizinini ifade eder.  
   
  İki ACL türü vardır:  
   
@@ -104,9 +104,9 @@ class CAcl
   
  Bir nesne, bir sistemin bir sistem yöneticisi tarafından denetlenen ACL biçiminde ilişkili sistem düzeyindeki güvenlik bilgileri de sağlayabilirsiniz. Bir sistem ACL, bir nesneye erişim girişimlerini denetlemek için sistem yöneticisine izin verebilirsiniz.  
   
- Daha fazla ayrıntı için [ACL](http://msdn.microsoft.com/library/windows/desktop/aa374872) Windows SDK'sı tartışma.  
+ Daha fazla ayrıntı için [ACL](/windows/desktop/SecAuthZ/access-control-lists) Windows SDK'sı tartışma.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -129,7 +129,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu tür tanımı, erişim denetimi girişi (ACE) türüne özgü denetim bayrakları tanımlamak için kullanılan bir dizi türü belirtir. Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) tanımı tam listesi için olası bayraklar.  
+ Bu tür tanımı, erişim denetimi girişi (ACE) türüne özgü denetim bayrakları tanımlamak için kullanılan bir dizi türü belirtir. Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) tanımı tam listesi için olası bayraklar.  
   
 ##  <a name="cacetypearray"></a>  CAcl::CAceTypeArray  
  Bir bayt dizisi.  
@@ -139,7 +139,7 @@ typedef CAtlArray<BYTE> CAceTypeArray;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu tür tanımı, erişim denetimi girişi (ACE) nesneleri ACCESS_ALLOWED_ACE_TYPE veya ACCESS_DENIED_ACE_TYPE gibi yapısını tanımlamak için kullanılan bir dizi türü belirtir. Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) olası türlerinin tam listesi için tanımı.  
+ Bu tür tanımı, erişim denetimi girişi (ACE) nesneleri ACCESS_ALLOWED_ACE_TYPE veya ACCESS_DENIED_ACE_TYPE gibi yapısını tanımlamak için kullanılan bir dizi türü belirtir. Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) olası türlerinin tam listesi için tanımı.  
   
 ##  <a name="cacl"></a>  CAcl::CAcl  
  Oluşturucu.  
@@ -205,7 +205,7 @@ void GetAclEntries(
   
  Her dizi içeriğini birbiriyle diğer bir deyişle, ilk öğesine karşılık gelen `CAccessMaskArray` dizi içindeki ilk öğeye karşılık gelen `CSidArray` dizi ve benzeri.  
   
- Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) ACE türleri ve bayrakları hakkında daha fazla ayrıntı için.  
+ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) ACE türleri ve bayrakları hakkında daha fazla ayrıntı için.  
   
 ##  <a name="getaclentry"></a>  CAcl::GetAclEntry  
  Tüm bir erişim denetimi listesi (ACL) bir giriş bilgilerini alır.  
@@ -246,7 +246,7 @@ void GetAclEntry(
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, tüm bilgileri hakkında daha fazla bilgi sağlayan bir tek ACE alır [CAcl::GetAclEntries](#getaclentries) tek başına kullanılabilir hale getirir.  
   
- Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) ACE türleri ve bayrakları hakkında daha fazla ayrıntı için.  
+ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) ACE türleri ve bayrakları hakkında daha fazla ayrıntı için.  
   
 ##  <a name="getlength"></a>  CAcl::GetLength  
  Erişim denetimi listesi (ACL) uzunluğunu döndürür.  

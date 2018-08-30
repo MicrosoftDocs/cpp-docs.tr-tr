@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a472a100a03f8a03947eedb3aa8dc04edadb588
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 238fab4ec2d900c8183c018f3cb03fe6dc1fb2f5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202240"
 ---
 # <a name="getheaphandle"></a>_get_heap_handle
 
-C çalışma zamanı sistemi tarafından kullanılan öbek işleyicisini döndürür.
+C çalışma zamanı sistemi tarafından kullanılan yığın tanıtıcısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,11 +54,11 @@ intptr_t _get_heap_handle( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-C çalışma zamanı sistemi tarafından kullanılan Win32 kümesine işleyicisini döndürür.
+C çalışma zamanı sistemi tarafından kullanılan Win32 yığınının tanıtıcısını döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Arama yapmak istiyorsanız bu işlevi kullanın [heapsetınformation oldu](http://msdn.microsoft.com/library/windows/desktop/aa366705) ve Düşük Parçalanma Yığın CRT yığında etkinleştirin.
+Bu işlevi çağırmak istediğinizde kullanın [Heapsetınformation](/windows/desktop/api/heapapi/nf-heapapi-heapsetinformation) ve ve CRT yığınında düşük parçalanma yığınını etkinleştirmek.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -66,7 +66,7 @@ Arama yapmak istiyorsanız bu işlevi kullanın [heapsetınformation oldu](http:
 |-------------|---------------------|
 |**_get_heap_handle**|\<malloc.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="sample"></a>Örnek
 

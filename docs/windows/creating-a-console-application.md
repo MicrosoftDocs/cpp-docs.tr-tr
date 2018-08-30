@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6e4ab4e209b53e33586346495715548cffd4df2e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0a7c3ee4f621e58e0ab7c01b409fdd80ed464051
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42587564"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197384"
 ---
 # <a name="creating-a-console-application"></a>Bir konsol uygulaması oluşturma
 
@@ -43,7 +43,7 @@ Win32 konsol uygulaması oluşturmak için en kolay yolu kullanmaktır **Win32 U
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Konsol projeleri](/visualstudio/debugger/debugging-preparation-console-projects)  
+[Konsol Projeleri](/visualstudio/debugger/debugging-preparation-console-projects)  
 [Kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md)  
 [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)  
-[Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+[Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

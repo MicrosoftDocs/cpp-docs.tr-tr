@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a23ed1283241d3582c0bd548553cb2fed9a47fa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 532f1e060398b20d4714f461c2d687031756c910
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596801"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201128"
 ---
 # <a name="general-mbcs-programming-advice"></a>Genel MBCS Programlama Önerileri
 Aşağıdaki ipuçlarını kullanın:  
@@ -41,7 +41,7 @@ Aşağıdaki ipuçlarını kullanın:
   
 -   Bazı yazı tipleri tüm sistemlerine kullanılamadığından, uygulamanıza yazı seçerken dikkatli olun.  
   
--   İletişim kutuları için yazı tipini seçerken kullanmak [MS Shell Dlg](http://msdn.microsoft.com/library/windows/desktop/dd374112) MS tırnaksız veya Helvetica yerine. MS Shell Dlg ile doğru yazı tipi iletişim kutusu oluşturmadan önce sistem tarafından değiştirilir. MS Shell Dlg kullanarak bu yazı tipi ile ilgili işletim sistemindeki değişiklikler otomatik olarak kullanılabilir olmasını sağlar. (Bu sistemlerin MS Shell Dlg doğru şekilde işlememesi çünkü MFC MS Shell Dlg DEFAULT_GUI_FONT veya sistem yazı tipi Windows 95, Windows 98 ve Windows NT 4 ile değiştirir.)  
+-   İletişim kutuları için yazı tipini seçerken kullanmak [MS Shell Dlg](/windows/desktop/Intl/using-ms-shell-dlg-and-ms-shell-dlg-2) MS tırnaksız veya Helvetica yerine. MS Shell Dlg ile doğru yazı tipi iletişim kutusu oluşturmadan önce sistem tarafından değiştirilir. MS Shell Dlg kullanarak bu yazı tipi ile ilgili işletim sistemindeki değişiklikler otomatik olarak kullanılabilir olmasını sağlar. (Bu sistemlerin MS Shell Dlg doğru şekilde işlememesi çünkü MFC MS Shell Dlg DEFAULT_GUI_FONT veya sistem yazı tipi Windows 95, Windows 98 ve Windows NT 4 ile değiştirir.)  
   
 -   Uygulamanızı tasarlarken hangi dizeleri yerelleştirilmiş karar verin. Bu konuda şüpheleriniz varsa herhangi bir dize yerelleştirilmiş olduğunu varsayalım. Bu nedenle, yerelleştirilebilir dize yerelleştirilemeyen karıştırmayın.  
   

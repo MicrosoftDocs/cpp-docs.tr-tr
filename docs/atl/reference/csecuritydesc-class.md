@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9968a3601e366628b3539343dde34e956387356a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ea4bfc278e0912248c437123bd1510002a5c3829
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885770"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201633"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 Bu sınıf için bir sarmalayıcı olan `SECURITY_DESCRIPTOR` yapısı.  
@@ -115,7 +115,7 @@ class CSecurityDesc
   
  Uygulamaları değişiklik `SECURITY_DESCRIPTOR` yapısı doğrudan ve bunun yerine kullanması gereken sağlanan sınıfı yöntemleri.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -155,7 +155,7 @@ bool FromString(LPCTSTR pstr) throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pstr*  
- İçeren null ile sonlandırılmış bir dize işaretçisine [dize biçimi güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379570) dönüştürülecek.  
+ İçeren null ile sonlandırılmış bir dize işaretçisine [dize biçimi güvenlik tanımlayıcısı](/windows/desktop/SecAuthZ/security-descriptor-string-format) dönüştürülecek.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olma durumunda true döndürür. Özel durum hatası oluşturur.  
@@ -163,7 +163,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 ### <a name="remarks"></a>Açıklamalar  
  Dize kullanarak oluşturulabilir [CSecurityDesc::ToString](#tostring). Güvenlik tanımlayıcısı bir dizeye dönüştürme depolayıp iletmek kolaylaştırır.  
   
- Bu yöntemin çağırdığı [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ Bu yöntemin çağırdığı [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).  
   
 ##  <a name="getcontrol"></a>  CSecurityDesc::GetControl  
  Alır, bilgi güvenlik tanımlayıcısı denetler.  
@@ -180,7 +180,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
  Yöntem başarılı olursa, yanlış başarısız olması durumunda true döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin çağırdığı [GetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa446647).  
+ Bu yöntemin çağırdığı [GetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa446647).  
   
 ##  <a name="getdacl"></a>  CSecurityDesc::GetDacl  
  Güvenlik tanımlayıcısından isteğe bağlı erişim denetimi listesini (DACL) bilgilerini alır.  
@@ -251,7 +251,7 @@ const SECURITY_DESCRIPTOR* GetPSECURITY_DESCRIPTOR() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi döndürür [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) yapısı.  
+ Bir işaretçi döndürür [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) yapısı.  
   
 ##  <a name="getsacl"></a>  CSecurityDesc::GetSacl  
  Güvenlik tanımlayıcısının sistem erişim denetimi listesini (SACL) bilgileri alır.  
@@ -428,7 +428,7 @@ bool IsSelfRelative() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğu tüm güvenlik bilgileri ile eşitse true döndürür. Mutlak biçimde güvenlik tanımlayıcısı ise yanlış değerini döndürür. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğu tüm güvenlik bilgileri ile eşitse true döndürür. Mutlak biçimde güvenlik tanımlayıcısı ise yanlış değerini döndürür. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="makeabsolute"></a>  CSecurityDesc::MakeAbsolute  
  Mutlak biçimde güvenlik tanımlayıcısı dönüştürmek için bu yöntemi çağırın.  
@@ -441,7 +441,7 @@ bool MakeAbsolute() throw(...);
  Yöntem başarılı olursa, yanlış Aksi takdirde true değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Mutlak biçimde güvenlik tanımlayıcısı, bilgi yerine içerdiği bilgilere işaretçileri içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğunu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısındaki bir `SECURITY_DESCRIPTOR` yapısı bilgileri her zaman başlar, ancak diğer güvenlik tanımlayıcısı kullanıcının herhangi bir sırada yapısı bileşenleri izleyebilirsiniz. Bellek adreslerini kullanmak yerine, kendine bağlı güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik tanımlayıcısının bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan yararlı olur. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ Mutlak biçimde güvenlik tanımlayıcısı, bilgi yerine içerdiği bilgilere işaretçileri içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğunu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısındaki bir `SECURITY_DESCRIPTOR` yapısı bilgileri her zaman başlar, ancak diğer güvenlik tanımlayıcısı kullanıcının herhangi bir sırada yapısı bileşenleri izleyebilirsiniz. Bellek adreslerini kullanmak yerine, kendine bağlı güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik tanımlayıcısının bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan yararlı olur. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="makeselfrelative"></a>  CSecurityDesc::MakeSelfRelative  
  Güvenlik tanımlayıcısı kendine bağlı biçimine dönüştürmek için bu yöntemi çağırın.  
@@ -454,7 +454,7 @@ bool MakeSelfRelative() throw(...);
  Yöntem başarılı olursa, yanlış Aksi takdirde true değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Mutlak biçimde güvenlik tanımlayıcısı bilgilerini içeren yerine, içerdiği bilgilere işaretçileri içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğunu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısındaki bir `SECURITY_DESCRIPTOR` yapısı bilgileri her zaman başlar, ancak diğer güvenlik tanımlayıcısı kullanıcının herhangi bir sırada yapısı bileşenleri izleyebilirsiniz. Bellek adreslerini kullanmak yerine, güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik tanımlayıcısının bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan yararlı olur. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/aa374807).  
+ Mutlak biçimde güvenlik tanımlayıcısı bilgilerini içeren yerine, içerdiği bilgilere işaretçileri içerir. Güvenlik tanımlayıcısı kendine bağlı biçimde bitişik bir bellek bloğunu bilgileri içerir. Kendine bağlı güvenlik tanımlayıcısındaki bir `SECURITY_DESCRIPTOR` yapısı bilgileri her zaman başlar, ancak diğer güvenlik tanımlayıcısı kullanıcının herhangi bir sırada yapısı bileşenleri izleyebilirsiniz. Bellek adreslerini kullanmak yerine, güvenlik tanımlayıcısı bileşenlerinin güvenlik tanımlayıcısı başından uzaklık tarafından tanımlanır. Bu biçim bir güvenlik tanımlayıcısının bir diskte depolanan veya bir iletişim protokolü aracılığıyla aktarılan yararlı olur. Daha fazla bilgi için [mutlak ve Self-Relative güvenlik tanımlayıcıları](/windows/desktop/SecAuthZ/absolute-and-self-relative-security-descriptors).  
   
 ##  <a name="operator_eq"></a>  CSecurityDesc::operator =  
  Atama işleci.  
@@ -489,7 +489,7 @@ bool SetControl(
   
 ### <a name="parameters"></a>Parametreler  
  *Controlbitsofınterest*  
- Ayarlanacak denetim bitlerini gösteren SECURITY_DESCRIPTOR_CONTROL maskesi. Ayarlanabilecek bayrakların listesi için bkz. [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
+ Ayarlanacak denetim bitlerini gösteren SECURITY_DESCRIPTOR_CONTROL maskesi. Ayarlanabilecek bayrakların listesi için bkz. [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
  *ControlBitsToSet*  
  Tarafından belirtilen denetim bitleri için yeni değerler gösteren SECURITY_DESCRIPTOR_CONTROL maske *Controlbitsofınterest* maskesi. Bu parametre için listelenen bayrakların birleşimi olabilir *Controlbitsofınterest* parametresi.  
@@ -498,7 +498,7 @@ bool SetControl(
  Başarılı olma durumunda true, aksi durumda false değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin çağırdığı [SetSecurityDescriptorControl](http://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
+ Bu yöntemin çağırdığı [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).  
   
 ##  <a name="setdacl"></a>  CSecurityDesc::SetDacl  
  İsteğe bağlı erişim denetimi listesini (DACL) bilgilerini ayarlar. Bir DACL, güvenlik tanımlayıcısı zaten varsa, değiştirilir.  
@@ -592,7 +592,7 @@ bool ToString(
   
 ### <a name="parameters"></a>Parametreler  
  *pstr*  
- Alacak null ile sonlandırılmış bir dize işaretçisi [dize biçimi güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379570).  
+ Alacak null ile sonlandırılmış bir dize işaretçisi [dize biçimi güvenlik tanımlayıcısı](/windows/desktop/SecAuthZ/security-descriptor-string-format).  
   
  *sı*  
  Çıkış dizesine eklemek için güvenlik tanımlayıcısı bileşenlerini göstermek için SECURITY_INFORMATION bit bayrakları birleşimi belirtir.  
@@ -614,12 +614,12 @@ bool ToString(
   
  NULL DACL ve giriş güvenlik tanımlayıcısı SE_DACL_PRESENT denetimi biti ayarlanmış yöntemi başarısız olur.  
   
- NULL DACL ise ve SE_DACL_PRESENT denetim bit giriş güvenlik tanımlayıcısı ayarlı değil, sonuçta elde edilen güvenlik açıklayıcı dizesinin D: bileşen yok. Bkz: [güvenlik tanımlayıcısı dize biçiminde](http://msdn.microsoft.com/library/windows/desktop/aa379570) daha fazla ayrıntı için.  
+ NULL DACL ise ve SE_DACL_PRESENT denetim bit giriş güvenlik tanımlayıcısı ayarlı değil, sonuçta elde edilen güvenlik açıklayıcı dizesinin D: bileşen yok. Bkz: [güvenlik tanımlayıcısı dize biçiminde](/windows/desktop/SecAuthZ/security-descriptor-string-format) daha fazla ayrıntı için.  
   
- Bu yöntemin çağırdığı [ConvertStringSecurityDescriptorToSecurityDescriptor](http://msdn.microsoft.com/library/windows/desktop/aa376401).  
+ Bu yöntemin çağırdığı [ConvertStringSecurityDescriptorToSecurityDescriptor](/windows/desktop/api/sddl/nf-sddl-convertstringsecuritydescriptortosecuritydescriptora).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   
- [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91ec7e11272e0a7286d77e3fc96b7437007a0f8d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a4af9fa780aca1bc1c1304b45d226984fbb5eb7e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408526"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201451"
 ---
 # <a name="member-access-operators--and--gt"></a>Üye erişim işleçleri:. ve -&gt;
 ## <a name="syntax"></a>Sözdizimi  
@@ -46,7 +46,7 @@ postfix-expression -> name
   
 1.  İlk biçiminde *sonek ifadesi* yapısı, sınıfı ya da birleşim türünün bir değeri temsil eder ve *adı* belirtilen yapı, birlik veya üye adları. İşlem, değeri *adı* ve bir l-değeri ise *sonek ifadesi* bir l değeridir.  
   
-2.  İkinci biçiminde *sonek ifadesi* yapı, birleşim veya sınıf, bir işaretçiyi temsil eder ve *adı* belirtilen yapı, birlik veya üye adları. Değer budur *adı* ve bir l değeridir. **->** İşleci işaretçinin başvurusunu kaldırır. Bu nedenle, ifadeleri * e ***->** `member` ve **(\****e***)**.`member` (burada *e* bir işaretçiyi temsil eder) aynı sonuçları (olmadığı dışında işleçleri **->** veya **\*** aşırı).  
+2.  İkinci biçiminde *sonek ifadesi* yapı, birleşim veya sınıf, bir işaretçiyi temsil eder ve *adı* belirtilen yapı, birlik veya üye adları. Değer budur *adı* ve bir l değeridir. **->** İşleci işaretçinin başvurusunu kaldırır. Bu nedenle, ifadeleri `e->member` ve `(*e).member` (burada *e* bir işaretçiyi temsil eder) aynı sonuçları (olmadığı dışında işleçleri **->** veya <strong>\*</strong> aşırı).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki örnek, üye erişim işleci, her iki biçimi gösterir.  

@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b6043da3945b36bd756714049b2bb6c91a32bd4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4cae819ccffae37ca27d1e062ae9a766e7acba1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966556"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201757"
 ---
 # <a name="moneyget-class"></a>money_get Sınıfı
 
@@ -46,9 +46,11 @@ class money_get : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
+*CharType*<br/>
+ Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-*Inputıterator* alma işlevlerinin kendi girişlerini okuma yineleyici türü.
+*Inputıterator*<br/>
+ Alma işlevlerinin kendi girişlerini okuyacağı yineleyicinin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -113,17 +115,23 @@ virtual iter_type do_get(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürülecek dizisi başına ele alan giriş yineleyici.
+*ilk*<br/>
+ Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son* dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
+*Son*<br/>
+ Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*Uluslararası* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
+*Uluslararası*<br/>
+ Beklenen dizide para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-*Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir.
+*iosbase*<br/>
+ Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*Durum* işlemleri veya başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
+*State*<br/>
+ İşlemleri veya başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*VAL* dönüştürülmüş sıralı depolamak için bir dize.
+*VAL*<br/>
+ Dönüştürülmüş sıralı depolamak için bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -189,17 +197,23 @@ iter_type get(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürülecek dizisi başına ele alan giriş yineleyici.
+*ilk*<br/>
+ Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son* dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
+*Son*<br/>
+ Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*Uluslararası* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
+*Uluslararası*<br/>
+ Beklenen dizide para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-*Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir
+*iosbase*<br/>
+ Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir
 
-*Durum* işlemleri başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
+*State*<br/>
+ İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*VAL* dönüştürülmüş sıralı depolamak için bir dize.
+*VAL*<br/>
+ Dönüştürülmüş sıralı depolamak için bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -280,7 +294,8 @@ explicit money_get(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+ Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -294,7 +309,7 @@ Olası değerler için *_Refs* parametresi ve bunların önemi:
 
 Yok edici korumalı olduğundan doğrudan örnek mümkündür.
 
-Oluşturucu, temel nesnesiyle başlatır **yerel::**[modeli](../standard-library/locale-class.md#facet_class)(**_ *** Refs*).
+Oluşturucu, temel nesnesiyle başlatır **yerel::**[modeli](../standard-library/locale-class.md#facet_class)(*_Refs*).
 
 ## <a name="string_type"></a>  money_get::string_type
 

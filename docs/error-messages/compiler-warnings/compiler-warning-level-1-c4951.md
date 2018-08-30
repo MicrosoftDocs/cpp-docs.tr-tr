@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4951 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3ebf012338bdf6b90cc943e754056335c6751a4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e26c4bc176a54f063a3f9bce2faf451a9c0406f0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290471"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204241"
 ---
 # <a name="compiler-warning-level-1-c4951"></a>Derleyici Uyarısı (düzey 1) C4951
-'function' profili itibaren kullanılmıyor işlevi profil verileri, toplanan veriler, düzenlenebilir  
-  
- Bir işlev için bir giriş modülünde düzenlenen [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), böylece profil verileri artık geçerli değil. Giriş modülü sonra derlendiğini **/LTCG:PGINSTRUMENT** ve bir işleve sahiptir (***işlevi***) farklı bir akış modülünde zamanında olandan denetimi ile **/LTCG:PGINSTRUMENT**  işlemi.  
-  
- Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözümlemek **/LTCG:PGINSTRUMENT**, tüm test yineleme çalıştırır ve Çalıştır **/LTCG:PGOPTIMIZE**.  
-  
- Bu uyarı ile bir hata durumunda değiştirilmesi **/LTCG:PGOPTIMIZE** kullanılan.
+
+> '*işlevi*' profili beri işlevi profil verileri, veri toplanmıştır düzenlenip düzenlenmediğini gösterir
+
+Bir işlev için bir giriş modülünde düzenlenmiş [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), böylece profil verileri artık geçerli değil. Giriş modülü sonra derlendiğini **/LTCG:PGINSTRUMENT** ve bir işlev (*işlevi*) farklı bir modülde zamanında olandan denetim akışı ile **/LTCG:PGINSTRUMENT**  işlemi.
+
+Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözmek için **/LTCG:PGINSTRUMENT**, tüm test Yinele çalıştırır ve çalıştırma **/LTCG:PGOPTIMIZE**.
+
+Bu uyarı ile ilgili bir hata varsa geçecekti **/LTCG:PGOPTIMIZE** kullanılmış.

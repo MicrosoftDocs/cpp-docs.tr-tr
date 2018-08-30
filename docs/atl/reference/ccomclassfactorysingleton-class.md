@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: debb983c-382b-487b-8d42-7ea26dc158b8
 author: mikeblome
 ms.author: mblome
-ms.openlocfilehash: ee594cb3cfef5ebc67b953b62d05b933b71f9f1d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c70347c7226df804acd894b6271c4673ec81f72d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884200"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201161"
 ---
 # <a name="ccomclassfactorysingleton-class"></a>CComClassFactorySingleton sınıfı
 Bu sınıfın türetildiği [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için.  
@@ -109,7 +109,7 @@ CComPtr<IUnknown> m_spObj;
  Unutmayın, geçerli form `m_spObj` sunan bir arabirimden değişiklik, `CComClassFactorySingleton` ATL önceki sürümlerinde çalışan Önceki sürümlerde `CComClassFactorySingleton` nesnenin oluşturulduğu sınıf üreteci ile aynı zamanda sunucu başlatma sırasında. Visual C++ .NET 2003 nesne gevşek, ilk isteği oluşturulur. Bu değişiklik, üzerinde erken başlatma kullanan programlar hatalara yol açabilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
+ [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
  [CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
  [CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   

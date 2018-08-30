@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93a637c1374e77127a5bf71c6fa736d2857928f1
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 05b259afe5c266db30ed31ed47e917f0ac1a5607
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466473"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196196"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 Windows ortak ilerleme çubuğu denetimi işlevlerini sağlar.  
@@ -143,14 +143,14 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- İlerleme çubuğu denetiminin stilini belirtir. Uygulama penceresi stylesdescribed içinde herhangi bir birleşimini [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) aşağıdaki ilerleme çubuğu denetimi için denetim stilleri yanı sıra Windows SDK:  
+ İlerleme çubuğu denetiminin stilini belirtir. Uygulama penceresi stylesdescribed içinde herhangi bir birleşimini [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) aşağıdaki ilerleme çubuğu denetimi için denetim stilleri yanı sıra Windows SDK:  
   
 - Pbs_vertıcal görüntüler dikey ilerleme bilgileri, en alt kısma. Bu bayrağı olmadan ilerleme çubuğu denetimi, yatay, soldan sağa görüntüler.  
   
 - PBS_SMOOTH görüntüler gradual, ilerleme çubuğu denetimi doldurma kesintisiz. Bu bayrak olmadan, denetim blokları ile doldurur.  
   
  *Rect*  
- İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Denetimi alt pencere olması gerektiğinden, belirtilen koordinatlara göre istemci alanının olan *pParentWnd*.  
+ İlerleme çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Denetimi alt pencere olması gerektiğinden, belirtilen koordinatlara göre istemci alanının olan *pParentWnd*.  
   
  *pParentWnd*  
  İlerleme çubuğu denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.  
@@ -181,13 +181,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- İlerleme çubuğu denetiminin stilini belirtir. Herhangi bir birleşimini açıklanan pencere stilleri uygulamak [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
+ İlerleme çubuğu denetiminin stilini belirtir. Herhangi bir birleşimini açıklanan pencere stilleri uygulamak [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  
@@ -209,10 +209,10 @@ COLORREF GetBarColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir ilerleme çubuğu rengi temsil olarak bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri ya da İlerleme göstergesi çubuğu rengi kullanılan varsayılan rengi ise CLR_DEFAULT.  
+ Geçerli bir ilerleme çubuğu rengi temsil olarak bir [COLORREF](/windows/desktop/gdi/colorref) değeri ya da İlerleme göstergesi çubuğu rengi kullanılan varsayılan rengi ise CLR_DEFAULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PBM_GETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760826) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_GETBARCOLOR](/windows/desktop/Controls/pbm-getbarcolor) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getbkcolor"></a>  CProgressCtrl::GetBkColor  
  Geçerli ilerleme çubuğu arka plan rengini alır.  
@@ -222,10 +222,10 @@ COLORREF GetBkColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Arka plan rengi geçerli ilerleme çubuğu olarak temsil bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri.  
+ Arka plan rengi geçerli ilerleme çubuğu olarak temsil bir [COLORREF](/windows/desktop/gdi/colorref) değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PBM_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760828) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_GETBKCOLOR](/windows/desktop/Controls/pbm-getbkcolor) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getpos"></a>  CProgressCtrl::GetPos  
  İlerleme çubuğu geçerli konumunu alır.  
@@ -282,7 +282,7 @@ int GetState() const;
 |PBST_PAUSED|Duraklatıldı|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PBM_GETSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760834) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_GETSTATE](/windows/desktop/Controls/pbm-getstate) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_progressCtrl`, yani ilerleme çubuğu denetimi programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -307,7 +307,7 @@ int GetStep() const;
 ### <a name="remarks"></a>Açıklamalar  
  Adım artırma tutarı olan bir çağrı [CProgressCtrl::StepIt](#stepit) ilerleme çubuğu geçerli konumunu artırır.  
   
- Bu yöntem gönderir [PBM_GETSTEP](http://msdn.microsoft.com/library/windows/desktop/bb760836) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_GETSTEP](/windows/desktop/Controls/pbm-getstep) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_progressCtrl`, yani ilerleme çubuğu denetimi programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -347,17 +347,17 @@ COLORREF SetBarColor(COLORREF clrBar);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *clrBar*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) İlerleme göstergesi yeni rengini belirten bir değer. Varsayılan rengini kullanılacak ilerleme çubuğu neden CLR_DEFAULT belirtin.|  
+|[in] *clrBar*|A [COLORREF](/windows/desktop/gdi/colorref) İlerleme göstergesi yeni rengini belirten bir değer. Varsayılan rengini kullanılacak ilerleme çubuğu neden CLR_DEFAULT belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
-İlerleme göstergesi önceki rengi temsil olarak bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri ya da İlerleme göstergesi rengini varsayılan rengi ise CLR_DEFAULT.  
+İlerleme göstergesi önceki rengi temsil olarak bir [COLORREF](/windows/desktop/gdi/colorref) değeri ya da İlerleme göstergesi rengini varsayılan rengi ise CLR_DEFAULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
 
 `SetBarColor` Yöntemini ayarlar ilerleme çubuğu renk yalnızca şu durumlarda bir Windows Vista [tema](/windows/desktop/Controls/visual-styles-overview) etkili değildir.  
   
- Bu yöntem gönderir [PBM_SETBARCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760838) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_SETBARCOLOR](/windows/desktop/Controls/pbm-setbarcolor) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_progressCtrl`, yani ilerleme çubuğu denetimi programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -381,7 +381,7 @@ COLORREF SetBkColor(COLORREF clrNew);
  Yeni arka plan rengini belirtir COLORREF değeri. Varsayılan arka plan rengi ilerleme çubuğu için kullanılacak CLR_DEFAULT değeri belirtin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) arka plan rengini varsayılan rengi ise önceki arka plan rengi veya CLR_DEFAULT belirten değer.  
+ [COLORREF](/windows/desktop/gdi/colorref) arka plan rengini varsayılan rengi ise önceki arka plan rengi veya CLR_DEFAULT belirten değer.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CProgressCtrl#6](../../mfc/reference/codesnippet/cpp/cprogressctrl-class_10.cpp)]  
@@ -408,7 +408,7 @@ BOOL SetMarquee(
 ### <a name="remarks"></a>Açıklamalar  
  Kayan modu açık, İlerleme çubuğunda bir animasyon görünür ve kayarken ister bir oturum açma tiyatro çerçevesi.  
   
- Bu yöntem gönderir [PBM_SETMARQUEE](http://msdn.microsoft.com/library/windows/desktop/bb760842) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_SETMARQUEE](/windows/desktop/Controls/pbm-setmarquee) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_progressCtrl`, yani ilerleme çubuğu denetimi programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  
@@ -484,7 +484,7 @@ int SetState(int iState);
  Geçerli ilerleme çubuğu denetimi önceki durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PBM_SETSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760850) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PBM_SETSTATE](/windows/desktop/Controls/pbm-setstate) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_progressCtrl`, yani ilerleme çubuğu denetimi programlı olarak erişmek için kullanılır. Bu değişken bir sonraki örnekte kullanılır.  

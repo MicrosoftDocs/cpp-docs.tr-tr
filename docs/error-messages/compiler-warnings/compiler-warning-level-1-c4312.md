@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18039e44a5616330c66603e448bcafd6d18ff7aa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b30d020532935c925b1ecab25d17cd43a7e8663
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279681"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205908"
 ---
 # <a name="compiler-warning-level-1-c4312"></a>Derleyici Uyarısı (düzey 1) C4312
 'operation' : 'type1' öğesinden daha büyük boyutlu 'type2' öğesine dönüştürme  
   
- Bu uyarı 32-bit atama 64-bit işaretçi türü için örneğin, 32 bitlik bir değer atama denemesi algılar `int` veya `long` 64-bit işaretçisi.  
+ Bu uyarı bir 32-bit atama 64-bit işaretçi türü için örneğin, 32-bit bir değer atamak için bir deneme algılar `int` veya `long` 64-bit işaretçi.  
   
- Bu, güvenli olmayan bir dönüştürme bile 32 bit cinsinden oturum uzantısı oluştuğunda uyan işaretçi değerleri için olabilir. Negatif bir 32 bit tamsayı bir 64-bit işaretçi türü atanırsa, oturum uzantısı tamsayı değerinden farklı bir bellek adresi başvurmak işaretçi değeri neden olur.  
+ Bu, güvenli olmayan bir dönüştürme bile 32 bit imza uzantısı oluştuğunda uyan işaretçi değerleri olabilir. Negatif bir 32 bit tamsayı bir 64-bit işaretçi türüne atanan işaret uzantısı tamsayı değerinden farklı bir bellek adresi başvurusu işaretçi değeri neden olur.  
   
- Bu uyarı yalnızca 64-bit derleme hedefler için görüntülenir. Daha fazla bilgi için bkz: [kullanarak işaretçileri için kuralları](http://msdn.microsoft.com/library/windows/desktop/aa384242).  
+ Bu uyarı, yalnızca 64 bit derleme hedefleri için görüntülenir. Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).  
   
- 64-bit hedefler için derlenmiştir olduğunda aşağıdaki kod örneğinde C4312 oluşturur:  
+ Aşağıdaki kod örneği, 64-bit hedefleri için derlendiğinde C4312 oluşturur:  
   
 ```  
 // C4312.cpp  

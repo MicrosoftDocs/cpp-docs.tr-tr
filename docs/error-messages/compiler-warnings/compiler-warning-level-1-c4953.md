@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4953 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0af5a16ebbf7851eceb2f2cd355f953b14c4bd38
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9e53808d4ad97bad4eccdf81b0a863277f8f7796
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293068"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194638"
 ---
 # <a name="compiler-warning-level-1-c4953"></a>Derleyici Uyarısı (düzey 1) C4953
-Inlinee 'function' profili itibaren kullanılmıyor profil verileri, toplanan veriler, düzenlenebilir  
-  
- Kullanırken [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), sonra derlendiğini bir giriş modülü derleyici algıladı `/LTCG:PGINSTRUMENT` ve bir işleve sahiptir (***işlevi***) düzenlenen ve varolan test çalıştığı tanımlanan aday olarak işlev satır içi kullanım. Ancak, bunun sonucunda modülü yeniden derlenmesi işlevi artık aday olmayacaktır satır içi kullanım.  
-  
- Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözümlemek `/LTCG:PGINSTRUMENT`, tüm test yineleme çalıştırır ve Çalıştır `/LTCG:PGOPTIMIZE`.  
-  
- Bu uyarı ile bir hata durumunda değiştirilmesi `/LTCG:PGOPTIMIZE` kullanılan.
+
+> Alınanın '*işlevi*' profili bu yana profil verileri, veri toplanmıştır düzenlenip düzenlenmediğini gösterir
+
+Kullanırken [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), derleyici sonra derlendiğini bir giriş modülü algılandı `/LTCG:PGINSTRUMENT` ve bir işlev (*işlevi*) düzenlenebilir ve burada mevcut test çalışmaları tanımlanan bir aday olarak işlev satır içi kullanım. Ancak, sonuç olarak modülü yeniden derlemeden işlev adayı olmayacak satır içi kullanım.
+
+Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözmek için `/LTCG:PGINSTRUMENT`, tüm test Yinele çalıştırır ve çalıştırma `/LTCG:PGOPTIMIZE`.
+
+Bu uyarı ile ilgili bir hata varsa geçecekti `/LTCG:PGOPTIMIZE` kullanılmış.

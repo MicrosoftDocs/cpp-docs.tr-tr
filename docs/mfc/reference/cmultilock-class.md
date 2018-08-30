@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a098f275ec0c7b553d7ac192d7b588ffa6dcfa1b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ebcfda85c82d10f2493234bb340a68129f779a28
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849879"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198118"
 ---
 # <a name="cmultilock-class"></a>CMultiLock sınıfı
 Çoklu iş parçacığı kullanan programda kaynaklara erişimi denetlemek için kullanılan erişim denetim mekanizmasını temsil eder.  
@@ -128,7 +128,7 @@ DWORD Lock(
  Tüm nesneler beklenen döndürmeden önce aynı anda sinyalli hale dönüşmesi olup olmadığını belirtir. FALSE ise `Lock` beklenen nesnelerin herhangi biri sinyal zaman döndürür.  
   
  *dwWakeMask*  
- Beklemeyi iptal etmek için izin verilen diğer koşulları belirtir. Bu parametre için kullanılabilir seçenekler tam bir listesi için bkz. [MsgWaitForMultipleObjects](http://msdn.microsoft.com/library/windows/desktop/ms684242) Windows SDK.  
+ Beklemeyi iptal etmek için izin verilen diğer koşulları belirtir. Bu parametre için kullanılabilir seçenekler tam bir listesi için bkz. [MsgWaitForMultipleObjects](/windows/desktop/api/winuser/nf-winuser-msgwaitformultipleobjects) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsa `Lock` döndürür - 1 başarısız olur. Başarılı olursa, aşağıdaki değerlerden birini döndürür:  

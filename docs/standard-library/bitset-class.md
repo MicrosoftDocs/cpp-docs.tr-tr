@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01a3d5aa898dccd680ea575a5753bc5cc3b8abf9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ef37b3bae0fa6bff9353b4415a614d252ddf661e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962835"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205346"
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 
@@ -64,7 +64,8 @@ class bitset
 
 ### <a name="parameters"></a>Parametreler
 
-*N* bit sayısı sıfır olmayan bir tamsayı türü bitset nesneyle belirtir `size_t` , gerekir bilinir derleme zamanında.
+*N*<br/>
+ Bitset nesnesindeki sıfır olmayan bir tamsayı türü ile bit sayısını belirtir. `size_t` , gerekir bilinir derleme zamanında.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -237,19 +238,26 @@ explicit bitset(
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* yapılandırılmakta bitset bitler başlatmak için kullanılan iki temel temsili işaretsiz tamsayı.
+*VAL*<br/>
+ İki temel temsili yapılandırılmakta bitset bitler başlatmak için kullanılan işaretsiz tamsayı.
 
-*str* sıfırlar ve bitset bit değerleri başlatmak için kullanılan değerler dizisi.
+*str*<br/>
+ Sıfır ve bitset bit değerleri başlatmak için kullanılan değerler dizisi.
 
-*_CStr* sıfırlar ve vm'lere bitset bit değerleri başlatmak için kullanılan bir C tarzı dizesi.
+*_CStr*<br/>
+ Sıfır ve vm'lere bitset bit değerleri başlatmak için kullanılan bir C tarzı dizesi.
 
-*_Pos* karakterin konumu soldan sağa ve sıfır ile başlayan sayım dizisinde kullanılan bitset'in ilk bit başlatılamadı.
+*_Pos*<br/>
+ Soldan sağa sayım ve bitset'in ilk bit başlatmak için kullanılan sıfır ile başlayarak dizedeki karakter konumu.
 
-*sayısı* bitset bitler için başlangıç değerlerini sağlamak için kullanılan dize karakter sayısı.
+*Sayısı*<br/>
+ Bitset bitler için başlangıç değerlerini sağlamak için kullanılan dize karakter sayısı.
 
-*_Zero* sıfır temsil etmek için kullanılan karakter. '0' varsayılandır.
+*_Zero*<br/>
+ Sıfır temsil etmek için kullanılan karakter. '0' varsayılandır.
 
-*_Bir* bir temsil etmek için kullanılan karakter. '1' varsayılandır.
+*_Bir*<br/>
+ Bir tane temsil etmek için kullanılan karakter. '1' varsayılandır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -465,7 +473,8 @@ bitset\<N>& flip(size_t _Pos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* değeri olan çevrilmemesi için bit konumu.
+*_Pos*<br/>
+ Ters için değeri olan bit konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -473,7 +482,7 @@ bitset\<N>& flip(size_t _Pos);
 
 ### <a name="remarks"></a>Açıklamalar
 
-İkinci üye işlevi oluşturur bir [out_of_range](../standard-library/out-of-range-class.md) parametre olarak belirtilen konumu boyutundan büyükse, özel durum *N* , **bitset\<***N***  >**  biti ters.
+İkinci üye işlevi oluşturur bir [out_of_range](../standard-library/out-of-range-class.md) parametre olarak belirtilen konumu boyutundan büyükse, özel durum *N* , **bitset\<**  *N* **>** biti ters.
 
 ### <a name="example"></a>Örnek
 
@@ -593,7 +602,8 @@ bool operator!=(const bitset\<N>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef bitset eşitsizlik için karşılaştırılması gereken olan bitset.
+*sağ*<br/>
+ Eşitsizlik için hedef bitset karşılaştırılacak olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -654,7 +664,8 @@ bitset\<N>& operator&=(const bitset\<N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* Bitsel hedef bitset ile birleştirilecek olan bitset.
+*sağ*<br/>
+ Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -720,7 +731,8 @@ bitset\<N> operator<<(size_t _Pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* kaydırılmasına bitset bitler olan sol konumlara sayısı.
+*_Pos*<br/>
+ Bitset bitler kaydırılmasına olan sol konumlara sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -771,7 +783,8 @@ bitset\<N>& operator<<=(size_t _Pos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* sol bitset bitler olan kaydırılmasına konumlara sayısı.
+*_Pos*<br/>
+ Sol kaydırılmasına bitset bitler olan konumlara sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -817,7 +830,8 @@ bool operator==(const bitset\<N>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef bitset eşitlik için karşılaştırılması gereken olan bitset.
+*sağ*<br/>
+ Hedef bitset eşitlik için karşılaştırılması gereken olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -877,7 +891,8 @@ bitset\<N> operator>>(size_t _Pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* sağ bitset bitler olan kaydırılmasına konumlara sayısı.
+*_Pos*<br/>
+ Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -929,7 +944,8 @@ bitset\<N>& operator>>=(size_t _Pos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* sağ bitset bitler olan kaydırılmasına konumlara sayısı.
+*_Pos*<br/>
+ Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -977,7 +993,8 @@ reference operator[](size_t _Pos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* bit bitset içinde bulma konumu.
+*_Pos*<br/>
+ Bitset içindeki bit bulma konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1019,7 +1036,8 @@ bitset\<N>& operator^=(const bitset\<N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* Bitsel hedef bitset ile birleştirilecek olan bitset.
+*sağ*<br/>
+ Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1084,7 +1102,8 @@ bitset\<N>& operator|=(const bitset\<N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* Bitsel hedef bitset ile birleştirilecek olan bitset.
+*sağ*<br/>
+ Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1203,9 +1222,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* nesne türünün değerini **bool** biraz içinde bir bitset atanacak.
+*VAL*<br/>
+ Nesne türü değeri **bool** biraz içinde bir bitset atanacak.
 
-*_Bitref* biçiminde bir başvuru *x [i]* konumunda bit *miyim* bitset içinde *x*.
+*_Bitref*<br/>
+ Bir formun başvurusu *x [i]* konumunda bit *miyim* bitset içinde *x*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1213,7 +1234,7 @@ Bitset sınıfı başvuru beşinci üye işlevleri ve birinci, ikinci bağımsı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Sınıf `reference` bitset yardımcı bir sınıf olarak yalnızca mevcut `operator[]`. Üye sınıfı bir bitset içinde tek bir bit erişebilen bir nesneyi tanımlar. İzin *b* türünde bir nesne olması **bool**, *x* ve *y* türünden nesnelerin **bitset\<***N***  >** , ve *miyim* ve *j* böyle bir nesnenin içinde geçerli konumları. Bu gösterim *x [i]* bit konuma başvuran *miyim* bitset içinde *x*. Sınıfın üye işlevleri `reference` , sırayla şu işlemleri sağlar:
+Sınıf `reference` bitset yardımcı bir sınıf olarak yalnızca mevcut `operator[]`. Üye sınıfı bir bitset içinde tek bir bit erişebilen bir nesneyi tanımlar. İzin *b* türünde bir nesne olması **bool**, *x* ve *y* türünden nesnelerin **bitset\<**  *N* **>**, ve *miyim* ve *j* böyle bir nesnenin içinde geçerli konumları. Bu gösterim *x [i]* bit konuma başvuran *miyim* bitset içinde *x*. Sınıfın üye işlevleri `reference` , sırayla şu işlemleri sağlar:
 
 |Çalışma|Tanım|
 |---------------|----------------|
@@ -1316,7 +1337,8 @@ bitset\<N>& reset(size_t _Pos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* bit konumu 0 olarak sıfırlanması bitset.
+*_Pos*<br/>
+ Bit konumu 0 olarak sıfırlanması bitset içinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1378,9 +1400,11 @@ bitset\<N>& set(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* ayarlanması bitset bit konumunu bir değer atanır.
+*_Pos*<br/>
+ Bit konumu bitset ayarlamak için bir değer atanır.
 
-*VAL* belirtilen konumdaki bite atanacak değer.
+*VAL*<br/>
+ Belirtilen konumdaki bite atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1482,7 +1506,8 @@ bool test(size_t _Pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* değeri için test edilecek bitset bit konumu.
+*_Pos*<br/>
+ Bitset değeri için test edilecek bit konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1491,4 +1516,3 @@ bool test(size_t _Pos) const;
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevin bir [out_of_range](../standard-library/out-of-range-class.md)
-

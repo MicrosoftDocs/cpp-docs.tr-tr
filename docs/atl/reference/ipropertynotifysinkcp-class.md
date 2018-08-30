@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66fd7b267a70b962bb5c28bb5835bd96d44a92f0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3fddd187dd6df58c4013b9c1fc7a08d5f644a0db
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879195"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203169"
 ---
 # <a name="ipropertynotifysinkcp-class"></a>Ipropertynotifysinkcp sınıfı
-Bu sınıf sunan [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.  
+Bu sınıf sunan [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -50,7 +50,7 @@ class IPropertyNotifySinkCP
 ## <a name="remarks"></a>Açıklamalar  
  `IPropertyNotifySinkCP` temel sınıfı olan tüm yöntemleri devralan [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md).  
   
- [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirim özellik değişiklikleri hakkında bildirim almak bir havuz nesnesi sağlar. Sınıf `IPropertyNotifySinkCP` bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak bu arabirimini kullanıma sunar. İstemci uygulamalıdır `IPropertyNotifySink` havuz yöntemleri.  
+ [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirim özellik değişiklikleri hakkında bildirim almak bir havuz nesnesi sağlar. Sınıf `IPropertyNotifySinkCP` bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak bu arabirimini kullanıma sunar. İstemci uygulamalıdır `IPropertyNotifySink` havuz yöntemleri.  
   
  Öğesinden, bir sınıf türetin `IPropertyNotifySinkCP` temsil eden bir bağlantı noktası oluşturmak istediğinizde `IPropertyNotifySink` arabirimi.  
   

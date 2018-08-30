@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e6abf906d9fa0e5866b28a0c617e68edead8378
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 2772ec96558c4aa1d1f5fcb573166a37a31c0592
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852256"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201211"
 ---
 # <a name="cminiframewnd-class"></a>CMiniFrameWnd sınıfı
 Genelde kayan araç çubukları geçici olarak görülen bir yarım yükseklikte pencereyi temsil eder.  
@@ -165,7 +165,7 @@ virtual BOOL CreateEx(
  Genişletilmiş stilini belirtir `CMiniFrameWnd` oluşturuluyor. Atanamadığı [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) penceresine.  
   
  *lpClassName*  
- Windows sınıf adları null ile sonlandırılmış dizeye işaret (bir [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı). Sınıf adı genel kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlev veya önceden tanımlanmış denetimi-sınıf adları. NULL olmamalıdır.  
+ Windows sınıf adları null ile sonlandırılmış dizeye işaret (bir [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı). Sınıf adı genel kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) işlev veya önceden tanımlanmış denetimi-sınıf adları. NULL olmamalıdır.  
   
  *lpWindowName*  
  Pencere adının içeren null ile sonlandırılmış dizeye işaret eder.  

@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0521d09f4f96c73c20022d88621671564e7ada78
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3294730f8f1cc835af49ee003d8f81830d64c9a6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965532"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198308"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -131,9 +131,11 @@ valarray<Type> apply(Type _Func(constType&)) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Func(Type)* işlenen valarray her öğesine uygulanacak işlev nesnesi.
+*_Func(Type)*<br/>
+ İşlenen valarray her öğesine uygulanacak işlev nesnesi.
 
-*_Func(const Type&)* için const işlenen valarray her öğesine uygulanacak işlev nesnesi.
+*_Func(const Type&)*<br/>
+ Const işlenen valarray her öğeye uygulanacak işlev nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -141,7 +143,7 @@ valarray<Type> apply(Type _Func(constType&)) const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işlevi sınıfın bir nesnesi döndürür [valarray](../standard-library/valarray-class.md)**\<türü >**, uzunluğu [boyutu](#size), her biri öğeleri `I` olan**func**((  **\*bu**) [ `I`]).
+Üye işlevi sınıfın bir nesnesi döndürür [valarray](../standard-library/valarray-class.md)**\<türü >**, uzunluğu [boyutu](#size), her biri öğeleri *miyim*olduğu `_Func((*this)[I])`.
 
 ### <a name="example"></a>Örnek
 
@@ -1247,7 +1249,7 @@ Bir öğe veya değerini belirtilen dizin veya belirtilen bir alt kümesine baş
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üye işleci bu tarafından denetlenen arasından öğelerin sıralarının seçmek için çeşitli yollar sağlamak için aşırı yüklenmiş *\****bu**. İlk beş üye işleçleri grubunu iş çeşitli aşırı yüklemeleri ile birlikte [işleç =](#op_eq) (ve diğer atama işleçleri) (denetlenen bir dizi dilimleme) seçmeli değiştirme işlemine izin vermek için. Seçilen öğeleri mevcut olması gerekir.
+Üye işleci bu tarafından denetlenen arasından öğelerin sıralarının seçmek için çeşitli yollar sağlamak için aşırı yüklenmiş  <strong>\*bu</strong>. İlk beş üye işleçleri grubunu iş çeşitli aşırı yüklemeleri ile birlikte [işleç =](#op_eq) (ve diğer atama işleçleri) (denetlenen bir dizi dilimleme) seçmeli değiştirme işlemine izin vermek için. Seçilen öğeleri mevcut olması gerekir.
 
 Kullanılarak derlendiğinde [_ıterator_debug_level](../standard-library/iterator-debug-level.md) valarray sınırları dışında bir öğeye erişmeyi denerseniz, 1 veya 2 ' tanımlanan, bir çalışma zamanı hatası oluşur.  Bkz: [Checked Iterators](../standard-library/checked-iterators.md) daha fazla bilgi için.
 
@@ -1845,7 +1847,7 @@ valarray(
 *PTR*  
  Valarray öğeleri başlatmak için kullanılacak değerler için işaretçi.
 
-*Sağ*  
+*sağ*  
  Mevcut bir valarray yeni valarray başlatılamadı.
 
 *SliceArray*  

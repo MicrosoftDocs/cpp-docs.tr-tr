@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (Düzey 3) C4278 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b556166f61c5d77ac34fb7243ac25d5baeaa2b1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f63337de2e14b1cb0f9d854df962ab2aa9c8014e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296682"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205787"
 ---
 # <a name="compiler-warning-level-3-c4278"></a>Derleyici Uyarısı (Düzey 3) C4278
-'tanımlayıcısı': 'tlb' türü kitaplığındaki tanımlayıcısıdır zaten bir makro; 'Yeniden Adlandır' niteleyicisi kullanın  
-  
- Kullanırken [#import](../../preprocessor/hash-import-directive-cpp.md), içeri aktardığınız typelib tanımlayıcıda tanımlayıcı bildirmek çalışıyor ***tanımlayıcısı***. Ancak, bu geçerli bir simge zaten var.  
-  
- Kullanım `#import` **yeniden adlandırma** simgenin türü Kitaplığı'nda bir diğer ad atamak için öznitelik.
+
+> '*tanımlayıcı*': tür kitaplığındaki tanımlayıcı '*tlb*' zaten bir makro; 'rename' niteleyicisini kullanın
+
+Kullanırken [#import](../../preprocessor/hash-import-directive-cpp.md), içeri aktardığınız tür kitaplığı bir tanımlayıcıda bir tanımlayıcı bildirmek çalışıyor *tanımlayıcı*. Ancak, geçerli bir simge zaten budur.
+
+Kullanım `#import` **Yeniden Adlandır** sembol tür kitaplığında bir diğer ad atamak için özniteliği.

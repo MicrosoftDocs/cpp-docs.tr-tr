@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f31d5d04638685b6d7636f40108b7e95bbd5d37
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 301549e26212448ae0392a356aa556358dcf6f47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338831"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205469"
 ---
 # <a name="cevent-class"></a>CEvent sınıfı
 Başka bir olayın oluştuğunu bildirmek bir iş parçacığını etkinleştiren eşitleme nesnesi olan bir olayı temsil eder.  
@@ -113,7 +113,7 @@ CEvent(
  Adını `CEvent` nesne. İşlem sınırları ötesinde nesneye kullanılacaksa sağlanmalıdır. Oluşturucu ad var olan bir olaya eşleşiyorsa, yeni bir yapılar `CEvent` olay adının başvuran nesne. Adla eşleşen bir olay değil mevcut olan bir eşitleme nesnesi oluşturma başarısız olur. NULL ise, adı null olacaktır.  
   
  *lpsaAttribute*  
- Olay nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
+ Olay nesnesi için güvenlik öznitelikleri. Bu yapı tam bir açıklaması için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Erişim veya yayın için bir `CEvent` nesne, oluşturun bir [CMultiLock](../../mfc/reference/cmultilock-class.md) veya [CSingleLock](../../mfc/reference/csinglelock-class.md) nesne ve çağrı kendi [kilit](../../mfc/reference/csinglelock-class.md#lock) ve [kilidini](../../mfc/reference/csinglelock-class.md#unlock) üye işlevleri.  
@@ -121,7 +121,7 @@ CEvent(
  Durumunu değiştirmek için bir `CEvent` sinyal nesnesini (iş parçacıkları bekleyin gerek kalmaz), çağrı [SetEvent](#setevent) veya [pulseevent güvenilir](#pulseevent). Durumunu ayarlamak için bir `CEvent` nonsignaled nesnesine (iş parçacıkları gerekir beklemeniz gerekebilir), çağrı [ResetEvent](#resetevent).  
   
 > [!IMPORTANT]
->  Oluşturduktan sonra `CEvent` nesnesi [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) mutex önceden yoksa emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.  
+>  Oluşturduktan sonra `CEvent` nesnesi [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) mutex önceden yoksa emin olmak için. Mutex beklenmedik bir şekilde mevcut olması, dolandırıcı işlemin ele geçirilmesi ve mutex kötü amaçlı olarak kullanmayı planlayan gösterebilir. Bu durumda, tanıtıcı kapatın ve var olan bir hata varmış gibi nesnesi oluşturulurken devam etmek için önerilen güvenliğe yordam aynıdır.  
   
 ##  <a name="pulseevent"></a>  CEvent::PulseEvent  
  Sinyal olay durumu (kullanılabilir) olarak ayarlar, herhangi bir bekleyen iş parçacığı serbest bırakır ve kendisine nonsignaled (kullanılamıyor) otomatik olarak sıfırlar.  
@@ -138,7 +138,7 @@ BOOL PulseEvent();
   
  İş parçacığı bekleniyor veya iş parçacığı hemen serbest bırakılabilir `PulseEvent` olaya durumunu nonsignaled ayarlar ve döndürür.  
   
- `PulseEvent` temel alınan Win32 kullanan `PulseEvent` işlevin kısa bir süre içinde bekleme durumundan bir çekirdek modu zaman uyumsuz bir yordam çağrısı tarafından kaldırılabilir. Bu nedenle, `PulseEvent` güvenilir değil ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için [pulseevent güvenilir işlevi](http://msdn.microsoft.com/library/windows/desktop/ms684914).  
+ `PulseEvent` temel alınan Win32 kullanan `PulseEvent` işlevin kısa bir süre içinde bekleme durumundan bir çekirdek modu zaman uyumsuz bir yordam çağrısı tarafından kaldırılabilir. Bu nedenle, `PulseEvent` güvenilir değil ve yeni uygulamalar tarafından kullanılmamalıdır. Daha fazla bilgi için [pulseevent güvenilir işlevi](/windows/desktop/api/winbase/nf-winbase-pulseevent).  
   
 ##  <a name="resetevent"></a>  CEvent::ResetEvent  
  Açıkça ayarlamak için sinyal tarafından durumu olayına kadar nonsignaled ayarlar [SetEvent](#setevent) üye işlevi.  

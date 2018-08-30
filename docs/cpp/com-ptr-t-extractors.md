@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8414fb0e3478b5aae906db3e511757d5d7df71d3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: d63a09dec74fc1b7b41f8029dcff285b62b017f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404102"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203233"
 ---
 # <a name="comptrt-extractors"></a>_com_ptr_t Ayıklayıcıları
 **Microsoft'a özgü**  
@@ -55,11 +55,11 @@ operator bool( ) const throw( );
   
 ## <a name="remarks"></a>Açıklamalar  
   
--   **işleç arabirimi\***  NULL olabilecek kapsüllenmiş arabirim işaretçisini döndürür.  
+-   **işleç arabirimi** <strong>\*</strong> NULL olabilecek kapsüllenmiş arabirim işaretçisini döndürür.  
   
 -   **işleç arabirimi &** kapsüllenmiş arabirim işaretçisini bir başvuru döndürür ve işaretçi NULL ise, bir hata verir.  
   
--   **İşleç\***  akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.  
+-   **İşleç** <strong>\*</strong> akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.  
   
 -   **operator ->** akıllı işaretçi nesnesinin gibi başvurusu kaldırıldığında gerçek bir kapsüllenmiş arabirim davranmasını sağlar.  
   

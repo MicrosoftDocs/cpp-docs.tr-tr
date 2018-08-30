@@ -15,25 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f5709ef6fdcaaceecc79cd635374ee77d537100
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eeb1f8e08fbb1d4f30517485c9296febab5a0de0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387394"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198762"
 ---
 # <a name="octal-and-hexadecimal-character-specifications"></a>Sekizlik ve Onaltılık Karakter Belirtimleri
-Sıra **\\*** ooo* ASCII herhangi bir karakter belirtebilirsiniz anlamına gelir karakter kümesi olarak üç basamaklı sekizli karakter kodu. Sekizli tamsayının sayısal değeri, istediğiniz karakter veya geniş karakter değerini belirtir.  
+Sıra **\\** <em>ooo</em> karakter kümesi üç basamaklı sekizli karakter kodu olarak ASCII herhangi bir karakteri belirtebileceğiniz anlamına gelir. Sekizli tamsayının sayısal değeri, istediğiniz karakter veya geniş karakter değerini belirtir.  
   
- Benzer şekilde, dizisi **\x***hhh* herhangi bir ASCII karakter bir onaltılı karakter kodu belirtmenize olanak tanır. Örneğin, ASCII geri karakteri normal C kaçış sırası olarak verebilirsiniz (**\b**), veya olarak kod **\010** (sekizlik) veya **\x008** (onaltılı).  
+ Benzer şekilde, sıra **\x**<em>hhh</em> onaltılı karakter kodu olarak herhangi bir ASCII karakterini belirlemenize izin verir. Örneğin, ASCII geri karakterini normal C çıkış dizisi olarak verebilirsiniz (**\b**), veya olarak kod **\010** (sekizlik) veya **\x008** (onaltılık).  
   
- Sekizli bir çıkış dizisinde yalnızca 0 ile 7 arasındaki sayıları kullanabilirsiniz. Sekizli çıkış dizileri, asla üç basamaktan uzun olamaz ve sekizlik bir rakam olmayan ilk karakterle sonlandırılır. Üç sayının tümünü kullanmanız gerekmese de, en az birini kullanmanız gerekir. Örneğin, sekizli gösterimidir **\10** ASCII geri karakter ve **\101** bir ASCII haliyle A harfi için grafik.  
+ Sekizli bir çıkış dizisinde yalnızca 0 ile 7 arasındaki sayıları kullanabilirsiniz. Sekizli çıkış dizileri, asla üç basamaktan uzun olamaz ve sekizlik bir rakam olmayan ilk karakterle sonlandırılır. Üç sayının tümünü kullanmanız gerekmese de, en az birini kullanmanız gerekir. Örneğin, sekizli gösterimidir **\10** ASCII geri karakteri için ve **\101** olarak bir ASCII harfi için grafik.  
   
- Benzer şekilde, onaltılı çıkış dizisi için en az bir sayı kullanmanız gerekir, ancak ikinci ve üçüncü sayıyı atlayabilirsiniz. Bu nedenle, onaltılık çıkış dizisi geri karakter ya da belirtebilirsiniz **\x8**, **\x08**, veya **\x008**.  
+ Benzer şekilde, onaltılı çıkış dizisi için en az bir sayı kullanmanız gerekir, ancak ikinci ve üçüncü sayıyı atlayabilirsiniz. Bu nedenle, geri karakteri için onaltılık kaçış sırası olarak belirtebilirsiniz **\x8**, **\x08**, veya **\x008**.  
   
- Sekizlik ya da onaltılık çıkış dizisi değerinin türü için gösterilebilir değerler aralığında olmalıdır **imzasız char** karakter sabiti ve türü için `wchar_t` için joker karakter sabiti. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) joker karakter sabitleri hakkında bilgi için.  
+ Sekizli veya onaltılı çıkış dizisi değer türünün temsil edilebilir değerler aralığında olmalıdır **imzasız char** bir karakter sabiti ve türü için `wchar_t` bir geniş karakter sabiti için. Bkz: [çok baytlı ve geniş karakterler](../c-language/multibyte-and-wide-characters.md) geniş karakter sabitleri hakkında bilgi için.  
   
- Sekizli çıkış sabitlerinden farklı olarak, bir çıkış dizisinde bulunabilecek onaltılı basamaklar sınırsızdır. Onaltılı bir çıkış dizisi, onaltılı olmayan ilk karakterde sonlandırılır. Onaltılık basamak harfleri içerdiğinden **bir** aracılığıyla **f**, bakım kullandı, kaçış sırası sonlandırır hedeflenen basamaklı emin olmak için. Karışıklığı önlemek için, bir makro tanımına sekizli veya onaltılı karakter tanımları koyabilirsiniz:  
+ Sekizli çıkış sabitlerinden farklı olarak, bir çıkış dizisinde bulunabilecek onaltılı basamaklar sınırsızdır. Onaltılı bir çıkış dizisi, onaltılı olmayan ilk karakterde sonlandırılır. Onaltılık basamak arasındaki harfleri içerdiğinden **bir** aracılığıyla **f**, kaçış sırasının istenen basamakta emin olmak için dikkatli olunmalıdır. Karışıklığı önlemek için, bir makro tanımına sekizli veya onaltılı karakter tanımları koyabilirsiniz:  
   
 ```  
 #define Bell '\x07'  

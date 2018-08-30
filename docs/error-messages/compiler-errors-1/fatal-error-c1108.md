@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de8b00f61a70e7c40f442173acace2e9f186d1d6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84f301669e1aeead5a8c92f59fbaaaf87167fef4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225180"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203930"
 ---
 # <a name="fatal-error-c1108"></a>Önemli hata C1108
-DLL bulunamadı: 'dll'  
-  
- Belirtilen DLL (***dll***) yolu bulunamadı.  
-  
- Bu hatayı gidermek için Visual C++ yeniden yükleyin veya uygun .dll dosyası yükleme CD'SİNDEN bilgisayarınıza kopyalayın.
+
+> DLL bulunamadı: '*dll adı*'
+
+Belirtilen DLL (*dll adı*) yolu bulunamadı.
+
+Bu hatayı çözmek için Visual C++ yeniden yükleyin veya uygun bir .dll dosyası yükleme bilgisayarınıza kopyalayın.

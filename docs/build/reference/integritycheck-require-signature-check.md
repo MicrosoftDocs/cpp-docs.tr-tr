@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a10594391b0f3be490608f7dfa006b0c32aa2e0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: acc43bc4175f42282014e94426717527143dc059
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609286"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197062"
 ---
 # <a name="integritycheck-require-signature-check"></a>/INTEGRITYCHECK (İmza Denetimi İste)
 İkili görüntünün dijital imzasının yükleme sırasında denetlenmesi gerektiğini belirtir.  
@@ -47,5 +47,5 @@ ms.locfileid: "42609286"
  [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
  [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
  [Zorla bütünlük imzalama taşınabilir yürütülebilir (PE) dosyaları](http://social.technet.microsoft.com/wiki/contents/articles/255.forced-integrity-signing-of-portable-executable-pe-files.aspx)   
- [Çekirdek modu kod imzalama izlenecek yol](http://msdn.microsoft.com/windows/hardware/gg487328.aspx)   
- [Windows 7 ve Windows Server 2008'de Appınit DLL'leri](http://msdn.microsoft.com/windows/hardware/gg463040.aspx)
+ [Çekirdek modu kod imzalama izlenecek yol](https://msdn.microsoft.com/windows/hardware/gg487328.aspx)   
+ [Windows 7 ve Windows Server 2008'de Appınit DLL'leri](https://msdn.microsoft.com/windows/hardware/gg463040.aspx)

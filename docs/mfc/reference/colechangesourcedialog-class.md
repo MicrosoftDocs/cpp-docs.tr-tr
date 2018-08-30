@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ea2c87a3ce87bbf15f99609a643a9a72f6d2058e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a8b2ca6ebbc0201a3c56c9239b665c55ccd9eb13
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853491"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202751"
 ---
 # <a name="colechangesourcedialog-class"></a>COleChangeSourceDialog sınıfı
 OLE Change Source iletişim kutusu için kullanıldı.  
@@ -77,9 +77,9 @@ class COleChangeSourceDialog : public COleDialog
 |[COleChangeSourceDialog::m_cs](#m_cs)|İletişim kutusunun davranışını kontrol eden bir yapı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sınıfın bir nesnesi oluşturma `COleChangeSourceDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleChangeSourceDialog` nesne oluşturulur, kullanabileceğiniz [m_cs](#m_cs) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_cs` Yapısıdır türünü [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160). Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.  
+ Sınıfın bir nesnesi oluşturma `COleChangeSourceDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleChangeSourceDialog` nesne oluşturulur, kullanabileceğiniz [m_cs](#m_cs) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_cs` Yapısıdır türünü [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea). Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.  
   
  Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -120,7 +120,7 @@ explicit COleChangeSourceDialog(
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) yapısı ve [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) Windows SDK'sında işlev.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı ve [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK'sında işlev.  
   
 ##  <a name="domodal"></a>  COleChangeSourceDialog::DoModal  
  OLE Change Source iletişim kutusunu görüntülemek için bu işlevi çağırın.  
@@ -136,7 +136,7 @@ virtual INT_PTR DoModal();
   
 - Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeSource](http://msdn.microsoft.com/library/windows/desktop/ms682497) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeSource](/windows/desktop/api/oledlg/nf-oledlg-oleuichangesourcea) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_cs](#m_cs) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
@@ -185,9 +185,9 @@ CString GetFromPrefix();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.  
   
- Bu değer, doğrudan gelir `lpszFrom` üyesi [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) yapısı.  
+ Bu değer, doğrudan gelir `lpszFrom` üyesi [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.  
   
 ##  <a name="getitemname"></a>  COleChangeSourceDialog::GetItemName  
  Bağlı istemci öğesi için görünen ad öğe bilinen adı kısmı almak için bu işlevi çağırın.  
@@ -215,12 +215,12 @@ CString GetToPrefix();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.  
   
- Bu değer, doğrudan gelir `lpszTo` üyesi [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) yapısı.  
+ Bu değer, doğrudan gelir `lpszTo` üyesi [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) yapısı.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.  
   
 ##  <a name="m_cs"></a>  COleChangeSourceDialog::m_cs  
- Bu veri üyesi türünün bir yapıdır [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160).  
+ Bu veri üyesi türünün bir yapıdır [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea).  
   
 ```  
 OLEUICHANGESOURCE m_cs;  
@@ -229,7 +229,7 @@ OLEUICHANGESOURCE m_cs;
 ### <a name="remarks"></a>Açıklamalar  
  `OLEUICHANGESOURCE` OLE Change Source iletişim kutusu davranışını denetlemek için kullanılır. Bu yapının üyelerine doğrudan değiştirilebilir.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.  
   
 ##  <a name="isvalidsource"></a>  COleChangeSourceDialog::IsValidSource  
  Yeni kaynak geçerli olup olmadığını belirlemek için bu işlevi çağırın.  
@@ -244,7 +244,7 @@ BOOL IsValidSource();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.  
   
- Daha fazla bilgi için [OLEUICHANGESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms682160) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGESOURCE](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangesourcea) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

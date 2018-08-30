@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eae4218d6c6446554d5fb45d680588127ec3e0ee
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: e1ee6ee76840774fd750df95f73c105c059cae59
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883098"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196527"
 ---
 # <a name="ccommodule-class"></a>CComModule sınıfı
 ATL 7. 0'den itibaren `CComModule` kullanım dışı bırakılmıştır: bkz [ATL modül sınıfları](../../atl/atl-module-classes.md) daha fazla ayrıntı için.  
@@ -346,10 +346,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *dwClsContext*  
- [in] Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bu değerlerin açıklaması için bkz [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK.  
+ [in] Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bu değerlerin açıklaması için bkz [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK.  
   
  *CertOpenStore*  
- [in] Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bu değerlerin açıklaması için bkz [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) Windows SDK.  
+ [in] Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bu değerlerin açıklaması için bkz [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart bir HRESULT değerini.  

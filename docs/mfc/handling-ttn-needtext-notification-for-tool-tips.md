@@ -18,39 +18,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5879082ddc23630e5ee497d8abf6b65873a2b6d4
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 65278571fabf24011960ad577461347f1dfebf73
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931970"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200524"
 ---
 # <a name="handling-ttnneedtext-notification-for-tool-tips"></a>Araç İpuçları için TTN_NEEDTEXT Bildirimini İşleme
-Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-tips.md), size işlemek **TTN_NEEDTEXT** sahibi pencerenin ileti eşlemesi için şu girdiyi ekleyerek ileti:  
+Bir parçası olarak [araç ipuçlarını etkinleştirme](../mfc/enabling-tool-tips.md), ele **TTN_NEEDTEXT** sahibi pencerenin ileti eşlemesi için şu girdiyi ekleyerek, ileti:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#40](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_1.cpp)]  
   
  `memberFxn`  
- Metin için bu düğmeyi gerektiğinde çağrılacak üye işlevi.  
+ Bu düğme için metin gerektiğinde çağrılacak üye işlevi.  
   
- Araç İpucu kimliği her zaman olduğuna dikkat edin 0.  
+ Bir araç ipucu kimliği her zaman olduğuna dikkat edin 0.  
   
- Sınıf tanımı İşleyici işlevinizde gibi bildirin:  
+ Sınıf tanımında, işleyici işlevi şu şekilde bildirin:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#53](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_2.h)]  
   
  Burada italik Parametreler şunlardır:  
   
  `id`  
- Bildirimi tarafından gönderilen denetim tanımlayıcısı. Kullanılmadı. Denetim Kimliği alınırlar **NMHDR** yapısı.  
+ Bildirim gönderilen denetim tanımlayıcısı. Kullanılmadı. Denetim Kimliği alınır **NMHDR** yapısı.  
   
  `pNMHDR`  
- Bir işaretçi [NMTTDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760258) yapısı. Bu yapı da ele alınmıştır daha ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).  
+ Bir işaretçi [NMTTDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagnmttdispinfoa) yapısı. Bu yapı ayrıca ele alınan ayrıntılı olarak [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md).  
   
  `pResult`  
- Sonuç kodu için bir işaretçi dönmek önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yoksayabilirsiniz *pResult* parametresi.  
+ Sonuç kodu için bir işaretçi, dönmeden önce ayarlayabilirsiniz. **TTN_NEEDTEXT** işleyicileri yok sayabilirsiniz *pResult* parametresi.  
   
- Form görünümünde bildirim işleyicisinin örnek olarak:  
+ Bir form görünümü bildirim işleyici, örneğin:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#54](../mfc/codesnippet/cpp/handling-ttn-needtext-notification-for-tool-tips_3.cpp)]  
   

@@ -1,5 +1,5 @@
 ---
-title: Tür atama dönüşümleri | Microsoft Docs
+title: Tür atama dönüştürmeleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,50 +19,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f48d9a013240dddc95fbd977cdf383c3ebff188b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d040f3ce29f78b614c60d815cac16362374bddb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391034"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205616"
 ---
 # <a name="type-cast-conversions"></a>Tür Atama Dönüştürmeleri
-Tür atamaları açıkça türlerine dönüştürmek için kullanabilirsiniz.  
+Tür atamaları türleri açıkça dönüştürmek için kullanabilirsiniz.  
   
- **Sözdizimi**  
+ **Söz dizimi**  
   
  *Cast ifadesi*:  
- *Tek terimli ifadesi*  
+ *birli ifadesi*  
   
- **(***türü adı***)***cast ifadesi*  
+ **(***tür adı***)***atama ifadesi*   
   
  *tür adı*:  
- *belirleyici niteleyici listesinde Özet-bildirimcisi* iptal et  
+ *Belirleyicisi niteleyici listesinin soyut-declarator* iyileştirilmiş  
   
- *Türü adı* bir tür ve *cast ifadesi* bu türe dönüştürülüp bir değerdir. Bir cast türünü sahip bir ifade l-değeri değil. *Cast ifadesi* türünde bir değişken için atanmış gibi sorgulamanıza dönüştürülür *türü adı*. Dönüştürme kurallarını atamaların (özetlenen [atama dönüşümleri](../c-language/assignment-conversions.md)) atamalar da türü için geçerlidir. Aşağıdaki tabloda verilen tüm tür atanabilecek türleri gösterilmektedir.  
+ *Tür adı* bir türdür ve *atama ifadesini* bu türe dönüştürülüp bir değerdir. Bir ifade bir cast türünü içeren bir l değeri değil. *Atama ifadesini* türünde bir değişkene atanmış olsa dönüştürülür *tür adı*. Atamalar için dönüştürme kuralları (özetlenen [atama dönüştürmeleri](../c-language/assignment-conversions.md)) yayınları de yazmak için geçerlidir. Aşağıdaki tablo için belirtilen her türlü atanabilir türleri gösterir.  
   
 ### <a name="legal-type-casts"></a>Yasal tür atamaları  
   
-|Hedef türleri|Olası kaynakları|  
+|Hedef türü|Olası kaynakları|  
 |-----------------------|-----------------------|  
-|Tam sayı türleri|Tüm tamsayı türü veya kayan nokta yazın veya bir nesne işaretçisi|  
-|Kayan nokta|Herhangi bir aritmetik türü|  
-|Bir nesne için bir işaretçi veya (**void \*** )|Herhangi bir tamsayı türü (**void \*** ), bir nesne için bir işaretçi ya da bir işlev işaretçisi|  
-|işlev işaretçisi|Herhangi bir tam sayı türü, bir nesne için bir işaretçi veya bir işlev işaretçisi|  
-|Yapısı, UNION veya dizi|Yok.|  
+|Tam sayı türleri|Herhangi bir tamsayı türü veya kayan nokta türü veya bir nesne işaretçisi|  
+|Kayan nokta|Herhangi bir aritmetik tür|  
+|Bir nesneye bir işaretçi veya (**void** <strong>\*</strong>)|Herhangi bir tamsayı türü (**void** <strong>\*</strong>), bir nesneye bir işaretçi ya da işlev işaretçisi|  
+|İşlev işaretçisi|Herhangi bir tamsayı türü, bir nesne işaretçisi veya işlev işaretçisi|  
+|Bir yapı, birlik veya dizi|Yok.|  
 |Void türü|Herhangi bir türü|  
   
- Herhangi bir tanımlayıcı için çevirebilirsiniz `void` türü. Türü belirtilen ancak, bir tür atama ifadesi değilse `void`, tanımlayıcı olması için türü olamaz cast sonra bir `void` ifade. Bir ifadeyi dönüştürmek `void`, ancak türü bir ifadenin `void` başka bir türüne yayınlanamıyor. Örneğin, bir işlev ile `void` dönüş türü, kendi dönüş başka bir türe sahip olamaz.  
+ Herhangi bir tanımlayıcı atanabilecek `void` türü. Türü belirtilen ancak, bir tür atama ifadesidir değilse `void`, sonra da tanımlayıcısı olan tür olamaz başvurusuna bir `void` ifade. Herhangi bir ifade atanabilecek `void`, ancak türdeki bir ifade `void` başka bir türüne yayınlanamıyor. Örneğin, bir işlev ile `void` dönüş türünü dönüş başka bir türe sahip olamaz.  
   
- Unutmayın bir **void \***  ifade türü işaretçi sahip `void`, türünde değil `void`. Bir nesne için cast varsa `void` türü, elde edilen ifadesi herhangi öğesine atanamaz. Hiçbir atama bir cast türünü nesnesine böylece benzer şekilde, bir tür atama nesnesi bir kabul edilebilir l-değeri değil.  
+ Unutmayın bir **void** <strong>\*</strong> ifadesi bir işaretçi türüne sahip `void`, değil yazın `void`. Bir nesne türüne dönüştürülür, `void` türü, sonuçta elde edilen ifade hiçbir öğesine atanamaz. Bu nedenle hiçbir ataması için bir tür atama nesnesi sağlanabilir benzer şekilde, bir tür atama nesnesi bir kabul edilebilir l-değeri değil.  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Tanımlayıcı boyutunu değişmeyen sürece bir cast türünü bir l-değeri ifade olabilir. L-değeri ifadeleri hakkında daha fazla bilgi için bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md).  
+ Tanımlayıcının boyutunu değişmez sürece bir cast türünü bir l-değeri ifade olabilir. L-değeri ifadeleri hakkında daha fazla bilgi için bkz: [L-değeri ve r değeri ifadeleri](../c-language/l-value-and-r-value-expressions.md).  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
- Türü için bir ifade dönüştürebilirsiniz `void` bir cast ile ancak elde edilen ifadesi yalnızca bir değer gerekli olduğu kullanılabilir. Bir nesne işaretçisi dönüştürülüp **void \***  ve özgün türü geri için özgün değeri döndürür.  
+ Bir ifade türüne dönüştürebilirsiniz `void` bir atama ile ancak sonuçta elde edilen ifade yalnızca bir değer gerekli olduğu kullanılabilir. Bir nesne işaretçisi türüne dönüştürülmüş **void** <strong>\*</strong> ve orijinal türe geri özgün değerine döndürür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Tür Dönüştürmeleri](../c-language/type-conversions-c.md)

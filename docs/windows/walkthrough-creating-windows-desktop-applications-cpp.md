@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 724772c0057d5defc8bfa3e2207df85d3a207f31
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e9a946689d563f1c681fee305ec05438bc5eb687
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590300"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204744"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -219,7 +219,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    }
    ```
 
-   Bu işlev döndürür bir `HWND`, bir pencere için işleme olduğu. Bir tanıtıcı bakıma Windows pencereler izlemek için kullandığı bir işaretçi değil. Daha fazla bilgi için [Windows veri türleri](https://msdn.microsoft.com/library/windows/desktop/aa383751).
+   Bu işlev döndürür bir `HWND`, bir pencere için işleme olduğu. Bir tanıtıcı bakıma Windows pencereler izlemek için kullandığı bir işaretçi değil. Daha fazla bilgi için [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).
 
 1. Bu noktada pencereye oluşturuldu, ancak biz yine de görünür yapmak için Windows bilgi gerekir. Bu kodun yaptığı olmasıdır:
 
@@ -340,9 +340,9 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
 1. Etkinleştirmek için `WndProc` işlevi uygulamanın aldığı iletileri işlemek için bir switch deyimi uygulayın.
 
-   İşlemek için önemli bir ileti [WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145213) ileti. Görüntülenen penceresinin parçası güncelleştirilmesi gerektiği zaman uygulama bu iletiyi alır. Bu olay, bir kullanıcı bir pencere pencereniz önüne taşınır ve ardından hemen yeniden taşır meydana gelebilir. Uygulamanız, bu gibi olaylar gerçekleştiğinde bilmez; yalnızca Windows bilir, size bildirir, böylece `WM_PAINT`. Pencere ilk görüntülendiğinde tümünün güncelleştirilmiş olması gerekir.
+   İşlemek için önemli bir ileti [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti. Görüntülenen penceresinin parçası güncelleştirilmesi gerektiği zaman uygulama bu iletiyi alır. Bu olay, bir kullanıcı bir pencere pencereniz önüne taşınır ve ardından hemen yeniden taşır meydana gelebilir. Uygulamanız, bu gibi olaylar gerçekleştiğinde bilmez; yalnızca Windows bilir, size bildirir, böylece `WM_PAINT`. Pencere ilk görüntülendiğinde tümünün güncelleştirilmiş olması gerekir.
 
-   İşlenecek bir `WM_PAINT` ileti görüntülenirse, ilk çağrı [BeginPaint](https://msdn.microsoft.com/library/windows/desktop/dd183362)sonra metin, düğmeler ve diğer denetimleri penceresindeki yerleştirme sağlayan tüm mantığı işlemek ve sonra çağrı [EndPaint](https://msdn.microsoft.com/library/windows/desktop/dd162598). Bu uygulama için başlangıç çağrısı ve bitiş çağrısı arasındaki mantık "Hello, Windows Masaüstü!" dizesi görüntülemektir penceresinde. Aşağıdaki kodda, dikkat [TextOut](https://msdn.microsoft.com/library/windows/desktop/dd145133) işlevi dizesini görüntülemek için kullanılır.
+   İşlenecek bir `WM_PAINT` ileti görüntülenirse, ilk çağrı [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint)sonra metin, düğmeler ve diğer denetimleri penceresindeki yerleştirme sağlayan tüm mantığı işlemek ve sonra çağrı [EndPaint](/windows/desktop/api/winuser/nf-winuser-endpaint). Bu uygulama için başlangıç çağrısı ve bitiş çağrısı arasındaki mantık "Hello, Windows Masaüstü!" dizesi görüntülemektir penceresinde. Aşağıdaki kodda, dikkat [TextOut](/windows/desktop/api/wingdi/nf-wingdi-textouta) işlevi dizesini görüntülemek için kullanılır.
 
    ```cpp
    PAINTSTRUCT ps;
@@ -369,7 +369,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
 
    `HDC` Bu kodda, grafik alt sistemi ile iletişim kurmak uygulamanızı etkinleştirmek için Windows kullanan bir veri yapısıdır bir cihaz bağlamına işleyicisidir. `BeginPaint` Ve `EndPaint` İşlevler, uygulamanızın iyi vatandaşı gibi davranır ve cihaz bağlamı için gerekenden daha uzun süre kullanmaz emin olun. Bu grafik alt sistemi başka uygulamalar tarafından kullanılmaya kullanabilmesini sağlar.
 
-1. Bir uygulama genellikle diğer birçok iletiyi gibi işler [WM_CREATE](https://msdn.microsoft.com/library/windows/desktop/ms632619) pencere ilk oluşturulduğunda ve [WM_DESTROY](https://msdn.microsoft.com/library/windows/desktop/ms632620) zaman penceresi kapatılır. Aşağıdaki kod temel gösterir ancak tamamlamak `WndProc` işlevi.
+1. Bir uygulama genellikle diğer birçok iletiyi gibi işler [WM_CREATE](/windows/desktop/winmsg/wm-create) pencere ilk oluşturulduğunda ve [WM_DESTROY](/windows/desktop/winmsg/wm-destroy) zaman penceresi kapatılır. Aşağıdaki kod temel gösterir ancak tamamlamak `WndProc` işlevi.
 
    ```cpp
    LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)

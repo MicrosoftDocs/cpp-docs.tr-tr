@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e0ce8b2cc412c576b0eded9662d8e70b34cf2ec
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1469bef0ef41c72e2ff5e59017088cd63f0f9c79
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850819"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194604"
 ---
 # <a name="reference-counting"></a>Başvuru sayımı
 COM kendisi, nesnenin artık kullanılıp kullanılmadığını düşündüğünde nesneyi bellekten kaldırmak otomatik olarak denemez. Bunun yerine, nesne Programcı kullanılmayan nesne kaldırmanız gerekir. Programcı, nesnenin başvuru sayısının göre kaldırılıp kaldırılamayacağını belirler.  
   
- COM kullanan `IUnknown` yöntemleri [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), arabirimleri bir nesnede başvuru sayısını yönetme. Bu yöntemleri çağırmak için genel kurallar şunlardır:  
+ COM kullanan `IUnknown` yöntemleri [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), arabirimleri bir nesnede başvuru sayısını yönetme. Bu yöntemleri çağırmak için genel kurallar şunlardır:  
   
 -   Her bir istemci bir arabirim işaretçisini aldığında `AddRef` arabiriminde çağrılmalıdır.  
   
@@ -43,5 +43,5 @@ COM kendisi, nesnenin artık kullanılıp kullanılmadığını düşündüğün
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM'a giriş](../atl/introduction-to-com.md)   
- [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](http://msdn.microsoft.com/library/windows/desktop/ms687260)
+ [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](/windows/desktop/com/managing-object-lifetimes-through-reference-counting)
 

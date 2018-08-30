@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2f295b6bf54077ad131176092b06dbeca7a2201
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 1fe661f48c583cfb82e52b6c125f6cf7fce2e714
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465194"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203564"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 Bu sınıf girişleri sistem kayıt defterinde yönlendirmeye yönelik yöntemleri sağlar.  
@@ -132,10 +132,10 @@ class CRegKey
   
  `CRegKey` belirli bir makine için sistem kayıt defterine bir programlama arabirimi sağlar. Örneğin, belirli kayıt defteri anahtarını açmak için çağrı `CRegKey::Open`. Almak ya da bir veri değeri değiştirmek için çağrı `CRegKey::QueryValue` veya `CRegKey::SetValue`sırasıyla. Bir anahtar kapatmak için çağrı `CRegKey::Close`.  
   
- Bir anahtar kapattığınızda, kayıt defteri verilerini (boşaltılıyorsa) sabit diske yazılır. Bu işlem birkaç saniye sürebilir. Uygulamanızın açıkça kayıt defteri verisi sabit diske yazmanız gerekiyorsa çağırabilirsiniz [RegFlushKey](http://msdn.microsoft.com/library/windows/desktop/ms724867) Win32 işlevi. Ancak, `RegFlushKey` birçok sistem kaynaklarını kullanır ve yalnızca gerçekten gerekli olduğunda çağrılmalıdır.  
+ Bir anahtar kapattığınızda, kayıt defteri verilerini (boşaltılıyorsa) sabit diske yazılır. Bu işlem birkaç saniye sürebilir. Uygulamanızın açıkça kayıt defteri verisi sabit diske yazmanız gerekiyorsa çağırabilirsiniz [RegFlushKey](/windows/desktop/api/winreg/nf-winreg-regflushkey) Win32 işlevi. Ancak, `RegFlushKey` birçok sistem kaynaklarını kullanır ve yalnızca gerçekten gerekli olduğunda çağrılmalıdır.  
   
 > [!IMPORTANT]
->  Bir kayıt defteri konumu belirtmek çağrıyı yapanın herhangi bir yöntem, güvenilir olmayan verileri okumak için potansiyeline sahiptir. Olun yöntemleri kullanımını [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu işlev, NULL sonlandırılan dize açıkça işlemez dikkate almalıdır. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bir kayıt defteri konumu belirtmek çağrıyı yapanın herhangi bir yöntem, güvenilir olmayan verileri okumak için potansiyeline sahiptir. Olun yöntemleri kullanımını [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu işlev, NULL sonlandırılan dize açıkça işlemez dikkate almalıdır. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlbase.h  
@@ -189,13 +189,13 @@ LONG Create(
  Açılan veya oluşturulacak anahtar sınıfını belirtir. REG_NONE varsayılan değerdir.  
   
  *dwOptions*  
- Anahtar seçenekleri. REG_OPTION_NON_VOLATILE varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) Windows SDK.  
+ Anahtar seçenekleri. REG_OPTION_NON_VOLATILE varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.  
   
  *samDesired*  
  Güvenlik erişim anahtarı. Varsayılan değer: KEY_READ &#124; KEY_WRITE. Olası değerler ve açıklamaları listesi için bkz. `RegCreateKeyEx`.  
   
  *lpSecAttr*  
- Bir işaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) tanıtıcı anahtarının bir alt işlem tarafından devralınıp alınmayacağını belirten yapısı. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınamaz anlamına gelir) olur.  
+ Bir işaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) tanıtıcı anahtarının bir alt işlem tarafından devralınıp alınmayacağını belirten yapısı. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınamaz anlamına gelir) olur.  
   
  *lpdwDisposition*  
  [out] (Anahtar vardı ve açıldı varsa) NULL olmayan, REG_CREATED_NEW_KEY (anahtar yoktu ve oluşturulan ise) ya da REG_OPENED_EXISTING_KEY alır.  
@@ -308,7 +308,7 @@ LONG EnumKey(
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Alt anahtarları numaralandır çağrısı `CRegKey::EnumKey` sıfır dizine sahip. Dizin değeri artırmak ve yöntem ERROR_NO_MORE_ITEMS dönene kadar tekrarlayın. Daha fazla bilgi için [RegEnumKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724862) Windows SDK.  
+ Alt anahtarları numaralandır çağrısı `CRegKey::EnumKey` sıfır dizine sahip. Dizin değeri artırmak ve yöntem ERROR_NO_MORE_ITEMS dönene kadar tekrarlayın. Daha fazla bilgi için [RegEnumKeyEx](/windows/desktop/api/winreg/nf-winreg-regenumkeyexa) Windows SDK.  
   
 ##  <a name="flush"></a>  CRegKey::Flush  
  Tüm kayıt defteri anahtarı öznitelikleri kayıt defterine yazmak için bu yöntemi çağırın.  
@@ -321,7 +321,7 @@ LONG Flush() throw();
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [RegEnumFlush](http://msdn.microsoft.com/library/windows/desktop/ms724867) Windows SDK.  
+ Daha fazla bilgi için [RegEnumFlush](/windows/desktop/api/winreg/nf-winreg-regflushkey) Windows SDK.  
   
 ##  <a name="getkeysecurity"></a>  CRegKey::GetKeySecurity  
  Kayıt defteri anahtarı koruyan güvenlik tanımlayıcısı bir kopyasını almak için bu yöntemi çağırın.  
@@ -335,7 +335,7 @@ LONG GetKeySecurity(
   
 ### <a name="parameters"></a>Parametreler  
  *sı*  
- [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) istenen güvenlik bilgilerini belirten değer.  
+ [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) istenen güvenlik bilgilerini belirten değer.  
   
  *PSD*  
  İstenen güvenlik tanımlayıcısı bir kopyasını alan arabellek için işaretçi.  
@@ -347,7 +347,7 @@ LONG GetKeySecurity(
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş WINERROR içinde tanımlanan sıfır olmayan hata kodu değeridir. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [RegGetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379313).  
+ Daha fazla bilgi için [RegGetKeySecurity](/windows/desktop/api/winreg/nf-winreg-reggetkeysecurity).  
   
 ##  <a name="m_hkey"></a>  CRegKey::m_hKey  
  İle ilişkili kayıt defteri anahtarının bir tanıtıcı içeren `CRegKey` nesne.  
@@ -404,7 +404,7 @@ LONG NotifyChangeKeyValue(
 > [!NOTE]
 >  Belirtilen anahtarı silinirse bu yöntemi çağıran bilgilendirmez.  
   
- Daha fazla bilgi ve örnek programı için bkz. [RegNotifyChangeKeyValue](http://msdn.microsoft.com/library/windows/desktop/ms724892).  
+ Daha fazla bilgi ve örnek programı için bkz. [RegNotifyChangeKeyValue](/windows/desktop/api/winreg/nf-winreg-regnotifychangekeyvalue).  
   
 ##  <a name="open"></a>  CRegKey::Open  
  Belirtilen anahtarı'nı açın ve ayarlamak için bu yöntemi çağırın [m_hKey](#m_hkey) bu anahtarın işlenecek.  
@@ -424,7 +424,7 @@ LONG Open(
  Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.  
   
  *samDesired*  
- Güvenlik erişim anahtarı. KEY_ALL_ACCESS varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](http://msdn.microsoft.com/library/windows/desktop/ms724844) Windows SDK.  
+ Güvenlik erişim anahtarı. KEY_ALL_ACCESS varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan hata değeri WINERROR içinde tanımlanır. H  
@@ -482,10 +482,10 @@ LONG QueryBinaryValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_BINARY değil, ERROR_INVALID_DATA döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) daha fazla ayrıntı için.  
+ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.  
   
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ##  <a name="querydwordvalue"></a>  CRegKey::QueryDWORDValue  
  Belirtilen değer adı için DWORD verileri almak için bu yöntemi çağırın.  
@@ -507,10 +507,10 @@ LONG QueryDWORDValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_DWORD değil, ERROR_INVALID_DATA döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) daha fazla ayrıntı için.  
+ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.  
   
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ##  <a name="queryguidvalue"></a>  CRegKey::QueryGUIDValue  
  Belirtilen değer adı için GUID verileri almak için bu yöntemi çağırın.  
@@ -532,7 +532,7 @@ LONG QueryGUIDValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veriler geçerli bir GUID değil, ERROR_INVALID_DATA döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `CRegKey::QueryStringValue` ve kullanarak bir GUID dizesi dönüştürür [CLSIDFromString](http://msdn.microsoft.com/library/windows/desktop/ms680589).  
+ Bu yöntemi kullanır `CRegKey::QueryStringValue` ve kullanarak bir GUID dizesi dönüştürür [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring).  
   
 > [!IMPORTANT]
 >  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar.  
@@ -561,10 +561,10 @@ LONG QueryMultiStringValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_MULTI_SZ değil, ERROR_INVALID_DATA döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) daha fazla ayrıntı için.  
+ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.  
   
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ##  <a name="queryqwordvalue"></a>  CRegKey::QueryQWORDValue  
  Belirtilen değer adı için QWORD verileri almak için bu yöntemi çağırın.  
@@ -586,10 +586,10 @@ LONG QueryQWORDValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_QWORD değil, ERROR_INVALID_DATA döndürülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) daha fazla ayrıntı için.  
+ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.  
   
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ##  <a name="querystringvalue"></a>  CRegKey::QueryStringValue  
  Belirtilen değer adı için dize verileri almak için bu yöntemi çağırın.  
@@ -615,10 +615,10 @@ LONG QueryStringValue(
  Yöntem başarılı olursa ERROR_SUCCESS döndürülür. Bir değer okumak yöntem başarısız olursa WINERROR içinde tanımlanan bir sıfır olmayan hata kodu döndürür. H Başvurulan veri türü REG_SZ değil, ERROR_INVALID_DATA döndürülür. Yöntemi, ERROR_MORE_DATA döndürürse *pnChars* eşittir sıfır, gerekli arabellek boyutu bayt cinsinden değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) daha fazla ayrıntı için.  
+ Bu yöntemi kullanır `RegQueryValueEx` ve doğru veri türünü verdiğini onaylar. Bkz: [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) daha fazla ayrıntı için.  
   
 > [!IMPORTANT]
->  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724911) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
+>  Bu yöntem, güvenilir olmayan verileri okunurken, herhangi bir kayıt defteri konumu belirtmek çağıranın sağlar. Ayrıca, [RegQueryValueEx](/windows/desktop/api/winreg/nf-winreg-regqueryvalueexa) bu yöntem tarafından kullanılan işlevi, NULL sonlandırılan dize açıkça işlemez. Her iki koşul için çağıran kod tarafından denetlenmelidir.  
   
 ##  <a name="queryvalue"></a>  CRegKey::QueryValue  
  Belirtilen değer alanı için verileri almak için bu yöntemi çağırın [m_hKey](#m_hkey). Bu yöntemin önceki sürümleri artık desteklenmemektedir ve ATL_DEPRECATED işaretlenir.  
@@ -717,7 +717,7 @@ LONG SetBinaryValue(
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemde [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değeri kayıt defterine yazmak için.  
+ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.  
   
 ##  <a name="setdwordvalue"></a>  CRegKey::SetDWORDValue  
  Kayıt defteri anahtarı DWORD değerini ayarlamak için bu yöntemi çağırın.  
@@ -737,7 +737,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemde [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değeri kayıt defterine yazmak için.  
+ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.  
   
 ##  <a name="setguidvalue"></a>  CRegKey::SetGUIDValue  
  Kayıt defteri anahtarının GUID değeri ayarlamak için bu yöntemi çağırın.  
@@ -757,7 +757,7 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi kullanır `CRegKey::SetStringValue` ve kullanarak bir dize GUID dönüştürür [StringFromGUID2](http://msdn.microsoft.com/library/windows/desktop/ms683893).  
+ Bu yöntemi kullanır `CRegKey::SetStringValue` ve kullanarak bir dize GUID dönüştürür [StringFromGUID2](/windows/desktop/api/combaseapi/nf-combaseapi-stringfromguid2).  
   
 ##  <a name="setkeyvalue"></a>  CRegKey::SetKeyValue  
  Belirtilen anahtar belirtilen değer alanında verileri depolamak için bu yöntemi çağırın.  
@@ -801,16 +801,16 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 |DACL_SECURITY_INFORMATION|Anahtarın isteğe bağlı erişim denetimi listesini (DACL) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_DAC erişimi olmalıdır.|  
 |GROUP_SECURITY_INFORMATION|Anahtarın birincil grup güvenlik tanımlayıcısını (SID) ayarlar. Çağırma işlemi nesnenin sahibi olmanız gerekir veya anahtar WRITE_OWNER erişimi olmalıdır.|  
 |OWNER_SECURITY_INFORMATION|Anahtarın sahibi SID'si ayarlar. Anahtar WRITE_OWNER erişiminiz olmalıdır veya çağırma işlemine nesnenin sahibi olmanız veya etkin SE_TAKE_OWNERSHIP_NAME ayrıcalığına sahip olması gerekir.|  
-|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](http://msdn.microsoft.com/library/windows/desktop/aa379306) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|  
+|SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](https://msdn.microsoft.com/library/windows/desktop/aa379306) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|  
   
  *PSD*  
- İşaretçi bir [SECURITY_DESCRIPTOR](http://msdn.microsoft.com/library/windows/desktop/aa379561) belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten yapısı.  
+ İşaretçi bir [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Anahtarın güvenlik öznitelikleri ayarlar. Bkz: [RegSetKeySecurity](http://msdn.microsoft.com/library/windows/desktop/aa379314) daha fazla ayrıntı için.  
+ Anahtarın güvenlik öznitelikleri ayarlar. Bkz: [RegSetKeySecurity](/windows/desktop/api/winreg/nf-winreg-regsetkeysecurity) daha fazla ayrıntı için.  
   
 ##  <a name="setmultistringvalue"></a>  CRegKey::SetMultiStringValue  
  Kayıt defteri anahtarının çok dizeli değer ayarlamak için bu yöntemi çağırın.  
@@ -830,7 +830,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemde [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değeri kayıt defterine yazmak için.  
+ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.  
   
 ##  <a name="setqwordvalue"></a>  CRegKey::SetQWORDValue  
  QWORD kayıt defteri anahtarı değerini ayarlamak için bu yöntemi çağırın.  
@@ -850,7 +850,7 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
  Yöntem başarılı olursa, döndürülen değer ERROR_SUCCESS olur. Yöntem başarısız olursa, dönüş değeri WINERROR içinde tanımlanan bir sıfır olmayan hata kodudur. H  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemde [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923) değeri kayıt defterine yazmak için.  
+ Bu yöntemde [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa) değeri kayıt defterine yazmak için.  
   
 ##  <a name="setstringvalue"></a>  CRegKey::SetStringValue  
  Kayıt defteri anahtarının dize değerini ayarlamak için bu yöntemi çağırın.  
@@ -945,7 +945,7 @@ ATL_DEPRECATED LONG SetValue(
 ### <a name="remarks"></a>Açıklamalar  
  İki özgün sürümü `SetValue` ATL_DEPRECATED işaretlenir ve artık kullanılmamalıdır. Bu formlar kullanılırsa derleyici bir uyarı verir.  
   
- Üçüncü yöntem çağrılarını [RegSetValueEx](http://msdn.microsoft.com/library/windows/desktop/ms724923).  
+ Üçüncü yöntem çağrılarını [RegSetValueEx](/windows/desktop/api/winreg/nf-winreg-regsetvalueexa).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [DCOM örnek](../../visual-cpp-samples.md)   

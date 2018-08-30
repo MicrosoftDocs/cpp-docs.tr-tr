@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 686dbe540301508bd95563b7eafc466a5821a9f6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ae23f641becea5a7bdb47eefbdee59e18c2f27a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464594"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205601"
 ---
 # <a name="ccomptrbase-class"></a>CComPtrBase sınıfı
 Bu sınıf, COM tabanlı bellek yordamları kullanarak akıllı işaretçi sınıflar için temel sağlar.  
@@ -173,10 +173,10 @@ HRESULT CoCreateInstance(
  CLSID veri ve nesneyi oluşturmak için kullanılan kod ile ilişkili.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa S_OK döndürür, başarı veya REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING veya e_noınterface başarısız. Bkz: [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) ve [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) bu hataları açıklaması.  
+ Başarılıysa S_OK döndürür, başarı veya REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING veya e_noınterface başarısız. Bkz: [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance) ve [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) bu hataları açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk formu yöntemi çağrılırsa, [CLSIDFromProgID](http://msdn.microsoft.com/library/windows/desktop/ms688386) CLSID kurtarmak için kullanılır. Her iki biçimi'ı çağırın [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+ İlk formu yöntemi çağrılırsa, [CLSIDFromProgID](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromprogid) CLSID kurtarmak için kullanılır. Her iki biçimi'ı çağırın [CoCreateClassInstance](/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
  Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir [CComPtrBase::p](#p) NULL değerine eşit değil.  
   
@@ -339,7 +339,7 @@ template <class Q> HRESULT QueryInterface(Q
  Başarılıysa S_OK döndürür başarı veya e_noınterface başarısız.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin çağırdığı [IUnknown::QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521).  
+ Bu yöntemin çağırdığı [IUnknown::QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).  
   
  Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *pp* NULL değerine eşit değil.  
   

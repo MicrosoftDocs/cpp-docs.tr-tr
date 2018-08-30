@@ -1,5 +1,5 @@
 ---
-title: Aracı yapılandırma özellikleri (Visual C++) bildirim | Microsoft Docs
+title: Bildirim aracı yapılandırma özellikleri (Visual C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,29 +19,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1953e7c37c07f66845510efe037015a537aa7baa
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: ef1eb1c0c1ee8c9fb2814bc7cd808ea2e524b8a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33329094"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200339"
 ---
-# <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri &lt;Projectname&gt; özellik sayfaları iletişim kutusu
-Genel seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+# <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
+Genel seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
- Bu özellik sayfası iletişim kutusu erişmek için özellik sayfaları projenizi veya özellik sayfasını açın. Genişletme **bildirim aracı** düğümü altında **yapılandırma özellikleri**ve ardından **genel**.  
+ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sayfası için özellik sayfalarını açın. Genişletin **bildirim aracında** düğümünde **yapılandırma özellikleri**ve ardından **genel**.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Başlangıç başlığını gösterme**  
- **Evet (/ nologo)** bildirim aracı başlatıldığında standart Microsoft telif hakkı verileri gizlenir belirtir. Mt.exe parçası olarak bir yapı işlemi veya bir yapı ortamından çalıştırdığınızda, günlük dosyaları, istenmeyen çıktısında gizlemek için bu seçeneği kullanın.  
+ **Evet (/ nologo)** bildirim aracı başlatıldığında standart Microsoft telif hakkı verileri gizlenir belirtir. Bir yapı ortamı veya bir yapı işleminin bir parçası olarak mt.exe çalıştırdığınızda günlük dosyalarında istenmeyen çıkış gizlemek için bu seçeneği kullanın.  
   
- **Ayrıntılı çıktı**  
- **Evet (/ verbose)** ek yapı bilgileri bildirim oluşturma sırasında görüntüleneceğini belirtir.  
+ **Ayrıntılı çıkış**  
+ **Evet (/ verbose)** bildirim oluşturulması sırasında ek yapı bilgilerini gösterileceğini belirtir.  
   
  **Derleme kimliği**  
- Bir kimlik dizesi belirtmek için /identity seçeneğini kullanan hangi oluşturur özniteliklerini [ \<assemblyIdentity > öğesi](/visualstudio/deployment/assemblyidentity-element-clickonce-application). Bir kimlik dizesi değeri ile başlayan `name` özniteliği ve tarafından izlenen *özniteliği* = *değeri* çiftleri. Bir kimlik dizesi özniteliklerin virgülle ayrılır.  
+ Bir kimlik dizesi belirtmek için /identity seçeneğini kullanan özniteliklerini oluşan [ \<assemblyIdentity > öğesi](/visualstudio/deployment/assemblyidentity-element-clickonce-application). Bir kimlik dizesi değeri ile başlayan `name` özniteliği ve takip *özniteliği* = *değer* çiftleri. Bir kimlik dizesi öznitelikleri virgülle sınırlandırılmıştır.  
   
- Örnek kimlik dizesi aşağıdadır:  
+ Kimlik dizesi örneği verilmiştir:  
   
  `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`  
   

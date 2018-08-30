@@ -1,5 +1,5 @@
 ---
-title: Üstbilgi öğesi özelleştirme&#39;s görünüm | Microsoft Docs
+title: Üstbilgi öğesi özelleştirme&#39;görünümünü | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,31 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e09f8bc0b61e22435ee348968f117940b57132e3
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 3523feb14d49a0e275fd3024925287aa05521f4b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930881"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195524"
 ---
-# <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;s görünümü
-Ayarlayarak *dwStyle* üstbilgi denetimi ilk oluşturduğunuzda parametre ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), görünüm tanımlayabilirsiniz ve üstbilgi davranışını öğelerini ya da üstbilgisi denetimi.  
+# <a name="customizing-the-header-item39s-appearance"></a>Üstbilgi öğesi özelleştirme&#39;görünümünü
+Ayarlayarak *dwStyle* parametre bir üst bilgi denetiminin ilk oluşturduğunuzda ([CHeaderCtrl::Create](../mfc/reference/cheaderctrl-class.md#create)), görünüm tanımlayabilirsiniz ve üst bilgisi davranışını öğelerini ya da kendi üst denetim.  
   
- Örnekleme ayarlayabileceğiniz stilleri ve bunların amaçla şöyledir:  
+ Ayarlayabileceğiniz stilleri ve bunların amacı bazıları aşağıda verilmiştir:  
   
--   Basma düğmesi gibi ara üstbilgi öğesi yapma **HDS_BUTTONS** stili.  
+-   Bir basma düğmesi gibi ara bir üst öğe yapma **HDS_BUTTONS** stili.  
   
-     Fare tıklamaları verileri Microsoft Outlook içinde gerçekleştirilir gibi belirli bir sütuna göre sıralama gibi bir üstbilgi öğesinin yanıt eylemleri gerçekleştirmek istiyorsanız, bu stil kullanın.  
+     Microsoft Outlook içinde olduğu gibi verileri belirli bir sütuna göre sıralama gibi bir üst öğe üzerinde fare tıklamalara yanıt eylemleri gerçekleştirmek istiyorsanız bu stil kullanın.  
   
--   Fare imlecini üzerlerine başarılı olduğunda üstbilgi öğeleri "sıcak izleme" görünümünü sunmak için bunu kullanın **HDS_HOTTRACK** stili.  
+-   Fare imlecini geçerken üstbilgi öğeleri "sıcak takibi" görünümü vermek için kullanın **HDS_HOTTRACK** stili.  
   
-     Etkin izleme görüntüler 3B anahat işaretçinin aksi düz bir öğeyi üzerinden geçerken çubuğu.  
+     İşaretçiyi bir öğe yoksa düz üzerinden geçerken sıcak takibi görüntüler 3B anahat çubuğu.  
   
--   Üstbilgi denetimi gizli olduğunu belirtmek için kullanın **HDS_HIDDEN** stili.  
+-   Üstbilgi denetimi gizlenmelidir belirtmek için kullanın **HDS_HIDDEN** stili.  
   
-     **HDS_HIDDEN** stilini gösterir üstbilgi denetimine veri kapsayıcısını ve görsel bir denetim kullanılmak üzere tasarlanmıştır. Bu stili otomatik olarak denetim gizlemez ancak, bunun yerine, davranışını etkiler `CHeaderCtrl::Layout`. Döndürülen değerin *cy* üyesi `WINDOWPOS` yapısı sıfır olacak belirten denetimi kullanıcıya görünür olmamalıdır.  
+     **HDS_HIDDEN** stilini gösterir üstbilgi denetimi veri kapsayıcısını ve görsel bir denetim kullanılmak üzere tasarlanmıştır. Bu stil denetimi otomatik olarak gizlemek olmayan, ancak bunun yerine, davranışını etkileyen `CHeaderCtrl::Layout`. Döndürülen değer *cy* üyesi `WINDOWPOS` yapısı, sıfır olacaktır gösteren denetimi kullanıcıya görünür olmamalıdır.  
   
- Bu özellikler hakkında daha fazla bilgi için bkz: [öğeleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK. Üstbilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz: [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).  
+ Bu özellikler hakkında daha fazla bilgi için bkz. [öğeleri](/windows/desktop/Controls/header-controls) Windows SDK. Üstbilgi denetimine öğe ekleme hakkında daha fazla bilgi için bkz: [üstbilgi denetimine öğe eklemeyi](../mfc/adding-items-to-the-header-control.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   

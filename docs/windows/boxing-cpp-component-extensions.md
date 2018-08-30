@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6a23029f8347990abaa8b2e6ecc65e0c3037c6eb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8d429e34d994ab554146d411ec9d62f3a5eefbeb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583800"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200714"
 ---
 # <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
 
@@ -82,7 +82,7 @@ void BlankPage::OnNavigatedTo(NavigationEventArgs^ e)
 }
 ```
 
-Daha fazla bilgi için [kutulama (C + +/ CX)](http://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
+Daha fazla bilgi için [kutulama (C + +/ CX)](https://msdn.microsoft.com/library/windows/apps/hh969554.aspx).
 
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı
 

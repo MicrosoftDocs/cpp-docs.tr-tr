@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8a1b9ba00c8728c86935b7c64105d03bb4f19b10
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da9e378ff75ec67660b0c29a5765be88a2c06496
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610606"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205672"
 ---
 # <a name="cppquote"></a>cpp_quote
 
@@ -47,7 +47,7 @@ Bir C yönergesi.
 
 Ayrıca **cpp_quote** ve MIDL derlemenin bir parçası bir .h dosyası oluşturun. C++ IDL öznitelikleri kullanır ancak bazı görev için bu dosyayı kullanamazsınız bir C++ üstbilgi dosyası varsa, örneğin, daha sonra kullanabilmek için bir MIDL tarafından oluşturulan .h dosyası oluşturmak için derleyebilirsiniz.
 
-**Cpp_quote** özniteliği ile aynı işlevlere sahip [cpp_quote](http://msdn.microsoft.com/library/windows/desktop/aa366765) MIDL özniteliği.
+**Cpp_quote** özniteliği ile aynı işlevlere sahip [cpp_quote](/windows/desktop/Midl/cpp-quote) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

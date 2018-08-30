@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8df8ef2a0846f5ac90a2adfc53fa64da92930f3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8879c1d304e6d46b7ae3c8c2f1ed535526a5390e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881246"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202468"
 ---
 # <a name="cbindstatuscallback-class"></a>CBindStatusCallback sınıfı
 Bu sınıfın uyguladığı `IBindStatusCallback` arabirimi.  
@@ -101,10 +101,10 @@ class ATL_NO_VTABLE CBindStatusCallback : public CComObjectRootEx
 |[CBindStatusCallback::m_dwTotalRead](#m_dwtotalread)|Okunan toplam bayt sayısı.|  
 |[CBindStatusCallback::m_pFunc](#m_pfunc)|İşlev işaretçisi, veriler kullanılabilir olduğunda çağrılır.|  
 |[CBindStatusCallback::m_pT](#m_pt)|Zaman uyumsuz veri aktarımı isteyen nesne işaretçisi.|  
-|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|İşaretçi [ıbindctx i](http://msdn.microsoft.com/library/windows/desktop/ms693755) geçerli bağlama işlemi için arabirim.|  
+|[CBindStatusCallback::m_spBindCtx](#m_spbindctx)|İşaretçi [ıbindctx i](/windows/desktop/api/objidl/nn-objidl-ibindctx) geçerli bağlama işlemi için arabirim.|  
 |[CBindStatusCallback::m_spBinding](#m_spbinding)|İşaretçi `IBinding` geçerli bağlama işlemi için arabirim.|  
-|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|İşaretçi [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) kullanılacak URL için arabirim.|  
-|[CBindStatusCallback::m_spStream](#m_spstream)|İşaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) veri aktarımı için arabirim.|  
+|[CBindStatusCallback::m_spMoniker](#m_spmoniker)|İşaretçi [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) kullanılacak URL için arabirim.|  
+|[CBindStatusCallback::m_spStream](#m_spstream)|İşaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) veri aktarımı için arabirim.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `CBindStatusCallback` Sınıfının Implements `IBindStatusCallback` arabirimi. `IBindStatusCallback` uygulamanız tarafından bir zaman uyumsuz veri aktarımı bildirim alabilir şekilde uygulanmalıdır. Sistem tarafından sağlanan zaman uyumsuz ad kullanan `IBindStatusCallback` göndermek ve zaman uyumsuz veri hakkında bilgi almak için yöntemleri aktarma nesnenizin gelen ve giden.  
@@ -278,7 +278,7 @@ T* m_pT;
  `CBindStatusCallback` Nesne, bu nesnenin sınıfı üzerinde şablonlaştırılır.  
   
 ##  <a name="m_spbindctx"></a>  CBindStatusCallback::m_spBindCtx  
- Bir işaretçi bir [ıbindctx i](http://msdn.microsoft.com/library/windows/desktop/ms693755) bağlama bağlamı (belirli bir bilinen ad bağlama işlemiyle ilgili bilgileri depolayan bir nesne) erişim sağlayan bir arabirimi.  
+ Bir işaretçi bir [ıbindctx i](/windows/desktop/api/objidl/nn-objidl-ibindctx) bağlama bağlamı (belirli bir bilinen ad bağlama işlemiyle ilgili bilgileri depolayan bir nesne) erişim sağlayan bir arabirimi.  
   
 ```
 CComPtr<IBindCtx> m_spBindCtx;
@@ -298,7 +298,7 @@ CComPtr<IBinding> m_spBinding;
  İçinde başlatılan `OnStartBinding` ve yayımlanan `OnStopBinding`.  
   
 ##  <a name="m_spmoniker"></a>  CBindStatusCallback::m_spMoniker  
- Bir işaretçi [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) kullanılacak URL için arabirim.  
+ Bir işaretçi [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) kullanılacak URL için arabirim.  
   
 ```
 CComPtr<IMoniker> m_spMoniker;
@@ -308,7 +308,7 @@ CComPtr<IMoniker> m_spMoniker;
  İçinde başlatılan `StartAsyncDownload`.  
   
 ##  <a name="m_spstream"></a>  CBindStatusCallback::m_spStream  
- Bir işaretçi [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) arabiriminin geçerli bağlama işlemi.  
+ Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) arabiriminin geçerli bağlama işlemi.  
   
 ```
 CComPtr<IStream> m_spStream;
@@ -336,10 +336,10 @@ STDMETHOD(
  [in] Veri bağlama başlangıcından itibaren kullanılabilir toplam miktarı (bayt cinsinden). Veri miktarı ilgili değilse veya hiçbir belirli bir miktarın mevcut geldiğini gösteren sıfır olabilir.  
   
  *pformatetc*  
- [in] İşaretçi [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682242) kullanılabilir verilerin biçimini içeren yapısı. Biçim verilmedi CF_NULL olabilir.  
+ [in] İşaretçi [FORMATETC](/windows/desktop/com/the-formatetc-structure) kullanılabilir verilerin biçimini içeren yapısı. Biçim verilmedi CF_NULL olabilir.  
   
  *pstgmed*  
- [in] İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms695269) sunuldu gerçek verileri tutan yapı.  
+ [in] İşaretçi [STGMEDIUM](/windows/desktop/com/the-stgmedium-structure) sunuldu gerçek verileri tutan yapı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  

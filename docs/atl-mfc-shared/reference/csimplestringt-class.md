@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd96c7028f5f37d617c86e412fa238ccf141cb58
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 0d548a5cf0384a59c3fa12d88268997f1e801704
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465912"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196667"
 ---
 # <a name="csimplestringt-class"></a>CSimpleStringT sınıfı
 Bu sınıfın temsil ettiği bir `CSimpleStringT` nesne.  
@@ -471,11 +471,11 @@ PXSTR GetBufferSetLength(int nLength);
   
  Başvuru sayımı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:  
   
-- [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](http://msdn.microsoft.com/library/windows/desktop/ms687260) Windows SDK içinde. 
+- [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) Windows SDK içinde. 
   
-- [Başvuru sayma uygulayan](http://msdn.microsoft.com/library/windows/desktop/ms693431) Windows SDK içinde.
+- [Başvuru sayma uygulayan](/windows/desktop/com/implementing-reference-counting) Windows SDK içinde.
   
-- [Başvuru sayısı yönetmek için kuralları](http://msdn.microsoft.com/library/windows/desktop/ms692481) Windows SDK içinde.  
+- [Başvuru sayısı yönetmek için kuralları](/windows/desktop/com/rules-for-managing-reference-counts) Windows SDK içinde.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, kullanımını gösterir `CSimpleStringT::GetBufferSetLength`.  
@@ -599,11 +599,11 @@ PXSTR LockBuffer();
   
  Başvuru sayımı hakkında daha fazla bilgi için aşağıdaki makalelere bakın:  
   
-- [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](http://msdn.microsoft.com/library/windows/desktop/ms687260) Windows SDK içinde  
+- [Başvuru sayımı yoluyla, nesne kullanım ömrü Yönetimi](/windows/desktop/com/managing-object-lifetimes-through-reference-counting) Windows SDK içinde  
   
-- [Başvuru sayma uygulayan](http://msdn.microsoft.com/library/windows/desktop/ms693431) Windows SDK içinde  
+- [Başvuru sayma uygulayan](/windows/desktop/com/implementing-reference-counting) Windows SDK içinde  
   
-- [Başvuru sayısı yönetmek için kuralları](http://msdn.microsoft.com/library/windows/desktop/ms692481) Windows SDK içinde  
+- [Başvuru sayısı yönetmek için kuralları](/windows/desktop/com/rules-for-managing-reference-counts) Windows SDK içinde  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, kullanımını gösterir `CSimpleStringT::LockBuffer`.  

@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbf59302a73374f08f1c226c1e7e56202654dcfb
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2542be130c75166f8716c76df547c72fad7c2250
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693214"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196906"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
-Bir iş parçacığı için bir Özet yürütme. Bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı İlkesi anahtarı Resource Manager vermek, normal bir Win32 iş parçacığı veya kullanıcı modu zamanlanabilir (UMS) iş parçacığı tarafından yedeklenen bir iş parçacığı proxy. UMS iş parçacığı desteklenen 64-bit işletim sistemi sürümü Windows 7 ve üzeri.  
+Bir iş parçacığı için bir soyutlamayı yürütme. Yapılandırmanıza bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı ilke anahtarı, kaynak yöneticisi vermek, normal bir Win32 iş parçacığı veya bir kullanıcı modunda zamanlanabilen (UMS) iş parçacığı tarafından desteklenen bir iş parçacığı proxy'sini. UMS iş parçacıkları, sürümü Windows 7 64-bit işletim sistemlerinde desteklenen ve daha yüksek.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,12 +44,12 @@ struct IThreadProxy;
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[Ithreadproxy::GetID](#getid)|İş parçacığı proxy için benzersiz bir tanımlayıcı döndürür.|  
-|[Ithreadproxy::switchout](#switchout)|Temel alınan sanal işlemci kök bağlamından keser.|  
-|[Ithreadproxy::switchto](#switchto)|İşbirlikçi bağlam anahtarı şu anda yürütülen bağlamdan farklı bir gerçekleştirir.|  
-|[Ithreadproxy::yieldtosystem](#yieldtosystem)|Geçerli İşlemci çalıştırılmaya hazır başka bir iş parçacığı için yürütme elde etmek üzere çağıran iş parçacığı neden olur. İşletim sistemi, yürütülecek sonraki iş parçacığı seçer.|  
+|[Ithreadproxy::switchout](#switchout)|Bağlam arka plandaki sanal işlemci kökünden ayırır.|  
+|[Ithreadproxy::switchto](#switchto)|Bir ortak bağlam anahtarı şu anda yürütülen bağlamından farklı bir gerçekleştirir.|  
+|[Ithreadproxy::yieldtosystem](#yieldtosystem)|Geçerli işlemci üzerinde çalıştırmak hazır olan başka bir iş parçacığına yürütme elde etmek üzere çağıran iş parçacığını neden olur. İşletim sistemi, yürütülecek sonraki iş parçacığını seçer.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İş parçacığı proxy'leri eşleşmiş arabirimi tarafından temsil edilen yürütme bağlamı için `IExecutionContext` iş gönderme olarak.  
+ İş parçacığı proxy yürütme bağlamları arabirim tarafından temsil edilen için sıkı bağlı `IExecutionContext` iş gönderme olarak.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `IThreadProxy`  
@@ -59,7 +59,7 @@ struct IThreadProxy;
   
  **Namespace:** eşzamanlılık  
   
-##  <a name="getid"></a>  Ithreadproxy::GetID yöntemi  
+##  <a name="getid"></a>  Ithreadproxy::GetID metodu  
  İş parçacığı proxy için benzersiz bir tanımlayıcı döndürür.  
   
 ```
@@ -70,7 +70,7 @@ virtual unsigned int GetId() const = 0;
  Bir tamsayı benzersiz tanımlayıcısı.  
   
 ##  <a name="switchout"></a>  Ithreadproxy::switchout yöntemi  
- Temel alınan sanal işlemci kök bağlamından keser.  
+ Bağlam arka plandaki sanal işlemci kökünden ayırır.  
   
 ```
 virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
@@ -78,23 +78,23 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
   
 ### <a name="parameters"></a>Parametreler  
  `switchState`  
- Anahtar yürütme iş parçacığı proxy durumunu gösterir. Parametre türünde `SwitchingProxyState`.  
+ Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `SwitchOut` onu Yürütülüyor, herhangi bir nedenden dolayı sanal işlemci kök bağlamından ilişkisini gerekiyorsa. Değerin bağlı olarak, parametre geçirdiğiniz `switchState`, ve bir sanal işlemcinin kökünde yürütüyor olmadığını çağrı hemen geri veya bağlamla ilişkili iş parçacığı proxy engelleyin. Çağırmak için bir hata olduğunu `SwitchOut` kümesine parametresiyle `Idle`. Bunun yapılması neden olur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum.  
+ Kullanım `SwitchOut` bir bağlam üzerinde yürütülen, herhangi bir nedenle sanal işlemci kökünden ilişkisini gerekiyorsa. Değere göre parametresi için geçirdiğiniz `switchState`, ve bir sanal işlemci kökünde Yürütülüyor olsun veya olmasın, çağrı ya hemen döndürür veya bağlamla ilişkilendirilen iş parçacığı proxy'sini engellemek. Çağırmak için bir hata olduğunu `SwitchOut` ayarlanan parametre ile `Idle`. Bunun yapılması sonucunda bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum.  
   
- `SwitchOut` Resource Manager bunu yapmanızı istedi olduğundan veya bir talep geçici sanal işlemci kök istenir ve çalışmayı olduğundan, Zamanlayıcı sahip sanal işlemci kökleri sayısını azaltmak istediğinizde kullanışlıdır. Bu durumda yöntemi çağıracağı [IVirtualProcessorRoot::Remove](http://msdn.microsoft.com/en-us/ad699b4a-1972-4390-97ee-9c083ba7d9e4) yapılan bir çağrı yapmadan önce sanal işlemci kökündeki `SwitchOut` parametresiyle `switchState` kümesine `Blocking`. Bu iş parçacığı proxy engeller ve farklı sanal işlemci kök Zamanlayıcı içinde çalıştırmak üzere kullanılabilir olduğunda yürütme devam eder. Engelleme iş parçacığı proxy işlevini çağırarak ettirilebilir `SwitchTo` bu iş parçacığı proxy'nin yürütme bağlamı değiştirmek için. Ayrıca, iş parçacığı proxy sanal işlemci kök etkinleştirmek için ilişkili bağlamını kullanarak da devam edebilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz: [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
+ `SwitchOut` scheduler, kaynak yöneticisi yapmanızı söylediği veya geçici zamanlayıcınızın sanal işlemci kök istenen ve çalışmayı kökle sayısını azaltmak istediğinizde yararlıdır. Bu durumda yöntem çağırması gereken [IVirtualProcessorRoot::Remove](https://msdn.microsoft.com/ad699b4a-1972-4390-97ee-9c083ba7d9e4) bir çağrı yapmadan önce sanal işlemci kökünde `SwitchOut` parametresiyle `switchState` kümesine `Blocking`. Bu iş parçacığı proxy'sini engeller ve bir zamanlayıcı farklı sanal işlemci kök, onu yürütmek kullanılabilir olduğunda yürütmeyi devam ettirir. Engelleyen iş parçacığı proxy'si işlevini çağırarak sürdürülebilir `SwitchTo` bu iş parçacığı proxy'sinin yürütme bağlamına geçmek için. Bir sanal işlemci kökünü etkinleştirmek üzere ilişkili bağlamını kullanarak, iş parçacığı proxy'sini devam edebilir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
   
- `SwitchOut` iş parçacığı proxy engelleme ya da geçici olarak sanal işlemci kökünden ayırma üzerinde çalıştırıldığı ve Zamanlayıcı iş için gönderiyor gelecekte etkinleştirilebilir şekilde sanal işlemci yeniden başlatmak istediğinizde de kullanılabilir. Kullanım `SwitchOut` parametresiyle `switchState` kümesine `Blocking` iş parçacığı proxy engellemek istiyorsanız. Kullanarak daha sonra ettirilebilir `SwitchTo` veya `IVirtualProcessorRoot::Activate` yukarıda da belirtildiği gibi. Kullanım `SwitchOut` kümesine parametresiyle `Nesting` zaman bu iş parçacığı proxy üzerinde çalıştığından sanal işlemci kök geçici olarak ayırmak istiyor ve Zamanlayıcı sanal işlemci ile ilişkili. Çağırma `SwitchOut` parametresiyle `switchState` kümesine `Nesting` sanal işlemci kökünde yürütülürken kök yeniden başlatılmasına ve bir gerek kalmadan yürütme devam etmek için geçerli iş parçacığı proxy neden olur. İş parçacığı proxy çağırır kadar Zamanlayıcı bıraktıysanız kabul [Ithreadproxy::switchout](#switchout) yöntemiyle `Blocking` , bir sonraki bir noktada. İkinci çağrı `SwitchOut` kümesine parametresiyle `Blocking` , ya da devam ettirilebilir böylece bağlam engellenen bir duruma döndürmek için tasarlanmıştır `SwitchTo` veya `IVirtualProcessorRoot::Activate` ayrılmış gelen zamanlayıcı içinde. Bir sanal işlemcinin kökünde yürütülmekte olan değil çünkü hiçbir yeniden başlatma gerçekleşir.  
+ `SwitchOut` Sanal işlemci onu gelecekte iş parçacığı proxy'sini engellerken veya sanal işlemci kökünden geçici olarak kullanımdan çıkarılıyor çalıştığı ve Zamanlayıcı, iş için ayırırken etkinleştirilebilmesi için yeniden başlatmak istediğinizde de kullanılabilir. Kullanım `SwitchOut` parametresiyle `switchState` kümesine `Blocking` iş parçacığı proxy'sini engellemek istiyorsanız. Kullanarak daha sonra sürdürülebilir `SwitchTo` veya `IVirtualProcessorRoot::Activate` yukarıda da belirtildiği gibi. Kullanım `SwitchOut` ayarlanan parametre ile `Nesting` ne zaman bu iş parçacığı proxy'sini, üzerinde çalıştığı sanal işlemci kökünden geçici olarak ayırmak istediğiniz ve Zamanlayıcı Sanal işlemcinin ilişkilendirilmiş olduğu. Çağırma `SwitchOut` parametresiyle `switchState` kümesine `Nesting` bir sanal işlemci kökünde yürütülürken kök başlatılmasına ve bir gerek kalmadan yürütmeye devam geçerli iş parçacığı proxy'sini neden olur. İş parçacığı proxy'sini çağırdığı kadar Zamanlayıcıdan kabul [Ithreadproxy::switchout](#switchout) yöntemiyle `Blocking` , bir sonraki bir noktada. İçin yapılan ikinci çağrı `SwitchOut` ayarlanan parametre ile `Blocking` bunu tarafından devam ettirilebilir böylece bağlamı engelli duruma geri dönmek için hedeflenen `SwitchTo` veya `IVirtualProcessorRoot::Activate` ayrıldığı Zamanlayıcı içinde. Bir sanal işlemci kökünde Yürütülüyor değil çünkü yürütülmediği gerçekleşir.  
   
- Yeniden başlatılan sanal işlemci kök, Zamanlayıcı'yı kaynak yöneticisi tarafından verilen yepyeni bir sanal işlemcinin kök farklı değildir. Yürütme için bir bağlam kullanılarak yürütme ile etkinleştirerek kullanabilmeniz için `IVirtualProcessorRoot::Activate`.  
+ Yeniden başlatılan sanal işlemci kök, Zamanlayıcı'yı kaynak yöneticisi tarafından verilmiş olan yeni bir sanal işlemci kökünden farklı değildir. Bir yürütme bağlamı kullanarak ile etkinleştirerek onu yürütme için kullanabilirsiniz `IVirtualProcessorRoot::Activate`.  
   
- `SwitchOut` üzerinde çağrılmalıdır `IThreadProxy` şu anda yürütülen iş parçacığı veya sonuçlarını temsil eden arabirim tanımlanmamış.  
+ `SwitchOut` çağrılmalıdır `IThreadProxy` yürütülmekte olan iş parçacığını veya sonuçlarını temsil eden arabirim tanımlanmamıştır.  
   
- Bu yöntem, kitaplıkları ve Visual Studio 2010 ile birlikte gelen üstbilgileri, bir parametre geçmeyecek ve sanal işlemci kök yeniden değil. Eski davranışı, varsayılan parametre değeri korumak için `Blocking` sağlanır.  
+ Visual Studio 2010 ile birlikte gelen üst bilgileri ve kitaplıkları, bu yöntem, bir parametre almaz ve sanal işlemci kökü başlatmazdı. Varsayılan parametre değeri eski davranışı korumak için `Blocking` sağlanır.  
   
 ##  <a name="switchto"></a>  Ithreadproxy::switchto yöntemi  
- İşbirlikçi bağlam anahtarı şu anda yürütülen bağlamdan farklı bir gerçekleştirir.  
+ Bir ortak bağlam anahtarı şu anda yürütülen bağlamından farklı bir gerçekleştirir.  
   
 ```
 virtual void SwitchTo(
@@ -107,30 +107,30 @@ virtual void SwitchTo(
  İşbirliği ile geçmek için yürütme bağlamı.  
   
  `switchState`  
- Anahtar yürütme iş parçacığı proxy durumunu gösterir. Parametre türünde `SwitchingProxyState`.  
+ Geçişi yürüten iş parçacığı proxy durumunu belirtir. Parametre türüdür `SwitchingProxyState`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir yürütme bağlamı diğerine geçmek için bu yöntemi kullanmak [Iexecutioncontext::Dispatch](iexecutioncontext-structure.md#dispatch) ilk yürütme bağlamı yöntemi. Yürütme bağlamı yöntemi ilişkilendirir `pContext` zaten biriyle ilişkili değilse, bir iş parçacığı proxy ile. Geçerli iş parçacığı proxy sahipliğini için belirttiğiniz değere göre belirlenir `switchState` bağımsız değişkeni.  
+ Tek bir yürütme bağlamında diğerine geçmek için bu yöntemi kullanın [Iexecutioncontext::Dispatch](iexecutioncontext-structure.md#dispatch) yöntemi ilk yürütme bağlamı. Yürütme bağlamı yöntemi ilişkilendirir `pContext` zaten ile ilişkili değilse, bir iş parçacığı proxy ile. Geçerli iş parçacığı proxy'sini sahipliğini için belirttiğiniz değere göre belirlenir `switchState` bağımsız değişken.  
   
- Değeri kullanmak `Idle` Resource Manager şu anda yürütülen iş parçacığı proxy döndürmek istediğinizde. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Idle` yürütme bağlamı neden olacak `pContext` temel yürütme kaynakta çalıştırmaya başlamak için. Bu iş parçacığı proxy sahipliğini Resource Manager aktarılır ve yürütme bağlamı 's döndürmesi bekleniyor `Dispatch` yöntemi hemen sonra `SwitchTo` aktarımı tamamlamak için döndürür. İş parçacığı proxy göndermeyi yürütme bağlamı iş parçacığı proxy sunucudan ilişkilendirmesi ve onu tekrar veya görür uygun şekilde destroy Zamanlayıcı ücretsizdir.  
+ Değeri kullanın `Idle` şu anda yürütülen iş parçacığı proxy'sini Resource Manager'a döndürmek istediğinizde. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Idle` yürütme bağlamı neden olacak `pContext` temel yürütme kaynak çalıştırmaya başlamak için. Bu iş parçacığı proxy'sini sahipliğini Resource Manager'a aktarılır ve yürütme bağlamdan 's döndürmek için beklenen `Dispatch` yöntemi hemen sonra `SwitchTo` aktarımı tamamlamak için döndürür. İş parçacığı proxy'sini gönderme yürütme bağlamı iş parçacığı Ara sunucuya noktanızla ilişkisi silinir ve yeniden kullanmak veya uygun gördüğü şekilde yok etmek Zamanlayıcı ücretsizdir.  
   
- Değeri kullanmak `Blocking` engelleme durumu girmek için bu iş parçacığı proxy istediğinizde. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Blocking` yürütme bağlamı neden olacak `pContext` çalıştırmaya başlamak ve sürdürülene kadar geçerli iş parçacığı proxy engellemek için. İş parçacığı proxy olduğunda Zamanlayıcı iş parçacığı proxy sahipliğini korur `Blocking` durumu. Engelleme iş parçacığı proxy işlevini çağırarak ettirilebilir `SwitchTo` bu iş parçacığı proxy'nin yürütme bağlamı değiştirmek için. Ayrıca, iş parçacığı proxy sanal işlemci kök etkinleştirmek için ilişkili bağlamını kullanarak da devam edebilirsiniz. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz: [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
+ Değeri kullanın `Blocking` engellenmiş durumda girmek için bu iş parçacığı proxy'sini istediğinizde. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Blocking` yürütme bağlamı neden olacak `pContext` yürütmeye başlamak ve sürdürülene kadar geçerli iş parçacığı proxy'sini engellemek için. İş parçacığı proxy'sini olduğunda Zamanlayıcı iş parçacığı proxy'sini sahipliğini korur `Blocking` durumu. Engelleyen iş parçacığı proxy'si işlevini çağırarak sürdürülebilir `SwitchTo` bu iş parçacığı proxy'sinin yürütme bağlamına geçmek için. Bir sanal işlemci kökünü etkinleştirmek üzere ilişkili bağlamını kullanarak, iş parçacığı proxy'sini devam edebilir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
   
- Değeri kullanmak `Nesting` zaman bu iş parçacığı proxy üzerinde çalıştığından sanal işlemci kök geçici olarak ayırmak istiyor ve Zamanlayıcı iş için gönderiyor. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Nesting` yürütme bağlamı neden olacak `pContext` yürütme ve geçerli başlatmak için iş parçacığı proxy ayrıca sanal işlemci kök gerek kalmadan yürütmeye devam eder. İş parçacığı proxy çağırır kadar Zamanlayıcı bıraktıysanız kabul [Ithreadproxy::switchout](#switchout) yöntemi, bir sonraki bir noktada. `IThreadProxy::SwitchOut` Yöntemi sanal işlemci kök onu yeniden zamanlamak kullanılabilir hale gelene kadar iş parçacığı proxy engelleme.  
+ Değeri kullanın `Nesting` ne zaman bu iş parçacığı proxy'sini, üzerinde çalıştığı sanal işlemci kökünden geçici olarak ayırmak istediğiniz ve Zamanlayıcı iş için gönderiyor. Çağırma `SwitchTo` parametresiyle `switchState` kümesine `Nesting` yürütme bağlamı neden olacak `pContext` yürütme ve geçerli iş parçacığı proxy'sini ayrıca bir sanal işlemci kökünde gerek kalmadan yürütmeye devam eder. İş parçacığı proxy'sini çağırdığı kadar Zamanlayıcıdan kabul [Ithreadproxy::switchout](#switchout) yöntemi, bir sonraki bir noktada. `IThreadProxy::SwitchOut` Yöntemi bir sanal işlemci kök, yeniden zamanlamak kullanılabilir hale gelene kadar iş parçacığı proxy'sini engellemek.  
   
- `SwitchTo` üzerinde çağrılmalıdır `IThreadProxy` şu anda yürütülen iş parçacığı veya sonuçlarını temsil eden arabirim tanımlanmamış. İşlev oluşturur `invalid_argument` varsa parametresi `pContext` ayarlanır `NULL`.  
+ `SwitchTo` çağrılmalıdır `IThreadProxy` yürütülmekte olan iş parçacığını veya sonuçlarını temsil eden arabirim tanımlanmamıştır. İşlevin `invalid_argument` , parametre `pContext` ayarlanır `NULL`.  
   
 ##  <a name="yieldtosystem"></a>  Ithreadproxy::yieldtosystem yöntemi  
- Geçerli İşlemci çalıştırılmaya hazır başka bir iş parçacığı için yürütme elde etmek üzere çağıran iş parçacığı neden olur. İşletim sistemi, yürütülecek sonraki iş parçacığı seçer.  
+ Geçerli işlemci üzerinde çalıştırmak hazır olan başka bir iş parçacığına yürütme elde etmek üzere çağıran iş parçacığını neden olur. İşletim sistemi, yürütülecek sonraki iş parçacığını seçer.  
   
 ```
 virtual void YieldToSystem() = 0;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Normal Windows, iş parçacığı tarafından yedeklenen bir iş parçacığı proxy tarafından çağrıldığında `YieldToSystem` tam olarak Windows işlevi gibi davranır `SwitchToThread`. Ancak, kullanıcı modu zamanlanabilir (UMS) parçacıklarından çağrıldığında `SwitchToThread` işlevi, kullanıcı modu Zamanlayıcı işletim sistemini çalıştırmak için sonraki iş parçacığı çekme görevini atar. Sistemde farklı bir hazır iş parçacığına değiştirme istenen etkisini elde etmek için kullanmak `YieldToSystem`.  
+ Normal Windows, iş parçacığı tarafından desteklenen bir iş parçacığı proxy'sini tarafından çağrıldığında `YieldToSystem` tam olarak Windows işlev gibi davranan `SwitchToThread`. Ancak, kullanıcı modunda zamanlanabilen (UMS) parçacıklarından çağrıldığında `SwitchToThread` işlevi kullanıcı modu Zamanlayıcı işletim sistemini çalıştırmak için bir sonraki iş parçacığını çekme görevini atar. Sistemde farklı bir hazır iş parçacığına geçiş, istenilen etkiyi elde etmek için kullanmak `YieldToSystem`.  
   
- `YieldToSystem` üzerinde çağrılmalıdır `IThreadProxy` şu anda yürütülen iş parçacığı veya sonuçlarını temsil eden arabirim tanımlanmamış.  
+ `YieldToSystem` çağrılmalıdır `IThreadProxy` yürütülmekte olan iş parçacığını veya sonuçlarını temsil eden arabirim tanımlanmamıştır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a40cf81d0b00123692c9ea8b0e2f3111fb914fbb
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ebfbd7e8cedd522c324743abc5c28c6ac3e9f2b0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466368"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200394"
 ---
 # <a name="subsystem-specify-subsystem"></a>/SUBSYSTEM (Alt Sistemi Belirt)
 ```  
@@ -37,7 +37,7 @@ ms.locfileid: "42466368"
 ```  
   
  BOOT_APPLICATION  
- Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [hakkında BCD](http://msdn.microsoft.com/library/windows/desktop/aa362639).  
+ Windows önyükleme ortamında çalışan bir uygulama. Önyükleme uygulamaları hakkında daha fazla bilgi için bkz. [hakkında BCD](/previous-versions/windows/desktop/bcd/about-bcd).  
   
  KONSOLU  
  Win32 karakter modu uygulaması. İşletim sistemi konsol uygulamaları için bir konsol sağlar. Varsa `main` veya `wmain` yerel kod için tanımlanır `int main(array<String ^> ^)` yönetilen kod için tanımlanır veya uygulamanın tamamen yapı `/clr:safe`, KONSOL varsayılandır.  

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75742b466b284a24d6771971a831dfc91303c834
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 1d433c76e054b16491ab7586d6107b4931dc2915
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882438"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203722"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 Bu işlevler, iletişim kutuları oluşturma ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama için destek sağlar.  
@@ -77,13 +77,13 @@ ATLAPI_(int) AtlAxDialogBox(
  [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.  
   
  *lpTemplateName*  
- [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.  
+ [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.  
   
  *hWndParent*  
  [in] İletişim kutusunun sahibi penceresini tanımlar.  
   
  *lpDialogProc*  
- [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469).  
+ [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).  
   
  *dwInitParam*  
  [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.  
@@ -99,9 +99,9 @@ CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,
     "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
 ```  
   
- Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](http://msdn.microsoft.com/library/windows/desktop/aa380902) Windows SDK'sı altında *: SDK Tools*.  
+ Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) Windows SDK'sı altında *: SDK Tools*.  
   
- Genel iletişim kutularında hakkında daha fazla bilgi için başvurmak [iletişim](http://msdn.microsoft.com/library/windows/desktop/ms645452) ve [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK.  
+ Genel iletişim kutularında hakkında daha fazla bilgi için başvurmak [iletişim](/windows/desktop/api/winuser/nf-winuser-dialogboxa) ve [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK.  
   
 ##  <a name="atlaxcreatedialog"></a>  AtlAxCreateDialog  
  Kullanıcı tarafından sağlanan bir iletişim kutusu şablonundan modsuz bir iletişim kutusu oluşturur.  
@@ -120,13 +120,13 @@ ATLAPI_(HWND) AtlAxCreateDialog(
  [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.  
   
  *lpTemplateName*  
- [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](http://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.  
+ [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.  
   
  *hWndParent*  
  [in] İletişim kutusunun sahibi penceresini tanımlar.  
   
  *lpDialogProc*  
- [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](http://msdn.microsoft.com/library/windows/desktop/ms645469).  
+ [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).  
   
  *dwInitParam*  
  [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.  
@@ -137,7 +137,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 ### <a name="remarks"></a>Açıklamalar  
  Ortaya çıkan iletişim kutusunda ActiveX denetimleri içerebilir.  
   
- Bkz: [CreateDialog](http://msdn.microsoft.com/library/windows/desktop/ms645434) ve [CreateDialogParam](http://msdn.microsoft.com/library/windows/desktop/ms645445) Windows SDK içinde.  
+ Bkz: [CreateDialog](/windows/desktop/api/winuser/nf-winuser-createdialoga) ve [CreateDialogParam](/windows/desktop/api/winuser/nf-winuser-createdialogparama) Windows SDK içinde.  
   
 ##  <a name="atlaxcreatecontrol"></a>  AtlAxCreateControl  
  Bir ActiveX denetimi oluşturur, onu başlatır ve belirtilen pencerede barındırır.  
@@ -442,7 +442,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  Başlatma kodu barındırma denetimi başarılı olursa sıfır dışı; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) veya [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK içinde açıklandığı gibi.  
+ Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) veya [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK içinde açıklandığı gibi.  
 
 ##  <a name="atlaxwinterm"></a>  Zaman AtlAxWinTerm  
  Bu işlev ATL'nin denetim barındırma kodunu kaydını silerek başlamasını iptal eder **"AtlAxWin80"** ve **"AtlAxWinLic80"** pencere sınıfları.  
@@ -455,7 +455,7 @@ inline BOOL AtlAxWinTerm();
  Her zaman TRUE değerini döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev yalnızca çağıran [UnregisterClass](http://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK içinde açıklandığı gibi.  
+ Bu işlev yalnızca çağıran [UnregisterClass](https://msdn.microsoft.com/library/windows/desktop/ms644899) Windows SDK içinde açıklandığı gibi.  
   
  Çağrılırsa, mevcut tüm ana bilgisayar windows yok edildikten sonra sonra temizlemek için bu işlevi çağırın [zaman Atlaxwinınit](#atlaxwininit) ve, bundan böyle bir ana bilgisayar windows oluşturmanız gerekir. Bu işlev çağırırsanız yoksa, işlem sonlandırıldığında pencere sınıfını otomatik olarak kaydı silinecek.  
   

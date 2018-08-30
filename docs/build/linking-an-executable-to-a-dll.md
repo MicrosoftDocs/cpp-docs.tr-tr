@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9641545721776530ccf09a5a1ea99485f510265
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 49973d203670eaa2aa0988d9de04784d13eaec09
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466477"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196693"
 ---
 # <a name="link-an-executable-to-a-dll"></a>Bir DLL'ye bağlandığı bir yürütülebilir dosya  
   
@@ -76,7 +76,7 @@ Dikkat edilmesi gereken açık bağlama iki riskleri şunlardır:
   
 -   DLL varsa bir `DllMain` giriş noktası işlevini, işletim sistemini çağıran işlevi çağıran iş parçacığının bağlamında `LoadLibrary`. DLL, önceki arama nedeniyle işleme zaten bağlıysa, giriş noktası işlevi çağrılmaz `LoadLibrary` karşılık gelen hiçbir çağrı vardı, `FreeLibrary` işlevi. Açık bağlama sorunlara DLL kullanıyorsa bir `DllMain` iş parçacığı zaten mevcut olduğundan bir işlem için her iş parçacığı başlatma gerçekleştirmek için işlevi zaman `LoadLibrary` (veya `AfxLoadLibrary`) olarak adlandırılır başlatılmaz.  
   
--   Bir DLL olarak statik kapsam verileri bildirirse `__declspec(thread)`, onu açıkça bağlı koruma hatasına neden olabilir. DLL için bir çağrı tarafından yüklendikten sonra `LoadLibrary`, her kod başvurduğunda bu veri koruma hatasına neden olur. (Statik kapsam verileri hem genel hem de yerel statik öğeler içerir.) Bu nedenle, bir DLL oluşturduğunuzda, iş parçacığı-yerel depolamayı kullanmaktan kaçının veya dinamik olarak, DLL yükleme olası Tuzaklar hakkında DLL varsayılandır. Daha fazla bilgi için [iş parçacığında yerel depolama dinamik bağlantı kitaplığı (Windows SDK) kullanarak](http://msdn.microsoft.com/library/windows/desktop/ms686997).  
+-   Bir DLL olarak statik kapsam verileri bildirirse `__declspec(thread)`, onu açıkça bağlı koruma hatasına neden olabilir. DLL için bir çağrı tarafından yüklendikten sonra `LoadLibrary`, her kod başvurduğunda bu veri koruma hatasına neden olur. (Statik kapsam verileri hem genel hem de yerel statik öğeler içerir.) Bu nedenle, bir DLL oluşturduğunuzda, iş parçacığı-yerel depolamayı kullanmaktan kaçının veya dinamik olarak, DLL yükleme olası Tuzaklar hakkında DLL varsayılandır. Daha fazla bilgi için [iş parçacığında yerel depolama dinamik bağlantı kitaplığı (Windows SDK) kullanarak](https://msdn.microsoft.com/library/windows/desktop/ms686997).  
   
 <a name="linking-implicitly"></a>  
   

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1acc2d5918bea040e1f004e8a1d11ceee3146f89
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 61601baca7a91d76f473281184c335cc5277f815
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848625"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201860"
 ---
 # <a name="crebar-class"></a>CReBar sınıfı
 Düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu.  
@@ -105,7 +105,7 @@ BOOL AddBar(
  Bir işaretçi bir `CBitmap` çubuk barınağı arka plan üzerinde görüntülenecek nesne. Varsayılan olarak null değerini DÖNDÜRÜR.  
   
  *dwStyle*  
- Çubuk barınağı için uygulanacak içeren stil DWORD. Bkz: `fStyle` işlev açıklama Win32 yapısında [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) bant stilleri tam listesi için.  
+ Çubuk barınağı için uygulanacak içeren stil DWORD. Bkz: `fStyle` işlev açıklama Win32 yapısında [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) bant stilleri tam listesi için.  
   
  *clrFore*  
  Çubuk barınağı ön plan rengi temsil eden bir COLORREF değer.  
@@ -135,7 +135,7 @@ virtual BOOL Create(
  İşaretçi `CWnd` olan Windows penceresi durum çubuğunun üst nesne. Normalde, çerçeve penceresi.  
   
  *dwCtrlStyle*  
- Çubuk barınağı denetim stili. Varsayılan olarak, bitişik bantları çubuk barınağı denetimi içinde ayrı çizgilerle görüntüleyen RBS_BANDBORDERS. Bkz: [Rebar denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) stilleri bir listesi için Windows SDK.  
+ Çubuk barınağı denetim stili. Varsayılan olarak, bitişik bantları çubuk barınağı denetimi içinde ayrı çizgilerle görüntüleyen RBS_BANDBORDERS. Bkz: [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) stilleri bir listesi için Windows SDK.  
   
  *dwStyle*  
  Çubuk barınağı pencere stilleri.  

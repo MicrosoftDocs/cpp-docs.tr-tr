@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 784551b090f7c0c73b96b846fcc8d74017cc1e30
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1ad124f0819dbfd9cfd0117cb91fbcffba05a400
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850647"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201282"
 ---
 # <a name="commandhandler"></a>CommandHandler
 `CommandHandler` işlevi, ileti eşlemesi COMMAND_HANDLER makroda'öğesinin üçüncü parametresi tarafından tanımlanır.  
@@ -61,5 +61,5 @@ ms.locfileid: "37850647"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pencere uygulama](../atl/implementing-a-window.md)   
  [İleti eşlemeleri](../atl/message-maps-atl.md)   
- [WM_NOTIFY](http://msdn.microsoft.com/library/windows/desktop/bb775583)
+ [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
 

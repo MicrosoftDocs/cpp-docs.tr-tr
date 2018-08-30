@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e696b3c141a83882af67e72039c164a0f917d446
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d5da3f03500ccaadb4cff3be0226592e36ed3160
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611206"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200895"
 ---
 # <a name="export"></a>dışarı aktar
 
@@ -42,7 +42,7 @@ Uygulayamazsınız **dışarı** sınıfı yalnızca Genel üyeler olsa bile bir
 
 Adlandırılmamış bir dışa aktarmak istemiyorsanız **enum** veya **yapı**, ile başlayan bir ad verilir **__unnamed**<em>x</em>burada *x* sıralı bir sayıdır.
 
-Tür tanımları dışarı aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](http://msdn.microsoft.com/library/windows/desktop/aa367287) daha fazla bilgi için.
+Tür tanımları dışarı aktarma için geçerli olan temel türleri, yapılar, birleşimler, numaralandırmalar veya tanımlayıcıları yazın.  Bkz: [typedef](/windows/desktop/Midl/typedef) daha fazla bilgi için.
 
 ## <a name="example"></a>Örnek
 

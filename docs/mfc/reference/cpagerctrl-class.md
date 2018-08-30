@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56b00604f57c67ba2555f667e41501451d06fed4
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f311f7b73e72f47f363cfd5645c97b57eda5b480
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853829"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200882"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 `CPagerCtrl` Sınıfı, kapsayan pencereye uymayan bir kapsanan pencere görünümüne kaydırabilirsiniz Windows sayfalama denetimini sarar.  
@@ -88,12 +88,12 @@ class CPagerCtrl : public CWnd
 |----------|-----------------|  
 |[CPagerCtrl::Create](#create)|Belirtilen stilleriyle bir çağrı cihazı denetimi oluşturur ve geçerli ekler `CPagerCtrl` nesne.|  
 |[CPagerCtrl::CreateEx](#createex)|Belirtilen genişletilmiş stilleriyle bir çağrı cihazı denetimi oluşturur ve geçerli ekler `CPagerCtrl` nesne.|  
-|[CPagerCtrl::ForwardMouse](#forwardmouse)|Etkinleştirir veya devre dışı bırakır, iletme [WM_MOUSEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms645616) geçerli çağrı denetiminde bulunan bir pencere için iletileri.|  
+|[CPagerCtrl::ForwardMouse](#forwardmouse)|Etkinleştirir veya devre dışı bırakır, iletme [WM_MOUSEMOVE](/windows/desktop/inputdev/wm-mousemove) geçerli çağrı denetiminde bulunan bir pencere için iletileri.|  
 |[CPagerCtrl::GetBkColor](#getbkcolor)|Geçerli çağrı cihazı denetimi arka plan rengini alır.|  
 |[CPagerCtrl::GetBorder](#getborder)|Geçerli çağrı cihazı denetimi kenarlık boyutunu alır.|  
 |[CPagerCtrl::GetButtonSize](#getbuttonsize)|Geçerli çağrı cihazı denetimi düğmesi boyutunu alır.|  
 |[CPagerCtrl::GetButtonState](#getbuttonstate)|Geçerli çağrı cihazı denetimi içinde belirtilen düğmenin durumunu alır.|  
-|[CPagerCtrl::GetDropTarget](#getdroptarget)|Alır [ıdroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679) geçerli çağrı cihazı denetimi için arabirim.|  
+|[CPagerCtrl::GetDropTarget](#getdroptarget)|Alır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) geçerli çağrı cihazı denetimi için arabirim.|  
 |[CPagerCtrl::GetScrollPos](#getscrollpos)|Geçerli çağrı cihazı denetimi kaydırma konumunu alır.|  
 |[CPagerCtrl::IsButtonDepressed](#isbuttondepressed)|Geçerli çağrı cihazı denetimi belirtilen düğmesine içinde olup olmadığını belirten `pressed` durumu.|  
 |[CPagerCtrl::IsButtonGrayed](#isbuttongrayed)|Geçerli çağrı cihazı denetimi belirtilen düğmesine içinde olup olmadığını belirten `grayed` durumu.|  
@@ -112,7 +112,7 @@ class CPagerCtrl : public CWnd
   
  Örneğin, uygulamanızın tüm öğeleri göstermek için geniş değil bir araç çubuğu varsa, araç için bir çağrı cihazı denetimi atayabilir ve kullanıcıların araç çubuğuna tüm öğelerin erişmeye sağa veya sola kaydırma mümkün olacaktır. Microsoft Internet Explorer sürüm 4.0 (commctrl.dll sürüm 4.71), çağrı cihazı denetimi sunar.  
   
- `CPagerCtrl` Sınıfı türetilen [CWnd](../../mfc/reference/cwnd-class.md) sınıfı. Daha fazla bilgi ve çağrı cihazı denetimi çizim için bkz: [çağrı denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb760855).  
+ `CPagerCtrl` Sınıfı türetilen [CWnd](../../mfc/reference/cwnd-class.md) sınıfı. Daha fazla bilgi ve çağrı cihazı denetimi çizim için bkz: [çağrı denetimleri](/windows/desktop/Controls/pager-controls).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -151,8 +151,8 @@ virtual BOOL Create(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwStyle*|Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
-|[in] *dikdörtgen*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|  
+|[in] *dwStyle*|Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles) denetime uygulanacak.|  
+|[in] *dikdörtgen*|Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|  
 |[in] *pParentWnd*|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne. Bu parametre NULL olamaz.|  
 |[in] *nID*|Denetimin kimliği.|  
   
@@ -183,9 +183,9 @@ virtual BOOL CreateEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|Denetimlere uygulanması için genişletilmiş stiller Bitsel bir birleşimi. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
-|[in] *dwStyle*|Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859) denetime uygulanacak.|  
-|[in] *dikdörtgen*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|  
+|[in] *dwExStyle*|Denetimlere uygulanması için genişletilmiş stiller Bitsel bir birleşimi. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
+|[in] *dwStyle*|Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles) denetime uygulanacak.|  
+|[in] *dikdörtgen*|Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|  
 |[in] *pParentWnd*|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne. Bu parametre NULL olamaz.|  
 |[in] *nID*|Denetimin kimliği.|  
   
@@ -196,7 +196,7 @@ virtual BOOL CreateEx(
  Sayfalama denetimi oluşturmak için bildirin bir `CPagerCtrl` değişkeni,'ı çağırın [CPagerCtrl::Create](#create) veya [CPagerCtrl::CreateEx](#createex) değişken yöntemi.  
   
 ##  <a name="forwardmouse"></a>  CPagerCtrl::ForwardMouse  
- Etkinleştirir veya devre dışı bırakır, iletme [WM_MOUSEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms645616) geçerli çağrı denetiminde bulunan bir pencere için iletileri.  
+ Etkinleştirir veya devre dışı bırakır, iletme [WM_MOUSEMOVE](/windows/desktop/inputdev/wm-mousemove) geçerli çağrı denetiminde bulunan bir pencere için iletileri.  
   
 ```  
 void ForwardMouse(BOOL bForward);
@@ -209,7 +209,7 @@ void ForwardMouse(BOOL bForward);
 |[in] *bForward*|İletme fare iletileri veya yanlış true değil fare iletileri iletecek şekilde.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_FORWARDMOUSE](http://msdn.microsoft.com/library/windows/desktop/bb760867) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_FORWARDMOUSE](/windows/desktop/Controls/pgm-forwardmouse) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getborder"></a>  CPagerCtrl::GetBorder  
  Geçerli çağrı cihazı denetimi kenarlık boyutunu alır.  
@@ -222,7 +222,7 @@ int GetBorder() const;
  Geçerli sınır boyutunu piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760869) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_GETBORDER](/windows/desktop/Controls/pgm-getborder) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::GetBorder](#getborder) çağrı Denetimin kenarlık kalınlığı almak için yöntemi.  
@@ -237,10 +237,10 @@ COLORREF GetBkColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri geçerli arka plan rengi çağrı cihazı denetimi içerir.  
+ A [COLORREF](/windows/desktop/gdi/colorref) değeri geçerli arka plan rengi çağrı cihazı denetimi içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760868) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_GETBKCOLOR](/windows/desktop/Controls/pgm-getbkcolor) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::SetBkColor](#setbkcolor) kırmızı, çağrı cihazı denetimi arka plan rengini ayarlamak için yöntemi ve [CPagerCtrl::GetBkColor](#getbkcolor) yöntemi değişiklik yapıldığını onaylayın.  
@@ -258,9 +258,9 @@ int GetButtonSize() const;
  Geçerli düğmesi boyutunu piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760870) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSIZE](/windows/desktop/Controls/pgm-getbuttonsize) Windows SDK'da açıklanan ileti.  
   
- Çağrı cihazı denetimi PGS_HORZ stili varsa, düğme boyutu, sayfa düğmelerini genişliğini belirler. ve çağrı cihazı denetimi PGS_VERT stili varsa, sayfa düğmelerini yüksekliğini düğmesi boyutunu belirler. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).  
+ Çağrı cihazı denetimi PGS_HORZ stili varsa, düğme boyutu, sayfa düğmelerini genişliğini belirler. ve çağrı cihazı denetimi PGS_VERT stili varsa, sayfa düğmelerini yüksekliğini düğmesi boyutunu belirler. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).  
   
 ##  <a name="getbuttonstate"></a>  CPagerCtrl::GetButtonState  
  Geçerli çağrı cihazı denetimi belirtilen kaydırma düğmeye durumunu alır.  
@@ -273,16 +273,16 @@ DWORD GetButtonState(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tarafından belirtilen düğmenin durumu *iButton* parametresi. Durum PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED veya PGF_HOT şeklindedir. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Tarafından belirtilen düğmenin durumu *iButton* parametresi. Durum PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED veya PGF_HOT şeklindedir. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getdroptarget"></a>  CPagerCtrl::GetDropTarget  
- Alır [ıdroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679) geçerli çağrı cihazı denetimi için arabirim.  
+ Alır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) geçerli çağrı cihazı denetimi için arabirim.  
   
 ```  
 IDropTarget* GetDropTarget() const;  
@@ -294,7 +294,7 @@ IDropTarget* GetDropTarget() const;
 ### <a name="remarks"></a>Açıklamalar  
  `IDropTarget` bir arabirim uygulamak için uygulamanızda sürükle ve bırak işlemleri destekler.  
   
- Bu yöntem gönderir [PGM_GETDROPTARGET](http://msdn.microsoft.com/library/windows/desktop/bb760872) Windows SDK'da açıklanan ileti. Bu yöntemi çağıran kişi için arama sorumludur `Release` üyesi [ıdroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679) arabirimi bu arabirim artık gerekli olmadığında.  
+ Bu yöntem gönderir [PGM_GETDROPTARGET](/windows/desktop/Controls/pgm-getdroptarget) Windows SDK'da açıklanan ileti. Bu yöntemi çağıran kişi için arama sorumludur `Release` üyesi [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) arabirimi bu arabirim artık gerekli olmadığında.  
   
 ##  <a name="getscrollpos"></a>  CPagerCtrl::GetScrollPos  
  Geçerli çağrı cihazı denetimi kaydırma konumunu alır.  
@@ -307,7 +307,7 @@ int GetScrollPos() const;
  Geçerli kaydırma konumunu piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETPOS](http://msdn.microsoft.com/library/windows/desktop/bb760874) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_GETPOS](/windows/desktop/Controls/pgm-getpos) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::GetScrollPos](#getscrollpos) çağrı cihazı denetimi kaydırma konumunu almak için yöntemi. Çağrı cihazı denetimi zaten en soldaki konumu, sıfır olarak kaydırılan değil örnek kullanıyorsa [CPagerCtrl::SetScrollPos](#setscrollpos) sıfır olarak kaydırma konumunu ayarlamak için yöntemi.  
@@ -325,13 +325,13 @@ BOOL IsButtonDepressed(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen düğmesini basılı durumda ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_DEPRESSED olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_DEPRESSED olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ##  <a name="isbuttongrayed"></a>  CPagerCtrl::IsButtonGrayed  
  Geçerli çağrı cihazı denetimi belirtilen kaydırma düğmesi gri durumda olup olmadığını belirtir.  
@@ -344,13 +344,13 @@ BOOL IsButtonGrayed(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen düğmesi gri durumda ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_GRAYED olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_GRAYED olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ##  <a name="isbuttonhot"></a>  CPagerCtrl::IsButtonHot  
  Geçerli çağrı cihazı denetimi belirtilen kaydırma düğmesi etkin durumda olup olmadığını belirtir.  
@@ -363,13 +363,13 @@ BOOL IsButtonHot(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen düğmenin sıcak durumunda ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_HOT olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_HOT olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ##  <a name="isbuttoninvisible"></a>  CPagerCtrl::IsButtonInvisible  
  Geçerli çağrı cihazı denetimi belirtilen kaydırma düğmesine görünmez durumda olup olmadığını belirtir.  
@@ -382,7 +382,7 @@ BOOL IsButtonInvisible(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen düğmenin görünmez durumda ise TRUE; Aksi takdirde FALSE.  
@@ -390,7 +390,7 @@ BOOL IsButtonInvisible(int iButton) const;
 ### <a name="remarks"></a>Açıklamalar  
  Daha fazla düğmeye tıklandığında daha kapsanan pencerenin görünüme yapılamıyor çünkü kapsanan pencerenin en uzak, bir aşamaya kaydırılan olduğunda Windows kaydırma çubuğu belirli bir yönde görünmez hale getirir.  
   
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_INVISIBLE olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_INVISIBLE olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::IsButtonInvisible](#isbuttoninvisible) yöntemi, sayfalama denetimi sol ve sağ kaydırma düğmelerine görünür olup olmadığını belirlemek için.  
@@ -408,13 +408,13 @@ BOOL IsButtonNormal(int iButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).|  
+|[in] *iButton*|İçin durumu alınacağı düğmesini gösterir. Çağrı cihazı denetimi stil PGS_HORZ ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve sol düğme için sağ düğme için belirtin. Çağrı cihazı denetimi stil PGS_VERT ise PGB_TOPORLEFT PGB_BOTTOMORRIGHT ve üst düğme için alt düğmesini belirtin. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen düğmesi içinde normal durumuna ise TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_NORMAL olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](http://msdn.microsoft.com/library/windows/desktop/bb760871) ileti.  
+ Bu yöntem gönderir [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) Windows SDK'da açıklanan ileti. Daha sonra döndürülen durum PGF_NORMAL olup olmadığını sınar. Daha fazla bilgi için dönüş değeri bölümüne bakın. [PGM_GETBUTTONSTATE](/windows/desktop/Controls/pgm-getbuttonstate) ileti.  
   
 ##  <a name="recalcsize"></a>  CPagerCtrl::RecalcSize  
  Kapsanan pencere boyutunu yeniden hesaplar geçerli çağrı cihazı denetimi neden olur.  
@@ -424,7 +424,7 @@ void RecalcSize();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_RECALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760876) Windows SDK'da açıklanan ileti. Sonuç olarak, çağrı cihazı denetimi gönderir [PGN_CALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760864) kapsanan pencerenin kaydırılabilir boyutlarını almak için bildirim.  
+ Bu yöntem gönderir [PGM_RECALCSIZE](/windows/desktop/Controls/pgm-recalcsize) Windows SDK'da açıklanan ileti. Sonuç olarak, çağrı cihazı denetimi gönderir [PGN_CALCSIZE](/windows/desktop/Controls/pgn-calcsize) kapsanan pencerenin kaydırılabilir boyutlarını almak için bildirim.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::RecalcSize](#recalcsize) boyutunu yeniden hesaplar için geçerli çağrı cihazı denetimi istemek için yöntemi.  
@@ -432,7 +432,7 @@ void RecalcSize();
  [!code-cpp[NVC_MFC_CSplitButton_s2#3](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_6.cpp)]  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte [ileti yansıma](../../mfc/tn062-message-reflection-for-windows-controls.md) hesaplama gerçekleştirmek için denetimin üst iletişim kutusunu göstermek zorunda kalmadan, kendi boyutu yeniden hesaplamak çağrı cihazı denetimi etkinleştirmek için. Örnek türetilen `MyPagerCtrl` gelen sınıfı [CPagerCtrl sınıfı](../../mfc/reference/cpagerctrl-class.md), daha sonra ilişkilendirmek için ileti eşlemesi kullanır [PGN_CALCSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760864) bildirimi `OnCalcsize` bildirim işleyici. Bu örnekte, bildirim işleyici genişlik ve yükseklik çağrı cihazı denetimi sabit değerlerine göre ayarlar.  
+ Aşağıdaki örnekte [ileti yansıma](../../mfc/tn062-message-reflection-for-windows-controls.md) hesaplama gerçekleştirmek için denetimin üst iletişim kutusunu göstermek zorunda kalmadan, kendi boyutu yeniden hesaplamak çağrı cihazı denetimi etkinleştirmek için. Örnek türetilen `MyPagerCtrl` gelen sınıfı [CPagerCtrl sınıfı](../../mfc/reference/cpagerctrl-class.md), daha sonra ilişkilendirmek için ileti eşlemesi kullanır [PGN_CALCSIZE](/windows/desktop/Controls/pgn-calcsize) bildirimi `OnCalcsize` bildirim işleyici. Bu örnekte, bildirim işleyici genişlik ve yükseklik çağrı cihazı denetimi sabit değerlerine göre ayarlar.  
   
  [!code-cpp[NVC_MFC_CSplitButton_s2#8](../../mfc/reference/codesnippet/cpp/cpagerctrl-class_7.cpp)]  
   
@@ -447,13 +447,13 @@ COLORREF SetBkColor(COLORREF clrBk);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *clrBk*|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yeni arka plan rengi çağrı cihazı denetimi içeren bir değer.|  
+|[in] *clrBk*|A [COLORREF](/windows/desktop/gdi/colorref) yeni arka plan rengi çağrı cihazı denetimi içeren bir değer.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri önceki arka plan rengi çağrı cihazı denetimi içerir.  
+ A [COLORREF](/windows/desktop/gdi/colorref) değeri önceki arka plan rengi çağrı cihazı denetimi içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760878) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_SETBKCOLOR](/windows/desktop/Controls/pgm-setbkcolor) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekte [CPagerCtrl::SetBkColor](#setbkcolor) kırmızı, çağrı cihazı denetimi arka plan rengini ayarlamak için yöntemi ve [CPagerCtrl::GetBkColor](#getbkcolor) yöntemi değişiklik yapıldığını onaylayın.  
@@ -477,7 +477,7 @@ int SetBorder(int iBorder);
  Önceki kenarlık boyutunu piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_SETBORDER](http://msdn.microsoft.com/library/windows/desktop/bb760880) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_SETBORDER](/windows/desktop/Controls/pgm-setborder) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, çağrı cihazı denetimi oluşturur, ardından kullanan [CPagerCtrl::SetChild](#setchild) çok uzun bir düğme denetimi, çağrı cihazı denetimi ile ilişkilendirmek için yöntemi. Ardından örnekte [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemi çağrı denetimin yüksekliği 20 piksel olarak ayarlanacak ve [CPagerCtrl::SetBorder](#setborder) 1 piksel kenarlık kalınlığı ayarlamak için yöntemi.  
@@ -501,9 +501,9 @@ int SetButtonSize(int iButtonSize);
  Önceki düğmesi boyutunu piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_SETBUTTONSIZE](http://msdn.microsoft.com/library/windows/desktop/bb760886) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_SETBUTTONSIZE](/windows/desktop/Controls/pgm-setpos) Windows SDK'da açıklanan ileti.  
   
- Çağrı cihazı denetimi PGS_HORZ stili varsa, düğme boyutu, sayfa düğmelerini genişliğini belirler. ve çağrı cihazı denetimi PGS_VERT stili varsa, sayfa düğmelerini yüksekliğini düğmesi boyutunu belirler. Varsayılan düğme boyutu üç fourths kaydırma çubuğunun genişliği ve en az düğme boyutu 12 pikseldir. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760859).  
+ Çağrı cihazı denetimi PGS_HORZ stili varsa, düğme boyutu, sayfa düğmelerini genişliğini belirler. ve çağrı cihazı denetimi PGS_VERT stili varsa, sayfa düğmelerini yüksekliğini düğmesi boyutunu belirler. Varsayılan düğme boyutu üç fourths kaydırma çubuğunun genişliği ve en az düğme boyutu 12 pikseldir. Daha fazla bilgi için [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles).  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek, çağrı cihazı denetimi oluşturur, ardından kullanan [CPagerCtrl::SetChild](#setchild) çok uzun bir düğme denetimi, çağrı cihazı denetimi ile ilişkilendirmek için yöntemi. Ardından örnekte [CPagerCtrl::SetButtonSize](#setbuttonsize) yöntemi çağrı denetimin yüksekliği 20 piksel olarak ayarlanacak ve [CPagerCtrl::SetBorder](#setborder) 1 piksel kenarlık kalınlığı ayarlamak için yöntemi.  
@@ -524,7 +524,7 @@ void SetChild(HWND hwndChild);
 |[in] *hwndChild*|Pencereyi dahil edilmek üzere işleyin.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_SETCHILD](http://msdn.microsoft.com/library/windows/desktop/bb760884) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_SETCHILD](/windows/desktop/Controls/pgm-setchild) Windows SDK'da açıklanan ileti.  
   
  Bu yöntem, kapsanan pencerenin üst değiştirmez. yalnızca bir pencere tutucu kaydırmayı çağrı cihazı denetimi atar. Çoğu durumda, çağrı cihazı denetimi alt pencere kapsanan pencere olacaktır.  
   
@@ -547,12 +547,12 @@ void SetScrollPos(int iPos);
 |[in] *iPos*|Yeni kaydırma konumunu piksel cinsinden ölçülür.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [PGM_SETPOS](http://msdn.microsoft.com/library/windows/desktop/bb760886) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [PGM_SETPOS](/windows/desktop/Controls/pgm-setpos) Windows SDK'da açıklanan ileti.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CPagerCtrl sınıfı](../../mfc/reference/cpagerctrl-class.md)   
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [Sayfa denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb760855)
+ [Sayfa denetimleri](/windows/desktop/Controls/pager-controls)
 
 
 

@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cdd3e62915b81311450cf4d798b04f8df30492ff
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 29a5209eb05958861a5c021f48bff1bf36654115
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884606"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205450"
 ---
 # <a name="options-atl-active-server-page-component-wizard"></a>Seçenekler, ATL Active Server Page bileşeni Sihirbazı
 Daha fazla verimlilik ve nesne için hata desteğe yönelik tasarlanacağını ATL Active Server sayfa bileşeni Sihirbazı, bu sayfayı kullanın.  
@@ -35,14 +35,14 @@ Daha fazla verimlilik ve nesne için hata desteğe yönelik tasarlanacağını A
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**Tek**|Nesne tek iş parçacıklı model kullandığını belirtir. Tek iş parçacığı modelinde, bir nesneyi her zaman birincil COM iş parçacığında çalışır. Bkz: [Single-Threaded apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms680112) ve [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) daha fazla bilgi için.|  
-|**Grup**|Nesne grubu iş parçacığı kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her nesne bir boş iş parçacıklı bileşen nesne ömrü için kendi iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı, birden çok nesne için kullanılabilir. Her grup, belirli bir iş parçacığına bağlıdır ve bir Windows ileti pompası (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms680112) daha fazla bilgi için.|  
+|**Tek**|Nesne tek iş parçacıklı model kullandığını belirtir. Tek iş parçacığı modelinde, bir nesneyi her zaman birincil COM iş parçacığında çalışır. Bkz: [Single-Threaded apartmanlar](/windows/desktop/com/single-threaded-apartments) ve [Inprocserver32](/windows/desktop/com/inprocserver32) daha fazla bilgi için.|  
+|**Grup**|Nesne grubu iş parçacığı kullandığını belirtir. Eşdeğer tek iş parçacığı grubu. Her nesne bir boş iş parçacıklı bileşen nesne ömrü için kendi iş parçacığı için bir grup atanır; Ancak, birden çok iş parçacığı, birden çok nesne için kullanılabilir. Her grup, belirli bir iş parçacığına bağlıdır ve bir Windows ileti pompası (varsayılan) sahiptir.<br /><br /> Bkz: [Single-Threaded apartmanlar](/windows/desktop/com/single-threaded-apartments) daha fazla bilgi için.|  
 |**Her ikisi de**|Nesne grubu ya da boş iş parçacığı, oluşturulduktan bir iş parçacığının hangi tür gelen bağlı olarak kullanabileceğiniz belirtir.|  
-|**Ücretsiz**|Nesneyi serbest iş parçacığı oluşturma kullandığını belirtir. Ücretsiz iş parçacığı için bir çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı apartmanlar](http://msdn.microsoft.com/library/windows/desktop/ms693421) daha fazla bilgi için.|  
+|**Ücretsiz**|Nesneyi serbest iş parçacığı oluşturma kullandığını belirtir. Ücretsiz iş parçacığı için bir çoklu iş parçacığı apartman modeli eşdeğerdir. Bkz: [birden çok iş parçacıklı apartmanlar](/windows/desktop/com/multithreaded-apartments) daha fazla bilgi için.|  
 |**Nötr**|Nesne birden çok iş parçacıklı apartmanlar yönelik yönergeleri takip eder, ancak iş parçacığı herhangi bir türden yürütebilirsiniz belirtir.|  
   
  **Toplama**  
- Nesne kullanıp kullanmadığını gösteren [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558). Toplama nesnesine hangi istemcilere göstermek için arabirimleri seçer ve toplama nesnesi bunlar yönetimlerini uygularsanız gibi arabirimler gösterilir. Toplama nesnesi, istemciler yalnızca toplama nesnesi ile iletişim kurar.  
+ Nesne kullanıp kullanmadığını gösteren [toplama](/windows/desktop/com/aggregation). Toplama nesnesine hangi istemcilere göstermek için arabirimleri seçer ve toplama nesnesi bunlar yönetimlerini uygularsanız gibi arabirimler gösterilir. Toplama nesnesi, istemciler yalnızca toplama nesnesi ile iletişim kurar.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  

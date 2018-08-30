@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f595a048d9f2e5795f69b7d1da6c4c6cf4ca0fa2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 51472ba9c0bc15d6b12ddcd3a3b88b65a3a2682b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608686"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205202"
 ---
 # <a name="mbcs-support-in-visual-c"></a>Visual C++'ta MBCS Desteği
 Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tümleşik Kaynak Kod Düzenleyicisi, hata ayıklayıcı ve komut satırı araçları dahil) Visual C++ geliştirme MBCS özellikli, bellek penceresi dışında sistemidir.  
@@ -47,7 +47,7 @@ Bir MBCS etkinleştirilmiş Windows sürümünde çalıştırdığınızda (tüm
  Bunu yapmak uygun olduğu yerlerde visual C++ çift baytlık karakterler kabul eder. Bu yol adları ve dosya adlarını iletişim kutuları ve Visual C++ kaynak Düzenleyicisi (örneğin, statik metin iletişim kutusu düzenleyicisinde) ve simge Düzenleyicisi statik metin girişleri metin girişleri içerir. Ayrıca, önişlemci bazı çift bayt yönergeleri tanır; Örneğin, dosya adları `#include` deyimleri ve bağımsız değişkenleri olarak `code_seg` ve `data_seg` pragmaları. Kaynak Kod Düzenleyicisi'nde çift baytlık karakterler yorumlar ve dize değişmez değerleri, olmayan C/C++ Dil öğelerini rağmen (örneğin, değişken adları) olarak kabul edilir.  
   
 ##  <a name="_core_support_for_the_input_method_editor_.28.ime.29"></a> Giriş Yöntemi Düzenleyicisi (IME) için destek  
- MBCS (örneğin, Japonya) normalde kullandığınız Doğu Asya pazarları için hem tek ve çift baytlık karakterler girerek Windows IME desteği için yazılmış uygulamalar. Visual C++ geliştirme ortamına IME için tam destek içerir. Daha fazla bilgi için [IME örnek: denetim IME modu ve uygulama IME Düzey 3'ü nasıl gösterir](http://msdn.microsoft.com/87ebdf65-cef0-451d-a6fc-d5fb64178b14).  
+ MBCS (örneğin, Japonya) normalde kullandığınız Doğu Asya pazarları için hem tek ve çift baytlık karakterler girerek Windows IME desteği için yazılmış uygulamalar. Visual C++ geliştirme ortamına IME için tam destek içerir. Daha fazla bilgi için [IME örnek: denetim IME modu ve uygulama IME Düzey 3'ü nasıl gösterir](https://msdn.microsoft.com/87ebdf65-cef0-451d-a6fc-d5fb64178b14).  
   
  Japonca klavye Kanji karakter doğrudan desteklemez. IME diğer Japonca alfabelere (Romaji, Katakana veya Hiragana) birinde, olası Kanji gösterimleri girilen bir ses dizesi dönüştürür. Belirsizlik varsa, birkaç alternatif arasından seçebilirsiniz. Hedeflenen Kanji karakter seçtikten sonra iki IME geçirir `WM_CHAR` iletileri denetleme uygulama.  
   

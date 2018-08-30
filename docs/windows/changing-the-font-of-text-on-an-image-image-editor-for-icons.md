@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f5a86748d5a51e433e2e90450593ef1bac1c8de3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7a8f06ae0021a95e9b4ae40506cfc91d6a8ae99b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596287"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200820"
 ---
 # <a name="changing-the-font-of-text-on-an-image-image-editor-for-icons"></a>Görüntüdeki Metnin Yazı Tipini Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 
@@ -32,7 +32,7 @@ Aşağıdaki yordam nasıl bir örneğidir:
 
 ### <a name="to-change-the-font-of-text-on-an-image"></a>Görüntüdeki metnin yazı tipini değiştirmek için
 
-1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [bir Windows uygulaması projesi oluşturma](http://msdn.microsoft.com/b2f93fed-c635-4705-8d0e-cf079a264efa). [Windows Forms uygulaması şablonu](http://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) adlı bir dosya ekler `app.ico` projenize varsayılan olarak.
+1. Bir C++ Windows Forms uygulaması oluşturun. Ayrıntılar için bkz [bir Windows uygulaması projesi oluşturma](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5\(v=vs.100\)). [Windows Forms uygulaması şablonu](https://msdn.microsoft.com/1babdebf-ab3f-4a64-a608-98499a5b9cea) adlı bir dosya ekler `app.ico` projenize varsayılan olarak.
 
 2. İçinde **Çözüm Gezgini**, dosya n app.ico çift tıklayın. [Resim Düzenleyicisi](../windows/image-editor-for-icons.md) açılır.
 

@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a53b865d054948d9ee22acbfbec0b6ddf807ec0c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e63f13c07ceb6220ba3dc8e7932c7357ed649188
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954766"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199244"
 ---
 # <a name="priorityqueue-class"></a>priority_queue Sınıfı
 
@@ -50,11 +50,14 @@ class priority_queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* priority_queue içinde depolanacak öğe veri türü.
+*Türü*<br/>
+ Priority_queue içinde depolanacak öğe veri türü.
 
-*Kapsayıcı* priority_queue uygulamak için kullanılan temel alınan kapsayıcı türü.
+*Kapsayıcı*<br/>
+ Priority_queue uygulamak için kullanılan temel alınan kapsayıcı türü.
 
-*Karşılaştırma* iki öğenin değerlerini priority_queue kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul **daha az***\<*** typename** *kapsayıcı ***:: value_type*** >* varsayılan değerdir.
+*Compare*<br/>
+ İki öğenin değerlerini priority_queue kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<typename Container::value_type>` varsayılan değerdir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -249,15 +252,20 @@ priority_queue(InputIterator first, InputIterator last, const Traits&_comp, cons
 
 ### <a name="parameters"></a>Parametreler
 
-*_ comp* türündeki karşılaştırma işlevi **constTraits** işlevi temel kapsayıcının karşılaştırmak için varsayılan olarak priority_queue içinde öğeleri sıralamak için kullanılan.
+*_ comp*<br/>
+ Karşılaştırma işlevi türü **constTraits** işlevi temel kapsayıcının karşılaştırmak için varsayılan olarak priority_queue içinde öğeleri sıralamak için kullanılan.
 
-*_Cont* oluşturulmuş priority_queue olduğu kopyası olacak temel kapsayıcı.
+*_Cont*<br/>
+ Oluşturulan priority_queue kopyası olacak olduğu temel kapsayıcı.
 
-*doğru* priority_queue oluşturulmuş kümesinin olduğu bir kopyası olacak.
+*sağ*<br/>
+ Priority_queue oluşturulmuş kümesi kopyası olacak olduğu.
 
-*İlk* kopyalanacak öğe aralığındaki ilk öğenin konumu.
+*ilk*<br/>
+ Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*Son* kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*Son*<br/>
+ Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -388,7 +396,8 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* priority_queue üstüne eklenen öğe.
+*VAL*<br/>
+ Priority_queue üstüne eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -18,28 +18,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 615fc3a68153386174ce0477ee5c946f50f37d90
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cecc47bc4633aa40f38bda23d1aee0007ea34ab4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385090"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201888"
 ---
 # <a name="argument-description"></a>Bağımsız Değişken Tanımı
-`argc` Parametresinde **ana** ve **wmain** işlevleri kaç tane bağımsız değişkenleri komut satırından programa geçirilen belirten bir tamsayı değil. Program adı değerini bağımsız değişken olarak kabul edilir beri `argc` en az biri.  
+`argc` Parametresinde **ana** ve **wmain** işlevleri, kaç tane bağımsız değişken, komut satırından programa geçirilen belirten bir tamsayı. Program adı değeri bağımsız değişken olarak kabul edilir beri `argc` en az biri.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `argv` Parametresi null ile sonlandırılmış dizeler program değişkenleri temsil eden işaretçiler bir dizisidir. Her öğe için bağımsız değişken bir dize gösterimini dizi noktalarının geçirilen **ana** (veya **wmain**). (Dizileri hakkında daha fazla bilgi için bkz: [dizi bildirimleri](../c-language/array-declarations.md).) `argv` Parametre türü işaretçileri dizisi olarak ya da bildirilebilir `char` (`char *argv[]`) veya işaretçi türü için bir işaretçi olarak `char` (`char **argv`). İçin **wmain**, `argv` parametre türü işaretçileri dizisi olarak ya da bildirilebilir `wchar_t` (`wchar_t *argv[]`) veya işaretçi türü için bir işaretçi olarak `wchar_t` (`wchar_t **argv`).  
+ `argv` Parametresi null ile sonlandırılmış dizeler program bağımsız değişkenleri temsil eden işaretçileri dizisidir. Geçirilen her öğe için bir bağımsız değişken bir dize gösterimini dizi noktaları **ana** (veya **wmain**). (Diziler hakkında daha fazla bilgi için bkz: [dizi bildirimleri](../c-language/array-declarations.md).) `argv` Parametre türü işaretçiler dizisi olarak ya da bildirilebilir `char` (`char *argv[]`) veya türü işaretçiler için bir işaretçi olarak `char` (`char **argv`). İçin **wmain**, `argv` parametre türü işaretçiler dizisi olarak ya da bildirilebilir `wchar_t` (`wchar_t *argv[]`) veya türü işaretçiler için bir işaretçi olarak `wchar_t` (`wchar_t **argv`).  
   
- Kural tarafından `argv` **[0]** ile program çağrılır komutu.  Ancak, bir işlemi kullanarak oluşturma olası [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms682425) ve birinci ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** olmayabilir yürütülebilir dosya adı; kullanmak [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir dosya adı alınamadı.  
+ Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createprocessa) ve ilk ve ikinci bağımsız kullanıyorsanız (`lpApplicationName` ve `lpCommandLine`), `argv` **[0]** çalışmıyor olabilir yürütülebilir dosya adı; kullanma [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adını alamadı.  
   
- Son işaretçisi (`argv[argc]`) olan **NULL**. (Bkz [getenv](../c-runtime-library/reference/getenv-wgetenv.md) içinde *çalışma zamanı kitaplığı başvurusu* ortam değişkeni bilgisi almak için alternatif bir yöntem için.)  
+ Son işaretçi (`argv[argc]`) olan **NULL**. (Bkz [getenv](../c-runtime-library/reference/getenv-wgetenv.md) içinde *çalışma zamanı kitaplığı başvurusu* ortam değişkeni bilgilerini almak için alternatif bir yöntem için.)  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- `envp` Parametresi bir işaretçidir kullanıcının ortam değişkenlerini ayarlama değerlerini temsil eden bir null ile sonlandırılmış dizeler dizisi. `envp` Parametresi, bir dizi işaretçiler olarak bildirilebilir `char` (`char *envp[]`) veya işaretçileri gösteren bir işaretçi olarak `char` (`char **envp`). İçinde bir **wmain** işlevi, `envp` parametresi, bir dizi işaretçiler olarak bildirilebilir `wchar_t` (`wchar_t *envp[]`) veya işaretçileri gösteren bir işaretçi olarak `wchar_t` (`wchar_t **envp`). Dizinin sonuna tarafından belirtilen bir **NULL** \*işaretçi. Ortam bloğu geçirilen Not **ana** veya **wmain** geçerli ortamda "dondurulmuş" bir kopyasıdır. Ortam _ çağrısıyla daha sonra değiştirirseniz**putenv** veya `_wputenv`, geçerli ortamı (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` veya `_wenviron` değişkenler) değiştirir, ancak tarafından için blok işaret `envp` değişmez. `envp` ANSI C, ancak içinde değil C++ uyumlu bir parametredir.  
+ `envp` Parametresi, bir kullanıcının Ortam değişkenlerinde ayarlanan değerleri temsil eden boş sonlandırılmış dize dizisine bir işaretçi. `envp` Parametresi, bir işaretçiler dizisi olarak bildirilebilir `char` (`char *envp[]`) veya işaretçilerinin işaretçisi olarak `char` (`char **envp`). İçinde bir **wmain** işlevi `envp` parametresi, bir işaretçiler dizisi olarak bildirilebilir `wchar_t` (`wchar_t *envp[]`) veya işaretçilerinin işaretçisi olarak `wchar_t` (`wchar_t **envp`). Dizinin sonuna tarafından belirtilen bir **NULL** \*işaretçi. Öğesine geçirilen ortam bloğu Not **ana** veya **wmain** geçerli ortamın "dondurulmuş" bir kopyasıdır. Daha sonra ortamı _ çağrısıyla değiştirirseniz**putenv** veya `_wputenv`, geçerli ortam (tarafından döndürülen `getenv` / `_wgetenv` ve `_environ` veya `_wenviron` değişkenler) değişir, ancak blok tarafından işaret edilen `envp` değişmez. `envp` ANSI C ancak C++ ' uyumlu bir parametredir.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

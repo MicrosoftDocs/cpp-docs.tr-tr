@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ff939abc93c38be198bf6edb21cbb3e3dc9fbaa
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 6a1c3e55f6045b0096ef614e1d3b4b054db60265
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900858"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202401"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 
@@ -837,7 +837,7 @@ Varsayılan uygulama S_OK döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntemin çağırdığı [ShellExecute](http://msdn.microsoft.com/library/windows/desktop/bb762153) önce S_OK döndürür.
+Bu yöntemin çağırdığı [ShellExecute](/windows/desktop/api/shellapi/nf-shellapi-shellexecutea) önce S_OK döndürür.
 
 Türetilen bir sınıfta özel davranışı uygulamak için bu yöntemi yok sayın.
 
@@ -1619,7 +1619,7 @@ Değerleri *wParam* ve *lParam* belirli oluşturulan iletide bağlıdır. Ya da 
 |TDN_CREATED|Kullanılmadı.|Kullanılmadı.|
 |TDN_NAVIGATED|Kullanılmadı.|Kullanılmadı.|
 |TDN_BUTTON_CLICKED|Komut düğmesi denetim kimliği.|Kullanılmadı.|
-|TDN_HYPERLINK_CLICKED|Kullanılmadı.|A [LPCWSTR](http://msdn.microsoft.com/library/windows/desktop/aa383751) bağlantısını içeren yapısı.|
+|TDN_HYPERLINK_CLICKED|Kullanılmadı.|A [LPCWSTR](/windows/desktop/WinProg/windows-data-types) bağlantısını içeren yapısı.|
 |TDN_TIMER|Bu yana milisaniye cinsinden süre `CTaskDialog` oluşturuldu veya Zamanlayıcı sıfırlandı.|Kullanılmadı.|
 |TDN_DESTROYED|Kullanılmadı.|Kullanılmadı.|
 |TDN_RADIO_BUTTON_CLICKED|Radyo düğmesi kimliği.|Kullanılmadı.|

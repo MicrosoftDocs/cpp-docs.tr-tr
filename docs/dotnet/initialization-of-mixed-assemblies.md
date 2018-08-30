@@ -21,62 +21,62 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 389246b6b002204260170fb44680c2756cd7aa6b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9004d62caa5368294a5a53e4e2587da05d1d495c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33137897"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204548"
 ---
 # <a name="initialization-of-mixed-assemblies"></a>Karışık Derlemeleri Başlatma
 
-Windows geliştiricileri her zaman olmalıdır yükleyici kilidi dikkatli sırasında kodu çalıştırırken `DllMain`. Ancak, C + ile ilgilenirken oyuna gelen bazı hususlar vardır +/ clr karma mod derlemeler.
+Windows geliştiricileri her zaman olmalıdır yükleyici kilidi temkinli sırasında kod çalıştırırken `DllMain`. Ancak, C + ile ilgilenirken oyuna gelen bazı ek hususlar vardır +/ clr karma mod derlemeleri.
 
-İçindeki kod [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583) CLR erişemezler gerekir. Bunun anlamı `DllMain` yönetilen işlevler hiçbir çağrı yapmak, doğrudan veya dolaylı olarak; hiç bir yönetilen kod bildirilen veya uygulanan `DllMain`; ve herhangi bir atık toplama veya otomatik kitaplık yükleme içinde gerçekleşeceğini `DllMain` .
+İçinde kod [DllMain](/windows/desktop/Dlls/dllmain) CLR erişmemelidir. Diğer bir deyişle `DllMain` yönetilen işlevlerine çağrı yapmanız gerekir, doğrudan veya dolaylı olarak; yönetilen kod yok bildirilemez veya uygulanan `DllMain`; ve çöp toplama ya da otomatik kitaplık yükleme içinde gerçekleşmesi gereken `DllMain` .
   
 ## <a name="causes-of-loader-lock"></a>Yükleyici kilidi nedenleri
 
-.NET platformu başlanmasıyla yürütme Modülü (EXE ya da DLL) yüklenmesi için iki ayrı mekanizma vardır: biri yönetilmeyen modülleri için kullanılır, Windows için ve biri için .NET ortak dil çalışma zamanı (.NET derlemelerini yükleyen CLR). Karışık DLL yükleme sorunu Microsoft Windows işletim sistemi yükleyicisi çevresinde toplanır.
+.NET platformu sunulmasıyla birlikte bir yürütme Modülü (EXE veya DLL) yüklenmesi için iki farklı mekanizma vardır: biri yönetilmeyen modüller için kullanılan Windows ve diğeri için .NET ortak dil çalışma zamanı (.NET derlemeleri yükleyen CLR). Karışık DLL yükleme sorunu Microsoft Windows işletim sistemi yükleyicisi çevresinde toplanır.
 
-Bir işlemine yalnızca .NET yapıları içeren bir derleme yüklendiğinde, CLR yükleyicisi tüm gerekli yükleme ve başlatma görevlerini kendisi gerçekleştirebilirsiniz. Yerel kod ve verileri içerebileceğinden ancak karışık derlemeler için Windows Yükleyici de kullanılması gerekir.
+Bir işleme yalnızca .NET yapıları içeren bir derleme yüklendiğinde, CLR yükleyici tüm gerekli yükleme ve başlatma görevleri kendisini gerçekleştirebilirsiniz. Yerel kod ve veriler içerebileceğinden ancak karışık derlemeler için Windows Yükleyici de kullanılması gerekir.
 
-Windows Yükleyici kod erişebileceği erişim kodu ya da bu DLL verileri, başlatılmadan önce ve kısmen başlatıldığında hiçbir kod nedenle DLL yükleyebilir güvence altına alır. Bunu yapmak için Windows Yükleyici Modülü başlatma sırasında güvenli olmayan erişimi engelleyen ("Yükleyici kilidi" olarak da adlandırılır) bir işlem genel kritik bölüm kullanır. Sonuç olarak, yükleme işlemi birçok Klasik kilitlenme senaryosuna karşı savunmasızdır. Karışık derlemeler için aşağıdaki iki senaryo kilitlenme riski artırır:
+Windows Yükleyici kod erişebileceği erişim kodu veya DLL içindeki verileri, başlatılmadan önce ve kısmen başlatıldığında kod nedenle DLL yükleyebilir güvence altına alır. Bunu yapmak için Windows Yükleyici Modülü başlatma sırasında güvenli olmayan erişimi engelleyen (genellikle "Yükleyici kilidi" olarak da adlandırılır) bir işlem genel kritik bölüm kullanır. Sonuç olarak, yükleme işlemi için birçok Klasik kilitlenme senaryoları daha savunmasızdır. Karışık derlemeler için aşağıdaki iki senaryoda kilitlenme riski artırın:
 
-- Kullanıcıların Microsoft Ara dili (MSIL) Yükleyici kilidi tutulurken derlenmiş işlevleri yürütmeyi çalışırsanız, ilk (gelen `DllMain` veya örneğin statik başlatıcılar içinde), bu kilitlenmeye neden olabilir. MSIL işlevi türü yüklenmemiş bir bütünleştirilmiş başvuruda bulunan bir durum düşünün. CLR yükleyici kilitte Windows Yükleyici gerektirebilecek Bu derlemeyi otomatik olarak yüklemeye çalışacaktır. Yükleyici kilidi çağrı sırası daha önce kodda tarafından zaten kilitli olduğundan, bir kilitlenme sonuçlanır. Ancak, yükleyici kilidi altında MSIL yürütme kilitlenme, tanılamak ve gidermek bu senaryo zorlaşır oluşacağını garanti etmez. Bazı durumlarda, başvurulan tür DLL içerdiği gibi hiçbir yerel yapılar ve tüm bağımlılıkları hiçbir yerel yapılar yükleyicisi başvurulan türün .NET derleme yükleme için gerekli olmayan Windows içerir. Ayrıca, gerekli derleme veya karma yerel/.NET bağımlılıklarını zaten başka bir kod tarafından yüklenmiş olabilir. Sonuç olarak, kilitlenmenin tahmin etmek zordur ve hedef makine yapılandırmasına bağlı olarak değişebilir.
+- Yükleyici kilidi tutulurken, Microsoft Ara dili (MSIL) derlenen işlevlerde yürütmek kullanıcıların çalışırsanız, ilk (gelen `DllMain` veya örneğin statik başlatıcılar), bu, kilitlenmeye neden olabilir. MSIL işlevi yüklenmemiş bir derlemedeki bir türe başvuran bir durum düşünün. CLR yükleyici kilidi engellemek için Windows Yükleyici gerektirebilecek Bu derlemeyi otomatik olarak yük dener. Yükleyici kilidi zaten daha önce çağrı sırası içindeki kod tarafından kilitli olduğundan, karşılıklı bir kilitlenme oluşur. Ancak, yükleyici kilidi altında MSIL yürütmek karşılıklı bir kilitlenme, bu senaryo tanılamak ve gidermek daha zor hale gerçekleşeceğini garanti etmez. Bazı durumlarda, burada DLL başvurulan tür hiçbir yerel yapılar ve tüm bağımlılıklarını içeren gibi hiçbir yerel yapıları, yükleyici başvurulan türü .NET derlemesini yüklemek için gerekli olmayan Windows içerir. Ayrıca, gerekli bütünleştirilmiş kodu veya karma yerel/.NET bağımlılıklarını zaten başka bir kod tarafından yüklenmiş olabilir. Sonuç olarak, kilitlenmenin tahmin etmek zor olabilir ve hedef makine yapılandırmasına bağlı olarak değişebilir.
 
-- İkinci olarak, DLL'ler sürüm 1.0 ve 1.1 .NET Framework'ün yüklerken, yükleyici kilidi düzenlenmemiş olduğunu ve yükleyici kilidi altında geçersiz çeşitli eylemleri CLR varsayılır. Yükleyici kilidi düzenlenmemiş varsayarak bir geçerli önermesinin .NET DLL'leri varsayılır, ancak Karışık DLL'ler yerel başlatma yordamları yürüttüğünden, yerel Windows Yükleyicisi ve bu nedenle yükleyici kilidi gerektirir. Sonuç olarak, geliştirici DLL başlatma sırasında MSIL işlevleri yürütme girişiminde olsa bile, vardı hala sürüm 1.0 ve 1.1 .NET Framework'ün belirleyici kilitlenme küçük olasılığını.
+- İkinci olarak, DLL'ler sürümleri 1.0 ve 1.1 .NET Framework'ün yüklerken, yükleyici kilidi düzenlenmemiş olduğunu ve yükleyici kilidi altında geçersiz çeşitli eylemleri CLR varsayılır. Yükleyici kilidi tutulmadı varsayılarak bir geçerli önermesinin .NET DLL'leri varsayılır, ancak karışık DLL yerel başlatma yordamlarını yürüttüğünden, yerel Windows Yükleyici'yi ve bu nedenle yükleyici kilidi gerektirir. Sonuç olarak, geliştirici MSIL işlevleri DLL başlatma sırasında yürütme girişiminde bile oluştu hala sürümleri 1.0 ve 1.1 .NET Framework'ün belirleyici olmayan kilitlenme küçük olanağı.
 
-Tüm gerekircilik karışık DLL yükleme işlemi kaldırılmıştır. Bu, bu değişiklikler ile gerçekleştirilmiştir:
+Karışık DLL yükleme işlemi tüm gerekircilik kaldırıldı. Bu değişikliklerle bu gerçekleştirilebilir:
 
-- CLR Karışık DLL'ler yüklerken yanlış varsayımlar artık hale getirir.
+- CLR, bundan böyle karışık DLL yüklenirken yanlış varsayım yapmaz.
 
-- Yönetilen ve yönetilmeyen başlatma iki ayrı ve farklı aşamada gerçekleştirilir. Yönetilmeyen başlatma kurulur ilk (DllMain) ve yönetilen başlatma kurulur daha sonra üzerinden bir. NET desteklenen yapı olarak adlandırılan bir *.cctor*. İkincisi kullanıcıya tamamen saydam olacak sürece **/Zl** veya **/NODEFAULTLIB** kullanılır. Bkz:[/NODEFAULTLIB (kitaplıkları yoksay)](../build/reference/nodefaultlib-ignore-libraries.md) ve [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) daha fazla bilgi için.
+- Yönetilen ve yönetilmeyen başlatma ayrı ve farklı iki aşamada gerçekleştirilir. Yönetilmeyen başlatma gerçekleşir ilk (DllMain) ve yönetilen başlatma gerçekleşir aracılığıyla daha sonra bir. NET desteklenen yapısı adı verilen bir *.cctor*. Son kullanıcıya tamamen şeffaftır sürece **/Zl** veya **/nodefaultlıb** kullanılır. Bkz:[/nodefaultlıb (kitaplıkları yoksay)](../build/reference/nodefaultlib-ignore-libraries.md) ve [/Zl (varsayılan kitaplık adını atla)](../build/reference/zl-omit-default-library-name.md) daha fazla bilgi için.
 
-Yükleyici kilidi hala oluşabilir, ancak şimdi onu tekrarlanarak meydana gelir ve algılanır. Varsa `DllMain` MSIL yönergeler içeren derleyici uyarısı oluşturur [Derleyici Uyarısı (düzey 1) C4747](../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md). Ayrıca, CRT veya CLR algılamak ve yükleyici kilidi altında MSIL yürütmeyi denediğinde rapor çalışacaktır. CRT algılama sonuçları çalışma zamanında tanılama C çalışma zamanı hatası R6033 görülmesine neden olur.
+Yükleyici kilidi ortaya çıkabilir, ancak artık tekrarlanarak gerçekleşir ve algılanır. Varsa `DllMain` MSIL yönergeleri içeren bir derleyici uyarısı oluşturur [Derleyici Uyarısı (düzey 1) C4747](../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md). Ayrıca, CRT veya CLR algılayıp yükleyici kilidi altında MSIL yürütmek için rapor çalışacaktır. CRT algılama sonuçları çalışma zamanında tanılama C çalışma zamanı hatası R6033.
 
-Bu belgenin geri kalanında MSIL yükleyici kilidi altında yürütebilir kalan senaryolar çözümler için her biri bu senaryoları ve hata ayıklama teknikleri altında sorunu açıklanır.
+Bu belgenin geri kalanında MSIL yükleyici kilidi altında yürütebilir kalan senaryoları çözümler için sorun altında her biri bu senaryoları ve hata ayıklama teknikleri açıklar.
 
 ## <a name="scenarios-and-workarounds"></a>Senaryolar ve geçici çözümler
 
-Altında kullanıcı kodu yükleyici kilidi altında MSIL yürütebilir birçok farklı durum vardır. Geliştirici, kullanıcı kod uygulamasının bu şartların her biri altında MSIL yönergeleri yürütmek denemez emin olmalısınız. Aşağıdaki alt bölümleri yaygın durumlarda sorunların nasıl giderileceğini tartışması tüm olanaklarını açıklar.
+Altında kullanıcı kod yükleyici kilidi altında MSIL yürütebilir birkaç farklı durumlar vardır. Geliştirici, kullanıcı kodu uygulama her Bu koşullar altında MSIL yönergeleri yürütmek denemez emin olmanız gerekir. Aşağıdaki alt bölümlerde tüm olasılıkları en yaygın durumlarda sorunların nasıl giderileceğini açıklar.
 
 ### <a name="dllmain"></a>DllMain
 
-`DllMain` İşlevi bir DLL için bir kullanıcı tanımlı giriş noktasıdır. Aksi takdirde, kullanıcının belirttiği sürece `DllMain` bir işlem veya iş parçacığı ekler veya içeren DLL'den ayırır her zaman çağrılır. Yükleyici kilidi tutulan olsa da, kullanıcı tarafından sağlanan Hayır bu çağrıyı meydana gelebileceğinden `DllMain` işlevi için MSIL derlenmiş. İşlev çağrısı ağacında köklü Ayrıca, `DllMain` için MSIL derlenebilir. Tanımlayan kod bloğunu Burada, sorunları gidermek için `DllMain` #pragma ile değiştirilmesi gereken `unmanaged`. Aynı her işlev için yapılmalıdır, `DllMain` çağrıları.
+`DllMain` İşlevi, bir kullanıcı tanımlı giriş noktası bir DLL için kullanılabilir. Aksi takdirde, kullanıcının belirttiği sürece `DllMain` bir işlem veya iş parçacığı ekler veya içeren DLL dosyasından ayırır her zaman çağrılır. Bu çağrıyı yükleyici kilidi tutulan karşın, kullanıcı tarafından sağlanan yok oluşabilir beri `DllMain` işlevi, MSIL olarak derlenmiş. Hiçbir işlev çağrı ağacı köklü ayrıca `DllMain` MSIL olarak derlenmiş. Burada, sorunları tanımlar kod bloğu çözmek için `DllMain` #pragma ile değiştirilmelidir `unmanaged`. Her işlev için aynı yapılmalıdır, `DllMain` çağırır.
 
-Burada, bu işlevler çağıran başka bağlamlarda için MSIL uygulaması gerektiren bir işlevini çağırmanız gerekir durumlarda, çoğaltma stratejisi hem .NET hem de aynı işlevi yerel sürümünü oluşturulduğu kullanılabilir.
+Burada, bu işlevlerin diğer arama bağlamı için MSIL uygulaması gerektiren bir işlevini çağırmanız gerekir durumlarda, bir çoğaltma stratejisi hem .NET hem de aynı işlevi yerel sürümünü oluşturulduğu kullanılabilir.
 
-Alternatif olarak, varsa `DllMain` gerekli değil veya bu loader altında yürütülecek gerekli değildir, kilitleme, kullanıcı tarafından sağlanan `DllMain` uygulaması kaldırılabilir, sorunun ortadan kaldırır.
+Alternatif olarak, varsa `DllMain` gerekli değil veya bunun altında yükleyici yürütülecek gerekli değildir, kilitleme, kullanıcı tarafından sağlanan `DllMain` uygulama kaldırılabilir, sorunu ortadan kaldırır.
 
-DllMain doğrudan MSIL yürütme girişiminde bulunursa [Derleyici Uyarısı (düzey 1) C4747](../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md) neden olur. Ancak, derleyici, burada DllMain sırayla MSIL yürütmeyi denediğinde başka bir modülde bir işlevi çağırdığı durumları algılayamaz.
+DllMain MSIL doğrudan yürütmeyi denerse [Derleyici Uyarısı (düzey 1) C4747](../error-messages/compiler-warnings/compiler-warning-level-1-c4747.md) neden olur. Ancak, derleyici burada DllMain sırayla MSIL yürütmeyi denerse, başka bir modül içinde bir işlevi çağırır durumları algılayamaz.
 
 Bu senaryo hakkında daha fazla bilgi için lütfen "Engelleri için tanılama" bakın.
 
 ### <a name="initializing-static-objects"></a>Statik Nesneleri Başlatma
 
-Dinamik bir başlatıcı gerekliyse statik nesneleri başlatma kilitlenmeyle sonuçlanabilir. Bu yüzden kilitlenme riski statik değişken yalnızca derleme zamanında bilinen bir değere atandığında gibi basit durumlar için hiç dinamik başlatma gereklidir. Ancak, işlev çağrıları, oluşturucu çağırmaları veya adresindeki değerlendirilemez ifadeleri tarafından başlatılan statik değişkenler derleme zamanı tüm modülü başlatma sırasında yürütmek için kodu gerektirir.
+Statik nesneleri başlatma, dinamik bir başlatıcı gerekiyorsa kilitlenmeyle neden olabilir. Kilitlenme riski olması için bir statik değişken yalnızca derleme zamanında bilinen bir değere atandığında gibi basit durumlar, hiçbir dinamik başlatma gereklidir. Bununla birlikte, işlev çağrıları, oluşturucu çağrılarını veya değerlendirilemeyen ifadeler tarafından başlatılmış statik değişkenler derleme zamanı tüm modülü başlatma sırasında yürütmek için kodu gerektirir.
 
-Aşağıdaki kod, dinamik başlatma gerektiren statik başlatıcıları örnekleri gösterir: bir işlev çağrısı, nesne oluşturması ve bir işaretçi başlatma. (Bu örneklerde statik değildir, ancak aynı etkiye sahip genel kapsamda tanımlanan varsayılır.)
+Aşağıdaki kod, dinamik olarak başlatılması gerektiren statik başlatıcılar örneklerini gösterir: bir işlev çağrısı, nesne oluşturması ve bir işaretçi başlatma. (Bu örnekleri statik olmayan, ancak aynı etkiye sahip genel kapsamda tanımlanması varsayılır.)
 
 ```cpp
 // dynamic initializer function generated
@@ -85,51 +85,51 @@ CObject o(arg1, arg2);
 CObject* op = new CObject(arg1, arg2);
 ```
 
-Bu kilitlenme riski olup olmadığını içeren modülü ile derlenmiş olup bağlıdır **/CLR** ve olup MSIL yürütülür. Özellikle, statik değişken olmadan derlenmiş ise **/CLR** (veya bir #pragma alıyor `unmanaged` blok), ve MSIL yönergeleri yürütülmesi sonuçlarında başlatmak için gerekli dinamik Başlatıcı kilitlenme oluşabilir. Bu olmadan derlenen modüller için çünkü **/CLR**, statik değişkenler başlatma DllMain tarafından gerçekleştirilir. Buna karşılık, ile statik değişkenler derlenmiş **/CLR** .cctor tarafından yönetilmeyen başlatma aşaması tamamlandıktan sonra yükleyici kilidi serbest başlatılır.
+Bu kilitlenme riski olup olmadığını içeren modülü ile derlenmiş olup bağlıdır **/CLR** ve MSIL olup yürütülür. Özellikle statik değişkeni olmadan derlenirse **/CLR** (veya bir #pragma içinde yer alıyor `unmanaged` blok), ve sonuçları MSIL yönergeleri yürütülmesini başlatmak için gerekli dinamik Başlatıcı Kilitlenme ortaya çıkabilir. Olmadan derlenen modüller için çünkü **/CLR**, statik değişkenlerin başlatması DllMain tarafından gerçekleştirilir. Buna karşılık, ile statik değişkenler derlenmiş **/CLR** .cctor tarafından yönetilmeyen başlatma aşaması tamamlandıktan sonra yükleyici kilidi serbest başlatılır.
 
-Statik değişkenler (sorunu gidermek için gereken süre sırada kabaca düzenlenmiş) dinamik başlatılması nedeni kilitlenme çözümleri vardır:
+Statik değişkenler (sorunu gidermek için gereken süre sırasına göre kabaca düzenlenmiş) dinamik olarak başlatılması nedeniyle kilitlenme çözümleri vardır:
 
 - Statik değişken içeren kaynak dosya ile derlenmiş **/CLR**.
 
-- Yerel kod #pragma kullanarak statik değişkeni tarafından çağrılan tüm işlevler derlenebilir `unmanaged` yönergesi.
+- #Pragma kullanılarak yerel kod için statik değişkeni tarafından çağrılan tüm işlevlerin derlenebilir `unmanaged` yönergesi.
 
-- El ile statik değişken, bir .NET ve yerel sürüm farklı adlara sahip sağlama bağlıdır kodu kopyalayın. Geliştiriciler yerel sürümü yerel statik başlatıcılardan ve .NET sürüm başka bir yerde çağırın.
+- El ile statik değişken bağlıdır, hem .NET hem de yerel sürüm farklı adlara sahip sağlama kodu kopyalayın. Geliştiriciler yerel sürüm yerel statik başlatıcılardan ve başka bir yerde .NET sürümünü arayın.
 
-### <a name="user-supplied-functions-affecting-startup"></a>Başlangıç etkileyen kullanıcı tarafından sağlanan işlevler
+### <a name="user-supplied-functions-affecting-startup"></a>Başlangıç etkileyen kullanıcı tarafından sağlanan işlevleri
 
-Birkaç kullanıcı tarafından sağlanan işlevleri kitaplıkları başlangıç sırasında başlatma için bağımlı vardır. Örneğin, genel C++ işleçleri gibi aşırı yüklendiğinde `new` ve `delete` işleçleri, kullanıcı tarafından sağlanan sürümler her yerde kullanılır, C++ Standart Kitaplığı Başlatma ve yok etme gibi. Sonuç olarak, C++ Standart Kitaplığı ve kullanıcı tarafından sağlanan statik başlatıcıları Bu işleçleri kullanıcı tarafından sağlanan tüm sürümlerini çağırır.
+Birden fazla kullanıcı tarafından sağlanan işlevleri kitaplıklarını başlatma başlatma sırasında bağımlı vardır. Örneğin, genel olarak gibi C++'daki işleçler aşırı yüklendiğinde `new` ve `delete` işleçleri, kullanıcı tarafından sağlanan sürümleri her yerde kullanılır, C++ Standart Kitaplığı Başlatma ve yok edilmesini içerir. Sonuç olarak, C++ Standart Kitaplığı ve kullanıcı tarafından sağlanan statik başlatıcılar bu işleçler kullanıcı tarafından sağlanan tüm sürümlerini çağırır.
 
-Kullanıcı tarafından sağlanan sürümler için MSIL derlenen, ardından bu başlatıcılar yükleyici kilidi kilitliyken MSIL yönergeleri yürütmek çalışıyor. Kullanıcı tarafından sağlanan `malloc` aynı sonuçları vardır. Bu sorunu gidermek için bu aşırı veya kullanıcı tarafından sağlanan tanımları #pragma kullanılarak yerel kod olarak uygulanmalıdır `unmanaged` yönergesi.
+Kullanıcı tarafından sağlanan sürümleri MSIL olarak derlenir, ardından bu başlatıcıları yükleyici kilidi açık tutulduğu sürece MSIL yönergeleri yürütmek çalışıyor. Bir kullanıcı tarafından sağlanan `malloc` aynı sonuçları vardır. Bu sorunu gidermek için bu aşırı yüklemeleri veya kullanıcı tarafından sağlanan tanımları #pragma kullanılarak yerel kod uygulanması gereken `unmanaged` yönergesi.
 
 Bu senaryo hakkında daha fazla bilgi için lütfen "Engelleri için tanılama" bakın.
 
 ### <a name="custom-locales"></a>Özel yerel ayarlar
 
-Kullanıcı bir özel genel yerel sağlarsa, bu yerel ayarlar da statik olarak başlatılır dahil olmak üzere, tüm gelecekteki g/ç akışlarını başlatmak için kullanılır. Bu genel yerel nesne için MSIL derlenmiş, yerel nesne üye işlevleri için MSIL derlenmiş yükleyici kilidi kilitliyken çağrılabilir.
+Genel bir özel yerel kullanıcı sağlar, bu yerel statik olarak başlatılmış olanlar dahil olmak üzere, tüm gelecek g/ç akışları başlatmak için kullanılır. Bu genel yerel ayar nesnesi, MSIL olarak derlenmiş, MSIL olarak derlenmiş yerel ayar nesnesi üye işlevleri yükleyici kilidi açık tutulduğu sürece çağrılabilir.
 
 Bu sorunu çözmek için üç seçenek vardır:
 
-Tüm genel g/ç akış tanımları içeren kaynak dosyaları kullanarak derlenebilir **/CLR** seçeneği. Bu yükleyici kilidi altında çalıştırılmasını kendi statik başlatıcıları engeller.
+Tüm genel g/ç akışı tanımlarını içeren kaynak dosyalarını kullanarak derlenebilir **/CLR** seçeneği. Bu, onların statik başlatıcılar yükleyici kilidi altında çalıştırılmasını engeller.
 
-Özel yerel ayar işlev tanımları #pragma kullanarak yerel koda derlenebilir `unmanaged` yönergesi.
+#Pragma kullanarak yerel kod için özel yerel işlev tanımları derlenebilir `unmanaged` yönergesi.
 
-Yükleyici kilidi serbest bırakıldıktan sonra özel yerel kadar genel yerel olarak ayarlamaktan kaçının. Daha sonra açıkça özel yerel ile başlatma sırasında oluşturulan g/ç akışlarını yapılandırın.
+Yükleyici kilidi serbest bırakıldıktan sonra özel yerel ayar olarak genel yerel ayarlamaktan kaçının. Daha sonra açıkça özel yerel ayar ile başlatma sırasında oluşturulan g/ç akışları yapılandırın.
 
-## <a name="impediments-to-diagnosis"></a>Tanılama engelleri
+## <a name="impediments-to-diagnosis"></a>Tanılama aksaklıkları
 
-Bazı durumlarda kilitlenmelerin kaynağını tespit etmek zordur. Aşağıdaki alt bölümlerde, bu senaryoları ve bu sorunları çözmenin yolları açıklanmaktadır.
+Bazı durumlarda kilitlenmeleri kaynağını tespit etmek zordur. Aşağıdaki alt bölümlerde bu senaryolar ve bu sorunların çözüm yolları açıklanmaktadır.
 
-### <a name="implementation-in-headers"></a>Uygulama üst bilgileri
+### <a name="implementation-in-headers"></a>Üst uygulama
 
-Select durumlarda üstbilgi dosyaları içindeki işlev uygulamaları tanılama karmaşık hale getirebilir. Satır içi işlevler ve şablon kodu işlevleri üstbilgi dosyasında belirtilmesini gerektirir.  C++ dili bir tanım anlam olarak eşdeğer olarak aynı ada sahip işlevlerin bütün uygulamalarında zorlar kural, belirtir. Sonuç olarak, C++ bağlayıcı herhangi diğer noktalar verilen işlevin yinelenen uygulamaları sahip nesne dosyaları birleştirilirken yapmamanız.
+Seçili durumlarda, üst bilgi dosyaları içindeki işlev uygulamaları tanılama karmaşık hale getirebilir. Satır içi işlevleri ve şablon kodunun işlevleri bir üstbilgi dosyasında belirtilmesi gerekir.  C++ dili tek tanım anlamsal olarak eşdeğer olarak aynı ada sahip İşlevler'in tüm uygulamalarından zorlar kuralı belirtir. Sonuç olarak, C++ bağlayıcı tüm özel durumlar yinelenen uygulamaları, belirli bir işlevi olan nesne dosyaları birleştirilirken yapmamanız.
 
-Visual Studio 2005 önce bağlayıcı basitçe farklı en iyi duruma getirme seçenekleri farklı kaynak dosyaları için kullanıldığında, iletme bildirimleri ve senaryoları uyum sağlamak için bu anlam olarak eşdeğer tanımları en büyük seçer. Bu karma yerel/.NET DLL'leri için bir sorun oluşturur.
+Visual Studio 2005'ten önce bağlayıcı yalnızca iletme bildirimleri ve senaryolar için farklı kaynak dosyaları farklı iyileştirme seçenekleri kullanıldığında uyum sağlamak için bu anlamsal olarak eşdeğer tanımlara en büyük seçer. Bu, karma yerel/.NET DLL'ler için sorun oluşturur.
 
-Aynı başlığını olabileceğinden C++ dosyalarıyla tarafından her ikisi de dahil **/CLR** etkin ve devre dışı veya #include #pragma içinde kaydırılan `unmanaged` bloğu MSIL ve sağlayan İşlevler yerel sürümleri olması mümkündür üstbilgiler uygulamalarında. MSIL ve yerel uygulamalar etkili bir şekilde bir tanım kuralını ihlal ediyor yükleyici kilidi altında başlatma göre farklı semantiklerine sahip. Bağlayıcı en büyük uygulamayı seçtiğinde, açıkça başka bir yerde #pragma yönetilmeyen yönergesi kullanılarak yerel koda derlenen olsa bile sonuç olarak, bunu bir işlev MSIL sürümü seçebilirsiniz. Yükleyici kilidi altında bir şablonu veya satır içi işlev MSIL sürümü hiçbir zaman çağrıldığından emin olmak için her yükleyici kilidi altında her tür işlev tanımını #pragma değiştiren `unmanaged` yönergesi. Üst bilgi dosyasını üçüncü taraftan bunu elde etmenin en kolay yolu anında ve geçici #pragma yönetilmeyen yönergesi pop ise, #include yönergesi sorunlu üstbilgi dosyası için. (Bkz [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) bir örnek için.) Ancak, bu strateji .NET API'lerini doğrudan çağırmanız gerekir başka bir kod içeren üstbilgilerini çalışmaz.
+Aynı üst bilgiyi olabileceği için C++ dosyaları ile her ikisini de dahil **/CLR** etkin ve devre dışı veya #include içinde bir #pragma sarmalanabilir `unmanaged` bloğu MSIL hem sağlayan işlevlerin yerel sürümleri olması mümkündür uygulamaları üst. MSIL ve yerel uygulamaları etkili bir şekilde tek tanım kuralı ihlal yükleyici kilidi altında başlatma farklı semantiklere sahip. Bağlayıcı en büyük uygulama seçtiğinde, açıkça başka bir yerde yönetilmeyen #pragma yönergesi kullanarak yerel koda derlenen bile sonuç olarak, bu işlevin MSIL sürümünü tercih edebilirsiniz. Bir MSIL sürüm bir şablon veya satır içi işlevinin, yükleyici kilidi altında hiçbir zaman çağrılır emin olmak için her yükleyici kilidi altında çağrılan gibi her bir işlev tanımının #pragma değiştirilmelidir `unmanaged` yönergesi. Üst bilgi dosyası üçüncü bir taraftan bunu yapmanın en kolay yolu gönderme ve #pragma yönetilmeyen yönergesi geçici açılır ise, #include yönergesi için soruna neden olan üst bilgi dosyası. (Bkz [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) bir örnek.) Ancak, bu strateji, .NET API'lerini doğrudan çağırmanız gerekir başka bir kod içeren üst bilgiler için çalışmaz.
 
-Yükleyici kilidi ile ilgilenen kullanıcılar için bir kolaylık sunulduğunda yönetilen üzerinden yerel uygulama bağlayıcı seçeceksiniz. Yukarıdaki sorunları önler. Ancak, bu kuralın derleyicisi ile iki çözülmemiş bir sorun nedeniyle bu sürümde iki özel durum vardır:
+Yükleyici kilidi ile ilgilenen kullanıcılar için bir kolaylık olarak sunulduğunda yönetilen üzerinden yerel uygulama bağlayıcı seçersiniz. Bu, yukarıdaki sorunları önler. Ancak, bu kuralın derleyicisi ile iki çözülmemiş sorunları nedeniyle bu sürümde iki istisna mevcuttur:
 
-- Satır içi bir çağrıdır bir genel statik işlev işaretçisi işlevdir. Sanal işlevler genel işlev işaretçileri çağrılır çünkü bu özellikle dikkat çekici bir senaryodur. Örneğin,
+- Satır içi bir çağrıdır işlevi, bir genel statik işlev işaretçisi kullanılabilir. Sanal işlevler genel işlev işaretçileri olarak adlandırılır çünkü bu özellikle önemli bir senaryodur. Örneğin,
   
 ```cpp
 #include "definesmyObject.h"
@@ -151,47 +151,47 @@ void DuringLoaderlock(C & c)
 
 ### <a name="diagnosing-in-debug-mode"></a>Hata ayıklama modunda tanılama
 
-Yükleyici kilidi sorunları yapılmalıdır tüm tanıları Hata ayıklama derlemeleri. Yayın derlemeleri tanı oluşturmayabilir ve serbest bırakma modunda gerçekleştirilen iyileştirmeler yükleyici kilidi senaryolarında MSIL bazıları maskeleyebilir.
+Hata ayıklama sorunları yapılmalıdır yükleyici kilidi tüm tanıları oluşturur. Yayın derlemeleri tanılama vermeyebilir ve yayın modunda yapılan iyileştirmeler, bazı yükleyici kilidi senaryolarında MSIL maskeleyebilir.
 
-## <a name="how-to-debug-loader-lock-issues"></a>Yükleyici kilidi sorunlarını hata ayıklama
+## <a name="how-to-debug-loader-lock-issues"></a>Yükleyici kilidi sorunlarında hata ayıklama
 
-MSIL işlevi çağrıldığında, CLR oluşturan tanılama yürütme askıya almak CLR neden olur. Buna karşılık, bu Visual C++ karışık mod hata ayıklayıcı işlemdeki çalıştırırken de askıya alınmasına neden olur. Ancak, işleme eklerken, karma hata ayıklayıcıyı kullanma ayıklayıcı için yönetilen bir çağrı yığını almak mümkün değildir.
+Bir MSIL işlevi çağrıldığında, CLR oluşturan tanılama yürütmeyi askıya almak CLR neden olur. Sırayla bu Visual C++ karışık mod hata ayıklayıcı işlemdeki hata ayıklanan çalışırken de askıya alınmasına neden olur. Ancak, işleme iliştirdikten sonra bu karma hata ayıklayıcısını kullanarak hata ayıklanan için yönetilen bir çağrı yığını elde etmek mümkün değildir.
 
-Yükleyici kilidi altında çağrıldı belirli MSIL işlevini tanımlamak için geliştiricilerin aşağıdaki adımları tamamlamanız gerekir:
+Geliştiriciler, yükleyici kilidi altında çağrıldı belirli bir MSIL işlev tanımlamak için aşağıdaki adımları tamamlamanız gerekir:
 
-1. Mscoree.dll ve mscorwks.dll kullanılabilir olduğundan emin olun.
+1. Mscoree.dll ve kullanımda olan mscorwks.dll'ye kullanılabilir olduğundan emin olun.
 
-   Bu iki yolla yapılabilir. İlk olarak, mscoree.dll ve mscorwks.dll pdb simge arama yoluna eklenebilir. Bunu yapmak için simge arama yolu seçenekleri iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğümü seçin **simgeleri**.) Yolun mscoree.dll ve mscorwks.dll PDB dosyaları arama listesine ekleyin. Bu pdb % VSINSTALLDIR%\SDK\v2.0\symbols yüklenir. Seçin **Tamam**.
+   Bu iki yolla yapılabilir. İlk olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye için Sembol arama yolu eklenebilir. Bunu yapmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Yolun mscoree.dll ve kullanımda olan mscorwks.dll'ye PDB dosyaları arama listesine ekleyin. Bu pdb % VSINSTALLDIR%\SDK\v2.0\symbols yüklenir. Seçin **Tamam**.
 
-   İkinci olarak, mscoree.dll ve mscorwks.dll pdb Microsoft Symbol Server'dan indirilebilir. Simge sunucusunu yapılandırmak için simge arama yolu seçenekleri iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğümü seçin **simgeleri**.) Arama listesini şu arama yolu Ekle: http://msdl.microsoft.com/download/symbols. Bir simge önbelleği dizini simge sunucusu önbelleği metin kutusuna ekleyin. Seçin **Tamam**.
+   İkinci olarak, pdb mscoree.dll ve kullanımda olan mscorwks.dll'ye Microsoft sembol sunucusundan indirilebilir. Sembol sunucusu yapılandırmak için Sembol arama yolu Seçenekler iletişim kutusunu açın. (Gelen **Araçları** menüsünde seçin **seçenekleri**. Sol bölmesinde **seçenekleri** açık iletişim kutusunu **hata ayıklama** düğüm ve **sembolleri**.) Arama listesini şu arama yolu Ekle: http://msdl.microsoft.com/download/symbols. Sembol önbellek dizini sembol sunucusu önbellek metin kutusuna ekleyin. Seçin **Tamam**.
 
-1. Hata ayıklama modunu yalnızca yerel modu olarak ayarlanmış.
+1. Hata ayıklayıcı modu yalnızca yerel moda ayarlayın.
 
-   Bunu yapmak için açın **özellikleri** çözümdeki başlangıç projesi için kılavuz. Seçin **yapılandırma özellikleri** > **hata ayıklama**. Ayarlama **hata ayıklayıcı türü** için **yalnızca yerel**.
+   Bunu yapmak için açık **özellikleri** çözüm başlangıç projesi için kılavuz. Seçin **yapılandırma özellikleri** > **hata ayıklama**. Ayarlama **hata ayıklayıcı türü** için **yalnızca yerel**.
 
 1. Hata ayıklayıcı (F5) başlatın.
   
-1. Zaman **/CLR** tanılama oluşturulur, seçin **yeniden deneme** ve ardından **sonu**.
+1. Zaman **/CLR** tanılama oluşturulur, seçin **yeniden** seçip **sonu**.
   
-1. Çağrı yığını penceresini açın. (Menü çubuğunda seçin **hata ayıklama** > **Windows** > **çağrı yığını**.) Sorunlu `DllMain` veya statik Başlatıcı yeşil bir ok ile tanımlanır. Soruna neden olan işlev tanımlanmadıysa bulmak için aşağıdaki adımlar izlenmelidir.
+1. Çağrı yığını penceresini açın. (Menü çubuğunda, **hata ayıklama** > **Windows** > **çağrı yığını**.) Sorunlu `DllMain` veya statik Başlatıcı, yeşil bir ok ile tanımlanır. Sorunlu işlevi tanımlanmamışsa bulmak için aşağıdaki adımları alınması gerekir.
 
-1. Açık **hemen** penceresi (menü çubuğunda seçin **hata ayıklama** > **Windows** > **hemen**.)
+1. Açık **hemen** penceresinde (menü çubuğunda, **hata ayıklama** > **Windows** > **hemen**.)
 
-1. .Load sos.dll içine yazın **hemen** hata ayıklama hizmetini yüklemek için penceresi.
+1. .Load sos.dll içine yazın **hemen** penceresi hata ayıklama hizmetini yüklemek için.
   
-1. Türü! dumpstack **hemen** iç tam listesini almak için pencere **/CLR** yığını.
+1. Tür! dumpstack **hemen** iç tam listesini almak için pencere **/CLR** yığını.
 
-1. İlk örneği ya da _CorDllMain için (en yakın yığınının altına) bakın (varsa `DllMain` soruna neden olan) _VTableBootstrapThunkInitHelperStub ya da (statik Başlatıcı sorunu neden olursa) oluyorsa. Yığın hemen bu çağrının altına MSIL çağırma yükleyici kilidi altında yürütülmeye işlevi uygulanmadı girişidir.
+1. İlk örneğinin ya da _CorDllMain için (en yakın yığın altına) bakın (varsa `DllMain` soruna neden olan) _VTableBootstrapThunkInitHelperStub ya da oluyorsa (statik bir başlatıcı soruna neden olursa). Yükleyici kilidi altında yürütülmeye çalışıldı işlevin MSIL çağırmayı uygulanan hemen altındaki Bu çağrı yığını girdisi var.
 
-1. Kaynak dosyaya gidin ve satır numarası önceki adımda tanımlanan ve doğru senaryoları ile senaryolar bölümünde açıklanan çözümler sorunu.
+1. Kaynak dosyaya gidin ve satır numarası önceki adımda tanımlanan ve doğru senaryoları ile senaryoları bölümünde açıklanan çözümler sorunu.
 
 ## <a name="example"></a>Örnek
 
 ### <a name="description"></a>Açıklama
 
-Aşağıdaki örnek kod taşıyarak yükleyici kilidi önlemek gösterilmiştir `DllMain` genel nesne oluşturucusu içine.
+Aşağıdaki örnek, koddan taşıyarak yükleyici kilidi önlemek gösterilmektedir `DllMain` içine bir genel nesnesinin Oluşturucusu.
 
-Bu örnekte, oluşturucuyu başlangıçtaki yönetilen nesne içeren genel bir yönetilen nesne yok `DllMain`. Bu örnek ikinci bölümü başlatmayı yapan modül oluşturucuyu çağırmak için yönetilen nesnesinin örneğini oluşturma derlemeye başvurur.
+Bu örnekte, Oluşturucusu başlangıçtaki yönetilen nesneyi içeren genel bir yönetilen nesne yok `DllMain`. Bu örnek ikinci bölümü başlatma yapan modül oluşturucuyu çağırmak için yönetilen nesnesinin örneğini oluşturarak derlemeye başvuruyor.
 
 ### <a name="code"></a>Kod
 
@@ -222,7 +222,7 @@ BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved) {
 }
 ```
 
-Bu örnek karışık derlemeleri başlatma sorunları gösterir.
+Bu örnek, karışık derlemeleri başlatma sorunları göstermektedir:
 
 ```cpp
 // initializing_mixed_assemblies_2.cpp

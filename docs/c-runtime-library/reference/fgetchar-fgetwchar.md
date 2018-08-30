@@ -42,16 +42,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87b5b42c72f4ea2756358208f85d9c01f7863dba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3d83c1e86c574f56b08eecdf2c29e7ab20a28b4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400570"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194324"
 ---
 # <a name="fgetchar-fgetwchar"></a>_fgetchar, _fgetwchar
 
-Bir karakteri okur **stdin**.
+Bir karakter okur **stdin**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,13 +62,13 @@ wint_t _fgetwchar( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_fgetchar** olarak okuma karakteri döndürür bir **int** veya return **EOF** bir hata veya dosya sonu belirtmek için. **_ *** fgetwchar** döndürür, olarak bir [wint_t](../../c-runtime-library/standard-types.md), okuma karakterine karşılık gelen veya verir geniş karakter **WEOF** bir hata veya dosya sonu belirtmek için. Her iki işlevlerini kullanmak **feof** veya **ferror** hata bir dosya sonu durumu arasında ayrım yapmak için.
+**\_fgetchar** olarak okuma karakteri döndürür bir **int** veya döndürür `EOF` bir hata veya dosya sonunu belirtmek için. **\_fgetwchar** döndürür, olarak bir [wint_t](../../c-runtime-library/standard-types.md), döndürür veya okuma karakterine karşılık gelen geniş karakter `WEOF` bir hata veya dosya sonunu belirtmek için. Her iki işlev için kullanmak **feof** veya **ferror** hata ve bir dosya sonu koşulunu ayırt etmek için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin bir tek karakteri okuma **stdin**. İşlev sonra ilişkili dosya işaretçisini (tanımlıysa) sonraki karaktere işaret edecek şekilde artırır. Akış dosya sonu ise dosya sonu gösterge akış için ayarlanır.
+Bu işlevleri tek bir karakter okur **stdin**. İşlevi ardından ilgili dosya işaretleyicisini (tanımlıysa) sonraki karaktere işaret etmek üzere artırır. Akış dosya sonunda ise, akış için dosya sonu göstergesi ayarlanır.
 
-**_fgetchar** eşdeğerdir `fgetc( stdin )`. Ayrıca eşdeğer olan **getchar**, ancak bir işlev ve bir makro değil, yalnızca bir işlevi olarak uygulanır. **_fgetwchar** geniş karakter sürümü **_fgetchar**.
+**_fgetchar** eşdeğerdir `fgetc( stdin )`. Ayrıca değerine eşdeğer olan **getchar**, ancak bir işlev ve makro olarak değil, yalnızca işlev olarak uygulanır. **_fgetwchar** öğesinin geniş karakterli sürümüdür **_fgetchar**.
 
 Bu işlevler ANSI standardı ile uyumlu değildir.
 
@@ -85,7 +85,7 @@ Bu işlevler ANSI standardı ile uyumlu değildir.
 |**_fgetchar**|\<stdio.h >|
 |**_fgetwchar**|\<stdio.h > veya \<wchar.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri —**stdin**, **stdout**, ve **stderr**— C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -127,6 +127,6 @@ Line two.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fputc, fputwc](fputc-fputwc.md)<br/>
 [getc, getwc](getc-getwc.md)<br/>

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eaa1a0589cb001658b18144e06956eebd302287
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 6a0e57931b7f2af3f6232f140fd38155cfa5b2f8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131860"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195241"
 ---
 # <a name="c-run-time-library-functions-for-thread-control"></a>İş Parçacığı Denetimi için C Çalışma Süresi Kitaplık İşlevleri
 Win32 programlar en az bir iş parçacığı vardır. Herhangi bir iş parçacığı ek iş parçacıkları oluşturabilirsiniz. Bir iş parçacığı işini hızla tamamlayın ve ardından sonlandırın veya program süresince etkin kalabilir.  
@@ -40,7 +40,7 @@ Win32 programlar en az bir iş parçacığı vardır. Herhangi bir iş parçacı
  
 `_beginthread` Ve `_beginthreadex` İşlevler, yeni bir dizi oluşturun. Bir iş parçacığı bir işlem kodu ve veri bölümleri işlemdeki diğer iş parçacıkları paylaşır, ancak kendi benzersiz yazmaç değerlerini, yığın alanı ve geçerli yönerge adresi vardır. Sistem, CPU süresi her iş parçacığı verir, böylece bir işlemdeki tüm iş parçacıklarının eşzamanlı olarak yürütebilir.  
   
-`_beginthread` ve `_beginthreadex` benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) Win32 API işlevi, ancak bu farklılıkları vardır:  
+`_beginthread` ve `_beginthreadex` benzer [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) Win32 API işlevi, ancak bu farklılıkları vardır:  
   
 - Bunlar, belirli C çalışma zamanı kitaplığı değişkenlerini başlatın. Bu seçenek, yalnızca C çalışma zamanı kitaplığı, iş parçacıklarının kullanırsanız önemlidir.  
   

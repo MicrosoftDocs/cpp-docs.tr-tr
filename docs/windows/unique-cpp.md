@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 81469e87d08ce17334d5e30fdf37db5ecf8bdab1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 868dd67a6f1e3e9e2e7f12e32fd7b2d8f5cff419
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608074"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195285"
 ---
 # <a name="unique-c"></a>benzersiz (C++)
 
@@ -36,7 +36,7 @@ Bir benzersiz işaretçi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Benzersiz** C++ özniteliği ile aynı işlevlere sahip [benzersiz](http://msdn.microsoft.com/library/windows/desktop/aa367294) MIDL özniteliği.
+**Benzersiz** C++ özniteliği ile aynı işlevlere sahip [benzersiz](/windows/desktop/Midl/unique) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

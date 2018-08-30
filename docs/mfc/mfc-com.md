@@ -21,23 +21,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8257631e46a1ebcf5c882d9f87c628c04ccc84f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3e8c3af361e1ffb5928132727fa124f03a99e81e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347779"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43205655"
 ---
 # <a name="mfc-com"></a>MFC COM
-Çoğu Etkin Şablon kitaplığı (ATL) olarak tasarlanmıştır ancak bir alt kümesini MFC COM, desteklemek için tasarlanmıştır COM programlama için. MFC'nin COM desteği konu bu bölümde açıklanmaktadır  
+MFC bir alt kümesi, en etkin Şablon kitaplığı (ATL), tasarlanmış olmasına rağmen COM'u desteklemek üzere tasarlanmıştır COM programlama için. Bu bölümde konu com için MFC'nin desteğini açıklar.  
   
- Etkin teknolojileri (örneğin, ActiveX denetimleri, etkin belge kapsaması, OLE ve benzeri) sahip oldukları dil bağımsız olarak bir ağ ortamında birbiriyle etkileşim kurmak yazılım bileşenleri etkinleştirmek için Bileşen Nesne Modeli (COM) kullanın. oluşturulur. Etkin teknoloji, masaüstü veya Internet üzerinde çalışan uygulamaları oluşturmak için kullanılabilir. Daha fazla bilgi için bkz: [COM giriş](../atl/introduction-to-com.md) veya [Bileşen Nesne modeli](http://msdn.microsoft.com/library/windows/desktop/ms694363).  
+ (Örneğin, ActiveX denetimleri, etkin belge kapsaması, OLE ve benzeri) etkin teknolojileri, ağ ortamında, oldukları diline bakılmaksızın birbiriyle etkileşim kurmak yazılım bileşenlerini etkinleştirmek için Bileşen Nesne Modeli (COM) kullanın. oluşturuldu. Etkin teknoloji, masaüstü veya Internet üzerinde çalışan uygulamalar oluşturmak için kullanılabilir. Daha fazla bilgi için [COM'a giriş](../atl/introduction-to-com.md) veya [Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model).  
   
- Etkin teknoloji aşağıdakiler de dahil olmak üzere, istemci ve sunucu teknolojileri şunları içerir:  
+ Etkin teknoloji, aşağıdakiler dahil olmak üzere, istemci ve sunucu teknolojileri şunları içerir:  
   
--   [Etkin belge kapsaması](../mfc/active-document-containment.md), MFC sürümleri 4.2 desteklenen ve daha sonra kullanıcıların görüntülemesine izin verir [etkin belgeler](../mfc/active-documents.md) (Microsoft Excel veya Word'den dosyaları gibi) ve belgenin yerel tüm arabiriminin etkinleştirin tüm istemci alanını uygulaması bir [etkin belge kapsayıcısı](../mfc/active-document-containers.md) Microsoft Office Binder veya Microsoft Internet Explorer gibi. Tarafından sağlanan belgelerin sırada kapsayıcıları istemcileri hareket [etkin belge sunucuları](../mfc/active-document-servers.md). Etkin belgeler Internet uygulamalarında kullanma ile ilgili daha fazla bilgi için bkz: [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md).  
+-   [Etkin belge kapsaması](../mfc/active-document-containment.md)4.2 MFC sürümlerinde de desteklenir ve daha sonra kullanıcıların görüntülemesine olanak tanır [etkin belgeler](../mfc/active-documents.md) (Microsoft Excel veya Word dosyaları gibi) ve belgenin yerel tüm arabirimi etkinleştirin tüm istemci alanını uygulaması bir [etkin belge kapsayıcı](../mfc/active-document-containers.md) Microsoft Office Binder ya da Microsoft Internet Explorer gibi. Tarafından sağlanan belgeleri sırada kapsayıcıları istemcileri olarak davranan [etkin belge sunucuları](../mfc/active-document-servers.md). Etkin belgeler Internet uygulamalarında kullanma hakkında daha fazla bilgi için bkz: [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md).  
   
--   ActiveX denetimleri, bir Web sitesi gibi kapsayıcıları kullanılabilir etkileşimli nesneleridir. ActiveX denetimleri hakkında daha fazla bilgi için bkz:  
+-   ActiveX denetimleri, bir Web sitesi gibi kapsayıcılar kullanılabilir etkileşimli nesnelerdir. ActiveX denetimleri hakkında daha fazla bilgi için bkz:  
   
     -   [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)  
   
@@ -49,17 +49,17 @@ ms.locfileid: "33347779"
   
     -   [ActiveX denetimi hata ayıklama](/visualstudio/debugger/how-to-debug-an-activex-control)  
   
--   Etkin komut dosyası, bir tarayıcı veya sunucudan bir veya daha fazla ActiveX denetimlerini tümleşik davranışını denetler. Etkin komut dosyası oluşturma hakkında daha fazla bilgi için bkz: [Internet'te etkin teknoloji](../mfc/active-technology-on-the-internet.md).  
+-   Etkin komut dosyası, tarayıcı veya sunucu bir veya daha fazla ActiveX denetimlerini tümleşik davranışını denetler. Etkin komut dosyası oluşturma hakkında daha fazla bilgi için bkz. [Internet'te etkin teknoloji](../mfc/active-technology-on-the-internet.md).  
   
--   [Otomasyon](../mfc/automation.md) (önceki adıyla OLE Otomasyon bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek için ya da "bunlar işlenebilir nesnelerini ortaya çıkarmak için" mümkün kılar.  
+-   [Otomasyon](../mfc/automation.md) (eski adıyla OLE Otomasyonu da bilinir), bir uygulama için başka bir uygulamaya uygulanan nesneleri değiştirmek ya da "bunlar işlenebilir nesneleri göstermek için" mümkün kılar.  
   
-     Otomatik nesne yerel veya uzak (başka bir makine bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE ve COM nesneleri için kullanılabilir.  
+     Otomatik nesne yerel veya uzak (başka bir makinedeki bir ağ üzerinden erişilebilir) olabilir. Otomasyon OLE hem COM nesneleri için kullanılabilir.  
   
--   Bu bölümde MFC, örneğin, kullanarak COM bileşenlerini yazma konusunda bilgi de sağlanır. [bağlantı noktaları](../mfc/connection-points.md).  
+-   Bu bölümde, MFC, örneğin kullanarak COM bileşenlerini yazmaya yönelik bilgi de sağlar. [bağlantı noktaları](../mfc/connection-points.md).  
   
- Konulara bakın ne artık etkin teknoloji olarak adlandırılır ve ne OLE hala adlandırılır bir tartışma için [OLE](../mfc/ole-in-mfc.md).  
+ Ne artık etkin teknoloji adı verilir ve hangi OLE yine de çağrılır, bir açıklaması için üzerinde konulara bakın. [OLE](../mfc/ole-in-mfc.md).  
   
- Ayrıca, Bilgi Bankası makalesi Q248019 bkz: nasıl yapılır: önlemek sunucu meşgul iletişim kutusu görüntülenmesini sırasında bir uzun COM işlemin.  
+ Bilgi Bankası makalesi Q248019 Ayrıca bkz: nasıl yapılır: önlemek sunucu meşgul iletişim kutusunda görünen sırasında bir uzun COM işleminin.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Etkin Belge Kapsaması](../mfc/active-document-containment.md)  

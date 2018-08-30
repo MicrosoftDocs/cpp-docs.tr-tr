@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af604ac6afce91dc865cfbb465e8c27acea8f775
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9d4c752dc2a139d1e0bac38d9c307154cdc32fe6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885327"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43196325"
 ---
 # <a name="cautorevertimpersonation-class"></a>Cautorevertımpersonation sınıfı
 Bu sınıf döner [CAccessToken](../../atl/reference/caccesstoken-class.md) kapsam dışına çıktığında nonimpersonating durumuna nesneleri.  
@@ -55,11 +55,11 @@ class CAutoRevertImpersonation
 |[CAutoRevertImpersonation::GetAccessToken](#getaccesstoken)|Bu nesneyle ilişkili erişim belirteci geçerli alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows NT veya Windows 2000 sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir. Bu erişim belirteçleri ile gösterilebilir `CAccessToken` sınıfı.  
+ Bir [erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows NT veya Windows 2000 sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir. Bu erişim belirteçleri ile gösterilebilir `CAccessToken` sınıfı.  
   
  Bazen, erişim belirteçlerinin kimliğine bürünmek gereklidir. Bu sınıf, kolaylık olarak sağlanır, ancak erişim belirteçlerinin kimliğine bürünme işlemi gerçekleştirmez. yalnızca Otomatik Geri Al nonimpersonated durumuna da gerçekleştirir. Belirteç erişimi kimliğe bürünme, birçok farklı yöntemle gerçekleştirilebilir olmasıdır.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -130,5 +130,5 @@ const CAccessToken* GetAccessToken() throw();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATLSecurity örnek](../../visual-cpp-samples.md)   
- [Erişim belirteçleri](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
+ [Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

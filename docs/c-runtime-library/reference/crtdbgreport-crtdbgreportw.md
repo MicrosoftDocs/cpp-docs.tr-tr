@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2b0bcdc5ee6c4c2b71837f1cdd958f50d8d0b4a
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 5aa7efb7881b00933afab92a7157c09e0f769605
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464997"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204429"
 ---
 # <a name="crtdbgreport-crtdbgreportw"></a>_CrtDbgReport, _CrtDbgReportW
 
@@ -108,8 +108,8 @@ Aşağıdaki tablo rapor modu veya modları, dosya ve sonuçta elde edilen davra
 
 |Rapor modu|Rapor dosyası|**_CrtDbgReport**, **_CrtDbgReportW** davranışı|
 |-----------------|-----------------|------------------------------------------------|
-|**_CRTDBG_MODE_DEBUG**|Geçerli değil|Windows kullanarak ileti yazar [OutputDebugString](http://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API.|
-|**_CRTDBG_MODE_WNDW**|Geçerli değil|Windows çağırır [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) beraber iletiyi görüntülemek için ileti kutusu oluşturmak için API **iptal**, **yeniden**, ve **Yoksay** düğmeleri. Bir kullanıcı tıklarsa **iptal**, **_CrtDbgReport** veya **_CrtDbgReport** hemen durdurur. Bir kullanıcı tıklarsa **yeniden**, 1 döndürür. Bir kullanıcı tıklarsa **Yoksay**, yürütme devam eder ve **_CrtDbgReport** ve **_CrtDbgReportW** 0 değerini döndürür. Sonuçlandığını unutmayın **Yoksay** ne zaman bir hata koşulu tıklatılmasının "tanımsız davranış."|
+|**_CRTDBG_MODE_DEBUG**|Geçerli değil|Windows kullanarak ileti yazar [OutputDebugString](https://msdn.microsoft.com/library/windows/desktop/aa363362.aspx) API.|
+|**_CRTDBG_MODE_WNDW**|Geçerli değil|Windows çağırır [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) beraber iletiyi görüntülemek için ileti kutusu oluşturmak için API **iptal**, **yeniden**, ve **Yoksay** düğmeleri. Bir kullanıcı tıklarsa **iptal**, **_CrtDbgReport** veya **_CrtDbgReport** hemen durdurur. Bir kullanıcı tıklarsa **yeniden**, 1 döndürür. Bir kullanıcı tıklarsa **Yoksay**, yürütme devam eder ve **_CrtDbgReport** ve **_CrtDbgReportW** 0 değerini döndürür. Sonuçlandığını unutmayın **Yoksay** ne zaman bir hata koşulu tıklatılmasının "tanımsız davranış."|
 |**_CRTDBG_MODE_FILE**|**__HFILE**|Kullanıcı tarafından sağlanan ileti yazar **İŞLEMEK**, Windows kullanarak [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) API ve mu Dosya tanıtıcısının geçerliliğini doğrulamaz; uygulama rapor dosyasını açmaktan ve geçerli bir dosya geçirme sorumludur tanıtıcı.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDERR**|İleti yazar **stderr**.|
 |**_CRTDBG_MODE_FILE**|**_CRTDBG_FILE_STDOUT**|İleti yazar **stdout**.|

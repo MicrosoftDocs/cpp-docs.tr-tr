@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a75d3f40ade42c25de51a3c65c98e8c448b03ed
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: aef6192218f5fae40bca6aa6fb8202a0d238091a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465733"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195838"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 `CMFCShellListCtrl` Sınıf Windows liste denetleme işlevlerini sağlar ve bir kabuk öğeleri listesi görüntüleme özelliğini ekleyerek bunu genişletir.  
@@ -212,7 +212,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi [IShellFolder arabirimi](http://msdn.microsoft.com/library/windows/desktop/bb775075) seçili nesne için.  
+ Bir işaretçi [IShellFolder arabirimi](https://msdn.microsoft.com/library/windows/desktop/bb775075) seçili nesne için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şu anda hiçbir nesne seçili değilse bu yöntem NULL döndürür.  
@@ -247,7 +247,7 @@ SHCONTF GetItemTypes() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539) listelenen öğelerin türünü içeren değer `CMFCShellListCtrl`.  
+ A [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf) listelenen öğelerin türünü içeren değer `CMFCShellListCtrl`.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Listelenen öğelerin türünü ayarlamak için bir `CMFCShellListCtrl`, çağrı [CMFCShellListCtrl::SetItemTypes](#setitemtypes).  
@@ -406,7 +406,7 @@ void SetItemTypes(SHCONTF nTypes);
  Bir liste öğesi türlerinden `CMFCShellListCtrl` nesne destekler.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Öğe türleri listesi hakkında daha fazla bilgi için bkz. [SHCONTF](http://msdn.microsoft.com/library/windows/desktop/bb762539).  
+ Öğe türleri listesi hakkında daha fazla bilgi için bkz. [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

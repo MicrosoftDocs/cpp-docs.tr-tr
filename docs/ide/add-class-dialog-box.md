@@ -16,29 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6c4f108b30babcc30ffc5f2fc4c63fe764db2e3
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4c9ab0120b3aad3f4f4470ca9094f8a975dbb12d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339780"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200326"
 ---
 # <a name="add-class-dialog-box"></a>Sınıf Ekle İletişim Kutusu
-**Sınıfı Ekle** iletişim kutusu olanak sağlayan şablonlar içerir:  
+**Sınıfı Ekle** iletişim kutusu olanak tanıyan şablonları içerir:  
   
--   Varsa karşılık gelen bir kod sihirbazını açın. Daha fazla bilgi için bkz: [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).  
+-   Varsa, karşılık gelen bir kod Sihirbazı açın. Daha fazla bilgi için [kod sihirbazlarıyla işlevsellik ekleme](../ide/adding-functionality-with-code-wizards-cpp.md).  
   
  \- veya -  
   
--   Kaynak kodu ve uygun dosya projenize ekleyerek otomatik olarak yeni sınıfınıza oluşturun.  
+-   Kaynak kodu ve uygun dosyaları projenize ekleyerek otomatik olarak, yeni bir sınıf oluşturun.  
   
- Erişebileceğiniz **sınıfı Ekle** iletişim kutusundan **proje** menüsünde **Çözüm Gezgini**, veya [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+ Erişebildiğiniz **sınıfı Ekle** iletişim kutusundan **proje** menüsünde **Çözüm Gezgini**, veya [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
   
 > [!NOTE]
->  Geçerli projenize değil uygun bir sınıf eklemeye çalıştığınızda bir hata iletisi alırsınız. Tıklatın **Tamam** geri dönmek için **sınıfı Ekle** iletişim kutusu.  
+>  Geçerli projeniz için uygun olmayan bir sınıf eklemeye çalıştığınızda, bir hata iletisi alırsınız. Tıklayın **Tamam** dönmek için **sınıfı Ekle** iletişim kutusu.  
   
-## <a name="add-class-templates"></a>Sınıf şablonları Ekle  
- Dört kategorisi vardır **sınıfı Ekle** şablonları: .NET, ATL, MFC ve genel. Bir şablonu seçtiğinizde, **şablonları** bölmesinde yaptığınız seçime açıklayan metin altında görünür **kategorileri** ve **şablonları** bölmeleri.  
+## <a name="add-class-templates"></a>Sınıf şablonları ekleme  
+ Dört kategorisi vardır **sınıfı Ekle** şablonları: .NET, ATL, MFC ve genel. Bir şablonda seçtiğinizde **şablonları** bölmesinde yaptığınız seçime açıklayan metin altında görünür **kategorileri** ve **şablonları** bölmeleri.  
   
 ### <a name="net"></a>.NET  
   
@@ -54,17 +54,17 @@ ms.locfileid: "33339780"
   
 |Şablon|Sihirbazı|  
 |--------------|------------|  
-|MFC için ATL desteği ekleme|Yok|  
-|ATL Active Server sayfası bileşeni|[ATL Active Server Page Bileşeni Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)|  
+|MFC'ye ATL desteği Ekle|Yok|  
+|ATL Active Server Page bileşeni|[ATL Active Server Page Bileşeni Sihirbazı](../atl/reference/atl-active-server-page-component-wizard.md)|  
 |ATL denetimi|[ATL Denetimi Sihirbazı](../atl/reference/atl-control-wizard.md)|  
-|ATL iletişim|[ATL İletişim Kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|  
+|ATL iletişim kutusu|[ATL İletişim Kutusu Sihirbazı](../atl/reference/atl-dialog-wizard.md)|  
 |ATL COM + 1.0 bileşeni|[ATL COM+ 1.0 Bileşeni Sihirbazı](../atl/reference/atl-com-plus-1-0-component-wizard.md)|  
-|ATL OLEDB tüketici|[ATL OLE DB Tüketicisi Sihirbazı](../atl/reference/atl-ole-db-consumer-wizard.md)|  
+|ATL OLEDB tüketicisi|[ATL OLE DB Tüketicisi Sihirbazı](../atl/reference/atl-ole-db-consumer-wizard.md)|  
 |ATL OLEDB Sağlayıcısı|[ATL OLE DB Sağlayıcısı Sihirbazı](../atl/reference/atl-ole-db-provider-wizard.md)|  
 |ATL özellik sayfası|[ATL Özellik Sayfası Sihirbazı](../atl/reference/atl-property-page-wizard.md)|  
 |ATL Basit Nesne|[ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md)|  
 |WMI Olay sağlayıcısı|WMI Olay sağlayıcısı Sihirbazı|  
-|WMI örnek sağlayıcısı|WMI örneği Sağlayıcı Sihirbazı|  
+|WMI örnek sağlayıcısı|WMI örnek sağlayıcısı Sihirbazı|  
   
 ### <a name="mfc"></a>MFC  
   
@@ -72,8 +72,8 @@ ms.locfileid: "33339780"
 |--------------|------------|  
 |MFC Sınıfı|[MFC Sınıf Ekleme Sihirbazı](../mfc/reference/mfc-add-class-wizard.md)|  
 |ActiveX denetiminden MFC sınıfı|[ActiveX Denetimi Sihirbazından Sınıf Ekleme](../ide/add-class-from-activex-control-wizard.md)|  
-|TypeLib MFC sınıfı|[Typelib sihirbazından sınıf ekleme](../mfc/reference/add-class-from-typelib-wizard.md)|  
-|MFC ODBC tüketici|[MFC ODBC Tüketici Sihirbazı](../mfc/reference/mfc-odbc-consumer-wizard.md)|  
+|Typelib'den MFC sınıfı|[Typelib sihirbazından sınıf ekleme](../mfc/reference/add-class-from-typelib-wizard.md)|  
+|MFC ODBC Tüketicisi|[MFC ODBC Tüketici Sihirbazı](../mfc/reference/mfc-odbc-consumer-wizard.md)|  
   
 ### <a name="generic-classes"></a>Genel Sınıflar  
   
@@ -84,6 +84,6 @@ ms.locfileid: "33339780"
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üye işlevi ekleme](../ide/adding-a-member-function-visual-cpp.md)   
  [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)   
- [Sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)   
+ [Bir sanal işlevi geçersiz kılma](../ide/overriding-a-virtual-function-visual-cpp.md)   
  [MFC ileti işleyicisi](../mfc/reference/adding-an-mfc-message-handler.md)   
  [Sınıf yapısında gezinme](../ide/navigating-the-class-structure-visual-cpp.md)

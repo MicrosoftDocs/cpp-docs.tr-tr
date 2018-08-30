@@ -21,26 +21,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08cf1386ef177823c37bc285392309ec47f3c464
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 282fd41602b70f743926b0fe5322346e9cdfd3fc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340703"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203301"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur. Bunlar, çözümdeki proje dosyalarını yönetmek için kullanılır.  
   
 |Dosya adı|Dizin konumu|Çözüm Gezgini konumu|Açıklama|  
 |--------------|------------------------|--------------------------------|-----------------|  
-|*Solname*.sln|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Çözüm* dosya. Tüm öğeleri bir projenin veya birden çok proje tek bir çözümde düzenler.|  
-|*PROJNAME*.suo|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Çözüm seçenekleri* dosya. Çözümdeki bir proje veya dosyayı açmak her zaman, istediğiniz davranışı ve görünümü, sahip olması özelleştirmelerinizi çözüm için depolar.|  
-|*PROJNAME*.vcxproj|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Proje* dosya. Her proje için özel bilgileri depolar. (Önceki sürümlerde, bu dosya adlı *Projname*.vcproj veya *Projname*.dsp.) Visual C++ proje dosyası örneği için bkz: [proje dosyalarını](../ide/project-files.md).|  
-|*PROJNAME*.vcxitems|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Paylaşılan öğeler proje* dosya. Bu proje yerleşik değil.  Bunun yerine, projenin başka bir C++ projesi tarafından başvurulabilir ve dosyalarından başvuru projenin derleme işleminin bir parçası olur. Bu ortak kodun platformlar arası C++ projeleri ile paylaşmak için kullanılabilir.|
-|*PROJNAME*.sdf|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Veritabanına gözatma* dosya. Gözatma ve gezinti özellikleri gibi destekleyen **Goto tanımı**, **tüm başvuruları Bul**, ve **sınıf görünümü**. Üstbilgi dosyaları ayrıştırma tarafından oluşturulur.|  
-|*PROJNAME.* vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Filtreleri* dosya. Çözüme eklendi dosyasının nereye yerleştirileceğini belirler. Örneğin, bir .h dosyası put **üstbilgi dosyaları** düğümü.|  
-|*PROJNAME.* vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez|*Geçiş kullanıcı* dosya. Visual Studio 2008'den bir proje geçirildikten sonra bu dosyayı herhangi bir .vsprops dosyadan dönüştürüldü bilgiler içerir.|  
-|*PROJNAME*.idl|*PROJNAME*|Kaynak|(Proje özgü) Bir denetim tür kitaplığı arabirimi Açıklama Dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimi sunar. Daha fazla bilgi için bkz: [arabirim tanımı (IDL) dosya](http://msdn.microsoft.com/library/windows/desktop/aa378712) Windows SDK.|  
+|*Solname*.sln|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Çözüm* dosya. Bir projenin tüm öğeleri veya birden çok proje tek bir çözüm düzenler.|  
+|*PROJNAME*.suo|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Çözüm seçenekleri* dosya. Çözümde bir proje veya dosya açın her zaman, istediğiniz davranışı ve görünümü, sahip olacak şekilde özelleştirmelerinizi çözümü depolar.|  
+|*PROJNAME*.vcxproj|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Proje* dosya. Bu, her projeye özel bilgileri depolar. (Önceki sürümlerde, bu dosya olarak adlandırılıyordu *Projname*.vcproj veya *Projname*.dsp.) Visual C++ proje dosyası örneği için bkz: [proje dosyaları](../ide/project-files.md).|  
+|*PROJNAME*.vcxitems|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Paylaşılan öğeler projesi* dosya. Bu proje oluşturulan değil.  Bunun yerine, proje başka bir C++ projesi tarafından başvurulabilir ve dosyalarından başvurulan projenin yapı işleminin bir parçası olur. Bu platformlar arası C++ projeleriyle ortak kod paylaşmak için kullanılabilir.|
+|*PROJNAME*.sdf|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Gözatma veritabanı* dosya. Göz atma ve gezinti özellikleri gibi destekleyen **Goto tanımı**, **tüm başvuruları Bul**, ve **sınıf görünümü**. Üst bilgi dosyaları ayrıştırma tarafından oluşturulur.|  
+|*PROJNAME.* vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Filtreleri* dosya. Bu, çözüme bir dosyasının nereye yerleştirileceğini belirtir. Örneğin, bir .h dosyası yerleştirin **üst bilgi dosyaları** düğümü.|  
+|*PROJNAME.* vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Geçiş kullanıcı* dosya. Bir projeyi Visual Studio 2008'den geçirildikten sonra bu dosya tüm .vsprops dosyasından dönüştürülen bilgileri içerir.|  
+|*PROJNAME*.idl|*PROJNAME*|Kaynak|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](https://msdn.microsoft.com/library/windows/desktop/aa378712) Windows SDK.|  
 |Readme.txt|*PROJNAME*|Proje|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

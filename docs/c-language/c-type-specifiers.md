@@ -15,51 +15,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e37ac421627d4c4503d75eaf65188bbe234af015
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f965481ae1d3abea40577680b1af72004f793123
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388389"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43197234"
 ---
 # <a name="c-type-specifiers"></a>C Tür Tanımlayıcıları
 
-Tür tanımlayıcıları bildirimlerden bir değişken veya işlev bildirimi türünü tanımlar.
+Tür belirleyicilerde bildirimleri bir değişken veya işlev bildirimi türünü tanımlayın.
 
 ## <a name="syntax"></a>Sözdizimi
 
-*tür belirteci*:  
+*tür belirticisi*:  
 &nbsp;&nbsp;**Geçersiz kılma**  
-&nbsp;&nbsp;**char**  
+&nbsp;&nbsp;**Char**  
 &nbsp;&nbsp;**kısa**  
-&nbsp;&nbsp;**Int**  
+&nbsp;&nbsp;**int**  
 &nbsp;&nbsp;**uzun**  
-&nbsp;&nbsp;**Kayan nokta**  
-&nbsp;&nbsp;**Çift**  
+&nbsp;&nbsp;**kayan nokta**  
+&nbsp;&nbsp;**çift**  
 &nbsp;&nbsp;**İmzalı**  
-&nbsp;&nbsp;**İmzasız**  
-&nbsp;&nbsp;*yapı veya birleşim belirticisi*  
-&nbsp;&nbsp;*Liste belirticisi*  
+&nbsp;&nbsp;**İşaretsiz**  
+&nbsp;&nbsp;*struct veya union tanımlayıcısı*  
+&nbsp;&nbsp;*sabit listesi belirticisi*  
 &nbsp;&nbsp;*TypeDef adı*  
 
-**Char imzalı**, **imzalı int**, **imzalı short int**, ve **imzalı long int** türleri ile birlikte bunların **imzalanmamış**  ortaklarınıza ve **enum**, denir *tam sayı* türleri. **Float**, **çift**, ve **uzun çift** tür tanımlayıcıları denir *kayan* veya *kayan nokta* türleri. Tam sayı veya kayan nokta türü belirleyici bir değişken ya da işlevi bildiriminde kullanabilirsiniz. Varsa bir *tür belirteci* sağlanmaz bir bildiriminde gerçekleştirilecek olmasını **int**.
+**Signed char**, **signed int**, **imzalı short int**, ve **imzalı long int** türleri ile birlikte bunların **işaretsiz**  ortaklarınıza ve **enum**, adlandırılır *integral* türleri. **Float**, **çift**, ve **uzun çift** tür tanımlayıcıları denir *kayan* veya *kayan nokta* türleri. Herhangi bir tamsayı veya kayan nokta türü belirticisi, bir değişken veya işlev bildiriminde kullanabilirsiniz. Varsa bir *tür tanımlayıcısı* sağlanmamış bir bildiriminde olmasını alınır **int**.
 
-İsteğe bağlı anahtar sözcükleri **imzalı** ve **imzasız** önünde veya tam sayı türlerinden herhangi birini dışında izleyin **enum**ve ayrıca kullanılabilir durumda tür tanımlayıcıları olarak tek başına olarak anladım **imzalı int** ve **imzasız int**sırasıyla. Tek başına, anahtar sözcüğü kullanıldığında **int** varsayılır **imzalı**. Tek başına, anahtar sözcükler kullanıldığında **uzun** ve **kısa** olarak anladım **uzun tamsayı** ve **short int**.
+İsteğe bağlı anahtar sözcük **imzalı** ve **işaretsiz** önünde veya tam sayı türlerinden herhangi birini dışında izleyin **enum**ve ayrıca kullanılabilir durumda tür tanımlayıcıları olarak tek başına olarak anlaşılmasını **signed int** ve **işaretsiz int**sırasıyla. Tek başına, anahtar sözcüğü kullanıldığında **int** varsayılır **imzalı**. Tek başına, anahtar sözcükleri kullanıldığında **uzun** ve **kısa** olarak anlaşılabilir **long int** ve **kısa tamsayı**.
 
-Numaralandırma türleri temel türleri olarak kabul edilir. Numaralandırma türleri için tür tanımlayıcıları içinde ele alınmıştır [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md).
+Numaralandırma türleri, temel türler olarak kabul edilir. Numaralandırma türleri için tür tanımlayıcıları açıklanmıştır [numaralandırma bildirimleri](../c-language/c-enumeration-declarations.md).
 
-Anahtar sözcüğü **void** üç kullanımı vardır: bir işlevin dönüş türü, bağımsız değişken almayan bir işlev için bir bağımsız değişken türü listesi belirtin ve belirtilmeyen bir türü için bir işaretçi belirtmek için belirtmek için. Kullanabileceğiniz **void** türü herhangi bir değer döndüren işlevler bildirmek için veya belirtilmeyen bir türü için bir işaretçi bildirmek için. Bkz: [bağımsız değişkenleri](../c-language/arguments.md) hakkında bilgi için **void** zaman göründüğü işlevi adından parantez içinde tek başına.
+Anahtar sözcüğü **void** üç kullanımı vardır: bir işlev dönüş türü, bir bağımsız değişken alan bir işlev için bağımsız değişken türü listesi belirtin ve belirtilmeyen bir türün işaretçisine belirtmek için belirtmek için. Kullanabileceğiniz **void** türü herhangi bir değer döndüren işlevleri bildirin veya belirtilmeyen bir türün işaretçisine bildirmek için. Bkz: [bağımsız değişkenleri](../c-language/arguments.md) hakkında bilgi için **void** zaman göründüğü bir işlev adının parantez içinde tek başına.
 
-**Microsoft özel**
+**Microsoft'a özgü**
 
-Türü olup olmadığı denetleniyor şimdi ANSI türü anlamı uyumlu, **kısa** ve türü **int** ayrı türleridir. Örneğin, yeniden tanımlama Derleyici önceki sürümleri tarafından kabul edildi Microsoft C Derleyici de budur.
+Tür denetleme, artık ANSI türü diğer bir deyişle uyumlu, **kısa** ve türü **int** ayrı türleridir. Örneğin, bir önceki derleyici sürümleri tarafından kabul edilen Microsoft C derleyicisi yeniden tanımlama budur.
 
 ```C
 int   myfunc();
 short myfunc();
 ```
 
-Sonraki Bu örnek ayrıca farklı yöneltme hakkında bir uyarı üretir:
+Bu örnekte, aynı zamanda farklı türleri için yöneltme hakkında bir uyarı oluşturur:
 
 ```C
 int *pi;
@@ -68,7 +68,7 @@ short *ps;
 ps = pi;  /* Now generates warning */
 ```
 
-Microsoft C derleyicisi ayrıca oturum farklılıkları için uyarılar oluşturur. Örneğin:
+Microsoft C derleyicisi, aynı zamanda oturum farklılıkları için uyarılar oluşturur. Örneğin:
 
 ```C
 signed int *pi;
@@ -77,13 +77,13 @@ unsigned int *pu
 pi = pu;  /* Now generates warning */
 ```
 
-Tür **void** ifadeleri yan etkileri için değerlendirilir. Türüne sahip bir ifade (var olmayan) değeri kullanamazsınız **void** hiçbir şekilde ya da can dönüştürdüğünüz içinde bir **void** ifadeyle (örtük veya açık dönüştürme) dışında herhangi bir tür için **void** . Diğer bir türü bir ifadenin bir bağlamda kullanıyorsanız burada bir **void** ifade gereklidir, değeri göz ardı edilir.
+Tür **void** ifadelerin yan etkileri için değerlendirilir. (Var olmayan) bir değer türüne sahip ifade kullanılamaz **void** hiçbir yolu ya da can dönüştürmeniz de bir **void** ifadesiyle (örtük veya açık dönüştürme) dışında herhangi bir tür için **void** . Diğer türdeki bir ifade bir bağlamda kullanıyorsanız burada bir **void** ifade gereklidir, değeri atılır.
 
-ANSI belirtimine uygun olarak **void\* \***  olarak kullanılamaz **int\*\***. Yalnızca **void\***  belirtilmeyen bir türü için bir işaretçi olarak kullanılabilir.
+ANSI belirtime uygun <strong>void\* \*</strong>  olarak kullanılamaz <strong>int\*\*</strong>. Yalnızca **void** <strong>\*</strong> belirtilmeyen bir türün işaretçisi olarak kullanılabilir.
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
-Ek tür tanımlayıcıları ile oluşturabileceğiniz **typedef** açıklandığı gibi bildirimleri [Typedef bildirimleri](../c-language/typedef-declarations.md). Bkz: [temel türleri depolama](../c-language/storage-of-basic-types.md) boyutu bilgi her tür için.
+Ek tür tanımlayıcıları ile oluşturabileceğiniz **typedef** açıklandığı bildirimleri [Typedef bildirimleri](../c-language/typedef-declarations.md). Bkz: [temel türlerin depolanması](../c-language/storage-of-basic-types.md) her türün boyut hakkında bilgi için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 21910a85dfecf6bd1e66b4ce0df366e3841f3c36
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3f8e1875f318b35e0b28cf1e36f926d54cab4831
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465541"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204134"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 Şema satır kümeleri uygulamasını sağlar.  
@@ -145,7 +145,7 @@ HRESULT CreateSchemaRowset(IUnknown *pUnkOuter,
   
 #### <a name="parameters"></a>Parametreler  
  *pUnkOuter*  
- [in] Bir dış [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanırken, aksi takdirde NULL.  
+ [in] Bir dış [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanırken, aksi takdirde NULL.  
   
  *cRestrictions*  
  [in] Şema satır kümesi için uygulanan kısıtlamalara sayısı.  
@@ -279,7 +279,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
  Bu işlev uygulaması kullanıcının oturumu sınıfı, eşleme bir şemaya sahip olmasını gerektirir. Şema eşleme bilgileri kullanarak, bunu ardından haritadaki şemaları için GUID'leri dizisi ile yanıt verir. Bu sağlayıcı tarafından desteklenen şema temsil eder.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IDBSchemaRowsetImpl sınıfı üyeleri](http://msdn.microsoft.com/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
+ [IDBSchemaRowsetImpl sınıfı üyeleri](https://msdn.microsoft.com/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
  [Şema satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)   
  [Şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md)    
  [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)    

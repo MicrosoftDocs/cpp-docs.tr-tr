@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c37e8cb4d69e93fd0842aa7cb2149331f502eae
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 03588a0c41633f632c99c8c178d6b69b39b00e48
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850053"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199207"
 ---
 # <a name="cscrollbar-class"></a>CScrollBar sınıfı
 Windows kaydırma çubuğu denetimi işlevlerini sağlar.  
@@ -195,13 +195,13 @@ BOOL GetScrollBarInfo(PSCROLLBARINFO pScrollInfo) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pScrollInfo*  
- Bir işaretçi [SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787535) yapısı.  
+ Bir işaretçi [SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevselliğine öykünür [SBM_SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787545) Windows SDK içinde açıklandığı gibi ileti.  
+ Bu üye işlevi işlevselliğine öykünür [SBM_SCROLLBARINFO](/windows/desktop/Controls/sbm-getscrollbarinfo) Windows SDK içinde açıklandığı gibi ileti.  
   
 ##  <a name="getscrollinfo"></a>  CScrollBar::GetScrollInfo  
  Bu bilgileri alır, `SCROLLINFO` yapısı bir kaydırma çubuğu hakkında tutar.  
@@ -214,7 +214,7 @@ BOOL GetScrollInfo(
   
 ### <a name="parameters"></a>Parametreler  
  *lpScrollInfo*  
- Bir işaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Bir işaretçi bir [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  *nMask*  
  Alınacak kaydırma çubuğu parametreleri belirtir. Tipik kullanım, SIF_ALL, SIF_PAGE, SIF_POS SIF_TRACKPOS ve SIF_RANGE bir birleşimini belirtir. Bkz: `SCROLLINFO` nMask değerler hakkında daha fazla bilgi için.  
@@ -225,7 +225,7 @@ BOOL GetScrollInfo(
 ### <a name="remarks"></a>Açıklamalar  
  `GetScrollInfo` uygulamaların 32-bit kaydırma konumları kullanmasını sağlar.  
   
- [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.  
+ [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.  
   
  MFC Windows ileti işleyicileri kaydırma çubuğu konumunu belirten [CWnd::OnHScroll](../../mfc/reference/cwnd-class.md#onhscroll) ve [CWnd::OnVScroll](../../mfc/reference/cwnd-class.md#onvscroll), yalnızca 16 bitlik konum verileri sağlar. `GetScrollInfo` ve `SetScrollInfo` 32 bit kaydırma çubuğu konum verileri sağlar. Bu nedenle, bir uygulama çağırabilirsiniz `GetScrollInfo` ya da işlenirken `CWnd::OnHScroll` veya `CWnd::OnVScroll` 32-bit kaydırma çubuğu konum verileri elde edilir.  
   
@@ -294,7 +294,7 @@ BOOL SetScrollInfo(
   
 ### <a name="parameters"></a>Parametreler  
  *lpScrollInfo*  
- Bir işaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı.  
+ Bir işaretçi bir [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı.  
   
  *bRedraw*  
  Kaydırma çubuğunu yeni bilgileri yansıtacak şekilde yeniden olup olmadığını belirtir. Varsa *bRedraw* doğru ise, kaydırma çubuğu yeniden çizilir. FALSE ise, çizilmez. Kaydırma çubuğu varsayılan olarak çizilir.  
@@ -305,7 +305,7 @@ BOOL SetScrollInfo(
 ### <a name="remarks"></a>Açıklamalar  
  Gerekli değerler sağlamanız gereken `SCROLLINFO` parametreleri bayrak değerleri dahil olmak üzere, yapı.  
   
- `SCROLLINFO` Yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.  
+ `SCROLLINFO` Yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CScrollBar#3](../../mfc/reference/codesnippet/cpp/cscrollbar-class_3.cpp)]  

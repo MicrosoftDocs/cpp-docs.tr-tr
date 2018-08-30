@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f2d5e0fac0d9ab89ef14a3bfafc78fe1c1138673
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dd546f6d3eb3b2eae60b4bbc8c8fa9b0b4ed00f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602013"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201031"
 ---
 # <a name="immediatebind"></a>immediatebind
 
@@ -36,7 +36,7 @@ Veritabanı veri bağlama nesnesinin bir özelliği yapılan tüm değişiklikle
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmmediatebind** C++ özniteliği ile aynı işlevlere sahip [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) MIDL özniteliği.
+**İmmediatebind** C++ özniteliği ile aynı işlevlere sahip [immediatebind](/windows/desktop/Midl/immediatebind) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66ea555d08ecb92895e170c3088332a532149ad1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 11f474675d8ba5b370b1f13f048e989d9c283bde
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401119"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43204634"
 ---
 # <a name="memmove-wmemmove"></a>memmove, wmemmove
 
-Bir arabellek diğerine taşır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
+Bir arabellek diğerine taşır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [memmove_s, wmemmove_s](memmove-s-wmemmove-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -69,19 +69,19 @@ Hedef nesne.
 Kaynak nesne.
 
 *Sayısı*<br/>
-Bayt sayısı (**memmove**) veya karakter (**wmemmove**) kopyalamak için.
+Bayt sayısı (**memmove**) veya karakterleri (**wmemmove**) kopyalamak için.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değeri *taşınmaya*.
+Değerini *dest*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kopya *sayısı* bayt (**memmove**) veya karakter (**wmemmove**) gelen *src* için *taşınmaya*. Kaynak alan ve hedef bazı bölümlerinin çakışırsa, hem işlevleri özgün kaynak bayt çakışan bölgede üzerine önce kopyalandığından emin olun.
+Kopya *sayısı* bayt (**memmove**) veya karakterleri (**wmemmove**) öğesinden *src* için *dest*. Bazı kaynak alanını ve hedef bölgelerini çakışırsa, her iki işlev çakışan bölgede özgün kaynak bayt üzerine önce kopyalandığından emin olun.
 
-**Güvenlik Notu** boyutu veya daha büyük kaynak arabelleği hedef arabelleği aynı olduğundan emin olun. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
-**Memmove** ve **wmemmove** işlevleri yalnızca kullanım dışı varsa sabiti **_CRT_SECURE_DEPRECATE_MEMORY** sırada ekleme deyimi önce tanımlanan kullanım dışı, aşağıdaki örnekteki gibi olacak şekilde işlevleri:
+**Memmove** ve **wmemmove** işlevleri yalnızca kullanımdan kaldırılacaktır varsa sabiti **_CRT_SECURE_DEPRECATE_MEMORY** ekleme deyimi için sırayla önce tanımlanır kullanım dışı, aşağıdaki örnekte olduğu gibi olmasını İşlevler:
 
 ```C
 #define _CRT_SECURE_DEPRECATE_MEMORY
@@ -102,7 +102,7 @@ veya
 |**memmove**|\<String.h >|
 |**wmemmove**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

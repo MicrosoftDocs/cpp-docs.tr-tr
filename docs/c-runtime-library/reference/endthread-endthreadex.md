@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 898281e0652345f22c63076cf4b0a73294faaf04
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 2bed0b93b2c9643a19aa8fd97c0e52da2ba1f8be
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464991"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198796"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
@@ -71,7 +71,7 @@ void _endthreadex(
 > [!NOTE]
 > LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API; Bu, ayrılan kaynakları tekrar kullanılabilir hale çalışma zamanı sistemi engeller. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.
 
-**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
+**_endthread** iş parçacığı işleyicisini otomatik olarak kapanır. (Bu davranış, Win32 farklıdır **ExitThread** API.) Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API.
 
 Win32 gibi **ExitThread** API **_endthreadex** iş parçacığı işleyicisini kapatmaz. Bu nedenle, kullandığınız zaman **_beginthreadex** ve **_endthreadex**, iş parçacığı işleyicisini Win32 çağırarak kapatmalısınız **CloseHandle** API.
 

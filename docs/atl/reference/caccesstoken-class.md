@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68ae5547e2cc650c65b4a67d9734f00cf88b76c8
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 69d25b87c03216b151a29c7688e61fcc278d0dd7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885620"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199175"
 ---
 # <a name="caccesstoken-class"></a>CAccessToken sınıfı
 Bir erişim belirteci için bir sarmalayıcı sınıftır.  
@@ -140,9 +140,9 @@ class CAccessToken
 |[CAccessToken::SetPrimaryGroup](#setprimarygroup)|Birincil grup ayarlamak için bu yöntemi çağırın `CAccessToken` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -212,13 +212,13 @@ bool CreateImpersonationToken(
  İşaretçi yeni `CAccessToken` nesne.  
   
  *Sil*  
- Belirtir bir [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) listelenmiş yeni belirteç kimliğe bürünme düzeyini sağlayan türü.  
+ Belirtir bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) listelenmiş yeni belirteç kimliğe bürünme düzeyini sağlayan türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateImpersonationToken` çağrıları [DuplicateToken](http://msdn.microsoft.com/library/windows/desktop/aa446616) yeni bir özellik alma belirteci oluşturmak için.  
+ `CreateImpersonationToken` çağrıları [DuplicateToken](https://msdn.microsoft.com/library/windows/desktop/aa446616) yeni bir özellik alma belirteci oluşturmak için.  
   
 ##  <a name="createprimarytoken"></a>  CAccessToken::CreatePrimaryToken  
  Yeni bir birincil belirteç oluşturmak için bu yöntemi çağırın.  
@@ -235,16 +235,16 @@ bool CreatePrimaryToken(
  İşaretçi yeni `CAccessToken` nesne.  
   
  *dwDesiredAccess*  
- Yeni belirteç için istenen erişim haklarını belirtir. Varsayılan olarak, MAXIMUM_ALLOWED arayan için geçerli olan tüm erişim hakları ister. Bkz: [erişim hakları ve erişim maskesi](http://msdn.microsoft.com/library/windows/desktop/aa374902) üzerinde daha fazla erişim hakları için.  
+ Yeni belirteç için istenen erişim haklarını belirtir. Varsayılan olarak, MAXIMUM_ALLOWED arayan için geçerli olan tüm erişim hakları ister. Bkz: [erişim hakları ve erişim maskesi](/windows/desktop/SecAuthZ/access-rights-and-access-masks) üzerinde daha fazla erişim hakları için.  
   
  *pTokenAttributes*  
- İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni belirteç için bir güvenlik tanımlayıcısının belirtir ve alt işlemlerin belirteç devralınabilir olup olmadığını belirler. Varsa *pTokenAttributes* NULL, varsayılan bir güvenlik tanımlayıcısı belirteci alır ve tanıtıcı devralınamaz.  
+ İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni belirteç için bir güvenlik tanımlayıcısının belirtir ve alt işlemlerin belirteç devralınabilir olup olmadığını belirler. Varsa *pTokenAttributes* NULL, varsayılan bir güvenlik tanımlayıcısı belirteci alır ve tanıtıcı devralınamaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreatePrimaryToken` çağrıları [DuplicateTokenEx](http://msdn.microsoft.com/library/windows/desktop/aa446617) yeni bir birincil belirteç oluşturmak için.  
+ `CreatePrimaryToken` çağrıları [DuplicateTokenEx](https://msdn.microsoft.com/library/windows/desktop/aa446617) yeni bir birincil belirteç oluşturmak için.  
   
 ##  <a name="createprocessasuser"></a>  CAccessToken::CreateProcessAsUser  
  Tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için bu yöntemi çağırın `CAccessToken` nesne.  
@@ -271,22 +271,22 @@ bool CreateProcessAsUser(
  Yürütülecek komut satırı belirten bir null ile sonlandırılmış dize işaretçisi.  
   
  *pProcessInformation*  
- İşaretçi bir [PROCESS_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/ms684873) yapısı yeni işlem ile ilgili kimlik bilgilerini alır.  
+ İşaretçi bir [PROCESS_INFORMATION](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_process_information) yapısı yeni işlem ile ilgili kimlik bilgilerini alır.  
   
  *pStartupInfo*  
- İşaretçi bir [değeri](http://msdn.microsoft.com/library/windows/desktop/ms686331) yeni işlemin ana penceresi nasıl görünmelidir belirten yapısı.  
+ İşaretçi bir [değeri](/windows/desktop/api/processthreadsapi/ns-processthreadsapi-_startupinfoa) yeni işlemin ana penceresi nasıl görünmelidir belirten yapısı.  
   
  *dwCreationFlags*  
- Öncelik sınıfı ve işlem oluşturmayı denetleyen ek bayrakları belirtir. Win32 işlevi görmek [CreateProcessAsUser](http://msdn.microsoft.com/library/windows/desktop/ms682429) bayrakların listesi için.  
+ Öncelik sınıfı ve işlem oluşturmayı denetleyen ek bayrakları belirtir. Win32 işlevi görmek [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) bayrakların listesi için.  
   
  *bLoadProfile*  
- TRUE ise, kullanıcının profili ile yüklenir [LoadUserProfile](http://msdn.microsoft.com/library/windows/desktop/bb762281).  
+ TRUE ise, kullanıcının profili ile yüklenir [LoadUserProfile](/windows/desktop/api/userenv/nf-userenv-loaduserprofilea).  
   
  *pProcessAttributes*  
- İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı yeni işlem için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pProcessAttributes* NULL, işlem varsayılan bir güvenlik açıklayıcısı alır ve tanıtıcı devralınamaz.  
+ İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı yeni işlem için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pProcessAttributes* NULL, işlem varsayılan bir güvenlik açıklayıcısı alır ve tanıtıcı devralınamaz.  
   
  *pThreadAttributes*  
- İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni iş parçacığı için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pThreadAttributes* NULL, iş parçacığı bir varsayılan güvenlik tanımlayıcısını alır ve tanıtıcı devralınamaz.  
+ İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) yapısı, yeni iş parçacığı için bir güvenlik açıklayıcısı belirtir ve döndürülen tanıtıcının alt işlemler devralınabilir olup olmadığını belirler. Varsa *pThreadAttributes* NULL, iş parçacığı bir varsayılan güvenlik tanımlayıcısını alır ve tanıtıcı devralınamaz.  
   
  *bInherit*  
  Yeni işlem çağırma işlemden tanıtıcıları devralıp almadığını gösterir. TRUE ise, her devralınabilir açık tanıtıcı çağıran işlemin içinde yeni bir işlem tarafından devralınır. Devralınan tanıtıcıları özgün tanıtıcıları aynı değeri ve erişim ayrıcalıklarına sahiptir.  
@@ -298,7 +298,7 @@ bool CreateProcessAsUser(
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateProcessAsUser` kullanan `CreateProcessAsUser` tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32 işlevini `CAccessToken` nesne. Açıklamasını görmek [CreateProcessAsUser](http://msdn.microsoft.com/library/windows/desktop/ms682429) Gerekli Parametreler tam bir irdelemesi için işlevi.  
+ `CreateProcessAsUser` kullanan `CreateProcessAsUser` tarafından temsil edilen kullanıcı güvenlik bağlamında çalışan yeni bir işlem oluşturmak için Win32 işlevini `CAccessToken` nesne. Açıklamasını görmek [CreateProcessAsUser](https://msdn.microsoft.com/library/windows/desktop/ms682429) Gerekli Parametreler tam bir irdelemesi için işlevi.  
   
  Başarılı olması bu yöntemin `CAccessToken` (kısıtlı bir belirteç olmadığı sürece), nesne AssignPrimaryToken tutun gerekir ve IncreaseQuota ayrıcalıkları.  
   
@@ -330,7 +330,7 @@ bool CreateRestrictedToken(
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CreateRestrictedToken` kullanan [CreateRestrictedToken](http://msdn.microsoft.com/library/windows/desktop/aa446583) yeni bir Win32 işlevini `CAccessToken` kısıtlama nesnesi.  
+ `CreateRestrictedToken` kullanan [CreateRestrictedToken](https://msdn.microsoft.com/library/windows/desktop/aa446583) yeni bir Win32 işlevini `CAccessToken` kısıtlama nesnesi.  
   
 > [!IMPORTANT]
 >  Kullanırken `CreateRestrictedToken`, aşağıdaki işlemleri yapmalısınız: mevcut bir belirteç geçerli (ve kullanıcı tarafından girilen) ve *SidsToDisable* ve *PrivilegesToDelete* hem geçerli (hem de kullanıcı tarafından girilen). Yöntem FALSE döndürürse, işlevselliği reddet.  
@@ -486,7 +486,7 @@ bool GetImpersonationLevel(
   
 ### <a name="parameters"></a>Parametreler  
  *pImpersonationLevel*  
- İşaretçi bir [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) kimliğe bürünme düzeyi bilgileri alacak numaralandırma türü.  
+ İşaretçi bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) kimliğe bürünme düzeyi bilgileri alacak numaralandırma türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -500,7 +500,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pluid*  
- İşaretçi bir [LUID'ini](http://msdn.microsoft.com/library/windows/desktop/aa379261) hangi alır oturum açma oturumu kimliği  
+ İşaretçi bir [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) hangi alır oturum açma oturumu kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -591,7 +591,7 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [OpenProcessToken](http://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 işlevi.  
+ Çağrıları [OpenProcessToken](https://msdn.microsoft.com/library/aa379295\(vs.85\).aspx) Win32 işlevi.  
   
 ##  <a name="getprofile"></a>  CAccessToken::GetProfile  
  İle ilişkili kullanıcı profili işaret tanıtıcı almak için bu yöntemi çağırın `CAccessToken` nesne.  
@@ -612,7 +612,7 @@ bool GetSource(TOKEN_SOURCE* pSource) const throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pSource*  
- İşaretçi bir [TOKEN_SOURCE](http://msdn.microsoft.com/library/windows/desktop/aa379631) yapısı.  
+ İşaretçi bir [TOKEN_SOURCE](/windows/desktop/api/winnt/ns-winnt-_token_source) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -626,7 +626,7 @@ bool GetStatistics(TOKEN_STATISTICS* pStatistics) const throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pStatistics*  
- İşaretçi bir [TOKEN_STATISTICS](http://msdn.microsoft.com/library/windows/desktop/aa379632) yapısı.  
+ İşaretçi bir [TOKEN_STATISTICS](/windows/desktop/api/winnt/ns-winnt-_token_statistics) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -679,7 +679,7 @@ bool GetTokenId(LUID* pluid) const throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pluid*  
- İşaretçi bir [LUID'ini](http://msdn.microsoft.com/library/windows/desktop/aa379261) hangi alır belirteç kimliği  
+ İşaretçi bir [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) hangi alır belirteç kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -693,7 +693,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *pType*  
- Adresi [TOKEN_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379633) değişkeni, başarı, belirtecin türü alır.  
+ Adresi [TOKEN_TYPE](/windows/desktop/api/winnt/ne-winnt-_token_type) değişkeni, başarı, belirtecin türü alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -805,16 +805,16 @@ bool LogonUser(
  Belirtilen kullanıcı hesabı için düz metin parolayı belirtir null ile sonlandırılmış bir dize işaretçisi *pszUserName*.  
   
  *dwLogonType*  
- Oturum açma işlemi gerçekleştirmek için türünü belirtir. Bkz: [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) daha fazla ayrıntı için.  
+ Oturum açma işlemi gerçekleştirmek için türünü belirtir. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) daha fazla ayrıntı için.  
   
  *dwLogonProvider*  
- Oturum açma sağlayıcısını belirtir. Bkz: [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) daha fazla ayrıntı için.  
+ Oturum açma sağlayıcısını belirtir. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) daha fazla ayrıntı için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Erişim belirteci üzerinden oturum açma kaynaklanan ile ilişkili olabilir `CAccessToken`. Başarılı olması bu yöntemin `CAccessToken` nesnesi SE_TCB_NAME ayrıcalıklar, güvenilen bir bilgisayar temel bir parçası olarak sahibi tanımlayan tutar. Bkz: [LogonUser](http://msdn.microsoft.com/library/windows/desktop/aa378184) gereken ayrıcalıklar ilgili daha fazla bilgi.  
+ Erişim belirteci üzerinden oturum açma kaynaklanan ile ilişkili olabilir `CAccessToken`. Başarılı olması bu yöntemin `CAccessToken` nesnesi SE_TCB_NAME ayrıcalıklar, güvenilen bir bilgisayar temel bir parçası olarak sahibi tanımlayan tutar. Bkz: [LogonUser](/windows/desktop/api/winbase/nf-winbase-logonusera) gereken ayrıcalıklar ilgili daha fazla bilgi.  
   
 ##  <a name="opencomclienttoken"></a>  CAccessToken::OpenCOMClientToken  
  İşleme başlatmak için bir çağrı bir istemciden bir COM sunucusu bu yöntemi çağırın `CAccessToken` COM istemcisi erişim belirteci ile.  
@@ -834,7 +834,7 @@ bool OpenCOMClientToken(
  Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran COM istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.  
   
  *bOpenAsSelf*  
- Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
+ Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
   
  Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.  
   
@@ -866,7 +866,7 @@ bool OpenNamedPipeClientToken(
  Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran kanal istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.  
   
  *bOpenAsSelf*  
- Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
+ Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
   
  Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.  
   
@@ -898,7 +898,7 @@ bool OpenRPCClientToken(
  Bu çağrının başarıyla tamamlanırsa TRUE ise, geçerli iş parçacığı çağıran RPC istemci kimliğine bürünür. FALSE ise, erişim belirtecini açılır, ancak bu çağrı tamamlandığında iş parçacığı kimliğe bürünme belirtecini olmaz.  
   
  *bOpenAsSelf*  
- Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
+ Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
   
  Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.  
   
@@ -927,12 +927,12 @@ bool OpenThreadToken(
  Bu yöntem tamamlandığında iş parçacığının TRUE ise istenen kimliğe bürünme düzeyinde kalır. FALSE ise, iş parçacığının kendi özgün kimliğe bürünme düzeyini döner.  
   
  *bOpenAsSelf*  
- Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](http://msdn.microsoft.com/library/windows/desktop/ms683182) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
+ Erişim denetimi iş parçacığı arama güvenlik bağlamında karşı yapılacak olup olmadığını belirten [GetThreadToken](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getcurrentthread) yöntem veya işlem çağıran iş parçacığı için güvenlik bağlamı.  
   
  Bu parametre FALSE ise, erişim denetimi, çağıran iş parçacığı için güvenlik bağlamı kullanılarak gerçekleştirilir. İş parçacığı bir istemci kimliğine bürünme, bu güvenlik bağlamı, istemci işlemi olabilir. Bu parametre TRUE ise, erişim denetimi, çağıran iş parçacığı için işlem güvenlik bağlamını kullanarak yapılır.  
   
  *Sil*  
- Belirtir bir [SECURITY_IMPERSONATION_LEVEL](http://msdn.microsoft.com/library/windows/desktop/aa379572) listelenmiş belirteç kimliğe bürünme düzeyini sağlayan türü.  
+ Belirtir bir [SECURITY_IMPERSONATION_LEVEL](/windows/desktop/api/winnt/ne-winnt-_security_impersonation_level) listelenmiş belirteç kimliğe bürünme düzeyini sağlayan türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
@@ -953,7 +953,7 @@ bool PrivilegeCheck(
   
 ### <a name="parameters"></a>Parametreler  
  *RequiredPrivileges*  
- İşaretçi bir [PRIVILEGE_SET](http://msdn.microsoft.com/library/windows/desktop/aa379307) yapısı.  
+ İşaretçi bir [PRIVILEGE_SET](/windows/desktop/api/winnt/ns-winnt-_privilege_set) yapısı.  
   
  *pbResult*  
  Yöntem bir değere işaretçi ayarlar tüm belirtilen ayrıcalık içinde etkin olup olmadığını belirtmek için `CAccessToken` nesne.  
@@ -962,7 +962,7 @@ bool PrivilegeCheck(
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `PrivilegeCheck` döndürür, `Attributes` her üyesi [LUID_AND_ATTRIBUTES konusuna](http://msdn.microsoft.com/library/windows/desktop/aa379263) karşılık gelen ayrıcalık etkinse yapısı SE_PRIVILEGE_USED_FOR_ACCESS için ayarlanır. Bu yöntemin çağırdığı [PrivilegeCheck](http://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 işlevi.  
+ Zaman `PrivilegeCheck` döndürür, `Attributes` her üyesi [LUID_AND_ATTRIBUTES konusuna](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes) karşılık gelen ayrıcalık etkinse yapısı SE_PRIVILEGE_USED_FOR_ACCESS için ayarlanır. Bu yöntemin çağırdığı [PrivilegeCheck](https://msdn.microsoft.com/library/windows/desktop/aa379304) Win32 işlevi.  
   
 ##  <a name="revert"></a>  CAccessToken::Revert  
  Kimliğe bürünme belirtecini kullanarak bir iş parçacığını durdurmak için bu yöntemi çağırın.  
@@ -1034,5 +1034,5 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ATLSecurity örnek](../../visual-cpp-samples.md)   
- [Erişim belirteçleri](http://msdn.microsoft.com/library/windows/desktop/aa374909)   
+ [Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

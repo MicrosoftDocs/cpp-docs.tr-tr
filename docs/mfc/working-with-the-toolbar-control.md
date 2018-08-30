@@ -17,36 +17,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32d3cc6244bc2f928c8d1d0c6e46d1bc5a57aa3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e488d4b475cbc73f57bb90ccd081b6d490221d58
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385943"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202266"
 ---
 # <a name="working-with-the-toolbar-control"></a>Araç Çubuğu Denetimiyle Çalışma
-Bu makalede nasıl erişebileceğinizi açıklanmaktadır [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesinin altındaki bir [CToolBar](../mfc/reference/ctoolbar-class.md) çubuklarınızı üzerinde daha fazla denetim için. Bu gelişmiş bir konudur.  
+Bu makalede nasıl erişebileceğinizi açıklanmaktadır [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesinin altındaki bir [CToolBar](../mfc/reference/ctoolbar-class.md) çubuklarınızı üzerinde daha fazla denetime. Bu gelişmiş bir konudur.  
   
 ## <a name="procedures"></a>Yordamlar  
   
-#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin temel araç yaygın bir denetim erişmek için  
+#### <a name="to-access-the-toolbar-common-control-underlying-your-ctoolbar-object"></a>CToolBar nesnenizin temel araç çubuğu ortak denetim erişmek için  
   
 1.  Çağrı [CToolBar::GetToolBarCtrl](../mfc/reference/ctoolbar-class.md#gettoolbarctrl).  
   
- `GetToolBarCtrl` bir başvuru döndürür bir [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesnesi. Araç çubuğu denetimi sınıfının üye işlevleri çağırmak için başvuru kullanabilirsiniz.  
+ `GetToolBarCtrl` bir başvuru döndürür bir [CToolBarCtrl](../mfc/reference/ctoolbarctrl-class.md) nesne. Araç çubuğu denetimi sınıfın üye işlevleri çağırmak için bir başvuru kullanabilirsiniz.  
   
 > [!CAUTION]
->  Arama sırasında `CToolBarCtrl` **almak** işlevleri güvenli, çağırırsanız dikkatli **ayarlamak** işlevleri. Bu gelişmiş bir konudur. Normalde erişim temel araç çubuğu denetimi gerek yoktur.  
+>  Çağrılırken `CToolBarCtrl` **alma** işlevleri, güvenli, çağırırsanız dikkatli **ayarlamak** işlevleri. Bu gelişmiş bir konudur. Normalde temel alınan araç çubuğu denetimi erişimi gerekmez.  
   
 ### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   
--   [Denetimleri (Windows ortak denetimleri)](../mfc/controls-mfc.md)  
+-   [Denetimler (Windows ortak denetimleri)](../mfc/controls-mfc.md)  
   
 -   [Araç çubuğu temelleri](../mfc/toolbar-fundamentals.md)  
   
 -   [Yerleşen ve kayan araç çubukları](../mfc/docking-and-floating-toolbars.md)  
   
--   [Araç çubuğu dinamik olarak yeniden boyutlandırma](../mfc/docking-and-floating-toolbars.md)  
+-   [Araç çubuğunda dinamik olarak yeniden boyutlandırma](../mfc/docking-and-floating-toolbars.md)  
   
 -   [Araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md)  
   
@@ -64,7 +64,7 @@ Bu makalede nasıl erişebileceğinizi açıklanmaktadır [CToolBarCtrl](../mfc/
   
 -   [Denetim çubukları](../mfc/control-bars.md)  
   
- Windows ortak denetimleri kullanma hakkında genel bilgi için bkz: [ortak denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775493).  
+ Windows ortak denetimleri kullanma hakkında genel bilgi için bkz: [ortak denetimleri](/windows/desktop/Controls/common-controls-intro).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Araç Çubuğu Uygulaması](../mfc/mfc-toolbar-implementation.md)

@@ -42,15 +42,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddf8e6530530552a4ef7b811698c816352f7719c
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 7c229a07d7d8dbf8d74e487c99e6f79b8203f04f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122973"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202651"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
-Windows ortak değer değiştirme düğmesi denetimi işlevselliğini sağlar.  
+Windows ortak değer değiştirme düğmesi denetimi işlevlerini sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -64,37 +64,37 @@ class CSpinButtonCtrl : public CWnd
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSpinButtonCtrl::CSpinButtonCtrl](#cspinbuttonctrl)|Oluşturan bir `CSpinButtonCtrl` nesnesi.|  
+|[CSpinButtonCtrl::CSpinButtonCtrl](#cspinbuttonctrl)|Oluşturur bir `CSpinButtonCtrl` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CSpinButtonCtrl::Create](#create)|Değer değiştirme düğmesi denetimi oluşturur ve ona ekler bir `CSpinButtonCtrl` nesnesi.|  
-|[CSpinButtonCtrl::CreateEx](#createex)|Değer değiştirme düğmesi denetimi belirtilen Windows genişletilmiş stilleri oluşturur ve ekler bir `CSpinButtonCtrl` nesnesi.|  
+|[CSpinButtonCtrl::Create](#create)|Değer değiştirme düğmesi denetimi oluşturur ve ona bağlanan bir `CSpinButtonCtrl` nesne.|  
+|[CSpinButtonCtrl::CreateEx](#createex)|Belirtilen Windows genişletilmiş stilleriyle bir değer değiştirme düğmesi denetimi oluşturur ve ona ekler bir `CSpinButtonCtrl` nesne.|  
 |[CSpinButtonCtrl::GetAccel](#getaccel)|Değer değiştirme düğmesi denetimi için hızlandırma bilgilerini alır.|  
 |[CSpinButtonCtrl::GetBase](#getbase)|Değer değiştirme düğmesi denetimi için geçerli temel alır.|  
-|[CSpinButtonCtrl::GetBuddy](#getbuddy)|Geçerli arkadaş penceresi için bir işaretçi alır.|  
+|[CSpinButtonCtrl::GetBuddy](#getbuddy)|Geçerli buddy penceresindeki bir işaretçi alır.|  
 |[CSpinButtonCtrl::GetPos](#getpos)|Değer değiştirme düğmesi denetimi geçerli konumunu alır.|  
 |[CSpinButtonCtrl::GetRange](#getrange)|Üst ve alt sınırları (aralık) için bir değer değiştirme düğmesi denetimi alır.|  
-|[CSpinButtonCtrl::SetAccel](#setaccel)|Değer değiştirme düğmesi denetimi hızlandırma ayarlar.|  
-|[CSpinButtonCtrl::SetBase](#setbase)|Değer değiştirme düğmesi denetimi için temel ayarlar.|  
-|[CSpinButtonCtrl::SetBuddy](#setbuddy)|Arkadaş pencerenin değer değiştirme düğmesi denetimi için ayarlar.|  
-|[CSpinButtonCtrl::SetPos](#setpos)|Geçerli konumu denetimi için ayarlar.|  
+|[CSpinButtonCtrl::SetAccel](#setaccel)|Hızlandırma değer değiştirme düğmesi denetimi için ayarlar.|  
+|[CSpinButtonCtrl::SetBase](#setbase)|Temel bir değer değiştirme düğmesi denetimi için ayarlar.|  
+|[CSpinButtonCtrl::SetBuddy](#setbuddy)|Buddy penceresindeki Değer değiştirme düğmesi denetimi için ayarlar.|  
+|[CSpinButtonCtrl::SetPos](#setpos)|Geçerli konum denetimi için ayarlar.|  
 |[CSpinButtonCtrl::SetRange](#setrange)|Üst ve alt sınırları (aralık) bir değer değiştirme düğmesi denetimi için ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- "(Bir yukarı-aşağı denetimi olarak da bilinir) bir değer değiştirme düğmesi denetimi", kullanıcının artırın veya kaydırma konumunu veya Yardımcısı denetiminde gösterilen sayı gibi bir değer azaltma için tıklatabileceği ok düğmelerini çiftidir. Değer değiştirme düğmesi denetimi ile ilişkilendirilen değeri, geçerli konumuna adı verilir. Değer değiştirme düğmesi denetimi "arkadaş pencere." olarak adlandırılan bir yardımcı denetimle en sık kullanılan  
+ "(Bir yukarı-aşağı denetimi olarak da bilinir) bir değer değiştirme düğmesi denetimi" artırın veya kaydırma konumunu veya bir özel denetimde görüntülenen bir sayı gibi bir değeri Azalt kullanıcının tıklayabileceği ok düğmelerini çifti var. Değer değiştirme düğmesi denetimi ile ilişkilendirilen değeri, geçerli konumuna çağrılır. Değer değiştirme düğmesi denetimi genellikle bir "buddy penceresindeki." adlı bir yardımcı denetimiyle kullanılır  
   
- Bu denetim (ve bu nedenle `CSpinButtonCtrl` sınıfı) yalnızca Windows 95/98 ve Windows NT sürüm 3.51 altında çalışan programları için kullanılabilir ve üzerinde desteklenir.  
+ Bu denetimi (ve bu nedenle `CSpinButtonCtrl` sınıfı) ve üzeri yalnızca Windows 95/98 ve Windows NT sürüm 3.51 altında çalışan programlar için kullanılabilir.  
   
- Kullanıcı için bir değer değiştirme düğmesi denetimi ve arkadaş penceresini genellikle gibi tek bir denetim arayın. Değer değiştirme düğmesi denetimi otomatik olarak kendisini yanındaki kendi arkadaş penceresi, konum olduğunu ve geçerli konumuna arkadaş penceresinin başlık otomatik olarak ayarlayın, belirtebilirsiniz. Sayısal giriş kullanıcıdan istemek için bir düzen denetimi ile değer değiştirme düğmesi denetimi kullanın.  
+ Kullanıcı için bir değer değiştirme düğmesi denetimi ve buddy penceresinin genellikle tek bir denetim gibi arayın. Değer değiştirme düğmesi denetimi otomatik olarak kendini kendi buddy penceresindeki yanındaki getirin, ve geçerli konumuna buddy penceresinin başlığını otomatik olarak ayarlayın, belirtebilirsiniz. Sayısal girişi için kullanıcıdan bir düzenleme denetimi ile bir değer değiştirme düğmesi denetimi kullanabilirsiniz.  
   
- Yukarı Ok tıklatarak en doğru geçerli konumu, ve aşağı oka tıklayarak geçerli konumu en düşük doğru taşır. Varsayılan olarak, en az 100'dür ve en fazla 0'dır. En düşük ayarı (örneğin, varsayılan ayarlar kullanıldığında) ayarlama, Yukarı Ok düşüşleri tıklatarak üst sınırdan büyük olduğundan zaman konum değerini ve aşağı oka tıklayarak artırır.  
+ Yukarı oka tıklayarak en doğru geçerli konumu, ve aşağı oka tıklayarak geçerli konumu en doğru taşır. Varsayılan olarak, en az 100'dür ve en fazla 0'dır. En düşük ayarı (örneğin, varsayılan ayarlar kullanıldığında) ayarlama, Yukarı Ok düşüşleri tıklayarak üst sınırdan büyük olduğundan dilediğiniz zaman konum değerini ve aşağı oka tıklayarak artar ve bu.  
   
- Değer değiştirme düğmesi denetimi bir arkadaş penceresi olmadan Basitleştirilmiş kaydırma çubuğunun sıralama çalışır. Örneğin, bir sekme denetimi, kullanıcı tarafından ek sekmeler görünüme gidin sağlamak için bir değer değiştirme düğmesi denetimi görüntüler.  
+ Değer değiştirme düğmesi denetimi buddy penceresindeki olmadan Basitleştirilmiş kaydırma çubuğu bir tür işlev görür. Örneğin, bir sekme denetimi, kullanıcının ek sekmeleri görünüme gidin etkinleştirmek için bir değer değiştirme düğmesi denetimi görüntüler.  
   
- Kullanma hakkında daha fazla bilgi için `CSpinButtonCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [kullanarak CSpinButtonCtrl](../../mfc/using-cspinbuttonctrl.md).  
+ Kullanma hakkında daha fazla bilgi için `CSpinButtonCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [CSpinButtonCtrl kullanma](../../mfc/using-cspinbuttonctrl.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -109,7 +109,7 @@ class CSpinButtonCtrl : public CWnd
  **Başlık:** afxcmn.h  
   
 ##  <a name="create"></a>  CSpinButtonCtrl::Create  
- Değer değiştirme düğmesi denetimi oluşturur ve ona ekler bir `CSpinButtonCtrl` nesnesi...  
+ Değer değiştirme düğmesi denetimi oluşturur ve ona bağlanan bir `CSpinButtonCtrl` nesne...  
   
 ```  
 virtual BOOL Create(
@@ -121,27 +121,27 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Değer değiştirme düğmesi denetimi 's stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir bileşimini denetime uygulayın. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb759885) Windows SDK.  
+ Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.  
   
  *Rect*  
- Değer değiştirme düğmesi denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı  
+ Döndürme düğme denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı  
   
  *pParentWnd*  
- Değer değiştirme düğmesi denetimi ait ana penceresinde, genellikle bir işaretçi bir `CDialog`. NULL olmamalıdır.  
+ Değer değiştirme düğmesi denetiminin üst penceresine, genellikle bir işaretçi bir `CDialog`. NULL olmamalıdır.  
   
  *nID*  
- Değer değiştirme düğmesi denetimi kişinin kimliğini belirtir.  
+ Değer değiştirme düğmesi denetimi'nın kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başlatma başarılı olduğunda sıfır olmayan; Aksi takdirde 0.  
+ Başlatma başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturmak bir `CSpinButtonCtrl` iki adımda ilk nesne, Oluşturucusu arayın ve ardından çağrısı `Create`, değer değiştirme düğmesi denetimi oluşturur ve ekler `CSpinButtonCtrl` nesnesi.  
+ Oluşturmak bir `CSpinButtonCtrl` ilk iki adımını nesne, oluşturucusunu çağırın ve ardından arama `Create`, değer değiştirme düğmesi denetimi oluşturur ve ona ekler `CSpinButtonCtrl` nesne.  
   
- Değer değiştirme düğmesi denetimi ile genişletilmiş pencere stilleri oluşturmak için arama [CSpinButtonCtrl::CreateEx](#createex) yerine `Create`.  
+ Genişletilmiş pencere stilleri ile değer değiştirme düğmesi denetimi oluşturmak için arama [CSpinButtonCtrl::CreateEx](#createex) yerine `Create`.  
   
 ##  <a name="createex"></a>  CSpinButtonCtrl::CreateEx  
- Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CSpinButtonCtrl` nesnesi.  
+ Bir denetimi (alt pencere) oluşturur ve bunu ile ilişkilendirir `CSpinButtonCtrl` nesne.  
   
 ```  
 virtual BOOL CreateEx(
@@ -154,28 +154,28 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetim genişletilmiş stilini belirtir. Genişletilmiş windows stilleri listesi için bkz: *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK'sındaki.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Değer değiştirme düğmesi denetimi 's stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir bileşimini denetime uygulayın. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb759885) Windows SDK.  
+ Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) boyutunu ve konumunu, istemci koordinatları oluşturulacak penceresinin açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
- Denetimin üst penceresi için bir işaretçi.  
+ Denetimin ana penceresine bir işaretçi.  
   
  *nID*  
- Denetimin alt pencere kimliği  
+ Denetimin alt penceresi kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım `CreateEx` yerine [oluşturma](#create) Windows genişletilmiş stili önsöz WS_EX_ tarafından belirtilen Genişletilmiş Windows stillerini uygulamak için.  
+ Kullanım `CreateEx` yerine [Oluştur](#create) Windows genişletilmiş sitil önsöz WS_EX_ tarafından belirtilen Genişletilmiş Windows stilleri uygulamak için.  
   
 ##  <a name="cspinbuttonctrl"></a>  CSpinButtonCtrl::CSpinButtonCtrl  
- Oluşturan bir `CSpinButtonCtrl` nesnesi.  
+ Oluşturur bir `CSpinButtonCtrl` nesne.  
   
 ```  
 CSpinButtonCtrl();
@@ -192,13 +192,13 @@ UINT GetAccel(
   
 ### <a name="parameters"></a>Parametreler  
  *nAccel*  
- Tarafından belirtilen dizisindeki öğelerin sayısı *pAccel*.  
+ Tarafından belirtilen dizideki öğelerin sayısını *pAccel*.  
   
  *pAccel*  
- Bir dizi işaretçi [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) yapıları hızlandırma bilgilerini alır.  
+ Bir dizi işaretçi [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) yapıları hızlandırma bilgilerini alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hızlandırıcı yapılarının sayısı aldı.  
+ Hızlandırıcı yapıların sayısı aldı.  
   
 ##  <a name="getbase"></a>  CSpinButtonCtrl::GetBase  
  Değer değiştirme düğmesi denetimi için geçerli temel alır.  
@@ -211,14 +211,14 @@ UINT GetBase() const;
  Geçerli taban değeri.  
   
 ##  <a name="getbuddy"></a>  CSpinButtonCtrl::GetBuddy  
- Geçerli arkadaş penceresi için bir işaretçi alır.  
+ Geçerli buddy penceresindeki bir işaretçi alır.  
   
 ```  
 CWnd* GetBuddy() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli arkadaş penceresi için bir işaretçi.  
+ Geçerli buddy penceresindeki bir işaretçi.  
   
 ##  <a name="getpos"></a>  CSpinButtonCtrl::GetPos  
  Değer değiştirme düğmesi denetimi geçerli konumunu alır.  
@@ -229,15 +229,15 @@ int GetPos() const;  int GetPos32(LPBOOL lpbError = NULL) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpbError*  
- Başarıyla alındı veya sıfır olmayan bir hata oluşursa gösteren bir işaretçidir sıfır ise ayarlanan değer bir Boole değeri. Bu parametre NULL olarak ayarlanırsa, hataları raporlanmaz.  
+ Başarıyla alındığında sıfır olmayan bir hata oluşursa bir işaretçiye sıfır için değer olarak ayarlanırsa bir Boole değeri. Bu parametre NULL olarak ayarlanırsa, hataları raporlanmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk sürüm düşük düzey Word'de 16 bit geçerli konumunu döndürür. Yüksek düzey bir hata oluştuysa sıfır olmayan bir sözcüktür.  
+ İlk sürüm düşük düzey word 16-bit gereçli konumu döndürür. Yüksek düzeyli bir hata oluşursa sıfır olmayan bir sözcüktür.  
   
- İkinci sürümü 32-bit konumunu döndürür.  
+ Dosyanın ikinci sürümü, 32-bit konumunu döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Döndürülen değer işlediğinde, Denetim arkadaş penceresinin açıklamalı alt yazı göre geçerli konumunu güncelleştirir. Denetimi arkadaş pencere ise veya geçersiz veya aralık dışı bir değer resim yazısını belirtir, bir hata döndürür.  
+ Döndürülen değer işlediğinde, denetime buddy penceresinin açıklamalı alt yazı göre geçerli konumunu güncelleştirir. Denetimin hiç buddy penceresindeki ise veya geçersiz veya aralık dışı bir değer resim yazısını belirtir bir hata döndürür.  
   
 ##  <a name="getrange"></a>  CSpinButtonCtrl::GetRange  
  Üst ve alt sınırları (aralık) için bir değer değiştirme düğmesi denetimi alır.  
@@ -255,20 +255,20 @@ void GetRange32(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *daha düşük*  
- Denetim için alt sınır alan tamsayı başvuru.  
+ *Daha düşük*  
+ Denetimi alt sınırını alır bir tamsayı başvuru.  
   
  *üst*  
- Denetim için üst sınırı alır tamsayı başvuru.  
+ Denetimi üst sınırını alır bir tamsayı başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk sürüm üst ve alt sınırları içeren bir 32 bit değeri döndürür. Düşük düzey word denetimi için üst sınır ve yüksek düzey word alt sınırı.  
+ İlk sürüm üst ve alt sınırları içeren 32-bit bir değer döndürür. Düşük düzeyli denetimin üst sınırını olup ve dwpoint alt sınır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini `GetRange32` değer değiştirme düğmesi denetimi 's Aralık 32 bitlik bir tamsayı olarak alır.  
+ Üye işlevi `GetRange32` değer değiştirme düğmesi denetimi'nın aralığı bir 32 bit tamsayı olarak alır.  
   
 ##  <a name="setaccel"></a>  CSpinButtonCtrl::SetAccel  
- Değer değiştirme düğmesi denetimi hızlandırma ayarlar.  
+ Hızlandırma değer değiştirme düğmesi denetimi için ayarlar.  
   
 ```  
 BOOL SetAccel(
@@ -278,16 +278,16 @@ BOOL SetAccel(
   
 ### <a name="parameters"></a>Parametreler  
  *nAccel*  
- Sayısı [UDACCEL](http://msdn.microsoft.com/library/windows/desktop/bb759897) tarafından belirtilen yapıları *pAccel*.  
+ Sayısı [UDACCEL](/windows/desktop/api/commctrl/ns-commctrl-_udaccel) yapıları tarafından belirtilen *pAccel*.  
   
  *pAccel*  
- Hızlandırma bilgiler içeren UDACCEL yapıları dizisi işaretçi. Öğeleri göre artan sırada sıralanması `nSec` üyesi.  
+ Bir dizi hızlandırma bilgiler içeren UDACCEL yapıları işaretçi. Öğeleri göre artan sırada sıralanması `nSec` üyesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılıysa sıfır olmayan; Aksi takdirde 0.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ##  <a name="setbase"></a>  CSpinButtonCtrl::SetBase  
- Değer değiştirme düğmesi denetimi için temel ayarlar.  
+ Temel bir değer değiştirme düğmesi denetimi için ayarlar.  
   
 ```  
 int SetBase(int nBase);
@@ -295,16 +295,16 @@ int SetBase(int nBase);
   
 ### <a name="parameters"></a>Parametreler  
  *nBase*  
- Denetim için yeni taban değeri. Ondalık için 10 veya 16 onaltılık için olabilir.  
+ Denetim için yeni taban değeri. Ondalık 10 veya 16 onaltılık için olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Önceki taban değeri başarılı olursa, ya da geçersiz bir taban verilirse, sıfır.  
+ Önceki taban değeri başarılı olursa, ya da geçersiz bir taban belirtilmezse sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Taban değeri arkadaş penceresinin sayıları ondalık ya da onaltılık basamak görüntülenip görüntülenmeyeceğini belirler. Onaltılık sayı her zaman imzasız; ondalık sayılar oturum açtınız.  
+ Temel değerin buddy penceresindeki sayılar ondalık veya onaltılı basamak görüntülenip görüntülenmeyeceğini belirler. Onaltılık sayılar daima işaretsizdir; ondalık sayılar imzalanmıştır.  
   
 ##  <a name="setbuddy"></a>  CSpinButtonCtrl::SetBuddy  
- Arkadaş pencerenin değer değiştirme düğmesi denetimi için ayarlar.  
+ Buddy penceresindeki Değer değiştirme düğmesi denetimi için ayarlar.  
   
 ```  
 CWnd* SetBuddy(CWnd* pWndBuddy);
@@ -312,16 +312,16 @@ CWnd* SetBuddy(CWnd* pWndBuddy);
   
 ### <a name="parameters"></a>Parametreler  
  *pWndBuddy*  
- Yeni bir arkadaş penceresi işaretçi.  
+ Yeni buddy penceresindeki işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Önceki arkadaş penceresi için bir işaretçi.  
+ Önceki buddy penceresindeki bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Döndürme denetimi neredeyse her zaman bazı içerikler görüntüleyen bir düzenleme denetimi gibi başka bir pencere ile ilişkilidir. Bu diğer Pencere döndürme denetimi "arkadaş" adı verilir.  
+ Döndürme denetimi neredeyse her zaman bazı içerik görüntüleyen bir düzenleme denetimi gibi başka bir pencere ile ilişkilidir. Bu, başka bir pencere döndürme denetimi "dost" adı verilir.  
   
 ##  <a name="setpos"></a>  CSpinButtonCtrl::SetPos  
- Değer değiştirme düğmesi denetimi geçerli konumunu ayarlar.  
+ Geçerli konum bir değer değiştirme düğmesi denetimi için ayarlar.  
   
 ```  
 int SetPos(int nPos);  
@@ -330,10 +330,10 @@ int SetPos32(int nPos);
   
 ### <a name="parameters"></a>Parametreler  
  *nPos*  
- Yeni konumu denetimi için. Bu değer, denetim için üst ve alt sınırları tarafından belirtilen aralıkta olmalıdır.  
+ Yeni denetimin konumu. Bu değer, denetimin üst ve alt sınırları tarafından belirtilen aralıkta olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Önceki konumdan (16 bit duyarlık `SetPos`, 32 bit için precision `SetPos32`).  
+ Önceki konumu (16-bit duyarlığını `SetPos`, 32-bit duyarlık için `SetPos32`).  
   
 ### <a name="remarks"></a>Açıklamalar  
  `SetPos32` 32-bit konumunu ayarlar.  
@@ -354,13 +354,13 @@ void SetRange32(
   
 ### <a name="parameters"></a>Parametreler  
  *nLower* ve *nUpper*  
- Denetim için üst ve alt sınırları. İçin `SetRange`, hiçbiri sınırı UD_MAXVAL büyük olabilir veya UD_MINVAL; sayısından az iki sınır arasındaki farkı UD_MAXVAL ek olarak, aşamaz. `SetRange32` herhangi bir kısıtlama sınırları yerleştirir; Tüm tamsayılar kullanın.  
+ Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL büyük olabilir veya iki sınırları arasındaki farkı UD_MAXVAL daha azını UD_MINVAL; Ayrıca, aşamaz. `SetRange32` herhangi bir kısıtlama barındırabileceğiniz yerleştirir; herhangi bir tamsayı kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Üye işlevini `SetRange32` 32-bit aralığı değer değiştirme düğmesi denetimi için ayarlar.  
+ Üye işlevi `SetRange32` 32-bit aralığı değer değiştirme düğmesi denetimi için ayarlar.  
   
 > [!NOTE]
->  Değer değiştirme düğmesi için varsayılan aralığı sıfır (0) olarak ayarlanmış maksimum ve 100'e ayarlayın minimum yok. En büyük değer en küçük değerden daha küçük olduğundan yukarı oka tıklayarak konumu düşürür ve aşağı oka tıklayarak onu artmasına neden olur. Kullanım `CSpinButtonCtrl::SetRange` bu değerleri ayarlamak için.  
+>  Değer değiştirme düğmesi için varsayılan aralığı sıfır (0) olarak ayarlayın en fazla ve en az 100'e ayarlayın sahiptir. Maksimum değer minimum değerden daha az olduğundan, konumu yukarı oka tıklayarak azaltır ve aşağı oka tıklayarak da artacaktır. Kullanım `CSpinButtonCtrl::SetRange` bu değerleri ayarlamak için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek CMNCTRL2](../../visual-cpp-samples.md)   

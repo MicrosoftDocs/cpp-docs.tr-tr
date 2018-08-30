@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f3113cf4176c3f582a210e89e732d5e0d92b62d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c39a91fb01f8a67c9e6eb2e5189cf1b81ba4bd51
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882838"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195218"
 ---
 # <a name="cglobalheap-class"></a>CGlobalHeap sınıfı
 Bu sınıfın uyguladığı [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md) Win32 genel yığın işlevlerini kullanma.  
@@ -55,7 +55,7 @@ class CGlobalHeap : public IAtlMemMgr
  `CGlobalHeap` bellek ayırma işlevleri için Win32 genel yığın işlevlerini uygular.  
   
 > [!NOTE]
->  Genel yığın işlevleri diğer bellek yönetimi işlevleri yavaş çalışır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa366711). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı. Genel İşlevler, yine de DDE ve Pano işlevleri tarafından kullanılır.  
+>  Genel yığın işlevleri diğer bellek yönetimi işlevleri yavaş çalışır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](/windows/desktop/Memory/heap-functions). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı. Genel İşlevler, yine de DDE ve Pano işlevleri tarafından kullanılır.  
   
 ## <a name="example"></a>Örnek  
  Örneğin bakın [Iatlmemmgr](../../atl/reference/iatlmemmgr-class.md).  
@@ -85,7 +85,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CGlobalHeap::Free](#free) veya [CGlobalHeap::Reallocate](#reallocate) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) GMEM_FIXED bayrağı parametresi ile.  
+ Kullanılarak uygulanan [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) GMEM_FIXED bayrağı parametresi ile.  
   
 ##  <a name="free"></a>  CGlobalHeap::Free  
  Bu bellek yöneticisi tarafından ayrılan bellek bloğunu serbest bırakmak için bu yöntemi çağırın.  
@@ -99,7 +99,7 @@ virtual void Free(void* p) throw();
  Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılarak uygulanan [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579).  
+ Kullanılarak uygulanan [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree).  
   
 ##  <a name="getsize"></a>  CGlobalHeap::GetSize  
  Bu bellek yöneticisi tarafından ayrılan bir bellek bloğu ayrılmış boyutunu almak için bu yöntemi çağırın.  
@@ -116,7 +116,7 @@ virtual size_t GetSize(void* p) throw();
  Ayrılan bellek blok boyutu bayt cinsinden döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılarak uygulanan [GlobalSize](http://msdn.microsoft.com/library/windows/desktop/aa366593).  
+ Kullanılarak uygulanan [GlobalSize](/windows/desktop/api/winbase/nf-winbase-globalsize).  
   
 ##  <a name="reallocate"></a>  CGlobalHeap::Reallocate  
  Bu bellek yöneticisi tarafından ayrılan bellek yeniden ayırmak üzere bu yöntemi çağırın.  
@@ -138,7 +138,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CGlobalHeap::Free](#free) bu yöntem tarafından ayrılan bellek boşaltmak için.  
   
- Kullanılarak uygulanan [GlobalReAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366590).  
+ Kullanılarak uygulanan [GlobalReAlloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   

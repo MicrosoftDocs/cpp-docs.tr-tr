@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0cbc05c0e337560982f69a5ca920340bc1b0de8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6b26f0c200f19cab4bb2710be686b25a9dce014
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401249"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43202016"
 ---
 # <a name="memset-wmemset"></a>memset, wmemset
 
-Arabellekleri için belirtilen bir karakterin ayarlar.
+Arabellekler belirtilen bir karaktere ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -64,23 +64,23 @@ wchar_t *wmemset(
 ### <a name="parameters"></a>Parametreler
 
 *Hedef*<br/>
-Hedef işaretçi.
+Hedef işaretçisi.
 
 *c*<br/>
-Ayarlamak için karakter.
+Ayarlanacak karakter.
 
 *Sayısı*<br/>
 Karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Değeri *taşınmaya*.
+Değerini *dest*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-İlk Ayarlar *sayısı* karakterlerinden *taşınmaya* karakter *c*.
+İlk Ayarlar *sayısı* karakterlerinden *dest* karaktere *c*.
 
-**Güvenlik Notu** hedef arabellek için yeterli alan en az olduğundan emin olun *sayısı* karakter. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** hedef arabelleğinin en az için yeterli alan olduğundan emin olun *sayısı* karakter. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -89,7 +89,7 @@ Değeri *taşınmaya*.
 |**memset**|\<Memory.h > veya \<string.h >|
 |**wmemset**|\<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -123,7 +123,7 @@ Before: This is a test of the memset function
 After:  **** is a test of the memset function
 ```
 
-Wmemset kullanımını bir örneği burada verilmiştir:
+Wmemset kullanımına bir örnek aşağıda verilmiştir:
 
 ```C
 // crt_wmemset.c

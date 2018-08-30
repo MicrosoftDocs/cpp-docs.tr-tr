@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75a3db6c6beb18afe2303b464fcab290b2e132fc
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: dddf9c117f2366496609f8bdf4ffc2f069f66ace
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338216"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199579"
 ---
 # <a name="paintstruct-structure"></a>PAINTSTRUCT Yapısı
 `PAINTSTRUCT` Yapısı pencerenin istemci alanını boyamak için kullanılan bilgileri içerir.  
@@ -44,7 +44,7 @@ typedef struct tagPAINTSTRUCT {
  Boyama için kullanılacak görünen bağlamı tanımlar.  
   
  *fErase*  
- Arka plan çizilmesini gerekip gerekmediğini belirtir. Bu uygulamanın arka plan yeniden çizmeniz gerekir 0. Uygulamanın bir arkaplan Fırçası bir Windows pencere sınıfı oluşturduysanız, arka plan çizmek için sorumlu olduğu (açıklamasına bakın `hbrBackground` üyesi [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı).  
+ Arka plan çizilmesini gerekip gerekmediğini belirtir. Bu uygulamanın arka plan yeniden çizmeniz gerekir 0. Uygulamanın bir arkaplan Fırçası bir Windows pencere sınıfı oluşturduysanız, arka plan çizmek için sorumlu olduğu (açıklamasına bakın `hbrBackground` üyesi [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı).  
   
  *rcPaint*  
  Sol üst belirtir ve doğru boyama istendiği dikdörtgenin köşelerini düşürün.  

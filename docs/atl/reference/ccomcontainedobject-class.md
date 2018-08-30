@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26f6216d5e78ae8ee95eb9f43d70f13aeb5f4874
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: ba67a990b027ff4cd770a0583f6d857a0ee7c725
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881064"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201047"
 ---
 # <a name="ccomcontainedobject-class"></a>CComContainedObject sınıfı
-Bu sınıfın uyguladığı [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahibi nesnenin temsilci tarafından `IUnknown`.  
+Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) sahibi nesnenin temsilci tarafından `IUnknown`.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -67,7 +67,7 @@ class CComContainedObject : public Base
 |[CComContainedObject::Release](#release)|Sahibi nesnede başvuru sayısını azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sahibi nesnenin temsilci tarafından `IUnknown`. (Dış nesne bir toplama veya bölünmüş arabirim oluşturulduğu nesnenin sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, üzerinden devralınan tüm `Base`.  
+ ATL kullanan `CComContainedObject` sınıflardaki [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), ve [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) sahibi nesnenin temsilci tarafından `IUnknown`. (Dış nesne bir toplama veya bölünmüş arabirim oluşturulduğu nesnenin sahibi değil.) `CComContainedObject` çağrıları `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease`, üzerinden devralınan tüm `Base`.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Base`  

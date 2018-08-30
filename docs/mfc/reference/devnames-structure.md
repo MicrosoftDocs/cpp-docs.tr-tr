@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c13167c42c6acbfcc5f3af500205eed6ab884d9
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: e2ba459a2ee98a89e264be452b04f116072d41e6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121581"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194617"
 ---
 # <a name="devnames-structure"></a>DEVNAMES Yapısı
-`DEVNAMES` Yapısı sürücü, cihaz ve bir yazıcı için çıktı bağlantı noktası adları tanımlayan dizelerin içerir.  
+`DEVNAMES` Yapı sürücü, cihaz ve çıkış bağlantı noktasına adları yazıcı için dizeleri içerir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,25 +41,25 @@ typedef struct tagDEVNAMES { /* dvnm */
   
 #### <a name="parameters"></a>Parametreler  
  *wDriverOffset*  
- (Girdi/çıktı) Aygıt sürücüsünün adını (uzantısı olmadan) içeren null ile sonlandırılmış bir dizeye karakter uzaklığını belirtir. Giriş, bu dize, başlangıçta iletişim kutusunda görüntülemek için yazıcı belirlemek için kullanılır.  
+ (Giriş/çıkış) Uzantısız () cihaz sürücüsünün içeren null ile sonlandırılmış bir dize karakterlerine uzaklığını belirtir. Giriş, bu dize, başlangıçta iletişim kutusunda görüntülemek için yazıcı belirlemek için kullanılır.  
   
  *wDeviceOffset*  
- (Girdi/çıktı) Cihaz adını içeren null ile sonlandırılmış dizesi (en fazla 32 null dahil olmak üzere bayt) için karakter cinsinden uzaklığını belirtir. Bu dize için özdeş olması gereken `dmDeviceName` üyesi [aygıt MODUNDAN](http://msdn.microsoft.com/library/windows/desktop/dd183565) yapısı.  
+ (Giriş/çıkış) Cihazın adını içeren null ile sonlandırılmış dize (en fazla 32 bayt null dahil olmak üzere) karakterlerine uzaklığını belirtir. Bu dize aynı `dmDeviceName` üyesi [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) yapısı.  
   
  *wOutputOffset*  
- (Girdi/çıktı) Fiziksel çıkış Orta (çıktı bağlantı noktası) için DOS aygıtı adı içeren null ile sonlandırılmış dizeye karakter uzaklığını belirtir.  
+ (Giriş/çıkış) Fiziksel çıkış Orta (çıkış bağlantı noktasına) bir DOS aygıtı adı içeren null ile sonlandırılmış dize karakterlerine uzaklığını belirtir.  
   
  *wDefault*  
- Dizeleri içinde yer alan olup olmadığını belirtir `DEVNAMES` varsayılan yazıcı yapısını tanımlar. Bu dize, varsayılan yazıcı son yazdırma işlemi bu yana değişmemiştir doğrulamak için kullanılır. DN_DEFAULTPRN bayrağı ayarlarsanız, giriş, diğer değerler `DEVNAMES` yapısı, geçerli varsayılan yazıcı karşı denetlenir. Dizelerden herhangi birinde eşleşmiyorsa, belgeyi yeniden biçimlendirilebileceği gerekebilir kullanıcı bildiren bir uyarı iletisi görüntülenir. Çıktıyı `wDefault` üye yalnızca Sayfa Yapısı iletişim kutusu görüntülenir ve kullanıcı Tamam düğmesine seçerseniz değiştirilir. Varsayılan yazıcı seçtiyseniz DN_DEFAULTPRN bayrağı ayarlanır. Belirli bir yazıcı seçtiyseniz bayrağı ayarlanmamış. Bu üye diğer tüm bitleri Yazdır iletişim kutusu yordamı tarafından iç kullanım için ayrılmıştır.  
+ Dizeleri içerdiği olup olmadığını belirtir `DEVNAMES` varsayılan yazıcı yapısını tanımlar. Bu dize, varsayılan yazıcı son yazdırma işlemi bu yana değişmemiştir doğrulamak için kullanılır. DN_DEFAULTPRN bayrağı ayarlandıysa, giriş, diğer değerler `DEVNAMES` yapısı, geçerli varsayılan yazıcı karşı denetlenir. Dizelerden herhangi birinde eşleşmiyorsa kullanıcının belgeyi yeniden biçimlendirildi gerekebilir bildiren bir uyarı iletisi görüntülenir. Çıktıyı `wDefault` üye, yalnızca Yazıcı Ayarları iletişim kutusunda görüntülenen ve Tamam düğmesine kullanıcının seçtiği değiştirilir. Varsayılan yazıcı seçtiyseniz DN_DEFAULTPRN bayrağı ayarlanır. Belirli bir yazıcı seçtiyseniz bayrağı ayarlı değil. Bu üye içindeki diğer tüm bitleri Yazdır iletişim kutusu yordamı tarafından iç kullanım için ayrılmıştır.  
   
 ## <a name="remarks"></a>Açıklamalar  
- `PrintDlg` İşlevi üyeleri sistem tarafından tanımlanan Yazdır iletişim kutusunda başlatmak için bu dizeler kullanır. Kullanıcı iletişim kutusu kapandığında seçili yazıcı ile ilgili bilgiler bu yapısında döndürülür.  
+ `PrintDlg` İşlev üyeleri sistem tarafından tanımlanan Yazdır iletişim kutusunu başlatmak için bu dizeler kullanır. Kullanıcı iletişim kutusu kapanır, seçili bilgilerinden bu yapıda döndürülür.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** commdlg.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CPrintDialog::CreatePrinterDC](../../mfc/reference/cprintdialog-class.md#createprinterdc)
 
 

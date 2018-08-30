@@ -70,12 +70,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20a254e6d5a6e3e04dfd013c1f7ae3e8e2c9100e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 1d3422923075f1c9546da1f8d2430e2e2f2c4bbc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337277"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43203062"
 ---
 # <a name="cfile-class"></a>CFile sınıfı
 Microsoft Foundation Class dosya sınıfları için temel sınıf.  
@@ -363,7 +363,7 @@ virtual CString GetFileTitle() const;
  Temel alınan dosyanın başlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin çağırdığı [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) dosyanın başlığı alınacak. Başarılı olursa, yöntem sistem dosya adı kullanıcıya göstermek için kullanacağınız bir dize döndürür. Aksi takdirde, yöntemi çağıran [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) (dosya uzantısı dahil), temel alınan dosyasının dosya adı alınamadı. Bu nedenle, dosya uzantısı her zaman döndürülen dosya başlık dizesini dahil edilmez. Daha fazla bilgi için [GetFileTitle](http://msdn.microsoft.com/library/windows/desktop/ms646924) ve [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589) Windows SDK.  
+ Bu yöntemin çağırdığı [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) dosyanın başlığı alınacak. Başarılı olursa, yöntem sistem dosya adı kullanıcıya göstermek için kullanacağınız bir dize döndürür. Aksi takdirde, yöntemi çağıran [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) (dosya uzantısı dahil), temel alınan dosyasının dosya adı alınamadı. Bu nedenle, dosya uzantısı her zaman döndürülen dosya başlık dizesini dahil edilmez. Daha fazla bilgi için [GetFileTitle](/windows/desktop/api/commdlg/nf-commdlg-getfiletitlea) ve [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea) Windows SDK.  
   
  Dosyanın adı dahil olmak üzere yolun tamamını döndürülecek çağrı [GetFilePath](#getfilepath). Yalnızca dosya adını döndürmek için çağrı [GetFileName](#getfilename).  
   
@@ -568,7 +568,7 @@ virtual BOOL Open(
  [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]  
   
 ##  <a name="operator_handle"></a>  CFile::operator TANITICISI  
- İşleyici geçirmek için bu işleci kullanın. bir `CFile` işlevler gibi nesne [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) ve [GetFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724320) , beklediğiniz bir `HANDLE`.  
+ İşleyici geçirmek için bu işleci kullanın. bir `CFile` işlevler gibi nesne [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) ve [GetFileTime](/windows/desktop/api/fileapi/nf-fileapi-getfiletime) , beklediğiniz bir `HANDLE`.  
   
 ```  
 operator HANDLE() const;  

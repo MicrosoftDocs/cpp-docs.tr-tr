@@ -54,12 +54,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 0f9566fb6e3117b10d0d6f4a2bccbe56fe33a28a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 10ddc04471c749aad217780e9a27494783f1e9b0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609355"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195639"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 Windows SDK'sını kullanarak Windows özgü çeşitli görevleri gösterir.  
@@ -499,7 +499,7 @@ int main()
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- .NET Framework ile kayıt defterine erişmek için kullanabileceğiniz <xref:Microsoft.Win32.Registry> ve [RegistryKey](https://msdn.microsoft.com/en-us/library/microsoft.win32.registrykey.aspx) her ikisi de sınıfları tanımlanan <xref:Microsoft.Win32> ad alanı. **Kayıt defteri** sınıfı statik örnekleri için bir kapsayıcıdır <xref:Microsoft.Win32.RegistryKey> sınıfı. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.  
+ .NET Framework ile kayıt defterine erişmek için kullanabileceğiniz <xref:Microsoft.Win32.Registry> ve [RegistryKey](https://msdn.microsoft.com/library/microsoft.win32.registrykey.aspx) her ikisi de sınıfları tanımlanan <xref:Microsoft.Win32> ad alanı. **Kayıt defteri** sınıfı statik örnekleri için bir kapsayıcıdır <xref:Microsoft.Win32.RegistryKey> sınıfı. Her örnek, bir kök kayıt defteri düğümü temsil eder. Örnekleri <xref:Microsoft.Win32.Registry.ClassesRoot>, <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, ve <xref:Microsoft.Win32.Registry.Users>.  
 
 ## <a name="related-sections"></a>İlgili Bölümler  
  <xref:System.Environment>  
@@ -507,4 +507,4 @@ int main()
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
 
- [Performans izlemeye giriş](http://msdn.microsoft.com/en-us/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35) 
+ [Performans izlemeye giriş](https://msdn.microsoft.com/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35) 

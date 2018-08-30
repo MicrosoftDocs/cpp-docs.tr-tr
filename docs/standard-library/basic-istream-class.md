@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca0b25f5df6d4efb70e27fea6ef2323568134b2e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4250a2b13740b5aa71ca10300a90560ed615f68e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964476"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200034"
 ---
 # <a name="basicistream-class"></a>basic_istream Sınıfı
 
@@ -521,7 +521,7 @@ basic_istream& operator>>(unsigned long long& val);
 basic_istream& operator>>(void *& val);
 ```
 
-Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). [Alma](#get)( **InIt**( `rdbuf`), `Init`(0)  **\*bu**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **uzun**,**işaretsiz uzun**, veya **void \***  gerektiğinde.
+Her bir alanı ayıklayın ve çağırarak bir sayısal değere Dönüştür `use_facet` <  `num_get` \< **Elem**, **InIt**> ( `getloc`). [Alma](#get)( **InIt**( `rdbuf`), `Init`(0)  **\*bu**, `getloc`, `val`). Burada, **InIt** olarak tanımlanan `istreambuf_iterator` \< **Elem**, **Tr**>, ve `val` türünde **uzun**, **işaretsiz uzun**, veya **void** <strong>\*</strong> gerektiğinde.
 
 Dönüştürülen değer türü olarak temsil edilemez `val`, işlev çağrıları [setstate](../standard-library/basic-ios-class.md#setstate)(`failbit`). Herhangi bir durumda, işlev döndürür  **\*bu**.
 

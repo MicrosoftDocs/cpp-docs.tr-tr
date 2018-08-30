@@ -19,31 +19,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49acd19fcb25751ac9223b557b068383556f63f3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 289ff7ae7db1abd6a0a19577a2c567b462a2910e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354341"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43201406"
 ---
 # <a name="atl-connection-point-classes"></a>ATL bağlantı noktası sınıfları
-ATL bağlantı noktaları desteklemek için aşağıdaki sınıflar kullanır:  
+ATL bağlantı noktaları desteklemek için aşağıdaki sınıfları kullanır:  
   
--   [IConnectionPointImpl](../atl/reference/iconnectionpointimpl-class.md) bir bağlantı noktası uygular. Temsil ettiği giden arabirimi IID şablon parametre olarak geçirilir.  
+-   [Iconnectionpointımpl](../atl/reference/iconnectionpointimpl-class.md) bir bağlantı noktası uygular. IID temsil ettiği giden arabiriminin, bir şablon parametresi geçirilir.  
   
--   [IConnectionPointContainerImpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bağlantı noktası kapsayıcısına uygular ve listesini yönetir `IConnectionPointImpl` nesneleri.  
+-   [Iconnectionpointcontainerımpl](../atl/reference/iconnectionpointcontainerimpl-class.md) bağlantı noktası kapsayıcısını uygular ve listesini yönetir `IConnectionPointImpl` nesneleri.  
   
--   [IPropertyNotifySinkCP](../atl/reference/ipropertynotifysinkcp-class.md) bir bağlantı noktası temsil eden uygulayan [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) arabirimi.  
+-   [Ipropertynotifysinkcp](../atl/reference/ipropertynotifysinkcp-class.md) uygulayan bir bağlantı noktasını temsil eden [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi.  
   
--   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) rastgele bir bağlantı noktası ve onun havuzlarını arasındaki bağlantıları sayısı yönetir.  
+-   [CComDynamicUnkArray](../atl/reference/ccomdynamicunkarray-class.md) bağlantı bağlantı noktası ve onun havuzlar arasında rastgele bir sayıdan yönetir.  
   
--   [CComUnkArray](../atl/reference/ccomunkarray-class.md) bağlantıları şablon parametresi tarafından belirtilen sayıda yönetir.  
+-   [CComUnkArray](../atl/reference/ccomunkarray-class.md) önceden tanımlanmış birkaç şablon parametresi tarafından belirtilen bağlantıları yönetir.  
   
--   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) bir nesnenin özellik değiştirildi veya değiştirilmek bir istemcinin havuz bildirir.  
+-   [CFirePropNotifyEvent](../atl/reference/cfirepropnotifyevent-class.md) , bir nesnenin özelliği değiştirildi veya değiştirilmek istemcinin havuzu bildirir.  
   
--   [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ATL COM nesne için bağlantı noktaları için destek sağlar. Bu bağlantı noktaları, COM nesnesi tarafından sağlanan bir olay havuz eşlemesi ile eşlenir.  
+-   [Idispeventımpl](../atl/reference/idispeventimpl-class.md) ATL COM nesnesi için bağlantı noktaları için destek sağlar. Bu bağlantı noktaları, COM nesnesi tarafından sağlanan bir olay havuzu Haritası ile eşlenir.  
   
--   [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) sınıfınıza uygun işleyiciyi işlevi için rota olayları olay havuz eşlemesinde ile birlikte çalışır.  
+-   [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) sınıfınızdaki uygun işleyici işlevi rota olayları için olay havuz eşlemesi ile birlikte çalışır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bağlantı noktası](../atl/atl-connection-points.md)

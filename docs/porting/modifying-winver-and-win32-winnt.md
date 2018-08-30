@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3b41404c3f003d8f4d87ca98888f004c08c9721
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 6593168e87f8a0dde1dd996aeadf2d225adbbe72
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464961"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43194185"
 ---
 # <a name="modifying-winver-and-win32winnt"></a>WINVER ve _WIN32_WINNT'de Değişiklik Yapma
 
@@ -63,7 +63,7 @@ Bu Windows sürümlerinin tümünün bir kopyasını görüntülemekte olduğunu
   
 Bu makroyu kullanarak da tanımlayabilirsiniz `/D` derleyici seçeneği. Daha fazla bilgi için [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).  
   
-Bu makrolar anlamlara hakkında daha fazla bilgi için bkz. [Windows üst bilgileri kullanma](https://msdn.microsoft.com/library/windows/desktop/aa383745).  
+Bu makrolar anlamlara hakkında daha fazla bilgi için bkz. [Windows üst bilgileri kullanma](/windows/desktop/WinProg/using-the-windows-headers).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

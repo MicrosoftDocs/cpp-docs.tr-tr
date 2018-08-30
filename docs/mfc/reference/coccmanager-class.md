@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cabf1cde43f11997de27b2b2f148482d4f024455
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 627fb8e1ad1341257e3064ee195952c37dd4a481
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852373"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43195544"
 ---
 # <a name="coccmanager-class"></a>COccManager sınıfı
 Çeşitli özel denetim sitelerini yönetir; tarafından uygulanan `COleControlContainer` ve `COleControlSite` nesneleri.  
@@ -334,7 +334,7 @@ static void AFX_CDECL SetDefaultButton(
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!NOTE]
->  Denetim durumu bit kümesi OLEMISC_ACTSLIKEBUTTON olması gerekir. OLEMISC bayrakları hakkında daha fazla bilgi için bkz. [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) konu başlığında Windows SDK'sı.  
+>  Denetim durumu bit kümesi OLEMISC_ACTSLIKEBUTTON olması gerekir. OLEMISC bayrakları hakkında daha fazla bilgi için bkz. [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) konu başlığında Windows SDK'sı.  
   
 ##  <a name="splitdialogtemplate"></a>  COccManager::SplitDialogTemplate  
  Ortak iletişim kutusu denetimleri ActiveX denetimlerini bölmek için framework tarafından çağırılır.  
