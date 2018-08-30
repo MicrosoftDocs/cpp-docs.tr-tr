@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4d1911a8bd8a7f3079497ec66ea1de59aff480a0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9d84eef4c91442eedc830fdee836dc5d950b5eae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604056"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209596"
 ---
 # <a name="creating-new-symbols"></a>Yeni Semboller Oluşturma
 
@@ -45,7 +45,7 @@ Yeni bir proje başlıyor, ihtiyacınız olduğu bunlar atanacak kaynakları olu
 
 Zaten bir sembol adı yazarsanız, bu ada sahip bir simge zaten tanımlandı belirten bir ileti kutusu görünür. Aynı ada sahip iki veya daha fazla sembolleri tanımlanamaz, ancak aynı sayısal değere sahip farklı bir simge tanımlayabilirsiniz. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md) ve [sembol değeri kısıtlamaları](../windows/symbol-value-restrictions.md).
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere, atama hakkında bilgi ve [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere, kaynaklara erişme, el ile ekleme hakkında bilgi için statik kaynakları görüntüleme ve kaynak atama özellikleri dizeler.
 
 ## <a name="requirements"></a>Gereksinimler
 

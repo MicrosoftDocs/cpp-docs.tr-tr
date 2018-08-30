@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d623df9fcab776a42fda7ca13269554b9f38b56c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c8cdb3633b6f5b76e1918471132e7cdd142172fe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880579"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208485"
 ---
 # <a name="iatlmemmgr-class"></a>Iatlmemmgr sınıfı
 Bu sınıf, bir bellek yöneticisi için bir arabirimi temsil eder.  
@@ -54,7 +54,7 @@ __interface __declspec(uuid("654F7EF5-CFDF-4df9-A450-6C6A13C622C0")) IAtlMemMgr
  Bu arabirim tarafından uygulanan [CComHeap](../../atl/reference/ccomheap-class.md), [CCRTHeap](../../atl/reference/ccrtheap-class.md), [CLocalHeap](../../atl/reference/clocalheap-class.md), [CGlobalHeap](../../atl/reference/cglobalheap-class.md), veya [CWin32Heap](../../atl/reference/cwin32heap-class.md).  
   
 > [!NOTE]
->  Yerel ve genel yığın işlevlerin diğer bellek yönetimi işlevleri yavaştır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa366711). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı.  
+>  Yerel ve genel yığın işlevlerin diğer bellek yönetimi işlevleri yavaştır ve gibi birçok özelliği sağlamaz. Bu nedenle, yeni uygulamalar kullanmalıdır [yığın işlevleri](/windows/desktop/Memory/heap-functions). Bunlar, kullanılabilir [CWin32Heap](../../atl/reference/cwin32heap-class.md) sınıfı.  
   
 ## <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Utilities#94](../../atl/codesnippet/cpp/iatlmemmgr-class_1.cpp)]  

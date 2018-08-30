@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45624c094d7ae656c50b55cc932762b7f9aa6476
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 97e08ca5e8fcf78215edd80ae053c5576b6bc95f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37854076"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207484"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 `CMFCPropertySheet` Sınıfı, burada her bir özellik sayfası belirtilen bir sayfa sekmesi, araç çubuğu düğmesi, ağaç denetimi düğümü veya bir liste öğesi bir özellik sayfasını destekler.  
@@ -91,9 +91,9 @@ class CMFCPropertySheet : public CPropertySheet
 |[CMFCPropertySheet::InitNavigationControl](#initnavigationcontrol)|Geçerli özellik listesi denetiminin görünümünü başlatır.|  
 |[CMFCPropertySheet::OnActivatePage](#onactivatepage)|Özellik sayfası etkinleştirildiğinde framework tarafından çağırılır.|  
 |[CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader)|Özel özellik sayfa üstbilgisi çizmek için framework tarafından çağırılır.|  
-|`CMFCPropertySheet::OnInitDialog`|İşleme [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) ileti. (Geçersiz kılmaları [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|  
+|`CMFCPropertySheet::OnInitDialog`|İşleme [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) ileti. (Geçersiz kılmaları [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|  
 |[CMFCPropertySheet::OnRemoveTreePage](#onremovetreepage)|Özellik sayfası bir ağaç denetiminden kaldırmak için framework tarafından çağırılır.|  
-|`CMFCPropertySheet::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları `CPropertySheet::PreTranslateMessage`.)|  
+|`CMFCPropertySheet::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları `CPropertySheet::PreTranslateMessage`.)|  
 |[CMFCPropertySheet::RemoveCategory](#removecategory)|Bir düğüm ağaç denetiminden kaldırır.|  
 |[CMFCPropertySheet::RemovePage](#removepage)|Özellik sayfası özellik sayfası'ndan kaldırır.|  
 |[CMFCPropertySheet::SetIconsList](#seticonslist)|Outlook bölmesinin Gezinti denetimde kullanılan görüntülerin listesini belirtir.|  

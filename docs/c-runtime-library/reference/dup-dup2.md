@@ -38,16 +38,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad477dc09ce6c8bee2d69e479f8e1615639cb14d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 820172e1e6ab4ad007c89b2b40f03512134f0f0d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399809"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215959"
 ---
 # <a name="dup-dup2"></a>_dup, _dup2
 
-Açık bir dosya için ikinci bir dosya tanımlayıcısı oluşturur (**_dup**), veya bir dosya tanımlayıcısı yeniden atar (**_dup2**).
+Açık bir dosya için ikinci bir dosya tanımlayıcısı oluşturur (**_dup**), veya bir dosya tanımlayıcısını yeniden atar (**_dup2**).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,19 +62,19 @@ int _dup2( int fd1, int fd2 );
 Dosyayı açmak için başvuran dosya tanımlayıcıları.
 
 *fd2*<br/>
-Herhangi dosya tanımlayıcısı.
+Herhangi bir dosya tanımlayıcısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_dup** yeni bir dosya tanımlayıcısı döndürür. **_dup2** başarılı olduğunu belirtmek için 0 değerini döndürür. Bir hata oluşursa, her işlev dönüşleri -1 ve kümelerini **errno** için **EBADF** dosya tanımlayıcısı geçersizse veya için **EMFILE** hiçbir daha fazla dosya tanımlayıcıları varsa. Geçersiz dosya tanımlayıcısı söz konusu olduğunda, işlevi de geçersiz parametre işleyicisi açıklandığı gibi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+**_dup** yeni dosya tanımlayıcısını döndürür. **_dup2** başarılı olduğunu belirtmek için 0 değerini döndürür. Bir hata oluşursa, her bir işlev -1 döndürür ve kümeleri **errno** için **EBADF** dosya tanımlayıcısı geçersizse veya için **EMFILE** hiçbir daha fazla dosya tanımlayıcısı kullanılabilir değilse. Geçersiz dosya tanımlayıcısı olması durumunda, işlev de geçersiz parametre işleyicisi açıklandığı gibi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
 Bunlar ve diğer dönüş kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Dup** ve **_dup2** işlevler şu anda açık bir dosyayla ikinci bir dosya tanımlayıcısı ilişkilendirin. Bu işlevler için gibi bir önceden tanımlanmış dosya tanımlayıcısı ilişkilendirmek için kullanılan **stdout**, farklı bir dosya ile. Dosya işlemleri ya da dosya tanımlayıcısı kullanılarak gerçekleştirilen kullanılabilir. Dosya için izin verilen erişim türü yeni bir açıklayıcısı oluşturma işlemi etkilenmez. **_dup** verilen dosya için bir sonraki kullanılabilir dosya tanımlayıcısı döndürür. **_dup2** zorlar *fd2* aynı dosyada başvurmak için *fd1*. Varsa *fd2* ilişkili açık bir dosyayı çağrısı zaman bu dosyayı kapalı.
+**_Dup** ve **_dup2** işlevleri ikinci bir dosya tanımlayıcısı şu anda açık bir dosya ile ilişkilendirin. Bu işlevler için olan gibi bir önceden tanımlanmış dosya tanımlayıcısını ilişkilendirmek için kullanılabilir **stdout**, farklı bir dosya ile. Dosya üzerindeki işlemler iki dosya tanımlayıcısı kullanılarak gerçekleştirilen kullanılabilir. Dosya için izin verilen erişim türünü yeni bir tanımlayıcı oluşturulmasını tarafından etkilenmez. **_dup** verilen dosyaya sonraki kullanılabilir dosya tanımlayıcısını döndürür. **_dup2** zorlar *fd2* aynı dosyaya başvurmak için *fd1*. Varsa *fd2* ilişkili aramanın zaman bir açık dosya ile bu dosya kapatılır.
 
-Her ikisi de **_dup** ve **_dup2** dosya tanımlayıcıları parametre olarak kabul edin. Bir akış geçirmek için (**dosya \*** ) kullanın ya da bu işlevler için [_fileno](fileno.md). **Fileno** yordamı şu anda belirtilen akışa ile ilişkili dosya tanımlayıcısı döndürür. Aşağıdaki örnek ile nasıl ilişkilendirildiğini gösterir **stderr** (olarak tanımlanan **dosya \***  Stdio.h içinde) ile bir dosya tanımlayıcısı:
+Her ikisi de **_dup** ve **_dup2** dosya tanımlayıcılarını parametre olarak kabul edin. Bir akışa geçirmek için (`FILE *`) kullanın ya da bu işlevler için [_fileno](fileno.md). **Fileno** yordamı belirtilen akış ile şu anda ilişkili dosya tanımlayıcısını döndürür. Aşağıdaki örnek nasıl ilişkilendirildiğini gösterir **stderr** (olarak tanımlanan `FILE *` Stdio.h içinde) ile bir dosya tanımlayıcısı:
 
 ```C
 int cstderr = _dup( _fileno( stderr ));
@@ -87,7 +87,7 @@ int cstderr = _dup( _fileno( stderr ));
 |**_dup**|\<io.h >|
 |**_dup2**|\<io.h >|
 
-Konsol Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsol ile ilişkili standart akış tanıtıcıları **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri UWP uygulamalarında kullanabilmek için önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Konsolu, Evrensel Windows Platformu (UWP) uygulamaları desteklenmez. Konsolları ile ilişkili standart akış işleyicileri **stdin**, **stdout**, ve **stderr**, C çalışma zamanı işlevleri bunları UWP uygulamalarında kullanmadan önce yeniden yönlendirilmesi gerekiyor . Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

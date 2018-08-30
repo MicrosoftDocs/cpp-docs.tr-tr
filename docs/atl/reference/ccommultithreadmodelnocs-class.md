@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65f8021bdc16dcfb2c4d1aa69936f27cfe7ac1df
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 09e209a7b3e81ac232d2c0441a84e55ded8faecf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884824"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212863"
 ---
 # <a name="ccommultithreadmodelnocs-class"></a>CComMultiThreadModelNoCS sınıfı
 `CComMultiThreadModelNoCS` iş parçacığı açısından güvenli yöntemleri artırma ve azaltma için önemli bir bölümü kilitleme veya kilidini açma işlevselliği bir değişkenin değerini sağlar.  
@@ -117,7 +117,7 @@ typedef CComFakeCriticalSection CriticalSection;
  Bkz: [CComMultiThreadModel::AutoCriticalSection](../../atl/reference/ccommultithreadmodel-class.md#autocriticalsection).  
   
 ##  <a name="decrement"></a>  CComMultiThreadModelNoCS::Decrement  
- Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](http://msdn.microsoft.com/library/windows/desktop/ms683580), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.  
+ Bu statik işlevi Win32 işlevini çağırır [InterlockedDecrement](/windows/desktop/api/winbase/nf-winbase-interlockeddecrement), değişkenin değeri tarafından işaret edilen hangi azaltır *p*.  
   
 ```
 static ULONG WINAPI Decrement(LPLONG p) throw();
@@ -134,7 +134,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
  **InterlockedDecrement** birden fazla iş parçacığı aynı anda bu değişken kullanmasını önler.  
   
 ##  <a name="increment"></a>  CComMultiThreadModelNoCS::Increment  
- Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](http://msdn.microsoft.com/library/windows/desktop/ms683614), işaret ettiği değişken değerini artırır *p*.  
+ Bu statik işlevi Win32 işlevini çağırır [InterlockedIncrement](/windows/desktop/api/winbase/nf-winbase-interlockedincrement), işaret ettiği değişken değerini artırır *p*.  
   
 ```
 static ULONG WINAPI Increment(LPLONG p) throw();

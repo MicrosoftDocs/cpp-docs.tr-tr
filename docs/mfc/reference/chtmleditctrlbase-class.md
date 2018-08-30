@@ -230,12 +230,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee202defce08d30f36fb0002bd1477957dd76bc
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d28eaff98d2af12d24fab91797182c99d33d317d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337573"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207968"
 ---
 # <a name="chtmleditctrlbase-class"></a>CHtmlEditCtrlBase sınıfı
 HTML düzenleme bileşenini temsil eder.  
@@ -575,7 +575,7 @@ HRESULT ExecCommand(
  Yürütülecek komut kimliği. Bir liste için bkz. [MSHTML komut tanımlayıcıları](https://msdn.microsoft.com/library/aa741315.aspx).  
   
  *cmdExecOpt*  
- Alınan değerleri [OLECMDEXECOPT](http://msdn.microsoft.com/library/windows/desktop/ms683930) nesne komutu nasıl yürütülecek açıklayan sabit listesi.  
+ Alınan değerleri [OLECMDEXECOPT](/windows/desktop/api/docobj/ne-docobj-olecmdexecopt) nesne komutu nasıl yürütülecek açıklayan sabit listesi.  
   
  *pInVar*  
  Giriş bağımsız değişkenleri.  
@@ -590,7 +590,7 @@ HRESULT ExecCommand(
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem işlevselliği sağlar [IOleCommandTarget::Exec](http://msdn.microsoft.com/library/windows/desktop/ms690300).  
+ Bu yöntem işlevselliği sağlar [IOleCommandTarget::Exec](/windows/desktop/api/docobj/nf-docobj-iolecommandtarget-exec).  
   
 ##  <a name="font"></a>  CHtmlEditCtrlBase::Font  
  Metin rengi, yazı tipi ve geçerli seçimi yazı tipi boyutunu değiştirmek kullanıcının etkinleştirmek için bir yazı tipi iletişim kutusu açılır.  
@@ -838,7 +838,7 @@ HRESULT GetIsDirty() const;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belge değişip değişmediğini gösterir. `GetIsDirty` bir HRESULT döndürür [IPersistStorage::IsDirty](http://msdn.microsoft.com/library/windows/desktop/ms683910).  
+ Belge değişip değişmediğini gösterir. `GetIsDirty` bir HRESULT döndürür [IPersistStorage::IsDirty](/windows/desktop/api/objidl/nf-objidl-ipersiststorage-isdirty).  
   
 ##  <a name="getshowalignedsitetags"></a>  CHtmlEditCtrlBase::GetShowAlignedSiteTags  
  Bir karakter olan tüm öğeler için gösterilip gösterilmeyeceğini döndüren bir `styleFloat` özelliği.  
@@ -1469,7 +1469,7 @@ long QueryStatus(long cmdID) const;
  Komut kimliği. Komut tanımlayıcıları CGID_MSHTML komut gruptan alınır. Bu komutlar Mshtmcid.h içinde tanımlanır. Ayrıca çevrimiçi listeyi bulabilirsiniz [MSHTML komut tanımlayıcıları](http://go.microsoft.com/fwlink/p/?linkid=149220).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [OLECMDF](http://msdn.microsoft.com/library/windows/desktop/ms695237) durumunu gösteren *cmdID*, veya hata durumunda 0.  
+ Döndürür bir [OLECMDF](/windows/desktop/api/docobj/ne-docobj-olecmdf) durumunu gösteren *cmdID*, veya hata durumunda 0.  
   
 ##  <a name="radiobutton"></a>  CHtmlEditCtrlBase::RadioButton  
  Geçerli seçimi bir radyo denetimi üzerine yazar.  

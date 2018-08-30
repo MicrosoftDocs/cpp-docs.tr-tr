@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e7e77238478e32fd5b45f96cdd8a86c2205eef7
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 94468f2499a349847f62ed65a03e88cf776536ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882852"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207202"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT sınıfı
 Bu sınıf, başka bir nesne içinde yer alan bir pencere uygular.  
@@ -115,7 +115,7 @@ class CContainedWindowT : public TBase
 |Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|  
 |ATL kullanarak|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|  
 |ATL projesi Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|  
-|Windows|[Windows](http://msdn.microsoft.com/library/windows/desktop/ms632595) ve sonraki konularda Windows SDK'sı|  
+|Windows|[Windows](https://msdn.microsoft.com/library/windows/desktop/ms632595) ve sonraki konularda Windows SDK'sı|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `TBase`  
@@ -214,22 +214,22 @@ HWND Create(
  [in] Üst veya sahibi penceresine tanıtıcısı.  
   
  *Rect*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin konumunu belirten yapısı. `RECT` İşaretçi veya başvuruya göre geçirilebilir.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin konumunu belirten yapısı. `RECT` İşaretçi veya başvuruya göre geçirilebilir.  
   
  *szWindowName*  
  [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.  
   
  *dwStyle*  
- [in] Pencere stili. Varsayılan değer: WS_CHILD &#124; ws_vısıble. Olası değerler listesi için bkz. [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
+ [in] Pencere stili. Varsayılan değer: WS_CHILD &#124; ws_vısıble. Olası değerler listesi için bkz. [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
   
  *dwExStyle*  
- [in] Genişletilmiş pencere stili. Varsayılan değer, genişletilmiş stil yok anlamına gelen 0 ' dır. Olası değerler listesi için bkz. [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ [in] Genişletilmiş pencere stili. Varsayılan değer, genişletilmiş stil yok anlamına gelen 0 ' dır. Olası değerler listesi için bkz. [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *MenuOrID*  
  [in] Alt pencere için pencere tanımlayıcısı. Bir üst düzey pencere için bir pencere için menü tanıtıcısı. Varsayılan değer **0U**.  
   
  *lpCreateParam*  
- [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680).  
+ [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, yeni oluşturulan penceresine; tanıtıcısı Aksi takdirde NULL.  
@@ -268,7 +268,7 @@ LRESULT DefWindowProc(
  İleti işleme sonucu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, `DefWindowProc` çağrıları [CallWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633571) belirtilen pencere yordamını ileti bilgileri göndermek için Win32 işlevini [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
+ Varsayılan olarak, `DefWindowProc` çağrıları [CallWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633571) belirtilen pencere yordamını ileti bilgileri göndermek için Win32 işlevini [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).  
   
 ##  <a name="getcurrentmessage"></a>  CContainedWindowT::GetCurrentMessage  
  Geçerli bir ileti döndürür (`m_pCurrentMsg`).  

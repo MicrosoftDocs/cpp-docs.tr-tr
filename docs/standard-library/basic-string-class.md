@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7458a82cce22830dd16525a5f33ed12c6c1b6e0d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3c56cdcf59c6dad891029e21e14940598e0cfeae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957980"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209090"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
@@ -881,7 +881,7 @@ C stili sürüm çağrılıyor dize işaretçisi.  Basic_string sınıfı nesne 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Nesneler için C++ Şablon sınıfı basic_string ait dize türündeki\<char > mutlaka null olan sonlandırıldı. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve gibi başka bir karakter dizesini bir parçası olabilir. Const otomatik bir dönüştürme yoktur **char\***  sınıf türü nesneler için otomatik dönüştürmelerinde C stili dizeler sağlamaz dizeleri, ancak dize **basic_string\< char >**.
+Nesneler için C++ Şablon sınıfı basic_string ait dize türündeki\<char > mutlaka null olan sonlandırıldı. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve gibi başka bir karakter dizesini bir parçası olabilir. Otomatik bir dönüştürme yoktur **const char** <strong>\*</strong> sınıfı C stili dizeler otomatik dönüştürmelerinde türündekinesneleriçinsağlamazdizeleri,ancakdize**basic_string\<char >**.
 
 Bu dize işaretçisine geçersiz veya dize sınırlı bir ömre sahiptir ve sınıf dizesi tarafından sahip olunan silindi olarak döndürülen C stili dize değiştirilmemelidir.
 
@@ -1652,7 +1652,7 @@ const value_type *data() const;
 
 Nesneler için C++ Şablon sınıfı basic_string ait dize türündeki \<char > mutlaka null olan sonlandırıldı. İçin dönüş türü `data` hiçbir null karakteri eklenmemiş çünkü geçerli C-dizesi değil. Null karakteri '\0' olarak bir özel karakter C dizesi, dizenin sonunu işaretlemek için kullanılır, ancak dize türünde bir nesne içinde özel bir anlamı yoktur ve dize nesnesi başka bir karakter olduğu gibi bir parçası olabilir.
 
-Const otomatik bir dönüştürme yoktur **char\***  sınıf türü nesneler için otomatik dönüştürmelerinde C stili dizeler sağlamaz dizeleri, ancak dize **basic_string \< char >**.
+Otomatik bir dönüştürme yoktur **const char** <strong>\*</strong> sınıfı C stili dizeler otomatik dönüştürmelerinde türündekinesneleriçinsağlamazdizeleri,ancakdize**basic_string \<char >**.
 
 Bu dize işaretçisine geçersiz veya dize sınırlı bir ömre sahiptir ve sınıf dizesiyle ait olduğundan, silinmiş olduğundan döndürülen dizeyi değiştirilmemelidir.
 
@@ -3528,7 +3528,7 @@ typedef typename allocator_type::pointer pointer;
 
 Türü eşanlamlıdır `allocator_type::pointer`.
 
-Türü için `string`, eşdeğerdir **char\***.
+Türü için `string`, eşdeğerdir **char**<strong>\*</strong>.
 
 ### <a name="example"></a>Örnek
 

@@ -9,15 +9,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cf5041e6e3faa8c495d52c31d86ff25c903a174
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 50c7b6a8e62aa957c54f66ebaf87fcd86df458fb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600726"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199349"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>işleç Windows::UI::Xaml::Interop::TypeName
-Dönüştürme sağlayan `Platform::Type` için [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).  
+Dönüştürme sağlayan `Platform::Type` için [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -26,10 +26,10 @@ Operator TypeName(Platform::Type^ type)
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) verildiğinde bir `Platform::Type^`.  
+ Döndürür bir [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) verildiğinde bir `Platform::Type^`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `TypeName` tür bilgilerini temsil eden dilden Windows çalışma zamanı struct ' dir. [Platform::type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili arabiriminde (ABI) geçirilemez. Bir işte `TypeName`, [Navigate](http://msdn.microsoft.com/library/windows/apps/hh702394.aspx) işlevi:  
+ `TypeName` tür bilgilerini temsil eden dilden Windows çalışma zamanı struct ' dir. [Platform::type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili arabiriminde (ABI) geçirilemez. Bir işte `TypeName`, [Navigate](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) işlevi:  
   
 ```  
 rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  

@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ec2fea7b0aa320a40e70a56b9980d1993cee2fa
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4b9fff04f20a1b77acb1ca18cb80891ec3ef124d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610686"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212067"
 ---
 # <a name="windowsfoundation-namespace"></a>Windows::Foundation Ad Alanı
 
@@ -52,4 +52,4 @@ namespace Windows::Foundation;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Windows Namespace](http://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)
+[Windows Namespace](https://msdn.microsoft.com/45b08650-69cd-4f7f-a959-b7361476865c)

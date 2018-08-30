@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbcabd0659e98d25cbe28ce233b89dccc3585d61
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 15719f93fbcfde8e6684373f99c924132af9d288
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336192"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215446"
 ---
 # <a name="cdaoexception-class"></a>CDaoException sınıfı
 Veri erişim nesnelerine (DAO) göre MFC veritabanı sınıflarından kaynaklanan bir özel durum koşulunu temsil eder.  
@@ -201,7 +201,7 @@ void GetErrorInfo(int nIndex);
 ### <a name="remarks"></a>Açıklamalar  
  Bu bir OLE koddur. Nadiren hemen hemen tüm durumlarda daha belirli MFC DAO ya da hata bilgilerini diğer kullanılabilir olduğundan, bu değer kullanmanız gerekir `CDaoException` veri üyeleri.  
   
- SCODE hakkında daha fazla bilgi için Ek Yardım konusuna [yapısı, OLE hata kodları](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK. SCODE veri türü için HRESULT veri türü eşlemeleri.  
+ SCODE hakkında daha fazla bilgi için Ek Yardım konusuna [yapısı, OLE hata kodları](/windows/desktop/com/structure-of-com-error-codes) Windows SDK. SCODE veri türü için HRESULT veri türü eşlemeleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CException sınıfı](../../mfc/reference/cexception-class.md)   

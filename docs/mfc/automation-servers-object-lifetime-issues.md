@@ -17,25 +17,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e27812c20a64f5472c29a66298bcdec30bf4ef2b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9c139bbde88d3d0389c3426fb71ade837ee5e654
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341806"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215216"
 ---
 # <a name="automation-servers-object-lifetime-issues"></a>Otomasyon Sunucuları: Nesne Ömrü Sorunları
-Bir otomasyon istemci oluşturur veya OLE öğeyi etkinleştirir, sunucu bu nesne için bir işaretçi istemci geçirir. OLE işlevi çağrısı aracılığıyla nesneye başvuru istemci oluşturur [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379). Bu başvuru istemci çağrılarını kadar etkili olduğu [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317). (Microsoft Foundation Class Kitaplığı'nın OLE sınıfları ile yazılmış istemci uygulamaların bu çağrıları yapmamanız; framework bunu yapar.) OLE sistemi ve sunucu nesne başvuruları oluşturabilir. Bir sunucu, bir nesne yok nesne dış başvuruları etkin kaldığı sürece.  
+Bir otomasyon istemci oluşturur veya OLE öğesini etkinleştirir, sunucunun istemci o nesneye bir işaretçi geçirir. İstemci OLE işlevi yapılan bir çağrıyla nesnesine bir başvuru oluşturur [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref). Bu başvuru istemci çağrıları kadar etkili olduğu [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release). (Microsoft Foundation Class Kitaplığı'nın OLE sınıfları ile yazılmış istemci uygulamaları bu çağrılar yapmamanız; çerçeve bunu yapar.) OLE sistemi ve sunucu nesne başvurular oluşturabilir. Bir sunucu, nesnenin yok nesne dış başvuruları geçerli kaldığı sürece.  
   
- Bir iç sayısını türetilmiş herhangi bir sunucu nesnesi başvurular framework tutar [CCmdTarget](../mfc/reference/ccmdtarget-class.md). Bu sayaç bir otomasyon istemci onayladığında veya başka bir varlık ekler veya nesneye bir başvurusu serbest bırakır.  
+ Bir iç sayısı türetilen herhangi bir sunucu nesnenin başvuru sayısının framework tutar [CCmdTarget](../mfc/reference/ccmdtarget-class.md). Bu sayaç, bir otomasyon istemci güncelleştirilir veya başka bir varlık ekler veya nesnesine bir başvuru serbest bırakır.  
   
- Başvuru sayısı 0 olduğunda framework sanal işlev çağrıları [CCmdTarget::OnFinalRelease](../mfc/reference/ccmdtarget-class.md#onfinalrelease). Bu işlev varsayılan uygulamasını çağıran **silmek** bu nesneyi silmek için işleci.  
+ Başvuru sayımı 0 olduğunda framework sanal işlev çağrıları [CCmdTarget::OnFinalRelease](../mfc/reference/ccmdtarget-class.md#onfinalrelease). Bu işlev varsayılan uygulamasını çağırır **Sil** işleci bu nesneyi silmek için.  
   
- Microsoft Foundation Class Kitaplığı uygulamanın nesnelere başvurular dış istemciniz olduğunda uygulama davranışını denetlemek için ek olanakları sağlar. Her nesne başvuruları sayısını koruma yanı sıra sunucuları etkin nesneler genel sayısını bulundurur. Genel işlevler [AfxOleLockApp](../mfc/reference/application-control.md#afxolelockapp) ve [AfxOleUnlockApp](../mfc/reference/application-control.md#afxoleunlockapp) güncelleştirme etkin nesneler uygulamanın sayısı. Bu sayı sıfır değilse, kullanıcının sistem menüsünden veya Dosya menüsünden Çıkış Kapat seçtiğinde uygulamayı sonlandırmak değil. Bunun yerine, uygulamanın ana penceresi gizli (ancak değil yok) kadar tüm bekleyen istemci isteği tamamlandı. Genellikle, `AfxOleLockApp` ve `AfxOleUnlockApp` Kurucular ve Yıkıcılar, Otomasyon destekleyen sınıfları sırasıyla denir.  
+ Microsoft Foundation Class Kitaplığı uygulamanın nesnelere başvurular dış istemciniz olduğunda, uygulama davranışını denetlemek için ek olanakları sağlar. Her nesne başvuru sayısı Bakımı yanı sıra sunucuları etkin nesneler genel sayısını tutar. Genel işlevler [AfxOleLockApp](../mfc/reference/application-control.md#afxolelockapp) ve [AfxOleUnlockApp](../mfc/reference/application-control.md#afxoleunlockapp) güncelleştirme uygulama sayısı etkin bir nesne. Bu sayı sıfır değilse, kullanıcı sistem menüsünden veya çıkış Dosya menüsünden Kapat seçtiğinde uygulamayı sonlandırmak değil. Bunun yerine, uygulamanın ana pencere gizli (ancak yok edilmez) kadar tüm bekleyen istemci istekleri tamamlandı. Genellikle, `AfxOleLockApp` ve `AfxOleUnlockApp` oluşturucuları ve yıkıcıları, sırasıyla, Otomasyon destekleyen sınıfları adı verilir.  
   
- Bazen durumlarda bir istemci yine bir nesneye başvuru sahipken sonlandırmak için sunucu zorlar. Örneğin, sunucunun bağımlı olduğu bir kaynak sunucunun hatayla karşılaşırsanız neden kullanılamaz hale gelebilir. Kullanıcı aynı zamanda diğer uygulamaların başvuruları olan nesneleri içeren bir sunucu belgeyi kapatabilirsiniz.  
+ Bazen bir istemci yine de bir nesneye bir başvuru sahipken sonlandırmak için sunucu koşullar zorlar. Örneğin, sunucu bağımlı olduğu bir kaynak sunucunun hatayla karşılaşan kullanılamaz hale gelebilir. Kullanıcı aynı zamanda diğer uygulamaları başvuruları olan nesneler içeren bir sunucu belgesinin kapatabilirsiniz.  
   
- Windows SDK'ın bkz `IUnknown::AddRef` ve `IUnknown::Release`.  
+ Bkz: Windows SDK'da `IUnknown::AddRef` ve `IUnknown::Release`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Otomasyon sunucuları](../mfc/automation-servers.md)   

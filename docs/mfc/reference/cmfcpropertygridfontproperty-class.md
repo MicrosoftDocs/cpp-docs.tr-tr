@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ea43fefabe43bec8a5bf9b00404491a405e5416
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: d9e90570e783b2c42081da4854d54a65d1bdb9b6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852987"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208872"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir yazı tipi seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
@@ -90,7 +90,7 @@ CMFCPropertyGridFontProperty(
  Yazı tipi özniteliklerini belirtir mantıksal yazı tipi yapısı.  
   
  [in] *dwFontDialogFlags*  
- Özellik değeri açılan Düğmeye tıkladığınızda görüntülenen yazı tipi iletişim kutusu için uygulanan stiller. Bit düzeyinde birleşimi (veya) CF_EFFECTS ve CF_SCREENFONTS varsayılan değerdir. Daha fazla bilgi için *bayrakları* parametresinin [CHOOSEFONT yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646832).  
+ Özellik değeri açılan Düğmeye tıkladığınızda görüntülenen yazı tipi iletişim kutusu için uygulanan stiller. Bit düzeyinde birleşimi (veya) CF_EFFECTS ve CF_SCREENFONTS varsayılan değerdir. Daha fazla bilgi için *bayrakları* parametresinin [CHOOSEFONT yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
   
  [in] *lpszDescr*  
  Yazı tipi özellik açıklaması. Varsayılan değer NULL olur.  
@@ -129,7 +129,7 @@ LPLOGFONT GetLogFont();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi bir [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) seçili yazı tipini açıklayan yapısı.  
+ Bir işaretçi bir [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) seçili yazı tipini açıklayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

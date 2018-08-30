@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17f4735b56d6d15dfe3740c0dad727765e0eb84b
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 973501339d05f75414d076cbd22f5dabeb0bec7c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882311"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208729"
 ---
 # <a name="catlfilemapping-class"></a>CAtlFileMapping sınıfı
 Bu sınıfın temsil yöntemleri için bir atama işleci ekleyerek bir bellek işlemeli dosya [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
@@ -47,10 +47,10 @@ class CAtlFileMapping : public CAtlFileMappingBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAtlFileMapping::operator T *](#operator_t_star)|Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T` **\***.|  
+|[CAtlFileMapping::operator T *](#operator_t_star)|Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T*`.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir tek atama işleci örtük dönüştürme izin vermek için bu sınıfı ekler `CAtlFileMapping` nesneleri için `T` **\***. Diğer üyeleri taban sınıfı tarafından sağlanan [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
+ Bir tek atama işleci örtük dönüştürme izin vermek için bu sınıfı ekler `CAtlFileMapping` nesneleri için `T*`. Diğer üyeleri taban sınıfı tarafından sağlanan [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CAtlFileMappingBase](../../atl/reference/catlfilemappingbase-class.md)  
@@ -61,17 +61,17 @@ class CAtlFileMapping : public CAtlFileMappingBase
  **Başlık:** atlfile.h  
   
 ##  <a name="operator_t_star"></a>  CAtlFileMapping::operator T *  
- Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T` **\***.  
+ Örtük dönüştürme sağlayan `CAtlFileMapping` nesneleri için `T*`.  
   
 ```  
 operator T*() const throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `T` **\*** bellekle eşlenen dosya işaretçisi.  
+ Döndürür bir `T*` bellekle eşlenen dosya işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) ve döndürülen işaretçi olarak derecenin bir `T` **\*** burada *T* şablon olarak kullanılan bir tür Bu sınıf parametresi.  
+ Çağrıları [CAtlFileMappingBase::GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) ve döndürülen işaretçi olarak derecenin bir `T*` burada *T* bu sınıfın şablon parametresi kullanılan bir tür.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAtlFileMappingBase sınıfı](../../atl/reference/catlfilemappingbase-class.md)   

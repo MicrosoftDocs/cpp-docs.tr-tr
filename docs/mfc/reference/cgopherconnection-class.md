@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad48c78d46928a34a43fab5bbe660750928baf51
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 176dfc9027951f06f55dd04757b9acb7c7d8a2ec
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336767"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199631"
 ---
 # <a name="cgopherconnection-class"></a>CGopherConnection sınıfı
 Gopher Internet sunucusuyla olan bağlantınızı yönetir.  
@@ -158,7 +158,7 @@ static CGopherLocator CreateLocator(
  Bir öğe almak için gopher sunucuya gönderilecek Seçici dizeye bir işaretçi. *pstrSelectorString* NULL olabilir.  
   
  *dwGopherType*  
- Bu belirtir olup olmadığını *pstrSelectorString* bir dizin veya belge ifade eder ve isteği gopher veya gopher + olup. Yapı için öznitelikleri görmek [GOPHER_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa384215) Windows SDK.  
+ Bu belirtir olup olmadığını *pstrSelectorString* bir dizin veya belge ifade eder ve isteği gopher veya gopher + olup. Yapı için öznitelikleri görmek [GOPHER_FIND_DATA](/windows/desktop/api/wininet/ns-wininet-gopher_find_dataa) Windows SDK.  
   
  *pstrLocator*  
  Açmak için dosyaya tanımlayan bir dize işaretçisi. Genellikle, bu dize çağrısından döndürülen [CGopherFileFind::GetLocator](../../mfc/reference/cgopherfilefind-class.md#getlocator).  
@@ -197,7 +197,7 @@ BOOL GetAttribute(
  Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) , Bulucu türünü alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ##  <a name="openfile"></a>  CGopherConnection::OpenFile  
  Bir gopher sunucusunda bir dosyayı açmak için bu üye işlevini çağırın.  

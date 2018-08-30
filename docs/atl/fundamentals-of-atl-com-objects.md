@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eaaad259fa0c864a72feaff3222f683563c8ca91
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1b9dc87340d567f876d91abc4d8ebfa1d6353cad
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852323"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209993"
 ---
 # <a name="fundamentals-of-atl-com-objects"></a>ATL COM nesnelerinin temelleri
 ATL COM nesnesini tanımlamak için kullanılan arabirimler ve sınıflar arasındaki ilişkiyi aşağıdaki çizimde gösterilmektedir.  
@@ -40,7 +40,7 @@ ATL COM nesnesini tanımlamak için kullanılan arabirimler ve sınıflar arası
   
  İstemci iç nesneyi ile etkileşim kurmak için dış nesne aracılığıyla Git sahip olmadığından, toplu genellikle daha verimli nesneleridir. Ayrıca, toplu nesnenin arabirimi istemciye doğrudan kullanılabilir olması koşuluyla, toplanan nesnesinin işlevselliğini bilmek dış nesne yok. Ancak, tüm nesneleri toplanabilir. Toplanacak bir nesne için bunu aklınızda toplama ile tasarlanmış olması gerekir.  
   
- ATL uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) iki aşama içinde:  
+ ATL uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) iki aşama içinde:  
   
 -   [CComObject](../atl/reference/ccomobject-class.md), [CComAggObject](../atl/reference/ccomaggobject-class.md), veya [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygulayan `IUnknown` yöntemleri.  
   

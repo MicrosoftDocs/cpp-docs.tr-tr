@@ -19,20 +19,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 312fef089262c7e21285d1e3a1fb79de65264d7c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e135dd1cbfc3aeb164449a1f09e6c1cdf6287582
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33130379"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215126"
 ---
 # <a name="how-to-marshal-structures-using-c-interop"></a>Nasıl yapılır: C++ Birlikte Çalışması Kullanarak Yapıları Sıralama
-Bu konuda, bir model Visual C++ birlikte çalışabilirlik gösterilir. Daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
+Bu konuda, Visual C++ birlikte çalışabilirliği bir modeli gösterilmektedir. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
   
- Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) uygulamak için #pragma yönergeleri yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarda tanımlanırsa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesi gerekmez [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).  
+ Aşağıdaki kod örnekleri kullan [yönetilen, yönetilmeyen](../preprocessor/managed-unmanaged.md) #pragma yönergeleri uygulamak için yönetilen ve yönetilmeyen işlevleri aynı dosyada, ancak bu işlevler ayrı dosyalarında tanımlandıysa aynı şekilde birlikte çalışır. Yalnızca yönetilmeyen işlevleri içeren dosyalar ile derlenmesine gerek yoktur [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir yapının yönetilen işlevden yönetilmeyen bir işleve hem değere ve başvuruya göre geçirme gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri içerdiğinden (bkz [blok halinde kopyalanabilir ve olmayan Blittable türleri](http://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), hiçbir özel hazırlama gereklidir. İşaretçiler, içeren olanlar gibi blittable olmayan yapıları sıralamakta bkz [nasıl yapılır: sıralama katıştırılmış işaretçileri C++ Çalışabilirliği kullanarak](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
+ Aşağıdaki örnek, bir yapı yönetilen bir işlevden yönetilmeyen bir işleve, hem değere göre ve başvuruya göre geçirme gösterir. Bu örnekte yapısı yalnızca basit, iç veri türleri içerdiğinden (bkz [blok halinde kopyalanabilir ve örnekteki](https://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), herhangi bir özel sıralama gereklidir. Gibi işaretçiler içeren bu blittable olmayan yapılar hazırlamak için bkz. [nasıl yapılır: hazırlama katıştırılmış işaretçiler kullanarak C++ birlikte çalışması](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
   
 ```  
 // PassStruct1.cpp  
@@ -89,7 +89,7 @@ int main() {
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir yapının yönetilmeyen işlevden yönetilen bir işleve hem değere ve başvuruya göre geçirme gösterir. Bu örnekteki yapı yalnızca basit, iç veri türleri içerdiğinden (bkz [blok halinde kopyalanabilir ve olmayan Blittable türleri](http://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), hiçbir özel dizimi gereklidir. İşaretçiler, içeren olanlar gibi blittable olmayan yapıları sıralamakta bkz [nasıl yapılır: sıralama katıştırılmış işaretçileri C++ Çalışabilirliği kullanarak](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
+ Aşağıdaki örnek, bir yapının bir yönetilmeyen disklerden yönetilen bir işleve hem değere göre ve başvuruya göre geçirme gösterir. Bu örnekte yapısı yalnızca basit, iç veri türleri içerdiğinden (bkz [blok halinde kopyalanabilir ve örnekteki](https://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3)), hiçbir özel dizimi gereklidir. Gibi işaretçiler içeren bu blittable olmayan yapılar hazırlamak için bkz. [nasıl yapılır: hazırlama katıştırılmış işaretçiler kullanarak C++ birlikte çalışması](../dotnet/how-to-marshal-embedded-pointers-using-cpp-interop.md).  
   
 ```  
 // PassStruct2.cpp  

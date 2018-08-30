@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6749c62a5d8de0bd1da3a5d619a85a0ec874a21a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e72c7ea788085f25dc2a4ec1b2f8682df9e20b25
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338424"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209133"
 ---
 # <a name="cgdiobject-class"></a>CGdiObject sınıfı
 Bir temel sınıf için çeşitli türlerdeki Windows grafik cihaz arabirimi (GDI) nesneleri bit eşlemler, bölgeler, Fırçalar, kalemler, paletler ve yazı tipleri gibi sağlar.  
@@ -139,7 +139,7 @@ BOOL CreateStockObject(int nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- İstenen stok nesne türünü belirten bir sabit değer. Bkz. parametre *fnObject* için [GetStockObject](http://msdn.microsoft.com/library/windows/desktop/dd144925) uygun değerlerin bir tanımı için Windows SDK.  
+ İstenen stok nesne türünü belirten bir sabit değer. Bkz. parametre *fnObject* için [GetStockObject](/windows/desktop/api/wingdi/nf-wingdi-getstockobject) uygun değerlerin bir tanımı için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.  
@@ -230,14 +230,14 @@ int GetObject(
 |------------|-----------------|  
 |`CPen`|[LOGPEN](../../mfc/reference/logpen-structure.md)|  
 |`CBrush`|[LOGBRUSH](../../mfc/reference/logbrush-structure.md)|  
-|`CFont`|[LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037)|  
+|`CFont`|[LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta)|  
 |`CBitmap`|[BİT EŞLEM](../../mfc/reference/bitmap-structure.md)|  
 |`CPalette`|WORD|  
 |`CRgn`|Desteklenmez|  
   
  Nesne ise bir `CBitmap` nesnesi `GetObject` yalnızca genişlik, yükseklik ve bit eşlemin renk biçim bilgilerini döndürür. Gerçek BITS kullanarak alınabilir [CBitmap::GetBitmapBits](../../mfc/reference/cbitmap-class.md#getbitmapbits).  
   
- Nesne ise bir `CPalette` nesnesi `GetObject` palette giriş sayısını belirten bir sözcük alır. İşlev alamadı [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) paleti tanımlayan yapısını. Bir uygulama çağırarak paleti girdileri hakkında bilgi alabilirsiniz [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
+ Nesne ise bir `CPalette` nesnesi `GetObject` palette giriş sayısını belirten bir sözcük alır. İşlev alamadı [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) paleti tanımlayan yapısını. Bir uygulama çağırarak paleti girdileri hakkında bilgi alabilirsiniz [CPalette::GetPaletteEntries](../../mfc/reference/cpalette-class.md#getpaletteentries).  
   
 ##  <a name="getobjecttype"></a>  CGdiObject::GetObjectType  
  GDI nesnenin türünü alır.  

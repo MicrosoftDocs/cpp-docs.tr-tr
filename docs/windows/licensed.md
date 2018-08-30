@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b30a9a0e2d959725b5f5d94118493ef833a57579
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e57e0cd60ee1d07f29c3aba5540980cd5f4ae02b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604835"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209908"
 ---
 # <a name="licensed"></a>lisanslı
 
@@ -36,7 +36,7 @@ Geçerli bir COM nesnesi lisanslanır ve kullanarak örneği oluşturulmalıdır
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Lisanslı** C++ özniteliği ile aynı işlevlere sahip [lisanslı](http://msdn.microsoft.com/library/windows/desktop/aa367070) MIDL özniteliği.
+**Lisanslı** C++ özniteliği ile aynı işlevlere sahip [lisanslı](/windows/desktop/Midl/licensed) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51beef03fe4e92f4eacd733b2d92b04675ed4242
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1b7f83175e2bf3fe1e69ef02192749916e566edd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465559"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215259"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -284,7 +284,7 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::IsToolBox](#istoolbox)||  
 |[CMFCTasksPane::IsWrapLabelsEnabled](#iswraplabelsenabled)|Görev bölmesi etiketler sözcükleri kaydırılıp kaydırılmadığını gösterir.|  
 |[CMFCTasksPane::IsWrapTasksEnabled](#iswraptasksenabled)|Görev bölmesi görevlere sözcükleri kaydırılıp kaydırılmadığını gösterir.|  
-|[CMFCTasksPane::LoadState](#loadstate)|(Geçersiz kılmaları [CDockablePane::LoadState](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
+|[CMFCTasksPane::LoadState](#loadstate)|(Geçersiz kılmaları [CDockablePane::LoadState](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917).)|  
 |[CMFCTasksPane::OnCancel](#oncancel)||  
 |[CMFCTasksPane::OnClickTask](#onclicktask)|Kullanıcı görev bölmesindeki bir öğeye tıkladığında framework tarafından çağırılır.|  
 |[CMFCTasksPane::OnOK](#onok)||  
@@ -293,8 +293,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::OnPressHomeButton](#onpresshomebutton)|Kullanıcı ana gezinti düğmesine tıkladığında framework tarafından çağırılır|  
 |[CMFCTasksPane::OnPressOtherButton](#onpressotherbutton)||  
 |[CMFCTasksPane::OnSetAccData](#onsetaccdata)|(Geçersiz kılmaları [CBasePane::OnSetAccData](../../mfc/reference/cbasepane-class.md#onsetaccdata).)|  
-|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](http://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
-|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları [CDockablePane::PreTranslateMessage](http://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
+|[CMFCTasksPane::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CDockablePane::OnUpdateCmdUI](https://msdn.microsoft.com/5dd61606-1c12-40d4-b024-f3839aa5e2e0).)|  
+|[CMFCTasksPane::PreTranslateMessage](#pretranslatemessage)|(Geçersiz kılmaları [CDockablePane::PreTranslateMessage](https://msdn.microsoft.com/49a242cc-b158-400e-9e01-0345ec9c3ffd).)|  
 |[CMFCTasksPane::RecalcLayout](#recalclayout)|(Geçersiz kılmaları [CPane::RecalcLayout](../../mfc/reference/cpane-class.md#recalclayout).)|  
 |[CMFCTasksPane::RemoveAllGroups](#removeallgroups)|Belirtilen sayfadaki tüm grupları kaldırır.|  
 |[CMFCTasksPane::RemoveAllPages](#removeallpages)|Görev bölmesinden varsayılan (ilk) sayfası dışındaki tüm sayfaları kaldırır.|  
@@ -302,8 +302,8 @@ class CMFCTasksPane : public CDockablePane
 |[CMFCTasksPane::RemoveGroup](#removegroup)|Bir grubu kaldırır.|  
 |[CMFCTasksPane::RemovePage](#removepage)|Belirtilen bir sayfa görev bölmesinden kaldırır.|  
 |[CMFCTasksPane::RemoveTask](#removetask)|Bir görev, bir görev grubundan kaldırır.|  
-|[CMFCTasksPane::SaveState](#savestate)|(Geçersiz kılmaları [CDockablePane::SaveState](http://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
-|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize](http://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
+|[CMFCTasksPane::SaveState](#savestate)|(Geçersiz kılmaları [CDockablePane::SaveState](https://msdn.microsoft.com/c5c24249-8d0d-46cb-96d9-9f5c6dc191db).)|  
+|[CMFCTasksPane::Serialize](#serialize)|(Geçersiz kılmaları [CDockablePane::Serialize](https://msdn.microsoft.com/09787e59-e446-4e76-894b-206d303dcfd6).)|  
 |[CMFCTasksPane::SetActivePage](#setactivepage)|Belirtilen bir sayfa görev bölmesinde etkinleştirir.|  
 |[CMFCTasksPane::SetCaption](#setcaption)|Bir görev bölmesi resim yazısı adını ayarlar.|  
 |[CMFCTasksPane::SetGroupCaptionHeight](#setgroupcaptionheight)|Bir Grup başlığını yüksekliğini belirler.|  

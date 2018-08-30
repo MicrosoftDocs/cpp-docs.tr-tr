@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80e89573e67113900db7b35ffe3f1189de1c524a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: fdcec255c7d2398e1bb0efa7f86a31fc5dd938e4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336338"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210209"
 ---
 # <a name="cctrlview-class"></a>CCtrlView sınıfı
 Belge / görünüm mimarisi için Windows 98 ve Windows NT tarafından 3.51 sürümü ve sonraki sürümlerde desteklenen ortak denetimlere uyum sağlar.  
@@ -140,7 +140,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
   
 ### <a name="parameters"></a>Parametreler  
  *cs*  
- A [CREATESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632603) yapısı.  
+ A [CREATESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632603) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencere oluşturma devam etmelidir olursa sıfır dışı; oluşturma hatası göstermek için 0'ı tıklatın.  

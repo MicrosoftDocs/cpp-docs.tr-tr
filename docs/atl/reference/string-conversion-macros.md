@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee63cf7f5ec2bd0d6ed76bf891ed82492c76560d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8d9c4c43098d7f0ca8a5e9588a69a47d6e98a066
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885161"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210061"
 ---
 # <a name="string-conversion-macros"></a>Dize dönüşüm makroları
 
@@ -38,7 +38,7 @@ Burada tartışılan dize dönüşüm makroları, ATL ve MFC için geçerlidir. 
 
 ##  <a name="devmode_and_textmetric_string_conversion_macros"></a>  DEVMODE ve TEXTMETRIC dize dönüşüm makroları
 
-Bu makrolar bir kopyasını oluşturmak bir [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) veya [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) yapısı ve dizeleri yeni yapısı içinde yeni bir dize türüne dönüştürün. Makrolar, yığında bellek ayırmak için yeni yapısı ve yeni yapısına bir işaretçi döndürür.  
+Bu makrolar bir kopyasını oluşturmak bir [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) veya [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) yapısı ve dizeleri yeni yapısı içinde yeni bir dize türüne dönüştürün. Makrolar, yığında bellek ayırmak için yeni yapısı ve yeni yapısına bir işaretçi döndürür.  
   
 ```cpp
 MACRONAME( address_of_structure )

@@ -54,12 +54,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ea5ed6c4441ebd98462562ac9405d6f8c115c61
-ms.sourcegitcommit: 04d327940787df1297b72d534f388a035d472af0
+ms.openlocfilehash: cf7e7e009d1f56d71e8f1b26a2e0eeefb8855492
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39181100"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214093"
 ---
 # <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
 Bir arama dizesinin bir dizede ilk geçtiği yere bir işaretçi döndürür.
@@ -143,7 +143,7 @@ Kullanılacak yerel ayar.
 `strstr` İşlevi için ilk geçtiği bir işaretçi döndürür *strSearch* içinde *str*. Arama boş karakterlerin sonlandırılmasını içermez. `wcsstr` öğesinin geniş karakterli sürümüdür `strstr` ve `_mbsstr` çok baytlı karakter sürümüdür. Bağımsız değişkenler ve dönüş değeri `wcsstr` geniş karakterli dizelerdir; `_mbsstr` çok baytlı karakter dizeleridir. `_mbsstr` kendi parametrelerini doğrular. Varsa *str* veya *strSearch* NULL ise açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütmenin devam etmesine izin verilirse `_mbsstr` ayarlar `errno` EINVAL ve 0 döndürür. `strstr` ve `wcsstr` kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
 > [!IMPORTANT]
-> Bu işlevler, arabellek taşması sorunu kaynaklanan bir tehdit tabi olabilirsiniz. Arabellek taşması sorunları, bir unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütülmesine izin verebilir çünkü bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler, arabellek taşması sorunu kaynaklanan bir tehdit tabi olabilirsiniz. Arabellek taşması sorunları, bir unwarranted ayrıcalık yükselmesine neden olabilir rastgele kod yürütülmesine izin verebilir çünkü bir sistem saldırmak için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 C'de bu işlevler alır bir **const** ilk bağımsız değişken için bir işaretçi. C++'da, iki aşırı yüklemesi kullanılabilir. Bir işaretçi alan aşırı yüklemesini **const** bir işaretçi döndürür **const**; olmayan bir işaretçiye alan sürüm**const** olmayan bir işaretçi döndürür **const**. Her iki makro _CRT_CONST_CORRECT_OVERLOADS tanımlanan **const** ve olmayan-**const** bu işlevlerin sürümleri mevcuttur. Olmayan gerektiriyorsa**const** davranışı için her iki C++ aşırı _const_return sembolünü.
 

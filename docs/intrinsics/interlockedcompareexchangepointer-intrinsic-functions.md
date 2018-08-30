@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f8ab76252c355bb56a1e2157e0e025a4eddb0d8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 18f26f9ac0cd00758d1259ac368b2408a7a2e8cf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596542"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214627"
 ---
 # <a name="interlockedcompareexchangepointer-intrinsic-functions"></a>_Interlockedcompareexchangepointer iç işlevleri
 **Microsoft'a özgü**  
@@ -110,7 +110,7 @@ long _InterlockedCompareExchangePointer_rel (
 ## <a name="remarks"></a>Açıklamalar  
  `_InterlockedCompareExchangePointer` atomik bir karşılaştırma gerçekleştirir `Destination` ele `Comparand` adresi. Varsa `Destination` adresi eşittir `Comparand` adresi `Exchange` adresi tarafından belirtilen adresi depolanan `Destination`. Aksi takdirde, hiçbir işlem yapılmadı.  
   
- `_InterlockedCompareExchangePointer` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [_ınterlockedcompareexchangepointer](http://msdn.microsoft.com/library/ff547863.aspx) işlevi.  
+ `_InterlockedCompareExchangePointer` Win32 Windows SDK'sı için derleyici iç desteği sağlayan [_ınterlockedcompareexchangepointer](https://msdn.microsoft.com/library/ff547863.aspx) işlevi.  
   
  Nasıl kullanılacağını gösteren bir örnek `_InterlockedCompareExchangePointer`, bkz: [_ınterlockeddecrement](../intrinsics/interlockeddecrement-intrinsic-functions.md).  
   

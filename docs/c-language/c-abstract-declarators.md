@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc89682a6d092bd5291551f01d9d592d64fdff85
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea9ca44dbc484749cc10a59fec0b91d096921827
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381827"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214538"
 ---
 # <a name="c-abstract-declarators"></a>C Soyut Bildirimciler
-Soyut bildirimci, tanımlayıcısı olmayan, bir veya daha fazla işaretçiden, diziden veya işlev değiştiricisinden oluşan bir bildirimcidir. İşaretçi değiştiricisi (**\***) her zaman bir bildirimcisi; tanımlayıcısı önündeki dizi (**[]**) ve işlevi ( **()** ) değiştiricileri tanımlayıcı izleyin. Bu bilgiyle; tanımlayıcının, soyut bildirimcinin neresinde görüneceğini belirleyebilir ve ona göre bildiriciyi yorumlayabilirsiniz. Bkz: [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md) karmaşık bildirimcileri örnekleri ve ek bilgi için. Bildirimciler basitleştirmek için genellikle `typedef` kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
+Soyut bildirimci, tanımlayıcısı olmayan, bir veya daha fazla işaretçiden, diziden veya işlev değiştiricisinden oluşan bir bildirimcidir. İşaretçi değiştirici (<strong>\*</strong>) her zaman bir bildirimcide; tanımlayıcısından önce gelir dizi (**[]**) ve işlev ( **()** ) değiştiriciler tanımlayıcıyı izler. Bu bilgiyle; tanımlayıcının, soyut bildirimcinin neresinde görüneceğini belirleyebilir ve ona göre bildiriciyi yorumlayabilirsiniz. Bkz: [daha karmaşık Bildirimcileri yorumlama](../c-language/interpreting-more-complex-declarators.md) ek bilgi ve örnekler. Bildirimciler basitleştirmek için genellikle `typedef` kullanılabilir. Bkz: [Typedef bildirimleri](../c-language/typedef-declarations.md).  
   
  Soyut bildirimciler karmaşık olabilir. Bir karmaşık soyut bildirimcideki parantezler belirli bir yorumu belirtir (bildirimler içindeki karmaşık bildirimciler için olduğu gibi).  
   
@@ -52,7 +52,7 @@ int (*const []) ( unsigned int, ... )
 ```  
   
 > [!NOTE]
->  Boş parantez kümesinden oluşan soyut bildirimcisi **()**, belirsiz olduğundan izin verilmiyor. İma edilen tanımlayıcının parantez içinde mi (bu durumda, değiştirilmemiş bir türdür) yoksa parantezlerden önce mi (bu durumda, bir işlev türüdür) olduğunu belirlemek mümkün değildir.  
+>  Bir boş ayraç kümesi içeren soyut bildirimciye **()**, belirsiz olduğu için izin verilmiyor. İma edilen tanımlayıcının parantez içinde mi (bu durumda, değiştirilmemiş bir türdür) yoksa parantezlerden önce mi (bu durumda, bir işlev türüdür) olduğunu belirlemek mümkün değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

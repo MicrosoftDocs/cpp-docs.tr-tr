@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f9b2de39f5b5340eff22c7e22244aca3d05af67
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d486047b708e0c3412aa63e0a0b026a2a4204f71
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376578"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213905"
 ---
 # <a name="manifestdependency-specify-manifest-dependencies"></a>/MANIFESTDEPENDENCY (Bildirim Bağımlılıklarını Belirt)
 ```  
@@ -31,19 +31,19 @@ ms.locfileid: "32376578"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- / MANIFESTDEPENDENCY yerleştirilecek öznitelikleri belirtmenize olanak sağlar \<bağımlılık > bildirim dosyasının bölümü.  
+ / MANIFESTDEPENDENCY yerleştirilecek öznitelikleri belirlemenizi sağlar \<bağımlılık > bölümüne bildirim dosyasının.  
   
- Bkz: [/MANIFEST (oluşturma yan yana derleme bildirimi)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) bildirim dosyasının nasıl oluşturulacağı hakkında bilgi için.  
+ Bkz: [/MANIFEST (oluşturma yan yana derleme bildirimi)](../../build/reference/manifest-create-side-by-side-assembly-manifest.md) bir bildirim dosyası oluşturma hakkında daha fazla bilgi için.  
   
- Daha fazla bilgi için \<bağımlılık > bölümüne bildirim dosyası [yayımcı yapılandırma dosyalarını](http://msdn.microsoft.com/library/aa375682).  
+ Daha fazla bilgi için \<bağımlılık > bölümüne bildirim dosyası, bkz: [yayımcı yapılandırma dosyaları](/windows/desktop/SbsCs/publisher-configuration-files).  
   
- / MANIFESTDEPENDENCY bilgi iki yoldan biriyle bağlayıcıya geçirilebilir:  
+ / MANIFESTDEPENDENCY bilgi iki yoldan biriyle bağlayıcı geçirilebilir:  
   
--   Komut satırında doğrudan (veya bir yanıt dosyası) /MANIFESTDEPENDENCY ile.  
+-   Doğrudan komut satırında (veya bir yanıt dosyası) /MANIFESTDEPENDENCY ile.  
   
--   Aracılığıyla [açıklama](../../preprocessor/comment-c-cpp.md) pragması.  
+-   Aracılığıyla [yorum](../../preprocessor/comment-c-cpp.md) pragması.  
   
- Aşağıdaki örnek, pragma geçirilen /MANIFESTDEPENDENCY yorum gösterir,  
+ Pragma geçirilen /MANIFESTDEPENDENCY yorum aşağıdaki örnekte,  
   
 ```  
 #pragma comment(linker, "\"/manifestdependency:type='Win32' name='Test.Research.SampleAssembly' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='0000000000000000' language='*'\"")  
@@ -59,25 +59,25 @@ ms.locfileid: "32376578"
 </dependency>  
 ```  
   
- Aynı /MANIFESTDEPENDENCY açıklamaları komut satırında şu şekilde geçirilebilir:  
+ Aynı /MANIFESTDEPENDENCY yorumları komut satırında şu şekilde geçirilebilir:  
   
 ```  
 "/manifestdependency:type='Win32' name='Test.Research.SampleAssembly' version='6.0.0.0' processorArchitecture='X86' publicKeyToken='0000000000000000' language='*'\"  
 ```  
   
- Bağlayıcı /MANIFESTDEPENDENCY açıklamaları toplamak, yinelenen girişleri önlemek ve ardından sonuç XML dizesi bildirim dosyası ekleyin.  Çakışan girişleri bağlayıcı bulur, bildirim dosyası bozuk hale gelir ve uygulamayı başlatmak başarısız olur (bir giriş hatanın kaynağını belirten olan olay günlüğü için eklenebilir).  
+ Bağlayıcı /MANIFESTDEPENDENCY açıklamaları toplamak, yinelenen girişler ortadan kaldırın ve sonra elde edilen XML dizesi bildirim dosyasına ekleyin.  Çakışan girişleri bağlayıcı bulur, bildirim dosyası bozuk hale gelir ve uygulamayı başlatmakta başarısız olacaktır (bir giriş hatanın kaynağını gösteren olay günlüğü için eklenebilir).  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
+2.  Genişletin **yapılandırma özellikleri** düğümü.  
   
-3.  Genişletme **bağlayıcı** düğümü.  
+3.  Genişletin **bağlayıcı** düğümü.  
   
 4.  Seçin **bildirim dosyası** özellik sayfası.  
   
-5.  Değiştirme **ek bildirim bağımlılıklar** özelliği.  
+5.  Değiştirme **ek bildirim bağımlılıkları** özelliği.  
   
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
   

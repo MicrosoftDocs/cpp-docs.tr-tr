@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c79c2260b03d0530595100ba8f4c42a392900aa7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: bb6cc740577dfcb5921332c24e3cec2d2d6cb100
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851385"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210856"
 ---
 # <a name="cmfctoolbarbutton-class"></a>CMFCToolBarButton sınıfı
 Araç çubuğu düğmesi işlevsellik sağlar.  
@@ -230,19 +230,19 @@ class CMFCToolBarButton : public CObject
 |[CMFCToolBarButton::IsOwnerOf](#isownerof)|Düğme belirtilen pencere tanıtıcısı sahibi olup olmadığını belirler.|  
 |[CMFCToolBarButton::IsVisible](#isvisible)|Araç çubuğu düğmesi görünür olup olmadığını belirler.|  
 |[CMFCToolBarButton::IsWindowVisible](#iswindowvisible)|Temel alınan pencere tanıtıcısı düğmenin görünür olup olmadığını belirler.|  
-|[CMFCToolBarButton::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti.|  
+|[CMFCToolBarButton::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti.|  
 |[CMFCToolBarButton::OnAddToCustomizePage](#onaddtocustomizepage)|Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu.|  
 |[CMFCToolBarButton::OnBeforeDrag](#onbeforedrag)|Düğme sürüklenebilir olup olmadığını belirtir.|  
 |[CMFCToolBarButton::OnBeforeDrop](#onbeforedrop)|Kullanıcı düğmeyi hedef araç çubuğuna bırak olup olmadığını belirtir.|  
 |[CMFCToolBarButton::OnCalculateSize](#oncalculatesize)|Yerleştirme durumu ve belirtilen bir cihaz bağlamı için düğmenin boyutunu hesaplamak için framework tarafından çağırılır.|  
-|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|İşlemek için framework tarafından çağırılır [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) ileti.|  
+|[CMFCToolBarButton::OnCancelMode](#oncancelmode)|İşlemek için framework tarafından çağırılır [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) ileti.|  
 |[CMFCToolBarButton::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnClick](#onclick)|Kullanıcı fare düğmesine tıkladığında framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnClickUp](#onclickup)|Kullanıcı fare düğmesini bıraktığında framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnContextHelp](#oncontexthelp)|Üst araç çubuğunda WM_HELPHITTEST iletisi işlediğinde framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnCtlColor](#onctlcolor)|Üst araç çubuğunda WM_CTLCOLOR iletisi işlediğinde framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnCustomizeMenu](#oncustomizemenu)|Uygulamanın üst araç çubuğunda bir kısayol menü görüntülendiğinde sağlanan menü değiştirmek düğmesi sağlar.|  
-|[CMFCToolBarButton::OnDblClk](#ondblclk)|Üst araç çubuğunda işlediğinde framework tarafından çağırılır. bir [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) ileti.|  
+|[CMFCToolBarButton::OnDblClk](#ondblclk)|Üst araç çubuğunda işlediğinde framework tarafından çağırılır. bir [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) ileti.|  
 |[CMFCToolBarButton::OnDraw](#ondraw)|Belirtilen stillerini ve seçeneklerini kullanarak bir düğme çizmek için framework tarafından çağırılır.|  
 |[CMFCToolBarButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Düğme çizim için framework tarafından çağırılır **komutları** bölmesinde **Özelleştir** iletişim kutusu.|  
 |[CMFCToolBarButton::OnGetCustomToolTipText](#ongetcustomtooltiptext)|Düğme için özel bir araç ipucu metnini almak için framework tarafından çağırılır.|  
@@ -446,7 +446,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
  Bu parametreyi etkinleştir giriş true ya da giriş devre dışı bırakmak için false olarak ayarlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin çağırdığı `EnableWindow` etkinleştirme veya devre dışı Giriş işlevi. Daha fazla bilgi için [EnableWindow](http://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK.  
+ Bu yöntemin çağırdığı `EnableWindow` etkinleştirme veya devre dışı Giriş işlevi. Daha fazla bilgi için [EnableWindow](https://msdn.microsoft.com/library/windows/desktop/ms646291) Windows SDK.  
   
 ##  <a name="exporttomenubutton"></a>  CMFCToolBarButton::ExportToMenuButton  
  Menüye araç çubuğu düğmesi metni kopyalar.  
@@ -884,7 +884,7 @@ CString m_strText;
  Bu veri üyesi düğmesinin metin etiketi içerir. Metin etiketi boş olabilir.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarButton::NotifyCommand  
- Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti.  
+ Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -898,7 +898,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  Bu yöntem FALSE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) üst penceresine ileti.  
+ Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](/windows/desktop/menurc/wm-command) üst penceresine ileti.  
   
  Varsayılan olarak, bu yöntem FALSE döndürür. WM_COMMAND ileti ya da FALSE üst araç çubuğunda ileti işleyeceğini belirtmek için işlemek istiyorsanız TRUE döndürmek için bu yöntemi yok sayın.  
   
@@ -977,14 +977,14 @@ virtual SIZE OnCalculateSize(
  Standart olmayan bir düğme (örneğin, bir düzenleme kutusu düğmesi) boyutunu sağlamak istiyorsanız bu yöntemi yok sayın.  
   
 ##  <a name="oncancelmode"></a>  CMFCToolBarButton::OnCancelMode  
- İşlemek için framework tarafından çağırılır [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) ileti.  
+ İşlemek için framework tarafından çağırılır [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) ileti.  
   
 ```  
 virtual void OnCancelMode();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemin varsayılan uygulama, hiçbir şey yapmaz. İşlemek istiyorsanız bu yöntemi yok sayın [WM_CANCELMODE](http://msdn.microsoft.com/library/windows/desktop/ms632615) ileti.  
+ Bu yöntemin varsayılan uygulama, hiçbir şey yapmaz. İşlemek istiyorsanız bu yöntemi yok sayın [WM_CANCELMODE](/windows/desktop/winmsg/wm-cancelmode) ileti.  
   
 ##  <a name="onchangeparentwnd"></a>  CMFCToolBarButton::OnChangeParentWnd  
  Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır.  
@@ -1104,7 +1104,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
  Varsayılan uygulama, hiçbir şey yapmaz ve false değerini döndürür. Bu yöntemi yok sayın ve sağlanan menüsünün içeriğini değiştirmek istiyorsanız, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="ondblclk"></a>  CMFCToolBarButton::OnDblClk  
- Üst araç çubuğunda işlediğinde framework tarafından çağırılır. bir [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) ileti.  
+ Üst araç çubuğunda işlediğinde framework tarafından çağırılır. bir [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) ileti.  
   
 ```  
 virtual void OnDblClk(CWnd* pWnd);
@@ -1115,7 +1115,7 @@ virtual void OnDblClk(CWnd* pWnd);
  -   Düğmenin üst pencere.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağıran `CMFCToolBar::OnLButtonDblClk` üst araç çubuğunda işlediğinde, yöntem bir [WM_LBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms645606) ileti.  
+ Bu yöntemi çağıran `CMFCToolBar::OnLButtonDblClk` üst araç çubuğunda işlediğinde, yöntem bir [WM_LBUTTONDBLCLK](/windows/desktop/inputdev/wm-lbuttondblclk) ileti.  
   
  Bu yöntemin varsayılan uygulama, hiçbir şey yapmaz.  
   

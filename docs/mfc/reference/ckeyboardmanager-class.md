@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 105a6310968844336ead5c787586d547f3952e57
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 82447c14209f2f47fb6224df7e1daeb18ed6048e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338998"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212897"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol tuşu tablolarını yönetir.  
@@ -169,7 +169,7 @@ static BOOL __stdcall IsKeyHandled(
 |-|-|  
 |Parametre|Açıklama|  
 |[in] *nKey*|Denetlenecek anahtarı.|  
-|[in] *fVirt*|Kısayol tuşu davranışını belirtir. Olası değerler listesi için bkz. [HIZLANDIRMA yapısı](http://msdn.microsoft.com/library/windows/desktop/ms646340).|  
+|[in] *fVirt*|Kısayol tuşu davranışını belirtir. Olası değerler listesi için bkz. [HIZLANDIRMA yapısı](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
 |[in] *pWndFrame*|Çerçeve penceresi. Bu yöntem, bir kısayol tuşu bu çerçeveye işlenip işlenmediğini belirler.|  
 |[in] *bIsDefaultFrame*|Belirten bir Boole parametresi olmadığını *pWndFrame* varsayılan çerçeve penceresidir.|  
   
@@ -197,7 +197,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
  Sıfır dışında yazdırılabilir bir karakterse, değilse sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem çağrısı başarısız olur [GetKeyboardState](http://msdn.microsoft.com/library/windows/desktop/ms646299) başarısız olur.  
+ Bu yöntem çağrısı başarısız olur [GetKeyboardState](https://msdn.microsoft.com/library/windows/desktop/ms646299) başarısız olur.  
   
 ##  <a name="isshowallaccelerators"></a>  CKeyboardManager::IsShowAllAccelerators  
  Menü komutlarını ile ilişkili tüm kısayol tuşlarının veya yalnızca varsayılan kısayol tuşlarını gösterip göstermediği belirtir.  

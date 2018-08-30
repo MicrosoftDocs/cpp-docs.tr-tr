@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bf101fdb0e93ef206ae61c29b636c973fa58a825
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b40576e1b5613bfda19987167e7e43353e6b5802
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593983"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211710"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -63,7 +63,7 @@ Windows çalışma zamanı C++ Şablon kitaplığı zaman uyumsuz işlemler baş
 Windows çalışma zamanı C++ Şablon kitaplığı abone olup bir Windows çalışma zamanı nesnesi olaylarını işlemek için nasıl kullanılacağını gösterir.
 
 [İzlenecek yol: WRL ve Medya Altyapısı kullanarak UWP uygulaması oluşturma](../windows/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation.md)  
-Kullanan bir UWP uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).
+Kullanan bir UWP uygulaması oluşturmayı öğrenin [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
 [Nasıl yapılır: klasik COM bileşeni oluşturma](../windows/how-to-create-a-classic-com-component-using-wrl.md)  
 Temel bir COM bileşeni ve kaydetmek ve bir masaüstü uygulamasından COM bileşeni kullanmak için basit bir yol oluşturmak için Windows çalışma zamanı C++ Şablon kitaplığı kullanmayı gösterir.

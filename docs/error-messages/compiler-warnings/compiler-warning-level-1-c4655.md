@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4655 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6011bf3a2a3bf1718fc15823f2541f49306857c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9600c0fb9b4f03112ebd9cf430e3f833899c5f3c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283269"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209107"
 ---
 # <a name="compiler-warning-level-1-c4655"></a>Derleyici Uyarısı (düzey 1) C4655
-**'**   
- ***Sembol* ': değişken türü son yapıdan beri yeni olan ya da farklı başka bir yere tanımlanır**  
-  
- Değiştirilmiş veya yeni bir veri türü son başarılı yapıdan beri eklenmiş. Düzenle ve devam et, var olan veri türleri değişiklikleri desteklemez.  
-  
- Bu uyarı tarafından izlenen bir [önemli hata C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). Daha fazla bilgi için bkz: [desteklenen kod değişiklikleri](/visualstudio/debugger/supported-code-changes-cpp).  
-  
-### <a name="to-remove-this-warning-without-ending-the-current-debug-session"></a>Geçerli hata ayıklama oturumu sona erdirmeden bu uyarıyı kaldırmak için  
-  
-1.  Geri durumuna hata önce veri türünü değiştirin.  
-  
-2.  Gelen **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulama**.  
-  
-### <a name="to-remove-this-warning-without-changing-your-source-code"></a>Bu uyarı, kaynak kodunuzu değiştirmeden kaldırmak için  
-  
-1.  Gelen **hata ayıklama** menüsünde seçin **durdurma hata ayıklama**.  
-  
-2.  Gelen **yapı** menüsünde seçin **yapı**.
+
+> '*sembol*': değişken türü son yapımdan beri yeni veya başka yerde farklı şekilde tanımlanmış
+
+## <a name="remarks"></a>Açıklamalar
+
+Değiştirdiğiniz ya da başarılı en son yapımdan beri yeni bir veri türüne eklendi. Düzenle ve devam et, var olan veri türleri için değişiklikleri desteklemez.
+
+Bu uyarı tarafından izlenen bir [önemli hata C1092](../../error-messages/compiler-errors-1/fatal-error-c1092.md). Daha fazla bilgi için bkz: [desteklenen kod değişiklikleri](/visualstudio/debugger/supported-code-changes-cpp).
+
+### <a name="to-remove-this-warning-without-ending-the-current-debug-session"></a>Geçerli hata ayıklama oturumu sona erdirmeden bu uyarıyı kaldırmak için
+
+1. Hata öncesinde durumuna geri dön veri türünü değiştirin.
+
+2. Gelen **hata ayıklama** menüsünde seçin **kod değişikliklerini uygulama**.
+
+### <a name="to-remove-this-warning-without-changing-your-source-code"></a>Kaynak kodunuzu değiştirmeden bu uyarıyı kaldırmak için
+
+1. Gelen **hata ayıklama** menüsünde seçin **hata ayıklamayı Durdur**.
+
+2. Gelen **derleme** menüsünde seçin **yapı**.

@@ -37,16 +37,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8407848db8f442324127df8d7267a5350c077b2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c75b2988dd00d8141c25e67c29bcc0b082270ffe
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405763"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210168"
 ---
 # <a name="rands"></a>rand_s
 
-Geçici rastgele bir sayı oluşturur. Bu işlev daha güvenli bir sürümü olan [rand](rand.md), açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Sözde rastgele sayı oluşturur. Bu işlevin daha güvenli bir sürümü olduğu [rand](rand.md), açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,24 +57,24 @@ errno_t rand_s(unsigned int* randomValue);
 ### <a name="parameters"></a>Parametreler
 
 *randomValue*<br/>
-Tamsayı üretilen değer tutmak için bir işaretçi.
+Oluşturulan değerini tutacak bir tamsayı işaretçisi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başarılı olursa, sıfır Aksi takdirde bir hata kodu. Varsa Giriş işaretçisi _randomValue_ null işaretçi açıklandığı gibi bir geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. İşlev diğer herhangi bir nedenden dolayı başarısız olursa *_randomValue_ 0 olarak ayarlayın.
+Başarılıysa sıfır Aksi takdirde bir hata kodu. Giriş işaretleyicisini _randomValue_ null bir işaretçiyse, işlevi içinde açıklanan şekilde geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**. Diğer herhangi bir nedenle için işlev başarısız olursa *_randomValue_ 0 olarak ayarlayın.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand_s** işlevi aralıktaki 0 geçici rastgele bir tamsayı Yazar **uınt_max** Giriş işaretçisine. **Rand_s** işlevi şifreleme açısından güvenli rastgele sayılar oluşturmak için işletim sistemi kullanır. Tarafından oluşturulan çekirdek kullanmaz [srand](srand.md) işlevi veya tarafından kullanılan rastgele sayı dizisi etkilemez [rand](rand.md).
+**Rand_s** işlevi için 0 aralığındaki bir sözde rastgele tamsayı Yazar **uınt_max** Giriş işaretçisi. **Rand_s** işlevi işletim sistemi şifreleme yoluyla güvenli rasgele sayılar üretmek için kullanır. Tarafından oluşturulan çekirdek kullanmaz [srand](srand.md) işlevi, ya da tarafından kullanılan rastgele bir sayı sıra etkilemez [rand](rand.md).
 
-**Rand_s** işlevi gerektiren bu sabiti **_CRT_RAND_S** tanımlanması ekleme deyimi aşağıdaki örnekteki bildirilmesi için işlev için önce:
+**Rand_s** işlevi gerektirir, sabiti **_CRT_RAND_S** tanımlanmış olması için aşağıdaki örnekte olduğu gibi bildirilen işlev ekleme deyimi önce:
 
 ```C
 #define _CRT_RAND_S
 #include <stdlib.h>
 ```
 
-**rand_s** bağlıdır [RtlGenRandom](http://msdn.microsoft.com/library/windows/desktop/aa387694) kullanılabilir Windows XP ve üstü yalnızca API.
+**rand_s** bağlıdır [RtlGenRandom](/windows/desktop/api/ntsecapi/nf-ntsecapi-rtlgenrandom) API, yalnızca Windows XP'de kullanılabilir ve desteklenir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -82,7 +82,7 @@ Başarılı olursa, sıfır Aksi takdirde bir hata kodu. Varsa Giriş işaretçi
 |-------------|---------------------|
 |**rand_s**|\<stdlib.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

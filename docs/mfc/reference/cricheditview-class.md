@@ -110,12 +110,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ece09b51dba7be272a208478d48196024189180e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 2f2be7e74de20c1ecac2ea0a58c167cd7384e89a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853530"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212364"
 ---
 # <a name="cricheditview-class"></a>CRichEditView sınıfı
 İle [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md) ve [Cricheditcntrıtem](../../mfc/reference/cricheditcntritem-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.  
@@ -344,16 +344,16 @@ CHARFORMAT2& GetCharFormatSelection();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) yapısının biçimlendirme öznitelikleri geçerli seçimin karakterini içeriyor.  
+ A [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) yapısının biçimlendirme öznitelikleri geçerli seçimin karakterini içeriyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_GETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb788026) ileti ve [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [EM_GETCHARFORMAT](/windows/desktop/Controls/em-getcharformat) ileti ve [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) Windows SDK'sındaki yapısı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
   
 ##  <a name="getclipboarddata"></a>  CRichEditView::GetClipboardData  
- Framework işlenmesini bir parçası olarak bu işlevi çağıran [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315).  
+ Framework işlenmesini bir parçası olarak bu işlevi çağıran [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata).  
   
 ```  
 virtual HRESULT GetClipboardData(
@@ -365,7 +365,7 @@ virtual HRESULT GetClipboardData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpchrg*  
- İşaretçi [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) yapısı tarafından belirlenen veri nesnesine kopyalamak için karakter (ve OLE öğeleri) aralığı belirtme *lplpdataobj*.  
+ İşaretçi [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) yapısı tarafından belirlenen veri nesnesine kopyalamak için karakter (ve OLE öğeleri) aralığı belirtme *lplpdataobj*.  
   
  *dwReco*  
  Pano işlemi bayrak. Şu değerlerden biri olabilir.  
@@ -381,23 +381,23 @@ virtual HRESULT GetClipboardData(
 - Panodan RECO_PASTE yapıştırın.  
   
  *lpRichDataObj*  
- İşaretçi bir [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) içeren zengin bir Pano veri nesnesi düzenleme denetimi ( [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341)).  
+ İşaretçi bir [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) içeren zengin bir Pano veri nesnesi düzenleme denetimi ( [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata)).  
   
  *lplpdataobj*  
  İşaretçi adresi alan işaretçi değişkeninin `IDataObject` belirtilen aralığı temsil eden nesne *lpchrg* parametresi. Değerini *lplpdataobj* bir hata döndürülürse göz ardı edilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- HRESULT değerini raporlama işlemi başarılı. HRESULT hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
+ HRESULT değerini raporlama işlemi başarılı. HRESULT hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dönüş değeri başarılı gösterir, `IRichEditOleCallback::GetClipboardData` döndürür `IDataObject` tarafından erişilen *lplpdataobj*; Aksi takdirde, erişilebilir bir döndürür *lpRichDataObj*. Kendi Pano verilerini sağlamak için bu işlevi geçersiz kılar. Bu işlev varsayılan uygulamasını E_NOTIMPL döndürür.  
   
  Bu gelişmiş bir, geçersiz kılınabilir.  
   
- Daha fazla bilgi için [IRichEditOle::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774341), [IRichEditOleCallback::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/bb774315), ve [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) bakınveWindowsSDK'sı[IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) Windows SDK içinde.  
+ Daha fazla bilgi için [IRichEditOle::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditole-getclipboarddata), [IRichEditOleCallback::GetClipboardData](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getclipboarddata), ve [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) bakınveWindowsSDK'sı[IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) Windows SDK içinde.  
   
 ##  <a name="getcontextmenu"></a>  CRichEditView::GetContextMenu  
- Framework işlenmesini bir parçası olarak bu işlevi çağıran [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317).  
+ Framework işlenmesini bir parçası olarak bu işlevi çağıran [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu).  
   
 ```  
 virtual HMENU GetContextMenu(
@@ -414,7 +414,7 @@ virtual HMENU GetContextMenu(
  İşaretçi bir `OLEOBJECT` yapısı ilk seçili OLE nesne seçim bir veya daha fazla OLE öğeleri içeriyorsa belirtme. Seçim hiçbir öğe içeriyorsa *lpoleobj* null. `OLEOBJECT` Yapısı bir OLE nesne v-tablosuna bir işaretçi tutar.  
   
  *lpchrg*  
- İşaretçi bir [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) geçerli seçimi içeren yapısı.  
+ İşaretçi bir [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) geçerli seçimi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağlam menüsüne işleyin.  
@@ -436,7 +436,7 @@ virtual HMENU GetContextMenu(
   
  Varsayılan uygulama, NULL döndürür. Bu gelişmiş bir, geçersiz kılınabilir.  
   
- Daha fazla bilgi için [IRichEditOleCallback::GetContextMenu](http://msdn.microsoft.com/library/windows/desktop/bb774317) ve [CHARRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787885) Windows SDK.  
+ Daha fazla bilgi için [IRichEditOleCallback::GetContextMenu](/windows/desktop/api/richole/nf-richole-iricheditolecallback-getcontextmenu) ve [CHARRANGE](/windows/desktop/api/richedit/ns-richedit-_charrange) Windows SDK.  
   
  Daha fazla bilgi için `OLEOBJECT` yazın, OLE veri yapıları ve yapı ayırma makalesine bakın *OLE Bilgi Bankası*.  
   
@@ -504,10 +504,10 @@ PARAFORMAT2& GetParaFormatSelection();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) paragraf biçimlendirme öznitelikleri geçerli seçimin içeren yapısı.  
+ A [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) paragraf biçimlendirme öznitelikleri geçerli seçimin içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [EM_GETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774182) ileti ve [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [EM_GETPARAFORMAT](/windows/desktop/Controls/em-getparaformat) ileti ve [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) Windows SDK'sındaki yapısı.  
   
 ##  <a name="getprintrect"></a>  CRichEditView::GetPrintRect  
  Sayfa dikdörtgenin içindeki yazdırma alanını sınırları almak için bu işlevi çağırın.  
@@ -576,7 +576,7 @@ long GetTextLengthEx(
   
 ### <a name="parameters"></a>Parametreler  
  *CertOpenStore*  
- Metin uzunluğu belirlemede kullanılacak yöntemi belirten değer. Bu üye biri veya daha fazla değer bayrakları üyesi, listelenen [GETTEXTLENGTHEX](http://msdn.microsoft.com/library/windows/desktop/bb787915) Windows SDK'da açıklanmaktadır.  
+ Metin uzunluğu belirlemede kullanılacak yöntemi belirten değer. Bu üye biri veya daha fazla değer bayrakları üyesi, listelenen [GETTEXTLENGTHEX](/windows/desktop/api/richedit/ns-richedit-_gettextlengthex) Windows SDK'da açıklanmaktadır.  
   
  *uCodePage*  
  Kod sayfası için çeviri (CP_ACP ANSI kod sayfası 1200 Unicode için).  
@@ -585,7 +585,7 @@ long GetTextLengthEx(
  Karakter veya bayt düzenleme denetiminde sayısı. Uyumsuz bayraklar belirlenmişse *CertOpenStore*, bu üye işlevi E_INVALIDARG döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetTextLengthEx` metnin uzunluğunu belirleme ek yollar sağlar. Bu, zengin düzenleme 2.0 işlevlerini destekler. Daha fazla bilgi için [hakkında zengin düzenleme denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb787873) Windows SDK.  
+ `GetTextLengthEx` metnin uzunluğunu belirleme ek yollar sağlar. Bu, zengin düzenleme 2.0 işlevlerini destekler. Daha fazla bilgi için [hakkında zengin düzenleme denetimleri](/windows/desktop/Controls/about-rich-edit-controls) Windows SDK.  
   
 ##  <a name="insertfileasobject"></a>  CRichEditView::InsertFileAsObject  
  Belirtilen dosya eklemek için bu işlevi çağırın (olarak bir [Cricheditcntrıtem](../../mfc/reference/cricheditcntritem-class.md) nesnesi) zengin bir görünümü düzenleme.  
@@ -613,7 +613,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
  HRESULT değerini başarının ekleme.  
   
 ### <a name="remarks"></a>Açıklamalar  
- HRESULT hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
+ HRESULT hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.  
   
 ##  <a name="isricheditformat"></a>  CRichEditView::IsRichEditFormat  
  Belirlemek için bu işlevi çağırın *cf* metin, zengin metin ya da zengin metin OLE öğeleri ile bir pano biçimi.  
@@ -691,7 +691,7 @@ void OnCharEffect(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işleve yapılan her çağrı, geçerli seçim için belirtilen biçimlendirme efektleri değiştirir.  
   
- Daha fazla bilgi için *dwMask* ve *dwEffect* parametreler ve olası değerleri bkz karşılık gelen veri üyeleri [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) Windows SDK.  
+ Daha fazla bilgi için *dwMask* ve *dwEffect* parametreler ve olası değerleri bkz karşılık gelen veri üyeleri [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#155](../../mfc/codesnippet/cpp/cricheditview-class_5.cpp)]  
@@ -745,7 +745,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
   
 ### <a name="parameters"></a>Parametreler  
  *lpStg*  
- İşaretçi bir [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) nesne.  
+ İşaretçi bir [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi takdirde 0;  
@@ -755,7 +755,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
   
  Bu gelişmiş bir, geçersiz kılınabilir.  
   
- Daha fazla bilgi için [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) Windows SDK.  
+ Daha fazla bilgi için [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) Windows SDK.  
   
 ##  <a name="onparaalign"></a>  CRichEditView::OnParaAlign  
  Seçili paragraf Paragraf hizalamasını değiştirmek için bu işlevi çağırın.  
@@ -864,9 +864,9 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
  Metni bulunamadı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çıkış bildirimden değiştirmek için bu işlevi geçersiz bir [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356).  
+ Çıkış bildirimden değiştirmek için bu işlevi geçersiz bir [MessageBeep](/windows/desktop/api/winuser/nf-winuser-messagebeep).  
   
- Daha fazla bilgi için [MessageBeep](http://msdn.microsoft.com/library/windows/desktop/ms680356) Windows SDK.  
+ Daha fazla bilgi için [MessageBeep](/windows/desktop/api/winuser/nf-winuser-messagebeep) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#157](../../mfc/codesnippet/cpp/cricheditview-class_7.cpp)]  
@@ -894,7 +894,7 @@ void OnUpdateCharEffect(
 ### <a name="remarks"></a>Açıklamalar  
  Maske *dwMask* hangi karakter kontrol etmek için biçimlendirme öznitelikleri belirtir. Bayrakları *dwEffect* karakter öznitelikleri kümesi/clear biçimlendirme listesi.  
   
- Daha fazla bilgi için *dwMask* ve *dwEffect* parametreler ve olası değerleri bkz karşılık gelen veri üyeleri [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) Windows SDK.  
+ Daha fazla bilgi için *dwMask* ve *dwEffect* parametreler ve olası değerleri bkz karşılık gelen veri üyeleri [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#158](../../mfc/codesnippet/cpp/cricheditview-class_8.cpp)]  
@@ -1003,7 +1003,7 @@ virtual HRESULT QueryAcceptData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpdataobj*  
- İşaretçi [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421) sorgulanamıyor.  
+ İşaretçi [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject) sorgulanamıyor.  
   
  *lpcfFormat*  
  Kabul edilebilir veri biçimi için işaretçi.  
@@ -1023,7 +1023,7 @@ virtual HRESULT QueryAcceptData(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, türetilmiş belge sınıfı içinde COM öğelerin farklı Kuruluş işlemek için geçersiz kılın. Bu gelişmiş bir, geçersiz kılınabilir.  
   
- HRESULT hakkında daha fazla bilgi ve `IDataObject`, bakın [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) ve [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421)sırasıyla Windows SDK.  
+ HRESULT hakkında daha fazla bilgi ve `IDataObject`, bakın [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) ve [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject)sırasıyla Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#160](../../mfc/codesnippet/cpp/cricheditview-class_10.cpp)]  
@@ -1037,12 +1037,12 @@ void SetCharFormat(CHARFORMAT2 cf);
   
 ### <a name="parameters"></a>Parametreler  
  *cf*  
- [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) öznitelikleri biçimlendirme yeni varsayılan karakter içeren yapısı.  
+ [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) öznitelikleri biçimlendirme yeni varsayılan karakter içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca belirtilen öznitelikler `dwMask` üyesi *cf* bu işlev tarafından değiştirilir.  
   
- Daha fazla bilgi için [EM_SETCHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774230) ileti ve [CHARFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787883) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [EM_SETCHARFORMAT](/windows/desktop/Controls/em-setcharformat) ileti ve [CHARFORMAT2](/windows/desktop/api/richedit/ns-richedit-charformat2a) Windows SDK'sındaki yapısı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#152](../../mfc/codesnippet/cpp/cricheditview-class_2.cpp)]  
@@ -1092,7 +1092,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
   
 ### <a name="parameters"></a>Parametreler  
  *PF*  
- [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) yapısı içeren yeni varsayılan paragraf biçimlendirme öznitelikleri.  
+ [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) yapısı içeren yeni varsayılan paragraf biçimlendirme öznitelikleri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi takdirde 0.  
@@ -1100,7 +1100,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca belirtilen öznitelikler `dwMask` üyesi *pf* bu işlev tarafından değiştirilir.  
   
- Daha fazla bilgi için [EM_SETPARAFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb774276) ileti ve [PARAFORMAT2](http://msdn.microsoft.com/library/windows/desktop/bb787942) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [EM_SETPARAFORMAT](/windows/desktop/Controls/em-setparaformat) ileti ve [PARAFORMAT2](/windows/desktop/api/richedit/ns-richedit-paraformat2) Windows SDK'sındaki yapısı.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#162](../../mfc/codesnippet/cpp/cricheditview-class_12.cpp)]  

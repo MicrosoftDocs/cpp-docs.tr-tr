@@ -1,5 +1,5 @@
 ---
-title: -Kaynak-charset (kümesi kaynak karakter kümesi) | Microsoft Docs
+title: -Kaynak-charset (kaynak karakter kümesini Ayarla) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4f010eb0f0b83dbc41ebeff624033e59d582535
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 722586f3a629535c5ea70c26e5172e6bc7ecb418
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379230"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213086"
 ---
-# <a name="source-charset-set-source-character-set"></a>/Source-Charset (ayarlamak kaynak karakter kümesi)
-Kaynak karakter kümesi için yürütülebilir belirtmenize olanak sağlar.  
+# <a name="source-charset-set-source-character-set"></a>/ Source-Charset (kaynak karakter kümesini Ayarla)
+Kaynak karakter için bir yürütülebilir dosyanızın belirtmenize olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,33 +36,33 @@ Kaynak karakter kümesi için yürütülebilir belirtmenize olanak sağlar.
   
 ## <a name="arguments"></a>Arguments  
  **IANA_name**  
- IANA tarafından tanımlanan karakter kümesi adı.  
+ IANA tarafından tanımlanan karakter kümesinin adı.  
   
  **CPID**  
  Ondalık sayı olarak kod sayfası tanımlayıcısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz **/source-charset** bir genişletilmiş kaynak karakter kümesi Kaynak dosyalarınız temel kaynak karakter kümesinde temsil karakterler kullanırsanız kullanılacağını belirtmek için seçeneği. Kaynak karakter derleme önce önişlem aşamaları giriş olarak kullanılan iç gösterimi içine programınızın kaynak metni bilgilerini yorumlamak için kullanılacak kodlama kümesidir. İç temsili sonra yürütülebilir dosya dize ve karakter değerlerini depolamak için yürütme karakter kümesi dönüştürülür. ISO karakter kümesi adı veya bir nokta (.) karakter kümesini belirtmek için bir 3 ile 5 rakamlı ondalık kod sayfası tanımlayıcısı tarafından izlenen ya da IANA kullanabilirsiniz veya. Desteklenen kod sayfası tanımlayıcıları listesini ve karakter kümesi adları için bkz: [kod sayfası tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/dd317756).  
+ Kullanabileceğiniz **/Source-Charset** bir genişletilmiş kaynak karakter kümesi Kaynak dosyalarınız temel kaynak karakter kümesinde temsil karakter eklediğinizde kullanılacağını belirtmek için seçeneği. Kaynak karakter kümesi, programınızın kaynak metin ön işleme aşamalarını derleme önce girdi olarak kullanılan iç temsili yorumlamak için kullanılan kodlamayı ' dir. İç gösterimine sonra yürütülebilir dosya dize ve karakter değerlerini depolamak için yürütme karakter kümesi dönüştürülür. Ya da IANA kullanabilir veya ISO karakter kümesinin adı veya bir nokta (.) karakter kümesini belirtmek için bir 3-5 basamaklı ondalık kod sayfası tanımlayıcısı tarafından takip. Karakter kümesi adları ve kod sayfası tanımlayıcıları desteklenen bir listesi için bkz. [kod sayfası tanımlayıcıları](/windows/desktop/Intl/code-page-identifiers).  
   
- Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bir bayt sırası işareti algılar. Bayt sırası işareti bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak bir karakter kümesi adı veya kod sayfasını kullanarak belirtmediğiniz sürece varsayar **/source-charset** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kodu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümesi hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.  
+ Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bayt sırası işareti algılar. Bayt sırası işareti yoksa bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfasını kullanarak, bir karakter kümesi adı veya kod sayfasını kullanarak belirtmediğiniz sürece varsayar **/Source-Charset** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kod kaydetmenize olanak tanır. Kaynak ve yürütme karakter kümeleri hakkında daha fazla bilgi için bkz. [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.  
   
- Sağladığınız kaynak karakter kümesi 7 bitlik ASCII karakter kümesi içinde aynı kod noktaları eşlenmesi gerekir veya birçok derleme hataları büyük bir olasılıkla izleyin. Kaynak karakter kümesi de eşlenebilir genişletilmiş Unicode karakter UTF-8 ile encodable kümesi olmalıdır. UTF-8'de encodable olmayan karakterler bir uygulamaya özel yedek temsil edilir. Microsoft derleyici için bu karakterler soru işareti kullanır.  
+ Sağladığınız kaynak karakter kümesi 7 bit ASCII karakter, karakter kümesindeki aynı kod noktaları eşlenmelidir veya izlemek çok sayıda derleme hataları olasıdır. Ayrıca, kaynak karakter kümesi eşlenebilir encodable UTF-8 Ayarla genişletilmiş Unicode karakter olmalıdır. UTF-8'de encodable olmayan karakterler bir uygulamaya özgü alternatif tarafından temsil edilir. Microsoft derleyicisi için bu karakterler soru işareti kullanır.  
   
- Kaynak karakter kümesi ve yürütme karakter kümesi UTF-8'e ayarlamak istiyorsanız kullanabileceğiniz **/utf-8** bir kısayol olarak derleyici seçeneği. Belirtmeye eşdeğer **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/validate-charset** varsayılan seçeneği.  
+ Kaynak karakter kümesi hem yürütme karakter kümesini UTF-8'e ayarlamak istiyorsanız, kullanabileceğiniz **/UTF-8** kısayol olarak derleyici seçeneği. Belirtmeye eşdeğerdir **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/Validate-Charset** varsayılan seçeneği.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.  
+2.  Genişletin **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.  
   
-3.  İçinde **Gelişmiş Seçenekler**, ekleme **/source-charset** seçeneği ve tercih edilen kodlamayı belirtin.  
+3.  İçinde **Gelişmiş Seçenekler**, ekleme **/Source-Charset** seçenek ve tercih edilen kodlamayı belirtin.  
   
-4.  Seçin **Tamam** yaptığınız değişiklikleri kaydetmek için.  
+4.  Seçin **Tamam** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [/Execution-Charset (ayarlamak yürütme karakter kümesi)](../../build/reference/execution-charset-set-execution-character-set.md)   
- [/UTF-8 (kaynağı Ayarla ve yürütülebilir karakter kümelerini UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)   
+ [/ Execution-Charset (yürütme karakter kümesini Ayarla)](../../build/reference/execution-charset-set-execution-character-set.md)   
+ [/ UTF-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8)](../../build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8.md)   
  [/validate-charset (Uyumlu karakterler için doğrula)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

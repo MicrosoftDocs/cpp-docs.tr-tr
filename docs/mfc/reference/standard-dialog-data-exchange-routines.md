@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 338412780116201b40e51ff38c4805097add4e3c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 770d110a5acd66b307e675d8c71a7de108bae6b5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885982"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198503"
 ---
 # <a name="standard-dialog-data-exchange-routines"></a>Standart İletişim Kutusu Veri Değişimi Rutinleri
 Bu konu, genel MFC iletişim kutusu denetimleri için kullanılan standart iletişim kutusu veri değişimi (DDX) rutinleri listeler.  
@@ -159,7 +159,7 @@ void AFXAPI DDX_Check(
  İletişim kutusu, form görünümü veya denetim görünüm nesnesi ile veri değişimi üye değişkeninin bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Check` çağrıldığında *değer* onay kutusu denetimi geçerli durumuna ayarlanır. Olası durum değerleri listesi için bkz. [BM_GETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775986) Windows SDK.  
+ Zaman `DDX_Check` çağrıldığında *değer* onay kutusu denetimi geçerli durumuna ayarlanır. Olası durum değerleri listesi için bkz. [BM_GETCHECK](/windows/desktop/Controls/bm-getcheck) Windows SDK.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   
@@ -296,7 +296,7 @@ void AFXAPI DDX_IPAddress(
 |1.|16-23|  
 |0|24 ile 31|  
   
- Win32 kullanın [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378) değeri okunamıyor veya bunları kullanmanızı [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380) değeri doldurmak için. Bu iletiler, Windows SDK'yı açıklanmıştır.  
+ Win32 kullanın [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress) değeri okunamıyor veya bunları kullanmanızı [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress) değeri doldurmak için. Bu iletiler, Windows SDK'yı açıklanmıştır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Zaman `DDX_IPAddress` çağrılır, *değer* ya da IP adresi denetiminden okuyun veya *değer* exchange birini yöne bağlı olarak denetlemek için yazılır.  
@@ -488,7 +488,7 @@ void AFXAPI DDX_Scroll(
  İletişim kutusu, form görünümü veya denetim üye değişkeni başvuru ile veri değişimi nesne görüntüleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Zaman `DDX_Scroll` çağrıldığında *değer* thumb denetiminin geçerli konumu için ayarlanır. Thumb denetiminin geçerli konumu ile ilişkili değerler hakkında daha fazla bilgi için bkz. [GetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787585) Windows SDK.  
+ Zaman `DDX_Scroll` çağrıldığında *değer* thumb denetiminin geçerli konumu için ayarlanır. Thumb denetiminin geçerli konumu ile ilişkili değerler hakkında daha fazla bilgi için bkz. [GetScrollPos](/windows/desktop/api/winuser/nf-winuser-getscrollpos) Windows SDK.  
   
  DDX hakkında daha fazla bilgi için bkz: [iletişim kutusu veri değişimi ve doğrulaması](../../mfc/dialog-data-exchange-and-validation.md).  
   

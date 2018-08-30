@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8151b69b92566f45766c4ffa25d40bb5f077c606
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4a7f5cee986ad82790870bfa7684a99c60dc462e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337264"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206272"
 ---
 # <a name="chotkeyctrl-class"></a>CHotKeyCtrl sınıfı
 Windows ortak kısayol denetimi işlevlerini sağlar.  
@@ -75,7 +75,7 @@ class CHotKeyCtrl : public CWnd
   
  Bir tuş bileşimi kullanıcının seçtiği zaman uygulama belirtilen tuş bileşimi denetiminden almak ve WM_SETHOTKEY ileti sistemde etkin anahtar ayarlamak için kullanın. Her kullanıcının kısayol tuşu bundan sonra sistemin herhangi bir bölümünden bastığında WM_SETHOTKEY iletisinde belirtilen pencere SC_HOTKEY belirten bir WM_SYSCOMMAND iletisini alır. Bu iletiyi aldıktan sonra pencereyi etkinleştirir. Kısayol tuşu WM_SETHOTKEY çıkar çağıran uygulama kadar geçerli kalır.  
   
- Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) ve [UnregisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646327) işlevleri.  
+ Bu mekanizma WM_HOTKEY ileti ve Windows bağlıdır etkin anahtar desteği farklıdır [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) ve [UnregisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646327) işlevleri.  
   
  Kullanma hakkında daha fazla bilgi için `CHotKeyCtrl`, bkz: [denetimleri](../../mfc/controls-mfc.md) ve [kullanarak CHotKeyCtrl](../../mfc/using-chotkeyctrl.md).  
   
@@ -111,7 +111,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Bkz: [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) daha fazla bilgi için Windows SDK.  
+ Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Bkz: [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) daha fazla bilgi için Windows SDK.  
   
  *Rect*  
  Sık erişimli anahtar denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT yapısı](../../mfc/reference/rect-structure1.md).  
@@ -144,13 +144,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK.  
+ Sık erişimli anahtar denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  

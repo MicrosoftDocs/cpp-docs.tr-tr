@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67d1b32fe880a278bc2b737148a90afa5bd2ad6e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d96b9430cd5a6a4a9f3d65ab60c49a38b0530db7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592088"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211103"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
 > [!WARNING]
-> Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](http://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
+> Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](https://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
 >
 > C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
 
@@ -53,7 +53,7 @@ Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, he
 [Visual C++](../visual-cpp-in-visual-studio.md)  
 Visual C++ belgelerine ilişkin bağlantıları sağlar.
 
-[Visual Studio ile tanışın](http://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
+[Visual Studio ile tanışın](https://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
 Eksiksiz karma dil çözümlerini oluşturulmasını kolaylaştırır ve tüm araçları paylaşmasına olanak sağlayan aynı tümleşik geliştirme ortamı (IDE) kullanabileceğiniz geliştirme araçlarını açıklar.
 
 [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
@@ -62,4 +62,4 @@ Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik �
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Windows Masaüstü uygulamaları](../windows/windows-desktop-applications-cpp.md)  
-[Menüler ve diğer kaynaklar](http://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)
+[Menüler ve diğer kaynaklar](https://msdn.microsoft.com/library/windows/desktop/ms632583.aspx)

@@ -19,16 +19,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c85c19e4f23f7c6e9454793ac86a574614ec2fae
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 81046c8472a2a741d5e59622986326ab4b399871
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33847253"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207929"
 ---
-# <a name="ltfilesystemgt"></a>&lt;Dosya sistemi&gt;
+# <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
-Üstbilgisini &lt;filesystem > erişim sınıfları ve işlevleri yönetmek ve yolları, dosyalar ve dizinler hakkında bilgi almak için.
+Üstbilgisini &lt;filesystem > erişim sınıfları ve işlevleri değiştirmek ve yolları, dosyalar ve dizinler hakkında bilgi almak için.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,75 +39,75 @@ using namespace std::experimental::filesystem::v1;
 ```
 
 > [!IMPORTANT]
-> Visual Studio 2017 sürümü itibariyle \<filesystem > üstbilgisi değil henüz C++ standart. Visual C++ 2017 uygulayan son taslak standart, bulunan [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
+> Visual Studio 2017 sürümü itibarıyla \<filesystem > Üstbilgi değildi henüz bir C++ standart. Visual C++ 2017 son taslak standardı uygular, bulunan [ISO/IEC JTC 1/SC 22/WG 21 N4100](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4100.pdf).
 
-Bu üst bağlanan dosya sistemlerinin bir ana bilgisayar işletim sistemlerinin iki geniş sınıfların destekler: Microsoft Windows ve POSIX.
+Dosya sistemleri, konak işletim sistemlerinin iki geniş sınıflardan biri için bu üst bilginin destekler: Microsoft Windows ve POSIX.
 
-En iyi işlevselliği her iki işletim sistemleri için ortak olsa da, bu belgede farklar gerçekleştiği tanımlar. Örneğin:
+Çoğu işlevi her iki işletim sistemleri için yaygın olsa da, bu belgenin nereye farklar meydana tanımlar. Örneğin:
 
-- Windows c: gibi birden çok kök adlarını destekler veya \\\network_name. Bir orman ağaçları, her c:\ gibi kendi kök dizinine sahip bir dosya sistemi oluşur veya \\\network_name\\ve her bir göreli yol (bir mutlak bir yol adı değil) tamamlamak için kendi geçerli dizini.
+- Windows c: gibi birden çok kök adlarını destekler veya \\\network_name. Bir dosya sistemi ağaçları, c:\ gibi kendi kök dizinine sahip her bir orman oluşur veya \\\network_name\\ve her bir göreli yol (bir mutlak bir yol adı değil) tamamlamak için kendi geçerli dizin.
 
-- POSIX destekleyen kök adı, tek bir kök dizin olmayan tek bir ağaç / ve tek bir geçerli dizin.
+- POSIX destekleyen tek kök dizinini hiçbir kök adı ile tek bir ağaç / ve tek bir geçerli dizin.
 
-Başka bir önemli fark, yerel yol adları gösterimidir:
+Başka bir önemli fark, yol adlarını, yerel temsilidir:
 
-- Windows, UTF-16 (her karakter için bir veya iki öğe) olarak kodlanmış wchar_t null ile sonlandırılmış bir dizi kullanır.
+- Windows, wchar_t, UTF-16 (her karakter için bir veya iki öğe) olarak kodlanmış null ile sonlandırılmış bir dizisini kullanır.
 
-- POSIX UTF-8 (her bir karakteri için bir veya daha fazla öğeleri) olarak kodlanmış karakter null ile sonlandırılmış bir dizi kullanır.
+- POSIX null ile sonlandırılmış bir UTF-8 (her karakter için bir veya daha fazla öğe) olarak kodlanmış karakter dizisini kullanır.
 
-- Bir nesne sınıfı yolunun yol yerel biçiminde depolar, ancak bu arasında destekler kolay dönüştürme formu ve birkaç dış formları depolanan:
+- Sınıf yolu bir nesnenin yol yerel biçiminde depolar, ancak bu arasında kolay dönüştürme destekler formu ve birkaç dış formları depolanan:
 
-- İşletim sistemi tarafından ayrıcalıklı olarak kodlanmış karakter null ile sonlandırılmış dizisi.
+- Null ile sonlandırılmış bir sıra char, işletim sistemi tarafından ayrıcalıklı olarak kodlanmış.
 
-- UTF-8 olarak kodlanmış karakter null ile sonlandırılmış dizisi.
+- Null ile sonlandırılmış bir sıra char, UTF-8 olarak kodlanmış.
 
-- İşletim sistemi tarafından ayrıcalıklı olarak kodlanmış wchar_t null ile sonlandırılmış dizisi.
+- İşletim sistemi tarafından ayrıcalıklı olarak kodlanmış wchar_t, null ile sonlandırılmış dizisi.
 
-- UTF-16 kodlanmış char16_t null ile sonlandırılmış dizisi.
+- UTF-16 olarak kodlanmış char16_t, null ile sonlandırılmış dizisi.
 
-- UTF-32 kodlanmış char32_t null ile sonlandırılmış dizisi.
+- UTF-32 kodlanmış char32_t, null ile sonlandırılmış dizisi.
 
-İşbu Beyanları arasında interconversions mediated, gerektiğinde bir veya daha fazla kullanımıyla `codecvt` yönü. Bir özel yerel ayara nesnesi belirlenmemişse, bu yönleri genel yerel ayarını elde edilir.
+Bu temsilleri arasında interconversions cout, gerektiğinde bir veya daha fazla kullandığı `codecvt` modeller. Belirli bir yerel ayar nesnesi belirlenmemişse, bu modellerin genel yerel ayardan elde edilir.
 
-Başka bir fark ile her işletim sistemi dosya veya dizin erişim izinleri tanımlamalarına olanak sağlayan ayrıntısı şöyle:
+Başka bir farktır ile her işletim sistemi, dosya veya dizin erişim izinleri belirtmenize olanak tanıyan Ayrıntısı:
 
-1. Windows kayıt yalnızca veya yazılabilir bir dosyayı okuma olup, dizinler için hiçbir anlamı sahip bir öznitelik.
+1. Windows kayıt yalnızca veya yazılabilir dosya okuma olup, hiçbir anlamı dizinler için bir öznitelik.
 
-1. POSIX dosya, (bir dizin, taranan), yazılan ya da yürütülen okunup okunamayacağını sahibi, sahibin grubu veya herkes artı birkaç diğer izinler tarafından kaydeder.
+1. POSIX dosya, (bir dizin, taranan), yazılan veya yürütülen okunup okunamayacağını sahibi, sahibin grubu veya herkesin yanı sıra bazı diğer izinler tarafından kaydeder.
 
-Kök adı aldıktan sonra her iki sistemle ortak yapısı üzerinde pathname sınırlamasıdır. Pathname c:/abc/xyz/def.ext için:
+Kök adı aldıktan sonra her iki sistemleri için ortak yapı üzerinde bir yol uygulanmaktadır. Pathname c:/abc/xyz/def.ext için:
 
-- Kök c: adıdır.
+- C: kök adıdır.
 
-- Kök dizini /.
+- Kök dizin /.
 
-- Kök yolu c: olduğu /.
+- Kök yolu şöyledir /.
 
-- Göreli abc/xyz/def.ext yoludur.
+- Abc/xyz/def.ext göreli yoludur.
 
 - C:/abc/xyz üst yoludur.
 
 - Dosya def.ext adıdır.
 
-- Def stem olduğu
+- Def olarak gövdesi olan
 
-- Uzantısıdır. dahili
+- Uzantı. dahili
 
-İkincil bir farktır **tercih edilen ayırıcı**, arasında bir pathname dizinlerde dizisi. Her iki işletim sistemi eğik yazmanıza izin /, ancak bazı bağlamlarda Windows bir ters eğik çizgi tercih \\.
+Küçük bir fark var mı **tercih edilen ayırıcı**, arasında bir dizi dizinleri yol adı. Her iki işletim sistemi eğik yazmanıza olanak /, ancak bazı bağlamlarda Windows ters eğik çizgi tercih \\.
 
-Son olarak, bir önemli yol nesneleri üstbilgisinde tanımlanan sınıfların bir dosya adı bağımsız değişkeni gerekli olduğunda, bunları kullanabileceğiniz özelliğidir \<fstream >.
+Son olarak, önemli bir özelliği, yol nesneleri üstbilgisinde tanımlanan sınıfların bir dosya adı bağımsız değişkeni gerekli olursa olsun, bunları kullanabilmenizdedir \<fstream >.
 
-Daha fazla bilgi ve kod örnekleri için bkz: [dosya sistemi Gezinti (C++)](../standard-library/file-system-navigation.md).
+Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 
 ## <a name="classes"></a>Sınıflar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|Tarafından döndürülen bir nesneyi tanımlayan bir `directory_iterator` veya `recursive_directory_iterator` ve bir yol içeriyor.|
-|[directory_iterator Sınıfı](../standard-library/directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar.|
-|[filesystem_error Sınıfı](../standard-library/filesystem-error-class.md)|Bir alt düzey sistem taşması bildirmek için oluşturulan özel durumlar için temel sınıf.|
-|[path Sınıfı](../standard-library/path-class.md)|Şablon türünde bir nesne depolar bir sınıfı tanımlar `String` bir dosya adı olarak kullanmaya uygun olmasıdır.|
-|[recursive_directory_iterator Sınıfı](../standard-library/recursive-directory-iterator-class.md)|Bir dosya sistemi dizinde dosya adlarının aracılığıyla dizilerinin giriş yineleyici açıklar. Yineleyici içinde alt dizinler de düzen.|
+|[directory_entry Sınıfı](../standard-library/directory-entry-class.md)|Tarafından döndürülen bir nesne tanımlayan bir `directory_iterator` veya `recursive_directory_iterator` ve bir yol içeriyor.|
+|[directory_iterator Sınıfı](../standard-library/directory-iterator-class.md)|Bir dosya sistemi dizindeki dosya adlarını aracılığıyla dizilerinin bir giriş yineleyici açıklar.|
+|[filesystem_error Sınıfı](../standard-library/filesystem-error-class.md)|Bir düzey sistemi taşması bildirmek için oluşturulan özel durumlar için temel sınıf.|
+|[path Sınıfı](../standard-library/path-class.md)|Şablon türü bir nesne depolayan bir sınıf tanımlar `String` olan bir dosya adı olarak kullanmak için uygundur.|
+|[recursive_directory_iterator Sınıfı](../standard-library/recursive-directory-iterator-class.md)|Bir dosya sistemi dizindeki dosya adlarını aracılığıyla dizilerinin bir giriş yineleyici açıklar. Yineleyici içinde alt dizinler de düzen.|
 |[file_status Sınıfı](../standard-library/file-status-class.md)|Saran bir `file_type`.|
 
 ## <a name="structs"></a>Yapılar
@@ -122,15 +122,15 @@ Daha fazla bilgi ve kod örnekleri için bkz: [dosya sistemi Gezinti (C++)](../s
 
 ## <a name="operators"></a>İşleçler
 
-[\<FileSystem > işleçleri](../standard-library/filesystem-operators.md)
+[\<dosya sistemi > işleçleri](../standard-library/filesystem-operators.md)
 
 ## <a name="enumerations"></a>Numaralandırmalar
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle birlikte kullanılan bir numaralandırma [copy_file](http://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve hedef dosya zaten mevcutsa davranışını belirler.|
-|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|Dizin yineleyiciler seçeneklerini belirten numaralandırması.|
-|[file_type](../standard-library/filesystem-enumerations.md#file_type)|Dosya türleri için numaralandırması.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](https://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve hedef dosya zaten mevcutsa davranışını belirler.|
+|[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|Dizin yineleyicileri için seçenekleri belirten bir sabit listesi.|
+|[file_type](../standard-library/filesystem-enumerations.md#file_type)|Dosya türleri için bir sabit listesi.|
 |[izinleri](../standard-library/filesystem-enumerations.md#perms)|İzinler ve izinleri seçenekleri iletmek için kullanılan bir bit maskesi türü|
 
 ## <a name="see-also"></a>Ayrıca bkz.

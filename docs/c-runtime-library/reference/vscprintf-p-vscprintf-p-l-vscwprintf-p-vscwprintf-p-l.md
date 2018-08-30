@@ -51,16 +51,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2da945addb975404a5ea6d1805a8f0abf5d5b9eb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 49dd74c679e451a658828fcacb55146e3f8d5d17
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32412911"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200300"
 ---
 # <a name="vscprintfp-vscprintfpl-vscwprintfp-vscwprintfpl"></a>_vscprintf_p, _vscprintf_p_l, _vscwprintf_p, _vscwprintf_p_l
 
-Bağımsız değişkenler kullanılan order belirtme olanağı bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş dizesindeki karakterlerin sayısını döndürür.
+Bağımsız değişkenler kullanılan sırayı belirtme olanağı bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş dize karakter sayısını döndürür.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,31 +87,31 @@ int _vscwprintf_p _l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim denetimi dizesi.
 
 *argptr*<br/>
-İşaretçi bağımsız değişken listesi.
+Bağımsız değişkenler listesine işaretçi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_vscprintf_p** dize işaret varsa, bağımsız değişkenleri listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyaya gönderilen veya belirtilen biçimlendirme kullanarak arabellek kodlarını döndürür. Döndürülen değer sonlandırma null karakteri içermez. **_vscwprintf_p** geniş karakterler için aynı işlevi gerçekleştirir.
+**_vscprintf_p** dizeyi işaret, bağımsız değişken listesi tarafından oluşturulan karakter sayısını yazdırılması veya bir dosyaya gönderilen veya arabelleği kullanarak belirtilen biçimlendirme kodlarını döndürür. Sondaki null karakter, döndürülen değer içermez. **_vscwprintf_p** geniş karakterler için de aynı işlevi gerçekleştirir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevler farklı **_vscprintf** ve **_vscwprintf** bağımsız değişkenleri kullanıldığı sırayı belirtme olanağı yalnızca destekledikleri olmasıdır. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Bu işlevler farklı **_vscprintf** ve **_vscwprintf** yalnızca bunlar bağımsız değişkenlerin kullanıldığı sırayı belirleme özelliğini desteklemesidir. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
-Varsa *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevleri -1 döndürür ve **errno** için **EINVAL**.
+Varsa *biçimi* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, İşlevler -1 döndürür ve **errno** için **EINVAL**.
 
 > [!IMPORTANT]
-> Olması durumunda olun *biçimi* kullanıcı tanımlı bir dize sonlandırıldı null olduğundan ve doğru sayısı ve parametre türü vardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Olması durumunda olun *biçimi* kullanıcı tanımlı bir dize ise, null sonlandırılan ve doğru sayısı ve parametre türüne sahip. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -127,11 +127,11 @@ Varsa *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işley
 |**_vscprintf_p**, **_vscprintf_p_l**|\<stdio.h >|
 |**_vscwprintf_p**, **_vscwprintf_p_l**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
+Örneğin bakın [vsprintf](vsprintf-vsprintf-l-vswprintf-vswprintf-l-vswprintf-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d2ac698466709931259f1df28d6c75aa38b30f2
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 656500e69f97481c90cdbea41b8c640f470e7b1c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850712"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210023"
 ---
 # <a name="coleobjectfactory-class"></a>COleObjectFactory sınıfı
 Sınıf sunucuları, Otomasyon nesneleri ve belgeler gibi OLE nesnelerini oluşturan üretecini uygular.  
@@ -157,7 +157,7 @@ COleObjectFactory(
   
 - `afxRegFreeThreading` İş parçacığı modeli ThreadingModel kayıt defterindeki ayarlar ücretsiz =.  
   
-     İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](http://msdn.microsoft.com/library/windows/desktop/ms682390) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.  
+     İki bayrak birleştirebilirsiniz `afxRegApartmentThreading` ve `afxRegFreeThreading` ThreadingModel ayarlamak için her ikisi =. Bkz: [Inprocserver32](/windows/desktop/com/inprocserver32) model kaydı iş parçacığı oluşturma hakkında daha fazla bilgi için Windows SDK.  
   
  *lpszProgID*  
  "Microsoft Excel" gibi bir sözlü program tanımlayıcı içeren bir dize işaretçisi  
@@ -165,7 +165,7 @@ COleObjectFactory(
 ### <a name="remarks"></a>Açıklamalar  
  Nesne kullanmak için ancak kaydetmelisiniz.  
   
- Daha fazla bilgi için [CLSID anahtar](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK.  
+ Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) Windows SDK.  
   
 ##  <a name="getclassid"></a>  COleObjectFactory::GetClassID  
  Bu üretecini temsil eder OLE sınıf kimliği için bir başvuru döndürür.  
@@ -178,7 +178,7 @@ REFCLSID GetClassID() const;
  OLE sınıf kimliği bu Fabrika başvuruyu temsil eder.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [CLSID anahtar](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK.  
+ Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) Windows SDK.  
   
 ##  <a name="getlicensekey"></a>  COleObjectFactory::GetLicenseKey  
  Denetimin DLL'den benzersiz lisans anahtarı ister ve onu işaret ettiği BSTR depolar *pbstrKey*.  

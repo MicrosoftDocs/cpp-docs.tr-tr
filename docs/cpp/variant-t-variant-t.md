@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ef7551047449167ff60372da146618fbdc4e564
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 95b0931438afe8ff151d3c9f6c4727013df79478
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464168"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209348"
 ---
 # <a name="varianttvariantt"></a>_variant_t::_variant_t
 **Microsoft'a özgü**  
@@ -210,7 +210,7 @@ _variant_t(
   
 -   **_variant_t (değişken &***varSrc***)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne.     Değişken türü korunur.  
   
--   **_variant_t (değişken\****pVarSrc***)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne.     Değişken türü korunur.  
+-   **_variant_t (değişken**<strong>\*</strong>*pVarSrc***)** oluşturan bir `_variant_t` nesnesinin bir kopyasını `VARIANT` nesne.     Değişken türü korunur.  
   
 -   **_variant_t (_variant_t &***; var_t_src &***)** oluşturan bir `_variant_t` başka bir nesne `_variant_t` nesne.     Değişken türü korunur.  
   
@@ -228,15 +228,15 @@ _variant_t(
   
 -   **_variant_t (_bstr_t &**`bstrSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BSTR bir `_bstr_t` nesne.     Yeni bir `BSTR` ayrılır.  
   
--   **_variant_t (wchar_t \***  *; wstrsrc &***)** oluşturan bir `_variant_t` bir Unicode dize VT_BSTR türünden nesne.   Yeni bir `BSTR` ayrılır.  
+-   **_variant_t (wchar_t** <strong>\*</strong> *; wstrsrc &***)** oluşturan bir `_variant_t` bir Unicode dize VT_BSTR türünden nesne.   Yeni bir `BSTR` ayrılır.  
   
--   **_variant_t (char\***`strSrc`**)** oluşturan bir `_variant_t` bir dizeden VT_BSTR türündeki nesne.     Yeni bir `BSTR` ayrılır.  
+-   **_variant_t (char**<strong>\*</strong>`strSrc`**)** oluşturan bir `_variant_t` bir dizeden VT_BSTR türündeki nesne.     Yeni bir `BSTR` ayrılır.  
   
 -   **_variant_t (bool**`bSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_BOOL bir **bool** değeri.      
   
--   **_variant_t (IUnknown\***  `pIUknownSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` VT_UNKNOWN türünden bir COM arabirimi işaretçisini nesnenin .       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.  
+-   **_variant_t (IUnknown** <strong>\*</strong> `pIUknownSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesne türü Bir COM arabirimi işaretçiden VT_UNKNOWN.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.  
   
--   **_variant_t (IDispatch\***  `pDispSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` gt; vt_dıspatch & bir COM arabiriminden türündeki nesne İşaretçi.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.  
+-   **_variant_t (IDispatch** <strong>\*</strong> `pDispSrc` **, bool**`fAddRef`**= true)** oluşturan bir `_variant_t` nesnesi gt; vt_dıspatch & bir COM arabirimi işaretçiden türe ayarlar.       Varsa `fAddRef` olan **true**, ardından `AddRef` çağrısı eşleştirmek için sağlanan arabirim işaretçisi olarak adlandırılan `Release` , gerçekleşir olduğunda `_variant_t` nesnesi yok edildiğinde. Size kalmıştır çağrılacak olan `Release` üzerinde sağlanan arabirim işaretçisi. Varsa `fAddRef` olduğu **false**, bu Oluşturucusu sağlanan arabirim işaretçisi sahipliğini alır; çağırmayın `Release` üzerinde sağlanan arabirim işaretçisi.  
   
 -   **_variant_t (ondalık &**`decSrc`**)** oluşturan bir `_variant_t` nesnesi türü alanından VT_DECIMAL bir `DECIMAL` değeri.      
   

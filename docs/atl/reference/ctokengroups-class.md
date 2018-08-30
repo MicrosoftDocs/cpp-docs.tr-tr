@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6c186302c1c59e73e63e20ae29aa665f600fe23
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 72fd8530a05bb0b61af266ca78a1c2fa6716ee6b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206622"
 ---
 # <a name="ctokengroups-class"></a>CTokenGroups sınıfı
 Bu sınıf için bir sarmalayıcı olan `TOKEN_GROUPS` yapısı.  
@@ -75,11 +75,11 @@ class CTokenGroups
 |[CTokenGroups::operator =](#operator_eq)|Atama işleci.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir [erişim belirteci](http://msdn.microsoft.com/library/windows/desktop/aa374909) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
+ Bir [erişim belirteci](/windows/desktop/SecAuthZ/access-tokens) bir işlem veya iş parçacığı güvenlik bağlamı açıklayan ve Windows sisteminde oturum açmış her kullanıcı için ayrılan bir nesnedir.  
   
- `CTokenGroups` İçin bir sarmalayıcı sınıftır [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) bir erişim belirteci grup güvenlik tanımlayıcılarını (SID'ler) hakkında bilgi içeren yapıya,.  
+ `CTokenGroups` İçin bir sarmalayıcı sınıftır [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) bir erişim belirteci grup güvenlik tanımlayıcılarını (SID'ler) hakkında bilgi içeren yapıya,.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -100,7 +100,7 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
  Öznitelikleri ile ilişkilendirilecek `CSid` nesne.  
   
  *rTokenGroups*  
- A [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) yapısı.  
+ A [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemler bir veya daha fazla `CSid` nesneleri ve bunların ilişkili öznitelikleri `CTokenGroups` nesne.  
@@ -116,7 +116,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *Sol*  
- `CTokenGroups` Nesne veya [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) yapısı oluşturmak hangi `CTokenGroups` nesne.  
+ `CTokenGroups` Nesne veya [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı oluşturmak hangi `CTokenGroups` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CTokenGroups` Nesne isteğe bağlı olarak oluşturulabilir kullanarak bir `TOKEN_GROUPS` yapısı veya önceden tanımlanmış `CTokenGroups` nesne.  
@@ -180,7 +180,7 @@ const TOKEN_GROUPS* GetPTOKEN_GROUPS() const throw(...);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi alır [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) ait yapısı `CTokenGroups` erişim belirteci nesnesi.  
+ Bir işaretçi alır [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) ait yapısı `CTokenGroups` erişim belirteci nesnesi.  
   
 ##  <a name="getsidsandattributes"></a>  CTokenGroups::GetSidsAndAttributes  
  Alır `CSid` nesneleri ve (isteğe bağlı olarak) ait öznitelikler `CTokenGroups` nesne.  
@@ -233,7 +233,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
   
 ### <a name="parameters"></a>Parametreler  
  *Sol*  
- `CTokenGroups` Nesne veya [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) atamak için yapı `CTokenGroups` nesne.  
+ `CTokenGroups` Nesne veya [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) atamak için yapı `CTokenGroups` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Güncelleştirilmiş döndürür `CTokenGroups` nesne.  
@@ -246,7 +246,7 @@ operator const TOKEN_GROUPS *() const throw(...);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir işaretçi değerine çevirir [TOKEN_GROUPS](http://msdn.microsoft.com/library/windows/desktop/aa379624) yapısı.  
+ Bir işaretçi değerine çevirir [TOKEN_GROUPS](/windows/desktop/api/winnt/ns-winnt-_token_groups) yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   

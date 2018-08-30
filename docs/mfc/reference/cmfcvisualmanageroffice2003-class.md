@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8acf472d3727534bacd70664dc559b9d8f23d16
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ef28bc57981868eaa1cadcbead3c11c8fade57e8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464972"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217095"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 `CMFCVisualManagerOffice2003` Uygulamaya Microsoft Office 2003 görünümü verir.  
@@ -206,7 +206,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|Bu yöntem bir vurgulanan çizdiğinde özelleştirme hızlı menü düğmesine framework çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`.)|  
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|Vurgulanan menü komutu çizdiğinde framework bu yöntemi çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|Sistem renkleri değiştiğinde framework bu işlevi çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371).|  
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371).|  
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Windows XP genel bir tema kullanılması gerektiğini belirtir.|  
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|Görsel yöneticiyi genel bir tema kullanıp kullanmayacağını belirtir.|  
   
@@ -451,10 +451,10 @@ virtual void GetSmartDockingBaseGuideColors(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *clrBaseGroupBackground*  
- Başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) arka plan rengi ayarlamak için.  
+ Başvuru bir [COLORREF](/windows/desktop/gdi/colorref) arka plan rengi ayarlamak için.  
   
  [in] *clrBaseGroupBorder*  
- Başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) kenarlık renge ayarlayabilirsiniz.  
+ Başvuru bir [COLORREF](/windows/desktop/gdi/colorref) kenarlık renge ayarlayabilirsiniz.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -466,7 +466,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) içeren Vurgu ton rengi.  
+ Döndürür bir [COLORREF](/windows/desktop/gdi/colorref) içeren Vurgu ton rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -491,7 +491,7 @@ virtual void GetTabFrameColors(
  Çerçevenin bir sekme burada çizim sekmeli penceresine bir işaretçi.  
   
  [out] *clrDark*  
- Bir başvuru bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) koyu bir sekme kenarlığı rengini depoladığı bu yöntem parametresi.  
+ Bir başvuru bir [COLORREF](/windows/desktop/gdi/colorref) koyu bir sekme kenarlığı rengini depoladığı bu yöntem parametresi.  
   
  [out] *clrBlack*  
  Bu yöntem için sekmesinde pencerenin kenarlık rengi depoladığı COLORREF parametre bir başvuru. Kenarlığın varsayılan rengini siyah.  
@@ -536,7 +536,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) devre dışı renk içeren.  
+ Döndürür bir [COLORREF](/windows/desktop/gdi/colorref) devre dışı renk içeren.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1095,7 +1095,7 @@ virtual COLORREF OnDrawPaneCaption(
  Resim yazılı düğmelerini sınırlarını belirten bir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) başlığı metin rengi gösteren parametresi.  
+ A [COLORREF](/windows/desktop/gdi/colorref) başlığı metin rengi gösteren parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1208,7 +1208,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
  Başlık çubuğu için bir işaretçi. Bu görsel yöneticiyi çizer [CMFCRibbonContextCaption sınıfı](../../mfc/reference/cmfcribboncontextcaption-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) başlık çubuğunda metin rengini belirten bir parametre.  
+ A [COLORREF](/windows/desktop/gdi/colorref) başlık çubuğunda metin rengini belirten bir parametre.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta bir Şerit kategorisi için başlık çubuğunun görünümünü özelleştirmek için bu yöntemi yok sayın.  
@@ -2231,7 +2231,7 @@ virtual void OnUpdateSystemColors();
  Framework WM_SYSCOLORCHANGE iletiyi işlemeyi işleminin bir parçası olarak bu yöntemi çağırır. Uygulamanızda kullanılan renkleri değiştirebilir, özel kod yürütmek istediğiniz bir türetilmiş visual Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
- Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371).  
+ Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371).  
   
 ```  
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

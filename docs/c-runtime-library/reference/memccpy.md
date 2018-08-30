@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ddb085fee2459abd4cdef8a400f291bea4f6313b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6addc369de344b40a616b2ee1efbe840e98cc6d4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401850"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199546"
 ---
 # <a name="memccpy"></a>_memccpy
 
@@ -57,10 +57,10 @@ void *_memccpy(
 ### <a name="parameters"></a>Parametreler
 
 *Hedef*<br/>
-Hedef işaretçi.
+Hedefe yönelik işaretçi.
 
 *src*<br/>
-İşaretçi kaynağı.
+Kaynak için işaretçi.
 
 *c*<br/>
 Kopyalamak için son karakter.
@@ -70,13 +70,13 @@ Karakter sayısı.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa karakter *c* kopyalanır, **_memccpy** işaretçisi karakteri döndürür *taşınmaya* , hemen karakter izler. Varsa *c* , döndürdüğü kopyalanmaz **NULL**.
+Varsa karakter *c* kopyalanır, **_memccpy** karakter bir işaretçi döndürür *dest* , hemen izleyen karaktere. Varsa *c* , döndürür kopyalanmaz **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Memccpy** işlevi kopyalar, 0 veya daha fazla karakter *src* için *taşınmaya*, ne zaman durdurma karakter *c* kopyalandı veya ne zaman *sayısı* karakterleri kopyalanır, ilk hangisi gelir.
+**_Memccpy** işlevi kopyalar, 0 veya daha fazla karakter *src* için *dest*, ne zaman durdurma karakter *c* kopyalanmış veya *sayısı* karakter kopyalanır, hangisinin geldiğine ilk.
 
-**Güvenlik Notu** boyutu veya daha büyük kaynak arabelleği hedef arabelleği aynı olduğundan emin olun. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** boyutta veya daha büyük kaynak arabelleği hedef arabellek aynı olduğundan emin olun. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -84,7 +84,7 @@ Varsa karakter *c* kopyalanır, **_memccpy** işaretçisi karakteri döndürür 
 |-------------|---------------------|
 |**_memccpy**|\<Memory.h > veya \<string.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

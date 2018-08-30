@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e6dcaeed793a81580b9ca5ed93ad7e267b534fe
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 053e7adb5a0f5d6c65f599ae694525853bd221a7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881181"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211797"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevleri
 Bu işlevler, SID ve ACL nesneleri değiştirmek için destek sağlar.  
@@ -72,7 +72,7 @@ inline bool AtlGetDacl(
  Güvenlik bilgilerini almak istediğiniz nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *pDacl*  
  Alınan güvenlik bilgilerini içeren bir DACL nesne işaretçisi.  
@@ -102,7 +102,7 @@ inline bool AtlSetDacl(
  Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *rDacl*  
  Yeni güvenlik bilgilerini içeren DACL.  
@@ -136,7 +136,7 @@ inline bool AtlGetGroupSid(
  Güvenlik bilgileri alınacağı nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *Psıd*  
  İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.  
@@ -165,7 +165,7 @@ inline bool AtlSetGroupSid(
  Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *rSid*  
  `CSid` Yeni güvenlik bilgilerini içeren bir nesne.  
@@ -194,7 +194,7 @@ inline bool AtlGetOwnerSid(
  Güvenlik bilgileri alınacağı nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *Psıd*  
  İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.  
@@ -223,7 +223,7 @@ inline bool AtlSetOwnerSid(
  Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *rSid*  
  `CSid` Yeni güvenlik bilgilerini içeren bir nesne.  
@@ -253,7 +253,7 @@ inline bool AtlGetSacl(
  Güvenlik bilgilerini alınacağı nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *pSacl*  
  Alınan güvenlik bilgilerini içeren bir SACL nesne işaretçisi.  
@@ -290,7 +290,7 @@ inline bool AtlSetSacl(
  Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.  
   
  *rSacl*  
  Yeni güvenlik bilgilerini içeren SACL.  
@@ -334,13 +334,13 @@ inline bool AtlGetSecurityDescriptor(
  Güvenlik bilgileri alınacağı nesnesinin adını belirtir. null ile sonlandırılmış bir dize işaretçisi.  
   
  *ObjectType*  
- Bir değer belirtir [SE_OBJECT_TYPE](http://msdn.microsoft.com/library/windows/desktop/aa379593) tarafından tanımlanan nesne türünü gösteren sabit listesi *pszObjectName* parametresi.  
+ Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *pszObjectName* parametresi.  
   
  *pSecurityDescriptor*  
  İstenen güvenlik tanımlayıcısı alan nesne.  
   
  *requestedInfo*  
- Bir dizi [SECURITY_INFORMATION](http://msdn.microsoft.com/library/windows/desktop/aa379573) bit almak için güvenlik bilgi türünü belirten bayraklar. Bu parametre aşağıdaki değerleri birleşimi olabilir.  
+ Bir dizi [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit almak için güvenlik bilgi türünü belirten bayraklar. Bu parametre aşağıdaki değerleri birleşimi olabilir.  
   
  *bRequestNeededPrivileges*  
  TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.  

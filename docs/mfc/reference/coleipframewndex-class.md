@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 436c99777f526cfa364241b4dc25e33be672d6ae
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e2eb1695383e5bb1a700305fd0cc8487590afd7c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466461"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217047"
 ---
 # <a name="coleipframewndex-class"></a>Coleıpframewndex sınıfı
 `COleIPFrameWndEx` Sınıfı MFC'yi destekleyen OLE kapsayıcısı uygular. Uygulamanız için yerinde pencere sınıfını türetilmelidir `COleIPFrameWndEx` sınıf türetmeniz yerine [Coleıpframewnd](../../mfc/reference/coleipframewnd-class.md)sınıfı. Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.   
@@ -929,7 +929,7 @@ virtual void WinHelp(
  Yardım tarafından belirtilen tür için gereken veri belirtir *nCmd*.  
   
  [in] *nCmd*  
- Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp işlevini](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
+ Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp işlevini](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

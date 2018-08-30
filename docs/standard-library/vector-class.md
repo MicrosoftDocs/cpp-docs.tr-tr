@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10c2f3897f7fb1876ac684e2e6c77cc47f6f67ee
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: d60d47757bfcf1564d81dcb58c0727b1ca56b3ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465161"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199501"
 ---
 # <a name="vector-class"></a>vector Sınıfı
 
@@ -120,7 +120,7 @@ class vector
  Vektör içinde depolanacak öğe veri türü
 
 *Ayırıcı*  
- Vektörün ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı ***\<türü >.*
+ Vektörün ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Type>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -1561,7 +1561,8 @@ void push_back(T&& Val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* vektör sonuna eklenen öğe atanacak değer.
+*VAL*<br/>
+ Vektör sonuna eklenen öğe atanacak değer.
 
 ### <a name="example"></a>Örnek
 

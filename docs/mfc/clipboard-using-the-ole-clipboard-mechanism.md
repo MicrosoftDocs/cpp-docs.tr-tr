@@ -18,25 +18,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4940c614046e3ca407887e05e84c811a156d9c3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d37618dccabd576a67c8b82a8b8ab38246254070
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342543"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214711"
 ---
 # <a name="clipboard-using-the-ole-clipboard-mechanism"></a>Pano: OLE Pano Mekanizmasını Kullanma
-OLE Pano üzerinden veri aktarmak için standart biçimleri ve bazı OLE özgü biçimleri kullanır.  
+OLE Pano aracılığıyla verileri aktarmak için standard biçimleri ve bazı özel OLE biçimleri kullanır.  
   
- Kesme veya bir uygulamadan veri kopyalama, verileri daha sonra yapıştırma işlemlerinde kullanılacak Panosu'nda depolanır. Çeşitli biçimlerde verilerdir. Bir kullanıcı Pano'dan veri yapıştırmak seçtiğinde, uygulamanın hangi kullanmak için aşağıdaki biçimlerden birini seçebilirsiniz. Özellikle belirli bir bir biçim için Özel Yapıştır kullanarak kullanıcıdan sürece bilgilerin çoğu sağlar biçimi seçmek için uygulamayı yeniden yazılması gerekir. Devam etmeden önce okumak isteyebilirsiniz [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) Konular. Bunların nasıl iş veri aktarır ve uygulamalarınızda uygulama temelleri açıklanır.  
+ Keser veya bir uygulamadan veri kopyalama, yapıştırma işlemlerinde daha sonra kullanılmak üzere Pano veri depolanır. Çeşitli biçimlerde verilerdir. Pano verileri yapıştırmak kullanıcı seçtiğinde uygulama hangilerini kullanmak için aşağıdaki biçimlerden birini seçebilirsiniz. Özellikle belirli bir bir biçimde için Özel Yapıştır kullanarak kullanıcıdan sürece çoğu bilgi sağlayan biçimi seçmek için uygulamayı yeniden yazılması gerekir. Devam etmeden önce okumak isteyebilirsiniz [veri nesneleri ve veri kaynakları (OLE)](../mfc/data-objects-and-data-sources-ole.md) konuları. Bunlar nasıl iş verileri aktarır ve bunları uygulamalarınızda uygulama nasıl temellerini açıklar.  
   
- Windows panosu üzerinden veri aktarmak için kullanılan standart biçimlerini sayısını tanımlar. Bunlar, meta dosyaları, metin, bit eşlemler ve diğerleri içerir. OLE Özel OLE biçimleri, de sayısını tanımlar. Bu standart biçimleri tarafından verilen'den daha fazla ayrıntı gerektiren uygulamalar için kendi özel Pano biçimleri kaydetmek için bir fikirdir. Win32 API işlevini [RegisterClipboardFormat](http://msdn.microsoft.com/library/windows/desktop/ms649049) Bunu yapmak için.  
+ Windows, bir dizi Pano aracılığıyla verileri aktarmak için kullanılabilecek standart biçimlerini tanımlar. Bunlar, meta dosyaları, metin, bit eşlemler ve diğerleri içerir. OLE de OLE özel biçimler sayısını tanımlar. Bu standart biçimler tarafından verilen daha ayrıntılı gerek duyan uygulamalar için kendi özel Pano biçimlerini kaydetmek için bir fikirdir. Win32 API işlevi kullanmanız [RegisterClipboardFormat](/windows/desktop/api/winuser/nf-winuser-registerclipboardformata) Bunu yapmak için.  
   
- Örneğin, Microsoft Excel elektronik tablolar için özel bir biçim kaydeder. Bu biçim çok daha fazla bilgi, örneğin taşır, bit eşlem yapar. Bu verileri elektronik tablo biçiminde destekleyen bir uygulamaya yapıştırılırken formüller ve elektronik değerleri korunur ve gerekirse güncelleştirilebilir. Böylece bir OLE öğesi olarak yapıştırılabilmesi için Microsoft Excel veri biçimleri Pano'ya da koyar. Tüm OLE belge kapsayıcısı bu bilgileri katıştırılmış bir öğe olarak yapıştırabilirsiniz. Katıştırılmış bu öğe Microsoft Excel kullanarak değiştirilebilir. Pano, elektronik tablo seçili aralıkta görüntüsü basit bir bit eşlem de içerir. Bu ayrıca OLE belge kapsayıcıları veya Paint gibi bit eşlem düzenleyicileri yapıştırılabilmesi için. Bir bitmap söz konusu olduğunda, ancak verileri elektronik olarak işlemek için yolu yoktur.  
+ Örneğin, Microsoft Excel elektronik tablolar için özel bir biçim kaydeder. Bu biçim taşıyan çok daha fazla bilgi, örneğin, bir bit eşlem yok. Bu veri elektronik tablo biçiminde destekleyen bir uygulama yapıştırıldığında, formüller ve elektronik tablodaki değerleri korunur ve gerekirse güncelleştirilebilir. OLE öğesini yapıştırılabilmesi için Microsoft Excel veri biçimleri Pano'ya ayrıca koyar. Tüm OLE belge kapsayıcısı, bu bilgileri gömülü bir öğe olarak yapıştırabilirsiniz. Microsoft Excel kullanılarak bu gömülü bir öğe değiştirilebilir. Pano, bir basit bit eşlem elektronik tablosundaki Seçili aralık görüntüsü de içerir. Bu da OLE belge kapsayıcıları veya Boya gibi bit eşlem düzenleyicileri yapıştırılabilir. Bir bit eşlem söz konusu olduğunda, ancak bir elektronik tablo olarak verileri işlemek için hiçbir yolu yoktur.  
   
  Panodan en çok bilgi almak için uygulamalar Pano verilerini yapıştırma önce bu özel biçimler için denetlemelisiniz.  
   
- Örneğin, kesme komutu etkinleştirmek için bir işleyici aşağıdakine benzer yazabilirsiniz:  
+ Örneğin, Cut komutu etkinleştirmek için bir işleyici aşağıdakine benzer bir şey yazabiliriz:  
   
  [!code-cpp[NVC_MFCListView#3](../atl/reference/codesnippet/cpp/clipboard-using-the-ole-clipboard-mechanism_1.cpp)]  
   
@@ -50,7 +50,7 @@ OLE Pano üzerinden veri aktarmak için standart biçimleri ve bazı OLE özgü 
   
 -   [OLE](../mfc/ole-background.md)  
   
--   [OLE veri nesneleri ve veri kaynakları ve Tekdüzen veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)  
+-   [OLE veri nesneleri ve veri kaynaklarını ve Tekdüzen veri aktarımı](../mfc/data-objects-and-data-sources-ole.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Pano](../mfc/clipboard.md)

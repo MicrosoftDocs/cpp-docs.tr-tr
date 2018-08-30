@@ -80,12 +80,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70e980a33e88920afef9c6f19dcd8b2ecfca5071
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: cbcc47bf7b8eff276135bb5eb2f6206471fee524
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131444"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206481"
 ---
 # <a name="numericlimits-class"></a>numeric_limits Sınıfı
 
@@ -100,11 +100,12 @@ class numeric_limits
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* özelliklerini güncellenmekte temel öğe veri türü test veya sorgulanabilir.
+*Türü*<br/>
+ Temel öğe veri türü özellikleri güncellenmekte test veya sorgulanabilir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Üst bilgi türleri için açık uzmanlık tanımlar **wchar_t**, **bool**, **char**, **signed char**, **işaretsiz char**, **kısa**, **işaretsiz**, **int**, **işaretsiz int**, **uzun**, **işaretsiz uzun**, **float**, **çift**, **uzun çift ***** **uzunuzun**, **işaretsiz long long**, `char16_t`, ve `char32_t`. Bu bir açık uzmanlık, üye için [numeric_limits::is_specialized](#is_specialized) olduğu **true**, ve tüm ilgili üyeleri anlamlı değerlere sahiptir. Program ek açık uzmanlık sağlayabilirsiniz. Çoğu sınıf üye işlevleri tanımlamak veya olası uygulamalarını test **float**.
+Üst bilgi türleri için açık uzmanlık tanımlar **wchar_t**, **bool**, **char**, **signed char**, **işaretsiz char**, **kısa**, **işaretsiz**, **int**, **işaretsiz int**, **uzun**, **işaretsiz uzun**, **float**, **çift**, **uzun çift**, **uzun uzun**, **işaretsiz long long**, **char16_t**, ve **char32_t**. Bu bir açık uzmanlık, üye için [numeric_limits::is_specialized](#is_specialized) olduğu **true**, ve tüm ilgili üyeleri anlamlı değerlere sahiptir. Program ek açık uzmanlık sağlayabilirsiniz. Çoğu sınıf üye işlevleri tanımlamak veya olası uygulamalarını test **float**.
 
 Rastgele bir uzmanlık için hiçbir üye anlamlı değerlere sahip. Sıfır anlamlı bir değer olmayan bir üye nesnesini depolar (veya **false**) ve anlamlı bir değer döndürmeyen bir üye işlevinin döndürdüğü `Type(0)`.
 

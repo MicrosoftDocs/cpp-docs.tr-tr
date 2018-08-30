@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c12b23c2250f2b0d26b053410c864c8cf435469
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9132df889f057696a08afe9a1ca6ad2277c46f10
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852880"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211058"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 Modsuz sekme iletişim kutusu ( [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)) araç çubuklarını, menüleri, klavye kısayolları, kullanıcı tanımlı Araçlar ve uygulamada görsel stil özelleştirmek için kullanıcı sağlar. Genellikle, bu iletişim kutusunu erişen seçerek kullanıcı **Özelleştir** gelen **Araçları** menüsü.  
@@ -507,7 +507,7 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
   
 ### <a name="parameters"></a>Parametreler  
  [out içinde] *pAccel*  
- İşaretçi olarak ifade edilen önerilen klavye atama bir [HIZLANDIRMA](http://msdn.microsoft.com/library/windows/desktop/ms646340) yapısı.  
+ İşaretçi olarak ifade edilen önerilen klavye atama bir [HIZLANDIRMA](/windows/desktop/api/winuser/ns-winuser-tagaccel) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Anahtar atanmışsa anahtar atanan veya FALSE olabilir, TRUE. Varsayılan uygulama her zaman TRUE değerini döndürür.  

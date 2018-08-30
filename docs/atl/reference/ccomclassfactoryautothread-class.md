@@ -19,15 +19,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3a38f3320a507b8bd4ce3095ed2c7a02b7bf573
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: dbd258761bef7789e73fe61ac288b414902d2af8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883066"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214080"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
-Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.  
+Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -114,7 +114,7 @@ STDMETHODIMP LockServer(BOOL fLock);
  Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364)   
+ [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
  [CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)   
  [CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)   
  [CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   

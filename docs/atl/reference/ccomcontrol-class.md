@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77b0c115dbd820ea715b739dd3e4d6eb2c5f4950
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 0a2652730c981313ee3e168aca4a36a91fadde47
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883456"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198461"
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.  
@@ -157,7 +157,7 @@ HRESULT FireOnChanged(DISPID dispID);
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özellik değişti. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür. 
+ Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnChanged](cfirepropnotifyevent-class.md#fireonchanged) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özellik değişti. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür. 
   
  Bu yöntem, denetim bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
   
@@ -179,7 +179,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özelliği hakkında değiştirmektir. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür.  
+ Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özelliği hakkında değiştirmektir. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür.  
 
   
  Bu yöntem, denetim bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.  
@@ -205,10 +205,10 @@ int MessageBox(
  İletişim kutusu başlığı. Değilse boş (varsayılan), başlığı "Error" kullanılır.  
   
  *nTür*  
- İçeriği ve iletişim kutusunu davranışını belirtir. Bkz: [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) kullanılabilir farklı ileti kutuları bir listesi için Windows SDK belgelerine girişi. Basit bir varsayılan sağlar **Tamam** düğmesi.  
+ İçeriği ve iletişim kutusunu davranışını belirtir. Bkz: [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) kullanılabilir farklı ileti kutuları bir listesi için Windows SDK belgelerine girişi. Basit bir varsayılan sağlar **Tamam** düğmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir menü öğesi altında listelenen değerleri belirten bir tamsayı değeri döndürür [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) Windows SDK belgelerinde.  
+ Bir menü öğesi altında listelenen değerleri belirten bir tamsayı değeri döndürür [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) Windows SDK belgelerinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `MessageBox` Geliştirme sırasında ve bir hata veya uyarı iletisini kullanıcıya göstermek için kolay bir yol olarak yararlı olur.  

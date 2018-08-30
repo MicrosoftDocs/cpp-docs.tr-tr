@@ -16,57 +16,57 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 3257d690ac949edff7958615656db052c3468c01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 60804b3863a4b44bc963f289b1d6a8c2f2d5cbf7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33132576"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211163"
 ---
 # <a name="how-to-create-clr-console-applications-ccli"></a>Nasıl yapılır: CLR Konsol Uygulamaları Oluşturma (C++/CLI)
-Konsol uygulaması şablonu temel proje başvuruları ve dosyaları zaten bir konsol uygulama projesi oluşturmak için kullanabilirsiniz.  
+Konsol uygulaması şablonu, temel proje başvuruları ve dosyalarını zaten bir konsol uygulaması projesi oluşturmak için kullanabilirsiniz.  
   
- Genellikle, bir konsol uygulaması bir tek başına yürütülebilir dosyaya derlendiği ancak bir grafik kullanıcı arabirimi yok. Bir kullanıcı, bir komut isteminde konsol uygulaması çalışır ve sorunu yönergeleri çalışan uygulama için komut istemine kullanır. Uygulamayı komut istemine çıktı bilgiler de sağlar. Bir konsol uygulaması immediacy programlama tekniklerinin bir kullanıcı arabirimi uygulamak için sorun olmadan öğrenmek için kullanışlı bir yoludur kolaylaştırır.  
+ Genellikle, bir konsol uygulaması bir tek başına yürütülebilir dosyasına derlenir, ancak bir grafik kullanıcı arabirimi yok. Bir kullanıcı, bir komut isteminde konsol uygulaması çalışır ve sorunu yönergeleri çalıştırılan uygulama için komut istemine kullanır. Uygulamayı komut isteminde çıkış bilgi de sağlar. Bir konsol uygulamasının immediacy kullanıcı arabirimini uygulamak için kaygısı olmadan programlama teknikleri öğrenmek için harika bir yöntemdir kolaylaştırır.  
   
- Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, bu başvurular ve dosyaları otomatik olarak ekler:  
+ Bir proje oluşturmak için konsol uygulaması şablonunu kullandığınızda, otomatik olarak bu başvuruları ve dosyalarını ekler:  
   
 -   Bu .NET Framework ad alanlarına başvurular:  
   
-    -   [Sistem](https://msdn.microsoft.com/en-us/library/system.appdomainmanager.appdomainmanager.aspx)— temel sınıfları içerir ve genellikle tanımlayan temel sınıflar kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işlem özel durumları.  
+    -   [Sistem](https://msdn.microsoft.com/library/system.appdomainmanager.appdomainmanager.aspx)— temel sınıfları içerir ve yaygın olarak tanımladığınız temel sınıflar kullanılan değerleri ve başvuru veri türleri, olayları ve olay işleyicileri, arabirimler, öznitelikleri ve işleme özel durumlar.  
   
-    -   mscorlib — .NET Framework geliştirme destekleyen DLL derleme.  
+    -   mscorlib — derleme DLL, .NET Framework için geliştirmeyi destekler.  
   
--   Kaynak dosyalar:  
+-   Kaynak dosyaları:  
   
-    -   Konsol (.cpp dosyası) — oluşturduğunuz uygulamada ana kaynak dosya ve giriş noktası. Proje .dll dosyasını ve proje ad alanını tanımlar. Bu dosyadaki kendi kodunuzu girin.  
+    -   Konsolu (.cpp dosyası) — yeni oluşturduğunuz uygulamayı ana kaynak dosya ve giriş noktası. Bu proje .dll dosyası ve proje ad alanı tanımlar. Bu dosyadaki kendi kodunu sağlayın.  
   
-    -   AssemblyInfo.cpp—Contains öznitelikleri, dosyalar, kaynaklar, türleri, sürüm bilgisini, imzalama bilgilerini ve projenin derleme meta verilerini değiştirmek için kullanabileceğiniz benzeri. Daha fazla bilgi için bkz: [derleme içeriklerini](/dotnet/framework/app-domains/assembly-contents).  
+    -   AssemblyInfo.cpp—Contains öznitelikleri, dosyaları, kaynaklar, türleri, sürüm oluşturma bilgilerini, imza bilgilerini ve projenin derleme meta verilerini değiştirmek için kullanabileceğiniz benzeri. Daha fazla bilgi için [derleme içerikleri](/dotnet/framework/app-domains/assembly-contents).  
   
-    -   Win32.pch adlı bir önceden derlenmiş üst bilgi dosyası ve StdAfx.obj adlı bir önceden derlenmiş türleri dosyası oluşturmak için Stdafx.cpp—Used.  
+    -   Stdafx.cpp—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.  
   
--   Üstbilgi dosyaları:  
+-   Üst bilgi dosyaları:  
   
-    -   Win32.pch adlı bir önceden derlenmiş üst bilgi dosyası ve StdAfx.obj adlı bir önceden derlenmiş türleri dosyası oluşturmak için Stdafx.h—Used.  
+    -   Stdafx.h—Used Win32.pch adlı bir ön derlenmiş üstbilgi dosyası ve adlı StdAfx.obj önceden derlenmiş türler dosyası oluşturmak için.  
   
     -   oluşturulan resource.h—A app.rc dosyası içerir.  
   
 -   Kaynak dosyaları:  
   
-    -   bir programın App.rc—the kaynak komut dosyası.  
+    -   bir programın App.rc—the kaynak betik dosyası.  
   
     -   bir programın App.ico—the simge dosyası.  
   
--   ReadMe.txt—Describes projedeki dosyaları.  
+-   ReadMe.txt—Describes projesindeki dosyalar.  
   
-## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulama projesi oluşturmak için  
+## <a name="to-create-a-common-language-runtime-clr-console-app-project"></a>Ortak dil çalışma zamanı (CLR) konsol uygulaması projesi oluşturmak için  
   
-1.  Menü çubuğunda seçin **dosya**, **yeni**, **proje**.  
+1.  Menü çubuğunda, **dosya**, **yeni**, **proje**.  
   
-2.  İçinde **yeni proje** iletişim kutusunda **yüklü şablonlar**seçin **Visual C++** düğümü, select **CLR** düğümünü ve ardından seçin Konsol uygulaması şablonu.  
+2.  İçinde **yeni proje** iletişim kutusunun **yüklü şablonlar**seçin **Visual C++** düğümünü **CLR** düğümüne tıklayın ve ardından Konsol uygulaması şablonu.  
   
 3.  İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.  
   
-     Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak bunlar gerekli değildir.  
+     Diğer proje ve çözüm ayarlarını belirtebilirsiniz, ancak gerekli değildir.  
   
 4.  Seçin **Tamam** düğmesi.  
   

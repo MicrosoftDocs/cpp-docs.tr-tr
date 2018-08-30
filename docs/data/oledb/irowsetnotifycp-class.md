@@ -35,12 +35,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e78caa689158f1820a5e146235bb1f2d506a925b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: e9826dd9249d01b78466a18df866afd818df78c8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466002"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212350"
 ---
 # <a name="irowsetnotifycp-class"></a>IRowsetNotifyCP Sınıfı
 Sağlayıcı sitesi için bağlantı noktası arabirimi uygulayan [IRowsetNotify](/previous-versions/windows/desktop/ms712959\(v=vs.85\)).  
@@ -143,7 +143,7 @@ HRESULT Fire_OnRowsetChange(IRowset* pRowset,
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
  [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
- [Bildirimler (COM)](http://msdn.microsoft.com/library/windows/desktop/ms678433)   
+ [Bildirimler (COM)](https://msdn.microsoft.com/library/windows/desktop/ms678433)   
  [BEGIN_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#begin_connection_point_map)   
  [END_CONNECTION_POINT_MAP](../../atl/reference/connection-point-macros.md#end_connection_point_map)   
  [CONNECTION_POINT_ENTRY](../../atl/reference/connection-point-macros.md#connection_point_entry)   

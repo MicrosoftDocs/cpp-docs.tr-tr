@@ -54,15 +54,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 207adbba4635b80ba7b60af53f920b1af376e93d
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 964d5691baf47adc51663d2de19c58ee6dfe0cc8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957305"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216916"
 ---
 # <a name="canimationvariable-class"></a>CAnimationVariable sınıfı
-Bir animasyon değişkeni temsil eder.  
+Bir animasyon değişkenini temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -76,49 +76,49 @@ class CAnimationVariable;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAnimationVariable::CAnimationVariable](#canimationvariable)|Bir animasyon değişken nesnesi oluşturur.|  
-|[CAnimationVariable:: ~ CAnimationVariable](#canimationvariable__~canimationvariable)|Yok Edicisi. Bir CAnimationVariable nesnesi yok çağrılır.|  
+|[CAnimationVariable::CAnimationVariable](#canimationvariable)|Bir animasyon değişkenini nesne oluşturur.|  
+|[CAnimationVariable:: ~ CAnimationVariable](#canimationvariable__~canimationvariable)|Yıkıcı. CAnimationVariable nesne yok ediliyorken çağırılır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAnimationVariable::AddTransition](#addtransition)|Bir geçiş ekler.|  
-|[CAnimationVariable::ApplyTransitions](#applytransitions)|Geçişler film şeridi için iç listeden ekler.|  
+|[CAnimationVariable::ApplyTransitions](#applytransitions)|Geçişler, film şeridi için iç listeden ekler.|  
 |[CAnimationVariable::ClearTransitions](#cleartransitions)|Geçişleri temizler.|  
-|[CAnimationVariable::Create](#create)|Animasyon değişken COM nesnesini oluşturur.|  
-|[CAnimationVariable::CreateTransitions](#createtransitions)|Bu animasyon değişkenine uygulanacak tüm geçişleri oluşturur.|  
+|[CAnimationVariable::Create](#create)|Temel animasyon değişken COM nesnesi oluşturur.|  
+|[CAnimationVariable::CreateTransitions](#createtransitions)|Bu animasyon değişkenin uygulanacak tüm geçişler oluşturur.|  
 |[CAnimationVariable::EnableIntegerValueChangedEvent](#enableintegervaluechangedevent)|Etkinleştirir veya IntegerValueChanged olay devre dışı bırakır.|  
 |[CAnimationVariable::EnableValueChangedEvent](#enablevaluechangedevent)|Etkinleştirir veya ValueChanged olay devre dışı bırakır.|  
-|[CAnimationVariable::GetDefaultValue](#getdefaultvalue)|Varsayılan değerini döndürür.|  
-|[CAnimationVariable::GetParentAnimationObject](#getparentanimationobject)|Üst öğesini döndürür animasyon nesnesi.|  
-|[CAnimationVariable::GetValue](#getvalue)|Fazla Yüklendi. Animasyon değişkenin geçerli değeri döndürür.|  
-|[CAnimationVariable::GetVariable](#getvariable)|Bir işaretçi IUIAnimationVariable COM nesnesi döndürür.|  
-|[CAnimationVariable::SetDefaultValue](#setdefaultvalue)|Varsayılan değer ayarlar ve IUIAnimationVariable COM nesnesi serbest bırakır.|  
+|[CAnimationVariable::GetDefaultValue](#getdefaultvalue)|Varsayılan değeri döndürür.|  
+|[CAnimationVariable::GetParentAnimationObject](#getparentanimationobject)|Üst döndürür animasyon nesne.|  
+|[CAnimationVariable::GetValue](#getvalue)|Fazla Yüklendi. Animasyon değişkeninin geçerli değerini döndürür.|  
+|[CAnimationVariable::GetVariable](#getvariable)|IUIAnimationVariable COM nesnesine bir işaretçi döndürür.|  
+|[CAnimationVariable::SetDefaultValue](#setdefaultvalue)|Varsayılan değer olarak ayarlar ve IUIAnimationVariable COM nesnesi serbest bırakır.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAnimationVariable::SetParentAnimationObject](#setparentanimationobject)|Bir animasyon değişkeni ve bir animasyon nesne arasındaki ilişkiyi ayarlar.|  
+|[CAnimationVariable::SetParentAnimationObject](#setparentanimationobject)|Bir animasyon değişkenini ve animasyon nesne arasındaki ilişkiyi ayarlar.|  
   
 ### <a name="public-data-members"></a>Ortak Veri Üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAnimationVariable::m_bAutodestroyTransitions](#m_bautodestroytransitions)|İlgili geçiş nesneleri silinmesi gerekip gerekmediğini belirtir.|  
+|[CAnimationVariable::m_bAutodestroyTransitions](#m_bautodestroytransitions)|İlgili geçiş nesneleri silinip silinmeyeceğini belirtir.|  
   
 ### <a name="protected-data-members"></a>Korumalı veri üyeleri  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CAnimationVariable::m_dblDefaultValue](#m_dbldefaultvalue)|İçin IUIAnimationVariable yayılır varsayılan değeri belirtir.|  
-|[CAnimationVariable::m_lstTransitions](#m_lsttransitions)|Bu animasyon değişken animasyon geçişleri listesini içerir.|  
-|[CAnimationVariable::m_pParentObject](#m_pparentobject)|Bu animasyon değişken yalıtan bir animasyon nesne için bir işaretçi.|  
-|[CAnimationVariable::m_variable](#m_variable)|IUIAnimationVariable COM nesnesi için bir işaretçi depolar. COM Nesne henüz oluşturulmamış veya oluşturma başarısız olursa NULL.|  
+|[CAnimationVariable::m_lstTransitions](#m_lsttransitions)|Bu bir animasyon değişkenini animasyon geçişleri bir listesini içerir.|  
+|[CAnimationVariable::m_pParentObject](#m_pparentobject)|Bu bir animasyon değişkenini kapsülleyen bir animasyon nesnenin bir işaretçi.|  
+|[CAnimationVariable::m_variable](#m_variable)|IUIAnimationVariable COM nesnesine bir işaretçi depolar. COM Nesne henüz oluşturulmadı veya oluşturma başarısız olursa NULL.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- CAnimationVariable sınıfı IUIAnimationVariable COM nesnesi yalıtır. Ayrıca, bir film şeridi animasyon değişkeninde uygulanacak geçişleri listesini tutar. Bir uygulama animasyonlu değeri, noktası, boyutunu, rengini ve dikdörtgen gösterebilir animasyon nesnelere katıştırılmış CAnimationVariable nesneleri.  
+ CAnimationVariable sınıfı IUIAnimationVariable COM nesnesi kapsüller. Ayrıca, bir film şeridinde animasyon değişkeninde uygulanacak geçişleri listesini tutar. Bir uygulama bir animasyonlu değeri, noktası, boyutunu, rengini ve dikdörtgen gösterebilir animasyon nesnelere katıştırılmış CAnimationVariable nesneleri.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `CAnimationVariable`  
@@ -127,7 +127,7 @@ class CAnimationVariable;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="_dtorcanimationvariable"></a>  CAnimationVariable:: ~ CAnimationVariable  
- Yok Edicisi. Bir CAnimationVariable nesnesi yok çağrılır.  
+ Yıkıcı. CAnimationVariable nesne yok ediliyorken çağırılır.  
   
 ```  
 virtual ~CAnimationVariable();
@@ -142,13 +142,13 @@ void AddTransition(CBaseTransition* pTransition);
   
 ### <a name="parameters"></a>Parametreler  
  *pTransition*  
- Eklemek için bir geçiş için bir işaretçi.  
+ Bir geçiş eklemek için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir geçiş animasyon değişkenine uygulanacak geçişleri iç listesine eklemek için çağrılır. Bu liste, animasyonun zamanlandığı temizlenmelidir.  
+ Bu yöntem, bir geçiş animasyon değişkene uygulanacak geçişleri iç listesine eklemek için çağrılır. Bu liste, animasyon zamanlandıysa temizlenmiş olması gerekir.  
   
 ##  <a name="applytransitions"></a>  CAnimationVariable::ApplyTransitions  
- Geçişler film şeridi için iç listeden ekler.  
+ Geçişler, film şeridi için iç listeden ekler.  
   
 ```  
 void ApplyTransitions(
@@ -159,19 +159,19 @@ void ApplyTransitions(
   
 ### <a name="parameters"></a>Parametreler  
  *pController*  
- Üst animasyon denetleyici için bir işaretçi.  
+ Üst animasyon denetleyicisini bir işaretçi.  
   
  *pStoryboard*  
- Film şeridi bir işaretçi.  
+ Görsel taslak için bir işaretçi.  
   
  *bDependOnKeyframes*  
- TRUE, bu yöntem ana kare üzerinde bağımlı geçişleri eklemeniz gerekir.  
+ TRUE, bu yöntem, üzerinde ana kareleri bağımlı geçişleri eklemeniz gerekir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem iç listeden film şeridi geçişleri ekler. Ana kare bağlıdır ve ana kare üzerinde bağımlı geçiş ekleme geçişleri eklemek için buna en üst düzey koddan birkaç kez denir. Temel alınan animasyon değişkeni COM nesnesi oluşturulmadı, bu yöntem bu aşamada oluşturur.  
+ Bu yöntem, film şeridi için iç listeden geçişleri ekler. Ana kareleri üzerinde bağlıdır ve ana kareleri üzerinde bağlı geçiş ekleme geçişleri eklemek için üst düzey kod birkaç kez çağrılır. Temel animasyon değişkenini COM nesnesi oluşturulmadı, bu yöntem bu aşamada oluşturur.  
   
 ##  <a name="canimationvariable"></a>  CAnimationVariable::CAnimationVariable  
- Bir animasyon değişken nesnesi oluşturur.  
+ Bir animasyon değişkenini nesne oluşturur.  
   
 ```  
 CAnimationVariable(DOUBLE dblDefaultValue = 0.0);
@@ -182,7 +182,7 @@ CAnimationVariable(DOUBLE dblDefaultValue = 0.0);
  Varsayılan değer belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir animasyon değişken nesnesi oluşturur ve varsayılan değerini ayarlar. Bir değişken değil animasyonlu veya animasyon varsayılan değer kullanılır.  
+ Bir animasyon değişkenini nesne oluşturur ve varsayılan değerini ayarlar. Bir değişken değil animasyon veya hareketlendirilemeyebilir bir varsayılan değer kullanılır.  
   
 ##  <a name="cleartransitions"></a>  CAnimationVariable::ClearTransitions  
  Geçişleri temizler.  
@@ -193,13 +193,13 @@ void ClearTransitions(BOOL bAutodestroy);
   
 ### <a name="parameters"></a>Parametreler  
  *bAutodestroy*  
- Bu yöntem geçiş nesneleri silmesi gerekip gerekmediğini belirtir.  
+ Bu yöntem geçiş nesneleri silin olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem tüm geçişleri geçişleri iç listesinden kaldırır. BAutodestroy TRUE ya da m_bAutodestroyTransitions TRUE geçişleri silinir. Aksi takdirde çağıran geçiş nesneleri serbest bırakma.  
+ Bu yöntem tüm geçişler geçişleri iç listesinden kaldırır. BAutodestroy doğru veya m_bAutodestroyTransitions true'dur geçişleri silinir. Aksi takdirde çağıran geçiş nesneleri serbest bırakma.  
   
 ##  <a name="create"></a>  CAnimationVariable::Create  
- Animasyon değişken COM nesnesini oluşturur.  
+ Temel animasyon değişken COM nesnesi oluşturur.  
   
 ```  
 virtual BOOL Create(IUIAnimationManager* pManager);
@@ -210,13 +210,13 @@ virtual BOOL Create(IUIAnimationManager* pManager);
  Animasyon Yöneticisi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Animasyon değişken başarıyla oluşturuldu, TRUE; Aksi takdirde FALSE.  
+ Animasyon değişkenin başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, temel alınan animasyon değişken COM nesnesi oluşturur ve varsayılan değerini ayarlar.  
+ Bu yöntem, temel alınan animasyon değişkenini COM nesnesi oluşturur ve varsayılan değerini ayarlar.  
   
 ##  <a name="createtransitions"></a>  CAnimationVariable::CreateTransitions  
- Bu animasyon değişkenine uygulanacak tüm geçişleri oluşturur.  
+ Bu animasyon değişkenin uygulanacak tüm geçişler oluşturur.  
   
 ```  
 BOOL CreateTransitions(
@@ -226,13 +226,13 @@ BOOL CreateTransitions(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçişleri başarıyla oluşturuldu, TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulduysa TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Değişkenin iç geçişler listesine eklenen geçişleri oluşturmak gerektiğinde bu yöntem çerçevesi tarafından çağrılır.  
+ Bu yöntem değişkenin iç geçiş listesine eklenmiş olan geçiş oluşturmak gerektiğinde framework tarafından çağırılır.  
   
 ##  <a name="enableintegervaluechangedevent"></a>  CAnimationVariable::EnableIntegerValueChangedEvent  
  Etkinleştirir veya IntegerValueChanged olay devre dışı bırakır.  
@@ -248,10 +248,10 @@ void EnableIntegerValueChangedEvent (
  Üst denetleyici için bir işaretçi.  
   
  *bSistemlerde*  
- Olay, FALSE - devre dışı bırak olay TRUE - etkinleştirin.  
+ TRUE - olay FALSE - devre dışı bırakma olay etkinleştirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ValueChanged olay etkinleştirildiğinde, sanal bir yöntem CAnimationController::OnAnimationIntegerValueChanged framework çağırır. Bu olayın işlenmesi için CAnimationController türetilen bir sınıfta geçersiz kılmanız gerekir. Animasyon değişkenin tamsayı değeri her değiştiğinde bu yöntem çağrılır.  
+ ValueChanged olay etkinleştirildiğinde framework CAnimationController::OnAnimationIntegerValueChanged sanal bir yöntem çağırır. Bu olayı işlemek için CAnimationController türetilen bir sınıfta geçersiz gerekir. Animasyon değişkeninin tamsayı değeri değiştirildiğinde, bu yöntem çağrılır.  
   
 ##  <a name="enablevaluechangedevent"></a>  CAnimationVariable::EnableValueChangedEvent  
  Etkinleştirir veya ValueChanged olay devre dışı bırakır.  
@@ -267,39 +267,39 @@ void EnableValueChangedEvent (
  Üst denetleyici için bir işaretçi.  
   
  *bSistemlerde*  
- Olay, FALSE - devre dışı bırak olay TRUE - etkinleştirin.  
+ TRUE - olay FALSE - devre dışı bırakma olay etkinleştirin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ValueChanged olay etkinleştirildiğinde, sanal bir yöntem CAnimationController::OnAnimationValueChanged framework çağırır. Bu olayın işlenmesi için CAnimationController türetilen bir sınıfta geçersiz kılmanız gerekir. Animasyon değişkeninin değeri her değiştiğinde bu yöntem çağrılır.  
+ ValueChanged olay etkinleştirildiğinde framework CAnimationController::OnAnimationValueChanged sanal bir yöntem çağırır. Bu olayı işlemek için CAnimationController türetilen bir sınıfta geçersiz gerekir. Animasyon değişkeninin değeri değiştirildiğinde, bu yöntem çağrılır.  
   
 ##  <a name="getdefaultvalue"></a>  CAnimationVariable::GetDefaultValue  
- Varsayılan değerini döndürür.  
+ Varsayılan değeri döndürür.  
   
 ```  
 DOUBLE GetDefaultValue() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Varsayılan değer.  
+ Varsayılan değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Animasyon değişkeni varsayılan değeri elde etmek için bu işlevi kullanın. Varsayılan değer Oluşturucusu veya SetDefaultValue yöntemi tarafından ayarlanabilir.  
+ Animasyon değişkenin varsayılan değeri elde etmek için bu işlevi kullanın. Varsayılan değer, oluşturucu veya SetDefaultValue yöntemi tarafından ayarlanabilir.  
   
 ##  <a name="getparentanimationobject"></a>  CAnimationVariable::GetParentAnimationObject  
- Üst öğesini döndürür animasyon nesnesi.  
+ Üst döndürür animasyon nesne.  
   
 ```  
 CAnimationBaseObject* GetParentAnimationObject();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi üst animasyon nesnesi, ilişki kuruldu, bulunmazsa null değerini DÖNDÜRÜR.  
+ İlişki kuruldu, üst animasyon nesnesine bir işaretçi bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir üst animasyon nesne (kapsayıcı) için bir işaretçi almak için çağrılabilir.  
+ Bu yöntem, bir işaretçiyi bir üst animasyon nesneye (kapsayıcı) almak için çağrılabilir.  
   
 ##  <a name="getvalue"></a>  CAnimationVariable::GetValue  
- Animasyon değişkenin geçerli değeri döndürür.  
+ Animasyon değişkeninin geçerli değerini döndürür.  
   
 ```  
 HRESULT GetValue(DOUBLE& dblValue);  
@@ -314,33 +314,33 @@ HRESULT GetValue(INT32& nValue);
  Animasyon değişkenin geçerli değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- S_OK değeri başarıyla alındı veya arka plandaki animasyon değişkeni oluşturulmadı. Aksi takdirde HRESULT hata kodu.  
+ S_OK değeri başarıyla edinilen ya da temel alınan animasyon değişkenini oluşturulmadı. Aksi takdirde HRESULT hata kodu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, geçerli animasyon değişkenin değerini almak için çağrılabilir. COM nesnesini oluşturulmadığında, dblValue işlevi döndüğünde bir varsayılan değeri içerir.  
+ Animasyon değişkeninin geçerli değerini almak için bu yöntem çağrılabilir. COM nesnesini oluşturulmadı, dblValue işlevi döndüğünde varsayılan bir değer içerir.  
   
 ##  <a name="getvariable"></a>  CAnimationVariable::GetVariable  
- Bir işaretçi IUIAnimationVariable COM nesnesi döndürür.  
+ IUIAnimationVariable COM nesnesine bir işaretçi döndürür.  
   
 ```  
 IUIAnimationVariable* GetVariable();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli bir işaretçi IUIAnimationVariable COM nesnesi ya da animasyon değişkeni oluşturulmadı veya oluşturulamaz yoksa NULL.  
+ Geçerli bir işaretçi IUIAnimationVariable COM nesnesi ya da NULL animasyon değişkenini oluşturulmadı veya oluşturulamıyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
- IUIAnimationVariable COM nesnesini erişmek ve gerekirse yöntemlerinden doğrudan çağırmak için bu işlevi kullanın.  
+ Temel alınan IUIAnimationVariable COM nesnesi erişmek ve gerekirse kendi yöntemleri doğrudan çağırmak için bu işlevi kullanın.  
   
 ##  <a name="m_bautodestroytransitions"></a>  CAnimationVariable::m_bAutodestroyTransitions  
- İlgili geçiş nesneleri silinmesi gerekip gerekmediğini belirtir.  
+ İlgili geçiş nesneleri silinip silinmeyeceğini belirtir.  
   
 ```  
 BOOL m_bAutodestroyTransitions;  
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçişleri iç listeden kaldırılmakta olan zaman geçiş nesnelerinin zorla silinmesini true bu değere ayarlayın. Bu değeri FALSE ise geçişleri uygulama çağırarak silinmesi gerekir. Bir animasyon zamanlanmış sonra geçişleri listesini her zaman temizlenir. Varsayılan değer FALSE olur.  
+ Geçişleri iç listesinden kaldırılmakta olan geçiş nesneleri zorla silinmesini true bu değere ayarlanır. Bu değer FALSE ise uygulama çağırarak geçişi silinmelidir. Geçişleri listesini, her zaman bir animasyon zamanlandıktan sonra temizlenir. Varsayılan değer FALSE olur.  
   
 ##  <a name="m_dbldefaultvalue"></a>  CAnimationVariable::m_dblDefaultValue  
  İçin IUIAnimationVariable yayılır varsayılan değeri belirtir.  
@@ -350,28 +350,28 @@ DOUBLE m_dblDefaultValue;
 ```  
   
 ##  <a name="m_lsttransitions"></a>  CAnimationVariable::m_lstTransitions  
- Bu animasyon değişken animasyon geçişleri listesini içerir.  
+ Bu bir animasyon değişkenini animasyon geçişleri bir listesini içerir.  
   
 ```  
 CObList m_lstTransitions;  
 ```  
   
 ##  <a name="m_pparentobject"></a>  CAnimationVariable::m_pParentObject  
- Bu animasyon değişken yalıtan bir animasyon nesne için bir işaretçi.  
+ Bu bir animasyon değişkenini kapsülleyen bir animasyon nesnenin bir işaretçi.  
   
 ```  
 CAnimationBaseObject* m_pParentObject;  
 ```  
   
 ##  <a name="m_variable"></a>  CAnimationVariable::m_variable  
- IUIAnimationVariable COM nesnesi için bir işaretçi depolar. COM Nesne henüz oluşturulmamış veya oluşturma başarısız olursa NULL.  
+ IUIAnimationVariable COM nesnesine bir işaretçi depolar. COM Nesne henüz oluşturulmadı veya oluşturma başarısız olursa NULL.  
   
 ```  
 ATL::CComPtr<IUIAnimationVariable> m_variable;  
 ```  
   
 ##  <a name="setdefaultvalue"></a>  CAnimationVariable::SetDefaultValue  
- Varsayılan değer ayarlar ve IUIAnimationVariable COM nesnesi serbest bırakır.  
+ Varsayılan değer olarak ayarlar ve IUIAnimationVariable COM nesnesi serbest bırakır.  
   
 ```  
 void SetDefaultValue(DOUBLE dblDefaultValue);
@@ -379,13 +379,13 @@ void SetDefaultValue(DOUBLE dblDefaultValue);
   
 ### <a name="parameters"></a>Parametreler  
  *dblDefaultValue*  
- Yeni varsayılan değer belirtir.  
+ Yeni varsayılan değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan değer sıfırlamak için bu yöntemi kullanın. Animasyon değişkeni yeniden oluşturulduğunda bu yöntem iç IUIAnimationVariable COM nesnesi, bu nedenle serbest bırakır, yeni varsayılan değer COM nesnesini alır. Varsayılan değer, animasyonun değişkeni temsil eden COM nesnesi oluşturulmadı veya değişkeni değil animasyonlu GetValue tarafından döndürülür.  
+ Varsayılan değeri sıfırlamak için bu yöntemi kullanın. Animasyon değişkenin yeniden oluşturulduğunda bu yöntem iç IUIAnimationVariable COM nesnesi, bu nedenle sürümleri, yeni varsayılan değer COM nesnesini alır. Varsayılan değer, animasyon değişkenini temsil eden bir COM nesnesi oluşturulmadı veya değişkeni değil animasyonlu GetValue tarafından döndürülür.  
   
 ##  <a name="setparentanimationobject"></a>  CAnimationVariable::SetParentAnimationObject  
- Bir animasyon değişkeni ve bir animasyon nesne arasındaki ilişkiyi ayarlar.  
+ Bir animasyon değişkenini ve animasyon nesne arasındaki ilişkiyi ayarlar.  
   
 ```  
 void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
@@ -393,10 +393,10 @@ void SetParentAnimationObject(CAnimationBaseObject* pParentObject);
   
 ### <a name="parameters"></a>Parametreler  
  *pParentObject*  
- Bu değişkeni içeren bir animasyon nesne için bir işaretçi.  
+ Bu değişken içeren bir animasyon nesne işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, bir animasyon değişkeni ve onu yalıtan bir animasyon nesne arasında birebir ilişki kurmak için dahili olarak çağrılır.  
+ Bu yöntem, bir animasyon değişkenini ve onu bir animasyon nesnesini arasında bire bir ilişki kurmak için dahili olarak çağrılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıflar](../../mfc/reference/mfc-classes.md)

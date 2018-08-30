@@ -32,15 +32,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd2b9e09ed536d30729d39d53dc983d02cf0c6d7
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4c63eda0bbe734bd7c9f0a972e6756a444369123
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849694"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212436"
 ---
 # <a name="coleconvertdialog-class"></a>COleConvertDialog sınıfı
-Daha fazla bilgi için [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
+Daha fazla bilgi için [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK'sındaki yapısı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -135,7 +135,7 @@ explicit COleConvertDialog (
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
- Daha fazla bilgi için [CLSID anahtar](http://msdn.microsoft.com/library/windows/desktop/ms691424) ve [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) yapısı.  
+ Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) ve [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) yapısı.  
   
 ##  <a name="doconvert"></a>  COleConvertDialog::DoConvert  
  Başarıyla döndürme sonra bu işlevi çağırın [DoModal](#domodal)öğesine dönüştürmek için veya bir nesne türü etkinleştirmek için [Coleclientıtem](../../mfc/reference/coleclientitem-class.md).  
@@ -168,7 +168,7 @@ virtual INT_PTR DoModal();
   
 - Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIConvert](http://msdn.microsoft.com/library/windows/desktop/ms680694) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIConvert](/windows/desktop/api/oledlg/nf-oledlg-oleuiconverta) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_cv](#m_cv) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
@@ -188,7 +188,7 @@ REFCLSID GetClassID() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.  
   
- Daha fazla bilgi için [CLSID anahtar](http://msdn.microsoft.com/library/windows/desktop/ms691424) Windows SDK.  
+ Daha fazla bilgi için [CLSID anahtar](/windows/desktop/com/clsid-key-hklm) Windows SDK.  
   
 ##  <a name="getdrawaspect"></a>  COleConvertDialog::GetDrawAspect  
  Seçilen öğe bir simge olarak görüntülemek kullanıcının seçtiği olup olmadığını belirlemek için bu işlevi çağırın.  
@@ -207,7 +207,7 @@ DVASPECT GetDrawAspect() const;
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca çağrı [DoModal](#domodal) IDOK döndürür.  
   
- En boy çizim daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki veri yapısı.  
+ En boy çizim daha fazla bilgi için bkz: [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK'sındaki veri yapısı.  
   
 ##  <a name="geticonicmetafile"></a>  COleConvertDialog::GetIconicMetafile  
  Seçilen öğenin icon boy içeren meta dosyası için bir tanıtıcı almak için bu işlevi çağırın.  
@@ -258,7 +258,7 @@ OLEUICONVERT m_cv;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

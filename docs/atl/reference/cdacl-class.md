@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cd66c7c0637b4874f6a40bd77b3387191f00d35
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 93427eb8e842687e9bba3dc1eef12bcd07e7e167
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881207"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208017"
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 (İsteğe bağlı erişim denetimi listesi) DACL yapısı için bir sarmalayıcı sınıftır.  
@@ -74,7 +74,7 @@ class CDacl : public CAcl
   
  Oluşturma, ekleme, kaldırma ve ACE öğesinden silmek sağlanan sınıf yöntemleriyle `CDacl` nesne. Ayrıca bkz: [AtlGetDacl](security-global-functions.md#atlgetdacl) ve [AtlSetDacl](security-global-functions.md#atlsetdacl).  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -123,7 +123,7 @@ bool AddAllowedAce(
 ### <a name="remarks"></a>Açıklamalar  
  A `CDacl` nesnesi, nesne erişebilecek grupları ve kullanıcıları tanımlama sıfır veya daha fazla ACE (erişim denetimi girdileri) içerir. Bu yöntem erişimine izin veren bir ACE ekler `CDacl` nesne.  
   
- Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) içinde ayarlanan çeşitli bayrakları açıklamasını `AceFlags` parametresi.  
+ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) içinde ayarlanan çeşitli bayrakları açıklamasını `AceFlags` parametresi.  
   
 ##  <a name="adddeniedace"></a>  CDacl::AddDeniedAce  
  Reddedilen bir ACE (erişim denetimi girişi) ekler `CDacl` nesne.  
@@ -164,7 +164,7 @@ bool AddDeniedAce(
 ### <a name="remarks"></a>Açıklamalar  
  A `CDacl` nesnesi, nesne erişebilecek grupları ve kullanıcıları tanımlama sıfır veya daha fazla ACE (erişim denetimi girdileri) içerir. Bu yöntem erişim iznini reddeder ACE ekler `CDacl` nesne.  
   
- Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) içinde ayarlanan çeşitli bayrakları açıklamasını `AceFlags` parametresi.  
+ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) içinde ayarlanan çeşitli bayrakları açıklamasını `AceFlags` parametresi.  
   
 ##  <a name="cdacl"></a>  CDacl::CDacl  
  Oluşturucu.  
@@ -245,7 +245,7 @@ void RemoveAllAces() throw();
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   
  [CAcl sınıfı](../../atl/reference/cacl-class.md)   
- [ACL'ler](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [ACE](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)   
+ [ACE](/windows/desktop/SecAuthZ/access-control-entries)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

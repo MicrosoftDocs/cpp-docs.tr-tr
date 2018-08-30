@@ -12,130 +12,131 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5165c21f0bf6f2b9757550208d5e8e26a2bd3b1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ac142c628f3c2bef0bc29a2ffd50df8a9efda400
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693555"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216543"
 ---
 # <a name="241-for-construct"></a>2.4.1 Yapı için
-**İçin** yönergesi ilişkili döngü yinelemelerini paralel olarak yürütülecek belirten bir yinelemeli iş paylaşım yapısıyla tanımlar. Yinelemelerini **için** döngü bağlar, paralel yapı yürütme grupta zaten iş parçacıkları arasında dağıtılır. Söz dizimi **için** yapı aşağıdaki gibidir:  
-  
-```  
-#pragma omp for [clause[[,] clause] ... ] new-linefor-loop  
-```  
-  
- Yan tümcesi aşağıdakilerden biridir:  
-  
- **Özel (** *değişken listesi* **)**  
-  
- **firstprivate (** *değişken listesi* **)**  
-  
- **lastprivate (** *değişken listesi* **)**  
-  
- **azaltma (** *işleci* **:** *değişken-liste ***)**  
-  
- **sıralı**  
-  
- **zamanlama (** *türü*[, *chunk_size*]**)**  
-  
- **nowait**  
-  
- **İçin** yönergesi yerleştirir kısıtlamaları ilgili yapısına **için** döngü. Özellikle, karşılık gelen **için** döngü kurallı şekli olması gerekir:  
-  
- **için (** *init expr* **;** *var op mantıksal b*; *incr-expr ***)**  
-  
- *Init ifade*  
- Aşağıdakilerden biri:  
-  
- *var* = *lb*  
-  
- *tamsayı türü var* = *lb*  
-  
- *incr ifade*  
- Aşağıdakilerden biri:  
-  
- ++*var*  
-  
- *var* ++  
-  
- -- *var*  
-  
- *var* --  
-  
- *var* += *incr*  
-  
- *var* -= *incr*  
-  
- *var* = *var* + *incr*  
-  
- *var* = *incr* + *var*  
-  
- *var* = *var* - *incr*  
-  
- *var*  
- İmzalı tamsayı değişken. Bu değişken aksi paylaşılan, bu örtük olarak özel süresince yapılır **için**.   Bu değişken gövdesi içinde değiştirilmemelidir **için** deyimi. Değişkeni belirtilmediği sürece **lastprivate**, döngü belirsiz sonra değeri.  
-  
- *op mantıksal*  
- Aşağıdakilerden biri:  
-  
- <  
-  
- \<=  
-  
- >  
-  
- \>=  
-  
- *lb*, *b*, ve *incr*  
- Tamsayı sabit ifadeleri döngüsü. Bu deyimler değerlendirmesi sırasında eşitleme yoktur. Bu nedenle, değerlendirilen herhangi yan etkileri belirsiz sonuçlar.  
-  
- Kurallı biçimi döngüsüne girişteki hesaplanacak döngü yineleme sayısını izin verildiğini unutmayın. Bu hesaplama türü değerleri ile gerçekleştirilen *var*, tamsayı yükseltmeleri sonra. Özellikle, değeri *b* - *lb* + *incr* sonuç türü belirsiz olması gösterilemez. Daha fazla, eğer *op mantıksal* olan < veya \<sonra = *incr expr* neden gerekir *var* her döngü tekrarında üzerinde artırmak için.   Varsa *op mantıksal* olan > veya > = then *incr expr* neden gerekir *var* her döngü tekrarında üzerinde azaltmak için.  
-  
- **Zamanlama** yan tümcesi belirtir nasıl yinelemelerini **için** döngü takım iş parçacıkları arasında bölünür. Bir program doğruluğunu hangi iş parçacığı belirli bir yineleme yürütür bağımlı olmamalıdır. Değeri *chunk_size*, belirtilmişse, pozitif bir değer içeren bir döngü sabit tamsayı ifade olmalıdır. Bu ifade değerlendirmesi sırasında eşitleme yoktur. Bu nedenle, değerlendirilen herhangi yan etkileri belirsiz sonuçlar. Zamanlama *türü* şunlardan biri olabilir:  
-  
- Tablo 2-1 **zamanlama** yan tümcesi *türü* değerleri  
-  
-|||  
-|-|-|  
-|static|Zaman **zamanlama (statik,** *chunk_size ***)** belirtilirse, yineleme tarafından belirlenen bir boyutta parçalara bölünür *chunk_size*. Öbek hepsini şekilde iş parçacığı sayısı sırasına göre takım iş parçacıklarında statik olarak atanmış. Durumlarda *chunk_size* belirtilirse, yineleme alanı, her iş parçacığı için atanan bir Öbek ile boyutu, yaklaşık olarak eşit olan parçalara bölünür.|  
-|dinamik|Zaman **zamanlama (dinamik** *chunk_size ***)** belirtilirse, yinelemeleri öbekleri, her içeren bir dizi bölünen *chunk_size* yineleme. Her öbek atama için bekleyen bir iş parçacığı atanır. İş parçacığı yineleme öbek yürütür ve atanacak hiçbir öbekleri kalana kadar sonraki ataması için bekler. Atanacak son öbek yineleme daha az sayıda gerekebileceğini unutmayın. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
-|Destekli|Zaman **zamanlama (Destekli,** *chunk_size ***)** belirtilirse, yinelemeleri öbek boyutları azalan ile iş parçacıklarında atanır. Bir iş parçacığı, atanan öbek tekrar sona erdiğinde, hiçbiri kalana kadar dinamik olarak başka bir öbek atanır. İçin bir *chunk_size* 1, her öbek boyutu yaklaşık atanmamış yineleme iş parçacıklarını numarasına göre bölünmüş sayısıdır. Bu boyutları yaklaşık 1 katlanarak azaltın. İçin bir *chunk_size* değerle *k* 1 ' den büyük boyutları yaklaşık katlanarak çok azaltmak *k*, son öbek daha az olabilir ancak bu  *k* yineleme. Durumlarda *chunk_size* belirtilmemişse, varsayılan olarak, 1.|  
-|çalışma zamanı|Zaman **schedule(runtime)** belirtilirse, ilgili planlama çalışma zamanına kadar ertelenmiş karar. Zamanlama *türü* ve öbek boyutunu seçilebilir çalışma zamanında ortam değişkenini ayarlayarak **OMP_SCHEDULE**. Bu ortam değişkeni ayarlanmamış ise, sonuçta elde edilen zamanlaması uygulama tanımlı değildir. Zaman **schedule(runtime)** belirtilirse, *chunk_size* belirtilmemelidir.|  
-  
- İçinde açıkça tanımlanmış yokluğu **zamanlama** yan tümcesi, varsayılan **zamanlama** uygulama tanımlı değil.  
-  
- OpenMP uyumlu bir program doğru yürütme için belirli bir zamanlama güvenmemelisiniz. Bir program bir zamanlamaya göre doğrulamamalısınız *türü* aynı zamanlamaya uygulamalarında Çeşitlemeler olmasını mümkün olduğundan tam olarak yukarıda verilen açıklama uyumludur *türü* arasında farklı derleyicileri. Açıklamaları, belirli bir durum için uygun olan zamanlamayı seçmek için kullanılabilir.  
-  
- **Sıralı** yan tümcesi bulunmalıdır ne zaman **sıralı** yönergeleri bağlamak için **için** oluşturun.  
-  
- Sonunda örtük bir engel olan bir **için** sürece oluşturmak bir **nowait** yan tümcesi belirtilir.  
-  
- Kısıtlamaları **için** yönergesi aşağıdaki gibidir:  
-  
--   **İçin** döngü, yapılandırılmış bir blok olmalıdır ve ayrıca, yürütülmesinin tarafından sonlandırılması gerekir değil bir **sonu** deyimi.  
-  
--   Döngü değerlerini kontrol ifadelerin **için** döngü ile ilişkili bir **için** yönergesi ekibindeki tüm iş parçacıklarının için aynı olması gerekir.  
-  
--   **İçin** döngü yineleme değişkeni imzalı tamsayı türü olması gerekir.  
-  
--   Yalnızca tek bir **zamanlama** yan tümcesi görünebilir bir **için** yönergesi.  
-  
--   Yalnızca tek bir **sıralı** yan tümcesi görünebilir bir **için** yönergesi.  
-  
--   Yalnızca tek bir **nowait** yan tümcesi görünebilir bir **için** yönergesi.  
-  
--   Belirtilmeyen IF veya ne sıklıkta içindeki tüm yan etkiler olan *chunk_size*, *lb*, *b*, veya *incr* ifadeleri oluşur.  
-  
--   Değeri *chunk_size* ifadesi ekibindeki tüm iş parçacıklarının için aynı olmalıdır.  
-  
-## <a name="cross-references"></a>Çapraz referanslar:  
-  
--   **özel**, **firstprivate**, **lastprivate**, ve **azaltma** yan tümceleri, bkz: [bölüm 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.  
-  
--   **OMP_SCHEDULE** ortam değişkeni, bkz: [bölüm 4.1](../../parallel/openmp/4-1-omp-schedule.md) sayfasında 48.  
-  
--   **Sıralı** oluşturmak için bkz: [bölüm 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) sayfasında 22.  
-  
--   [Ek D](../../parallel/openmp/d-using-the-schedule-clause.md), sayfa 93, zamanlama yan tümcesinin kullanılması hakkında daha fazla bilgi sağlar.
+
+**İçin** yönergesi ilişkili döngü yinelemesi paralel olarak yürütülen belirten bir yinelemeli iş paylaşımı yapısı tanımlar. Yinelemeleri **için** döngü bağlar, paralel yapı yürütme takımda zaten iş parçacıkları arasında dağıtılır. Söz dizimi **için** yapısı şu şekildedir:
+
+```
+#pragma omp for [clause[[,] clause] ... ] new-line for-loop
+```
+
+Yan tümcesi aşağıdakilerden biridir:
+
+**Özel (** *değişken listesi* **)**
+
+**firstprivate (** *değişken listesi* **)**
+
+**lastprivate (** *değişken listesi* **)**
+
+**azaltma (** *işleci* **:** *değişken listesi* **)**
+
+**Sıralı**
+
+**zamanlama (** *tür* [**,** *chunk_size*] **)**
+
+**nowait**
+
+**İçin** yönergesi yerleştirir kısıtlamaları yapısına karşılık gelen **için** döngü. Özellikle, karşılık gelen **için** döngü kurallı şekli olması gerekir:
+
+**için (** *init-expr* **;** *var op mantıksal b*; *ıncr-expr* **)**
+
+*init-expr*<br/>
+Aşağıdakilerden biri:
+
+*Varyasyon* = *lb*
+
+*tamsayı türü var* = *lb*
+
+*incr-expr*<br/>
+Aşağıdakilerden biri:
+
+++ *var*
+
+*var* ++
+
+-- *var*
+
+*var* --
+
+*Varyasyon* += *ıncr*
+
+*Varyasyon* -= *ıncr*
+
+*Varyasyon* = *var* + *ıncr*
+
+*Varyasyon* = *ıncr* + *var*
+
+*Varyasyon* = *var* - *ıncr*
+
+*var*<br/>
+Bir işaretli tamsayı değişken. Bu değişken aksi paylaşılabilir değilse, örtük olarak özel süresince yapılan **için**.   Bu değişken gövdesinden değiştirilmemelidir **için** deyimi. Değişken belirtilmediği sürece **lastprivate**, döngü belirsiz olduğunda değeri.
+
+*mantıksal işlem*<br/>
+Aşağıdakilerden biri:
+
+<
+
+\<=
+
+>
+
+\>=
+
+*lb*, *b*, ve *ıncr*<br>
+Tamsayı sabit ifadeleri döngü. Eşitleme sırasında bu ifadelerin değerlendirme yoktur. Bu nedenle, değerlendirilen tüm yan etkileri belirsiz sonuçlar.
+
+Kurallı biçimi döngüde girişine hesaplanmasını döngü yinelemesi sayısını verildiğini unutmayın. Bu hesaplama türündeki değerlerle gerçekleştirilir *var*, integral yükseltmeler sonra. Özellikle, değerini *b* - *lb* + *ıncr* sonuç türü belirsiz olması gösterilemez. Daha fazla, ise *op mantıksal* olan < veya \<ardından = *ıncr-expr* koymasına *var* döngünün her yinelenişinde artırmak için.   Varsa *op mantıksal* olan > veya > ardından = *ıncr-expr* koymasına *var* döngünün her yinelenişinde azaltmak için.
+
+**Zamanlama** yan tümcesi belirtir nasıl yinelemeleri **için** döngü takım iş parçacıkları arasında bölünür. Belirli bir yinelemeye hangi iş parçacığının yürütür üzerinde bir program doğruluğunu bağımlı olmamalıdır. Değerini *chunk_size*, belirtilmişse, pozitif bir değer ile bir döngü sabit tamsayı ifade olmalıdır. Bu ifadenin değerlendirilmesi sırasında eşitleme yoktur. Bu nedenle, değerlendirilen tüm yan etkileri belirsiz sonuçlar. Zamanlama *tür* aşağıdakilerden biri olabilir:
+
+Tablo 2-1 **zamanlama** yan tümcesi *tür* değerleri
+
+|||
+|-|-|
+|static|Zaman **zamanlama (statik,** *chunk_size* **)** belirtilirse, yinelemeleri tarafından belirtilen bir boyut parçalara bölünmüştür *chunk_size*. Öbekleri ettirirsiniz iş parçacığı numarası sırasına göre takım iş parçacıkları statik olarak atanır. Hiçbir *chunk_size* belirtilirse, yineleme alanı ile her bir iş parçacığı için atanmış bir öbek boyutu, yaklaşık olarak eşit olan parçalara bölünür.|
+|dinamik|Zaman **zamanlama (dinamik** *chunk_size* **)** belirtilirse, yinelemeleri parçalar halinde her içeren bir dizi bölünmüştür *chunk_size* yineleme. Her öbek için bir atama bekleyen iş parçacığı atanır. İş parçacığı öbek tekrar yürütür ve atanacak hiçbir öbekleri kalana kadar sonraki ataması için bekler. Atanacak son öbek daha küçük bir yineleme sayısı gerekebileceğini unutmayın. Hiçbir *chunk_size* belirtilirse, varsayılan olarak, 1 olur.|
+|Destekli|Zaman **zamanlama (Kılavuzlu,** *chunk_size* **)** belirtilirse, yinelemeleri öbek boyutları azaltma ile iş parçacıklarının atanır. Bir iş parçacığı kendi atanan öbek yinelemelerin sona erdiğinde, hiçbiri kalana kadar dinamik olarak başka bir öbek atanır. İçin bir *chunk_size* 1, her öbek boyutu yaklaşık iş parçacıklarının sayıya bölünen atanmamış yinelemeler sayısıdır. Bu boyutları yaklaşık 1 katlanarak azaltın. İçin bir *chunk_size* değerle *k* 1 ' den büyük boyutları yaklaşık katlanarak ye azaltmak *k*son öbek daha az olabilir, ancak  *k* yineleme. Hiçbir *chunk_size* belirtilirse, varsayılan olarak, 1 olur.|
+|çalışma zamanı|Zaman **schedule(runtime)** belirtilirse, ilgili planlama çalışma zamanına kadar ertelenmiş karar. Zamanlama *tür* ve Öbek boyutu seçilebilir çalışma zamanında ortam değişkenini ayarlayarak **OMP_SCHEDULE**. Bu ortam değişkeni ayarlanmazsa, sonuçta elde edilen zamanlama uygulama tarafından tanımlanır. Zaman **schedule(runtime)** belirtilen *chunk_size* belirtilmemelidir.|
+
+Açıkça tanımlanmış olmadığında **zamanlama** yan tümcesi, varsayılan **zamanlama** uygulama tarafından tanımlanır.
+
+OpenMP uyumlu bir program, doğru yürütme için belirli bir zamanlama dayanarak doğrulamamalısınız. Bir program bir zamanlamaya göre doğrulamamalısınız *tür* aynı zamanlama uygulamalarında Çeşitlemeler olmasını mümkün olduğu için tam olarak yukarıda verilen açıklama uyumludur *tür* arasında farklı derleyicileri. Açıklamalar, belirli bir durum için uygun olan zamanlamayı seçin için kullanılabilir.
+
+**Sıralı** yan tümcesi bulunmalıdır ne zaman **sıralı** bağlanma yönergeleri **için** oluşturun.
+
+Sonunda örtük bir engel olan bir **için** sürece oluşturmak bir **nowait** yan tümcesi belirtildi.
+
+Kısıtlamaları **için** yönerge aşağıdaki gibidir:
+
+-   **İçin** döngü yapısal bloğunun olmalıdır ve ayrıca, yürütme ile bitmelidir değil bir **sonu** deyimi.
+
+-   Döngü değerlerini denetim ifadeleri **için** döngü ile ilişkili bir **için** yönergesi takım iş parçacıkları için aynı olması gerekir.
+
+-   **İçin** döngüsünün yineleme değişkeni işaretli bir tamsayı türü olmalıdır.
+
+-   Yalnızca tek bir **zamanlama** yan tümcesi görüntülenebilir bir **için** yönergesi.
+
+-   Yalnızca tek bir **sıralı** yan tümcesi görüntülenebilir bir **için** yönergesi.
+
+-   Yalnızca tek bir **nowait** yan tümcesi görüntülenebilir bir **için** yönergesi.
+
+-   Belirtilmeyen if veya ne sıklıkta içindeki tüm yan etkiler olan *chunk_size*, *lb*, *b*, veya *ıncr* ifadeleri oluşur.
+
+-   Değerini *chunk_size* ifade takımın tüm iş parçacıkları için aynı olması gerekir.
+
+## <a name="cross-references"></a>Başvuruları çapraz:
+
+-   **özel**, **firstprivate**, **lastprivate**, ve **azaltma** yan tümcesi bkz [bölümü 2.7.2](../../parallel/openmp/2-7-2-data-sharing-attribute-clauses.md) sayfasında 25.
+
+-   **OMP_SCHEDULE** ortam değişkeni, bkz: [bölümü 4.1](../../parallel/openmp/4-1-omp-schedule.md) sayfasında 48.
+
+-   **Sıralı** oluşturmak için bkz: [bölümü 2.6.6](../../parallel/openmp/2-6-6-ordered-construct.md) sayfasında 22.
+
+-   [Ek D](../../parallel/openmp/d-using-the-schedule-clause.md), sayfa 93, zamanlama yan tümcesini hakkında daha fazla bilgi sağlar.

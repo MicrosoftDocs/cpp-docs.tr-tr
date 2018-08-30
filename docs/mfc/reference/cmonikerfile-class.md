@@ -28,15 +28,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 296e288f017373563b867b02ad26f25ec6bc6227
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b3aab8fe3dac8cb58884861a83e41d09b493a375
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853653"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212123"
 ---
 # <a name="cmonikerfile-class"></a>CMonikerFile sınıfı
-Veri akışını temsil eder ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) tarafından adlandırılan bir [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
+Veri akışını temsil eder ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)) tarafından adlandırılan bir [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -74,7 +74,7 @@ class CMonikerFile : public COleStreamFile
   
  `CMonikerFile` bir akış dışında bağlamak için kullanılamaz. Depolama veya nesneyi bağlamak istiyorsanız, kullanmalısınız `IMoniker` doğrudan arabirim.  
   
- Akışları ve adlar hakkında daha fazla bilgi için bkz. [COleStreamFile](../../mfc/reference/colestreamfile-class.md) içinde *MFC başvurusu* ve [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) ve [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705) içinde Windows SDK'sı.  
+ Akışları ve adlar hakkında daha fazla bilgi için bkz. [COleStreamFile](../../mfc/reference/colestreamfile-class.md) içinde *MFC başvurusu* ve [IStream](/windows/desktop/api/objidl/nn-objidl-istream) ve [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker) içinde Windows SDK'sı.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -117,7 +117,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
  Dosya özel durum işaretçisi. Bir hata olması durumunda, neden ayarlanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağlama bağlamı için bir işaretçi [ıbindctx i](http://msdn.microsoft.com/library/windows/desktop/ms693755) başarılı; Aksi takdirde NULL ile bağlamak için. Örneği ile açıldıysa bir `IBindHost` arabirimi, bağlama bağlamı alınır `IBindHost`. Yoksa hiçbir `IBindHost` arabirimi veya arabirim başarısız bir bağlama bağlamı geri dönmek, bağlama bağlamı oluşturulur. Bir açıklaması için [IBindHost](http://msdn.microsoft.com/library/ie/ms775076) arabirimi, Windows SDK'sı bakın.  
+ Bağlama bağlamı için bir işaretçi [ıbindctx i](/windows/desktop/api/objidl/nn-objidl-ibindctx) başarılı; Aksi takdirde NULL ile bağlamak için. Örneği ile açıldıysa bir `IBindHost` arabirimi, bağlama bağlamı alınır `IBindHost`. Yoksa hiçbir `IBindHost` arabirimi veya arabirim başarısız bir bağlama bağlamı geri dönmek, bağlama bağlamı oluşturulur. Bir açıklaması için [IBindHost](https://msdn.microsoft.com/library/ie/ms775076) arabirimi, Windows SDK'sı bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir bağlama bağlamı belirli ad bağlama işlemiyle ilgili bilgileri depolayan bir nesnedir. Özel bağlama bağlam sağlamak için bu işlevi geçersiz kılabilirsiniz.  
@@ -144,10 +144,10 @@ IMoniker* GetMoniker() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli ad arabirim işaretçisi ( [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705)).  
+ Geçerli ad arabirim işaretçisi ( [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker)).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yana `CMonikerFile` bir arabirim değil döndürülen işaretçi başvuru sayısını artırmaz (aracılığıyla [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379)), ad yayımlanan ve zaman `CMonikerFile` nesne yayımlanır. Bilinen ad tutun veya kendiniz yayın istiyorsanız gerekir `AddRef` bu.  
+ Bu yana `CMonikerFile` bir arabirim değil döndürülen işaretçi başvuru sayısını artırmaz (aracılığıyla [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref)), ad yayımlanan ve zaman `CMonikerFile` nesne yayımlanır. Bilinen ad tutun veya kendiniz yayın istiyorsanız gerekir `AddRef` bu.  
   
 ##  <a name="open"></a>  CMonikerFile::Open  
  Bir dosya veya bilinen ad nesne açmak için bu üye işlevini çağırın.  

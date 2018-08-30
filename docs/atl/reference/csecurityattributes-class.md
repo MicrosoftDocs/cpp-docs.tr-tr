@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4bc37dd8025009e4f904373fc8aa106c93dc8210
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 47b0058cba19ac804c2d996052e9a5ec2df68bc5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879353"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208954"
 ---
 # <a name="csecurityattributes-class"></a>CSecurityAttributes sınıfı
 Güvenlik öznitelikleri yapısı için basit bir sarmalayıcı sınıftır.  
@@ -53,9 +53,9 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 |[CSecurityAttributes::Set](#set)|Öznitelikleri ayarlamak için bu yöntemi çağırın `CSecurityAttributes` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `SECURITY_ATTRIBUTES` Yapısının bir [güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379561) bir nesne oluşturmak için kullanılan ve bu yapı belirterek alınan tanıtıcı devralınabilir olup olmadığını belirtir.  
+ `SECURITY_ATTRIBUTES` Yapısının bir [güvenlik tanımlayıcısı](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) bir nesne oluşturmak için kullanılan ve bu yapı belirterek alınan tanıtıcı devralınabilir olup olmadığını belirtir.  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `SECURITY_ATTRIBUTES`  
@@ -99,7 +99,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Güvenliği örneği](../../visual-cpp-samples.md)   
- [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560)   
- [Güvenlik tanımlayıcısı](http://msdn.microsoft.com/library/windows/desktop/aa379561)   
+ [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560)   
+ [Güvenlik tanımlayıcısı](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

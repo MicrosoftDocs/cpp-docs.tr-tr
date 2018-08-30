@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 236c7df60fc023710139c8975486428fd7cd7cfd
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 2dd920f3dd8d08d6ceb766b9c10969137b8bf03c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027131"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199270"
 ---
 # <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme
 Bu konuda, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu düğmesi eklemeyi açıklar. MFC içinde araç çubuğu düğmesi olmalıdır bir [CMFCToolBarButton sınıfı](../mfc/reference/cmfctoolbarbutton-class.md)-türetilmiş sınıf, örneğin [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton sınıfı](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), veya [CMFCToolBarMenuButton sınıfı](../mfc/reference/cmfctoolbarmenubutton-class.md).  
@@ -65,7 +65,7 @@ Bu konuda, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu 
   
 2.  Yeni bir sınıf oluşturun `CFindComboBox`, türetilmiş [CComboBox sınıfı](../mfc/reference/ccombobox-class.md).  
   
-3.  İçinde `CFindComboBox` sınıfı, geçersiz kılma `PreTranslateMessage` sanal yöntem. Bu yöntem işlemek birleşik giriş kutusu tanıyacak [WM_KEYDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646280) ileti. Kullanıcı escape tuşu değerse (`VK_ESCAPE`), odak noktası ana çerçeve penceresine geri dönün. Kullanıcı Enter tuşunu değerse (`VK_ENTER`), ana çerçeve penceresine içeren WM_COMMAND ileti gönderin `ID_EDIT_FIND_COMBO` komut kimliği.  
+3.  İçinde `CFindComboBox` sınıfı, geçersiz kılma `PreTranslateMessage` sanal yöntem. Bu yöntem işlemek birleşik giriş kutusu tanıyacak [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) ileti. Kullanıcı escape tuşu değerse (`VK_ESCAPE`), odak noktası ana çerçeve penceresine geri dönün. Kullanıcı Enter tuşunu değerse (`VK_ENTER`), ana çerçeve penceresine içeren WM_COMMAND ileti gönderin `ID_EDIT_FIND_COMBO` komut kimliği.  
   
 4.  Sınıfı için oluşturma **Bul** birleşik giriş kutusu düğmesi, türetilen [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md). Bu örnekte, adlı `CFindComboButton`.  
   
@@ -73,7 +73,7 @@ Bu konuda, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu 
   
     1.  Geçirmek `ID_EDIT_FIND_COMBO` olarak komut kimliği.  
   
-    2.  Kullanım [CCommandManager::GetCmdImage](http://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) ile `ID_EDIT_FIND` resim dizinini elde edilir.  
+    2.  Kullanım [CCommandManager::GetCmdImage](https://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) ile `ID_EDIT_FIND` resim dizinini elde edilir.  
   
     3.  Kullanılabilir birleşik giriş kutusu stilleri bir listesi için bkz. [birleşik giriş kutusu stilleri](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).  
   

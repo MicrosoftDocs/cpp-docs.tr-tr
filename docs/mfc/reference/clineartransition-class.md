@@ -24,15 +24,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1412a65ce7afaab5421d49c22a9cd8ece5b283b1
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 64b53cafc60e556ac142cdaf1f56608e5ab3de70
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040892"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211747"
 ---
 # <a name="clineartransition-class"></a>CLinearTransition sınıfı
-Doğrusal geçiş yalıtır.  
+Bir doğrusal geçişi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,7 +46,7 @@ class CLinearTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinearTransition::CLinearTransition](#clineartransition)|Doğrusal geçiş nesnesi oluşturur ve süresi ve son değer ile başlatır.|  
+|[CLinearTransition::CLinearTransition](#clineartransition)|Bir doğrusal geçişi nesnesi oluşturur ve onu süresi ve son değer ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -58,11 +58,11 @@ class CLinearTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
+|[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
 |[CLinearTransition::m_duration](#m_duration)|Geçiş süresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Doğrusal bir geçiş sırasında animasyon değişkenin değerini belirtilen bir son değeri başlangıç değerinden doğrusal olarak geçer. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir doğrusal geçişi sırasında animasyon değişkenin değerini belirtilen son değer için başlangıç değerinden doğrusal olarak geçer. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -75,7 +75,7 @@ class CLinearTransition : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="clineartransition"></a>  CLinearTransition::CLinearTransition  
- Doğrusal geçiş nesnesi oluşturur ve süresi ve son değer ile başlatır.  
+ Bir doğrusal geçişi nesnesi oluşturur ve onu süresi ve son değer ile başlatır.  
   
 ```  
 CLinearTransition(
@@ -84,11 +84,11 @@ CLinearTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Süre*  
+ *Süresi*  
  Geçiş süresi.  
   
  *dblFinalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ##  <a name="create"></a>  CLinearTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -101,13 +101,13 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_dblfinalvalue"></a>  CLinearTransition::m_dblFinalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  

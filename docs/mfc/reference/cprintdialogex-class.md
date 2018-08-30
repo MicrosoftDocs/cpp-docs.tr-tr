@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45975354305323f2a3a4d4f8916b901110d91441
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 6d1e8ae445da8c69901c319665704e06895103d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199515"
 ---
 # <a name="cprintdialogex-class"></a>CPrintDialogEx sınıfı
 Windows Print özellik sayfası tarafından sağlanan hizmetleri kapsüller.  
@@ -102,7 +102,7 @@ class CPrintDialogEx : public CCommonDialog
   
  Uygulamanızın framework'ün katılımı olmadan yazdırmak işlemesini istiyorsanız, kullanabileceğiniz `CPrintDialogEx` sağlanan oluşturucuyla "olduğu gibi" sınıf ya da kendi iletişim sınıftan türetilip `CPrintDialogEx` ve ihtiyaçlarınıza uyacak şekilde bir oluşturucu yazma. Sınıfından türetildiği her iki durumda da, bu iletişim kutularından standart MFC iletişim kutuları gibi davranır `CCommonDialog`.  
   
- Kullanılacak bir `CPrintDialogEx` nesne, ilk nesnesini kullanarak oluşturun `CPrintDialogEx` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_pdex](#m_pdex) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. `m_pdex` Yapısıdır türünü [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ Kullanılacak bir `CPrintDialogEx` nesne, ilk nesnesini kullanarak oluşturun `CPrintDialogEx` Oluşturucusu. İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_pdex](#m_pdex) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. `m_pdex` Yapısıdır türünü [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa). Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
  Kendi işleyicileri sağlamazsanız `m_pdex` için `hDevMode` ve `hDevNames` üyeleri, Windows işlevi çağırma mutlaka `GlobalFree` iletişim kutusu ile işiniz bittiğinde bu tanıtıcıları için.  
   
@@ -147,7 +147,7 @@ CPrintDialogEx(
   
 ### <a name="parameters"></a>Parametreler  
  *CertOpenStore*  
- Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, PD_ALLPAGES bayrağı, tüm belge sayfaları varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
+ Bit düzeyinde OR işleci kullanılarak birleştirilen iletişim kutusunun ayarlarını özelleştirmek için kullanabileceğiniz bir veya daha fazla bayraklar. Örneğin, PD_ALLPAGES bayrağı, tüm belge sayfaları varsayılan yazdırma aralığı ayarlar. Bkz: [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) yapısı içinde bu bayraklar hakkında daha fazla bilgi için Windows SDK'sı.  
   
  *pParentWnd*  
  İletişim kutusunun üst veya sahip penceresine bir işaretçi.  
@@ -156,7 +156,7 @@ CPrintDialogEx(
  Bu üye işlevi yalnızca bir nesne oluşturur. Kullanım `DoModal` iletişim kutusunu görüntülemek için üye işlevi.  
   
 ##  <a name="createprinterdc"></a>  CPrintDialogEx::CreatePrinterDC  
- Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
+ Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
 ```  
 HDC CreatePrinterDC();
@@ -178,14 +178,14 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- INT_PTR dönüş değeri gerçekten HRESULT:. Dönüş değerleri bölümüne bakın [PrintDlgEx](http://msdn.microsoft.com/library/windows/desktop/ms646942) Windows SDK.  
+ INT_PTR dönüş değeri gerçekten HRESULT:. Dönüş değerleri bölümüne bakın [PrintDlgEx](https://msdn.microsoft.com/library/windows/desktop/ms646942) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli Yazdır iletişim kutusu seçenekleri üyeleri ayarlayarak başlatmak istiyorsanız `m_pdex` yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
   
  Arama sonra `DoModal`, diğer üye işlevleri, kullanıcı giriş bilgileri ve Ayarları iletişim kutusuna alınacak çağırabilirsiniz.  
   
- Çağrılırken PD_RETURNDC bayrağı kullanılırsa `DoModal`, yazıcı DC içinde döndürülen `hDC` üyesi [m_pdex](#m_pdex). Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) çağıran tarafından `CPrintDialogEx`.  
+ Çağrılırken PD_RETURNDC bayrağı kullanılırsa `DoModal`, yazıcı DC içinde döndürülen `hDC` üyesi [m_pdex](#m_pdex). Bu DC çağrısı ile serbest bırakılmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) çağıran tarafından `CPrintDialogEx`.  
   
 ##  <a name="getcopies"></a>  CPrintDialogEx::GetCopies  
  Çağırdıktan sonra bu işlevi çağırın `DoModal` istenen kopya sayısı alınamıyor.  
@@ -208,11 +208,11 @@ BOOL GetDefaults();
  Başarılı, aksi takdirde FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
+ Bir yazıcı cihaz bağlamı (DC) oluşturur [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) yapıları.  
   
- `GetDefaults` Print özellik sayfası görüntülenmez. Bunun yerine, ayarlar `hDevNames` ve `hDevMode` üyeleri [m_pdex](#m_pdex) tanıtıcıları için [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) için başlatılan yapıları Sistem varsayılan yazıcı. Her ikisi de `hDevNames` ve `hDevMode` NULL olmalı veya `GetDefaults` başarısız olur.  
+ `GetDefaults` Print özellik sayfası görüntülenmez. Bunun yerine, ayarlar `hDevNames` ve `hDevMode` üyeleri [m_pdex](#m_pdex) tanıtıcıları için [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) ve [DEVNAMES](../../mfc/reference/devnames-structure.md) için başlatılan yapıları Sistem varsayılan yazıcı. Her ikisi de `hDevNames` ve `hDevMode` NULL olmalı veya `GetDefaults` başarısız olur.  
   
- PD_RETURNDC bayrağı ayarlandıysa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` (bulunan `m_pdex.hDevNames` ve `m_pdex.hDevMode`) çağırana, ancak ayrıca yazıcıya DC döndürür `m_pdex.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](http://msdn.microsoft.com/library/windows/desktop/aa366579) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialogEx` nesne.  
+ PD_RETURNDC bayrağı ayarlandıysa, bu işlev değil yalnızca döndürür `hDevNames` ve `hDevMode` (bulunan `m_pdex.hDevNames` ve `m_pdex.hDevMode`) çağırana, ancak ayrıca yazıcıya DC döndürür `m_pdex.hDC`. DC yazıcı silip Windows çağrı çağıranın sorumluluğundadır [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree) işlevi ile işiniz bittiğinde tutamaçları üzerinde `CPrintDialogEx` nesne.  
   
 ##  <a name="getdevicename"></a>  CPrintDialogEx::GetDeviceName  
  Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) şu anda seçili yazıcının veya arama sonra adı almak için [GetDefaults](#getdefaults) varsayılan yazıcının adını almak için.  
@@ -235,7 +235,7 @@ LPDEVMODE GetDevMode() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows SDK'da açıklanan işlevi.  
+ [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazdırma sürücüsü ortamı hakkında bilgi içeren veri yapısı. Windows ile bu yapı tarafından gerçekleştirilecek bellek kilidini açmanız gerekir [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows SDK'da açıklanan işlevi.  
   
 ##  <a name="getdrivername"></a>  CPrintDialogEx::GetDriverName  
  Çağırdıktan sonra bu işlevi çağırın [DoModal](#domodal) veya [GetDefaults](#getdefaults) sistem tarafından tanımlanan yazıcı aygıt sürücüsünün adını alamadı.  
@@ -271,7 +271,7 @@ HDC GetPrinterDC() const;
  Yazıcı cihaz bağlamı için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Windows çağırmalıdır [DeleteDC](http://msdn.microsoft.com/library/windows/desktop/dd183533) işlevi işiniz bittiğinde, cihaz bağlam silmek için onu kullanarak.  
+ Windows çağırmalıdır [DeleteDC](/windows/desktop/api/wingdi/nf-wingdi-deletedc) işlevi işiniz bittiğinde, cihaz bağlam silmek için onu kullanarak.  
   
 ##  <a name="m_pdex"></a>  CPrintDialogEx::m_pdex  
  Üyeleri iletişim nesnesinin özelliklerini depolamak bir PRINTDLGEX yapısı.  
@@ -281,7 +281,7 @@ PRINTDLGEX m_pdex;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturma sonrasında bir `CPrintDialogEx` nesne kullanabileceğiniz `m_pdex` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak [DoModal](#domodal) üye işlevi. Daha fazla bilgi için `m_pdex` yapısı için bkz: [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) Windows SDK.  
+ Oluşturma sonrasında bir `CPrintDialogEx` nesne kullanabileceğiniz `m_pdex` çeşitli yönlerini çağırmadan önce iletişim kutusunda ayarlanacak [DoModal](#domodal) üye işlevi. Daha fazla bilgi için `m_pdex` yapısı için bkz: [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK.  
   
  Değiştirirseniz `m_pdex` veri üyesi doğrudan, hiçbir varsayılan davranışı geçersiz kılar.  
   
@@ -326,7 +326,7 @@ BOOL PrintRange() const;
  Bir belgedeki sayfa aralığı yalnızca yazdırılması için TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen sayfa aralıklarını gelen belirlenebilir [m_pdex](#m_pdex) (bkz `nPageRanges`, `nMaxPageRanges`, ve `lpPageRanges` içinde [PRINTDLGEX](http://msdn.microsoft.com/library/windows/desktop/ms646844) Windows SDK'sındaki yapısı).  
+ Belirtilen sayfa aralıklarını gelen belirlenebilir [m_pdex](#m_pdex) (bkz `nPageRanges`, `nMaxPageRanges`, ve `lpPageRanges` içinde [PRINTDLGEX](/windows/desktop/api/commdlg/ns-commdlg-tagpdexa) Windows SDK'sındaki yapısı).  
   
 ##  <a name="printselection"></a>  CPrintDialogEx::PrintSelection  
  Çağırdıktan sonra bu işlevi çağırın `DoModal` yalnızca şu anda seçtiğiniz öğelerin yazdırma belirlemek için.  

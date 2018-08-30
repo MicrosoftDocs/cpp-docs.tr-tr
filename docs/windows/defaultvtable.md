@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5bbbc225e4fee1aba380694fc3b39a7f59e1a294
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4cec0e02a6a61638f8aed1b4015fea065cbfd343
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611492"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207694"
 ---
 # <a name="defaultvtable"></a>defaultvtable
 
@@ -43,7 +43,7 @@ COM nesnesi için varsayılan vtable olmasını istediğiniz belirtilen arabirim
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Defaultvtable** C++ özniteliği ile aynı işlevlere sahip [defaultvtable](http://msdn.microsoft.com/library/windows/desktop/aa366795) MIDL özniteliği.
+**Defaultvtable** C++ özniteliği ile aynı işlevlere sahip [defaultvtable](/windows/desktop/Midl/defaultvtable) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

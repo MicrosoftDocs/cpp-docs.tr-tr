@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3da308e92554bd573e9efccdd47aa6e6fd71e26a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 08d7edc11584f7a7c6d2b218d9bfbbcf8d3020a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850241"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212110"
 ---
 # <a name="cmfccolorbar-class"></a>CMFCColorBar sınıfı
 `CMFCColorBar` Sınıfı, bir belge veya uygulamadaki renkleri seçebileceğiniz takma denetim çubuğunu temsil eder.  
@@ -161,11 +161,11 @@ class CMFCColorBar : public CMFCPopupMenuBar
 |`m_BoxSize`|A [CSize](../../atl-mfc-shared/reference/csize-class.md) nesnesini bir renk çubuğu kılavuzda bir hücre boyutunu belirtir.|  
 |`m_bShowDocColorsWhenDocked`|Renk çubuğu yerleştirildiğinde, belge renkleri gösterilip gösterilmeyeceğini belirten bir Boole değeri. Daha fazla bilgi için [CMFCColorBar::SetDocumentColors](#setdocumentcolors).|  
 |`m_bStdColorDlg`|Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|  
-|`m_ColorAutomatic`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) , geçerli otomatik renge depolar. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|  
+|`m_ColorAutomatic`|A [COLORREF](/windows/desktop/gdi/colorref) , geçerli otomatik renge depolar. Daha fazla bilgi için [CMFCColorBar::EnableOtherButton](#enableotherbutton).|  
 |`m_ColorNames`|Bir [CMap](../../mfc/reference/cmap-class.md) RGB birtakım ilişkilendirir nesne adlarını renkleri.|  
-|`m_colors`|A [CArray](../../mfc/reference/carray-class.md) , [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) renk çubuğu denetimde görüntülenen renkleri içeren değerleri.|  
-|`m_ColorSelected`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değer kullanıcı renk çubuğu denetimi şu anda seçili renk.|  
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) , [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değerleri içeren bir belgede şu anda kullanılan renkler.|  
+|`m_colors`|A [CArray](../../mfc/reference/carray-class.md) , [COLORREF](/windows/desktop/gdi/colorref) renk çubuğu denetimde görüntülenen renkleri içeren değerleri.|  
+|`m_ColorSelected`|A [COLORREF](/windows/desktop/gdi/colorref) değer kullanıcı renk çubuğu denetimi şu anda seçili renk.|  
+|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) , [COLORREF](/windows/desktop/gdi/colorref) değerleri içeren bir belgede şu anda kullanılan renkler.|  
 |`m_nCommandID`|Bir renk düğmesi komut kimliği bir işaretsiz tamsayı.|  
 |`m_nHorzMargin`|Yatay boşluğu kılavuz renklerin renk düğmeler arasındaki bir tamsayı.|  
 |`m_nHorzOffset`|Yatay uzaklığını rengi düğmesi ortasına bir tamsayı. Bu değer, düğme metnini veya resmi bir renk yanı sıra görüntülerse önemlidir.|  

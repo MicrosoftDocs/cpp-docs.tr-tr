@@ -55,19 +55,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45e2155f830a302f316aa96ce41b65a71709bc0d
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 5b714d8b78ecfc28db9f6e69308777ed53be7987
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451803"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210879"
 ---
 # <a name="strtok-strtokl-wcstok-wcstokl-mbstok-mbstokl"></a>strtok, _strtok_l, wcstok, _wcstok_l, _mbstok, _mbstok_l
 
-Sonraki belirteç geçerli yerel ya da geçirilen belirtilen bir yerel ayar kullanarak bir dize bulur. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).
+Sonraki belirtece, geçerli yerel ayarı veya geçirilen bir belirtilen yerel ayarı kullanarak bir dize içinde bulur. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strtok_s, _strtok_s_l, wcstok_s, _wcstok_s_l, _mbstok_s, _mbstok_s_l](strtok-s-strtok-s-l-wcstok-s-wcstok-s-l-mbstok-s-mbstok-s-l.md).
 
 > [!IMPORTANT]
-> **_mbstok** ve **_mbstok_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbstok** ve **_mbstok_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -94,31 +94,31 @@ unsigned char *_mbstok(
 ### <a name="parameters"></a>Parametreler
 
 *strToken*<br/>
-Belirteç veya belirteçler içeren dize.
+Belirteç veya belirteçleri içeren dize.
 
 *strDelimit*<br/>
-Ayırıcı karakter kümesi.
+Sınırlayıcı karakter kümesi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-İşaretçi bulunan sonraki belirteç döndüren *strToken*. Döndürmeleri **NULL** başka belirteç bulunduğunda. Her çağrı değiştirir *strToken* tarafından döndürülen belirteç sonra oluşan ilk sınırlayıcısı için bir null karakter değiştirerek.
+Bulunan sonraki belirteç için bir işaretçi döndürür *strToken*. Döndürmeleri **NULL** zaman başka belirteç bulundu. Her çağrının değiştirir *strToken* sonra döndürülen belirteci oluşan ilk sınırlayıcısı için bir null karakter koyarak tarafından.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strtok** işlev bulur sonraki belirteç *strToken*. Karakter kümesi *strDelimit* bulunamadı belirteç olası sınırlayıcılar belirtir *strToken* geçerli çağrıda. **wcstok** ve **_mbstok** joker karakter ve çok baytlı karakter sürümleri **strtok**. Bağımsız değişkenleri ve dönüş değerini **wcstok** joker karakter olan dizeleri; bu **_mbstok** çok baytlı karakter dizeleri belirtilmiştir. Bu üç işlevler aynı şekilde aksi davranır.
+**Strtok** işlevi bulur sonraki belirteç *strToken*. Karakter kümesi *strDelimit* belirteç bulunamıyor olası ayırıcısını belirtir *strToken* geçerli çağrıda. **wcstok** ve **_mbstok** geniş karakter ve çok baytlı karakter sürümleridir **strtok**. Bağımsız değişkenler ve dönüş değeri **wcstok** geniş karakterli dizelerdir; **_mbstok** çok baytlı karakter dizeleridir. Bu üç işlev aynı şekilde davranır.
 
 > [!IMPORTANT]
-> Bu işlevlerin bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler bir arabellek taşması sorunu duruma olası bir tehdit yansıtılmaz. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
-İlk çağrıda **strtok**, işlevi başında sınırlayıcıları atlar ve ilk belirteci için bir işaretçi döndürür *strToken*, bir null karakter belirteciyle sonlandırılıyor. Daha fazla belirteçleri dışında kalan ayrılabilir *strToken* çağrıları için bir dizi **strtok**. Her çağrı **strtok** değiştirir *strToken* sonrasında bir null karakter ekleyerek **belirteci** bu çağrı tarafından döndürülen. Sonraki belirtecinden okumak için *strToken*, çağrı **strtok** ile bir **NULL** değerini *strToken* bağımsız değişkeni. **NULL** *strToken* bağımsız değişkeni nedenler **strtok** sonraki belirteç değiştirilmiş aramak için *strToken*. *StrDelimit* bağımsız değişkeni, sonraki yapılan bir çağrı arasında bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
+Yapılan ilk çağrıda **strtok**, işlev önde gelen sınırlayıcılar atlar ve ilk belirteci için bir işaretçi döndürür *strToken*, sonlandırıcı null karakteri ile belirteç. Daha fazla belirteçleri dışında kalan bölünebilir *strToken* bir dizi çağrıda tarafından **strtok**. Her çağrı **strtok** değiştirir *strToken* null karakterden sonra ekleyerek **belirteci** çağrı tarafından döndürülen. Sonraki belirteçten okunacak *strToken*, çağrı **strtok** ile bir **NULL** değerini *strToken* bağımsız değişken. **NULL** *strToken* bağımsız değişken nedenleri **strtok** sonraki belirtece değiştirilmiş aranacak *strToken*. *StrDelimit* bağımsız değişkeni, bir çağrısından sonraki herhangi bir değer alabilir, böylece sınırlayıcı kümesi farklılık gösterebilir.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 > [!NOTE]
-> Her işlev dizeyi belirteçlere ayrıştırmak için bir iş parçacığı yerel statik değişkenini kullanır. Bu nedenle, birden çok iş parçacığı aynı anda istenmeyen etkileri olmadan bu işlevleri çağırabilir. Ancak, tek bir iş parçacığı içinde bu işlevler birine çağrılarını Interleaving veri bozulması ve tutarsız sonuçlar üretmek yüksek oranda olasıdır. Farklı dizeleri ayrıştırma, sonraki ayrıştırmak başlatmadan önce bir dizesini ayrıştırma tamamlayın. Ayrıca bir bu işlevlerin bir döngü içinde olduğu başka bir işlevi olarak da adlandırılır çağrılırken tehlike potansiyeli farkında olun. Bu işlevler birini kullanarak diğer işlevi sona eriyor, veri bozulması tetikleme çağrısı bir araya eklemeli sırası sonuçlanır.
+> Her işlev, dizeyi belirteçlere ayrıştırmak için bir iş parçacığına yerel statik değişken kullanır. Bu nedenle, birden çok iş parçacığı aynı anda istenmeyen etkileri olmadan bu işlevleri çağırabilir. Ancak, tek bir iş parçacığı içinde Bu işlevlerden biri çağrısına Interleaving veri bozulması ve tutarsız sonuçlar üretmesi olasılığı yüksektir. Farklı dizeleri ayrıştırma, sonraki ayrıştırılacak başlatmadan önce bir dizeyi ayrıştırma tamamlayın. Ayrıca bir döngü içinde Bu işlevlerden biri burada başka bir işlev olarak da adlandırılır çağrılırken tehlike potansiyeli farkında olun. Bu işlevlerden birini kullanarak diğer işlev sona erer, veri bozulması tetikleyen bir araya eklemeli dizisi çağrılarının sonuçlanır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -135,7 +135,7 @@ Kullanılacak yerel ayar.
 |**wcstok**|\<String.h > veya \<wchar.h >|
 |**_mbstok**, **_mbstok_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

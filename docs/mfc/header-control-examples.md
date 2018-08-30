@@ -15,15 +15,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d20cdf22a91f7c144c2bbdb96d6789ca45778994
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c0b48dc1aa1f2e966836bba8d04227f7c74d5abd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342767"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208120"
 ---
 # <a name="header-control-examples"></a>Üstbilgi Denetimine Örnekler
-Üstbilgi denetimleri örnekleri için bkz: [üstbilgi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb775238) Windows SDK.  
+Üstbilgi denetimleriyle örnekleri için bkz. [üstbilgi denetimleri](/windows/desktop/Controls/header-controls) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CHeaderCtrl kullanma](../mfc/using-cheaderctrl.md)   

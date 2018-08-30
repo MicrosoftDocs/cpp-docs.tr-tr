@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42f4a45dc2b49b784f74175203e892c253ea1f5e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9c3dff52e3607125493c956d46e1bd38c399565e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851439"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213345"
 ---
 # <a name="colepastespecialdialog-class"></a>COlePasteSpecialDialog sınıfı
 OLE Paste Special iletişim kutusu için kullanıldı.  
@@ -85,7 +85,7 @@ class COlePasteSpecialDialog : public COleDialog
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfın bir nesnesi oluşturma `COlePasteSpecialDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COlePasteSpecialDialog` nesne oluşturulur, kullanabileceğiniz [AddFormat](#addformat) ve [AddStandardFormats](#addstandardformats) Pano biçimleri ekleme iletişim kutusuna üye işlevleri. Ayrıca [m_ps](#m_ps) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_ps` OLEUIPASTESPECIAL türünü yapısıdır.  
   
- Daha fazla bilgi için [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) Windows SDK'sındaki yapısı.  
   
  Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -157,9 +157,9 @@ void AddFormat(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, standart biçim CF_TEXT veya CF_TIFF gibi veya özel biçimlerini uygulamanızı sistemi ile kayıtlı olan eklemek için çağrılabilir. Uygulamanıza veri nesnelerini yapıştırma hakkında daha fazla bilgi için bkz [veri nesneleri ve veri kaynakları: düzenleme](../../mfc/data-objects-and-data-sources-manipulation.md).  
   
- Daha fazla bilgi için [ortam türü](http://msdn.microsoft.com/library/windows/desktop/ms691227) numaralandırma türü ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [ortam türü](/windows/desktop/api/objidl/ne-objidl-tagtymed) numaralandırma türü ve [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK'sındaki yapısı.  
   
- Daha fazla bilgi için [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) listelenmiş Windows SDK'sındaki türü.  
+ Daha fazla bilgi için [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) listelenmiş Windows SDK'sındaki türü.  
   
 ##  <a name="addlinkentry"></a>  COlePasteSpecialDialog::AddLinkEntry  
  Yeni bir giriş, desteklenen Pano biçimlerini listesine ekler.  
@@ -173,7 +173,7 @@ OLEUIPASTEFLAG AddLinkEntry(UINT cf);
  Eklemek için Pano biçimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) yeni bağlantı girdinin bilgilerini içeren yapısı.  
+ Bir [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) yeni bağlantı girdinin bilgilerini içeren yapısı.  
   
 ##  <a name="addstandardformats"></a>  COlePasteSpecialDialog::AddStandardFormats  
  Uygulamanızı bir Özel Yapıştır işlemi destekleyebilir biçimlerinin listesini aşağıdaki Pano biçimlerini eklemek için bu işlevi çağırın:  
@@ -231,7 +231,7 @@ COlePasteSpecialDialog(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev yalnızca oluşturan bir `COlePasteSpecialDialog` nesne. İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
- Daha fazla bilgi için [OLEUIPASTEFLAG](http://msdn.microsoft.com/library/windows/desktop/ms682172) listelenmiş Windows SDK'sındaki türü.  
+ Daha fazla bilgi için [OLEUIPASTEFLAG](/windows/desktop/api/oledlg/ne-oledlg-tagoleuipasteflag) listelenmiş Windows SDK'sındaki türü.  
   
 ##  <a name="createitem"></a>  COlePasteSpecialDialog::CreateItem  
  Paste Special iletişim kutusunda seçilen adla yeni bir öğe oluşturur.  
@@ -264,7 +264,7 @@ virtual INT_PTR DoModal();
   
 - Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIPasteSpecial](http://msdn.microsoft.com/library/windows/desktop/ms694512) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIPasteSpecial](/windows/desktop/api/oledlg/nf-oledlg-oleuipastespeciala) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_ps](#m_ps) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
@@ -288,7 +288,7 @@ DVASPECT GetDrawAspect() const;
 ### <a name="remarks"></a>Açıklamalar  
  Sonra bu işlev yalnızca çağırma [DoModal](#domodal) IDOK döndürür.  
   
- En boy çizim daha fazla bilgi için bkz: [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK'sındaki yapısı.  
+ En boy çizim daha fazla bilgi için bkz: [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK'sındaki yapısı.  
   
 ##  <a name="geticonicmetafile"></a>  COlePasteSpecialDialog::GetIconicMetafile  
  Kullanıcı tarafından seçilen öğe ile ilişkili meta dosyası alır.  
@@ -311,7 +311,7 @@ int GetPasteIndex() const;
  Bir dizi dizine `OLEUIPASTEENTRY` kullanıcı tarafından seçilen yapılar. Yapıştırma işlemi gerçekleştirirken, seçili dizine karşılık gelen biçimde kullanılmalıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [OLEUIPASTEENTRY](http://msdn.microsoft.com/library/windows/desktop/ms690165) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTEENTRY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipasteentrya) Windows SDK'sındaki yapısı.  
   
 ##  <a name="getselectiontype"></a>  COlePasteSpecialDialog::GetSelectionType  
  Kullanıcının yapılan seçim türünü belirler.  
@@ -355,7 +355,7 @@ OLEUIPASTESPECIAL m_ps;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için [OLEUIPASTESPECIAL](http://msdn.microsoft.com/library/windows/desktop/ms692434) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIPASTESPECIAL](/windows/desktop/api/oledlg/ns-oledlg-tagoleuipastespeciala) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek OCLIENT](../../visual-cpp-samples.md)   

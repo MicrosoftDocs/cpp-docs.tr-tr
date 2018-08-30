@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c7329e7784fc5228bca5aa5b167d04ded51aaf
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 43ce702c1da30e6f624477b74e381576539ef9e0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852295"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214788"
 ---
 # <a name="example-implementing-a-property-page"></a>Örnek: özellik sayfası uygulama
 Bu örnekte derleme özelliklerini görüntüler (ve değiştirmenize izin verir) bir özellik sayfası gösterilmektedir [belge sınıfları](../mfc/document-classes.md) arabirimi.  
@@ -70,7 +70,7 @@ Bu örnekte derleme özelliklerini görüntüler (ve değiştirmenize izin verir
  Bu denetimler, dosya adını, belge ve salt okunur durumunu görüntülemek için kullanılır.  
   
 > [!NOTE]
->  İletişim kaynağını bir çerçeve veya komut düğmesi içermez ya da beklenen sekmeli görünümü yok. Bu özellikler gibi çağrılarak oluşturulan bir özellik sayfası çerçeve tarafından sağlanan [OleCreatePropertyFrame](http://msdn.microsoft.com/library/windows/desktop/ms678437).  
+>  İletişim kaynağını bir çerçeve veya komut düğmesi içermez ya da beklenen sekmeli görünümü yok. Bu özellikler gibi çağrılarak oluşturulan bir özellik sayfası çerçeve tarafından sağlanan [OleCreatePropertyFrame](/windows/desktop/api/olectl/nf-olectl-olecreatepropertyframe).  
   
 ##  <a name="vcconadding_message_handlers"></a> İleti işleyicileri ekleme  
  Kontroller varken, denetimleri birini değeri değiştiğinde sayfa kirli durumu güncelleştirmek için ileti işleyicileri ekleyebilirsiniz:  

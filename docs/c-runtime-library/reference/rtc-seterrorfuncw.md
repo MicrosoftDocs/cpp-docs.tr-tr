@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf610316c504e61d56556a20797f55d2906bca27
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea9d028454c408492378c345fb6d6c6d9dfc23cb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406920"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199597"
 ---
 # <a name="rtcseterrorfuncw"></a>_RTC_SetErrorFuncW
 
-Çalışma zamanı hata denetimleri (RTCs) raporlaması için işleyici olarak bir işlev belirler.
+Çalışma zamanı hata denetimleri (RTCs) raporlaması için işleyici olarak bir işlevi belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,41 +57,54 @@ _RTC_error_fnW _RTC_SetErrorFuncW(
 ### <a name="parameters"></a>Parametreler
 
 *İşlevi*<br/>
-Çalışma zamanı hata denetimleri işleyecek işlevi adresi.
+Çalışma zamanı hata denetimlerini işleyecek işlevin adresi.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Önceden tanımlanmış hata işlevi; veya **NULL** önceden tanımlanmış bir işlev ise.
+Önceden tanımlanmış hata işlevini; veya **NULL** önceden tanımlanmış bir işlev ise.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Yalnızca yeni kod içinde kullanma **_RTC_SetErrorFuncW**. **_RTC_SetErrorFunc** yalnızca geriye dönük uyumluluk için kitaplığında yer.
+Yeni kod içinde yalnızca kullanma **_RTC_SetErrorFuncW**. **_RTC_SetErrorFunc** yalnızca geriye dönük uyumluluk Kitaplığı'nda dahildir.
 
-**_RTC_SetErrorFuncW** , bağlı bileşen geri çağırma uygulanır, ancak genel olarak değil.
+**_RTC_SetErrorFuncW** , bağlı bileşen geri çağırma uygular, ancak genel olarak değil.
 
-Emin olmak için geçirdiğiniz adresi **_RTC_SetErrorFuncW** geçerli hata işlevi işleme olan.
+Emin olun geçirdiğiniz adresi **_RTC_SetErrorFuncW** bu işleme işlevinin geçerli bir hata oluştu.
 
-Hata -1 türünü kullanarak atanmış olan varsa [_RTC_SetErrorType](rtc-seterrortype.md), hata işlevi işleme çağrılmaz.
+Hata -1 türünü kullanarak atanıp atanmadığını [_RTC_SetErrorType](rtc-seterrortype.md), hata işleme işlevi çağrılmaz.
 
-Bu işlev aramadan önce ilk çalışma zamanı hata denetimi başlatma işlevlerinden birini çağırmanız gerekir. Daha fazla bilgi için bkz: [kullanarak çalışma zamanı denetler olmadan C çalışma zamanı kitaplığı](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).
+Bu işlev çağrı yapmadan önce ilk çalışma zamanı hata denetimini başlatma işlevlerden birini çağırmanız gerekir. Daha fazla bilgi için [kullanarak çalışma zamanı denetimleri olmadan C çalışma zamanı kitaplığı](/visualstudio/debugger/using-run-time-checks-without-the-c-run-time-library).
 
 **_RTC_error_fnW** şu şekilde tanımlanır:
 
-> **TypeDef int (__cdecl \*_RTC_error_fnW) (int** *errorType* **, const wchar_t \***  *filename* **, int***linenumber* **, const wchar_t \***  *moduleName* **, const wchar_t \***  *biçimi* **,...);** 
+```cpp
+typedef int (__cdecl * _RTC_error_fnW)(
+    int errorType,
+    const wchar_t * filename,
+    int linenumber,
+    const wchar_t * moduleName,
+    const wchar_t * format,
+    ... );
+```
 
 burada:
 
-*errorType* tarafından belirtilen hata türü [_RTC_SetErrorType](rtc-seterrortype.md).
+*ErrorType*<br/>
+Tarafından belirtilen hata türünü [_RTC_SetErrorType](rtc-seterrortype.md).
 
-*filename* hatanın oluştuğu kaynak dosyası ya da hiç hata ayıklama bilgileri kullanılabiliyorsa, null.
+*Dosya adı*<br/>
+Hatanın oluştuğu kaynak dosyası veya hata ayıklama bilgisi yok yoksa null.
 
-*LineNumber* satırda *filename* hatanın oluştuğu ya da 0 hata ayıklama bilgisi yok.
+*LineNumber*<br/>
+Satırda *filename* hatanın oluştuğu ya da 0 hata ayıklama bilgisi yok.
 
-*moduleName* DLL veya hatanın oluştuğu yürütülebilir dosya adı.
+*Modül adı*<br/>
+DLL veya yürütülebilir dosya adına hatanın oluştuğu.
 
-*Biçim* kalan parametrelerini kullanarak bir hata iletisi görüntülenecek printf stili dize. VA_ARGLIST ilk bağımsız değişkeni oluşan RTC hata sayısıdır.
+*Biçim*<br/>
+printf türü dize kalan parametrelerle bir hata iletisi görüntüler. İlk bağımsız değişkenin VA_ARGLIST oluşan RTC hata sayısıdır.
 
-Nasıl kullanılacağını gösteren bir örnek için **_RTC_error_fnW**, bkz: [yerel çalışma zamanı denetler özelleştirme](/visualstudio/debugger/native-run-time-checks-customization).
+Nasıl kullanılacağını gösteren bir örnek için **_RTC_error_fnW**, bkz: [yerel çalışma zamanı denetimleri özelleştirme](/visualstudio/debugger/native-run-time-checks-customization).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -99,7 +112,7 @@ Nasıl kullanılacağını gösteren bir örnek için **_RTC_error_fnW**, bkz: [
 |-------------|---------------------|
 |**_RTC_SetErrorFuncW**|\<rtcapi.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

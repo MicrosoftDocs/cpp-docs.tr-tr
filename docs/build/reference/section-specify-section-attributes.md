@@ -18,26 +18,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d9b0a724f0e9156c81db20bf283e4418dd2f22d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1f052d8acaceee88b6b9a727e176666180b1bb9d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379529"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214186"
 ---
 # <a name="section-specify-section-attributes"></a>/SECTION (Bölüm Özniteliklerini Belirt)
 
-> **/ SECTION:**_adı_, [[**!**] {**DEKPRSW**}] [**, HİZALA =**_numarası_]
+> **/ SECTION:**_adı_, [[**!**] {**DEKPRSW**}] [**, ALIGN =**_numarası_]
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/SECTION** seçeneği bölümün .obj dosyasını derlendiğinde ayarlanmış öznitelikler geçersiz kılma bir bölüm özniteliklerini değiştirir.
+**/SECTION** seçeneği öznitelik bölüm için .obj dosyası derlendiğinde kümesini geçersiz kılma, bir bölümün özniteliklerini değiştirir.
 
-A *bölüm* taşınabilir yürütülebilir (PE) içinde bir adlandırılmış bitişik bir kod veya veri içeren bellek bloğu dosyasıdır. Bazı bölümler, kod veya programınız bildirilen ve diğer veri bölümleri sizin için bağlayıcı ve Kitaplığı Yöneticisi (lib.exe) tarafından oluşturulur ve işletim sistemi için önemli bilgiler içeren doğrudan kullanan veri içerir. Daha fazla bilgi için bkz: [PE biçimi](https://msdn.microsoft.com/library/windows/desktop/ms680547).
+A *bölümü* adlandırılmış bir blok kod veya veri içeren belleğin bir taşınabilir yürütülebilir (PE) dosyasıdır. Bazı bölümler, kod veya programınızın bildirildi ve diğer veri bölümleri sizin için Kitaplık Yöneticisi'ni (lib.exe) ve bağlayıcı tarafından oluşturulur ve işletim sistemine önemli bilgiler içeren doğrudan kullanan veri içerir. Daha fazla bilgi için [PE biçimi](/windows/desktop/Debug/pe-format).
 
-İki nokta üst üste (:) ve bir bölüm belirtin *adı*. *Adı* büyük küçük harfe duyarlıdır.
+İki nokta üst üste (:) ve bölüm belirtin *adı*. *Adı* büyük/küçük harfe duyarlıdır.
 
-Standart adlarla çakışıyor gibi aşağıdaki adları kullanmayın. Örneğin, .sdata RISC platformlarda kullanılır:
+Bunlar standart adlarla çakışıp olarak aşağıdaki adları kullanmayın. Örneğin, .sdata RISC platformlarda kullanılır:
 
 - .arch
 
@@ -49,7 +49,7 @@ Standart adlarla çakışıyor gibi aşağıdaki adları kullanmayın. Örneğin
 
 - .idata
 
-- ve.xdata'yı
+- .pdata
 
 - .rdata
 
@@ -67,33 +67,33 @@ Standart adlarla çakışıyor gibi aşağıdaki adları kullanmayın. Örneğin
 
 - Sanal işlem bulunur
 
-Bölüm için bir veya daha fazla öznitelikleri belirtin. Aşağıda listelenen özniteliği karakterler büyük küçük harfe duyarlı değildir. Bölüm olmasını istediğiniz tüm öznitelikler belirtmeniz gerekir; belirtilmemiş bir öznitelik karakteri bu özniteliği bit kapatılmasına neden olur. R, W ya da E, varolan okuma, yazma belirtmeyin veya yürütülebilir durum değişmeden kalır varsa.
+Bölüm için bir veya daha fazla öznitelikleri belirtin. Aşağıda listelenen öznitelik karakterleri, büyük küçük harfe duyarlı değildir. Bölüm olmasını istediğiniz tüm öznitelikleri belirtmeniz gerekir; belirtilmemiş öznitelik karakteri, söz konusu öznitelik bit devre dışı bırakılması neden olur. R, G veya E, mevcut okuma, yazma belirtmeyin veya yürütülebilir durumu değişmediğinden olur.
 
-Bir öznitelik negate için kendi ünlem işareti (!) karakteriyle koyun. Öznitelik karakterleri anlamları bu tabloda gösterilmiştir:
+Bir öznitelik negatif yapılacak, ünlem işareti (!) karakteriyle koyun. Öznitelik karakterleri anlamları bu tabloda gösterilmiştir:
 
 |Karakter|Öznitelik|Açıklama|
 |---------------|---------------|-------------|
 |E|Yürütme|Yürütülebilir bir bölümdür|
-|R|Oku|Verileri okuma işlemlerine izin verir|
-|W|Write|Veri yazma işlemlerinin sağlar|
-|S|Shared|Görüntü yükleme tüm işlemler arasında bölüm paylaşır|
-|D|Discardable|Bölüm discardable olarak işaretler|
-|K|Önbelleğe alınabilir|Bölüm değil alınabilir olarak işaretler|
-|P|Disk belleğine alınabilir|Bölüm disk belleğine alınabilir değil olarak işaretler|
+|R|Oku|Veri okuma işlemlerinin sağlar|
+|W|Write|Veri yazma işlemleri sağlar.|
+|S|Shared|Resmi yüklemek tüm işlemler arasında bölümü paylaşır|
+|D|Discardable|Bölüm discardable olarak işaretler.|
+|K|Önbelleğe alınabilir|Bölüm önbelleğe alınabilir değil olarak işaretler.|
+|P|Alınabilir|Bölüm alınabilir değil olarak işaretler.|
 
-Kendisine karşılık gelen bölüm bayrakları negatif anlamda kullanılan K ve P olağan dışı bir seçenektir. Bunlardan birini .text bölümünü kullanarak belirtirseniz **/SECTION:.text, K** seçeneği, çalıştırdığınızda bölüm bayrakları fark eder [DUMPBIN](../../build/reference/dumpbin-options.md) ile [/HEADERS](../../build/reference/headers.md)seçeneği; bölüm zaten örtük olarak önbelleğe alınmadı. Varsayılan kaldırmak için belirtmek **/SECTION:.text,! K** yerine. DUMPBIN "Önbelleğe alınmaz." dahil olmak üzere, bölüm özellikleri gösterir
+K P kendisine karşılık gelen bölüm bayrakları negatif anlamda kullanılır, olağan değildir. Bunlardan biri .text bölümünü kullanarak belirtirseniz **/SECTION:.text, K** seçeneği, bölüm bayrakları fark çalıştırdığınızda [DUMPBIN](../../build/reference/dumpbin-options.md) ile [OPTIONAL](../../build/reference/headers.md)seçeneği; Bölümü örtük olarak zaten önbelleğe. Varsayılan kaldırmak için bu seçeneği belirtin **/SECTION:.text,! K** yerine. DUMPBIN "Önbelleğe alınmaz." dahil olmak üzere, bölüm özellikleri gösterir.
 
-Büyük olasılıkla E, R ya da ayarlamak W yok PE dosyasındaki bir bölümü geçersiz.
+Büyük olasılıkla E, R ya da ayarlanmış W yok PE dosyasının bir bölümünde geçersiz.
 
-**HİZALA =**_numarası_ bağımsız değişkeni belirli bir bölüm için bir hizalama değeri belirtmenize olanak sağlar. _Numarası_ bağımsız değişkeni bayt ve iki gücünü olması gerekir. Bkz: [/HİZALA](../../build/reference/align-section-alignment.md) daha fazla bilgi için.
+**HİZALA =**_numarası_ bağımsız değişkeni bir hizalama değeri belirli bir bölümü için belirtmenize olanak sağlar. _Numarası_ bağımsız değişkeni bayt ve ikinin üssü olmalıdır. Bkz: [/hizalama](../../build/reference/align-section-alignment.md) daha fazla bilgi için.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
-1. Seçenek girin **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** değişikliği uygulamak için.
+1. De seçeneği girin **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** değişikliği uygulamak için.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

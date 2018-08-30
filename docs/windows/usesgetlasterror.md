@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7921ff48adf2f987844557f9af3be5adcd6736de
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 39052024224b1a78a84b2d9503957b8fff09b96f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602768"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208297"
 ---
 # <a name="usesgetlasterror"></a>usesgetlasterror
 
@@ -36,7 +36,7 @@ Bu işlev çağrılırken bir hata ise sonra çağıran ardından çağırabilec
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](http://msdn.microsoft.com/library/windows/desktop/aa367297) MIDL özniteliği.
+**Usesgetlasterror** C++ özniteliği ile aynı işlevlere sahip [usesgetlasterror](/windows/desktop/Midl/usesgetlasterror) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

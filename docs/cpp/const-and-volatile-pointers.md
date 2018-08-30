@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e32312e8c6f3dc149f6e5e1f8dc37b1395732d02
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 52550df1ca89ec1252fc2910bf27598d51302495
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408196"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212267"
 ---
 # <a name="const-and-volatile-pointers"></a>const ve volatile İşaretçiler
 [Const](../cpp/const-cpp.md) ve [geçici](../cpp/volatile-cpp.md) anahtar sözcükleri, işaretçilerin nasıl değerlendirildiğini değiştirin. **Const** anahtar sözcüğü, işaretçinin başlatma değiştirilemez belirtir; işaretçi bundan sonra değişikliklere karşı korunur.  
@@ -96,7 +96,7 @@ errno_t strcpy_s( char *strDestination, size_t numberOfElements, const char *str
  Önceki deyim, bir işlev bildirir [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md), burada üç bağımsız değişken işaretçi türüne ikisidir **char**. Bağımsız değişkenleri başvuruya göre geçirilen değere göre işlevi her ikisini birden değiştirmek ücretsiz değil çünkü ve `strDestination` ve `strSource` varsa `strSource` olarak bildirilen değil **const**. Bildirimi `strSource` olarak **const** arayan, garantiler `strSource` çağrılan işlev tarafından değiştirilemez.  
   
 > [!NOTE]
->  Standart dönüştürme olmadığından *typename* **\*** için **const** *typename* **\***, türünde bir bağımsız değişken geçmek için yasal `char *` için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi doğru değildir; kaldırmak için örtük dönüştürme var **const** özniteliği bir nesne veya işaretçi.  
+> Standart dönüştürme olmadığından *typename* <strong>\*</strong> için **const** *typename* <strong>\*</strong>, türünde bir bağımsız değişken geçmek için yasal `char *` için [strcpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md). Ancak tersi doğru değildir; kaldırmak için örtük dönüştürme var **const** özniteliği bir nesne veya işaretçi.  
   
  A **const** belirli bir türden işaretçi aynı türden bir işaretçiye atanabilir. Ancak, bir işaretçi olmayan **const** atanamaz bir **const** işaretçi. Aşağıdaki kod, doğru ve hatalı atamaları gösterir:  
   

@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59863911072b491eb19a1296f3cb40d4f4ab4dce
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cdc5ea4c2cd1e02e6894d2dedf8470641021f0b2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214475"
 ---
 # <a name="how-to-use-build-events-in-msbuild-projects"></a>Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma
 Bir derleme olay MSBuild yapı işleminde belirli bir aşamada gerçekleştirir bir komuttur. *Derleme öncesi* olayı oluşturma başlamadan önce oluşur; *bağlama öncesi* olaylarının bağlantı adım başlatılmadan önce; ve *derleme sonrası* olay yapıdan sonra gerçekleşir başarılı bir şekilde sona erer. İlişkili derleme adımı oluşursa bir derleme olayı oluşur. Örneğin, bağlantı adım çalışmazsa bağlama öncesi olay gerçekleşmez.  
   
  Üç derleme olayların her biri bir öğe tanım grubu içinde bir command öğesi tarafından temsil edilen (`<Command>`), yürütülür ve bir ileti öğesi (`<Message>`) diğer bir deyişle olduğunda görüntülenen **MSBuild** derleme olayı gerçekleştirir. Her öğe isteğe bağlıdır ve birden çok kez aynı öğeye belirtirseniz, son oluşum önceliklidir.  
   
- İsteğe bağlı *yapı içinde kullanımı* öğesi (`<`* oluşturmak-olay ***UseInBuild**`>`) derleme olay yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *yapı içinde kullanımı* öğedir ya da `true` veya `false`. Varsayılan olarak, bir derleme olay sürece yürütülür, karşılık gelen *yapı içinde kullanımı* ayarlanır `false`.  
+ İsteğe bağlı *yapı içinde kullanımı* öğesi (`<`*derleme olay*`UseInBuild>`) derleme olay yürütülüp yürütülmeyeceğini gösteren bir özellik grubu belirtilebilir. İçeriğinin değerini bir *yapı içinde kullanımı* öğedir ya da `true` veya `false`. Varsayılan olarak, bir derleme olay sürece yürütülür, karşılık gelen *yapı içinde kullanımı* ayarlanır `false`.  
   
  Aşağıdaki tabloda, her yapı olay XML öğesi listelenmektedir:  
   

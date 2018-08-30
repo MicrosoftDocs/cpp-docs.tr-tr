@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d5907006fcff607ad91f9cf579e5bf022c02b8f0
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 9ba0930d0d1441801d18152a5ece4ace70f70425
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026997"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207343"
 ---
 # <a name="creating-an-mfc-application"></a>MFC Uygulaması Oluşturma
 Bir MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığına dayalı Windows için yürütülebilir bir uygulamadır. Bir MFC uygulaması oluşturmak için en kolay yolu MFC Uygulama Sihirbazı'nı kullanmaktır.  
@@ -59,8 +59,8 @@ Bir MFC uygulaması, Microsoft Foundation Class (MFC) kitaplığına dayalı Win
  Projeniz oluşturulduktan sonra oluşturulan dosyalar görüntüleyebileceğiniz **Çözüm Gezgini**. Projeniz için sihirbaz dosyaları hakkında daha fazla bilgi için proje tarafından oluşturulan ReadMe.txt dosyasına bakın. Dosya türleri hakkında daha fazla bilgi için bkz. [Visual C++ projeleri için oluşturulan dosya türleri](../../ide/file-types-created-for-visual-cpp-projects.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata ayıklama hazırlığı: Visual C++ Windows uygulamaları](http://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)   
+ [Hata ayıklama hazırlığı: Visual C++ Windows uygulamaları](https://msdn.microsoft.com/a8bc54de-41a3-464d-9a12-db9bdcbc1ad5)   
  [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

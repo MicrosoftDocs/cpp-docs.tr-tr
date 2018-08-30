@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b38ca29ed166f27459da5192f23accf32969465
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b9a4827900f30dba168f9f5b1b6a93c2aa7e331b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336640"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215741"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) Fırçası kapsüller.  
@@ -62,14 +62,14 @@ class CBrush : public CGdiObject
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CBrush::CreateBrushIndirect](#createbrushindirect)|Fırça stili, renk ve belirtilen desen ile başlatan bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı.|  
+|[CBrush::CreateBrushIndirect](#createbrushindirect)|Fırça stili, renk ve belirtilen desen ile başlatan bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) yapısı.|  
 |[CBrush::CreateDIBPatternBrush](#createdibpatternbrush)|Bir CİHAZDAN bağımsız bit eşlem (DIB) tarafından belirtilen desenle fırça başlatır.|  
 |[CBrush::CreateHatchBrush](#createhatchbrush)|Fırça rengi ve belirtilen taranmış deseni ile başlatır.|  
 |[CBrush::CreatePatternBrush](#createpatternbrush)|Bir bit eşlem tarafından belirtilen desenle fırça başlatır.|  
 |[CBrush::CreateSolidBrush](#createsolidbrush)|Fırça belirtilen düz renk ile başlatır.|  
 |[CBrush::CreateSysColorBrush](#createsyscolorbrush)|Varsayılan sistem renkli fırça oluşturur.|  
 |[CBrush::FromHandle](#fromhandle)|Bir işaretçi döndüren bir `CBrush` nesnesi bir işleyici için bir Windows verildiğinde `HBRUSH` nesne.|  
-|[CBrush::GetLogBrush](#getlogbrush)|Alır bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı.|  
+|[CBrush::GetLogBrush](#getlogbrush)|Alır bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) yapısı.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -131,7 +131,7 @@ explicit CBrush(CBitmap* pBitmap);
   
  Oluşturucu bağımsız değişken olmadan kullanırsanız, sonuç başlatmalıdır `CBrush` nesnesi ile [CreateSolidBrush](#createsolidbrush), [CreateHatchBrush](#createhatchbrush), [CreateBrushIndirect](#createbrushindirect), [CreatePatternBrush](#createpatternbrush), veya [CreateDIBPatternBrush](#createdibpatternbrush). Bağımsız değişken alan oluşturucular birini kullanırsanız, daha sonra başka başlatma gereklidir. Oluşturucu bağımsız değişken olmadan her zaman başarılı olur ancak, bir hatayla karşılaşılmazsa oluşturucular bağımsız değişken bir özel durum.  
   
- Tek bir oluşturucuyla [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parametresi düz fırça belirtilen rengi oluşturur. Renk RGB değeri belirtir ve WINDOWS RGB makroda ile oluşturulabilir. H  
+ Tek bir oluşturucuyla [COLORREF](/windows/desktop/gdi/colorref) parametresi düz fırça belirtilen rengi oluşturur. Renk RGB değeri belirtir ve WINDOWS RGB makroda ile oluşturulabilir. H  
   
  İki parametre oluşturucuyla tarama fırça oluşturur. *NIndex* parametresi taranmış bir desen dizinini belirtir. *CrColor* parametresi rengini belirtir.  
   
@@ -141,7 +141,7 @@ explicit CBrush(CBitmap* pBitmap);
  [!code-cpp[NVC_MFCDocView#21](../../mfc/codesnippet/cpp/cbrush-class_1.cpp)]  
   
 ##  <a name="createbrushindirect"></a>  CBrush::CreateBrushIndirect  
- Fırça stili, renk ve belirtilen desen ile başlatır bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) yapısı.  
+ Fırça stili, renk ve belirtilen desen ile başlatır bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) yapısı.  
   
 ```  
 BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
@@ -149,7 +149,7 @@ BOOL CreateBrushIndirect(const LOGBRUSH* lpLogBrush);
   
 ### <a name="parameters"></a>Parametreler  
  *lpLogBrush*  
- İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) fırça hakkında bilgi içeren yapısı.  
+ İşaret eden bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) fırça hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa sıfır dışında bir değer, aksi durumda 0.  
@@ -208,11 +208,11 @@ BOOL CreateDIBPatternBrush(
   
  Aşağıdaki Windows işlevlerini kullanma hakkında daha fazla bilgi için Windows SDK'sı bakın:  
   
-- [CreateDIBPatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183492) (Bu işlevi yalnızca 3.0'den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; kullanın `CreateDIBPatternBrushPt` işlevi.)  
+- [CreateDIBPatternBrush](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrush) (Bu işlevi yalnızca 3.0'den önceki Windows sürümleri için yazılmış uygulamalarla uyumluluk için sağlanır; kullanın `CreateDIBPatternBrushPt` işlevi.)  
   
-- [CreateDIBPatternBrushPt](http://msdn.microsoft.com/library/windows/desktop/dd183493) (Win32 tabanlı uygulamalar için bu işlevi kullanılmalıdır.)  
+- [CreateDIBPatternBrushPt](/windows/desktop/api/wingdi/nf-wingdi-createdibpatternbrushpt) (Win32 tabanlı uygulamalar için bu işlevi kullanılmalıdır.)  
   
-- [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574)  
+- [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc)  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#23](../../mfc/codesnippet/cpp/cbrush-class_3.cpp)]  
@@ -243,7 +243,7 @@ BOOL CreateHatchBrush(
 - HS_VERTICAL dikey tarama  
   
  *crColor*  
- Bir RGB rengi (tarama rengi) fırça ön plan rengini belirtir. Bkz: [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) daha fazla bilgi için Windows SDK.  
+ Bir RGB rengi (tarama rengi) fırça ön plan rengini belirtir. Bkz: [COLORREF](/windows/desktop/gdi/colorref) daha fazla bilgi için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -277,7 +277,7 @@ BOOL CreatePatternBrush(CBitmap* pBitmap);
   
  Geçerli metin ve arkaplan renklerini kullanarak tek renkli bir bit eşlem (1 Renk düzlemi, 1 bit / piksel) kullanılarak oluşturulan bir fırça çizilir. Piksel 0 olarak ayarlamak biraz tarafından temsil edilen geçerli metin rengi ile çizilir. 1 olarak ayarlanmış bir bit tarafından temsil edilen piksel arka plan rengiyle çizilir.  
   
- Kullanma hakkında bilgi için [CreatePatternBrush](http://msdn.microsoft.com/library/windows/desktop/dd183508), bir Windows işlevi, Windows SDK'sı bakın.  
+ Kullanma hakkında bilgi için [CreatePatternBrush](/windows/desktop/api/wingdi/nf-wingdi-createpatternbrush), bir Windows işlevi, Windows SDK'sı bakın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#25](../../mfc/codesnippet/cpp/cbrush-class_5.cpp)]  
@@ -291,7 +291,7 @@ BOOL CreateSolidBrush(COLORREF crColor);
   
 ### <a name="parameters"></a>Parametreler  
  *crColor*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) yapısı fırça rengini belirtir. Renk RGB değeri belirtir ve WINDOWS RGB makroda ile oluşturulabilir. H  
+ A [COLORREF](/windows/desktop/gdi/colorref) yapısı fırça rengini belirtir. Renk RGB değeri belirtir ve WINDOWS RGB makroda ile oluşturulabilir. H  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -313,7 +313,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Renk dizini belirtir. Bu değer bir 21 pencere öğeleri boyamak için kullanılan renge karşılık gelir. Bkz: [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) değerlerin listesi için Windows SDK.  
+ Renk dizini belirtir. Bu değer bir 21 pencere öğeleri boyamak için kullanılan renge karşılık gelir. Bkz: [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) değerlerin listesi için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -343,7 +343,7 @@ static CBrush* PASCAL FromHandle(HBRUSH hBrush);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa bir `CBrush` nesne zaten iliştirilmemiş tanıtıcı, geçici bir `CBrush` nesnesi oluşturulur ve bağlı. Bu geçici `CBrush` nesne geçerli uygulamanın kendi olay döngüsü içinde boşta kalma süresi varsa yalnızca zamana kadar. Şu anda tüm geçici grafik nesneler silinir. Diğer bir deyişle, yalnızca bir pencere ileti işleme sırasında geçici nesne geçerli değil.  
   
- Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
+ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri](/windows/desktop/gdi/graphic-objects) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CBrush::CBrush](#cbrush).  
@@ -357,7 +357,7 @@ int GetLogBrush(LOGBRUSH* pLogBrush);
   
 ### <a name="parameters"></a>Parametreler  
  *pLogBrush*  
- İşaret eden bir [LOGBRUSH](http://msdn.microsoft.com/library/windows/desktop/dd145035) fırça hakkında bilgi içeren yapısı.  
+ İşaret eden bir [LOGBRUSH](/windows/desktop/api/wingdi/ns-wingdi-taglogbrush) fırça hakkında bilgi içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa ve *pLogBrush* geçerli bir işaretçi dönüş değeri arabelleğe depolanan bayt sayısıdır.  
@@ -387,7 +387,7 @@ operator HBRUSH() const;
 ### <a name="remarks"></a>Açıklamalar  
  HBRUSH nesne doğrudan kullanımını destekleyen bir yayım işleciyle işlecidir.  
   
- Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri](http://msdn.microsoft.com/library/windows/desktop/dd144962) Windows SDK.  
+ Grafik nesneler kullanma hakkında daha fazla bilgi için bkz. [grafik nesneleri](/windows/desktop/gdi/graphic-objects) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#28](../../mfc/codesnippet/cpp/cbrush-class_8.cpp)]  

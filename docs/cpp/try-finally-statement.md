@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 043c11a6255e3b80fde176f1b2525e8285bbff12
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1fbdc6c2285042dc3529d837de3e4b4ffd3c4fd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464866"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215537"
 ---
 # <a name="try-finally-statement"></a>try-finally Deyimi
 **Microsoft'a özgü**  
@@ -90,7 +90,7 @@ Sonlandırma işleyicisi yürütme sırası
 ## <a name="abnormal-termination"></a>Olağan dışı sonlandırma  
  Çıkmadan bir **try-finally** using deyimi [longjmp](../c-runtime-library/reference/longjmp.md) çalışma zamanı işlevi olağan dışı sonlandırma olarak kabul edilir. Bloğuna atlamak için geçersiz bir **__try** deyimi, ancak yasal birinden dışarı atlanabilir. Tüm **__finally** kalkış noktası arasında etkin olan deyimleri (normal sonlandırılması **__try** bloğu) ve hedef ( **__except** , engelle özel durum işleme) çalıştırmanız gerekir. Bu, yerel geriye doğru izleme adı verilir.  
   
- Varsa bir **deneyin** blok blok dışında bir atlama dahil olmak üzere herhangi bir nedenle erken sonlandırılır, sistem ilişkili yürütür **son** yığın geriye doğru izleme, blok işleminin bir parçası olarak. Bu gibi durumlarda [AbnormalTermination](http://msdn.microsoft.com/library/windows/desktop/ms679265) işlevinin döndürdükleriyle **true** içinden çağrılırsa **son** engelle; Aksi halde **false**.  
+ Varsa bir **deneyin** blok blok dışında bir atlama dahil olmak üzere herhangi bir nedenle erken sonlandırılır, sistem ilişkili yürütür **son** yığın geriye doğru izleme, blok işleminin bir parçası olarak. Bu gibi durumlarda [AbnormalTermination](/windows/desktop/Debug/abnormaltermination) işlevinin döndürdükleriyle **true** içinden çağrılırsa **son** engelle; Aksi halde **false**.  
   
  Sonlandırma işleyicisi yürütülürken sonlandırılırsa bir işlem sonlandırılırsa çağrılmaz bir **try-finally** deyimi.  
   
@@ -100,4 +100,4 @@ Sonlandırma işleyicisi yürütme sırası
  [Sonlandırma işleyicisi yazma](../cpp/writing-a-termination-handler.md)   
  [Yapılandırılmış özel durum işleme (C/C++)](../cpp/structured-exception-handling-c-cpp.md)   
  [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [Sonlandırma işleyicisi söz dizimi](http://msdn.microsoft.com/library/windows/desktop/ms681393)
+ [Sonlandırma işleyicisi söz dizimi](/windows/desktop/Debug/termination-handler-syntax)

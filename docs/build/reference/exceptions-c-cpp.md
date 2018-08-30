@@ -22,21 +22,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 819f9424b2439cc49517afe54d62a8ed4f06d22d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 40a3a9e1cf1384603d6b7d95fa5960e951f932ef
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373393"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216889"
 ---
 # <a name="exceptions-cc"></a>Özel Durumlar (C/C++)
-Hataları karşılaştığında iki özel durum kodları yükseltilebilir:  
+Hataları karşılaştığında, iki özel durum kodları yükseltilebilir:  
   
 -   İçin bir **LoadLibrary** hatası  
   
 -   İçin bir **GetProcAddress** hatası  
   
- Özel durum bilgilerini şöyledir:  
+ Özel durum bilgilerini şu şekildedir:  
   
 ```  
 //  
@@ -46,9 +46,9 @@ Hataları karşılaştığında iki özel durum kodları yükseltilebilir:
 #define VcppException(sev,err)  ((sev) | (FACILITY_VISUALCPP<<16) | err)  
 ```  
   
- Oluşturulan özel durum kodları standart VcppException (error_severıty_error, ERROR_MOD_NOT_FOUND) ve VcppException (error_severıty_error, ERROR_PROC_NOT_FOUND) değerleri olur. Bir işaretçi özel durum geçirir bir **DelayLoadInfo** tarafından alınan LPDWORD değeri yapısında **GetExceptionInformation** içinde [EXCEPTION_RECORD](http://msdn.microsoft.com/library/windows/desktop/aa363082) yapısı, ExceptionInformation [0] alan.  
+ Oluşturulan özel durum kodları şunlardır: standart VcppException (error_severıty_error, ERROR_MOD_NOT_FOUND) ve VcppException (error_severıty_error, ERROR_PROC_NOT_FOUND) değerleri. İşaretçi özel durum geçirir bir **DelayLoadInfo** yapısı tarafından alınabilen LPDWORD değerindeki **Getexceptionınformation** içinde [exceptıon_record](/windows/desktop/api/winnt/ns-winnt-_exception_record) yapısı, ExceptionInformation [0] alan.  
   
- Ayrıca, yanlış BITS grAttrs alanında ayarlarsanız, özel durum ERROR_INVALID_PARAMETER atılır. Bu, için tüm intents ve purposes, önemli istisnadır.  
+ Ayrıca, yanlış BITS grAttrs alanında ayarlarsanız, özel durum ERROR_INVALID_PARAMETER oluşturulur. Bu, için tüm intents ve purposes, önemli istisnadır.  
   
  Bkz: [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md) daha fazla bilgi için.  
   

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90e0af6a1b11b114e56e6c1d87cb293ab83dd768
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 1057d8992f6554d4d5fbbfd93b383e2ddd9dab53
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131195"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211643"
 ---
 # <a name="multithreading-creating-worker-threads-in-mfc"></a>Çoklu iş parçacığı kullanımı: MFC'yi çalışan iş parçacıkları oluşturma
 İş parçacığı, kullanıcının uygulamanızı kullanmaya devam etmek için beklenecek olmaması gereken arka plan görevlerinin işlenmesi için yaygın olarak kullanılır. Yeniden hesaplama ve arka plan yazdırma gibi görevler, çalışan iş parçacıkları, iyi örneklerdir. Bu konu bir iş parçacığı oluşturmak gerekli adımları ayrıntılı olarak açıklanmaktadır. Konular şunlardır:  
@@ -46,13 +46,13 @@ Bir iş parçacığı oluşturmak göreceli olarak basit bir görevdir. İş par
   
 - Denetim işlevine iletilecek parametre.  
   
-- (İsteğe bağlı) İş parçacığının istenen önceliği. Varsayılan, normal önceliktir. Kullanılabilir öncelik düzeyleri hakkında daha fazla bilgi için bkz: [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK.  
+- (İsteğe bağlı) İş parçacığının istenen önceliği. Varsayılan, normal önceliktir. Kullanılabilir öncelik düzeyleri hakkında daha fazla bilgi için bkz: [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows SDK.  
   
 - (İsteğe bağlı) İş parçacığının istenen yığın boyutu. Oluşturulan iş parçacığıyla aynı boyutta bir yığına varsayılandır.  
   
 - (İsteğe bağlı) CREATE_SUSPENDED iş parçacığının askıya alınmış durumda oluşturulmasını istiyorsanız. Varsayılan, 0 veya iş parçacığını normal olarak başlatın.  
   
-- (İsteğe bağlı) İstenen güvenlik öznitelikleri. Varsayılan ana iş parçacığıyla aynı erişimdir. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz. [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
+- (İsteğe bağlı) İstenen güvenlik öznitelikleri. Varsayılan ana iş parçacığıyla aynı erişimdir. Bu güvenlik bilgileri biçimi hakkında daha fazla bilgi için bkz. [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) Windows SDK.  
   
 `AfxBeginThread` oluşturur ve başlatır bir `CWinThread` sizin için nesne başlar ve, daha sonra başvurduğu için adresini döndürür. Denetimleri, tüm nesnelerin düzgün bir şekilde oluşturmayı, herhangi bir bölümü başarısız olması serbest bırakıldığından emin olmak için yordam boyunca gerçekleştirilir.  
   

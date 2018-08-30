@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a36aaddd5540fc9259178ba1686960c488b4d246
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 38c76d582a6bd30c5fa3f9285bc96853f7e9d162
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462303"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199485"
 ---
 # <a name="transporting-exceptions-between-threads"></a>Özel durumları iş parçacıkları arasında taşıma
 
@@ -106,7 +106,7 @@ Aşağıdaki bölümlerde kullanarak özel durumları taşıma nasıl `exception
 
 ## <a name="exceptionptr-type"></a>exception_ptr Türü
 
-Kullanım bir `exception_ptr` geçerli özel durumu veya bir kullanıcı tarafından belirtilen özel durum örneği başvurmak için nesne. Microsoft uygulamasında, bir özel durum tarafından temsil edilen bir [exceptıon_record](https://msdn.microsoft.com/library/windows/desktop/aa363082) yapısı. Her `exception_ptr` nesne içeren bir kopyasına işaret eden bir özel durum başvuru alanı `EXCEPTION_RECORD` özel durumu temsil eden yapısı.
+Kullanım bir `exception_ptr` geçerli özel durumu veya bir kullanıcı tarafından belirtilen özel durum örneği başvurmak için nesne. Microsoft uygulamasında, bir özel durum tarafından temsil edilen bir [exceptıon_record](/windows/desktop/api/winnt/ns-winnt-_exception_record) yapısı. Her `exception_ptr` nesne içeren bir kopyasına işaret eden bir özel durum başvuru alanı `EXCEPTION_RECORD` özel durumu temsil eden yapısı.
 
 Bildirdiğinizde bir `exception_ptr` değişken, değişken herhangi bir özel durumla ilişkili değil. Diğer bir deyişle, özel durum başvuru alanı NULL olur. Böyle bir `exception_ptr` nesnesinin bir *null exception_ptr*.
 

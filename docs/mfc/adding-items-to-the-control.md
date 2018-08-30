@@ -14,23 +14,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eab0c7cb1aebf1675d078aa99941edfd9afdc5a8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a2e9434e93640de190b78e92a1f009a0ad9cbecf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341371"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214443"
 ---
 # <a name="adding-items-to-the-control"></a>Denetime Öğe Ekleme
-Liste denetimi öğeler eklemek için ([CListCtrl](../mfc/reference/clistctrl-class.md)), birkaç sürümlerinden birini çağrısı [InsertItem](../mfc/reference/clistctrl-class.md#insertitem) , hangi bilgilere bağlı olarak üye işlevi. Bir sürüm alır bir [LV_ITEM](http://msdn.microsoft.com/library/windows/desktop/bb774760) hazırlamanız yapısı. Çünkü `LV_ITEM` yapısı çok sayıda üye içeren, liste denetim öğesi özniteliklerini daha fazla denetime sahip olursunuz.  
+Öğeleri liste denetimine eklemek için ([CListCtrl](../mfc/reference/clistctrl-class.md)), çeşitli sürümlerinden birini çağırın [InsertItem](../mfc/reference/clistctrl-class.md#insertitem) hangi bilgilerin elinizde bağlı olarak üye işlevi. Bir sürüm alır bir [LV_ITEM](/windows/desktop/api/commctrl/ns-commctrl-taglvitema) hazırlamanız yapısı. Çünkü `LV_ITEM` listesi denetim öğesini özniteliklerini üzerinde daha fazla denetime sahip, yapısı birçok üye içerir.  
   
- (İn regard to rapor görünümü) iki önemli üyeleri `LV_ITEM` yapılar `iItem` ve `iSubItem` üyeleri. `iItem` Üyesidir yapısı başvurduğu öğenin sıfır tabanlı dizini ve `iSubItem` üyesi ise bir alt ya da sıfır tabanlı dizin yapısı bir öğesiyle ilgili bilgileri içerir. Bu iki üyeleriyle, öğesi, türü ve liste denetimi rapor görünümünde olduğunda görüntülenen alt bilgi değerini belirler. Daha fazla bilgi için bkz: [CListCtrl::SetItem](../mfc/reference/clistctrl-class.md#setitem).  
+ (Rapor görünümü) in regard to iki önemli üyeleri `LV_ITEM` yapılar `iItem` ve `iSubItem` üyeleri. `iItem` Yapısı başvuruyor öğenin sıfır tabanlı dizinini üyesidir ve `iSubItem` üyesi olan bir alt veya sıfır tabanlı dizin yapısı bir öğe hakkında bilgi içeriyorsa. Bu iki üyeleri ile her öğe türü ve liste denetimi rapor görünümü'nde olduğunda görüntülenen alt bilgi değerini belirler. Daha fazla bilgi için [CListCtrl::SetItem](../mfc/reference/clistctrl-class.md#setitem).  
   
- Ek üyeleri öğesi'nin metin, simge, durumu ve öğe verileri belirtin. "Öğe verileri" bir liste görünümü öğesi ile ilişkili bir uygulama tanımlı değeri. Hakkında daha fazla bilgi için `LV_ITEM` yapısı için bkz: [CListCtrl::GetItem](../mfc/reference/clistctrl-class.md#getitem).  
+ Diğer üyeleri, öğenin metin, simge, durum ve öğesi verileri belirtin. "Veri öğesi" bir liste görünümü öğesi ile ilişkili bir uygulama tanımlı değeri. Hakkında daha fazla bilgi için `LV_ITEM` yapısı için bkz: [CListCtrl::GetItem](../mfc/reference/clistctrl-class.md#getitem).  
   
- Diğer sürümleri `InsertItem` üyelerine karşılık gelen bir veya daha fazla ayrı değerleri alır `LV_ITEM` yapısı, yalnızca desteklemek istediğiniz üyeleri başlatma olanak sağlar. Genellikle, liste öğeleri için depolama liste denetimi yönetir, ancak bazı bilgiler uygulamanızda bunun yerine, "geri çağrı öğeleri" kullanarak depolayabileceğiniz Daha fazla bilgi için bkz: [geri çağrı öğeleri ve geri çağrı maskesi](../mfc/callback-items-and-the-callback-mask.md) Bu konu başlığı ve [geri çağrı öğeleri ve geri çağrı maskesi](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows SDK'sındaki.  
+ Diğer sürümleri `InsertItem` üyeleri karşılık gelen bir veya daha fazla ayrı değerler alır `LV_ITEM` yapısı, yalnızca desteklemek istediğiniz üyeleri başlatma etmenize imkan sağlar. Genellikle, liste öğeleri için depolama liste denetimi yönetir, ancak bazı bilgiler uygulamanızda bunun yerine, "geri çağrı öğeleri" kullanarak depolayabileceğiniz Daha fazla bilgi için [geri çağrı öğeleri ve geri çağrı maskesi](../mfc/callback-items-and-the-callback-mask.md) bu konudaki ve [geri çağrı öğeleri ve geri çağrı maskesi](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
   
- Daha fazla bilgi için bkz: [liste görünümü öğeleri ekleme ve alt öğeler](http://msdn.microsoft.com/library/windows/desktop/bb774736).  
+ Daha fazla bilgi için [liste görünümü öğelerini ekleme ve alt öğelerini](/windows/desktop/Controls/using-list-view-controls).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   

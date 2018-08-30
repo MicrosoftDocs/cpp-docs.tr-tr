@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81e76347e197469e4e4fa490d4ddfc42ef0fbd71
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b76525c6e10284109952ede7f5e7c70132684d75
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338088"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210970"
 ---
 # <a name="carchive-class"></a>CArchive sınıfı
 Bu nesneler silindikten sonra devam eden bir kalıcı ikili biçimde (genellikle disk depolama) karmaşık ağ nesnelerini kaydetmenizi sağlar.  
@@ -561,7 +561,7 @@ CRuntimeClass* ReadClass(
   
  Çalışma zamanı sınıfınıza kullanmalısınız [declare_serıal](../../mfc/reference/run-time-object-model-services.md#declare_serial) ve [ımplement_serıal](../../mfc/reference/run-time-object-model-services.md#implement_serial); Aksi takdirde `ReadClass` oluşturmaz bir [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).  
   
- Varsa *pSchema* NULL ise saklı sınıfın şemasıyla çağrılarak alınabilir [CArchive::GetObjectSchema](#getobjectschema); Aksi takdirde, **\**** pSchema* olur şemanın önceden depolanan çalışma zamanı sınıf içerir.  
+ Varsa *pSchema* NULL ise saklı sınıfın şemasıyla çağrılarak alınabilir [CArchive::GetObjectSchema](#getobjectschema); Aksi takdirde <strong>\*</strong>  *pSchema* daha önce depolanan çalışma zamanı sınıf şemasını içerir.  
   
  Kullanabileceğiniz [SerializeClass](#serializeclass) yerine `ReadClass`, hem okumaya hem yazmaya sınıf başvurusu işler.  
   

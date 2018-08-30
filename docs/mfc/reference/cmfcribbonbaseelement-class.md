@@ -242,12 +242,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ac1ae7ba40ead2217fd2404a243f0e02664177a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 41b5a9f936dc47852c766370d330576dc16ca58a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028401"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213668"
 ---
 # <a name="cmfcribbonbaseelement-class"></a>CMFCRibbonBaseElement sınıfı
 `CMFCRibbonBaseElement` Ekleyebileceğiniz tüm öğeler için temel sınıfı bir [Şerit çubuğuna](../../mfc/reference/cmfcribbonbar-class.md). Şerit öğelerine ait örnekler olan Şerit düğmeleri, Şerit onay kutuları ve Şerit birleşik giriş kutularıdır.  
@@ -921,7 +921,7 @@ virtual CWnd* GetParentWnd() const;
  Yöntem başarılı olursa Şerit öğesi için üst penceresine bir işaretçi; Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ana pencere bir Şerit öğesi için bir [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) veya [CMFCRibbonPanelMenuBar](http://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581).  
+ Ana pencere bir Şerit öğesi için bir [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md) veya [CMFCRibbonPanelMenuBar](https://msdn.microsoft.com/7bd4b986-8b7b-493e-9746-bd3161b78581).  
   
 ##  <a name="getpressed"></a>  CMFCRibbonBaseElement::GetPressed  
  Kullanıcı formu şu anda bastığında Şerit öğesi için bir işaretçi alır.  
@@ -1686,7 +1686,7 @@ virtual void Redraw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi çağırarak Şerit öğesi için görünen dikdörtgen çizer [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) RDW_INVALIDATE RDW_ERASE ve RDW_UPDATENOW bayraklarıyla ayarlayın.  
+ Bu yöntemi çağırarak Şerit öğesi için görünen dikdörtgen çizer [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) RDW_INVALIDATE RDW_ERASE ve RDW_UPDATENOW bayraklarıyla ayarlayın.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonBaseElement::SetACCData  
  Şerit öğesi için erişilebilirlik verilerini ayarlar.  

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d45468674d274c5f20b5533d782390cf2a6cec6
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8944ecdb4f9996800264986a7a687df6020b0591
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881402"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209939"
 ---
 # <a name="device-context-global-functions"></a>Cihaz bağlamı genel işlevleri
 Bu işlev, belirli bir cihaz için bir cihaz bağlamı oluşturur.  
@@ -29,7 +29,7 @@ Bu işlev, belirli bir cihaz için bir cihaz bağlamı oluşturur.
 |[AtlCreateTargetDC](#atlcreatetargetdc)|Bir cihaz bağlamı oluşturur.|  
   
 ##  <a name="atlcreatetargetdc"></a>  AtlCreateTargetDC  
- Belirtilen cihaz için bir cihaz bağlamı oluşturur [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) yapısı.  
+ Belirtilen cihaz için bir cihaz bağlamı oluşturur [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) yapısı.  
   
 ```
 HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);

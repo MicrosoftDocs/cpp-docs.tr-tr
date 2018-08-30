@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0519373a46e1c25feda7a3130b420c565a96eece
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c52518bc2588188ea2990ddb3be1f7d79dd461d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339549"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211903"
 ---
 # <a name="chtmleditview-class"></a>CHtmlEditView sınıfı
 MFC'nin belge/görünüm mimarisi bağlamında WebBrowser düzenleme platformu işlevlerini sağlar.  
@@ -110,7 +110,7 @@ virtual BOOL Create(
  Pencere stili özniteliklerini belirtir. Ws_vısıble ve WS_CHILD Windows stilleri varsayılan olarak ayarlanır.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı pencerenin konumunu ve boyutunu belirtme. *RectDefault* değer, yeni pencerenin konumunu ve boyutunu belirtmek Windows sağlar.  
   
  *pParentWnd*  
  Denetiminin üst penceresine bir işaretçi.  

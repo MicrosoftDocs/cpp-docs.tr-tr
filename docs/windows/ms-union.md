@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 491f6f75a87e478966d5f0fb0cbbe8fe88a42670
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4251ee7d373e7c2d3e35f65f6b83b3af28d7eecc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601914"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209204"
 ---
 # <a name="msunion"></a>ms_union
 
@@ -36,7 +36,7 @@ Nonencapsulated birleşimler ağ veri gösterimi hizalamasını denetler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ms_union** C++ özniteliği ile aynı işlevlere sahip [ms_union](http://msdn.microsoft.com/library/windows/desktop/aa367100) MIDL özniteliği.
+**Ms_union** C++ özniteliği ile aynı işlevlere sahip [ms_union](/windows/desktop/Midl/ms-union-attrib) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

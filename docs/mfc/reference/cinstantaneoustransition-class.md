@@ -1,5 +1,5 @@
 ---
-title: CInstantaneousTransition sınıfı | Microsoft Docs
+title: Cınstantaneoustransition sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76980dab9246527162e124b9ce599791b49c8a26
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: f83775e04c7b5c4c104f9790870ea067392b0bce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37038412"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209220"
 ---
-# <a name="cinstantaneoustransition-class"></a>CInstantaneousTransition sınıfı
-Anlık geçişe yalıtır.  
+# <a name="cinstantaneoustransition-class"></a>Cınstantaneoustransition sınıfı
+Bir anlık geçiş kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -56,17 +56,17 @@ class CInstantaneousTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CInstantaneousTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
+|[CInstantaneousTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Anlık bir geçiş sırasında animasyon değişkeninin değeri, geçerli değerinden anında belirtilen son değer olarak değiştirir. Bu geçiş süresini daima sıfır olur. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir anlık geçiş sırasında animasyon değişkenin değerini belirtilen son değer için geçerli değeri anında değiştirir. Bu geçiş süresi her zaman sıfırdır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
   
  [CBaseTransition](../../mfc/reference/cbasetransition-class.md)  
   
- [CInstantaneousTransition](../../mfc/reference/cinstantaneoustransition-class.md)  
+ [Cınstantaneoustransition](../../mfc/reference/cinstantaneoustransition-class.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxanimationcontroller.h  
@@ -80,7 +80,7 @@ CInstantaneousTransition(DOUBLE dblFinalValue);
   
 ### <a name="parameters"></a>Parametreler  
  *dblFinalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ##  <a name="create"></a>  CInstantaneousTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -93,14 +93,14 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_dblfinalvalue"></a>  CInstantaneousTransition::m_dblFinalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  

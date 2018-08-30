@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7dd23a1b68e4ea97eb837e009c380514230de8
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 122c9cc8f1500132f507eb3477e108c3a5c67768
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466472"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217125"
 ---
 # <a name="structured-exception-handling-cc"></a>Yapılandırılmış Özel Durum İşleme (C/C++)
 
@@ -72,7 +72,7 @@ Yığın geriye doğru izler gibi işletim sistemi her işlev için yazdığın�
 
 - [Sonlandırma İşleyicisi Yazma](../cpp/writing-a-termination-handler.md)
 
-- [C++'ta yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
+- [C++ dilinde yapılandırılmış özel durumları işleme](../cpp/exception-handling-differences.md)
 
 ## <a name="example"></a>Örnek
 
@@ -158,4 +158,4 @@ Daha fazla bilgi için [/EH (özel durum işleme modeli)](../build/reference/eh-
 [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
 [\<Özel Durum >](../standard-library/exception.md)  
 [Hatalar ve özel durum işleme](../cpp/errors-and-exception-handling-modern-cpp.md)  
-[Yapılandırılmış özel durum işleme (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  
+[Yapılandırılmış özel durum işleme (Windows)](https://msdn.microsoft.com/library/windows/desktop/ms680657.aspx)  

@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c898727504a8ae530bcdffb3e01bde68c31c8e87
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7920c8a3fe002c0d3ef9c9a64872a07ec75ebd8b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373341"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213484"
 ---
 # <a name="delay-delay-load-import-settings"></a>/DELAY (Gecikme Yükü İçe Aktarma Ayarları)
 ```  
@@ -36,25 +36,25 @@ ms.locfileid: "32373341"
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- / Delay seçeneği denetimleri [Gecikmeli yüklemesi](../../build/reference/linker-support-for-delay-loaded-dlls.md) dll:  
+ / Delay seçeneği denetimleri [Gecikmeli yükleme](../../build/reference/linker-support-for-delay-loaded-dlls.md) DLL'lerin:  
   
--   UNLOAD niteleyici DLL'i açıkça kaldırma desteklemek için gecikme yükü yardımcı işlevini söyler. Alma Adresi Tablosu'nda (IAT) özgün formuna, IAT işaretçileri geçersiz kılınması ve bunları üzerine yazılmasına neden sıfırlanır.  
+-   UNLOAD niteleyicisi gecikme yükleme yardımcı işlevine açık DLL'i kaldırma desteklemek için söyler. İçeri aktarma adres tablosu (IAT), özgün formuna IAT işaretçileri geçersiz kılınması ve bunları üzerine yazılmasına neden sıfırlanır.  
   
-     UNLOAD seçmezseniz herhangi çağrısı [FUnloadDelayLoadedDLL](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md) başarısız olur.  
+     UNLOAD belirlemezseniz herhangi çağrısı [FUnloadDelayLoadedDLL](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md) başarısız olur.  
   
--   NOBIND niteleyicisi bağlanabilirse IAT son görüntüde içermeyecek şekilde bağlayıcı söyler. Gecikmeli yüklenen DLL'ler için bağlanabilirse IAT oluşturmak için varsayılandır. Elde edilen görüntü statik olarak bağlanamaz. (Bağlanabilirse IATs görüntülerle statik olarak yürütme önce bağlanmış olabilir.) Bkz: [/bağlama](../../build/reference/bind.md).  
+-   NOBIND niteleyicisi bağlayıcıya son görüntüde bağlanabilir IAT eklememesini söyler. Gecikmeli yüklenen DLL'ler için bağlanabilir IAT oluşturmak için varsayılandır. Elde edilen görüntü statik olarak bağlanamaz. (Bağlanabilir IATs görüntülerle yürütme önce statik olarak bağlanabilir.) Bkz: [/bağlama](../../build/reference/bind.md).  
   
-     DLL bağlıysa yardımcı işlevini ilişkili bilgi arama yerine kullanmayı dener [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) her başvurulan alır. Zaman damgası veya tercih edilen adres olanlar yüklenen DLL'nin eşleşmiyorsa, yardımcı işlevini ilişkili IAT güncel değil ve ilişkili IAT yoksa olarak devam edecek varsayar.  
+     DLL bağlıysa yardımcı işlevini çağırmak yerine ilişkili bilgileri kullanmak deneyecek [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) her başvurulan alır. Zaman damgası veya tercih edilen adresi bu yüklenen DLL'nin ile eşleşmiyorsa yardımcı işlevini ilişkili IAT güncel değil ve ilişkili IAT yoksa olarak devam edecek varsayar.  
   
-     Yükleme süresi dll programınızı büyük olacak şekilde görüntü ancak hızlandırabilir NOBIND neden olur. Hiçbir zaman DLL bağlamak istiyorsanız, NOBIND oluşturulmasını önler ilişkili IAT engeller.  
+     Programınızı büyük olacak şekilde görüntü ancak hızlandırabilirsiniz NOBIND nedenleri DLL'nin zaman yükleyin. Hiçbir zaman DLL'yi bağlamak istiyorsanız, NOBIND ilişkili IAT oluşturulmasını engeller.  
   
- Gecikme yükü DLL'lerini belirtmek için kullanın [/DELAYLOAD](../../build/reference/delayload-delay-load-import.md) seçeneği.  
+ Gecikme yükü DLL'lerini belirtmek için kullanın [/delayload](../../build/reference/delayload-delay-load-import.md) seçeneği.  
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri**, **bağlayıcı**ve ardından **Gelişmiş**.  
+2.  Genişletin **yapılandırma özellikleri**, **bağlayıcı**ve ardından **Gelişmiş**.  
   
 3.  Değiştirme **Gecikmeli yüklenen DLL'i** özelliği.  
   

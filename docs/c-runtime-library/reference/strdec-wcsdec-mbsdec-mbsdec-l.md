@@ -50,19 +50,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c73813c406011eaadd540398d3364ec183f8deaf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7a700d6e7befb71b1161ec27beb7a839f93e003e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414223"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211480"
 ---
 # <a name="strdec-wcsdec-mbsdec-mbsdecl"></a>_strdec, _wcsdec, _mbsdec, _mbsdec_l
 
-Bir dize işaretçi bir karakter geriye taşır.
+Bir dize işaretçisine bir karakter geri taşır.
 
 > [!IMPORTANT]
-> **mbsdec** ve **mbsdec_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **mbsdec** ve **mbsdec_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,29 +88,29 @@ unsigned char *_mbsdec_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Başlat*<br/>
-Herhangi bir karakter işaretçisine (veya **_mbsdec** ve **mbsdec_l**, herhangi bir birden çok baytlı karakter ilk baytını) kaynak dizesinde; *Başlat* gelmelidir *geçerli* kaynak dizesi içinde.
+*Başlangıç*<br/>
+Herhangi bir karaktere bir işaretçi (veya **_mbsdec** ve **mbsdec_l**, herhangi bir karakterin ilk baytı); kaynak dizede *Başlat* gelmelidir *geçerli* kaynak dizedeki.
 
 *Geçerli*<br/>
-Herhangi bir karakter işaretçisine (veya **_mbsdec** ve **mbsdec_l**, herhangi bir birden çok baytlı karakter ilk baytını) kaynak dizesinde; *geçerli* izlemelisiniz *Başlat* kaynak dizesi içinde.
+Herhangi bir karaktere bir işaretçi (veya **_mbsdec** ve **mbsdec_l**, herhangi bir karakterin ilk baytı); kaynak dizede *geçerli* izlemelidir *Başlat* kaynak dizedeki.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsdec**, **mbsdec_l**, **_strdec**, ve **_wcsdec** hemen önce gelen karakter her iade bir işaretçi *geçerli*; **_mbsdec** döndürür **NULL** varsa değerini *Başlat* büyük veya eşit *geçerli*. **_tcsdec** bu işlevleri ve dönüş değerini birine eşlemeleri eşlemesini bağlıdır.
+**_mbsdec**, **mbsdec_l**, **_strdec**, ve **_wcsdec** her bir işaretçi döndürür hemen önce gelen karakterin *geçerli*; **_mbsdec** döndürür **NULL** varsa değerini *Başlat* büyük veya ona eşit olan *geçerli*. **_tcsdec** maps bu işlevler ve dönüş değerinin birine eşlemeye bağımlı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsdec** ve **mbsdec_l** işlevler hemen önce gelen birden çok baytlı karakter ilk bayta kalan için bir işaretçi döndürür *geçerli* içeren dize olarak *Başlat*.
+**_Mbsdec** ve **mbsdec_l** işlevleri hemen önce gelen çok baytlı karakterin ilk baytına bir işaretçi döndürür *geçerli* içeren bir dize içinde *Başlat*.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için.  **_mbsdec** şu anda kullanımda olan yerel göre çok baytlı karakter sıralarının tanıdığı sırada **mbsdec_l** yerine geçirilen yerel ayar parametresi kullanır dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için.  **_mbsdec** çok baytlı karakter sıralarını şu anda kullanılmakta olan yerel ayara göre tanır ancak **mbsdec_l** bunun yerine iletilen yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Varsa *Başlat* veya *geçerli* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
+Varsa *Başlat* veya *geçerli* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür **EINVAL** ve ayarlar **errno** için **EINVAL**.
 
 > [!IMPORTANT]
-> Bu işlevler taşması tehditlerine karşı savunmasız olabilir. Arabellek aşırı çalıştırmaları unwarranted ayrıcalıkların nedeni sistem saldırıları için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler, arabellek taşma tehditlerine açık olabilir. Arabellek taşmaları, bir unwarranted ayrıcalık yükselmesine neden olabileceği için sistem saldırıları için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -118,24 +118,24 @@ Varsa *Başlat* veya *geçerli* olan **NULL**, açıklandığı gibi geçersiz p
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsdec**|**_strdec**|**_mbsdec**|**_wcsdec**|
 
-**_strdec** ve **_wcsdec** tek bayt karakter ve joker karakter sürümleri **_mbsdec** ve **mbsdec_l**. **_strdec** ve **_wcsdec** yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır.
+**_strdec** ve **_wcsdec** tek baytlık karakter ve geniş karakterli sürümleridir **_mbsdec** ve **mbsdec_l**. **_strdec** ve **_wcsdec** yalnızca bu eşleşmeye ilişkin sağlanırlar ve aksi takdirde kullanılmamalıdır.
 
-Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
+Daha fazla bilgi için [genel metin eşlemelerini kullanma](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı başlık|
 |-------------|---------------------|---------------------|
 |**_mbsdec**|\<Mbstring.h >|\<Mbctype.h >|
 |**_mbsdec_l**|\<Mbstring.h >|\<Mbctype.h >|
 |**_strdec**|\<Tchar.h >||
 |**_wcsdec**|\<Tchar.h >||
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, bir kullanımını gösterir **_tcsdec**.
+Aşağıdaki örnek, kullanımını gösterir. **_tcsdec**.
 
 ```cpp
 // crt_tcsdec.cpp
@@ -161,7 +161,7 @@ int main()
 }
 ```
 
-Aşağıdaki örnek, bir kullanımını gösterir **_mbsdec**.
+Aşağıdaki örnek, kullanımını gösterir. **_mbsdec**.
 
 ```cpp
 // crt_mbsdec.cpp

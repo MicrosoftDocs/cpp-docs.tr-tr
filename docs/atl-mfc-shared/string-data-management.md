@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b42f637c487e27b8658bcd09389eec940bb1df05
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: b4e82671973f2d841c6c0797fb73ad582ce203f1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880222"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214353"
 ---
 # <a name="string-data-management"></a>Dize veri yönetimi
 Visual C++ dize verileri yönetmek için birçok yol sağlar:  
@@ -67,7 +67,7 @@ Visual C++ dize verileri yönetmek için birçok yol sağlar:
  A `CString` nesne depolayabileceğiniz INT_MAX (2,147,483,647) karakter. TCHAR veri türünü almak veya içindeki karakterlerin tek tek ayarlamak için kullanılan bir `CString` nesne. Karakter dizilerini aksine `CString` sınıfında yerleşik bellek ayırma yeteneği. Böylece `CString` gerektiğinde otomatik olarak büyütmeyi nesneleri (diğer bir deyişle, büyüyen hakkında endişelenmeniz gerekmez bir `CString` uzun dizeler uyacak şekilde nesnesi).  
   
 ##  <a name="_core_cstrings_and_const_char_pointers"></a> CStrings ve const char işaretçiler  
- A `CString` nesne ayrıca bir C stili, dize gibi hareket edebilir (bir `PCXSTR`, aynı olduğu **const char\***  Unicode altında ise). [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) dönüştürme işleci verir `CString` nesneleri serbestçe işlev çağrılarında karakter işaretçileri yerine kullanılacak. **CString (LPCWSTR** `pszSrc` **)** Oluşturucu için değiştirilecek karakter işaretçileri tanır `CString` nesneleri.  
+ A `CString` nesne ayrıca bir C stili, dize gibi hareket edebilir (bir `PCXSTR`, aynı olduğu **const char** <strong>\*</strong> Unicode altında ise). [CSimpleStringT::operator PCXSTR](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) dönüştürme işleci verir `CString` nesneleri serbestçe işlev çağrılarında karakter işaretçileri yerine kullanılacak. **CString (LPCWSTR** `pszSrc` **)** Oluşturucu için değiştirilecek karakter işaretçileri tanır `CString` nesneleri.  
   
  Katlama için hiç girişimde `CString` nesneleri. İki yaparsanız `CString` içeren nesneleri `Chicago`, örneğin, karakterleri `Chicago` iki yerde saklanır. (, Ona bağımlı olmaması için bu MFC, gelecek sürümlerinde doğru olmayabilir.)  
   

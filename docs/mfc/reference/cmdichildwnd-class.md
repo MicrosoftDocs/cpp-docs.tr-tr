@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe649a3ca8ef0fb5e0091136fc9160ac89c248a1
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 4d31392a59707e5a7d072615ed7c930eaf1e14b9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338668"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207634"
 ---
 # <a name="cmdichildwnd-class"></a>Cmdıchildwnd sınıfı
 Bir Windows işlevlerini birden çok Belgeli Arabirim (MDI) alt penceresi ve pencereyi yönetmek için üyeleri sağlar.  
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *lpszClassName*  
- Windows sınıf adları null ile sonlandırılmış dizeye işaret (bir [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı). Sınıf adı ile kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlev. Standart için NULL olmalıdır `CMDIChildWnd`.  
+ Windows sınıf adları null ile sonlandırılmış dizeye işaret (bir [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı). Sınıf adı ile kayıtlı herhangi bir ad olabilir [AfxRegisterWndClass](application-information-and-management.md#afxregisterwndclass) genel işlev. Standart için NULL olmalıdır `CMDIChildWnd`.  
   
  *lpszWindowName*  
  Pencere adının temsil eden bir boş sonlandırılmış karakter dizesi işaret eder. Başlık çubuğunu metin olarak kullanılır.  

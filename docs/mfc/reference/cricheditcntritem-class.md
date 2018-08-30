@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a0566ef5eead5950f2b4de1f6e1a220f79bcfbe
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 17f50f5e4fb8b9330a09d4964aa99fbf01f4b34d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849333"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206977"
 ---
 # <a name="cricheditcntritem-class"></a>Cricheditcntrıtem sınıfı
 İle [CRichEditView](../../mfc/reference/cricheditview-class.md) ve [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md), MFC'nin belge görüntüleme mimarisi bağlamında zengin düzenleme denetimi işlevlerini sağlar.  
@@ -84,7 +84,7 @@ CRichEditCntrItem(
   
 ### <a name="parameters"></a>Parametreler  
  *preo*  
- İşaretçi bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğesini tanımlayan yapısı. Yeni `CRichEditCntrItem` nesne bu OLE öğesini yapılandırılmıştır. Varsa *preo* NULL ise istemci öğesi boş.  
+ İşaretçi bir [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE öğesini tanımlayan yapısı. Yeni `CRichEditCntrItem` nesne bu OLE öğesini yapılandırılmıştır. Varsa *preo* NULL ise istemci öğesi boş.  
   
  *Implement_serıalıze*  
  Bu öğeyi içeren kapsayıcı belge işaretçisi. Varsa *Implement_serıalıze* null, açıkça çağırmalıdır [COleDocument::AddItem](../../mfc/reference/coledocument-class.md#additem) belge bu istemci öğesi eklemek için.  
@@ -92,10 +92,10 @@ CRichEditCntrItem(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, tüm OLE başlatma gerçekleştirmez.  
   
- Daha fazla bilgi için [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) Windows SDK'sındaki yapısı.  
   
 ##  <a name="synctoricheditobject"></a>  CRichEditCntrItem::SyncToRichEditObject  
- Cihaz yönü eşitlemek için bu işlevi çağırın [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318), bu `CRichEditCntrltem` tarafından belirtilen için *yeniden a*.  
+ Cihaz yönü eşitlemek için bu işlevi çağırın [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect), bu `CRichEditCntrltem` tarafından belirtilen için *yeniden a*.  
   
 ```  
 void SyncToRichEditObject(REOBJECT& reo);
@@ -103,10 +103,10 @@ void SyncToRichEditObject(REOBJECT& reo);
   
 ### <a name="parameters"></a>Parametreler  
  *yeniden a*  
- Başvuru bir [REOBJECT](http://msdn.microsoft.com/library/windows/desktop/bb787946) OLE öğesini tanımlayan yapısı.  
+ Başvuru bir [REOBJECT](/windows/desktop/api/richole/ns-richole-_reobject) OLE öğesini tanımlayan yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) Windows SDK.  
+ Daha fazla bilgi için [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek WORDPAD](../../visual-cpp-samples.md)   

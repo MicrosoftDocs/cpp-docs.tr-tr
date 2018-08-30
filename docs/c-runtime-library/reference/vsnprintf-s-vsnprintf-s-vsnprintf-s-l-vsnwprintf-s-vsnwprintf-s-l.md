@@ -49,16 +49,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66fd7c468e516c25e2c2b408b8c1112061eeb5e0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 17bc6d95aae70c6297836d7353deafb6a4480407
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417948"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212975"
 ---
 # <a name="vsnprintfs-vsnprintfs-vsnprintfsl-vsnwprintfs-vsnwprintfsl"></a>vsnprintf_s, _vsnprintf_s, _vsnprintf_s_l, _vsnwprintf_s, _vsnwprintf_s_l
 
-Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıktı yazma. Sürümleri bunlar [vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Bağımsız değişkenler listesine bir işaretçi kullanarak biçimlendirilmiş çıktı yazın. Bunlar sürümleridir [vsnprintf, _vsnprintf, _vsnprintf_l, _vsnwprintf, _vsnwprintf_l](vsnprintf-vsnprintf-vsnprintf-l-vsnwprintf-vsnwprintf-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -122,54 +122,54 @@ int _vsnwprintf_s(
 Çıktı için depolama konumu.
 
 *sizeOfBuffer*<br/>
-Boyutunu *arabellek* karakter sayısı olarak çıktı.
+Boyutu *arabellek* çıkışını karakter sayısı için.
 
 *Sayısı*<br/>
-(Sonlandırma null dahil değil), yazmak için karakter üst sınırını veya [_TRUNCATE](../../c-runtime-library/truncate.md).
+En fazla (Sonlandırıcı null içermeden), yazılacak karakter sayısı veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-İşaretçi bağımsız değişken listesi.
+Bağımsız değişkenler listesine işaretçi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtimleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**vsnprintf_s**, **_vsnprintf_s** ve **_vsnwprintf_s** çıkış hata oluşursa sonlandırma null veya negatif bir değer içermeyen yazılan karakterlerin sayısını döndürür. **vsnprintf_s** aynıdır **_vsnprintf_s**. **vsnprintf_s** ANSI standart uyumluluk için bulunmaktadır. **_vnsprintf** geriye dönük uyumluluk için tutulmaktadır.
+**vsnprintf_s**, **_vsnprintf_s** ve **_vsnwprintf_s** bir hata oluşursa, sonlandırıcı null veya negatif bir değer içermeyen yazılan karakter sayısını döndürür. **vsnprintf_s** aynıdır **_vsnprintf_s**. **vsnprintf_s** ANSI standardı için uyumluluk için dahildir. **_vnsprintf** geriye dönük uyumluluk için tutulmaktadır.
 
-Veri ve bir sonlandırma null depolamak için gerekli depolama aşarsa *sizeOfBuffer*, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md)sürece *sayısı*  olan [_TRUNCATE](../../c-runtime-library/truncate.md), bu durumda büyük bir dize olarak uygun *arabellek* yazılır ve döndürülen -1. Geçersiz parametre işleyicisi sonra yürütme devam ederse, bu işlevler kümesi *arabellek* boş bir dize olarak ayarlayın **errno** için **ERANGE**ve -1 döndürür.
+Veri ve sonlandırıcı bir null depolamak için gereken depolama alanı aşarsa *sizeOfBuffer*, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md)sürece *sayısı*  olduğu [_TRUNCATE](../../c-runtime-library/truncate.md), bu durumda çok dize olarak sığacak *arabellek* yazılır ve -1 döndürdü. Geçersiz parametre işleyicisi sonra yürütülmesine devam ederse, bu işlevler kümesi *arabellek* boş bir dize olarak ayarlanmış **errno** için **ERANGE**ve -1 döndürür.
 
-Varsa *arabellek* veya *biçimi* olan bir **NULL** işaretçisi veya *sayısı* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır. Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
+Varsa *arabellek* veya *biçimi* olduğu bir **NULL** işaretçisi veya *sayısı* küçük veya ona eşit sıfır olarak geçersiz parametre işleyicisi çağrılır. Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve -1 döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|**Koşul**|Döndür|**errno**|
+|**Koşul**|döndürülecek|**errno**|
 |-----------------|------------|-------------|
-|*Arabellek* olan **NULL**|-1|**EINVAL**|
-|*Biçim* olan **NULL**|-1|**EINVAL**|
-|*Count* < = 0|-1|**EINVAL**|
-|*sizeOfBuffer* çok küçük (ve *sayısı* ! = **_TRUNCATE**)|-1 (ve *arabellek* boş bir dize olarak ayarlayın)|**ERANGE**|
+|*Arabellek* olduğu **NULL**|-1|**EINVAL**|
+|*Biçim* olduğu **NULL**|-1|**EINVAL**|
+|*sayısı* < = 0|-1|**EINVAL**|
+|*sizeOfBuffer* çok küçük (ve *sayısı* ! = **_TRUNCATE**)|-1 (ve *arabellek* boş bir dize olarak ayarlanmış)|**ERANGE**|
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve en fazla Yazar *sayısı* tarafından verilen verileri belleğe karakterlerinden işaret için *arabellek* ve bir sonlandırma null ekler.
+Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır sonra biçimlendirir ve en fazla Yazar *sayısı* bellek belirtilen verileri karakteri tarafından işaret edilen *arabellek* ve sonlandırıcı bir null ekler.
 
-Varsa *sayısı* olan [_TRUNCATE](../../c-runtime-library/truncate.md), daha uygun şekilde dize olarak bu işlevler yazma sonra *arabellek* sonlandırma null yer bırakarak oluştu. Varsa tüm dizesiyle (sonlandırma null) sığacak *arabellek*, sonra bu işlevler (sonlandırma null dahil değil) yazılmış karakterlerin sayısını döndürür; Aksi takdirde, bu işlevler, kesme belirtmek için -1 Döndür oluştu.
+Varsa *sayısı* olduğu [_TRUNCATE](../../c-runtime-library/truncate.md), bu işlevler daha uygun şekilde dize olarak yazın ardından *arabellek* bir sonlandırıcı null yer bırakmak çalışırken. Tüm dize (Sonlandırıcı null ile) sığacak *arabellek*, ardından bu işlevler (Sonlandırıcı null içermeden) yazılan karakter sayısını döndürür; Aksi takdirde, bu işlevler, kesme belirtmek için -1 döndürür oluştu.
 
-Bu işlevleri sürümlerini **_l** soneki, geçerli iş parçacığı yerel ayar yerine geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine, geçerli iş parçacığı yerel ayarı yerine iletilen yerel ayar parametresini kullanmalarıdır.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 > [!NOTE]
-> Sonlandırma boş yer olduğundan emin olmak için olduğundan emin olun *sayısı* arabellek uzunluğundan ya da kullanım değerinden kesinlikle küçük olan **_TRUNCATE**.
+> Sonlandırıcı null yer olduğundan emin olmak için olduğundan emin olun *sayısı* arabellek uzunluğu veya kullanım kesinlikle küçük olan **_TRUNCATE**.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -180,15 +180,15 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 
 ## <a name="requirements"></a>Gereksinimler
 
-|Yordam|Gerekli başlık|İsteğe bağlı üstbilgi|
+|Yordam|Gerekli başlık|İsteğe bağlı üst bilgiler|
 |-------------|---------------------|----------------------|
-|**vsnprintf_s**|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|
-|**_vsnprintf_s**, **_vsnprintf_s_l**|\<stdio.h > ve \<stdarg.h >|\<VarArgs.h > *|
-|**_vsnwprintf_s**, **_vsnwprintf_s_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<VarArgs.h > *|
+|**vsnprintf_s**|\<stdio.h > ve \<stdarg.h >|\<XENIX > *|
+|**_vsnprintf_s**, **_vsnprintf_s_l**|\<stdio.h > ve \<stdarg.h >|\<XENIX > *|
+|**_vsnwprintf_s**, **_vsnwprintf_s_l**|\<stdio.h > veya \<wchar.h >, ve \<stdarg.h >|\<XENIX > *|
 
-\* UNIX V uyumluluk için gereklidir.
+\* UNIX V uyumluluğu için gerekli.
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -224,7 +224,7 @@ nSize: -1, buff: Hi there!
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [vprintf İşlevleri](../../c-runtime-library/vprintf-functions.md)<br/>
 [fprintf, _fprintf_l, fwprintf, _fwprintf_l](fprintf-fprintf-l-fwprintf-fwprintf-l.md)<br/>
 [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md)<br/>

@@ -17,21 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d665ae37bfc843fc2ab0f24fe4489b76935e62d2
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 7f9ba5360ddce81061bf73839e1700fed57c9fa7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956271"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210409"
 ---
 # <a name="tree-control-label-editing"></a>Ağaç Denetimi Etiketini Düzenleme
-Kullanıcı ağaç denetimindeki öğeleri etiketleri doğrudan düzenleyebilirsiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) olan **TVS_EDITLABELS** stili. Kullanıcı odaklı öğenin etiketini tıklatarak düzenleme başlar. Bir uygulama kullanarak düzenleme başlar [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) üye işlevi. Ağaç denetimi bildirim düzenlerken başlar ve ne zaman, iptal tamamlandı veya gönderir. Düzenleme tamamlandığında, uygunsa, öğenin etiketi güncelleştirmek için sorumludur.  
+Kullanıcı, doğrudan bir ağaç denetimindeki öğelerin etiketleri düzenleyebilir ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) olan **TVS_EDITLABELS** stili. Kullanıcı odaklı bir öğenin etiketini tıklayarak düzenleme başlar. Bir uygulama kullanarak düzenleme başlamadan [EditLabel](../mfc/reference/ctreectrl-class.md#editlabel) üye işlevi. Ağaç denetimi bildirim düzenlerken başlar ve ne zaman, iptal edildi veya tamamlandı gönderir. Düzenleme işlemi tamamlandığında uygunsa öğenin etiket güncelleştirmek için sorumlu olursunuz.  
   
- Etiket düzenleme başladığı, ağaç denetimi gönderir bir [TVN_BEGINLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773506) bildirim iletisi. Bu bildirim işleyerek bazı etiketlerini düzenleme izni ve diğer düzenleme engelleyebilirsiniz. 0 döndürme düzenleme olanağı sağlar ve sıfır olmayan döndürme engeller.  
+ Etiket düzenleme başladığı, bir ağaç denetimi gönderen bir [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) bildirim iletisi. Bu bildirim işleyerek, bazı etiketler, düzenlemeye izin ver ve diğer düzenlememeyi önleyecek. 0 döndüren düzenlenmesini sağlar ve sıfır olmayan döndüren engeller.  
   
- Ağaç denetimi etiketini düzenleme tamamlandı ya da iptal edildiğinde, gönderen bir [TVN_ENDLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773515) bildirim iletisi. *LParam* parametredir adresini bir [NMTVDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb773418) yapısı. **Öğesi** üye olduğu bir [TVITEM](http://msdn.microsoft.com/library/windows/desktop/bb773456) öğesi tanımlar ve düzenlenmiş metni içeren yapısı. Öğenin etiketi, uygunsa, belki de düzenlenen dize doğrulamadan sonra güncelleştirmek için sorumlu. *PszText* üyesi `TV_ITEM` düzenlemeyi iptal ederseniz 0'dır.  
+ Bir ağaç denetimi etiketini düzenleme tamamlandı ya da iptal edildiğinde, gönderen bir [TVN_ENDLABELEDIT](/windows/desktop/Controls/tvn-endlabeledit) bildirim iletisi. *LParam* parametredir adresini bir [NMTVDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvdispinfoa) yapısı. **Öğesi** üyesi olan bir [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) öğeyi tanımlayan ve düzenlenmiş metni içeren yapısı. Öğenin etiketi, uygunsa, belki de düzenlenen dize doğruladıktan sonra güncelleştirmek için sorumlu olursunuz. *PszText* üyesi `TV_ITEM` düzenleme iptal edilirse 0'dır.  
   
- Etiket, genellikle yanıt olarak düzenleme sırasında [TVN_BEGINLABELEDIT](http://msdn.microsoft.com/library/windows/desktop/bb773506) bildirim iletisini kullanarak etiketi düzenlemek için kullanılan düzenleme denetimine işaretçi alabilirsiniz [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) üyesi işlev. Düzenle denetim çağırabilirsiniz [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) bir kullanıcının girebileceği metin ya da alt müdahale ve geçersiz karakterler atmak için düzenleme denetimi miktarını sınırlamak için üye işlevi. Ancak, düzenleme denetimi yalnızca görüntülendiğine dikkat edin *sonra* **TVN_BEGINLABELEDIT** gönderilir.  
+ Etiket, genellikle yanıt olarak düzenleme sırasında [TVN_BEGINLABELEDIT](/windows/desktop/Controls/tvn-beginlabeledit) bildirim iletisini kullanarak etiketi düzenlemek için kullanılan düzenleme denetimi için bir işaretçi alabilirsiniz [GetEditControl](../mfc/reference/ctreectrl-class.md#geteditcontrol) üyesi işlev. Düzenleme denetiminin çağırabilirsiniz [SetLimitText](../mfc/reference/cedit-class.md#setlimittext) bir kullanıcının girebileceği metin ya da alt kesecek ve atmak geçersiz karakterler düzenleme denetimine miktarını sınırlamak için üye işlevi. Ancak, düzenleme denetiminin yalnızca görüntülendiğini unutmayın *sonra* **TVN_BEGINLABELEDIT** gönderilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   

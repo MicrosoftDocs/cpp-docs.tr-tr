@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9cef186c18622dc361f97bd65e7bd264a6f03cf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2abd889584ce39627153d6eac59db9240367ba20
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214397"
 ---
 # <a name="how-to-copy-resources"></a>Nasıl Yapılır: Kaynakları Kopyalama
 
@@ -37,7 +37,7 @@ Kaynakları bir dosyadan başka değişiklik yapmadan kopyalayabilir veya yapabi
 Kolayca kaynakları bir var olan bir kaynak veya yürütülebilir dosyanın geçerli kaynak dosyaya kopyalayabilirsiniz. Bunu yapmak için kaynakları içeren aynı anda hem dosyaları açmak ve öğeleri bir dosyadan sürükleyin veya kopyalayıp iki dosya arasında. Bu yöntem, kaynak betiği (.rc) dosyalarını ve kaynak şablonu (.rct) dosyaları, ek olarak yürütülebilir (.exe) dosyaları çalışır.
 
 > [!NOTE]
-> Visual C++, kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için [küçük: ortak kaynaklar](http://msdn.microsoft.com/9bac2891-b6b3-49ec-a287-cec850c707e0).
+> Visual C++, kendi uygulamanızda kullanabileceğiniz örnek kaynak dosyalarını içerir. Daha fazla bilgi için [küçük: ortak kaynaklar](https://msdn.microsoft.com/9bac2891-b6b3-49ec-a287-cec850c707e0).
 
 Açık olan .rc dosyası arasında sürükle ve bırak yöntemi kullanabileceğiniz [proje dışında](../windows/how-to-open-a-resource-script-file-outside-of-a-project-standalone.md).
 

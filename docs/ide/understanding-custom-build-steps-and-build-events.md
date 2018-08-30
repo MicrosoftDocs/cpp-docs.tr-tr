@@ -21,32 +21,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a50c0cf224104f720a73a4830405e7114cda74ed
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 16c1bdf088e0545292a672458c066364b5a47ff4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33338773"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206301"
 ---
 # <a name="understanding-custom-build-steps-and-build-events"></a>Özel Derleme Adımlarını ve Derleme Olaylarını Anlama
-Gelen Visual C++ geliştirme ortamında yapı işlemi özelleştirmek için üç temel yolu vardır:  
+Gelen Visual C++ geliştirme ortamında, yapı işleminizi özelleştirmek için üç temel yolu vardır:  
   
  **Özel derleme adımları**  
- Özel derleme adımı, projeyle ilişkili bir yapı kuralıdır. Özel derleme adımı yürütmek için herhangi bir ek giriş veya çıkış dosyaları ve görüntülenecek bir ileti bir komut satırını belirtebilirsiniz. Daha fazla bilgi için bkz: [nasıl yapılır: MSBuild projelerine özel derleme bir adım ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md).  
+ Özel derleme adımı, projeyle ilişkili bir derleme kuralıdır. Özel derleme adımı yürütmek için herhangi bir ek giriş veya çıkış dosyalarını ve görüntülenecek bir ileti bir komut satırı belirtebilirsiniz. Daha fazla bilgi için [nasıl yapılır: MSBuild projelerine özel derleme adımı ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md).  
   
  **Özel derleme araçları**  
- Özel derleme aracı, bir veya daha fazla ile ilişkili bir yapı kuralıdır. Özel derleme adımı birinde sonuçları bir özel derleme aracı için giriş dosyaları geçirebilir veya daha fazla çıkış dosyaları. Örneğin, bir MFC uygulamasında Yardım dosyalarını özel derleme aracıyla oluşturulur. Daha fazla bilgi için bkz: [nasıl yapılır: özel derleme araçları ekleme'MSBuild projelerine](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) ve [özel derleme araçlarını belirtme](../ide/specifying-custom-build-tools.md).  
+ Özel derleme aracı, bir veya daha fazla dosya ile ilişkilendirilmiş bir derleme kuralıdır. Özel derleme adımı birinde sonuçları bir özel derleme aracı için giriş dosyaları geçirebilir veya daha fazla çıkış dosyaları. Örneğin, bir MFC uygulamasında Yardım dosyaları, özel derleme aracı ile oluşturulur. Daha fazla bilgi için [nasıl yapılır: özel derleme araçları ekleme'MSBuild projelerine](../build/how-to-add-custom-build-tools-to-msbuild-projects.md) ve [belirterek özel derleme Araçları](../ide/specifying-custom-build-tools.md).  
   
  **Derleme olayları**  
- Derleme olayları bir projenin yapı özelleştirmenize olanak tanır. Üç derleme olaylarını vardır: *oluşturma öncesi*, *bağlama öncesi*, ve *oluşturma sonrası*. Derleme olayının derleme sürecindeki belirli bir zamanda gerçekleşmesi için bir eylem belirtmenize olanak sağlar. Örneğin, bir dosyayı kaydetmek için yapı olay kullanabilirsiniz **regsvr32.exe** Proje yapı tamamlandıktan sonra. Daha fazla bilgi için bkz: [derleme olayları belirtme](../ide/specifying-build-events.md).  
+ Derleme olayları, bir projenin derleme özelleştirmenize olanak sağlar. Üç derleme olaylarını vardır: *derleme öncesi*, *bağlama öncesi*, ve *derleme sonrası*. Bir derleme olayı oluşturma işleminde belirli bir zamanda gerçekleşmesi için bir eylem belirtmenize olanak sağlar. Örneğin, bir dosya ile kaydetmek için bir derleme olay kullanabilirsiniz **regsvr32.exe** Proje yapı tamamlandıktan sonra. Daha fazla bilgi için [derleme olayları belirtme](../ide/specifying-build-events.md).  
   
- [Derleme özelleştirmeleri sorunlarını giderme](../ide/troubleshooting-build-customizations.md) özel derleme adımları emin olun ve beklendiği gibi çalışmazsa olayları oluşturmanıza yardımcı olabilir.  
+ [Derleme özelleştirmeleri sorunlarını giderme](../ide/troubleshooting-build-customizations.md) özel derleme adımlarınızı emin olun ve beklendiği gibi çalışmazsa olayları oluşturmanıza yardımcı olabilir.  
   
- Özel bir çıktı biçimi adım oluşturabilir veya derleme olayının Ayrıca, aracı kullanılabilirliğini artırabilirsiniz. Daha fazla bilgi için bkz: [özel derleme adımı veya derleme olayının çıktısını biçimlendirme](../ide/formatting-the-output-of-a-custom-build-step-or-build-event.md).  
+ Çıktı biçimine göre özel derleme adımı veya derleme olayının aracı kullanılabilirliği de artırabilir. Daha fazla bilgi için [özel derleme adımı veya derleme olayının çıktısını biçimlendirme](../ide/formatting-the-output-of-a-custom-build-step-or-build-event.md).  
   
- Derleme olayları ve özel derleme adımları diğer yapı adımlarını aşağıdaki sırada çalıştırın:  
+ Derleme olayları ve özel derleme adımları birlikte başka yapılandırma adımları aşağıdaki sırayla çalıştırın:  
   
-1.  Oluşturma öncesi olay  
+1.  Derleme öncesi olay  
   
 2.  Özel derleme araçlarını tek tek dosyalar  
   
@@ -58,7 +58,7 @@ Gelen Visual C++ geliştirme ortamında yapı işlemi özelleştirmek için üç
   
 6.  Bağlama Öncesi olay  
   
-7.  Bağlayıcı veya kitaplığı (hangisi uygunsa)  
+7.  Bağlayıcı veya Kitaplıkçı (hangisi uygunsa)  
   
 8.  Bildirim aracı  
   
@@ -66,11 +66,11 @@ Gelen Visual C++ geliştirme ortamında yapı işlemi özelleştirmek için üç
   
 10. Projeye özel derleme adımı  
   
-11. Oluşturma sonrası olay  
+11. Derleme sonrası olay  
   
- `custom build step on the project` Ve `post-build event` sırayla diğer tüm yapı sonra çalıştırma bitiş işler.  
+ `custom build step on the project` Ve `post-build event` sırayla diğer tüm derledikten sonra çalışma bitiş işler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio'da C++ projeleri derleme](../ide/building-cpp-projects-in-visual-studio.md)   
- [Derleme komutları ve özellikler için ortak makroları](../ide/common-macros-for-build-commands-and-properties.md)   
- [Aracı derleme sırası iletişim kutusu](http://msdn.microsoft.com/en-us/6204c5b1-7ce9-4948-9ff6-0268642ee14c)
+ [Genel derleme komutları ve Özellikler makroları](../ide/common-macros-for-build-commands-and-properties.md)   
+ [Araç derleme sırası iletişim kutusu](https://msdn.microsoft.com/6204c5b1-7ce9-4948-9ff6-0268642ee14c)

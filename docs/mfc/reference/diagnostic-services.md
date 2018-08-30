@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee3fbc85ee6068c6e45f2847ae7ba45a425db8e8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5be60ff1f0aa8b2ceff7517a9af968e0b7690478
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466288"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214685"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 Microsoft Foundation Class Kitaplığı programlarınızın daha kolay hata ayıklaması yapmak çok sayıda tanı hizmetleri sağlar. Bu tanılama Hizmetleri makroları ve programınızın bellek ayırmaları, çalışma zamanı sırasında nesnelerin içeriğini dökümü ve çalışma zamanı sırasında hata ayıklama iletilerini yazdırma izlemenize olanak tanıyan genel işlevleri içerir. Makrolar ve genel işlevler için tanı Hizmetleri aşağıdaki kategorilere ayrılır:  
@@ -79,8 +79,8 @@ Microsoft Foundation Class Kitaplığı programlarınızın daha kolay hata ayı
 |[AfxCheckError](#afxcheckerror)|Bir hata olup olmadığını ve bu durumda görmek için geçirilen SCODE test etmek için kullanılan genel değişkeni uygun hata oluşturur.|  
 |[AfxCheckMemory](#afxcheckmemory)|Şu anda ayrılan bellek tüm bütünlüğünü denetler.|  
 |[AfxDebugBreak](#afxdebugbreak)|Bir kesme yürütülmesine neden olur.|
-|[AfxDump](#cdumpcontext_in_mfc)|Hata ayıklayıcısı olsa çağrılırsa, hata ayıklama sırasında bir nesnenin durumu dökümünü yapar.|  
-|[AfxDump](#afxdump)|Hata ayıklama sırasında bir nesnenin durumu dökümleri iç işlev.|
+|[afxDump](#cdumpcontext_in_mfc)|Hata ayıklayıcısı olsa çağrılırsa, hata ayıklama sırasında bir nesnenin durumu dökümünü yapar.|  
+|[afxDump](#afxdump)|Hata ayıklama sırasında bir nesnenin durumu dökümleri iç işlev.|
 |[AfxDumpStack](#afxdumpstack)|Geçerli yığın görüntüsü oluşturur. Bu işlev her zaman statik olarak bağlanır.|  
 |[AfxEnableMemoryLeakDump](#afxenablememoryleakdump)|Bellek sızıntısı dökümü sağlar.|  
 |[AfxEnableMemoryTracking](#afxenablememorytracking)|Açma ve kapatma izleme bellek kapatır.|  
@@ -605,7 +605,7 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
   
  Bu işlev başarıyla kullanmak için:  
   
--   Dosya IMAGEHLP. DLL, yolda olmalıdır. Bu DLL yoksa işlev bir hata iletisi görüntüler. Bkz: [görüntü kitaplığı Yardım](http://msdn.microsoft.com/library/windows/desktop/ms680321) IMAGEHLP tarafından sağlanan işlev kümesi hakkında bilgi için.  
+-   Dosya IMAGEHLP. DLL, yolda olmalıdır. Bu DLL yoksa işlev bir hata iletisi görüntüler. Bkz: [görüntü kitaplığı Yardım](/windows/desktop/Debug/image-help-library) IMAGEHLP tarafından sağlanan işlev kümesi hakkında bilgi için.  
   
 -   Çerçeve yığında olan modülleri, hata ayıklama bilgileri içermelidir. Hata ayıklama bilgisi içermez, işlev hala bir yığın izleme oluşturur, ancak izlemeyi daha az ayrıntılı olur.  
 ### <a name="requirements"></a>Gereksinimler  

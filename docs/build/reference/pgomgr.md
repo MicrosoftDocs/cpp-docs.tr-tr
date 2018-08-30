@@ -15,16 +15,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bf7567cfe9f21effda913606ca3af9a19464f9d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 70a0615debabb056110dd9d6f7a6aac86e9d464a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377212"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198321"
 ---
 # <a name="pgomgr"></a>pgomgr
 
-Profil verileri bir veya daha fazla .pgc dosyalarından .pgd dosyasına ekler.
+Profil verileri, bir veya daha fazla .pgc dosyaları için .pgd dosyası ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -33,41 +33,41 @@ Profil verileri bir veya daha fazla .pgc dosyalarından .pgd dosyasına ekler.
 ### <a name="parameters"></a>Parametreler
 
 *Seçenekler*<br/>
-Aşağıdaki seçenekler için belirtilen **pgomgr**:
+Aşağıdaki seçenekler için belirtilebilir **pgomgr**:
 
-- **/ help** veya **/?** Görüntüler kullanılabilir **pgomgr** seçenekleri.
+- **/ help** veya **/?** Kullanılabilir görüntüler **pgomgr** seçenekleri.
 
-- **/ temizleyin** tüm profil bilgileri temizlenecek .pgd dosyasının neden olur. Bir .pgc belirtemezsiniz dosyası **/temizleyin** belirtilir.
+- **/ clear** tüm profil bilgilerinin temizlenmesi için .pgd dosyasını neden olur. Bir .pgc belirtemezsiniz dosyası **/clear** belirtilir.
 
-- **/ Ayrıntı** akış grafiği kapsamı bilgiler dahil olmak üzere ayrıntılı istatistiklerini görüntüler.
+- **/ detail** akış grafiği kapsamı bilgileri dahil olmak üzere ayrıntılı istatistiklerini görüntüler.
 
-- **/ Özet** görüntüler başına işlevi istatistikleri.
+- **/ summary** görüntüler işlev başına istatistikleri.
 
-- **/ benzersiz** ile kullanıldığında **/Özet**, nedenleri görüntülemek için işlev adlarını donatılmış. Varsayılan değer, ne zaman **/ benzersiz** kullanılmaz, görüntülenecek ve işlev adları için değildir.
+- **/ benzersiz** ile kullanıldığında **/summary**, donatılmış işlev adlarını görüntülemek için neden olur. Varsayılan, **/ benzersiz** kullanılmaz, görüntülenecek ve işlev adları için.
 
-- **/ merge**[**: *** n*] .pgc dosya veya dosyalar .pgd dosyasına eklenecek veri neden olur. İsteğe bağlı bir parametre *n*, belirttiğiniz veri eklenmelidir sağlar *n* kez. Örneğin, bir senaryo genellikle müşteriler tarafından ne sıklıkta yapıldığını yansıtmak için Bitti'yi altı kat olacaktır, bir test çalıştırması kez yapın ve altı kat ile .pgd dosyasına ekleyin **pgomgr /merge:6**.
+- **/ merge**\[**:**<em>n</em>] .pgc dosya veya dosyalar için .pgd dosyası eklenecek veri neden olur. İsteğe bağlı parametre *n*, belirttiğiniz veri eklenmelidir sağlar *n* kez. Örneğin, bir senaryo müşteriler tarafından ne sıklıkta yapıldığını yansıtacak şekilde sık yapılan altı kat olacaktır, bir test çalıştırmasında bir kez yapın ve altı kat ile .pgd dosyası eklemek **pgomgr /merge:6**.
 
 *pgcfiles*<br/>
-Bir veya daha fazla .pgc .pgd dosyasına birleştirmek istediğiniz profili veri dosyaları. Bir tek .pgc dosya veya birden çok .pgc belirtebilirsiniz. Herhangi bir .pgc dosya belirtmezseniz, **pgomgr** , dosya adları .pgd dosya ile aynı olan tüm .pgc dosyaları birleştirir.
+.Pgd dosyası birleştirmek istediğiniz profil verisini bir veya daha fazla .pgc dosyaları. Tek .pgc dosyası veya birden çok .pgc dosyaları belirtebilirsiniz. Herhangi bir .pgc dosyası belirtmezseniz **pgomgr** olan dosya adlarını .pgd dosyası ile aynı olan tüm .pgc dosyaları birleştirir.
 
-*pgdfile* içine, .pgc dosya veya dosyalar verileri .pgd dosya birleştirme.
+*pgdfile* .pgd dosyası içine, birleştirme .pgc dosyası veya dosya verileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
 > [!NOTE]
-> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.
+> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek komut, profil verilerini myapp.pgd dosya temizler:
+Bu örnek komut myapp.pgd dosya, profil verilerini siler:
 
 `pgomgr /clear myapp.pgd`
 
-Bu örnek komut profil verileri myapp1.pgc içinde üç kez .pgd dosyasına ekler:
+Bu örnek komut profil verileri myapp1.pgc içinde üç kez için .pgd dosyası ekler:
 
 `pgomgr /merge:3 myapp1.pgc myapp.pgd`
 
-Bu örnekte, tüm Uygulamam # .pgc dosyaları profil verileri myapp.pgd dosyasına eklenir.
+Bu örnekte, myapp # .pgc dosyalarından tüm profil verilerini myapp.pgd dosyasına eklenir.
 
 `pgomgr -merge myapp1.pgd`
 

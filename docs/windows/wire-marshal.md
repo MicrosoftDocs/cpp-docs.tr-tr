@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 390ab7723cb760793ab96a31bc3ac948f5a40dcd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 94504cea86059f835d9cbda7cbf2bcdeafab589b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590397"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214116"
 ---
 # <a name="wiremarshal"></a>wire_marshal
 
@@ -36,7 +36,7 @@ Bir uygulamaya özel veri türü yerine iletim için kullanılacak olan veri tü
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wire_marshal** C++ özniteliği ile aynı işlevlere sahip [wire_marshal](http://msdn.microsoft.com/library/windows/desktop/aa367309) MIDL özniteliği.
+**Wire_marshal** C++ özniteliği ile aynı işlevlere sahip [wire_marshal](/windows/desktop/Midl/wire-marshal) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f6fb0cc519b7c03b84122b24e23e4ea9b49bc71
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 09cc987b583bdddd78604f75bd07bc9e2743a1dc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880709"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206647"
 ---
 # <a name="cdialogimpl-class"></a>Cdialogımpl sınıfı
 Bu sınıf, kalıcı veya geçici bir iletişim kutusu oluşturmak için yöntemleri sağlar.  
@@ -102,7 +102,7 @@ template <class T,
 |Denetimler oluşturma|[ATL öğretici](../../atl/active-template-library-atl-tutorial.md)|  
 |ATL iletişim kutuları kullanma|[ATL Pencere Sınıfları](../../atl/atl-window-classes.md)|  
 |ATL projesi Sihirbazı|[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)|  
-|İletişim kutuları|[İletişim kutuları](http://msdn.microsoft.com/library/windows/desktop/ms632588) ve sonraki konularda Windows SDK'sı|  
+|İletişim kutuları|[İletişim kutuları](https://msdn.microsoft.com/library/windows/desktop/ms632588) ve sonraki konularda Windows SDK'sı|  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlwin.h  
@@ -126,7 +126,7 @@ HWND Create(
  [in] İşleci sahip penceresine.  
   
  **RECT &** *dikdörtgen*  
- [in] A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) Yapısı iletişim kutusunun boyutunu ve konumunu belirtme.  
+ [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) Yapısı iletişim kutusunun boyutunu ve konumunu belirtme.  
   
  *dwInitParam*  
  [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.  
@@ -199,7 +199,7 @@ INT_PTR DoModal(
   
 ### <a name="parameters"></a>Parametreler  
  *hWndParent*  
- [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](http://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.  
+ [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.  
   
  *dwInitParam*  
  [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.  

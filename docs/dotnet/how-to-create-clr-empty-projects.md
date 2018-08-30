@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: c6910d8ff234573a6cb05c68275f81641831e73b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bcb104b5265d79c6eac41b7632a12d99a8ec236b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33128520"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212715"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
 CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir şablon **yeni proje** iletişim kutusu.  
   
 > [!NOTE]
->  IDE özelliklerinde görünümünü etkin ayarlar ya da edition bağlı olabilir ve bu Yardım'da açıklanan farklılık gösterebilir. Ayarlarınızı değiştirmek için tercih **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için bkz: [Visual Studio'da geliştirme ayarlarını özelleştirme](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  IDE içindeki özellikleri görünümü, etkin ayarlarınıza ve sürümü değişebilir ve Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-create-a-clr-empty-project"></a>CLR boş proje oluşturmak için  
   
@@ -35,15 +35,15 @@ CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir ş
   
      **Yeni proje** iletişim kutusu görüntülenir.  
   
-2.  Altında **yüklü şablonlar**, tıklatın **Visual C++** düğümü; ardından **CLR** düğümü. Seçin **CLR boş proje** simgesi.  
+2.  Altında **yüklü şablonlar**, tıklayın **Visual C++** düğüm; ardından **CLR** düğümü. Seçin **CLR boş proje** simgesi.  
   
 3.  İçinde **adı** kutusuna, uygulamanız için benzersiz bir ad girin.  
   
     > [!NOTE]
-    >  Ayrıca diğer proje ve çözüm ayarlarını belirtebilirsiniz **yeni proje** iletişim kutusu, ancak bu ayarları gerekli değildir.  
+    >  Diğer proje ve çözüm ayarlarını belirtebilirsiniz **yeni proje** iletişim kutusu, ancak bu ayarlar gerekli değildir.  
   
 4.  **Tamam**'ı tıklatın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
- [Visual C++ proje türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)
+ [Visual C++ Proje Türleri](/visualstudio/debugger/debugging-preparation-visual-cpp-project-types)

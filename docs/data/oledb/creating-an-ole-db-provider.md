@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5de304b7a21c47af18b8b753d6de704ef2473c5f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 16d78d590201ea637dd6153edb40a1c6d89a82c0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338798"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210347"
 ---
 # <a name="creating-an-ole-db-provider"></a>OLE DB Sağlayıcısı Oluşturma
 Bir OLE DB sağlayıcısı oluşturmak için önerilen yöntem, ATL COM projesini ve sağlayıcı oluşturup ardından OLE DB Şablonları kullanarak dosyaları değiştirmek için sihirbazları kullanmaktır. Sağlayıcınız özelleştirme gibi istenmeyen özellikleri açıklaması ve isteğe bağlı arabirimler.  
@@ -36,7 +36,7 @@ Bir OLE DB sağlayıcısı oluşturmak için önerilen yöntem, ATL COM projesin
   
 4.  MyProviderRS.h içinde bulunabilir PROVIDER_COLUMN_MAP güncelleştirin. Bir örnek için bkz. [depolama dizeleri, OLE DB sağlayıcısı](../../data/oledb/storing-strings-in-the-ole-db-provider.md).  
   
-5.  Sağlayıcınızı test etmeye hazır olduğunuzda, sağlayıcı bir sağlayıcı numaralandırmada bulunamadı deneyerek test edebilirsiniz. Bir sabit listesinde bir sağlayıcı bulur test kod örnekleri için bkz. [CATDB](http://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046) ve [DBVIEWER](http://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) örnekleri veya örnekte [bir Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md).  
+5.  Sağlayıcınızı test etmeye hazır olduğunuzda, sağlayıcı bir sağlayıcı numaralandırmada bulunamadı deneyerek test edebilirsiniz. Bir sabit listesinde bir sağlayıcı bulur test kod örnekleri için bkz. [CATDB](https://github.com/Microsoft/VCSamples) ve [DBVIEWER](https://github.com/Microsoft/VCSamples) örnekleri veya örnekte [bir Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md).  
   
 6.  İstediğiniz desteklenecek ek arabirimleri ekleyin. Bir örnek için bkz. [basit salt okunur sağlayıcıyı geliştirme](../../data/oledb/enhancing-the-simple-read-only-provider.md).  
   
@@ -44,5 +44,5 @@ Bir OLE DB sağlayıcısı oluşturmak için önerilen yöntem, ATL COM projesin
     >  Varsayılan olarak, sihirbaz OLE DB düzeyi 0 uyumlu bir kod oluşturur. Uygulama düzeyi 0 uyumlu kalmasını sağlamak için herhangi bir sihirbazın ürettiği arabirimleri koddan kaldırmayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CATDB](http://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046)   
- [DBVIEWER](http://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832)
+ [CATDB](https://github.com/Microsoft/VCSamples)   
+ [DBVIEWER](https://github.com/Microsoft/VCSamples)

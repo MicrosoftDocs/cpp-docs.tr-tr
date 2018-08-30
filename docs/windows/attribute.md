@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 69ec1c9e1b3e30e68bf7199f7a70cb7d329ee040
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 62eabc9eb9b2043fe3d66389d56b1995afcd57e7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603647"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212253"
 ---
 # <a name="attribute"></a>özniteliği
 
@@ -221,4 +221,4 @@ int main() {
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Öznitelikler Alfabetik Başvurusu](../windows/attributes-alphabetical-reference.md)  
-[Özel öznitelikler](http://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)
+[Özel öznitelikler](https://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

@@ -1,5 +1,5 @@
 ---
-title: Araç ipuçları Cframewnd'den türetilmemiş Windows | Microsoft Docs
+title: Araç ipuçları içinde Windows Cframewnd'den türetilmemiş | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,17 +19,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f187ae7e3d5d9dbe6441aa8e2ba0f7631fd5072
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 380435001bdcfacdc22c80d25d5ef228b67e3127
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36956545"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207595"
 ---
 # <a name="tool-tips-in-windows-not-derived-from-cframewnd"></a>CFrameWnd'den Türetilmemiş Pencerelerde Araç İpuçları
-Bu makale ailesi türetilmedi bir pencerede bulunan denetimler için etkinleştirme araç ipuçları kapsayan [CFrameWnd](../mfc/reference/cframewnd-class.md). Makaleyi [araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md) denetimler için araç ipuçları hakkında bilgi sağlayan bir `CFrameWnd`.  
+Bu makalede ailesi türünden türetilmediğinden bir pencerede bulunan denetimler için etkinleştirme araç ipuçları kapsar [CFrameWnd](../mfc/reference/cframewnd-class.md). Makaleyi [araç çubuğu araç ipuçları](../mfc/toolbar-tool-tips.md) denetimler için araç ipuçları hakkında bilgi sağlayan bir `CFrameWnd`.  
   
- Bu makale ailesinde kapsanan konular şunlardır:  
+ Bu makalede ailesinde ele alınan konular:  
   
 -   [Araç İpuçlarını Etkinleştirme](../mfc/enabling-tool-tips.md)  
   
@@ -37,11 +37,11 @@ Bu makale ailesi türetilmedi bir pencerede bulunan denetimler için etkinleşti
   
 -   [TOOLTIPTEXT yapısı](../mfc/tooltiptext-structure.md)  
   
- Araç ipuçları için düğmeler otomatik olarak görüntülenir ve bir ana pencerede bulunan diğer denetimleri türetilmiş `CFrameWnd`. Bunun nedeni, `CFrameWnd` için bir varsayılan işleyici sahip [TTN_GETDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb760269) işler bildirim **TTN_NEEDTEXT** aracından bildirimleri ipucu denetimleriyle ilişkili denetimler.  
+ Araç ipuçları için düğmeler otomatik olarak görüntülenir ve diğer denetimleri ana pencerede kapsanan türetilen `CFrameWnd`. Bunun nedeni, `CFrameWnd` için bir varsayılan işleyici sahip [TTN_GETDISPINFO](/windows/desktop/Controls/ttn-getdispinfo) işleyen bildirim **TTN_NEEDTEXT** bildirimleri aracından ipucu denetimleri ile ilişkili denetimler.  
   
- Ancak, bu varsayılan işleyici ne zaman çağrılmaz **TTN_NEEDTEXT** bildirim değil bir pencerede denetimiyle ilişkili bir araç ipucunu denetimini gelen gönderilir bir `CFrameWnd`, bir iletişim kutusu veya bir form görünümü denetim gibi. Bu nedenle, sizin için bir işleyici işlevi sağlamak gerekli olan **TTN_NEEDTEXT** alt denetimler için araç ipuçları görüntülemek için uyarı iletisi.  
+ Ancak, bu varsayılan işleyici ne zaman çağrılmaz **TTN_NEEDTEXT** bir denetiminde olmayan bir pencere ile ilişkili bir araç ipucu denetiminden bildirim gönderilir bir `CFrameWnd`, bir iletişim kutusu veya bir form görünümü denetimi gibi. Bu nedenle, sizin için bir işleyici işlevi sağlamak için gerekli olan **TTN_NEEDTEXT** alt denetimler için araç ipuçları görüntülemek için bildirim iletisi.  
   
- Windows tarafından sağlanan varsayılan araç ipuçları [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) ilişkili metin yok. Görüntülenecek araç ipucu metnini almak için **TTN_NEEDTEXT** araç ipucu penceresi yalnızca görüntülenmeden önce araç ipucu denetimin üst penceresine bildirim gönderilir. Bu ileti için bir değer atamak için hiçbir işleyici olup olmadığını *pszText* üyesi **TOOLTIPTEXT** yapısı, araç ipucu için görüntülenen metin olacaktır.  
+ Windows tarafından sağlanan varsayılan araç ipuçları [CWnd::EnableToolTips](../mfc/reference/cwnd-class.md#enabletooltips) ilişkili metin izniniz yok. Görüntülenecek araç ipucu metnini almak için **TTN_NEEDTEXT** yalnızca araç ipucu penceresi görüntülenmeden önce bildirim için araç ipucu denetiminin üst penceresine gönderilir. Bu ileti için bir değer atamak için işleyici yok ise *pszText* üyesi **TOOLTIPTEXT** yapısı, araç ipucu için görüntülenen metin olacaktır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Araç İpuçları](../mfc/tool-tips.md)

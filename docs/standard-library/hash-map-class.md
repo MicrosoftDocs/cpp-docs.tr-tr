@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 713bf95a53a22b098803d08b4a2a4fd9c8a6cf2d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 08c16cd80828e973e4fff2d1a2c36e211e61f361
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954941"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211598"
 ---
 # <a name="hashmap-class"></a>hash_map Sınıfı
 
@@ -124,13 +124,17 @@ class hash_map
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* hash_map içinde depolanacak anahtar veri türü.
+*Key*<br/>
+ Hash_map içinde depolanacak anahtar veri türü.
 
-*Tür* hash_map içinde depolanacak öğe veri türü.
+*Türü*<br/>
+ Hash_map içinde depolanacak öğe veri türü.
 
-*Nitelikler* sınıfı karşılaştırma öğelerinin anahtar değerlerini işaretsiz eşleme birli koşulu olan bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırma mümkün birini iki işlev nesneleri içeren türü tamsayı türü `size_t`. Bu bağımsız değişken isteğe bağlıdır ve hash_compare <`Key`, daha az <`Key`>> varsayılan değerdir.
+*Nitelikler*<br/>
+ İki işlev nesneleri içeren türü sınıf karşılaştırma kendi göreli sıralarını ve karma işlevi, belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırma mümkün öğelerinin anahtar değerlerini türü işaretsiztamsayılariçineşlemebirlikoşulubiridir`size_t`. Bu bağımsız değişken isteğe bağlıdır ve hash_compare <`Key`, daha az <`Key`>> varsayılan değerdir.
 
-*Allocator* hash_map'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer allocator < pair < const `Key`, `Type`>>.
+*Ayırıcı*<br/>
+ Hash_map'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer allocator < pair < const `Key`, `Type`>>.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -523,11 +527,11 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 
 Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılamaz.
 
-`const_iterator` Hash_map noktalarına nesnelerin olan öğeler tarafından tanımlanan [value_type](#value_type), diğer bir deyişle tür `pair` *\< ***const Key, türü*** >* olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
+`const_iterator` Hash_map noktalarına nesnelerin olan öğeler tarafından tanımlanan [value_type](#value_type), diğer bir deyişle tür `pair< const Key, Type >`olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
 
 Başvurulacak bir `const_iterator` `cIter` bir hash_map içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğenin anahtarının değerini erişmek için `cIter` **ilk ->**, eşit olduğu (\* `cIter`) **.first**. Eşlenmiş veri öğesi için değeri erişmek için `cIter` **ikinci ->**, eşit olduğu (\* `cIter`) **.second**.
+Öğenin anahtarının değerini erişmek için `cIter->first`, eşdeğer olan `(*cIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `cIter->second`, eşdeğer olan `(*cIter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -644,7 +648,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* hash_map eşleştirilecek öğelerin anahtar değeri.
+*Anahtarı*<br/>
+ Hash_map eşleştirilecek öğelerin anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1135,7 +1140,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1223,13 +1229,17 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Where* hash_map kaldırılacak öğenin konumu.
+*_Where*<br/>
+ Hash_map kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu hash_map kaldırıldı.
+*ilk*<br/>
+ Hash_map kaldırılan ilk öğenin konumu.
 
-*Son* konumu yalnızca son öğeden sonra hash_map kaldırıldı.
+*Son*<br/>
+ Konum yalnızca son öğeden sonra hash_map kaldırıldı.
 
-*anahtar* öğeleri hash_map kaldırılması için anahtar değeri.
+*Anahtarı*<br/>
+ Öğeleri hash_map kaldırılması için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1341,7 +1351,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_map bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+*Anahtarı*<br/>
+ Aranan hash_map bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1537,7 +1548,7 @@ hash_map(
 |-|-|
 |*Al*|Varsayılan olarak bu hash_map nesne için kullanılacak depolama ayırıcı sınıf `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü const `Traits` varsayılan olarak hash_map içinde öğeleri sıralamak için kullanılan `hash_compare`.|
-|*Sağ*|Oluşturulan eşleme kopyası olacak olduğu hash_map.|
+|*sağ*|Oluşturulan eşleme kopyası olacak olduğu hash_map.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|İnitializer_list|
@@ -1881,7 +1892,8 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Aranan hash_map bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2519,7 +2531,8 @@ void swap(hash_map& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef hash_map ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_map.
+*sağ*<br/>
+ Hedef hash_map ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_map.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2594,7 +2607,8 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_map öğeden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Aranan hash_map öğeden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2737,7 +2751,7 @@ typedef pair<const Key, Type> value_type;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`value_type` olarak bildirilen `pair`  *\< * **const**[key_type](#key_type), [mapped_type](#mapped_type)*> * değil `pair`  **\<key_type, mapped_type >** nonconstant yineleyici veya başvuru kullanarak ilişkilendirilebilir bir kapsayıcı anahtarları değiştirilemez çünkü.
+`value_type` olarak bildirilen `pair<const key_type, mapped_type>` değil `pair<key_type, mapped_type>` nonconstant yineleyici veya başvuru kullanarak ilişkilendirilebilir bir kapsayıcı anahtarları değiştirilemez çünkü.
 
 ### <a name="example"></a>Örnek
 

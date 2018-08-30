@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5412bbf1fcb7e139394b9563965244080e5c179
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 3362074ce0f8d4d7a3a3463d22f9089f847e747d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36932087"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208716"
 ---
 # <a name="processing-notification-messages-in-list-controls"></a>Liste Denetimlerinde Bildirim İletilerini İşleme
-Sütun başlıklarını kullanıcılar tıklatma gibi simgeler sürükleyin, etiketleri ve benzeri, liste denetimini düzenleme ([CListCtrl](../mfc/reference/clistctrl-class.md)) kendi üst penceresi bildirim iletileri gönderir. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı bir sütun başlığını tıkladığında, Microsoft Outlook gibi tıklatılan sütunun içeriğine göre öğeleri sıralama isteyebilirsiniz.  
+Sütun üst bilgilerini kullanıcılar gibi simgeler sürükleyin, etiketler ve benzeri, liste denetimi Düzenle ([CListCtrl](../mfc/reference/clistctrl-class.md)) üst pencereye bildirim iletileri gönderir. Yanıt bir şey yapmak istiyorsanız, bu iletileri işler. Örneğin, kullanıcı bir sütun başlığını tıkladığında Microsoft Outlook gibi tıklandı sütunun içeriğine göre öğeleri sıralamak isteyebilirsiniz.  
   
- Görünüm ya da iletişim sınıfınızı liste denetiminde işlem wm_notıfy iletileri. Özellikler penceresini oluşturulacağı bir [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) switch deyimi işleyici işleviyle dayalı hangi bildirim iletisi ele alınmasına.  
+ Görünüm veya iletişim sınıfınızdaki liste denetiminden işlem wm_notıfy iletileri. Oluşturmak için Özellikler penceresini kullanın. bir [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) switch deyimi işleyicisi işlevini temel hangi bildirim iletisi ele alınır.  
   
- Liste denetimi, kendi üst penceresi gönderebilir bildirimleri bir listesi için bkz: [liste görünümü denetimi başvurusu](http://msdn.microsoft.com/library/windows/desktop/bb774737) Windows SDK'sındaki.  
+ Liste denetimi üst pencereye gönderebilir bildirimler listesi için bkz. [liste görünümü denetimi başvuru](/windows/desktop/Controls/list-view-control-reference) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   

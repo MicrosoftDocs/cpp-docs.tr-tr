@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d570204a997def3b295e7ba0fb3b08b9a15677b
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 38267ed5755b99bd97e4c923611d297673fcc41e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853734"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215589"
 ---
 # <a name="csharedfile-class"></a>CSharedFile sınıfı
 [CMemFile](../../mfc/reference/cmemfile-class.md)-paylaşılan bellek dosyalarını destekleyen türetilmiş bir sınıf.  
@@ -56,7 +56,7 @@ class CSharedFile : public CMemFile
 ## <a name="remarks"></a>Açıklamalar  
  Dosya RAM yerine diskte depolanan dışında bellek dosyalarını disk dosyaları gibi davranır. Bellek dosyasını ham bayt aktarma veya hızlı bir geçici depolama için kullanışlı veya bağımsız işlemler arasında nesneleri seri hale getirilmiş.  
   
- Paylaşılan bellek dosyalarını, bunlar için bellek ile ayrılır, diğer bellek dosyalarından farklı [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows işlevi. `CSharedFile` Sınıfı bir küresel olarak ayrılan bellek bloğu içinde verileri depolar (kullanılarak oluşturulan `GlobalAlloc`), bu bellek bloğunda DDE, Pano veya diğer OLE/COM Tekdüzen veri aktarımı işlemleri, örneğin, kullanarak kullanarak paylaşılabilir `IDataObject`.  
+ Paylaşılan bellek dosyalarını, bunlar için bellek ile ayrılır, diğer bellek dosyalarından farklı [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows işlevi. `CSharedFile` Sınıfı bir küresel olarak ayrılan bellek bloğu içinde verileri depolar (kullanılarak oluşturulan `GlobalAlloc`), bu bellek bloğunda DDE, Pano veya diğer OLE/COM Tekdüzen veri aktarımı işlemleri, örneğin, kullanarak kullanarak paylaşılabilir `IDataObject`.  
   
  `GlobalAlloc` bir HGLOBAL işlemek yerine tarafından döndürülen işaretçi gibi bir bellek işaretçi döndürür [malloc](../../c-runtime-library/reference/malloc.md). Belirli uygulamalarda HGLOBAL işleyicisini gereklidir. Örneğin, verileri Pano'ya yerleştirme HGLOBAL işleyicisini gerekir.  
   
@@ -89,7 +89,7 @@ CSharedFile(
   
 ### <a name="parameters"></a>Parametreler  
  *nAllocFlags*  
- Nasıl ayrılacak bellek olduğunu belirten bayrak. Bkz: [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) geçerli bayrak değerleri listesi.  
+ Nasıl ayrılacak bellek olduğunu belirten bayrak. Bkz: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) geçerli bayrak değerleri listesi.  
   
  *nGrowBytes*  
  Bayt cinsinden bellek ayırma artırma.  

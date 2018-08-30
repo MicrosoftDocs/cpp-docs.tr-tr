@@ -17,39 +17,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 654805750b3cd17e2157fa3710791493970b371f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8003997d82c59d42813d7852e6c3fadb8f12fb26
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386270"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208914"
 ---
 # <a name="l-value-and-r-value-expressions"></a>L-Değeri ve R-Değeri İfadeleri
-Bellek konumları ifadeleri "l-değeri" ifadeleri denir. L-değeri eşittir işaretinden sol tarafta görünebilir olduğunu belirtmek "sol" bir değer veya bir depolama bölgenin "Bulucusu" değerini temsil eder (**=**). L değerleri genellikle tanımlayıcılardır.  
+Bellek konumlarına başvurmak ifadeleri "l-value" ifadeleri çağrılır. Bir l değeri eşittir işaretinin sol tarafında görünebilir olduğunu belirtmek, "sol" bir değer veya bir depolama bölgenin "Konum Belirleyicisi" değerini temsil eder (**=**). L-değerler genellikle tanıtıcılardır.  
   
- Değiştirilebilir konumlara başvuran ifadeleri "değiştirilebilir l değerleri." olarak adlandırılır Bir dizi türü, tamamlanmamış bir tür ya da bir türü ile değiştirilebilir l-değeri olamaz **const** özniteliği. Yapılar ve birleşimler değiştirilebilir l değerleri olması için bunlar herhangi üyeleriyle olmamalıdır **const** özniteliği. O konumda saklanan değeri olsa da değişkenin değeri olarak bir depolama konumu tanımlayıcı adını gösterir.  
+ İfadeleri değiştirilebilir konumlara başvuran "değiştirilebilir ı-değerleri." olarak adlandırılır Bir dizi türü, tamamlanmamış bir türü veya bir tür ile değiştirilebilir bir l-değeri olamaz **const** özniteliği. Yapılar ve birleşimler değiştirilebilir bir l-değeri olması için bunların herhangi bir üye olmamalıdır **const** özniteliği. O konumda depolanan değeri olsa da değişkenin değeri olarak bir depolama konumu tanımlayıcı adını gösterir.  
   
- Bir değiştirilebilir l-değeri bir bellek konumuna başvurduğu olmadığını ve aritmetik, yapısı, UNION veya işaretçi türü olup olmadığını tanımlayıcısıdır. Örneğin, varsa `ptr` bir işaretçi bir depolama bölgesi ise `*ptr` bir değiştirilebilir l-, depolama bölgesine atayan değer `ptr` noktaları.  
+ Bir tanımlayıcı, bir bellek konumuna başvuruyorsa ve aritmetik, yapı, birleşim veya işaretçi türü ise, değiştirilebilir bir l-değeri olan. Örneğin, varsa `ptr` bir depolama bölgesi için bir işaretçi ise `*ptr` değiştirilebilir bir l-depolama bölgesine belirten değeri olan `ptr` noktaları.  
   
- L-değeri ifadeleri aşağıdaki C ifadelerden herhangi biri olabilir:  
+ Aşağıdaki C deyimleri l-değeri ifadeleri olabilir:  
   
--   İntegral, kayan, işaretçi, yapı veya birleşim türü bir tanımlayıcı  
+-   Bir tamsayı, kayan, işaretçi, yapı veya birleşim türü tanımlayıcısı  
   
--   Bir alt simge (**[]**) için bir dizi değerlendirmez ifade  
+-   Bir alt simge (**[]**) için bir dizi değerlendirmez ifadesi  
   
--   Üye seçim ifade (**->** veya **.**)  
+-   Üye seçimi ifade (**->** veya **.**)  
   
--   Birli yöneltme (**\***) için bir dizi başvurmuyor ifade  
+-   Birli yöneltme (<strong>\*</strong>) için bir dizi başvurmuyor ifadesi  
   
--   L-değeri ifadesi parantez içinde  
+-   Parantez içinde bir l-değeri ifadesi  
   
 -   A **const** nesne (değiştirilemez l-değeri)  
   
- "R" terimi, bazen bir ifadenin değerini açıklamak için ve bir m değerinden ayırt etmek için kullanılır. Tüm l-r değerleri değerlerdir ancak tüm r-l değerleri değerlerdir.  
+ "R" terimi, bazen bir ifadenin değerini tanımlamak ve bir l-değerden ayırmak için kullanılır. Tüm l-değerler r değerlerdir ancak tüm r değerleri l-değerler.  
   
- **Microsoft özel**  
+ **Microsoft'a özgü**  
   
- Microsoft C nesnenin boyutu cast uzatılmış değil sürece değerlerin l-m-değerler olarak kullanılacak atamaları sağlayan ANSI C standardı uzantısı içerir. (Bkz [tür atama dönüşümleri](../c-language/type-cast-conversions.md) daha fazla bilgi için.) Aşağıdaki örnekte, bu özelliği gösterilmektedir:  
+ Microsoft C yayınları l-değerler kullanılacak l-değerler nesnenin boyutunu atama uzatılmış değil sürece veren ANSI C standardının bir uzantısı içerir. (Bkz [tür atama dönüştürmeleri](../c-language/type-cast-conversions.md) daha fazla bilgi için.) Bu özellik aşağıdaki örnekte gösterilmiştir:  
   
 ```  
 char *p ;  
@@ -60,9 +60,9 @@ long l;
 (long) i = l ;          /* Illegal cast */  
 ```  
   
- Microsoft C için Microsoft uzantıları etkinleştirildiğini varsayılandır. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneği kullanın.  
+ Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneğini kullanın.  
   
- **SON Microsoft özel**  
+ **END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)

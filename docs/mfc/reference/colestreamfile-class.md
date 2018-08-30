@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9304c4e3dfd559b296c69b274c1462f2f973a04d
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ab7b12c26854903379da0b67f9f64e2158195587
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852764"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211134"
 ---
 # <a name="colestreamfile-class"></a>COleStreamFile sınıfı
 Veri akışını temsil eder (`IStream`) OLE yapılı depolama bir parçası olarak birleşik bir dosyadaki.  
@@ -72,7 +72,7 @@ class COleStreamFile : public CFile
   
  Akışları ve depolamayı düzenleme hakkında daha fazla bilgi için bkz [kapsayıcılar: bileşik dosyalar](../../mfc/containers-compound-files.md)...  
   
- Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) ve [IStorage](http://msdn.microsoft.com/library/windows/desktop/aa380015) Windows SDK.  
+ Daha fazla bilgi için [IStream](/windows/desktop/api/objidl/nn-objidl-istream) ve [IStorage](/windows/desktop/api/objidl/nn-objidl-istorage) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -98,7 +98,7 @@ void Attach(LPSTREAM lpStream);
 ### <a name="remarks"></a>Açıklamalar  
  Nesne zaten bir OLE akışı ile ilişkili olmamalıdır.  
   
- Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
+ Daha fazla bilgi için [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK.  
   
 ##  <a name="colestreamfile"></a>  COleStreamFile::COleStreamFile  
  Oluşturur bir `COleStreamFile` nesne.  
@@ -114,7 +114,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *lpStream* null, nesne bir OLE akışı ile ilişkili değil, aksi takdirde, nesne sağlanan OLE akış ile ilişkilidir.  
   
- Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
+ Daha fazla bilgi için [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK.  
   
 ##  <a name="creatememorystream"></a>  COleStreamFile::CreateMemoryStream  
  Güvenli bir şekilde hata normal, beklenen bir koşulu olduğu yeni bir akışı küresel, paylaşılan bellek yetersiz oluşturur.  
@@ -133,7 +133,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 ### <a name="remarks"></a>Açıklamalar  
  Bellek OLE alt sistemi tarafından ayrılır.  
   
- Daha fazla bilgi için [CreateStreamOnHGlobal](http://msdn.microsoft.com/library/windows/desktop/aa378980) Windows SDK.  
+ Daha fazla bilgi için [CreateStreamOnHGlobal](/windows/desktop/api/combaseapi/nf-combaseapi-createstreamonhglobal) Windows SDK.  
   
 ##  <a name="createstream"></a>  COleStreamFile::CreateStream  
  Güvenli bir şekilde yeni bir akış sağlanan depolama nesnesinde bir hata normal, beklenen bir koşulu olduğu oluşturur.  
@@ -165,7 +165,7 @@ BOOL CreateStream(
 ### <a name="remarks"></a>Açıklamalar  
  Açık başarısız olursa, bir dosya özel durum oluşturulur ve *pError* NULL değil.  
   
- Daha fazla bilgi için [IStorage::CreateStream](http://msdn.microsoft.com/library/windows/desktop/aa380020) Windows SDK.  
+ Daha fazla bilgi için [IStorage::CreateStream](/windows/desktop/api/objidl/nf-objidl-istorage-createstream) Windows SDK.  
   
 ##  <a name="detach"></a>  COleStreamFile::Detach  
  Nesne akıştan akış kapatmadan ayırır.  
@@ -180,7 +180,7 @@ LPSTREAM Detach();
 ### <a name="remarks"></a>Açıklamalar  
  Akış program sona erdirmeden önce bazı başka bir biçimde kapatılması gerekir.  
   
- Daha fazla bilgi için [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034) Windows SDK.  
+ Daha fazla bilgi için [IStream](/windows/desktop/api/objidl/nn-objidl-istream) Windows SDK.  
   
 ##  <a name="getstream"></a>  COleStreamFile::GetStream  
  Geçerli akışa bir işaretçiyi döndürmek için bu işlevi çağırın.  
@@ -190,7 +190,7 @@ IStream* GetStream() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçerli akışı arabirim işaretçisi ( [IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)).  
+ Geçerli akışı arabirim işaretçisi ( [IStream](/windows/desktop/api/objidl/nn-objidl-istream)).  
   
 ##  <a name="openstream"></a>  COleStreamFile::OpenStream  
  Var olan bir akışı açılır.  
@@ -222,7 +222,7 @@ BOOL OpenStream(
 ### <a name="remarks"></a>Açıklamalar  
  Açık başarısız olursa, bir dosya özel durum oluşturulur ve *pError* NULL değil.  
   
- Daha fazla bilgi için [IStorage::OpenStream](http://msdn.microsoft.com/library/windows/desktop/aa380025) Windows SDK.  
+ Daha fazla bilgi için [IStorage::OpenStream](/windows/desktop/api/objidl/nf-objidl-istorage-openstream) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CFile sınıfı](../../mfc/reference/cfile-class.md)   

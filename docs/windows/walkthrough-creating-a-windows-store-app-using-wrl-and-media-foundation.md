@@ -13,16 +13,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a4967be81e45e52ce7c321ceb552b13a1dc59bd0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2775e0348f6bfe1e7fe960a105ebf0c31fcaae96
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604896"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214837"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
 
-Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için kullanmayı öğrenin [Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197).
+Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kullanan bir evrensel Windows Platformu (UWP) uygulaması oluşturmak için kullanmayı öğrenin [Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk).
 
 Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulanacağı özel Media Foundation dönüşüm oluşturur. Uygulama, C++ özel dönüştürme ve yakalanan görüntülerin dönüştürmek için bileşeni kullanmak için C# tanımlamak için kullanır.
 
@@ -36,7 +36,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
 ## <a name="prerequisites"></a>Önkoşullar
 
-- Deneyimini [Windows çalışma zamanı](http://msdn.microsoft.com/library/windows/apps/br211377.aspx).
+- Deneyimini [Windows çalışma zamanı](https://msdn.microsoft.com/library/windows/apps/br211377.aspx).
 
 - Com ile deneyimi
 
@@ -52,7 +52,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
 - [Inspectableclass](../windows/inspectableclass-macro.md) makrosu başvuru sayımı gibi temel COM işlevselliğini uygular ve `QueryInterface` yöntemi ve çalışma zamanı sınıf adı ve güven düzeyini ayarlar.
 
-- Kullanma Microsoft::WRL::[modül sınıfı](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) DLL giriş noktası işlevleri gibi uygulamak [DllGetActivationFactory](http://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
+- Kullanma Microsoft::WRL::[modül sınıfı](https://www.microsoftonedoc.com/#/organizations/e6f6a65cf14f462597b64ac058dbe1d0/projects/3fedad16-eaf1-41a6-8f96-0c1949c68f32/containers/a3daf831-1c5f-4bbe-964d-503870caf874/tocpaths/b4acf5de-2f4c-4c8b-b5ff-9140d023ecbe/locales/en-US) DLL giriş noktası işlevleri gibi uygulamak [DllGetActivationFactory](https://msdn.microsoft.com/library/br205771.aspx), [DllCanUnloadNow](/windows/desktop/api/combaseapi/nf-combaseapi-dllcanunloadnow), ve [ DllGetClassObject](/windows/desktop/api/combaseapi/nf-combaseapi-dllgetclassobject).
 
 - Bileşeniniz DLL için runtimeobject.lib bağlayın. Ayrıca belirtin [/WINMD](../cppcx/compiler-and-linker-options-c-cx.md) bağlayıcı satırında Windows meta verileri oluşturun.
 
@@ -113,7 +113,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
 3. İçinde `Package.appxmanifest`, **özellikleri** sekmesinde **mikrofon** ve **Web kamerası**. Her iki özelliği, Web kamerası gelen fotoğraf yakalamak için gereklidir.
 
-4. İçinde `MainPage.xaml`, kök bu kodu ekleyin [kılavuz](http://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) öğesi:
+4. İçinde `MainPage.xaml`, kök bu kodu ekleyin [kılavuz](https://msdn.microsoft.com/library/windows/apps/xaml/windows.ui.xaml.controls.grid.aspx) öğesi:
 
    [!code-xml[wrl-media-capture#7](../windows/codesnippet/Xaml/walkthrough-creating-a-windows-store-app-using-wrl-and-media-foundation_7.xaml)]
 
@@ -132,5 +132,5 @@ Aşağıdaki çizimde gösterildiği `MediaCapture app`.
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md)  
-[Microsoft Media Foundation](http://msdn.microsoft.com/library/windows/apps/ms694197)  
+[Microsoft Media Foundation](/windows/desktop/medfound/microsoft-media-foundation-sdk)  
 [Medya uzantılar örneği](http://code.msdn.microsoft.com/windowsapps/Media-extensions-sample-7b466096)

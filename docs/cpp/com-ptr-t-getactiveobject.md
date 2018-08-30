@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 392460cde35096bc1c61db4d7e6bd2143932838d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 0555b050770d5fbd411e1720282e3fb50769385b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404001"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208410"
 ---
 # <a name="comptrtgetactiveobject"></a>_com_ptr_t::GetActiveObject
 **Microsoft'a özgü**  
@@ -59,7 +59,7 @@ HRESULT GetActiveObject(
   
 -   **GetActiveObject (**`clsidString`**)** bulunduran Unicode dizesi verilmiş nesnenin varolan örneğine için bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
--   **GetActiveObject (**`clsidStringA`**)** bulunduran çok baytlı karakter dizesi verilmiş nesnenin varolan örneğine bağlanan bir `CLSID` (sürümünden itibaren "**{**") veya `ProgID`. Çağrıları [MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
+-   **GetActiveObject (**`clsidStringA`**)** bulunduran çok baytlı karakter dizesi verilmiş nesnenin varolan örneğine bağlanan bir `CLSID` (sürümünden itibaren "**{**") veya `ProgID`. Çağrıları [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar), dizenin OEM kod sayfası yerine ANSI kod sayfası olduğunu varsayar.  
   
  **END Microsoft özgü**  
   

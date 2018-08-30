@@ -1,5 +1,5 @@
 ---
-title: (Visual C++) özellik ekleme | Microsoft Docs
+title: Özellik ekleme (Visual C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,39 +15,39 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45eda098202fdf9286905bdc967b6aa1d7bd7035
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 00b19fa7166e6edad05d729c5a738a2a827086ae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327586"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212801"
 ---
 # <a name="adding-a-property-visual-c"></a>Özellik Ekleme (Visual C++)
-Kullanabileceğiniz [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md) projenizdeki bir arabirim için bir yöntem eklemek için.  
+Kullanabileceğiniz [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md) projenize bir arabirimde bir yöntemi eklemek için.  
   
-### <a name="to-add-a-property-to-your-object"></a>Bir özellik için nesneyi eklemek için  
+### <a name="to-add-a-property-to-your-object"></a>Nesneniz için bir özellik eklemek için  
   
-1.  İçinde [sınıf görünümü](http://msdn.microsoft.com/en-us/8d7430a9-3e33-454c-a9e1-a85e3d2db925), özellik eklemek istediğiniz arabirimi adına sağ tıklayın.  
+1.  İçinde [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), özellik eklemek istediğiniz arabirimin adını sağ tıklayın.  
   
     > [!NOTE]
-    >  Proje öznitelikli sürece, bu, kitaplık düğümünün içinde iç içe geçmiş dispinterfaces özellikleri ekleyebilirsiniz.  
+    >  Ayrıca, proje öznitelikli sürece, kitaplık düğümünün içinde iç içe geçmiş görüntüleme özellikleri ekleyebilirsiniz.  
   
-2.  Kısayol menüsünden tıklatın **Ekle**ve ardından **Özellik Ekle**.  
+2.  Kısayol menüsünden tıklayın **Ekle**ve ardından **Özellik Ekle**.  
   
-3.  İçinde [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md), özellik oluşturmak için bilgileri girin.  
+3.  İçinde [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md), özellik oluşturmak için bilgileri sağlayın.  
   
-4.  Herhangi bir özellik için arabirimi tanım dili (IDL) ayarlarını belirtin [IDL öznitelikleri](../ide/idl-attributes-add-property-wizard.md) Sihirbazı sayfası.  
+4.  Bir özellik için arabirim tanımlama dili (IDL) ayarlarını belirtin [IDL öznitelikleri](../ide/idl-attributes-add-property-wizard.md) Sihirbazı sayfası.  
   
-5.  Tıklatın **son** özelliği eklemek için.  
+5.  Tıklayın **son** özelliği eklemek için.  
   
- **Almak** ve `Put` özelliğinin yöntemlerini nerede tanımlanan arabirimi altında sınıf görünümündeki iki simgeler olarak görüntülenir. Özellik bildirimi .idl dosyasındaki görüntülemek için her iki simgesini çift tıklatabilirsiniz.  
+ **Alma** ve `Put` özelliğinin yöntemlerini, Sınıf Görünümü'nde iki simgeyi altında tanımlanmış olduğu yerlerde arabirimi olarak görüntülenir. Özellik bildiriminde .idl dosyasında görüntülemek için her iki simgesini çift tıklayabilirsiniz.  
   
--   ATL arabirimleri için **almak** ve **Put** işlevleri .cpp dosyasına eklenir ve bu işlevlere başvurular .h dosyasına eklenir.  
+-   ATL arabirimleri için **alma** ve **Put** işlevleri .cpp dosyasına eklenir ve bu işlevlere yönelik başvurulara .h dosyasına eklenir.  
   
--   MFC dispinterfaces seçerseniz için **üye değişkeni** uygulama türü bunu uygulayan sınıfa bir yöntem ve bir değişkeni eklenir. Seçerseniz **Get/Set yöntemleri** uygulama türü iki yöntem bunu uygulayan sınıfa eklenir.  
+-   MFC görüntüleme seçerseniz için **üye değişkeni** uygulama türü bir yöntem ve bir değişken, kendisini uygulayan sınıfa eklenir. Seçerseniz **Get/Set yöntemleri** uygulama türü iki yöntem bunu uygulayan bir sınıfa eklenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM arabirimi oluşturma](../ide/creating-a-com-interface-visual-cpp.md)   
  [COM arabirimini düzenleme](../ide/editing-a-com-interface.md)   
- [Bileşen Nesne modeli](http://msdn.microsoft.com/library/windows/desktop/ms694363)   
- [Arabirim işaretçileri ve arabirimleri](http://msdn.microsoft.com/library/windows/desktop/ms688484)
+ [Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model)   
+ [Arabirim işaretçileri ve arabirimler](/windows/desktop/com/interface-pointers-and-interfaces)

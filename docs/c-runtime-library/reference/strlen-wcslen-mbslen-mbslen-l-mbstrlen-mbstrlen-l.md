@@ -58,19 +58,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35885dfb6a7432796688e35032e06d0aec863687
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: c92c43a820bc1c8694689c9d99a47b0c46b484e1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451595"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209455"
 ---
 # <a name="strlen-wcslen-mbslen-mbslenl-mbstrlen-mbstrlenl"></a>strlen, wcslen, _mbslen, _mbslen_l, _mbstrlen, _mbstrlen_l
 
-Geçerli yerel veya belirtilen yerel ayar kullanarak bir dize uzunluğunu alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
+Geçerli yerel ayarı veya belirtilen yerel kullanarak bir dizenin uzunluğunu alır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [strnlen, strnlen_s, wcsnlen, wcsnlen_s, _mbsnlen, _mbsnlen_l, _mbstrnlen, _mbstrnlen_l](strnlen-strnlen-s.md)
 
 > [!IMPORTANT]
-> **_mbslen**, **_mbslen_l**, **_mbstrlen**, ve **_mbstrlen_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbslen**, **_mbslen_l**, **_mbstrlen**, ve **_mbstrlen_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -100,20 +100,20 @@ size_t _mbstrlen_l(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Sonlandırılmış dize.
+Null ile sonlandırılmış dize.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri karakter sayısını verir *str*, terminal null dışında. Hiçbir değer döndürmeyen dışında hatayı belirtmek için ayrılmış **_mbstrlen** ve **_mbstrlen_l**, hangi return `((size_t)(-1))` dize geçersiz bir birden çok baytlı karakter içeriyorsa.
+Bu işlevlerin her biri, karakter sayısını döndürür *str*, terminal null dışında. Dışında hatayı belirtmek için dönüş değeri ayrılmış **_mbstrlen** ve **_mbstrlen_l**, hangi iade `((size_t)(-1))` , geçersiz bir çok baytlı karakter dizesi içerir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**strlen** birden çok baytlı karakter dizesi içeriyor olsa bile dönüş değeri her zaman bayt sayısına eşit olduğu şekilde bir dizeyi tek baytlı karakter dizesi olarak yorumlar. **wcslen** bir joker karakter sürümü **strlen**; bağımsız değişkeni **wcslen** bir joker karakter dize ve karakter sayısını wide (iki baytlık) karakter olmalıdır. **wcslen** ve **strlen** Aksi takdirde aynı şekilde davranır.
+**strlen** çok baytlı karakter dizesi içeriyor olsa bile, dönüş değeri her zaman bayt sayısına eşit olacak şekilde bir dizeyi bir tek baytlı karakter dizesi yorumlar. **wcslen** geniş karakterli sürümüdür **strlen**; bağımsız değişkeni **wcslen** bir geniş karakterli dize ve karakter sayısı (iki baytlık) geniş karakter olmalıdır. **wcslen** ve **strlen** aynı şekilde davranır.
 
-**Güvenlik Notu** bu işlevlerin bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** bu işlevler bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -123,9 +123,9 @@ Bu işlevlerin her biri karakter sayısını verir *str*, terminal null dışın
 |**_tcsclen**|**strlen**|**_mbslen**|**wcslen**|
 |**_tcsclen_l**|**strlen**|**_mbslen_l**|**wcslen**|
 
-**_mbslen** ve **_mbslen_l** çok baytlı karakter dizesi içinde birden çok baytlı karakterlerin sayısını döndürür ancak çok baytlı karakter geçerliliğini sınamayın. **_mbstrlen** ve **_mbstrlen_l** sınamak için çok baytlı karakter geçerlilik ve çok baytlı karakter sıralarının algılar. Dize için aktarılırsa **_mbstrlen** veya **_mbstrlen_l** kod sayfası, işlev dönüşleri -1 ve ayarlar için geçersiz bir birden çok baytlı karakter içeriyor **errno** için**EILSEQ**.
+**_mbslen** ve **_mbslen_l** çok baytlı karakter geçerliliğini sınamayın ancak bir çok baytlı karakter dizesi içinde birden çok baytlı karakter sayısını döndürür. **_mbstrlen** ve **_mbstrlen_l** çok baytlı karakter geçerliliğini sınamak ve çok baytlı karakter sıralarını tanır. Dize geçirilmiş **_mbstrlen** veya **_mbstrlen_l** kod sayfası, işlev -1 döndürür ve kümeleri için geçersiz bir çok baytlı karakter içeren **errno** için**EILSEQ**.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -136,7 +136,7 @@ Bu işlevlerin her biri karakter sayısını verir *str*, terminal null dışın
 |**_mbslen**, **_mbslen_l**|\<Mbstring.h >|
 |**_mbstrlen**, **_mbstrlen_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

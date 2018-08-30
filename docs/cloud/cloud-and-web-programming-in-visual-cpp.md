@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 162abbae937e6eeae62dd9dfcd924af44dfd7270
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f946a0e24790fd894e4eb908e77163306130e46a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610046"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214642"
 ---
 # <a name="cloud-and-web-programming-in-visual-c"></a>Visual C++'da Bulut ve Web Programlama
 
@@ -27,7 +27,7 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
 - [Windows Azure mobil hizmetler](http://www.windowsazure.com/develop/mobile/)
 
-   Windows Azure mobil Hizmetler'e bağlanmak için evrensel Windows Platformu (UWP) uygulamaları veya Windows masaüstü uygulamalarında kullanabileceğiniz yerel API'ler sağlar. Web sitesindeki örneklerin çoğu C# ' de olsa da, C++ de kullanabilirsiniz. Daha fazla bilgi için [hızlı başlangıç: C++ kullanarak mobil hizmet ekleme](http://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
+   Windows Azure mobil Hizmetler'e bağlanmak için evrensel Windows Platformu (UWP) uygulamaları veya Windows masaüstü uygulamalarında kullanabileceğiniz yerel API'ler sağlar. Web sitesindeki örneklerin çoğu C# ' de olsa da, C++ de kullanabilirsiniz. Daha fazla bilgi için [hızlı başlangıç: C++ kullanarak mobil hizmet ekleme](https://msdn.microsoft.com/library/windows/apps/dn263181.aspx).
 
 - [C++ için Microsoft Azure depolama istemci kitaplığı](https://blogs.msdn.microsoft.com/windowsazurestorage/2015/04/29/microsoft-azure-storage-client-library-for-c-v1-0-0-general-availability/)
 
@@ -54,7 +54,7 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
    Windows Masaüstü (7 +), Windows Server (2012 +), Evrensel Windows platformu, Linux, OSX, Android ve iOS destekler. 
 
-- [Windows::Web::http::HttpClient](https://msdn.microsoft.com/en-us/library/windows/apps/windows.web.http.httpclient.aspx)
+- [Windows::Web::http::HttpClient](https://msdn.microsoft.com/library/windows/apps/windows.web.http.httpclient.aspx)
 
    System.Web ad alanında aynı ada sahip bir .NET Framework sınıf üzerinde bir Windows çalışma zamanı HTTP istemci sınıfı modellenir. `HttpClient` tam olarak destekler, zaman uyumsuz indirin ve HTTP ve özel HTTP işleyicilerinin kanala ekleme etkinleştir kanal filtreleri üzerinden yükleyin. Windows SDK, ölçülmüş ağlar, OAuth kimlik doğrulaması ve daha fazlası için örnek filtreler içerir. Kullanmanızı tavsiye ederiz hedefleyen Evrensel Windows platformu uygulamaları için `Windows::Web:HttpClient` sınıfı. 
 
@@ -62,7 +62,7 @@ C++'da, web ve buluta bağlamak için birkaç seçeneğiniz vardır.
 
    HTTP üzerinden Internet'e bağlanmak için Windows çalışma zamanı uygulamaları veya Windows masaüstü uygulamalarında kullanabilirsiniz ve sorunu GET, PUT ve diğer HTTP komutlarını yerel bir COM arabirimi sağlar. Daha fazla bilgi için [izlenecek yol: görevleri kullanarak bağlanma ve XML HTTP isteklerini](../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md).
 
-- [Windows Internet (WinINet)](http://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
+- [Windows Internet (WinINet)](https://msdn.microsoft.com/library/windows/desktop/aa385331\(v=vs.85\).aspx)
 
    Internet'e bağlanmak için Windows masaüstü uygulamalarında kullanabileceğiniz Windows API.
 

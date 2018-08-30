@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8fe604074b843e7c0b76c2e671e0abd9e40770a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 232dfb803e9327b857d26a4294786c2742a1143c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598466"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215974"
 ---
 # <a name="include-c"></a>include (C++)
 
@@ -45,7 +45,7 @@ Oluşturulan .idl dosyasına dahil istediğiniz bir dosya adı.
 
 **Dahil** C++ öznitelik neden olan bir `#include` altına yerleştirilecek deyimi `import "docobj.idl"` oluşturulan .idl dosyasındaki deyimi.
 
-**Dahil** C++ özniteliği ile aynı işlevlere sahip [dahil](http://msdn.microsoft.com/library/windows/desktop/aa367052) MIDL özniteliği.
+**Dahil** C++ özniteliği ile aynı işlevlere sahip [dahil](/windows/desktop/Midl/include) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

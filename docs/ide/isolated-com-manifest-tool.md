@@ -17,17 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c425a71f8bb8a7972ade29fb0d18cf3eab7debb5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 59b19a35a70b3bdadd935f06ff7d9ae1ce7d7d95
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330187"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216386"
 ---
-# <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>COM, bildirim aracı, yapılandırma özellikleri yalıtılmış &lt;Projectname&gt; özellik sayfaları iletişim kutusu
-Belirtmek için bu iletişim kutusunu kullanın **yalıtılmış COM** seçenekleri [Mt.exe](http://msdn.microsoft.com/library/aa375649).  
+# <a name="isolated-com-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Yalıtılmış COM, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
+Bu iletişim kutusunu belirtin kullanacağınız **yalıtılmış COM** seçenekleri [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
   
- Bu özellik sayfası iletişim kutusu erişmek için özellik sayfaları projenizi veya özellik sayfasını açın. Genişletme **bildirim aracı** düğümü altında **ortak özellikleri**ve ardından **yalıtılmış COM**.  
+ Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sayfası için özellik sayfalarını açın. Genişletin **bildirim aracında** düğümünde **ortak özellikler**ve ardından **yalıtılmış COM**.  
   
 ## <a name="task-list"></a>Görev Listesi  
   
@@ -35,19 +35,19 @@ Belirtmek için bu iletişim kutusunu kullanın **yalıtılmış COM** seçenekl
   
 ## <a name="uielement-list"></a>UIElement Listesi  
  **Tür kitaplığı dosyası**  
- Bildirim aracı bildirim dosyası oluşturmak için kullanacağı türü kitaplık dosyası (.tlb dosyası) adını belirtmek için TLB seçeneğini kullanır.  
+ Bildirim aracı, bildirim dosyası oluşturmak için kullanacağı tür kitaplığı dosyası (.tlb dosyası) adını belirtmek için/TLB seçeneğini kullanır.  
   
  **Kaydedici betik dosyası**  
- Bildirim aracı bildirim dosyası oluşturmak için kullanacağı kayıt komut dosyasını (.rgs dosyası) adını belirtmek için /rgs seçeneğini kullanır.  
+ Bildirim aracı, bildirim dosyası oluşturmak için kullanacağı Kaydedici betik dosyasını (.rgs dosyası) adını belirtmek için /rgs seçeneğini kullanır.  
   
- **Bileşen dosya adı**  
- Bildirim aracı oluşturacak kaynağın adını belirtmek için / dll seçeneğini kullanır. Bu özellik için bir değer girmelisiniz olduğunda ya da değerleri **türü kitaplık dosyası** veya **Kaydedici betik dosyası** belirtilir.  
+ **Bileşen dosyası adı**  
+ Bildirim aracı üreten kaynağın adını belirtmek için/dll seçeneğini kullanır. Bu özellik için bir değer girin, ya da değerler **tür kitaplığı dosyası** veya **Kaydedici betik dosyasını** belirtilir.  
   
- **Değişiklik dosyası**  
- .Rgs dosyasındaki değiştirilebilir dizeleri değerlerini içeren dosyanın tam yolunu belirtmek için /replacements seçeneğini kullanır.  
+ **Yenileme dosyası**  
+ /Replacements seçenek .rgs dosyasındaki değiştirilebilir dizeleri için değerler içeren dosyanın tam yolunu belirtmek için kullanır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190)   
+ [Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)   
  [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)   
  [Bildirim aracı özellik sayfaları](../ide/manifest-tool-property-pages.md)   
  [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)   

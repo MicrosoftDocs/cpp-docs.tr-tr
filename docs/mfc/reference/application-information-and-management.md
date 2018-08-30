@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cfc0b62fd3008ae18ae82703bfb896d56dba1de
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b6793cbb120b44456a880a47ffd114c346662376
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337375"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208891"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Tek bir uygulama yazdığınızda, oluşturduğunuz [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesneye. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesneye. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
@@ -96,7 +96,7 @@ CWinThread* AfxBeginThread(
  İçin işlev bildiriminde bulunan parametrede gösterildiği denetim işlevine iletilecek parametre *pfnThreadProc*.  
   
  *nPriority*  
- İş parçacığının istenen önceliği. Tam listesi ve kullanılabilir açıklaması için bkz. [SetThreadPriority](http://msdn.microsoft.com/library/windows/desktop/ms686277) Windows SDK.  
+ İş parçacığının istenen önceliği. Tam listesi ve kullanılabilir açıklaması için bkz. [SetThreadPriority](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setthreadpriority) Windows SDK.  
   
  *nStackSize*  
  Yeni iş parçacığı yığınının bayt cinsinden boyutunu belirtir. 0 ise, oluşturulan iş parçacığıyla aynı boyutta bir yığına için yığın boyutu varsayılan olarak ayarlanır.  
@@ -109,7 +109,7 @@ CWinThread* AfxBeginThread(
 - **0** oluşturduktan hemen sonra iş parçacığı başlatılamıyor.  
   
  *lpSecurityAttrs*  
- İşaret eden bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) iş parçacığı için güvenlik özniteliklerini belirten yapısı. NULL ise, oluşturulan iş parçacığıyla aynı güvenlik öznitelikleri kullanılır. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ İşaret eden bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) iş parçacığı için güvenlik özniteliklerini belirten yapısı. NULL ise, oluşturulan iş parçacığıyla aynı güvenlik öznitelikleri kullanılır. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan iş parçacığı nesnesi veya bir hata oluşursa NULL işaretçisi.  
@@ -178,7 +178,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
  *lpszName*  
  Kaynak kimliğini içeren bir dize işaretçisi    
  *lpszType*  
- Kaynak türü için bir işaretçi. Kaynak türleri listesi için bkz. [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) Windows SDK.  
+ Kaynak türü için bir işaretçi. Kaynak türleri listesi için bkz. [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) Windows SDK.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaynak içeren modül için bir tanıtıcı.  
@@ -506,7 +506,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
  İşlev başarılı olursa, dönüş değeri modülüne işleyicisidir. İşlev başarısız olursa, dönüş değeri NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanılabilir bir tanıtıcı döndürür [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212) DLL işlevin adresini almak için. `AfxLoadLibrary` Ayrıca diğer yürütülebilir modüllerin eşlemek için kullanılabilir.  
+ Kullanılabilir bir tanıtıcı döndürür [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212) DLL işlevin adresini almak için. `AfxLoadLibrary` Ayrıca diğer yürütülebilir modüllerin eşlemek için kullanılabilir.  
   
  Her işlem, her yüklenen kitaplık modülü için bir başvuru sayısını tutar. Her zaman bu başvuru sayısının artırılması `AfxLoadLibrary` çağrılır ve her zaman azaltılır `AfxFreeLibrary` çağrılır. Başvuru sayısı sıfır ulaştığında, çağıran işlemin adres alanından eşlenmemiş bir modüldür, tanıtıcı artık geçerli değil.  
   
@@ -559,7 +559,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
   
 ### <a name="parameters"></a>Parametreler  
  *lpWndClass*  
- İşaretçi bir [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) kaydedilecek pencere sınıfı hakkında bilgi içeren yapıya. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ İşaretçi bir [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) kaydedilecek pencere sınıfı hakkında bilgi içeren yapıya. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sınıf başarıyla kaydettirildi TRUE; Aksi durumda FALSE.  
@@ -588,7 +588,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
   
 ### <a name="parameters"></a>Parametreler  
  *nClassStyle*  
- Windows sınıf stil veya stilleri, bit düzeyinde OR kullanılarak oluşturulan bir birleşimini belirtir ( **&#124;**) işleci, pencere sınıfı için. Sınıf stilleri bir listesi için bkz. [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı. NULL ise, varsayılan değerleri şu şekilde ayarlanır:  
+ Windows sınıf stil veya stilleri, bit düzeyinde OR kullanılarak oluşturulan bir birleşimini belirtir ( **&#124;**) işleci, pencere sınıfı için. Sınıf stilleri bir listesi için bkz. [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) Windows SDK'sındaki yapısı. NULL ise, varsayılan değerleri şu şekilde ayarlanır:  
   
 -   Kullanıcı fare çift tıkladığında hangi gönderimler pencere yordamını iletileri çift CS_DBLCLKS için fare stilini ayarlar.  
   
@@ -602,7 +602,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
  İmleç kaynak penceresi sınıfından oluşturulan her pencere yüklenmesi için bir tanıtıcı belirtir. Varsayılan değerini kullanırsanız **0**, standart IDC_ARROW imleci alır.  
   
  *hbrBackground*  
- Fırça kaynağı penceresi sınıfından oluşturulan her pencere yüklenmesi için bir tanıtıcı belirtir. Varsayılan değerini kullanırsanız **0**NULL arkaplan Fırçası olacaktır ve pencerenizi varsayılan olarak, kendi arka plan işlenirken silecek değil [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055).  
+ Fırça kaynağı penceresi sınıfından oluşturulan her pencere yüklenmesi için bir tanıtıcı belirtir. Varsayılan değerini kullanırsanız **0**NULL arkaplan Fırçası olacaktır ve pencerenizi varsayılan olarak, kendi arka plan işlenirken silecek değil [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd).  
   
  *hIcon*  
  Pencere sınıfından oluşturulan her penceresinde yüklenmesi için simge kaynağı için bir tanıtıcı belirtir. Varsayılan değerini kullanırsanız **0**, standart, el Sallayan bayrağı Windows logo simgesini alırsınız.  

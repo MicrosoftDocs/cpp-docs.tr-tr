@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eec47e9810e0cc846cc351330512256a32f95aac
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e6ef9a28af02cbb22eb4e3d2ceaad206a94d6309
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406851"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199398"
 ---
 # <a name="overview-of-file-translation"></a>Dosya Çevirisine Genel Bakış
 C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan oluşur. Bu dosyaların her biri, aşağıdaki kavramsal sırayla çevrilir (gerçek sıra "gibi" kuralını izler: çeviri bu adımlar uygulanmış gibi gerçekleşmelidir):  
@@ -54,7 +54,7 @@ C++ programları, C programlarında olduğu gibi bir veya daha fazla dosyadan ol
   
 - Önceden tanımlanmış bir makro `__cplusplus`, yalnızca C++ için tanımlanır. Bkz: [önceden tanımlanmış makrolar](../preprocessor/predefined-macros.md) içinde *önişlemci başvurusu* daha fazla bilgi için.  
   
-- C önişlemcisi C++ işleçlerini tanımaz: **.\*** , **-> \***, ve `::`. Bkz: [işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md) ve [ifadeleri](../cpp/expressions-cpp.md), işleçler hakkında daha fazla bilgi.  
+- C önişlemcisi C++ işleçlerini tanımaz: **.** <strong>\*</strong>, **->** <strong>\*</strong>, ve **::**. Bkz: [işleçleri](../cpp/cpp-built-in-operators-precedence-and-associativity.md) ve [ifadeleri](../cpp/expressions-cpp.md), işleçler hakkında daha fazla bilgi.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

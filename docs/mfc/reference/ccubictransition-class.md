@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8697e52368fd407d1c325990552ee9851d48a76
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: d82d61476e4af024eff53c0943a8a9e293c8d285
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953226"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210750"
 ---
 # <a name="ccubictransition-class"></a>CCubicTransition sınıfı
-Küp geçiş yalıtır.  
+Bir üçüncü derece geçişi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,7 +48,7 @@ class CCubicTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCubicTransition::CCubicTransition](#ccubictransition)|Bir geçiş nesnesi oluşturur ve parametreleri başlatır.|  
+|[CCubicTransition::CCubicTransition](#ccubictransition)|Bir geçiş nesnesi oluşturur ve parametrelerini başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -60,12 +60,12 @@ class CCubicTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CCubicTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
-|[CCubicTransition::m_dblFinalVelocity](#m_dblfinalvelocity)|Geçiş işleminin sonunda değişkeni hız.|  
+|[CCubicTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
+|[CCubicTransition::m_dblFinalVelocity](#m_dblfinalvelocity)|Geçiş sonunda değişkenin hız.|  
 |[CCubicTransition::m_duration](#m_duration)|Geçiş süresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir küp geçiş sırasında animasyon değişkenin değerini belirtilen hızlarda bitiş geçiş süresini üzerinden belirtilen son değeri başlangıç değerinden değiştirir. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir üçüncü derece geçişi sırasında animasyon değişkenin değerini belirtilen bir hızı bitiş geçiş süresi boyunca belirtilen son değer için başlangıç değerini değiştirir. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -78,7 +78,7 @@ class CCubicTransition : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="ccubictransition"></a>  CCubicTransition::CCubicTransition  
- Bir geçiş nesnesi oluşturur ve parametreleri başlatır.  
+ Bir geçiş nesnesi oluşturur ve parametrelerini başlatır.  
   
 ```  
 CCubicTransition(
@@ -88,14 +88,14 @@ CCubicTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Süre*  
+ *Süresi*  
  Geçiş süresi.  
   
  *finalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
  *finalVelocity*  
- Geçiş işleminin sonunda değişkeni hız.  
+ Geçiş sonunda değişkenin hız.  
   
 ##  <a name="create"></a>  CCubicTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -108,20 +108,20 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_dblfinalvalue"></a>  CCubicTransition::m_dblFinalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
 ##  <a name="m_dblfinalvelocity"></a>  CCubicTransition::m_dblFinalVelocity  
- Geçiş işleminin sonunda değişkeni hız.  
+ Geçiş sonunda değişkenin hız.  
   
 ```  
 DOUBLE m_dblFinalVelocity;  

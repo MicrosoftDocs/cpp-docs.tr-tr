@@ -29,12 +29,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 505049d6580f41253a483dfe1c64608d0ea9ed3d
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 0b5a352d10c1fd1f825cecbe3d6a1083f6efd425
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110014"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212175"
 ---
 # <a name="reflection-ccli"></a>Yansıma (C++/CLI)
 
@@ -42,12 +42,12 @@ Yansıma bilinen veri türleri, çalışma zamanında denetlenmesine olanak sağ
 
 Sağlanan derleme adı için tanımlayıcı adı olduğunu unutmayın (bkz [bkz](/dotnet/framework/app-domains/create-and-use-strong-named-assemblies)), derleme sürümü, kültürü ve imza bilgilerini içerir. Ayrıca, veri türünün tanımlandığı ad alanı adı, temel sınıfın adı ile birlikte alınabilir olduğunu unutmayın.
 
-Yansıma özelliklerine erişmek için en yaygın yollarından biri sayesinde <xref:System.Object.GetType%2A> yöntemi. Bu yöntem tarafından sağlanan [System::Object](https://msdn.microsoft.com/en-us/library/system.object.aspx), hangi atık olarak toplanmış tüm sınıflar türetilen öğesinden.
+Yansıma özelliklerine erişmek için en yaygın yollarından biri sayesinde <xref:System.Object.GetType%2A> yöntemi. Bu yöntem tarafından sağlanan [System::Object](https://msdn.microsoft.com/library/system.object.aspx), hangi atık olarak toplanmış tüm sınıflar türetilen öğesinden.
 
 > [!NOTE]
 > Visual C++ derleyicisi ile .exe yansıma .exe ile oluşturulursa yalnızca izin **/CLR: pure** veya **/CLR: safe** derleyici seçenekleri. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri, Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de kullanılamaz. Bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için.
 
-Daha fazla bilgi için [System.Reflection Namespace](https://msdn.microsoft.com/en-us/library/system.reflection.aspx)
+Daha fazla bilgi için [System.Reflection Namespace](https://msdn.microsoft.com/library/system.reflection.aspx)
 
 ## <a name="example-gettype"></a>Örnek: GetType
 
@@ -188,9 +188,9 @@ public:
 
 ## <a name="example-inspection-of-assemblies"></a>Örnek: inceleme derleme
 
-Yukarıdaki kod vcpp_reflection_6.dll adlı bir DLL içine derlenir, bu derlemenin içeriğini incelemek için yansıma kullanabilirsiniz. Bu statik yansıma API'si işlevinin kullanılmasına [Assembly::Load](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.load.aspx) derlemesi yüklenemiyor. Bu işlev adresini döndürür bir **derleme** içindeki türler ve modüller hakkında sorgulanabilir bir nesne.
+Yukarıdaki kod vcpp_reflection_6.dll adlı bir DLL içine derlenir, bu derlemenin içeriğini incelemek için yansıma kullanabilirsiniz. Bu statik yansıma API'si işlevinin kullanılmasına [Assembly::Load](https://msdn.microsoft.com/library/system.reflection.assembly.load.aspx) derlemesi yüklenemiyor. Bu işlev adresini döndürür bir **derleme** içindeki türler ve modüller hakkında sorgulanabilir bir nesne.
 
-Yansıma sistem derleme, bir dizi başarıyla yüklendikten sonra **türü** nesneleri ile alınır [Assembly::GetTypes](https://msdn.microsoft.com/en-us/library/system.reflection.assembly.gettypes.aspx) işlevi. Bu durumda, yalnızca bir sınıf tanımlanır ancak her dizi öğesi farklı bir türle ilgili bilgi içerir. Bir döngü kullanarak her **türü** kullanarak tür üyeleri hakkında bu dizinin içinde sorgulanır **Type::GetMembers** işlevi. Bu işlev bir dizi döndürür **MethodInfo** nesneleri, üye işlevi, veri üyesi veya özellik türü hakkında bilgi içeren her bir nesne.
+Yansıma sistem derleme, bir dizi başarıyla yüklendikten sonra **türü** nesneleri ile alınır [Assembly::GetTypes](https://msdn.microsoft.com/library/system.reflection.assembly.gettypes.aspx) işlevi. Bu durumda, yalnızca bir sınıf tanımlanır ancak her dizi öğesi farklı bir türle ilgili bilgi içerir. Bir döngü kullanarak her **türü** kullanarak tür üyeleri hakkında bu dizinin içinde sorgulanır **Type::GetMembers** işlevi. Bu işlev bir dizi döndürür **MethodInfo** nesneleri, üye işlevi, veri üyesi veya özellik türü hakkında bilgi içeren her bir nesne.
 
 Yöntemlerin listesi işlevleri açıkça içeren Not tanımlanan **TestClass** ve işlev örtük olarak devralındığı **System::Object** sınıfı. .NET yerine Visual C++ sözdizimi tanımlanmakta bir parçası olarak, Özellikler get/set işlevleri tarafından erişilen temel alınan veri üyesi olarak görünür. Get/set işlevleri, normal yöntemler olarak bu listede görünür. Yansıma, ortak dil çalışma zamanı değil Visual C++ Derleyici tarafından desteklenir.
 

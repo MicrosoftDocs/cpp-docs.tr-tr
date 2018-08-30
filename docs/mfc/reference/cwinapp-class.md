@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c756de90967b4c9178d5e6a584990cc53ad7786c
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 58509ec4f6a3773478e1bc544f28baf92d7e97b7
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900944"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206898"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -270,7 +270,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işleme gerçekleştirmek için geçersiz kılın.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|Bir dosyadan bir belgeyi açmak için framework tarafından çağırılır.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|Bağımsız parametreleri ve komut satırı bayrakları ayrıştırır.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934).|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|Uygulamaya ulaşmadan önce belirli iletileri kesintiye uğratır.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Komut satırı bağımsız değişkenleri ve bayrakları işler.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Uygulamanın iletiyi ve komut işleyicileri tarafından oluşturulan tüm işlenmeyen özel durumları yakalar.|
@@ -860,7 +860,7 @@ BOOL GetPrinterDeviceDefaults(struct tagPDA* pPrintDlg);
 ### <a name="parameters"></a>Parametreler
 
 *pPrintDlg*  
-Bir işaretçi bir [PRINTDLG](http://msdn.microsoft.com/library/windows/desktop/ms646843) yapısı.
+Bir işaretçi bir [PRINTDLG](/windows/desktop/api/commdlg/ns-commdlg-tagpda) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -912,7 +912,7 @@ Bu üye işlevi büyük/küçük harfe duyarlı, bu nedenle değil dizelerde *lp
 > `GetProfileBinary` bir arabelleği ayırır ve onun adresini döndürür \* *ppData*. Arabellek kullanarak boşaltma için çağıran sorumludur **delete []**.
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -953,7 +953,7 @@ Bu üye işlevi onaltılık gösterim değeri destekler. INI dosyası. İmzalı 
 Bu üye işlevi büyük/küçük harfe duyarlı, bu nedenle değil dizelerde *lpszSection* ve *lpszEntry* parametreleri durumda farklı olabilir.
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -990,7 +990,7 @@ Uygulamanın dizeden dönüş değeridir. INI dosyası veya *lpszDefault* dize b
 ### <a name="remarks"></a>Açıklamalar
 
 > [!IMPORTANT]
-> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlev tarafından döndürülen veriler sonlandırıldı mutlaka NULL değil ve çağıran doğrulaması gerçekleştirmeniz gerekir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="example"></a>Örnek
 
@@ -1073,7 +1073,7 @@ Uygulama başlatma kavramsal olarak iki bölümlere ayrılmıştır: ilk işiniz
 Geçersiz kılma `InitInstance` uygulamanızın altında Windows çalıştıran her yeni örneği başlatmak için. Genellikle, geçersiz kılmanız `InitInstance` , ana pencere nesnesi oluşturmak ve ayarlamak için `CWinThread::m_pMainWnd` pencereye işaret edecek şekilde veri üyesi. Bu üye işlevi geçersiz kılma hakkında daha fazla bilgi için bkz: [CWinApp: uygulama sınıfı](../../mfc/cwinapp-the-application-class.md).
 
 > [!NOTE]
-> MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
+> MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).
 
 ### <a name="example"></a>Örnek
 
@@ -1109,7 +1109,7 @@ HCURSOR LoadCursor(LPCTSTR lpszResourceName) const;  HCURSOR LoadCursor(UINT nID
 İmleç kaynağının adını içeren bir boş sonlandırılmış dizeye işaret eder. Kullanabileceğiniz bir `CString` bu bağımsız değişkeni.
 
 *nIDResource*  
-İmleç kaynağının kimliği. Kaynakların listesi için bkz. [LoadCursor](http://msdn.microsoft.com/library/windows/desktop/ms648391) Windows SDK.
+İmleç kaynağının kimliği. Kaynakların listesi için bkz. [LoadCursor](/windows/desktop/api/winuser/nf-winuser-loadcursora) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1152,7 +1152,7 @@ Başarılı olursa simge tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.
 Kullanabileceğiniz [LoadStandardIcon](#loadstandardicon) veya [LoadOEMIcon](#loadoemicon) önceden tanımlanmış Windows simgeleri erişmek için üye işlevi.
 
 > [!NOTE]
-> Bu üye işlevi Win32 API işlevini çağırır [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072), hangi yalnızca yükleyebilirsiniz simge boyutu SM_CXICON ve SM_CYICON sistem ölçüm değerleri için uyar.
+> Bu üye işlevi Win32 API işlevini çağırır [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona), hangi yalnızca yükleyebilirsiniz simge boyutu SM_CXICON ve SM_CYICON sistem ölçüm değerleri için uyar.
 
 ##  <a name="loadoemcursor"></a>  CWinApp::LoadOEMCursor
 
@@ -1262,7 +1262,7 @@ HICON LoadStandardIcon(LPCTSTR lpszIconName) const;
 ### <a name="parameters"></a>Parametreler
 
 *lpszIconName*  
-Önceden tanımlanmış bir Windows simge belirten bir bildirim sabit tanımlayıcısı. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Önceden tanımlanmış değerlerden ve açıklamalarının listesi için bkz. *lpIconName* parametresinde [LoadIcon](http://msdn.microsoft.com/library/windows/desktop/ms648072) Windows SDK.
+Önceden tanımlanmış bir Windows simge belirten bir bildirim sabit tanımlayıcısı. Bu tanımlayıcılar, WİNDOWS'da tanımlanır. H Önceden tanımlanmış değerlerden ve açıklamalarının listesi için bkz. *lpIconName* parametresinde [LoadIcon](/windows/desktop/api/winuser/nf-winuser-loadicona) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1444,7 +1444,7 @@ LPCTSTR m_pszAppName;
 
 Uygulama adı için geçirilen parametre gelebilir [CWinApp](#cwinapp) Oluşturucusu veya kaynak dizesi, kimliği AFX_IDS_APP_TITLE ile belirtilmezse. Uygulama adı, kaynak bulunmazsa, programın gelir. EXE dosya adı.
 
-Genel işlevin döndürdüğü [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` türü genel değişkenidir **const char\***.
+Genel işlevin döndürdüğü [AfxGetAppName](application-information-and-management.md#afxgetappname). `m_pszAppName` türü genel değişkenidir **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > Bir değer atamanız durumunda `m_pszAppName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:
@@ -1465,7 +1465,7 @@ LPCTSTR m_pszExeName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Farklı [m_pszAppName](#m_pszappname), bu adı boşluk içeremez. `m_pszExeName` türü genel değişkenidir **const char\***.
+Farklı [m_pszAppName](#m_pszappname), bu adı boşluk içeremez. `m_pszExeName` türü genel değişkenidir **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > Bir değer atamanız durumunda `m_pszExeName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:
@@ -1482,7 +1482,7 @@ LPCTSTR m_pszHelpFilePath;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan olarak, çerçeve başlatır `m_pszHelpFilePath` uygulama adına ". HLP"eklenir. Yardım dosyası adını değiştirmek için Ayarla `m_pszHelpFilePath` istenen Yardım dosyasının tam adı içeren bir dize için yönlendirin. Bunu yapmak için kullanışlı bir uygulamanın yerdir [InitInstance](#initinstance) işlevi. `m_pszHelpFilePath` türü genel değişkenidir **const char\***.
+Varsayılan olarak, çerçeve başlatır `m_pszHelpFilePath` uygulama adına ". HLP"eklenir. Yardım dosyası adını değiştirmek için Ayarla `m_pszHelpFilePath` istenen Yardım dosyasının tam adı içeren bir dize için yönlendirin. Bunu yapmak için kullanışlı bir uygulamanın yerdir [InitInstance](#initinstance) işlevi. `m_pszHelpFilePath` türü genel değişkenidir **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > Bir değer atamanız durumunda `m_pszHelpFilePath`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:
@@ -1499,7 +1499,7 @@ LPCTSTR m_pszProfileName;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`m_pszProfileName` türü genel değişkenidir **const char\***.
+`m_pszProfileName` türü genel değişkenidir **const char**<strong>\*</strong>.
 
 > [!NOTE]
 > Bir değer atamanız durumunda `m_pszProfileName`, yığında dinamik olarak ayrılmalıdır. `CWinApp` Yıkıcı çağrıları **ücretsiz**(this işaretçisi ile). Çoğu kullanmak istediğiniz `_tcsdup`ayırma yapmak için çalışma zamanı kitaplığı işlevi (). Ayrıca, yeni bir değer atamadan önce geçerli bir işaretçi ile ilişkilendirilmiş bellek boşaltın. Örneğin:
@@ -1794,7 +1794,7 @@ Komut satırı bayrakları açıklaması için bkz: [CCommandLineInfo::m_nShellC
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) kısayol tuşu varsayılan uygulama gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.
+Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) kısayol tuşu varsayılan uygulama gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -2131,7 +2131,7 @@ void SelectPrinter(
 İçin bir tanıtıcı bir [DEVNAMES](../../mfc/reference/devnames-structure.md) sürücü, cihaz ve çıkış bağlantı noktası adları belirli bir yazıcı tanımlayan yapısı.
 
 *hDevMode*  
-İçin bir tanıtıcı bir [DEVMODE](http://msdn.microsoft.com/library/windows/desktop/dd183565) cihaz başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.
+İçin bir tanıtıcı bir [DEVMODE](/windows/desktop/api/wingdi/ns-wingdi-_devicemodea) cihaz başlatma ve yazıcı ortamı hakkında bilgi belirten yapısı.
 
 *bFreeOld*  
 Önceden seçilen yazıcı serbest bırakır.
@@ -2270,7 +2270,7 @@ virtual void WinHelp(
 Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.
 
 *nCmd*  
-Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows işlevi.
+Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 

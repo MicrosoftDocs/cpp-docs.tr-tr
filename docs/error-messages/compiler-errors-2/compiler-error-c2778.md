@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f8747c0f2d0434f034ac0a0b84dcce510de0e96
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d68180e2fc0c7c33e742f0ffdb3776baa50976f6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235097"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209719"
 ---
 # <a name="compiler-error-c2778"></a>Derleyici Hatası C2778
-__declspec(uuid()) Düzensiz biçimlendirilmiş GUID  
+__declspec(uuid()) içinde hatalı biçimlendirilmiş GUID  
   
  Yanlış bir GUID için sağlanan [UUID](../../cpp/uuid-cpp.md) genişletilmiş öznitelik.  
   
- GUID, onaltılık sayı aşağıdaki biçimde bir dize olması gerekir:  
+ GUID, bir dize onaltılık sayı aşağıdaki biçimde olmalıdır:  
   
 ```  
 // C2778a.cpp  
@@ -37,9 +37,9 @@ struct __declspec(uuid("00000000-0000-0000-0000-000000000000")) A {};
 struct __declspec(uuid("{00000000-0000-0000-0000-000000000000}")) B{};  
 ```  
   
- `uuid` Genişletilmiş öznitelik kabul tarafından tanınan dizeleri [CLSIDFromString](http://msdn.microsoft.com/library/windows/desktop/ms680589), ile veya parantezi sınırlayıcıları olmadan.  
+ `uuid` Genişletilmiş öznitelik tarafından tanınan dizeleri kabul [CLSIDFromString](/windows/desktop/api/combaseapi/nf-combaseapi-clsidfromstring), ile veya küme ayracı sınırlayıcılar.  
   
- Aşağıdaki örnek C2778 oluşturur:  
+ Aşağıdaki örnek, C2778 oluşturur:  
   
 ```  
 // C2778b.cpp  

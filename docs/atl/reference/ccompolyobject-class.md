@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b5cff88aab5a4b069d96808755ce92d61f32fff
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9b739a2c4388877bc463a6345dcfe347d8638b27
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464883"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206378"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 Bu sınıfın uyguladığı `IUnknown` toplanmış veya toplanmayan bir nesne için.  
@@ -76,7 +76,7 @@ class CComPolyObject : public IUnknown,
 |[CComPolyObject::m_contained](#m_contained)|Temsilciler `IUnknown` çağrıları için dış bilinmeyen nesne toplanırsa veya için `IUnknown` nesne değil toplanırsa nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComPolyObject` uygulayan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmış veya toplanmayan bir nesne için.  
+ `CComPolyObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanmış veya toplanmayan bir nesne için.  
   
  Örneği `CComPolyObject` oluşturulur, dış değeri bilinmeyen denetlenir. NULL ise `IUnknown` toplanmayan bir nesne için uygulanır. Dış bilinmeyen NULL değilse `IUnknown` toplanan nesne için uygulanır.  
   

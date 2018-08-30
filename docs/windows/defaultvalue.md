@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70be45d1a7221590912ea71b38d3aa4404197df1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4df3f6f72ec7a83186cc3d96b2dda837bdd1cfff
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599134"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208002"
 ---
 # <a name="defaultvalue"></a>defaultvalue
 
@@ -41,7 +41,7 @@ Parametre için varsayılan değer.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Defaultvalue** C++ özniteliği ile aynı işlevlere sahip [defaultvalue](http://msdn.microsoft.com/library/windows/desktop/aa366793) MIDL özniteliği.
+**Defaultvalue** C++ özniteliği ile aynı işlevlere sahip [defaultvalue](/windows/desktop/Midl/defaultvalue) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

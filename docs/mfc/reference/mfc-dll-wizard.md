@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c58362b46050a7e2a504a4cd78085975e1c5e1a6
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 9b352d3f99ccee103f7f08e54fb96634bad4a32a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025776"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216493"
 ---
 # <a name="mfc-dll-wizard"></a>MFC DLL Sihirbazı
 MFC DLL projesi oluşturmak için MFC DLL Sihirbazı'nı kullandığınızda, çalışan bir başlatıcı uygulama yerleşik işlevsellikle, size derlenmiş, temel özelliklerinde uygulayacak bir [DLL](../../build/dlls-in-visual-cpp.md). MFC başlangıç paketi programının C++ kaynak (.cpp) dosyaları, kaynak (.rc) dosyaları ve proje (.vcxproj) dosyasını içerir. Bu Başlatıcı dosyalarında oluşturulan kodu MFC'ye dayalı. Daha ayrıntılı bilgi için Visual Studio'da projeniz için oluşturulan Readme.txt dosyası ayrıntılara bakın ve [sınıfları ve İşlevler'ın MFC DLL Sihirbazı tarafından oluşturulan](../../mfc/reference/classes-and-functions-generated-by-the-mfc-dll-wizard.md)  
@@ -50,7 +50,7 @@ MFC DLL projesi oluşturmak için MFC DLL Sihirbazı'nı kullandığınızda, ç
  [Visual C++ proje oluşturma ve yönetme](../../ide/creating-and-managing-visual-cpp-projects.md)   
  [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
  [Proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
+ [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)   
  [MFC sınıfı](../../mfc/reference/adding-an-mfc-class.md)   
  [Üye işlevi ekleme](../../ide/adding-a-member-function-visual-cpp.md)   
  [Arabirimi uygulama](../../ide/implementing-an-interface-visual-cpp.md)   

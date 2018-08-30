@@ -1,7 +1,7 @@
 ---
 title: Proje derleme hatası PRJ0024 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59bf76aba80093bf9e8e653bdfb9fad49687a501
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb539a5f1ee5f1aa5f9d828d93fa6d0dc8690c22
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318353"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215604"
 ---
 # <a name="project-build-error-prj0024"></a>Proje Derleme Hatası PRJ0024
-Unicode yolu 'path' kullanıcının ANSI kod sayfasına çevrilemedi.  
-  
- ***yol*** özgün yol dizesini Unicode sürümüdür. Bu hata durumlarda oluşabilir ANSI için geçerli sistem kod sayfası için doğrudan çevrilemez bir Unicode yol olduğu.  
-  
- Bu hata, bilgisayarınızda yüklü olmayan bir kod sayfası kullanılarak bir sistemde geliştirilmiştir bir proje üzerinde çalışıyorsanız oluşabilir.  
-  
- Bu hata çözümü ANSI metin kullanın veya bilgisayarınızda kod sayfasını yükleyin ve sistem varsayılan olarak ayarlamak için yol güncelleştirmektir.
+
+> Unicode yolu '*yolu*' kullanıcının ANSI kodlu sayfasına çevrilemedi.
+
+*yol* orijinal yol dizesini Unicode sürümüdür. Bu hata durumlarda oluşabilir ANSI olarak geçerli kod sayfası için doğrudan çevrilemeyen Unicode yolu olduğu.
+
+Bir sistemde, bilgisayarınızda değil bir kod sayfası kullanılarak geliştirilmiş bir proje ile çalışıyorsanız, bu hata oluşabilir.
+
+Bu hata için çözüm ANSI metin kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlanmış yol güncelleştirmektir.

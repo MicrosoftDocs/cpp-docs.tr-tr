@@ -15,17 +15,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d95b6d2a69b4b40c4464136dd33a8c5231185f5
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d816d932ce518e006e5537075fe4ac7782362ad4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33329120"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206990"
 ---
 # <a name="redistributing-components-by-using-merge-modules"></a>Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma
-Visual Studio içerir [birleştirme modülleri](http://msdn.microsoft.com/library/aa367434) uygulamayla yeniden dağıtılabilir için lisanslı her Visual C++ bileşeni için. Windows Installer kurulum dosyası içinde bir birleştirme modülü derlendiğinde, belirli DLL'lerin belirli bir platforma sahip bilgisayarlara dağıtımını sağlar. Kurulum dosyanızda, birleştirme modüllerinin uygulamanız için önkoşul olduğunu belirtin. Visual Studio yüklendiğinde, birleştirme modülleri \Program Files\Merge Modules yüklenen\\. (Yalnızca debug olmayan sürümleri Visual C++ DLL'leri yeniden dağıtılabilir.) Daha fazla bilgi ve dağıtım lisanslı birleştirme modülleri listesine bir bağlantı için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
+Visual Studio içerir [birleştirme modülleri](/windows/desktop/Msi/about-merge-modules) uygulamayla dağıtılmak üzere lisanslı her Visual C++ bileşeni. Windows Installer kurulum dosyası içinde bir birleştirme modülü derlendiğinde, belirli DLL'lerin belirli bir platforma sahip bilgisayarlara dağıtımını sağlar. Kurulum dosyanızda, birleştirme modüllerinin uygulamanız için önkoşul olduğunu belirtin. Visual Studio yüklendiğinde, birleştirme modülleri Files\Merge modülleri \Program içinde yüklenen\\. (Yalnızca hata ayıklamasız sürümleri Visual C++ DLL'lerini yeniden dağıtılabilir.) Daha fazla bilgi ve yeniden dağıtım için lisanslı birleştirme modülleri listesini bağlantısını için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
- Birleştirme modüllerini yeniden dağıtılabilir Visual C++ DLL'leri yükleme %SYSTEMROOT%\system32\ klasörüne etkinleştirmek için kullanabilirsiniz. (Visual Studio kendisini bu tekniği kullanır.) Bununla birlikte, yüklemeyi yapan kullanıcı yönetici haklarına sahip değilse, bu klasöre yükleme başarısız olur.  
+ Yeniden dağıtılabilir Visual C++ DLL'lerinin %SYSTEMROOT%\system32\ klasörüne yüklenmesini etkinleştirmek için birleştirme modüllerini kullanabilirsiniz. (Visual Studio kendisi bu tekniği kullanır.) Bununla birlikte, yüklemeyi yapan kullanıcı yönetici haklarına sahip değilse, bu klasöre yükleme başarısız olur.  
   
  Uygulamanıza bakım yapmak zorunda olmadığınız ve DLL'lerin birden fazla sürümü üzerinde bağımlılıklarınızın bulunmadığı durumlar dışında, birleştirme modüllerini kullanmamanızı öneririz. Aynı DLL'nin farklı sürümlerine ilişkin birleştirme modülleri tek bir yükleyiciye dahil edilemez ve birleştirme modülleri, uygulamanızdan bağımsız olarak DLL'lerin bakımını yapmayı zorlaştırır. Bunun yerine, bir Visual C++ yeniden dağıtılabilir paketi yüklemenizi öneririz.  
   

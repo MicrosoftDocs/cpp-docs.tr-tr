@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e68cdc236759776fa327b4602343ec9ac73b9bba
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 61599d9080bf5cdce56f30ed38e6b20064032512
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338381"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216709"
 ---
 # <a name="message-map-macros-mfc"></a>İleti Eşleme Makroları (MFC)
 İleti eşlemeleri desteklemek için aşağıdaki makroları MFC sağlar:  
@@ -307,7 +307,7 @@ ON_MESSAGE( message, memberFxn )
  İşlev türü olmalıdır `afx_msg LRESULT (CWnd::*)(WPARAM, LPARAM)`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanıcı tanımlı iletiler standart Windows WM_MESSAGE iletiler iletiler ' dir. İleti kimliği seçerken, aralığı WM_USER (0x0400) içindeki değerleri 0x7FFF veya WM_APP (0x8000) 0xBFFF için kullanmanız gerekir. İleti kimliği ile ilgili daha fazla bilgi için bkz. [WM_APP](http://msdn.microsoft.com/library/windows/desktop/ms644930).  
+ Kullanıcı tanımlı iletiler standart Windows WM_MESSAGE iletiler iletiler ' dir. İleti kimliği seçerken, aralığı WM_USER (0x0400) içindeki değerleri 0x7FFF veya WM_APP (0x8000) 0xBFFF için kullanmanız gerekir. İleti kimliği ile ilgili daha fazla bilgi için bkz. [WM_APP](/windows/desktop/winmsg/wm-app).  
   
  Kullanıcı tanımlı bir ileti işleyicisi işlevini eşlenmesi gereken her ileti, ileti eşlemesi tam olarak bir ON_MESSAGE makrosu deyiminde olması gerekir.  
   
@@ -505,7 +505,7 @@ END_MESSAGE_MAP()
  **Başlık:** afxmsg_.h  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947)   
+ [RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947)   
  [Kullanıcı Tanımlı İşleyiciler](user-defined-handlers.md)
 
 ## <a name="on_registered_thread_message"></a>  ON_REGISTERED_THREAD_MESSAGE    

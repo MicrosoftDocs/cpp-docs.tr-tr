@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ba9be0fe6d75a861b82bf600f97fc1ed5dc2d64
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: cfb885a5d29c26f4a40d5b93490a06652eff1ffc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464790"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216678"
 ---
 # <a name="format-specification-syntax-printf-and-wprintf-functions"></a>Biçim belirtim Sözdizimi: printf ve wprintf işlevleri
 
@@ -85,7 +85,7 @@ Tamsayı türleri gibi `short`, `int`, `long`, `long long`ve bunların `unsigned
 |**p**|İşaretçi türü|Bağımsız değişkenin adresi onaltılık basamak olarak görüntüler.|
 |**s**|Dize|İle kullanıldığında `printf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi; ile kullanıldığında belirtir `wprintf` İşlevler, bir geniş karakter dizesini belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
 |**S**|Dize|İle kullanıldığında `printf` İşlevler, geniş karakterli bir dizedir; ile kullanıldığında belirtir `wprintf` İşlevler, bir tek baytlı veya çok baytlı karakter dizesi belirtir. İlk boş karaktere kadar veya kadar karakter görüntülenmezse *duyarlık* değerine ulaşılmadan.|
-|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](http://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
+|**Z**|`ANSI_STRING` veya `UNICODE_STRING` yapısı|Zaman adresini bir [ANSI_STRING](/windows/desktop/api/ntdef/ns-ntdef-_string) veya [UNICODE_STRING](https://msdn.microsoft.com/library/windows/hardware/ff564879.aspx) yapısı bağımsız değişkeni geçirilir, işaret ettiği arabellek içindeki dize görüntüler `Buffer` yapısı alan. Kullanım bir *boyutu* değiştiricisi öneki **w** belirtmek için bir `UNICODE_STRING` bağımsız değişken — Örneğin, `%wZ`. `Length` Yapısının alanı dize uzunluğu için bayt cinsinden ayarlanması gerekir. `MaximumLength` Yapısının alanı uzunluğu arabellek, bayt cinsinden ayarlanması gerekir.<br /><br /> Genellikle, **Z** türü karakter yalnızca bir dönüştürme belirtimi gibi kullandığınız işlevlerinde hata ayıklama sürücüde kullanılan `dbgPrint` ve `kdPrint`.|
 
 Visual Studio 2015'te başlatılmasının bir kayan nokta dönüştürme belirleyicisine karşılık gelen bağımsız değişken (**bir**, **A**, **e**, **E**, **f**, **F**, **g**, **G**) belirsiz sonsuz veya NaN, biçimlendirilmiş çıktı C99 standartlarına uyar. Bu tabloda biçimlendirilmiş çıktı:
 

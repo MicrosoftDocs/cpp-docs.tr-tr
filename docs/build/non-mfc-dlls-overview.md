@@ -15,17 +15,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 037f6d7bc80956536a7098ee67275425c41a2f68
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8acb1db66e4f6cc78ca79403aea782a936bff494
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613225"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199471"
 ---
 # <a name="non-mfc-dlls-overview"></a>MFC Dışı DLL'ler: Genel Bakış
 MFC olmayan DLL, MFC dahili olarak kullanmayan bir DLL modülüdür ve DLL'deki dışarı aktarılan işlevleri MFC veya MFC olmayan yürütülebilir dosyaları tarafından çağrılabilir. İşlevleri, genellikle standart C arabirimi kullanan MFC olmayan DLL'den dışarı aktarılır.  
   
- MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitaplıklarını](http://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK.  
+ MFC olmayan DLL'leri hakkında daha fazla bilgi için [dinamik bağlantı kitaplıklarını](https://msdn.microsoft.com/library/windows/desktop/ms682589) Windows SDK.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   

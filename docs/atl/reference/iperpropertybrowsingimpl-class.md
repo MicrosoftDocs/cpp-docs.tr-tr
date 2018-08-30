@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5c202ed5e4c7e58ab8c503cece3750f2dd606e3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c018b5c7ffa8e72ae9ce68fb23799d712a879df8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883111"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206682"
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>Iperpropertybrowsingımpl sınıfı
 Bu sınıfın uyguladığı `IUnknown` ve bir istemci bir nesnenin özellik sayfalarındaki bilgilere erişmesine izin verir.  
@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 |[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Verilen bir özellik ile ilişkili özellik sayfası CLSID değeri alır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IPerPropertyBrowsing](http://msdn.microsoft.com/library/windows/desktop/ms678432) bir istemci, bir nesnenin özellik sayfalarındaki bilgilere erişmek arabirim sağlar. Sınıf `IPerPropertyBrowsingImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IPerPropertyBrowsing](/windows/desktop/api/ocidl/nn-ocidl-iperpropertybrowsing) bir istemci, bir nesnenin özellik sayfalarındaki bilgilere erişmek arabirim sağlar. Sınıf `IPerPropertyBrowsingImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
 > [!NOTE]
 >  Kapsayıcı uygulaması Microsoft Access kullanıyorsanız, sizin sınıfınızdan türetilmelidir `IPerPropertyBrowsingImpl`. Aksi takdirde, erişim denetim yüklemez.  
@@ -86,7 +86,7 @@ STDMETHOD(GetDisplayString)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPerPropertyBrowsing::GetDisplayString](http://msdn.microsoft.com/library/windows/desktop/ms688734) Windows SDK içinde.  
+ Bkz: [IPerPropertyBrowsing::GetDisplayString](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) Windows SDK içinde.  
   
 ##  <a name="getpredefinedstrings"></a>  IPerPropertyBrowsingImpl::GetPredefinedStrings  
  Her dizi öğeleri sıfır ile doldurur.  
@@ -102,7 +102,7 @@ STDMETHOD(GetPredefinedStrings)(
  ATL uygulamasını [GetPredefinedValue](#getpredefinedvalue) E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPerPropertyBrowsing::GetPredefinedStrings öğesini](http://msdn.microsoft.com/library/windows/desktop/ms679724) Windows SDK içinde.  
+ Bkz: [IPerPropertyBrowsing::GetPredefinedStrings öğesini](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) Windows SDK içinde.  
   
 ##  <a name="getpredefinedvalue"></a>  IPerPropertyBrowsingImpl::GetPredefinedValue  
  Belirli bir DISPID tarafından tanımlanan bir özellik değerini içeren bir değişken alır. DISPID hizmetinden alınan dize adı ilişkilendirilmiş olan `GetPredefinedStrings`.  
@@ -120,7 +120,7 @@ STDMETHOD(GetPredefinedValue)(
 ### <a name="remarks"></a>Açıklamalar  
  ATL uygulamasını [GetPredefinedStrings](#getpredefinedstrings) karşılık gelen koşulsuz alır.  
   
- Bkz: [IPerPropertyBrowsing::GetPredefinedValue](http://msdn.microsoft.com/library/windows/desktop/ms690401) Windows SDK içinde.  
+ Bkz: [IPerPropertyBrowsing::GetPredefinedValue](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedvalue) Windows SDK içinde.  
   
 ##  <a name="mappropertytopage"></a>  IPerPropertyBrowsingImpl::MapPropertyToPage  
  Belirtilen özellik ile ilişkili özellik sayfası CLSID değeri alır.  
@@ -134,7 +134,7 @@ STDMETHOD(MapPropertyToPage)(
 ### <a name="remarks"></a>Açıklamalar  
  ATL, bu bilgileri almak için nesnenin özellik eşlemesi kullanır.  
   
- Bkz: [IPerPropertyBrowsing::MapPropertyToPage](http://msdn.microsoft.com/library/windows/desktop/ms694476) Windows SDK içinde.  
+ Bkz: [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-ocidl-iperpropertybrowsing-mappropertytopage) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ipropertypageımpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   

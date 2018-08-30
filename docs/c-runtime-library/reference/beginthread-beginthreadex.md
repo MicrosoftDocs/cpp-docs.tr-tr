@@ -39,12 +39,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e07fd632459e1d668d0201c821065bfaeea72c
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e4bdae31c3a2f84dd959baf49fae7e43a6cc9eb0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466292"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206403"
 ---
 # <a name="beginthread-beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -93,7 +93,7 @@ Yeni bir iş parçacığı veya 0 yığın boyutu.
 Yeni bir iş parçacığına geçirilecek bağımsız değişken listesi veya **NULL**.
 
 *Güvenlik*<br/>
-İşaretçi bir [SECURITY_ATTRIBUTES](http://msdn.microsoft.com/library/windows/desktop/aa379560) döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayacağını belirleyen yapısı. Varsa *güvenlik* olduğu **NULL**, tanıtıcı devralınamaz. Olmalıdır **NULL** Windows 95 uygulamaları için.
+İşaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayacağını belirleyen yapısı. Varsa *güvenlik* olduğu **NULL**, tanıtıcı devralınamaz. Olmalıdır **NULL** Windows 95 uygulamaları için.
 
 *initflag*<br/>
 Yeni bir iş parçacığının ilk durumunu denetleyen bayraklar. Ayarlama *initflag* hemen çalıştırmak için 0 veya için **CREATE_SUSPENDED** askıya alınmış durumda; iş parçacığı oluşturmak için kullanmak [ResumeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-resumethread) iş parçacığını yürütmek için. Ayarlama *initflag* için **STACK_SIZE_PARAM_IS_A_RESERVATION** kullanılacak bayrağı *stack_size* gibi ilkyedekyığınınınbaytcinsindenboyutu;bubayrağıolupolmadığınıbelirtilmedi*stack_size* işleme boyutu belirtir.
@@ -131,7 +131,7 @@ Kullanılması daha güvenlidir **_beginthreadex** daha **_beginthread**. Varsa 
 
 Çağırabilirsiniz [_endthread](endthread-endthreadex.md) veya **_endthreadex** açıkça bir iş parçacığını sonlandırmak için ancak **_endthread** veya **_endthreadex** çağrılır otomatik olarak bir parametre olarak iletilen bir yordamdan gelen zaman iş parçacığı döndürür. Çağrısıyla bir iş parçacığı sonlandırma **_endthread** veya **_endthreadex** iş parçacığına ayrılan kaynakların doğru şekilde kurtarılmasını sağlamaya yardımcı olur.
 
-**_endthread** otomatik olarak iş parçacığı işleyicisini yapmadığında **_endthreadex** desteklemez. Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](http://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. Bu davranış, Win32 farklıdır [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
+**_endthread** otomatik olarak iş parçacığı işleyicisini yapmadığında **_endthreadex** desteklemez. Bu nedenle, kullandığınız zaman **_beginthread** ve **_endthread**, açıkça iş parçacığı işleyicisini Win32 çağırarak kapatmayın [CloseHandle](https://msdn.microsoft.com/library/windows/desktop/ms724211.aspx) API. Bu davranış, Win32 farklıdır [ExitThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-exitthread) API.
 
 > [!NOTE]
 > LIBCMT.lib ile bağlantılı bir yürütülebilir dosya için Win32 çağırmayın **ExitThread** API çalışma zamanı sistemi tekrar kullanılabilir hale önlememiş böylece ayrılan kaynaklar. **_endthread** ve **_endthreadex** ayrılan iş parçacığı kaynaklarını geri kazanır ve sonra çağrı **ExitThread**.
@@ -335,4 +335,4 @@ Counter should be 1000000; it is-> 1000000
 - [_endthread, _endthreadex](endthread-endthreadex.md)
 - [abort](abort.md)
 - [exit, _Exit, _exit](exit-exit-exit.md)
-- [GetExitCodeThread](http://msdn.microsoft.com/library/windows/desktop/ms683190)
+- [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread)

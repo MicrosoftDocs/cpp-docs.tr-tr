@@ -1,7 +1,7 @@
 ---
 title: Kaynak Derleyicisi önemli hatası RC1101 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef8024ebb2058e9bce2a3b911ead23ca1c131a13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a989184af03de460c006606c40d82e59c50fd924
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320833"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214229"
 ---
 # <a name="resource-compiler-fatal-error-rc1101"></a>Kaynak Derleyicisi Önemli Hatası RC1101
-Kaynak ikili dosya adı belirtilmedi  
-  
- Yeniden Adlandır çıkış (/ fo) seçeneği izlenmediğinden tarafından bir dosya adı.  
-  
- /Fo seçeneği için aşağıdaki sözdizimini kullanın:  
-  
- **RC /fo**   
- ***outfilename infilename.*  rc**
+
+> Kaynak ikili dosya adı belirtilmedi
+
+Yeniden adlandırma çıkış (/ fo) seçeneği bir dosya adı tarafından takip.
+
+/Fo seçeneği için aşağıdaki sözdizimini kullanın:
+
+> **RC /fo** *outfilename* <em>infilename</em>**.rc**

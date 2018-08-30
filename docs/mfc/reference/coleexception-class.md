@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 731ec7b359995fc8ecbfdeae89595442d8186eeb
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 7a472de31695ab6038cab9ba0158580f3d305194
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851398"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212494"
 ---
 # <a name="coleexception-class"></a>COleException sınıfı
 Bir OLE işlemiyle ilgili bir özel durum koşulunu temsil eder.  
@@ -77,7 +77,7 @@ SCODE m_sc;
 ### <a name="remarks"></a>Açıklamalar  
  Bu değişkenin değeri ayarlanır [AfxThrowOleException](exception-processing.md#afxthrowoleexception).  
   
- SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
+ SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#22](../../mfc/codesnippet/cpp/coleexception-class_1.cpp)]  
@@ -101,7 +101,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 > [!NOTE]
 >  Bu işlev, **statik**.  
   
- SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
+ SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [COleDispatchDriver::CreateDispatch](../../mfc/reference/coledispatchdriver-class.md#createdispatch).  

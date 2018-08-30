@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39d19749f44645d30d9a3826758f54737d3e68af
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 0bcbd8dcc64d26f124a7b6443a79f01aa4329414
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464467"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207498"
 ---
 # <a name="pack"></a>pack
 Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.  
@@ -38,7 +38,7 @@ Yapı, birleşim ve sınıf üyeleri için paketleme hizalamasını belirtir.
 
 Bir sınıf paketlenecek üyelerini doğrudan diğer bazı veya tüm üyeleri varsayılan hizalama hedef mimari daha küçük bir sınır üzerinde hizalanabilir gelebilir bellekte sonra yerleştirmektir. **Paketi** veri bildirimi düzeyinde denetim sağlar. Bu derleyici seçeneğini farklıdır [/ZP](../build/reference/zp-struct-member-alignment.md), modül düzeyi denetimi yalnızca sağlar. **Paketi** etkinleşir ilk **yapı**, **birleşim**, veya **sınıfı** pragma görüldüğünde sonra bildirimi. **Paketi** tanımları üzerinde hiçbir etkisi olmaz. Çağırma **paketi** hiçbir bağımsız değişken kümeleriyle *n* derleyici seçeneğini ayarlamak değerine `/Zp`. Derleyici seçeneği ayarlanmamışsa varsayılan değer 8'dir.  
   
-Bir yapının hizalanması değiştirirseniz, bellek, ancak kadar alan performans bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak kullanamazsınız.  Bu özel durum davranışını kullanarak değiştirebileceğiniz [SetErrorMode](http://msdn.microsoft.com/library/windows/desktop/ms680621).  
+Bir yapının hizalanması değiştirirseniz, bellek, ancak kadar alan performans bakın veya donanım tarafından oluşturulan bir özel durum hizalanmamış erişim için bile almak kullanamazsınız.  Bu özel durum davranışını kullanarak değiştirebileceğiniz [SetErrorMode](https://msdn.microsoft.com/library/windows/desktop/ms680621).  
   
 *Göster* (isteğe bağlı)  
 Hizalama sevk geçerli bayt değeri görüntüler. Değer, bir uyarı iletisi görüntülenir.  

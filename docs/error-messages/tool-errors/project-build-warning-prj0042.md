@@ -1,7 +1,7 @@
 ---
 title: Proje derleme uyarısı PRJ0042 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c0465b160615af96da8f489bbde63684598cffc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 260da8ac336c640ea875610b2c62e6c42c7d335e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316835"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211356"
 ---
 # <a name="project-build-warning-prj0042"></a>Proje Derleme Uyarısı PRJ0042
-**'Outputs özelliği' dosyası için özel derleme adımı için**   
- ***Dosya* ' ayarlı değil. Özel derleme adımı atlanır.**  
-  
- Hiçbir çıktı belirtilmediğinden özel derleme adımı yürütülmedi.  
-  
- Bu hatayı gidermek için aşağıdakilerden birini yapın:  
-  
--   Özel derleme adımı derlemeden çıkarın.  
-  
--   Bir çıkış ekleyin.  
-  
--   Özel derleme adımının komutu içeriğini silin.
+
+> 'Outputs özelliğini' dosyasının özel derleme aşamasına*dosya*' ayarlı değil. Özel derleme aşaması atlanacak.
+
+Hiçbir çıkış belirtilmiş olduğundan, özel derleme adımı yürütülmedi.
+
+Bu hatayı gidermek için aşağıdakilerden birini yapın:
+
+- Özel derleme adımı derlemeden hariç tutma.
+
+- Bir çıktı ekleyin.
+
+- Özel derleme adımının komut içeriğini silin.

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc5d51bfeb18b51be5a54c51046e3cd420fb1cb8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9f522635c170af784b5bd9f2bb7011fd51e345b3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852113"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211614"
 ---
 # <a name="coleupdatedialog-class"></a>COleUpdateDialog sınıfı
 Kullanılması gereken OLE Edit Links iletişim kutusu için bir özel durum kullanılan yalnızca mevcut güncelleştirme gerektiğinde, bağlantılı veya katıştırılmış bir belgede nesneleri.  
@@ -114,7 +114,7 @@ virtual INT_PTR DoModal();
   
 - Geçerli belgedeki bağlantılı veya katıştırılmış öğeler hiçbiri IDCANCEL güncelleştirilmesi gerekir.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIEditLinks](http://msdn.microsoft.com/library/windows/desktop/ms679703) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı [COleDialog::GetLastError](../../mfc/reference/coledialog-class.md#getlasterror) konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIEditLinks](/windows/desktop/api/oledlg/nf-oledlg-oleuieditlinksa) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İptal düğmesi kullanıcının seçtiği sürece tüm bağlantılar ve/veya Gömmeleri güncelleştirilir.  

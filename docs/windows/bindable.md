@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4c529abb1ade786bf7ec0a2d5cff5c49f6197be7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2e0ce7cffb397aaa170f13bac9fc1f4c1693d25f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601595"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214858"
 ---
 # <a name="bindable"></a>bağlanabilir
 
@@ -36,15 +36,15 @@ ms.locfileid: "42601595"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bağlanabilir** C++ özniteliği ile aynı işlevlere sahip [bağlanabilir](http://msdn.microsoft.com/library/windows/desktop/aa366738) MIDL özniteliği. Özellikleri ile tanımlanmış kullanabilirsiniz [propget](../windows/propget.md), [propput](../windows/propput.md), veya [propputref](../windows/propputref.md) öznitelikleri veya el ile tanımlayabilir bağlanabilir bir yöntem.
+**Bağlanabilir** C++ özniteliği ile aynı işlevlere sahip [bağlanabilir](/windows/desktop/Midl/bindable) MIDL özniteliği. Özellikleri ile tanımlanmış kullanabilirsiniz [propget](../windows/propget.md), [propput](../windows/propput.md), veya [propputref](../windows/propputref.md) öznitelikleri veya el ile tanımlayabilir bağlanabilir bir yöntem.
 
 Aşağıdaki MFC örnekleri kullanımı Göster **bağlanabilir**:
 
-- [Denetim örnekleri: MFC tabanlı ActiveX denetimleri](http://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
+- [Denetim örnekleri: MFC tabanlı ActiveX denetimleri](https://msdn.microsoft.com/a44adf86-0ba0-4504-bedb-512b6cba2e63)
 
-- [DAİ örnek: ActiveX denetimi](http://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
+- [DAİ örnek: ActiveX denetimi](https://msdn.microsoft.com/9ba34d04-280e-49f4-90ae-41a6be44c95b)
 
-- [TESTHELP örneği: Araç ipuçları ve Yardım ActiveX denetimi](http://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
+- [TESTHELP örneği: Araç ipuçları ve Yardım ActiveX denetimi](https://msdn.microsoft.com/d822861d-c6f0-4d0a-ad11-970eebb1e8cd)
 
 ## <a name="example"></a>Örnek
 

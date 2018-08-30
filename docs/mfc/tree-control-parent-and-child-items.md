@@ -17,23 +17,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7937ef604d14c464141c6e432a4d20a9d06e172
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 1c56885300b05cfb038dd1a8484ae57648bf9357
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954513"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208438"
 ---
 # <a name="tree-control-parent-and-child-items"></a>Ağaç Denetimi Üst ve Alt Öğeleri
-Ağaç denetimi herhangi bir öğeye ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) kendisiyle ilişkili alt öğeleri adlı alt öğeler listesini sağlayabilirsiniz. Bir veya daha fazla alt öğelerine sahip bir öğe üst öğe adı verilir. Bir alt öğesi kendi üst öğesi altında görüntülenir ve üst bağımlı olan belirtmek için girintili. Üst öğeye sahip bir öğe hiyerarşisinin en üstünde olduğu ve bir kök öğe adı verilir.  
+Ağaç denetimi herhangi bir öğeye ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) alt öğeleri, kendisiyle ilişkili adlı alt öğeleri listesini sağlayabilirsiniz. Bir veya daha fazla alt öğelerine sahip bir öğe, bir üst öğesi olarak adlandırılır. Bir alt öğesi kendi üst öğesi görüntülenir ve üst bağımlı olduğunu belirten girintili hale getirilir. Üst öğeye sahip bir öğe hiyerarşisinin en üstünde olduğu ve bir kök öğe adı verilir.  
   
- Belirli bir zamanda, bir üst öğenin alt öğeleri listesi durumunu genişletilmiş daraltılmış ya da. Durum genişletildiğinde, alt öğeler üst öğenin altında görüntülenir. Daraltıldığında, alt öğeler görüntülenmez. Liste otomatik olarak kullanıcı üst öğeyi tıklattığında veya üst varsa genişletilmiş ve daraltılmış durumlar arasında değiştirir **TVS_HASBUTTONS** kullanıcı üst öğeyle ilişkili düğmesini tıklattığında stili. Bir uygulama genişletebilir veya alt öğeleri kullanarak daraltabilirsiniz [genişletme](../mfc/reference/ctreectrl-class.md#expand) üye işlevi.  
+ Herhangi bir zamanda bir üst öğenin alt öğelerinin listesini durumunu ya da Genişletilebilir veya daraltılabilir. Durumu genişletildiğinde, üst öğenin alt öğeler görüntülenir. Daraltıldığında, alt öğelerini görüntülenmez. Liste otomatik olarak üst öğe kullanıcı çift tıkladığında veya üstü yoksa genişletilmiş ve daraltılmış durumları arasında değiştirir **TVS_HASBUTTONS** kullanıcı üst öğeyle ilişkili düğmeyi tıkladığında stili. Bir uygulama genişletebilir veya kullanarak alt öğelerini Daralt [genişletme](../mfc/reference/ctreectrl-class.md#expand) üye işlevi.  
   
- Çağırarak ağaç denetime öğe ekleme [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) üye işlevi. Bu işlev bir işleyicisini döndürür **HTREEITEM** öğeyi benzersiz olarak tanıtan türü. Bir öğe eklerken, yeni öğenin üst öğesinin tanıtıcısı belirtmeniz gerekir. Belirtirseniz **NULL** veya **TVI_ROOT** değeri bir üst öğesi tanıtıcı yerine [TVINSERTSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb773452) yapısı veya *hParent* parametre öğesi kök öğesi olarak eklenir.  
+ Çağırarak bir ağaç denetimine bir öğe ekleme [InsertItem](../mfc/reference/ctreectrl-class.md#insertitem) üye işlevi. Bu işlev, bir tanıtıcı döndürür **HTREEITEM** öğeyi benzersiz olarak tanımlayan tür. Bir öğe eklendiğinde, yeni öğenin üst öğesinin tanıtıcısı belirtmeniz gerekir. Belirtirseniz **NULL** veya **TVI_ROOT** değeri yerine bir üst öğesi tutucu [TVINSERTSTRUCT](/windows/desktop/api/commctrl/ns-commctrl-tagtvinsertstructa) yapısı veya *hParent* parametre öğesi kök öğesi olarak eklenir.  
   
- Ağaç denetimi gönderir bir [TVN_ITEMEXPANDING](http://msdn.microsoft.com/library/windows/desktop/bb773537) bir üst öğenin alt öğeleri listesi hakkında genişletilebilir veya daraltılabilir üzere olduğunda uyarı iletisi. Bildirim değişikliği engellemek veya alt öğe listesinin durumuna bağlıdır üst öğesi özniteliklerini ayarlamak için fırsatı verir. Ağaç denetimi gönderir listenin durumunu değiştirdikten sonra bir [TVN_ITEMEXPANDED](http://msdn.microsoft.com/library/windows/desktop/bb773533) bildirim iletisi.  
+ Ağaç denetimi gönderen bir [TVN_ITEMEXPANDING](/windows/desktop/Controls/tvn-itemexpanding) yaklaşık genişletilmiş veya daraltılmış bir üst öğenin alt öğelerinin listesi olduğunda bildirim iletisi. Bildirim, değişikliği engellemek veya alt öğelerin listesini durumuna bağlı herhangi bir özniteliği üst öğenin ayarlamak için bir fırsat sunar. Ağaç denetimi gönderir listenin durumunu değiştirdikten sonra bir [TVN_ITEMEXPANDED](/windows/desktop/Controls/tvn-itemexpanded) bildirim iletisi.  
   
- Bir alt öğe listesi genişletildiğinde göre üst öğesi girintili olur. Kullanarak girinti miktarını ayarlayabilirsiniz [SetIndent](../mfc/reference/ctreectrl-class.md#setindent) üye işlevini veya alma kullanarak geçerli tutar [GetIndent](../mfc/reference/ctreectrl-class.md#getindent) üye işlevi.  
+ Alt öğe listesi genişletildiğinde göre üst öğesi girintili hale getirilir. Girinti miktarını kullanarak ayarlayabilirsiniz [SetIndent](../mfc/reference/ctreectrl-class.md#setindent) üye işlevini veya Al kullanarak geçerli tutarın [GetIndent](../mfc/reference/ctreectrl-class.md#getindent) üye işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   

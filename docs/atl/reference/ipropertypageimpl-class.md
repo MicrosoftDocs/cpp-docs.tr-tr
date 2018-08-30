@@ -41,15 +41,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7692f60731c47f295630885c77e0e61e8bb5aac
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 7377a6b47df76190c4dc97b916590e53c7df8f9c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884756"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210117"
 ---
 # <a name="ipropertypageimpl-class"></a>Ipropertypageımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) arabirimi.  
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) arabirimi.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -105,7 +105,7 @@ class IPropertyPageImpl
 |[IPropertyPageImpl::m_size](#m_size)|Özellik sayfasının iletişim kutusunun genişliği ve yüksekliği, piksel cinsinden depolar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) nesnenin bir özellik sayfası içinde belirli bir özellik sayfası yönetmek arabirim sağlar. Sınıf `IPropertyPageImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) nesnenin bir özellik sayfası içinde belirli bir özellik sayfası yönetmek arabirim sağlar. Sınıf `IPropertyPageImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -130,7 +130,7 @@ HRESULT Activate(
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, iletişim kutusunda her zaman değerine bakılmaksızın geçici *bModal* parametresi.  
   
- Bkz: [IPropertyPage::Activate](http://msdn.microsoft.com/library/windows/desktop/ms682250) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Activate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-activate) Windows SDK içinde.  
   
 ##  <a name="apply"></a>  IPropertyPageImpl::Apply  
  Geçerli özellik sayfası değerleri aracılığıyla belirtilen temel nesnelere uygulanır `SetObjects`.  
@@ -143,7 +143,7 @@ HRESULT Apply();
  Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::Apply](http://msdn.microsoft.com/library/windows/desktop/ms691284) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Apply](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-apply) Windows SDK içinde.  
   
 ##  <a name="deactivate"></a>  IPropertyPageImpl::Deactivate  
  Oluşturulan iletişim kutusu penceresini yok eder [etkinleştirme](#activate).  
@@ -153,7 +153,7 @@ HRESULT Deactivate();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::Deactivate](http://msdn.microsoft.com/library/windows/desktop/ms682504) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Deactivate](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-deactivate) Windows SDK içinde.  
   
 ##  <a name="getpageinfo"></a>  IPropertyPageImpl::GetPageInfo  
  Doldurur *pPageInfo* yapısı bilgilerle veri üyeleri.  
@@ -165,7 +165,7 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 ### <a name="remarks"></a>Açıklamalar  
  `GetPageInfo` ilişkili dize kaynakları yükler [m_dwDocString](#m_dwdocstring), [m_dwHelpFile](#m_dwhelpfile), ve [m_dwTitle](#m_dwtitle).  
   
- Bkz: [IPropertyPage::GetPageInfo](http://msdn.microsoft.com/library/windows/desktop/ms680714) Windows SDK içinde.  
+ Bkz: [IPropertyPage::GetPageInfo](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-getpageinfo) Windows SDK içinde.  
   
 ##  <a name="help"></a>  IPropertyPageImpl::Help  
  Windows Yardım özellik sayfası için çağırır.  
@@ -175,7 +175,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::Help](http://msdn.microsoft.com/library/windows/desktop/ms691504) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Help](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-help) Windows SDK içinde.  
   
 ##  <a name="ipropertypageimpl"></a>  IPropertyPageImpl::IPropertyPageImpl  
  Oluşturucu.  
@@ -240,7 +240,7 @@ UINT m_dwTitle;
 ```  
   
 ##  <a name="m_ppagesite"></a>  IPropertyPageImpl::m_pPageSite  
- İşaret [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) özellik sayfası özellik çerçevesi ile iletişim arabirimi.  
+ İşaret [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) özellik sayfası özellik çerçevesi ile iletişim arabirimi.  
   
 ```
 IPropertyPageSite* m_pPageSite;
@@ -268,7 +268,7 @@ HRESULT Move(LPCRECT pRect);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::Move](http://msdn.microsoft.com/library/windows/desktop/ms680118) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Move](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-move) Windows SDK içinde.  
   
 ##  <a name="setdirty"></a>  IPropertyPageImpl::SetDirty  
  Özellik sayfa durumu olarak değiştirilmiş veya değerine bağlı olarak, değiştirilmeden bayrakları *bDirty*.  
@@ -292,17 +292,17 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::SetObjects](http://msdn.microsoft.com/library/windows/desktop/ms678529) Windows SDK içinde.  
+ Bkz: [IPropertyPage::SetObjects](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setobjects) Windows SDK içinde.  
   
 ##  <a name="setpagesite"></a>  IPropertyPageImpl::SetPageSite  
- Özellik sayfası ile sağlar bir [IPropertyPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690583) özellik sayfası özellik çerçevesi ile iletişim işaretçisi.  
+ Özellik sayfası ile sağlar bir [IPropertyPageSite](/windows/desktop/api/ocidl/nn-ocidl-ipropertypagesite) özellik sayfası özellik çerçevesi ile iletişim işaretçisi.  
   
 ```
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::SetPageSite](http://msdn.microsoft.com/library/windows/desktop/ms690413) Windows SDK içinde.  
+ Bkz: [IPropertyPage::SetPageSite](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-setpagesite) Windows SDK içinde.  
   
 ##  <a name="show"></a>  IPropertyPageImpl::Show  
  Özellik sayfası iletişim kutusu görünür veya gizli hale getirir.  
@@ -312,7 +312,7 @@ HRESULT Show(UINT nCmdShow);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::Show](http://msdn.microsoft.com/library/windows/desktop/ms694467) Windows SDK içinde.  
+ Bkz: [IPropertyPage::Show](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-show) Windows SDK içinde.  
   
 ##  <a name="translateaccelerator"></a>  IPropertyPageImpl::TranslateAccelerator  
  Belirtilen tuş vuruşu işler `pMsg`.  
@@ -322,7 +322,7 @@ HRESULT TranslateAccelerator(MSG* pMsg);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPropertyPage::TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms686603) Windows SDK içinde.  
+ Bkz: [IPropertyPage::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ipropertypage2ımpl sınıfı](../../atl/reference/ipropertypage2impl-class.md)   

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da959abaf08644e4a2411d6946ae03218fee4bfd
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 66c60db67450c3a3f46b8d434b7a8416ce85161c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465068"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211464"
 ---
 # <a name="concurrentunorderedmultiset-class"></a>concurrent_unordered_multiset Sınıfı
 `concurrent_unordered_multiset` Sınıfı, bir K. türdeki öğelerin değişen uzunluktaki dizisini denetleyen eşzamanlılığı güvenli bir kapsayıcıdır Sıra, eşzamanlılık açısından güvenli sağlayan bir şekilde temsil edilir sona ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemleri.  
@@ -293,7 +293,7 @@ std::pair<const_iterator,
  Aranacak anahtar değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [çifti](http://msdn.microsoft.com/en-us/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.  
+ A [çifti](https://msdn.microsoft.com/32e72d66-3020-4cb9-92c3-f7a5fa7998ff) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Eş zamanlı ekler başlangıç yineleyici sonra ve end yineleyici önce eklenecek ek anahtarlar neden mümkündür.  

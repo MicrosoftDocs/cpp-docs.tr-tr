@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ace66d9528534b382eda02160372bfc56aced0f5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4b505b9f6164566a1e196c601bdfe3eab4b4a991
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883001"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208588"
 ---
 # <a name="ccomcontrolbase-class"></a>CComControlBase sınıfı
 Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.  
@@ -198,11 +198,11 @@ class ATL_NO_VTABLE CComControlBase
 |[CComControlBase::m_rcPos](#m_rcpos)|Piksel cinsinden denetimin kapsayıcısının koordinatlarında belirtilen konumu.|  
 |[CComControlBase::m_sizeExtent](#m_sizeextent)|Uzantı denetimin belirli bir ekran için HIMETRIC birimleri (her birim 0,01 milimetre'dir).|  
 |[CComControlBase::m_sizeNatural](#m_sizenatural)|(Her birim 0,01 milimetre'dir) HIMETRIC birimleri denetiminde fiziksel boyutu.|  
-|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|Kapsayıcı danışmanlık bağlantısında doğrudan bir işaretçiye (kapsayıcının [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).|  
+|[CComControlBase::m_spAdviseSink](#m_spadvisesink)|Kapsayıcı danışmanlık bağlantısında doğrudan bir işaretçiye (kapsayıcının [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).|  
 |[CComControlBase::m_spAmbientDispatch](#m_spambientdispatch)|A `CComDispatchDriver` almak ve kapsayıcının özellikleri aracılığıyla ayarlamanıza olanak sağlayan bir nesne bir `IDispatch` işaretçi.|  
 |[CComControlBase::m_spClientSite](#m_spclientsite)|Denetimin istemci site kapsayıcı içindeki bir işaretçi.|  
 |[CComControlBase::m_spDataAdviseHolder](#m_spdataadviseholder)|Veri nesneleri arasında danışmanlık bağlantılar basılı tutun ve havuzlarını bildirmek için standart araçları sağlar.|  
-|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|Kapsayıcının işaretçisi [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), veya [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) arabirim işaretçisi.|  
+|[CComControlBase::m_spInPlaceSite](#m_spinplacesite)|Kapsayıcının işaretçisi [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), veya [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirim işaretçisi.|  
 |[CComControlBase::m_spOleAdviseHolder](#m_spoleadviseholder)|Standart bir danışmanlık bağlantılarını tutmak için bir yöntem uygulamasını sağlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -245,7 +245,7 @@ CComControlBase(HWND& h);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetim pencereli, ise `~CComControlBase` çağırarak yok eder [DestroyWindow](http://msdn.microsoft.com/library/windows/desktop/ms632682).  
+ Denetim pencereli, ise `~CComControlBase` çağırarak yok eder [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682).  
   
 ##  <a name="controlqueryinterface"></a>  CComControlBase::ControlQueryInterface  
  İstenen arabirim için bir işaretçi alır.  
@@ -447,7 +447,7 @@ HRESULT GetAmbientFont(IFont** ppFont);
   
 ### <a name="parameters"></a>Parametreler  
  *ppFont*  
- Kapsayıcı için bir işaretçi ortam [IFont](http://msdn.microsoft.com/library/windows/desktop/ms680673) arabirimi.  
+ Kapsayıcı için bir işaretçi ortam [IFont](/windows/desktop/api/ocidl/nn-ocidl-ifont) arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Standart HRESULT değerlerinden biri.  
@@ -464,7 +464,7 @@ HRESULT GetAmbientFontDisp(IFontDisp** ppFont);
   
 ### <a name="parameters"></a>Parametreler  
  *ppFont*  
- Kapsayıcı için bir işaretçi ortam [IFontDisp](http://msdn.microsoft.com/library/windows/desktop/ms692695) gönderme arabirimi.  
+ Kapsayıcı için bir işaretçi ortam [IFontDisp](https://msdn.microsoft.com/library/windows/desktop/ms692695) gönderme arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -762,7 +762,7 @@ unsigned m_bAutoSize:1;
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Eklerseniz **Otomatik Boyutlandır** seçeneğini [stok özellikleri](../../atl/reference/stock-properties-atl-control-wizard.md) sekmesi ATL denetimi Sihirbazı, sihirbaz otomatik olarak bu veri üyesi denetim sınıfınıza oluşturur, put oluşturur ve get yöntemleri bir özellik için ve destekleyen [Ipropertynotifysink](http://msdn.microsoft.com/library/windows/desktop/ms692638) kapsayıcı özelliği değiştiğinde otomatik olarak bilgilendirme.  
+ Eklerseniz **Otomatik Boyutlandır** seçeneğini [stok özellikleri](../../atl/reference/stock-properties-atl-control-wizard.md) sekmesi ATL denetimi Sihirbazı, sihirbaz otomatik olarak bu veri üyesi denetim sınıfınıza oluşturur, put oluşturur ve get yöntemleri bir özellik için ve destekleyen [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) kapsayıcı özelliği değiştiğinde otomatik olarak bilgilendirme.  
   
 ##  <a name="m_bdrawfromnatural"></a>  CComControlBase::m_bDrawFromNatural  
  Olduğunu belirten bayrağı `IDataObjectImpl::GetData` ve `CComControlBase::GetZoomInfo` denetim boyutundan ayarlamalısınız `m_sizeNatural` yerine `m_sizeExtent`.  
@@ -814,7 +814,7 @@ unsigned m_bInPlaceSiteEx:1;
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Veri üyesi `m_spInPlaceSite` işaret eden bir [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), veya [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) değerine göre arabirimi `m_bWndLess` ve `m_bInPlaceSiteEx` bayrakları. (Veri üyesi `m_bNegotiatedWnd` TRUE olmalıdır için `m_spInPlaceSite` geçerli olması için işaretçi.)  
+ Veri üyesi `m_spInPlaceSite` işaret eden bir [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), veya [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) değerine göre arabirimi `m_bWndLess` ve `m_bInPlaceSiteEx` bayrakları. (Veri üyesi `m_bNegotiatedWnd` TRUE olmalıdır için `m_spInPlaceSite` geçerli olması için işaretçi.)  
   
  Varsa `m_bWndLess` yanlış ve `m_bInPlaceSiteEx` TRUE ise `m_spInPlaceSite` olduğu bir `IOleInPlaceSiteEx` arabirim işaretçisi. Bkz: [m_spInPlaceSite](#m_spinplacesite) için bu üç veri üyeleri arasındaki ilişkiyi gösteren bir tablo.  
   
@@ -844,7 +844,7 @@ unsigned m_bRecomposeOnResize:1;
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Bu bayrağı tarafından denetlenir [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) ve TRUE ise `SetExtent` değişiklikleri görüntüleme kapsayıcı bildirir. Bu bayrağı ayarlarsanız, OLEMISC_RECOMPOSEONRESIZE bit [OLEMISC](http://msdn.microsoft.com/library/windows/desktop/ms678497) numaralandırma ayarlanmalıdır.  
+ Bu bayrağı tarafından denetlenir [IOleObjectImpl::SetExtent](../../atl/reference/ioleobjectimpl-class.md#setextent) ve TRUE ise `SetExtent` değişiklikleri görüntüleme kapsayıcı bildirir. Bu bayrağı ayarlarsanız, OLEMISC_RECOMPOSEONRESIZE bit [OLEMISC](/windows/desktop/api/oleidl/ne-oleidl-tagolemisc) numaralandırma ayarlanmalıdır.  
   
 ##  <a name="m_brequiressave"></a>  CComControlBase::m_bRequiresSave  
  Denetimi son kez kaydedildiğinden beri değiştirildi belirten bayrak.  
@@ -935,7 +935,7 @@ unsigned m_bWndLess:1;
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Veri üyesi `m_spInPlaceSite` işaret eden bir [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), veya [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) değerine göre arabirimi `m_bWndLess` ve [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) bayrakları. (Veri üyesi [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) TRUE olmalıdır için [CComControlBase::m_spInPlaceSite](#m_spinplacesite) geçerli olması için işaretçi.)  
+ Veri üyesi `m_spInPlaceSite` işaret eden bir [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), veya [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) değerine göre arabirimi `m_bWndLess` ve [CComControlBase::m_bInPlaceSiteEx](#m_binplacesiteex) bayrakları. (Veri üyesi [CComControlBase::m_bNegotiatedWnd](#m_bnegotiatedwnd) TRUE olmalıdır için [CComControlBase::m_spInPlaceSite](#m_spinplacesite) geçerli olması için işaretçi.)  
   
  Varsa `m_bWndLess` TRUE ise `m_spInPlaceSite` olduğu bir `IOleInPlaceSiteWindowless` arabirim işaretçisi. Bkz: [CComControlBase::m_spInPlaceSite](#m_spinplacesite) tam bu veri üyeleri arasındaki ilişkiyi gösteren bir tablo için.  
   
@@ -1008,7 +1008,7 @@ SIZE m_sizeNatural;
  Genel işlev piksel boyutunu dönüştürebilirsiniz [AtlHiMetricToPixel](pixel-himetric-conversion-global-functions.md#atlhimetrictopixel).  
   
 ##  <a name="m_spadvisesink"></a>  CComControlBase::m_spAdviseSink  
- Kapsayıcı danışmanlık bağlantısında doğrudan bir işaretçiye (kapsayıcının [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513)).  
+ Kapsayıcı danışmanlık bağlantısında doğrudan bir işaretçiye (kapsayıcının [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink)).  
   
 ```
 CComPtr<IAdviseSink>
@@ -1058,12 +1058,12 @@ CComPtr<IDataAdviseHolder>
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Veri nesnesinde veri aktarabilir ve uygulayan bir denetimdir [IDataObject](http://msdn.microsoft.com/library/windows/desktop/ms688421), verilerin biçimi ve aktarım Orta yöntemleri belirtin.  
+ Veri nesnesinde veri aktarabilir ve uygulayan bir denetimdir [IDataObject](/windows/desktop/api/objidl/nn-objidl-idataobject), verilerin biçimi ve aktarım Orta yöntemleri belirtin.  
   
- Arabirim `m_spDataAdviseHolder` uygulayan [IDataObject::DAdvise](http://msdn.microsoft.com/library/windows/desktop/ms692579) ve [IDataObject::DUnadvise](http://msdn.microsoft.com/library/windows/desktop/ms692448) oluşturmak ve kapsayıcıya danışmanlık bağlantıları silme yöntemleri. Denetimin kapsayıcı bir öneri havuz destekleyerek uygulamalıdır [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) arabirimi.  
+ Arabirim `m_spDataAdviseHolder` uygulayan [IDataObject::DAdvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dadvise) ve [IDataObject::DUnadvise](/windows/desktop/api/objidl/nf-objidl-idataobject-dunadvise) oluşturmak ve kapsayıcıya danışmanlık bağlantıları silme yöntemleri. Denetimin kapsayıcı bir öneri havuz destekleyerek uygulamalıdır [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) arabirimi.  
   
 ##  <a name="m_spinplacesite"></a>  CComControlBase::m_spInPlaceSite  
- Kapsayıcının işaretçisi [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586), [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461), veya [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300) arabirim işaretçisi.  
+ Kapsayıcının işaretçisi [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite), [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex), veya [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless) arabirim işaretçisi.  
   
 ```
 CComPtr<IOleInPlaceSiteWindowless>
@@ -1098,7 +1098,7 @@ CComPtr<IOleAdviseHolder>
 > [!NOTE]
 >  Bu veri üyesi denetim sınıfınıza içinde kullanmak için bu veri üyesi olarak denetim sınıfınıza bildirmeniz gerekir. Denetim sınıfınıza temel sınıfta bir birleşim içinde bildirildiği için bu veri üyesi temel sınıftan devralmaz.  
   
- Arabirim `m_spOleAdviseHolder` uygulayan [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) ve [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) oluşturmak ve kapsayıcıya danışmanlık bağlantıları silme yöntemleri. Denetimin kapsayıcı bir öneri havuz destekleyerek uygulamalıdır [IAdviseSink](http://msdn.microsoft.com/library/windows/desktop/ms692513) arabirimi.  
+ Arabirim `m_spOleAdviseHolder` uygulayan [IOleObject::Advise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-advise) ve [IOleObject::Unadvise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-unadvise) oluşturmak ve kapsayıcıya danışmanlık bağlantıları silme yöntemleri. Denetimin kapsayıcı bir öneri havuz destekleyerek uygulamalıdır [IAdviseSink](/windows/desktop/api/objidl/nn-objidl-iadvisesink) arabirimi.  
   
 ##  <a name="ondraw"></a>  CComControlBase::OnDraw  
  Denetiminizi çizmek için bu yöntemi yok sayın.  
@@ -1291,7 +1291,7 @@ HRESULT SendOnDataChange(DWORD advf = 0);
   
 ### <a name="parameters"></a>Parametreler  
  *advf*  
- Öneri belirten bayrakları nasıl çağrısı [IAdviseSink::OnDataChange](http://msdn.microsoft.com/library/windows/desktop/ms687283) yapılır. Değerler: gelen [ADVF](http://msdn.microsoft.com/library/windows/desktop/ms693742) sabit listesi.  
+ Öneri belirten bayrakları nasıl çağrısı [IAdviseSink::OnDataChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-ondatachange) yapılır. Değerler: gelen [ADVF](/windows/desktop/api/objidl/ne-objidl-tagadvf) sabit listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -1344,7 +1344,7 @@ HRESULT SendOnViewChange(DWORD dwAspect, LONG lindex = -1);
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `SendOnViewChange` çağrıları [IAdviseSink::OnViewChange](http://msdn.microsoft.com/library/windows/desktop/ms694337). Yalnızca değerini *dizin* ilgi tüm görünüm gösterir -1 olan şu anda desteklenmiyor.  
+ `SendOnViewChange` çağrıları [IAdviseSink::OnViewChange](/windows/desktop/api/objidl/nf-objidl-iadvisesink-onviewchange). Yalnızca değerini *dizin* ilgi tüm görünüm gösterir -1 olan şu anda desteklenmiyor.  
   
 ##  <a name="setcontrolfocus"></a>  CComControlBase::SetControlFocus  
  Klavye odağı ya da denetiminden kaldırır veya ayarlar.  
@@ -1361,7 +1361,7 @@ BOOL SetControlFocus(BOOL bGrab);
  Odak denetimi başarıyla aldığında, TRUE döndürür; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Pencereli denetimin, Windows API işlevi için [SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms646312) çağrılır. Penceresiz denetime için [IOleInPlaceSiteWindowless::SetFocus](http://msdn.microsoft.com/library/windows/desktop/ms679745) çağrılır. Bu çağrı aracılığıyla penceresiz denetime klavye odağa gelir ve pencere iletilere yanıt verebilir.  
+ Pencereli denetimin, Windows API işlevi için [SetFocus](https://msdn.microsoft.com/library/windows/desktop/ms646312) çağrılır. Penceresiz denetime için [IOleInPlaceSiteWindowless::SetFocus](/windows/desktop/api/ocidl/nf-ocidl-ioleinplacesitewindowless-setfocus) çağrılır. Bu çağrı aracılığıyla penceresiz denetime klavye odağa gelir ve pencere iletilere yanıt verebilir.  
   
 ##  <a name="setdirty"></a>  CComControlBase::SetDirty  
  Veri üyesi ayarlar `m_bRequiresSave` değerine *bDirty*.  

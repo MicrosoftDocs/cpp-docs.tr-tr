@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c110c0addfe14ed8ba9018345eb1f4e61fd5182
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: e6991d7ca545eef671720a38907088dc6a534d1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338626"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216814"
 ---
 # <a name="cfontholder-class"></a>CFontHolder sınıfı
 Stok yazı tipi özelliğini uygular ve bir Windows yazı tipi nesnesinin işlevselliğini kapsüller ve `IFont` arabirimi.  
@@ -171,7 +171,7 @@ void InitializeFont(
   
 ### <a name="parameters"></a>Parametreler  
  *pFontDesc*  
- Bir yazı tipi açıklama yapıya yönelik işaretçi ( [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782)) yazı tipinin özelliklerini belirtir.  
+ Bir yazı tipi açıklama yapıya yönelik işaretçi ( [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc)) yazı tipinin özelliklerini belirtir.  
   
  *pFontDispAmbient*  
  Kapsayıcının ortam yazı tipi özelliğini işaretçisi.  
@@ -199,7 +199,7 @@ void QueryTextMetrics(LPTEXTMETRIC lptm);
   
 ### <a name="parameters"></a>Parametreler  
  *lptm*  
- Bir işaretçi bir [TEXTMETRIC](http://msdn.microsoft.com/library/windows/desktop/dd145132) bilgi alacak yapısı.  
+ Bir işaretçi bir [TEXTMETRIC](/windows/desktop/api/wingdi/ns-wingdi-tagtextmetrica) bilgi alacak yapısı.  
   
 ##  <a name="releasefont"></a>  CFontHolder::ReleaseFont  
  Bu işlev bağlantısı kesildiğinde `CFontHolder` nesnesinin kendi `IFont` arabirimi.  

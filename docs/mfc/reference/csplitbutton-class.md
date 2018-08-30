@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7fd35c351639d4b7b5f3b9dbbbce1c5e7cbcb79
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 38a624aacc302812865a785c537eb906a0489379
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466371"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207647"
 ---
 # <a name="csplitbutton-class"></a>CSplitButton sınıfı
 `CSplitButton` Sınıfı, Bölünmüş düğme denetimini temsil eder. Bir kullanıcı düğmenin ana bölümünü tıkladığında ve kullanıcı düğmenin aşağı açılan oka tıkladığında bir açılan menü görüntüler varsayılan davranışı Bölünmüş düğme denetimi gerçekleştirir.  
@@ -62,7 +62,7 @@ class CSplitButton : public CButton
 |[CSplitButton::OnDropDown](#ondropdown)|Sistem kullanıcı geçerli Bölünmüş düğme denetimi aşağı açılan okunu tıkladığında gönderdiği BCN_DROPDOWN bildirimleri işler.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CSplitButton` Sınıfı türetilen [CButton](../../mfc/reference/cbutton-class.md) sınıfı. Bölünmüş düğme denetimi BS_SPLITBUTTON stilini olan bir düğme denetimi ' dir. Kullanıcı aşağı açılan okunu tıkladığında bir özel menü görüntüler. Daha fazla bilgi için bkz: BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stilleri [düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775951).  
+ `CSplitButton` Sınıfı türetilen [CButton](../../mfc/reference/cbutton-class.md) sınıfı. Bölünmüş düğme denetimi BS_SPLITBUTTON stilini olan bir düğme denetimi ' dir. Kullanıcı aşağı açılan okunu tıkladığında bir özel menü görüntüler. Daha fazla bilgi için bkz: BS_SPLITBUTTON ve BS_DEFSPLITBUTTON stilleri [düğme stilleri](/windows/desktop/Controls/button-styles).  
   
  Aşağıdaki şekil, çağrı cihazı denetimi ve (1) Bölünmüş düğme denetimini içeren bir iletişim kutusu gösterir. (2) açılan liste okunu zaten tıklanan ve (3) alt görüntülenir.  
   
@@ -102,7 +102,7 @@ virtual BOOL Create(
 |Parametre|Açıklama|  
 |---------------|-----------------|  
 |[in] *dwStyle*|Bitsel bir birleşimi (veya) denetime uygulanacak stilleri. Daha fazla bilgi için [düğme stilleri](../../mfc/reference/styles-used-by-mfc.md#button-styles).|  
-|[in] *dikdörtgen*|Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
+|[in] *dikdörtgen*|Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) denetimin boyutunu ve konumunu içeren yapısı.|  
 |[in] *pParentWnd*|Null olmayan bir işaretçiye bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne.|  
 |[in] *nID*|Denetimin kimliği.|  
   
@@ -146,8 +146,8 @@ afx_msg void OnDropDown(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pNMHDR*|İşaretçi bir [NMHDR](http://msdn.microsoft.com/library/windows/desktop/bb775514) hakkında bilgi içeren yapısı [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) bildirim.|  
-|[out] *pResult*|(Kullanılmaz; hiçbir değer döndürülmez.) Dönüş değeri [BCN_DROPDOWN](http://msdn.microsoft.com/library/windows/desktop/bb775983) bildirim.|  
+|[in] *pNMHDR*|İşaretçi bir [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) hakkında bilgi içeren yapısı [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) bildirim.|  
+|[out] *pResult*|(Kullanılmaz; hiçbir değer döndürülmez.) Dönüş değeri [BCN_DROPDOWN](/windows/desktop/Controls/bcn-dropdown) bildirim.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı Bölünmüş düğme denetimini bulunan aşağı açılan oka tıkladığında, sistemi BCN_DROPDOWN bildirim gönderir. ileti, hangi `OnDropDown` yöntemi işler. Ancak, `CSplitButton` nesne, Bölünmüş düğme denetimi içeren denetimi BCN_DROPDOWN bildirim iletme değil. Sonuç olarak, denetimi içeren özel bir eylem bildirime yanıt destekleyemez.  

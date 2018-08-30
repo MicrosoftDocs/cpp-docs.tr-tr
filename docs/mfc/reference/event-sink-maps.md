@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0322d6b304366e598fc3db206d4c2e4b9b9d6315
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 114ccb875c1551528eb77edb9c2fae0ecb27edd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336611"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212049"
 ---
 # <a name="event-sink-maps"></a>Olay İç Havuz Eşlemeleri
 Katıştırılmış bir OLE denetim bir olay oluşturulduğunda, denetimin kapsayıcısı "MFC tarafından sağlanan bir olay havuzu eşlemesi," adlı bir mekanizma kullanarak olayı alır. Bu olay havuzu eşlemesi işleyici işlevlerini her özel olay yanı sıra bu olayların parametreleri belirtir. Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz [ActiveX denetim kapsayıcıları](../../mfc/activex-control-containers.md).  
@@ -222,7 +222,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
  Özellik bildiriminde ilgili dağıtım kimliği.  
   
  *pfnRequest*  
- İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL\***  parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
+ İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL** <strong>\*</strong> parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
   
  *pfnChanged*  
  İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev dönüş türü ve UINT parametre bir Boole olmalıdır. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
@@ -259,10 +259,10 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
  Özellik bildiriminde ilgili dağıtım kimliği.  
   
  *pfnRequest*  
- İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL ve UINT olmalıdır ve **BOOL\***  parametreleri. İşlev parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
+ İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev olmalıdır bir `BOOL` dönüş türü ve `UINT` ve `BOOL*` parametreleri. İşlev parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
   
  *pfnChanged*  
- İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev dönüş türü ve UINT parametre bir Boole olmalıdır. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
+ İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev olmalıdır bir `BOOL` dönüş türü ve `UINT` parametresi. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üst bilgi** afxdisp.h  
@@ -284,7 +284,7 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
  Özellik bildiriminde ilgili dağıtım kimliği.  
   
  *pfnRequest*  
- İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL\***  parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
+ İşleme bir üye işlevi işaretçisi `OnRequestEdit` bu özellik için bildirim. Bu işlev dönüş türü BOOL olmalıdır ve bir **BOOL** <strong>\*</strong> parametresi. Bu işlev, parametre değiştirme özelliğine izin vermek için TRUE ve FALSE izin vermeyecek şekilde ayarlamanız gerekir. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  
   
  *pfnChanged*  
  İşleme bir üye işlevi işaretçisi `OnChanged` bu özellik için bildirim. İşlev dönüş türü ve parametre bir Boole olmalıdır. İşlev bildirim işlendiğini göstermek için TRUE döndürmelidir; Aksi durumda FALSE.  

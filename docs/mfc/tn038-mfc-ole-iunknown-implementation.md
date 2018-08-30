@@ -28,23 +28,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acf33139250e6876dde6d86f7e8ed144dbe23180
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: df624c04b1fd5a80b6e54928adb8f3ca7424920a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465836"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215182"
 ---
 # <a name="tn038-mfcole-iunknown-implementation"></a>TN038: MFC/OLE IUnknown Uygulaması
 
 > [!NOTE]
 > Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-OLE 2 öğesinin temelinde "OLE bileşik nesne modeli" veya COM vardır. COM bir standardı tanımlar için nasıl birlikte çalışan nesnelerin birbirleriyle iletişim. Bu, bir "nesne", bir nesne üzerinde yöntemleri nasıl gönderilir dahil olmak üzere nasıl göründüğünü ayrıntılarını içerir. COM, ayrıca, tüm COM uyumlu sınıflar türetilmiş bir temel sınıf tanımlar. Bu temel sınıf [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). Ancak [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) arabiriminin C++ sınıfı olarak adlandırılır, COM, herhangi bir dile özgü değildir — C, PASCAL veya COM nesnesinin ikili düzenini destekleyen başka bir dilde uygulanabilir.
+OLE 2 öğesinin temelinde "OLE bileşik nesne modeli" veya COM vardır. COM bir standardı tanımlar için nasıl birlikte çalışan nesnelerin birbirleriyle iletişim. Bu, bir "nesne", bir nesne üzerinde yöntemleri nasıl gönderilir dahil olmak üzere nasıl göründüğünü ayrıntılarını içerir. COM, ayrıca, tüm COM uyumlu sınıflar türetilmiş bir temel sınıf tanımlar. Bu temel sınıf [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown). Ancak [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) arabiriminin C++ sınıfı olarak adlandırılır, COM, herhangi bir dile özgü değildir — C, PASCAL veya COM nesnesinin ikili düzenini destekleyen başka bir dilde uygulanabilir.
 
-OLE öğesinden türetilmiş tüm sınıflara başvurur [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) "arabirimler" olarak Bu önemli bir ayrımdır bir "arabirim" olduğu gibi [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) ile hiçbir uygulama taşımadığından. Yalnızca nesnelerin iletişim, bu uygulamaları neler özellikleri değil protokol da tanımlar. Bu maksimum esnekliğe olanak sisteminin şüphelenilebilir. MFC/C++ programları için varsayılan davranışı uygulayan MFC görevidir işidir.
+OLE öğesinden türetilmiş tüm sınıflara başvurur [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) "arabirimler" olarak Bu önemli bir ayrımdır bir "arabirim" olduğu gibi [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ile hiçbir uygulama taşımadığından. Yalnızca nesnelerin iletişim, bu uygulamaları neler özellikleri değil protokol da tanımlar. Bu maksimum esnekliğe olanak sisteminin şüphelenilebilir. MFC/C++ programları için varsayılan davranışı uygulayan MFC görevidir işidir.
 
-MFC'nin uygulanmasını anlamak için [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) önce arabirimin ne olduğunu anlamanız gerekir. Basitleştirilmiş bir sürümünü [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) aşağıda tanımlanmıştır:
+MFC'nin uygulanmasını anlamak için [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) önce arabirimin ne olduğunu anlamanız gerekir. Basitleştirilmiş bir sürümünü [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) aşağıda tanımlanmıştır:
 
 ```cpp
 class IUnknown
@@ -59,9 +59,9 @@ public:
 > [!NOTE]
 > Gibi belirli gerekli çağrı kuralı ayrıntıları `__stdcall` Bu resimde solda gösterilmiştir.
 
-[AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) üye işlevleri nesnenin bellek yönetimini denetler. COM, nesneleri izlemek için başvuru sayım düzenini kullanır. Nesne hiçbir zaman başvurulan C++ içinde olduğu gibi doğrudan. Bunun yerine, COM nesneleri her zaman bir işaretçi ile başvurulur. Sahibi bittiğinde nesneyi serbest bırakmak onun, nesne kullanarak [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) üyesi (için geleneksel bir C++ nesnesinde olduğu gibi işleç silmenin kullanılması yerine) çağrılır. Başvuru sayım mekanizması yönetilmesi için tek bir nesneye birden çok başvuru için sağlar. Uygulanışı [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) nesnede başvuru sayısını tutar — nesne, başvuru sayısı sıfır oluncaya kadar silinmez.
+[AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) üye işlevleri nesnenin bellek yönetimini denetler. COM, nesneleri izlemek için başvuru sayım düzenini kullanır. Nesne hiçbir zaman başvurulan C++ içinde olduğu gibi doğrudan. Bunun yerine, COM nesneleri her zaman bir işaretçi ile başvurulur. Sahibi bittiğinde nesneyi serbest bırakmak onun, nesne kullanarak [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) üyesi (için geleneksel bir C++ nesnesinde olduğu gibi işleç silmenin kullanılması yerine) çağrılır. Başvuru sayım mekanizması yönetilmesi için tek bir nesneye birden çok başvuru için sağlar. Uygulanışı [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) nesnede başvuru sayısını tutar — nesne, başvuru sayısı sıfır oluncaya kadar silinmez.
 
-[AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) uygulama açısından oldukça basittir. Basit bir uygulama şu şekildedir:
+[AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) uygulama açısından oldukça basittir. Basit bir uygulama şu şekildedir:
 
 ```cpp
 ULONG CMyObj::AddRef()
@@ -80,7 +80,7 @@ ULONG CMyObj::Release()
 }
 ```
 
-[QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üye işlevi biraz daha ilginçtir. Yalnızca üye işlevleri olan bir nesneye çok ilginç değil [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) — fazla daha fazla bir şeyler yapmasını söylemek de iyi [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sağlar. Burada [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) yararlıdır. Farklı bir "arabirim" aynı nesne üzerinde almanızı sağlar. Bu arabirimler genellikle türetilmiştir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) ve yeni üye işlevleri ekleyerek ek işlevler ekleyin. COM arabirimleri arabirimde bildirilen üye değişkenlerine hiçbir zaman sahiptir ve tüm üye işlevleri saf sanal olarak bildirilir. Örneğin,
+[QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) üye işlevi biraz daha ilginçtir. Yalnızca üye işlevleri olan bir nesneye çok ilginç değil [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) — fazla daha fazla bir şeyler yapmasını söylemek de iyi [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) sağlar. Burada [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) yararlıdır. Farklı bir "arabirim" aynı nesne üzerinde almanızı sağlar. Bu arabirimler genellikle türetilmiştir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) ve yeni üye işlevleri ekleyerek ek işlevler ekleyin. COM arabirimleri arabirimde bildirilen üye değişkenlerine hiçbir zaman sahiptir ve tüm üye işlevleri saf sanal olarak bildirilir. Örneğin,
 
 ```cpp
 class IPrintInterface : public IUnknown
@@ -90,7 +90,7 @@ public:
 };
 ```
 
-Yalnızca varsa bir Iprintınterface edinmek için bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), çağrı [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) kullanarak `IID` , `IPrintInterface`. Bir `IID` arabirimi benzersiz olarak tanımlayan 128-bit sayıdır. Var olan bir `IID` siz veya OLE'nin tanımladığı her arabirim için. Varsa *pUnk* işaretçisidir bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) nesnesi, kodu bir ondan ıprintınterface olabilir:
+Yalnızca varsa bir Iprintınterface edinmek için bir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), çağrı [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) kullanarak `IID` , `IPrintInterface`. Bir `IID` arabirimi benzersiz olarak tanımlayan 128-bit sayıdır. Var olan bir `IID` siz veya OLE'nin tanımladığı her arabirim için. Varsa *pUnk* işaretçisidir bir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) nesnesi, kodu bir ondan ıprintınterface olabilir:
 
 ```cpp
 IPrintInterface* pPrint = NULL;
@@ -102,7 +102,7 @@ if (pUnk->QueryInterface(IID_IPrintInterface, (void**)&pPrint) == NOERROR)
 }
 ```
 
-Bu oldukça kolay görünüyor, ancak nasıl uygulardınız hem Iprintınterface destekleyen bir nesneyi ve [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) arabirimi Iprintınterface doğrudan'dan türetilmiş olduğundan bu durumda basittir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) — ıprintınterface uygulamasıyla [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) otomatik olarak desteklenir. Örneğin:
+Bu oldukça kolay görünüyor, ancak nasıl uygulardınız hem Iprintınterface destekleyen bir nesneyi ve [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) arabirimi Iprintınterface doğrudan'dan türetilmiş olduğundan bu durumda basittir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) — ıprintınterface uygulamasıyla [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) otomatik olarak desteklenir. Örneğin:
 
 ```cpp
 class CPrintObj : public CPrintInterface
@@ -114,7 +114,7 @@ class CPrintObj : public CPrintInterface
 };
 ```
 
-Uygulamaları [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) tam olarak aynı uygulananlarla yukarıdaki olması. `CPrintObj::QueryInterface` şunun gibi görünür:
+Uygulamaları [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) tam olarak aynı uygulananlarla yukarıdaki olması. `CPrintObj::QueryInterface` şunun gibi görünür:
 
 ```cpp
 HRESULT CPrintObj::QueryInterface(REFIID iid, void FAR* FAR* ppvObj)
@@ -129,7 +129,7 @@ HRESULT CPrintObj::QueryInterface(REFIID iid, void FAR* FAR* ppvObj)
 }
 ```
 
-Arabirim tanımlayıcısı (IID) tanımlıysa, gördüğünüz gibi bir işaretçi nesnenize döner; Aksi takdirde hata oluşur. Ayrıca başarılı bir [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) sonuçları örtülü bir [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379). Kuşkusuz, CEditObj::Print uygulamak de gerekir. Iprintınterface doğrudan türetildiği basit olan [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) arabirimi. İki farklı arayüzü desteklemek isterseniz, ancak her ikisini de türetilmiş [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), aşağıdakileri dikkate alın:
+Arabirim tanımlayıcısı (IID) tanımlıysa, gördüğünüz gibi bir işaretçi nesnenize döner; Aksi takdirde hata oluşur. Ayrıca başarılı bir [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) sonuçları örtülü bir [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref). Kuşkusuz, CEditObj::Print uygulamak de gerekir. Iprintınterface doğrudan türetildiği basit olan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) arabirimi. İki farklı arayüzü desteklemek isterseniz, ancak her ikisini de türetilmiş [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), aşağıdakileri dikkate alın:
 
 ```cpp
 class IEditInterface : public IUnkown
@@ -244,7 +244,7 @@ HRESULT CEditPrintObj::CPrintObj::QueryInterface(REFIID iid, void** ppvObj)
 }
 ```
 
-Çoğu fark [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) uygulama CEditPrintObj sınıfı içine yerleştirilen CEditPrintObj::CEditObj ve CEditPrintObj::CPrintObj kodunu çoğaltmak yerine. Bu kod miktarını azaltır ve hataları önler. Burada temel nokta IUnknown arabirimden, çağrı mümkün olmasıdır [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) arabirimi almak için nesnenin destekleyebildiği ve o arabirimlerin her birinden yapmak mümkündür. Bunun anlamı tüm [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) her arabiriminden işlevleri tamamen aynı şekilde davranması gerekir. Sırayla bu katıştırılmış nesnelerin "dış nesne" içinde uygulamayı çağırması bir arka işaretçi kullanılır (m_pParent) ' dir. M_pParent işaretçisi CEditPrintObj Oluşturucusu sırasında başlatılır. Sonra ceditprintobj::cprintobj:: PrintObject ve CEditPrintObj::CEditObj::EditObject de uygulayabilir. Bir özellik eklemek için tam anlamıyla bir bit kod eklendi — nesneyi düzenleme yeteneği. Neyse ki, (böyle bir durum olsa da) yalnızca tek bir üye işlevi olan arabirimler için bu oldukça seyrek olur ve bu durumda, EditObject ve PrintObject genellikle tek bir arabirim olarak birleştirilir.
+Çoğu fark [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) uygulama CEditPrintObj sınıfı içine yerleştirilen CEditPrintObj::CEditObj ve CEditPrintObj::CPrintObj kodunu çoğaltmak yerine. Bu kod miktarını azaltır ve hataları önler. Burada temel nokta IUnknown arabirimden, çağrı mümkün olmasıdır [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) arabirimi almak için nesnenin destekleyebildiği ve o arabirimlerin her birinden yapmak mümkündür. Bunun anlamı tüm [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) her arabiriminden işlevleri tamamen aynı şekilde davranması gerekir. Sırayla bu katıştırılmış nesnelerin "dış nesne" içinde uygulamayı çağırması bir arka işaretçi kullanılır (m_pParent) ' dir. M_pParent işaretçisi CEditPrintObj Oluşturucusu sırasında başlatılır. Sonra ceditprintobj::cprintobj:: PrintObject ve CEditPrintObj::CEditObj::EditObject de uygulayabilir. Bir özellik eklemek için tam anlamıyla bir bit kod eklendi — nesneyi düzenleme yeteneği. Neyse ki, (böyle bir durum olsa da) yalnızca tek bir üye işlevi olan arabirimler için bu oldukça seyrek olur ve bu durumda, EditObject ve PrintObject genellikle tek bir arabirim olarak birleştirilir.
 
 Oldukça fazla açıklama ve kod basit bir senaryo için çok fazla olmasıdır. MFC/OLE sınıfları daha basit bir alternatif sağlar. MFC uygulaması, ileti eşlemeleri ile benzer şekilde Windows iletileri sarmalanmış bir teknik kullanır. Bu adlandırılmaktadır *arabirim eşlemeleri* ve sonraki bölümde ele alınmıştır.
 
@@ -252,11 +252,11 @@ Oldukça fazla açıklama ve kod basit bir senaryo için çok fazla olmasıdır.
 
 MFC/OLE, kavram ve yürütmede MFC'nin "İleti eşlemeleri" ve "Gönderme eşlemeleri" benzer "arabirimi haritaları" uygulaması içerir. MFC'nin arabirim eşlemeleri'nin temel özellikleri aşağıda verilmiştir:
 
-- Öğesinin standart uygulaması [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), yerleşik `CCmdTarget` sınıfı.
+- Öğesinin standart uygulaması [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), yerleşik `CCmdTarget` sınıfı.
 
-- Tarafından değiştirilen başvuru sayısı Bakımı [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) ve [sürüm](http://msdn.microsoft.com/library/windows/desktop/ms682317)
+- Tarafından değiştirilen başvuru sayısı Bakımı [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) ve [sürüm](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release)
 
-- Veri odaklı uygulaması [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521)
+- Veri odaklı uygulaması [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_))
 
 Ayrıca, arabirim eşlemeleri aşağıdaki gelişmiş özellikleri destekler:
 
@@ -268,7 +268,7 @@ Ayrıca, arabirim eşlemeleri aşağıdaki gelişmiş özellikleri destekler:
 
 Toplama hakkında daha fazla bilgi için bkz. [toplama](/windows/desktop/com/aggregation) konu.
 
-MFC'nin arabirimi eşleme desteğinin kökü `CCmdTarget` sınıfı. `CCmdTarget` "*sahip bir*" başvuru sayısı yanı sıra tüm üye işlevleri ilişkili [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) uygulama (bulunduğu örneğin başvuru sayısı `CCmdTarget`). OLE COM'u destekleyen bir sınıf oluşturmak için öğesinden bir sınıf türetin `CCmdTarget` ve çeşitli makroları üye işlevlerini `CCmdTarget` ve istenen arabirimleri gerçekleştirmek için. MFC'nin uygulaması, yukarıdaki örnek gibi her arabirim uygulamasını tanımlamak için iç içe geçmiş sınıflar kullanır. IUnknown yanı sıra bazı yinelenen kodları ortadan makroları bir dizi standart uygulaması ile daha kolay yapılır.
+MFC'nin arabirimi eşleme desteğinin kökü `CCmdTarget` sınıfı. `CCmdTarget` "*sahip bir*" başvuru sayısı yanı sıra tüm üye işlevleri ilişkili [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) uygulama (bulunduğu örneğin başvuru sayısı `CCmdTarget`). OLE COM'u destekleyen bir sınıf oluşturmak için öğesinden bir sınıf türetin `CCmdTarget` ve çeşitli makroları üye işlevlerini `CCmdTarget` ve istenen arabirimleri gerçekleştirmek için. MFC'nin uygulaması, yukarıdaki örnek gibi her arabirim uygulamasını tanımlamak için iç içe geçmiş sınıflar kullanır. IUnknown yanı sıra bazı yinelenen kodları ortadan makroları bir dizi standart uygulaması ile daha kolay yapılır.
 
 ## <a name="interface-map-basics"></a>Arabirim eşlemesi temelleri
 
@@ -288,7 +288,7 @@ MFC'nin arabirimi eşleme desteğinin kökü `CCmdTarget` sınıfı. `CCmdTarget
 
 7. METHOD_PROLOGUE makrosu üst üzere `CCmdTarget`-türetilmiş bir nesneye.
 
-8. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) temsilci seçmek için kullanabileceği `CCmdTarget` uygulama bu işlevlerin (`ExternalAddRef`, `ExternalRelease`, ve `ExternalQueryInterface`).
+8. [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) temsilci seçmek için kullanabileceği `CCmdTarget` uygulama bu işlevlerin (`ExternalAddRef`, `ExternalRelease`, ve `ExternalQueryInterface`).
 
 Yukarıdaki CPrintEditObj örneği şu şekilde uygulanabilir:
 
@@ -312,7 +312,7 @@ protected:
 };
 ```
 
-Yukarıdaki bildirim, türetilen bir sınıf oluşturur `CCmdTarget`. Declare_ınterface_map makrosu framework, bu sınıfın özel arabirim eşlemesine sahip olacağını belirtir. Ayrıca, begın_ınterface_part ve end_ınterface_part makroları iç içe geçmiş sınıflar, bu durumda CEditObj ve CPrintObj (X yalnızca yuvalı sınıfları "C" ve arabirimi ile hangi başlangıç hangi sınıfların global sınıflardan ayırt etmek için kullanılan adlarla tanımlayın "I" ile başlayan). Bu sınıfların iki iç içe üyesi oluşturuldu: sırasıyla m_CEditObj ve m_CPrintObj, sırasıyla. Makroları otomatik olarak bildirin [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) çalışır; bu nedenle, yalnızca işlevler bu arabirime özgü bildirmek: EditObject ve PrintObject (OLE makrosu STDMETHOD kullanılan böylece **_stdcall** ve sanal anahtar sözcüklerinin hedef platform için uygun şekilde).
+Yukarıdaki bildirim, türetilen bir sınıf oluşturur `CCmdTarget`. Declare_ınterface_map makrosu framework, bu sınıfın özel arabirim eşlemesine sahip olacağını belirtir. Ayrıca, begın_ınterface_part ve end_ınterface_part makroları iç içe geçmiş sınıflar, bu durumda CEditObj ve CPrintObj (X yalnızca yuvalı sınıfları "C" ve arabirimi ile hangi başlangıç hangi sınıfların global sınıflardan ayırt etmek için kullanılan adlarla tanımlayın "I" ile başlayan). Bu sınıfların iki iç içe üyesi oluşturuldu: sırasıyla m_CEditObj ve m_CPrintObj, sırasıyla. Makroları otomatik olarak bildirin [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) çalışır; bu nedenle, yalnızca işlevler bu arabirime özgü bildirmek: EditObject ve PrintObject (OLE makrosu STDMETHOD kullanılan böylece **_stdcall** ve sanal anahtar sözcüklerinin hedef platform için uygun şekilde).
 
 Bu sınıfa ilişkin arabirim eşlemesini uygulamak için:
 
@@ -323,9 +323,9 @@ BEGIN_INTERFACE_MAP(CPrintEditObj, CCmdTarget)
 END_INTERFACE_MAP()
 ```
 
-Bu sırasıyla ııd_ıprintınterface IID'yi m_CPrintObj ile ııd_ıeditınterface'ı da m_CEditObj ile bağlar. `CCmdTarget` Uygulaması [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) (`CCmdTarget::ExternalQueryInterface`) m_CPrintObj ve m_CEditObj istendiğinde işaretçilerini döndürmek için bu eşlemesini kullanır. İçin bir girdi eklenmesi gerekli değildir `IID_IUnknown`; çerçevesi (Bu durumda, m_CPrintObj) haritadaki ilk arabirimi zaman kullanacağı `IID_IUnknown` istenir.
+Bu sırasıyla ııd_ıprintınterface IID'yi m_CPrintObj ile ııd_ıeditınterface'ı da m_CEditObj ile bağlar. `CCmdTarget` Uygulaması [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) (`CCmdTarget::ExternalQueryInterface`) m_CPrintObj ve m_CEditObj istendiğinde işaretçilerini döndürmek için bu eşlemesini kullanır. İçin bir girdi eklenmesi gerekli değildir `IID_IUnknown`; çerçevesi (Bu durumda, m_CPrintObj) haritadaki ilk arabirimi zaman kullanacağı `IID_IUnknown` istenir.
 
-Begın_ınterface_part makrosu otomatik olarak bildirilmiş olsa bile [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317) ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) işlevlerini sizin, hala bunları uygulamanız gerekir:
+Begın_ınterface_part makrosu otomatik olarak bildirilmiş olsa bile [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) işlevlerini sizin, hala bunları uygulamanız gerekir:
 
 ```cpp
 ULONG FAR EXPORT CEditPrintObj::XEditObj::AddRef()
@@ -381,7 +381,7 @@ Toplamanın iki yolu vardır: (1) toplamayı destekleyen COM nesnesi kullanma ve
 
 ### <a name="using-an-aggregate-object"></a>Toplam nesnesi kullanma
 
-Bazı yollar toplam içine QueryInterface mekanizmasına bağlanacak bir toplam değer nesnesi kullanmak için. Diğer bir deyişle, nesnenizin yerel bir parçası olsa olarak toplam nesnenin davranmalıdırlar. Nasıl MFC'nin arabirim eşleme mekanizmasının ınterface_part makrosu yanı sıra halinde bu KRAVAT mu yuvalı nesnenin IID'ye eşlendiği yerlerde de bildirebilirsiniz bir toplama nesnesi bir parçası olarak, `CCmdTarget` türetilmiş sınıf. Bunu yapmak için ınterface_aggregate makrosunu kullanılır. Bu, bir üye değişkeni belirtmenize olanak sağlar (bir işaretçi olmalıdır bir [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) sınıfa veya türetilmiş), arabirim eşleme mekanizmasına tümleştirilecek olduğu. İşaretçi olduğunda NULL değilse `CCmdTarget::ExternalQueryInterface` olan çağrılır, çerçeve otomatik olarak toplam nesnenin çağıracak [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üye işlevini, `IID` istenen biri yerel değil `IID`s tarafından desteklenen `CCmdTarget` nesnenin kendisi.
+Bazı yollar toplam içine QueryInterface mekanizmasına bağlanacak bir toplam değer nesnesi kullanmak için. Diğer bir deyişle, nesnenizin yerel bir parçası olsa olarak toplam nesnenin davranmalıdırlar. Nasıl MFC'nin arabirim eşleme mekanizmasının ınterface_part makrosu yanı sıra halinde bu KRAVAT mu yuvalı nesnenin IID'ye eşlendiği yerlerde de bildirebilirsiniz bir toplama nesnesi bir parçası olarak, `CCmdTarget` türetilmiş sınıf. Bunu yapmak için ınterface_aggregate makrosunu kullanılır. Bu, bir üye değişkeni belirtmenize olanak sağlar (bir işaretçi olmalıdır bir [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) sınıfa veya türetilmiş), arabirim eşleme mekanizmasına tümleştirilecek olduğu. İşaretçi olduğunda NULL değilse `CCmdTarget::ExternalQueryInterface` olan çağrılır, çerçeve otomatik olarak toplam nesnenin çağıracak [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) üye işlevini, `IID` istenen biri yerel değil `IID`s tarafından desteklenen `CCmdTarget` nesnenin kendisi.
 
 #### <a name="to-use-the-interfaceaggregate-macro"></a>Interface_aggregate makrosunu kullanmak için
 
@@ -432,15 +432,15 @@ BEGIN_INTERFACE_MAP(CAggrExample, CCmdTarget)
 END_INTERFACE_MAP()
 ```
 
-M_lpaggrınner değişkeni oluşturucuda null ile başlatılır. Framework varsayılan uygulamasında bir NULL üye değişkenini yoksayar [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521). `OnCreateAggregates` Aslında, toplam değer nesneleri oluşturmak için uygun bir yerdir. Nesne MFC uygulaması dışında oluşturuyorsanız bunu açıkça çağırmanız gerekecektir `COleObjectFactory`. İçinde toplamlar oluşturma nedeni `CCmdTarget::OnCreateAggregates` kullanımını yanı sıra `CCmdTarget::GetControllingUnknown` toplanabilir nesneler oluşturma işlemi tartışılırken anlaşılacaktır.
+M_lpaggrınner değişkeni oluşturucuda null ile başlatılır. Framework varsayılan uygulamasında bir NULL üye değişkenini yoksayar [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)). `OnCreateAggregates` Aslında, toplam değer nesneleri oluşturmak için uygun bir yerdir. Nesne MFC uygulaması dışında oluşturuyorsanız bunu açıkça çağırmanız gerekecektir `COleObjectFactory`. İçinde toplamlar oluşturma nedeni `CCmdTarget::OnCreateAggregates` kullanımını yanı sıra `CCmdTarget::GetControllingUnknown` toplanabilir nesneler oluşturma işlemi tartışılırken anlaşılacaktır.
 
-Bu teknik nesnenizin toplam nesnenin kendi yerel arabirimleri ile birlikte desteklediği arabirimlerin tümünü sunar. Yalnızca bir alt toplamanın desteklediği arabirimlerin istiyorsanız, geçersiz kılabilirsiniz `CCmdTarget::GetInterfaceHook`. Çok düşük düzeyli hookability, benzer şekilde bu sayede [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521). Genellikle toplam destekleyen tüm arabirimleri istersiniz.
+Bu teknik nesnenizin toplam nesnenin kendi yerel arabirimleri ile birlikte desteklediği arabirimlerin tümünü sunar. Yalnızca bir alt toplamanın desteklediği arabirimlerin istiyorsanız, geçersiz kılabilirsiniz `CCmdTarget::GetInterfaceHook`. Çok düşük düzeyli hookability, benzer şekilde bu sayede [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)). Genellikle toplam destekleyen tüm arabirimleri istersiniz.
 
 ### <a name="making-an-object-implementation-aggregatable"></a>Bir nesne uygulamasını toplanabilir yapma
 
-Toplanabilir olması bir nesne uygulanması için [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) bir "denetleyen bilinmeyendir için." temsilci gerekir Diğer bir deyişle, bu nesnenin bir parçası olarak temsilci gerekir [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) farklı bir nesneye de türetilmiş [ IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). Bu "kontrol eden bilinmeyen" oluşturulduğunda, nesnenin başka bir deyişle, bu öğesinin uygulanmasına sağlanır sağlanır `COleObjectFactory`. Bu uygulama az miktarda bir ek yük getirir ve MFC bunu isteğe bağlı hale getirir bu nedenle bazı durumlarda istenmez, değil. Bir nesnenin toplanabilir olması etkinleştirmek için çağrı `CCmdTarget::EnableAggregation` nesnenin oluşturucusundan.
+Toplanabilir olması bir nesne uygulanması için [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) bir "denetleyen bilinmeyendir için." temsilci gerekir Diğer bir deyişle, bu nesnenin bir parçası olarak temsilci gerekir [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) farklı bir nesneye de türetilmiş [ IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown). Bu "kontrol eden bilinmeyen" oluşturulduğunda, nesnenin başka bir deyişle, bu öğesinin uygulanmasına sağlanır sağlanır `COleObjectFactory`. Bu uygulama az miktarda bir ek yük getirir ve MFC bunu isteğe bağlı hale getirir bu nedenle bazı durumlarda istenmez, değil. Bir nesnenin toplanabilir olması etkinleştirmek için çağrı `CCmdTarget::EnableAggregation` nesnenin oluşturucusundan.
 
-Nesne de toplamları kullanıyorsa de doğru aktardığınızdan emin olmalısınız "denetleyen bilinmeyendir" öğesini toplam nesnelere. Genellikle bu [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) işaretçisi toplama oluşturulduğunda nesneye geçirilir. Örneğin pUnkOuter parametresi "denetleyen bilinmeyendir" ile oluşturulan nesneler için olan `CoCreateInstance`. Doğru "kontrol eden bilinmeyen" işaretçisi çağrılarak alınabilir `CCmdTarget::GetControllingUnknown`. O işlevden döndürülen değer ancak Oluşturucu sırasında geçerli değil. Bu nedenle toplamalarınızı yalnızca geçersiz kılma oluşturmanız önerilir `CCmdTarget::OnCreateAggregates`, dönüş değeri burada `GetControllingUnknown` oluşturulan bile güvenilirdir `COleObjectFactory` uygulaması.
+Nesne de toplamları kullanıyorsa de doğru aktardığınızdan emin olmalısınız "denetleyen bilinmeyendir" öğesini toplam nesnelere. Genellikle bu [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) işaretçisi toplama oluşturulduğunda nesneye geçirilir. Örneğin pUnkOuter parametresi "denetleyen bilinmeyendir" ile oluşturulan nesneler için olan `CoCreateInstance`. Doğru "kontrol eden bilinmeyen" işaretçisi çağrılarak alınabilir `CCmdTarget::GetControllingUnknown`. O işlevden döndürülen değer ancak Oluşturucu sırasında geçerli değil. Bu nedenle toplamalarınızı yalnızca geçersiz kılma oluşturmanız önerilir `CCmdTarget::OnCreateAggregates`, dönüş değeri burada `GetControllingUnknown` oluşturulan bile güvenilirdir `COleObjectFactory` uygulaması.
 
 Nesnenin doğru başvuru sayısı eklerken veya yapay başvuru sayısı düzenlemesi de önemlidir. Bunun olmasını sağlamak için her zaman çağrı `ExternalAddRef` ve `ExternalRelease` yerine `InternalRelease` ve `InternalAddRef`. Nadiren `InternalRelease` veya `InternalAddRef` toplamayı destekleyen bir sınıf.
 
@@ -528,7 +528,7 @@ Bu sınıfın uyguladığı arabirimin adı
 
 #### <a name="remarks"></a>Açıklamalar
 
-Sınıfınızın uygulayacağı her arayüz için bir begın_ınterface_part ve end_ınterface_part çift olması gerekir. Bu makrolar yanı sıra söz konusu sınıfın bir katıştırılmış bir üye değişkenini tanımladığınız OLE arabiriminden türetilen yerel bir sınıfı tanımlar. [AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379), [yayın](http://msdn.microsoft.com/library/windows/desktop/ms682317), ve [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521) üyeleri otomatik olarak bildirilir. Uygulanan arabiriminin bir parçası olan diğer üye işlevler için bildirimler eklemeniz gerekir (Bu bildirimler begın_ınterface_part ve end_ınterface_part makroları arasında yer alır).
+Sınıfınızın uygulayacağı her arayüz için bir begın_ınterface_part ve end_ınterface_part çift olması gerekir. Bu makrolar yanı sıra söz konusu sınıfın bir katıştırılmış bir üye değişkenini tanımladığınız OLE arabiriminden türetilen yerel bir sınıfı tanımlar. [AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref), [yayın](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release), ve [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)) üyeleri otomatik olarak bildirilir. Uygulanan arabiriminin bir parçası olan diğer üye işlevler için bildirimler eklemeniz gerekir (Bu bildirimler begın_ınterface_part ve end_ınterface_part makroları arasında yer alır).
 
 *İface* bağımsız değişken olduğu gibi uygulamak istediğiniz OLE arabirimidir `IAdviseSink`, veya `IPersistStorage` (veya kendi özel arabiriminiz).
 
@@ -598,7 +598,7 @@ IUnknown
             IOleInPlaceFrameWindow
 ```
 
-Bir nesne uyguluyorsa `IOleInPlaceFrameWindow`, bir istemci `QueryInterface` şu arabirimlerin herhangi birinde bulunan: `IOleUIWindow`, `IOleWindow`, veya [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509), "en türetilmiş" arabirim yanı sıra `IOleInPlaceFrameWindow` (aslında olduğunuz bir Uygulama). Bu durumu çözmek için birden fazla ınterface_part makrosu her bir taban arabirimi eşlemek için kullanabileceğiniz `IOleInPlaceFrameWindow` arabirimi:
+Bir nesne uyguluyorsa `IOleInPlaceFrameWindow`, bir istemci `QueryInterface` şu arabirimlerin herhangi birinde bulunan: `IOleUIWindow`, `IOleWindow`, veya [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), "en türetilmiş" arabirim yanı sıra `IOleInPlaceFrameWindow` (aslında olduğunuz bir Uygulama). Bu durumu çözmek için birden fazla ınterface_part makrosu her bir taban arabirimi eşlemek için kullanabileceğiniz `IOleInPlaceFrameWindow` arabirimi:
 
 sınıf tanımı dosyasında:
 
@@ -634,7 +634,7 @@ Toplanacak üye değişkeninin adı.
 
 #### <a name="remarks"></a>Açıklamalar
 
-Bu makro, framework sınıfın bir toplama nesnesi kullandığını söylemek için kullanılır. Bu, begın_ınterface_part ve end_ınterface_part makroları arasında yer almalıdır. Öğesinden türetilen ayrı bir nesne bir toplama nesnesi olduğu [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509). Toplama ve ınterface_aggregate makrosunu kullanarak, toplamanın desteklediği nesne tarafından doğrudan desteklenir gibi görünmesini tüm arabirimleri yapabilirsiniz. *TheAggr* yalnızca türetilmiş sınıfınızın bir üye değişkeninin adı olmayan bağımsız değişken [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) (doğrudan veya dolaylı olarak). Arabirim eşlemesine yerleştirildiğinde ınterface_part makroları tüm ınterface_aggregate makrolarını izlemelidir.
+Bu makro, framework sınıfın bir toplama nesnesi kullandığını söylemek için kullanılır. Bu, begın_ınterface_part ve end_ınterface_part makroları arasında yer almalıdır. Öğesinden türetilen ayrı bir nesne bir toplama nesnesi olduğu [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown). Toplama ve ınterface_aggregate makrosunu kullanarak, toplamanın desteklediği nesne tarafından doğrudan desteklenir gibi görünmesini tüm arabirimleri yapabilirsiniz. *TheAggr* yalnızca türetilmiş sınıfınızın bir üye değişkeninin adı olmayan bağımsız değişken [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) (doğrudan veya dolaylı olarak). Arabirim eşlemesine yerleştirildiğinde ınterface_part makroları tüm ınterface_aggregate makrolarını izlemelidir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

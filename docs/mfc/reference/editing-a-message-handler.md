@@ -17,19 +17,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f82245e8e2fa338ed4abca0b97c53d653427cce
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 046ce538dafe90b172096eb37bf2309f8c75db1c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027878"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206257"
 ---
 # <a name="editing-a-message-handler"></a>İleti İşleyicisini Düzenleme
 Bir ileti işleyicisi tanımlandıktan sonra eklemek veya kodu değiştirmek için üye işlevin tanımına gidebilirsiniz.  
   
  Bir üye işlev tanımından atlamak için [iletişim kutusu Düzenleyicisi](../../windows/dialog-editor.md), kendisi için bir işleyici zaten tanımlanmış bir denetimi çift tıklatın. Seçili denetimin ileti işleyicisi tanımlandığı dosyaya gider.  
   
- Bir üye işlev tanımından atlamak için [sınıf görünümü](http://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), Sınıf Görünümü'nde işlev adına çift tıklayın.  
+ Bir üye işlev tanımından atlamak için [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), Sınıf Görünümü'nde işlev adına çift tıklayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [İletileri işlevlere eşleme](../../mfc/reference/mapping-messages-to-functions.md)   

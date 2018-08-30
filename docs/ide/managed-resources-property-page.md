@@ -18,30 +18,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2922a0a92a121d6838478daaf2c32f1c7a630d21
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: a2fe0896a8fbd8b8c0a8f68847ee138017eaa36b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340365"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215507"
 ---
 # <a name="managed-resources-property-page"></a>Yönetilen Kaynaklar Özellik Sayfası
-Kaynak Derleyicisi ayarlarını sağlar.  
+Kaynak derleyicisi için ayarları sağlar.  
   
- **Yönetilen kaynaklara** özellik sayfası, aşağıdaki özellikleri içerir:  
+ **Yönetilen kaynaklar** özellik sayfası, aşağıdaki özellikleri içerir:  
   
- **Kaynak mantıksal adı**  
- Belirtir *mantıksal ad* oluşturulan ara .resources dosyasının. Mantıksal ad kaynağı yüklemek için kullanılan addır. Mantıksal ad belirtilmezse, kaynak (.resx) dosya adı mantıksal adı olarak kullanılır.  
+ **Mantıksal kaynak adı**  
+ Belirtir *mantıksal adı* üretilen Ara .resources dosyasının. Mantıksal ad kaynağı yüklemek için kullanılan addır. Mantıksal hiçbir ad belirtilmediği takdirde, kaynak (.resx) dosyası adına mantıksal adı olarak kullanılır.  
   
- **Çıktı dosyası adı**  
- Kaynak (.resx) dosyası katkıda bulunan son çıktı dosyası adını belirtir.  
+ **Çıkış dosyası adı**  
+ Kaynak (.resx) dosyasının katıldığı son çıktı dosyasının adını belirtir.  
   
- **Varsayılan yerelleştirilmiş kaynakları**  
- Verilen .resx dosyası varsayılan kaynakları ya da bir uydu .dll katkı olup olmadığını belirtir.  
+ **Varsayılan yerelleştirilmiş kaynaklar**  
+ Belirtilen .resx dosyasının varsayılan kaynaklara mı uydu .dll DLL'e mi katılacağını belirtir.  
   
- Nasıl erişileceği hakkında bilgi için **yönetilen kaynaklara** özellik sayfası, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+ Erişim hakkında daha fazla bilgi için **yönetilen kaynaklar** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [RC (RC komut satırı) kullanma](http://msdn.microsoft.com/library/windows/desktop/aa381055)   
+ [RC (RC komut satırı) kullanma](https://msdn.microsoft.com/library/windows/desktop/aa381055)   
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
  [/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)](../build/reference/assemblyresource-embed-a-managed-resource.md)

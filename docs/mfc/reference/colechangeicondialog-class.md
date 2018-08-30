@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40907720965647e076c6b516f1c2de9f1d3f9edb
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 089fe435c86b524acc41ba528452d93032d1b1a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850572"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214499"
 ---
 # <a name="colechangeicondialog-class"></a>Colechangeıcondialog sınıfı
 OLE Change Icon iletişim kutusu için kullanıldı.  
@@ -67,7 +67,7 @@ class COleChangeIconDialog : public COleDialog
 ## <a name="remarks"></a>Açıklamalar  
  Sınıfın bir nesnesi oluşturma `COleChangeIconDialog` bu iletişim kutusunu çağırmak istediğinizde. Sonra bir `COleChangeIconDialog` nesne oluşturulur, kullanabileceğiniz [m_ci](#m_ci) yapısı değerleri veya durumları iletişim kutusundaki denetimlerin başlatılamadı. `m_ci` OLEUICHANGEICON türünü yapısıdır. Bu iletişim kutusu sınıfı kullanma hakkında daha fazla bilgi için bkz. [DoModal](#domodal) üye işlevi.  
   
- Daha fazla bilgi için [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.  
   
  Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -122,7 +122,7 @@ explicit COleChangeIconDialog(
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal) işlevi.  
   
- Daha fazla bilgi için [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.  
   
 ##  <a name="dochangeicon"></a>  COleChangeIconDialog::DoChangeIcon  
  Sonra iletişim kutusunda seçilen bir öğeyi temsil eden simgeyi değiştirmek için bu işlevi çağırın [DoModal](#domodal) IDOK döndürür.  
@@ -152,7 +152,7 @@ virtual INT_PTR DoModal();
   
 - Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeIcon](http://msdn.microsoft.com/library/windows/desktop/ms688307) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIChangeIcon](/windows/desktop/api/oledlg/nf-oledlg-oleuichangeicona) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_ci](#m_ci) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
@@ -179,7 +179,7 @@ OLEUICHANGEICON m_ci;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için [OLEUICHANGEICON](http://msdn.microsoft.com/library/windows/desktop/ms680098) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICHANGEICON](/windows/desktop/api/oledlg/ns-oledlg-tagoleuichangeicona) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

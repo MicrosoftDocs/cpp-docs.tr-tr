@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63e6a7a45fc119309ce99640ab74006ae44a05bf
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bed3e80534a651e1e5a3d7228d0746ef8f552a9a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339139"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208847"
 ---
 # <a name="cimagelist-class"></a>Cımagelist sınıfı
 Windows ortak görüntü listesi denetimi işlevlerini sağlar.  
@@ -260,7 +260,7 @@ CImageList();
 ```  
   
 ##  <a name="copy"></a>  CImageList::Copy  
- Bu üye işlevi Win32 işlevinin davranışı uygulayan [ImageList_Copy](http://msdn.microsoft.com/library/windows/desktop/bb761520)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 işlevinin davranışı uygulayan [ImageList_Copy](/windows/desktop/api/commctrl/nf-commctrl-imagelist_copy)Windows SDK içinde açıklandığı gibi.  
   
 ```  
 BOOL Copy(
@@ -588,16 +588,16 @@ BOOL DrawEx(
  Belirtilen cihaz bağlamında çizmek konumu.  
   
  *SZ*  
- Görüntünün görüntü sol üst köşesine göre çizmek için bölümünü boyutu. Bkz: *dx* ve *GN* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK.  
+ Görüntünün görüntü sol üst köşesine göre çizmek için bölümünü boyutu. Bkz: *dx* ve *GN* içinde [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK.  
   
  *clrBk*  
- Görüntü, arka plan rengi. Bkz: *rgbBk* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK.  
+ Görüntü, arka plan rengi. Bkz: *rgbBk* içinde [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK.  
   
  *clrFg*  
- Görüntü ön plan rengi. Bkz: *rgbFg* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK.  
+ Görüntü ön plan rengi. Bkz: *rgbFg* içinde [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK.  
   
  *nStyle*  
- Çizim stili belirten bayrak. Bkz: *fStyle* içinde [ImageList_DrawEx](http://msdn.microsoft.com/library/windows/desktop/bb761536) Windows SDK.  
+ Çizim stili belirten bayrak. Bkz: *fStyle* içinde [ImageList_DrawEx](/windows/desktop/api/commctrl/nf-commctrl-imagelist_drawex) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -632,7 +632,7 @@ BOOL DrawIndirect(
   
 ### <a name="parameters"></a>Parametreler  
  *pimldp*  
- Bir işaretçi bir [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) çizim işlemiyle ilgili bilgi içeren yapısı.  
+ Bir işaretçi bir [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) çizim işlemiyle ilgili bilgi içeren yapısı.  
   
  *pDC*  
  Hedef cihaz bağlamının bir işaretçi. Bu silmelisiniz [CDC](../../mfc/reference/cdc-class.md) ile işiniz bittiğinde nesne.  
@@ -641,23 +641,23 @@ BOOL DrawIndirect(
  Çizilecek görüntü sıfır tabanlı dizini.  
   
  *PT*  
- A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.  
+ A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-burada görüntü çizilmiş koordinatları içeren yapısı.  
   
  *SZ*  
- A [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) çizilecek görüntü boyutunu belirten yapısı.  
+ A [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) çizilecek görüntü boyutunu belirten yapısı.  
   
  *ptOrigin*  
- A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-belirtme görüntünün kendisi ile ilgili çizim işlemi sol üst köşesinin koordinatlarının içeren yapısı. Sol x koordinatını ve y koordinatını yukarıda olan piksel görüntünün çizilmiş değil.  
+ A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) x ve y-belirtme görüntünün kendisi ile ilgili çizim işlemi sol üst köşesinin koordinatlarının içeren yapısı. Sol x koordinatını ve y koordinatını yukarıda olan piksel görüntünün çizilmiş değil.  
   
  *fStyle*  
  Çizim stili ve isteğe bağlı olarak katman görüntü belirten bayrak. Katmana resmi bilgi için Açıklamalar bölümüne bakın. MFC varsayılan uygulamayı ILD_NORMAL, görüntüyü arka plan rengi için resim listesi kullanarak çizer. Arka plan rengi CLR_NONE değeriyse, görüntünün saydam bir maskesi kullanılarak çizilir.  
   
- Diğer olası stilleri altında açıklanan *fStyle* üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
+ Diğer olası stilleri altında açıklanan *fStyle* üyesi [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) yapısı.  
   
  *dwRop*  
  Bir tarama işlem kodu belirten değer. Kaynak dikdörtgenin için renk verileri son rengini elde etmek hedef dikdörtgenin için renk verilerle nasıl birleştirilecek bu kodları tanımlayın. MFC'nin varsayılan uygulama, SRCCOPY, kaynak dikdörtgenin doğrudan hedef dikdörtgene kopyalar. Bu parametre yoksayılır *fStyle* parametre ILD_ROP bayrağı dahil değildir.  
   
- Diğer olası değerler altında açıklanan *dwRop* üyesi [IMAGELISTDRAWPARAMS](http://msdn.microsoft.com/library/windows/desktop/bb761395) yapısı.  
+ Diğer olası değerler altında açıklanan *dwRop* üyesi [IMAGELISTDRAWPARAMS](/windows/desktop/api/commctrl/ns-commctrl-_imagelistdrawparams) yapısı.  
   
  *rgbBack*  
  Varsayılan CLR_DEFAULT görüntü arka plan rengi. Bu parametre, bir uygulama tanımlı RGB değeri veya aşağıdaki değerlerden biri olabilir:  
@@ -688,7 +688,7 @@ BOOL DrawIndirect(
  ILS_APLHA ile kullanıldığında, bu üye alfa kanalı için bir değer tutar. Bu değer, 0 ile 255, 0 tamamen saydam ve 255 tamamen opak olabilir.  
   
  *crEffect*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) parlaklık ve gölge efektleri için kullanılan değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) parlaklık ve gölge efektleri için kullanılan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü başarıyla çizilirse TRUE; Aksi durumda FALSE.  
@@ -696,7 +696,7 @@ BOOL DrawIndirect(
 ### <a name="remarks"></a>Açıklamalar  
  Win32 yapısı kendiniz doldurmak istiyorsanız, ilk sürümü kullanın. Dosyanın ikinci sürümü, bir veya daha fazla MFC'nin varsayılan bağımsız değişkenler yararlanın veya yapısı yönetme kaçınmak istiyorsanız kullanın.  
   
- Bu üye işlevi tarafından belirtilen birincil görüntünün üzerine çizilmiş bir görüntü bir katmana görüntüsüdür *bir* parametresi. Kullanarak bir katman maskesi çizme [çizmek](#draw) üye işlevi kullanılarak belirtilen katman maskesi tabanlı dizine sahip [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) makrosu.  
+ Bu üye işlevi tarafından belirtilen birincil görüntünün üzerine çizilmiş bir görüntü bir katmana görüntüsüdür *bir* parametresi. Kullanarak bir katman maskesi çizme [çizmek](#draw) üye işlevi kullanılarak belirtilen katman maskesi tabanlı dizine sahip [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) makrosu.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CImageList#11](../../mfc/reference/codesnippet/cpp/cimagelist-class_10.cpp)]  
@@ -729,7 +729,7 @@ HICON ExtractIcon(int nImage);
  Başarılı olursa simge tanıtıcı; bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem davranışını dayanır [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) simgesini oluşturmak için. Başvurmak [ImageList_ExtractIcon](http://msdn.microsoft.com/library/windows/desktop/bb761401) makrosu simge oluşturma ve temizleme hakkında daha fazla bilgi için.  
+ Bu yöntem davranışını dayanır [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) simgesini oluşturmak için. Başvurmak [ImageList_ExtractIcon](/windows/desktop/api/commctrl/nf-commctrl-imagelist_extracticon) makrosu simge oluşturma ve temizleme hakkında daha fazla bilgi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CImageList#12](../../mfc/reference/codesnippet/cpp/cimagelist-class_12.cpp)]  
@@ -798,7 +798,7 @@ static CImageList* PASCAL GetDragImage(
   
 ### <a name="parameters"></a>Parametreler  
  *Lppoınt*  
- Adresi bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) geçerli alan yapısı konuma sürükleyin.  
+ Adresi bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) geçerli alan yapısı konuma sürükleyin.  
   
  *lpPointHotSpot*  
  Adresi bir `POINT` görüntüyü Sürükle Sürükle konumuna göre uzaklığı alır yapısı.  
@@ -833,7 +833,7 @@ BOOL GetImageInfo(
  Görüntü sıfır tabanlı dizini.  
   
  *pImageInfo*  
- İşaretçi bir [IMAGEINFO](http://msdn.microsoft.com/library/windows/desktop/bb761393) yapısı görüntü ile ilgili bilgileri alır. Bu yapı bilgileri, bit eşlemler görüntüsü için doğrudan yönetmek için kullanılabilir.  
+ İşaretçi bir [IMAGEINFO](/windows/desktop/api/commctrl/ns-commctrl-_imageinfo) yapısı görüntü ile ilgili bilgileri alır. Bu yapı bilgileri, bit eşlemler görüntüsü için doğrudan yönetmek için kullanılabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -994,7 +994,7 @@ BOOL SetDragCursorImage(
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, Windows kullanması gereken [sayı değil geçiş](http://msdn.microsoft.com/library/windows/desktop/ms648396) işlevi çağırdıktan sonra gerçek fare imleci gizlemek için `CImageList::SetDragCursorImage`. Aksi takdirde, sistem sürükleme işlemi süresince iki fare imleçleri sahip görünebilir.  
+ Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, Windows kullanması gereken [sayı değil geçiş](/windows/desktop/api/winuser/nf-winuser-showcursor) işlevi çağırdıktan sonra gerçek fare imleci gizlemek için `CImageList::SetDragCursorImage`. Aksi takdirde, sistem sürükleme işlemi süresince iki fare imleçleri sahip görünebilir.  
   
 ##  <a name="setimagecount"></a>  CImageList::SetImageCount  
  Görüntü sayısını sıfırlamak için bu üye işlevi çağrısı bir `CImageList` nesne.  

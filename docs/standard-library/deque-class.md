@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0ed609de9d36b602bf525a9643534cf5d1d55a8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3c77b232fe87a722194a21d60457a01051827a7e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963040"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214172"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
@@ -118,9 +118,11 @@ class deque
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* deque içinde depolanacak öğe veri türü.
+*Türü*<br/>
+ Deque içinde depolanacak öğe veri türü.
 
-*Allocator* deque'nın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı\<türü > ***.*
+*Ayırıcı*<br/>
+ Deque'nın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı\<türü >**.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -243,15 +245,20 @@ void assign(initializer_list<Type> IList);
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* bağımsız değişken deque kopyalanacak ilk öğenin aralığındaki öğelerin konumu.
+*ilk*<br/>
+ Bağımsız değişken deque kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*Son* bağımsız değişken deque kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*Son*<br/>
+ Bağımsız değişken deque kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
 
-*Sayısı* kopyası deque eklenen öğe sayısı.
+*Sayısı*<br/>
+ Deque eklenen öğe kopyası sayısı.
 
-*VAL* deque eklenen öğe değeri.
+*VAL*<br/>
+ Deque eklenen öğe değeri.
 
-*IList* deque eklenen initializer_list.
+*IList*<br/>
+ Deque eklenen initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -325,7 +332,8 @@ const_reference at(size_type pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*POS* öğe alt simge (veya konum numarası) içinde deque başvurmak için.
+*POS*<br/>
+ Alt simge (veya konum numarası) öğesinin içinde deque başvurmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -777,7 +785,7 @@ deque(initializer_list<value_type> IList, const Allocator& Al);
 |*Al*|Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.|
 |*Sayısı*|Oluşturulan deque içindeki öğe sayısı.|
 |*VAL*|Oluşturulan deque öğelerin değeri.|
-|*Sağ*|Deque oluşturulmuş deque kopyası olacak olduğu.|
+|*sağ*|Deque oluşturulmuş deque kopyası olacak olduğu.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |* IList'|Kopyalanacağı initializer_list.|
@@ -1337,11 +1345,14 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Where* deque kaldırılacak öğenin konumu.
+*_Where*<br/>
+ Deque kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu deque kaldırıldı.
+*ilk*<br/>
+ Deque kaldırılan ilk öğenin konumu.
 
-*Son* konumu yalnızca son öğeden sonra deque kaldırıldı.
+*Son*<br/>
+ Konum yalnızca son öğeden sonra deque kaldırıldı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1591,7 +1602,8 @@ const_reference operator[](size_type pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*POS* başvurulmak üzere deque öğenin konumu.
+*POS*<br/>
+ Başvurulacak deque öğenin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2086,9 +2098,11 @@ void resize(size_type _Newsize, Type val);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newsize* deque yeni boyutu.
+*_Newsize*<br/>
+ Deque yeni boyutu.
 
-*VAL* yeni boyutu büyükse deque için eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
+*VAL*<br/>
+ Yeni boyutu büyükse deque için eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2263,9 +2277,11 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan deque veya öğeleri olan deque olanlar değiştirilecek deque `left`.
+*sağ*<br/>
+ Değiştirilecek öğeleri sağlayan deque veya öğeleri olan deque olanlar değiştirilecek deque `left`.
 
-*Sol* deque olanlar değiştirilecek öğeleri olan bir deque *doğru*.
+*Sol*<br/>
+ Deque olanlar değiştirilecek öğeleri olan bir deque *doğru*.
 
 ### <a name="example"></a>Örnek
 

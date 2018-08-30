@@ -19,21 +19,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fdf0d53cca00424c2c933e2578fb5c70b7d07e1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3ec1fb89817da663dd088dadc9b667a3ff0aef46
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464774"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200984"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 COM özellik sayfaları, özellikleri ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri. Özellik sayfaları, denetim özelliklerini tasarım zamanında ayarlanacak sağlayan zengin kullanıcı arabirimleri sağlamak için ActiveX denetimleri tarafından yaygın olarak kullanılır.  
   
- Özellik sayfaları olan COM nesneleri uygulayan [IPropertyPage](http://msdn.microsoft.com/library/windows/desktop/ms691246) veya [IPropertyPage2](http://msdn.microsoft.com/library/windows/desktop/ms683996) arabirimi. Bu arabirimleri ile ilişkilendirilmesi için sayfayı sağlayan yöntemler sunar bir `site` (sayfanın kapsayıcıyı temsil eden bir COM nesnesi) ve bir dizi *nesneleri* (yöntemleri değişikliklere yanıt olarak çağrılacağı COM nesneleri özellik sayfasının kullanıcı tarafından yapılan). Özellik sayfası kapsayıcı sayfası kullanıcı arabirimi ve değişikliklerin uygulanması ne zaman göstermek veya gizlemek için temel nesneler için kullanıcı tarafından yapılan bildirebilen için özellik sayfası arabirimindeki yöntemleri çağırmak için sorumludur.  
+ Özellik sayfaları olan COM nesneleri uygulayan [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) veya [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) arabirimi. Bu arabirimleri ile ilişkilendirilmesi için sayfayı sağlayan yöntemler sunar bir `site` (sayfanın kapsayıcıyı temsil eden bir COM nesnesi) ve bir dizi *nesneleri* (yöntemleri değişikliklere yanıt olarak çağrılacağı COM nesneleri özellik sayfasının kullanıcı tarafından yapılan). Özellik sayfası kapsayıcı sayfası kullanıcı arabirimi ve değişikliklerin uygulanması ne zaman göstermek veya gizlemek için temel nesneler için kullanıcı tarafından yapılan bildirebilen için özellik sayfası arabirimindeki yöntemleri çağırmak için sorumludur.  
   
  Her bir özellik sayfası tamamen özellikleri ayarlanabilir nesneleri bağımsız olarak oluşturulabilir. Tüm bu özellik sayfası ihtiyaçlarını belirli bir arabirim (veya arabirimleri kümesi) anlamak için bu arabirimdeki yöntemleri çağırmak için bir kullanıcı arabirim sağlamak üzere olduğundan.  
   
- Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](http://msdn.microsoft.com/library/windows/desktop/ms686577) Windows SDK.  
+ Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/desktop/com/property-sheets-and-property-pages) Windows SDK.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
  [Özellik Sayfaları Belirtme](../atl/specifying-property-pages.md)  

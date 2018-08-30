@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9522db579641d79b8b77cc870cd1df6f03c0413
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a790887f54e01cea835c6110e3d81e1c2d3afeaa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607679"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206707"
 ---
 # <a name="importlib"></a>importlib
 
@@ -43,7 +43,7 @@ Geçerli proje türü kitaplığına içeri aktarılan istediğiniz tırnak içi
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İmportlib** C++ öznitelik neden olan bir `importlib` oluşturulan .idl dosyasının kitaplığı bloğunda yerleştirilecek deyimi. **İmportlib** özniteliği ile aynı işlevlere sahip [importlib](http://msdn.microsoft.com/library/windows/desktop/aa367050) MIDL özniteliği.
+**İmportlib** C++ öznitelik neden olan bir `importlib` oluşturulan .idl dosyasının kitaplığı bloğunda yerleştirilecek deyimi. **İmportlib** özniteliği ile aynı işlevlere sahip [importlib](/windows/desktop/Midl/importlib) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

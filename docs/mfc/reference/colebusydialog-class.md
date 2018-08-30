@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f9ed49115a82f6e032404b862b8eca0ad922a34
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f5b99266d465629853361c07ea16f9ae620b0e24
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853075"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210834"
 ---
 # <a name="colebusydialog-class"></a>COleBusyDialog sınıfı
 OLE Server Not Responding veya Server Busy iletişim kutuları için kullanıldı.  
@@ -67,7 +67,7 @@ class COleBusyDialog : public COleDialog
 > [!NOTE]
 >  Uygulama Sihirbazı tarafından oluşturulan kapsayıcı kodu bu sınıfı kullanır.  
   
- Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.  
   
  Özel OLE iletişim kutuları hakkında daha fazla bilgi için bkz [ole'deki iletişim kutuları](../../mfc/dialog-boxes-in-ole.md).  
   
@@ -122,7 +122,7 @@ explicit COleBusyDialog(
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusunu görüntülemek için çağrı [DoModal](#domodal).  
   
- Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.  
   
 ##  <a name="domodal"></a>  COleBusyDialog::DoModal  
  OLE sunucu meşgul veya sunucu yanıt iletişim kutusunu görüntülemek için bu işlevi çağırın.  
@@ -138,7 +138,7 @@ virtual INT_PTR DoModal();
   
 - Kullanıcı iletişim kutusunu iptal edildiyse IDCANCEL.  
   
-- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIBusy](http://msdn.microsoft.com/library/windows/desktop/ms680125) Windows SDK'sında işlev.  
+- Bir hata oluşursa IDABORT. IDABORT döndürülürse, çağrı `COleDialog::GetLastError` konusu hatanın türü hakkında daha fazla bilgi almak için üye işlevi. Olası hataları bir listesi için bkz. [OleUIBusy](/windows/desktop/api/oledlg/nf-oledlg-oleuibusya) Windows SDK'sında işlev.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çeşitli iletişim kutusu denetimleri üyeleri ayarlayarak başlatmak istiyorsanız [m_bz](#m_bz) yapısı, bunu çağırmadan önce yapmalısınız `DoModal`, ancak iletişim nesnesi oluşturulur.  
@@ -184,7 +184,7 @@ OLEUIBUSY m_bz;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapının üyelerine, doğrudan ya da üye işlevleri aracılığıyla değiştirilebilir.  
   
- Daha fazla bilgi için [OLEUIBUSY](http://msdn.microsoft.com/library/windows/desktop/ms682493) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUIBUSY](/windows/desktop/api/oledlg/ns-oledlg-tagoleuibusya) Windows SDK'sındaki yapısı.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COleDialog sınıfı](../../mfc/reference/coledialog-class.md)   

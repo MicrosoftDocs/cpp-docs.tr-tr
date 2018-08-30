@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27dd0ad9bb64c8e708b228ec13a9fbf0e33fa589
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 85332341e1a229ce5110153c0ad6195ef0ad42c4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884122"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208181"
 ---
 # <a name="ccomobjectnolock-class"></a>CComObjectNoLock sınıfı
 Bu sınıfın uyguladığı `IUnknown` toplanmayan bir nesne, ancak mu modülün kilit sayacını oluşturucuda artırma.  
@@ -60,7 +60,7 @@ class CComObjectNoLock : public Base
 |[CComObjectNoLock::Release](#release)|Nesnede başvuru sayısını azaltır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComObjectNoLock` benzer [CComObject](../../atl/reference/ccomobject-class.md) uygular, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) toplanmayan bir nesnenin; ancak, `CComObjectNoLock` artışı modülü kilit oluşturucuda sayar.  
+ `CComObjectNoLock` benzer [CComObject](../../atl/reference/ccomobject-class.md) uygular, [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) toplanmayan bir nesnenin; ancak, `CComObjectNoLock` artışı modülü kilit oluşturucuda sayar.  
   
  ATL kullanan `CComObjectNoLock` sınıf üreteçlerini için dahili olarak. Genel olarak, bu sınıf doğrudan kullanmaz.  
   
@@ -90,8 +90,8 @@ CComObjectNoLock(void* = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- **Geçersiz kılma\***  
- [in] Bu adlandırılmamış parametre kullanılmaz. Simetri diğer için mevcut **CCom *** XXX*`Object`*XXX* oluşturucular.  
+ <em>Geçersiz kılma\*</em>  
+ [in] Bu adlandırılmamış parametre kullanılmaz. Simetri diğer için mevcut `CComXXXObjectXXX` oluşturucular.  
   
 ##  <a name="dtor"></a>  CComObjectNoLock::~CComObjectNoLock  
  Yıkıcı.  

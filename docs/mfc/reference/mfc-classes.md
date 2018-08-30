@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc862ee708239878229825c9aa050c2835222b95
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 5bfff86dd688ea5029a0c0971c3f8ad6c6aef3b5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466015"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213198"
 ---
 # <a name="mfc-classes"></a>MFC Sınıfları
 Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nda dahil edilir.  
@@ -135,7 +135,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Bir Windows Denetim listesi kutusu işlevlerini sağlar.  
   
  [CClientDC Sınıfı](../../mfc/reference/cclientdc-class.md)  
- Windows işlevlerini çağıran işler [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) oluşturma zamanında ve [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) yok etme.  
+ Windows işlevlerini çağıran işler [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) oluşturma zamanında ve [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) yok etme.  
   
  [CCmdTarget Sınıfı](../../mfc/reference/ccmdtarget-class.md)  
  Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -861,7 +861,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Genelde kayan araç çubukları geçici olarak görülen bir yarım yükseklikte pencereyi temsil eder.  
   
  [CMonikerFile Sınıfı](../../mfc/reference/cmonikerfile-class.md)  
- Veri akışını temsil eder ([IStream](http://msdn.microsoft.com/library/windows/desktop/aa380034)) tarafından adlandırılan bir [IMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679705).  
+ Veri akışını temsil eder ([IStream](/windows/desktop/api/objidl/nn-objidl-istream)) tarafından adlandırılan bir [IMoniker](/windows/desktop/api/objidl/nn-objidl-imoniker).  
   
  [CMonthCalCtrl Sınıfı](../../mfc/reference/cmonthcalctrl-class.md)  
  Aylık takvim denetiminin işlevselliğini kapsüller.  
@@ -930,7 +930,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Özel istemci tarafı denetim arabirimleri için destek sağlar.  
   
  [COleConvertDialog Sınıfı](../../mfc/reference/coleconvertdialog-class.md)  
- Daha fazla bilgi için [OLEUICONVERT](http://msdn.microsoft.com/library/windows/desktop/ms686657) Windows SDK'sındaki yapısı.  
+ Daha fazla bilgi için [OLEUICONVERT](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiconverta) Windows SDK'sındaki yapısı.  
   
  [COleCurrency Sınıfı](../../mfc/reference/colecurrency-class.md)  
  Kapsülleyen `CURRENCY` OLE Otomasyonu nesnesi etkin veri türü.  
@@ -1173,7 +1173,7 @@ Aşağıdaki listede sınıflar Microsoft Foundation Class (MFC) Kitaplığı'nd
  Animasyon değişkeninin başlangıç hızı tarafından belirlenen bir genliğe sahip sinüzoidal hızlı geçişi kapsüller.  
   
  [CSize Sınıfı](../../atl-mfc-shared/reference/csize-class.md)  
- Windows için benzer [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) göreli koordinat veya konum uygulayan yapısı.  
+ Windows için benzer [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) göreli koordinat veya konum uygulayan yapısı.  
   
  [CSliderCtrl Sınıfı](../../mfc/reference/csliderctrl-class.md)  
  Windows ortak kaydırıcı denetimi işlevlerini sağlar.  

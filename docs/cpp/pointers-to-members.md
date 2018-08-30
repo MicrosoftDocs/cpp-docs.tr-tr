@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c610d7f72c76e8c761de0cb01c42c8d6006e4b7
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e137f0f41c94473d47985ceb848eeef7c7c9ca08
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407786"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208522"
 ---
 # <a name="pointers-to-members"></a>Üye İşaretçileri
 İşaretçi bildirimleri, özel durumlar bildirimlerdir üye işaretçileri.  Aşağıdaki dizi kullanılarak bildirilirler:  
@@ -45,7 +45,7 @@ ms.locfileid: "39407786"
   - Bir isteğe bağlı Microsoft'a özgü değiştirici. Daha fazla bilgi için [Microsoft'a özel değiştiriciler](../cpp/microsoft-specific-modifiers.md).  
 1. İşaret için üyeleri içeren sınıfın tam adı.  
   - :: İşleci.  
-  - **\*** İşleci.  
+  - <strong>\*</strong> İşleci.  
   - İsteğe bağlı **const** ve/veya **geçici** tanımlayıcıları.  
   - Üye işaretçisi adlandırma tanımlayıcısı.  
   
@@ -101,7 +101,7 @@ strcpy_s( pwChildWindow->*pwCaption, cUntitledLen, szUntitled );
 (pwChildWindow->*pwCaption)[cUntitledLen - 1] = '2'; //same as //pwChildWindow->szWinCaption[cUntitledLen - 1] = '2';  
 ```  
   
- Arasındaki fark **.\***  ve **-> \*** is işleçlerini (işaretçi-üye işleçleri) **.\***  seçen üyeleri bir nesne veya nesne başvurusu göz önünde bulundurulduğunda, while **-> \*** işleci bir işaretçiyle üyeleri seçer. (Bu işleçler hakkında daha fazla bilgi için bkz. [işaretçi-üye işleçli ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
+ Arasındaki fark **.** <strong>\*</strong> ve **->** <strong>\*</strong> is işleçlerini (işaretçi-üye işleçleri) **.** <strong>\*</strong> seçen üyeleri bir nesne veya nesne başvurusu göz önünde bulundurulduğunda, while **->** <strong>\*</strong> işleci üye işaretçisi aracılığıyla seçer. (Bu işleçler hakkında daha fazla bilgi için bkz. [işaretçi-üye işleçli ifadeler](../cpp/pointer-to-member-operators-dot-star-and-star.md).)  
   
  İşaretçi-üye işleçleri üyenin türü sonucudur — bu durumda, `char *`.  
   
@@ -123,7 +123,7 @@ strcat_s( szCaptionBase, sizeOfBuffer, " [View 1]" );
 ```  
   
 ## <a name="restrictions-on-pointers-to-members"></a>Üye İşaretçileri Kısıtlamaları  
- Statik bir üyenin adresi, üye işaretçisi değildir. Statik üyenin bir örneğinin normal bir işaretçisidir. Sıradan address-of belirli bir sınıfın tüm nesneleri için statik bir üyenin yalnızca bir örneği var olduğundan **(&)** ve başvuru **(\*)** işleçleri kullanılabilir.  
+ Statik bir üyenin adresi, üye işaretçisi değildir. Statik üyenin bir örneğinin normal bir işaretçisidir. Statik bir üyenin yalnızca bir örneği sıradan address-of belirli bir sınıfın tüm nesneleri için mevcut olduğundan (**&**) ve başvuru (<strong>\*</strong>) işleçleri kullanılabilir.  
   
 ## <a name="pointers-to-members-and-virtual-functions"></a>Üye ve Sanal İşlev İşaretçileri  
  Üye işaretçisi işlevi aracılığıyla sanal bir işlevin çağrılması, işlev doğrudan çağrılmış gibi çalışır; doğru işlev v tablosunda aranır ve çağrılır.  

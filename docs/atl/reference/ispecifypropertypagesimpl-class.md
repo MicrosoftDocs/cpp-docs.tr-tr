@@ -20,15 +20,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b54b8e4fdfbbfd282475ed0ca6e221d826953cad
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d784d7f3c03b18d2f81d6eec8bc9e4b76c7ee8da
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879578"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216775"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>Ispecifypropertypagesımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) arabirimi.  
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [ISpecifyPropertyPages](/windows/desktop/api/ocidl/nn-ocidl-ispecifypropertypages) arabirimi.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -54,7 +54,7 @@ class ATL_NO_VTABLE ISpecifyPropertyPagesImpl
 |[ISpecifyPropertyPagesImpl::GetPages](#getpages)|Bir dizi UUID, sayılan değerleri doldurur. Her UUID CLSID nesnenin özellik sayfasında görüntülenen özelliği sayfalardan birine karşılık gelir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [ISpecifyPropertyPages](http://msdn.microsoft.com/library/windows/desktop/ms695217) arabirimi sağlayan bir nesne tarafından desteklenen özellik sayfaları için CLSID listesini almak bir istemci. Sınıf `ISpecifyPropertyPagesImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [ISpecifyPropertyPages](/windows/desktop/api/ocidl/nn-ocidl-ispecifypropertypages) arabirimi sağlayan bir nesne tarafından desteklenen özellik sayfaları için CLSID listesini almak bir istemci. Sınıf `ISpecifyPropertyPagesImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
 > [!NOTE]
 >  Kullanıma `ISpecifyPropertyPages` nesnenizin özellik sayfaları desteklemiyorsa arabirim.  
@@ -70,7 +70,7 @@ class ATL_NO_VTABLE ISpecifyPropertyPagesImpl
  **Başlık:** atlcom.h  
   
 ##  <a name="getpages"></a>  ISpecifyPropertyPagesImpl::GetPages  
- Dizi doldurur [CAUUID](http://msdn.microsoft.com/library/windows/desktop/ms680048) CLSID nesnenin özellik sayfasında görüntülenen özellik sayfaları için yapıya sahiptir.  
+ Dizi doldurur [CAUUID](/windows/desktop/api/ocidl/ns-ocidl-tagcauuid) CLSID nesnenin özellik sayfasında görüntülenen özellik sayfaları için yapıya sahiptir.  
   
 ```
 STDMETHOD(GetPages)(CAUUID* pPages);
@@ -79,7 +79,7 @@ STDMETHOD(GetPages)(CAUUID* pPages);
 ### <a name="remarks"></a>Açıklamalar  
  ATL nesnenin özellik eşlemesi her CLSID almak için kullanır.  
   
- Bkz: [ISpecifyPropertyPages::GetPages](http://msdn.microsoft.com/library/windows/desktop/ms687276) Windows SDK içinde.  
+ Bkz: [ISpecifyPropertyPages::GetPages](/windows/desktop/api/ocidl/nf-ocidl-ispecifypropertypages-getpages) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Ipropertypageımpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   

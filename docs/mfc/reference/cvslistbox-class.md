@@ -38,15 +38,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 582ddd1340dd94f367d5401d517e9335d370b634
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 453eb66fd062aa3e4df510925d2c9b0e6732b98b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122643"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212405"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
-`CVSListBox` Sınıfı, bir düzenlenebilir bir liste denetimini destekler.  
+`CVSListBox` Sınıfı, düzenlenebilir bir liste denetimini destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,42 +60,42 @@ class CVSListBox : public CVSListBoxBase
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CVSListBox::CVSListBox](#cvslistbox)|Oluşturan bir `CVSListBox` nesnesi.|  
-|`CVSListBox::~CVSListBox`|Yok Edicisi.|  
+|[CVSListBox::CVSListBox](#cvslistbox)|Oluşturur bir `CVSListBox` nesne.|  
+|`CVSListBox::~CVSListBox`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CVSListBox::AddItem](#additem)|Bir dize için bir liste denetimini ekler. (Geçersiz kılmaları `CVSListBoxBase::AddItem`.)|  
+|[CVSListBox::AddItem](#additem)|Liste denetimi için bir dize ekler. (Geçersiz kılmaları `CVSListBoxBase::AddItem`.)|  
 |[CVSListBox::EditItem](#edititem)|Liste Denetim öğesi metni düzenleme işlemi başlatır. (Geçersiz kılmaları `CVSListBoxBase::EditItem`.)|  
-|[CVSListBox::GetCount](#getcount)|Bir düzenlenebilir bir liste denetimini dizelerde sayısını alır. (Geçersiz kılmaları `CVSListBoxBase::GetCount`.)|  
-|[CVSListBox::GetItemData](#getitemdata)|Düzenlenebilir bir liste denetim öğesi ile ilişkilendirilen bir uygulamaya özgü 32-bit değeri alır. (Geçersiz kılmaları `CVSListBoxBase::GetItemData`.)|  
+|[CVSListBox::GetCount](#getcount)|Düzenlenebilir bir liste denetimini dizelerde sayısını alır. (Geçersiz kılmaları `CVSListBoxBase::GetCount`.)|  
+|[CVSListBox::GetItemData](#getitemdata)|Bir düzenlenebilir bir liste denetim öğesi ile ilişkilendirilen bir uygulamaya özgü 32-bit değeri alır. (Geçersiz kılmaları `CVSListBoxBase::GetItemData`.)|  
 |[CVSListBox::GetItemText](#getitemtext)|Düzenlenebilir bir liste denetimini öğenin metnini alır. (Geçersiz kılmaları `CVSListBoxBase::GetItemText`.)|  
-|[CVSListBox::GetSelItem](#getselitem)|Düzenlenebilir bir liste denetiminde seçili öğenin sıfır tabanlı dizinini alır. (Geçersiz kılmaları `CVSListBoxBase::GetSelItem`.)|  
-|`CVSListBox::PreTranslateMessage`|Pencere iletileri için gönderilen önce çevirir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır. Daha fazla bilgi ve yöntem sözdizimi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CVSListBoxBase::PreTranslateMessage`.)|  
-|[CVSListBox::RemoveItem](#removeitem)|Düzenlenebilir bir liste denetiminden öğeyi kaldırır. (Geçersiz kılmaları `CVSListBoxBase::RemoveItem`.)|  
+|[CVSListBox::GetSelItem](#getselitem)|Düzenlenebilir bir liste denetimini şu anda seçili öğenin sıfır tabanlı dizinini alır. (Geçersiz kılmaları `CVSListBoxBase::GetSelItem`.)|  
+|`CVSListBox::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. Daha fazla bilgi ve yöntem sözdizimi için bkz. [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CVSListBoxBase::PreTranslateMessage`.)|  
+|[CVSListBox::RemoveItem](#removeitem)|Bir düzenlenebilir bir liste denetiminden bir öğeyi kaldırır. (Geçersiz kılmaları `CVSListBoxBase::RemoveItem`.)|  
 |[CVSListBox::SelectItem](#selectitem)|Düzenlenebilir bir liste denetimini dizisi seçer. (Geçersiz kılmaları `CVSListBoxBase::SelectItem`.)|  
-|[CVSListBox::SetItemData](#setitemdata)|Bir uygulamaya özgü 32-bit değeri bir düzenlenebilir liste denetim öğesi ile ilişkilendirir. (Geçersiz kılmaları `CVSListBoxBase::SetItemData`.)|  
+|[CVSListBox::SetItemData](#setitemdata)|Uygulamaya özgü 32-bit bir değer bir düzenlenebilir listesi denetim öğesini ile ilişkilendirir. (Geçersiz kılmaları `CVSListBoxBase::SetItemData`.)|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CVSListBox::GetListHwnd](#getlisthwnd)|Tanıtıcı geçerli katıştırılmış liste görünümü denetimi döndürür.|  
+|[CVSListBox::GetListHwnd](#getlisthwnd)|Tanıtıcı geçerli katıştırılmış bir liste görünümü denetimi için döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CVSListBox` Sınıfı, bir dizi oluşturmak, değiştirmek, silmek veya liste denetimindeki öğeleri yeniden düzenlemek kullanıcı etkinleştirme Düzenle düğmesi sağlar.  
+ `CVSListBox` Sınıfı oluşturmak, değiştirmek, silmek veya liste denetimindeki öğeleri yeniden düzenlemek kullanıcıyı etkinleştirme Düzenle düğmeler kümesi sağlar.  
   
- Düzenlenebilir liste denetimi resmini verilmiştir. "Item2" başlıklı ikinci liste girdisini düzenlemek için seçilir.  
+ Düzenlenebilir bir liste denetimini resmini verilmiştir. "Item2" başlıklı ikinci liste girdisini düzenlemek için seçilir.  
   
  ![CVSListBox denetimi](../../mfc/reference/media/cvslistbox.png "cvslistbox")  
   
- Düzenlenebilir bir liste denetim eklemek için kaynak Düzenleyicisi'ni kullanırsanız dikkat **araç** Düzenleyicisi bölmesinde, önceden tanımlanmış düzenlenebilir liste denetimi sağlamaz. Bunun yerine, statik denetim gibi ekleme **grup kutusu** denetim. Çerçeve boyutunu ve düzenlenebilir liste denetimi konumunu belirtmek için bir yer tutucu olarak statik denetimi kullanır.  
+ Düzenlenebilir bir liste denetimini eklemek için kaynak düzenleyicisini kullanmak, dikkat **araç kutusu** Düzenleyicisi bölmesinde önceden tanımlanmış düzenlenebilir bir liste denetimini sağlamaz. Bunun yerine, statik denetim gibi ekleme **grup kutusu** denetimi. Çerçeve statik denetimin boyutunu ve konumunu düzenlenebilir bir liste denetimi belirtmek için bir yer tutucu olarak kullanır.  
   
- Bir iletişim kutusu şablonunda düzenlenebilir liste denetimi kullanmak için bildirmelidir bir `CVSListBox` iletişim kutusu sınıfınızda değişken. Değişkeni ve Denetim arasındaki veri değişimini desteklemek için tanımlarsınız bir `DDX_Control` makrosu girişi `DoDataExchange` iletişim kutusunun yöntemi. Varsayılan olarak, düzenlenebilir liste denetimi Düzenle düğmeleri oluşturulur. Düzen düğmelerini etkinleştirmek için devralınan CVSListBoxBase::SetStandardButtons yöntemini kullanın.  
+ Düzenlenebilir bir liste denetimini bir iletişim kutusu şablonunda kullanmak için bildirin bir `CVSListBox` iletişim kutusu sınıfında değişken. Değişkeni ve denetimi arasındaki veri değişimini desteklemek için tanımladığınız bir `DDX_Control` makrosu girişi `DoDataExchange` iletişim kutusunun yöntemi. Varsayılan olarak, düzenlenebilir bir liste denetimi Düzenle düğmeler oluşturulur. Devralınan CVSListBoxBase::SetStandardButtons yöntemi Düzenle düğmeler etkinleştirmek için kullanın.  
   
- Örnekler dizini daha fazla bilgi için bkz: `New Controls` örnek, Page3.cpp ve Page3.h dosyaları.  
+ Örnekler dizini daha fazla bilgi için bkz. `New Controls` örnek Page3.cpp ve Page3.h dosyaları.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -114,7 +114,7 @@ class CVSListBox : public CVSListBoxBase
  **Başlık:** afxvslistbox.h  
   
 ##  <a name="additem"></a>  CVSListBox::AddItem  
- Bir dize için bir liste denetimini ekler.  
+ Liste denetimi için bir dize ekler.  
   
 ```  
 virtual int AddItem(
@@ -125,22 +125,22 @@ virtual int AddItem(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *strIext*  
- Bir dize başvuru.  
+ Bir dizeyi bir başvuru.  
   
  [in] *dwData*  
- Dizesi ile ilişkili bir uygulamaya özgü 32-bit değeri. Varsayılan değer 0’dır.  
+ Dize ile ilişkili bir uygulamaya özgü 32-bit değeri. Varsayılan değer 0’dır.  
   
  [in] *İIndex*  
- Dize barındıracak konumu sıfır tabanlı dizini. Varsa *İIndex* parametredir -1, dize listesinin sonuna eklenir. Varsayılan değer -1'dir.  
+ Dize barındıracak konumu sıfır tabanlı dizini. Varsa *İIndex* parametresi, -1, dizenin listenin sonuna eklenir. Varsayılan değer -1'dir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Liste denetimi dize konumda sıfır tabanlı dizini.  
+ Listesi denetimini dize konumunu sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CVSListBox::GetItemData](#getitemdata) tarafından belirtilen değeri almaya yöntemi *dwData* parametresi. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
+ Kullanım [CVSListBox::GetItemData](#getitemdata) yöntemi tarafından belirtilen değeri alınacak *dwData* parametresi. Bu değer, uygulamaya özgü tamsayı veya diğer verileri gösteren bir işaretçi olabilir.  
   
 ##  <a name="cvslistbox"></a>  CVSListBox::CVSListBox  
- Oluşturan bir `CVSListBox` nesnesi.  
+ Oluşturur bir `CVSListBox` nesne.  
   
 ```  
 CVSListBox();
@@ -165,10 +165,10 @@ virtual BOOL EditItem(int iIndex);
  Düzenleme işlemi başarıyla başlatılırsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir öğenin etiketini çift tıklatarak ya da basarak kullanıcı düzenleme işlemi başlatır **F2** veya **boşluk** anahtar öğenin odağa sahip olduğunda.  
+ Kullanıcı bir düzenleme işlemi, bir öğenin etiketini çift tıklayarak veya basarak başlatır. **F2** veya **boşluk** anahtar öğenin odağa sahip olduğunda.  
   
 ##  <a name="getcount"></a>  CVSListBox::GetCount  
- Bir düzenlenebilir bir liste denetimini dizelerde sayısını alır.  
+ Düzenlenebilir bir liste denetimini dizelerde sayısını alır.  
   
 ```  
 virtual int GetCount() const;  
@@ -178,10 +178,10 @@ virtual int GetCount() const;
  Liste denetiminde öğe sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sıfır tabanlı dizin olduğu için sayısı bir son öğenin dizini değerden daha büyük olduğunu unutmayın.  
+ Dizin sıfır tabanlı olduğundan sayısı bir son öğenin dizini değerden büyük olduğunu unutmayın.  
   
 ##  <a name="getitemdata"></a>  CVSListBox::GetItemData  
- Düzenlenebilir bir liste denetim öğesi ile ilişkilendirilen bir uygulamaya özgü 32-bit değeri alır.  
+ Bir düzenlenebilir bir liste denetim öğesi ile ilişkilendirilen bir uygulamaya özgü 32-bit değeri alır.  
   
 ```  
 virtual DWORD_PTR GetItemData(int iIndex) const;  
@@ -192,10 +192,10 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Belirtilen öğesiyle ilişkili 32-bit değeri.  
+ Belirtilen öğe ile ilişkili 32-bit değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CVSListBox::SetItemData](#setitemdata) veya [CVSListBox::AddItem](#additem) 32-bit değeri liste denetim öğesi ile ilişkilendirilecek yöntemi. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
+ Kullanım [CVSListBox::SetItemData](#setitemdata) veya [CVSListBox::AddItem](#additem) 32-bit bir değer listesi denetim öğesini ile ilişkilendirmek için yöntemi. Bu değer, uygulamaya özgü tamsayı veya diğer verileri gösteren bir işaretçi olabilir.  
   
 ##  <a name="getitemtext"></a>  CVSListBox::GetItemText  
  Düzenlenebilir bir liste denetimini öğenin metnini alır.  
@@ -214,32 +214,32 @@ virtual CString GetItemText(int iIndex) const;
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="getlisthwnd"></a>  CVSListBox::GetListHwnd  
- Tanıtıcı geçerli katıştırılmış liste görünümü denetimi döndürür.  
+ Tanıtıcı geçerli katıştırılmış bir liste görünümü denetimi için döndürür.  
   
 ```  
 virtual HWND GetListHwnd() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Katıştırılmış liste görünümü denetimi için bir tanıtıcı.  
+ Katıştırılmış bir liste görünümü denetimi için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Destekleyen katıştırılmış liste görünümü denetimi için bir tanıtıcı almak için bu yöntemi kullanın `CVSListBox` sınıfı.  
+ Destekleyen gömülü liste görünümü denetimi için bir tanıtıcı almak için bu yöntemi kullanın `CVSListBox` sınıfı.  
   
 ##  <a name="getselitem"></a>  CVSListBox::GetSelItem  
- Düzenlenebilir bir liste denetiminde seçili öğenin sıfır tabanlı dizinini alır.  
+ Düzenlenebilir bir liste denetimini şu anda seçili öğenin sıfır tabanlı dizinini alır.  
   
 ```  
 virtual int GetSelItem() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa; şu anda seçili öğenin sıfır tabanlı dizini Aksi durumda, -1.  
+ Bu yöntem başarılı olursa sıfır tabanlı dizini; geçerli seçilmiş öğe Aksi durumda, -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 ##  <a name="removeitem"></a>  CVSListBox::RemoveItem  
- Düzenlenebilir bir liste denetiminden öğeyi kaldırır.  
+ Bir düzenlenebilir bir liste denetiminden bir öğeyi kaldırır.  
   
 ```  
 virtual BOOL RemoveItem(int iIndex);
@@ -269,10 +269,10 @@ virtual BOOL SelectItem(int iItem);
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, belirtilen öğeyi seçer ve gerekliyse, öğe görünüme gelene.  
+ Bu yöntem, belirtilen öğeyi seçer ve gerekliyse, öğe görünüme kaydırır.  
   
 ##  <a name="setitemdata"></a>  CVSListBox::SetItemData  
- Bir uygulamaya özgü 32-bit değeri bir düzenlenebilir liste denetim öğesi ile ilişkilendirir.  
+ Uygulamaya özgü 32-bit bir değer bir düzenlenebilir listesi denetim öğesini ile ilişkilendirir.  
   
 ```  
 virtual void SetItemData(
@@ -285,7 +285,7 @@ virtual void SetItemData(
  Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
  [in] *dwData*  
- 32-bitlik bir değer. Bu değer, uygulamaya özgü tamsayı veya diğer veri gösteren bir işaretçi olabilir.  
+ 32-bit bir değer. Bu değer, uygulamaya özgü tamsayı veya diğer verileri gösteren bir işaretçi olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

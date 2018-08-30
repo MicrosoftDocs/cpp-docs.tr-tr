@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd58faa0cda2162f1abe906da8e38d4d62402db8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: acf85412f6fde233d592f545b6611053a2f80e01
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850215"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215363"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
 Windows ortak kaydırıcı denetimi işlevlerini sağlar.  
@@ -206,10 +206,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147)denetlemek için Windows SDK içinde açıklandığı gibi.  
+ Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.  
   
  *Rect*  
- Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
+ Kaydırıcı denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
  *pParentWnd*  
  Kaydırıcı denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.  
@@ -241,13 +241,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147)denetlemek için Windows SDK içinde açıklandığı gibi.  
+ Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  
@@ -287,7 +287,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
  Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) tarafından belirtilen konumda buddy penceresindeki nesnesini *fLocation*, veya bu konumda hiçbir buddy penceresindeki yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760178)Windows SDK içinde açıklandığı gibi. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETBUDDY](/windows/desktop/Controls/tbm-getbuddy)Windows SDK içinde açıklandığı gibi. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.  
   
 ##  <a name="getchannelrect"></a>  CSliderCtrl::GetChannelRect  
  Kaydırıcı denetim kanalı için sınırlayıcı dikdörtgeni konumu ve boyutu alır.  
@@ -415,7 +415,7 @@ int GetThumbLength() const;
  Kaydırıcıyı piksel cinsinden uzunluğu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [TBM_GETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760201) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [TBM_GETTHUMBLENGTH](/windows/desktop/Controls/tbm-getthumblength) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="getthumbrect"></a>  CSliderCtrl::GetThumbRect  
  Bir kaydırıcı denetimi (Flash) kaydırıcı için sınırlayıcı dikdörtgeni konumu ve boyutu alır.  
@@ -477,9 +477,9 @@ CToolTipCtrl* GetToolTips() const;
  Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) nesne veya araç ipuçları kullanımda değilse NULL. Kaydırıcı denetimi TBS_TOOLTIPS stili kullanmıyorsa, döndürülen değer NULL olur.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760209)Windows SDK içinde açıklandığı gibi. Bu üye işlevinin döndürdüğü Not bir `CToolTipCtrl` yerine bir denetim için bir tanıtıcı nesnesi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_GETTOOLTIPS](/windows/desktop/Controls/tbm-gettooltips)Windows SDK içinde açıklandığı gibi. Bu üye işlevinin döndürdüğü Not bir `CToolTipCtrl` yerine bir denetim için bir tanıtıcı nesnesi.  
   
- Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK.  
+ Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.  
   
 ##  <a name="setbuddy"></a>  CSliderCtrl::SetBuddy  
  Bir pencere bir kaydırıcı denetiminin buddy penceresindeki olarak atar.  
@@ -505,9 +505,9 @@ CWnd* SetBuddy(
  Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) bu konumdaki kaydırıcı denetimi daha önce atanan nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETBUDDY](http://msdn.microsoft.com/library/windows/desktop/bb760213)Windows SDK içinde açıklandığı gibi. Bu üye işlev işaretçileri kullandığına dikkat edin `CWnd` pencere işleyicileri, dönüş değeri ve parametresi yerine, nesneleri.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETBUDDY](/windows/desktop/Controls/tbm-setbuddy)Windows SDK içinde açıklandığı gibi. Bu üye işlev işaretçileri kullandığına dikkat edin `CWnd` pencere işleyicileri, dönüş değeri ve parametresi yerine, nesneleri.  
   
- Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK.  
+ Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.  
   
 ##  <a name="setlinesize"></a>  CSliderCtrl::SetLineSize  
  Bir kaydırıcı denetimi için satır boyutunu ayarlar.  
@@ -636,9 +636,9 @@ void SetThumbLength(int nLength);
 |[in] *nLength*|Kaydırıcıyı piksel cinsinden uzunluğu.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Trackbar denetimi ayarlanması bu yöntem gerektirir [TBS_FIXEDLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760147) stili.  
+ Trackbar denetimi ayarlanması bu yöntem gerektirir [TBS_FIXEDLENGTH](/windows/desktop/Controls/trackbar-control-styles) stili.  
   
- Bu yöntem gönderir [TBM_SETTHUMBLENGTH](http://msdn.microsoft.com/library/windows/desktop/bb760234) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [TBM_SETTHUMBLENGTH](/windows/desktop/Controls/tbm-setthumblength) Windows SDK'da açıklanan ileti.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki kod örneği değişkeni tanımlar `m_sliderCtrl`, yani geçerli trackbar denetimi erişmek için kullanılır. Örnek ayrıca bir değişken tanımlar `thumbLength`, yani trackbar denetimin thumb bileşeni varsayılan uzunluğunu depolamak için kullanılır. Bu değişkenler bir sonraki örnekte kullanılır.  
@@ -689,13 +689,13 @@ int SetTipSide(int nLocation);
   
 ### <a name="parameters"></a>Parametreler  
  *Nkonum*  
- Araç İpucu denetimi görüntülenecek konumu temsil eden değer. Olası değerler listesi için Win32 iletisini görürsünüz [TBM_SETTIPSIDE](http://msdn.microsoft.com/library/windows/desktop/bb760240)Windows SDK içinde açıklandığı gibi.  
+ Araç İpucu denetimi görüntülenecek konumu temsil eden değer. Olası değerler listesi için Win32 iletisini görürsünüz [TBM_SETTIPSIDE](/windows/desktop/Controls/tbm-settipside)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç İpucu denetiminin önceki konumu temsil eden bir değer. Dönüş değeri için olası değerler birini eşittir *Nkonum*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi, Windows SDK'yı açıklandığı TBM_SETTIPSIDE, Win32 ileti davranışı uygular. TBS_TOOLTIPS stili kaydırıcı denetimleri araç ipuçlarının görüntüleyin. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK.  
+ Bu üye işlevi, Windows SDK'yı açıklandığı TBM_SETTIPSIDE, Win32 ileti davranışı uygular. TBS_TOOLTIPS stili kaydırıcı denetimleri araç ipuçlarının görüntüleyin. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.  
   
 ##  <a name="settooltips"></a>  CSliderCtrl::SetToolTips  
  Araç İpucu denetimi için bir kaydırıcı denetimi atar.  
@@ -709,7 +709,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
  Bir işaretçi bir [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) kaydırıcı denetimi kullanmak için araç ipuçları içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETTOOLTIPS](http://msdn.microsoft.com/library/windows/desktop/bb760242)Windows SDK içinde açıklandığı gibi. Bir kaydırıcı denetimi ile TBS_TOOLTIPS stili oluşturulduğunda, kaydırıcının geçerli konumu görüntüleme kaydırıcıyı yanında görünen varsayılan araç ipucu denetimi oluşturur. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760147) Windows SDK.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [TBM_SETTOOLTIPS](/windows/desktop/Controls/tbm-settooltips)Windows SDK içinde açıklandığı gibi. Bir kaydırıcı denetimi ile TBS_TOOLTIPS stili oluşturulduğunda, kaydırıcının geçerli konumu görüntüleme kaydırıcıyı yanında görünen varsayılan araç ipucu denetimi oluşturur. Kaydırıcı denetim stilleri açıklaması için bkz: [Trackbar denetimi stilleri](/windows/desktop/Controls/trackbar-control-styles) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek CMNCTRL2](../../visual-cpp-samples.md)   

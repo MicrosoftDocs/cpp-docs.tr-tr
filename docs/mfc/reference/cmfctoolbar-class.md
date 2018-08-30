@@ -321,12 +321,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f2d01de9d2ee8fe585a55d89808bb76250c242b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: a510d163075ccefbc61364cd7efa4003dfd0b8aa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465834"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208564"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 `CMFCToolBar` Sınıfına benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar düz araç çubuklarını, sık erişimli görüntüleri, büyük simgeleri, sayfa düğmelerini, kilitli araç çubuklarını, çubuk barınağı denetimleri, resim altında metinleri, arka plan görüntüleri, Resimli araç çubuklarını içerir ve sekmeli araç çubuklarını. `CMFCToolBar` Sınıfı ayrıca araç çubuğu kullanıcı tarafından özelleştirilmesi için yerleşik destek içerir ve menüler, sürükle ve bırak arasında araç çubukları ve menüler, birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve toplama düğmelerinin.
@@ -916,7 +916,7 @@ virtual BOOL Create(
  Araç çubuğunun üst penceresine bir işaretçi.  
   
  [in] *dwStyle*  
- Araç çubuğu stili. Bkz: [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439) stilleri listesi için Windows SDK.  
+ Araç çubuğu stili. Bkz: [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles) stilleri listesi için Windows SDK.  
   
  [in] *nID*  
  Alt penceresi araç çubuğu'nun kimliği.  
@@ -950,7 +950,7 @@ virtual BOOL CreateEx(
  Katıştırılmış denetim çubuğu nesnesi oluşturmak için ek stilleri.  
   
  [in] *dwStyle*  
- Araç çubuğu stili. Bkz: [araç çubuğu denetimi ve düğme stilleri](http://msdn.microsoft.com/library/windows/desktop/bb760439) uygun stilleri listesi.  
+ Araç çubuğu stili. Bkz: [araç çubuğu denetimi ve düğme stilleri](/windows/desktop/Controls/toolbar-control-and-button-styles) uygun stilleri listesi.  
   
  [in] *rcBorders*  
  A `CRect` nesnesini araç penceresi kenarlık genişliğini belirtir.  
@@ -1493,7 +1493,7 @@ static COLORREF GetHotTextColor();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) geçerli vurgulanan metin rengi temsil eden bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) geçerli vurgulanan metin rengi temsil eden bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı [CMFCToolBar::SetHotTextColor](#sethottextcolor) vurgulanan araç çubuğu düğmeleri için yeni bir metin rengini ayarlamak için.  
@@ -2222,7 +2222,7 @@ BOOL IsOneRowWithSibling();
  Aynı satırda yerleştirilmiş araç ve kendi eşdüzey TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CMFCCustomizeButton::CreatePopupMenu](http://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) yöntemini nasıl gösterileceğini belirlemek için bu yöntemi çağıran **Özelleştir** açılır menü. Bu yöntem TRUE döndürürse, framework görüntüler **tek satırda düğme Göster** düğmesi. Aksi takdirde, framework görüntüler **iki satırda düğme Göster** düğmesi.  
+ [CMFCCustomizeButton::CreatePopupMenu](https://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) yöntemini nasıl gösterileceğini belirlemek için bu yöntemi çağıran **Özelleştir** açılır menü. Bu yöntem TRUE döndürürse, framework görüntüler **tek satırda düğme Göster** düğmesi. Aksi takdirde, framework görüntüler **iki satırda düğme Göster** düğmesi.  
   
  Genellikle bu yöntemi kullanın gerekmez. Etkinleştirmek için **tek satırda düğme Göster** veya **iki satırda düğme Göster** düğmeleri, çağrı [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   

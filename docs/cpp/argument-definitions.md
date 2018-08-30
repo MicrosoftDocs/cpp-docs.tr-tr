@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 044c5df5ae0a51912893ccf306a5c93afceb7ab3
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 66c1e1eea44ee105176d8693cec95bcce3c18a1f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407594"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200646"
 ---
 # <a name="argument-definitions"></a>Bağımsız Değişken Tanımları
 Prototipteki bağımsız değişkenler  
@@ -44,7 +44,7 @@ int wmain( int argc, wchar_t* argv[], wchar_t* envp[]);
  İlk komut satırı bağımsız değişkeni her zaman olduğu `argv` **[1]** ve sonuncu `argv` **[** `argc` - 1 **]**.  
   
 > [!NOTE]
->  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](http://msdn.microsoft.com/library/windows/desktop/ms683197) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv` **[0]** yürütülebilir olmayabilir kullanın; adı [GetModuleFileName](http://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.  
+>  Kural olarak, `argv` **[0]** ile programın çağrıldığı komuttur.  Ancak, bunu kullanarak bir işlem oluşturmak mümkündür [CreateProcess](https://msdn.microsoft.com/library/windows/desktop/ms683197) ve ilk ve ikinci bağımsız kullanıyorsanız (*lpApplicationName* ve *lpCommandLine*), `argv` **[0]** yürütülebilir olmayabilir kullanın; adı [GetModuleFileName](https://msdn.microsoft.com/library/windows/desktop/ms683197) yürütülebilir adı ve tam olarak nitelenmiş yolunu almak için.  
   
 ## <a name="microsoft-specific"></a>Microsoft'a Özgü  
  *envp*  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 921510a548f638f06953f95abe79f825e57e179b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ccd5f5220a49ddb63554b4c3b96533a3066d4d4b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586864"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214599"
 ---
 # <a name="source-c"></a>kaynak (C++)
 
@@ -43,7 +43,7 @@ Kaynak uyguladığınızda belirttiğiniz bir veya daha fazla arabirim bir sın�
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kaynak** C++ özniteliği ile aynı işlevlere sahip [kaynak](http://msdn.microsoft.com/library/windows/desktop/aa367166) MIDL özniteliği.
+**Kaynak** C++ özniteliği ile aynı işlevlere sahip [kaynak](/windows/desktop/Midl/source) MIDL özniteliği.
 
 Kullanabileceğiniz [varsayılan](../windows/default-cpp.md) nesnenin varsayılan kaynak arabirimi belirtmek için özniteliği.
 

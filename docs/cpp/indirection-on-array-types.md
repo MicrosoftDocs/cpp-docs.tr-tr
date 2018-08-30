@@ -15,15 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3593e218418d946cee471c501db5d5746fbe9a43
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: fd8d4f02bd40764d2a6132333aecde6dd8cd6063
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406165"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208606"
 ---
 # <a name="indirection-on-array-types"></a>Dizi Türleri Yöneltmesi
-Yöneltme işlecinin kullanımı (**\***) üzerinde bir *n*-boyutlu bir dizi türü döndüren bir *n*-1 boyutlu dizi. Varsa *n* 1 ' dir skaler (veya dizi öğesi) oluşturulur.  
+
+Yöneltme işlecinin kullanımı (<strong>\*</strong>) üzerinde bir *n*-boyutlu bir dizi türü döndüren bir *n*-1 boyutlu dizi. Varsa *n* 1 ' dir skaler (veya dizi öğesi) oluşturulur.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Diziler](../cpp/arrays-cpp.md)

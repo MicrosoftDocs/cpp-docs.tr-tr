@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1fff338bfce32f8233cd58aa7c0790508ce542c
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 4fdf98e41b552fa759f1aed3e67d531e02bc7f58
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37882889"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206781"
 ---
 # <a name="category-macros"></a>Kategori makroları
 Bu makrolar kategori eşlemelerini tanımlar.  
@@ -76,7 +76,7 @@ BEGIN_CATEGORY_MAP(theClass)
 > [!NOTE]
 >  ATL ve standart bileşen kategorilerini yöneticisinin bileşen kategorileri kaydetmek için kullanır. Modül kaydedildiğinde manager sistemde mevcut değilse, kayıt başarılı, ancak bileşen kategorileri o sınıf için kayıtlı değil.  
   
- Bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK.  
+ Bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
@@ -107,7 +107,7 @@ IMPLEMENTED_CATEGORY(catID)
   
  İstemciler, bir örneğini oluşturmak zorunda kalmadan özelliklerini ve gereksinimlerini belirlemek için sınıf için kayıtlı kategori bilgilerini kullanabilir.  
   
- Bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK.  
+ Bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK.  
   
 ### <a name="a-selection-of-stock-categories"></a>Stok kategori seçimi  
   
@@ -119,7 +119,7 @@ IMPLEMENTED_CATEGORY(catID)
 |Basit veri bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Gelişmiş veri bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Penceresiz denetimleri|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet kullanan nesneler|Bkz: [Internet kullanan nesneler](http://msdn.microsoft.com/library/windows/desktop/ms690561) örnek bir liste için Windows SDK.||  
+|Internet kullanan nesneler|Bkz: [Internet kullanan nesneler](/windows/desktop/com/internet-aware-objects) örnek bir liste için Windows SDK.||  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#100](../../atl/codesnippet/cpp/category-macros_1.h)]  
@@ -140,7 +140,7 @@ REQUIRED_CATEGORY( catID )
   
  İstemciler, bir örneğini oluşturmak zorunda kalmadan özelliklerini ve gereksinimlerini belirlemek için sınıf için kayıtlı kategori bilgilerini kullanabilir. Örneğin, bir kapsayıcı veri bağlamayı destekleyen bir denetimi gerektirebilir. Kapsayıcı özellikleri denetleyen tarafından gerekli kategorileri için kategori Yöneticisi sorgulayarak denetimini barındırmak gerekli olup olmadığını öğrenebilirsiniz. Kapsayıcı gerekli bir özellik desteklemiyorsa, COM nesnesi barındırmak reddedebilir.  
   
- Bir örnek listesi dahil olmak üzere, bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](http://msdn.microsoft.com/library/windows/desktop/ms694322) Windows SDK.  
+ Bir örnek listesi dahil olmak üzere, bileşen kategorileri hakkında daha fazla bilgi için bkz. [bileşen kategorileri nedir ve nasıl çalıştıkları](/windows/desktop/com/component-categories-and-how-they-work) Windows SDK.  
   
 ### <a name="a-selection-of-stock-categories"></a>Stok kategori seçimi  
   
@@ -152,7 +152,7 @@ REQUIRED_CATEGORY( catID )
 |Basit veri bağlama|CATID_PropertyNotifyControl|{157083E1-2368-11cf-87B9-00AA006C8166}|  
 |Gelişmiş veri bağlama|CATID_VBDataBound|{157083E2-2368-11cf-87B9-00AA006C8166}|  
 |Penceresiz denetimleri|CATID_WindowlessObject|{1D06B600-3AE3-11cf-87B9-00AA006C8166}|  
-|Internet kullanan nesneler|Bkz: [Internet kullanan nesneler](http://msdn.microsoft.com/library/windows/desktop/ms690561) örnek bir liste için Windows SDK.||  
+|Internet kullanan nesneler|Bkz: [Internet kullanan nesneler](/windows/desktop/com/internet-aware-objects) örnek bir liste için Windows SDK.||  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#135](../../atl/codesnippet/cpp/category-macros_2.h)]  

@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0752d278f0459c3558021d02fbcddb6ba234df53
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 35f186822e00f74552e3bf8d52950f3c4bbe5b45
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852392"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207398"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
 Tanımlayıcı listeleri (Pıdl'ler) için işaretçilerle çalışmanıza olanak tanıyan çeşitli yöntemler uygular.  
@@ -117,7 +117,7 @@ BOOL BrowseForFolder(
  İletişim kutusunun başlığı.  
   
  [in] *ulFlags*  
- İletişim kutusu için seçenekleri belirten bayraklar. Bkz: [BROWSEINFO](http://msdn.microsoft.com/library/windows/desktop/bb773205) ayrıntılı bir açıklaması için.  
+ İletişim kutusu için seçenekleri belirten bayraklar. Bkz: [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) ayrıntılı bir açıklaması için.  
   
  [out] *piFolderImage*  
  Yöntem seçili klasör görüntü dizini nereye yazdığını tamsayı değerini bir işaretçi.  
@@ -153,7 +153,7 @@ LPITEMIDLIST ConcatenateItem(
  İşlev başarılı olursa, yeni bir öğe listesine bir işaretçi bulunmazsa null değerini DÖNDÜRÜR.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem yeni bir oluşturur [ITEMIDLIST](http://msdn.microsoft.com/library/windows/desktop/bb773321) hem de içerecek yeteri kadar büyük *pidl1* ve *pidl2*. Ardından kopyalar *pidl1* ve *pidl2* yeni listesi.  
+ Bu yöntem yeni bir oluşturur [ITEMIDLIST](/windows/desktop/api/shtypes/ns-shtypes-_itemidlist) hem de içerecek yeteri kadar büyük *pidl1* ve *pidl2*. Ardından kopyalar *pidl1* ve *pidl2* yeni listesi.  
   
 ##  <a name="copyitem"></a>  CShellManager::CopyItem  
  Bir öğe listesi kopyalar.  

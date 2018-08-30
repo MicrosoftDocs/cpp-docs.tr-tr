@@ -43,19 +43,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2fc3c849506401e44dfebcd4d0722953b557ae01
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8e0972b1584f4df92455bb17e0db8e577f988ae8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404753"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213117"
 ---
 # <a name="mbsnbcpy-mbsnbcpyl"></a>_mbsnbcpy, _mbsnbcpy_l
 
-Kopya **n** dizenin bir hedef dizesi için bayt. Daha güvenli bu işlevlerin sürümleri — bkz [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md).
+Kopya **n** baytlık dizeyi hedef dizeye. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz [_mbsnbcpy_s, _mbsnbcpy_s_l](mbsnbcpy-s-mbsnbcpy-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -102,20 +102,20 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbcpy** bir işaretçi hedef karakter dizesi döndürür. Hiçbir değer döndürmeyen bir hatayı belirtmek için ayrılmıştır.
+**_mbsnbcpy** karakter hedef dizeye bir işaretçi döndürür. Dönüş değeri bir hatayı göstermek üzere ayrılmıştır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbcpy** işlev kopyaları *sayısı* baytlar *strSource* için *strDest*. Varsa *sayısı* boyutunu aşıyor *strDest* veya üst üste, davranışını kaynak ve hedef dizeleri **_mbsnbcpy** tanımlanmadı.
+**_Mbsnbcpy** işlev kopyaları *sayısı* bayt *strSource* için *strDest*. Varsa *sayısı* boyutunu aşıyor *strDest* veya üst üste, davranışını kaynak ve hedef dizeleri **_mbsnbcpy** tanımsızdır.
 
-Varsa *strSource* veya *strDest* null işaretçi açıklandığı gibi bu işlev geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
+Varsa *strSource* veya *strDest* null bir işaretçiyse, bu işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **NULL** ve ayarlar **errno** için **EINVAL**.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri bu olanlar dışında sahip olmayan aynı **_l** sonekini kullan geçerli yerel ayar ve olan sürümleri **_l** soneki, bunun yerine yerel parametresini kullanın Bu geçirildi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri, dışında olmayan, aynıdır **_l** soneki geçerli yerel ayarı ve sahip olmayan sürümleri kullanan **_l** soneki, bunun yerine yerel ayar parametresini kullanın Bu geçirildi. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 > [!IMPORTANT]
-> Bu işlevler taşması tehditlerine karşı savunmasız olabilir. Arabellek aşırı çalıştırmaları unwarranted ayrıcalık yükselmesine neden ve sistemden rastgele saldırgan kod yürütmek için kullanılabilir. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Bu işlevler, arabellek taşma tehditlerine açık olabilir. Arabellek taşmaları, bir unwarranted ayrıcalık yükselmesine neden ve sistemden rastgele bir saldırgan kod yürütmek için kullanılabilir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
-C++'da, bu işlevlerin daha yeni, daha güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -131,7 +131,7 @@ C++'da, bu işlevlerin daha yeni, daha güvenli ortaklarınıza çağırma şabl
 |**_mbsnbcpy**|\<Mbstring.h >|
 |**_mbsnbcpy_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

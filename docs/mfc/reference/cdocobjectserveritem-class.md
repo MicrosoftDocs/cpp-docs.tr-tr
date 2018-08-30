@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc498b96dad089276b248fbb2e420dde3c0bc514
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e660144808c3e9abf8f8c090b9af5ff2eb73d9e9
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027144"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43211811"
 ---
 # <a name="cdocobjectserveritem-class"></a>Cdocobjectserverıtem sınıfı
 DocObject sunucuları için özel OLE sunucu fiilleri uygular.  
@@ -62,7 +62,7 @@ class CDocObjectServerItem : public COleServerItem
 |[CDocObjectServerItem::OnShow](#onshow)|DocObject öğesi yerleşik hale getirmek için framework tarafından çağırılır etkin. Öğe bir DocObject değil, çağıran [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CDocObjectServerItem` geçersiz kılınabilir üye işlevleri tanımlar: [OnHide](#onhide), [açıldığında](http://msdn.microsoft.com/7a9b1363-6ad8-4732-9959-4e35c07644fd), ve [OnShow](#onshow).  
+ `CDocObjectServerItem` geçersiz kılınabilir üye işlevleri tanımlar: [OnHide](#onhide), [açıldığında](https://msdn.microsoft.com/7a9b1363-6ad8-4732-9959-4e35c07644fd), ve [OnShow](#onshow).  
   
  Kullanılacak `CDocObjectServerItem`, sağlanması, [OnGetEmbeddedItem](../../mfc/reference/coleserverdoc-class.md#ongetembeddeditem) içinde geçersiz kılmak, `COleServerDoc`-yeni bir türetilmiş sınıf döndürür `CDocObjectServerItem` nesne. Öğenizi herhangi bir işlevsellik değiştirmeniz gerekirse, yeni bir örneğini kendi oluşturabilirsiniz `CDocObjectServerItem`-türetilmiş sınıf.  
   

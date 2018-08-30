@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e786dc176558900223b2b482a7161abe5e0d84d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 98b8f9f99b38d2878025546379a185aef53bb663
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336279"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213775"
 ---
 # <a name="canimatectrl-class"></a>CAnimateCtrl sınıfı
 Windows ortak animasyon denetimi işlevlerini sağlar.  
@@ -147,7 +147,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Animasyon denetiminin stilini belirtir. Herhangi bir birleşimini stilleri aşağıdaki Açıklamalar bölümüne ve animasyon denetim stilleri açıklanan açıklanan windows uygulama [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK.  
+ Animasyon denetiminin stilini belirtir. Herhangi bir birleşimini stilleri aşağıdaki Açıklamalar bölümüne ve animasyon denetim stilleri açıklanan açıklanan windows uygulama [animasyon denetim stilleri](/windows/desktop/Controls/animation-control-styles) Windows SDK.  
   
  *Rect*  
  Animasyonu denetimin konumunu ve boyutunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](../../mfc/reference/rect-structure1.md) yapısı.  
@@ -174,7 +174,7 @@ virtual BOOL Create(
   
  Genişletilmiş windows stilleri, animasyon denetimi ile kullanmak istiyorsanız, çağrı [CreateEx](#createex) yerine `Create`.  
   
- Pencere stilleri ek olarak, yukarıda listelenen animasyon denetimi için bir veya daha fazla animasyon denetim stilleri uygulamak isteyebilirsiniz. Daha fazla bilgi için Windows SDK'sı bakın [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886).  
+ Pencere stilleri ek olarak, yukarıda listelenen animasyon denetimi için bir veya daha fazla animasyon denetim stilleri uygulamak isteyebilirsiniz. Daha fazla bilgi için Windows SDK'sı bakın [animasyon denetim stilleri](/windows/desktop/Controls/animation-control-styles).  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CAnimateCtrl::CAnimateCtrl](#canimatectrl).  
@@ -193,13 +193,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Animasyon denetiminin stilini belirtir. Pencerenin herhangi bir bileşimini uygulayın ve animasyon denetim stilleri açıklanan [animasyon denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb761886) Windows SDK.  
+ Animasyon denetiminin stilini belirtir. Pencerenin herhangi bir bileşimini uygulayın ve animasyon denetim stilleri açıklanan [animasyon denetim stilleri](/windows/desktop/Controls/animation-control-styles) Windows SDK.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  
@@ -224,7 +224,7 @@ BOOL IsPlaying() const;
  AVI klibi duraklatmasının TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [ACM_ISPLAYING](http://msdn.microsoft.com/library/windows/desktop/bb761895) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [ACM_ISPLAYING](/windows/desktop/Controls/acm-isplaying) Windows SDK'da açıklanan ileti.  
   
 ##  <a name="open"></a>  CAnimateCtrl::Open  
  AVI klibi açın ve ilk çerçevesini görüntülemek için bu işlevi çağırın.  

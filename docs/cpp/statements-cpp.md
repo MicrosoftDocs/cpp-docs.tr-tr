@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87e2e48a7d923811e2c696f0ec8bee72e8327a13
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9458e427c1954a351ffcedfa2fce0a39634d8369
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464408"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216371"
 ---
 # <a name="statements-c"></a>Deyimler (C++)
 C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen program öğelerdir. Bu bölüm şunları içerir:  
@@ -42,7 +42,7 @@ C++ deyimleri, nesnelerin nasıl ve hangi sırayla işleneceğini denetleyen pro
   
     -   [Atlama deyimleri](../cpp/jump-statements-cpp.md). Bu deyimler hemen işlevdeki başka bir konuma denetim aktarır ya da işlevden denetim döndürür.  
   
-    -   [Bildirim deyimleri](http://msdn.microsoft.com/14538558-356f-450e-9e1e-3cd62ba952b9). Bildirimler, bir programa bir ad tanıtır. ([Bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md) bildirimleri hakkında daha ayrıntılı bilgileri sağlar.)  
+    -   [Bildirim deyimleri](https://msdn.microsoft.com/14538558-356f-450e-9e1e-3cd62ba952b9). Bildirimler, bir programa bir ad tanıtır. ([Bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md) bildirimleri hakkında daha ayrıntılı bilgileri sağlar.)  
   
  Özel durum işleme deyimleri hakkında bilgi için bkz. [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md).  
   

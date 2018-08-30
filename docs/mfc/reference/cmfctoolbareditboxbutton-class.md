@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c15dc3dc2b4c1fdf549ec90ae6d782b5f8a72509
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 928e2845321ad12a92e4ba3f42838b3f468dce70
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853818"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215521"
 ---
 # <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton sınıfı
 Bir düzenleme denetimi içeren bir araç çubuğu düğmesi ( [CEdit sınıfı](../../mfc/reference/cedit-class.md)).  
@@ -105,7 +105,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
 |`CMFCToolBarEditBoxButton::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
 |[CMFCToolBarEditBoxButton::HaveHotBorder](#havehotborder)|Bir kullanıcı düğmeye tıkladığında düğmenin kenarlık görüntülenip görüntülenmeyeceğini belirler. (Geçersiz kılmaları [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|  
 |[CMFCToolBarEditBoxButton::IsFlatMode](#isflatmode)|Düzenleme kutusu düğmeleri, düz bir stil sahip olup olmadığını belirler.|  
-|[CMFCToolBarEditBoxButton::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti. (Geçersiz kılmaları [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
+|[CMFCToolBarEditBoxButton::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti. (Geçersiz kılmaları [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
 |[CMFCToolBarEditBoxButton::OnAddToCustomizePage](#onaddtocustomizepage)|Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu. (Geçersiz kılmaları [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|  
 |`CMFCToolBarEditBoxButton::OnCalculateSize`|Yerleştirme durumu ve belirtilen bir cihaz bağlamı için düğmenin boyutunu hesaplamak için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |[CMFCToolBarEditBoxButton::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
@@ -361,7 +361,7 @@ static BOOL __stdcall IsFlatMode();
  Varsayılan olarak, düz bir stil düzenleme kutusu düğmeleri sahiptir. Kullanım [CMFCToolBarEditBoxButton::SetFlatMode](#setflatmode) , uygulamanızın düz stil görünümünü değiştirmek için yöntemi.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarEditBoxButton::NotifyCommand  
- Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti.  
+ Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -375,9 +375,9 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  WM_COMMAND ileti veya yanlış ileti üst araç tarafından işlenmesi gerektiğini belirtmek için düğmeyi işler TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) üst penceresine ileti.  
+ Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](/windows/desktop/menurc/wm-command) üst penceresine ileti.  
   
- Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) işleme tarafından [EN_UPDATE](http://msdn.microsoft.com/library/windows/desktop/bb761687) bildirim. Bu nesne olarak aynı komutu kimlikli her düzenleme kutusu için bu nesne için metin etiketi metin etiketini ayarlar.  
+ Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) işleme tarafından [EN_UPDATE](/windows/desktop/Controls/en-update) bildirim. Bu nesne olarak aynı komutu kimlikli her düzenleme kutusu için bu nesne için metin etiketi metin etiketini ayarlar.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarEditBoxButton::OnAddToCustomizePage  
  Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu.  

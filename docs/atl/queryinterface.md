@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3227ebd4767bd7639bb5e5d8d5a1c73e26079dc
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5a0f00e9ad0a94aaa96afb3031b57e1c7da703dc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953427"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208195"
 ---
 # <a name="queryinterface"></a>QueryInterface
-Bir nesne express statik olarak (Bu örneği oluşturulmadan) sağladığı işlevsellik mekanizmaları olsa da, temel COM mekanizması kullanmaktır `IUnknown` adlı bir yöntem [QueryInterface](http://msdn.microsoft.com/library/windows/desktop/ms682521).  
+Bir nesne express statik olarak (Bu örneği oluşturulmadan) sağladığı işlevsellik mekanizmaları olsa da, temel COM mekanizması kullanmaktır `IUnknown` adlı bir yöntem [QueryInterface](/windows/desktop/api/unknwn/nf-unknwn-iunknown-queryinterface(q_)).  
   
  Her arabirimi türetilir `IUnknown`her arabirim uygulaması vardır. Bu nedenle `QueryInterface`. Uygulama ne olursa olsun, bu yöntem bir işaretçi kendisine çağıran istediği arabirimi Laboratuvardaki kullanarak nesneyi sorgular. Nesne bu arabirimi destekliyorsa `QueryInterface` arabirim işaretçisi alır. Ayrıca çağrılırken `AddRef`. Aksi takdirde e_noınterface hata kodu döndürür.  
   
@@ -34,5 +34,5 @@ Bir nesne express statik olarak (Bu örneği oluşturulmadan) sağladığı işl
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM'a giriş](../atl/introduction-to-com.md)   
- [QueryInterface: bir nesne içinde gezinme](http://msdn.microsoft.com/library/windows/desktop/ms687230)
+ [QueryInterface: bir nesne içinde gezinme](/windows/desktop/com/queryinterface--navigating-in-an-object)
 

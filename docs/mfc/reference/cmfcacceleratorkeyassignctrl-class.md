@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3dfe9f728b01b175e897f1182c95e954969aaec
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6f42be291628a1d301309adbb48dd13211cd7857
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466173"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210329"
 ---
 # <a name="cmfcacceleratorkeyassignctrl-class"></a>CMFCAcceleratorKeyAssignCtrl sınıfı
 `CMFCAcceleratorKeyAssignCtrl` Sınıfını genişleten [CEdit sınıfı](../../mfc/reference/cedit-class.md) ALT, CONTROL ve SHIFT gibi ek sistem düğmelerini desteklemek için.  
@@ -59,7 +59,7 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
 |[CMFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel)|Alır `ACCEL` bir kısayol tuşu basılı için yapı `CMFCAcceleratorKeyAssignCtrl` nesne.|  
 |[CMFCAcceleratorKeyAssignCtrl::IsFocused](#isfocused)||  
 |[CMFCAcceleratorKeyAssignCtrl::IsKeyDefined](#iskeydefined)|Bir kısayol tuşu tanımlı olup olmadığını belirler.|  
-|[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCAcceleratorKeyAssignCtrl::ResetKey](#resetkey)|Kısayol tuşu sıfırlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  

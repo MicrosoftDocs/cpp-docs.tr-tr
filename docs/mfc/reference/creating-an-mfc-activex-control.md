@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c29aef2fcee829924021f9352145714a83698d38
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: c610e8dcd8cf5b06dfb22540c304e84446c75438
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026783"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198694"
 ---
 # <a name="creating-an-mfc-activex-control"></a>MFC ActiveX Denetimi Oluşturma
 ActiveX denetimi programlar, belirli türde bir işlevi bir üst uygulamaya vermek üzere tasarlanmış modüler programlardır. Örneğin, bir iletişim kutusu veya bir Web sayfasında kullanım için bir araç kullanmak için bir düğme gibi bir denetim oluşturabilirsiniz.  
@@ -49,5 +49,5 @@ ActiveX denetimi programlar, belirli türde bir işlevi bir üst uygulamaya verm
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)   
  [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

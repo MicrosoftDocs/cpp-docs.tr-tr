@@ -18,19 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fc207dcff5002262c345b106be99a775ed626b9
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: e016093e2dcde68fcc01691c4877841d648321fb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36953732"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207470"
 ---
 # <a name="tree-control-item-labels"></a>Ağaç Denetim Öğesi Etiketleri
-Genellikle bir öğenin etiket metnini ağaç denetim öğesi eklerken, belirttiğiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)). `InsertItem` Üye işlevi iletebilir bir [TVITEM](http://msdn.microsoft.com/library/windows/desktop/bb773456) etiket metnini içeren bir dize gibi öğenin özelliklerini tanımlayan yapısı. `InsertItem` parametre çeşitli birleşimleri çağrılabilir birçok aşırı yüklemeye sahip.  
+Genellikle bir öğenin etiket metnini öğesi ağaç denetimine eklerken belirttiğiniz ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)). `InsertItem` Üye işlevine geçirebilirsiniz bir [TVITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtvitema) etiketin metni içeren bir dize dahil olmak üzere, öğenin özelliklerini tanımlayan yapısını. `InsertItem` çeşitli birleşimlerini parametreleri ile çağrılabilen birçok aşırı yüklemeye sahip.  
   
- Ağaç denetimi her öğe depolamak için bellek ayırır; öğe etiketleri metin bu bellek önemli bir kısmını alır. Uygulamanızı bir kopyasını ağaç denetimi dizelerde koruyorsa, belirterek denetimi bellek gereksinimlerini düşürebilir **LPSTR_TEXTCALLBACK** değeri *pszText* üyesi`TV_ITEM` veya *lpszItem* gerçek dizeleri ağaç denetimi geçirme yerine parametre. Kullanarak **LPSTR_TEXTCALLBACK** öğe çizilmesi gerektiğinde uygulamadan öğenin etiket metnini almak ağaç denetimi neden olur. Ağaç denetimi metni almak gönderir bir [TVN_GETDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb773518) adresini içeren bildirim iletisi bir [NMTVDISPINFO](http://msdn.microsoft.com/library/windows/desktop/bb773418) yapısı. Dahil edilen yapısı uygun üyeleri ayarlayarak yanıtlaması gerekir.  
+ Ağaç denetimi, her öğe depolamak için bellek ayırır; öğe etiketleri, metni bu bellek önemli bir kısmını alır. Uygulamanızı ağaç denetimindeki dizelerini kopyasını tutar, belirterek denetimin bellek gereksinimlerini azaltabilirsiniz **LPSTR_TEXTCALLBACK** değerini *pszText* üyesi`TV_ITEM` veya *lpszItem* gerçek dizeleri için ağaç denetimi geçirmek yerine parametre. Kullanarak **LPSTR_TEXTCALLBACK** öğeyi yeniden çizilmesi gerektiğinde uygulamadan bir öğenin etiket metnini almak ağaç denetimi neden olur. Ağaç denetimi metni almak için gönderen bir [TVN_GETDISPINFO](/windows/desktop/Controls/tvn-getdispinfo) adresini içeren bildirim iletisi bir [NMTVDISPINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtvdispinfoa) yapısı. Uygun üyeleri dahil yapısı ayarlayarak yanıt vermesi gerekir.  
   
- Ağaç denetimi ağaç denetimi oluşturur işlem yığınından ayrılan bellek kullanır. Ağaç denetimindeki öğeleri sayısının yığınında kullanılabilir bellek miktarını temel alır. Her öğe 64 bayt alır.  
+ Ağaç denetimi ağaç denetimi oluşturan işlem yığından ayrılan bellek kullanır. Ağaç denetimindeki öğeler sayısı yığında kullanılabilir bellek miktarını temel alır. Her öğe 64 baytın alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTreeCtrl kullanma](../mfc/using-ctreectrl.md)   

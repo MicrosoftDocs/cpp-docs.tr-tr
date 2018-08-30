@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15b904a07eb668a59a269741973424aa30e15877
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: b868efed07f786a78c516862e1f88d2310a7c05d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336412"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208784"
 ---
 # <a name="logbrush-structure"></a>LOGBRUSH Yapısı
-`LOGBRUSH` Yapısı, stil, rengini ve fiziksel bir fırça deseni tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](http://msdn.microsoft.com/library/windows/desktop/dd183487) ve [ExtCreatePen](http://msdn.microsoft.com/library/windows/desktop/dd162705) işlevleri.  
+`LOGBRUSH` Yapısı, stil, rengini ve fiziksel bir fırça deseni tanımlar. Windows tarafından kullanılan [CreateBrushIndirect](/windows/desktop/api/wingdi/nf-wingdi-createbrushindirect) ve [ExtCreatePen](/windows/desktop/api/wingdi/nf-wingdi-extcreatepen) işlevleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   

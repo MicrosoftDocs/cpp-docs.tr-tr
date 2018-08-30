@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4caf2518de21a938822e443c0383c22cf170d44
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd4b399900802d110ff5746a0ccb2424ba40e6b5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395373"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209872"
 ---
 # <a name="clock"></a>saat
 
-Arama işlemi tarafından kullanılan duvar saati süresi hesaplar.
+Çağırma işlemi tarafından kullanılan duvar saati zamanı hesaplar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,21 +54,21 @@ clock_t clock( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Başlangıç CRT başlatma işleminin bu yana geçen süre ölçülen **CLOCKS_PER_SEC** saniye başına birim. Geçen süre kullanılamıyor veya olarak kayıtlı maksimum pozitif süreyi aştı bir **clock_t** türü, işlev değeri döndürür `(clock_t)(-1)`.
+Başında CRT başlatma işleminin bu yana geçen süreyi cinsinden ölçülen **CLOCKS_PER_SEC** birimi / saniye. Geçen süreyi kullanılamıyor veya olarak kayıtlı pozitif en uzun süreyi aştı bir **clock_t** türü, işlev değeri döndürür `(clock_t)(-1)`.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Saati** işlevi söyler CRT başlatma işlemi başlangıcı sırasında bu yana ne kadar duvar saati süresi geçti. Bu işlev kesinlikle dönüş değeri olarak net CPU süresi belirtir ISO C uymuyor olduğunu unutmayın. CPU sürelerini almak için Win32 kullanın [GetProcessTimes](https://msdn.microsoft.com/library/windows/desktop/ms683223) işlevi. Saniye cinsinden geçen süreyi belirlemek için tarafından döndürülen değer bölmek **saati** makrosu işleviyle **CLOCKS_PER_SEC**.
+**Saat** işlevi söyler CRT başlatma işlemi başlangıcı sırasında bu yana ne kadar duvar saati süresi geçti. Bu işlev kesinlikle net CPU süresi dönüş değeri olarak belirtir. ISO C uygun değil olduğunu unutmayın. CPU süreleri elde etmek için Win32 kullanın [GetProcessTimes](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocesstimes) işlevi. Tarafından döndürülen değeri, geçen süreyi saniye cinsinden belirlemek için bölme **saat** makro işleviyle **CLOCKS_PER_SEC**.
 
-Yeterli zamanı olduğunda döndürülen değer tarafından **saati** en büyük pozitif değerini aşabilir **clock_t**. İşlemin çalıştırdığınızda uzun tarafından döndürülen değer **saati** her zaman `(clock_t)(-1)`, ISO C99 standart (7.23.2.1) ve ISO C11 standart (7.27.2.1) tarafından belirtildiği gibi. Microsoft uygulayan **clock_t** olarak bir **uzun**, imzalanmış bir 32 bit tamsayı ve **CLOCKS_PER_SEC** makrosu 1000 tanımlanır. Bu en verir **saati** işlev 2147483.647 saniye veya yaklaşık 24.8 gün dönüş değeri. Tarafından döndürülen değer kullanmayın **saati** bu süreyi daha uzun süre çalışan işlemleri içinde. 64-bit kullanabilirsiniz [zaman](time-time32-time64.md) işlevi veya Windows [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904) işlevi kayıt işlemi geçen saatler birçok yıldır.
+Yeterli zaman göz önünde bulundurulduğunda, döndürülen değer tarafından **saat** en büyük pozitif değerini aşabilir **clock_t**. İşlem çalıştırdığınızda uzun tarafından döndürülen değer **saat** her zaman `(clock_t)(-1)`ISO C99 standardında (7.23.2.1) ve ISO C11 standart (7.27.2.1) tarafından belirtilen. Microsoft uygulayan **clock_t** olarak bir **uzun**, imzalı bir 32 bit tamsayı ve **CLOCKS_PER_SEC** makrosu, 1000 tanımlanır. Bu en fazla verir **saat** işlev dönüş değeri 2147483.647 saniye veya yaklaşık 24.8 gün. Tarafından döndürülen değer güvenmeyin **saat** bu süreyi daha uzun süre çalışan işlemler de. 64 bit kullanabilirsiniz [zaman](time-time32-time64.md) işlevi ya da Windows [QueryPerformanceCounter](https://msdn.microsoft.com/library/windows/desktop/ms644904) yıllardır geçen sürelerinin kayıt işlemi için işlevi.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**clock**|\<time.h >|
+|**clock**|\<TIME.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

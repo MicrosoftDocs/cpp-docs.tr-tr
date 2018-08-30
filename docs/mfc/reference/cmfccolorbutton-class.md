@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43ee49dede1a71e8bd2a01e98a3bdd2dd53ef63d
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: fbabd502ca6d9d81c569831f9dcb0b344523bb3e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465817"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215334"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton sınıfı
 `CMFCColorButton` Ve [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) sınıfları birlikte bir renk seçici denetimini uygulamak için kullanılır.  
@@ -112,10 +112,10 @@ class CMFCColorButton : public CMFCButton
 |`m_bAltColorDlg`|Bir Boole değeri. TRUE ise framework görüntüler [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) renk iletişim kutusu *diğer* düğmesine tıklandığında ya da FALSE ise, sistem renk iletişim kutusu. Varsayılan değer True'dur. Daha fazla bilgi için [CMFCColorButton::EnableOtherButton](#enableotherbutton).|  
 |`m_bAutoSetFocus`|Bir Boole değeri. Menü görüntülenir ya da FALSE ise, odağı değiştirmez framework TRUE ise odak rengi menüsünde ayarlar. Varsayılan değer True'dur.|  
 |[CMFCColorButton::m_bEnabledInCustomizeMode](#m_benabledincustomizemode)|Özelleştirme modu için renk düğmesi etkin olup olmadığını gösterir.|  
-|`m_Color`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri. Seçili renk içerir.|  
-|`m_ColorAutomatic`|A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değeri. Şu anda seçili varsayılan rengi içerir.|  
-|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) , [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değerleri. Şu anda kullanılabilir renklerin içerir.|  
-|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) , [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) değerleri. Geçerli belge renkleri içerir.|  
+|`m_Color`|A [COLORREF](/windows/desktop/gdi/colorref) değeri. Seçili renk içerir.|  
+|`m_ColorAutomatic`|A [COLORREF](/windows/desktop/gdi/colorref) değeri. Şu anda seçili varsayılan rengi içerir.|  
+|`m_Colors`|A [CArray](../../mfc/reference/carray-class.md) , [COLORREF](/windows/desktop/gdi/colorref) değerleri. Şu anda kullanılabilir renklerin içerir.|  
+|`m_lstDocColors`|A [CList](../../mfc/reference/clist-class.md) , [COLORREF](/windows/desktop/gdi/colorref) değerleri. Geçerli belge renkleri içerir.|  
 |`m_nColumns`|Bir tamsayı. Renk seçim menüsünde renkleri kılavuzunda görüntülenecek sütun sayısını içerir.|  
 |`m_pPalette`|Bir işaretçi bir [CPalette](../../mfc/reference/cpalette-class.md). Geçerli renk seçim menüsünde kullanılabilir olan renkleri içerir.|  
 |`m_pPopup`|Bir işaretçi bir [CMFCColorPopupMenu sınıfı](../../mfc/reference/cmfccolorpopupmenu-class.md) nesne. Renk Düğmeye tıkladığınızda görüntülenen renk seçim menüsünde.|  
@@ -439,7 +439,7 @@ virtual void UpdateColor(COLORREF color);
  [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md)   
  [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md)   
  [CMFCColorButton::OnShowColorPopup](#onshowcolorpopup)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
  [CPalette sınıfı](../../mfc/reference/cpalette-class.md)   
  [CArray sınıfı](../../mfc/reference/carray-class.md)   
  [CList sınıfı](../../mfc/reference/clist-class.md)   

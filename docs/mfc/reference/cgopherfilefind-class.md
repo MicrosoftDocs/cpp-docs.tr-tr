@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 690c7bd36046161fb39a560b7aa2f7bf13c55828
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 06bb7101524a51872ca4d329fbe9db6b13b6b8bd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339627"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214952"
 ---
 # <a name="cgopherfilefind-class"></a>CGopherFileFind sınıfı
 Gopher sunucularına, Internet dosyası aramalarındaki Yardımcıları.  
@@ -162,7 +162,7 @@ virtual BOOL FindFile(
 -   INTERNET_FLAG_USE_EXISTING varsa mümkün tekrar sunucuya varolan bağlantılar yeni `FindFile` her istek için yeni bir oturum oluşturmak yerine istekleri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Arama sonra `FindFile` ilk gopher nesnesini almak için çağırabilirsiniz ['larını](#findnextfile) sonraki gopher dosyaları almak için.  
@@ -175,7 +175,7 @@ virtual BOOL FindNextFile();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Daha fazla dosya yoksa sıfır; sıfır. dosya bulundu sonuncu dizininde olması veya bir hata oluştu. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360). Son dosya dizininde dosyası bulunamadı veya hiçbir eşleşen dosyaları bulunabilir, `GetLastError` ERROR_NO_MORE_FILES işlevi döndürür.  
+ Daha fazla dosya yoksa sıfır; sıfır. dosya bulundu sonuncu dizininde olması veya bir hata oluştu. Genişletilmiş hata bilgilerini almak için Win32 işlevini çağırmak [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360). Son dosya dizininde dosyası bulunamadı veya hiçbir eşleşen dosyaları bulunabilir, `GetLastError` ERROR_NO_MORE_FILES işlevi döndürür.  
   
 ##  <a name="getcreationtime"></a>  CGopherFileFind::GetCreationTime  
  Geçerli dosya için oluşturulma zamanını alır.  
@@ -187,7 +187,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı içeren dosyanın oluşturulduğu zaman.  
+ Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı içeren dosyanın oluşturulduğu zaman.  
   
  *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
@@ -199,7 +199,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetCreationTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.  
   
 ##  <a name="getlastaccesstime"></a>  CGopherFileFind::GetLastAccessTime  
  Belirtilen dosya son erişilme zamanı alır.  
@@ -214,7 +214,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
   
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son erişildi zaman yapısı.  
+ Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son erişildi zaman yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; işlem başarısız olursa 0. `GetLastAccessTime` yalnızca 0 döndürür ['larını](#findnextfile) hiçbir zaman bu çağrıldıktan `CGopherFileFind` nesne.  
@@ -223,7 +223,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastAccessTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.  
   
 ##  <a name="getlastwritetime"></a>  CGopherFileFind::GetLastWriteTime  
  Dosya değiştirildiği son saati alır.  
@@ -235,7 +235,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
   
 ### <a name="parameters"></a>Parametreler  
  *pTimeStamp*  
- Bir işaretçi bir [FILETIME](http://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son kaydedilmişti zaman yapısı.  
+ Bir işaretçi bir [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) içeren dosyanın son kaydedilmişti zaman yapısı.  
   
  *refTime*  
  Bir başvuru bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) nesne.  
@@ -247,7 +247,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
  Çağırmalısınız ['larını](#findnextfile) çağırmadan önce en az bir kez `GetLastWriteTime`.  
   
 > [!NOTE]
->  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](http://msdn.microsoft.com/library/windows/desktop/ms724277) API daha fazla bilgi için.  
+>  Tüm dosya sistemleri, bu işlev tarafından döndürülen zaman damgası uygulamak için aynı semantiğe kullanın. Bu işlev, temel alınan dosya sistemi veya sunucu zaman öznitelik tutma desteklemiyorsa, diğer zaman damgası işlevleri tarafından döndürülen aynı değer döndürebilir. Bkz: [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) yapısı saat biçimleri hakkında bilgi için. Bazı işletim sistemlerinde, döndürülen saat dilimi yerel makineye olan dosyasının bulunduğu saat şöyledir. Win32 bkz [FileTimeToLocalFileTime](/windows/desktop/api/fileapi/nf-fileapi-filetimetolocalfiletime) API daha fazla bilgi için.  
   
 ##  <a name="getlength"></a>  CGopherFileFind::GetLength  
  Bulunan dosyayı bayt cinsinden uzunluğunu almak için bu üye işlevini çağırın.  
@@ -260,7 +260,7 @@ virtual ULONGLONG GetLength() const;
  Uzunluğu, bayt cinsinden bulunan dosya.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `GetLength` Win32 yapısını kullanır [WIN32_FIND_DATA](http://msdn.microsoft.com/library/windows/desktop/aa365740) bayt cinsinden boyutu değerini almak için.  
+ `GetLength` Win32 yapısını kullanır [WIN32_FIND_DATA](/windows/desktop/api/minwinbase/ns-minwinbase-_win32_find_dataa) bayt cinsinden boyutu değerini almak için.  
   
 > [!NOTE]
 >  MFC 7.0 itibarıyla `GetLength` 64-bit tamsayı türlerini destekler. Bu kitaplığı daha yeni sürümü ile oluşturulan önceden varolan kod kesme uyarıların sonuçlanabilir.  

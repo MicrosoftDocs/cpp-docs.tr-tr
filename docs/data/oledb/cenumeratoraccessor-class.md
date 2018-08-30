@@ -48,12 +48,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 8eea759f7f2af32fe688bbc8583eafc1244b20d7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0af12e1cd2f9925d5b7df8ccf16a7838a2e8c78b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465175"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215617"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
 Tarafından kullanılan [CEnumerator](../../data/oledb/cenumerator-class.md) Numaralandırıcı satır kümesinden verilere erişmek için.  
@@ -77,7 +77,7 @@ class CEnumeratorAccessor
 |[m_nType](#ntype)|Satır bir veri kaynağı veya bir numaralandırıcı tanımlayıp tanımlamadığını belirten bir değişken.|  
 |[m_szDescription](#szdescription)|Veri kaynağı veya numaralandırıcı açıklaması.|  
 |[m_szName](#szname)|Veri kaynağı veya numaralandırıcı adı.|  
-|[m_szParseName](#szparsename)|Geçirilecek dize [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.|  
+|[m_szParseName](#szparsename)|Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu satır kümesi veri kaynakları ve geçerli Numaralandırıcının görünür numaralandırıcılar oluşur.  
@@ -131,7 +131,7 @@ WCHAR m_szName[129];
  Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
-Geçirilecek dize [IParseDisplayName](http://msdn.microsoft.com/library/windows/desktop/ms680604) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.  
+Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.  
   
 ### <a name="syntax"></a>Sözdizimi  
   

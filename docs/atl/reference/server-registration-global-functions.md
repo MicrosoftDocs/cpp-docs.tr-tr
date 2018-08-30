@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bed065eb959d959086133a757b7ca3594214719
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: a2cc139fa0aa933131e4e19b8efa397e4bddee50
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883286"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209234"
 ---
 # <a name="server-registration-global-functions"></a>Sunucu kaydı genel işlevleri
 Bu işlevler, kaydetme ve sunucu nesneleri nesne eşlemesindeki kaydını kaldırmak için destek sağlar.  
@@ -113,10 +113,10 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
  COM modülü için işaretçi.  
   
  *dwClsContext*  
- Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bkz: [CLSCTX](http://msdn.microsoft.com/library/windows/desktop/ms693716) daha fazla ayrıntı için.  
+ Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bkz: [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) daha fazla ayrıntı için.  
   
  *CertOpenStore*  
- Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bkz: [REGCLS](http://msdn.microsoft.com/library/windows/desktop/ms679697) daha fazla ayrıntı için.  
+ Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bkz: [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) daha fazla ayrıntı için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  

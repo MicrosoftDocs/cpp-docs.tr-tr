@@ -94,51 +94,51 @@ helpviewer_keywords:
 - std::experimental::filesystem::u8path
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfe07904a8eec87fb18441b92096d8ba6b72e4e3
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0e47339813256d189e1ce6b71506d9ae29a93f51
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33848667"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213471"
 ---
 # <a name="ltfilesystemgt-functions"></a>&lt;dosya sistemi&gt; işlevleri
 
-Bu ücretsiz işlevlerde [ \<dosya sistemi >](../standard-library/filesystem.md) üstbilgi yolları, dosyaları, simgesel bağlantı, dizinler ve birimler değiştirme ve sorgu işlemi gerçekleştirir. Daha fazla bilgi ve kod örnekleri için bkz: [dosya sistemi Gezinti (C++)](../standard-library/file-system-navigation.md).
+Bu işlevleri ücretsiz [ \<filesystem >](../standard-library/filesystem.md) üstbilgi yolları, dosyaları, çözümlemeyin, dizinleri ve birimleri değiştirme ve sorgu işlemleri gerçekleştirin. Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 ||||
 |-|-|-|
-|[Mutlak](#absolute)|[Başlangıç](#begin)|[Kurallı](#canonical)|
-|[Kopyalama](#copy)|[copy_file](#copy_file)|[copy_symlink](#copy_symlink)|
+|[Mutlak](#absolute)|[başlayın](#begin)|[Canonical](#canonical)|
+|[kopyalama](#copy)|[copy_file](#copy_file)|[copy_symlink](#copy_symlink)|
 |[create_directories](#create_directories)|[create_directory](#create_directory)|[create_directory_symlink](#create_directory_symlink)|
 |[create_hard_link](#create_hard_link)|[create_symlink](#create_symlink)|[current_path](#current_path)|
-|[Bitiş](#end)|[eşdeğer](#equivalent)|[var](#exists)|
+|[Son](#end)|[eşdeğeri](#equivalent)|[Var.](#exists)|
 |[file_size](#file_size)|[hard_link_count](#hard_link_count)|[hash_value](#hash_value)|
 |[is_block_file](#is_block_file)|[is_character_file](#is_character_file)|[is_directory](#is_directory)|
 |[is_empty](#is_empty)|[is_fifo](#is_fifo)|[is_other](#is_other)|
 |[is_regular_file](#is_regular_file)|[is_socket](#is_socket)|[is_symlink](#is_symlink)|
 |[last_write_time](#last_write_time)|[İzinleri](#permissions)|[read_symlink](#read_symlink)|
-|[remove](#remove)|[remove_all](#remove_all)|[Yeniden Adlandır](#rename)|
-|[resize_file](#resize_file)|[Alanı](#space)|[Durumu](#status)|
-|[status_known](#status_known)|[Değiştirme](#swap)|[symlink_status](#symlink_status)|
+|[remove](#remove)|[remove_all](#remove_all)|[Yeniden adlandırma](#rename)|
+|[resize_file](#resize_file)|[alanı](#space)|[Durumu](#status)|
+|[status_known](#status_known)|[değiştirme](#swap)|[symlink_status](#symlink_status)|
 |[system_complete](#system_complete)|[temp_directory_path](#temp_directory_path)|[u8path](#u8path)|
 
 
-## <a name=""></a>  <a name="absolute"></a> Mutlak
+## <a name="absolute"></a> Mutlak
 
 ```cpp
 path absolute(const path& pval, const path& base = current_path());
 ```
 
-İşlevi karşılık gelen mutlak bir yol adı döndürür `pval` göreli yol `base`:
+İşlev, karşılık gelen mutlak yol adını döndürür. `pval` göreli yol adını `base`:
 
-1. Varsa pval.has_root_name() & & pval.has_root_directory() işlevi pval döndürür.
+1. Varsa pval.has_root_name() & & pval pval.has_root_directory() işlevi döndürür.
 
-1. Varsa pval.has_root_name() & &! pval.has_root_directory() işlevi döndürür pval.root_name() / absolute(base).root_directory() / absolute(base).relative_path() / pval.relative_path().
+1. Varsa pval.has_root_name() & &! pval.has_root_directory() işlevi pval.root_name() döndürür / absolute(base).root_directory() / absolute(base).relative_path() / pval.relative_path().
 
-1. Varsa! pval.has_root_name() & & pval.has_root_directory() işlevi döndürür absolute(base).root_name() / pval.
+1. Varsa! pval.has_root_name() & & pval.has_root_directory() işlevi absolute(base).root_name() döndürür / pval.
 
-1. Varsa! pval.has_root_name() & &! pval.has_root_directory() işlevi döndürür absolute(base) / pval.
+1. Varsa! pval.has_root_name() & &! pval.has_root_directory() işlevi absolute(base) döndürür / pval.
 
-## <a name="begin"></a>  Başlangıç
+## <a name="begin"></a>  başlayın
 
 ```cpp
 const directory_iterator& begin(const directory_iterator& iter) noexcept;
@@ -146,9 +146,9 @@ const recursive_directory_iterator&
     begin(const recursive_directory_iterator& iter) noexcept;
 ```
 
-Her iki işlevi dönüş `iter`.
+Her iki işlev dönüş `iter`.
 
-## <a name="canonical"></a>  Kurallı
+## <a name="canonical"></a>  Canonical
 
 ```cpp
 path canonical(const path& pval, const path& base = current_path());
@@ -156,17 +156,17 @@ path canonical(const path& pval, error_code& ec);
 path canonical(const path& pval, const path& base, error_code& ec);
 ```
 
-Tüm işlevleri bir mutlak yol pabs form mutlak (pval, temel) = (veya pabs temel parametre ile aşırı absolute(pval) =), kurallı forma adımları aşağıdaki sırayla azaltmak:
+Tüm İşlevler bir mutlak yol pabs form mutlak (pval, temel) = (veya pabs = absolute(pval) temel parametre olmadan aşırı yüklemesi için), ardından adımları aşağıdaki sırayla kurallı bir form azaltın:
 
-1. Her bir yol bileşeni X hangi is_symlink(X) doğrudur tarafından read_symlink(X) yerini almıştır.
+1. Her yol bileşenini X read_symlink(X) tarafından hangi is_symlink(X) doğrudur almıştır.
 
-1. Her yol bileşeni. (nokta önceki yol bileşenleri tarafından belirlenen geçerli dizin olduğu) kaldırılır.
+1. Her bir yol bileşeni. (nokta geçerli önceki yol bileşenleri tarafından belirlenen geçerli dizin) kaldırılır.
 
-1. Her yol bileşenlerini X çiftinin /... (nokta nokta olan önceki yol bileşenleri tarafından oluşturulan üst dizini) kaldırılır.
+1. Her yol bileşenleri X çiftinin /... (nokta nokta geçerli önceki yol bileşenleri tarafından oluşturulan bir üst dizin) kaldırılır.
 
-İşlevi ardından pabs döndürür.
+İşlev, ardından pabs döndürür.
 
-## <a name="copy"></a>  Kopyalama
+## <a name="copy"></a>  kopyalama
 
 ```cpp
 void copy(const path& from, const path& to);
@@ -175,7 +175,7 @@ void copy(const path& from, const path& to, copy_options opts);
 void copy(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;
 ```
 
-İşlevler büyük olasılıkla tüm kopyalayın veya konumunda bir veya daha fazla dosya bağlantısını `from` için `to` denetiminde `opts`, hiçbir aşırı copy_options::none olarak gerçekleştirilecek `opts` parametresi. `opts` en fazla birini içeren:
+İşlevler büyük olasılıkla tüm kopyalayın veya bir veya daha fazla dosyaları bağlantısını `from` için `to` denetiminde `opts`, olmadan aşırı yüklemeler için copy_options::none olarak gerçekleştirilen `opts` parametresi. `opts` en fazla birini içeren:
 
 - skip_existing, overwrite_existing veya update_existing
 
@@ -183,37 +183,37 @@ void copy(const path& from, const path& to, copy_options opts, error_code& ec) n
 
 - directories_only, create_symlinks veya create_hard_links
 
-İşlevler ilk belirlemek için file_status değerleri f `from` ve için t `to`:
+İşlevler için file_status değerleri f ilk belirlemek `from` ve t için `to`:
 
-- varsa çevrilir & (copy_options::create_symlinks &#124; copy_options::skip_symlinks), göre symlink_status çağırma
+- varsa bölgedeyse & (copy_options::create_symlinks &#124; copy_options::skip_symlinks) tarafından symlink_status çağırma
 
-- Aksi takdirde, durumu arayarak
+- Aksi takdirde, durum çağırarak
 
-- Aksi takdirde bir hata raporu.
+- Aksi takdirde bir hata rapor.
 
-Varsa! exists(f) &#124; &#124; eşdeğer (f, t) &#124; &#124; is_other(f) &#124; &#124; is_other(t) &#124; &#124; is_directory(f) & & is_regular_file(t), bunlar daha sonra bir hata raporu (ve başka hiçbir şey yapma).
+Varsa! exists(f) &#124; &#124; (f, t) eşdeğer &#124; &#124; is_other(f) &#124; &#124; is_other(t) &#124; &#124; is_directory(f) & & is_regular_file(t), bunlar daha sonra bir hata rapor (ve başka hiçbir şey yapma).
 
-Aksi halde, eğer is_symlink(f) sonra:
+Aksi halde, ardından is_symlink(f):
 
-- Seçenekler & copy_options::skip_symlinks hiçbir şey yapma varsa.
+- Seçenekler & copy_options::skip_symlinks ardından yapmamanız durumunda.
 
-- Aksi halde, eğer! exists(t) & & Seçenekleri & copy_options::copy_symlinks sonra copy_symlink (Kimden için çevrilir).
+- Aksi takdirde! exists(t) & & Seçenekleri & copy_options::copy_symlinks sonra copy_symlink (gelen, için kabul eder).
 
-- Aksi takdirde bir hata raporu.
+- Aksi takdirde bir hata rapor.
 
-Aksi halde, eğer is_regular_file(f) sonra:
+Aksi halde, ardından is_regular_file(f):
 
-- Varsa çevrilir & copy_options::directories_only sonra yapın hiçbir şey.
+- Varsa bölgedeyse & copy_options::directories_only ardından yapın hiçbir şey.
 
-- Aksi halde, eğer çevrilir & copy_options::create_symlinks sonra create_symlink(to, from).
+- Aksi takdirde bölgedeyse & ardından copy_options::create_symlinks create_symlink(to, from).
 
-- Aksi halde, eğer çevrilir & copy_options::create_hard_links sonra create_hard_link(to, from).
+- Aksi takdirde bölgedeyse & ardından copy_options::create_hard_links create_hard_link(to, from).
 
-- Aksi halde, eğer is_directory(f) sonra copy_file (, çok/from.filename(), çevrilir).
+- Aksi takdirde is_directory(f) sonra copy_file (, çok/from.filename(), kabul eder).
 
-- Aksi takdirde copy_file (Kimden için çevrilir).
+- Aksi takdirde copy_file (gelen, için kabul eder).
 
-Aksi halde, eğer is_directory(f) & & (çevrilir & copy_options::recursive &#124; &#124; ! çevrilir) sonra:
+Aksi takdirde is_directory(f) & & (bölgedeyse & copy_options::recursive &#124; &#124; ! kabul eder) sonra:
 
 ```cpp
 if (!exists(t))
@@ -230,7 +230,7 @@ if (!exists(t))
 
 Aksi takdirde, hiçbir şey yapmayın.
 
-## <a name="opy_file"></a>  copy_file
+## <a name="copy_file"></a>  copy_file
 
 ```cpp
 bool copy_file(const path& from, const path& to);
@@ -239,13 +239,13 @@ bool copy_file(const path& from, const path& to, copy_options opts);
 bool copy_file(const path& from, const path& to, copy_options opts, error_code& ec) noexcept;
 ```
 
-İşlevler büyük olasılıkla tüm konumundaki dosya Kopyala `from` için `to` denetiminde `opts`, hiçbir aşırı copy_options::none olarak gerçekleştirilecek `opts` parametresi. `opts` en fazla bir skip_existing, overwrite_existing veya update_existing içeren.
+İşlevler, tüm büyük olasılıkla dosyayı Kopyala `from` için `to` denetiminde `opts`, olmadan aşırı yüklemeler için copy_options::none olarak gerçekleştirilen `opts` parametresi. `opts` en fazla bir skip_existing, overwrite_existing veya update_existing içeren.
 
-Varsa mevcut\(için\) && \!\(çevrilir & \(copy_options::skip_existing &#124; copy_options::overwrite_existing &#124; copy_options::update_existing\) \) sonra rapor dosyası zaten var olan bir hata olarak.
+Varsa mevcut\(için\) && \!\(bölgedeyse & \(copy_options::skip_existing &#124; copy_options::overwrite_existing &#124; copy_options::update_existing\) \) sonra rapor dosyası zaten var. bir hata olarak.
 
-Aksi halde, eğer \!var.\(için\) &#124; &#124; çevrilir & copy_options::overwrite_existing &#124; &#124; çevrilir & copy_options::update_existing & & last_write_time\(için \) \< last_write_time\(gelen\) &#124; &#124; \! \(çevrilir & \(copy_options::skip_existing &#124; copy_options::o verwrite_existing &#124; copy_options:update_existing\) \) içerikleri ve öznitelikleri dosyasının dosyasına kopyalama girişimi. Kopyalama denemesi başarısız olursa hata olarak bildirin.
+Aksi takdirde \!var.\(için\) &#124; &#124; bölgedeyse & copy_options::overwrite_existing &#124; &#124; bölgedeyse & copy_options::update_existing & & last_write_time\(için \) \< last_write_time\(gelen\) &#124; &#124; \! \(bölgedeyse & \(copy_options::skip_existing &#124; copy_options::o verwrite_existing &#124; copy_options:update_existing\) \) dosyasına dosyasından öznitelikleri ve içeriği kopyalama girişimi. Kopyalama girişimi başarısız olursa hata olarak bildirin.
 
-İşlevler doğru kopyalama girişiminde ve başarılı, aksi takdirde false döndürür.
+İşlevleri doğru kopyalama denenir ve başarılı olur, aksi takdirde false döndürün.
 
 ## <a name="copy_symlink "></a>  copy_symlink
 
@@ -254,7 +254,7 @@ void copy_symlink(const path& from, const path& to);
 void copy_symlink(const path& from, const path& to, error_code& ec) noexcept;
 ```
 
-Varsa is_directory\(gelen\) işlevi çağırır create_directory_symlink\(gelen,\). Aksi takdirde create_symlink çağırır\(gelen,\).
+Varsa is_directory\(gelen\) create_directory_symlink işlevi çağıran\(gelen,\). İse create_symlink çağırır\(gelen,\).
 
 ## <a name="create_directories"></a>  create_directories
 
@@ -263,7 +263,7 @@ bool create_directories(const path& pval);
 bool create_directories(const path& pval, error_code& ec) noexcept;
 ```
 
-Gibi bir yol adı için bir\/b\/c işlevi dizinler oluşturur bir ve bir\/dizini oluşturabilmesi için gerektiğinde b bir\/b\/gerektiğinde c. Yalnızca dizin gerçekte oluşturduğu varsa true değerini döndürür `pval`.
+Gibi bir yol için bir\/b\/c işlevi dizin oluşturur bir ve\/dizini oluşturabilmesi gereken şekilde b bir\/b\/gerektiğinde c. Yalnızca gerçekten dizini oluşturur, true döndürür `pval`.
 
 ## <a name="create_directory"></a>  create_directory
 
@@ -275,7 +275,7 @@ bool create_directory(const path& pval, const path& attr);
 bool create_directory(const path& pval, const path& attr, error_code& ec) noexcept;
 ```
 
-İşlev dizini `pval` gerektiğinde. Yalnızca dizin gerçekte oluşturduğu varsa true değerini döndürür `pval`, bu durumda varolan dosyasından izinleri kopyalar `attr`, veya hiçbir aşırı perms::all kullanımları `attr` parametresi.
+İşlev dizini `pval` gerektiğinde. Yalnızca gerçekten dizini oluşturur, true döndürür `pval`, bu durumda varolan dosyanın izinlerini kopyalar `attr`, veya olmadan aşırı perms::all kullanımları `attr` parametresi.
 
 ## <a name="create_directory_symlink "></a>  create_directory_symlink
 
@@ -284,7 +284,7 @@ void create_directory_symlink(const path& to, const path& link);
 void create_directory_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-Simgesel dizinine olarak bağlantı işlevi oluşturur `to`.
+İşlevi bağlantı olarak dizine bir sembolik bağlantısını oluşturur. `to`.
 
 ## <a name="create_hard_link"></a>  create_hard_link
 
@@ -293,7 +293,7 @@ void create_hard_link(const path& to,  const path& link);
 void create_hard_link(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-Dizin veya dosya sabit bağlantı olarak işlev bağlantısı oluşturur `to`.
+İşlevi, dizin veya dosya için sabit bir bağlantı olarak bağlantısını oluşturur. `to`.
 
 ## <a name="create_symlink "></a>  create_symlink
 
@@ -303,7 +303,7 @@ void create_symlink(const path& to,  const path& link);
 void create_symlink(const path& to, const path& link, error_code& ec) noexcept;
 ```
 
-İşlev oluşturur `link` simgesel dosyaya olarak `to`.
+Bir işlev oluşturur `link` dosyasına bir sembolik bağlantısını olarak `to`.
 
 ## <a name="current_path"></a>  current_path
 
@@ -316,25 +316,25 @@ void current_path(const path& pval, error_code& ec) noexcept;
 
 Hiçbir parametre işlevleriyle `pval` geçerli dizin için yol adını döndürür. Geçerli dizin kalan işlevleri kümesine `pval`.
 
-## <a name="end"></a>  Bitiş
+## <a name="end"></a>  Son
 
 ```cpp
 directory_iterator& end(const directory_iterator& iter) noexcept;
 recursive_directory_iterator& end(const recursive_directory_iterator& iter) noexcept;
 ```
 
-Directory_iterator ilk işlevi döndürür\( \) ve ikinci işlev recursive_directory_iterator döndürür\(\)
+İlk işlev directory_iterator döndürür\( \) ve ikinci işlev recursive_directory_iterator döndürür\(\)
 
-## <a name="equivalent"></a>  eşdeğer
+## <a name="equivalent"></a>  eşdeğeri
 
 ```cpp
 bool equivalent(const path& left, const path& right);
 bool equivalent(const path& left, const path& right, error_code& ec) noexcept;
 ```
 
-İşlevler ise true döndürür `left` ve `right` aynı dosya sistemi varlık belirleyin.
+İşlevler yalnızca, true döndürür `left` ve `right` aynı dosya sistemi varlık belirleyin.
 
-## <a name="exists"></a>  var
+## <a name="exists"></a>  Var.
 
 ```cpp
 bool exists(file_status stat) noexcept;
@@ -342,7 +342,7 @@ bool exists(const path& pval);
 bool exists(const path& pval, error_code& ec) noexcept;
 ```
 
-Status_known ilk işlevi döndürür & & stat.type\( \) \! \= file_not_found. İkinci ve üçüncü işlevler döndürür bulunmaktadır\(durum\(pval\)\).
+İlk işlev status_known döndürür & & stat.type\( \) \! \= file_not_found. İkinci ve üçüncü oluşturucular dönüş var.\(durumu\(pval\)\).
 
 ## <a name="file_size"></a>  file_size
 
@@ -351,7 +351,7 @@ uintmax_t file_size(const path& pval);
 uintmax_t file_size(const path& pval, error_code& ec) noexcept;
 ```
 
-Tarafından belirlenen dosyasının bayt cinsinden boyutu işlevler döndürür `pval`, mevcut\(pval\) & & is_regular_file\(pval\) ve dosya boyutu belirlenebilir. Aksi halde bunlar bir hata ve return uintmax_t rapor\(\-1\).
+İşlevler tarafından belirtilen dosyanın bayt cinsinden boyutu döndürür. `pval`, varsa var\(pval\) & & is_regular_file\(pval\) ve dosya boyutu belirlenebilir. Aksi takdirde, bir hata ve dönüş uintmax_t rapor\(\-1\).
 
 ## <a name="hard_link_count"></a>  hard_link_count
 
@@ -360,7 +360,7 @@ uintmax_t hard_link_count(const path& pval);
 uintmax_t hard_link_count(const path& pval, error_code& ec) noexcept;
 ```
 
-İşlev için sabit bağlantıları sayısını döndürür `pval`, veya \-bir hata oluşursa, 1.
+İşlev için sabit bağlantılar verir `pval`, veya \-bir hata oluşursa 1.
 
 ## <a name="hash_value"></a>  hash_value
 
@@ -378,7 +378,7 @@ bool is_block_file(const path& pval);
 bool is_block_file(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::block. Kalan işlevleri is_block_file dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::block. Kalan işlevler is_block_file döndürür\(durumu\(pval\)\).
 
 ## <a name="is_character_file"></a>  is_character_file
 
@@ -388,7 +388,7 @@ bool is_character_file(const path& pval);
 bool is_character_file(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::character. Kalan işlevleri is_character_file dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::character. Kalan işlevler is_character_file döndürür\(durumu\(pval\)\).
 
 ## <a name="is_directory "></a>  is_directory
 
@@ -398,7 +398,7 @@ bool is_directory(const path& pval);
 bool is_directory(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::directory. Kalan işlevleri is_directory_file dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::directory. Kalan işlevler is_directory_file döndürür\(durumu\(pval\)\).
 
 ## <a name="is_empty"></a>  is_empty
 
@@ -408,7 +408,7 @@ bool is_empty(const path& pval);
 bool is_empty(const path& pval, error_code& ec) noexcept;
 ```
 
-Varsa is_directory\(pval\) directory_iterator işlevi döndürür sonra\(pval\) \= \= directory_iterator\(\); Aksi takdirde file_ döndürür boyutu\(pval\) \= \= 0.
+Varsa is_directory\(pval\) directory_iterator işlevi döndürür sonra\(pval\) \= \= directory_iterator\(\); Aksi halde file_ döndürür boyutu\(pval\) \= \= 0.
 
 ## <a name="is_fifo"></a>  is_fifo
 
@@ -418,7 +418,7 @@ bool is_fifo(const path& pval);
 bool is_fifo(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::fifo. Kalan işlevleri is_fifo dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::fifo. Kalan işlevler is_fifo döndürür\(durumu\(pval\)\).
 
 ## <a name="is_other"></a>  is_other
 
@@ -428,7 +428,7 @@ bool is_other(const path& pval);
 bool is_other(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::other. Kalan işlevleri is_other dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::other. Kalan işlevler is_other döndürür\(durumu\(pval\)\).
 
 ## <a name="s_regular_file"></a>  is_regular_file
 
@@ -438,7 +438,7 @@ bool is_regular_file(const path& pval);
 bool is_regular_file(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::regular. Kalan işlevleri is_regular_file dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::regular. Kalan işlevler is_regular_file döndürür\(durumu\(pval\)\).
 
 ## <a name="is_socket"></a>  is_socket
 
@@ -448,7 +448,7 @@ bool is_socket(const path& pval);
 bool is_socket(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::socket. Kalan işlevleri is_socket dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::socket. Kalan işlevler is_socket döndürür\(durumu\(pval\)\).
 
 ## <a name="is_symlink"></a>  is_symlink
 
@@ -458,7 +458,7 @@ bool is_symlink(const path& pval);
 bool is_symlink(const path& pval, error_code& ec) noexcept;
 ```
 
-İlk işlev stat.type döndürür\( \) \= \= file_type::symlink. Kalan işlevleri is_symlink dönmek\(durum\(pval\)\).
+İlk işlev stat.type döndürür\( \) \= \= file_type::symlink. Kalan işlevler is_symlink döndürür\(durumu\(pval\)\).
 
 ## <a name="last_write_time"></a>  last_write_time
 
@@ -469,7 +469,7 @@ void last_write_time(const path& pval, file_time_type new_time);
 void last_write_time(const path& pval, file_time_type new_time, error_code& ec) noexcept;
 ```
 
-İlk iki işlevler için son veri değişikliği zamanı döndürür `pval`, veya file_time_type\(\-1\) bir hata oluşursa. Son iki işlevleri için son veri değişikliği süresini ayarlamak `pval` new_time için.
+İlk iki işlevler için son veri değişikliği zamanı döndürür `pval`, veya file_time_type\(\-1\) hata oluşması durumunda. Son iki işlev için son veri değiştirilme saatini ayarlayın `pval` new_time için.
 
 ## <a name="permissions"></a>  İzinleri
 
@@ -478,9 +478,9 @@ void permissions(const path& pval, perms mask);
 void permissions(const path& pval, perms mask, error_code& ec) noexcept;
 ```
 
-İşlevler tarafından belirlenen pathname izinlerini ayarlama `pval` maskesi & izinleri denetiminde perms::mask & \(perms::add_perms &#124; perms::remove_perms\). Maske en çok bir perms::add_perms ve perms::remove_perms içeren.
+İşlevler tarafından belirtilen yol için izinler `pval` maskesi & perms::mask izinleri denetiminde & \(perms::add_perms &#124; perms::remove_perms\). Maske en fazla bir perms::add_perms ve perms::remove_perms içeren.
 
-Maske & perms::add_perms işlevleri durumuna izinleri varsa\(pval\).permissions\( \) &#124; maskesi & perms::mask. Aksi takdirde maskesi & perms::remove_perms işlevleri izinleri durumuna ayarlarsanız\(pval\).permissions\( \) & ~\(maskesi & perms::mask\). Aksi takdirde işlevleri maskesi & perms::mask izinlerini ayarlayın.
+Maske & perms::add_perms işlevleri durumuna izinleri varsa\(pval\).permissions\( \) &#124; maskesi & perms::mask. Aksi takdirde maskesi & perms::remove_perms işlevleri izinleri durumuna ayarlarsanız\(pval\).permissions\( \) & ~\(maskesi & perms::mask\). Aksi takdirde, İşlevler için maske & perms::mask izinlerini ayarlayın.
 
 ## <a name="read_symlink"></a>  read_symlink
 
@@ -489,7 +489,7 @@ path read_symlink(const path& pval);
 path read_symlink(const path& pval, error_code& ec);
 ```
 
-Bir hata ve dönüş yolu işlevleri rapor\( \) varsa \!is_symlink\(pval\). Aksi takdirde işlevler türünde bir nesne döndürür `path` sembolik bağlantıyı içeren.
+İşlevler bir hata ve dönüş yolu rapor\( \) varsa \!is_symlink\(pval\). Aksi takdirde, İşlevler türünde bir nesne döndürür `path` sembolik bağlantısını içeren.
 
 ## <a name="remove"></a>  Kaldır
 
@@ -498,7 +498,7 @@ bool remove(const path& pval);
 bool remove(const path& pval, error_code& ec) noexcept;
 ```
 
-İşlevler yalnızca ise true var. döndürür\(symlink_status\(pval\) \) ve dosyayı başarıyla kaldırıldı. Bir simgesel kendisi kaldırıldı, onu atayan dosyası değil değildir.
+İşlevler var. yalnızca gerekirse true döndürür\(symlink_status\(pval\) \) ve dosyayı başarıyla kaldırıldı. Bir sembolik bağlantısını kendisi kaldırıldıysa, onu atayan dosyası değil değildir.
 
 ## <a name="remove_all"></a>  remove_all
 
@@ -507,16 +507,16 @@ uintmax_t remove_all(const path& pval);
 uintmax_t remove_all(const path& pval, error_code& ec) noexcept;
 ```
 
-Varsa `pval` bir dizindir tüm dizin girişlerini sonra giriş işlevleri yinelemeli olarak kaldırın. Aksi takdirde işlevlerini Kaldır çağırın. Bunlar, başarılı bir şekilde kaldırılan tüm öğelerin sayısını döndürür.
+Varsa `pval` bir dizin işlevleri yinelemeli olarak tüm dizin girdisi, ardından giriş kaldırın. Aksi takdirde kaldırma işlevlerini çağırın. Bunlar, başarıyla kaldırılan tüm öğelerin sayısını döndürür.
 
-## <a name="rename"></a>  Yeniden Adlandır
+## <a name="rename"></a>  Yeniden adlandırma
 
 ```cpp
 void rename(const path& from,  const path& to);
 void rename(const path& from,  const path& to, error_code& ec) noexcept;
 ```
 
-İşlevleri yeniden adlandırın `from` için `to`. Bir simgesel kendisini yeniden adlandırılmış, atayan dosyası değil ' dir.
+İşlevleri Yeniden Adlandır `from` için `to`. Bir sembolik bağlantısını kendisi yeniden adlandırılmış, atayan dosyası değil değildir.
 
 ## <a name="resize_file"></a>  resize_file
 
@@ -525,16 +525,16 @@ void resize(const path& pval, uintmax_t size);
 void resize(const path& pval, uintmax_t size, error_code& ec) noexcept;
 ```
 
-Bu tür bir dosyanın boyutu işlevleri alter bu file_size\(pval\) \= \= boyutu
+Böyle bir dosyanın boyutunu işlevleri alter bu file_size\(pval\) \= \= boyutu
 
-## <a name="space"></a>  Alanı
+## <a name="space"></a>  alanı
 
 ```cpp
 space_info space(const path& pval);
 space_info space(const path& pval, error_code& ec) noexcept;
 ```
 
-İşlev tarafından belirlenen ses hakkında bilgi verir `pval`, yapı türü `space_info`. Yapı uintmax_t içerdiği\(\-1\) belirlenemiyor herhangi bir değer için.
+İşlev tarafından belirlenen birim hakkındaki bilgileri döndürür `pval`, bir yapı türü `space_info`. Yapı uintmax_t içerdiği\(\-1\) için herhangi bir değer belirlenemiyor.
 
 ## <a name="status"></a>  Durumu
 
@@ -543,7 +543,7 @@ file_status status(const path& pval);
 file_status status(const path& pval, error_code& ec) noexcept;
 ```
 
-Pathname durum, dosya türü ve ilişkili izinler işlevleri dönmek `pval`. Bir simgesel kendisini test olmakla birlikte, bu dosyayı belirtir.
+İşlevler pathname durum, dosya türü ve ilişkili izinler döndürür `pval`. Kendi test hedefine sembolik bağlantı olduğu halde bu dosyayı belirtir.
 
 ## <a name="status_known"></a>  status_known
 
@@ -551,15 +551,15 @@ Pathname durum, dosya türü ve ilişkili izinler işlevleri dönmek `pval`. Bir
 bool status_known(file_status stat) noexcept;
 ```
 
-Stat.type işlevi döndürür\( \) \! \= file_type::none
+İşlev stat.type döndürür\( \) \! \= file_type::none
 
-## <a name="swap"></a>  Değiştirme
+## <a name="swap"></a>  değiştirme
 
 ```cpp
 void swap(path& left, path& right) noexcept;
 ```
 
-İşlev içeriğini alış verişleri `left` ve `right`.
+İşlev içeriğini birbiriyle değiştirir `left` ve `right`.
 
 ## <a name="symlink_status"></a>  symlink_status
 
@@ -568,7 +568,7 @@ file_status symlink_status(const path& pval);
 file_status symlink_status(const path& pval, erroxr_code& ec) noexcept;
 ```
 
-Pathname simgesel durum, dosya türü ve ilişkili izinler işlevleri dönmek `pval`. İşlevler durumu olarak aynı şekilde davranır\(pval\) bir simgesel kendisini test olması dışında dosyanın değil, belirler.
+İşlevler pathname hedefine sembolik bağlantı durumunu, dosya türü ve ilişkili izinler döndürür `pval`. İşlevler durumu olarak aynı şekilde davranır\(pval\) dosyası değil, kendi test hedefine sembolik bağlantı olması dışında, belirler.
 
 ## <a name="system_complete"></a>  system_complete
 
@@ -577,7 +577,7 @@ path system_complete(const path& pval);
 path system_complete(const path& pval, error_code& ec);
 ```
 
-İşlevler, gerekirse hesabı kök adıyla ilişkilendirilmiş geçerli dizinin alır mutlak bir yol adı döndürür. \(POSIX için işlevleri mutlak dönmek\(pval\).\)
+İşlevler, kök adıyla ilişkili geçerli dizini gerekli olarak dikkate alan bir mutlak bir yol adı döndürür. \(İşlevler, POSIX mutlak döndürür\(pval\).\)
 
 ## <a name="temp_directory_path"></a>  temp_directory_path
 
@@ -586,7 +586,7 @@ path temp_directory_path();
 path temp_directory_path(error_code& ec);
 ```
 
-İşlevler geçici dosyalar içeren için uygun bir dizin için bir yol döndürür.
+İşlevler bir yol bir dizin için geçici dosyalar içeren uygun döndürür.
 
 ## <a name="u8path"></a>  u8path
 
@@ -598,6 +598,6 @@ template <class InIt>
 path u8path(InIt first, InIt last);
 ```
 
-İlk işlev path(source) ile aynı şekilde davranır ve ikinci işlev yolu ile aynı şekilde davranır (ilk, son) dışında her durumda atanan kaynak dosya sistemi bağımsız olarak UTF-8 olarak kodlanmış char öğeleri dizisi olarak alınır.
+İlk işlev path(source) gibi davranır ve ikinci işlevi yolu gibi davranır (ilk olarak, son) dışında her durumda belirtilen kaynak dosya bağımsız olarak UTF-8 kodlanmış karakter öğeleri dizisi olarak alınır.
 
 

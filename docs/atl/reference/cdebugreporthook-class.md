@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac3c020bbb5ff46f4684c9ed089a2fe327de252e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8de1f44b079b269d76054b1a221a8ec3e36daf5e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884369"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209331"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook sınıfı
 Bu sınıf, hata ayıklama raporları bir adlandırılmış kanala göndermek için kullanın.  
@@ -61,7 +61,7 @@ class CDebugReportHook
 ## <a name="remarks"></a>Açıklamalar  
  Hata ayıklama yapılarında, hizmetlerin veya uygulamaların hata ayıklama raporları bir adlandırılmış kanala göndermek için bu sınıfın bir örneğini oluşturun. Hata ayıklama raporları oluşturulur çağırarak [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) veya bir sarmalayıcı gibi bu işlev için kullanarak [ATLTRACE](debugging-and-error-reporting-macros.md#atltrace) ve [ATLASSERT](debugging-and-error-reporting-macros.md#atlassert) makroları.  
   
- Bu sınıfın kullanımını etkileşimli olarak etkileşimli olmayan çalışan bileşenleri hatalarını ayıklamanızı sağlar [penceresi istasyonları](http://msdn.microsoft.com/library/windows/desktop/ms687096).  
+ Bu sınıfın kullanımını etkileşimli olarak etkileşimli olmayan çalışan bileşenleri hatalarını ayıklamanızı sağlar [penceresi istasyonları](/windows/desktop/winstation/window-stations).  
   
  İş parçacığının temel güvenlik bağlamını kullanarak hata ayıklama raporlar gönderilir unutmayın. Burada düşük ayrıcalıklı kullanıcı kimliğe bürünme, gibi web uygulamalarında gerçekleşen durumlarda hata ayıklama raporlarının görüntülenebilmesi için kimliğe bürünme geçici olarak devre dışı bırakıldı.  
   

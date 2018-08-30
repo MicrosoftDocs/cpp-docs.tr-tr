@@ -188,12 +188,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97548fca6b47e8d765eb7744a86ab0d4cfa27b17
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 50bb4061a13a9057a695b25ca32421c4dd7ed88b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337495"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207830"
 ---
 # <a name="cframewndex-class"></a>CFrameWndEx sınıfı
 Implements işlevselliğinin bir Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üyeleri sağlar. Bunu genişleten [CFrameWnd](../../mfc/reference/cframewnd-class.md) sınıfı.  
@@ -250,7 +250,7 @@ class CFrameWndEx : public CFrameWnd
 |[CFrameWndEx::OnCreate](#oncreate)|Çerçeve oluşturulduktan sonra framework tarafından çağırılır.|  
 |[CFrameWndEx::OnDestroy](#ondestroy)|Çerçeve kaldırıldığında framework tarafından çağırılır.|  
 |[CFrameWndEx::OnDrawMenuImage](#ondrawmenuimage)|Uygulama Menü öğesiyle ilişkili görüntü çizdiğinde framework tarafından çağırılır.|  
-|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Framework tarafından çağırılır, bir `CMFCPopupMenu` nesne işlemleri bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) ileti.|  
+|[CFrameWndEx::OnDrawMenuLogo](#ondrawmenulogo)|Framework tarafından çağırılır, bir `CMFCPopupMenu` nesne işlemleri bir [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti.|  
 |[CFrameWndEx::OnDWMCompositionChanged](#ondwmcompositionchanged)|Masaüstü Pencere Yöneticisi'ni (DWM) kompozisyonu etkin veya devre dışı olduğunda framework tarafından çağırılır.|  
 |[CFrameWndEx::OnExitSizeMove](#onexitsizemove)|Çerçeve taşıma veya yeniden boyutlandırma durduğunda framework tarafından çağırılır.|  
 |[CFrameWndEx::OnGetMinMaxInfo](#ongetminmaxinfo)|Çerçeve penceresi boyut sınırlarını ayarlamak için yeniden boyutlandırıldığında framework tarafından çağırılır.|  
@@ -358,7 +358,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
  Birden çok windows konumlarını içeren bir yapıya tanıtıcı. biçimindeki telefon numarasıdır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Hdwp yapısı tarafından başlatılan [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) yöntemi.  
+ Hdwp yapısı tarafından başlatılan [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) yöntemi.  
   
 ##  <a name="delayupdateframemenu"></a>  CFrameWndEx::DelayUpdateFrameMenu  
  Çerçeve menüsü ayarlar ve komut işleme boşta olduğunda güncelleştirir.  
@@ -1093,7 +1093,7 @@ afx_msg void OnGetMinMaxInfo(MINMAXINFO FAR* lpMMI);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpMMI*  
- İşaretçi bir [MINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632605) yapısı.  
+ İşaretçi bir [MINMAXINFO](https://msdn.microsoft.com/library/windows/desktop/ms632605) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1129,7 +1129,7 @@ afx_msg void OnLButtonDown(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nFlags*  
- Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONDOWN bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645607).  
+ Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONDOWN bildirim](/windows/desktop/inputdev/wm-lbuttondown).  
   
  [in] *noktası*  
  X ve y koordinatları işaretçinin, pencerenin sol üst köşesindeki göreli belirtir.  
@@ -1147,7 +1147,7 @@ afx_msg void OnLButtonUp(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nFlags*  
- Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONUP bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645608).  
+ Kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_LBUTTONUP bildirim](/windows/desktop/inputdev/wm-lbuttonup).  
   
  [in] *noktası*  
  X ve y koordinatları işaretçinin, pencerenin sol üst köşesindeki göreli belirtir.  
@@ -1221,7 +1221,7 @@ afx_msg void OnMouseMove(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nFlags*  
- Bir kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_MOUSEMOVE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645616).  
+ Bir kullanıcı değiştirici tuşları basılı olup olmadığını gösterir. Olası değerler için parametre bkz *wParam* içinde [WM_MOUSEMOVE bildirim](/windows/desktop/inputdev/wm-mousemove).  
   
  [in] *noktası*  
  X ve y belirtir işaretçinin penceresinin sol üst köşesindeki göreli koordinatları.  
@@ -1290,7 +1290,7 @@ afx_msg LRESULT OnNcHitTest(CPoint point);
  İşaretçiyi ekran koordinatlarına göre konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi isabet numaralandırılmış değeri. Olası değerler listesi için bkz. [wm_nchıttest bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ Bir işaretçi isabet numaralandırılmış değeri. Olası değerler listesi için bkz. [wm_nchıttest bildirim](/windows/desktop/inputdev/wm-nchittest).  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1305,7 +1305,7 @@ afx_msg void OnNcMouseMove(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nHitTest*  
- Bir işaretçi isabet numaralandırılmış değeri. Olası değerler listesi için bkz. [wm_nchıttest bildirim](http://msdn.microsoft.com/library/windows/desktop/ms645618).  
+ Bir işaretçi isabet numaralandırılmış değeri. Olası değerler listesi için bkz. [wm_nchıttest bildirim](/windows/desktop/inputdev/wm-nchittest).  
   
  [in] *noktası*  
  İşaretçiyi ekran koordinatlarına göre konumu.  
@@ -1369,7 +1369,7 @@ afx_msg LRESULT OnPowerBroadcast(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *wp*  
- Güç Yönetimi olayının. Olası değerler listesi için bkz. [WM_POWERBROADCAST ileti](http://msdn.microsoft.com/library/windows/desktop/aa373247).  
+ Güç Yönetimi olayının. Olası değerler listesi için bkz. [WM_POWERBROADCAST ileti](/windows/desktop/Power/wm-powerbroadcast).  
   
  [in] *lp*  
  Bu parametre kullanılmaz.  
@@ -1442,7 +1442,7 @@ afx_msg LRESULT OnSetText(
  Pencere için metin işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir çağrıdan dönüş değeri [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572).  
+ Bir çağrıdan dönüş değeri [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572).  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1518,7 +1518,7 @@ afx_msg void OnSize(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *nTür*  
- Yeniden boyutlandırma türü. Olası değerler için parametre bkz *wParam* içinde [WM_SIZE bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632646).  
+ Yeniden boyutlandırma türü. Olası değerler için parametre bkz *wParam* içinde [WM_SIZE bildirim](/windows/desktop/winmsg/wm-size).  
   
  [in] *cx*  
  Yeni çerçevenin piksel cinsinden genişliği.  
@@ -1539,7 +1539,7 @@ afx_msg void OnSizing(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *fwSide*  
- Taşınan çerçevenin kenarına. Bkz. parametre *wParam* içinde [WM_SIZING bildirim](http://msdn.microsoft.com/library/windows/desktop/ms632647).  
+ Taşınan çerçevenin kenarına. Bkz. parametre *wParam* içinde [WM_SIZING bildirim](/windows/desktop/winmsg/wm-sizing).  
   
  [out içinde] *pRect*  
  İşaretçi bir [CRect](../../atl-mfc-shared/reference/crect-class.md) veya [RECT](../../mfc/reference/rect-structure1.md) çerçeve koordinatları içeren yapısı.  
@@ -1896,10 +1896,10 @@ virtual void WinHelp(
   
 ### <a name="parameters"></a>Parametreler  
  *dwData*  
- Bağımlı veri *nCmd* parametresi. Olası değerler listesi için bkz. [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ Bağımlı veri *nCmd* parametresi. Olası değerler listesi için bkz. [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
  *nCmd*  
- Help komutu. Olası değerler listesi için bkz. [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267).  
+ Help komutu. Olası değerler listesi için bkz. [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa).  
   
 ### <a name="remarks"></a>Açıklamalar  
   

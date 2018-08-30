@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65375b764c0d8d8673a59fcfb47b4eecaf730cb5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 817875dd32457fa47eafca9d634bc2e7cc8e079d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879963"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206576"
 ---
 # <a name="csacl-class"></a>CSacl sınıfı
 (Sistem erişim denetim listesi) SACL yapısı için bir sarmalayıcı sınıftır.  
@@ -72,7 +72,7 @@ class CSacl : public CAcl
   
  Ekle, Kaldır, oluşturma ve ACE öğesinden silmek için sağlanan sınıf yöntemleriyle `SACL` nesne. Ayrıca bkz: [AtlGetSacl](security-global-functions.md#atlgetsacl) ve [AtlSetSacl](security-global-functions.md#atlsetsacl).  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CAcl](../../atl/reference/cacl-class.md)  
@@ -131,7 +131,7 @@ bool AddAuditAce(
 ### <a name="remarks"></a>Açıklamalar  
  A `CSacl` nesne erişim denetimi girdileri (ACE) güvenlik olay günlüğünde denetim kayıtlarını oluşturan erişim denemesi türlerini belirtmek içerir. Bu yöntem bir tür as ekler `CSacl` nesne.  
   
- Bkz: [ACE_HEADER](http://msdn.microsoft.com/library/windows/desktop/aa374919) içinde ayarlanan çeşitli bayrakları açıklamasını *AceFlags* parametresi.  
+ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) içinde ayarlanan çeşitli bayrakları açıklamasını *AceFlags* parametresi.  
   
 ##  <a name="csacl"></a>  CSacl::CSacl  
  Oluşturucu.  
@@ -208,7 +208,7 @@ void RemoveAllAces() throw();
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAcl sınıfı](../../atl/reference/cacl-class.md)   
- [ACL'ler](http://msdn.microsoft.com/library/windows/desktop/aa374872)   
- [ACE](http://msdn.microsoft.com/library/windows/desktop/aa374868)   
+ [ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)   
+ [ACE](/windows/desktop/SecAuthZ/access-control-entries)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

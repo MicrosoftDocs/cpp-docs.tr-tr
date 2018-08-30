@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4952 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42696dfae816742c958bca23e25e311e834dd62a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f62f4c18380d89eb516a5fa49ef63e92ab79a6f2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292148"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207157"
 ---
 # <a name="compiler-warning-level-1-c4952"></a>Derleyici Uyarısı (düzey 1) C4952
-'function': hiçbir profili veri program veritabanı 'pgd_file' içinde bulunamadı  
-  
- Kullanırken [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), sonra derlendiğini bir giriş modülü derleyici algıladı `/LTCG:PGINSTRUMENT` ve yeni bir işlev (***işlevi***) mevcut.  
-  
- Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözümlemek `/LTCG:PGINSTRUMENT`, tüm test yineleme çalıştırır ve Çalıştır `/LTCG:PGOPTIMIZE`.  
-  
- Bu uyarı ile bir hata durumunda değiştirilmesi `/LTCG:PGOPTIMIZE` kullanılan.
+
+> '*işlevi*': program veritabanında profil verileri bulunamadı '*pgd_file*'
+
+Kullanırken [/LTCG:PGUPDATE](../../build/reference/ltcg-link-time-code-generation.md), derleyici sonra derlendiğini bir giriş modülü algılandı `/LTCG:PGINSTRUMENT` ve yeni bir işlev (*işlevi*) mevcut.
+
+Bu uyarı, bilgi amaçlıdır. Bu uyarıyı çözmek için `/LTCG:PGINSTRUMENT`, tüm test Yinele çalıştırır ve çalıştırma `/LTCG:PGOPTIMIZE`.
+
+Bu uyarı ile ilgili bir hata varsa geçecekti `/LTCG:PGOPTIMIZE` kullanılmış.

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a922ac1a96a59d574f46f7b04db8b160a5079918
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e23bd9e0816c10f41e298afc9e82edbdd27e7a5f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374056"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206494"
 ---
 # <a name="assemblylinkresource-link-to-net-framework-resource"></a>/ASSEMBLYLINKRESOURCE (.NET Framework Kaynağına Bağlantı)
 ```  
@@ -38,17 +38,17 @@ ms.locfileid: "32374056"
  Derlemeden bağlamak istediğiniz .NET Framework kaynak dosyası.  
   
 ## <a name="remarks"></a>Açıklamalar  
- /ASSEMBLYLINKRESOURCE seçeneği bir .NET Framework kaynağına bağlantı çıktı dosyasında oluşturur; Kaynak dosyanın çıkış dosyasında yerleştirilmedi. [/ ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) kaynak dosyasını çıktı dosyasına katıştırır.  
+ / Assemblylınkresource seçeneği, çıkış dosyasında .NET Framework kaynağına bağlantı oluşturur; kaynak dosyası çıkış dosyasına yerleştirilmez. [/ ASSEMBLYRESOURCE](../../build/reference/assemblyresource-embed-a-managed-resource.md) bir kaynak dosyasını çıkış dosyası na ekler.  
   
- Bağlı kaynaklar ile bağlayıcı oluşturduğunuzda derlemesindeki ortak.  
+ Bağlı kaynaklar ile bağlayıcı oluştururken derleme içinde geneldir.  
   
- / ASSEMBLYLINKRESOURCE gerektirir derleme içerdiğini [/CLR](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) veya [/NOASSEMBLY](../../build/reference/noassembly-create-a-msil-module.md) ile /ASSEMBLYLINKRESOURCE izin verilmiyor.  
+ / ASSEMBLYLINKRESOURCE gerektirir derleme içerdiğini [/CLR](../../build/reference/clr-common-language-runtime-compilation.md); [/LN](../../build/reference/ln-create-msil-module.md) veya [noassembly](../../build/reference/noassembly-create-a-msil-module.md) ile/assemblylınkresource izin verilmez.  
   
- Varsa *filename* , örneğin, tarafından oluşturulan bir .NET Framework kaynak dosyası [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında üyelerle erişilebileceğini **System.Resources** ad alanı. Daha fazla bilgi için bkz: [System.Resources.ResourceManager](https://msdn.microsoft.com/en-us/library/system.resources.resourcemanager.aspx). Diğer tüm kaynaklar için kullanmak **GetManifestResource** \* yöntemleri **System.Reflection.Assembly** çalışma zamanında kaynağa erişmek için sınıf.  
+ Varsa *filename* , örneğin, tarafından oluşturulmuş bir .NET Framework kaynak dosyası [Resgen.exe](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında üyelerle erişilebileceğini **System.Resources** ad alanı. Daha fazla bilgi için [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx). Diğer tüm kaynaklar için kullanmak **T:System.Reflection.Assembly** \* yöntemleri **System.Reflection.Assembly** çalışma zamanında kaynağa erişmek için sınıf.  
   
- *filename* herhangi bir dosya biçiminde olabilir. Örneğin, genel derleme önbelleğine yüklü ve yönetilen kod derlemesindeki erişilen derleme yerel bir DLL parçası olmak isteyebilirsiniz.  
+ *filename* herhangi bir dosya biçiminde olabilir. Örneğin, genel derleme önbelleğine yüklenebilir ve derlemedeki yönetilen koddan erişilebilir derlemenin yerel bir DLL parçası olmak isteyebilirsiniz.  
   
- Derleme oluşturma etkileyen diğer bağlayıcı seçenekleri şunlardır:  
+ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekleri şunlardır:  
   
 -   [/ ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)  
   
@@ -66,13 +66,13 @@ ms.locfileid: "32374056"
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **bağlayıcı** klasör.  
+2.  Tıklayın **bağlayıcı** klasör.  
   
-3.  Tıklatın **komut satırı** özellik sayfası.  
+3.  Tıklayın **komut satırı** özellik sayfası.  
   
-4.  Seçenek içine türünü **ek seçenekler** kutusu.  
+4.  Seçeneğini yazın **ek seçenekler** kutusu.  
   
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
   

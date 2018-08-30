@@ -51,19 +51,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03251c9f0442ffa3cda6b00b6528e424e1fe9007
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b0e2271093237fbfdbc7f5e0492b1db220c469d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415640"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210367"
 ---
 # <a name="vcprintfp-vcprintfpl-vcwprintfp-vcwprintfpl"></a>_vcprintf_p, _vcprintf_p_l, _vcwprintf_p, _vcwprintf_p_l
 
-Bir işaretçi bağımsız değişken listesini kullanarak biçimlendirilmiş çıkışı konsola yazar ve Biçim dizesinde konumsal parametreler destekler.
+Bağımsız değişkenler listesine bir işaretçi kullanarak konsola biçimlendirilmiş çıktı yazar ve biçim dizesindeki konum parametrelerini destekler.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -90,35 +90,35 @@ int _vcwprintf_p_l(
 
 ### <a name="parameters"></a>Parametreler
 
-*Biçimi*<br/>
+*Biçim*<br/>
 Biçim belirtimi.
 
 *argptr*<br/>
-Bağımsız değişkenler listesi için bir işaretçi.
+Bağımsız değişkenler listesine bir işaretçi.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
-Daha fazla bilgi için bkz: [biçim belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Daha fazla bilgi için [biçim belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Yazılan karakter sayısını veya bir çıktı hatası oluşursa negatif bir değer. Varsa *biçimi* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve -1 döndürülür.
+Yazılan karakter sayısını veya bir hata oluştuğunda negatif bir değer. Varsa *biçimi* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve -1 döndürülür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri bir bağımsız değişken listesi için bir işaretçi alır ve ardından kullanır **_putch** biçimlendirmek ve konsola verilen veri yazmak için işlevi. (**_vcwprintf_p** kullanan **_putwch** yerine **_putch**. **_vcwprintf_p** geniş karakter sürümü **_vcprintf_p**. İşlem bir joker karakter dizesi bağımsız değişken olarak alır.)
+Bu işlevlerin her biri bağımsız değişken listesi için bir işaretçi alır ve ardından **_putch** biçimlendirir ve konsola verilen veri yazmak için işlevi. (**_vcwprintf_p** kullanan **_putwch** yerine **_putch**. **_vcwprintf_p** öğesinin geniş karakterli sürümüdür **_vcprintf_p**. İşlem bir geniş karakter dizesi bağımsız değişken olarak alır.)
 
-Bu işlevleri sürümlerini **_l** soneki, bunların yerine geçerli yerel geçirilen yerel ayar parametresi kullanmasını dışında aynıdır.
+Sahip bu işlevlerin sürümleri **_l** sonekine dışında geçerli yerel ayarı yerine iletilen yerel ayar parametresini kullanırlar.
 
-Her *bağımsız değişkeni* (varsa) dönüştürülür ve karşılık gelen biçimi belirtiminde göre çıktısı *biçimi*. Biçim dizesi bağımsız değişkenleri kullanılan sırayı belirtmek için biçim belirtim konumsal parametreler destekler. Daha fazla bilgi için bkz: [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
+Her *bağımsız değişken* (varsa) dönüştürülür ve karşılık gelen kapsamındaki biçim belirtimine göre çıkışı olan *biçimi*. Biçim belirtimi konumsal parametreleri destekler Biçim dizesinde bağımsız değişkenler kullanılan sırasını belirleyebilirsiniz. Daha fazla bilgi için [printf_p konumsal parametreler](../../c-runtime-library/printf-p-positional-parameters.md).
 
-Çıktı olduklarında bu işlevler satır besleme karakterleri satır başı satır besleme (CR-LF) birleşimlerine Çevir değil.
+Çıkış olduklarında bu işlevlerin satır besleme karakterlerini satır başı satır besleme (CR-LF) birleşimlerine Çevir değil.
 
 > [!IMPORTANT]
-> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+> Emin *biçimi* kullanıcı tanımlı bir dize değil. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
-Bu işlevler Giriş işaretçisi ve biçim dizesini doğrulayın. Varsa *biçimi* veya *bağımsız değişkeni* olan **NULL**, veya biçim dizesi geçersiz biçimlendirme karakterlerini içeriyorsa, bu işlevler geçersiz parametre işleyicisi açıklandığı gibi çağırma içinde [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Bu işlevler giriş işaretleyicisini ve biçim dizesini doğrular. Varsa *biçimi* veya *bağımsız değişken* olduğu **NULL**, veya biçim dizesi geçersiz biçim karakterleri içeriyorsa, bu işlevler geçersiz parametre işleyicisi açıklandığı gibi çağırır içinde [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -134,7 +134,7 @@ Bu işlevler Giriş işaretçisi ve biçim dizesini doğrulayın. Varsa *biçimi
 |**_vcprintf_p**, **_vcprintf_p_l**|\<conio.h > ve \<stdarg.h >|
 |**_vcwprintf_p**, **_vcwprintf_p_l**|\<conio.h > ve \<stdarg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

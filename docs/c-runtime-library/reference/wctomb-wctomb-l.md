@@ -38,16 +38,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 972d8e3f1798a7498173c3d8b0677bb57231b990
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: f10422d8efcebec62e77a495a6fb04c980da6060
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451545"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215167"
 ---
 # <a name="wctomb-wctombl"></a>wctomb, _wctomb_l
 
-Geniş karakter karşılık gelen birden çok baytlı karakter dönüştürün. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
+Çok baytlı karaktere karşılık gelen bir geniş karakter dönüştürün. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [wctomb_s, _wctomb_s_l](wctomb-s-wctomb-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,20 +66,20 @@ int _wctomb_l(
 ### <a name="parameters"></a>Parametreler
 
 *mbchar*<br/>
-Birden çok baytlı karakter adresi.
+Çok baytlı bir karakterin adresi.
 
 *wchar*<br/>
-Geniş karakter.
+Bir geniş karakter.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **wctomb** geniş karakter dönüştürür isteğe bağlı olarak birden çok baytlı karakter bayt sayısını döndürür (hangi asla büyük **MB_CUR_MAX**) geniş karakter. Varsa *wchar* joker karakter null karakteri (M '\0'), **wctomb** 1 döndürür. Varsa hedef işaretçi *mbchar* olan **NULL**, **wctomb** 0 döndürür. Dönüştürme geçerli yerel ayarda mümkün değilse, **wctomb** -1 döndürür ve **errno** ayarlanır **EILSEQ**.
+Varsa **wctomb** geniş karakter dönüştürür isteğe bağlı olarak bir çok baytlı karakterin bayt sayısını döndürür (olan hiçbir zaman büyüktür **MB_CUR_MAX**) geniş karakter. Varsa *wchar* geniş karakterli null karakteri (L '\0') **wctomb** 1 döndürür. Hedef işaretçi *mbchar* olduğu **NULL**, **wctomb** 0 döndürür. Geçerli yerel ayarda dönüştürme mümkün değilse, **wctomb** -1 döndürür ve **errno** ayarlanır **EILSEQ**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Wctomb** işlev dönüştürür kendi *wchar* karşılık gelen birden çok baytlı karakter bağımsız değişkeni ve sonucunda depolar *mbchar*. Herhangi bir noktadan herhangi bir programda işlevini çağırın. **wctomb** geçerli yerel ayar için tüm yerel ayara bağımlı davranışı; kullanır **_wctomb_l** aynıdır **wctomb** yerine geçirilen yerel ayar kullanır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**Wctomb** işlev dönüştürür, *wchar* çok baytlı karaktere karşılık gelen bağımsız değişken ve sonucunda depolar *mbchar*. Herhangi bir programda herhangi bir noktasından işlevi çağırabilir. **wctomb** herhangi bir yerel ayara bağımlı davranış için; geçerli yerel ayarı kullanır **_wctomb_l** aynıdır **wctomb** bunun yerine iletilmiş yerel ayar kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**wctomb** parametrelerini doğrular. Varsa *mbchar* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
+**wctomb** kendi parametrelerini doğrular. Varsa *mbchar* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev -1 döndürür.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -87,11 +87,11 @@ Varsa **wctomb** geniş karakter dönüştürür isteğe bağlı olarak birden �
 |-------------|---------------------|
 |**wctomb**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program wctomb işlevi davranışını gösterilmektedir.
+Bu program wctomb işlevi davranışını gösterir.
 
 ```cpp
 // crt_wctomb.cpp
@@ -127,4 +127,4 @@ Convert a wide character:
 [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
-[WideCharToMultiByte](http://msdn.microsoft.com/library/windows/desktop/dd374130)<br/>
+[WideCharToMultiByte](/windows/desktop/api/stringapiset/nf-stringapiset-widechartomultibyte)<br/>

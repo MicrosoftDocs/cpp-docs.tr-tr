@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed6b5f46e20338bdb06c5c04599402dbbefa935e
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 561a82e2bea320e6230af84055716606d180e2c5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880056"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214281"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 Bu sınıf, bir uygulama için modülü temsil eder.  
@@ -259,7 +259,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *nShowCmd*  
- Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. Varsayılan olarak SW_HIDE.  
+ Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. Varsayılan olarak SW_HIDE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -285,7 +285,7 @@ static void UninitializeCom() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak bu yöntem yalnızca çağırır [CoUninitialize](http://msdn.microsoft.com/library/windows/desktop/ms688715) ve yıkıcıdan çağrılır. Geçersiz kılmanız bu yöntemi geçersiz kılın [CAtlExeModuleT::InitializeCom](#initializecom).  
+ Varsayılan olarak bu yöntem yalnızca çağırır [CoUninitialize](/windows/desktop/api/combaseapi/nf-combaseapi-couninitialize) ve yıkıcıdan çağrılır. Geçersiz kılmanız bu yöntemi geçersiz kılın [CAtlExeModuleT::InitializeCom](#initializecom).  
   
 ##  <a name="unlock"></a>  CAtlExeModuleT::Unlock  
  Modülün kilit sayısını azaltır.  
@@ -306,7 +306,7 @@ int WinMain(int nShowCmd) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *nShowCmd*  
- Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
+ Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yürütülebilir dosya'nın dönüş değeri döndürür.  

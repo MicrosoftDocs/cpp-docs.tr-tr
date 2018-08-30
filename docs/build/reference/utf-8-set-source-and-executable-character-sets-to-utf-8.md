@@ -1,5 +1,5 @@
 ---
-title: -utf-8 (kaynağı Ayarla ve UTF-8 kümelerine karakter yürütülebilir) | Microsoft Docs
+title: -utf-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90520cd9ad4af484714306c37567ab041a826fcc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b9002d1989d9f46de29efb7b7c9a940315a99d2b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377501"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214808"
 ---
-# <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/UTF-8 (kaynağı Ayarla ve yürütülebilir karakter kümelerini UTF-8)
-Kaynak karakter kümesi hem UTF-8 olarak yürütme karakter kümesi belirtir.  
+# <a name="utf-8-set-source-and-executable-character-sets-to-utf-8"></a>/ UTF-8 (kaynak ayarlayın ve yürütülebilir karakter kümelerini UTF-8)
+Hem kaynak karakter kümesi ve UTF-8 yürütme karakter kümesini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,23 +34,23 @@ Kaynak karakter kümesi hem UTF-8 olarak yürütme karakter kümesi belirtir.
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanabileceğiniz **/utf-8** UTF-8 ile kodlanmış gibi hem kaynak hem de yürütme karakter kümesi belirtme seçeneği. Belirtmeye eşdeğer **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/validate-charset** varsayılan seçeneği. Desteklenen kod sayfası tanımlayıcıları listesini ve karakter kümesi adları için bkz: [kod sayfası tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/dd317756).  
+ Kullanabileceğiniz **/UTF-8** kaynak ve yürütme karakter kümelerinin UTF-8 kullanarak kodlanmış olarak belirtmek için seçeneği. Belirtmeye eşdeğerdir **/source-charset:utf-8 /execution-charset:utf-8** komut satırında. Bunlardan birine seçenekleri de etkinleştirir **/Validate-Charset** varsayılan seçeneği. Karakter kümesi adları ve kod sayfası tanımlayıcıları desteklenen bir listesi için bkz. [kod sayfası tanımlayıcıları](/windows/desktop/Intl/code-page-identifiers).  
   
- Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bir bayt sırası işareti algılar. Bayt sırası işareti bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak bir kod sayfasını kullanarak belirttiğiniz sürece varsayar **/utf-8** veya **/source-charset** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kodu kaydetmenizi sağlar. Kaynak ve yürütme karakter kümesi hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.  
+ Varsayılan olarak, Visual Studio kaynak dosya kodlanmış bir Unicode biçiminde, örneğin, UTF-16 veya UTF-8 olup olmadığını belirlemek için bayt sırası işareti algılar. Bayt sırası işareti yoksa bulunursa, kaynak dosyası kodlanmış geçerli kullanıcı kod sayfası kullanılarak kullanarak bir kod sayfası belirtmiş olduğunuz sürece varsayar **/UTF-8** veya **/Source-Charset** seçeneği. Visual Studio birkaç karakter kodlamaları birini kullanarak C++ kaynak kod kaydetmenize olanak tanır. Kaynak ve yürütme karakter kümeleri hakkında daha fazla bilgi için bkz: [karakter kümeleri](../../cpp/character-sets.md) dil belgelerinde.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Genişletme **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.  
+2.  Genişletin **yapılandırma özellikleri**, **C/C++**, **komut satırı** klasör.  
   
-3.  İçinde **Gelişmiş Seçenekler**, ekleme **/utf-8** seçeneği ve tercih edilen kodlamayı belirtin.  
+3.  İçinde **Gelişmiş Seçenekler**, ekleme **/UTF-8** seçenek ve tercih edilen kodlamayı belirtin.  
   
-4.  Seçin **Tamam** yaptığınız değişiklikleri kaydetmek için.  
+4.  Seçin **Tamam** yaptığınız değişiklikleri kaydedin.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [/Execution-Charset (ayarlamak yürütme karakter kümesi)](../../build/reference/execution-charset-set-execution-character-set.md)   
- [/Source-Charset (ayarlamak kaynak karakter kümesi)](../../build/reference/source-charset-set-source-character-set.md)   
+ [/ Execution-Charset (yürütme karakter kümesini Ayarla)](../../build/reference/execution-charset-set-execution-character-set.md)   
+ [/ Source-Charset (kaynak karakter kümesini Ayarla)](../../build/reference/source-charset-set-source-character-set.md)   
  [/validate-charset (Uyumlu karakterler için doğrula)](../../build/reference/validate-charset-validate-for-compatible-characters.md)

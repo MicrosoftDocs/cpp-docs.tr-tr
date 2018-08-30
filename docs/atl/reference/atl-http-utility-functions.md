@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36b0647863076661eb130da1cde694b128f49d47
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 224f4d78aec432a27b2a0258d0d6b3d4a8f2174d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026094"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209514"
 ---
 # <a name="atl-http-utility-functions"></a>ATL HTTP yardımcı işlevleri
 
@@ -27,7 +27,7 @@ Bu işlevler URL'leri işlenmesini destekler.
 |[AtlGetDefaultUrlPort](#atlgetdefaulturlport)|Belirli bir Internet Protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını alır.|  
 |[AtlIsUnsafeUrlChar](#atlisunsafeurlchar)|Bir karakterin bir URL içinde kullanılmak üzere güvenli olup olmadığını belirler.|  
 |[AtlUnescapeUrl](#atlunescapeurl)|Özgün değerlerine karakterleri kaçış karakterleri dönüştürür.|  
-|[RGBToHtml](#rgbtohtml)|Dönüştürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) ilgili renk değerine karşılık gelen HTML metnine değeri.|
+|[RGBToHtml](#rgbtohtml)|Dönüştürür bir [COLORREF](/windows/desktop/gdi/colorref) ilgili renk değerine karşılık gelen HTML metnine değeri.|
 |[SystemTimeToHttpDate](#systemtimetohttpdate)|Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.|
 
 ## <a name="requirements"></a>Gereksinimler  
@@ -69,10 +69,10 @@ inline BOOL AtlCanonicalizeUrl(
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli sürümü gibi davranır [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
+ Geçerli sürümü gibi davranır [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
- [InternetCanonicalizeUrl](http://msdn.microsoft.com/library/windows/desktop/aa384342)
+ [InternetCanonicalizeUrl](/windows/desktop/api/wininet/nf-wininet-internetcanonicalizeurla)
 
  ## <a name="atlcombineurl"></a> AtlCombineUrl
  Temel URL ile göreli bir URL'yi, kurallı tek bir URL'de birleştirmek için bu işlevi çağırın.  
@@ -106,7 +106,7 @@ inline BOOL AtlCombineUrl(
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Geçerli sürümü gibi davranır [InternetCombineUrl](http://msdn.microsoft.com/library/windows/desktop/aa384355) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
+ Geçerli sürümü gibi davranır [InternetCombineUrl](/windows/desktop/api/wininet/nf-wininet-internetcombineurla) ancak WinINet veya Internet Explorer yüklenmesini gerektirmez.  
   
 ## <a name="atlescapeurl"></a> AtlEscapeUrl
  Tüm güvenli olmayan karakterleri kaçış sıralarına dönüştürmek için bu işlevi çağırın.  
@@ -214,7 +214,7 @@ inline BOOL AtlUnescapeUrl(
  Tarafından uygulanan dönüştürme işlemi tersine çevirir [AtlEscapeUrl](#atlescapeurl).  
   
 ## <a name="rgbtohtml"></a> RGBToHtml
-Dönüştürür bir [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) ilgili renk değerine karşılık gelen HTML metnine değeri.  
+Dönüştürür bir [COLORREF](/windows/desktop/gdi/colorref) ilgili renk değerine karşılık gelen HTML metnine değeri.  
   
 ```  
 bool inline RGBToHtml(  

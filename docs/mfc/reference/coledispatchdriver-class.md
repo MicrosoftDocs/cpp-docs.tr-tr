@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61e4a36db71809dab5603211dce91fad3eedd082
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e25684e0adcace0510f74bdc98968ef52ad6d797
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465381"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209574"
 ---
 # <a name="coledispatchdriver-class"></a>COleDispatchDriver sınıfı
 OLE Otomasyonu nesnesi etkin tarafını uygular.  
@@ -283,7 +283,7 @@ void AFX_CDECL InvokeHelper(
   
  Bu işlev parametreleri VARIANTARG değerlerine dönüştürür ve ardından çağırır [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke) yöntemi. Çağrı `Invoke` başarısız olursa, bu işlev bir özel durum oluşturur. ' % S'SCODE (durum kodu) tarafından döndürülen, `IDispatch::Invoke` DISP_E_EXCEPTION, olan bu işlevin bir [COleException](../../mfc/reference/coleexception-class.md) nesne; Aksi takdirde oluşturur bir [COleDispatchException](../../mfc/reference/coledispatchexception-class.md).  
   
- Daha fazla bilgi için [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), ve [yapısı, COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK içinde.  
+ Daha fazla bilgi için [VARIANTARG](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant), [IDispatch arabirimi uygulama](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface), [IDispatch::Invoke](/previous-versions/windows/desktop/api/oaidl/nf-oaidl-idispatch-invoke), ve [yapısı, COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK içinde.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [COleDispatchDriver::CreateDispatch](#createdispatch).  
@@ -298,7 +298,7 @@ BOOL m_bAutoRelease;
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `m_bAutoRelease` oluşturucuda TRUE olarak ayarlanır.  
   
- COM nesneleri serbest bırakma ile ilgili daha fazla bilgi için bkz: [uygulama başvuru sayımı](http://msdn.microsoft.com/library/windows/desktop/ms693431) ve [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) Windows SDK.  
+ COM nesneleri serbest bırakma ile ilgili daha fazla bilgi için bkz: [uygulama başvuru sayımı](/windows/desktop/com/implementing-reference-counting) ve [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#9](../../mfc/codesnippet/cpp/coledispatchdriver-class_5.cpp)]  

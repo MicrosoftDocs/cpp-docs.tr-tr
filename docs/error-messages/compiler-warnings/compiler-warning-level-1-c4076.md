@@ -16,22 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cfa28469e099dbf2b6bd43213073c304d0b2894
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 928b0a78c09773e334c1a291877b74304dab66ec
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275479"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198484"
 ---
 # <a name="compiler-warning-level-1-c4076"></a>Derleyici Uyarısı (düzey 1) C4076
-'typemod': 'typename' türü ile kullanılamaz  
-  
- Bir tür değiştiricisi olup **imzalı** veya `unsigned`, işlemesinin türü ile kullanılamaz. ***typemod*** göz ardı edilir.  
+
+> '*tür değiştiricisi*': tür ile kullanılabilir değil '*typename*'
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir tür değiştiricisi olup **imzalı** veya **işaretsiz**, tamsayı olmayan türü ile kullanılamaz. *tür değiştiricisi* göz ardı edilir.
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4076 oluşturur:  
-  
-```  
+
+Aşağıdaki örnek, C4076 oluşturur; Bunu düzeltmek için kaldırma **işaretsiz** tür değiştiricisi:
+
+```cpp
 // C4076.cpp  
 // compile with: /W1 /LD  
 unsigned double x;   // C4076  

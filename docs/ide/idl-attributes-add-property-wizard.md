@@ -14,41 +14,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77931296d8d33337c4e630b7327a1ec8fd0a458f
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 12fee7eadecbd81e3c4e410d254de50bcf3a9ac0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340196"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208832"
 ---
 # <a name="idl-attributes-add-property-wizard"></a>IDL Öznitelikleri, Özellik Ekleme Sihirbazı
-Özelliği arabirimi tanım dili (IDL) ayarlarını belirtmek için bu sayfanın Özellik Ekleme Sihirbazı'nı kullanın.  
+Bir özellik için arabirim tanımlama dili (IDL) ayarlarını belirtmek için bu sayfanın bir özellik Ekleme Sihirbazı'nı kullanın.  
   
  **id**  
- Özelliği tanımlayan sayısal Kimliğini ayarlar. Bu seçenek, özel arabirimleri özellikleri için kullanılamaz. Bkz: [kimliği](http://msdn.microsoft.com/library/windows/desktop/aa367040) içinde *MIDL başvuru*.  
+ Özelliği tanımlayan sayısal bir kimlik ayarlar. Bu seçenek, özel arabirimler özellikleri için kullanılamaz. Bkz: [kimliği](/windows/desktop/Midl/id) içinde *MIDL başvuru*.  
   
  **helpcontext**  
- Yardım dosyasında bu özellik hakkında kullanıcı görünümü bilgi sağlayan bir içerik Kimliğini belirtir. Bkz: [helpcontext](http://msdn.microsoft.com/library/windows/desktop/aa366851) içinde *MIDL başvuru*.  
+ Kullanıcı Yardım dosyasında bu özellik hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir. Bkz: [helpcontext](/windows/desktop/Midl/helpcontext) içinde *MIDL başvuru*.  
   
  **helpstring**  
- Uygulandığı öğe tanımlamak için kullanılan bir karakter dizesini belirtir. Varsayılan olarak, bunu ayarlamak "özelliği *özellik adı*." Bkz: [helpstring](http://msdn.microsoft.com/library/windows/desktop/aa366856) içinde *MIDL başvuru*.  
+ Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir. Varsayılan olarak ayarlanmış "özelliği *özellik adı*." Bkz: [helpstring](/windows/desktop/Midl/helpstring) içinde *MIDL başvuru*.  
   
-## <a name="other-options"></a>Diğer seçenekleri  
- Tüm özellik türleri için tüm seçenekleri kullanılabilir.  
+## <a name="other-options"></a>Diğer Seçenekler  
+ Tüm seçenekler için tüm özellik türleri kullanılabilir değildir.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  
-|**bindable**|Özellik veri bağlama desteklediğini belirtir. Bkz: [bağlanabilirse](http://msdn.microsoft.com/library/windows/desktop/aa366738) içinde *MIDL başvuru*. Özelliğin stok uygulaması, bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|  
-|**defaultbind**|Bu en iyi bağlanabilir, tek özellik temsil ettiğini gösterir nesne. Bkz: [defaultbind](http://msdn.microsoft.com/library/windows/desktop/aa366790) içinde *MIDL başvuru*.|  
-|**displaybind**|Bu özellik kullanıcıya bağlanabilir olarak görüntüleneceğini gösterir. Bkz: [displaybind](http://msdn.microsoft.com/library/windows/desktop/aa366804) içinde *MIDL başvuru*.|  
-|**immediatebind**|Veritabanı, bu özelliğe bir veri bağlama nesnesinin tüm değişikliklerini hemen bildirilecek gösterir. Bkz: [immediatebind](http://msdn.microsoft.com/library/windows/desktop/aa367045) içinde *MIDL başvuru*.|  
-|**defaultcollelem**|Özelliğin varsayılan koleksiyonun bir öğesi için bir erişimci işlevi olduğunu gösterir. Bkz: [defaultcollelem](http://msdn.microsoft.com/library/windows/desktop/aa366792) içinde *MIDL başvuru*.|  
-|**nonbrowsable**|Özellikler tarayıcıda görüntülenmemelidir bir arabirim veya görüntüleme arabirimi üye etiketler. Bkz: [nonbrowsable](http://msdn.microsoft.com/library/windows/desktop/aa367117) içinde *MIDL başvuru*.|  
-|**requestedit**|Özellik desteklediğini gösterir **OnRequestEdit** bildirim bakın [requestedit](http://msdn.microsoft.com/library/windows/desktop/aa367155) içinde *MIDL başvuru*. Özelliğin stok uygulaması, bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|  
-|**Kaynak**|Bir özellik üyesi olayları kaynağı olduğunu gösterir. Bkz: [kaynak](http://msdn.microsoft.com/library/windows/desktop/aa367166) içinde *MIDL başvuru*.|  
-|**hidden**|Özelliği var, ancak kullanıcı odaklı bir tarayıcıda görüntülenmemelidir olduğunu gösterir. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) içinde *MIDL başvuru*.|  
-|**restricted**|Özelliği rasgele çağrılamıyor belirtir. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) içinde *MIDL başvuru*.|  
-|`local`|MIDL derleyici özelliği uzak olmadığını belirtir. Bkz: [yerel](http://msdn.microsoft.com/library/windows/desktop/aa367071) içinde *MIDL başvuru*.|  
+|**bindable**|Özelliğin veri bağlamayı desteklediğini belirtir. Bkz: [bağlanabilir](/windows/desktop/Midl/bindable) içinde *MIDL başvuru*. Özelliğin stok uygulaması, bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|  
+|**defaultbind**|Bunun tek ve bağlanabilir özelliği en iyi temsil ettiğini gösteren nesne. Bkz: [defaultbind](/windows/desktop/Midl/defaultbind) içinde *MIDL başvuru*.|  
+|**displaybind**|Bu özellik kullanıcıya bağlanabilir olarak görüntülenmesi gerektiğini gösterir. Bkz: [displaybind](/windows/desktop/Midl/displaybind) içinde *MIDL başvuru*.|  
+|**immediatebind**|Veritabanı bu özellik bir veri bağlama nesnesinin yapılan tüm değişikliklerin hemen bildirileceğini belirtir. Bkz: [immediatebind](/windows/desktop/Midl/immediatebind) içinde *MIDL başvuru*.|  
+|**defaultcollelem**|Özelliğin varsayılan koleksiyonun bir öğesi için bir erişimci işlevi gösterir. Bkz: [defaultcollelem](/windows/desktop/Midl/defaultcollelem) içinde *MIDL başvuru*.|  
+|**nonbrowsable**|Özellikler tarayıcısında görüntülenmemelidir bir arabirim veya dispinterface üye etiketler. Bkz: [nonbrowsable](/windows/desktop/Midl/nonbrowsable) içinde *MIDL başvuru*.|  
+|**requestedit**|Özelliğin desteklediğini belirtir **OnRequestEdit** bildirim bakın [requestedit](/windows/desktop/Midl/requestedit) içinde *MIDL başvuru*. Özelliğin stok uygulaması, bu seçenek varsayılan olarak ayarlanır ve değiştirilemez.|  
+|**Kaynak**|Üye özelliğinin bir olay kaynağı olduğunu gösterir. Bkz: [kaynak](/windows/desktop/Midl/source) içinde *MIDL başvuru*.|  
+|**hidden**|Özelliği var ancak kullanıcıya dayalı tarayıcıda görüntülenmemesi gerektiğini belirtir. Bkz: [gizli](/windows/desktop/Midl/hidden) içinde *MIDL başvuru*.|  
+|**restricted**|Özellik rasgele çağrılamaz belirtir. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) içinde *MIDL başvuru*.|  
+|`local`|MIDL derleyicisine özelliği uzak olmadığını belirtir. Bkz: [yerel](/windows/desktop/Midl/local) içinde *MIDL başvuru*.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik ekleme](../ide/adding-a-property-visual-cpp.md)   

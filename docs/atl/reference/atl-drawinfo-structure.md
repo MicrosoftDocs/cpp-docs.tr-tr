@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa45822d51d704022e773f6c8220db34b010a805
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 76f21f93bbd8386bbf0b4b63f3cf7c8b34057145
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210663"
 ---
 # <a name="atldrawinfo-structure"></a>Atl_drawınfo yapısı
 Bir yazıcı, meta dosyası ya da ActiveX denetimi gibi çeşitli hedeflere işleme için kullanılan bilgileri içerir.  
@@ -53,13 +53,13 @@ struct ATL_DRAWINFO {
  Yapının bayt cinsinden boyutu.  
   
  `dwDrawAspect`  
- Nasıl gösterilemeyecek kadar hedef olduğunu belirtir. Gösterimleri, içerik, simge, küçük resim veya yazdırılan belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](http://msdn.microsoft.com/library/windows/desktop/ms690318) ve [DVASPECT2](http://msdn.microsoft.com/library/windows/desktop/ms688644).  
+ Nasıl gösterilemeyecek kadar hedef olduğunu belirtir. Gösterimleri, içerik, simge, küçük resim veya yazdırılan belge içerebilir. Olası değerler listesi için bkz. [DVASPECT](/windows/desktop/api/wtypes/ne-wtypes-tagdvaspect) ve [DVASPECT2](/windows/desktop/api/ocidl/ne-ocidl-tagdvaspect2).  
   
  `lindex`  
  Çizim işlemi için hedef kısmı. Değerine bağlı olarak yorumlanması değişir `dwDrawAspect` üyesi.  
   
  `ptd`  
- İşaretçi bir [DVTARGETDEVICE](http://msdn.microsoft.com/library/windows/desktop/ms686613) belirtilen boyut bağlı olarak çizim iyileştirmelerini sağlayan yapısı. Yeni nesneleri ve en iyi duruma getirilmiş çizim arabirimleri destekleyen kapsayıcılar bu üyeyi de destekleyip desteklemediğini unutmayın. Eski nesneler ve her zaman en iyi duruma getirilmiş çizim arabirimleri desteklemeyen kapsayıcıları bu üye için NULL belirtin.  
+ İşaretçi bir [DVTARGETDEVICE](/windows/desktop/api/objidl/ns-objidl-tagdvtargetdevice) belirtilen boyut bağlı olarak çizim iyileştirmelerini sağlayan yapısı. Yeni nesneleri ve en iyi duruma getirilmiş çizim arabirimleri destekleyen kapsayıcılar bu üyeyi de destekleyip desteklemediğini unutmayın. Eski nesneler ve her zaman en iyi duruma getirilmiş çizim arabirimleri desteklemeyen kapsayıcıları bu üye için NULL belirtin.  
   
  `hicTargetDev`  
  Hedef cihaz bağlamının bilgi tarafından işaret edilen `ptd` içinden nesne cihaz ölçümleri ayıklayın ve cihazın özelliklerini test edebilirsiniz. Varsa `ptd` null, nesne değeri sayılmalıdır `hicTargetDev` üyesi.  
@@ -68,10 +68,10 @@ struct ATL_DRAWINFO {
  Cihaz bağlamı üretileceği çizin. Penceresiz bir nesne için `hdcDraw` üyesiyse `MM_TEXT` pencerenin istemci koordinatları eşleşen mantıksal koordinatları ile eşleme modu. Ayrıca, cihaz bağlam normalde geçirilen aynı duruma olmalıdır bir `WM_PAINT` ileti.  
   
  `prcBounds`  
- İşaretçi bir [RECTL](http://msdn.microsoft.com/library/windows/desktop/dd162907) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.  
+ İşaretçi bir [RECTL](https://msdn.microsoft.com/library/windows/desktop/dd162907) dikdörtgen belirterek yapısı `hdcDraw` ve nesne çizileceğini. Bu üye, konumlandırma ve nesnenin uzatma denetler. Bu üye penceresiz yerinde etkin nesne çizmek için NULL olmalıdır. Diğer her durumda, NULL geçerli bir değer değil ve neden bir `E_INVALIDARG` hata kodu. Kapsayıcı penceresiz bir nesne için bir NULL olmayan değer geçerse, nesne dikdörtgen ve belirtilen bir cihaz bağlamı içinde istenen boyut işlemesi gerekir. Bir kapsayıcı bir penceresiz nesneden nesnesinin ikinci, etkin olmayan görünüm işlemek için veya nesneyi yazdırmak için bu talep edebilir.  
   
  `prcWBounds`  
- Varsa `hdcDraw` bir meta dosyası cihaz bağlamı (bkz [GetDeviceCaps](http://msdn.microsoft.com/library/windows/desktop/dd144877) Windows SDK), bu işaretçisidir bir `RECTL` yapısı temel alınan meta sınırlayıcı belirtme. Dikdörtgen yapı penceresi başlangıç ve pencere uzantı içeriyor. Bu değerler, meta çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` bu iç içe geçmiş `prcWBounds` dikdörtgen; aynı koordinat alanında oldukları.  
+ Varsa `hdcDraw` bir meta dosyası cihaz bağlamı (bkz [GetDeviceCaps](/windows/desktop/api/wingdi/nf-wingdi-getdevicecaps) Windows SDK), bu işaretçisidir bir `RECTL` yapısı temel alınan meta sınırlayıcı belirtme. Dikdörtgen yapı penceresi başlangıç ve pencere uzantı içeriyor. Bu değerler, meta çizmek için yararlıdır. Tarafından belirtilen dikdörtgen `prcBounds` bu iç içe geçmiş `prcWBounds` dikdörtgen; aynı koordinat alanında oldukları.  
   
  `bOptimize`  
  Çizim denetimi olacak şekilde iyileştirilmiştir, aksi durumda 0 ise sıfır olmayan. Çizim en iyi duruma getirilmiş işiniz bittiğinde durumu cihaz bağlamı otomatik olarak geri yüklenir işleme.  
@@ -97,7 +97,7 @@ struct ATL_DRAWINFO {
  **Başlık:** atlctl.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
-  [Sınıflar ve yapılar](../../atl/reference/atl-classes.md) [IViewObject::Draw](http://msdn.microsoft.com/library/windows/desktop/ms688655)   
+  [Sınıflar ve yapılar](../../atl/reference/atl-classes.md) [IViewObject::Draw](/windows/desktop/api/oleidl/nf-oleidl-iviewobject-draw)   
  [CComControlBase::OnDrawAdvanced](../../atl/reference/ccomcontrolbase-class.md#ondrawadvanced)
 
 

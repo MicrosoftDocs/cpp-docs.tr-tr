@@ -17,27 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d54984cdc1dc7897fb4f5d1d9680c6a2b95a787d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9679fe46712220cd38cfb43c57b2f3c81deafde4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347171"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213685"
 ---
 # <a name="dragging-images-from-an-image-list"></a>Görüntü Listesinden Görüntü Sürükleme
-[Cımagelist](../mfc/reference/cimagelist-class.md) ekranda görüntü sürükleme işlevler içerir. Sürükleme işlevleri görüntüyü sorunsuz, renk ve imlecin bulunduğu tüm yanıp olmadan taşıyın. Maskelenmiş ve maskelenmemiş görüntüleri sürüklenebilir.  
+[Cımagelist](../mfc/reference/cimagelist-class.md) ekranda bir görüntü sürükleme işlevleri içerir. Sürükleme işlevleri görüntünün sorunsuz, renk ve imlecin bulunduğu herhangi bir yanıp olmadan taşıyın. Maskeli ve maskelenmemiş görüntüleri sürüklenebilir.  
   
- [BeginDrag başarıyla](../mfc/reference/cimagelist-class.md#begindrag) üye işlevi bir sürükleme işlemi başlar. Parametreleri sürüklemek için resim ve görüntü içindeki etkin nokta konumunu dizini içerir. Etkin nokta görüntünün tam ekran konumu olarak sürükleme işlevleri tanıması tek bir piksel ' dir. Genellikle, bir uygulama etkin nokta ayarlar, böylece fare imlecini, etkin nokta ile örtüşür. [DragMove](../mfc/reference/cimagelist-class.md#dragmove) üye işlevi görüntüyü yeni bir konuma taşır.  
+ [BeginDrag başarıyla](../mfc/reference/cimagelist-class.md#begindrag) üye işlevi bir sürükleme işlemi başlar. Parametreleri resme sürükleyin ve etkin nokta resim içindeki konumunu dizinini içerir. Etkin nokta sürükleyerek işlevleri görüntünün tam ekran konumunu tanıyacak tek bir piksel ' dir. Genellikle, uygulamanın etkin nokta ayarlar, böylece fare işaretçisinin etkin nokta ile örtüşür. [DragMove](../mfc/reference/cimagelist-class.md#dragmove) üye işlevi, görüntünün yeni bir konuma taşır.  
   
- [DragEnter](../mfc/reference/cimagelist-class.md#dragenter) üye işlevi bir pencerede Sürükle görüntünün ilk konumunu ayarlar ve konumunda resim çizer. Parametreleri, görüntü ve penceresi içinde ilk konum koordinatlarını belirten noktası çizmek penceresinde gösteren bir işaretçi içerir. Koordinatlar pencerenin sol üst köşede, istemci alanını göre belirlenir. Aynı tüm koordinatları parametre olarak geçirmesine görüntü sürükleme işlevleri için geçerlidir. Başka bir deyişle, sınır, başlık çubuğu ve menü çubuğunda, gibi pencere öğeleri genişlikleri koordinatları belirtirken dengelemek gerekir. Belirtirseniz bir **NULL** çağrılırken bir pencere tanıtıcının `DragEnter`, masaüstü pencere ile ilişkili aygıt bağlamda resim sürükleme işlevleri çizme ve koordinatlar ekranın sol üst köşesinde göre belirlenir.  
+ [DragEnter](../mfc/reference/cimagelist-class.md#dragenter) üye işlevi bir pencere içinde görüntüyü Sürükle ilk konumunu ayarlar ve konumda resim çizer. Parametreleri, görüntü ve koordinatlarını penceresi bölgesindeki ilk konumunu belirten bir noktası çizmek penceresine bir işaretçi içerir. Pencerenin sol üst köşesindeki, istemci alanına göre koordinatlar belirlenir. Aynı tüm koordinatları parametre olarak alan görüntü sürükleme işlevleri için geçerlidir. Başka bir deyişle, kenarlık, başlık çubuğu ve menü çubuğu gibi Pencere öğelerinin genişlikleri koordinatları belirtirken dengelemek gerekir. Belirtirseniz bir **NULL** çağırırken pencere tanıtıcısı `DragEnter`sürükleyerek işlevleri masaüstü pencere ile ilgili cihaz bağlamı görüntü çizme ve ekranın sol üst köşesinde göreli koordinatları.  
   
- `DragEnter` diğer tüm güncelleştirmeleri verilen penceresine sürükleme işlemi sırasında kilitler. Sürükle ve bırak işlemi, hedef vurgulama gibi bir sürükleme işlemi sırasında herhangi bir çizim yapmanız gerekirse, geçici olarak sürüklenen görüntü kullanarak gizleyebilirsiniz [DragLeave](../mfc/reference/cimagelist-class.md#dragleave) üye işlevi. Aynı zamanda [DragShowNoLock](../mfc/reference/cimagelist-class.md#dragshownolock) üye işlevi.  
+ `DragEnter` sürükleme işlemi sırasında belirtilen pencereye diğer tüm güncelleştirmeleri kilitler. Bir Sürükle ve bırak işleminin hedef vurgulama gibi bir sürükleme işlemi sırasında herhangi bir çizim yapmanız gerekiyorsa, geçici olarak sürüklenen görüntüyü kullanarak gizleyebilirsiniz [DragLeave](../mfc/reference/cimagelist-class.md#dragleave) üye işlevi. Ayrıca [DragShowNoLock](../mfc/reference/cimagelist-class.md#dragshownolock) üye işlevi.  
   
- Çağrı [EndDrag](../mfc/reference/cimagelist-class.md#enddrag) , bitirdiğinizde görüntü sürükleme.  
+ Çağrı [EndDrag](../mfc/reference/cimagelist-class.md#enddrag) bitirdiğinizde görüntüyü sürükleyerek.  
   
- [SetDragCursorImage](../mfc/reference/cimagelist-class.md#setdragcursorimage) üye işlevi, geçerli Sürükle görüntüsüyle verilen görüntünün (genellikle bir fare imleci görüntüsü) birleştirerek yeni bir Sürükle görüntüsü oluşturur. Sürükleme işlevleri sürükleme işlemi sırasında yeni görüntüyü kullandığından, Windows'un kullanması gereken [sayı değil geçiş](http://msdn.microsoft.com/library/windows/desktop/ms648396) çağrıldıktan sonra gerçek fare imlecini gizlemek için işlevi `SetDragCursorImage`. Aksi takdirde, sistem iki fare imleçleri sürükleme işlemi boyunca görüntülenebilir.  
+ [SetDragCursorImage](../mfc/reference/cimagelist-class.md#setdragcursorimage) üye işlevi, belirtilen görüntünün (genellikle bir fare imleci görüntüsü) ile geçerli görüntüyü Sürükle birleştirerek yeni bir görüntüyü Sürükle oluşturur. Sürükleme işlevleri bir sürükleme işlemi sırasında yeni görüntüyü kullandığından, Windows kullanması gereken [sayı değil geçiş](/windows/desktop/api/winuser/nf-winuser-showcursor) işlevi çağırdıktan sonra gerçek fare imleci gizlemek için `SetDragCursorImage`. Aksi takdirde, sistem sürükleme işlemi süresince iki fare imleçleri sahip görünebilir.  
   
- Bir uygulama çağırdığında `BeginDrag`, sistem geçici, iç resim listesi oluşturur ve belirtilen kopyaları iç listesine görüntü sürükleyin. Kullanarak geçici Sürükle resim listesi için bir işaretçi alabilirsiniz [GetDragImage](../mfc/reference/cimagelist-class.md#getdragimage) üye işlevi. İşlevi de geçerli Sürükle konumu ve sürükleme görüntü sürükleme konumuna göre uzaklığı alır.  
+ Bir uygulama çağırdığında `BeginDrag`, sistemin geçici, iç görüntü listesi oluşturur ve kopya belirtilen görüntü iç listesine sürükleyin. Geçici Sürükle resim listesi için bir işaretçi kullanarak alabilirsiniz [GetDragImage](../mfc/reference/cimagelist-class.md#getdragimage) üye işlevi. İşlev ayrıca geçerli Sürükle konumu ve görüntüyü Sürükle Sürükle konumuna göre uzaklığı alır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cımagelist kullanma](../mfc/using-cimagelist.md)   

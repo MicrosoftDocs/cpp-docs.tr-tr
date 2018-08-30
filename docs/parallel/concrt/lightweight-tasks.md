@@ -14,27 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d602f83cfe2da6bc1506e07720d3ef021ebce04a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8548412436be6e505c0ea08a2991e6948496f592
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33687419"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210290"
 ---
 # <a name="lightweight-tasks"></a>Basit Görevler
-Bu belge rolü eşzamanlılık çalışma zamanındaki Basit görevler açıklanmaktadır. A *basit görev* doğrudan zamanlama bir görevdir bir `concurrency::Scheduler` veya `concurrency::ScheduleGroup` nesnesi. Windows API için sağladığınız işlevi basit bir görev benzer [CreateThread](http://msdn.microsoft.com/library/windows/desktop/ms682453) işlevi. Bu nedenle, Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için var olan kodu uyum olduğunda yararlıdır. Eşzamanlılık Çalışma Basit görevler zaman uyumsuz aracılar zamanlamak ve zaman uyumsuz ileti blokları arasındaki iletileri göndermek için kullanır.  
+Bu belge, eşzamanlılık çalışma zamanındaki Basit görevler rolünü açıklar. A *basit görev* doğrudan zamanlama bir görev bir `concurrency::Scheduler` veya `concurrency::ScheduleGroup` nesne. Windows API için sağladığınız işlevi bir basit görev benzer [CreateThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-createthread) işlevi. Bu nedenle, Basit görevler eşzamanlılık çalışma zamanı zamanlama işlevselliğini kullanmak için mevcut kodu uyum olduğunda yararlıdır. Eşzamanlılık çalışma zamanının kendisi Basit görevler zaman uyumsuz aracılar zamanlayın ve arasında zaman uyumsuz ileti blokları ileti göndermek için kullanır.  
   
 > [!TIP]
->  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, uygulamanızda oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ince ayar yardımcı olduğundan, ile başlamanızı öneririz [paralel Desen kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Eşzamanlılık Çalışma zamanı için yeni.  
+>  Eşzamanlılık Çalışma zamanı varsayılan Zamanlayıcı sağlar ve bu nedenle, bir uygulama oluşturmak için gerekli değildir. Görev Zamanlayıcısı'nı, uygulamalarınızın performansını ayarlamanıza yardımcı olduğundan, ile başlamanızı öneririz [paralel desenler kitaplığı (PPL)](../../parallel/concrt/parallel-patterns-library-ppl.md) veya [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) kullanıyorsanız Yeni eşzamanlılık çalışma zamanı.  
   
- Basit görevler zaman uyumsuz aracılar ve görev grupları daha az yüke taşır. Örneğin, çalışma zamanı, basit bir görev tamamlandığında bildirin değil. Ayrıca, çalışma zamanı catch ya da basit bir görevden oluşturulan özel durumları işleme. Özel durum işleme ve Basit görevler hakkında daha fazla bilgi için bkz: [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
+ Basit görevler zaman uyumsuz aracılar ve görev gruplarını'den daha az ek yük getirir. Örneğin, çalışma zamanı, basit bir görev tamamlandığında bildirmekten değil. Ayrıca, çalışma zamanı catch veya desteklemez basit bir görevden oluşturulan özel durumları işleyin. Özel durum işleme ve Basit görevler hakkında daha fazla bilgi için bkz. [özel durum işleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md).  
   
- Görevlerin çoğunda, görev grupları gibi daha sağlam işlevselliği kullanmak ve bunlar daha kolay izin çünkü paralel algoritmalar karmaşık görevleri daha temel parçalara bölün. öneririz. Görev grupları hakkında daha fazla bilgi için bkz: [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Paralel algoritmalar hakkında daha fazla bilgi için bkz: [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).  
+ Çoğu görevi için görev grupları gibi daha sağlam işlevselliği kullanmak ve bunlar daha kolay sağlar çünkü paralel algoritmalar karmaşık görevleri daha temel parçalara bölün. öneririz. Görev grupları hakkında daha fazla bilgi için bkz. [görev Paralelliği](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Paralel algoritmalar hakkında daha fazla bilgi için bkz. [paralel algoritmalar](../../parallel/concrt/parallel-algorithms.md).  
   
- Basit bir görev oluşturmak için çağrı [concurrency::ScheduleGroup::ScheduleTask](reference/schedulegroup-class.md#scheduletask), [concurrency::CurrentScheduler::ScheduleTask](reference/currentscheduler-class.md#scheduletask), veya [concurrency::Scheduler::ScheduleTask ](reference/scheduler-class.md#scheduletask) yöntemi. Bir basit bir görevi tamamlamak için beklenecek kapatıldı veya eşitleme mekanizması gibi kullanmak için üst Zamanlayıcı için bekleyin bir [concurrency::event](../../parallel/concrt/reference/event-class.md) nesnesi.  
+ Basit bir görev oluşturmak için arama [concurrency::ScheduleGroup::ScheduleTask](reference/schedulegroup-class.md#scheduletask), [concurrency::CurrentScheduler::ScheduleTask](reference/currentscheduler-class.md#scheduletask), veya [concurrency::Scheduler::ScheduleTask ](reference/scheduler-class.md#scheduletask) yöntemi. Bir hafif bir görevi tamamlamak için beklenecek kapatın veya eşitleme mekanizması gibi üst Zamanlayıcı için bekleyin. bir [concurrency::event](../../parallel/concrt/reference/event-class.md) nesne.  
   
 ## <a name="example"></a>Örnek  
- Mevcut kodu hafif bir görev kullanmaya uyarlama yapmayı gösteren bir örnek için bkz [izlenecek yol: Basit görevler kullanmak için var olan kodu uyarlama](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).  
+ Basit bir görev kullanmak için mevcut kodu uyum yapmayı gösteren bir örnek için bkz: [izlenecek yol: uyarlama mevcut kodu hafif görevleri kullanmak için](../../parallel/concrt/walkthrough-adapting-existing-code-to-use-lightweight-tasks.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Görev Zamanlayıcısı](../../parallel/concrt/task-scheduler-concurrency-runtime.md)   

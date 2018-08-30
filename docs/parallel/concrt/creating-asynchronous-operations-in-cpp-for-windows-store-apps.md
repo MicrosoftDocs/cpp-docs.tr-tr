@@ -15,17 +15,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3afe558ad5d17c7c9741a1c211bb838c615c8542
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: b83531c1452174403f3ead3c5bd3d1b59b0c7d4d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464866"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213455"
 ---
 # <a name="creating-asynchronous-operations-in-c-for-uwp-apps"></a>UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma
 Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir evrensel Windows çalışma zamanı (UWP) uygulaması oluşturmak için görev sınıfının kullandığınızda akılda tutulması gereken önemli noktaları bazılarını açıklar.  
   
- Uygulamalar kullanıcı girişine yanıt verebilir durumda kalmasını sağladığından zaman uyumsuz programlama kullanımını Windows çalışma zamanı uygulama modeli temel bir bileşenidir. UI iş parçacığını engellemeden uzun süre çalışan bir görev başlayabilir ve daha sonra görev sonuçları alabilir. Görevleri iptal etme ve görevler arka planda çalışmaya devam eden bildirimlerin. Belge [C++ zaman uyumsuz programlamada](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) UWP uygulamaları oluşturmak için Visual C++ içinde bulunan zaman uyumsuz desene genel bir bakış sağlar. Bu belge, hem kullanmak ve Windows çalışma zamanı zaman uyumsuz işlemler zincirleri oluşturmak öğretir. Bu bölümde, başka bir Windows çalışma zamanı bileşeni tarafından kullanılabilen zaman uyumsuz işlemler oluşturmak için ppltasks.h türleri kullanmayı açıklar ve ne zaman uyumsuz iş denetlemek nasıl yürütülür. Ayrıca okuma göz önünde bulundurun [zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](http://msdn.microsoft.com/library/windows/apps/jj160321.aspx) nasıl görev sınıfı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.  
+ Uygulamalar kullanıcı girişine yanıt verebilir durumda kalmasını sağladığından zaman uyumsuz programlama kullanımını Windows çalışma zamanı uygulama modeli temel bir bileşenidir. UI iş parçacığını engellemeden uzun süre çalışan bir görev başlayabilir ve daha sonra görev sonuçları alabilir. Görevleri iptal etme ve görevler arka planda çalışmaya devam eden bildirimlerin. Belge [C++ zaman uyumsuz programlamada](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps) UWP uygulamaları oluşturmak için Visual C++ içinde bulunan zaman uyumsuz desene genel bir bakış sağlar. Bu belge, hem kullanmak ve Windows çalışma zamanı zaman uyumsuz işlemler zincirleri oluşturmak öğretir. Bu bölümde, başka bir Windows çalışma zamanı bileşeni tarafından kullanılabilen zaman uyumsuz işlemler oluşturmak için ppltasks.h türleri kullanmayı açıklar ve ne zaman uyumsuz iş denetlemek nasıl yürütülür. Ayrıca okuma göz önünde bulundurun [zaman uyumsuz programlama desenleri ve Hilo (C++ ve XAML kullanan Windows Store apps) içinde ipuçları](https://msdn.microsoft.com/library/windows/apps/jj160321.aspx) nasıl görev sınıfı zaman uyumsuz işlemler Hilo, C++ ve XAML kullanarak bir Windows çalışma zamanı uygulaması uygulamak için kullandığımız öğrenin.  
   
 > [!NOTE]
 >  Kullanabileceğiniz [paralel desenler Kitaplığı](../../parallel/concrt/parallel-patterns-library-ppl.md) (PPL) ve [zaman uyumsuz aracılar Kitaplığı](../../parallel/concrt/asynchronous-agents-library.md) bir UWP uygulamasında. Ancak, Görev Zamanlayıcısı'nı veya Kaynak Yöneticisi'ni kullanamazsınız. Bu belgede, yalnızca bir UWP uygulaması ve bir masaüstü uygulaması için kullanılabilen PPL sağlayan ek özellikleri açıklanmaktadır.  
@@ -61,16 +61,16 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
   
  Windows çalışma zamanı'nı kullanarak, çeşitli programlama dilleri en iyi özelliklerini kullanmak ve bunları tek bir uygulama birleştirebilirsiniz. Örneğin, JavaScript'te oluşturmanıza ve bir C++ bileşeni işlem bakımından yoğun uygulama mantığını gerçekleştirirler. Bu işlem bakımından yoğun işlemleri arka planda gerçekleştirmek için kullanıcı Arabirimi yanıt tutma önemli bir etken yeteneğidir. Çünkü `task` sınıfı için C++ belirli, zaman uyumsuz işlemler (hangi C++ dışındaki dillerde yazılmış olabilir) diğer bileşenlere iletişim kurmak için bir Windows çalışma zamanı arabirimini kullanmanız gerekir. Windows çalışma zamanı zaman uyumsuz işlemleri temsil etmek için kullanabileceğiniz dört arabirimleri sağlar:  
   
- [Iasyncoperation](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)  
+ [Iasyncoperation](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncaction.aspx)  
  Zaman uyumsuz bir eylemi temsil eder.  
   
- [Windows::Foundation:: ıasyncactionwithprogress\<TProgress >](http://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
+ [Windows::Foundation:: ıasyncactionwithprogress\<TProgress >](https://msdn.microsoft.com/library/windows/apps/br206581.aspx)  
  İlerleme durumunu raporlayan zaman uyumsuz bir eylemi temsil eder.  
   
- [Iasyncoperation\<TResult >](http://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
+ [Iasyncoperation\<TResult >](https://msdn.microsoft.com/library/windows/apps/br206598.aspx)  
  Bir sonuç döndüren bir zaman uyumsuz işlemi temsil eder.  
   
- [Windows::Foundation:: ıasyncoperationwithprogress\<TResult, TProgress >](http://msdn.microsoft.com/library/windows/apps/br206594.aspx)  
+ [Windows::Foundation:: ıasyncoperationwithprogress\<TResult, TProgress >](https://msdn.microsoft.com/library/windows/apps/br206594.aspx)  
  Sonuç ve raporların ilerleme durumunu döndüren zaman uyumsuz bir işlemi temsil eder.  
   
  Kavramı bir *eylem* zaman uyumsuz görev değer üretemez anlamına gelir (döndüren bir işlev düşünün `void`). Kavramı bir *işlemi* zaman uyumsuz görev bir değer üreten anlamına gelir. Kavramı *ilerleme* görev ilerleme iletilerini çağırana bildirebilirsiniz anlamına gelir. Her JavaScript, .NET Framework ve Visual C++ örnekleri kullanmak için bu arabirimlerin ABI sınırında oluşturmak için kendi yolunu sağlar. Visual C++ için PPL sağlar [concurrency::create_async](reference/concurrency-namespace-functions.md#create_async) işlevi. Bu işlev, bir Windows çalışma zamanı zaman uyumsuz eylem veya görevi tamamlama belirten işlemi oluşturur. `create_async` İşlevi iş işlevi (genellikle bir lambda ifadesi) alır, dahili olarak oluşturur bir `task` nesne ve dört zaman uyumsuz Windows çalışma zamanı arabirimlerinden birini görev sarar.  
@@ -102,7 +102,7 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
  [!code-cpp[concrt-windowsstore-primes#100](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_1.cpp)]  
   
 ##  <a name="example-component"></a> Örnek: C++ Windows çalışma zamanı bileşeni oluşturma ve bunu C# ' den kullanma  
- Yoğun işlem gücü kullanımlı işlemleri gerçekleştirmek için kullanıcı Arabirimi ve bir C++ Windows çalışma zamanı bileşeni tanımlamak için XAML ve C# kullanan bir uygulamayı göz önünde bulundurun. Bu örnekte, hangi sayılardır asal belirli bir aralıktaki C++ bileşeni hesaplar. Dört Windows çalışma zamanı zaman uyumsuz görev arabirimleri arasındaki farklar göstermek için Visual Studio'da oluşturarak başlayın bir **boş çözüm** ve adlandırma `Primes`. Sonra çözüme eklemek bir **Windows çalışma zamanı bileşeni** proje ve adlandırma `PrimesLibrary`. (Bu örnekte Class1.h Primes.h için yeniden adlandırır) oluşturulan C++ üstbilgi dosyasına aşağıdaki kodu ekleyin. Her `public` yöntemi dört zaman uyumsuz arabirimlerinden birini tanımlar. Dönüş değeri döndüren yöntemler bir [Windows::Foundation::Collections::IVector\<int >](http://msdn.microsoft.com/library/windows/apps/br206631.aspx) nesne. İlerleme raporu yöntemleri `double` tamamladığı toplam iş yüzdesini tanımlayan değerleri.  
+ Yoğun işlem gücü kullanımlı işlemleri gerçekleştirmek için kullanıcı Arabirimi ve bir C++ Windows çalışma zamanı bileşeni tanımlamak için XAML ve C# kullanan bir uygulamayı göz önünde bulundurun. Bu örnekte, hangi sayılardır asal belirli bir aralıktaki C++ bileşeni hesaplar. Dört Windows çalışma zamanı zaman uyumsuz görev arabirimleri arasındaki farklar göstermek için Visual Studio'da oluşturarak başlayın bir **boş çözüm** ve adlandırma `Primes`. Sonra çözüme eklemek bir **Windows çalışma zamanı bileşeni** proje ve adlandırma `PrimesLibrary`. (Bu örnekte Class1.h Primes.h için yeniden adlandırır) oluşturulan C++ üstbilgi dosyasına aşağıdaki kodu ekleyin. Her `public` yöntemi dört zaman uyumsuz arabirimlerinden birini tanımlar. Dönüş değeri döndüren yöntemler bir [Windows::Foundation::Collections::IVector\<int >](https://msdn.microsoft.com/library/windows/apps/br206631.aspx) nesne. İlerleme raporu yöntemleri `double` tamamladığı toplam iş yüzdesini tanımlayan değerleri.  
   
  [!code-cpp[concrt-windowsstore-primes#1](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_2.h)]  
   
@@ -113,7 +113,7 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
   
  [!code-cpp[concrt-windowsstore-primes#2](../../parallel/concrt/codesnippet/cpp/creating-asynchronous-operations-in-cpp-for-windows-store-apps_3.cpp)]  
   
- Her bir yöntemin ilk giriş parametrelerini negatif olmayan emin olmak için doğrulama gerçekleştirir. Giriş değeri negatifse çağırılıyorsa yöntem [Platform::ınvalidargumentexception](http://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Hata işleme daha sonra bu bölümde açıklanmıştır.  
+ Her bir yöntemin ilk giriş parametrelerini negatif olmayan emin olmak için doğrulama gerçekleştirir. Giriş değeri negatifse çağırılıyorsa yöntem [Platform::ınvalidargumentexception](https://msdn.microsoft.com/library/windows/apps/hh755794\(v=vs.110\).aspx). Hata işleme daha sonra bu bölümde açıklanmıştır.  
   
  Bu yöntemler bir UWP uygulamasında kullanmak için Visual C# kullanın **boş uygulama (XAML)** Visual Studio çözümü için ikinci bir proje eklemek için şablon. Bu örnek proje adları `Primes`. Ardından `Primes` projesi, bir başvuru ekleyin `PrimesLibrary` proje.  
   
@@ -127,7 +127,7 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
   
  Bu yöntemleri `async` ve `await` zaman uyumsuz işlemler tamamlandıktan sonra kullanıcı arabirimini güncelleştirmek için anahtar sözcükler. UWP uygulamalarında zaman uyumsuz kodlama hakkında daha fazla bilgi için bkz: [parçacıkları ve zaman uyumsuz programlama](/windows/uwp/threading-async).  
   
- `getPrimesCancellation` Ve `cancelGetPrimes` yöntemleri için birlikte çalışır kullanıcı işlemi iptal etmek etkinleştirin. Ne zaman kullanıcının seçtiği **iptal** düğmesi `cancelGetPrimes` yöntem çağrılarını [Iasyncoperationwithprogress\<TResult, TProgress >:: İptal](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) işlemi iptal etme. Temel alınan zaman uyumsuz işlem yönetir, eşzamanlılık çalışma Windows iptal tamamlandığını iletişim kurmak için çalışma zamanı tarafından yakalandı bir iç özel durum türü oluşturur. İptal etme modeli hakkında daha fazla bilgi için bkz: [iptal](../../parallel/concrt/cancellation-in-the-ppl.md).  
+ `getPrimesCancellation` Ve `cancelGetPrimes` yöntemleri için birlikte çalışır kullanıcı işlemi iptal etmek etkinleştirin. Ne zaman kullanıcının seçtiği **iptal** düğmesi `cancelGetPrimes` yöntem çağrılarını [Iasyncoperationwithprogress\<TResult, TProgress >:: İptal](https://msdn.microsoft.com/library/windows/apps/windows.foundation.iasyncinfo.cancel.aspx) işlemi iptal etme. Temel alınan zaman uyumsuz işlem yönetir, eşzamanlılık çalışma Windows iptal tamamlandığını iletişim kurmak için çalışma zamanı tarafından yakalandı bir iç özel durum türü oluşturur. İptal etme modeli hakkında daha fazla bilgi için bkz: [iptal](../../parallel/concrt/cancellation-in-the-ppl.md).  
   
 > [!IMPORTANT]
 >  İşlemi iptal etti Windows çalışma zamanı için doğru şekilde bildirmek PPL etkinleştirmek için bu iç özel durum türü yakalamayın. Yani, ayrıca tüm yakalamalısınız değil, özel durumlar (`catch (...)`). Tüm catch özel durumları, rethrow Windows çalışma zamanı İptal işlemi tamamlamasını sağlamak için özel durum.  
@@ -136,7 +136,7 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
   
  ![Windows çalışma zamanı Primes uygulama](../../parallel/concrt/media/concrt_windows_primes.png "concrt_windows_primes")  
   
- Kullanan örnekler `create_async` diğer diller tarafından kullanılabilen zaman uyumsuz görevler oluşturmak için bkz [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](http://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).  
+ Kullanan örnekler `create_async` diğer diller tarafından kullanılabilen zaman uyumsuz görevler oluşturmak için bkz [Bing Haritalar seyahat iyileştirici örneğinde C++ kullanarak](https://msdn.microsoft.com/library/windows/apps/hh699891\(v=vs.110\).aspx) ve [PPLileC++'taWindows8zamanuyumsuzişlemleri](http://code.msdn.microsoft.com/windowsapps/windows-8-asynchronous-08009a0d).  
   
 ##  <a name="exethread"></a> Yürütme iş parçacığını denetleme  
  Windows çalışma zamanı iş parçacığı modeli COM kullanır. Bu modelde, nesneleri, eşitleme nasıl işledikleri bağlı olarak farklı apartmanlar içinde barındırılır. İş parçacığı nesneleri, çok iş parçacıklı apartmanda (MTA) barındırılır. Tek bir iş parçacığı tarafından erişilebilir nesneleri, bir tek iş parçacıklı apartmanda (STA) barındırılır.  
@@ -165,7 +165,7 @@ Bu belge Windows iş parçacığı havuzu-tabanlı zaman uyumsuz işlemler bir e
 >  Çağırmayın [CONCURRENCY::Task:: wait](reference/task-class.md#wait) gövdesinde STA'da çalışan bir devamlılık Aksi takdirde, çalışma zamanı oluşturur [concurrency::invalid_operation](../../parallel/concrt/reference/invalid-operation-class.md) çünkü bu yöntem geçerli iş parçacığını engeller ve uygulamanın yanıt veremez duruma gelmesine neden olabilir. Ancak, çağırabilirsiniz [CONCURRENCY::Task:: get](reference/task-class.md#get) görev tabanlı devamlılık içinde öncül görevin sonucunu almak için yöntemi.  
   
 ##  <a name="example-app"></a> Örnek: C++ ve XAML ile bir Windows çalışma zamanı uygulamasında yürütme denetleme  
- Bir dosyayı diskten okuduktan, bu dosyada en yaygın sözcükleri bulur ve daha sonra kullanıcı Arabiriminde sonuçları gösterir bir C++ ve XAML uygulaması göz önünde bulundurun. Bu uygulamayı oluşturmak için Visual Studio'da oluşturarak başlayın bir **boş uygulama (Evrensel Windows)** proje ve adlandırma `CommonWords`. Uygulama bildiriminizi belirtin **belge kitaplığı** Belgeler klasörünü erişim sağlamak için özellik. Ayrıca uygulama bildirimi bildirimler bölümüne metin (.txt) dosya türü ekleyin. Uygulama özellikleri ve bildirimleri hakkında daha fazla bilgi için bkz: [uygulama paketleri ve dağıtım](http://msdn.microsoft.com/library/windows/apps/hh464929.aspx).  
+ Bir dosyayı diskten okuduktan, bu dosyada en yaygın sözcükleri bulur ve daha sonra kullanıcı Arabiriminde sonuçları gösterir bir C++ ve XAML uygulaması göz önünde bulundurun. Bu uygulamayı oluşturmak için Visual Studio'da oluşturarak başlayın bir **boş uygulama (Evrensel Windows)** proje ve adlandırma `CommonWords`. Uygulama bildiriminizi belirtin **belge kitaplığı** Belgeler klasörünü erişim sağlamak için özellik. Ayrıca uygulama bildirimi bildirimler bölümüne metin (.txt) dosya türü ekleyin. Uygulama özellikleri ve bildirimleri hakkında daha fazla bilgi için bkz: [uygulama paketleri ve dağıtım](https://msdn.microsoft.com/library/windows/apps/hh464929.aspx).  
   
  Güncelleştirme `Grid` içerecek şekilde MainPage.xaml öğesinde bir `ProgressRing` öğesi ve bir `TextBlock` öğesi. `ProgressRing` İşleminin devam ettiğini gösterir ve `TextBlock` hesaplamanın sonuçlarını gösterir.  
   

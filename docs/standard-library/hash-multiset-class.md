@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b889a0d9be1942d2d381b0c6a85236c94f4e6ebf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c02db557f877f43f39286856de02d68b87959fee
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965477"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210438"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
@@ -119,11 +119,14 @@ class hash_multiset
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* hash_multiset içinde depolanacak öğe veri türü.
+*Key*<br/>
+ Hash_multiset içinde depolanacak öğe veri türü.
 
-*Nitelikler* bir sınıfın iki işlev nesneleri içeren karşılaştırma türü diğer bir deyişle, bir birli koşul eşleştirme anahtar değerlerinin bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları iki öğenin değerlerini karşılaştırmak için bir ikili koşula işaretsiz tam sayı türünde öğelere `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare` *< anahtar* **daha az ***\<anahtarı >>* varsayılan değerdir.
+*Nitelikler*<br/>
+ İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü diğer bir deyişle bir ikili koşula birli koşul eşleştirme anahtar değerleri öğelerin işaretsiz bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırmak için tamsayı türü `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
 
-*Allocator* hash_multiset'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer: **ayırıcı ***\<Key >.*
+*Ayırıcı*<br/>
+ Hash_multiset'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -145,7 +148,7 @@ Kapsayıcı türünün seçimi genelde uygulamanın gerektirdiği arama ve eklem
 
 Hash_multiset ilişkilendirilebilir kapsayıcı değerleri onların kendi anahtarlarıyla ilişkilendiren koşullar uygulama tarafından karşılandığında olmalıdır. Bir hash_multiset öğelerini birden çok olabilir ve anahtarlar benzersiz olmadıklarından kendi sıralama anahtarları hizmet eder. Bu tür bir yapı modeli, sözcüklerin birden çok defa geçebildiği sıralı bir sözcükler listesindedir. Uygun bir kapsayıcı yapısı bir hash_set olabilirdi sonra sözcüklerin birden çok defa geçmelerine izin yok. Ardından bir hash_map benzersiz tanımlar benzersiz anahtar sözcükler listesine değerler olarak eklendiyse, verileri kapsayacak uygun bir yapı olacaktır. Bunun yerine tanımlar benzersiz değilse, bir hash_multimap kapsayıcı olması.
 
-Hash_multiset türünde bir depolanan karma nitelikler nesnesi çağırarak denetlediği diziyi sıralar [value_compare](#value_compare). Üye işlevini çağırarak depolanan bu nesne erişilebilecek [key_comp](#key_comp). Böyle bir işlev nesnesi aynı sınıfın bir nesnesi olarak davranmalıdır `hash_compare` *< anahtar* **daha az ***\<anahtar >>.* Tüm değerler için özellikle *anahtarı* türü `Key`, çağrı **nitelik**( *anahtarı*) türünde bir değerler dağıtımı verir `size_t`.
+Hash_multiset türünde bir depolanan karma nitelikler nesnesi çağırarak denetlediği diziyi sıralar [value_compare](#value_compare). Üye işlevini çağırarak depolanan bu nesne erişilebilecek [key_comp](#key_comp). Böyle bir işlev nesnesi aynı sınıfın bir nesnesi olarak davranmalıdır `hash_compare<Key, less<Key> >`. Tüm değerler için özellikle *anahtarı* türü `Key`, çağrı `Trait(Key)` türünde bir değerler dağıtımı verir `size_t`.
 
 Genelde, bu sıralamayı oluşturmak için öğelerin yalnızca küçüktür biçiminde karşılaştırılabilir olması gerekir; böylece, herhangi iki öğe belirtildiğinde, eşit oldukları (yani birinin diğerinden daha küçük olmadığı anlamında) veya birinin diğerinden küçük olduğu belirlenebilir. Bu, denk olmayan öğeler arasında bir sıralamaya neden olur. Daha teknik bir not üzerinde, karşılaştırma işlevi standart matematiksel anlamda katı bir zayıf sıralama sevk eden ikili bir koşuldur. Bir ikili koşula *f*( *x*, *y*) iki bağımsız değişken nesnelere sahip bir işlev nesnesi x ve y ve dönüş değeri true veya false. İkili koşul dönüşsüz, ters ve geçişli ve denklik geçişli ise, burada iki nesne sıralama katı zayıf bir hash_multiset üzerinde uygulanan sıralama olduğu x ve y olduğunda denk olarak tanımlanan her ikisi de *f* ( *x*, *y*) ve *f*( *y*, *x*) false. Anahtarlar arasındaki eşitliğinin daha güçlü koşulu bu denkliğin yerini alırsa, sıralama (içindeki tüm öğelerin birbirine göre sıralanması anlamında) toplam haline gelir ve eşleşen anahtarlar birbirinden ayırt edilemez olacaktır.
 
@@ -551,7 +554,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* hash_multiset eşleştirilecek öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1017,7 +1021,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1105,13 +1110,17 @@ size_type erase(const key_type& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Where* hash_multiset kaldırılacak öğenin konumu.
+*_Where*<br/>
+ Hash_multiset kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu hash_multiset kaldırıldı.
+*ilk*<br/>
+ Hash_multiset kaldırılan ilk öğenin konumu.
 
-*Son* konumu yalnızca son öğeden sonra hash_multiset kaldırıldı.
+*Son*<br/>
+ Konum yalnızca son öğeden sonra hash_multiset kaldırıldı.
 
-*anahtar* hash_multiset kaldırılacak öğe anahtarı.
+*Anahtarı*<br/>
+ Hash_multiset kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1222,7 +1231,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı tarafından eşleştirilecek bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multiset bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1415,7 +1425,7 @@ hash_multiset(
 |-|-|
 |*Al*|Bunun için kullanılacak depolama ayırıcı sınıf `hash_multiset` varsayılan olarak nesne `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü `const Traits` öğeleri sıralamak için kullanılan `hash_multiset`, bunun varsayılan `hash_compare`.|
-|*Sağ*|`hash_multiset` Biri oluşturulmuş `hash_multiset` bir kopyası olacak.|
+|*sağ*|`hash_multiset` Biri oluşturulmuş `hash_multiset` bir kopyası olacak.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Kopyalanacak öğe içeren initializer_list.|
@@ -1656,7 +1666,8 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2138,7 +2149,8 @@ void swap(hash_multiset& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef hash_multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_multiset.
+*sağ*<br/>
+ Hedef hash_multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2213,7 +2225,8 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

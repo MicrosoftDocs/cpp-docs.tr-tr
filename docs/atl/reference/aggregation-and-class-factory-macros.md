@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4995779a7f5595eca9dc47a29ea11d875995e959
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d964e844e8be4b741628397bf8a63bbd109820d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881233"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210948"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>Toplama ve sınıf üreticisi makroları
 Bu makrolar, toplama denetleme ve sınıf üreteçlerini bildirme yollar sağlar.  
@@ -86,7 +86,7 @@ DECLARE_CLASSFACTORY()
  [!code-cpp[NVC_ATL_COM#55](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_2.h)]  
   
 ##  <a name="ccomclassfactory_class"></a>  CComClassFactory sınıfı  
- Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi.  
+ Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi.  
   
 ```
 class CComClassFactory : public IClassFactory,
@@ -94,7 +94,7 @@ public CComObjectRootEx<CComGlobalsThreadModel>
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComClassFactory` uygulayan [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
+ `CComClassFactory` uygulayan [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirimi, yeni nesneler daha hızlı bir şekilde oluşturulmasına izin vermek için bellekte sınıf üreteci kilitleme yanı sıra belirli bir CLSID bir nesne oluşturmak için yöntemleri içerir. `IClassFactory` Sistem kayıt defterinde ve CLSID atamak için kaydettiğiniz her sınıf için uygulanmalıdır.  
   
  ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir `CComClassFactory` olarak varsayılan sınıf üreteci. Bu varsayılanı geçersiz kılmak için DECLARE_CLASSFACTORY birini belirtin*XXX* sınıf tanımına makrolarındaki. Örneğin, [DECLARE_CLASSFACTORY_EX](#declare_classfactory_ex) makrosu belirtilen sınıfı için sınıf üreteci kullanır:  
   
@@ -147,7 +147,7 @@ DECLARE_CLASSFACTORY2( lic )
  [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_4.h)]  
   
 ##  <a name="ccomclassfactory2_class"></a>  CComClassFactory2 sınıfı  
- Bu sınıfın uyguladığı [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) arabirimi.  
+ Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.  
   
 ```
 template <class license>
@@ -160,14 +160,14 @@ class  CComClassFactory2 : public IClassFactory2,
  *Lisans*  
  Aşağıdaki statik işlevler uygulayan bir sınıf:  
   
-- **statik BOOL VerifyLicenseKey (BSTR** `bstr` **);**  
+- `static BOOL VerifyLicenseKey( BSTR bstr );`  
   
-- **statik BOOL GetLicenseKey (DWORD** `dwReserved` **, BSTR\***  `pBstr` **);**  
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
   
-- **statik BOOL IsLicenseValid ();**  
+- `static BOOL IsLicenseValid( );`  
   
 ### <a name="remarks"></a>Açıklamalar  
- `CComClassFactory2` uygulayan [IClassFactory2](http://msdn.microsoft.com/library/windows/desktop/ms692720) uzantısıdır arabirimi, [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
+ `CComClassFactory2` uygulayan [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) uzantısıdır arabirimi, [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
   
  ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
   
@@ -195,7 +195,7 @@ DECLARE_CLASSFACTORY_AUTO_THREAD()
  [!code-cpp[NVC_ATL_COM#9](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_6.h)]  
   
 ##  <a name="ccomclassfactoryautothread_class"></a>  CComClassFactoryAutoThread sınıfı  
- Bu sınıfın uyguladığı [IClassFactory](http://msdn.microsoft.com/library/windows/desktop/ms694364) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.  
+ Bu sınıfın uyguladığı [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory) arabirim ve nesnelerin içinde birden çok apartmanlar oluşturulmasına izin verir.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -334,7 +334,7 @@ DECLARE_VIEW_STATUS( statusFlags )
   
 ### <a name="parameters"></a>Parametreler  
  *statusFlags*  
- [in] VIEWSTATUS bayraklar. Bkz: [VIEWSTATUS](http://msdn.microsoft.com/library/windows/desktop/ms687201) bayrakların listesi için.  
+ [in] VIEWSTATUS bayraklar. Bkz: [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) bayrakların listesi için.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_Windowing#126](../../atl/codesnippet/cpp/aggregation-and-class-factory-macros_9.h)]  

@@ -18,17 +18,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 462d9177b1f6300eb356d052cbdfff3b85db86a1
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: b43bd125c43a11703f020951464fdf97f0ab374c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928068"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215030"
 ---
 # <a name="processing-tab-control-notification-messages"></a>Sekme Denetimi Bildirim İletilerini İşleme
-Kullanıcılar gibi sekmeler veya düğmeler, sekme denetimi ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) kendi üst penceresi bildirim iletileri gönderir. Yanıtta bir şey yapmak istiyorsanız bu iletileri işleyin. Örneğin, kullanıcı bir sekme tıklattığında görüntülemeden önce sayfasında denetim önayarlarını isteyebilirsiniz.  
+Kullanıcıları gibi sekmeler veya düğmeler, sekme denetiminin ([CTabCtrl](../mfc/reference/ctabctrl-class.md)) üst pencereye bildirim iletileri gönderir. Yanıt bir şey yapmak istiyorsanız, bu iletileri işler. Örneğin, kullanıcı bir sekmeye tıkladığında denetim verilerini görüntülemeden önce sayfasında önceden isteyebilirsiniz.  
   
- Sekme denetimi görünümü ya da iletişim sınıfınızda işlem wm_notıfy iletileri. Özellikler penceresini oluşturulacağı bir [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) switch deyimi işleyici işleviyle dayalı hangi bildirim iletisi ele alınmasına. Sekme denetimi, kendi üst penceresi gönderebilir bildirimleri bir listesi için bkz: **bildirimleri** bölümünü [sekme denetimi başvurusu](http://msdn.microsoft.com/library/windows/desktop/bb760548) Windows SDK'sındaki.  
+ Sekme denetimi, görünümü veya iletişim kutusu sınıfında gelen işlem wm_notıfy iletileri. Oluşturmak için Özellikler penceresini kullanın. bir [OnChildNotify](../mfc/reference/cwnd-class.md#onchildnotify) switch deyimi işleyicisi işlevini temel hangi bildirim iletisi ele alınır. Sekme denetimi üst pencereye gönderebilir bildirimler listesi için bkz. **bildirimleri** bölümünü [sekme denetim başvurusu](https://msdn.microsoft.com/library/windows/desktop/bb760548) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   

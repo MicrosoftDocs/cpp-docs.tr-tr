@@ -114,12 +114,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d843b3b491973c32d8fb5ff3160327a9e82223c8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eae771aed819577708d945cb2a62997f5b45e7fd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464590"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199852"
 ---
 # <a name="cmfctabctrl-class"></a>CMFCTabCtrl sınıfı
 `CMFCTabCtrl` Sınıfı bir sekme denetimi için işlevsellik sağlar. Sekme denetimi, üstünde veya altında düz veya üç boyutlu sekmeler içeren bir yerleştirilebilir pencere görüntüler. Sekmeler metin ve resim görüntüleyebilir ve etkin olduğunda rengi değiştirebilirsiniz.  
@@ -186,7 +186,7 @@ class CMFCTabCtrl : public CMFCBaseTabCtrl
 |[CMFCTabCtrl::OnDragEnter](#ondragenter)|İmleç sekme denetim penceresine ilk sürüklendiğinde framework tarafından çağırılır.|  
 |[CMFCTabCtrl::OnDragOver](#ondragover)|Bırakma hedefi pencere üzerinde fareyi hareket ettiğinde bir sürükleme işlemi sırasında framework tarafından çağırılır. (Geçersiz kılmaları [CMFCBaseTabCtrl::OnDragOver](../../mfc/reference/cmfcbasetabctrl-class.md#ondragover).)|  
 |[CMFCTabCtrl::OnShowTabDocumentsMenu](#onshowtabdocumentsmenu)|Sekmeli Windows'un bir açılan menü görüntüler, kullanıcı bir sekmeye seçer ve seçili etkin sekmede yapar kadar bekler.|  
-|`CMFCTabCtrl::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
+|`CMFCTabCtrl::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CMFCBaseTabCtrl::PreTranslateMessage](../../mfc/reference/cmfcbasetabctrl-class.md#pretranslatemessage).)|  
 |`CMFCTabCtrl::RecalcLayout`|Sekme denetimi iç düzenini yeniden hesaplar. (Geçersiz kılmaları [CMFCBaseTabCtrl::RecalcLayout](../../mfc/reference/cmfcbasetabctrl-class.md#recalclayout).)|  
 |[CMFCTabCtrl::SetActiveInMDITabGroup](#setactiveinmditabgroup)|Geçerli sekme sekme denetiminin etkin sekmede yer birden çok belge arabirimi sekme grubu olarak ayarlar.|  
 |[CMFCTabCtrl::SetActiveTab](#setactivetab)|Bir sekme etkinleştirir. (Geçersiz kılmaları [CMFCBaseTabCtrl::SetActiveTab](../../mfc/reference/cmfcbasetabctrl-class.md#setactivetab).)|  
@@ -784,7 +784,7 @@ virtual DROPEFFECT OnDragEnter(
  Kullanıcının sürüklediği verilerini içeren bir veri nesnesi işaret eder.  
   
  [in] *dwKeyState*  
- Değiştirici tuşları durumunu içerir. Bu parametre aşağıdaki değerlerden biri bit düzeyinde bir birleşim (veya) olan: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için **ileti parametreleri** bölümünü [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ Değiştirici tuşları durumunu içerir. Bu parametre aşağıdaki değerlerden biri bit düzeyinde bir birleşim (veya) olan: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON. Daha fazla bilgi için **ileti parametreleri** bölümünü [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).  
   
  [in] *noktası*  
  İstemci koordinatları imleç geçerli konumunu içerir.  
@@ -812,7 +812,7 @@ virtual DROPEFFECT OnDragOver(
  İşaretçi bir [COleDataObject](../../mfc/reference/coledataobject-class.md) bırakma hedefi olarak sürüklenen nesne.  
   
  [in] *dwKeyState*  
- Değiştirici tuşları karşılaştırmaya (veya) MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON olan durumu. Daha fazla bilgi için "İleti parametreleri" bölümüne bakın. [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).  
+ Değiştirici tuşları karşılaştırmaya (veya) MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON olan durumu. Daha fazla bilgi için "İleti parametreleri" bölümüne bakın. [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).  
   
  [in] *noktası*  
  Geçerli fare konumu.  
@@ -1000,7 +1000,7 @@ BOOL SynchronizeScrollBar(SCROLLINFO* pScrollInfo = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [out] *pScrollInfo*  
- İşaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı veya NULL. Bu yöntem döndürüldüğünde ve bu parametre NULL değilse, yapı kaydırma çubuğunun tüm parametreleri içerir. Varsayılan değer NULL olur.  
+ İşaretçi bir [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı veya NULL. Bu yöntem döndürüldüğünde ve bu parametre NULL değilse, yapı kaydırma çubuğunun tüm parametreleri içerir. Varsayılan değer NULL olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

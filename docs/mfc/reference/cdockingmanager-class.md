@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87fcaf93823e504f3631d50de4f981ae30e882e9
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e61b6a9b967cc62bf8ba028783a019b8ecda7878
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027832"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43200276"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager sınıfı
 Ana çerçeve penceresindeki yerleştirme düzeni denetleyen temel işlevselliğini uygular.  
@@ -379,7 +379,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *hdwp*  
- Ertelenmiş pencere konumu yapısı belirtir. Daha fazla bilgi için [Windows veri türleri](http://msdn.microsoft.com/library/windows/desktop/aa383751).  
+ Ertelenmiş pencere konumu yapısı belirtir. Daha fazla bilgi için [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -924,7 +924,7 @@ CSmartDockingManager* GetSmartDockingManager();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir işaretçi [akıllı yerleştirme manager](http://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534).  
+ Bir işaretçi [akıllı yerleştirme manager](https://msdn.microsoft.com/f537a1a6-fb9e-41d7-952f-0f25d5ee7534).  
   
 ##  <a name="getsmartdockingmanagerpermanent"></a>  CDockingManager::GetSmartDockingManagerPermanent  
  Akıllı Yerleştirme Yöneticisi için bir işaretçi alır.  

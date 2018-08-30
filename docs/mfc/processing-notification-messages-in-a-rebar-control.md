@@ -17,37 +17,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a1d42d129ab7b7d2e98ae1126b8f32f68b1f356
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: dce09e84e9a2b5262d05847746f819a122ec36c5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36931833"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208981"
 ---
 # <a name="processing-notification-messages-in-a-rebar-control"></a>Bir Rebar Denetiminde Bildirim İletilerini İşleme
-Rebar denetimiyle üst sınıf oluşturmak bir `OnChildNotify` herhangi bir rebar denetimi için bir anahtar ifadesiyle işleyici işlevi (`CReBarCtrl`) bildirim iletilerini işlemek istediğiniz. Kullanıcı siler rebar bantları düzenini rebar denetiminden ve benzeri bantları değişiklikleri rebar denetimi nesneleri sürüklendiğinde bildirimleri üst penceresine gönderilir.  
+Çubuk barınağı denetiminin üst sınıfta oluşturma bir `OnChildNotify` switch deyimi için herhangi bir çubuk barınağı denetimi işleyicisi işlevini (`CReBarCtrl`) bildirim iletilerini işlemek istediğiniz. Kullanıcı çubuk barınağı şeritleri siler rebar bantları düzenini çubuk barınağı şeritleri ve benzeri bantları değişiklikleri nesneleri sürüklediğinde bildirimleri üst pencereye gönderilir.  
   
- Aşağıdaki bildirim iletileri rebar denetimi nesne tarafından gönderilebilir:  
+ Aşağıdaki bildirim iletileri çubuk barınağı denetimi nesne tarafından gönderilebilecek:  
   
--   Rebar denetimiyle (RBS_AUTOSIZE stiliyle oluşturulan) tarafından gönderilen RBN_AUTOSIZE zaman rebar otomatik olarak yeniden boyutlandırır kendisi.  
+-   RBN_AUTOSIZE gönderilen (RBS_AUTOSIZE stiliyle oluşturan) bir çubuk barınağı denetimi tarafından ne zaman çubuk barınağı otomatik olarak yeniden boyutlandırır kendisi.  
   
--   Kullanıcı bir bant sürükleyerek başladığında rebar denetimi tarafından gönderilen RBN_BEGINDRAG.  
+-   RBN_BEGINDRAG kullanıcı bir bant sürükleme işlemi başladığında, bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   Bir bant ait alt pencere yeniden boyutlandırıldığında rebar denetimi tarafından gönderilen RBN_CHILDSIZE.  
+-   RBN_CHILDSIZE bir bandın çocuk penceresi yeniden boyutlandırıldığında bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   Bir bant silindikten sonra rebar denetimi tarafından gönderilen RBN_DELETEDBAND.  
+-   RBN_DELETEDBAND bir bant silindikten sonra bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   Bir bant silinmek üzere olduğunda rebar denetimi tarafından gönderilen RBN_DELETINGBAND.  
+-   RBN_DELETINGBAND bir bant silinmek üzere olduğunda bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   Kullanıcı bir bant sürükleyerek durduğunda rebar denetimi tarafından gönderilen RBN_ENDDRAG.  
+-   RBN_ENDDRAG kullanıcı bir bant sürükleyerek durdurulduğunda bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   Rebar denetimiyle (RBS_REGISTERDROP stiliyle oluşturulan) tarafından gönderilen RBN_GETOBJECT bir nesne zaman sürüklenen denetiminde bir bant üzerinde.  
+-   RBN_GETOBJECT gönderilen (RBS_REGISTERDROP stiliyle oluşturan) bir çubuk barınağı denetimi tarafından ne zaman bir nesne sürüklediğiniz denetiminde bir bant üzerinde.  
   
--   RBN_HEIGHTCHANGE yüksekliği değiştiğinde rebar denetimi tarafından gönderilen.  
+-   RBN_HEIGHTCHANGE yükseklik değiştiğinde bir çubuk barınağı denetimi tarafından gönderilir.  
   
--   RBN_LAYOUTCHANGED kullanıcı denetimin bantları Düzen değiştirdiğinde rebar denetimi tarafından gönderilen.  
+-   RBN_LAYOUTCHANGED kullanıcı denetiminin bantları düzenini değiştirdiği zaman bir çubuk barınağı denetimi tarafından gönderilir.  
   
- Bu bildirimleri hakkında daha fazla bilgi için bkz: [Rebar denetimi başvurusu](http://msdn.microsoft.com/library/windows/desktop/bb774375) Windows SDK'sındaki.  
+ Bu bildirimleri hakkında daha fazla bilgi için bkz. [Rebar denetimi başvuru](https://msdn.microsoft.com/library/windows/desktop/bb774375) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CReBarCtrl kullanma](../mfc/using-crebarctrl.md)   

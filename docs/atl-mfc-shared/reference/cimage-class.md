@@ -64,12 +64,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8217ee5bdcad15a2c0b89f95000360b979e094ea
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3443c85ce7f3f12e334e074e1ce37c9cab2ce9d8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883625"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213620"
 ---
 # <a name="cimage-class"></a>Cımage sınıfı
 `CImage` Yük ve görüntüleri JPEG, BMP, GIF ve da Taşınabilir Ağ Grafikleri (PNG) biçimlerde kaydetme olanağı dahil olmak üzere Gelişmiş bit eşlem desteği sağlar.  
@@ -263,7 +263,7 @@ BOOL AlphaBlend(
  Alfa karıştırma işlev için kaynak ve hedef bit eşlemler, tüm kaynak bit eşlem ve kaynak bit eşlemi için biçim bilgilerini uygulanması için genel bir alfa değeri. Kaynak ve hedef blend işlevleri şu an için AC_SRC_OVER sınırlıdır.  
   
  *pointDest*  
- Bir başvuru bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.  
+ Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.  
   
  *nDestWidth*  
  Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.  
@@ -284,7 +284,7 @@ BOOL AlphaBlend(
  Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.  
   
  *rectDest*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
   
  *rectSrc*  
  Bir başvuru bir `RECT` yapısını tanımlayan kaynak.  
@@ -363,10 +363,10 @@ BOOL BitBlt(
  Mantıksal y koordinatını hedef dikdörtgenin sol üst köşesinde.  
   
  *dwROP*  
- Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.  
+ Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.  
   
  *pointDest*  
- A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) hedef dikdörtgenin sol üst köşesinde belirten yapısı.  
+ A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) hedef dikdörtgenin sol üst köşesinde belirten yapısı.  
   
  *nDestWidth*  
  Hedef dikdörtgenin mantıksal birimler cinsinden genişliği.  
@@ -381,7 +381,7 @@ BOOL BitBlt(
  Mantıksal y koordinatını kaynak dikdörtgenin sol üst köşesinde.  
   
  *rectDest*  
- A [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) hedef dikdörtgenin belirten yapısı.  
+ A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) hedef dikdörtgenin belirten yapısı.  
   
  *pointSrc*  
  A `POINT` kaynak dikdörtgenin sol üst köşesinde belirten yapısı.  
@@ -390,7 +390,7 @@ BOOL BitBlt(
  Başarılı olursa sıfır dışı; Aksi halde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) Windows SDK.  
+ Daha fazla bilgi için [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) Windows SDK.  
   
 ##  <a name="cimage"></a>  CImage::CImage  
  Oluşturur bir `CImage` nesne.  
@@ -469,7 +469,7 @@ BOOL CreateEx(
 - BI_BITFIELDS biçimi sıkıştırılmamış ve renk tablosunu kırmızı, yeşil ve mavi bileşenlerinin sırasıyla her pikseli belirten üç DWORD renk maskeleri oluşur. Bu, bit eşlemler 16 ve 32 bpp kullanıldığında geçerlidir.  
   
  *pdwBitfields*  
- Yalnızca *eCompression* ayarlanır BI_BITFIELDS için Aksi takdirde, NULL olmalıdır. Hangi bitlerin her pikselin rengin kırmızı, yeşil ve mavi bileşenlerinin sırasıyla kullanılan belirten üç DWORD bit maskesi, bir dizi için bir işaretçi. Bit alanları için kısıtlamaları hakkında daha fazla bilgi için bkz: [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK.  
+ Yalnızca *eCompression* ayarlanır BI_BITFIELDS için Aksi takdirde, NULL olmalıdır. Hangi bitlerin her pikselin rengin kırmızı, yeşil ve mavi bileşenlerinin sırasıyla kullanılan belirten üç DWORD bit maskesi, bir dizi için bir işaretçi. Bit alanları için kısıtlamaları hakkında daha fazla bilgi için bkz: [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) Windows SDK.  
   
  *CertOpenStore*  
  Bitmap nesnesi bir alfa kanalı olup olmadığını belirtir. Sıfır veya daha fazla aşağıdaki değerlerin bir birleşimi olabilir:  
@@ -578,13 +578,13 @@ BOOL Draw(
  Kaynak dikdörtgenin mantıksal birimler cinsinden yüksekliği.  
   
  *rectDest*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
   
  *rectSrc*  
  Bir başvuru bir `RECT` yapısını tanımlayan kaynak.  
   
  *pointDest*  
- Bir başvuru bir [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.  
+ Bir başvuru bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) mantıksal birimler cinsinden hedef dikdörtgenin sol üst köşesinde tanımlayan yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -623,7 +623,7 @@ int GetBPP() const throw();
 ### <a name="remarks"></a>Açıklamalar  
  Bu değer, her pikselin tanımlayan bit sayısını ve renk bit eşlemde maksimum sayısını belirler.  
   
- Piksel başına bit olduğundan genellikle 1, 4, 8, 16, 24 veya 32. Bkz: `biBitCount` üyesi [BITMAPINFOHEADER](http://msdn.microsoft.com/library/windows/desktop/dd183376) bu değeri hakkında daha fazla bilgi için Windows SDK.  
+ Piksel başına bit olduğundan genellikle 1, 4, 8, 16, 24 veya 32. Bkz: `biBitCount` üyesi [BITMAPINFOHEADER](https://msdn.microsoft.com/library/windows/desktop/dd183376) bu değeri hakkında daha fazla bilgi için Windows SDK.  
   
 ##  <a name="getcolortable"></a>  CImage::GetColorTable  
  Kırmızı, yeşil, mavi (RGB) renk değerleri DIB bölümünün paleti girdileri aralığını alır.  
@@ -642,7 +642,7 @@ void GetColorTable(UINT iFirstColor,
  Alınacak renkli Tablo girdileri sayısı.  
   
  *prgbColors*  
- Bir işaretçi dizisinin işaretçisi [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) rengini almak için yapılar tablo girişleri.  
+ Bir işaretçi dizisinin işaretçisi [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) rengini almak için yapılar tablo girişleri.  
   
 ##  <a name="getdc"></a>  CImage::GetDC  
  Şu anda görüntü içine seçili olan cihaz bağlamı alır.  
@@ -1179,10 +1179,10 @@ BOOL PlgBlt(
  Bit eşlemi renkliye dönüştürmesi gerekirse sol üst köşesinin y-koordinatı.  
   
  *rectSrc*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı koordinatları kaynak dikdörtgenin belirtme.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı koordinatları kaynak dikdörtgenin belirtme.  
   
  *pointMask*  
- A [noktası](http://msdn.microsoft.com/library/windows/desktop/dd162805) maskesi bit eşlem sol üst köşesinde belirten yapısı.  
+ A [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) maskesi bit eşlem sol üst köşesinde belirten yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı Aksi durumda 0.  
@@ -1190,7 +1190,7 @@ BOOL PlgBlt(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *hbmMask* geçerli tek renkli bir bitmap tanımlayan `PlgBit` bu bit eşlemi Kaynak dikdörtgenden renk verileri bit maskesi için kullanır.  
   
- Bu yöntem Windows NT 4.0 ve üzeri sürümler için geçerlidir. Bkz: [PlgBlt](http://msdn.microsoft.com/library/windows/desktop/dd162804) daha ayrıntılı bilgi için Windows SDK.  
+ Bu yöntem Windows NT 4.0 ve üzeri sürümler için geçerlidir. Bkz: [PlgBlt](/windows/desktop/api/wingdi/nf-wingdi-plgblt) daha ayrıntılı bilgi için Windows SDK.  
   
 ##  <a name="releasedc"></a>  CImage::ReleaseDC  
  Cihaz bağlamı serbest bırakır.  
@@ -1268,7 +1268,7 @@ void SetColorTable(
  Ayarlanacak renkli Tablo girdileri sayısı.  
   
  *prgbColors*  
- Bir işaretçi dizisinin işaretçisi [RGBQUAD](http://msdn.microsoft.com/library/windows/desktop/dd162938) girişlerini yapıları rengini ayarlamak için tablo.  
+ Bir işaretçi dizisinin işaretçisi [RGBQUAD](/windows/desktop/api/wingdi/ns-wingdi-tagrgbquad) girişlerini yapıları rengini ayarlamak için tablo.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca DIB bölüm bit eşlemler destekler.  
@@ -1408,10 +1408,10 @@ BOOL StretchBlt(
  Hedef dikdörtgenin mantıksal birimler cinsinden yüksekliği.  
   
  *dwROP*  
- Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](http://msdn.microsoft.com/library/windows/desktop/dd183370) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.  
+ Gerçekleştirilecek ızgara işlemi. Izgara işlemi kodları, kaynak, hedef ve desen bit (şu anda seçili fırça tarafından tanımlandığı şekilde) hedef oluşturmak için tam olarak nasıl birleştirileceğini tanımlar. Bkz: [BitBlt](/windows/desktop/api/wingdi/nf-wingdi-bitblt) diğer ızgara işlemi kodları ve açıklamaları listesi için Windows SDK.  
   
  *rectDest*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
   
  *Tanımlar*  
  X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.  
@@ -1432,7 +1432,7 @@ BOOL StretchBlt(
  Başarılı olursa sıfır dışı Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [StretchBlt](http://msdn.microsoft.com/library/windows/desktop/dd145120) Windows SDK.  
+ Daha fazla bilgi için [StretchBlt](/windows/desktop/api/wingdi/nf-wingdi-stretchblt) Windows SDK.  
   
 ##  <a name="transparentblt"></a>  CImage::TransparentBlt  
  Bir bit eşlemi Kaynak cihaz bağlamında bu geçerli bir cihaz bağlamına kopyalar.  
@@ -1490,7 +1490,7 @@ BOOL TransparentBlt(
  Saydam olarak değerlendirilecek kaynak bit eşlemi rengi. Varsayılan olarak, clr_ınvalıd, renk resminin saydam rengi ayarlanmış olduğunu belirten kullanılmalıdır.  
   
  *rectDest*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı, hedef belirleme.  
   
  *Tanımlar*  
  X koordinatı, kaynak dikdörtgenin sol üst köşesinde, mantıksal birimleri.  
@@ -1548,10 +1548,10 @@ BOOL TransparentBlt(CImage* pSrcImage, CImage* pDstImage,
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MMXSwarm örnek](../../visual-cpp-samples.md)   
  [SimpleImage örnek](../../visual-cpp-samples.md)   
- [CİHAZDAN bağımsız bit eşlemler](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
- [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md) [CİHAZDAN bağımsız bit eşlemler](http://msdn.microsoft.com/library/windows/desktop/dd183562)   
- [CreateDIBSection](http://msdn.microsoft.com/library/windows/desktop/dd183494)   
+ [CİHAZDAN bağımsız bit eşlemler](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
+ [ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md) [CİHAZDAN bağımsız bit eşlemler](/windows/desktop/gdi/device-independent-bitmaps)   
+ [CreateDIBSection](/windows/desktop/api/wingdi/nf-wingdi-createdibsection)   
 
 
 

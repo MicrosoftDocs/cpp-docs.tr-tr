@@ -16,23 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c02165635e8715c1fcac28b9fbee72612b72c1f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e7b56570a2821cef3cd2d2676a5260f42bc2ffaf
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33349486"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210776"
 ---
 # <a name="character-formatting-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Karakter Biçimlendirme
-Zengin düzenleme denetimine üye işlevlerini kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) karakter biçimlendirme ve biçimlendirme bilgilerini almak için. Karakterler için yazı tipi, boyut, renk ve kalın, italik gibi efektler belirtebilirsiniz ve korumalı.  
+Zengin Düzenleme denetiminin üye işlevleri kullanabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) karakterleri biçimlendirmek ve biçimlendirme bilgileri alınamıyor. Karakterler için yazı tipini, boyutunu, rengini ve etkileri kalın, italik gibi belirtebilirsiniz ve korumalı.  
   
- Karakter kullanarak biçimlendirme uygulayabilirsiniz [SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevleri. Seçili metni biçimlendirme geçerli karakteri belirlemek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevi. [CHARFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb787881) yapısı karakter özniteliklerini belirtmek için bu üye işlevleri ile kullanılır. Önemli üyelerinden birinde **CHARFORMAT** olan **dwMask**. İçinde `SetSelectionCharFormat` ve `SetWordCharFormat`, **dwMask** bu işlev çağrısı tarafından hangi karakter özniteliklerini ayarlanacağını belirtir. `GetSelectionCharFormat` Raporlar seçim içindeki ilk karakter özniteliklerini; **dwMask** seçimi tutarlı özniteliklerini belirtir.  
+ Karakter kullanarak biçimlendirme uygulayabilirsiniz [SetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#setselectioncharformat) ve [SetWordCharFormat](../mfc/reference/cricheditctrl-class.md#setwordcharformat) üye işlevleri. Seçili metin için biçimlendirme geçerli karakteri belirlemek için [GetSelectionCharFormat](../mfc/reference/cricheditctrl-class.md#getselectioncharformat) üye işlevi. [CHARFORMAT](/windows/desktop/api/richedit/ns-richedit-_charformat) yapısı, karakter özniteliklerini belirtmek için bu üye işlevleri ile kullanılır. Önemli üyelerinden birinde **CHARFORMAT** olduğu **dwMask**. İçinde `SetSelectionCharFormat` ve `SetWordCharFormat`, **dwMask** hangi karakter nitelikleri, bu işlev çağrısına göre ayarlanacağını belirtir. `GetSelectionCharFormat` Seçimdeki ilk karakterin öznitelikleri bildirir; **dwMask** seçimi tutarlı öznitelikleri belirtir.  
   
- Ayrıca almak ve "varsayılan karakter biçimlendirme," ayarlamak için daha sonra eklenen tüm karakterleri uygulanan biçimlendirme olduğu. Örneğin, bir uygulamanın varsayılan karakter kalın biçimlendirme ayarlar ve kullanıcı daha sonra bir karakter türleri, bu kalın karakterdir. Alma ve varsayılan karakter biçimlendirme ayarlamak için kullanın [GetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#getdefaultcharformat) ve [SetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#setdefaultcharformat) üye işlevleri.  
+ Ayrıca Al ve Ayarla "varsayılan karakter biçimlendirme" biçimlendirme sonradan eklenen herhangi bir karakter uygulanmış olan. Örneğin, bir uygulamanın varsayılan karakter kalın biçimlendirme ve kullanıcı sonra bir karakter yazar, kalın karakterdir. Almak ve varsayılan karakter biçimlendirme ayarlamak için kullanın [GetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#getdefaultcharformat) ve [SetDefaultCharFormat](../mfc/reference/cricheditctrl-class.md#setdefaultcharformat) üye işlevleri.  
   
- "Korumalı" karakter özniteliği metin görünümünü değiştirmez. Kullanıcı korumalı metin değiştirmeye çalışırsa, kendi üst penceresi bir zengin düzenleme denetimine gönderir bir **EN_PROTECTED** izin vermek veya değişiklik önlemek üst pencere izin vererek, bildirim iletisini. Bu bildirim iletisini almak için onu kullanarak etkinleştirmelisiniz [SetEventMask](../mfc/reference/cricheditctrl-class.md#seteventmask) üye işlevi. Olay maskesi hakkında daha fazla bilgi için bkz: [bir zengin düzenleme denetiminden bildirim](../mfc/notifications-from-a-rich-edit-control.md), bu konunun devamındaki.  
+ "Korumalı" karakter öznitelik metin görünümünü değiştirmez. Kullanıcı, korumalı metin değiştirme girişiminde bulunursa bir zengin düzenleme denetiminin üst pencereye gönderir. bir **EN_PROTECTED** bildirim iletisi, ana pencereyi izin vermek veya değişiklik önlemek izin verme. Bu bildirim iletisini almak için onu kullanarak etkinleştirmelisiniz [SetEventMask](../mfc/reference/cricheditctrl-class.md#seteventmask) üye işlevi. Olay maskesini hakkında daha fazla bilgi için bkz: [bir zengin düzenleme denetiminden bildirim](../mfc/notifications-from-a-rich-edit-control.md), bu konunun devamındaki.  
   
- Ön plan rengini karakter özniteliği, ancak arka plan rengi zengin düzenleme denetimine özelliğidir. Arka plan rengini ayarlamak için kullanın [SetBackgroundColor](../mfc/reference/cricheditctrl-class.md#setbackgroundcolor) üye işlevi.  
+ Ön plan rengi, bir karakter özniteliğini olmakla birlikte bir özelliktir zengin düzenleme denetiminin arka plan rengi. Arka plan rengini ayarlamak için kullanın [SetBackgroundColor](../mfc/reference/cricheditctrl-class.md#setbackgroundcolor) üye işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   

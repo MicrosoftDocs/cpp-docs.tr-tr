@@ -1,5 +1,5 @@
 ---
-title: Çift Thunking (C++) | Microsoft Docs
+title: Çift dönüştürme (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,29 +19,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 47d5bbbecc8e1b9743c543a503df1a0afa0dc0ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3e37b3b7fc477de0bdbeb00a15ebd86e6c44d25c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111214"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216643"
 ---
 # <a name="double-thunking-c"></a>Çift Dönüştürme (C++)
-Çift dönüştürme, bir Visual C++ yönetilen işlevi ve program yürütmenin yönetilen bağlam çağrıları işlev çağrısında yönetilen işlevi çağırmak için işlevin yerel giriş noktası çağırdığında karşılaşabileceğiniz performans kaybı anlamına gelir. Bu konuda, çift dönüştürme nerede oluştuğunu ve performansı artırmak için kaçının nasıl anlatılmaktadır.  
+Çift dönüştürme için Visual C++ yönetilen işlevi ve program yürütmenin bir yönetilen bağlam çağrıları işlev çağrısında yönetilen işlevi çağırmak için işlev yerel giriş noktası çağırdığında karşılaşabileceğiniz performans kaybı ifade eder. Bu konu, çift dönüştürme nerede oluştuğunu ve performansı geliştirmek için önlemek nasıl açıklar.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak ile derleme yapılırken, **/CLR**, yönetilen bir işlev tanımı yönetilen bir giriş noktası ve bir yerel giriş noktası oluşturmak derleyicinin neden olur. Bu, yerel ve yönetilen çağrı sitelerinden çağrılacak Yönetilen işlev sağlar. Ancak, yerel giriş noktası varsa, işlev tüm çağrıları için giriş noktası olabilir. Bir arama işlevi yönetiliyorsa, yerel giriş noktası sonra yönetilen giriş noktası çağırır. İki çağrıları işlevi çağırmak için uygulamada gereklidir (Bu nedenle, dönüştürme çift). Örneğin, sanal işlevler her zaman yerel giriş noktası aracılığıyla çağrılır.  
+ İle derlerken varsayılan olarak **/CLR**, yönetilen bir işlev tanımı bir yönetilen giriş noktasını ve yerel giriş noktası oluşturmak derleyicinin neden olur. Bu, yerel ve yönetilen çağrı sitelerinden çağrılacak yönetilen işlevi sağlar. Ancak, yerel giriş noktası mevcut olduğunda, bu işleve yapılan tüm çağrılar için giriş noktası olabilir. Bir arama işlevi yönetiliyorsa, yerel giriş noktası sonra yönetilen giriş noktasını çağırır. Aslında, işlevin çalıştırılabilmesi için iki çağrıları gereklidir (Bu nedenle, dönüştürme çift). Örneğin, sanal işlevleri her zaman yerel giriş noktası aracılığıyla çağrılır.  
   
- Bir çözüm olan yönetilen bir işlev için yerel giriş noktası değil oluşturulacak derleyici işlevi yalnızca bir yönetilen bağlamdan kullanarak çağrılacağı bildirmek için [__clrcall](../cpp/clrcall.md) çağırma.  
+ Bir çözüm olan işlevi yalnızca bir yönetilen bağlamında kullanarak çağrılır, yönetilen bir işlev için bir yerel giriş noktası değil derleyici bildirmek için [__clrcall](../cpp/clrcall.md) çağırma kuralı.  
   
- Benzer şekilde, dışarı aktarırsanız ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) yönetilen bir işlev yerel giriş noktası oluşturulur ve içe aktarır ve bu işlev çağrıları herhangi bir işlev yerel giriş noktası aracılığıyla çağırır. Bu durumda çift dönüştürme önlemek için yerel dışa aktarma/içe aktarma semantiği kullanmayın; yalnızca meta verileri yoluyla başvuru `#using` (bkz [#using yönergesi](../preprocessor/hash-using-directive-cpp.md)).  
+ Benzer şekilde, dışarı aktarırsanız ([dllexport, dllimport](../cpp/dllexport-dllimport.md)) yönetilen bir işlev bir yerel giriş noktasını oluşturulur ve içeri aktarır ve bu işlevi çağıran bir işlev yerel giriş noktası çağırır. Bu durumda çift dönüştürme önlemek için yerel dışarı/içeri aktarma semantiği kullanmayın; yalnızca meta veriler aracılığıyla başvuru `#using` (bkz [#using yönergesi](../preprocessor/hash-using-directive-cpp.md)).  
   
- Derleyici, gereksiz çift dönüştürme azaltmak için güncelleştirilmiştir. Örneğin, herhangi bir yönetilen türü (dönüş türü dahil) imzada işleviyle örtük olarak işaretlenir `__clrcall`. Çift dönüştürücü eleme hakkında daha fazla bilgi için bkz: [ http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx ](http://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
+ Derleyici, gereksiz çift dönüştürme azaltmak için güncelleştirildi. Örneğin, (dönüş türü dahil) imzasında yönetilen bir tür olan herhangi bir işlev örtük olarak işaretlenecek `__clrcall`. Çift Thunk hakkında daha fazla bilgi için bkz. [ https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx ](https://msdn.microsoft.com/msdnmag/issues/05/01/COptimizations/default.aspx).  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, çift dönüştürme gösterir. Yerel olarak derlendiğinde (olmadan **/CLR**), sanal işlev çağrısı `main` yapılan bir çağrı oluşturur `T`'s oluşturucu ve yıkıcı yapılan bir çağrı kopyalayın. Benzer davranış sanal işlev ile bildirildiğinde elde **/CLR** ve `__clrcall`. Ancak, yalnızca ile derlendiğinde **/CLR**, işlev çağrısının bir çağrı kopya Oluşturucu oluşturur ancak başka bir çağrıyı yönetilen yerel dönüştürücü nedeniyle kopya oluşturucu yok.  
+ Aşağıdaki örnek, çift dönüştürme gösterir. Yerel olarak derlendiğinde (olmadan **/CLR**), sanal işlev çağrısı `main` bir çağrı oluşturur `T`'s oluşturucuyu ve yok edici bir çağrı kopyalayın. Sanal işlev ile bildirildiğinde benzer bir davranış elde **/CLR** ve `__clrcall`. Ancak, yalnızca ile derlendiğinde **/CLR**kopya oluşturucusunun yönetilen yerel dönüştürücü nedeniyle başka bir çağrı yoktur ancak işlev çağrısı kopya oluşturucusuna bir çağrı oluşturur.  
   
 ### <a name="code"></a>Kod  
   
@@ -98,7 +98,7 @@ __thiscall T::~T(void)
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Çift dönüştürme varlığı önceki örnek gösterilmektedir. Bu örnek etkisini gösterir. `for` Döngü çağırır sanal işlevi ve program raporları yürütme süresi. Program ile derlendiğinde yavaş zaman bildirilir **/CLR**. Hızlı zamanlar olmadan derlerken bildirilen **/CLR** veya sanal işlev ile bildirilirse `__clrcall`.  
+ Çift dönüştürme varlığını önceki örnek gösterilmektedir. Bu örnek etkisini gösterir. `for` Döngü sanal işlevi ve program raporları yürütme süresi çağırır. En yavaş zaman program ile derlendiğinde bildirilir **/CLR**. Hızlı süreler olmadan derleme yaparken raporlanır **/CLR** veya sanal işlev ile bildirilirse `__clrcall`.  
   
 ### <a name="code"></a>Kod  
   

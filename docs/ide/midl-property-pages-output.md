@@ -22,31 +22,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ff30460ad68e6efb1abc3d84925b362cf03f551
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 927ab1004336787131c8f92c247512d1c66caf69
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325779"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212762"
 ---
 # <a name="midl-property-pages-output"></a>MIDL Özellik Sayfaları: Çıktı
-**Çıkış** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçenekleri belirtir:  
+**Çıkış** özellik sayfasında **MIDL** klasörü aşağıdaki MIDL derleyici seçeneklerini belirtir:  
   
--   Dizin çıkış ([/out](http://msdn.microsoft.com/library/windows/desktop/aa367358))  
+-   Çıkış dizinine ([/out](https://msdn.microsoft.com/library/windows/desktop/aa367358))  
   
--   Üstbilgi dosyası ([/h](http://msdn.microsoft.com/library/windows/desktop/aa367325))  
+-   Üst bilgi dosyası ([/h](https://msdn.microsoft.com/library/windows/desktop/aa367325))  
   
--   DLL veri dosyası ([/dlldata](http://msdn.microsoft.com/library/windows/desktop/aa367322))  
+-   DLL veri dosyası ([/dlldata](https://msdn.microsoft.com/library/windows/desktop/aa367322))  
   
--   IID dosya ([/iid](http://msdn.microsoft.com/library/windows/desktop/aa367329))  
+-   IID dosyası ([/iid](https://msdn.microsoft.com/library/windows/desktop/aa367329))  
   
--   Proxy dosyası ([/proxy](http://msdn.microsoft.com/library/windows/desktop/aa367362))  
+-   Proxy dosyası ([/proxy](https://msdn.microsoft.com/library/windows/desktop/aa367362))  
   
--   Tür kitaplığı oluştur ([/notlb](http://msdn.microsoft.com/library/windows/desktop/aa367343))  
+-   Tür kitaplığı oluştur ([/notlb](https://msdn.microsoft.com/library/windows/desktop/aa367343))  
   
--   Tür kitaplığı ([TLB](http://msdn.microsoft.com/library/windows/desktop/aa367372))  
+-   Tür kitaplığı ([/TLB](https://msdn.microsoft.com/library/windows/desktop/aa367372))  
   
- Nasıl erişileceği hakkında bilgi için **çıkış** özellik sayfasında **MIDL** klasörü, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+ Erişim hakkında daha fazla bilgi için **çıkış** özellik sayfasında **MIDL** klasörüne bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
  MIDL seçenekleri C++ projeleri için programlı erişim hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCMidlTool>.  
   

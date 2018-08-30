@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1da24273decbee296bfa19a5c8306cb0512e3fc
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b4c5dad276db338b5efa0d15786b090779fcf41a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850254"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43207511"
 ---
 # <a name="coleserveritem-class"></a>Coleserverıtem sınıfı
 OLE öğelerine ilişkin sunucu arabirimini sağlar.  
@@ -263,7 +263,7 @@ DROPEFFECT DoDragDrop(
   
 -   Windows 95/98 Sürükle gecikme süresi, WIN önbelleğe alınmış bir sürümünde depolanır. INI.  
   
- Gecikme bilgilerini sürükleyin hakkında daha fazla bilgi için her iki kayıt defterinde depolanır veya. INI dosyası bkz [WriteProfileString](http://msdn.microsoft.com/library/windows/desktop/ms725504) Windows SDK.  
+ Gecikme bilgilerini sürükleyin hakkında daha fazla bilgi için her iki kayıt defterinde depolanır veya. INI dosyası bkz [WriteProfileString](/windows/desktop/api/winbase/nf-winbase-writeprofilestringa) Windows SDK.  
   
 ##  <a name="getclipboarddata"></a>  COleServerItem::GetClipboardData  
  Belirtilen doldurmak için bu işlevi çağırın [COleDataSource](../../mfc/reference/coledatasource-class.md) çağrılırsa, panoya kopyalandı tüm verileri içeren nesne [CopyToClipboard](#copytoclipboard) (aynı verilere Ayrıca, aktarılması, adlı [DoDragDrop](#dodragdrop)).  
@@ -329,14 +329,14 @@ void GetEmbedSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### <a name="parameters"></a>Parametreler  
  *lpStgMedium*  
- İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE öğesini CF_EMBEDSOURCE verileri alacak yapısı.  
+ İşaretçi [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE öğesini CF_EMBEDSOURCE verileri alacak yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu biçim, öğenin yerel veri içerir. Uyguladınız mı `Serialize` düzgün çalışması bu işlevin üye işlevi.  
   
  Sonuç ardından bir veri kaynağına kullanılarak eklenebilir [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). Bu işlev tarafından otomatik olarak çağrılır [COleServerItem::OnGetClipboardData](#ongetclipboarddata).  
   
- Daha fazla bilgi için [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK.  
+ Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK.  
   
 ##  <a name="getitemname"></a>  COleServerItem::GetItemName  
  Öğenin adını almak için bu işlevi çağırın.  
@@ -360,7 +360,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
   
 ### <a name="parameters"></a>Parametreler  
  *lpStgMedium*  
- İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE öğesini CF_LINKSOURCE verileri alacak yapısı.  
+ İşaretçi [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE öğesini CF_LINKSOURCE verileri alacak yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -370,7 +370,7 @@ BOOL GetLinkSourceData(LPSTGMEDIUM lpStgMedium);
   
  Sonuç ardından bir veri kaynağına eklenebilir [COleDataSource::CacheData](../../mfc/reference/coledatasource-class.md#cachedata). Bu işlev tarafından otomatik olarak çağrılır [gerçekleşebilir](#ongetclipboarddata).  
   
- Daha fazla bilgi için [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK.  
+ Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK.  
   
 ##  <a name="getobjectdescriptordata"></a>  COleServerItem::GetObjectDescriptorData  
  CF_OBJECTDESCRIPTOR verileri için bir OLE öğesini almak için bu işlevi çağırın.  
@@ -390,12 +390,12 @@ void GetObjectDescriptorData(
  OLE öğesinin boyutu. NULL olabilir.  
   
  *lpStgMedium*  
- İşaretçi [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) OLE öğesini CF_OBJECTDESCRIPTOR verileri alacak yapısı.  
+ İşaretçi [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) OLE öğesini CF_OBJECTDESCRIPTOR verileri alacak yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bilgiler kopyalanır `STGMEDIUM` yapısı tarafından işaret edilen *lpStgMedium*. Bu biçim Paste Special iletişim kutusu için gereken bilgileri içerir.  
   
- Daha fazla bilgi için [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) Windows SDK.  
+ Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) Windows SDK.  
   
 ##  <a name="isconnected"></a>  COleServerItem::IsConnected  
  OLE öğesini bağlı olup olmadığını görmek için bu işlevi çağırın.  
@@ -476,14 +476,14 @@ virtual void OnDoVerb(LONG iVerb);
 |- 2|Ayrı bir pencerede öğeyi Düzenle|OLEIVERB_OPEN|  
 |- 3|Öğeyi Gizle|OLEIVERB_HIDE|  
   
- -1 değeri, genellikle başka bir eylem için bir diğer ad olduğu. Açık düzenleme desteklenmiyorsa, -2 -1 ile aynı etkiye sahiptir. Ek değerleri için bkz: [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK.  
+ -1 değeri, genellikle başka bir eylem için bir diğer ad olduğu. Açık düzenleme desteklenmiyorsa, -2 -1 ile aynı etkiye sahiptir. Ek değerleri için bkz: [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kapsayıcı uygulamasını Microsoft Foundation Class Kitaplığı ile yazılmışsa, bu işlev aldığında çağrılan [COleClientItem::Activate](../../mfc/reference/coleclientitem-class.md#activate) üye işlevi, karşılık gelen `COleClientItem` nesne çağrılır. Varsayılan Uygulama çağrıları [OnShow](#onshow) birincil fiil veya OLEIVERB_SHOW belirtilmezse, üye işlevi [açıldığında](#onopen) ikincil fiil veya OLEIVERB_OPEN belirttiyseniz ve [OnHide ](#onhide) OLEIVERB_HIDE belirtilirse. Varsayılan Uygulama çağrıları `OnShow` varsa *iVerb* yukarıda listelenen fiillerden biri değil.  
   
  Bu işlev, birincil fiil öğesi göstermez geçersiz kılın. Örneğin, bir ses kaydı öğedir ve alt birincil fiil Play ise, öğeyi yürütmek için sunucu uygulamasının görüntüleme girmesi gerekmez.  
   
- Daha fazla bilgi için [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK.  
+ Daha fazla bilgi için [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK.  
   
 ##  <a name="ondraw"></a>  COleServerItem::OnDraw  
  OLE öğesini bir meta dosyasında işlemek için framework tarafından çağırılır.  
@@ -631,7 +631,7 @@ virtual BOOL OnInitFromData(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *bCreation* doğru ise, bir kapsayıcı yeni geçerli seçime dayanan Nesne Ekle uyguluyorsa, bu işlev çağrılır. Seçilen verileri yeni OLE öğesi oluşturulurken kullanılır. Örneğin, ne zaman bir elektronik tablo programında bir hücre aralığı seçerek ve ardından bir grafik oluşturmak için Yeni Nesne Ekle kullanarak seçili aralığındaki değerleri temel. Varsayılan uygulama, hiçbir şey yapmaz. Bu işlev tarafından sunulanların kabul edilebilir bir biçimde arasından geçersiz kılma *pDataObject* ve sağlanan verilere dayalı OLE öğesini başlatmak. Bu gelişmiş bir, geçersiz kılınabilir.  
   
- Daha fazla bilgi için [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) Windows SDK.  
+ Daha fazla bilgi için [IOleObject::InitFromData](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-initfromdata) Windows SDK.  
   
 ##  <a name="onopen"></a>  COleServerItem::OnOpen  
  Sunucu uygulaması ayrı bir örneğini yerine yerinde OLE öğesini göstermek için framework tarafından çağırılır.  
@@ -645,7 +645,7 @@ virtual void OnOpen();
   
  OLE öğesini açılırken özel işlem gerçekleştirmek istiyorsanız, bu işlev geçersiz kılar. Bu, özellikle açıldığında seçimi bağlantısını ayarlamak istediğiniz yerde bağlantılı öğeler ile yaygındır.  
   
- Daha fazla bilgi için [IOleClientSite::OnShowWindow](http://msdn.microsoft.com/library/windows/desktop/ms688658) Windows SDK.  
+ Daha fazla bilgi için [IOleClientSite::OnShowWindow](/windows/desktop/api/oleidl/nf-oleidl-ioleclientsite-onshowwindow) Windows SDK.  
   
 ##  <a name="onqueryupdateitems"></a>  COleServerItem::OnQueryUpdateItems  
  Herhangi bir bağlantılı öğenin geçerli sunucu belgedeki güncel olup olmadığını belirlemek için framework tarafından çağırılır.  
@@ -671,10 +671,10 @@ virtual BOOL OnRenderData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpFormatEtc*  
- İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) içinde bilgi istenen biçimi belirten yapısı.  
+ İşaret [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) içinde bilgi istenen biçimi belirten yapısı.  
   
  *lpStgMedium*  
- İşaret eden bir [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) veri olduğu döndürülecek yapısı.  
+ İşaret eden bir [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) veri olduğu döndürülecek yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -686,7 +686,7 @@ virtual BOOL OnRenderData(
   
  Bu gelişmiş bir, geçersiz kılınabilir. Orta ve istenen biçimi verilerinizdeki sağlamak için bu işlevi geçersiz kılar. Verilerinizi bağlı olarak, bunun yerine bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Verilerinizi, küçük ve sabit boyutu ise, geçersiz kılma `OnRenderGlobalData`. Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma `OnRenderFileData`.  
   
- Daha fazla bilgi için [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431), [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812), [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177), ve [ortam türü](http://msdn.microsoft.com/library/windows/desktop/ms691227) Windows SDK.  
+ Daha fazla bilgi için [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata), [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), ve [ortam türü](/windows/desktop/api/objidl/ne-objidl-tagtymed) Windows SDK.  
   
 ##  <a name="onrenderfiledata"></a>  COleServerItem::OnRenderFileData  
  Depolama ortamına bir dosya olduğunda belirtilen biçimden veri almak için framework tarafından çağırılır.  
@@ -699,7 +699,7 @@ virtual BOOL OnRenderFileData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpFormatEtc*  
- İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) içinde bilgi istenen biçimi belirten yapısı.  
+ İşaret [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) içinde bilgi istenen biçimi belirten yapısı.  
   
  *pFile*  
  İşaret eden bir `CFile` veri olduğu işlenecek nesne.  
@@ -712,7 +712,7 @@ virtual BOOL OnRenderFileData(
   
  Bu gelişmiş bir, geçersiz kılınabilir. Orta ve istenen biçimi verilerinizdeki sağlamak için bu işlevi geçersiz kılar. Verilerinizi bağlı olarak, bunun yerine, bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamlarının işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma [OnRenderFileData](#onrenderfiledata).  
   
- Daha fazla bilgi için [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK.  
+ Daha fazla bilgi için [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK.  
   
 ##  <a name="onrenderglobaldata"></a>  COleServerItem::OnRenderGlobalData  
  Belirtilen depolama ortamına genel bellek olduğunda belirtilen biçimden veri almak için framework tarafından çağırılır.  
@@ -725,7 +725,7 @@ virtual BOOL OnRenderGlobalData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpFormatEtc*  
- İşaret [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) içinde bilgi istenen biçimi belirten yapısı.  
+ İşaret [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) içinde bilgi istenen biçimi belirten yapısı.  
   
  *phGlobal*  
  Genel bellek verileri döndürülecek olduğu için bir tanıtıcı işaret eder. Ayrılan bellek yok, bu parametre NULL olabilir.  
@@ -740,7 +740,7 @@ virtual BOOL OnRenderGlobalData(
   
  Bu gelişmiş bir, geçersiz kılınabilir. Orta ve istenen biçimi verilerinizdeki sağlamak için bu işlevi geçersiz kılar. Verilerinizi bağlı olarak, bunun yerine bu işlevin diğer sürümlerden biri geçersiz kılmak isteyebilirsiniz. Birden çok depolama ortamlarının işlemek isterseniz, geçersiz kılma [OnRenderData](#onrenderdata). Verilerinizi bir dosyaya veya bir değişken boyutu, geçersiz kılma [OnRenderFileData](#onrenderfiledata).  
   
- Daha fazla bilgi için [IDataObject::GetData](http://msdn.microsoft.com/library/windows/desktop/ms678431) ve [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) Windows SDK.  
+ Daha fazla bilgi için [IDataObject::GetData](/windows/desktop/api/objidl/nf-objidl-idataobject-getdata) ve [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) Windows SDK.  
   
 ##  <a name="onsetcolorscheme"></a>  COleServerItem::OnSetColorScheme  
  OLE öğesini düzenlerken kullanılacak renk paletini belirlemek için framework tarafından çağırılır.  
@@ -751,15 +751,15 @@ virtual BOOL OnSetColorScheme(const LOGPALETTE* lpLogPalette);
   
 ### <a name="parameters"></a>Parametreler  
  *lpLogPalette*  
- Bir Windows işaretçisine [LOGPALETTE](http://msdn.microsoft.com/library/windows/desktop/dd145040) yapısı.  
+ Bir Windows işaretçisine [LOGPALETTE](/windows/desktop/api/wingdi/ns-wingdi-taglogpalette) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Renk paletini kullanılan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kapsayıcı uygulaması, Microsoft Foundation Class Kitaplığı kullanılarak yazılmış olduğundan, bu işlev aldığında çağrılan [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) karşılık gelen işlevi `COleClientItem` nesne çağrılır. Varsayılan uygulama false değerini döndürür. Önerilen paleti kullanmak istiyorsanız, bu işlev geçersiz kılar. Sunucu uygulaması, önerilen paleti kullanmak için gerekli değildir.  
+ Kapsayıcı uygulaması, Microsoft Foundation Class Kitaplığı kullanılarak yazılmış olduğundan, bu işlev aldığında çağrılan [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) karşılık gelen işlevi `COleClientItem` nesne çağrılır. Varsayılan uygulama false değerini döndürür. Önerilen paleti kullanmak istiyorsanız, bu işlev geçersiz kılar. Sunucu uygulaması, önerilen paleti kullanmak için gerekli değildir.  
   
- Daha fazla bilgi için [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) Windows SDK.  
+ Daha fazla bilgi için [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) Windows SDK.  
   
 ##  <a name="onsetdata"></a>  COleServerItem::OnSetData  
  Belirtilen verilerle OLE öğesinin verileri değiştirmek için framework tarafından çağırılır.  
@@ -773,10 +773,10 @@ virtual BOOL OnSetData(
   
 ### <a name="parameters"></a>Parametreler  
  *lpFormatEtc*  
- İşaretçi bir [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177) yapısı veri biçimini belirleme.  
+ İşaretçi bir [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc) yapısı veri biçimini belirleme.  
   
  *lpStgMedium*  
- İşaretçi bir [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812) verilerin bulunduğu yapı.  
+ İşaretçi bir [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium) verilerin bulunduğu yapı.  
   
  *bRelease*  
  İşlev çağrısı tamamladıktan sonra depolama ortamı sahipliğini kimlerin gösterir. Çağıranın kimin adına depolama ortamına ayrılan kaynakları serbest bırakmak için sorumlu olduğunu belirler. Çağıranın bu ayarlayarak yapar *bRelease*. Varsa *bRelease* olan sıfır değilse, sunucu öğesi kullanmadan tamamlandığında ortam boşaltma, aittir. Zaman *bRelease* 0 ise, çağırana sahipliği korur ve sunucu öğesi yalnızca çağrı süresi boyunca depolama ortamı kullanabilirsiniz.  
@@ -785,11 +785,11 @@ virtual BOOL OnSetData(
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Sunucu öğesi, bu alınırken başarıyla kadar veri sahipliğini almaz. Diğer bir deyişle, 0 döndürürse sahipliği almaz. Veri kaynağı sahipliği alırsa, depolama ortamı çağırarak serbest bıraktığı [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) işlevi.  
+ Sunucu öğesi, bu alınırken başarıyla kadar veri sahipliğini almaz. Diğer bir deyişle, 0 döndürürse sahipliği almaz. Veri kaynağı sahipliği alırsa, depolama ortamı çağırarak serbest bıraktığı [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) işlevi.  
   
  Varsayılan uygulama, hiçbir şey yapmaz. Bu işlev, belirtilen verilerle OLE öğesinin verileri değiştirmek için geçersiz kılın. Bu gelişmiş bir, geçersiz kılınabilir.  
   
- Daha fazla bilgi için [STGMEDIUM](http://msdn.microsoft.com/library/windows/desktop/ms683812), [FORMATETC](http://msdn.microsoft.com/library/windows/desktop/ms682177), ve [ReleaseStgMedium](http://msdn.microsoft.com/library/windows/desktop/ms693491) Windows SDK.  
+ Daha fazla bilgi için [STGMEDIUM](/windows/desktop/api/objidl/ns-objidl-tagstgmedium), [FORMATETC](/windows/desktop/api/objidl/ns-objidl-tagformatetc), ve [ReleaseStgMedium](/windows/desktop/api/ole2/nf-ole2-releasestgmedium) Windows SDK.  
   
 ##  <a name="onsetextent"></a>  COleServerItem::OnSetExtent  
  OLE öğesini ne kadar kapsayıcı belge için kullanılabilir alanı bildirmek için framework tarafından çağırılır.  

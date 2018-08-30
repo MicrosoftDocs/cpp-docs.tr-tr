@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f816e4fd83439b528e6f2ab92212c763d769bed
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: bf937f11118cfbea26db11ba48ea0ed65d903af6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853062"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217161"
 ---
 # <a name="coblist-class"></a>CObList sınıfı
 Sipariş edilen listelerini listeler fSupports `CObject` işaretçileri erişilebilir sırayla veya işaretçinin değerine göre.  
@@ -160,8 +160,8 @@ void AddHead(CObList* pNewList);
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddHead (void\***  `newElement` **);**<br /><br /> **void AddHead (CPtrList\***  `pNewList` **);**|  
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddHead (const CString &** `newElement` **);**<br /><br /> **Konum AddHead (LPCTSTR** `newElement` **);**<br /><br /> **void AddHead (CStringList\***  `pNewList` **);**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddHead (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddHead (CPtrList** <strong>\*</strong> `pNewList` **);**|  
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddHead (const CString &** `newElement` **);**<br /><br /> **Konum AddHead (LPCTSTR** `newElement` **);**<br /><br /> **void AddHead (CStringList** <strong>\*</strong> `pNewList` **);**|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Liste işlemi önce boş olabilir.  
@@ -204,8 +204,8 @@ void AddTail(CObList* pNewList);
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddTail (void\***  `newElement` **);**<br /><br /> **void AddTail (CPtrList\***  `pNewList` **);**|  
-|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddTail (const CString &** `newElement` **);**<br /><br /> **Konum AddTail (LPCTSTR** `newElement` **);**<br /><br /> **void AddTail (CStringList\***  `pNewList` **);**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum AddTail (void** <strong>\*</strong> `newElement` **);**<br /><br /> **void AddTail (CPtrList** <strong>\*</strong> `pNewList` **);**|  
+|[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum AddTail (const CString &** `newElement` **);**<br /><br /> **Konum AddTail (LPCTSTR** `newElement` **);**<br /><br /> **void AddTail (CStringList** <strong>\*</strong> `pNewList` **);**|  
   
 ### <a name="example"></a>Örnek  
   Bkz: [CObList::CObList](#coblist) bir listesi için `CAge` sınıfı.  
@@ -276,7 +276,7 @@ POSITION Find(
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Bul (void\***  `searchValue` **, konumu** `startAfter` **= NULL) const;**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Bul (void** <strong>\*</strong> `searchValue` **, konumu** `startAfter` **= NULL) const;**|  
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Bul (LPCTSTR** `searchValue` **, konumu** `startAfter` **= NULL) const;**|  
   
 ### <a name="example"></a>Örnek  
@@ -598,7 +598,7 @@ POSITION InsertAfter(
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum InsertAfter (konum** *konumu* **, void\***  `newElement` **);**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum InsertAfter (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|  
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum InsertAfter (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Konum InsertAfter (konum** *konumu* **, LPCTSTR** `newElement` **);**|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -642,7 +642,7 @@ POSITION InsertBefore(
   
 |örneği|Üye İşlevi|  
 |-----------|---------------------|  
-|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Insertbefore (konum** *konumu* **, void\***  `newElement` **);**|  
+|[CPtrList](../../mfc/reference/cptrlist-class.md)|**Konum Insertbefore (konum** *konumu* **, void** <strong>\*</strong> `newElement` **);**|  
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**Konum Insertbefore (konum** *konumu* **, const CString &** `newElement` **);**<br /><br /> **Konum Insertbefore (konum** *konumu* **, LPCTSTR** `newElement` **);**|  
   
 ### <a name="example"></a>Örnek  

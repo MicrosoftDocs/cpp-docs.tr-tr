@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48a8ccb49001b93ded52edc732fc59222775e6f8
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: dc7e4104e6555ada88483336917708db943be2a0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954033"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210585"
 ---
 # <a name="cconstanttransition-class"></a>CConstantTransition sınıfı
-Bir sabit geçiş yalıtır.  
+Bir sabit geçişi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,7 +44,7 @@ class CConstantTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CConstantTransition::CConstantTransition](#cconstanttransition)|Bir geçiş nesnesi oluşturur ve süresi başlatır.|  
+|[CConstantTransition::CConstantTransition](#cconstanttransition)|Bir geçiş nesnesi oluşturur ve süresinin başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -59,7 +59,7 @@ class CConstantTransition : public CBaseTransition;
 |[CConstantTransition::m_duration](#m_duration)|Geçiş süresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sabit bir geçiş sırasında bir animasyon değişkenin değerini geçiş süresi boyunca ilk değerinde kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir sabit geçişi sırasında bir animasyon değişkeninin değeri ilk değer geçiş süresi boyunca kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -72,14 +72,14 @@ class CConstantTransition : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="cconstanttransition"></a>  CConstantTransition::CConstantTransition  
- Bir geçiş nesnesi oluşturur ve süresi başlatır.  
+ Bir geçiş nesnesi oluşturur ve süresinin başlatır.  
   
 ```  
 CConstantTransition (UI_ANIMATION_SECONDS duration);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Süre*  
+ *Süresi*  
  Geçiş süresi.  
   
 ##  <a name="create"></a>  CConstantTransition::Create  
@@ -93,10 +93,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_duration"></a>  CConstantTransition::m_duration  
  Geçiş süresi.  

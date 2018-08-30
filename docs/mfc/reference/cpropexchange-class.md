@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f431ab86762e50f91571a85f0fc60e41d8d711
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f8b63de74a044a55362c2ebafc814fcf0136434d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849636"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216848"
 ---
 # <a name="cpropexchange-class"></a>CPropExchange sınıfı
 OLE denetimleriniz için sürekliliğin uygulanmasını destekler.  
@@ -131,7 +131,7 @@ virtual BOOL ExchangeFontProp(
  Bir başvuru bir [CFontHolder](../../mfc/reference/cfontholder-class.md) font özelliği içeren nesne.  
   
  *pFontDesc*  
- Bir işaretçi bir [FONTDESC](http://msdn.microsoft.com/library/windows/desktop/ms692782) font özelliğinin varsayılan durumu için değerleri içeren yapı olduğunda *pFontDispAmbient* null.  
+ Bir işaretçi bir [FONTDESC](/windows/desktop/api/olectl/ns-olectl-tagfontdesc) font özelliğinin varsayılan durumu için değerleri içeren yapı olduğunda *pFontDispAmbient* null.  
   
  *pFontDispAmbient*  
  Bir işaretçi `IFontDisp` font özelliğinin varsayılan durum başlatmak için kullanılacak bir yazı tipi arabirimi.  

@@ -16,19 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d37b49a949ab29e0ae888d9c961da086ee4ca4
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 4369fe312669f75eb8217be7a6a09c4287f7cc8b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928602"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43210719"
 ---
 # <a name="image-overlays-in-image-lists"></a>Görüntü Listelerindeki Görüntü Yer Paylaşımları
-Her resim listesi ([Cımagelist](../mfc/reference/cimagelist-class.md)) katmana maskeleri olarak kullanılacak görüntüleri listesini içerir. Bir "katman" saydam başka bir görüntü çizilmiş bir görüntü maskesidir. Herhangi bir görüntü bir katmana maske olarak kullanılabilir. Resim listesi başına en fazla dört katmana maskeleri belirtebilirsiniz.  
+Her bir görüntü listesi ([Cımagelist](../mfc/reference/cimagelist-class.md)) katman maskeleri olarak kullanılacak görüntülerin bir listesini içerir. Bir "katman maskesi" şeffaf bir şekilde başka bir görüntünün üzerine çizilmiş bir görüntüsüdür. Herhangi bir görüntü, bir katman maskesi kullanılabilir. Görüntü listesi başına en fazla dört katman maskeleri belirtebilirsiniz.  
   
- Kullanarak bir görüntünün dizinini katmana maskeleri listesine eklemek [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) üye işlevi, bir görüntünün dizinini ve bir katmana maskesi dizini. Katmana maskeleri dizinlerini tabanlı yerine sıfır tabanlı olduğunu unutmayın.  
+ Katman maskeleri listesine de bir görüntünün dizinini kullanarak eklemek [SetOverlayImage](../mfc/reference/cimagelist-class.md#setoverlayimage) üye işlevi, bir görüntünün dizinini ve katman maskesi dizini. Katman maskeleri için dizin tabanlı yerine sıfır tabanlı olduğunu unutmayın.  
   
- Tek bir çağrı kullanarak görüntü üzerinde bir katmana maskesi çizin `Draw`. Parametreleri çizin için görüntünün dizinini ve bir katmana maskesi dizini içerir. Kullanmalısınız [INDEXTOOVERLAYMASK](http://msdn.microsoft.com/library/windows/desktop/bb761408) makrosu katmana maskesi dizinini belirtin. Bir katmana görüntü çağrılırken belirtebilirsiniz [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) üye işlevi.  
+ Bir katman maskesi üzerinden tek bir çağrı kullanarak görüntü çizme `Draw`. Parametreleri çizmek için görüntünün dizinini ve katman maskesi dizinini içerir. Kullanmalısınız [INDEXTOOVERLAYMASK](/windows/desktop/api/commctrl/nf-commctrl-indextooverlaymask) makrosuna katman maskesi dizinini belirtin. Bir katmana görüntü çağırırken belirtebilirsiniz [DrawIndirect](../mfc/reference/cimagelist-class.md#drawindirect) üye işlevi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cımagelist kullanma](../mfc/using-cimagelist.md)   

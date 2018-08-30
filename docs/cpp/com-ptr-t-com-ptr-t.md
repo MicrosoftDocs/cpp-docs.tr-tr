@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1ee32e9c94f9bd9d1da4e3d3beaf9bfa0039b8cf
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3824113c1cbf1edc15f4a060dfdcc50df8759c4d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403832"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43215929"
 ---
 # <a name="comptrtcomptrt"></a>_com_ptr_t::_com_ptr_t
 **Microsoft'a özgü**  
@@ -168,7 +168,7 @@ explicit _com_ptr_t(
  Bulunduran çok baytlı bir dize bir `CLSID` (sürümünden itibaren "**{**") veya bir `ProgID`.  
   
  *pOuter*  
- İçin dış bilinmeyen [toplama](http://msdn.microsoft.com/library/windows/desktop/ms686558).  
+ İçin dış bilinmeyen [toplama](/windows/desktop/com/aggregation).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)

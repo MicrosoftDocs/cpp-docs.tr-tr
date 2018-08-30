@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d70989be8e8535336c831cb59fb9422c6e2c63e0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 43f4405ad66ff2d6048056780ba7c1581f7b7497
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886238"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212540"
 ---
 # <a name="iconnectionpointcontainerimpl-class"></a>Iconnectionpointcontainerımpl sınıfı
 Bu sınıfın uyguladığı bir koleksiyonu yönetmek için bir bağlantı noktası kapsayıcı [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md) nesneleri.  
@@ -77,7 +77,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPointContainer::EnumConnectionPoints](http://msdn.microsoft.com/library/windows/desktop/ms682460) Windows SDK içinde.  
+ Bkz: [IConnectionPointContainer::EnumConnectionPoints](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) Windows SDK içinde.  
   
 ##  <a name="findconnectionpoint"></a>  IConnectionPointContainerImpl::FindConnectionPoint  
  Belirtilen IID destekleyen bağlantı noktası için bir arabirim işaretçisi alır.  
@@ -87,8 +87,8 @@ STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPointContainer::FindConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms692476) Windows SDK içinde.  
+ Bkz: [IConnectionPointContainer::FindConnectionPoint](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms683857)   
+ [IConnectionPointContainer](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpointcontainer)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

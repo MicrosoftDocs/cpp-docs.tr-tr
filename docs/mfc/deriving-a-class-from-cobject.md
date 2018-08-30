@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05828283f560e73d4c5d2ddf2cbc05963cbb217f
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: e9e098890a90b76da8452fb2a2ca86222b49c296
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026123"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43198261"
 ---
 # <a name="deriving-a-class-from-cobject"></a>CObject'ten Sınıf Türetme
 Öğesinden bir sınıf türetmek gerekli en azından aşağıdaki adımlar bu makalede [CObject](../mfc/reference/cobject-class.md). Diğer `CObject` sınıfı makaleler özgü avantajlarından yararlanmak için gereken adımları açıklar `CObject` seri hale getirme ve tanılama hata ayıklama desteği gibi özellikleri.  
@@ -68,7 +68,7 @@ ms.locfileid: "39026123"
   
      [!code-cpp[NVC_MFCCObjectSample#1](../mfc/codesnippet/cpp/deriving-a-class-from-cobject_1.h)]  
   
- Normalde, ancak, bazı geçersiz kılmak isteyebilirsiniz `CObject`ait yeni sınıfınıza ayrıntılarını işlemek için üye işlevleri. Örneğin, genellikle geçersiz kılmak istediğiniz `Dump` işlevi `CObject` sınıfınızın içeriği için hata ayıklama çıktısı sağlamak için. Geçersiz kılma hakkında ayrıntılar için `Dump`, makaleye göz atın [Tanılama: nesne içeriğini dökme](http://msdn.microsoft.com/727855b1-5a83-44bd-9fe3-f1d535584b59). Geçersiz kılmak isteyebilirsiniz `AssertValid` işlevi `CObject` özelleştirilmiş veri üyeleri sınıf nesnelerinin tutarlılığını doğrulamak için sınama sağlamak için. Geçersiz kılma açıklamasını `AssertValid`, bkz: [MFC assert_valıd ve CObject::AssertValid](http://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6).  
+ Normalde, ancak, bazı geçersiz kılmak isteyebilirsiniz `CObject`ait yeni sınıfınıza ayrıntılarını işlemek için üye işlevleri. Örneğin, genellikle geçersiz kılmak istediğiniz `Dump` işlevi `CObject` sınıfınızın içeriği için hata ayıklama çıktısı sağlamak için. Geçersiz kılma hakkında ayrıntılar için `Dump`, makaleye göz atın [Tanılama: nesne içeriğini dökme](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\)). Geçersiz kılmak isteyebilirsiniz `AssertValid` işlevi `CObject` özelleştirilmiş veri üyeleri sınıf nesnelerinin tutarlılığını doğrulamak için sınama sağlamak için. Geçersiz kılma açıklamasını `AssertValid`, bkz: [MFC assert_valıd ve CObject::AssertValid](/previous-versions/visualstudio/visual-studio-2010/38z04tfa\(v=vs.100\)).  
   
  Makaleyi [düzeyleri işlevi belirterek](../mfc/specifying-levels-of-functionality.md) işlevsellik, çalışma zamanı sınıf bilgileri, dinamik Nesne oluşturma ve seri hale getirme gibi diğer düzeylerini belirtin açıklar.  
   

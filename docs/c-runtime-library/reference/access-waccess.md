@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ada1377efea8bd05dea1fd59dbbe6cd4495e6ea2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 77876aad65a06cd541949937898496f811375e58
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404648"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209609"
 ---
 # <a name="access-waccess"></a>_access, _waccess
 
@@ -96,7 +96,7 @@ Dosyaları ile kullanıldığında **_erişim** işlevi, belirtilen dosya veya d
 |04|salt okunur|
 |06|Okuma ve yazma|
 
-Bu işlev yalnızca dosya ve dizin veya değil, dosya sistemi güvenlik ayarlarını denetlemez salt okunur olup olmadığını denetler. Bunun için bir erişim belirteci gerekir. Dosya sistemi güvenlik hakkında daha fazla bilgi için bkz. [erişim belirteçleri](http://msdn.microsoft.com/library/windows/desktop/aa374909). Bu işlevselliği sağlayacak şekilde ATL sınıfı var; bkz: [CAccessToken sınıfı](../../atl/reference/caccesstoken-class.md).
+Bu işlev yalnızca dosya ve dizin veya değil, dosya sistemi güvenlik ayarlarını denetlemez salt okunur olup olmadığını denetler. Bunun için bir erişim belirteci gerekir. Dosya sistemi güvenlik hakkında daha fazla bilgi için bkz. [erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens). Bu işlevselliği sağlayacak şekilde ATL sınıfı var; bkz: [CAccessToken sınıfı](../../atl/reference/caccesstoken-class.md).
 
 **_waccess** geniş karakterli sürümüdür **_erişim**; *yolu* bağımsız değişkeni **_waccess** geniş karakterli bir dizedir. **_waccess** ve **_erişim** aynı şekilde davranır.
 

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88afe292905ee46c1e939d29f787055f98058dc9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: acb7b173ffd22e65e20dcc9cceef61b2e2131c83
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372184"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213407"
 ---
 # <a name="assemblyresource-embed-a-managed-resource"></a>/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)
 ```  
@@ -35,21 +35,21 @@ ms.locfileid: "32372184"
   
 ## <a name="parameters"></a>Parametreler  
  *Dosya adı*  
- Bu derlemede katıştırmak istediğiniz yönetilen kaynak.  
+ Bu derlemede katıştırmak için istediğiniz yönetilen kaynak.  
   
  *Adı*  
- İsteğe bağlı. Kaynak için mantıksal ad; kaynağı yüklemek için kullanılan ad. Varsayılan dosya adıdır.  
+ İsteğe bağlı. Kaynağın mantıksal adı; Kaynak yüklemek için kullanılan ad. Varsayılan dosya adıdır.  
   
- İsteğe bağlı olarak, dosya derleme bildiriminde özel olup olmayacağını belirtebilirsiniz. Varsayılan olarak, *adı* bütünleştirilmiş kodunda geneldir.  
+ İsteğe bağlı olarak dosyanın derleme bildiriminde özel olup olmayacağını belirtebilirsiniz. Varsayılan olarak, *adı* derleme içinde geneldir.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir kaynak derlemede katıştırmak için /ASSEMBLYRESOURCE seçeneğini kullanın.  
+ Bir kaynak derlemede katıştırmak için koduna konmaz seçeneği kullanın.  
   
- Bağlayıcı ile oluşturduğunuzda derlemesindeki ortak kaynaklardır. Bağlayıcı derlemedeki kaynağın yeniden adlandırmak izin vermiyor.  
+ Bağlayıcı ile oluşturulan derleme içinde geneldir kaynaklardır. Bağlayıcı derlemedeki kaynağı yeniden adlandırmak izin vermez.  
   
- Varsa *filename* , örneğin, tarafından oluşturulan bir .NET Framework kaynak (.resources) dosyası [kaynak dosya oluşturucu (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında, bu üyelerle erişilebilir **System.Resources** ad alanı (bkz [System.Resources.ResourceManager](https://msdn.microsoft.com/en-us/library/system.resources.resourcemanager.aspx) daha fazla bilgi için). Diğer tüm kaynaklar için kullanmak **GetManifestResource** \* yöntemleri **System.Reflection.Assembly** çalışma zamanında kaynağa erişmek için sınıf.  
+ Varsa *filename* , örneğin, tarafından oluşturulmuş bir .NET Framework kaynak (.resources) dosyası [kaynak dosya oluşturucu (Resgen.exe)](/dotnet/framework/tools/resgen-exe-resource-file-generator) veya geliştirme ortamında, bu üye ile erişilebilir **System.Resources** ad alanı (bkz [System.Resources.ResourceManager](https://msdn.microsoft.com/library/system.resources.resourcemanager.aspx) daha fazla bilgi için). Diğer tüm kaynaklar için kullanmak **T:System.Reflection.Assembly** \* yöntemleri **System.Reflection.Assembly** çalışma zamanında kaynağa erişmek için sınıf.  
   
- Derleme oluşturma etkileyen diğer bağlayıcı seçenekleri şunlardır:  
+ Bütünleştirilmiş kod oluşturmayı etkileyen diğer bağlayıcı seçenekleri şunlardır:  
   
 -   [/ ASSEMBLYDEBUG](../../build/reference/assemblydebug-add-debuggableattribute.md)  
   
@@ -67,13 +67,13 @@ ms.locfileid: "32372184"
   
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **bağlayıcı** klasör.  
+2.  Tıklayın **bağlayıcı** klasör.  
   
-3.  Tıklatın **giriş** özellik sayfası.  
+3.  Tıklayın **giriş** özellik sayfası.  
   
-4.  Değiştirme **yönetilen kaynak dosyası ekleme** özelliği.  
+4.  Değiştirme **yönetilen kaynak dosyasını katıştır** özelliği.  
   
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
   

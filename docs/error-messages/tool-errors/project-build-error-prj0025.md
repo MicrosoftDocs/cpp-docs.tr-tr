@@ -1,7 +1,7 @@
 ---
 title: Proje derleme hatası PRJ0025 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 087a5d5af8ed92bdd0446ae87af037acbfd38a95
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 949e36424fc213459e56332c0802d2719581bac1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316991"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209818"
 ---
 # <a name="project-build-error-prj0025"></a>Proje Derleme Hatası PRJ0025
-Toplu iş dosyası 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği içerir.  
-  
- ***Dosya içeriğini UNICODE***  
-  
- Proje sistemi Unicode içeriği özel bir kural oluşturmak veya kullanıcının geçerli ANSI kod sayfasına doğru şekilde çevrilemiyor olay yapı bulunamadı.  
-  
- Yapı kural içeriğini güncelleştirmek veya ANSI kullanın veya bilgisayarınızda kod sayfasını yükleyin ve sistem varsayılan olarak ayarlamak için olay oluşturmak için bu hata için çözünürlük olur.  
-  
- Özel hakkında daha fazla bilgi için derleme adımları ve derleme olayları, bkz: [anlama özel derleme adımlarını ve derleme olaylarını](../../ide/understanding-custom-build-steps-and-build-events.md).
+
+> Toplu iş dosyası '*dosya*' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe sahip.
+>
+> *UNICODE dosya içeriği*
+
+Proje sistemi Unicode içeriğe özel bir kural oluşturun veya derleme kullanıcının geçerli ANSI kod sayfasına doğru çevrilemez olay bulunamadı.
+
+Bu hata için çözüm derleme kuralı içeriğini güncelleştirmek veya derleme ANSI kullanın veya kod sayfası bilgisayarınıza yüklemek ve sistem varsayılan olarak ayarlamak için olay sağlamaktır.
+
+Özel hakkında daha fazla bilgi için derleme adımları ve derleme olayları, bkz: [anlama özel derleme adımlarını ve derleme olayları](../../ide/understanding-custom-build-steps-and-build-events.md).

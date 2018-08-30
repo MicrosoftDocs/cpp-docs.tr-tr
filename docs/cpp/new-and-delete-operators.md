@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2648d3628b8edd8b864dcf69dcfa7acb6d07339
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 3a1470c544e624de4ef9fb570859dca9b282edde
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406669"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208072"
 ---
 # <a name="new-and-delete-operators"></a>new ve delete İşleçleri
 
@@ -55,7 +55,7 @@ Yönelik iki kapsam **new işleci** işlevleri, aşağıdaki tabloda açıklanm�
 |**:: new işleci**|Global|  
 |*sınıf adı* **:: new işleci**|örneği|  
   
- İlk bağımsız değişkeni **new işleci** türünde olmalıdır `size_t` (tanımlanan bir türü \<stddef.h >), ve dönüş türü her zaman **void \*** .  
+ İlk bağımsız değişkeni **new işleci** türünde olmalıdır `size_t` (tanımlanan bir türü \<stddef.h >), ve dönüş türü her zaman **void** <strong>\*</strong>.  
   
  Genel **new işleci** işlevi çağrılır **yeni** işleci yerleşik türlerin nesnelerini, ayırmak için kullanıldığında, içermeyen sınıf türünün nesnelerini kullanıcı tarafından tanımlanan **new işleci** işlevleri ve herhangi bir türde diziler. Zaman **yeni** işleci, sınıf türünden nesneleri ayırmak için kullanılır burada bir **new işleci** tanımlanmışsa, bu sınıfın **new işleci** çağrılır.  
   

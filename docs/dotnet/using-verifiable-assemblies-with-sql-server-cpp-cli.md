@@ -15,15 +15,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: b35675ba0081ec4ea7a1c9559f9a8fb71347cd54
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dfe64e627fd3ca37ab1e1d2d820cafaf3a6a4258
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583825"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199971"
 ---
 # <a name="using-verifiable-assemblies-with-sql-server-ccli"></a>SQL Server ile Doğrulanabilen Derlemeler Kullanma (C++/CLI)
-Genişletilmiş saklı yordamlar, dinamik bağlantı kitaplıkları (DLL'ler), paketlenmiş işlevleri Visual C++ ile geliştirilmiş aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar, DLL'leri iç işlev olarak uygulanır. Ek İşlevler, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevleri](http://msdn.microsoft.com/en-us/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  
+Genişletilmiş saklı yordamlar, dinamik bağlantı kitaplıkları (DLL'ler), paketlenmiş işlevleri Visual C++ ile geliştirilmiş aracılığıyla SQL Server işlevselliği genişletmek için bir yol sağlar. Genişletilmiş saklı yordamlar, DLL'leri iç işlev olarak uygulanır. Ek İşlevler, genişletilmiş saklı yordamlar da tanımlayabilirsiniz [kullanıcı tanımlı türler](../cpp/classes-and-structs-cpp.md) ve [toplama işlevleri](https://msdn.microsoft.com/de255454-f45e-4281-81f9-bc61893ac5da) (örneğin, SUM veya AVG).  
   
  Bir istemci bir genişletilmiş saklı yordamı yürütüldüğünde, SQL Server aramaları DLL için genişletilmiş saklı yordamı ile ilişkili ve DLL'yi yükler. SQL Server, istenen genişletilmiş saklı yordam çağrıları ve belirtilen güvenlik bağlamı altında çalışır. Geçişleri sonucu ayarlar ve parametreler sunucuya geri döndürür genişletilmiş saklı yordamı.  
   

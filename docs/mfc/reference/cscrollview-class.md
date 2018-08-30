@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43ad1d1d047b9e44da27d1c9eb24dde39fd429ef
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: b1a4d3d44f7ce18486feab4096673970857a0907
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849922"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214983"
 ---
 # <a name="cscrollview-class"></a>CScrollView sınıfı
 A [CView](../../mfc/reference/cview-class.md) kaydırma özelliğine sahip.  
@@ -86,9 +86,9 @@ class CScrollView : public CView
   
 -   Klavye, fare kaydırma olmayan ya da IntelliMouse tekerleğini yanıt iletilerine otomatik olarak kayar.  
   
- Klavye yanıt iletilerine otomatik olarak kaydırmak için WM_KEYDOWN iletisi ekleyin ve test VK_DOWN, VK_PREV ve çağrı [SetScrollPos](http://msdn.microsoft.com/library/windows/desktop/bb787597).  
+ Klavye yanıt iletilerine otomatik olarak kaydırmak için WM_KEYDOWN iletisi ekleyin ve test VK_DOWN, VK_PREV ve çağrı [SetScrollPos](/windows/desktop/api/winuser/nf-winuser-setscrollpos).  
   
- Fare tekerleği kendiniz ileti eşlemeli geçersiz kılarak kaydırma işleyebilir [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) ve [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) üye işlevleri. İçin oldukları gibi `CScrollView`, bu üye işlevleri desteklemek için önerilen davranışı [WM_MOUSEWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645617), tekerlek döndürme ileti.  
+ Fare tekerleği kendiniz ileti eşlemeli geçersiz kılarak kaydırma işleyebilir [OnMouseWheel](../../mfc/reference/cwnd-class.md#onmousewheel) ve [OnRegisteredMouseWheel](../../mfc/reference/cwnd-class.md#onregisteredmousewheel) üye işlevleri. İçin oldukları gibi `CScrollView`, bu üye işlevleri desteklemek için önerilen davranışı [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel), tekerlek döndürme ileti.  
   
  Otomatik kaydırma avantajından yararlanmak için görünümü sınıfından türetilen `CScrollView` yerine gelen `CView`. Görünüm ilk oluşturulduğunda, belge, çağrı boyutuna göre kaydırılabilir görünümü boyutunu hesaplamak isterseniz `SetScrollSizes` kılacağınızı ya da üye işlev [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) veya [ CView::OnUpdate](../../mfc/reference/cview-class.md#onupdate). (Belgenin boyutunu sorgulamak için kendi kodunuzu yazmanız gerekir. Bir örnek için bkz. [Scribble örneğinin](../../visual-cpp-samples.md).)  
   

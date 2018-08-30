@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62f766aa4df157fdb4b422ea8143be11e91621e2
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: a54e0ba354e76996d03503e116008aa200b0905b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465189"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199363"
 ---
 # <a name="file-handling"></a>Dosya İşleme
 
@@ -90,7 +90,7 @@ Bu yordamların arasında dosya gösterimini değiştirmek için bir yol sağlay
 
 - [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 
-- [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
+- [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)
 
 - [CreateNamedPipe](/windows/desktop/api/winbase/nf-winbase-createnamedpipea)
 

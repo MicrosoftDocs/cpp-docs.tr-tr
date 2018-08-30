@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b238a496718088f0251faa49281fdc8939c01c7
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: a51544f1e367e1db0b5ae72948af68fbedfa7504
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408365"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43209734"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>Çarpan İşleçleri ve Modulus İşleci
 ## <a name="syntax"></a>Sözdizimi  
@@ -44,15 +44,15 @@ expression % expression
 ## <a name="remarks"></a>Açıklamalar  
  Çarpma işleçleri şunlardır:  
   
--   Çarpma (**\***)  
+-   Çarpma (<strong>\*</strong>)  
   
 -   Bölme (**/**)  
   
--   Mod (bölmeden kalan) (`%`)  
+-   Mod (bölmeden kalan) (**%**)  
   
  Bu ikili işleçlerde soldan sağa ilişkilendirilebilirlik vardır.  
   
- Çarpma işleçleri aritmetik türlerin işlenenlerini alır. Modulus işleci (`%`), işlenenlerinin integral türünde olmalıdır, bir katı gereksinimine sahiptir. (Kayan nokta bölme kalanını almak için çalışma zamanı işlevini [fmod](../c-runtime-library/reference/fmod-fmodf.md).) İçinde kapsanan dönüştürmeler [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır ve sonuç dönüştürülmüş türü verir.  
+ Çarpma işleçleri aritmetik türlerin işlenenlerini alır. Modulus işleci (**%**), işlenenlerinin integral türünde olmalıdır, bir katı gereksinimine sahiptir. (Kayan nokta bölme kalanını almak için çalışma zamanı işlevini [fmod](../c-runtime-library/reference/fmod-fmodf.md).) İçinde kapsanan dönüştürmeler [standart dönüştürmeler](standard-conversions.md) işlenenlere uygulanır ve sonuç dönüştürülmüş türü verir.  
   
  Çarpma işleci, birinci işlenenin ikinci işlenen ile çarpımının sonucu verir.  
   

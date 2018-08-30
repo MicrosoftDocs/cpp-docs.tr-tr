@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0dff1d6ce31f6b26c0f8a46ef2ff620a4d40f93
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 69421faced2873a4083cc6edbf7dd86e15f3cd9e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33322295"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199089"
 ---
 # <a name="ltsummarygt-visual-c"></a>&lt;Özet&gt; (Visual C++)
-\<Özet > etiketi, bir tür veya bir tür üyesi açıklamak için kullanılmalıdır. Kullanım [ \<açıklamalar >](../ide/remarks-visual-cpp.md) türü açıklaması için ek bilgiler eklemek için.  
+\<Özet > etiketi, bir tür veya tür üye tanımlamak için kullanılmalıdır. Kullanım [ \<remarks >](../ide/remarks-visual-cpp.md) ek bilgiler bir tür tanımı eklemek için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,12 +36,12 @@ ms.locfileid: "33322295"
   
 #### <a name="parameters"></a>Parametreler  
  `description`  
- Nesne özeti.  
+ Nesne bir özeti.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Metni \<Özet > etiketi IntelliSense türüyle ilgili bilgiler yalnızca kaynağı ve de görüntülenir [Nesne Tarayıcısı](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470) ve kod açıklama Web raporu.  
+ Metni \<Özet > etiketi yalnızca kaynak ıntellisense'te tür hakkında bilgilerin ve bir de görüntülenir [Nesne Tarayıcısı](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) ve kod açıklaması Web raporu.  
   
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   

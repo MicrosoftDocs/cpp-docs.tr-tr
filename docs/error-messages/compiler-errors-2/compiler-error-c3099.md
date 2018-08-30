@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27059beb1cb587b9060da8c5cc5702ea966422f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea57a79fab92152824b7c9aaf0c5d50c14fee32e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249761"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212001"
 ---
 # <a name="compiler-error-c3099"></a>Derleyici Hatası C3099
-'anahtar sözcüğü': [System::AttributeUsageAttribute] yönetilen özniteliklerini; kullanın [Windows::Foundation::Metadata::AttributeUsageAttribute] WinRT öznitelikleri için kullanın  
+'anahtar sözcüğü': [System::AttributeUsageAttribute] yönetilen öznitelikleri için; kullanın. [Windows::Foundation::Metadata::AttributeUsageAttribute] WinRT öznitelikleri için kullanın.  
   
- Kullanım <xref:System.AttributeUsageAttribute> bildirmek için **/CLR** öznitelikleri. Kullanım `Windows::Foundation::Metadata::AttributeUsageAttribute` Windows çalışma zamanı öznitelikleri bildirmek için.  
+ Kullanım <xref:System.AttributeUsageAttribute> bildirmek için **/CLR** öznitelikleri. Kullanım `Windows::Foundation::Metadata::AttributeUsageAttribute` Windows çalışma zamanı öznitelik bildirmek için.  
   
- / CLR öznitelikleri hakkında daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md). Windows çalışma zamanı desteklenen öznitelikleri için bkz: [Windows.Foundation.Metadata ad alanı](http://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.aspx)  
+ / CLR öznitelikleri hakkında daha fazla bilgi için bkz. [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md). Windows çalışma zamanı için desteklenen öznitelik [Windows.Foundation.Metadata ad alanı](https://msdn.microsoft.com/library/windows/apps/windows.foundation.metadata.aspx)  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3099 oluşturur ve nasıl düzeltileceği gösterir.  
+ Aşağıdaki örnek, C3099 oluşturur ve bu sorunun nasıl gösterir.  
   
 ```  
 // C3099.cpp  

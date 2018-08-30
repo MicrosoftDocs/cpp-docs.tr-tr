@@ -18,30 +18,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0960e94acdbe660474efbeeddd0f72fa4f0606f6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 16f135011f7b67debdf51f6ddbde00a79d130602
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34257068"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43199698"
 ---
 # <a name="deployment-concepts"></a>Dağıtım Kavramları
 
-Bu bölümde, C++ uygulamaları dağıtmak için ana hususlar anlatılmaktadır.
+Bu bölüm, C++ uygulamaları dağıtmak için ana hususlar anlatılmaktadır.
 
 ## <a name="windows-installer-deployment-in-c"></a>C++'ta Windows Installer dağıtımı
 
-Visual C++ projeleri, genellikle geleneksel Windows Installer Kurulum dağıtım için kullanın. Windows Installer dağıtımı hazırlamak için setup.exe dosyasını uygulamanızda paketini ve Installer (.msi) paketi ile birlikte bu dosyayı dağıtın. Kullanıcılar daha sonra uygulamanızı yüklemek için Setup.exe'yi çalıştırın.
+Visual C++ projeleri, dağıtım için genellikle geleneksel Windows Installer Kurulumu'nu kullanın. Bir Windows Installer dağıtımı hazırlama için setup.exe dosyasını uygulamanızda paketini ve bir yükleyici paketi (.msi) ile birlikte bu dosyayı dağıtma. Kullanıcılar daha sonra uygulamanızı yüklemek için Setup.exe'yi çalıştırın.
 
-Çözümünüze bir kurulum projesi ekleyerek uygulamanızı paketini; yapılandırıldığında, Kurulum ve yükleyici, kullanıcılara dağıttığınız paket dosyaları oluşturur. Daha fazla bilgi için bkz: [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).
+Çözümünüze bir kurulum projesi ekleyerek, uygulamanızı paketlemek; yapılandırıldığında, Kurulum ve yükleyici, kullanıcılara dağıttığınız paket dosyaları oluşturur. Daha fazla bilgi için [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).
 
 ## <a name="library-dependencies"></a>Kitaplık bağımlılıkları
 
-C/C++ uygulamasına Visual C++ kitaplıkları tarafından sağlanan işlevsellik kullanılarak yapılandırıldığında, çalışma zamanında o kitaplıkların varlıklarına bağımlı olur. Uygulamayı çalıştırmak için sırayla, statik veya dinamik olarak gerekli Visual C++ kitaplıkları Bağla gerekir. Bunu yüklenebilmesi için bir uygulama dinamik olarak bağlantılar için bir Visual C++ Kitaplık, ardından bu kitaplığın çalıştığında mevcut olması gerekir. Uygulama için bir Visual C++ Kitaplık statik olarak bağlanıyorsa, diğer taraftan, ardından bunu ilgili DLL'lerin kullanıcının bilgisayarda mevcut olması gerekmez. Statik bağlama, ancak uygulama dosyalarının boyutunu artırma ve Bakım potansiyel olarak çok daha zorlaşır gibi bazı olumsuz etkileri vardır. Daha fazla bilgi için bkz: [DLL'leri kullanmanın yararları](../build/dlls-in-visual-cpp.md#advantages-of-using-dlls).
+Visual C++ kitaplıkları tarafından sağlanan işlevsellik kullanarak C/C++ uygulamasına yapılandırıldığında, çalışma zamanında bu kitaplıkları varlığını bağımlı olur. Uygulamayı çalıştırmak için sırada bu, statik veya dinamik olarak, gerekli Visual C++ kitaplıklarına bağlamanız gerekir. Bunu yüklenebilmesi için bir uygulama dinamik olarak bağlantılar için Visual C++ Kitaplık, ardından bu kitaplığın çalıştığında mevcut olması gerekir. Uygulama için bir Visual C++ Kitaplık statik olarak bağlanıyorsa, öte yandan, ardından bunu ilgili DLL'lerin kullanıcının bilgisayarında mevcut olması gerekmez. Statik bağlama, ancak uygulama dosyalarının boyutunu artırma ve Bakım potansiyel olarak daha zor hale getirme gibi bazı olumsuz etkileri vardır. Daha fazla bilgi için [DLL'leri kullanmanın yararları](../build/dlls-in-visual-cpp.md#advantages-of-using-dlls).
 
 ## <a name="packaging-and-redistributing"></a>Paketleme ve dağıtma
 
-Visual C++ kitaplıkları DLL'ler olarak paketlenir ve C/C++ uygulamaları için gerekli tüm kitaplıklar geliştiricinin bilgisayarında Visual Studio tarafından yüklenir. Ancak, kullanıcılarınızın uygulamanıza dağıtırken, bunları uygulamanızı çalıştırmak için Visual Studio'yu yüklemek için gerektirecek şekilde, çoğu durumda uygun değil. Yalnızca doğru çalışması için uygulamanız tarafından gerekli olan Visual C++ bölümlerini yeniden dağıtmak önemlidir.
+Visual C++ kitaplıkları dll paketlenir ve C/C++ uygulamaları için gerekli tüm kitaplıkların geliştiricinin bilgisayarında Visual Studio tarafından yüklenir. Ancak, kullanıcılarınızın uygulamanızı dağıtırken, uygulamanızı çalıştırmak için Visual Studio'yu yüklemek için gereksinim için çoğu zaman uygun değildir. Yalnızca uygulamanızın düzgün çalışması için gereken Visual C++ bölümlerini yeniden dağıtmak önemlidir.
 
 Paketleme ve dağıtma hakkında daha fazla bilgi için aşağıdaki konulara bakın:
 
@@ -59,6 +59,6 @@ Dağıtım örnekleri ve sorun giderme hakkında öneriler için bkz:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Masaüstü uygulamaları dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
+- [Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
 - [Visual C++ Uygulaması Bağımlılıklarını Anlama](../ide/understanding-the-dependencies-of-a-visual-cpp-application.md)
-- [Windows Installer dağıtımı](http://msdn.microsoft.com/en-us/121be21b-b916-43e2-8f10-8b080516d2a0)
+- [Windows Installer dağıtımı](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0)

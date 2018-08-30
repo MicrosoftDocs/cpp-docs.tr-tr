@@ -42,19 +42,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 316580b0c5f1f46ffa9f4a49ef759b347032fc09
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 17cbcb0313ac0a3e14b45d851ee6f4e98d5ec993
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404655"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43206416"
 ---
 # <a name="mbsnbset-mbsnbsetl"></a>_mbsnbset, _mbsnbset_l
 
-İlk Ayarlar **n** çok baytlı karakter dizesi belirtilen bir karakterin için bayt. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md).
+İlk Ayarlar **n** bayt sayısı için belirtilen bir karakterin çok baytlı karakterli bir dizedir. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_mbsnbset_s, _mbsnbset_s_l](mbsnbset-s-mbsnbset-s-l.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -88,19 +88,19 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**_mbsnbset** bir işaretçi değiştirilmiş dizesi olarak döndürür.
+**_mbsnbset** değiştirilen dizeye bir işaretçi döndürür.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbset** ve **_mbsnbset_l** işlevleri ayarla, en fazla ilk *sayısı* bayt *str* için *c*. Varsa *sayısı* uzunluğundan daha büyük *str*, uzunluğu *str* yerine kullanılan *sayısı*. Varsa *c* birden çok baytlı karakter ve tamamen tarafından belirtilen son bayt içine ayarlanamaz *sayısı*, son bayta kalan boş bir karakter ile doldurulan. **_mbsnbset** ve **_mbsnbset_l** bir sonlandırma yerleştirmez sonunda null *str*.
+**_Mbsnbset** ve **_mbsnbset_l** işlevler kümesi, en çok ilk *sayısı* bayt *str* için *c*. Varsa *sayısı* uzunluğundan büyükse *str*, uzunluğunu *str* yerine kullanılan *sayısı*. Varsa *c* çok baytlı bir karakterse ve tarafından belirtilen son bayrak tamamen içine ayarlanamaz *sayısı*, son bayt bir boş karakterle doldurulur. **_mbsnbset** ve **_mbsnbset_l** bir sonlandırma yerleştirmez sonunda null *str*.
 
-**_mbsnbset** ve **_mbsnbset_l** benzer **_mbsnset**ayarlar dışında *sayısı* bayt yerine *sayısı* karakter *c*.
+**_mbsnbset** ve **_mbsnbset_l** benzer **_mbsnset**, ayarlaması dışında *sayısı* bayt yerine *sayısı* karakter *c*.
 
-Varsa *str* olan **NULL** veya *sayısı* sıfır açıklandığı gibi bu işlev geçersiz bir parametre özel bir durum oluşturur [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**. Ayrıca, varsa *c* geçerli bir birden çok baytlı karakter değil **errno** ayarlanır **EINVAL** ve boşluk yerine kullanılır.
+Varsa *str* olduğu **NULL** veya *sayısı* sıfırsa bu işlev açıklandığı gibi geçersiz parametre özel durum oluşturur [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **NULL**. Ayrıca, varsa *c* geçerli çok baytlı bir karakter değil **errno** ayarlanır **EINVAL** ve boşluk yerine kullanılır.
 
-Çıkış değerini ayarı tarafından etkilenen **LC_CTYPE** yerel kategori ayarı; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. **_Mbsnbset** bu işlev sürümünü kullanan geçerli yerel ayar için bu yerel ayara bağımlı davranışı; **_mbsnbset_l** sürümüne sahip olduğunu aynı kullanmak dışında yerine geçirilen yerel ayar parametresi. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+Çıkış değeri ayarından etkilenir **LC_CTYPE** yerel ayarının kategori ayarına; bkz: [setlocale](setlocale-wsetlocale.md) daha fazla bilgi için. **_Mbsnbset** sürümü bu işlevin, bu yerel ayara bağımlı davranış için geçerli yerel ayarı kullanır **_mbsnbset_l** sürümü, bu kullanmalarıdır bunun yerine iletilmiş yerel ayar parametresini aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-**Güvenlik Notu** bu API taşması sorundan duruma olası bir tehdit doğurur. Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** bu API, bir arabellek taşması sorunu duruma olası bir tehdit artmasına neden olur. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -116,7 +116,7 @@ Varsa *str* olan **NULL** veya *sayısı* sıfır açıklandığı gibi bu işle
 |**_mbsnbset**|\<Mbstring.h >|
 |**_mbsnbset_l**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

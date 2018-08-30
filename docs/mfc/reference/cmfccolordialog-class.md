@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb3a2bce257717c695c1458b12f3e6d4f11b9d7a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a4d6bf9d62ae1cb80041145903267d4af4d88eaa
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849743"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43214158"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 `CMFCColorDialog` Sınıfı, bir renk seçimi iletişim kutusunu gösterir.  
@@ -63,7 +63,7 @@ class CMFCColorDialog : public CDialogEx
 |----------|-----------------|  
 |[CMFCColorDialog::GetColor](#getcolor)|Geçerli seçili rengi döndürür.|  
 |[CMFCColorDialog::GetPalette](#getpalette)|Renk paleti döndürür.|  
-|`CMFCColorDialog::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CDialogEx::PreTranslateMessage`.)|  
+|`CMFCColorDialog::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Geçersiz kılmaları `CDialogEx::PreTranslateMessage`.)|  
 |[CMFCColorDialog::RebuildPalette](#rebuildpalette)|Sistem paletinden bir palet türetilir.|  
 |[CMFCColorDialog::SetCurrentColor](#setcurrentcolor)|Geçerli seçili rengini ayarlar.|  
 |[CMFCColorDialog::SetNewColor](#setnewcolor)|Belirtilen bir RGB değeri en eşdeğer rengini ayarlar.|  
@@ -149,7 +149,7 @@ COLORREF GetColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) renk iletişim kutusunda seçilen renk RGB bilgilerini içeren bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) renk iletişim kutusunda seçilen renk RGB bilgilerini içeren bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırdıktan sonra bu işlevi çağırın `DoModal` yöntemi.  
@@ -196,7 +196,7 @@ void SetNewColor(COLORREF rgb);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *rgb*  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) bir RGB rengi belirtir.  
+ A [COLORREF](/windows/desktop/gdi/colorref) bir RGB rengi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

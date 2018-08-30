@@ -9,22 +9,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 87b95044c3a0b874d155b227db736c5e4b81f1b1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b8a36573e72b173180e89b48403829a9387d4ee8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613036"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43212511"
 ---
 # <a name="obtaining-pointers-to-data-buffers-ccx"></a>Veri arabelleklerine işaretçileri alma (C + +/ CX)
-Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) arabirimi veri arabelleklerinin erişmek için dilden bağımsız, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan bir Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak bir ham işaretçi temel alınan bayt dizisine elde edebilirsiniz. Bu yaklaşım kullanarak verilerin gereksiz kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.  
+Windows çalışma zamanı [Windows::Storage::Streams::IBuffer](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) arabirimi veri arabelleklerinin erişmek için dilden bağımsız, akış tabanlı bir yol sağlar. C++'ta robuffer.h içinde tanımlanan bir Windows çalışma zamanı kitaplığı IBufferByteAccess arabirimini kullanarak bir ham işaretçi temel alınan bayt dizisine elde edebilirsiniz. Bu yaklaşım kullanarak verilerin gereksiz kopyalarını yapmadan bayt dizisi yerinde değiştirebilirsiniz.  
   
- Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](http://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.  
+ Aşağıdaki diyagramda, kaynağı bir XAML görüntü öğesi gösterir bir [Windows::UI::Xaml::Media::Imaging WriteableBitmap](https://msdn.microsoft.com/%20library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.aspx). Herhangi bir dilde yazılmış bir istemci uygulaması için başvuru geçirebilirsiniz `WriteableBitmap` C++ için kod ve C++ başvurusu temel alınan arabelleğe almak için kullanabilirsiniz. C++ ile yazılmış bir evrensel Windows platformu uygulamasında paketleyerek bir Windows çalışma zamanı bileşeni olmadan aşağıdaki örnekte kaynak kodda doğrudan işlevi kullanabilirsiniz.  
   
  ![C&#43; &#43; piksel veri erişim, doğrudan kod](../cppcx/media/ibufferbyteaccessdiagram.png "IBufferByteAccessDiagram")  
   
 ## <a name="getpointertopixeldata"></a>GetPointerToPixelData  
- Aşağıdaki yöntem kabul eden bir [Windows::Storage::Streams::IBuffer](http://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) ve temel alınan bayt dizisine bir ham işaretçiyi döndürür. İşlev çağrısı için geçirin bir [WriteableBitmap::PixelBuffer](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer.aspx) özelliği.  
+ Aşağıdaki yöntem kabul eden bir [Windows::Storage::Streams::IBuffer](https://msdn.microsoft.com/library/windows/apps/windows.storage.streams.ibuffer.aspx) ve temel alınan bayt dizisine bir ham işaretçiyi döndürür. İşlev çağrısı için geçirin bir [WriteableBitmap::PixelBuffer](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.media.imaging.writeablebitmap.pixelbuffer.aspx) özelliği.  
   
 ```  
   

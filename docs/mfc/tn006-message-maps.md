@@ -29,38 +29,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c4bc820c6b54e055235c1bd29bd55ccfc032c92
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 6faa29858e94c7d80d6039e35278b6a7ae263a85
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121682"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43213983"
 ---
 # <a name="tn006-message-maps"></a>TN006: İleti Eşlemeleri
 
-Bu Not MFC ileti eşlemesi tesis açıklar.
+Bu Not, MFC ileti eşlemesi özelliği açıklar.
 
 ## <a name="the-problem"></a>Sorun
 
-Microsoft Windows ileti özelliği kullanmanız pencere sınıfları içinde sanal işlevleri uygular. Yer alan iletileri çok sayıda nedeniyle, her Windows ileti için ayrı bir sanal işleve sağlayan bir şekilde basımı karşılamayacak kadar büyük vtable oluşturursunuz.
+Microsoft Windows sanal işlevler, Mesajlaşma olanağı kullanan pencere sınıfları uygular. İletileri dahil çok sayıda nedeniyle, her Windows ileti için ayrı bir sanal işlev sağlayan fazla vakit büyük vtable oluşturursunuz.
 
-Zaman içinde sistem tarafından tanımlanan Windows iletilerini sayısını değiştirir ve uygulamaları kendi Windows iletilerini tanımlayabilir olduğundan ileti eşlemeleri arabirimi değişiklikleri var olan kodu bozmasını engeller yöneltme düzeyini belirtin.
+Sistem tarafından tanımlanan Windows ileti sayısı zamanla değişir ve uygulamaları kendi Windows iletilerini tanımladığından ileti eşlemeleri arabirimi değişiklikler mevcut kodu Bozulması engellenir yöneltme düzeyi sağlar.
 
 ## <a name="overview"></a>Genel Bakış
 
-MFC pencere gönderilen iletileri işlemek için kullanılan geleneksel Windows tabanlı programlarda switch deyimi bir alternatif sunar. Böylece bir pencere tarafından bir ileti alındığında, uygun yöntemi otomatik olarak çağrılır iletileri eşlemeyi yöntemlerine tanımlanabilir. Bu ileti eşleme tesis sanal işlevler benzeyecek şekilde tasarlanmıştır ancak C++ sanal işlevleri ile olası ek avantajları vardır.
+MFC pencere gönderilen iletileri işlemek için kullanılan geleneksel Windows tabanlı programlar switch ifadesi bir alternatif sunar. Böylece bir pencere tarafından bir ileti alındığında, otomatik olarak uygun yöntemi çağrılır yöntemleri iletileri bir eşleme tanımlanabilir. Bu ileti eşleme özelliği, sanal işlevler benzeyecek şekilde tasarlanmıştır ancak C++ sanal işlevler ile mümkün ek faydası vardır.
 
 ## <a name="defining-a-message-map"></a>İleti eşlemesi tanımlama
 
-[DECLARE_MESSAGE_MAP](reference/message-map-macros-mfc.md#declare_message_map) makrosu bir sınıf için üç üye bildirir.
+[DECLARE_MESSAGE_MAP](reference/message-map-macros-mfc.md#declare_message_map) makrosu, bir sınıf için üç üye bildirir.
 
-- Özel bir dizi AFX_MSGMAP_ENTRY girişlerinin adlı *_messageEntries*.
+- Özel bir dizi AFX_MSGMAP_ENTRY girdi olarak adlandırılan *_messageEntries*.
 
-- Korumalı bir AFX_MSGMAP yapısı adlı *messageMap* işaret *_messageEntries* dizi.
+- Adlı bir korumalı AFX_MSGMAP yapı *messageMap* işaret eden *_messageEntries* dizisi.
 
-- Bir korumalı olarak adlandırılan sanal işlev `GetMessageMap` adresini döndürür *messageMap*.
+- Korumalı çağrılan sanal işlev `GetMessageMap` adresini döndürür *messageMap*.
 
-İleti eşlemeleri kullanarak herhangi bir sınıf bildiriminde bu makrosu koyulmalıdır. Kurala göre bu sınıf bildiriminin sonunda olur. Örneğin:
+Bu makro, ileti eşlemeleri kullanarak herhangi bir sınıf bildiriminde koymanız gerekir. Kural gereği, sınıf bildiriminin sonuna olduğu. Örneğin:
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -76,18 +76,18 @@ protected:
 };
 ```
 
-Bu yeni sınıflar oluşturduğunuzda AppWizard ve ClassWizard tarafından oluşturulan biçimidir. / / {{Ve / /}} köşeli ClassWizard için gereklidir.
+Bu yeni sınıflar oluşturduklarında AppWizard ve ClassWizard ile oluşturulan biçimidir. / / {{Ve / /}} köşeli ayraçlar için ClassWizard gereklidir.
 
-İleti haritanın tablo genişletmek için ileti eşlemesi girişlerini makroları kümesi kullanılarak tanımlanır. Bir tablo ile başlayan bir [begın_message_map](reference/message-map-macros-mfc.md#begin_message_map) bu ileti eşlemesi tarafından işlenen ve işlenmeyen iletileri geçirilir üst sınıf tanımlar makrosu çağrısı. Tablo ile biten [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map) makrosu çağrısı.
+İleti haritanın tablo bir kümesi genişletmek için ileti eşlemesi girişleri makrolar kullanılarak tanımlanır. Bir tablo ile başlayan bir [begın_message_map](reference/message-map-macros-mfc.md#begin_message_map) sınıf bu ileti eşlemesi tarafından işlenir ve işlenemeyen ileti geçirilir üst sınıfın tanımlayan makro çağrısı. Tablo ile biten [END_MESSAGE_MAP](reference/message-map-macros-mfc.md#end_message_map) makro çağrısı.
 
-Bu iki makrosu bu ileti eşlemesi tarafından yönetilecek her ileti için bir giriş çağrıdır. Her standart Windows ileti makrosu ON_WM_ formun sahip*MESSAGE_NAME* ileti için bir giriş oluşturur.
+Bu iki makro çağrılar arasında bu ileti eşlemesi tarafından işlenmek üzere her ileti için bir girdidir. Her standart Windows ileti ON_WM_ formunun bir makro olan*MESSAGE_NAME* , o ileti için bir giriş oluşturur.
 
-Standart işlev imzası, her Windows ileti parametrelerinin açılmasını ve tür güvenliği sağlamak için tanımlanmış. Bu imzaları bildirimi Afxwin.h dosyasında bulunabilir, [CWnd](../mfc/reference/cwnd-class.md). Her biri anahtar sözcüğü ile işaretlenmiş **afx_msg** kolay bir şekilde tanımlanması için.
+Standart işlev imzasına Windows mesajların parametreleri açılmasını ve tür güvenliği sağlamak için tanımlanmış. Bu imza, bildirimi dosyasında Afxwin.h bulunabilir, [CWnd](../mfc/reference/cwnd-class.md). Her biri anahtar sözcüğüyle işaretlenir **afx_msg** kolay bir şekilde tanımlanması için.
 
 > [!NOTE]
-> ClassWizard gerektirir, kullandığınız **afx_msg** ileti eşlemesi işleyici bildirimlerinizde anahtar sözcük.
+> ClassWizard gerektirir kullanmanızı **afx_msg** ileti eşlemesi işleyici bildirimlerinizde anahtar sözcük.
 
- Bu işlev imzaları basit bir kuralı kullanarak türetilen. İşlevin adı ile her zaman başlayan `"On`". Bu, "kaldırılan WM_" Windows iletisiyle adını ve büyük harfe her sözcüğün ilk harfini tarafından izlenir. Sıralama parametreleri olan *wParam* arkasından `LOWORD`(*lParam*) sonra `HIWORD`(*lParam*). Kullanılmayan parametreleri geçmedi. MFC sınıfları tarafından Sarmalanan tanıtıcıları uygun MFC nesnelerine işaretçiler dönüştürülür. Aşağıdaki örnek WM_PAINT ileti işleme ve neden gösterilmektedir `CMyWnd::OnPaint` çağrılacak işlev:
+ Bu işlev imzası, basit bir kuralı kullanarak elde edilmiştir. İşlev adı ile her zaman başlar `"On`". Bu, "kaldırıldı WM_" Windows iletinin adını ve büyük harfli her sözcüğün ilk harfini tarafından izlenir. Parametreleri sıralamadır *wParam* ardından `LOWORD`(*lParam*) sonra `HIWORD`(*lParam*). Kullanılmayan parametreleri geçmedi. MFC sınıfları tarafından Sarmalanan tanıtıcıları uygun MFC nesne işaretçileri dönüştürülür. Aşağıdaki örnek, WM_PAINT iletisini işlemek ve neden gösterilmektedir `CMyWnd::OnPaint` çağrılacak işlev:
 
 ```cpp
 BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
@@ -100,11 +100,11 @@ END_MESSAGE_MAP()
  İleti eşleme tablosu herhangi bir işlev veya sınıf tanımının kapsamı dışında tanımlanmış olması gerekir. Bu bir extern "C" bloğunda sokulmalıdır değil.
 
 > [!NOTE]
-> ClassWizard arasında ortaya ileti eşleme girdilerini Değiştir / / {{ve / /}} açıklama köşeli ayraç.
+> ClassWizard arasında gerçekleşen ileti eşlemesi girişleri Değiştir / / {{ve / /}} açıklama köşeli ayraç.
 
-## <a name="user-defined-windows-messages"></a>Windows iletileri kullanıcı tanımlı
+## <a name="user-defined-windows-messages"></a>Kullanıcı tanımlı Windows iletileri
 
-Kullanıcı tanımlı iletiler dahil edilebilir bir ileti eşlemesi kullanarak [ON_MESSAGE](reference/message-map-macros-mfc.md#on_message) makrosu. Bu makrosu ileti numarası ve bir yöntem formun kabul eder:
+Kullanıcı tanımlı iletiler eklenebilir bir ileti eşlemede kullanarak [ON_MESSAGE](reference/message-map-macros-mfc.md#on_message) makrosu. Bu makro, ileti numarası ve formun yöntemi kabul eder:
 
 ```cpp
     // inside the class declaration
@@ -117,21 +117,21 @@ BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
 END_MESSAGE_MAP()
 ```
 
-Bu örnekte, kullanıcı tanımlı iletiler için standart WM_USER temel türetilmiş bir Windows ileti Kimliğine sahip özel bir ileti için bir işleyici oluşturur. Aşağıdaki örnek, bu işleyici çağrı gösterilmektedir:
+Bu örnekte biz kullanıcı tanımlı iletiler için standart WM_USER temel türetilen Windows iletisi Kimliğine sahip özel bir ileti işleyicisi oluşturur. Aşağıdaki örnek, bu işleyicisi çağırma gösterilmektedir:
 
 ```cpp
 CWnd* pWnd = ...;
 pWnd->SendMessage(WM_MYMESSAGE);
 ```
 
-Bu yaklaşımı kullanın kullanıcı tanımlı iletilerinin 0x7fff aralıktaki WM_USER arasında olmalıdır.
+Bu yaklaşımı kullanın, kullanıcı tarafından tanımlanan iletilerin WM_USER aralıktaki 0x7fff olmalıdır.
 
 > [!NOTE]
-> ClassWizard ClassWizard kullanıcı arabiriminden girme ON_MESSAGE işleyici yordamları desteklemiyor. Ayrıca Visual C++ Düzenleyicisi'nden bunları el ile girmeniz gerekir. ClassWizard bu girişler ayrıştırabilir ve yalnızca tüm diğer ileti eşleme girdileri gibi Gözat sağlar.
+> ClassWizard ClassWizard kullanıcı arabiriminden girme ON_MESSAGE işleyici yordamları desteklemez. Ayrıca Visual C++ Düzenleyicisi'nden bunları el ile girmeniz gerekir. ClassWizard bu girişleri ayrıştırma ve bunları yalnızca herhangi diğer ileti eşlemesi girişleri gibi göz atmanıza olanak tanır.
 
 ## <a name="registered-windows-messages"></a>Kayıtlı Windows iletileri
 
-[RegisterWindowMessage](http://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır. On_regıstered_message makrosu bu iletileri işlemek için kullanılır. Bu makro adını kabul eden bir *UINT yakın* kayıtlı windows ileti kimliği içeren değişkeni Örneğin
+[RegisterWindowMessage](https://msdn.microsoft.com/library/windows/desktop/ms644947) işlevi, sistem genelinde benzersiz olması garanti yeni bir pencere iletisi tanımlamak için kullanılır. On_regıstered_message makrosu, bu iletileri işlemek için kullanılır. Bu makro adını kabul eden bir *UINT yakın* kayıtlı windows ileti kimliği içeren değişken Örneğin
 
 ```cpp
 class CMyWnd : public CMyParentWndClass
@@ -155,30 +155,30 @@ BEGIN_MESSAGE_MAP(CMyWnd, CMyParentWndClass)
 END_MESSAGE_MAP()
 ```
 
-Kayıtlı Windows ileti kimliği (Bu örnekte WM_FIND) değişken olmalıdır bir *NEAR* on_regıstered_message biçimini nedeniyle değişken uygulanır.
+Kayıtlı Windows ileti kimliği (Bu örnekte WM_FIND) değişken olmalıdır bir *yakın* on_regıstered_message değişken biçimi nedeniyle uygulanır.
 
-Bu yaklaşımı kullanın, kullanıcı tanımlı iletiler aralığını 0xC000-0xFFFF aralığında olacaktır.
+Bu yaklaşımı kullanın, kullanıcı tanımlı iletiler aralığı için 0xC000 0xFFFF aralığında olacaktır.
 
 > [!NOTE]
-> ClassWizard ClassWizard kullanıcı arabiriminden girme on_regıstered_message işleyici yordamları desteklemiyor. Ayrıca metin Düzenleyicisi'nden bunları el ile girmeniz gerekir. ClassWizard bu girişler ayrıştırabilir ve yalnızca tüm diğer ileti eşleme girdileri gibi Gözat sağlar.
+> ClassWizard ClassWizard kullanıcı arabiriminden girme on_regıstered_message işleyici yordamları desteklemez. Ayrıca bir metin düzenleyicisinde bunları el ile girmeniz gerekir. ClassWizard bu girişleri ayrıştırma ve bunları yalnızca herhangi diğer ileti eşlemesi girişleri gibi göz atmanıza olanak tanır.
 
 ## <a name="command-messages"></a>Komut iletileri
 
-Menüleri ve Hızlandırıcıları komut iletileri ileti eşlemeleri ON_COMMAND makrosu ile işlenir. Bu makrosu komut kimliği ve yöntemi kabul eder. Yalnızca belirli WM_COMMAND ekinde bir *wParam* kimliği ileti eşleme girdisinde belirtilen yöntemi tarafından işlenir belirtilen komut eşittir. Komut işleyici üye işlevleri hiç parametre almaz ve dönüş **void**. Makro aşağıdaki biçime sahiptir:
+Menülerini ve Hızlandırıcı komut iletileri ileti eşlemeleri ON_COMMAND makrosu ile işlenir. Bu makro, komut kimliği ve yöntemi kabul eder. Sahip yalnızca belirli WM_COMMAND ileti bir *wParam* eşit belirtilen komut kimliği, ileti eşleme girişi belirtilen yöntemi tarafından işlenir. Komut işleyici üye işlevleri hiçbir parametre ve dönüş **void**. Makro, aşağıdaki biçime sahiptir:
 
 ```cpp
 ON_COMMAND(id, memberFxn)
 ```
 
-Komut güncelleştirme iletileri aynı bir mekanizma aracılığıyla yönlendirilir, ancak on_update_command_uı makrosu kullanın. Güncelleştirme işleyici üye işlevlerini ele tek bir parametre için bir işaretçi bir [Ccmduı](../mfc/reference/ccmdui-class.md) nesne ve geri dönüp **void**. Makro bir biçime sahip
+Komut güncelleştirme iletileri aynı bir mekanizma aracılığıyla yönlendirilir, ancak on_update_command_uı makrosu kullanın. Güncelleştirme işleyici üye işlevlerini tek bir parametre bir işaretçi olması bir [Ccmduı](../mfc/reference/ccmdui-class.md) nesne ve dönüş **void**. Makro formundadır
 
 ```cpp
 ON_UPDATE_COMMAND_UI(id, memberFxn)
 ```
 
-İleri düzey kullanıcılar komutu ileti işleyicileri genişletilmiş bir biçimidir ON_COMMAND_EX makrosu kullanabilirsiniz. Makro ON_COMMAND işlevlerinin bir alt kümesi sağlar. Genişletilmiş komut işleyici üye işlevlerini tek bir parametre ele bir **UINT** , komut Kimliğini içerir ve geri dönüp bir **BOOL**. Dönüş değeri olmalıdır **TRUE** komutu işlendiğini belirtmek için. Aksi takdirde yönlendirme diğer komutu hedef nesnelere devam eder.
+Gelişmiş kullanıcılar, bir komut ileti işleyicileri genişletilmiş halidir ON_COMMAND_EX makrosu kullanabilirsiniz. Bir işlevselliğin ON_COMMAND makrosu sağlar. Genişletilmiş komut işleyici üye işlevler tek bir parametre alır bir **UINT** komut Kimliğini içerir ve dönüş bir **BOOL**. Dönüş değeri olması gereken **TRUE** komutu işlendiğini göstermek için. Aksi takdirde yönlendirme diğer komut hedef nesnelere devam eder.
 
-Bu form örnekleri:
+Bu formlar örnekleri:
 
 - İç Resource.h (genellikle Visual C++ tarafından oluşturulan)
 
@@ -187,7 +187,7 @@ Bu form örnekleri:
     #define    ID_COMPLEX    101
     ```
 
-- İçinde sınıf bildirimi
+- Sınıf bildirimi içinde
 
     ```cpp
     afx_msg void OnMyCommand();
@@ -203,7 +203,7 @@ Bu form örnekleri:
     ON_COMMAND_EX(ID_MYCMD, OnComplexCommand)
     ```
 
-- Uygulama dosyasında
+- V souboru implementace
 
     ```cpp
     void CMyClass::OnMyCommand()
@@ -223,31 +223,31 @@ Bu form örnekleri:
     }
     ```
 
- İleri düzey kullanıcılar, tek bir komut işleyici kullanarak bir dizi komutları işleyebilir: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) veya ON_COMMAND_RANGE_EX. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
+ İleri düzey kullanıcılar tek bir komut işleyicisi kullanarak bir dizi komutları işleyebilir: [ON_COMMAND_RANGE](reference/message-map-macros-mfc.md#on_command_range) veya ON_COMMAND_RANGE_EX. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
 
 > [!NOTE]
-> ClassWizard oluşturma ON_COMMAND ve on_update_command_uı işleyicilerini destekler, ancak oluşturma ON_COMMAND_EX veya ON_COMMAND_RANGE işleyicileri desteklemiyor. Ancak, sınıf Sihirbazı ayrıştırma ve tüm dört komut işleyici çeşitleri Gözat olanak verir.
+> ClassWizard oluşturma ON_COMMAND ve on_update_command_uı işleyicileri destekler, ancak oluşturma ON_COMMAND_EX veya ON_COMMAND_RANGE işleyicileri desteklemez. Ancak, sınıf Sihirbazı ayrıştırma ve tüm dört komut işleyicisi çeşitleri göz atmanıza olanak tanır.
 
-## <a name="control-notification-messages"></a>Denetim bildirimi iletileri
+## <a name="control-notification-messages"></a>Denetimi bildirim iletileri
 
-Bir pencere için alt denetimlerinden sahip fazladan bit kendi ileti bilgilerinin gönderilen ileti eşlemesi girişi: denetimin kimliği. Yalnızca aşağıdaki koşullar doğruysa bir ileti eşleme girdisinde belirtilen ileti işleyicisi adı verilir:
+Bir pencereye alt denetimlerinden sahip ek bit kendi ileti bilgilerinin gönderilen iletileri eşleme girişi: denetimin kimliği. Yalnızca aşağıdaki koşullar doğruysa, bir ileti eşlemesi girdisinde belirtilen ileti işleyicisi adı verilir:
 
-- Denetim bildirimi kodu (üst sınırı *lParam*), ileti eşleme girdisinde belirtilen bildirim kodu BN_CLICKED gibi eşleşir.
+- Denetim bildirimi kodunu (üst sınırı *lParam*), ileti eşleme girişi belirtilen bildirim kodu BN_CLICKED gibi eşleşir.
 
-- Denetim Kimliği (*wParam*) ileti eşleme girdisinde belirtilen denetim kimliği ile eşleşir.
+- Denetim Kimliği (*wParam*) ileti eşleme girdisinde belirtilen denetim kimliği eşleşir.
 
-Özel denetimi bildirim iletileri kullanabilir [ON_CONTROL](reference/message-map-macros-mfc.md#on_control) özel bildirim kodu içeren bir ileti eşleme girişi tanımlamak için makrosu. Bu makrosu bir biçime sahip
+Özel denetimi bildirim iletileri kullanabilir [ON_CONTROL](reference/message-map-macros-mfc.md#on_control) makrosu özel bildirim kodunu içeren bir ileti eşleme girişi tanımlamak için. Bu makro formundadır
 
 ```cpp
 ON_CONTROL(wNotificationCode, id, memberFxn)
 ```
 
-Gelişmiş kullanım için [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range) aynı işleyici denetimleriyle aralığından belirli denetim bildirimini işlemek için kullanılabilir.
+Gelişmiş kullanım için [ON_CONTROL_RANGE](reference/message-map-macros-mfc.md#on_control_range) aynı işleyiciyi denetimlerle çeşitli özel denetim bildirimden işlemek için kullanılabilir.
 
 > [!NOTE]
-> ClassWizard kullanıcı arabiriminde bir ON_CONTROL veya ON_CONTROL_RANGE işleyicisi oluşturulmasını desteklemiyor. Ayrıca bir metin düzenleyicisi ile bunları el ile girmeniz gerekir. ClassWizard bu girişler ayrıştırabilir ve yalnızca tüm diğer ileti eşlemesi girdileri gibi Gözat sağlar.
+> ClassWizard, kullanıcı arabiriminde bir ON_CONTROL veya ON_CONTROL_RANGE işleyicisi oluşturmayı desteklemez. Ayrıca bir metin düzenleyicisi ile bunları el ile girmeniz gerekir. ClassWizard bu girişleri ayrıştırma ve bunları yalnızca herhangi diğer ileti eşlemesi girişleri gibi göz atmanıza olanak tanır.
 
-Windows ortak denetimleri daha güçlü kullanmak [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) karmaşık denetim bildirimleri için. MFC bu sürümü, on_notıfy ve on_notıfy_range makroları kullanarak bu yeni ileti için doğrudan desteğe sahiptir. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
+Windows ortak denetimleri daha güçlü kullanın [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) karmaşık denetim bildirimleri için. MFC'nin bu sürümünü on_notıfy ve on_notıfy_range makroları kullanarak bu yeni iletiyi doğrudan desteği vardır. Bu makrolar hakkında daha fazla bilgi için ürün belgelerine bakın.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

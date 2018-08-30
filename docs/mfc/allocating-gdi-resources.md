@@ -16,26 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25f05c29c74756276cdf3fd1f88048b9a5b87fa7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f7923d36abcd0e9f6b7cb9e97072f5782178919
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33343227"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43208054"
 ---
 # <a name="allocating-gdi-resources"></a>GDI Kaynaklarını Ayırma
-Bu makalede, ayırmak ve yazdırma için gerekli Windows grafik cihaz arabirimi (GDI) nesneleri serbest bırakma açıklanmaktadır.  
+Bu makalede, ayırabilir ve yazdırma için gerekli Windows grafik cihaz arabirimi (GDI) nesneleri serbest bırakma açıklanmaktadır.  
   
 > [!NOTE]
->  Daha fazla bilgi için GDI + SDK belgelerine bakın: [ http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](http://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
+>  Daha fazla bilgi için GDI +'da SDK belgelerine bakın: [ https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/GDIPlus/GDIPlus.asp ](https://msdn.microsoft.com/library/default.aspurl=/library/gdicpp/gdiplus/gdiplus.asp).  
   
- Belirli yazı tiplerini, kalemler veya diğer GDI nesneleri yazdırma için ancak ekran görüntüsü için kullanılacak gerektiğini varsayalım. Gereksinim duydukları bellek nedeniyle, uygulama başlatıldığında bu nesneler ayırmak için yetersiz olduğunu. Uygulama bir belge yazdırılırken değil, bu bellek diğer amaçlar için gerekebilir. Yazdırma işlemi başladığında, bunları ayırmak ve bunları uçları yazdırırken silmek iyidir.  
+ Belirli bir yazı tipi, kalemler veya diğer GDI nesneleri yazdırmak için ancak ekran için kullanılacak gerektiğini varsayalım. Gereksinim duydukları bellek nedeniyle, uygulama başlatıldığında, bu nesneler ayrılacak verimli değildir. Uygulama bir belge yazdırılırken değil, bu bellek diğer amaçlar için gerekebilir. Yazdırma başladığında ayırmanız ve ardından bunları uçları yazdırırken silmek daha iyidir.  
   
- Bu GDI nesneleri ayırmak için geçersiz kılma [OnBeginPrinting](../mfc/reference/cview-class.md#onbeginprinting) üye işlevi. Bu işlev iki nedenden dolayı bu amaç için uygundur: framework bu işlev bir kez her yazdırma işinin ve aksine başında çağırması [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting), bu işlev erişimi [CDC](../mfc/reference/cdc-class.md) Yazıcı aygıt sürücüsü temsil eden nesne. Görünüm sınıfınızda GDI nesneleri işaret üye değişkenleri tanımlama yazdırma işi sırasında kullanmak için bu nesneleri depolayabilirsiniz (örneğin, **CFont \***  üyeler vb.).  
+ Bu GDI nesneleri ayırmak için geçersiz kılma [OnBeginPrinting](../mfc/reference/cview-class.md#onbeginprinting) üye işlevi. Bu işlev iki nedenden dolayı bu amaç için oldukça uygundur: framework bu kez her yazdırma işi ve aksine başında sürüklerken [OnPreparePrinting](../mfc/reference/cview-class.md#onprepareprinting), bu işlev erişimi [CDC](../mfc/reference/cdc-class.md) Yazıcı cihaz sürücüsü temsil eden nesne. GDI nesneleri işaret görünümü sınıfınızdaki üye değişkenleri tanımlama, yazdırma işi sırasında kullanmak için bu nesneleri depolayabilirsiniz (örneğin, `CFont *` üyeler vb.).  
   
- Oluşturduğunuz GDI nesneleri kullanmak için bunları yazıcı cihaz bağlamında içine seçin [OnPrint](../mfc/reference/cview-class.md#onprint) üye işlevi. Belgenin farklı sayfaları için farklı GDI nesneleri gerekiyorsa, inceleyebilirsiniz `m_nCurPage` üyesi [Cprintınfo](../mfc/reference/cprintinfo-structure.md) yapısı ve buna göre GDI nesnesi seçin. GDI nesnesi birkaç ardışık sayfalar için gerekiyorsa, Windows, bu cihaz bağlamına her zaman seçmenizi gerektirir `OnPrint` olarak adlandırılır.  
+ GDI nesneleri oluşturduğunuz kullanmak için yazıcı cihaz bağlamına seçmek [OnPrint](../mfc/reference/cview-class.md#onprint) üye işlevi. Farklı GDI nesneleri farklı belge sayfaları için gerekiyorsa, inceleyebilirsiniz `m_nCurPage` üyesi [Cprintınfo](../mfc/reference/cprintinfo-structure.md) yapısı ve buna göre GDI nesneyi seçin. GDI nesnesi birden fazla ardışık sayfaları için gerekiyorsa, Windows, bu cihaz bağlamına her zaman'ı seçmesini gerektirir `OnPrint` çağrılır.  
   
- Bu GDI nesneleri serbest bırakma için geçersiz kılın [OnEndPrinting](../mfc/reference/cview-class.md#onendprinting) üye işlevi. Framework'te diğer görevlere uygulama döndürmeden önce yazdırma özgü GDI nesneleri serbest bırakma fırsatı verir her bir yazdırma işinin sonunda bu işlevi çağırır.  
+ Bu GDI nesneleri serbest bırakma için geçersiz kılın [OnEndPrinting](../mfc/reference/cview-class.md#onendprinting) üye işlevi. Framework sonunda uygulamayı diğer görevlere döndürmeden önce yazdırma özgü GDI nesneleri serbest bırakma fırsatı verir, her yazdırma işi, bu işlevi çağırır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yazdırma](../mfc/printing.md)   
