@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d916d2e2f8f42a4162966a1d0ddc7de55eb6bd4b
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 5d7c4ed7634cc1818250d8945a057f97c53edffc
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883586"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223205"
 ---
 # <a name="ipointerinactiveimpl-class"></a>Ipointerınactiveımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve [Ipointerınactive'i](http://msdn.microsoft.com/library/windows/desktop/ms693712) arabirim yöntemleri.  
+Bu sınıfın uyguladığı `IUnknown` ve [Ipointerınactive'i](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) arabirim yöntemleri.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -59,7 +59,7 @@ class IPointerInactiveImpl
 ## <a name="remarks"></a>Açıklamalar  
  Etkin olmayan bir nesne yalnızca yüklenen veya çalışmıyor biridir. Etkin bir nesne, etkin olmayan bir nesne Windows fare ve klavye mesajlarının alamaz. Bu nedenle, etkin olmayan nesneler daha az kaynak kullanın ve genellikle daha verimlidir.  
   
- [Ipointerınactive'i](http://msdn.microsoft.com/library/windows/desktop/ms693712) nesnenin en düşük düzeyde etkin olmayan kalan sırasında fare etkileşimi desteklemek arabirim sağlar. Bu işlev, denetimler için özellikle yararlıdır.  
+ [Ipointerınactive'i](/windows/desktop/api/ocidl/nn-ocidl-ipointerinactive) nesnenin en düşük düzeyde etkin olmayan kalan sırasında fare etkileşimi desteklemek arabirim sağlar. Bu işlev, denetimler için özellikle yararlıdır.  
   
  Sınıf `IPointerInactiveImpl` uygulayan `IPointerInactive` E_NOTIMPL yalnızca döndürerek yöntemleri. Ancak, bunu uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
@@ -84,7 +84,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPointerInactive::GetActivationPolicy](http://msdn.microsoft.com/library/windows/desktop/ms692470) Windows SDK içinde.  
+ Bkz: [IPointerInactive::GetActivationPolicy](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) Windows SDK içinde.  
   
 ##  <a name="oninactivemousemove"></a>  IPointerInactiveImpl::OnInactiveMouseMove  
  Fareyi üzerine nesneyi gösteren taşındı nesne fare olayları tetikleyebilir bildirir.  
@@ -101,7 +101,7 @@ HRESULT OnInactiveMouseMove(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPointerInactive::OnInactiveMouseMove](http://msdn.microsoft.com/library/windows/desktop/ms693374) Windows SDK içinde.  
+ Bkz: [IPointerInactive::OnInactiveMouseMove](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) Windows SDK içinde.  
   
 ##  <a name="oninactivesetcursor"></a>  IPointerInactiveImpl::OnInactiveSetCursor  
  Etkin olmayan bir nesne için fare işaretçisini ayarlar.  
@@ -119,7 +119,7 @@ HRESULT OnInactiveSetCursor(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IPointerInactive::OnInactiveSetCursor](http://msdn.microsoft.com/library/windows/desktop/ms694336) Windows SDK içinde.  
+ Bkz: [IPointerInactive::OnInactiveSetCursor](/windows/desktop/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

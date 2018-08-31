@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f4e8a20ef31f4379e7ddf6b7425fd7ecc70294a
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7c5f66975d8d9904d1a4a8f2d26d4fe98ecfdd40
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465910"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223031"
 ---
 # <a name="localeconv"></a>localeconv
 
@@ -79,7 +79,7 @@ n_sep_by_space|Para birimi simgesi negatif biçimlendirilmiş parasal miktar de�
 p_sign_posn|Negatif olmayan biçimlendirilmiş parasal miktarlar artı işareti konumu.
 n_sign_posn|Negatif biçimlendirilmiş parasal miktarlar artı işareti konumu.
 
-Belirtilen, üyeleri olarak dışında **lconv** sahip yapısı `char *` ve `wchar_t *` sürümleri dizelerin işaretçileridir. Bunlardan birine eşit **""** (veya **L ""** için **wchar_t \*** ) uzunluğu sıfır ya da geçerli yerel ayarı desteklenmiyor. Unutmayın **decimal_point** ve **_W_decimal_point** olan desteklenen her zaman ve sıfır uzunlukta.
+Belirtilen, üyeleri olarak dışında **lconv** sahip yapısı `char *` ve `wchar_t *` sürümleri dizelerin işaretçileridir. Bunlardan birine eşit **""** (veya **L ""** için **wchar_t** <strong>\*</strong>) uzunluğu sıfır ya da geçerli desteklenmiyor yerel ayar. Unutmayın **decimal_point** ve **_W_decimal_point** olan desteklenen her zaman ve sıfır uzunlukta.
 
 **Char** yapının üyeleri olan küçük negatif sayılar, olmayan karakterler. Bunlardan birine eşit **CHAR_MAX** geçerli yerel ayarı desteklenmiyor.
 

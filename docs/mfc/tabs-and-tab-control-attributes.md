@@ -1,5 +1,5 @@
 ---
-title: Sekme ve sekme denetim öznitelikleri | Microsoft Docs
+title: Sekme ve sekme denetimi öznitelikleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,23 +18,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd2129ad4b2dc075893a730c0ba75de96dbebea0
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: c02f939c9f9314f3e24921879836c2743ae7d5ea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36952865"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223288"
 ---
 # <a name="tabs-and-tab-control-attributes"></a>Sekme ve Sekme Denetimi Öznitelikleri
-Görünümü ve davranışı Sekme denetimini oluşturan sekmelerinin üzerinde önemli denetiminiz ([CTabCtrl](../mfc/reference/ctabctrl-class.md)). Her sekme bir etiket, simge, bir öğesi durumu ve ilişkili bir uygulama tanımlı 32-bit değeri olabilir. Her sekme için simge, etiket veya her ikisi de görüntüleyebilirsiniz.  
+Görünümünü ve davranışını bir sekme denetimini oluşturan sekme üzerinde önemli ölçüde denetiminiz ([CTabCtrl](../mfc/reference/ctabctrl-class.md)). Her sekme bir etiket, simge, öğesi durumu ve ilişkili bir uygulama tanımlı 32-bit değeri olabilir. Her sekme için simgeyi, etiketi veya her ikisini de görüntüleyebilirsiniz.  
   
- Ayrıca, her sekme öğesi üç olası durumlar olabilir: basıldığında basılmamış ya da vurgulanır. Bu durum yalnızca var olan bir sekme öğesi değiştirerek ayarlanabilir. Var olan bir sekme öğesini değiştirmek için bunu çağrısıyla almak [GetItem](../mfc/reference/ctabctrl-class.md#getitem), değişiklik `TCITEM` yapısı (özellikle *dwState* ve *dwStateMask* veri üyeleri ) ve ardından değiştirilen dönün `TCITEM` çağrısıyla yapısı [SetItem](../mfc/reference/ctabctrl-class.md#setitem). Tüm sekme öğeler öğesi durumları temizlemek gereken bir `CTabCtrl` nesne, çağırmaya [DeselectAll](../mfc/reference/ctabctrl-class.md#deselectall). Bu işlev tüm sekme öğeleri veya şu anda seçili dışındaki tüm öğeleri durumunu sıfırlar.  
+ Ayrıca, her sekme öğesi üç durumda olabilir: basılı basılmamış ya da vurgulanır. Bu durum yalnızca var olan bir sekme öğesi değiştirerek ayarlanabilir. Var olan bir sekme öğesi değiştirmek için bir çağrı ile alma [GetItem](../mfc/reference/ctabctrl-class.md#getitem), değişiklik `TCITEM` yapısı (özellikle *dwState* ve *dwStateMask* veri üyesi ) ve ardından değiştirilmiş dönün `TCITEM` yapısı çağrısıyla [SetItem](../mfc/reference/ctabctrl-class.md#setitem). Tüm sekme öğeleri öğesi durumlarını temizlemek gereken bir `CTabCtrl` nesne, çağrı yapmak [DeselectAll](../mfc/reference/ctabctrl-class.md#deselectall). Bu işlev, tüm sekme öğeleri veya şu anda seçili dışındaki tüm öğeleri durumunu sıfırlar.  
   
- Aşağıdaki kod, tüm sekme öğeleri durumunu temizler ve üçüncü öğesinin durumunu değiştirir:  
+ Aşağıdaki kod tüm sekmesini öğelerinin durumunu temizler ve ardından üçüncü öğe durumunu değiştirir:  
   
  [!code-cpp[NVC_MFCControlLadenDialog#32](../mfc/codesnippet/cpp/tabs-and-tab-control-attributes_1.cpp)]  
   
- Sekme öznitelikleri hakkında daha fazla bilgi için bkz: [sekme ve sekme öznitelikleri](http://msdn.microsoft.com/library/windows/desktop/bb760550) Windows SDK. Sekme denetimine sekmeler ekleme hakkında daha fazla bilgi için bkz: [Sekme denetimine sekmeler ekleme](../mfc/adding-tabs-to-a-tab-control.md) bu konuda daha sonra.  
+ Sekme öznitelikleri hakkında daha fazla bilgi için bkz: [sekme ve sekme öznitelikleri](/windows/desktop/Controls/tab-controls) Windows SDK. Sekme denetimine sekmeler ekleme hakkında daha fazla bilgi için bkz. [Sekme denetimine sekmeler ekleme](../mfc/adding-tabs-to-a-tab-control.md) bu konuda.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   

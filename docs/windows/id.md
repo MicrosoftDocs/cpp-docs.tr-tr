@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7b7ac87241e9089cc8c0152a6d0c3966dc32fa08
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9b5250a730b0ce80cbbe9698b4b5e636a85986b6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600248"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223192"
 ---
 # <a name="id"></a>kimlik
 
@@ -43,7 +43,7 @@ Arabirim yöntemi için gönderme kimliği.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Kimliği** C++ özniteliği ile aynı işlevlere sahip [kimliği](http://msdn.microsoft.com/library/windows/desktop/aa367040) MIDL özniteliği.
+**Kimliği** C++ özniteliği ile aynı işlevlere sahip [kimliği](/windows/desktop/Midl/id) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

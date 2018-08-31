@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3492f71ab119bb272576fe8c67bc6d05163785fb
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 6eee23ebbfc25d76ca255505322f609973f79f57
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883150"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222878"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 Bu sınıf, oluşturulmasını ve kullanımını geçici bir dosya için yöntemler sağlar.  
@@ -143,10 +143,10 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
   
 ### <a name="parameters"></a>Parametreler  
  *pszDir*  
- Geçici dosya yolu. Bu, NULL ise [GetTempPath](http://msdn.microsoft.com/library/windows/desktop/aa364992) yol atamak için çağrılır.  
+ Geçici dosya yolu. Bu, NULL ise [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) yol atamak için çağrılır.  
   
  *dwDesiredAccess*  
- İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) Windows SDK.  
+ İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -334,7 +334,7 @@ LPCTSTR TempFileName() throw();
  Dosya adına işaret eden LPCTSTR döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dosya adı içinde oluşturulan [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) çağrısıyla [GetTempFile](http://msdn.microsoft.com/library/windows/desktop/aa364991)Windows SDK'sı işlevi. Dosya uzantısı, her zaman için geçici dosya "TFR" olur.  
+ Dosya adı içinde oluşturulan [CAtlTemporaryFile::CAtlTemporaryFile](#catltemporaryfile) çağrısıyla [GetTempFile](/windows/desktop/api/fileapi/nf-fileapi-gettempfilenamea)Windows SDK'sı işlevi. Dosya uzantısı, her zaman için geçici dosya "TFR" olur.  
   
 ##  <a name="unlockrange"></a>  CAtlTemporaryFile::UnlockRange  
  Bir bölge geçici dosyanın kilidini açmak için bu yöntemi çağırın.  

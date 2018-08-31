@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b3f20fddd657d1e5e57caf65ecc8e2c52afbf12
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 7fc5e4b0b3e19f9a71e1ada445181bede68d65a5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465364"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222687"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)
 ```  
@@ -37,7 +37,7 @@ ms.locfileid: "42465364"
  burada:  
   
  `file`  
- İçeren dosyanın adını [MIDL komut satırı seçeneklerini](http://msdn.microsoft.com/library/windows/desktop/aa366839).  
+ İçeren dosyanın adını [MIDL komut satırı seçeneklerini](/windows/desktop/Midl/general-midl-command-line-syntax).  
   
 ## <a name="remarks"></a>Açıklamalar  
  TLB dosya bir IDL dosyası dönüştürülmesi için tüm seçenekleri verilmelidir `file`; MIDL komut satırı seçenekleri, bağlayıcı'nın komut satırında belirtilemez. /MIDL belirtilmezse, MIDL Derleyici yalnızca IDL dosyası adı ve diğer bir seçenek ile çağrılır.  

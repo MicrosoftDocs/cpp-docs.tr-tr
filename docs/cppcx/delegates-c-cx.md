@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 050b11050cc280fc6d3aa8900487442bd723a57f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fda9cab73088746ec64caf482f9e606d713eaa4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592779"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222749"
 ---
 # <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
 `delegate` Anahtar sözcüğü, bir işlev nesnesi standart C++'ta Windows çalışma zamanı eşdeğerdir bir başvuru türü bildirmek için kullanılır. Temsilci bildirimi için işlev imzasına benzer; Bu, sarmalanmış işlev olmalıdır parametre türleri ve dönüş türü belirtir. Bu kullanıcı tarafından tanımlanan temsilci bildirimi şu şekildedir:  
@@ -29,7 +29,7 @@ ms.locfileid: "42592779"
 event PrimeFoundHandler^ primeFoundEvent;  
 ```  
   
- Windows çalışma zamanı uygulama ikili arabiriminde kullanıma sunulacak temsilciler istemcilere bildirirken kullanın [typedeventhandler\<TSender, TResult >](http://msdn.microsoft.com/library/windows/apps/br225997.aspx). Bu temsilci etkinleştirmediğiniz Javascript istemciler tarafından kullanılacak proxy ve saplama ikili dosyaları önceden tanımlanmış.  
+ Windows çalışma zamanı uygulama ikili arabiriminde kullanıma sunulacak temsilciler istemcilere bildirirken kullanın [typedeventhandler\<TSender, TResult >](https://msdn.microsoft.com/library/windows/apps/br225997.aspx). Bu temsilci etkinleştirmediğiniz Javascript istemciler tarafından kullanılacak proxy ve saplama ikili dosyaları önceden tanımlanmış.  
   
 ## <a name="consuming-delegates"></a>Temsilcileri kullanma  
  Bir evrensel Windows platformu uygulaması oluşturduğunuzda, genellikle bir Windows çalışma zamanı sınıfı bir olay türü olarak bir temsilci ile çalışır. Bir olaya abone olmak için bir işlev belirterek, temsilci türünün bir örneği oluşturma — veya lambda —, temsilci imzasında eşleşir. Ardından `+=` temsilci nesne sınıfında olay üyeye geçirilecek işleci. Bu olaya abone olma olarak bilinir. Sınıf örneği "olay oluşturulduğunda", nesnenizin veya diğer nesneleri tarafından eklenen herhangi bir işleyicileri birlikte, işlev çağrılır.  

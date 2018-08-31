@@ -16,30 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 139a21f5fbb7ce279d96f9df8be6008c2f092287
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43e3d63ad1d482222c4ffa7aa7435d0e660f3985
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291677"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223324"
 ---
 # <a name="compiler-warning-level-3-c4159"></a>Derleyici Uyarısı (Düzey 3) C4159
-\#pragma pragma(pop,...): daha önce basılmış tanımlayıcısı 'tanımlayıcısı' Sil'i  
-  
- Kaynak kodunuzu içeren bir **anında iletme** pragma için bir tanımlayıcı ile yönerge ve ardından bir **pop** tanımlayıcı olmadan yönerge. Sonuç olarak, ***tanımlayıcısı*** Sil'i ve sonraki kullandığında, ***tanımlayıcısı*** beklenmeyen davranışlara neden olabilir.  
-  
- Bu uyarıyı önlemek için bir tanımlayıcı verme **pop** yönergesi. Örneğin:  
-  
-```  
-// C4159.cpp  
-// compile with: /W3  
-#pragma pack(push, f)  
-#pragma pack(pop)   // C4159  
-  
-// using the identifier resolves the warning  
-// #pragma pack(pop, f)  
-  
-int main()  
-{  
-}  
+
+> #<a name="pragma-pragmapop--has-popped-previously-pushed-identifier-identifier"></a>pragma pragma(pop,...): daha önce POP '*tanımlayıcı*'
+
+## <a name="remarks"></a>Açıklamalar
+
+Kaynak kodunuzu içeren bir **anında iletme** yönerge bir pragma için olan tanımlayıcıyla arkasından bir **pop** tanımlayıcısı olmayan yönergesi. Sonuç olarak, *tanımlayıcı* POP ve sonraki kullandığında, *tanımlayıcı* beklenmeyen davranışlara neden olabilir.
+
+## <a name="example"></a>Örnek
+
+Bu uyarıyı engellemek için bir tanımlayıcı verin **pop** yönergesi. Örneğin:
+
+```cpp
+// C4159.cpp
+// compile with: /W3
+#pragma pack(push, f)
+#pragma pack(pop)   // C4159
+
+// using the identifier resolves the warning
+// #pragma pack(pop, f)
+
+int main()
+{
+}
 ```

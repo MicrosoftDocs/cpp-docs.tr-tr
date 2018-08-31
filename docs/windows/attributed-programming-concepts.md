@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fe6616cd22ee9de9ffbb6b3a26620a7ccdebc63
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 223359e10ef0e64860a611079abf9e7e83a26fe1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598083"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222814"
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 
 Visual C++ öznitelikleri programlarınızda kullanmanıza yardımcı olacak çeşitli içerir. Öznitelikler, Visual c++'da yeni bir özellik, COM programlama ve .NET Framework ortak dil çalışma zamanı geliştirme sürecini basitleştirmek üzere tasarlanmıştır. Derleyici öznitelikleri, kaynak dosyaları eklediğinizde, sağlayıcı dinamik bağlantı kitaplıklarını (DLL) kod ekleyin veya oluşturulan nesne dosyaları kodu değiştirmek için çalışır. .İdl dosyaları, arabirimler, tür kitaplıklarını ve diğer COM öğeleri oluşturmaya yardımcı öznitelikleri vardır. Tümleşik geliştirme ortamında (IDE), öznitelikler ve Özellikler penceresinde sihirbazlar tarafından desteklenir.
 
-Öznitelikleri COM nesneleri yazmak için gerekli ayrıntılı kodlama bazılarını ortadan kaldırır, ancak arka planda ihtiyacınız [COM Temelleri](http://msdn.microsoft.com/library/windows/desktop/ms694363) en iyi şekilde kullanmak için.
+Öznitelikleri COM nesneleri yazmak için gerekli ayrıntılı kodlama bazılarını ortadan kaldırır, ancak arka planda ihtiyacınız [COM Temelleri](/windows/desktop/com/the-component-object-model) en iyi şekilde kullanmak için.
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

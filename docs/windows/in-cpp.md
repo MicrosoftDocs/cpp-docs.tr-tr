@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 95721a37865d7a129d9533b2b8aba7e45c912235
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6c447147802d91df0f280a82c61d919ee673970a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611787"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222996"
 ---
 # <a name="in-c"></a>in (C++)
 
@@ -36,7 +36,7 @@ Bir parametrenin çağıran yordamdan çağrılan yordama geçirileceğini göst
 
 ## <a name="remarks"></a>Açıklamalar
 
-**İçinde** C++ özniteliği ile aynı işlevlere sahip [içinde](http://msdn.microsoft.com/library/windows/desktop/aa367051) MIDL özniteliği.
+**İçinde** C++ özniteliği ile aynı işlevlere sahip [içinde](/windows/desktop/Midl/in) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

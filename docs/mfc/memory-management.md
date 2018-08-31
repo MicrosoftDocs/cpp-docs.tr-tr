@@ -18,19 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928a954be6a96f5026a98f724a77bebd51be27f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28191191572e508828a23f0e719a57d63163b08d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33345084"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222357"
 ---
 # <a name="memory-management"></a>Bellek Yönetimi
-Makalelerin bu grup, genel amaçlı Hizmetleri, Microsoft Foundation Class Kitaplığı (bellek yönetimiyle ilgili MFC) yararlanmak açıklar. Bellek ayırma iki ana kategoriye bölünmüş: çerçeve ayırma ve yığın ayırmaları.  
+Bu grup makale, Microsoft Foundation Class Kitaplığı (bellek yönetimi ile ilgili MFC) genel amaçlı hizmetlerinden yararlanan açıklar. Bellek ayırma iki ana kategoriye ayrılabilir: çerçeve ayırma ve yığın ayırma.  
   
- İki ayırma teknikleri arasındaki tek temel fark, yığın ayırma ile her zaman bellek bloğu için bir işaretçi verilir ancak gerçek belleği olan tipik iş çerçeve ayırma ile kendisini engellemeniz ' dir. Başka bir önemli arasındaki iki düzenleri yığın nesneleri programlayıcı tarafından açıkça silinmelidir sırada çerçeve nesneleri otomatik olarak, silindiğini farktır.  
+ Yığın ayırma ile her zaman bellek bloğuna işaretçi verilir, genellikle gerçek bellek ile çalışmanıza çerçeve ayırma ile kendisi engellemek, iki ayırma teknikleri arasında ana farklardan biri olan. Başka bir önemli fark iki düzen arasında yığın nesnelerini Programcı tarafından açıkça silinmelidir ederken çerçeve nesneleri otomatik olarak, silinir.  
   
- MFC dışı Windows için programlarda bellek yönetimi hakkında bilgi için [bellek yönetimi](http://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK'sındaki.  
+ MFC olmayan Windows için programlar, bellek yönetimi hakkında bilgi için [bellek yönetimi](https://msdn.microsoft.com/library/windows/desktop/aa366779) Windows SDK.  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

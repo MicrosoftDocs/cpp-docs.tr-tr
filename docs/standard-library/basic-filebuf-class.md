@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9ea6f4a5770163ddaa34478f6630ed2a24ffbd6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4594e24ddf88292d311679b64371ac981642bc5d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954974"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222727"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 
@@ -70,9 +70,11 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* dosya arabelleğinin temel öğe.
+*Elem*<br/>
+ Dosya tamponunun temel öğe.
 
-*Tr* temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
+*tr*<br/>
+ Temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -410,11 +412,14 @@ basic_filebuf<Elem, Tr> *open(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgisi _dosya adını* açmak için dosyanın adı.
+*Bilgisi _dosya adını*<br/>
+ Açmak için dosya adı.
 
-*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu*<br/>
+ Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot* varsayılan dosyanın koruması, eşdeğer açma *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+ Koruma, eşdeğer açma varsayılan dosya *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -456,7 +461,8 @@ basic_filebuf& operator=(basic_filebuf&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* rvalue başvurusuna bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesne.
+*sağ*<br/>
+ Rvalue başvurusuna bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -476,7 +482,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta* karakter arabelleğine ekleme veya `traits_type::eof`.
+*_Meta*<br/>
+ Karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -484,7 +491,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 
 ### <a name="remarks"></a>Açıklamalar
 
-_ * Meta ***! traits_type =::**[eof](../standard-library/char-traits-struct.md#eof), korumalı sanal üye işlevi endeavors öğe eklemek **ch traits_type =::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type) (\_ *Meta*) çıktı arabelleğine. Bunu çeşitli yöntemlerle yapabilirsiniz:
+Varsa *_Meta* **! traits_type =::**[eof](../standard-library/char-traits-struct.md#eof), korumalı sanal üye işlevi endeavors öğe eklemek **ch traits_type =::** [ to_char_type](../standard-library/char-traits-struct.md#to_char_type)(*_Meta*) çıktı arabelleğine. Bunu çeşitli yöntemlerle yapabilirsiniz:
 
 - Yazma konumunu varsa, bu öğe yazma konumuna depolayabilir ve çıkış arabelleği için sonraki işaretçisine artırılacak.
 
@@ -502,7 +509,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta* karakter arabelleğine ekleme veya `traits_type::eof`.
+*_Meta*<br/>
+ Karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -538,11 +546,14 @@ virtual pos_type seekoff(off_type _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* göreli arama konumu *_Way*.
+*_Off*<br/>
+ Arama için göreli konumunu *_Way*.
 
-*_Way* işlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Way*<br/>
+ İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+ İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -566,9 +577,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp* için arama konumu.
+*_Sp*<br/>
+ Arama konumu.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+ İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -594,9 +607,11 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer* arabellek için işaretçi.
+*_Buffer*<br/>
+ Arabellek için işaretçi.
 
-*sayısı* arabellek boyutu.
+*Sayısı*<br/>
+ Arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -616,7 +631,8 @@ void swap(basic_filebuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir `lvalue` başka bir başvuru `basic_filebuf`.
+*sağ*<br/>
+ Bir `lvalue` başka bir başvuru `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::Sync
 

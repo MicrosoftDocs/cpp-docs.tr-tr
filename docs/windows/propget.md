@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 17c5742fccdc32396b36d058188f3609caf08791
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e3461f622e5146a9173e0a011fbec60a9674c545
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586752"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223347"
 ---
 # <a name="propget"></a>propget
 
@@ -36,7 +36,7 @@ Bir özelliği erişimci işlevi belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Propget** C++ özniteliği ile aynı işlevlere sahip [propget](http://msdn.microsoft.com/library/windows/desktop/aa367145) MIDL özniteliği.
+**Propget** C++ özniteliği ile aynı işlevlere sahip [propget](/windows/desktop/Midl/propget) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

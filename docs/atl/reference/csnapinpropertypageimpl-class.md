@@ -35,12 +35,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56a57d3fe0eb1a016af9eee8539cd7f57a12ddf5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: fd7f2c708dd3cfe63e40b62912a775fcc120c4ba
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880566"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223057"
 ---
 # <a name="csnapinpropertypageimpl-class"></a>Csnapınpropertypageımpl sınıfı
 Bu sınıf, bir ek özellik sayfa nesnesi uygulamak için yöntemler sağlar.  
@@ -146,7 +146,7 @@ PROPSHEETPAGE m_psp;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapı, oluşturduğu sonra bir özellik sayfasının görünümünü başlatmak için kullanın.  
   
- Bu grubun üyeleri listesi dahil olmak üzere, bu yapı hakkında daha fazla bilgi için bkz. [PROPSHEETPAGE](http://msdn.microsoft.com/library/aa815151) Windows SDK.  
+ Bu grubun üyeleri listesi dahil olmak üzere, bu yapı hakkında daha fazla bilgi için bkz. [PROPSHEETPAGE](https://msdn.microsoft.com/library/aa815151) Windows SDK.  
   
 ##  <a name="onapply"></a>  CSnapInPropertyPageImpl::OnApply  
  Kullanıcı tıkladığında bu üye işlevi çağrılan **Tamam** veya **şimdi Uygula** düğmesi.  
