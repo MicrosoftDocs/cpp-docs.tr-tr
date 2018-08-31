@@ -7,6 +7,54 @@ ms.technology:
 ms.topic: reference
 f1_keywords:
 - AFX_GLOBAL_DATA
+- AFXGLOBALS/AFX_GLOBAL_DATA::AFX_GLOBAL_DATA
+- AFXGLOBALS/AFX_GLOBAL_DATA::~AFX_GLOBAL_DATA
+- AFXGLOBALS/AFX_GLOBAL_DATA::CleanUp
+- AFXGLOBALS/AFX_GLOBAL_DATA::D2D1MakeRotateMatrix
+- AFXGLOBALS/AFX_GLOBAL_DATA::DrawParentBackground
+- AFXGLOBALS/AFX_GLOBAL_DATA::DrawTextOnGlass
+- AFXGLOBALS/AFX_GLOBAL_DATA::ExcludeTag
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetColor
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetDirect2dFactory
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetHandCursor
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetITaskbarList3
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetNonClientMetrics
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetShellAutohideBars
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetTextHeight
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetWICFactory
+- AFXGLOBALS/AFX_GLOBAL_DATA::GetWriteFactory
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized
+- AFXGLOBALS/AFX_GLOBAL_DATA::Is32BitIcons
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsD2DInitialized
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsDwmCompositionEnabled
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsHighContrastMode
+- AFXGLOBALS/AFX_GLOBAL_DATA::OnSettingChange
+- AFXGLOBALS/AFX_GLOBAL_DATA::RegisterWindowClass
+- AFXGLOBALS/AFX_GLOBAL_DATA::ReleaseTaskBarRefs
+- AFXGLOBALS/AFX_GLOBAL_DATA::Resume
+- AFXGLOBALS/AFX_GLOBAL_DATA::SetLayeredAttrib
+- AFXGLOBALS/AFX_GLOBAL_DATA::SetMenuFont
+- AFXGLOBALS/AFX_GLOBAL_DATA::ShellCreateItemFromParsingName
+- AFXGLOBALS/AFX_GLOBAL_DATA::UpdateFonts
+- AFXGLOBALS/AFX_GLOBAL_DATA::UpdateSysColors
+- AFXGLOBALS/AFX_GLOBAL_DATA::EnableAccessibilitySupport
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsAccessibilitySupport
+- AFXGLOBALS/AFX_GLOBAL_DATA::IsWindowsLayerSupportAvailable
+- AFXGLOBALS/AFX_GLOBAL_DATA::bIsOSAlphaBlendingSupport
+- AFXGLOBALS/AFX_GLOBAL_DATA::bIsWindows7
+- AFXGLOBALS/AFX_GLOBAL_DATA::clrActiveCaptionGradient
+- AFXGLOBALS/AFX_GLOBAL_DATA::clrInactiveCaptionGradient
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseBuiltIn32BitIcons
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_bUseSystemFont
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurHand
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretch
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_hcurStretchVert
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_hiconTool
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarMargin
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_nAutoHideToolBarSpacing
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessDock
+- AFXGLOBALS/AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd4aadf875e16586286c97aa5bffe82d6faed31e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1d762aef0dd48f3eac8eaeeddee558c4f237b29f
+ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222309"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43352745"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 `AFX_GLOBAL_DATA` Yapısı, alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.  
@@ -32,7 +80,7 @@ ms.locfileid: "43222309"
 ```  
 struct AFX_GLOBAL_DATA  
 ```  
-  
+
 ## <a name="members"></a>Üyeler  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  

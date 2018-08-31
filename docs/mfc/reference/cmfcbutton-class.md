@@ -1,7 +1,7 @@
 ---
 title: CMFCButton sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/28/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 155aa704efe0686fc03be6e2b12c076656fad7a1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8385320b51efedd214424385babc5f03d5559873
+ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217515"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43352722"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 `CMFCButton` Sınıfı işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metnini hizalama, düğme metni ve görüntüyü birleştirme, imleç seçme ve araç ipuçları belirleme gibi sınıf.  
@@ -165,12 +165,17 @@ class CMFCButton : public CButton
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.|  
-|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.|  
-|[CMFCButton::m_bRightImage](#m_brightimage)|Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.|  
-|[CMFCButton::m_bTransparent](#m_btransparent)|Düğme saydam olup olmadığını belirtir.|  
 |[CMFCButton::m_nAlignStyle](#m_nalignstyle)|Düğme metnini hizalamasını belirtir.|  
+|[CMFCButton::m_bDontUseWinXPTheme](#m_bDontUseWinXPTheme)|Windows XP temalarını kullanılıp kullanılmayacağını belirtir.|
+|[CMFCButton::m_bDrawFocus](#m_bdrawfocus)|Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.| 
 |[CMFCButton::m_nFlatStyle](#m_nflatstyle)|Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.|  
+|[CMFCButton::m_bGrayDisabled](#m_bGrayDisabled)|TRUE olduğunda grileştirilmiş olarak çizilecek devre dışı bırakılmış bir düğme etkinleştirir.|
+|[CMFCButton::m_bHighlightChecked](#m_bhighlightchecked)|İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.|  
+|[CMFCButton::m_bResponseOnButtonDown](#m_bResponseOnButtonDown)|Düğme basılıyken olayları yanıtlamak görüntülenip görüntülenmeyeceğini gösterir.|
+|[CMFCButton::m_bRightImage](#m_brightimage)|Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.|
+|[CMFCButton::m_bTopImage](#m_bTopImage)| Görüntüyü düğme üzerinde olup olmadığını gösterir.|
+|[CMFCButton::m_bTransparent](#m_btransparent)|Düğme saydam olup olmadığını belirtir.|  
+|[CMFCButton::m_bWasDblClk](#m_bWasDblClk)| Son tıklayın olup olmadığını, çift tıklama olay olmadığını belirtir.|
   
 ## <a name="remarks"></a>Açıklamalar  
  Düğmeleri diğer tür türetilir `CMFCButton` gibi sınıf [CMFCURLLinkButton](../../mfc/reference/cmfclinkctrl-class.md) köprüler destekleyen bir sınıf ve `CMFCColorButton` sınıfını, bir Renk Seçici iletişim kutusunu destekler.  
@@ -376,7 +381,16 @@ static BOOL IsWindowsThemingEnabled();
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğme kenarlığın stili karşılık gelen geçerli Windows teması için TRUE; Aksi takdirde FALSE.  
-  
+
+
+
+## <a name="a-namembdontusewinxptheme-cmfcbuttonmbdontusewinxptheme"></a><a name="m_bDontUseWinXPTheme"/> CMFCButton::m_bDontUseWinXPTheme
+Windows XP temalarını düğme çizerken kullanılıp kullanılmayacağını belirtir.
+
+```  
+BOOL m_bDontUseWinXPTheme;  
+```
+
 ##  <a name="m_bdrawfocus"></a>  CMFCButton::m_bDrawFocus  
  Geçici bir düğme odak dikdörtgen çizmek görüntülenip görüntülenmeyeceğini gösterir.  
   
@@ -388,7 +402,15 @@ BOOL m_bDrawFocus;
  Ayarlama `m_bDrawFocus` framework düğmenin metninin çevresindeki odak dikdörtgen çizme ve düğme odak alırsa görüntü belirtmek için true üyesi.  
   
  `CMFCButton` Oluşturucu, bu üye true başlatır.  
-  
+
+##  <a name="m_bGrayDisabled"></a>  CMFCButton::m_bGrayDisabled
+TRUE olduğunda grileştirilmiş olarak çizilecek devre dışı bırakılmış bir düğme etkinleştirir.
+
+
+```  
+BOOL m_bGrayDisabled;  
+```
+
 ##  <a name="m_bhighlightchecked"></a>  CMFCButton::m_bHighlightChecked  
  İmleci üzerine geldiğinde bir BS_CHECKBOX stili düğme vurgulamak görüntülenip görüntülenmeyeceğini gösterir.  
   
@@ -398,14 +420,29 @@ BOOL m_bHighlightChecked;
   
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlama `m_bHighlightChecked` üye üzerine fare geldiğinde framework BS_CHECKBOX stili düğme vurgular belirtmek için true.  
-  
+
+##  <a name="m_bResponseOnButtonDown"></a> CMFCButton::m_bResponseOnButtonDown
+Düğme basılıyken olayları yanıtlamak görüntülenip görüntülenmeyeceğini gösterir.
+
+```  
+BOOL m_bResponseOnButtonDown;  
+```  
+
 ##  <a name="m_brightimage"></a>  CMFCButton::m_bRightImage  
  Düğmenin sağ tarafında bir görüntü görüntülenip görüntülenmeyeceğini gösterir.  
   
 ```  
 BOOL m_bRightImage;  
 ```  
-  
+
+
+##  <a name="m_bTopImage"></a>  CMFCButton::m_bTopImage](#m_bTopImage)
+Görüntüyü düğme üzerinde olup olmadığını gösterir.
+
+```  
+BOOL m_bTopImage;  
+```
+
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlama `m_bRightImage` üye düğmenin resim framework tarafından düğmenin metin etiketinin sağında görüntüleneceğini belirtmek için true.  
   
@@ -436,7 +473,14 @@ AlignStyle m_nAlignStyle;
 |ALIGN_RIGHT|Düğmenin sağ tarafında düğme metnini hizalar.|  
   
  `CMFCButton` Oluşturucu bu üyeye ALIGN_CENTER başlatır.  
-  
+
+##  <a name="m_bWasDblClk"></a>  CMFCButton::m_bWasDblClk](#m_bWasDblClk) | 
+Son tıklayın olup olmadığını olay çift tıklama oluştuğunu gösterir. |
+
+```  
+BOOL m_bWasDblClk;  
+```  
+
 ##  <a name="m_nflatstyle"></a>  CMFCButton::m_nFlatStyle  
  Kenarlıksız, düz, noktalı düz veya 3B gibi bir düğmenin stilini belirtir.  
   
