@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7e7edaa36f929750087e3c81f42204ff20e9f62
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 0502528a2db47b8db41437fd7017aece1dc67cde
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692918"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217751"
 ---
 # <a name="threadprivate"></a>threadprivate
 Bir değişken için bir iş parçacığı özel olduğunu belirtir.  
@@ -36,22 +36,22 @@ Bir değişken için bir iş parçacığı özel olduğunu belirtir.
  Burada,  
   
  `var`  
- Bir iş parçacığı özel yapmak istediğiniz değişkenleri virgülle ayrılmış listesi. `var` Genel veya ad alanı-kapsamlı bir değişken veya yerel bir statik değişken olmalıdır.  
+ Bir iş parçacığına özel yapmak istediğiniz değişkenleri virgülle ayrılmış listesi. `var` Genel veya ad alanı-kapsamlı bir değişken veya yerel bir statik değişken olmalıdır.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `threadprivate` Yönergesi yok OpenMP yan tümceleri destekler.  
   
- Daha fazla bilgi için bkz: [2.7.1 threadprivate yönergesi](../../../parallel/openmp/2-7-1-threadprivate-directive.md).  
+ Daha fazla bilgi için [2.7.1 threadprivate yönergesi](../../../parallel/openmp/2-7-1-threadprivate-directive.md).  
   
- `threadprivate` Yönergesi temel [iş parçacığı](../../../cpp/thread.md) `__declspec` özniteliği; sınırları **__declspec(thread)** uygulamak `threadprivate`.  
+ `threadprivate` Yönergesi temel [iş parçacığı](../../../cpp/thread.md) `__declspec` öznitelik; barındırabileceğiniz **gt;__declspec(thread)** uygulamak `threadprivate`.  
   
- Kullanamazsınız `threadprivate` aracılığıyla yüklenen dll [LoadLibrary](http://msdn.microsoft.com/library/windows/desktop/ms684175).  Bu ile yüklenen DLL içerir [/DELAYLOAD (yükü içe aktarmayı Geciktir)](../../../build/reference/delayload-delay-load-import.md), kullanan **LoadLibrary**.  
+ Kullanamazsınız `threadprivate` aracılığıyla yüklenen herhangi bir DLL içinde [LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175).  Bu ile yüklenen DLL'ler içerir [/delayload (gecikme yükü içe)](../../../build/reference/delayload-delay-load-import.md), kullanan **LoadLibrary**.  
   
- Kullanabileceğiniz `threadprivate` DLL'de işlem başlangıçta statik olarak yüklenir.  
+ Kullanabileceğiniz `threadprivate` işlem başlangıçta statik olarak yüklenen bir DLL içinde.  
   
- Çünkü `threadprivate` dayanır **__declspec(thread)**, `threadprivate` değişkeni işlemde yalnızca bir paralel bölgeye göre kökenli bir iş parçacığı ekibin parçası olan iş parçacığı çalışmaya herhangi bir iş parçacığı var.  Bu, örneğin, oluşturucuları için fark edebilirsiniz bu yana, bilincinde olmak isteyebilirsiniz bir uygulama ayrıntısı şöyle bir `threadprivate` kullanıcı tanımlı tür genellikle beklenen sonra daha fazla çağrılır.  
+ Çünkü `threadprivate` dayanır **gt;__declspec(thread)**, `threadprivate` değişkeni işlemde yalnızca bir paralel bölgenin tarafından üretilen bir iş parçacığı ekibin parçası olan iş parçacığı çalışmaya herhangi bir iş parçacığı var.  Bu, örneğin, Oluşturucular için fark edebilirsiniz olduğundan, dikkat edilmesi gereken isteyebileceğiniz bir uygulama ayrıntısı olan bir `threadprivate` genellikle beklenen sonra daha fazla kullanıcı tanımlı tür adı.  
   
- A `threadprivate` destructable türünde değişken adında kendi yıkıcı olmasını garanti edilmez.  Örneğin:  
+ A `threadprivate` destructable türünde değişken adında yok edici olmasını garanti edilmez.  Örneğin:  
   
 ```  
 struct MyType   
@@ -68,10 +68,10 @@ int main()
 }  
 ```  
   
- Kullanıcıların paralel bölge oluşturan iş parçacığı ne zaman sona erdirir konusunda denetim sahibi değildir.  Bu iş parçacığı çıkılıyor, iş parçacıkları hakkında işlem çıkışı bildirilmez ve yıkıcı için çağrılmaz varsa `threaded_var` çıkar dışındaki herhangi bir iş parçacığı üzerinde (burada, birincil iş parçacığı).  Kod uygun yok etme üzerinde güvenmemeniz gerekir olmayan şekilde `threadprivate` değişkenleri.  
+ Kullanıcılar için bir paralel bölgenin oluşturan iş parçacıklarının ne zaman sona erer denetiminiz yoktur.  Bu iş parçacıkları işlemi, iş parçacıkları hakkında işlem çıkış bildirilmez ve yok edici için çağrılmayacak varsa `threaded_var` çıkar dışındaki herhangi bir iş parçacığı üzerinde (burada, birincil iş parçacığı).  Kod üzerinde uygun edilmesine sayısı değil şekilde `threadprivate` değişkenleri.  
   
 ## <a name="example"></a>Örnek  
- Kullanarak, bir örnek için `threadprivate`, bkz: [özel](../../../parallel/openmp/reference/private-openmp.md).  
+ Kullanarak bir örnek için `threadprivate`, bkz: [özel](../../../parallel/openmp/reference/private-openmp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönergeler](../../../parallel/openmp/reference/openmp-directives.md)

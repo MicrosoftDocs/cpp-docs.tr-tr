@@ -15,21 +15,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3739c053797bdccd08310e17bf669413ead0db48
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c9e1d883e0c7a2b214842b096fdf697ffc7d0192
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367179"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221747"
 ---
 # <a name="command-modifiers"></a>Komut Değiştiriciler
-İsteğe bağlı alanları veya sekmelerle ayrılmış bir komutu, önceki bir veya daha fazla komut değiştiriciler belirtebilirsiniz. Komutlarla olduğu gibi değiştiricileri girintili gerekir.  
+İsteğe bağlı olarak, boşluk veya sekme ile ayrılmış bir komut, önceki bir veya daha fazla komut değiştiriciler belirtebilirsiniz. Komutları gibi değiştiriciler girintili gerekir.  
   
 |Değiştirici|Amaç|  
 |--------------|-------------|  
-|@*komutu*|Komutun görüntülenmesini engeller. Görüntü komutları tarafından gizlenen değil. Varsayılan olarak, yürütülen tüm komutlar NMAKE görüntülemektedir. Tüm makefile görüntülenmesine /S kullanın; kullanmak **. Sessiz** derleme görevleri dosyası kısmı için görüntüleme gizlemek için.|  
-|**-**[`number` ]*komutu*|Hata denetleme kapatır *komutu*. Varsayılan olarak, bir komutu sıfır olmayan çıkış kodu döndürdüğünde NMAKE durur. IF -`number` olan kullanıldığında, NMAKE çıkış kodu aşarsa durdurur `number`. Boşluk veya sekmeler arasında çizgi bulunamaz ve *numarası.* En az bir boşluk veya sekme arasında görünmelidir `number` ve *komutu*. Hata için tüm derleme görevleri dosyası denetimini devre dışı bırakmak üzere /I kullanın; kullanmak **. Yoksay** hata derleme görevleri dosyası bir parçası için denetimi devre dışı bırakmak için.|  
-|**\!** *komutu*|Yürütür *komutu* bağımlı her dosya için *komutu* kullanan **$ \* \*** (tüm bağımlı dosyaları bağımlılık) veya **$?** (tüm bağımlı dosyaları hedef daha sonraki bir zaman damgasına sahip bağımlılık).|  
+|@*Komutu*|Komut görüntülenmesini önler. Ekran komutları tarafından gizlenen değil. Varsayılan olarak, tüm yürütülen komutlar NMAKE görüntülemektedir. /S görünen tüm görevleri için gizlemek için kullanın. kullanma **. Sessiz** görüntülenmesine için derleme görevleri dosyası bir parçası.|  
+|**-**\[*sayı*] *komutu*|İçin hata denetimini kapatır *komut*. Varsayılan olarak, bir komut sıfır olmayan çıkış kodu döndürüldüğünde NMAKE durdurur. IF -*numarası* olan kullanıldığında, NMAKE çıkış kodu aşarsa durdurur *numarası*. Boşluk veya sekme çizgi bulunamaz ve *sayı.* En az bir boşluk veya sekme arasında görünmelidir `number` ve *komut*. /I hata tüm görevleri için denetimi devre dışı bırakmak için kullanın. kullanma **. Yoksay** hata derleme görevleri dosyası bir parçası için denetimi devre dışı bırakmak için.|  
+|**\!** *Komutu*|Yürütür *komut* bağımlı her dosya için *komut* kullanan <strong>$ \* \*</strong> (bağımlılık içindeki tüm bağımlı dosyaları) veya **$?** (tüm bağımlı dosyaları hedef daha sonraki bir zaman damgasına sahip bağımlılık olarak).|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)

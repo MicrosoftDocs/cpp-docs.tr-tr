@@ -17,25 +17,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86032bd3d1ce10221cb5d8094e4ba6de866e1eea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb8caad0b7d1f632a2d97e4ea6bda7c93a2b4d74
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33342859"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218303"
 ---
 # <a name="adding-tabs-to-a-tab-control"></a>Sekme Denetimine Sekmeler Ekleme
-Sekme denetimi oluşturduktan sonra ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), gerektiği kadar sekmeler ekleme.  
+Sekme denetimi oluşturduktan sonra ([CTabCtrl](../mfc/reference/ctabctrl-class.md)), ihtiyacınız kadar sekme ekleyin.  
   
 ### <a name="to-add-a-tab-item"></a>Sekme öğesi eklemek için  
   
-1.  Hazırlama bir [TCITEM](http://msdn.microsoft.com/library/windows/desktop/bb760554) yapısı.  
+1.  Hazırlama bir [TCITEM](/windows/desktop/api/commctrl/ns-commctrl-tagtcitema) yapısı.  
   
 2.  Çağrı [CTabCtrl::InsertItem](../mfc/reference/ctabctrl-class.md#insertitem), yapısı geçirme.  
   
 3.  Adım 1 ve 2 ek sekme öğeleri için yineleyin.  
   
- Daha fazla bilgi için bkz: [sekme denetimi oluşturma](http://msdn.microsoft.com/library/windows/desktop/bb760550) Windows SDK.  
+ Daha fazla bilgi için [sekme denetimi oluşturma](/windows/desktop/Controls/tab-controls) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CTabCtrl kullanma](../mfc/using-ctabctrl.md)   

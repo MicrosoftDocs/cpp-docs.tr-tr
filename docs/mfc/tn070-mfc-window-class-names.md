@@ -17,27 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c66c434503bbd2c6d7ee1b0557fa73d843e0caaa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf73633c22191d54f2b03f11cb2b84cbbd24d807
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33385358"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220854"
 ---
 # <a name="tn070-mfc-window-class-names"></a>TN070: MFC Pencere Sınıfı Adları
 > [!NOTE]
->  İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.  
+>  Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.  
   
- MFC windows penceresi özelliklerini yansıtan bir dinamik olarak oluşturulan sınıf adı kullanın. MFC sınıf adları çerçeve pencereleri, görünümler ve uygulama tarafından üretilen açılır pencereleri için dinamik olarak oluşturur. İletişim kutuları ve MFC Uygulama tarafından üretilen denetimleri penceresinin söz konusu sınıf için Windows tarafından sağlanan ad var.  
+ MFC windows penceresi özelliklerini yansıtan bir dinamik olarak oluşturulan sınıf adı kullanın. MFC sınıf adları çerçeve pencereleri, görünümler ve uygulama tarafından üretilen açılır pencereleri için dinamik olarak oluşturur. İletişim kutuları ve bir MFC uygulaması tarafından üretilen denetimleri penceresinin söz konusu sınıf için Windows tarafından sağlanan ad var.  
   
- Kendi pencere sınıfı kaydediliyor ve içinde geçersiz kılma kullanılarak dinamik olarak sağlanan sınıf adını değiştirebilirsiniz [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow). MFC tarafından sağlanan sınıf adlarını iki aşağıdaki biçimlerden birini uygun:  
+ Kendi pencere sınıfı kaydediliyor ve içinde geçersiz kılma kullanılarak dinamik olarak sağlanan sınıf adını değiştir [PreCreateWindow](../mfc/reference/cwnd-class.md#precreatewindow). MFC tarafından sağlanan sınıf adlarını iki aşağıdaki biçimlerden birini uygun:  
   
 ```  
 Afx:%x:%x  
 Afx:%x:%x:%x:%x:%x  
 ```  
   
- Değiştir onaltılı basamak `%x` karakter doldurulur verilerden gelen [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı. MFC kullanan bu teknik böylece aynı gerektiren birden çok C++ sınıfları **WNDCLASS** yapıları aynı kayıtlı pencere sınıfı paylaşabilir. MFC uygulamaları tek en basit Win32 uygulamalardan farklı olarak, yüklü **WNDPROC**, kolayca paylaşabilmek için **WNDCLASS** süresi ve bellek kaydetmek için yapıları. Değiştirilebilir değerlerini `%x` yukarıda gösterilen karakterleri aşağıdaki gibidir:  
+ Yerini onaltılık basamak `%x` karakter doldurulur verilerden gelen [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı. MFC bu tekniği kullanır böylece birden fazla C++ sınıfları aynı gerektiren **WNDCLASS** yapıları aynı kayıtlı pencere sınıfı paylaşabilir. En basit Win32 uygulamalardan farklı olarak, yalnızca bir MFC uygulamaları sahip **WNDPROC**, bu nedenle, bir kolayca paylaşabilirsiniz **WNDCLASS** süresi ve bellek kaydetmek için yapılar. Değiştirilebilir değerlerini `%x` yukarıda gösterilen karakter aşağıdaki gibidir:  
   
 - **WNDCLASS.hInstance**  
   

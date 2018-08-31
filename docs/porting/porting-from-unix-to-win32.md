@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4295fe855728f82567685a336211c2ef8c855e7
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 18217b1d4574f6591287ab6cb83e28c67fe95537
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465815"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218130"
 ---
 # <a name="porting-from-unix-to-win32"></a>UNIX'ten Win32'ye Bağlantı Noktası Oluşturma
 Uygulamalar için Windows UNIX içinden geçiş için birkaç seçeneğiniz vardır:  
@@ -66,15 +66,15 @@ Yazılım taşıma UNIX'ten Win32'destek sağlayan bir şirket için site bir ü
  
 Başka bir seçenek, UNIX uygulamalarını doğrudan Win32 taşımaktır. ANSI C/C++ kitaplıkları ve ticari C Derleyici kitaplıklarını kullanarak, birçok geleneksel sistem çağrıları UNIX uygulamalar tarafından yararlandı Win32 uygulamalarında kullanılabilir.  
   
-Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](http://msdn.microsoft.com/library/windows/desktop/ms686025).  
+Çıktı modelinin **stdio**-tabanlı uygulamaları API'leri taklit Win32 konsol beri değiştirilmiş gerekmez **stdio** modeli ve sürümleri *curses* kullanan mevcut Win32 konsol API'leri. Daha fazla bilgi için [SetConsoleCursorPosition](https://msdn.microsoft.com/library/windows/desktop/ms686025).  
   
 Win32 uygulamaları olarak çalışmak için çok az değişiklik Berkeley yuva tabanlı uygulamaları gerekir. Windows Sockets arabirimini taşınabilirlik sayesinde WinSock belirtiminin giriş olarak bölümlerde belirtilmiştir minimum değişiklikle BSD yuva için tasarlanmıştır.  
   
-Windows uyumlu DCE RPC desteklediğinden, RPC-tabanlı uygulamaları kolayca kullanılabilir. Bkz: [RPC işlevleri](http://msdn.microsoft.com/library/windows/desktop/aa378623).  
+Windows uyumlu DCE RPC desteklediğinden, RPC-tabanlı uygulamaları kolayca kullanılabilir. Bkz: [RPC işlevleri](/windows/desktop/Rpc/rpc-functions).  
   
-En büyük alanlarından farkı, işlem modelinde yer alır. UNIX `fork`; Win32 değildir. Kullanımına bağlı olarak `fork` ve kod tabanının Win32 kullanılabilecek iki API vardır: `CreateProcess` ve `CreateThread`. Birden çok kopyalarını çatallar bir UNIX uygulama birden çok işlem ya da birden çok iş parçacığı ile tek bir işlem için Win32'de yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC, birden fazla yöntem vardır (ve belki de kod ve üst öğe gibi olması için yeni bir işlem verileri güncelleştirmek için İşlevler, `fork` sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz. [Ara işlem iletişimleri](http://msdn.microsoft.com/library/windows/desktop/aa365574).  
+En büyük alanlarından farkı, işlem modelinde yer alır. UNIX `fork`; Win32 değildir. Kullanımına bağlı olarak `fork` ve kod tabanının Win32 kullanılabilecek iki API vardır: `CreateProcess` ve `CreateThread`. Birden çok kopyalarını çatallar bir UNIX uygulama birden çok işlem ya da birden çok iş parçacığı ile tek bir işlem için Win32'de yeniden. Birden çok işlem kullandıysanız, işlemler arasında iletişim kurmak için kullanılan IPC, birden fazla yöntem vardır (ve belki de kod ve üst öğe gibi olması için yeni bir işlem verileri güncelleştirmek için İşlevler, `fork` sağlar gereklidir). IPC hakkında daha fazla bilgi için bkz. [Ara işlem iletişimleri](/windows/desktop/ipc/interprocess-communications).  
   
-Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](http://msdn.microsoft.com/library/windows/desktop/dd183553) GDI hakkında bilgi için.  
+Windows ve UNIX grafik modelleri çok farklıdır. GDI Windows kullanan UNIX X penceresi sistem GUI kullanır. Benzer kavramsal rağmen GDI API'sine X API'sinin basit eşlemesi yok. Ancak, OpenGL desteği geçirme UNIX OpenGL tabanlı uygulamalar için kullanılabilir. Ve X istemcileri ve sunucuları için Windows X. Bkz: [cihaz bağlamları](https://msdn.microsoft.com/library/windows/desktop/dd183553) GDI hakkında bilgi için.  
   
 Visual c++ Windows üzerinde çalışan çok CGI uygulaması gibi temel UNIX uygulamaları kolayca aktarılabilir. Gibi işlev `open`, `fopen`, `read`, `write` ve diğer Visual C++ Çalışma Zamanı Kitaplığı'nda kullanılabilir. Ayrıca, UNIX API'leri C ve Win32 API'ları arasında bire bir eşleme yoktur: `open` için `CreateFile`, `read` için `ReadFile`, `write` için `WriteFile`, `ioctl` için `DeviceIOControl`, `close` için`CloseFile`ve benzeri.  
   

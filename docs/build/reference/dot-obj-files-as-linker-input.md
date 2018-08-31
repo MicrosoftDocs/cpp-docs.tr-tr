@@ -19,26 +19,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57907beaa30418ce31e6c46202149048d5c9dea1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ffbc1d7fc7f74121c37c9e80a538ec60f2265701
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372986"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219568"
 ---
 # <a name="obj-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Obj Dosyaları
 
-Bağlayıcı Aracı (bağlantı. EXE) ortak nesne dosyası biçimi (COFF) olarak .obj dosyaları kabul eder.
+Bağlayıcı Aracı (bağlantı. EXE) .obj dosyaları ortak nesne dosyası biçimi (COFF) olarak kabul eder.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Microsoft ortak nesne dosya biçimine ilişkin kapsamlı bir açıklama sağlar. Daha fazla bilgi için bkz: [PE biçimi](https://msdn.microsoft.com/library/windows/desktop/ms680547).
+Microsoft ortak nesne dosyası biçimi ilişkin kapsamlı bir açıklama sağlar. Daha fazla bilgi için [PE biçimi](/windows/desktop/Debug/pe-format).
 
 ## <a name="unicode-support"></a>Unicode desteği
 
-Visual Studio 2005 ile başlayarak, Microsoft Visual C++ Derleyici Unicode karakterler ISO/IEC C ve C++ standartları tarafından tanımlandığı şekilde tanımlayıcıları destekler. Derleyici önceki sürümlerini tanımlayıcılarının yalnızca ASCII karakterleri desteklenir. İşlevler, sınıflar ve istatistikleri adlarında Unicode desteği için derleyici ve bağlayıcı .obj dosyaları COFF sembolleri Unicode UTF-8 kodlamasını kullanın. UTF-8 kodlaması, ASCII Visual Studio'nun önceki sürümleri tarafından kullanılan kodlama ile upwardly uyumludur.
+Visual Studio 2005 ile başlayarak, Microsoft Visual C++ derleyicisi ISO/IEC C ve C++ standartları tarafından tanımlandığı şekilde tanımlayıcıları olarak Unicode karakterleri destekler. Önceki derleyici sürümleri tanımlayıcılar yalnızca ASCII karakterleri desteklenir. İşlevler, sınıflar ve statikler adlarındaki Unicode desteği için derleyici ve bağlayıcı .obj dosyaları COFF sembolleri Unicode UTF-8 kodlamasını kullanın. UTF-8 kodlamasını, ASCII Visual Studio'nun önceki sürümleri tarafından kullanılan kodlamayla upwardly uyumludur.
 
-Derleyicide ve bağlayıcıda hakkında daha fazla bilgi için bkz: [derleyicide ve bağlayıcıda Unicode desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md). Unicode standart hakkında daha fazla bilgi için bkz: [Unicode](http://go.microsoft.com/fwlink/p/?linkid=37123) kuruluş.
+Derleyicide ve bağlayıcıda hakkında daha fazla bilgi için bkz: [derleyicide ve bağlayıcıda Unicode desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md). Unicode standardı hakkında daha fazla bilgi için bkz. [Unicode](http://go.microsoft.com/fwlink/p/?linkid=37123) kuruluş.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
@@ -46,5 +46,5 @@ Derleyicide ve bağlayıcıda hakkında daha fazla bilgi için bkz: [derleyicide
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  
 [Unicode Desteği](../../text/support-for-unicode.md)  
 [Derleyicide ve Bağlayıcıda Unicode Desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
-[Unicode standart](http://go.microsoft.com/fwlink/p/?linkid=37123)  
-[PE biçimi](https://msdn.microsoft.com/library/windows/desktop/ms680547)  
+[Unicode standardı](http://go.microsoft.com/fwlink/p/?linkid=37123)  
+[PE biçimi](/windows/desktop/Debug/pe-format)  

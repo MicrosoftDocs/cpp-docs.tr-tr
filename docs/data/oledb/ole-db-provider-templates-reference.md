@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7832985c6095aecae5098461d36947ff4268d262
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 04ee2d36d269d3bc9324b10dffd8840f9f68a8ab
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465072"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220893"
 ---
 # <a name="ole-db-provider-templates-reference"></a>OLE DB Sağlayıcı Şablonları Başvurusu
 Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki kategoride gruplandırılabilir. Başvuru malzemesi hakkında bilgiler de içerir. [OLE DB sağlayıcı şablonları için makrolar](../../data/oledb/macros-for-ole-db-provider-templates.md).  
@@ -63,7 +63,7 @@ Sınıflar ve arabirimler OLE DB sağlayıcı şablonları için aşağıdaki ka
  OLE DB uygulayan [IRowsetChange](/previous-versions/windows/desktop/ms715790\(v=vs.85\)) var olan satır, satırları silme ve yeni satır ekleyerek sütunların değerlerinin güncelleştirme sağlayan arabirim.  
   
  [Irowsetcreatorımpl](../../data/oledb/irowsetcreatorimpl-class.md)  
- Bu sınıf devraldığı [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) ve geçersiz kılmaları [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869). `IRowsetCreatorImpl` aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS` ve `DBPROPCANFETCHBACKWARDS`.  
+ Bu sınıf devraldığı [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) ve geçersiz kılmaları [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite). `IRowsetCreatorImpl` aynı işlevleri gerçekleştiren `IObjectWithSite` ancak OLE DB özelliklerini de etkinleştirir `DBPROPCANSCROLLBACKWARDS` ve `DBPROPCANFETCHBACKWARDS`.  
   
  [IRowsetIdentityImpl](../../data/oledb/irowsetidentityimpl-class.md)  
  Implements `IRowsetIdentity` arabirimi, iki veri satırını aynı olup olmadığını karşılaştırmanızı sağlar.  

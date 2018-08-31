@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 508655dbfeb2d06d936d2b73d5435cf04c860f4b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a4acb718d44a5abcf4413cbb7f026e4a8ea0f57b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598940"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218095"
 ---
 # <a name="how-to-change-the-language-or-condition-of-a-resource-while-copying"></a>Nasıl Yapılır: Kopyalarken Kaynağın Dilini veya Koşulunu Değiştirme
 
 Bir kaynak olarak kopyalarken, kendi dil özelliği veya koşul özelliğini veya her ikisi de değiştirebilirsiniz.
 
-- Kaynağın dilini yalnızca, kaynak için dil tanımlar. Tarafından kullanılan bu [FindResource](http://msdn.microsoft.com/library/windows/desktop/ms648042) , aradığınız kaynak belirlemenize yardımcı olması için. (Ancak, kaynakları farklar her metne yalnızca Japonca klavyede işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur Örneğin, ilişkili olmayan dil, vb. olabilir.)
+- Kaynağın dilini yalnızca, kaynak için dil tanımlar. Tarafından kullanılan bu [FindResource](/windows/desktop/api/winbase/nf-winbase-findresourcea) , aradığınız kaynak belirlemenize yardımcı olması için. (Ancak, kaynakları farklar her metne yalnızca Japonca klavyede işe yarayabilir Hızlandırıcıları ya da yalnızca yerelleştirilmiş Çince uygun olacağı bir bit eşlem oluşturur Örneğin, ilişkili olmayan dil, vb. olabilir.)
 
 - Bir kaynağı tanımlayan bir koşul altında kullanılacak bu belirli kaynak kopyası olan bir tanımlanmış sembol durumdur.
 

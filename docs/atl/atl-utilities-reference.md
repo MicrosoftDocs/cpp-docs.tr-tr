@@ -12,27 +12,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b802d8764dda321e2e313f793f4f2e4745dbcc7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d11e06b7a8b8bc636de906a210cfffb62c6eeff4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32363829"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220326"
 ---
 # <a name="atl-utilities-reference"></a>ATL Yardımcı Programları Başvurusu
-ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), uygulamalarınızda kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.  
+ATL yollarını ve URL'leri biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), uygulamalarınızda kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.  
   
 ### <a name="classes"></a>Sınıflar  
   
 |||  
 |-|-|  
-|[CPathT Sınıfı](../atl/reference/cpatht-class.md)|Bu sınıf bir yolunu temsil eder.|  
-|[CDebugReportHook Sınıfı](../atl/reference/cdebugreporthook-class.md)|Bu sınıf için bir adlandırılmış kanal hata ayıklama raporları göndermek için kullanın.|  
-|[CNonStatelessWorker Sınıfı](../atl/reference/cnonstatelessworker-class.md)|Bir iş parçacığı havuzu isteklerini alır ve bunları oluşturulan ve yok bir alt nesne açın her istekte aktarır.|  
-|[CNoWorkerThread Sınıfı](../atl/reference/cnoworkerthread-class.md)|Bu sınıf için bağımsız değişken olarak kullanma `MonitorClass` dinamik önbellek bakım devre dışı bırakmak istiyorsanız önbellek sınıflarına şablon parametresi.|  
-|[CThreadPool Sınıfı](../atl/reference/cthreadpool-class.md)|Bu sınıf, iş öğelerinin sırasını işlemek çalışan iş parçacığı havuzu sağlar.|  
-|[CUrl Sınıfı](../atl/reference/curl-class.md)|Bu sınıf, bir URL temsil eder. URL diğer bağımsız olarak her öğenin var olan bir URL Ayrıştırma olup olmadığını denetlemek tanır dize ya da sıfırdan bir dize oluşturma.|  
-|[CWorkerThread Sınıfı](../atl/reference/cworkerthread-class.md)|Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne işleyicilerinin bekler ve tanıtıcıları birini işaret, belirtilen istemci işlevi yürütür.|  
+|[CPathT Sınıfı](../atl/reference/cpatht-class.md)|Bu sınıf, bir yol gösterir.|  
+|[CDebugReportHook Sınıfı](../atl/reference/cdebugreporthook-class.md)|Bu sınıf, hata ayıklama raporları bir adlandırılmış kanala göndermek için kullanın.|  
+|[CNonStatelessWorker Sınıfı](../atl/reference/cnonstatelessworker-class.md)|Bir iş parçacığı havuzundan isteklerini alır ve bunları her istekte oluşturulur ve imha bir alt nesnesi açın geçirir.|  
+|[CNoWorkerThread Sınıfı](../atl/reference/cnoworkerthread-class.md)|Bu sınıf için bağımsız değişken olarak kullanmak `MonitorClass` şablon parametresi için dinamik önbellek bakım devre dışı bırakmak isterseniz önbellek sınıfları.|  
+|[CThreadPool Sınıfı](../atl/reference/cthreadpool-class.md)|Bu sınıf, iş öğelerinin bir kuyruğu işleyen çalışan iş parçacığı havuzu sağlar.|  
+|[CUrl Sınıfı](../atl/reference/curl-class.md)|Bu sınıf, bir URL temsil eder. Var olan bir URL Ayrıştırma olup olmadığını her öğeyi diğerlerinden URL'sinin düzenlemesini sağlar dize veya bir dize sıfırdan oluşturma.|  
+|[CWorkerThread Sınıfı](../atl/reference/cworkerthread-class.md)|Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır, bir veya daha fazla çekirdek nesne tutamaçları bekler ve tutamaçlarından birinin sinyal, belirtilen istemci işlevi yürütür.|  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -47,7 +47,7 @@ ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/re
   
 |||  
 |-|-|  
-|[ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md)|Bu numaralandırma üyeleri tarafından anlaşılan düzenleri sabitleri sağlamak [CUrl](../atl/reference/curl-class.md).|  
+|[ATL_URL_SCHEME](../atl/reference/atl-url-scheme-enum.md)|Bu numaralandırma üyeleri tarafından anlaşılan düzenleri için sabitleri sağlayan [CUrl](../atl/reference/curl-class.md).|  
   
 ### <a name="functions"></a>İşlevler  
   
@@ -56,48 +56,49 @@ ATL yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/re
 |[AtlCanonicalizeUrl](../atl/reference/atl-http-utility-functions.md#atlcanonicalizeurl)|Güvenli olmayan karakterleri ve boşlukları kaçış sıralarına dönüştürme içeren bir URL'yi kurallı hale getirmek için bu işlevi çağırın.|  
 |[AtlCombineUrl](../atl/reference/atl-http-utility-functions.md#atlcombineurl)|Temel URL ile göreli bir URL'yi, kurallı tek bir URL'de birleştirmek için bu işlevi çağırın.|  
 |[AtlEscapeUrl](../atl/reference/atl-http-utility-functions.md#atlescapeurl)|Tüm güvenli olmayan karakterleri kaçış sıralarına dönüştürmek için bu işlevi çağırın.|  
-|[AtlGetDefaultUrlPort](../atl/reference/atl-http-utility-functions.md#atlgetdefaulturlport)|Belirli Internet Protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını almak için bu işlevini çağırın.|  
+|[AtlGetDefaultUrlPort](../atl/reference/atl-http-utility-functions.md#atlgetdefaulturlport)|Belirli bir internet protokolü veya düzeni ile ilişkili varsayılan bağlantı noktası numarasını almak için bu işlevi çağırın.|  
 |[AtlHexValue](../atl/reference/atl-text-encoding-functions.md#atlhexvalue)|Onaltılık basamağın sayısal değerini almak için bu işlevi çağırın.|  
 |[AtlIsUnsafeUrlChar](../atl/reference/atl-http-utility-functions.md#atlisunsafeurlchar)|Bir karakterin URL'de kullanılmak üzere güvenli olup olmadığını öğrenmek için bu işlevi çağırın.|  
 |[AtlUnescapeUrl](../atl/reference/atl-http-utility-functions.md#atlunescapeurl)|Kaçış karakterlerini orijinal değerlerine döndürmek için bu işlevi çağırın.|  
 |[SystemTimeToHttpDate](../atl/reference/atl-http-utility-functions.md#systemtimetohttpdate)|Sistem saatini HTTP üstbilgileri kullanmak için uygun bir biçimde bir dizeye dönüştürmek için bu işlevi çağırın.|  
 
-|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAddBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773561). |  
-|[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#addextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAddExtension](http://msdn.microsoft.com/library/windows/desktop/bb773563). |  
-|[ATLPath::Append](../atl/reference/atl-path-functions.md#append)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathAppend](http://msdn.microsoft.com/library/windows/desktop/bb773565). |  
-|[ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#buildroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathBuildRoot](http://msdn.microsoft.com/library/windows/desktop/bb773567). |  
-|[ATLPath::Canonicalize](../atl/reference/atl-path-functions.md#canonicalize)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCanonicalize](http://msdn.microsoft.com/library/windows/desktop/bb773569). |  
-|[ATLPath::Combine](../atl/reference/atl-path-functions.md#combine)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCombine](http://msdn.microsoft.com/library/windows/desktop/bb773571). |  
-|[ATLPath::CommonPrefix](../atl/reference/atl-path-functions.md#commonprefix)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCommonPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773574). |  
-|[ATLPath::CompactPath](../atl/reference/atl-path-functions.md#compactpath)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCompactPath](http://msdn.microsoft.com/library/windows/desktop/bb773575). |  
-|[ATLPath::CompactPathEx](../atl/reference/atl-path-functions.md#compactpathex)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathCompactPathEx](http://msdn.microsoft.com/library/windows/desktop/bb773578). |  
-|[ATLPath::FileExists](../atl/reference/atl-path-functions.md#fileexists)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFileExists](http://msdn.microsoft.com/library/windows/desktop/bb773584). |  
-|[ATLPath::FindExtension](../atl/reference/atl-path-functions.md#findextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFindExtension](http://msdn.microsoft.com/library/windows/desktop/bb773587). |  
-|[ATLPath::FindFileName](../atl/reference/atl-path-functions.md#findfilename)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathFindFileName](http://msdn.microsoft.com/library/windows/desktop/bb773589). |  
-|[ATLPath::GetDriveNumber](../atl/reference/atl-path-functions.md#getdrivenumber)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathGetDriveNumber](http://msdn.microsoft.com/library/windows/desktop/bb773612). |  
-|[ATLPath::IsDirectory](../atl/reference/atl-path-functions.md#isdirectory)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsDirectory](http://msdn.microsoft.com/library/windows/desktop/bb773621). |  
-|[ATLPath::IsFileSpec](../atl/reference/atl-path-functions.md#isfilespec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773627). |  
-|[ATLPath::IsPrefix](../atl/reference/atl-path-functions.md#isprefix)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsPrefix](http://msdn.microsoft.com/library/windows/desktop/bb773650). |  
-|[ATLPath::IsRelative](../atl/reference/atl-path-functions.md#isrelative)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsRelative](http://msdn.microsoft.com/library/windows/desktop/bb773660). |  
-|[ATLPath::IsRoot](../atl/reference/atl-path-functions.md#isroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsRoot](http://msdn.microsoft.com/library/windows/desktop/bb773674). |  
-|[ATLPath::IsSameRoot](../atl/reference/atl-path-functions.md#issameroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsSameRoot](http://msdn.microsoft.com/library/windows/desktop/bb773687). |  
-|[ATLPath::IsUNC](../atl/reference/atl-path-functions.md#isunc)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNC'yi](http://msdn.microsoft.com/library/windows/desktop/bb773712). |  
-|[ATLPath::IsUNCServer](../atl/reference/atl-path-functions.md#isuncserver)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNCServer](http://msdn.microsoft.com/library/windows/desktop/bb773722). |  
-|[ATLPath::IsUNCServerShare](../atl/reference/atl-path-functions.md#isuncservershare)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathIsUNCServerShare](http://msdn.microsoft.com/library/windows/desktop/bb773723). |  
-|[ATLPath::MakePretty](../atl/reference/atl-path-functions.md#makepretty)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathMakePretty](http://msdn.microsoft.com/library/windows/desktop/bb773725). |  
-|[ATLPath::MatchSpec](../atl/reference/atl-path-functions.md#matchspec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathMatchSpec](http://msdn.microsoft.com/library/windows/desktop/bb773727). |  
-|[ATLPath::QuoteSpaces](../atl/reference/atl-path-functions.md#quotespaces)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathQuoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773739). |  
-|[ATLPath::RelativePathTo](../atl/reference/atl-path-functions.md#relativepathto)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRelativePathTo](http://msdn.microsoft.com/library/windows/desktop/bb773740). |  
-|[ATLPath::RemoveArgs](../atl/reference/atl-path-functions.md#removeargs)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveArgs](http://msdn.microsoft.com/library/windows/desktop/bb773742). |  
-|[ATLPath::RemoveBackslash](../atl/reference/atl-path-functions.md#removebackslash)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveBackslash](http://msdn.microsoft.com/library/windows/desktop/bb773743). |  
-|[ATLPath::RemoveBlanks](../atl/reference/atl-path-functions.md#removeblanks)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveBlanks](http://msdn.microsoft.com/library/windows/desktop/bb773745). |  
-|[ATLPath::RemoveExtension](../atl/reference/atl-path-functions.md#removeextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveExtension](http://msdn.microsoft.com/library/windows/desktop/bb773746). |  
-|[ATLPath::RemoveFileSpec](../atl/reference/atl-path-functions.md#removefilespec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRemoveFileSpec](http://msdn.microsoft.com/library/windows/desktop/bb773748). |  
-|[ATLPath::RenameExtension](../atl/reference/atl-path-functions.md#renameextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathRenameExtension](http://msdn.microsoft.com/library/windows/desktop/bb773749). |  
-|[ATLPath::SkipRoot](../atl/reference/atl-path-functions.md#skiproot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathSkipRoot](http://msdn.microsoft.com/library/windows/desktop/bb773754). |  
-|[ATLPath::StripPath](../atl/reference/atl-path-functions.md#strippath)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathStripPath](http://msdn.microsoft.com/library/windows/desktop/bb773756). |  
-|[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#striptoroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathStripToRoot](http://msdn.microsoft.com/library/windows/desktop/bb773757). |  
-|[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#unquotespaces)| Bu işlev için aşırı yüklenmiş bir sarmalayıcı olan [PathUnquoteSpaces](http://msdn.microsoft.com/library/windows/desktop/bb773763). |  
+|[ATLPath::AddBackslash](../atl/reference/atl-path-functions.md#addbackslash)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddbackslasha
+). |  
+|[ATLPath::AddExtension](../atl/reference/atl-path-functions.md#addextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAddExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathaddextensiona). |  
+|[ATLPath::Append](../atl/reference/atl-path-functions.md#append)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathAppend](/windows/desktop/api/shlwapi/nf-shlwapi-pathappenda). |  
+|[ATLPath::BuildRoot](../atl/reference/atl-path-functions.md#buildroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathBuildRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathbuildroota). |  
+|[ATLPath::Canonicalize](../atl/reference/atl-path-functions.md#canonicalize)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCanonicalize](/windows/desktop/api/shlwapi/nf-shlwapi-pathcanonicalizea). |  
+|[ATLPath::Combine](../atl/reference/atl-path-functions.md#combine)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCombine](/windows/desktop/api/shlwapi/nf-shlwapi-pathcombinea). |  
+|[ATLPath::CommonPrefix](../atl/reference/atl-path-functions.md#commonprefix)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCommonPrefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathcommonprefixa). |  
+|[ATLPath::CompactPath](../atl/reference/atl-path-functions.md#compactpath)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpatha). |  
+|[ATLPath::CompactPathEx](../atl/reference/atl-path-functions.md#compactpathex)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathCompactPathEx](/windows/desktop/api/shlwapi/nf-shlwapi-pathcompactpathexa). |  
+|[ATLPath::FileExists](../atl/reference/atl-path-functions.md#fileexists)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFileExists](/windows/desktop/api/shlwapi/nf-shlwapi-pathfileexistsa). |  
+|[ATLPath::FindExtension](../atl/reference/atl-path-functions.md#findextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindextensiona). |  
+|[ATLPath::FindFileName](../atl/reference/atl-path-functions.md#findfilename)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathFindFileName](/windows/desktop/api/shlwapi/nf-shlwapi-pathfindfilenamea). |  
+|[ATLPath::GetDriveNumber](../atl/reference/atl-path-functions.md#getdrivenumber)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathGetDriveNumber](/windows/desktop/api/shlwapi/nf-shlwapi-pathgetdrivenumbera). |  
+|[ATLPath::IsDirectory](../atl/reference/atl-path-functions.md#isdirectory)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısdirectory](/windows/desktop/api/shlwapi/nf-shlwapi-pathisdirectorya). |  
+|[ATLPath::IsFileSpec](../atl/reference/atl-path-functions.md#isfilespec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısfilespec](/windows/desktop/api/shlwapi/nf-shlwapi-pathisfilespeca). |  
+|[ATLPath::IsPrefix](../atl/reference/atl-path-functions.md#isprefix)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısprefix](/windows/desktop/api/shlwapi/nf-shlwapi-pathisprefixa). |  
+|[ATLPath::IsRelative](../atl/reference/atl-path-functions.md#isrelative)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısrelative](/windows/desktop/api/shlwapi/nf-shlwapi-pathisrelativea). |  
+|[ATLPath::IsRoot](../atl/reference/atl-path-functions.md#isroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathisroota). |  
+|[ATLPath::IsSameRoot](../atl/reference/atl-path-functions.md#issameroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathıssameroot](/windows/desktop/api/shlwapi/nf-shlwapi-pathissameroota). |  
+|[ATLPath::IsUNC](../atl/reference/atl-path-functions.md#isunc)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısunc](/windows/desktop/api/shlwapi/nf-shlwapi-pathisunca). |  
+|[ATLPath::IsUNCServer](../atl/reference/atl-path-functions.md#isuncserver)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncserver](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncservera). |  
+|[ATLPath::IsUNCServerShare](../atl/reference/atl-path-functions.md#isuncservershare)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [Pathısuncservershare](/windows/desktop/api/shlwapi/nf-shlwapi-pathisuncserversharea). |  
+|[ATLPath::MakePretty](../atl/reference/atl-path-functions.md#makepretty)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMakePretty](/windows/desktop/api/shlwapi/nf-shlwapi-pathmakeprettya). |  
+|[ATLPath::MatchSpec](../atl/reference/atl-path-functions.md#matchspec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathMatchSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathmatchspeca). |  
+|[ATLPath::QuoteSpaces](../atl/reference/atl-path-functions.md#quotespaces)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathQuoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathquotespacesa). |  
+|[ATLPath::RelativePathTo](../atl/reference/atl-path-functions.md#relativepathto)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRelativePathTo](/windows/desktop/api/shlwapi/nf-shlwapi-pathrelativepathtoa). |  
+|[ATLPath::RemoveArgs](../atl/reference/atl-path-functions.md#removeargs)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveArgs](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveargsa). |  
+|[ATLPath::RemoveBackslash](../atl/reference/atl-path-functions.md#removebackslash)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBackslash](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovebackslasha). |  
+|[ATLPath::RemoveBlanks](../atl/reference/atl-path-functions.md#removeblanks)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveBlanks](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveblanksa). |  
+|[ATLPath::RemoveExtension](../atl/reference/atl-path-functions.md#removeextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathremoveextensiona). |  
+|[ATLPath::RemoveFileSpec](../atl/reference/atl-path-functions.md#removefilespec)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRemoveFileSpec](/windows/desktop/api/shlwapi/nf-shlwapi-pathremovefilespeca). |  
+|[ATLPath::RenameExtension](../atl/reference/atl-path-functions.md#renameextension)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathRenameExtension](/windows/desktop/api/shlwapi/nf-shlwapi-pathrenameextensiona). |  
+|[ATLPath::SkipRoot](../atl/reference/atl-path-functions.md#skiproot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathSkipRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathskiproota). |  
+|[ATLPath::StripPath](../atl/reference/atl-path-functions.md#strippath)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripPath](/windows/desktop/api/shlwapi/nf-shlwapi-pathstrippatha). |  
+|[ATLPath::StripToRoot](../atl/reference/atl-path-functions.md#striptoroot)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathStripToRoot](/windows/desktop/api/shlwapi/nf-shlwapi-pathstriptoroota). |  
+|[ATLPath::UnquoteSpaces](../atl/reference/atl-path-functions.md#unquotespaces)| Bu işlev için aşırı yüklenmiş bir sarmalayıcıdır, [PathUnquoteSpaces](/windows/desktop/api/shlwapi/nf-shlwapi-pathunquotespacesa). |  
   
 
 ## <a name="see-also"></a>Ayrıca Bkz.  

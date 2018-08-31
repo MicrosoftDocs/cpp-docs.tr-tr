@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 935175f522dd0b41851763f7b76781228c1881c0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9b144e08e0f87165c284310afc86267f67b1c124
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880160"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222060"
 ---
 # <a name="ithreadpoolconfig-interface"></a>Ithreadpoolconfig arabirimi
 Bu arabirim, iş parçacığı havuzu yapılandırmak için yöntemler sağlar.  
@@ -105,7 +105,7 @@ STDMETHOD(SetSize)int nNumThreads);
   
  Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
   
- Varsa *nNumThreads* sıfır [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
+ Varsa *nNumThreads* sıfır [ATLS_DEFAULT_THREADSPERPROC](https://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  

@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6d3ce3beca7d9bb3b14ee9c9373a8505623376
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bf266e11f975e3ce01e5359c1dac65b46a42435a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954011"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221349"
 ---
 # <a name="complexltfloatgt"></a>karmaşık&lt;float&gt;
 
-Her iki türdeki nesneleri sıralı bir çift depolayan bir nesneyi tanımlayan **float **** ilk karmaşık sayıyı ve ikinci gerçek bölümünü temsil eden sanal bölümü temsil eden.
+Her iki türdeki nesneleri sıralı bir çift depolayan bir nesneyi tanımlayan **float**, ilk karmaşık sayıyı ve ikinci gerçek bölümünü temsil eden sanal bölümü temsil eden.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,11 +51,14 @@ constexpr complex(
 
 ### <a name="parameters"></a>Parametreler
 
-*_RealVal* türünün değerini **float** için yapılandırılan karmaşık sayıyı gerçek bir parçası.
+*_RealVal*<br/>
+Türü değeri **float** için yapılandırılan karmaşık sayıyı gerçek bir parçası.
 
-*_ImagVal* türünün değerini **float** yapılandırılmakta karmaşık sayıyı sanal bölümü için.
+*_ImagVal*<br/>
+Türü değeri **float** yapılandırılmakta karmaşık sayıyı sanal bölümü için.
 
-*complexNum* tür karmaşık sayısı **çift** veya türü **uzun çift** olan reel ve sanal parça türü karmaşık bir sayıyı başlatmak için kullanılan **float**oluşturuluyor.
+*complexNum*<br/>
+Tür karmaşık sayısı **çift** veya türü **uzun çift** olan reel ve sanal parça türü karmaşık bir sayıyı başlatmak için kullanılan **float** oluşturuluyor.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

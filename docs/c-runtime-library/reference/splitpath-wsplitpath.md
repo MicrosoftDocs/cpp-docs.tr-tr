@@ -43,16 +43,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 220e2befc40dba342a7f8c2aa4c94294bc667ce0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 69123bfd07d992d96c504e538ded157c49991dab
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411428"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221614"
 ---
 # <a name="splitpath-wsplitpath"></a>_splitpath, _wsplitpath
 
-Bir yol adı bileşenlerine bölün. Bu işlevlerin daha güvenli sürümü, bkz: [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
+Bir yol adı bileşenlere ayırmak. Bu işlevlerin daha güvenli sürümleri mevcuttur, bkz [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,19 +77,19 @@ void _wsplitpath(
 
 *yol* tam yolu.
 
-*Sürücü* sürücü harfini izleyen iki nokta ile (**:**). Geçirebilirsiniz **NULL** sürücü harfi gerekmiyorsa, bu parametre için.
+*Sürücü* sürücü harfini izleyen iki nokta (**:**). Geçirebilirsiniz **NULL** sürücü harfini gerekmiyorsa, bu parametre için.
 
-*dir* dizin yolu, eğik dahil olmak üzere. Eğik ( **/** ), ters eğik çizgi ( **\\** ), ya da her ikisini de kullanılabilir. Geçirebilirsiniz **NULL** dizin yolu gerekmiyorsa, bu parametre için.
+*dir* dizin yolu, eğik çizgi de dahil. İleri eğik çizgi ( **/** ), ters eğik çizgi ( **\\** ), veya her ikisi de kullanılabilir. Geçirebilirsiniz **NULL** dizin yolu gerekmiyorsa, bu parametre için.
 
-*fname* temel dosya adı (uzantısı yok). Geçirebilirsiniz **NULL** filename gerekmiyorsa, bu parametre için.
+*fname* temel dosya adı (uzantısı). Geçirebilirsiniz **NULL** filename gerekmiyorsa, bu parametre için.
 
-*ext* dönem baştaki dahil olmak üzere, dosya adı uzantısı (**.**). Geçirebilirsiniz **NULL** dosya adı uzantısı gerekmez, bu parametre için.
+*ext* dönem baştaki dahil olmak üzere, dosya adı uzantısı (**.**). Geçirebilirsiniz **NULL** dosya adı uzantısı gerekmiyorsa, bu parametre için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Splitpath** işlevi dört bileşenlerine yolunu keser. **_splitpath** şu anda kullanımda birden çok baytlı kod sayfasına göre çok baytlı karakter sıralarının algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak yönetir. **_wsplitpath** bir joker karakter sürümü **_splitpath**; bağımsız değişkenleri **_wsplitpath** joker karakter dizelerdir. Bu işlevler aynı şekilde aksi davranır.
+**_Splitpath** işlevi bir yol dört bileşenlerine böler. **_splitpath** çok baytlı karakter sıralarını şu anda çok baytlı kod sayfasına göre algılamayı çok baytlı karakter dizesi bağımsız değişkenleri uygun şekilde otomatik olarak işler. **_wsplitpath** geniş karakterli sürümüdür **_splitpath**; bağımsız değişkenler **_wsplitpath** geniş karakterli dizelerdir. Bu işlevler, aynı şekilde davranır.
 
-**Güvenlik Notu** bu işlevlerin bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795). Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
+**Güvenlik Notu** bu işlevler bir arabellek taşması sorunu duruma olası bir tehdit doğurur. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns). Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_splitpath_s, _wsplitpath_s](splitpath-s-wsplitpath-s.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -97,11 +97,11 @@ void _wsplitpath(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tsplitpath**|**_splitpath**|**_splitpath**|**_wsplitpath**|
 
-Her bileşenin tam yolunun ayrı bir arabellek depolanır; bildirim sabitleri **_max_drıve**, **_max_dır**, **_MAX_FNAME**, ve **_MAX_EXT** (STDLIB içinde tanımlanmıştır. H) her dosya bileşeni için en büyük boyutu belirtin. Karşılık gelen bildirim sabitleri büyük olan dosya bileşenleri yığın bozulması neden.
+Her bileşenin tam yolunun ayrı bir arabellek depolanır; bildirim sabitleri **_max_drıve**, **_max_dır**, **_MAX_FNAME**, ve **_MAX_EXT** (STDLIB içinde tanımlanır. H) her dosya bileşeni için en büyük boyutu belirtin. Karşılık gelen bildirim sabitleri daha büyük olan dosya bileşeni yığın bozulması neden.
 
-Her arabellek olası arabellek taşması önlemek için karşılık gelen bildirim sabit değer olarak büyük olması gerekir.
+Her arabellek olası arabellek taşması önlemek için karşılık gelen Bildirim sabiti büyük olmalıdır.
 
-Aşağıdaki tabloda bildirim sabitleri değerleri listelenmektedir.
+Aşağıdaki tabloda, bildirim sabitleri değerlerini listeler.
 
 |Ad|Değer|
 |----------|-----------|
@@ -110,11 +110,11 @@ Aşağıdaki tabloda bildirim sabitleri değerleri listelenmektedir.
 |**_MAX_FNAME**|256|
 |**_MAX_EXT**|256|
 
-Tam yolu (örneğin, bir dosya adı), bileşen içermiyorsa **_splitpath** atar karşılık gelen arabellekleri dizelere boş.
+Tam yolu (örneğin, bir dosya adı), bir bileşen içermiyorsa **_splitpath** boş dizeleri karşılık gelen arabellekleri için atar.
 
 Geçirebilirsiniz **NULL** için **_splitpath** dışında herhangi bir parametre için *yolu* , gerek yoktur.
 
-Varsa *yolu* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **EINVAL**.
+Varsa *yolu* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev döndürür **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -123,11 +123,11 @@ Varsa *yolu* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicis
 |**_splitpath**|\<stdlib.h >|
 |**_wsplitpath**|\<stdlib.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_makepath](makepath-wmakepath.md).
+Örneğin bakın [_makepath](makepath-wmakepath.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

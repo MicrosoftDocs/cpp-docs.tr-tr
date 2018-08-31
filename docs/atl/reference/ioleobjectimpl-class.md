@@ -59,12 +59,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aec4de071df8dcca960a0f1cb802375e5553ceb3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 3646a640cb3873ec32f6284f8d2be99469ef7633
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880310"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220909"
 ---
 # <a name="ioleobjectimpl-class"></a>Ioleobjectımpl sınıfı
 Bu sınıfın uyguladığı `IUnknown` ve kapsayıcı bir denetimle iletişim asıl arabirimidir.  
@@ -131,7 +131,7 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 |[IOleObjectImpl::Update](#update)|Denetim güncelleştirir. ATL uygulamasını S_OK döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IOleObject](http://msdn.microsoft.com/library/windows/desktop/dd542709) kapsayıcı bir denetimle iletişim asıl arabirimi arabirimidir. Sınıf `IOleObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IOleObject](/windows/desktop/api/oleidl/nn-oleidl-ioleobject) kapsayıcı bir denetimle iletişim asıl arabirimi arabirimidir. Sınıf `IOleObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -153,7 +153,7 @@ STDMETHOD(Advise)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::Advise](http://msdn.microsoft.com/library/windows/desktop/ms686573) Windows SDK içinde.  
+ Bkz: [IOleObject::Advise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-advise) Windows SDK içinde.  
   
 ##  <a name="close"></a>  IOleObjectImpl::Close  
  Denetim durumu için yüklenen çalışmasını değiştirir.  
@@ -167,7 +167,7 @@ STDMETHOD(Close)(DWORD dwSaveOption);
   
  Denetim sınıf veri üyeleri işaretçileri tutulan [CComControlBase::m_spInPlaceSite](../../atl/reference/ccomcontrolbase-class.md#m_spinplacesite) ve [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink) serbest bırakılır ve veri üyeleri [CComControlBase:: m_bNegotiatedWnd](../../atl/reference/ccomcontrolbase-class.md#m_bnegotiatedwnd), [CComControlBase::m_bWndless](../../atl/reference/ccomcontrolbase-class.md#m_bwndless), ve [CComControlBase::m_bInPlaceSiteEx](../../atl/reference/ccomcontrolbase-class.md#m_binplacesiteex) FALSE olarak ayarlayın.  
   
- Bkz: [IOleObject::Close](http://msdn.microsoft.com/library/windows/desktop/ms683922) Windows SDK içinde.  
+ Bkz: [IOleObject::Close](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-close) Windows SDK içinde.  
   
 ##  <a name="doverb"></a>  IOleObjectImpl::DoVerb  
  Kendi numaralandırılmış eylemlerden birini gerçekleştirmek için Denetim söyler.  
@@ -196,7 +196,7 @@ STDMETHOD(DoVerb)(
 |OLEIVERB_SHOW|[DoVerbShow](#doverbshow)|  
 |OLEIVERB_UIACTIVATE|[DoVerbUIActivate](#doverbuiactivate)|  
   
- Bkz: [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508) Windows SDK içinde.  
+ Bkz: [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb) Windows SDK içinde.  
   
 ##  <a name="doverbdiscardundo"></a>  IOleObjectImpl::DoVerbDiscardUndo  
  Koruma herhangi bir geri alma durumu atmak denetim söyler.  
@@ -250,7 +250,7 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
  Standart HRESULT değerlerinden biri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Denetimin yerinde çağırarak etkinleştirir [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Sürece denetim sınıfın veri üyesi `m_bWindowOnly` TRUE ise `DoVerbInPlaceActivate` önce çalışır denetimi penceresiz denetime olarak etkinleştirmek (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSiteWindowless](http://msdn.microsoft.com/library/windows/desktop/ms682300)). Bu başarısız olursa, işlev denetimin genişletilmiş özellikleri ile etkinleştirmeyi dener (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSiteEx](http://msdn.microsoft.com/library/windows/desktop/ms693461)). İşlev başarısız olursa, hiçbir genişletilmiş özellik denetimiyle etkinleştirmek çalışır (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSite](http://msdn.microsoft.com/library/windows/desktop/ms686586)). Etkinleştirme başarılı olursa, işlev kapsayıcı denetimi etkinleştirildi bildirir.  
+ Denetimin yerinde çağırarak etkinleştirir [CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Sürece denetim sınıfın veri üyesi `m_bWindowOnly` TRUE ise `DoVerbInPlaceActivate` önce çalışır denetimi penceresiz denetime olarak etkinleştirmek (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSiteWindowless](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesitewindowless)). Bu başarısız olursa, işlev denetimin genişletilmiş özellikleri ile etkinleştirmeyi dener (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSiteEx](/windows/desktop/api/ocidl/nn-ocidl-ioleinplacesiteex)). İşlev başarısız olursa, hiçbir genişletilmiş özellik denetimiyle etkinleştirmek çalışır (yalnızca kapsayıcı destekliyorsa, olası [IOleInPlaceSite](/windows/desktop/api/oleidl/nn-oleidl-ioleinplacesite)). Etkinleştirme başarılı olursa, işlev kapsayıcı denetimi etkinleştirildi bildirir.  
   
 ##  <a name="doverbopen"></a>  IOleObjectImpl::DoVerbOpen  
  Ayrı bir pencerede açık olarak düzenlenen denetim neden olur.  
@@ -331,7 +331,7 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::EnumAdvise](http://msdn.microsoft.com/library/windows/desktop/ms682355) Windows SDK içinde.  
+ Bkz: [IOleObject::EnumAdvise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumadvise) Windows SDK içinde.  
   
 ##  <a name="enumverbs"></a>  IOleObjectImpl::EnumVerbs  
  Çağırarak kayıtlı eylemlerin (fiiller) Bu denetim için bir numaralandırma sağlayan `OleRegEnumVerbs`.  
@@ -343,7 +343,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 ### <a name="remarks"></a>Açıklamalar  
  Fiiller projenizin .rgs dosyasına ekleyebilirsiniz. Örneğin, CIRCCTL bakın. RGS içinde [DAİ](../../visual-cpp-samples.md) örnek.  
   
- Bkz: [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781) Windows SDK içinde.  
+ Bkz: [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs) Windows SDK içinde.  
   
 ##  <a name="getclientsite"></a>  IOleObjectImpl::GetClientSite  
  Denetim sınıfı veri üyesi işaretçi koyar [CComControlBase::m_spClientSite](../../atl/reference/ccomcontrolbase-class.md#m_spclientsite) içine *ppClientSite* ve işaretçi başvuru sayısını artırır.  
@@ -353,7 +353,7 @@ STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::GetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms692603) Windows SDK içinde.  
+ Bkz: [IOleObject::GetClientSite](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getclientsite) Windows SDK içinde.  
   
 ##  <a name="getclipboarddata"></a>  IOleObjectImpl::GetClipboardData  
  Panodan veri alır.  
@@ -368,7 +368,7 @@ STDMETHOD(GetClipboardData)(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::GetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms682288) Windows SDK içinde.  
+ Bkz: [IOleObject::GetClipboardData](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getclipboarddata) Windows SDK içinde.  
   
 ##  <a name="getextent"></a>  IOleObjectImpl::GetExtent  
  Çalışan bir denetimin görüntü boyutunu HIMETRIC biriminde (her birim 0,01 milimetre) alır.  
@@ -382,7 +382,7 @@ STDMETHOD(GetExtent)(
 ### <a name="remarks"></a>Açıklamalar  
  Boyutu denetim sınıfı veri üyesi içinde depolanan [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).  
   
- Bkz: [IOleObject::GetExtent](http://msdn.microsoft.com/library/windows/desktop/ms692325) Windows SDK içinde.  
+ Bkz: [IOleObject::GetExtent](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getextent) Windows SDK içinde.  
   
 ##  <a name="getmiscstatus"></a>  IOleObjectImpl::GetMiscStatus  
  Çağırarak denetimi için kaydedilmiş durum bilgisi için bir işaretçi döndürür `OleRegGetMiscStatus`.  
@@ -396,7 +396,7 @@ STDMETHOD(GetMiscStatus)(
 ### <a name="remarks"></a>Açıklamalar  
  Durum bilgileri denetim ve sunu verileri tarafından desteklenen davranışlar içerir. Durum bilgisi projenizin .rgs dosyasına ekleyebilirsiniz.  
   
- Bkz: [IOleObject::GetMiscStatus](http://msdn.microsoft.com/library/windows/desktop/ms678521) Windows SDK içinde.  
+ Bkz: [IOleObject::GetMiscStatus](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) Windows SDK içinde.  
   
 ##  <a name="getmoniker"></a>  IOleObjectImpl::GetMoniker  
  Denetimin ad alır.  
@@ -412,7 +412,7 @@ STDMETHOD(GetMoniker)(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::GetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms686576) Windows SDK içinde.  
+ Bkz: [IOleObject::GetMoniker](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getmoniker) Windows SDK içinde.  
   
 ##  <a name="getuserclassid"></a>  IOleObjectImpl::GetUserClassID  
  Denetimin sınıf tanımlayıcısı döndürür.  
@@ -422,7 +422,7 @@ STDMETHOD(GetUserClassID)(CLSID* pClsid);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::GetUserClassID](http://msdn.microsoft.com/library/windows/desktop/ms682313) Windows SDK içinde.  
+ Bkz: [IOleObject::GetUserClassID](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getuserclassid) Windows SDK içinde.  
   
 ##  <a name="getusertype"></a>  IOleObjectImpl::GetUserType  
  Denetimin kullanıcı türü adı çağırarak döndürür `OleRegGetUserType`.  
@@ -436,7 +436,7 @@ STDMETHOD(GetUserType)(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı türü adı, menüler ve iletişim kutuları gibi kullanıcı arabirim öğeleri görüntülemek için kullanılır. Projenizin .rgs dosyasındaki kullanıcı türü adını değiştirebilirsiniz.  
   
- Bkz: [IOleObject::GetUserType](http://msdn.microsoft.com/library/windows/desktop/ms688643) Windows SDK içinde.  
+ Bkz: [IOleObject::GetUserType](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-getusertype) Windows SDK içinde.  
   
 ##  <a name="initfromdata"></a>  IOleObjectImpl::InitFromData  
  Seçili veri denetiminden başlatır.  
@@ -452,7 +452,7 @@ STDMETHOD(InitFromData)(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::InitFromData](http://msdn.microsoft.com/library/windows/desktop/ms688510) Windows SDK içinde.  
+ Bkz: [IOleObject::InitFromData](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-initfromdata) Windows SDK içinde.  
   
 ##  <a name="isuptodate"></a>  IOleObjectImpl::IsUpToDate  
  Denetim güncel olup olmadığını denetler.  
@@ -465,7 +465,7 @@ STDMETHOD(IsUpToDate)(void);
  Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::IsUpToDate](http://msdn.microsoft.com/library/windows/desktop/ms686624) Windows SDK içinde.  
+ Bkz: [IOleObject::IsUpToDate](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-isuptodate) Windows SDK içinde.  
   
 ##  <a name="onpostverbdiscardundo"></a>  IOleObjectImpl::OnPostVerbDiscardUndo  
  Çağıran [DoVerbDiscardUndo](#doverbdiscardundo) sonra geri alma durumunu göz ardı edilir.  
@@ -633,7 +633,7 @@ STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 ### <a name="remarks"></a>Açıklamalar  
  Yöntemi ardından S_OK döndürür.  
   
- Bkz: [IOleObject::SetClientSite](http://msdn.microsoft.com/library/windows/desktop/ms684013) Windows SDK içinde.  
+ Bkz: [IOleObject::SetClientSite](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setclientsite) Windows SDK içinde.  
   
 ##  <a name="setcolorscheme"></a>  IOleObjectImpl::SetColorScheme  
  Bir renk şeması varsa denetimin uygulamaya önerir.  
@@ -646,7 +646,7 @@ STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::SetColorScheme](http://msdn.microsoft.com/library/windows/desktop/ms683971) Windows SDK içinde.  
+ Bkz: [IOleObject::SetColorScheme](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) Windows SDK içinde.  
   
 ##  <a name="setextent"></a>  IOleObjectImpl::SetExtent  
  Denetimin görüntüleme alanı kapsamını belirler.  
@@ -664,7 +664,7 @@ STDMETHOD(SetExtent)(
   
  Denetimin veri üyesi sınıfı, [CComControlBase::m_bRecomposeOnResize](../../atl/reference/ccomcontrolbase-class.md#m_brecomposeonresize) TRUE ise `SetExtent` çağrıları `SendOnDataChange` ve `SendOnViewChange` denetimi boyutuna sahip öneri sahibi ile kayıtlı tüm danışmanlık havuzlarını bildirmek için değiştirildi.  
   
- Bkz: [IOleObject::SetExtent](http://msdn.microsoft.com/library/windows/desktop/ms694330) Windows SDK içinde.  
+ Bkz: [IOleObject::SetExtent](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setextent) Windows SDK içinde.  
   
 ##  <a name="sethostnames"></a>  IOleObjectImpl::SetHostNames  
  Denetim kapsayıcılı bir uygulama ve kapsayıcı belge adlarını bildirir.  
@@ -677,7 +677,7 @@ STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainer
  Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::SetHostNames](http://msdn.microsoft.com/library/windows/desktop/ms680642) Windows SDK içinde.  
+ Bkz: [IOleObject::SetHostNames](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-sethostnames) Windows SDK içinde.  
   
 ##  <a name="setmoniker"></a>  IOleObjectImpl::SetMoniker  
  Denetimin ne takma adı olduğunu söyler.  
@@ -692,7 +692,7 @@ STDMETHOD(SetMoniker)(
  E_NOTIMPL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::SetMoniker](http://msdn.microsoft.com/library/windows/desktop/ms679671) Windows SDK içinde.  
+ Bkz: [IOleObject::SetMoniker](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-setmoniker) Windows SDK içinde.  
   
 ##  <a name="unadvise"></a>  IOleObjectImpl::Unadvise  
  Denetim sınıfının depolanan danışmanlık bağlantısını siler `m_spOleAdviseHolder` veri üyesi.  
@@ -702,7 +702,7 @@ STDMETHOD(Unadvise)(DWORD dwConnection);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms693749) Windows SDK içinde.  
+ Bkz: [IOleObject::Unadvise](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-unadvise) Windows SDK içinde.  
   
 ##  <a name="update"></a>  IOleObjectImpl::Update  
  Denetim güncelleştirir.  
@@ -715,9 +715,9 @@ STDMETHOD(Update)(void);
  Başarılıysa S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IOleObject::Update](http://msdn.microsoft.com/library/windows/desktop/ms679699) Windows SDK içinde.  
+ Bkz: [IOleObject::Update](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-update) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
- [Arabirimleri ActiveX denetimleri](http://msdn.microsoft.com/library/windows/desktop/ms692724)   
+ [Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

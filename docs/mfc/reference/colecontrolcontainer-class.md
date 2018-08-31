@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f33335e193997c0988cab0580c3eab612d0cc84
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f278ffd3d3210f899e86787d0872180df2d91d98
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852310"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222865"
 ---
 # <a name="colecontrolcontainer-class"></a>COleControlContainer sınıfı
 ActiveX denetimleri için Denetim kapsayıcısı gibi davranır.  
@@ -149,7 +149,7 @@ class COleControlContainer : public CCmdTarget
 |[COleControlContainer::m_siteMap](#m_sitemap)|Site haritası.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu bir veya daha fazla ActiveX denetimi siteleri için destek sağlayarak gerçekleştirilir (tarafından uygulanan `COleControlSite`). `COleControlContainer` tam olarak uygular [IOleInPlaceFrame](http://msdn.microsoft.com/library/windows/desktop/ms692770) ve [IOleContainer](http://msdn.microsoft.com/library/windows/desktop/ms690103) arabirimleri, yerinde öğeleri olarak niteliklerinin karşılamak kapsanan ActiveX denetimlerini izin verme.  
+ Bu bir veya daha fazla ActiveX denetimi siteleri için destek sağlayarak gerçekleştirilir (tarafından uygulanan `COleControlSite`). `COleControlContainer` tam olarak uygular [IOleInPlaceFrame](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceframe) ve [IOleContainer](/windows/desktop/api/oleidl/nn-oleidl-iolecontainer) arabirimleri, yerinde öğeleri olarak niteliklerinin karşılamak kapsanan ActiveX denetimlerini izin verme.  
   
  Yaygın olarak, bu sınıf ile birlikte kullanılan `COccManager` ve `COleControlSite` özel sitelerle bir veya daha fazla ActiveX denetimleri için özel bir ActiveX denetimi kapsayıcısı uygulamak için.  
   
@@ -449,7 +449,7 @@ virtual UINT GetDlgItemInt(
  Bir işlev başarı/hata değerini alan bir Boolean değişkeni işaretçisine (TRUE, başarı gösterir, FALSE, hata gösterir).  
   
  *bSigned*  
- İşlev ve başında bir eksi işareti metnini inceleyin bulursa bir işaretli tamsayı değeri döndürmek belirtir. Varsa *bSigned* parametresi TRUE, alınacak değerin bir işaretli tamsayı değer olduğunu belirtmek için dönüş değeri türüne bir **int** türü. Genişletilmiş hata bilgilerini almak için arama [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ İşlev ve başında bir eksi işareti metnini inceleyin bulursa bir işaretli tamsayı değeri döndürmek belirtir. Varsa *bSigned* parametresi TRUE, alınacak değerin bir işaretli tamsayı değer olduğunu belirtmek için dönüş değeri türüne bir **int** türü. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı, değişkenin işaret ettiği varsa *lpTrans* TRUE olarak ayarlanır ve dönüş değeri çevrilmiş denetim metin değeri.  
@@ -486,7 +486,7 @@ virtual int GetDlgItemText(
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa, dönüş değeri arabelleğe sondaki null karakter hariç, kopyalanan karakter sayısını belirtir.  
   
- İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için arama [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ##  <a name="handlesetfocus"></a>  COleControlContainer::HandleSetFocus  
  Kapsayıcı WM_SETFOCUS iletilerini işleme, belirler.  

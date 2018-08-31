@@ -16,21 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba06488ed41e7e296f9f6c16f34af827274acfd4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: adfd27a116ae5747a2dd899ce51c38f01055f356
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279129"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218546"
 ---
 # <a name="compiler-warning-level-1-c4311"></a>Derleyici Uyarısı (düzey 1) C4311
 'variable' : 'type' öğesinden 'type' öğesine işaretçi kesilmesi  
   
- Bu uyarı, 64-bit işaretçi kesilmesi sorunları algılar. 64-bitlik bir mimari için derlenmiş kod, atandığı, örneğin, bir işaretçi (64 bit) değerini kesilecek bir `int` (32 bit). Daha fazla bilgi için bkz: [kullanarak işaretçileri için kuralları](http://msdn.microsoft.com/library/windows/desktop/aa384242).  
+ Bu uyarı, 64-bit işaretçi kesilmesi sorunları algılar. Bir 64 bit mimari için kod derlenir, atanan, örneğin, bir işaretçi (64 bit) değeri kesilecek bir `int` (32 bit). Daha fazla bilgi için [kullanarak işaretçileri için kuralları](/windows/desktop/WinProg64/rules-for-using-pointers).  
   
- Uyarı C4311 ortak nedenleri hakkında ek bilgi için bkz: [Genel derleyici hataları](http://msdn.microsoft.com/library/windows/desktop/aa384160).  
+ Uyarı C4311 yaygın nedenleri hakkında ek bilgi için bkz: [Genel derleyici hataları](/windows/desktop/WinProg64/common-compiler-errors).  
   
- Aşağıdaki kod örneği için 64-bit hedef derlendiğinde C4311 oluşturur ve ardından sorunu gidermek gösterilmiştir:  
+ Aşağıdaki kod örneği için 64 bit hedef derlendiğinde C4311 oluşturur ve ardından sorunu gidermek nasıl gösterir:  
   
 ```  
 // C4311.cpp  

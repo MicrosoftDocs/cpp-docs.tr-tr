@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7424581c277e7b20132fd5e667acb77a4a95789e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9fc3be9fb25b6593f4b69f846394544b7b7d756a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598656"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220471"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -65,10 +65,10 @@ Bir Yardım konusu .hlp veya .chm dosyasındaki kimliği.
 Bu tür kitaplığı Yardım kimliği.
 
 *Gizli* (isteğe bağlı)  
-Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](http://msdn.microsoft.com/library/windows/desktop/aa366861) daha fazla bilgi için MIDL özniteliği.
+Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
 *kısıtlı* (isteğe bağlı)  
-Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](http://msdn.microsoft.com/library/windows/desktop/aa367157) daha fazla bilgi için MIDL özniteliği.
+Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
 *işlev bildirimi*  
 Tanımladığınız bir işlev.
@@ -77,7 +77,7 @@ Tanımladığınız bir işlev.
 
 **İdl_module** C++ özniteliği bir .dll dosyasından almanızı sağlayan bir .dll dosyası içinde giriş noktasını belirtmenize olanak sağlar.
 
-**İdl_module** özniteliğine sahip benzer işlevselliği [Modülü](http://msdn.microsoft.com/library/windows/desktop/aa367099) MIDL özniteliği.
+**İdl_module** özniteliğine sahip benzer işlevselliği [Modülü](/windows/desktop/Midl/module) MIDL özniteliği.
 
 Herhangi bir COM nesnesinden bir .idl dosyası kitaplığı bloğu içinde bir DLL giriş noktası koyarak bir .dll dosyasından dışarı aktarabilirsiniz verebilirsiniz.
 

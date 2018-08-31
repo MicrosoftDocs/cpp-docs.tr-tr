@@ -94,12 +94,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90c2e6f457af9dfa34b63536a79b7764d91bdbec
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 0c94542fdac3734644771f2659d894d1c8c6f907
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339481"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220808"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 Windows sarmalanmasını `HMENU`.  
@@ -608,7 +608,7 @@ UINT GetDefaultItem(
  İşlev başarılı olursa, dönüş değeri tanımlayıcı veya menü öğesinin konumunu ' dir. İşlev başarısız olursa, dönüş değeri olduğu - 1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 işlevinin davranışı uygulayan [GetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647976)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 işlevinin davranışı uygulayan [GetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-getmenudefaultitem)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CMenu::InsertMenu](#insertmenu).  
@@ -635,7 +635,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
   
 ### <a name="parameters"></a>Parametreler  
  *lpcmi*  
- Bir işaretçi bir [MENUINFO](http://msdn.microsoft.com/library/windows/desktop/ms647575) menüsüne ilişkin bilgi içeren yapıya.  
+ Bir işaretçi bir [MENUINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuinfo) menüsüne ilişkin bilgi içeren yapıya.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa, dönüş değeri, sıfır olmayan; Aksi takdirde, dönüş değeri sıfırdır.  
@@ -688,16 +688,16 @@ BOOL GetMenuItemInfo(
  Tanımlayıcı veya hakkında bilgi almak için menü öğesinin konumu. Bu parametre anlamını değerine bağlıdır `ByPos`.  
   
  *lpMenuItemInfo*  
- Bir işaretçi bir [MENUITEMINFO](http://msdn.microsoft.com/library/windows/desktop/ms647578)menü hakkında bilgi içeren Windows SDK, anlatılan şekilde.  
+ Bir işaretçi bir [MENUITEMINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuiteminfoa)menü hakkında bilgi içeren Windows SDK, anlatılan şekilde.  
   
  *fByPos*  
  Anlamını belirten değeri `nIDItem`. Varsayılan olarak, `ByPos` bu uItem gösteren bir menü öğesini tanımlayıcısı yanlış. Varsa `ByPos` ayarlanmadı isteğe bağlı olarak FALSE olarak, bir menü öğesi konumu gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.  
+ İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi davranışını uygulayan Win32 işlevin [GetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms647980)Windows SDK içinde açıklandığı gibi. Öğesinin MFC uygulamasında dikkat `GetMenuItemInfo`, bir tanıtıcı bir menüye kullanmayın.  
+ Bu üye işlevi davranışını uygulayan Win32 işlevin [GetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-getmenuiteminfoa)Windows SDK içinde açıklandığı gibi. Öğesinin MFC uygulamasında dikkat `GetMenuItemInfo`, bir tanıtıcı bir menüye kullanmayın.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCWindowing#26](../../mfc/reference/codesnippet/cpp/cmenu-class_6.cpp)]  
@@ -855,7 +855,7 @@ BOOL InsertMenu(
   
 |nFlags|LpszNewItem yorumu|  
 |------------|-----------------------------------|  
-|MF_OWNERDRAW|Uygulama Menü öğesiyle ilişkili ek verileri korumak için kullanabileceğiniz bir uygulama tarafından sağlanan 32-bit değeri içeriyor. Bu 32 bit değeri uygulamada kullanılabilir `itemData` tarafından sağlanan yapı üyesi [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) ve [WM_DRAWITEM](http://msdn.microsoft.com/library/windows/desktop/bb775923) iletileri. Bu iletiler, menü öğesi başlangıçta görüntülenir veya değiştirildiğinde ettiğinde gönderilir.|  
+|MF_OWNERDRAW|Uygulama Menü öğesiyle ilişkili ek verileri korumak için kullanabileceğiniz bir uygulama tarafından sağlanan 32-bit değeri içeriyor. Bu 32 bit değeri uygulamada kullanılabilir `itemData` tarafından sağlanan yapı üyesi [WM_MEASUREITEM](/windows/desktop/Controls/wm-measureitem) ve [WM_DRAWITEM](/windows/desktop/Controls/wm-drawitem) iletileri. Bu iletiler, menü öğesi başlangıçta görüntülenir veya değiştirildiğinde ettiğinde gönderilir.|  
 |MF_STRING|Null ile sonlandırılmış dizeye uzun bir işaretçi içerir. Bu varsayılan yorumlamasıdır.|  
 |MF_SEPARATOR|*LpszNewItem* parametresi yok sayıldı (gerekli).|  
   
@@ -889,7 +889,7 @@ BOOL InsertMenuItem(
   
 ### <a name="parameters"></a>Parametreler  
  *uItem*  
- Açıklamasını görmek *uItem* içinde [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988) Windows SDK.  
+ Açıklamasını görmek *uItem* içinde [InsertMenuItem](/windows/desktop/api/winuser/nf-winuser-insertmenuitema) Windows SDK.  
   
  *lpMenuItemInfo*  
  Açıklamasını görmek *lpmii* içinde `InsertMenuItem` Windows SDK.  
@@ -898,7 +898,7 @@ BOOL InsertMenuItem(
  Açıklamasını görmek *fByPosition* içinde `InsertMenuItem` Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevi sarmalar [InsertMenuItem](http://msdn.microsoft.com/library/windows/desktop/ms647988)Windows SDK içinde açıklandığı gibi.  
+ Bu işlevi sarmalar [InsertMenuItem](/windows/desktop/api/winuser/nf-winuser-insertmenuitema)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="loadmenu"></a>  CMenu::LoadMenu  
  Bir menü kaynağı uygulamanın yürütülebilir dosyasını yükler ve ekler `CMenu` nesne.  
@@ -933,13 +933,13 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
   
 ### <a name="parameters"></a>Parametreler  
  *lpMenuTemplate*  
- İşaret eden bir menü şablonuna (tek bir olduğu [MENUITEMTEMPLATEHEADER](http://msdn.microsoft.com/library/windows/desktop/ms647583) yapısı ve bir veya daha fazla koleksiyonu [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) yapıları). Bu iki yapılar hakkında daha fazla bilgi için Windows SDK'sı bakın.  
+ İşaret eden bir menü şablonuna (tek bir olduğu [MENUITEMTEMPLATEHEADER](/windows/desktop/api/winuser/ns-winuser-menuitemtemplateheader) yapısı ve bir veya daha fazla koleksiyonu [MENUITEMTEMPLATE](/windows/desktop/api/winuser/ns-winuser-menuitemtemplate) yapıları). Bu iki yapılar hakkında daha fazla bilgi için Windows SDK'sı bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Menü kaynağı başarıyla yüklendi olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir veya daha fazla koleksiyonu tarafından izlenen bir üst menü şablonudur [MENUITEMTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms647581) yapıları, her biri içerebilir bir veya daha fazla menü öğeleri ve açılır menüler.  
+ Bir veya daha fazla koleksiyonu tarafından izlenen bir üst menü şablonudur [MENUITEMTEMPLATE](/windows/desktop/api/winuser/ns-winuser-menuitemtemplate) yapıları, her biri içerebilir bir veya daha fazla menü öğeleri ve açılır menüler.  
   
  Sürüm numarası 0 olmalıdır.  
   
@@ -1131,10 +1131,10 @@ BOOL SetDefaultItem(
  Anlamını belirten değeri *uItem*. Bu parametre FALSE ise *uItem* bir menü öğesini tanımlayıcısı. Aksi takdirde bir menü öğesi konumu olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.  
+ İşlev başarılı olursa, dönüş değeri sıfır. İşlev başarısız olursa, dönüş değeri sıfırdır. Genişletilmiş hata bilgilerini almak için Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 işlevinin davranışı uygulayan [SetMenuDefaultItem](http://msdn.microsoft.com/library/windows/desktop/ms647996)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 işlevinin davranışı uygulayan [SetMenuDefaultItem](/windows/desktop/api/winuser/nf-winuser-setmenudefaultitem)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CMenu::InsertMenu](#insertmenu).  
@@ -1168,7 +1168,7 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
   
 ### <a name="parameters"></a>Parametreler  
  *lpcmi*  
- Bir işaretçi bir [MENUINFO](http://msdn.microsoft.com/library/windows/desktop/ms647575) menüsüne ilişkin bilgi içeren yapıya.  
+ Bir işaretçi bir [MENUINFO](/windows/desktop/api/winuser/ns-winuser-tagmenuinfo) menüsüne ilişkin bilgi içeren yapıya.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa, dönüş değeri, sıfır olmayan; Aksi takdirde, dönüş değeri sıfırdır.  
@@ -1234,7 +1234,7 @@ BOOL SetMenuItemInfo(
   
 ### <a name="parameters"></a>Parametreler  
  *uItem*  
- Açıklamasını görmek *uItem* içinde [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001) Windows SDK.  
+ Açıklamasını görmek *uItem* içinde [SetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-setmenuiteminfoa) Windows SDK.  
   
  *lpMenuItemInfo*  
  Açıklamasını görmek *lpmii* içinde `SetMenuItemInfo` Windows SDK.  
@@ -1243,7 +1243,7 @@ BOOL SetMenuItemInfo(
  Açıklamasını görmek *fByPosition* içinde `SetMenuItemInfo` Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlevi sarmalar [SetMenuItemInfo](http://msdn.microsoft.com/library/windows/desktop/ms648001)Windows SDK içinde açıklandığı gibi.  
+ Bu işlevi sarmalar [SetMenuItemInfo](/windows/desktop/api/winuser/nf-winuser-setmenuiteminfoa)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="trackpopupmenu"></a>  CMenu::TrackPopupMenu  
  Belirtilen bir konuma kayan bir açılır menü görüntüler ve açılır menüde öğelerinin seçimini izler.  
@@ -1259,7 +1259,7 @@ BOOL TrackPopupMenu(
   
 ### <a name="parameters"></a>Parametreler  
  *nFlags*  
- Ekran konumu ve fare konumu bayrakları belirtir. Bkz: [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) kullanılabilir bayrakların listesi için.  
+ Ekran konumu ve fare konumu bayrakları belirtir. Bkz: [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) kullanılabilir bayrakların listesi için.  
   
  *x*  
  Açılır menü ekran koordinatlarında yatay konumu belirtir. Değerine bağlı olarak *nFlags* parametresi, menü sola hizalanmış, sağa hizalı veya bu konumuna göre ortalanmış olabilir.  
@@ -1274,7 +1274,7 @@ BOOL TrackPopupMenu(
  Yoksayıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntemin çağrılması sonucunu döndürür [TrackPopupMenu](http://msdn.microsoft.com/library/windows/desktop/ms648002) Windows SDK.  
+ Bu yöntemin çağrılması sonucunu döndürür [TrackPopupMenu](/windows/desktop/api/winuser/nf-winuser-trackpopupmenu) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kayan bir açılır menü, ekranda her yerde görünebilir.  
@@ -1296,7 +1296,7 @@ BOOL TrackPopupMenuEx(
   
 ### <a name="parameters"></a>Parametreler  
  *fuFlags*  
- Çeşitli işlevler için genişletilmiş menü belirtir. Tüm değerlerin bir listesini ve bunların anlamları için bkz. [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  
+ Çeşitli işlevler için genişletilmiş menü belirtir. Tüm değerlerin bir listesini ve bunların anlamları için bkz. [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).  
   
  *x*  
  Açılır menü ekran koordinatlarında yatay konumu belirtir.  
@@ -1308,15 +1308,15 @@ BOOL TrackPopupMenuEx(
  Açılır menü sahip olan ve oluşturulan menüsünden iletileri alma penceresine bir işaretçi. Bu pencere, herhangi bir geçerli uygulama pencereden olabilir, ancak NULL olamaz. İçinde TPM_NONOTIFY belirtirseniz *fuFlags* parametresi, işlev tüm iletileri göndermez *pWnd*. İşlevi tarafından işaret penceresi için döndürmelidir *pWnd* WM_COMMAND ileti almak için.  
   
  *lptpm*  
- İşaretçi bir [TPMPARAMS](http://msdn.microsoft.com/library/windows/desktop/ms647586) menüsünün ekran alanını belirten yapısı çakışmamalıdır. Bu parametre NULL olabilir.  
+ İşaretçi bir [TPMPARAMS](/windows/desktop/api/winuser/ns-winuser-tagtpmparams) menüsünün ekran alanını belirten yapısı çakışmamalıdır. Bu parametre NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İçinde TPM_RETURNCMD belirtirseniz *fuFlags* parametre, dönüş değeri, kullanıcının seçtiği öğesinin menü öğesi tanımlayıcısıdır. Seçim yapmadan kullanıcı menü iptal ederse veya bir hata oluşursa, dönüş değeri 0'dır.  
   
- İçinde TPM_RETURNCMD belirtmezseniz *fuFlags* parametre, dönüş değeri işlevin başarılı olursa sıfır dışı ve 0 başarısız olması durumunda. Genişletilmiş hata bilgilerini almak için arama [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ İçinde TPM_RETURNCMD belirtmezseniz *fuFlags* parametre, dönüş değeri işlevin başarılı olursa sıfır dışı ve 0 başarısız olması durumunda. Genişletilmiş hata bilgilerini almak için arama [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kayan bir açılır menü, ekranda her yerde görünebilir. Açılır menü oluştururken, hataları işleme ile ilgili daha fazla bilgi için bkz: [TrackPopupMenuEx](http://msdn.microsoft.com/library/windows/desktop/ms648003).  
+ Kayan bir açılır menü, ekranda her yerde görünebilir. Açılır menü oluştururken, hataları işleme ile ilgili daha fazla bilgi için bkz: [TrackPopupMenuEx](/windows/desktop/api/winuser/nf-winuser-trackpopupmenuex).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek CTRLTEST](../../visual-cpp-samples.md)   

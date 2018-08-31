@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9162c515f4fd451f3e663895953e106bb4e65135
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 061bfc2f083061d352fa7f93bb572456a5a23451
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42465089"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218378"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 Bu işlevler, kodlama ve kodunu çözme metin destekler.
@@ -451,7 +451,7 @@ inline BOOL QPDecode(
  Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.  
   
  [in] *CertOpenStore*  
- Dönüştürme nasıl gerçekleştirilecek açıklayan bayrakları. Bkz: [ATLSMTP_QPENCODE bayrakları](http://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
+ Dönüştürme nasıl gerçekleştirilecek açıklayan bayrakları. Bkz: [ATLSMTP_QPENCODE bayrakları](https://msdn.microsoft.com/library/6b15a3ab-8e57-49e4-8104-09b26ebb96c4).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  

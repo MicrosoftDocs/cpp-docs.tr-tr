@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5e0c902b9de9ea4d742d96b88f86d47231597f7
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c539504e7bb6e2b02b86d99c890ed5d6ecf1fc27
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217864"
 ---
 # <a name="cftpconnection-class"></a>CFtpConnection sınıfı
 Internet sunucusuyla olan FTP bağlantınızı yönetir ve dizinleri ve dosyaları bu sunucuda doğrudan işlenmesini sağlar.  
@@ -179,7 +179,7 @@ CInternetFile* Command(
 - `CmdRespRead` Yanıt bekleniyor.  
   
  *CertOpenStore*  
- Bu işlev denetim bayrakları içeren bir değer. Tam bir listesi için bkz. [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133).  
+ Bu işlev denetim bayrakları içeren bir değer. Tam bir listesi için bkz. [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda).  
   
  *dwContext*  
  Geri çağırmaları uygulama bağlamında tanımlamak için kullanılan bir uygulama tanımlı değerini içeren bir değere bir işaretçi.  
@@ -188,7 +188,7 @@ CInternetFile* Command(
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevselliğine öykünür [FTPCommand](http://msdn.microsoft.com/library/windows/desktop/aa384133) Windows SDK içinde anlatıldığı gibi işlev.  
+ Bu üye işlevi işlevselliğine öykünür [FTPCommand](/windows/desktop/api/wininet/nf-wininet-ftpcommanda) Windows SDK içinde anlatıldığı gibi işlev.  
   
  Bir hata oluşursa, MFC türünde bir özel durum oluşturur. [Cınternetexception](../../mfc/reference/cinternetexception-class.md).  
   
@@ -204,7 +204,7 @@ BOOL CreateDirectory(LPCTSTR pstrDirName);
  Oluşturulacak dizinin adını içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Windows işlev çağrı başarısız olursa [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Windows işlev çağrı başarısız olursa [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `GetCurrentDirectory` sunucusuyla Bu bağlantı için geçerli çalışma dizini belirlemek için. Uzak sistem kök dizine bağlandı varsaymayın.  
@@ -238,7 +238,7 @@ BOOL GetCurrentDirectory(
 |Geri dönüş|Saklı karakter sayısını *pstrDirName*. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından *lpdwLen* dizeyi almak için uygulama ayırmalısınız bayt sayısını içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dizin adı yerine bir URL olarak almak için arama [GetCurrentDirectoryAsURL](#getcurrentdirectoryasurl).  
@@ -272,7 +272,7 @@ BOOL GetCurrentDirectoryAsURL(
 |Geri dönüş|Saklı karakter sayısını *pstrDirName*. Üye işlev başarısız olur ve ERROR_INSUFFICIENT_BUFFER döndürülür, ardından *lpdwLen* dizeyi almak için uygulama ayırmalısınız bayt sayısını içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `GetCurrentDirectoryAsURL` gibi davranır [GetCurrentDirectory](#getcurrentdirectory)  
@@ -322,13 +322,13 @@ BOOL GetFile(
 -   FILE_ATTRIBUTE_TEMPORARY dosyayı geçici depolama için kullanılır. Uygulamalar, yalnızca kesinlikle gerekli olduğunda dosyaya yazmanız gerekir. Dosyanın verilerden en iyi şekilde dosyayı yakında silinecek ortam temizlendi nedeni olmadan bellekte kalır.  
   
  *CertOpenStore*  
- Aktarım oluştuğu koşulları belirtir. Bu parametre herhangi biri olabilir *CertOpenStore* değerleri açıklanan [FtpGetFile](http://msdn.microsoft.com/library/windows/desktop/aa384157) Windows SDK.  
+ Aktarım oluştuğu koşulları belirtir. Bu parametre herhangi biri olabilir *CertOpenStore* değerleri açıklanan [FtpGetFile](/windows/desktop/api/wininet/nf-wininet-ftpgetfilea) Windows SDK.  
   
  *dwContext*  
  Dosya alma bağlamı tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `GetFile` bir FTP sunucusundan bir dosyayı okuma ve yerel depolama ile ilgili ek yükü tüm işler üst düzey bir yordamdır. Dosya verileri yalnızca almak veya dosya aktarımı Kapat denetime gerektiren uygulamaların kullanması gereken `OpenFile` ve [CInternetFile::Read](../../mfc/reference/cinternetfile-class.md#read) yerine.  
@@ -410,7 +410,7 @@ BOOL PutFile(
  Dosya yerleştirme içerik tanımlayıcısı. Bkz: **açıklamalar** hakkında daha fazla bilgi için *dwContext*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `PutFile` tüm FTP sunucusunda dosya depolamanın işlemlerini işler üst düzey bir yordamdır. Veri yalnızca gönderme veya üzerinden dosya aktarımı daha yakından denetleyebilme gerektiren uygulamaların kullanması gereken [Openfıle](#openfile) ve [CInternetFile::Write](../../mfc/reference/cinternetfile-class.md#write).  
@@ -429,7 +429,7 @@ BOOL Remove(LPCTSTR pstrFileName);
  Kaldırmak için dosya adını içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *PstrFileName* parametresi ya da kısmen nitelenmiş dosya adını geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya her iki adı dizin ayırıcı olarak eğik çizgi (/) kullanılabilir. `Remove` İşlevi kullanmadan önce dizin adı ayırıcılar uygun karakterlere çevirir.  
@@ -446,7 +446,7 @@ BOOL RemoveDirectory(LPCTSTR pstrDirName);
  Kaldırılacak dizini içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [GetCurrentDirectory](#getcurrentdirectory) server'ın geçerli çalışma dizini belirlemek için. Uzak sistem kök dizine bağlandı varsaymayın.  
@@ -470,7 +470,7 @@ BOOL Rename(
  Yeni dosyanın adını içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *PstrExisting* ve *pstrNew* parametreleri ya da kısmen nitelenmiş dosya adını geçerli dizine göreli veya tam olabilir. Ters eğik çizgi (\\) veya her iki adı dizin ayırıcı olarak eğik çizgi (/) kullanılabilir. `Rename` Bunlar kullanılmadan önce dizin adı ayırıcılar uygun karakterlere çevirir.  
@@ -487,7 +487,7 @@ BOOL SetCurrentDirectory(LPCTSTR pstrDirName);
  Dizinin adını içeren bir dize işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *PstrDirName* parametresi, geçerli dizine göreli kısmen veya tamamen nitelikli filename olabilir. Ters eğik çizgi (\\) veya her iki adı dizin ayırıcı olarak eğik çizgi (/) kullanılabilir. `SetCurrentDirectory` Bunlar kullanılmadan önce dizin adı ayırıcılar uygun karakterlere çevirir.  

@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4679 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,17 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 951a2f5198a788395e4a870b204229f101ea4a50
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ca05c7983e87816e77f16ddbfe2fc9952b407f90
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281554"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221853"
 ---
 # <a name="compiler-warning-level-1-c4679"></a>Derleyici Uyarısı (düzey 1) C4679
-Derleme meta verilerini içeri aktarılamıyor desteklemiyor, bir yapısıyla karşılaştı.  
-  
- **'**   
- ***üye* ': üye içe aktarılamıyor**  
-  
- Yapı kullanmaya çalışmayın.
+
+> '*üye*': üye alınamadı
+
+Derleme meta verileri içeri aktarılamıyor bir desteklemeyen, bir yapısıyla karşılaştı.
+
+Yapı kullanmak çalışmayın.

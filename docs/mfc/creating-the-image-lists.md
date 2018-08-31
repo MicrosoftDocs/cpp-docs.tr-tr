@@ -16,22 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e5f5ac8396c32e56e4c0f2f951f45bb33714822
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53cf33a551dc95e7ed282b599673f627ff8a7b21
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341531"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220943"
 ---
 # <a name="creating-the-image-lists"></a>Görüntü Listelerini Oluşturma
 Görüntü listelerini oluşturma olup aynı kullandığınız [CListView](../mfc/reference/clistview-class.md) veya [CListCtrl](../mfc/reference/clistctrl-class.md).  
   
 > [!NOTE]
->  Liste denetimi içeriyorsa listeler yalnızca görüntü `LVS_ICON` stili.  
+>  Liste denetiminiz varsa listeleri yalnızca görüntü `LVS_ICON` stili.  
   
- Bir sınıf kullanma `CImageList` bir veya daha fazla görüntü listeleri (için tam boyutlu simgeler, küçük simgeler ve durumlarını) oluşturmak için. Bkz: [Cımagelist](../mfc/reference/cimagelist-class.md)ve [liste görünümü görüntü listeleri](http://msdn.microsoft.com/library/windows/desktop/bb774736) Windows SDK'sındaki.  
+ Bir sınıf kullanma `CImageList` (tam boyutlu simgeler, küçük simgeleri ve durumlarını için) bir veya daha fazla görüntü listeleri oluşturmak için. Bkz [Cımagelist](../mfc/reference/cimagelist-class.md)görüp [liste görünümü görüntü listeler](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
   
- Çağrı [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) her görüntü listesi; bir işaretçi uygun geçirmek `CImageList` nesnesi.  
+ Çağrı [CListCtrl::SetImageList](../mfc/reference/clistctrl-class.md#setimagelist) her görüntü listesi; bir işaretçi uygun geçirmek `CImageList` nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   

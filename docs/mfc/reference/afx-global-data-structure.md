@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9df970022ccc4f358864c3e3462ffea2b373cd00
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: fd4aadf875e16586286c97aa5bffe82d6faed31e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466294"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222309"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 `AFX_GLOBAL_DATA` Yapısı, alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.  
@@ -64,13 +64,13 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Başlatır `D2D`, `DirectWrite`, ve `WIC` üreteçleri. Ana pencereyi başlatılmadan önce bu yöntemi çağırın.|  
 |[AFX_GLOBAL_DATA::Is32BitIcons](#is32biticons)|Önceden tanımlanmış 32-bit simgeler desteklenip desteklenmediğini gösterir.|  
 |[AFX_GLOBAL_DATA::IsD2DInitialized](#isd2dinitialized)|Belirler olmadığını `D2D` başlatıldı.|  
-|[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](http://msdn.microsoft.com/library/windows/desktop/aa969518) yöntemi.|  
+|[AFX_GLOBAL_DATA::IsDwmCompositionEnabled](#isdwmcompositionenabled)|Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemi.|  
 |[AFX_GLOBAL_DATA::IsHighContrastMode](#ishighcontrastmode)|Görüntüleri yüksek karşıtlık, şu anda gösterilip gösterilmediğini gösterir.|  
 |[AFX_GLOBAL_DATA::OnSettingChange](#onsettingchange)|Desktop'ın menü animasyon ve görev autohide özellikleri geçerli durumunu algılar.|  
 |[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Belirtilen MFC pencere sınıfını kaydeder.|  
 |[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Arabirimleri GetITaskbarList ve GetITaskbarList3 yöntemleri elde edilen serbest bırakır.|  
 |[AFX_GLOBAL_DATA::Resume](#resume)|Windows Destek yöntemlere erişmek iç işlev işaretçileri yeniden başlatır [temalar ve görsel stilleri](/windows/desktop/Controls/visual-styles-overview).|  
-|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.|  
+|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.|  
 |[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Belirtilen mantıksal yazı tipi oluşturur.|  
 |[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Oluşturur ve bir kabuk öğesi nesnesi ayrıştırma adından başlatır.|  
 |[AFX_GLOBAL_DATA::UpdateFonts](#updatefonts)|Framework tarafından kullanılan mantıksal yazı tiplerinin reintializes.|  
@@ -205,16 +205,16 @@ BOOL DrawTextOnGlass(
  [in] *hTheme*  
  Bir pencerenin tema verileri işlemek veya NULL. Çerçeve, bu parametre NULL değilse ve Temalar desteklenen metnini çizmek için belirtilen tema kullanır. Aksi takdirde, framework metnini çizmek için bir tema kullanmaz.  
   
- Kullanım [OpenThemeData](http://msdn.microsoft.com/library/windows/desktop/bb759821) bir HTHEME oluşturmak için yöntemi.  
+ Kullanım [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) bir HTHEME oluşturmak için yöntemi.  
   
  [in] *pDC*  
  Bir cihaz bağlamı işaretçisi.  
   
  [in] *iPartId*  
- İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](http://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.  
+ İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.  
   
  [in] *iStateId*  
- İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](http://msdn.microsoft.com/library/windows/desktop/bb773210).  
+ İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210).  
   
  [in] *strText*  
  Çizmek için metin.  
@@ -225,7 +225,7 @@ BOOL DrawTextOnGlass(
  [in] *CertOpenStore*  
  Bitsel bir birleşimi (veya) belirtilen metnin nasıl çizilmeden belirten bayraklar.  
   
- Varsa *hTheme* parametresi `NULL` veya Temalar desteklenmez ve etkin *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli açıklar bayrakları. Temalar destekleniyorsa, *CertOpenStore* parametresinin [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi geçerli bayrakları açıklar.  
+ Varsa *hTheme* parametresi `NULL` veya Temalar desteklenmez ve etkin *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli açıklar bayrakları. Temalar destekleniyorsa, *CertOpenStore* parametresinin [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi geçerli bayrakları açıklar.  
   
  [in] *nGlowSize*  
  Belirtilen metin çizmeden önce arka plan üzerine çizilmiş bir parlaklık efekti boyutu. Varsayılan değer 0’dır.  
@@ -237,16 +237,16 @@ BOOL DrawTextOnGlass(
  Belirtilen metni çizmek için bir tema kullanılıyorsa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için kullanılan değil *hTheme* parametredir NULL veya [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) kompozisyonu devre dışı bırakıldı.  
+ Bir tema, bir uygulamanın görsel stil tanımlar. Bir tema, metin çizmek için kullanılan değil *hTheme* parametredir NULL veya [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi desteklenmiyor veya [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu devre dışı bırakıldı.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [Bölümler ve durumlar](http://msdn.microsoft.com/library/windows/desktop/bb773210)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [Bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210)   
  [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext)   
- [DrawThemeTextEx](http://msdn.microsoft.com/library/windows/desktop/bb773317)   
- [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [DWM bileşimini etkinleştir ve denetle](http://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex)   
+ [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)   
+ [DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="enableaccessibilitysupport"></a> AFX_GLOBAL_DATA::EnableAccessibilitySupport
 Etkinleştirir veya Microsoft Active Accessibility desteğini devre dışı bırakır.  
@@ -323,19 +323,19 @@ COLORREF GetColor(int nColor);
   
 ### <a name="parameters"></a>Parametreler   
  [in] *nColor*  
- Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](http://msdn.microsoft.com/library/windows/desktop/ms724371) yöntemi.  
+ Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi için açıklamalara bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa *nColor* parametresi aralık dışında olduğundan, dönüş değeri sıfırdır. Sıfır da geçerli bir RGB değeri olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927) rengi desteklenmiyorsa NULL döndüren bir yöntem.  
+ Varsa *nColor* parametresi aralık dışında olduğundan, dönüş değeri sıfırdır. Sıfır da geçerli bir RGB değeri olduğundan, sistem rengi geçerli işletim sistemi tarafından desteklenip desteklenmediğini belirlemek için bu yöntemi kullanamazsınız. Bunun yerine, [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush) rengi desteklenmiyorsa NULL döndüren bir yöntem.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
 
- [GetSysColor işlevi](http://msdn.microsoft.com/library/windows/desktop/ms724371)   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [GetSysColorBrush](http://msdn.microsoft.com/library/windows/desktop/dd144927)
+ [GetSysColor işlevi](https://msdn.microsoft.com/library/windows/desktop/ms724371)   
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
 ## <a name="getdirect2dfactory"></a> AFX_GLOBAL_DATA::GetDirect2dFactory
  Genel veriler ID2D1Factory arabirimi için bir işaretçi döndürür. Arabirim başlatılmadı ise oluşturulur ve varsayılan parametrelere sahip.  
@@ -369,14 +369,14 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
   
 ### <a name="parameters"></a>Parametreler   
  [out içinde] *bilgileri*  
- A [NONCLIENTMETRICS](http://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.  
+ A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
  
   
 ### <a name="see-also"></a>Ayrıca Bkz.   
- [NONCLIENTMETRICS yapısı](http://msdn.microsoft.com/library/windows/desktop/ff729175)
+ [NONCLIENTMETRICS yapısı](https://msdn.microsoft.com/library/windows/desktop/ff729175)
 
 ## <a name="gettextheight"></a> AFX_GLOBAL_DATA::GetTextHeight
  Geçerli yazı tipi, metin karakterleri yüksekliğini alır.  
@@ -483,7 +483,7 @@ BOOL IsD2DInitialized() const;
  D2D başlatıldı TRUE; Aksi durumda FALSE.  
   
 ## <a name="isdwmcompositionenabled"></a> AFX_GLOBAL_DATA::IsDwmCompositionEnabled
-Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](http://msdn.microsoft.com/library/windows/desktop/aa969518) yöntemi.  
+Windows çağırmak için basit bir yol sağlar [Dwmıscompositionenabled](/windows/desktop/api/dwmapi/nf-dwmapi-dwmiscompositionenabled) yöntemi.  
   
   
 ```  
@@ -491,11 +491,11 @@ BOOL IsDwmCompositionEnabled();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- TRUE ise [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) (DWM) kompozisyonu etkinse; Aksi takdirde FALSE.  
+ TRUE ise [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) (DWM) kompozisyonu etkinse; Aksi takdirde FALSE.  
   
 ### <a name="see-also"></a>Ayrıca Bkz.    
- [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540)   
- [DWM bileşimini etkinleştir ve denetle](http://msdn.microsoft.com/library/windows/desktop/aa969538)
+ [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview)   
+ [DWM bileşimini etkinleştir ve denetle](/windows/desktop/dwm/composition-ovw)
 
 ## <a name="ishighcontrastmode"></a> AFX_GLOBAL_DATA::IsHighContrastMode
  Görüntüleri yüksek karşıtlık, şu anda gösterilip gösterilmediğini gösterir.    
@@ -649,7 +649,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  Kaydedilecek pencere sınıfı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](http://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
+ Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dönüş değeri, virgülle ayrılmış listesidir *lpszClassNamePrefix* parametre dizesi ve geçerli uygulama örneğinin; tutamaçları onaltılı metin temsillerini ok uygulama imleci İmleç; olan bir tanımlayıcıdır IDC_ARROW ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz. [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
@@ -670,10 +670,10 @@ BOOL Resume();
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE. Hata ayıklama modunda, bu yöntem, bu yöntem başarısız olup olmadığını onaylar.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, framework aldığında çağrılır [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) ileti.  
+ Bu yöntem, framework aldığında çağrılır [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) ileti.  
   
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
-Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.  
+Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.  
   
   
 ```  
@@ -689,7 +689,7 @@ BOOL SetLayeredAttrib(
  Katmanlı penceresine işleyin.  
   
  [in] *crKey*  
- Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](http://msdn.microsoft.com/library/windows/desktop/aa969540) katmanlı pencere oluşturmak için kullanır.  
+ Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) katmanlı pencere oluşturmak için kullanır.  
   
  [in] *bAlpha*  
  Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri.  
@@ -701,8 +701,8 @@ BOOL SetLayeredAttrib(
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.   
  
 ### <a name="see-also"></a>Ayrıca Bkz.   
- [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449)   
- [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540)
+ [COLORREF](/windows/desktop/gdi/colorref)   
+ [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
 Belirtilen mantıksal yazı tipi oluşturur.  

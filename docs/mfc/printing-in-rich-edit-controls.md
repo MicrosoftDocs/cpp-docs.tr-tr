@@ -16,21 +16,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23b958e6c770260082af069544480102f6d79926
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 882ed020b37ec60c072c8983c61bbe564bb74b04
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347669"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217694"
 ---
 # <a name="printing-in-rich-edit-controls"></a>Zengin Düzenleme Denetimlerinde Yazdırma
-Bir zengin düzenleme denetimi anlayabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) çıktısını yazıcısı gibi belirtilen bir aygıt için oluşturulacak. Kendisi için bir zengin düzenleme denetiminden çıkış aygıtı kendi metin biçimleri de belirtebilirsiniz.  
+Zengin düzenleme denetimi anlayabilirsiniz ([CRichEditCtrl](../mfc/reference/cricheditctrl-class.md)) çıktısını bir yazıcı gibi belirtilen bir cihaz için oluşturulacak. Kendisi için bir zengin düzenleme denetiminden çıktı cihazına yazısının biçimler de belirtebilirsiniz.  
   
- Belirli bir aygıt için bir zengin düzenleme denetimi içeriğini parçası biçimlendirmek için kullanabileceğiniz [FormatRange](../mfc/reference/cricheditctrl-class.md#formatrange) üye işlevi. [FORMATRANGE](http://msdn.microsoft.com/library/windows/desktop/bb787911) bu işlev ile kullanılan yapısı hedef cihaz için cihaz bağlamı (DC) yanı sıra biçimlendirmek için metin aralığını belirtir.  
+ Belirli bir cihaz için bir zengin düzenleme denetimi içeriğini bir parçası olarak biçimlendirmek için kullanabileceğiniz [FormatRange](../mfc/reference/cricheditctrl-class.md#formatrange) üye işlevi. [FORMATRANGE](/windows/desktop/api/richedit/ns-richedit-_formatrange) yapısı ile bu işlev kullanılan hedef cihaz için cihaz bağlamı (DC) yanı sıra biçimlendirmek için metin aralığını belirtir.  
   
- Bir çıkış aygıtı için metin biçimlendirme sonrasında, çıktı cihaza kullanarak gönderebilirsiniz [DisplayBand](../mfc/reference/cricheditctrl-class.md#displayband) üye işlevi. Art arda kullanarak `FormatRange` ve `DisplayBand`, bir zengin düzenleme denetimine içeriğini yazdırır uygulamanın bant uygulayabilirsiniz. (Bant çıkış bölme daha küçük parçalara yazdırma amacıyla kullanılır.)  
+ Bir çıktı cihazına için metin biçimlendirme sonrasında, çıkış cihaza kullanarak gönderebilirsiniz [DisplayBand](../mfc/reference/cricheditctrl-class.md#displayband) üye işlevi. Tekrar tekrar kullanarak `FormatRange` ve `DisplayBand`, uygulamanın bir zengin düzenleme denetiminin içeriğini yazdırır banding uygulayabilirsiniz. (Bant çıkış bölümü daha küçük parçalara yazdırma amaçları içindir.)  
   
- Kullanabileceğiniz [SetTargetDevice](../mfc/reference/cricheditctrl-class.md#settargetdevice) üye işlevi bir zengin düzenleme denetimi hedef aygıt belirtmek için metin biçimlendirir. Bu işlev için WYSIWYG yararlı (olduğu ne alacaksınız gördüğünüz) biçimlendirme, uygulama ekran yerine varsayılan yazıcının yazı tipi ölçümleri kullanarak metin yerleştirir.  
+ Kullanabileceğiniz [SetTargetDevice](../mfc/reference/cricheditctrl-class.md#settargetdevice) üye işlevi bir zengin düzenleme denetimi hedef cihaza belirtmek için metin biçimlendirir. Bu işlev yararlıdır için WYSIWYG (ne şunları elde edersiniz gördüğünüz) biçimlendirme, uygulama ekranının yerine varsayılan yazıcının yazı tipi ölçümleri kullanarak metin yerleştirir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CRichEditCtrl kullanma](../mfc/using-cricheditctrl.md)   

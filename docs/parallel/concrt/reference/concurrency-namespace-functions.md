@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98e385f965ab3036d6ccf2383fd4ae6f420eb548
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 4e5ddaf0f3368f9542fbbd04a8a16c56223aefd5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464581"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219585"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
@@ -179,12 +179,12 @@ IResourceManager* __cdecl CreateResourceManager();
  Bir `IResourceManager` arabirimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi izleyen birden çok çağrı Kaynak Yöneticisi'nin aynı örneğini döndürür. Yöntemine yapılan her çağrı bir başvuru Kaynak Yöneticisi'nde saymak ve çağrısı ile eşleştirilmesi gerekir [Iresourcemanager::Release](http://msdn.microsoft.com/en-us/5d1356ec-fbd3-4284-a361-1e9e20bbb522) yöntemi zamanlayıcınız Kaynak Yöneticisi ile iletişim kurulurken.  
+ Bu yöntemi izleyen birden çok çağrı Kaynak Yöneticisi'nin aynı örneğini döndürür. Yöntemine yapılan her çağrı bir başvuru Kaynak Yöneticisi'nde saymak ve çağrısı ile eşleştirilmesi gerekir [Iresourcemanager::Release](https://msdn.microsoft.com/5d1356ec-fbd3-4284-a361-1e9e20bbb522) yöntemi zamanlayıcınız Kaynak Yöneticisi ile iletişim kurulurken.  
   
  [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="create_task"></a>  create_task  
- Oluşturur [görev](http://msdn.microsoft.com/en-us/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.  
+ Oluşturur [görev](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.  
   
 ```
 template<typename T>

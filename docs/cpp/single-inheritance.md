@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4f0f2a82c02bcb58f89d604978d31eb01ebd1fd
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 5c4acddaeac8e63ecd09860ffc9c56c97b212506
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465697"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219734"
 ---
 # <a name="single-inheritance"></a>Tek Devralma
 Sık kullanılan bir devralma biçimi olan "tek devralma"da, sınıflarda yalnızca bir temel sınıfı vardır. Aşağıdaki şekilde gösterilen ilişkiyi göz önünde bulundurun.  
@@ -63,7 +63,7 @@ Yönlendirilmiş Çevrimsiz Grafik Örneği
  Yukarıda gösterilen "yönlendirilmiş çevrimsiz graf" (veya "DAG") adlı diyagramda, sınıfların bazıları birden fazla türetilmiş sınıfa yönelik temel sınıflardır. Ancak bunun tersi doğru değildir: türetilmiş herhangi bir sınıfa yönelik yalnızca bir doğrudan temel sınıf vardır. Şekildeki grafikte "tek devralma" yapısı gösterilmiştir.  
   
 > [!NOTE]
->  Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar. Bu konuda ele alınmıştır [birden çok devralma](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
+>  Yönlendirilmiş çevrimsiz grafikler, tek devralmaya özgü değildir. Birden çok devralma grafiklerini göstermek için de kullanılırlar. Bu konuda ele alınmıştır [birden çok devralma](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca).  
   
  Devralma işleminde, türetilen sınıf temel sınıfın üyelerini ve eklediğiniz tüm yeni üyeleri içerir. Sonuç olarak, türetilen bir sınıf temel sınıfın üyelerine başvurabilir (bu üyeler türetilen sınıfta yeniden tanımlanmadıkça). Kapsam çözümleme işleci (`::`), bu sınıflar türetilen sınıfta yeniden tanımlandığında doğrudan veya dolaylı temel sınıfların üyelerine başvurmak için kullanılabilir. Bu örneği göz önünde bulundurun:  
   

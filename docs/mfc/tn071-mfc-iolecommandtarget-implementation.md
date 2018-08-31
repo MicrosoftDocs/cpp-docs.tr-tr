@@ -17,85 +17,85 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebd796690407fe0e65bc790c52477c7e4d149250
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 1d8e029b1ffc4e17e55f2cb69405bb272b92e94e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122627"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221400"
 ---
 # <a name="tn071-mfc-iolecommandtarget-implementation"></a>TN071: MFC IOleCommandTarget Uygulaması
 
 > [!NOTE]
-> İlk çevrimiçi belgelerinde eklenmiştir beri aşağıdaki Teknik Not güncelleştirilmemiş. Sonuç olarak, bazı yordamlar ve konuları güncel veya yanlış olması olabilir. En son bilgiler için çevrimiçi belgeleri dizindeki ilgi konuyu aramak önerilir.
+> Aşağıdaki Teknik Not çevrimiçi belgelere ilk eklenmiştir beri güncelleştirilmemiş. Eski veya yanlış sonuç olarak, bazı yordamlar ve konular olabilir. En son bilgiler için bu konuyu çevrimiçi belge dizininde arama önerilir.
 
-`IOleCommandTarget` Nesneleri ve kapsayıcılarına birbirlerine komutları gönderilmesi için arabirim sağlar. Örneğin, bir nesnenin araç çubukları komutları için düğmeler gibi içerebilir `Print`, `Print Preview`, `Save`, `New`, ve `Zoom`. Böyle bir nesnenin katıştırılmış varsa destekleyen bir kapsayıcıda `IOleCommandTarget`, nesne düğmeleri etkinleştirebilir ve kullanıcı bunları tıklatıldığında işlemek için kapsayıcısı komutları iletin. Bir kapsayıcı kendisini yazdırmak için katıştırılmış nesne istediyseniz, bu istek bir komutu aracılığıyla göndererek kolaylaştırır `IOleCommandTarget` katıştırılmış nesnenin arabirimi.
+`IOleCommandTarget` Arabirimi nesneleri ve birbirlerine komutları gönderme kapsayıcılarına etkinleştirir. Örneğin, bir nesnenin araç çubukları komutları için düğmeler gibi içerebilir `Print`, `Print Preview`, `Save`, `New`, ve `Zoom`. Böyle bir nesne gömülü değilse destekleyen bir kapsayıcı `IOleCommandTarget`, nesne düğmeleri etkinleştirebilir ve kullanıcı bunları tıklandığında işlemek için kapsayıcı komutları iletin. Bir kapsayıcı IOleCommandTarget komutunu nesnenin istediyseniz, bu komutu aracılığıyla göndererek bu isteği yapabilirsiniz `IOleCommandTarget` kullanılması katıştırılmış nesnenin arabirimi.
 
-`IOleCommandTarget` İstemci tarafından bir sunucuda yöntemleri çağırmak için kullanılan bir Otomasyon benzeri arabirimiyle olmamasıdır. Ancak, kullanarak `IOleCommandTarget` programcıları genellikle pahalı kullanmanız gerekmez çünkü Otomasyon arabirimleri çağrıları yapma yükünü kaydeder `Invoke` yöntemi `IDispatch`.
+`IOleCommandTarget` bir sunucu üzerinde yöntemleri çağırmak için bir istemci tarafından kullanılır, bir Otomasyon benzeri arabirimidir. Ancak, `IOleCommandTarget` programcılar genellikle pahalı kullanmanız gerekmez çünkü Otomasyon arabirimlerini çağrıları yapma ek yükü kaydeder `Invoke` yöntemi `IDispatch`.
 
-MFC'de, `IOleCommandTarget` arabirimi komutları sunucusuna gönderilmesi etkin belge kapsayıcıları izin vermek için etkin belge sunucuları tarafından kullanılır. Etkin belge sunucu sınıfı `CDocObjectServerItem`, MFC arabirimi eşlemelerini kullanır (bkz [TN038: MFC/OLE IUnknown uygulaması](../mfc/tn038-mfc-ole-iunknown-implementation.md)) uygulamak için `IOleCommandTarget` arabirimi.
+MFC'de, `IOleCommandTarget` arabirimi komutları sunucuya gönderme etkin belge kapsayıcıları izin vermek için etkin belge sunucuları tarafından kullanılır. Etkin belge sunucusu sınıfı `CDocObjectServerItem`, MFC arabirim eşlemeleri kullanır (bkz [TN038: MFC/OLE IUnknown uygulaması](../mfc/tn038-mfc-ole-iunknown-implementation.md)) uygulamak için `IOleCommandTarget` arabirimi.
 
-`IOleCommandTarget` Ayrıca uygulanan `COleFrameHook` sınıfı. `COleFrameHook` çerçeve penceresi işlevselliğini yerinde düzenleme kapsayıcıların uygulayan bir belgelenmemiş MFC sınıftır. `COleFrameHook` MFC arabirimi eşlemeleri uygulamak için de kullanır `IOleCommandTarget` arabirimi. `COleFrameHook`kişinin uyarlamasını `IOleCommandTarget` OLE komutları iletir `COleDocObjectItem`-etkin belge kapsayıcıları türetilmiş. Kapsanan etkin belgeyi sunucularından iletileri almak tüm MFC etkin belge kapsayıcı sağlar.
+`IOleCommandTarget` Ayrıca, uygulanan `COleFrameHook` sınıfı. `COleFrameHook` yerinde düzenleme kapsayıcıları çerçeve penceresi işlevlerini uygulayan belgelenmemiş bir MFC sınıfı var. `COleFrameHook` MFC arabirim eşlemeleri'uygulamak için de kullanır `IOleCommandTarget` arabirimi. `COleFrameHook`ın uygulaması `IOleCommandTarget` OLE komutları iletir `COleDocObjectItem`-etkin belge kapsayıcıları türetilmiş. Bu, kapsanan etkin belge sunucuları iletileri almak tüm MFC etkin belge kapsayıcı sağlar.
 
 ## <a name="mfc-ole-command-maps"></a>MFC OLE komutu eşlemeleri
 
-MFC geliştiriciler yararlanabilir `IOleCommandTarget` MFC OLE kullanarak eşlemeleri komutu. Komut eşleme içeren sınıf üyesi işlevleri için OLE komutları eşleştirmek için kullanılabilir olduğundan ileti eşlemeleri gibi OLE komutu eşlemeleri var. Bunun çalışmasını sağlamak için makroları OLE komut grubunun işlemek istediğiniz komut, OLE komut ve komut Kimliğini belirtmek için komut eşlemesinde yerleştirin [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) OLE komutu alındığında gönderilecek ileti. MFC önceden tanımlı makrolar bir dizi standart OLE komutları için de sağlar. Standart OLE listesi için tasarlanmış komutları Microsoft Office uygulamalarıyla kullanmak, docobj.h içinde tanımlanan OLECMDID numaralandırma bakın.
+MFC geliştiriciler yararlanabilir `IOleCommandTarget` komutunu eşlemleri MFC OLE kullanarak. İçin komut eşlemesini içeren sınıfın üye işlevleri OLE komutları eşleştirmek için kullanılabilir olduğundan ileti eşlemeleri gibi OLE komutu eşlemeleri var. Bunun çalışmasını sağlamak için makroları işlemek istediğiniz komut, OLE komut ve komut kimliği OLE komut grubu belirtmek için komut haritada yerleştirin [WM_COMMAND](/windows/desktop/menurc/wm-command) OLE komutunu aldığında gönderilecek ileti. MFC önceden tanımlanmış makrolar bir dizi standart OLE komutları için de sağlar. Standart OLE listesi için tasarlanmış komutları ile Microsoft Office uygulamalarını kullanmaktadır, docobj.h içinde tanımlanan OLECMDID numaralandırma bakın.
 
-OLE komutu OLE komutu eşleme içeren bir MFC uygulaması tarafından alındığında, MFC Uygulama OLE komutu haritasını istenen komut için komut kimliği ve komut grubu bulmayı dener. Bir eşleşme bulunamazsa, istenen komut kimliği komutu eşleme içeren bir uygulama için bir WM_COMMAND ileti gönderilir. (Açıklamasına bakın `ON_OLECMD` aşağıda.) Bu şekilde, uygulamaya gönderilen OLE komutları WM_COMMAND iletilere MFC tarafından etkinleştirilir. WM_COMMAND iletileri sonra MFC standardını kullanarak uygulamanın ileti eşlemeleri yönlendirilir [komut yönlendirme](../mfc/command-routing.md) mimarisi.
+Bir OLE komutu bir OLE komut eşlemesini içeren bir MFC uygulaması tarafından alındığında, MFC, OLE komut haritadaki uygulamasının istenen komut komut kimliği ve komut grubunu bulmak çalışır. Bir eşleşme bulunursa, istenen komut kimliği komut harita içeren uygulamaya bir WM_COMMAND ileti gönderilir. (Açıklamasına bakın `ON_OLECMD` aşağıda.) Bu şekilde, uygulamaya dağıtılan OLE komutları WM_COMMAND iletileri MFC tarafından açık olabilir. WM_COMMAND iletileri ardından MFC standardını kullanarak uygulamanın ileti eşlemeleri yönlendirilir [komut yönlendirme](../mfc/command-routing.md) mimarisi.
 
-İleti eşlemeleri, MFC OLE komutu eşlemeleri ClassWizard tarafından desteklenmez. MFC geliştiriciler OLE komut harita desteği ve OLE komutu eşleme girdilerini el ile eklemeniz gerekir. MAPS WM_COMMAND ileti yönlendirme zincirinde sırasında etkin belgeyi olan herhangi bir sınıf MFC etkin belge sunucuları eklenebilir OLE yerinde etkin bir kapsayıcıda komuttur. Bu sınıfların türetilmiş uygulamanın sınıfları içerir [CWinApp](../mfc/reference/cwinapp-class.md), [CView](../mfc/reference/cview-class.md), [CDocument](../mfc/reference/cdocument-class.md), ve [COleIPFrameWnd](../mfc/reference/coleipframewnd-class.md). Etkin belge kapsayıcıları OLE komutu eşlemeleri yalnızca eklenebilir [COleDocObjectItem](../mfc/reference/coledocobjectitem-class.md)-türetilmiş sınıf. Ayrıca, etkin belge kapsayıcıları WM_COMMAND iletileri yalnızca ileti eşlemesi için dağıtılacağı `COleDocObjectItem`-türetilmiş sınıf.
+İleti eşlemeleri, MFC OLE komutu eşlemeleri ClassWizard tarafından desteklenmez. MFC geliştiriciler OLE komut eşleme desteği ve OLE komut eşleme girişleri el ile eklemeniz gerekir. Haritalar WM_COMMAND ileti yönlendirme zincirinde etkin belgeyi sırasında olan herhangi bir sınıf içinde MFC etkin belge sunucuları eklenebilir OLE yerinde etkin bir kapsayıcıdaki bir komuttur. Bu sınıflar türetilen uygulamanın sınıflarını [CWinApp](../mfc/reference/cwinapp-class.md), [CView](../mfc/reference/cview-class.md), [CDocument](../mfc/reference/cdocument-class.md), ve [Coleıpframewnd](../mfc/reference/coleipframewnd-class.md). Etkin belge kapsayıcıları OLE komutu eşlemeleri yalnızca eklenebilir [Coledocobjectıtem](../mfc/reference/coledocobjectitem-class.md)-türetilmiş sınıf. Ayrıca, etkin belge kapsayıcıları WM_COMMAND iletileri yalnızca ileti eşlemede için dağıtılacağı `COleDocObjectItem`-türetilmiş sınıf.
 
-## <a name="ole-command-map-macros"></a>OLE komutu eşleme makroları
+## <a name="ole-command-map-macros"></a>OLE komut eşleme makroları
 
-Komut eşleme işlevselliği sınıfınıza eklemek için aşağıdaki makroları kullanın:
+Sınıfınıza komut Haritası işlevini eklemek için aşağıdaki makroları kullanın:
 
 ```cpp
 DECLARE_OLECMD_MAP ()
 ```
 
-Bu makrosu komutu eşleme içeren sınıf (genellikle başlık dosyasındaki) sınıf bildirimi gider.
+Bu makro sınıfı bildiriminde komut eşlemesini içeren sınıfın içinde (genelde üstbilgi dosyası) gider.
 
 ```cpp
 BEGIN_OLECMD_MAP(theClass, baseClass)
 ```
 
 *Sınıfın*  
- Komut eşleme içeren sınıfın adı.
+ Komut eşlemesini içeren sınıfın adı.
 
 *baseClass*  
- Komut eşleme içeren sınıfın temel sınıf adı.
+ Komut eşlemesini içeren sınıfın temel sınıfının adı.
 
-Bu makrosu komutu harita başlangıcını işaretler. Komut eşleme içeren sınıf için uygulama dosyasında bu makrosu kullanın.
+Bu makro, komut eşleme başına işaretler. Bu makro, komut eşlemesini içeren sınıf için uygulama dosyasında kullanın.
 
 ```
 END_OLECMD_MAP()
 ```
 
-Bu makrosu komutu harita sonunu işaretler. Komut eşleme içeren sınıf için uygulama dosyasında bu makrosu kullanın. Bu makrosu her zaman BEGIN_OLECMD_MAP makrosu izlemeniz gerekir.
+Bu makro, komut harita sonunu işaretler. Bu makro, komut eşlemesini içeren sınıf için uygulama dosyasında kullanın. Bu makro, her zaman BEGIN_OLECMD_MAP makrosu izlemeniz gerekir.
 
 ```
 ON_OLECMD(pguid, olecmdid, id)
 ```
 
 *pguid*  
- İşaretçi OLE komutunun komut grubu GUID. Bu parametre **NULL** standart OLE komut grubu.
+ OLE, komutun komut grubu GUID işaretçisi. Bu parametre **NULL** standart OLE komut grubu.
 
 *olecmdid*  
- Çağrılacak komut OLE komut kimliği.
+ Çağrılacak komutun OLE komut kimliği.
 
 *id*  
- Bu OLE komutu çağrıldığında komutu eşleme içeren bir uygulama için gönderilecek WM_COMMAND ileti kimliği.
+ Bu OLE komut çağrıldığında komut harita içeren uygulamaya gönderilecek WM_COMMAND ileti kimliği.
 
-ON_OLECMD makrosu komutu eşlemesinde işlemek istediğiniz OLE komutları için girişleri eklemek için kullanın. OLE komutları alındığında bunlar belirtilen WM_COMMAND ileti dönüştürülür ve komut yönlendirme standart MFC mimarisi kullanarak uygulama ileti eşlemesi üzerinden yönlendirilir.
+ON_OLECMD makrosu komut haritada kullanmak istediğiniz OLE komutları girdileri eklemek üzere kullanın. OLE komutlar alındığında, bunlar için belirtilen WM_COMMAND ileti dönüştürülür ve standart komut yönlendirmeyi MFC mimarisi kullanarak uygulamanın ileti eşlemesi üzerinden yönlendirilir.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek, OLE komut işleme yeteneği işlemek için bir MFC etkin belge sunucusuna eklemek gösterilmiştir [OLECMDID_PRINT](http://msdn.microsoft.com/library/windows/desktop/ms691264) OLE komutu. Bu örnek AppWizard etkin belgeyi sunucu bir MFC uygulaması oluşturmak için kullanılan varsayar.
+Aşağıdaki örnekte, işlemeye için MFC etkin belge Sunucusu'nun OLE işleme komut özelliği eklemek gösterilmektedir [OLECMDID_PRINT](/windows/desktop/api/docobj/ne-docobj-olecmdid) OLE komutu. Bu örnekte AppWizard bir etkin belge sunucusu olan bir MFC uygulaması oluşturmak için kullandığınız varsayılır.
 
-1. İçinde `CView`-sınıfının üstbilgi türetilmiş dosyasında, sınıf bildirimi DECLARE_OLECMD_MAP makrosu ekleyin.
+1. İçinde `CView`-türetilmiş sınıfın üstbilgi dosyasında, sınıf bildirimine DECLARE_OLECMD_MAP makro ekleyin.
 
     > [!NOTE]
-    > Kullanım `CView`-WM_COMMAND ileti yönlendirme zincirinde etkin belgeyi sunucusundan sınıflarda biri olduğundan türetilmiş sınıf.
+    > Kullanım `CView`-WM_COMMAND ileti yönlendirme zincirinde etkin belge sunucusu sınıflarda biri olduğundan türetilmiş sınıf.
 
     ```cpp
     class CMyServerView : public CView
@@ -108,7 +108,7 @@ Aşağıdaki örnek, OLE komut işleme yeteneği işlemek için bir MFC etkin be
     };
     ```
 
-2. Uygulama dosyasında `CView`-türetilmiş sınıf, BEGIN_OLECMD_MAP ve END_OLECMD_MAP makroları ekleyin:
+2. İçin uygulama dosyasında `CView`-türetilmiş sınıf, BEGIN_OLECMD_MAP ve END_OLECMD_MAP makroları ekleyin:
 
     ```cpp
     BEGIN_OLECMD_MAP(CMyServerView, CView)
@@ -116,7 +116,7 @@ Aşağıdaki örnek, OLE komut işleme yeteneği işlemek için bir MFC etkin be
     END_OLECMD_MAP()
     ```
 
-3. Standart OLE yazdırma komutunu işlemek için ekleme bir [ON_OLECMD](reference/message-map-macros-mfc.md#on_olecmd) standart yazdırma komutu için OLE komut Kimliğini belirtme komutu eşlemesine makrosu ve **ıd_fıle_prınt** WM_COMMAND kimliği için **Id_fıle_prınt** yazdırma komut kimliği AppWizard oluşturulan MFC uygulamaları tarafından kullanılan standart:
+3. Standart OLE yazdırma komutunu işlemek için ekleme bir [ON_OLECMD](reference/message-map-macros-mfc.md#on_olecmd) makrosu komut eşlemesine standart yazdırma komutu için OLE komut Kimliğini belirtme ve **ıd_fıle_prınt** WM_COMMAND kimliği için **Id_fıle_prınt** yazdırma komut kimliği MFC AppWizard tarafından oluşturulan uygulamalar tarafından kullanılan standart'tır:
 
     ```
     BEGIN_OLECMD_MAP(CMyServerView, CView)
@@ -124,9 +124,9 @@ Aşağıdaki örnek, OLE komut işleme yeteneği işlemek için bir MFC etkin be
     END_OLECMD_MAP()
     ```
 
-Afxdocob.h içinde tanımlanan standart OLE komut makroları birini yerine ON_OLECMD makrosu çünkü kullanılabilir olduğunu unutmayın **OLECMDID_PRINT** bir standart OLE komut kimliği. On_olecmd_prınt makrosu yukarıda gösterilen ON_OLECMD makrosu gibi aynı görevi yapabiliriz.
+Afxdocob.h içinde tanımlı standart OLE komut makroları birini yerine ON_OLECMD makrosu kullanılamadı çünkü olduğunu unutmayın **OLECMDID_PRINT** standart bir OLE komut kimliği. On_olecmd_prınt makrosu, yukarıda gösterilen ON_OLECMD makrosu aynı görevi yerine getirmiş olacaksınız.
 
-Bir kapsayıcı uygulaması, bu sunucu gönderdiğinde bir **OLECMDID_PRINT** sunucunun aracılığıyla komutu `IOleCommandTarget` arabirimini, komut işleyici yazdırma MFC Uygulama yazdırmak sunucunun neden Server'da çağrılan. Etkin belge kapsayıcısı kodu Yukarıdaki adımlarda eklenen yazdırma komutunu Çağır şunun gibi görünür:
+Bu sunucu gönderdiğinde kapsayıcılı bir uygulama bir **OLECMDID_PRINT** komutu ile sunucunun `IOleCommandTarget` arabirimi, komut işleyicisi yazdırma MFC Uygulama Yazdırma Sunucusu'nun neden Server'da çağrılacak. Yukarıdaki adımlarda eklenen yazdırma komutu çağırmak için etkin belgeyi kapsayıcının kodu şöyle görünür:
 
 ```cpp
 void CContainerCntrItem::DoOleCmd()

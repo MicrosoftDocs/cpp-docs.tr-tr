@@ -17,19 +17,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d22d6a7fce670f7da7740b5f0678eafaa49f519
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a6131cea7a7684036fd7183a79214c7c6936540b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604029"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218754"
 ---
 # <a name="iidppvargshelper-function"></a>IID_PPV_ARGS_Helper İşlevi
 
 Belirtilen bağımsız değişken türü öğesinden türetilen doğrular `IUnknown` arabirimi.
 
 > [!IMPORTANT]
-> Bu şablon uzmanlığı WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Kullanım [IID_PPV_ARGS](http://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) yerine.
+> Bu şablon uzmanlığı WRL altyapısını destekler ve doğrudan kodunuzdan kullanılmaya yönelik değildir. Kullanım [IID_PPV_ARGS](https://msdn.microsoft.com/library/windows/desktop/ee330727.aspx) yerine.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -62,4 +62,4 @@ Bir derleme zamanı hatası oluşturulur şablon parametresi *T* öğesinden tü
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Başvuru (Windows çalışma zamanı kitaplığı)](http://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)
+[Başvuru (Windows çalışma zamanı kitaplığı)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19c302f08485b6db89ea2a6b66106244ed95b48c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dd6f4eed4cefba16d95baabe38fc5268c0ae8512
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601744"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216445"
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
 Başvuru sınıfları ve Windows çalışma zamanı uygulamalarında başvuru yapı birimleri için genel davranış sağlar. Tüm başvuru sınıfı ve ref struct örnekleri Platform::Object için örtük olarak dönüştürülebilir ^ ve kendi sanal ToString yöntemini geçersiz kılabilirsiniz.  
@@ -119,7 +119,7 @@ Object::GetType()
 ### <a name="remarks"></a>Açıklamalar  
  Statik [Type::GetTypeCode](../cppcx/platform-type-class.md#gettypecode) almak için kullanılan bir [Platform::TypeCode numaralandırması](../cppcx/platform-typecode-enumeration.md) geçerli türü gösteren bir değer. Bu genellikle yerleşik türler için yararlı olur. Yanı sıra herhangi bir başvuru sınıfı türü kodunu [Platform::String](../cppcx/platform-string-class.md) (1) bir nesnedir.  
   
- [Windows::UI::Xaml::Interop::TypeName](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) sınıfı Windows API tür bilgileri Windows bileşenleri ve uygulamalar arasında geçirme dil bağımsız bir yol olarak kullanılır. T[Platform::Type sınıfı](../cppcx/platform-type-class.md) arasında dönüştürme işleçleri olan `Type` ve `TypeName`.  
+ [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) sınıfı Windows API tür bilgileri Windows bileşenleri ve uygulamalar arasında geçirme dil bağımsız bir yol olarak kullanılır. T[Platform::Type sınıfı](../cppcx/platform-type-class.md) arasında dönüştürme işleçleri olan `Type` ve `TypeName`.  
   
  Kullanım [TypeID](../windows/typeid-cpp-component-extensions.md) döndürülecek işleci bir `Platform::Type` nesne için XAML sayfalar arasında gezinirken örneğin bir sınıf adı:  
   

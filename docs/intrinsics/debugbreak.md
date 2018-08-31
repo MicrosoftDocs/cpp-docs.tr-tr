@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71b7dfca165e76880370368282bdbd7728315cfa
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9884cd8aec09bfcefaa8455457a3a4d3bb5b3d3d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464587"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219237"
 ---
 # <a name="debugbreak"></a>__debugbreak
 **Microsoft'a özgü**  
@@ -43,7 +43,7 @@ void __debugbreak();
 |`__debugbreak`|x86, ARM, x64|\<intrin.h >|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__debugbreak` Derleyici iç, benzer [DebugBreak](http://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir bir Win32 yolu.  
+ `__debugbreak` Derleyici iç, benzer [DebugBreak](https://msdn.microsoft.com/library/windows/desktop/ms679297.aspx), bir kesme noktası neden taşınabilir bir Win32 yolu.  
   
 > [!NOTE]
 >  İle derlerken **/CLR**, işlevi içeren `__debugbreak` MSIL olarak derlenmiş. `asm int 3` bir işlev için yerel olarak derlenmesine neden olur. Daha fazla bilgi için [__asm](../assembler/inline/asm.md).  

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6c7d45c36534ab2c67765dc6e4e9ea61b79b3ea
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 49362fa02005ce44100b0248d25ffc364a68da16
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338038"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222344"
 ---
 # <a name="cipaddressctrl-class"></a>Cıpaddressctrl sınıfı
 Windows ortak IP adresi denetimi işlevlerini sağlar.  
@@ -76,7 +76,7 @@ class CIPAddressCtrl : public CWnd
   
  Bu denetimi (ve bu nedenle `CIPAddressCtrl` sınıfı) altında Microsoft Internet Explorer 4.0 ve sonraki sürümlerde çalışan programlar için kullanılabilir. Bunlar ayrıca Windows ve Windows NT gelecekteki sürümlerinde kullanılabilir.  
   
- IP adresi denetimi hakkında daha fazla genel bilgi için bkz: [IP adresi denetimleri](http://msdn.microsoft.com/library/windows/desktop/bb761372) Windows SDK.  
+ IP adresi denetimi hakkında daha fazla genel bilgi için bkz: [IP adresi denetimleri](/windows/desktop/Controls/ip-address-controls) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -105,7 +105,7 @@ void ClearAddress();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_CLEARADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761377)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_CLEARADDRESS](/windows/desktop/Controls/ipm-clearaddress)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="create"></a>  CIPAddressCtrl::Create  
  Bir IP adresi denetimi oluşturur ve ona bağlanan bir `CIPAddressCtrl` nesne.  
@@ -120,10 +120,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki windows stilleri listesi.  
+ IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki windows stilleri listesi.  
   
  *Rect*  
- IP adresi denetimin boyutunu ve konumunu başvuru. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
+ IP adresi denetimin boyutunu ve konumunu başvuru. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
  *pParentWnd*  
  IP adresi denetiminin üst penceresine bir işaretçi. NULL olmamalıdır.  
@@ -157,13 +157,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki windows stilleri listesi.  
+ IP adresi denetimin stili. Pencere stilleri bileşimini uygulayın. Denetimi alt pencere olması gerektiğinden WS_CHILD stili eklemeniz gerekir. Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK'sındaki windows stilleri listesi.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  
@@ -210,7 +210,7 @@ int GetAddress(DWORD& dwAddress);
  IP adresi denetimi boş olmayan alan sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_GETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761378)Windows SDK içinde açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağa okuma numaraları 0 ile 3 denetimin alanlarında için sol, dört parametreleri doldurun. Yukarıdaki ikinci prototipteki *dwAddress* şu şekilde doldurulur.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_GETADDRESS](/windows/desktop/Controls/ipm-getaddress)Windows SDK içinde açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağa okuma numaraları 0 ile 3 denetimin alanlarında için sol, dört parametreleri doldurun. Yukarıdaki ikinci prototipteki *dwAddress* şu şekilde doldurulur.  
   
 |Alan|Alan değeri içeren BITS|  
 |-----------|-------------------------------------|  
@@ -230,7 +230,7 @@ BOOL IsBlank() const;
  Tüm IP adresi denetimi alanları boş olan olursa sıfır dışı; Aksi durumda 0.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_ISBLANK](http://msdn.microsoft.com/library/windows/desktop/bb761379)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_ISBLANK](/windows/desktop/Controls/ipm-isblank)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setaddress"></a>  CIPAddressCtrl::SetAddress  
  IP adresi denetimi tüm dört alan adres değerlerini ayarlar.  
@@ -262,7 +262,7 @@ void SetAddress(DWORD dwAddress);
  Yeni IP adresini içeren bir DWORD değeri. Bkz: **açıklamalar** için DWORD değerini nasıl doldurulur gösteren bir tablo.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETADDRESS](http://msdn.microsoft.com/library/windows/desktop/bb761380)Windows SDK içinde açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağa okuma numaraları 0 ile 3 denetimin alanlarında için sol, dört parametreleri doldurun. Yukarıdaki ikinci prototipteki *dwAddress* şu şekilde doldurulur.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETADDRESS](/windows/desktop/Controls/ipm-setaddress)Windows SDK içinde açıklandığı gibi. Yukarıdaki ilk prototip, sırasıyla sağa okuma numaraları 0 ile 3 denetimin alanlarında için sol, dört parametreleri doldurun. Yukarıdaki ikinci prototipteki *dwAddress* şu şekilde doldurulur.  
   
 |Alan|Alan değeri içeren BITS|  
 |-----------|-------------------------------------|  
@@ -283,7 +283,7 @@ void SetFieldFocus(WORD nField);
  Sıfır tabanlı alan dizini odağı ayarlamanız gerekir. Bu değer, alanlar sayısından büyükse, odak ilk boş alana ayarlanır. Tüm alanları boş olmayan ise odak ilk alan için ayarlanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETFOCUS](http://msdn.microsoft.com/library/windows/desktop/bb761381)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETFOCUS](/windows/desktop/Controls/ipm-setfocus)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setfieldrange"></a>  CIPAddressCtrl::SetFieldRange  
  Belirtilen IP adresi denetimi alanında aralığı ayarlar.  
@@ -306,7 +306,7 @@ void SetFieldRange(
  Bu IP adresi denetimi belirtilen alan sayısı üst sınırını alma tamsayı başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETRANGE](http://msdn.microsoft.com/library/windows/desktop/bb761382)Windows SDK içinde açıklandığı gibi. İki parametre kullanmak *nLower* ve *nUpper*yerine alan alt ve üst sınırlarını belirtmek için *wRange* Win32 iletinin kullanılan parametre.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [IPM_SETRANGE](/windows/desktop/Controls/ipm-setrange)Windows SDK içinde açıklandığı gibi. İki parametre kullanmak *nLower* ve *nUpper*yerine alan alt ve üst sınırlarını belirtmek için *wRange* Win32 iletinin kullanılan parametre.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CWnd sınıfı](../../mfc/reference/cwnd-class.md)   

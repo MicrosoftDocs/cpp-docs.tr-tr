@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9c939a2a96d0f8a34dbe9424ab7e07c5a60c2224
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7a8bb269f1d572fed2d7fc85ee33f07d22a98aae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610211"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220588"
 ---
 # <a name="component-extensions-for-runtime-platforms"></a>Çalışma Zamanı Platformları için Bileşen Uzantıları
 
@@ -34,7 +34,7 @@ Visual C++ çalışma zamanı platformları karşı programlama yardımcı olmak
 
 C + +/ CX olan bir alt kümesini C + +/ CLI. C + için ortak olan uzantıları için +/ CX ve C + +/ CLI, semantiği bağlıdır, ortak dil çalışma zamanı (CLR) veya Windows çalışma zamanını hedefleyen üzerinde. Uygulamanızı Windows çalışma zamanı üzerinde çalıştırılacak derlemeye belirtin `/ZW` derleyici seçeneği. CLR üzerinde çalıştırmak için derleme için belirtme `/clr` derleyici seçeneği. Bir proje oluşturmak için Visual Studio kullandığınızda bu anahtarları otomatik olarak ayarlanır.
 
-C++ ile Evrensel Windows platformu uygulamaları oluşturma hakkında daha fazla bilgi için bkz. [C++ kullanan Windows Runtime için yol haritası uygulamaları](http://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
+C++ ile Evrensel Windows platformu uygulamaları oluşturma hakkında daha fazla bilgi için bkz. [C++ kullanan Windows Runtime için yol haritası uygulamaları](https://msdn.microsoft.com/library/windows/apps/hh700360.aspx).
 
 C + +/ CLI, ISO/ANSI C++ standard genişletir ve Ecma C + altında tanımlanan +/ CLI standart. Daha fazla bilgi için [.NET programlama ile C + +/ CLI (Visual C++)](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md).
 

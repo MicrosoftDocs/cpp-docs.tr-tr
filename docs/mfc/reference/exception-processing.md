@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e77284d36a7290f5d9070bb355a8affae9ba864f
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 186a6705649cee7095d3d2e4c4bb237498fdcea0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336867"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221277"
 ---
 # <a name="exception-processing"></a>Özel Durum İşleme
 Bir programı yürütüldüğünde, bir dizi anormal koşullar ve "özel durumlar" adlı hataları oluşabilir. Bu işlem, bellek, kaynak ayırma hatalarını ve dosyaları bulmak için hata bitmesi içerebilir.  
@@ -350,7 +350,7 @@ void AfxThrowMemoryException();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa bu işlevi çağırın. temel alınan sistem bellek ayırıcılar çağrıları (gibi **malloc** ve [GlobalAlloc](http://msdn.microsoft.com/library/windows/desktop/aa366574) Windows işlevi) başarısız. Bunun için çağrı gerekmez **yeni** çünkü **yeni** bellek ayırma başarısız olursa bir bellek özel durumu otomatik olarak atar.  
+ Varsa bu işlevi çağırın. temel alınan sistem bellek ayırıcılar çağrıları (gibi **malloc** ve [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc) Windows işlevi) başarısız. Bunun için çağrı gerekmez **yeni** çünkü **yeni** bellek ayırma başarısız olursa bir bellek özel durumu otomatik olarak atar.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üst bilgi** afx.h  
@@ -444,7 +444,7 @@ void AFXAPI AfxThrowOleException(HRESULT hr);
  Özel durumun nedenini belirten bir sonuç kodu için işleyin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olarak bir HRESULT alan sürümü, sonuç kodu karşılık gelen SCODE dönüştürür. HRESULT ve SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://msdn.microsoft.com/library/windows/desktop/ms690088) Windows SDK.  
+ Bağımsız değişken olarak bir HRESULT alan sürümü, sonuç kodu karşılık gelen SCODE dönüştürür. HRESULT ve SCODE hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes) Windows SDK.  
   
 ### <a name="requirements"></a>Gereksinimler  
   **Üst bilgi** afxdao.h  

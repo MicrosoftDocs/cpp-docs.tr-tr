@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48bc0f76ce5b8b3c1bafe3fcd0d6d793a217ae63
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1731c32506ec0e9c4c392ff9429e28e5b71b3c7c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849701"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221138"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
 Windows API işlevlerini, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.  
@@ -130,7 +130,7 @@ CSettingsStore(
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *bYönetim* TRUE olarak ayarlandığında `m_hKey` üye değişkeni ayarlanır **HKEY_LOCAL_MACHINE**. Ayarlarsanız *bYönetim* false olarak `m_hKey` ayarlanır **HKEY_CURRENT_USER**.  
   
- Güvenlik erişimi bağımlı *bReadOnly* parametresi. Varsa *bReadonly* yanlış, güvenlik erişimi ayarlanacak **KEY_ALL_ACCESS**. Varsa *bReadyOnly* TRUE ise bir birleşimi için güvenlik erişimi ayarlayacak **KEY_QUERY_VALUE, KEY_NOTIFY** ve **KEY_ENUMERATE_SUB_KEYS**. Kayıt defteri ile birlikte güvenlik erişim hakkında daha fazla bilgi için bkz. [kayıt defteri anahtarı güvenlik ve erişim hakları](http://msdn.microsoft.com/library/windows/desktop/ms724878).  
+ Güvenlik erişimi bağımlı *bReadOnly* parametresi. Varsa *bReadonly* yanlış, güvenlik erişimi ayarlanacak **KEY_ALL_ACCESS**. Varsa *bReadyOnly* TRUE ise bir birleşimi için güvenlik erişimi ayarlayacak **KEY_QUERY_VALUE, KEY_NOTIFY** ve **KEY_ENUMERATE_SUB_KEYS**. Kayıt defteri ile birlikte güvenlik erişim hakkında daha fazla bilgi için bkz. [kayıt defteri anahtarı güvenlik ve erişim hakları](/windows/desktop/SysInfo/registry-key-security-and-access-rights).  
   
  Yok Edicisi `CSettingsStore` sürümleri `m_hKey` otomatik olarak.  
   

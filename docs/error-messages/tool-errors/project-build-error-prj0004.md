@@ -1,7 +1,7 @@
 ---
 title: Proje derleme hatası PRJ0004 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10246f1d01441a84947a2fa426e962d49414782
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 76847c0df06ec61c29f84efb46eca87683c86cb4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316299"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216072"
 ---
 # <a name="project-build-error-prj0004"></a>Proje Derleme Hatası PRJ0004
-'Aracı' aracı için komut satırı oluşturulamadı.  
-  
- Bir veya daha fazla özellikleri çağrısı sözdizimi yapmak şekilde belirtildi ***aracı*** geçersiz:  
-  
--   Hatalı biçimlendirilmiş veya bilinmeyen makroları belirtmiş olabilirsiniz.  
-  
--   Bilgisayarınızı boş disk alanı yetersiz olabilir.  
-  
- Bakarak aracı ayarlarını gözden geçirmek isteyebileceğiniz [komut satırı özellik sayfası](../../ide/command-line-property-pages.md).
+
+> Komut satırı oluşturulamadı. '*aracı*' aracı.
+
+Bir veya daha fazla özellik çağırma söz dizimi olun şekilde belirtilmiş *aracı* geçersiz:
+
+- Hatalı biçimlendirilmiş veya bilinmeyen makrolar belirtmiş olabilirsiniz.
+
+- Bilgisayarınızı boş disk alanı yetersiz olabilir.
+
+Bakarak aracı için ayarları gözden geçirmek isteyebileceğiniz [komut satırı özellik sayfası](../../ide/command-line-property-pages.md).

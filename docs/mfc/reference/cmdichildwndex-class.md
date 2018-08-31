@@ -122,12 +122,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 091c201b3b0b67879178d32f495410a1bbe22a53
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 4779b832eaff7a322184adf1734f69d266c05331
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465646"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219115"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
 `CMDIChildWndEx` Sınıf işlevlerini bir Windows Çok Belgeli Arabirim (MDI) alt penceresi sağlar. İşlevselliğini genişletir [Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md). Bir MDI uygulaması belirli MFC sınıflarını kullandığında, çatı bu sınıfı gerektirir.  
@@ -192,7 +192,7 @@ class CMDIChildWndEx : public CMDIChildWnd
 |[CMDIChildWndEx::OnTaskbarTabThumbnailStretch](#ontaskbartabthumbnailstretch)|Windows 7 görev sekmesini MDI alt küçük resim önizlemesi için bir bit eşlem esnetme gerektiğinde framework tarafından çağırılır.|  
 |[CMDIChildWndEx::OnUpdateFrameTitle](#onupdateframetitle)|Çerçevenin başlık güncelleştirmek için framework tarafından çağırılır. (Geçersiz kılmaları `CMDIChildWnd::OnUpdateFrameTitle`.)|  
 |[CMDIChildWndEx::PaneFromPoint](#panefrompoint)|Belirtilen noktasını içeren bölme döndürür.|  
-|`CMDIChildWndEx::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CMDIChildWndEx::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMDIChildWndEx::RecalcLayout](#recalclayout)|Pencere düzenini yeniden hesaplar.|  
 |[CMDIChildWndEx::RegisterTaskbarTab](#registertaskbartab)|Windows 7 görev sekmeli MDI alt kaydeder.|  
 |[CMDIChildWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölme yerleştirme Manager'dan kaldırır.|  

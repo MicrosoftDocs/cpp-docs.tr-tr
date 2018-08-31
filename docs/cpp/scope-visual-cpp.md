@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c6194addc8ae950cf5cdcb8b7946ab4f5f6c042
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1f99f79e0e5f4f53356ed96528e310465b3ed2f0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39460716"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220096"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
@@ -41,7 +41,7 @@ Kapsam altı tür vardır:
 
 - **Yerel kapsama** bir işlev veya parametre adları da dahil olmak üzere, lambda içinde bildirilen bir ada sahip yerel kapsamı. Genellikle "yerel" da adlandırılır. Bunlar yalnızca bildirimin kendi noktalarından işlevi veya lambda gövdesi sonuna görülebilir. Yerel kapsama bir blok kapsamı, bu makalenin sonraki bölümlerinde ele alınan türüdür.
 
-- **Sınıf kapsamında** adlarında sınıfı üyeleri sınıf tanımının bildirim noktasından bakılmaksızın boyunca genişleten sınıf kapsamı. Sınıf üyesi erişilebilirliği olan tarafından denetlenen yapılacaktır **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Ortak veya korumalı üyeler, yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.\***  veya **-> \***).
+- **Sınıf kapsamında** adlarında sınıfı üyeleri sınıf tanımının bildirim noktasından bakılmaksızın boyunca genişleten sınıf kapsamı. Sınıf üyesi erişilebilirliği olan tarafından denetlenen yapılacaktır **genel**, **özel**, ve **korumalı** anahtar sözcükleri. Ortak veya korumalı üyeler, yalnızca üye seçim işleçleri kullanarak erişilebilir (**.** veya **->**) veya işaretçi-üye işleçleri (**.** <strong>\*</strong> veya **->** <strong>\*</strong>).
 
 - **Deyimi kapsamı** bildirilen adlar bir **için**, **varsa**, **sırada**, veya **geçiş** deyimi görünür sonuna kadar deyim bloğu.
 
@@ -114,7 +114,7 @@ class Account *Checking = new class Account( Account );
 > [!NOTE]
 > Bu örnekte gösterildiği gibi tanımlayıcı adları yeniden kötü programlama stil olarak kabul edilir.
 
- İşaretçiler hakkında daha fazla bilgi için bkz. [türetilen türler](http://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c). Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **Sil** ücretsiz depolama işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
+ İşaretçiler hakkında daha fazla bilgi için bkz. [türetilen türler](https://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c). Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **Sil** ücretsiz depolama işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
 
 ## <a name="hiding-names-with-global-scope"></a>Genel kapsamlı adları gizleme
 

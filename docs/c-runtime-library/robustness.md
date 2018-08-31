@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b76235187bad83eb638588cbbd179e93523fdf2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b4bc7ac76377ef59c9b1f5535f356b35d88a5e4e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409530"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220965"
 ---
 # <a name="robustness"></a>Sağlamlık
 
-Aşağıdaki C çalışma zamanı kitaplığı işlevleri programınızı'ların sağlamlığını artırmak için kullanın.
+Programın sağlamlığını artırmak için aşağıdaki C çalışma zamanı kitaplık işlevleri kullanın.
 
 ## <a name="run-time-robustness-functions"></a>Çalışma zamanı sağlamlık işlevleri
 
 |İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |--------------|---------|
-|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Varsa, hata işleme mekanizması aktarır denetim **yeni** işleci başarısız bellek ayıramadı.|
-|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Tanıtıcıları Win32 özel durumlar (C yapılandırılmış özel durum) olarak C++ özel durum belirtilmiş.|
-|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Çağrılacak kendi sonlandırma işlev yükler [sonlandırmak](../c-runtime-library/reference/terminate-crt.md).|
-|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Çağrılacak kendi sonlandırma işlev yükler [beklenmeyen](../c-runtime-library/reference/unexpected-crt.md).|
+|[_set_new_handler](../c-runtime-library/reference/set-new-handler.md)|Varsa, hata işleme mekanizması aktarır denetim **yeni** işleci başarısız bellek ayrılamadı.|
+|[_set_se_translator](../c-runtime-library/reference/set-se-translator.md)|Tanıtıcıları Win32 özel durumlar (C yapısal özel durumlarını) olarak C++ özel durumları yazdınız.|
+|[set_terminate](../c-runtime-library/reference/set-terminate-crt.md)|Kendi sonlandırma işlevi çağrılacak yükler [sonlandırmak](../c-runtime-library/reference/terminate-crt.md).|
+|[set_unexpected](../c-runtime-library/reference/set-unexpected-crt.md)|Kendi sonlandırma işlevi çağrılacak yükler [beklenmeyen](../c-runtime-library/reference/unexpected-crt.md).|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [SetUnhandledExceptionFilter](http://msdn.microsoft.com/library/windows/desktop/ms680634.aspx)<br/>
+ [SetUnhandledExceptionFilter](https://msdn.microsoft.com/library/windows/desktop/ms680634.aspx)<br/>

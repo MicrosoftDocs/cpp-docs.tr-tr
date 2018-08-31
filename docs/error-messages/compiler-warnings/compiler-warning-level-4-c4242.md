@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: befe02b363c17a670d3b33632ffa50ed8a7cb1f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 623183e5ee54c995d624f47461c724ee8f4befae
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294488"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217404"
 ---
 # <a name="compiler-warning-level-4-c4242"></a>Derleyici Uyarısı (düzey 4) C4242
-'tanımlayıcısı': 'type1' öğesinden 'type2', olası veri kaybını dönüştürme  
+'identifier': 'type1' öğesinden 'type2', olası veri kaybı dönüştürme  
   
- Farklı türleridir. Tür dönüştürme veri kaybına neden olabilir. Derleyici tür dönüştürme yapar.  
+ Farklı türleridir. Tür dönüşümü, veri kaybına neden olabilir. Derleyici, tür dönüştürme sağlar.  
   
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
+ Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
   
- C4242 hakkında ek bilgi için bkz: [Genel derleyici hataları](http://msdn.microsoft.com/library/windows/desktop/aa384160).  
+ C4242 hakkında ek bilgi için bkz. [Genel derleyici hataları](/windows/desktop/WinProg64/common-compiler-errors).  
   
- Aşağıdaki örnek C4242 oluşturur:  
+ Aşağıdaki örnek, C4242 oluşturur:  
   
 ```  
 // C4242.cpp  

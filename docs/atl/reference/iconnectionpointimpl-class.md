@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf1f012067c3a3b85dd5168cf93521e4b2024e00
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d578aeea847ff04bf29fab11ecf7db2a1776b04f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37884054"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217609"
 ---
 # <a name="iconnectionpointimpl-class"></a>Iconnectionpointımpl sınıfı
 Bu sınıf, bir bağlantı noktası uygular.  
@@ -96,7 +96,7 @@ STDMETHOD(Advise)(
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [Unadvise](#unadvise) bağlantı çağrıyı sonlandırmak için.  
   
- Bkz: [IConnectionPoint::Advise](http://msdn.microsoft.com/library/windows/desktop/ms678815) Windows SDK içinde.  
+ Bkz: [IConnectionPoint::Advise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-advise) Windows SDK içinde.  
   
 ##  <a name="enumconnections"></a>  IConnectionPointImpl::EnumConnections  
  Bağlantılar için bağlantı noktası üzerinden yinelemek için bir numaralandırıcı oluşturur.  
@@ -106,7 +106,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::EnumConnections](http://msdn.microsoft.com/library/windows/desktop/ms680755) Windows SDK içinde.  
+ Bkz: [IConnectionPoint::EnumConnections](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) Windows SDK içinde.  
   
 ##  <a name="getconnectioninterface"></a>  IConnectionPointImpl::GetConnectionInterface  
  Bağlantı noktası tarafından temsil edilen arabirimi Laboratuvardaki alır.  
@@ -116,7 +116,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::GetConnectionInterface](http://msdn.microsoft.com/library/windows/desktop/ms693468) Windows SDK içinde.  
+ Bkz: [IConnectionPoint::GetConnectionInterface](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) Windows SDK içinde.  
   
 ##  <a name="getconnectionpointcontainer"></a>  IConnectionPointImpl::GetConnectionPointContainer  
  Bağlanılabilirlik nesnesine bir arabirim işaretçisi alır.  
@@ -126,7 +126,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::GetConnectionPointContainer](http://msdn.microsoft.com/library/windows/desktop/ms679669) Windows SDK içinde.  
+ Bkz: [IConnectionPoint::GetConnectionPointContainer](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) Windows SDK içinde.  
   
 ##  <a name="m_vec"></a>  IConnectionPointImpl::m_vec  
  Bağlantı noktası nesnesi ve bir havuz arasındaki bağlantıları yönetir.  
@@ -146,8 +146,8 @@ STDMETHOD(Unadvise)(DWORD dwCookie);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IConnectionPoint::Unadvise](http://msdn.microsoft.com/library/windows/desktop/ms686608) Windows SDK içinde.  
+ Bkz: [IConnectionPoint::Unadvise](/windows/desktop/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IConnectionPoint](http://msdn.microsoft.com/library/windows/desktop/ms694318)   
+ [IConnectionPoint](/windows/desktop/api/ocidl/nn-ocidl-iconnectionpoint)   
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

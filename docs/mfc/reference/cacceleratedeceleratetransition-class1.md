@@ -1,5 +1,5 @@
 ---
-title: CAccelerateDecelerateTransition Class1 | Microsoft Docs
+title: CAccelerateDecelerateTransition sınıfı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4342ed03991317bd030d308dbac9945734dcbd9e
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: a9dad6f6e5353c1adef19d5040984520df7f6239
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36954714"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220140"
 ---
 # <a name="cacceleratedeceleratetransition-class"></a>CAccelerateDecelerateTransition sınıfı
-Bir accelerate uygulayan-geçiş hızını düşürün.  
+Uygular-hızlandırma yavaşlatma geçişi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,7 +39,7 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAccelerateDecelerateTransition::CAccelerateDecelerateTransition](#cacceleratedeceleratetransition)|Bir geçiş nesnesi oluşturur.|  
+|[CAccelerateDecelerateTransition::CAccelerateDecelerateTransition](#cacceleratedeceleratetransition)|Geçiş bir nesne oluşturur.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -51,13 +51,13 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CAccelerateDecelerateTransition::m_accelerationRatio](#m_accelerationratio)|Süre hızlandırmaya harcanan süre oranı.|  
-|[CAccelerateDecelerateTransition::m_decelerationRatio](#m_decelerationratio)|Süre yavaşlatıcı harcanan süre oranı.|  
+|[CAccelerateDecelerateTransition::m_accelerationRatio](#m_accelerationratio)|Hızlandırma süresi için harcadığı sürenin oranı.|  
+|[CAccelerateDecelerateTransition::m_decelerationRatio](#m_decelerationratio)|Süre yavaşlatma harcadığı sürenin oranı.|  
 |[CAccelerateDecelerateTransition::m_duration](#m_duration)|Geçiş süresi.|  
-|[CAccelerateDecelerateTransition::m_finalValue](#m_finalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
+|[CAccelerateDecelerateTransition::m_finalValue](#m_finalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir accelerate sırasında-geçiş hızını düşürün, animasyon değişkeni hızlandırır ve belirli bir değerde bitiş geçiş süresini üzerinden sonra yavaşlar. Ne kadar hızlı değişkeni hızlandırır ve bağımsız olarak, farklı hızlandırma ve yavaşlama oranları belirterek decelerates kontrol edebilirsiniz. İlk hız sıfır hızlandırma oranına değişkeni hızlandırmaya harcadıkları süre kesir olur; benzer şekilde ile yavaşlama oranı. İlk hız sıfır ise, sıfır ve geçiş sonunda ulaşmasını hız arasındaki süre bölümüdür. Hızlandırma oranı ve yavaşlama oranı 1.0 maksimum kadar sum. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir hızlandırın sırasında-hızlandırma yavaşlatma geçişi, animasyon değişkenini hızlandırır ve belirtilen bir değer bitiş geçiş süresi boyunca ardından yavaşlar. Ne kadar hızlı değişkeni hızlandırır ve bağımsız olarak, farklı hızlandırma ve yavaşlama oranları belirterek decelerates denetleyebilirsiniz. Başlangıç hızı sıfır olduğunda hızlandırma oranına değişkeni hızlandırma harcadığınız süreyi bölümüdür; benzer şekilde ile yavaşlama oranı. Başlangıç hızı sıfır olmayan, bunu sıfır ve geçiş sonuna ulaşmadan hız arasındaki sürenin ise. Hızlandırma oranına ve yavaşlama oranını en fazla 1.0 toplamak. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -70,7 +70,7 @@ class CAccelerateDecelerateTransition : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="cacceleratedeceleratetransition"></a>  CAccelerateDecelerateTransition::CAccelerateDecelerateTransition  
- Bir geçiş nesnesi oluşturur.  
+ Geçiş bir nesne oluşturur.  
   
 ```  
 CAccelerateDecelerateTransition(
@@ -81,17 +81,17 @@ CAccelerateDecelerateTransition(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *Süre*  
+ *Süresi*  
  Geçiş süresi.  
   
  *finalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
  *accelerationRatio*  
- Süre hızlandırmaya harcanan süre oranı.  
+ Hızlandırma süresi için harcadığı sürenin oranı.  
   
  *decelerationRatio*  
- Süre yavaşlatıcı harcanan süre oranı.  
+ Süre yavaşlatma harcadığı sürenin oranı.  
   
 ##  <a name="create"></a>  CAccelerateDecelerateTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -104,20 +104,20 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_accelerationratio"></a>  CAccelerateDecelerateTransition::m_accelerationRatio  
- Süre hızlandırmaya harcanan süre oranı.  
+ Hızlandırma süresi için harcadığı sürenin oranı.  
   
 ```  
 DOUBLE m_accelerationRatio;  
 ```  
   
 ##  <a name="m_decelerationratio"></a>  CAccelerateDecelerateTransition::m_decelerationRatio  
- Süre yavaşlatıcı harcanan süre oranı.  
+ Süre yavaşlatma harcadığı sürenin oranı.  
   
 ```  
 DOUBLE m_decelerationRatio;  
@@ -131,7 +131,7 @@ UI_ANIMATION_SECONDS m_duration;
 ```  
   
 ##  <a name="m_finalvalue"></a>  CAccelerateDecelerateTransition::m_finalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_finalValue;  

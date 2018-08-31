@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 910652355706bd5397a60957d9243aa09501471a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 99d3938e2baa3beb7edc1147716b5feeaa319117
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597235"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219834"
 ---
 # <a name="ptr"></a>ptr
 
@@ -36,7 +36,7 @@ Bir işaretçinin tam bir işaretçi olarak belirler.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ptr** C++ özniteliği ile aynı işlevlere sahip [ptr](http://msdn.microsoft.com/library/windows/desktop/aa367149) MIDL özniteliği.
+**Ptr** C++ özniteliği ile aynı işlevlere sahip [ptr](/windows/desktop/Midl/ptr) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

@@ -1,5 +1,5 @@
 ---
-title: (Rapor görünümü) denetimine sütunlar ekleme | Microsoft Docs
+title: (Rapor görünümü) denetime sütun ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,27 +18,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 975d65119ba0ae24b236d96cbe67e73b70be6bac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c3e81de52856d67760ffe58f29e4c39ac79213c4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341835"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221950"
 ---
 # <a name="adding-columns-to-the-control-report-view"></a>Denetime Sütun Ekleme (Rapor Görünümü)
 > [!NOTE]
->  Aşağıdaki yordam için geçerli bir [CListView](../mfc/reference/clistview-class.md) veya [CListCtrl](../mfc/reference/clistctrl-class.md) nesnesi.  
+>  Aşağıdaki yordam ya da geçerlidir. bir [CListView](../mfc/reference/clistview-class.md) veya [CListCtrl](../mfc/reference/clistctrl-class.md) nesne.  
   
- Liste denetimi rapor görünümünde olduğunda, her liste denetim öğesi çeşitli alt öğelerini düzenleme bir yöntem sağlama sütunlar görüntülenir. Bu kuruluş bire bir sütunda liste denetimi ve liste denetimi öğesinin ilişkili alt arasında ile uygulanır. Alt öğeler hakkında daha fazla bilgi için bkz: [denetime öğe eklemeyi](../mfc/adding-items-to-the-control.md). Rapor görünümünde liste denetimi örneği, Windows 95 ve Windows 98 Gezgini Ayrıntıları görünümünde tarafından sağlanır. İlk sütun, klasör, dosya simgelerinde ve etiketleri listeler. Dosya boyutu, dosya türü, son değiştirilme tarihi ve benzeri diğer sütunları listeleyin.  
+ Liste denetimi rapor görünümü'nde, her liste denetim öğesi çeşitli alt öğelerini düzenleme, bir yöntem sağlayarak sütunlar görüntülenir. Bu kuruluşun bir sütunda bir liste denetimi ve liste denetimi öğesinin ilişkili alt arasında bire bir iletişimin ile birlikte uygulanır. Alt öğeler hakkında daha fazla bilgi için bkz. [denetime öğe ekleme](../mfc/adding-items-to-the-control.md). Liste denetimi rapor görünümü'nde bir örneği, Windows 95 ve Windows 98 Gezgini Ayrıntıları görünümünde tarafından sağlanır. İlk sütun, klasör, dosya simgelerin ve etiketlerin listeler. Dosya boyutu, dosya türü, son değiştirilme tarihi ve benzeri diğer sütunları listeleyin.  
   
- Herhangi bir zamanda bir liste denetimine sütunlar eklenebilir olsa bile, yalnızca denetimi olduğunda sütunları görünür `LVS_REPORT` açık stili bit.  
+ Herhangi bir zamanda bu sütun bir liste denetimine eklenebilir olsa da, denetim varsa sütunları görünür `LVS_REPORT` açık stil bit.  
   
- Her sütunun bir ilişkili üstbilgi öğesi vardır (bkz [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) sütun etiketleri ve sütunu yeniden boyutlandırmak kullanıcıların sağlayan nesne.  
+ Her sütun bir ilişkili üstbilgi öğesi var (bkz [CHeaderCtrl](../mfc/reference/cheaderctrl-class.md)) sütun etiketleri ve sütunu yeniden boyutlandırmak kullanıcıların sağlayan nesne.  
   
- Liste denetimi rapor görünümü destekliyorsa, bir liste denetim öğesi bir sütun için olası her alt eklemeniz gerekir. Hazırlama tarafından bir sütun ekleyin bir [LV_COLUMN](http://msdn.microsoft.com/library/windows/desktop/bb774743) yapısı ve ardından bir çağrı yaparak [InsertColumn](../mfc/reference/clistctrl-class.md#insertcolumn). (Bazen üstbilgi öğeleri adlandırılır) gerekli sütunların eklendikten sonra bunları sıralayabilirsiniz üye işlevleri ve katıştırılmış üstbilgi denetimine ait stilleri kullanarak. Daha fazla bilgi için bkz: [üstbilgi denetimindeki öğeleri sıralama](../mfc/ordering-items-in-the-header-control.md).  
+ Rapor görünümü, liste denetimini destekliyorsa, her olası alt için bir sütun listesi denetim öğesini eklemeniz gerekir. Hazırlayarak sütun ekleme bir [LV_COLUMN](/windows/desktop/api/commctrl/ns-commctrl-taglvcolumna) yapısı ve ardından bir çağrı yapmadan [InsertColumn](../mfc/reference/clistctrl-class.md#insertcolumn). (Bazen üstbilgi öğeleri adlandırılır) gerekli sütunları ekledikten sonra bunları sıralayabilirsiniz üye işlevleri ve katıştırılmış üstbilgi denetimine ait stilleri kullanarak. Daha fazla bilgi için [üstbilgi denetimindeki öğeleri sıralama](../mfc/ordering-items-in-the-header-control.md).  
   
 > [!NOTE]
->  Liste denetimi ile oluşturulursa **LVS_NOCOLUMNHEADER** stili, sütun eklemek için her türlü girişim yok sayılacak.  
+>  Liste denetimi ile oluşturulursa **LVS_NOCOLUMNHEADER** stili, sütunları eklemek üzere her türlü girişim yok sayılacak.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CListCtrl kullanma](../mfc/using-clistctrl.md)   

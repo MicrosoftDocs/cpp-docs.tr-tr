@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb41f9630e22d9067743b106aed49ea9c51ee4ae
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6243bd4167ec640553a6cb55d7d6f67319315e19
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466005"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217352"
 ---
 # <a name="parallel-diagnostic-tools-concurrency-runtime"></a>Paralel Tanılama Araçları (Eşzamanlılık Çalışma Zamanı)
 Visual Studio hata ayıklama ve profil oluşturma çok iş parçacıklı uygulamalar için kapsamlı destek sağlar.  
@@ -31,7 +31,7 @@ Visual Studio hata ayıklama ve profil oluşturma çok iş parçacıklı uygulam
  Profil oluşturma araçları, çok iş parçacıklı bir uygulamanın kendisiyle ve diğer programları ile nasıl etkileşim kurduğu hakkında grafik, tablo ve sayısal bilgilerini gösteren üç veri görünümleri sağlar. Görünümleri sorunlu alanları hızlı bir şekilde tanımlamanıza olanak sağlar ve çağrı yığınları, için grafik görüntüler noktalarından gitmek için siteleri ve kaynak kodu çağırın. Daha fazla bilgi için [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer).  
   
 ## <a name="event-tracing"></a>Olay izleme  
- Eşzamanlılık Çalışma zamanı kullanan [olay izleme için Windows](http://msdn.microsoft.com/library/windows/desktop/bb968803) izleme araçları, profil oluşturucular gibi çeşitli olaylar meydana geldiğinde bildirmek için (ETW). Bir paralel algoritma başladığı ve bittiği zaman bir zamanlayıcı etkinleştirilmiş veya devre dışı bir bağlam başlar, sona erer, engeller, engellemesini kaldırır veya oluşturur ve bu olayları dahil.  
+ Eşzamanlılık Çalışma zamanı kullanan [olay izleme için Windows](/windows/desktop/ETW/event-tracing-portal) izleme araçları, profil oluşturucular gibi çeşitli olaylar meydana geldiğinde bildirmek için (ETW). Bir paralel algoritma başladığı ve bittiği zaman bir zamanlayıcı etkinleştirilmiş veya devre dışı bir bağlam başlar, sona erer, engeller, engellemesini kaldırır veya oluşturur ve bu olayları dahil.  
   
  Araçlar [eşzamanlılık görselleştiricisi](/visualstudio/profiling/concurrency-visualizer) bu işlevselliğini kullanır; bu nedenle, genellikle bu olayları ile doğrudan çalışmak zorunda değilsiniz. Bu olayları, özel bir profil oluşturucu geliştirme veya olay izleme araçları gibi kullandığınızda, ancak kullanışlıdır [Xperf](http://go.microsoft.com/fwlink/p/?linkid=160628).  
   

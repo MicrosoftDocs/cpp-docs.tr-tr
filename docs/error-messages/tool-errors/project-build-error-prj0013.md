@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d055043d5c7e7b030557ab03ceb7181c664ce01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: aeb0ac9011697c440667a538bd1805780810fb4a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318782"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221565"
 ---
 # <a name="project-build-error-prj0013"></a>Proje Derleme Hatası PRJ0013
-Sistem kaynak önemli ölçüde düşük olabilir. Bir yapı başlatmak için gereken bir kanal oluşturulamıyor.  
+Sistem kaynakları kritik ölçüde zayıf düşük olabilir. Bir derlemeyi başlatmak için gerekli bir kanal oluşturulamıyor.  
   
- Bu hata, sistem kaynaklarının yetersiz olduğunu gösterir. Bu hatayı gidermek için diğer işlemleri/uygulamalar tarafından sistem kaynak kullanımını azaltır.  
+ Bu hata, sistem kaynakları yetersiz olduğunu gösterir. Bu hatayı gidermek için diğer işlemler/uygulamalar tarafından sistem kaynak kullanımı azaltın.  
   
- Güvenlik düzeyini kanallar oluşturmak yetersiz bu hata ayrıca oluşabilir (bkz [CreatePipe](http://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)).
+ Güvenlik düzeyinizi kanallar oluşturmak yetersiz kalırsa bu hatayı da meydana gelebilir (bkz [CreatePipe](https://msdn.microsoft.com/library/windows/desktop/aa365152.aspx)).

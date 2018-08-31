@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (Düzey 3) C4306 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,19 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99a490fc90ee9a977442548406ea2aec4baac3fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab5372213819375a6c1fec3cfc43970415b6486a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220000"
 ---
 # <a name="compiler-warning-level-3-c4306"></a>Derleyici Uyarısı (Düzey 3) C4306
-**'**   
- ***tanımlayıcı* ': dönüştürme '**   
- ***type1* 'to'**   
- ***type2* ' büyük boyutu**  
-  
- Tanımlayıcı türü olan daha büyük bir işaretçi cast. Yeni türünün doldurulmamış yüksek bit sıfır doldurulmuş olacaktır.  
-  
- Bu uyarı, istenmeyen bir dönüştürme gösteriyor olabilir. Sonuçta elde edilen işaretçi geçerli olmayabilir.
+
+> '*tanımlayıcı*': dönüştürme '*type1*'to'*type2*' daha büyük boyutlu
+
+Tanımlayıcı türü olan daha büyük bir işaretçiye. Yeni türün dolgusuz yüksek bit sıfır dolguludur olacaktır.
+
+Bu uyarı, istenmeyen bir dönüştürme gösterebilir. Elde edilen işaretçi geçerli olmayabilir.

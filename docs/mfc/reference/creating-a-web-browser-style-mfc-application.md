@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3b0e148104ff5620eddf7ac0d26693d96607d9
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 71312a1dfa70ca3fd83242f6f706654c08a4973c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39025662"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217673"
 ---
 # <a name="creating-a-web-browser-style-mfc-application"></a>Web Tarayıcısı Stilinde MFC Uygulaması Oluşturma
 Bir Web tarayıcısı stilinde uygulaması bilgilere (örneğin, HTML veya etkin belgeler) Internet veya intranet, yanı klasör yerel dosya sistemi ve ağ üzerinde erişebilirsiniz. Uygulamanın görünümü sınıftan türetme tarafından [CHtmlView](../../mfc/reference/chtmlview-class.md), etkili bir şekilde WebBrowser denetimi ile görünüm sağlayarak uygulama bir Web tarayıcısı olun.  
@@ -77,10 +77,10 @@ void CWebView::OnInitialUpdate()
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek MFCIE](http://msdn.microsoft.com/7391aa0c-fca8-4994-a6c9-6c5c7470fba0)   
+ [MFC örnek MFCIE](https://msdn.microsoft.com/7391aa0c-fca8-4994-a6c9-6c5c7470fba0)   
  [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)   
  [Proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)   
  [Özellik sayfaları](../../ide/property-pages-visual-cpp.md)   
  [Proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
 

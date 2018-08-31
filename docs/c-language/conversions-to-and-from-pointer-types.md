@@ -1,5 +1,5 @@
 ---
-title: İçin işaretçi türlerine ve türlerinden dönüşümler | Microsoft Docs
+title: İşaretçi türlerine ve türlerinden dönüşümler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81cfe434397d45ef42b2f8ee3ebceae61098e36f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c8ddcaa55e3b88e715428ea8fa44c897ab5f8b4f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384302"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216104"
 ---
 # <a name="conversions-to-and-from-pointer-types"></a>İşaretçi Türlerine ve Türlerinden Dönüşümler
 Bir değer türünün işaretçisi, farklı türden bir işaretçiye dönüştürülebilir. Ancak sonuç, depolanan farklı türlerin hizalama gereksinimleri ve boyutları nedeniyle tanımlanmamış olabilir. Bir nesnenin işaretçisi, türü daha az katı veya eşit derecede katı olan depolama hizalaması gerektiren bir nesnenin işaretçisine dönüştürülebilir ve değiştirilmeden geri alınabilir.  
@@ -41,9 +41,9 @@ Bir değer türünün işaretçisi, farklı türden bir işaretçiye dönüştü
   
 -   İntegral türü işaretçi türüyle aynı boyuttaysa, dönüştürme işlemi integral değerinin bir işaretçi (işaretsiz tamsayı) olarak değerlendirilmesine neden olur.  
   
--   İşaretçi türünün boyutundan tam sayı yazı tipi boyutu farklıysa, tam sayı türü ilk işaretçi boyutunu tablolarda verilen dönüştürme yollar kullanılarak dönüştürülür [dönüştürme imzalı tam sayı türlerinden](../c-language/conversions-from-signed-integral-types.md) ve [ İmzasız tam sayı türleri dönüştürme](../c-language/conversions-from-unsigned-integral-types.md). Daha sonra bir işaretçi değeri olarak kabul edilir.  
+-   İntegral türünün boyutu işaretçi türünün boyutundan farklıysa, integral türü önce işaretçinin boyutuna tablolarındaki dönüştürme yolları kullanılarak dönüştürülür [işaretli Integral türlerinden dönüştürme](../c-language/conversions-from-signed-integral-types.md) ve [ İşaretsiz Integral türlerinden dönüştürme](../c-language/conversions-from-unsigned-integral-types.md). Daha sonra bir işaretçi değeri olarak kabul edilir.  
   
- Bir tam sayı sabit ifadeyle değer 0 veya böyle bir ifade türü için cast **void \***  göre cast türü atama veya herhangi bir türde bir işaretçi karşılaştırma dönüştürülebilir. Bu, aynı türden başka bir null işaretçisine eşit olan bir null işaretçisi oluşturur, ancak bu null işaretçisi bir işlevin veya nesnenin herhangi bir işaretçisine eşit değildir. 0 sabiti dışındaki tamsayılar işaretçi türüne dönüştürülebilir, ancak sonuç taşınabilir değildir.  
+ Değer 0 veya türüne yapılan böyle bir ifade integral sabit ifadesi **void** <strong>\*</strong> bir tür ataması, veya bir türden işaretçiyle karşılaştırma dönüştürülebilir. Bu, aynı türden başka bir null işaretçisine eşit olan bir null işaretçisi oluşturur, ancak bu null işaretçisi bir işlevin veya nesnenin herhangi bir işaretçisine eşit değildir. 0 sabiti dışındaki tamsayılar işaretçi türüne dönüştürülebilir, ancak sonuç taşınabilir değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Atama Dönüştürmeleri](../c-language/assignment-conversions.md)

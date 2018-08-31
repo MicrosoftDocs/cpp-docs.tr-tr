@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebc7abdcdad1c44d0758100abdea96101fb68e52
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 019e63009706fd5d0ab22044642449c5bce3c3a6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464995"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222387"
 ---
 # <a name="porting-guide-spy"></a>Taşıma Kılavuzu: Spy++
 Bu taşıma örnek olay incelemesi, hangi normal bir taşıma projesinin benzer bir fikir vermek için tasarlanmıştır, karşılaşabileceğiniz sorunları türlerini ve bazı genel ipuçları ve püf noktaları bağlantı noktası oluşturma sorunları ele almak için. Bu proje taşıma deneyimi kod ayrıntılarına bağlı çok bağlı olduğundan taşıma için eksiksiz bir kılavuz olacak şekilde tasarlanmış değil.  
@@ -527,7 +527,7 @@ Artık bize gerçekten eski çok baytlı karakter kümesi (MBCS) kodu için Unic
   
 UTF-16 Unicode taşıma, biz biz yine de MBCS'den veya derleme seçeneğini istediğinizi karar vermeniz gerekir.  MBCS Desteği seçeneğine sahip olmasını istiyoruz, TCHAR makrosu ya da giderir karakter türü olarak kullanmamız gereken **char** veya **wchar_t**_MBCS veya _UNICODE sırasında tanımlı olup olmadığı bağlı olarak derleme. TCHAR ve TCHAR yerine çeşitli API sürümlerini geçiş **wchar_t** ve onun ilişkili API'ler, geri kodunuzun bir MBCS sürümünü _MBCS makrosu _UNICODE yerine tanımlayarak edinebileceğiniz anlamına gelir. TCHAR ek olarak TCHAR sürümlerini yaygın olarak kullanılan tür tanımları, makrolar ve işlevler gibi çeşitli var. Örneğin, LPCTSTR LPCSTR vb. yerine. Proje Özellikleri iletişim kutusunda, altında **yapılandırma özellikleri**, **genel** bölümünde **karakter kümesi** özelliğinden **MBCS kullanın Karakter kümesi** için **Unicode karakter kümesini Kullandırır**. Bu ayar, hangi makrosu, derleme sırasında önceden etkiler. Bir UNICODE makrosu hem _UNICODE makrosu yoktur. Proje özelliği hem de sürekli olarak etkiler. _UNICODE MFC gibi Visual C++ üstbilgi kullanabilirsiniz, ancak bir tanımlandığında UNICODE Windows üstbilgileri kullanmak, diğeri her zaman tanımlanır.  
   
-İyi bir [Kılavuzu](http://msdn.microsoft.com/library/cc194801.aspx) UTF-16 Unicode MBCS taşıma için TCHAR kullanarak mevcut. Biz bu yolu seçin. İlk olarak, biz değiştirme **karakter kümesi** özelliğini **kullanım Unicode karakter kümesi** ve projeyi yeniden derleyin.  
+İyi bir [Kılavuzu](https://msdn.microsoft.com/library/cc194801.aspx) UTF-16 Unicode MBCS taşıma için TCHAR kullanarak mevcut. Biz bu yolu seçin. İlk olarak, biz değiştirme **karakter kümesi** özelliğini **kullanım Unicode karakter kümesi** ve projeyi yeniden derleyin.  
   
 Bazı yerlerde kodu zaten TCHAR, görünüşe göre sonuçta Unicode destekleme kapatıldığını içinde kullanıyordu. Bazı değildi. Biz Aranan örnekleri olan char bir **typedef** için **char**ve bunların çoğu TCHAR ile değiştirilir. Ayrıca, incelemiştik `sizeof(CHAR)`. TCHAR için CHAR değiştirdik olduğunda, genellikle değiştirmek vardı `sizeof(TCHAR)` olduğundan, bu genellikle bir dizedeki karakter sayısını belirlemek için kullanıldı. Bu durumda dikkat biraz ödeme değer, bu nedenle burada yanlış türde kullanarak bir derleyici hatası üretmez.  
   

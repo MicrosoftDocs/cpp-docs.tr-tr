@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 330701c4fcc75d40e782d25baa55044b88852f50
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 3e31e7e9a7a15c70c74193d77181122c022a938a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337803"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217317"
 ---
 # <a name="ole-initialization"></a>OLE Başlatma
 Uygulamanın OLE sistem hizmetlerini kullanmadan önce OLE sistem DLL'lerini Başlat ve DLL'leri doğru sürüm olduğundan emin olun. `AfxOleInit` İşlevi OLE sistem DLL'lerini başlatır.  
@@ -63,15 +63,15 @@ BOOL AFXAPI AfxOleInit();
 ### <a name="remarks"></a>Açıklamalar  
  Bir MFC uygulaması OLE desteği başlatmak için bu işlevi çağırın. Bu işlev çağrıldığında aşağıdaki eylemler gerçekleşir:  
   
--   Çağıran uygulamanın geçerli Grup COM kitaplık başlatır. Daha fazla bilgi için [OleInitialize](http://msdn.microsoft.com/library/windows/desktop/ms690134).  
+-   Çağıran uygulamanın geçerli Grup COM kitaplık başlatır. Daha fazla bilgi için [OleInitialize](/windows/desktop/api/ole2/nf-ole2-oleinitialize).  
   
--   Bir ileti filtresi oluşturur, uygulama [ı](http://msdn.microsoft.com/library/windows/desktop/ms693740) arabirimi. Bu ileti filtresi çağrısı ile erişilebilir [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter).  
+-   Bir ileti filtresi oluşturur, uygulama [ı](/windows/desktop/api/objidl/nn-objidl-imessagefilter) arabirimi. Bu ileti filtresi çağrısı ile erişilebilir [AfxOleGetMessageFilter](application-control.md#afxolegetmessagefilter).  
   
 > [!NOTE]
 >  Varsa **Afxoleınit** çağrılır bir MFC DLL dosyasından çağrı başarısız olur. Bir DLL dosyasından çağrılırsa, OLE sistem daha önce çağıran uygulama tarafından başlatıldı, işlev varsayar hata oluşur.  
   
 > [!NOTE]
->  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](http://msdn.microsoft.com/library/windows/desktop/ms695279) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
+>  MFC uygulamaları tek iş parçacıklı grup (STA) başlatılması gerekir. Eğer [CoInitializeEx](/windows/desktop/api/combaseapi/nf-combaseapi-coinitializeex) içinde `InitInstance` geçersiz kılmak, COINIT_APARTMENTTHREADED (COINIT_MULTITHREADED yerine) belirtin. Daha fazla bilgi için bkz: MFC uygulaması olarak bir çok iş parçacıklı grup (828643) uygulamayı başlattığınızda yanıt vermeyi durduran [ http://support.microsoft.com/default.aspxscid=kb; en-us; 828643](http://support.microsoft.com/default.aspxscid=kb;en-us;828643).  
 
 ### <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxdisp.h

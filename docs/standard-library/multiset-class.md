@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07e38d11ef25ebc2f1da888594ab84fe2261c53a
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: d32b6e61ab0dbac6010c6ed233f2cd822e73c2d5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028339"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220981"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -116,13 +116,16 @@ class multiset
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* çoklu kümede depolanacak öğe veri türü.
+*Key*<br/>
+ Çoklu kümede depolanacak öğe veri türü.
 
-*Karşılaştırma* iki öğenin değerlerini çoklu kümedeki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul **daha az**\<Key > varsayılan değerdir.
+*Compare*<br/>
+ İki öğenin değerlerini çoklu kümedeki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul **daha az**\<Key > varsayılan değerdir.
 
 C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator* çoklu küme ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer: **ayırıcı ***\<Key >.*
+*Ayırıcı*<br/>
+ Çoklu küme için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer `allocator<Key>` şeklindedir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -478,7 +481,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* multiset eşleştirilecek öğe anahtarı.
+*Anahtarı*<br/>
+ Multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -873,7 +877,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* çoklu küme Aranmakta bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -957,13 +962,17 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* kaldırılacak öğenin konumu.
+*Burada*<br/>
+ Kaldırılacak öğenin konumu.
 
-*İlk* kaldırılacak ilk öğenin konumu.
+*ilk*<br/>
+ Kaldırılacak ilk öğenin konumu.
 
-*Son* kaldırılacak son öğeden hemen ötesinde konumu.
+*Son*<br/>
+ Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Anahtar* kaldırılacak öğelerin anahtar değeri.
+*Key*<br/>
+ Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -988,7 +997,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* çoklu küme Aranmakta bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+*Anahtarı*<br/>
+ Bir çoklu küme Aranmakta öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1430,7 +1440,8 @@ iterator lower_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* çoklu küme Aranmakta bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1575,7 +1586,7 @@ multiset (
 |-|-|
 |*Al*|Varsayılan olarak bu multiset nesne için kullanılacak depolama ayırıcı sınıf `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü `const Compare` için varsayılanlarını Kü içinde öğeleri sıralamak için kullanılan `Compare`.|
-|*Sağ*|Oluşturulan multiset kopyası olacak olduğu multiset.|
+|*sağ*|Oluşturulan multiset kopyası olacak olduğu multiset.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Öğelerin kopyalanacağı initializer_list.|
@@ -2036,7 +2047,8 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken multiset.
+*sağ*<br/>
+ Hedef multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2104,7 +2116,8 @@ iterator upper_bound(const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* çoklu küme Aranmakta bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2307,7 +2320,7 @@ The multiset has elements: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayarlayın > üyeleri](http://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
+[\<ayarlayın > üyeleri](https://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

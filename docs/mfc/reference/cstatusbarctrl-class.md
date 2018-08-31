@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45b0f46724dd552639c215093f74d8eb14d8afdd
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 17ca93348ab5535908ea8b2d035669f7e61cef55
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465467"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221362"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 Windows ortak durum çubuğu denetimi işlevlerini sağlar.  
@@ -133,10 +133,10 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.  
+ Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.  
   
  *Rect*  
- Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
+ Durum çubuğu denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
   
  *pParentWnd*  
  Durum çubuğu denetiminin üst penceresine, genellikle belirtir bir `CDialog`. NULL olmamalıdır.  
@@ -171,13 +171,13 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
   
  *dwStyle*  
- Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775498) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.  
+ Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.  
   
  *Rect*  
- Bir başvuru bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
+ Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  
   
  *pParentWnd*  
  Denetimin ana penceresine bir işaretçi.  
@@ -207,7 +207,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
   
 ### <a name="parameters"></a>Parametreler  
  *lpDrawItemStruct*  
- Uzun bir işaretçi bir [DRAWITEMSTRUCT](http://msdn.microsoft.com/library/windows/desktop/bb775802) gerekli çizim türü hakkında bilgi içeren yapısı.  
+ Uzun bir işaretçi bir [DRAWITEMSTRUCT](/windows/desktop/api/winuser/ns-winuser-tagdrawitemstruct) gerekli çizim türü hakkında bilgi içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `itemAction` Üyesi `DRAWITEMSTRUCT` gerçekleştirilecek çizim eylemi yapısını tanımlar.  
@@ -267,7 +267,7 @@ HICON GetIcon(int iPart) const;
  Simge tanıtıcı, başarılı; yöntemi Aksi takdirde NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [SB_GETICON](http://msdn.microsoft.com/library/windows/desktop/bb760744) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [SB_GETICON](/windows/desktop/Controls/sb-geticon) Windows SDK'da açıklanan ileti.  
   
  Durum çubuğu denetimi olarak da bilinen bazı bölümleri metin çıkış bölmeleri oluşan bir satır içerir. Durum çubuğu hakkında daha fazla bilgi için bkz: [MFC'de durum çubuğu uygulaması](../../mfc/status-bar-implementation-in-mfc.md) ve [CStatusBarCtrl nesnesinin modunu ayarlama](../../mfc/setting-the-mode-of-a-cstatusbarctrl-object.md).  
   
@@ -320,7 +320,7 @@ BOOL GetRect(
  Alınacak olan sınırlayıcı bir dikdörtgen olduğu bölümü sıfır tabanlı dizini.  
   
  *lpRect*  
- Adresi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) dikdörtgen alan yapısı.  
+ Adresi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) dikdörtgen alan yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi halde sıfır.  
@@ -411,7 +411,7 @@ CString GetTipText(int nPane) const;
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) ipucunda kullanılacak metni içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [SB_GETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760751)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_GETTIPTEXT](/windows/desktop/Controls/sb-gettiptext)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#7](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_9.cpp)]  
@@ -427,7 +427,7 @@ BOOL IsSimple() const;
  Durum pencere denetim basit modda ise sıfır olmayan; Aksi halde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [SB_ISSIMPLE](http://msdn.microsoft.com/library/windows/desktop/bb760753)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_ISSIMPLE](/windows/desktop/Controls/sb-issimple)Windows SDK içinde açıklandığı gibi.  
   
 ##  <a name="setbkcolor"></a>  CStatusBarCtrl::SetBkColor  
  Durum çubuğunda arka plan rengini ayarlar.  
@@ -441,10 +441,10 @@ COLORREF SetBkColor(COLORREF cr);
  Yeni arka plan rengini belirtir COLORREF değeri. Varsayılan arka plan rengini kullanmak için durum çubuğunu neden CLR_DEFAULT değeri belirtin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) önceki varsayılan arka plan rengini gösteren bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) önceki varsayılan arka plan rengini gösteren bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETBKCOLOR](http://msdn.microsoft.com/library/windows/desktop/bb760754)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETBKCOLOR](/windows/desktop/Controls/sb-setbkcolor)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#8](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_10.cpp)]  
@@ -469,7 +469,7 @@ BOOL SetIcon(
  Başarılı olursa sıfır dışı; Aksi halde sıfır.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETICON](http://msdn.microsoft.com/library/windows/desktop/bb760755)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETICON](/windows/desktop/Controls/sb-seticon)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
   Örneğin bakın [CStatusBarCtrl::SetBkColor](#setbkcolor).  
@@ -576,7 +576,7 @@ void SetTipText(
  Araç İpucu metni içeren bir dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETTIPTEXT](http://msdn.microsoft.com/library/windows/desktop/bb760759)Windows SDK içinde açıklandığı gibi.  
+ Bu üye işlevi Win32 ileti davranışı uygulayan [SB_SETTIPTEXT](/windows/desktop/Controls/sb-settiptext)Windows SDK içinde açıklandığı gibi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CStatusBarCtrl#12](../../mfc/reference/codesnippet/cpp/cstatusbarctrl-class_14.cpp)]  

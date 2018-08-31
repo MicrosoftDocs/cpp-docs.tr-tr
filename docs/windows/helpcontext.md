@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d782246f44148805f9acc8d912b0fbf554227f7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5644f99e15685f8f1784cc40886709b05a9a06bd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595734"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221290"
 ---
 # <a name="helpcontext"></a>helpcontext
 
@@ -43,7 +43,7 @@ Yardım içeriği kimliği. Bkz: [HTML Help: Context-Sensitive Help for Your Pro
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Helpcontext** C++ özniteliği ile aynı işlevlere sahip [helpcontext](http://msdn.microsoft.com/library/windows/desktop/aa366851) MIDL özniteliği.
+**Helpcontext** C++ özniteliği ile aynı işlevlere sahip [helpcontext](/windows/desktop/Midl/helpcontext) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

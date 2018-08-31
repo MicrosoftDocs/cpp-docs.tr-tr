@@ -18,36 +18,36 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 4ff1801c9bb2de06ae2717e8f69bcd39fdf3bc98
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a26394a906f40d6dc194118bb312cfe1a0ce834e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33136619"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219890"
 ---
 # <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama
-Bu belgede C tarzı yapılar tarafından yönetilen işlevlerden P/Invoke kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz rağmen P/Invoke P/Invoke çok az derleme zamanı hata raporlama, sağladığından tür kullanımı uyumlu değil ve yönetilmeyen API DLL olarak paketlenir ve kaynak kodu değilse uygulaması can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:  
+Bu belgede, C stili yapıları tarafından yönetilen işlevlerden P/Invoke kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz ancak P/Invoke küçük derleme zamanı hata raporlama, P/Invoke sağladığı için tür açısından güvenli değildir ve yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu değilse, uygulama can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:  
   
 -   [C++ Birlikte Çalışabilirliği Kullanma (Örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
   
 -   [Nasıl yapılır: PInvoke Kullanarak Dizeleri Sıralama](../dotnet/how-to-marshal-strings-using-pinvoke.md)
   
- Varsayılan olarak, yerel ve yönetilen yapılar farklı bellekte, bunu başarıyla yönetilen ve yönetilmeyen sınırından yapıları geçirme veri tutarlılığını korumak için ek adımlar gerektirir düzenlenmiştir.  
+ Varsayılan olarak, yerel ve yönetilen yapıları farklı bellekte, bu nedenle başarıyla veri bütünlüğünü korumak için ek adımlar gerektirir yönetilen veya yönetilmeyen sınırında yapıları geçirme düzenlenmiştir.  
   
- Bu belge yerel yapılar ve elde edilen yapıların yönetilmeyen işlevlerle nasıl geçirilebilir yönetilen eşdeğerlerini tanımlamak için gereken adımları açıklar. Bu belge, basit varsayar yapıları — dizeler veya işaretçiler içermeyen olanlar — kullanılır. Blittable olmayan birlikte çalışabilirlik hakkında daha fazla bilgi için bkz: [C++ Çalışabilirliği kullanarak (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md). P/Invoke kopyalanamaz türler dönüş değeri olarak sahip olamaz. Blittable türleri aynı gösterimi yönetilen ve yönetilmeyen kodunda vardır. Daha fazla bilgi için bkz: [blok halinde kopyalanabilir ve olmayan Blittable türleri](http://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3).  
+ Bu belgede, yerel yapılar ve elde edilen yapıların yönetilmeyen işlevlerle nasıl geçirilebilir'sının yönetilen eşdeğerlerini tanımlamak için gereken adımlar açıklanmaktadır. Bu belge, basit varsayar yapıları — bu dizeler veya işaretçiler içermeyen — kullanılır. Blittable olmayan birlikte çalışabilirlik hakkında daha fazla bilgi için bkz. [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md). P/Invoke dönüş değeri olarak kopyalanamaz türler sahip olamaz. Blok halinde kopyalanabilir türler, yönetilen ve yönetilmeyen kod içinde aynı gösterimi sahip. Daha fazla bilgi için [blok halinde kopyalanabilir ve örnekteki](https://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3).  
   
- Basit hazırlama, yönetilen ve yönetilmeyen sınır arasında blittable yapıları ilk gerektirir neden yönetilen sürümlerinin her yerel yapısının tanımlanması. Bu yapıları herhangi bir yasal ad olabilir; Veri düzenleri dışında iki yapıları yerel ve yönetilen sürümü arasında ilişkisi yoktur. Bu nedenle, yönetilen sürümün aynı boyut ve yerel sürümü aynı sırada olan alanları içeren önemlidir. (Uyumsuzlukları çalışma zamanına kadar görünür olmaz şekilde yapısı yönetilen ve yerel sürümlerini eşdeğer sağlamaya yönelik bir mekanizma yoktur. Bu iki yapıları aynı veri düzeni olmasını sağlamak için programcı sorumluluğundadır.)  
+ Basit hazırlama, yönetilen veya yönetilmeyen sınırı arasında blittable yapıları ilk gerektirir neden yönetilen sürümleri her bir yerel yapısının tanımlanması. Bu yapılar, herhangi bir yasal adı olabilir; Yerel ve yönetilen sürümü kendi veri düzeni dışında iki yapı arasında bir ilişki yoktur. Bu nedenle, yönetilen sürümün alanları aynı boyut ve yerel sürümle aynı sırayla içermesi gereklidir. (Yönetilen ve yerel sürüm yapısı için uyumsuzluk çalışma zamanına kadar görünür olmaz eşdeğer emin olunması için bir mekanizma yoktur. Bu iki yapıları aynı veri yerleşimi olmasını sağlamak için programcının sorumluluğundadır.)  
   
- Yönetilen yapıların üyeleri bazen performans amacıyla yeniden düzenlendiği kullanmak gerekli olan <xref:System.Runtime.InteropServices.StructLayoutAttribute> yapısı düzenlenir, sıralı olarak belirtmek için öznitelik. Yerel yapısı tarafından kullanılan aynı olacak şekilde ayarı paket yapısı açıkça ayarlamak için de iyi bir fikirdir. (Varsayılan olarak olsa da, hem yönetilen kod için 8-bayt yapısının bir Visual C++ kullanır.)  
+ Yönetilen yapıları üyelerinin performans amacıyla bazen yeniden düzenlendiği kullanmak için gerekli <xref:System.Runtime.InteropServices.StructLayoutAttribute> yapısı düzenlenir, sıralı olarak belirtmek için özniteliği. Yerel yapı tarafından kullanılan ile aynı olması için ayarı paketleme yapısını açıkça ayarlamak için de iyi bir fikirdir. (Varsayılan olarak olsa da, Visual C++ hem yönetilen kod için bir 8 baytlık yapısı kullanır.)  
   
-1.  Ardından, kullanın <xref:System.Runtime.InteropServices.DllImportAttribute> yapısı kabul yönetilmeyen işlevlerle karşılık gelen giriş noktalarını bildirmek, ancak her iki sürümü için aynı adı kullanırsanız tartışmalı noktası olan yapısının olan işlev imzalarında yönetilen bir sürümünü kullanmak için yapısı.  
+1.  Ardından, <xref:System.Runtime.InteropServices.DllImportAttribute> yapıyı kabul yönetilmeyen işlevlerle karşılık gelen bir giriş noktalarını bildirmek, ancak iki sürümü de aynı adı kullanırsanız, tartışmalı noktası olan işlev imzası yapısında yönetilen sürümünü kullanın yapısı.  
   
-2.  Şimdi gerçekten yönetilen işlevler olsa gibi yönetilen kod için yönetilmeyen işlevler yapısı yönetilen bir sürümünü geçirebilirsiniz. Bu yapıları değere veya başvuruya göre aşağıdaki örnekte gösterildiği gibi geçirilebilir.  
+2.  Artık gerçekten yönetilen işlevleri olsa gibi yönetilen kod yönetilen sürüm yapısı yönetilmeyen bir işleve geçirebilirsiniz. Bu yapılar aşağıdaki örnekte gösterildiği gibi değere veya başvuruya göre geçirilebilir.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod, bir yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen modül konumu ve konum yapısını iki örneğini kabul GetDistance adında bir işlevi olarak adlandırılan bir yapıyı tanımlayan bir DLL'dir. İkinci modül GetDistance işlevi alır, ancak konum yapısının MLocation yönetilen eşdeğer açısından tanımlayan bir yönetilen komut satırı uygulamasıdır. Uygulamada aynı adı her iki sürümünün de yapısı için büyük olasılıkla kullanılacak; Ancak, farklı bir ad, burada DllImport prototip bakımından yönetilen sürümün tanımlanır göstermek için kullanılır.  
+ Aşağıdaki kod, yönetilmeyen ve yönetilen bir modül oluşur. Yönetilmeyen, konum ve konum yapısını iki örneğini kabul eden GetDistance çağrılan bir işlev olarak adlandırılan bir yapıyı tanımlayan bir DLL modülüdür. İkinci modül GetDistance işlevi alır, ancak konum yapısının MLocation yönetilen eşdeğer açısından tanımlar yönetilen bir komut satırı uygulamasıdır. Uygulamada aynı adı büyük olasılıkla yapısı iki sürümü için kullanılacaktır; Ancak, farklı bir ad, burada DllImport prototip açısından yönetilen sürümün tanımlanır göstermek için kullanılır.  
   
- DLL hiçbir bölümünün geleneksel kullanarak yönetilen kod açıktır Not #include yönergesi. Aslında, DLL işlevleri DllImport ile alınan sorun derleme zamanında algılanmaz şekilde yalnızca çalışma zamanında erişilir.  
+ DLL hiçbir kısmı geleneksel kullanarak yönetilen kod için kullanıma sunulduğunu unutmayın #include yönergesi. Aslında, derleme zamanında algılanmaz DllImport ile içeri aktarılan işlevleri ile ilgili sorunlar için DLL yalnızca çalışma zamanında erişilir.  
   
 ```  
 // TraditionalDll3.cpp  

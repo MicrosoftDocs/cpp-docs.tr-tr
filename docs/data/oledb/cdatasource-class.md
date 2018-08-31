@@ -68,12 +68,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 69a96cf199e7ce131e91f750cdd83ebc915c38d8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 984bdabb9d67b157468287fa64f9f21ddabdd5d1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466460"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217235"
 ---
 # <a name="cdatasource-class"></a>CDataSource Sınıfı
 Bir veri kaynağına bağlantı sağlayıcısı üzerinden temsil eden bir OLE DB veri kaynağı nesnesi karşılık gelir.  
@@ -271,7 +271,7 @@ HRESULT Open(LPCSTR szProgID,
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanan yöntemi aşırı yüklemesini *hWnd* parametresi oledb32.dll hizmet bileşenleri içeren bir veri kaynağı nesnesi açılır; bu DLL'yi kaynak havuzu, otomatik gibi hizmet bileşenleri özellikleri uygulamasını içerir. İşlem kaydı ve benzeri. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+ Kullanan yöntemi aşırı yüklemesini *hWnd* parametresi oledb32.dll hizmet bileşenleri içeren bir veri kaynağı nesnesi açılır; bu DLL'yi kaynak havuzu, otomatik gibi hizmet bileşenleri özellikleri uygulamasını içerir. İşlem kaydı ve benzeri. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
   
  Yöntemi aşırı kullanmayın *hWnd* parametresi bir veri kaynağı nesnesi içinde oledb32.dll hizmet bileşenleri kullanmadan açın. A [CDataSource](../../data/oledb/cdatasource-class.md) nesne bu işlev aşırı yüklemelerinin ile açılmış hizmet bileşenleri işlevlerden herhangi birini kullanmak mümkün olacaktır.  
   
@@ -299,7 +299,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
+ Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).  
 
 ## <a name="openfrominitializationstring"></a> CDataSource::OpenFromInitializationString
 Kullanıcı tarafından sağlanan başlatma dizesi tarafından belirtilen bir veri kaynağı açılır.  
@@ -351,7 +351,7 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
+ Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).
 
 ## <a name="openwithservicecomponents"></a> CDataSource::OpenWithServiceComponents
 Hizmet bileşenleri oledb32.dll kullanarak bir veri kaynağı nesnesi açılır.  
@@ -385,7 +385,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
  Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](http://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).    
+ Bu yöntem oledb32.dll hizmet bileşenlerini kullanarak bir veri kaynağı nesnesi açılır; Bu DLL, kaynak havuzu, otomatik bir işlem kaydı ve benzeri gibi hizmet bileşenleri özellikleri uygulamasını içerir. Daha fazla bilgi için bkz: "OLE DB hizmetleri" OLE DB Programcı Başvurusu, [ https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true ](https://msdn.microsoft.com/library/default.asp?url=/library/oledb/htm/oledbole_db_services.asp?frame=true).    
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   

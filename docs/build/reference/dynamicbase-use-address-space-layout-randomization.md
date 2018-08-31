@@ -1,7 +1,7 @@
 ---
 title: -DYNAMICBASE (adres boşluğu düzeni rastgele'seçimini kullan) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 06/12/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -18,44 +18,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85af66c4ce05057eff63292061b66202aeebe160
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 896e2eca86b7694c8b3b951a8eb080a4cf9e7684
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223399"
 ---
 # <a name="dynamicbase-use-address-space-layout-randomization"></a>/DYNAMICBASE (Adres boşluğu düzeni rastgele seçimini kullan)
-Rastgele yükleme zamanında adres alanı düzeni rastgele seçimini (ASLR) özelliğini kullanarak rebased yürütülebilir bir görüntü oluşturulup oluşturulmayacağını belirtir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)].  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/DYNAMICBASE[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, /DYNAMICBASE açıktır.  
-  
- Bu seçenek, uygulama yükleme zamanında rastgele rebased olup olmadığını belirtmek için yürütülebilir bir dosya üstbilgisi değiştirir.  
-  
- Adres boşluğu düzeni rastgele seçimini desteklenir [!INCLUDE[windowsver](../../build/reference/includes/windowsver_md.md)].  
-  
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneği ayarlamak için  
-  
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
-  
-3.  Genişletme **bağlayıcı** düğümü.  
-  
-4.  Seçin **Gelişmiş** özellik sayfası.  
-  
-5.  Değiştirme **rastgele taban adresi** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RandomizedBaseAddress%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Rastgele yükleme zamanında adres alanı düzeni rastgele (ASLR) özelliği, öncelikle Windows Vista'da kullanılabilir Windows temellendirilebilen yürütülebilir bir imaj oluşturulup oluşturulmayacağını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/ DYNAMICBASE**[**: NO**]
+
+## <a name="remarks"></a>Açıklamalar
+
+**Dynamıcbase** seçenek değiştirir üst bilgisine bir *yürütülebilir görüntü*, uygulama rastgele yükleme zamanında ReBase işlemi gerçekleştirildi ve sayesinde sanal adresi olup olmadığını belirtmek için .dll veya .exe dosyası Yığınlar sanal bellek konumunu etkileyen, ayırma rastgele yığınları ve diğer işletim sistemi ayırma. **Dynamıcbase** seçenek, hem 32-bit hem de 64-bit görüntüleri için geçerlidir. ASLR, Windows Vista ve sonraki işletim sistemlerinde desteklenir. Seçenek, eski işletim sistemleri tarafından göz ardı edilir.
+
+Varsayılan olarak, **dynamıcbase** etkinleştirilir. Bu seçenek devre dışı bırakmak için **taban**. **Dynamıcbase** için seçeneği gereklidir [/highentropyva](highentropyva-support-64-bit-aslr.md) efekt için seçeneği.
+
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **rastgele taban adresi** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.RandomizedBaseAddress%2A>.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+- [Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)
+- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+- [/HIGHENTROPYVA](highentropyva-support-64-bit-aslr.md)
+- [ISV yazılım güvenlik Savunmaları Windows](https://msdn.microsoft.com/library/bb430720.aspx)

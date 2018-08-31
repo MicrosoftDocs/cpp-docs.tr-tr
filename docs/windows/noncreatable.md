@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a55daa9f8c742d847944ddb0459db208c7edf9cf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b31ede898e2b1976bc16be7cf89c0223c3709193
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608130"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221549"
 ---
 # <a name="noncreatable"></a>noncreatable
 
@@ -36,7 +36,7 @@ Tek başına oluşturulamaz bir nesneyi tanımlar.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Noncreatable** C++ özniteliği ile aynı işlevlere sahip [noncreatable](http://msdn.microsoft.com/library/windows/desktop/aa367118) MIDL özniteliği ve otomatik olarak aracılığıyla oluşturulan geçirilir. IDL dosyası derleyici tarafından.
+**Noncreatable** C++ özniteliği ile aynı işlevlere sahip [noncreatable](/windows/desktop/Midl/noncreatable) MIDL özniteliği ve otomatik olarak aracılığıyla oluşturulan geçirilir. IDL dosyası derleyici tarafından.
 
 Bu öznitelik ATL kullanan bir proje içinde kullanıldığında, öznitelik davranışını değiştirir. Yukarıdaki davranışa ek olarak, öznitelik de eklediği [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) makrosu. Bu makro, nesne harici olarak oluşturulamıyor ATL için gösterir.
 

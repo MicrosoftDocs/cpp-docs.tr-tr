@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6aa313252d2ba06cf0a912f31564dec3d65e0e8
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 265da6a072c1b33a0ebbe8f485af7588521bcdea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464693"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218034"
 ---
 # <a name="csid-class"></a>CSid sınıfı
 Bu sınıf için bir sarmalayıcı olan bir `SID` (güvenlik kimliği) yapısı.  
@@ -105,7 +105,7 @@ class CSid
   
  Uygulamaları değişiklik `SID` yapısı doğrudan, ancak bunun yerine bu sarmalayıcı sınıfı sağlanan yöntemleri kullanın. Ayrıca bkz: [AtlGetOwnerSid](security-global-functions.md#atlgetownersid), [AtlSetGroupSid](security-global-functions.md#atlsetgroupsid), [AtlGetGroupSid](security-global-functions.md#atlgetgroupsid), ve [AtlSetOwnerSid](security-global-functions.md#atlsetownersid).  
   
- Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](http://msdn.microsoft.com/library/windows/desktop/aa374860) Windows SDK.  
+ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/windows/desktop/SecAuthZ/access-control) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlsecurity.h  
@@ -121,7 +121,7 @@ LPCTSTR AccountName() const throw(...);
  Hesap adına işaret eden LPCTSTR döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
+ Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).  
   
  Hesap adı yok, `SID` bulunabilir, `AccountName` boş bir dize döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Oturum açma gibi karşılık gelen hiçbir hesap adıyla güvenlik tanımlayıcıları için de gerçekleşir `SID` oturum tanımlar.  
   
@@ -202,7 +202,7 @@ LPCTSTR Domain() const throw(...);
  Döndürür `LPCTSTR` etki alanına işaret eden.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](http://msdn.microsoft.com/library/windows/desktop/aa379166).  
+ Bu yöntem için belirtilen bir ad bulmayı dener `SID` (güvenlik tanımlayıcısı). Tüm Ayrıntılar için bkz. [LookupAccountSid](/windows/desktop/api/winbase/nf-winbase-lookupaccountsida).  
   
  Hesap adı yok, `SID` bulunabilir, `Domain` etki alanı boş bir dize olarak döndürür. Bu durum ağ zaman aşımı bu yöntem adı bulmasını engeller ortaya çıkabilir. Oturum açma gibi karşılık gelen hiçbir hesap adıyla güvenlik tanımlayıcıları için de gerçekleşir `SID` oturum tanımlar.  
   
@@ -222,7 +222,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
  Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [EqualPrefixSid](http://msdn.microsoft.com/library/windows/desktop/aa446621) daha fazla ayrıntı için Windows SDK.  
+ Bkz: [EqualPrefixSid](https://msdn.microsoft.com/library/windows/desktop/aa446621) daha fazla ayrıntı için Windows SDK.  
   
 ##  <a name="getlength"></a>  CSid::GetLength  
  Uzunluğunu döndürür `CSid` nesne.  
@@ -487,7 +487,7 @@ LPCTSTR Sid() const throw(...);
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Döndürür `SID` yapısı olarak görünen, depolama ve aktarım için uygun bir biçimde bir dizeye. Eşdeğer [ConvertSidToStringSid](http://msdn.microsoft.com/library/windows/desktop/aa376399).  
+ Döndürür `SID` yapısı olarak görünen, depolama ve aktarım için uygun bir biçimde bir dizeye. Eşdeğer [ConvertSidToStringSid](/windows/desktop/api/sddl/nf-sddl-convertsidtostringsida).  
   
 ##  <a name="sidnameuse"></a>  CSid::SidNameUse  
  Durumu açıklamasını döndürür `CSid` nesne.  

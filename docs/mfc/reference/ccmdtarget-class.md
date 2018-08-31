@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6630ad9721b7a58e7da2660337660cc7916db01
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: bb4d7a06d728bddfd4ba1ee355cb4d1e0b5b9fd6
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466293"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221716"
 ---
 # <a name="ccmdtarget-class"></a>CCmdTarget sınıfı
 Microsoft Foundation Class Kitaplığı ileti eşleme mimarisi için temel sınıf.  
@@ -163,19 +163,19 @@ BOOL DoOleVerb(
  Fiili sayısal tanımlayıcısı.  
   
  *lpMsg*  
- İşaretçi [MSG](http://msdn.microsoft.com/library/windows/desktop/ms644958) yapısını açıklayan fiili çağrılan olay (örneğin, bir çift tıklatın).  
+ İşaretçi [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) yapısını açıklayan fiili çağrılan olay (örneğin, bir çift tıklatın).  
   
  *hWndParent*  
  Nesne içeren belge penceresi tanıtıcısı.  
   
  *lpRect*  
- İşaretçi [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel koordinatları yapısı dikdörtgende çevreleyen *hwndParent*.  
+ İşaretçi [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) içeren nesneyi tanımlayan piksel koordinatları yapısı dikdörtgende çevreleyen *hwndParent*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı, aksi takdirde FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi temelde uygulamasıdır [Rpc_e_serverfault](http://msdn.microsoft.com/library/windows/desktop/ms694508). Olası eylemler tarafından numaralandırılır [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
+ Bu üye işlevi temelde uygulamasıdır [Rpc_e_serverfault](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-doverb). Olası eylemler tarafından numaralandırılır [CCmdTarget::EnumOleVerbs](#enumoleverbs).  
   
 ##  <a name="enableautomation"></a>  CCmdTarget::EnableAutomation  
  OLE Otomasyonu nesnesi etkin bir nesne için etkinleştirmek için bu işlevi çağırın.  
@@ -229,13 +229,13 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
   
 ### <a name="parameters"></a>Parametreler  
  *ppenumOleVerb*  
- Bir işaretçi işaretçisi bir [IEnumOLEVERB](http://msdn.microsoft.com/library/windows/desktop/ms695084) arabirimi.  
+ Bir işaretçi işaretçisi bir [IEnumOLEVERB](/windows/desktop/api/oleidl/nn-oleidl-ienumoleverb) arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nesnenin en az bir OLE fiili destekliyorsa TRUE (Bu durumda \* *ppenumOleVerb* işaret eden bir `IEnumOLEVERB` Numaralandırıcı arabirimi), aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi temelde uygulamasıdır [IOleObject::EnumVerbs](http://msdn.microsoft.com/library/windows/desktop/ms692781).  
+ Bu üye işlevi temelde uygulamasıdır [IOleObject::EnumVerbs](/windows/desktop/api/oleidl/nf-oleidl-ioleobject-enumverbs).  
   
 ##  <a name="fromidispatch"></a>  CCmdTarget::FromIDispatch  
  Eşlemek için bu işlevi çağırın bir `IDispatch` işaretçi, bir sınıfın üye işlevleri Otomasyon içine alınan `CCmdTarget` arabirimleri uygulayan nesne `IDispatch` nesne.  
@@ -263,7 +263,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
   
 ### <a name="parameters"></a>Parametreler  
  *pIID*  
- Bir arabirim kimliği için bir işaretçi (bir [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931)).  
+ Bir arabirim kimliği için bir işaretçi (bir [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931)).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı, aksi takdirde FALSE ise TRUE. Başarılı olursa, \* *pIID* birincil dağıtım arabirimi kimliğine ayarlayın  
@@ -288,7 +288,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
  `IDispatch` Nesnesiyle ilişkili bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu çağrı nesneleri için `EnableAutomation` etkin, Otomasyon yönetilmelerini kendi oluşturucularda bu işlev Foundation sınıf uygulamasına yönelik bir işaretçi döndürür `IDispatch` üzerinden iletişim kurmasına istemciler tarafından kullanılan `IDispatch` arabirimi. Bu işlevi çağırmak, otomatik olarak ekler fare işaretçisini bir başvuru bir çağrı yapmak gerekli değildir [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379).  
+ Bu çağrı nesneleri için `EnableAutomation` etkin, Otomasyon yönetilmelerini kendi oluşturucularda bu işlev Foundation sınıf uygulamasına yönelik bir işaretçi döndürür `IDispatch` üzerinden iletişim kurmasına istemciler tarafından kullanılan `IDispatch` arabirimi. Bu işlevi çağırmak, otomatik olarak ekler fare işaretçisini bir başvuru bir çağrı yapmak gerekli değildir [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref).  
   
 ##  <a name="gettypeinfocount"></a>  CCmdTarget::GetTypeInfoCount  
  Bir nesnenin sağladığı tür bilgisi arabirimlerinin sayısını alır.  
@@ -320,7 +320,7 @@ HRESULT GetTypeInfoOfGuid(
  Bir yerel ayar tanımlayıcı ( `LCID`).  
   
  *GUID*  
- [GUID](http://msdn.microsoft.com/library/windows/desktop/aa373931) türü açıklaması.  
+ [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931) türü açıklaması.  
   
  *ppTypeInfo*  
  Bir işaretçi işaretçisi `ITypeInfo` arabirimi.  

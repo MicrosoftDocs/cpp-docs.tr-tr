@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56fc61fa7dd7973a6ee1cc4c5a20311bf43b056f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4550d523a4410734c391e2e4d266ae536b4610b4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466289"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218675"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede, C/C++ uygulamasına neden başarısız yüklemek için bazı yaygın nedenleri açıklanır ve sorunları gidermek için adımları önerir.  
@@ -46,14 +46,14 @@ C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bul
   
 3.  Yan yana derlemelerini uygulamanızın bağımlı ve bir bildirim mevcut değilse, bağlayıcı projeniz için bir bildirim üretir emin olmak sahip. Bağlayıcı seçeneği işaretleyin **oluşturma bildirimi** içinde **proje özellikleri** iletişim kutusu için proje.  
   
-4.  İkili dosyada bildirim katıştırılır, kimliği rt_manıfest, bu ikili türü için doğru olduğundan emin olun. Hangi kaynak Kimliğinde kullanılacak hakkında daha fazla bilgi için bkz: [bir kaynak (Windows) kullanarak yan yana derlemeler](http://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). Ayrı bir dosyada bildirime ise bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz. [bildirimlerini](http://msdn.microsoft.com/library/aa375365).  
+4.  İkili dosyada bildirim katıştırılır, kimliği rt_manıfest, bu ikili türü için doğru olduğundan emin olun. Hangi kaynak Kimliğinde kullanılacak hakkında daha fazla bilgi için bkz: [bir kaynak (Windows) kullanarak yan yana derlemeler](https://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). Ayrı bir dosyada bildirime ise bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz. [bildirimlerini](https://msdn.microsoft.com/library/aa375365).  
   
     > [!NOTE]
     >  Gömülü bir bildirim hem de ayrı bir bildirim dosyası varsa, işletim sistemi yükleyicisi gömülü bildirimi kullanır ve ayrı bir dosya yok sayar. Ancak, Windows XP'de, bunun tersini geçerlidir — ayrı bildirim dosyası kullanılır ve katıştırılmış bildirime göz ardı edilir.  
   
-5.  Dış bildirimler, ancak bir DLL yüklendiğinde göz ardı edilir çünkü her DLL içinde bildirim katıştırma öneririz bir `LoadLibrary` çağırın. Daha fazla bilgi için [derleme bildirimleri](http://msdn.microsoft.com/library/aa374219).  
+5.  Dış bildirimler, ancak bir DLL yüklendiğinde göz ardı edilir çünkü her DLL içinde bildirim katıştırma öneririz bir `LoadLibrary` çağırın. Daha fazla bilgi için [derleme bildirimleri](/windows/desktop/SbsCs/assembly-manifests).  
   
-6.  Bildirimde numaralandırılır tüm derlemelerin bilgisayarda düzgün yüklendiğini kontrol edin. Her derleme bildiriminde adı, sürüm numarasını ve işlemci mimarisi tarafından belirtilir. Yan yana derlemelerini, uygulamanızın bağlı olduğu durumlarda işletim sistemi yükleyicisi bunları bulabilmesi için bu bütünleştirilmiş kodları doğru bilgisayarda açıklandığı gibi yüklü olup olmadığını denetleyin [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). 64 bit derlemelerin 32-bit işlemde yüklenemez ve 32-bit işletim sistemlerinde yürütülemez unutmayın.  
+6.  Bildirimde numaralandırılır tüm derlemelerin bilgisayarda düzgün yüklendiğini kontrol edin. Her derleme bildiriminde adı, sürüm numarasını ve işlemci mimarisi tarafından belirtilir. Yan yana derlemelerini, uygulamanızın bağlı olduğu durumlarda işletim sistemi yükleyicisi bunları bulabilmesi için bu bütünleştirilmiş kodları doğru bilgisayarda açıklandığı gibi yüklü olup olmadığını denetleyin [derleme arama sırası](/windows/desktop/SbsCs/assembly-searching-sequence). 64 bit derlemelerin 32-bit işlemde yüklenemez ve 32-bit işletim sistemlerinde yürütülemez unutmayın.  
   
 ## <a name="example"></a>Örnek  
  Bir uygulama, Visual C++ kullanılarak oluşturulan appl.exe, sahip olduğumuz varsayılır. Uygulama bildirimini ya da ikili kaynak 1'e bir kimliği eşit olan veya ayrı bir dosya appl.exe.manifest depolanan rt_manıfest olarak appl.exe eklenir. Bu bildirim içeriğini bunu yeniden birleştirir:  
@@ -82,7 +82,7 @@ C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bul
 </assembly>  
 ```  
   
- Yan yana derlemeler de kullanabilir [yayımcı yapılandırma dosyaları](http://msdn.microsoft.com/library/aa375682)— ilkesi dosyaları olarak da bilinir — uygulamaları ve derlemeleri aynı başka bir sürümü yerine bir yan yana derlemenin bir sürümünü kullanmak için genel olarak yönlendirmek için derleme. Paylaşılan bir derleme %WINDIR%\WinSxS\Policies\ klasöründe ilkelerini denetleyebilirsiniz. Bir ilke dosyası örneği aşağıdadır:  
+ Yan yana derlemeler de kullanabilir [yayımcı yapılandırma dosyaları](/windows/desktop/SbsCs/publisher-configuration-files)— ilkesi dosyaları olarak da bilinir — uygulamaları ve derlemeleri aynı başka bir sürümü yerine bir yan yana derlemenin bir sürümünü kullanmak için genel olarak yönlendirmek için derleme. Paylaşılan bir derleme %WINDIR%\WinSxS\Policies\ klasöründe ilkelerini denetleyebilirsiniz. Bir ilke dosyası örneği aşağıdadır:  
   
 ```  
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
@@ -106,7 +106,7 @@ C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bul
   
 2.  Açmaya \\< assemblyName\>\ appl.exe, içeren klasörü klasöründe ve \\< assemblyName\>\ var, ada sahip bir bildirim dosyası yüklemeye \<assemblyName >. Bu klasörden bildirimi. Bildirim bulunursa, yükleyici bütünleştirilmiş koddan yükler \\< assemblyName\>\ klasör. Derleme bulunmazsa yükleme başarısız olur.  
   
- Yükleyici bağımlı derlemeleri nasıl arama hakkında daha fazla bilgi için bkz. [derleme arama sırası](http://msdn.microsoft.com/library/aa374224). Bağımlı bir derleme özel bir derleme olarak bulmak yükleyici başarısız olursa, yükleme başarısız olur ve "Sistem belirtilen program yürütülemiyor" iletisi görüntülenir. Bu hatayı gidermek için emin bağımlı derlemeleri — ve bunları bir parçası olan DLL'ler — bilgisayarda özel veya paylaşılan derlemeler yüklenir.  
+ Yükleyici bağımlı derlemeleri nasıl arama hakkında daha fazla bilgi için bkz. [derleme arama sırası](/windows/desktop/SbsCs/assembly-searching-sequence). Bağımlı bir derleme özel bir derleme olarak bulmak yükleyici başarısız olursa, yükleme başarısız olur ve "Sistem belirtilen program yürütülemiyor" iletisi görüntülenir. Bu hatayı gidermek için emin bağımlı derlemeleri — ve bunları bir parçası olan DLL'ler — bilgisayarda özel veya paylaşılan derlemeler yüklenir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yalıtılmış uygulamalar ve yan yana derleme kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   

@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7e0bd440e2e4bd8d32525fe4be6aaad2c401f6a
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 9d67f00b88be88e1cb2691414b0666bd298977dd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880628"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220186"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>Iprovideclassınfo2ımpl sınıfı
-Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) ve [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) yöntemleri.  
+Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ve [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) yöntemleri.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -85,7 +85,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 |[IProvideClassInfo2Impl::_tih](#_tih)|Coclass'ı için tür bilgilerini yönetir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IProvideClassInfo2](http://msdn.microsoft.com/library/windows/desktop/ms693764) arabirimini genişletir [Iprovideclassınfo](http://msdn.microsoft.com/library/windows/desktop/ms687303) ekleyerek `GetGUID` yöntemi. Bir istemci kendi varsayılan olay kümesi için bir nesnenin giden arabirim IID'si almak bu yöntem sağlar. Sınıf `IProvideClassInfo2Impl` bir varsayılan uygulamayı sağlar `IProvideClassInfo` ve `IProvideClassInfo2` yöntemleri.  
+ [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) arabirimini genişletir [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ekleyerek `GetGUID` yöntemi. Bir istemci kendi varsayılan olay kümesi için bir nesnenin giden arabirim IID'si almak bu yöntem sağlar. Sınıf `IProvideClassInfo2Impl` bir varsayılan uygulamayı sağlar `IProvideClassInfo` ve `IProvideClassInfo2` yöntemleri.  
   
  `IProvideClassInfo2Impl` statik bir üye türü içeren `CComTypeInfoHolder` , coclass'ı için tür bilgilerini yönetir.  
   
@@ -105,7 +105,7 @@ STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IProvideClassInfo::GetClassInfo](http://msdn.microsoft.com/library/windows/desktop/ms690192) Windows SDK içinde.  
+ Bkz: [IProvideClassInfo::GetClassInfo](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) Windows SDK içinde.  
   
 ##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
  Nesnenin giden dispinterface GUID'ini alır.  
@@ -117,7 +117,7 @@ STDMETHOD(GetGUID)(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IProvideClassInfo2::GetGUID](http://msdn.microsoft.com/library/windows/desktop/ms679721) Windows SDK içinde.  
+ Bkz: [IProvideClassInfo2::GetGUID](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) Windows SDK içinde.  
   
 ##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
  Oluşturucu.  
@@ -138,7 +138,7 @@ static  tihclass
 ```     
   
 ### <a name="remarks"></a>Açıklamalar  
- `_tih` coclass'ı için tür bilgilerini yönetir.  
+ `_tih` Coclass'ı için tür bilgilerini yönetir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

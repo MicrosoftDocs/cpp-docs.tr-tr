@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: baa317610339e7073f2e829860e11ab15e66277e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c52f2a17e347e7b37152a3d7a78423f0523b5679
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611067"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220604"
 ---
 # <a name="how-to-specify-include-directories-for-resources"></a>Nasıl Yapılır: Kaynaklar İçin Dizin Eklemeyi Belirtme
 
@@ -32,7 +32,7 @@ ms.locfileid: "42611067"
 
 2. İçinde **özellik sayfaları** iletişim kutusu, tıklayın **kaynakları** düğümü sol bölmede, ardından belirtin ek içeren dizinler **ek dizinleri** özellik.
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu'nda. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) .NET Framework Geliştirici Kılavuzu'nda. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](https://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
 
 ## <a name="requirements"></a>Gereksinimler
 

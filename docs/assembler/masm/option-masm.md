@@ -16,15 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80291c805cad3ef041fffc58983ff399da07c9d9
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4a2dcbc55d6a2d033cde3b6189618afd67bdc3fb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057727"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221515"
 ---
 # <a name="option-masm"></a>OPTION (MASM)
-Etkinleştirir ve assembler özelliklerini devre dışı bırakır.  
+Etkinleştirir ve derleyici özelliklerini devre dışı bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,15 +40,15 @@ optionlist
   
 |||||  
 |-|-|-|-|  
-|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**ÖYKÜNÜCÜSÜ**|  
-|**NOEMULATOR**|**EPİLOG**|**EXPR16**|**EXPR32**|  
+|**CASEMAP**|**DOTNAME**|**NODOTNAME**|**ÖYKÜNÜCÜ**|  
+|**NOEMULATOR**|**KAPANIŞ**|**EXPR16**|**EXPR32**|  
 |**DİL**|**LJMP**|**NOLJMP**|**M510**|  
 |**NOM510**|**NOKEYWORD**|**NOSIGNEXTEND**|**UZAKLIK**|  
 |**OLDMACROS**|**NOOLDMACROS**|**OLDSTRUCTS**|**NOOLDSTRUCTS**|  
 |**PROC**|**GİRİŞ**|**SALT OKUNUR**|**NOREADONLY**|  
 |**KAPSAMLI**|**NOSCOPED**|**SEGMENT**|**SETIF2**.|  
   
- DİLİ sözdizimi **seçeneği dil:***x*, burada *x* C, SYSCALL, STDCALL, PASCAL, FORTRAN veya BASIC biridir.  SYSCALL, PASCAL, FORTRAN ve BASIC desteklenmez ile birlikte kullanılan [. MODEL](../../assembler/masm/dot-model.md) DÜZ.  
+ Dilin sözdizimi **seçeneği dil:**<em>x</em>burada *x* C, SYSCALL, STDCALL, PASCAL, FORTRAN veya temel biridir.  SYSCALL, PASCAL, FORTRAN ve temel ile desteklenmez ile kullanılan [. MODEL](../../assembler/masm/dot-model.md) DÜZ.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)

@@ -17,27 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84c3ec69c936605729f6813f28450ee1194951c7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ca8f77ee6d49aede8592d591241f8e2730fc15a8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392191"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218462"
 ---
 # <a name="precedence-and-order-of-evaluation"></a>Öncelik ve Değerlendirme Sırası
 C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandırılmasını ve değerlendirilmesini etkiler. Bir işlecin önceliği, daha yüksek veya daha düşük önceliğe sahip başka işleçler varsa bir anlam ifade eder. Önce daha yüksek önceliğe sahip işleçler değerlendirilir. Öncelik, "bağlama" sözcüğüyle de açıklanabilir. Daha yüksek önceliğe sahip işleçlerin daha sıkı bağlamaya sahip olduğu söylenir.  
   
- Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (işlenenlerin değerlendirilme sırası) özetlenmekte ve öncelikleri en yüksekten en düşüğe listelenmektedir. Birkaç işlecin birlikte göründüğü yerlerde, bu işleçler aynı önceliğe sahip olur ve ilişkilendirilebilirliklerine göre değerlendirilir. Tablodaki işleçler itibaren bölümlerde açıklanan [sonek işleçleri](../c-language/postfix-operators.md). Bu bölümün geri kalanında, öncelik ve ilişkilendirilebilirlik hakkında genel bilgiler verilmektedir.  
+ Aşağıdaki tabloda, C işleçlerinin öncelik ve ilişkilendirilebilirliği (işlenenlerin değerlendirilme sırası) özetlenmekte ve öncelikleri en yüksekten en düşüğe listelenmektedir. Birkaç işlecin birlikte göründüğü yerlerde, bu işleçler aynı önceliğe sahip olur ve ilişkilendirilebilirliklerine göre değerlendirilir. Tablodaki işleçleri ile başlayan bölümlerde açıklanmıştır [sonek işleçleri](../c-language/postfix-operators.md). Bu bölümün geri kalanında, öncelik ve ilişkilendirilebilirlik hakkında genel bilgiler verilmektedir.  
   
 ## <a name="precedence-and-associativity-of-c-operators"></a>C İşleçlerinin Önceliği ve İlişkilendirilebilirliği  
   
 |Sembol <sup>1</sup>|İşlem Türü|İlişkilendirilebilirlik|  
 |-------------|-----------------------|-------------------|  
 |**\[ ] ( ) . ->**<br /><br />**++** **--** (sonek)|İfade|Soldan sağa|  
-**sizeof & \* + - ~!**<br /><br />**++--** (önek)|Birli|Sağdan sola|  
-|*işaretçisine tür olarak atar*|Birli|Sağdan sola|  
+**sizeof & \* + - ~!**<br /><br />**++--** (ön ek)|Birli|Sağdan sola|  
+|*yuvarlamasını*|Birli|Sağdan sola|  
 |**\* / %**|Çarpma|Soldan sağa|  
-|**+ -**|ADDITIVE|Soldan sağa|  
+|**+ -**|Eklenebilir|Soldan sağa|  
 |**\<\< >>**|Bit düzeyinde kaydırma|Soldan sağa|  
 |**\< > \<= >=**|İlişkisel|Soldan sağa|  
 |**== !=**|Eşitlik|Soldan sağa|  
@@ -54,9 +54,9 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
   
  2. Tüm basit ve bileşik atama işleçleri eşit önceliğe sahiptir.  
   
- Bir ifade eşit önceliğe sahip birkaç işleç içerebilir. Böyle birkaç işleç bir ifadede aynı düzeyde göründüğünde, değerlendirme işlecin ilişkilendirilebilirliğine göre sağdan sola veya soldan sağa devam eder. Sonuçlar birden fazla çarpma içeren bir ifade değerlendirme yönünü etkilemez (**\***), toplama (**+**), ya da ikili bit düzeyinde (**& &#124; ^**) aynı düzeyde işleci. İşlemlerin sırası dil tarafından tanımlanmaz. Derleyici, tutarlı bir sonuç sağladığı sürece bu tür ifadeleri herhangi bir sırada değerlendirebilir.  
+ Bir ifade eşit önceliğe sahip birkaç işleç içerebilir. Böyle birkaç işleç bir ifadede aynı düzeyde göründüğünde, değerlendirme işlecin ilişkilendirilebilirliğine göre sağdan sola veya soldan sağa devam eder. Değerlendirmenin yönü, birden fazla çarpma içeren ifadelerin sonuçlarını etkilemez (<strong>\*</strong>), toplama (**+**), veya ikili bit düzeyinde (**&**, **&#124;**, veya **^**) aynı düzeyde işleci. İşlemlerin sırası dil tarafından tanımlanmaz. Derleyici, tutarlı bir sonuç sağladığı sürece bu tür ifadeleri herhangi bir sırada değerlendirebilir.  
   
- Yalnızca sıralı değerlendirme (**,**), mantıksal- ve (**&&**), mantıksal OR (`||`), koşullu ifade (**?:**) ve işlev çağrısı operatörler sıralama noktaları oluşturur ve bu nedenle değerlendirme kendi işlenenler için belirli bir sıraya garanti. İşlev çağrısı işleci, işlev tanımlayıcısının arkasından gelen bir parantezler kümesidir. Sıralı değerlendirme işleci (**,**) işlenenleri soldan sağa değerlendirmek için sağlanır. (Bir işlev çağrısındaki virgül işlecinin sıralı değerlendirme işleciyle aynı olmadığını ve böyle bir garanti vermediğini unutmayın.) Daha fazla bilgi için bkz: [sıralama noktaları](../c-language/c-sequence-points.md).  
+ Yalnızca sıralı değerlendirme (**,**), mantıksal- ve (**&&**), mantıksal OR (**||**), koşullu ifade (**?:** ), ve işleç çağrısı işleçleri dizi noktaları oluşturur ve bu nedenle değerlendirme işlenenleri için belirli bir sıraya garanti. İşlev çağrısı işleci, işlev tanımlayıcısının arkasından gelen bir parantezler kümesidir. Sıralı değerlendirme işleci (**,**), işlenenlerini soldan sağa değerlendirmesi garanti edilir. (Bir işlev çağrısındaki virgül işlecinin sıralı değerlendirme işleciyle aynı olmadığını ve böyle bir garanti vermediğini unutmayın.) Daha fazla bilgi için [dizi noktaları](../c-language/c-sequence-points.md).  
   
  Mantıksal işleçler de işlenenlerinin soldan sağa değerlendirilmesini garanti eder. Bununla birlikte, ifadenin sonucunu belirlemek için gereken en az sayıda işleneni değerlendirirler. Buna "kısa devre" değerlendirmesi adı verilir. Bu nedenle, ifadenin bazı işlenenleri değerlendirilmeyebilir. Örneğin, ifadede  
   
@@ -74,11 +74,11 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
 |bir = b &#124; &#124; c|bir = (b &#124; &#124; c).|  
 |q & & r &#124; &#124; s--|(q & & r) &#124; &#124; s--|  
 
- İlk ifadede, bit düzeyinde AND işleci (`&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `a & b` mantıksal OR işleminin ilk işlenenini oluşturur.  
+ İlk ifadede, bit düzeyinde- ve işleci (**&**) mantıksal OR işlecine daha yüksek bir önceliğe sahiptir (**||**), bu nedenle `a & b` ilk işleneni formlar Mantıksal OR işlemi.  
   
- İkinci ifadede, mantıksal OR işleci (`||`) basit atama işlecine (`=`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `b || c` atamada sağ işlenen olarak gruplandırılır. `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.  
+ İkinci ifadede, mantıksal OR işleci (**||**) basit atama işleci daha yüksek bir önceliğe sahiptir (**=**), bu nedenle `b || c` olarak gruplandırılır sağ işlenen olarak. `a`'ya atanan değerin 0 veya 1 olduğuna dikkat edin.  
   
- Üçüncü ifade, beklenmedik bir sonuç oluşturabilecek doğru bir şekilde biçimlendirilmiş bir ifadeyi gösterir. Mantıksal AND işleci (`&&`), mantıksal OR işlecine (`||`) göre daha yüksek bir önceliğe sahiptir, bu nedenle `q && r` bir işlenen olarak gruplandırılır. Mantıksal işleçler işlenenler değerlendirmesine soldan sağa garanti beri `q && r` önce değerlendirilir `s--`. Ancak, varsa `q && r` sıfır olmayan bir değere değerlendirilen `s--` değerlendirilmez, ve `s` indirildiği değil. Değil azaltma varsa `s` bir sorun, programınıza neden olacağından `s--` ifadesindeki ilk işlenen görünmesi gereken veya `s` ayrı bir işlemde indirildiği olmalıdır.  
+ Üçüncü ifade, beklenmedik bir sonuç oluşturabilecek doğru bir şekilde biçimlendirilmiş bir ifadeyi gösterir. Mantıksal- ve işleci (**&&**) mantıksal OR işlecine daha yüksek bir önceliğe sahiptir (**||**), bu nedenle `q && r` bir işlenen olarak gruplandırılır. Mantıksal işleçler işlenenlerin soldan sağa doğru garanti olduğundan `q && r` önce değerlendirilir `s--`. Ancak, varsa `q && r` sıfır olmayan bir değer olarak değerlendirilirse `s--` değerlendirilmez ve `s` azaltılmaz. Azaltma değil, `s` bir sorun, programınızda neden `s--` ifade ilk işleneni görünmesi gereken veya `s` ayrı bir işlemde indirildiği olmalıdır.  
   
  Aşağıdaki ifade geçersizdir ve derleme zamanında bir tanılama iletisi oluşturur:  
   
@@ -86,7 +86,7 @@ C işleçlerinin öncelik ve birleşimleri, ifadelerde işlenenlerin gruplandır
 |------------------------|----------------------|  
 |p == 0? p += 1: p += 2|(p == 0? p += 1: p) += 2|  
   
- Bu ifadede, eşitlik işleci (`==`) en yüksek önceliğe sahiptir, bu nedenle `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (`? :`) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:  
+ Bu ifadede, eşitlik işleci (**==**) en yüksek önceliğe serileştirilmesini `p == 0` bir işlenen olarak gruplandırılır. Koşullu ifade işleci (**?:**) sonraki en yüksek önceliğe sahiptir. İlk işleneni `p == 0`, ikinci işleneni ise `p += 1`'dir. Ancak, koşullu ifade işlecinin son işleneni `p` yerine `p += 2` olarak kabul edilir; çünkü bu `p` örneği koşullu ifade işlecine, bileşik atama işlecine göre daha yakından bağlanır. `+= 2` sol işlenene sahip olmadığı için bir sözdizimi hatası oluşur. Bu türden hataları önlemek ve daha okunabilir bir kod oluşturmak için parantez kullanmanız gerekir. Örneğin, yukarıdaki örneği düzeltmek ve netleştirmek için parantezleri aşağıda gösterildiği gibi kullanabilirsiniz:  
   
 `( p == 0 ) ? ( p += 1 ) : ( p += 2 )`  
   

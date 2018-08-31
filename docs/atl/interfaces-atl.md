@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7becd9e27294c81ce6144d08c79cfac52636fbf
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1410a437d87b56b244eb4fcd711797c279bec446
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848271"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217889"
 ---
 # <a name="interfaces-atl"></a>Arabirimler (ATL)
 Bir arabirim bir nesne dış dünya için işlevselliği kullanıma sunan bir yoludur. COM, bir arabirim işaretçileri nesne tarafından uygulanan işlevleri (örneğin, bir C++ vtable) bir tablodur. Tablo arabirimi temsil eder ve işaret ettiği işlevleri o arabirimin yöntemlerdir. Bir nesneyi seçer gibi çok arabirimleri kullanıma sunabilirsiniz.  
@@ -34,5 +34,5 @@ Bir arabirim bir nesne dış dünya için işlevselliği kullanıma sunan bir yo
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM'a giriş](../atl/introduction-to-com.md)   
- [COM nesneleri ve arabirimler](http://msdn.microsoft.com/library/windows/desktop/ms690343)
+ [COM nesneleri ve arabirimler](/windows/desktop/com/com-objects-and-interfaces)
 

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cb5a3ebbf3ecf1454745d507fc2f2b6f792768ac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 848ea415d0638b6135c69cd14e442f45dab40237
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600427"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220367"
 ---
 # <a name="custom-c"></a>özel (C++)
 
@@ -49,7 +49,7 @@ Bir değişken koyabilirsiniz bir değer.
 
 **Özel** C++ özniteliği tür kitaplığına yerleştirilecek bilgi neden olur. Tür kitaplığından özel değeri okuyan bir aracı gerekir.
 
-**Özel** özniteliği ile aynı işlevlere sahip [özel](http://msdn.microsoft.com/library/windows/desktop/aa366766) MIDL özniteliği.
+**Özel** özniteliği ile aynı işlevlere sahip [özel](/windows/desktop/Midl/custom) MIDL özniteliği.
 
 ## <a name="requirements"></a>Gereksinimler
 

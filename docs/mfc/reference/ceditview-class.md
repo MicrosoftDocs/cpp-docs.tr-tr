@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7323dfa06e73342e956a9aacb1ad925b6fb022f2
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: bcc4af6f4aeb6c7a0df005d164729cf87065f613
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338502"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220836"
 ---
 # <a name="ceditview-class"></a>CEditView sınıfı
 Düzenleme denetimi ve basit metin düzenleyici işlevselliği uygulamak için kullanılan bir Windows işlevlerini sağlar sınıfını görüntüle türü.  
@@ -120,7 +120,7 @@ class CEditView : public CCtrlView
   
  Sınıfın varsayılan uygulaması `CEditView` aşağıdaki komutları işleyen: ıd_edıt_select_all, ıd_edıt_fınd ıd_edıt_replace ıd_edıt_repeat ve ıd_fıle_prınt.  
   
- Varsayılan karakter sınırını `CEditView` olduğu (1024 \* 1048575 = 1024-1). Bu, temel alınan düzenleme denetiminin EM_LIMITTEXT işlevini çağırarak değiştirilebilir. Ancak, sınırları işletim sistemine göre farklılık gösterir ve türünü düzenleme denetimi (tek veya çok satırlı). Bu sınırlar hakkında daha fazla bilgi için bkz. [EM_LIMITTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761607).  
+ Varsayılan karakter sınırını `CEditView` olduğu (1024 \* 1048575 = 1024-1). Bu, temel alınan düzenleme denetiminin EM_LIMITTEXT işlevini çağırarak değiştirilebilir. Ancak, sınırları işletim sistemine göre farklılık gösterir ve türünü düzenleme denetimi (tek veya çok satırlı). Bu sınırlar hakkında daha fazla bilgi için bkz. [EM_LIMITTEXT](/windows/desktop/Controls/em-limittext).  
   
  Denetiminizin içinde bu sınırı değiştirmek için geçersiz kılın `OnCreate()` için işlev uygulamanızın `CEditView` sınıfı ve aşağıdaki kod satırını ekleyin:  
   

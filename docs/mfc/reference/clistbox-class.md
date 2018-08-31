@@ -112,12 +112,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b77254c78dbb84d546e080ca5bc275919aac64a
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 1f67107b17f304c5a9c4d6f68d68797370502065
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42464583"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221733"
 ---
 # <a name="clistbox-class"></a>CListBox sınıfı
 Windows liste kutusu işlevlerini sağlar.  
@@ -644,7 +644,7 @@ DWORD_PTR GetItemData(int nIndex) const;
  [!code-cpp[NVC_MFC_CListBox#15](../../mfc/codesnippet/cpp/clistbox-class_15.cpp)]  
   
 ##  <a name="getitemdataptr"></a>  CListBox::GetItemDataPtr  
- Bir işaretçi olarak belirtilen liste kutusu öğesi ile ilişkilendirilmiş uygulama tarafından sağlanan 32-bit değerini alır ( **void\***).  
+ Bir işaretçi olarak belirtilen liste kutusu öğesi ile ilişkilendirilmiş uygulama tarafından sağlanan 32-bit değerini alır (**void** <strong>\*</strong>).  
   
 ```  
 void* GetItemDataPtr(int nIndex) const;  
@@ -710,7 +710,7 @@ DWORD GetListBoxInfo() const;
  Sütunun başına öğe sayısı `CListBox` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi işlevselliğine öykünür [LB_GETLISTBOXINFO](http://msdn.microsoft.com/library/windows/desktop/bb775208) Windows SDK içinde açıklandığı gibi ileti.  
+ Bu üye işlevi işlevselliğine öykünür [LB_GETLISTBOXINFO](/windows/desktop/Controls/lb-getlistboxinfo) Windows SDK içinde açıklandığı gibi ileti.  
   
 ##  <a name="getlocale"></a>  CListBox::GetLocale  
  Liste kutusu tarafından kullanılan yerel ayarları alır.  
@@ -1144,7 +1144,7 @@ int SetItemData(
  [!code-cpp[NVC_MFC_CListBox#34](../../mfc/codesnippet/cpp/clistbox-class_34.cpp)]  
   
 ##  <a name="setitemdataptr"></a>  CListBox::SetItemDataPtr  
- Belirtilen öğe belirtilen işaretçisi olacak şekilde, bir liste kutusunda ile ilişkili 32-bit değeri ayarlar ( **void\***).  
+ Belirtilen öğe belirtilen işaretçisi olacak şekilde, bir liste kutusunda ile ilişkili 32-bit değeri ayarlar ( **void** <strong>\*</strong>).  
   
 ```  
 int SetItemDataPtr(

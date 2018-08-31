@@ -1,5 +1,5 @@
 ---
-title: C/C++ yalıtılmış uygulamaları | Microsoft Docs
+title: C/C++ yalıtılmış derleme uygulamalar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,18 +14,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69de94159ef792aedff35efe81e8bb663d571105
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 26a21eb12d9da1caaae3dbd12fe2f3ffd1194bac
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360155"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219099"
 ---
 # <a name="building-cc-isolated-applications"></a>C/C++ Yalıtılmış Uygulamaları Derleme
-Yalıtılmış bir uygulama, yalnızca yan yana derlemelerini bağlıdır ve bir bildirim kullanarak bağımlılıklarını bağlar. Windows üzerinde düzgün çalışması için tam yalıtılmış olması, uygulamanız için gerekli değildir; Uygulamanızı gelecekte hizmet gerekiyorsa, ancak, tam olarak yalıtılmış uygulamanızı yaparken yatırım tarafından zamandan tasarruf. Tamamen yalıtılmış uygulamanızı yapmadan avantajları hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar](http://msdn.microsoft.com/library/aa375190).  
+Yalıtılmış bir uygulama, yan yana derlemelerini bağlıdır ve bir bildiri kullanarak bağımlılıklarını bağlar. Windows üzerinde düzgün şekilde çalıştırmak için tamamen yalıtılmış olarak uygulamanız için gerekli değildir; Gelecekte uygulamanıza bakım yapmak gerekiyorsa ancak uygulamanızın tam yalıtılmış yaparken yatırım tarafından zamandan tasarruf. Uygulamanızı tamamen yalıtılmış yapma avantajları hakkında daha fazla bilgi için bkz: [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications).  
   
- Visual C++ kullanarak yerel C/C++ uygulamanızı oluşturma sırasında varsayılan olarak Visual Studio Proje sistemi Visual C++ kitaplıkları, uygulamanızın bağımlılıkları tanımlayan bir bildirim dosyası oluşturur. Bunlar yalnızca bağımlılıkları ise Visual Studio ile yeniden hemen yalıtılmış bir uygulama olur sonra uygulamanızın yoktur. Uygulamanızın çalışma zamanında diğer kitaplıklarını kullanarak sonra bu kitaplıkları açıklanan adımları izleyerek yan yana derlemeleri olarak yeniden oluşturma gerekebilir [yapı C/C++ yan yana derlemeler](../build/building-c-cpp-side-by-side-assemblies.md).  
+ Visual C++ kullanarak yerel C/C++ uygulamanızı oluştururken, varsayılan olarak Visual Studio Proje sistemi uygulama bağımlılıklarınızın Visual C++ kitaplıklarındaki tanımlayan bir bildirim dosyası oluşturur. Bunların yalnızca bağımlılık olması halinde Visual Studio ile yeniden olarak yalıtılmış bir uygulama haline gelir sonra uygulamanız vardır. Uygulamanızın çalışma zamanında diğer kitaplıkları kullanan sonra yan yana derlemeler içinde açıklanan adımları izleyerek bu kitaplıkları yeniden gerekebilir [C/C++ yan yana derlemeler oluşturuluyor](../build/building-c-cpp-side-by-side-assemblies.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yalıtılmış uygulamalar ve yan yana derlemeler kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
+ [Yalıtılmış uygulamalar ve yan yana derleme kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)   
  [C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-isolated-applications-and-side-by-side-assemblies.md)

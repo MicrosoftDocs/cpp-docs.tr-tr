@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2862945fa95ca45d8544eda0bb06080c5e45c2e
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: fa9ee25403464a13418081abc8e8e150c7e03500
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42466014"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217465"
 ---
 # <a name="isupporterrorinfoimpl-class"></a>Isupporterrorınfoımpl sınıfı
 Bu sınıfın bir varsayılan uygulamayı sağlar [ISupportErrorInfo arabirimi](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-isupporterrorinfo) ve yalnızca tek bir arabirim bir nesne üzerinde hata oluşturduğunda kullanılabilir.  
@@ -125,7 +125,7 @@ STDMETHOD(SetSize)int nNumThreads);
   
  Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
   
- Varsa *nNumThreads* sıfır [ATLS_DEFAULT_THREADSPERPROC](http://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
+ Varsa *nNumThreads* sıfır [ATLS_DEFAULT_THREADSPERPROC](https://msdn.microsoft.com/library/e0dcf107-72a9-4122-abb4-83c63aa7d571) toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  

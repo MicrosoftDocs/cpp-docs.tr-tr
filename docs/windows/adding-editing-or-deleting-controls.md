@@ -17,18 +17,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d8b1b1452eceefbe6e04200d8aded544fdc4d1da
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 61caccd2a4511faf937f73e3ee17efe8f1b0bb2f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590982"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219442"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
 
 Kullanarak **iletişim** Düzenleyicisi, yeniden boyutlandırma ekleyebilir, düzenleme ve silme iletişim kutularındaki denetimler. Ayrıca kendi kimliği gibi bir denetimin özelliklerini düzenleyebilir ya da çalışma zamanında başlangıçta görünür olup.
 
-Kısayol menüsünde kullanabilirsiniz **iletişim** Düzenleyicisi hızlı bir şekilde eklemek için kayıtlı bir iletişim kutusuna ActiveX denetimleri ve ActiveX denetimlerine ekleyebilirsiniz **araç kutusu** hızlı erişim için (daha fazla bilgi için bkz. [Özelleştirme araç kutusu iletişim kutusunda](http://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
+Kısayol menüsünde kullanabilirsiniz **iletişim** Düzenleyicisi hızlı bir şekilde eklemek için kayıtlı bir iletişim kutusuna ActiveX denetimleri ve ActiveX denetimlerine ekleyebilirsiniz **araç kutusu** hızlı erişim için (daha fazla bilgi için bkz. [Özelleştirme araç kutusu iletişim kutusunda](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb)).
 
 - [İletişim kutusuna denetim ekleme](adding-a-control-to-a-dialog-box.md)
 

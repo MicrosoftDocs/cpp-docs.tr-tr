@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c32aed9d50e0575893c99a9552c74e6e491ecb9
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 1c44abc596f5338ad82b49bc9761abfc5bb26a1a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853026"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216208"
 ---
 # <a name="colepropertiesdialog-class"></a>COlePropertiesDialog sınıfı
 Windows ortak OLE nesne özelliği iletişim kutusunu kapsüller.  
@@ -153,10 +153,10 @@ virtual INT_PTR DoModal();
 ### <a name="return-value"></a>Dönüş Değeri  
  IDOK veya IDCANCEL başarılıysa; Aksi durumda 0. IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
- IDCANCEL döndürülürse, Windows çağırabilirsiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
+ IDCANCEL döndürülürse, Windows çağırabilirsiniz [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.  
   
 ##  <a name="m_gp"></a>  COlePropertiesDialog::m_gp  
- Türünden bir yapıyı [OLEUIGNRLPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687297)OLE nesne özelliği iletişim kutusu, genel sayfayı başlatmak için kullanılır.  
+ Türünden bir yapıyı [OLEUIGNRLPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuignrlpropsa)OLE nesne özelliği iletişim kutusu, genel sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUIGNRLPROPS m_gp;  
@@ -168,7 +168,7 @@ OLEUIGNRLPROPS m_gp;
  Daha fazla bilgi için `OLEUIGNRLPROPS` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_lp"></a>  COlePropertiesDialog::m_lp  
- Türünden bir yapıyı [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735)OLE nesne özelliği iletişim kutusunun bağlantı sayfayı başlatmak için kullanılır.  
+ Türünden bir yapıyı [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa)OLE nesne özelliği iletişim kutusunun bağlantı sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUILINKPROPS m_lp;  
@@ -180,7 +180,7 @@ OLEUILINKPROPS m_lp;
  Daha fazla bilgi için `OLEUILINKPROPS` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_op"></a>  COlePropertiesDialog::m_op  
- Türünden bir yapıyı [OLEUIOBJECTPROPS](http://msdn.microsoft.com/library/windows/desktop/ms687199)ortak OLE nesne özelliği iletişim kutusunu başlatmak için kullanılır.  
+ Türünden bir yapıyı [OLEUIOBJECTPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiobjectpropsa)ortak OLE nesne özelliği iletişim kutusunu başlatmak için kullanılır.  
   
 ```  
 OLEUIOBJECTPROPS m_op;  
@@ -189,10 +189,10 @@ OLEUIOBJECTPROPS m_op;
 ### <a name="remarks"></a>Açıklamalar  
  Bu yapı, genel, bağlantı ve görünüm sayfa başlatmak için kullanılan üyeler içerir.  
   
- Daha fazla bilgi için bkz: OLEUIOBJECTPROPS ve [OLEUILINKPROPS](http://msdn.microsoft.com/library/windows/desktop/ms680735) yapıları, Windows SDK'sı.  
+ Daha fazla bilgi için bkz: OLEUIOBJECTPROPS ve [OLEUILINKPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuilinkpropsa) yapıları, Windows SDK'sı.  
   
 ##  <a name="m_psh"></a>  COlePropertiesDialog::m_psh  
- Türünden bir yapıyı [PROPSHEETHEADER](http://msdn.microsoft.com/library/windows/desktop/bb774546), üyeleri iletişim nesnesinin özelliklerini depolayın.  
+ Türünden bir yapıyı [PROPSHEETHEADER](/windows/desktop/api/prsht/ns-prsht-_propsheetheadera_v2), üyeleri iletişim nesnesinin özelliklerini depolayın.  
   
 ```  
 PROPSHEETHEADER m_psh;  
@@ -206,7 +206,7 @@ PROPSHEETHEADER m_psh;
  Daha fazla bilgi için `PROPSHEETHEADER` yapısı, Windows SDK'sı bakın.  
   
 ##  <a name="m_vp"></a>  COlePropertiesDialog::m_vp  
- Türünden bir yapıyı [OLEUIVIEWPROPS](http://msdn.microsoft.com/library/windows/desktop/ms693751)OLE nesne özelliği iletişim kutusunun görünümü sayfayı başlatmak için kullanılır.  
+ Türünden bir yapıyı [OLEUIVIEWPROPS](/windows/desktop/api/oledlg/ns-oledlg-tagoleuiviewpropsa)OLE nesne özelliği iletişim kutusunun görünümü sayfayı başlatmak için kullanılır.  
   
 ```  
 OLEUIVIEWPROPS m_vp;  

@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4459865bc2ba374048622167fadb7bcf8fb97c99
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 424bb8e7082432cea3f730bb0783c2c1912c293f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028180"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220512"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX Denetimleri: İyileştirme
 Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirmek için kullanabileceğiniz teknikleri açıklar.  
@@ -53,7 +53,7 @@ Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirme
 |**İşaretçi bildirimleri etkin olmadığında fare** onay kutusu|Seçim|[Devre Dışı İken Fare Etkileşimi Sağlama](../mfc/providing-mouse-interaction-while-inactive.md)|  
 |**Kod en iyi duruma getirilmiş** onay kutusu|Seçim|[Denetim Çizimini İyileştirme](../mfc/optimizing-control-drawing.md)|  
   
- Bu iyileştirmeler uygulamak üye işlevleri hakkında ayrıntılı bilgi için bkz: [COleControl](../mfc/reference/colecontrol-class.md). Üye işlevleri tarafından kullanım, gibi listelenen [penceresiz Operations](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df) ve [işleme etkin olmayan işaretçi işlevleri](http://msdn.microsoft.com/e9e28f79-9a70-4ae4-a5aa-b3e92f1904df).  
+ Bu iyileştirmeler uygulamak üye işlevleri hakkında ayrıntılı bilgi için bkz: [COleControl](../mfc/reference/colecontrol-class.md).  
   
  Daha fazla bilgi için bkz.:  
   

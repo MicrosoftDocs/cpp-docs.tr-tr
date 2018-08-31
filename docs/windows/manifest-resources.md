@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c9a1786e5b3a6fb150e3e27fb459ac4341486ca
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e1520cd301fa46fb4d9521fd6d4180ebd3710f67
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604794"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218256"
 ---
 # <a name="manifest-resources"></a>Bildirim Kaynakları
 
@@ -43,11 +43,11 @@ Bildirim kaynakları kullanan bir uygulama bağımlılıkları açıklayan XML d
 </dependency>
 ```
 
-Bir Windows XP veya Windows Vista Uygulama için bildirim kaynağı değil yalnızca uygulama Windows ortak denetimleri (v6.0, yukarıda görüldüğü gibi) en güncel sürümünü kullanın, ancak ayrıca destekler belirtir [Syslink denetimi](http://msdn.microsoft.com/library/windows/desktop/bb760706).
+Bir Windows XP veya Windows Vista Uygulama için bildirim kaynağı değil yalnızca uygulama Windows ortak denetimleri (v6.0, yukarıda görüldüğü gibi) en güncel sürümünü kullanın, ancak ayrıca destekler belirtir [Syslink denetimi](/windows/desktop/Controls/syslink-overview).
 
-Bir bildirim kaynakta yer alan bilgileri yazın ve sürümünü görüntülemek için dosyayı bir XML Görüntüleyici veya Visual Studio'da açabilirsiniz [metin düzenleyici](http://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1). Daha fazla bilgi için [Visual Studio Metin Düzenleyicisi'nde bildirim kaynağını açma](../windows/how-to-open-a-manifest-resource.md).
+Bir bildirim kaynakta yer alan bilgileri yazın ve sürümünü görüntülemek için dosyayı bir XML Görüntüleyici veya Visual Studio'da açabilirsiniz [metin düzenleyici](https://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1). Daha fazla bilgi için [Visual Studio Metin Düzenleyicisi'nde bildirim kaynağını açma](../windows/how-to-open-a-manifest-resource.md).
 
-Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](http://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
+Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz [Walkthrough: Using Resources for LocalizationASP.NETile](https://msdn.microsoft.com/Library/bb4e5b44-e2b0-48ab-bbe9-609fb33900b6).
 
 ## <a name="limitations"></a>Sınırlamalar
 

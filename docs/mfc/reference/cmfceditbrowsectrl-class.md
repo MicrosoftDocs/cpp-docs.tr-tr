@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec3bfc550843675673782ea92ff7fad6eae2967b
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 9799021942cbb8a505cc993ff97f5f42e6d0f20f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465375"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222374"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.  
@@ -74,7 +74,7 @@ class CMFCEditBrowseCtrl : public CEdit
 |[CMFCEditBrowseCtrl::OnChangeLayout](#onchangelayout)|Geçerli düzenleme Gözat denetimini yeniden çizer.|  
 |[CMFCEditBrowseCtrl::OnDrawBrowseButton](#ondrawbrowsebutton)|Göz at düğmesine çizmek için framework tarafından çağırılır.|  
 |[CMFCEditBrowseCtrl::OnIllegalFileName](#onillegalfilename)|Geçersiz dosya adı düzenleme denetimine girilen framework tarafından çağırılır.|  
-|`CMFCEditBrowseCtrl::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).|  
+|`CMFCEditBrowseCtrl::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. Söz dizimi ve daha fazla bilgi için bkz: [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).|  
 |[CMFCEditBrowseCtrl::SetBrowseButtonImage](#setbrowsebuttonimage)|Özel bir görüntü için göz at düğmesine ayarlar.|  
   
 ## <a name="remarks"></a>Açıklamalar  

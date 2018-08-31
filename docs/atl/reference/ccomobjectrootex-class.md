@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55da0705027d6625d4140691b1b91912fb94c555
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 4ca7cfb6a3d83e69c4b447a9e953581285ffaaf0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027533"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219179"
 ---
 # <a name="ccomobjectrootex-class"></a>CComObjectRootEx sınıfı
 Bu sınıf, toplanmayan ve toplanan nesneler için nesne başvuru sayısı Yönetimi işlemek için yöntemler sağlar.  
@@ -99,7 +99,7 @@ class CComObjectRootEx : public CComObjectRootBase
   
  Kullanmanın avantajı `CComPolyObject` ikisinin önlemek olan `CComAggObject` ve `CComObject` toplanmış ve toplanmayan durumlarında, modüldeki. Tek bir `CComPolyObject` nesnesi, her iki durumda işler. Bu nedenle, yalnızca bir kopyasını vtable ve işlevlerin bir kopya, modülünüzde mevcut. Vtable büyükse, bu, modül boyutu önemli ölçüde düşürebilir. Ancak, vtable küçükse kullanarak `CComPolyObject` bir toplanmış veya toplanmayan nesnesi için iyileştirilmediğinden biraz daha büyük bir modül boyutu sonuçlanabilir olarak `CComAggObject` ve `CComObject`.  
   
- Nesne toplanırsa, [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) tarafından uygulanan `CComAggObject` veya `CComPolyObject`. Bu sınıfların temsilci `QueryInterface`, `AddRef`, ve `Release` çağrılar `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease` için dış bilinmeyen iletmek için. Genellikle, geçersiz kılmanız `CComObjectRootEx::FinalConstruct` sınıfınızda, toplanan tüm nesneleri oluşturmak ve yok saymak için `CComObjectRootEx::FinalRelease` herhangi boşaltmak için nesneleri toplanır.  
+ Nesne toplanırsa, [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) tarafından uygulanan `CComAggObject` veya `CComPolyObject`. Bu sınıfların temsilci `QueryInterface`, `AddRef`, ve `Release` çağrılar `CComObjectRootEx`'s `OuterQueryInterface`, `OuterAddRef`, ve `OuterRelease` için dış bilinmeyen iletmek için. Genellikle, geçersiz kılmanız `CComObjectRootEx::FinalConstruct` sınıfınızda, toplanan tüm nesneleri oluşturmak ve yok saymak için `CComObjectRootEx::FinalRelease` herhangi boşaltmak için nesneleri toplanır.  
   
  Nesnenizin toplanmaz, `IUnknown` tarafından uygulanan `CComObject` veya `CComPolyObject`. Bu durumda, çağrılar `QueryInterface`, `AddRef`, ve `Release` için temsilci `CComObjectRootEx`'s `InternalQueryInterface`, `InternalAddRef`, ve `InternalRelease` gerçek işlemleri gerçekleştirmek için.  
   
@@ -222,7 +222,7 @@ ULONG InternalRelease();
  İş parçacığı modeli birden çok iş parçacıklı, ise `InterlockedDecrement` birden fazla iş parçacığı aynı anda başvuru sayısı değiştirmesini engellemek için kullanılır.  
   
 ##  <a name="lock"></a>  CComObjectRootEx::Lock  
- İş parçacığı modeli birden çok iş parçacıklı ise, Win32 API işlevi bu yöntemi çağırır [EnterCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682608), alınan bir özel veri üyesi iş parçacığı, kritik bölüm nesne sahipliğini kadar hangi bekler.  
+ İş parçacığı modeli birden çok iş parçacıklı ise, Win32 API işlevi bu yöntemi çağırır [EnterCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-entercriticalsection), alınan bir özel veri üyesi iş parçacığı, kritik bölüm nesne sahipliğini kadar hangi bekler.  
   
 ```
 void Lock();
@@ -279,7 +279,7 @@ IUnknown*
  Nesne toplanırsa, dış bilinmeyen işaretçi depolanan `m_pOuterUnknown`. Nesne değil toplanırsa, başvuru sayısı erişilen `AddRef` ve `Release` depolanan [m_dwRef](#m_dwref).  
   
 ##  <a name="objectmain"></a>  CComObjectRootEx::ObjectMain  
- Listelenen her sınıf için [nesne eşlemesine](http://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f), ne zaman modülü başlatıldıktan sonra bu işlev çağrılır ve yeniden zaman bunu sonlandırılır.  
+ Listelenen her sınıf için [nesne eşlemesine](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f), ne zaman modülü başlatıldıktan sonra bu işlev çağrılır ve yeniden zaman bunu sonlandırılır.  
   
 ```
 static void WINAPI ObjectMain(bool bStarting);
@@ -292,7 +292,7 @@ static void WINAPI ObjectMain(bool bStarting);
 ### <a name="remarks"></a>Açıklamalar  
  Değerini *bStarting* parametresi gösterir modülü yüklenmekte olan başlatıldı veya sonlandırıldı. Varsayılan uygulaması `ObjectMain` hiçbir şey yapmaz, ancak bu işlev başlatmak veya sınıf için ayırmak istediğiniz kaynakları temizlemek için sınıfınızda geçersiz kılabilirsiniz. Unutmayın `ObjectMain` sınıfın tüm örnekleri istenen önce çağrılır.  
   
- `ObjectMain` kısıtlı giriş noktası işlevi gerçekleştirebilir işlem türü, bu nedenle, DLL giriş noktasından çağrılır. Bu kısıtlamalar hakkında daha fazla bilgi için bkz. [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) ve [DllMain](http://msdn.microsoft.com/library/windows/desktop/ms682583).  
+ `ObjectMain` kısıtlı giriş noktası işlevi gerçekleştirebilir işlem türü, bu nedenle, DLL giriş noktasından çağrılır. Bu kısıtlamalar hakkında daha fazla bilgi için bkz. [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../../build/run-time-library-behavior.md) ve [DllMain](/windows/desktop/Dlls/dllmain).  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_ATL_COM#41](../../atl/codesnippet/cpp/ccomobjectrootex-class_2.h)]  
@@ -335,7 +335,7 @@ ULONG OuterRelease();
  Hata ayıklama olmayan yapılarında, her zaman 0 değerini döndürür. Hata ayıklama yapılarında, tanılama için kullanışlı veya test olabilecek bir değer döndürür.  
   
 ##  <a name="unlock"></a>  CComObjectRootEx::Unlock  
- İş parçacığı modeli birden çok iş parçacıklı ise, Win32 API işlevi bu yöntemi çağırır [LeaveCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms684169), kritik bölüm nesnenin hangi sürümler sahipliğini elde bir özel veri üyesi.  
+ İş parçacığı modeli birden çok iş parçacıklı ise, Win32 API işlevi bu yöntemi çağırır [LeaveCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-leavecriticalsection), kritik bölüm nesnenin hangi sürümler sahipliğini elde bir özel veri üyesi.  
   
 ```
 void Unlock();

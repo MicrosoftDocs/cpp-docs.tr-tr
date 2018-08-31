@@ -9,12 +9,12 @@ f1_keywords:
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 327e37d1f13691eca049c98e8b1ab314b393a608
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 11c4f3d1c994ee7a29ee47e35881d533f8c8715a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464993"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216194"
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 
@@ -45,7 +45,7 @@ void operator delete(void* ptr,
 
 İlk işlev değerini işlemek için bir silme ifadesi tarafından çağrılır *ptr* geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir işlev tanımlayabilirsiniz. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen [new işleci](../standard-library/new-operators.md#op_new)(**size_t**).
 
-Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Varsayılan davranışı NULL olmayan değer *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen `operator new`(**size_t**), veya herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void\***, **size_t**).
+Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Varsayılan davranışı NULL olmayan değer *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen `operator new`(**size_t**), veya herhangi bir `calloc`( **size_t**), `malloc`( **size_t**), veya `realloc`( **void**<strong>\*</strong>, **size_t**).
 
 İkinci işlev formun yeni bir ifadeye karşılık gelen bir yerleştirme delete ifadesi tarafından çağrılır **yeni**( **std::size_t**). Hiçbir şey yapmaz.
 
@@ -75,7 +75,7 @@ void operator delete[](void* ptr,
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk işlev çağıran bir `delete[]` değerini işlemek için ifade *ptr* geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir fonksiyon tanımlayın çünkü değiştirilebilir bir işlevdir. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen [new işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Varsayılan davranışı NULL olmayan değer *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)(**size_t**), veya herhangi bir `calloc`(**size_t**), `malloc`(**size_t**), veya `realloc`( **void\***, **size_t**).
+İlk işlev çağıran bir `delete[]` değerini işlemek için ifade *ptr* geçersiz. Program C++ Standart Kitaplığı tarafından tanımlanan varsayılan sürümü değiştirir. Bu işlev imzası olan bir fonksiyon tanımlayın çünkü değiştirilebilir bir işlevdir. Bir değeri kabul etmek için gerekli davranıştır *ptr* diğer bir deyişle null ya da daha önceki bir çağrı tarafından döndürülen [new işleci&#91;&#93;](../standard-library/new-operators.md#op_new_arr)(**size_t**). Null değeri için varsayılan davranış *ptr* hiçbir şey yapma sağlamaktır. Diğer herhangi bir değerini *ptr* daha önce daha önce açıklandığı gibi bir çağrı tarafından döndürülen bir değer olmalıdır. Böyle bir null olmayan değer için varsayılan davranış *ptr* önceki çağrı tarafından ayrılan depolamayı geri alma sağlamaktır. Hangi koşullar altında bir sonraki çağrı tarafından ayrılır kısmını veya tamamını geri kazanılan gibi depolama belirtilmeyen [new işleci](../standard-library/new-operators.md#op_new)(**size_t**), veya herhangi bir `calloc`(**size_t**), `malloc`(**size_t**), veya `realloc`( **void**<strong>\*</strong>, **size_t**) .
 
 İkinci işlevi tarafından bir yerleştirme denir `delete[]` ifade karşılık gelen bir `new[]` biçiminde ifade `new[]`(**std::size_t**). Hiçbir şey yapmaz.
 

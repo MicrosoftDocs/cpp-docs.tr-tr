@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb8dd6fbb4cbbcea6e452afadff5b0c0e081d34e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: ff3bc9ea331be6c25be80b21c14a309d47718c8e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339416"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217339"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 İletişim kutularını ekranda görüntülemek için kullanılan taban sınıf.  
@@ -115,7 +115,7 @@ class CDialog : public CWnd
   
  Kalıcı bir iletişim kutusu oluşturmak için türetilmiş bir iletişim kutusu sınıfı için oluşturucu kullanılarak yığındaki bir nesne oluşturmak ve sonra çağrı `DoModal` iletişim kutusu penceresine ve denetimlerini oluşturmak için. Kalıcı olmayan iletişim kutusu oluşturmak istiyorsanız, çağrı `Create` iletişim sınıfınızı oluşturucusunun içinde.  
   
- Kullanarak bellekte bir şablon oluşturabilirsiniz bir [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) veri Windows SDK içinde anlatıldığı gibi yapılandırın. Oluşturun, sonra bir `CDialog` nesne, çağrı [CreateIndirect](#createindirect) bir geçici oluşturma iletişim kutusu veya çağrı [InitModalIndirect](#initmodalindirect) ve [DoModal](#domodal) kalıcı bir oluşturmak için iletişim kutusu.  
+ Kullanarak bellekte bir şablon oluşturabilirsiniz bir [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) veri Windows SDK içinde anlatıldığı gibi yapılandırın. Oluşturun, sonra bir `CDialog` nesne, çağrı [CreateIndirect](#createindirect) bir geçici oluşturma iletişim kutusu veya çağrı [InitModalIndirect](#initmodalindirect) ve [DoModal](#domodal) kalıcı bir oluşturmak için iletişim kutusu.  
   
  Veri Değişimi ve doğrulaması eşlemesi içinde geçersiz kılma yazılır `CWnd::DoDataExchange` yeni iletişim sınıfınıza eklenir. Bkz: [DoDataExchange](../../mfc/reference/cwnd-class.md#dodataexchange) üye işlevinde `CWnd` değişimi ve doğrulaması işlevselliği hakkında daha fazla bilgi için.  
   
@@ -220,7 +220,7 @@ virtual BOOL Create(
   
  `Create` İletişim kutusu oluşturur hemen sonra üye işlevi döndürür.  
   
- Üst pencere oluşturulurken iletişim kutusu görüntülendiğinde iletişim kutusu şablonunda ws_vısıble stili kullanın. Aksi takdirde, çağırmalıdır `ShowWindow`. Daha fazla iletişim kutusu stilleri ve bunların uygulama için bkz [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) Windows SDK yapısı ve [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) içinde *MFC başvurusu*.  
+ Üst pencere oluşturulurken iletişim kutusu görüntülendiğinde iletişim kutusu şablonunda ws_vısıble stili kullanın. Aksi takdirde, çağırmalıdır `ShowWindow`. Daha fazla iletişim kutusu stilleri ve bunların uygulama için bkz [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) Windows SDK yapısı ve [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) içinde *MFC başvurusu*.  
   
  Kullanım `CWnd::DestroyWindow` işlevi tarafından oluşturulan bir iletişim kutusu yok edilecek `Create` işlevi.  
   
@@ -244,7 +244,7 @@ virtual BOOL CreateIndirect(
   
 ### <a name="parameters"></a>Parametreler  
  *lpDialogTemplate*  
- İletişim kutusu oluşturmak için kullanılan bir iletişim kutusu şablonu içeren bellek işaret eder. Bu şablon biçiminde olan bir [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) yapısı ve denetim bilgileri, Windows SDK içinde açıklandığı gibi.  
+ İletişim kutusu oluşturmak için kullanılan bir iletişim kutusu şablonu içeren bellek işaret eder. Bu şablon biçiminde olan bir [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) yapısı ve denetim bilgileri, Windows SDK içinde açıklandığı gibi.  
   
  *pParentWnd*  
  İşaret iletişim nesnenin üst pencere nesnesi için (tür [CWnd](../../mfc/reference/cwnd-class.md)). NULL ise, ana uygulama penceresini iletişim nesnenin üst penceresine ayarlanır.  
@@ -261,7 +261,7 @@ virtual BOOL CreateIndirect(
 ### <a name="remarks"></a>Açıklamalar  
  `CreateIndirect` İletişim kutusu oluşturur hemen sonra üye işlevi döndürür.  
   
- Üst pencere oluşturulurken iletişim kutusu görüntülendiğinde iletişim kutusu şablonunda ws_vısıble stili kullanın. Aksi takdirde, çağırmalıdır `ShowWindow` görünmesine neden olacak. Nasıl şablonda diğer iletişim kutusu stilleri belirtebilirsiniz. daha fazla bilgi için bkz: [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) Windows SDK'sındaki yapısı.  
+ Üst pencere oluşturulurken iletişim kutusu görüntülendiğinde iletişim kutusu şablonunda ws_vısıble stili kullanın. Aksi takdirde, çağırmalıdır `ShowWindow` görünmesine neden olacak. Nasıl şablonda diğer iletişim kutusu stilleri belirtebilirsiniz. daha fazla bilgi için bkz: [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) Windows SDK'sındaki yapısı.  
   
  Kullanım `CWnd::DestroyWindow` işlevi tarafından oluşturulan bir iletişim kutusu yok edilecek `CreateIndirect` işlevi.  
   
@@ -275,7 +275,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir **int** değerini belirten bir değer *Nsonuç* için geçirilen parametre [CDialog::EndDialog](#enddialog) iletişim kutusunu kapatmak için kullanılan üye işlevi. Dönüş değeri başka bir hata oluştu, çıkış penceresi hata bilgileri içerir ve bu durumda, işlev iletişim kutusu veya IDABORT oluşturulamadı -1 ise [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360).  
+ Bir **int** değerini belirten bir değer *Nsonuç* için geçirilen parametre [CDialog::EndDialog](#enddialog) iletişim kutusunu kapatmak için kullanılan üye işlevi. Dönüş değeri başka bir hata oluştu, çıkış penceresi hata bilgileri içerir ve bu durumda, işlev iletişim kutusu veya IDABORT oluşturulamadı -1 ise [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360).  
   
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusu etkin olduğu sırada bu üye işlevi, tüm kullanıcı etkileşim işler. Bu iletişim kutusu kalıcı olmasını sağlayan nedir, diğer bir deyişle, kullanıcı iletişim kutusu kapatılana kadar diğer windows ile etkileşime giremezler.  
@@ -358,7 +358,7 @@ BOOL InitModalIndirect(
   
 ### <a name="parameters"></a>Parametreler  
  *lpDialogTemplate*  
- İletişim kutusu oluşturmak için kullanılan bir iletişim kutusu şablonu içeren bellek işaret eder. Bu şablon biçiminde olan bir [DLGTEMPLATE](http://msdn.microsoft.com/library/windows/desktop/ms645394) yapısı ve denetim bilgileri, Windows SDK içinde açıklandığı gibi.  
+ İletişim kutusu oluşturmak için kullanılan bir iletişim kutusu şablonu içeren bellek işaret eder. Bu şablon biçiminde olan bir [DLGTEMPLATE](/windows/desktop/api/winuser/ns-winuser-dlgtemplate) yapısı ve denetim bilgileri, Windows SDK içinde açıklandığı gibi.  
   
  *hDialogTemplate*  
  Genel bellek içeren bir iletişim kutusunda şablon için bir tanıtıcı içerir. Bu şablon biçiminde olan bir `DLGTEMPLATE` yapısı ve iletişim kutusunda her denetim için verileri.  

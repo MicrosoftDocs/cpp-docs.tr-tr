@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0252cc64a1d14a6d096a5c4ad6dd2e0d6c3c7ff
-ms.sourcegitcommit: c6b095c5f3de7533fd535d679bfee0503e5a1d91
+ms.openlocfilehash: 4c8cc3c6ad476f0a1d69c81dad4eabfed3cc34bd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36957038"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219912"
 ---
 # <a name="cdiscretetransition-class"></a>CDiscreteTransition sınıfı
-Bir ayrık geçiş yalıtır.  
+Bir ayrık geçişi kapsüller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,7 +48,7 @@ class CDiscreteTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition)|Ayrı geçiş nesnesi oluşturur ve parametreleri başlatır.|  
+|[CDiscreteTransition::CDiscreteTransition](#cdiscretetransition)|Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -60,12 +60,12 @@ class CDiscreteTransition : public CBaseTransition;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş işleminin sonunda animasyon değişkeninin değeri.|  
-|[CDiscreteTransition::m_delay](#m_delay)|Son değer anlık anahtarına geciktirmek üzere süre miktarı.|  
-|[CDiscreteTransition::m_hold](#m_hold)|Son değeri değişkeni tutmak süre miktarı.|  
+|[CDiscreteTransition::m_dblFinalValue](#m_dblfinalvalue)|Geçiş sonunda animasyon değişkeninin değeri.|  
+|[CDiscreteTransition::m_delay](#m_delay)|Son değer anlık geçiş gecikme, süre miktarı.|  
+|[CDiscreteTransition::m_hold](#m_hold)|Değişkenin son değerini tutmak saat miktarı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Ayrık bir geçiş sırasında animasyon değişkeni ilk değerinde belirtilen gecikme süresi ve ardından anahtarlara eşzamanlı olarak belirtilen bir son değeri ve bu değeri bırakılmalıdır için için verilen tutma süresi kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işlecini kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Bu COM nesnesinin oluşturulmasını etkisizdir sonra üye değişkenleri değiştirme.  
+ Bir ayrık geçişi sırasında animasyon değişkenin ilk değer belirtilen gecikme süresi ve ardından anahtarlara anında belirtilen son değer ve bu değer, kalan için bir verilen Durma süresini kalır. Tüm geçiş işlemleri otomatik olarak temizlenir olduğundan, bunları ayrılan önerilir işleci kullanarak yeni. NULL ise kapsüllenmiş IUIAnimationTransition COM nesnesi kadar CAnimationController::AnimateGroup tarafından oluşturulur. Üye değişkenleri tüketimi bu COM nesnesi oluşturulmasını etkisi yoktur.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -78,7 +78,7 @@ class CDiscreteTransition : public CBaseTransition;
  **Başlık:** afxanimationcontroller.h  
   
 ##  <a name="cdiscretetransition"></a>  CDiscreteTransition::CDiscreteTransition  
- Ayrı geçiş nesnesi oluşturur ve parametreleri başlatır.  
+ Bir ayrık geçişi nesnesi oluşturur ve parametrelerini başlatır.  
   
 ```  
 CDiscreteTransition(
@@ -89,13 +89,13 @@ CDiscreteTransition(
   
 ### <a name="parameters"></a>Parametreler  
  *gecikme*  
- Son değer anlık anahtarına geciktirmek üzere süre miktarı.  
+ Son değer anlık geçiş gecikme, süre miktarı.  
   
  *dblFinalValue*  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
  *tutun*  
- Son değeri değişkeni tutmak süre miktarı.  
+ Değişkenin son değerini tutmak saat miktarı.  
   
 ##  <a name="create"></a>  CDiscreteTransition::Create  
  Kapsüllenmiş geçiş COM nesnesi oluşturmak için geçiş kitaplığı çağırır.  
@@ -107,28 +107,28 @@ virtual BOOL Create(
 ```  
   
 *pLibrary*  
- Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](https://msdn.microsoft.com/library/windows/desktop/dd371897), standart geçişleri kitaplığı tanımlar.  
+ Bir işaretçi bir [IUIAnimationTransitionLibrary arabirimi](/windows/desktop/api/uianimation/nn-uianimation-iuianimationtransitionlibrary), standart geçişleri kitaplığını tanımlar.  
 
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Geçiş başarılı bir şekilde oluşturulursa TRUE; Aksi takdirde FALSE.  
+ Geçiş başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
   
 ##  <a name="m_dblfinalvalue"></a>  CDiscreteTransition::m_dblFinalValue  
- Geçiş işleminin sonunda animasyon değişkeninin değeri.  
+ Geçiş sonunda animasyon değişkeninin değeri.  
   
 ```  
 DOUBLE m_dblFinalValue;  
 ```  
   
 ##  <a name="m_delay"></a>  CDiscreteTransition::m_delay  
- Son değer anlık anahtarına geciktirmek üzere süre miktarı.  
+ Son değer anlık geçiş gecikme, süre miktarı.  
   
 ```  
 UI_ANIMATION_SECONDS m_delay;  
 ```  
   
 ##  <a name="m_hold"></a>  CDiscreteTransition::m_hold  
- Son değeri değişkeni tutmak süre miktarı.  
+ Değişkenin son değerini tutmak saat miktarı.  
   
 ```  
 UI_ANIMATION_SECONDS m_hold;  

@@ -16,29 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: abdbdbf918462dfb83eff07190c32af1f1b3d015
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b774c5f99387ca4403941d1461593bef8801e5de
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302032"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220638"
 ---
 # <a name="c-runtime-error-r6025"></a>C çalışma zamanı hatası R6025
 saf sanal işlev çağrısı  
   
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, dahili bir sorun olduğundan uygulama kapatıldı. Bu hatanın en yaygın nedeni, uygulama veya bozuk yükleme hatasıdır.  
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hatanın en yaygın nedeni, uygulama ya da bozuk yükleme için kullanılan bir hatadır.  
 >   
 >  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
 >   
->  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
+>  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.  
 > -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.  
   
  **Programcıları için bilgi**  
   
- Hiçbir nesne, saf sanal işlev çağrısını işlemek için örneği.  
+ Hiçbir nesne, saf sanal işlev çağrısındaki işleneceğini örneği.  
   
- Bu hata, bir Özet temel sınıf bir cast türde bir türetilmiş sınıf tarafından oluşturulur, ancak gerçekte bir temel sınıf işaretçidir işaretçi üzerinden bir sanal işlev çağırarak kaynaklanır. Bu gelen atama ortaya çıkabilir bir **void\***  bir sınıf için bir işaretçi için zaman **void\***  temel sınıfı oluşturma sırasında oluşturuldu.  
+ Türetilmiş sınıf türü için bir yayın tarafından oluşturulur ancak gerçekten bir işaretçi temel sınıfın bir işaretçisi aracılığıyla soyut bir temel sınıfta sanal bir işlev çağırarak bu hataya neden olur. Gelen atama olduğunda ortaya çıkabilir bir **void** <strong>\*</strong> bir sınıf işaretçisi olduğunda **void** <strong>\*</strong> oluştu temel sınıf oluşumu sırasında oluşturuldu.  
   
- Daha fazla bilgi için bkz: [Microsoft Destek](http://go.microsoft.com/fwlink/p/?linkid=75220) Web sitesi.
+ Daha fazla bilgi için [Microsoft Destek](http://go.microsoft.com/fwlink/p/?linkid=75220) Web sitesi.

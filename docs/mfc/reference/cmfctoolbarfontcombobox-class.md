@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2625316aa731e658d9d45e495809d2402a3cb4c5
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 12b6d0b0ccc21f4ab1f8b3d7116f098a532d0418
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849756"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216267"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 Sistem yazı tiplerini listesinden bir yazı tipi seçmek kullanıcının sağlayan bir birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi.  
@@ -70,7 +70,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
   
  Belgenin yazı tipi birleşik giriş kutusunda seçili yazı tipi ile eşitlemek için kullanın [CMFCToolBarFontComboBox::GetFontDesc](#getfontdesc) seçili yazı tipinin öznitelikleri almak ve oluşturmak için öznitelikleri kullanmak için yöntemi bir [ CFont sınıfı](../../mfc/reference/cfont-class.md) nesne.  
   
- Yazı tipi birleşik giriş kutusu düğmesi Win32 işlevini çağırır [EnumFontFamiliesEx](http://msdn.microsoft.com/library/windows/desktop/dd162620) ekran ve yazıcı yazı sistemi için kullanılabilir belirlemek için.  
+ Yazı tipi birleşik giriş kutusu düğmesi Win32 işlevini çağırır [EnumFontFamiliesEx](/windows/desktop/api/wingdi/nf-wingdi-enumfontfamiliesexa) ekran ve yazıcı yazı sistemi için kullanılabilir belirlemek için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -126,7 +126,7 @@ CMFCToolBarFontComboBox();
  TRUETYPE_FONTTYPE  
   
  [in] *nCharSet*  
- Tüm karakter kümelerindeki tüm benzersiz adlı yazı DEFAULT_CHARSET, birleşik giriş kutusu kümesine içeriyorsa. (Varsa aynı ada sahip iki yazı tipi birleşik giriş kutusu bunlardan biri içeriyor.) Yalnızca belirtilen karakter kümesini yazı tipi birleşik giriş kutusu bir geçersiz karakter kümesi değere ayarlanmış içeriyorsa. Bkz: [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) olası karakter bir listesi için ayarlar.  
+ Tüm karakter kümelerindeki tüm benzersiz adlı yazı DEFAULT_CHARSET, birleşik giriş kutusu kümesine içeriyorsa. (Varsa aynı ada sahip iki yazı tipi birleşik giriş kutusu bunlardan biri içeriyor.) Yalnızca belirtilen karakter kümesini yazı tipi birleşik giriş kutusu bir geçersiz karakter kümesi değere ayarlanmış içeriyorsa. Bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) olası karakter bir listesi için ayarlar.  
   
  [in] *dwStyle*  
  Birleşik giriş kutusunun stili. (bkz [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  

@@ -16,32 +16,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07459cd4971ea6aec95b632e5c03618248cca401
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 53d87c6f0109708023f57e2d30ae38fa4f4f574b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330745"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222666"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı
-Proje için bilgileri sağlayın. Belirttiğiniz seçenekleri projesinin yansıtılır [özellik sayfası](../ide/working-with-project-properties.md). Proje oluşturduktan sonra görüntüleyin ve aşağıdaki seçeneklerin her biri düzenleyin **Nmake** projenin özellik sayfasındaki sayfası.  
+Proje için bilgileri sağlayın. Belirttiğiniz seçeneklerden projesinin yansıtılır [özellik sayfası](../ide/working-with-project-properties.md). Projeyi oluşturduktan sonra görüntüleyebilir ve her biri aşağıdaki seçenekleri Düzenle **Nmake** sayfası proje özellik sayfası.  
   
  **Komut satırı derleme**  
- Kullanıcı seçtiğinde çalıştırmak için komut satırını belirtir **yapı** gelen **yapı** menüsü. Görüntülenen **oluşturma komut satırı** alanını **Nmake** projenin özellik sayfasındaki sayfası.  
+ Kullanıcının seçtiği tetiklendiğinde çalıştırılacak komut satırını belirtir **derleme** gelen **derleme** menüsü. Görüntülenen **derleme komut satırı** alanını **Nmake** sayfası proje özellik sayfası.  
   
  **Output**  
- Komut satırı için çıktı içeren dosyanın adını belirtir. Varsayılan olarak, bu seçenek Proje adına göre temel alır. Görüntülenen **çıkış** alanını **Nmake** projenin özellik sayfasındaki sayfası.  
+ Çıkış komut satırı içerecek dosyanın adını belirtir. Varsayılan olarak, bu seçenek, proje adını temel alır. Görüntülenen **çıkış** alanını **Nmake** sayfası proje özellik sayfası.  
   
- **Temiz komutları**  
- Kullanıcı seçtiğinde çalıştırmak için komut satırını belirtir **temiz** gelen **yapı** menüsü. Görüntülenen **temiz komut satırı** alanını **Nmake** projenin özellik sayfasındaki sayfası.  
+ **Temizleme komutları**  
+ Kullanıcının seçtiği tetiklendiğinde çalıştırılacak komut satırını belirtir **temiz** gelen **derleme** menüsü. Görüntülenen **temiz komut satırı** alanını **Nmake** sayfası proje özellik sayfası.  
   
- **Komut satırı yeniden oluşturma**  
- Kullanıcı seçtiğinde çalıştırmak için komut satırını belirtir **yeniden** gelen **yapı** menüsü. Görüntülenen **tüm komut satırı yeniden** alanını **Nmake** projenin özellik sayfasındaki sayfası.  
+ **Yeniden derle komut satırı**  
+ Kullanıcının seçtiği tetiklendiğinde çalıştırılacak komut satırını belirtir **yeniden** gelen **derleme** menüsü. Görüntülenen **Rebuild all komut satırı** alanını **Nmake** sayfası proje özellik sayfası.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleme görevleri dosyası projesi Sihirbazı](../ide/makefile-project-wizard.md)   
- [Derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md)   
+ [Bir derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md)   
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)   
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](http://msdn.microsoft.com/en-us/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)

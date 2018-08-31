@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ecf0dc1907d2f78a844756d0efc8add04de6046
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: afbb4600098591900491e7c1ec6f256bc58c26a4
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885279"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220655"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 Bu sınıf, dosya işleme API Windows çevresinde ince bir sarmalayıcı sağlar.  
@@ -132,7 +132,7 @@ HRESULT Create(
  Dosya adı.  
   
  *dwDesiredAccess*  
- İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) Windows SDK.  
+ İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK.  
   
  *dwShareMode*  
  Paylaşım modu. Bkz: *dwShareMode* içinde `CreateFile`.  
@@ -153,7 +153,7 @@ HRESULT Create(
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [CreateFile](http://msdn.microsoft.com/library/windows/desktop/aa363858) oluşturma veya dosyasını açın.  
+ Çağrıları [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) oluşturma veya dosyasını açın.  
   
 ##  <a name="flush"></a>  CAtlFile::Flush  
  Dosya için arabellek temizleyin ve dosyaya yazılacak tüm arabelleğe alınan verileri neden için bu yöntemi çağırın.  
@@ -166,7 +166,7 @@ HRESULT Flush() throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [FlushFileBuffers](http://msdn.microsoft.com/library/windows/desktop/aa364439) dosyayı arabelleğe alınan verileri temizleyemedi.  
+ Çağrıları [FlushFileBuffers](/windows/desktop/api/fileapi/nf-fileapi-flushfilebuffers) dosyayı arabelleğe alınan verileri temizleyemedi.  
   
 ##  <a name="getoverlappedresult"></a>  CAtlFile::GetOverlappedResult  
  Dosya çakışan bir işlem sonuçlarını almak için bu yöntemi çağırın.  
@@ -180,7 +180,7 @@ HRESULT GetOverlappedResult(
   
 ### <a name="parameters"></a>Parametreler  
  *pOverlapped*  
- Çakışan yapı. Bkz: *lpOverlapped* içinde [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) Windows SDK.  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Windows SDK.  
   
  *dwBytesTransferred*  
  Bayt aktarıldı. Bkz: *lpNumberOfBytesTransferred* içinde `GetOverlappedResult`.  
@@ -192,7 +192,7 @@ HRESULT GetOverlappedResult(
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [GetOverlappedResult](http://msdn.microsoft.com/library/windows/desktop/ms683209) dosya çubuğunda çakışan bir işlem sonuçlarını almak için.  
+ Çağrıları [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) dosya çubuğunda çakışan bir işlem sonuçlarını almak için.  
   
 ##  <a name="getposition"></a>  CAtlFile::GetPosition  
  Geçerli dosya işaretçisi konumunu almak için bu yöntemi çağırın.  
@@ -209,7 +209,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) geçerli dosya işaretçisi konumunu almak için.  
+ Çağrıları [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) geçerli dosya işaretçisi konumunu almak için.  
   
 ##  <a name="getsize"></a>  CAtlFile::GetSize  
  Dosyanın bayt cinsinden boyutunu almak için bu yöntemi çağırın.  
@@ -226,7 +226,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [GetFileSize](http://msdn.microsoft.com/library/windows/desktop/aa364955) dosyasının bayt cinsinden boyutunu almak için.  
+ Çağrıları [GetFileSize](/windows/desktop/api/fileapi/nf-fileapi-getfilesize) dosyasının bayt cinsinden boyutunu almak için.  
   
 ##  <a name="lockrange"></a>  CAtlFile::LockRange  
  Diğer işlemlerin erişimini engellemek için dosyanın bir bölgede kilitlemek için bu yöntemi çağırın.  
@@ -246,7 +246,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [LockFile](http://msdn.microsoft.com/library/windows/desktop/aa365202) bir bölgede dosyası kilitlenemiyor. Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Bir dosyanın birden fazla bölgeye kilitleyebilirsiniz ancak çakışan bölge izin verilir. Bir bölge kilidini kaldırdığında kullanarak [CAtlFile::UnlockRange](#unlockrange), bayt aralığı, önceden kilitli olan bölge tam olarak karşılık gelmelidir. `LockRange` bitişik bölgeleri birleştirmez; kilitli iki bölgeleri bitişikse, her ayrı olarak kilidini açmanız gerekir.  
+ Çağrıları [LockFile](/windows/desktop/api/fileapi/nf-fileapi-lockfile) bir bölgede dosyası kilitlenemiyor. Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler tarafından engeller. Bir dosyanın birden fazla bölgeye kilitleyebilirsiniz ancak çakışan bölge izin verilir. Bir bölge kilidini kaldırdığında kullanarak [CAtlFile::UnlockRange](#unlockrange), bayt aralığı, önceden kilitli olan bölge tam olarak karşılık gelmelidir. `LockRange` bitişik bölgeleri birleştirmez; kilitli iki bölgeleri bitişikse, her ayrı olarak kilidini açmanız gerekir.  
   
 ##  <a name="m_ptm"></a>  CAtlFile::m_pTM  
  İşaretçi bir `CAtlTransactionManager` nesne.  
@@ -293,16 +293,16 @@ HRESULT Read(
  Okunan bayt sayısı.  
   
  *pOverlapped*  
- Çakışan yapı. Bkz: *lpOverlapped* içinde [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467) Windows SDK.  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) Windows SDK.  
   
  *pfnCompletionRoutine*  
- Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) Windows SDK.  
+ Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üç forms çağrı [ReadFile](http://msdn.microsoft.com/library/windows/desktop/aa365467), son [ReadFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365468) dosyasından veri okunamıyor. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
+ İlk üç forms çağrı [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile), son [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) dosyasından veri okunamıyor. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
   
 ##  <a name="seek"></a>  CAtlFile::Seek  
  Dosya işaretçisini dosyanın taşımak için bu yöntemi çağırın.  
@@ -324,7 +324,7 @@ HRESULT Seek(
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) dosya işaretçisini taşınır.  
+ Çağrıları [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) dosya işaretçisini taşınır.  
   
 ##  <a name="setsize"></a>  CAtlFile::SetSize  
  Dosya boyutunu ayarlamak için bu yöntemi çağırın.  
@@ -341,7 +341,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [SetFilePointer](http://msdn.microsoft.com/library/windows/desktop/aa365541) ve [SetEndOfFile](http://msdn.microsoft.com/library/windows/desktop/aa365531) dosyasının boyutunu ayarlamak için. Getirisi, dosya işaretçisini dosyanın sonunda konumlandırıldı.  
+ Çağrıları [SetFilePointer](/windows/desktop/api/fileapi/nf-fileapi-setfilepointer) ve [SetEndOfFile](/windows/desktop/api/fileapi/nf-fileapi-setendoffile) dosyasının boyutunu ayarlamak için. Getirisi, dosya işaretçisini dosyanın sonunda konumlandırıldı.  
   
 ##  <a name="unlockrange"></a>  CAtlFile::UnlockRange  
  Bir bölge dosyanın kilidini açmak için bu yöntemi çağırın.  
@@ -361,7 +361,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağrıları [UnlockFile](http://msdn.microsoft.com/library/windows/desktop/aa365715) bir bölge dosyanın kilidini açmak için.  
+ Çağrıları [UnlockFile](/windows/desktop/api/fileapi/nf-fileapi-unlockfile) bir bölge dosyanın kilidini açmak için.  
   
 ##  <a name="write"></a>  CAtlFile::Write  
  Dosya işaretçisi tarafından belirtilen konumda başlayarak dosyaya veri yazmak için bu yöntemi çağırın.  
@@ -392,10 +392,10 @@ HRESULT Write(
  Arabellekteki aktarılacak bayt sayısı.  
   
  *pOverlapped*  
- Çakışan yapı. Bkz: *lpOverlapped* içinde [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747) Windows SDK.  
+ Çakışan yapı. Bkz: *lpOverlapped* içinde [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) Windows SDK.  
   
  *pfnCompletionRoutine*  
- Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) Windows SDK.  
+ Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) Windows SDK.  
   
  *pnBytesWritten*  
  Yazılan bayt sayısı.  
@@ -404,7 +404,7 @@ HRESULT Write(
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- İlk üç forms çağrı [WriteFile](http://msdn.microsoft.com/library/windows/desktop/aa365747), son çağrı [WriteFileEx](http://msdn.microsoft.com/library/windows/desktop/aa365748) dosyaya veri yazmak için. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
+ İlk üç forms çağrı [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile), son çağrı [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) dosyaya veri yazmak için. Kullanım [CAtlFile::Seek](#seek) dosya işaretçisini taşınır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Kayan örnek](../../visual-cpp-samples.md)   

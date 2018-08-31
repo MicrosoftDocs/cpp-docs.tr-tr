@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d54a22bd215a80f3e7cab3770a4ba12cd7baffb
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 218b03ed1e1c69dd7b365e9c2526aef5b1145aed
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027448"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218495"
 ---
 # <a name="coledroptarget-class"></a>COleDropTarget sınıfı
 Bir pencere ve OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.  
@@ -138,7 +138,7 @@ virtual DROPEFFECT OnDragEnter(
 ### <a name="remarks"></a>Açıklamalar  
  Bırakma işlemleri penceresinde gerçekleşecek şekilde izin vermek için bu işlevi geçersiz kılar. Varsayılan Uygulama çağrıları [CView::OnDragEnter](../../mfc/reference/cview-class.md#ondragenter), yalnızca döndüren DROPEFFECT_NONE varsayılan olarak.  
   
- Daha fazla bilgi için [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK.  
+ Daha fazla bilgi için [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) Windows SDK.  
   
 ##  <a name="ondragleave"></a>  COleDropTarget::OnDragLeave  
  İmleç pencerenin ayrılırken bir sürükleme işlemi etkin durumdayken framework tarafından çağırılır.  
@@ -154,7 +154,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Sürükleme işlemi belirtilen pencere ayrıldığında özel davranış istiyorsanız bu işlev yok sayın. Bu işlev varsayılan uygulamasını çağırır [CView::OnDragLeave](../../mfc/reference/cview-class.md#ondragleave).  
   
- Daha fazla bilgi için [IDropTarget::DragLeave](http://msdn.microsoft.com/library/windows/desktop/ms680110) Windows SDK.  
+ Daha fazla bilgi için [IDropTarget::DragLeave](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragleave) Windows SDK.  
   
 ##  <a name="ondragover"></a>  COleDropTarget::OnDragOver  
  İmleç pencerenin üstünden sürüklendiğinde framework tarafından çağırılır.  
@@ -196,7 +196,7 @@ virtual DROPEFFECT OnDragOver(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev penceresinde gerçekleşecek şekilde bırakma işlemleri izin vermek için geçersiz. Bu işlev varsayılan uygulamasını çağırır [CView::OnDragOver](../../mfc/reference/cview-class.md#ondragover), varsayılan olarak DROPEFFECT_NONE döndürür. Bu işlev, bir Sürükle ve bırak işlemi sırasında sık çağrıldığından, mümkün olduğunca hale getirilmiştir.  
   
- Daha fazla bilgi için [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129) Windows SDK.  
+ Daha fazla bilgi için [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#21](../../mfc/codesnippet/cpp/coledroptarget-class_1.cpp)]  
@@ -275,7 +275,7 @@ Bırakma işlemi için kullanıcının seçtiği efekti. Bir veya daha fazlasın
   
  Varsayılan uygulaması `COleDropTarget::OnDrop` çağrıları [CView::OnDrop](../../mfc/reference/cview-class.md#ondrop), yalnızca döndüren FALSE varsayılan olarak.  
   
- Daha fazla bilgi için [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK.  
+ Daha fazla bilgi için [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) Windows SDK.  
   
 ##  <a name="ondropex"></a>  COleDropTarget::OnDropEx  
  Bir bırakma işlemi meydana geldiğinde framework tarafından çağırılır.  
@@ -325,7 +325,7 @@ virtual DROPEFFECT OnDropEx(
   
  - DROPEFFECT_SCROLL sürükleme kaydırma işlemi gerçekleşmek üzere olan veya hedef oluştuğunu gösterir.  
   
- Daha fazla bilgi için [IDropTarget::Drop](http://msdn.microsoft.com/library/windows/desktop/ms687242) Windows SDK.  
+ Daha fazla bilgi için [IDropTarget::Drop](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-drop) Windows SDK.  
   
 ##  <a name="register"></a>  COleDropTarget::Register  
  OLE DLL'leri geçerli bırakma hedefi olarak pencerenizi kaydetmek için bu işlevi çağırın.  
@@ -344,7 +344,7 @@ BOOL Register(CWnd* pWnd);
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, kabul edilmesi bırakma işlemleri için çağrılmalıdır.  
   
- Daha fazla bilgi için [RegisterDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms678405) Windows SDK.  
+ Daha fazla bilgi için [RegisterDragDrop](/windows/desktop/api/ole2/nf-ole2-registerdragdrop) Windows SDK.  
   
 ##  <a name="revoke"></a>  COleDropTarget::Revoke  
  Bir çağrı yoluyla bir bırakma hedefi olarak kayıtlı herhangi bir pencere yok etme öncesinde bu işlevi çağırın [kaydetme](#register) bırakma hedefleri listesinden kaldırmak için.  
@@ -356,7 +356,7 @@ virtual void Revoke();
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev otomatik olarak çağrılır [OnDestroy](../../mfc/reference/cwnd-class.md#ondestroy) genellikle bu işlevi açıkça çağırmak gerekli değildir, kaydedildiği pencere işleyicisi.  
   
- Daha fazla bilgi için [RevokeDragDrop](http://msdn.microsoft.com/library/windows/desktop/ms692643) Windows SDK.  
+ Daha fazla bilgi için [RevokeDragDrop](/windows/desktop/api/ole2/nf-ole2-revokedragdrop) Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC örnek HIERSVR](../../visual-cpp-samples.md)   

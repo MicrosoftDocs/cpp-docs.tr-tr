@@ -1,7 +1,7 @@
 ---
 title: CWnd sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/27/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2107157017001869aa32bdfdf6b976d53e279cb0
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: cecde0bfd829cd55fb15e53fb07aa8b6645fce0e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900609"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218345"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1031,7 +1031,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnHelpIndex](#onhelpindex)|Id_help_ındex komutu işleyen ve varsayılan Yardım konusunun sağlar.|
 |[CWnd::OnHelpUsing](#onhelpusing)|Id_help_usıng komutu işler.|
 |[CWnd::OnToolHitTest](#ontoolhittest)|Bir noktadan belirtilen aracı sınırlayıcı dikdörtgenini içinde olduğundan ve aracı hakkında bilgi alır belirler.|
-|[CWnd::OpenClipboard](#openclipboard)|Pano açılır. Diğer uygulamalar Pano kadar Windows değiştirmek mümkün olmayacaktır [CloseClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649035) işlevi çağrılır.|
+|[CWnd::OpenClipboard](#openclipboard)|Pano açılır. Diğer uygulamalar Pano kadar Windows değiştirmek mümkün olmayacaktır [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) işlevi çağrılır.|
 |[CWnd::PaintWindowlessControls](#paintwindowlesscontrols)|Denetim kapsayıcısı penceresiz denetimlere çizer.|
 |[CWnd::PostMessage](#postmessage)|Uygulama kuyrukta bir ileti yerleştirir ve ardından pencerenin iletiyi işlemek beklemenize gerek kalmadan döndürür.|
 |[CWnd::PreCreateWindow](#precreatewindow)|Şuna bağlı Windows penceresi oluşturulmasını önce çağırılır `CWnd` nesne.|
@@ -1132,7 +1132,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnDeadChar](#ondeadchar)|Sistem dışı geçersiz karakter (örneğin, Vurgu karakterlerini) tuş vuruşu çevirir çağrılır.|
 |[CWnd::OnDeleteItem](#ondeleteitem)|Sahip çizim bağımlı liste kutusu ya da birleşik giriş kutusu yok edildiğinde veya öğeleri denetiminden kaldırıldığında çağrılır.|
 |[CWnd::OnDestroy](#ondestroy)|Çağrılır `CWnd` yok ediliyor.|
-|[CWnd::OnDestroyClipboard](#ondestroyclipboard)|Windows yapılan bir çağrıyla Pano Boşaltıldığında adlı [EmptyClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649037) işlevi.|
+|[CWnd::OnDestroyClipboard](#ondestroyclipboard)|Windows yapılan bir çağrıyla Pano Boşaltıldığında adlı [EmptyClipboard](/windows/desktop/api/winuser/nf-winuser-emptyclipboard) işlevi.|
 |[CWnd::OnDeviceChange](#ondevicechange)|Bir uygulama veya aygıt sürücüsü için bir cihaz veya bilgisayar donanım yapılandırması değişikliği bildirir.|
 |[CWnd::OnDevModeChange](#ondevmodechange)|Kullanıcı cihaz modu ayarlarının değiştiğinde tüm üst düzey pencerelere için çağrılır.|
 |[CWnd::OnDrawClipboard](#ondrawclipboard)|Panonun içerikleri değiştiğinde çağrılır.|
@@ -1176,9 +1176,9 @@ class CWnd : public CCmdTarget
 |[CWnd::OnMenuRButtonUp](#onmenurbuttonup)|İmleci bir menü öğesindeyken kullanıcı sağ fare düğmesini bıraktığında çağrılır.|
 |[CWnd::OnMenuSelect](#onmenuselect)|Kullanıcı bir menü öğesi seçtiğinde çağrılır.|
 |[CWnd::OnMouseActivate](#onmouseactivate)|İmleç etkin olmayan bir penceresidir ve kullanıcı bir fare düğmesine bastığında çağrılır.|
-|[CWnd::OnMouseHover](#onmousehover)|İmleç pencerenin istemci alanının çağrıda belirtilen süre boyunca vurguladığında adlı [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnMouseHover](#onmousehover)|İmleç pencerenin istemci alanının çağrıda belirtilen süre boyunca vurguladığında adlı [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
 |[CWnd::OnMouseHWheel](#onmousehwheel)|Geçerli pencere Masaüstü Pencere Yöneticisi'ni (DWM) tarafından oluşur ve bu penceresi çağrılır.|
-|[CWnd::OnMouseLeave](#onmouseleave)|İmleç için çağrıda belirlenmiş penceredeki istemci alanından ayrılırken adlı [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnMouseLeave](#onmouseleave)|İmleç için çağrıda belirlenmiş penceredeki istemci alanından ayrılırken adlı [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
 |[CWnd::OnMouseMove](#onmousemove)|Fare imleci hareket ettiğinde çağrılır.|
 |[CWnd::OnMouseWheel](#onmousewheel)|Bir kullanıcı, fare tekerleğini döndürdüğünde çağrılır. Windows NT 4.0 ileti işleme kullanır.|
 |[CWnd::OnMove](#onmove)|Sonra konumunu adlı `CWnd` değiştirildi.|
@@ -1194,8 +1194,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnNcMButtonDblClk](#onncmbuttondblclk)|İmleç istemci olmayan alanı içinde olsa da, kullanıcının orta fare düğmesine çift tıkladığında çağrılır `CWnd`.|
 |[CWnd::OnNcMButtonDown](#onncmbuttondown)|İmleç istemci olmayan alanı içinde alanındayken kullanıcı orta fare düğmesine bastığında çağrılır `CWnd`.|
 |[CWnd::OnNcMButtonUp](#onncmbuttonup)|İmleç istemci olmayan alanı içinde alanındayken kullanıcının orta fare düğmesini bıraktığında çağrılır `CWnd`.|
-|[CWnd::OnNcMouseHover](#onncmousehover)|İmleç pencerenin istemci olmayan alanın üzerinde çağrıda belirtilen süre boyunca vurguladığında adlı [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).|
-|[CWnd::OnNcMouseLeave](#onncmouseleave)|İmleci önceki çağrıda belirlenmiş pencerenin istemci olmayan alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnNcMouseHover](#onncmousehover)|İmleç pencerenin istemci olmayan alanın üzerinde çağrıda belirtilen süre boyunca vurguladığında adlı [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
+|[CWnd::OnNcMouseLeave](#onncmouseleave)|İmleci önceki çağrıda belirlenmiş pencerenin istemci olmayan alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).|
 |[CWnd::OnNcMouseMove](#onncmousemove)|İmleç istemci olmayan alanı içinde taşındığında adlı `CWnd`.|
 |[CWnd::OnNcPaint](#onncpaint)|İstemci olmayan alanın boyanmaya ihtiyacı olduğunda çağrılır.|
 |[CWnd::OnNcRButtonDblClk](#onncrbuttondblclk)|İmleç istemci olmayan alanı içinde olsa da, kullanıcının sağ fare düğmesine çift tıkladığında çağrılır `CWnd`.|
@@ -1234,8 +1234,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnSizeClipboard](#onsizeclipboard)|Pano görüntüleyicisine pencerenin istemci alanının boyutu değiştiğinde çağırılır.|
 |[CWnd::OnSizing](#onsizing)|Kullanıcı dikdörtgen yeniden boyutlandırılıyor gösterir.|
 |[CWnd::OnSpoolerStatus](#onspoolerstatus)|Yazdırma Yöneticisi'nden bir proje eklendiğinde veya Yazdırma Yöneticisi sıradan çıkarılacak zaman çağrılır.|
-|[CWnd::OnStyleChanged](#onstylechanged)|Bildiren [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) Windows işlevi, bir veya daha fazla pencere stilleri değişti.|
-|[CWnd::OnStyleChanging](#onstylechanging)|Bildiren [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) bir veya daha fazla pencere stilleri değiştirilmek üzereyken Windows işlevi.|
+|[CWnd::OnStyleChanged](#onstylechanged)|Bildiren [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows işlevi, bir veya daha fazla pencere stilleri değişti.|
+|[CWnd::OnStyleChanging](#onstylechanging)|Bildiren [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) bir veya daha fazla pencere stilleri değiştirilmek üzereyken Windows işlevi.|
 |[CWnd::OnSysChar](#onsyschar)|Bir sistem karaktere bir tuş vuruşu çevirir çağrılır.|
 |[CWnd::OnSysColorChange](#onsyscolorchange)|İçin tüm üst düzey pencerelere sistem renk ayarında değişiklik yapıldığında çağrılır.|
 |[CWnd::OnSysCommand](#onsyscommand)|Kullanıcı denetim menüsünden bir komut seçtiğinde veya kullanıcı Ekranı Kapla veya Simge Durumuna Küçült düğmesini seçtiğinde çağrılır.|
@@ -1247,7 +1247,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnTimer](#ontimer)|Belirtilen her zaman aralığından sonra adlı [SetTimer](#settimer).|
 |[CWnd::OnTouchInput](#ontouchinput)|Windows dokunmatik tek girişten işleyin.|
 |[CWnd::OnTouchInputs](#ontouchinputs)|Windows dokunmatik girişlerinde işlem.|
-|[CWnd::OnUniChar](#onunichar)|Bir tuşa basıldığında çağrılır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646280) iletisi tarafından çevrilir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.|
+|[CWnd::OnUniChar](#onunichar)|Bir tuşa basıldığında çağrılır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.|
 |[CWnd::OnUnInitMenuPopup](#onuninitmenupopup)|Bir açılan menü ya da alt menü yok çağrılır.|
 |[CWnd::OnUpdateUIState](#onupdateuistate)|Belirtilen pencere ve tüm alt pencereler için kullanıcı arabirimi (UI) durumunu değiştirmek için çağrılır.|
 |[CWnd::OnUserChanged](#onuserchanged)|Kullanıcı oturum açıp sonra çağrılır.|
@@ -1285,7 +1285,7 @@ class CWnd : public CCmdTarget
 
 A `CWnd` nesnedir Windows penceresinden farklı, ancak iki sıkı bir şekilde bağlıdır. A `CWnd` nesne oluşturulduğunda veya tarafından yok `CWnd` oluşturucunun ve yıkıcının. Windows, diğer yandan, bir veri yapısı tarafından oluşturulan Windows için iç penceredir bir `Create` üye işlevi ve tarafından yok `CWnd` sanal yıkıcı. [DestroyWindow](#destroywindow) işlevi, nesne yok etme olmadan Windows penceresini yok eder.
 
-`CWnd` Sınıfı ve Gizle ileti eşleme mekanizması `WndProc` işlevi. Gelen Windows bildirim iletileri için uygun ileti eşlemesi aracılığıyla otomatik olarak yönlendirilir **üzerinde *** ileti* `CWnd` üye işlevleri. Geçersiz kılmanız bir **üzerinde *** ileti* , türetilmiş sınıflarda üye belirli iletisini işlemek için üye işlevi.
+`CWnd` Sınıfı ve Gizle ileti eşleme mekanizması `WndProc` işlevi. Gelen Windows bildirim iletileri için uygun ileti eşlemesi aracılığıyla otomatik olarak yönlendirilir **üzerinde**<em>ileti</em> `CWnd` üye işlevleri. Geçersiz kılmanız bir **üzerinde**<em>ileti</em> , türetilmiş sınıflarda üye belirli iletisini işlemek için üye işlevi.
 
 `CWnd` Sınıfı da oluşturmanıza olanak tanıyan bir uygulamanız için Windows alt penceresi. Öğesinden bir sınıf türetin `CWnd`, uygulamanıza özgü verileri depolamak için türetilen sınıfın üye değişkenleri ekleyin. Türetilen bir sınıfta iletileri penceresine yönlendirilirsiniz olduğunda ne olacağını belirlemek için uygulama ileti işleyicisi üye işlevleri ve bir ileti eşleyin.
 
@@ -1324,13 +1324,13 @@ virtual HRESULT accDoDefaultAction(VARIANT varChild);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::accDoDefaultAction](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accdodefaultaction) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
-Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesnenin varsayılan eylemini gerçekleştirmek için. Daha fazla bilgi için [IAccessible::accDoDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318470) Windows SDK.
+Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesnenin varsayılan eylemini gerçekleştirmek için. Daha fazla bilgi için [IAccessible::accDoDefaultAction](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accdodefaultaction) Windows SDK.
 
 ##  <a name="acchittest"></a>  CWnd::accHitTest
 
@@ -1352,7 +1352,7 @@ X-ulaşılmasına koordinatı (ekran birimlerinde) test.
 Y-ulaşılmasına koordinatı (ekran birimlerinde) test.
 
 *pvarChild*  
-Nesnesi tarafından belirtilen bir noktada tanımlama bilgileri alır *xLeft* ve *yTop*. Bkz: *pvarID* içinde [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) Windows SDK.
+Nesnesi tarafından belirtilen bir noktada tanımlama bilgileri alır *xLeft* ve *yTop*. Bkz: *pvarID* içinde [IAccessible::accHitTest](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-acchittest) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1360,11 +1360,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::accHitTest](http://msdn.microsoft.com/library/windows/desktop/dd318471) Windows SDK.
+Daha fazla bilgi için [IAccessible::accHitTest](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-acchittest) Windows SDK.
 
 ##  <a name="acclocation"></a>  CWnd::accLocation
 
@@ -1420,7 +1420,7 @@ virtual HRESULT accNavigate(
 ### <a name="parameters"></a>Parametreler
 
 *navDir*  
-Gezinmek için yönünü belirtir. Bkz: *navDir* içinde [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) Windows SDK.
+Gezinmek için yönünü belirtir. Bkz: *navDir* içinde [IAccessible::accNavigate](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accnavigate) Windows SDK.
 
 *varStart*  
 Başlangıç nesnesi belirtir. Bkz: *varStart* içinde `IAccessible::accNavigate` Windows SDK.
@@ -1434,11 +1434,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::accNavigate](http://msdn.microsoft.com/library/windows/desktop/dd318473) Windows SDK.
+Daha fazla bilgi için [IAccessible::accNavigate](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accnavigate) Windows SDK.
 
 ##  <a name="accselect"></a>  CWnd::accSelect
 
@@ -1453,7 +1453,7 @@ virtual HRESULT accSelect(
 ### <a name="parameters"></a>Parametreler
 
 *flagsSelect*  
-Geçerli seçim veya odak nasıl değiştirileceğini belirtir. Bkz: *flagsSelect* içinde [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) Windows SDK.
+Geçerli seçim veya odak nasıl değiştirileceğini belirtir. Bkz: *flagsSelect* içinde [IAccessible::accSelect](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accselect) Windows SDK.
 
 *varChild*  
 Seçilecek nesne belirtir. Bu parametre, CHILDID_SELF (nesnenin kendisini seçmek için) veya bir alt öğe kimliği (bir nesnenin alt öğeyi seçmek için) olabilir.
@@ -1464,11 +1464,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::accSelect](http://msdn.microsoft.com/library/windows/desktop/dd318474) Windows SDK.
+Daha fazla bilgi için [IAccessible::accSelect](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-accselect) Windows SDK.
 
 ##  <a name="animatewindow"></a>  CWnd::AnimateWindow
 
@@ -1486,7 +1486,7 @@ BOOL AnimateWindow(
 Milisaniye cinsinden, animasyonu oynatın ne kadar sürer belirtir. Genellikle, animasyonun çalmaya 200 milisaniye alır.
 
 *CertOpenStore*  
-Animasyon türünü belirtir. Olası değerler tam bir listesi için bkz. [AnimateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632669).
+Animasyon türünü belirtir. Olası değerler tam bir listesi için bkz. [AnimateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632669).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1494,7 +1494,7 @@ Animasyon türünü belirtir. Olası değerler tam bir listesi için bkz. [Anima
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [AnimateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632669)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [AnimateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632669)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="arrangeiconicwindows"></a>  CWnd::ArrangeIconicWindows
 
@@ -1662,7 +1662,7 @@ void BringWindowToTop();
 
 Ayrıca, `BringWindowToTop` açılan, üst düzey ve MDI alt öğe pencerelerini etkinleştirir. `BringWindowToTop` Üye işlevi kullanılmalıdır kısmen veya tamamen engellediği herhangi bir pencereyi açığa çıkarmak için örtüşen pencerelerin.
 
-Bu işlev sadece Win32 çağırır [BringWindowToTop](http://msdn.microsoft.com/library/windows/desktop/ms632673\(v=vs.85\).aspx) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
+Bu işlev sadece Win32 çağırır [BringWindowToTop](https://msdn.microsoft.com/library/windows/desktop/ms632673\(v=vs.85\).aspx) işlevi. Çağrı [SetWindowPos](#setwindowpos) Z düzeninde bir pencerenin konumunu değiştirmek için işlevi. `BringWindowToTop` İşlevi bir üst düzey pencere yapmak için pencere stilini değişmez. Daha fazla bilgi için [HWND_TOP ile HWND_TOPMOST arasındaki fark nedir](http://blogs.msdn.com/b/oldnewthing/archive/2005/11/21/495246.aspx)
 
 ### <a name="example"></a>Örnek
 
@@ -1690,7 +1690,7 @@ Kullanma `CWnd::adjustBorder` penceresinde koordinatları WS_EX_CLIENTEDGE stili
 
 Hesaplanan Pencere dikdörtgeni boyutu, bir menü çubuğu için alanı içermez.
 
-Daha fazla kullanım kısıtlamaları için bkz: [AdjustWindowRectEx](http://msdn.microsoft.com/library/windows/desktop/ms632667).
+Daha fazla kullanım kısıtlamaları için bkz: [AdjustWindowRectEx](https://msdn.microsoft.com/library/windows/desktop/ms632667).
 
 ### <a name="example"></a>Örnek
 
@@ -1776,7 +1776,7 @@ Gerçekleştirilecek eylemi belirtir. Varsa *Nbakım* sıfır değilse, `CheckDl
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CheckDlgButton` İşlev gönderen bir [BM_SETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775989) belirtilen düğmesine ileti.
+`CheckDlgButton` İşlev gönderen bir [BM_SETCHECK](/windows/desktop/Controls/bm-setcheck) belirtilen düğmesine ileti.
 
 ### <a name="example"></a>Örnek
 
@@ -1806,7 +1806,7 @@ Denetlenecek radyo düğmesinin tamsayı tanımlayıcısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`CheckRadioButton` İşlev gönderen bir [BM_SETCHECK](http://msdn.microsoft.com/library/windows/desktop/bb775989) belirtilen radyo düğmesine ileti.
+`CheckRadioButton` İşlev gönderen bir [BM_SETCHECK](/windows/desktop/Controls/bm-setcheck) belirtilen radyo düğmesine ileti.
 
 ### <a name="example"></a>Örnek
 
@@ -1889,7 +1889,7 @@ void CloseWindow();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [CloseWindow](http://msdn.microsoft.com/library/windows/desktop/ms632678)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [CloseWindow](https://msdn.microsoft.com/library/windows/desktop/ms632678)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="continuemodal"></a>  CWnd::ContinueModal
 
@@ -2009,7 +2009,7 @@ Giriş işaretini tanımlayan bir bit eşlem tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit eşlem önceden tarafından oluşturulmuş olması gerekir [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap) üye işlevini [CreateDIBitmap](http://msdn.microsoft.com/library/windows/desktop/dd183491) Windows işlevi veya [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap) üye işlevi.
+Bit eşlem önceden tarafından oluşturulmuş olması gerekir [CBitmap::CreateBitmap](../../mfc/reference/cbitmap-class.md#createbitmap) üye işlevini [CreateDIBitmap](/windows/desktop/api/wingdi/nf-wingdi-createdibitmap) Windows işlevi veya [CBitmap::LoadBitmap](../../mfc/reference/cbitmap-class.md#loadbitmap) üye işlevi.
 
 `CreateCaret` otomatik olarak varsa, hangi penceresini dikkate almaksızın sahipse giriş işaretini önceki kelimeyi şekil yok eder. Oluşturulduktan sonra giriş işaretinin başlangıçta gizlidir. Giriş işaretini gösterilecek [ShowCaret](#showcaret) üye işlevi çağrılabilir.
 
@@ -2079,7 +2079,7 @@ Denetimin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mf
 İşaret eden bir [POINT yapısı](../../mfc/reference/point-structure1.md) veya `CPoint` denetimin sol üst köşesinde içeren nesne.
 
 *pSize*  
-İşaret eden bir [BOYUTU](http://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` denetimin boyutunu içeren nesne
+İşaret eden bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` denetimin boyutunu içeren nesne
 
 *pParentWnd*  
 Denetiminin üst penceresine belirtir. NULL olmamalıdır.
@@ -2244,7 +2244,7 @@ Giriş işaretini şekle bir çizgi veya bir blok olabilir.
 
 Parametreleri *nWidth* ve *nHeight* eşleme modunu tam genişlik ve yükseklik (piksel cinsinden) değişir; giriş işaretini'nın genişlik ve yüksekliğini (mantıksal birimler cinsinden) belirtin.
 
-Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
+Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
 
 `CreateGrayCaret` Üye işlevi varsa, hangi penceresini dikkate almaksızın sahipse giriş işaretini önceki kelimeyi şekli otomatik olarak bozar. Oluşturulduktan sonra giriş işaretinin başlangıçta gizlidir. Giriş işaretini gösterilecek [ShowCaret](#showcaret) üye işlevi çağrılabilir.
 
@@ -2278,7 +2278,7 @@ Giriş işaretini şekil, çizgi veya blok olabilir.
 
 Parametreleri *nWidth* ve *nHeight* eşleme modunu tam genişlik ve yükseklik (piksel cinsinden) değişir; giriş işaretini'nın genişlik ve yüksekliğini (mantıksal birimler cinsinden) belirtin.
 
-Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
+Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
 
 `CreateSolidCaret` Üye işlevi varsa, hangi penceresini dikkate almaksızın sahipse giriş işaretini önceki kelimeyi şekli otomatik olarak bozar. Oluşturulduktan sonra giriş işaretinin başlangıçta gizlidir. Giriş işaretini gösterilecek [ShowCaret](#showcaret) üye işlevi çağrılabilir.
 
@@ -2462,15 +2462,15 @@ Görüntülenecek dosyaların özniteliklerini belirtir. Bu, aşağıdaki değer
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DlgDirList` gönderen [LB_RESETCONTENT](http://msdn.microsoft.com/library/windows/desktop/bb761325) ve [LB_DIR](http://msdn.microsoft.com/library/windows/desktop/bb775185) liste kutusuna ileti. Belirtilen liste kutusunu doldurur *nIDListBox* tarafından verilen yoldaki eşleşen tüm dosyaları adlarıyla *lpPathSpec*.
+`DlgDirList` gönderen [LB_RESETCONTENT](/windows/desktop/Controls/lb-resetcontent) ve [LB_DIR](/windows/desktop/Controls/lb-dir) liste kutusuna ileti. Belirtilen liste kutusunu doldurur *nIDListBox* tarafından verilen yoldaki eşleşen tüm dosyaları adlarıyla *lpPathSpec*.
 
 *LpPathSpec* parametre aşağıdaki biçime sahiptir:
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Bir yıldız işareti ve herhangi bir karakterle eşleşen anlamına gelen bir soru işareti (*) joker karakter olan ( **\***), herhangi bir sayıda karakteri eşleştirmek anlamına gelir.
+Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan (**?**), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakteri eşleştirmek anlamına gelir.
 
-İçin 0 uzunlukta bir dize belirtirseniz *lpPathSpec*, ya da yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "*.\*".
+İçin 0 uzunlukta bir dize belirtirseniz *lpPathSpec*, ya da yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "\*.\*".
 
 Varsa *lpPathSpec* bir sürücü ve/veya dizin adı içerir liste kutusunun dolu önce geçerli bir sürücü ve dizini atanmış sürücü ve dizine değiştirilir. Metin denetimi tarafından tanımlanan *nIDStaticPath* yeni sürücü ve/veya dizin adı ile de güncelleştirilir.
 
@@ -2530,15 +2530,15 @@ DOS görüntülenecek dosyaların dosya öznitelikleri belirtir. Bu, aşağıdak
 
 ### <a name="remarks"></a>Açıklamalar
 
-`DlgDirListComboBox` gönderen [CB_RESETCONTENT](http://msdn.microsoft.com/library/windows/desktop/bb775878) ve [CB_DIR](http://msdn.microsoft.com/library/windows/desktop/bb775832) birleşik giriş kutusundaki iletileri. Tarafından belirtilen birleşik giriş kutusu liste kutusunun doldurur *nIDComboBox* tarafından verilen yoldaki eşleşen tüm dosyaları adlarıyla *lpPathSpec*.
+`DlgDirListComboBox` gönderen [CB_RESETCONTENT](/windows/desktop/Controls/cb-resetcontent) ve [CB_DIR](/windows/desktop/Controls/cb-dir) birleşik giriş kutusundaki iletileri. Tarafından belirtilen birleşik giriş kutusu liste kutusunun doldurur *nIDComboBox* tarafından verilen yoldaki eşleşen tüm dosyaları adlarıyla *lpPathSpec*.
 
 *LpPathSpec* parametre aşağıdaki biçime sahiptir:
 
 `[drive:] [ [\u]directory[\idirectory]...\u] [filename]`
 
-Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Bir yıldız işareti ve herhangi bir karakterle eşleşen anlamına gelen bir soru işareti (*) joker karakter olan ( **\***), herhangi bir sayıda karakter eşleşme hangi anlamına gelir.
+Bu örnekte, *sürücü* bir sürücü harfi *dizin* geçerli dizin adıdır ve *filename* en az bir joker karakter içermesi gereken geçerli bir dosya adı. Joker karakterler soru işareti olan (**?**), herhangi bir karakter ve bir yıldız işareti eşleşme hangi anlamına gelir (<strong>\*</strong>), herhangi bir sayıda karakter eşleşme hangi anlamına gelir.
 
-İçin sıfır uzunlukta bir dize belirtirseniz *lpPathSpec*, geçerli dizin kullanılır ve *lpPathSpec* değiştirilmeyecek. Yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "*".
+İçin sıfır uzunlukta bir dize belirtirseniz *lpPathSpec*, geçerli dizin kullanılır ve *lpPathSpec* değiştirilmeyecek. Yalnızca bir dizin adı belirtin, ancak herhangi bir dosya belirtimi içermez, dize değiştirilecek "\*".
 
 Varsa *lpPathSpec* bir sürücü ve/veya dizin adı içerir liste kutusunun dolu önce geçerli bir sürücü ve dizini atanmış sürücü ve dizine değiştirilir. Metin denetimi tarafından tanımlanan *nIDStaticPath* yeni sürücü ve/veya dizin adı ile de güncelleştirilir.
 
@@ -2576,7 +2576,7 @@ Liste kutusu tarafından doldurulmuş varsayar [DlgDirList](#dlgdirlist) üye i�
 
 `DlgDirSelect` Üye işlevi tarafından verilen arabellek seçimi kopyalar *lpString*. Herhangi bir seçim yoksa *lpString* değişmez.
 
-`DlgDirSelect` gönderen [LB_GETCURSEL](http://msdn.microsoft.com/library/windows/desktop/bb775197) ve [LB_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/bb761313) liste kutusuna ileti.
+`DlgDirSelect` gönderen [LB_GETCURSEL](/windows/desktop/Controls/lb-getcursel) ve [LB_GETTEXT](/windows/desktop/Controls/lb-gettext) liste kutusuna ileti.
 
 Bir liste kutusundan döndürülecek birden fazla dosya adı izin vermez. Birden çok seçim liste kutusu liste kutusunun olmamalıdır.
 
@@ -2608,7 +2608,7 @@ Liste kutusu tarafından doldurulmuş varsayar [DlgDirListComboBox](#dlgdirlistc
 
 `DlgDirSelectComboBox` Üye işlevi için belirtilen arabellek seçimi kopyalar. Seçim yok ise, arabellek içeriği değiştirilmez.
 
-`DlgDirSelectComboBox` gönderen [CB_GETCURSEL](http://msdn.microsoft.com/library/windows/desktop/bb775845) ve [CB_GETLBTEXT](http://msdn.microsoft.com/library/windows/desktop/bb775862) birleşik giriş kutusundaki iletileri.
+`DlgDirSelectComboBox` gönderen [CB_GETCURSEL](/windows/desktop/Controls/cb-getcursel) ve [CB_GETLBTEXT](/windows/desktop/Controls/cb-getlbtext) birleşik giriş kutusundaki iletileri.
 
 Bir birleşik giriş kutusundan döndürülecek birden fazla dosya adı izin vermez.
 
@@ -2679,7 +2679,7 @@ Kullanıcı fare sürükleme dikdörtgenini dışında sol düğmesini basılı 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [DragDetect](http://msdn.microsoft.com/library/windows/desktop/ms646256)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [DragDetect](https://msdn.microsoft.com/library/windows/desktop/ms646256)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="drawanimatedrects"></a>  CWnd::DrawAnimatedRects
 
@@ -2698,10 +2698,10 @@ BOOL DrawAnimatedRects(
 Animasyon türünü belirtir. IDANI_CAPTION belirtirseniz, pencere başlığı tarafından belirtilen konumdan animasyon uygular *lprcFrom* tarafından belirtilen konuma *lprcTo*. Etkisini en aza veya bir penceresinin ekranı kaplamasını benzer.
 
 *lprcFrom*  
-İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı simge veya simge durumuna küçültülmüş pencerenin boyutunu ve konumunu belirtme.
+İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı simge veya simge durumuna küçültülmüş pencerenin boyutunu ve konumunu belirtme.
 
 *lprcTo*  
-İşaretçi bir [RECT](http://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı geri yüklenen pencere boyutunu ve konumunu belirtme
+İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı geri yüklenen pencere boyutunu ve konumunu belirtme
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2709,7 +2709,7 @@ Animasyon türünü belirtir. IDANI_CAPTION belirtirseniz, pencere başlığı t
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [DrawAnimatedRects](http://msdn.microsoft.com/library/windows/desktop/dd162475)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [DrawAnimatedRects](/windows/desktop/api/winuser/nf-winuser-drawanimatedrects)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="drawcaption"></a>  CWnd::DrawCaption
 
@@ -2731,7 +2731,7 @@ Bir cihaz bağlamı için bir işaretçi. İşlev, bu cihaz bağlamına pencere 
 Pencere resim yazısı için dikdörtgen belirten bir RECT yapısı işaretçisi.
 
 *uFlags*  
-Çizim seçenekleri belirtir. Değerlerin tam listesi için bkz. [DrawCaption](http://msdn.microsoft.com/library/windows/desktop/dd162476).
+Çizim seçenekleri belirtir. Değerlerin tam listesi için bkz. [DrawCaption](/windows/desktop/api/winuser/nf-winuser-drawcaption).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2739,7 +2739,7 @@ Pencere resim yazısı için dikdörtgen belirten bir RECT yapısı işaretçisi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [DrawCaption](http://msdn.microsoft.com/library/windows/desktop/dd162476)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [DrawCaption](/windows/desktop/api/winuser/nf-winuser-drawcaption)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="drawmenubar"></a>  CWnd::DrawMenuBar
 
@@ -2767,7 +2767,7 @@ void EnableActiveAccessibility();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart windows ve ActiveX denetimleri gibi denetimleri için MFC'nin varsayılan Active Accessibility desteği yeterlidir; Ancak, varsa, `CWnd`-MFC sahip bunlarla ilgili olduğunu bilmesinin imkanı, türetilmiş sınıf nonwindowed kullanıcı arabirimi öğeleri içerir. Bu durumda, uygun kılmalı [Active Accessibility üye işlevleri](http://msdn.microsoft.com/68af04ac-4eb9-4b7d-b33f-c45512097a74) sınıfınızdaki ve çağırmalısınız `EnableActiveAccessibility` sınıfın oluşturucusunda.
+Standart windows ve ActiveX denetimleri gibi denetimleri için MFC'nin varsayılan Active Accessibility desteği yeterlidir; Ancak, varsa, `CWnd`-MFC sahip bunlarla ilgili olduğunu bilmesinin imkanı, türetilmiş sınıf nonwindowed kullanıcı arabirimi öğeleri içerir. Bu durumda, uygun kılmalı [Active Accessibility üye işlevleri](https://msdn.microsoft.com/68af04ac-4eb9-4b7d-b33f-c45512097a74) sınıfınızdaki ve çağırmalısınız `EnableActiveAccessibility` sınıfın oluşturucusunda.
 
 ##  <a name="enabledynamiclayout"></a>  CWnd::EnableDynamicLayout
 
@@ -2881,12 +2881,12 @@ Araç ipuçları etkinse TRUE; Aksi durumda FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılma [OnToolHitTest](#ontoolhittest) sağlamak [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) struct ya da yapının penceresi.
+Geçersiz kılma [OnToolHitTest](#ontoolhittest) sağlamak [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) struct ya da yapının penceresi.
 
 > [!NOTE]
 > Bazı windows gibi [CToolBar](../../mfc/reference/ctoolbar-class.md), yerleşik bir uygulamasını sağlamak [OnToolHitTest](#ontoolhittest).
 
-Bkz: [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) bu yapı hakkında daha fazla bilgi için Windows SDK.
+Bkz: [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) bu yapı hakkında daha fazla bilgi için Windows SDK.
 
 Çağrısı yaparak `EnableToolTips` üst pencere türetilir sürece, çocuğunuzun denetimleri için araç ipuçları görüntülemek için yeterli değil `CFrameWnd`. Bunun nedeni, `CFrameWnd` varsayılan işleyici için TTN_NEEDTEXT bildirimini sağlar. Üst pencereniz türünden türetilmediğinden varsa `CFrameWnd`olan, ipuçları denetimleri görüntülemez doğru TTN_NEEDTEXT araç ipucu bildirim için bir işleyici sağladığınız sürece çocuğunuz için bir iletişim kutusu veya bir form görünümü etkinleştirilmişse, aracı. Bkz: [araç ipuçları](../../mfc/tool-tips-in-windows-not-derived-from-cframewnd.md).
 
@@ -3099,7 +3099,7 @@ Aranacak olan alt pencereleri olan üst pencere tanıtıcısı.
 Bir alt pencereye işleyin. Sonraki alt pencerenin Z düzeninde arama başlar. Doğrudan alt pencerenin alt pencerenin olmalıdır *hwndParent*, yalnızca bir alt pencere.
 
 *lpszClass*  
-Sınıf adı veya önceki bir çağrı tarafından oluşturulan bir sınıf atomu belirtir null ile sonlandırılmış bir dize işaretçisi [RegisterClass](http://msdn.microsoft.com/library/windows/desktop/ms633586) veya [RegisterClassEx](http://msdn.microsoft.com/library/windows/desktop/ms633587).
+Sınıf adı veya önceki bir çağrı tarafından oluşturulan bir sınıf atomu belirtir null ile sonlandırılmış bir dize işaretçisi [RegisterClass](https://msdn.microsoft.com/library/windows/desktop/ms633586) veya [RegisterClassEx](https://msdn.microsoft.com/library/windows/desktop/ms633587).
 
 *lpszWindow*  
 Pencere adının (pencere başlığı) belirten bir null ile sonlandırılmış dize işaretçisi. Bu parametre NULL ise, tüm pencere adlarla eşleşir.
@@ -3110,7 +3110,7 @@ Pencere adının (pencere başlığı) belirten bir null ile sonlandırılmış 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [FindWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms633500)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [FindWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms633500)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="flashwindow"></a>  CWnd::FlashWindow
 
@@ -3157,7 +3157,7 @@ BOOL FlashWindowEx(
 ### <a name="parameters"></a>Parametreler
 
 *CertOpenStore*  
-Flash durumunu belirtir. Değerlerin tam listesi için bkz. [FLASHWINFO](http://msdn.microsoft.com/library/windows/desktop/ms679348) yapısı.
+Flash durumunu belirtir. Değerlerin tam listesi için bkz. [FLASHWINFO](/windows/desktop/api/winuser/ns-winuser-flashwinfo) yapısı.
 
 *uCount*  
 Pencerenin Flash sayısını belirtir.
@@ -3171,7 +3171,7 @@ Pencerenin durumunu çağırmadan önce dönüş değeri belirtir `FlashWindowEx
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem işlevinin işlevselliğine öykünür [FlashWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms679347)Windows SDK içinde açıklandığı gibi.
+Bu yöntem işlevinin işlevselliğine öykünür [FlashWindowEx](/windows/desktop/api/winuser/nf-winuser-flashwindowex)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="fromhandle"></a>  CWnd::FromHandle
 
@@ -3235,15 +3235,15 @@ Alt nesnenin adresini alan `IDispatch` arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accChild](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accchild) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accChild](http://msdn.microsoft.com/library/windows/desktop/dd318475) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accChild](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accchild) Windows SDK.
 
 ##  <a name="get_accchildcount"></a>  CWnd::get_accChildCount
 
@@ -3260,15 +3260,15 @@ Alt öğe sayısını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accChildCount](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accchildcount) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf. Temel sınıftaki sürümün arayın ve ardından nonwindowed alt öğeleri ekleyin.
 
-Daha fazla bilgi için [IAccessible::get_accChildCount](http://msdn.microsoft.com/library/windows/desktop/dd318476) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accChildCount](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accchildcount) Windows SDK.
 
 ##  <a name="get_accdefaultaction"></a>  CWnd::get_accDefaultAction
 
@@ -3290,15 +3290,15 @@ Bu nesnenin varsayılan eylem varsa, belirtilen nesne ya da NULL için varsayıl
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accDefaultAction](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accdefaultaction) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesnenin varsayılan eylemini açıklamak için.
 
-Daha fazla bilgi için [IAccessible::get_accDefaultAction](http://msdn.microsoft.com/library/windows/desktop/dd318477) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accDefaultAction](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accdefaultaction) Windows SDK.
 
 ##  <a name="get_accdescription"></a>  CWnd::get_accDescription
 
@@ -3320,15 +3320,15 @@ Belirtilen nesneyi tanımlayan bir yerelleştirilmiş dize alan BSTR adres veya 
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accDescription](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accdescription) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesneyi tanımlamak için. Temel sınıftaki sürümün çağırın ve açıklamanızı ekleyin.
 
-Daha fazla bilgi için [IAccessible::get_accDescription](http://msdn.microsoft.com/library/windows/desktop/dd318478) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accDescription](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accdescription) Windows SDK.
 
 ##  <a name="get_accfocus"></a>  CWnd::get_accFocus
 
@@ -3341,7 +3341,7 @@ virtual HRESULT get_accFocus(VARIANT* pvarChild);
 ### <a name="parameters"></a>Parametreler
 
 *pvarChild*  
-Odaklanmış bir nesneyle ilgili bilgileri alır. Bkz: *pvarID* içinde [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) Windows SDK.
+Odaklanmış bir nesneyle ilgili bilgileri alır. Bkz: *pvarID* içinde [IAccessible::get_accFocus](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accfocus) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3349,11 +3349,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accFocus](http://msdn.microsoft.com/library/windows/desktop/dd318479) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accFocus](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accfocus) Windows SDK.
 
 ##  <a name="get_acchelp"></a>  CWnd::get_accHelp
 
@@ -3375,15 +3375,15 @@ Hiçbir Yardım bilgisi varsa, belirtilen nesne ya da NULL yönelik yardım bilg
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accHelp](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acchelp) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesne için Yardım metni sağlamak için.
 
-Daha fazla bilgi için [IAccessible::get_accHelp](http://msdn.microsoft.com/library/windows/desktop/dd318480) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accHelp](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acchelp) Windows SDK.
 
 ##  <a name="get_acchelptopic"></a>  CWnd::get_accHelpTopic
 
@@ -3405,7 +3405,7 @@ Tam yolunu alır bir BSTR adresini `WinHelp` dosya varsa, belirtilen nesne ile i
 Yardım konusu, alınacak nesne veya bir nesnenin alt öğeleri olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesne için bir Yardım konusu almak için) veya bir alt öğe kimliği (Yardım konusunun bir nesnenin alt öğeleri almak için) olabilir.
 
 *pidTopic*  
-Belirtilen nesne ile ilişkili Yardım dosyası konusu tanımlar. Bkz: *pidTopic* içinde [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) Windows SDK.
+Belirtilen nesne ile ilişkili Yardım dosyası konusu tanımlar. Bkz: *pidTopic* içinde [IAccessible::get_accHelpTopic](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acchelptopic) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3413,11 +3413,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesne hakkında Yardım bilgilerini sağlamak için.
 
-Daha fazla bilgi için [IAccessible::get_accHelpTopic](http://msdn.microsoft.com/library/windows/desktop/dd318481) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accHelpTopic](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acchelptopic) Windows SDK.
 
 ##  <a name="get_acckeyboardshortcut"></a>  CWnd::get_accKeyboardShortcut
 
@@ -3439,15 +3439,15 @@ Klavye kısayolu tanımlama yerelleştirilmiş bir dize alır bir BSTR adres vey
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accKeyboardShortcut](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf nesneniz için klavye kısayolunu tanımlamak için.
 
-Daha fazla bilgi için [IAccessible::get_accKeyboardShortcut](http://msdn.microsoft.com/library/windows/desktop/dd318482) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accKeyboardShortcut](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_acckeyboardshortcut) Windows SDK.
 
 ##  <a name="get_accname"></a>  CWnd::get_accName
 
@@ -3469,15 +3469,15 @@ Belirtilen nesnenin adını içeren bir dize alır bir BSTR adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accName](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accname) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-türetilmiş sınıf, nesnenin adını döndürmek için.
 
-Daha fazla bilgi için [IAccessible::get_accName](http://msdn.microsoft.com/library/windows/desktop/dd318483) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accName](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accname) Windows SDK.
 
 ##  <a name="get_accparent"></a>  CWnd::get_accParent
 
@@ -3494,15 +3494,15 @@ virtual HRESULT get_accParent(IDispatch** ppdispParent);
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accParent](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accparent) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Çoğu durumda bu işlev geçersiz kılınamıyor gerekmez.
 
-Daha fazla bilgi için [IAccessible::get_accParent](http://msdn.microsoft.com/library/windows/desktop/dd318484) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accParent](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accparent) Windows SDK.
 
 ##  <a name="get_accrole"></a>  CWnd::get_accRole
 
@@ -3520,7 +3520,7 @@ virtual HRESULT get_accRole(
 Alınacak rol bilgilerini nesnesi veya bir nesnenin alt öğeleri olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesne hakkında bilgi edinmek için) veya bir alt öğe kimliği (nesnenin alt öğe hakkında bilgi edinmek için) olabilir.
 
 *pvarRole*  
-Rol bilgilerini alır. Bkz: *pvarRole* içinde [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) Windows SDK.
+Rol bilgilerini alır. Bkz: *pvarRole* içinde [IAccessible::get_accRole](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accrole) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3528,11 +3528,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accRole](http://msdn.microsoft.com/library/windows/desktop/dd318485) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accRole](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accrole) Windows SDK.
 
 ##  <a name="get_accselection"></a>  CWnd::get_accSelection
 
@@ -3545,7 +3545,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ### <a name="parameters"></a>Parametreler
 
 *pvarChildren*  
-Alt seçili olduğu hakkında bilgi alır. Bkz: *pvarChildren* içinde [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) Windows SDK.
+Alt seçili olduğu hakkında bilgi alır. Bkz: *pvarChildren* içinde [IAccessible::get_accSelection](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accselection) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3553,11 +3553,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accSelection](http://msdn.microsoft.com/library/windows/desktop/dd318486) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accSelection](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accselection) Windows SDK.
 
 ##  <a name="get_accstate"></a>  CWnd::get_accState
 
@@ -3575,7 +3575,7 @@ virtual HRESULT get_accState(
 Durum bilgileri alınacak nesne veya bir nesnenin alt öğeleri olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesne hakkında bilgi edinmek için) veya bir alt öğe kimliği (nesnenin alt öğe hakkında bilgi edinmek için) olabilir.
 
 *pvarState*  
-Nesnenin durumu hakkındaki bilgileri alır. Bkz: *pvarState* içinde [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) Windows SDK.
+Nesnenin durumu hakkındaki bilgileri alır. Bkz: *pvarState* içinde [IAccessible::get_accState](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accstate) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3583,11 +3583,11 @@ Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **d
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accState](http://msdn.microsoft.com/library/windows/desktop/dd318487) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accState](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accstate) Windows SDK.
 
 ##  <a name="get_accvalue"></a>  CWnd::get_accValue
 
@@ -3609,15 +3609,15 @@ Nesnenin geçerli değerini içeren yerelleştirilmiş bir dize alır BSTR adres
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) Windows SDK içinde.
+Başarılı, başarısız bir COM kodu başarılıysa S_OK döndürür. Bkz: **dönüş değerleri** içinde [IAccessible::get_accValue](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accvalue) Windows SDK içinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev, MFC'nin parçası [Active Accessibility](http://msdn.microsoft.com/library/windows/desktop/dd373592) destekler.
+Bu işlev, MFC'nin parçası [Active Accessibility](/windows/desktop/WinAuto/microsoft-active-accessibility) destekler.
 
 Bu işlevde geçersiz kılmak, `CWnd`-nonwindowed kullanıcı arabirimi öğeleri (MFC işleyen penceresiz ActiveX denetimlerini dışında) varsa, türetilmiş sınıf.
 
-Daha fazla bilgi için [IAccessible::get_accValue](http://msdn.microsoft.com/library/windows/desktop/dd318488) Windows SDK.
+Daha fazla bilgi için [IAccessible::get_accValue](/windows/desktop/api/oleacc/nf-oleacc-iaccessible-get_accvalue) Windows SDK.
 
 ##  <a name="getactivewindow"></a>  CWnd::GetActiveWindow
 
@@ -3646,7 +3646,7 @@ CWnd* GetAncestor(UINT gaFlags) const;
 ### <a name="parameters"></a>Parametreler
 
 *gaFlags*  
-Alınacak üst belirtir. Olası değerler tam bir listesi için bkz. [GetAncestor](http://msdn.microsoft.com/library/windows/desktop/ms633502).
+Alınacak üst belirtir. Olası değerler tam bir listesi için bkz. [GetAncestor](https://msdn.microsoft.com/library/windows/desktop/ms633502).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3654,7 +3654,7 @@ Alınacak üst belirtir. Olası değerler tam bir listesi için bkz. [GetAncesto
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [GetAncestor](http://msdn.microsoft.com/library/windows/desktop/ms633502)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [GetAncestor](https://msdn.microsoft.com/library/windows/desktop/ms633502)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getcapture"></a>  CWnd::GetCapture
 
@@ -3775,13 +3775,13 @@ LPUNKNOWN GetControlUnknown();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi [IUnknown](http://msdn.microsoft.com/library/windows/desktop/ms680509) bu tarafından temsil edilen OLE denetim arabiriminin `CWnd` nesne. Bu nesne bir OLE denetim temsil etmiyorsa, döndürülen değer NULL olur.
+Bir işaretçi [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown) bu tarafından temsil edilen OLE denetim arabiriminin `CWnd` nesne. Bu nesne bir OLE denetim temsil etmiyorsa, döndürülen değer NULL olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
 Bu onaylamanız gerekir `IUnknown` işaretçi. Genellikle, belirli bir arabirim denetimi elde etmek için kullanırsınız.
 
-Tarafından döndürülen arabirim işaretçisi `GetControlUnknown` değil başvuru-sayılır. Çağırmayın [IUnknown::Release](http://msdn.microsoft.com/library/windows/desktop/ms682317) işaretçinin, daha önce sürece [IUnknown::AddRef](http://msdn.microsoft.com/library/windows/desktop/ms691379) üzerindeki.
+Tarafından döndürülen arabirim işaretçisi `GetControlUnknown` değil başvuru-sayılır. Çağırmayın [IUnknown::Release](/windows/desktop/api/unknwn/nf-unknwn-iunknown-release) işaretçinin, daha önce sürece [IUnknown::AddRef](/windows/desktop/api/unknwn/nf-unknwn-iunknown-addref) üzerindeki.
 
 ### <a name="example"></a>Örnek
 
@@ -3789,7 +3789,7 @@ Tarafından döndürülen arabirim işaretçisi `GetControlUnknown` değil başv
 
 ##  <a name="getcurrentmessage"></a>  CWnd::GetCurrentMessage
 
-Bu pencere şu anda işleme iletisi için bir işaretçi döndürür. Yalnızca ne zaman çağrılmalıdır bir **üzerinde *** ileti* ileti işleyicisi üye işlevi.
+Bu pencere şu anda işleme iletisi için bir işaretçi döndürür. Yalnızca ne zaman çağrılmalıdır bir **üzerinde**<em>ileti</em> ileti işleyicisi üye işlevi.
 
 ```
 static const MSG* PASCAL GetCurrentMessage();
@@ -3797,7 +3797,7 @@ static const MSG* PASCAL GetCurrentMessage();
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bir işaretçi döndürür [MSG](../../mfc/reference/msg-structure1.md) pencere iletisi içeren yapısı şu anda işleniyor. Yalnızca ne zaman çağrılmalıdır bir **üzerinde *** ileti* işleyici.
+Bir işaretçi döndürür [MSG](../../mfc/reference/msg-structure1.md) pencere iletisi içeren yapısı şu anda işleniyor. Yalnızca ne zaman çağrılmalıdır bir **üzerinde**<em>ileti</em> işleyici.
 
 ### <a name="example"></a>Örnek
 
@@ -3865,13 +3865,13 @@ Hazır aşağıdaki değerlerden biri olabilir:
 
 Cihaz bağlamı sonraki GDI işlevlerde istemci alanında çizmek için kullanılabilir.
 
-Bir uzantıdır bu işlev için [GetDC](http://msdn.microsoft.com/library/windows/desktop/dd144871) işlev, uygulamaya nasıl ve ister bir pencere için bir cihaz bağlamı kırpılır üzerinde daha fazla denetim verir.
+Bir uzantıdır bu işlev için [GetDC](/windows/desktop/api/winuser/nf-winuser-getdc) işlev, uygulamaya nasıl ve ister bir pencere için bir cihaz bağlamı kırpılır üzerinde daha fazla denetim verir.
 
-Cihaz bağlamı bir pencere sınıfa ait olmadığı sürece [ReleaseDC](http://msdn.microsoft.com/library/windows/desktop/dd162920) işlevi, bağlam çizim sonra serbest bırakmak için çağrılmalıdır. Yalnızca beş sık kullanılan cihaz bağlamları belirli bir zamanda kullanılabilir olduğundan, bir cihaz bağlamı yayımlamayı hatası diğer uygulamaların bir cihaz bağlamı erişmesini engelleyebilir.
+Cihaz bağlamı bir pencere sınıfa ait olmadığı sürece [ReleaseDC](/windows/desktop/api/winuser/nf-winuser-releasedc) işlevi, bağlam çizim sonra serbest bırakmak için çağrılmalıdır. Yalnızca beş sık kullanılan cihaz bağlamları belirli bir zamanda kullanılabilir olduğundan, bir cihaz bağlamı yayımlamayı hatası diğer uygulamaların bir cihaz bağlamı erişmesini engelleyebilir.
 
-Önbelleğe alınmış cihaz bağlamı elde etmek için bir uygulama belirtmelisiniz [DCX_CACHE](http://msdn.microsoft.com/library/windows/desktop/dd144873). DCX_CACHE belirtilmedi ve pencerenin hiçbiri CS_OWNDC ise ya da [CS_CLASSDC](http://msdn.microsoft.com/library/windows/desktop/ms633576), bu işlev NULL döndürür.
+Önbelleğe alınmış cihaz bağlamı elde etmek için bir uygulama belirtmelisiniz [DCX_CACHE](/windows/desktop/api/winuser/nf-winuser-getdcex). DCX_CACHE belirtilmedi ve pencerenin hiçbiri CS_OWNDC ise ya da [CS_CLASSDC](https://msdn.microsoft.com/library/windows/desktop/ms633576), bu işlev NULL döndürür.
 
-Özel özelliklere sahip bir cihaz bağlamı tarafından döndürülen [GetDCEx](http://msdn.microsoft.com/library/windows/desktop/dd144873) işlevinin CS_CLASSDC [CS_OWNDC](http://msdn.microsoft.com/library/windows/desktop/ms633576), veya [CS_PARENTDC](http://msdn.microsoft.com/library/windows/desktop/ms633576) stil içinde belirtildi[ WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı sınıfı kaydedildiğinde.
+Özel özelliklere sahip bir cihaz bağlamı tarafından döndürülen [GetDCEx](/windows/desktop/api/winuser/nf-winuser-getdcex) işlevinin CS_CLASSDC [CS_OWNDC](https://msdn.microsoft.com/library/windows/desktop/ms633576), veya [CS_PARENTDC](https://msdn.microsoft.com/library/windows/desktop/ms633576) stil içinde belirtildi[ WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) yapısı sınıfı kaydedildiğinde.
 
 Bu özellikleri hakkında daha fazla bilgi için açıklamasına bakın `WNDCLASS` Windows SDK'sındaki yapısı.
 
@@ -4021,7 +4021,7 @@ Bu metnin belirli iletişim kutusunda belirtilen denetiminin bir tamsayı değer
 
 Varsa *bSigned* TRUE ise `GetDlgItemInt` metnin başında bir eksi işareti (-) olup olmadığını denetler ve metin imzalı bir sayıya dönüştürür. Aksi takdirde, işaretsiz bir değer oluşturur.
 
-Gönderdiği bir [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627) denetim iletisi.
+Gönderdiği bir [WM_GETTEXT](/windows/desktop/winmsg/wm-gettext) denetim iletisi.
 
 ##  <a name="getdlgitemtext"></a>  CWnd::GetDlgItemText
 
@@ -4217,7 +4217,7 @@ BOOL GetLayeredWindowAttributes(
 Pencerenin katmanlı opaklığını açıklamak için kullanılan Alfa değerini alan bir bayt işaretçisi. Ne zaman değişkeni ifade tarafından *pbAlpha* 0 ise, pencerenin tamamen saydamdır. Ne zaman değişkeni ifade tarafından *pbAlpha* 255'tir ve donuk bir penceredir. Bu, bağımsız değişken gerekmiyorsa NULL olabilir.
 
 *pdwFlags*  
-Bir katman bayrağı alır bir DWORD işaretçisi. Bu, bağımsız değişken gerekmiyorsa NULL olabilir. Olası değerler tam bir listesi için bkz. [GetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633508).
+Bir katman bayrağı alır bir DWORD işaretçisi. Bu, bağımsız değişken gerekmiyorsa NULL olabilir. Olası değerler tam bir listesi için bkz. [GetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633508).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4225,7 +4225,7 @@ Bir katman bayrağı alır bir DWORD işaretçisi. Bu, bağımsız değişken ge
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [GetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633508)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [GetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633508)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getmenu"></a>  CWnd::GetMenu
 
@@ -4263,13 +4263,13 @@ BOOL GetMenuBarInfo(
 ### <a name="parameters"></a>Parametreler
 
 *idObject*  
-Menü nesnesini belirtir. Olası değerler listesi için bkz. [GetMenuBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms647833).
+Menü nesnesini belirtir. Olası değerler listesi için bkz. [GetMenuBarInfo](/windows/desktop/api/winuser/nf-winuser-getmenubarinfo).
 
 *idItem*  
 Bilgi almak öğeyi belirtir. Bu parametre sıfır ise, işlev menüsü hakkındaki bilgileri alır. Bu parametre, 1 ise, işlev menüsü vb. ilk öğe hakkında bilgi alır.
 
 *pmbi*  
-İşaretçi bir [MENUBARINFO](http://msdn.microsoft.com/library/windows/desktop/ms647564) bilgileri alan yapısı.
+İşaretçi bir [MENUBARINFO](/windows/desktop/api/winuser/ns-winuser-tagmenubarinfo) bilgileri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4277,7 +4277,7 @@ Bilgi almak öğeyi belirtir. Bu parametre sıfır ise, işlev menüsü hakkınd
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [GetMenuBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms647833)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [GetMenuBarInfo](/windows/desktop/api/winuser/nf-winuser-getmenubarinfo)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getnextdlggroupitem"></a>  CWnd::GetNextDlgGroupItem
 
@@ -4423,7 +4423,7 @@ Bir işaretçi bir `CWnd` nesne.
 
 Ardından pencerenin sahibi yok, üst pencere nesnesi için bir işaretçi varsayılan olarak döndürülür. Üst-alt boyut birkaç önemli yönleri, sahibi ve sahip olduğu arasındaki ilişkiyi farklıdır olduğunu unutmayın. Örneğin, bir üst öğe içeren bir pencere için kendi üst penceresinin istemci alanına sınırlıdır. Şirkete ait windows masaüstünde herhangi bir konuma kurulabilir.
 
-Bu işlev sahipliği kavramını sahipliği kavramı, farklı [GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms633515).
+Bu işlev sahipliği kavramını sahipliği kavramı, farklı [GetWindow](https://msdn.microsoft.com/library/windows/desktop/ms633515).
 
 ##  <a name="getparent"></a>  CWnd::GetParent
 
@@ -4435,7 +4435,7 @@ CWnd* GetParent() const;
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Dönüş değerleri bölümüne bakın [GetParent](http://msdn.microsoft.com/library/windows/desktop/ms633510) Windows SDK.
+Dönüş değerleri bölümüne bakın [GetParent](https://msdn.microsoft.com/library/windows/desktop/ms633510) Windows SDK.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4601,10 +4601,10 @@ BOOL GetScrollBarInfo(
 ### <a name="parameters"></a>Parametreler
 
 *idObject*  
-Menü nesnesini belirtir. Olası değerler listesi için bkz. [Getscrollbarınfo](http://msdn.microsoft.com/library/windows/desktop/bb787581).
+Menü nesnesini belirtir. Olası değerler listesi için bkz. [Getscrollbarınfo](/windows/desktop/api/winuser/nf-winuser-getscrollbarinfo).
 
 *psbi*  
-İşaretçi bir [SCROLLBARINFO](http://msdn.microsoft.com/library/windows/desktop/bb787535) bilgileri alan yapısı.
+İşaretçi bir [SCROLLBARINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollbarinfo) bilgileri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4612,7 +4612,7 @@ Menü nesnesini belirtir. Olası değerler listesi için bkz. [Getscrollbarınfo
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [Getscrollbarınfo](http://msdn.microsoft.com/library/windows/desktop/bb787581)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [Getscrollbarınfo](/windows/desktop/api/winuser/nf-winuser-getscrollbarinfo)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getscrollinfo"></a>  CWnd::GetScrollInfo
 
@@ -4637,7 +4637,7 @@ Kaydırma çubuğundaki bir denetim veya pencerenin istemci olmayan alanındayke
 - SB_VERT pencerenin standart dikey kaydırma çubuğu için parametrelerini alır.
 
 *lpScrollInfo*  
-Bir işaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
+Bir işaretçi bir [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
 
 *nMask*  
 Alınacak kaydırma çubuğu parametreleri belirtir. Varsayılan SIF_PAGE, SIF_POS SIF_TRACKPOS ve SIF_RANGE bir birleşimini belirtir. Bkz: `SCROLLINFO` hakkında daha fazla bilgi için *nMask* değerleri.
@@ -4650,7 +4650,7 @@ Alınacak kaydırma çubuğu parametreleri belirtir. Varsayılan SIF_PAGE, SIF_P
 
 `GetScrollInfo` uygulamaların 32-bit kaydırma konumları kullanmasını sağlar.
 
-[SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.
+[SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.
 
 MFC Windows ileti işleyicileri kaydırma çubuğu konumu belirten [CWnd::OnHScroll](#onhscroll) ve [CWnd::OnVScroll](#onvscroll), yalnızca 16 bitlik konum verileri sağlar. `GetScrollInfo` ve `SetScrollInfo` 32 bit kaydırma çubuğu konumu veri sağlar. Bu nedenle, bir uygulama çağırabilirsiniz `GetScrollInfo` ya da işlenirken `CWnd::OnHScroll` veya `CWnd::OnVScroll` 32-bit kaydırma çubuğu konum verileri elde edilir.
 
@@ -4788,11 +4788,11 @@ BOOL GetTitleBarInfo(PTITLEBARINFO pti) const;
 ### <a name="parameters"></a>Parametreler
 
 *pti*  
-İşaretçi bir [TITLEBARINFO](http://msdn.microsoft.com/library/windows/desktop/ms632608) bilgileri alan yapısı.
+İşaretçi bir [TITLEBARINFO](https://msdn.microsoft.com/library/windows/desktop/ms632608) bilgileri alan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [GetTitleBarInfo](http://msdn.microsoft.com/library/windows/desktop/ms633513)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [GetTitleBarInfo](https://msdn.microsoft.com/library/windows/desktop/ms633513)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="gettoplevelframe"></a>  CWnd::GetTopLevelFrame
 
@@ -5011,7 +5011,7 @@ Varsayılan öznitelikler görünen bağlamı için bağlamı alır. her zaman a
 
 `GetWindowDC` içinde özel boyama etkileri için kullanılması amaçlanmıştır `CWnd` istemci olmayan alanındayken. Herhangi bir pencerenin istemci olmayan alanlarda boyama önerilmez.
 
-[GetSystemMetrics](http://msdn.microsoft.com/library/windows/desktop/ms724385) Windows işlevi, istemci olmayan alanındayken, başlık çubuğu, menü ve kaydırma çubukları gibi çeşitli bölümlerini boyutlarını almak için kullanılabilir.
+[GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) Windows işlevi, istemci olmayan alanındayken, başlık çubuğu, menü ve kaydırma çubukları gibi çeşitli bölümlerini boyutlarını almak için kullanılabilir.
 
 Boyama tamamlandıktan sonra [ReleaseDC](#releasedc) üye işlevi, görüntü bağlam serbest bırakmak için çağrılmalıdır. Görüntü bağlam yayımlamayı hatası ciddi aynı zamanda açık olabilir. cihaz bağlamları sayısı sınırlamaları nedeniyle uygulamalar tarafından istenen boyama etkiler.
 
@@ -5026,11 +5026,11 @@ BOOL GetWindowInfo(PWINDOWINFO pwi) const;
 ### <a name="parameters"></a>Parametreler
 
 *pwi*  
-Bir işaretçi bir [WINDOWINFO](http://msdn.microsoft.com/library/windows/desktop/ms632610) yapısı.
+Bir işaretçi bir [WINDOWINFO](https://msdn.microsoft.com/library/windows/desktop/ms632610) yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [GetWindowInfo](http://msdn.microsoft.com/library/windows/desktop/ms633516)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [GetWindowInfo](https://msdn.microsoft.com/library/windows/desktop/ms633516)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="getwindowlesschildcount"></a>  CWnd::GetWindowlessChildCount
 
@@ -5147,7 +5147,7 @@ Sondaki null karakter hariç kopyalanan dizenin karakter uzunluğunu belirtir. B
 
 Varsa `CWnd` nesnesi olan bir denetim `GetWindowText` üye işlevi, açıklamalı alt yazı kopyalamak yerine denetimi içinde bulunan metinde kopyalar.
 
-Bu üye işlevi neden [WM_GETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632627) ileti gönderilmesini `CWnd` nesne.
+Bu üye işlevi neden [WM_GETTEXT](/windows/desktop/winmsg/wm-gettext) ileti gönderilmesini `CWnd` nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -5169,7 +5169,7 @@ Metin karakterleri, herhangi bir sonlandırma boş karakteri içermez belirtir. 
 
 Varsa `CWnd` bir denetimdir `GetWindowTextLength` üye işlevi yerine başlık denetim içindeki metnin uzunluğunu döndürür.
 
-Bu üye işlevi neden [WM_GETTEXTLENGTH](http://msdn.microsoft.com/library/windows/desktop/ms632628) ileti gönderilmesini `CWnd` nesne.
+Bu üye işlevi neden [WM_GETTEXTLENGTH](/windows/desktop/winmsg/wm-gettextlength) ileti gönderilmesini `CWnd` nesne.
 
 ### <a name="example"></a>Örnek
 
@@ -5441,7 +5441,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 
 Zaman `IsDialogMessage` klavye iletileri ve karşılık gelen iletişim kutusu için seçim komutlarını dönüştürür işlevi bir ileti işlediğinde, denetler. Örneğin, SEKME tuşunu sonraki denetim veya denetimlerin grubu seçer ve aşağı ok tuşunu, bir gruptaki sonraki denetim seçer.
 
-Tarafından işlenen bir ileti geçmelidir değil `IsDialogMessage` için [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) veya [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır, çünkü zaten işlendi.
+Tarafından işlenen bir ileti geçmelidir değil `IsDialogMessage` için [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) veya [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır, çünkü zaten işlendi.
 
 ##  <a name="isdlgbuttonchecked"></a>  CWnd::IsDlgButtonChecked
 
@@ -5620,9 +5620,9 @@ BOOL LockWindowUpdate();
 
 Kilitli bir pencere taşınamaz. Bir kerede yalnızca bir pencere kilitlenebilir. Bir pencere ile kilitli kilidini açmak için `LockWindowUpdate`, çağrı [UnlockWindowUpdate](#unlockwindowupdate).
 
-Kilitli bir pencere (veya tüm kilitli alt pencereleri) ile uygulama çağrıları, [GetDC,](http://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx,](http://msdn.microsoft.com/library/windows/desktop/dd144873) veya [BeginPaint](http://msdn.microsoft.com/library/windows/desktop/dd183362) Windows işlevi, çağrılan işlev, bir cihaz döndürür bağlam görünür olan bölge boştur. Çağırarak uygulama penceresi açana kadar meydana gelir `UnlockWindowUpdate` üye işlevi.
+Kilitli bir pencere (veya tüm kilitli alt pencereleri) ile uygulama çağrıları, [GetDC,](https://msdn.microsoft.com/library/windows/desktop/dd144871) [GetDCEx,](https://msdn.microsoft.com/library/windows/desktop/dd144873) veya [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) Windows işlevi, çağrılan işlev, bir cihaz döndürür bağlam görünür olan bölge boştur. Çağırarak uygulama penceresi açana kadar meydana gelir `UnlockWindowUpdate` üye işlevi.
 
-Pencere güncelleştirmeleri kilitliyken sistem cihaz bağlamlarına kilitli bir pencere ile ilgili herhangi bir çizim işlem sınırlayıcı dikdörtgenini izler. Yeniden çizim iler hale, kilitli pencerenin ve onun alt pencereleri bir nihai zorlamak için bu sınırlayıcı bir dikdörtgen geçersiz [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) ileti güncelleştirme ekranı. Hiçbir çizim penceresi güncelleştirmeleri kilitliyken oluştuysa, hiçbir alan geçersiz kılınır.
+Pencere güncelleştirmeleri kilitliyken sistem cihaz bağlamlarına kilitli bir pencere ile ilgili herhangi bir çizim işlem sınırlayıcı dikdörtgenini izler. Yeniden çizim iler hale, kilitli pencerenin ve onun alt pencereleri bir nihai zorlamak için bu sınırlayıcı bir dikdörtgen geçersiz [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti güncelleştirme ekranı. Hiçbir çizim penceresi güncelleştirmeleri kilitliyken oluştuysa, hiçbir alan geçersiz kılınır.
 
 `LockWindowUpdate` Üye işlevi, belirtilen pencere görünmez hale getirmez ve işaretini [ws_vısıble](styles-used-by-mfc.md#window-styles) stil bit.
 
@@ -5691,7 +5691,7 @@ int MessageBox(
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-Bu yöntem yararlanan [MessageBox](http://msdn.microsoft.com/library/windows/desktop/ms645505) Windows SDK'da tanımlandığı gibi işlev. Bu yöntem, bu işlev çağırmanın sonucunu döndürür.
+Bu yöntem yararlanan [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) Windows SDK'da tanımlandığı gibi işlev. Bu yöntem, bu işlev çağırmanın sonucunu döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -5738,9 +5738,9 @@ Stil başarıyla değiştirilmişse sıfır; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [pencere stilleri](http://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow](http://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK.
+Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [pencere stilleri](https://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK.
 
-Varsa *nFlags* sıfır değilse, `ModifyStyle` Windows API işlevi çağıran [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
+Varsa *nFlags* sıfır değilse, `ModifyStyle` Windows API işlevi çağıran [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
 
 - Geçerli boyut SWP_NOSIZE korur.
 
@@ -5787,9 +5787,9 @@ Stil başarıyla değiştirilmişse sıfır; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) kitapta ve [CreateWindowEx](http://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki genişletilmiş stiller
+Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) kitapta ve [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki genişletilmiş stiller
 
-Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Windows API işlevi çağıran [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
+Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Windows API işlevi çağıran [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
 
 - Geçerli boyut SWP_NOSIZE korur.
 
@@ -5838,7 +5838,7 @@ Yeni genişliğini belirtir `CWnd`.
 Yeni yüksekliğini belirtir `CWnd`.
 
 *bRepaint*  
-Belirtir olup olmadığını `CWnd` boyanacak sağlamaktır. TRUE ise `CWnd` alır bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) içinde ileti kendi [OnPaint](#onpaint) işleyici zamanki iletisi. Bu parametre FALSE ise, hiçbir herhangi bir türden yeniden çizerken gerçekleşir. Bu istemci alanını (başlık ve kaydırma çubuğu dahil) alanındayken ve herhangi bir bölümünü sonucu olarak ortaya çıkardı üst penceresine geçerlidir `CWnd`kullanıcının taşıyın. Bu parametre FALSE olduğunda, uygulama gerekir açıkça geçersiz veya herhangi bir bölümünün yeniden düzenlenen `CWnd` ve üst penceresine çizilmesini gerekir.
+Belirtir olup olmadığını `CWnd` boyanacak sağlamaktır. TRUE ise `CWnd` alır bir [WM_PAINT](/windows/desktop/gdi/wm-paint) içinde ileti kendi [OnPaint](#onpaint) işleyici zamanki iletisi. Bu parametre FALSE ise, hiçbir herhangi bir türden yeniden çizerken gerçekleşir. Bu istemci alanını (başlık ve kaydırma çubuğu dahil) alanındayken ve herhangi bir bölümünü sonucu olarak ortaya çıkardı üst penceresine geçerlidir `CWnd`kullanıcının taşıyın. Bu parametre FALSE olduğunda, uygulama gerekir açıkça geçersiz veya herhangi bir bölümünün yeniden düzenlenen `CWnd` ve üst penceresine çizilmesini gerekir.
 
 *lpRect*  
 [CRect](../../atl-mfc-shared/reference/crect-class.md) nesne veya [RECT yapısı](../../mfc/reference/rect-structure1.md) yeni boyutunu ve konumunu belirtir.
@@ -5867,17 +5867,17 @@ void NotifyWinEvent(
 ### <a name="parameters"></a>Parametreler
 
 *event*  
-Gerçekleşen olay belirtir. Bu değer şunlardan biri olmalıdır [olay sabitleri](http://msdn.microsoft.com/library/windows/desktop/dd318066).
+Gerçekleşen olay belirtir. Bu değer şunlardan biri olmalıdır [olay sabitleri](/windows/desktop/WinAuto/event-constants).
 
 *idObjectType*  
-Olayı oluşturan nesne türünü tanımlar. Bu değer önceden tanımlanmış biri olan [nesne tanımlayıcıları](http://msdn.microsoft.com/library/windows/desktop/dd373606) veya özel nesne kimliği değeri.
+Olayı oluşturan nesne türünü tanımlar. Bu değer önceden tanımlanmış biri olan [nesne tanımlayıcıları](/windows/desktop/WinAuto/object-identifiers) veya özel nesne kimliği değeri.
 
 *idObject*  
 Olay bir nesne veya nesnenin bir alt öğesi tarafından oluşturulmuş olup olmadığını tanımlar. Bu değer CHILDID_SELF ise, nesne tarafından olay oluşturuldu. Aksi durumda, bu değer olay oluşturulan öğenin alt kimliğidir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [NotifyWinEvent](http://msdn.microsoft.com/library/windows/desktop/dd373603)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [NotifyWinEvent](/windows/desktop/api/winuser/nf-winuser-notifywinevent)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="onactivate"></a>  CWnd::OnActivate
 
@@ -5986,13 +5986,13 @@ afx_msg void OnAppCommand(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |[in] *pWnd*|İşaretçi bir `CWnd` kullanıcısının testine düğmeye tıkladı veya komut tuşa penceresini temsil eden nesne. Bu pencereyi alt pencere ileti alma penceresinin olabilir.|
-|[in] *nCmd*|Uygulama komutu belirtir. Olası değerler listesi için bkz: komutları altında *cmd* bölümünü *lParam* parametresinin [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275).|
-|[in] *nDevice*|Giriş Olayı oluşturan giriş cihazı. Aygıtları olası değerler listesi için bkz. *uDevice* bölümünü *lParam* parametresinin [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275).|
-|[in] *nKey*|Aşağı, CTRL tuşunu veya farenin sol düğmesi gibi tüm sanal anahtarları gösterir. Anahtarları altında olası değerler listesi için bkz. *dwKeys* bölümünü *lParam* parametresinin [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275). Daha fazla bilgi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).|
+|[in] *nCmd*|Uygulama komutu belirtir. Olası değerler listesi için bkz: komutları altında *cmd* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|[in] *nDevice*|Giriş Olayı oluşturan giriş cihazı. Aygıtları olası değerler listesi için bkz. *uDevice* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|[in] *nKey*|Aşağı, CTRL tuşunu veya farenin sol düğmesi gibi tüm sanal anahtarları gösterir. Anahtarları altında olası değerler listesi için bkz. *dwKeys* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand). Daha fazla bilgi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_APPCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646275) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6036,7 +6036,7 @@ afx_msg void OnCancelMode();
 
 Varsa `CWnd` nesnesinde odağı kendi `OnCancelMode` bir iletişim kutusu veya ileti kutusu görüntülendiğinde, üye işlevi çağrılır. Bu verir `CWnd` fare yakalamayı gibi modları iptal olanağı.
 
-Varsayılan uygulama çağırarak yanıt [ReleaseCapture](http://msdn.microsoft.com/library/windows/desktop/ms646261) Windows işlevi. Bu modlardan işlemek için türetilmiş sınıfın üye işlevinde geçersiz kılar.
+Varsayılan uygulama çağırarak yanıt [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) Windows işlevi. Bu modlardan işlemek için türetilmiş sınıfın üye işlevinde geçersiz kılar.
 
 ##  <a name="oncapturechanged"></a>  CWnd::OnCaptureChanged
 
@@ -6053,7 +6053,7 @@ Pencereye fare yakalamayı elde etmek için bir işaretçi
 
 ### <a name="remarks"></a>Açıklamalar
 
-Çağrı olsa bile pencere şu iletiyi alıyor [ReleaseCapture](http://msdn.microsoft.com/library/windows/desktop/ms646261) kendisi. Bir uygulama bu iletiye yanıt olarak fare yakalama ayarlanacak denememeniz gerekir. Bu ileti aldığında, bir pencere kendisi, gerekirse, yeni fare yakalamayı durumu yansıtacak şekilde yeniden çizmeniz gerekir.
+Çağrı olsa bile pencere şu iletiyi alıyor [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) kendisi. Bir uygulama bu iletiye yanıt olarak fare yakalama ayarlanacak denememeniz gerekir. Bu ileti aldığında, bir pencere kendisi, gerekirse, yeni fare yakalamayı durumu yansıtacak şekilde yeniden çizmeniz gerekir.
 
 Bilgi için Windows SDK'sı bakın `ReleaseCapture` Windows işlevi.
 
@@ -6080,7 +6080,7 @@ Pano görüntüleyicisine zincirinden kaldırılmakta pencerenizi izleyen bir pe
 
 ### <a name="remarks"></a>Açıklamalar
 
-Her `CWnd` alan nesnesi bir `OnChangeCbChain` çağrı kullanması gereken [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) göndermek için Windows işlevi [WM_CHANGECBCHAIN](http://msdn.microsoft.com/library/windows/desktop/ms649019) Pano Görüntüleyicisi'nde bir sonraki pencereye iletisi Zincir (tarafından döndürülen tanıtıcı `SetClipboardViewer`). Varsa *hWndRemove* tarafından belirtilen pencere zincirdeki sonraki pencere *hWndAfter* sonraki penceresi olur ve Pano iletileri geçirilir için.
+Her `CWnd` alan nesnesi bir `OnChangeCbChain` çağrı kullanması gereken [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) göndermek için Windows işlevi [WM_CHANGECBCHAIN](/windows/desktop/dataxchg/wm-changecbchain) Pano Görüntüleyicisi'nde bir sonraki pencereye iletisi Zincir (tarafından döndürülen tanıtıcı `SetClipboardViewer`). Varsa *hWndRemove* tarafından belirtilen pencere zincirdeki sonraki pencere *hWndAfter* sonraki penceresi olur ve Pano iletileri geçirilir için.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6102,7 +6102,7 @@ Gerçekleştirilecek eylemi belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - UIS_CLEAR kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) gizlenmelidir.
 
-- UIS_INITIALIZE kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) son giriş olayı dayalı olarak değiştirilmelidir. Daha fazla bilgi için **açıklamalar** bölümünü [WM_CHANGEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646342).
+- UIS_INITIALIZE kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) son giriş olayı dayalı olarak değiştirilmelidir. Daha fazla bilgi için **açıklamalar** bölümünü [WM_CHANGEUISTATE](/windows/desktop/menurc/wm-changeuistate).
 
 - UIS_SET kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) görünür olmalıdır.
 
@@ -6117,7 +6117,7 @@ Hangi UI durum öğeleri etkilenen veya denetimin stilini belirtir. Aşağıdaki
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevselliğine öykünür [WM_CHANGEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646342) Windows SDK içinde açıklandığı gibi ileti.
+Bu üye işlevi işlevselliğine öykünür [WM_CHANGEUISTATE](/windows/desktop/menurc/wm-changeuistate) Windows SDK içinde açıklandığı gibi ileti.
 
 ##  <a name="onchar"></a>  CWnd::OnChar
 
@@ -6164,7 +6164,7 @@ IBM Geliştirilmiş 101 ve 102-tuşlu klavye için Gelişmiş sağ ALT ve sağ C
 
 ##  <a name="onchartoitem"></a>  CWnd::OnCharToItem
 
-Bir liste kutusu çağırılır [lbs_wantkeyboardınput](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stil gönderir sahibi bir [WM_CHARTOITEM](http://msdn.microsoft.com/library/windows/desktop/bb761358) yanıt iletisinde bir [WM_CHAR](#onchar) ileti.
+Bir liste kutusu çağırılır [lbs_wantkeyboardınput](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) stil gönderir sahibi bir [WM_CHARTOITEM](/windows/desktop/Controls/wm-chartoitem) yanıt iletisinde bir [WM_CHAR](#onchar) ileti.
 
 ```
 afx_msg int OnCharToItem(
@@ -6278,7 +6278,7 @@ afx_msg void OnColorizationColorChanged(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388198) Windows SDK'da açıklanan bildirim iletisi.
+Bu yöntem alır [WM_DWMNCRENDERINGCHANGED](/windows/desktop/dwm/wm-dwmcolorizationcolorchanged) Windows SDK'da açıklanan bildirim iletisi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6309,7 +6309,7 @@ Bir uygulama bu iletiyi işleyen, sıfır döndürür; Aksi durumda 0.
 
 `OnCommand` Denetim bildirimi ve ON_COMMAND girişleri için mesaj haritasını işler ve uygun üye işlevini çağırır.
 
-Bu üye işlevi işlemek için türetilmiş sınıf içinde geçersiz kılma [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti. Bir geçersiz kılma ileti eşlemesi sürece işlemez temel sınıf `OnCommand` çağrılır.
+Bu üye işlevi işlemek için türetilmiş sınıf içinde geçersiz kılma [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti. Bir geçersiz kılma ileti eşlemesi sürece işlemez temel sınıf `OnCommand` çağrılır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6385,7 +6385,7 @@ afx_msg void OnCompositionChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_DWMCOMPOSITIONCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388199) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_DWMCOMPOSITIONCHANGED](/windows/desktop/dwm/wm-dwmcompositionchanged) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6430,7 +6430,7 @@ afx_msg BOOL OnCopyData(
 Bir işaretçi bir `CWnd` verileri gönderen nesnesi.
 
 *pCopyDataStruct*  
-Bir işaretçi bir [COPYDATASTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms649010) içeren gönderilmekte olan veri yapısı.
+Bir işaretçi bir [COPYDATASTRUCT](/windows/desktop/api/winuser/ns-winuser-tagcopydatastruct) içeren gönderilmekte olan veri yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -6622,7 +6622,7 @@ Varsa `CWnd` yok ediliyor, Pano Görüntüleyicisi zincirinin parçası olduğu 
 
 ##  <a name="ondestroyclipboard"></a>  CWnd::OnDestroyClipboard
 
-Yapılan bir çağrıyla Pano Boşaltıldığında framework bu üye işlevi için Pano sahibi çağırır. [EmptyClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649037) Windows işlevi.
+Yapılan bir çağrıyla Pano Boşaltıldığında framework bu üye işlevi için Pano sahibi çağırır. [EmptyClipboard](/windows/desktop/api/winuser/nf-winuser-emptyclipboard) Windows işlevi.
 
 ```
 afx_msg void OnDestroyClipboard();
@@ -6654,19 +6654,19 @@ Bir olay türü. Kullanılabilir değerlerin bir tanımı için Açıklamalar b�
 
 *NOlay* parametresi şu değerlerden biri olabilir:
 
-- [DBT_DEVICEARRIVAL](http://msdn.microsoft.com/library/windows/desktop/aa363205) bir cihaz eklenmiş ve kullanıma sunulmuştur.
+- [DBT_DEVICEARRIVAL](/windows/desktop/DevIO/dbt-devicearrival) bir cihaz eklenmiş ve kullanıma sunulmuştur.
 
-- [DBT_DEVICEQUERYREMOVE](http://msdn.microsoft.com/library/windows/desktop/aa363206) bir cihazı kaldırmak üzere izin istendi. Herhangi bir uygulama, bu isteği reddetmek ve kaldırma işlemi iptal edebilirsiniz.
+- [DBT_DEVICEQUERYREMOVE](/windows/desktop/DevIO/dbt-devicequeryremove) bir cihazı kaldırmak üzere izin istendi. Herhangi bir uygulama, bu isteği reddetmek ve kaldırma işlemi iptal edebilirsiniz.
 
-- [DBT_DEVICEQUERYREMOVEFAILED](http://msdn.microsoft.com/library/windows/desktop/aa363207) bir cihazı kaldırmak üzere istek iptal edildi.
+- [DBT_DEVICEQUERYREMOVEFAILED](/windows/desktop/DevIO/dbt-devicequeryremovefailed) bir cihazı kaldırmak üzere istek iptal edildi.
 
-- [DBT_DEVICEREMOVEPENDING](http://msdn.microsoft.com/library/windows/desktop/aa363209) kaldırılmak üzere cihazdır. Kısıtlanamaz.
+- [DBT_DEVICEREMOVEPENDING](/windows/desktop/DevIO/dbt-deviceremovepending) kaldırılmak üzere cihazdır. Kısıtlanamaz.
 
-- [DBT_DEVICEREMOVECOMPLETE](http://msdn.microsoft.com/library/windows/desktop/aa363208) cihaz kaldırıldı.
+- [DBT_DEVICEREMOVECOMPLETE](/windows/desktop/DevIO/dbt-deviceremovecomplete) cihaz kaldırıldı.
 
-- [DBT_DEVICETYPESPECIFIC](http://msdn.microsoft.com/library/windows/desktop/aa363210) cihaza özel olay.
+- [DBT_DEVICETYPESPECIFIC](/windows/desktop/DevIO/dbt-devicetypespecific) cihaza özel olay.
 
-- [DBT_CONFIGCHANGED](http://msdn.microsoft.com/library/windows/desktop/aa363203) geçerli yapılandırması değişti.
+- [DBT_CONFIGCHANGED](/windows/desktop/DevIO/dbt-configchanged) geçerli yapılandırması değişti.
 
 - DBT_DEVNODES_CHANGED aygıt düğümü değişti.
 
@@ -6707,7 +6707,7 @@ afx_msg void OnDrawClipboard();
 
 Pano görüntüleyicisine zinciri çağırarak katılan uygulamaları [SetClipboardViewer](#setclipboardviewer) üye işlevi bu çağrısına yanıt gerekir.
 
-Alan her pencere bir `OnDrawClipboard` çağrı çağırmalıdır [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) geçirmek için Windows işlevi bir [WM_DRAWCLIPBOARD](http://msdn.microsoft.com/library/windows/desktop/ms649025) ileti Pano Görüntüleyicisi zincirdeki sonraki penceresi açın. Sonraki pencere tanıtıcısı tarafından döndürülen [SetClipboardViewer](#setclipboardviewer) üye işlevi; yanıt olarak değiştirilebilir bir [OnChangeCbChain](#onchangecbchain) üye işlev çağrısı.
+Alan her pencere bir `OnDrawClipboard` çağrı çağırmalıdır [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) geçirmek için Windows işlevi bir [WM_DRAWCLIPBOARD](/windows/desktop/dataxchg/wm-drawclipboard) ileti Pano Görüntüleyicisi zincirdeki sonraki penceresi açın. Sonraki pencere tanıtıcısı tarafından döndürülen [SetClipboardViewer](#setclipboardviewer) üye işlevi; yanıt olarak değiştirilebilir bir [OnChangeCbChain](#onchangecbchain) üye işlev çağrısı.
 
 ##  <a name="ondrawiconicthumbnailorlivepreview"></a>  CWnd::OnDrawIconicThumbnailOrLivePreview
 
@@ -6831,7 +6831,7 @@ Oturum sona olup olmadığını belirtir. Oturum sona erdi, TRUE ise. Aksi durum
 
 Varsa *döndürme* doğru ise, Windows, tüm uygulamalar, bu çağrı işlemesini döndüğünüzü sonra istediğiniz zaman sonlandırmak. Sonuç olarak, bir uygulama içinde sonlandırma için gereken tüm görevleri gerçekleştirmenize sahip `OnEndSession`.
 
-Çağrı gerekmez [DestroyWindow](#destroywindow) üye işlevini veya [PostQuitMessage](http://msdn.microsoft.com/library/windows/desktop/ms644945) Windows oturum sonlanıyorken işlev.
+Çağrı gerekmez [DestroyWindow](#destroywindow) üye işlevini veya [PostQuitMessage](https://msdn.microsoft.com/library/windows/desktop/ms644945) Windows oturum sonlanıyorken işlev.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6893,9 +6893,9 @@ afx_msg void OnEnterSizeMove();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_ENTERSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632622) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_ENTERSIZEMOVE](/windows/desktop/winmsg/wm-entersizemove) bildirimi, Windows SDK'yı açıklanmıştır.
 
-Bir pencere bir taşıma veya kullanıcı pencerenin başlık çubuğunda veya boyutlandırma kenarlığı tıkladığında veya pencerenin geçtiğinde kalıcı döngü boyutlandırma girer [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) için ileti [CWnd::DefWindowProc](#defwindowproc) işlevi ve *wParam* SC_MOVE veya SC_SIZE, bu iletiyi bir parametre belirtir.
+Bir pencere bir taşıma veya kullanıcı pencerenin başlık çubuğunda veya boyutlandırma kenarlığı tıkladığında veya pencerenin geçtiğinde kalıcı döngü boyutlandırma girer [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) için ileti [CWnd::DefWindowProc](#defwindowproc) işlevi ve *wParam* SC_MOVE veya SC_SIZE, bu iletiyi bir parametre belirtir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6923,7 +6923,7 @@ Boyama için geçersiz bir bölge hazırlamak için çağrılır.
 
 Varsayılan uygulama tarafından belirtilen pencere sınıfı arka plan fırça kullanarak arka plan siler `hbrBackground` pencere sınıf yapısını bir üyesi.
 
-Varsa `hbrBackground` üyesi, NULL, geçersiz kılınan sürümünüz `OnEraseBkgnd` arka plan rengini Sil. Sürümünüz ile hedeflenen fırça kaynağı da hizalanmasını `CWnd` ilk arama koordinatlarıyla [UnrealizeObject](http://msdn.microsoft.com/library/windows/desktop/dd145164) fırça seçip ardından fırça için.
+Varsa `hbrBackground` üyesi, NULL, geçersiz kılınan sürümünüz `OnEraseBkgnd` arka plan rengini Sil. Sürümünüz ile hedeflenen fırça kaynağı da hizalanmasını `CWnd` ilk arama koordinatlarıyla [UnrealizeObject](/windows/desktop/api/wingdi/nf-wingdi-unrealizeobject) fırça seçip ardından fırça için.
 
 Geçersiz kılınan bir `OnEraseBkgnd` iletiyi işler ve arka plan siler sıfır olmayan yanıt olarak WM_ERASEBKGND döndürmelidir; bu başka silme gerekli olduğunu gösterir. 0 değerini döndürür, pencerenin silinmesi gerek kalmadan olarak işaretlenmiş kalır. (Buna genellikle `fErase` üyesi `PAINTSTRUCT` yapısı TRUE olur.)
 
@@ -6960,9 +6960,9 @@ afx_msg void OnExitSizeMove();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_EXITSIZEMOVE](http://msdn.microsoft.com/library/windows/desktop/ms632623) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_EXITSIZEMOVE](/windows/desktop/winmsg/wm-exitsizemove) bildirimi, Windows SDK'yı açıklanmıştır.
 
-Bir pencere bir taşıma veya kullanıcı pencerenin başlık çubuğunda veya boyutlandırma kenarlığı tıkladığında veya pencerenin geçtiğinde kalıcı döngü boyutlandırma girer [WM_SYSCOMMAND](http://msdn.microsoft.com/library/windows/desktop/ms646360) için ileti [CWnd::DefWindowProc](#defwindowproc) işlevi ve *wParam* SC_MOVE veya SC_SIZE, bu iletiyi bir parametre belirtir.
+Bir pencere bir taşıma veya kullanıcı pencerenin başlık çubuğunda veya boyutlandırma kenarlığı tıkladığında veya pencerenin geçtiğinde kalıcı döngü boyutlandırma girer [WM_SYSCOMMAND](/windows/desktop/menurc/wm-syscommand) için ileti [CWnd::DefWindowProc](#defwindowproc) işlevi ve *wParam* SC_MOVE veya SC_SIZE, bu iletiyi bir parametre belirtir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -6977,9 +6977,9 @@ afx_msg void OnFontChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Ekler veya yazı tipleri sistemden kaldıran bir uygulama (örneğin, üzerinden [AddFontResource](http://msdn.microsoft.com/library/windows/desktop/dd183326) veya [RemoveFontResource](http://msdn.microsoft.com/library/windows/desktop/dd162922) Windows işlevi) göndermelisiniz [WM_FONTCHANGE](http://msdn.microsoft.com/library/windows/desktop/dd145211) tüm üst düzey pencerelere ileti.
+Ekler veya yazı tipleri sistemden kaldıran bir uygulama (örneğin, üzerinden [AddFontResource](/windows/desktop/api/wingdi/nf-wingdi-addfontresourcea) veya [RemoveFontResource](/windows/desktop/api/wingdi/nf-wingdi-removefontresourcea) Windows işlevi) göndermelisiniz [WM_FONTCHANGE](/windows/desktop/gdi/wm-fontchange) tüm üst düzey pencerelere ileti.
 
-Bu ileti göndermek için [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile *hWnd* HWND_BROADCAST için parametre.
+Bu ileti göndermek için [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile *hWnd* HWND_BROADCAST için parametre.
 
 ##  <a name="ongetdlgcode"></a>  CWnd::OnGetDlgCode
 
@@ -7090,7 +7090,7 @@ afx_msg BOOL OnHelpInfo(HELPINFO* lpHelpInfo);
 ### <a name="parameters"></a>Parametreler
 
 *lpHelpInfo*  
-İşaretçi bir [HELPINFO](http://msdn.microsoft.com/library/windows/desktop/bb773313) menü öğesi, Denetim, iletişim kutusu veya Yardım talep edilen penceresi hakkında bilgi içeren yapısı.
+İşaretçi bir [HELPINFO](/windows/desktop/api/winuser/ns-winuser-taghelpinfo) menü öğesi, Denetim, iletişim kutusu veya Yardım talep edilen penceresi hakkında bilgi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -7133,7 +7133,7 @@ afx_msg void OnHotKey(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_HOTKEY](http://msdn.microsoft.com/library/windows/desktop/ms646279) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, en sık kullanılan tuş kayıtlı iş parçacığıyla ilişkilendirilmiş ileti kuyruğu üstündeki yerleştirilir. Kullanım [RegisterHotKey](http://msdn.microsoft.com/library/windows/desktop/ms646309) sistem genelinde bir kısayol tuşu kaydetmek için işlevi.
+Bu yöntem alır [WM_HOTKEY](/windows/desktop/inputdev/wm-hotkey) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, en sık kullanılan tuş kayıtlı iş parçacığıyla ilişkilendirilmiş ileti kuyruğu üstündeki yerleştirilir. Kullanım [RegisterHotKey](https://msdn.microsoft.com/library/windows/desktop/ms646309) sistem genelinde bir kısayol tuşu kaydetmek için işlevi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7325,7 +7325,7 @@ afx_msg void OnInputDeviceChange(unsigned short uFlag);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_INPUT_DEVICE_CHANGE](http://msdn.microsoft.com/library/windows/desktop/ms645591) bildirimi, Windows SDK'yı açıklanmıştır. Genel bir giriş cihazının bir iletidir.
+Bu yöntem alır [WM_INPUT_DEVICE_CHANGE](/windows/desktop/inputdev/wm-input-device-change) bildirimi, Windows SDK'yı açıklanmıştır. Genel bir giriş cihazının bir iletidir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7344,12 +7344,12 @@ afx_msg void OnInputLangChange(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nCharSet*|Yeni yerel karakter kümesi. Daha fazla bilgi için *lfCharSet* parametresinin [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.|
-|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](http://msdn.microsoft.com/library/windows/desktop/dd318693).|
+|[in] *nCharSet*|Yeni yerel karakter kümesi. Daha fazla bilgi için *lfCharSet* parametresinin [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.|
+|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_INPUTLANGCHANGE](http://msdn.microsoft.com/library/windows/desktop/ms632629) Windows SDK'da açıklanan bildirim iletisi.
+Bu yöntem alır [WM_INPUTLANGCHANGE](/windows/desktop/winmsg/wm-inputlangchange) Windows SDK'da açıklanan bildirim iletisi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7369,11 +7369,11 @@ afx_msg void OnInputLangChangeRequest(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |[in] *nFlags*|Bit düzeyinde (veya) yeni yerel ayar listesinde gezinin yüklü önceki veya sonraki ayarında seçildiği ya da yeni giriş yerel klavye düzeni sistem karakter kümesiyle kullanılabilir gösteren bayrakların birleşimi.<br /><br /> Olası değerler INPUTLANGCHANGE_BACKWARD INPUTLANGCHANGE_FORWARD ve INPUTLANGCHANGE_SYSCHARSET ' dir.|
-|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](http://msdn.microsoft.com/library/windows/desktop/dd318693).|
+|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_INPUTLANGCHANGEREQUEST](http://msdn.microsoft.com/library/windows/desktop/ms632630) Windows SDK'da açıklanan bildirim iletisi. Bu ileti, kullanıcının klavye Denetim Masası uygulamasında veya sistem görev çubuğunda göstergesinden belirtilen ya da bir kısayol tuşu ile yeni bir giriş dili seçtiğinde gönderilir.
+Bu yöntem alır [WM_INPUTLANGCHANGEREQUEST](/windows/desktop/winmsg/wm-inputlangchangerequest) Windows SDK'da açıklanan bildirim iletisi. Bu ileti, kullanıcının klavye Denetim Masası uygulamasında veya sistem görev çubuğunda göstergesinden belirtilen ya da bir kısayol tuşu ile yeni bir giriş dili seçtiğinde gönderilir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7516,7 +7516,7 @@ X ve y-koordinatını imleç belirtir. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) stil alacağı `OnLButtonDblClk` çağırır. Microsoft Foundation Class windows için varsayılan değer budur. Windows çağrıları `OnLButtonDblClk` kullanıcının bastığında, serbest bırakır ve sonra sistemin yeniden içinde sol fare düğmesine bastığında süre çift tıklayın. Farenin sol düğmesine çift gerçekten oluşturan dört olayları: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) iletileri ve WM_LBUTTONDBLCLK çağrısı düğmesi olduğunda başka bir WM_LBUTTONUP iletisi yayımladı.
+CS_DBLCLKS sahip windows [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) stil alacağı `OnLButtonDblClk` çağırır. Microsoft Foundation Class windows için varsayılan değer budur. Windows çağrıları `OnLButtonDblClk` kullanıcının bastığında, serbest bırakır ve sonra sistemin yeniden içinde sol fare düğmesine bastığında süre çift tıklayın. Farenin sol düğmesine çift gerçekten oluşturan dört olayları: [WM_LBUTTONDOWN](#onlbuttondown), [WM_LBUTTONUP](#onlbuttonup) iletileri ve WM_LBUTTONDBLCLK çağrısı düğmesi olduğunda başka bir WM_LBUTTONUP iletisi yayımladı.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7615,7 +7615,7 @@ X ve y-koordinatını imleç belirtir. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) stil alacağı `OnMButtonDblClk` çağırır. Tüm Microsoft Foundation Class windows için varsayılan değer budur. Windows oluşturur bir `OnMButtonDblClk` kullanıcı basar, yayınlar ve sonra orta fare düğmesine tekrar sistemin içinde basarsa süre çift tıkladığınızda çağırın. Orta fare düğmesine çift gerçekten oluşturan dört olayları: [WM_MBUTTONDOWN](#onmbuttondown) ve [WM_MBUTTONUP](#onmbuttonup) iletileri WM_MBUTTONDBLCLK çağrısı ve başka bir WM_MBUTTONUP ileti.
+CS_DBLCLKS sahip windows [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) stil alacağı `OnMButtonDblClk` çağırır. Tüm Microsoft Foundation Class windows için varsayılan değer budur. Windows oluşturur bir `OnMButtonDblClk` kullanıcı basar, yayınlar ve sonra orta fare düğmesine tekrar sistemin içinde basarsa süre çift tıkladığınızda çağırın. Orta fare düğmesine çift gerçekten oluşturan dört olayları: [WM_MBUTTONDOWN](#onmbuttondown) ve [WM_MBUTTONUP](#onmbuttonup) iletileri WM_MBUTTONDBLCLK çağrısı ve başka bir WM_MBUTTONUP ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7736,11 +7736,11 @@ Bu üye işlevini geçersiz kılabilir ve doldurun `MEASUREITEMSTRUCT` veri yap�
 
 Liste kutusu veya açılan kutusu ile oluşturulursa, [lbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) veya [cbs_ownerdrawvarıable](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles) stili framework çağıran bu işlev her öğesi denetiminde; sahibi için Aksi takdirde bu işlev bir kez çağrılır.
 
-Windows çağrısını başlatır `OnMeasureItem` birleşik giriş kutuları ve liste kutuları ile OWNERDRAWFIXED stili göndermeden önce oluşturulan sahibinin [WM_INITDIALOG](http://msdn.microsoft.com/library/windows/desktop/ms645428) ileti. Sahibi bu çağrı aldığında, sonuç olarak, Windows henüz denetimde kullanılan yazı tipi genişliği ve Yüksekliği belirlememiştir; uygulama veya kitaplık main işlevi, işlev çağrıları ve bu değerleri gerektiren hesaplamalar gerçekleşmelidir.
+Windows çağrısını başlatır `OnMeasureItem` birleşik giriş kutuları ve liste kutuları ile OWNERDRAWFIXED stili göndermeden önce oluşturulan sahibinin [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) ileti. Sahibi bu çağrı aldığında, sonuç olarak, Windows henüz denetimde kullanılan yazı tipi genişliği ve Yüksekliği belirlememiştir; uygulama veya kitaplık main işlevi, işlev çağrıları ve bu değerleri gerektiren hesaplamalar gerçekleşmelidir.
 
 Ölçülen öğe ise bir `CMenu`, `CListBox` veya `CComboBox` nesne, ardından `MeasureItem` uygun sınıf sanal işlevi çağrılır. Geçersiz kılma `MeasureItem` hesaplamak ve her öğenin boyutunu ayarlamak için uygun denetim sınıfının üye işlevi.
 
-`OnMeasureItem` yalnızca çalışma zamanında denetim sınıf oluşturulur veya lbs_ownerdrawvarıable veya cbs_ownerdrawvarıable style ile oluşturulan çağrılır. Denetim iletişim kutusu Düzenleyicisi tarafından oluşturulmuşsa `OnMeasureItem` çağrılmaz. Bunun nedeni, [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) oluşturma işleminin başında denetimin ileti gönderilir. Varsa kullanarak alt `DDX_Control`, `SubclassDlgItem`, veya `SubclassWindow`, sınıflara genellikle oluşturma işleminden sonra oluşur. Bu nedenle, işlemek için bir yolu yoktur [WM_MEASUREITEM](http://msdn.microsoft.com/library/windows/desktop/bb775925) denetimin iletisinde `OnChildNotify` MFC kullanan on_wm_measureıtem_reflect uygulamak için bir mekanizma işlevi.
+`OnMeasureItem` yalnızca çalışma zamanında denetim sınıf oluşturulur veya lbs_ownerdrawvarıable veya cbs_ownerdrawvarıable style ile oluşturulan çağrılır. Denetim iletişim kutusu Düzenleyicisi tarafından oluşturulmuşsa `OnMeasureItem` çağrılmaz. Bunun nedeni, [WM_MEASUREITEM](/windows/desktop/Controls/wm-measureitem) oluşturma işleminin başında denetimin ileti gönderilir. Varsa kullanarak alt `DDX_Control`, `SubclassDlgItem`, veya `SubclassWindow`, sınıflara genellikle oluşturma işleminden sonra oluşur. Bu nedenle, işlemek için bir yolu yoktur [WM_MEASUREITEM](/windows/desktop/Controls/wm-measureitem) denetimin iletisinde `OnChildNotify` MFC kullanan on_wm_measureıtem_reflect uygulamak için bir mekanizma işlevi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7812,7 +7812,7 @@ afx_msg UINT OnMenuDrag(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MENUDRAG](http://msdn.microsoft.com/library/windows/desktop/ms647606) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_MENUDRAG](/windows/desktop/menurc/wm-menudrag) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7829,18 +7829,18 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pMenu*|İşaretçi bir [MENUGETOBJECTINFO](http://msdn.microsoft.com/library/windows/desktop/ms647572) sürükle-bırak menüsünün fare imlecini hakkında bilgi içeren yapısı açıktır.|
+|[in] *pMenu*|İşaretçi bir [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) sürükle-bırak menüsünün fare imlecini hakkında bilgi içeren yapısı açıktır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
 |Dönüş Değeri|Açıklama|
 |------------------|-------------|
-|MNGO_NOERROR|Bırakma ve sürükleme işlemleri destekleyen bir arabirim işaretçisi döndürülür `pvObj` üyesi [MENUGETOBJECTINFO](http://msdn.microsoft.com/library/windows/desktop/ms647572) yapısı. Şu anda yalnızca [ıdroptarget'ı](http://msdn.microsoft.com/library/windows/desktop/ms679679) arabirimi desteklenir.|
+|MNGO_NOERROR|Bırakma ve sürükleme işlemleri destekleyen bir arabirim işaretçisi döndürülür `pvObj` üyesi [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) yapısı. Şu anda yalnızca [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget) arabirimi desteklenir.|
 |MNGO_NOINTERFACE|Bırakma ve sürükleme arabirim desteklenir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MENUGETOBJECT](http://msdn.microsoft.com/library/windows/desktop/ms647607) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_MENUGETOBJECT](/windows/desktop/menurc/wm-menugetobject) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7864,7 +7864,7 @@ afx_msg void OnMenuRButtonUp(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) bildirimi, Windows SDK'yı açıklanmıştır. [WM_MENURBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms647610) ileti içeriğe duyarlı menüyü menü öğesi message içinde belirtilen sağlamak bir uygulama sağlar.
+Bu yöntem alır [WM_MENURBUTTONUP](/windows/desktop/menurc/wm-menurbuttonup) bildirimi, Windows SDK'yı açıklanmıştır. [WM_MENURBUTTONUP](/windows/desktop/menurc/wm-menurbuttonup) ileti içeriğe duyarlı menüyü menü öğesi message içinde belirtilen sağlamak bir uygulama sağlar.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -7965,7 +7965,7 @@ Tek tek isabet sınaması alan kodlarının açıklaması için bkz: [OnNcHitTes
 
 ##  <a name="onmousehover"></a>  CWnd::OnMouseHover
 
-İmleç pencerenin istemci alanının çağrıda belirtilen süre boyunca vurguladığında framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).
+İmleç pencerenin istemci alanının çağrıda belirtilen süre boyunca vurguladığında framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).
 
 ```
 afx_msg void OnMouseHover(
@@ -7982,9 +7982,9 @@ afx_msg void OnMouseHover(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645613) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_MOUSEHOVER](/windows/desktop/inputdev/wm-mousehover) bildirimi, Windows SDK'yı açıklanmıştır.
 
-*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).
+*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
 
 |Değiştirici tuşu bırakıldı|Açıklama|
 |------------------|-----------------|
@@ -8014,20 +8014,20 @@ afx_msg void OnMouseHWheel(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).|
+|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
 |[in] *zDelta*|Tekerlek döndürme, 120 olduğu katları veya WHEEL_DELTA, bölümlerini ifade uzaklığı belirtir. Tekerleği sağ Döndürülmüş pozitif bir değer gösterir. Tekerlek sola döndürülmüş negatif bir değer belirtir.|
 |[in] *pt*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MOUSEHWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645614) Windows SDK'da açıklanan bildirim iletisi. Bu ileti, farenin yatay kaydırma tekerleği eğimlendirildiğinde ya yükleyen odaklı penceresine gönderilir.
+Bu yöntem alır [WM_MOUSEHWHEEL](/windows/desktop/inputdev/wm-mousehwheel) Windows SDK'da açıklanan bildirim iletisi. Bu ileti, farenin yatay kaydırma tekerleği eğimlendirildiğinde ya yükleyen odaklı penceresine gönderilir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
 
 ##  <a name="onmouseleave"></a>  CWnd::OnMouseLeave
 
-İmleç için çağrıda belirlenmiş penceredeki istemci alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).
+İmleç için çağrıda belirlenmiş penceredeki istemci alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).
 
 ```
 afx_msg void OnMouseLeave();
@@ -8035,7 +8035,7 @@ afx_msg void OnMouseLeave();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_MOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645615) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_MOUSELEAVE](/windows/desktop/inputdev/wm-mouseleave) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8113,7 +8113,7 @@ Fare tekerleği kaydırma etkin olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılınmadığı sürece `OnMouseWheel` varsayılan çağırır [WM_MOUSEWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645617). Windows ileti odaklanmış denetime veya alt pencereyi otomatik olarak yönlendirir. Win32 işlevini [DefWindowProc](http://msdn.microsoft.com/library/windows/desktop/ms633572) üst zinciri işler penceresi iletiyi yayar.
+Geçersiz kılınmadığı sürece `OnMouseWheel` varsayılan çağırır [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel). Windows ileti odaklanmış denetime veya alt pencereyi otomatik olarak yönlendirir. Win32 işlevini [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) üst zinciri işler penceresi iletiyi yayar.
 
 *ZDelta* katlarından biri 120 ayarlanan WHEEL_DELTA parametredir. Bu değer gerçekleştirilecek bir eylem eşiği ve her değişiklik için bir tür eylemin (örneğin, kaydırma ileriye doğru bir dişli) gerçekleşmelidir.
 
@@ -8429,7 +8429,7 @@ Belirtir bir `CPoint` x ve y içeren nesne ekran koordinatları imleç konumu. B
 
 ##  <a name="onncmousehover"></a>  CWnd::OnNcMouseHover
 
-İmleç pencerenin istemci olmayan alanın çağrıda belirtilen süre boyunca vurguladığında framework bu üye işlevini çağırır. [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).
+İmleç pencerenin istemci olmayan alanın çağrıda belirtilen süre boyunca vurguladığında framework bu üye işlevini çağırır. [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).
 
 ```
 afx_msg void OnNcMouseHover(
@@ -8441,19 +8441,19 @@ afx_msg void OnNcMouseHover(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](http://msdn.microsoft.com/library/windows/desktop/ms645618) ileti.|
+|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
 |[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_NCMOUSEHOVER](http://msdn.microsoft.com/library/windows/desktop/ms645625) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_NCMOUSEHOVER](/windows/desktop/inputdev/wm-ncmousehover) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
 
 ##  <a name="onncmouseleave"></a>  CWnd::OnNcMouseLeave
 
-İmleç için çağrıda belirlenmiş pencerenin istemci olmayan alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](http://msdn.microsoft.com/library/windows/desktop/ms646265).
+İmleç için çağrıda belirlenmiş pencerenin istemci olmayan alanından ayrılırken framework bu üye işlevini çağırır [trackmouseevent'e öncelikli](https://msdn.microsoft.com/library/windows/desktop/ms646265).
 
 ```
 afx_msg void OnNcMouseLeave();
@@ -8461,7 +8461,7 @@ afx_msg void OnNcMouseLeave();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_NCMOUSELEAVE](http://msdn.microsoft.com/library/windows/desktop/ms645626) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_NCMOUSELEAVE](/windows/desktop/inputdev/wm-ncmouseleave) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8590,7 +8590,7 @@ afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_DWMNCRENDERINGCHANGED](http://msdn.microsoft.com/library/windows/desktop/dd388200) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_DWMNCRENDERINGCHANGED](/windows/desktop/dwm/wm-dwmncrenderingchanged) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8610,13 +8610,13 @@ void OnNcXButtonDblClk(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](http://msdn.microsoft.com/library/windows/desktop/ms645618) ileti.|
+|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
 |[in] *Ndüğme*|İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
 |[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
+Bu yöntem alır [WM_XBUTTONDBLCLK](/windows/desktop/inputdev/wm-xbuttondblclk) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8636,13 +8636,13 @@ afx_msg void OnNcXButtonDown(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](http://msdn.microsoft.com/library/windows/desktop/ms645618) ileti.|
+|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
 |[in] *Ndüğme*|İlk X fare düğmesini basılı, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine basıldığında.|
 |[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_NCXBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms645632) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
+Bu yöntem alır [WM_NCXBUTTONDOWN](/windows/desktop/inputdev/wm-ncxbuttondown) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8662,13 +8662,13 @@ afx_msg void OnNcXButtonUp(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](http://msdn.microsoft.com/library/windows/desktop/ms645618) ileti.|
+|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
 |[in] *Ndüğme*|İlk X fare düğmesi serbest bırakıldığında, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine yayımlanır.|
 |[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_NCXBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646240) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
+Bu yöntem alır [WM_NCXBUTTONUP](/windows/desktop/inputdev/wm-ncxbuttonup) bildirimi, Windows SDK'yı açıklanmıştır. Bu ileti, imlecin bulunduğu penceresine gönderilir. Bir pencere fare yakalandı, bu iletiyi gönderen değil.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8687,12 +8687,12 @@ afx_msg void OnNextMenu(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nKey*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).|
-|[in] *lpMdiNextMenu*|İşaretçi bir [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) menüsünde etkinleştirilmesi hakkında bilgi içeren yapısı.|
+|[in] *nKey*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
+|[in] *lpMdiNextMenu*|İşaretçi bir [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) menüsünde etkinleştirilmesi hakkında bilgi içeren yapısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) bildirimi, Windows SDK'yı açıklanmıştır. Bu iletiye yanıt olarak, uygulamanızı ayarlayabilirsiniz `hmenuNext` üyesi [MDINEXTMENU](http://msdn.microsoft.com/library/windows/desktop/ms647561) , geçmek için menü belirtmek için yapısı ve `hwndNext` üye menüsünde bildirim iletilerinin alınacağı pencereyi belirtmek için .
+Bu yöntem alır [WM_UNINITMENUPOPUP](/windows/desktop/menurc/wm-uninitmenupopup) bildirimi, Windows SDK'yı açıklanmıştır. Bu iletiye yanıt olarak, uygulamanızı ayarlayabilirsiniz `hmenuNext` üyesi [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) , geçmek için menü belirtmek için yapısı ve `hwndNext` üye menüsünde bildirim iletilerinin alınacağı pencereyi belirtmek için .
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8745,7 +8745,7 @@ afx_msg UINT OnNotifyFormat(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pWnd*|Bir işaretçi bir `CWnd` penceresine gönderilmesi temsil eden nesne [wm_notıfy](http://msdn.microsoft.com/library/windows/desktop/bb775583) ileti.<br /><br /> Bu parametre bir denetim için bir işaretçi ise *nyürütülen komut* parametresi ise NF_QUERY veya işaretçiyi bir denetimin ana penceresine *nyürütülen komut* NF_REQUERY olduğu.|
+|[in] *pWnd*|Bir işaretçi bir `CWnd` penceresine gönderilmesi temsil eden nesne [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti.<br /><br /> Bu parametre bir denetim için bir işaretçi ise *nyürütülen komut* parametresi ise NF_QUERY veya işaretçiyi bir denetimin ana penceresine *nyürütülen komut* NF_REQUERY olduğu.|
 |[in] *nyürütülen komut*|Wm_notıfy iletisi uzmanlaşmış komut değeri. Olası değerler şunlardır:<br /><br /> -NF_QUERY-<br />     İleti, ANSI ya da Unicode yapıları wm_notıfy iletileri kullanılması gerekip gerekmediğini belirlemek için kullanılan bir sorgudur. Bu ileti bir denetimden denetim ve bu iletinin NF_REQUERY forma yanıt oluşturma sırasında üst pencereye gönderilir.<br />-NF_REQUERY-<br />     Bu iletinin NF_QUERY formun üst pencereye göndermek bir denetim için bir istek iletisidir. Bu istek üst penceresinden gönderilir ve wm_notıfy iletileri kullanmak için bir yapı türü hakkında üst sorgulayacak denetimin sorar. Varsa *nyürütülen komut* parametre NF_REQUERY ve sorgulamayı işleminin sonucu dönüş değeridir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -8758,7 +8758,7 @@ afx_msg UINT OnNotifyFormat(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_NOTIFYFORMAT](http://msdn.microsoft.com/library/windows/desktop/bb775584) bildirimi, Windows SDK'yı açıklanmıştır. Wm_notıfy iletileri bir ortak denetimi üst pencereye ve ortak denetimi üst pencereye gönderilir.
+Bu yöntem alır [WM_NOTIFYFORMAT](/windows/desktop/Controls/wm-notifyformat) bildirimi, Windows SDK'yı açıklanmıştır. Wm_notıfy iletileri bir ortak denetimi üst pencereye ve ortak denetimi üst pencereye gönderilir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8773,7 +8773,7 @@ afx_msg void OnPaint();
 
 ### <a name="remarks"></a>Açıklamalar
 
-[WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145137) ileti gönderilir [UpdateWindow](#updatewindow) veya [RedrawWindow](#redrawwindow) üye işlevi çağrılır.
+[WM_PAINT](https://msdn.microsoft.com/library/windows/desktop/dd145137) ileti gönderilir [UpdateWindow](#updatewindow) veya [RedrawWindow](#redrawwindow) üye işlevi çağrılır.
 
 Bir pencere arama sonucunda iç boyama iletileri alabilirsiniz `RedrawWindow` RDW_INTERNALPAINT üye işlevini bayrağı ayarlanmış. Bu durumda, pencereyi bir güncelleştirme bölgesine sahip olamaz. Bir uygulamayı çağırması gerekir [GetUpdateRect](#getupdaterect) penceresi bir güncelleştirme bölgesine sahip olup olmadığını belirlemek için üye işlevi. Varsa `GetUpdateRect` uygulama 0 döndürür çağırmamalıdır [BeginPaint](#beginpaint) ve [EndPaint](#endpaint) üye işlevleri.
 
@@ -8785,9 +8785,9 @@ Görüntüyü belge/görünüm uygulamaları oluşturma hakkında daha fazla bil
 
 Kullanma hakkında daha fazla bilgi için `WM_Paint`, Windows SDK'sı, aşağıdaki konulara bakın:
 
-- [WM_PAINT iletisini](http://msdn.microsoft.com/library/windows/desktop/dd145137)
+- [WM_PAINT iletisini](https://msdn.microsoft.com/library/windows/desktop/dd145137)
 
-- [WM_PAINT iletisini kullanarak](http://msdn.microsoft.com/library/windows/desktop/dd145193)
+- [WM_PAINT iletisini kullanarak](/windows/desktop/gdi/using-the-wm-paint-message)
 
 ##  <a name="onpaintclipboard"></a>  CWnd::OnPaintClipboard
 
@@ -8811,7 +8811,7 @@ Tanımlayan bir [PAINTSTRUCT](../../mfc/reference/paintstruct-structure.md) kıs
 
 Tüm istemci alanını ya da yalnızca bir bölümü yeniden çizerken gerekip gerekmediğini belirlemek için Pano sahibi çizim alanının verilen boyutları karşılaştırmalıdır `rcpaint` üyesi `PAINTSTRUCT` yapısı içinde en son verilenboyutlarıiçin[ OnSizeClipboard](#onsizeclipboard) üye işlev çağrısı.
 
-`OnPaintClipboard` kullanması gereken [GlobalLock](http://msdn.microsoft.com/library/windows/desktop/aa366584) içeren belleği kilitlemek için Windows işlevi `PAINTSTRUCT` veri yapısı ve belleğin ile kilit açma [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) çıkana önce Windows işlev.
+`OnPaintClipboard` kullanması gereken [GlobalLock](/windows/desktop/api/winbase/nf-winbase-globallock) içeren belleği kilitlemek için Windows işlevi `PAINTSTRUCT` veri yapısı ve belleğin ile kilit açma [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) çıkana önce Windows işlev.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8919,9 +8919,9 @@ Bir olay bir istek, dönüş true ise izin isteği veya BROADCAST_QUERY_DENY ist
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) Windows SDK'da açıklanan ileti.
+Bu yöntem alır [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) Windows SDK'da açıklanan ileti.
 
-*NPowerEvent* parametresi, pil azaldı gibi olayları belirtir, güç durumu değişti, askıya alma işlemi için izin istedi veya reddedildi, bir işlem olan olaydan sonra otomatik olarak devam ediyor, sistem sonra askıya alma işlemi ya da bir işlemi askıya sürdürülüyor. *NEventData* parametresi genellikle kullanılmaz. Daha fazla bilgi için *wParam* ve *lParam* parametrelerinin [WM_POWERBROADCAST](http://msdn.microsoft.com/library/windows/desktop/aa373247) ileti.
+*NPowerEvent* parametresi, pil azaldı gibi olayları belirtir, güç durumu değişti, askıya alma işlemi için izin istedi veya reddedildi, bir işlem olan olaydan sonra otomatik olarak devam ediyor, sistem sonra askıya alma işlemi ya da bir işlemi askıya sürdürülüyor. *NEventData* parametresi genellikle kullanılmaz. Daha fazla bilgi için *wParam* ve *lParam* parametrelerinin [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -8944,7 +8944,7 @@ Sistem, kullanıcı simge durumuna küçültülmüş pencereyi sürüklerken gö
 
 ##  <a name="onqueryendsession"></a>  CWnd::OnQueryEndSession
 
-Kullanıcı Windows oturumu veya bir uygulama çağırdığında sonuna seçtiğinde framework bu üye işlevini çağırır [ExitWindows](http://msdn.microsoft.com/library/windows/desktop/aa376867) Windows işlevi.
+Kullanıcı Windows oturumu veya bir uygulama çağırdığında sonuna seçtiğinde framework bu üye işlevini çağırır [ExitWindows](/windows/desktop/api/winuser/nf-winuser-exitwindows) Windows işlevi.
 
 ```
 afx_msg BOOL OnQueryEndSession();
@@ -9006,7 +9006,7 @@ Odak göstergeleri ve klavye Hızlandırıcıları görünür durumdaysa, dönü
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevselliğine öykünür [WM_QUERYUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646355) Windows SDK içinde açıklandığı gibi ileti.
+Bu üye işlevi işlevselliğine öykünür [WM_QUERYUISTATE](/windows/desktop/menurc/wm-queryuistate) Windows SDK içinde açıklandığı gibi ileti.
 
 ##  <a name="onrawinput"></a>  CWnd::OnRawInput
 
@@ -9023,11 +9023,11 @@ afx_msg void OnRawInput(
 |Parametre|Açıklama|
 |---------------|-----------------|
 |[in] *nInputCode*|Uygulama ön planda veya giriş oluştu olup olmadığını gösteren giriş kodu. Her iki durumda da uygulamayı çağırması gerekir [CWnd::DefWindowProc](#defwindowproc) sistem temizleme gerçekleştirebilmek için.<br /><br /> Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> Uygulama ön planda - RIM_INPUT - giriş oluştu.<br />Uygulama ön planda değildi - RIM_INPUTSINK - giriş oluştu.|
-|[in] *hRawInput*|İşlemek için bir [RAWINPUT](http://msdn.microsoft.com/library/windows/desktop/ms645562) CİHAZDAN ham giriş yapısı.|
+|[in] *hRawInput*|İşlemek için bir [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) CİHAZDAN ham giriş yapısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_INPUT](http://msdn.microsoft.com/library/windows/desktop/ms646275) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_INPUT](/windows/desktop/inputdev/wm-appcommand) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9062,7 +9062,7 @@ X ve y belirtir imleci koordinatları. Bu her zaman penceresinin sol üst köşe
 
 ### <a name="remarks"></a>Açıklamalar
 
-CS_DBLCLKS sahip windows [WNDCLASS](http://msdn.microsoft.com/library/windows/desktop/ms633576) stil alabilir `OnRButtonDblClk` çağırır. Microsoft Foundation Class Kitaplığı içinde windows için varsayılan değer budur. Windows çağrıları `OnRButtonDblClk` kullanıcının bastığında, serbest bırakır ve daha sonra tekrar sistemin içinde sağ fare düğmesine bastığında süre çift tıklayın. Sağ fare düğmesine çift gerçekten oluşturan dört olayları: [WM_RBUTTONDOWN](#onrbuttondown) ve [WM_RBUTTONUP](#onrbuttonup) iletileri `OnRButtonDblClk` çağrısı ve düğme başka bir WM_RBUTTONUP iletisi yayımladı.
+CS_DBLCLKS sahip windows [WNDCLASS](https://msdn.microsoft.com/library/windows/desktop/ms633576) stil alabilir `OnRButtonDblClk` çağırır. Microsoft Foundation Class Kitaplığı içinde windows için varsayılan değer budur. Windows çağrıları `OnRButtonDblClk` kullanıcının bastığında, serbest bırakır ve daha sonra tekrar sistemin içinde sağ fare düğmesine bastığında süre çift tıklayın. Sağ fare düğmesine çift gerçekten oluşturan dört olayları: [WM_RBUTTONDOWN](#onrbuttondown) ve [WM_RBUTTONUP](#onrbuttonup) iletileri `OnRButtonDblClk` çağrısı ve düğme başka bir WM_RBUTTONUP iletisi yayımladı.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9153,7 +9153,7 @@ afx_msg LRESULT OnRegisteredMouseWheel(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılınmadığı sürece `OnRegisteredMouseWheel` iletiyi uygun penceresi (üst penceresine odak) ve çağrıları yönlendirir [WM_MOUSEWHEEL](http://msdn.microsoft.com/library/windows/desktop/ms645617) Bu pencere işleyicisi.
+Geçersiz kılınmadığı sürece `OnRegisteredMouseWheel` iletiyi uygun penceresi (üst penceresine odak) ve çağrıları yönlendirir [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel) Bu pencere işleyicisi.
 
 Bu üye işlevi kendi ileti yönlendirme sağlamak veya fare tekerleği kaydırma davranışını değiştirmek için geçersiz kılın.
 
@@ -9170,7 +9170,7 @@ afx_msg void OnRenderAllFormats();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Pano sahibi oluşturma yeteneğine sahiptir ve her biçim için bir veri tanıtıcı çağırarak panoya geçirmek tüm biçimler verileri işlemesi gerekir [SetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms649051) Windows işlevi. Bu Pano veri işlenen uygulamanın edildiğinde olsa da geçerli veri içerdiğinden sağlar. Uygulama çağırmalıdır [OpenClipboard](#openclipboard) üye işlevini çağırmadan önce [SetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms649051) Windows işleve ve çağrı [CloseClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649035) Windows Bundan sonra işlev.
+Pano sahibi oluşturma yeteneğine sahiptir ve her biçim için bir veri tanıtıcı çağırarak panoya geçirmek tüm biçimler verileri işlemesi gerekir [SetClipboardData](/windows/desktop/api/winuser/nf-winuser-setclipboarddata) Windows işlevi. Bu Pano veri işlenen uygulamanın edildiğinde olsa da geçerli veri içerdiğinden sağlar. Uygulama çağırmalıdır [OpenClipboard](#openclipboard) üye işlevini çağırmadan önce [SetClipboardData](/windows/desktop/api/winuser/nf-winuser-setclipboarddata) Windows işleve ve çağrı [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) Windows Bundan sonra işlev.
 
 ##  <a name="onrenderformat"></a>  CWnd::OnRenderFormat
 
@@ -9187,7 +9187,7 @@ Pano biçimi belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Alıcı bu biçimde bir veri işleme ve çağırarak Panodaki geçirmek [SetClipboardData](http://msdn.microsoft.com/library/windows/desktop/ms649051) Windows işlevi.
+Alıcı bu biçimde bir veri işleme ve çağırarak Panodaki geçirmek [SetClipboardData](/windows/desktop/api/winuser/nf-winuser-setclipboarddata) Windows işlevi.
 
 Çağırmayın `OpenClipboard` üye işlevini veya `CloseClipboard` Windows işlev içinden `OnRenderFormat`.
 
@@ -9213,9 +9213,9 @@ afx_msg void OnSessionChange(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_WTSSESSION_CHANGE](/windows/desktop/TermServ/wm-wtssession-change) bildirimi, Windows SDK'yı açıklanmıştır.
 
-*NSessionState* parametresi, bir oturuma bağlı veya konsol veya uzak bir terminal bağlantısı kesildi, açıp kapatabilir, oturum açmış kullanıcı, oturum kilitli veya kilidinin veya oturumu uzaktan Kumandalı durumuna değişti olduğunu belirtir. Daha fazla bilgi için *wParam* parametresinin [WM_WTSSESSION_CHANGE](http://msdn.microsoft.com/library/aa383828) ileti.
+*NSessionState* parametresi, bir oturuma bağlı veya konsol veya uzak bir terminal bağlantısı kesildi, açıp kapatabilir, oturum açmış kullanıcı, oturum kilitli veya kilidinin veya oturumu uzaktan Kumandalı durumuna değişti olduğunu belirtir. Daha fazla bilgi için *wParam* parametresinin [WM_WTSSESSION_CHANGE](/windows/desktop/TermServ/wm-wtssession-change) ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9292,7 +9292,7 @@ afx_msg void OnSettingChange(
 ### <a name="parameters"></a>Parametreler
 
 *uFlags*  
-Sistem sonucu olarak ileti gönderdiğinde bir `SystemParametersInfo` çağrı, bu parametre değiştirilen sistem parametresi gösteren bir bayrak. Değerler listesi için bkz. [SystemParametersInfo](http://msdn.microsoft.com/library/windows/desktop/ms724947) Windows SDK. Bir uygulama ileti gönderdiğinde, bu parametre 0 olmalıdır.
+Sistem sonucu olarak ileti gönderdiğinde bir `SystemParametersInfo` çağrı, bu parametre değiştirilen sistem parametresi gösteren bir bayrak. Değerler listesi için bkz. [SystemParametersInfo](https://msdn.microsoft.com/library/windows/desktop/ms724947) Windows SDK. Bir uygulama ileti gönderdiğinde, bu parametre 0 olmalıdır.
 
 *lpszSection*  
 Değişen bölümün adını belirten bir dize işaret eder. (Bölüm adı köşeli ayraç dize içermiyor.)
@@ -9403,7 +9403,7 @@ Genel bellek nesneyi tanımlar. Bellek nesne boyamak Pano sahibi alanı belirten
 
 `OnSizeClipboard` Üye işlevi çağrıldığında null bir dikdörtgen (0,0,0,0) ile yeni boyut Pano uygulama hakkında yok veya simge durumuna küçültülmüş olduğunda. Bu görüntü kaynaklarını serbest bırakmak için Pano sahibi izin verir.
 
-İçinde `OnSizeClipboard`, bir uygulama kullanmanız gerekir [GlobalLock](http://msdn.microsoft.com/library/windows/desktop/aa366584) Windows işlevi RECT veri yapısının bellek kilitlenemedi. Bu bellek ile kilit açma uygulamanın [GlobalUnlock](http://msdn.microsoft.com/library/windows/desktop/aa366595) Windows işlev önce verir veya denetim döndürür.
+İçinde `OnSizeClipboard`, bir uygulama kullanmanız gerekir [GlobalLock](/windows/desktop/api/winbase/nf-winbase-globallock) Windows işlevi RECT veri yapısının bellek kilitlenemedi. Bu bellek ile kilit açma uygulamanın [GlobalUnlock](/windows/desktop/api/winbase/nf-winbase-globalunlock) Windows işlev önce verir veya denetim döndürür.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9464,7 +9464,7 @@ Bu çağrı yalnızca bilgilendirme amaçlıdır.
 
 ##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
 
-Bu üye işlevinden sonra framework çağırır [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi, bir veya daha fazla pencere stilleri değişti.
+Bu üye işlevinden sonra framework çağırır [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi, bir veya daha fazla pencere stilleri değişti.
 
 ```
 afx_msg void OnStyleChanged(
@@ -9482,7 +9482,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 - Pencerenin nonextended stilleri GWL_STYLE değişti.
 
 *lpStyleStruct*  
-İşaret eden bir [STYLESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama stilleri inceleyebilirsiniz, ancak bunları değiştiremezsiniz.
+İşaret eden bir [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama stilleri inceleyebilirsiniz, ancak bunları değiştiremezsiniz.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9491,7 +9491,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 
 ##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
 
-Bu üye işlevi framework çağırır olduğunda [SetWindowLong](http://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi bir veya daha fazla pencere stilleri değiştirilmek üzereyken.
+Bu üye işlevi framework çağırır olduğunda [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi bir veya daha fazla pencere stilleri değiştirilmek üzereyken.
 
 ```
 afx_msg void OnStyleChanging(
@@ -9509,7 +9509,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 - Pencerenin nonextended stilleri GWL_STYLE değişti.
 
 *lpStyleStruct*  
-İşaret eden bir [STYLESTRUCT](http://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama, stilleri inceleyin ve bunları değiştirin.
+İşaret eden bir [STYLESTRUCT](https://msdn.microsoft.com/library/windows/desktop/ms632607) penceresi için yeni stilleri içeren yapısı. Bir uygulama, stilleri inceleyin ve bunları değiştirin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9552,7 +9552,7 @@ Yineleme sayısını (sayısı tuş vuruşu tuşunu basılı tutarak kullanıcı
 
 Bu sanal tuş kodunu denetim menüsünden belirtir. (Winuser.h standart sanal anahtar kodlarının listesi için bkz:)
 
-Bağlam kod 0 olduğunda WM_SYSCHAR geçirebilirsiniz [WM_SYSCHAR](http://msdn.microsoft.com/library/windows/desktop/ms646357) için ileti [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) işlevmiş gibi bir sistem yerine normal bir anahtar iletisini işleyeceği Windows işlevi karakter-anahtar. Bu, etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılması için kullanılan kısayol tuşları sağlar.
+Bağlam kod 0 olduğunda WM_SYSCHAR geçirebilirsiniz [WM_SYSCHAR](/windows/desktop/menurc/wm-syschar) için ileti [TranslateAccelerator](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) işlevmiş gibi bir sistem yerine normal bir anahtar iletisini işleyeceği Windows işlevi karakter-anahtar. Bu, etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılması için kullanılan kısayol tuşları sağlar.
 
 IBM Geliştirilmiş 101 ve 102-tuşlu klavye için Gelişmiş sağ ALT ve sağ CTRL tuşları klavye ana bölümünü anahtarlarıdır; Bileşenler, DEL, giriş, END, PAGE UP, PAGE DOWN ve kümelerindeki sayısal tuş takımındaki sol ok tuşlarını; ve eğik çizgi (/) ve ENTER anahtarları sayısal tuş takımı. Bazı klavyeler genişletilmiş anahtar bit destekleyebilir *nFlags*.
 
@@ -9717,7 +9717,7 @@ Aşağıdaki listede gösterildiği gibi tarama kod, anahtar geçişi kod, önce
 
 Pencere giriş odağını etkin pencere ait şu anda varsa `OnSysKeyDown` üye işlevi çağrılır. `CWnd` İletiyi alan nesnesi bağlam kodu işaretleyerek bu iki bağlamları arasında ayırt etmek `nFlags`.
 
-Bağlam kod 0 olduğunda WM_SYSKEYDOWN iletisi tarafından alınan `OnSysKeyDown` geçirilebilir [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) işlevmiş gibi bir sistem anahtarı ileti yerine normal bir anahtar iletisini işleyeceği Windows işlevi. Bu, etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılması için kullanılan kısayol tuşları sağlar.
+Bağlam kod 0 olduğunda WM_SYSKEYDOWN iletisi tarafından alınan `OnSysKeyDown` geçirilebilir [TranslateAccelerator](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) işlevmiş gibi bir sistem anahtarı ileti yerine normal bir anahtar iletisini işleyeceği Windows işlevi. Bu, etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılması için kullanılan kısayol tuşları sağlar.
 
 Otomatik-repeat, birden fazla nedeniyle `OnSysKeyDown` çağrı önce oluşabilir [WM_SYSKEYUP](#onsyskeyup) iletisi alındığında. Önceki anahtar durumu (bit 14) belirlemek için kullanılabilir olup olmadığını `OnSysKeyDown` çağrı ilk aşağı geçiş veya bir aşağı yinelenen geçiş gösterir.
 
@@ -9764,7 +9764,7 @@ Aşağıdaki listede gösterildiği gibi tarama kod, anahtar geçişi kod, önce
 
 Pencere giriş odağını etkin pencere ait şu anda varsa `OnSysKeyUp` üye işlevi çağrılır. `CWnd` Araması aldığı nesne bağlamı kod işaretleyerek bu iki bağlamları arasında ayırt etmek *nFlags*.
 
-Bağlam kod 0 olduğunda WM_SYSKEYUP iletisi tarafından alınan `OnSysKeyUp` geçirilebilir [TranslateAccelerator](http://msdn.microsoft.com/library/windows/desktop/ms646373) işlevmiş gibi bir sistem anahtarı ileti yerine normal bir anahtar iletisini işleyeceği Windows işlevi. Bu Hızlandırıcı etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılacak (kısayol) anahtarlar sağlar.
+Bağlam kod 0 olduğunda WM_SYSKEYUP iletisi tarafından alınan `OnSysKeyUp` geçirilebilir [TranslateAccelerator](/windows/desktop/api/winuser/nf-winuser-translateacceleratora) işlevmiş gibi bir sistem anahtarı ileti yerine normal bir anahtar iletisini işleyeceği Windows işlevi. Bu Hızlandırıcı etkin pencere giriş odağını yoksa bile etkin pencere ile kullanılacak (kısayol) anahtarlar sağlar.
 
 IBM Geliştirilmiş 101 ve 102-tuşlu klavye için Gelişmiş sağ ALT ve sağ CTRL tuşları klavye ana bölümünü anahtarlarıdır; Bileşenler, DEL, giriş, END, PAGE UP, PAGE DOWN ve kümelerindeki sayısal tuş takımındaki sol ok tuşlarını; ve eğik çizgi (/) ve ENTER anahtarları sayısal tuş takımı. Bazı klavyeler genişletilmiş anahtar bit destekleyebilir *nFlags*.
 
@@ -9775,7 +9775,7 @@ ABD dışı için Sağ ALT tuşunu Gelişmiş 102-tuşlu klavye CTRL + ALT anaht
 |1.|[WM_KEYDOWN](#onkeydown)|VK_CONTROL|
 |2.|[WM_KEYDOWN](#onkeydown)|VK_MENU|
 |3.|[WM_KEYUP](#onkeyup)|VK_CONTROL|
-|4.|[WM_SYSKEYUP](http://msdn.microsoft.com/library/windows/desktop/ms646287)|VK_MENU|
+|4.|[WM_SYSKEYUP](/windows/desktop/inputdev/wm-syskeyup)|VK_MENU|
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9836,7 +9836,7 @@ afx_msg void OnTimeChange();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Değişiklikleri bu iletiyi sistem saatini tüm üst düzey pencerelere Gönder herhangi bir uygulama vardır. Bir uygulamanın tüm üst düzey pencerelere WM_TIMECHANGE ileti göndermek için kullanabileceği [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile kendi *hwnd* HWND_BROADCAST için parametre.
+Değişiklikleri bu iletiyi sistem saatini tüm üst düzey pencerelere Gönder herhangi bir uygulama vardır. Bir uygulamanın tüm üst düzey pencerelere WM_TIMECHANGE ileti göndermek için kullanabileceği [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile kendi *hwnd* HWND_BROADCAST için parametre.
 
 ##  <a name="ontimer"></a>  CWnd::OnTimer
 
@@ -9853,7 +9853,7 @@ Zamanlayıcı tanımlayıcısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlev gönderen bir [WM_TIMER](http://msdn.microsoft.com/library/windows/desktop/ms644902) başka iletiler uygulamanın ileti kuyrukta olduğunda ileti.
+[DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlev gönderen bir [WM_TIMER](/windows/desktop/winmsg/wm-timer) başka iletiler uygulamanın ileti kuyrukta olduğunda ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9878,7 +9878,7 @@ virtual INT_PTR OnToolHitTest(
 X ve y-koordinatını imleç belirtir. Bu her zaman penceresinin sol üst köşesindeki göreli koordinatları
 
 *PTI*  
-Bir işaretçi bir [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) yapısı. Aşağıdaki yapı değerleri varsayılan olarak ayarlanır:
+Bir işaretçi bir [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) yapısı. Aşağıdaki yapı değerleri varsayılan olarak ayarlanır:
 
 - *HWND*  =  `m_hWnd` işlemek için bir pencere
 
@@ -9900,7 +9900,7 @@ Araç İpucu olduğu ilişkili alan bir düğme değilse `OnToolHitTest` TTF_NOT
 
 Geçersiz kılma `OnToolHitTest` varsayılan sağladığından farklı bilgi sağlamak için.
 
-Bkz: [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256), yapısı hakkında daha fazla bilgi için Windows SDK.
+Bkz: [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa), yapısı hakkında daha fazla bilgi için Windows SDK.
 
 ##  <a name="ontouchinput"></a>  CWnd::OnTouchInput
 
@@ -9960,7 +9960,7 @@ Giriş uygulama gerekiyorsa TRUE işlemleri Windows Dokunma; Aksi durumda FALSE.
 
 ##  <a name="onunichar"></a>  CWnd::OnUniChar
 
-Bir tuşa basıldığında framework bu üye işlevini çağırır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646280) iletisi tarafından çevrilir [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.
+Bir tuşa basıldığında framework bu üye işlevini çağırır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.
 
 ```
 afx_msg void OnUniChar(
@@ -9979,7 +9979,7 @@ afx_msg void OnUniChar(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) bildirimi, Windows SDK'yı açıklanmıştır. [WM_UNICHAR](http://msdn.microsoft.com/library/windows/desktop/ms646288) ileti göndermek veya Unicode karakter için ANSI windows göndermek için tasarlanmıştır. Eşdeğerdir [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) iletisi, ancak Unicode dönüştürme biçimi-32 (UTF-32) kodlaması kullanır [WM_CHAR](http://msdn.microsoft.com/library/windows/desktop/ms646276) ileti UTF-16 kullanır.
+Bu yöntem alır [WM_UNICHAR](/windows/desktop/inputdev/wm-unichar) bildirimi, Windows SDK'yı açıklanmıştır. [WM_UNICHAR](/windows/desktop/inputdev/wm-unichar) ileti göndermek veya Unicode karakter için ANSI windows göndermek için tasarlanmıştır. Eşdeğerdir [WM_CHAR](/windows/desktop/inputdev/wm-char) iletisi, ancak Unicode dönüştürme biçimi-32 (UTF-32) kodlaması kullanır [WM_CHAR](/windows/desktop/inputdev/wm-char) ileti UTF-16 kullanır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -10003,7 +10003,7 @@ afx_msg void OnUnInitMenuPopup(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_UNINITMENUPOPUP](http://msdn.microsoft.com/library/windows/desktop/ms647614) bildirimi, Windows SDK'yı açıklanmıştır.
+Bu yöntem alır [WM_UNINITMENUPOPUP](/windows/desktop/menurc/wm-uninitmenupopup) bildirimi, Windows SDK'yı açıklanmıştır.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -10025,7 +10025,7 @@ Gerçekleştirilecek eylemi belirtir. Aşağıdaki değerlerden biri olabilir:
 
 - UIS_CLEAR kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) gizlenmelidir.
 
-- UIS_INITIALIZE kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) son giriş olayı dayalı olarak değiştirilmelidir. Daha fazla bilgi için **açıklamalar** bölümünü [WM_UPDATEISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646361).
+- UIS_INITIALIZE kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) son giriş olayı dayalı olarak değiştirilmelidir. Daha fazla bilgi için **açıklamalar** bölümünü [WM_UPDATEISTATE](/windows/desktop/menurc/wm-updateuistate).
 
 - UIS_SET kullanıcı Arabirimi durumu öğesinin (tarafından belirtilen *nUIElement*) görünür olmalıdır.
 
@@ -10040,7 +10040,7 @@ Hangi UI durum öğeleri etkilenen veya denetimin stilini belirtir. Aşağıdaki
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevselliğine öykünür [WM_UPDATEUISTATE](http://msdn.microsoft.com/library/windows/desktop/ms646361) Windows SDK içinde açıklandığı gibi ileti.
+Bu üye işlevi işlevselliğine öykünür [WM_UPDATEUISTATE](/windows/desktop/menurc/wm-updateuistate) Windows SDK içinde açıklandığı gibi ileti.
 
 ##  <a name="onuserchanged"></a>  CWnd::OnUserChanged
 
@@ -10052,7 +10052,7 @@ afx_msg void OnUserChanged();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_USERCHANGED](http://msdn.microsoft.com/library/windows/desktop/ms632651) Windows SDK'da açıklanan bildirim iletisi. Oturum açıp kapatabilir, işletim sistemi kullanıcıya özgü ayarları güncelleştirir. Sistem ayarları güncelleştirildikten hemen sonra bu iletiyi gönderir.
+Bu yöntem alır [WM_USERCHANGED](https://msdn.microsoft.com/library/windows/desktop/ms632651) Windows SDK'da açıklanan bildirim iletisi. Oturum açıp kapatabilir, işletim sistemi kullanıcıya özgü ayarları güncelleştirir. Sistem ayarları güncelleştirildikten hemen sonra bu iletiyi gönderir.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -10200,14 +10200,14 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_DWMWINDOWMAXIMIZEDCHANGE](http://msdn.microsoft.com/library/windows/desktop/dd388201) Windows SDK'da açıklanan bildirim iletisi.
+Bu yöntem alır [WM_DWMWINDOWMAXIMIZEDCHANGE](/windows/desktop/dwm/wm-dwmwindowmaximizedchange) Windows SDK'da açıklanan bildirim iletisi.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
 
 ##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
 
-Çağrı sonucu olarak boyutunu, konumunu veya Z düzeni değiştiğinde framework bu üye işlevi çağırır [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
+Çağrı sonucu olarak boyutunu, konumunu veya Z düzeni değiştiğinde framework bu üye işlevi çağırır [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
 
 ```
 afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
@@ -10220,14 +10220,14 @@ afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
 
 ### <a name="remarks"></a>Açıklamalar
 
-Varsayılan uygulama gönderir [WM_SIZE](http://msdn.microsoft.com/library/windows/desktop/ms632646) ve [WM_MOVE](http://msdn.microsoft.com/library/windows/desktop/ms632631) iletilerini penceresine. Bu iletileri işleyen bir uygulama gönderilmez `OnWindowPosChanged` temel sınıfı çağırmadan çağırın. Hiçbir taşıma gerçekleştirmek veya çağrı sırasında değişiklik işleme boyutu için daha verimlidir `OnWindowPosChanged` temel sınıfı çağırmadan olmadan.
+Varsayılan uygulama gönderir [WM_SIZE](/windows/desktop/winmsg/wm-size) ve [WM_MOVE](/windows/desktop/winmsg/wm-move) iletilerini penceresine. Bu iletileri işleyen bir uygulama gönderilmez `OnWindowPosChanged` temel sınıfı çağırmadan çağırın. Hiçbir taşıma gerçekleştirmek veya çağrı sırasında değişiklik işleme boyutu için daha verimlidir `OnWindowPosChanged` temel sınıfı çağırmadan olmadan.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
 
 ##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
 
-Boyut, konum veya Z düzenini çağrı sonucunda değişmek üzere olduğunu framework bu üye işlevini çağırır [SetWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
+Boyut, konum veya Z düzenini çağrı sonucunda değişmek üzere olduğunu framework bu üye işlevini çağırır [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
 
 ```
 afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
@@ -10242,7 +10242,7 @@ afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
 
 Bir uygulama, ayarlama veya uygun bitler temizleyerek, pencereyi değişiklikleri engelleyebilir **bayrakları** üyesi [WINDOWPOS](../../mfc/reference/windowpos-structure1.md) yapısı.
 
-Bir pencere için [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) veya [ws_thıckframe](styles-used-by-mfc.md#window-styles) stil, varsayılan uygulama gönderen bir [WM_GETMINMAXINFO](http://msdn.microsoft.com/library/windows/desktop/ms632626) penceresine ileti. Bu yeni boyutunu ve konumunu penceresinin doğrulamak ve CS_BYTEALIGNCLIENT ve CS_BYTEALIGN istemci stilleri uygulamak için gerçekleştirilir. Bir uygulama bu işlevsellik, onun temel sınıfından çağırarak değil geçersiz kılabilirsiniz.
+Bir pencere için [WS_OVERLAPPED](styles-used-by-mfc.md#window-styles) veya [ws_thıckframe](styles-used-by-mfc.md#window-styles) stil, varsayılan uygulama gönderen bir [WM_GETMINMAXINFO](/windows/desktop/winmsg/wm-getminmaxinfo) penceresine ileti. Bu yeni boyutunu ve konumunu penceresinin doğrulamak ve CS_BYTEALIGNCLIENT ve CS_BYTEALIGN istemci stilleri uygulamak için gerçekleştirilir. Bir uygulama bu işlevsellik, onun temel sınıfından çağırarak değil geçersiz kılabilirsiniz.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -10262,9 +10262,9 @@ Değişen bölümün adını belirten bir dize işaret eder. (Bölüm adı köş
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SystemParametersInfo](http://msdn.microsoft.com/library/windows/desktop/ms724947) Windows işlev çağrılarında `OnWinIniChange` sonra uygulamanın WIN bir ayarı değiştirmek için işlevi kullanır. INI dosyası.
+[SystemParametersInfo](https://msdn.microsoft.com/library/windows/desktop/ms724947) Windows işlev çağrılarında `OnWinIniChange` sonra uygulamanın WIN bir ayarı değiştirmek için işlevi kullanır. INI dosyası.
 
-Bir uygulamanın tüm üst düzey pencerelere WM_WININICHANGE ileti göndermek için kullanabileceği [SendMessage](http://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile kendi *hwnd* HWND_BROADCAST için parametre.
+Bir uygulamanın tüm üst düzey pencerelere WM_WININICHANGE ileti göndermek için kullanabileceği [SendMessage](https://msdn.microsoft.com/library/windows/desktop/ms644950) Windows işlev ile kendi *hwnd* HWND_BROADCAST için parametre.
 
 Bir uygulama birçok farklı bölümlerde değişirse KAZANIRSINIZ. INI aynı anda uygulaması bir WM_WININICHANGE iletisi gönderin ile *lpszSection* NULL olarak ayarlayın. Aksi takdirde, uygulamanın WM_WININICHANGE her zaman, WIN değişiklik hale göndermesi gerekir. INI.
 
@@ -10330,9 +10330,9 @@ afx_msg void OnXButtonDblClk(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_XBUTTONDBLCLK](http://msdn.microsoft.com/library/windows/desktop/ms646244) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
+Bu yöntem alır [WM_XBUTTONDBLCLK](/windows/desktop/inputdev/wm-xbuttondblclk) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
 
-*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).
+*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
 
 |Değiştirici tuşu bırakıldı|Açıklama|
 |------------------|-----------------|
@@ -10368,9 +10368,9 @@ afx_msg void OnXButtonDown(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_XBUTTONDOWN](http://msdn.microsoft.com/library/windows/desktop/ms646245) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
+Bu yöntem alır [WM_XBUTTONDOWN](/windows/desktop/inputdev/wm-xbuttondown) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
 
-*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).
+*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
 
 |Değiştirici tuşu bırakıldı|Açıklama|
 |------------------|-----------------|
@@ -10406,9 +10406,9 @@ afx_msg void OnXButtonUp(
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu yöntem alır [WM_XBUTTONUP](http://msdn.microsoft.com/library/windows/desktop/ms646246) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
+Bu yöntem alır [WM_XBUTTONUP](/windows/desktop/inputdev/wm-xbuttonup) bildirimi, Windows SDK'yı açıklanmıştır. Fare yakalanmazsa imlecin altındaki penceresine ileti gönderilir. Aksi takdirde, iletinin fare yakalanan pencereye gönderilir.
 
-*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](http://msdn.microsoft.com/library/windows/desktop/ms645601).
+*NFlags* parametresi, aşağıdaki tabloda listelenen değiştirici tuşları bir birleşimi olabilir. Daha fazla bilgi için [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).
 
 |Değiştirici tuşu bırakıldı|Açıklama|
 |------------------|-----------------|
@@ -10437,9 +10437,9 @@ Pano aracılığıyla açılmış olursa sıfır dışı `CWnd`, veya başka bir
 
 ### <a name="remarks"></a>Açıklamalar
 
-Diğer uygulamalar Pano kadar değiştirmek mümkün olmayacaktır [CloseClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649035) Windows işlevi çağrılır.
+Diğer uygulamalar Pano kadar değiştirmek mümkün olmayacaktır [CloseClipboard](/windows/desktop/api/winuser/nf-winuser-closeclipboard) Windows işlevi çağrılır.
 
-Geçerli `CWnd` nesne kadar Pano sahibi olmayan hale gelecek [EmptyClipboard](http://msdn.microsoft.com/library/windows/desktop/ms649037) Windows işlevi çağrılır.
+Geçerli `CWnd` nesne kadar Pano sahibi olmayan hale gelecek [EmptyClipboard](/windows/desktop/api/winuser/nf-winuser-emptyclipboard) Windows işlevi çağrılır.
 
 ### <a name="example"></a>Örnek
 
@@ -10532,9 +10532,9 @@ Ek ileti bilgileri belirtir. Bu parametre içeriğini postalanan ileti üzerinde
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bir ileti kuyruğu iletilerinde yapılan çağrılar tarafından alınır [GetMessage](http://msdn.microsoft.com/library/windows/desktop/ms644936) veya [PeekMessage](http://msdn.microsoft.com/library/windows/desktop/ms644943) Windows işlevi.
+Bir ileti kuyruğu iletilerinde yapılan çağrılar tarafından alınır [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936) veya [PeekMessage](https://msdn.microsoft.com/library/windows/desktop/ms644943) Windows işlevi.
 
-Windows [PostMessage](http://msdn.microsoft.com/library/windows/desktop/ms644944) işlevi, başka bir uygulamaya erişmek için kullanılabilir.
+Windows [PostMessage](https://msdn.microsoft.com/library/windows/desktop/ms644944) işlevi, başka bir uygulamaya erişmek için kullanılabilir.
 
 ### <a name="example"></a>Örnek
 
@@ -10602,7 +10602,7 @@ Bu üye işlevi geçersiz kılma için dinamik sınıflara denetimleri sağlar. 
 
 ##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
 
-Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.
+Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -10655,11 +10655,11 @@ Bir cihaz bağlamı için bir işaretçi.
 
 -   PRF_NONCLIENT belirtilirse, belirli bir cihaz bağlamı istemci olmayan alanda çizin.
 
--   PRF_ERASEBKGND belirtilirse, pencerenin Gönder bir [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) ileti.
+-   PRF_ERASEBKGND belirtilirse, pencerenin Gönder bir [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) ileti.
 
--   PRF_CLIENT belirtilirse, pencerenin Gönder bir [wm_prıntclıent](http://msdn.microsoft.com/library/windows/desktop/dd145217) ileti.
+-   PRF_CLIENT belirtilirse, pencerenin Gönder bir [wm_prıntclıent](/windows/desktop/gdi/wm-printclient) ileti.
 
--   PRF_CHILDREN ayarlarsanız, her görünür alt pencere Gönder bir [WM_PRINT](http://msdn.microsoft.com/library/windows/desktop/dd145216) ileti.
+-   PRF_CHILDREN ayarlarsanız, her görünür alt pencere Gönder bir [WM_PRINT](/windows/desktop/gdi/wm-print) ileti.
 
 -   PRF_OWNED ayarlarsanız, her görünür ait pencere WM_PRINT ileti gönderme.
 
@@ -10709,7 +10709,7 @@ BOOL PrintWindow(
 Cihaz bağlamı için yazdırılması için bir işaretçi.
 
 *nFlags*  
-Çizim seçenekleri belirtir. Olası değerler listesi için bkz. [PrintWindow](http://msdn.microsoft.com/library/windows/desktop/dd162869).
+Çizim seçenekleri belirtir. Olası değerler listesi için bkz. [PrintWindow](/windows/desktop/api/winuser/nf-winuser-printwindow).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -10717,7 +10717,7 @@ Cihaz bağlamı için yazdırılması için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [PrintWindow](http://msdn.microsoft.com/library/windows/desktop/dd162869)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [PrintWindow](/windows/desktop/api/winuser/nf-winuser-printwindow)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="redrawwindow"></a>  CWnd::RedrawWindow
 
@@ -10741,11 +10741,11 @@ Güncelleştirme bölgeyi tanımlar. Her iki *prgnUpdate* ve *lpRectUpdate* NULL
 *bayrakları*  
 Aşağıdaki bayraklar penceresi geçersiz kılmak için kullanılır:
 
-- RDW_ERASE almak pencerenin neden olan bir [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) iletisi pencereyi yeniden çizilmesini. RDW_INVALIDATE bayrağı de belirtilmelidir; Aksi takdirde RDW_ERASE hiçbir etkisi olmaz.
+- RDW_ERASE almak pencerenin neden olan bir [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) iletisi pencereyi yeniden çizilmesini. RDW_INVALIDATE bayrağı de belirtilmelidir; Aksi takdirde RDW_ERASE hiçbir etkisi olmaz.
 
-- RDW_FRAME neden olan herhangi bir kısmını almak için güncelleştirme bölgesine kesişen pencerenin istemci olmayan alanındayken bir [WM_NCPAINT](http://msdn.microsoft.com/library/windows/desktop/dd145212) ileti. RDW_INVALIDATE bayrağı de belirtilmelidir; Aksi takdirde RDW_FRAME hiçbir etkisi olmaz.
+- RDW_FRAME neden olan herhangi bir kısmını almak için güncelleştirme bölgesine kesişen pencerenin istemci olmayan alanındayken bir [WM_NCPAINT](/windows/desktop/gdi/wm-ncpaint) ileti. RDW_INVALIDATE bayrağı de belirtilmelidir; Aksi takdirde RDW_FRAME hiçbir etkisi olmaz.
 
-- RDW_INTERNALPAINT neden olan bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) penceresine penceresi geçersiz olan bir bölge içerip içermediğini bağımsız olarak yayımlanacak ileti.
+- RDW_INTERNALPAINT neden olan bir [WM_PAINT](/windows/desktop/gdi/wm-paint) penceresine penceresi geçersiz olan bir bölge içerip içermediğini bağımsız olarak yayımlanacak ileti.
 
 - RDW_INVALIDATE geçersiz *lpRectUpdate* veya *prgnUpdate* (bir NULL olabilir değil yalnızca). Her ikisi de NULL olduğunda, pencerenin tamamını geçersiz kılınır.
 
@@ -10777,7 +10777,7 @@ Pencerenin başarıyla yeniden olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `RedrawWindow` üye işlevi masaüstü penceresinde parçası geçersiz kılmak için kullanılan bu pencereyi ROM'u bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) ileti. Bir uygulama Masaüstü çizilecek kullanmalıdır [CWnd::ValidateRgn](#validatergn), [CWnd::InvalidateRgn](#invalidatergn), [CWnd::UpdateWindow](#updatewindow), veya [RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911)
+Zaman `RedrawWindow` üye işlevi masaüstü penceresinde parçası geçersiz kılmak için kullanılan bu pencereyi ROM'u bir [WM_PAINT](/windows/desktop/gdi/wm-paint) ileti. Bir uygulama Masaüstü çizilecek kullanmalıdır [CWnd::ValidateRgn](#validatergn), [CWnd::InvalidateRgn](#invalidatergn), [CWnd::UpdateWindow](#updatewindow), veya [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow)
 
 ##  <a name="reflectchildnotify"></a>  CWnd::ReflectChildNotify
 
@@ -10928,7 +10928,7 @@ int RunModalLoop(DWORD dwFlags = 0);
 *CertOpenStore*  
 Gönderilecek Windows iletiyi belirtir. Aşağıdaki değerlerden biri olabilir:
 
-- Gönderme MLF_NOIDLEMSG yoksa [WM_ENTERIDLE](http://msdn.microsoft.com/library/windows/desktop/ms645422) üst iletileri.
+- Gönderme MLF_NOIDLEMSG yoksa [WM_ENTERIDLE](/windows/desktop/dlgbox/wm-enteridle) üst iletileri.
 
 - MLF_NOKICKIDLE olmayan pencereye WM_KICKIDLE iletiler gönderir.
 
@@ -10996,7 +10996,7 @@ Cihaz birimlerine, dikey kaydırma miktarını belirtir. Bu parametre, yukarı d
 
 Giriş işaretini ise `CWnd` kaydırılan `ScrollWindow` otomatik olarak silinmesini önlemek için giriş işaretini gizler ve kaydırma işlemi tamamlandıktan sonra giriş işaretinin geri yükler. Giriş işareti konumunu uygun şekilde ayarlanır.
 
-Alan ortaya çıkardı tarafından `ScrollWindow` üye işlevi değil yeniden çizilmesini ancak geçerli birleştirilir `CWnd` nesnenin güncelleştirme bölge. Uygulamanın sonunda alacağı bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) bölgeyi yeniden çizerken gerektiğini bildiren bir ileti. Kaydırma yapılır aynı anda yazdığı ortaya çıkarıldı alan repaint çağrısı [UpdateWindow](#updatewindow) üye işlevini çağırma hemen sonra `ScrollWindow`.
+Alan ortaya çıkardı tarafından `ScrollWindow` üye işlevi değil yeniden çizilmesini ancak geçerli birleştirilir `CWnd` nesnenin güncelleştirme bölge. Uygulamanın sonunda alacağı bir [WM_PAINT](/windows/desktop/gdi/wm-paint) bölgeyi yeniden çizerken gerektiğini bildiren bir ileti. Kaydırma yapılır aynı anda yazdığı ortaya çıkarıldı alan repaint çağrısı [UpdateWindow](#updatewindow) üye işlevini çağırma hemen sonra `ScrollWindow`.
 
 Varsa *lpRect* null windows penceresinde uzaklığı tarafından belirtilen miktara göre tüm alt konumlarını *xAmount* ve *yAmount*ve tüm geçersiz (boyanmamış) alanlar `CWnd` ayrıca uzaklığı. `ScrollWindow` daha hızlı olduğunda *lpRect* null.
 
@@ -11040,11 +11040,11 @@ Kaydırma tarafından geçersiz kılınan bölge tutacak değiştiren bölgeyi t
 *bayrakları*  
 Aşağıdaki değerlerden biri olabilir:
 
-- SW_ERASE SW_INVALIDATE ile belirtildiğinde silen yeni geçersiz bölge göndererek bir [WM_ERASEBKGND](http://msdn.microsoft.com/library/windows/desktop/ms648055) penceresine ileti.
+- SW_ERASE SW_INVALIDATE ile belirtildiğinde silen yeni geçersiz bölge göndererek bir [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) penceresine ileti.
 
 - Bölge ile tanımlanan SW_INVALIDATE geçersiz kılar *prgnUpdate* kaydırma sonra.
 
-- Dikdörtgen kesişen tüm alt pencereleri tarafından işaret edilen SW_SCROLLCHILDREN kayarken *lpRectScroll* belirtilen piksel sayısı tarafından *dx* ve *GN*. Windows gönderen bir [WM_MOVE](http://msdn.microsoft.com/library/windows/desktop/ms632631) kesişen tüm alt pencereler için ileti *lpRectScroll*bile bunların taşımayın. Giriş işaretini bir alt pencere kaydırılan ve imleç dikdörtgen kaydırma dikdörtgen kesişip yeniden konumlandırıldığında.
+- Dikdörtgen kesişen tüm alt pencereleri tarafından işaret edilen SW_SCROLLCHILDREN kayarken *lpRectScroll* belirtilen piksel sayısı tarafından *dx* ve *GN*. Windows gönderen bir [WM_MOVE](/windows/desktop/winmsg/wm-move) kesişen tüm alt pencereler için ileti *lpRectScroll*bile bunların taşımayın. Giriş işaretini bir alt pencere kaydırılan ve imleç dikdörtgen kaydırma dikdörtgen kesişip yeniden konumlandırıldığında.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -11052,15 +11052,15 @@ SIMPLEREGION (dikdörtgen geçersiz bölge), COMPLEXREGION (dikdörtgen olmayan 
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu işlev benzer [ScrollWindow](http://msdn.microsoft.com/library/windows/desktop/bb787591) işleviyle bazı ek özellikleri.
+Bu işlev benzer [ScrollWindow](/windows/desktop/api/winuser/nf-winuser-scrollwindow) işleviyle bazı ek özellikleri.
 
-Varsa [SW_INVALIDATE](http://msdn.microsoft.com/library/windows/desktop/bb787593) ve [SW_ERASE](http://msdn.microsoft.com/library/windows/desktop/bb787593) belirtilmeyen, `ScrollWindowEx` üye işlevi, liste kutusundan kaydırılan alan geçersiz değil. Ya da bu bayrak ayarlandığında, `ScrollWindowEx` Bu alan geçersiz kılar. Alan kadar uygulama çağrıları güncelleştirilmez [UpdateWindow](http://msdn.microsoft.com/library/windows/desktop/dd145167) üye işlevi, çağrıları [RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) üye işlevi (belirtme [RDW_UPDATENOW](http://msdn.microsoft.com/library/windows/desktop/dd162911) veya [ RDW_ERASENOW](http://msdn.microsoft.com/library/windows/desktop/dd162911)), alır veya [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) uygulama kuyruğundan ileti.
+Varsa [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) ve [SW_ERASE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) belirtilmeyen, `ScrollWindowEx` üye işlevi, liste kutusundan kaydırılan alan geçersiz değil. Ya da bu bayrak ayarlandığında, `ScrollWindowEx` Bu alan geçersiz kılar. Alan kadar uygulama çağrıları güncelleştirilmez [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) üye işlevi, çağrıları [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) üye işlevi (belirtme [RDW_UPDATENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow) veya [ RDW_ERASENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow)), alır veya [WM_PAINT](/windows/desktop/gdi/wm-paint) uygulama kuyruğundan ileti.
 
-Pencerenin varsa [ws_clıpchıldren](http://msdn.microsoft.com/library/windows/desktop/ms632679) stil, döndürülen alanları tarafından belirtilen *prgnUpdate* ve *lpRectUpdate* gerekir kaydırılan penceresinin toplam alanı temsil eder , herhangi bir alanda güncelleştirilmesi gereken alt öğe pencerelerini de dahil olmak üzere güncelleştirilmesi.
+Pencerenin varsa [ws_clıpchıldren](https://msdn.microsoft.com/library/windows/desktop/ms632679) stil, döndürülen alanları tarafından belirtilen *prgnUpdate* ve *lpRectUpdate* gerekir kaydırılan penceresinin toplam alanı temsil eder , herhangi bir alanda güncelleştirilmesi gereken alt öğe pencerelerini de dahil olmak üzere güncelleştirilmesi.
 
-Varsa [SW_SCROLLCHILDREN](http://msdn.microsoft.com/library/windows/desktop/bb787593) Windows düzgün şekilde güncelleştirilmez ekranın alt pencere parçası kaydırırsanız, bayrağı belirtildi. Kaynak dikdörtgenin dışında kalan kaydırılan alt pencerenin parçası silinmeyecektir ve düzgün bir şekilde yeni hedefine çizilir değil. Kullanım [DeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632681) Windows işleve tamamen içinde yer alan değil taşıma alt pencereler *lpRectScroll* dikdörtgen. İmleç SW_SCROLLCHILDREN bayrağı ayarlanmışsa ve kaydırma dikdörtgen giriş işaretini dikdörtgen kesişip yeniden konumlandırıldığında.
+Varsa [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) Windows düzgün şekilde güncelleştirilmez ekranın alt pencere parçası kaydırırsanız, bayrağı belirtildi. Kaynak dikdörtgenin dışında kalan kaydırılan alt pencerenin parçası silinmeyecektir ve düzgün bir şekilde yeni hedefine çizilir değil. Kullanım [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows işleve tamamen içinde yer alan değil taşıma alt pencereler *lpRectScroll* dikdörtgen. İmleç SW_SCROLLCHILDREN bayrağı ayarlanmışsa ve kaydırma dikdörtgen giriş işaretini dikdörtgen kesişip yeniden konumlandırıldığında.
 
-Tüm giriş ve çıkış koordinatları (için *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, ve *prgnUpdate*) içinde olduğu varsayılır İstemci koordinatları, pencerenin CS_OWNDC veya CS_CLASSDC sınıfı stili olup ne olursa olsun. Kullanım [LPtoDP](http://msdn.microsoft.com/library/windows/desktop/dd145042) ve [DPtoLP](http://msdn.microsoft.com/library/windows/desktop/dd162474) mantıksal koordinatları, gelen ve gerekirse dönüştürmek için Windows işlevleri.
+Tüm giriş ve çıkış koordinatları (için *lpRectScroll*, *lpRectClip*, *lpRectUpdate*, ve *prgnUpdate*) içinde olduğu varsayılır İstemci koordinatları, pencerenin CS_OWNDC veya CS_CLASSDC sınıfı stili olup ne olursa olsun. Kullanım [LPtoDP](/windows/desktop/api/wingdi/nf-wingdi-lptodp) ve [DPtoLP](/windows/desktop/api/wingdi/nf-wingdi-dptolp) mantıksal koordinatları, gelen ve gerekirse dönüştürmek için Windows işlevleri.
 
 ##  <a name="sendchildnotifylastmsg"></a>  CWnd::SendChildNotifyLastMsg
 
@@ -11261,7 +11261,7 @@ Daha önce tüm fare girişi alınan pencere nesnesi için bir işaretçi. Böyl
 
 ### <a name="remarks"></a>Açıklamalar
 
-Zaman `CWnd` artık uygulamayı çağırması gerekir ve tüm giriş fare gerektirir [ReleaseCapture](http://msdn.microsoft.com/library/windows/desktop/ms646261) diğer pencereleri fare girişi alabilmesi işlev.
+Zaman `CWnd` artık uygulamayı çağırması gerekir ve tüm giriş fare gerektirir [ReleaseCapture](https://msdn.microsoft.com/library/windows/desktop/ms646261) diğer pencereleri fare girişi alabilmesi işlev.
 
 Fare girişi yakalanırken etkin pencereyi wm_nchıttest veya WM_SETCURSOR ileti gönderilir.
 
@@ -11353,7 +11353,7 @@ Tamsayı değeri imzalı veya imzasız olup olmadığını belirtir. Bu parametr
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetDlgItemInt` gönderen bir [WM_SETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632644) verilen denetim iletisi.
+`SetDlgItemInt` gönderen bir [WM_SETTEXT](/windows/desktop/winmsg/wm-settext) verilen denetim iletisi.
 
 ### <a name="example"></a>Örnek
 
@@ -11379,7 +11379,7 @@ Ayarlanacak metni olan denetimi tanımlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-`SetDlgItemText` gönderen bir [WM_SETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632644) verilen denetim iletisi.
+`SetDlgItemText` gönderen bir [WM_SETTEXT](/windows/desktop/winmsg/wm-settext) verilen denetim iletisi.
 
 ### <a name="example"></a>Örnek
 
@@ -11421,7 +11421,7 @@ Giriş odağını vardı pencere nesnesi için bir işaretçi. Böyle bir pencer
 
 Tüm sonraki klavye girdisini Bu pencere giriş odağını yönlendirir. Giriş odağını vardı herhangi bir penceresi, kaybeder.
 
-`SetFocus` Gönderen üye işlevi bir [WM_KILLFOCUS](http://msdn.microsoft.com/library/windows/desktop/ms646282) giriş odağı kaybettiğinde penceresine ileti ve [WM_SETFOCUS](http://msdn.microsoft.com/library/windows/desktop/ms646283) giriş odağını aldığında penceresine ileti. Ayrıca, pencere veya üst etkinleştirir.
+`SetFocus` Gönderen üye işlevi bir [WM_KILLFOCUS](/windows/desktop/inputdev/wm-killfocus) giriş odağı kaybettiğinde penceresine ileti ve [WM_SETFOCUS](/windows/desktop/inputdev/wm-setfocus) giriş odağını aldığında penceresine ileti. Ayrıca, pencere veya üst etkinleştirir.
 
 Geçerli pencerenin etkin olması ama odağı yok (diğer bir deyişle, hiçbir pencere odağı) olan herhangi bir tuşa basıldığında iletileri üretecektir [WM_SYSCHAR](#onsyschar), [WM_SYSKEYDOWN](#onsyskeydown), veya [WM_SYSKEYUP](#onsyskeyup).
 
@@ -11494,10 +11494,10 @@ BOOL SetLayeredWindowAttributes(
 Katmanlı pencere oluştururken kullanılacak saydamlık rengi anahtarı belirten COLORREF değer işaretçisi. Bu renk penceresinde tarafından boyanan tüm pikselleri saydam olacak. Bir COLORREF oluşturmak için RGB makrosunu kullanın.
 
 *bAlpha*  
-Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri. Daha fazla bilgi için `SourceConstantAlpha` üyesi [BLENDFUNCTION](http://msdn.microsoft.com/library/windows/desktop/dd183393) yapısı. Zaman *bAlpha* 0 ise, pencerenin tamamen saydamdır. Zaman *bAlpha* 255'tir ve donuk bir penceredir.
+Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri. Daha fazla bilgi için `SourceConstantAlpha` üyesi [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) yapısı. Zaman *bAlpha* 0 ise, pencerenin tamamen saydamdır. Zaman *bAlpha* 255'tir ve donuk bir penceredir.
 
 *CertOpenStore*  
-Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540).
+Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -11505,7 +11505,7 @@ Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [SetLayeredWindowAttributes](http://msdn.microsoft.com/library/windows/desktop/ms633540)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="setmenu"></a>  CWnd::SetMenu
 
@@ -11553,7 +11553,7 @@ Bu sahibi, ardından geçerli pencere nesneden komut iletileri alabilir. Varsay�
 
 Genellikle, pencere hiyerarşisine ilgisiz pencere nesneleri arasında bağlantılar kurmak kullanışlıdır. Örneğin, [CToolBar](../../mfc/reference/ctoolbar-class.md) yerine sahibi, üst bildirimleri gönderir. Bu araç alt (OLE kapsayıcı uygulama penceresi gibi) bir pencere öğesi (örneğin, yerinde çerçeve penceresini) başka bir pencere için bildirimleri gönderilirken olmasını sağlar. Bir sunucu penceresi devre dışı ya da yerinde sırasında etkinleştirilmiş Ayrıca, düzenleme, çerçeve penceresi tarafından sahip olunan herhangi bir pencereyi gizli gösterilen veya. Bu sahiplik çağrısı ile açıkça ayarlanmış `SetOwner`.
 
-Bu işlev sahipliği kavramını sahipliği kavramı, farklı [GetWindow](http://msdn.microsoft.com/library/windows/desktop/ms633515).
+Bu işlev sahipliği kavramını sahipliği kavramı, farklı [GetWindow](https://msdn.microsoft.com/library/windows/desktop/ms633515).
 
 ##  <a name="setparent"></a>  CWnd::SetParent
 
@@ -11648,7 +11648,7 @@ Kaydırma çubuğundaki bir denetim veya pencerenin istemci olmayan alanındayke
 - SB_VERT penceresinde dikey kaydırma çubuğu olduğunu belirtir.
 
 *lpScrollInfo*  
-Bir işaretçi bir [SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
+Bir işaretçi bir [SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı. Bu yapı hakkında daha fazla bilgi için Windows SDK'sı bakın.
 
 *bRedraw*  
 Kaydırma çubuğunu yeni konumunu gösterecek şekilde yeniden olup olmadığını belirtir. Varsa *bRedraw* doğru ise, kaydırma çubuğu yeniden çizilir. FALSE ise, çizilmez. Kaydırma çubuğu varsayılan olarak çizilir.
@@ -11659,7 +11659,7 @@ Başarılı olursa, dönüş değeri true'dur. Aksi takdirde yanlış olur.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[SCROLLINFO](http://msdn.microsoft.com/library/windows/desktop/bb787537) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.
+[SCROLLINFO](/windows/desktop/api/winuser/ns-winuser-tagscrollinfo) yapısı bir kaydırma çubuğu, minimum ve maksimum konumları, sayfa boyutu ve konumu (Flash) kaydırma kutusunun kaydırma da dahil olmak üzere ilgili bilgiler içerir. Bkz: `SCROLLINFO` yapı varsayılanları değiştirme hakkında daha fazla bilgi için Windows SDK yapısı konuda.
 
 MFC Windows ileti işleyicileri kaydırma çubuğu konumu belirten [CWnd::OnHScroll](#onhscroll) ve [CWnd::OnVScroll](#onvscroll), yalnızca 16 bitlik konum verileri sağlar. [GetScrollInfo](#getscrollinfo) ve `SetScrollInfo` 32 bit kaydırma çubuğu konumu veri sağlar. Bu nedenle, bir uygulama çağırabilirsiniz `GetScrollInfo` ya da işlenirken `CWnd::OnHScroll` veya `CWnd::OnVScroll` 32-bit kaydırma çubuğu konum verileri elde edilir.
 
@@ -11763,7 +11763,7 @@ Sıfır olmayan Zamanlayıcı tanımlayıcısını belirtir. Zamanlayıcı tanı
 Zaman aşımı değeri veya aralığını milisaniye cinsinden belirtir.
 
 *lpfnTimer*  
-Uygulama tarafından sağlanan adresini belirten `TimerProc` işleyen bir geri çağırma işlevi [WM_TIMER](http://msdn.microsoft.com/library/windows/desktop/ms644902) iletileri. Bu parametre NULL ise, WM_TIMER iletiler uygulama ileti sırasına ve tarafından işlenen `CWnd` nesne.
+Uygulama tarafından sağlanan adresini belirten `TimerProc` işleyen bir geri çağırma işlevi [WM_TIMER](/windows/desktop/winmsg/wm-timer) iletileri. Bu parametre NULL ise, WM_TIMER iletiler uygulama ileti sırasına ve tarafından işlenen `CWnd` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -11982,7 +11982,7 @@ void SetWindowText(LPCTSTR lpszString);
 
 Denetim içindeki metnin pencere denetim ise ayarlanır.
 
-Bu işlev neden olan bir [WM_SETTEXT](http://msdn.microsoft.com/library/windows/desktop/ms632644) bu penceresine gönderilecek ileti.
+Bu işlev neden olan bir [WM_SETTEXT](/windows/desktop/winmsg/wm-settext) bu penceresine gönderilecek ileti.
 
 ### <a name="example"></a>Örnek
 
@@ -12172,7 +12172,7 @@ void UnlockWindowUpdate();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Aynı anda yalnızca tek bir pencerede kullanılarak kilitlenebilir `LockWindowUpdate`. Bkz: [CWnd::LockWindowUpdate](#lockwindowupdate) veya Win32 işlevini [LockWindowUpdate](http://msdn.microsoft.com/library/windows/desktop/dd145034) windows kilitleme hakkında daha fazla bilgi.
+Aynı anda yalnızca tek bir pencerede kullanılarak kilitlenebilir `LockWindowUpdate`. Bkz: [CWnd::LockWindowUpdate](#lockwindowupdate) veya Win32 işlevini [LockWindowUpdate](/windows/desktop/api/winuser/nf-winuser-lockwindowupdate) windows kilitleme hakkında daha fazla bilgi.
 
 ##  <a name="unsubclasswindow"></a>  CWnd::UnsubclassWindow
 
@@ -12278,10 +12278,10 @@ Varsa *pDCSrc* NULL ise *pptSrc* NULL olmalıdır.
 Katmanlı pencere oluştururken kullanılacak saydamlık rengi anahtarı belirten COLORREF değer işaretçisi. Bu renk penceresinde tarafından boyanan tüm pikselleri saydam olacak. Bir COLORREF oluşturmak için RGB makrosunu kullanın.
 
 *pblend*  
-İşaretçi bir [BLENDFUNCTION](http://msdn.microsoft.com/library/windows/desktop/dd183393) yapısı katmanlı pencere oluştururken kullanılacak saydamlık değerini belirtir.
+İşaretçi bir [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) yapısı katmanlı pencere oluştururken kullanılacak saydamlık değerini belirtir.
 
 *CertOpenStore*  
-Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [UpdateLayeredWindow](http://msdn.microsoft.com/library/windows/desktop/ms633556).
+Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [UpdateLayeredWindow](https://msdn.microsoft.com/library/windows/desktop/ms633556).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -12289,11 +12289,11 @@ Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [UpdateLayeredWindow](http://msdn.microsoft.com/library/windows/desktop/ms633556)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [UpdateLayeredWindow](https://msdn.microsoft.com/library/windows/desktop/ms633556)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="updatewindow"></a>  CWnd::UpdateWindow
 
-İstemci alanını göndererek güncelleştirmeleri bir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) güncelleştirme bölgesine boş değilse iletisi.
+İstemci alanını göndererek güncelleştirmeleri bir [WM_PAINT](/windows/desktop/gdi/wm-paint) güncelleştirme bölgesine boş değilse iletisi.
 
 ```
 void UpdateWindow();
@@ -12322,7 +12322,7 @@ void ValidateRect(LPCRECT lpRect);
 
 ### <a name="remarks"></a>Açıklamalar
 
-[BeginPaint](#beginpaint) üye işlevi, tüm istemci alanını otomatik olarak doğrular. Ne `ValidateRect` ya da [ValidateRgn](#validatergn) güncelleştirme bölge değerinin bir bölümü önce doğrulanması gerekiyorsa, üye işlev'in çağrılabilir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) sonraki oluşturulur.
+[BeginPaint](#beginpaint) üye işlevi, tüm istemci alanını otomatik olarak doğrular. Ne `ValidateRect` ya da [ValidateRgn](#validatergn) güncelleştirme bölge değerinin bir bölümü önce doğrulanması gerekiyorsa, üye işlev'in çağrılabilir [WM_PAINT](/windows/desktop/gdi/wm-paint) sonraki oluşturulur.
 
 Windows, geçerli güncelleştirme bölgesine doğrulanır kadar WM_PAINT iletileri oluşturmaya devam eder.
 
@@ -12343,7 +12343,7 @@ Bir işaretçi bir [CRgn](../../mfc/reference/crgn-class.md) güncelleştirme b�
 
 Belirli bir bölgeye önceden bölge işlevi tarafından oluşturulmuş gerekir. Bölge koordinatları istemci koordinatları olarak kabul edilir.
 
-[BeginPaint](#beginpaint) üye işlevi, tüm istemci alanını otomatik olarak doğrular. Ne [ValidateRect](#validaterect) ya da `ValidateRgn` güncelleştirme bölgesine bir kısmını sonraki doğrulanması gerekir, üye işlev'in çağrılabilir [WM_PAINT](http://msdn.microsoft.com/library/windows/desktop/dd145213) iletisi oluşturulur.
+[BeginPaint](#beginpaint) üye işlevi, tüm istemci alanını otomatik olarak doğrular. Ne [ValidateRect](#validaterect) ya da `ValidateRgn` güncelleştirme bölgesine bir kısmını sonraki doğrulanması gerekir, üye işlev'in çağrılabilir [WM_PAINT](/windows/desktop/gdi/wm-paint) iletisi oluşturulur.
 
 ##  <a name="windowfrompoint"></a>  CWnd::WindowFromPoint
 
@@ -12412,7 +12412,7 @@ virtual void WinHelp(
 Ek veri belirtir. Kullanılan değer değerine bağlıdır *nCmd* parametresi.
 
 *nCmd*  
-Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK'sındaki Windows işlevi.
+Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK'sındaki Windows işlevi.
 
 ### <a name="remarks"></a>Açıklamalar
 

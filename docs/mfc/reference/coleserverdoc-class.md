@@ -92,12 +92,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67920590979c4b9bf3099e8c64c142aeb813b1ce
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a02ade5beb9c3a8480672211fff4b9d23fe48562
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851664"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217595"
 ---
 # <a name="coleserverdoc-class"></a>COleServerDoc sınıfı
 OLE sunucu belgeleri için taban sınıf.  
@@ -296,7 +296,7 @@ LPOLECLIENTSITE GetClientSite() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bağlantılı bir işaretçi alır [IOleClientSite](http://msdn.microsoft.com/library/windows/desktop/ms693706) arabirimi.  
+ Bağlantılı bir işaretçi alır [IOleClientSite](/windows/desktop/api/oleidl/nn-oleidl-ioleclientsite) arabirimi.  
   
 ##  <a name="getdocobjectserver"></a>  COleServerDoc::GetDocObjectServer  
  Bu işlev, yeni bir geçersiz kılma `CDocObjectServer` öğesini ve ona bir işaretçi döndürür.  
@@ -492,7 +492,7 @@ virtual void OnClose(OLECLOSE dwCloseOption);
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan Uygulama çağrıları `CDocument::OnCloseDocument`.  
   
- Daha fazla bilgi ve ek değerler için bkz. [OLECLOSE](http://msdn.microsoft.com/library/windows/desktop/ms680623) Windows SDK.  
+ Daha fazla bilgi ve ek değerler için bkz. [OLECLOSE](/windows/desktop/api/oleidl/ne-oleidl-tagoleclose) Windows SDK.  
   
 ##  <a name="ondeactivate"></a>  COleServerDoc::OnDeactivate  
  Kullanıcı şu anda yerinde etkin bir gömülü veya bağlantılı bir öğe bıraktığında framework tarafından çağırılır.  
@@ -668,7 +668,7 @@ virtual void OnResizeBorder(
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, yeniden boyutlandırır ve araç çubukları ve diğer kullanıcı arabirimi öğeleri yeni pencere boyutuna göre ayarlar.  
   
- Daha fazla bilgi için [IOleInPlaceUIWindow](http://msdn.microsoft.com/library/windows/desktop/ms680716) Windows SDK.  
+ Daha fazla bilgi için [IOleInPlaceUIWindow](/windows/desktop/api/oleidl/nn-oleidl-ioleinplaceuiwindow) Windows SDK.  
   
  Bu gelişmiş bir, geçersiz kılınabilir.  
   

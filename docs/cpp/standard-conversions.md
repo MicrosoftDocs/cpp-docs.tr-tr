@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1365e950077a65150d8f71fd640f69d1750068c9
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 87c8cb1bbd007022a5c01b2aaacdb0233a59068f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462316"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220794"
 ---
 # <a name="standard-conversions"></a>Standart Dönüşümler
-C++ dili, temel türler arasında dönüştürmeler tanımlar. Ayrıca, işaretçi, başvuru için dönüştürmeleri tanımlar ve üye işaretçisi türetilmiş türler. Bu dönüştürmeleri "standart dönüştürmeler." olarak adlandırılır (Türleri, standart türleri ve türetilen türler hakkında daha fazla bilgi için bkz. [türleri](http://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
+C++ dili, temel türler arasında dönüştürmeler tanımlar. Ayrıca, işaretçi, başvuru için dönüştürmeleri tanımlar ve üye işaretçisi türetilmiş türler. Bu dönüştürmeleri "standart dönüştürmeler." olarak adlandırılır (Türleri, standart türleri ve türetilen türler hakkında daha fazla bilgi için bkz. [türleri](https://msdn.microsoft.com/6882ee83-ea32-4373-8d57-c3efbbc15af0).)  
   
  Bu bölümde, aşağıdaki standart dönüştürmeler ele alınmaktadır:  
   
@@ -210,7 +210,7 @@ Temel sınıf erişilebilirlik gösterimi için devralma grafiği
 ||Korumalı|Evet|  
 ||Ortak|Evet|  
   
- Açık tür dönüştürme kullandığınızda bir işaretçiyi bir sınıf içinde temel sınıf işaretçisine dönüştürülebilir ikinci durumdur. (Bkz [açık tür dönüşümlü ifadeler](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) açık tür dönüştürmeleri hakkında daha fazla bilgi.)  
+ Açık tür dönüştürme kullandığınızda bir işaretçiyi bir sınıf içinde temel sınıf işaretçisine dönüştürülebilir ikinci durumdur. (Bkz [açık tür dönüşümlü ifadeler](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) açık tür dönüştürmeleri hakkında daha fazla bilgi.)  
   
  Böyle bir dönüştürmenin sonucu bir "alt nesnesine," bölümünü tamamen taban sınıfı tarafından tanımlanan nesne işaretçisidir.  
   
@@ -249,7 +249,7 @@ int main()
  Bir işlev işaretçisi türüne dönüştürülebilir `void *`, türü `void *` işaretçiyle tutabilecek kadar büyük olduğundan.  
   
 ### <a name="pointer-to-void"></a>Ukazatel na void  
- Türü işaretçiler **void** işaretçileri herhangi bir tür, ancak yalnızca bir açık tür dönüştürme ile dönüştürülebilir (aksine c). (Bkz [açık tür dönüşümlü ifadeler](http://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) tür atamaları hakkında daha fazla bilgi.) Herhangi bir tür için bir işaretçi işaretçisi türüne örtük olarak dönüştürülebilir **void**. Bir işaretçi türü eksik bir nesneye bir işaretçiye dönüştürülebilir **void** (örtük) ve (açıkça). Böyle bir dönüştürmenin sonucu özgün işaretçi değerine eşittir. Bir nesne bildirildiği, ancak kendi boyutunu veya temel sınıf belirlemek kullanılabilir yeterli bilgi eksik olarak kabul edilir.  
+ Türü işaretçiler **void** işaretçileri herhangi bir tür, ancak yalnızca bir açık tür dönüştürme ile dönüştürülebilir (aksine c). (Bkz [açık tür dönüşümlü ifadeler](https://msdn.microsoft.com/060ad6b4-9592-4f3e-8509-a20ac84a85ae) tür atamaları hakkında daha fazla bilgi.) Herhangi bir tür için bir işaretçi işaretçisi türüne örtük olarak dönüştürülebilir **void**. Bir işaretçi türü eksik bir nesneye bir işaretçiye dönüştürülebilir **void** (örtük) ve (açıkça). Böyle bir dönüştürmenin sonucu özgün işaretçi değerine eşittir. Bir nesne bildirildiği, ancak kendi boyutunu veya temel sınıf belirlemek kullanılabilir yeterli bilgi eksik olarak kabul edilir.  
   
  Değil herhangi bir nesneye bir işaretçi **const** veya **geçici** türünde bir işaretçi örtük olarak dönüştürülebilir `void *`.  
   

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2f4a6962ee70882ba85a15ea213f7fe6ffe11f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3984ebc1568c831420e11bd7b3c9004dabcc316b
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465286"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222100"
 ---
 # <a name="cmfcfontinfo-class"></a>Cmfcfontınfo sınıfı
 `CMFCFontInfo` Sınıfı adı ve diğer bir yazı tipi özniteliklerini açıklar.  
@@ -95,16 +95,16 @@ CMFCFontInfo(const CMFCFontInfo& src);
   
 ### <a name="parameters"></a>Parametreler  
  [in] *lpszName*  
- Yazı tipi adı. Daha fazla bilgi için `lfFaceName` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
+ Yazı tipi adı. Daha fazla bilgi için `lfFaceName` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
  [in] *lpszScript*  
  Yazı tipinin betik (karakter kümesi) adı.  
   
  [in] *nCharSet*  
- Yazı tipinin karakter kümesi (betik) belirten bir değeri. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
+ Yazı tipinin karakter kümesi (betik) belirten bir değeri. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
  [in] *nPitchAndFamily*  
- Yazı tipi ailesi ve aralık belirten bir değeri. Daha fazla bilgi için `lfPitchAndFamily` üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı.  
+ Yazı tipi ailesi ve aralık belirten bir değeri. Daha fazla bilgi için `lfPitchAndFamily` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
  [in] *nTür*  
  Yazı tipi belirten bir değeri. Bu parametre karşılaştırmaya (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE olabilir.  
@@ -115,7 +115,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu belgede koşulları kullanılır *karakter kümesi* ve *betik* birbirinin yerine. A *betik*, olarak da bilinen bir yazma sistemi olduğu, karakterleri ve bu karakterleri bir veya daha fazla dilde yazmak için kuralları koleksiyonudur. Bu betikte kullanılan noktalama işaretleri ve alfabetik karakter koleksiyonunu içerir. Örneğin, Latin betik Amerika Birleşik Devletleri'nde konuşmalar ve kendi alfabetik A ile Z arasındaki karakterleri içeren İngilizce için kullanılır. `lfCharSet` Üyesi [LOGFONT](http://msdn.microsoft.com/library/windows/desktop/dd145037) yapısı bir karakter kümesini belirtir. Örneğin, ' % s'değeri ANSI_CHARSET Latin betiğin alfabetik içerir ANSI karakter kümesini belirtir.  
+ Bu belgede koşulları kullanılır *karakter kümesi* ve *betik* birbirinin yerine. A *betik*, olarak da bilinen bir yazma sistemi olduğu, karakterleri ve bu karakterleri bir veya daha fazla dilde yazmak için kuralları koleksiyonudur. Bu betikte kullanılan noktalama işaretleri ve alfabetik karakter koleksiyonunu içerir. Örneğin, Latin betik Amerika Birleşik Devletleri'nde konuşmalar ve kendi alfabetik A ile Z arasındaki karakterleri içeren İngilizce için kullanılır. `lfCharSet` Üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı bir karakter kümesini belirtir. Örneğin, ' % s'değeri ANSI_CHARSET Latin betiğin alfabetik içerir ANSI karakter kümesini belirtir.  
   
 ##  <a name="getfullname"></a>  CMFCFontInfo::GetFullName  
  Alır, birleştirilmiş bir yazı tipi ve kendi karakter adlarını (betik) ayarlayın.  

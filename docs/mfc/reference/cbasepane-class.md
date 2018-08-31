@@ -176,12 +176,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 759ffd42b7de4d7f1922a95876a05ce4d3002dab
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d3650482cca0e974a229e303ae20ebdb455aae02
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337544"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218689"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 MFC içinde tüm bölmeler için temel sınıf.  
@@ -291,7 +291,7 @@ class CBasePane : public CWnd
 |[CBasePane::OnSetAccData](#onsetaccdata)|`CBasePane` Bu yöntem kullanmaz.|  
 |`CBasePane::OnUpdateCmdUI`|Dahili olarak kullanılır.|  
 |[CBasePane::PaneFromPoint](#panefrompoint)|Belirtilen noktasını içeren bölme döndürür.|  
-|`CBasePane::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CBasePane::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CBasePane::RecalcLayout](#recalclayout)|`CBasePane` Bu yöntem kullanmaz.|  
 |[CBasePane::RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölme kaydını siler ve yerleştirme manager listesinden kaldırır.|  
 |[CBasePane::SaveState](#savestate)|Bölmedeki durumu kayıt defterine kaydeder.|  
@@ -1388,7 +1388,7 @@ virtual HDWP MoveWindow(
  Ertelenmiş pencere konumu yapısı ya da NULL işleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
- NULL olarak geçirirseniz *hdwp* parametresi, bu yöntem penceresi normalde taşır. Bu yöntem, bir tanıtıcı geçirirseniz, ertelenmiş penceresi taşıma gerçekleştirir. Çağırarak bir tanıtıcı elde edebileceğiniz [BeginDeferWindowPos](http://msdn.microsoft.com/library/windows/desktop/ms632672) veya önceki bir çağrı bu yöntemin dönüş değerini depolayarak.  
+ NULL olarak geçirirseniz *hdwp* parametresi, bu yöntem penceresi normalde taşır. Bu yöntem, bir tanıtıcı geçirirseniz, ertelenmiş penceresi taşıma gerçekleştirir. Çağırarak bir tanıtıcı elde edebileceğiniz [BeginDeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632672) veya önceki bir çağrı bu yöntemin dönüş değerini depolayarak.  
   
 ##  <a name="onafterchangeparent"></a>  CBasePane::OnAfterChangeParent  
  Bölmedeki üst değiştikten sonra framework tarafından çağırılır.  

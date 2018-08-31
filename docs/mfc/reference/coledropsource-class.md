@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41e79ac918c1a549c7972d5feccf4f470473f98c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: f0994eb1b0293bb31fdb1cd4659256b978ebd69d
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852925"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219371"
 ---
 # <a name="coledropsource-class"></a>COleDropSource sınıfı
 Bir bırakma hedefine sürüklenmesi veri sağlar.  
@@ -63,7 +63,7 @@ class COleDropSource : public CCmdTarget
   
  Sürükle ve bırak işlemleri hakkında daha fazla bilgi için OLE kullanarak makaleye bakın [sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- Daha fazla bilgi için [IDropSource](http://msdn.microsoft.com/library/windows/desktop/ms690071) Windows SDK.  
+ Daha fazla bilgi için [IDropSource](/windows/desktop/api/oleidl/nn-oleidl-idropsource) Windows SDK.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -109,7 +109,7 @@ virtual SCODE GiveFeedback(DROPEFFECT dropEffect);
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı bir açılan bu noktada oluştuysa ne olacağını hakkında geri bildirim sağlamak için bu işlevi geçersiz kılar. Varsayılan uygulama OLE varsayılan işaretçiler kullanır. Sürükle ve bırak işlemleri hakkında daha fazla bilgi için OLE kullanarak makaleye bakın [sürükleme ve bırakma (OLE)](../../mfc/drag-and-drop-ole.md).  
   
- Daha fazla bilgi için [IDropSource::GiveFeedback](http://msdn.microsoft.com/library/windows/desktop/ms693723), [IDropTarget::DragOver](http://msdn.microsoft.com/library/windows/desktop/ms680129), ve [IDropTarget::DragEnter](http://msdn.microsoft.com/library/windows/desktop/ms680106) Windows SDK.  
+ Daha fazla bilgi için [IDropSource::GiveFeedback](/windows/desktop/api/oleidl/nf-oleidl-idropsource-givefeedback), [IDropTarget::DragOver](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragover), ve [IDropTarget::DragEnter](/windows/desktop/api/oleidl/nf-oleidl-idroptarget-dragenter) Windows SDK.  
   
 ##  <a name="onbegindrag"></a>  COleDropSource::OnBeginDrag  
  Çağıran bir olay oluştuğunda framework sol fare tuşuna basmak gibi bir sürükleme işlemi gelebilecek.  

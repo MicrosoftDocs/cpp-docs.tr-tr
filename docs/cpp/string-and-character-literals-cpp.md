@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a3a3fa5d6e9836f7de949d4c13ec19f90dbcb02
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: f0baf6eb87cd73293bc02b670e915bfd4a10cbfd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464998"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219158"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++, çeşitli dize ve karakter türleri destekler ve bu türlerinden her birinin değişmez değerler express için yöntemler sağlar. Kaynak kodunuzda bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanan herhangi bir dize express sağlar. Ham dize değişmez değeri kaçış karakterleri kullanmaktan kaçının sağlar ve her tür dize değişmez değerleri ifade etmek için kullanılabilir. Ek yapılma veya dönüştürme adımları yapmak zorunda kalmadan std::string değişmez değerleri daha da oluşturabilirsiniz.  
@@ -206,7 +206,7 @@ char u5 = '\U00000041'; // \U UCN 'A'
   
  Evrensel karakter adları yedek kod noktası aralığı D800 DFFF değerleri kodlanamıyor. Unicode vekil çifti kullanarak evrensel karakter adı belirtin. `\UNNNNNNNN`NNNNNNNN sekiz rakamlı bir kod noktası karakter olduğu. Gerekirse, derleyici bir yedek çifti oluşturur.  
   
- C ++ 03, dil yalnızca evrensel karakter adları tarafından temsil edilebilir karakter kümesini izin ve geçerli Unicode karakterler gerçekten sunmadı bazı evrensel karakter adları izin verilir. Bu, C ++ 11'de standart düzeltildi. C ++ 11'de hem karakter ve dize değişmez değerleri ve tanımlayıcıları evrensel karakter adları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümesi](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](http://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). Yedek çiftler hakkında daha fazla bilgi için bkz. [yedek çiftler ve Tamamlayıcı karakterler](/windows/desktop/Intl/surrogates-and-supplementary-characters).  
+ C ++ 03, dil yalnızca evrensel karakter adları tarafından temsil edilebilir karakter kümesini izin ve geçerli Unicode karakterler gerçekten sunmadı bazı evrensel karakter adları izin verilir. Bu, C ++ 11'de standart düzeltildi. C ++ 11'de hem karakter ve dize değişmez değerleri ve tanımlayıcıları evrensel karakter adları kullanabilirsiniz.  Evrensel karakter adları hakkında daha fazla bilgi için bkz. [karakter kümesi](../cpp/character-sets.md). Unicode hakkında daha fazla bilgi için bkz. [Unicode](https://msdn.microsoft.com/library/dd374081\(v=vs.85\).aspx). Yedek çiftler hakkında daha fazla bilgi için bkz. [yedek çiftler ve Tamamlayıcı karakterler](/windows/desktop/Intl/surrogates-and-supplementary-characters).  
   
 ## <a name="string-literals"></a>Dize sabit değerleri  
  Bir dize sabit değeri, birlikte null ile sonlandırılmış bir dize oluşturan bir karakter dizisi temsil eder. Karakterler çift tırnak işaretleri arasına alınmalıdır. Aşağıdaki tür dize değişmez değerleri vardır:  

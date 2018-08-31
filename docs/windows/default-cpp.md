@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fe924627b0b0f4f5d02fab0040a4037085d94738
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d1055c0865988edf9b54539c0d214cebcda13735
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595589"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220426"
 ---
 # <a name="default-c"></a>default (C++)
 
@@ -53,7 +53,7 @@ Varsayılan kaynak arabirimi. Bu arabirim ile de belirtmeniz gerekir [kaynak](..
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Varsayılan** C++ özniteliği ile aynı işlevlere sahip [varsayılan](http://msdn.microsoft.com/library/windows/desktop/aa366787) MIDL özniteliği. **Varsayılan** özniteliği ile kullanılan ayrıca [çalışması](../windows/case-cpp.md) özniteliği.
+**Varsayılan** C++ özniteliği ile aynı işlevlere sahip [varsayılan](/windows/desktop/Midl/default) MIDL özniteliği. **Varsayılan** özniteliği ile kullanılan ayrıca [çalışması](../windows/case-cpp.md) özniteliği.
 
 ## <a name="example"></a>Örnek
 

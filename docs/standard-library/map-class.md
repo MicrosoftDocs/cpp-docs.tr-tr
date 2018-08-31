@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40b84e3daac5a1e5574c09e656d39dc774b57031
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: bb157fb5c39dff7f4e06926ddd17ed38d7a5174a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027751"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218639"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -123,15 +123,19 @@ class map;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* eşlemde depolanacak anahtar veri türü.
+*Key*<br/>
+ Eşlemde depolanacak anahtar veri türü.
 
-*Tür* eşlemde depolanacak öğe veri türü.
+*Türü*<br/>
+ Eşlemde depolanacak öğe veri türü.
 
-*Nitelikler* iki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
+*Nitelikler*<br/>
+ İki öğenin değerlerini eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
 
 C ++ 14 sürümünde türü parametresi yok std::less <> koşul belirterek heterojen arama etkinleştirebilirsiniz. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
-*Allocator* haritanın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair<const Key, Type> >`.
+*Ayırıcı*<br/>
+ Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair<const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -572,7 +576,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* öğeleri eşlemden eşleştirilmesi için anahtar değeri.
+*Anahtarı*<br/>
+ Öğeleri eşlemden eşleştirilmesi için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1035,7 +1040,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan eşlemesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1121,13 +1127,17 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* kaldırılacak öğenin konumu.
+*Burada*<br/>
+ Kaldırılacak öğenin konumu.
 
-*İlk* kaldırılacak ilk öğenin konumu.
+*ilk*<br/>
+ Kaldırılacak ilk öğenin konumu.
 
-*Son* kaldırılacak son öğeden hemen ötesinde konumu.
+*Son*<br/>
+ Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Anahtar* kaldırılacak öğelerin anahtar değeri.
+*Key*<br/>
+ Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1229,7 +1239,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan eşlemesinden bir öğenin sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+*Anahtarı*<br/>
+ Bir öğenin Aranan eşlemesinden sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1561,11 +1572,11 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iterator` Nesnelerin olan öğeler için harita noktaları tarafından tanımlanan [value_type](#value_type), diğer bir deyişle tür `pair` * \< * **constKey**, * *Tür *** >* olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
+Harita noktalarına nesnelerin olan öğeler tarafından tanımlanan yineleyici [value_type](#value_type), yani türü `pair<const Key, Type>`olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
 
-Başvurulacak bir **yineleyici** `Iter` bir eşlem içindeki bir öğeyi işaret eden, kullanın `->` işleci.
+Bir yineleyicinin başvuru kaldırma için *Iter* bir eşlem içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
-Öğenin anahtarının değerini erişmek için `Iter`  ->  **ilk**, eşit olduğu (\* `Iter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `Iter`  ->  **ikinci**, eşit olduğu (\* `Iter`). **İkinci**.
+Öğenin anahtarının değerini erişmek için `Iter->first`, eşdeğer olan `(*Iter).first`. Eşlenmiş veri öğesi için değeri erişmek için `Iter->second`, eşdeğer olan `(*Iter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -1587,7 +1598,7 @@ Bir harita alt öğeleri düzenlemek amacıyla kullanan bir işlev nesnesi dönd
 
 Depolanan nesne üyesi işlevini tanımlar.
 
-**bool işleci**( **constKey &**`left`, **const anahtar &**`right`);
+`bool operator(const Key& left, const Key& right);`
 
 döndüren **true** varsa `left` önündeki ve eşit değildir `right` sıralama düzeninde.
 
@@ -1690,7 +1701,8 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan eşlemesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1806,7 +1818,7 @@ map(
 |Parametre|Açıklama|
 |*Al*|Varsayılan olarak bu harita nesnesi için kullanılacak depolama ayırıcı sınıf `Allocator`.|
 |*Comp*|Karşılaştırma işlevi türü `const Traits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `hash_compare`.|
-|*Sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
+|*sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|İçerdiği öğeleri kopyalanacak olan initializer_list.|
@@ -2402,9 +2414,9 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 Bir tür `reverse_iterator` kullanın ters haritada yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
-`reverse_iterator` Nesnelerin olan öğeler için harita noktaları tarafından tanımlanan [value_type](#value_type), diğer bir deyişle tür `pair` * \< * **constKey**, * *Tür *** >* olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
+`reverse_iterator` Nesnelerin olan öğeler için harita noktaları tarafından tanımlanan [value_type](#value_type), diğer bir deyişle tür `pair<const Key, Type>`olan ilk üye öğe anahtarıdır ve ikinci öğe tarafından tutulan eşlenen datum üyesidir.
 
-Başvurulacak bir `reverse_iterator` `rIter` bir eşlem içindeki bir öğeyi işaret eden, kullanın `->` işleci.
+Başvurulacak bir `reverse_iterator` *rIter* bir eşlem içindeki bir öğeyi işaret eden, kullanın `->` işleci.
 
 Öğenin anahtarının değerini erişmek için `rIter`  ->  **ilk**, eşit olduğu (\* `rIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `rIter`  ->  **ikinci**, eşit olduğu (\* `rIter`). **İlk**.
 
@@ -2479,7 +2491,8 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef haritayla değiştirilecek öğeleri sağlayan bağımsız değişken eşleme.
+*sağ*<br/>
+ Hedef haritayla değiştirilecek öğeleri sağlayan bağımsız değişken eşleme.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2549,7 +2562,8 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan harita öğeden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+*Anahtarı*<br/>
+ Bir öğenin Aranan eşlemesinden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2738,7 +2752,7 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Harita > üyeleri](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<Harita > üyeleri](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

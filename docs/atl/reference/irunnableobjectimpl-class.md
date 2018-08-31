@@ -26,15 +26,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a98456d3d7d0d2e4600267a81151c44e38993c5
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 035d59d71dc7166b12b6e894803645aacda83887
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885594"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218704"
 ---
 # <a name="irunnableobjectimpl-class"></a>Irunnableobjectımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) arabirimi.  
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi.  
   
 > [!IMPORTANT]
 >  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
@@ -63,7 +63,7 @@ class IRunnableObjectImpl
 |[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Denetimin ekli olduğunu gösterir. ATL uygulamasını S_OK döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IRunnableObject](http://msdn.microsoft.com/library/windows/desktop/ms692783) arabirimi denetim çalışıp çalışmadığını belirlemek için çalıştırmak veya çalışır duruma geçirmek kilitlemek için zorlamak için bir kapsayıcı sağlar. Sınıf `IRunnableObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi denetim çalışıp çalışmadığını belirlemek için çalıştırmak veya çalışır duruma geçirmek kilitlemek için zorlamak için bir kapsayıcı sağlar. Sınıf `IRunnableObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   
@@ -86,7 +86,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
  ATL uygulamasını kümeleri \* *lpClsid* GUID_NULL ve E_UNEXPECTED döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::GetRunningClass](http://msdn.microsoft.com/library/windows/desktop/ms693734) Windows SDK içinde.  
+ Bkz: [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) Windows SDK içinde.  
   
 ##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
  Denetim çalışıp çalışmadığını belirtir.  
@@ -99,7 +99,7 @@ virtual BOOL IsRunning();
  ATL uygulamasını TRUE döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::IsRunning](http://msdn.microsoft.com/library/windows/desktop/ms678496) Windows SDK içinde.  
+ Bkz: [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) Windows SDK içinde.  
   
 ##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
  Denetim çalışır duruma geçirmek kilitler.  
@@ -112,7 +112,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
  ATL uygulamasını S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::LockRunning](http://msdn.microsoft.com/library/windows/desktop/ms693361) Windows SDK içinde.  
+ Bkz: [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) Windows SDK içinde.  
   
 ##  <a name="run"></a>  IRunnableObjectImpl::Run  
  Çalıştırılacak denetim zorlar.  
@@ -125,7 +125,7 @@ HRESULT Run(LPBINDCTX lpbc);
  ATL uygulamasını S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::Run](http://msdn.microsoft.com/library/windows/desktop/ms694517) Windows SDK içinde.  
+ Bkz: [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) Windows SDK içinde.  
   
 ##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
  Denetimin ekli olduğunu gösterir.  
@@ -138,7 +138,7 @@ HRESULT SetContainedObject(BOOL fContained);
  ATL uygulamasını S_OK döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::SetContainedObject](http://msdn.microsoft.com/library/windows/desktop/ms693710) Windows SDK içinde.  
+ Bkz: [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   

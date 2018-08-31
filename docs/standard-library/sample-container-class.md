@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 004da50bf8d688f1d7b0432e5196094b878870cf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 43a8851d11e6113d52b2ad128b1ff41e66c1ad12
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955013"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223241"
 ---
 # <a name="sample-container-class"></a>Örnek Kapsayıcı Sınıfı
 
@@ -34,7 +34,7 @@ Birkaç ek uyarılar:
 
 - İfade `~Ty` özel durumu oluşturur, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
 
-- Bir ayırıcı nesnenin kapsayıcı depoluyorsa *al*, ve *al* dışında bir özel durum çağrı sonucunda oluşturur * al ***.allocate**, kapsayıcının sonuç durumu Nesne tanımsızdır.
+- Kapsayıcı bir ayırıcı nesnesini depolar *al*, ve *al* dışında bir özel durum çağrı sonucunda oluşturur `al.allocate`, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
 
 - Kapsayıcı bir işlev nesnesi depoluyorsa *comp*, denetlenen sıra sıralamanızı nasıl belirlemek için ve *comp* herhangi bir türde özel durumu oluşturur, sonuçta elde edilen kapsayıcı nesnenin durumu tanımsızdır.
 

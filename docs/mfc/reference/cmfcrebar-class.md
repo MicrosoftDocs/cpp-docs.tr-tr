@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8af155401492e97be6a9e3a80b72c8c4e7fbd9e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8910a1742bf50f178c75b5c78f250b8c1f103b04
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464875"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217983"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 A `CMFCReBar` düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu nesnedir.  
@@ -69,7 +69,7 @@ class CMFCReBar : public CPane
 |[CMFCReBar::GetReBarCtrl](#getrebarctrl)|Arka plandaki doğrudan erişim sağlayan [CReBarCtrl](../../mfc/reference/crebarctrl-class.md) ortak denetimi.|  
 |[CMFCReBar::OnShowControlBarMenu](#onshowcontrolbarmenu)|(Geçersiz kılmaları [CPane::OnShowControlBarMenu](../../mfc/reference/cpane-class.md#onshowcontrolbarmenu).)|  
 |[CMFCReBar::OnToolHitTest](#ontoolhittest)|(Geçersiz kılmaları [CWnd::OnToolHitTest](../../mfc/reference/cwnd-class.md#ontoolhittest).)|  
-|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CBasePane::OnUpdateCmdUI](http://msdn.microsoft.com/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
+|[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CBasePane::OnUpdateCmdUI](https://msdn.microsoft.com/e139f06a-9793-4ee2-bc3d-517389368c77).)|  
 |[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Geçersiz kılmaları [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|  
   
 ## <a name="remarks"></a>Açıklamalar  
@@ -120,7 +120,7 @@ BOOL AddBar(
  Çubuk barınağı arka plan üzerinde görüntülenecek bit eşlem belirtir.  
   
  [in] *dwStyle*  
- Bant için uygulanacak stili içerir. Açıklaması bant stilleri tam bir listesi için bkz. `fStyle` içinde [REBARBANDINFO](http://msdn.microsoft.com/library/windows/desktop/bb774393) yapısındaki Windows SDK Belgeleri.  
+ Bant için uygulanacak stili içerir. Açıklaması bant stilleri tam bir listesi için bkz. `fStyle` içinde [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısındaki Windows SDK Belgeleri.  
   
  [in] *clrFore*  
  Çubuk barınağı ön plan rengi temsil eder.  
@@ -147,7 +147,7 @@ BOOL Create(
  Bu çubuk barınağı denetiminin üst penceresine bir işaretçi.  
   
  [in] *dwCtrlStyle*  
- Çubuk barınağı denetiminin stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi daraltmak çubuk barınağı denetimi bitişik bantları ayırmak için satır görüntüler. Geçerli stilleri bir listesi için bkz. [Rebar denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb774377) Windows SDK belgelerinde.  
+ Çubuk barınağı denetiminin stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi daraltmak çubuk barınağı denetimi bitişik bantları ayırmak için satır görüntüler. Geçerli stilleri bir listesi için bkz. [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK belgelerinde.  
   
  [in] *dwStyle*  
  Çubuk barınağı denetiminin pencere stili. Geçerli stilleri bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  

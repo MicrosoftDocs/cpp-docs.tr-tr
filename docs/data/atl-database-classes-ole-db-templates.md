@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 083ac7485ce2056ab97ca32142be3e88094573f9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 91cd06ea1d8ff697da6c4959fff34fdc3798dcfd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39337891"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218994"
 ---
 # <a name="atl-database-classes-ole-db-templates"></a>ATL Veritabanı Sınıfları (OLE DB Şablonları)
 Microsoft, OLE DB, verilere çok çeşitli bilgi kaynakları ve biçimler Tekdüzen erişim sağlayan COM arabirimleri kümesi çeşitli uygulamalarını sağlar.  OLE DB resmi olarak kullanım dışı; eski kod bakımı geliştiriciler için belgelerdir. Yeni uygulamalar SQL veri kaynaklarına bağlanmak için ODBC kullanmanız gerekir.
@@ -46,4 +46,4 @@ Microsoft, OLE DB, verilere çok çeşitli bilgi kaynakları ve biçimler Tekdü
  [OLE DB sağlayıcısı oluşturma](../data/oledb/creating-an-ole-db-provider.md)   
  [OLE DB Tüketici Şablonları başvurusu](../data/oledb/ole-db-consumer-templates-reference.md)   
  [OLE DB sağlayıcı şablonları başvurusu](../data/oledb/ole-db-provider-templates-reference.md)   
- [OLE DB Şablon örnekleri](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)
+ [OLE DB Şablon örnekleri](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)

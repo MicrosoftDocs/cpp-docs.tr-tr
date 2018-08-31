@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f57ae6a7d084a497ec41c9b66b314ad1fdb3e7fc
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 16d9123125cc6cb01ee5dfb03f771e263d9915f2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406577"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221446"
 ---
 # <a name="function-overloading"></a>İşlev Aşırı Yüklemesi
 C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar. Bunlar adlandırılır *aşırı* işlevleri. Aşırı yüklenmiş İşlevler, işlev için bağımsız değişken sayısı ve türleri bağlı olarak farklı semantikler sağlamak etkinleştirin. 
@@ -43,8 +43,9 @@ C++, aynı kapsamda aynı ada sahip birden fazla işlevin belirtilmesini sağlar
 |**const** veya **geçici**|Evet, tüm işlevine uygulandığında|
 |[ref niteleyicisi](#ref-qualifier)|Evet|  
   
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, aşırı yüklemenin nasıl kullanılabileceği gösterilmektedir.  
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte, aşırı yüklemenin nasıl kullanılabileceği gösterilmektedir.  
   
 ```cpp 
 // function_overloading.cpp  
@@ -270,9 +271,9 @@ volatile Over&
   
 1.  Tam eşleşme. Hangi işlev çağrılır ve türleri işlev prototipi içinde bildirilen türler arasında bir tam eşleşme her zaman en iyi eşleşmedir. Önemsiz dönüştürmeler dizileri tam eşleşme sınıflandırılır. Ancak, bu dönüştürmeler yapmayın dizileri dönüştürme dizileri iyi kabul edilir:  
   
-    -   İşaretçiden işaretçiye için **const** (`type` **\*** için **const** `type` **\*** ).  
+    -   İşaretçiden işaretçiye için **const** (`type` <strong>\*</strong> için **const** `type` <strong>\*</strong> ).  
   
-    -   İşaretçiden işaretçiye için **geçici** (`type` **\*** için **geçici** `type` **\***).  
+    -   İşaretçiden işaretçiye için **geçici** (`type` <strong>\*</strong> için **geçici** `type` <strong>\*</strong>).  
   
     -   Başvuru için başvurusundan **const** (`type` **&** için **const** `type` **&**).  
   

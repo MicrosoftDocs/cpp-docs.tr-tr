@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 16f7be95c36970ce96d04ff357831294f3a3faf1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9a775370228691e47b1b9becca8e0769ea0f7367
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466003"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221884"
 ---
 # <a name="ole-db-templates-attributes-and-other-implementations"></a>OLE DB Şablonları, Öznitelikler ve Diğer Uygulamalar
 ## <a name="atl-ole-db-templates"></a>ATL OLE DB Şablonları  
@@ -44,7 +44,7 @@ ms.locfileid: "42466003"
   
 -   Listesine bakın [OLE DB Tüketici sınıflar](../../data/oledb/ole-db-consumer-templates-reference.md) veya [OLE DB sağlayıcısı sınıfları](../../data/oledb/ole-db-provider-templates-reference.md).  
   
--   Listesine bakın [OLE DB Şablon örnekleri](http://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c).  
+-   Listesine bakın [OLE DB Şablon örnekleri](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c).  
   
 -   Bkz: [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (içinde Windows SDK'sı).  
   

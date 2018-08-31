@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2ce93a17dd2666469b8e6d56e1a106d508855f7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4b30aa51f284d216332225664d07d7692bd042a1
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465284"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43223071"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 Bir dock sitesine yerleştirilebilen veya sekmeli bir bölmeye eklenebilen bir bölme uygular.  
@@ -213,7 +213,7 @@ class CDockablePane : public CPane
 |[CDockablePane::IsTabLocationBottom](#istablocationbottom)|Sekmeleri üstünde veya altında bölmesinin bulunduğu olup olmadığını belirtir.|  
 |[CDockablePane::IsTracked](#istracked)|Kullanıcı tarafından bir bölme sürüklediğiniz olup olmadığını belirtir.|  
 |[CDockablePane::IsVisible](#isvisible)|Geçerli bölmesi görünür olup olmadığını belirler.|  
-|[CDockablePane::LoadState](http://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|Dahili olarak kullanılır.|  
+|[CDockablePane::LoadState](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|Dahili olarak kullanılır.|  
 |[CDockablePane::OnAfterChangeParent](#onafterchangeparent)|Üst bölme değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CPane::OnAfterChangeParent](../../mfc/reference/cpane-class.md#onafterchangeparent).)|  
 |[CDockablePane::OnAfterDockFromMiniFrame](#onafterdockfromminiframe)|Kayan bir takma çubuğu bir çerçeve penceresinde noktaları framework tarafından çağırılır.|  
 |[CDockablePane::OnBeforeChangeParent](#onbeforechangeparent)|Bölmenin üst değiştirilmek üzereyken framework tarafından çağırılır. (Geçersiz kılmaları [CPane::OnBeforeChangeParent](../../mfc/reference/cpane-class.md#onbeforechangeparent).)|  

@@ -14,18 +14,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb9307b68b5d664e477f0139824ff02d00b7c134
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 447f843bcc8f07d76084d1db68890237474ce200
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462124"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222158"
 ---
 # <a name="writing-an-exception-filter"></a>Özel Durum Filtresi Yazma
 Özel bir durumu, özel durum işleyicisinin düzeyine atlayarak veya yürütmeyi devam ettirerek işleyebilirsiniz. Kullanabileceğiniz özel durum ve başarısız işlemler için özel durum işleyicisi kodunu kullanmak yerine, *filtre* sorunu ve ardından, -1 döndürerek, normal akışa yığını temizlemeden sürdürmek için.  
   
 > [!NOTE]
->  Bazı özel durumlar devam ettirilemez. Varsa *filtre* değerlendirir böyle bir özel durum için -1 için sistem yeni bir özel durum oluşturur. Çağırdığınızda [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552), özel durumun devam edip etmeyeceğini siz belirlersiniz.  
+>  Bazı özel durumlar devam ettirilemez. Varsa *filtre* değerlendirir böyle bir özel durum için -1 için sistem yeni bir özel durum oluşturur. Çağırdığınızda [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552), özel durumun devam edip etmeyeceğini siz belirlersiniz.  
   
  Örneğin, aşağıdaki kod bir işlev çağrısı kullanır *filtre* ifade: Bu işlev sorunu giderir ve normal denetim akışını sürdürmek için -1 döndürür:  
   
@@ -56,7 +56,7 @@ int Eval_Exception ( int n_except ) {
   
  Bir işlev çağrısı kullanmak iyi bir fikirdir *filtre* ifadesi her *filtre* karmaşık bir şey yapmanız gerekir. İfadenin değerlendirilmesi işlevin, bu durumda `Eval_Exception`'ın yürütülmesine neden olur.  
   
- Kullanımına dikkat edin [GetExceptionCode](http://msdn.microsoft.com/library/windows/desktop/ms679356) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor `GetExceptionCode`, ancak geçirilen özel durum kodu olması gerekir.  
+ Kullanımına dikkat edin [GetExceptionCode](/windows/desktop/Debug/getexceptioncode) özel durumu belirlemek için. Filtrenin içinde bu işlevi çağırmanız gerekir. `Eval_Exception` çağrılamıyor `GetExceptionCode`, ancak geçirilen özel durum kodu olması gerekir.  
   
  Bu işleyici, özel durum bir tamsayı veya kayan nokta taşması değilse deneyimi başka bir işleyiciye geçirir. Tamsayı veya kayan nokta taşmasıysa, işleyici bazı genel değişkenleri sıfırlamak için bir işlev çağırır (`ResetVars` yalnızca bir örnektir, API işlevi değildir). *Deyim bloğu 2*, bu örnekte boş, hiçbir zaman yürütülebilir olduğundan `Eval_Exception` hiçbir zaman exceptıon_execute_handler (1) döndürür.  
   

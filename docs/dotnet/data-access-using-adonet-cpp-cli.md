@@ -33,12 +33,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 025c6bc072f85a1075abdbd03f3567622c3fa40d
-ms.sourcegitcommit: 27be37ae07ee7b657a54d23ed34438220d977fdc
+ms.openlocfilehash: 3d87d41b97f587f2546df246044eaf8df3bba373
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39110292"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221984"
 ---
 # <a name="data-access-using-adonet-ccli"></a>ADO.NET Kullanarak Veri Erişimi (C++/CLI)
 ADO.NET veri erişimi için .NET Framework API ve güç ve önceki veri erişim çözümleri tarafından eşleşmeyen kullanım kolaylığı sağlar. Bu bölümde bazı yerel türlerini hazırlama gibi Visual C++ kullanıcılara özgü ADO.NET ile ilgili sorunlar açıklanmaktadır.  
@@ -731,4 +731,4 @@ int main()
 
  <xref:System.Runtime.InteropServices>   
 
- [Birlikte çalışabilirlik](http://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   
+ [Birlikte çalışabilirlik](https://msdn.microsoft.com/afcc2e7d-3f32-48d2-8141-1c42acf29084)   

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d29d619f8e561f1c506b69ffd132c46276026e13
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7ff83b156054774a06a371e7832dc73dc95a579c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604596"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221264"
 ---
 # <a name="retval"></a>retval
 
@@ -36,7 +36,7 @@ ms.locfileid: "42604596"
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Retval** C++ özniteliği ile aynı işlevlere sahip [retval](http://msdn.microsoft.com/library/windows/desktop/aa367158) MIDL özniteliği.
+**Retval** C++ özniteliği ile aynı işlevlere sahip [retval](/windows/desktop/Midl/retval) MIDL özniteliği.
 
 **retval** son bağımsız değişken işlevin bildiriminde yer almalıdır.
 

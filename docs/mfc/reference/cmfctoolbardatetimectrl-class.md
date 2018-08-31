@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f275ae65b8c3135a110e249b0521194083683c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ad99ccf1f037d16bcff57f9a643f2332f36e7d7a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37854089"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220440"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl sınıfı
 Bir tarih ve Saat Seçici denetimini içeren bir araç çubuğu düğmesi.  
@@ -96,10 +96,10 @@ class CMFCToolBarDateTimeCtrl : public CMFCToolBarButton
 |[CMFCToolBarDateTimeCtrl::GetDateTimeCtrl](#getdatetimectrl)|Tarih ve Saat Seçici denetimine bir işaretçi döndürür.|  
 |[CMFCToolBarDateTimeCtrl::GetHwnd](#gethwnd)|Araç çubuğu düğmesi ile ilişkili olan bir pencere tutucu alır. (Geçersiz kılmaları [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd).)|  
 |`CMFCToolBarDateTimeCtrl::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
-|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Bir tarih ve saat seçici denetimi seçili zaman alır ve belirtilen koyar [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.|  
+|[CMFCToolBarDateTimeCtrl::GetTime](#gettime)|Bir tarih ve saat seçici denetimi seçili zaman alır ve belirtilen koyar [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.|  
 |[CMFCToolBarDateTimeCtrl::GetTimeAll](#gettimeall)|Saat Seçici denetimini düğmesinden belirtilen komut kimliği vardır. seçilen zamanda döndürür|  
 |[CMFCToolBarDateTimeCtrl::HaveHotBorder](#havehotborder)|Bir kullanıcı bir düğmeyi seçtiğinde düğme bir kenarlık görüntülenip görüntülenmeyeceğini belirler. (Geçersiz kılmaları [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder).)|  
-|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti. (Geçersiz kılmaları [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
+|[CMFCToolBarDateTimeCtrl::NotifyCommand](#notifycommand)|Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti. (Geçersiz kılmaları [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand).)|  
 |[CMFCToolBarDateTimeCtrl::OnAddToCustomizePage](#onaddtocustomizepage)|Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu. (Geçersiz kılmaları [CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage).)|  
 |`CMFCToolBarDateTimeCtrl::OnCalculateSize`|Yerleştirme durumu ve belirtilen bir cihaz bağlamı için düğmenin boyutunu hesaplamak için framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnCalculateSize](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize).)|  
 |[CMFCToolBarDateTimeCtrl::OnChangeParentWnd](#onchangeparentwnd)|Yeni bir araç çubuğu düğmesi eklendiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd).)|  
@@ -250,7 +250,7 @@ virtual HWND GetHwnd();
  Bu metot geçersiz kılmaları [CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) yöntemi.  
   
 ##  <a name="gettime"></a>  CMFCToolBarDateTimeCtrl::GetTime  
- Seçilen zamanda ilişkili tarih ve Saat Seçici denetiminin alır ve belirtilen koyar [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı  
+ Seçilen zamanda ilişkili tarih ve Saat Seçici denetiminin alır ve belirtilen koyar [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı  
   
 ```  
 BOOL GetTime(COleDateTime& timeDest) const;
@@ -263,13 +263,13 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
  İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
   
  [out] *pTimeDest*  
- Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
+ Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İlk aşırı yükleme, zaman başarıyla yazılır, sıfır olmayan, [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesne; Aksi durumda 0. İkinci ve üçüncü aşırı belirlenip dwFlag üye eşit olan bir DWORD dönüş değeri olduğu [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapısı.  
+ İlk aşırı yükleme, zaman başarıyla yazılır, sıfır olmayan, [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesne; Aksi durumda 0. İkinci ve üçüncü aşırı belirlenip dwFlag üye eşit olan bir DWORD dönüş değeri olduğu [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem kümeleri [NMDATETIMECHANGE](http://msdn.microsoft.com/library/windows/desktop/bb761730) yapı üyesi CertOpenStore tarih ve Saat Seçici bir tarih ve saat için ayarlanmış olup olmadığını belirtmek için. Değer GDT_NONE eşitse, denetimin kümesine `no date` durumu ve DTS_SHOWNONE stili kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati başarıyla hedef konumda depolanır.  
+ Yöntem kümeleri [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) yapı üyesi CertOpenStore tarih ve Saat Seçici bir tarih ve saat için ayarlanmış olup olmadığını belirtmek için. Değer GDT_NONE eşitse, denetimin kümesine `no date` durumu ve DTS_SHOWNONE stili kullanır. Döndürülen değer GDT_VALID eşitse, sistem saati başarıyla hedef konumda depolanır.  
   
 ##  <a name="gettimeall"></a>  CMFCToolBarDateTimeCtrl::GetTimeAll  
  Belirtilen komut kimliğe sahip zaman seçici denetimi düğmesini kullanıcı tarafından seçilen noktaya döndürür  
@@ -296,7 +296,7 @@ static DWORD GetTimeAll(
  İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
   
  [out] *pTimeDest*  
- Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
+ Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Framework komut kimlik eşleştiren bir araç çubuğu düğmesi bulamazsanız *uiCmd*, ilk aşırı yükleme sıfır ve diğer aşırı yüklemeler de GDT_NONE değer döndürülür. Araç çubuğu düğmesini bulunursa, dönüş değeri bir çağrıdan dönüş değeri aynıdır [CMFCToolBarDateTimeCtrl::GetTime](#gettime) bu düğmesine. Dönüş değeri sıfır veya GDT_NONE düğmesi, olduğunu belirten bulunduğunda oluşabilir çağrısı `GetTime` diğer bir neden için geçerli bir tarih döndürmedi.  
@@ -318,7 +318,7 @@ virtual BOOL HaveHotBorder() const;
  Denetimin görünür olması halinde bu yöntem, sıfır olmayan bir değer döndürür.  
   
 ##  <a name="notifycommand"></a>  CMFCToolBarDateTimeCtrl::NotifyCommand  
- Düğme işler olup olmadığını belirtir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) ileti.  
+ Düğme işler olup olmadığını belirtir [WM_COMMAND](/windows/desktop/menurc/wm-command) ileti.  
   
 ```  
 virtual BOOL NotifyCommand(int iNotifyCode);
@@ -332,9 +332,9 @@ virtual BOOL NotifyCommand(int iNotifyCode);
  WM_COMMAND ileti veya yanlış ileti üst araç tarafından ele alınması gerektiğini göstermek için düğmeyi işler TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](http://msdn.microsoft.com/library/windows/desktop/ms647591) üst penceresine ileti.  
+ Göndermek üzere olduğunda framework bu yöntemi çağıran bir [WM_COMMAND](/windows/desktop/menurc/wm-command) üst penceresine ileti.  
   
- Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) işleme tarafından [dtn_datetımechange](http://msdn.microsoft.com/library/windows/desktop/bb761737) bildirim. İç zaman durumunu güncelleştirir ve tüm zaman özellik güncelleştirmeleri `CMFCToolBarDateTimeCtrl` nesnelerle aynı komut kimliği.  
+ Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::NotifyCommand](../../mfc/reference/cmfctoolbarbutton-class.md#notifycommand)) işleme tarafından [dtn_datetımechange](/windows/desktop/Controls/dtn-datetimechange) bildirim. İç zaman durumunu güncelleştirir ve tüm zaman özellik güncelleştirmeleri `CMFCToolBarDateTimeCtrl` nesnelerle aynı komut kimliği.  
   
 ##  <a name="onaddtocustomizepage"></a>  CMFCToolBarDateTimeCtrl::OnAddToCustomizePage  
  Framework tarafından düğmenin eklendiğinde çağırılır bir **Özelleştir** iletişim kutusu.  
@@ -502,7 +502,7 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
  İlk sürümünde, bir başvuru bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
   
  [in] *pTimeNew*  
- Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
+ Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -535,7 +535,7 @@ static BOOL SetTimeAll(
  İlk sürümünde, bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
   
  [in] *pTimeNew*  
- Bir işaretçi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
+ Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  

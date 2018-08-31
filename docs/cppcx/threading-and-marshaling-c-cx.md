@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09b9e008b586b1a312770d7cdfc43dc500932158
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da198a6a807413846fdc5b45552bb74252f8acc2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611451"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221375"
 ---
 # <a name="threading-and-marshaling-ccx"></a>İş parçacığı oluşturma ve sıralama (C + +/ CX)
 Çalışmaları büyük çoğunluğu, standart C++ nesneleri gibi Windows çalışma zamanı sınıfların örneklerini herhangi bir iş parçacığından erişilebilir. Bu tür sınıflar için "Çevik" adlandırılır. Ancak, Windows ile birlikte Windows çalışma zamanı sınıflar az sayıda Çevik olmayan ve standart C++ nesnelerden COM nesneleri gibi daha kullanılması gerekir. Çevik olmayan sınıflarını kullanmak için bir COM uzman olmanız gerekmez, ancak bu sınıfın iş parçacığı modeli ve sıralama davranışını dikkate almak gerekir. Bu makalede, arka plan ve Çevik olmayan bir sınıf örneği kullanmak gereken bu nadir senaryoları için yönergeler sağlar.  
@@ -100,7 +100,7 @@ ref class MyOptions
  Visual c++'da "None", sıralama davranışını bir işlemde Windows çalışma zamanı sınıf başvuru oluşturduğunuzda derleyici C4451 uyarı verir ancak kullanmayı düşünün önerisi olmayan `Platform::Agile<T>`.  Sınıf düzgün kullanın ve kodunuzun yalnızca bir arka plan iş parçacığından yalnızca kullanıcı arabirimi iş parçacığı bileşenlerini STA ve MTA bileşenleri çağıran emin olmak için sizin sorumluluğunuzdadır, bu nedenle, derleyici bu uyarıyı ötesinde herhangi bir yardım sunamazlar.  
   
 ## <a name="authoring-agile-windows-runtime-components"></a>Çevik Geliştirme Windows çalışma zamanı bileşenleri  
- Tanımladığınızda bir başvuru sınıfı C + +/ CX, onu varsayılan olarak Çevik — diğer bir deyişle, sahip `ThreadingModel`hem = ve `MarshallingType`Çevik =.  Windows çalışma zamanı C++ Şablon kitaplığı kullanıyorsanız, kendi sınıfınızı Çevik türeterek yapabileceğiniz `FtmBase`, kullanan `FreeThreadedMarshaller`.  Bir sınıf yazarsanız `ThreadingModel`hem = veya `ThreadingModel`MTA, = sınıf iş parçacığı açısından güvenli olduğundan emin olun. Daha fazla bilgi için [oluşturma ve kullanma nesneleri (WRL)](http://msdn.microsoft.com/en-us/d5e42216-e888-4f1f-865a-b5ccd0def73e).  
+ Tanımladığınızda bir başvuru sınıfı C + +/ CX, onu varsayılan olarak Çevik — diğer bir deyişle, sahip `ThreadingModel`hem = ve `MarshallingType`Çevik =.  Windows çalışma zamanı C++ Şablon kitaplığı kullanıyorsanız, kendi sınıfınızı Çevik türeterek yapabileceğiniz `FtmBase`, kullanan `FreeThreadedMarshaller`.  Bir sınıf yazarsanız `ThreadingModel`hem = veya `ThreadingModel`MTA, = sınıf iş parçacığı açısından güvenli olduğundan emin olun. Daha fazla bilgi için [oluşturma ve kullanma nesneleri (WRL)](https://msdn.microsoft.com/d5e42216-e888-4f1f-865a-b5ccd0def73e).  
   
  İş parçacığı modeli ve bir başvuru sınıfının hazırlama davranışı değiştirebilirsiniz. Ancak, Çevik olmayan sınıf işleme değişiklikler yaparsanız, bu değişikliklerle ilişkili etkilerini anlamanız gerekir.  
   
@@ -127,5 +127,5 @@ public ref class MySTAClass
  İş parçacığı oluşturma ve bir üçüncü taraf Windows çalışma zamanı bileşeni tarafından gerekli olan bilgileri hazırlama bileşeni için uygulama bildirim kayıt bilgileri belirtildi. Uygulamanızı Windows çalışma zamanı bileşenlerinin tümünü Çevik yapmanızı öneririz. Bu, istemci kodu bileşeniniz uygulamadaki herhangi bir iş parçacığı çağrı yapabilir ve herhangi bir sıralama sahip doğrudan çağrıları olduklarından bu çağrıları performansını artırır sağlar. Bu şekilde sınıfınızda Yazar sonra kullanmak istemci kodu yoksa `Platform::Agile<T>` sınıfınıza kullanma.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [ThreadingModel](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
- [MarshallingBehavior](http://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)
+ [ThreadingModel](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.threadingmodel.aspx)   
+ [MarshallingBehavior](https://msdn.microsoft.com/library/windows/apps/xaml/windows.foundation.metadata.marshalingbehaviorattribute.aspx)

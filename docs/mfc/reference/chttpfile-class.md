@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23c3e1b42c228ea971bdedff952c01078735948e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 422952ae459d6a6e4d9f768eb111c9c01cfbb5d0
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337466"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219748"
 ---
 # <a name="chttpfile-class"></a>CHttpFile sınıfı
 İstemek ve bir HTTP sunucusunda dosyaları okumak için gereken işlevleri sağlar.  
@@ -130,7 +130,7 @@ BOOL AddRequestHeaders(
  Bir başvuru bir [CString](../../atl-mfc-shared/reference/cstringt-class.md) eklenecek üst bilgileri ve istek üst bilgisi içeren nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `AddRequestHeaders` ek olarak, serbest biçimli üstbilgileri için HTTP istek işleyicisi ekler. Bu HTTP sunucusuna gönderilen tam istek üzerinde ayrıntılı denetime ihtiyaç duyan Gelişmiş istemciler tarafından kullanılması amaçlanmıştır.  
@@ -197,10 +197,10 @@ BOOL EndRequest(
   
 ### <a name="parameters"></a>Parametreler  
  *CertOpenStore*  
- İşlemi tanımlayan bayraklar. Uygun bayrakların listesi için bkz. [HttpEndRequest](http://msdn.microsoft.com/library/windows/desktop/aa384230) Windows SDK.  
+ İşlemi tanımlayan bayraklar. Uygun bayrakların listesi için bkz. [HttpEndRequest](/windows/desktop/api/wininet/nf-wininet-httpendrequesta) Windows SDK.  
   
  *lpBuffIn*  
- Başlatılan bir işaretçiye [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) işlemi için kullanılan giriş arabelleği açıklar.  
+ Başlatılan bir işaretçiye [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) işlemi için kullanılan giriş arabelleği açıklar.  
   
  *dwContext*  
  İçerik tanımlayıcısı `CHttpFile` işlemi. Açıklamalar Bu parametre hakkında daha fazla bilgi için bkz.  
@@ -279,7 +279,7 @@ BOOL QueryInfo(
   
 - Uygulama yanıt üstbilgilerini genellikle HTTP_QUERY_FLAG_REQUEST_HEADERS sorgular, ancak bir uygulama da istek üst bilgilerini bu bayrağı kullanarak sorgulayabilirsiniz.  
   
-- HTTP_QUERY_FLAG_SYSTEMTIME değeri olan "En son değiştiren-zamanı" gibi bir tarih/saat dizesinin bu üst bilgiler için bu bayrağı döndürür üst bilgi değeri olarak standart bir Win32 [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) uygulamaya gerektirmeyen yapısı ayrıştırılması denenecek veriler. Bu bayrağı kullanmanız durumunda kullanmak isteyebilirsiniz `SYSTEMTIME` işlevi geçersiz kılar.  
+- HTTP_QUERY_FLAG_SYSTEMTIME değeri olan "En son değiştiren-zamanı" gibi bir tarih/saat dizesinin bu üst bilgiler için bu bayrağı döndürür üst bilgi değeri olarak standart bir Win32 [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) uygulamaya gerektirmeyen yapısı ayrıştırılması denenecek veriler. Bu bayrağı kullanmanız durumunda kullanmak isteyebilirsiniz `SYSTEMTIME` işlevi geçersiz kılar.  
   
 - HTTP_QUERY_FLAG_NUMBER durum kodu gibi bir sayı olan değerdir, bu üst bilgiler için bu bayrağı veri 32 bit bir sayı döndürür.  
   
@@ -301,10 +301,10 @@ BOOL QueryInfo(
  Bir dizin değeri. Bkz: *lpdwIndex*.  
   
  *pSysTime*  
- Bir Win32 işaretçisi [SYSTEMTIME](http://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.  
+ Bir Win32 işaretçisi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
@@ -379,7 +379,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
  Bir durum kodu bir başvuru. Durum kodları, başarı veya başarısızlık istenen olay gösterir. Bkz: **açıklamalar** durum kodu tanımları seçimi için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](http://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
+ Başarılı olursa sıfır dışı; Aksi durumda 0. Çağrı başarısız olursa, Win32 işlevini [GetLastError](https://msdn.microsoft.com/library/windows/desktop/ms679360) hatanın nedenini belirlemek için çağrılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yalnızca başarılı çağrısı yapıldıktan sonra bu üye işlevi kullanın [SendRequest](#sendrequest) veya bir `CHttpFile` başarıyla tarafından oluşturulan nesne [OpenURL](../../mfc/reference/cinternetsession-class.md#openurl).  
@@ -462,13 +462,13 @@ BOOL SendRequestEx(
  İstekte gönderilecek bayt sayısı.  
   
  *CertOpenStore*  
- İşlemi tanımlayan bayraklar. Uygun bayrakları bir listesi için bkz. [HttpSendRequestEx](http://msdn.microsoft.com/library/windows/desktop/aa384318) Windows SDK.  
+ İşlemi tanımlayan bayraklar. Uygun bayrakları bir listesi için bkz. [HttpSendRequestEx](/windows/desktop/api/wininet/nf-wininet-httpsendrequestexa) Windows SDK.  
   
  *dwContext*  
  İçerik tanımlayıcısı `CHttpFile` işlemi. Açıklamalar Bu parametre hakkında daha fazla bilgi için bkz.  
   
  *lpBuffIn*  
- Başlatılan bir işaretçiye [INTERNET_BUFFERS](http://msdn.microsoft.com/library/windows/desktop/aa385132) işlemi için kullanılan giriş arabelleği açıklar.  
+ Başlatılan bir işaretçiye [INTERNET_BUFFERS](/windows/desktop/api/wininet/ns-wininet-_internet_buffersa) işlemi için kullanılan giriş arabelleği açıklar.  
   
  *lpBuffOut*  
  İşlem için kullanılan çıkış arabelleği açıklayan bir başlatılmış INTERNET_BUFFERS işaretçisi.  

@@ -25,50 +25,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80f59477695b83b33dd3cfa2b37837c5b52c8002
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 723bf8d6f49157a2cdc02376e1a628ba697eceb2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376338"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217997"
 ---
 # <a name="fp-name-pch-file"></a>/Fp (.Pch Dosyası Adlandır)
 Bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
-> **/FP**_yol adı_  
+> **/ FP**<em>yol adı</em>  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu seçenek ile kullanmak [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) veya [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlamak için. De kullanabilirsiniz **/Fp** ile **/Yc** farklı bir önceden derlenmiş üst bilgi dosyası kullanıldığını belirtmek için **/Yc *** filename* bağımsız değişkeni ve kaynak dosyasının temel adı.  
+ Bu seçeneği kullanın [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) veya [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md) bir yol adı için varsayılan yolu adını kullanmak yerine önceden derlenmiş üst bilgi sağlamak için. Ayrıca **/FP** ile **/Yc** farklıdır bir ön derlenmiş üstbilgi dosyası kullanımını belirlemek için **/Yc**<em>filename</em> bağımsız değişken ve Kaynak dosyanın temel adından.  
   
- Yol adının bir parçası olarak bir uzantı belirtmezseniz .pch uzantısı varsayılır. Bir dosya adı olmadan bir dizin belirtin, varsayılan dosya adı VC ise*x*0.pch, burada *x* Visual C++ ana sürümü kullanılıyor.  
+ Yol adının bir parçası olarak bir uzantı belirtmezseniz .pch uzantısı varsayılır. Dizin olmadan bir dosya adı belirtirseniz, VC varsayılan dosya adı olan*x*0.pch, burada *x* önemli Visual C++ sürümü kullanılıyor.  
   
- Aynı zamanda **/Fp** seçeneğini **/Yu**.  
+ Ayrıca **/FP** seçeneğini **/Yu**.  
   
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
   
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  Tıklatın **C/C++** klasör.  
+2.  Tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **önceden derlenmiş üstbilgiler** özellik sayfası.  
+3.  Tıklayın **önceden derlenmiş üst bilgiler** özellik sayfası.  
   
-4.  Değiştirme **önceden derlenmiş üstbilgi dosyası** özelliği.  
+4.  Değiştirme **önceden derlenmiş üst bilgi dosyası** özelliği.  
   
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
   
 -   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderFile%2A>.  
   
 ## <a name="example"></a>Örnek  
- Programınızın hata ayıklama sürümü için önceden derlenmiş üst bilgi dosyası oluşturun ve başlık dosyaları ve kaynak kodu derleme istiyorsanız, bir komut gibi belirtebilirsiniz:  
+ Programınızın hata ayıklama sürümü için bir ön derlenmiş üstbilgi dosyası oluşturmak istediğiniz ve üst bilgi dosyaları hem de kaynak kodu derleme yapıyorsanız, bir komut gibi belirtebilirsiniz:  
   
 ```  
 CL /DDEBUG /Zi /Yc /FpDPROG.PCH PROG.CPP  
 ```  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki komutu MYPCH.pch adlı bir önceden derlenmiş üst bilgi dosyası kullanımını belirtir. Derleyici PROG.cpp kaynak kodunda önceden MYAPP.h derlenmiş olduğunu ve önceden derlenmiş kod MYPCH.pch içinde bulunduğu varsayılmaktadır. MYPCH.pch içeriğini kullanır ve bir .obj dosyası oluşturmak için PROG.cpp kalan derler. Bu örnek çıktı PROG.exe adlı bir dosyadır.  
+ Aşağıdaki komut MYPCH.pch adlı bir ön derlenmiş üstbilgi dosyasının kullanımını belirtir. Derleyici, PROG.cpp kaynak kodunda MYAPP.h ile derlenmiş ve önceden derlenmiş kod MYPCH.pch içinde bulunduğu varsayılır. MYPCH.pch içeriğini kullanır ve kalan PROG.cpp bir .obj dosyası oluşturmak için derler. Bu örnek çıktısı PROG.exe adlı bir dosyadır.  
   
 ```  
 CL /YuMYAPP.H /FpMYPCH.PCH PROG.CPP  

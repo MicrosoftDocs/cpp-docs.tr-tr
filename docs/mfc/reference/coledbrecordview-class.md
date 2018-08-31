@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 623ba901d1998a899a443d235d65c6b205cfea4f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 424ee48e683bc22870900805aacd32f31fb12949
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853699"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218234"
 ---
 # <a name="coledbrecordview-class"></a>COleDBRecordView sınıfı
 Denetimlerde veritabanı kayıtlarını görüntüleyen bir görünüm.  
@@ -56,7 +56,7 @@ class COleDBRecordView : public CFormView
 ## <a name="remarks"></a>Açıklamalar  
  Doğrudan bağlı bir form görünümü görünümdür bir `CRowset` nesne. Görünüm iletişim şablon kaynağı oluşturulur ve alanlarını görüntüler `CRowset` iletişim şablonun denetimlerinde nesne. `COleDBRecordView` Nesne iletişim kutusu veri değişimi (DDX) kullanır ve gezinti işlevselliğini yerleşik `CRowset`, form üzerinde denetimleri ve alanları kümesi arasında veri taşıma işlemlerini otomatik hale getirmek için. `COleDBRecordView` Ayrıca taşımak için varsayılan bir uygulama sağlar, ilk İleri, önceki ya da son kaydını ve kayıtta şu anda Görünümü güncelleştirmek için bir arabirim.  
   
- DDX işlevleri ile kullanabileceğiniz `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve bir iletişim kutusu denetiminde görüntüleme. Kullanmanız gereken **DDX_\***  yöntemleri (gibi `DDX_Text`) değil **DDX_Field\***  işlevleri (gibi `DDX_FieldText`) ile `COleDbRecordView`. `DDX_FieldText` ile çalışmaz `COleDbRecordView` çünkü `DDX_FieldText` ek bağımsız değişken türü **CRecordset\***  (için `CRecordView`) veya **CDaoRecordset\***  (için `CDaoRecordView`).  
+ DDX işlevleri ile kullanabileceğiniz `COleDbRecordView` doğrudan veritabanı kayıt kümesinden veri almak ve bir iletişim kutusu denetiminde görüntüleme. Kullanmanız gereken `DDX_*` yöntemleri (gibi `DDX_Text`) değil `DDX_Field*` işlevleri (gibi `DDX_FieldText`) ile `COleDbRecordView`. `DDX_FieldText` ile çalışmaz `COleDbRecordView` çünkü `DDX_FieldText` ek bağımsız değişken türü `CRecordset*` (için `CRecordView`) veya `CDaoRecordset*` (için `CDaoRecordView`).  
   
 > [!NOTE]
 >  OLE DB tüketici şablonu sınıfları yerine veri erişim nesneleri (DAO) sınıfları ile çalışıyorsanız, sınıf kullanmak [CDaoRecordView](../../mfc/reference/cdaorecordview-class.md) yerine. Daha fazla bilgi için bkz [genel bakış: veritabanı programlama](../../data/data-access-programming-mfc-atl.md).  

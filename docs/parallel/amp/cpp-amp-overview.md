@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7cbfd0e8b9ef95aac083b367980571c5535e6a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ca91e614438695a14c6c16c05c5d778b143657eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599048"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219389"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 C++ Accelerated Massive Parallelism (C++ AMP) ayrı ekran kartı üzerindeki grafik işlemci birimi (GPU) gibi veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP kullanarak çok boyutlu veri algoritmaları kodlayabilirsiniz, böylece türdeş olmayan donanımda paralellik kullanarak yürütme hızlandırılabilir. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını performansı artırabilirsiniz, böylece nasıl verilerin CPU'dan GPU'ya ve geri taşındığını kontrol etmek için kullanabilirsiniz.  
@@ -464,7 +464,7 @@ C++ AMP hızlandırılmış grafik programlama için tasarlanmış bir grafik ki
   
 - [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): herhangi bir dokuya salt yazılır erişim sağlar.  
   
-- [Kısa vektör Kitaplığı](http://msdn.microsoft.com/en-us/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
+- [Kısa vektör Kitaplığı](https://msdn.microsoft.com/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
   
 ## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları  
  

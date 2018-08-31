@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a9403ed1a4ba82a1e60c42ed0e57e975e73d1dd
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: d4e2b1fe58ab7ea408438b703b9fe803996fa791
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883794"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219044"
 ---
 # <a name="iobjectwithsiteimpl-class"></a>Iobjectwithsiteımpl sınıfı
 Bu sınıf, siteyle iletişim için bir nesne sağlayan yöntemlerini sağlar.  
@@ -60,7 +60,7 @@ template <class T>
 |[IObjectWithSiteImpl::m_spUnkSite](#m_spunksite)|Sitenin yönetir `IUnknown` işaretçi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- [IObjectWithSite](http://msdn.microsoft.com/library/windows/desktop/ms693765) nesnenin kendi sitesiyle iletişim kurmak arabirim sağlar. Sınıf `IObjectWithSiteImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
+ [IObjectWithSite](/windows/desktop/api/ocidl/nn-ocidl-iobjectwithsite) nesnenin kendi sitesiyle iletişim kurmak arabirim sağlar. Sınıf `IObjectWithSiteImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
   
  `IObjectWithSiteImpl` iki yöntem belirtir. İstemci ilk çağrı `SetSite`, sitenin geçirme `IUnknown` işaretçi. Bu işaretçinin nesnesinde depolanır ve daha sonra yapılan bir çağrıyla alınabilir `GetSite`.  
   
@@ -86,7 +86,7 @@ STDMETHOD(GetSite)(
 ### <a name="remarks"></a>Açıklamalar  
  Bu arabirim sitenin desteklediği, işaretçi aracılığıyla döndürülür `ppvSite`. Aksi takdirde, `ppvSite` NULL olarak ayarlandı.  
   
- Bkz: [IObjectWithSite::GetSite](http://msdn.microsoft.com/library/windows/desktop/ms694452) Windows SDK içinde.  
+ Bkz: [IObjectWithSite::GetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-getsite) Windows SDK içinde.  
   
 ##  <a name="m_spunksite"></a>  IObjectWithSiteImpl::m_spUnkSite  
  Sitenin yönetir `IUnknown` işaretçi.  
@@ -120,7 +120,7 @@ STDMETHOD(SetSite)(IUnknown* pUnkSite);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IObjectWithSite::SetSite](http://msdn.microsoft.com/library/windows/desktop/ms683869) Windows SDK içinde.  
+ Bkz: [IObjectWithSite::SetSite](/windows/desktop/api/ocidl/nf-ocidl-iobjectwithsite-setsite) Windows SDK içinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c14beb076a83952529155fa0a4b1da780efae3c7
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: d179e53967817bb622074987e3309e159547e819
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34451868"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218111"
 ---
 # <a name="mbstowcs-mbstowcsl"></a>mbstowcs, _mbstowcs_l
 
-Birden çok baytlı karakter dizisi geniş karakterler karşılık gelen bir dizi dönüştürür. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md).
+Çok baytlı bir karakter dizisi bir karşılık gelen geniş karakter dizisine dönüştürür. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [mbstowcs_s, _mbstowcs_s_l](mbstowcs-s-mbstowcs-s-l.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -80,32 +80,32 @@ size_t _mbstowcs_l(
 Geniş bir karakter dizisi adresi.
 
 *mbstr*<br/>
-Boş bir dizi adresini birden çok baytlı karakterler sonlandırıldı.
+Çok baytlı karakter dizisi null adresini sonlandırıldı.
 
 *Sayısı*<br/>
-Dönüştürmek için birden çok baytlı karakterler maksimum sayısı.
+Dönüştürülecek çok baytlı karakter sayısı.
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Varsa **mbstowcs** başarıyla kaynak dizesi dönüştürür dönüştürülen birden çok baytlı karakterlerin sayısını döndürür. Varsa *wcstr* bağımsız değişkeni **NULL**, işlevi gerekli boyutunu (geniş karakter) hedef dize döndürür. Varsa **mbstowcs** geçersiz bir birden çok baytlı karakter karşılaştığında -1 döndürür. Dönüş değeri ise *sayısı*, joker karakter dizesi null ile sonlandırılmış değil.
+Varsa **mbstowcs** başarılı bir şekilde kaynak dizesini dönüştürür dönüştürülmüş çok baytlı karakter sayısını döndürür. Varsa *wcstr* bağımsız değişkeni **NULL**, işlev gerekli boyutunu (geniş karakterler) hedef dize döndürür. Varsa **mbstowcs** geçersiz bir çok baytlı karakter karşılaştığında -1 döndürür. Dönüş değeri ise *sayısı*, geniş karakterli dize null ile sonlandırılmış değil.
 
 > [!IMPORTANT]
-> Emin *wcstr* ve *mbstr* çakışmaması ve *sayısı* doğru şekilde dönüştürmek için birden çok baytlı karakter sayısını yansıtır.
+> Emin *wcstr* ve *mbstr* örtüşmeyen ve *sayısı* doğru şekilde dönüştürmek için çok baytlı karakter sayısını yansıtır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbstowcs** işlevi dönüştürür kadar en fazla sayıda *sayısı* tarafından için birden çok baytlı karakterler işaret *mbstr* olan karşılık gelen geniş karakter dizesi için Geçerli bölgeye göre belirlenir. Sonuçta elde edilen geniş karakter dizesi tarafından temsil edilen adresindeki depolar *wcstr*. Sonuç çağrıları için bir dizi benzer [mbtowc](mbtowc-mbtowc-l.md). Varsa **mbstowcs** tek baytlı null karakteri ('\0') önce veya ne zaman karşılaşırsa *sayısı* oluşur, durdurur ve bir joker karakter null karakter (M '\0') null karakter dönüştürür. Böylece geniş karakter dizesini *wcstr* null-yalnızca bir null karakter dönüştürme sırasında karşılaşılırsa sonlandırılır. Dizileri gösterdiği varsa *wcstr* ve *mbstr* üst üste davranışı tanımlanmadı.
+**Mbstowcs** işlevi dönüştürür bir sayısı kadar *sayısı* çok baytlı karakter tarafından işaret edilen *mbstr* olan karşılık gelen geniş karakter dizesi için Geçerli yerel ayarı tarafından belirlenir. Sonuçta elde edilen geniş karakter dizesi tarafından temsil edilen adresinde saklar *wcstr*. Sonucu bir dizi çağrıda benzer [mbtowc](mbtowc-mbtowc-l.md). Varsa **mbstowcs** tek baytlık null karakteri ('\0') önce veya ne zaman karşılaştığında *sayısı* çevirir durdurur ve null karakterini bir geniş karakterli null karakteri (L '\0') oluşur. Bu nedenle en geniş karakter dizesi *wcstr* boş bir null karakter dönüştürme sırasında karşılaşılırsa sonlandırılmıştır. Dizileri işaret ettiği varsa *wcstr* ve *mbstr* çakışma, davranış tanımlanmamıştır.
 
-Varsa *wcstr* bağımsız değişkeni **NULL**, **mbstowcs** null Sonlandırıcı hariç dönüştürme işlemini oluşturacağı geniş karakter sayısını verir. Kaynak dizesi null ile sonlandırılmış döndürülecek için geçerli bir değer olmalıdır. Null ile sonlandırılmış olması için sonuçta elde edilen geniş karakter dizesi gerekiyorsa, döndürülen değer birine ekleyin.
+Varsa *wcstr* bağımsız değişkeni **NULL**, **mbstowcs** null Sonlandırıcı içermeden dönüştürme, neden olan geniş karakter sayısını döndürür. Döndürülecek için doğru değeri null ile sonlandırılmış kaynak dizesi olmalıdır. Null ile sonlandırılmış olarak elde edilen geniş karakter dizesi gerekiyorsa, döndürülen değer birine ekleyin.
 
-Varsa *mbstr* bağımsız değişkeni **NULL**, veya *sayısı* olan > **INT_MAX**, anlatıldığıgibigeçersizparametreişleyicisiçağrılır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, errno kümesine **EINVAL** ve işlev -1 döndürür.
+Varsa *mbstr* bağımsız değişkeni **NULL**, veya *sayısı* olan > **INT_MAX**, içindeaçıklananşekildegeçersizparametreişleyicisiçağrılır[ Parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmesine izin verilirse errno kümesine **EINVAL** ve işlev -1 döndürür.
 
-**mbstowcs** geçerli yerel ayar için tüm yerel ayara bağımlı davranışı; kullanır **_mbstowcs_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**mbstowcs** herhangi bir yerel ayara bağımlı davranış için; geçerli yerel ayarı kullanır **_mbstowcs_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -114,7 +114,7 @@ C++'da, bu işlevlerin daha yeni, güvenli ortaklarınıza çağırma şablon a�
 |**mbstowcs**|\<stdlib.h >|
 |**_mbstowcs_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -220,4 +220,4 @@ Convert back to wide-character string:
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>
 [wcstombs, _wcstombs_l](wcstombs-wcstombs-l.md)<br/>
 [wctomb, _wctomb_l](wctomb-wctomb-l.md)<br/>
-[MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
+[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>

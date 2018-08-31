@@ -25,12 +25,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6606fd65f0f551ca9105c8f9810a75902802334d
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: d6475e2ea3ec7fe69325fd82671952dbe2c39620
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465930"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217298"
 ---
 # <a name="dlls-and-visual-c-run-time-library-behavior"></a>DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı  
   
@@ -67,7 +67,7 @@ extern "C" BOOL WINAPI DllMain (
 Bazı kitaplıklar kaydırma `DllMain` işlevi sizin için. Örneğin, normal bir MFC DLL uygulamak `CWinApp` nesnenin `InitInstance` ve `ExitInstance` başlatma ve sonlandırma, DLL tarafından gerekli gerçekleştirmek için üye işlevleri. Daha fazla ayrıntı için [Normal MFC DLL'leri Başlat](#initializing-regular-dlls) bölümü.  
   
 > [!WARNING]
-> Güvenli bir şekilde bir DLL giriş noktası yapabilecekleriniz hakkında önemli sınırlamaları vardır. Bkz: [genel en iyi yöntemler](https://msdn.microsoft.com/library/windows/desktop/dn633971#general_best_practices) çağırmak güvenli olmayan belirli Windows API'leri için `DllMain`. Ardından basit başlatma dışında hiçbir şeyde bir başlangıç işlevinde DLL için bunu varsa. Uygulamaları başlatma işlevinden sonra çağrılacak gerektirebilir `DllMain` sahip çalıştırma ve bunlar önce tüm diğer işlevleri çağırma DLL'de.  
+> Güvenli bir şekilde bir DLL giriş noktası yapabilecekleriniz hakkında önemli sınırlamaları vardır. Bkz: [genel en iyi yöntemler](/windows/desktop/Dlls/dynamic-link-library-best-practices) çağırmak güvenli olmayan belirli Windows API'leri için `DllMain`. Ardından basit başlatma dışında hiçbir şeyde bir başlangıç işlevinde DLL için bunu varsa. Uygulamaları başlatma işlevinden sonra çağrılacak gerektirebilir `DllMain` sahip çalıştırma ve bunlar önce tüm diğer işlevleri çağırma DLL'de.  
   
 <a name="initializing-non-mfc-dlls"></a>  
   
@@ -116,7 +116,7 @@ extern "C" BOOL WINAPI DllMain (
   
 Normal MFC DLL'leri olduğundan bir `CWinApp` nesnesinde gerçekleştirdikleri başlatma ve sonlandırma görevlerinin bir MFC uygulaması ile aynı konumda: içinde `InitInstance` ve `ExitInstance` üye işlevleri DLL'nin `CWinApp`-türetilmiş sınıf. MFC sağladığından bir `DllMain` tarafından çağrılan işlevi `_DllMainCRTStartup` için `DLL_PROCESS_ATTACH` ve `DLL_PROCESS_DETACH`, kendi yazdığınız değil `DllMain` işlevi. MFC tarafından sağlanan `DllMain` işlev çağrılarında `InitInstance` ne zaman DLL'niz yüklenir ve çağrı yaptığı `ExitInstance` DLL kaldırılmadan önce.  
   
-Normal MFC DLL'SİNİN birden çok iş parçacığı çağırarak takip edebilirsiniz [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) ve [TlsGetValue](http://msdn.microsoft.com/library/windows/desktop/ms686812) içinde kendi `InitInstance` işlevi. Bu işlevler, iş parçacığına özgü verileri izlemek DLL'ye izin verme.  
+Normal MFC DLL'SİNİN birden çok iş parçacığı çağırarak takip edebilirsiniz [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ve [TlsGetValue](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsgetvalue) içinde kendi `InitInstance` işlevi. Bu işlevler, iş parçacığına özgü verileri izlemek DLL'ye izin verme.  
   
 İçinde bir MFC OLE, MFC veritabanı (veya DAO) kullandığınız ya da MFC yuva desteği, sırasıyla, hata ayıklama MFC uzantısı DLL'leri MFCO MFC'ye, Normal MFC DLL'SİNİN*sürüm*D.dll, MFCD*sürüm*D.dll ve MFCN*sürüm*D.dll (burada *sürüm* sürüm numarasıdır) otomatik olarak bağlanır. Her biri, Normal MFC DLL içinde kullanıyorsanız bu DLL'ler için aşağıdaki önceden tanımlanmış başlatma işlevlerden birini çağırmalıdır `CWinApp::InitInstance`.  
   
@@ -179,14 +179,14 @@ MFC uzantı DLL'leri bağlantı açıkça çağırmalıdır uygulamaları `AfxTe
   
 MFCx0.dll zaman tam olarak başlatılmış olduğundan `DllMain` olan çağrılır, bellek ve içinde MFC işlevleri çağırma `DllMain` (aksine, MFC 16-bit sürümü).  
   
-Uzantı DLL'leri halletmeniz işleme çoklu iş parçacığı `DLL_THREAD_ATTACH` ve `DLL_THREAD_DETACH` içinde durumlarda `DllMain` işlevi. Bu gibi durumlarda geçirilen `DllMain` zaman iş parçacığı ekleme ve DLL'den. Çağırma [TlsAlloc](http://msdn.microsoft.com/library/windows/desktop/ms686801) ne zaman bir DLL iliştiriyor iş parçacığı yerel depolama (TLS) dizinler için DLL bağlı her iş parçacığı için korumak DLL sağlar.  
+Uzantı DLL'leri halletmeniz işleme çoklu iş parçacığı `DLL_THREAD_ATTACH` ve `DLL_THREAD_DETACH` içinde durumlarda `DllMain` işlevi. Bu gibi durumlarda geçirilen `DllMain` zaman iş parçacığı ekleme ve DLL'den. Çağırma [TlsAlloc](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-tlsalloc) ne zaman bir DLL iliştiriyor iş parçacığı yerel depolama (TLS) dizinler için DLL bağlı her iş parçacığı için korumak DLL sağlar.  
   
 Üst bilgi dosyası yapı tanımları tanımı gibi MFC uzantısı DLL'leri içinde kullanılan yapılar için özel tanımları içerir Not `AFX_EXTENSION_MODULE` ve `CDynLinkLibrary`. MFC uzantısı DLL Bu başlık dosyasının içermelidir.  
   
 > [!NOTE]
 >  Size tanımlama ne herhangi birini Kaldır, önemlidir `_AFX_NO_XXX` Stdafx.h makrolarındaki. Bu makrolar, yalnızca belirli hedef platform veya bu özelliği destekleyen olup olmadığını denetleme amacıyla mevcut. Bu makrolar denetlemek için programınızı yazabilirsiniz (örneğin, `#ifndef _AFX_NO_OLE_SUPPORT`), ancak programınızın hiçbir zaman tanımlayın veya bu makroların tanımlarını Kaldır.  
   
-Çoklu iş parçacığı kullanımı tanıtıcıları dahil bir örnek başlatma işlevi [kullanarak iş parçacığı yerel depolama dinamik bağlantı kitaplığı](http://msdn.microsoft.com/library/windows/desktop/ms686997) Windows SDK. Örnek adlı bir giriş noktası işlevi içeren Not `LibMain`, ancak bu işlev adlandırmalısınız. `DllMain` böylece MFC ve C çalışma zamanı kitaplıkları ile çalışır.  
+Çoklu iş parçacığı kullanımı tanıtıcıları dahil bir örnek başlatma işlevi [kullanarak iş parçacığı yerel depolama dinamik bağlantı kitaplığı](/windows/desktop/Dlls/using-thread-local-storage-in-a-dynamic-link-library) Windows SDK. Örnek adlı bir giriş noktası işlevi içeren Not `LibMain`, ancak bu işlev adlandırmalısınız. `DllMain` böylece MFC ve C çalışma zamanı kitaplıkları ile çalışır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
   

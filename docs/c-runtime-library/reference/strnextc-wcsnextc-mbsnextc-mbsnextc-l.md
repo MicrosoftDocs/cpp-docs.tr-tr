@@ -54,19 +54,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f759ce9a4617ab0ca8e97ef308508d836b53b742
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4ede89a5290bca14c39aa16c68071edefd0ebd08
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32414252"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222435"
 ---
 # <a name="strnextc-wcsnextc-mbsnextc-mbsnextcl"></a>_strnextc, _wcsnextc, _mbsnextc, _mbsnextc_l
 
-Bir dizede sonraki karakteri bulur.
+Bir dize sonraki karakteri bulur.
 
 > [!IMPORTANT]
-> **_mbsnextc** ve **_mbsnextc_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnextc** ve **_mbsnextc_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -97,15 +97,15 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her biri sonraki karakteri tamsayı değerini döndürür *str*.
+Bu işlevlerin her biri öğesindeki sonraki karakterin tamsayı değerini döndürür *str*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnextc** işlevi sonraki birden çok baytlı karakter tamsayı değerini döndürür *str*, dize imleci ilerletmeden olmadan. **_mbsnextc** göre çok baytlı karakter sıralarının tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda.
+**_Mbsnextc** işlevi içinde sonraki çok baytlı karakterin tamsayı değerini döndürür *str*, dize işaretçisini ilerletmeden olmadan. **_mbsnextc** çok baytlı karakter sıralarına göre tanır [çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda.
 
-Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi 0 değerini döndürür.
+Varsa *str* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır **EINVAL** ve işlev 0 döndürür.
 
-**Güvenlik Notu** bu API taşması sorundan duruma olası bir tehdit doğurur. Arabellek Taşması, sık yöntemi bir unwarranted ayrıcalıkların sonuçlanan sistem saldırı sorunlardır. Daha fazla bilgi için bkz: [önleme arabellek taşmasına neden](http://msdn.microsoft.com/library/windows/desktop/ms717795).
+**Güvenlik Notu** bu API, bir arabellek taşması sorunu duruma olası bir tehdit artmasına neden olur. Arabellek taşması sorunları, sistem saldırı, bir unwarranted ayrıcalık yükseltilmesi ile sonuçlanan sık kullanılan bir yöntemdir. Daha fazla bilgi için [arabellek taşmalarını](/windows/desktop/SecBP/avoiding-buffer-overruns).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -113,9 +113,9 @@ Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi
 |---------------------|--------------------------------------|--------------------|-----------------------|
 |**_tcsnextc**|**_strnextc**|**_mbsnextc**|**_wcsnextc**|
 
-**_strnextc** ve **_wcsnextc** tek bayt karakter dizesi ve geniş karakter dizesi sürümleri **_mbsnextc**. **_wcsnextc** sonraki geniş karakter olarak tamsayı değerini döndürür *str*; **_strnextc** sonraki tek baytlı karakter tamsayı değerini döndürür *str*. **_strnextc** ve **_wcsnextc** yalnızca bu eşleme için sağlanır ve aksi durumda kullanılmamalıdır. Daha fazla bilgi için bkz: [kullanarak genel metin eşlemeleri](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
+**_strnextc** ve **_wcsnextc** tek baytlık karakterlerdir dize ve geniş karakter dizesi sürümleri **_mbsnextc**. **_wcsnextc** bulunan sonraki geniş karakterin tamsayı değerini döndürür *str*; **_strnextc** sonraki tek baytlık karakterin tamsayı değerini döndürür *str*. **_strnextc** ve **_wcsnextc** yalnızca bu eşleşmeye ilişkin sağlanırlar ve aksi takdirde kullanılmamalıdır. Daha fazla bilgi için [genel metin eşlemelerini kullanma](../../c-runtime-library/using-generic-text-mappings.md) ve [genel metin eşlemeleri](../../c-runtime-library/generic-text-mappings.md).
 
-**_mbsnextc_l** yerine geçirilen yerel ayar parametresi kullanan dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_mbsnextc_l** bunun yerine iletilmiş yerel ayar parametresini kullanması hariç, aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -126,7 +126,7 @@ Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi
 |**_strnextc**|\<Tchar.h >|
 |**_wcsnextc**|\<Tchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

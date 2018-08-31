@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da7cdd5601785f43748ec87d3219f43728536855
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2211b4243ddf44194959a263fd90ec1a615ea0a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228993"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220287"
 ---
 # <a name="fatal-error-c1900"></a>Önemli hata C1900
-'Tool1' Sürüm 'Sayı1' ve 'tool2' Sürüm 'sayı2' arasında IL uyuşmazlığı  
-  
- Derleyici çeşitli geçişlerinde çalıştırmak araçları eşleşmiyor. ***Sayı1*** ve ***sayı2*** tarihleri dosyalarda bakın. Örneğin, geçişi 1, derleyici ön uç çalıştırır (c1.dll) ve geçişi 2'de, son çalışır (c2.dll) derleyici yedekleyin. Dosyaları tarihler eşleşmesi gerekir.  
-  
- Bu sorunu gidermek için tüm güncelleştirmeler için Visual Studio uyguladığınız emin olun. Sorun devam ederse kullanmak **programlar ve Özellikler** onarmak veya Visual Studio yeniden yüklemek için Windows Denetim Masası'nda.
+
+> Arasında IL uyuşmazlığı '*tool1*'version'*Sayı1*'ve'*tool2*'version'*sayı2*'
+
+Araçlar çeşitli derleyici geçişlerinde çalıştırma eşleşmiyor. *Sayı1* ve *sayı2* dosyalarda tarihleri bakın. Örneğin, 1. geçiş, derleyici ön uç çalıştırmalar (c1.dll) ve 2. geçiş, son çalıştırmalar (c2.dll) derleyici yedekleyin. Dosyaları tarihlerinde eşleşmesi gerekir.
+
+Bu sorunu gidermek için Visual Studio için tüm güncelleştirmelerin uygulandığından emin emin olun. Sorun devam ederse **programlar ve Özellikler** Visual Studio'yu yeniden yükleyin veya onarmak için Windows Denetim Masası'nda.

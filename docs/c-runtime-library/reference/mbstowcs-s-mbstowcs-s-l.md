@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5f366e01fbaa8da5c0dbc96ff4da324611e132f1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a3457195b07335345476153038d7ab38606607a2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32403927"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217365"
 ---
 # <a name="mbstowcss-mbstowcssl"></a>mbstowcs_s, _mbstowcs_s_l
 
-Birden çok baytlı karakter dizisi geniş karakterler karşılık gelen bir dizi dönüştürür. Sürümleri [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Çok baytlı bir karakter dizisi bir karşılık gelen geniş karakter dizisine dönüştürür. Sürümleri [mbstowcs, _mbstowcs_l](mbstowcs-mbstowcs-l.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -84,62 +84,62 @@ errno_t _mbstowcs_s_l(
 ### <a name="parameters"></a>Parametreler
 
 *pReturnValue*<br/>
-Dönüştürülen karakter sayısı.
+Dönüştürülecek karakter sayısı.
 
 *wcstr*<br/>
-Ortaya çıkan dönüştürülmüş geniş karakter dizesi için arabellek adresi.
+Arabellek için ortaya çıkan dönüştürülmüş geniş karakter dizesi adresi.
 
 *sizeInWords*<br/>
-Boyutunu *wcstr* sözcükler arabellek.
+Boyutu *wcstr* sözcükleri arabellek.
 
 *mbstr*<br/>
-Boş bir dizi adresini birden çok baytlı karakterler sonlandırıldı.
+Çok baytlı karakter dizisi null adresini sonlandırıldı.
 
 *Sayısı*<br/>
-En fazla depolamak üzere geniş karakter sayısını *wcstr* arabellek, sonlandırma null dahil değil veya [_TRUNCATE](../../c-runtime-library/truncate.md).
+Depolamak için geniş karakterlerin sayısı *wcstr* arabellek, sonlandırıcı null içermeden veya [_TRUNCATE](../../c-runtime-library/truncate.md).
 
 *Yerel ayar*<br/>
 Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır başarılı olursa, hatasında bir hata kodu.
+Başarılıysa sıfır, bir hata kodu.
 
-|Hata durumu|Dönüş değeri ve **errno**|
+|Hata koşulu|Dönüş değeri ve **errno**|
 |---------------------|------------------------------|
-|*wcstr* olan **NULL** ve *sizeInWords* > 0|**EINVAL**|
-|*mbstr* olan **NULL**|**EINVAL**|
-|Hedef arabellek dönüştürülmüş dizeyi içeren için çok küçük. (sürece *sayısı* olan **_TRUNCATE**; açıklamalar aşağıya bakın)|**ERANGE**|
+|*wcstr* olduğu **NULL** ve *sizeInWords* > 0|**EINVAL**|
+|*mbstr* olduğu **NULL**|**EINVAL**|
+|Hedef arabelleğinin içeren dönüştürülmüş dize çok küçük (sürece *sayısı* olduğu **_TRUNCATE**; aşağıdaki açıklamalara bakın)|**ERANGE**|
 |*wcstr* değil **NULL** ve *sizeInWords* == 0|**EINVAL**|
 
-Bu koşulların herhangi biri meydana gelirse, geçersiz bir parametre özel durum açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md) . Devam etmek için yürütülmesine izin veriliyorsa, bir hata kodu işlevi döndürür ve ayarlar **errno** tabloda belirtildiği şekilde.
+Bu koşullardan herhangi biri meydana gelirse, açıklanan şekilde geçersiz parametre özel durumu çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md) . Yürütme devam etmesine izin verilirse işlev bir hata kodu döndürür ve ayarlar **errno** tabloda belirtildiği şekilde.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Mbstowcs_s** işlevi dönüştürür gösterdiği birden çok baytlı karakter dizesi *mbstr* gösterdiği arabellek depolanan geniş karakterler içine *wcstr*. Bu koşullardan biri yerine getirilene kadar dönüştürme için her karakter devam eder:
+**Mbstowcs_s** işlevi dönüştürür bir işaret ettiği çok baytlı karakter dizesi *mbstr* tarafından işaret edilen arabellek içinde depolanan geniş karakterlerin içine *wcstr*. Dönüştürme, her karakter için şu koşullardan biri karşılandığında kadar devam eder:
 
-- Birden çok baytlı null karakteri ile karşılaşıldı
+- Çok baytlı bir null karakteri ile karşılaşıldı
 
-- Geçersiz bir birden çok baytlı karakter karşılaştı
+- Geçersiz bir çok baytlı karakter karşılaşıldı
 
-- Depolanan geniş karakter sayısını *wcstr* arabellek eşittir *sayısı*.
+- İçinde depolanan geniş karakterlerin sayısını *wcstr* arabellek eşittir *sayısı*.
 
-Hedef dize her zaman null (bile bir hata olması durumunda) sonlandırılır.
+Hedef dize her zaman null ile sonlandırılmış (bile bir hata olması durumunda).
 
-Varsa *sayısı* özel değer [_TRUNCATE](../../c-runtime-library/truncate.md), ardından **mbstowcs_s** dize olarak büyük dönüştürür hala null yer bırakarak hedef arabelleğine sığacak Sonlandırıcı.
+Varsa *sayısı* özel değer [_TRUNCATE](../../c-runtime-library/truncate.md), ardından **mbstowcs_s** büyük bir işlem olarak dize dönüştürür yine de bir null yer bırakarak hedef arabellek içine Sığdır Sonlandırıcı.
 
-Varsa **mbstowcs_s** başarıyla kaynak dizesi dönüştürür dönüştürülen dizenin içine null Sonlandırıcı dahil olmak üzere geniş karakter cinsinden boyutu koyar  *&#42;pReturnValue* ( sağlanan*pReturnValue* değil **NULL**). Bu meydana olsa bile *wcstr* bağımsız değişkeni **NULL** ve gerekli arabellek boyutunu belirlemek için bir yol sağlar. Unutmayın *wcstr* olan **NULL**, *sayısı* göz ardı edilir ve *sizeInWords* 0 olmalıdır.
+Varsa **mbstowcs_s** başarılı bir şekilde kaynak dizesini dönüştürür dönüştürülmüş dize halinde null sonlandırıcıyı da dahil olmak üzere, geniş karakter cinsinden boyutu koyar  *&#42;pReturnValue* ( sağlanan*pReturnValue* değil **NULL**). Bu meydana bile *wcstr* bağımsız değişkeni **NULL** ve gerekli arabellek boyutunu belirlemek için bir yol sağlar. Unutmayın *wcstr* olduğu **NULL**, *sayısı* göz ardı edilir ve *sizeInWords* 0 olmalıdır.
 
-Varsa **mbstowcs_s** geçersiz bir birden çok baytlı karakter karşılaştığında 0 koyar  *&#42;pReturnValue*, hedef arabelleği boş bir dize olarak ayarlar, ayarlar **errno** için **EILSEQ**ve döndürür **EILSEQ**.
+Varsa **mbstowcs_s** geçersiz bir çok baytlı karakter karşılaştığında 0 koyar  *&#42;pReturnValue*, için boş bir dize hedef arabelleğinin ayarlar, ayarlar **errno** için **EILSEQ**ve döndürür **EILSEQ**.
 
-Dizileri gösterdiği varsa *mbstr* ve *wcstr* üst üste, davranışını **mbstowcs_s** tanımlanmadı.
+Dizileri işaret ettiği varsa *mbstr* ve *wcstr* üst üste, davranışını **mbstowcs_s** tanımsızdır.
 
 > [!IMPORTANT]
-> Emin *wcstr* ve *mbstr* çakışmaması ve *sayısı* doğru şekilde dönüştürmek için birden çok baytlı karakter sayısını yansıtır.
+> Emin *wcstr* ve *mbstr* örtüşmeyen ve *sayısı* doğru şekilde dönüştürmek için çok baytlı karakter sayısını yansıtır.
 
-**mbstowcs_s** geçerli yerel ayar için tüm yerel ayara bağımlı davranışı; kullanır **_mbstowcs_s_l** yerine geçirilen yerel ayar kullandığı dışında aynıdır. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**mbstowcs_s** herhangi bir yerel ayara bağımlı davranış için; geçerli yerel ayarı kullanır **_mbstowcs_s_l** bunun yerine iletilmiş yerel ayarı kullanması dışında aynıdır. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı arabellek uzunluğu otomatik olarak Infer (boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan) ve bunlar otomatik olarak yeni, güvenli dekiler ile daha eski, güvenli olmayan işlevleri değiştirebilirsiniz. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğunu otomatik olarak çıkarabilir (bir boyut bağımsız değişkeni belirtme gereksinimi ortadan kalkar) ve bunlar otomatik olarak eski ve güvenli olmayan işlevlerle daha yeni ve güvenli karşılıklarını değiştirir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -148,13 +148,13 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 |**mbstowcs_s**|\<stdlib.h >|
 |**_mbstowcs_s_l**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Veri Dönüştürme](../../c-runtime-library/data-conversion.md)<br/>
 [locale](../../c-runtime-library/locale.md)<br/>
-[MultiByteToWideChar](http://msdn.microsoft.com/library/windows/desktop/dd319072)<br/>
+[MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar)<br/>
 [Çok Baytlı Karakter Sıralarının Yorumu](../../c-runtime-library/interpretation-of-multibyte-character-sequences.md)<br/>
 [_mbclen, mblen, _mblen_l](mbclen-mblen-mblen-l.md)<br/>
 [mbtowc, _mbtowc_l](mbtowc-mbtowc-l.md)<br/>

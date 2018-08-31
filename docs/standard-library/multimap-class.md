@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c5bf13a675280b12872c5a5e7bbf19367ff0143
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 29e94acf4b8fad401077a5530d4b6296c30c2740
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027738"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220114"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -119,15 +119,19 @@ class multimap;
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtar* çoklu eşlemde depolanacak anahtar veri türü.
+*Key*<br/>
+ Çoklu eşlemde depolanacak anahtar veri türü.
 
-*Tür* çoklu eşlemde depolanacak öğe veri türü.
+*Türü*<br/>
+ Çoklu eşlemde depolanacak öğe veri türü.
 
-*Nitelikler* iki öğenin değerlerini çoklu eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul `less<Key>` varsayılan değerdir.
+*Nitelikler*<br/>
+ İki öğenin değerlerini çoklu eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul `less<Key>` varsayılan değerdir.
 
 C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)
 
-*Allocator* haritanın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type> >`.
+*Ayırıcı*<br/>
+ Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -404,11 +408,11 @@ typedef implementation-defined const_iterator;
 
 Bir tür `const_iterator` bir öğenin değerini değiştirmek için kullanılamaz.
 
-`const_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const anahtar**, **Türü *** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
+`const_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
-Başvurulacak bir `const_iterator` `cIter` öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
+Başvurulacak bir `const_iterator` *cIter* öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
 
-Öğenin anahtarının değerini erişmek için `cIter`  ->  **ilk**, eşit olduğu (\* `cIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `cIter`  ->  **ikinci**, eşit olduğu (\* `cIter`). **İkinci**.
+Öğenin anahtarının değerini erişmek için `cIter->first`, eşdeğer olan `(*cIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `cIter->second`, eşdeğer olan `(*cIter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -490,11 +494,11 @@ typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
 
 Bir tür `const_reverse_iterator` kullanın ters çoklu eşlemde yinelemek için ve bir öğenin değerini değiştiremezsiniz.
 
-`const_reverse_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const anahtar**, **Türü *** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
+`const_reverse_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
-Başvurulacak bir `const_reverse_iterator` `crIter` öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
+Başvurulacak bir `const_reverse_iterator` *crIter* öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
 
-Öğenin anahtarının değerini erişmek için `crIter`  ->  **ilk**, eşit olduğu (\* `crIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `crIter`  ->  **ikinci**, eşit olduğu (\* `crIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `crIter->first`, eşdeğer olan `(*crIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `crIter->second`, eşdeğer olan `(*crIter).first`.
 
 ### <a name="example"></a>Örnek
 
@@ -510,7 +514,8 @@ size_type count(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* multimap eşleştirilecek öğe anahtarı.
+*Anahtarı*<br/>
+ Multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -910,7 +915,8 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -996,13 +1002,17 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* kaldırılacak öğenin konumu.
+*Burada*<br/>
+ Kaldırılacak öğenin konumu.
 
-*İlk* kaldırılacak ilk öğenin konumu.
+*ilk*<br/>
+ Kaldırılacak ilk öğenin konumu.
 
-*Son* kaldırılacak son öğeden hemen ötesinde konumu.
+*Son*<br/>
+ Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Anahtar* kaldırılacak öğe anahtarı.
+*Key*<br/>
+ Kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1027,7 +1037,8 @@ const_iterator find(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+*Anahtarı*<br/>
+ Aranan multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1350,11 +1361,11 @@ typedef implementation-defined iterator;
 
 ### <a name="remarks"></a>Açıklamalar
 
-`iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const anahtar**, **Türü *** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
+`iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
-Başvurulacak bir **yineleyici** `Iter` öğeye işaret eden bir çoklu eşlemde, kullanın `->` işleci.
+Başvurulacak bir `iterator` *Iter* öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
 
-Öğenin anahtarının değerini erişmek için `Iter`  ->  **ilk**, eşit olduğu (\* `Iter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `Iter`  ->  **ikinci**, eşit olduğu (\* `Iter`). **İkinci**.
+Öğenin anahtarının değerini erişmek için `Iter->first`, eşdeğer olan `(*Iter).first`. Eşlenmiş veri öğesi için değeri erişmek için `Iter->second`, eşdeğer olan `(*Iter).second`.
 
 Bir tür `iterator` bir öğenin değerini değiştirmek için kullanılabilir.
 
@@ -1378,7 +1389,7 @@ key_compare key_comp() const;
 
 Depolanan nesne üyesi işlevini tanımlar.
 
-**bool işleci**( **const anahtar &** *x*, **const anahtar &** *y*);
+`bool operator( const Key& x, const Key& y);`
 
 hangi döndürür true ise *x* kesinlikle önündeki *y* sıralama düzeninde.
 
@@ -1481,7 +1492,8 @@ const_iterator lower_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1663,7 +1675,7 @@ multimap(
 |-|-|
 |*Al*|Ayırıcı için varsayılan olarak bu multimap nesne için kullanılacak depolama ayırıcı sınıf.|
 |*Comp*|Karşılaştırma işlevi türü `constTraits` varsayılan olarak haritada öğeleri sıralamak için kullanılan `Traits`.|
-|*Sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
+|*sağ*|Oluşturulan kümesi kopyası olacak olduğu eşlemesi.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Öğelerin kopyalanacağı initializer_list.|
@@ -2099,11 +2111,11 @@ typedef std::reverse_iterator<iterator> reverse_iterator;
 
 Bir tür `reverse_iterator` kullanın ters çoklu eşlemde yinelemek için.
 
-`reverse_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair` * \< * **const anahtar**, **Türü *** >*. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
+`reverse_iterator` Nesnelerine multimap noktaları tarafından tanımlanan [value_type](#value_type), türü olan `pair<const Key, Type>`. Anahtar değeri ilk üye çift kullanılabilir ve eşlenen öğenin değeri çiftinin ikinci üye kullanılabilir.
 
-Başvurulacak bir `reverse_iterator` `rIter` öğeye işaret eden bir çoklu eşlemde, kullanın -> işleci.
+Başvurulacak bir `reverse_iterator` *rIter* öğeye işaret eden bir çoklu eşlemde, kullanın **->** işleci.
 
-Öğenin anahtarının değerini erişmek için `rIter`  ->  **ilk**, eşit olduğu (\* `rIter`). **İlk**. Eşlenmiş veri öğesi için değeri erişmek için `rIter`  ->  **ikinci**, eşit olduğu (\* `rIter`). **İlk**.
+Öğenin anahtarının değerini erişmek için `rIter->first`, eşdeğer olan `(*rIter).first`. Eşlenmiş veri öğesi için değeri erişmek için `rIter->second`, eşdeğer olan `(*rIter).second`.
 
 ### <a name="example"></a>Örnek
 
@@ -2176,7 +2188,8 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap `left`.
+*sağ*<br/>
+ Değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap `left`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2245,7 +2258,8 @@ const_iterator upper_bound(const Key& key) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*anahtar* Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+*Anahtarı*<br/>
+ Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2445,7 +2459,7 @@ The values of the mapped elements are: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Harita > üyeleri](http://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
+[\<Harita > üyeleri](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

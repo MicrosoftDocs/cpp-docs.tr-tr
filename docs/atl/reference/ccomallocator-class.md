@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dbaa4631e50b14131418b902dd008e74060dbf6
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 94532b40bb44094290eab29a2b8a1f6095a225c5
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881938"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221107"
 ---
 # <a name="ccomallocator-class"></a>CComAllocator sınıfı
 Bu sınıf, COM bellek yordamları kullanarak bellek yönetmek için yöntemler sağlar.  
@@ -67,7 +67,7 @@ static void* Allocate(size_t nBytes) throw();
  Kullanılabilir bellek yetersiz ise bir void işaretçisine ayrılan alanı veya NULL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bellek ayırır. Bkz: [CoTaskMemAlloc](http://msdn.microsoft.com/library/windows/desktop/ms692727) daha fazla ayrıntı için.  
+ Bellek ayırır. Bkz: [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc) daha fazla ayrıntı için.  
   
 ##  <a name="free"></a>  CComAllocator::Free  
  Ayrılmış belleği boşaltmak için statik bu işlevi çağırın.  
@@ -81,7 +81,7 @@ static void Free(void* p) throw();
  Ayrılan bellek işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılan belleği serbest bırakır. Bkz: [CoTaskMemFree](http://msdn.microsoft.com/library/windows/desktop/ms680722) daha fazla ayrıntı için.  
+ Ayrılan belleği serbest bırakır. Bkz: [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree) daha fazla ayrıntı için.  
   
 ##  <a name="reallocate"></a>  CComAllocator::Reallocate  
  Bellek yeniden ayırmak üzere statik bu işlevi çağırın.  
@@ -101,7 +101,7 @@ static void* Reallocate(void* p, size_t nBytes) throw();
  Yetersiz bellek varsa void bir işaretçi ayrılan alanı veya NULL döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Ayrılan bellek miktarını yeniden boyutlandırır. Bkz: [CoTaskMemRealloc](http://msdn.microsoft.com/library/windows/desktop/ms687280) daha fazla ayrıntı için.  
+ Ayrılan bellek miktarını yeniden boyutlandırır. Bkz: [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc) daha fazla ayrıntı için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComHeapPtr sınıfı](../../atl/reference/ccomheapptr-class.md)   

@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ffd2a8969b4cd0edb5845310300e3b42148f816
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c74bc6a134ea31f3184912192ccbcb3908e64cd3
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337622"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43221531"
 ---
 # <a name="casyncsocket-class"></a>CAsyncSocket sınıfı
 Bir Windows yuvasını temsil eder; ağ iletişimi bir uç nokta.  
@@ -173,7 +173,7 @@ class CAsyncSocket : public CObject
 > [!NOTE]
 >  Statik olarak bağlı bir MFC uygulamasında İkincil iş parçacıklarındaki MFC Yuvaları kullanılırken çağırmalısınız `AfxSocketInit` yuva kitaplıklarını başlatma yuva kullanan her bir iş parçacığı. Varsayılan olarak, `AfxSocketInit` yalnızca birincil iş parçacığında çağrılır.  
   
- Daha fazla bilgi için [Windows Yuvaları: sınıf Casyncsocket'ini kullanma](../../mfc/windows-sockets-using-class-casyncsocket.md) ve ilgili makaleler. yanı [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
+ Daha fazla bilgi için [Windows Yuvaları: sınıf Casyncsocket'ini kullanma](../../mfc/windows-sockets-using-class-casyncsocket.md) ve ilgili makaleler. yanı [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -515,7 +515,7 @@ BOOL Create(
 > [!IMPORTANT]
 > `Create` olan **değil** iş parçacığı açısından güvenli.  Burada, aynı anda farklı iş parçacıkları tarafından çağırılabilir, çok iş parçacıklı bir ortamda arıyorsanız, her çağrı bir mutex veya diğer eşitleme kilit ile korunacak emin olun.  
   
- Stream ve veri birimi yuvaları hakkında daha fazla bilgi için makalelere bakın [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md) ve [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md) ve [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
+ Stream ve veri birimi yuvaları hakkında daha fazla bilgi için makalelere bakın [Windows Yuvaları: arka plan](../../mfc/windows-sockets-background.md) ve [Windows Yuvaları: bağlantı noktaları ve yuva adresleri](../../mfc/windows-sockets-ports-and-socket-addresses.md) ve [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).  
   
 ##  <a name="detach"></a>  CAsyncSocket::Detach  
  SOCKET tanıtıcısı ayırmak için bu üye işlevini çağırın *m_hSocket* veri üyesinden `CAsyncSocket` ayarlayın ve nesne *m_hSocket* null.  
@@ -554,7 +554,7 @@ static int PASCAL GetLastError();
 ### <a name="remarks"></a>Açıklamalar  
  Özel üye işlevi bir hata oluştuğunu gösteriyorsa `GetLastError` uygun hata kodunu almak için çağrılmalıdır. İlgili hata kodlarının bir listesi için tek tek üye işlevi açıklamaları bakın.  
   
- Hata kodları hakkında daha fazla bilgi için bkz. [Windows Sockets 2 API](http://msdn.microsoft.com/library/windows/desktop/ms740673).  
+ Hata kodları hakkında daha fazla bilgi için bkz. [Windows Sockets 2 API](/windows/desktop/WinSock/windows-sockets-start-page-2).  
   
 ##  <a name="getpeername"></a>  CAsyncSocket::GetPeerName  
  Bu yuva bağlandığı eş yuva adresini almak için bu üye işlevini çağırın.  

@@ -1,5 +1,5 @@
 ---
-title: MFC'de Form kullanıcı denetimi Windows kullanarak | Microsoft Docs
+title: MFC'de Form kullanıcı denetimi kullanarak bir Windows | Microsoft Docs
 ms.custom: ''
 ms.date: 1/08/2018
 ms.technology:
@@ -20,36 +20,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 8ceb424d6c5061ac5ccafc62d8748be4de3ab3d4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 795c16a46356eb9599e02b43b51066b603b8b9ce
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33174319"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222114"
 ---
 # <a name="using-a-windows-form-user-control-in-mfc"></a>MFC içinde Windows Formu Kullanıcı Denetimi Kullanma
 
-MFC Windows Forms destek sınıflarını kullanarak, MFC iletişim kutuları veya görünümler içinde bir ActiveX denetimi olarak Windows Forms denetimlerini MFC uygulamalarınız içinde barındırabilir. Ayrıca, Windows Forms forms MFC iletişim kutuları olarak barındırılabilir.
+MFC Windows Forms desteği sınıfları kullanarak, MFC iletişim kutuları veya görünümler içinde bir ActiveX denetimi Windows Forms denetimleri, MFC uygulamaları içinde barındırabilirsiniz. Ayrıca, Windows Forms formlarını MFC iletişim kutusu olarak barındırılabilir.
 
 Aşağıdaki bölümlerde nasıl yapılır:
 
 - MFC iletişim kutusunda Windows Forms denetimi barındırma.
 
-- MFC görünümü olarak Windows Forms kullanıcı denetimi barındırma.
+- MFC görünümü olarak bir Windows Forms kullanıcı denetimi barındırın.
 
-- MFC iletişim kutusu olarak Windows Forms form barındırır.
-
-> [!NOTE]
-> MFC Windows Forms tümleştirme çalışır, ile MFC'ye dinamik olarak projelerde (hangi projelerinde `_AFXDLL` tanımlanır).
+- MFC iletişim kutusu olarak Windows Forms formu barındırın.
 
 > [!NOTE]
-> MFC Windows Forms arabirimi DLL (mfcmifc80.dll)'in) özel (değiştirilmiş) bir kopyasını kullanarak uygulamanızı oluşturma sırasında Microsoft anahtarı kendi satıcı anahtarınızla değiştirin sürece GAC'de yükleme başarısız olur. Derleme imzalama hakkında daha fazla bilgi için bkz: [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies) ve [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
+> MFC Windows Forms tümleştirme ile MFC'ye dinamik olarak projeleri çalışır (hangi projelerinde `_AFXDLL` tanımlanır).
 
-Windows Forms kullanarak örnek uygulamaları için bkz: [BirthdayPicker örnek: Windows Forms ile .NET Framework kaynakları gösteren](http://msdn.microsoft.com/ac932aed-5502-4667-be29-709bca435317), [hesaplayıcı örnek: Windows Forms Pocket hesaplayıcı](http://msdn.microsoft.com/2283b516-3b7e-45f2-80c4-fdcfb366ce25)ve [ Karalama örnek: MDI çizim uygulama](http://msdn.microsoft.com/f025da3e-659b-4222-b991-554a1b8b2358).
+> [!NOTE]
+> MFC Windows Forms arabirimi DLL (mfcmifc80.dll'ye) özel (değiştirilmiş) bir kopyasını kullanarak uygulamanızı oluşturduğunuzda Microsoft anahtarını kendi satıcı anahtarla değiştirin sürece GAC'ye yüklemek başarısız olur. Derleme imzalama hakkında daha fazla bilgi için bkz. [Derlemelerle programlama](/dotnet/framework/app-domains/programming-with-assemblies) ve [tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md).
 
-MFC'de Windows Forms gösteren örnek bir uygulama için bkz: [MFC ve Windows Forms tümleştirme](http://www.microsoft.com/downloads/details.aspx?FamilyID=987021bc-e575-4fe3-baa9-15aa50b0f599&displaylang=en).
-
-MFC uygulamanız Windows Forms kullanıyorsa, uygulamanız ile mfcmifc80.dll'ye yeniden dağıtmanız gerekir. Daha fazla bilgi için bkz: [MFC kitaplığını yeniden dağıtma](../ide/redistributing-the-mfc-library.md).
+MFC uygulamanız Windows Forms kullanıyorsa, mfcmifc80.dll'ye uygulamanızla birlikte yeniden dağıtmanız gerekir. Daha fazla bilgi için [MFC kitaplığını yeniden dağıtma](../ide/redistributing-the-mfc-library.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6645ee4c890dab65cde8eab5dc18df1c31082c1
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: e6607016e2661817de04fce505bc921a3a25320a
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42464605"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219499"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -69,7 +69,7 @@ Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [D
   
 Kullanabilirsiniz*sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna gideceğini belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.  
   
-İsteğe bağlı kullanarak `NONAME` anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](http://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.  
+İsteğe bağlı kullanarak `NONAME` anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.  
   
 İsteğe bağlı anahtar sözcük `PRIVATE` engeller *GirişAdı* bağlantı tarafından oluşturulan içeri aktarma kitaplığına eklenen öğesinden. Dışa aktarma, ayrıca bağlantı tarafından oluşturulan görüntüyü etkilemez.  
   

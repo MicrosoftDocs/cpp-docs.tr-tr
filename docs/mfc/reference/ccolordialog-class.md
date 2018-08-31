@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0445939c7437e4978ee698005cc2f7541e6684b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c528e2a80894db1da82d7b07ba34a7c62b6237da
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339312"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219025"
 ---
 # <a name="ccolordialog-class"></a>CColorDialog sınıfı
 Bir renk seçimi iletişim kutusunu uygulamanıza eklemenize olanak sağlar.  
@@ -80,13 +80,13 @@ class CColorDialog : public CCommonDialog
   
  Oluşturmak için bir `CColorDialog` nesne, sağlanan bir oluşturucu kullanın veya yeni bir sınıf türetin ve kendi özel Oluşturucu kullanın.  
   
- İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_cc](#m_cc) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. *M_cc* yapısıdır türünü [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830).  
+ İletişim kutusu oluşturulmuş bir kez ayarlayabilir veya herhangi bir değer değiştirme [m_cc](#m_cc) Yapısı iletişim kutusunun denetimleri değerlerini başlatılamadı. *M_cc* yapısıdır türünü [CHOOSECOLOR](/windows/desktop/api/commdlg/ns-commdlg-tagchoosecolora).  
   
  İletişim kutusunun denetimleri başlatılıyor sonra çağrı `DoModal` iletişim kutusunu görüntülemek ve bir rengi seçmesini sağlamak için üye işlevi. `DoModal` kullanıcının seçiminin ya da iletişim kutusunun Tamam (IDOK) veya iptal edin (IDCANCEL) düğmesinin döndürür.  
   
  Varsa `DoModal` IDOK, döndürür birini kullanabilirsiniz `CColorDialog`ait üye işlevleri tarafından kullanıcı giriş bilgileri alınamıyor.  
   
- Windows kullanabileceğiniz [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin.  
+ Windows kullanabileceğiniz [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) işlevi bir hata iletişim kutusunun başlatma sırasında oluşup oluşmadığını belirleyin ve hata hakkında daha fazla bilgi edinin.  
   
  `CColorDialog` üzerinde COMMDLG kullanır. Windows 3.1 ve sonraki sürümleri ile birlikte gelen DLL dosyası.  
   
@@ -130,7 +130,7 @@ CColorDialog(
  Varsayılan renk seçimi. Değer belirtilmezse, varsayılan RGB(0,0,0) (siyah) olur.  
   
  *CertOpenStore*  
- İşlevi ve iletişim kutusunu görünümünü özelleştirme bayrak kümesi. Daha fazla bilgi için [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830) Windows SDK'sındaki yapısı.  
+ İşlevi ve iletişim kutusunu görünümünü özelleştirme bayrak kümesi. Daha fazla bilgi için [CHOOSECOLOR](/windows/desktop/api/commdlg/ns-commdlg-tagchoosecolora) Windows SDK'sındaki yapısı.  
   
  *pParentWnd*  
  İletişim kutusunun üst veya sahip penceresine bir işaretçi.  
@@ -146,7 +146,7 @@ virtual INT_PTR DoModal();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](http://msdn.microsoft.com/library/windows/desktop/ms646916) hata oluşup oluşmadığını belirlemek için işlevi.  
+ IDOK veya IDCANCEL. IDCANCEL döndürülürse, Windows Arama [CommDlgExtendedError](/windows/desktop/api/commdlg/nf-commdlg-commdlgextendederror) hata oluşup oluşmadığını belirlemek için işlevi.  
   
  IDOK ve IDCANCEL kullanıcı Tamam'ı veya iptal düğmesi seçili olup olmadığını gösteren sabittir.  
   
@@ -166,7 +166,7 @@ COLORREF GetColor() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [COLORREF](http://msdn.microsoft.com/library/windows/desktop/dd183449) renk iletişim kutusunda seçilen renk RGB bilgilerini içeren bir değer.  
+ A [COLORREF](/windows/desktop/gdi/colorref) renk iletişim kutusunda seçilen renk RGB bilgilerini içeren bir değer.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#50](../../mfc/codesnippet/cpp/ccolordialog-class_2.cpp)]  
@@ -190,7 +190,7 @@ static COLORREF* PASCAL GetSavedCustomColors();
  [!code-cpp[NVC_MFCDocView#51](../../mfc/codesnippet/cpp/ccolordialog-class_3.cpp)]  
   
 ##  <a name="m_cc"></a>  CColorDialog::m_cc  
- Türünden bir yapıyı [CHOOSECOLOR](http://msdn.microsoft.com/library/windows/desktop/ms646830), özelliklerini ve değerlerini iletişim kutusunun üyeleri depolayın.  
+ Türünden bir yapıyı [CHOOSECOLOR](/windows/desktop/api/commdlg/ns-commdlg-tagchoosecolora), özelliklerini ve değerlerini iletişim kutusunun üyeleri depolayın.  
   
 ```  
 CHOOSECOLOR m_cc;  

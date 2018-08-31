@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01add77f68ac35b4c669391504461dd516b55d3d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1f8fae2d8af1b7121290bfbd42b2668afc50034c
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325389"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217259"
 ---
 # <a name="ltparamgt-visual-c"></a>&lt;param&gt; (Visual C++)
-\<Param > etiketi açıklamasında bir yöntem bildirimi için parametrelerden biri yönteminde açıklamak için kullanılmalıdır.  
+\<Param > Etiket kullanılmalıdır yöntemi bildirimi için açıklama parametrelerden biri yöntemi tanımlamak için.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,15 +36,15 @@ ms.locfileid: "33325389"
   
 #### <a name="parameters"></a>Parametreler  
  `name`  
- Yöntem parametresinin adı.  Ad, tek veya çift tırnak işaretleri içine alın.  Derleyici bulamadı, bir uyarı verir `name`.  
+ Bir yöntem parametresi adı.  Ad, tek veya çift tırnak içine alın.  Değil bulamazsa, derleyici bir uyarı verir `name`.  
   
  `description`  
- Parametresi için bir açıklama.  
+ Parametre için bir açıklama.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Metni \<param > etiketi IntelliSense içinde görüntülenir [Nesne Tarayıcısı](http://msdn.microsoft.com/en-us/f89acfc5-1152-413d-9f56-3dc16e3f0470)ve kod açıklama Web raporu.  
+ Metni \<param > etiketi IntelliSense içinde gösterilecek [Nesne Tarayıcısı](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)ve kod açıklaması Web raporu.  
   
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   

@@ -166,12 +166,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db7a95327430b4d0bbfda173c83b7631af822060
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d9644882f537285b27fa376afa65581d6d4c3c9f
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339247"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216294"
 ---
 # <a name="cmdiframewndex-class"></a>Cmdıframewndex sınıfı
 İşlevselliğini genişletir [CMDIFrameWnd](../../mfc/reference/cframewnd-class.md), bir Windows Çok Belgeli Arabirim (MDI) çerçeve penceresi.  
@@ -252,7 +252,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 |[CMDIFrameWndEx::OnTearOffMenu](#ontearoffmenu)|Bölünmüş çubuk içeren menü etkinleştirildiğinde framework tarafından çağırılır.|  
 |[CMDIFrameWndEx::OnUpdateFrameMenu](#onupdateframemenu)|Çerçeve menüsü güncelleştirmek için framework tarafından çağırılır. (Geçersiz kılmaları `CMDIFrameWnd::OnUpdateFrameMenu`.)|  
 |[CMDIFrameWndEx::PaneFromPoint](#panefrompoint)|Belirtilen nokta içeren bir yerleştirme bölmesi döndürür.|  
-|`CMDIFrameWndEx::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](http://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](http://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.  (Geçersiz kılmaları `CMDIFrameWnd::PreTranslateMessage`.)|  
+|`CMDIFrameWndEx::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.  (Geçersiz kılmaları `CMDIFrameWnd::PreTranslateMessage`.)|  
 |[CMDIFrameWndEx::RecalcLayout](#recalclayout)|Çerçeve pencere düzenini yeniden hesaplamak için framework tarafından çağırılır. (Geçersiz kılmaları [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout).)|  
 |[CMDIFrameWndEx::RemovePaneFromDockManager](#removepanefromdockmanager)|Bir bölme kaydını siler ve yerleştirme Manager'dan kaldırır.|  
 |[CMDIFrameWndEx::SaveMDIState](#savemdistate)|Geçerli MDI sekmeli gruplarının düzenini ve önceden açılmış belgelerin listesini kaydeder.|  
@@ -1341,7 +1341,7 @@ virtual BOOL OnMenuButtonToolHitTest(
  Araç çubuğu düğmesi.  
   
  [out] *PTI*  
- İşaretçi bir [TOOLINFO](http://msdn.microsoft.com/library/windows/desktop/bb760256) yapısı.  
+ İşaretçi bir [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygulama doldurur, doğru *PTI* parametresi. Varsayılan uygulama false değerini döndürür.  
@@ -1790,7 +1790,7 @@ virtual void WinHelp(
  Yardım tarafından belirtilen tür için gereken veri belirtir *nCmd*.  
   
  [in] *nCmd*  
- Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp işlevini](http://msdn.microsoft.com/library/windows/desktop/bb762267) Windows SDK.  
+ Yardım talep türünü belirtir. Olası değerler ve bunların nasıl etkileyeceğini listesini *dwData* parametresi bkz [WinHelp işlevini](/windows/desktop/api/winuser/nf-winuser-winhelpa) Windows SDK.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu metot geçersiz kılmaları [CWnd::WinHelp](../../mfc/reference/cwnd-class.md#winhelp).  

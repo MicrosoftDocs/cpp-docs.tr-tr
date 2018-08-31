@@ -1,5 +1,5 @@
 ---
-title: Bildirim üretme komut satırında | Microsoft Docs
+title: Komut satırında bildirim üretme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f740030e48a33284a31da4ebd46f0c4d7b6ac7e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97e2bb423deb4a50da0cf0772ae81e19bb4b48eb
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368505"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43220733"
 ---
 # <a name="manifest-generation-at-the-command-line"></a>Komut Satırında Bildirim Üretme
-Bağlayıcı tüm nesne dosyaları işlenir ve son ikili yerleşik sonra nmake veya benzer araçlarını kullanarak komut satırından C/C++ uygulamaları oluştururken, bildirim oluşturulur. Bağlayıcı nesne dosyasında depolanan derleme bilgilerini toplar ve bu bilgileri son bildirim dosyası halinde birleştirir. Varsayılan olarak, bağlayıcı adlı bir dosya < binary_name > oluşturur. \<uzantısı > .manifest son ikili açıklanmaktadır. Bağlayıcı ikili içinde bildirim dosyası katıştırmak değil ve yalnızca bir bildirim dış dosyası olarak oluşturulmasına neden olabilir. Kullanarak gibi son ikili, bildirim eklemek için birkaç yol vardır [bildirim Aracı (mt.exe)](http://msdn.microsoft.com/library/aa375649) veya bir kaynak dosyasına bildirim derleme. İmzalama, artımlı bağlantılandırma, olarak gibi özellikleri etkinleştirmek için son ikili bildirim katıştırma zaman izlenmesi için belirli kurallar sahip göz önünde bulundurun ve Düzenle ve devam etmek önemlidir. Bunlar ve diğer seçenekleri ele alınmıştır [nasıl yapılır: bir bildirim içinde bir C/C++ uygulaması katıştırmak](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md) komut satırında oluştururken.  
+Bağlayıcı işlenen tüm nesne dosyaları ve son ikili yerleşik sonra nmake veya benzer araçlarını kullanarak komut satırından C/C++ uygulamaları oluştururken, bildirim oluşturulur. Bağlayıcı, nesne dosyalarında depolanan derleme bilgilerini toplar ve son bir bildirim dosyasına bu bilgileri bir araya getirir. Varsayılan olarak bağlayıcı adlı bir dosya < binary_name > oluşturur. \<uzantısı > .manifest son ikili tanımlamak için. Bağlayıcı, ikili dosya içinde bir bildirim dosyası ekleme değil ve yalnızca bir dış dosya olarak bir bildirimde oluşturabilir. Son ikili kullanma gibi bildirim katıştırma için çeşitli yollar vardır [bildirim Aracı (mt.exe)](https://msdn.microsoft.com/library/aa375649) veya bir kaynak dosyasına bildirim derleniyor. Oturum, son ikili olarak artımlı bağlamayı, gibi özellikleri etkinleştirmek için bildirim eklerken izlenmesi için belirli kurallar sahip göz önünde bulundurun ve Düzenle ve devam etmek önemlidir. Bunlar ve diğer seçenekleri ele alınmıştır [nasıl yapılır: bir bildirim içinde bir C/C++ uygulamasına ekleme](../build/how-to-embed-a-manifest-inside-a-c-cpp-application.md) komut satırında oluştururken.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimleri](http://msdn.microsoft.com/library/aa375365)   
+ [Bildirimleri](https://msdn.microsoft.com/library/aa375365)   
  [/ INCREMENTAL (artımlı Bağla)](../build/reference/incremental-link-incrementally.md)   
  [Tanımlayıcı ad derlemeleri (derleme imzalama) (C + +/ CLI)](../dotnet/strong-name-assemblies-assembly-signing-cpp-cli.md)   
  [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue)   

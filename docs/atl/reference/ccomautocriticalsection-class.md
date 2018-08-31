@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae0c3cd1d00ce83a4e952d60a978663bfa76f814
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ef8cc6fe14dc2c636b02ce2002787a74b12b5528
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357235"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43217906"
 ---
 # <a name="ccomautocriticalsection-class"></a>CComAutoCriticalSection sınıfı
-`CComAutoCriticalSection` Alma ve kritik bölüm nesnenin sahipliğini serbest bırakma için yöntemleri sağlar.  
+`CComAutoCriticalSection` kritik bölüm nesnenin sahipliğini serbest bırakma ve alma için yöntemler sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,15 +41,15 @@ class CComAutoCriticalSection : public CComCriticalSection
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[CComAutoCriticalSection::CComAutoCriticalSection](#ccomautocriticalsection)|Oluşturucu.|  
-|[CComAutoCriticalSection:: ~ CComAutoCriticalSection](#dtor)|Yok Edicisi.|  
+|[CComAutoCriticalSection:: ~ CComAutoCriticalSection](#dtor)|Yıkıcı.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComAutoCriticalSection` sınıfına benzer [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), dışında `CComAutoCriticalSection` Oluşturucusu kritik bölüm nesnesinde otomatik olarak başlatır.  
+ `CComAutoCriticalSection` sınıfına benzer [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md), dışında `CComAutoCriticalSection` kritik bölüm nesneye otomatik olarak başlatır.  
   
- Genellikle, kullandığınız `CComAutoCriticalSection` aracılığıyla `typedef` adı [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection). Bu ad başvuran `CComAutoCriticalSection` zaman [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılıyor.  
+ Genellikle, kullandığınız `CComAutoCriticalSection` aracılığıyla `typedef` adı [AutoCriticalSection](ccommultithreadmodel-class.md#autocriticalsection). Bu ada başvuran `CComAutoCriticalSection` olduğunda [CComMultiThreadModel](../../atl/reference/ccommultithreadmodel-class.md) kullanılıyor.  
 
   
- `Init` Ve `Term` yöntemleri [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) Bu sınıf kullanırken kullanılabilir değil.  
+ `Init` Ve `Term` yöntemlerinden [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) Bu sınıf kullanırken kullanılamaz.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)  
@@ -67,19 +67,19 @@ CComAutoCriticalSection();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Win32 işlev çağrılarını [InitializeCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms683472), kritik bölüm nesnesini başlatır.  
+ Win32 işlevini çağırır [InitializeCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-initializecriticalsection), kritik bölüm nesnesi başlatır.  
   
 ##  <a name="dtor"></a>  CComAutoCriticalSection:: ~ CComAutoCriticalSection  
- Yok Edicisi.  
+ Yıkıcı.  
   
 ```
 ~CComAutoCriticalSection() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yıkıcı çağrıları [DeleteCriticalSection](http://msdn.microsoft.com/library/windows/desktop/ms682552), kritik bölüm nesnesi tarafından kullanılan tüm sistem kaynakları serbest bırakır.  
+ Yıkıcı çağrıları [DeleteCriticalSection](/windows/desktop/api/synchapi/nf-synchapi-deletecriticalsection), kritik bölüm nesne tarafından kullanılan tüm sistem kaynakları serbest bırakır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CComFakeCriticalSection sınıfı](../../atl/reference/ccomfakecriticalsection-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
+ [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
  [CComCriticalSection Sınıfı](../../atl/reference/ccomcriticalsection-class.md)

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 18a53f75f783f5843e3bdf603d21dbacf6746e2b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 06261ba87806bd5eada0d7daaa955b8ec395f3ea
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591787"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43222852"
 ---
 # <a name="control"></a>denetimi
 
@@ -36,7 +36,7 @@ Kullanıcı tanımlı tür bir denetimi olduğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Denetimi** özniteliği gelir [coclass'ı](../windows/coclass.md) özniteliği. **Denetimi** C++ özniteliği ile aynı işlevlere sahip [denetimi](http://msdn.microsoft.com/library/windows/desktop/aa366764) MIDL özniteliği.
+**Denetimi** özniteliği gelir [coclass'ı](../windows/coclass.md) özniteliği. **Denetimi** C++ özniteliği ile aynı işlevlere sahip [denetimi](/windows/desktop/Midl/control) MIDL özniteliği.
 
 ## <a name="example"></a>Örnek
 

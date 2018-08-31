@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfc59e4652c7c758e7fb5b3ee8a228963a6b6f7d
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 8f07f14cca7ea0346cc6772d3dca959af07a05cd
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37883251"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218168"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 Bu sınıf, bir bellek işlemeli dosya temsil eder.  
@@ -76,7 +76,7 @@ class CAtlFileMappingBase
 ## <a name="remarks"></a>Açıklamalar  
  Bir dosyanın içeriğini bir işlemin sanal adres alanının bir bölümü ile dosya eşlemesi işbirliğidir. Bu sınıf, kolayca erişme ve veri paylaşma olanağı programlar izin veren Dosya eşleme nesnesi oluşturmak için yöntemleri sağlar.  
   
- Daha fazla bilgi için [eşleme dosyası](http://msdn.microsoft.com/library/windows/desktop/aa366556) Windows SDK.  
+ Daha fazla bilgi için [eşleme dosyası](/windows/desktop/Memory/file-mapping) Windows SDK.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** atlfile.h  
@@ -179,16 +179,16 @@ HRESULT MapFile(
  Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin bellek ayırma tanecikliliğinin bir katı olmalıdır.  
   
  *dwMappingProtection*  
- Dosya görünümü için dosya eşlendiğinde istenen koruma. Bkz: *flProtect* içinde [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) Windows SDK.  
+ Dosya görünümü için dosya eşlendiğinde istenen koruma. Bkz: *flProtect* içinde [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK.  
   
  *dwViewDesiredAccess*  
- Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
+ Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutu aşmamalıdır; varsa, dosya içeriğinin tamamını paylaşmak için kullanılabilir. Daha fazla ayrıntı için [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) ve [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
+ Bir dosya eşleme nesnesi oluşturulduktan sonra dosyanın boyutu dosya eşleme nesnesinin boyutu aşmamalıdır; varsa, dosya içeriğinin tamamını paylaşmak için kullanılabilir. Daha fazla ayrıntı için [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) ve [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
   
 ### <a name="example"></a>Örnek  
  Örneğin bakın [CAtlFileMappingBase::CAtlFileMappingBase](#catlfilemappingbase).  
@@ -217,19 +217,19 @@ HRESULT MapSharedMem(
  Gerekirse TRUE eşleme nesnesi zaten ayarlanmış bir BOOL değeri noktalarına vardı.  
   
  *lpsa*  
- İşaretçiyi bir `SECURITY_ATTRIBUTES` döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayacağını belirleyen yapısı. Bkz: *lpAttributes* içinde [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537) Windows SDK.  
+ İşaretçiyi bir `SECURITY_ATTRIBUTES` döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayacağını belirleyen yapısı. Bkz: *lpAttributes* içinde [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK.  
   
  *dwMappingProtection*  
  Dosya görünümü için dosyanın eşlendiğinde istenen koruma. Bkz: *flProtect* içinde `CreateFileMapping` Windows SDK.  
   
  *dwViewDesiredAccess*  
- Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
+ Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `MapShareMem` tarafından oluşturulan mevcut bir dosya eşleme nesnesinin sağlar [CreateFileMapping](http://msdn.microsoft.com/library/windows/desktop/aa366537), işlemler arasında paylaşılacak.  
+ `MapShareMem` tarafından oluşturulan mevcut bir dosya eşleme nesnesinin sağlar [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga), işlemler arasında paylaşılacak.  
   
 ##  <a name="openmapping"></a>  CAtlFileMappingBase::OpenMapping  
  Belirtilen dosya için bir adlandırılmış dosya eşleme nesnesi açmak için bu yöntemi çağırın.  
@@ -253,7 +253,7 @@ HRESULT OpenMapping(
  Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin bellek ayırma tanecikliliğinin bir katı olmalıdır.  
   
  *dwViewDesiredAccess*  
- Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](http://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
+ Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -286,7 +286,7 @@ HRESULT Unmap() throw();
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [UnmapViewOfFile](http://msdn.microsoft.com/library/windows/desktop/aa366882) daha fazla ayrıntı için Windows SDK.  
+ Bkz: [UnmapViewOfFile](https://msdn.microsoft.com/library/windows/desktop/aa366882) daha fazla ayrıntı için Windows SDK.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [CAtlFileMapping sınıfı](../../atl/reference/catlfilemapping-class.md)   

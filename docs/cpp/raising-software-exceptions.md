@@ -23,17 +23,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b4469d7d53a7374f62e0ec232a7836e80ab75d8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 587ce3800be5c58e4882b6ac3239de614739bcb8
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606421"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219667"
 ---
 # <a name="raising-software-exceptions"></a>Yazılım Özel Durumlarını Oluşturma
 Sistem tarafından program hataların en yaygın kaynaklardan bazılarını özel durumlar olarak işaretlenmeyen. Örneğin, bir bellek bloğunu ayırmaya çalışır, ancak yeterli bellek çalışma zamanı veya API işlevi bir özel durum oluşturmaz ancak bir hata kodu döndürür.  
   
- Herhangi bir koşul bir özel kodunuzda bu koşulu algılayarak ve çağırarak raporlama ancak davranabileceğiniz [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi. Bu şekilde hataları işaretlemesini tarafından yapılandırılmış özel durum işleme herhangi bir türden çalışma zamanı hatası avantajları getirebilirsiniz.  
+ Herhangi bir koşul bir özel kodunuzda bu koşulu algılayarak ve çağırarak raporlama ancak davranabileceğiniz [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552) işlevi. Bu şekilde hataları işaretlemesini tarafından yapılandırılmış özel durum işleme herhangi bir türden çalışma zamanı hatası avantajları getirebilirsiniz.  
   
  Yapılandırılmış özel durum işleme hatalarla kullanmak için:  
   
@@ -68,7 +68,7 @@ if (lpstr == NULL)
     RaiseException( STATUS_INSUFFICIENT_MEM, 0, 0, 0);  
 ```  
   
- Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi geçirmek için kullanışlıdır ve bayrak ayarı işleyicileri yürütme devam etmesini engeller. Bkz: [RaiseException](http://msdn.microsoft.com/library/windows/desktop/ms680552) daha fazla bilgi için Windows SDK'sında işlev.  
+ Yalnızca bir özel durum yükseltmek istiyorsanız, en son üç parametre 0 olarak ayarlayabilirsiniz. Son üç parametre ek bilgi geçirmek için kullanışlıdır ve bayrak ayarı işleyicileri yürütme devam etmesini engeller. Bkz: [RaiseException](https://msdn.microsoft.com/library/windows/desktop/ms680552) daha fazla bilgi için Windows SDK'sında işlev.  
   
  Özel durum işleme filtrelerinizi tanımladınız kodlarını sonra test edebilirsiniz. Örneğin:  
   
