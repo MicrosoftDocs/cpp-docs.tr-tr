@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0e2e14309b7175b003fbab9214d9dffde63af63
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 0786ada9a9548fa4e3517cb74fe37e5b7f244be2
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39026023"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43218654"
 ---
 # <a name="object-map-macros"></a>Nesne işleme makroları
 Bu makrolar, nesne eşlemeleri ve girişleri tanımlayın.  
@@ -47,7 +47,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
  [in] Sınıfı nesne açıklaması.  
   
 ### <a name="remarks"></a>Açıklamalar  
- ATL bu açıklama nesne eşlemesi üzerinden girer [OBJECT_ENTRY](http://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) makrosu.  
+ ATL bu açıklama nesne eşlemesi üzerinden girer [OBJECT_ENTRY](https://msdn.microsoft.com/abd10ee2-54f0-4f94-9ec2-ddf8f4c8c8cd) makrosu.  
   
  DECLARE_OBJECT_DESCRIPTION uygulayan bir `GetObjectDescription` geçersiz kılmak için kullanabileceğiniz işlevi [CComCoClass::GetObjectDescription](ccomcoclass-class.md#getobjectdescription) yöntemi.  
 

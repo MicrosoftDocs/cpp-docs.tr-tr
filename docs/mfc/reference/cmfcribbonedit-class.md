@@ -83,12 +83,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62a27548d51d3de1a27da0b765bd85439467c024
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 46d96d574fedf9af2fe7eb46c872819cf54a364e
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850228"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43216465"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
 Bir Şerit çubuğunda bulunan bir düzenleme denetimi uygular.  
@@ -224,7 +224,7 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
  Üst penceresine bir işaretçi `CMFCRibbonEdit` nesne.  
   
  [in] *dwEditStyle*  
- Metin kutusunun stilini belirtir. Pencere stilleri ile açıklamalar bölümünde listelenen birleştirebilirsiniz [düzenleme denetimi stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775464) Windows SDK'da açıklanmıştır.  
+ Metin kutusunun stilini belirtir. Pencere stilleri ile açıklamalar bölümünde listelenen birleştirebilirsiniz [düzenleme denetimi stilleri](/windows/desktop/Controls/edit-control-styles) Windows SDK'da açıklanmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa yeni bir metin kutusu için bir işaretçi; Aksi takdirde NULL.  
@@ -345,7 +345,7 @@ int GetTextAlign() const;
   
 - **Es_rıght** sağa hizalama  
   
- Bu stiller hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
+ Bu stiller hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri](/windows/desktop/Controls/edit-control-styles).  
   
 ##  <a name="getwidth"></a>  CMFCRibbonEdit::GetWidth  
  Piksel cinsinden genişliğini alır [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi.  
@@ -482,7 +482,7 @@ virtual void OnDrawOnList(
  Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
   
  [in] *strText*  
- Görüntülenecek metni [](../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı").  
+ Görüntülenecek metni [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı").  
   
  [in] *nTextOffset*  
  Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
@@ -601,7 +601,7 @@ virtual void Redraw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem için görünen dikdörtgen çizer `CMFCRibbonEdit` dolaylı olarak çağırarak [CWnd::RedrawWindow](http://msdn.microsoft.com/library/windows/desktop/dd162911) RDW_INVALIDATE RDW_ERASE ve RDW_UPDATENOW bayraklarıyla ayarlayın.  
+ Bu yöntem için görünen dikdörtgen çizer `CMFCRibbonEdit` dolaylı olarak çağırarak [CWnd::RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) RDW_INVALIDATE RDW_ERASE ve RDW_UPDATENOW bayraklarıyla ayarlayın.  
   
 ##  <a name="setaccdata"></a>  CMFCRibbonEdit::SetACCData  
  Erişilebilirlik verilerini ayarlar [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) nesne.  
@@ -655,7 +655,7 @@ void SetTextAlign(int nAlign);
   
 - Es_rıght sağa hizalama  
   
- Bu stiller hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri](http://msdn.microsoft.com/library/windows/desktop/bb775464).  
+ Bu stiller hakkında daha fazla bilgi için bkz: [Düzenle denetim stilleri](/windows/desktop/Controls/edit-control-styles).  
   
 ##  <a name="setwidth"></a>  CMFCRibbonEdit::SetWidth  
  Metin kutusunun genişliğini ayarlar [CMFCRibbonEdit](../../mfc/reference/cmfcribbonedit-class.md) denetimi.  

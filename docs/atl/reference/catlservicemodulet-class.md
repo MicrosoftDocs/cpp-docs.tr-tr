@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 993bef01eb5468b837cc0b8a51ae4b08f76ee398
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 04c2717aa5ec59241d470737f99ce2ed5f9df714
+ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881077"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43219416"
 ---
 # <a name="catlservicemodulet-class"></a>CAtlServiceModuleT sınıfı
 Bu sınıf, bir hizmet uygular.  
@@ -233,7 +233,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
  Olay günlüğüne yazılması için isteğe bağlı ek dizeleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem ayrıntıları bir olay işlevi kullanarak günlüğüne yazıyor [ReportEvent](http://msdn.microsoft.com/library/windows/desktop/aa363679). Dize, hiçbir hizmet çalışıyorsa, konsola gönderilir.  
+ Bu yöntem ayrıntıları bir olay işlevi kullanarak günlüğüne yazıyor [ReportEvent](/windows/desktop/api/winbase/nf-winbase-reporteventa). Dize, hiçbir hizmet çalışıyorsa, konsola gönderilir.  
   
 ##  <a name="m_bservice"></a>  CAtlServiceModuleT::m_bService  
  Program, hizmet olarak çalışıyor belirten bayrak.  
@@ -263,7 +263,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) yapısı bir hizmeti hakkında bilgiler içerir.  
+ [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) yapısı bir hizmeti hakkında bilgiler içerir.  
   
 ##  <a name="m_status"></a>  CAtlServiceModuleT::m_status  
  Üye değişkeni depolamak için geçerli hizmet durumu bilgileri yapısı.  
@@ -273,7 +273,7 @@ SERVICE_STATUS m_status;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- [SERVICE_STATUS](http://msdn.microsoft.com/library/windows/desktop/ms685996) yapısı bir hizmeti hakkında bilgiler içerir.  
+ [SERVICE_STATUS](/windows/desktop/api/winsvc/ns-winsvc-_service_status) yapısı bir hizmeti hakkında bilgiler içerir.  
   
 ##  <a name="m_szservicename"></a>  CAtlServiceModuleT::m_szServiceName  
  Kayıtlı hizmet adı.  
@@ -391,7 +391,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *nShowCmd*  
- Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. SW_HIDE varsayılan değerdir.  
+ Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. SW_HIDE varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -427,7 +427,7 @@ void SetServiceStatus(DWORD dwState) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *dwState*  
- Yeni durum. Bkz: [artırılmış](http://msdn.microsoft.com/library/windows/desktop/ms686241) için olası değerler.  
+ Yeni durum. Bkz: [artırılmış](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) için olası değerler.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hizmeti için Hizmet Denetimi Yöneticisi'nin durum bilgilerini güncelleştirir. Tarafından çağrılır [CAtlServiceModuleT::Run](#run), [CAtlServiceModuleT::ServiceMain](#servicemain) ve diğer işleyici yöntemleri. Durum da üye değişkeni depolanan [CAtlServiceModuleT::m_status](#m_status).  
@@ -441,7 +441,7 @@ HRESULT Start(int nShowCmd) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *nShowCmd*  
- Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
+ Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.  
@@ -491,7 +491,7 @@ int WinMain(int nShowCmd) throw();
   
 ### <a name="parameters"></a>Parametreler  
  *nShowCmd*  
- Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](http://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
+ Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Hizmetin dönüş değeri döndürür.  
