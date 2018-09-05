@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b676e35dcf98ef7ae1f41e4a91922d689bd40409
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 505d982d0418e3dfd33b1989e42885e8336aafa8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202145"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687393"
 ---
 # <a name="adding-a-class-from-an-activex-control-visual-c"></a>ActiveX Denetiminden Sınıf Ekleme (Visual C++)
 Kullanılabilir bir ActiveX denetimi bir arabirimde bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı için ekleyebileceğiniz bir [MFC uygulaması](../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimi](../mfc/reference/creating-an-mfc-activex-control.md).  
@@ -32,7 +32,7 @@ Kullanılabilir bir ActiveX denetimi bir arabirimde bir MFC sınıfı oluşturma
   
 ### <a name="to-add-an-mfc-class-from-an-activex-control"></a>ActiveX denetiminden MFC sınıfı ekleme  
   
-1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), ActiveX denetim sınıfı eklemek istediğiniz proje adına sağ tıklayın.  
+1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), ActiveX denetim sınıfı eklemek istediğiniz proje adına sağ tıklayın.  
   
 2.  Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.  
   

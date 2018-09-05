@@ -1,7 +1,7 @@
 ---
 title: işleç; | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,24 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6231a2068c5a89877c89ceefebfa56e3d582503b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 278fcd625fb972b74009a4384fd540d0585f47a6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32058027"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679717"
 ---
 # <a name="operator-"></a>;; işleci
-İşler *metin* yalnızca makro tanımı'nda görüntülenen makro açıklama olarak. Liste gösterme *metin* makrosu burada genişletilir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-;;  
-text  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+İşler *metin* Makro tanımında yalnızca görünen makro yorum olarak. Liste gösterme *metin* makroyu burada genişletilir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> ;; *metin*
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

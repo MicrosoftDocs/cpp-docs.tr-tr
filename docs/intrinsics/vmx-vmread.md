@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eee9c82487159b9233999d17ff36c4aad3ef6445
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: d6f03ea1ea39b9202d4bb7b850bb81354a4a47f1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464878"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677386"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 **Microsoft'a özgü**  
@@ -54,7 +54,7 @@ unsigned char __vmx_vmread(
 |2|İşlem durumu olmadan başarısız oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__vmx_vmread` İşlev, eşdeğer `VMREAD` makine yönergesi. Değerini `Field` Intel belgelerinde açıklanan bir kodlanmış alan dizini parametredir. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site ve ardından bu belgenin ek C başvurun .  
+ `__vmx_vmread` İşlev, eşdeğer `VMREAD` makine yönergesi. Değerini `Field` Intel belgelerinde açıklanan bir kodlanmış alan dizini parametredir. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site ve ardından bu belgenin ek C başvurun .  
   
 ## <a name="requirements"></a>Gereksinimler  
   

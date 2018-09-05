@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 47914999a48b4d5924a25ad1688ee83c533398f3
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cfdf224ed96484af52a84c270c93df87821a444f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218904"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684605"
 ---
 # <a name="how-to-migrate-to-clr"></a>Nasıl yapılır: /clr'ye Geçiş
 Bu konuda, yerel kod ile derleme yaparken ortaya çıkan sorunları ele alınmıştır **/CLR** (bkz [/CLR (ortak dil çalışma zamanı derlemesi)](../build/reference/clr-common-language-runtime-compilation.md) daha fazla bilgi için). **/ CLR** Visual C++ modülleri çağırmak ve .NET derlemeleri yönetilmeyen modülleri ile uyumluluğu korurken çağrılmasına olanak sağlar. Bkz: [karışık (yerel ve yönetilen) derlemeler](../dotnet/mixed-native-and-managed-assemblies.md) ve [Native ve .NET ile birlikte çalışabilirlik](../dotnet/native-and-dotnet-interoperability.md) avantajları hakkında daha fazla bilgi ile derlenen **/CLR**.  
@@ -90,7 +90,7 @@ COMObj2->Method(args);  // C++ equivalent
  Projenizi derler ve Visual Studio 2010'da çalışan sonra yeni proje yapılandırmaları için oluşturmalısınız **/CLR** varsayılan yapılandırmaları değiştirmek yerine. **/ CLR** bazı derleyici seçenekleri ile uyumlu değildir ve ayrı yapılandırmaları projeniz yerel veya yönetilen olarak oluşturmanızı sağlar. Zaman **/CLR** özellik sayfaları iletişim kutusu, proje ayarları ile uyumlu değil olarak seçili **/CLR** devre dışı bırakıldı (ve devre dışı bırakılan seçeneklerin otomatik olarak geri yüklenmez varsa **/CLR** sonradan seçildiyse).  
   
 ### <a name="create-new-project-configurations"></a>Yeni proje yapılandırmaları oluşturma  
- Kullanabileceğiniz **Ayarları Şuradan Kopyala** seçeneğini [yeni proje yapılandırma iletişim kutusu](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be) mevcut proje ayarlarınızı temel alan bir proje yapılandırması oluşturmak için. Bu kez hata ayıklama yapılandırması için ve yayın yapılandırması için bir kez yaparsınız. Sonraki değişiklikler ardından uygulanabilir **/CLR** -özgün proje yapılandırmalarını dokunmadan özgü yapılandırmalar.  
+ Kullanabileceğiniz **Ayarları Şuradan Kopyala** seçeneğini **yeni proje yapılandırma iletişim kutusu** (**derleme** > **Configuration Manager**  >  **Etkin çözüm yapılandırması** > **yeni**) var olan proje ayarlarınızı temel alan bir proje yapılandırması oluşturmak için. Bu kez hata ayıklama yapılandırması için ve yayın yapılandırması için bir kez yaparsınız. Sonraki değişiklikler ardından uygulanabilir **/CLR** -özgün proje yapılandırmalarını dokunmadan özgü yapılandırmalar.  
   
  Özel derleme kuralları kullanan projeler çok dikkat gerektirebilir.  
   

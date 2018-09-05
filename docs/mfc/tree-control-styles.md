@@ -29,15 +29,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a448d76236c3467228b2aa57cd71284274687ac
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b6f3f28bbc2a69a5ad5c4fe9910d8312b236c34f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200437"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686504"
 ---
 # <a name="tree-control-styles"></a>Ağaç Denetimi Stilleri
-Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri bir ağaç denetimin görünümünü yönlerini yönetir. Ağaç denetimi oluştururken ilk stilleri ayarlayın. Alabilir ve kullanarak oluşturduktan sonra ağaç denetimi stilleri değiştirme [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) ve [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) belirterek Windows işlevlerini **GWL_STYLE** için *nIndex* parametresi. Stilleri tam bir listesi için bkz. [ağaç görünümü denetiminin pencere stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK.  
+Ağaç denetimi ([CTreeCtrl](../mfc/reference/ctreectrl-class.md)) stilleri bir ağaç denetimin görünümünü yönlerini yönetir. Ağaç denetimi oluştururken ilk stilleri ayarlayın. Alabilir ve kullanarak oluşturduktan sonra ağaç denetimi stilleri değiştirme [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) ve [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) belirterek Windows işlevlerini **GWL_STYLE** için *nIndex* parametresi. Stilleri tam bir listesi için bkz. [ağaç görünümü denetiminin pencere stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK.  
   
  **TVS_HASLINES** stili alt öğeleri karşılık gelen kendi üst öğesine bağlamak satırları çizerek bir ağaç denetimin hiyerarşi grafik gösterimi geliştirir. Bu stil hiyerarşinin kökündeki öğeleri bağlamak değil. Bunu yapmak için birleştirmeniz gerekir **TVS_HASLINES** ve **TVS_LINESATROOT** stilleri.  
   

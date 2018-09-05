@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b30aa51f284d216332225664d07d7692bd042a1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 456772306c854d4450a7be3996285e90a1d5783f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223071"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679470"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 Bir dock sitesine yerleştirilebilen veya sekmeli bir bölmeye eklenebilen bir bölme uygular.  
@@ -213,7 +213,7 @@ class CDockablePane : public CPane
 |[CDockablePane::IsTabLocationBottom](#istablocationbottom)|Sekmeleri üstünde veya altında bölmesinin bulunduğu olup olmadığını belirtir.|  
 |[CDockablePane::IsTracked](#istracked)|Kullanıcı tarafından bir bölme sürüklediğiniz olup olmadığını belirtir.|  
 |[CDockablePane::IsVisible](#isvisible)|Geçerli bölmesi görünür olup olmadığını belirler.|  
-|[CDockablePane::LoadState](https://msdn.microsoft.com/96110136-4f46-4764-8a76-3b4abaf77917)|Dahili olarak kullanılır.|  
+|[CDockablePane::LoadState](#loadstate)|Dahili olarak kullanılır.|  
 |[CDockablePane::OnAfterChangeParent](#onafterchangeparent)|Üst bölme değiştiğinde framework tarafından çağırılır. (Geçersiz kılmaları [CPane::OnAfterChangeParent](../../mfc/reference/cpane-class.md#onafterchangeparent).)|  
 |[CDockablePane::OnAfterDockFromMiniFrame](#onafterdockfromminiframe)|Kayan bir takma çubuğu bir çerçeve penceresinde noktaları framework tarafından çağırılır.|  
 |[CDockablePane::OnBeforeChangeParent](#onbeforechangeparent)|Bölmenin üst değiştirilmek üzereyken framework tarafından çağırılır. (Geçersiz kılmaları [CPane::OnBeforeChangeParent](../../mfc/reference/cpane-class.md#onbeforechangeparent).)|  
@@ -1153,7 +1153,18 @@ virtual BOOL IsVisible() const;
  Yerleştirilebilir bölmesinde autohide modundaysa ve `IsHideInAutoHideMode` döndürür doğru görünürlük durumu ilgili autohide araç çubuğunun görünürlüğünü durumuna bağlıdır.  
   
  Yerleştirilebilir bölmesinde autohide modunda değilse, görünürlük durumu tarafından belirlenir [CBasePane::IsVisible](../../mfc/reference/cbasepane-class.md#isvisible) yöntemi.  
-  
+
+## ##  <a name="loadstate"></a>  CDockablePane::LoadState  
+Yalnızca iç kullanım içindir. Daha ayrıntılı bilgi için Visual Studio yüklemenizin VC\atlmfc\src\mfc klasöründe bulunan kaynak koduna bakın.
+
+```
+virtual BOOL LoadState(
+   LPCTSTR lpszProfileName = NULL,
+   int nIndex = -1,
+   UINT uiID = (UINT) -1
+);  
+```
+
 ##  <a name="m_bdisableanimation"></a>  CDockablePane::m_bDisableAnimation  
  Otomatik Gizle animasyon yerleştirilebilir bölmesinin devre dışı bırakılıp bırakılmadığını belirtir.  
   

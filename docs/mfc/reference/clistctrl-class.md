@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d798f78addcc457303b42d80f79f77aef67305a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 094cf61c2535ef40991d2ab6ab9a1bc4a9dff014
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199786"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684963"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 "Her biri bir simge (bir görüntü listesinden) ve bir etiketten oluşan bir koleksiyonunu görüntüleyen öğeleri bir liste görünümü denetimi," işlevselliğini kapsüller.  
@@ -653,7 +653,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Liste denetiminin stilini belirtir. Liste Denetim stillerini herhangi bir birleşimini denetimi için geçerlidir. Bu stiller tam bir listesi için bkz. [liste görünümü pencere stilleri](/windows/desktop/Controls/list-view-window-styles) Windows SDK.  

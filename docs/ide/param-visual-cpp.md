@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f8fae2d8af1b7121290bfbd42b2668afc50034c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 69e2950fcc0b29fb819445f3216ef262a2657e4a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217259"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686427"
 ---
 # <a name="ltparamgt-visual-c"></a>&lt;param&gt; (Visual C++)
 \<Param > Etiket kullanılmalıdır yöntemi bildirimi için açıklama parametrelerden biri yöntemi tanımlamak için.  
@@ -42,7 +42,7 @@ ms.locfileid: "43217259"
  Parametre için bir açıklama.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Metni \<param > etiketi IntelliSense içinde gösterilecek [Nesne Tarayıcısı](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470)ve kod açıklaması Web raporu.  
+ Metni \<param > etiketi IntelliSense içinde gösterilecek [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code)ve kod açıklaması Web raporu.  
   
  Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   

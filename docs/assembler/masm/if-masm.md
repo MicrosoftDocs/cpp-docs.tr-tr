@@ -1,7 +1,7 @@
 ---
 title: IF (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,31 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76bf63b917a65a5a41fd261cfc861a77b0f0d16f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ca0cce834924f7fc147b1ef301d5bd345dfd2973
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054009"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685313"
 ---
 # <a name="if-masm"></a>IF (MASM)
-Veren bütünleştirilmiş *if* varsa *İfade1* değeri true (sıfır) veya *elseifstatements* varsa *İfade1* false (0) ve *İfade2* doğrudur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   IF expression1  
-ifstatements  
-[[ELSEIF expression2  
-   elseifstatements]]  
-[[ELSE  
-   elsestatements]]  
-ENDIF  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- İçin aşağıdaki yönergeleri yerine [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI** , **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**, ve **ELSEIFNDEF** . İsteğe bağlı olarak derler *elsestatements* önceki ifade yanlış olması durumunda. İfadeler derleme zamanında değerlendirildiğini unutmayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Derlemenin verir *if* varsa *İfade1* true (sıfırdan farklı) veya *elseifstatements* varsa *İfade1* yanlış (0) ve *expression2* geçerlidir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> Eğer *İfade1*<br/>
+> *if*<br/>
+> [[ELSEIF *expression2*<br/>
+> *elseifstatements*]]<br/>
+> [[ELSE<br/>
+> *elsestatements*]]<br/>
+> ENDIF
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki yönergeleri için yerine kullanılabileceği [ELSEIF](../../assembler/masm/elseif-masm.md): **ELSEIFB**, **ELSEIFDEF**, **ELSEIFDIF**, **ELSEIFDIFI** , **ELSEIFE**, **ELSEIFIDN**, **ELSEIFIDNI**, **ELSEIFNB**, ve **ELSEIFNDEF** . İsteğe bağlı olarak çeviren *elsestatements* önceki ifade false ise. İfadenin derleme zamanında değerlendirildiğini unutmayın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: __Asm bloklarını C makroları olarak tanımlama | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -16,53 +16,55 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69e1e7f2d4b980045a4e8993e39a69fc353a4f39
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0cb9ef740ec8b521771c84a1edd194a6ee6ace4f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050499"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683103"
 ---
 # <a name="defining-asm-blocks-as-c-macros"></a>__asm Bloklarını C Makroları olarak tanımlama
-**Microsoft özel**  
-  
- C makroları kaynak kodunuza bütünleştirilmiş kodu eklemek için kolay bir yol sunar ancak makro tek bir mantıksal satıra genişlettiğinden bunlar ek dikkatli talep. Sorunsuz makrolar oluşturmak için bu kurallar izleyin:  
-  
--   İçine `__asm` ayraçlar içinde engelleyin.  
-  
--   PUT `__asm` anahtar sözcüğü her derleme yönergesi önünde.  
-  
--   Eski Tarz C açıklamaları kullanın ( `/* comment */`) derleme stili açıklamaları yerine ( `; comment`) veya tek satırlık C açıklamaları ( `// comment`).  
-  
- Göstermek için aşağıdaki örnekte basit makrosu tanımlar:  
-  
-```  
-#define PORTIO __asm      \  
-/* Port output */         \  
-{                         \  
-   __asm mov al, 2        \  
-   __asm mov dx, 0xD007   \  
-   __asm out dx, al       \  
-}  
-```  
-  
- İlk bakışta son üç `__asm` anahtar sözcükler gibi görünebilir gereksiz. Makro tek bir satıra genişlettiğinden bunlar, ancak gerekir:  
-  
-```  
-__asm /* Port output */ { __asm mov al, 2  __asm mov dx, 0xD007 __asm out dx, al }  
-```  
-  
- Üçüncü ve dördüncü `__asm` anahtar sözcükleri deyimi ayırıcı olarak gereklidir. İçinde yalnızca deyimi ayırıcılar tanınan `__asm` taşlarıdır yeni satır karakteri ve `__asm` anahtar sözcüğü. Bir mantıksal satır makro olarak tanımlanan bir blok bağlı olduğundan, her talimatıyla ayırmalısınız `__asm`.  
-  
- Küme ayraçları de gereklidir. Bunları atlarsanız, derleyicinin C veya C++ deyimleri makrosu çağırma sağındaki aynı satırda çakışabilir. Kapatılan parantez derleyici burada bütünleştirilmiş kodu durdurur ve onu bildiremez C veya C++ deyimleri görür `__asm` bloğu derleme yönergeleri olarak.  
-  
- Noktalı virgül Başlat derleme stili açıklamaları (**;**) satırın sonuna kadar devam edin. Her şeyi yoksayar derleyici açıklama, tüm mantıksal satırın sonuna sonra çünkü bu makroları sorunlara neden olur. Aynı tek satırlı C veya C++ açıklamaları geçerlidir ( `// comment`). Hataları önlemek için eski Tarz C açıklamaları kullanın ( `/* comment */`) içinde `__asm` makroları olarak tanımlanan engeller.  
-  
- Bir `__asm` C makrosu bağımsız değişkenleri alabilir olarak yazılmış bloğu. Bir sıradan C makrosu, ancak, farklı bir `__asm` makrosu bir değer döndüremiyor. Bu nedenle C veya C++ ifadelerinde bu tür makroları kullanamazsınız.  
-  
- Bu tür makroları ölçüsüzce çağırma kullanılamaz dikkat edin. Örneğin, bir derleme dili makrosu bir işlev Çağırma ile bildirilen `__fastcall` kuralı beklenmeyen sonuçlara neden olabilir. (Bkz [kullanma ve satır içi derlemede kayıtları koruma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md).)  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)
+
+**Microsoft'a özgü**
+
+C makroları kaynak kodunuza bütünleştirilmiş kodu eklemek için kullanışlı bir yol sunar, ancak bir makro tek bir mantıksal satıra genişlettiğinden, çok dikkatli talep. Makrolar sorunsuz oluşturmak için bu kuralları izleyin:
+
+- İçine `__asm` bloğunu ayraç içinde.
+
+- PUT `__asm` her bir derleme yönergesinin önüne anahtar sözcüğü.
+
+- Eski stil C açıklamaları kullanın ( `/* comment */`) yerine derleme stili açıklamaları ( `; comment`) veya tek satırlık C açıklamaları ( `// comment`).
+
+Aşağıdaki örnek, göstermek için basit bir makro tanımlar:
+
+```cpp
+#define PORTIO __asm      \
+/* Port output */         \
+{                         \
+   __asm mov al, 2        \
+   __asm mov dx, 0xD007   \
+   __asm out dx, al       \
+}
+```
+
+İlk bakışta son üç `__asm` anahtar sözcükleri gereksiz görünüyor. Tek bir satıra makro genişler çünkü bunlar, ancak gereklidir:
+
+```cpp
+__asm /* Port output */ { __asm mov al, 2  __asm mov dx, 0xD007 __asm out dx, al }
+```
+
+Üçüncü ve dördüncü `__asm` anahtar sözcükler, deyim ayırıcısı olarak gereklidir. İçinde yalnızca bir deyim ayırıcısı tanınan `__asm` taşlarıdır yeni satır karakteri ve `__asm` anahtar sözcüğü. Makro olarak tanımlanan bir blok mantıksal bir satır olduğundan, her yönerge ile ayrı `__asm`.
+
+Küme ayraçları de gereklidir. Bunları atlarsanız, derleyici C veya C++ deyimlerinin makro çağrısı sağındaki aynı satırda çakışabilir. Kapanış ayracı derleyici burada bütünleştirilmiş kodu durdurur ve bu bildiremez C veya C++ deyimlerinin görür `__asm` blok olarak derleme yönergeleri.
+
+Noktalı virgül ile başlayan açıklamaları bütünleştirilmiş kod stili (**;**) satırın sonuna kadar devam edin. Her şeyi yoksayar derleyici yorumundan mantıksal satırın sonuna kadar çünkü bu makrolar sorunlara neden olur. C veya C++ tek satırlı yorumlar aynı geçerlidir ( `// comment`). Hataları önlemek için eski stil C açıklamaları kullanın ( `/* comment */`) içinde `__asm` blokları makrolar tanımlanır.
+
+Bir `__asm` C makro bağımsız değişken alabilir olarak yazılmış bir blok. Bir normal C makrosu, ancak farklı bir `__asm` makrosu değer döndüremez. Bu nedenle, C veya C++ ifadelerinde bu tür makroları kullanamazsınız.
+
+Bu tür makroları incelemelerin çağırma kullanılamaz dikkat edin. Örneğin, bir derleme dili makro bir işlev Çağırma ile bildirilen `__fastcall` kuralı, beklenmeyen sonuçlara neden olabilir. (Bkz [satır içi bütünleştirilmiş kodda kayıtları kullanma ve koruma](../../assembler/inline/using-and-preserving-registers-in-inline-assembly.md).)
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>

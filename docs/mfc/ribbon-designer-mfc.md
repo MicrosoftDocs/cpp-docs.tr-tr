@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0886f020be80ae417cd44a5b5cb5116198ce6a1e
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: f0a812ff5304288a2a7c25edeb07d76a4d06ded8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464873"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683021"
 ---
 # <a name="ribbon-designer-mfc"></a>Şerit Tasarımcısı (MFC)
-Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında şeritler özelleştirme sağlar. Şerit, mantıksal gruplarda komutları düzenleyen bir kullanıcı arabirimi (UI) öğesidir. Bu grupların bir Şeritte ayrı sekmeler pencerenin üst kısmında görünür. Şerit menü çubuğu ve araç çubukları değiştirir. Şerit, uygulamanın kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için [şeritler](http://go.microsoft.com/fwlink/p/?linkid=129233). Aşağıdaki çizim Şerit gösterir.  
+Şerit Tasarımcısı oluşturmanızı ve MFC uygulamalarında şeritler özelleştirme sağlar. Şerit, mantıksal gruplarda komutları düzenleyen bir kullanıcı arabirimi (UI) öğesidir. Bu grupların bir Şeritte ayrı sekmeler pencerenin üst kısmında görünür. Şerit menü çubuğu ve araç çubukları değiştirir. Şerit, uygulamanın kullanılabilirliğini önemli ölçüde artırabilir. Daha fazla bilgi için [şeritler](/windows/desktop/uxguide/cmd-ribbons). Aşağıdaki çizim Şerit gösterir.  
   
  ![MFC Şerit kaynak denetimi](../mfc/media/ribbon_no_callouts.png "ribbon_no_callouts")  
   

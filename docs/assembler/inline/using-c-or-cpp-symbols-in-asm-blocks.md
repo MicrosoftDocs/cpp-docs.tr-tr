@@ -1,7 +1,7 @@
 ---
 title: __Asm bloklarında C veya C++ simgelerini kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -18,28 +18,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 746614de653649747bf20ae4c223e5687ee53f5c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8ba8426e2a7ae1152a41fafa0c239498801c6e4d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049433"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678899"
 ---
 # <a name="using-c-or-c-symbols-in-asm-blocks"></a>__asm Bloklarında C veya C++ Simgelerini Kullanma
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bir `__asm` blok herhangi bir C veya C++ simge blok göründüğü kapsamında başvurabilir. (C ve C++ simgelerdir değişken adları, işlev adları ve etiketleri; sembolik sabitler olmayan adları veya `enum` üyeleri. C++ üye işlevlerini çağıramazsınız.)  
-  
- C ve C++ simgelerini kullanmak için bazı kısıtlamalar:  
-  
--   Her derleme dili bildirimi yalnızca bir C veya C++ sembol içerebilir. Birden çok simge yalnızca aynı derleme yönergesindeki görünebilir **UZUNLUĞU**, **türü**, ve **BOYUTU** ifadeler.  
-  
--   Başvurulan işlevleri bir `__asm` blok bildirilmelidir (daha önce programın örneklenmiş). Aksi takdirde derleyici işlev adları ve etiketler ayırt edemiyor `__asm` bloğu.  
-  
--   Bir `__asm` blok MASM ayrılmış sözcükler (bağımsız olarak durumda) olarak aynı yazım ile C veya C++ semboller kullanamazsınız. MASM ayrılmış sözcükler dahil yönerge adları gibi **anında** ve sı gibi adlar kaydedin.  
-  
--   Yapı ve birleşim etiketleri tanınmıyor içinde `__asm` engeller.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Bir `__asm` blok herhangi bir C veya C++ sembol blok göründüğü kapsamda başvurabilir. (C ve C++ simgeler şunlardır: değişken adları, işlev adlarını ve etiketleri; sembolik sabit olmayan adları veya `enum` üyeleri. C++ üye işlevleri çağıramazsınız.)
+
+C ve C++ sembolleri kullanımını bazı kısıtlamalar:
+
+- Her bir çevirici dil ifadesi yalnızca bir C veya C++ sembol içerebilir. Birden çok simgeleri yalnızca aynı derleme yönergesinin görünebilen **UZUNLUĞU**, **türü**, ve **BOYUTU** ifadeler.
+
+- Başvurulan işlevler bir `__asm` blok bildirilmesi gerekir (daha önce programda prototipli). Aksi halde, derleyici işlev adlarını ve Etiketler arasında ayrım yapamaz `__asm` blok.
+
+- Bir `__asm` blok MASM ayrılmış sözcük (büyük) bağımsız olarak aynı yazım denetimi ile C veya C++ simgeleri kullanamaz. MASM ayrılmış sözcükler yönerge adları gibi dahil **anında İLETME** ve sı gibi adlarını kaydedin.
+
+- Yapı ve birleşim etiketleri tanınmıyor `__asm` engeller.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

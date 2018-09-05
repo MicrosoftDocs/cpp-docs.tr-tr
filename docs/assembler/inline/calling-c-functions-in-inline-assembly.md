@@ -1,7 +1,7 @@
 ---
 title: Satır içi derlemede çağırma C işlevleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -19,54 +19,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3f6d03ba77c7a4cdb3478a1bfe8729019dea002
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: a080c05aee58a2e6ffae17d14e99c66922aa1f17
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049524"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686693"
 ---
 # <a name="calling-c-functions-in-inline-assembly"></a>Satır İçi Derlemede C İşlevlerini Çağırma
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bir `__asm` blok C Kitaplık yordamları dahil C işlevleri çağırabilir. Aşağıdaki örnek çağrıları `printf` kitaplık yordamı:  
-  
-```  
-// InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp  
-// processor: x86  
-#include <stdio.h>  
-  
-char format[] = "%s %s\n";  
-char hello[] = "Hello";  
-char world[] = "world";  
-int main( void )  
-{  
-   __asm  
-   {  
-      mov  eax, offset world  
-      push eax  
-      mov  eax, offset hello  
-      push eax  
-      mov  eax, offset format  
-      push eax  
-      call printf  
-      //clean up the stack so that main can exit cleanly  
-      //use the unused register ebx to do the cleanup  
-      pop  ebx  
-      pop  ebx  
-      pop  ebx  
-   }  
-}  
-```  
-  
- İşlev bağımsız değişkenleri yığında geçirildiğinden, gerekli bağımsız değişken yalnızca push — dize önceki örnekte işaretçileri — işlevi çağrılmadan önce. Bağımsız değişkenler, istenen sırada yığından geldikleri şekilde ters sırada atılır. C deyimi benzetmek için  
-  
-```  
-printf( format, hello, world );  
-```  
-  
- Örnek işaretçileri iter `world`, `hello`, ve `format`, o sırada ve ardından çağrıları `printf`.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)
+
+**Microsoft'a özgü**
+
+Bir `__asm` blok, C Kitaplık yordamları da dahil olmak üzere, C işlevleri çağırabilir. Aşağıdaki örnek çağrıları `printf` yordamı:
+
+```cpp
+// InlineAssembler_Calling_C_Functions_in_Inline_Assembly.cpp
+// processor: x86
+#include <stdio.h>
+
+char format[] = "%s %s\n";
+char hello[] = "Hello";
+char world[] = "world";
+int main( void )
+{
+   __asm
+   {
+      mov  eax, offset world
+      push eax
+      mov  eax, offset hello
+      push eax
+      mov  eax, offset format
+      push eax
+      call printf
+      //clean up the stack so that main can exit cleanly
+      //use the unused register ebx to do the cleanup
+      pop  ebx
+      pop  ebx
+      pop  ebx
+   }
+}
+```
+
+İşlev bağımsız değişkenleri yığında geçirildiğinden, gerekli bağımsız değişkenler yalnızca gönderme — dize işaretçileri, önceki örnekte — işlevi çağırmadan önce. Bunlar istenen sırada yığından gelmesi için bağımsız değişkenler ters sırada itilir. C deyimi benzetmek için
+
+```cpp
+printf( format, hello, world );
+```
+
+Örnek gönderim işaretçileri `world`, `hello`, ve `format`, o sırada ve ardından aramaları `printf`.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: . ENDPROLOG | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa74b469dba3bee1b4fa0a5c1e066f93826c3477
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 370db59c6be4b3f53c9596c1ca443374acd2d2c8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051657"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685428"
 ---
 # <a name="endprolog"></a>.ENDPROLOG
-Giriş bildirimlerinin sonuna işaret eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-.ENDPROLOG  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Giriş bildirimlerinin herhangi bir bölge arasında dışında kullanmak için bir hata olduğunu [PROC](../../assembler/masm/proc.md) çerçeve ve. ENDPROLOG.  
-  
- Daha fazla bilgi için bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Giriş bildirimlerinin sonuna işaret eder.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .ENDPROLOG
+
+## <a name="remarks"></a>Açıklamalar
+
+Herhangi bir giriş bildirimlerinin bir bölge arasında dışında kullanmak için bir hata olduğunu [PROC](../../assembler/masm/proc.md) çerçeve ve. ENDPROLOG.
+
+Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

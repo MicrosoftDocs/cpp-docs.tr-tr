@@ -1,7 +1,7 @@
 ---
 title: . XCREF | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 700d56d355a353025e831639bc03cc45bd237631
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8f9e77fbc074a8c030e48dc9aff73ded3612dd83
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050304"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679518"
 ---
 # <a name="xcref"></a>.XCREF
-Bkz: [. NOCREF](../../assembler/masm/dot-nocref.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.XCREF  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bkz: [. NOCREF](../../assembler/masm/dot-nocref.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+> .XCREF
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

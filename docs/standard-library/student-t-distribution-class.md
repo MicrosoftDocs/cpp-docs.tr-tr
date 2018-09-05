@@ -31,12 +31,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 309b01fac7e6461a48992ee1c2c091439353aee7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fc995da6ce25aaed35e4e3fac04c08f37acaea7a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961018"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676150"
 ---
 # <a name="studenttdistribution-class"></a>student_t_distribution Sınıfı
 
@@ -89,7 +89,7 @@ public:
 
 Dağıtım sınıfları ve üyeleri hakkında daha fazla bilgi için bkz: [ \<rastgele >](../standard-library/random.md).
 
-Öğrenci hakkında ayrıntılı bilgi için *t*-dağıtım, Wolfram MathWorld makaleye göz atın [öğrenci t dağılımı](http://go.microsoft.com/fwlink/p/?linkid=401094).
+Öğrenci hakkında ayrıntılı bilgi için *t*-dağıtım, Wolfram MathWorld makaleye göz atın [öğrenci t dağılımı](http://mathworld.wolfram.com/Studentst-Distribution.html).
 
 ## <a name="example"></a>Örnek
 

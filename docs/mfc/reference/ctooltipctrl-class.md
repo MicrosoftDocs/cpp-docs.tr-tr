@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1225ab62dfd64a991ba5ff680e86b62e7d48f8ac
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 06f0b78938534f685f14757ca16e5ad2574412f2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200080"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684813"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 Bir "araç ipucunu denetimini," tek satırlık bir uygulamada bir aracın amacını açıklayan metin görüntüleyen küçük bir açılır pencere işlevselliğini kapsüller.  
@@ -309,7 +309,7 @@ virtual BOOL CreateEx(
  Araç İpucu denetiminin stilini belirtir. Bkz: **açıklamalar** bölümünü [Oluştur](#create) daha fazla bilgi için.  
   
  *dwStyleEx*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı Aksi durumda 0.  

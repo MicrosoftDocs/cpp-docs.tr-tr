@@ -23,23 +23,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1e1bf5f1a05438ddf89af86c9b0d12e7885b901
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 063c858253c12cfedbf252a124029b8cbc16a691
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367517"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680969"
 ---
 # <a name="freelibrary-and-afxfreelibrary"></a>FreeLibrary ve AfxFreeLibrary
-Açıkça DLL çağrı bağlantı işlemleri [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188) işlev DLL modülü artık gerekli olmadığında. Bu modülün başvuru sayısını azaltır işlev ve başvuru sayısı sıfır olursa, işlemin adres alanından eşlemesini.  
+Bir DLL çağrı açıkça bir bağlantı işlemleri [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx) DLL Modulü artık gerekli olmadığında işlev. Bu modülün başvuru sayısını azaltır işlev ve başvuru sayısı sıfır olursa, işlemin adres alanından eşlemesini.  
   
- Bir MFC uygulamasında kullanmak [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) yerine `FreeLibrary` MFC uzantı DLL kaldırmak için. Arabirim (işlev prototipi) için `AfxFreeLibrary` aynı `FreeLibrary`.  
+ Bir MFC uygulamasında [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary) yerine `FreeLibrary` bir MFC uzantılı DLL kaldırılamıyor. ' % S'arabirimi (işlev prototipi) için `AfxFreeLibrary` aynı `FreeLibrary`.  
   
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
   
--   [Bir DLL'e örtük olarak bağlanma](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
+-   [DLL'ye örtük olarak bağlama](../build/linking-an-executable-to-a-dll.md#linking-implicitly)  
   
--   [Hangi bağlama yöntemini kullanacağınızı belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
+-   [Hangi bağlama yönteminin kullanılacağını belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
   
@@ -48,6 +48,6 @@ Açıkça DLL çağrı bağlantı işlemleri [FreeLibrary](http://go.microsoft.c
 -   [GetProcAddress](../build/getprocaddress.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)   
- [FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188)   
+ [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)   
+ [FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152(v=vs.85).aspx)   
  [AfxFreeLibrary](../mfc/reference/application-information-and-management.md#afxfreelibrary)

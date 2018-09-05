@@ -1,7 +1,7 @@
 ---
 title: C veya C++ verilerine __asm bloklarındaki erişme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -17,70 +17,73 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9631db3c09c19e38791a6c909be02acd1c91601b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f9e4b684c878e630de81ac712fab714dc09db5ff
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049765"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685043"
 ---
 # <a name="accessing-c-or-c-data-in-asm-blocks"></a>__asm Bloklarında C veya C++ Verilerine Erişme
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Satır içi derleme için harika bir kolaylık C veya C++ değişkenleri için ad ile başvurmak için yeteneğidir. Bir `__asm` blok blok göründüğü kapsamındaki değişken adları dahil olmak üzere tüm sembolleri başvurabilir. Örneğin, varsa C değişkeni `var` kapsam, yönergesi  
-  
-```  
-__asm mov eax, var  
-```  
-  
- değerini depolar `var` EAX içinde.  
-  
- Bir sınıf, yapı veya bileşim üyesi benzersiz bir ad varsa bir `__asm` bloğu değişkeni belirtmeden yalnızca üye adı kullanarak için başvurabilir veya `typedef` süre önce adı (**.**) işleci. Ancak, üye adı benzersiz değilse, bir değişken yerleştirmeniz gerekir veya `typedef` dönem işleci hemen önce adı. Örneğin, aşağıdaki örnek paylaşımı yapısı türler `same_name` kullanıcıların üye adı olarak:.  
-  
- Türleriyle değişkenler bildirirseniz  
-  
-```  
-struct first_type hal;  
-struct second_type oat;  
-```  
-  
- üye yapılan tüm başvuruları `same_name` değişken adı olduğundan kullanmalısınız `same_name` benzersiz değil. Ancak üye `weasel` böylece yalnızca üye adını kullanarak başvurabilirsiniz benzersiz bir adı vardır:  
-  
-```  
-// InlineAssembler_Accessing_C_asm_Blocks.cpp  
-// processor: x86  
-#include <stdio.h>  
-struct first_type  
-{  
-   char *weasel;  
-   int same_name;  
-};  
-  
-struct second_type  
-{  
-   int wonton;  
-   long same_name;  
-};  
-  
-int main()  
-{  
-   struct first_type hal;  
-   struct second_type oat;  
-  
-   __asm  
-   {  
-      lea ebx, hal  
-      mov ecx, [ebx]hal.same_name ; Must use 'hal'  
-      mov esi, [ebx].weasel       ; Can omit 'hal'  
-   }  
-   return 0;  
-}  
-```  
-  
- Değişken adı atlama yalnızca kodlama kolaylık olduğuna dikkat edin. Değişken adı mevcut olup olmadığını aynı derleme yönergeleri üretilir.  
-  
- C++ içinde veri üyeleri erişim kısıtlamalarını dikkate almaksızın erişebilir. Ancak, üye işlevleri çağrılamaz.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Satır içi derlemenin harika bir kolaylık sağlamak adına göre C veya C++ değişkenlerine başvurmak için yeteneğidir. Bir `__asm` blok kapsamlı bloğunu göründüğü değişken adları da dahil olmak üzere tüm sembolleri başvurabilir. Örneğin, C değişkeni `var` kapsamındaki yönergesi
+
+```cpp
+__asm mov eax, var
+```
+
+değerini depolar `var` eax'daki.
+
+Bir sınıf, yapı veya birleşim üyesi benzersiz bir ad varsa bir `__asm` bloğu değişkeni belirtmeden üye adı yalnızca kendisine başvurabilir veya `typedef` süre önce ad (**.**) işleci. Ancak, üye adı benzersiz değilse, bir değişken yerleştirmeniz gerekir veya `typedef` hemen önce dönem işleç adı. Örneğin, aşağıdaki örnek paylaşımı yapısı türlerini `same_name` kendi üye adıyla:.
+
+Değişkenleri türlerle bildirirseniz
+
+```cpp
+struct first_type hal;
+struct second_type oat;
+```
+
+tüm başvuruları üye `same_name` değişken adı kullanmanız gerekir çünkü `same_name` benzersiz değil. Ancak üye `weasel` benzersiz bir ad olduğundan, yalnızca üye adını kullanarak başvurabilirsiniz:
+
+```cpp
+// InlineAssembler_Accessing_C_asm_Blocks.cpp
+// processor: x86
+#include <stdio.h>
+struct first_type
+{
+   char *weasel;
+   int same_name;
+};
+
+struct second_type
+{
+   int wonton;
+   long same_name;
+};
+
+int main()
+{
+   struct first_type hal;
+   struct second_type oat;
+
+   __asm
+   {
+      lea ebx, hal
+      mov ecx, [ebx]hal.same_name ; Must use 'hal'
+      mov esi, [ebx].weasel       ; Can omit 'hal'
+   }
+   return 0;
+}
+```
+
+Değişken adı atlama yalnızca bir kodlama kullanışlı olduğunu unutmayın. Değişken adı mevcut olup olmadığını aynı derleme yönergelerini oluşturulur.
+
+C++ veri üyelerine erişim kısıtlamalarını dikkate almaksızın erişebilirsiniz. Ancak, üye işlevleri çağrılamıyor.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

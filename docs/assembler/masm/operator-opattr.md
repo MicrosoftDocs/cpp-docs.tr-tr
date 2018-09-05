@@ -1,7 +1,7 @@
 ---
 title: OPATTR işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60cff972deb70536bc570c26894b6877bce21cec
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5e9d22726ce13e8022445b15ae9a0577363fc04d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057545"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686012"
 ---
 # <a name="operator-opattr"></a>OPATTR işleci
-Mod ve kapsamını tanımlayan bir sözcük döndürür *ifade*. Düşük bayt tarafından döndürülen bayt ile özdeş olur [. TÜRÜ](../../assembler/masm/operator-dot-type.md). Yüksek bayt ek bilgiler içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-OPATTR expression  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Bir sözcük modunu ve kapsamı tanımlama döndürür *ifade*. Düşük bayt tarafından döndürülen bayt özdeş [. TÜR](../../assembler/masm/operator-dot-type.md). Yüksek bayt ek bilgiler içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> OPATTR ifadesi
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

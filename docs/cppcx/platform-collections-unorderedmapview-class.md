@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c463dbcb68b5a4b875dbb109eedc07a3b4b27c86
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2251703307c5f6ed5787227a4def42dfbcd3fc18
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203034"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684015"
 ---
 # <a name="platformcollectionsunorderedmapview-class"></a>Platform::Collections::UnorderedMapView Sınıfı
 Bir salt okunur görünüme temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  
@@ -42,7 +42,7 @@ ref class UnorderedMapView sealed;
  Eşitlik için iki anahtar değeri karşılaştıran bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::equal_to\<K >](../standard-library/equal-to-struct.md)  
   
 ### <a name="remarks"></a>Açıklamalar  
- UnorderedMapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView\<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262409) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
+ UnorderedMapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView\<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
   
 ### <a name="members"></a>Üyeler  
   
@@ -221,7 +221,7 @@ UnorderedMapView(
  UnorderedMapView tür adı.  
   
  `H`  
- Bir anahtar için bir karma değer için bir işlev nesnesi. Varsayılan olarak [std::hash\<K >](https://msdn.microsoft.com/54f67435-af9d-4217-a29d-fa4d2491a104) türleri için `std::hash` destekler.  
+ Bir anahtar için bir karma değer için bir işlev nesnesi. Varsayılan olarak [std::hash\<K >](../standard-library/hash-class.md) türleri için `std::hash` destekler.  
   
  `P`  
  Kendi eşitlik belirlemek için iki anahtarı karşılaştıran işlev nesnesi sağlayan tür. Varsayılan olarak [std::equal_to\<K >](../standard-library/equal-to-struct.md).  
@@ -237,4 +237,4 @@ UnorderedMapView(
    
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Platform::Collections Namespace](../cppcx/platform-collections-namespace.md)   
- [Windows::Foundation::IMapView](http://go.microsoft.com/fwlink/p/?LinkId=262409)
+ [Windows::Foundation::IMapView](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_)

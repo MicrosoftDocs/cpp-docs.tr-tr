@@ -1,7 +1,7 @@
 ---
 title: (MASM) SIRASINDA | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c174872d6be33441159aa326d207a79804233a8e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 91d79c6b2ad3db2dfa9fd7ddf9105afc21c92f2b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053473"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685463"
 ---
 # <a name="while-masm"></a>WHILE (MASM)
-Derleme bloğunun yineler `statements` sürece *ifade* doğrudur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   WHILE expression  
-statements  
-ENDM  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bütünleştirilmiş kod bloğunun yinelenen *deyimleri* sürece *ifade* doğrudur.
+
+## <a name="syntax"></a>Sözdizimi
+
+> SIRADA *ifadesi*<br/>
+> *Deyimleri*<br/>
+> ENDM
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

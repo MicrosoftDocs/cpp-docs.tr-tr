@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcc4ec99ea8dc7dfc0706237e274b6b96f437829
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fe0d8b5b0679e8770bda715d3d0da0eaa3b5cce3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214997"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682862"
 ---
 # <a name="cpaneframewnd-class"></a>CPaneFrameWnd sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -210,7 +210,7 @@ class CPaneFrameWnd : public CWnd
 |[CPaneFrameWnd::OnShowPane](#onshowpane)|Bir mini çerçeve bölmesinde gizli veya gösterilen framework tarafından çağırılır.|  
 |[CPaneFrameWnd::PaneFromPoint](#panefrompoint)|Bir mini çerçeve penceresi içinde bir kullanıcı tarafından sağlanan noktası içeriyorsa bir bölme döndürür.|  
 |[CPaneFrameWnd::Pin](#pin)||  
-|`CPaneFrameWnd::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.|  
+|`CPaneFrameWnd::PreTranslateMessage`|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri.|  
 |[CPaneFrameWnd::RedrawAll](#redrawall)|Tüm Mini çerçeve pencereleri yeniden çizer.|  
 |[CPaneFrameWnd::RemoveNonValidPanes](#removenonvalidpanes)|Geçerli olmayan bölmeleri kaldırmak için framework tarafından çağırılır.|  
 |[CPaneFrameWnd::RemovePane](#removepane)|Bir bölme Mini çerçeve penceresinde kaldırır.|  
@@ -532,7 +532,7 @@ virtual int GetCaptionHeight() const;
  Mini çerçeve penceresinin piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir mini çerçeve yüksekliğini belirlemek için bu yöntemi çağırın. Varsayılan olarak, yükseklik SM_CYSMCAPTION için ayarlanır. Daha fazla bilgi için [GetSystemMetrics işlevi](https://msdn.microsoft.com/library/windows/desktop/ms724385).  
+ Bir mini çerçeve yüksekliğini belirlemek için bu yöntemi çağırın. Varsayılan olarak, yükseklik SM_CYSMCAPTION için ayarlanır. Daha fazla bilgi için [GetSystemMetrics işlevi](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics).  
   
 ##  <a name="getcaptionrect"></a>  CPaneFrameWnd::GetCaptionRect  
  Bir mini çerçeve pencere başlığı sınırlayıcı dikdörtgenini hesaplar.  

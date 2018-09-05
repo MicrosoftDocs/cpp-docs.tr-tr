@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2004 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44270884c052da24c4f295323aa232a3a2e050e3
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e85ae836dbe52e9f5a698fd682ed82cba713f259
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051612"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681487"
 ---
 # <a name="ml-nonfatal-error-a2004"></a>ML Önemli Olmayan Hatası A2004
-**simge türü çakışması: tanımlayıcısı**  
-  
- [EXTERNDEF](../../assembler/masm/externdef.md) veya [etiket](../../assembler/masm/label-masm.md) yönergesi değişkeni, simge, veri yapısı veya aynı modülde ancak farklı bir türüyle tanımlanmadı etiket kullanıldı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**simge türü çakışması: tanımlayıcı**
+
+[EXTERNDEF](../../assembler/masm/externdef.md) veya [etiket](../../assembler/masm/label-masm.md) yönergesi, bir değişken, sembol, veri yapısı veya aynı modülde ancak farklı bir türü ile tanımlanmış olan etiketi kullanıldı.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

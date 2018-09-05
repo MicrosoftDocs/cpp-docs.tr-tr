@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b3f29d5b2c4343ea156d1ccd1dfbf347026a127b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 04401180cfcd82f3a699f71ba594523cf0f9cb9b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202282"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681729"
 ---
 # <a name="accelerator-editor"></a>Hızlandırıcı Düzenleyicisi
 
@@ -35,7 +35,7 @@ Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da
 
 Normalde, Hızlandırıcıları klavye kısayolları da menü veya araç çubuğunda kullanılabilir program komutları için kullanılır. Ancak, Hızlandırıcı tablosu tuş bileşimleri için ilişkili bir kullanıcı arabirimi nesnesi olmayan komutları tanımlamak için kullanabilirsiniz.
 
-Kullanabileceğiniz [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) kod anahtar komutlarını Hızlandırıcı yeteneklerinizi.
+Kullanabileceğiniz [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code) kod anahtar komutlarını Hızlandırıcı yeteneklerinizi.
 
 İle **hızlandırıcı** Düzenleyicisi, şunları yapabilirsiniz:
 

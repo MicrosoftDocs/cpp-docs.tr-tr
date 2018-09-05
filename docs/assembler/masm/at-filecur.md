@@ -1,7 +1,7 @@
 ---
 title: '@FileCur | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47438445ea1303f0e90c5db154fd055f9c989ecf
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 9d13c8048a31e504b9e1c98a42bae1d4e4e20070
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050596"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682373"
 ---
 # <a name="filecur"></a>@FileCur
-(Metin makrosu) geçerli dosyasının adı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@FileCur  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+(Metin makro) geçerli dosyanın adı.
+
+## <a name="syntax"></a>Sözdizimi
+
+> @FileCur
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

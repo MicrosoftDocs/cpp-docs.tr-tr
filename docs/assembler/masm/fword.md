@@ -1,7 +1,7 @@
 ---
 title: FWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfe4a590c9f425ef405d735a6192f5a7873c175b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 375e822f5d8b0b9c6440b92509469a75fac3b5b4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051257"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682034"
 ---
 # <a name="fword"></a>FWORD
-Ayırır ve isteğe bağlı olarak depolama 6 bayt her biri için başlatır `initializer`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[[name]] FWORD initializer [[, initializer]]...  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [DF](../../assembler/masm/df.md)
+
+Ayırır ve her biri için isteğe bağlı olarak depolama 6 bayt başlatır `initializer`.
+
+## <a name="syntax"></a>Sözdizimi
+
+> [[ad]] FWORD Başlatıcı [[, başlatıcı]]...
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[DF](../../assembler/masm/df.md)<br/>

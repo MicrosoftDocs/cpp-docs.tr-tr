@@ -1,7 +1,7 @@
 ---
-title: Veri yönergeleri ve işleçler satır içi derlemede | Microsoft Docs
+title: Veri yönergeleri ve işleçler satır içi bütünleştirilmiş kodda | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -23,18 +23,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0bd3bc686cc8cee1a02e9df936f80f542bec26bd
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 6aff2f4c5ce5e7f5592aa9ec707d002c57f0eac0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051392"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678743"
 ---
 # <a name="data-directives-and-operators-in-inline-assembly"></a>Satır İçi Derlemede Veri Yönergeleri ve İşleçler
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Ancak bir `__asm` bloğu başvuru C veya C++ veri türleri ve nesneleri, veri nesneleri MASM yönergeleri veya işleçleri ile tanımlayamazsınız. Özellikle, tanım yönergeleri kullanarak **DB**, `DW`, **GG**, `DQ`, `DT`, ve `DF`, veya işleçleri `DUP` veya  **Bu**. MASM yapılar ve kayıtları ayrıca kullanılamaz. Satır içi derleyici yönergeleri kabul etmez `STRUC`, `RECORD`, **genişliği**, veya **maskesi**.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Ancak bir `__asm` blok, C veya C++ veri türleri ve nesneleri başvurabilir, veri nesneleriyle MASM yönergeleri veya işleçleri tanımlanamaz. Özellikle, tanımı yönergeleri kullanamazsınız **DB**, `DW`, **GG**, `DQ`, `DT`, ve `DF`, ya da işleçler `DUP` veya  **Bu**. MASM yapıları ve kayıtları da kullanılamaz. Satır içi assembler yönergeleri kabul etmez `STRUC`, `RECORD`, **genişliği**, veya **maskesi**.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

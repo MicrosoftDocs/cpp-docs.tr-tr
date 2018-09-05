@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81046c8472a2a741d5e59622986326ab4b399871
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 88e44100e20ce40b343a82c7caed66387ca1bcd5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207929"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681046"
 ---
 # <a name="ltfilesystemgt"></a>&lt;dosya sistemi&gt;
 
@@ -128,7 +128,8 @@ Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](..
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](https://msdn.microsoft.com/4af7a9b0-8861-45ed-b84e-0307f0669d60) ve hedef dosya zaten mevcutsa davranışını belirler.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](../standard-library/filesystem-functions.md#copy_file) ve hedef dosya zaten mevcutsa davranışını belirler.|
+|[copy_options](../standard-library/filesystem-enumerations.md#copy_options)|İle kullanılan bir numaralandırma [copy_file](../standard-library/filesystem-functions.md#copy_file) ve hedef dosya zaten mevcutsa davranışını belirler.|
 |[directory_options](../standard-library/filesystem-enumerations.md#directory_options)|Dizin yineleyicileri için seçenekleri belirten bir sabit listesi.|
 |[file_type](../standard-library/filesystem-enumerations.md#file_type)|Dosya türleri için bir sabit listesi.|
 |[izinleri](../standard-library/filesystem-enumerations.md#perms)|İzinler ve izinleri seçenekleri iletmek için kullanılan bir bit maskesi türü|

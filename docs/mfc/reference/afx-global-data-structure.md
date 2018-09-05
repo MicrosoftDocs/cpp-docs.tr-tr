@@ -65,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d762aef0dd48f3eac8eaeeddee558c4f237b29f
-ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
+ms.openlocfilehash: 60b38ae134d761ea186b50545f9886275700dbc3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43352745"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677463"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 `AFX_GLOBAL_DATA` Yapısı, alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.  
@@ -118,7 +118,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::RegisterWindowClass](#registerwindowclass)|Belirtilen MFC pencere sınıfını kaydeder.|  
 |[AFX_GLOBAL_DATA::ReleaseTaskBarRefs](#releasetaskbarrefs)|Arabirimleri GetITaskbarList ve GetITaskbarList3 yöntemleri elde edilen serbest bırakır.|  
 |[AFX_GLOBAL_DATA::Resume](#resume)|Windows Destek yöntemlere erişmek iç işlev işaretçileri yeniden başlatır [temalar ve görsel stilleri](/windows/desktop/Controls/visual-styles-overview).|  
-|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.|  
+|[AFX_GLOBAL_DATA::SetLayeredAttrib](#setlayeredattrib)|Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemi.|  
 |[AFX_GLOBAL_DATA::SetMenuFont](#setmenufont)|Belirtilen mantıksal yazı tipi oluşturur.|  
 |[AFX_GLOBAL_DATA::ShellCreateItemFromParsingName](#shellcreateitemfromparsingname)|Oluşturur ve bir kabuk öğesi nesnesi ayrıştırma adından başlatır.|  
 |[AFX_GLOBAL_DATA::UpdateFonts](#updatefonts)|Framework tarafından kullanılan mantıksal yazı tiplerinin reintializes.|  
@@ -371,7 +371,7 @@ COLORREF GetColor(int nColor);
   
 ### <a name="parameters"></a>Parametreler   
  [in] *nColor*  
- Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) yöntemi.  
+ Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi için açıklamalara bakın.  
@@ -381,7 +381,7 @@ COLORREF GetColor(int nColor);
   
 ### <a name="see-also"></a>Ayrıca Bkz.  
 
- [GetSysColor işlevi](https://msdn.microsoft.com/library/windows/desktop/ms724371)   
+ [GetSysColor işlevi](/windows/desktop/api/winuser/nf-winuser-getsyscolor)   
  [COLORREF](/windows/desktop/gdi/colorref)   
  [GetSysColorBrush](/windows/desktop/api/winuser/nf-winuser-getsyscolorbrush)
 
@@ -697,7 +697,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
  Kaydedilecek pencere sınıfı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](https://msdn.microsoft.com/library/ddd99292-819b-4fa4-8371-b1954ed5856d).  
+ Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](exception-processing.md#afxthrowresourceexception).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dönüş değeri, virgülle ayrılmış listesidir *lpszClassNamePrefix* parametre dizesi ve geçerli uygulama örneğinin; tutamaçları onaltılı metin temsillerini ok uygulama imleci İmleç; olan bir tanımlayıcıdır IDC_ARROW ve arka plan Fırçası. MFC pencere sınıflarını kaydetme hakkında daha fazla bilgi için bkz. [AfxRegisterClass](../../mfc/reference/application-information-and-management.md#afxregisterclass).  
@@ -721,7 +721,7 @@ BOOL Resume();
  Bu yöntem, framework aldığında çağrılır [WM_POWERBROADCAST](/windows/desktop/Power/wm-powerbroadcast) ileti.  
   
 ## <a name="setlayeredattrib"></a> AFX_GLOBAL_DATA::SetLayeredAttrib
-Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540) yöntemi.  
+Windows çağırmak için basit bir yol sağlar [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes) yöntemi.  
   
   
 ```  
@@ -750,7 +750,7 @@ BOOL SetLayeredAttrib(
  
 ### <a name="see-also"></a>Ayrıca Bkz.   
  [COLORREF](/windows/desktop/gdi/colorref)   
- [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)
+ [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)
 
 ## <a name="setmenufont"></a> AFX_GLOBAL_DATA::SetMenuFont
 Belirtilen mantıksal yazı tipi oluşturur.  

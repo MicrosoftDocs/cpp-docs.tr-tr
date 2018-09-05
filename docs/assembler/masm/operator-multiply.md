@@ -1,7 +1,7 @@
 ---
-title: işleç * | Microsoft Docs
+title: operator * | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -20,22 +20,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03a4a09b78b13d41d16b1685e0ab40b431dfa2bf
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0790520267c6dc3e8e9e86d974bd6833bac731f3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056713"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678768"
 ---
-# <a name="operator-"></a>işleç *
-Döndürür *İfade1* kez *İfade2*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 * expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+# <a name="operator-"></a>operator *
+
+Döndürür *İfade1* kez *expression2*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1 * expression2
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

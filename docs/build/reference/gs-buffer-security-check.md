@@ -24,16 +24,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aa1204a6959121b3f6280433c0414f81c038548
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fdb08515d20a4de00ea35373670887e48b835e28
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379490"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678398"
 ---
 # <a name="gs-buffer-security-check"></a>/GS (Arabellek Güvenlik Denetimi)  
   
-Bir işlevin dönüş adresi, özel durum işleyici adresi ya da belirli türde bir parametre üzerine bazı arabellek taşmaları algılar. Arabellek Taşması neden arabellek boyutu kısıtlamaları zorlamaz kod yararlanmak için saldırganlar tarafından kullanılan bir tekniktir.  
+Bir işlevin dönüş adresi, özel durum işleyicisi adresini veya belirli bir türdeki parametreleri üzerine bazı arabellek taşmalarına algılar. Arabellek taşmasına neden, arabellek boyutu kısıtlamaları zorunlu kılmaz kod yararlanmak için saldırganlar tarafından kullanılan bir tekniktir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -43,25 +43,25 @@ Bir işlevin dönüş adresi, özel durum işleyici adresi ya da belirli türde 
   
 ## <a name="remarks"></a>Açıklamalar  
   
-**/GS** varsayılan olarak açıktır. Uygulamanızı hiçbir güvenlik açıklarını olmasını bekliyorsanız kullanmak **/GS-**. Hakkında daha fazla bilgi için **/GS**, bkz: [içinde derleyici güvenlik derinliği denetler](http://go.microsoft.com/fwlink/p/?linkid=7260). Arabellek Taşması algılamasını gizleme hakkında daha fazla bilgi için bkz: [safebuffers](../../cpp/safebuffers.md).  
+**/GS** varsayılan olarak açıktır. Uygulamanızın güvenlik gerçekleşmediğinden olmasını beklediğiniz kullanırsanız **/GS-**. Arabellek Taşması algılama gizleme hakkında daha fazla bilgi için bkz. [safebuffers](../../cpp/safebuffers.md).  
   
 ## <a name="security-checks"></a>Güvenlik denetimleri  
   
-Arabellek taşması sorunları gibi tabi derleyicisi tanır İşlevler, derleyici dönüş adresi önce yığın üzerinde alan ayırır. İşlev girişinde ayrılan alanı ile yüklenen bir *güvenlik tanımlama bilgisi* , hesaplanan bir kez modülü yük. İşlev Çıkışta ve 64-bit işletim sistemlerinde çerçeve geriye doğru izleme sırasında yardımcı işlev tanımlama bilgisinin değeri hala aynı olduğundan emin olmak için çağrılır. Farklı bir değer yığınının üzerine yazmaya oluşmuş olabilir gösterir. Farklı bir değer algılanırsa, işlem sonlandırıldı.  
+Arabellek taşması sorunları gibi tabi derleyici tanır İşlevler, derleyici dönüş adresi önce yığında alan ayırır. İşlev girişte ayrılan alanı ile yüklenen bir *güvenlik tanımlama bilgisi* , hesaplanır kez modülü yük. İşlevi Çıkışta ve 64-bit işletim sistemlerinde çerçeveyi geriye doğru izleme sırasında tanımlama bilgisinin değeri hala aynı olduğundan emin olmak için bir yardımcı işlev çağrılır. Yığın üzerine oluşmuş olabilir, farklı bir değer belirtir. Farklı bir değer algılanırsa, işlem sonlandırıldı.  
   
 ## <a name="gs-buffers"></a>GS arabellekler  
   
-Arabellek Taşması Güvenlik denetimi gerçekleştirilir bir *GS arabellek*. GS arabellek bunlardan biri olabilir:  
+Arabellek Güvenlik denetimi gerçekleştirilir bir *GS arabellek*. GS arabellek bunlardan biri olabilir:  
   
--   4 bayttan büyük bir dizi ikiden fazla öğe var ve bir işaretçi türü olmayan öğe türüne sahip.  
+-   4 bayt değerinden daha büyük bir dizi ikiden fazla öğe varsa ve bir öğe türüne bir işaretçi türü değil.  
   
--   Büyüklüğü 8 bayttan fazla olduğundan ve hiçbir işaretçileri içeren bir veri yapısıdır.  
+-   Boyutu 8 bayttan fazla olması ve hiçbir işaretçiler içeren veri yapısı.  
   
--   Kullanarak ayrılan arabellek [_alloca](../../c-runtime-library/reference/alloca.md) işlevi.  
+-   Kullanarak ayrılan bir arabellek [_alloca](../../c-runtime-library/reference/alloca.md) işlevi.  
   
 -   Bir sınıf veya GS arabellek içeren yapısı.  
   
-Örneğin, aşağıdaki deyimleri GS arabellekleri bildirin.  
+Örneğin, aşağıdaki deyimleri GS arabellekler bildirin.  
   
 ```cpp  
 char buffer[20];  
@@ -70,7 +70,7 @@ struct { int a; int b; int c; int d; } myStruct;
 struct { int a; char buf[20]; };  
 ```  
   
-Ancak, aşağıdaki deyimleri GS arabellekleri bildirme. İlk iki bildirimleri işaretçi türündeki öğeler içerir. Üçüncü ve dördüncü deyimleri, boyutu çok küçük diziler bildirme. Beşinci ifade bir yapı büyüklüğü platform birden fazla 8 bayt değil bir x86 bildirir.  
+Ancak, aşağıdaki deyimleri GS arabellekler bildirmeyin. İlk iki bildirimleri işaretçi türünde öğeler içerir. Üçüncü ve dördüncü deyimler dizi boyutu çok küçükse bildirin. Beşinci ifade bir yapı platformu birden fazla 8 bayt değil bir x86 üzerinde boyutu bildirir.  
   
 ```cpp  
 char *pBuf[20];  
@@ -80,57 +80,57 @@ int buf[2];
 struct { int a; int b; };  
 ```  
   
-## <a name="initialize-the-security-cookie"></a>Güvenlik tanımlama bilgisi başlatma  
+## <a name="initialize-the-security-cookie"></a>Güvenlik tanımlama bilgisi Başlat  
   
-**/GS** derleyici seçeneği tanımlama bilgisi kullanan herhangi bir işlev çalıştırmadan önce güvenlik tanımlama bilgisi başlatılması gerekir. Güvenlik tanımlama bilgisi, DLL veya EXE girişindeki hemen başlatılmalıdır. Varsayılan VCRuntime giriş noktaları kullanırsanız, bu otomatik olarak yapılır: mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, veya _DllMainCRTStartup. Bir alternatif giriş noktası kullanıyorsanız, el ile güvenlik tanımlama bilgisi çağırarak başlatmalıdır [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).  
+**/GS** derleyici seçeneği güvenlik tanımlama bilgisi tanımlama bilgisini kullanan herhangi bir işlev çalıştırılmadan önce başlatılması gerekir. Güvenlik tanımlama bilgisi, bir EXE veya DLL Giriş hemen başlatılmalıdır. Varsayılan VCRuntime giriş noktalarını kullanırsanız, bu otomatik olarak gerçekleştirilir: mainCRTStartup, wmainCRTStartup, WinMainCRTStartup, wWinMainCRTStartup, veya _DllMainCRTStartup. Alternatif bir giriş noktası kullanıyorsanız, el ile güvenlik tanımlama bilgisi çağırarak başlatmalıdır [__security_init_cookie](../../c-runtime-library/reference/security-init-cookie.md).  
   
-## <a name="what-is-protected"></a>Ne korumalı  
+## <a name="what-is-protected"></a>Neler korunuyor  
   
-**/GS** derleyici seçeneği aşağıdaki öğeleri korur:  
+**/GS** derleyici seçeneği, aşağıdaki öğeleri korur:  
   
--   İşlev çağrısının dönüş adresi.  
+-   Bir işlev çağrısının dönüş adresi.  
   
--   Bir işlev için bir özel durum işleyici adresi.  
+-   Özel durum işleyicisi bir işlevin adresi.  
   
 -   Güvenlik Açığı işlev parametreleri.  
   
-Tüm platformlarda **/GS** arabellek taşmaları dönüş adresi içine algılamaya çalışır. Arabellek aşırı çalıştırmaları daha kolay x86 hem de işlev çağrısının dönüş adresi yığında depolamak çağırma kurallarını kullanmak x64 gibi platformlardaki yararlanan.  
+Tüm platformlarda **/GS** dönüş adresi içine arabellek taşmalarını algılamaya çalışır. Arabellek taşmaları, daha kolay x86 ve bir işlev çağrısının dönüş adresi yığında depolamak çağırma kurallarını kullanan x64 gibi platformlarda doğmasına.  
   
-Bir işlev bir özel durum işleyici kullanıyorsa x86 üzerinde derleyici özel durum işleyici adresini korumak için güvenlik tanımlama bilgisi ekler. Tanımlama bilgisi, çerçeve geriye doğru izleme sırasında denetlenir.  
+Bir işlev bir özel durum işleyicisi kullanıyorsa x86 üzerinde derleyici özel durum işleyicisi adresini korumak için güvenlik tanımlama bilgisi ekler. Tanımlama bilgisi çerçeveyi geriye doğru izleme sırasında denetlenir.  
   
-**/GS** korur *savunmasız parametreleri* bir işlevdeki geçirilir. Bir işaretçi bir C++ başvuru, bir C-bir işaretçi veya GS arabellek içeren yapısı (C++ POD türü) bir güvenlik açığı parametredir.  
+**/GS** korur *savunmasız parametreleri* işleve geçirildi. Bir C-bir işaretçi veya GS arabellek içeren yapısı (C++ POD türü) bir C++ başvurusu bir işaretçi bir güvenlik açığı parametredir.  
   
-Bir güvenlik açığı parametresi, yerel değişkenleri ve tanımlama bilgisi önce tahsis edilir. Arabellek Taşması bu parametrelerin üzerine yazabilirsiniz. Ve şu parametreleri kullanan bir işlev kodda bir saldırı işlevi döndürür ve güvenlik denetimi gerçekleştirilir önce neden olabilir. Bu tehlike en aza indirmek için derleyici sırasında işlevi giriş savunmasız parametreleri bir kopyasını oluşturur ve bunları herhangi arabellekleri için depolama alanı altına yerleştirir.  
+Güvenlik açığı bulunan bir parametre, yerel değişkenleri ve tanımlama bilgisi önce ayrılır. Bu parametreleri bir arabellek taşması üzerine yazabilirsiniz. Ve bu parametreleri kullanan bir işlev kodu bir saldırı işlevi döndürür ve güvenlik denetimi gerçekleştirilir önce neden olabilir. Bu tehlike en aza indirmek için derleyici işlev girişi sırasında savunmasız parametreleri kopyasını oluşturur ve bunları tüm arabellekler için depolama alanı aşağıda koyar.  
   
-Derleyici savunmasız parametreleri kopyalarını aşağıdaki durumlarda yapmaz:  
+Derleyici, aşağıdaki durumlarda savunmasız parametreleri kopyalarını yapmaz:  
   
 -   GS arabellek içermeyen işlevleri.  
   
 -   En iyi duruma getirme ([/O seçenekler](../../build/reference/o-options-optimize-code.md)) etkin değil.  
   
--   Değişken bağımsız değişken listesi (...) çalışır.  
+-   Değişken bağımsız değişken listesi (...) işlevleri.  
   
--   İle işaretlenen işlevleri [naked](../../cpp/naked-cpp.md).  
+-   İle işaretlenen işlevler [naked](../../cpp/naked-cpp.md).  
   
--   Satır içi derleme kodunda ilk ifadesinde içeren işlevler.  
+-   İlk deyim içinde satır içi derleme kodu içeren işlevler.  
   
--   Bir parametre yalnızca bir arabellek taşması durumunda Etkilenme olma olasılığı daha şekilde kullanılır.  
+-   Bir parametresi olan bir arabellek taşması durumunda açıklardan olma olasılığı daha yollarını kullanılır.  
   
-## <a name="what-is-not-protected"></a>Ne korunmuyor  
+## <a name="what-is-not-protected"></a>Hangi korumalı değil  
   
-**/GS** derleyici seçeneği tüm arabellek taşması güvenlik saldırılarına karşı koruma sağlamaz. Örneğin, bir nesne bir arabellek ve bir vtable varsa, bir arabellek taşması vtable bozuk olabilir.  
+**/GS** derleyici seçeneği tüm arabellek taşması güvenlik saldırılarına karşı koruma sağlamaz. Örneğin, bir nesnenin bir arabellek ve bir vtable varsa, bir arabellek taşması vtable bozuk olabilir.  
   
-Kullansanız bile **/GS**, her zaman hiçbir arabellek taşmaları sahip güvenli kod yazmayı deneyin.  
+Kullansanız bile **/GS**, hiçbir arabellek taşmalarına sahip güvenli kod yazmak her zaman deneyin.  
   
-### <a name="to-set-this-compiler-option-in-visual-studio"></a>Visual Studio'da Bu derleyici seçeneği ayarlamak için  
+### <a name="to-set-this-compiler-option-in-visual-studio"></a>Bu derleyici seçeneğini Visual Studio'da ayarlamak için  
   
 1.  İçinde **Çözüm Gezgini**, projeye sağ tıklayın ve ardından **özellikleri**.  
   
-     Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
+     Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
   
-2.  İçinde **özellik sayfaları** iletişim kutusu, tıklatın **C/C++** klasör.  
+2.  İçinde **özellik sayfaları** iletişim kutusu, tıklayın **C/C++** klasör.  
   
-3.  Tıklatın **kod oluşturma** özellik sayfası.  
+3.  Tıklayın **kod oluşturma** özellik sayfası.  
   
 4.  Değiştirme **arabellek güvenlik denetimi** özelliği.  
   
@@ -140,7 +140,7 @@ Kullansanız bile **/GS**, her zaman hiçbir arabellek taşmaları sahip güvenl
   
 ## <a name="example"></a>Örnek  
   
-Bu örnek bir arabellek taşar. Bu uygulamanın çalışma zamanında başarısız olmasına neden olur.  
+Bu örnek, bir arabellek taşmasına neden. Bu, uygulamanın çalışma zamanında başarısız olmasına neden olur.  
   
 ```C  
 // compile with: /c /W1  

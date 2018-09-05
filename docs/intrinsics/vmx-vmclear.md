@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d93cff5c1be0847a6c88f0d60b89527388e4d8b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 083bb7258197bbc11118eaf3d3c3e3423c473310
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465288"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678330"
 ---
 # <a name="vmxvmclear"></a>__vmx_vmclear
 **Microsoft'a özgü**  
@@ -54,7 +54,7 @@ unsigned char __vmx_vmclear(
 ## <a name="remarks"></a>Açıklamalar  
  Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi. [__Vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`. Kullanım [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) ilk VM girin işlemi için işlevi ve [__vmx_vmresume](../intrinsics/vmx-vmresume.md) VM girin sonraki işlemleri için işlevi.  
   
- `__vmx_vmclear` İşlev, eşdeğer `VMCLEAR` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmclear` İşlev, eşdeğer `VMCLEAR` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

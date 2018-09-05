@@ -16,17 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4919d9fd947a489ee9535abd5aa57d7861ba5a37
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2fdb2bbb3681fab2bae42866df40d0ca363b7935
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198000"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676773"
 ---
 # <a name="changing-list-control-styles"></a>Liste Denetim Stillerini Değiştirme
 Liste denetimi penceresi stilini değiştirebileceğinize ([CListCtrl](../mfc/reference/clistctrl-class.md)) oluşturduktan sonra dilediğiniz zaman. Styl okna değiştirerek denetimi kullanan bir görünüm türünü değiştirin. Örneğin, Gezgin benzetmek için menü öğesi ya da araç çubuğu düğmeleri, denetimleri farklı görünümler arasında geçiş için sağladığınız: simge görünümünde, liste görünümü ve benzeri.  
   
- Örneğin, çağrı yapmak kullanıcı, menü öğesi seçtiğinde [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) geçerli bir denetimin stilini alır ve ardından çağırmak için [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) stili sıfırlanır. Daha fazla bilgi için [liste görünümü denetimi kullanarak](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
+ Örneğin, çağrı yapmak kullanıcı, menü öğesi seçtiğinde [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) geçerli bir denetimin stilini alır ve ardından çağırmak için [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) stili sıfırlanır. Daha fazla bilgi için [liste görünümü denetimi kullanarak](/windows/desktop/Controls/using-list-view-controls) Windows SDK.  
   
  Kullanılabilir stiller içinde listelenen [Oluştur](../mfc/reference/clistctrl-class.md#create). Stilleri **LVS_ICON**, **komutu etkinleştir**, **LVS_LIST**, ve **LVS_REPORT** dört liste denetimi görünümleri belirleyin.  
   

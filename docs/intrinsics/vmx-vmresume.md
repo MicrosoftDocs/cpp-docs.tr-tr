@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57bcd86606ef1d8e874abf2c7ad5f57ebf6deeed
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b9a2d898a6aad20788c0d77b42f3ca6107af5e9c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465636"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678613"
 ---
 # <a name="vmxvmresume"></a>__vmx_vmresume
 **Microsoft'a özgü**  
@@ -47,7 +47,7 @@ unsigned char __vmx_vmresume(
 ## <a name="remarks"></a>Açıklamalar  
  Bir uygulama kullanarak bir VM girin işlemi gerçekleştirebilir [__vmx_vmlaunch](../intrinsics/vmx-vmlaunch.md) veya `__vmx_vmresume` işlevi. `__vmx_vmlaunch` İşlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Clear`ve `__vmx_vmresume` işlevi, başlatma durumu yalnızca bir Windows VMCS ile kullanılabilir `Launched`. Sonuç olarak, kullanmanız [__vmx_vmclear](../intrinsics/vmx-vmclear.md) işlevi için bir Windows VMCS başlatma durumunu ayarlamak için `Clear`ve ardından `__vmx_vmlaunch` ilk VM girin işlemi işlevi ve `__vmx_vmresume` sonraki VM girmek için işlevi işlemler.  
   
- `__vmx_vmresume` İşlev, eşdeğer `VMRESUME` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. PDF belgesi, "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," için arama hakkında daha fazla bilgi için numara C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_vmresume` İşlev, eşdeğer `VMRESUME` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. PDF belgesi, "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," için arama hakkında daha fazla bilgi için numara C97063 002 belge [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

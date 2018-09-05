@@ -1,7 +1,7 @@
 ---
 title: EXITM | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 046e4a6eea3e34f028fc00dceefbaf9668d2dd2b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 33d6d4eccab3ecc4d02e821606fd721b6e1ba6ae
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051972"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686530"
 ---
 # <a name="exitm"></a>EXITM
-Geçerli bir yineleme veya makro blok genişlemesi sonlandırır ve next deyimi dışında blok derlemenin başlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-EXITM [[textitem]]   
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Makro işlevindeki *textitem* değeri döndürülür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Geçerli yineleme veya makro bloğunun genişletme sonlandırır ve sonraki deyimi dışında blok derlemenin başlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> EXITM [[textitem]]
+
+## <a name="remarks"></a>Açıklamalar
+
+Makro işlevindeki *textitem* değeri döndürülür.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

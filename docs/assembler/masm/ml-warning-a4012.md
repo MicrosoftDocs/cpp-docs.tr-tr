@@ -1,7 +1,7 @@
 ---
 title: ML uyarısı A4012 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 865b6afb6d5dd8fb8e5d7d6205a525bae2f7c934
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 083a0cd7687bc182aa9e387d6d575fa718b1b50c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056986"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682161"
 ---
 # <a name="ml-warning-a4012"></a>ML Uyarısı A4012
-**Satır numarası bilgilerini kesimin sınıfı 'CODE' olmadan**  
-  
- "CODE" ile biten bir sınıf adı olmayan bir segment yönergeleri vardı Derleyici CodeView bilgi için bu yönergeleri oluşturmadı.  
-  
- CodeView "CODE" ile bitmeyen sınıf adları olan kodda modüllerle işleyemiyor  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**kesimin sınıfı 'CODE' olmadan satır numarası bilgisi**
+
+"CODE" ile biten bir sınıf adı olmadığı bir segment yönergeleri vardı. Assembler CodeView bilgisi için bu yönergeleri oluşturmadı.
+
+CodeView kesimlerinde "CODE" ile bitmeyen sınıf adları ile kod modülleriyle işlenemiyor
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

@@ -15,19 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b19fa7166e6edad05d729c5a738a2a827086ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e121cf9738910b105f5bb1933592e67d334f8937
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212801"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685332"
 ---
 # <a name="adding-a-property-visual-c"></a>Özellik Ekleme (Visual C++)
 Kullanabileceğiniz [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md) projenize bir arabirimde bir yöntemi eklemek için.  
   
 ### <a name="to-add-a-property-to-your-object"></a>Nesneniz için bir özellik eklemek için  
   
-1.  İçinde [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), özellik eklemek istediğiniz arabirimin adını sağ tıklayın.  
+1.  İçinde [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), özellik eklemek istediğiniz arabirimin adını sağ tıklayın.  
   
     > [!NOTE]
     >  Ayrıca, proje öznitelikli sürece, kitaplık düğümünün içinde iç içe geçmiş görüntüleme özellikleri ekleyebilirsiniz.  

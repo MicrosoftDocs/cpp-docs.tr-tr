@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f67088d7e40f60922fa2fe03993a280284cbf76e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ef60fc542b38c7619ce7b65cc7f39db79ed1b228
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597006"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679030"
 ---
 # <a name="platformcomexception-class"></a>Platform::COMException sınıfı
 Uygulama yürütme sırasında gerçekleşen COM hataları temsil eder. COMException bir dizi önceden tanımlanmış, standart özel durumlar için temel sınıftır.  
@@ -113,7 +113,7 @@ public:property int HResult {    int get();}
  Hata belirten bir HRESULT değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
- HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](http://go.microsoft.com/fwlink/p/?LinkId=262045).  
+ HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes).  
 
 ## <a name="message"></a> COMException::Message özelliği
 Özel durumu açıklayan ileti.  

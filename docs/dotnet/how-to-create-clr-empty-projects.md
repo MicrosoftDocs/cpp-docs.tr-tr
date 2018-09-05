@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: bcb104b5265d79c6eac41b7632a12d99a8ec236b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c46aacc776c60b7deb03495187d08a3227f43aa4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212715"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677373"
 ---
 # <a name="how-to-create-clr-empty-projects"></a>Nasıl yapılır: Boş CLR Projeleri Oluşturma
 CLR boş proje oluşturmak için kullanın **CLR boş proje** kullanılabilir şablon **yeni proje** iletişim kutusu.  
   
 > [!NOTE]
->  IDE içindeki özellikleri görünümü, etkin ayarlarınıza ve sürümü değişebilir ve Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio'da geliştirme ayarlarını özelleştirme](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  IDE içindeki özellikleri görünümü, etkin ayarlarınıza ve sürümü değişebilir ve Yardım menüsünde açıklanana göre farklılık gösterebilir. Ayarlarınızı değiştirmek için seçin **içeri ve dışarı aktarma ayarları** üzerinde **Araçları** menüsü. Daha fazla bilgi için [Visual Studio IDE'yi kişiselleştirme](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ### <a name="to-create-a-clr-empty-project"></a>CLR boş proje oluşturmak için  
   

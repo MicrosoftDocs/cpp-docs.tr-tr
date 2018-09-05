@@ -1,7 +1,7 @@
 ---
 title: İşlemci üreticisi programlama kılavuzları | Microsoft Docs
 ms.custom: ''
-ms.date: 06/01/2018
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -12,29 +12,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55d712af448b4e18d853ced3d387918561d235b0
-ms.sourcegitcommit: d1f576a0f59678edc3d93508cf46485138332178
+ms.openlocfilehash: 56e653f1870d3139031a79180cc3a02c33b162f5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753607"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676264"
 ---
 # <a name="processor-manufacturer-programming-manuals"></a>İşlemci Üreticisi Programlama Kılavuzları
 
-Bu makalede üretilen, satışı, veya Microsoft tarafından desteklenen işlemciler programlama bilgilerini içerebilir Web sitelerine bağlantılar sağlar. Microsoft, kendi veya Web siteleri veya bunları içerik denetlemek.
+Bu makalede, üretilen, satılan, veya Microsoft tarafından desteklenen işlemciler programlama bilgileri içerebilen Web sitelerinin bağlantılarını sağlar. Microsoft, kendi veya Web siteleri veya bunları içerik denetleme.
 
 ## <a name="processor-manufacturer-websites"></a>İşlemci üreticisi Web siteleri
 
-- [AMD Geliştirici kılavuzlar, kılavuzları ve ISA belgeleri](https://go.microsoft.com/fwlink/p/?linkid=874958)
+- [AMD Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://developer.amd.com/resources/developer-guides-manuals/)
 
-- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://go.microsoft.com/fwlink/p/?LinkID=510021)
+- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://software.intel.com/articles/intel-sdm)
 
-- [Vektör uzantıları Gelişmiş Intel giriş](https://go.microsoft.com/fwlink/p/?linkid=874961)
+- [Gelişmiş vektör uzantıları Intel giriş](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
 ## <a name="remarks"></a>Açıklamalar
 
-Visual Studio ne Microsoft makro derleyici, tüm işlemcilerin destekler.
+Visual Studio ya da Microsoft Macro Assembler, tüm işlemcilerin destekler.
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="see-also"></a>Ayrıca bkz.
 
 - [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)

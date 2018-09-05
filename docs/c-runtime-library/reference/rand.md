@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5289b27ae0749d85b3e4ee60717212acc95536d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 081e380dc639ed6a814913dd42c6fc1b55041b01
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405711"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681141"
 ---
 # <a name="rand"></a>rand
 
-Geçici rastgele bir sayı, iyi bilinen ve tam olarak yeniden üretilebilir bir algoritma kullanarak oluşturur. Bu işlev program aracılığıyla daha güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Sayı oluşturulan tarafından **rand** şifreleme açısından güvenli değildir. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak [rand_s](rand-s.md) veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md).
+İyi bilinen ve tam olarak yeniden üretilebilen algoritmasını kullanarak rastgele bir sayı oluşturur. Bu işlevin daha programlı olarak güvenli bir sürümü kullanılabilir; bkz: [rand_s](rand-s.md). Oluşturulmuş sayılara **rand** şifreleme bakımından güvenli değildir. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya C++ Standart Kitaplığı'nda bildirilen işlevlerin [ \<rastgele >](../../standard-library/random.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,13 +54,13 @@ int rand( void );
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**rand** yukarıda açıklanan geçici rastgele bir sayı döndürür. Döndürülen hata yoktur.
+**rand** yukarıda açıklandığı bir sözde rastgele sayı döndürür. Döndürülen hata yok.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Rand** işlevi aralıktaki 0 geçici rastgele bir tamsayı döndürür **RAND_MAX** (32767). Kullanım [srand](srand.md) çağırmadan önce geçici rastgele sayı oluşturucu çekirdek işlevi **rand**.
+**Rand** işlevi için 0 aralığındaki bir sözde rastgele tamsayı döndürür **RAND_MAX** (32767). Kullanım [srand](srand.md) işlevini çağırmadan önce sözde rastgele sayı üretici temel **rand**.
 
-**Rand** işlevi iyi bilinen bir sıra oluşturur ve bir şifreleme işlevi olarak kullanmak için uygun değil. Daha fazla şifreleme açısından güvenli rastgele sayı oluşturma için kullanmak [rand_s](rand-s.md) veya İşlevler bildirilen C++ Standart kitaplığında [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu eksik adresleri bkz [bu videoyu](http://go.microsoft.com/fwlink/?LinkId=397615).
+**Rand** işlevi iyi bilinen bir sıra üretir ve bir şifreleme işlevi olarak kullanılmaya uygun değil. Daha fazla şifreleme yoluyla güvenli rasgele sayı üretimi için kullanmak [rand_s](rand-s.md) veya C++ Standart Kitaplığı'nda bildirilen işlevlerin [ \<rastgele >](../../standard-library/random.md). Sorun nedir hakkında bilgi için **rand** ve nasıl \<rastgele > Bu videoyu başlıklı bkz bu eksiklikleri adresleri [rand kabul zararlı](https://channel9.msdn.com/Events/GoingNative/2013/rand-Considered-Harmful).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -68,7 +68,7 @@ int rand( void );
 |-------------|---------------------|
 |**rand**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

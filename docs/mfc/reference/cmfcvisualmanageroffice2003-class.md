@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef28bc57981868eaa1cadcbead3c11c8fade57e8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 33054190e94ca7d136e319b2afc9e28c9080de05
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217095"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677982"
 ---
 # <a name="cmfcvisualmanageroffice2003-class"></a>CMFCVisualManagerOffice2003 sınıfı
 `CMFCVisualManagerOffice2003` Uygulamaya Microsoft Office 2003 görünümü verir.  
@@ -206,7 +206,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003::OnHighlightQuickCustomizeMenuButton](#onhighlightquickcustomizemenubutton)|Bu yöntem bir vurgulanan çizdiğinde özelleştirme hızlı menü düğmesine framework çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightQuickCustomizeMenuButton`.)|  
 |[CMFCVisualManagerOffice2003::OnHighlightRarelyUsedMenuItems](#onhighlightrarelyusedmenuitems)|Vurgulanan menü komutu çizdiğinde framework bu yöntemi çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnHighlightRarelyUsedMenuItems`.)|  
 |[CMFCVisualManagerOffice2003::OnUpdateSystemColors](#onupdatesystemcolors)|Sistem renkleri değiştiğinde framework bu işlevi çağırır. (Geçersiz kılmaları `CMFCVisualManagerOfficeXP::OnUpdateSystemColors`.)|  
-|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371).|  
+|[CMFCVisualManagerOffice2003::SetDefaultWinXPColors](#setdefaultwinxpcolors)|Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).|  
 |[CMFCVisualManagerOffice2003::SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Windows XP genel bir tema kullanılması gerektiğini belirtir.|  
 |[CMFCVisualManagerOffice2003::SetUseGlobalTheme](#setuseglobaltheme)|Görsel yöneticiyi genel bir tema kullanıp kullanmayacağını belirtir.|  
   
@@ -2231,7 +2231,7 @@ virtual void OnUpdateSystemColors();
  Framework WM_SYSCOLORCHANGE iletiyi işlemeyi işleminin bir parçası olarak bu yöntemi çağırır. Uygulamanızda kullanılan renkleri değiştirebilir, özel kod yürütmek istediğiniz bir türetilmiş visual Yöneticisi'nde bu yöntemi geçersiz kılın.  
   
 ##  <a name="setdefaultwinxpcolors"></a>  CMFCVisualManagerOffice2003::SetDefaultWinXPColors  
- Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371).  
+ Yerel Windows XP Tema renkleri görsel yöneticiyi kullanmanız gerekir ya da öğesinden alınan renkleri belirtir [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor).  
   
 ```  
 static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);

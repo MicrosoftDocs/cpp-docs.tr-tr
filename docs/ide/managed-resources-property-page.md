@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2fe0896a8fbd8b8c0a8f68847ee138017eaa36b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e88f7ccf6f510ad5bcc7178af87714ca22a97252
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215507"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688617"
 ---
 # <a name="managed-resources-property-page"></a>Yönetilen Kaynaklar Özellik Sayfası
 Kaynak derleyicisi için ayarları sağlar.  
@@ -42,6 +42,6 @@ Kaynak derleyicisi için ayarları sağlar.
  Erişim hakkında daha fazla bilgi için **yönetilen kaynaklar** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [RC (RC komut satırı) kullanma](https://msdn.microsoft.com/library/windows/desktop/aa381055)   
+ [RC (RC komut satırı) kullanma](/windows/desktop/menurc/using-rc-the-rc-command-line-)   
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
  [/ASSEMBLYRESOURCE (Yönetilen Kaynağı Katıştır)](../build/reference/assemblyresource-embed-a-managed-resource.md)

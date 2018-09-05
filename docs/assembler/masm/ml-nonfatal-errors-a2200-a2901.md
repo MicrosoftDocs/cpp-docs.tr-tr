@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hataları A2200-A2901 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b15efe9d7c999dcbc49747351051c851384b7e52
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 04f3bfc118611080feafa6465b9113d5e9797d26
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053395"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685477"
 ---
 # <a name="ml-nonfatal-errors-a2200-a2901"></a>ML Önemli Olmayan Hataları A2200-A2901
-ML önemli olmayan hatalar hakkında daha fazla bilgi için bkz: [ML hata iletileri](../../assembler/masm/ml-error-messages.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Önemli Olmayan Hatalar](../../assembler/masm/ml-nonfatal-errors.md)
+
+ML önemli olmayan hatalar hakkında daha fazla bilgi için bkz: [ML hata iletileri](../../assembler/masm/ml-error-messages.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Önemli Olmayan Hatalar](../../assembler/masm/ml-nonfatal-errors.md)<br/>

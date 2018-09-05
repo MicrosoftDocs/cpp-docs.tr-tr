@@ -1,7 +1,7 @@
 ---
 title: '@Model | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88132e1c83ebea33282390fa2de35d40bdf4ff03
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f49d2a4a6dd04931ad1d9bf09ffe8bfeafad8150
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050668"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684070"
 ---
 # <a name="model"></a>@Model
-1 için **çok küçük** modeli için 2 **küçük** modeli için 3 **COMPACT** model, 4 için **orta** model, 5 için **büyük**modeli için 6 **HUGE** modeli ve 7 için **DÜZ** modeli (sayısal eşitlemek).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@Model  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+1 **çok küçük** modeli için 2 **küçük** modeli için 3 **COMPACT** modeli için 4 **orta** modeli için 5 **büyük**modeli için 6 **HUGE** modeli ve 7 **DÜZ** modeli (sayısal değer).
+
+## <a name="syntax"></a>Sözdizimi
+
+> @Model
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

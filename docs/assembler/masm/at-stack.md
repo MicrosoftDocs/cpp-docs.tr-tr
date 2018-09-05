@@ -1,7 +1,7 @@
 ---
 title: '@stack | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d42d96a4860a7f177406568171af0197644e6d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c8c2b32f27145220aa4bf8973265df97ab7a31db
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052605"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683947"
 ---
 # <a name="stack"></a>@stack
-Yığınları veya uzak yığınları (metin makrosu) için yığın yakın bir yerde DGROUP için.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@stack  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+Yığını veya uzak yığınları (metin makro) YIĞINI yakın DGROUP için.
+
+## <a name="syntax"></a>Sözdizimi
+
+> @stack
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

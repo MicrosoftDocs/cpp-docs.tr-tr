@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b41646dbde21f68c2cc23dfbcf977d9f5ad06c1e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: ce106727fac6b3b9903a53fae64bee94441aa038
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467499"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685082"
 ---
 # <a name="safebuffers"></a>safebuffers
 **Microsoft'a özgü**  
@@ -36,7 +36,7 @@ __declspec( safebuffers )
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- **/GS** derleyici seçeneği, derleyicinin yığın üzerinde güvenlik denetimleri ekleyerek arabellek taşmaları için test etmek neden olur. Güvenlik denetimleri için uygun olan veri yapılarının türleri açıklanan [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md). Arabellek Taşması algılama hakkında daha fazla bilgi için bkz: [derleyici güvenlik denetimleri ayrıntılı olarak](http://go.microsoft.com/fwlink/p/?linkid=7260) MSDN Web sitesinde.  
+ **/GS** derleyici seçeneği, derleyicinin yığın üzerinde güvenlik denetimleri ekleyerek arabellek taşmaları için test etmek neden olur. Güvenlik denetimleri için uygun olan veri yapılarının türleri açıklanan [/GS (arabellek güvenlik denetimi)](../build/reference/gs-buffer-security-check.md). Arabellek Taşması algılama hakkında daha fazla bilgi için bkz: [MSVC güvenlik özellikleri](https://blogs.msdn.microsoft.com/vcblog/2017/06/28/security-features-in-microsoft-visual-c/).  
   
  Uzman düzeyde el ile kod incelemesi veya harici analiz, işlevde arabellek taşması görülmediğini belirleyebilir. Bu durumda, uygulayarak bir işlev için güvenlik denetimlerini gözardı edebileceğini **__declspec(safebuffers)** işlev bildirimine anahtar sözcüğü.  
   

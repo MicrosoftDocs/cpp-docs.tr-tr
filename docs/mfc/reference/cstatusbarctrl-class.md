@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17ca93348ab5535908ea8b2d035669f7e61cef55
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a555cc26e8857899690852743fa177a706afa0f2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221362"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677751"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 Windows ortak durum çubuğu denetimi işlevlerini sağlar.  
@@ -171,7 +171,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Durum çubuğu denetiminin stilini belirtir. Durum çubuğu denetim stilleri listelenen herhangi bir birleşimini uygulamak [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK. Bu parametre WS_CHILD stili içermelidir. Ws_vısıble stili de eklemeniz gerekir.  

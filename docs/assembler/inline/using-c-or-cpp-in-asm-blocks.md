@@ -1,7 +1,7 @@
 ---
 title: __Asm bloklarında C veya C++ kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -24,47 +24,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ed46cdf44ccacee806dd03bf7eacca26eec32d
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: 14b91a7925089f6a6ab747a9fd6a5813f9a14693
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37120956"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687105"
 ---
 # <a name="using-c-or-c-in-asm-blocks"></a>__asm Bloklarında C veya C++ Kullanma
 
-** Microsoft özel **
+** Microsoft'a özgü **
 
-Satır içi derleme yönergeleri, C veya C++ deyimleri ile bir arada kullanılabilir olduğundan, ada göre C veya C++ değişkenlere başvurun ve diğer dillere birçok öğesini kullanın.
+Satır içi derleme yönergelerini C veya C++ deyimleri ile karma olabilir çünkü C veya C++ değişkenlere adıyla başvurun ve diğer birçok dillere öğesini kullanın.
 
-Bir `__asm` blok aşağıdaki dil öğeleri kullanabilirsiniz:
+Bir `__asm` blok aşağıdaki dil öğelerini kullanabilirsiniz:
 
-- Etiketleri ve değişken ve işlev adları dahil olmak üzere sembolleri
+- Etiketleri ve değişken ve işlev adları da dahil, sembollerin
 
-- Sembolik sabitler dahil olmak üzere sabitleri ve `enum` üyeleri
+- Sembolik sabit değerler dahil olmak üzere, sabitleri ve `enum` üyeleri
 
-- Makrolar ve önişlemci yönergeleri
+- Makrolar ve ön işlemci yönergeleri
 
-- Yorumlar (her ikisi de __/ \* \* /__ ve __//__ )
+- Açıklama (her ikisi de __/ \* \* /__ ve __//__ )
 
-- (Yerde yasal MASM türü olur) adlarını yazın
+- (Her yerde yasal MASM türü olacaktır) adlarını yazın
 
-- `typedef` genellikle işleçlerle gibi kullanılan adları, **PTR** ve **türü** veya yapısı veya birleşim üyeleri belirtin
+- `typedef` işleçlerle gibi genel olarak kullanılan adları **PTR** ve **türü** veya yapı veya birleşim üyelerini belirtmek için
 
-İçinde bir `__asm` bloğu C gösterimi veya assembler taban gösterimi ile tamsayı sabitleri belirtebilirsiniz (0x100 ve 100 h eşdeğer, örneğin). Bu tanımlamanıza olanak verir (kullanarak `#define`) C sabitinde ve C veya C++ ve derleme program bölümlerinde kullanın. Sabitler de belirtebilirsiniz 0 ile önceki tarafından sekizli. Örneğin, bir sekizli sabiti 0777 belirtir.
+İçinde bir `__asm` blok, C gösterimi veya derleyici taban gösterimi ile tamsayı sabitlerini belirtmek (0x100 ve 100 h eşdeğer olan, örneğin). Bu tanımlamanızı sağlar (kullanarak `#define`) bir sabit c ve C veya C++ ve derleme program bölümlerinde kullanabilirsiniz. Sabitler (c++) belirtebilirsiniz bunları 0 ile önceki tarafından sekizlik. Örneğin, 0777 sekizlik sabiti belirtir.
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
 - [__asm Bloklarında İşleçler Kullanma](../../assembler/inline/using-operators-in-asm-blocks.md)
 
-- [__Asm bloklarını C veya C++ Symbols_in kullanarak](../../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md)
+- [__Asm bloklarında C veya C++ Symbols_in kullanma](../../assembler/inline/using-c-or-cpp-symbols-in-asm-blocks.md)
 
 - [__asm Bloklarında C veya C++ Verilerine Erişme](../../assembler/inline/accessing-c-or-cpp-data-in-asm-blocks.md)
 
 - [Satır İçi Bütünleştirilmiş Kodla İşlevler Yazma](../../assembler/inline/writing-functions-with-inline-assembly.md)
 
-**SON Microsoft özel**
+**END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)
+[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>

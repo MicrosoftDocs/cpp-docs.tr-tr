@@ -1,7 +1,7 @@
 ---
 title: SHORT işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -17,22 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f307482e602759c688ebca120a46efce7624a25
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 13ea2b0d7333bcdabc42e59ac3f3d4e4a24a0af3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056333"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686242"
 ---
 # <a name="operator-short"></a>SHORT işleci
-Türünü ayarlar *etiket* kısa için. Tüm atlar *etiket* kısa olması gerekir (için + 127 bayt -128 atlama yönergesi gelen aralıkta *etiket*).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-SHORT label  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Türünü ayarlar *etiket* kısa. Tüm atlar *etiket* kısa olması gerekir (için atlama yönergesi'den -128 bayt + 127 aralığında *etiket*).
+
+## <a name="syntax"></a>Sözdizimi
+
+> Kısa etiket
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

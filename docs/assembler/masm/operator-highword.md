@@ -1,7 +1,7 @@
 ---
 title: HIGHWORD işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab4c0904d3c7ad8156ae8e978bcfc73a236b949e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5810ee5751d4f4ea4101bef3e294921f1f0078e3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057870"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677540"
 ---
 # <a name="operator-highword"></a>HIGHWORD işleci
-Düşük 32 bit sayısı yüksek 16 bit döndürür *ifade*. MASM ifadeleri 64-bit değerlerdir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-HIGHWORD expression  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Düşük 32 bit sayısı yüksek 16 bit döndürür *ifade*. MASM ifadeleri, 64-bit değerlerdir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> HIGHWORD ifadesi
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

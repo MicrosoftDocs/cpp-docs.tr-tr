@@ -1,7 +1,7 @@
 ---
 title: BAYT (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 597a8c326006ede766d1150db91b8612463c3800
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e70879d89630321e50d0f4fd1966abf3e7de9c45
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050031"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677244"
 ---
 # <a name="byte-masm"></a>BYTE (MASM)
-Ayırır ve isteğe bağlı olarak depolama baytını her biri için başlatır `initializer`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[[name]] BYTEinitializer [[, initializer]] ...  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [DB](../../assembler/masm/db.md)   
- [SBYTE](../../assembler/masm/sbyte-masm.md)
+
+Ayırır ve isteğe bağlı olarak her biri için bir depolama baytı başlatır `initializer`.
+
+## <a name="syntax"></a>Sözdizimi
+
+> [[ad]] BYTEinitializer [[, başlatıcı]]...
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[DB](../../assembler/masm/db.md)<br/>
+[SBYTE](../../assembler/masm/sbyte-masm.md)<br/>

@@ -18,18 +18,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d58bf1d860bac7328c491164f6aeb77bed19b9cd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e85fc8207e9700f35b59bfaba62dcd699ee37dd5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195037"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676930"
 ---
 # <a name="summary-of-scope-rules"></a>Kapsam Kuralları Özeti
 Bir ad kullanımı (aşırı yükün belirlendiği noktaya kadar) kendi kapsamı içinde benzersiz olmalıdır. Ad bir işlevi gösteriyorsa, işlev numarası ve parametre türüne göre benzersiz olmalıdır. Adı kalırsa, [üye erişimi](../cpp/member-access-control-cpp.md) kuralları uygulanır.  
   
 ## <a name="constructor-initializers"></a>Oluşturucu başlatıcıları  
- Oluşturucu başlatıcıları (açıklanan [başlatma tabanları ve üyeleri](https://msdn.microsoft.com/2f71377e-2b6b-49da-9a26-18e9b40226a1)) için bunlar belirtilir oluşturucunun en dıştaki bloğunun kapsamında değerlendirilir. Bu nedenle oluşturucunun parametre adları kullanabilirler.  
+ [Oluşturucu başlatıcıları](constructors-cpp.md#member_init_list) için bunlar belirtilir oluşturucunun en dıştaki bloğunun kapsamında değerlendirilir. Bu nedenle oluşturucunun parametre adları kullanabilirler.  
   
 ## <a name="global-names"></a>Genel adlar  
  Herhangi bir işlev veya sınıf dışında sunulan veya genel birli kapsam işleciyle önekli bir nesne, işlev veya numaralandırıcı adı genel ise (`::`), ve bu ikili işleçlerde biriyle birlikte kullanılmıyorsa:  

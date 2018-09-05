@@ -12,15 +12,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cfdbff4d63197ca37976d5dcc242ac7b8ab8410
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 77a747b75f0b8c1d7d5fba6b43dd9a29f17fdc00
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194138"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676945"
 ---
 # <a name="how-to-create-and-use-ccomptr-and-ccomqiptr-instances"></a>Nasıl yapılır: CComPtr ve CComQIPtr Örnekleri Oluşturma ve Kullanma
-Klasik Windows programlamada kitaplıkları genellikle COM nesneleri (veya daha kesin olarak COM sunucuları) uygulanır. Çoğu Windows işletim sistemi bileşenleri COM sunucuları olarak uygulanır ve bu formda kitaplıkları, çok sayıda katkıda sağlar. COM temelleri hakkında daha fazla bilgi için bkz. [Bileşen Nesne Modeli (COM)](https://msdn.microsoft.com/3578ca42-a4b6-44b3-ad5b-aeb5fa61f3f4).  
+Klasik Windows programlamada kitaplıkları genellikle COM nesneleri (veya daha kesin olarak COM sunucuları) uygulanır. Çoğu Windows işletim sistemi bileşenleri COM sunucuları olarak uygulanır ve bu formda kitaplıkları, çok sayıda katkıda sağlar. COM temelleri hakkında daha fazla bilgi için bkz. [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).  
   
  Bir Bileşen Nesne Modeli (COM) nesnenin örneğini oluştururken, arabirim işaretçisi çağrıları kullanarak başvuru sayımı gerçekleştirir bir COM akıllı işaretçi depolar `AddRef` ve `Release` yok edici içinde. Etkin Şablon kitaplığı (ATL) veya Microsoft Foundation Class Kitaplığı'nı (MFC) kullanıyorsanız, ardından kullanmak `CComPtr` akıllı işaretçi. ATL veya MFC kullanmıyorsanız kullanın, ardından `_com_ptr_t`. Eşdeğer hiçbir COM olduğundan `std::unique_ptr`, hem tek sahibi hem de birden çok sahip senaryolar için bu akıllı işaretçileri kullanın. Her ikisi de `CComPtr` ve `ComQIPtr` destek rvalue başvuruları olan işlemler taşıyın.  
   

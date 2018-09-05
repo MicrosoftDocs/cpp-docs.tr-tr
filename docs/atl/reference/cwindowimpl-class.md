@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb99d0cb37fff5abe5a7eb54d3ba9c4226e5fd1c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 27ce284bee21d17101c9e93627841f2dcd6c00d4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197207"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678634"
 ---
 # <a name="cwindowimpl-class"></a>Cwindowımpl sınıfı
 Oluşturma veya bir pencere sınıflara için yöntemler sağlar.  
@@ -156,16 +156,16 @@ HWND Create(
  [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.  
   
  *dwStyle*  
- [in] Pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
+ [in] Pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.  
   
  *dwExStyle*  
- [in] Genişletilmiş pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ [in] Genişletilmiş pencere stili. Bu değer, pencerenin için nitelikler sınıfı tarafından sağlanan stil ile birleştirilir. Varsayılan değer nitelikler sınıfı stili üzerinde tam denetim verir. Olası değerler listesi için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *MenuOrID*  
  [in] Alt pencere için pencere tanımlayıcısı. Bir üst düzey pencere için bir pencere için menü tanıtıcısı. Varsayılan değer **0U**.  
   
  *lpCreateParam*  
- [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680).  
+ [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, yeni oluşturulan penceresine tanıtıcısı. Aksi takdirde NULL.  
@@ -262,7 +262,7 @@ WNDPROC m_pfnSuperWindowProc;
   
 |Pencere türü|Pencere yordamı|  
 |--------------------|----------------------|  
-|Bir pencere aracılığıyla belirtilen yeni bir pencere sınıfını esas [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) makrosu.|[DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) Win32 işlevi.|  
+|Bir pencere aracılığıyla belirtilen yeni bir pencere sınıfını esas [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) makrosu.|[DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) Win32 işlevi.|  
 |Bir pencere aracılığıyla belirtilen varolan bir sınıf değiştiren bir pencere sınıfını esas [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_superclass) makrosu.|Var olan pencereyi sınıfın pencere yordamını.|  
 |Sınıflandırılmış bir pencere.|Altsınıflanmış pencerenin özgün pencere yordamını.|  
   

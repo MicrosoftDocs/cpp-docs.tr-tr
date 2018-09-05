@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc319c2da652cd1c43f23c13456b32f978595199
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: d62669ffef0ae1e5788dcf4086a1c5b58e7728ff
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207963"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683358"
 ---
 # <a name="redistributing-visual-c-activex-controls"></a>Visual C++ ActiveX Denetimlerini Yeniden Dağıtma
 Visual C++ 6.0, ardından yeniden dağıtmak uygulamalarında kullanabileceğiniz ActiveX denetimleri sağlar. Bu denetimler, artık Visual C++'da dahil edilir. Visual C++ 6.0 için lisans sözleşmelerine göre Visual C++'da geliştirilmiş uygulamaları ile bu denetimleri yeniden dağıtabilirsiniz.  
@@ -43,8 +43,6 @@ Visual C++ 6.0, ardından yeniden dağıtmak uygulamalarında kullanabileceğini
 -   Stdole2.tlb  
   
  Bu DLL'leri hedef sistemde mevcut değilse bunları karşılık gelen işletim sistemini güncelleştirmek için öngörülen mekanizmasını kullanarak güncel almanız gerekir. Windows işletim sistemlerinde en son hizmet paketleri indirebileceğiniz [ http://windowsupdate.microsoft.com ](http://windowsupdate.microsoft.com).  
-  
- Uygulamanızı bir veritabanına bağlanan ActiveX denetimleri kullanıyorsa, Microsoft Data Access Components (MDAC) hedef sistemde yüklü olması gerekir. Daha fazla bilgi için [veritabanı destek dosyalarını yeniden dağıtma](../ide/redistributing-database-support-files.md).  
   
  Bir veritabanına bağlanan bir ActiveX denetimini kullanırken aynı zamanda veri kaynağı adı hedef bilgisayarda çoğaltmak gerekir. Program aracılığıyla işlevleriyle gibi bunu yapabilirsiniz `ConfigDSN`.  
   

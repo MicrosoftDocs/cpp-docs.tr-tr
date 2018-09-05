@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d04265e27cd569b8b390bb19377a3111fbb9c8c
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 7ae341a6e3c997870f81381cbe68f13b2384ee7e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465464"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686078"
 ---
 # <a name="obsolete-functions"></a>Kullanılmayan işlevler
 Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğerleri vardır. Bu hizmetin güncel sürümleriyle değiştirmeniz önerilir. Eski diğer işlevleri CRT kaldırılmıştır. Bu konu, kullanılmayan olarak kullanım dışı işlevleri ve Visual Studio'nun belirli bir sürümde kaldırılan işlevleri listeler.  
@@ -51,10 +51,10 @@ Belirli bir kitaplığı işlevleri artık kullanılmayan ve daha yeni eşdeğer
 |Eski işlevi|Alternatif|  
 |-----------------------|-----------------|  
 |`is_wctype`|[iswctype](../c-runtime-library/reference/isctype-iswctype-isctype-l-iswctype-l.md)|  
-|`_loaddll`|[LoadLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259187), [LoadLibraryEx](http://go.microsoft.com/fwlink/p/?LinkID=236091), veya [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|  
-|`_unloaddll`|[FreeLibrary](http://go.microsoft.com/fwlink/p/?LinkID=259188)|  
+|`_loaddll`|[LoadLibrary](https://msdn.microsoft.com/library/windows/desktop/ms684175\(v=vs.85\).aspx), [LoadLibraryEx](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa), veya [LoadPackagedLibrary](/windows/desktop/api/winbase/nf-winbase-loadpackagedlibrary)|  
+|`_unloaddll`|[FreeLibrary](https://msdn.microsoft.com/library/windows/desktop/ms683152\(v=vs.85\).aspx)|  
 |`_getdllprocaddr`|[GetProcAddress](../build/getprocaddress.md)|  
-|`_seterrormode`|[SetErrorMode](http://go.microsoft.com/fwlink/p/?LinkID=255242)|  
+|`_seterrormode`|[SetErrorMode](https://msdn.microsoft.com/en-us/library/windows/desktop/ms680621\(v=vs.85\).aspx)|  
 |`_beep`|[Bip sesi](https://msdn.microsoft.com/library/windows/desktop/ms679277\(v=vs.85\).aspx)|  
 |`_sleep`|[Uyku](/windows/desktop/api/synchapi/nf-synchapi-sleep)|  
 |`_getsystime`|[GetLocalTime](https://msdn.microsoft.com/library/windows/desktop/ms724338\(v=vs.85\).aspx)|  

@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee155bd47097dc5ac52fd00590e377e941923e5c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7e1cb0a77c04a1bfea03f742686e1b28a6e2f04c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194444"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687856"
 ---
 # <a name="emitidl"></a>emitidl
 
@@ -79,4 +79,3 @@ Daha fazla bilgi için [öznitelik bağlamları](../windows/attribute-contexts.m
 
 [Derleyici Öznitelikleri](../windows/compiler-attributes.md)  
 [Tek Başına Öznitelikler](../windows/stand-alone-attributes.md)  
-[Öznitelikleri örnekleri](https://msdn.microsoft.com/558ebdb2-082f-44dc-b442-d8d33bf7bdb8)

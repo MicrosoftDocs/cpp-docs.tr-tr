@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac4a2c7bafc25aaaf8591f38cad47df199e74c30
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0801fab2ef5cec0da42cb40e28cd5124141c1007
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196597"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686091"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 Windows ortak araç çubuğu denetimi işlevlerini sağlar.  
@@ -622,7 +622,7 @@ virtual BOOL Create(
   
 - Ws_dısabled nadiren  
   
- Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) pencere stilleri bir açıklaması için Windows SDK.  
+ Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) pencere stilleri bir açıklaması için Windows SDK.  
   
  İsteğe bağlı olarak, bir birleşimi geçerli [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles)Windows SDK içinde açıklandığı gibi.  
   
@@ -646,7 +646,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Araç çubuğu denetiminin stilini belirtir. Araç çubukları, her zaman WS_CHILD stil olması gerekir. Ayrıca, açıklandığı toolbar stilleri ve pencere stilleri herhangi bir birleşimini belirtebilirsiniz **açıklamalar** bölümünü [Oluştur](#create).  

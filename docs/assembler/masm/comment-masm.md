@@ -1,7 +1,7 @@
 ---
-title: YORUM (MASM) | Microsoft Docs
+title: AÇIKLAMA (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 417a6da629f030a65c54bffafb08144f182fd58a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c4530f938973053d40e1dbdaaefc0829a48329c1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049913"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677062"
 ---
 # <a name="comment-masm"></a>COMMENT (MASM)
-Tüm işler *metin* arasında veya sınırlayıcı bir yorum olarak aynı satır üzerinde.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      COMMENT delimiter [[text]]   
-[[text]]   
-[[text]] delimiter [[text]]  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Tüm işler *metin* arasında ya da yorum olarak sınırlayıcı ile aynı satırda.
+
+## <a name="syntax"></a>Sözdizimi
+
+> Açıklama sınırlayıcısı [[metin]]<br/>
+> [[metin]]<br/>
+> [[metin]] [[metin]] sınırlayıcısı
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ed19dd2a1b62a3682d96f8c9a596fa6a4b1b377
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 715fcc37c41251b0a42fd6508f8a358758105a1f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209439"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680201"
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 Bir dizin sağlar bir [tiled_extent](tiled-extent-class.md) nesne. Bu sınıf öğelere yerel döşeme kaynağına ve genel kaynağa göre erişmek için özelliklere sahiptir. Döşeli boşluklar hakkında daha fazla bilgi için bkz. [kullanarak kutucuk](../../../parallel/amp/using-tiles.md).  
@@ -94,7 +94,7 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 |----------|-----------------|  
 |[engel sabiti](#tiled_index__barrier)|Depoları bir [tile_barrier](tile-barrier-class.md) geçerli iş parçacığı döşemesindeki bir engeli temsil eden nesne.|  
 |||  
-|[Genel sabiti](#tiled_index__global)|Depoları bir [dizin](index-class.md) genel temsil eden 1, 2 veya 3 dereceli dizinde nesnesinin bir [kılavuz](https://msdn.microsoft.com/f7d1b6a6-586c-4345-b09a-bfc26c492cb0) nesne.|  
+|[Genel sabiti](#tiled_index__global)|Depoları bir [dizin](index-class.md) nesne büyüm genel bir kılavuz nesnesine dizinde temsil eden 1, 2 veya 3.|  
 |[yerel sabit](#tiled_index__local)|Depoları bir `index` nesnesinin varolan döşeme dizine göreli temsil eden 1, 2 veya 3 dereceli bir [tiled_extent](tiled-extent-class.md) nesne.|  
 |[sıra sabiti](#tiled_index__rank)|Boyut sayısını tutar `tiled_index` nesne.|  
 |[tile sabiti](#tiled_index__tile)|Depoları bir `index` nesnesinin boyut sayısı 1, 2 veya 3 varolan döşeme koordinatlarını temsil eden bir `tiled_extent` nesne.|  

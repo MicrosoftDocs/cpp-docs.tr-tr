@@ -1,7 +1,7 @@
 ---
 title: '@SubStr | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e03b7c4a37209217974f242e59e8e3207912ea8b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c0c11b4075929f0feec66605b090a33617e70811
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049420"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683732"
 ---
 # <a name="substr"></a>@SubStr
-Başlayarak alt dizeyi döndürür makrosu işlevi *konumu*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@SubStr( string, position [[, length]] )  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+Başlayarak alt dizeyi döndüren bir makro işlev *konumu*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> @SubStr(string, konumu [[, uzunluğu]])
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

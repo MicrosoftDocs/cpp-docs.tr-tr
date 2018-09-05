@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb157fb5c39dff7f4e06926ddd17ed38d7a5174a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d2eb6baf664c2cac7bfc1ed2c95a5fbd204d289b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218639"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686805"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -2752,7 +2752,6 @@ int main( )
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<Harita > üyeleri](https://msdn.microsoft.com/7e8f0bc2-6034-40f6-9d14-76d4cef86308)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: . KOD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59e376fc9c10ab8891b02e4da334341ae0534b73
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ff2d66cfc79e84c8c4c7cf92e117c9ac8c84a555
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051244"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682493"
 ---
 # <a name="code"></a>.CODE
-İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), bir kod kesimi başlangıcını gösterir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-.CODE [[name]]  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`name`|Kod kesimi adını belirten isteğe bağlı parametre. _TEXT küçük, küçük, sıkıştırma ve düz için varsayılan addır [modelleri](../../assembler/masm/dot-model.md). Varsayılan ad *modulename*_TEXT diğer modelleri için.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [.DATA](../../assembler/masm/dot-data.md)
+
+İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), bir kod kesimi başlangıcını gösterir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> . KOD [[ad]]
+
+#### <a name="parameters"></a>Parametreler
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`name`|Kod kesimi adını belirten isteğe bağlı parametre. _TEXT küçük, küçük, sıkıştırma ve düz varsayılan addır [modelleri](../../assembler/masm/dot-model.md). Varsayılan ad *modulename*_TEXT diğer modelleri için.|
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[.DATA](../../assembler/masm/dot-data.md)<br/>

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 282fd41602b70f743926b0fe5322346e9cdfd3fc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4bf7d4f2b62ba62d520dcf84fced1dd7e7893755
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203301"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677004"
 ---
 # <a name="project-and-solution-files"></a>Proje ve Çözüm Dosyaları
 Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur. Bunlar, çözümdeki proje dosyalarını yönetmek için kullanılır.  
@@ -40,7 +40,7 @@ Visual Studio'da bir proje oluşturduğunuzda aşağıdaki dosyalar oluşturulur
 |*PROJNAME*.sdf|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Gözatma veritabanı* dosya. Göz atma ve gezinti özellikleri gibi destekleyen **Goto tanımı**, **tüm başvuruları Bul**, ve **sınıf görünümü**. Üst bilgi dosyaları ayrıştırma tarafından oluşturulur.|  
 |*PROJNAME.* vcxproj.filters|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Filtreleri* dosya. Bu, çözüme bir dosyasının nereye yerleştirileceğini belirtir. Örneğin, bir .h dosyası yerleştirin **üst bilgi dosyaları** düğümü.|  
 |*PROJNAME.* vcxproj.user|*PROJNAME*|Çözüm Gezgini'nde görüntülenmez.|*Geçiş kullanıcı* dosya. Bir projeyi Visual Studio 2008'den geçirildikten sonra bu dosya tüm .vsprops dosyasından dönüştürülen bilgileri içerir.|  
-|*PROJNAME*.idl|*PROJNAME*|Kaynak|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](https://msdn.microsoft.com/library/windows/desktop/aa378712) Windows SDK.|  
+|*PROJNAME*.idl|*PROJNAME*|Kaynak|(Projeye özgü) Bir denetimi tür kitaplığına arabirimi tanım dili (IDL) kaynak kodunu içerir. Bu dosya, bir tür kitaplığı oluşturmak için Visual C++ tarafından kullanılır. Oluşturulan kitaplığı diğer Otomasyon istemcileri için Denetim arabirimini kullanıma sunar. Daha fazla bilgi için [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) Windows SDK.|  
 |Readme.txt|*PROJNAME*|Proje|*Beni oku* dosya. Uygulama Sihirbazı tarafından oluşturulan ve bir proje dosyalarında açıklanır.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca5a5e4d7bda9fe14362696d44137273cc020c7f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3d162aea1d000aa9e65aea253f974c38ffc85bcd
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203136"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686192"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
 Varolan bir ActiveX denetimleri (eski adı OLE denetimleri) yapmadan Internet üzerinde kullanılabilir. Ancak, performansı artırmak için denetimleri değiştirmek isteyebilirsiniz. Denetiminizi Web sayfasında kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosya ve tüm destekleyici dosyaları hedef makinede olmalıdır ya da Internet üzerinden indirilebilir. Bu kod boyutu ve önemli bir husus zaman indirme kolaylaştırır. İndirmeler imzalanmış .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  
@@ -89,7 +89,7 @@ CODEBASE="http://example.microsoft.com/acontrol.cab#version=1,
   
  Dolap dosyası tarafından işaret edilen `CODEBASE` .ocx dosya, ActiveX denetimi ve yükleme denetlemek için .inf dosyası içermelidir. Denetimi dosyanızın adını belirterek dolap dosyası ve bir .inf dosyası oluşturun. Dolap dosyası bu sistemde mevcut olmayabilir bağımlı dll içermez. Örneğin, MFC DLL'leri ayrı bir dolap dosyasında paketlenir ve denetleme .inf dosyası tarafından başvurulan.  
   
- CAB dosyasının nasıl oluşturulacağı hakkında daha fazla bilgi için bkz: [CAB dosyası oluşturma](https://msdn.microsoft.com/cc52fd09-bdf6-4410-a693-149a308f36a3).  
+ CAB dosyasının nasıl oluşturulacağı hakkında daha fazla bilgi için bkz: [CAB dosyası oluşturma](/windows/desktop/devnotes/cabinet-api-functions).  
   
 ### <a name="the-inf-file"></a>INF dosyası  
  Aşağıdaki örnek, spindial.inf listeleri destekleyici dosyaları ve sürüm bilgileri için MFC Spindial denetim. Konum MFC DLL'leri için Microsoft Web sitesine olduğuna dikkat edin. Mfc42.cab sağlanan ve Microsoft tarafından imzalanmış.  
@@ -221,7 +221,7 @@ HKEY_CLASSES_ROOT\CLSID\{06889605-B8D0-101A-91F1-00608CEAD5B3}\Implemented Categ
 ##  <a name="_core_signing_code"></a> Kod imzalama  
  Kod, beri değişmediğini güvence altına almak için imzalanmış ve kod imzalama kod kaynağı tanımlamak için tasarlanmıştır. Tarayıcı Güvenliği ayarlara bağlı olarak, kod indirilmeden önce kullanıcıların uyarılmak. Kullanıcılar belirli sertifika sahipleri veya şirket içinde uyarı vermeden indirilecek büyük/küçük kod tarafından imzalanmış güvenilir güvenmeyi tercih edebilirsiniz. Kod üzerinde oynanmasını önlemek için dijital olarak imzalanır.  
   
- Kodunuzu son oturum açmış denetiminiz güven uyarı iletileri görüntülemeden otomatik olarak indirilebilir emin olun. Kod imzalama hakkında ayrıntılı bilgi Authenticode ActiveX SDK belgelerine bakın ve bkz [CAB dosyası imzalama](https://msdn.microsoft.com/04d8b47a-8f1c-4b54-ab90-730fcdc03747).  
+ Kodunuzu son oturum açmış denetiminiz güven uyarı iletileri görüntülemeden otomatik olarak indirilebilir emin olun. Kod imzalama hakkında ayrıntılı bilgi Authenticode ActiveX SDK belgelerine bakın ve bkz [CAB dosyası imzalama](/windows/desktop/devnotes/cabinet-api-functions).  
   
  Güven ve tarayıcı güvenilirlik düzeyi ayarlara bağlı olarak, bir sertifika imzalama kişinin veya şirketin tanımlamak için görüntülenebilir. Güvenlik düzeyi none ise veya imzalı denetimin sertifika sahibinin güvenilen ise, bir sertifika görüntülenmez. Bkz [Internet Explorer tarayıcı güvenlik düzeylerini ve denetimi davranışı](#_core_internet_explorer_browser_safety_levels_and_control_behavior) ayrıntılı denetim olup indirilir ve görüntülenen bir sertifika tarayıcı güvenlik ayarı nasıl belirler.  
   

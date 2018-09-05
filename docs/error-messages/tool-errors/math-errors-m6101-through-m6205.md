@@ -12,17 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 980facfddffb9a7c55854e05e42e7e7c5ec4c889
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a0f4796b7c3d6cdc4a44326d9b4db388a12ce5a3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33326026"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683505"
 ---
 # <a name="math-errors-m6101-through-m6205"></a>Matematik Hataları M6101 - M6205
 
-Bu bölümde bir çalışma zamanı kayan nokta Matematiği kitaplığı tarafından oluşturulan hatalar başvurudur.
+Bu bölümde çalışma zamanı kayan nokta matematik kitaplığı tarafından oluşturulan hatalara bir başvurudur.
 
-Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Üzerinde hata veya uyarı numarası arayabilirsiniz [Geliştirici topluluğu](https://go.microsoft.com/fwlink/p/?linkid=820594) site. [Visual C++ dili](http://go.microsoft.com/fwlink/p/?linkid=158195) forumudur sorularınız ve C++ dili sözdizimi ve MSVC derleyici hakkındaki tartışmalara. [Visual C++ genel](http://go.microsoft.com/fwlink/p/?linkid=158194) Forumu diğer forumlarda açıklanmamaktadır Visual C++ hakkında sorular içindir. Ayrıca arama hataları ve uyarıları ve sorular [yığın taşması](http://stackoverflow.com/) çözümler bulabilirsiniz.
+Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Hata veya uyarı numarası üzerinde arayabilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com) site. [Visual C++ genel](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vcgeneral) Forumu, diğer forumlarda ele alınmamaktadır Visual C++ hakkında sorular içindir. Ayrıca arama hataları ve uyarıları ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
 
-Ek Yardım ve topluluk kaynaklarına bağlantılar için bkz: [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).
+Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).

@@ -1,7 +1,7 @@
 ---
 title: NE işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f90fe971e24b955455fa989cda8b40696532c3d4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: cefe87cad5d755c752e3ad6972a43cc568f962a4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052056"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687336"
 ---
 # <a name="operator-ne"></a>NE işleci
-True değeri döndürür (-1) olmadığını *İfade1* eşit değil *İfade2*, veya aşması durumunda false (0) döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 NE expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+(-1) true döndürür *İfade1* eşit olmadığı *expression2*, veya aksi halde false (0) döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1 NE İfade2
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

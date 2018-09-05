@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2050 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 159ed131c13166435114234b3b16a82cd4d41d1f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: bd2e0e6c2fc818ef9286fd303c07a26bdd8b4e5a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056200"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680677"
 ---
 # <a name="ml-nonfatal-error-a2050"></a>ML Önemli Olmayan Hatası A2050
-**Gerçek veya izin BCD numarası**  
-  
- Bir kayan nokta (gerçek) sayı veya İkili Kodlanmış Ondalık (BCD) sabiti dışında kullanılan veri başlatıcı olarak.  
-  
- Aşağıdakilerden biri oluştu:  
-  
--   Gerçek bir sayı veya bir BCD bir ifadede kullanıldı.  
-  
--   Bir yönerge dışında başlatmak için kullanılan gerçek bir sayı [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md), veya [TBYTE](../../assembler/masm/tbyte.md).  
-  
--   Bir yönerge dışında başlatmak için kullanılan bir BCD `TBYTE`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Gerçek veya BCD sayı izin verilmiyor**
+
+(Gerçek) kayan noktalı sayı veya İkili Kodlanmış Ondalık (BCD) sabiti dışında kullanılan veri başlatıcı olarak.
+
+Aşağıdakilerden biri oluştu:
+
+- Bir gerçek sayı veya bir BCD bir ifade kullanıldı.
+
+- Bir gerçek sayı bir yönerge dışında başlatmak için kullanılan [DWORD](../../assembler/masm/dword.md), [QWORD](../../assembler/masm/qword.md), veya [TBYTE](../../assembler/masm/tbyte.md).
+
+- Bir yönerge dışında başlatmak için kullanılan bir BCD `TBYTE`.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

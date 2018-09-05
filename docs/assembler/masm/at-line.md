@@ -1,7 +1,7 @@
 ---
 title: '@Line | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db459e0c89dbc508b39662d795f3d2f049ac4e0f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 73c31991cc429458870e0b7b3c87007d76dcf6b0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32048819"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681595"
 ---
 # <a name="line"></a>@Line
-Geçerli dosya kaynak satır numarasını (sayısal eşitlemek).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@Line  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+Geçerli dosyadaki kaynak satır numarasını (Bu sayısal değer).
+
+## <a name="syntax"></a>Sözdizimi
+
+> @Line
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

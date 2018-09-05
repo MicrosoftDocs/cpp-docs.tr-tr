@@ -163,12 +163,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a0ef98a17cdbc262ac8db90eba089601d8f8841
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b989cc55a76c1a982e0739a15d91544e5aeb4ddf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216728"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678668"
 ---
 # <a name="cwindow-class"></a>CWindow sınıfı
 Bu sınıf, bir pencere yönlendirmeye yönelik yöntemleri sağlar.  
@@ -547,10 +547,10 @@ HWND Create(
  [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.  
   
  *dwStyle*  
- [in] Pencere stili. Varsayılan değer 0'dır, yani herhangi bir stil belirtilir. Olası değerler listesi için bkz. [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
+ [in] Pencere stili. Varsayılan değer 0'dır, yani herhangi bir stil belirtilir. Olası değerler listesi için bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.  
   
  *dwExStyle*  
- [in] Genişletilmiş pencere stili. Varsayılan değer 0'dır, yani hiçbir genişletilmiş stili belirtildi. Olası değerler listesi için bkz. [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ [in] Genişletilmiş pencere stili. Varsayılan değer 0'dır, yani hiçbir genişletilmiş stili belirtildi. Olası değerler listesi için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *MenuOrID*  
  [in] Türünde bir değişken [_u_menuorıd](../../atl/reference/u-menuorid-class.md) bir menü veya bir pencere tanımlayıcısı tanıtıcısını belirtme. 0U varsayılan değerdir.  
@@ -564,7 +564,7 @@ HWND Create(
 ### <a name="remarks"></a>Açıklamalar  
  `CWindow::rcDefault` olarak tanımlanan `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.  
   
- Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) daha fazla bilgi için Windows SDK.  
+ Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) daha fazla bilgi için Windows SDK.  
   
  **Not** değeri olarak 0 kullanılıyorsa *MenuOrID* parametresi 0U belirtilmelidir (Derleyici Hatası kaçınmak için varsayılan değer).  
   
@@ -617,7 +617,7 @@ CWindow(HWND hWnd = NULL) throw();
  Başlatır [m_hWnd](#m_hwnd) üyesine *hWnd*, varsayılan olarak, NULL.  
   
 > [!NOTE]
-> `CWindow::CWindow` bir pencere oluşturmaz. Sınıflar [Cwindowımpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), ve [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) (her biri öğesinden türetilen `CWindow`) olan bir pencerede veya iletişim kutusu oluşturmak için bir yöntem sağlar ardından atanan `CWindow::m_hWnd`. Ayrıca [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Win32 işlevi.  
+> `CWindow::CWindow` bir pencere oluşturmaz. Sınıflar [Cwindowımpl](../../atl/reference/cwindowimpl-class.md), [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md), ve [Cdialogımpl](../../atl/reference/cdialogimpl-class.md) (her biri öğesinden türetilen `CWindow`) olan bir pencerede veya iletişim kutusu oluşturmak için bir yöntem sağlar ardından atanan `CWindow::m_hWnd`. Ayrıca [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Win32 işlevi.  
   
 ##  <a name="deferwindowpos"></a>  CWindow::DeferWindowPos  
  Belirtilen pencere için belirtilen birden çok pencere konumu yapısı güncelleştirir.  
@@ -644,7 +644,7 @@ BOOL DestroyWindow() throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682) Windows SDK içinde.  
+ Bkz: [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) Windows SDK içinde.  
   
  Yok `CWindow` nesnenin kendisi.  
   
@@ -1201,7 +1201,7 @@ LONG GetWindowLong(int nIndex) const throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) Windows SDK içinde.  
+ Bkz: [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) Windows SDK içinde.  
   
 > [!NOTE]
 >  Hem 32-bit hem de 64 bit Windows sürümleriyle uyumlu kod yazmak için kullanın [CWindow::GetWindowLongPtr](#getwindowlongptr).  
@@ -1328,7 +1328,7 @@ WORD GetWindowWord(int nIndex) const throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [GetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633584) Windows SDK içinde.  
+ Bkz: [GetWindowLong](/windows/desktop/api/winuser/nf-winuser-getwindowlonga) Windows SDK içinde.  
   
 ##  <a name="gotodlgctrl"></a>  CWindow::GotoDlgCtrl  
  Klavye odağı iletişim kutusundaki bir denetime ayarlar.  
@@ -1606,13 +1606,13 @@ BOOL ModifyStyle(
  [in] Pencere stilleri stilini değiştirme sırasında eklenecek belirtir.  
   
  *nFlags*  
- [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencere stilleri değiştirme TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) işlevinde kullanılabilir pencere stilleri Windows SDKfor bilgilerdir.  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) işlevinde kullanılabilir pencere stilleri Windows SDKfor bilgilerdir.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyle` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -1647,13 +1647,13 @@ BOOL ModifyStyleEx(
  [in] Genişletilmiş stiller stilini değiştirme sırasında eklenecek belirtir.  
   
  *nFlags*  
- [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ [in] Pencere yerleştirme bayraklar. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Genişletilmiş pencere stilleri değiştirme TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) genişletilmiş stiller kullanılabilir Windows SDKfor bilgilerini işlevi.  
+ Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) genişletilmiş stiller kullanılabilir Windows SDKfor bilgilerini işlevi.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -2230,7 +2230,7 @@ LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows SDK içinde.  
+ Bkz: [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows SDK içinde.  
   
 > [!NOTE]
 >  Hem 32-bit hem de 64 bit Windows sürümleriyle uyumlu kod yazmak için kullanın [CWindow::SetWindowLongPtr](#setwindowlongptr).  
@@ -2276,7 +2276,7 @@ BOOL SetWindowPos(
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK içinde.  
+ Bkz: [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK içinde.  
   
  Bu yöntem ikinci sürümünü kullanan bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin yeni konumunu, genişliğini ve yüksekliğini ayarlanacak yapısı.  
   
@@ -2311,7 +2311,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows SDK içinde.  
+ Bkz: [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows SDK içinde.  
   
 ##  <a name="showcaret"></a>  CWindow::ShowCaret  
  Sistem giriş işaretini görüntüler.  

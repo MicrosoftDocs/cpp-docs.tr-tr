@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b69c2318ec5b1dd986a71bc684e1c9adc0f4ef0f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c31dfc72e6d552cacd46f3e0b49aedc18bf4c7f2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194970"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683319"
 ---
 # <a name="creating-a-com-interface-visual-c"></a>COM Arabirimi Oluşturma (Visual C++)
 Visual C++ sihirbazları ve şablonlarını tanımlama COM arabirimlerine ve görüntüleme Otomasyon sınıfları ve COM nesneleri için kullanan projeleri oluşturmak için sağlar.  
@@ -67,7 +67,7 @@ interface IMyInterface {
   
  Bkz: [arabirimi uygulama](../ide/implementing-an-interface-visual-cpp.md) ve [nesneler ekleme ve denetimleri için ATL projesinde](../atl/reference/adding-objects-and-controls-to-an-atl-project.md) daha fazla bilgi için.  
   
- Visual C++ görüntülemek için çeşitli yollar sağlar ve [COM arabirimlerinin Düzenle](../ide/editing-a-com-interface.md) projeleriniz için tanımlanmış. [Sınıf Görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925) herhangi bir arabirim veya C++ projenize bir .idl dosyasında tanımlanan dispinterface için simgeleri görüntüler.  
+ Visual C++ görüntülemek için çeşitli yollar sağlar ve [COM arabirimlerinin Düzenle](../ide/editing-a-com-interface.md) projeleriniz için tanımlanmış. [Sınıf Görünümü](/visualstudio/ide/viewing-the-structure-of-code) herhangi bir arabirim veya C++ projenize bir .idl dosyasında tanımlanan dispinterface için simgeleri görüntüler.  
   
  ATL tabanlı COM nesne sınıfları için sınıf görünümü ATL sınıfı ve bunu uygulayan herhangi bir arabirimleri arasındaki ilişkiyi görüntülemek için ATL sınıfı içindeki COM eşlemesine okur.  
   

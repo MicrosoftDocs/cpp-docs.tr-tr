@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60eed80d9f26ad33ce7f2af48cfca0a90c7d26b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6ebae1828d102881d866e05d41f1831e35e01a51
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210257"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679253"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 Windows ortak ağaç görünümü denetimi işlevlerini sağlar.  
@@ -318,7 +318,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.  
+ Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.  
   
  *Rect*  
  Ağaç görünümü denetiminin boyutunu ve konumunu belirtir. Ya da olabilir bir [CRect](../../atl-mfc-shared/reference/crect-class.md) nesnesi veya bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı.  
@@ -356,10 +356,10 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
- Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.  
+ Ağaç görünümü denetiminin stilini belirtir. Pencere stilleri açıklanan, geçerli [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa)ve herhangi bir birleşimini [ağaç görünümü denetimi stilleri](/windows/desktop/Controls/tree-view-control-window-styles) Windows SDK içinde açıklandığı gibi.  
   
  *Rect*  
  Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  

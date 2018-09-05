@@ -1,7 +1,7 @@
 ---
 title: INCLUDELIB (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f69b241723c7c2c7bb0eb5c87835f3c3463ec664
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: aabceb1e30013052184ca4654df1fa5b19fd1412
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051003"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687608"
 ---
 # <a name="includelib-masm"></a>INCLUDELIB (MASM)
-Geçerli modülü ile bağlanması gereken bağlayıcı bildirir *libraryname*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-INCLUDELIB libraryname  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- *Libraryname* ters eğik çizgi, noktalı virgül, büyük içeriyorsa açılı ayraç gerekir-simgesi, daha az-simge, tek tırnak işareti ya da çift tırnak işareti.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Geçerli modül ile ilişkilendirilmesine bağlayıcı bildirir *libraryname*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> INCLUDELIB libraryname
+
+## <a name="remarks"></a>Açıklamalar
+
+*Libraryname* ters eğik çizgi, noktalı virgül, büyük içeriyorsa, açılı ayraçlar içine alınmalıdır-simgesi, daha az-sembol, tek tırnak işareti ya da çift tırnak işareti daha.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

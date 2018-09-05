@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d32b6e61ab0dbac6010c6ed233f2cd822e73c2d5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 27bdcea6f7ebd51f000310f4916f16bfec7840e5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220981"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686633"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -2320,7 +2320,6 @@ The multiset has elements: 10 20.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<ayarlayın > üyeleri](https://msdn.microsoft.com/0c2d57c0-173f-4204-b579-c5f06aad8b95)<br/>
 [Kapsayıcılar](../cpp/containers-modern-cpp.md)<br/>
 [C++ Standart Kitaplığında İş Parçacığı Güvenliği](../standard-library/thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](../standard-library/cpp-standard-library-reference.md)<br/>

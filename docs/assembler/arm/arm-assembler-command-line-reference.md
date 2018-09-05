@@ -1,7 +1,7 @@
 ---
 title: ARM Assembler komut satırı başvurusu | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -12,85 +12,89 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f196b4aad76c72233c179249386dbb42960b31a6
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e88f35035944ee24bed0bef8733db0e2c0139c83
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054617"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685347"
 ---
 # <a name="arm-assembler-command-line-reference"></a>ARM Assembler Komut Satırı Başvurusu
-Bu makalede Microsoft ARM assembler komut satırı bilgilerini sağlar *armasm*, ortak nesne dosyası biçimi (COFF), Microsoft uygulamasına ARMv7 Flash assembly dili derler. Bağlayıcı COFF kodu ARM assembler veya kitaplığı tarafından oluşturulan nesne kitaplıkları ile birlikte C Derleyici tarafından üretilen nesne kodu ile bağlayabilirsiniz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-armasm [[options]] sourcefile objectfile  
-```  
-  
-```  
-armasm [[options]] -o objectfile sourcefile  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `options`  
- -hataları `filename`  
- Hata ve uyarı iletileri yönlendirmek `filename`.  
-  
- -i `dir[;dir]`  
- Belirtilen dizin INCLUDE arama yoluna ekleyin.  
-  
- -önceden `directive`  
- Bir simge önceden tanımlamayı SETA, SETL veya KÜMELERİ yönergesi belirtin. Örnek: **armasm.exe-"SETA 150 COUNT" source.asm önceden**. Daha fazla bilgi için bkz: [ARM assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=246102).  
-  
- -nowarn  
- Tüm uyarı iletilerini devre dışı bırakın.  
-  
- -Yoksay `warning`  
- Belirtilen uyarı devre dışı bırakın. Olası değerler için uyarılar hakkındaki bölüme bakın.  
-  
- -Yardım  
- Komut satırı Yardım iletisi yazdırın.  
-  
- -Makine `machine`  
- PE üstbilgisinde ayarlanan için makine türünü belirtin.  Olası değerler için `machine` şunlardır:  
-**ARM**— IMAGE_FILE_MACHINE_ARMNT için makine türünü ayarlar. Bu varsayılandır.   
-**Flash**— IMAGE_FILE_MACHINE_THUMB için makine türünü ayarlar.  
-  
- -oldit  
- ARMv7 Stil Oluştur BT engeller.  Varsayılan olarak, ARMv8 uyumlu BT blokları oluşturulur.  
-  
- -aracılığıyla `filename`  
- Ek komut satırı bağımsız değişkenlerini okuma `filename`.  
-  
- -16  
- Kaynak 16 bit Flash yönergeleri birleştirin.  Bu varsayılandır.  
-  
- -32  
- Kaynak 32-bit ARM yönergeleri birleştirin.  
-  
- -g  
- Hata ayıklama bilgisi oluşturur.  
-  
- -errorReport: `option`  
- Hataları Microsoft'a bildirilir nasıl iç derleyici belirtin.  Olası değerler için `option` şunlardır:   
-**Hiçbiri**— raporları gönderme.   
-**İstemi**— raporları hemen göndermek için kullanıcıya sor.   
-**sıra**— sonraki yönetici oturum açma sırasında raporları göndermek için kullanıcıya sor. Bu varsayılandır.   
-**Gönderme**— raporları otomatik olarak gönder.  
-  
- `sourcefile`  
- Kaynak dosyanın adı.  
-  
- `objectfile`  
- Nesne (çıktı) dosyasının adı.  
-  
- Aşağıdaki örnek, tipik bir senaryoda armasm kullanımı gösterilmiştir. İlk olarak, bir nesne (.obj) dosyası bir derleme dili kaynak (.asm) dosyasını oluşturmak için armasm kullanın. Ardından, CL komut satırı C Derleyici bir kaynak (.c) dosyası derlemek için kullanın ve ayrıca ARM nesne dosyası bağlamak için bağlayıcı seçeneği belirtin.  
-  
- **armasm myasmcode.asm -o myasmcode.obj**  
-  
- **cl myccode.c/Link myasmcode.obj**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ARM Assembler tanılama iletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)   
- [ARM Assembler Yönergeleri](../../assembler/arm/arm-assembler-directives.md)
+
+Bu makalede Microsoft ARM assembler komut satırı bilgileri sağlayan *armasm*, ortak nesne dosyası biçimi (COFF), Microsoft uygulamasına ARMv7 Thumb derleme dili derler. Bağlayıcı, kitaplıkçı tarafından oluşturulan nesne kitaplıkları ile birlikte C derleyicisi veya ARM derleyicisi tarafından üretilen nesne kodu COFF koduyla bağlayabilirsiniz.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **armasm** [*seçenekleri*] *kaynakdosya* *objectfile*
+> **armasm** [*seçenekleri *] **-o** *objectfile* *kaynakdosya*
+
+### <a name="parameters"></a>Parametreler
+
+*Seçenekler*<br/>
+Sıfır veya daha fazlasını birleşimi:
+
+- **-hataları** *dosya adı*<br/>
+   Hata ve uyarı iletilerini yönlendirmek *filename*.
+
+- **-i** *dir*[**;** <em>dir</em>]<br/>
+   Belirtilen dizinlerde arama yoluna ekleyin.
+
+- **-önceden** *yönergesi*<br/>
+   Bir sembol ön tanımlamasında SETA, SETL veya KÜMELERİ yönergesi belirtin.<br/>
+   Örnek: **armasm.exe-"SETA 150 Say" source.asm ön tanımlamasında**<br/>
+   Daha fazla bilgi için [ARM derleyici armasm Başvuru Kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
+
+- **-nowarn**<br/>
+   Tüm uyarı iletilerini devre dışı bırakın.
+
+- **-Yoksay** *Uyarısı*<br/>
+   Belirtilen uyarı devre dışı bırakın. Olası değerler için uyarılar hakkındaki bölüme bakın.
+
+- **-Yardım**<br/>
+   Komut satırı yardım iletisini yazdır.
+
+- **-Makine** *makine*<br/>
+   PE üstbilgisinde ayarlamak için makine türü belirtin.  Olası değerler için *makine* şunlardır:<br/>
+   **ARM**— IMAGE_FILE_MACHINE_ARMNT için makine türünü ayarlar. Bu varsayılandır.<br/>
+   **THUMB**— IMAGE_FILE_MACHINE_THUMB için makine türünü ayarlar.
+
+- **-oldit**<br/>
+   ARMv7 stili oluşturmak BT engeller.  Varsayılan olarak, ARMv8 uyumlu BT blokları oluşturulur.
+
+- **-aracılığıyla** *dosya adı*<br/>
+   Ek komut satırı bağımsız değişkenlerini okuma *filename*.
+
+- **-16**<br/>
+   Kaynak 16-bit Thumb yönergeleri birleştirin.  Bu varsayılandır.
+
+- **-32**<br/>
+   Kaynak 32 bit ARM yönergeleri birleştirin.
+
+- **-g**<br/>
+   Hata ayıklama bilgisi üretir.
+
+- **-errorReport:** *seçeneği*<br/>
+   Nasıl iç derleyici hatalarını Microsoft'a belirtin.  Olası değerler için *seçeneği* şunlardır:<br/>
+   **Hiçbiri**— raporları gönderme.<br/>
+   **İstemi**— raporları hemen göndermek için kullanıcıya sor.<br/>
+   **Kuyruk**-sonraki yönetici oturum açma raporları göndermek için kullanıcıya sor. Bu varsayılandır.<br/>
+   **Gönderme**— raporları otomatik olarak gönder.
+
+*kaynakdosya*<br/>
+Kaynak dosyanın adı.
+
+*objectfile*<br/>
+Nesne (çıkış) dosyasının adı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki örnek, tipik bir senaryoda armasm kullanmayı gösterir. İlk olarak, bir nesne (.obj) dosyası için bir derleme dili (.asm) kaynak dosyası oluşturmak için armasm kullanın. Ardından, CL komut satırı C derleyicisi (.c) kaynak dosyasını derlemek için kullanın ve ayrıca ARM nesne dosyası bağlamak için bağlayıcı seçeneği belirtin.
+
+**armasm myasmcode.asm -o myasmcode.obj**
+
+**cl myccode.c/Link myasmcode.obj**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ARM Assembler Tanılama İletileri](../../assembler/arm/arm-assembler-diagnostic-messages.md)<br/>
+[ARM Assembler Yönergeleri](../../assembler/arm/arm-assembler-directives.md)<br/>

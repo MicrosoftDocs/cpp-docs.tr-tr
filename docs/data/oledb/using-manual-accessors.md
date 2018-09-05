@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: dceca7ead0910474b2277538066d3cbae4bc791e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c732bcf45f2dfbd4927366670aed6bfbdcfb4721
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213834"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679993"
 ---
 # <a name="using-manual-accessors"></a>El ile Çalışan Erişimcileri Kullanma
 Bilinmeyen bir komutu işlerken dört şeyler vardır:  
@@ -53,7 +53,7 @@ Bilinmeyen bir komutu işlerken dört şeyler vardır:
   
 6.  Çağrı `GetNextResult` daha fazla satır kümeleri kullanılabilir olup olmadığını belirlemek için. 2-5 arası adımları tekrarlayın.  
   
- El ile erişimci örneği için bkz: `CDBListView::CallProcedure` içinde [DBVIEWER](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) örnek.  
+ El ile erişimci örneği için bkz: `CDBListView::CallProcedure` içinde [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Erişimcileri Kullanma](../../data/oledb/using-accessors.md)

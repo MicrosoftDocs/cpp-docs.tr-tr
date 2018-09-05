@@ -12,15 +12,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ddbb68c20ade9f66215d3a60f2db7ea545409a1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 85f9d1c63f41b28982018bbe4507ff6bf87158fb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377494"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685859"
 ---
 # <a name="qvec-report-auto-vectorizer-reporting-level"></a>/Qvec-report (Otomatik Vektör Hale Getirici Raporlama Düzeyi)
-Derleyici raporlama özelliğini etkinleştirir [otomatik vektör hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) ve derleme sırasında bilgilendirici iletileri çıktı düzeyini belirtir.  
+Raporlama özelliği derleyicinin sağlar [otomatik vektör hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) ve derleme sırasında bilgi iletilerini çıktı düzeyini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -30,22 +30,22 @@ Derleyici raporlama özelliğini etkinleştirir [otomatik vektör hale getirici]
   
 ## <a name="remarks"></a>Açıklamalar  
  **/ Qvec-report: 1**  
- Bir bilgi iletisidir vectorized döngüler için çıkarır.  
+ Bir bilgi iletisidir vektörleştirildi döngüler için çıkarır.  
   
  **/ Qvec-report: 2**  
- Bir bilgilendirme iletisi, neden kodu ile birlikte vectorized değil döngüler ve vectorized döngüler için çıkarır.  
+ Bir bilgi iletisidir ve, bir neden kodu ile birlikte vektörleştirilmedi döngüler vektörleştirildi döngüler için çıkarır.  
   
- Neden kodları ve iletileri hakkında daha fazla bilgi için bkz: [vektör yapıcı ve paralel hale getirici iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
+ Neden kodları ve iletiler hakkında daha fazla bilgi için bkz. [vektör yapıcı ve paralel hale getirici iletileri](../../error-messages/tool-errors/vectorizer-and-parallelizer-messages.md).  
   
-### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Visual Studio'da /Qvec-report derleyici seçeneği ayarlamak için  
+### <a name="to-set-the-qvec-report-compiler-option-in-visual-studio"></a>Visual Studio'da /Qvec-report derleyici seçeneğini ayarlamak için  
   
 1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-2.  İçinde **özellik sayfaları** iletişim kutusunda **C/C++** seçin **komut satırı**.  
+2.  İçinde **özellik sayfaları** iletişim kutusunun **C/C++** seçin **komut satırı**.  
   
 3.  İçinde **ek seçenekler** kutusuna `/Qvec-report:1` veya `/Qvec-report:2`.  
   
-### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report derleyici seçeneği programlı olarak ayarlamak için  
+### <a name="to-set-the-qvec-report-compiler-option-programmatically"></a>/Qvec-report derleyici seçeneğini program üzerinden ayarlamak için  
   
 -   Aşağıdaki kod örneğinde kullanmak <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
@@ -53,4 +53,4 @@ Derleyici raporlama özelliğini etkinleştirir [otomatik vektör hale getirici]
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)
+ [Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

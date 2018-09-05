@@ -46,12 +46,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c3626fbdba9fcf34364237e8970e5b941ecce9d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cd480e7b1ffb0923e33361c545bca68202ec3f4f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201532"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687722"
 ---
 # <a name="ccomboboxex-class"></a>CComboBoxEx sınıfı
 Birleşik giriş kutusu denetim görüntü listeleri için destek sağlayarak genişletir.  
@@ -200,7 +200,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Birleşik giriş kutusu denetiminin stili. Bkz: [Oluştur](#create) stilleri listesi.  
@@ -381,7 +381,7 @@ CImageList* SetImageList(CImageList* pImageList);
  Bir işaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) tarafından daha önce kullanılan görüntülerin içeren nesne `CComboBoxEx` denetimi. Hiçbir görüntü listesi önceden ayarlanan yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu üye işlevi ileti işlevselliğini uygular [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist)Windows SDK içinde açıklandığı gibi. Varsayılan düzenleme denetiminin yüksekliğini değiştirirseniz, Win32 işlevini çağırmak [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) çağırdıktan sonra denetiminizi yeniden boyutlandırmak için `SetImageList`, ya da düzgün görüntülenmez.  
+ Bu üye işlevi ileti işlevselliğini uygular [CBEM_SETIMAGELIST](/windows/desktop/Controls/cbem-setimagelist)Windows SDK içinde açıklandığı gibi. Varsayılan düzenleme denetiminin yüksekliğini değiştirirseniz, Win32 işlevini çağırmak [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) çağırdıktan sonra denetiminizi yeniden boyutlandırmak için `SetImageList`, ya da düzgün görüntülenmez.  
   
  `CImageList` Dönüş değeri tarafından işaret edilen nesne geçici bir nesne ve sonraki boşta işleme sırada yok edilir.  
   

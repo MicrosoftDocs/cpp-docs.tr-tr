@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6735cddf401ba09d3743b178357fb740b873c21
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 76167793f7252540dbe9feedbb2d83678ebdcacb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336513"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688392"
 ---
 # <a name="cfieldexchange-class"></a>CFieldExchange sınıfı
 Kayıt alanı değişimi (RFX) ve veritabanı sınıfları tarafından kullanılan toplu kayıt alanı değişimi (Bulk RFX) yordamlarını destekler.  
@@ -117,7 +117,7 @@ void SetFieldType(UINT nFieldType);
 |SetFieldType parametre değeri|Tür parametresi veri üyesi|  
 |----------------------------------|-----------------------------------|  
 |`CFieldExchange::inputParam`|Giriş parametresi. Kayıt kümesinin sorgu veya saklı yordam içinde geçirilen değer.|  
-|'' ieldExchange::param **`ame as **CFieldExchange::inputParam`.|  
+|`CFieldExchange::param` | Aynı `CFieldExchange::inputParam`.|  
 |`CFieldExchange::outputParam`|Çıkış parametresi. Kayıt kümesi saklı yordam dönüş değeri.|  
 |`CFieldExchange::inoutParam`|Giriş/çıkış parametresi. Yöntemlere geçirilen veya kümesinin bir saklı yordamdan döndürülen değer.|  
   

@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f99f79e0e5f4f53356ed96528e310465b3ed2f0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 733d090073fe2ed08a0499ea205c2377b4bdb289
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220096"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679703"
 ---
 # <a name="scope-c"></a>Kapsam (C++)
 
@@ -114,7 +114,7 @@ class Account *Checking = new class Account( Account );
 > [!NOTE]
 > Bu örnekte gösterildiği gibi tanımlayıcı adları yeniden kötü programlama stil olarak kabul edilir.
 
- İşaretçiler hakkında daha fazla bilgi için bkz. [türetilen türler](https://msdn.microsoft.com/aa14183c-02fe-4d81-95fe-beddb0c01c7c). Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **Sil** ücretsiz depolama işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
+Bildirim ve sınıf nesnelerin başlatılması hakkında daha fazla bilgi için bkz. [sınıflar, yapılar ve birleşimler](../cpp/classes-and-structs-cpp.md). Kullanma hakkında bilgi için **yeni** ve **Sil** ücretsiz depolama işleçleri, bkz: [yeni ve delete işleçleri](new-and-delete-operators.md).
 
 ## <a name="hiding-names-with-global-scope"></a>Genel kapsamlı adları gizleme
 

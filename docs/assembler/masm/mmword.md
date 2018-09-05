@@ -1,7 +1,7 @@
 ---
 title: MMWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,35 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e97b1e58116d633519b1a780928e05862ac1771d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 7314c6d0861195e312c7f72481d2e195e041965d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054786"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679240"
 ---
 # <a name="mmword"></a>MMWORD
-64-bit multimedya işlenenleri MMX ve SSE (XMM) yönergeleri ile birlikte kullanılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-MMWORD  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `MMWORD` bir türüdür.  MASM için eklenmekte olan MMWORD önce eşdeğer işlevsellik ile elde edildiğini:  
-  
-```  
-mov mm0, qword ptr [ebx]  
-```  
-  
- Her iki yönerge 64-bit işlenen üzerinde çalışırken `QWORD` 64-bit işaretsiz tamsayı türü ve `MMWORD` bir 64-bit multimedya değerin türü.  
-  
- `MMWORD` aynı türde temsil etmek üzere tasarlanmıştır [__m64](../../cpp/m64.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-movq     mm0, mmword ptr [ebx]  
+
+64-bit MMX ve (XMM) SSE yönergeleri ile multimedya işlenenleri için kullanılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+> MMWORD
+
+## <a name="remarks"></a>Açıklamalar
+
+`MMWORD` bir türdür.  MASM için eklenen MMWORD önce eşdeğer işlev ile elde edildiğini:
+
+```asm
+    mov mm0, qword ptr [ebx]
+```
+
+Her iki yönerge 64-bit işlenenler üzerinde çalışırken `QWORD` için 64-bit işaretsiz tamsayı türü ve `MMWORD` için 64-bit multimedya bir değer türüdür.
+
+`MMWORD` aynı tür olarak temsil etmek üzere tasarlanmıştır [__m64](../../cpp/m64.md).
+
+## <a name="example"></a>Örnek
+
+```asm
+    movq     mm0, mmword ptr [ebx]
 ```

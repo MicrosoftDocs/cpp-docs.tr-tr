@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e01be3d3f7db075116782b64e8b92ba12fb02f1d
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4321a082efa71ecc81963099317ad3600ce8b36f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465365"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676204"
 ---
 # <a name="vmxon"></a>__vmx_on
 **Microsoft'a özgü**  
@@ -50,7 +50,7 @@ unsigned char __vmx_on(
 |2|İşlem durumu olmadan başarısız oldu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__vmx_on` İşlevi karşılık gelen `VMXON` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__vmx_on` İşlevi karşılık gelen `VMXON` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Daha fazla bilgi için "Intel Sanallaştırma teknik belirtimi IA-32 Intel mimari," Belge ara adresindeki sayı C97063 002 belge [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

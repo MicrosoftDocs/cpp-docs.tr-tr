@@ -15,43 +15,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19a49bf18721f605abe0c6e496d3532012c9c92c
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 6e23358e17558c436d82a3226f84c35a59bf63a1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340404"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691211"
 ---
 # <a name="redistributing-the-mfc-library"></a>MFC Kitaplığını Yeniden Dağıtma
-MFC kitaplığını uygulamanıza dinamik olarak bağlantı varsa, eşleşen MFC DLL yeniden dağıtmanız gerekir. MFC uygulamanızı Visual Studio 2015 ile birlikte gelen MFC sürümünü kullanarak oluşturulursa, örneğin, size mfc140.dll veya uygulamanızın dar karakter veya Unicode desteği için derlenmiş olan bağlı olarak mfc140u.dll yeniden dağıtmanız gerekir.  
+Uygulamanızı MFC kitaplığına dinamik olarak bağlarsanız, eşleşen MFC DLL'yi yeniden dağıtmanız gerekir. MFC uygulamanızı Visual Studio 2015 ile birlikte gelen MFC sürümü kullanılarak oluşturulmuşsa, örneğin, mfc140.dll veya uygulamanızı dar karakter veya Unicode desteği için derlenmiş olan bağlı olarak mfc140u.dll, yeniden dağıtmanız gerekir.  
   
 > [!NOTE]
->  Mfc140.dll dosyaları, Visual Studio 2015 RTM yeniden dağıtılabilir dosyaları dizininden atlanmış. Bunun yerine Visual Studio 2015 tarafından Windows\system32 ve Windows\syswow64 dizinlerde yüklü sürümleri kullanabilirsiniz.  
+>  Visual Studio 2015 RTM yeniden dağıtılabilir dosyaları dizininden mfc140.dll dosyaları göz ardı. Visual Studio 2015 tarihine kadar Windows\system32 ve Windows\syswow64 dizinler bunun yerine yüklü sürümlerini kullanabilirsiniz.  
   
- Tüm MFC DLL'leri C çalışma zamanı kitaplığı (CRT) paylaşılan sürümünü kullandığından, CRT yeniden dağıtmanız gerekebilir. Visual Studio 2015 ile birlikte gelen MFC sürümü Windows 10 bir parçası olarak dağıtılmış Evrensel CRT kitaplığını kullanır. Önceki Windows sürümlerinde Visual Studio 2015 kullanılarak oluşturulmuş bir MFC uygulamayı çalıştırmak için evrensel CRT yeniden dağıtmanız gerekir. İşletim sisteminin bir bileşeni olarak veya yerel dağıtım kullanarak evrensel CRT dağıtan hakkında daha fazla bilgi için bkz: [Evrensel CRT Tanıtımı](http://go.microsoft.com/fwlink/p/?linkid=617977). Windows'un desteklenen sürümlerindeki merkezi dağıtım için bkz: Evrensel CRT indirmek için bkz: [Windows 10 Universal C çalışma zamanı](http://go.microsoft.com/fwlink/p/?LinkId=619489). Ucrtbase.dll yerel dağıtım için yeniden dağıtılabilir mimarisi özgü sürümleri, Windows SDK'ın bulunur. Varsayılan olarak, Visual Studio mimari özgü alt dizinde bunları C:\Program Files (x86) \Windows Kits\10\Redist\ucrt\DLLs\ yükler.  
+ MFC DLL'lerinin hepsi C çalışma zamanı kitaplığı (CRT) paylaşılan sürümünü kullandığından, CRT yeniden dağıtmanız gerekebilir. Visual Studio 2015 ile birlikte gelen MFC sürümü, Windows 10 'un bir parçası olarak dağıtılmış Evrensel CRT kitaplığını kullanır. Önceki Windows sürümlerinde Visual Studio 2015 kullanılarak oluşturulan bir MFC uygulaması çalıştırmak için evrensel CRT yeniden dağıtmanız gerekir. İşletim sisteminin bir bileşeni olarak veya yerel dağıtımını kullanarak evrensel CRT dağıtılacağı hakkında daha fazla bilgi için bkz. [Evrensel CRT giriş](http://go.microsoft.com/fwlink/p/?linkid=617977). Desteklenen Windows sürümleri üzerinde merkezi dağıtım için bkz: Evrensel CRT indirmek için bkz [Windows 10 Evrensel C çalışma zamanı](http://go.microsoft.com/fwlink/p/?LinkId=619489). Ucrtbase.dll yerel dağıtımı için yeniden dağıtılabilir mimariye özgü sürümleri, Windows SDK'da bulunur. Varsayılan olarak, Visual Studio bu C:\Program Files (x86) \Windows Kits\10\Redist\ucrt\DLLs\ mimariye özgü alt dizinde yükler.  
   
- MFC kitaplığını önceki bir sürümünü kullanarak uygulamanızı oluşturulursa, yeniden dağıtılabilir dosyaları dizininden eşleşen CRT DLL yeniden dağıtmanız gerekir. Örneğin, Visual Studio 2013 (vc120) araç setini kullanarak MFC uygulamanız oluşturulursa, msvcr120.dll yeniden dağıtmanız gerekir. Eşleşen mfc yeniden dağıtmak de`<version>`u.dll ya da mfc`<version>`.dll.  
+ Uygulamanız MFC Kitaplığı'nın önceki bir sürümü kullanılarak oluşturulmuşsa, yeniden dağıtılabilir dosyaları dizininden eşleşen CRT DLL yeniden dağıtmanız gerekir. Örneğin, Visual Studio 2013 (vc120) araç takımı kullanarak MFC uygulamanızı oluşturdunuz, msvcr120.dll yeniden dağıtmanız gerekir. Eşleşen MFC'yi yeniden de`<version>`u.dll ya da mfc`<version>`.dll.  
   
- MFC uygulamanıza statik olarak bağlarsanız (diğer bir deyişle, belirtirseniz **bir statik kitaplık kullanımı MFC'de** üzerinde **genel** sekmesinde **özellik sayfaları** iletişim kutusu), yok MFC DLL yeniden dağıtmak için. Ancak, statik bağlama test etmek için işe yarayabilir olsa da ve iç dağıtım uygulamaların öneririz, onu MFC'yi yeniden kullanmanızı değil. Visual C++ kitaplıkları dağıtımı için önerilen strateji hakkında daha fazla bilgi için bkz: [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).  
+ MFC uygulamanıza statik olarak bağlarsanız (diğer bir deyişle, belirtirseniz **MFC'yi statik kitaplıkta** üzerinde **genel** sekmesinde **özellik sayfaları** iletişim kutusu), erişiminiz yok bir MFC DLL'sini yeniden için. Ancak, statik bağlama test etmek için işe yarasa da ve iç dağıtım uygulamaların, bunu MFC'yi yeniden kullanmanız önerilir değil. Visual C++ kitaplarının dağıtımı için önerilen stratejiler hakkında daha fazla bilgi için bkz: [dağıtım yöntemi seçme](../ide/choosing-a-deployment-method.md).  
   
- Uygulamanızın WebBrowser denetimi MFC sınıfları kullanıyorsa (örneğin, [CHtmlView sınıfı](../mfc/reference/chtmlview-class.md) veya [CHtmlEditView sınıfı](../mfc/reference/chtmleditview-class.md)), ayrıca en son sürümünü yüklemenizi öneririz Microsoft Internet Explorer böylece hedef bilgisayarın en güncel ortak denetim dosyalarına sahip olur. (En azından, Internet Explorer 4.0 gereklidir.) Internet Explorer bileşenlerini yükleme hakkında bilgi "Makale 185375: nasıl için oluşturma bir tek EXE yüklemek, Internet Explorer'da" Microsoft Support Web sitesinde mevcuttur.  
+ Uygulamanız WebBrowser denetimi ekleyen MFC sınıfları kullanıyorsa (örneğin, [CHtmlView sınıfı](../mfc/reference/chtmlview-class.md) veya [CHtmlEditView sınıfı](../mfc/reference/chtmleditview-class.md)), ayrıca en son sürümünü yüklemenizi öneririz Microsoft Internet Explorer böylece hedef bilgisayarın en güncel ortak denetim dosyalarına sahip olur. (En azından, Internet Explorer 4.0 gereklidir.) Microsoft Support Web sitesinde "Makale 185375: nasıl için oluşturma bir tek EXE yükleme Internet Explorer'ın" Internet Explorer bileşenlerini yükleme hakkında bilgi kullanılabilir.  
   
- Uygulamanız MFC veritabanı sınıfları kullanıyorsa (örneğin, [CRecordset sınıfı](../mfc/reference/crecordset-class.md) ve [CRecordView sınıfı](../mfc/reference/crecordview-class.md)), ODBC ve uygulamanızı kullanan herhangi bir ODBC sürücüsünü yeniden dağıtmanız gerekir. Daha fazla bilgi için bkz: [veritabanı destek dosyalarını yeniden dağıtma](../ide/redistributing-database-support-files.md).  
+ Uygulamanız MFC veritabanı sınıflarını kullanıyorsa (örneğin, [CRecordset sınıfı](../mfc/reference/crecordset-class.md) ve [CRecordView sınıfı](../mfc/reference/crecordview-class.md)), ODBC ve uygulamanızın kullandığı ODBC sürücülerini yeniden dağıtmanız gerekir.  
   
- MFC uygulamanız Windows Forms denetimleri kullanıyorsa, uygulamanızla mfcmifc80.dll'ye yeniden dağıtmanız gerekir. Bu DLL, kendi uygulama yerel klasöründe veya kullanarak genel derleme önbelleği (GAC) dağıtarak bir uygulama ile dağıtılabilir güçlü ad imzalı bir .NET derlemesi olduğunu [Gacutil.exe (Genel Derleme Önbelleği Aracı)](/dotnet/framework/tools/gacutil-exe-gac-tool).  
+ MFC uygulamanız Windows Forms denetimleri kullanıyorsa, mfcmifc80.dll'ye uygulamanızla birlikte yeniden dağıtmanız gerekir. Bu DLL, kendi uygulama yerel klasöründe veya kullanılarak Genel Derleme Önbelleği (GAC) dağıtarak bir uygulama ile dağıtılabilir kesin ad imzalı bir .NET derlemesi olduğundan [Gacutil.exe (Genel Derleme Önbelleği Aracı)](/dotnet/framework/tools/gacutil-exe-gac-tool).  
   
- MFC DLL dağıtırsanız perakende sürümü ve hata ayıklama sürümü yeniden dağıtmak emin olun. DLL'lerde hata ayıklama sürümleri dağıtılamaz. MFC DLL'leri hata ayıklama sürümleri adları "d", örneğin, Mfc140d.dll sonlandırın.  
+ Bir MFC DLL'sini yeniden dağıtıyorsanız perakende sürümü ve hata ayıklama sürümü olmayan yeniden dağıttığınızdan emin olun. DLL'lerin hata ayıklama sürümleri yeniden dağıtılamaz. MFC DLL'lerin hata ayıklama sürümlerinin adları "d", örneğin, Mfc140d.dll sonlandırın.  
   
- MFC ya da VCRedist_ kullanarak dağıtabilirsiniz*mimarisi*.exe, Visual Studio ile veya uygulamanızla aynı klasöre MFC DLL dağıtarak yüklü birleştirme modülleri. Yeniden MFC dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
+ MFC ya da VCRedist_ kullanarak dağıtabilirsiniz*mimarisi*.exe, uygulamanızla aynı klasöre MFC DLL'yi dağıtarak veya Visual Studio ile yüklenen birleştirme modüllerini. MFC'yi yeniden dağıtma hakkında daha fazla bilgi için bkz. [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
 ## <a name="installation-of-localized-mfc-components"></a>Yerelleştirilmiş MFC bileşenlerini yükleme  
- MFC yerelleştirme DLL'i yükleyerek uygulamanızı yerelleştirme karar verirseniz, yeniden dağıtılabilir birleştirme dosyaları (.msm) kullanmanız gerekir. Uygulamanızı bir x86 üzerinde yerelleştirme istiyorsanız, örneğin, bilgisayar, Microsoft_VC birleştirme gerekir`<version>`x x86 için yükleme paketi içine _MFCLOC_x86.msm bilgisayar.  
+ Uygulamanız bir MFC yerelleştirme DLL'i yükleyerek yerelleştirmeye karar verirseniz, yeniden dağıtılabilir birleştirme dosyaları (.msm) kullanmanız gerekir. Örneğin, uygulamanızın bir x86 yerelleştirmek istiyorsanız bilgisayar Microsoft_VC birleştirme gerekir`<version>`_MFCLOC_x86.msm x x86 yükleme paketi içinde bilgisayar.  
   
- Yeniden dağıtılabilir .msm dosyaları yerelleştirme için kullanılan DLL'ler içerir. Desteklenen her dil için bir DLL yoktur. Yükleme işlemi, hedef bilgisayarda %windir%\system32\ klasöründe bu DLL'ler yükler.  
+ Yeniden dağıtılabilir .msm dosyaları yerelleştirme için kullanılan dll öğelerini içerir. Desteklenen her dil için bir DLL yoktur. Yükleme işlemi, bu DLL'leri hedef bilgisayarda %windir%\system32\ klasörüne yükler.  
   
- MFC uygulamaları yerelleştirme hakkında daha fazla bilgi için bkz: [TN057: MFC bileşenlerini yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)hem de [makale 208983: MFC LOC DLL'leri kullanma nasıl](http://go.microsoft.com/fwlink/p/?linkid=198025) Microsoft Support Web sitesinde.  
+ MFC uygulamalarının yerelleştirilmesi hakkında daha fazla bilgi için bkz. [TN057: MFC bileşenlerini yerelleştirme](../mfc/tn057-localization-of-mfc-components.md).
   
- MFC DLL uygulama yerel klasörüne dağıtarak MFC yerelleştirme DLL'lerini yeniden dağıtabilirsiniz. Yeniden Visual C++ kitaplıkları dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
+ Uygulama yerel klasörünüzdeki MFC DLL'yi dağıtarak MFC yerelleştirme DLL'lerini yeniden dağıtabilirsiniz. Visual C++ kütüphanelerini yeniden dağıtma hakkında daha fazla bilgi için bkz. [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual C++ Dosyalarını Yeniden Dağıtma](../ide/redistributing-visual-cpp-files.md)

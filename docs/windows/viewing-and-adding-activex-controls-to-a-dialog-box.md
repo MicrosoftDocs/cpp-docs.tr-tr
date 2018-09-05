@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91a010c9ffe1f05780c25fc6d6ec96d2619a8019
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e97393aa6989b7af0a7f3a9a97adaf529f21ba8a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202769"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686728"
 ---
 # <a name="viewing-and-adding-activex-controls-to-a-dialog-box"></a>İletişim Kutusuna ActiveX Denetimleri Ekleme ve Görüntüleme
 
@@ -47,12 +47,12 @@ Visual Studio, iletişim kutusuna ActiveX denetimleri eklemenize olanak tanır.
    Denetim, düzenlemek veya başka bir denetimde olduğu gibi işleyicileri için oluşturma iletişim kutusunda görüntülenir.
 
    > [!NOTE]
-   > ActiveX denetimlerine ekleyebilirsiniz [araç penceresi](/visualstudio/ide/reference/toolbox). Daha fazla bilgi için [yönetmeye öğeler ve araç kutusu sekmeleri](https://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).
+   > ActiveX denetimlerine ekleyebilirsiniz [araç penceresi](/visualstudio/ide/reference/toolbox).
 
    > [!CAUTION]
    > ActiveX denetimleri, sisteminizdeki tüm dağıtmak için geçerli olmayabilir. Lütfen denetimleri yüklü yazılımlar için lisans sözleşmesi bakın veya yazılım şirketine başvurun.
 
-   Denetimlerinde yerleştirebilirsiniz **araç kutusu** penceresi kolay erişim için. Daha fazla bilgi için [özelleştirme araç kutusu iletişim kutusunda](https://msdn.microsoft.com/bd07835f-18a8-433e-bccc-7141f65263bb).
+   Denetimlerinde yerleştirebilirsiniz **araç kutusu** penceresi kolay erişim için. Daha fazla bilgi için [araç kutusu](/visualstudio/ide/reference/toolbox).
 
 Yönetilen projelere kaynak ekleme hakkında daha fazla bilgi için lütfen bkz [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*. Kaynak dosyalarını yönetilen projelere el ile ekleme, kaynaklara erişme, statik kaynakları görüntüleme ve kaynak dizelerini özelliklere atama hakkında daha fazla bilgi için bkz: [Creating Resource Files Masaüstü uygulamaları için](/dotnet/framework/resources/creating-resource-files-for-desktop-apps). Genelleştirme ve yerelleştirme kaynakların yönetilen uygulamalar hakkında daha fazla bilgi için bkz: [Globalizing ve .NET Framework uygulamalarını yerelleştirme](/dotnet/standard/globalization-localization/index).
 

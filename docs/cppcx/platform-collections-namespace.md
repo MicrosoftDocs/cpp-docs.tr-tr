@@ -15,16 +15,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 171fdfe8e174d0d3b5d1c69e9aa5a777a3148ee0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d872df7294e33ef47247609af4606da842bb6184
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612537"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686553"
 ---
 # <a name="platformcollections-namespace"></a>Platform::Collections Namespace
 
-Platform::Collections ad alanı içeren `Map`, `MapView`, `Vector`, ve `VectorView` sınıfları. Bu sınıfların tanımlanan karşılık gelen arabirimin somut uygulamalarıdır [Windows::Foundation:: Collections](http://go.microsoft.com/fwlink/p/?LinkId=262645) ad alanı. Somut koleksiyon türleri (örneğin, Javascript veya C# programı bir C++ bileşeni çağırıyor) ABI arasında taşınabilir değildir, ancak bunlar karşılık gelen onların arabirim türleri için örtük olarak dönüştürülebilir. Örneğin, doldurur ve bir koleksiyonu döndüren genel bir yöntem uygularsanız, ardından kullanmak [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) koleksiyon dahili olarak uygulamak ve kullanmak için [Windows::Foundation:: Collections: : Ivector](http://go.microsoft.com/fwlink/p/?LinkId=262410) dönüş türü. Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md) ve [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
+Platform::Collections ad alanı içeren `Map`, `MapView`, `Vector`, ve `VectorView` sınıfları. Bu sınıfların tanımlanan karşılık gelen arabirimin somut uygulamalarıdır [Windows::Foundation:: Collections](/uwp/api/Windows.Foundation.Collections) ad alanı. Somut koleksiyon türleri (örneğin, Javascript veya C# programı bir C++ bileşeni çağırıyor) ABI arasında taşınabilir değildir, ancak bunlar karşılık gelen onların arabirim türleri için örtük olarak dönüştürülebilir. Örneğin, doldurur ve bir koleksiyonu döndüren genel bir yöntem uygularsanız, ardından kullanmak [Platform::Collections:: Vector](../cppcx/platform-collections-vector-class.md) koleksiyon dahili olarak uygulamak ve kullanmak için [Windows::Foundation:: Collections: : Ivector](/uwp/api/Windows.Foundation.Collections.IVector_T_) dönüş türü. Daha fazla bilgi için [koleksiyonları](../cppcx/collections-c-cx.md) ve [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp).
 
 Gelen bir platform::Collections:: Vector oluşturabilirsiniz bir [std::vector](../standard-library/vector-class.md) ve [Platform::Collections:: Map](../cppcx/platform-collections-map-class.md) gelen bir [std::map](../standard-library/map-class.md).
 

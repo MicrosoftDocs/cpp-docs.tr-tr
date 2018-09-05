@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2119 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4ea8bc44a44447e84601167d58d5434dc37aade
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c1034c91f6eebd240c746c881284bed2baf5e618
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057454"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686905"
 ---
 # <a name="ml-nonfatal-error-a2119"></a>ML Önemli Olmayan Hatası A2119
-**Dil türü belirtilmelidir**  
-  
- Bir yordamı tanımı veya prototip dil türü verilmedi.  
-  
- Varsayılan dil türü belirtilmezse, bir dil türü her yordam tanımı veya prototip bildirilmesi gerekir. Varsayılan dil türü kullanılarak ayarlanır [. MODEL](../../assembler/masm/dot-model.md) yönergesi, **seçeneği LANG**, veya ML komut satırı seçeneklerini **/Gc** veya **/Gd**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Dil türü belirtilmelidir**
+
+Dil türü bir yordam tanımında veya prototipi verilmedi.
+
+Varsayılan dil türü belirtilmezse dil türü her yordam tanımında veya prototip bildirilmesi gerekir. Varsayılan dil türü kullanarak ayarlanır [. MODEL](../../assembler/masm/dot-model.md) yönergesi **seçeneği LANG**, veya ML komut satırı seçenekleri **/Gc** veya **/Gd**.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

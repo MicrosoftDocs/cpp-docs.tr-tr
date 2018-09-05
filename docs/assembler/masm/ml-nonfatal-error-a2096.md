@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2096 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,23 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e5d07afa864c9f6f4214de953aa9e03fe0e7e4f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 82f4ef76dca10b1208a931bc3e1cc09d82a639d2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053678"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679604"
 ---
 # <a name="ml-nonfatal-error-a2096"></a>ML Önemli Olmayan Hatası A2096
-**Segment, Grup veya beklenen segment Kaydet**  
-  
- Bir segment veya grup bekleniyordu ancak bulunamadı.  
-  
- Aşağıdakilerden biri oluştu:  
-  
--   Kesimle belirtilen sol işleneni işleci geçersiz kılma (**:**) bir segment yazmaç (CS, DS, SS, ES, FS veya GS), grup adı, segment adı ya da segment ifade değildi.  
-  
--   [VARSAY](../../assembler/masm/assume.md) yönergesi geçerli kesim adresi, segment Kaydet, grubu veya özel olmadan bir segment kayıt verilen **DÜZ** grubu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Segment, Grup veya segment kaydı bekleniyordu**
+
+Segment veya grup bekleniyordu ancak bulunamadı.
+
+Aşağıdakilerden biri oluştu:
+
+- Sol işlenen kesimle belirtilen geçersiz kılma işleci (**:**) bir segment yazmaç (CS, DS, SS, ES, FS veya GS), grup adı, segment adı veya segment ifade değildi.
+
+- [VARSAY](../../assembler/masm/assume.md) yönergesi dikkate alındığında bir segment kayıt olmadan geçerli kesim adresi, segment kaydetme, Grup veya özel **DÜZ** grubu.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

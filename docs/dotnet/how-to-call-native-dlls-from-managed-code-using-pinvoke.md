@@ -18,18 +18,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 9ddd919fb621c971425e9763cf781e5ff0b1c731
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c1e3d9d3d08ef0386a1ab85e0e5b6860f5d504cc
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195675"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681287"
 ---
 # <a name="how-to-call-native-dlls-from-managed-code-using-pinvoke"></a>Nasıl yapılır: Yönetilen Koddan PInvoke Kullanarak Yerel DLL'leri Çağırma
 Platform Çağırma (P/Invoke) işlevini kullanarak yönetilen koddan yönetilmeyen DLL'ler uygulanan işlevler çağrılabilir. DLL kaynak kodunu kullanılabilir durumda değilse, P/Invoke birlikte çalışma için tek seçenektir. Ancak, diğer .NET dilleri farklı olarak, Visual C++ P/Invoke bir alternatif sunar. Daha fazla bilgi için [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki kod örneği, Win32 kullanan [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) ekrandaki piksel cinsinden geçerli çözünürlüğünü almak için işlevi.  
+ Aşağıdaki kod örneği, Win32 kullanan [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) ekrandaki piksel cinsinden geçerli çözünürlüğünü almak için işlevi.  
   
  Bağımsız değişken olarak yalnızca iç türleri ve dönüş değerleri işlevler için hiçbir ek iş gereklidir. İşlev işaretçileri, diziler ve yapılar, gibi diğer veri türlerine uygun veri hazırlama sağlamak için ek öznitelikler gerektirir.  
   

@@ -1,7 +1,7 @@
 ---
 title: INSTR | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dd640aafe78f99f50d98569792d0c1c5ef330ee
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f540b7fffb23321c8b3aa22e154196c48f76cd58
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054539"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683064"
 ---
 # <a name="instr"></a>INSTR
-İlk örneğini bulur *textitem2* içinde *textitem1*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-name  
- INSTR [[position,]] textitem1, textitem2  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Başlangıç *konumu* isteğe bağlıdır. Her metin öğesi öncesinde bir sabit hazır bir dize olabilir bir `%`, veya bir makro işlev tarafından döndürülen dize.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+İlk oluşumunu bulur *textitem2* içinde *textitem1*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *adı* INSTR [[*konumu*,]] *textitem1*, *textitem2*
+
+## <a name="remarks"></a>Açıklamalar
+
+Başlangıç *konumu* isteğe bağlıdır. Her metin öğesi önünde bir sabit bir sabit dize olabilir bir `%`, veya bir makro işlevi tarafından döndürülen dize.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

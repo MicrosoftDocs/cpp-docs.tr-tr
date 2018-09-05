@@ -1,7 +1,7 @@
 ---
 title: ÇAĞIRMA | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27c18c83b623ce1a22ffcb5e1a9f1ce98ee6eb20
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 3e5698acf9986903a1d6d731c1047484a0ce6904
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055176"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676523"
 ---
 # <a name="invoke"></a>INVOKE
-Tarafından verilen adresindeki yordam çağrıları *ifade*, yığında veya dil türü standart çağırma kurallarına göre kayıtları bağımsız değişkenleri geçirme.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-INVOKE   
-expression [[, arguments]]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Yordamına geçirilen her değişken bir ifade, bir kayıt çifti ya da bir adres ifadesi olabilir (bir ifade öncesinde tarafından `ADDR`).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Tarafından belirtilen adresten yordam çağrıları *ifade*, bağımsız değişkenleri yığında veya dil türü standart çağırma kurallarına göre yazmaçlarında geçirme.
+
+## <a name="syntax"></a>Sözdizimi
+
+> INVOKE *ifade* [[, *bağımsız değişkenleri*]]
+
+## <a name="remarks"></a>Açıklamalar
+
+Yordamına geçirilen her bağımsız değişkeni bir ifade, bir kayıt çiftine veya adres ifadesine olabilir (bir ifade öncesinde `ADDR`).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

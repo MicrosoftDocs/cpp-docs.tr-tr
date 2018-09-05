@@ -1,7 +1,7 @@
 ---
-title: EŞİTTİR | Microsoft Docs
+title: EQU | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d7678cac4c480934fe9f6dd9816e636481c2d64
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 37509a39d2247649c2971932f402a18f3ac667d4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050756"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681313"
 ---
 # <a name="equ"></a>EQU
-İlk yönergesi sayısal değerini atar *ifade* için *adı*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      name EQU expression  
-name EQU <text>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- *Adı* daha sonra yeniden tanımlanamaz.  
-  
- Belirtilen ikinci yönerge atar *metin* için *adı*. *Adı* farklı bir atanabilir *metin* daha sonra. Bkz: [TEXTEQU](../../assembler/masm/textequ.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+İlk yönerge sayısal değerini atar *ifade* için *adı*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *adı* EQU *ifadesi*
+
+> *adı* EQU \< *metin*>
+
+## <a name="remarks"></a>Açıklamalar
+
+*Adı* daha sonra yeniden tanımlanamaz.
+
+Belirtilen ikinci yönerge atar *metin* için *adı*. *Adı* farklı bir atanabilir *metin* daha sonra. Bkz: [TEXTEQU](../../assembler/masm/textequ.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

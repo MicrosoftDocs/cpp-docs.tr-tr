@@ -1,7 +1,7 @@
 ---
 title: işleç ve | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f972002a57bdb2dd3ff2003fa922d1aa0f7e1536
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0c7246f03be6f6939351f9d8a33e33bfd733a92d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056866"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682938"
 ---
 # <a name="operator-and"></a>AND işleci
-Bit düzeyinde ve işlem için sonucunu döndürür *İfade1* ve *İfade2*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 AND expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Bit düzeyinde bir AND işlemi için sonucunu döndürür *İfade1* ve *expression2*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1 ve expression2
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

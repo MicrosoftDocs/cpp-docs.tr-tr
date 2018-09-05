@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7d31203069fe6916c485586fdfb62ee48559727
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c6fddd90eaa6259cd2552dddbeafb405d90580ac
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195894"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684358"
 ---
 # <a name="concurrentunorderedmap-class"></a>concurrent_unordered_map Sınıfı
 `concurrent_unordered_map` Sınıfı, bir türdeki öğelerin değişen uzunluktaki dizisini denetleyen eşzamanlılığı güvenli bir kapsayıcıdır `std::pair<const K, _Element_type>`. Sıra, eşzamanlılık açısından güvenli sağlayan bir şekilde temsil edilir sona ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemleri.  
@@ -328,7 +328,7 @@ std::pair<const_iterator,
  Aranacak anahtar değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [çifti](https://msdn.microsoft.com/c5a37023-d939-4eb2-ae24-ce8e0cd4505d) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.  
+ A [çifti](../../../standard-library/pair-structure.md) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Eş zamanlı ekler başlangıç yineleyici sonra ve end yineleyici önce eklenecek ek anahtarlar neden mümkündür.  

@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e6bfafa1322d9730923867c86f754153f641460
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 84edc9fb461a6f0721abb648a88e1d81a4a19d07
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406582"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678963"
 ---
 # <a name="securityinitcookie"></a>__security_init_cookie
 
@@ -53,11 +53,11 @@ void __security_init_cookie(void);
 
 ## <a name="remarks"></a>Açıklamalar
 
-Genel güvenlik tanımlama bilgisi ile derlenmiş kod taşması koruma için kullanılan [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ve özel durum işleme kullanan kod. Giriş taşması korumalı işlevi için tanımlama bilgisi yığında yerleştirilir ve Çıkışta değerini yığında genel tanımlama bilgisi ile karşılaştırılır. Aralarındaki fark, bir arabellek taşması oluştu ve hemen programın sonlandırılması neden gösterir.
+Genel güvenlik tanımlama bilgisi ile derlenmiş kodda arabellek taşması koruma için kullanılan [/GS (arabellek güvenlik denetimi)](../../build/reference/gs-buffer-security-check.md) ve özel durum işleme kullanan kod. Girişi taşması korumalı bir işleve, tanımlama bilgisi yığına yerleştirilir ve Çıkışta, yığında değeri genel tanımlama bilgisi ile karşılaştırılır. Aralarındaki fark, bir arabellek taşması oluştu ve programı hemen sonlandırılmasına neden gösterir.
 
-Normalde, **__security_init_cookie** başlatıldığında CRT tarafından çağrılır. CRT başlatma atlarsanız — Örneğin, kullanırsanız [/Entry](../../build/reference/entry-entry-point-symbol.md) giriş noktasını belirtmek için — çağırmalısınız sonra **__security_init_cookie** kendiniz. Varsa **__security_init_cookie** çağrılmaz, genel güvenlik tanımlama bilgisi, varsayılan bir değere ayarlanır ve arabellek taşması koruma riske. Bir saldırgan arabellek taşması denetimleri üstesinden gelmek için bu varsayılan tanımlama bilgisi değeri yararlanabilir her zaman çağrı öneririz **__security_init_cookie** tanımladığınızda, kendi giriş noktası.
+Normalde, **__security_init_cookie** tarafından CRT başlatıldığında çağrılır. CRT başlatma atlarsanız — Örneğin, kullanırsanız [/Entry](../../build/reference/entry-entry-point-symbol.md) giriş noktasını belirtmek için — çağırmalısınız sonra **__security_init_cookie** kendiniz. Varsa **__security_init_cookie** çağrılmaz; genel güvenlik tanımlama bilgisi, varsayılan değerine ayarlanır ve arabellek taşması koruma biri riske. Bir saldırganın bu varsayılan tanımlama bilgisi değeri'arabellek taşma denetimleri yemektir yararlanabilir olduğundan her zaman çağırmanızı öneririz **__security_init_cookie** kendi giriş noktası tanımladığınızda.
 
-Çağrı **__security_init_cookie** herhangi önce taşması korumalı hale getirilmesi gereken işlevi girilir; Aksi takdirde alacaklardır arabellek taşması algılanır. Daha fazla bilgi için bkz: [C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md).
+Çağrı **__security_init_cookie** herhangi önce taşması korumalı hale getirilmesi gereken işlevi girilir; sahte bir arabellek taşması algıladı Aksi takdirde. Daha fazla bilgi için [C çalışma zamanı hatası R6035](../../error-messages/tool-errors/c-runtime-error-r6035.md).
 
 ## <a name="example"></a>Örnek
 
@@ -69,8 +69,8 @@ Normalde, **__security_init_cookie** başlatıldığında CRT tarafından çağr
 |-------------|---------------------|
 |**__security_init_cookie**|\<Process.h >|
 
-**__security_init_cookie** standart C çalışma zamanı kitaplığı bir Microsoft uzantısıdır. Uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+**__security_init_cookie** standart C çalışma zamanı kitaplığı Microsoft uzantısıdır. Uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Güvenlik derinlemesine denetler](http://go.microsoft.com/fwlink/p/?linkid=7260)<br/>
+[Microsoft Güvenlik Yanıt Merkezi](https://www.microsoft.com/en-us/msrc?rtc=1)

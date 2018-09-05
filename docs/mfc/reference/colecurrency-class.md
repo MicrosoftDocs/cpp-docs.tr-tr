@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46c12c29fcee310e8bd1d484743b754a830541d7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a26bae54e267dfa46b0ec8e6770b3643cc0b7ebb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196118"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681778"
 ---
 # <a name="colecurrency-class"></a>COleCurrency sınıfı
 Kapsülleyen `CURRENCY` OLE Otomasyonu nesnesi etkin veri türü.  
@@ -133,7 +133,7 @@ COleCurrency(
   
 - COleCurrency() yapıları bir `COleCurrency` 0 (sıfır) olarak başlatılmış bir nesne.  
   
-- COleCurrency (`cySrc`) oluşturan bir `COleCurrency` nesnesinden bir [para birimi](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) değeri.  
+- COleCurrency (`cySrc`) oluşturan bir `COleCurrency` nesnesinden bir [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) değeri.  
   
 - COleCurrency (`curSrc`) oluşturan bir `COleCurrency` mevcut bir nesne `COleCurrency` nesne. Yeni nesne kaynak nesne ile aynı duruma sahip.  
   
@@ -141,7 +141,7 @@ COleCurrency(
   
 - `COleCurrency(`nUnits`, `nFractionalUnits`) Constructs a `COleCurrency' belirtilen sayısal bileşenlerinden nesne. Kesirli bölümü mutlak değerini 10. 000 ' büyükse, uygun düzeltme birimleri için yapılır. Not, birimleri ve kesirli bölümü tarafından imzalanmış uzun değerler belirtilir.  
   
- Daha fazla bilgi için [para birimi](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnekler, sıfır parametresi ve iki parametre oluşturucular etkilerini gösterir:  
@@ -230,14 +230,14 @@ enum CurrencyStatus {
  [!code-cpp[NVC_MFCOleContainer#12](../../mfc/codesnippet/cpp/colecurrency-class_3.cpp)]  
   
 ##  <a name="m_cur"></a>  COleCurrency::m_cur  
- Arka plandaki [para birimi](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) yapısı bu `COleCurrency` nesne.  
+ Arka plandaki [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) yapısı bu `COleCurrency` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
 > [!CAUTION]
 >  Değer değiştirme `CURRENCY` bu işlev tarafından döndürülen işaretçi tarafından erişilen yapısı, bu değeri değişecek `COleCurrency` nesne. Bu durumu değiştirmez `COleCurrency` nesne.  
   
- Daha fazla bilgi için [para birimi](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) Windows SDK'sı girişi.  
+ Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) Windows SDK'sı girişi.  
   
 ##  <a name="m_status"></a>  COleCurrency::m_status  
  Bu veri üyesi listeden seçimli türü türüdür `CurrencyStatus`, içinde tanımlanan `COleCurrency` sınıfı.  
@@ -304,7 +304,7 @@ const COleCurrency& operator=(const COleCurrency& curSrc);
   
 - **işleç = (** *varSrc* **)** varsa dönüştürülmesi `VARIANT` değeri (veya [COleVariant](../../mfc/reference/colevariant-class.md) nesne) para birimine ( `VT_CY`) olan başarılı, dönüştürülen değer bu kopyalanır `COleCurrency` nesne ve durumuna ayarlanır için geçerli. Dönüştürme başarılı ise değerini `COleCurrency` nesnesi, 0'geçersiz durumu ayarlanır.  
   
- Daha fazla bilgi için [para birimi](https://msdn.microsoft.com/5e81273c-7289-45c7-93c0-32c1553f708e) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
+ Daha fazla bilgi için [para birimi](/windows/desktop/api/wtypes/ns-wtypes-tagcy) ve [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) Windows SDK'sı girdileri.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]  

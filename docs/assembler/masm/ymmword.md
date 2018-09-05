@@ -1,7 +1,7 @@
 ---
 title: YMMWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f82d9c8066334ff0d8765e1aa4da41a253d3064
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 67ea3d2319f6c89abccc3acbba4e1fea94197210
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057116"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682189"
 ---
 # <a name="ymmword"></a>YMMWORD
-256 bit multimedya işlenenleri Intel Gelişmiş vektör Uzantıları (AVX) yönergeleri ile birlikte kullanılır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-YMMWORD  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `YMMWORD` aynı türde temsil etmek üzere tasarlanmıştır `__m256` AVX iç bilgileri için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+256 bit Intel Gelişmiş vektör Uzantıları (AVX) yönergeleri ile multimedya işlenenleri için kullanılır.
+
+## <a name="syntax"></a>Sözdizimi
+
+> YMMWORD
+
+## <a name="remarks"></a>Açıklamalar
+
+`YMMWORD` aynı tür olarak temsil etmek üzere tasarlanmıştır `__m256` AVX iç yapılar için.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: .FARDATA? | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55c859356aa3c4f4a1c07cd7902b75dacd8afcf4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 28e6f26459a6c1513969c6f1d51e070f672b2647
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051670"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683151"
 ---
 # <a name="fardata"></a>.FARDATA?
-İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), başlatılmamış veriler için bir uzak veri kesimi başlatır (kesim adı FAR_BSS veya *adı*).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.FARDATA? [[name]]  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+İle kullanıldığında [. MODEL](../../assembler/masm/dot-model.md), başlatılmamış veriler için bir uzak veri segmentine başlar (segment adı FAR_BSS veya *adı*).
+
+## <a name="syntax"></a>Sözdizimi
+
+> .FARDATA? [[ad]]
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

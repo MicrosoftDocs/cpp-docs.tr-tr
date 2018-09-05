@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53d87c6f0109708023f57e2d30ae38fa4f4f574b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 335c8e6f73236b96330c32c4b3106aec3cf66a73
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222666"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677334"
 ---
 # <a name="application-settings-makefile-project-wizard"></a>Uygulama Ayarları, Derleme Görevleri Dosyası Proje Sihirbazı
 Proje için bilgileri sağlayın. Belirttiğiniz seçeneklerden projesinin yansıtılır [özellik sayfası](../ide/working-with-project-properties.md). Projeyi oluşturduktan sonra görüntüleyebilir ve her biri aşağıdaki seçenekleri Düzenle **Nmake** sayfası proje özellik sayfası.  
@@ -43,5 +43,5 @@ Proje için bilgileri sağlayın. Belirttiğiniz seçeneklerden projesinin yans�
  [Bir derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md)   
  [Visual C++ proje türleri](../ide/visual-cpp-project-types.md)   
  [Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md)   
- [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   
- [Uygulamaları dağıtma](https://msdn.microsoft.com/4ff8881d-0daf-47e7-bfe7-774c625031b4)
+ [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)   
+ 

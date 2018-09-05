@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b40576e1b5613bfda19987167e7e43353e6b5802
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3c758226935151bd11faec12aed459aeb2606ca9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211710"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684830"
 ---
 # <a name="windows-runtime-c-template-library-wrl"></a>Windows Çalışma Zamanı C++ Şablon Kitaplığı (WRL)
 
@@ -157,5 +157,5 @@ A `WeakRef` nesnesi genelde, varlığı harici bir iş parçacığı ya da uygul
 |-|-|
 |[Kategoriye göre başlıca API'ler](../windows/key-wrl-apis-by-category.md)|Birincil Windows çalışma zamanı C++ Şablon kitaplığı türleri, işlevlerini ve makrolarını vurgular.|
 |[Başvuru](../windows/wrl-reference.md)|Windows çalışma zamanı C++ Şablon kitaplığı için başvuru bilgileri içerir.|
-|[Hızlı Başvuru (Windows Runtime ve Visual C++)](http://go.microsoft.com/fwlink/p/?linkid=229180)|Kısaca açıklar C + +/ CX özellikleri, Windows çalışma zamanı desteği.|
-|[Visual C++'ta Windows çalışma zamanı bileşenlerini kullanma](http://go.microsoft.com/fwlink/p/?linkid=229155)|Gösterilmektedir kullanmak C + +/ CX temel bir Windows çalışma zamanı bileşeni oluşturma.|
+|[Hızlı Başvuru (Windows Runtime ve Visual C++)](../cppcx/quick-reference-c-cx.md)|Kısaca açıklar C + +/ CX özellikleri, Windows çalışma zamanı desteği.|
+|[Visual C++'ta Windows çalışma zamanı bileşenlerini kullanma](/windows/uwp/winrt-components/walkthrough-creating-a-basic-windows-runtime-component-in-cpp-and-calling-it-from-javascript-or-csharp)|Gösterilmektedir kullanmak C + +/ CX temel bir Windows çalışma zamanı bileşeni oluşturma.|

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54cc51ee320c6b942c3ff0563f293cf48d1c34db
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 50be44d612f44586ff8e6c8e953efa0b1fa90948
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466345"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680643"
 ---
 # <a name="svmvmsave"></a>__svm_vmsave
 **Microsoft'a özgü**  
@@ -44,7 +44,7 @@ void __svm_vmsave(
 |[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__svm_vmsave` İşlev, eşdeğer `VMSAVE` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarasını 24593, düzeltme 3.11 ya da en üstü [AMD Corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ `__svm_vmsave` İşlev, eşdeğer `VMSAVE` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarasını 24593, düzeltme 3.11 ya da en üstü [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

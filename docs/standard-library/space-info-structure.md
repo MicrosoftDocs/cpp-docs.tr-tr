@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c0e9a636fea95a4ce829731c25605197ee00549
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8a0f1eb9818356e7261125efaea69e275c3e29b8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206741"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684689"
 ---
 # <a name="spaceinfo-structure"></a>space_info Yapısı
 
@@ -55,5 +55,4 @@ struct space_info   {
 
 [Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
 [\<FileSystem >](../standard-library/filesystem.md)<br/>
-[alanı](https://msdn.microsoft.com/7fce0b0e-523b-4598-b218-47245d0204ca)<br/>
 [Dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md)<br/>

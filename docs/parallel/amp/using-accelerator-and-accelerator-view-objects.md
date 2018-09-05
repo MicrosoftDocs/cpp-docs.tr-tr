@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebbb33a4f17f5b4d458c4add4d59040d698dd4b8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 58eb907841abf63d77817e106ee339ad6c49bd7b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222200"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681209"
 ---
 # <a name="using-accelerator-and-acceleratorview-objects"></a>Hızlandırıcı ve accelerator_view Nesnelerini Kullanma
 Kullanabileceğiniz [hızlandırıcı](../../parallel/amp/reference/accelerator-class.md) ve [accelerator_view](../../parallel/amp/reference/accelerator-view-class.md) cihazda veya öykünücüde C++ AMP kodunuzu çalıştırmak için belirtmek için sınıflar. Bir sistem, birkaç cihaz ya da bellek, paylaşılan bellek desteği, hata ayıklama desteği veya çifte duyarlılık desteği miktarına göre farklılık gösteren öykünücüleri olabilir. C++ Accelerated Massive Parallelism (C++ AMP) uygun Hızlandırıcıları incelemek, birini varsayılan olarak ayarlamak, çoklu çağrı görünümlerinin belirtin ve özel hata ayıklama görevlerini gerçekleştirmek için kullanabileceğiniz API'ler sağlar.  
@@ -180,11 +180,11 @@ Uygulamanızda çoklu Hızlandırıcı kullanmak için iki yolu vardır:
   
 - [Accelerator::direct3d_warp veri üyesi](reference/accelerator-class.md#direct3d_warp): Bu Hızlandırıcı, Streaming SIMD uzantılarını (SSE) kullanan çok çekirdekli CPU üzerinde C++ AMP kodunu yürütmek için bir geri dönüş çözümü sağlar.  
   
-- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): Bu Hızlandırıcı diziler hazırlık ayarlamak için kullanabilirsiniz. Bu, C++ AMP kod yürütemez. Daha fazla bilgi için [dizileri C++ amp'de](http://go.microsoft.com/fwlink/p/?linkId=248485) paralel programlama yerel kod blog içinde gönderin.  
+- [Accelerator::cpu_accelerator veri üyesi](reference/accelerator-class.md#cpu_accelerator): Bu Hızlandırıcı diziler hazırlık ayarlamak için kullanabilirsiniz. Bu, C++ AMP kod yürütemez. Daha fazla bilgi için [dizileri C++ amp'de](https://blogs.msdn.microsoft.com/nativeconcurrency/2011/11/09/staging-arrays-in-c-amp/) paralel programlama yerel kod blog içinde gönderin.  
   
 ## <a name="interoperability"></a>Birlikte Çalışabilirlik  
  
-C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `accelerator_view` sınıfı ile Direct3D [ıd3d11device arabirimi](http://go.microsoft.com/fwlink/p/?linkId=248488). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) yöntemi bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesne. [Get_device](https://msdn.microsoft.com/8194125e-8396-4d62-aa8a-65831dea8439) yöntemi bir `accelerator_view` nesne ve döndürür bir `IUknown` arabirimi.  
+C++ AMP çalışma zamanı çalıştırılabilirliği Desteler `accelerator_view` sınıfı ile Direct3D [ıd3d11device arabirimi](/windows/desktop/api/d3d11/nn-d3d11-id3d11device). [Create_accelerator_view](reference/concurrency-direct3d-namespace-functions-amp.md#create_accelerator_view) yöntemi bir `IUnknown` arabirimi ve döndürür bir `accelerator_view` nesne. [Get_device](reference/concurrency-direct3d-namespace-functions-amp.md#get_device) yöntemi bir `accelerator_view` nesne ve döndürür bir `IUnknown` arabirimi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  

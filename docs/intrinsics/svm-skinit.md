@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0912b7a1ff41bf7a21da198268dbd4b8dc920a9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: d8c59ad4af53a38ee28450e51adf9cdf81ec7bad
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466182"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687291"
 ---
 # <a name="svmskinit"></a>__svm_skinit
 **Microsoft'a özgü**  
@@ -48,7 +48,7 @@ void __svm_skinit(
   
  `SLB` Parametresi, bir 64K olarak adlandırılan bellek bloğu fiziksel adresini belirtir *güvenli yükleyici blok* (SLB). SLB bilgisayarın işletim sistemi ortamında oluşturur ve daha sonra güvenlik çekirdek yükler güvenli yükleyici adlı bir programı içerir.  
   
- Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

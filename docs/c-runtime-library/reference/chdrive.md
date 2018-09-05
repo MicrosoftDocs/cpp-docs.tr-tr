@@ -34,19 +34,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f95169f62fa2eaf9c562bff463ad84c0827db9a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6b6d8d53ea3b7331de08ea2aa2a00e5fdfb106c8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394428"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684329"
 ---
 # <a name="chdrive"></a>_chdrive
 
-Geçerli çalışma sürücüyü değiştirir.
+Geçerli çalışma sürücüsünü değiştirir.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,19 +59,19 @@ int _chdrive(
 ### <a name="parameters"></a>Parametreler
 
 *Sürücü*<br/>
-Geçerli çalışma belirten 1-26 arasında bir tamsayı sürücü (1 = A, 2 = B ve benzeri).
+Geçerli çalışma belirten 1 ila 26 arasındaki bir tamsayı sürücü (1 = A, 2 = B vb.).
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Sıfır (geçerli çalışma sürücüsünü başarıyla; değiştirilmişse, 0) Aksi durumda, -1.
+Sıfır (geçerli çalışma sürücüsü başarıyla değiştirilmişse, 0) Aksi durumda, -1.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa *sürücü* olan aralığı içinde 1 ila 26, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_chdrive** işlev döndürür -1, **errno** ayarlanır **EACCES**, ve **_doserrno** içinayarlama **ERROR_INVALID_DRIVE**.
+Varsa *sürücü* olduğu bir aralıkta 1 ila 26 arasındaki, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_chdrive** işlev -1 döndürür, **errno** ayarlanır **SPAWN**, ve **_doserrno** içinayarlayın **ERROR_INVALID_DRIVE**.
 
-**_Chdrive** işlevi değil iş parçacığı bağımlı olduğundan dolayı **SetCurrentDirectory** kendisi iş parçacığı açısından güvenli işlevi. Kullanılacak **_chdrive** güvenli bir çok iş parçacıklı uygulamada kendi iş parçacığı eşitleme sağlamanız gerekir. Daha fazla bilgi için Git [MSDN Kitaplığı](http://go.microsoft.com/fwlink/p/?linkid=150542) arayın ve sonra **SetCurrentDirectory**.
+**_Chdrive** işlevi değil iş parçacığı bağımlı olduğundan dolayı **SetCurrentDirectory** işlevin kendisi iş parçacığı güvenli değildir. Kullanılacak **_chdrive** güvenli bir şekilde birden çok iş parçacıklı bir uygulamada, kendi iş parçacığı eşitlemenizi sağlamalısınız. Daha fazla bilgi için [SetCurrentDirectory](/windows/desktop/api/winbase/nf-winbase-setcurrentdirectory).
 
-**_Chdrive** işlevi değişiklikler yalnızca geçerli çalışma sürücü;  **_chdir** geçerli çalışma dizini değiştirir.
+**_Chdrive** işlevi yalnızca geçerli çalışma sürücüsünü; değiştirir  **_chdir** geçerli çalışma dizinini değiştirir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -79,11 +79,11 @@ Varsa *sürücü* olan aralığı içinde 1 ila 26, geçersiz parametre işleyic
 |-------------|---------------------|
 |**_chdrive**|\<Direct.h >|
 
-Daha fazla bilgi için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla bilgi için [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_getdrive](getdrive.md).
+Örneğin bakın [_getdrive](getdrive.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

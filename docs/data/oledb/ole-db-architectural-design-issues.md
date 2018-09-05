@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5b080945309732bec06c63eb665bbf6dd5f4acb5
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 2b0a5c568a774d0aed05d702454664e653989401
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340569"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676842"
 ---
 # <a name="ole-db-architectural-design-issues"></a>OLE DB Mimari Tasarım Sorunları
 OLE DB uygulamanızı başlatmadan önce aşağıdaki sorunları dikkate almanız gerekir:  
@@ -39,15 +39,9 @@ OLE DB uygulamanızı başlatmadan önce aşağıdaki sorunları dikkate almanı
  **Eski kod başka bir veri erişim teknolojisi (ADO, ODBC ve DAO) kullanılarak var mı?**  
  Olası eşleştirme birleşimlerini (örneğin, OLE DB bileşenlerle ADO bileşenlerini kullanma ve OLE DB için ODBC kodu geçirme) teknolojileri göz önünde bulundurulduğunda, tüm durumları kapsayan Visual C++ belgelerinin kapsamıdır. Ancak, aşağıdaki Microsoft Web sitelerinde çeşitli senaryoları kapsayan birçok makale mevcuttur:  
   
--   [Microsoft Yardım ve Destek](http://go.microsoft.com/fwlink/p/?linkid=148218)  
+-   [Microsoft Yardım ve Destek](https://support.microsoft.com/)  
   
--   [Microsoft Data Access teknik makaleler genel bakış](http://go.microsoft.com/fwlink/p/?linkid=148217)  
-  
--   [Visual Studio Çözüm Merkezi'ni](http://go.microsoft.com/fwlink/p/?linkid=148215)  
-  
--   [Microsoft.com'da arama yapın](http://search.microsoft.com/)  
-  
- Bir arama gerçekleştirdiğinizde, senaryonuza en uygun bir anahtar sözcük birleşimi girin. Örneğin: bir OLE DB sağlayıcısı ADO nesneleri kullandıysanız, Boole bir arama deneyin ile **ADO ve "OLE DB"**. DAO eski kod için ODBC geçirmek isterseniz, "tüm sözcük" seçin ve dizeler gibi belirtin **geçirme DAO**.  
+-   [Microsoft Data Access teknik makaleler genel bakış](https://msdn.microsoft.com/en-us/library/ms810811.aspx)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB programlama](../../data/oledb/ole-db-programming.md)   

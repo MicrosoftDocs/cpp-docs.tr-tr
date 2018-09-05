@@ -1,7 +1,7 @@
 ---
 title: QWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9888a6d7d918df1c9a5d83a28fca002d2ab59cf4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b55691b9e91b8534b530059e95d856c11be7ea0c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052918"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682016"
 ---
 # <a name="qword"></a>QWORD
-Ayırır ve isteğe bağlı olarak depolama 8 bayt her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[[name]] QWORD initializer [[, initializer]]...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [SQWORD](../../assembler/masm/qword.md)   
- [DQ](../../assembler/masm/dq.md)
+
+Ayırır ve isteğe bağlı olarak her biri için depolama alanı 8 bayt başlatır `initializer`. Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+
+## <a name="syntax"></a>Sözdizimi
+
+> [[ad]] QWORD Başlatıcı [[, başlatıcı]]...
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[SQWORD](../../assembler/masm/qword.md)<br/>
+[DQ](../../assembler/masm/dq.md)<br/>

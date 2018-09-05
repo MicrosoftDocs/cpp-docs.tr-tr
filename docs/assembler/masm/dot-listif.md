@@ -1,7 +1,7 @@
 ---
 title: . LISTIF | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97025e687d68713193097caba8583b402577dab1
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 2461d2e8e52bb05d5596b09bec08ea4d9dcf73c3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051079"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682603"
 ---
 # <a name="listif"></a>.LISTIF
-False koşullu blokları deyimlerinde listelenmesi başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.LISTIF  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aynı [. LFCOND](../../assembler/masm/dot-lfcond.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+False koşullu bloklar deyimlerinin listelemeye başlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .LISTIF
+
+## <a name="remarks"></a>Açıklamalar
+
+Aynı [. LFCOND](../../assembler/masm/dot-lfcond.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

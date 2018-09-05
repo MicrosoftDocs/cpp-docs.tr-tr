@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f311f7b73e72f47f363cfd5645c97b57eda5b480
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b7fd978390a2b991da2bddedbab1c05497709d67
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200882"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688149"
 ---
 # <a name="cpagerctrl-class"></a>CPagerCtrl sınıfı
 `CPagerCtrl` Sınıfı, kapsayan pencereye uymayan bir kapsanan pencere görünümüne kaydırabilirsiniz Windows sayfalama denetimini sarar.  
@@ -183,7 +183,7 @@ virtual BOOL CreateEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwExStyle*|Denetimlere uygulanması için genişletilmiş stiller Bitsel bir birleşimi. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) işlevi.|  
+|[in] *dwExStyle*|Denetimlere uygulanması için genişletilmiş stiller Bitsel bir birleşimi. Daha fazla bilgi için *dwExStyle* parametresinin [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) işlevi.|  
 |[in] *dwStyle*|Bit düzeyinde birleşimi (veya) [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles) ve [çağrı cihazı denetimi stilleri](/windows/desktop/Controls/pager-control-styles) denetime uygulanacak.|  
 |[in] *dikdörtgen*|Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları denetiminin boyutunu ve konumunu içeren yapısı.|  
 |[in] *pParentWnd*|Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) denetiminin üst penceresine olan nesne. Bu parametre NULL olamaz.|  

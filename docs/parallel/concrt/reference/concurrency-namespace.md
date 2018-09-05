@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 324acb33998246933b0c426357368247c6689c47
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4d5e7499bb1734b2093a60039e28b6f9f85920df
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211323"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681191"
 ---
 # <a name="concurrency-namespace"></a>concurrency Ad Alanı
 `Concurrency` Size işlevleri erişmek için eşzamanlılık çalışma zamanı C++ için eşzamanlı programlama çerçevesi ve ad alanı sınıflar sağlar. Daha fazla bilgi için [eşzamanlılık çalışma zamanı](../../../parallel/concrt/concurrency-runtime.md).  
@@ -47,12 +47,6 @@ namespace concurrency;
 ```  
   
 ## <a name="members"></a>Üyeler  
-  
-### <a name="namespaces"></a>Ad Alanları  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CONCURRENCY::Extensibility Namespace](https://msdn.microsoft.com/16a86ff2-128e-4edf-89e4-38aac79c81f9)||  
   
 ### <a name="typedefs"></a>Tür tanımları  
   
@@ -135,7 +129,7 @@ namespace concurrency;
 |[structured_task_group Sınıfı](structured-task-group-class.md)|`structured_task_group` Sınıfı, yüksek düzeyde yapılandırılmış bir paralel iş koleksiyonunu temsil eder. Tek tek Paralel Görevler sıraya alabilirsiniz bir `structured_task_group` kullanarak `task_handle` yürütme başlamadığınız herhangi bir görevi iptal edilecek yürütme bitirmeden önce görev grubunu iptal nesneleri veya tamamlanmalarını bekleyin.|  
 |[target_block Sınıfı](target-block-class.md)|`target_block` Temel bağlantı yönetim işlevleri sağlayan soyut bir temel sınıfı ve hedef için hata denetimini yalnızca engeller.|  
 |[task Sınıfı (Eşzamanlılık Çalışma Zamanı)](task-class.md)|Paralel Desen kitaplığı (PPL) `task` sınıfı. A `task` nesnesi zaman uyumsuz olarak ve diğer görevleri aynı anda yürütülebilecek ve Eşzamanlılık Çalışma zamanında paralel algoritmalar tarafından üretilen iş paralel çalışmayı temsil eder. Türünün bir sonucu üretir `_ResultType` başarıyla tamamlandığında. Görev türü `task<void>` hiç sonuç vermez. Bir görev beklenebilir ve diğer görevlerden bağımsız olarak iptal edildi. Devamlılıkları kullanarak başka görevlerle de oluşabilir (`then`) ve birleştirme (`when_all`) ve seçim (`when_any`) desenleri.|  
-|[task_canceled Sınıfı](task-canceled-class.md)|Bu sınıf, geçerli görevi iptal etmek için zorlamak için PPL görev katmanı tarafından verilen bir özel durumu anlatmaktadır. Ayrıca tarafından oluşturulur `get()` metodunda [görev](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f), iptal edilen bir görev için.|  
+|[task_canceled Sınıfı](task-canceled-class.md)|Bu sınıf, geçerli görevi iptal etmek için zorlamak için PPL görev katmanı tarafından verilen bir özel durumu anlatmaktadır. Ayrıca tarafından oluşturulur `get()` metodunda [görev](task-class.md), iptal edilen bir görev için.|  
 |[task_completion_event Sınıfı](task-completion-event-class.md)|`task_completion_event` Sınıfı bir koşul sağlanana kadar bir görevin yürütülmesini geciktirmek veya dış bir olaya yanıt olarak bir görevi başlatma olanak tanır.|  
 |[task_continuation_context Sınıfı](task-continuation-context-class.md)|`task_continuation_context` Sınıfı bir devamlılığın yürütülmesini istediğiniz belirtmenize olanak verir. Yalnızca, bu sınıftan bir UWP uygulaması kullanmak kullanışlıdır. Windows Runtime uygulamalar için görev devamlılığı yürütme içeriği, çalışma zamanı tarafından belirlenen ve yapılandırılabilir.|  
 |[task_group sınıfı](task-group-class.md)|`task_group` Sınıf beklenen veya iptal edilen paralel iş koleksiyonunu temsil eder.|  
@@ -194,7 +188,7 @@ namespace concurrency;
 |[asend işlevi](concurrency-namespace-functions.md#asend)|Fazla Yüklendi. Hedef blok verileri yaymak için bir görevi zamanlar bir zaman uyumsuz gönderme işlemi.|  
 |[cancel_current_task işlevi](concurrency-namespace-functions.md#cancel_current_task)|Şu anda yürütülmekte olan görevi iptal eder. Bu işlev görevin yürütülmesini durdurmak ve girmesine neden bir görevin gövdesinden çağrılabilir `canceled` durumu.<br /><br /> Gövdesinde değilseniz bu işlevin çağrılmasında desteklenen bir senaryo değil bir `task`. Bunun yapılması bir kilitlenme veya uygulamanızdaki bir takılma gibi tanımsız davranışa neden olur.|  
 |[create_async işlevi](concurrency-namespace-functions.md#create_async)|Bir kullanıcı tarafından sağlanan lambda veya işlev nesnesine bağlı bir Windows çalışma zamanı zaman uyumsuz bir yapı oluşturur. Dönüş türünü `create_async` herhangi biri `IAsyncAction^`, `IAsyncActionWithProgress<TProgress>^`, `IAsyncOperation<TResult>^`, veya `IAsyncOperationWithProgress<TResult, TProgress>^` yönteme geçirilen lambda'nın imzası göre.|  
-|[create_task işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Oluşturur [görev](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.|  
+|[create_task işlevi](concurrency-namespace-functions.md#create_task)|Fazla Yüklendi. Oluşturur [görev](task-class.md) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.|  
 |[CreateResourceManager işlevi](concurrency-namespace-functions.md#createresourcemanager)|Eşzamanlılık Çalışma zamanı Kaynak Yöneticisi'nin tekil örneğini temsil eden bir arabirim döndürür. Kaynak Yöneticisi birbirleriyle işbirliği istediğiniz planlayıcılar için kaynakları atamak ile sorumludur.|  
 |[DisableTracing işlevi](concurrency-namespace-functions.md#disabletracing)|Eşzamanlılık Çalışma zamanında izleme devre dışı bırakır. ETW İzleme, varsayılan olarak kaydı olduğundan, bu işlev kullanım dışı bırakılmıştır.|  
 |[EnableTracing işlevi](concurrency-namespace-functions.md#enabletracing)|Eşzamanlılık Çalışma zamanında izleme sağlar. ETW İzleme şu anda varsayılan olarak etkin olduğundan, bu işlev kullanım dışı bırakılmıştır.|  

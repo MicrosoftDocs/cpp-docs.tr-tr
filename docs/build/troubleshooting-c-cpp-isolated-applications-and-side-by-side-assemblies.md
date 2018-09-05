@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4550d523a4410734c391e2e4d266ae536b4610b4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3768056a240bb8ad647287b4ca2b60f8e7ede484
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218675"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681391"
 ---
 # <a name="troubleshooting-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme
 C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bulunamazsa. Bu makalede, C/C++ uygulamasına neden başarısız yüklemek için bazı yaygın nedenleri açıklanır ve sorunları gidermek için adımları önerir.  
@@ -46,7 +46,7 @@ C/C++ uygulamasına yükleme başarısız olabilir bağımlı kitaplıkları bul
   
 3.  Yan yana derlemelerini uygulamanızın bağımlı ve bir bildirim mevcut değilse, bağlayıcı projeniz için bir bildirim üretir emin olmak sahip. Bağlayıcı seçeneği işaretleyin **oluşturma bildirimi** içinde **proje özellikleri** iletişim kutusu için proje.  
   
-4.  İkili dosyada bildirim katıştırılır, kimliği rt_manıfest, bu ikili türü için doğru olduğundan emin olun. Hangi kaynak Kimliğinde kullanılacak hakkında daha fazla bilgi için bkz: [bir kaynak (Windows) kullanarak yan yana derlemeler](https://msdn.microsoft.com/library/windows/desktop/aa376617.aspx). Ayrı bir dosyada bildirime ise bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz. [bildirimlerini](https://msdn.microsoft.com/library/aa375365).  
+4.  İkili dosyada bildirim katıştırılır, kimliği rt_manıfest, bu ikili türü için doğru olduğundan emin olun. Hangi kaynak Kimliğinde kullanılacak hakkında daha fazla bilgi için bkz: [bir kaynak (Windows) kullanarak yan yana derlemeler](/windows/desktop/SbsCs/using-side-by-side-assemblies-as-a-resource). Ayrı bir dosyada bildirime ise bir XML Düzenleyicisi'ni veya metin düzenleyicide açın. Bildirimler ve dağıtım için kuralları hakkında daha fazla bilgi için bkz. [bildirimlerini](https://msdn.microsoft.com/library/aa375365).  
   
     > [!NOTE]
     >  Gömülü bir bildirim hem de ayrı bir bildirim dosyası varsa, işletim sistemi yükleyicisi gömülü bildirimi kullanır ve ayrı bir dosya yok sayar. Ancak, Windows XP'de, bunun tersini geçerlidir — ayrı bildirim dosyası kullanılır ve katıştırılmış bildirime göz ardı edilir.  

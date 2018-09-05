@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f79917e34a749048696f320a8311978acc2739f4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1c1d483f6ba532a6d8eeee1a8ec831cfd1d94b62
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202861"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678015"
 ---
 # <a name="colecontrolsite-class"></a>COleControlSite sınıfı
 Özel istemci tarafı denetim arabirimleri için destek sağlar.  
@@ -797,7 +797,7 @@ virtual BOOL ModifyStyle(
  Geçerli pencere stilleri eklenecek stilleri.  
   
  *nFlags*  
- Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aksi halde sıfır stilleri değiştiğinde olursa sıfır dışı.  
@@ -805,7 +805,7 @@ virtual BOOL ModifyStyle(
 ### <a name="remarks"></a>Açıklamalar  
  Denetimin stok özelliği ws_dısabled ayarını eşleşecek şekilde değiştirilecek. Denetimin stok kenarlık stili özellik WS_BORDER istenen ayarını eşleşecek şekilde değiştirilecek. Varsa, doğrudan denetimin pencere işleyicisi, diğer tüm stiller uygulanır.  
   
- Pencere stilleri bir denetimin değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
+ Pencere stilleri bir denetimin değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyle` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -837,7 +837,7 @@ virtual BOOL ModifyStyleEx(
  Genişletilmiş stiller, geçerli pencere stilleri eklenecek.  
   
  *nFlags*  
- Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK'sında işlev.  
+ Bayrakları konumlandırma penceresini açın. Olası değerler listesi için bkz. [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK'sında işlev.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aksi halde sıfır stilleri değiştiğinde olursa sıfır dışı.  
@@ -845,7 +845,7 @@ virtual BOOL ModifyStyleEx(
 ### <a name="remarks"></a>Açıklamalar  
  Denetimin stoğu görünümü özelliği WS_EX_CLIENTEDGE ayarını eşleşecek şekilde değiştirilecek. Varsa, doğrudan denetimin pencere işleyicisi, diğer tüm genişletilmiş pencere stilleri uygulanır.  
   
- Genişletilmiş stiller denetim site nesnesinin penceresini değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
+ Genişletilmiş stiller denetim site nesnesinin penceresini değiştirir. Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir ( &#124; ) işleci. Bkz: [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK'sında işlev.  
   
  Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Win32 işlevini çağırır `SetWindowPos`ve pencerenin birleştirerek yeniden çizer *nFlags* aşağıdaki dört bayrağı ile:  
   
@@ -1051,7 +1051,7 @@ virtual BOOL SetWindowPos(
  Pencerenin yeni yüksekliği.  
   
  *nFlags*  
- Pencerenin boyutlandırma ve konumlandırma bayrakları belirtir. Olası değerler için için Açıklamalar bölümüne bakın [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) Windows SDK.  
+ Pencerenin boyutlandırma ve konumlandırma bayrakları belirtir. Olası değerler için için Açıklamalar bölümüne bakın [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıfır olmayan başarılı olursa sıfır, aksi takdirde.  

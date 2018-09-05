@@ -1,7 +1,7 @@
 ---
 title: WIDTH işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a159f6885b103a8508e648c687ce64c65c263389
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c58250b6f719a8be27a7166c3f4967ca2bcb6282
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056694"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685874"
 ---
 # <a name="operator-width"></a>WIDTH işleci
-Geçerli bit cinsinden genişliği döndürür *recordfieldname* veya *kaydı*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-WIDTH {recordfieldname | record}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Geçerli bir bit cinsinden genişliğini döndürür *recordfieldname* veya *kayıt*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> Genişlik {recordfieldname | kayıt}
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

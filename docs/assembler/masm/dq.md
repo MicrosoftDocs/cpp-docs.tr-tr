@@ -1,7 +1,7 @@
 ---
 title: DQ | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d9ba5f5fe944964c365a071cda37f5e7bdc35e1
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: bd13549977edb2b0c80673cc8cb7b6279985b67f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051149"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687492"
 ---
 # <a name="dq"></a>DQ
-Ayırır ve isteğe bağlı olarak depolama 8 bayt her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür. `DQ` bir eş anlamlı olduğundan [QWORD](../../assembler/masm/qword.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[[name]] DQ initializer [[, initializer]]...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [QWORD](../../assembler/masm/qword.md)
+
+Ayırır ve isteğe bağlı olarak her biri için depolama alanı 8 bayt başlatır `initializer`. Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür. `DQ` ' ın eşanlamlıdır [QWORD](../../assembler/masm/qword.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+> [[ad]] DQ Başlatıcı [[, başlatıcı]]...
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[QWORD](../../assembler/masm/qword.md)<br/>

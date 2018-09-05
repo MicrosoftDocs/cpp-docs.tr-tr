@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4bc63eede971bed0b726c633f0ef7d52793f39ba
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1b5160061233f9d0a474385bccd324333ed9549a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219474"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686293"
 ---
 # <a name="resources-property-pages"></a>Kaynaklar Özellik Sayfaları
-Kaynak derleyicisi kullanarak daha fazla bilgi için bkz: [RC kullanma (RC komut satırı)](https://msdn.microsoft.com/library/windows/desktop/aa381055).  
+Kaynak derleyicisi kullanarak daha fazla bilgi için bkz: [RC kullanma (RC komut satırı)](/windows/desktop/menurc/using-rc-the-rc-command-line-).  
   
  Erişim hakkında daha fazla bilgi için **kaynakları** özellik sayfalarına bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 693a0e63e5fe67b1a3837ae71945ccc60b5fb247
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 475a4f4d5f39f7fdfa569441fb2cb0fc72b745a0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204349"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677888"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak için yöntemler sağlar.  
@@ -58,7 +58,7 @@ class CComCoClass
 |[CComCoClass::GetObjectDescription](#getobjectdescription)|(Statik) Nesnenin açıklamasını döndürmek için geçersiz kılın.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CComCoClass` bir nesnenin CLSID alma, hata bilgilerini ayarlama ve sınıfın örnekleri oluşturmak için yöntemleri sağlar. Herhangi bir sınıf kayıtlı [nesne eşlemesine](https://msdn.microsoft.com/b57619cc-534f-4b8f-bfd4-0c12f937202f) nesnesinden türetilmesi `CComCoClass`.  
+ `CComCoClass` bir nesnenin CLSID alma, hata bilgilerini ayarlama ve sınıfın örnekleri oluşturmak için yöntemleri sağlar. Nesne eşlemesindeki kayıtlı herhangi bir sınıf nesnesinden türetilmesi `CComCoClass`.  
   
  `CComCoClass` Ayrıca, nesneniz için varsayılan sınıf üreteci ve toplama modelini tanımlar. `CComCoClass` Aşağıdaki iki makro kullanır:  
   

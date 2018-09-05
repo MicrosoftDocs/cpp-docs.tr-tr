@@ -1,7 +1,7 @@
 ---
 title: . LISTMACRO | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d74228abccf70b969c0d1feed6a987baf35c8171
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 4df49ef00b07f3e95b9acbcd02aa4ae023a1ea87
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050967"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676488"
 ---
 # <a name="listmacro"></a>.LISTMACRO
-Kod veya veri üreten makrosu genişletme bilgilerinin listeleme başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.LISTMACRO  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu varsayılandır. Aynı [. XALL](../../assembler/masm/dot-xall.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Kod veya veri üreten makro genişletme bilgilerinin listelemeye başlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .LISTMACRO
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu varsayılandır. Aynı [. XALL](../../assembler/masm/dot-xall.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

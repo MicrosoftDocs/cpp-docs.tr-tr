@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41b3565893d65990955f0fd28c6cccce7fcb1f32
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f56ee748738cd67199348c93272a9cd2ed564e2c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222249"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685705"
 ---
 # <a name="creating-and-managing-msbuild-based-visual-c-projects"></a>Visual C++ MSBuild tabanlı projeler oluşturma ve yönetme
 MSBuild Visual C++ için yerel derleme sistemi ve genellikle en iyi MFC veya ATL kitaplığı kullanan masaüstü uygulamaların yanı sıra UWP uygulamaları için kullanılacak sistem oluşturun. MSBuild Visual Studio IDE ve proje sistemi ile sıkı bir şekilde tümleştirilmiştir, ancak bunu ayrıca komut satırından kullanabilirsiniz. Visual Studio 2017'den itibaren Visual C++ destekler [CMake ve MSBuild olmayan diğer sistemlere Klasör Aç özelliği](non-msbuild-projects.md).
@@ -67,9 +67,6 @@ Visual C++ projelerini seçerek oluşturabilirsiniz **dosya &#124; yeni &#124; p
 ## <a name="related-sections"></a>İlgili Bölümler  
  [C/C++ Programları Oluşturma](../build/building-c-cpp-programs.md)  
  Programınızın komut satırından veya Visual Studio'nun tümleşik geliştirme ortamından oluşturmayı açıklayan konulara bağlantılar sağlar.  
-  
- [Visual C++ başvurusu](https://msdn.microsoft.com/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
- C ve C++ dil başvuruları, Visual C++, Visual C++ genişletilebilirlik nesne modeli ve Microsoft Macro Assembler (MASM) ile sağlanan kitaplıkları açıklayan konulara bağlantılar sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Visual Studio SDK](https://msdn.microsoft.com/vstudio/extend)

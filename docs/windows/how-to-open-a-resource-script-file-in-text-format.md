@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aae516aeecd90a46544d1e9e28e1352fc73f6e2c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e331966c44d19f2410a59505348bcc0a37c63912
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221466"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676059"
 ---
 # <a name="how-to-open-a-resource-script-file-in-text-format"></a>Nasıl Yapılır: Kaynak Betik Dosyasını Metin Biçiminde Açma
 
@@ -33,7 +33,7 @@ Belirli kaynak düzenleyicisinin içinde bir iletişim kutusu gibi bir kaynak a�
 > [!NOTE]
 > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).
 
-Kaynak dosyası içerdiği tüm kaynakları görüntüleme ve tarafından desteklenen genel işlemleri gerçekleştirmek için metin biçiminde kolayca açabilirsiniz [metin düzenleyici](https://msdn.microsoft.com/508e1f18-99d5-48ad-b5ad-d011b21c6ab1).
+Metin biçimindeki içerir ve genel işlemleri metin düzenleyicisi tarafından desteklenen tüm kaynakları görüntülemek için kaynak dosyası kolayca açabilirsiniz.
 
 > [!NOTE]
 > Kaynak düzenleyicileri .rc doğrudan okunmaz veya `resource.h` dosyaları. Kaynak Derleyicisi bunları kaynak düzenleyicileri tarafından tüketilen .aps dosyalarına derlenir. Bu dosya, bir derleme adımdır ve yalnızca sembolik verileri depolar. (Örneğin, açıklamalar) sembolik değil bilgi işlem ile normal bir derleme olarak derleme işlemi sırasında göz ardı edilir. .Rc dosyasıyla .aps dosyası zaman uyumsuz olarak alır her .rc dosyası yeniden oluşturuldu (kaydettiğinizde, örneğin, kaynak düzenleyicisini .rc dosyasını ve resource.h dosyasını geçersiz kılar). Herhangi bir değişiklik kaynaklardaki .rc dosyasına eklenen kalır ancak .rc dosyasının üzerine sonra açıklamalar her zaman kaybolacak. Açıklamaları koruma hakkında daha fazla bilgi için bkz: [derleme zamanında dahil olmak üzere kaynakları](../windows/how-to-include-resources-at-compile-time.md).

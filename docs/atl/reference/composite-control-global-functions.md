@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d433c76e054b16491ab7586d6107b4931dc2915
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cf8c5bf4336df95caabd26d5ba4a395190c9591a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203722"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677854"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 Bu işlevler, iletişim kutuları oluşturma ve oluşturma, barındırma ve ActiveX denetimlerini lisanslama için destek sağlar.  
@@ -442,7 +442,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
  Başlatma kodu barındırma denetimi başarılı olursa sıfır dışı; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) veya [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680)Windows SDK içinde açıklandığı gibi.  
+ Bu işlev, ATL Denetim barındırma API'si kullanmadan önce çağrılmalıdır. Bu işlev, çağrıyı izleyen **"AtlAxWin"** pencere sınıfını çağrıları kullanılabilir [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) veya [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa)Windows SDK içinde açıklandığı gibi.  
 
 ##  <a name="atlaxwinterm"></a>  Zaman AtlAxWinTerm  
  Bu işlev ATL'nin denetim barındırma kodunu kaydını silerek başlamasını iptal eder **"AtlAxWin80"** ve **"AtlAxWinLic80"** pencere sınıfları.  

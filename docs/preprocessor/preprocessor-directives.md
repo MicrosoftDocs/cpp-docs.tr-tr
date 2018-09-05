@@ -15,18 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a401cb74c07815f511ad37e53ac5be267029319c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7e218002171b7ad2d141be227ab277851487f0f5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212227"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678806"
 ---
 # <a name="preprocessor-directives"></a>Ön işlemci Yönergeleri
 
 Önişlemci yönergeleri, aşağıdaki gibi `#define` ve `#ifdef`, genellikle kaynak programların kolay değiştirilmesini ve farklı yürütme ortamlarında derlemek kolay hale getirmek için kullanılır. Kaynak dosyasındaki yönergeler önişlemciye belirli eylemleri gerçekleştirmesini söyler. Örneğin, önişlemci metin içindeki belirteçleri değiştirin, diğer dosyaların içeriklerini kaynak dosyaya ekleyin veya metnin bölümlerini kaldırarak dosyanın bir kısmının derlemesini bastır. Önişlemci satırları makro genişletmeden daha önce gerçekleştirilen ve tanınan. Bu nedenle makro önişlemci komutu gibi görünen bir şey genişletir, komut önişlemci tarafından tanınmıyor.
 
-Önişlemci deyimleri kaynak dosya deyimleriyle, çıkış sıraları desteklenmez olarak aynı karakter kullanın. Önişlemci deyimlerinde kullanılan karakter kümesi ile aynı olduğu [yürütme karakter kümesi](https://msdn.microsoft.com/a7901c61-524d-47c6-beb6-d9dacc2e72ed). Önişlemci ayrıca negatif karakter değerlerini tanır.
+Önişlemci deyimleri kaynak dosya deyimleriyle, çıkış sıraları desteklenmez olarak aynı karakter kullanın. Önişlemci deyimlerinde kullanılan karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci ayrıca negatif karakter değerlerini tanır.
 
 Önişlemci aşağıdaki yönergeleri tanır:
 

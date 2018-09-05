@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e9a946689d563f1c681fee305ec05438bc5eb687
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 34342fbca00a127d1fdee13d29626bc2a3dfe53f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204744"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679211"
 ---
 # <a name="walkthrough-create-a-traditional-windows-desktop-application-c"></a>İzlenecek yol: Geleneksel Windows masaüstü uygulaması (C++) oluştur
 
@@ -181,7 +181,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    }
    ```
 
-1. Şimdi bir pencere oluşturabilirsiniz. Kullanım [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) işlevi.
+1. Şimdi bir pencere oluşturabilirsiniz. Kullanım [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) işlevi.
 
    ```cpp
    static TCHAR szWindowClass[] = _T("DesktopApp");
@@ -247,7 +247,7 @@ Ardından, Visual Studio'da bir Windows masaüstü uygulaması için kod oluştu
    return (int) msg.wParam;
    ```
 
-   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955), ve [DispatchMessage ](https://msdn.microsoft.com/library/windows/desktop/ms644934).
+   Yapılar ve ileti döngüsü işlevler hakkında daha fazla bilgi için bkz: [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958), [GetMessage](https://msdn.microsoft.com/library/windows/desktop/ms644936), [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage), ve [DispatchMessage ](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).
 
    Bu noktada, `WinMain` işlevi aşağıdaki kodu benzemesi gerekir.
 

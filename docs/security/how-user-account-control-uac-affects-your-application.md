@@ -17,21 +17,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23266ca4b4d32146ed8627c6ce3ab1cc878d59cd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c313a72a3c76b65476659e463076d61383dd43a5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600658"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682089"
 ---
 # <a name="how-user-account-control-uac-affects-your-application"></a>Kullanıcı Hesabı Denetimi (UAC) Uygulamanızı Nasıl Etkiler
 Kullanıcı Hesabı Denetimi (UAC), Windows Vista'nın, kullanıcı hesaplarının ayrıcalıkları sınırlı bir özelliktir. Bu sitelerdeki UAC hakkında ayrıntılı bilgi bulabilirsiniz:  
   
--   [Windows Vista kullanıcı hesabı denetimi adım adım kılavuzu](http://go.microsoft.com/fwlink/p/?linkid=53781)  
-  
--   [Geliştirici en iyi ve en az ayrıcalıklı bir ortamda uygulamalar için yönergeler](http://go.microsoft.com/fwlink/p/?linkid=82444)  
-  
--   [Anlama ve Windows Vista kullanıcı hesabı denetimi yapılandırma](http://go.microsoft.com/fwlink/p/?linkid=82445)  
+-   [Geliştirici en iyi ve en az ayrıcalıklı bir ortamda uygulamalar için yönergeler](/windows/desktop/uxguide/winenv-uac)  
   
 ## <a name="building-projects-after-enabling-uac"></a>UAC etkinleştirdikten sonra proje oluşturma  
  Windows Vista'da UAC devre dışıyken Visual C++ projesi oluşturun ve daha sonra UAC'yi etkinleştirmek, temizleme ve bunun düzgün çalışması projeyi yeniden derleyin.  

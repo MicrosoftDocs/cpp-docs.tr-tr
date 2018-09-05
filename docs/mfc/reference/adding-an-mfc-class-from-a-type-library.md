@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656d5c357874a7b470eb2fd630c91ad0aefa5a0d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c79409ae6e4c7447050c26246768c0074c4e4e92
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205379"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677201"
 ---
 # <a name="adding-an-mfc-class-from-a-type-library"></a>Tür Kitaplığından Bir MFC Sınıfı Ekleme
 Kullanılabilen tür kitaplığında bir arabirimden bir MFC sınıfı oluşturmak için bu sihirbazı kullanın. Bir MFC sınıfı için ekleyebileceğiniz bir [MFC uygulaması](../../mfc/reference/creating-an-mfc-application.md), bir [MFC DLL](../../mfc/reference/creating-an-mfc-dll-project.md), veya bir [MFC ActiveX denetimi](../../mfc/reference/creating-an-mfc-activex-control.md).  
@@ -33,7 +33,7 @@ Kullanılabilen tür kitaplığında bir arabirimden bir MFC sınıfı oluşturm
   
 ### <a name="to-add-an-mfc-class-from-a-type-library"></a>Tür kitaplığından bir MFC sınıfı ekleme  
   
-1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), sınıfa eklemek istediğiniz proje adına sağ tıklayın.  
+1.  Her ikisinde **Çözüm Gezgini** veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), sınıfa eklemek istediğiniz proje adına sağ tıklayın.  
   
 2.  Kısayol menüsünden tıklayın **Ekle**ve ardından **sınıfı Ekle**.  
   

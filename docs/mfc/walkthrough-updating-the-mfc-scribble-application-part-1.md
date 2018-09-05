@@ -19,16 +19,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37cec86d276732bd7273d0f5585de5093f0cd01f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ce50d2c70107b4c88f223e32fdd8cc083df38840
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465290"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685551"
 ---
 # <a name="walkthrough-updating-the-mfc-scribble-application-part-1"></a>İzlenecek yol: MFC karalama uygulamasını (Kısım 1) güncelleştiriliyor
 
-Bu yönerge Şerit kullanıcı arabirimini kullanarak varolan bir MFC uygulamasına değişiklik yapma gösterir. Visual Studio, hem Office 2007 Şerit hem de Windows 7, manzara Şerit destekler. Şerit kullanıcı arabirimini hakkında daha fazla bilgi için bkz: [şeritler](http://go.microsoft.com/fwlink/p/?linkid=129233) MSDN Web sitesinde.
+Bu yönerge Şerit kullanıcı arabirimini kullanarak varolan bir MFC uygulamasına değişiklik yapma gösterir. Visual Studio, hem Office 2007 Şerit hem de Windows 7, manzara Şerit destekler. Şerit kullanıcı arabirimini hakkında daha fazla bilgi için bkz: [şeritler](/windows/desktop/uxguide/cmd-ribbons).
 
 Bu kılavuz satırı çizimler için fare kullanmanıza olanak sağlayan Klasik 1.0 MFC karalama örneği değiştirir. Kılavuzun bu bölümü, böylece bir Şerit çubuğuna görüntüler genişletilen Scribble örneğinin değiştirme işlemi gösterilmektedir. [2. bölüm](../mfc/walkthrough-updating-the-mfc-scribble-application-part-2.md) diğer düğmeleri Şerit çubuğuna ekler.
 

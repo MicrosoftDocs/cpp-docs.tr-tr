@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 5d5804a7437dabd688abab04ebdd50a79decbaaa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f3f447c2cc45e0ccc96a1480b9d521f1bde09c9e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198775"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677215"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
 Microsoft OLE DB eski bir teknolojidir; Yeni uygulamalar için bağlı SQL sunucuları için gereken veri erişimi API'si kullanılır. Diğer tüm yeni uygulamaları ODBC kullanmanız gerekir. SQL Server için geçerli OLE DB sağlayıcısı SQLNCLI11 ' dir. DLL. Sağlayıcı, SQL Server 2016'da hala sunulmamaktadır. Bu belge, OLE DB kullanmakta olan mevcut uygulamaları korumak için geliştiriciler içindir.
@@ -40,7 +40,7 @@ Microsoft OLE DB eski bir teknolojidir; Yeni uygulamalar için bağlı SQL sunuc
 |OLE DB şablon sınıfları ve makroları|[OLE DB Şablonları başvurusu](../../data/oledb/ole-db-templates.md) (Visual C++)|  
 |OLE DB tüketici öznitelikleri|[OLE DB Tüketici Öznitelikleri](../../windows/ole-db-consumer-attributes.md)|  
 |OLE DB arabirimleri|[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)) (Windows SDK'da)|  
-|OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](https://msdn.microsoft.com/08958863-0b5f-41ad-ae99-fca7440c553c)| 
+|OLE DB Şablon örnekleri|[OLE DB Şablon örnekleri](https://github.com/Microsoft/VCSamples)| 
 |Veri erişim programlama genel bakış (Visual C++)|[Veri erişim programlama](../../data/data-access-programming-mfc-atl.md)|  
 |ODBC kavramsal konular|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 

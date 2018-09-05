@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2006 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d2f7df00d1c0658ee8301fbde1efe2522b52fc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f287c6ab46c6af71ba6dc0032f332ce3cc489454
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054861"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677411"
 ---
 # <a name="ml-nonfatal-error-a2006"></a>ML Önemli Olmayan Hatası A2006
-**tanımlanmamış simge: tanımlayıcısı**  
-  
- Tanımlanmamış bir simge kullanmak için girişimde bulunuldu.  
-  
- Aşağıdakilerden birini oluşmuş olabilir:  
-  
--   Bir simge tanımlı değil.  
-  
--   Bir alan belirtilen yapı üyesi değil.  
-  
--   Bir simge bulunmayan bir içerme dosyası içinde tanımlandı.  
-  
--   Bir dış simgesi olmadan kullanıldı bir [EXTERN](../../assembler/masm/extern-masm.md) veya [EXTERNDEF](../../assembler/masm/externdef.md) yönergesi.  
-  
--   Sembol adı yanlış yazılmış.  
-  
--   Yerel kod Etiket kapsamı dışında başvuruldu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**tanımlanmamış sembol: tanımlayıcı**
+
+Tanımlı değil bir sembol kullanmak için girişimde bulunuldu.
+
+Aşağıdakilerden birini kaynaklanmış olabilir:
+
+- Sembol tanımlı değil.
+
+- Bir alan, belirtilen yapı üyesi değil.
+
+- Bir sembol bulunmayan bir içerme dosyasında tanımlanmıştır.
+
+- Bir dış sembol olmadan kullanıldı bir [EXTERN](../../assembler/masm/extern-masm.md) veya [EXTERNDEF](../../assembler/masm/externdef.md) yönergesi.
+
+- Sembol adı yanlış yazılmış.
+
+- Yerel kod Etiket kapsamı dışında başvuruldu.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

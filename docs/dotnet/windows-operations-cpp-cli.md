@@ -54,12 +54,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 10ddc04471c749aad217780e9a27494783f1e9b0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 198fd5bee9ea65888f24a0514ed6a2b79b0fa8c3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195639"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678035"
 ---
 # <a name="windows-operations-ccli"></a>Windows İşlemleri (C++/CLI)
 Windows SDK'sını kullanarak Windows özgü çeşitli görevleri gösterir.  
@@ -506,5 +506,3 @@ int main()
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [C++/CLI (Visual C++) ile .NET Programlama](../dotnet/dotnet-programming-with-cpp-cli-visual-cpp.md)
-
- [Performans izlemeye giriş](https://msdn.microsoft.com/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35) 

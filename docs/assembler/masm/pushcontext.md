@@ -1,7 +1,7 @@
 ---
 title: PUSHCONTEXT | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c16d0de0848a9ceb61330498b12a9a4322e6604
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 16a76f80f72ab2d7f1ec0cfc86c102249330bf16
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056385"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677434"
 ---
 # <a name="pushcontext"></a>PUSHCONTEXT
-Bir kısmı veya tümü geçerli kaydeder `context`: taban değeri, liste ve cref bayrakları veya işlemci/eşişlemcisi değerleri segment kayıt varsayar. `context` Olabilir **ASSUMES**, `RADIX`, **LİSTELEME**, **CPU**, veya **tüm**.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-PUSHCONTEXT context  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bölümü veya tümü geçerli kaydeder `context`: taban değeri, listeleme ve cref bayrakları veya işlemci/eşişlemcisi değerleri segment kayıt varsayar. `context` Olabilir **ASSUMES**, `RADIX`, **LİSTELEME**, **CPU**, veya **tüm**.
+
+## <a name="syntax"></a>Sözdizimi
+
+> PUSHCONTEXT bağlamı
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

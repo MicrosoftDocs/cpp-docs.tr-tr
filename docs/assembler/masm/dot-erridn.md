@@ -1,7 +1,7 @@
 ---
 title: . ERRIDN] | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,25 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6948baa498cccb9f89eb030978b18363cfdddd6
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5fd21d6a17052cd30c8ad1ef3f35e0c7282da332
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050860"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685797"
 ---
 # <a name="erridn"></a>.ERRIDN]
-Metin öğelerini özdeş ise bir hata oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.ERRIDN[[I]] <textitem1>, <textitem2> [[, message]]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa **ı** olan verildiğinde, karşılaştırma büyük küçük harfe duyarlı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Metin öğelerini aynıysa, bir hata oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+> . [[I]] ERRIDN <textitem1>, <textitem2> [[, ileti]]
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsa **miyim** olduğunu göz önünde bulundurulduğunda, karşılaştırma büyük/küçük harf ve büyük harflere duyarlı değildir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

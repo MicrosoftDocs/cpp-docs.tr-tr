@@ -1,7 +1,7 @@
 ---
 title: . PUSHREG | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,53 +16,55 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4b9f4a7189d2dbe3717535a95a1816e5fd0de3b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 11d0e0456621dd77e1545e2e8a16662556bed944
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055153"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676045"
 ---
 # <a name="pushreg"></a>.PUSHREG
-Oluşturan bir `UWOP_PUSH_NONVOL` belirtilen numarasını başlangıç uzaklığı geçerli kullanarak kaydetmek için kod girişi bırakma.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-.PUSHREG register  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- . PUSHREG ml64.exe kullanıcıların nasıl çerçeve işlevi unwinds ve yalnızca gelen genişletir giriş içinde izin belirtmesine izin verir [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeleri kod oluşturmaz; yalnızca oluşturdukları `.xdata` ve `.pdata`. . PUSHREG gerçekten unwound olmasını eylemlerini uygulamak yönergeleri ile gelmelidir. Bırakma yönergeleri ve bunlar makro bırakma sözleşmesi emin olmak için değiştirmemektir kodu sarmalamak için iyi bir uygulamadır.  
-  
- Daha fazla bilgi için bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).  
-  
-## <a name="sample"></a>Örnek  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, geçici olmayan tegisters anında gösterilmektedir.  
-  
-### <a name="code"></a>Kod  
-  
-```  
-; ml64 ex1.asm /link /entry:Example1 /SUBSYSTEM:CONSOLE  
-_text SEGMENT  
-Example1 PROC FRAME  
-   push r10  
-.pushreg r10  
-   push r15  
-.pushreg r15  
-   push rbx  
-.pushreg rbx  
-   push rsi  
-.pushreg rsi  
-.endprolog  
-   ; rest of function ...  
-   ret  
-Example1 ENDP  
-_text ENDS  
-END  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Oluşturur bir `UWOP_PUSH_NONVOL` belirtilen giriş geçerli kullanarak sayı kaydetmek için kod girişi geriye doğru izleme.
+
+## <a name="syntax"></a>Sözdizimi
+
+> . PUSHREG Kaydet
+
+## <a name="remarks"></a>Açıklamalar
+
+. PUSHREG sağlayan nasıl çerçeve işlevi geriye doğru izler ve yalnızca gelen genişletir prolog içinde izin ml64.exe kullanıcıların [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile PUSHREG gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+
+Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+
+## <a name="sample"></a>Örnek
+
+### <a name="description"></a>Açıklama
+
+Aşağıdaki örnek, geçici olmayan tegisters gönderme işlemi gösterilmektedir.
+
+### <a name="code"></a>Kod
+
+```asm
+; ml64 ex1.asm /link /entry:Example1 /SUBSYSTEM:CONSOLE
+_text SEGMENT
+Example1 PROC FRAME
+   push r10
+.pushreg r10
+   push r15
+.pushreg r15
+   push rbx
+.pushreg rbx
+   push rsi
+.pushreg rsi
+.endprolog
+   ; rest of function ...
+   ret
+Example1 ENDP
+_text ENDS
+END
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

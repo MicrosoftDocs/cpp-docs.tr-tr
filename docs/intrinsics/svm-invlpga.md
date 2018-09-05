@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656d0edf1a4f2e740599490e6ce77cbc97426850
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 77ada66d0478996eac30c8218793d962e8fcf7ca
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465822"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680094"
 ---
 # <a name="svminvlpga"></a>__svm_invlpga
 **Microsoft'a özgü**  
@@ -45,7 +45,7 @@ void __svm_invlpga(
 |[in] `ASID`|Geçersiz kılmak için sayfanın adres alanı tanımlayıcısı (ASID).|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__svm_invlpga` İşlev, eşdeğer `INVLPGA` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ `__svm_invlpga` İşlev, eşdeğer `INVLPGA` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

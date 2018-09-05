@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cecde0bfd829cd55fb15e53fb07aa8b6645fce0e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5cb6010d47be6fe2c771ac407bff26729c772f14
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218345"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678413"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1234,8 +1234,8 @@ class CWnd : public CCmdTarget
 |[CWnd::OnSizeClipboard](#onsizeclipboard)|Pano görüntüleyicisine pencerenin istemci alanının boyutu değiştiğinde çağırılır.|
 |[CWnd::OnSizing](#onsizing)|Kullanıcı dikdörtgen yeniden boyutlandırılıyor gösterir.|
 |[CWnd::OnSpoolerStatus](#onspoolerstatus)|Yazdırma Yöneticisi'nden bir proje eklendiğinde veya Yazdırma Yöneticisi sıradan çıkarılacak zaman çağrılır.|
-|[CWnd::OnStyleChanged](#onstylechanged)|Bildiren [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) Windows işlevi, bir veya daha fazla pencere stilleri değişti.|
-|[CWnd::OnStyleChanging](#onstylechanging)|Bildiren [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) bir veya daha fazla pencere stilleri değiştirilmek üzereyken Windows işlevi.|
+|[CWnd::OnStyleChanged](#onstylechanged)|Bildiren [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) Windows işlevi, bir veya daha fazla pencere stilleri değişti.|
+|[CWnd::OnStyleChanging](#onstylechanging)|Bildiren [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) bir veya daha fazla pencere stilleri değiştirilmek üzereyken Windows işlevi.|
 |[CWnd::OnSysChar](#onsyschar)|Bir sistem karaktere bir tuş vuruşu çevirir çağrılır.|
 |[CWnd::OnSysColorChange](#onsyscolorchange)|İçin tüm üst düzey pencerelere sistem renk ayarında değişiklik yapıldığında çağrılır.|
 |[CWnd::OnSysCommand](#onsyscommand)|Kullanıcı denetim menüsünden bir komut seçtiğinde veya kullanıcı Ekranı Kapla veya Simge Durumuna Küçült düğmesini seçtiğinde çağrılır.|
@@ -1247,7 +1247,7 @@ class CWnd : public CCmdTarget
 |[CWnd::OnTimer](#ontimer)|Belirtilen her zaman aralığından sonra adlı [SetTimer](#settimer).|
 |[CWnd::OnTouchInput](#ontouchinput)|Windows dokunmatik tek girişten işleyin.|
 |[CWnd::OnTouchInputs](#ontouchinputs)|Windows dokunmatik girişlerinde işlem.|
-|[CWnd::OnUniChar](#onunichar)|Bir tuşa basıldığında çağrılır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.|
+|[CWnd::OnUniChar](#onunichar)|Bir tuşa basıldığında çağrılır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) işlevi.|
 |[CWnd::OnUnInitMenuPopup](#onuninitmenupopup)|Bir açılan menü ya da alt menü yok çağrılır.|
 |[CWnd::OnUpdateUIState](#onupdateuistate)|Belirtilen pencere ve tüm alt pencereler için kullanıcı arabirimi (UI) durumunu değiştirmek için çağrılır.|
 |[CWnd::OnUserChanged](#onuserchanged)|Kullanıcı oturum açıp sonra çağrılır.|
@@ -2244,7 +2244,7 @@ Giriş işaretini şekle bir çizgi veya bir blok olabilir.
 
 Parametreleri *nWidth* ve *nHeight* eşleme modunu tam genişlik ve yükseklik (piksel cinsinden) değişir; giriş işaretini'nın genişlik ve yüksekliğini (mantıksal birimler cinsinden) belirtin.
 
-Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
+Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
 
 `CreateGrayCaret` Üye işlevi varsa, hangi penceresini dikkate almaksızın sahipse giriş işaretini önceki kelimeyi şekli otomatik olarak bozar. Oluşturulduktan sonra giriş işaretinin başlangıçta gizlidir. Giriş işaretini gösterilecek [ShowCaret](#showcaret) üye işlevi çağrılabilir.
 
@@ -2278,7 +2278,7 @@ Giriş işaretini şekil, çizgi veya blok olabilir.
 
 Parametreleri *nWidth* ve *nHeight* eşleme modunu tam genişlik ve yükseklik (piksel cinsinden) değişir; giriş işaretini'nın genişlik ve yüksekliğini (mantıksal birimler cinsinden) belirtin.
 
-Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
+Sistemin pencere kenarlığı genişliği veya yüksekliği tarafından alınabilen [GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) SM_CXBORDER ve SM_CYBORDER dizinleriyle Windows işlevi. Pencere kenarlığı genişliği veya yüksekliği kullanarak giriş işaretini bir yüksek çözünürlüklü ekranda görünür olmasını sağlar.
 
 `CreateSolidCaret` Üye işlevi varsa, hangi penceresini dikkate almaksızın sahipse giriş işaretini önceki kelimeyi şekli otomatik olarak bozar. Oluşturulduktan sonra giriş işaretinin başlangıçta gizlidir. Giriş işaretini gösterilecek [ShowCaret](#showcaret) üye işlevi çağrılabilir.
 
@@ -2767,7 +2767,7 @@ void EnableActiveAccessibility();
 
 ### <a name="remarks"></a>Açıklamalar
 
-Standart windows ve ActiveX denetimleri gibi denetimleri için MFC'nin varsayılan Active Accessibility desteği yeterlidir; Ancak, varsa, `CWnd`-MFC sahip bunlarla ilgili olduğunu bilmesinin imkanı, türetilmiş sınıf nonwindowed kullanıcı arabirimi öğeleri içerir. Bu durumda, uygun kılmalı [Active Accessibility üye işlevleri](https://msdn.microsoft.com/68af04ac-4eb9-4b7d-b33f-c45512097a74) sınıfınızdaki ve çağırmalısınız `EnableActiveAccessibility` sınıfın oluşturucusunda.
+Standart windows ve ActiveX denetimleri gibi denetimleri için MFC'nin varsayılan Active Accessibility desteği yeterlidir; Ancak, varsa, `CWnd`-MFC sahip bunlarla ilgili olduğunu bilmesinin imkanı, türetilmiş sınıf nonwindowed kullanıcı arabirimi öğeleri içerir. Bu durumda, uygun kılmalı [Active Accessibility üye işlevleri](/windows/desktop/winauto/sdk-components) sınıfınızdaki ve çağırmalısınız `EnableActiveAccessibility` sınıfın oluşturucusunda.
 
 ##  <a name="enabledynamiclayout"></a>  CWnd::EnableDynamicLayout
 
@@ -5011,7 +5011,7 @@ Varsayılan öznitelikler görünen bağlamı için bağlamı alır. her zaman a
 
 `GetWindowDC` içinde özel boyama etkileri için kullanılması amaçlanmıştır `CWnd` istemci olmayan alanındayken. Herhangi bir pencerenin istemci olmayan alanlarda boyama önerilmez.
 
-[GetSystemMetrics](https://msdn.microsoft.com/library/windows/desktop/ms724385) Windows işlevi, istemci olmayan alanındayken, başlık çubuğu, menü ve kaydırma çubukları gibi çeşitli bölümlerini boyutlarını almak için kullanılabilir.
+[GetSystemMetrics](/windows/desktop/api/winuser/nf-winuser-getsystemmetrics) Windows işlevi, istemci olmayan alanındayken, başlık çubuğu, menü ve kaydırma çubukları gibi çeşitli bölümlerini boyutlarını almak için kullanılabilir.
 
 Boyama tamamlandıktan sonra [ReleaseDC](#releasedc) üye işlevi, görüntü bağlam serbest bırakmak için çağrılmalıdır. Görüntü bağlam yayımlamayı hatası ciddi aynı zamanda açık olabilir. cihaz bağlamları sayısı sınırlamaları nedeniyle uygulamalar tarafından istenen boyama etkiler.
 
@@ -5441,7 +5441,7 @@ BOOL IsDialogMessage(LPMSG lpMsg);
 
 Zaman `IsDialogMessage` klavye iletileri ve karşılık gelen iletişim kutusu için seçim komutlarını dönüştürür işlevi bir ileti işlediğinde, denetler. Örneğin, SEKME tuşunu sonraki denetim veya denetimlerin grubu seçer ve aşağı ok tuşunu, bir gruptaki sonraki denetim seçer.
 
-Tarafından işlenen bir ileti geçmelidir değil `IsDialogMessage` için [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) veya [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows çalışır, çünkü zaten işlendi.
+Tarafından işlenen bir ileti geçmelidir değil `IsDialogMessage` için [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) veya [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows çalışır, çünkü zaten işlendi.
 
 ##  <a name="isdlgbuttonchecked"></a>  CWnd::IsDlgButtonChecked
 
@@ -5738,9 +5738,9 @@ Stil başarıyla değiştirilmişse sıfır; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [pencere stilleri](https://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK.
+Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [pencere stilleri](https://msdn.microsoft.com/library/windows/desktop/ms632600) ve [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) kullanılabilir pencere stilleri hakkında bilgi için Windows SDK.
 
-Varsa *nFlags* sıfır değilse, `ModifyStyle` Windows API işlevi çağıran [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
+Varsa *nFlags* sıfır değilse, `ModifyStyle` Windows API işlevi çağıran [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
 
 - Geçerli boyut SWP_NOSIZE korur.
 
@@ -5787,9 +5787,9 @@ Stil başarıyla değiştirilmişse sıfır; Aksi takdirde 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) kitapta ve [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) kullanılabilir hakkında bilgi için Windows SDK'sındaki genişletilmiş stiller
+Bit düzeyinde OR kullanarak eklendiğinde veya kaldırıldığında stilleri birleştirilebilir (&#124;) işleci. Konulara bakın [genişletilmiş pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#extended-window-styles) kitapta ve [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) kullanılabilir hakkında bilgi için Windows SDK'sındaki genişletilmiş stiller
 
-Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Windows API işlevi çağıran [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
+Varsa *nFlags* sıfır değilse, `ModifyStyleEx` Windows API işlevi çağıran [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) ve pencereyi yeniden çizer birleştirerek *nFlags* aşağıdaki dört hazır bayraklar:
 
 - Geçerli boyut SWP_NOSIZE korur.
 
@@ -8113,7 +8113,7 @@ Fare tekerleği kaydırma etkin olursa sıfır dışı; Aksi durumda 0.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Geçersiz kılınmadığı sürece `OnMouseWheel` varsayılan çağırır [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel). Windows ileti odaklanmış denetime veya alt pencereyi otomatik olarak yönlendirir. Win32 işlevini [DefWindowProc](https://msdn.microsoft.com/library/windows/desktop/ms633572) üst zinciri işler penceresi iletiyi yayar.
+Geçersiz kılınmadığı sürece `OnMouseWheel` varsayılan çağırır [WM_MOUSEWHEEL](/windows/desktop/inputdev/wm-mousewheel). Windows ileti odaklanmış denetime veya alt pencereyi otomatik olarak yönlendirir. Win32 işlevini [DefWindowProc](/windows/desktop/api/winuser/nf-winuser-defwindowproca) üst zinciri işler penceresi iletiyi yayar.
 
 *ZDelta* katlarından biri 120 ayarlanan WHEEL_DELTA parametredir. Bu değer gerçekleştirilecek bir eylem eşiği ve her değişiklik için bir tür eylemin (örneğin, kaydırma ileriye doğru bir dişli) gerçekleşmelidir.
 
@@ -9464,7 +9464,7 @@ Bu çağrı yalnızca bilgilendirme amaçlıdır.
 
 ##  <a name="onstylechanged"></a>  CWnd::OnStyleChanged
 
-Bu üye işlevinden sonra framework çağırır [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi, bir veya daha fazla pencere stilleri değişti.
+Bu üye işlevinden sonra framework çağırır [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) işlevi, bir veya daha fazla pencere stilleri değişti.
 
 ```
 afx_msg void OnStyleChanged(
@@ -9491,7 +9491,7 @@ Pencerenin genişletilmiş veya nonextended stilleri değişmiş olduğunu belir
 
 ##  <a name="onstylechanging"></a>  CWnd::OnStyleChanging
 
-Bu üye işlevi framework çağırır olduğunda [SetWindowLong](https://msdn.microsoft.com/library/windows/desktop/ms633591) işlevi bir veya daha fazla pencere stilleri değiştirilmek üzereyken.
+Bu üye işlevi framework çağırır olduğunda [SetWindowLong](/windows/desktop/api/winuser/nf-winuser-setwindowlonga) işlevi bir veya daha fazla pencere stilleri değiştirilmek üzereyken.
 
 ```
 afx_msg void OnStyleChanging(
@@ -9853,7 +9853,7 @@ Zamanlayıcı tanımlayıcısını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
-[DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlev gönderen bir [WM_TIMER](/windows/desktop/winmsg/wm-timer) başka iletiler uygulamanın ileti kuyrukta olduğunda ileti.
+[DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlev gönderen bir [WM_TIMER](/windows/desktop/winmsg/wm-timer) başka iletiler uygulamanın ileti kuyrukta olduğunda ileti.
 
 > [!NOTE]
 > Bu üye işlevi bir Windows iletisini işlemek için uygulamanıza izin vermek için framework tarafından çağırılır. İşlevinize geçirilen parametreler iletisini aldığınızda çerçeve tarafından alınan parametreleri yansıtır. Bu işlevin temel sınıf uygulamasını çağırırsanız, bu uygulamayı ilk ileti ve sağladığınız parametreler işleve geçirilen parametreleri kullanır.
@@ -9960,7 +9960,7 @@ Giriş uygulama gerekiyorsa TRUE işlemleri Windows Dokunma; Aksi durumda FALSE.
 
 ##  <a name="onunichar"></a>  CWnd::OnUniChar
 
-Bir tuşa basıldığında framework bu üye işlevini çağırır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) işlevi.
+Bir tuşa basıldığında framework bu üye işlevini çağırır. Diğer bir deyişle, geçerli pencere, klavye girintisine sahip ve bir [WM_KEYDOWN](/windows/desktop/inputdev/wm-keydown) iletisi tarafından çevrilir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) işlevi.
 
 ```
 afx_msg void OnUniChar(
@@ -10207,7 +10207,7 @@ Bu yöntem alır [WM_DWMWINDOWMAXIMIZEDCHANGE](/windows/desktop/dwm/wm-dwmwindow
 
 ##  <a name="onwindowposchanged"></a>  CWnd::OnWindowPosChanged
 
-Çağrı sonucu olarak boyutunu, konumunu veya Z düzeni değiştiğinde framework bu üye işlevi çağırır [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
+Çağrı sonucu olarak boyutunu, konumunu veya Z düzeni değiştiğinde framework bu üye işlevi çağırır [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) üye işlevini veya başka bir pencere yönetimi işlevi.
 
 ```
 afx_msg void OnWindowPosChanged(WINDOWPOS* lpwndpos);
@@ -10227,7 +10227,7 @@ Varsayılan uygulama gönderir [WM_SIZE](/windows/desktop/winmsg/wm-size) ve [WM
 
 ##  <a name="onwindowposchanging"></a>  CWnd::OnWindowPosChanging
 
-Boyut, konum veya Z düzenini çağrı sonucunda değişmek üzere olduğunu framework bu üye işlevini çağırır [SetWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms633545) üye işlevini veya başka bir pencere yönetimi işlevi.
+Boyut, konum veya Z düzenini çağrı sonucunda değişmek üzere olduğunu framework bu üye işlevini çağırır [SetWindowPos](/windows/desktop/api/winuser/nf-winuser-setwindowpos) üye işlevini veya başka bir pencere yönetimi işlevi.
 
 ```
 afx_msg void OnWindowPosChanging(WINDOWPOS* lpwndpos);
@@ -10602,7 +10602,7 @@ Bu üye işlevi geçersiz kılma için dinamik sınıflara denetimleri sağlar. 
 
 ##  <a name="pretranslatemessage"></a>  CWnd::PreTranslateMessage
 
-Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri.
+Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -11056,7 +11056,7 @@ Bu işlev benzer [ScrollWindow](/windows/desktop/api/winuser/nf-winuser-scrollwi
 
 Varsa [SW_INVALIDATE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) ve [SW_ERASE](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) belirtilmeyen, `ScrollWindowEx` üye işlevi, liste kutusundan kaydırılan alan geçersiz değil. Ya da bu bayrak ayarlandığında, `ScrollWindowEx` Bu alan geçersiz kılar. Alan kadar uygulama çağrıları güncelleştirilmez [UpdateWindow](/windows/desktop/api/winuser/nf-winuser-updatewindow) üye işlevi, çağrıları [RedrawWindow](/windows/desktop/api/winuser/nf-winuser-redrawwindow) üye işlevi (belirtme [RDW_UPDATENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow) veya [ RDW_ERASENOW](/windows/desktop/api/winuser/nf-winuser-redrawwindow)), alır veya [WM_PAINT](/windows/desktop/gdi/wm-paint) uygulama kuyruğundan ileti.
 
-Pencerenin varsa [ws_clıpchıldren](https://msdn.microsoft.com/library/windows/desktop/ms632679) stil, döndürülen alanları tarafından belirtilen *prgnUpdate* ve *lpRectUpdate* gerekir kaydırılan penceresinin toplam alanı temsil eder , herhangi bir alanda güncelleştirilmesi gereken alt öğe pencerelerini de dahil olmak üzere güncelleştirilmesi.
+Pencerenin varsa [ws_clıpchıldren](/windows/desktop/api/winuser/nf-winuser-createwindowa) stil, döndürülen alanları tarafından belirtilen *prgnUpdate* ve *lpRectUpdate* gerekir kaydırılan penceresinin toplam alanı temsil eder , herhangi bir alanda güncelleştirilmesi gereken alt öğe pencerelerini de dahil olmak üzere güncelleştirilmesi.
 
 Varsa [SW_SCROLLCHILDREN](/windows/desktop/api/winuser/nf-winuser-scrollwindowex) Windows düzgün şekilde güncelleştirilmez ekranın alt pencere parçası kaydırırsanız, bayrağı belirtildi. Kaynak dikdörtgenin dışında kalan kaydırılan alt pencerenin parçası silinmeyecektir ve düzgün bir şekilde yeni hedefine çizilir değil. Kullanım [DeferWindowPos](https://msdn.microsoft.com/library/windows/desktop/ms632681) Windows işleve tamamen içinde yer alan değil taşıma alt pencereler *lpRectScroll* dikdörtgen. İmleç SW_SCROLLCHILDREN bayrağı ayarlanmışsa ve kaydırma dikdörtgen giriş işaretini dikdörtgen kesişip yeniden konumlandırıldığında.
 
@@ -11497,7 +11497,7 @@ Katmanlı pencere oluştururken kullanılacak saydamlık rengi anahtarı belirte
 Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri. Daha fazla bilgi için `SourceConstantAlpha` üyesi [BLENDFUNCTION](/windows/desktop/api/wingdi/ns-wingdi-_blendfunction) yapısı. Zaman *bAlpha* 0 ise, pencerenin tamamen saydamdır. Zaman *bAlpha* 255'tir ve donuk bir penceredir.
 
 *CertOpenStore*  
-Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540).
+Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir. Olası değerler listesi için bkz. [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -11505,7 +11505,7 @@ Gerçekleştirilecek eylemi belirtir. Bu parametre, bir veya daha fazla aşağı
 
 ### <a name="remarks"></a>Açıklamalar
 
-Bu üye işlevi işlevinin işlevselliğine öykünür [SetLayeredWindowAttributes](https://msdn.microsoft.com/library/windows/desktop/ms633540)Windows SDK içinde açıklandığı gibi.
+Bu üye işlevi işlevinin işlevselliğine öykünür [SetLayeredWindowAttributes](/windows/desktop/api/winuser/nf-winuser-setlayeredwindowattributes)Windows SDK içinde açıklandığı gibi.
 
 ##  <a name="setmenu"></a>  CWnd::SetMenu
 

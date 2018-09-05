@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13d163ad8de9ef3ee6c8c1375c234a412c70de7d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ebda52eaa4deab6ddf8535da9b4c5a94a2cbc77b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213142"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679411"
 ---
 # <a name="adding-functionality-with-code-wizards-c"></a>(C++) kod sihirbazlarıyla işlevsellik ekleme
 Proje oluşturulduktan sonra değiştirin veya projenin işlevsellik eklemek isteyebilirsiniz. Yeni üye işlevleri ve değişkenler ve ekleme Otomasyon yöntemleri ve özellikleri ekleme yeni sınıflar oluşturma gibi görevleri içerir. Kod sihirbazları, tüm bu işlemler yapmanıza olanak sağlamak için tasarlanmıştır.  
@@ -56,7 +56,7 @@ Proje oluşturulduktan sonra değiştirin veya projenin işlevsellik eklemek ist
   
 -   İçinde **Çözüm Gezgini**, herhangi bir klasörü sağ tıklatın ve tıklayarak **Ekle** kısayoldan menü, yeni veya mevcut dosyaları, daha fazla klasör, öğeleri, sınıflar, kaynaklar eklemenize olanak sağlar ve Web başvuruları Proje.  
   
--   Gelen [Sınıf Görünümü penceresi](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925)ve uygun düğümü sağ tıklayarak **Ekle** kısayol menüsünde, İşlevler, değişkenler, sınıfları, özellikleri, yöntemleri, olaylar, arabirimler, eklemenize olanak sağlar bağlantı noktaları veya başka bir kod projenize.  
+-   Gelen [Sınıf Görünümü penceresi](/visualstudio/ide/viewing-the-structure-of-code)ve uygun düğümü sağ tıklayarak **Ekle** kısayol menüsünde, İşlevler, değişkenler, sınıfları, özellikleri, yöntemleri, olaylar, arabirimler, eklemenize olanak sağlar bağlantı noktaları veya başka bir kod projenize.  
   
     > [!NOTE]
     >  Visual Studio, bir arabirim bir projeye eklemek için sihirbaz sağlamaz. Arabirim bir ATL projesi veya çok ekleyebileceğiniz bir [MFC projenize ATL desteği ekleme](../mfc/reference/adding-atl-support-to-your-mfc-project.md) kullanarak basit bir nesne ekleyerek [ATL Basit Nesne Sihirbazı](../atl/reference/atl-simple-object-wizard.md). Alternatif olarak, projenin .idl dosyası açın ve yazarak arabirimi oluşturun:  

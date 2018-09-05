@@ -1,7 +1,7 @@
 ---
 title: DW | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77e0127ccec8aaac43955087ee4a4b0e8fdbcad5
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 15457e99ecaa312ad5e442203c8b058c8fda3bf0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052001"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681898"
 ---
 # <a name="dw"></a>DW
-Ayırır ve isteğe bağlı olarak depolama bir sözcük (2 bayt) her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür. `DW` bir eş anlamlı olduğundan [WORD](../../assembler/masm/word.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-[[name]] DW initializer [[, initializer]]...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [SWORD](../../assembler/masm/sword.md)
+
+Ayırır ve isteğe bağlı olarak her biri için bir sözcük (2 bayt) depolama başlatır `initializer`. Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür. `DW` ' ın eşanlamlıdır [WORD](../../assembler/masm/word.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+> [[ad]] DW Başlatıcı [[, başlatıcı]]...
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[SWORD](../../assembler/masm/sword.md)<br/>

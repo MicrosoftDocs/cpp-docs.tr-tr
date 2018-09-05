@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca91e614438695a14c6c16c05c5d778b143657eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: df69423e635a76d82ad8a2539c6fd92054f24964
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219389"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677675"
 ---
 # <a name="c-amp-overview"></a>C++ AMP'ye Genel Bakış
 C++ Accelerated Massive Parallelism (C++ AMP) ayrı ekran kartı üzerindeki grafik işlemci birimi (GPU) gibi veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP kullanarak çok boyutlu veri algoritmaları kodlayabilirsiniz, böylece türdeş olmayan donanımda paralellik kullanarak yürütme hızlandırılabilir. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı, döşeme ve bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını performansı artırabilirsiniz, böylece nasıl verilerin CPU'dan GPU'ya ve geri taşındığını kontrol etmek için kullanabilirsiniz.  
@@ -464,7 +464,7 @@ C++ AMP hızlandırılmış grafik programlama için tasarlanmış bir grafik ki
   
 - [writeonly_texture_view sınıfı](../../parallel/amp/reference/writeonly-texture-view-class.md): herhangi bir dokuya salt yazılır erişim sağlar.  
   
-- [Kısa vektör Kitaplığı](https://msdn.microsoft.com/4c4f5bed-c396-493b-a238-c347563f645f): uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
+- Kısa vektör kitaplığı: uzunluğu 2, 3 ve 4 temel alan kısa vektör türleri kümesi tanımlar **int**, `uint`, **float**, **çift**, [norm ](../../parallel/amp/reference/norm-class.md), veya [unorm](../../parallel/amp/reference/unorm-class.md).  
   
 ## <a name="universal-windows-platform-uwp-apps"></a>Evrensel Windows Platformu (UWP) uygulamaları  
  
@@ -496,7 +496,7 @@ Eşzamanlılık görselleştiricisi C++ AMP kod performansını çözümlemek i�
   
 - [Kanallar (İş Parçacıkları Görünümü)](/visualstudio/profiling/channels-threads-view)  
   
-- [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)  
+- [Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)  
   
 ## <a name="performance-recommendations"></a>Performans önerileri  
  

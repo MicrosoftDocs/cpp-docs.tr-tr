@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e3f3adabdd1d5345fa9f5d3c24e6cde86ddb3fb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 56eff6cede20508ea59463039b4f0e41d416cac1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219710"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686358"
 ---
 # <a name="memory-management-frame-allocation"></a>Bellek Yönetimi: Çerçeve Ayırma
 Çerçeve ayırma "olarak ayarlanmış yığın çerçevesini" adını alan her bir işlev çağrılır. Yığın çerçevesinin tutan geçici olarak bağımsız değişkenler tanımlanan tüm değişkenler yanı sıra işlev işleve yerel bellek alanıdır. Derleyicinin otomatik olarak alan için ayırdığından çerçeve değişkenleri genellikle "Otomatik" değişkenler çağrılır.  
@@ -46,7 +46,7 @@ ms.locfileid: "43219710"
   
  Bir nesne bir çerçeve değişken olarak tanımlandığında, yapıcısına tanımını burada karşılaşılanaa noktada otomatik olarak çağrılır. Nesne kapsam dışına çıktığında, nesne için bellek alınmadan önce otomatik olarak, yok Edicisi çağrılır. Bu otomatik oluşturma ve yok etme çok kullanışlı olabilir, ancak yok edici için özellikle otomatik çağrıları farkında olmanız gerekir.  
   
- Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](https://msdn.microsoft.com/29ee8909-96e9-4246-9332-d3a8aa8d4658).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.  
+ Çerçevede nesneleri ayırma önemli bir avantajı, otomatik olarak silinir. Çerçeve, nesneleri ayırdığınızda, bellek sızıntılarının neden Unutulan nesneleri hakkında endişelenmeniz gerekmez. (Bellek sızıntılarını hakkında daha fazla bilgi için bkz [MFC'de bellek sızıntılarını algılama](/previous-versions/visualstudio/visual-studio-2010/c99kz476\(v=vs.100\)).) Çerçeve ayırma bir dezavantajı, çerçeve değişkenleri kendi kapsamı dışında kullanılamaz olmasıdır. Yığın ayırma ve çerçeve ayırma seçme içinde başka bir faktör büyük yapılar ve nesneler için genellikle yığın alanı çoğunlukla sınırlı olduğundan öbek için Depolama yığını yerine kullanılması daha iyidir olmasıdır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Bellek Yönetimi](../mfc/memory-management.md)

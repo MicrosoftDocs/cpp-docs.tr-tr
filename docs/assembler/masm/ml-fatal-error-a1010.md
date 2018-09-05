@@ -1,7 +1,7 @@
 ---
 title: ML önemli hatası A1010 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b622595b6994c4c4eaa74ed8f824f28dffe89b1a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 12b7e8698951e8ef59e0433134ec992af5d5f77f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057688"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676303"
 ---
 # <a name="ml-fatal-error-a1010"></a>ML Önemli Hatası A1010
-**eşleşmeyen blok iç içe geçme:**  
-  
- Blok başlayan bir eşleşen son sahip değilse veya bir blok uç eşleşen başlayan bir sahip değil. Aşağıdakilerden birini dahil:  
-  
--   Gibi üst düzey bir yönerge [. Eğer](../../assembler/masm/dot-if.md), [. Yineleme](../../assembler/masm/dot-repeat.md), veya [. SIRADA](../../assembler/masm/dot-while.md).  
-  
--   Koşullu derleme yönergesi gibi [IF](../../assembler/masm/if-masm.md), [YİNELEYİN](../../assembler/masm/repeat.md), veya **sırada**.  
-  
--   Yapı veya birlik tanımı.  
-  
--   Bir yordamı tanımı.  
-  
--   Segment tanımı.  
-  
--   A [POPCONTEXT](../../assembler/masm/popcontext.md) yönergesi.  
-  
--   Koşullu derleme yönergesi gibi bir [ELSE](../../assembler/masm/else-masm.md), [ELSEIF](../../assembler/masm/elseif-masm.md), veya **ENDIF** eşleşen bir olmadan [IF](../../assembler/masm/if-masm.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**eşleşmeyen blok iç içe geçme:**
+
+Bir blok başına eşleşen bir bitiş yoktu veya blok son eşleşen başlayan bir sahip değildi. Aşağıdakilerden birini dahil:
+
+- Gibi üst düzey bir yönerge [. Eğer](../../assembler/masm/dot-if.md), [. Yineleme](../../assembler/masm/dot-repeat.md), veya [. SIRADA](../../assembler/masm/dot-while.md).
+
+- Bir koşullu derleme yönergesi gibi [IF](../../assembler/masm/if-masm.md), [YİNELEYİN](../../assembler/masm/repeat.md), veya **sırada**.
+
+- Yapı veya birleşim tanımı.
+
+- Bir yordamı tanımı.
+
+- Segment tanımı.
+
+- A [POPCONTEXT](../../assembler/masm/popcontext.md) yönergesi.
+
+- Koşullu derleme yönergesi olduğu gibi bir [ELSE](../../assembler/masm/else-masm.md), [ELSEIF](../../assembler/masm/elseif-masm.md), veya **ENDIF** eşleşen olmadan [IF](../../assembler/masm/if-masm.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

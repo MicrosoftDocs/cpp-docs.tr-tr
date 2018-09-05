@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05486e4b75e631dcdc77855e850fe48c08d77326
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 798c65764ce49e795d3a6220803d51c72411ca79
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203857"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43686414"
 ---
 # <a name="vectorltboolgtreference-class"></a>vektör&lt;bool&gt;:: reference sınıfı
 
@@ -29,7 +29,7 @@ ms.locfileid: "43203857"
 
 ## <a name="remarks"></a>Açıklamalar
 
-C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>` Bu proxy sınıfı kullanılarak başvurulabilen öğesi başına yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, çünkü adresini `vector<bool>::reference` nesne olamaz alınamadığından, kullandığı aşağıdaki kodu [vektör\<bool >:: operator&#91; &#93; ](https://msdn.microsoft.com/Library/97738633-690d-4069-b2d9-8c54104fbfdd) doğru değil:
+C++ yerel olarak doğrudan başvuruların bitlere atanmasına izin vermediğinden, benzetimli bir başvuru gereklidir. `vector<bool>` Bu proxy sınıfı kullanılarak başvurulabilen öğesi başına yalnızca bir bit kullanır. Bununla birlikte, belirli atamalar geçersiz olduğundan başvuru benzetimi tam değil. Örneğin, çünkü adresini `vector<bool>::reference` nesne olamaz alınamadığından, kullanmaya çalışırsa aşağıdaki kodu `vector<bool>::operator&` doğru değildir:
 
 ```cpp
 vector<bool> vb;

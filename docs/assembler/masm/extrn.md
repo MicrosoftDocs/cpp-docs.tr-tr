@@ -1,7 +1,7 @@
 ---
 title: EXTRN | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6f2e103c27e55bcede3869d73c73d7a2cf426ec
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f9e4567d5b1b20e8b46d0b7b5102dac235f104de
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054770"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683804"
 ---
 # <a name="extrn"></a>EXTRN
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-EXTRN  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bkz: [EXTERN](../../assembler/masm/extern-masm.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+> EXTRN
+
+## <a name="remarks"></a>Açıklamalar
+
+Bkz: [EXTERN](../../assembler/masm/extern-masm.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

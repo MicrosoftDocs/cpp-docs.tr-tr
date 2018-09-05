@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d20611d2cc5e4b391e2dafdef614dd5173d32ef7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: dade9987358c1c160dffd0221b0421b4fab92c24
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207304"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687648"
 ---
 # <a name="adding-a-member-variable--visual-c"></a>Üye Değişkeni Ekleme (Visual C++)
-Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı, ilgili bilgileri almak ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak için özel olarak tasarlanmıştır. Bir üye değişkeninin ekleyebilirsiniz [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925).  
+Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. Üye değişkenleri için ya da olabilir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md), veya genel olabilir. Veri üye değişkeni Sihirbazı'nı, ilgili bilgileri almak ve uygun yerlerde, kaynak dosyalarında öğe eklemek için kullanmak için özel olarak tasarlanmıştır. Bir üye değişkeninin ekleyebilirsiniz [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md) içinde [kaynak görünümü](../windows/resource-view-window.md), veya [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code).  
   
 > [!NOTE]
 >  Tasarlarken ve iletişim kutusu uygulama, onu daha verimli bir iletişim kutusunda kullanılacak Düzenleyicisi iletişim kutusu denetimleri eklemek için bulabilirsiniz ve ardından Denetim üyesi değişkenleri uygulamak için.  
@@ -49,7 +49,7 @@ Sınıf görünümü kullanarak bir sınıfa üye değişkeni ekleyebilirsiniz. 
   
 ### <a name="to-add-a-member-variable-from-class-view-using-the-add-member-variable-wizard"></a>Sınıf Görünümü üye değişkeni Ekleme Sihirbazı'nı kullanarak bir üye değişkeni eklemek için  
   
-1.  İçinde [sınıf görünümü](https://msdn.microsoft.com/8d7430a9-3e33-454c-a9e1-a85e3d2db925), projede sınıflarını görüntülemek için proje düğümünü genişletin.  
+1.  İçinde [sınıf görünümü](/visualstudio/ide/viewing-the-structure-of-code), projede sınıflarını görüntülemek için proje düğümünü genişletin.  
   
 2.  Bir değişkeni eklemek istediğiniz sınıf sağ tıklayın.  
   

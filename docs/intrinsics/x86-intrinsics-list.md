@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cdd0c5d8e89d41e24bf980093f5994c1c9fc495
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: ed65ff0e608740ae5747ec9cd708c119d79a3829
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209280"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43685718"
 ---
 # <a name="x86-intrinsics-list"></a>x86 İç Bilgi Listesi
 
@@ -31,13 +31,13 @@ Tek tek yapı içleri hakkında daha fazla bilgi için, hedeflediğiniz işlemci
 
 - [Intel yapı içleri Kılavuzu](https://software.intel.com/sites/landingpage/IntrinsicsGuide/). Belirli bir yapı içleri bulmak için arama kutusunu kullanın.
 
-- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://go.microsoft.com/fwlink/p/?LinkID=510021)
+- [Intel 64 ve IA-32 mimarileri yazılım geliştirici kılavuzları](https://software.intel.com/articles/intel-sdm)
 
-- [Intel mimarisi yönerge kümesi uzantıları programlama başvurusu](https://go.microsoft.com/fwlink/p/?linkid=874960)
+- [Intel mimarisi yönerge kümesi uzantıları programlama başvurusu](https://software.intel.com/isa-extensions)
 
-- [Gelişmiş vektör uzantıları Intel giriş](https://go.microsoft.com/fwlink/p/?linkid=874961)
+- [Gelişmiş vektör uzantıları Intel giriş](https://software.intel.com/articles/introduction-to-intel-advanced-vector-extensions)
 
-- [AMD Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://go.microsoft.com/fwlink/p/?linkid=874958)
+- [AMD Geliştirici kılavuzlar, Kılavuzlar ve ISA belgeleri](https://developer.amd.com/resources/developer-guides-manuals/)
 
 Aşağıdaki tabloda x86 üzerinde kullanılabilir yapı içlerini listeler işlemci. Teknoloji sütunu gerekli yönerge kümesi desteği listelenmektedir. Kullanım [__cpuid](../intrinsics/cpuid-cpuidex.md) iç çalışma zamanında yönerge kümesi desteğini belirlemek için. İki giriş tek bir satırda varsa, bunlar farklı Giriş noktalarının aynı iç temsil eder. [1] iç yalnızca AMD işlemciler üzerinde kullanılabilir olduğunu gösterir. [2] iç yalnızca Intel işlemci üzerinde kullanılabilir olduğunu gösterir. [3], bir makro prototip olduğunu gösterir. İşlev prototipi için gereken üst bilgi Üstbilgi sütununda listelenir. İmmintrin.h hem ammintrin.h kolaylık olması için ıntrin.h üstbilgisi içerir.
 

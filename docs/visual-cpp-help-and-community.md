@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d36f56161e352d67838bfaf68c8e2d1dcee0f33e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 172ead8aa67f042512a73b8c0d1ecdaa0723c5d1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583991"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676551"
 ---
 # <a name="visual-c-help-and-community"></a>Visual C++ Yardım ve Topluluk
 
@@ -27,14 +27,14 @@ ms.locfileid: "42583991"
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Geliştirici kodu örnekleri](http://go.microsoft.com/fwlink/p/?LinkId=256533)|Microsoft ve topluluktan katkıda bulunanlar'nden indirilebilir örnek kodu içerir.|
+|[Geliştirici kodu örnekleri](https://code.msdn.microsoft.com/)|Microsoft ve topluluktan katkıda bulunanlar'nden indirilebilir örnek kodu içerir.|
 
 ## <a name="product-documentation"></a>Ürün Belgeleri
 
 |Başlık|Açıklama|
 |-----------|-----------------|
 |[Visual C++](visual-cpp-in-visual-studio.md)|Başvuru ve Visual C++ hakkında kavramsal belgeler içeriyor. MSDN Kitaplığı'nın bir parçası.|
-|[Windows Geliştirici Merkezi](http://go.microsoft.com/fwlink/p/?LinkId=256534)|Windows 8 için uygulamalar geliştirmek için C++ ve diğer dilleri kullanma hakkında bilgiler içerir. Windows Geliştirici Merkezi parçası; Docs altında C++ içeriktir > dil başvurusu düğümü.|
+|[Windows Geliştirici Merkezi](https://developer.microsoft.com/en-us/windows/)|Windows 8 için uygulamalar geliştirmek için C++ ve diğer dilleri kullanma hakkında bilgiler içerir. Windows Geliştirici Merkezi parçası; Docs altında C++ içeriktir > dil başvurusu düğümü.|
 
 ### <a name="online-and-offline-documentation"></a>Çevrimiçi ve çevrimdışı belgeleri
 
@@ -48,7 +48,7 @@ Birçok bölümler belgelerinin PDF biçiminde de mevcuttur. Bu bölümleri olan
 
 |Başlık|Açıklama|
 |-----------|-----------------|
-|[Visual C++ ekip blogu](http://go.microsoft.com/fwlink/p/?LinkId=256537)|Visual C++ ürün ekibinde uzmanları tarafından çeşitli konular gönderiler içerir.|
-|[Channel 9](http://go.microsoft.com/fwlink/p/?LinkId=251694)|Video röportajları ve dersler içerir. C++ içeriği bulmak için Channel 9 giriş sayfasında arama kutusunu kullanın.|
-|[Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=256535)|Makaleleri ve Visual Studio ve ilişkili geliştirme araçları ile ilgili Haberler içerir.|
-|[MSDN Forumları](http://go.microsoft.com/fwlink/p/?LinkId=256538)|Burada sorularınızı ve Microsoft ve topluluk içinde uzmanlarından yanıtlar alın, resmi Microsoft forumları. Arama kutusuna forumlar ana sayfası üzerinde özellikle C++ için ilgili forumlar bulmak için kullanın.|
+|[Visual C++ ekip blogu](https://blogs.msdn.microsoft.com/vcblog/)|Visual C++ ürün ekibinde uzmanları tarafından çeşitli konular gönderiler içerir.|
+|[Channel 9](https://channel9.msdn.com/)|Video röportajları ve dersler içerir. C++ içeriği bulmak için Channel 9 giriş sayfasında arama kutusunu kullanın.|
+|[Visual Studio](https://visualstudio.microsoft.com/)|Makaleleri ve Visual Studio ve ilişkili geliştirme araçları ile ilgili Haberler içerir.|
+|[MSDN Forumları](https://social.msdn.microsoft.com/Forums/en-US/home?category=visualc) ve [Geliştirici topluluğu](https://developercommunity.visualstudio.com)|Burada C++ hakkında sorularınızı ve Microsoft ve topluluk içinde uzmanlarından yanıtlar alın, resmi Microsoft forumları.|

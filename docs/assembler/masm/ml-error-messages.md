@@ -1,7 +1,7 @@
 ---
 title: ML hata iletileri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,48 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbc2ae6388ad11a411850d03de421d2f6820fc03
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 836daf438fa5a7f4c797b5b15ffab89720a7af98
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057103"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43675971"
 ---
 # <a name="ml-error-messages"></a>ML Hata İletileri
-MASM bileşenleri tarafından oluşturulan hata iletileri üç kategoriye ayrılır:  
-  
--   **Önemli hatalar.** Bu yardımcı program normal işleminin tamamlanmasını engelleyen ciddi bir sorunu işaret eder.  
-  
--   **Önemli olmayan hataları.** Yardımcı program kendi işlemi tamamlanabilir. Aşması durumunda sonucu istediğinizi büyük olasılıkla değil.  
-  
--   **Uyarılar.** Bu iletiler istediğiniz sonuçları alınırken engelleyebilir koşulları belirtin.  
-  
- Tüm hata iletilerinin aşağıdaki biçimde alın:  
-  
-```  
-  
-Utility: Filename (Line) : [Error_type} (Code): Message_text  
-```  
-  
- burada:  
-  
- `Utility`  
- Hata iletisi gönderilen program.  
-  
- *Dosya adı*  
- Hata oluşturmadan koşulu içeren dosya.  
-  
- *Satır*  
- Hata koşulu bulunduğu yaklaşık satır.  
-  
- *Error_type*  
- Önemli hata, hata veya uyarı.  
-  
- *Kod*  
- Benzersiz 5 veya 6 rakamlı hata kodu.  
-  
- `Message_text`  
- Hata koşulu kısa ve genel açıklaması.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)
+
+MASM bileşenler tarafından oluşturulan hata iletileri üç kategoriye ayrılır:
+
+- **Önemli hatalar.** Bu yardımcı programı, normal işlemini tamamlamasını engelleyen önemli bir sorun gösterir.
+
+- **Önemli olmayan hataları.** Yardımcı programı, kendi işlemi tamamlanabilir. Aksi halde sonuç istediğinizi büyük olasılıkla değil.
+
+- **Uyarılar.** Bu iletiler, istediğiniz sonuçları olmanızı engelleyebilir durumları gösterir.
+
+Tüm hata iletilerini aşağıdaki biçiminde:
+
+> *Yardımcı program*: *Filename* (*satırı*): {*Error_type*} (*kod*): *Message_text*
+
+burada:
+
+*yardımcı programı*<br/>
+Hata iletisi gönderilen program.
+
+*Dosya adı*<br/>
+Hata oluşturmadan koşulu içeren dosya.
+
+*Satır*<br/>
+Hata koşulu bulunduğu yaklaşık satır.
+
+*Error_type*<br/>
+Önemli hata, hata veya uyarı.
+
+*Kod*<br/>
+Benzersiz 5 veya 6 basamaklı hata kodu.
+
+*Message_text*<br/>
+Hata koşulu kısa ve genel açıklaması.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Microsoft Macro Assembler Başvurusu](../../assembler/masm/microsoft-macro-assembler-reference.md)<br/>

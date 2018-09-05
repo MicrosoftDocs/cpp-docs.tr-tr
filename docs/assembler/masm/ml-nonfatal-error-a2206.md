@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2206 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a00733bb82c2c81a44f0e7c0dc86286987dac23
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 10edbe68ca7f0093cdeb6a9ca5a02cde07f556e6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057077"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676354"
 ---
 # <a name="ml-nonfatal-error-a2206"></a>ML Önemli Olmayan Hatası A2206
-**ifadede eksik işleci**  
-  
- Bir işleç eksik olduğundan bir ifade değerlendirilemez. Bu hata iletisi de bir yan etkisi, önceki bir program hatası olabilir.  
-  
- Aşağıdaki satırı bu hata üretir:  
-  
-```  
-value1 = ( 1 + 2 ) 3  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**ifadede eksik işleci**
+
+Bir işleç eksik olduğundan ifade değerlendirilemiyor. Bu hata iletisi ayrıca bir yan etkisi önceki bir program hatası olabilir.
+
+Aşağıdaki satırı bu hatayı üretir:
+
+```asm
+value1 = ( 1 + 2 ) 3
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

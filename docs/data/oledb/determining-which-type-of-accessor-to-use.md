@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ef3da102cd01fa970fa50d687f6cfea57ac64325
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e8dbfecf52e974330360714763da3bd4c81117ad
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199757"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679730"
 ---
 # <a name="determining-which-type-of-accessor-to-use"></a>Ne Tür Erişimci Kullanacağınızı Belirleme
 Derleme zamanında veya çalışma zamanında bir satır kümesi veri türlerinde belirleyebilirsiniz.  
@@ -38,7 +38,7 @@ Derleme zamanında veya çalışma zamanında bir satır kümesi veri türlerind
 |`CDynamicAccessor`|Otomatik.|Hayır.|Bir satır kümesi veri türünü bilmiyorsanız yararlıdır.|  
 |`CDynamicParameterAccessor`|Otomatik, ancak [geçersiz kılınan](../../data/oledb/overriding-a-dynamic-accessor.md).|Evet, sağlayıcı destekliyorsa `ICommandWithParameters`. Otomatik olarak ilişkili parametreler.|Daha yavaş `CDynamicAccessor` genel saklı yordam çağırma ancak yararlıdır.|  
 |`CDynamicStringAccessor[A,W]`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır.|  
-|`CManualAccessor`|El ile kullanarak `AddBindEntry`.|El ile kullanarak `AddParameterEntry`.|Çok hızlı; Parametreler ve sütun yalnızca bir kez bağlı. Kullanılacak veri türünü belirler. (Bkz [DBVIEWER](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832) örnek bir örnek.) Daha fazla kod gerektirir `CDynamicAccessor` veya `CAccessor`. OLE DB doğrudan çağırma gibi daha fazla.|  
+|`CManualAccessor`|El ile kullanarak `AddBindEntry`.|El ile kullanarak `AddParameterEntry`.|Çok hızlı; Parametreler ve sütun yalnızca bir kez bağlı. Kullanılacak veri türünü belirler. (Bkz [DBVIEWER](https://github.com/Microsoft/VCSamples) örnek bir örnek.) Daha fazla kod gerektirir `CDynamicAccessor` veya `CAccessor`. OLE DB doğrudan çağırma gibi daha fazla.|  
 |`CXMLAccessor`|Otomatik.|Hayır.|Dize verileri veri deposundan erişilen verileri alır ve olarak XML etiketli veri biçimleri.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  

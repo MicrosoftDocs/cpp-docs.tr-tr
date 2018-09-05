@@ -1,7 +1,7 @@
 ---
 title: __Asm bloklarında işleçler kullanma | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -19,34 +19,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e1c7c4b8415655aff36327db9c6a9f866d82683
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8731169013cba50e01c36aa721859e136938f015
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051136"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676916"
 ---
 # <a name="using-operators-in-asm-blocks"></a>__asm Bloklarında İşleçler Kullanma
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Bir `__asm` blok kullanamaz C veya C++ belirli işleçleri gibi **<<** işleci. Ancak, işleçler paylaşılan MASM, C ile gibi \* işleci, assembly dili işletmenler olarak yorumlanır. Örneğin, dışında bir `__asm` engellemek, köşeli parantezleri (**[]**) C dizi öğesi boyutunu otomatik olarak ölçeklendirir dizi indisi kapsayan olarak yorumlanır. İçinde bir `__asm` bloğu, herhangi bir veri nesnesi veya etiket (yalnızca bir dizi) ölçeklendirilmemiş bayt uzaklığı verir MASM dizin işleci olarak görünür. Aşağıdaki kod fark gösterir:  
-  
-```  
-int array[10];  
-  
-__asm mov array[6], bx ;  Store BX at array+6 (not scaled)  
-  
-array[6] = 0;         /* Store 0 at array+24 (scaled) */  
-```  
-  
- İlk referansı `array` ölçeklenmez, ancak saniyedir. Kullanabileceğiniz Not **türü** ölçeklemeyi elde etmek için işlecini temel üzerinde sabiti. Örneğin, aşağıdaki deyimleri eşdeğerdir:  
-  
-```  
-__asm mov array[6 * TYPE int], 0 ; Store 0 at array + 24  
-  
-array[6] = 0;                   /* Store 0 at array + 24 */  
-```  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Bir `__asm` blok kullanamaz belirli işleçleri, C veya C++ gibi **<<** işleci. Bununla birlikte, işleçler paylaşılan MASM, C ile gibi \* işleci, derleme dili işletmenler olarak yorumlanır. Örneğin dışında bir `__asm` engelleme, köşeli ayraç (**[]**) olarak C, dizideki bir öğe için otomatik olarak ölçeklenen, dizi indisi kapsayan olarak yorumlanır. İçinde bir `__asm` blok, herhangi bir veri nesnesi veya etiket (yalnızca bir dizi) bir ölçeklendirilmemiş bayt uzaklığı verir MASM dizin işleci olarak görülür. Aşağıdaki kod, farkı göstermektedir:
+
+```cpp
+int array[10];
+
+__asm mov array[6], bx ;  Store BX at array+6 (not scaled)
+
+array[6] = 0;         /* Store 0 at array+24 (scaled) */
+```
+
+Olan ilk başvurunun `array` ölçeklenmez, ancak saniyedir. Kullanabileceğiniz Not **türü** işleci ölçeklendirme elde etmek için temel bir sabit üzerinde. Örneğin, aşağıdaki ifadeleri eşdeğerdir:
+
+```cpp
+__asm mov array[6 * TYPE int], 0 ; Store 0 at array + 24
+
+array[6] = 0;                   /* Store 0 at array + 24 */
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında C veya C++ Kullanma](../../assembler/inline/using-c-or-cpp-in-asm-blocks.md)<br/>

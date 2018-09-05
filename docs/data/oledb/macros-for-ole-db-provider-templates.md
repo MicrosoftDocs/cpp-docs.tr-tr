@@ -62,12 +62,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e2456eed4f55fe5a5f68552cfe91e5785fc99cf5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2728c88e320fab192563f21ebcdde934be9da84
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209027"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687118"
 ---
 # <a name="macros-for-ole-db-provider-templates"></a>OLE DB Sağlayıcı Şablonları için Makrolar
 OLE DB Şablonları sağlayıcısı makroları işlevselliğini Aşağıdaki kategorilerde sunulur:  
@@ -231,7 +231,7 @@ PROPERTY_INFO_ENTRY(dwPropID)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
   
 #### <a name="remarks"></a>Açıklamalar  
- Bu makro türü özellik değerini ayarlar `DWORD` ATLDB içinde tanımlanmış bir varsayılan değer. H Bir değerine özellik ayarlamak için kullanın [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). Ayarlanacak [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) ve [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) özelliği için aynı anda kullanmak [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
+ Bu makro türü özellik değerini ayarlar `DWORD` ATLDB içinde tanımlanmış bir varsayılan değer. H Bir değerine özellik ayarlamak için kullanın [PROPERTY_INFO_ENTRY_VALUE](../../data/oledb/property-info-entry-value.md). Ayarlanacak `VARTYPE` ve [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) özelliği için aynı anda kullanmak [PROPERTY_INFO_ENTRY_EX](../../data/oledb/property-info-entry-ex.md).  
   
 #### <a name="example"></a>Örnek  
  Bkz: [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).  
@@ -250,7 +250,7 @@ PROPERTY_INFO_ENTRY_EX(dwPropID, vt, dwFlags, value, options)
  [in] A [DBPROPID](/previous-versions/windows/desktop/ms723882\(v=vs.85\)) özelliği ile birlikte kullanılan değeri ayarlanmış bir özelliği tanımlayan GUID.  
   
  *vt*  
- [in] [VARTYPE](https://msdn.microsoft.com/317b911b-1805-402d-a9cb-159546bc88b4) bu özelliği giriş.  
+ [in] `VARTYPE` Bu özelliği giriş. (Wtypes.h içinde tanımlanmıştır)  
   
  *CertOpenStore*  
  [in] A [DBPROPFLAGS](/previous-versions/windows/desktop/ms724342\(v=vs.85\)) bu özellik girdisini tanımlayan değer.  

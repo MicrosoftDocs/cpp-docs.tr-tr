@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2059 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8e978873a8c93cf4f7db636eb0daae79931a12c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 68ccc1381af84928a3bff11aacdfb434d18cc740
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055642"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678709"
 ---
 # <a name="ml-nonfatal-error-a2059"></a>ML Önemli Olmayan Hatası A2059
-**hata zorla: dizeleri eşittir**  
-  
- Koşullu-error yönergesi [. ERRIDN](../../assembler/masm/dot-erridn.md) veya **. ERRIDNI** bu hatayı oluşturmak için kullanıldı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**hata zorla: dizeler eşittir**
+
+Koşullu-error yönergesi [. ERRIDN](../../assembler/masm/dot-erridn.md) veya **. ERRIDNI** bu hatayı oluşturmak için kullanılır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

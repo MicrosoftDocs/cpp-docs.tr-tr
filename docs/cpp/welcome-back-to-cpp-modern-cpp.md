@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d626385523cb957b44589784c2e69539b5ed8fca
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4c659262d11d929e94958cee687103648270db23
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465289"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43679287"
 ---
 # <a name="welcome-back-to-c-modern-c"></a>C++'a (Modern C++) Tekrar Hoş Geldiniz
 C++ dünyada en yaygın olarak kullanılan programlama dilleri biridir. İyi yazılmış C++ programları hızlı ve verimlidir. Çok çeşitli uygulamalar oluşturmak için kullanın dil diğer dillerden daha esnektir çünkü — eğlenceli ve heyecan verici oyunlardan yüksek performanslı bilimsel yazılımlara, cihaz sürücüleri, katıştırılmış programlara ve Windows istemci uygulamaları için. 20 yıldan fazla, C++ ve diğer birçok gibi sorunları çözmek için kullanıldı. Değil bilmeniz, artan sayıda C++ programcıları dün belki C stili programlamada yukarı Katlanmış ve modern C++ yerine donned olmasıdır.  
@@ -133,7 +133,7 @@ void f()
   
 -   [ABI sınırlarında taşınabilirlik](../cpp/portability-at-abi-boundaries-modern-cpp.md)  
   
- Daha fazla bilgi için StackOverflow bkz [hangi C++ deyimleri, C ++ 11'de kullanım dışıdır](http://go.microsoft.com/fwlink/p/?linkid=402836)  
+ Daha fazla bilgi için StackOverflow bkz [hangi C++ deyimleri, C ++ 11'de kullanım dışı bırakılmıştır](https://stackoverflow.com/questions/9299101/which-c-idioms-are-deprecated-in-c11).  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [C++ Dil Başvurusu](../cpp/cpp-language-reference.md)   

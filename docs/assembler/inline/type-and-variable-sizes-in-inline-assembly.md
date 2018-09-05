@@ -1,7 +1,7 @@
 ---
-title: Tür ve değişken boyutları satır içi derlemede | Microsoft Docs
+title: Tür ve değişken boyutları satır içi bütünleştirilmiş kodda | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -25,39 +25,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3466158c507e618e701df5aed35db7e5814abe52
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 3defb0b11a55258aa0a7d8c050d5a59bb6b8eb5a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050600"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683628"
 ---
 # <a name="type-and-variable-sizes-in-inline-assembly"></a>Satır İçi Derlemede Tür ve Değişken Boyutları
-**Microsoft özel**  
-  
- **UZUNLUĞU**, **BOYUTU**, ve **türü** işleçleri satır içi derlemede sınırlı bir anlama sahip. İle tüm kullanılamaz `DUP` işleci (MASM yönergeleri veya işleçleri ile tanımlayamazsınız nedeniyle). Ancak C veya C++ değişkenleri veya türleri boyutunu bulmak için kullanabilirsiniz:  
-  
--   **UZUNLUĞU** işleci bir dizide öğe sayısını dönebilirsiniz. Dizi olmayan değişkenleri için 1 değerini döndürür.  
-  
--   **BOYUTU** işleci C veya C++ değişkeni boyutunu dönebilirsiniz. Bir değişkenin boyutu ürünüdür kendi **UZUNLUĞU** ve **türü**.  
-  
--   **Türü** işleci C veya C++ türü veya değişken boyutu dönebilirsiniz. Değişken bir dizi ise **türü** dizinin tek bir öğe boyutunu döndürür.  
-  
- Örneğin, programınızın 8 öğe varsa `int` diziye  
-  
-```  
-int arr[8];  
-```  
-  
- Aşağıdaki C ve derleme ifadeler boyutunu verim `arr` ve öğeleri.  
-  
-|__asm|C|Boyut|  
-|-------------|-------|----------|  
-|**Uzunluk** arr|`sizeof`(arr) /`sizeof`(arr[0])|8|  
-|**BOYUTU** arr|`sizeof`(arr)|32|  
-|**TÜR** arr|`sizeof`(arr[0])|4|  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+**UZUNLUĞU**, **BOYUTU**, ve **türü** operatörleri, satır içi derlemede sınırlı bir anlama sahiptir. İle tüm kullanılamaz `DUP` işleci (MASM yönergeleri veya işleçleri verilerle tanımlanamaz için). Ancak, C veya C++ değişkenleri veya türleri boyutunu bulmak için kullanabilirsiniz:
+
+- **UZUNLUĞU** işleci, bir dizideki öğelerin sayısını döndürebilir. Dizi olmayan değişkenleri için 1 değerini döndürür.
+
+- **BOYUTU** işleci, bir C veya C++ değişkeni döndürebilir. Bir değişkenin boyutu ürünüdür kendi **UZUNLUĞU** ve **türü**.
+
+- **Türü** işleci, bir C veya C++ tür veya değişken boyutunu döndürebilir. Değişken bir dizi ise **türü** tek bir öğe dizinin boyutunu döndürür.
+
+Örneğin, programınız bir 8-öğe varsa **int** dizisi
+
+```cpp
+int arr[8];
+```
+
+Aşağıdaki C ve derleme ifadeler boyutunu yield `arr` ve alt öğeleri.
+
+|__asm|C|Boyut|
+|-------------|-------|----------|
+|**UZUNLUĞU** arr|`sizeof`(arr) /`sizeof`(arr[0])|8|
+|**BOYUTU** arr|`sizeof`(arr)|32|
+|**TÜR** arr|`sizeof`(arr[0])|4|
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

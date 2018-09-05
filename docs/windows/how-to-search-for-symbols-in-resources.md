@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f105f41c465d2750d372a8794a9ab66fa13db466
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5cefedc4b1517b242eef62192e8d03a60097700c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215988"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43683178"
 ---
 # <a name="how-to-search-for-symbols-in-resources"></a>Nasıl Yapılır: Sembolleri Kaynaklarda Arama
 
@@ -29,10 +29,10 @@ ms.locfileid: "43215988"
 
 1. Gelen **Düzenle** menüsünde seçin **sembol Bul'u**.
 
-2. İçinde [sembol Bul iletişim kutusu](https://msdn.microsoft.com/63e93d9c-784f-418d-a76a-723da5ff5d96), **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya yazın (örneğin, ID_ACCEL1) bulmak istediğiniz kısayol tuşu.
+2. İçinde [sembol Bul iletişim kutusu](/visualstudio/ide/go-to), **Aranan** kutusunda aşağı açılan listeden önceki bir arama dizesi seçin veya yazın (örneğin, ID_ACCEL1) bulmak istediğiniz kısayol tuşu.
 
    > [!TIP]
-   > Kullanılacak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) aramanız için kullanmalısınız [dosyalarda Bul komutu](/visualstudio/ide/reference/find-command) gelen **Düzenle** menü yerine **sembol Bul'u**komutu. Normal ifadeler etkinleştirmek için olmalıdır **kullanın: normal ifadeler** onay kutusunu seçili [Bul iletişim kutusu](https://msdn.microsoft.com/dad03582-4931-4893-83ba-84b37f5b1600). Sağındaki sağ ok düğmesine tıklayabilirsiniz **Aranan** normal arama listesini görüntülemek için kutusu. Bu listeden bir ifade seçtiğinizde, arama metni olarak geçmesidir **Aranan** kutusu.
+   > Kullanılacak [normal ifadeler](/visualstudio/ide/using-regular-expressions-in-visual-studio) aramanız için kullanmalısınız [dosyalarda Bul komutu](/visualstudio/ide/reference/find-command) gelen **Düzenle** menü yerine **sembol Bul'u**komutu. Normal ifadeler etkinleştirmek için olmalıdır **kullanın: normal ifadeler** onay kutusunu seçili [Bul iletişim kutusu](/visualstudio/ide/finding-and-replacing-text). Sağındaki sağ ok düğmesine tıklayabilirsiniz **Aranan** normal arama listesini görüntülemek için kutusu. Bu listeden bir ifade seçtiğinizde, arama metni olarak geçmesidir **Aranan** kutusu.
 
 3. Herhangi bir **Bul** seçenekleri.
 

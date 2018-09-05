@@ -40,19 +40,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cb62c18f7508a21e24fb5628e8ac01162db1405e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8a06fa858ac7d2d8458bd3adf3fb44ca7bdee929
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402718"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43678160"
 ---
 # <a name="exit-exit-exit"></a>Çıkış, _Exit, _exit
 
-Arama işlemi sonlandırır. **Çıkmak** işlevi sonlandırır, temizleme sonrasında; **_exit** ve **_Exit** hemen sonlandır.
+Çağırma işlemi sonlandırır. **Çıkmak** işlevi, sonra temizleme; sonlandırır **_exit** ve **_Exit** hemen sonlandırın.
 
 > [!NOTE]
-> Bu yöntem, test etme veya senaryoları hata ayıklama bir evrensel Windows Platformu (UWP) uygulamasını, kapatmak için kullanmayın. Bir mağaza uygulamasını kapatmak için programlı veya UI yolu göre verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için bkz: [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle). Windows 10 uygulamaları hakkında daha fazla bilgi için bkz: [nasıl yapılır kılavuzları için Windows 10 uygulamaları](http://go.microsoft.com/fwlink/p/?linkid=619133).
+> Bu yöntem, test veya hata ayıklama senaryoları dışında bir evrensel Windows Platformu (UWP) uygulamasını kapatmak için kullanmayın. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulaması yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle). Windows 10 uygulamaları hakkında daha fazla bilgi için bkz: [nasıl yapılır kılavuzları için Windows 10 uygulamaları](https://developer.microsoft.com/en-us/windows/apps).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -74,22 +74,22 @@ void _exit(
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Çıkmak**, **_Exit** ve **_exit** işlevleri çağırma işlemi sonlandırılacak. **Çıkmak** işlevi çağırır Yıkıcılar iş parçacığı yerel nesneler için daha sonra çağırır — son olarak ilk çıkar (LIFO) sırayla — tarafından kaydedilen işlevleri **atexit** ve **_onexit**ve işlem sona erdirmeden önce tüm dosya arabelleklerini alır. **_Exit** ve **_exit** işlevleri sonlandırma işlemi iş parçacığı yerel nesneleri yok etme veya işlemeden **atexit** veya **_onexit**işlevler ve akış arabellekleri temizleme olmadan.
+**Çıkmak**, **_Exit** ve **_exit** işlevleri çağırma işlemi sonlandırın. **Çıkmak** işlevi yok ediciler çağırır için iş parçacığı-yerel nesneleri, sonra çağıran — son-giren ilk çıkar (LIFO) sırayla — tarafından kaydedilen işlevleri **atexit** ve **_onexit**ve işlem sonlandırılmadan önce tüm dosya arabelleklerini ardından alır. **_Exit** ve **_exit** işlevleri sonlandırma işlemi iş parçacığı-yerel nesneleri yok etme veya işleme **atexit** veya **_onexit**işlevler ve akış arabellekleri temizleme olmadan.
 
-Rağmen **çıkmak**, **_Exit** ve **_exit** çağrıları değer'de bir değer döndürmeyen *durum* konak ortamında kullanılabilir veya işlem çıktıktan sonra varsa, arama işlemi bekleniyor. Genellikle, çağıran kümeleri *durum* değer normal bir çıkış göstermek için 0 veya bir hata göstermek için başka bir değer. *Durum* değeri işletim sistemi toplu komutuna kullanılabilir **ERRORLEVEL** ve iki sabitlerden biri tarafından temsil edilen: **exıt_success**, bir değeri temsil eder 0 veya **exıt_faılure**, 1 değerini temsil eder.
+Ancak **çıkmak**, **_Exit** ve **_exit** çağrıları, bir değer, değer döndürmeyen *durumu* konak ortamı için kullanılabilir hale getirileceğini veya süreç bittikten sonra varsa, çağırma işlemi bekleniyor. Genellikle, arayanın kümeleri *durumu* değer normal bir çıkış göstermek için 0 ya da bir hatayı göstermek için başka bir değer. *Durumu* değeri işletim sistemi batch komutuna kullanılabilir **ERRORLEVEL** ve iki sabitlerinden birini tarafından temsil edilir: **exıt_success**, bir değeri temsil eder 0 veya **exıt_faılure**, 1 değerini temsil eder.
 
-**Çıkmak**, **_Exit**, **_exit**, **quick_exit**, **_cexit**, ve **_c_exit** işlevleri gibi davranır.
+**Çıkmak**, **_Exit**, **_exit**, **quick_exit**, **_cexit**, ve **_c_exit** işlevler gibi davranır.
 
 |İşlev|Açıklama|
 |--------------|-----------------|
-|**Çıkış**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının için sağlanan durum kodu sağlar.|
-|**_Exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının için sağlanan durum kodu sağlar.|
-|**_exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının için sağlanan durum kodu sağlar.|
-|**quick_exit**|Hızlı C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının için sağlanan durum kodu sağlar.|
-|**_cexit**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döndürür. İşlemi Sonlandır değil.|
-|**_c_exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döndürür. İşlemi Sonlandır değil.|
+|**Çıkış**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının sağlanan durum koduna sağlar.|
+|**_Exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının sağlanan durum koduna sağlar.|
+|**_exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının sağlanan durum koduna sağlar.|
+|**quick_exit**|Hızlı C Kitaplığı sonlandırma yordamları gerçekleştirir, işlemi sonlandırır ve ana bilgisayar ortamının sağlanan durum koduna sağlar.|
+|**_cexit**|Tam C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döner. İşlemi Sonlandır değil.|
+|**_c_exit**|En az C Kitaplığı sonlandırma yordamları gerçekleştirir ve çağırana döner. İşlemi Sonlandır değil.|
 
-Çağırdığınızda **çıkmak**, **_Exit** veya **_exit** işlev çağrısı sırada mevcut geçici veya otomatik nesneleri için Yıkıcılar çağrılır değil. Tanımlı bir işlevde statik olmayan yerel bir nesne bir otomatik nesnesidir. Geçici bir nesne gibi bir işlev çağrısı tarafından döndürülen değer derleyici tarafından oluşturulan nesnedir. Arama yapmadan önce bir otomatik nesne yok etmek için **çıkmak**, **_Exit**, veya **_exit**, açıkça yıkıcı nesne için aşağıda gösterildiği gibi çağırın:
+Çağırdığınızda **çıkmak**, **_Exit** veya **_exit** işlevi çağrısı sırada mevcut geçici veya otomatik nesneler için yok ediciler değil çağrılır. Bir işlev içinde tanımlanmış statik olmayan bir yerel nesne bir otomatik nesnedir. Geçici bir nesne bir işlev çağrısı tarafından döndürülen bir değer gibi derleyici tarafından oluşturulan bir nesnedir. Çağırmadan önce otomatik nesneyi yok etmek **çıkmak**, **_Exit**, veya **_exit**, açıkça yıkıcı nesne için burada gösterildiği gibi çağırın:
 
 ```cpp
 void last_fn() {}
@@ -100,7 +100,7 @@ void last_fn() {}
 }
 ```
 
-Kullanmayın **DLL_PROCESS_ATTACH** çağırmak için **çıkmak** gelen **DllMain**. Çıkmak için **DLLMain** işlev, dönüş **FALSE** gelen **DLL_PROCESS_ATTACH**.
+Kullanmayın **DLL_PROCESS_ATTACH** çağrılacak **çıkmak** gelen **DllMain**. Çıkmak için **DLLMain** işlevi, iade **FALSE** gelen **DLL_PROCESS_ATTACH**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -108,7 +108,7 @@ Kullanmayın **DLL_PROCESS_ATTACH** çağırmak için **çıkmak** gelen **DllMa
 |--------------|---------------------|
 |**Çıkış**, **_Exit**, **_exit**|\<Process.h > veya \<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

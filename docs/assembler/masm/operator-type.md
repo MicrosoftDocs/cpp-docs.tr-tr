@@ -1,7 +1,7 @@
 ---
-title: TYPE işleci | Microsoft Docs
+title: işleç türü | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93e786a2d28413ec3d4f1ac27b3c4d1619d2b4ea
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5913377d4e7a9758f0a5fbab8c889efabc03d1f8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053528"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682353"
 ---
 # <a name="operator-type"></a>TYPE işleci
-Türünü döndürür *ifade*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-TYPE expression  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Türünü döndüren *ifade*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> TÜR ifadesi
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

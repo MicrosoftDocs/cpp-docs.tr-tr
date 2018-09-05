@@ -1,7 +1,7 @@
 ---
-title: operator -2 | Microsoft Docs
+title: operator - | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -19,22 +19,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d1969484a4a27652f00b45adce33ce8edb7b3af
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 2c388770032d8caff3aaf261e534beb19aa8ccf2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057595"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677187"
 ---
 # <a name="operator--"></a>-işleci
-Döndürür *İfade1* eksi *İfade2*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 - expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Döndürür *İfade1* eksi *expression2*. İkinci işleç işaretini tersine çevirir *ifade*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1 - expression2
+
+> -*İfade*
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

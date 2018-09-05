@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e5ddaf0f3368f9542fbbd04a8a16c56223aefd5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 1535ccda7b53a4fe87c496e2749e382413e32d0a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219585"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43677794"
 ---
 # <a name="concurrency-namespace-functions"></a>Eşzamanlılık ad alanı işlevleri
 ||||  
@@ -179,12 +179,12 @@ IResourceManager* __cdecl CreateResourceManager();
  Bir `IResourceManager` arabirimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntemi izleyen birden çok çağrı Kaynak Yöneticisi'nin aynı örneğini döndürür. Yöntemine yapılan her çağrı bir başvuru Kaynak Yöneticisi'nde saymak ve çağrısı ile eşleştirilmesi gerekir [Iresourcemanager::Release](https://msdn.microsoft.com/5d1356ec-fbd3-4284-a361-1e9e20bbb522) yöntemi zamanlayıcınız Kaynak Yöneticisi ile iletişim kurulurken.  
+ Bu yöntemi izleyen birden çok çağrı Kaynak Yöneticisi'nin aynı örneğini döndürür. Yöntemine yapılan her çağrı bir başvuru Kaynak Yöneticisi'nde saymak ve çağrısı ile eşleştirilmesi gerekir [Iresourcemanager::Release](iresourcemanager-structure.md) yöntemi zamanlayıcınız Kaynak Yöneticisi ile iletişim kurulurken.  
   
  [unsupported_os](unsupported-os-class.md) işletim sistemi eşzamanlılık çalışma zamanı tarafından desteklenmiyorsa oluşturulur.  
   
 ##  <a name="create_task"></a>  create_task  
- Oluşturur [görev](https://msdn.microsoft.com/5389e8a5-5038-40b6-844a-55e9b58ad35f) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.  
+ Oluşturur [görev](task-class.md) nesne. `create_task` kullanılabilir herhangi bir görev oluşturucuyu kullandığınız. Kullanılmasına izin verdiğinden çok uygunluk açısından sağlanır `auto` görevler oluşturulurken anahtar sözcüğü.  
   
 ```
 template<typename T>

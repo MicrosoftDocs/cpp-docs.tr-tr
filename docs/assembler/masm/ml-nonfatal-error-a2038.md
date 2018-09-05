@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2038 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae76352325e098cb4951982d0aa778fa0b0e0d0d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 92de20e9eb2c9a5666758ecc1e11901e75e67556
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054438"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43680316"
 ---
 # <a name="ml-nonfatal-error-a2038"></a>ML Önemli Olmayan Hatası A2038
-**Makro işlecinin işleneni eksik**  
-  
- Derleyici bulunan bir makro parametre listesinin sonuna hemen sonra [!](../../assembler/masm/operator-logical-not-masm-run-time.md) veya [ % ](../../assembler/masm/operator-percent.md) işleci.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Makro işlecinin işleneni eksik**
+
+Assembler bulunan bir makronun parametre listesinin sonuna hemen sonra [!](../../assembler/masm/operator-logical-not-masm-run-time.md) veya [ % ](../../assembler/masm/operator-percent.md) işleci.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

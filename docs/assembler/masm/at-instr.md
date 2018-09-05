@@ -1,7 +1,7 @@
 ---
 title: '@InStr | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0fb92987de21f653440d6c4cc23d726ad323b69
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b0beb5fbde4433ad436d9dffa0dd3048b17a7fcd
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049287"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682999"
 ---
 # <a name="instr"></a>@InStr
-İlk örneğini bulur makrosu işlevi *dize2* içinde *Dize1*, başlangıç sırasında *konumu* içinde *Dize1*. Varsa *konumu* görünmez, arama listesinin başında başlar *Dize1*. Bir konumu tamsayı veya 0 ise döndürür *dize2* bulunamadı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@InStr( [[position]], string1, string2 )  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+İlk oluşumunu bulur makrosu işlevi *dize2* içinde *Dize1*başlayan *konumu* içinde *Dize1*. Varsa *konumu* görüntülenmezse, arama başlangıcında başlar *Dize1*. Bir konumu tamsayı veya 0 döndürür *dize2* nebyl nalezen.
+
+## <a name="syntax"></a>Sözdizimi
+
+> @InStr([[konumlandırma]], dize1, dize2)
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

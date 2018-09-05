@@ -1,7 +1,7 @@
 ---
 title: (MASM) İÇİN | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,28 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca67b886a0fd134b4d861a516b6726dae156c3b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: dd349a38b1de317a01f07fdcf1ba1915f6d32a42
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051949"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681121"
 ---
 # <a name="for-masm"></a>FOR (MASM)
-Her biri için bir kez yineleneceğini bir blok işaretler `argument`, geçerli ile `argument` değiştirme `parameter` her tekrar üzerinde.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   FOR   
-   parameter [[:REQ | :=default]] , <argument [[, argument]]...>  
-statements  
-ENDM  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aynı [IRP](../../assembler/masm/irp.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Her biri için bir kez yineleneceğini bir blok işaretler *bağımsız değişken*, geçerli *bağımsız değişken* değiştirerek *parametre* her yineleme üzerinde.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İÇİN *parametre* [[: isteği |: =*varsayılan*]], \< *bağımsız değişken* [[, *bağımsız değişken*]]... ><br/>
+> *Deyimleri*<br/>
+> ENDM
+
+## <a name="remarks"></a>Açıklamalar
+
+Aynı [IRP](../../assembler/masm/irp.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

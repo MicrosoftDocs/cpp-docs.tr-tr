@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b7ec520d27d52bb3e50a58780d822363016ef76
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ff46958afea8825f29941d9f3cbead20c533c76c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606869"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43676991"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 Ortak dil çalışma zamanı (CLR) özellikleri kullanmak, uygulamaları ve bileşenleri sağlar.  
@@ -68,9 +68,7 @@ Ortak dil çalışma zamanı (CLR) özellikleri kullanmak, uygulamaları ve bile
  Visual C++ 2005 önce **/clr:noAssembly** gerekli **/LD**. **/LD** belirttiğinizde artık örtük **/clr:noAssembly**.  
   
  **/clr:initialAppDomain**  
- CLR sürüm 1 çalıştırmak Visual C++ uygulaması sağlar. Kullanırsanız **initialAppDomain**, bazı sorunlar ele alınmıştır görebilirsiniz [hata: Yönetilen Visual C++ bileşenleri için uzantıları kullandığınız zaman AppDomainUnloaded özel durum](http://go.microsoft.com/fwlink/p/?linkid=169465) Microsoft Destek Web sitesi.  
-  
- Kullanılarak derlenmiş bir uygulama **initialAppDomain** CLR 1. sürümü desteklenmediği için ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.  
+ CLR sürüm 1 çalıştırmak Visual C++ uygulaması sağlar.  Kullanılarak derlenmiş bir uygulama **initialAppDomain** CLR 1. sürümü desteklenmediği için ASP.NET kullanan bir uygulama tarafından kullanılmamalıdır.  
   
  **/clr:nostdlib**  
  Derleyicinin varsayılan \clr dizin yok saymasını yönlendirir. Bir DLL System.dll gibi birden çok sürümünü ekliyorsanız derleyici hataları oluşturur. Bu seçeneği kullanarak derleme sırasında kullanılacak belirli framework belirtmenize olanak sağlar.  

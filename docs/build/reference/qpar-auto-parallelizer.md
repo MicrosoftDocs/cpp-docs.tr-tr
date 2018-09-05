@@ -14,15 +14,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430bf1ebc79008d97435ecbcb3b15cf19dda5f8d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 24c3501422a0bfbaba8aea0e45c102f63948b7db
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375694"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43684511"
 ---
 # <a name="qpar-auto-parallelizer"></a>/Qpar (Otomatik Paralel Hale Getirici)
-Etkinleştirir [otomatik paralel hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) otomatik olarak kodunuzda döngüler paralel hale derleyici özelliğidir.  
+Sağlar [otomatik paralel hale getirici](../../parallel/auto-parallelization-and-auto-vectorization.md) derleyicinin otomatik olarak kod döngüleri paralel hale getirmek için bir özelliğidir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -31,28 +31,28 @@ Etkinleştirir [otomatik paralel hale getirici](../../parallel/auto-parallelizat
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Derleyici otomatik olarak kod Döngülerde parallelizes, hesaplama birden çok işlemci çekirdeği arasında yayar. Bunu yapmak için uygundur ve o paralelleştirme performansı Derleyici yalnızca belirlerse, döngü paralel birkaç ölçeklendirin.  
+ Derleyicinin otomatik olarak kod Döngülerde parallelizes, hesaplama arasında birden çok işlemci Çekirdeğinde yayar. Yalnızca Derleyici bunu yapmak için geçerlidir ve bu paralelleştirme performansını iyileştirecek belirlerse döngü paralelleştirildi.  
   
- `#pragma loop()` Yönergeleri belirli döngüler paralel hale iyileştirici yardımcı olmak için kullanılabilir. Daha fazla bilgi için bkz: [döngü](../../preprocessor/loop.md).  
+ `#pragma loop()` Yönergeleridir iyileştirici belirli bir döngü paralel hale getirmek amacıyla kullanılabilir. Daha fazla bilgi için [döngü](../../preprocessor/loop.md).  
   
- Otomatik paralel hale getirici için çıktı iletileri etkinleştirme hakkında daha fazla bilgi için bkz: [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md).  
+ Çıktı iletilerini otomatik paralel hale getirici için etkinleştirme hakkında daha fazla bilgi için bkz: [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md).  
   
-### <a name="to-set-the-qpar-compiler-option-in-visual-studio"></a>Visual Studio'da /Qpar derleyici seçeneği ayarlamak için  
+### <a name="to-set-the-qpar-compiler-option-in-visual-studio"></a>Visual Studio'da /Qpar derleyici seçeneğini ayarlamak için  
   
 1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
   
-2.  İçinde **özellik sayfaları** iletişim kutusunda **C/C++** seçin **komut satırı**.  
+2.  İçinde **özellik sayfaları** iletişim kutusunun **C/C++** seçin **komut satırı**.  
   
 3.  İçinde **ek seçenekler** kutusuna `/Qpar`.  
   
-### <a name="to-set-the-qpar-compiler-option-programmatically"></a>/Qpar derleyici seçeneği programlı olarak ayarlamak için  
+### <a name="to-set-the-qpar-compiler-option-programmatically"></a>/Qpar derleyici seçeneğini program üzerinden ayarlamak için  
   
 -   Aşağıdaki kod örneğinde kullanmak <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
- [/ Qpar (otomatik paralel hale getirici düzeyi raporlama) raporu](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
+ [/ Qpar-(otomatik paralel hale getirici report raporlama düzeyi)](../../build/reference/qpar-report-auto-parallelizer-reporting-level.md)   
  [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
  [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
  [#pragma loop()](../../preprocessor/loop.md)   
- [Yerel kodda paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=263662)
+ [Yerel kodda paralel programlama](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/04/12/auto-vectorizer-in-visual-studio-2012-overview/)

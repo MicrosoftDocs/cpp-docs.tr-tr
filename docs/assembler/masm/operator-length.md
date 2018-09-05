@@ -1,7 +1,7 @@
 ---
 title: LENGTH işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e4f94859bd42e47595110817604288030015862
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 24f20c13e07d1e06de0a8fbd196a95c5f373bef9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057178"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43682695"
 ---
 # <a name="operator-length"></a>LENGTH işleci
-Veri öğelerinin sayısını döndürür *değişkeni* ilk başlatıcısı tarafından oluşturuldu.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-LENGTH variable  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Veri öğeleri döndürür *değişkeni* ilk başlatıcısı tarafından oluşturuldu.
+
+## <a name="syntax"></a>Sözdizimi
+
+> Uzunluk değişkeni
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

@@ -12,19 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0b74909e048789662800569f8d996747fb8cadf
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 84ea10c87e463e797b4c35b1f94843228c4cb063
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403050"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43681508"
 ---
 # <a name="how-to-create-and-use-sharedptr-instances"></a>Nasıl yapılır: shared_ptr Örnekleri Oluşturma ve Kullanma
 `shared_ptr` Senaryoları, birden fazla sahibi gerekebilir bellekteki nesnenin ömrünü yönetmek için tasarlanan C++ Standart Kitaplığı'nda bir akıllı işaretçi türüdür. Başlatın, sonra bir `shared_ptr` kopyalayın, değer tarafından işlev bağımsız değişkenleri geçirme ve diğer atamak `shared_ptr` örnekleri. Tüm örnekleri aynı nesneye'nın üzerine gelin, yeni bir başvuru sayısı paylaşım erişimi için bir "artırır denetim bloğu" ve azaltır `shared_ptr` eklenir, kapsamın dışına çıkıncaya veya sıfırlanır. Başvuru sayısı sıfır ulaştığında, denetim bloğu bellek kaynağı ve kendisini siler.  
   
  Aşağıda birkaç gösterilmiştir `shared_ptr` bir bellek konumuna işaret örnekleri.  
   
- [![Paylaşılan işaretçi](../cpp/media/shared_ptr.png "shared_ptr")](assetId:///9785ad08-31d8-411a-86a9-fb9cd9684c27)  
+ [![Paylaşılan işaretçi](../cpp/media/shared_ptr.png "shared_ptr")]  
   
 ## <a name="example"></a>Örnek  
  Mümkün olduğunda kullanın [make_shared](../standard-library/memory-functions.md#make_shared) oluşturmak için işlevi bir `shared_ptr` bellek kaynağı ilk kez oluşturulduğunda. `make_shared` özel durum-güvenli olmayandır. Aynı çağrı denetim bloğu ve kaynak için bellek ayırmak için kullanır ve böylece oluşturma ek yükü azaltır. Kullanmıyorsanız, `make_shared`, kendisine geçirdiğiniz önce nesne oluşturmak için açık bir new ifadesi kullanmayı sahip `shared_ptr` Oluşturucusu. Aşağıdaki örnek, bildirmek ve başlatmak için çeşitli yollar gösterir. bir `shared_ptr` birlikte yeni bir nesne.  
