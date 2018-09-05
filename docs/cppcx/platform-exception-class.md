@@ -19,11 +19,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6774aa0d90e9903798cd2a77a480782b669fdc57
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586641"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758774"
 ---
 # <a name="platformexception-class"></a>Platform::Exception sınıfı
 Uygulama yürütme sırasında oluşan hataları temsil eder. Özel durum sınıfları öğesinden türetilemez `Platform::Exception`. Bir özel durum gerektiriyorsa, kullanabileceğiniz `Platform::COMException` ve uygulamaya özel HRESULT'ı belirtin.  

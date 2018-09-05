@@ -15,25 +15,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1227136dfc42269348fa8ac2d996ca80d063c610
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: ccb595911ef3032b652faedf1195f95b468d30e9
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464644"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761962"
 ---
 # <a name="conventions"></a>Kurallar
-Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:  
-  
-|Öznitelik|Açıklama|  
-|---------------|-----------------|  
-|*bildirimlere*|İtalik tür terminal olmayanları gösterir.|  
-|#include|Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır.|  
-|opt|Opt'un arkasından gelen terminal olmayanlar zaman isteğe bağlıdır.|  
-|varsayılan yazı tipi|Bu yazı tipinde açıklanan veya listelenen kümedeki karakterler, deyimlerde terminaller olarak kullanılabilir.|  
-  
-Bir terminal olmayanın ardından gelen iki nokta üst üste (:), tanımını sunar. Alternatif tanımlar, ayrı satırlarda listelenmiştir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+Kurallar, sözdiziminin farklı bileşenleri için farklı yazı tipi öznitelikleri kullanır. Simgeler ve yazı tipleri aşağıdaki gibidir:
+
+|Öznitelik|Açıklama|
+|---------------|-----------------|
+|*bildirimlere*|İtalik tür terminal olmayanları gösterir.|
+|#include|Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır.|
+|opt|Terminal dışı arkasından <sub>iyileştirilmiş</sub> her zaman isteğe bağlıdır.|
+|varsayılan yazı tipi|Bu yazı tipinde açıklanan veya listelenen kümedeki karakterler, deyimlerde terminaller olarak kullanılabilir.|
+
+Bir iki nokta üst üste (**:**) bir Terminal olmayanın tanımını tanıtır. Alternatif tanımlar, ayrı satırlarda listelenmiştir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 
 [Dilbilgisi Özeti (C/C++)](../preprocessor/grammar-summary-c-cpp.md)

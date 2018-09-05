@@ -1,5 +1,5 @@
 ---
-title: Yığın Çekişme kaçınma | Microsoft Docs
+title: Yığın çekişmesini engelleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,30 +14,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 731fcb2328f789e5c487dc56510bbd6f7ec049ea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4f01bdbbc14e09fe8f9823eed738556ee876376
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358091"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762257"
 ---
-# <a name="avoidance-of-heap-contention"></a>Yığın Çekişme kaçınma
-MFC ve ATL tarafından sağlanan varsayılan dize yöneticileri, genel bir öbek üzerinde basit sarmalayıcıları kullanıcılardır. Bu genel yığın tam olarak birden çok iş parçacığı ayırın ve aynı anda öbek bozulmasını olmadan bellekten bunu serbest anlamına iş parçacığı, ' dir. İş parçacığı güvenliğini sağlamaya yardımcı olmak için kendisine erişim serileştirmek yığın sahiptir. Bu genellikle bir kritik bölüm veya benzer kilitleme mekanizması olarak gerçekleştirilir. İki iş parçacığı öbek aynı anda erişmeye her bir iş parçacığı diğer iş parçacığı isteği tamamlanana kadar engellendi. Birçok uygulama için öbek 's kilitleme mekanizması performans etkisini önemsizdir ve bu durum nadiren oluşur. Ancak, birden çok iş parçacığından öbek sık sık eriştiği uygulamalar için öbek 's kilit çakışması ve uygulamanın tek iş parçacıklı (makinelerde bile birden çok CPU ile), daha yavaş çalışmasına neden olabilir.  
-  
- Kullanan uygulamalar [CStringT](../atl-mfc-shared/reference/cstringt-class.md) yığın Çekişme özellikle açıktır çünkü işlemleri `CStringT` nesneler sık dize arabellek yeniden ayırma gerektirir.  
-  
- İş parçacıkları arasında yığın Çekişme hafifletmek için bir yol, bir özel, iş parçacığı yerel yığınından dizeleri tahsis her iş parçacığı sağlamaktır. Dizeleri ile ayrılan sürece bir belirli iş parçacığının ayırıcısı yalnızca o iş parçacığı kullanılan, ayırıcı iş parçacığı açısından güvenli olması gerekmez.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, iş parçacığı dizeleri kullanılmak üzere kendi özel iş parçacığı güvenli olmayan yığın ayırır bir iş parçacığı yordamı gösterir:  
-  
- [!code-cpp[NVC_ATLMFC_Utilities#182](../atl-mfc-shared/codesnippet/cpp/avoidance-of-heap-contention_1.cpp)]  
-  
-## <a name="comments"></a>Açıklamalar  
- Bu aynı iş parçacığı yordamı kullanarak birden çok iş parçacığı çalışıyor olabilecek ancak her iş parçacığının kendi yığın olduğundan iş parçacıkları arasında hiçbir Çekişme yoktur. Ayrıca, iş parçacığı tek kopyası çalışıyor olsa bile her yığın iş parçacığı açısından güvenli değil olgu performans ölçülebilir bir artış sağlar. Pahalı birbirine kenetlenmiş işlemler eşzamanlı erişime karşı korumak için kullanmayan yığın sonucudur.  
-  
- Daha karmaşık bir iş parçacığı yordamı için iş parçacığının dizesi yöneticisi için bir işaretçi bir iş parçacığı yerel depolaması (TLS) yuvasına depolamak kullanışlı olabilir. Bu iş parçacığının dize Yöneticisi'ne erişmek için iş parçacığı yordamı tarafından çağrılan diğer işlevler sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+# <a name="avoidance-of-heap-contention"></a>Yığın çekişmesini engelleme
+
+MFC ve ATL tarafından sağlanan varsayılan dize yöneticileri genel bir yığın üzerinde basit sarmalayıcıları ' dir. Bu genel bir öbek tam olarak birden çok iş parçacığı ayırmak ve yığın bozulmasını olmadan aynı anda bellekten, ücretsiz anlamına gelir, güvenlidir. İş parçacığı güvenliği sağlamak için kendisine erişim serileştirmek yığın vardır. Bu genellikle bir kritik bölüm veya benzer kilitleme mekanizması ile gerçekleştirilir. Her iki iş parçacığı yığın bağlayıp buna erişim denediğinizde, diğer iş parçacığının istek işlemi tamamlanana kadar bir iş parçacığı engellenir. Birçok uygulama için yığının kilitleme mekanizması performans etkisini göz ardı edilebilir ve bu durum nadiren oluşur. Ancak, sık sık yığın birden fazla iş parçacığından erişen uygulamalar için yığının kilit çakışması ve uygulamanın tek iş parçacıklı (bile makinelerinde birden çok CPU ile), göre daha yavaş çalışmasına neden olabilir.
+
+Kullanan uygulamalar [CStringT](../atl-mfc-shared/reference/cstringt-class.md) yığın çekişmesini özellikle açıktır çünkü işlemleri `CStringT` nesneler sık dize arabelleğinin reallocation gerektirir.
+
+Yığın çekişmesini iş parçacıkları arasında hafifletmek yollarından biri, her bir iş parçacığı bir özel, iş parçacığı-yerel yığından dizeleri ayırmak olmasını sağlamaktır. Dizeler ile ayrılmış olduğu sürece bir belirli iş parçacığının ayırıcı, yalnızca bu iş parçacığındaki kullanılıyorsa, ayırıcı iş parçacığı açısından güvenli olması gerekmez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte, iş parçacığı üzerinde dizeleri kullanmak için kendi özel iş parçacığı güvenli olmayan yığın ayıran bir iş parçacığı yordamı gösterilmektedir:
+
+[!code-cpp[NVC_ATLMFC_Utilities#182](../atl-mfc-shared/codesnippet/cpp/avoidance-of-heap-contention_1.cpp)]
+
+## <a name="comments"></a>Açıklamalar
+
+Bu iş parçacığı yordamı kullanarak birden çok iş parçacığı çalışıyor olabilir, ancak her iş parçacığının kendi yığın olduğundan iş parçacıkları arasında hiçbir çakışma yok. Ayrıca, yalnızca bir kopyasını iş parçacığı çalışıyor olsa bile her yığın iş parçacığı açısından güvenli değildir olgu ölçülebilir bir performans artışı sağlar. Bu pahalı bir birbirine kenetlenmiş işlemler eşzamanlı erişime karşı korumak için kullanmayan yığın sonucudur.
+
+Daha karmaşık bir iş parçacığı yordamı için iş parçacığının dize Yöneticisi için bir işaretçi bir iş parçacığı yerel depolama (TLS) yuvasında depolamak kullanışlı olabilir. Bu iş parçacığının dize Yöneticisi'ne erişmek için iş parçacığı yordamı tarafından çağrılan diğer işlevler sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
 

@@ -14,38 +14,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99f227f37f4a9de92f244df5988f7ee8088e41d5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 74a29acfcdc58b068ebabe9bc1c9b033cf801c21
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384152"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760412"
 ---
 # <a name="definitions-and-conventions"></a>Tanımlar ve Kurallar
-Terminal sözdizimi tanımında noktalarıdır. Herhangi bir çözüm mümkündür. Terminal ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.  
+Terminaller bir söz dizimi tanımı noktalarıdır. Herhangi bir çözüm mümkündür. Terminaller ayrılmış sözcükler ve kullanıcı tanımlı tanımlayıcıları kümesi içerir.  
   
- Terminal dışı sözdizimi yer tutucuları olan ve bu Özet sözdiziminde başka bir yerde tanımlanır. Tanımları özyinelemeli olabilir.  
+Terminal dışı sözdizimi içindeki yer tutucuları olan ve bu sözdizimi özeti başka bir yerde tanımlanır. Tanımları özyinelemeli olabilir.  
   
- İsteğe bağlı bir bileşen tarafından alt opt belirtilir. Örneğin,  
+İsteğe bağlı bir bileşen belirtilen tarafından da simgeli <sub>iyileştirilmiş</sub>. Örneğin,  
   
-```  
+> **{** *ifade*<sub>iyileştirilmiş</sub> **}**
   
-{  
-expression <SUB>opt</SUB> }  
-```  
+Küme ayraçları içine alınmış bir isteğe bağlı ifade gösterir.  
   
- ayraçlar içinde isteğe bağlı bir ifadeyi belirtir.  
-  
- Sözdizimi kurallarına farklı yazı tipi özniteliklerini sözdizimi farklı bileşenler için kullanın. Simgeler ve yazı tipleri aşağıdaki gibidir:  
+Sözdizimi kurallarının, sözdiziminin farklı bileşenleri için farklı yazı tipi özniteliklerini kullanın. Simgeler ve yazı tipleri aşağıdaki gibidir:  
   
 |Öznitelik|Açıklama|  
 |---------------|-----------------|  
-|*nonterminal*|İtalik tür terminal olmayanları gösterir.|  
+|*bildirimlere*|İtalik tür terminal olmayanları gösterir.|  
 |**const**|Kalın türdeki terminaller, gösterildiği gibi girilmesi gereken sabit ayrılmış sözcükler ve simgelerdir. Bu bağlamdaki karakterler, her zaman büyük/küçük harfe duyarlıdır.|  
-|opt|Opt'un arkasından gelen terminal olmayanlar zaman isteğe bağlıdır.|  
-|varsayılan yazı tipi|Karakter kümesinde açıklanan veya bu yazı listelenen C deyimlerinde Terminal olarak kullanılabilir.|  
+|<sub>iyileştirilmiş</sub>|Terminal dışı arkasından <sub>iyileştirilmiş</sub> her zaman isteğe bağlıdır.|  
+|varsayılan yazı tipi|Açıklanan veya listelenen bu yazı kümesindeki C deyimlerde terminaller olarak kullanılabilir.|  
   
- İki nokta (**:**) bir nonterminal aşağıdaki tanımına tanıtır. Alternatif tanımları listelenen ayrı satırlara dışında sözcüklerle başında zaman "birini."  
+Bir iki nokta üst üste (**:**) bir Terminal olmayanın tanımını tanıtır. Alternatif tanımlar listelenen ayrı satırlarda dışında kelimelerinizle başında, "birini."  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)
+[C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)

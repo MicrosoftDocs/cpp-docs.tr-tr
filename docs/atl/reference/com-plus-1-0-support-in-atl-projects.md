@@ -1,5 +1,5 @@
 ---
-title: COM + 1.0 destek ATL projelerinde | Microsoft Docs
+title: COM + 1.0 desteği ATL projelerinde | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,28 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3440d3ed2e3244b35588d5c07fd181f1ad2f082
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 06a9e6cd4a374f0941b360a3f8f24f61e4b46a6a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359363"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763304"
 ---
-# <a name="com-10-support-in-atl-projects"></a>COM + 1.0 destek ATL projeleri
-Kullanabileceğiniz [ATL Proje Sihirbazı](../../atl/reference/creating-an-atl-project.md) COM + 1.0 bileşenleri için temel desteği olan bir proje oluşturmak için.  
-  
- COM + 1.0 Dağıtılmış Bileşen tabanlı uygulamaları geliştirmek için tasarlanmıştır. Ayrıca bir çalışma zamanı altyapısı dağıtmak ve bu uygulamaları yönetmek için sağlar.  
-  
- Seçerseniz **destek COM + 1.0** onay kutusu, sihirbazın bağlantı adımda derleme betiğindeki değiştirir. Özellikle, COM + 1.0 proje aşağıdaki kitaplıklarına bağlantılar:  
-  
--   Comsvcs.lib  
-  
--   Mtxguid.lib  
-  
- Seçerseniz **destek COM + 1.0** onay kutusunu da seçebilirsiniz **destek bileşen Kaydedicisi**. Bileşen Kaydedicisi bileşenleri listesini almak, bileşenlerin kaydı veya bileşenleri (ayrı ayrı veya tümünü bir defada) kaydını kaldırma, COM + 1.0 nesne sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM nesneleri temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
- [ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
- [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+# <a name="com-10-support-in-atl-projects"></a>COM + 1.0 ATL projelerinde desteği
+
+Kullanabileceğiniz [ATL projesi Sihirbazı](../../atl/reference/creating-an-atl-project.md) COM + 1.0 bileşenleri için temel desteği ile bir proje oluşturmaktır.
+
+COM + 1.0 bileşeni tabanlı dağıtılmış uygulamalar geliştirmek için tasarlanmıştır. Ayrıca dağıtmak ve bu uygulamaları yönetmek için çalışma zamanı altyapısı sağlar.
+
+Seçerseniz **destek COM + 1.0** onay kutusunu, sihirbaz bağlantı adımda derleme betiği değiştirir. Özellikle, COM + 1.0 proje bağlantıları aşağıdaki kitaplıklar için:
+
+- Comsvcs.lib
+
+- Mtxguid.lib
+
+Seçerseniz **destek COM + 1.0** onay kutusunu da seçebileceğiniz **destek bileşen Kaydedicisi**. Bileşen kayıt şirketi, COM + 1.0 nesnesinin bileşenlerin listesini alın, bileşenleri kaydetmek veya bileşenleri (tek tek veya tek seferde) kaydını sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
+[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
+[Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

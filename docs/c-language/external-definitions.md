@@ -15,26 +15,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1ce5a214e33fed66aa5f54a57c1cc1d15473e6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 193ba8b853fbdbe16f906e1cdf82dd22a40f36bb
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383111"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759502"
 ---
 # <a name="external-definitions"></a>Dış Tanımlar
-*Çeviri birim*:  
- *Dış bildirimi*  
+
+*Çeviri birimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*  
   
- *Çeviri birim dış-bildirimi*  
-  
- *Harici bildirim*: /\* yalnızca dış (dosya) kapsamında izin \*/  
- *işlev tanımı*  
-  
- `declaration`  
-  
- *işlev tanımı*: /\* burada Bildirimcisi olduğu işlevi bildirimcisi \*/  
- *bildirim tanımlayıcıları* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)
+*Dış bildirimi*: /\* yalnızca dış (dosyası) kapsamında izin \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*
+
+*işlev tanımı*: /\* burada Bildiricisi olan işlev bildirimcisinden \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*<sub>iyileştirilmiş</sub>  *Bileşik deyim*
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)

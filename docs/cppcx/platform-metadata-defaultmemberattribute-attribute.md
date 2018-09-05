@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 62d531418e4729c34907cb65d446f89bfa60fb63
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608920"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754715"
 ---
 # <a name="platformmetadatadefaultmemberattribute-attribute"></a>Platform::metadata:: DefaultMemberAttribute özniteliği
 Birkaç olası aşırı yüklenmiş işlevleri çağırmak için tercih edilen işlev gösterir.  

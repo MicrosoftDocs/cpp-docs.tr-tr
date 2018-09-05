@@ -1,5 +1,5 @@
 ---
-title: Statement (C) sonu | Microsoft Docs
+title: Statement (C) kesme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,25 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 194e4c836f0423e20bb747cc6c3b06645c38a5fd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aeec33d61f21c34e52d582ebc3c0ef7313bb511f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381356"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755040"
 ---
 # <a name="break-statement-c"></a>break Deyimi (C)
 `break` deyimi, göründüğü en yakın kapsayan `do`, `for`, `switch` veya `while` deyiminin yürütülmesini sonlandırır. Denetim, sonlandırılmış deyimi takip eden deyime geçer.  
   
-## <a name="syntax"></a>Sözdizimi  
- *atlama deyimi*:  
- `break;`  
+## <a name="syntax"></a>Sözdizimi
+
+*atlama-deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**
   
- `break` deyimi, bir `switch` deyimi içinde belirli bir durumun işlenmesini sonlandırmak için sıkça kullanılır. Yinelemeli bir kapsayan veya `switch` deyimi olmaması bir hata oluşturur.  
+`break` deyimi, bir `switch` deyimi içinde belirli bir durumun işlenmesini sonlandırmak için sıkça kullanılır. Yinelemeli bir kapsayan veya `switch` deyimi olmaması bir hata oluşturur.  
   
- İç içe geçmiş deyimler içinde, `break` deyimi yalnızca hemen kendisini kapsayan `do`, `for`, `switch` veya `while` deyimini sonlandırır. Denetimi iç içe geçmiş yapının dışına aktarmak için bir `return` veya `goto` deyimini kullanabilirsiniz.  
+İç içe geçmiş deyimler içinde, `break` deyimi yalnızca hemen kendisini kapsayan `do`, `for`, `switch` veya `while` deyimini sonlandırır. Denetimi iç içe geçmiş yapının dışına aktarmak için bir `return` veya `goto` deyimini kullanabilirsiniz.  
   
- Bu örnekte, `break` deyimi gösterilmektedir:  
+Bu örnekte, `break` deyimi gösterilmektedir:  
   
 ```  
 #include <stdio.h>  
@@ -52,4 +53,4 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [break Deyimi](../cpp/break-statement-cpp.md)
+[break Deyimi](../cpp/break-statement-cpp.md)

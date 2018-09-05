@@ -17,47 +17,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c89d142254909591ebd01bfa859be5488cbfaf6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f7b782d7d53e5d97f08ebae62fc62d7a49c9f96d
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356625"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763662"
 ---
 # <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule sınıfı
-Bu sınıf, bir iş parçacığı havuza, modeli COM sunucusu uygular.  
-  
+
+Bu sınıf, apartman modeli iş parçacığı havuza, COM sunucu uygular.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `CAtlAutoThreadModule` türetilen [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) ve iş parçacığı havuza, modeli bir COM sunucusu uygular. `CAtlAutoThreadModule` kullanan [CComApartment](../../atl/reference/ccomapartment-class.md) modüldeki her bir iş parçacığı için bir grup yönetmek için.  
-  
- Kullanmalısınız [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) belirtmek için nesnenin sınıf tanımında makrosu [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) üreteci olarak. Türetilmiş bir sınıf tek bir örneğini sonra eklemelisiniz `CAtlAutoThreadModuleT` gibi `CAtlAutoThreadModule`. Örneğin:  
-  
- `CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`  
-  
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`CAtlAutoThreadModule` öğesinden türetilen [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) ve apartman modeli iş parçacığı havuza, COM sunucu uygular. `CAtlAutoThreadModule` kullanan [CComApartment](../../atl/reference/ccomapartment-class.md) modüldeki her bir iş parçacığı için bir grup yönetmek için.
+
+Kullanmalısınız [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-factory-macros.md#declare_classfactory_auto_thread) makrosu belirtmek için nesnenin sınıf tanımında [CComClassFactoryAutoThread](../../atl/reference/ccomclassfactoryautothread-class.md) sınıf üreteci olarak. Ardından tek bir türetilen bir sınıf örneği eklemelisiniz `CAtlAutoThreadModuleT` gibi `CAtlAutoThreadModule`. Örneğin:
+
+`CAtlAutoThreadModule _AtlAutoModule; // name is immaterial.`
+
 > [!NOTE]
->  Bu sınıf artık kullanılmıyor değiştirir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) sınıfı.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `IAtlAutoThreadModule`  
-  
- [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md)  
-  
- `CAtlAutoThreadModule`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlbase.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CAtlAutoThreadModuleT sınıfı](../../atl/reference/catlautothreadmodulet-class.md)   
- [IAtlAutoThreadModule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)   
- [Modül sınıfları](../../atl/atl-module-classes.md)
+>  Bu sınıf artık kullanılmıyor değiştirir [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) sınıfı.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`IAtlAutoThreadModule`
+
+[CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md)
+
+`CAtlAutoThreadModule`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlbase.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CAtlAutoThreadModuleT sınıfı](../../atl/reference/catlautothreadmodulet-class.md)   
+[Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Modül sınıfları](../../atl/atl-module-classes.md)

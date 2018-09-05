@@ -12,62 +12,48 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 936807fef6b74ccb081bf15d7314da14f064fb7a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e331661fc011fe0ab98a762f5c7081c35f06363c
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389120"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758485"
 ---
 # <a name="summary-of-tokens"></a>Belirteçlerin Özeti
-*belirteç*:  
- *Anahtar sözcüğü*  
-  
- *Tanımlayıcı*  
-  
- *sabiti*  
-  
- *dize değişmez değeri*  
-  
- *operator*  
-  
- `punctuator`  
-  
- *ön işleme belirteci*:  
- *üstbilgi adı*  
-  
- *Tanımlayıcı*  
-  
- *Gö numarası*  
-  
- *karakter sabiti*  
-  
- *dize değişmez değeri*  
-  
- *işleç noktalama işaretçisi*  
-  
- Yukarıdaki biri olamaz her renkleri boşluk karakteri  
-  
- *üstbilgi adı*:  
- **\<**  *yol spec***> "***yolu spec***"**   
-  
- *yol spec*:  
- Yasal dosya yolu  
-  
- *Gö numarası*:  
- *Basamak*  
-  
- **.** *Basamak*  
-  
- *Gö numarası basamak*  
-  
- *Gö numarası sayı olmayan*  
-  
- *Gö numarası***e***oturum*   
-  
- *Gö numarası***E***oturum*   
-  
- *Gö numarası***.**   
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)
+
+*belirteç*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Anahtar sözcüğü*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İşleci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Noktalama işaretçisi*
+
+*ön işleme belirteci*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*üst bilgi adı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*PP numarası*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*karakter sabiti*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*dize sabit değeri*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*işleç noktalama işaretçisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Yukarıdakilerden biri olamaz her boşluk olmayan karakter
+
+*üst bilgi adı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\<**  *PATH-spec*  **>**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**"***yol belirtimi***"** 
+
+*PATH-spec*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Geçerli dosya yolu
+
+*sayı PP*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**.** *basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* *basamak* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP* *rakam*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***e***oturum* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***E***oturum* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sayı PP***.** 
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

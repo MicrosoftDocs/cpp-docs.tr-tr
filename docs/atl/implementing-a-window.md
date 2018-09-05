@@ -1,5 +1,5 @@
 ---
-title: Bir pencere (ATL) uygulama | Microsoft Docs
+title: Pencere (ATL) uygulama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,24 +16,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f3e2663fa2e8c39bbd8b618d279a49b7eb29233
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f8712f5ab169838e94aa743a29dd4b73e5b0979f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357019"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762762"
 ---
-# <a name="implementing-a-window"></a>Bir pencere uygulama
-Sınıf [CWindowImpl](../atl/reference/cwindowimpl-class.md) bir pencere uygulamak ve kendi iletileri işlemek sağlar. ATL içinde teslim etme ileti üzerinde bir ileti eşlemesi temel alır. Bu bölümde açıklanmaktadır:  
-  
--   Nasıl yapılır [ileti işleyicisi ekleme](../atl/adding-an-atl-message-handler.md) bir denetime.  
-  
--   Ne [ileti eşlemeleri](../atl/message-maps-atl.md) olan ve bunları nasıl kullanacağınızı.  
-  
--   Sözdizimi [ileti işleyici işlevleri](../atl/message-handler-functions.md).  
-  
--   Nasıl yapılır [CWindowImpl penceresiyle uygulamak](../atl/implementing-a-window-with-cwindowimpl.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere sınıfları](../atl/atl-window-classes.md)
+# <a name="implementing-a-window"></a>Pencere uygulama
+
+Sınıf [Cwindowımpl](../atl/reference/cwindowimpl-class.md) pencere uygulamak ve kendi iletileri işleyen olanak tanır. ATL içinde teslim etme iletisi, ileti eşlemesi üzerinde temel alır. Bu bölümde açıklanmaktadır:
+
+- Nasıl yapılır [ileti işleyicisi ekleme](../atl/adding-an-atl-message-handler.md) bir denetime.
+
+- Hangi [ileti eşlemeleri](../atl/message-maps-atl.md) olan ve bunların nasıl kullanıldığı.
+
+- Sözdizimi [ileti işleyici işlevlerini](../atl/message-handler-functions.md).
+
+- Nasıl yapılır [Cwindowımpl ile pencere uygulama](../atl/implementing-a-window-with-cwindowimpl.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pencere sınıfları](../atl/atl-window-classes.md)
 

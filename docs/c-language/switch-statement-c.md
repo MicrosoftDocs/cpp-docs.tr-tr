@@ -16,110 +16,89 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fab1f385556346ff81f89e94d20c5f416ff67b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 71fa5ae717963d8ab2afc0b290bb42a3de72c0b6
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392165"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760363"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C)
-`switch` Ve **durumda** deyimleri Yardım denetim karmaşık koşullu ve dallanma işlemler. `switch` Deyimi deyimi kendi gövdesi içinde denetim aktarır.  
+`switch` Ve **çalışması** deyimleri Yardım denetimi karmaşık koşullu ya da dal oluşturma işlemleri. `switch` Deyimi denetimi kendi gövdesi içindeki bir ifade aktarır.  
   
-## <a name="syntax"></a>Sözdizimi  
- *Seçim deyimi*:  
- **geçiş (** *ifade* **)** *deyimi*  
+## <a name="syntax"></a>Sözdizimi
+
+*Seçimi deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*  
   
- *Etiketli deyim*:  
- **Servis talebi***sabit ifadesi***:***deyimi*   
+*Etiketli deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi***sabit-ifade***:***deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi*  
   
- **Varsayılan:***deyimi*   
+Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşleşen **geçiş (** *ifade* **)**. `switch` Deyimi herhangi bir sayıda içerebilir **çalışması** örnekleri, ancak hiçbir iki büyük/küçük harf sabitleri aynı `switch` deyimi aynı değere sahip olabilir. Deyim gövdesinin yürütülmesini seçili ifadede başlar ve gövde veya kadar sonuna kadar devam eder. bir **sonu** denetimi gövdenin dışında deyime aktarır.  
   
- Denetim geçirir ifadesine özelliği **durum** *sabit ifadesi* değeri ile eşleşen **geçiş (** *ifade* **)**. `switch` Deyimi herhangi bir sayıda içerebilir **durum** örnekleri, ancak aynı içinde iki bir servis talebi sabit yok `switch` deyimi aynı değere sahip olabilir. Yürütme deyimi gövdesinin seçili ifadesine başlar ve gövde veya kadar sonuna kadar devam eder bir **sonu** deyimi denetimi gövdesi dışında aktarır.  
-  
- Kullanımı `switch` deyimi genellikle arar aşağıdakine benzer:  
-  
- `switch` ( *ifade* )  
-  
- **{**  
-  
- *Bildirimleri*  
-  
- biçimindeki telefon numarasıdır.  
-  
- biçimindeki telefon numarasıdır.  
-  
- biçimindeki telefon numarasıdır.  
-  
- **Servis talebi** *sabit ifadesi* **:**  
-  
- *ifade eşitse yürütülen deyimleri*  
-  
- *Bu sabit ifadesi değeri*  
-  
- biçimindeki telefon numarasıdır.  
-  
- biçimindeki telefon numarasıdır.  
-  
- biçimindeki telefon numarasıdır.  
-  
- **BREAK;**  
-  
- **Varsayılan:**  
-  
- *ifade eşit olmadığı durumlarda yürütülen deyimleri*  
-  
- *herhangi büyük bir sabit ifade*  
-  
- **}**  
-  
- Kullanabileceğiniz **sonu** deyimi içinde belirli bir durumu işlenmesi sona erdirmek için `switch` deyimi ve sonuna dala `switch` deyimi. Olmadan **sonu**, sonraki durumuna kadar ifadeler çalıştırmasını program devam bir **sonu** veya deyim sonuna ulaşıldı. Bazı durumlarda, bu devamlılık istenebilir.  
-  
- **Varsayılan** deyimi yoksa yürütüldüğünde **durum** *sabit ifadesi* değerine eşit olan **geçiş (**  *ifade* **)**. Varsa **varsayılan** deyimi atlanırsa ve hiçbir **durum** eşleşme bulunduğunda, ifadeler hiçbiri `switch` gövde çalıştırılır. En çok bir olabilir **varsayılan** deyimi. **Varsayılan** deyimi sonunda değil gelen; gövdesinde herhangi bir yerde görünebilir `switch` deyimi. A **durum** veya **varsayılan** etiketi içinde yalnızca görünebilir bir `switch` deyimi.  
-  
- Türü `switch` *ifade* ve **durum** *sabit ifadesi* tam sayı olması gerekir. Her değeri **durum** *sabit ifadesi* deyimi gövdesi içinde benzersiz olmalıdır.  
-  
- **Durum** ve **varsayılan** etiketleri `switch` deyimi gövde yürütme deyiminin gövdesinde başladığı belirleyen ilk test önemli. Switch ifadeleri iç içe. Tüm statik değişkenler hiçbir yürütmeden önce başlatılır `switch` deyimleri.  
-  
+Kullanım `switch` deyimi genellikle görünür aşağıdakine benzer:  
+
+**geçiş** ( *ifade* )  
+**{**  
+&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimleri*  
+&nbsp;&nbsp;&nbsp;&nbsp;/\* . biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır. \*/  
+&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi** *sabit-ifade* **:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* ifade eşitse yürütülen deyimleri \*/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* Bu sabit-ifade değeri \*/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:**  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* ifade eşit olmadığı durumlarda yürütülen deyimleri \*/  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* büyük/küçük harf tüm sabit-ifade \*/  
+**}**
+
+Kullanabileceğiniz **sonu** deyimi içinde belirli bir durumun işlenmesini sonlandırmak için `switch` deyimi ve dal sonuna `switch` deyimi. Olmadan **sonu**, program sonraki durumuna kadar deyim yürütmeye devam eder bir **sonu** veya deyimin sonuna ulaşıldı. Bazı durumlarda, bu devamlılık istenebilir.
+
+**Varsayılan** hiçbir deyimi yürütüldüğünde **çalışması** *sabit-ifade* değerine eşittir **geçiş (**  *ifade* **)**. Varsa **varsayılan** deyimi atlanırsa ve hiçbir **çalışması** eşleşme bulunduğunda deyimlerinde hiçbiri `switch` gövdesi yürütülür. En fazla bir olabilir **varsayılan** deyimi. **Varsayılan** deyimi sonunda değil gelmesi; gövdesinde her yerde görünebilir `switch` deyimi. A **çalışması** veya **varsayılan** etiketi içinde yalnızca görüntülenebilir bir `switch` deyimi.
+
+Türünü `switch` *ifade* ve **çalışması** *sabit-ifade* tam sayı olmalıdır. Her değer **çalışması** *sabit-ifade* deyim gövdesi içinde benzersiz olmalıdır.
+
+**Çalışması** ve **varsayılan** etiketlerini `switch` deyim gövdesi yürütme deyiminin gövdesinde başladığı belirleyen ilk test önemlidir. Switch deyimleri iç içe olabilir. Statik değişkenlerin hiçbir yürütmeden önce başlatılır `switch` deyimleri.
+
 > [!NOTE]
->  Bildirimleri bileşik deyim oluşturan başı görünür `switch` gövde ancak bildirimlerinde dahil başlatmaları yapılmaz. `switch` Deyimi doğrudan başlatmaları içeren satırları atlayarak gövdesi içinde yürütülebilir bir ifade için Denetim aktarır.  
+> Bildirimleri oluşturan bileşik deyim, kafası görünür `switch` gövdesi, ancak bildirimlerinde dahil başlatmalar yapılmaz. `switch` Deyime başlatmalar içeren satırları atlayarak gövdesi içindeki yürütülebilir bir deyimin için doğrudan denetim aktarır.
+
+Aşağıdaki örnekler gösterir `switch` ifadeleri:
+
+```C
+switch( c )
+{
+    case 'A':
+        capa++;
+    case 'a':
+        lettera++;
+    default :
+        total++;
+}
+```
+
+Tüm üç deyimi `switch` , bu örnekte gövdesi yürütülür `c` eşittir `'A'` bu yana bir **sonu** deyimi, önce aşağıdaki durum görünmez. Yürütme denetimi, ilk deyime aktarılır (`capa++;`) ve gövde kalanında sırayla devam eder. Varsa `c` eşittir `'a'`, `lettera` ve `total` artırılır. Yalnızca `total` artırılır `c` eşit değildir `'A'` veya `'a'`.
+
+```C
+switch( i )
+{
+    case -1:
+        n++;
+        break;
+    case 0 :
+        z++;
+        break;
+    case 1 :
+        p++;
+        break;
+}
+```
+
+Bu örnekte, bir **sonu** deyimi takip eden her deyiminin `switch` gövdesi. **Sonu** deyimi bir deyim yürütüldükten sonra gelen deyim gövdesi bir çıkış zorlar. Varsa `i` -1 olarak, yalnızca eşittir `n` artırılır. **Sonu** deyiminin sonrasındaki `n++;` yürütme denetimi, deyim gövdesi dışında kalan deyimleri atlayarak geçmesine neden olur. Benzer şekilde, varsa `i` 0 olarak, yalnızca eşittir `z` ; artırılır `i` 1, yalnızca eşittir `p` artırılır. En son **sonu** deyimi kesinlikle gerekli olmadığı, dışı denetim geçer beri bileşik deyim, ancak daha uçtaki gövdesi tutarlılık sağlamak için dahil edilmiştir.  
   
- Aşağıdaki örnekler göstermektedir `switch` deyimleri:  
+Tek bir deyimde birden çok gerçekleştirebilirsiniz **çalışması** etiketleri, aşağıdaki örnekte gösterildiği gibi:  
   
-```  
-switch( c )   
-{  
-    case 'A':  
-        capa++;  
-    case 'a':  
-        lettera++;  
-    default :  
-        total++;  
-}  
-```  
-  
- Tüm üç bilgilerinin `switch` Bu örnek gövdesinde çalışıp çalışmadığını `c` eşittir `'A'` bu yana bir **sonu** deyimi önce şu durumda görünmez. Yürütme denetimi ilk ifadesine transfer (`capa++;`) ve gövde kalanında sırayla devam eder. Varsa `c` eşittir `'a'`, `lettera` ve `total` artırılır. Yalnızca `total` olmazsa artırılır `c` eşit değil `'A'` veya `'a'`.  
-  
-```  
-switch( i )   
-{  
-    case -1:  
-        n++;  
-        break;  
-    case 0 :  
-        z++;  
-        break;  
-    case 1 :  
-        p++;  
-        break;  
-}  
-```  
-  
- Bu örnekte, bir **sonu** deyimi izleyen her deyiminin `switch` gövdesi. **Sonu** deyimi bir deyim yürütüldükten sonra bir çıkış deyimi gövdesinden zorlar. Varsa `i` -1 olarak, yalnızca eşittir `n` artırılır. **Sonu** deyiminden `n++;` yürütme denetimi kalan ifadeler atlayarak deyimi gövde dışında geçmesine neden olur. Benzer şekilde, varsa `i` 0 olarak yalnızca eşittir `z` ; olmazsa artırılır `i` 1'e, yalnızca eşittir `p` artırılır. En son **sonu** deyimi kesinlikle gerekli değildir, dışı denetim geçirir beri bileşik deyim, ancak sonunda gövde tutarlılık için eklenmiştir.  
-  
- Tek bir deyimde birden çok taşıyabilir **durumda** etiketleri, aşağıdaki örnekte gösterildiği gibi:  
-  
-```  
+```C
 case 'a' :  
 case 'b' :  
 case 'c' :  
@@ -128,15 +107,16 @@ case 'e' :
 case 'f' :  hexcvt(c);  
 ```  
   
- Bu örnekte, *sabit ifadesi* arasında herhangi bir harf eşittir `'a'` ve `'f'`, `hexcvt` işlevi çağrılır.  
+Bu örnekte, *sabit-ifade* arasında herhangi bir harf eşittir `'a'` ve `'f'`, `hexcvt` işlevi çağrılır.  
   
- **Microsoft özel**  
+**Microsoft'a özgü**  
   
- Microsoft C case değerlerini sayısını sınırlamaz bir `switch` deyimi. Yalnızca kullanılabilir bellek ile sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin verilmeyecek bir `switch` deyimi.  
+Microsoft C, durum değeri sayısını sınırlamaz bir `switch` deyimi. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin bir `switch` deyimi.  
   
- Microsoft C için Microsoft uzantıları etkinleştirildiğini varsayılandır. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneği kullanın.  
+Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneğini kullanın.  
   
- **SON Microsoft özel**  
+**END Microsoft özgü**  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

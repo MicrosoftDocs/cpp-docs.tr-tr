@@ -14,98 +14,101 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5636f92df42116b838c24c21d81f0b320f7d69c1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3bb07807934dcc5c665f0058ef869f62f0b2d3ea
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358120"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755430"
 ---
 # <a name="active-template-library-atl-concepts"></a>Etkin Şablon Kitaplığı (ATL) Kavramlar
-Etkin Şablon kitaplığı (ATL), küçük, hızlı Bileşen Nesne Modeli (COM) nesnelerini oluşturmanıza olanak tanıyan şablona dayalı C++ sınıflar kümesidir. Stok uygulamaları, çift arabirimler, standart COM Numaralandırıcı arabirimleri, bağlantı noktaları, etiketleri arabirimleri ve ActiveX denetimleri gibi anahtar COM özellik için özel desteğe sahiptir.  
-  
- ATL programlama çok bunu yaparsanız, yeni bir COM programlama basitleştirmek üzere tasarlanmış Visual C++ .NET özellik öznitelikler hakkında daha fazla bilgi isteyeceksiniz. Daha fazla bilgi için bkz: [Öznitelikli Programlama](../windows/attributed-programming-concepts.md).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
- Bir denetimin oluşturulmasını müşteri adayları ve bazı ATL temelleri işleminde gösterir.  
-  
- [COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)  
- Bileşen Nesne Modeli (COM) arkasında önemli kavramları tanıtır. Bu makalede, ATL nedir ve ne zaman kullanmanız de kısaca açıklanmaktadır.  
-  
- [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)  
- Çeşitli ATL sınıfları ve bu sınıfların nasıl uygulandığını arasındaki ilişkiyi açıklar.  
-  
- [Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)  
- Çift arabirimler ATL açısından açıklar.  
-  
- [ATL Koleksiyonları ve Numaralandırıcıları](../atl/atl-collections-and-enumerators.md)  
- Uygulama ve Koleksiyonlar ve numaralandırmalar ATL içinde oluşturulmasını açıklar  
-  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)  
- Bileşik denetim oluşturmak için adım adım yönergeler sağlar. Bileşik Denetim diğer ActiveX denetimleri veya Windows denetimlerini içerebilir ActiveX denetimi türüdür.  
-  
- [ATL Denetim Kapsamı SSS](../atl/atl-control-containment-faq.md)  
- ATL denetimleriyle barındırma ile ilgili temel soruları kapsar  
-  
- [ATL COM Özellik Sayfaları](../atl/atl-com-property-pages.md)  
- Belirtin ve COM özellik sayfaları uygulamak gösterilmiştir.  
-  
- [DHTML Denetimleri için ATL Desteği](../atl/atl-support-for-dhtml-controls.md)  
- DHTML denetimi oluşturmak için adım adım yönergeler sağlar.  
-  
- [ATL Bağlantı Noktaları](../atl/atl-connection-points.md)  
- Bağlantı noktaları nelerdir ve ATL bunları nasıl uyguladığını açıklanmaktadır.  
-  
- [Olay İşleme ve ATL](../atl/event-handling-and-atl.md)  
- ATL'ın kullanarak COM olayları işlemek için atmanız gereken adımları açıklar [IDispEventImpl](../atl/reference/idispeventimpl-class.md) ve [IDispEventSimpleImpl](../atl/reference/idispeventsimpleimpl-class.md) sınıfları.  
-  
- [ATL ve Ücretsiz İş Parçacıklı Sıralayıcı](../atl/atl-and-the-free-threaded-marshaler.md)  
- Ayrıntılar ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak sınıfınız veren ATL Basit Nesne sihirbazın seçeneği sağlar.  
-  
- [Projenin iş parçacıklı Model belirtme](../atl/specifying-the-threading-model-for-a-project-atl.md)  
- Projenizde iş parçacığı için ilgili çalışma zamanı performans denetlemek kullanılabilir makroları açıklar.  
-  
- [ATL Modül Sınıfları](../atl/atl-module-classes.md)  
- Yeni modül sınıfları ATL 7.0 için açıklanır. ATL tarafından gereken temel işlevleri modül sınıfları uygulama  
-  
- [ATL Hizmetleri](../atl/atl-services.md)  
- Bir hizmet uygulandığında oluşan olaylar dizisini kapsar. Ayrıca konuşmaları bazı hizmet geliştirme ile ilgili kavramları hakkında.  
-  
- [ATL Pencere Sınıfları](../atl/atl-window-classes.md)  
- Nasıl oluşturulacağını, sınıf ve ATL alt windows açıklar ATL pencere sınıfları COM sınıfları değildir.  
-  
- [ATL Koleksiyon Sınıfları](../atl/atl-collection-classes.md)  
- Diziler kullanmayı açıklar ve ATL içinde eşler  
-  
- [ATL kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)  
- ATL sözdizimi ve değiştirilebilir parametreler komut dosyası açıklanmaktadır. Ayrıca, kayıt için statik bir bağlantı ayarlamak nasıl açıklar.  
-  
- [ATL ve C Çalışma Zamanı Koduyla Programlama](../atl/programming-with-atl-and-c-run-time-code.md)  
- C çalışma zamanı kitaplığı (CRT) statik veya dinamik olarak bağlama yararlarını açıklar.  
-  
- [CComBSTR ile programlama](../atl/programming-with-ccombstr-atl.md)  
- İle programlama olduğunda dikkat gerektiren birkaç durumlar açıklanmaktadır `CComBSTR`.  
-  
- [Kodlama başvurusu](../atl/atl-encoding-reference.md)  
- İşlevler ve kodlama, ortak Internet standartları uuencode, onaltılık gibi bir dizi ve UTF8 içinde atlenc.h desteği makroları sağlar.  
-  
- [Yardımcı programlar başvurusu](../atl/atl-utilities-reference.md)  
- Yolları ve URL'ler biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), kendi uygulamalarında kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [ATL örnekleri](../visual-cpp-samples.md)  
- Açıklamaları ve ATL örnek programlar için bağlantılar sağlar.  
-  
- [ATL Projesi Oluşturma](../atl/reference/creating-an-atl-project.md)  
- ATL Proje Sihirbazı hakkında bilgi içerir.  
-  
- [ATL Denetimi Sihirbazı](../atl/reference/atl-control-wizard.md)  
- Sınıf eklemek nasıl ele alınmaktadır.  
-  
- [Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  
- COM programlama artı daha ayrıntılı konulara bağlantılar listesini basitleştirmek için öznitelikleri kullanma hakkında genel bir bakış sağlar.  
-  
- [ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)  
- Başvuru bilgileri ve ATL sınıfları için bağlantılar sağlar.
+
+Etkin Şablon kitaplığı (ATL), küçük, hızlı Bileşen Nesne Modeli (COM) nesnelerini oluşturmanıza olanak sağlayan şablon tabanlı C++ sınıfları kümesidir. Kalıp uygulamalar, ikili arabirimler, standart COM Numaralandırıcı arabirimleri, bağlantı noktaları, etiket arabirimleri ve ActiveX denetimleri de dahil olmak üzere anahtar COM özellikleri için özel destek var.
+
+ATL programlama birçok bunu yaparsanız, daha yeni bir özellik, COM programlama basitleştirmek için tasarlanmış Visual C++ .NET öznitelikleri hakkında bilgi edinmek isteyeceksiniz. Daha fazla bilgi için [Öznitelikli Programlama](../windows/attributed-programming-concepts.md).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
+Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.
+
+[COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)  
+Bileşen Nesne Modeli (COM) arkasında önemli kavramlar tanıtılmaktadır. Bu makalede, ATL nedir ve hangi durumlarda kullanmalıdır de kısaca açıklanmaktadır.
+
+[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)  
+Çeşitli ATL sınıfları ve bu sınıfların nasıl uygulandığını arasındaki ilişkiyi açıklar.
+
+[Çift Arabirimler ve ATL](../atl/dual-interfaces-and-atl.md)  
+ATL açısından ikili arabirimler açıklanmaktadır.
+
+[ATL Koleksiyonları ve Numaralandırıcıları](../atl/atl-collections-and-enumerators.md)  
+Uygulama ve koleksiyonları ve numaralandırıcıları ATL içinde oluşturulmasını açıklar
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)  
+Bileşik denetim oluşturmak için adım adım yönergeler sağlar. Bileşik Denetim, diğer ActiveX denetimlerini veya Windows denetimlerini içerebilen ActiveX denetiminin bir türdür.
+
+[ATL Denetim Kapsamı SSS](../atl/atl-control-containment-faq.md)  
+ATL denetimleriyle barındırma ile ilgili temel soruları kapsar
+
+[ATL COM Özellik Sayfaları](../atl/atl-com-property-pages.md)  
+Belirtin ve COM özellik sayfaları uygulama işlemi gösterilmektedir.
+
+[DHTML Denetimleri için ATL Desteği](../atl/atl-support-for-dhtml-controls.md)  
+DHTML denetimi oluşturmak için adım adım yönergeler sağlar.
+
+[ATL Bağlantı Noktaları](../atl/atl-connection-points.md)  
+Bağlantı noktaları nelerdir ve ATL bunları nasıl uyguladığını açıklanmaktadır.
+
+[Olay İşleme ve ATL](../atl/event-handling-and-atl.md)  
+ATL kullanarak COM olayları işlemek için atmanız gereken adımları açıklar [Idispeventımpl](../atl/reference/idispeventimpl-class.md) ve [Idispeventsimpleımpl](../atl/reference/idispeventsimpleimpl-class.md) sınıfları.
+
+[ATL ve Ücretsiz İş Parçacıklı Sıralayıcı](../atl/atl-and-the-free-threaded-marshaler.md)  
+Ayrıntılar sağlayan ücretsiz iş parçacıklı sıralayıcı (FTM) toplamak kendi sınıfınızı ATL Basit Nesne Sihirbazı'nın seçeneği sağlar.
+
+[Projenin iş parçacıklı Model belirtme](../atl/specifying-the-threading-model-for-a-project-atl.md)  
+Projenizde iş parçacığı için ilgili çalışma zamanı performansını denetlemek kullanılabilen makroları tanımlar.
+
+[ATL Modül Sınıfları](../atl/atl-module-classes.md)  
+Yeni modül sınıfları için ATL 7.0 açıklanır. Modül sınıfları tarafından ATL gerekli temel işlevlerini uygulamak
+
+[ATL Hizmetleri](../atl/atl-services.md)  
+Bir hizmet uygulandığında gerçekleşen olaylar dizisini kapsar. Ayrıca bazı hizmet geliştirme ile ilgili kavramları hakkında konuşuyor.
+
+[ATL Pencere Sınıfları](../atl/atl-window-classes.md)  
+Nasıl oluşturulacağını, üst ve alt windows ATL içinde açıklar ATL pencere sınıfları, COM sınıfları değildir.
+
+[ATL Koleksiyon Sınıfları](../atl/atl-collection-classes.md)  
+Dizi kullanmayı açıklar ve ATL içinde eşler
+
+[ATL kayıt defteri bileşeni (Kaydedici)](../atl/atl-registry-component-registrar.md)  
+ATL söz dizimi ve değiştirilebilir parametreler açıklanmaktadır. Ayrıca, kayıt şirketi statik bağlantı ayarlama olunacağı açıklanmaktadır.
+
+[ATL ve C Çalışma Zamanı Koduyla Programlama](../atl/programming-with-atl-and-c-run-time-code.md)  
+C çalışma zamanı kitaplığı (CRT) statik veya dinamik olarak bağlama avantajları anlatılmaktadır.
+
+[CComBSTR ile programlama](../atl/programming-with-ccombstr-atl.md)  
+Programlama yaparken dikkat gerektiren birkaç durum anlatılmaktadır `CComBSTR`.
+
+[Kodlama başvurusu](../atl/atl-encoding-reference.md)  
+İşlevlerle makrolar kodlama, bir dizi onaltılık uuencode gibi ortak Internet standartları ve UTF8 atlenc.h içinde desteği sağlar.
+
+[Yardımcı programları başvurusu](../atl/atl-utilities-reference.md)  
+Yollar ve URL'leri biçiminde işlemek için kod sağlar [CPathT](../atl/reference/cpatht-class.md) ve [CUrl](../atl/reference/curl-class.md). İş parçacığı havuzu [CThreadPool](../atl/reference/cthreadpool-class.md), kendi uygulamalarında kullanılabilir. Bu kod, atlpath.h ve atlutil.h bulunabilir.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[ATL örnekleri](../visual-cpp-samples.md)  
+Açıklamaları ve örnek ATL programları için bağlantılar sağlar.
+
+[ATL Projesi Oluşturma](../atl/reference/creating-an-atl-project.md)  
+ATL projesi Sihirbazı hakkında bilgi içerir.
+
+[ATL Denetimi Sihirbazı](../atl/reference/atl-control-wizard.md)  
+Nasıl sınıf ekleneceğini açıklar.
+
+[Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  
+COM programlama yanı sıra daha ayrıntılı konulara bağlantılar listesini basitleştirmek için öznitelikleri kullanma hakkında genel bir bakış sağlar.
+
+[ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)  
+Başvuru bilgileri ve ATL sınıfları için bağlantılar sağlar.
 

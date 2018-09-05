@@ -23,18 +23,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d67f00b88be88e1cb2691414b0666bd298977dd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a3e0ac7cf3a5448a2963aa92c2e275be796c895d
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220186"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758345"
 ---
 # <a name="iprovideclassinfo2impl-class"></a>Iprovideclassınfo2ımpl sınıfı
-Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ve [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) yöntemleri.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıfın bir varsayılan uygulamayı sağlar [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ve [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) yöntemleri.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <const CLSID* pcoclsid,
     const IID* psrcid,
@@ -42,103 +43,116 @@ template <const CLSID* pcoclsid,
     WORD wMajor = 1,
     WORD wMinor = 0, class tihclass = CComTypeInfoHolder>  
 class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *pcoclsid*  
- Coclass tanımlayıcısı için bir işaretçi.  
-  
- *psrcid*  
- Coclass varsayılan dispinterface giden tanımlayıcısı için bir işaretçi.  
-  
- *plibid*  
- Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.  
-  
- *wMajor*  
- Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.  
-  
- *wMinor*  
- Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.  
-  
- *tihclass*  
- Coclass tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` şeklindedir.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="constructors"></a>Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](#iprovideclassinfo2impl)|Oluşturucu.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[IProvideClassInfo2Impl::GetClassInfo](#getclassinfo)|Alır bir `ITypeInfo` coclass tür bilgileri işaretçisi.|  
-|[IProvideClassInfo2Impl::GetGUID](#getguid)|Nesnenin giden dispinterface GUID'ini alır.|  
-  
-### <a name="protected-data-members"></a>Korumalı veri üyeleri  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[IProvideClassInfo2Impl::_tih](#_tih)|Coclass'ı için tür bilgilerini yönetir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- [IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) arabirimini genişletir [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ekleyerek `GetGUID` yöntemi. Bir istemci kendi varsayılan olay kümesi için bir nesnenin giden arabirim IID'si almak bu yöntem sağlar. Sınıf `IProvideClassInfo2Impl` bir varsayılan uygulamayı sağlar `IProvideClassInfo` ve `IProvideClassInfo2` yöntemleri.  
-  
- `IProvideClassInfo2Impl` statik bir üye türü içeren `CComTypeInfoHolder` , coclass'ı için tür bilgilerini yönetir.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `IProvideClassInfo2`  
-  
- `IProvideClassInfo2Impl`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcom.h  
-  
-##  <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo  
- Alır bir `ITypeInfo` coclass tür bilgileri işaretçisi.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*pcoclsid*  
+Coclass tanımlayıcısı için bir işaretçi.
+
+*psrcid*  
+Coclass varsayılan dispinterface giden tanımlayıcısı için bir işaretçi.
+
+*plibid*  
+Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.
+
+*wMajor*  
+Tür kitaplığının ana sürümü. Varsayılan değer 1’dir.
+
+*wMinor*  
+Tür kitaplığının bir alt sürümü. Varsayılan değer 0’dır.
+
+*tihclass*  
+Coclass tür bilgilerini yönetmek için kullanılan sınıf. Varsayılan değer `CComTypeInfoHolder` şeklindedir.
+
+## <a name="members"></a>Üyeler
+
+### <a name="constructors"></a>Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[IProvideClassInfo2Impl::IProvideClassInfo2Impl](#iprovideclassinfo2impl)|Oluşturucu.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[IProvideClassInfo2Impl::GetClassInfo](#getclassinfo)|Alır bir `ITypeInfo` coclass tür bilgileri işaretçisi.|
+|[IProvideClassInfo2Impl::GetGUID](#getguid)|Nesnenin giden dispinterface GUID'ini alır.|
+
+### <a name="protected-data-members"></a>Korumalı veri üyeleri
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[IProvideClassInfo2Impl::_tih](#_tih)|Coclass'ı için tür bilgilerini yönetir.|
+
+## <a name="remarks"></a>Açıklamalar
+
+[IProvideClassInfo2](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo2) arabirimini genişletir [Iprovideclassınfo](/windows/desktop/api/ocidl/nn-ocidl-iprovideclassinfo) ekleyerek `GetGUID` yöntemi. Bir istemci kendi varsayılan olay kümesi için bir nesnenin giden arabirim IID'si almak bu yöntem sağlar. Sınıf `IProvideClassInfo2Impl` bir varsayılan uygulamayı sağlar `IProvideClassInfo` ve `IProvideClassInfo2` yöntemleri.
+
+`IProvideClassInfo2Impl` statik bir üye türü içeren `CComTypeInfoHolder` , coclass'ı için tür bilgilerini yönetir.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`IProvideClassInfo2`
+
+`IProvideClassInfo2Impl`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcom.h
+
+##  <a name="getclassinfo"></a>  IProvideClassInfo2Impl::GetClassInfo
+
+Alır bir `ITypeInfo` coclass tür bilgileri işaretçisi.
+
 ```
 STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IProvideClassInfo::GetClassInfo](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) Windows SDK içinde.  
-  
-##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID  
- Nesnenin giden dispinterface GUID'ini alır.  
-  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IProvideClassInfo::GetClassInfo](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) Windows SDK içinde.
+
+##  <a name="getguid"></a>  IProvideClassInfo2Impl::GetGUID
+
+Nesnenin giden dispinterface GUID'ini alır.
+
 ```
 STDMETHOD(GetGUID)(
     DWORD dwGuidKind,
     GUID* pGUID);
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IProvideClassInfo2::GetGUID](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) Windows SDK içinde.  
-  
-##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl  
- Oluşturucu.  
-  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IProvideClassInfo2::GetGUID](/windows/desktop/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) Windows SDK içinde.
+
+##  <a name="iprovideclassinfo2impl"></a>  IProvideClassInfo2Impl::IProvideClassInfo2Impl
+
+Oluşturucu.
+
 ```
 IProvideClassInfo2Impl();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Çağrıları `AddRef` üzerinde [_tih](#_tih) üyesi. Yıkıcı çağrıları `Release`.  
-  
-##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih  
- Bu statik veri üyesi sınıfı şablon parametresi örneğidir *tihclass*, varsayılan olarak `CComTypeInfoHolder`.  
-  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Çağrıları `AddRef` üzerinde [_tih](#_tih) üyesi. Yıkıcı çağrıları `Release`.
+
+##  <a name="_tih"></a>  IProvideClassInfo2Impl::_tih
+
+Bu statik veri üyesi sınıfı şablon parametresi örneğidir *tihclass*, varsayılan olarak `CComTypeInfoHolder`.
+
 ```
 static  tihclass
     _tih;
-```     
-  
-### <a name="remarks"></a>Açıklamalar  
- `_tih` Coclass'ı için tür bilgilerini yönetir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+`_tih` Coclass'ı için tür bilgilerini yönetir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -22,193 +22,219 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe4ddaab8de2369c7cb1b31132f686bc6037676b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 45e4b8fe74355d99258677fd4746ad2461f508d3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205531"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757809"
 ---
 # <a name="ccomclassfactory2-class"></a>CComClassFactory2 sınıfı
-Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıfın uyguladığı [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) arabirimi.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <class license>  
 class CComClassFactory2 : public IClassFactory2,
     public CComObjectRootEx<CComGlobalsThreadModel>,
     public license
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *Lisans*  
- Aşağıdaki statik işlevler uygulayan bir sınıf:  
-  
-- `static BOOL VerifyLicenseKey( BSTR bstr );`  
-  
-- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`  
-  
-- `static BOOL IsLicenseValid( );`  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CComClassFactory2::CreateInstance](#createinstance)|Belirtilen CLSID'yi bir nesne oluşturur.|  
-|[CComClassFactory2::CreateInstanceLic](#createinstancelic)|Bir lisans anahtarı, belirtilen CLSID'yi bir nesne oluşturur.|  
-|[CComClassFactory2::GetLicInfo](#getlicinfo)|Sınıf üreteci lisans özelliklerini açıklayan bilgileri alır.|  
-|[CComClassFactory2::LockServer](#lockserver)|Sınıf üreteci bellekte kilitler.|  
-|[CComClassFactory2::RequestLicKey](#requestlickey)|Oluşturur ve bir lisans anahtarı döndürür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `CComClassFactory2` uygulayan [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) uzantısıdır arabirimi, [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.  
-  
- ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:  
-  
- [!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/ccomclassfactory2-class_1.h)]  
-  
- `CMyLicense`, şablon parametresi olarak `CComClassFactory2`, statik işlevler uygulamalıdır `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`. Aşağıdaki basit lisans sınıfının bir örneğidir:  
-  
- [!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/ccomclassfactory2-class_2.h)]  
-  
- `CComClassFactory2` hem türetilen `CComClassFactory2Base` ve *lisans*. `CComClassFactory2Base`, sırasıyla türetildiği `IClassFactory2` ve `CComObjectRootEx< CComGlobalsThreadModel >`.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CComObjectRootBase`  
-  
- `license`  
-  
- [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)  
-  
- `IClassFactory2`  
-  
- `CComClassFactory2`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcom.h  
-  
-##  <a name="createinstance"></a>  CComClassFactory2::CreateInstance  
- Belirtilen CLSID'yi bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*Lisans*  
+Aşağıdaki statik işlevler uygulayan bir sınıf:
+
+- `static BOOL VerifyLicenseKey( BSTR bstr );`
+
+- `static BOOL GetLicenseKey( DWORD dwReserved, BSTR * pBstr );`
+
+- `static BOOL IsLicenseValid( );`
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CComClassFactory2::CreateInstance](#createinstance)|Belirtilen CLSID'yi bir nesne oluşturur.|
+|[CComClassFactory2::CreateInstanceLic](#createinstancelic)|Bir lisans anahtarı, belirtilen CLSID'yi bir nesne oluşturur.|
+|[CComClassFactory2::GetLicInfo](#getlicinfo)|Sınıf üreteci lisans özelliklerini açıklayan bilgileri alır.|
+|[CComClassFactory2::LockServer](#lockserver)|Sınıf üreteci bellekte kilitler.|
+|[CComClassFactory2::RequestLicKey](#requestlickey)|Oluşturur ve bir lisans anahtarı döndürür.|
+
+## <a name="remarks"></a>Açıklamalar
+
+`CComClassFactory2` uygulayan [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2) uzantısıdır arabirimi, [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2` bir lisans ile denetimleri nesne oluşturma. Bir sınıf üreteci lisanslı bir makinede çalıştırma, bir çalışma zamanı lisans anahtarı sağlayabilir. Bu lisans anahtarı tam makine lisans yoksa nesneleri somutlaştırmak bir uygulama sağlar.
+
+ATL nesneleri normalde türetilen bir sınıf üreteci almak [CComCoClass](../../atl/reference/ccomcoclass-class.md). Bu sınıf makro içerir [DECLARE_CLASSFACTORY](aggregation-and-class-factory-macros.md#declare_classfactory), hangi bildirir [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) olarak varsayılan sınıf üreteci. Kullanılacak `CComClassFactory2`, belirtin [DECLARE_CLASSFACTORY2](aggregation-and-class-factory-macros.md#declare_classfactory2) makrosu, nesnenin sınıf tanımında. Örneğin:
+
+[!code-cpp[NVC_ATL_COM#2](../../atl/codesnippet/cpp/ccomclassfactory2-class_1.h)]
+
+`CMyLicense`, şablon parametresi olarak `CComClassFactory2`, statik işlevler uygulamalıdır `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`. Aşağıdaki basit lisans sınıfının bir örneğidir:
+
+[!code-cpp[NVC_ATL_COM#3](../../atl/codesnippet/cpp/ccomclassfactory2-class_2.h)]
+
+`CComClassFactory2` hem türetilen `CComClassFactory2Base` ve *lisans*. `CComClassFactory2Base`, sırasıyla türetildiği `IClassFactory2` ve `CComObjectRootEx< CComGlobalsThreadModel >`.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CComObjectRootBase`
+
+`license`
+
+[CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)
+
+`IClassFactory2`
+
+`CComClassFactory2`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcom.h
+
+##  <a name="createinstance"></a>  CComClassFactory2::CreateInstance
+
+Belirtilen CLSID'yi bir nesne oluşturur ve bu nesne için bir arabirim işaretçisi alır.
+
 ```
 STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pUnkOuter*  
- [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.  
-  
- *riid*  
- [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.  
-  
- *ppvObj*  
- [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Makine tam olarak lisanslanması gerekir. Tam makine lisans yoksa çağrı [CreateInstanceLic](#createinstancelic).  
-  
-##  <a name="createinstancelic"></a>  CComClassFactory2::CreateInstanceLic  
- Benzer şekilde [CreateInstance](#createinstance)dışında `CreateInstanceLic` bir lisans anahtarı gerektirir.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pUnkOuter*  
+[in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
+
+*riid*  
+[in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
+
+*ppvObj*  
+[out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT değerini.
+
+### <a name="remarks"></a>Açıklamalar
+
+Makine tam olarak lisanslanması gerekir. Tam makine lisans yoksa çağrı [CreateInstanceLic](#createinstancelic).
+
+##  <a name="createinstancelic"></a>  CComClassFactory2::CreateInstanceLic
+
+Benzer şekilde [CreateInstance](#createinstance)dışında `CreateInstanceLic` bir lisans anahtarı gerektirir.
+
 ```
 STDMETHOD(CreateInstanceLic)(
     IUnknown* pUnkOuter,
     IUnknown* /* pUnkReserved
- */,
+*/,
     REFIID riid,
     BSTR bstrKey,
     void** ppvObject);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pUnkOuter*  
- [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.  
-  
- *pUnkReserved*  
- [in] Kullanılmıyor. NULL olmalıdır.  
-  
- *riid*  
- [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.  
-  
- *bstrKey*  
- [in] Çalışma zamanı lisans anahtarı daha önce edindiğiniz çağrısından `RequestLicKey`. Bu anahtar nesneyi oluşturmak için gereklidir.  
-  
- *ppvObject*  
- [out] Tarafından belirtilen arabirim işaretçisini bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Kullanarak bir lisans anahtarı edinebilirsiniz [RequestLicKey](#requestlickey). Bir nesne üzerinde lisanssız bir makine oluşturmak için çağırmalıdır `CreateInstanceLic`.  
-  
-##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo  
- Dolduran bir [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) sınıf üreteci açıklayan bilgileri yapısıyla lisans özellikleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pUnkOuter*  
+[in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
+
+*pUnkReserved*  
+[in] Kullanılmıyor. NULL olmalıdır.
+
+*riid*  
+[in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
+
+*bstrKey*  
+[in] Çalışma zamanı lisans anahtarı daha önce edindiğiniz çağrısından `RequestLicKey`. Bu anahtar nesneyi oluşturmak için gereklidir.
+
+*ppvObject*  
+[out] Tarafından belirtilen arabirim işaretçisini bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT değerini.
+
+### <a name="remarks"></a>Açıklamalar
+
+Kullanarak bir lisans anahtarı edinebilirsiniz [RequestLicKey](#requestlickey). Bir nesne üzerinde lisanssız bir makine oluşturmak için çağırmalıdır `CreateInstanceLic`.
+
+##  <a name="getlicinfo"></a>  CComClassFactory2::GetLicInfo
+
+Dolduran bir [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) sınıf üreteci açıklayan bilgileri yapısıyla lisans özellikleri.
+
 ```
 STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *pLicInfo*  
- [out] İşaretçi bir `LICINFO` yapısı.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
-  
-### <a name="remarks"></a>Açıklamalar  
- `fRuntimeKeyAvail` Bu yapı üyesi, bir lisans anahtarı göz önünde bulundurulduğunda, sınıf üreteci lisanssız bir makinede oluşturulması nesnelere izin verip vermediğini, gösterir. *FLicVerified* üye tam makine lisans var olup olmadığını gösterir.  
-  
-##  <a name="lockserver"></a>  CComClassFactory2::LockServer  
- Artırır ve azaltır modülün kilit sayacını çağırarak `_Module::Lock` ve `_Module::Unlock`sırasıyla.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*pLicInfo*  
+[out] İşaretçi bir `LICINFO` yapısı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT değerini.
+
+### <a name="remarks"></a>Açıklamalar
+
+`fRuntimeKeyAvail` Bu yapı üyesi, bir lisans anahtarı göz önünde bulundurulduğunda, sınıf üreteci lisanssız bir makinede oluşturulması nesnelere izin verip vermediğini, gösterir. *FLicVerified* üye tam makine lisans var olup olmadığını gösterir.
+
+##  <a name="lockserver"></a>  CComClassFactory2::LockServer
+
+Artırır ve azaltır modülün kilit sayacını çağırarak `_Module::Lock` ve `_Module::Unlock`sırasıyla.
+
 ```
 STDMETHOD(LockServer)(BOOL fLock);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *fLock*  
- [in] TRUE ise kilit sayacını artırılır; Aksi takdirde, kilit sayısı azaltılır.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
-  
-### <a name="remarks"></a>Açıklamalar  
- `_Module` global örneğine başvurur [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.  
-  
- Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.  
-  
-##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey  
- Oluşturur ve döndürür, sağlanan bir lisans anahtarı `fRuntimeKeyAvail` üyesi [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) TRUE yapısıdır.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*fLock*  
+[in] TRUE ise kilit sayacını artırılır; Aksi takdirde, kilit sayısı azaltılır.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT değerini.
+
+### <a name="remarks"></a>Açıklamalar
+
+`_Module` global örneğine başvurur [CComModule](../../atl/reference/ccommodule-class.md) veya ondan türetilmiş bir sınıf.
+
+Çağırma `LockServer` bir istemci birden çok nesne hızla oluşturulabilen bir sınıf üreteci tutacak sağlar.
+
+##  <a name="requestlickey"></a>  CComClassFactory2::RequestLicKey
+
+Oluşturur ve döndürür, sağlanan bir lisans anahtarı `fRuntimeKeyAvail` üyesi [LICINFO](/windows/desktop/api/ocidl/ns-ocidl-taglicinfo) TRUE yapısıdır.
+
 ```
 STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *dwReserved*  
- [in] Kullanılmıyor. Sıfır olmalıdır.  
-  
- *pbstrKey*  
- [out] Lisans anahtarı için işaretçi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT değerini.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Arama için bir lisans anahtarı gereklidir [CreateInstanceLic](#createinstancelic) nesne üzerinde lisanssız bir makine oluşturmak için. Varsa `fRuntimeKeyAvail` tam lisanslı bir makinede nesneleri yalnızca oluşturulabilir sonra FALSE ' tır.  
-  
- Çağrı [GetLicInfo](#getlicinfo) değerini almak için `fRuntimeKeyAvail`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
- [CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)   
- [CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
- [CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*dwReserved*  
+[in] Kullanılmıyor. Sıfır olmalıdır.
+
+*pbstrKey*  
+[out] Lisans anahtarı için işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Standart bir HRESULT değerini.
+
+### <a name="remarks"></a>Açıklamalar
+
+Arama için bir lisans anahtarı gereklidir [CreateInstanceLic](#createinstancelic) nesne üzerinde lisanssız bir makine oluşturmak için. Varsa `fRuntimeKeyAvail` tam lisanslı bir makinede nesneleri yalnızca oluşturulabilir sonra FALSE ' tır.
+
+Çağrı [GetLicInfo](#getlicinfo) değerini almak için `fRuntimeKeyAvail`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CComClassFactoryAutoThread sınıfı](../../atl/reference/ccomclassfactoryautothread-class.md)   
+[CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)   
+[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -17,41 +17,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6814df9d81674e37f4364330e7801399cb4c763
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1aa9c72cbb8724da00b2d370884bd7ddbf7264cc
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389923"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763246"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C)
-`while` Deyimi bir deyim belirtilen ifadeye false olana kadar yineleyin olanak sağlar.  
+
+`while` İfadesi belirtilen bir ifade false olana kadar bir deyimi yineleyin olanak tanır.  
   
-## <a name="syntax"></a>Sözdizimi  
- *Yineleme deyimi*:  
- **sırada (***ifade***)***deyimi*   
+## <a name="syntax"></a>Sözdizimi
+
+*Yineleme deyiminin*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sırada (***ifade***)***deyimi*
   
- *İfade* aritmetik veya işaretçi türü olmalıdır. Yürütme gibi çalışır:  
+*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:  
   
-1.  *İfade* değerlendirilir.  
+1. *İfade* değerlendirilir.  
   
-2.  Varsa *ifade* başlangıçta yanlış gövdesini `while` deyimi hiçbir zaman yürütülür ve denetim geçirir `while` program sonraki ifadesine deyimi.  
-  
-     Varsa *ifade* (sıfır) true, deyim gövdesi yürütülür ve adım 1'den itibaren işlem tekrarlanır.  
-  
- `while` Deyimi de sonlandırmak ne zaman bir **sonu**, `goto`, veya `return` deyimi içinde gövdesi yürütülür. Kullanım **devam** çıkmadan yineleme sonlandırmak için deyimi `while` döngü. **Devam** deyimi geçirir denetim sonraki yinelemesini `while` deyimi.  
-  
- Bu bir örnektir `while` deyimi:  
-  
-```  
-while ( i >= 0 )   
-{  
-    string1[i] = string2[i];  
-    i--;  
-}  
-```  
-  
- Bu örnek karakterlerinden kopyalar `string2` için `string1`. Varsa `i` büyük veya 0 olarak eşit `string2[i]` atandığı `string1[i]` ve `i` düşülür. Zaman `i` ulaştığında veya onu yürütülmesi 0 düştüğünde `while` açıklamayı sonlandıran.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [while Deyimi (C++)](../cpp/while-statement-cpp.md)
+2. Varsa *ifade* başlangıçta yanlış gövdesinin `while` deyimi asla yürütülmez ve denetim geçer `while` programdaki sonraki deyime deyimi.
+
+   Varsa *ifade* true (sıfırdan farklı), deyim gövdesi yürütülür ve adım 1'den itibaren işlem tekrarlanır.
+
+`while` Deyimi de sonlandırılabilir bir **sonu**, `goto`, veya `return` içindeki deyim gövdesi yürütülür. Kullanım **devam** çıkmadan bir yinelemeyi sonlandırmak için deyimi `while` döngü. **Devam** deyimi, denetimi bir sonraki yinelemesine geçirir `while` deyimi.
+
+Bu bir örnektir `while` deyimi:
+
+```C
+while ( i >= 0 )
+{
+    string1[i] = string2[i];
+    i--;
+}
+```
+
+Bu örnek, karakteri kopyalar `string2` için `string1`. Varsa `i` değerinden büyükse veya eşitse 0 `string2[i]` atandığı `string1[i]` ve `i` azaltılır. Zaman `i` ulaştığında veya yürütülmesini 0 düştüğünde `while` deyimini sonlandırır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[while Deyimi (C++)](../cpp/while-statement-cpp.md)

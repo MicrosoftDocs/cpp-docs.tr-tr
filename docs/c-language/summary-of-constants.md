@@ -14,114 +14,116 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98b67bf6fd81ee611d99904931a825ee28448482
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 33367c468d8e499382c30642dd55c4cd7fd1a59a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217389"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760500"
 ---
 # <a name="summary-of-constants"></a>Sabitlerin Özeti
 
-*Sabit*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Kayan noktaya sabiti*  
-&nbsp;&nbsp;&nbsp;&nbsp;*tamsayı sabiti*  
-&nbsp;&nbsp;&nbsp;&nbsp;*Numaralandırma sabiti*  
+*Sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Kayan noktaya sabiti*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tamsayı sabiti*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Numaralandırma sabiti*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*karakter sabiti*
 
-*Kayan noktaya sabiti*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Sabit kesirli* *üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki*<sub>iyileştirilmiş</sub>  
+*Kayan noktaya sabiti*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Sabit kesirli* *üs bölümü*<sub>iyileştirilmiş</sub> *kayan soneki*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *üs bölümü* *kayan soneki*<sub>iyileştirilmiş</sub>
 
-*Sabit kesirli*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*  
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi***.** 
+*Sabit kesirli*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi*<sub>iyileştirilmiş</sub> **.** *basamak dizisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi***.**
 
-*Üs bölümü*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*  
-&nbsp;&nbsp;&nbsp;&nbsp;**E** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*  
+*Üs bölümü*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**e** *oturum*<sub>iyileştirilmiş</sub> *basamak dizisi*
 
-*oturum*: biri  
+*oturum*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**+ -**
 
-*basamak dizisi*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*basamak*  
+*basamak dizisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*basamak*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*basamak dizisi* *basamak*
 
-*Kayan soneki*: biri  
+*Kayan soneki*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**f m F M**
 
-*tamsayı sabiti*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>  
-&nbsp;&nbsp;&nbsp;&nbsp;*ikili sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>  
-&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>  
+*tamsayı sabiti*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ikili sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *tamsayı soneki*<sub>iyileştirilmiş</sub>
 
-*ondalık sabit*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*sıfır olmayan basamak* &nbsp; &nbsp; &nbsp; &nbsp; *ondalık sabit* *basamak*
+*ondalık sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sıfır olmayan basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ondalık sabit* *basamak*
 
-*ikili sabit*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**dizelerde, 0b** *ikili basamak*  
+*ikili sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**dizelerde, 0b** *ikili basamak*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Dizelerde, 0b** *ikili basamak*
 
-*sekizlik sabit*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**0**  
+*sekizlik sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*sekizlik sabit* *sekizlik basamak*
 
-*onaltılık sabit*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**0 x***onaltılık basamak*   
-&nbsp;&nbsp;&nbsp;&nbsp;**0 X***onaltılık basamak* &nbsp; &nbsp; &nbsp; &nbsp; *onaltılık sabit* *onaltılık basamak* 
+*onaltılık sabit*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 x***onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 X***onaltılık basamak* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık sabit* *onaltılık basamak*
 
-*sıfır olmayan basamak*: biri  
+*sıfır olmayan basamak*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**1 2 3 4 5 6 7 8 9**
 
-*sekizlik basamak*: biri  
+*sekizlik basamak*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**0 1 2 3 4 5 6 7**
 
-*onaltılık basamak*: biri  
-&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**  
-&nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**  
+*onaltılık basamak*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**0 1, 2, 3, 4, 5, 6, 7, 8, 9**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**b c d e f**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**B C D E F**
 
-*işaretsiz sonek*: biri  
+*işaretsiz sonek*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**u U**
 
-*uzun soneki*: biri  
+*uzun soneki*: biri<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**l L**
 
-*karakter sabiti*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**'** *c karakter dizisi* **'**  
+*karakter sabiti*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**'** *c karakter dizisi* **'**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**L'** *c karakter dizisi* **'**
 
-*integer-suffix*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *uzun soneki*<sub>iyileştirilmiş</sub>  
+*integer-suffix*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*işaretsiz sonek* *uzun soneki*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*uzun soneki* *işaretsiz sonek*<sub>iyileştirilmiş</sub>
 
-*c karakter dizisi*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*c karakter*  
+*c karakter dizisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*c karakter*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*c karakter dizisi* *c char*
 
-*c karakter*:  
+*c karakter*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;Herhangi bir üyesi kaynak karakter kümesi dışında tek tırnak işareti (**'**), ters eğik çizgi (**\\**), veya yeni satır karakteri kaçış sırası
 
-*kaçış sırası*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Basit çıkış dizisi*  
-&nbsp;&nbsp;&nbsp;&nbsp;*kaçış sırası sekizlik*  
+*kaçış sırası*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Basit çıkış dizisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*kaçış sırası sekizlik*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*onaltılık kaçış sırası*
 
-*Basit çıkış dizisi*: biri  
-&nbsp;&nbsp;&nbsp;&nbsp;**\a \b \f \n \r \t \v**  
+*Basit çıkış dizisi*: biri<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\a \b \f \n \r \t \v**<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**\\' \\" \\\ \\?**
 
-*kaçış sırası sekizlik*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak*  
-&nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak* *sekizlik basamak*  
+*kaçış sırası sekizlik*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak* *sekizlik basamak*<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**\\** *sekizlik basamak* *sekizlik basamak* *sekizlik basamak*
 
-*onaltılık kaçış sırası*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**\x** *onaltılık basamak*  
-&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık kaçış sırası* *onaltılık basamak*  
-  
+*onaltılık kaçış sırası*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**\x** *onaltılık basamak*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*onaltılık kaçış sırası* *onaltılık basamak*
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sözcük Dilbilgisi](../c-language/lexical-grammar.md)  
+[Sözcük Dilbilgisi](../c-language/lexical-grammar.md)<br/>

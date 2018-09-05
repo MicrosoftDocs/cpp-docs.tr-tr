@@ -24,11 +24,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: e199df62aa6bc0c3dc670bd2951a7af2667e7faa
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687592"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758384"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections:: Map sınıfı
 

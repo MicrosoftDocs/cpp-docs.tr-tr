@@ -16,44 +16,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b4cd2f2473249271285d6b8812dac1b924e5a172
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 914e11c71d4f015f7b62797d4ba2ab3bfca3c7fb
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848542"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754139"
 ---
 # <a name="iunknown-implementation-classes"></a>Bilinmeyen uygulama sınıfları
-Aşağıdaki sınıflar uygulama `IUnknown` ve ilgili yöntemler:  
-  
--   [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. Bir iş parçacığı modeli belirtmenizi sağlar.  
-  
--   [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. İş parçacığı modeli sunucusunun varsayılan kullanır.  
-  
--   [CComAggObject](../atl/reference/ccomaggobject-class.md) uygular `IUnknown` toplanan nesne için.  
-  
--   [CComObject](../atl/reference/ccomobject-class.md) uygular `IUnknown` toplanmayan bir nesne.  
-  
--   [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygular `IUnknown` toplanmış ve toplanmayan nesneler için. Kullanarak `CComPolyObject` hem zorunluluğunu ortadan `CComAggObject` ve `CComObject` , modüldeki. Tek bir `CComPolyObject` nesne toplanmış ve toplanmayan durumları işler.  
-  
--   [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) uygular `IUnknown` modülün kilit sayacını değiştirmeden toplanmayan bir nesne için.  
-  
--   [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygular `IUnknown` bölünmüş arabirim.  
-  
--   [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygular `IUnknown` "önbelleğe alınan" bir bölünmüş arabirim.  
-  
--   [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygular `IUnknown` bir toplama veya bir bölünmüş arabirim iç nesne.  
-  
--   [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) modülü nesnenizin emin olmak için bir başvuru sayısını olmaz silinmesi yönetir.  
-  
--   [CComObjectStack](../atl/reference/ccomobjectstack-class.md) bir iskelet uygulamasını kullanarak geçici bir COM nesnesi oluşturur `IUnknown`.  
-  
-## <a name="related-articles"></a>İlgili Makaleler  
- [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)   
- [Toplama ve sınıf üreticisi makroları](../atl/reference/aggregation-and-class-factory-macros.md)   
- [COM eşleme makroları](../atl/reference/com-map-macros.md)   
- [COM Eşlemesi Genel İşlevleri](../atl/reference/com-map-global-functions.md)
+
+Aşağıdaki sınıflar uygulama `IUnknown` ve ilgili yöntemler:
+
+- [CComObjectRootEx](../atl/reference/ccomobjectrootex-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. Bir iş parçacığı modeli belirtmenizi sağlar.
+
+- [CComObjectRoot](../atl/reference/ccomobjectroot-class.md) başvuru sayımı toplanmış ve toplanmayan nesnelerini yönetir. İş parçacığı modeli sunucusunun varsayılan kullanır.
+
+- [CComAggObject](../atl/reference/ccomaggobject-class.md) uygular `IUnknown` toplanan nesne için.
+
+- [CComObject](../atl/reference/ccomobject-class.md) uygular `IUnknown` toplanmayan bir nesne.
+
+- [CComPolyObject](../atl/reference/ccompolyobject-class.md) uygular `IUnknown` toplanmış ve toplanmayan nesneler için. Kullanarak `CComPolyObject` hem zorunluluğunu ortadan `CComAggObject` ve `CComObject` , modüldeki. Tek bir `CComPolyObject` nesne toplanmış ve toplanmayan durumları işler.
+
+- [CComObjectNoLock](../atl/reference/ccomobjectnolock-class.md) uygular `IUnknown` modülün kilit sayacını değiştirmeden toplanmayan bir nesne için.
+
+- [CComTearOffObject](../atl/reference/ccomtearoffobject-class.md) uygular `IUnknown` bölünmüş arabirim.
+
+- [CComCachedTearOffObject](../atl/reference/ccomcachedtearoffobject-class.md) uygular `IUnknown` "önbelleğe alınan" bir bölünmüş arabirim.
+
+- [CComContainedObject](../atl/reference/ccomcontainedobject-class.md) uygular `IUnknown` bir toplama veya bir bölünmüş arabirim iç nesne.
+
+- [CComObjectGlobal](../atl/reference/ccomobjectglobal-class.md) modülü nesnenizin emin olmak için bir başvuru sayısını olmaz silinmesi yönetir.
+
+- [CComObjectStack](../atl/reference/ccomobjectstack-class.md) bir iskelet uygulamasını kullanarak geçici bir COM nesnesi oluşturur `IUnknown`.
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[Toplama ve sınıf üreticisi makroları](../atl/reference/aggregation-and-class-factory-macros.md)   
+[COM eşleme makroları](../atl/reference/com-map-macros.md)   
+[COM Eşlemesi Genel İşlevleri](../atl/reference/com-map-global-functions.md)
 

@@ -18,35 +18,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf56a409f9a76cdf401323d1425ee28fc6cf286b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cadad9f2f025db4f7c3a63a7948a6cbbcfbd3ac3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386420"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761436"
 ---
 # <a name="goto-and-labeled-statements-c"></a>goto ve Etiketli Deyimleri (C)
-`goto` Deyimi bir etiket denetimi aktarır. Belirtilen etiket aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir.  
+`goto` Deyime etiketine denetim aktarır. Belirtilen etiket, aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir.  
   
-## <a name="syntax"></a>Sözdizimi  
- *deyimi*:  
- *Etiketli deyim*  
+## <a name="syntax"></a>Sözdizimi
+
+*deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Etiketli deyim*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atlama-deyimi*
+
+*atlama-deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**goto***tanımlayıcı***;** 
+
+*Etiketli deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı***:***deyimi* 
+
+Bir bildirim etiketi yalnızca anlamlı bir `goto` deyimi; diğer herhangi bir bağlam içinde etiketli deyim etiketi bakılmaksızın yürütülür.  
   
- *atlama deyimi*  
+A *atlama-deyimi* aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir. Dizi *tanımlayıcı* adları aşağıdaki bir `goto` kendi ad alanı adları ile diğer tanımlayıcılarla müdahale etmez bulunduğundan. Etiketleri bildirilemez. Bkz: [ad alanları](../c-language/name-spaces.md) daha fazla bilgi için.  
   
- *atlama deyimi*:  
- **goto***tanımlayıcısı***;**   
+İyi bir stili programlama **sonu**, **devam**, ve `return` preference için deyimi `goto` mümkün olduğunda. Bu yana **sonu** deyimi yalnızca bir döngü düzeyden çıkar bir `goto` iç içe döngü içinde bir döngüden çıkma için gerekli olabilir.  
   
- *Etiketli deyim*:  
- *tanımlayıcı***:***deyimi*   
-  
- Yalnızca anlamlı deyimi etiketidir bir `goto` deyimi; diğer herhangi bir bağlam içinde etiketli deyim dikkate almaksızın etiket yürütülür.  
-  
- A *atlama deyimi* aynı işlevde bulunmalıdır ve aynı işlevde yalnızca bir deyim önce görünebilir. Kümesini *tanımlayıcısı* adları aşağıdaki bir `goto` adları ile diğer tanımlayıcıları karışmaması için kendi ad alanı vardır. Etiketleri yeniden bildirilen olamaz. Bkz: [ad alanları](../c-language/name-spaces.md) daha fazla bilgi için.  
-  
- Kullanmak için stil programlama iyi **sonu**, **devam**, ve `return` preference için deyimi `goto` mümkün olduğunda. Bu yana **sonu** deyimi yalnızca bir döngü düzeyden çıkar bir `goto` iç içe bir döngü içinde bir döngüden çıkma için gerekli olabilir.  
-  
- Bu örnekte gösterilmiştir `goto` deyimi:  
+Bu örnek gösterir `goto` deyimi:  
   
 ```  
 // goto.c  
@@ -74,7 +74,7 @@ int main()
 }  
 ```  
   
- Bu örnekte, bir `goto` deyimi denetim etiketli noktasına aktarır `stop` zaman `i` 5'e eşittir.  
+Bu örnekte, bir `goto` deyime aktarır denetim noktasına etiketli `stop` olduğunda `i` 5'e eşittir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimler](../c-language/statements-c.md)
+[Deyimler](../c-language/statements-c.md)

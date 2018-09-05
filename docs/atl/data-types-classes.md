@@ -17,22 +17,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae961d47f77b630eaff91e1c02e244454b12dc80
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 46b65fa43ddc2fc26f2cd87746f763c8a8e7c924
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851320"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756317"
 ---
 # <a name="data-types-classes"></a>Veri türü sınıfları
-Aşağıdaki sınıflar, C++ veri türleri kaydır:  
-  
--   [CComBSTR](../atl/reference/ccombstr-class.md) sarmalar `BSTR` veri türü.  
-  
--   [CComVariant](../atl/reference/ccomvariant-class.md) sarmalar `VARIANT` veri türü.  
-  
--   [CComCurrency](../atl/reference/ccomcurrency-class.md) içeren yöntemleri ve işleçleri oluşturmak ve yönetmek için bir `CURRENCY` nesne.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)
+
+Aşağıdaki sınıflar, C++ veri türleri kaydır:
+
+- [CComBSTR](../atl/reference/ccombstr-class.md) sarmalar `BSTR` veri türü.
+
+- [CComVariant](../atl/reference/ccomvariant-class.md) sarmalar `VARIANT` veri türü.
+
+- [CComCurrency](../atl/reference/ccomcurrency-class.md) içeren yöntemleri ve işleçleri oluşturmak ve yönetmek için bir `CURRENCY` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)
 

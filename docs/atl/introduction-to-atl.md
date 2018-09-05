@@ -15,26 +15,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f2331d084f4959be2157ddb6fc1b6c25ac015e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 93baa57e8567b6ab08a0157f200a4d89fc9813e4
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197115"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754850"
 ---
 # <a name="introduction-to-atl"></a>ATL'ye giriş
-ATL Active Template Library, hangi kolayca oluşturabilirsiniz ile bir dizi şablon tabanlı C++ sınıfları küçük, hızlı Bileşen Nesne Modeli (COM) nesneleri. Özel destek dahil olmak üzere anahtar COM özellikleri vardır: stok uygulamaları [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory), [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2), ve `IDispatch`; çift arabirimleri; standart COM Numaralandırıcı arabirimleri; bağlantı noktaları Etiket arabirimleri; ve ActiveX denetimleri.  
-  
- ATL kodu kullanıldığında artık tek iş parçacıklı nesneleri, apartman modeli nesneleri, ücretsiz iş parçacıklı model nesneleri veya ücretsiz iş parçacıklı ve apartman modeli nesneleri oluşturmak için kullanılabilir.  
-  
- Bu bölümde ele alınan konular:  
-  
--   Nasıl bir [Şablon Kitaplığı](../atl/using-a-template-library.md) standart kitaplığından farklıdır.  
-  
--   Neleri [olabilir ve ATL ile yapamayacağınız](../atl/scope-of-atl.md).  
-  
--   [ATL ile MFC arasında seçim önerileri](../atl/recommendations-for-choosing-between-atl-and-mfc.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)
+
+ATL Active Template Library, hangi kolayca oluşturabilirsiniz ile bir dizi şablon tabanlı C++ sınıfları küçük, hızlı Bileşen Nesne Modeli (COM) nesneleri. Özel destek dahil olmak üzere anahtar COM özellikleri vardır: stok uygulamaları [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown), [IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory), [IClassFactory2](/windows/desktop/api/ocidl/nn-ocidl-iclassfactory2), ve `IDispatch`; çift arabirimleri; standart COM Numaralandırıcı arabirimleri; bağlantı noktaları Etiket arabirimleri; ve ActiveX denetimleri.
+
+ATL kodu kullanıldığında artık tek iş parçacıklı nesneleri, apartman modeli nesneleri, ücretsiz iş parçacıklı model nesneleri veya ücretsiz iş parçacıklı ve apartman modeli nesneleri oluşturmak için kullanılabilir.
+
+Bu bölümde ele alınan konular:
+
+- Nasıl bir [Şablon Kitaplığı](../atl/using-a-template-library.md) standart kitaplığından farklıdır.
+
+- Neleri [olabilir ve ATL ile yapamayacağınız](../atl/scope-of-atl.md).
+
+- [ATL ile MFC arasında seçim önerileri](../atl/recommendations-for-choosing-between-atl-and-mfc.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[COM ve ATL’ye Giriş](../atl/introduction-to-com-and-atl.md)
 

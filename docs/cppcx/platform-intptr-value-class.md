@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a97d77f0b84366c83f09f6a6c72afe1bbb25dc6d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612135"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758836"
 ---
 # <a name="platformintptr-value-class"></a>Platform::IntPtr değer sınıfı
 İmzalı bir işaretçi veya tanıtıcı ve ayarlanmış gösteren boyutudur, platforma özgü (32 bit veya 64-bit).  

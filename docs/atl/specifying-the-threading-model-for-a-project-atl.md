@@ -1,5 +1,5 @@
 ---
-title: Proje (ATL) için iş parçacığı modeline belirtme | Microsoft Docs
+title: İş parçacığı Model belirtme (ATL) için bir proje | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,34 +18,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f807aa82a62fb703430ace5bc6be516e08ca9dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f8a37a3ec730b727f6e214aafad1a4acc65b1dc3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32359642"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760035"
 ---
 # <a name="specifying-the-threading-model-for-a-project-atl"></a>Proje İçin İş Parçacıklı Model Belirtme (ATL)
-ATL projesinde iş parçacığı modeli belirtmek aşağıdaki makroları kullanılabilir:  
-  
-|Makrosu|Kullanma için yönergeler|  
-|-----------|--------------------------|  
-|_ATL_SINGLE_THREADED|Tüm nesnelerinin tek iş parçacığı modelini kullandıysanız tanımlayın.|  
-|_ATL_APARTMENT_THREADED|Bir veya daha fazla nesnelerinizi Apartman iş parçacığı oluşturma kullanırsanız tanımlayın.|  
-|_ATL_FREE_THREADED|Bir veya daha fazla nesnelerinizi boş veya nötr iş parçacığı oluşturma kullanırsanız tanımlayın. Var olan kodu eşdeğer makrosu başvurular içerebilir [_ATL_MULTI_THREADED](reference/compiler-options-macros.md#_atl_multi_threaded).|  
-  
- Projeniz için bu makroları hiçbirini tanımlamıyorsa _ATL_FREE_THREADED uygulanmaz.  
-  
- Makrolar gibi çalışma zamanı performansı etkiler:  
-  
--   Projenizdeki nesnelere karşılık gelen makrosu belirterek çalışma zamanı performansını iyileştirebilir.  
-  
--   Tümü nesnelerinizi akıtılan, tek olduğunda _ATL_APARTMENT_THREADED belirtirseniz, örneğin makrosu daha yüksek düzeyde belirtme biraz çalışma zamanı performansının düşmesine neden.  
-  
--   _Atl_sıngle_threaded biri belirlerseniz veya nesnelerinin daha fazla Grup iş parçacığı oluşturma ya da boş iş parçacığı oluşturma, kullanırsanız, makrosu, örneğin, alt düzey belirtme, uygulamanızın çalışma zamanında başarısız olmasına neden olabilir.  
-  
- Bkz: [seçenekleri, ATL Basit Nesne Sihirbazı](../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller ATL nesne için kullanılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../atl/active-template-library-atl-concepts.md)
+
+Aşağıdaki makroları ATL projesinde iş parçacığı modeli belirtmek kullanılabilir:
+
+|Makrosu|Kullanma yönergeleri|
+|-----------|--------------------------|
+|_ATL_SINGLE_THREADED|Tek iş parçacıklı model nesnelerinizi tüm kullandıysanız tanımlayın.|
+|_ATL_APARTMENT_THREADED|Bir veya daha fazla nesnelerinizi iş parçacığı grubu kullanıyorsanız tanımlayın.|
+|_ATL_FREE_THREADED|Bir veya daha fazla nesnelerinizi ücretsiz veya nötr iş parçacığı kullanırsanız tanımlayın. Var olan kod, eşdeğer makrosu başvuruları içerebilir [_ATL_MULTI_THREADED](reference/compiler-options-macros.md#_atl_multi_threaded).|
+
+Projeniz için bu makrolar birini tanımlamazsanız _ATL_FREE_THREADED uygulanmaz.
+
+Makrolar gibi çalışma zamanı performansını etkiler:
+
+- Projenizdeki nesnelere karşılık gelen makro belirtme, çalışma zamanı performansını artırabilir.
+
+- Makrosu, nesnelerinizin tüm iş parçacıklı, tek olduğunda _ATL_APARTMENT_THREADED belirtirseniz, örneğin daha yüksek bir düzeyde belirtme biraz çalışma zamanı performansını bozar.
+
+- _Atl_sıngle_threaded biri belirtin veya nesnelerinizin daha fazla iş parçacığı grubu veya serbest iş parçacığı oluşturma, kullanırsanız, makro, örneğin, daha düşük bir düzeyde belirtme, uygulamanızın çalışma zamanında başarısız olmasına neden olabilir.
+
+Bkz: [ATL Basit Nesne Sihirbazı, seçenekleri](../atl/reference/options-atl-simple-object-wizard.md) iş parçacığı için bir açıklama modeller bir ATL nesnesi için kullanılabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../atl/active-template-library-atl-concepts.md)
 

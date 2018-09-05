@@ -16,50 +16,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74a5e50eae425340bcb0f9a455422b43db0be0b2
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 37564920e2ffb4c2526631cd04864db1971a6f02
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207116"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757217"
 ---
 # <a name="messagehandler"></a>MessageHandler
-`MessageHandler` ikinci parametresi, ileti eşlemesi MESSAGE_HANDLER makro ile tanımlanan işlev adıdır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
- 
-    LRESULT 
-    MessageHandler 
- (
+
+`MessageHandler` ikinci parametresi, ileti eşlemesi MESSAGE_HANDLER makro ile tanımlanan işlev adıdır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+LRESULT MessageHandler(
     UINT uMsg,  
     WPARAM wParam,  
     LPARAM lParam,  
     BOOL& bHandled);
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *uMsg*  
- İletiyi belirtir.  
-  
- *wParam*  
- İletiye özgü ek bilgiler.  
-  
- *lParam*  
- İletiye özgü ek bilgiler.  
-  
- *bHandled*  
- İleti eşleme kümeleri *bHandled* önce true `MessageHandler` çağrılır. Varsa `MessageHandler` tam iletiyi işlemez ayarlamanız gerekir *bHandled* ihtiyaç daha fazla işleme belirtmek için false.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İleti işleme sonucu. başarılıysa 0.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Pencere uygulama](../atl/implementing-a-window.md)   
- [İleti eşlemeleri](../atl/message-maps-atl.md)   
- [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)
+```
 
+### <a name="parameters"></a>Parametreler
+
+*uMsg*  
+İletiyi belirtir.
+
+*wParam*  
+İletiye özgü ek bilgiler.
+
+*lParam*  
+İletiye özgü ek bilgiler.
+
+*bHandled*  
+İleti eşleme kümeleri *bHandled* önce true `MessageHandler` çağrılır. Varsa `MessageHandler` tam iletiyi işlemez ayarlamanız gerekir *bHandled* ihtiyaç daha fazla işleme belirtmek için false.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İleti işleme sonucu. başarılıysa 0.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Pencere uygulama](../atl/implementing-a-window.md)   
+[İleti eşlemeleri](../atl/message-maps-atl.md)   
+[WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

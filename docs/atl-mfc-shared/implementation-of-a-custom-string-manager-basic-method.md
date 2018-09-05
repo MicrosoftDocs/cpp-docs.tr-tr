@@ -14,34 +14,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85b087d9a94905291db951e0233ba1c55fa00e6e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5c251ae73b4adaaed09e5ed654e394a130281332
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210150"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756411"
 ---
 # <a name="implementation-of-a-custom-string-manager-basic-method"></a>Uygulama özel dize Yöneticisi (temel yöntem)
-Dize verileri ATL tarafından sağlanan kullanmak için bellek ayırma düzeni özelleştirmek için en kolay yolu `CAtlStringMgr` sınıfı ancak kendi bellek ayırma yordamlarını sağlar. Oluşturucusu `CAtlStringMgr` tek bir parametre alır: bir işaretçi bir `IAtlMemMgr` nesne. `IAtlMemMgr` bir yığın için genel bir arabirim sunan bir soyut temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi `CAtlStringMgr` ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim ya da beş ATL tarafından sağlanan bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticileri yalnızca mevcut bellek ayırma tesis kaydır:  
-  
--   [CCRTHeap](../atl/reference/ccrtheap-class.md) standart CRT yığın işlevlerinin sarmalar ([malloc](../c-runtime-library/reference/malloc.md), [ücretsiz](../c-runtime-library/reference/free.md), ve [realloc](../c-runtime-library/reference/realloc.md))  
-  
--   [CWin32Heap](../atl/reference/cwin32heap-class.md) kullanılarak bir Win32 yığınının tutamacını sarar [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc), [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree), ve [HeapRealloc](/windows/desktop/api/heapapi/nf-heapapi-heaprealloc)  
-  
--   [CLocalHeap](../atl/reference/clocalheap-class.md) Win32 API'ları sarmalar: [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc), [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree), ve [LocalRealloc](/windows/desktop/api/winbase/nf-winbase-localrealloc)  
-  
--   [CGlobalHeap](../atl/reference/cglobalheap-class.md) Win32 API'ları sarmalar: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc), [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree), ve [GlobalRealloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).  
-  
--   [CComHeap](../atl/reference/ccomheap-class.md) COM görev ayırıcısı API'leri sarmalar: [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree), ve [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)  
-  
- Dize bellek yönetimi amacıyla en kullanışlı sınıftır `CWin32Heap` çünkü birden çok bağımsız yığınlar oluşturmanıza olanak sağlar. Örneğin, dizeleri için ayrı bir yığında kullanmak istiyorsanız, aşağıdakileri yapabilirsiniz:  
-  
- [!code-cpp[NVC_ATLMFC_Utilities#180](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_1.cpp)]  
-  
- İçin bellek yönetmek amacıyla bu özel dize Yöneticisi'ni kullanmak için bir `CString` değişkeni, yönetici olarak bir parametre bir işaretçi geçişine `CString` değişkenin Oluşturucusu:  
-  
- [!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
+
+Dize verileri ATL tarafından sağlanan kullanmak için bellek ayırma düzeni özelleştirmek için en kolay yolu `CAtlStringMgr` sınıfı ancak kendi bellek ayırma yordamlarını sağlar. Oluşturucusu `CAtlStringMgr` tek bir parametre alır: bir işaretçi bir `IAtlMemMgr` nesne. `IAtlMemMgr` bir yığın için genel bir arabirim sunan bir soyut temel sınıftır. Kullanarak `IAtlMemMgr` arabirimi `CAtlStringMgr` ayırır, yeniden ayırır ve dize verilerini depolamak için kullanılan belleği serbest bırakır. Her iki uygulama için `IAtlMemMgr` kendiniz arabirim ya da beş ATL tarafından sağlanan bellek yöneticisi sınıflarından birini kullanın. ATL tarafından sağlanan bellek yöneticileri yalnızca mevcut bellek ayırma tesis kaydır:
+
+- [CCRTHeap](../atl/reference/ccrtheap-class.md) standart CRT yığın işlevlerinin sarmalar ([malloc](../c-runtime-library/reference/malloc.md), [ücretsiz](../c-runtime-library/reference/free.md), ve [realloc](../c-runtime-library/reference/realloc.md))
+
+- [CWin32Heap](../atl/reference/cwin32heap-class.md) kullanılarak bir Win32 yığınının tutamacını sarar [HeapAlloc](/windows/desktop/api/heapapi/nf-heapapi-heapalloc), [HeapFree](/windows/desktop/api/heapapi/nf-heapapi-heapfree), ve [HeapRealloc](/windows/desktop/api/heapapi/nf-heapapi-heaprealloc)
+
+- [CLocalHeap](../atl/reference/clocalheap-class.md) Win32 API'ları sarmalar: [LocalAlloc](/windows/desktop/api/winbase/nf-winbase-localalloc), [LocalFree](/windows/desktop/api/winbase/nf-winbase-localfree), ve [LocalRealloc](/windows/desktop/api/winbase/nf-winbase-localrealloc)
+
+- [CGlobalHeap](../atl/reference/cglobalheap-class.md) Win32 API'ları sarmalar: [GlobalAlloc](/windows/desktop/api/winbase/nf-winbase-globalalloc), [GlobalFree](/windows/desktop/api/winbase/nf-winbase-globalfree), ve [GlobalRealloc](/windows/desktop/api/winbase/nf-winbase-globalrealloc).
+
+- [CComHeap](../atl/reference/ccomheap-class.md) COM görev ayırıcısı API'leri sarmalar: [CoTaskMemAlloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemalloc), [CoTaskMemFree](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemfree), ve [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-combaseapi-cotaskmemrealloc)
+
+Dize bellek yönetimi amacıyla en kullanışlı sınıftır `CWin32Heap` çünkü birden çok bağımsız yığınlar oluşturmanıza olanak sağlar. Örneğin, dizeleri için ayrı bir yığında kullanmak istiyorsanız, aşağıdakileri yapabilirsiniz:
+
+[!code-cpp[NVC_ATLMFC_Utilities#180](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_1.cpp)]
+
+İçin bellek yönetmek amacıyla bu özel dize Yöneticisi'ni kullanmak için bir `CString` değişkeni, yönetici olarak bir parametre bir işaretçi geçişine `CString` değişkenin Oluşturucusu:
+
+[!code-cpp[NVC_ATLMFC_Utilities#181](../atl-mfc-shared/codesnippet/cpp/implementation-of-a-custom-string-manager-basic-method_2.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)
 

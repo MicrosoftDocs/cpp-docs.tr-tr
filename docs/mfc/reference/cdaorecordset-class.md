@@ -177,11 +177,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: a1db997dd81b339901bf3cf3017a766e17aa8cfb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197639"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758459"
 ---
 # <a name="cdaorecordset-class"></a>CDaoRecordset sınıfı
 

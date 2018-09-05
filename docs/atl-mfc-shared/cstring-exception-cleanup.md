@@ -15,19 +15,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d18d10d517a6c5b0d075a7fb0ed113448625b698
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 656739ad000612f130f5cdfb1a53a6de2d67c4c8
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355512"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761374"
 ---
 # <a name="cstring-exception-cleanup"></a>CString özel durum temizleme
-MFC önceki sürümlerde, temizleme, önemli [CString](../atl-mfc-shared/reference/cstringt-class.md) kullandıktan sonra nesneleri. MFC sürüm 3.0 ve sonraki açık temizleme artık gerekli değildir.  
-  
- MFC artık kullanır mekanizması C++ özel durum işleme altında özel durumdan sonra temizleme hakkında endişelenmeniz gerekmez. "Bir özel durum yakalandı sonra nasıl bir açıklaması için C++ yığın unwinds" için bkz: [try catch ve throw deyimleri](../cpp/try-throw-and-catch-statements-cpp.md). MFC kullansanız bile **deneyin**/**CATCH** makroları C++ anahtar sözcükleri yerine **deneyin** ve **catch**, MFC C++ kullanır özel durum mekanizması altında hala şekilde gerekmez açıkça temizleme.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
- [Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
+
+MFC önceki sürümlerinde, temizleme, önemli [CString](../atl-mfc-shared/reference/cstringt-class.md) kullandıktan sonra nesneleri. MFC sürüm 3.0 ve sonraki açıkça temizlenmesi artık gerekli değildir.
+
+Artık MFC kullanan C++ özel durum işleme mekanizmasını altında bir özel durumdan sonra temizleme hakkında endişelenmeniz gerekmez. "Bir özel durum yakalandı sonra bir açıklaması için C++ yığın geriye doğru izler" için bkz: [try, catch ve throw deyimleri](../cpp/try-throw-and-catch-statements-cpp.md). MFC kullanıyor olsanız bile **deneyin**/**CATCH** C++ anahtar sözcükleri yerine makroları **deneyin** ve **catch**, MFC, C++ kullanır özel durum mekanizması, altında hala şekilde gerekmez açıkça temizleme.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)   
+[Özel Durum İşleme](../mfc/exception-handling-in-mfc.md)
 

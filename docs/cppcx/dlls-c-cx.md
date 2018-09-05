@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1ac06336e5ba80406157285ebe660080aff6e319
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609838"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763639"
 ---
 # <a name="dlls-ccx"></a>DLL'ler (C + +/ CX)
 

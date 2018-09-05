@@ -19,69 +19,77 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2219be699e879afb6ec19ad84acc50f18d93a9a9
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 71dc40a7c2d4fe460f546dbfe4f55d00aff59667
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885815"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759515"
 ---
 # <a name="cprimitiveelementtraits-class"></a>CPrimitiveElementTraits sınıfı
-Bu sınıfın sağladığı yöntemlerle varsayılan ve işlevleri koleksiyon sınıfı için temel veri türlerini oluşur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıfın sağladığı yöntemlerle varsayılan ve işlevleri koleksiyon sınıfı için temel veri türlerini oluşur.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <typename T>  
 class CPrimitiveElementTraits : public CDefaultElementTraits<T>
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *T*  
- Koleksiyon sınıf nesnesinde depolanan verinin türü.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|  
-|[CPrimitiveElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, varsayılan statik işlevler ve taşıma, kopyalama, karşılaştırma ve basit veri türü öğeleri koleksiyonu sınıf nesnesinde depolanan karma işlevi için yöntemler sağlar.  
-  
- Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)  
-  
- [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)  
-  
- [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)  
-  
- [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)  
-  
- `CPrimitiveElementTraits`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcoll.h  
-  
-##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE  
- Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*  
+Koleksiyon sınıf nesnesinde depolanan verinin türü.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CPrimitiveElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|
+|[CPrimitiveElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf, varsayılan statik işlevler ve taşıma, kopyalama, karşılaştırma ve basit veri türü öğeleri koleksiyonu sınıf nesnesinde depolanan karma işlevi için yöntemler sağlar.
+
+Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+
+[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
+
+[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+
+[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)
+
+`CPrimitiveElementTraits`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcoll.h
+
+##  <a name="inargtype"></a>  CPrimitiveElementTraits::INARGTYPE
+
+Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
+
 ```
 typedef T INARGTYPE;
-```  
-  
-##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE  
- Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.  
-  
+```
+
+##  <a name="outargtype"></a>  CPrimitiveElementTraits::OUTARGTYPE
+
+Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
+
 ```
 typedef T& OUTARGTYPE;
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -15,22 +15,24 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d35a05fc54f3358c567e293573a9a5352b359a95
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cfbc23250acf751072e14b75f18944a5083e18cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355200"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756817"
 ---
 # <a name="debugging-tips"></a>Hata ayıklama ipuçları
-Aşağıdaki konular, hizmet hata ayıklama için yararlı bazı adımları özetlemektedir:  
-  
--   [Görev Yöneticisi’ni Kullanma](../atl/using-task-manager.md)  
-  
--   [Onaylamaları Görüntüleme](../atl/displaying-assertions.md)  
-  
--   [Programı Yerel Sunucu Olarak Çalıştırma](../atl/running-the-program-as-a-local-server.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hizmetler](../atl/atl-services.md)
+
+Aşağıdaki konular, hizmetinizi hata ayıklama için bazı kullanışlı adımları özetlemektedir:
+
+- [Görev Yöneticisi’ni Kullanma](../atl/using-task-manager.md)
+
+- [Onaylamaları Görüntüleme](../atl/displaying-assertions.md)
+
+- [Programı Yerel Sunucu Olarak Çalıştırma](../atl/running-the-program-as-a-local-server.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hizmetler](../atl/atl-services.md)
 

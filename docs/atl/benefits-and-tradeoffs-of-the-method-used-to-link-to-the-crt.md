@@ -1,5 +1,5 @@
 ---
-title: Avantajları ve bileşim CRT bağlamak için kullanılan yöntemin | Microsoft Docs
+title: Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntem | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,25 +14,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2835e88da11b8d8332226080eb860afd41c0702
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b90259a942ea785cfbfee4bfda803d9d7b568d4
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355393"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753883"
 ---
-# <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajları ve bileşim CRT bağlamak için kullanılan yöntemi
-Projenizi ile CRT dinamik veya statik olarak bağlayabilirsiniz. Aşağıdaki tabloda, avantajları ve hangi yöntemin kullanılacağını seçerken söz konusu bileşim özetlenmektedir.  
-  
-|Yöntem|Faydası|Kolaylığını|  
-|------------|-------------|--------------|  
-|Statik olarak CRT bağlama<br /><br /> (**Çalışma zamanı kitaplığı** kümesine **tek iş parçacıklı**)|CRT DLL görüntü çalıştırılacağı sistemde gerekli değildir.|Yaklaşık 25K başlangıç kodu yansımanıza, önemli ölçüde boyutunu artırarak eklenir.|  
-|CRT dinamik olarak bağlama<br /><br /> (**Çalışma zamanı kitaplığı** kümesine **çok iş parçacıklı**)|Çok daha küçük olacak şekilde görüntünüzü CRT başlatma kodunu gerektirmez.|CRT DLL görüntüsünü çalıştıran sistemde olması gerekir.|  
-  
- Konu [projenize ATL CRT bağlantılandırma](../atl/linking-to-the-crt-in-your-atl-project.md) CRT bağlamak bir şekilde seçmek nasıl ele alınmaktadır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL ve C çalışma zamanı koduyla programlama](../atl/programming-with-atl-and-c-run-time-code.md)   
- [DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)   
- [CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
+# <a name="benefits-and-tradeoffs-of-the-method-used-to-link-to-the-crt"></a>Avantajlı ve Avantajsız yönleri CRT bağlantı için kullanılan yöntemi
+
+Proje, dinamik veya statik olarak CRT ile bağlayabilirsiniz. Aşağıdaki tabloda, avantajları ve hangi yöntemin kullanılacağını seçerken erişilen alışverişler özetlenmektedir.
+
+|Yöntem|Faydası|Zorunluluğunu getirir|
+|------------|-------------|--------------|
+|Statik olarak CRT'ye bağlanma<br /><br /> (**Çalışma zamanı kitaplığı** kümesine **tek iş parçacıklı**)|CRT DLL görüntü çalıştıracağınız sisteminde gerekli değildir.|Yaklaşık 25K başlangıç kod boyutunu önemli ölçüde artırarak, görüntüye eklenir.|
+|Dinamik olarak CRT'ye bağlanma<br /><br /> (**Çalışma zamanı kitaplığı** kümesine **çok iş parçacıklı**)|Çok daha küçük olacak şekilde görüntünüzü CRT başlatma kodunu gerektirmez.|CRT DLL görüntüsünü çalıştıran sistemde olması gerekir.|
+
+Konu [CRT projenize ATL içinde bağlama](../atl/linking-to-the-crt-in-your-atl-project.md) seçin CRT'ye bağlanmak bir şekilde anlatılmaktadır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL ve C çalışma zamanı koduyla programlama](../atl/programming-with-atl-and-c-run-time-code.md)   
+[DLL'ler ve Visual C++ çalışma zamanı kitaplığı davranışı](../build/run-time-library-behavior.md)   
+[CRT Kitaplık Özellikleri](../c-runtime-library/crt-library-features.md)
 

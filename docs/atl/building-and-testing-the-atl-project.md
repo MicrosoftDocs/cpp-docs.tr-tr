@@ -1,5 +1,5 @@
 ---
-title: Derleme ve ATL projeyi test etme | Microsoft Docs
+title: Oluşturma ve ATL projesinde test etme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,18 +15,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee9be7db4251b6238265d53b6d84f24f39b7b9a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0a0ec4f98a36f6278c7e9101c4a8e8855d25758a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354736"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761627"
 ---
-# <a name="building-and-testing-the-atl-project"></a>Derleme ve ATL projeyi test etme
-Bölümünde belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-control.md), yeni bileşik denetim barındıran bir varsayılan HTML sayfasını projesinin ilk bileşenleri biridir. Bileşik Denetim değiştirme işlemini tamamladıktan sonra tıklatın **yapı çözümü** veya **çözümü yeniden derle** gelen **yapı** menüsü. Proje başarıyla oluşturulur sonra Internet Explorer veya başka bir tarayıcı bileşik denetim projenizin kök dizininde bulunan HTML sayfası yük ve denetim işlevselliğini test etmek.  
-  
- Ayrıca, bileşik denetimi Test kapsayıcısı aracını veya bir ActiveX denetimini barındırabilir herhangi bir uygulama kullanarak test edebilirsiniz. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcısı erişim hakkında bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+# <a name="building-and-testing-the-atl-project"></a>Oluşturma ve ATL projesinde test etme
+
+Belirtildiği gibi [bileşik denetim ekleme](../atl/inserting-a-composite-control.md), projenin ilk bileşenlerden biridir, yeni bileşik denetim barındıran bir varsayılan HTML sayfasını. Bileşik Denetim değiştirme tamamladıktan sonra tıklayın **Çözümü Derle** veya **çözümü yeniden derle** gelen **derleme** menü. Proje başarıyla oluşturulursa sonra Internet Explorer veya başka bir tarayıcı ile bileşik denetim projenizin kök dizininde bulunan HTML sayfası, yükleme ve denetim işlevselliğini test.
+
+Ayrıca Test kapsayıcı aracını veya bir ActiveX denetimini barındırmak başka bir uygulama kullanma, bileşik denetim test edebilirsiniz. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
 

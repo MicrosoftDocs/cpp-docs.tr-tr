@@ -1,5 +1,5 @@
 ---
-title: Eksik türler | Microsoft Docs
+title: Eksik türleri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,50 +20,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c357364280244ea62e90badcb91f76138e81a990
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ae26bf4f3e036e6e71acc090c174638133d2e881
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384378"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759612"
 ---
 # <a name="incomplete-types"></a>Eksik Türler
-Eksik bir tür, bir tanımlayıcıyı açıklayan, ancak tanımlayıcının boyutunu belirlemek için gereken bilgileri eksik olan bir türdür. Bir "eksik tür" aşağıdakilerden biri olabilir:  
-  
--   Üyelerini belirtmediğiniz bir yapı türü.  
-  
--   Üyelerini belirtmediğiniz bir birleşim türü.  
-  
--   Boyutlarını belirtmediğiniz bir dizi türü.  
-  
- Void türü, tamamlanamayan bir eksik türdür. Eksik bir türü tamamlamak için eksik bilgileri belirtin. Aşağıdaki örnekler, eksik türlerin nasıl oluşturulduğunu ve tamamlandığını gösterir.  
-  
--   Eksik bir yapı türü oluşturmak için üyelerini belirtmeden bir yapı türü bildirin. Bu örnekte, `ps` işaretçisi `student` adlı eksik bir yapı türüne işaret eder.  
-  
-    ```  
-    struct student *ps;  
-    ```  
-  
--   Eksik bir yapı türünü tamamlamak için aşağıdaki gibi aynı yapı türünü daha sonra aynı kapsamda üyeleri tanımlanmış olarak bildirin  
-  
-    ```  
-    struct student  
-    {  
-        int num;  
-    }                   /* student structure now completed */  
-    ```  
-  
--   Eksik bir dizi türü oluşturmak için yinelenme sayısını belirtmeden bir dizi türü bildirin. Örneğin:  
-  
-    ```  
-    char a[];  /* a has incomplete type */  
-    ```  
-  
--   Eksik bir dizi türünü tamamlamak için aşağıdaki gibi aynı adı daha sonra aynı kapsamda yinelenme sayısı ile birlikte bildirin  
-  
-    ```  
-    char a[25]; /* a now has complete type */  
-    ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve Türler](../c-language/declarations-and-types.md)
+
+Bir *eksik tür* , bir tanımlayıcıyı açıklayan, ancak tanımlayıcının boyutunu belirlemek için gereken bilgileri eksik bir türdür. Tamamlanmamış bir türü olabilir:
+
+- Üyelerini belirtmediğiniz bir yapı türü.
+
+- Üyelerini belirtmediğiniz bir birleşim türü.
+
+- Boyutlarını belirtmediğiniz bir dizi türü.
+
+**Void** türü, tamamlanamayan bir eksik tür. Eksik bir türü tamamlamak için eksik bilgileri belirtin. Aşağıdaki örnekler, eksik türlerin nasıl oluşturulduğunu ve tamamlandığını gösterir.
+
+- Eksik bir yapı türü oluşturmak için üyelerini belirtmeden bir yapı türü bildirin. Bu örnekte, `ps` işaretçisi `student` adlı eksik bir yapı türüne işaret eder.
+
+    ```C
+    struct student *ps;
+    ```
+
+- Eksik bir yapı türünü tamamlamak için aşağıdaki gibi aynı yapı türünü daha sonra aynı kapsamda üyeleri tanımlanmış olarak bildirin
+
+    ```C
+    struct student
+    {
+        int num;
+    }                   /* student structure now completed */
+    ```
+
+- Eksik bir dizi türü oluşturmak için yinelenme sayısını belirtmeden bir dizi türü bildirin. Örneğin:
+
+    ```C
+    char a[];  /* a has incomplete type */
+    ```
+
+- Eksik bir dizi türünü tamamlamak için aşağıdaki gibi aynı adı daha sonra aynı kapsamda yinelenme sayısı ile birlikte bildirin
+
+    ```C
+    char a[25]; /* a now has complete type */
+    ```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bildirimler ve Türler](../c-language/declarations-and-types.md)

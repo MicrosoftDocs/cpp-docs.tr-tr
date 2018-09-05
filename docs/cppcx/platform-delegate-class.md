@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: bdee3e432e3482b7f1a2c6e4be4c50abb1a6bfc8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609592"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763594"
 ---
 # <a name="platformdelegate-class"></a>Platform::delegate sınıfı
 Bir işlev nesnesi temsil eder.  

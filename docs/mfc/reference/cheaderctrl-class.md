@@ -75,11 +75,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ebe4b604958220a846ee3a91b1a6251f6f461de9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693473"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758862"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 Windows ortak üstbilgi denetimi işlevlerini sağlar.  

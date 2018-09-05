@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ec2651ae44955a4adfa1319e5528b7fe948a15bf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581189"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759414"
 ---
 # <a name="platformuintptr-value-class"></a>Platform::UIntPtr değer sınıfı
 Boyutu (32 bit veya 64-bit) platform için uygun olan bir işaretsiz işaretçi temsil eder.  

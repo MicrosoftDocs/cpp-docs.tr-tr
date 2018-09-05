@@ -26,120 +26,141 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 035d59d71dc7166b12b6e894803645aacda83887
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3526425bac6591b9330e0915d717ba5b47ee7b3a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218704"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755105"
 ---
 # <a name="irunnableobjectimpl-class"></a>Irunnableobjectımpl sınıfı
-Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi.  
-  
+
+Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<class T>  
 class IRunnableObjectImpl
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IRunnableObjectImpl`.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[IRunnableObjectImpl::GetRunningClass](#getrunningclass)|Çalışan denetimi CLSID değeri döndürür. ATL uygulamasını CLSID GUID_NULL için ayarlar ve E_UNEXPECTED döndürür.|  
-|[IRunnableObjectImpl::IsRunning](#isrunning)|Denetim çalışıp çalışmadığını belirtir. ATL uygulamasını TRUE döndürür.|  
-|[IRunnableObjectImpl::LockRunning](#lockrunning)|Denetim çalışır duruma geçirmek kilitler. ATL uygulamasını S_OK döndürür.|  
-|[IRunnableObjectImpl::Run](#run)|Çalıştırılacak denetim zorlar. ATL uygulamasını S_OK döndürür.|  
-|[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Denetimin ekli olduğunu gösterir. ATL uygulamasını S_OK döndürür.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- [IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi denetim çalışıp çalışmadığını belirlemek için çalıştırmak veya çalışır duruma geçirmek kilitlemek için zorlamak için bir kapsayıcı sağlar. Sınıf `IRunnableObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.  
-  
- **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `IRunnableObject`  
-  
- `IRunnableObjectImpl`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlctl.h  
-  
-##  <a name="getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass  
- Çalışan denetimi CLSID değeri döndürür.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*  
+Sınıfınız, türetilen `IRunnableObjectImpl`.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[IRunnableObjectImpl::GetRunningClass](#getrunningclass)|Çalışan denetimi CLSID değeri döndürür. ATL uygulamasını CLSID GUID_NULL için ayarlar ve E_UNEXPECTED döndürür.|
+|[IRunnableObjectImpl::IsRunning](#isrunning)|Denetim çalışıp çalışmadığını belirtir. ATL uygulamasını TRUE döndürür.|
+|[IRunnableObjectImpl::LockRunning](#lockrunning)|Denetim çalışır duruma geçirmek kilitler. ATL uygulamasını S_OK döndürür.|
+|[IRunnableObjectImpl::Run](#run)|Çalıştırılacak denetim zorlar. ATL uygulamasını S_OK döndürür.|
+|[IRunnableObjectImpl::SetContainedObject](#setcontainedobject)|Denetimin ekli olduğunu gösterir. ATL uygulamasını S_OK döndürür.|
+
+## <a name="remarks"></a>Açıklamalar
+
+[IRunnableObject](/windows/desktop/api/objidl/nn-objidl-irunnableobject) arabirimi denetim çalışıp çalışmadığını belirlemek için çalıştırmak veya çalışır duruma geçirmek kilitlemek için zorlamak için bir kapsayıcı sağlar. Sınıf `IRunnableObjectImpl` bu arabirimin bir varsayılan uygulamasını sağlar ve uygulayan `IUnknown` dökümünü almak için bilgi göndererek hata ayıklama cihazı oluşturur.
+
+**İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`IRunnableObject`
+
+`IRunnableObjectImpl`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlctl.h
+
+##  <a name="getrunningclass"></a>  IRunnableObjectImpl::GetRunningClass
+
+Çalışan denetimi CLSID değeri döndürür.
+
 ```
 HRESULT GetRunningClass(LPCLSID lpClsid);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- ATL uygulamasını kümeleri \* *lpClsid* GUID_NULL ve E_UNEXPECTED döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) Windows SDK içinde.  
-  
-##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning  
- Denetim çalışıp çalışmadığını belirtir.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+ATL uygulamasını kümeleri \* *lpClsid* GUID_NULL ve E_UNEXPECTED döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IRunnableObject::GetRunningClass](/windows/desktop/api/objidl/nf-objidl-irunnableobject-getrunningclass) Windows SDK içinde.
+
+##  <a name="isrunning"></a>  IRunnableObjectImpl::IsRunning
+
+Denetim çalışıp çalışmadığını belirtir.
+
 ```
 virtual BOOL IsRunning();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- ATL uygulamasını TRUE döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) Windows SDK içinde.  
-  
-##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning  
- Denetim çalışır duruma geçirmek kilitler.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+ATL uygulamasını TRUE döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IRunnableObject::IsRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-isrunning) Windows SDK içinde.
+
+##  <a name="lockrunning"></a>  IRunnableObjectImpl::LockRunning
+
+Denetim çalışır duruma geçirmek kilitler.
+
 ```
 HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- ATL uygulamasını S_OK döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) Windows SDK içinde.  
-  
-##  <a name="run"></a>  IRunnableObjectImpl::Run  
- Çalıştırılacak denetim zorlar.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+ATL uygulamasını S_OK döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IRunnableObject::LockRunning](/windows/desktop/api/objidl/nf-objidl-irunnableobject-lockrunning) Windows SDK içinde.
+
+##  <a name="run"></a>  IRunnableObjectImpl::Run
+
+Çalıştırılacak denetim zorlar.
+
 ```
 HRESULT Run(LPBINDCTX lpbc);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- ATL uygulamasını S_OK döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) Windows SDK içinde.  
-  
-##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject  
- Denetimin ekli olduğunu gösterir.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+ATL uygulamasını S_OK döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IRunnableObject::Run](/windows/desktop/api/objidl/nf-objidl-irunnableobject-run) Windows SDK içinde.
+
+##  <a name="setcontainedobject"></a>  IRunnableObjectImpl::SetContainedObject
+
+Denetimin ekli olduğunu gösterir.
+
 ```
 HRESULT SetContainedObject(BOOL fContained);
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- ATL uygulamasını S_OK döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) Windows SDK içinde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+ATL uygulamasını S_OK döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IRunnableObject::SetContainedObject](/windows/desktop/api/objidl/nf-objidl-irunnableobject-setcontainedobject) Windows SDK içinde.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -18,61 +18,69 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6660f72dbd91a41670b3c5f8772d21caf4b8abc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87b23ba46ee4a8e25c15b4d9e51b87c444da67f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362134"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758221"
 ---
 # <a name="csimplearrayequalhelper-class"></a>CSimpleArrayEqualHelper sınıfı
-Bu sınıf için bir Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf için Yardımcısı, [CSimpleArray](../../atl/reference/csimplearray-class.md) sınıfı.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <class T>  
 class CSimpleArrayEqualHelper
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Türetilmiş bir sınıf.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSimpleArrayEqualHelper::IsEqual](#isequal)|(Statik) İki testleri `CSimpleArray` nesne eşitliği öğeleri.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu özellikleri sınıf için bir ektir `CSimpleArray` sınıfı. İçinde depolanan iki öğe karşılaştırma için bir yöntem sağlar. bir `CSimpleArray` nesnesi. Varsayılan olarak, öğeleri kullanılarak karşılaştırılır **operator=()**, ancak dizi kendi eşitlik işleci eksikliği karmaşık veri türlerini içeriyorsa, bu sınıfın geçersiz kılmak gerekir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlsimpcoll.h  
-  
-##  <a name="isequal"></a>  CSimpleArrayEqualHelper::IsEqual  
- İki testleri `CSimpleArray` nesne eşitliği öğeleri.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+`T`  
+Türetilmiş bir sınıf.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSimpleArrayEqualHelper::IsEqual](#isequal)|(Statik) İki `CSimpleArray` nesne eşitliği öğeleri.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu nitelikler sınıfı için bir ektir `CSimpleArray` sınıfı. Depolanan karşılaştırma iki öğe için bir yöntem sağlar. bir `CSimpleArray` nesne. Varsayılan olarak, öğeleri kullanılarak karşılaştırılır **operator=()**, ancak dizi kendi eşitlik işleci eksik karmaşık veri türleri içeriyorsa, bu sınıf geçersiz kılmak gerekir.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlsimpcoll.h
+
+##  <a name="isequal"></a>  CSimpleArrayEqualHelper::IsEqual
+
+İki `CSimpleArray` nesne eşitliği öğeleri.
+
 ```
 static bool IsEqual(
     const T& t1,
     const T& t2);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *T1*  
- T türünde bir nesne  
-  
- *T2*  
- T türünde bir nesne  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Öğeleri yanlış Aksi takdirde, eşitse true döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CSimpleArray sınıfı](../../atl/reference/csimplearray-class.md)   
- [CSimpleArrayEqualHelperFalse sınıfı](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T1*  
+T türünde bir nesne
+
+*T2*  
+T türünde bir nesne
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Öğe yanlış Aksi takdirde, eşitse true döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CSimpleArray sınıfı](../../atl/reference/csimplearray-class.md)   
+[CSimpleArrayEqualHelperFalse sınıfı](../../atl/reference/csimplearrayequalhelperfalse-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

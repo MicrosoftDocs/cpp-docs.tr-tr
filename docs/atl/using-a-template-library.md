@@ -14,18 +14,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48d7a8838097c862e3d4c16e15ec951441b72794
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 91a9c10bef285780ded145e33800ebd3db198827
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357850"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754806"
 ---
-# <a name="using-a-template-library"></a>Bir şablon kitaplığı kullanma
-Bir şablon bakıma bir makro değil. Makro gibi bir şablon çağırma (uygun parametre değiştirme ile) genişletmek için yazdığınız kodu neden olur. Ancak, bir şablon bu parametreler olarak geçirin türlerine dayanan yeni sınıflar oluşturulmasını sağlayacak daha gider. Bu yeni sınıflar şablon kodunuzda ifade işlemi gerçekleştirmenin tür kullanımı uyumlu şekilde uygulayın.  
-  
- Şablon kitaplıkları ATL gibi geleneksel C++ sınıf kitaplıklarından bunlar genellikle yalnızca kaynak kodu olarak (veya kaynak kodu biraz, çalışma zamanında destekleme ile) sağlanan açısından farklıdır ve doğası gereği kendiliğinden veya mutlaka hiyerarşik değildir. İstediğiniz işlevi almak için bir sınıftan türetilen yerine bir şablondan bir sınıf örneği oluşturur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL’ye Giriş](../atl/introduction-to-atl.md)
+# <a name="using-a-template-library"></a>Şablon kitaplığı kullanma
+
+Bir makro bakıma şablonudur. Bir makro olduğu gibi bir şablon çağırma (uygun parametre değiştirme ile) genişletmek için yazdığınız koda neden olur. Ancak, bir şablon parametre olarak geçirmeniz türlere göre yeni sınıfların izin vermek için bunu daha gider. Bu yeni sınıflar şablon kodunuzda ifade işlemi gerçekleştirmenin tür kullanımı uyumlu şekilde uygulayın.
+
+Şablon kitaplıkları ile ATL gibi geleneksel C++ sınıf kitaplıklarına bunlar genellikle kaynak kodu olarak yalnızca (veya kaynak kodu ile biraz, çalışma zamanında destekleme) sağlanan bakımından farklıdır ve doğası gereği kendiliğinden ya da mutlaka hiyerarşik değildir. İstediğiniz işlevi almak için bir sınıftan türetme yerine bir şablondan bir sınıf örneği oluşturur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL’ye Giriş](../atl/introduction-to-atl.md)
 

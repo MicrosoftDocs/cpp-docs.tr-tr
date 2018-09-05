@@ -53,11 +53,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 5082490b9dd2e37090bac747e592b62ce51ac26a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200908"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754975"
 ---
 # <a name="cobarray-class"></a>CObArray sınıfı
 Dizilerini destekler `CObject` işaretçileri.  

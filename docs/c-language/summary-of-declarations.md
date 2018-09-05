@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a391ee0ee21925c59e5a95cb060f9897b3ef223c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6e63fae717fc3e5c223ad512b5cd2eae82160431
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214872"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754658"
 ---
 # <a name="summary-of-declarations"></a>Bildirimlerin Özeti
 
@@ -37,11 +37,11 @@ ms.locfileid: "43214872"
 
 *init-declarator-list*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*init-declarator*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list***,***init-declarator* 
+&nbsp;&nbsp;&nbsp;&nbsp;*init-declarator-list***,***init-declarator*
 
 *init-declarator*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci***=***Başlatıcı*  / \* skaler başlatma     \*/
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimci***=***Başlatıcı*  / \* skaler başlatma \*/
 
 *depolama sınıfı tanımlayıcısı*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Otomatik**<br/>
@@ -115,7 +115,8 @@ ms.locfileid: "43214872"
 &nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*
 
 *struct veya union tanımlayıcısı*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim tanımlayıcısı*<sub>iyileştirilmiş</sub> **{** *yapı bildirim listesi* **}** *yapı veya birleşim tanımlayıcı*
+&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcı*<sub>iyileştirilmiş</sub> **{** *yapı bildirim listesi* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcısı*
 
 *yapı veya birleşim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Yapı**<br/>

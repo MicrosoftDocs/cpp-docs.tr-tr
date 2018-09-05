@@ -1,5 +1,5 @@
 ---
-title: Statement (C) dönüş | Microsoft Docs
+title: Statement (C) iade | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,27 +14,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08407f26e3c3d9064fded1620538262b0c91e2ba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2bd1f1a9f441a8c4b5e2cf9418653a6a0544380e
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391213"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759089"
 ---
 # <a name="return-statement-c"></a>return Deyimi (C)
-`return` Deyimi bir işlev yürütülmesi sonlandırır ve denetim çağıran işleve geri döndürür. Çağrının hemen ardından noktada arama işlevinde yürütme sürdürür. A `return` deyimi bir değer de çağıran işleve geri dönebilirsiniz. Bkz: [dönüş türü](../c-language/return-type.md) daha fazla bilgi için.  
+`return` Deyimi bir işlevin yürütülmesini sonlandırır ve denetim çağırma işlevine döndürür. Çağıran işlevin çağrının hemen ardından bir noktada yürütmeyi devam ettirir. A `return` ifadesi bir değer de çağırma işlevine dönebilirsiniz. Bkz: [dönüş türü](../c-language/return-type.md) daha fazla bilgi için.  
   
-## <a name="syntax"></a>Sözdizimi  
- *atlama deyimi*:  
- **dönüş***ifade* kabul **;**   
+## <a name="syntax"></a>Sözdizimi
+
+*atlama-deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**dönüş** *ifade*<sub>iyileştirilmiş</sub> **;**
+
+Değerini *ifade*, varsa, çağırma işlevine döndürülür. Varsa *ifade* olan atlanırsa, işlev dönüş değeri tanımsızdır. İfade varsa, değerlendirilir ve ardından işlev tarafından döndürülen tür dönüştürülür. İşlev dönüş türüyle bildirilmişlerse `void`, `return` içeren bir ifade deyimi, bir uyarı oluşturur ve ifade değerlendirilmez.  
   
- Değeri *ifade*, varsa, çağıran işleve geri döndürülür. Varsa *ifade* olan atlanırsa, işlevin dönüş değeri tanımlanmamış. İfade varsa, değerlendirilir ve işlev tarafından döndürülen tür dönüştürülür. İşlev dönüş türü ile bildirilmedi, `void`, `return` deyimi bir ifade içeren bir uyarı oluşturur ve ifade değerlendirilmez.  
+Hayır ise `return` çağrılan işlevin son deyim yürütüldükten sonra deyimi görünen işlev tanımında denetimi otomatik olarak çağırma işlevine döndürür. Bu durumda, çağrılan işlev dönüş değeri tanımsızdır. Dönüş değeri gerekli değilse, için işlevi bildirin `void` dönüş türü; Aksi takdirde, varsayılan dönüş türü `int`.  
   
- Öyle değilse `return` çağrılan işlev son deyim yürütüldükten sonra deyimi işlev tanımında görünüyor, denetimini otomatik olarak çağıran işleve geri döndürür. Bu durumda, çağrılan işlev dönüş değerini tanımlanmamıştır. Dönüş değeri gerekli değilse işleve sahip bildirme `void` dönüş türü; Aksi takdirde, varsayılan dönüş türü: `int`.  
+Birçok Programcı parantez içine almak için kullanın. *ifade* bağımsız değişkeni `return` deyimi. Ancak, C parantezler gerektirmez.  
   
- Birçok Programcı parantez içine kullanmasını *ifade* bağımsız değişkeni `return` deyimi. Ancak, C parantez gerektirmez.  
-  
- Bu örnekte gösterilmiştir `return` deyimi:  
+Bu örnek gösterir `return` deyimi:  
   
 ```  
 #include <limits.h>  
@@ -68,13 +69,13 @@ void draw( int i, long long ll )
   
 ```  
   
- Bu örnekte, `main` işlevi iki işlevi çağırır: `sq` ve `draw`. `sq` İşlevi değerini döndürür `x * x` için `main`, dönüş değeri atandığı burada `y`. Dönüş ifadesinde parantezler `sq` ifadenin bir parçası değerlendirilir ve dönüş deyimi tarafından gerekli değildir. Dönüş türüne dönüştürmeden önce dönüş ifadesi değerlendirilir beri `sq` beklenmeyen sonuçlara yol açabilecek bir olası tamsayı taşma önlemek için dönüş türü ile bir cast ifadesi türü zorlar. `draw` İşlevi olarak bildirilen bir `void` işlevi. Bunu parametrelerinin değerlerini yazdırır ve ardından boş return deyiminin işlevi sona erer ve bir değer döndürmüyor. Dönüş değerini atama denemesi `draw` bir tanılama iletisi verilmesine neden olur. `main` İşlevi sonra değerini döndürür `x` işletim sistemi.  
+Bu örnekte, `main` işlevi iki işlev çağrısı: `sq` ve `draw`. `sq` İşlevi değerini döndürür `x * x` için `main`, dönüş değeri atanır burada `y`. Dönüş ifade parantezler `sq` ifadesinin bir parçası değerlendirilir ve dönüş deyimi tarafından gerekli değildir. Dönüş türüne dönüştürmeden önce dönüş ifadesi değerlendirilir beri `sq` beklenmeyen sonuçlara neden bir olası tamsayı taşma önlemek için dönüş türü ile bir atama ifadesi türü zorlar. `draw` İşlevi olarak bildirilen bir `void` işlevi. Kendi parametre değerlerini yazdırır ve ardından boş dönüş deyimi işlev sona erer ve bir değer döndürmez. Dönüş değeri atama denemesi `draw` verilmesi bir tanılama iletisi neden olur. `main` İşlevi ardından değerini döndürür `x` işletim sistemi.  
   
- Örnek çıktı şu şekildedir:  
+Örnek çıktısı şuna benzer:  
   
 ```Output  
 i = 2147483647, ll = 4611686014132420609  
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Deyimler](../c-language/statements-c.md)
+[Deyimler](../c-language/statements-c.md)

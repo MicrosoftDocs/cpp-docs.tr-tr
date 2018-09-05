@@ -15,34 +15,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af47bbebdf3b3a71e2b63b07a1fa467801728061
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6b3e828af6232dec6ebfb4558fdb8501c7f90abb
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385682"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757493"
 ---
 # <a name="c-bit-fields"></a>C Bit Alanları
-Bir yapı veya birleşim üyeleri için Bildirimciler yanı sıra yapısı bildirimcisi de bir belirtilen bit sayısı kadar bir "bit alanı." olarak adlandırılan, olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile ayarlanır devre dışı. Bir bit alanı bir tamsayı türü olarak yorumlanır.  
+Bir yapı veya birleşim üyeleri için Bildirimciler ek olarak, bir yapı bildirimci de BITS "bit alanı." adlı, belirtilen sayıda olabilir Uzunluğu alan adı bildirimcisi gelen iki nokta ile alınır. Bir bit alanı integral türü yorumlanır.  
   
-## <a name="syntax"></a>Sözdizimi  
- *Yapı bildirimcisi*:  
- *bildirimcisi*  
+## <a name="syntax"></a>Sözdizimi
+
+*Yapı-declarator*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimci*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *bildirimci*<sub>iyileştirilmiş</sub> **:** *sabit-ifade*
   
- *tür belirteci bildirimcisi* kabul **:** *sabit ifadesi*  
+*Sabit-ifade* bit alanının genişliğini belirtir. *Tür tanımlayıcısı* için `declarator` olmalıdır `unsigned int`, **signed int**, veya `int`ve *sabit-ifade* bir negatif olmamalıdır tamsayı değeri. Değer sıfır ise bildirimi olmayan `declarator`. Diziler bit alanları bit alanlarının ve bit alanları döndüren işlev işaretçileri izin verilmez. İsteğe bağlı `declarator` bit alanı adları. Bit alanları yalnızca bir yapının bir parçası olarak bildirilebilir. Address-of işlecini (**&**) bit alanı bileşenleri için uygulanamaz.  
   
- *Sabit ifadesi* alan genişliğini bit cinsinden belirtir. *Tür belirteci* için `declarator` olmalıdır `unsigned int`, **imzalı int**, veya `int`ve *sabit ifadesi* negatif olmayan bir olmalıdır tamsayı değeri. Değer sıfırsa bildirimi sahip olmayan `declarator`. Bit alanları dizileri, bit alanları ve bit alanları dönmeden işlev işaretçileri izin verilmez. İsteğe bağlı `declarator` bit alan adları. Bit alanları yalnızca bir yapısının bir parçası bildirilebilir. Address-of işleci (**&**) bit alanı bileşenlerine uygulanamaz.  
+Adsız bit alanları başvurulamaz ve çalışma zamanında içeriklerini tahmin edilemez. Bunlar "kukla" alanları olarak hizalama amaçları için kullanılabilir. 0 içinde aşağıdaki üyesi için depolama garanti gibi genişliğini belirtilen adlandırılmamış bir bit alanı *yapı bildirim listesi* başlangıcı bir `int` sınır.  
   
- Adlandırılmamış bit alanları başvurulamaz ve içerikleri çalışma zamanında öngörülemeyen sonuçlara yol açabilir. Bunlar "kukla" alanlar olarak hizalama amacıyla kullanılabilir. Genişlik 0 içinde aşağıdaki üyesi için o depolama garanti olarak belirtilen bir adlandırılmamış bit alanı *yapısı bildirimi listesi* üzerinde başlayan bir `int` sınır.  
-  
- Bit alanları ayrıca bit desenini içerecek şekilde yeterince uzun olmalıdır. Örneğin, bu iki ifade geçerli değil:  
+Bit alanları da içeren bit deseni için yeterince uzun olması gerekir. Örneğin, bu iki ifade geçerli değil:  
   
 ```  
 short a:17;        /* Illegal! */  
 int long y:33;     /* Illegal! */  
 ```  
   
- Bu örnek iki boyutlu bir dizi adlı yapıların tanımlar `screen`.  
+Bu örnek iki boyutlu bir dizi adlandırılmış yapıları tanımlar `screen`.  
   
 ```  
 struct   
@@ -54,15 +54,15 @@ struct
 } screen[25][80];  
 ```  
   
- Dizi 2.000 öğeleri içerir. Her öğe dört bit alanı üyelerini içeren bir tek tek yapısıdır: `icon`, `color`, `underline`, ve `blink`. Her yapısı iki bayt boyutudur.  
+Dizi 2.000 öğeleri içerir. Dört bit alanı üyelerini içeren tek bir yapı her öğesidir: `icon`, `color`, `underline`, ve `blink`. Her yapı boyutu iki bayttır.  
   
- Bit alanları tamsayı türü olarak aynı semantiklerine sahip. Başka bir deyişle, kaç tane BITS bit alanında yer alan bağımsız olarak aynı temel türünde bir değişken kullanılacak olarak bir bit alan ifadelerinde tam olarak aynı şekilde kullanılır.  
+Bit alanları, tamsayı türü ile aynı semantiğe sahip. Başka bir deyişle, bit alanı kaç BITS ne olursa olsun aynı temel türünde bir değişken kullanılacak bir bit alanı ifadeleri tam olarak aynı şekilde kullanılır.  
   
- **Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bit alanları olarak tanımlanan `int` imzalanmış olarak kabul edilir. Bir Microsoft uzantısı için ANSI C Standart sağlar `char` ve **uzun** türleri (her ikisi de **imzalı** ve `unsigned`) bit alanları için. Bit alanları temel türü ile adlandırılmamış **uzun**, **kısa**, veya `char` (**imzalı** veya `unsigned`) bir sınır hizalama temel türü için uygun zorla.  
+Bit alanları olarak tanımlanan `int` işaretli olarak kabul edilir. ANSI C standardı için bir Microsoft uzantısı sağlar `char` ve **uzun** türleri (her ikisi de **imzalı** ve `unsigned`) bit alanları için. Bit alanları temel türüyle adlandırılmamış **uzun**, **kısa**, veya `char` (**imzalı** veya `unsigned`) bir sınır hizalamayı temel türü için uygun zorlayın.  
   
- Bit alanları, bir tamsayı içinde en az önemli olan bitten en önemli bite doğru ayrılır. Aşağıdaki kodda  
+Bit alanları, bir tamsayı içinde en az önemli olan bitten en önemli bite doğru ayrılır. Aşağıdaki kodda  
   
 ```  
 struct mybitfields  
@@ -80,16 +80,16 @@ int main( void );
 }  
 ```  
   
- bitler aşağıdaki gibi düzenlenir:  
+bitler aşağıdaki gibi düzenlenir:  
   
 ```  
 00000001 11110010  
 cccccccb bbbbaaaa  
 ```  
   
- Tamsayı değerleri tamsayı yüksek bayt önce düşük baytını işlemciler 8086 ailesi depolar bu yana `0x01F2` yukarıdaki fiziksel bellekte depolanır `0xF2` arkasından `0x01`.  
+İşlemci 8086 ailesi düşük baytını yüksek bayttan, tamsayı önce tamsayı değerleri depoladığından `0x01F2` yukarıdaki fiziksel bellekte depolanır `0xF2` ardından `0x01`.  
   
- **SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapı Bildirimleri](../c-language/structure-declarations.md)
+[Yapı Bildirimleri](../c-language/structure-declarations.md)

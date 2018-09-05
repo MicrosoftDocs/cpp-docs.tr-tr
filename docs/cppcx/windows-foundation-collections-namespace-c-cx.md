@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: de406267a4c18cace88882b26f6b249fc5a0efa3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42586717"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761049"
 ---
 # <a name="windowsfoundationcollections-namespace-ccx"></a>Windows::Foundation:: Collections Namespace (C + +/ CX)
 C + +/ CX Windows::Foundation:: Collections ad alanı vektör, VectorView, eşleme ve MapView koleksiyon sınıfları kullanmayı kolaylaştırmak işlevlerle tamamlar.  

@@ -26,15 +26,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95c2bff6aa96ad5c2eea127fa643641d268e3cd9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4aaf456e83968cf47573a9ea2e765f9e7d552625
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392581"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760256"
 ---
 # <a name="ismbc-routines"></a>_ismbc Rutinleri
-Her **_ismbc** yordamı testleri belirli bir birden çok baytlı karakter `c` belirli bir koşul için.  
+Her **_ismbc** rutini, belirli bir çok baytlı karakterin `c` belirli bir koşul için.  
   
 |||  
 |-|-|  
@@ -43,42 +43,42 @@ Her **_ismbc** yordamı testleri belirli bir birden çok baytlı karakter `c` be
 |[_ismbchira, _ismbchira_l, _ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|[_ismbclower, _ismbclower_l, _ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Her sınama sonucu **_ismbc** yordamı birden çok baytlı kod sayfasına yürürlükte bağlıdır. Çok baytlı kod sayfaları tek baytlı alfabetik karakterler var. Varsayılan olarak, birden çok baytlı kod sayfası program başlangıçta işletim sisteminden alınan sistem varsayılan ANSI kod sayfası ayarlanır. Kullanılmakta olan birden çok baytlı kod sayfasını değiştirmek veya sorguyu [_getmbcp](../c-runtime-library/reference/getmbcp.md) veya [_setmbcp](../c-runtime-library/reference/setmbcp.md)sırasıyla.  
+Her test sonucu **_ismbc** yordamı çok baytlı kod sayfasına yürürlükte bağlıdır. Çok baytlı kod sayfalarında tek baytlı alfabetik karakterler vardır. Varsayılan olarak, çok baytlı kod sayfası, program başlangıcında işletim sisteminden alınan sistem varsayılan ANSI kod sayfasına ayarlanır. Sorgu veya ile kullanılan çok baytlı kod sayfasına değiştirmeniz [_getmbcp](../c-runtime-library/reference/getmbcp.md) veya [_setmbcp](../c-runtime-library/reference/setmbcp.md)sırasıyla.  
   
- Çıkış değerini etkilenir `LC_CTYPE` yerel kategori ayarı; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** bu yerel ayara bağımlı davranış geçerli yerel kullanılmak soneki; sürümleriyle **_l** soneki, yerel ayar parametresi kullanmasını dışında aynıdır Bunun yerine geçirildi.  
+Çıkış değeri tarafından etkilenen `LC_CTYPE` yerel ayarının kategori ayarına; bkz: [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) daha fazla bilgi için. Bu işlevlerin sürümleri **_l** soneki geçerli yerel ayarı kullanır bu yerel ayara bağlı davranışı için; sürümleriyle **_l** sonekine bunların yerel ayar parametresini kullanmalarıdır Bunun yerine iletilmiş.  
   
-|Yordam|Test durumu|Kod sayfası 932 örneği|  
+|Yordam|Test koşulu|Kod sayfası 932 örneği|  
 |-------------|--------------------|---------------------------|  
-|[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfasayısal|Sıfır olmayan ve yalnız döndürür `c` ASCII İngilizce harf tek baytlı gösterimidir: örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|  
-|[_ismbcalpha, _ismbcalpha\_](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Sıfır olmayan ve yalnız döndürür `c` ASCII İngilizce harf tek baytlı gösterimidir: örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6 < =`c`< 0xDF =.|  
-|[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Basamak|Sıfır olmayan ve yalnız döndürür `c` ASCII basamaklı tek baytlı gösterimidir: 0x30 < =`c`< 0x39 =.|  
-|[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Grafiği|Sıfır olmayan ve yalnız döndürür `c` ASCII veya katakana yazdırılabilir dışında herhangi bir karakter boşluk () tek baytlı gösterimidir. Örnekler için bkz: `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|  
-|[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Geçerli birden çok baytlı karakter|Sıfır olmayan IF ve yalnızca ilk baytı döndürür `c` 0x81-0x9F veya 0xE0 - aralıklara ikinci 0x40-0x7E veya 0x80 - aralıklara FC bayttır 0xFC, açıkken.|  
-|[_ismbclower, _ismbclower_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Küçük alfabetik|Sıfır olmayan ve yalnız döndürür `c` ASCII küçük harfli İngilizce harf tek baytlı gösterimidir: 0x61 < =`c`< 0x7A =.|  
-|[_ismbcprint, _ismbcprint_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Yazdırılabilir|Sıfır olmayan ve yalnız döndürür `c` boşluk () dahil olmak üzere tüm ASCII veya katakana yazdırılabilir karakter tek baytlı gösterimidir: örnekler için bkz: `_ismbcspace`, `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|  
-|[_ismbcpunct, _ismbcpunct_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Noktalama işaretleri|Sıfır olmayan ve yalnız döndürür `c` ASCII veya katakana herhangi bir noktalama karakteri tek baytlı gösterimidir.|  
-|[_ismbcblank, _ismbcblank_l,](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk veya yatay sekme|Sıfır olmayan ve yalnız döndürür `c` bir boşluk karakteri veya yatay sekme karakteri tek baytlı gösterimidir: `c`0x20 = veya `c`0x09 =.|  
-|[_ismbcspace, _ismbcspace_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk|Sıfır olmayan ve yalnız döndürür `c` bir boşluk karakteri: `c`0x20 veya 0x09 = < =`c`< = 0x0D.|  
-|[_ismbcsymbol, _ismbcsymbol_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Birden çok baytlı simgesi|Sıfır olmayan ve yalnız döndürür 0x8141 < =`c`< 0x81AC =.|  
-|[_ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Alfabetik büyük harf|Sıfır olmayan ve yalnız döndürür `c` ASCII büyük İngilizce harf tek baytlı gösterimidir: 0x41 < =`c`< 0x5A =.|  
+|[_ismbcalnum, _ismbcalnum_l](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfasayısal|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcdigit` ve `_ismbcalpha`.|  
+|[_ismbcalpha, _ismbcalpha\_](../c-runtime-library/reference/ismbcalnum-functions.md)|Alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII İngilizce harfin ise: örnekler için bkz: `_ismbcupper` ve `_ismbclower`; veya katakana harf: 0xA6 < =`c`< 0xDF =.|  
+|[_ismbcdigit, _ismbcdigit_l](../c-runtime-library/reference/ismbcalnum-functions.md)|basamak|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII basamak ise: 0x30 < =`c`< 0x39 =.|  
+|[_ismbcgraph, _ismbcgraph_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Grafiği|Yalnız ve yalnızca döndürür `c` boşluk () dışında bir ASCII veya katakana yazdırılabilir karakter tek bayt gösterimidir. Örnekler için bkz: `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|  
+|[_ismbclegal, _ismbclegal_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Geçerli çok baytlı karakter|Yalnız ve yalnızca ilk baytı döndürür `c` ikinci baytı aralıklar 0x40-0x7E veya 0x80 - FC ederken aralıklar 0x81-0x9F veya 0xE0 - 0xfc aralığında olan.|  
+|[_ismbclower, _ismbclower_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Küçük harf alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII küçük harfli İngilizce harfin ise: 0x61 < =`c`< 0x7A =.|  
+|[_ismbcprint, _ismbcprint_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Yazdırılabilir|Yalnız ve yalnızca döndürür `c` herhangi bir karakterin boşluk () dahil olmak üzere ASCII veya katakana yazdırılabilir tek baytlık bir gösterimiyse: örnekler için bkz: `_ismbcspace`, `_ismbcdigit`, `_ismbcalpha`, ve `_ismbcpunct`.|  
+|[_ismbcpunct, _ismbcpunct_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Noktalama işaretleri|Yalnız ve yalnızca döndürür `c` herhangi bir ASCII veya katakana noktalama karakterinin tek baytlık gösterimidir.|  
+|[_ismbcblank, _ismbcblank_l,](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk veya yatay sekme|Yalnız ve yalnızca döndürür `c` bir boşluk karakteri veya bir yatay sekme karakterinin tek baytlık bir gösterimiyse olduğu: `c`= 0x20 veya `c`= 0x09.|  
+|[_ismbcspace, _ismbcspace_l](../c-runtime-library/reference/ismbcgraph-functions.md)|Boşluk|Yalnız ve yalnızca döndürür `c` bir boşluk karakteri: `c`= 0x20 veya 0x09 < =`c`< = 0x0D.|  
+|[_ismbcsymbol, _ismbcsymbol_l](../c-runtime-library/reference/ismbclegal-ismbclegal-l-ismbcsymbol-ismbcsymbol-l.md)|Çok baytlı sembolü|Yalnız ve yalnızca döndürür 0x8141 < =`c`< 0x81AC =.|  
+|[_ismbcupper, _ismbcupper_l](../c-runtime-library/reference/ismbclower-ismbclower-l-ismbcupper-ismbcupper-l.md)|Büyük alfabetik|Yalnız ve yalnızca döndürür `c` tek baytlık ASCII büyük harfli İngilizce harfin ise: 0x41 < =`c`< 0x5A =.|  
   
- **Kod sayfası 932 özel**  
+**Kod sayfası 932 özel**  
   
- Aşağıdaki yordamlar kod sayfası 932 özgüdür.  
+Aşağıdaki yordamlar kod sayfası 932'ye özeldir.  
   
-|Yordam|(Yalnızca kod sayfası 932) koşulu test|  
+|Yordam|Test koşulu (yalnızca kod sayfası 932)|  
 |-------------|-------------------------------------------|  
 |[_ismbchira, _ismbchira_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Çift baytlık Hiragana: 0x829F < =`c`< 0x82F1 =.|  
 |[_ismbckata, _ismbckata_l](../c-runtime-library/reference/ismbchira-ismbchira-l-ismbckata-ismbckata-l.md)|Çift baytlık katakana: 0x8340 < =`c`< 0x8396 =.|  
 |[_ismbcl0, _ismbcl0_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS olmayan Kanji: 0x8140 < =`c`< 0x889E =.|  
-|[_ismbcl1, _ismbcl1_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS düzey 1: 0x889F < =`c`< 0x9872 =.|  
+|[_ismbcl1, _ismbcl1_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|Düzey JIS-1: 0x889F < =`c`< 0x9872 =.|  
 |[_ismbcl2, _ismbcl2_l](../c-runtime-library/reference/ismbcl0-ismbcl0-l-ismbcl1-ismbcl1-l-ismbcl2-ismbcl2-l.md)|JIS düzey 2: 0x989F < =`c`< 0xEA9E =.|  
   
- `_ismbcl0`, `_ismbcl1`, ve `_ismbcl2` denetleyin belirtilen değere `c` test koşullar açıklandığı önceki eşleşmeleri tablo, ancak, denetleme `c` geçersiz bir birden çok baytlı karakter. Alt bayt aralıkları 0x00-0x3F, 0x7F veya 0xFD - 0xFF ise, bu işlevler karakter test koşulu karşılayan gösteren sıfır olmayan bir değer döndürür. Kullanım [_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) birden çok baytlı karakter tanımlı olup olmadığını sınamak için.  
+`_ismbcl0`, `_ismbcl1`, ve `_ismbcl2` kontrol belirtilen değere `c` önceki açıklanan test koşullarıyla eşleşen tablo, ancak denetlemez `c` geçersiz bir çok baytlı karakter. Düşük bayt 0x00-0x3F, 0x7F veya 0xFD - aralıklardaki 0xFF aralıklarındaysa, bu işlevler, karakterin sınama koşulunu karşıladığını belirterek sıfır dışında bir değeri döndürür. Kullanım [_ismbbtrail, _ismbbtrail_l](../c-runtime-library/reference/ismbbtrail-ismbbtrail-l.md) çok baytlı karakterin tanımlanıp tanımlanmadığını sınamak için.  
   
- **Son kod sayfası 932 özel**  
+**END kod sayfası 932 özel**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Karakter Sınıflaması](../c-runtime-library/character-classification.md)   
- [is, isw rutinleri](../c-runtime-library/is-isw-routines.md)   
- [_ismbb Yordamları](../c-runtime-library/ismbb-routines.md)
+[Karakter Sınıflaması](../c-runtime-library/character-classification.md)   
+[is, isw rutinleri](../c-runtime-library/is-isw-routines.md)   
+[_ismbb Yordamları](../c-runtime-library/ismbb-routines.md)

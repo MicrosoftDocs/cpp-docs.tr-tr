@@ -16,16 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95d5018667101312355e7e7263c18ce723690d88
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2236f6f7c343f5555ae31ad20ac0d79b6c9279d9
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32361036"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43754741"
 ---
 # <a name="using-task-manager"></a>Görev Yöneticisi'ni kullanma
-En basit yolu bir hizmette hata ayıklamak için Görev Yöneticisi'ni kullanarak biridir. Hizmet çalışırken, Görev Yöneticisi'ni başlatın ve tıklatın **işlemleri** sekmesi. EXE adına sağ tıklayın ve ardından **hata ayıklama**. Bu, çalışan işlem için bağlı Visual C++ çalıştırır. Şimdi, **bölün** üzerinde **hata ayıklama** menü kodunuzda kesme noktaları ayarlamanıza olanak sağlar. Tıklatın **çalıştırmak** seçili noktalarınıza çalıştırmak için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklama İpuçları](../atl/debugging-tips.md)
+
+En basit yolu, bir hizmette hata ayıklamak için Görev Yöneticisi'ni kullanarak biridir. Hizmet çalışırken, Görev Yöneticisi'ni başlatın ve tıklayın **işlemleri** sekmesi. Bu EXE dosyasının adına sağ tıklayın ve ardından **hata ayıklama**. Bu, çalışan bir işleme eklenmiş Visual C++ çalıştırır. Şimdi tıklayın **sonu** üzerinde **hata ayıklama** menüsünde kodunuzda kesme noktaları ayarlamanıza olanak sağlar. Tıklayın **çalıştırma** seçilen kesme noktalarınız için çalıştırılacak.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hata Ayıklama İpuçları](../atl/debugging-tips.md)
 

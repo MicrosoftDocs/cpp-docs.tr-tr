@@ -16,27 +16,30 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a54da05cb71114f455b24d18004049b2fa91b2a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 6c2fb505fd48aac41e49fcbe459fa0bc9c9a579f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959345"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756921"
 ---
 # <a name="control-containment-classes"></a>Denetim kapsamı sınıfları
-Aşağıdaki sınıflar, denetimleri barındırma için kapsama destek sağlar:  
-  
--   [CAxWindow](../atl/reference/caxwindow-class.md) , bir ActiveX denetimi barındıran bir pencere düzenleme yöntemlerini sağlar.  
-  
--   [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme yöntemlerini sağlar.  
-  
--   [Iaxwinambientdispatch](../atl/reference/iaxwinambientdispatch-interface.md) barındırılan bir denetim için kullanılabilir ortam özelliklerini ayarlamak için bu arabirimdeki yöntemleri çağırın.  
-  
--   [Iaxwinhostwindow](../atl/reference/iaxwinhostwindow-interface.md) oluşturun ve/veya bir konak nesnesi için bir denetim eklemek için veya bir arabirim barındırılan denetiminden almak için bu arabirimdeki yöntemleri çağırın.  
-  
-## <a name="related-articles"></a>İlgili Makaleler  
- [ATL Denetim Kapsamı SSS](../atl/atl-control-containment-faq.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)
+
+Aşağıdaki sınıflar, denetimleri barındırma için kapsama destek sağlar:
+
+- [CAxWindow](../atl/reference/caxwindow-class.md) , bir ActiveX denetimi barındıran bir pencere düzenleme yöntemlerini sağlar.
+
+- [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme yöntemlerini sağlar.
+
+- [Iaxwinambientdispatch](../atl/reference/iaxwinambientdispatch-interface.md) barındırılan bir denetim için kullanılabilir ortam özelliklerini ayarlamak için bu arabirimdeki yöntemleri çağırın.
+
+- [Iaxwinhostwindow](../atl/reference/iaxwinhostwindow-interface.md) oluşturun ve/veya bir konak nesnesi için bir denetim eklemek için veya bir arabirim barındırılan denetiminden almak için bu arabirimdeki yöntemleri çağırın.
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+[ATL Denetim Kapsamı SSS](../atl/atl-control-containment-faq.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)
 

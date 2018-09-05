@@ -1,5 +1,5 @@
 ---
-title: ATL Proje değiştirme | Microsoft Docs
+title: ATL projesini değiştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a8594c2d98b05750d6e43138101894fb8fc4b72
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8f94a698d9e23d0481daf940fc55fa99616104aa
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355039"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763464"
 ---
-# <a name="modifying-the-atl-project"></a>ATL Proje değiştirme
-Bu noktada, bileşik denetim projenizi bileşik denetlemek için gerekli nesneleri uygular. Sonraki adım, bileşik denetim içerir ve tüm gerekli olayları işlemek herhangi bir denetim eklemektir.  
-  
- Ek ActiveX veya Windows denetimleri eklemek için yeni bir kaynak betik ekleyin ve ardından iletişim kutusu Düzenleyicisi'ni kullanın. Denetimleri (ve ilgili görevleri) ekleme hakkında daha fazla bilgi için bkz: [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).  
-  
- ActiveX denetimlerinde gerekli tüm olayları işlemek için bkz: [bileşik denetim işlevsellik ekleme](../atl/adding-functionality-to-the-composite-control.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)   
- [Nasıl yapılır: Kaynak Betik Dosyası Oluşturma](../windows/how-to-create-a-resource-script-file.md)
+# <a name="modifying-the-atl-project"></a>ATL projesini değiştirme
+
+Bu noktada, bileşik denetim projenize gerekli nesneleri bileşik denetiminizin uygular. Sonraki adım, bileşik denetim içerir ve tüm gerekli olayları işlemek tüm denetimleri eklemektir.
+
+Ek Windows ya da ActiveX denetimleri eklemek için yeni bir kaynak betik ekleyin ve sonra iletişim kutusu düzenleyicisini kullanın. Denetimler (ve ilgili görevleri) ekleme hakkında daha fazla bilgi için bkz. [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).
+
+ActiveX denetimlerini gerekli tüm olayları işlemek için bkz: [bileşik denetime işlevsellik ekleme](../atl/adding-functionality-to-the-composite-control.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)   
+[Nasıl yapılır: Kaynak Betik Dosyası Oluşturma](../windows/how-to-create-a-resource-script-file.md)
 

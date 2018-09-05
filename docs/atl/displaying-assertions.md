@@ -1,5 +1,5 @@
 ---
-title: Onaylar görüntüleme | Microsoft Docs
+title: Onaylamaları görüntüleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,18 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9133d2fadfa4158eef9755fff7e0d2a62478966
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8ff7b9b29808e310be2d5568add64a0294bc67e7
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354285"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762388"
 ---
-# <a name="displaying-assertions"></a>Onaylar görüntüleme
-Hizmetinize bağlanan istemci yanıt vermemesine görünürse, hizmet uygulanan ve görmeye olmayan bir ileti kutusu görüntülenir. Bu, kodunuzun hatalarını ayıklamak için Visual C++'ın hata ayıklayıcı kullanarak onaylayın (bkz [Görev Yöneticisi'ni kullanarak](../atl/using-task-manager.md) Bu bölümde daha önce).  
-  
- Hizmetinizi göremiyorsunuz bir ileti kutusu görüntüleme olduğunu belirlerseniz ayarlamak isteyebilirsiniz **masaüstü ile etkileşimde bulunma hizmetine izin** hizmeti yeniden kullanmadan önce seçeneği. Bu seçenek masaüstünde hizmeti tarafından görüntülenen ileti kutusu izin veren bir başlangıç parametresidir. Bu seçeneği belirlemek için Hizmetler Denetim Masası uygulamasını açın, hizmet seçin, **başlangıç**ve ardından **masaüstü ile etkileşimde bulunma hizmetine izin** seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata Ayıklama İpuçları](../atl/debugging-tips.md)
+# <a name="displaying-assertions"></a>Onaylamaları görüntüleme
+
+Hizmetinize bağlı istemci yanıt vermemesine görünüyorsa, hizmet onaylanan ve görmeniz mümkün olmayan bir ileti kutusu görüntülenir. Kodunuzdaki hataları ayıklamak için Visual C++'ın hata ayıklayıcısını kullanarak bunu doğrulayabilirsiniz (bkz [Görev Yöneticisi'ni kullanarak](../atl/using-task-manager.md) bu bölümün başında).
+
+Hizmetinizi göremiyorsanız bir ileti kutusu görüntüleme olduğunu belirlerseniz, ayarlamak isteyebilirsiniz **masaüstü ile etkileşimde bulunma hizmetine izin ver** hizmet yeniden kullanmadan önce seçeneği. Bu seçenek masaüstünde görünmesine hizmeti tarafından görüntülenen ileti kutusu izin veren bir başlangıç parametredir. Bu seçeneği belirlemek için Hizmetleri Denetim Masası uygulamasını açın, hizmeti seçin, tıklayın **başlangıç**ve ardından **masaüstü ile etkileşimde bulunma hizmetine izin ver** seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hata Ayıklama İpuçları](../atl/debugging-tips.md)
 

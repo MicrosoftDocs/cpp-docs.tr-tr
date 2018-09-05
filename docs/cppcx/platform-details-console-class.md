@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 904ca2920f1086aeb099290382402e7201e81b49
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601942"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759018"
 ---
 # <a name="platformdetailsconsole-class"></a>Platform::details:: Console sınıfı
 Bu sınıf, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  

@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 1597acfdf608d5e8801870fcebb43109c2eb803d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593798"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762589"
 ---
 # <a name="compiler-and-linker-options-ccx"></a>Derleyici ve bağlayıcı seçenekleri (C + +/ CX)
 Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenekleri için Windows çalışma zamanı uygulamaları oluşturmayı destekler.  
@@ -28,7 +28,7 @@ Bir ortam değişkeni, C + +/ CX derleyici seçenekleri ve bağlayıcı seçenek
 |------------|-----------------|  
 |[/ZW](../build/reference/zw-windows-runtime-compilation.md)<br /><br /> /ZW:nostdlib|Windows çalışma zamanı dil uzantılarını etkinleştirir.<br /><br /> `nostdlib` Parametresi standart, önceden tanımlanmış bir arama yolu'ı kullanarak derleme ve .winmd dosyaları bulmak için derleyici engeller.<br /><br /> **/ZW** derleyici seçeneği, örtük olarak aşağıdaki derleyici seçeneklerinin belirtir:<br /><br /> -   **/FI** form veya vccorlib.h derleyici tarafından gereken birçok türü tanımlayan vccorlib.h üstbilgi dosyasının eklenmesi zorlar.<br />-   [/FU](../build/reference/fu-name-forced-hash-using-file.md) Windows.winmd'i, hangi işletim sistemi tarafından sağlanır ve Windows çalışma zamanı'nda birçok türü tanımlayan Windows.winmd'i meta veri dosyası dahil edilmesi zorlar.<br />-   **/FU** form veya Platform.winmd derleyici tarafından sağlanır ve ad alanları Platform ailede türlerdir tanımlayan Platform.winmd meta veri dosyası dahil edilmesi zorlar.|  
 |[/AI](../build/reference/ai-specify-metadata-directories.md) *dizini*|Tarafından belirtilen bir dizine ekler *dir* parametresi, derleyici derleme ve .winmd dosyaları bulmak için kullandığı arama yolu.|  
-|**/FU***dosyası* |Belirtilen modül veya .winmd dosyasının eklenmesi zorlar. Diğer bir deyişle, belirtmeniz gerekmez `#using` *dosya* , kaynak kodunuzdaki. Derleyici, otomatik olarak eklenmesi, kendi Windows meta veri dosyası Platform.winmd zorlar.|  
+|**/FU***dosyası*|Belirtilen modül veya .winmd dosyasının eklenmesi zorlar. Diğer bir deyişle, belirtmeniz gerekmez `#using` *dosya* , kaynak kodunuzdaki. Derleyici, otomatik olarak eklenmesi, kendi Windows meta veri dosyası Platform.winmd zorlar.|  
 |/D "WINAPI_FAMILY=2"|Bir alt kümesini Windows çalışma zamanı ile uyumlu olan Win32 SDK'sını kullanmayı sağlayan bir tanım oluşturur.|  
   
 ## <a name="linker-options"></a>Bağlayıcı seçenekleri  

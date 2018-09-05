@@ -55,11 +55,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2abbf512085c9c59e9e6874e3f815548cd9052c1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217110"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760789"
 ---
 # <a name="ctoolbar-class"></a>CToolBar sınıfı
 Bit eşlemli düğmeler ve isteğe bağlı ayırıcılar içeren bir satırın sahip denetim çubukları.  

@@ -19,70 +19,76 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6b47642965b73662e63a839796425be855a6523
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 213bfd9dc5c07ad1b3ef811b9333cb12bf9c2b7a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879533"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43755610"
 ---
 # <a name="cfixedstringt-class"></a>CFixedStringT sınıfı
-Bu sınıf, bir dize nesnesi ile bir sabit karakter arabelleği temsil eder.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, bir dize nesnesi ile bir sabit karakter arabelleği temsil eder.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<class StringType, int t_nChars>
 class CFixedStringT : private CFixedStringMgr, public StringType
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *StringType*  
- Sabit dize nesnesi için temel sınıf olarak kullanılan ve herhangi biri `CStringT`-türüne göre. Bazı örnekler `CString`, `CStringA`, ve `CStringW`.  
-  
- *t_nChars*  
- Arabellekteki depolanan karakterlerin sayısı.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFixedStringT::CFixedStringT](#cfixedstringt)|Dize nesnesi için oluşturucu.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFixedStringT::operator =](#eq)|Yeni bir değer atar bir `CFixedStringT` nesne.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf temel bir özel dize sınıfının bir örneğidir `CStringT`. Oldukça benzer olsa da, iki sınıf uygulamasında farklı. Arasındaki temel farklar `CFixedStringT` ve `CStringT` şunlardır:  
-  
--   İlk karakter arabelleği nesnesinin bir parçası ayrılır ve boyuta sahip *t_nChars*. Böylece `CFixedString` Performans nedeniyle bir bitişik bellek öbeği kaplaması için nesne. Ancak, içeriğini bir `CFixedStringT` nesne büyüdükçe ötesinde *t_nChars*, arabellek dinamik olarak ayrılır.  
-  
--   Karakter arabelleği için bir `CFixedStringT` nesnesi, her zaman aynı uzunlukta ( *t_nChars*). Arabellek boyutu için ilgili bir sınırlama yoktur `CStringT` nesneleri.  
-  
--   Bellek Yöneticisi için `CFixedStringT` paylaşımını şekilde özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) arasında iki veya daha fazla nesne `CFixedStringT` objectsis izin verilmiyor. `CStringT` nesneleri bu sınırlama yoktur.  
-  
- Özelleştirme hakkında daha fazla bilgi için `CFixedStringT` ve dize nesneler için bellek yönetimi genel olarak, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `IAtlStringMgr`  
-  
- `StringType`  
-  
- `CFixedStringMgr`  
-  
- `CFixedStringT`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** cstringt.h  
-  
-##  <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT  
- Oluşturur bir `CFixedStringT` nesne.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*StringType*  
+Sabit dize nesnesi için temel sınıf olarak kullanılan ve herhangi biri `CStringT`-türüne göre. Bazı örnekler `CString`, `CStringA`, ve `CStringW`.
+
+*t_nChars*  
+Arabellekteki depolanan karakterlerin sayısı.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFixedStringT::CFixedStringT](#cfixedstringt)|Dize nesnesi için oluşturucu.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFixedStringT::operator =](#eq)|Yeni bir değer atar bir `CFixedStringT` nesne.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf temel bir özel dize sınıfının bir örneğidir `CStringT`. Oldukça benzer olsa da, iki sınıf uygulamasında farklı. Arasındaki temel farklar `CFixedStringT` ve `CStringT` şunlardır:
+
+- İlk karakter arabelleği nesnesinin bir parçası ayrılır ve boyuta sahip *t_nChars*. Böylece `CFixedString` Performans nedeniyle bir bitişik bellek öbeği kaplaması için nesne. Ancak, içeriğini bir `CFixedStringT` nesne büyüdükçe ötesinde *t_nChars*, arabellek dinamik olarak ayrılır.
+
+- Karakter arabelleği için bir `CFixedStringT` nesnesi, her zaman aynı uzunlukta ( *t_nChars*). Arabellek boyutu için ilgili bir sınırlama yoktur `CStringT` nesneleri.
+
+- Bellek Yöneticisi için `CFixedStringT` paylaşımını şekilde özelleştirilmiş bir [CStringData](../../atl-mfc-shared/reference/cstringdata-class.md) arasında iki veya daha fazla nesne `CFixedStringT` objectsis izin verilmiyor. `CStringT` nesneleri bu sınırlama yoktur.
+
+Özelleştirme hakkında daha fazla bilgi için `CFixedStringT` ve dize nesneler için bellek yönetimi genel olarak, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`IAtlStringMgr`
+
+`StringType`
+
+`CFixedStringMgr`
+
+`CFixedStringT`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** cstringt.h
+
+##  <a name="cfixedstringt"></a>  CFixedStringT::CFixedStringT
+
+Oluşturur bir `CFixedStringT` nesne.
+
 ```
 CFixedStringT() throw();
 explicit CFixedStringT(IAtlStringMgr* pStringMgr) throw();
@@ -91,48 +97,51 @@ CFixedStringT(const StringType& str);
 CFixedStringT(const StringType::XCHAR* psz);
 explicit CFixedStringT(const StringType::YCHAR* psz);
 explicit CFixedStringT(const unsigned char* psz);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *psz*  
- Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.  
-  
- *str*  
- Mevcut bir `CFixedStringT` bu kopyalanacak nesne `CFixedStringT` nesne.  
-  
- *pStringMgr*  
- Bellek Yöneticisi için bir işaretçi `CFixedStringT` nesne. Daha fazla bilgi için `IAtlStringMgr` ve bellek yönetimi için `CFixedStringT`, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).  
-  
-### <a name="remarks"></a>Açıklamalar  
- Oluşturucular girdi verilerini yeni ayrılan depolama alanına kopyalayın çünkü farkında olmalıdır, bellek, özel durumlar neden olabilir. Bu oluşturucular bazıları dönüştürme işlevleri davranan unutmayın.  
-  
-##  <a name="operator__eq"></a>  CFixedStringT::operator =  
- Mevcut bir yeniden başlatır `CFixedStringT` yeni verilerle nesne.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*psz*  
+Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
+
+*str*  
+Mevcut bir `CFixedStringT` bu kopyalanacak nesne `CFixedStringT` nesne.
+
+*pStringMgr*  
+Bellek Yöneticisi için bir işaretçi `CFixedStringT` nesne. Daha fazla bilgi için `IAtlStringMgr` ve bellek yönetimi için `CFixedStringT`, bkz: [bellek yönetimi ve CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
+
+### <a name="remarks"></a>Açıklamalar
+
+Oluşturucular girdi verilerini yeni ayrılan depolama alanına kopyalayın çünkü farkında olmalıdır, bellek, özel durumlar neden olabilir. Bu oluşturucular bazıları dönüştürme işlevleri davranan unutmayın.
+
+##  <a name="operator__eq"></a>  CFixedStringT::operator =
+
+Mevcut bir yeniden başlatır `CFixedStringT` yeni verilerle nesne.
+
 ```
 CFixedStringT<StringType, t_nChars>& operator=(
-  const CFixedStringT<StringType, t_nChars>& str);
+    const CFixedStringT<StringType, t_nChars>& str);
 CFixedStringT<StringType, t_nChars>& operator=(const char* psz);
 CFixedStringT<StringType, t_nChars>& operator=(const wchar_t* psz);
 CFixedStringT<StringType, t_nChars>& operator=(const unsigned char* psz);
 CFixedStringT<StringType, t_nChars>& operator=(const StringType& str);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *str*  
- Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.  
-  
- *psz*  
- Mevcut bir `CFixedStringT` bu kopyalanacak `CFixedStringT` nesne.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bilmeniz gereken yeni depolama genellikle sonuç tutmak için ayrılmış olduğundan, atama işleci kullandığınızda, özel durumlar oluşabilir belleğin `CFixedStringT` nesne.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CStringT sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+```
 
+### <a name="parameters"></a>Parametreler
 
+*str*  
+Null ile sonlandırılmış bir dize bu kopyalanacak `CFixedStringT` nesne.
 
+*psz*  
+Mevcut bir `CFixedStringT` bu kopyalanacak `CFixedStringT` nesne.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bilmeniz gereken yeni depolama genellikle sonuç tutmak için ayrılmış olduğundan, atama işleci kullandığınızda, özel durumlar oluşabilir belleğin `CFixedStringT` nesne.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CStringT sınıfı](../../atl-mfc-shared/reference/cstringt-class.md)   
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

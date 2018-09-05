@@ -30,11 +30,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: aeaed487db1063efd14dddbca28480a169b13522
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686660"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761117"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 

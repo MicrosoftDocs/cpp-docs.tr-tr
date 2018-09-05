@@ -15,11 +15,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d4444e70ec158d7afa35c3955bbef9af4bfa12f2
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131329"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758891"
 ---
 # <a name="open-folder-projects-in-visual-c"></a>Visual c++ açık klasörü projeler
 

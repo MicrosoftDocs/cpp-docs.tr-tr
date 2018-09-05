@@ -15,53 +15,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bbda7ff9a22a42ce4a6b8c3de10d0d6f0d03f77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7216a4a470b6293a31d6f364626188e41351b5cb
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389773"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763145"
 ---
 # <a name="simple-variable-declarations"></a>Basit Değişken Bildirimler
-Doğrudan bildirimcisi en basit biçimi basit bir değişken bildirimi, değişkenin adını ve türünü belirtir. Ayrıca değişkenin depolama sınıfı ve veri türünü belirtir.  
-  
- Depolama sınıfları veya türleri (veya her ikisi de) değişken bildirimlerinde gereklidir. Türsüz değişkenleri (gibi `var;`) uyarılar oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
- `declarator`:  
- *İşaretçi* iptal et  
-  
- *doğrudan bildirimcisi*  
-  
- *doğrudan bildirimcisi*:  
- *Tanımlayıcı*  
-  
- *tanımlayıcı*:  
- *sayı olmayan*  
-  
- *tanımlayıcı sayı olmayan*  
-  
- *tanımlayıcı basamak*  
-  
- Tarafından temsil edilen türleri ve aritmetik, yapısı, UNION, numaralandırmalar ve void türleri için `typedef` adları, basit Bildirimciler tür belirteci yazarak tüm bilgileri sağlayan bu yana bir bildiriminde kullanılabilir. İşaretçi, dizi ve işlev türleri daha karmaşık bildirimcileri gerektirir.  
-  
- Tanımlayıcıları virgülle ayrılmış listesi kullanabilirsiniz (**,**) çeşitli değişkenler aynı bildiriminde belirtmek için. Bildiriminde tanımlanan tüm değişkenler aynı temel türe sahip. Örneğin:  
-  
-```  
-int x, y;        /* Declares two simple variables of type int */  
-int const z = 1; /* Declares a constant value of type int */  
-```  
-  
- Değişkenleri `x` ve `y` tarafından tanımlanan kümesindeki herhangi bir değer tutabilir `int` belirli bir uygulama türü. Basit Nesne `z` 1 değerine başlatılır ve değiştirilemez.  
-  
- Varsa bildirimi `z` için başlatılmamış bir statik değişkeni ederken veya dosya kapsamda başlangıç değeri 0 olarak alacağı ve bu değer değiştirilemeyen olacaktır.  
-  
-```  
-unsigned long reply, flag; /* Declares two variables  
-                              named reply and flag     */  
-```  
-  
- Bu örnekte, her iki değişken `reply` ve `flag`, sahip `unsigned long` yazın ve imzasız tam sayı değerleri tutun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+
+Doğrudan bir bildirimcide en basit biçimi basit bir değişkenin bildirimi, değişkenin adını ve türünü belirtir. Ayrıca, değişken depolama sınıfı ve veri türünü belirtir.
+
+Depolama sınıfları veya türleri (veya her ikisi) değişken bildirimlerinde gerekir. Türsüz değişkenleri (gibi `var;`) uyarı oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+*bildirimci*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*İşaretçi*<sub>iyileştirilmiş</sub> *doğrudan bildirimcisi*
+
+*doğrudan bildirimci*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı*
+
+*tanımlayıcı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*rakam*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *rakam*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı* *basamak*
+
+Tarafından temsil edilen türleri yanı sıra, aritmetik, yapı, birleşim, numaralandırmalar ve void türleri için `typedef` adları, basit Bildirimciler tür belirticisi yazma tüm bilgileri sağlayan bu yana bir bildiriminde kullanılabilir. Daha karmaşık bildirimcileri işaretçisi, dizi ve işlev türleri gerektirir.
+
+Virgülle ayırarak tanımlayıcıları listesini kullanabilirsiniz (**,**) çeşitli değişkenler aynı bildirimde belirtmek için. Bildiriminde tanımlanan tüm değişkenler aynı temel türüne sahip. Örneğin:
+
+```C
+int x, y;        /* Declares two simple variables of type int */
+int const z = 1; /* Declares a constant value of type int */
+```
+
+Değişkenleri `x` ve `y` herhangi bir değer tarafından tanımlanan kümeye de barındırabilir `int` türü için belirli bir uygulama. Basit Nesne `z` değeri 1 başlatılır ve değiştirilemez.
+
+Varsa bildirimi `z` başlatılmamış bir statik değişken için olan ya da dosya kapsamında başlangıç değeri 0 olarak alırsınız ve bu değer değiştirilemeyen olacaktır.
+
+```C
+unsigned long reply, flag; /* Declares two variables
+                              named reply and flag     */
+```
+
+Bu örnekte, her iki değişken `reply` ve `flag`, sahip `unsigned long` yazın ve işaretsiz tamsayı değerleri tutun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

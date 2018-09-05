@@ -95,11 +95,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 0c94542fdac3734644771f2659d894d1c8c6f907
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220808"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759189"
 ---
 # <a name="cmenu-class"></a>CMenu sınıfı
 Windows sarmalanmasını `HMENU`.  

@@ -17,69 +17,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57dbb9e5ed73ce8ed85d7c90d05705cefdd4ed9b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 58029305ead376217b589c6dd05c1dc660cd5749
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194773"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758650"
 ---
 # <a name="idochostuihandlerdispatch-interface"></a>Idochostuıhandlerdispatch arabirimi
-Bir arabirim Microsoft HTML Ayrıştırma ve işleme altyapısı.  
-  
+
+Bir arabirim Microsoft HTML Ayrıştırma ve işleme altyapısı.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 interface IDocHostUIHandlerDispatch : IDispatch
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
 > [!NOTE]
->  Aşağıdaki tabloda bağlantıları üyelerinin INet SDK başvuru konusundan üzeresiniz [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) arabirimi. `IDocHostUIHandlerDispatch` aynı işlevlere sahip `IDocUIHostHandler`, olan farkla `IDocHostUIHandlerDispatch` bir dispinterface takvimidir `IDocUIHostHandler` özel bir arabirimdir.  
-  
-|||  
-|-|-|  
-|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless). Kalıcı kullanıcı Arabirimi MSHTML görüntüler de çağrılır.|  
-|[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|Konak MSHTML'ın veri nesnesi değiştirmeye izin vermek için MSHTML konağıyla üzerinde çağrılır.|  
-|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan MSHTML tarafından çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|  
-|[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|Ana bilgisayarın IDispatch almak için MSHTML tarafından çağrılır.|  
-|[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|MSHTML konak kullanıcı Arabirimi özelliklerini alır.|  
-|[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|Kullanıcı tercihleri depolayan MSHTML altında kayıt defteri anahtarını döndürür.|  
-|[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|MSHTML, menüleri ve araç çubuklarını kaldırdığında çağrılır.|  
-|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate).|  
-|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate).|  
-|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder).|  
-|[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|Bir bağlam menüsünü görüntülemek için MSHTML çağrılır.|  
-|[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|MSHTML menüleri ve araç çubuklarını değiştirmek konak sağlar.|  
-|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML tarafından çağrılır, [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) çağrılır.|  
-|[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|Konak yüklenecek URL'sini değiştirmek için bir fırsat izin vermek için MSHTML tarafından çağrılır.|  
-|[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|Konak, komut durumu değiştirildiğinde bildirir.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir konak, menüleri, araç çubukları ve bu arabirimi uygulayan Microsoft HTML Ayrıştırma ve işleme altyapısı (MSHTML) tarafından kullanılan bağlam menüleri değiştirebilirsiniz.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.  
-  
-|Tanım türü|Dosya|  
-|---------------------|----------|  
-|IDL|ATLIFace.idl|  
-|C++|ATLIFace.h (ATLBase.h içinde de dahil)|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx)
+>  Aşağıdaki tabloda bağlantıları üyelerinin INet SDK başvuru konusundan üzeresiniz [IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx) arabirimi. `IDocHostUIHandlerDispatch` aynı işlevlere sahip `IDocUIHostHandler`, olan farkla `IDocHostUIHandlerDispatch` bir dispinterface takvimidir `IDocUIHostHandler` özel bir arabirimdir.
 
+|||
+|-|-|
+|[EnableModeless](https://msdn.microsoft.com/library/aa753253.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::EnableModeless](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless). Kalıcı kullanıcı Arabirimi MSHTML görüntüler de çağrılır.|
+|[FilterDataObject](https://msdn.microsoft.com/library/aa753254.aspx)|Konak MSHTML'ın veri nesnesi değiştirmeye izin vermek için MSHTML konağıyla üzerinde çağrılır.|
+|[GetDropTarget](https://msdn.microsoft.com/library/aa753255.aspx)|Bir bırakma hedefi alternatif sağlamak konak izin vermek için kullanılan MSHTML tarafından çağırılır [ıdroptarget'ı](/windows/desktop/api/oleidl/nn-oleidl-idroptarget).|
+|[GetExternal](https://msdn.microsoft.com/library/aa753256.aspx)|Ana bilgisayarın IDispatch almak için MSHTML tarafından çağrılır.|
+|[GetHostInfo](https://msdn.microsoft.com/library/aa753257.aspx)|MSHTML konak kullanıcı Arabirimi özelliklerini alır.|
+|[GetOptionKeyPath](https://msdn.microsoft.com/library/aa753258.aspx)|Kullanıcı tercihleri depolayan MSHTML altında kayıt defteri anahtarını döndürür.|
+|[HideUI](https://msdn.microsoft.com/library/aa753259.aspx)|MSHTML, menüleri ve araç çubuklarını kaldırdığında çağrılır.|
+|[OnDocWindowActivate](https://msdn.microsoft.com/library/aa753261.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate).|
+|[OnFrameWindowActivate](https://msdn.microsoft.com/library/aa753262.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate).|
+|[ResizeBorder](https://msdn.microsoft.com/library/aa753263.aspx)|MSHTML uygulamasından adlı [IOleInPlaceActiveObject::ResizeBorder](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder).|
+|[ShowContextMenu](https://msdn.microsoft.com/library/aa753264.aspx)|Bir bağlam menüsünü görüntülemek için MSHTML çağrılır.|
+|[ShowUI](https://msdn.microsoft.com/library/aa753265.aspx)|MSHTML menüleri ve araç çubuklarını değiştirmek konak sağlar.|
+|[TranslateAccelerator](https://msdn.microsoft.com/library/aa753266.aspx)|MSHTML tarafından çağrılır, [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) veya [IOleControlSite::TranslateAccelerator](/windows/desktop/api/ocidl/nf-ocidl-iolecontrolsite-translateaccelerator) çağrılır.|
+|[TranslateUrl](https://msdn.microsoft.com/library/aa753267.aspx)|Konak yüklenecek URL'sini değiştirmek için bir fırsat izin vermek için MSHTML tarafından çağrılır.|
+|[UpdateUI](https://msdn.microsoft.com/library/aa753268.aspx)|Konak, komut durumu değiştirildiğinde bildirir.|
 
+## <a name="remarks"></a>Açıklamalar
 
+Bir konak, menüleri, araç çubukları ve bu arabirimi uygulayan Microsoft HTML Ayrıştırma ve işleme altyapısı (MSHTML) tarafından kullanılan bağlam menüleri değiştirebilirsiniz.
 
+## <a name="requirements"></a>Gereksinimler
 
+Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.
 
+|Tanım türü|Dosya|
+|---------------------|----------|
+|IDL|ATLIFace.idl|
+|C++|ATLIFace.h (ATLBase.h içinde de dahil)|
 
+## <a name="see-also"></a>Ayrıca Bkz.
 
+[IDocUIHostHandler](https://msdn.microsoft.com/library/aa753260.aspx)
 

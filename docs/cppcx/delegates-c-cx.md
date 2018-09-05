@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fda9cab73088746ec64caf482f9e606d713eaa4f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222749"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756983"
 ---
 # <a name="delegates-ccx"></a>Temsilciler (C + +/ CX)
 `delegate` Anahtar sözcüğü, bir işlev nesnesi standart C++'ta Windows çalışma zamanı eşdeğerdir bir başvuru türü bildirmek için kullanılır. Temsilci bildirimi için işlev imzasına benzer; Bu, sarmalanmış işlev olmalıdır parametre türleri ve dönüş türü belirtir. Bu kullanıcı tarafından tanımlanan temsilci bildirimi şu şekildedir:  

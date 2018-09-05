@@ -12,26 +12,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ab516edc5cb30d777eb42cc96e2932e526f20772
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a94d575ee36f38b56f64fb6298eb6f6f6e43567e
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385825"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762749"
 ---
 # <a name="summary-of-string-literals"></a>Dizi Değişmez Değerleri Özeti
-*değişmez dize değeri*:  
- **'** *s karakter dizisi* kabul **'**  
+
+*dize sabit değeri*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**'** *s karakter dizisi*<sub>iyileştirilmiş</sub> **'**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**L'** *s karakter dizisi*sub > iyileştirilmiş</sub> **'**  
   
- **L'** *s karakter dizisi* kabul **'**  
+*s karakter dizisi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s char*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*s karakter dizisi* *s char*  
   
- *s karakter dizisi*:  
- *s-char*  
-  
- *s karakter dizisi s-char*  
-  
- *s-char*:  
- Kaynak karakteri, herhangi bir üye kümesi çift tırnak işareti dışında ("), eğik çizgi (\\), ya da yeni satır karakteri *kaçış sırası*  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sözcük Dilbilgisi](../c-language/lexical-grammar.md)
+*s char*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri kaçış sırası  
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sözcük Dilbilgisi](../c-language/lexical-grammar.md)

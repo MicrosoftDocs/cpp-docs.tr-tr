@@ -19,68 +19,78 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e591bc8c77e2130548e65c6197f9e550efc480fb
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 080a7b9f5da71535f8b141555ec1890a521fe715
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37881860"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761988"
 ---
 # <a name="cdefaultchartraits-class"></a>CDefaultCharTraits sınıfı
-Bu sınıf, büyük ve küçük arasındaki karakter dönüştürme için iki statik işlevler sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, büyük ve küçük arasındaki karakter dönüştürme için iki statik işlevler sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <typename T>  
 class CDefaultCharTraits
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *T*  
- Koleksiyonda depolanacak veri türü.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CDefaultCharTraits::CharToLower](#chartolower)|(Statik) Bir karakteri büyük harfe dönüştürmek için bu işlevi çağırın.|  
-|[CDefaultCharTraits::CharToUpper](#chartoupper)|(Statik) Bir karakteri küçük harfe dönüştürmek için bu işlevi çağırın.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf sınıf tarafından kullanılan işlevler sağlar [Cstringelementtraitsı](../../atl/reference/cstringelementtraitsi-class.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcoll.h  
-  
-##  <a name="chartolower"></a>  CDefaultCharTraits::CharToLower  
- Bir karakteri küçük harfe dönüştürmek için bu işlevi çağırın.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*  
+Koleksiyonda depolanacak veri türü.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CDefaultCharTraits::CharToLower](#chartolower)|(Statik) Bir karakteri büyük harfe dönüştürmek için bu işlevi çağırın.|
+|[CDefaultCharTraits::CharToUpper](#chartoupper)|(Statik) Bir karakteri küçük harfe dönüştürmek için bu işlevi çağırın.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf sınıf tarafından kullanılan işlevler sağlar [Cstringelementtraitsı](../../atl/reference/cstringelementtraitsi-class.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcoll.h
+
+##  <a name="chartolower"></a>  CDefaultCharTraits::CharToLower
+
+Bir karakteri küçük harfe dönüştürmek için bu işlevi çağırın.
+
 ```
 static wchar_t CharToLower(wchar_t x);  
 static char CharToLower(char x);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *x*  
- Küçük harfe dönüştürülecek karakter.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/cpp/cdefaultchartraits-class_1.cpp)]  
-  
-##  <a name="chartoupper"></a>  CDefaultCharTraits::CharToUpper  
- Bir karakteri büyük harfe dönüştürmek için bu işlevi çağırın.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*  
+Küçük harfe dönüştürülecek karakter.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATL_Utilities#132](../../atl/codesnippet/cpp/cdefaultchartraits-class_1.cpp)]
+
+##  <a name="chartoupper"></a>  CDefaultCharTraits::CharToUpper
+
+Bir karakteri büyük harfe dönüştürmek için bu işlevi çağırın.
+
 ```
 static wchar_t CharToUpper(wchar_t x);  
 static char CharToUpper(char x);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *x*  
- Büyük harfe dönüştürülecek karakter.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="parameters"></a>Parametreler
+
+*x*  
+Büyük harfe dönüştürülecek karakter.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

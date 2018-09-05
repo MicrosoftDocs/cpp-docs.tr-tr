@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 725e2b9edb7ba2a84418e900ffb1aafe4c5064af
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593970"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43758907"
 ---
 # <a name="enums-ccx"></a>Numaralandırmalar (C + +/ CX)
 C + +/ CX destekler `public enum class` işlevdedir standart bir C++ anahtar sözcüğünü `scoped  enum`. Kullanılarak bildirilen bir numaralandırıcı kullandığınızda `public enum class` anahtar sözcüğü her Numaralandırıcı değeri kapsam için numaralandırma tanımlayıcı kullanmalısınız.  

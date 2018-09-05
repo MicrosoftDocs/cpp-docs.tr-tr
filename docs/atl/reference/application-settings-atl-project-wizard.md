@@ -16,48 +16,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47fbf95451834e5f8c41e8b6d7e5af7a9746bb85
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dee20d07ff37024506ef925fd94363bf85ceb8bc
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357411"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43756892"
 ---
 # <a name="application-settings-atl-project-wizard"></a>Uygulama ayarları, ATL Proje Sihirbazı
-Kullanım **uygulama ayarları** tasarlamak ve yeni bir ATL projesine temel özellikleri eklemek için ATL Proje Sihirbazı sayfasında.  
-  
-## <a name="server-type"></a>Sunucu türü  
- Üç sunucu türlerinden birini seçin:  
-  
- **Dinamik bağlantı kitaplığı (DLL)**  
- Bir işlem sunucusu oluşturmak için seçin.  
-  
- **Yürütülebilir (EXE)**  
- Yerel bir işlem dışı sunucusu oluşturmak için seçin. Bu seçenek, MFC veya COM + 1.0 için destek izin vermiyor. Proxy/stub kodunu birleştirme için izin vermiyor.  
-  
- **Hizmet (EXE)**  
- Windows başladığında arka planda çalışan bir Windows uygulaması oluşturmak için seçin. Bu seçenek MFC veya COM + 1.0 için destek izin verme veya birleştirme proxy/stub kodu için izin vermez.  
-  
-## <a name="additional-options"></a>Ek Seçenekler  
-  
+
+Kullanım **uygulama ayarları** tasarlamak ve temel özellikleri yeni bir ATL projesine eklemek için ATL projesi sihirbazı sayfası.
+
+## <a name="server-type"></a>Sunucu türü
+
+Üç sunucu türlerinden birini seçin:
+
+**Dinamik bağlantı kitaplığı (DLL)**  
+İşlem sunucusu oluşturmak için bu seçeneği seçin.
+
+**Yürütülebilir (EXE)**  
+Yerel bir işlem dışı sunucu oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermez. İçin proxy/saplama kodunun birleştirilmesine izin vermez.
+
+**Hizmet (EXE)**  
+Windows başladığında arka planda çalışan bir Windows uygulaması oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermiyor veya için proxy/saplama kodunun birleştirilmesine izin vermiyor.
+
+## <a name="additional-options"></a>Ek Seçenekler
+
 > [!NOTE]
->  Tüm ek seçenekler yalnızca DLL projeleri için kullanılabilir.  
-  
- **Proxy/stub kodunu birleştirme izin ver**  
- Seçin **izin proxy/stub kodunu birleştirme** arabirimleri hazırlama gerektiğinde kolaylık onay kutusu. Bu seçenek MIDL oluşturulan proxy ve saplama kod aynı yürütülebilir dosya sunucusu olarak geçirir.  
-  
- **MFC desteği**  
- Nesnenizin MFC desteği içerdiğini belirtmek için bu seçeneği seçin. Bu seçenek, projenizin MFC kitaplıkları bağlar tüm sınıfları ve içerdikleri işlevleri erişebilirsiniz.  
-  
- **Destek COM + 1.0**  
- COM + 1.0 bileşenleri desteklemek için proje oluşturma ayarlarını değiştirmek için seçin. Kitaplıkları standart listesine ek olarak, sihirbaz COM + 1.0 bileşen özgü kitaplığı comsvcs.lib ekler.  
-  
- Ayrıca, mtxex.dll, uygulama başlatıldığında konak sisteminde yüklenen gecikme olur.  
-  
--   **Bileşen Kaydedicisi Destek** ATL projeniz COM + 1.0 bileşenleri için destek içeriyorsa, bu seçenek belirleyebilirsiniz. Bileşen Kaydedicisi bileşenleri listesini elde etmek, bileşenlerin kaydı veya bileşenleri (ayrı ayrı veya tümünü bir defada) kaydını kaldırma, COM + 1.0 nesne sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL Proje Sihirbazı](../../atl/reference/atl-project-wizard.md)   
- [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
- [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
+>  Tüm ek seçenekler, yalnızca DLL projeleri için kullanılabilir.
+
+**Proxy/saplama kodunun birleştirilmesine izin ver**  
+Seçin **proxy/saplama kodunun birleştirilmesine izin** arabirimleri sıralama gerekli olduğunda bir kolaylık olarak onay kutusu. Bu seçenek MIDL tarafından oluşturulan proxy ve saplama kodu aynı yürütülebilir sunucusu olarak yerleştirir.
+
+**MFC desteği**  
+Nesneniz için MFC desteği içerdiğini belirtmek için bu seçeneği seçin. Tüm sınıfları ve bunların içerdiği işlevleri erişebilmeleri bu seçenek için MFC kitaplıklarını projenize bağlar.
+
+**COM + 1.0 desteği**  
+COM + 1.0 bileşenleri desteklemek için proje oluşturma ayarlarını değiştirmek için bu seçeneği seçin. Standart kitaplıkları listesine ek olarak sihirbaz COM + 1.0 bileşeni özgü kitaplığı comsvcs.lib ekler.
+
+Ayrıca, mtxex.dll, uygulamanız başlatıldığında konak sisteminde yüklü gecikmesidir.
+
+- **Bileşen Kaydedicisi Destek** projenize ATL COM + 1.0 bileşenleri için destek içeriyorsa, bu seçeneği ayarlayabilirsiniz. Bileşen kayıt şirketi, COM + 1.0 nesnesinin bileşenlerin listesini alın, bileşenleri kaydetmek veya bileşenleri (tek tek veya tek seferde) kaydını sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)   
+[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
+[Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

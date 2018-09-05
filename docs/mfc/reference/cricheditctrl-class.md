@@ -163,11 +163,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3ad17396a9c82532d46ea04f88b637828fe6f460
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678503"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759707"
 ---
 # <a name="cricheditctrl-class"></a>CRichEditCtrl sınıfı
 Zengin düzenleme denetimi işlevlerini sağlar.  

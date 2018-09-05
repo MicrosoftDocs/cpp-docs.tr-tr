@@ -1,5 +1,5 @@
 ---
-title: ATL MFC sınıfları paylaşılan | Microsoft Docs
+title: ATL-MFC paylaşılan sınıfları | Microsoft Docs
 ms.custom: index-page
 ms.date: 11/04/2016
 ms.technology:
@@ -31,26 +31,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3517e193effd88e1ebc9afb66268dcb60ba6932
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2080aae34a69b18286953bfa48a269b81a5a5e65
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357206"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43761819"
 ---
 # <a name="atlmfc-shared-classes"></a>ATL/MFC Paylaşılan Sınıfları
-Bu yardımcı program sınıfları herhangi bir MFC DLL gerek kalmadan tüm yerel C++ projesinde kullanılabilir.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [MFC ve ATL arasında paylaşılan sınıfları](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
- MFC ve ATL arasında paylaşılan sınıfları bağlantılar sağlar  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Etkin Şablon kitaplığı (ATL) başvurusu](../atl/atl-com-desktop-components.md)  
- COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.  
-  
- [Microsoft Foundation Class Kitaplığı (MFC) başvurusu](../mfc/mfc-desktop-applications.md)  
- MFC sınıfları, bir dizi oluşturan Windows API için yazılmış bir uygulama çerçevesidir bir uygulama çerçevesi kitaplığı için başvuru bilgileri sağlar.  
-  
- [Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
- Uygulama ya da saklı yordamlar mantık hataları düzeltmek için Visual Studio hata ayıklayıcısı kullanma için bağlantılar sağlar.
+
+Bu yardımcı sınıflar, herhangi bir MFC DLL gerek kalmadan herhangi bir yerel C++ projesinde kullanılabilir.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[MFC ve ATL arasında paylaşılan sınıfları](../atl-mfc-shared/reference/classes-shared-by-mfc-and-atl.md)  
+MFC ve ATL arasında paylaşılan sınıfların bağlantılarını sağlar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[Etkin Şablon kitaplığı (ATL) başvurusu](../atl/atl-com-desktop-components.md)  
+COM nesnelerinin programlamasını basitleştiren, şablona dayalı bir küme C++ sınıfı olan ATL kitaplığı için bir başvuru malzemesi sağlar.
+
+[Microsoft Foundation Class (MFC) kitaplığı başvurusu](../mfc/mfc-desktop-applications.md)  
+Sınıflar, bir dizi oluşturan Windows API için yazılan uygulamanın çerçevesi bir uygulama çerçevesi olan MFC Kitaplığı için başvuru materyalleri sağlar.
+
+[Hata Ayıklama](/visualstudio/debugger/debugging-in-visual-studio)  
+Uygulamanızdaki veya saklı yordamları mantık hatalarını düzeltmek için Visual Studio hata ayıklayıcı kullanımına ilişkin bağlantılar sağlar.

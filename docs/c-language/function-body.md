@@ -17,28 +17,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6a566c1120f0a89a985895393fae5a79690bfa3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d30cb5429ebee0738aa7b7aab367d79867e92047
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384684"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757825"
 ---
 # <a name="function-body"></a>İşlev Gövdesi
-"İşlev gövdesi" işlevi ne yapacağını belirtin deyimleri içeren bileşik bir ifadedir.  
-  
-## <a name="syntax"></a>Sözdizimi  
- *işlev tanımı*:  
- *bildirim tanımlayıcıları* kabul*özniteliği seq* kabul*bildirimcisi bildirimi listesi* kabul*bileşik deyim*  
-  
- /\* *öznitelik seq* Microsoft Specific * /  
-  
- *Bileşik deyim*: /\* işlev gövdesi \*/  
- **{***bildirimi listesi* kabul*deyimi listesi* kabul **}**  
-  
- İşlev gövdesi içinde "yerel değişkenler," bildirilen değişkenleri **otomatik** depolama sınıfı aksi belirtilmediği sürece. İşlevi çağrıldığında, depolama için yerel değişkenleri oluşturulur ve yerel başlatmaları gerçekleştirilir. Yürütme denetimi geçirir ilk ifadesine *bileşik deyim* ve kadar devam eder bir `return` deyimi yürütüldüğünde veya işlev gövdesi sonu ile karşılaşıldı. Denetim ardından işlevi çağrıldı noktasına döndürür.  
-  
- A `return` bir ifade içeren deyimi gerekir yürütülebilir işlevi bir değer döndürülmesini istiyorsanız. Öyle değilse bir işlevin dönüş değeri tanımlanmamış `return` deyimi yürütüldüğünde veya `return` deyimi bir ifade içermiyor.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C İşlev Tanımları](../c-language/c-function-definitions.md)
+
+A *işlev gövdesi* olan işlevin ne yaptığını belirten deyimleri içeren bir bileşik deyim.
+
+## <a name="syntax"></a>Sözdizimi
+
+*işlev tanımı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim tanımlayıcıları*<sub>iyileştirilmiş</sub> *öznitelik-seq*<sub>iyileştirilmiş</sub> *bildirimci* *bildirim listesi*  <sub>iyileştirilmiş</sub> *bileşik deyim*
+
+/\* *öznitelik-seq* Microsoft Specific \*/
+
+*Bileşik deyim*: /\* işlev gövdesi \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *bildirim listesi*<sub>iyileştirilmiş</sub> *deyim listesindeki*<sub>iyileştirilmiş</sub> **}**
+
+Değişkenler olarak bilinen bir işlev gövdesindeki *yerel değişkenler*, sahip **otomatik** aksi belirtilmediği sürece depolama sınıfı. İşlev çağrıldığında, depolama, yerel değişkenleri oluşturulur ve yerel başlatmalar gerçekleştirilir. Yürütme denetimi geçtiği ilk deyimde *compound-statement* ve kadar devam eder. bir **dönüş** deyimi yürütüldüğünde veya işlev gövdesinin sonuna karşılaşıldı. Denetim, ardından işlev çağrıldı noktasını döndürür.
+
+A **dönüş** içeren bir ifade deyimi gereken yürütülebilir işlev bir değer döndürmek için ise. Öyle değilse bir işlevin dönüş değeri tanımsızdır **dönüş** deyimi yürütüldüğünde veya **dönüş** bir ifade deyimi içermez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C İşlev Tanımları](../c-language/c-function-definitions.md)

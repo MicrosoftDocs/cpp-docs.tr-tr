@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ec25b92ca9ce21f72ff2fb573aae316ef1c19eac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596656"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759105"
 ---
 # <a name="end-function"></a>end işlevi
 Bir koleksiyonun belirtilen arabirim parametresi tarafından erişilen ötesinde gösteren bir yineleyici döndürür.  

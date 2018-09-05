@@ -18,65 +18,73 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b99fe8fde475453c9e6dc0b524a6b1b94821bf75
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 85cd1a9a50d57ececb2d12dca8faa6dc914972f5
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358957"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763038"
 ---
 # <a name="cautoptrarray-class"></a>CAutoPtrArray sınıfı
-Bu sınıf, akıllı işaretçiler bir dizi oluşturulurken kullanışlı yöntemler sağlar.  
-  
+
+Bu sınıf, bir akıllı işaretçiler dizisi oluştururken kullanışlı yöntemler sağlar.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <typename E>
 class CAutoPtrArray : public CAtlArray<
                         ATL::CAutoPtr<E>,
                         CAutoPtrElementTraits<E>>
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `E`  
- İşaretçi türü.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAutoPtrArray::CAutoPtrArray](#cautoptrarray)|Oluşturucu.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf bir oluşturucu sağlar ve yöntemleri türetilen [CAtlArray](../../atl/reference/catlarray-class.md) ve [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) akıllı işaretçiler depolayan bir koleksiyon sınıfı nesnesinin oluşturulmasını yardımcı olmak için.  
-  
- Daha fazla bilgi için bkz: [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `CAtlArray`  
-  
- `CAutoPtrArray`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcoll.h  
-  
-##  <a name="cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray  
- Oluşturucu.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+`E`  
+İşaretçi türü.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAutoPtrArray::CAutoPtrArray](#cautoptrarray)|Oluşturucu.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf, bir oluşturucu sağlar ve türeyen yöntemlerinden [CAtlArray](../../atl/reference/catlarray-class.md) ve [CAutoPtrElementTraits](../../atl/reference/cautoptrelementtraits-class.md) akıllı işaretçiler depolama koleksiyon sınıf nesnesi oluşturmaya yardımcı olmak için.
+
+Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`CAtlArray`
+
+`CAutoPtrArray`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcoll.h
+
+##  <a name="cautoptrarray"></a>  CAutoPtrArray::CAutoPtrArray
+
+Oluşturucu.
+
 ```
 CAutoPtrArray() throw();
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Akıllı işaretçi dizi başlatır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CAtlArray sınıfı](../../atl/reference/catlarray-class.md)   
- [CAutoPtrElementTraits sınıfı](../../atl/reference/cautoptrelementtraits-class.md)   
- [CAutoPtrList sınıfı](../../atl/reference/cautoptrlist-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Akıllı işaretçi dizi başlatır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CAtlArray sınıfı](../../atl/reference/catlarray-class.md)   
+[CAutoPtrElementTraits sınıfı](../../atl/reference/cautoptrelementtraits-class.md)   
+[CAutoPtrList sınıfı](../../atl/reference/cautoptrlist-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

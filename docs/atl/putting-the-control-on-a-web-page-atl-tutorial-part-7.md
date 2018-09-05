@@ -1,5 +1,5 @@
 ---
-title: Bir Web sayfası (ATL Eğitmeni, Bölüm 7) denetimi koyma | Microsoft Docs
+title: Denetimi (ATL Eğitmeni, Bölüm 7) bir Web sayfasına koyma | Microsoft Docs
 ms.custom: get-started-article
 ms.date: 11/04/2016
 ms.technology:
@@ -12,71 +12,75 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cd4076ac34af6ee4b19687f401376265bf0e872
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: edc45522aaff12077de6115105b344ecf41e187e
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362590"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43762830"
 ---
 # <a name="putting-the-control-on-a-web-page-atl-tutorial-part-7"></a>Denetimi Web Sayfasına Koyma (ATL Eğitmeni, Bölüm 7)
-Denetim şimdi tamamlandı. Gerçek dünya durumda işe denetiminizi görmek için bir Web sayfasında yerleştirin. Denetim tanımlandığında denetimi içeren bir HTML dosyası oluşturuldu. PolyCtl.htm dosyadan Aç **Çözüm Gezgini**, bir Web sayfası denetiminizde görebilirsiniz.  
-  
- Bu adımda, olaylarını yanıtlamak için Web sayfası komut dosyası. Ayrıca, Internet Explorer denetimi komut dosyası için güvenli olduğunu bildiğiniz izin vermek için Denetim değiştirecektir.  
-  
-## <a name="scripting-the-web-page"></a>Web sayfası komut dosyası oluşturma  
- Denetim bir şey yapmanız henüz, böylece gönderdiğiniz olaylarını yanıtlamak için Web sayfasını değiştirme.  
-  
-#### <a name="to-script-the-web-page"></a>Komut dosyası Web sayfası  
-  
-1.  PolyCtl.htm açın ve HTML görünümü seçin. HTML kodunda aşağıdaki satırları ekleyin. Sonra eklenmelidir `</OBJECT>` önce `</BODY>`.  
-  
- ```  
- 
- <SCRIPT LANGUAGE="VBScript">  
- <!--  
-    Sub PolyCtl_ClickIn(x, y)  
-    PolyCtl.Sides = PolyCtl.Sides + 1  
-    End Sub  
-    Sub PolyCtl_ClickOut(x, y)  
-    PolyCtl.Sides = PolyCtl.Sides - 1  
-    End Sub  
- -->  
- </SCRIPT>  
- ```  
-  
-2.  HTM dosyasını kaydedin.  
-  
- Denetimden kenara özelliğini alır ve içindeki denetim tıklatırsanız kenar sayısını bir azaltır bazı VBScript kodu eklemiştir. Dışında denetimi tıklatırsanız, kenar sayısını bir azaltır.  
-  
-## <a name="indicating-that-the-control-is-safe-for-scripting"></a>Denetim komut dosyası için güvenli olduğunu belirten  
- Internet Explorer'da Web sayfası denetimi ile görüntüleyebilirsiniz ya da daha rahat, Visual C++ yerleşik Web tarayıcısı görünümünü kullanın. Web tarayıcısı görünümünde denetim görmek için PolyCtl.htm sağ tıklatın ve'ı tıklatın **tarayıcıda görüntüle**.  
-  
- Geçerli Internet Explorer güvenlik ayarlarınızı temel alan, Güvenlik Uyarısı iletişim kutusu denetim komut dosyası için güvenli olmayabilir ve potansiyel olarak verebilir belirten zarar alabilirsiniz. Örneğin, bir dosya görüntülenen ancak de sahip bir denetim varsa bir `Delete` silinen bir dosya yöntemi, onu olacaktır güvenli yalnızca bir sayfa üzerinde görüntülenirse. Birisi çağırabilirsiniz olduğundan bu komut, ancak güvenli olmayacaktır `Delete` yöntemi.  
-  
-> [!IMPORTANT]
->  Bu öğretici için güvenli olarak işaretlenmemiş ActiveX denetimlerini çalıştırmak için Internet Explorer'da, güvenlik ayarlarını değiştirebilirsiniz. Denetim Masası'nda tıklatın **Internet Özellikleri** tıklatıp **güvenlik** uygun ayarları değiştirmek için. Öğreticiyi tamamladıktan sonra özgün durumlarına güvenlik ayarlarınızı değiştirin.  
-  
- Internet Explorer belirli bu denetim için Güvenlik Uyarısı iletişim kutusu görüntülemek gerekmez program aracılığıyla uyarabilir. Bunu yapmak `IObjectSafety` arabirimi ve ATL sağlayan sınıfı bu arabirimi uygulaması [IObjectSafetyImpl](../atl/reference/iobjectsafetyimpl-class.md). Denetiminize arabirimi eklemek için Ekle `IObjectSafetyImpl` listenize devralınan sınıfların ve COM eşlemesinde için bir giriş ekleyin.  
-  
-#### <a name="to-add-iobjectsafetyimpl-to-the-control"></a>IObjectSafetyImpl denetimine eklemek için  
-  
-1.  PolyCtl.h devralınan sınıflarda listesinin sonuna aşağıdaki satırı ekleyin ve önceki satıra virgül ekleyin:  
-  
- [!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]  
-  
-2.  PolyCtl.h COM eşlemesinde aşağıdaki satırı ekleyin:  
-  
- [!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]  
-  
-## <a name="building-and-testing-the-control"></a>Derleme ve denetim test etme  
- Denetim oluşturun. Yapı tamamlandıktan sonra PolyCtl.htm tarayıcı görünümünde yeniden açın. Bu süre, doğrudan Güvenlik Uyarısı iletişim kutusu Web sayfasının görüntülenmesi gerekir. Çokgen tıklatın; kenar sayısını bir azaltır. Kenar sayısını azaltmak için Çokgen dışında'ı tıklatın. Üç aşağıda kenar sayısını azaltmak çalışırsanız, ayarladığınız hata iletisi görürsünüz.  
-  
- [6. adıma geri](../atl/adding-a-property-page-atl-tutorial-part-6.md)  
-  
-## <a name="next-steps"></a>Sonraki Adımlar  
- ATL öğretici sonlanır. ATL hakkında daha fazla bilgi için bağlantılar için bkz: [ATL başlangıç sayfasının](../atl/active-template-library-atl-concepts.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Öğretici](../atl/active-template-library-atl-tutorial.md)
 
+Denetiminiz artık tamamlandı. Denetim çalışmanızı gerçek durumda görmek için bir Web sayfasına koyun. Denetim tanımladığınızda, denetim içeren bir HTML dosyası oluşturuldu. Nden PolyCtl.htm dosyasını açın **Çözüm Gezgini**, denetiminizi Web sayfasında görebilirsiniz.
+
+Bu adımda, olaylara yanıt vermesi için Web sayfasına komut dosyası eklersiniz. Ayrıca, Internet Explorer'ın denetimin komut dosyası için güvenli olduğunu bilmesini sağlamak için denetimi değiştirir.
+
+## <a name="scripting-the-web-page"></a>Web sayfası betiği oluşturma
+
+Denetim bir şey henüz, dolayısıyla gönderdiğiniz olaylara yanıt vermek için Web sayfasını değiştirin.
+
+#### <a name="to-script-the-web-page"></a>Web sayfası betiği oluşturmak için
+
+1. Polyctl.htm dosyasını açın ve HTML görünümü seçin. Aşağıdaki satırları HTML koduna ekleyin. Sonra eklenmelidir `</OBJECT>` önce `</BODY>`.
+
+    ```html
+    <SCRIPT LANGUAGE="VBScript">
+    <!--
+        Sub PolyCtl_ClickIn(x, y)
+            PolyCtl.Sides = PolyCtl.Sides + 1
+        End Sub
+        Sub PolyCtl_ClickOut(x, y)
+            PolyCtl.Sides = PolyCtl.Sides - 1
+        End Sub
+    -->
+    </SCRIPT>
+    ```
+
+2. HTM dosyasını kaydedin.
+
+Denetimden kenar özelliğini alır ve denetimin içini tıkladığınızda bir kenar sayısını artıran bazı VBScript kodlarını eklediniz. Denetimin dışına tıklarsanız, kenar sayısını birer birer azaltır.
+
+## <a name="indicating-that-the-control-is-safe-for-scripting"></a>Denetim komut dosyası için güvenli olduğunu gösterme
+
+Denetimi içeren Web sayfasını Internet Explorer'da görüntüleyebilir veya daha fazla rahatı, Visual C++ ile oluşturulan Web tarayıcı görünümü kullanın. Denetiminizi Web tarayıcısı görünümünde görmek için polyctl.htm dosyasını sağ tıklayın ve **tarayıcıda görüntüle**.
+
+Geçerli Internet Explorer güvenlik ayarlarınıza göre bağlı olarak, Güvenlik Uyarısı iletişim kutusu denetim komut dosyası için güvenli olmayabilir ve potansiyel olarak verebilir belirten zarar alabilirsiniz. Örneğin, ancak ayrıca bir dosya görüntüleyen bir denetiminizin yanında, bir `Delete` bir dosyayı silen yöntemi olacağını güvenli yalnızca bir sayfa üzerinde görüntülemeniz. Biri çağırabilirsiniz çünkü bu betik, ancak güvenli olmayacaktır `Delete` yöntemi.
+
+> [!IMPORTANT]
+> Bu öğretici için güvenli olarak işaretlenmemiş ActiveX denetimlerini çalıştırmak için Internet Explorer'da güvenlik ayarlarını değiştirebilirsiniz. Denetim Masası'nda tıklatın **Internet Özellikleri** tıklatıp **güvenlik** uygun ayarları değiştirmek için. Öğreticiyi tamamladıktan sonra güvenlik ayarlarınızı ilk durumuna değiştirin.
+
+Ayrıca, bu belirli denetim için Güvenlik Uyarısı iletişim kutusunu görüntülemek gerekmeyen Internet Explorer programlı olarak uyarabilir. İle bunu yapabilirsiniz `IObjectSafety` arabirimi ve ATL sağlayan bir uygulama sınıfındaki bu arabirimin [Iobjectsafetyımpl](../atl/reference/iobjectsafetyimpl-class.md). Arabirimi denetiminize eklemek için Ekle `IObjectSafetyImpl` devralınan sınıflar listenize ve bunun için COM haritanıza bir giriş ekleyin.
+
+#### <a name="to-add-iobjectsafetyimpl-to-the-control"></a>Denetime Iobjectsafetyımpl eklemek için
+
+1. PolyCtl.h içindeki devralınmış sınıflar listesinin sonuna aşağıdaki satırı ekleyin ve önceki satıra bir virgül ekleyin:
+
+[!code-cpp[NVC_ATL_Windowing#62](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_1.h)]
+
+2. PolyCtl.h içindeki COM eşlemesine aşağıdaki satırı ekleyin:
+
+[!code-cpp[NVC_ATL_Windowing#63](../atl/codesnippet/cpp/putting-the-control-on-a-web-page-atl-tutorial-part-7_2.h)]
+
+## <a name="building-and-testing-the-control"></a>Derleme ve denetimini test etme
+
+Denetimi oluşturun. Derleme tamamlandıktan sonra polyctl.htm dosyasını tarayıcı görünümünde yeniden açın. Bu kez Web sayfası doğrudan Güvenlik Uyarısı iletişim kutusu görüntülenmesi gerekir. Çokgenin tıklayın; kenar sayısını birer birer artırır. Kenar sayısını azaltmak için çokgenin dışını tıklayın. Üçten sayısını azaltmak çalışırsanız, ayarladığınız hata iletisini görürsünüz.
+
+[6. adıma geri](../atl/adding-a-property-page-atl-tutorial-part-6.md)
+
+## <a name="next-steps"></a>Sonraki Adımlar
+
+Bu, ATL Öğreticisi burada sona eriyor. ATL hakkında daha fazla bilgi için bağlantılar için bkz: [ATL başlangıç sayfası](../atl/active-template-library-atl-concepts.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Öğretici](../atl/active-template-library-atl-tutorial.md)

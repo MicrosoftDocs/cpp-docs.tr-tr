@@ -16,20 +16,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 796974bb9fb7ab7965fd2af0b62378d62d621652
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c5a2c99992d84757aebcb50dca828dbdc23870b8
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358696"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764172"
 ---
 # <a name="inserting-a-composite-control"></a>Bileşik denetim ekleme
-**Sınıfı Ekle** iletişim kutusu ATL nesneyi bir projeye eklemenize olanak sağlar. Çözüm işaret Gezgini'nde proje adına sağ tıklayarak bu iletişim kutusunu erişim **Ekle**ve ardından **sınıfı Ekle**.  
-  
- İçinde **sınıfı Ekle** iletişim kutusunda, seçin **ATL Denetim**. Bu başlatır [ATL Denetim Sihirbazı](../atl/reference/atl-control-wizard.md). Bileşik denetim oluşturmak için seçin **seçenekleri** sekmesine ve tıklayın **bileşik denetim** onay kutusu.  
-  
- Varsayılan HTML sayfasını denetimi görüntülemek için oluşturulur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+
+**Sınıfı Ekle** iletişim kutusu, bir projeye ATL nesnesi eklemek tanır. Proje adı gösteren Çözüm Gezgini içinde sağ tıklayarak bu iletişim kutusuna erişmek **Ekle**ve ardından **sınıfı Ekle**.
+
+İçinde **sınıfı Ekle** iletişim kutusunda **ATL denetimi**. Bu başlatır [ATL denetimi Sihirbazı](../atl/reference/atl-control-wizard.md). Bileşik denetim oluşturmak için Seç **seçenekleri** sekmesine ve tıklayın **bileşik denetim** onay kutusu.
+
+Varsayılan HTML sayfasını denetim görüntülemek için oluşturulur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
 

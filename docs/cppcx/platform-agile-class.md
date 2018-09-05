@@ -21,11 +21,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: f552327156d9fc1abe5e921f3b59b1fb4132ff3d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596608"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763438"
 ---
 # <a name="platformagile-class"></a>Platform::Agile sınıfı
 Bir MashalingBehavior sahip nesneyi temsil eden standart çalışma zamanı özel durumları iş parçacığı oluşturma olasılığını önemli ölçüde azaltan bir Çevik nesne olarak =. `Agile<T>` Çağrı veya aynı veya farklı bir iş parçacığı, çağrılması Çevik olmayan nesnesi sağlar. Daha fazla bilgi için [iş parçacığı oluşturma ve hazırlama](../cppcx/threading-and-marshaling-c-cx.md).  

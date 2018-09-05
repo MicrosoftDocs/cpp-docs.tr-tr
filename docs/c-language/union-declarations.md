@@ -16,60 +16,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d8c52752c1e05cb3c9f2b18a827fb493ba503ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8b87f3a12de35cb7e7a57c901d65e8df51814fe3
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391184"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43763412"
 ---
 # <a name="union-declarations"></a>Birleşim Bildirimleri
-"Birleşim bildirim" bir dizi değişken değerleri ve isteğe bağlı olarak, UNION adlandırma etiket belirtir. Değişken değerleri UNION "üye" olarak adlandırılır ve farklı olabilir. Birleşimler, diğer dillerde "değişken kayıtlar" benzerdir.  
+"Birleşim bildirimi" bir dizi değişken değerleri ve isteğe bağlı olarak, birleşim adlandırma etiket belirtir. Değişken değerleri birleşimin "Üyeler" olarak adlandırılır ve farklı olabilir. Birleşimler, "değişken kayıtlar" diğer dillerdeki benzerdir.  
   
-## <a name="syntax"></a>Sözdizimi  
- *yapı veya birleşim belirleyici*:  
- *struct veya union tanımlayıcı* kabul **{** *yapısı bildirimi listesi* **}**  
+## <a name="syntax"></a>Sözdizimi
+
+*struct veya union tanımlayıcısı*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcı*<sub>iyileştirilmiş</sub> **{** *yapı bildirim listesi* **}**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*yapı veya birleşim* *tanımlayıcısı*  
   
- *struct veya union tanımlayıcısı*  
+*yapı veya birleşim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Yapı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**birleşim**  
   
- *struct veya union*:  
- **struct**  
+*Yapı bildirim listesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirim listesi* *yapı bildirimi*
+
+Birleşim içeriği olarak tanımlanır
   
- **birleşim**  
+*Yapı bildirimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Belirleyicisi niteleyici listesinin* *yapı bildirimci listesi***;**   
   
- *Yapı bildirimi listesi*:  
- *Yapı bildirimi*  
+*Belirleyicisi niteleyici listesinin*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür belirticisi* *tanımlayıcısı niteleyici listesi*<sub>iyileştirilmiş</sub> <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tür niteleyicisi* *tanımlayıcısı niteleyici listesi*<sub>iyileştirilmiş</sub>
   
- *Yapı bildirimi listesi yapısı-bildirimi*  
+*Yapı-declarator-list*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Yapı bildirimcisi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Yapı-declarator-list***,***yapı bildirimcisi* 
   
- Birleşim içerik olarak tanımlanır  
+Bir değişken **birleşim** türü türü tarafından tanımlanan değerlerden birini depolar. Yapı ve birleşim bildirimleri aynı kurallara yönetir. Birleşimler alanları bit.  
   
- *Yapı bildirimi*:  
- *belirleyici niteleyici listesinde yapısı bildirimcisi listesi***;**  
+Birleşimler üyelerinin yazın, bir eksik tür olamaz `void`, veya işlev türü. Bu nedenle üyeleri Birliği örneği olamaz ancak bildirilen birleşim türü işaretçileri olabilir.  
   
- *belirleyici niteleyici listesinde*:  
- *tür belirteci belirleyici niteleyicisi listesi* iptal et  
-  
- *tür niteleyicisi belirleyici niteleyicisi listesi* iptal et  
-  
- *Yapı bildirimcisi listesi*:  
- *Yapı bildirimcisi*  
-  
- *Yapı bildirimcisi listesi***,***yapısı bildirimcisi*   
-  
- Sahip bir değişken **UNION** türü bu türü tarafından tanımlanan değerlerden biri depolar. Aynı kurallar yapı ve birleşim bildirimleri kapsar. Birleşimler alanları bit.  
-  
- Birleşimler üyeleri yazın, tamamlanmamış bir türü olamaz `void`, veya işlev türü. Bu nedenle üyeleri UNION örneği olamaz, ancak bildirilen birleşim türü işaretçileri olabilir.  
-  
- Bir birleşim türü bildirimi yalnızca bir şablon. Değişkeni bildirilmiş kadar bellek ayrılmış değil.  
+Birleşim türü yalnızca bir şablonu bildirimidir. Bildirilen bir değişkenin kadar bellek ayrılmış değil.  
   
 > [!NOTE]
->  İki tür birleşimi bildirilmiş ve bir değer depolanır, ancak birleşimi bir türü ile erişilen, sonuçları güvenilir değil. Örneğin, bir birleşimi **float** ve `int` bildirilmedi. A **float** değeri depolanır, ancak programı daha sonra değeri olarak erişen bir `int`. Böyle bir durumda, iç depolaması ve değeri değişir **float** değerleri. Tamsayı değeri güvenilir olmaz.  
+> İki tür UNION bildirilmiş ve bir değeri depolanan ancak birleşim bir türü ile erişilen, sonuçları güvenilir değil. Örneğin, bir birleşimini **float** ve `int` bildirilir. A **float** değeri depolanır, ancak bu programı daha sonra değeri olarak erişen bir `int`. Böyle bir durumda iç depolama alanında değer bağlıdır **float** değerleri. Tamsayı değeri güvenilir olmaz.  
   
-## <a name="examples"></a>Örnekler  
- Birleşimler örnekleri verilmiştir:  
+## <a name="examples"></a>Örnekler
+
+Birleşimler örnekleri aşağıda verilmiştir:  
   
-```  
+```C
 union sign   /* A definition and a declaration */  
 {  
     int svar;  
@@ -77,9 +74,9 @@ union sign   /* A definition and a declaration */
 } number;  
 ```  
   
- Bu örnek bir birleşim değişkeniyle tanımlar `sign` yazın ve adlı bir değişken bildiren `number` iki üyesi olan: `svar`, imzalı bir tamsayı ve `uvar`, imzalanmamış tamsayı. Bu bildirim geçerli değeri verir `number` işaretli veya işaretsiz bir değer depolanmasını. Bu birleşim türü ile ilişkili etiket `sign`.  
-  
-```  
+Bu örnek, birleşim değişkenini ile tanımlar `sign` yazın ve adlı bir değişken bildirir `number` iki üyesi olan: `svar`, imzalı bir tamsayı ve `uvar`, işaretsiz bir tamsayı. Bu bildirimi geçerli değerini sağlar `number` işaretli veya işaretsiz bir değer olarak depolanacak. Bu birleşim türü ile ilişkili etiket `sign`.  
+
+```C
 union               /* Defines a two-dimensional */  
 {                   /*  array named screen */  
     struct      
@@ -89,15 +86,15 @@ union               /* Defines a two-dimensional */
     } window1;  
     int screenval;  
 } screen[25][80];  
-```  
+```
+
+`screen` Dizi 2.000 öğeleri içerir. Dizideki her öğeye iki üyesi olan tek bir birleşimdir: `window1` ve `screenval`. `window1` İki bit alanı üyesi bir yapı üyesidir `icon` ve `color`. `screenval` Üyesi olan bir `int`. Birleşim her öğe herhangi bir zamanda bulunduran `int` tarafından temsil edilen `screenval` veya yapısı tarafından temsil edilen `window1`.  
   
- `screen` Dizi 2.000 öğeleri içerir. Her dizi iki üye tek tek bir birleşim öğesidir: `window1` ve `screenval`. `window1` Üyesidir yapısı iki bit alanı üyeleriyle `icon` ve `color`. `screenval` Üye olduğu bir `int`. Belirli bir zamanda, her birleşim öğesi ya da tutan `int` tarafından temsil edilen `screenval` veya tarafından temsil edilen yapısı `window1`.  
+**Microsoft'a özgü**  
   
- **Microsoft özel**  
+İç içe geçmiş birleşimler başka bir yapı veya birleşim üyesi olduklarında, anonim olarak bildirilebilir. Bu, adsız bir birleşim örneğidir:  
   
- Başka bir yapı veya birleşim üyeleri olduklarında iç içe geçmiş birleşimler anonim olarak bildirilebilir. Bu, adsız UNION örneğidir:  
-  
-```  
+```C
 struct str  
 {  
     int a, b;  
@@ -115,9 +112,9 @@ struct str
 my_str.l == 0L;  /* A reference to a field in the my_str union */  
 ```  
   
- Birleşimler, genellikle belirli bir zamanda birleşim içinde bulunan veri türünü vermiş bir alan içeren bir yapı içinde yerleştirilir. Bu, bu tür bir birleşim için bir bildirim örneğidir:  
+Birleşimler genellikle belirli bir zamanda birleşimde yer alan veri türünü vermiş bir alan içeren bir yapı içinde iç içe geçirilmiştir. Bu tür UNION bildirimi örnektir:  
   
-```  
+```C
 struct x  
 {  
     int type_tag;  
@@ -129,9 +126,9 @@ struct x
 }  
 ```  
   
- Bkz: [yapı ve birleşim üyeleri](../c-language/structure-and-union-members.md) birleşimler başvuran hakkında bilgi.  
+Bkz: [yapı ve birleşim üyeleri](../c-language/structure-and-union-members.md) birleşimler başvurma hakkında bilgi.  
   
- **SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)
+[Bildirimler ve Değişken Bildirimleri](../c-language/declarators-and-variable-declarations.md)

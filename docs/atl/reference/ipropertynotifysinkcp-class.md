@@ -19,47 +19,52 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3fddd187dd6df58c4013b9c1fc7a08d5f644a0db
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ab7e3731132e1b9ed9381a7b97347406b620df70
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203169"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43759671"
 ---
 # <a name="ipropertynotifysinkcp-class"></a>Ipropertynotifysinkcp sınıfı
-Bu sınıf sunan [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.  
-  
+
+Bu sınıf sunan [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirimi bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<class T, class CDV = CComDynamicUnkArray>  
 class IPropertyNotifySinkCP 
    : public IConnectionPointImpl<T, &IID_IPropertyNotifySink, CDV>
-```    
-  
-#### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IPropertyNotifySinkCP`.  
-  
- *CDV*  
- Bir bağlantı noktası ve onun havuz arasındaki bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız sayıda bağlantı sağlar. Ayrıca [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit sayıda bağlantı belirtir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `IPropertyNotifySinkCP` temel sınıfı olan tüm yöntemleri devralan [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md).  
-  
- [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirim özellik değişiklikleri hakkında bildirim almak bir havuz nesnesi sağlar. Sınıf `IPropertyNotifySinkCP` bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak bu arabirimini kullanıma sunar. İstemci uygulamalıdır `IPropertyNotifySink` havuz yöntemleri.  
-  
- Öğesinden, bir sınıf türetin `IPropertyNotifySinkCP` temsil eden bir bağlantı noktası oluşturmak istediğinizde `IPropertyNotifySink` arabirimi.  
-  
- ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlctl.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Iconnectionpointımpl sınıfı](../../atl/reference/iconnectionpointimpl-class.md)   
- [Iconnectionpointcontainerımpl sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*  
+Sınıfınız, türetilen `IPropertyNotifySinkCP`.
+
+*CDV*  
+Bir bağlantı noktası ve onun havuz arasındaki bağlantıları yöneten bir sınıf. Varsayılan değer [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), sınırsız sayıda bağlantı sağlar. Ayrıca [CComUnkArray](../../atl/reference/ccomunkarray-class.md), sabit sayıda bağlantı belirtir.
+
+## <a name="remarks"></a>Açıklamalar
+
+`IPropertyNotifySinkCP` temel sınıfı olan tüm yöntemleri devralan [Iconnectionpointımpl](../../atl/reference/iconnectionpointimpl-class.md).
+
+[Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink) arabirim özellik değişiklikleri hakkında bildirim almak bir havuz nesnesi sağlar. Sınıf `IPropertyNotifySinkCP` bağlanılabilirlik nesnesi üzerinde giden bir arabirim olarak bu arabirimini kullanıma sunar. İstemci uygulamalıdır `IPropertyNotifySink` havuz yöntemleri.
+
+Öğesinden, bir sınıf türetin `IPropertyNotifySinkCP` temsil eden bir bağlantı noktası oluşturmak istediğinizde `IPropertyNotifySink` arabirimi.
+
+ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı noktaları](../../atl/atl-connection-points.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlctl.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Iconnectionpointımpl sınıfı](../../atl/reference/iconnectionpointimpl-class.md)   
+[Iconnectionpointcontainerımpl sınıfı](../../atl/reference/iconnectionpointcontainerimpl-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

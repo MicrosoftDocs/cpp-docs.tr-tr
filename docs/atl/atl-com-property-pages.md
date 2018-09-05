@@ -19,36 +19,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ec1fb89817da663dd088dadc9b667a3ff0aef46
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0da9a0299679ec140888e9536329f0957a786279
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200984"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43760009"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
-COM özellik sayfaları, özellikleri ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri. Özellik sayfaları, denetim özelliklerini tasarım zamanında ayarlanacak sağlayan zengin kullanıcı arabirimleri sağlamak için ActiveX denetimleri tarafından yaygın olarak kullanılır.  
-  
- Özellik sayfaları olan COM nesneleri uygulayan [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) veya [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) arabirimi. Bu arabirimleri ile ilişkilendirilmesi için sayfayı sağlayan yöntemler sunar bir `site` (sayfanın kapsayıcıyı temsil eden bir COM nesnesi) ve bir dizi *nesneleri* (yöntemleri değişikliklere yanıt olarak çağrılacağı COM nesneleri özellik sayfasının kullanıcı tarafından yapılan). Özellik sayfası kapsayıcı sayfası kullanıcı arabirimi ve değişikliklerin uygulanması ne zaman göstermek veya gizlemek için temel nesneler için kullanıcı tarafından yapılan bildirebilen için özellik sayfası arabirimindeki yöntemleri çağırmak için sorumludur.  
-  
- Her bir özellik sayfası tamamen özellikleri ayarlanabilir nesneleri bağımsız olarak oluşturulabilir. Tüm bu özellik sayfası ihtiyaçlarını belirli bir arabirim (veya arabirimleri kümesi) anlamak için bu arabirimdeki yöntemleri çağırmak için bir kullanıcı arabirim sağlamak üzere olduğundan.  
-  
- Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/desktop/com/property-sheets-and-property-pages) Windows SDK.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Özellik Sayfaları Belirtme](../atl/specifying-property-pages.md)  
- Özellik sayfaları, denetim için belirtmek için adımları ve örnek bir sınıf gösterir.  
-  
- [Özellik Sayfaları Uygulama](../atl/implementing-property-pages.md)  
- Özellik sayfaları, geçersiz kılmak için yöntemleri dahil olmak üzere uygulamaya yönelik adımlar listelenmektedir. ATLPages örnek programına dayalı tam bir örnek gösterilmektedir.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [ATLPages örnek](../visual-cpp-samples.md)  
- Örnek özet kullanarak bir özellik sayfası uygulayan ATLPages örnek `IPropertyPageImpl`.  
-  
- [ATL](../atl/active-template-library-atl-concepts.md)  
- Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../atl/active-template-library-atl-concepts.md)
+
+COM özellik sayfaları, özellikleri ayarlamak için bir kullanıcı arabirimi sağlar (veya çağırma yöntemleri) bir veya daha fazla COM nesneleri. Özellik sayfaları, denetim özelliklerini tasarım zamanında ayarlanacak sağlayan zengin kullanıcı arabirimleri sağlamak için ActiveX denetimleri tarafından yaygın olarak kullanılır.
+
+Özellik sayfaları olan COM nesneleri uygulayan [IPropertyPage](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage) veya [IPropertyPage2](/windows/desktop/api/ocidl/nn-ocidl-ipropertypage2) arabirimi. Bu arabirimleri ile ilişkilendirilmesi için sayfayı sağlayan yöntemler sunar bir `site` (sayfanın kapsayıcıyı temsil eden bir COM nesnesi) ve bir dizi *nesneleri* (yöntemleri değişikliklere yanıt olarak çağrılacağı COM nesneleri özellik sayfasının kullanıcı tarafından yapılan). Özellik sayfası kapsayıcı sayfası kullanıcı arabirimi ve değişikliklerin uygulanması ne zaman göstermek veya gizlemek için temel nesneler için kullanıcı tarafından yapılan bildirebilen için özellik sayfası arabirimindeki yöntemleri çağırmak için sorumludur.
+
+Her bir özellik sayfası tamamen özellikleri ayarlanabilir nesneleri bağımsız olarak oluşturulabilir. Tüm bu özellik sayfası ihtiyaçlarını belirli bir arabirim (veya arabirimleri kümesi) anlamak için bu arabirimdeki yöntemleri çağırmak için bir kullanıcı arabirim sağlamak üzere olduğundan.
+
+Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/desktop/com/property-sheets-and-property-pages) Windows SDK.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Özellik Sayfaları Belirtme](../atl/specifying-property-pages.md)  
+Özellik sayfaları, denetim için belirtmek için adımları ve örnek bir sınıf gösterir.
+
+[Özellik Sayfaları Uygulama](../atl/implementing-property-pages.md)  
+Özellik sayfaları, geçersiz kılmak için yöntemleri dahil olmak üzere uygulamaya yönelik adımlar listelenmektedir. ATLPages örnek programına dayalı tam bir örnek gösterilmektedir.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[ATLPages örnek](../visual-cpp-samples.md)  
+Örnek özet kullanarak bir özellik sayfası uygulayan ATLPages örnek `IPropertyPageImpl`.
+
+[ATL](../atl/active-template-library-atl-concepts.md)  
+Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../atl/active-template-library-atl-concepts.md)
 
