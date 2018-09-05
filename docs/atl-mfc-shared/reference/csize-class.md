@@ -21,184 +21,209 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a74b7d759cd0ed7f576276f4c7948a07e161892
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 71a96e54c3182db3fa57798f962ae5565aeca812
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220747"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752271"
 ---
 # <a name="csize-class"></a>CSize sınıfı
-Windows için benzer [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) göreli koordinat veya konum uygulayan yapısı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
+
+Windows için benzer [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) göreli koordinat veya konum uygulayan yapısı.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
 class CSize : public tagSIZE 
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSize::CSize](#csize)|Oluşturur bir `CSize` nesne.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CSize::operator-](#operator_-)|İki boyutu çıkarır.|  
-|[CSize::operator! =](#operator_neq)|Denetimleri arasındaki eşitsizliği `CSize` ve boyutu.|  
-|[CSize::operator +](#operator_add)|İki boyutu ekler.|  
-|[CSize::operator +=](#operator_add_eq)|Bir boyuta ekler `CSize`.|  
-|[CSize::operator-=](#operator_-_eq)|Çıkarma listesinden bir boyut `CSize`.|  
-|[CSize::operator ==](#operator_eq_eq)|Denetimleri arasındaki eşitliği `CSize` ve boyutu.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf türetilir `SIZE` yapısı. Bu, geçirebilirsiniz anlamına gelir. bir `CSize` için çağıran bir parametreye bir `SIZE` ve veri üyeleri `SIZE` yapısı erişilebilir veri üyeleri olan `CSize`.  
-  
- `cx` Ve `cy` üyeleri `SIZE` (ve `CSize`) herkese açık. Ayrıca, `CSize` yönlendirmek üzere öğe işlevleri uygulayan `SIZE` yapısı.  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSize::CSize](#csize)|Oluşturur bir `CSize` nesne.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CSize::operator-](#operator_-)|İki boyutu çıkarır.|
+|[CSize::operator! =](#operator_neq)|Denetimleri arasındaki eşitsizliği `CSize` ve boyutu.|
+|[CSize::operator +](#operator_add)|İki boyutu ekler.|
+|[CSize::operator +=](#operator_add_eq)|Bir boyuta ekler `CSize`.|
+|[CSize::operator-=](#operator_-_eq)|Çıkarma listesinden bir boyut `CSize`.|
+|[CSize::operator ==](#operator_eq_eq)|Denetimleri arasındaki eşitliği `CSize` ve boyutu.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf türetilir `SIZE` yapısı. Bu, geçirebilirsiniz anlamına gelir. bir `CSize` için çağıran bir parametreye bir `SIZE` ve veri üyeleri `SIZE` yapısı erişilebilir veri üyeleri olan `CSize`.
+
+`cx` Ve `cy` üyeleri `SIZE` (ve `CSize`) herkese açık. Ayrıca, `CSize` yönlendirmek üzere öğe işlevleri uygulayan `SIZE` yapısı.
+
 > [!NOTE]
->  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CSize`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `tagSIZE`  
-  
- `CSize`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atltypes.h  
-  
-##  <a name="csize"></a>  CSize::CSize  
- Oluşturur bir `CSize` nesne.  
-  
-```  
+>  Daha fazla bilgi için paylaşılan yardımcı sınıflar (gibi `CSize`), bkz: [paylaşılan sınıflar](../../atl-mfc-shared/atl-mfc-shared-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`tagSIZE`
+
+`CSize`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atltypes.h
+
+##  <a name="csize"></a>  CSize::CSize
+
+Oluşturur bir `CSize` nesne.
+
+```
 CSize() throw();
 CSize( int initCX, int initCY) throw();
 CSize( SIZE initSize) throw();
 CSize( POINT initPt) throw();
 CSize( DWORD dwSize) throw(); 
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *initCX*  
- Kümeleri `cx` üyesi için `CSize`.  
-  
- *initCY*  
- Kümeleri `cy` üyesi için `CSize`.  
-  
- *initSize*  
- [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` başlatmak için kullanılan nesne `CSize`.  
-  
- *initPt*  
- [NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan nesne `CSize`.  
-  
- *dwSize*  
- DWORD başlatmak için kullanılan `CSize`. Düşük düzey sözcük `cx` üyesi ve dwpoint `cy` üyesi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bağımsız değişken olmadan verilirse `cx` ve `cy` sıfır olarak başlatılır.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]  
-  
-##  <a name="operator_eq_eq"></a>  CSize::operator ==  
- İki boyutu arasındaki denetler.  
-  
-```   
+```
+
+### <a name="parameters"></a>Parametreler
+
+*initCX*  
+Kümeleri `cx` üyesi için `CSize`.
+
+*initCY*  
+Kümeleri `cy` üyesi için `CSize`.
+
+*initSize*  
+[BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı veya `CSize` başlatmak için kullanılan nesne `CSize`.
+
+*initPt*  
+[NOKTASI](../../mfc/reference/point-structure1.md) yapısı veya `CPoint` başlatmak için kullanılan nesne `CSize`.
+
+*dwSize*  
+DWORD başlatmak için kullanılan `CSize`. Düşük düzey sözcük `cx` üyesi ve dwpoint `cy` üyesi.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bağımsız değişken olmadan verilirse `cx` ve `cy` sıfır olarak başlatılır.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#97](../../atl-mfc-shared/codesnippet/cpp/csize-class_1.cpp)]
+
+##  <a name="operator_eq_eq"></a>  CSize::operator ==
+
+İki boyutu arasındaki denetler.
+
+``` 
 BOOL operator==(SIZE size) const throw(); 
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- 0 otherwize boyutları eşitse, sıfır döndürür.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]  
-  
-##  <a name="operator_neq"></a>  CSize::operator! =  
- İki boyutu arasındaki eşitsizliği denetler.  
-  
-```   
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+0 otherwize boyutları eşitse, sıfır döndürür.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#98](../../atl-mfc-shared/codesnippet/cpp/csize-class_2.cpp)]
+
+##  <a name="operator_neq"></a>  CSize::operator! =
+
+İki boyutu arasındaki eşitsizliği denetler.
+
+``` 
 BOOL operator!=(SIZE size) const throw(); 
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Boyutları eşit değilse sıfır döndürür. Aksi durumda 0.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]  
-  
-##  <a name="operator_add_eq"></a>  CSize::operator +=  
- Bir boyut için bunu ekler `CSize`.  
-  
-```   
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Boyutları eşit değilse sıfır döndürür. Aksi durumda 0.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#99](../../atl-mfc-shared/codesnippet/cpp/csize-class_3.cpp)]
+
+##  <a name="operator_add_eq"></a>  CSize::operator +=
+
+Bir boyut için bunu ekler `CSize`.
+
+``` 
 void operator+=(SIZE size) throw(); 
-```  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]  
-  
-##  <a name="operator_-_eq"></a>  CSize::operator-=  
- Bu boyut çıkarır `CSize`.  
-  
-```   
+```
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#100](../../atl-mfc-shared/codesnippet/cpp/csize-class_4.cpp)]
+
+##  <a name="operator_-_eq"></a>  CSize::operator-=
+
+Bu boyut çıkarır `CSize`.
+
+``` 
 void operator-=(SIZE size) throw(); 
-```  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#101](../../atl-mfc-shared/codesnippet/cpp/csize-class_5.cpp)]  
-  
-##  <a name="operator_add"></a>  CSize::operator +  
- Bu işleçler bu ekleme `CSize` parametresinin değeri için değer.  
-  
-```   
+```
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#101](../../atl-mfc-shared/codesnippet/cpp/csize-class_5.cpp)]
+
+##  <a name="operator_add"></a>  CSize::operator +
+
+Bu işleçler bu ekleme `CSize` parametresinin değeri için değer.
+
+``` 
 CSize operator+(SIZE size) const throw();
 CPoint operator+(POINT point) const throw();
 CRect operator+(const RECT* lpRect) const throw(); 
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Tek tek işleçler aşağıdaki açıklamaları bakın:  
-  
-- **operator + (** `size` **)** bu işlem iki ekler `CSize` değerleri.  
-  
-- **işleç + (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) (veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.  
-  
-- **işleç + (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (veya [CRect](../../atl-mfc-shared/reference/crect-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]  
-  
-##  <a name="operator_-"></a>  CSize::operator-  
- Bu işleçler, ilk üç bu çıkarma `CSize` parametresinin değeri için değer.  
-  
-```   
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Tek tek işleçler aşağıdaki açıklamaları bakın:
+
+- **operator + (** `size` **)** bu işlem iki ekler `CSize` değerleri.
+
+- **işleç + (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) (veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator +](../../atl-mfc-shared/reference/cpoint-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **işleç + (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) (veya [CRect](../../atl-mfc-shared/reference/crect-class.md)) bu değerle `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değer eklenir **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator +](../../atl-mfc-shared/reference/crect-class.md#operator_add) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#102](../../atl-mfc-shared/codesnippet/cpp/csize-class_6.cpp)]
+
+##  <a name="operator_-"></a>  CSize::operator-
+
+Bu işleçler, ilk üç bu çıkarma `CSize` parametresinin değeri için değer.
+
+``` 
 CSize operator-(SIZE size) const throw();
 CPoint operator-(POINT point) const throw();
 CRect operator-(const RECT* lpRect) const throw();
 CSize operator-() const throw(); 
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Tek işlenenli eksi işareti, dördüncü işleci işaretini değişiklikleri `CSize` değeri. Tek tek işleçler aşağıdaki açıklamaları bakın:  
-  
-- **-işleci (** `size` **)** bu işlem iki çıkarır `CSize` değerleri.  
-  
-- **-işleci (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değere göre bu eklenebilir tersini `CSize` değer. **Cx** ve **cy** bu `CSize` değeri gelen çıkartılır **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.  
-  
-- **-işleci (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değere göre bu eklenebilir tersini `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değeri gelen çıkartılır **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.  
-  
-- **operator-()** bu işlem, bu eklenebilir tersini döndürür `CSize` değeri.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_ATLMFC_Utilities#103](../../atl-mfc-shared/codesnippet/cpp/csize-class_7.cpp)]  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC örnek MDI](../../visual-cpp-samples.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)   
- [CPoint Sınıfı](../../atl-mfc-shared/reference/cpoint-class.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Tek işlenenli eksi işareti, dördüncü işleci işaretini değişiklikleri `CSize` değeri. Tek tek işleçler aşağıdaki açıklamaları bakın:
+
+- **-işleci (** `size` **)** bu işlem iki çıkarır `CSize` değerleri.
+
+- **-işleci (** `point` **)**(taşıma) bu işlemi kaydırır bir [noktası](https://msdn.microsoft.com/library/windows/desktop/dd162805) veya [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) değere göre bu eklenebilir tersini `CSize` değer. **Cx** ve **cy** bu `CSize` değeri gelen çıkartılır **x** ve **y** veri üyeleri **noktası**  değeri. Sürümüne benzer [CPoint::operator -](../../atl-mfc-shared/reference/cpoint-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **-işleci (** `lpRect` **)**(taşıma) bu işlemi kaydırır bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) veya [CRect](../../atl-mfc-shared/reference/crect-class.md) değere göre bu eklenebilir tersini `CSize` değeri. **Cx** ve **cy** bu üyeleri `CSize` değeri gelen çıkartılır **sol**, **üst**, **sağ**, ve **alt** veri üyeleri `RECT` değeri. Sürümüne benzer [CRect::operator -](../../atl-mfc-shared/reference/crect-class.md#operator_-) almayan bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) parametresi.
+
+- **operator-()** bu işlem, bu eklenebilir tersini döndürür `CSize` değeri.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_ATLMFC_Utilities#103](../../atl-mfc-shared/codesnippet/cpp/csize-class_7.cpp)]
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MFC örnek MDI](../../visual-cpp-samples.md)   
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[CRect sınıfı](../../atl-mfc-shared/reference/crect-class.md)   
+[CPoint Sınıfı](../../atl-mfc-shared/reference/cpoint-class.md)
 

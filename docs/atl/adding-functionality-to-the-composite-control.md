@@ -1,5 +1,5 @@
 ---
-title: Bileşik Denetim işlevselliği ekleme | Microsoft Docs
+title: Bileşik denetime işlevsellik ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,29 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67602e16fc5a30c82e82772b6b9f6c553ba79d9b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59ee8047e17efdebbae6ee58ec243057a477caff
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354188"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751139"
 ---
-# <a name="adding-functionality-to-the-composite-control"></a>Bileşik Denetim işlevsellik ekleme
-Tüm gerekli denetimleri bileşik denetime ekledikten sonra sonraki adım, yeni işlevsellik ekleme içerir. Bu yeni işlevsellik genellikle iki kategoride toplanabilir:  
-  
--   Ek arabirimleri destekleyen ve ek, belirli özelliklerle bileşik denetiminizi davranışını özelleştirme.  
-  
--   Kapsanan ActiveX denetimi (veya denetimleri) olayları işleme.  
-  
- Amacı ve bu makalenin kapsamı için bu bölümde geri kalanı yalnızca ActiveX denetimlerini etkinlikleri işleme üzerine odaklanır.  
-  
+# <a name="adding-functionality-to-the-composite-control"></a>Bileşik denetime işlevsellik ekleme
+
+Bileşik denetime gerekli herhangi bir denetim ekledikten sonra sonraki adım, yeni işlevsellik ekleme içerir. Bu yeni işlevselliği, genellikle iki kategoriye döner:
+
+- Ek arabirimleri destekleyen ve ek, belirli özellikleri ile Bileşik Denetim davranışını özelleştirme.
+
+- Kapsanan ActiveX denetimi (veya denetimleri) etkinlikleri işleme.
+
+Amacı ve bu makalenin kapsamı için bu bölümün geri kalanında yalnızca ActiveX denetimleri etkinlikleri işleme üzerinde odaklanır.
+
 > [!NOTE]
->  Windows denetimleri gelen iletileri işlemek ihtiyacınız varsa bkz [bir pencere uygulama](../atl/implementing-a-window.md) ileti içinde ATL işleme hakkında daha fazla bilgi için  
-  
- ActiveX denetimi iletişim kaynak ekleme sonra denetimi sağ tıklatın ve **olay işleyicisi ekleme**. Önce işlemek istediğiniz olayı seçin **ekleme ve düzenleme**. Olay işleyici kodu denetimin .h dosyasına eklenir.  
-  
- Bileşik denetim ActiveX denetimleri için bağlantı noktaları otomatik olarak bağlı ve çağrıları aracılığıyla bağlantısı kesilmiş [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+>  Windows denetimleri gelen iletileri işlemek ihtiyacınız varsa bkz [pencere uygulama](../atl/implementing-a-window.md) ileti ATL içinde işleme hakkında daha fazla bilgi
+
+ActiveX denetimi iletişim kaynak ekleme sonra denetime sağ tıklayın ve **olay işleyici Ekle**. ' A tıklayın ve işlemek için istediğiniz olayı seçin **ekleme ve düzenleme**. Olay işleyici kodunu denetim .h dosyasına eklenir.
+
+Bileşik denetim ActiveX denetimleri için bağlantı noktaları otomatik olarak bağlı ve çağrılar aracılığıyla bağlı [CComCompositeControl::AdviseSinkMap](../atl/reference/ccomcompositecontrol-class.md#advisesinkmap).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
 

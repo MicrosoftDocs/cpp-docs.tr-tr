@@ -16,28 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49c9483cb6e556d5a8b174377c0dad666834c9e5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1ec4e92774cdec75e47c07407ee72444a7486f7f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384365"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751341"
 ---
 # <a name="function-call-c"></a>İşlev Çağrısı (C)
-"İşlev çağrısı", çağrılan işlevin adını veya bir işlev işaretçisinin adını ve isteğe bağlı olarak işlevine geçirilen bağımsız değişkenleri içeren bir ifadedir.  
+
+A *işlev çağrısı* , çağrılan işlevin adını veya bir işlev işaretçisi ve isteğe bağlı olarak işleve geçirilen bağımsız değişken değerini içeren bir ifadedir.  
   
-## <a name="syntax"></a>Sözdizimi  
- *sonek ifade*:  
- *sonek ifade***(***bağımsız değişken ifadesi listesi* kabul **)**   
+## <a name="syntax"></a>Sözdizimi
+
+*sonek ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi***(***bağımsız değişken ifade listesi*<sub>iyileştirilmiş</sub> **)**   
   
- *bağımsız değişken ifadesi listesi*:  
- *atama ifadesi*  
+*bağımsız değişken ifade listesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atama ifadesi*<br/> &nbsp;&nbsp;&nbsp;&nbsp;*bağımsız değişken ifade listesi* **,** *atama ifadesi*  
   
- *bağımsız değişken ifadesi listesi***,***atama ifadesi*   
+*Sonek ifadesi* bir işlev adresini (örneğin, bir işlev Belirleyicisi veya işlev işaretçisinin değeri) değerlendirmelidir ve *bağımsız değişken ifade listesi* (ayrılmış ifadeler listesi virgülle) değerleri ("değişkenler") işleve geçirilir. *Bağımsız değişken ifade listesi* bağımsız değişkeni boş olabilir.  
   
- *Sonek ifade* bir işlev adresi (örneğin, bir işlev tanımlayıcısı veya bir işlev işaretçisi değerini) değerlendirmeniz gerekir ve *bağımsız değişken ifadesi listesi* ifadeleri (ayrılmış bir listesi virgül tarafından) değerleri ("değişkenler") işlevine geçirilir. *Bağımsız değişken ifadesi listesi* bağımsız değişkeni boş olamaz.  
+Bir işlev çağrısı ifadesi, işlevin dönüş değerinin değerine ve türüne sahiptir. Bir işlev dizi türünde bir nesne döndüremez. İşlevin dönüş türü `void` ise (yani işlev hiçbir zaman bir değer döndürmeyecek şekilde bildirilmişse), işlev çağrısı ifadesinde de `void` türü vardır. (Bkz [işlev çağrıları](../c-language/function-calls.md) daha fazla bilgi için.)  
   
- Bir işlev çağrısı ifadesi, işlevin dönüş değerinin değerine ve türüne sahiptir. Bir işlev dizi türünde bir nesne döndüremez. İşlevin dönüş türü `void` ise (yani işlev hiçbir zaman bir değer döndürmeyecek şekilde bildirilmişse), işlev çağrısı ifadesinde de `void` türü vardır. (Bkz [işlev çağrılarını](../c-language/function-calls.md) daha fazla bilgi için.)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlev Çağırma İşleci: ()](../cpp/function-call-operator-parens.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İşlev Çağırma İşleci: ()](../cpp/function-call-operator-parens.md)

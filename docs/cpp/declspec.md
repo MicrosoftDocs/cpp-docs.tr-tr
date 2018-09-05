@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4358712e5573095229a48a6d08b78706c608874d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1b434ca991ef05bb90c3cbdc659cf8adc3381aa0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403654"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752923"
 ---
 # <a name="declspec"></a>__declspec
 
@@ -30,36 +30,36 @@ Depolama sınıfı bilgilerini kullanan belirtmek için genişletilmiş öznitel
 
 ## <a name="grammar"></a>Dilbilgisi
 
-*Decl-specifier*:  
+*Decl-specifier*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**__declspec (***genişletilmiş-decl-değiştirici-seq***)** 
 
-*extended-decl-modifier-seq*:  
-&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici*<sub>iyileştirilmiş</sub>  
+*extended-decl-modifier-seq*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici*<sub>iyileştirilmiş</sub><br/>
 &nbsp;&nbsp;&nbsp;&nbsp;*Genişletilmiş-decl-değiştirici* *genişletilmiş-decl-değiştirici-seq*
 
-*Genişletilmiş-decl-değiştirici*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (** *#* **)**  
-&nbsp;&nbsp;&nbsp;&nbsp;**ayırın ("** *segname* **")**  
-&nbsp;&nbsp;&nbsp;&nbsp;**AppDomain**  
-&nbsp;&nbsp;&nbsp;&nbsp;**code_seg ("** *segname* **")**  
-&nbsp;&nbsp;&nbsp;&nbsp;**kullanım dışı**  
-&nbsp;&nbsp;&nbsp;&nbsp;**dllimport**  
-&nbsp;&nbsp;&nbsp;&nbsp;**dllexport**  
-&nbsp;&nbsp;&nbsp;&nbsp;**jitintrinsic**  
-&nbsp;&nbsp;&nbsp;&nbsp;**naked**  
-&nbsp;&nbsp;&nbsp;&nbsp;**noalias**  
-&nbsp;&nbsp;&nbsp;&nbsp;**noinline**  
-&nbsp;&nbsp;&nbsp;&nbsp;**noreturn**  
-&nbsp;&nbsp;&nbsp;&nbsp;**nothrow**  
-&nbsp;&nbsp;&nbsp;&nbsp;**novtable**  
-&nbsp;&nbsp;&nbsp;&nbsp;**İşlem**  
-&nbsp;&nbsp;&nbsp;&nbsp;**özellik (** { **alma =**_get_func_name_ &#124; **, put =**_put_func_name_ } **)**  
-&nbsp;&nbsp;&nbsp;&nbsp;**kısıtlama**  
-&nbsp;&nbsp;&nbsp;&nbsp;**safebuffers**  
-&nbsp;&nbsp;&nbsp;&nbsp;**selectany**  
-&nbsp;&nbsp;&nbsp;&nbsp;**spectre(nomitigation)**  
-&nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**  
-&nbsp;&nbsp;&nbsp;&nbsp;**uuid ("** *ComObjectGUID* **")**  
+*Genişletilmiş-decl-değiştirici*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Hizalama (** *#* **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**ayırın ("** *segname* **")**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**AppDomain**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**code_seg ("** *segname* **")**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**kullanım dışı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**dllimport**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**dllexport**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**jitintrinsic**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**naked**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**noalias**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**noinline**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**noreturn**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**nothrow**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**novtable**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**İşlem**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**özellik (** { **alma =**_get_func_name_ &#124; **, put =**_put_func_name_ } **)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**kısıtlama**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**safebuffers**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**selectany**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**spectre(nomitigation)**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**iş parçacığı**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**uuid ("** *ComObjectGUID* **")**
 
 Beyaz boşluk, bildirim değiştirici sırasını ayırır. Örnekler sonraki bölümlerde gösterilir.
 

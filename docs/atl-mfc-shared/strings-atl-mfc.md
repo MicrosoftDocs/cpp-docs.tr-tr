@@ -1,5 +1,5 @@
 ---
-title: Dizeler (MFC ATL) | Microsoft Docs
+title: Dizeler (ATL-MFC) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -31,30 +31,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c5ebcd038c7526edca7de4756bf3f5562f361b1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a918866710575ecc091fcce4564a7617d28a102d
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355486"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752781"
 ---
 # <a name="strings-atlmfc"></a>Dizeler (ATL/MFC)
-Neredeyse tüm programlar dize verilerle çalışır. Visual C++ Bu dize verilerini yönetmek için birkaç yöntem sağlar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [CStringT kullanma](../atl-mfc-shared/using-cstringt.md)  
- Şablon sınıfı CStringT kullanarak programlama açıklar.  
-  
- [CString Kullanma](../atl-mfc-shared/using-cstring.md)  
- CString, CStringT varsayılan uygulamasını kullanarak programlama açıklar.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)  
- Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.  
-  
- [MFC Kavramları](../mfc/mfc-concepts.md)  
- Yardımcı olmak üzere kavramsal ve görev tabanlı konuları sağlar MFC kitaplığını kullanarak programı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL/MFC sınıfları paylaşılan](../atl-mfc-shared/atl-mfc-shared-classes.md)
+
+Neredeyse tüm programlar dize verileri ile çalışma. Visual C++ Bu dize verileri yönetmek için birçok yol sağlar.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[CStringT kullanma](../atl-mfc-shared/using-cstringt.md)  
+Şablon sınıfı CStringT kullanarak programlama açıklar.
+
+[CString Kullanma](../atl-mfc-shared/using-cstring.md)  
+CString, CStringT varsayılan uygulamasını kullanarak programlama açıklar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[CStringT genel bakış](../atl-mfc-shared/reference/cstringt-class.md)  
+Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
+
+[MFC Kavramları](../mfc/mfc-concepts.md)  
+Yardımcı olacak kavramsal ve görev tabanlı konular sunar MFC Kitaplığı kullanarak programlama.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL/MFC paylaşılan sınıfları](../atl-mfc-shared/atl-mfc-shared-classes.md)
 

@@ -21,11 +21,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dd6f4eed4cefba16d95baabe38fc5268c0ae8512
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216445"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752332"
 ---
 # <a name="platformobject-class"></a>Platform::Object sınıfı
 Başvuru sınıfları ve Windows çalışma zamanı uygulamalarında başvuru yapı birimleri için genel davranış sağlar. Tüm başvuru sınıfı ve ref struct örnekleri Platform::Object için örtük olarak dönüştürülebilir ^ ve kendi sanal ToString yöntemini geçersiz kılabilirsiniz.  

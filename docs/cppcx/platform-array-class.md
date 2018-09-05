@@ -18,11 +18,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: fa689035a6e95db7f9471d4972063ec35486e0cb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605891"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753223"
 ---
 # <a name="platformarray-class"></a>Platform::Array sınıfı
 Alınan ve uygulama ikili arabiriminde (ABI) geçirilen tek boyutlu, değiştirilebilir bir dizisini temsil eder.  

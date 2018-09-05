@@ -1,5 +1,5 @@
 ---
-title: IDispatch ve IErrorInfo destekleyen | Microsoft Docs
+title: IDispatch ve IErrorInfo destekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,18 +20,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94f4c99da3989cce84bd5b6bd3bbfee8df97ff43
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d9c27dfe81c3bbd2978f418c8e942ac20190b30
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360955"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753614"
 ---
 # <a name="supporting-idispatch-and-ierrorinfo"></a>IDispatch ve IErrorInfo destekleme
-Şablon sınıfı kullanabilirsiniz [IDispatchImpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamasını sağlamak için `IDispatch Interface` çift arabirimlerden nesneniz üzerinde kısmı.  
-  
- Nesnenizin kullanıyorsa `IErrorInfo` hataları istemciye geri sonra nesnenizin desteklemelidir bildirmek için arabirimi `ISupportErrorInfo Interface` arabirimi. Şablon sınıfı [ISupportErrorInfoImpl](../atl/reference/isupporterrorinfoimpl-class.md) nesnenizin hatalarda oluşturan tek bir arabirim yalnızca varsa, bu uygulama için kolay bir yol sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
+
+Şablon sınıfı kullanabileceğiniz [Idispatchımpl](../atl/reference/idispatchimpl-class.md) bir varsayılan uygulamasını sağlamak üzere `IDispatch Interface` nesneniz üzerinde herhangi bir ikili arabirimler kısmı.
+
+Nesnenizin kullanıyorsa `IErrorInfo` hataları istemciye geri sonra nesnenizin desteklemelidir bildirmek için arabirimi `ISupportErrorInfo Interface` arabirimi. Şablon sınıfı [Isupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) nesneniz üzerinde hatası veriyorsa tek bir arabirim yalnızca varsa, bu uygulama için kolay bir yol sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL COM Nesnelerinin Temelleri](../atl/fundamentals-of-atl-com-objects.md)
 

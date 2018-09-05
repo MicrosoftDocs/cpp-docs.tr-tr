@@ -15,17 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5d66059ddabac7edb2001f154173e6367355815
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8646e612505099476b39109c3ef5f9084f7403ab
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382747"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43752166"
 ---
 # <a name="default-date-and-time"></a>Varsayılan Tarih ve Saat
-**ANSI 3.8.8** _DATE tanımlarında\_ ve _tıme\_ zaman, sırasıyla tarihi ve saati çevirisi kullanılabilir değil  
+
+**ANSI 3.8.8** tanımlarını `__DATE__` ve `__TIME__` , sırasıyla, tarih ve saat çevirisi kullanılabilir değil  
   
- İşletim sistemi çeviri saati ve tarihi sağlamaz, _DATE için varsayılan değerler\_ ve _tıme\_ olan `May 03 1957` ve `17:00:00"`.  
+İşletim sistemi, tarih ve saat çevirisi sağlamaz, varsayılan değerleri `__DATE__` ve `__TIME__` olan `May 03 1957` ve `17:00:00`.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)

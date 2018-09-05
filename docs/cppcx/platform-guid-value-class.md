@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d971d4cce8dc3a9d01a666bc8e0e6333f85260c8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201380"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751575"
 ---
 # <a name="platformguid-value-class"></a>Platform::Guid değer sınıfı
 Temsil eden bir [GUID](https://msdn.microsoft.com/library/windows/desktop/aa373931\(v=vs.85\).aspx) Windows çalışma zamanı tür sisteminde türü.  

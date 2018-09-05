@@ -17,11 +17,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 2f7f45d76e69f3eaaf94bdb66a0da0e4d3b78069
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609075"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751504"
 ---
 # <a name="platformoutofboundsexception-class"></a>Platform::OutOfBoundsException sınıfı
 Bir işlem, geçerli aralığın dışında veri erişim girişiminde bulunduğunda oluşturulur.  

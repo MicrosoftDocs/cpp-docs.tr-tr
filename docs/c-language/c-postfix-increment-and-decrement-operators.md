@@ -16,30 +16,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f96c48a69f692c8646de5dec8ad8e6431fb63c5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7dc0b4c71aafe3435def0b96ae621c60ff640dc0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381528"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43751217"
 ---
 # <a name="c-postfix-increment-and-decrement-operators"></a>C Sonek Arttırma ve Azaltma İşleçleri
-Sonek işlenenleri artırmak ve azaltma işleçleri değiştirilebilir l değerleri olan skaler türleridir.  
+Sonek işleneni artırın ve azaltma işleçleri, değiştirilebilir bir l-değerler skaler türlerdir.  
   
-## <a name="syntax"></a>Sözdizimi  
- *sonek ifade*:  
- *sonek ifade*  **++**  
-  
- *sonek ifade*  **--**  
-  
- Sonuç sonek artırma veya azaltma işlemi işleneni değeri. Sonuç alındıktan sonra işlenen artırılır (veya indirildiği) değeri. Aşağıdaki kod sonek artırma işlecinin gösterir.  
+## <a name="syntax"></a>Sözdizimi
+
+*sonek ifadesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **++**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*sonek ifadesi*  **--**
+
+Sonuç sonek artırma veya azaltma işlemi işlenenin değeridir. Sonuç alındıktan sonra işlenenin artırılması (veya azaltılması). Aşağıdaki kod sonek artırma işlecini gösterir.  
   
 ```  
 if( var++ > 0 )  
     *p++ = *q++;  
 ```  
   
- Bu örnekte, değişken `var` 0'a kıyasla sonra artar. Varsa `var` artar önce pozitif, next deyimi yürütülür. İlk olarak, nesnenin değerini işaret için tarafından `q` gösterdiği nesne atandığı `p`. Ardından, `q` ve `p` artırılır.  
+Bu örnekte, değişken `var` 0 olarak karşılaştırıldığında sonra artar. Varsa `var` pozitif artan önce sonraki deyimi yürütülür. İlk olarak, nesnenin değeri tarafından işaret edilen `q` tarafından işaret edilen nesnenin atandığı `p`. Ardından, `q` ve `p` artırılır.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Son Ek Arttırma ve Azaltma İşleçleri: ++ ve --](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Son Ek Arttırma ve Azaltma İşleçleri: ++ ve --](../cpp/postfix-increment-and-decrement-operators-increment-and-decrement.md)

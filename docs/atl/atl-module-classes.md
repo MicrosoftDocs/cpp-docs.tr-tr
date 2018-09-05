@@ -16,53 +16,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 777d81fbe1de48289863fda00591a5328b40cf4c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: af9749e2809678a7d7a8cc1e2bc6f4c2a40fbd6a
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32356611"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753470"
 ---
 # <a name="atl-module-classes"></a>ATL Modül Sınıfları
-Bu konuda ATL 7. 0 ' Yeni modül sınıfları anlatılmaktadır.  
-  
-## <a name="ccommodule-replacement-classes"></a>CComModule değiştirme sınıfları  
- Önceki sürümlerinde kullanılan ATL `CComModule`. ATL 7. 0'da, `CComModule` işlevleri çeşitli sınıflar tarafından değiştirildi:  
-  
--   [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) ATL kullanan çoğu uygulamalar tarafından gerekli olan bilgileri içerir Modül ve kaynak örneği HINSTANCE içerir.  
-  
--   [CAtlComModule](../atl/reference/catlcommodule-class.md) ATL COM sınıfları tarafından gerekli olan bilgileri içerir  
-  
--   [CAtlWinModule](../atl/reference/catlwinmodule-class.md) ATL Pencereleme sınıflarda gerekli bilgileri içerir  
-  
--   [CAtlDebugInterfacesModule](../atl/reference/catldebuginterfacesmodule-class.md) arabirimi hata ayıklama için destek içerir.  
-  
--   [CAtlModule](../atl/reference/catlmodule-class.md) aşağıdaki `CAtlModule`-türetilen sınıflar belirli uygulama türde de gerekli bilgileri içerecek şekilde özelleştirilebilir. Bu sınıfların çoğu üyeleri geçersiz kılınabilir:  
-  
-    -   [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) DLL uygulamalarında kullanılır. Standart dışarı aktarmalar için kod sağlar.  
-  
-    -   [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) EXE uygulamalarında kullanılır. Bir EXE gerekli kodu sağlar.  
-  
-    -   [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Windows NT ve Windows 2000 hizmetleri oluşturmak için destek sağlar.  
-  
- `CComModule` Geriye dönük uyumluluk için kullanılabilir durumda kalır.  
-  
-## <a name="reasons-for-distributing-ccommodule-functionality"></a>CComModule işlevselliği dağıtma nedenleri  
- İşlevselliğini `CComModule` birkaç yeni sınıflar olarak aşağıdaki nedenlerle dağıtıldı:  
-  
--   İşlevleri olun `CComModule` ayrıntılı.  
-  
-     COM, Pencereleme, arabirimi hata ayıklama ve uygulamaya özgü (DLL ya da EXE) özellikleri için destek ayrı sınıflarda sunulmuştur.  
-  
--   Otomatik olarak bu modüllerin her biri genel örneği bildirin.  
-  
-     Gerekli modül sınıfları genel bir örneğini projeye bağlı.  
-  
--   Init ve terim yöntemleri çağırma gerekliliğini kaldırın.  
-  
-     Init ve terim yöntemleri oluşturucular ve Yıkıcılar halinde modülü sınıflarını taşınmış; artık Init ve terim aramak için bir gereksinimi yoktur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../atl/active-template-library-atl-concepts.md)   
- [Sınıfa genel bakış](../atl/atl-class-overview.md)
+
+Bu konu, ATL 7. 0'yeni modül sınıfları açıklar.
+
+## <a name="ccommodule-replacement-classes"></a>CComModule değiştirme sınıfları
+
+Önceki sürümlerinde kullanılan ATL `CComModule`. ATL 7. 0'da, `CComModule` işlevleri, çeşitli sınıfları tarafından değiştirilir:
+
+- [CAtlBaseModule](../atl/reference/catlbasemodule-class.md) ATL kullanabiliyorsanız, çoğu uygulama tarafından gerekli olan bilgileri içerir. Modül ve kaynak örneğinin HINSTANCE içerir.
+
+- [CAtlComModule](../atl/reference/catlcommodule-class.md) ATL COM sınıfları tarafından gerekli olan bilgileri içerir.
+
+- [CAtlWinModule](../atl/reference/catlwinmodule-class.md) ATL Pencereleme sınıfları tarafından gerekli olan bilgileri içerir.
+
+- [Catldebugınterfacesmodule](../atl/reference/catldebuginterfacesmodule-class.md) arabirimi hata ayıklama desteği içerir.
+
+- [CAtlModule](../atl/reference/catlmodule-class.md) aşağıdaki `CAtlModule`-türetilmiş sınıflar belirli uygulama türde de gerekli bilgileri içeren özelleştirilmiş. Bu sınıfların çoğu üyeleri geçersiz kılınabilir:
+
+   - [CAtlDllModuleT](../atl/reference/catldllmodulet-class.md) DLL uygulamalarında kullanılır. Standart dışarı aktarmaları için kod sağlar.
+
+   - [CAtlExeModuleT](../atl/reference/catlexemodulet-class.md) EXE uygulamalarında kullanılır. Bir EXE gerekli kodu sağlar.
+
+   - [CAtlServiceModuleT](../atl/reference/catlservicemodulet-class.md) Windows NT ve Windows 2000 hizmetleri oluşturmak için destek sağlar.
+
+`CComModule` Geriye dönük uyumluluk için yine de kullanılabilir.
+
+## <a name="reasons-for-distributing-ccommodule-functionality"></a>CComModule işlevselliği dağıtmak için nedenler
+
+İşlevselliğini `CComModule` birkaç yeni sınıfı aşağıdaki nedenlerle dağıtıldı:
+
+- İşlevleri olun `CComModule` ayrıntılı.
+
+     COM, Pencereleme, arabirimi hata ayıklama ve uygulamaya özgü (DLL veya EXE) özellikleri için destek ayrı sınıflarda sunulmuştur.
+
+- Otomatik olarak bu modüllerin her biri genel örneğini bildirir.
+
+     Gerekli modül sınıfları genel bir örneğini projeye bağlı.
+
+- Init ve terimi yöntemleri çağırma ihtiyacını kaldırın.
+
+     Init ve terimi yöntemleri için modül sınıfları oluşturucular ve Yıkıcılar taşındı; artık Init ve istediğiniz dönemi çağırmaya gerek yoktur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../atl/active-template-library-atl-concepts.md)   
+[Sınıfına genel bakış](../atl/atl-class-overview.md)
 

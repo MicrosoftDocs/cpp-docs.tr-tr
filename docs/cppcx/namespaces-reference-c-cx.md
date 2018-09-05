@@ -14,11 +14,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d74eb59fa1c8c8f53591c8452cb6940bc9ae1743
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601276"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43753116"
 ---
 # <a name="namespaces-reference-ccx"></a>Ad alanları başvurusu (C + +/ CX)
 Belgelerin bu bölümdeki makaleleri, derleyicinin C + destekleyen ad alanlarını açıklayan +/ CX.  
