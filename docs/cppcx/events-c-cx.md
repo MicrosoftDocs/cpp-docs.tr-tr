@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8465572cf5b921f56e357ae554ecdeaf9943b725
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606382"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767584"
 ---
 # <a name="events-ccx"></a>Olaylar (C + +/ CX)
 Bir Windows türü bildirebilirsiniz (Yayımlama) çalışma zamanı olayları ve istemci kodu aynı bileşenin veya diğer bileşenleri abone olabilir, bu olaylarla adlı yöntemler ilişkilendirerek *olay işleyicileri* olaylı. Birden çok olay işleyicileri, tek bir olay ile ilişkili olabilir. Yayımlama nesne olayı oluşturan, tüm olay işleyicileri çağrılmasına neden olur. Bu şekilde, yayımcı olayını ne olursa olsun bir özel eylem uygundur abone sınıfı gerçekleştirebilirsiniz. Bir olay olaya abone için tüm olay işleyicilerine sahip olması imza belirten bir temsilci türü vardır.  

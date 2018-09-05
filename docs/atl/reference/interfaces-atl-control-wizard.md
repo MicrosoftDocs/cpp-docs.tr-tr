@@ -1,5 +1,5 @@
 ---
-title: Arabirimler, ATL Denetim Sihirbazı | Microsoft Docs
+title: Arabirimler, ATL denetimi Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,32 +16,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 745e8ee1074af6b4126a2123acafdc821906d24c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c3629b65b8f6373b20fc35dd6d90133d7377e674
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32362358"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766567"
 ---
-# <a name="interfaces-atl-control-wizard"></a>Arabirimleri, ATL Denetim Sihirbazı
-Sihirbazın bu sayfası denetimi destekler arabirimlerini tanımlar. Varsayılan olarak, genellikle çoğu kapsayıcıları tarafından kullanılan desteklenen arabirimler dosyalardır.  
-  
+# <a name="interfaces-atl-control-wizard"></a>ATL denetimi Sihirbazı, arabirimler
+
+Sihirbazın bu sayfası denetimi destekleyen arabirimlerini tanımlar. Varsayılan olarak, genellikle çoğu kapsayıcıları tarafından kullanılan desteklenen arabirimleri olanlardır.
+
 > [!NOTE]
->  Seçtiyseniz **en az denetim** üzerinde [seçenekleri](../../atl/reference/options-atl-control-wizard.md) sekmesinde, varsayılan olarak hiçbir arabirim görüntülenmez **desteklenen** liste kutusu.  
-  
- **Desteklenmiyor**  
- Denetim için şu anda desteklenmeyen kullanılabilir arabirimleri gösterir.  
-  
- **Desteklenen**  
- Denetim için şu anda desteklenen arabirimleri gösterir.  
-  
-|Aktarma düğmesi|Açıklama|  
-|---------------------|-----------------|  
-|**>**|Ekler **desteklenen** geçerli seçili arabirim adı listesi **desteklenmiyor** listesi.|  
-|**>>**|Ekler **desteklenen** bulunan tüm arabirim adlarını listelemek **desteklenmiyor** listesi.|  
-|**<**|Şu anda seçili arabirim adı kaldırır **desteklenen** listesi.|  
-|**<<**|Tüm arabirim şu anda listelenen adları kaldırır **desteklenen** listesi.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
+>  Seçtiyseniz **en az bir denetim** üzerinde [seçenekleri](../../atl/reference/options-atl-control-wizard.md) sekmesinde, arabirimlerine varsayılan olarak görünen **desteklenen** liste kutusu.
+
+**Desteklenmiyor**  
+Denetim için şu anda desteklenmeyen kullanılabilir arabirimleri gösterir.
+
+**Desteklenen**  
+Denetim için şu anda desteklenen arabirimleri gösterir.
+
+|Aktarım düğmesi|Açıklama|
+|---------------------|-----------------|
+|**>**|Ekler **desteklenen** geçerli seçili arabirim adı listesi **desteklenmiyor** listesi.|
+|**>>**|Ekler **desteklenen** bulunan tüm arabirimi adlarını listelemek **desteklenmiyor** listesi.|
+|**<**|Şu anda seçili arabirim adını kaldırır **desteklenen** listesi.|
+|**<<**|Şu anda listelenen adları tüm arabirim kaldırır **desteklenen** listesi.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
 

@@ -32,16 +32,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77d7576b5e8914148a8c67d8df82573c1f379e16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1128834e49de75feba37409101a9ffe2a3e2ece2
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32394700"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764793"
 ---
 # <a name="bsearch"></a>bsearch
 
-İkili arama sıralanmış bir dizinin gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [bsearch_s](bsearch-s.md).
+Sıralanmış bir diziyi ikili bir arama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [bsearch_s](bsearch-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -61,7 +61,7 @@ void *bsearch(
 Aranacak nesne.
 
 *base*<br/>
-Arama verilerini temel işaretçi.
+Temel arama verileri için işaretçi.
 
 *Sayı*<br/>
 Öğe sayısı.
@@ -70,23 +70,23 @@ Arama verilerini temel işaretçi.
 Öğe genişliği.
 
 *Karşılaştırma*<br/>
-İki öğe karşılaştırır geri çağırma işlevi. İlk arama için anahtar için bir işaretçi ve ikinci anahtar ile Karşılaştırılacak dizi öğesi için bir işaretçi.
+İki öğeyi karşılaştıran bir geri çağırma işlevi. İlk arama anahtarı için bir işaretçidir ve ikinci anahtarı ile Karşılaştırılacak dizi öğesinin işaretçisidir.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-**bsearch** işaretçi için bir örneğini döndüren *anahtar* gösterdiği dizideki *temel*. Varsa *anahtar* , işlevi döndürür bulunamadı **NULL**. Dizi artan sıralama değil veya yinelenen kayıtları aynı anahtarlarla içeriyorsa, öngörülemeyen bir sonucudur.
+**bsearch** işaretçi döndüren bir olayın oluşmasını *anahtarı* işaret ettiği dizideki *temel*. Varsa *anahtarı* , işlev döndürür bulunamadı **NULL**. Dizi sıralama düzeni artan sırada değil veya yinelenen kayıtları ile özdeş anahtarlarını içeren, sonucu tahmin edilemez.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Bsearch** işlevi gerçekleştiren bir ikili arama sıralanmış bir dizi *numarası* öğeleri, her biri *genişliği* bayt cinsinden boyutu. *Temel* aranacak, dizi tabanı için bir işaretçi bir değerdir ve *anahtar* Aranan değerdir. *Karşılaştırmak* parametredir bir işaretçi bir dizi öğesine istenen anahtarına karşılaştırır ve ilişkilerini belirterek aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama:
+**Bsearch** işlevi gerçekleştiren bir sıralanmış bir diziyi ikili arama *numarası* öğeleri, her biri *genişliği* bayt cinsinden boyutu. *Temel* aranacak, dizinin temel bir işaretçi değeridir ve *anahtar* Aranan değer. *Karşılaştırma* parametresi, bir işaretçi, bir dizi öğesine İstenen anahtar karşılaştırır ve aralarındaki ilişkiyi belirleme aşağıdaki değerlerden birini döndürür ve kullanıcı tarafından sağlanan bir yordama:
 
-|Tarafından döndürülen değer *karşılaştırmak* yordamı|Açıklama|
+|Tarafından döndürülen değer *karşılaştırma* yordamı|Açıklama|
 |-----------------------------------------|-----------------|
-|\< 0|Dizi öğesi değerinden anahtardır.|
-|0|Anahtar dizi öğesine eşittir.|
-|> 0|Dizi öğesi büyük anahtardır.|
+|\< 0|Anahtar dizi öğesi'dan küçük.|
+|0|Anahtar, dizi öğesine eşittir.|
+|> 0|Anahtar, dizi öğesi büyüktür.|
 
-Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya *numarası* olan **NULL**, veya *temel* olan **NULL**ve **numarası* sıfır olmayan, olduğundan veya *genişliği* sıfır açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **errno** ayarlanır **EINVAL** ve işlevi döndürür **NULL**.
+Bu işlev, parametrelerini doğrular. Varsa *karşılaştırma*, *anahtarı* veya *numarası* olduğu **NULL**, veya *temel* olduğu **NULL**ve *numarası* sıfır değilse, ya da Eğer *genişliği* sıfır açıklandığı gibi geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **errno** ayarlanır `EINVAL` ve işlev döndürür **NULL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -94,11 +94,11 @@ Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak*, *anahtar* veya 
 |-------------|---------------------|
 |**bsearch**|\<stdlib.h > ve \<search.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Bu program bir dize dizisi qsort ile sıralar ve "kat" word bulmak için bsearch kullanır.
+Bu program, bir dize dizisi ile qsort sıralar ve ardından "cat" sözcüğü bulmak için bsearch kullanır.
 
 ```C
 // crt_bsearch.c

@@ -1,5 +1,5 @@
 ---
-title: Stok özellikleri, ATL Denetim Sihirbazı | Microsoft Docs
+title: Stok özellikleri, ATL denetimi Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,29 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b6ba488e2cb498aa3d130a8525f1438adc6d406
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b84563c2576f4969acb4162bcaa92d6f62f97c72
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358905"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767471"
 ---
-# <a name="stock-properties-atl-control-wizard"></a>Stok özellikleri, ATL Denetim Sihirbazı
-Sihirbazın bu sayfası denetimi için desteklenen stok özellikleri tanımlar. Varsayılan olarak, hiçbir özellik tanımlanır.  
-  
- **Desteklenmiyor**  
- Denetim için şu anda desteklenmeyen kullanılabilir özellikleri gösterir.  
-  
- **Desteklenen**  
- Denetim için şu anda desteklenen özellikleri gösterir.  
-  
-|Aktarma düğmesi|Açıklama|  
-|---------------------|-----------------|  
-|**>**|Ekler **desteklenen** geçerli seçili özellik adı listesi **desteklenmiyor** listesi.|  
-|**>>**|Ekler **desteklenen** bulunan tüm özellik adları listesi **desteklenmiyor** listesi.|  
-|**<**|Şu anda seçili özellik adını kaldırır **desteklenen** listesi.|  
-|**<<**|Şu anda listelenen tüm özellik adları kaldırır **desteklenen** listesi.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
+# <a name="stock-properties-atl-control-wizard"></a>Stok özellikleri, ATL denetimi Sihirbazı
+
+Sihirbazın bu sayfası denetimi için desteklenen stok özellikleri tanımlar. Varsayılan olarak, hiçbir özellik tanımlanır.
+
+**Desteklenmiyor**  
+Denetim için şu anda desteklenmeyen kullanılabilir özellikleri gösterir.
+
+**Desteklenen**  
+Denetim için şu anda desteklenen özellikleri gösterir.
+
+|Aktarım düğmesi|Açıklama|
+|---------------------|-----------------|
+|**>**|Ekler **desteklenen** geçerli seçili özellik adı listesi **desteklenmiyor** listesi.|
+|**>>**|Ekler **desteklenen** bulunan tüm özellik adlarını listelemek **desteklenmiyor** listesi.|
+|**<**|Şu anda seçili özellik adı kaldırır **desteklenen** listesi.|
+|**<<**|Şu anda listelenen tüm özellik adlarını kaldırır **desteklenen** listesi.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ATL Denetimi Sihirbazı](../../atl/reference/atl-control-wizard.md)
 

@@ -16,11 +16,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 3526aed9f8acd4c1d385e5b5b0311200dcfd9b54
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584496"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766908"
 ---
 # <a name="platformdetailsheapentryhandler-delegate"></a>Platform::details:: heapentryhandler temsilcisi
 Bu temsilci, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  

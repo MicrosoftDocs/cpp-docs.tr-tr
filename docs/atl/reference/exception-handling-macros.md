@@ -1,5 +1,5 @@
 ---
-title: Özel durum makroları işleme | Microsoft Docs
+title: Özel durum işleme makroları | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,58 +19,68 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05ee381aa792c252fc9b80107d25e15e7d1ecfca
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b503e36dfe04eaa3180809033187957ff8d970a0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358983"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766821"
 ---
 # <a name="exception-handling-macros"></a>Özel durum işleme makroları
-Bu makroları özel durum işleme için destek sağlar.  
-  
-|||  
-|-|-|  
-|[_ATLCATCH](#_atlcatch)|Deyim ilişkili oluşan hataları işlemek için `_ATLTRY`.|  
-|[_ATLCATCHALL](#_atlcatchall)|Deyim ilişkili oluşan hataları işlemek için `_ATLTRY`.|  
-|[_ATLTRY](#_atltry)|Burada bir hata muhtemelen oluşabilir korumalı kod bölümünde işaretler.|  
-  
-## <a name="requirements"></a>Gereksinimleri:
+
+Bu makrolar, özel durum işleme için destek sağlar.
+
+|||
+|-|-|
+|[_ATLCATCH](#_atlcatch)|Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.|
+|[_ATLCATCHALL](#_atlcatchall)|Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.|
+|[_ATLTRY](#_atltry)|Burada bir hata büyük olasılıkla oluşabilir bir korumalı kod bölümünde işaretler.|
+
+## <a name="requirements"></a>Gereksinimler:
+
 **Başlık:** atldef.h
 
-##  <a name="_atlcatch"></a>  _ATLCATCH  
- Deyim ilişkili oluşan hataları işlemek için `_ATLTRY`.  
-  
+##  <a name="_atlcatch"></a>  _ATLCATCH
+
+Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.
+
 ```
 _ATLCATCH(e)
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *e*  
- Catch özel durum.  
-  
-### <a name="remarks"></a>Açıklamalar  
- İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [(CAtlException e) catch](../../cpp/try-throw-and-catch-statements-cpp.md) C++ özel durumlarını belirli bir türde işlemek için.  
-  
-##  <a name="_atlcatchall"></a>  _ATLCATCHALL  
- Deyim ilişkili oluşan hataları işlemek için `_ATLTRY`.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*e*  
+Yakalamak için özel durum.
+
+### <a name="remarks"></a>Açıklamalar
+
+İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [(CAtlException e) catch](../../cpp/try-throw-and-catch-statements-cpp.md) C++ özel durumlarını belirli bir tür işlemek için.
+
+##  <a name="_atlcatchall"></a>  _ATLCATCHALL
+
+Deyim ilişkili oluşan hataları işleyecek `_ATLTRY`.
+
 ```
 _ATLCATCHALL
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [catch(...) ](../../cpp/try-throw-and-catch-statements-cpp.md) tüm türleri C++ özel durum işleme için.  
-  
-##  <a name="_atltry"></a>  _ATLTRY  
- Burada bir hata muhtemelen oluşabilir korumalı kod bölümünde işaretler.  
-  
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+İle birlikte kullanılan `_ATLTRY`. C++ için çözümler [gt;catch(...) ](../../cpp/try-throw-and-catch-statements-cpp.md) türlü C++ özel durumlarını işlemek için.
+
+##  <a name="_atltry"></a>  _ATLTRY
+
+Burada bir hata büyük olasılıkla oluşabilir bir korumalı kod bölümünde işaretler.
+
 ```
 _ATLTRY
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- İle birlikte kullanılan [_ATLCATCH](#_atlcatch) veya [_ATLCATCHALL](#_atlcatchall). C++ simgenin çözümler [deneyin](../../cpp/try-throw-and-catch-statements-cpp.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Makroları](../../atl/reference/atl-macros.md)
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+İle birlikte kullanılan [_ATLCATCH](#_atlcatch) veya [_ATLCATCHALL](#_atlcatchall). C++ sembole çözümler [deneyin](../../cpp/try-throw-and-catch-statements-cpp.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Makroları](../../atl/reference/atl-macros.md)

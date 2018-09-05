@@ -14,27 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ca6046035d14dfb8efff51e7a9aa445a318b8ee
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ca78687f79cdbf1d8bdb60c1a877c489498624ee
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32354887"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766197"
 ---
 # <a name="using-cstringt"></a>CStringT kullanma
-Bu bölümdeki konular, programlama şablonunu sınıfını kullanarak açıklamak [CStringT](../atl-mfc-shared/reference/cstringt-class.md).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)  
- Bellek yönetimi ile ele `CStringT`, değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıfı.  
-  
- [CStringT Kullanarak Dize Sınıflarını Dışarı Aktarma](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
- Kendi string sınıfı CStringT <> Şablon sınıfı kullanarak DLL'den dışarı aktarma açıklanmaktadır.  
-  
-## <a name="reference"></a>Başvuru  
- [CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md).  
- Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
+
+Bu bölümdeki konular, Şablon sınıfı kullanarak programlama açıklayan [CStringT](../atl-mfc-shared/reference/cstringt-class.md).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[CStringT ile Bellek Yönetimi](../atl-mfc-shared/memory-management-with-cstringt.md)  
+Bellek yönetimi ile ele alınmaktadır `CStringT`, değişken uzunlukta karakter dizeleri işlemek için kullanılan bir şablon sınıfı.
+
+[CStringT Kullanarak Dize Sınıflarını Dışarı Aktarma](../atl-mfc-shared/exporting-string-classes-using-cstringt.md)  
+CStringT <> Şablon sınıfı kullanarak DLL'den dışa aktarma kendi dize sınıfı açıklanmaktadır.
+
+## <a name="reference"></a>Başvuru
+
+[CStringT sınıfı](../atl-mfc-shared/reference/cstringt-class.md).  
+Paylaşılan hakkında başvuru bilgileri sağlar `CStringT` sınıfı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dizeler (ATL/MFC)](../atl-mfc-shared/strings-atl-mfc.md)
 

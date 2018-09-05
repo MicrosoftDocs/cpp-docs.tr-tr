@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ba5ce5b5cb2f55caf00ea6094cb4e14b2b08c236
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584126"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767613"
 ---
 # <a name="ref-classes-and-structs-ccx"></a>Başvuru sınıfları ve yapıları (C + +/ CX)
 C + +/ CX destekler kullanıcı tanımlı *başvuru sınıfları* ve *başvuru yapı birimleri*ve kullanıcı tanımlı *değer sınıfları* ve *yapılar değer*. Bu veri yapıları tarafından hangi C + birincil kapsayıcılardır +/ CX Windows çalışma zamanı tür sistemi destekler. İçeriklerini meta verilerine belirli belirli kurallara göre gönderilir ve bu bunları Windows çalışma zamanı bileşenleri ve evrensel Windows platformu uygulamaları, C++ veya diğer dillerde yazılmış arasında geçirilmesini sağlar.  

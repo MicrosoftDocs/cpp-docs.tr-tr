@@ -19,70 +19,78 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50d2d97aa0de61697e31c424c8185c71b06c7dd0
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 849f5269a715013431da2d8b91997c577008bf68
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37885588"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767097"
 ---
 # <a name="iaxwinhostwindowlic-interface"></a>Iaxwinhostwindowlic arabirimi
-Bu arabirim, lisanslı bir denetim ve onun ana nesneyi işlemek için yöntemler sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu arabirim, lisanslı bir denetim ve onun ana nesneyi işlemek için yöntemler sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 interface IAxWinHostWindowLic : IAxWinHostWindow
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="methods"></a>Yöntemler  
-  
-|||  
-|-|-|  
-|[CreateControlLic](#createcontrollic)|Lisanslı bir denetim oluşturur ve ana bilgisayar nesnesine iliştirir.|  
-|[CreateControlLicEx](#createcontrollicex)|Lisanslı bir denetim oluşturur, ana bilgisayar nesnesine iliştirir ve isteğe bağlı olarak bir olay işleyicisini ayarlar.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- `IAxWinHostWindowLic` devralınan [Iaxwinhostwindow](../../atl/reference/iaxwinhostwindow-interface.md) ve lisanslı denetimler oluşturulmasını destekleyen yöntemler ekler.  
-  
- Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bu arabirim üyeleri kullanan bir örnek.  
-  
-## <a name="requirements"></a>Gereksinimler  
- Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.  
-  
-|Tanım türü|Dosya|  
-|---------------------|----------|  
-|IDL|ATLIFace.idl|  
-|C++|ATLIFace.h (ATLBase.h içinde de dahil)|  
-  
-##  <a name="createcontrollic"></a>  IAxWinHostWindowLic::CreateControlLic  
- Lisanslı bir denetim oluşturur, onu başlatır ve tarafından tanımlanan penceresinde barındıran `hWnd`.  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="methods"></a>Yöntemler
+
+|||
+|-|-|
+|[CreateControlLic](#createcontrollic)|Lisanslı bir denetim oluşturur ve ana bilgisayar nesnesine iliştirir.|
+|[CreateControlLicEx](#createcontrollicex)|Lisanslı bir denetim oluşturur, ana bilgisayar nesnesine iliştirir ve isteğe bağlı olarak bir olay işleyicisini ayarlar.|
+
+## <a name="remarks"></a>Açıklamalar
+
+`IAxWinHostWindowLic` devralınan [Iaxwinhostwindow](../../atl/reference/iaxwinhostwindow-interface.md) ve lisanslı denetimler oluşturulmasını destekleyen yöntemler ekler.
+
+Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) bu arabirim üyeleri kullanan bir örnek.
+
+## <a name="requirements"></a>Gereksinimler
+
+Bu arabirim tanımı aşağıda gösterildiği gibi IDL veya C++ olarak kullanılabilir.
+
+|Tanım türü|Dosya|
+|---------------------|----------|
+|IDL|ATLIFace.idl|
+|C++|ATLIFace.h (ATLBase.h içinde de dahil)|
+
+##  <a name="createcontrollic"></a>  IAxWinHostWindowLic::CreateControlLic
+
+Lisanslı bir denetim oluşturur, onu başlatır ve tarafından tanımlanan penceresinde barındıran `hWnd`.
+
 ```
 STDMETHOD(CreateControlLic)(
     LPCOLESTR lpTricsData,
     HWND hWnd,
     IStream* pStream,
     BSTR bstrLic);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *bstrLic*  
- [in] Denetim için lisans anahtarı içeren BSTR.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IAxWinHostWindow::CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol) kalan parametreler ve dönüş değeri bir açıklaması.  
-  
- Bu yöntemin çağrılması için arama eşdeğer [IAxWinHostWindowLic::CreateControlLicEx](#createcontrollicex)  
-  
-### <a name="example"></a>Örnek  
- Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `IAxWinHostWindowLic::CreateControlLic`.  
-  
-##  <a name="createcontrollicex"></a>  IAxWinHostWindowLic::CreateControlLicEx  
- Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve benzer şekilde belirtilen pencerede barındırır [IAxWinHostWindow::CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol).  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*bstrLic*  
+[in] Denetim için lisans anahtarı içeren BSTR.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bkz: [IAxWinHostWindow::CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol) kalan parametreler ve dönüş değeri bir açıklaması.
+
+Bu yöntemin çağrılması için arama eşdeğer [IAxWinHostWindowLic::CreateControlLicEx](#createcontrollicex)
+
+### <a name="example"></a>Örnek
+
+Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `IAxWinHostWindowLic::CreateControlLic`.
+
+##  <a name="createcontrollicex"></a>  IAxWinHostWindowLic::CreateControlLicEx
+
+Lisanslı bir ActiveX denetimi oluşturur, onu başlatır ve benzer şekilde belirtilen pencerede barındırır [IAxWinHostWindow::CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol).
+
 ```
 STDMETHOD(CreateControlLicEx)(
     LPCOLESTR lpszTricsData,
@@ -92,23 +100,18 @@ STDMETHOD(CreateControlLicEx)(
     REFIID riidAdvise,
     IUnknown* punkAdvise,
     BSTR bstrLic);
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *bstrLic*  
- [in] Denetim için lisans anahtarı içeren BSTR.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bkz: [IAxWinHostWindow::CreateControlEx](../../atl/reference/iaxwinhostwindow-interface.md#createcontrolex) kalan parametreler ve dönüş değeri bir açıklaması.  
-  
-### <a name="example"></a>Örnek  
- Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `IAxWinHostWindowLic::CreateControlLicEx`.
+```
 
+### <a name="parameters"></a>Parametreler
 
+*bstrLic*  
+[in] Denetim için lisans anahtarı içeren BSTR.
 
+### <a name="remarks"></a>Açıklamalar
 
+Bkz: [IAxWinHostWindow::CreateControlEx](../../atl/reference/iaxwinhostwindow-interface.md#createcontrolex) kalan parametreler ve dönüş değeri bir açıklaması.
 
+### <a name="example"></a>Örnek
 
-
-
+Bkz: [ActiveX denetimlerini kullanarak ATL AXHost barındırma](../../atl/hosting-activex-controls-using-atl-axhost.md) kullanan bir örnek için `IAxWinHostWindowLic::CreateControlLicEx`.
 

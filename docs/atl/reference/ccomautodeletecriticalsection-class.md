@@ -17,39 +17,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b90afb9ae47ced33c331aef988489b567b1078b
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 53078d740d1051a928b4592d275f33944685e622
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879908"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767110"
 ---
 # <a name="ccomautodeletecriticalsection-class"></a>CComAutoDeleteCriticalSection sınıfı
-Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, alma ve kritik bölüm nesnenin sahipliğini serbest için yöntemler sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `CComAutoDeleteCriticalSection` sınıfından türetilen [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). Ancak, `CComAutoDeleteCriticalSection` geçersiz kılmalar [terimi](ccomsafedeletecriticalsection-class.md#term) yönteme **özel** erişim, yalnızca bu sınıfın örneklerinin kapsam dışına çıkmadan veya açıkça silinir gerçekleşmesi için iç bellek temizleme zorlar bellek.  
+```
 
-  
- Bu sınıf, taban sınıfı hiçbir ek yöntemleri tanıtır. Bkz: [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) ve [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) kritik bölüm yardımcı sınıfları hakkında daha fazla bilgi için.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)  
-  
- [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)  
-  
- `CComAutoDeleteCriticalSection`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcore.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CComSafeDeleteCriticalSection sınıfı](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
- [CComCriticalSection sınıfı](../../atl/reference/ccomcriticalsection-class.md)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)
+## <a name="remarks"></a>Açıklamalar
+
+`CComAutoDeleteCriticalSection` sınıfından türetilen [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md). Ancak, `CComAutoDeleteCriticalSection` geçersiz kılmalar [terimi](ccomsafedeletecriticalsection-class.md#term) yönteme **özel** erişim, yalnızca bu sınıfın örneklerinin kapsam dışına çıkmadan veya açıkça silinir gerçekleşmesi için iç bellek temizleme zorlar bellek.  
+
+Bu sınıf, taban sınıfı hiçbir ek yöntemleri tanıtır. Bkz: [CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md) ve [CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md) kritik bölüm yardımcı sınıfları hakkında daha fazla bilgi için.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CComCriticalSection](../../atl/reference/ccomcriticalsection-class.md)
+
+[CComSafeDeleteCriticalSection](../../atl/reference/ccomsafedeletecriticalsection-class.md)
+
+`CComAutoDeleteCriticalSection`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcore.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CComSafeDeleteCriticalSection sınıfı](../../atl/reference/ccomsafedeletecriticalsection-class.md)   
+[CComCriticalSection sınıfı](../../atl/reference/ccomcriticalsection-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

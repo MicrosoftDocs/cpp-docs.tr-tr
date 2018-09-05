@@ -83,11 +83,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: c8b3772f556dd92694222e4f3d7d2e15deb051c5
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339676"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766051"
 ---
 # <a name="cdaotabledef-class"></a>CDaoTableDef sınıfı
 Temel tablonun veya eklenen tablonun saklı tanımını temsil eder.  

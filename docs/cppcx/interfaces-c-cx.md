@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: d8ed06b84ec53cddac2d76488f7d1540a92c1d52
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592558"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764448"
 ---
 # <a name="interfaces-ccx"></a>Arabirimler (C + +/ CX)
 Başvuru sınıfı en fazla bir somut taban sınıfından devralabilir olsa da, herhangi bir sayıda arabirim sınıflarından aşımınızı uygulayabilirsiniz. Arabirim sınıfı (veya arabirimi struct) kendisi devralır (gerektiren birden çok veya) arabirim sınıfları, üye işlevleri aşırı yüklenebilir ve Tür parametrelerine sahip olabilir.  

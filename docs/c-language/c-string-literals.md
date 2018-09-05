@@ -1,7 +1,7 @@
 ---
 title: C dize değişmez değerleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/31/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -16,39 +16,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 303ad83c5e366f32a99a501a58b168ef25adbb42
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f87b8ce4c8270b8f0d22c2396358e8e1118a4bbd
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382789"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765063"
 ---
 # <a name="c-string-literals"></a>C Dize Değişmez Değerleri
-Kaynak karakter çift tırnak işaretleri içindeki kümesindeki bir karakter dizisi bir "dize" olan (**""**). Dize değişmez değerleri kullanılan bir dizi göstermek için hangi karakterleri, birlikte ele alındığında null sonlandırılmış bir dize oluşturur. Her zaman wide dize değişmez değerleri harfiyle önek gerekir **L**.  
-  
-## <a name="syntax"></a>Sözdizimi  
- *değişmez dize değeri*:  
- **"** *s karakter dizisi* kabul **"**  
-  
- **L"** *s karakter dizisi* kabul **"**  
-  
- *s karakter dizisi*:  
- *s-char*  
-  
- *s karakter dizisi s-char*  
-  
- *s-char*:  
- Kaynak karakteri, herhangi bir üye kümesi çift tırnak işareti dışında ("), eğik çizgi (\\), ya da yeni satır karakteri  
-  
- *kaçış sırası*  
-  
- Aşağıdaki örnek, basit bir dize sabit değeri verilmiştir:  
-  
-```  
-char *amessage = "This is a string literal.";  
-```  
-  
- Tüm çıkış kodları listelenen [kaçış sıraları](../c-language/escape-sequences.md) tablo dize değişmez değerleri geçerlidir. Bir dize sabit değeri içinde çift tırnak işareti temsil etmek için kaçış sırası kullanmak  **\\"**. Tek tırnak işareti (**'**) bir kaçış sırası temsil edilebilir. Ters eğik çizgi (**\\**) ikinci ters bölü işareti gelmelidir (**\\\\**) dizesi içinde görüntülendiğinde. Bir satırın sonunda bir ters eğik çizgi görüntülendiğinde, her zaman bir satır devamlılığı karakteri olarak yorumlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Öğeleri](../c-language/elements-of-c.md)
+
+Bir "dize sabit değeri" kaynak karakter çift tırnak işaretleri içindeki karakter dizisidir (**""**). Dize değişmez değerleri kullanılan bir dizi temsil etmek için bu karakterleri, birlikte ele alındığında, null ile sonlandırılmış bir dize oluşturur. Her zaman geniş dize değişmez değerleri harfiyle koymalısınız **L**.
+
+## <a name="syntax"></a>Sözdizimi
+
+*dize sabit değeri*:  
+&nbsp;&nbsp;&nbsp;&nbsp;**"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**  
+&nbsp;&nbsp;&nbsp;&nbsp;**L"** *s karakter dizisi*<sub>iyileştirilmiş</sub> **"**
+
+*s karakter dizisi*:  
+&nbsp;&nbsp;&nbsp;&nbsp;*s char*  
+&nbsp;&nbsp;&nbsp;&nbsp;*s karakter dizisi* *s char*
+
+*s char*:  
+&nbsp;&nbsp;&nbsp;&nbsp;herhangi bir üyesi kaynak karakter kümesi çift tırnak işareti dışında ("), ters eğik çizgi (\\), veya yeni satır karakteri  
+&nbsp;&nbsp;&nbsp;&nbsp;*kaçış sırası*
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki örnek, basit bir dize sabit değeri verilmiştir:
+
+```C
+char *amessage = "This is a string literal.";
+```
+
+Tüm çıkış kodları listelenir [kaçış dizileri](../c-language/escape-sequences.md) tablo dize değişmez değerleri geçerlidir. Bir dize sabit değerinde çift tırnak işareti temsil etmek için kaçış sırasını kullanın  **\\"**. Tek tırnak işareti (**'**) çıkış sırası olmadan temsil edilebilir. Ters eğik çizgi (**\\**) ikinci bir ters eğik çizgiyle gelmelidir (**\\\\**) bir dize içinde olduğunda görünür. Ters eğik çizgi bir satırın sonunda göründüğünde, her zaman bir satır devamlılığı karakteri yorumlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Öğeleri](../c-language/elements-of-c.md)  

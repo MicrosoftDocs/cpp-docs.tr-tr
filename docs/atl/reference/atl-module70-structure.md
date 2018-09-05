@@ -19,18 +19,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9666d73eec770ff8231e5730e01520b0bee68012
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: e7afe6867f359b334654f58aad39ad7f143dd428
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37886225"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764897"
 ---
 # <a name="atlmodule70-structure"></a>_ATL_MODULE70 yapısı
-Her ATL modülü tarafından kullanılan verileri içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Her ATL modülü tarafından kullanılan verileri içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 struct _ATL_MODULE70 {
     UINT cbSize;
@@ -38,33 +39,31 @@ struct _ATL_MODULE70 {
     _ATL_TERMFUNC_ELEM* m_pTermFuncs;
     CComCriticalSection m_csStaticDataInitAndTypeInfo;
 };
-```  
-  
-## <a name="members"></a>Üyeler  
- `cbSize`  
- Sürüm oluşturma için kullanılan bir yapının boyutu.  
-  
- `m_nLockCnt`  
- Başvuru sayma modülü ne kadar süreyle etkin tutulan bağlantıyı destekliyorsa kalmalı belirlemek için.  
-  
- `m_pTermFuncs`  
- ATL kapatıldığında çağrılacak kayıtlı işlevlerini izler.  
-  
- `m_csStaticDataInitAndTypeInfo`  
- Çok iş parçacıklı durumlarda iç veri erişimi koordine etmek için kullanılır.  
-  
-## <a name="remarks"></a>Açıklamalar  
- [_ATL_MODULE](atl-typedefs.md#_atl_module) typedef tanımlanan `_ATL_MODULE70`.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlbase.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-  [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
+```
 
+## <a name="members"></a>Üyeler
 
+`cbSize`  
+Sürüm oluşturma için kullanılan bir yapının boyutu.
 
+`m_nLockCnt`  
+Başvuru sayma modülü ne kadar süreyle etkin tutulan bağlantıyı destekliyorsa kalmalı belirlemek için.
 
+`m_pTermFuncs`  
+ATL kapatıldığında çağrılacak kayıtlı işlevlerini izler.
 
+`m_csStaticDataInitAndTypeInfo`  
+Çok iş parçacıklı durumlarda iç veri erişimi koordine etmek için kullanılır.
 
+## <a name="remarks"></a>Açıklamalar
+
+[_ATL_MODULE](atl-typedefs.md#_atl_module) typedef tanımlanan `_ATL_MODULE70`.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlbase.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
 

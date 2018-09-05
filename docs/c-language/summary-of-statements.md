@@ -12,86 +12,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b2d3b27149344151f891e23c39bbecb8e4c1102
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 18fdc129bd2aadd45ebaa13510e6029dba9a07df
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391356"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766863"
 ---
 # <a name="summary-of-statements"></a>Deyimler Özeti
-*deyimi*:  
- *Etiketli deyim*  
+
+*deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Etiketli deyim*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Bileşik deyim*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Seçimi deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Yineleme deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*atlama-deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*try haricinde deyimi*  / \* Microsoft Specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*try-finally deyimi*  / \* Microsoft Specific \*/
+
+*atlama-deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**goto***tanımlayıcı***;**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**devam edin.**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**dönüş** *ifade*<sub>iyileştirilmiş</sub> **;**
+
+*Bileşik deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**{** *bildirim listesi*<sub>iyileştirilmiş</sub> *deyim listesindeki*<sub>iyileştirilmiş</sub> **}**
+
+*bildirim listesi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirim listesi* *bildirimi*
+
+*ifade listesinin*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade listesinin* *deyimi*
+
+*ifade deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*ifade*<sub>iyileştirilmiş</sub> **;**  
   
- *Bileşik deyim*  
+*Yineleme deyiminin*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**sırada (***ifade***)***deyimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**yapmak***deyimi***sırada (***ifade***);** <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**için (***ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **;** *ifade*<sub>iyileştirilmiş</sub> **)** *deyimi* 
+
+*Seçimi deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**varsa (***ifade***)***deyimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**varsa (***ifade***)***deyimi***başka***deyimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (***ifade***)***deyimi* 
+
+*Etiketli deyim*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*tanımlayıcı***:***deyimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi***sabit-ifade***:***deyimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi* 
+
+*try haricinde deyimi*: /\* Microsoft Specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try***compound-statement* **__except (***ifade***)***bileşik deyim*   
   
- *ifade deyimi*  
-  
- *Seçim deyimi*  
-  
- *Yineleme deyimi*  
-  
- *atlama deyimi*  
-  
- *try dışında deyimi* / * Microsoft Specific \*/  
-  
- *try-finally-ifadesi* / * Microsoft Specific \*/  
-  
- *atlama deyimi*:  
- **goto***tanımlayıcısı***;**   
-  
- **devam etmek;**  
-  
- **BREAK;**  
-  
- **dönüş***ifade*kabul **;**   
-  
- *Bileşik deyim*:  
- **{***bildirimi listesi*kabul*deyimi listesi*kabul **}**   
-  
- *bildirim listesi*:  
- *bildirimi*  
-  
- *bildirim listesi bildirimi*  
-  
- *Ekstre listesini*:  
- *Deyimi*  
-  
- *deyimi listesi deyimi*  
-  
- *ifade deyimi*:  
- *ifade*kabul **;**  
-  
- *Yineleme deyimi*:  
- **sırada (***ifade***)***deyimi*   
-  
- **yapmak***deyimi***sırada (***ifade***);**   
-  
- **için (***ifade*kabul **;** *ifade*kabul **;** *ifade*kabul **)** *deyimi*   
-  
- *Seçim deyimi*:  
- **varsa (***ifade***)***deyimi*  
-  
- **varsa (***ifade***)***deyimi***başka***deyimi*  
-  
- **geçiş (***ifade***)***deyimi*   
-  
- *Etiketli deyim*:  
- *tanımlayıcı***:***deyimi*   
-  
- **Servis talebi***sabit ifadesi***:***deyimi*  
-  
- **Varsayılan:***deyimi*  
-  
- *try dışında deyimi*: /\* Microsoft Specific \*/  
- **__try***bileşik deyim*   
-  
- **__except (***ifade***)***bileşik deyim*   
-  
- *try-finally-ifadesi*: /\* Microsoft Specific \*/  
- **__try***bileşik deyim*   
-  
- **__finally***bileşik deyim*   
-  
+*try-finally deyimi*: /\* Microsoft Specific \*/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**__try***compound-statement* **__finally***bileşik deyim* 
+
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)
+[Tümcecik Yapısı Dil Bilgisi](../c-language/phrase-structure-grammar.md)

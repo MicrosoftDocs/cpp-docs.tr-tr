@@ -16,33 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9212662d419f5750d6a8037b73a58fd58c4c858f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ebe6ac2e3d19d16e2147411df436a976526ea2ff
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355052"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765141"
 ---
 # <a name="dual-interfaces-and-atl"></a>Çift arabirimler ve ATL
-Çift arabirim yöntemlerinden görüntüleme arabirimi yöntemleri veya vtable yöntemleri olarak erişilmesini sağlar. Bu bölüm bir ATL açısından çift arabirimler özelliklerden bazıları kapsar.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)  
- Sınıfları ve sihirbazları çift arabirim uygulama söz konusu açıklanmaktadır.  
-  
- [Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)  
- Tek bir nesne üzerinde birden çok çift arabirimler kullanıma sunmak nasıl ele alınmaktadır.  
-  
- [Nonextensible özniteliği](../atl/nonextensible-attribute.md)  
- Ne zaman kullanılacağı anlatılmaktadır **nonextensible** , arabirim tanımı özniteliği.  
-  
- [Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)  
- Çift arabirim arabirim bir olay yetişememe tasarım nedenleri açıklanmaktadır.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [ATL](../atl/active-template-library-atl-concepts.md)  
- Etkin Şablon Kütüphanesi kullanarak programı kavramsal konulara bağlantılar verilmektedir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kavramları](../atl/active-template-library-atl-concepts.md)
+
+Çift arabirim metotlarını dispinterface yöntemi olarak veya vtable yöntemler olarak erişilmesini sağlar. Bu bölümde bir ATL açısından ikili arabirimler özelliklerinden bazılarını ele alınmaktadır.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Çift Arabirim Uygulama](../atl/implementing-a-dual-interface.md)  
+Sınıfları ve çift arabirim uygulama içinde ilgili sihirbazları açıklar.
+
+[Birden Çok Çift Arabirim](../atl/multiple-dual-interfaces.md)  
+Tek bir nesnede birden çok çift arabirim kullanıma anlatılmaktadır.
+
+[Nonextensible özniteliği](../atl/nonextensible-attribute.md)  
+Ne zaman kullanılacağı ele alınmaktadır **nonextensible** , arabirim tanımı özniteliği.
+
+[Çift Arabirimler ve Olaylar](../atl/dual-interfaces-and-events.md)  
+Çift arabirim arabirim bir olay yapmayı değil tasarım nedenleri açıklanır.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[ATL](../atl/active-template-library-atl-concepts.md)  
+Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kavramları](../atl/active-template-library-atl-concepts.md)
 

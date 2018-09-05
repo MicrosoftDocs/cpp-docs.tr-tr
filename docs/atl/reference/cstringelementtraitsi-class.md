@@ -22,127 +22,145 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d523c882754a69239ebbbfad1adcb0e91c0c4ca6
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: 12b75398db6e078f28fab4525da55aaae8193663
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37879894"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765300"
 ---
 # <a name="cstringelementtraitsi-class"></a>Cstringelementtraitsı sınıfı
-Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili statik işlevler sağlar. Benzer [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), ancak büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili statik işlevler sağlar. Benzer [CStringElementTraits](../../atl/reference/cstringelementtraits-class.md), ancak büyük küçük harf duyarsız bir karşılaştırma gerçekleştirir.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>  
 class CStringElementTraitsI : public CElementTraitsBase<T>
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *T*  
- Koleksiyonda depolanacak veri türü.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel Typedefler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CStringElementTraitsI::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|  
-|[CStringElementTraitsI::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CStringElementTraitsI::CompareElements](#compareelements)|Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|  
-|[CStringElementTraitsI::CompareElementsOrdered](#compareelementsordered)|Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|  
-|[CStringElementTraitsI::Hash](#hash)|Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, dizeleri karşılaştırmak ve bir karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için koleksiyon sınıfı kullanıldığında yararlıdır. Kullanım [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) olduğunda dize nesneleri ile ile başvuru olarak ele alınabilir.  
-  
- Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)  
-  
- `CStringElementTraitsI`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcoll.h  
-  
-##  <a name="compareelements"></a>  CStringElementTraitsI::CompareElements  
- Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*  
+Koleksiyonda depolanacak veri türü.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CStringElementTraitsI::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|
+|[CStringElementTraitsI::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CStringElementTraitsI::CompareElements](#compareelements)|Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|
+|[CStringElementTraitsI::CompareElementsOrdered](#compareelementsordered)|Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.|
+|[CStringElementTraitsI::Hash](#hash)|Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf, dizeleri karşılaştırmak ve bir karma değer oluşturmak için statik işlevler sağlar. Bu işlevler, dize tabanlı verileri depolamak için koleksiyon sınıfı kullanıldığında yararlıdır. Kullanım [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md) olduğunda dize nesneleri ile ile başvuru olarak ele alınabilir.
+
+Daha fazla bilgi için [ATL koleksiyon sınıfları](../../atl/atl-collection-classes.md).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+
+`CStringElementTraitsI`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcoll.h
+
+##  <a name="compareelements"></a>  CStringElementTraitsI::CompareElements
+
+Farklar durumda yoksayılıyor eşitliği iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.
+
 ```
 static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *str1*  
- İlk dize öğesi.  
-  
- *str2*  
- İkinci dize öğesi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Öğe yanlış Aksi takdirde, eşitse true döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Karşılaştırmalar büyük/küçük harfe duyarsızdır.  
-  
-##  <a name="compareelementsordered"></a>  CStringElementTraitsI::CompareElementsOrdered  
- Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*str1*  
+İlk dize öğesi.
+
+*str2*  
+İkinci dize öğesi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Öğe yanlış Aksi takdirde, eşitse true döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Karşılaştırmalar büyük/küçük harfe duyarsızdır.
+
+##  <a name="compareelementsordered"></a>  CStringElementTraitsI::CompareElementsOrdered
+
+Farklar durumda yoksayılıyor iki dize öğe Karşılaştırılacak statik bu işlevi çağırın.
+
 ```
 static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *str1*  
- İlk dize öğesi.  
-  
- *str2*  
- İkinci dize öğesi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizeler aynıysa sıfır, < 0, *str1* olduğu küçüktür *str2*, veya > 0 ise *str1* büyüktür *str2*. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmalar yapmak için kullanılır.  
+```
 
-  
-### <a name="remarks"></a>Açıklamalar  
- Karşılaştırmalar büyük/küçük harfe duyarsızdır.  
-  
-##  <a name="hash"></a>  CStringElementTraitsI::Hash  
- Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.  
-  
+### <a name="parameters"></a>Parametreler
+
+*str1*  
+İlk dize öğesi.
+
+*str2*  
+İkinci dize öğesi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizeler aynıysa sıfır, < 0, *str1* olduğu küçüktür *str2*, veya > 0 ise *str1* büyüktür *str2*. [CStringT::Compare](../../atl-mfc-shared/reference/cstringt-class.md#compare) yöntemi karşılaştırmalar yapmak için kullanılır.  
+
+### <a name="remarks"></a>Açıklamalar
+
+Karşılaştırmalar büyük/küçük harfe duyarsızdır.
+
+##  <a name="hash"></a>  CStringElementTraitsI::Hash
+
+Verilen dize öğesi için bir karma değeri hesaplamak için statik bu işlevi çağırın.
+
 ```
 static ULONG Hash(INARGTYPE str) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *str*  
- Dize öğesi.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.  
-  
-##  <a name="inargtype"></a>  CStringElementTraitsI::INARGTYPE  
- Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*str*  
+Dize öğesi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizenin içeriklerini kullanarak hesaplanan bir karma değer döndürür.
+
+##  <a name="inargtype"></a>  CStringElementTraitsI::INARGTYPE
+
+Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
+
 ```
 typedef T::PCXSTR INARGTYPE;
-```  
-  
-##  <a name="outargtype"></a>  CStringElementTraitsI::OUTARGTYPE  
- Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.  
-  
+```
+
+##  <a name="outargtype"></a>  CStringElementTraitsI::OUTARGTYPE
+
+Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
+
 ```
 typedef T& OUTARGTYPE;
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
- [Sınıfına genel bakış](../../atl/atl-class-overview.md)   
- [CStringElementTraits Sınıfı](../../atl/reference/cstringelementtraits-class.md)
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CStringElementTraits Sınıfı](../../atl/reference/cstringelementtraits-class.md)

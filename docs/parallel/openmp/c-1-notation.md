@@ -12,24 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39e8610524e20aa99ea316d62f36b512700e377e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 3d3ada700955c3acd2e96aa3e8a98c25c51393c1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33686821"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43766158"
 ---
 # <a name="c1-notation"></a>C.1 Gösterim
-Bir terminal olmayan, adının dilbilgisi kuralları oluşur değiştirme alternatifleri tarafından ayrı satırlara üste ve ardından.  
-  
- Söz dizimi ifade termopt terimi içinde değiştirme isteğe bağlı olduğunu gösterir.  
-  
- Söz dizimi ifade *terim*optseq eşdeğerdir *terim seq*aşağıdaki ek kurallarla iptal et:  
-  
- *Terim seq* :  
-  
- *Terim*  
-  
- *Terim seq terimi*  
-  
- *Terim seq* , *terimi*
+Bir terminal olmayan, adının dilbilgisi kuralları oluşur değiştirme alternatifleri tarafından ayrı satırlarda üste, ardından.
+
+Söz dizimi ifade terimi<sub>iyileştirilmiş</sub> dönem içinde değişiklik isteğe bağlı olduğunu gösterir.
+
+Söz dizimi ifade *terimi*<sub>optseq</sub> eşdeğerdir *terimi-seq*<sub>iyileştirilmiş</sub> aşağıdaki ek kuralları ile:
+
+*Terim-seq* :<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Terim*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Terim-seq* *terimi*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Terim-seq* **,** *terimi*

@@ -18,19 +18,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c0386cd17e7a33628790520e356c706f9743b9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dbc7c74e0fd6fdd34ba9a0c386c028469113c88e
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32355000"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767095"
 ---
 # <a name="catlservicemodulethandler-function"></a>CAtlServiceModuleT::Handler işlevi
-`CAtlServiceModuleT::Handler` hizmetinin durumunu almak ve (örneğin, durdurma veya duraklatma) çeşitli yönergeler vermek için Hizmet Denetimi Yöneticisi (SCM) çağırır yordamdır. Bir işlem kodu SCM geçirir `Handler` hizmet ne yapması gerektiğini belirtmek için. ATL oluşturulan varsayılan hizmet durdurma yönerge yalnızca işler. SCM Dur yönerge geçerse, hizmet SCM program durmak olduğunu söyler. Hizmeti daha sonra çağırır `PostThreadMessage` kendisine çıkma iletisi göndermek için. Bu ileti döngüsü sona erer ve hizmet sonuçta kapatılacak.  
-  
- Daha fazla yönerge işlemek için değiştirmeniz gerekir `m_status` veri üyesi başlatıldı `CAtlServiceModuleT` Oluşturucusu. Bu veri üyesi SCM hizmet hizmetler Denetim Masası uygulamasında seçildiğinde etkinleştirmek için hangi düğmeleri söyler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hizmetleri](../atl/atl-services.md)   
- [CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
+
+`CAtlServiceModuleT::Handler` Hizmet Denetimi Yöneticisi (SCM) (örneğin, durdurma veya duraklatma) çeşitli yönergeler verir ve hizmet durumunu almak için çağırdığı yordamdır. Bir işlem kodu için SCM geçirir `Handler` hizmet ne yapması gerektiğini belirtmek için. ATL tarafından oluşturulan varsayılan hizmet durdurma yönergesi yalnızca işler. SCM durdurma yönerge geçerse, service, SCM program durmak için olduğunu söyler. Sonra hizmeti çağırır `PostThreadMessage` kendisine bir çıkış iletisi göndermek için. Bu ileti döngüsü sonlanır ve hizmet sonuçta kapatın.
+
+Daha fazla yönerge işlemek için değiştirmeniz gerekir `m_status` veri üyesi başlatıldı olarak `CAtlServiceModuleT` Oluşturucusu. Bu veri üyesi düğmeleri hizmetinin Hizmetler Denetim Masası uygulamasında seçildiğinde etkinleştirmek için SCM söyler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hizmetleri](../atl/atl-services.md)   
+[CAtlServiceModuleT::Handler](../atl/reference/catlservicemodulet-class.md#handler)
 

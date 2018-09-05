@@ -17,37 +17,36 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe7021156f2d24e62590cccbe2feb476a6a642ea
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5189f1e9467977afda919862005901a633dae6a7
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391200"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765167"
 ---
 # <a name="source-files-and-source-programs"></a>Kaynak Dosyalar ve Kaynak Programlar
 Kaynak programı bir veya daha fazla "kaynak dosyaya" veya "çeviri birimine" ayrılabilir. Derleyici girişine "çeviri birimi" denir.  
   
-## <a name="syntax"></a>Sözdizimi  
- *Çeviri birim*:  
- *Dış bildirimi*  
+## <a name="syntax"></a>Sözdizimi
+
+*Çeviri birimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Dış bildirimi* <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*Çeviri birimi* *dış bildirimi*  
   
- *Çeviri birim dış-bildirimi*  
-  
- *Harici bildirim*:  
- *işlev tanımı*  
-  
- *bildirimi*  
-  
- [Bildirimlere genel bakış](../c-language/overview-of-declarations.md) sözdizimi verir `declaration` nonterminal ve *önişlemci başvurusu* açıklar nasıl [çeviri birim](../preprocessor/phases-of-translation.md) işlenir.  
+*Dış bildirimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*işlev tanımı*<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;*bildirimi*
+
+[Bildirimlere genel bakış](../c-language/overview-of-declarations.md) için sözdizimini sağlar `declaration` bildirimlere ve *önişlemci başvurusu* açıklar nasıl [çeviri birimi](../preprocessor/phases-of-translation.md) işlenir.  
   
 > [!NOTE]
->  Giriş için bkz [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), ANSI sözdizimi kurallarına açıklaması için.  
+>  Giriş bkz [C dili sözdizimi özeti](../c-language/c-language-syntax-summary.md), ANSI sözdizimi kurallarının açıklaması için.  
   
- Çeviri biriminin bileşenleri, işlev tanımları ve tanımlayıcı bildirimleri içeren dış bildirimlerdir. Bu bildirimler ve tanımlar, kaynak dosyalarında, üstbilgi dosyalarında, kitaplıklarda ve programın ihtiyacı olan diğer dosyalarda olabilir. Bir program oluşturmak için her çeviri birimini derlemeniz ve ortaya çıkan nesne dosyalarını bağlamanız gerekir.  
+Çeviri biriminin bileşenleri, işlev tanımları ve tanımlayıcı bildirimleri içeren dış bildirimlerdir. Bu bildirimler ve tanımlar, kaynak dosyalarında, üstbilgi dosyalarında, kitaplıklarda ve programın ihtiyacı olan diğer dosyalarda olabilir. Bir program oluşturmak için her çeviri birimini derlemeniz ve ortaya çıkan nesne dosyalarını bağlamanız gerekir.  
   
- C "kaynak programı" yönergeler, pragmalar, bildirimler, tanımlar, deyim blokları ve işlevlerden oluşan bir koleksiyondur. Microsoft C programının geçerli bileşenleri olabilmeleri için her birinin, programda herhangi bir sırada görünebilmelerine rağmen (bu kılavuz boyunca açıklanan kurallara tabi olarak) bu kılavuzda açıklanan sözdizimine sahip olması gerekir. Ancak, bu bileşenlerin programdaki konumu, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini etkiler. (Bkz [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) daha fazla bilgi için.)  
+C "kaynak programı" yönergeler, pragmalar, bildirimler, tanımlar, deyim blokları ve işlevlerden oluşan bir koleksiyondur. Microsoft C programının geçerli bileşenleri olabilmeleri için her birinin, programda herhangi bir sırada görünebilmelerine rağmen (bu kılavuz boyunca açıklanan kurallara tabi olarak) bu kılavuzda açıklanan sözdizimine sahip olması gerekir. Ancak, bu bileşenlerin programdaki konumu, değişkenlerin ve işlevlerin programda nasıl kullanılabileceğini etkiler. (Bkz [ömür, kapsam, görünürlük ve bağlantı](../c-language/lifetime-scope-visibility-and-linkage.md) daha fazla bilgi için.)  
   
- Kaynak dosyalarının yürütülebilir deyimleri içermesine gerek yoktur. Örneğin, değişkenlerin tanımlarını bir kaynak dosyasına yerleştirmeyi ve ardından bu değişkenlere yapılan başvuruları bunları kullanan başka kaynak dosyalarında bildirmeyi yararlı bulabilirsiniz. Bu teknik, gerektiğinde tanımların bulunmasını ve güncelleştirilmesini kolaylaştırır. Aynı nedenle sabitler ve makrolar, çoğu zaman gerektiğinde kaynak dosyalarında başvurulabilen "içerme dosyaları" veya "üstbilgi dosyaları" adlı ayrı dosyalar halinde düzenlenebilir. Bkz: *önişlemci başvurusu* hakkında bilgi için [makroları](../preprocessor/macros-c-cpp.md) ve [dosyaları dahil etme](../preprocessor/hash-include-directive-c-cpp.md).  
+Kaynak dosyalarının yürütülebilir deyimleri içermesine gerek yoktur. Örneğin, değişkenlerin tanımlarını bir kaynak dosyasına yerleştirmeyi ve ardından bu değişkenlere yapılan başvuruları bunları kullanan başka kaynak dosyalarında bildirmeyi yararlı bulabilirsiniz. Bu teknik, gerektiğinde tanımların bulunmasını ve güncelleştirilmesini kolaylaştırır. Aynı nedenle sabitler ve makrolar, çoğu zaman gerektiğinde kaynak dosyalarında başvurulabilen "içerme dosyaları" veya "üstbilgi dosyaları" adlı ayrı dosyalar halinde düzenlenebilir. Bkz: *önişlemci başvurusu* hakkında bilgi için [makroları](../preprocessor/macros-c-cpp.md) ve [içerme dosyaları](../preprocessor/hash-include-directive-c-cpp.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Program Yapısı](../c-language/program-structure.md)
+[Program Yapısı](../c-language/program-structure.md)

@@ -10,11 +10,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7d4aec775dc716a5e88e6b421a7cd7f818730c23
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589894"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767549"
 ---
 # <a name="interoperating-with-other-languages-ccx"></a>Diğer dillerle birlikte çalışma (C + +/ CX)
 Belgelerin bu bölümü C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıklar tarafından kullanılabilen Windows çalışma zamanı bileşenleri yazmak için. Ayrıca, tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönlerini tanımlar, C + +/ CX uygulama JavaScript, .NET Framework yönetilen dil veya Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılmış bileşenler birlikte çalışır.  

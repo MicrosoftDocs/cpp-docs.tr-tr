@@ -19,43 +19,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf51197750e9595570a7b011c179c2ed4c7902c3
-ms.sourcegitcommit: 7d68f8303e021e27dc8f4d36e764ed836e93d24f
+ms.openlocfilehash: c5751fa3c5c8bc20f287ca3c48d885fc41c60ba0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37880014"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764335"
 ---
 # <a name="atlcreatewnddata-structure"></a>_AtlCreateWndData yapısı
-Bu yapı ATL Pencereleme kodunda sınıfı örneği veri içeriyor  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu yapı ATL Pencereleme kodunda sınıfı örneği veri içeriyor
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
     struct _AtlCreateWndData{
     void* m_pThis;
     DWORD m_dwThreadID;
     _AtlCreateWndData* m_pNext;
 };
-```  
-  
-## <a name="members"></a>Üyeler  
- `m_pThis`  
- **Bu** sınıf örneği pencere yordamları erişmek için kullanılan bir işaretçi.  
-  
- `m_dwThreadID`  
- İş parçacığı kimliği geçerli sınıf örneğinin.  
-  
- `m_pNext`  
- Sonraki işaretçisi `_AtlCreateWndData` nesne.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlbase.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
+```
 
+## <a name="members"></a>Üyeler
 
+`m_pThis`  
+**Bu** sınıf örneği pencere yordamları erişmek için kullanılan bir işaretçi.
 
+`m_dwThreadID`  
+İş parçacığı kimliği geçerli sınıf örneğinin.
 
+`m_pNext`  
+Sonraki işaretçisi `_AtlCreateWndData` nesne.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlbase.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıflar ve yapılar](../../atl/reference/atl-classes.md)
 

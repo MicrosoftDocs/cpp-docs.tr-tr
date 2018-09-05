@@ -18,18 +18,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25a02ade201c611ec9849d7557f3c854beb5bacc
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 026c97868bbaffe089fa6cdb7dd75022af0ab288
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955351"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765258"
 ---
 # <a name="error-information-classes"></a>Hata bilgisi sınıfları
-Aşağıdaki sınıf, hata bilgilerini nasıl işlendiğini gösterir:  
-  
--   [Isupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) nesne destekleyip desteklemediğini belirler [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi. `IErrorInfo` hata bilgilerini istemciye geri dağıtılmasını sağlar.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)
+
+Aşağıdaki sınıf, hata bilgilerini nasıl işlendiğini gösterir:
+
+- [Isupporterrorınfoımpl](../atl/reference/isupporterrorinfoimpl-class.md) nesne destekleyip desteklemediğini belirler [IErrorInfo](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-ierrorinfo) arabirimi. `IErrorInfo` hata bilgilerini istemciye geri dağıtılmasını sağlar.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)
 

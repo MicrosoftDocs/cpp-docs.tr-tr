@@ -30,397 +30,463 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ab0e457f90f3130295d287ae9a32d18ab212d50
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 308222ab1276979bc839799f2f2d3fa393e606f9
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202609"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767835"
 ---
 # <a name="cfiletime-class"></a>CFileTime sınıfı
-Bu sınıf, bir dosya ile ilişkilendirilmiş tarih ve saat değerlerini yönetmek için yöntemler sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+
+Bu sınıf, bir dosya ile ilişkilendirilmiş tarih ve saat değerlerini yönetmek için yöntemler sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 class CFileTime :  public FILETIME
-```  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-constructors"></a>Ortak Oluşturucular  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFileTime::CFileTime](#cfiletime)|Oluşturucu.|  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFileTime::GetCurrentTime](#getcurrenttime)|Alınacak statik bu işlevi çağırın bir `CFileTime` geçerli sistem tarihi ve saati temsil eden nesne.|  
-|[CFileTime::GetTime](#gettime)|Zamandan almak için bu yöntemi çağırın `CFileTime` nesne.|  
-|[CFileTime::LocalToUTC](#localtoutc)|Bir dosyanın dosya saati Eşgüdümlü Evrensel Saat (UTC) temel bir yerel dosya zamanı dönüştürmek için bu yöntemi çağırın.|  
-|[CFileTime::SetTime](#settime)|Tarih ve saat tarafından depolanan ayarlamak için bu yöntemi çağırın `CFileTime` nesne.|  
-|[CFileTime::UTCToLocal](#utctolocal)|Üzerinde Eşgüdümlü Evrensel Saat (UTC) yerel dosya zamana bağlı olarak zaman dönüştürmek için bu yöntemi çağırın.|  
-  
-### <a name="public-operators"></a>Ortak İşleçler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFileTime::operator-](#operator_-)|Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTime` veya `CFileTimeSpan` nesne.|  
-|[CFileTime::operator! =](#operator_neq)|Bu işleç iki karşılaştırır `CFileTime` nesneleri için eşitsizlik.|  
-|[CFileTime::operator +](#operator_add)|Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne.|  
-|[CFileTime::operator +=](#operator_add_eq)|Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|  
-|[CFileTime::operator &lt;](#operator_lt)|Bu işleç iki karşılaştırır `CFileTime` küçük olanı belirlemek için nesneleri.|  
-|[CFileTime::operator &lt;=](#operator_lt_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da küçük olanı belirlemek için nesneleri.|  
-|[CFileTime::operator =](#operator_eq)|Atama işleci.|  
-|[CFileTime::operator-=](#operator_-_eq)|Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|  
-|[CFileTime::operator ==](#operator_eq_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik için nesneleri.|  
-|[CFileTime::operator &gt;](#operator_gt)|Bu işleç iki karşılaştırır `CFileTime` büyük belirlemek için nesneleri.|  
-|[CFileTime::operator &gt;=](#operator_gt_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da daha büyük belirlemek için nesneleri.|  
-  
-### <a name="public-constants"></a>Genel sabitler  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CFileTime::Day](#day)|100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.|  
-|[CFileTime::Hour](#hour)|Statik veri üyesine bir saat yapmak 100 nanosaniyelik aralık sayısını depolama.|  
-|[CFileTime::Millisecond](#millisecond)|Statik veri üyesine bir milisaniye yapmak 100 nanosaniyelik aralık sayısını depolama.|  
-|[CFileTime::Minute](#minute)|Statik veri üyesine bir dakika yapmak 100 nanosaniyelik aralık sayısını depolama.|  
-|[CFileTime::Second](#second)|Statik veri üyesine bir saniye yapmak 100 nanosaniyelik aralık sayısını depolama.|  
-|[CFileTime::Week](#week)|100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir haftanın olun.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf oluşturma, erişim ve dosyaların değiştirilmesini ile ilişkili tarih ve saat değerlerini yönetmek için yöntemler sağlar. Bu sınıfın veri ve yöntemler sık ile birlikte kullanılan `CFileTimeSpan` göreli zaman değerleri ile ilgili nesneler.  
-  
- Tarih ve saat değerini, 1 Ocak 1601 bu yana 100 nano saniyelik aralıkların sayısını temsil eden 64-bit bir değer olarak depolanır. Eşgüdümlü Evrensel Saat (UTC) biçiminde budur.  
-  
- Aşağıdaki statik const üye değişkenleri hesaplamaları basitleştirmek için sağlanır:  
-  
-|Üye değişkeni|100 nanosaniyelik aralık sayısı|  
-|---------------------|-----------------------------------------|  
-|Milisaniye|10,000|  
-|Saniye|Milisaniye \* 1.000|  
-|Dakika|İkinci \* 60|  
-|Saat|Dakika \* 60|  
-|Gün|Saat \* 24|  
-|Hafta|Gün \* 7|  
-  
- **Not** tüm dosya sistemleri oluşturma kaydedebilir ve son erişim zamanı ve tüm dosya sistemleri kayıt bunları aynı şekilde. Örneğin, Windows NT FAT dosya sistemi oluşturmak için süresi 10 milisaniyeden çözünürlüğü var, yazma süresi 2 saniyelik bir çözüm olan ve erişim süresi 1 gün (erişim tarihi), bir çözüm olan. 1 saatlik bir çözüm, NTFS erişim zamanı var. Ayrıca, FAT defa diskte yerel saatle kaydeder, ancak NTFS disk saatleri UTC biçiminde kaydeder. Daha fazla bilgi için [dosya zamanlarını](/windows/desktop/SysInfo/file-times).  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `FILETIME`  
-  
- `CFileTime`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atltime.h  
-  
-##  <a name="cfiletime"></a>  CFileTime::CFileTime  
- Oluşturucu.  
-  
+```
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-constructors"></a>Ortak Oluşturucular
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFileTime::CFileTime](#cfiletime)|Oluşturucu.|
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFileTime::GetCurrentTime](#getcurrenttime)|Alınacak statik bu işlevi çağırın bir `CFileTime` geçerli sistem tarihi ve saati temsil eden nesne.|
+|[CFileTime::GetTime](#gettime)|Zamandan almak için bu yöntemi çağırın `CFileTime` nesne.|
+|[CFileTime::LocalToUTC](#localtoutc)|Bir dosyanın dosya saati Eşgüdümlü Evrensel Saat (UTC) temel bir yerel dosya zamanı dönüştürmek için bu yöntemi çağırın.|
+|[CFileTime::SetTime](#settime)|Tarih ve saat tarafından depolanan ayarlamak için bu yöntemi çağırın `CFileTime` nesne.|
+|[CFileTime::UTCToLocal](#utctolocal)|Üzerinde Eşgüdümlü Evrensel Saat (UTC) yerel dosya zamana bağlı olarak zaman dönüştürmek için bu yöntemi çağırın.|
+
+### <a name="public-operators"></a>Ortak İşleçler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFileTime::operator-](#operator_-)|Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTime` veya `CFileTimeSpan` nesne.|
+|[CFileTime::operator! =](#operator_neq)|Bu işleç iki karşılaştırır `CFileTime` nesneleri için eşitsizlik.|
+|[CFileTime::operator +](#operator_add)|Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne.|
+|[CFileTime::operator +=](#operator_add_eq)|Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|
+|[CFileTime::operator &lt;](#operator_lt)|Bu işleç iki karşılaştırır `CFileTime` küçük olanı belirlemek için nesneleri.|
+|[CFileTime::operator &lt;=](#operator_lt_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da küçük olanı belirlemek için nesneleri.|
+|[CFileTime::operator =](#operator_eq)|Atama işleci.|
+|[CFileTime::operator-=](#operator_-_eq)|Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.|
+|[CFileTime::operator ==](#operator_eq_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik için nesneleri.|
+|[CFileTime::operator &gt;](#operator_gt)|Bu işleç iki karşılaştırır `CFileTime` büyük belirlemek için nesneleri.|
+|[CFileTime::operator &gt;=](#operator_gt_eq)|Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da daha büyük belirlemek için nesneleri.|
+
+### <a name="public-constants"></a>Genel sabitler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CFileTime::Day](#day)|100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.|
+|[CFileTime::Hour](#hour)|Statik veri üyesine bir saat yapmak 100 nanosaniyelik aralık sayısını depolama.|
+|[CFileTime::Millisecond](#millisecond)|Statik veri üyesine bir milisaniye yapmak 100 nanosaniyelik aralık sayısını depolama.|
+|[CFileTime::Minute](#minute)|Statik veri üyesine bir dakika yapmak 100 nanosaniyelik aralık sayısını depolama.|
+|[CFileTime::Second](#second)|Statik veri üyesine bir saniye yapmak 100 nanosaniyelik aralık sayısını depolama.|
+|[CFileTime::Week](#week)|100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir haftanın olun.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf oluşturma, erişim ve dosyaların değiştirilmesini ile ilişkili tarih ve saat değerlerini yönetmek için yöntemler sağlar. Bu sınıfın veri ve yöntemler sık ile birlikte kullanılan `CFileTimeSpan` göreli zaman değerleri ile ilgili nesneler.
+
+Tarih ve saat değerini, 1 Ocak 1601 bu yana 100 nano saniyelik aralıkların sayısını temsil eden 64-bit bir değer olarak depolanır. Eşgüdümlü Evrensel Saat (UTC) biçiminde budur.
+
+Aşağıdaki statik const üye değişkenleri hesaplamaları basitleştirmek için sağlanır:
+
+|Üye değişkeni|100 nanosaniyelik aralık sayısı|
+|---------------------|-----------------------------------------|
+|Milisaniye|10,000|
+|Saniye|Milisaniye \* 1.000|
+|Dakika|İkinci \* 60|
+|Saat|Dakika \* 60|
+|Gün|Saat \* 24|
+|Hafta|Gün \* 7|
+
+**Not** tüm dosya sistemleri oluşturma kaydedebilir ve son erişim zamanı ve tüm dosya sistemleri kayıt bunları aynı şekilde. Örneğin, Windows NT FAT dosya sistemi oluşturmak için süresi 10 milisaniyeden çözünürlüğü var, yazma süresi 2 saniyelik bir çözüm olan ve erişim süresi 1 gün (erişim tarihi), bir çözüm olan. 1 saatlik bir çözüm, NTFS erişim zamanı var. Ayrıca, FAT defa diskte yerel saatle kaydeder, ancak NTFS disk saatleri UTC biçiminde kaydeder. Daha fazla bilgi için [dosya zamanlarını](/windows/desktop/SysInfo/file-times).
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`FILETIME`
+
+`CFileTime`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atltime.h
+
+##  <a name="cfiletime"></a>  CFileTime::CFileTime
+
+Oluşturucu.
+
 ```
 CFileTime() throw();
 CFileTime(const FILETIME& ft) throw();
 CFileTime(ULONGLONG nTime) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı.  
-  
- *nZaman*  
- Tarih ve saat 64-bit bir değer ifade edilir.  
-  
-### <a name="remarks"></a>Açıklamalar  
- `CFileTime` Nesnesi, bir var olan bir tarih ve saat kullanarak oluşturulabilir bir `FILETIME` yapılandırdığınızı ya da bir 64-bit değeri (yerel veya Eşgüdümlü Evrensel Saat (UTC) saat biçimleri) olarak ifade edilir. Varsayılan Oluşturucu, zaman 0 olarak ayarlar.  
-  
-##  <a name="day"></a>  CFileTime::Day  
- 100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+A [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284) yapısı.
+
+*nZaman*  
+Tarih ve saat 64-bit bir değer ifade edilir.
+
+### <a name="remarks"></a>Açıklamalar
+
+`CFileTime` Nesnesi, bir var olan bir tarih ve saat kullanarak oluşturulabilir bir `FILETIME` yapılandırdığınızı ya da bir 64-bit değeri (yerel veya Eşgüdümlü Evrensel Saat (UTC) saat biçimleri) olarak ifade edilir. Varsayılan Oluşturucu, zaman 0 olarak ayarlar.
+
+##  <a name="day"></a>  CFileTime::Day
+
+100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.
+
 ```
 static const ULONGLONG Day = Hour* 24;
-```  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::Millisecond](#millisecond).  
-  
-##  <a name="getcurrenttime"></a>  CFileTime::GetCurrentTime  
- Alınacak statik bu işlevi çağırın bir `CFileTime` geçerli sistem tarihi ve saati temsil eden nesne.  
-  
+```
+
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::Millisecond](#millisecond).
+
+##  <a name="getcurrenttime"></a>  CFileTime::GetCurrentTime
+
+Alınacak statik bu işlevi çağırın bir `CFileTime` geçerli sistem tarihi ve saati temsil eden nesne.
+
 ```
 static CFileTime GetCurrentTime() throw();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Geçerli sistem tarihi ve saati Eşgüdümlü Evrensel Saat (UTC) biçiminde döndürür.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_1.cpp)]  
-  
-##  <a name="gettime"></a>  CFileTime::GetTime  
- Zamandan almak için bu yöntemi çağırın `CFileTime` nesne.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Geçerli sistem tarihi ve saati Eşgüdümlü Evrensel Saat (UTC) biçiminde döndürür.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_MFCFiles#41](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_1.cpp)]
+
+##  <a name="gettime"></a>  CFileTime::GetTime
+
+Zamandan almak için bu yöntemi çağırın `CFileTime` nesne.
+
 ```
 ULONGLONG GetTime() const throw();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Tarih ve saati Eşgüdümlü Evrensel Saat (UTC) biçiminde veya yerel olabilir 64 bit bir sayı olarak döndürür.  
-  
-##  <a name="hour"></a>  CFileTime::Hour  
- Statik veri üyesine bir saat yapmak 100 nanosaniyelik aralık sayısını depolama.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Tarih ve saati Eşgüdümlü Evrensel Saat (UTC) biçiminde veya yerel olabilir 64 bit bir sayı olarak döndürür.
+
+##  <a name="hour"></a>  CFileTime::Hour
+
+Statik veri üyesine bir saat yapmak 100 nanosaniyelik aralık sayısını depolama.
+
 ```
 static const ULONGLONG Hour = Minute* 60;
-```  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::Millisecond](#millisecond).  
-  
-##  <a name="localtoutc"></a>  CFileTime::LocalToUTC  
- Bir dosyanın dosya saati Eşgüdümlü Evrensel Saat (UTC) temel bir yerel dosya zamanı dönüştürmek için bu yöntemi çağırın.  
-  
+```
+
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::Millisecond](#millisecond).
+
+##  <a name="localtoutc"></a>  CFileTime::LocalToUTC
+
+Bir dosyanın dosya saati Eşgüdümlü Evrensel Saat (UTC) temel bir yerel dosya zamanı dönüştürmek için bu yöntemi çağırın.
+
 ```
 CFileTime LocalToUTC() const throw();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `CFileTime` saati UTC biçiminde içeren nesne.  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::UTCToLocal](#utctolocal).  
-  
-##  <a name="millisecond"></a>  CFileTime::Millisecond  
- Statik veri üyesine bir milisaniye yapmak 100 nanosaniyelik aralık sayısını depolama.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür bir `CFileTime` saati UTC biçiminde içeren nesne.
+
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::UTCToLocal](#utctolocal).
+
+##  <a name="millisecond"></a>  CFileTime::Millisecond
+
+Statik veri üyesine bir milisaniye yapmak 100 nanosaniyelik aralık sayısını depolama.
+
 ```
 static const ULONGLONG Millisecond = 10000;
-```  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_2.cpp)]  
-  
-##  <a name="minute"></a>  CFileTime::Minute  
- Statik veri üyesine bir dakika yapmak 100 nanosaniyelik aralık sayısını depolama.  
-  
+```
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_MFCFiles#44](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_2.cpp)]
+
+##  <a name="minute"></a>  CFileTime::Minute
+
+Statik veri üyesine bir dakika yapmak 100 nanosaniyelik aralık sayısını depolama.
+
 ```
 static const ULONGLONG Minute = Second* 60;
-```  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::Millisecond](#millisecond).  
-  
-##  <a name="operator_-"></a>  CFileTime::operator-  
- Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTime` veya `CFileTimeSpan` nesne.  
-  
+```
+
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::Millisecond](#millisecond).
+
+##  <a name="operator_-"></a>  CFileTime::operator-
+
+Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTime` veya `CFileTimeSpan` nesne.
+
 ```
 CFileTime operator-(CFileTimeSpan span) const throw();
 CFileTimeSpan operator-(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *yayılma*  
- A `CFileTimeSpan` nesne.  
-  
- *ft*  
- A `CFileTime` nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `CFileTime` nesnesi veya bir `CFileTimeSpan` iki nesne arasındaki zaman farkı sonucunu temsil eden nesne.  
-  
-##  <a name="operator_neq"></a>  CFileTime::operator! =  
- Bu işleç iki karşılaştırır `CFileTime` nesneleri için eşitsizlik.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*yayılma*  
+A `CFileTimeSpan` nesne.
+
+*ft*  
+A `CFileTime` nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür bir `CFileTime` nesnesi veya bir `CFileTimeSpan` iki nesne arasındaki zaman farkı sonucunu temsil eden nesne.
+
+##  <a name="operator_neq"></a>  CFileTime::operator! =
+
+Bu işleç iki karşılaştırır `CFileTime` nesneleri için eşitsizlik.
+
 ```
 bool operator!=(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Karşılaştırılan öğesi eşit değilse TRUE döndürür `CFileTime` nesnesi, aksi takdirde FALSE.  
-  
-##  <a name="operator_add"></a>  CFileTime::operator +  
- Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Karşılaştırılan öğesi eşit değilse TRUE döndürür `CFileTime` nesnesi, aksi takdirde FALSE.
+
+##  <a name="operator_add"></a>  CFileTime::operator +
+
+Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne.
+
 ```
 CFileTime operator+(CFileTimeSpan span) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *yayılma*  
- A `CFileTimeSpan` nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `CFileTime` özgün saati artı göreli zaman sonucunu temsil eden nesne.  
-  
-##  <a name="operator_add_eq"></a>  CFileTime::operator +=  
- Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*yayılma*  
+A `CFileTimeSpan` nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür bir `CFileTime` özgün saati artı göreli zaman sonucunu temsil eden nesne.
+
+##  <a name="operator_add_eq"></a>  CFileTime::operator +=
+
+Bu işleç ayrıca gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.
+
 ```
 CFileTime& operator+=(CFileTimeSpan span) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *yayılma*  
- A `CFileTimeSpan` nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Güncelleştirilmiş döndürür `CFileTime` özgün saati artı göreli zaman sonucunu temsil eden nesne.  
-  
-##  <a name="operator_lt"></a>  CFileTime::operator &lt;  
- Bu işleç iki karşılaştırır `CFileTime` küçük olanı belirlemek için nesneleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*yayılma*  
+A `CFileTimeSpan` nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Güncelleştirilmiş döndürür `CFileTime` özgün saati artı göreli zaman sonucunu temsil eden nesne.
+
+##  <a name="operator_lt"></a>  CFileTime::operator &lt;
+
+Bu işleç iki karşılaştırır `CFileTime` küçük olanı belirlemek için nesneleri.
+
 ```
 bool operator<(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İlk nesnenin ikinci değerinden küçük (daha önce zaman içinde) değilse FALSE değerini TRUE döndürür.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]  
-  
-##  <a name="operator_lt_eq"></a>  CFileTime::operator &lt;=  
- Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da küçük olanı belirlemek için nesneleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk nesnenin ikinci değerinden küçük (daha önce zaman içinde) değilse FALSE değerini TRUE döndürür.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_MFCFiles#43](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_3.cpp)]
+
+##  <a name="operator_lt_eq"></a>  CFileTime::operator &lt;=
+
+Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da küçük olanı belirlemek için nesneleri.
+
 ```
 bool operator<=(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İlk nesnenin (zaman içinde önceki) daha az veya ona eşit, ikincisi ise TRUE döndürür Aksi durumda FALSE.  
-  
-##  <a name="operator_eq"></a>  CFileTime::operator =  
- Atama işleci.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk nesnenin (zaman içinde önceki) daha az veya ona eşit, ikincisi ise TRUE döndürür Aksi durumda FALSE.
+
+##  <a name="operator_eq"></a>  CFileTime::operator =
+
+Atama işleci.
+
 ```
 CFileTime& operator=(const FILETIME& ft) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- A `CFileTime` yeni saat ve tarihi içeren nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Güncelleştirilmiş döndürür `CFileTime` nesne.  
-  
-##  <a name="operator_-_eq"></a>  CFileTime::operator-=  
- Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+A `CFileTime` yeni saat ve tarihi içeren nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Güncelleştirilmiş döndürür `CFileTime` nesne.
+
+##  <a name="operator_-_eq"></a>  CFileTime::operator-=
+
+Bu işleç çıkarma gerçekleştirmek için kullanılan bir `CFileTimeSpan` nesne ve sonuç geçerli nesneye atayın.
+
 ```
 CFileTime& operator-=(CFileTimeSpan span) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *yayılma*  
- A `CFileTimeSpan` çıkarılacak göreli zaman içeren nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Güncelleştirilmiş döndürür `CFileTime` nesne.  
-  
-##  <a name="operator_eq_eq"></a>  CFileTime::operator ==  
- Bu işleç iki karşılaştırır `CFileTime` eşitlik için nesneleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*yayılma*  
+A `CFileTimeSpan` çıkarılacak göreli zaman içeren nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Güncelleştirilmiş döndürür `CFileTime` nesne.
+
+##  <a name="operator_eq_eq"></a>  CFileTime::operator ==
+
+Bu işleç iki karşılaştırır `CFileTime` eşitlik için nesneleri.
+
 ```
 bool operator==(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Nesneler eşit, aksi durumda FALSE ise true değeri döndürür.  
-  
-##  <a name="operator_gt"></a>  CFileTime::operator &gt;  
- Bu işleç iki karşılaştırır `CFileTime` büyük belirlemek için nesneleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Nesneler eşit, aksi durumda FALSE ise true değeri döndürür.
+
+##  <a name="operator_gt"></a>  CFileTime::operator &gt;
+
+Bu işleç iki karşılaştırır `CFileTime` büyük belirlemek için nesneleri.
+
 ```
 bool operator>(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İlk nesnenin (daha sonra zaman içinde) büyükse TRUE döndürür ikinciden, aksi takdirde FALSE.  
-  
-##  <a name="operator_gt_eq"></a>  CFileTime::operator &gt;=  
- Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da daha büyük belirlemek için nesneleri.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk nesnenin (daha sonra zaman içinde) büyükse TRUE döndürür ikinciden, aksi takdirde FALSE.
+
+##  <a name="operator_gt_eq"></a>  CFileTime::operator &gt;=
+
+Bu işleç iki karşılaştırır `CFileTime` eşitlik ya da daha büyük belirlemek için nesneleri.
+
 ```
 bool operator>=(CFileTime ft) const throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *ft*  
- `CFileTime` Karşılaştırılacak nesne.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- İlk nesnenin (daha sonra zaman içinde) büyüktür veya eşittir, ikinci ise TRUE döndürür Aksi durumda FALSE.  
-  
-##  <a name="second"></a>  CFileTime::Second  
- 100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*ft*  
+`CFileTime` Karşılaştırılacak nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+İlk nesnenin (daha sonra zaman içinde) büyüktür veya eşittir, ikinci ise TRUE döndürür Aksi durumda FALSE.
+
+##  <a name="second"></a>  CFileTime::Second
+
+100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir günlük olun.
+
 ```
 static const ULONGLONG Second = Millisecond* 1000;
-```  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::Millisecond](#millisecond).  
-  
-##  <a name="settime"></a>  CFileTime::SetTime  
- Tarih ve saat tarafından depolanan ayarlamak için bu yöntemi çağırın `CFileTime` nesne.  
-  
+```
+
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::Millisecond](#millisecond).
+
+##  <a name="settime"></a>  CFileTime::SetTime
+
+Tarih ve saat tarafından depolanan ayarlamak için bu yöntemi çağırın `CFileTime` nesne.
+
 ```
 void SetTime(ULONGLONG nTime) throw();
-```  
-  
-### <a name="parameters"></a>Parametreler  
- *nZaman*  
- Tarih ve saat, yerel veya Eşgüdümlü Evrensel Saat (UTC) biçiminde temsil eden 64-bit değeri.  
-  
-##  <a name="utctolocal"></a>  CFileTime::UTCToLocal  
- Üzerinde Eşgüdümlü Evrensel Saat (UTC) yerel dosya zamana bağlı olarak zaman dönüştürmek için bu yöntemi çağırın.  
-  
+```
+
+### <a name="parameters"></a>Parametreler
+
+*nZaman*  
+Tarih ve saat, yerel veya Eşgüdümlü Evrensel Saat (UTC) biçiminde temsil eden 64-bit değeri.
+
+##  <a name="utctolocal"></a>  CFileTime::UTCToLocal
+
+Üzerinde Eşgüdümlü Evrensel Saat (UTC) yerel dosya zamana bağlı olarak zaman dönüştürmek için bu yöntemi çağırın.
+
 ```
 CFileTime UTCToLocal() const throw();
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir `CFileTime` yerel dosya saat biçiminde saati içeren bir nesne.  
-  
-### <a name="example"></a>Örnek  
- [!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_4.cpp)]  
-  
-##  <a name="week"></a>  CFileTime::Week  
- 100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir haftanın olun.  
-  
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür bir `CFileTime` yerel dosya saat biçiminde saati içeren bir nesne.
+
+### <a name="example"></a>Örnek
+
+[!code-cpp[NVC_MFCFiles#42](../../atl-mfc-shared/reference/codesnippet/cpp/cfiletime-class_4.cpp)]
+
+##  <a name="week"></a>  CFileTime::Week
+
+100 nanosaniyelik aralık sayısını depolama statik veri üyesine bir haftanın olun.
+
 ```
 static const ULONGLONG Week = Day* 7;
-```  
-  
-### <a name="example"></a>Örnek  
- Örneğin bakın [CFileTime::Millisecond](#millisecond).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
- [CFileTimeSpan sınıfı](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
- [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
- [ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
+```
 
+### <a name="example"></a>Örnek
+
+Örneğin bakın [CFileTime::Millisecond](#millisecond).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[FILETIME](https://msdn.microsoft.com/library/windows/desktop/ms724284)   
+[CFileTimeSpan sınıfı](../../atl-mfc-shared/reference/cfiletimespan-class.md)   
+[Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   
+[ATL/MFC paylaşılan sınıfları](../../atl-mfc-shared/atl-mfc-shared-classes.md)
 

@@ -17,51 +17,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40521ce5b7ec192781e1496590fdd42b36e132e1
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: c9693fdc524953c9fa1070ec5e286cb2a999f5a0
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848395"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767731"
 ---
 # <a name="windows-support-classes"></a>Windows desteği sınıfları
-Aşağıdaki sınıflar, windows için destek sağlar:  
-  
--   [_U_menuorıd](../atl/reference/u-menuorid-class.md) için sarmalayıcıları sağlar `CreateWindow` ve `CreateWindowEx`.  
-  
--   [CWindow](../atl/reference/cwindow-class.md) pencere yönlendirmeye yönelik yöntemleri içerir. `CWindow` temel sınıfı olan `CWindowImpl`, `CDialogImpl`, ve `CContainedWindow`.  
-  
--   [Cwindowımpl](../atl/reference/cwindowimpl-class.md) yeni bir pencere sınıfını esas bir pencere uygular. Ayrıca alt veya üst pencere sağlar.  
-  
--   [Cdialogımpl](../atl/reference/cdialogimpl-class.md) bir iletişim kutusu uygular.  
-  
--   [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md) ActiveX denetimleri sunan bir iletişim kutusu (kalıcı veya kısıtlayıcı olmayan) uygular.  
-  
--   [CSimpleDialog](../atl/reference/csimpledialog-class.md) (kalıcı veya kısıtlayıcı olmayan) bir iletişim kutusu ile temel işlevselliğini uygular.  
-  
--   [CAxWindow](../atl/reference/caxwindow-class.md) , bir ActiveX denetimi barındıran bir pencere yönetir.  
-  
--   [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme yöntemlerini sağlar.  
-  
--   [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md) başka bir nesne içinde yer alan bir pencere uygular.  
-  
--   [Cwndclassınfo](../atl/reference/cwndclassinfo-class.md) yeni bir pencere sınıf bilgilerini yönetir.  
-  
--   [CDynamicChain](../atl/reference/cdynamicchain-class.md) dinamik zincirleme ileti haritalarını destekler.  
-  
--   [CMessageMap](../atl/reference/cmessagemap-class.md) iletisini göstermek için bir nesne eşler diğer nesnelere sağlar.  
-  
--   [CWinTraits](../atl/reference/cwintraits-class.md) ATL pencere nesnenin nitelikler Standartlaştırma çok basit bir yöntemini sağlar.  
-  
--   [CWinTraitsOR](../atl/reference/cwintraitsor-class.md) pencere stilleri ve bir pencere oluşturmak için kullanılan genişletilmiş stiller için varsayılan değerleri sağlar. Bir pencere oluşturma sırasında sağlanan değerler için mantıksal veya işlecini kullanarak bu değerleri eklenir.  
-  
-## <a name="related-articles"></a>İlgili Makaleler  
- [ATL Pencere Sınıfları](../atl/atl-window-classes.md)  
-  
- [ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)   
- [İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
- [Pencere Sınıfı Makroları](../atl/reference/window-class-macros.md)
+
+Aşağıdaki sınıflar, windows için destek sağlar:
+
+- [_U_menuorıd](../atl/reference/u-menuorid-class.md) için sarmalayıcıları sağlar `CreateWindow` ve `CreateWindowEx`.
+
+- [CWindow](../atl/reference/cwindow-class.md) pencere yönlendirmeye yönelik yöntemleri içerir. `CWindow` temel sınıfı olan `CWindowImpl`, `CDialogImpl`, ve `CContainedWindow`.
+
+- [Cwindowımpl](../atl/reference/cwindowimpl-class.md) yeni bir pencere sınıfını esas bir pencere uygular. Ayrıca alt veya üst pencere sağlar.
+
+- [Cdialogımpl](../atl/reference/cdialogimpl-class.md) bir iletişim kutusu uygular.
+
+- [Caxdialogımpl](../atl/reference/caxdialogimpl-class.md) ActiveX denetimleri sunan bir iletişim kutusu (kalıcı veya kısıtlayıcı olmayan) uygular.
+
+- [CSimpleDialog](../atl/reference/csimpledialog-class.md) (kalıcı veya kısıtlayıcı olmayan) bir iletişim kutusu ile temel işlevselliğini uygular.
+
+- [CAxWindow](../atl/reference/caxwindow-class.md) , bir ActiveX denetimi barındıran bir pencere yönetir.
+
+- [CAxWindow2T](../atl/reference/caxwindow2t-class.md) bir ActiveX denetimini barındırır ve ayrıca lisanslı bir ActiveX denetimlerini barındırma desteği olan bir pencere düzenleme yöntemlerini sağlar.
+
+- [CContainedWindowT](../atl/reference/ccontainedwindowt-class.md) başka bir nesne içinde yer alan bir pencere uygular.
+
+- [Cwndclassınfo](../atl/reference/cwndclassinfo-class.md) yeni bir pencere sınıf bilgilerini yönetir.
+
+- [CDynamicChain](../atl/reference/cdynamicchain-class.md) dinamik zincirleme ileti haritalarını destekler.
+
+- [CMessageMap](../atl/reference/cmessagemap-class.md) iletisini göstermek için bir nesne eşler diğer nesnelere sağlar.
+
+- [CWinTraits](../atl/reference/cwintraits-class.md) ATL pencere nesnenin nitelikler Standartlaştırma çok basit bir yöntemini sağlar.
+
+- [CWinTraitsOR](../atl/reference/cwintraitsor-class.md) pencere stilleri ve bir pencere oluşturmak için kullanılan genişletilmiş stiller için varsayılan değerleri sağlar. Bir pencere oluşturma sırasında sağlanan değerler için mantıksal veya işlecini kullanarak bu değerleri eklenir.
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+[ATL Pencere Sınıfları](../atl/atl-window-classes.md)
+
+[ATL öğretici](../atl/active-template-library-atl-tutorial.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[İleti eşleme makroları](../atl/reference/message-map-macros-atl.md)   
+[Pencere Sınıfı Makroları](../atl/reference/window-class-macros.md)
 

@@ -17,27 +17,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f474d24bd6057165a50cc6edaca5db5462f6459
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6d98329b46bd7db72caa88030f56abb92142904c
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383556"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765060"
 ---
 # <a name="continue-statement-c"></a>continue Deyimi (C)
-`continue` Deyimi en yakın kapsayan, sonraki yinelemeye denetim geçirir `do`, `for`, veya `while` göründüğü, kalan tüm deyimlerinde atlayarak deyimi `do`, `for`, veya `while` deyimi gövdesi.  
+
+`continue` Deyimi, denetimi en yakın kapsayan bir sonraki yinelemesine geçirir `do`, `for`, veya `while` göründüğü, kalan tüm deyimlerinde atlama deyimi `do`, `for`, veya `while` deyim gövdesi.  
   
-## <a name="syntax"></a>Sözdizimi  
- `jump-statement`:  
- `continue;`  
+## <a name="syntax"></a>Sözdizimi
+
+*atlama-deyimi*:<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;**devam edin.**
   
- Bir sonraki yinelemesini bir `do`, `for`, veya `while` deyimi şu şekilde belirlenir:  
+Sonraki yinelemesine bir `do`, `for`, veya `while` deyimi aşağıdaki gibi belirlenir:  
   
--   İçinde bir `do` veya `while` deyimi, sonraki yinelemesini başlattığı bir ifade reevaluating tarafından `do` veya `while` deyimi.  
+-   İçinde bir `do` veya `while` deyimi, sonraki yineleme başlatır ifade reevaluating tarafından `do` veya `while` deyimi.  
   
--   A `continue` deyiminde bir `for` deyimi neden döngü bir ifade `for` değerlendirilecek ifade. Ardından derleyici koşullu ifade reevaluates ve, sonuç bağlı olarak ya da sona erer veya deyimi gövde yineler. Bkz: [deyimi için](../c-language/for-statement-c.md) hakkında daha fazla bilgi için `for` deyimi ve onun Terminal dışı.  
+-   A `continue` deyiminde bir `for` deyimi, döngü ifadesi neden `for` değerlendirilecek ifade. Ardından derleyici koşullu ifade reevaluates ve sonuç bağlı olarak ya da sona erer veya deyim gövdesi yinelenir. Bkz: [deyimi için](../c-language/for-statement-c.md) hakkında daha fazla bilgi için `for` deyimi ve kendi Terminal dışı.  
   
- Bu bir örnektir `continue` deyimi:  
+Bu bir örnektir `continue` deyimi:  
   
 ```  
 while ( i-- > 0 )   
@@ -49,7 +51,8 @@ while ( i-- > 0 )
 }  
 ```  
   
- Bu örnekte, deyimi gövdesi yürütülür sırada `i` 0'dan büyük. İlk `f(i)` atandığı `x`; daha sonra eğer `x` 1'e eşittir `continue` deyimi gerçekleştirilir. Gövde deyimlerinde kalan dikkate alınmaz ve döngü döngünün test değerlendirmesi ile üstündeki yürütme devam eder.  
+Bu örnekte, deyim gövdesi yürütülür ancak `i` 0'dan büyük. İlk `f(i)` atandığı `x`; daha sonra eğer `x` 1'e eşit olduğunu `continue` deyimi yürütülür. Gövde deyimlerin geri kalanını yok sayılır ve döngünün test değerlendirmesi ile döngüsü üstünde yürütmeyi devam ettirir.  
   
-## <a name="see-also"></a>Ayrıca Bkz.  
- [continue Deyimi](../cpp/continue-statement-cpp.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[continue Deyimi](../cpp/continue-statement-cpp.md)

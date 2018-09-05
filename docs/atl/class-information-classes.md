@@ -16,18 +16,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5df4f70d069c2d77cf828665986c892281ba27cd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: eaf582d364ddddb41c066c901af7ccd806c5484d
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956689"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43767822"
 ---
 # <a name="class-information-classes"></a>Sınıf bilgisi sınıfları
-Aşağıdaki sınıf sınıf bilgileri almak için destek sağlar:  
-  
--   [Iprovideclassınfo2ımpl](../atl/reference/iprovideclassinfo2impl-class.md) bilgi yazmak için erişim sağlar. Nesnenin varsayılan olay kümesi için giden IID alır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)
+
+Aşağıdaki sınıf sınıf bilgileri almak için destek sağlar:
+
+- [Iprovideclassınfo2ımpl](../atl/reference/iprovideclassinfo2impl-class.md) bilgi yazmak için erişim sağlar. Nesnenin varsayılan olay kümesi için giden IID alır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)
 

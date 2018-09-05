@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f965481ae1d3abea40577680b1af72004f793123
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 16c204636baf87cd88f80294b1f413cacc9f5ddc
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197234"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764270"
 ---
 # <a name="c-type-specifiers"></a>C Tür Tanımlayıcıları
 
@@ -29,18 +29,18 @@ Tür belirleyicilerde bildirimleri bir değişken veya işlev bildirimi türün�
 ## <a name="syntax"></a>Sözdizimi
 
 *tür belirticisi*:  
-&nbsp;&nbsp;**Geçersiz kılma**  
-&nbsp;&nbsp;**Char**  
-&nbsp;&nbsp;**kısa**  
-&nbsp;&nbsp;**int**  
-&nbsp;&nbsp;**uzun**  
-&nbsp;&nbsp;**kayan nokta**  
-&nbsp;&nbsp;**çift**  
-&nbsp;&nbsp;**İmzalı**  
-&nbsp;&nbsp;**İşaretsiz**  
-&nbsp;&nbsp;*struct veya union tanımlayıcısı*  
-&nbsp;&nbsp;*sabit listesi belirticisi*  
-&nbsp;&nbsp;*TypeDef adı*  
+&nbsp;&nbsp;&nbsp;&nbsp;**Geçersiz kılma**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Char**  
+&nbsp;&nbsp;&nbsp;&nbsp;**kısa**  
+&nbsp;&nbsp;&nbsp;&nbsp;**int**  
+&nbsp;&nbsp;&nbsp;&nbsp;**uzun**  
+&nbsp;&nbsp;&nbsp;&nbsp;**kayan nokta**  
+&nbsp;&nbsp;&nbsp;&nbsp;**çift**  
+&nbsp;&nbsp;&nbsp;&nbsp;**İmzalı**  
+&nbsp;&nbsp;&nbsp;&nbsp;**İşaretsiz**  
+&nbsp;&nbsp;&nbsp;&nbsp;*struct veya union tanımlayıcısı*  
+&nbsp;&nbsp;&nbsp;&nbsp;*sabit listesi belirticisi*  
+&nbsp;&nbsp;&nbsp;&nbsp;*TypeDef adı*  
 
 **Signed char**, **signed int**, **imzalı short int**, ve **imzalı long int** türleri ile birlikte bunların **işaretsiz**  ortaklarınıza ve **enum**, adlandırılır *integral* türleri. **Float**, **çift**, ve **uzun çift** tür tanımlayıcıları denir *kayan* veya *kayan nokta* türleri. Herhangi bir tamsayı veya kayan nokta türü belirticisi, bir değişken veya işlev bildiriminde kullanabilirsiniz. Varsa bir *tür tanımlayıcısı* sağlanmamış bir bildiriminde olmasını alınır **int**.
 

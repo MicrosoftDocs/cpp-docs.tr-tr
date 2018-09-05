@@ -19,71 +19,79 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c845243e3b99be10af70042688e672fa867fb888
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cab1b2699c87c09761258fcde8cbb8b4c8eaa32f
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32357453"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764257"
 ---
 # <a name="cautoptrelementtraits-class"></a>CAutoPtrElementTraits sınıfı
-Bu sınıf, akıllı işaretçiler koleksiyonları oluştururken yöntemleri, statik işlevler ve tür tanımları yararlı sağlar.  
-  
+
+Bu sınıf, akıllı işaretçiler koleksiyonları oluştururken yöntemleri statik işlevler ve tür tanımları yararlı sağlar.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 template<typename T>  
 class CAutoPtrElementTraits 
     : public CDefaultElementTraits<ATL::CAutoPtr<T>>
-```    
-  
-#### <a name="parameters"></a>Parametreler  
- `T`  
- İşaretçi türü.  
-  
-## <a name="members"></a>Üyeler  
-  
-### <a name="public-typedefs"></a>Genel tür tanımları  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
-|[CAutoPtrElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.|  
-|[CAutoPtrElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, kuruluşlara yardımcı olmaktayız akıllı işaretçiler içeren koleksiyon sınıfı nesneleri oluşturma yöntemleri, statik işlevler ve tür tanımları sağlar. Sınıfları [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) ve [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) öğesinden türetilen `CAutoPtrElementTraits`. Akıllı işaretçiler koleksiyonu oluşturma vektör yeni ve delete işleçleri gerektiriyorsa, kullanın [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) yerine.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)  
-  
- [CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)  
-  
- [CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)  
-  
- [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)  
-  
- `CAutoPtrElementTraits`  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlcoll.h  
-  
-##  <a name="inargtype"></a>  CAutoPtrElementTraits::INARGTYPE  
- Koleksiyon sınıfı nesnesine öğe eklemek için kullanılacak veri türü.  
-  
+```
+
+#### <a name="parameters"></a>Parametreler
+
+`T`  
+İşaretçi türü.
+
+## <a name="members"></a>Üyeler
+
+### <a name="public-typedefs"></a>Genel Typedefler
+
+|Ad|Açıklama|
+|----------|-----------------|
+|[CAutoPtrElementTraits::INARGTYPE](#inargtype)|Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.|
+|[CAutoPtrElementTraits::OUTARGTYPE](#outargtype)|Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sınıf, yöntem, statik işlevler ve tür tanımları kuruluşlara yardımcı olmaktayız akıllı işaretçiler içeren koleksiyon sınıfı nesnelerini oluşturulmasını sağlar. Sınıfları [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) ve [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) öğesinden türetilen `CAutoPtrElementTraits`. Akıllı işaretçiler koleksiyonunu oluşturma yeni vektör ve delete işleçleri gerektiriyorsa, kullanın [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) yerine.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[CDefaultCompareTraits](../../atl/reference/cdefaultcomparetraits-class.md)
+
+[CDefaultHashTraits](../../atl/reference/cdefaulthashtraits-class.md)
+
+[CElementTraitsBase](../../atl/reference/celementtraitsbase-class.md)
+
+[CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md)
+
+`CAutoPtrElementTraits`
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlcoll.h
+
+##  <a name="inargtype"></a>  CAutoPtrElementTraits::INARGTYPE
+
+Koleksiyon sınıfı nesnesine öğeler eklemek için kullanılacak veri türü.
+
 ```
 typedef CAutoPtr<T>& INARGTYPE;
-```  
-  
-##  <a name="outargtype"></a>  CAutoPtrElementTraits::OUTARGTYPE  
- Koleksiyon sınıfı nesnesinden öğeleri almak için kullanılacak veri türü.  
-  
+```
+
+##  <a name="outargtype"></a>  CAutoPtrElementTraits::OUTARGTYPE
+
+Koleksiyon sınıfı nesneden öğeleri almak için kullanılacak veri türü.
+
 ```
 typedef T *& OUTARGTYPE;
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)

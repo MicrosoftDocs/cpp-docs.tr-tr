@@ -17,23 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acfbf8379512513e59528a6eb2855b9caed7d298
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5d9f9359bb6dfa1204c32e6902e12c62423291db
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964203"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43765888"
 ---
 # <a name="composite-controls-classes"></a>Bileşik Denetim sınıfları
-Bileşik denetimler oluşturmak için aşağıdaki sınıf destek sağlar  
-  
--   [CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md) türetilen ActiveX denetimlerini `CComCompositeControl` standart iletişim kutusu tarafından barındırılır. Diğer denetimler (yerel Windows denetimlerini ve ActiveX denetimleri) barındırabilen olduğundan bu tür denetimler bileşik denetimler olarak adlandırılır.  
-  
-## <a name="related-articles"></a>İlgili Makaleler  
- [Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfına genel bakış](../atl/atl-class-overview.md)   
- [Bileşik Denetim makroları](../atl/reference/composite-control-macros.md)   
- [Bileşik Denetim Genel İşlevleri](../atl/reference/composite-control-global-functions.md)
+
+Bileşik denetimler oluşturmak için aşağıdaki sınıf destek sağlar
+
+- [CComCompositeControl](../atl/reference/ccomcompositecontrol-class.md) türetilen ActiveX denetimlerini `CComCompositeControl` standart iletişim kutusu tarafından barındırılır. Diğer denetimler (yerel Windows denetimlerini ve ActiveX denetimleri) barındırabilen olduğundan bu tür denetimler bileşik denetimler olarak adlandırılır.
+
+## <a name="related-articles"></a>İlgili Makaleler
+
+[Bileşik Denetim temelleri](../atl/atl-composite-control-fundamentals.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../atl/atl-class-overview.md)   
+[Bileşik Denetim makroları](../atl/reference/composite-control-macros.md)   
+[Bileşik Denetim Genel İşlevleri](../atl/reference/composite-control-global-functions.md)
 

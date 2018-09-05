@@ -1,5 +1,5 @@
 ---
-title: IAtlAutoThreadModule sınıfı | Microsoft Docs
+title: Iatlautothreadmodule sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,30 +17,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f8793c3bf1bceae03f08293dec2144e749505f6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2c5d92eb693a73aff20ff8869be4412574a15cbe
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32358788"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43764367"
 ---
-# <a name="iatlautothreadmodule-class"></a>IAtlAutoThreadModule sınıfı
-Bu sınıf için bir arabirimi temsil eden bir `CreateInstance` yöntemi.  
-  
+# <a name="iatlautothreadmodule-class"></a>Iatlautothreadmodule sınıfı
+
+Bu sınıf için bir arabirimi temsil eder bir `CreateInstance` yöntemi.
+
 > [!IMPORTANT]
->  Bu sınıf ve üyelerini Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
+>  Bu sınıf ve üyelerine, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
 ```
 __interface IAtlAutoThreadModule
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sınıf [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) türetilen `IAtlAutoThreadModule`, nesneyi oluşturmak ve bir arabirim işaretçisi almak için kod sağlamak için kullanma.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atlbase.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../../atl/atl-class-overview.md)
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Sınıf [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) türetildiği `IAtlAutoThreadModule`, nesne oluşturma ve bir arabirim işaretçisini almak için kod sağlamak için kullanma.
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** atlbase.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)
