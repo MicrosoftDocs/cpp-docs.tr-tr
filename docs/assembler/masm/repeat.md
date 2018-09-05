@@ -1,7 +1,7 @@
 ---
 title: YİNELEME | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5210ba1a56f3177a092d86312dc738bfe25d696
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e70fd06e64378cadbb1c64fba4bd566076f3183e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057318"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690023"
 ---
 # <a name="repeat"></a>REPEAT
-Yinelenmesi için bir blok işaretler *ifade* kez. Aynı [REPT](../../assembler/masm/rept.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   REPEAT expression  
-statements  
-ENDM  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Tekrarlanacağını bir blok işaretler *ifade* kez. Aynı [REPT](../../assembler/masm/rept.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+> Yineleme *ifadesi*<br/>
+> *Deyimleri*<br/>
+> ENDM
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

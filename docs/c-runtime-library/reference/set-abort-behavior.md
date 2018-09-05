@@ -33,19 +33,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb308e527cc955d91af0b12547d52aa5e6316af5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 299801cc4276118fc73a4be625a3df8cc84d58b2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407281"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692940"
 ---
 # <a name="setabortbehavior"></a>_set_abort_behavior
 
-Bir program anormal olduğunda gerçekleştirilecek eylemi belirtir.
+Bir program anormal olarak sonlandırıldığında gerçekleştirilecek eylemi belirtir.
 
 > [!NOTE]
-> Kullanmayın [abort](abort.md) test veya senaryoları hata ayıklama bir Microsoft Store uygulamasını, kapatmak için işlevi. Bir mağaza uygulamasını kapatmak için programlı veya UI yolu göre verilmez [Microsoft Store ilkeleri](http://go.microsoft.com/fwlink/?LinkId=865936). Daha fazla bilgi için bkz: [UWP uygulama yaşam döngüsü](http://go.microsoft.com/fwlink/p/?LinkId=865934).
+> Kullanmayın [iptal](abort.md) test veya hata ayıklama senaryoları dışında bir Microsoft Store uygulamasını kapatmak için işlevi. Bir Store uygulamasını kapatmak için programlama veya UI yollarına göre izin verilmez [Microsoft Store ilkeleri](/legal/windows/agreements/store-policies). Daha fazla bilgi için [UWP uygulama yaşam döngüsü](/windows/uwp/launch-resume/app-lifecycle).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,19 +58,19 @@ unsigned int _set_abort_behavior(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrakları*<br/>
-Yeni değeri [abort](abort.md) bayrakları.
+*bayrakları*<br/>
+Yeni değeri [iptal](abort.md) bayrakları.
 
 *Maskesi*<br/>
-İçin maske [abort](abort.md) ayarlamak için BITS işaretler.
+İçin maske [iptal](abort.md) ayarlamak için bit bayrakları.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bayrakları eski değeri.
+Bayrakların eski değeri.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Var olan iki [abort](abort.md) bayrakları: **_WRITE_ABORT_MSG** ve **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** bir program anormal olduğunda yararlı kısa mesaj yazdırılan olup olmadığını belirler. İleti durumları uygulama çağırdı [abort](abort.md) işlevi. İleti yazdırmak için varsayılan davranıştır. **_CALL_REPORTFAULT**, ayarlayın, Watson kilitlenme döküm oluşturulur ve ne zaman rapor belirtir [abort](abort.md) olarak adlandırılır. Varsayılan olarak, kilitlenme döküm raporlama olmayan hata ayıklama derlemelerinde etkindir.
+İki [iptal](abort.md) bayraklar: **_WRITE_ABORT_MSG** ve **_CALL_REPORTFAULT**. **_WRITE_ABORT_MSG** bir program anormal olarak sonlandırıldığında yardımcı bir metin iletisinin yazdırılıp yazdırılmayacağını belirler. İletiyi bildiren uygulama çağırdı [iptal](abort.md) işlevi. İletiyi yazdırmak için varsayılan davranıştır. **_CALL_REPORTFAULT**, ayarla, Watson kilitlenme dökümünün oluşturulduğunu ve raporlandığını belirtir [iptal](abort.md) çağrılır. Varsayılan olarak kilitlenme bilgi dökümü raporlaması DEBUG olmayan yapılarda etkinleştirilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -78,7 +78,7 @@ Var olan iki [abort](abort.md) bayrakları: **_WRITE_ABORT_MSG** ve **_CALL_REPO
 |-------------|---------------------|
 |**_set_abort_behavior**|\<stdlib.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

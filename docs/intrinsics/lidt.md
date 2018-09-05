@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6f73e37c8fddc54e91be13d83c54f126ab6b5a0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: f4b6dcdee1d30274e8cc4baf3de70e4c6cbb611d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465369"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692708"
 ---
 # <a name="lidt"></a>__lidt
 **Microsoft'a özgü**  
@@ -52,7 +52,7 @@ void __lidt(
  **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__lidt` İşlev, eşdeğer `LIDT` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: yönerge kümesi başvurusu" konumunda [Intel Corporation'da](http://go.microsoft.com/fwlink/p/?linkid=127) site.  
+ `__lidt` İşlev, eşdeğer `LIDT` makine yönerge ve yalnızca çekirdek modunda kullanılabilir. Belge için daha fazla bilgi için arama "Intel mimarisi yazılım geliştirici el ile 2 birim: yönerge kümesi başvurusu" konumunda [Intel Corporation'da](https://software.intel.com/en-us/articles/intel-sdm) site.  
   
 **END Microsoft özgü**  
   

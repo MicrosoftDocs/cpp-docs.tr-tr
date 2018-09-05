@@ -1,7 +1,7 @@
 ---
 title: IMAGEREL işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,26 +18,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: db4c22c1e12ff2850c61cb1b0aea7fe89eca5ca4
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 3293f78151ae9bc5a8de47c4083d3e896027815c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055118"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691414"
 ---
 # <a name="operator-imagerel"></a>IMAGEREL işleci
-Görüntü göreli uzaklığını döndürür `expression`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IMAGEREL expression  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sonuç değeri genellikle bir RVA veya göreli sanal adres olarak adlandırılır.  
-  
- IMAGEREL yalnızca COFF nesne çıkması ile kullanılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Görüntü göreli uzaklığı döndürür `expression`.
+
+## <a name="syntax"></a>Sözdizimi
+
+> IMAGEREL ifadesi
+
+## <a name="remarks"></a>Açıklamalar
+
+Sonuç değerini genellikle bir RVA veya göreli sanal adres olarak adlandırılır.
+
+IMAGEREL yalnızca COFF nesnesi çıkması ile kullanılabilir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

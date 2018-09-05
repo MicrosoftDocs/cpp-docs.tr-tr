@@ -1,7 +1,7 @@
 ---
 title: . ENDW | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e98433ad6e001519f04aea626ce6a0ef34270532
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ae2e412f433ee4656ab40c99ed505bd695ca360e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050954"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691608"
 ---
 # <a name="endw"></a>.ENDW
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.ENDW  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bkz: [. SIRADA](../../assembler/masm/dot-while.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+> .ENDW
+
+## <a name="remarks"></a>Açıklamalar
+
+Bkz: [. SIRADA](../../assembler/masm/dot-while.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

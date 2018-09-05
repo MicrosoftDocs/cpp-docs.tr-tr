@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12081cbc34182fc4c974bd96fd0ce7bbc78cca5f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ed404bcbbdd62c051b0f93e2607d1278bfbf0204
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220235"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691841"
 ---
 # <a name="walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application"></a>İzlenecek yol: COM Özellikli bir Uygulamada Eşzamanlılık Çalışma Zamanını Kullanma
 Bu belge Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık çalışma zamanı nasıl yapılacağı açıklanır.  
@@ -36,7 +36,7 @@ Bu belge Bileşen Nesne Modeli (COM) kullanan bir uygulamada eşzamanlılık ça
   
 - [Özel Durum İşleme](../../parallel/concrt/exception-handling-in-the-concurrency-runtime.md)  
   
- COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](https://msdn.microsoft.com/library/windows/desktop/ms680573).  
+ COM hakkında daha fazla bilgi için bkz: [Bileşen Nesne Modeli (COM)](/windows/desktop/com/component-object-model--com--portal).  
   
 ## <a name="managing-the-lifetime-of-the-com-library"></a>COM Kitaplığının Kullanım Süresini Yönetme  
  Diğer bir eşzamanlılık mekanizması olarak aynı ilkeler COM eşzamanlılık çalışma zamanı ile kullanımını izleyen olsa da, aşağıdaki yönergeleri Bu kitaplıklar birlikte etkili bir şekilde kullanmanıza yardımcı olabilir.  

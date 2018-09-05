@@ -1,7 +1,7 @@
 ---
-title: Satır içi derleme en iyi duruma getirme | Microsoft Docs
+title: Satır içi derlemeyi en iyi duruma getirme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -18,18 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c494594e3b7c541487f34fd33359b0e31f73dd61
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 49660bdc6d2eb84e6e1bbaeb5ebf0d57e484e9e1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050564"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43687882"
 ---
 # <a name="optimizing-inline-assembly"></a>Satır İçi Derlemeyi En İyi Duruma Getirme
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Varlığını bir `__asm` bir işlev bloğunda iyileştirme çeşitli şekillerde etkiler. İlk olarak, derleyici en iyi duruma getirme dener `__asm` kendisini engelleyin. Assembly dili yazma tam olarak aldığınızdır. İkincisi, varlığını bir `__asm` blok etkiler değişken depolama kaydedin. Derleyici enregistering değişkenleri arasında önler bir `__asm` kasanın içindekileri tarafından değiştirilmesi bloke `__asm` bloğu. Son olarak, diğer bir işlev genelinde iyileştirmeleri eklenmesi, bir işlev derleme dili tarafından etkilenmez.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Satır İçi Assembler](../../assembler/inline/inline-assembler.md)
+
+**Microsoft'a özgü**
+
+Varlığı bir `__asm` bir işlev bloğunda iyileştirme çeşitli şekillerde etkiler. İlk olarak, derleyici en iyi duruma getirme dener `__asm` kendisini engelleyin. Derleme dilinde yazma, tam olarak ne devreye girer. İkincisi, varlığı bir `__asm` kaydetme değişken depolama blok etkiler. Derleyici, kayıt değişkenleri arasında önler bir `__asm` kaydın içeriğini tarafından değiştirilmesi bloke `__asm` blok. Son olarak, diğer bir işlevi genelinde iyileştirmeler eklenmesi, bir işlevde derleme dili tarafından etkilenir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Satır İçi Assembler](../../assembler/inline/inline-assembler.md)<br/>

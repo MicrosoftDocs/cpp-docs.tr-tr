@@ -1,7 +1,7 @@
 ---
 title: ML önemli hatası A1000 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,35 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cc6fe8013fa36063031aba9bfc3dc02de40b092
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 2ecd72e749be8ff4325e644376e312206756d1b4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054809"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691456"
 ---
 # <a name="ml-fatal-error-a1000"></a>ML Önemli Hatası A1000
-**Dosya açılamıyor: dosya adı**  
-  
- Bir kaynağı açın, dahil etmek veya çıkış dosyası assembler bulamadı.  
-  
- Bir nedeni aşağıdakilerden biri olabilir:  
-  
--   Dosya yok.  
-  
--   Dosya başka bir işlem tarafından kullanılıyor.  
-  
--   Dosya adı geçerli değil.  
-  
--   Çıktı dosyası adını ile salt okunur bir dosya zaten var.  
-  
--   Geçerli sürücü dolu.  
-  
--   Geçerli dizin, kök ve dolu.  
-  
--   Cihaz yazılamaz.  
-  
--   Sürücü hazır değil.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Dosya açılamıyor: dosya adı**
+
+Bir kaynağı açın, dahil etmek veya çıkış dosyası assembler oluşturamadı.
+
+Aşağıdakilerden birini bir neden olabilir:
+
+- Dosya yok.
+
+- Dosya başka bir işlem tarafından kullanılıyor.
+
+- Dosya adı geçerli değil.
+
+- Çıkış dosyası adı ile salt okunur bir dosya zaten var.
+
+- Geçerli bir sürücü dolu.
+
+- Geçerli dizin, kök ve dolu.
+
+- Cihaz yazılamaz.
+
+- Sürücü hazır değil.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

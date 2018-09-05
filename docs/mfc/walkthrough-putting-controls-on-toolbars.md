@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2dd920f3dd8d08d6ceb766b9c10969137b8bf03c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 258d8f10238db58be26743694943ae3bd6abc20e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199270"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693581"
 ---
 # <a name="walkthrough-putting-controls-on-toolbars"></a>İzlenecek yol: Araç Çubuklarına Denetimler Yerleştirme
 Bu konuda, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu düğmesi eklemeyi açıklar. MFC içinde araç çubuğu düğmesi olmalıdır bir [CMFCToolBarButton sınıfı](../mfc/reference/cmfctoolbarbutton-class.md)-türetilmiş sınıf, örneğin [CMFCToolBarComboBoxButton sınıfı](../mfc/reference/cmfctoolbarcomboboxbutton-class.md), [CMFCToolBarEditBoxButton sınıfı](../mfc/reference/cmfctoolbareditboxbutton-class.md), [CMFCDropDownToolbarButton sınıfı](../mfc/reference/cmfcdropdowntoolbarbutton-class.md), veya [CMFCToolBarMenuButton sınıfı](../mfc/reference/cmfctoolbarmenubutton-class.md).  
@@ -73,7 +73,7 @@ Bu konuda, bir Windows denetimine bir araç çubuğu içeren bir araç çubuğu 
   
     1.  Geçirmek `ID_EDIT_FIND_COMBO` olarak komut kimliği.  
   
-    2.  Kullanım [CCommandManager::GetCmdImage](https://msdn.microsoft.com/4094d08e-de74-4398-a483-76d27a742dca) ile `ID_EDIT_FIND` resim dizinini elde edilir.  
+    2.  Kullanım [CCommandManager::GetCmdImage](reference/internal-classes.md) ile `ID_EDIT_FIND` resim dizinini elde edilir.  
   
     3.  Kullanılabilir birleşik giriş kutusu stilleri bir listesi için bkz. [birleşik giriş kutusu stilleri](../mfc/reference/styles-used-by-mfc.md#combo-box-styles).  
   

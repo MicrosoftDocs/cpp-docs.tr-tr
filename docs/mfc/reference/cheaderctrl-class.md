@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7edfe929a742e5ff33e76840fa1abdfd496908e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ebe4b604958220a846ee3a91b1a6251f6f461de9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211560"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693473"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 Windows ortak üstbilgi denetimi işlevlerini sağlar.  
@@ -283,7 +283,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Üst bilgi denetiminin stili. Üstbilgi denetim stilleri açıklaması için bkz: [üstbilgi denetim stilleri](/windows/desktop/Controls/header-control-styles) Windows SDK. Bkz: [Oluştur](#create) ek stilleri listesi.  

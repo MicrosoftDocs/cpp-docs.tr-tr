@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b63afd3c63fbcb05c7172a30a5a23b0418269eca
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 5b227f9d2fdd43b576f89b74f43e4cdce8476bf9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201465"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692389"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 Kullanıcı bir üst düzey araç çubuğu düğmesini basılı tuttuğunda görünen bir araç çubuğu.  
@@ -59,7 +59,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 |[CMFCDropDownToolBar::OnLButtonUp](#onlbuttonup)||  
 |[CMFCDropDownToolBar::OnMouseMove](#onmousemove)||  
 |[CMFCDropDownToolBar::OnSendCommand](#onsendcommand)|(Geçersiz kılmaları `CMFCToolBar::OnSendCommand`.)|  
-|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CMFCToolBar::OnUpdateCmdUI](https://msdn.microsoft.com/571a38ab-2a56-4968-9796-273516126f80).)|  
+|[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Geçersiz kılmaları [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md).|  
   
 ### <a name="remarks"></a>Açıklamalar  
  A `CMFCDropDownToolBar` nesne ile bir açılan menü davranışını bir araç çubuğu görsel görünümünü birleştirir. Ne zaman bir kullanıcının bastığında ve bir açılır araç çubuğu düğmesini (bkz [CMFCDropDownToolbarButton sınıfı](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)), aşağı açılan araç çubuğu görünür ve kullanıcı bir düğme açılan araç çubuğundan için kaydırma ve fare düğmesini bırakmadan seçebilirsiniz düğmesi. Kullanıcının açılan araç çubuğunda bir düğmeyi seçtiğinde sonra bu düğme olarak geçerli bir üst düzey araç çubuğunda görüntülenir.  

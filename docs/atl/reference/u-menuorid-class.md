@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9853cbcecd691f0ea16358259c8a0ac7b213433
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 333bdbd88d554e3fe3e3f233ce9968df75d73dfc
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211193"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690896"
 ---
 # <a name="umenuorid-class"></a>_U_menuorıd sınıfı
 Bu sınıfın sarmalayıcıları için sağladığı `CreateWindow` ve `CreateWindowEx`.  
@@ -55,7 +55,7 @@ class _U_MENUorID
 ## <a name="remarks"></a>Açıklamalar  
  Bu bağımsız değişken bağdaştırıcı sınıfı yoluna arayan kimlikleri (sınıfta) ya da menü tutamaçlarını (açık bir tür dönüştürme gerektirmeden bir işleve geçirilecek HMENUs) sağlar.  
   
- Bu sınıfın sarmalayıcıları Windows API uygulamak için tasarlanmıştır özellikle [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) ve [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) İşlevler, ikisi için de bir alt pencere olabilecek HMENU bağımsız değişken kabul edin tanımlayıcı (UINT) yerine bir menü tanıtıcısı. Örneğin, bir parametre olarak kullanımı bu sınıfta görebilirsiniz [CWindowImpl::Create](cwindowimpl-class.md#create).  
+ Bu sınıfın sarmalayıcıları Windows API uygulamak için tasarlanmıştır özellikle [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) ve [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) İşlevler, ikisi için de bir alt pencere olabilecek HMENU bağımsız değişken kabul edin tanımlayıcı (UINT) yerine bir menü tanıtıcısı. Örneğin, bir parametre olarak kullanımı bu sınıfta görebilirsiniz [CWindowImpl::Create](cwindowimpl-class.md#create).  
 
   
  Sınıfı iki oluşturucu aşırı yüklemeleri tanımlar: bir UINT bağımsız değişkeni kabul eder ve diğer HMENU bağımsız değişken kabul eder. UINT bağımsız değişken yalnızca bir HMENU oluşturucusu ve sınıfın tek veri üyesi içinde depolanmış sonuç türüne dönüştürülür [m_hMenu](#_u_menuorid__m_hmenu). HMENU oluşturucusuna bağımsız değişken doğrudan dönüştürme depolanır.  

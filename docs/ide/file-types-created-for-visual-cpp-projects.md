@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fc0bc1789e4fc4f11b9d0becfda656a42d0ec95
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 29ab603001405056626af0debbde7b6f8ef78704
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214202"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690581"
 ---
 # <a name="file-types-created-for-visual-c-projects"></a>Visual C++ Projeleri için Oluşturulan Dosya Türleri
 Bu konuda, Klasik Masaüstü uygulamaları için Visual C++ projeleri ile ilişkili olan dosyaların tüm türleri açıklanmaktadır. Projenize dahil gerçek dosyaları proje türü ve bir Sihirbazı kullanarak belirttiğiniz seçeneklere bağlıdır.  
@@ -73,7 +73,7 @@ Bu konuda, Klasik Masaüstü uygulamaları için Visual C++ projeleri ile ilişk
 |. HxC|Proje|Proje dosyası yardımcı olur.|  
 |.ico|Kaynak|Simge bit eşlem grafik dosyası.|  
 |.idb|Derleme|En az yeniden derleme ve artımlı derleme sırasında derleyici tarafından kullanılabilecek sınıf tanımları ve kaynak dosyaları arasındaki bağımlılık bilgilerini içeren durum dosyası. Kullanım [/Fd](../build/reference/fd-program-database-file-name.md) derleyici seçeneğini .idb dosyasının adını belirtin. Bkz: [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../build/reference/gm-enable-minimal-rebuild.md) daha fazla bilgi için.|  
-|.idl|Derleme|Arabirim tanımı dili dosyası. Bkz: [arabirim tanımı (IDL) dosya](https://msdn.microsoft.com/library/windows/desktop/aa378712) daha fazla bilgi için Windows SDK.|  
+|.idl|Derleme|Arabirim tanımı dili dosyası. Bkz: [arabirim tanımı (IDL) dosya](/windows/desktop/Rpc/the-interface-definition-language-idl-file) daha fazla bilgi için Windows SDK.|  
 |.ilk|Bağlama|Artımlı bağlantı dosyası. Bkz: [/INCREMENTAL](../build/reference/incremental-link-incrementally.md) daha fazla bilgi için.|  
 |.map|Bağlama|Bağlayıcı bilgilerini içeren bir metin dosyası. Kullanım [/Fm](../build/reference/fm-name-mapfile.md) eşleme dosyasını adlandırmak için derleyici seçeneği. Bkz: [/MAP](../build/reference/map-generate-mapfile.md) daha fazla bilgi için.|  
 |.mfcribbon ms|Kaynak|Şerit düğmeleri, denetimleri ve özniteliklerini tanımlayan XML kodunu içeren bir kaynak dosyası. Daha fazla bilgi için [Şerit Tasarımcısı (MFC)](../mfc/ribbon-designer-mfc.md).|  
@@ -81,7 +81,7 @@ Bu konuda, Klasik Masaüstü uygulamaları için Visual C++ projeleri ile ilişk
 |.PCH|Hata ayıklama|Önceden derlenmiş üst bilgi dosyası.|  
 |.RC, .rc2|Kaynak|[Kaynak betik dosyalarına](../windows/working-with-resource-files.md) kaynakları oluşturmak için.|  
 |.SBR|Derleme|Kaynak tarayıcı ara dosyası. Giriş dosyası için [BSCMAKE](../build/reference/bscmake-options.md).|  
-|.sln|Çözüm|[Çözüm](https://msdn.microsoft.com/a45c299d-69f5-4b67-879d-1383417df0a7) dosya.|  
+|.sln|Çözüm|[Çözüm](/visualstudio/ide/solutions-and-projects-in-visual-studio) dosya.|  
 |.suo|Çözüm|Çözüm seçenekleri dosyası.|  
 |.txt|Kaynak|Bir metin dosyası, genellikle "Benioku".|  
 |.vap|Proje|Visual Studio Analyzer proje dosyası.|  

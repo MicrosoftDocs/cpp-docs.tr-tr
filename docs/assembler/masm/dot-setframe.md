@@ -1,7 +1,7 @@
 ---
 title: . SETFRAME | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,60 +16,62 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c49d512534a11f01376deac41006e55c6b7b9d89
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 956a49e40c38310819d66e89fa6bf4492443a29c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052592"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691295"
 ---
 # <a name="setframe"></a>.SETFRAME
-Çerçeve doldurur bırakma bilgilerin belirtilen yazmaç kullanarak alan ve uzaklık kaydetmek (`reg`) ve uzaklık (`offset`). Uzaklık 16 katları olmalıdır ve 240 küçük veya buna eşit. Bu yönerge ayrıca oluşturur bir `UWOP_SET_FPREG` geçerli başlangıç sapmasını kullanarak belirtilen kaydetmek için kod girişi bırakma.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-.SETFRAME reg, offset  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- . SETFRAME ml64.exe kullanıcıların nasıl çerçeve işlevi unwinds ve yalnızca gelen genişletir giriş içinde izin belirtmesine izin verir [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeleri kod oluşturmaz; yalnızca oluşturdukları `.xdata` ve `.pdata`. . SETFRAME gerçekten unwound olmasını eylemlerini uygulamak yönergeleri ile gelmelidir. Bırakma yönergeleri ve bunlar makro bırakma sözleşmesi emin olmak için değiştirmemektir kodu sarmalamak için iyi bir uygulamadır.  
-  
- Daha fazla bilgi için bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).  
-  
-## <a name="sample"></a>Örnek  
-  
-### <a name="description"></a>Açıklama  
- Aşağıdaki örnek, bir çerçeve işaretçisi kullanmayı gösterir:  
-  
-### <a name="code"></a>Kod  
-  
-```  
-; ml64 frmex2.asm /link /entry:frmex2 /SUBSYSTEM:CONSOLE  
-_text SEGMENT  
-frmex2 PROC FRAME  
-   push rbp  
-.pushreg rbp  
-   sub rsp, 010h  
-.allocstack 010h  
-   mov rbp, rsp  
-.setframe rbp, 0  
-.endprolog  
-   ; modify the stack pointer outside of the prologue (similar to alloca)  
-   sub rsp, 060h  
-  
-   ; we can unwind from the following AV because of the frame pointer     
-   mov rax, 0  
-   mov rax, [rax] ; AV!  
-  
-   add rsp, 060h  
-   add rsp, 010h  
-   pop rbp  
-   ret  
-frmex2 ENDP  
-_text ENDS  
-END  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Çerçeve doldurur, geriye doğru izleme bilgilerinde belirtilen yazmaç kullanarak alan ve uzaklık kaydetme (`reg`) ve uzaklık (`offset`). Uzaklık 16 olmalıdır ve 240 küçüktür veya eşittir. Bu yönerge ayrıca oluşturur bir `UWOP_SET_FPREG` belirtilen geçerli başlangıç uzaklığını kullanarak kaydetmek için kod girişi geriye doğru izleme.
+
+## <a name="syntax"></a>Sözdizimi
+
+> . SETFRAME yazmaç, offset
+
+## <a name="remarks"></a>Açıklamalar
+
+. SETFRAME sağlayan nasıl çerçeve işlevi geriye doğru izler ve yalnızca gelen genişletir prolog içinde izin ml64.exe kullanıcıların [PROC](../../assembler/masm/proc.md) çerçeve bildirimine [. ENDPROLOG](../../assembler/masm/dot-endprolog.md) yönergesi. Bu yönergeler, kodu üretmemesi; yalnızca hazırlanmasının `.xdata` ve `.pdata`. . Geriye doğru olması için eylemleri uygulayan yönergeleri ile SETFRAME gelmelidir. Bırakma yönergeleri hem anlaşma emin olmak için bunlar bir makroda geriye doğru şekilde tasarlanmıştır kodu kaydırmak için iyi bir uygulamadır.
+
+Daha fazla bilgi için [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md).
+
+## <a name="sample"></a>Örnek
+
+### <a name="description"></a>Açıklama
+
+Aşağıdaki örnek, bir çerçeve işaretçisi kullanma işlemini gösterir:
+
+### <a name="code"></a>Kod
+
+```asm
+; ml64 frmex2.asm /link /entry:frmex2 /SUBSYSTEM:CONSOLE
+_text SEGMENT
+frmex2 PROC FRAME
+   push rbp
+.pushreg rbp
+   sub rsp, 010h
+.allocstack 010h
+   mov rbp, rsp
+.setframe rbp, 0
+.endprolog
+   ; modify the stack pointer outside of the prologue (similar to alloca)
+   sub rsp, 060h
+
+   ; we can unwind from the following AV because of the frame pointer
+   mov rax, 0
+   mov rax, [rax] ; AV!
+
+   add rsp, 060h
+   add rsp, 010h
+   pop rbp
+   ret
+frmex2 ENDP
+_text ENDS
+END
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

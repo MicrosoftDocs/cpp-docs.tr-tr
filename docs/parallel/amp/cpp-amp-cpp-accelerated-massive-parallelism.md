@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a990acd8f27be476ce35d682a19912dcc85bbeed
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 340a21a3bbcb1853d66de01bddf9425fed0c8183
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466266"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689850"
 ---
 # <a name="c-amp-c-accelerated-massive-parallelism"></a>C++ AMP (C++ Accelerated Massive Parallelism)
 C++ AMP (C++ Accelerated Massive Parallelism) ayrı ekran kartı üzerindeki grafik işlemci birimi (GPU) gibi veri-paralel donanımlardan yararlanarak C++ kod yürütülmesini hızlandırır. C++ AMP programlama modeli çok boyutlu diziler, dizin oluşturma, bellek aktarımı ve döşeme için destek içerir. Ayrıca, bir matematiksel işlev kitaplığını içerir. C++ AMP dil uzantılarını verilerin CPU'dan GPU'ya nasıl taşınır denetlemek için kullanın ve yedekleyin.  
@@ -48,4 +48,4 @@ C++ AMP (C++ Accelerated Massive Parallelism) ayrı ekran kartı üzerindeki gra
  
 [Yerel kod Blog içinde paralel programlama](http://go.microsoft.com/fwlink/p/?linkid=238472)  
 [Yükleme için C++ AMP örnek projeleri](http://go.microsoft.com/fwlink/p/?linkid=248508)  
-[Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
+[Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ff94cddb6c286fa651b1ba728238e0d38ab3b17
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4d3f82633c9bd48ede71853dbe383352b0b3d6f5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466175"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692870"
 ---
 # <a name="svmvmload"></a>__svm_vmload
 **Microsoft'a özgü**  
@@ -44,7 +44,7 @@ void __svm_vmload(
 |[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- `__svm_vmload` İşlev, eşdeğer `VMLOAD` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](http://go.microsoft.com/fwlink/p/?linkid=23746) site.  
+ `__svm_vmload` İşlev, eşdeğer `VMLOAD` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05b259afe5c266db30ed31ed47e917f0ac1a5607
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7c4ea8cf95298918088f54c3099a8f41d9c16ca9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196196"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690158"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 Windows ortak ilerleme çubuğu denetimi işlevlerini sağlar.  
@@ -143,7 +143,7 @@ virtual BOOL Create(
   
 ### <a name="parameters"></a>Parametreler  
  *dwStyle*  
- İlerleme çubuğu denetiminin stilini belirtir. Uygulama penceresi stylesdescribed içinde herhangi bir birleşimini [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) aşağıdaki ilerleme çubuğu denetimi için denetim stilleri yanı sıra Windows SDK:  
+ İlerleme çubuğu denetiminin stilini belirtir. Uygulama penceresi stylesdescribed içinde herhangi bir birleşimini [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) aşağıdaki ilerleme çubuğu denetimi için denetim stilleri yanı sıra Windows SDK:  
   
 - Pbs_vertıcal görüntüler dikey ilerleme bilgileri, en alt kısma. Bu bayrağı olmadan ilerleme çubuğu denetimi, yatay, soldan sağa görüntüler.  
   
@@ -181,10 +181,10 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
- İlerleme çubuğu denetiminin stilini belirtir. Herhangi bir birleşimini açıklanan pencere stilleri uygulamak [CreateWindow](https://msdn.microsoft.com/library/windows/desktop/ms632679) Windows SDK.  
+ İlerleme çubuğu denetiminin stilini belirtir. Herhangi bir birleşimini açıklanan pencere stilleri uygulamak [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.  
   
  *Rect*  
  Bir başvuru bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) istemci koordinatları olarak oluşturulması için pencerenin konumunu ve boyutunu açıklayan yapısı *pParentWnd*.  

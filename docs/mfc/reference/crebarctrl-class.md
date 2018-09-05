@@ -108,12 +108,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 656a19b6cddfb7e8353bb0eabf8975c733129a52
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 702cc504032f7c4702dcc1b317c517d53b9cccc9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207916"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693886"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 Alt pencere kapsayıcısı olan bir çubuk barınağı denetiminin işlevselliğini kapsüller.  
@@ -293,7 +293,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Çubuk barınağı denetim stilleri denetime uygulanan bileşimini belirtir. Desteklenen stilleri bir listesi için bkz. [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK.  

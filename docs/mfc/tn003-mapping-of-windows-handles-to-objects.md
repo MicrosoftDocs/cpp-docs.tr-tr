@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7dbd74a8f216efb64d220747155a619d2084b3b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b022c4c42a7373f9bfc23c1fff5be2c1317709de
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211768"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692454"
 ---
 # <a name="tn003-mapping-of-windows-handles-to-objects"></a>TN003: Pencere İşleyicilerini Nesnelere Eşleme
 Bu Not MFC açıklar Windows eşleme desteği rutinleri C++ nesnelerinin tanıtıcıları nesne.  
@@ -74,7 +74,7 @@ CWnd myWnd;
 myWnd.Attach(hWnd);
 ```  
   
- Bu ilişkilendirme kalıcı eşlem içinde bir giriş yapar *myWnd* ve *hWnd*. Çağırma `CWnd::FromHandle(hWnd)` artık bir işaretçi döndürür *myWnd*. Zaman *myWnd* olduğu silinmiş yıkıcı otomatik olarak silecektir *hWnd* Windows çağırarak [DestroyWindow](https://msdn.microsoft.com/library/windows/desktop/ms632682) işlevi. Bu istenmiyorsa *hWnd* gelen ayrılması *myWnd* önce *myWnd* yok (normalde kapsamda ayrılırken *myWnd*tanımlanmıştır). `Detach` Yöntemi bunu yapar.  
+ Bu ilişkilendirme kalıcı eşlem içinde bir giriş yapar *myWnd* ve *hWnd*. Çağırma `CWnd::FromHandle(hWnd)` artık bir işaretçi döndürür *myWnd*. Zaman *myWnd* olduğu silinmiş yıkıcı otomatik olarak silecektir *hWnd* Windows çağırarak [DestroyWindow](/windows/desktop/api/winuser/nf-winuser-destroywindow) işlevi. Bu istenmiyorsa *hWnd* gelen ayrılması *myWnd* önce *myWnd* yok (normalde kapsamda ayrılırken *myWnd*tanımlanmıştır). `Detach` Yöntemi bunu yapar.  
   
 ```  
 myWnd.Detach();

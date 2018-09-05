@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30906b3851357942873e3926151d5a195161a6e5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a4e9e33ace99cded551abbb43bc9ada1c6c625eb
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205189"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693709"
 ---
 # <a name="using-cobject"></a>CObject Kullanma
 [CObject](../mfc/reference/cobject-class.md) çoğu, Microsoft Foundation Class Kitaplığı'nı (MFC) için kök taban sınıfı olan. `CObject` Sınıf seri hale getirme desteği, çalışma zamanı sınıf bilgileri ve nesne tanılama çıkışı dahil olmak üzere kendi programını nesnelerine eklemek isteyebileceğiniz birçok yararlı özellik içerir. Sınıfından türetirseniz `CObject`, bunlar sınıfınıza yararlanabilir `CObject` özellikleri.  
@@ -42,7 +42,7 @@ ms.locfileid: "43205189"
   
 -   [Tanılama amacıyla nesne verilerinin dökümü](/previous-versions/visualstudio/visual-studio-2010/sc15kz85\(v=vs.100\))  
   
--   Nesnenin iç durumu doğrulamak (bkz [MFC assert_valıd ve CObject::AssertValid](https://msdn.microsoft.com/7654fb75-9e9a-499a-8165-0a96faf2d5e6))  
+-   Nesnenin iç durumu doğrulamak (bkz [MFC assert_valıd ve CObject::AssertValid](reference/diagnostic-services.md#assert_valid))  
   
 -   [Kendisini kalıcı depolama için seri sınıfı](../mfc/serialization-in-mfc.md)  
   

@@ -1,7 +1,7 @@
 ---
 title: Intel&#39;s MMX yönerge kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -14,18 +14,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c054c1236fbbc74cfc45834f05aa2be08faa07f6
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 95f3cb57fc5c046057a5efa568ce930f13ca3256
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050743"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688359"
 ---
 # <a name="intel39s-mmx-instruction-set"></a>Intel&#39;s MMX yönerge kümesi
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Visual C++ Derleyici, satır içi derleyicisi ayarlamak Intel'in MMX (multimedya uzantılı) yönerge kullanmanıza olanak sağlar. MMX yönerge hata ayıklayıcı ayrıştırılmış tarafından da desteklenir. İşlev MMX yönerge içeriyor ancak multimedya durumu boşaltmak için EMMS yönerge içermiyor derleyici bir uyarı iletisi oluşturur. Daha fazla bilgi için Intel Web sitesine bakın.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Visual C++ derleyicisi Intel'in MMX (multimedya uzantısı) yönerge kümesi içinde satır içi assembler kullanmanıza olanak tanır. MMX yönergeleri, hata ayıklayıcı ayrıştırılmış kodu tarafından da desteklenir. İşlev MMX yönergeleri içerir, ancak bir EMMS yönergesi multimedya durumu boşaltmak için içermiyor, derleyici bir uyarı iletisi oluşturur. Daha fazla bilgi için Intel Web sitesine bakın.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2047 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 95d01abf57eb58dadc4f46369b3613abfd5c49b1
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b2dae687e4ac60157e8c929bedc5e1941160848c
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054903"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688110"
 ---
 # <a name="ml-nonfatal-error-a2047"></a>ML Önemli Olmayan Hatası A2047
-**(boş) boş bir dize**  
-  
- Tırnak işaretleri içindeki herhangi bir karakter ve sınırlandırma çiftinin bir dize içermektedir.  
-  
- Bir dize geçerli olması 1-255 karakter içermelidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**boş bir dize (null)**
+
+Sınırlayıcı bir çift tırnak işaretleri içinde herhangi bir karakter ve dize oluşmuştur.
+
+Bir dize geçerli olması 1 ila 255 karakter içermelidir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

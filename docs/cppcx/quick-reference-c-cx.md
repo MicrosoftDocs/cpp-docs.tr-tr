@@ -9,15 +9,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a54774193c0274c2ee9e4f79c389cee3ffe5c49
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 272921d0a9ac00ec5ee69fb50a17a34e257b1725
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608339"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692594"
 ---
 # <a name="quick-reference-ccx"></a>Hızlı Başvuru (C + +/ CX)
-Windows çalışma zamanı, yalnızca güvenilir işletim sistemi ortamında yürütme, yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılan Evrensel Windows Platformu (UWP) uygulamaları destekler. C + +/ CX uygulamaların yazılmasını Windows çalışma zamanı için basitleştirin. Bu makalede hızlı bir referanstır; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md) ve [çalışma zamanı platformları için bileşen uzantıları](http://go.microsoft.com/fwlink/p/?linkid=228720).  
+Windows çalışma zamanı, yalnızca güvenilir işletim sistemi ortamında yürütme, yetkili İşlevler, veri türleri ve cihazlar kullanır ve Microsoft Store dağıtılan Evrensel Windows Platformu (UWP) uygulamaları destekler. C + +/ CX uygulamaların yazılmasını Windows çalışma zamanı için basitleştirin. Bu makalede hızlı bir referanstır; daha eksiksiz belgeler için bkz: [tür sistemi](../cppcx/type-system-c-cx.md).  
   
  Komut satırında oluşturduğunuzda, kullanmak **/ZW** bir UWP uygulaması veya Windows çalışma zamanı bileşeni oluşturmak için derleyici seçeneği. Windows çalışma zamanı meta veri (.winmd) dosyalarında tanımlanan, Windows çalışma zamanı bildirimleri erişmeye belirtin `#using` yönergesi veya **/FU** derleyici seçeneği. Bir UWP uygulaması için bir proje oluşturduğunuzda, varsayılan olarak Visual Studio bu seçenekler ayarlar ve tüm Windows çalışma zamanı kitaplıklarına başvurular ekler.  
   
@@ -42,7 +42,7 @@ Windows çalışma zamanı, yalnızca güvenilir işletim sistemi ortamında yü
 |Başvuru|Bir nesneye başvuru (`&`):<br /><br /> *T* `&` *tanımlayıcısı*|İzleme başvurusu (`%`):<br /><br /> *T* `%` *tanımlayıcısı*|Yalnızca Windows Runtime türleri izleme kullanılarak bildirilebilir değiştiricisi başvuru. Nokta kullanarak bir nesnenin üyelerine erişilir (`.`) sınıfı üye erişimi işleci.<br /><br /> İzleme başvurusu "nesnesine bir başvuru sayılan başvuru otomatik olarak var olan bir Windows çalışma zamanı." anlamına gelir. Daha kesin bir izleme başvurusu derleyici nesnenin başvuru sayısının otomatik olarak yönetmek için kod ekleyin ve başvuru sayısı sıfır olursa nesneyi silmek olduğunu bildirir.|  
 |Dinamik tür bildirimi|`new`|`ref new`|Bir Windows çalışma zamanı nesnesi ayırır ve bu nesne için bir tanıtıcı döndürür.|  
 |Nesne ömrü Yönetimi|`delete` *tanımlayıcı*<br /><br /> `delete[]`  *tanımlayıcı*|(Yok edici çağırır.)|Yaşam süresi, başvuru sayımı tarafından belirlenir. Silme çağrısı yok Edicisi çağırır, ancak kendi bellek boş değil.|  
-|Dizi bildirimi|*T tanımlayıcısı* `[]`<br /><br /> `std::array` *tanımlayıcı*|`Array<` *T* `^>^` *tanımlayıcı* `(` *boyutu* `)`<br /><br /> veya<br /><br /> `WriteOnlyArray<` *T* `^>` *tanımlayıcı* `(` *boyutu*  `)`|T türünde bir tek boyutlu değiştirilebilir veya salt yazılır diziyi bildirir ^. Kendisi ayrıca tanıtıcı nesnesi değiştirici kullanılarak bildirilmelidir başvuru sayılan bir nesne dizisidir.<br /><br /> (Dizi bildirimleri olan bir şablon başlığı sınıfı kullanın `Platform` ad.)|  
+|Dizi bildirimi|*T tanımlayıcısı* `[]`<br /><br /> `std::array` *tanımlayıcı*|`Array<` *T* `^>^` *tanımlayıcı* `(` *boyutu* `)`<br /><br /> veya<br /><br /> `WriteOnlyArray<` *T* `^>` *tanımlayıcı* `(` *boyutu* `)`|T türünde bir tek boyutlu değiştirilebilir veya salt yazılır diziyi bildirir ^. Kendisi ayrıca tanıtıcı nesnesi değiştirici kullanılarak bildirilmelidir başvuru sayılan bir nesne dizisidir.<br /><br /> (Dizi bildirimleri olan bir şablon başlığı sınıfı kullanın `Platform` ad.)|  
 |Sınıf bildirimi|`class`  *tanımlayıcı* `{}`<br /><br /> `struct`  *Tanımlayıcı* `{}`|`ref class`  *Tanımlayıcı* `{}`<br /><br /> `ref struct`  *Tanımlayıcı* `{}`|Varsayılan özel erişilebilirliği olan bir çalışma zamanı sınıf bildirir.<br /><br /> Genel erişilebilirlik varsayılan bir çalışma zamanı sınıf bildirir.|  
 |Yapı bildirimleri|`struct`  *Tanımlayıcı* `{}`<br /><br /> (diğer bir deyişle, bir düz eski veri (POD) yapı)|`value class`  *Tanımlayıcı* `{}`<br /><br /> `value struct`  *Tanımlayıcı* `{}`|Varsayılan özel erişilebilirlik sahip bir POD yapı bildirir.<br /><br /> Değer sınıfı Windows meta verileri temsil edilebilir, ancak standart bir C++ sınıfı olamaz.<br /><br /> Varsayılan Genel erişilebilirlik sahip bir POD yapı bildirir.<br /><br /> Değer yapısı Windows meta verileri temsil edilebilir, ancak standart bir C++ yapı olamaz.|  
 |Arabirim bildirimi|yalnızca saf sanal işlevler içeren, soyut sınıf.|`interface class`  *Tanımlayıcı* `{}`<br /><br /> `interface struct`  *Tanımlayıcı* `{}`|Varsayılan özel erişilebilirlik arabirimdeki bildirir.<br /><br /> Varsayılan Genel erişilebilirlik arabirimdeki bildirir.|  

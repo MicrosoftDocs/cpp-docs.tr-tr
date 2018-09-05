@@ -1,7 +1,7 @@
 ---
 title: GE işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99ef77272c6f3242c0f5359f1625496da9ba3fb0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e494e7eb36173d77a8fc0cd16015f97c4c756e34
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055784"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692354"
 ---
 # <a name="operator-ge"></a>GE işleci
-True değeri döndürür (-1) olmadığını *İfade1* büyük veya eşit *İfade2*, veya değilse false (0) döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 GE expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+(-1) true döndürür *İfade1* büyüktür veya eşittir *expression2*, ya da, değilse false (0) döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1 GE İfade2
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

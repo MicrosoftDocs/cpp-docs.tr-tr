@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67dab7c8e280f8fbbdcc66beef031d1e9430ac1f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: f3838fc2888567fa700eebd127bc7990175bdbc8
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215814"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693594"
 ---
 # <a name="tn014-custom-controls"></a>TN014: Özel Denetimler
 
@@ -122,7 +122,7 @@ En sık karşılaşılan bir kendi kendine çizim düğmesini bir bit eşlem dü
 
 Bazen, zaten var olan bir nesne işlevlerini değiştirmek isteyebilirsiniz. Önceki örneklerde, oluşturuldukları önce denetimleri özelleştirmek gereklidir. Dinamik sınıflara zaten oluşturulmuş bir denetimi özelleştirmenize olanak sağlar.
 
-Sınıflara olan değiştirmek için Windows terimi [WndProc](https://msdn.microsoft.com/94ba8ffa-3c36-46d4-ac74-9bd10b1ffd26) özelleştirilmiş pencerenin `WndProc` ve eski çağırma `WndProc` varsayılan işlevler için.
+Sınıflara olan değiştirmek için Windows terimi <xref:System.Windows.Forms.Control.WndProc%2A> özelleştirilmiş pencerenin `WndProc` ve eski çağırma `WndProc` varsayılan işlevler için.
 
 Bu C++ sınıf türetme ile karıştırılmamalıdır. Açıklama, C++ koşulları için *temel sınıfı* ve *türetilmiş sınıf* için benzer *sınıfın* ve *alt* Windows içinde nesne modeli. MFC ve Windows sınıflara sahip C++ türetme işlevsel olarak benzer dışında C++ dinamik sınıflara desteklemez.
 

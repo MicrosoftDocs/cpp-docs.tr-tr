@@ -1,7 +1,7 @@
 ---
 title: EVEN ve ALIGN yönergeleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -21,18 +21,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a43425a4038ffb140eeaa0a9d111a39fc5c11ff0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 06a1007c50e3490e5b14e4da886494557be0d37e
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057961"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688307"
 ---
 # <a name="even-and-align-directives"></a>EVEN ve ALIGN Yönergeleri
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Satır içi derleyicisi çoğu MASM yönergeleri desteklemiyor rağmen Destek `EVEN` ve **HİZALA**. Bu yönergeleri put **NOP** (işlem) belirli sınırları etiketlerine hizalamak için gerektiği şekilde bütünleştirilmiş kodu'ndaki yönergeleri. Bu yönerge getirme işlemleri daha verimli bazı işlemcileri için hale getirir.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Çoğu MASM yönergeleri satır içi derleyiciyi desteklemiyor olsa da, destek `EVEN` ve **HİZALA**. Bu yönergeler put **NOP** (işlem) belirli sınırları etiketlerine hizalamak için gerektiği şekilde bütünleştirilmiş kodu yönergeleri. Bu yönerge getirme işlemlerini daha verimli için bazı işlemciler sağlar.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

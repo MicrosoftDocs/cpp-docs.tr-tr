@@ -47,12 +47,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 3f8e1875f318b35e0b28cf1e36f926d54cab4831
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6780927732d0f555cc5778fe9564c9225a50aa80
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204134"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691813"
 ---
 # <a name="idbschemarowsetimpl-class"></a>IDBSchemaRowsetImpl Sınıfı
 Şema satır kümeleri uygulamasını sağlar.  
@@ -279,8 +279,7 @@ STDMETHOD (GetSchema s )(ULONG * pcSchemas,
  Bu işlev uygulaması kullanıcının oturumu sınıfı, eşleme bir şemaya sahip olmasını gerektirir. Şema eşleme bilgileri kullanarak, bunu ardından haritadaki şemaları için GUID'leri dizisi ile yanıt verir. Bu sağlayıcı tarafından desteklenen şema temsil eder.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [IDBSchemaRowsetImpl sınıfı üyeleri](https://msdn.microsoft.com/e74f6f82-541c-42e7-b4c6-e2d4656a0649)   
  [Şema satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md)   
  [Şema satır kümelerini destekleme](../../data/oledb/supporting-schema-rowsets.md)    
  [SCHEMA_ENTRY](../../data/oledb/schema-entry.md)    
- [UpdatePV](../../visual-cpp-samples.md)
+ [UpdatePV](https://github.com/Microsoft/VCSamples)

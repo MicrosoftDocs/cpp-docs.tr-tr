@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e941c15d734ce85513696d60da13184cfbfd2355
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6cb76b2802b1f582621e3e0bacb565a974894d75
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610059"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693351"
 ---
 # <a name="security-best-practices-for-c"></a>C++ İçin En İyi Güvenlik Uygulamaları
 
@@ -78,7 +78,8 @@ Bu makale, güvenlik araçları ve uygulamaları hakkında bilgi içerir. Bunlar
 -   Güvenlik  
   
 ## <a name="windows-application-verifier"></a>Windows Uygulama Doğrulayıcısı  
- Uygulama Doğrulayıcısı (AppVerifier) olası uygulama uyumluluğu, kararlılık ve güvenlik sorunlarını belirlemenize yardımcı olabilir.  
+ [Uygulama Doğrulayıcısı (AppVerifier)](/windows-hardware/drivers/debugger/application-verifier
+) olası uygulama uyumluluğu, kararlılık ve güvenlik sorunlarını belirlemenize yardımcı olabilir.  
   
  AppVerifier, uygulama işletim sisteminin nasıl kullandığı izler. Dosya sistemi, kayıt defteri, bellek izler ve uygulama çalıştıran ve kaynak kodu önerir API'leri ortaya çıkardığı için sorunları giderir.  
   
@@ -89,8 +90,6 @@ Bu makale, güvenlik araçları ve uygulamaları hakkında bilgi içerir. Bunlar
 -   Bir uygulama için bellekle ilgili sorunları inceleyin.  
 
 -   Bir uygulamada olası güvenlik sorunlarını belirleyin.  
-  
- AppVerifier kullanılabilir uygulama uyumluluğu araç parçasıdır [uygulama uyumluluğu](http://go.microsoft.com/fwlink/p/?linkid=91277) TechNet web sitesinde.  
   
 
 ## <a name="windows-user-accounts"></a>Windows kullanıcı hesapları  

@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a4827900f30dba168f9f5b1b6a93c2aa7e331b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e835da146cb609abc873e7e53eb617b8635af0e5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215741"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689113"
 ---
 # <a name="cbrush-class"></a>CBrush sınıfı
 Bir Windows grafik cihaz arabirimi (GDI) Fırçası kapsüller.  
@@ -313,7 +313,7 @@ BOOL CreateSysColorBrush(int nIndex);
   
 ### <a name="parameters"></a>Parametreler  
  *nIndex*  
- Renk dizini belirtir. Bu değer bir 21 pencere öğeleri boyamak için kullanılan renge karşılık gelir. Bkz: [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) değerlerin listesi için Windows SDK.  
+ Renk dizini belirtir. Bu değer bir 21 pencere öğeleri boyamak için kullanılan renge karşılık gelir. Bkz: [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) değerlerin listesi için Windows SDK.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  

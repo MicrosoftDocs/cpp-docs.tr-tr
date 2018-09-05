@@ -29,12 +29,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38ceffd8a5f01cdc97ee162cc92fce319f771dbe
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ea90d30a492fc19020a3309a994f885ab5916be2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221578"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690553"
 ---
 # <a name="errorcode-class"></a>error_code Sınıfı
 
@@ -172,7 +172,7 @@ error_code(_Enum _Errcode,
 
 İlk Oluşturucu sıfır hata kodu değeri ve bir işaretçi depolar [generic_category](../standard-library/system-error-functions.md#generic_category).
 
-İkinci oluşturucu depoları *val* hata kodu değeri ve bir işaretçi olarak [error_category](https://msdn.microsoft.com/6fe57a15-63a1-4e79-8af4-6738e43e19c8).
+İkinci oluşturucu depoları *val* hata kodu değeri ve bir işaretçi olarak [error_category](../standard-library/error-category-class.md).
 
 Üçüncü Oluşturucu depoları `(value_type)_Errcode` hata kodu değeri ve bir işaretçi olarak [generic_category](../standard-library/system-error-functions.md#generic_category).
 
@@ -238,7 +238,7 @@ bool operator!=(const error_code& right) const;
 
 ## <a name="op_lt"></a>  error_code::operator&lt;
 
-Olmadığını test eder [error_code](https://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) nesne küçüktür `error_code` nesnesi geçirildi karşılaştırma için.
+Olmadığını test eder `error_code` nesne küçüktür `error_code` nesnesi geçirildi karşılaştırma için.
 
 ```cpp
 bool operator<(const error_code& right) const;
@@ -260,7 +260,7 @@ bool operator<(const error_code& right) const;
 
 ## <a name="op_eq"></a>  error_code::operator =
 
-İçin yeni bir sabit listesi değeri atar [error_code](https://msdn.microsoft.com/09c6ef90-b6f8-430a-b584-e168716c7e31) nesne.
+İçin yeni bir sabit listesi değeri atar `error_code` nesne.
 
 ```cpp
 template <class _Enum>

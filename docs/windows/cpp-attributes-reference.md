@@ -15,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 782e0789268f55e254535434e39c3aeb9b0532cb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: afa5d7e3297cd77d1c5d8362d005bd2a48aee4d5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201934"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690203"
 ---
 # <a name="c-attributes-reference"></a>C++ Öznitelikleri Başvurusu
 
@@ -47,9 +47,3 @@ Tüm öznitelik başvurusu konulara bağlantılar sağlar.
 
 [Öznitelikli Programlama](../windows/attributed-programming-concepts.md)  
 Öznitelikleri kavramsal bir genel bakış sağlar.
-
-[Başvuru](https://msdn.microsoft.com/1ba03b5c-8229-4f63-b08c-6c12141d6ab1)  
-C ve C++ dil başvuruları, Visual C++, Visual C++ genişletilebilirlik nesne modeli ve Microsoft Macro Assembler (MASM) ile sağlanan kitaplıkları açıklayan konulara bağlantılar sağlar.
-
-[Visual C++ Örnekleri](../visual-cpp-samples.md)  
-Visual C++ kitaplıkları ve teknolojileri destekliyorsa özelliklerini gösteren örnek kodlara bağlantılar sağlar.

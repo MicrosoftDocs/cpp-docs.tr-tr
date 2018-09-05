@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0baf6eb87cd73293bc02b670e915bfd4a10cbfd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a05eddd4f0ed75db4e122b1544b0347ad922eba3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219158"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688766"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 C++, çeşitli dize ve karakter türleri destekler ve bu türlerinden her birinin değişmez değerler express için yöntemler sağlar. Kaynak kodunuzda bir karakter kümesini kullanarak, karakter ve dize değişmez değerleri içeriğini express. Evrensel karakter adları ve kaçış karakterleri yalnızca temel kaynak karakter kümesi kullanan herhangi bir dize express sağlar. Ham dize değişmez değeri kaçış karakterleri kullanmaktan kaçının sağlar ve her tür dize değişmez değerleri ifade etmek için kullanılabilir. Ek yapılma veya dönüştürme adımları yapmak zorunda kalmadan std::string değişmez değerleri daha da oluşturabilirsiniz.  
@@ -248,7 +248,7 @@ auto s4 = U"hello"; // const char32_t*
 ```  
   
 ### <a name="raw-string-literals-c11"></a>Ham dize değişmez değerleri (C ++ 11)  
- Ham dize sabit değeri bir null ile sonlandırılmış bir dizidir — herhangi bir karakter türü — çift tırnak işareti ("), ters eğik çizgi de dahil olmak üzere tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Ham dize değişmez değerleri, karakter sınıfları kullanan normal ifadelerde ve HTML dizelerinde ve XML dizelerinde sık sık kullanılır. Örnekler için aşağıdaki makaleye bakın: [C ++ 11 Bjarne Stroustrup'un SSS'leri](http://go.microsoft.com/fwlink/p/?linkid=401172).  
+ Ham dize sabit değeri bir null ile sonlandırılmış bir dizidir — herhangi bir karakter türü — çift tırnak işareti ("), ters eğik çizgi de dahil olmak üzere tüm grafik karakterlerini içeren (\\), veya yeni satır karakteri. Ham dize değişmez değerleri, karakter sınıfları kullanan normal ifadelerde ve HTML dizelerinde ve XML dizelerinde sık sık kullanılır. Örnekler için aşağıdaki makaleye bakın: [C ++ 11 Bjarne Stroustrup'un SSS'leri](http://www.stroustrup.com/C++11FAQ.html).  
   
 ```cpp  
 // represents the string: An unescaped \ character  

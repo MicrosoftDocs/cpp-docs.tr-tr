@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: a26394a906f40d6dc194118bb312cfe1a0ce834e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6719d7b104c5dd520a8c4e8a027ea47bd76a95bc
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219890"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689516"
 ---
 # <a name="how-to-marshal-structures-using-pinvoke"></a>Nasıl yapılır: PInvoke Kullanarak Yapıları Sıralama
 Bu belgede, C stili yapıları tarafından yönetilen işlevlerden P/Invoke kullanılarak çağrılabilir kabul nasıl yerel işlevleri açıklanmaktadır. C++ birlikte çalışabilirlik özellikleri yerine kullanmanızı öneririz ancak P/Invoke küçük derleme zamanı hata raporlama, P/Invoke sağladığı için tür açısından güvenli değildir ve yönetilmeyen API'ın bir DLL olarak paketlenmesi ve kaynak kodu değilse, uygulama can sıkıcı olabilir P/Invoke tek seçenek kullanılabilir. Aksi takdirde, aşağıdaki belgelere bakın:  
@@ -34,7 +34,7 @@ Bu belgede, C stili yapıları tarafından yönetilen işlevlerden P/Invoke kull
   
  Varsayılan olarak, yerel ve yönetilen yapıları farklı bellekte, bu nedenle başarıyla veri bütünlüğünü korumak için ek adımlar gerektirir yönetilen veya yönetilmeyen sınırında yapıları geçirme düzenlenmiştir.  
   
- Bu belgede, yerel yapılar ve elde edilen yapıların yönetilmeyen işlevlerle nasıl geçirilebilir'sının yönetilen eşdeğerlerini tanımlamak için gereken adımlar açıklanmaktadır. Bu belge, basit varsayar yapıları — bu dizeler veya işaretçiler içermeyen — kullanılır. Blittable olmayan birlikte çalışabilirlik hakkında daha fazla bilgi için bkz. [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md). P/Invoke dönüş değeri olarak kopyalanamaz türler sahip olamaz. Blok halinde kopyalanabilir türler, yönetilen ve yönetilmeyen kod içinde aynı gösterimi sahip. Daha fazla bilgi için [blok halinde kopyalanabilir ve örnekteki](https://msdn.microsoft.com/Library/d03b050e-2916-49a0-99ba-f19316e5c1b3).  
+ Bu belgede, yerel yapılar ve elde edilen yapıların yönetilmeyen işlevlerle nasıl geçirilebilir'sının yönetilen eşdeğerlerini tanımlamak için gereken adımlar açıklanmaktadır. Bu belge, basit varsayar yapıları — bu dizeler veya işaretçiler içermeyen — kullanılır. Blittable olmayan birlikte çalışabilirlik hakkında daha fazla bilgi için bkz. [C++ Çalışabilirliği kullanma (örtük PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md). P/Invoke dönüş değeri olarak kopyalanamaz türler sahip olamaz. Blok halinde kopyalanabilir türler, yönetilen ve yönetilmeyen kod içinde aynı gösterimi sahip. Daha fazla bilgi için [blok halinde kopyalanabilir ve örnekteki](/dotnet/framework/interop/blittable-and-non-blittable-types).  
   
  Basit hazırlama, yönetilen veya yönetilmeyen sınırı arasında blittable yapıları ilk gerektirir neden yönetilen sürümleri her bir yerel yapısının tanımlanması. Bu yapılar, herhangi bir yasal adı olabilir; Yerel ve yönetilen sürümü kendi veri düzeni dışında iki yapı arasında bir ilişki yoktur. Bu nedenle, yönetilen sürümün alanları aynı boyut ve yerel sürümle aynı sırayla içermesi gereklidir. (Yönetilen ve yerel sürüm yapısı için uyumsuzluk çalışma zamanına kadar görünür olmaz eşdeğer emin olunması için bir mekanizma yoktur. Bu iki yapıları aynı veri yerleşimi olmasını sağlamak için programcının sorumluluğundadır.)  
   

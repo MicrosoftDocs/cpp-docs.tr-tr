@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bec76b407221fb9029662ba982a10edc4ca9c77
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3a8c5affeaee73be7dd464ea44ea62db35257f7b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604926"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689762"
 ---
 # <a name="walkthrough-debugging-a-c-amp-application"></a>İzlenecek yol: C++ AMP Uygulamasında Hata Ayıklama
 Bu konuda, grafik işlemci birimi (GPU) yararlanmak için C++ Accelerated Massive Parallelism (C++ AMP) kullanan bir uygulamanın hatalarını ayıklamak gösterilmektedir. Bu, büyük bir tamsayı dizisi toplayan bir paralel azaltma program kullanır. Bu izlenecek yol aşağıdaki görevleri gösterir:  
@@ -398,4 +398,4 @@ Kullanarak imlecin bulunduğu satıra verilen döşemedeki tüm iş parçacıkla
 [GPU kodunda hata ayıklama](/visualstudio/debugger/debugging-gpu-code)   
 [Nasıl yapılır: GPU iş parçacıkları penceresini kullanma](/visualstudio/debugger/how-to-use-the-gpu-threads-window)   
 [Nasıl yapılır: paralel İzleme penceresini kullanma](/visualstudio/debugger/how-to-use-the-parallel-watch-window)   
-[Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](http://go.microsoft.com/fwlink/p/?linkid=253987&clcid=0x409)
+[Eşzamanlılık görselleştiricisi ile C++ AMP kodunu analiz etme](https://blogs.msdn.microsoft.com/nativeconcurrency/2012/03/09/analyzing-c-amp-code-with-the-concurrency-visualizer/)

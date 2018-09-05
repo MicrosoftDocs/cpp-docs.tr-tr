@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2069 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d63d942c148b2255275ddcba21b2a3e3f616d6a
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: dbf2f4f4723d9a83d89a343ebc501db07dd23db9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054735"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692263"
 ---
 # <a name="ml-nonfatal-error-a2069"></a>ML Önemli Olmayan Hatası A2069
-**Bu yönerge için izin verilen hiçbir işleci**  
-  
- Bir veya daha fazla işlenen hiçbir işlenen alır bir yönerge ile belirtildi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**Bu yönerge için izin verilen hiçbir işleci**
+
+Bir veya daha fazla işlenen hiçbir işlenen alır bir yönerge ile belirtildi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

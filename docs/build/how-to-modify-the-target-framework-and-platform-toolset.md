@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c53960b7ef972d605902a260de9e7ef344a31274
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eef4c0e7e32b85e26fbdc6adb7a2ebd26850b2ae
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466178"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691741"
 ---
 # <a name="how-to-modify-the-target-framework-and-platform-toolset"></a>Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme
 Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedeflemek için ve farklı platform araç takımları kullanacak şekilde değiştirebilirsiniz. Varsayılan olarak, proje sistemi .NET Framework sürümünü ve projeyi oluşturmak için kullandığınız Visual Studio sürümüne karşılık gelen araç kümesi sürümünü kullanır. Proje özelliklerini değiştirerek hedef platform araç takımını değiştirebilirsiniz. Proje (.vcxproj) dosyasını değiştirerek hedef Framework'ü değiştirebilirsiniz. Ayrı bir kod tabanı her derleme hedefi korumak zorunda değildir.  
@@ -34,7 +34,7 @@ Visual C++ proje ayarları .NET Framework'ün farklı sürümlerini hedeflemek i
 > [!NOTE]
 >  Hedef platform araç takımını değiştirmek için Visual Studio veya Windows Platform SDK ilişkili sürümü olması gerekir. Örneğin, Itanium platformunu hedeflemek için **Windows7.1SDK** platform araç olmalıdır [Windows 7 için Microsoft Windows SDK ve .NET Framework 4 SP1](http://www.microsoft.com/download/details.aspx?id=8279) yüklü; ancak kullanabilirsiniz doğru Framework sürümünü ve platform araç kümesini hedeflemek koşuluyla geliştirme çalışmalarınızı yapmak için Visual Studio'nun uyumlu başka bir sürümü.  
   
- Özel platform araç takımı oluşturarak hedef platformu genişletebilirsiniz. Daha fazla bilgi için [yerel C++ çoklu sürüm desteğinin](http://go.microsoft.com/fwlink/p/?linkid=196619) Visual C++ blogundaki.  
+ Özel platform araç takımı oluşturarak hedef platformu genişletebilirsiniz. Daha fazla bilgi için [yerel C++ çoklu sürüm desteğinin](https://blogs.msdn.microsoft.com/vcblog/2009/12/08/c-native-multi-targeting/) Visual C++ blogundaki.  
   
 ### <a name="to-change-the-target-framework"></a>Hedef Framework'ü değiştirmek için  
   

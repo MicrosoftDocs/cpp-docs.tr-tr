@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8385320b51efedd214424385babc5f03d5559873
-ms.sourcegitcommit: 220fd4fda829f810e15fc1a1d98ab43c46201b47
+ms.openlocfilehash: 23b830ca8a7fb7f2e799cae17209a9fa089d1881
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43352722"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690881"
 ---
 # <a name="cmfcbutton-class"></a>CMFCButton sınıfı
 `CMFCButton` Sınıfı işlevsellik ekler [CButton](../../mfc/reference/cbutton-class.md) düğme metnini hizalama, düğme metni ve görüntüyü birleştirme, imleç seçme ve araç ipuçları belirleme gibi sınıf.  
@@ -137,7 +137,7 @@ class CMFCButton : public CButton
 |[CMFCButton::IsRadioButton](#isradiobutton)|Bir düğmeye bir radyo düğmesi olup olmadığını belirtir.|  
 |[CMFCButton::IsWindowsThemingEnabled](#iswindowsthemingenabled)|Düğme kenarlığın stili geçerli Windows teması için karşılık gelen olup olmadığını gösterir.|  
 |`CMFCButton::OnDrawParentBackground`|Belirtilen alanda bir düğmenin üst arka planı çizer. (Geçersiz kılmaları [AFX_GLOBAL_DATA::DrawParentBackground](../../mfc/reference/afx-global-data-structure.md)|  
-|`CMFCButton::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|`CMFCButton::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCButton::SetAutorepeatMode](#setautorepeatmode)|Bir düğme otomatik yineleme modunu ayarlar.|  
 |[CMFCButton::SetCheckedImage](#setcheckedimage)|İşaretli bir düğme için resim ayarlar.|  
 |[CMFCButton::SetFaceColor](#setfacecolor)|Düğme metnini arka plan rengini ayarlar.|  

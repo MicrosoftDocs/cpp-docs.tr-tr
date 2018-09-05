@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42588b844158ebe995a9d07dc206679580db12fe
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 90a9cdaf5d0b99e2ad746655f67e3ab9a68aad1f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201174"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688405"
 ---
 # <a name="walkthrough-connecting-using-tasks-and-xml-http-requests"></a>İzlenecek yol: Görevleri ve XML HTTP İsteklerini Kullanarak Bağlanma
 Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2) ve [Ixmlhttprequest2callback](/previous-versions/windows/desktop/api/msxml6/nn-msxml6-ixmlhttprequest2callback) arabirimleri birlikte bir web hizmeti, bir evrensel Windows Platformu (UWP HTTP GET ve POST istekleri göndermek için görevler ) uygulama. Birleştirme tarafından `IXMLHTTPRequest2` görevleri ile birlikte diğer görevlerle ölçeklemesini kod yazabilirsiniz. Örneğin, indirme görev görevleri zinciri bir parçası olarak kullanabilirsiniz. İş iptal edildiğinde indirme görev de yanıt verebilirsiniz.  
@@ -33,7 +33,7 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-vers
   
  Bu belge ilk nasıl oluşturulacağını gösterir `HttpRequest` ve bunun destekleyici sınıfları. Ardından, C++ ve XAML kullanan bir UWP uygulamasında bu sınıfının nasıl kullanılacağını gösterir.  
   
- Kullanan daha eksiksiz bir örnek `HttpReader` sınıfı bu belgede açıklanan bkz [geliştirme, Bing Maps Trip Optimizer, JavaScript ve C++ Windows Store uygulamasında](https://msdn.microsoft.com/library/974cf025-de1a-4299-b7dd-c6c7bf0e5d30). Kullanan başka bir örnek `IXMLHTTPRequest2` ancak olmayan görevleri kullanın, bkz: [hızlı başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](https://msdn.microsoft.com/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35).  
+Kullanan bir örnek için `IXMLHTTPRequest2` ancak olmayan görevleri kullanın, bkz: [hızlı başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](/previous-versions/windows/apps/hh770550\(v=win.10\)).  
   
 > [!TIP]
 >  `IXMLHTTPRequest2` ve `IXMLHTTPRequest2Callback` bir UWP uygulamasında kullanmak için önerdiğimiz arabirimdir. Bu örnek masaüstü uygulamasını kullanmak için de uyarlayabilirsiniz.  
@@ -121,6 +121,6 @@ Bu örnek nasıl kullanılacağını gösterir [Ixmlhttprequest2](/previous-vers
  [Ppl'de iptal](cancellation-in-the-ppl.md)   
  [C++ zaman uyumsuz programlama](/windows/uwp/threading-async/asynchronous-programming-in-cpp-universal-windows-platform-apps)   
  [UWP uygulamaları için C++ uygulamasında zaman uyumsuz işlemler oluşturma](../../parallel/concrt/creating-asynchronous-operations-in-cpp-for-windows-store-apps.md)   
- [Hızlı Başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](https://msdn.microsoft.com/cc7aed53-b2c5-4d83-b85d-cff2f5ba7b35)   
+ [Hızlı Başlangıç: XML HTTP isteğini (Ixmlhttprequest2) kullanarak bağlanma](/previous-versions/windows/apps/hh770550\(v=win.10\))   
  [task sınıfı (eşzamanlılık çalışma zamanı)](../../parallel/concrt/reference/task-class.md)   
  [task_completion_event Sınıfı](../../parallel/concrt/reference/task-completion-event-class.md)

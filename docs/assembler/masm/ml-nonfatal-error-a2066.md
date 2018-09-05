@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2066 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92cc0daf183f617767ff5ff119c5e95b8f34cd51
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8cf5cbe7d5c77da7f129cbc40ffa97f4051afca6
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054269"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690258"
 ---
 # <a name="ml-nonfatal-error-a2066"></a>ML Önemli Olmayan Hatası A2066
-**uyumsuz CPU modu ve kesim boyutu**  
-  
- Sahip bir segment açmak için bir girişimde bulunuldu bir **USE16**, **USE32**, veya **DÜZ** belirtilen CPU ile ya da 32-bit sırada bir 16 bit CPU değiştirmek için uyumlu değildi özniteliği kesimi.  
-  
- **USE32** ve **DÜZ** öznitelikleri gerekir öncesinde.386 veya daha fazla işlemci yönergesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**uyumsuz CPU modu ve kesim boyutu**
+
+Bir segmenti açmak için bir girişimde bulunuldu bir **USE16**, **USE32**, veya **DÜZ** belirtilen CPU ile veya bir 16-bit CPU 32-bit sırada değiştirmek için uyumlu değil öznitelik kesimi.
+
+**USE32** ve **DÜZ** öznitelikleri gerekir öncesinde.386 ya da daha fazla işlemci yönergesi.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

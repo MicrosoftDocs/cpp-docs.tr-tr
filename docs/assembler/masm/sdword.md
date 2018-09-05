@@ -1,7 +1,7 @@
 ---
 title: SDWORD | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0435692996cc2189bcf30ab6ff10fc9ddbc0b271
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c0873a57bd9d741c2606cb0735c0d632667bae05
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32058039"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693279"
 ---
 # <a name="sdword"></a>SDWORD
-Ayırır ve isteğe bağlı olarak depolama imzalı bir çift sözcük (4 bayt) her biri için başlatır `initializer`. Tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-name SDWORD initializer [[, initializer]]...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler başvurusu](../../assembler/masm/directives-reference.md)   
- [DWORD](../../assembler/masm/dword.md)   
- [DD](../../assembler/masm/dd.md)
+
+Ayırır ve isteğe bağlı olarak depolama imzalı bir çift sözcük (4 bayt) her biri için başlatır `initializer`. Bir tür tanımlayıcısı da kullanılabilir herhangi bir yasal türüdür.
+
+## <a name="syntax"></a>Sözdizimi
+
+> adı SDWORD Başlatıcı [[, başlatıcı]]...
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
+[DWORD](../../assembler/masm/dword.md)<br/>
+[DD](../../assembler/masm/dd.md)<br/>

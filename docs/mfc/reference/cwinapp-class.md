@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58509ec4f6a3773478e1bc544f28baf92d7e97b7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c940ec56b0f522e90410b786d595f4cbf929ed89
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206898"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688551"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -270,7 +270,7 @@ class CWinApp : public CWinThread
 |[CWinApp::OnIdle](#onidle)|Uygulamaya özgü boşta kalma süresi işleme gerçekleştirmek için geçersiz kılın.|
 |[CWinApp::OpenDocumentFile](#opendocumentfile)|Bir dosyadan bir belgeyi açmak için framework tarafından çağırılır.|
 |[CWinApp::ParseCommandLine](#parsecommandline)|Bağımsız parametreleri ve komut satırı bayrakları ayrıştırır.|
-|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|
+|[CWinApp::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|
 |[CWinApp::ProcessMessageFilter](#processmessagefilter)|Uygulamaya ulaşmadan önce belirli iletileri kesintiye uğratır.|
 |[CWinApp::ProcessShellCommand](#processshellcommand)|Komut satırı bağımsız değişkenleri ve bayrakları işler.|
 |[CWinApp::ProcessWndProcException](#processwndprocexception)|Uygulamanın iletiyi ve komut işleyicileri tarafından oluşturulan tüm işlenmeyen özel durumları yakalar.|
@@ -1794,7 +1794,7 @@ Komut satırı bayrakları açıklaması için bkz: [CCommandLineInfo::m_nShellC
 
 ##  <a name="pretranslatemessage"></a>  CWinApp::PreTranslateMessage
 
-Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) kısayol tuşu varsayılan uygulama gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.
+Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) kısayol tuşu varsayılan uygulama gerçekleştirir çağırmanız gerekir böylece çeviri `CWinApp::PreTranslateMessage` geçersiz kılınan sürümünüzde üye işlevi.
 
 ```
 virtual BOOL PreTranslateMessage(MSG* pMsg);

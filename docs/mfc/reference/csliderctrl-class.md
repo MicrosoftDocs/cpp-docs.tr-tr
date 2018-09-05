@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acf85412f6fde233d592f545b6611053a2f80e01
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6bd20852f1dfd278d4ae58cc6c67d6047579cd08
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215363"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693198"
 ---
 # <a name="csliderctrl-class"></a>CSliderCtrl sınıfı
 Windows ortak kaydırıcı denetimi işlevlerini sağlar.  
@@ -241,7 +241,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Kaydırıcı denetiminin stilini belirtir. Herhangi bir birleşimini uygulamak [kaydırıcı denetim stilleri](/windows/desktop/Controls/trackbar-control-styles)denetlemek için Windows SDK içinde açıklandığı gibi.  

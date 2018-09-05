@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97e08ca5e8fcf78215edd80ae053c5576b6bc95f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a9e4d2bc62ffadb59565ba64e28311cd1283cb5d
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207484"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691442"
 ---
 # <a name="cmfcpropertysheet-class"></a>CMFCPropertySheet sınıfı
 `CMFCPropertySheet` Sınıfı, burada her bir özellik sayfası belirtilen bir sayfa sekmesi, araç çubuğu düğmesi, ağaç denetimi düğümü veya bir liste öğesi bir özellik sayfasını destekler.  
@@ -93,7 +93,7 @@ class CMFCPropertySheet : public CPropertySheet
 |[CMFCPropertySheet::OnDrawPageHeader](#ondrawpageheader)|Özel özellik sayfa üstbilgisi çizmek için framework tarafından çağırılır.|  
 |`CMFCPropertySheet::OnInitDialog`|İşleme [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) ileti. (Geçersiz kılmaları [CPropertySheet::OnInitDialog](../../mfc/reference/cpropertysheet-class.md#oninitdialog).)|  
 |[CMFCPropertySheet::OnRemoveTreePage](#onremovetreepage)|Özellik sayfası bir ağaç denetiminden kaldırmak için framework tarafından çağırılır.|  
-|`CMFCPropertySheet::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları `CPropertySheet::PreTranslateMessage`.)|  
+|`CMFCPropertySheet::PreTranslateMessage`|Pencere iletileri için dağıtılmadan önce çevirir [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları `CPropertySheet::PreTranslateMessage`.)|  
 |[CMFCPropertySheet::RemoveCategory](#removecategory)|Bir düğüm ağaç denetiminden kaldırır.|  
 |[CMFCPropertySheet::RemovePage](#removepage)|Özellik sayfası özellik sayfası'ndan kaldırır.|  
 |[CMFCPropertySheet::SetIconsList](#seticonslist)|Outlook bölmesinin Gezinti denetimde kullanılan görüntülerin listesini belirtir.|  

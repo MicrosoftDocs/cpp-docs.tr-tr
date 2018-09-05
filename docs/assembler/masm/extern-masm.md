@@ -1,7 +1,7 @@
 ---
 title: EXTERN (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7528ea78270e4976ed3b926e83fe4f9977148498
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 0a9008e8c1153c0a9b06530b14e661436f7e62a9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054035"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693676"
 ---
 # <a name="extern-masm"></a>EXTERN (MASM)
-Bir veya daha fazla dış değişkenler, etiketler veya adlı simgelerini tanımlar *adı* türü olan `type`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   EXTERN [[langtype]] name [[(altid)]] :  
-type [[, [[langtype]] name [[(altid)]] :type]]...  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `type` Olabilir [ABS](../../assembler/masm/operator-abs.md), hangi içeri aktarmalar *adı* bir sabit olarak. Aynı [EXTRN](../../assembler/masm/extrn.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bir veya daha fazla dış değişkenlerin, etiketler veya adlı sembolleri tanımlar *adı* türü olan *türü*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> EXTERN [[*langtype*]] *adı* [[(*altid*)]]: *türü* [[, [[*langtype*]]  *adı* [[(*altid*)]]: *türü*]]...
+
+## <a name="remarks"></a>Açıklamalar
+
+*Türü* olabilir [ABS](../../assembler/masm/operator-abs.md), hangi içeri aktarmalar *adı* bir sabit olarak. Aynı [EXTRN](../../assembler/masm/extrn.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

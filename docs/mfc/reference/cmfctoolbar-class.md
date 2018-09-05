@@ -321,12 +321,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a510d163075ccefbc61364cd7efa4003dfd0b8aa
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 43eb3f239f50b59245714069c70655a997882c64
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208564"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689238"
 ---
 # <a name="cmfctoolbar-class"></a>CMFCToolBar sınıfı
 `CMFCToolBar` Sınıfına benzer [CToolBar sınıfı](../../mfc/reference/ctoolbar-class.md), ancak kullanıcı arabirimi özellikleri için ek destek sağlar. Bunlar düz araç çubuklarını, sık erişimli görüntüleri, büyük simgeleri, sayfa düğmelerini, kilitli araç çubuklarını, çubuk barınağı denetimleri, resim altında metinleri, arka plan görüntüleri, Resimli araç çubuklarını içerir ve sekmeli araç çubuklarını. `CMFCToolBar` Sınıfı ayrıca araç çubuğu kullanıcı tarafından özelleştirilmesi için yerleşik destek içerir ve menüler, sürükle ve bırak arasında araç çubukları ve menüler, birleşik giriş kutusu düğmeleri, düzenleme kutusu düğmeleri, renk seçiciler ve toplama düğmelerinin.
@@ -2222,7 +2222,7 @@ BOOL IsOneRowWithSibling();
  Aynı satırda yerleştirilmiş araç ve kendi eşdüzey TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- [CMFCCustomizeButton::CreatePopupMenu](https://msdn.microsoft.com/e501083e-f78e-4d8d-900c-40bd6e2bb7f8) yöntemini nasıl gösterileceğini belirlemek için bu yöntemi çağıran **Özelleştir** açılır menü. Bu yöntem TRUE döndürürse, framework görüntüler **tek satırda düğme Göster** düğmesi. Aksi takdirde, framework görüntüler **iki satırda düğme Göster** düğmesi.  
+ [CMFCCustomizeButton::CreatePopupMenu](internal-classes.md) yöntemini nasıl gösterileceğini belirlemek için bu yöntemi çağıran **Özelleştir** açılır menü. Bu yöntem TRUE döndürürse, framework görüntüler **tek satırda düğme Göster** düğmesi. Aksi takdirde, framework görüntüler **iki satırda düğme Göster** düğmesi.  
   
  Genellikle bu yöntemi kullanın gerekmez. Etkinleştirmek için **tek satırda düğme Göster** veya **iki satırda düğme Göster** düğmeleri, çağrı [CMFCToolBar::SetSiblingToolBar](#setsiblingtoolbar).  
   

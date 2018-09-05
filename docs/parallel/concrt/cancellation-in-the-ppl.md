@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd12bff6638ef86205b1037a8a7c7e348767ae9a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 287e540f73b202229c0355aec55aa0d8f5e0421f
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221761"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690455"
 ---
 # <a name="cancellation-in-the-ppl"></a>PPL'de İptal
 Bu belge, paralel Desen kitaplığı (PPL), paralel işi iptal etmek nasıl ve ne zaman paralel işi iptal edildi belirleme iptal rolünü açıklar.  
@@ -150,7 +150,7 @@ Bu belge, paralel Desen kitaplığı (PPL), paralel işi iptal etmek nasıl ve n
   
 #### <a name="cancellation-tokens-and-task-composition"></a>İptal Belirteçleri ve Görev Oluşturma  
 
- [Eşzamanlılık:: HYPERLINK "https://msdn.microsoft.com/library/system.threading.tasks.task.whenall(v=VS.110).aspx" when_all](reference/concurrency-namespace-functions.md#when_all) ve [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) işlevleri, genel desenleri uygulamak için birden çok görevi oluşturan yardımcı olabilir. Bu bölümde, bu işlevler iptal belirteçleri ile nasıl çalıştığı açıklanmaktadır.  
+ [Concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) ve [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) işlevleri, genel desenleri uygulamak için birden çok görevi oluşturan yardımcı olabilir. Bu bölümde, bu işlevler iptal belirteçleri ile nasıl çalıştığı açıklanmaktadır.  
   
  Bir iptal belirteci ya da sağladığınız ne zaman `when_all` ve `when_any` işlevi yalnızca bu iptal belirteci iptal edildiğinde ya da katılımcıdan biri görevleri iptal edilmiş duruma biter ya da bir özel durum oluşturur iptal işlev.  
   

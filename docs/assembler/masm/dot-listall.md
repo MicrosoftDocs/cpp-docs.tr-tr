@@ -1,7 +1,7 @@
 ---
 title: . LISTALL | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,26 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 525f7af2b4b0fe7dce2e4adacfa8b01f862c46bc
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: e5fa0f90abeaae6b0b24ec780de7108bec58dd66
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057296"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691181"
 ---
 # <a name="listall"></a>.LISTALL
-Tüm deyimleri listesini başlatır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.LISTALL  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Birleşimi eşdeğer [. Liste](../../assembler/masm/dot-list.md), [. LISTIF](../../assembler/masm/dot-listif.md), ve [. LISTMACROALL](../../assembler/masm/dot-listmacroall.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Tüm bilgilerinin listelemeye başlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .LISTALL
+
+## <a name="remarks"></a>Açıklamalar
+
+Birleşimi eşdeğer [. Liste](../../assembler/masm/dot-list.md), [. LISTIF](../../assembler/masm/dot-listif.md), ve [. LISTMACROALL](../../assembler/masm/dot-listmacroall.md).
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

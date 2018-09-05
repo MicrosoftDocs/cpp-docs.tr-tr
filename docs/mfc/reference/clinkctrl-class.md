@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 422326f03674c541c4fdc45529bee45bf0ff5df6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a167b228b054a24a812ce5099f396521adda0d08
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201010"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690427"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 Windows SysLink denetimi işlevlerini sağlar.  
@@ -189,7 +189,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
  İşaretli görüntülenecek metni içeren sıfır ile sonlandırılmış bir dize işaretçisi. Daha fazla bilgi için ' % s'bölümüne "Biçimlendirme ve bağlantı erişim" konusunda bakın [SysLink denetimleri genel bakış](/windows/desktop/Controls/syslink-overview).  
   
  *dwExStyle*  
- Genişletilmiş bağlantı denetiminin stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Genişletilmiş bağlantı denetiminin stilini belirtir. Genişletilmiş Windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Bağlantı denetiminin stilini belirtir. Denetim stilleri herhangi bir bileşimini uygulayın. Daha fazla bilgi için [ortak denetim stilleri](/windows/desktop/Controls/common-control-styles) Windows SDK.  

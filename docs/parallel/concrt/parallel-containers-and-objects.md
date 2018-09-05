@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8256a6d49166b5a002a400892f0808706c66eba9
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 0e0bade8cc233b438f98c3b73b04bf644bb37cbf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212468"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692295"
 ---
 # <a name="parallel-containers-and-objects"></a>Paralel Kapsayıcılar ve Nesneler
 Paralel Desen kitaplığı (PPL), çeşitli kapsayıcılar ve öğeleri için iş parçacığı açısından güvenli erişim sağlayan nesneleri içerir.  
@@ -186,14 +186,14 @@ Paralel Desen kitaplığı (PPL), çeşitli kapsayıcılar ve öğeleri için i�
   
 |İşleç|Açıklama|  
 |--------------|-----------------|  
-|[operator ++](https://msdn.microsoft.com/4cfdd07e-927a-42f8-aaa0-d6881687f413)|Sıradaki sonraki öğeyi ilerler. Bu işleç, hem artırma öncesi ve artırma sonrası semantiği sağlamak için aşırı yüklendi.|  
-|[operator *](https://msdn.microsoft.com/a0e671fc-76e6-4fb4-b95c-ced4dd2b2017)|Geçerli öğeye bir başvuru alır.|  
-|[-> işleci](https://msdn.microsoft.com/41fa393d-ae1e-4a38-bb4b-19e8df709ca9)|Geçerli öğeye bir işaretçi alır.|  
+|`operator++`|Sıradaki sonraki öğeyi ilerler. Bu işleç, hem artırma öncesi ve artırma sonrası semantiği sağlamak için aşırı yüklendi.|  
+|`operator*`|Geçerli öğeye bir başvuru alır.|  
+|`operator->`|Geçerli öğeye bir işaretçi alır.|  
   
  [[Üst](#top)]  
   
 ##  <a name="unordered_map"></a> concurrent_unordered_map sınıfı  
- [HYPERLINK "file:///C:\\\Users\\\thompet\\\AppData\\\Local\\\Temp\\\DxEditor\\\DduePreview\\\Default \\\798d7037-df37-4310-858b-6f590bbf6ebf\\\HTM\\\html\\\a217b4ac-af2b-4d41-94eb-09a75ee28622 "concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) sınıfı, bir olduğu gibi ilişkilendirilebilir bir kapsayıcı sınıfı [std::unordered_map](../../standard-library/unordered-map-class.md) sınıfı, bir türdeki öğelerin değişen uzunluktaki dizisini denetleyen [std::pair\<const Key, Ty >](../../standard-library/pair-structure.md). Sırasız bir haritasını, bir anahtar ve değer çifti ekleyin veya anahtara göre bir değeri aramak bir sözlük olarak düşünün. Birden çok iş parçacığı veya eşzamanlı olarak paylaşılan kapsayıcısına erişmek, içine eklemek veya güncelleştirmek için olan görevler varsa, bu sınıf kullanışlıdır.  
+ [Concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) olduğu gibi bir ilişkilendirilebilir kapsayıcıdır sınıfı [std::unordered_map](../../standard-library/unordered-map-class.md) sınıfı, bir türdekiöğelerindeğişenuzunluktakidizisinidenetleyen[std::pair\<const Key, Ty >](../../standard-library/pair-structure.md). Sırasız bir haritasını, bir anahtar ve değer çifti ekleyin veya anahtara göre bir değeri aramak bir sözlük olarak düşünün. Birden çok iş parçacığı veya eşzamanlı olarak paylaşılan kapsayıcısına erişmek, içine eklemek veya güncelleştirmek için olan görevler varsa, bu sınıf kullanışlıdır.  
   
  Aşağıdaki örnek kullanmak için temel yapısını gösterir `concurrent_unordered_map`. Bu örnekte karakter tuşları ['a', ' i'] aralığında ekler. İşlemlerin sırası saptanmamış olduğundan, her anahtar son değeri de belirlenmemiş. Ancak, paralel olarak eklemelerini gerçekleştirmek güvenlidir.  
   

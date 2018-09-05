@@ -20,18 +20,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f84f343a5a742e37deb776f20c9038ea7f90576e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 194f2b4f2e6659412c9c2b5f688e0b73eea3bba5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198441"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692034"
 ---
 # <a name="how-to-add-mfc-support-to-resource-script-files"></a>Nasıl Yapılır: Kaynak Betik Dosyalarına MFC Desteği Ekleme
 
 Normalde, Windows kullanmaya yönelik bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation'ın temel özelliklerini içeren temel bir kümesi (kaynak betiği (.rc) dosyası da dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). Ancak, MFC'ye dayalı olmayan bir Windows uygulaması için bir .rc dosyasını düzenliyorsanız MFC çerçevesine özgü aşağıdaki özellikler kullanılabilir değildir:
 
-- MFC kodu sihirbazları (önceki adı "[MFC ClassWizard](https://msdn.microsoft.com/98dc2434-ba93-4e0b-b084-1a4bc26cdf1e)")
+- MFC kodu sihirbazları
 
 - Menü komut istemi dizeleri
 

@@ -1,7 +1,7 @@
 ---
 title: . EĞER | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,31 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ab0e2fc510b4be8c5a9a8c0c3d0fb1c4347f0b9
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: f7bd5ba5821b4dcfb2d088e31816f50540445018
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053122"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691550"
 ---
 # <a name="if"></a>.IF
-Testleri kod oluşturur `condition1` (örneğin, AX > 7) ve yürütür *deyimleri* bu koşulun doğru olması durumunda.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   .IF condition1   
-statements  
-[[.ELSEIF condition2   
-   statements]]  
-[[.ELSE  
-   statements]]  
-.ENDIF  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa bir [. ELSE](../../assembler/masm/dot-else.md) özgün koşul yanlış ise, aşağıdaki şekilde, kendi deyimleri çalıştırılır. Çalışma zamanında koşul değerlendirildiğini unutmayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Testleri kod oluşturur `condition1` (örneğin, > 7 AX) ve yürüten *deyimleri* bu koşulun doğru olması durumunda.
+
+## <a name="syntax"></a>Sözdizimi
+
+> . Eğer condition1<br/>
+> deyimler<br/>
+> [[. ELSEIF condition2<br/>
+> deyimleri]]<br/>
+> [[. ELSE<br/>
+> deyimleri]]<br/>
+> .ENDIF
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsa bir [. BAŞKA](../../assembler/masm/dot-else.md) orijinal koşul false ise aşağıdaki gibi kendi deyimler yürütülür. Çalışma zamanında koşulların değerlendirilmesi gerektiğini unutmayın.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

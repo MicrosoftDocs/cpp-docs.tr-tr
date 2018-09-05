@@ -1,7 +1,7 @@
 ---
 title: PTR işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,23 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cedfe542228edbe4367f98b169b4562a2ca2cc81
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 07fcb86eb6b1a9a084f985cb5192491a7c487703
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055384"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692796"
 ---
 # <a name="operator-ptr"></a>PTR işleci
-İlk işleci zorlar *ifade* belirtilen sahip olarak kabul edilmesi için `type`. İkinci işleci için bir işaretçi belirtir `type`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      type PTR expression  
-[[distance]] PTR type  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+İlk işleç zorlar *ifade* belirtilen sahip olarak kabul edilmesi için *türü*. İkinci işleci bir işaretçiye belirtir *türü*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *tür* PTR *ifadesi*
+
+> [[*uzaklık*]] PTR *türü*
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

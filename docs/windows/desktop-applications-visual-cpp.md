@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b1d82f3a6b39fb4b550b8d7f9f9bfbc689088648
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9d4f44e3587e9b274bbe89e2fa4f91accadb08ab
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605023"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688265"
 ---
 # <a name="desktop-applications-visual-c"></a>Masaüstü uygulamaları (Visual C++)
 
@@ -37,7 +37,7 @@ Visual Studio 2017 sürüm 15.4 ve daha sonra mevcut masaüstü uygulamanızı p
 
 - A *Win32* yapabileceğiniz c++ Masaüstü uygulamasını kullanın yerel bir Windows uygulamasıdır [Windows C API'leri ve/veya COM API'leri](https://msdn.microsoft.com/library/windows/desktop/ff818516\(v=vs.85\).aspx) CRT ve standart kitaplığı API'leri ve 3. taraf kitaplıkları. Bir pencere içinde çalışan bir Win32 uygulaması, Windows iletileri Windows yordamı işlevi içinde açıkça çalışmak Geliştirici gerektirir. Adını rağmen bir Win32 uygulaması bir 32-bit (x86) veya 64-bit (x64) ikili olarak derlenebilir. Visual Studio IDE'de x86 hüküm ve Win32 eşanlamlıdır.
 
-- [Bileşen Nesne Modeli (COM)](https://msdn.microsoft.com/library/windows/desktop/ms694363\(v=vs.85\).aspx) birbirleriyle iletişim kurması için farklı dillerde yazılan programlar sağlayan bir özelliğidir. Bileşenleri COM nesneleri olarak uygulanır ve nesne oluşturma için standart COM kurallarına birçok Windows bulma ve nesne yok etme arabirim.  COM nesnelerinin C++ Masaüstü uygulamalarından kullanarak görece basittir, ancak kendi COM nesnesi yazmak daha gelişmiş. [Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md) makroları ve COM geliştirmesini basitleştiren yardımcı işlevleri sağlar.
+- [Bileşen Nesne Modeli (COM)](/windows/desktop/com/the-component-object-model) birbirleriyle iletişim kurması için farklı dillerde yazılan programlar sağlayan bir özelliğidir. Bileşenleri COM nesneleri olarak uygulanır ve nesne oluşturma için standart COM kurallarına birçok Windows bulma ve nesne yok etme arabirim.  COM nesnelerinin C++ Masaüstü uygulamalarından kullanarak görece basittir, ancak kendi COM nesnesi yazmak daha gelişmiş. [Etkin Şablon kitaplığı (ATL)](../atl/atl-com-desktop-components.md) makroları ve COM geliştirmesini basitleştiren yardımcı işlevleri sağlar.
 
 - Bir MFC uygulaması kullanan Windows masaüstü uygulaması olduğundan [Microsoft Foundation sınıfları](../mfc/mfc-desktop-applications.md) kullanıcı arabirimi oluşturmak için. Bir MFC uygulaması, COM bileşenlerinin yanı sıra CRT ve standart kitaplığı API'leri de kullanabilirsiniz. MFC pencere ileti döngüsü ve Windows API'ları üzerinde ince bir C++ nesne odaklı sarmalayıcı sağlar. MFC uygulamaları için varsayılan seçimdir — özellikle de kurumsal türde uygulamalar —, çok sayıda kullanıcı arabirimi denetimleri veya özel kullanıcı denetimi. MFC pencere yönetimi, serileştirme, metin yönetimi, yazdırma ve Şerit gibi modern kullanıcı arabirimi öğeleri için uygun yardımcı sınıflar sağlar. MFC ile etkili olması için Win32 ile ilgili bilgi sahibi olmanız gerekir.
 

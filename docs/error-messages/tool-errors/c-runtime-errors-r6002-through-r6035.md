@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hataları R6002-R6035 | Microsoft Docs
+title: C çalışma zamanı hataları R6002 ile r6035 arasındaki | Microsoft Docs
 ms.custom: ''
 ms.date: 11/17/2017
 ms.technology:
@@ -14,20 +14,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d856fef8e8915683b77ada2bb8f669e303f1b5a9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e7a8c7c544ef89f1b54459a7f02b90424e6c7c5
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300026"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693567"
 ---
-# <a name="c-runtime-errors-r6002-through-r6035"></a>C çalışma zamanı hataları R6002-R6035
+# <a name="c-runtime-errors-r6002-through-r6035"></a>C çalışma zamanı hataları R6002 ile r6035 arasındaki
 
-Bu bölümde, uygulamanızın yüklenmedi veya çalışan olduğunda C çalışma zamanı kitaplığı (CRT) tarafından oluşturulan hatalar başvurusudur. İleti için Microsoft Visual C++ çalışma zamanı başvuruyor olsa da, bu hatalar, uygulamanızın kodda bir hata ya da çalışma zamanı kitaplığı işleyemez, düşük bellek gibi bir koşul işaret eder. Son kullanıcılar, uygulamanızın, değil bunları neden olan koşulları önlemek için uygulamanızın kod veya bu hataları yakalamak ve kullanıcılarınız için kolay bir ileti sunmak için kod yazma bu hatalar görebilirsiniz.
+Bu bölümde, uygulamanızın yüklü veya çalışıyor olduğunda, C çalışma zamanı kitaplığı (CRT) tarafından oluşturulan hatalara bir başvurudur. İleti için Microsoft Visual C++ çalışma zamanı başvuruda bulunuyor olsa da, bu hatalar, uygulamanızın kodunda bir hata veya çalışma zamanı kitaplığı işleyemez, düşük bellek gibi bir koşul belirtin. Uygulamanızın son kullanıcılar, bunları neden olan koşulları önlemek için uygulamanıza kod, bir ya da bu hataları yakalamaya ve kolay bir ileti kullanıcılarınıza sunmak için kod yazma bu hataları görebilirsiniz.
 
-Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Üzerinde hata veya uyarı numarası arayabilirsiniz [Geliştirici topluluğu](https://go.microsoft.com/fwlink/p/?linkid=820594) site. [Visual C++ dili](http://go.microsoft.com/fwlink/p/?linkid=158195) forumudur sorularınız ve C++ dili sözdizimi ve MSVC derleyici hakkındaki tartışmalara. [Visual C++ genel](http://go.microsoft.com/fwlink/p/?linkid=158194) Forumu diğer forumlarda açıklanmamaktadır Visual C++ hakkında sorular içindir. Ayrıca arama hataları ve uyarıları ve sorular [yığın taşması](http://stackoverflow.com/) çözümler bulabilirsiniz.
+Microsoft'un ortak forumlarında hatalar ve Uyarılar için Ek Yardım bulabilirsiniz. Hata veya uyarı numarası üzerinde arayabilirsiniz [Geliştirici topluluğu](https://developercommunity.visualstudio.com) site. [Visual C++ genel](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vcgeneral) Forumu, diğer forumlarda ele alınmamaktadır Visual C++ hakkında sorular içindir. Ayrıca arama hataları ve uyarıları ve sorular [Stack Overflow](http://stackoverflow.com/) çözümler bulabilirsiniz.
 
-Ek Yardım ve topluluk kaynaklarına bağlantılar için bkz: [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).
+Ek Yardım ve topluluk kaynakları, bağlantılar için bkz. [Visual C++ Yardım ve topluluk](../../visual-cpp-help-and-community.md).
 
 ## <a name="c-runtime-errors"></a>C çalışma zamanı hataları
 

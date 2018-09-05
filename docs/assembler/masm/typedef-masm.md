@@ -1,7 +1,7 @@
 ---
 title: TYPEDEF (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a80694726fd08cffe55bebf587aac05bbe69ea30
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: b2a548e52e0e8b3518fb9c952d399bea5e5752b9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052641"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690374"
 ---
 # <a name="typedef-masm"></a>TYPEDEF (MASM)
-Adlı yeni bir türün tanımlar *adı*, eşdeğer olduğu `type`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-name TYPEDEF type  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Adlı yeni bir tür tanımlar *adı*, eşdeğer olan *türü*.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *adı* TYPEDEF *türü*
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08cde95cf7ce680137aa932eb9642b9cd910318a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: e7a337743ece9edfa71a052ee9d6e19728b0c051
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223219"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693722"
 ---
 # <a name="ipersiststorageimpl-class"></a>Ipersiststorageımpl sınıfı
 Bu sınıfın uyguladığı [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) arabirimi.  
@@ -66,7 +66,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 ## <a name="remarks"></a>Açıklamalar  
  `IPersistStorageImpl` uygulayan [IPersistStorage](/windows/desktop/api/objidl/nn-objidl-ipersiststorage) arabirimi, nesnesi yük istemek üzere bir istemci sağlayan ve kalıcı verilerini bir depolama kullanarak kaydedin.  
   
- Bu sınıfın uygulaması sınıfı gerektirir `T` uygulaması yapmak için `IPersistStreamInit` arabirimi aracılığıyla kullanılabilir `QueryInterface`. Genellikle bu sınıfın başka bir deyişle `T` türetilmesi [Ipersiststreamınitımpl](../../atl/reference/ipersiststreaminitimpl-class.md), sağlamak için bir giriş `IPersistStreamInit` içinde [COM eşlemesi](https://msdn.microsoft.com/library/ead2a1e3-334d-44ad-bb1f-b94bb14c2333)ve bir [özellik eşlemesi](https://msdn.microsoft.com/library/bfe30be6-62c3-4dc2-bd49-21ef96f15427) sınıfın kalıcı veriyi tanımlamak için.  
+ Bu sınıfın uygulaması sınıfı gerektirir `T` uygulaması yapmak için `IPersistStreamInit` arabirimi aracılığıyla kullanılabilir `QueryInterface`. Genellikle bu sınıfın başka bir deyişle `T` türetilmesi [Ipersiststreamınitımpl](../../atl/reference/ipersiststreaminitimpl-class.md), sağlamak için bir giriş `IPersistStreamInit` içinde [COM eşlemesi](com-map-macros.md)ve bir [özellik eşlemesi](property-map-macros.md) sınıfın kalıcı veriyi tanımlamak için.  
   
  **İle ilgili makaleler** [ATL öğretici](../../atl/active-template-library-atl-tutorial.md), [ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)  
   

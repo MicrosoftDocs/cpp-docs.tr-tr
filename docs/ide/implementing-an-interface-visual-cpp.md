@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f7d7bed9725e4ec1cc8ad0fc66673ce5c6212e1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cfee61f1632fad2d762c41149c1bc302a1c4b9da
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211218"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691992"
 ---
 # <a name="implementing-an-interface-visual-c"></a>Arabirimi Uygulama (Visual C++)
 Bir arabirim uygulamak için bir projenin ATL desteği içeren bir MFC uygulaması olarak veya bir ATL COM uygulaması oluşturmuş olmanız gerekir. Kullanabileceğiniz [ATL projesi Sihirbazı](../atl/reference/atl-project-wizard.md) bir ATL uygulama oluşturmak için veya [MFC uygulamanıza bir ATL nesnesi eklemek](../mfc/reference/adding-atl-support-to-your-mfc-project.md) bir MFC uygulaması için ATL desteği uygulamak için.  
@@ -46,7 +46,7 @@ Bir arabirim uygulamak için bir projenin ATL desteği içeren bir MFC uygulamas
 4.  Sınıf Görünümü'nde, nesnenin tabanları genişletin ve arabirimleri düğüm uygulanmıştır ve ardından kullanılabilir özelliklerini, yöntemlerini ve olaylarını görmek için arabirimin düğümünü genişletin arabirimini görmek için.  
   
     > [!NOTE]
-    >  Ayrıca [Nesne Tarayıcısı](https://msdn.microsoft.com/f89acfc5-1152-413d-9f56-3dc16e3f0470) arabirimin üyelerini incelemek için.  
+    >  Ayrıca [Nesne Tarayıcısı](/visualstudio/ide/viewing-the-structure-of-code) arabirimin üyelerini incelemek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [COM arabirimi oluşturma](../ide/creating-a-com-interface-visual-cpp.md)   

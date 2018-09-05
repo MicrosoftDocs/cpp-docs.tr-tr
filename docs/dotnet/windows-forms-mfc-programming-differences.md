@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 48a337ab82045543035c2612c707d8c47186ed2d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c7fe0665db01d1a2cd7a1da10b495ba86bc17469
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195458"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690868"
 ---
 # <a name="windows-formsmfc-programming-differences"></a>Windows Forms/MFC Programlama Farkları
 Konular, [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md) Windows Forms için MFC desteğini açıklar. Bu konu, .NET Framework veya MFC programlama ile ilgili bilgi sahibi değilseniz, iki programlama farkları hakkında arka plan bilgileri sağlar.  
@@ -65,5 +65,4 @@ Konular, [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/usi
      MFC, bir komut güncelleştirme mekanizması vardır. Bu nedenle, etkin görünüm veya belge (örneğin, etkinleştirme veya bir menü öğesi veya araç düğmesi devre dışı bırakma ve denetlendi) Arabirim öğelerinin durumu sorumludur. Windows Forms hiçbir denk bir komut güncelleştirme mekanizması vardır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [MFC içinde Windows formu kullanıcı denetimi kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)   
- [Windows Forms izlenecek yollar](https://msdn.microsoft.com/fd44d13d-4733-416f-aefc-32592e59e5d9)
+ [MFC içinde Windows Formu Kullanıcı Denetimi Kullanma](../dotnet/using-a-windows-form-user-control-in-mfc.md)   

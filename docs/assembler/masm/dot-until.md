@@ -1,7 +1,7 @@
 ---
 title: . KADAR | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8eaf4a63bda95c7cbc3a41accd44faf5d3bcc39f
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 1fd0c6ef768f171694b2852c46892d60643fcfe0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051110"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689311"
 ---
 # <a name="until"></a>.UNTIL
-Bkz: [. Yineleme](../../assembler/masm/dot-repeat.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.UNTIL  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bkz: [. Yineleme](../../assembler/masm/dot-repeat.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+> .UNTIL
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

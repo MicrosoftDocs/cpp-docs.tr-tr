@@ -1,7 +1,7 @@
 ---
 title: COMM | Microsoft Docs
 ms.custom: ''
-ms.date: 05/22/2018
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1df6c729ab130a7ff38d7f7cf83224e7425e7dba
-ms.sourcegitcommit: da7b7533d1a4dc141cc0f09149e4e4196f2fe329
+ms.openlocfilehash: 87bf6d91de052d7ecaf637100b455e66819c748b
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/23/2018
-ms.locfileid: "34463029"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690038"
 ---
 # <a name="comm"></a>COMM
 
@@ -33,22 +33,22 @@ Belirtilen özniteliklerle müşterek bir değişken oluşturur *tanımı*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Müşterek değişkenleri bağlayıcı tarafından ayrılmış ve başlatılamaz. Başka bir deyişle, konumu ya da böyle değişkenlerin sırası bağımlı olamaz.
+Müşterek değişkenleri bağlayıcı tarafından ayrılır ve başlatılamaz. Başka bir deyişle, konum veya bu değişkenleri dizisini bağımlı olamaz.
 
 Her *tanımı* aşağıdaki biçime sahiptir:
 
-[*langtype*] [**NEAR** &#124; **uzak**] _etiket_**:**_türü_[**:**_sayısı_]
+[*langtype*] [**yakın** &#124; **uzak**] _etiket_**:**_türü_[**:**_sayısı_]
 
-İsteğe bağlı *langtype* izleyen ad için adlandırma kurallarını ayarlar. Tarafından belirtilen herhangi bir dil geçersiz kılmaları **. MODEL** yönergesi. İsteğe bağlı **NEAR** veya **uzak** geçerli bellek modeli geçersiz. *Etiket* değişkenin adıdır. *Türü* hiçbir tür belirteci olabilir ([bayt](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), vb.) veya bayt sayısını belirten bir tamsayı. İsteğe bağlı *sayısı* bildirilen veri nesnesinde; öğelerin sayısını belirler varsayılan biridir.
+İsteğe bağlı *langtype* izleyen ad için adlandırma kuralları ayarlar. Tarafından belirtilen herhangi bir dilde onu geçersiz kılar **. MODEL** yönergesi. İsteğe bağlı **yakın** veya **uzak** geçerli bellek modeli geçersiz. *Etiket* değişkenin adıdır. *Türü* herhangi bir tür belirleyiciye olabilir ([bayt](../../assembler/masm/byte-masm.md), [WORD](../../assembler/masm/word.md), vb.) veya bayt sayısını belirten bir tamsayı. İsteğe bağlı *sayısı* bildirilen veri nesnesi içinde; öğe sayısını belirtir bir varsayılandır.
 
 ## <a name="example"></a>Örnek
 
-Bu örnek, 512 BAYTLIK öğeleri dizisi oluşturur:
+Bu örnek, bir dizi bir 512 BAYTLIK öğeleri oluşturur:
 
-```masm
+```asm
 COMM FAR ByteArray:BYTE:512
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

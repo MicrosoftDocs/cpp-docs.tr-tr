@@ -17,17 +17,17 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d96b9430cd5a6a4a9f3d65ab60c49a38b0530db7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c0cbc2e88bc123b4de82ca69a41a17a41729bb4a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211103"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691198"
 ---
 # <a name="working-with-resource-files"></a>Kaynak Dosyalarıyla Çalışma
 
 > [!WARNING]
-> Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](https://msdn.microsoft.com/476ea844-632c-4467-9ce3-966be1350dd4).
+> Bu bölüm, C++ ile yazılmış Windows Masaüstü uygulamaları için geçerlidir. C++ programında yazılan Evrensel Windows platformu uygulamaları kaynaklar hakkında daha fazla bilgi için bkz: [tanımlama uygulama kaynaklarını](/windows/uwp/app-resources/).
 >
 > C + için kaynak ekleme hakkında bilgi için +/ CLI projeleri için bkz. Lütfen [masaüstü uygulamalarında kaynakların](/dotnet/framework/resources/index) içinde *.NET Framework Geliştirici Kılavuzu*.
 
@@ -52,9 +52,6 @@ Visual Studio'da sağlanan kaynak düzenleyicileri açıklar kaynak türleri, he
 
 [Visual C++](../visual-cpp-in-visual-studio.md)  
 Visual C++ belgelerine ilişkin bağlantıları sağlar.
-
-[Visual Studio ile tanışın](https://msdn.microsoft.com/99997089-56ff-4d60-81a9-447062dc98ac)  
-Eksiksiz karma dil çözümlerini oluşturulmasını kolaylaştırır ve tüm araçları paylaşmasına olanak sağlayan aynı tümleşik geliştirme ortamı (IDE) kullanabileceğiniz geliştirme araçlarını açıklar.
 
 [Bizimle İletişime Geçin](/visualstudio/ide/talk-to-us)  
 Belge kümesini kullanarak, ürün desteği ile iletişime ve erişilebilirlik özelliklerini kullanan bilgilere bağlantılar sağlar.

@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02bfbe474d30088c887e7a16b6dcea079dfd9821
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 784425246c3be99acde2942633ce5190807c59b4
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213072"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689564"
 ---
 # <a name="cwinthread-class"></a>CWinThread sınıfı
 Uygulamadaki bir iş parçacığını temsil eder.  
@@ -96,10 +96,10 @@ class CWinThread : public CCmdTarget
 |[CWinThread::IsIdleMessage](#isidlemessage)|Özel iletiler denetler.|  
 |[CWinThread::OnIdle](#onidle)|İş parçacığına özgü boşta kalma süresi işleme gerçekleştirmek için geçersiz kılın.|  
 |[CWinThread::PostThreadMessage](#postthreadmessage)|Başka bir iletiyi gönderir `CWinThread` nesne.|  
-|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).|  
+|[CWinThread::PreTranslateMessage](#pretranslatemessage)|Windows işlevleri için dağıtılmadan önce iletileri filtreler [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).|  
 |[CWinThread::ProcessMessageFilter](#processmessagefilter)|Uygulamaya ulaşmadan önce belirli iletileri kesintiye uğratır.|  
 |[CWinThread::ProcessWndProcException](#processwndprocexception)|İş parçacığının ileti ve komut işleyicileri tarafından oluşturulan tüm işlenmeyen özel durumları yakalar.|  
-|[CWinThread::PumpMessage](#pumpmessage)|İş parçacığının ileti döngüsü içerir.|  
+|[CWinThread::PumpMessage](#pumpmessage)|iş parçacığının ileti döngüsü içerir.|  
 |[CWinThread::ResumeThread](#resumethread)|Bir iş parçacığının azaltır sayısı askıya alın.|  
 |[CWinThread::Run](#run)|Bir ileti pompası ile iş parçacığı için denetleme işlevine. Varsayılan mesaj döngüsünü özelleştirmek için geçersiz kılın.|  
 |[CWinThread::SetThreadPriority](#setthreadpriority)|Geçerli iş parçacığının önceliğini ayarlar.|  
@@ -411,7 +411,7 @@ BOOL PostThreadMessage(
 >  Windows çağrılırken [PostThreadMessage](https://msdn.microsoft.com/library/windows/desktop/ms644946) işlevi içinde bir MFC uygulaması, MFC ileti işleyicileri çağrılmadı. Daha fazla bilgi için bkz. Bilgi Bankası makalesi, "Sorun: MFC ileti işleyicisi yok adlı ile PostThreadMessage()" (Q142415).  
   
 ##  <a name="pretranslatemessage"></a>  CWinThread::PreTranslateMessage  
- Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934).  
+ Windows işlevleri için dağıtılmadan önce Filtre pencere iletileri için bu işlevi geçersiz kılma [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage).  
   
 ```  
 virtual BOOL PreTranslateMessage(MSG* pMsg);
@@ -485,7 +485,7 @@ virtual LRESULT ProcessWndProcException(
  Bu üye işlevi bir ileti pompası sahip parçacıklarında kullanılır.  
   
 ##  <a name="pumpmessage"></a>  CWinThread::PumpMessage  
- İş parçacığının ileti döngüsü içerir.  
+ iş parçacığının ileti döngüsü içerir.  
   
 ```  
 virtual BOOL PumpMessage();
@@ -520,7 +520,7 @@ virtual int Run();
  Bir **int** iş parçacığı tarafından döndürülen değer. Bu değer, çağrılarak alınabilir [GetExitCodeThread](/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getexitcodethread).  
   
 ### <a name="remarks"></a>Açıklamalar  
- `Run` Uygulama alıncaya kadar Windows iletileri gönderir ve alır bir [WM_QUIT](/windows/desktop/winmsg/wm-quit) ileti. İş parçacığının ileti kuyruğu şu anda hiçbir ileti içeriyorsa `Run` çağrıları `OnIdle` boşta kalma süresi işlemini gerçekleştirmek için. Gelen iletiler Git [PreTranslateMessage](#pretranslatemessage) üye işlevi özel işleme ve ardından Windows işleve [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) standart klavye çevirisi için. Son olarak, [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevi çağrılır.  
+ `Run` Uygulama alıncaya kadar Windows iletileri gönderir ve alır bir [WM_QUIT](/windows/desktop/winmsg/wm-quit) ileti. İş parçacığının ileti kuyruğu şu anda hiçbir ileti içeriyorsa `Run` çağrıları `OnIdle` boşta kalma süresi işlemini gerçekleştirmek için. Gelen iletiler Git [PreTranslateMessage](#pretranslatemessage) üye işlevi özel işleme ve ardından Windows işleve [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) standart klavye çevirisi için. Son olarak, [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevi çağrılır.  
   
  `Run` nadiren geçersiz kılınır, ancak özel davranışı uygulamak için geçersiz kılabilirsiniz.  
   

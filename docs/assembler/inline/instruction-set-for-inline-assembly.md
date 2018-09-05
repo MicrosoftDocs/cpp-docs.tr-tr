@@ -1,7 +1,7 @@
 ---
 title: Satır içi derleme için yönerge kümesi | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -17,18 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 622f5aea757506dd3bf48056a139f381e9d8a883
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 02fe69fad2e1ef9fb8aa0c5aa23913ccf403e15a
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32051123"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43694001"
 ---
 # <a name="instruction-set-for-inline-assembly"></a>Satır İçi Derleme için Yönerge Kümesi
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Visual C++ derleyicisi Pentium 4 ve AMD Athlon aracılığıyla tüm işlem kodları destekler. Hedef işlemcisi tarafından desteklenen ek yönergeler ile oluşturulabilir [_emit sözde yönerge](../../assembler/inline/emit-pseudoinstruction.md).  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+
+**Microsoft'a özgü**
+
+Visual C++ derleyicisi, AMD Athlon ve Pentium 4 aracılığıyla tüm işlem destekler. Hedef işlemci tarafından desteklenen ek yönergeler oluşturulabilir [_emit sözde yönerge](../../assembler/inline/emit-pseudoinstruction.md).
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

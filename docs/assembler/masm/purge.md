@@ -1,7 +1,7 @@
 ---
 title: TEMİZLEME | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,22 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd7db2fb8eb52575892510d9286dca0a01c719c5
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: ee00632561ce58ef9585a71f31cebfb3e406f1b3
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32053044"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689638"
 ---
 # <a name="purge"></a>PURGE
-Belirtilen makroları bellekten siler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-PURGE macroname [[, macroname]]...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Belirtilen makroları bellekten siler.
+
+## <a name="syntax"></a>Sözdizimi
+
+> Temizleme makroadı [[, makroadı]]...
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

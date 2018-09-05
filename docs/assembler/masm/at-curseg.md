@@ -1,7 +1,7 @@
 ---
 title: '@CurSeg | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1775c86fbefe28d63175fcdaeea5ea28afb8acf0
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 5722614d3d22d744bff6e54f9ebafca7db018067
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049342"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691029"
 ---
 # <a name="curseg"></a>@CurSeg
-Geçerli segment (metin makrosu) adı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-@CurSeg  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Semboller Başvurusu](../../assembler/masm/symbols-reference.md)
+
+Geçerli kesimin (metin makro) adı.
+
+## <a name="syntax"></a>Sözdizimi
+
+> @CurSeg
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Semboller Başvurusu](../../assembler/masm/symbols-reference.md)<br/>

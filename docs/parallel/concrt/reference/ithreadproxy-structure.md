@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2542be130c75166f8716c76df547c72fad7c2250
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 220a02fca7a8de67d1f35743fa9f56e8499c88e0
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196906"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690052"
 ---
 # <a name="ithreadproxy-structure"></a>IThreadProxy Yapısı
 Bir iş parçacığı için bir soyutlamayı yürütme. Yapılandırmanıza bağlı olarak `SchedulerType` oluşturduğunuz Zamanlayıcı ilke anahtarı, kaynak yöneticisi vermek, normal bir Win32 iş parçacığı veya bir kullanıcı modunda zamanlanabilen (UMS) iş parçacığı tarafından desteklenen bir iş parçacığı proxy'sini. UMS iş parçacıkları, sürümü Windows 7 64-bit işletim sistemlerinde desteklenen ve daha yüksek.  
@@ -83,7 +83,7 @@ virtual void SwitchOut(SwitchingProxyState switchState = Blocking) = 0;
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım `SwitchOut` bir bağlam üzerinde yürütülen, herhangi bir nedenle sanal işlemci kökünden ilişkisini gerekiyorsa. Değere göre parametresi için geçirdiğiniz `switchState`, ve bir sanal işlemci kökünde Yürütülüyor olsun veya olmasın, çağrı ya hemen döndürür veya bağlamla ilişkilendirilen iş parçacığı proxy'sini engellemek. Çağırmak için bir hata olduğunu `SwitchOut` ayarlanan parametre ile `Idle`. Bunun yapılması sonucunda bir [invalid_argument](../../../standard-library/invalid-argument-class.md) özel durum.  
   
- `SwitchOut` scheduler, kaynak yöneticisi yapmanızı söylediği veya geçici zamanlayıcınızın sanal işlemci kök istenen ve çalışmayı kökle sayısını azaltmak istediğinizde yararlıdır. Bu durumda yöntem çağırması gereken [IVirtualProcessorRoot::Remove](https://msdn.microsoft.com/ad699b4a-1972-4390-97ee-9c083ba7d9e4) bir çağrı yapmadan önce sanal işlemci kökünde `SwitchOut` parametresiyle `switchState` kümesine `Blocking`. Bu iş parçacığı proxy'sini engeller ve bir zamanlayıcı farklı sanal işlemci kök, onu yürütmek kullanılabilir olduğunda yürütmeyi devam ettirir. Engelleyen iş parçacığı proxy'si işlevini çağırarak sürdürülebilir `SwitchTo` bu iş parçacığı proxy'sinin yürütme bağlamına geçmek için. Bir sanal işlemci kökünü etkinleştirmek üzere ilişkili bağlamını kullanarak, iş parçacığı proxy'sini devam edebilir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
+ `SwitchOut` scheduler, kaynak yöneticisi yapmanızı söylediği veya geçici zamanlayıcınızın sanal işlemci kök istenen ve çalışmayı kökle sayısını azaltmak istediğinizde yararlıdır. Bu durumda yöntem çağırması gereken [IVirtualProcessorRoot::Remove](iexecutionresource-structure.md#remove) bir çağrı yapmadan önce sanal işlemci kökünde `SwitchOut` parametresiyle `switchState` kümesine `Blocking`. Bu iş parçacığı proxy'sini engeller ve bir zamanlayıcı farklı sanal işlemci kök, onu yürütmek kullanılabilir olduğunda yürütmeyi devam ettirir. Engelleyen iş parçacığı proxy'si işlevini çağırarak sürdürülebilir `SwitchTo` bu iş parçacığı proxy'sinin yürütme bağlamına geçmek için. Bir sanal işlemci kökünü etkinleştirmek üzere ilişkili bağlamını kullanarak, iş parçacığı proxy'sini devam edebilir. Bunun nasıl yapılacağı hakkında daha fazla bilgi için bkz. [Ivirtualprocessorroot::Activate](ivirtualprocessorroot-structure.md#activate).  
   
  `SwitchOut` Sanal işlemci onu gelecekte iş parçacığı proxy'sini engellerken veya sanal işlemci kökünden geçici olarak kullanımdan çıkarılıyor çalıştığı ve Zamanlayıcı, iş için ayırırken etkinleştirilebilmesi için yeniden başlatmak istediğinizde de kullanılabilir. Kullanım `SwitchOut` parametresiyle `switchState` kümesine `Blocking` iş parçacığı proxy'sini engellemek istiyorsanız. Kullanarak daha sonra sürdürülebilir `SwitchTo` veya `IVirtualProcessorRoot::Activate` yukarıda da belirtildiği gibi. Kullanım `SwitchOut` ayarlanan parametre ile `Nesting` ne zaman bu iş parçacığı proxy'sini, üzerinde çalıştığı sanal işlemci kökünden geçici olarak ayırmak istediğiniz ve Zamanlayıcı Sanal işlemcinin ilişkilendirilmiş olduğu. Çağırma `SwitchOut` parametresiyle `switchState` kümesine `Nesting` bir sanal işlemci kökünde yürütülürken kök başlatılmasına ve bir gerek kalmadan yürütmeye devam geçerli iş parçacığı proxy'sini neden olur. İş parçacığı proxy'sini çağırdığı kadar Zamanlayıcıdan kabul [Ithreadproxy::switchout](#switchout) yöntemiyle `Blocking` , bir sonraki bir noktada. İçin yapılan ikinci çağrı `SwitchOut` ayarlanan parametre ile `Blocking` bunu tarafından devam ettirilebilir böylece bağlamı engelli duruma geri dönmek için hedeflenen `SwitchTo` veya `IVirtualProcessorRoot::Activate` ayrıldığı Zamanlayıcı içinde. Bir sanal işlemci kökünde Yürütülüyor değil çünkü yürütülmediği gerçekleşir.  
   

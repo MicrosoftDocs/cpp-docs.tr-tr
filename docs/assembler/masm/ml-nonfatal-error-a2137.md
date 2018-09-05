@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2137 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0566458a868d1463a59566840090a853b442f80d
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 16d09737bda1b29f8f47f46d0053cbe14fc286ca
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32058065"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691345"
 ---
 # <a name="ml-nonfatal-error-a2137"></a>ML Önemli Olmayan Hatası A2137
-**INVOKE için çok az sayıda bağımsız değişken**  
-  
- Geçirilen bağımsız değişken sayısı kullanarak [INVOKE](../../assembler/masm/invoke.md) yönergesi çağrılan yordamı prototipi belirtilen gerekli parametreleri sayısından az olduğu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**çok az sayıda bağımsız değişken çağırma**
+
+Bağımsız değişken sayısı geçirilen [INVOKE](../../assembler/masm/invoke.md) yönergesi olduğu çağrılan yordam için prototip belirtilen gerekli parametre sayısından daha az.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

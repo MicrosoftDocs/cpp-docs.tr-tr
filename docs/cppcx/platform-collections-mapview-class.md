@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7abf07b24947a4c800b2b21f91fdf9840dd799d5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e1dfbcff7e9e470992b0799aac1c87984b52ed50
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605477"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689477"
 ---
 # <a name="platformcollectionsmapview-class"></a>Platform::Collections:: mapview sınıfı
 Bir salt okunur görünüme temsil eden bir *harita*, anahtar-değer çiftleri koleksiyonu.  
@@ -51,7 +51,7 @@ ref class MapView sealed;
  İki öğenin değerlerini MapView kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::less\<K >](../standard-library/less-struct.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
- MapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView \<K, V >](http://go.microsoft.com/fwlink/p/?LinkId=262409) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
+ MapView olan somut bir C++ uygulaması [Windows::Foundation::Collections::IMapView \<K, V >](/uwp/api/Windows.Foundation.Collections.IMapView_K_V_) uygulama ikili arabiriminde (ABI) geçirilen arabirimi. Daha fazla bilgi için [koleksiyonlar (C + +/ CX)](../cppcx/collections-c-cx.md).  
   
 ### <a name="members"></a>Üyeler  
   

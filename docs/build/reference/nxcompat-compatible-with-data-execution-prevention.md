@@ -1,5 +1,5 @@
 ---
-title: / NXCOMPAT (Veri Yürütme Engellemesi uyumlu) | Microsoft Docs
+title: / NXCOMPAT (veri yürütme önlemesi ile uyumlu) | Microsoft Docs
 ms.custom: ''
 ms.date: 12/29/2017
 ms.technology:
@@ -17,42 +17,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb4f8a91545a196bc92fdc0ec44e89a7d5680185
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9f6e2c3f1c297493b2af72f280ac5eabcb6f17ce
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374810"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690325"
 ---
 # <a name="nxcompat-compatible-with-data-execution-prevention"></a>/NXCOMPAT (Veri Yürütme Önlemesi ile Uyumlu)
 
-Bir yürütülebilir dosya Windows Veri Yürütme Engellemesi özelliği ile uyumlu olup olmadığını gösterir.
+Bir yürütülebilir dosya Windows Veri Yürütme Engellemesi özelliği ile uyumlu olduğunu gösterir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ NXCOMPAT**[**: HAYIR**]
+> **/ NXCOMPAT**[**: NO**]
 
 ## <a name="remarks"></a>Açıklamalar
 
 Varsayılan olarak, **/NXCOMPAT** açıktır.
 
-**/NXCOMPAT:No** açıkça Veri Yürütme Engellemesi uyumlu olarak yürütülebilir bir dosya belirtmek için kullanılır.
+**No** açıkça Veri Yürütme Engellemesi ile uyumsuz olarak yürütülebilen belirtmek için kullanılabilir.
 
-Veri Yürütme Engellemesi hakkında daha fazla bilgi için bu makalelere bakın:
+Veri Yürütme engelleme hakkında daha fazla bilgi için şu makalelere bakın:
 
-- [Veri Yürütme Engellemesi (DEP) özelliğinin ayrıntılı bir açıklaması](http://go.microsoft.com/fwlink/p/?linkid=157771)
+- [Veri Yürütme Engellemesi (DEP) özelliğinin ayrıntılı bir açıklaması](https://support.microsoft.com/en-us/help/875352/a-detailed-description-of-the-data-execution-prevention-dep-feature-in)
 
-- [Veri Yürütme Engellemesi](http://go.microsoft.com/fwlink/p/?linkid=157770)
+- [Veri Yürütme Engellemesi](/windows/desktop/Memory/data-execution-prevention)
 
-- [Veri Yürütme Engellemesi (Windows Embedded)](http://go.microsoft.com/fwlink/p/?linkid=157768)
+- [Veri Yürütme Engellemesi (Windows Embedded)](/previous-versions/windows/embedded/ms913190\(v=winembedded.5\))
 
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneği ayarlamak için
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projeyi açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
-1. Seçenek girin **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** değişikliği uygulamak için.
+1. De seçeneği girin **ek seçenekler** kutusu. Seçin **Tamam** veya **Uygula** değişikliği uygulamak için.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

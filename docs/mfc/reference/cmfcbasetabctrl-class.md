@@ -248,12 +248,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 212637b55a422c11d82ae6ad9f548d9e429c41dd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: dbd12c98014e2adfe9617f0bdaac891f33ebc600
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198574"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693932"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli pencereler için temel işlevselliğini uygular.  
@@ -357,7 +357,7 @@ class CMFCBaseTabCtrl : public CWnd
 |[CMFCBaseTabCtrl::OnDragOver](#ondragover)||  
 |[CMFCBaseTabCtrl::OnDrop](#ondrop)||  
 |[CMFCBaseTabCtrl::OnRenameTab](#onrenametab)||  
-|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](https://msdn.microsoft.com/library/windows/desktop/ms644955) ve [DispatchMessage](https://msdn.microsoft.com/library/windows/desktop/ms644934) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
+|[CMFCBaseTabCtrl::PreTranslateMessage](#pretranslatemessage)|Sınıfı tarafından kullanılan [CWinApp](../../mfc/reference/cwinapp-class.md) için dağıtılmadan önce pencere iletilerini çevrilecek [TranslateMessage](/windows/desktop/api/winuser/nf-winuser-translatemessage) ve [DispatchMessage](/windows/desktop/api/winuser/nf-winuser-dispatchmessage) Windows işlevleri. (Geçersiz kılmaları [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|  
 |[CMFCBaseTabCtrl::RecalcLayout](#recalclayout)|İç sekmeli pencere düzenini yeniden hesaplar.|  
 |[CMFCBaseTabCtrl::RemoveAllTabs](#removealltabs)|Tüm sekmeler sekmeli penceresinden kaldırır.|  
 |[CMFCBaseTabCtrl::RemoveTab](#removetab)|Bir sekme sekmeli penceresinden kaldırır.|  
@@ -1844,7 +1844,7 @@ virtual void SetActiveTabColor(COLORREF clr);
  Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371)yöntemi.  
+ Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)yöntemi.  
   
 ##  <a name="setactivetabtextcolor"></a>  CMFCBaseTabCtrl::SetActiveTabTextColor  
  Etkin sekmeler metin rengini belirler.  
@@ -1858,7 +1858,7 @@ virtual void SetActiveTabTextColor(COLORREF clr);
  A [COLORREF](/windows/desktop/gdi/colorref) parametresi yeni metin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, çerçeve metin rengini alır [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
+ Varsayılan olarak, çerçeve metin rengini alır [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
   
 ##  <a name="setautocolors"></a>  CMFCBaseTabCtrl::SetAutoColors  
  Otomatik renge modunda framework kullanan sekme denetiminin rengini ayarlar.  

@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bace26273ea05874efc18ecfa5087d17a6e07055
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6403e9a40adcac5cd9a4dc1a3fbe8a1028d11f99
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195391"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43692811"
 ---
 # <a name="working-with-ole-db-consumer-templates"></a>OLE DB Tüketici Şablonlarıyla Çalışma
 Aşağıdaki konular, bazı yaygın senaryolarda OLE DB Tüketici şablonları kullanma örnekleri sağlar:  
@@ -62,11 +62,11 @@ Aşağıdaki konular, bazı yaygın senaryolarda OLE DB Tüketici şablonları k
   
  Aşağıdaki örnekler, OLE DB Tüketici şablonları kullanma örnekleri de bulabilirsiniz:  
   
--   [CatDB](https://msdn.microsoft.com/003d516b-2bf6-444e-8be5-4ebaa0b66046)  
+-   [CatDB](https://github.com/Microsoft/VCSamples)  
   
--   [DBViewer](https://msdn.microsoft.com/07620f99-c347-4d09-9ebc-2459e8049832)  
+-   [DBViewer](https://github.com/Microsoft/VCSamples)  
   
--   [MultiRead](https://msdn.microsoft.com/21459014-4409-413c-b826-a41f0413be61)  
+-   [MultiRead](https://github.com/Microsoft/VCSamples)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

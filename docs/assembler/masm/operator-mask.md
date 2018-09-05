@@ -1,7 +1,7 @@
 ---
 title: MASK işleci | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -18,22 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6e7fe7b71fbb28be7cd99dc6fc7a6d437a4253c
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 22d1133257db825ac36beb8b83d5f170664472c2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32057932"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689698"
 ---
 # <a name="operator-mask"></a>MASK işleci
-Döndürür bir bit maskesi içinde bitleri *recordfieldname* veya *kaydı* ayarlanır ve diğer tüm bitler temizlenir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-MASK {recordfieldname | record}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Döndürür bir bit maskesi içinde bitler *recordfieldname* veya *kayıt* ayarlanır ve diğer tüm bitleri temizlenir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> MASKE {recordfieldname | kayıt}
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2078 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3dcb953c07830053a4820f02c0ee77f064676e81
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: eb059f9deffb55775ba2b392a0ab725453c64b81
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32056814"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689681"
 ---
 # <a name="ml-nonfatal-error-a2078"></a>ML Önemli Olmayan Hatası A2078
-**yönerge uzak izin verme dolaylı adresleme**  
-  
- Bir koşullu atlamayı veya döngü bellek işleneni alamıyor. Göreli adres veya etiket verilmelidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**yönerge uzak izin vermiyor dolaylı adresleme**
+
+Bir koşullu bağlantı veya döngüsünü bellek işlenen alamıyor. Bir göreli adres ya da etiketi verilmelidir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

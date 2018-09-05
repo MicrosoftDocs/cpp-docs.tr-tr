@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5a3a31125d8489551f1eec143013661bf385f29a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bcacfb8d5cd6d15cf9ca5f9f5bb8e937119dc863
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212451"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691580"
 ---
 # <a name="implementshelper-structure"></a>ImplementsHelper Yapısı
 
@@ -70,5 +70,4 @@ Bu şablon, arabirimin bir listeyi dikkatle inceler ve temel sınıflar ve etkin
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Başvuru (Windows çalışma zamanı kitaplığı)](https://msdn.microsoft.com/00000000-0000-0000-0000-000000000000)  
 [Microsoft::WRL::Details Ad Alanı](../windows/microsoft-wrl-details-namespace.md)

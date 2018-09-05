@@ -1,7 +1,7 @@
 ---
 title: ML önemli olmayan hatası A2097 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: error-reference
@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c18351a1a812d27ec72ffdc19fd73a1fc345272
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8951a1164aee405b510f3b51a4ad2cbb103a01ec
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32055270"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43693486"
 ---
 # <a name="ml-nonfatal-error-a2097"></a>ML Önemli Olmayan Hatası A2097
-**Beklenen segment: tanımlayıcısı**  
-  
- [Grup](../../assembler/masm/group.md) yönergesi tanımlı kesimi değildi bir tanımlayıcı verilen.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ML Hata İletileri](../../assembler/masm/ml-error-messages.md)
+
+**segment bekleniyor: tanımlayıcı**
+
+[Grubu](../../assembler/masm/group.md) tanımlanmış bir segmenti değil bir tanımlayıcı yönergesi dikkate alındığında.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[ML Hata İletileri](../../assembler/masm/ml-error-messages.md)<br/>

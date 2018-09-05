@@ -1,7 +1,7 @@
 ---
 title: _emit sözde yönerge | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: conceptual
@@ -17,33 +17,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ad75f4abf2e86cb08ba646e50e9390650993d05
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: c8c11165e8b6632488d29e5fe79aa945332c25e9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32050704"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43689368"
 ---
 # <a name="emit-pseudoinstruction"></a>_emit Sözde Yönerge
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- **_Emit** sözde yönerge geçerli metin kesiminde geçerli konumundaki bir bayt tanımlar. **_Emit** sözde yönerge benzer [DB](../../assembler/masm/db.md) yönergesini MASM.  
-  
- Aşağıdaki parça 0x4A, 0x43 ve 0x4B bayt koda yerleştirir:  
-  
-```  
-#define randasm __asm _emit 0x4A __asm _emit 0x43 __asm _emit 0x4B  
- .  
- .  
- .  
-__asm {  
-     randasm  
-     }  
-```  
-  
+
+**Microsoft'a özgü**
+
+**_Emit** sözde yönerge geçerli metin segmentine geçerli konumda bir bayt tanımlar. **_Emit** sözde yönerge benzer [DB](../../assembler/masm/db.md) MASM, yönerge.
+
+Aşağıdaki parçası 0x4A 0x43 ve 0x4B bayt kodun içine yerleştirir:
+
+```cpp
+#define randasm __asm _emit 0x4A __asm _emit 0x43 __asm _emit 0x4B
+.
+.
+.
+__asm {
+     randasm
+     }
+```
+
 > [!CAUTION]
->  Varsa `_emit` yönergeleri oluşturur kaydeder, değiştirmek ve en iyi duruma getirme ile uygulama derleme, derleyici hangi yazmaçlar etkilenen belirleyemiyor. Örneğin, varsa `_emit` değiştiren bir yönerge oluşturur **rax** Kaydet, derleyici bilmediğinden, **rax** değişti. Derleyici sonra satır içi derleyici kod yürütüldükten sonra kaydetmek yanlış varsayılır, değer hakkında yapabilir. Çalıştırıldığında, sonuç olarak, uygulamanızın beklenmeyen davranışlar.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)
+> Varsa `_emit` yönergeler oluşturur kayıtları, değiştirmek ve en iyi duruma getirme ile uygulama derleme, derleyici hangi kayıtları etkilenen belirlenemiyor. Örneğin, varsa `_emit` değiştiren bir yönerge oluşturur **RAX'daki** Kaydet, derleyici olmadığı bilinmiyorsa, **RAX'daki** değişti. Derleyici, satır içi derleme kodu yürütüldükten sonra kaydetme yanlış bir varsayım, değeri hakkında daha sonra yapabilirsiniz. Sonuç olarak, uygulamanızın çalıştığında öngörülemeyen davranışları ortaya çıkabilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[__asm Bloklarında Bütünleştirilmiş Kod Dili Kullanma](../../assembler/inline/using-assembly-language-in-asm-blocks.md)<br/>

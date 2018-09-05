@@ -1,7 +1,7 @@
 ---
 title: .486P | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,23 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8cea4aff2c3ab444598860f823973f99c37e096b
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 1089331725a18a96fd56ec8564ac3403d4e11fd9
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32049063"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43690735"
 ---
 # <a name="486p"></a>.486P
-Derleme (Ayrıcalıklı dahil) tüm yönergeleri için 80486 işlemci sağlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-.486P  
-  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+80486 işlemcisi için derleme (Ayrıcalıklı dahil) tüm yönergeleri sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .486P
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

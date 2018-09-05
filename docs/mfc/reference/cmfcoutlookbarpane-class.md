@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96219173186b578e2469c769ade62c388d8c3c07
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 84f62346d12c978a466de14357352f78345e99f1
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201482"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43691114"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -323,7 +323,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
  Bir RGB renk değeri olarak geçerli metin rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kullanım [CMFCOutlookBarPane::SetTextColor](#settextcolor) Outlook Çubuğu geçerli (normal ve seçili) metin rengini ayarlamak için. Varsayılan metin rengi çağırarak elde edebileceğiniz [GetSysColor](https://msdn.microsoft.com/library/windows/desktop/ms724371) işlevi COLOR_WINDOW dizine sahip.  
+ Kullanım [CMFCOutlookBarPane::SetTextColor](#settextcolor) Outlook Çubuğu geçerli (normal ve seçili) metin rengini ayarlamak için. Varsayılan metin rengi çağırarak elde edebileceğiniz [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) işlevi COLOR_WINDOW dizine sahip.  
   
 ##  <a name="isbackgroundtexture"></a>  CMFCOutlookBarPane::IsBackgroundTexture  
  Arka plan görüntüsü için Outlook Çubuğu bölmesi yüklü olup olmadığını belirler.  

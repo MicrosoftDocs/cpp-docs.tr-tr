@@ -1,7 +1,7 @@
 ---
 title: MAKRO | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2b7469314bc1b65f960df1ca582acb6dbb4624e
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 9d957935c9ca91d2d09a093350c8d23a848e58b2
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054451"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688874"
 ---
 # <a name="macro"></a>MACRO
-Adlı bir makro bloğu işaretler *adı* kurmasını *parametresi* bağımsız değişkenleri yer tutucular geçirilen makrosu çağrıldığında.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   name MACRO [[parameter [[:REQ | :=default | :VARARG]]]]...  
-statements  
-ENDM [[value]]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Makro işlevi döndürür *değeri* arama bildirimi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Adlı bir makro blok işaretler *adı* ve kurar *parametre* geçirilen bağımsız değişkenler için yer tutucular makro çağrıldığında.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *adı* MAKROSU [[*parametre* [[: isteği |: =*varsayılan* |: VARARG]]]]...<br/>
+> *Deyimleri*<br/>
+> ENDM [[*değer*]]
+
+## <a name="remarks"></a>Açıklamalar
+
+Makro bir işlev döndürür *değer* çağırma deyimine.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>
