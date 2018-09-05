@@ -75,7 +75,6 @@
 ## [Visual C++ Dosyalarını Yeniden Dağıtma](redistributing-visual-cpp-files.md)
 ### [Birleştirme Modüllerini Kullanarak Bileşenleri Yeniden Dağıtma](redistributing-components-by-using-merge-modules.md)
 ### [Visual C++ ActiveX Denetimlerini Yeniden Dağıtma](redistributing-visual-cpp-activex-controls.md)
-### [Veritabanı Destek Dosyalarını Yeniden Dağıtma](redistributing-database-support-files.md)
 ### [MFC Kitaplığını Yeniden Dağıtma](redistributing-the-mfc-library.md)
 ### [ATL uygulamasını yeniden dağıtma](redistributing-an-atl-application.md)
 ## [Dağıtım Örnekleri](deployment-examples.md)
