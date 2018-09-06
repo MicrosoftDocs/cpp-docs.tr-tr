@@ -43,11 +43,11 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4a12e5abcc02017acbd06c841cc9ab62a9d25bdf
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
-ms.translationtype: HT
+ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688006"
+ms.lasthandoff: 09/05/2018
+ms.locfileid: "43757107"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 Windows ortak değer değiştirme düğmesi denetimi işlevlerini sağlar.  
