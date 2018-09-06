@@ -1,7 +1,7 @@
 ---
-title: '@ (Bağlayıcı yanıt dosyasını belirtin) | Microsoft Docs'
+title: '@ (Bağlayıcı yanıt dosyasını belirt) | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/05/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -20,35 +20,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f182abcb26561bd07d62581b3beb9c0d3497ddb1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4ff031c64ab57373beadd8a88235d018f2e5c0f5
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369087"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894427"
 ---
 # <a name="-specify-a-linker-response-file"></a>@ (Bağlayıcı Yanıt Dosyasını Belirt)
-```  
-@response_file  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- `response_file`  
- Bağlayıcı komutları belirten bir metin dosyası.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bkz: [@ (derleyici yanıt dosyasını belirtin)](../../build/reference/at-specify-a-compiler-response-file.md) daha fazla bilgi için.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Bu bağlayıcı seçeneği Visual Studio geliştirme ortamından kullanılabilir değil.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bu bağlayıcı seçeneği programlı olarak değiştirilemez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Bağlayıcı yanıt dosyasını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **\@**<em>response_file</em>
+
+## <a name="arguments"></a>Arguments
+
+*response_file*  
+Bağlayıcı komutları belirten bir metin dosyasıdır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bkz: [@ (derleyici yanıt dosyasını belirt)](../../build/reference/at-specify-a-compiler-response-file.md) daha fazla bilgi için.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+- Bu bağlayıcı seçeneğini Visual Studio geliştirme ortamından kullanılabilir değil.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bu bağlayıcı seçeneğini program aracılığıyla değiştirilemez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

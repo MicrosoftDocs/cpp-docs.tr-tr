@@ -19,38 +19,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a879306078c52e0ad11d29f1786a2e55c2480d2f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2a14e0ba315820eec0dd2fe17823f2c5c656fd87
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369571"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895116"
 ---
 # <a name="bscmake-command-file-response-file"></a>BSCMAKE Komut Dosyası (Yanıt Dosyası)
-Bölümünü veya tümünü bir komut dosyası komut satırı girişinde sağlayabilir. Aşağıdaki sözdizimini kullanarak komut dosyasını belirtin:  
-  
+
+Kısmını veya tamamını bir komut dosyası komut satırı giriş sağlayabilirsiniz. Aşağıdaki sözdizimini kullanarak bir komut dosyası belirtin:
+
 ```  
-BSCMAKE @filename  
+BSCMAKE @filename
 ```  
-  
- Yalnızca bir komut dosyası izin verilir. Bir yol belirtebilirsiniz *filename*. Öncesinde *filename* ile bir at işareti (@). BSCMAKE uzantı varsaymaz. Ek belirtebilirsiniz *sbrfiles* sonra komut satırında *filename*. Komut dosyası komut satırında belirtirsiniz gibi BSCMAKE girdisi aynı sırada içeren bir metin dosyasıdır. Komut satırı bağımsız değişkenleri, bir veya daha fazla boşluk, sekme veya yeni satır karakteri ile ayırın.  
-  
- Aşağıdaki komutu bir komut dosyası kullanarak BSCMAKE çağırır:  
-  
+
+Yalnızca bir komut dosyası izin verilir. Bir yol belirtebilirsiniz *filename*. Önünde *filename* ile bir at işareti (**\@**). BSCMAKE uzantı varsaymaz. Belirtebileceğiniz ek *sbrfiles* sonra komut satırında *filename*. Komut dosyası komut satırında belirttiğiniz gibi aynı sırada BSCMAKE girişi içeren bir metin dosyasıdır. Komut satırı bağımsız değişkenleri, bir veya daha fazla boşluk, sekme veya yeni satır karakterleri ile ayırın.
+
+BSCMAKE komut dosyası kullanarak aşağıdaki komutu çağırır:
+
 ```  
-BSCMAKE @prog1.txt  
+BSCMAKE @prog1.txt
 ```  
-  
- Bir örnek komut dosyası verilmiştir:  
-  
+
+Örnek komut dosyası aşağıda verilmiştir:
+
 ```  
-/n /v /o main.bsc /El  
+/n /v /o main.bsc /El
 /S (  
-toolbox.h  
-verdate.h c:\src\inc\screen.h  
-)  
-file1.sbr file2.sbr file3.sbr file4.sbr  
+toolbox.h
+verdate.h c:\src\inc\screen.h
+)
+file1.sbr file2.sbr file3.sbr file4.sbr
 ```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[BSCMAKE Başvurusu](../../build/reference/bscmake-reference.md)

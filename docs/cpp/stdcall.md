@@ -1,7 +1,7 @@
 ---
 title: __stdcall | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/05/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -16,71 +16,73 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8b845fd147f51e3546f7a11afa0bae6deb5d527
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 4a452d563646ac869bc1a3bc832a72a9bd11b694
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461471"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894815"
 ---
 # <a name="stdcall"></a>__stdcall
-**Microsoft'a özgü**  
-  
- **__Stdcall** çağırma kuralı Win32 API işlevleri çağırmak için kullanılır. Aranan, yığını temizler, derleyici yapsak `vararg` işlevleri **__cdecl**. Bu çağrı kuralını kullanan işlevler bir işlev prototipi gerektirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-return-type __stdcall function-name[(argument-list)]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.  
-  
-|Öğe|Uygulama|  
-|-------------|--------------------|  
-|Bağımsız değişken geçirme sırası|Sağdan sola.|  
-|Bağımsız değişken geçirme kuralı|Değer bir işaretçi veya başvuru türü geçirilmezse.|  
-|Yığın bakımı sorumluluğu|Çağırılan işlev, yığından bağımsız kendi değişkenlerini yığından.|  
-|Ad düzenleme kuralı|Bir alt çizgi (_) adın önekidir. Adın ardından at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ardından. Bu nedenle, bildirilen işlev `int func( int a, double b )` şu şekilde sunulur: `_func@12`|  
-|Durum çevirisi kuralları|Yok.|  
-  
- [/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğini belirten **__stdcall** farklı bir çağırma kuralı açıkça bildirilmeyen tüm işlevler için.  
-  
- Kullanılarak bildirilen işlevlerle **__stdcall** değiştirici dönüş değerleri kullanılarak bildirilen işlevlerle aynı şekilde [__cdecl](../cpp/cdecl.md).  
-  
- ARM ve x64 işlemciler **__stdcall** kabul edilir ve derleyici tarafından; ARM ve x64 mimarileri, yoksayıldı. kural olarak, bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve sonraki bağımsız değişkenler yığına geçirilir.  
-  
- Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımı verildiğinde,  
-  
-```cpp  
+
+**Microsoft'a özgü**
+
+**__Stdcall** çağırma kuralı Win32 API işlevleri çağırmak için kullanılır. Aranan, yığını temizler, derleyici yapsak `vararg` işlevleri **__cdecl**. Bu çağrı kuralını kullanan işlevler bir işlev prototipi gerektirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> *dönüş türü*  **\_ \_stdcall** *işlevi adı*[**(** *bağımsız değişken listesi* **)** ]
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki liste bu çağırma kuralının uygulamasını gösterir.
+
+|Öğe|Uygulama|
+|-------------|--------------------|
+|Bağımsız değişken geçirme sırası|Sağdan sola.|
+|Bağımsız değişken geçirme kuralı|Değer bir işaretçi veya başvuru türü geçirilmezse.|
+|Yığın bakımı sorumluluğu|Çağırılan işlev, yığından bağımsız kendi değişkenlerini yığından.|
+|Ad düzenleme kuralı|Bir alt çizgi (_) adın önekidir. Adın ardından at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ardından. Bu nedenle, bildirilen işlev `int func( int a, double b )` şu şekilde sunulur: `_func@12`|
+|Durum çevirisi kuralları|Yok.|
+
+[/Gz](../build/reference/gd-gr-gv-gz-calling-convention.md) derleyici seçeneğini belirten **__stdcall** farklı bir çağırma kuralı açıkça bildirilmeyen tüm işlevler için.
+
+Kullanılarak bildirilen işlevlerle **__stdcall** değiştirici dönüş değerleri kullanılarak bildirilen işlevlerle aynı şekilde [__cdecl](../cpp/cdecl.md).
+
+ARM ve x64 işlemciler **__stdcall** kabul edilir ve derleyici tarafından; ARM ve x64 mimarileri, yoksayıldı. kural olarak, bağımsız değişkenler mümkün olduğunda kayıtlara geçirilir ve sonraki bağımsız değişkenler yığına geçirilir.
+
+Statik olmayan sınıf işlevleri için, işlev satır dışı olarak tanımlandıysa çağırma kuralı değiştiricinin satır dışı tanımda belirtilmesi gerekmez. Diğer bir deyişle, statik olmayan üye sınıfı yöntemler için tanım noktasında bildirim sırasında belirtilen çağırma kuralı kabul edilir. Bu sınıf tanımı verildiğinde,
+
+```cpp
 struct CMyClass {  
-   void __stdcall mymethod();  
-};  
-```  
-  
- this  
-  
-```cpp  
+   void __stdcall mymethod();
+};
+```
+
+this
+
+```cpp
 void CMyClass::mymethod() { return; }  
-```  
-  
- Şuna eşdeğerdir:  
-  
-```cpp  
+```
+
+Şuna eşdeğerdir:
+
+```cpp
 void __stdcall CMyClass::mymethod() { return; }  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, kullanım **__stdcall** tüm sonuçları `WINAPI` işlevi standart arama olarak işlenen türleri:  
-  
-```cpp  
-// Example of the __stdcall keyword  
-#define WINAPI __stdcall  
-// Example of the __stdcall keyword on function pointer  
-typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte, kullanım **__stdcall** tüm sonuçları `WINAPI` işlevi standart arama olarak işlenen türleri:
+
+```cpp
+// Example of the __stdcall keyword
+#define WINAPI __stdcall
+// Example of the __stdcall keyword on function pointer
+typedef BOOL (__stdcall *funcname_ptr)(void * arg1, const char * arg2, DWORD flags, ...);
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Bağımsız değişkeni geçirme ve adlandırma kuralları](../cpp/argument-passing-and-naming-conventions.md)   
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

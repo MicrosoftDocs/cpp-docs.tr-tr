@@ -14,39 +14,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2f7ad294a9f199d5dbe6821c61317ed0b6b2693
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89f71bff1d8f64da2ad029e300fe2427235eac0a
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373042"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894531"
 ---
 # <a name="nmake-options"></a>NMAKE Seçenekleri
-NMAKE seçenekleri aşağıdaki tabloda açıklanmıştır. Seçenekler, eğik çizgi (/) veya tire (-) tarafından öncesinde ve büyük küçük harfe duyarlı değildir. Kullanım [! CMDSWITCHES](../build/makefile-preprocessing-directives.md) derleme görevleri dosyası veya Tools.ini seçenek ayarlarını değiştirmek için.  
-  
-|Seçenek|Amaç|  
-|------------|-------------|  
-|/A|Tüm değerlendirilen hedefleri, bağımlılıklar göre değil güncel olması durumunda bile yapısını zorlar. İlişkisiz hedefler derleme zorlamaz.|  
-|/B|Zaman damgaları eşit olsa bile zorlar oluşturun. Yalnızca çok hızlı sistemleri (çözünürlük iki saniye veya daha az) için önerilir.|  
-|/C|Çıkış, varsayılan önemli olmayan NMAKE hataları veya uyarıları, zaman damgaları ve NMAKE telif hakkı iletisi de dahil olmak üzere gizler. /K. tarafından verilen uyarıları gizler|  
-|/D|Bir hedef yoksa her birinin görüntüler zaman damgaları hedef ve bağımlı ve bir ileti değerlendirilir. Derleme görevleri dosyası hata ayıklama için /P ile kullanışlıdır. Kullanım **! CMDSWITCHES** ayarlayın veya derleme görevleri dosyası kısmı için /D temizleyin.|  
-|/E|Derleme görevleri dosyası makrosu tanımları geçersiz kılmak ortam değişkenleri neden olur.|  
-|/ ERRORREPORT [NONE &AMP;#124; KOMUT İSTEMİ &AMP;#124; SIRA &AMP;#124; GÖNDER]|Çalışma zamanında NMAKE.exe başarısız olursa, iç bu hatalar hakkında bilgi göndermek için/errorreport kullanabilirsiniz.<br /><br /> / Errorreport hakkında daha fazla bilgi için bkz: [/errorreport (dahili derleme hatalarını raporla)](../build/reference/errorreport-report-internal-compiler-errors.md).|  
-|/F `filename`|Belirtir `filename` derleme görevleri dosyası olarak. Boşluk veya sekmeleri önünde `filename`. /F kez için her derleme görevleri dosyası belirtin. Standart giriş gelen derleme görevleri dosyası temin etmek için bir tire (-) belirtme `filename`ve klavye girişi F6 veya CTRL + Z ile bitmelidir.|  
-|/G|İle birlikte gelen derleme görevleri dosyaları görüntüler! INCLUDE yönergesi.  Bkz: [derleme görevleri dosyası önişleme yönergeleri](../build/makefile-preprocessing-directives.md) daha fazla bilgi için.|  
-|/ HELP, /?|NMAKE komut satırı sözdizimi kısa bir özetini görüntüler.|  
-|/I|Tüm komutları çıkış kodlarından yok sayar. Ayarlayın veya derleme görevleri dosyası kısmı için /I temizlemek için kullanın **! CMDSWITCHES**. Derleme görevleri dosyası parçası için çıkış kodlarını yoksaymak için bir tire (-) komutu değiştiricisi kullanmayın veya [. Yoksay](../build/dot-directives.md). Her ikisi de belirtilirse/k geçersiz kılar.|  
-|/ K|Bir komutu hata verirse ilgisiz bağımlılıkları oluşturmaya devam eder. Ayrıca, bir uyarı verir ve 1 çıkış kodu döndürür. Varsayılan olarak, herhangi bir komutu sıfır olmayan çıkış kodu döndürürse NMAKE durur. / K'den uyarılar /C tarafından bastırılan; Her ikisi de belirtilirse /I/k geçersiz kılar.|  
-|/N|Komutlar yürütülürken değil ancak görüntüler; önişlem komutlar yürütülür. Komutları özyinelemeli NMAKE çağrılarında görüntülemez. Derleme görevleri dosyaları hata ayıklama ve zaman damgaları denetimi için kullanışlıdır. Ayarlayın veya derleme görevleri dosyası kısmı için /N temizlemek için kullanın **! CMDSWITCHES**.|  
-|/NOLOGO|NMAKE telif hakkı iletisi gizler.|  
-|/P|Daha fazla bilgi görüntüler (makrosu tanımları, çıkarım kuralları, hedefler [. SONEKLERİ](../build/dot-directives.md) listesi) için standart çıktı ve yapı çalıştırır. Derleme görevleri dosyası veya komut satırı hedef yok, yalnızca bilgileri görüntüler. Derleme görevleri dosyası hata ayıklamak için /D ile kullanın.|  
-|/Q|Hedefleri damgalarının denetler; Yapı çalışmaz. Hiçbir hedef değilse, tüm hedefleri güncel olması durumunda bir sıfır çıkış kodu ve sıfır olmayan çıkış kodu döndürür. Önişlem komutlar yürütülür. Bir toplu iş dosyasından NMAKE çalıştırma kullanışlıdır.|  
-|/R|Temizler **. SONEKLERİ** listelemek ve çıkarım kuralları ve Tools.ini dosyasında tanımlanan veya, önceden tanımlanmış makrolar yok sayar.|  
-|/ S|Yürütülen komutların görüntülenmesini engeller. Derleme görevleri dosyası kısmen görüntüsünü gizlemek için kullanın **@** komutu değiştiricisi veya [. Sessiz](../build/dot-directives.md). Ayarlayın veya derleme görevleri dosyası kısmı için /S temizlemek için kullanın **! CMDSWITCHES**.|  
-|/T|Zaman damgaları komut satırı hedefleri (veya ilk derleme görevleri dosyası hedef) güncelleştirir ve önişlem komutları yürütür ancak derleme çalışmaz.|  
-|/U|/N. ile birlikte kullanılmalıdır Böylece /N çıktısı bir toplu iş dosyası olarak kullanılabilir, satır içi NMAKE dosyalar dökümünü yapar.|  
-|/X `filename`|NMAKE hata çıktısı gönderir `filename` yerine standart hata. Boşluk veya sekmeleri önünde `filename`. Standart çıktıya hata çıkış göndermek için bir tire (-) belirtme `filename`. Standart hata komutları çıktısını etkilemez.|  
-|/Y|Toplu iş modu çıkarım kuralları devre dışı bırakır. Bu seçenek belirlendiğinde, tüm toplu iş modu çıkarım kuralları normal çıkarım kuralları kabul edilir.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Çalıştırma](../build/running-nmake.md)
+
+NMAKE seçenekleri aşağıdaki tabloda açıklanmıştır. Seçenekler, eğik çizgi (/) veya tire (-) tarafından öncesinde ve büyük/küçük harfe duyarlı değildir. Kullanım [! CMDSWITCHES](../build/makefile-preprocessing-directives.md) derleme görevleri dosyası veya Tools.ini seçenek ayarlarını değiştirmek için.
+
+|Seçenek|Amaç|
+|------------|-------------|
+|/A|Tüm değerlendirilen hedeflere göre bağımlılıklar değil güncel olması durumunda bile yapısını zorlar. İlgisiz hedefler yapısını zorlamaz.|
+|/B|Zaman damgaları eşitse bile zorlar oluşturun. Yalnızca çok hızlı sistemleri (çözüm iki saniye veya daha az) için önerilir.|
+|/C|NMAKE önemli olmayan hataları veya uyarıları, zaman damgaları ve NMAKE telif hakkı iletisini gibi çıkış, varsayılan bastırır. /K. tarafından verilen uyarıları bastırır|
+|/D|Bir hedef mevcut değil, hedef ve bağımlı ve bir ileti görüntüler zaman damgaları her değerlendirilir. Derleme görevleri dosyası hata ayıklama için /P ile yararlıdır. Kullanım **! CMDSWITCHES** veya derleme görevleri dosyası parçası için /D temizleyin.|
+|/E|Derleme görevleri dosyası makro tanımları geçersiz kılmak ortam değişkenlerini neden olur.|
+|/ ERRORREPORT [NONE &AMP;#124; İSTEMİ &AMP;#124; KUYRUK &AMP;#124; GÖNDER]|Çalışma zamanında NMAKE.exe başarısız olursa, bu iç hataları hakkında Microsoft'a bilgi/errorreport kullanabilirsiniz.<br /><br /> / Errorreport hakkında daha fazla bilgi için bkz: [/errorreport (dahili derleme hatalarını raporla)](../build/reference/errorreport-report-internal-compiler-errors.md).|
+|/F *dosya adı*|Belirtir *filename* derleme görevleri dosyası olarak. Boşluk veya sekme önünde *filename*. /F kez için her bir derleme görevleri dosyası belirtin. Standart girişten alınan bir derleme görevleri dosyası temin etmek için bir tire (-) belirtme *filename*ve klavye girdisi F6 ya da CTRL + Z ile bitmelidir.|
+|/G|Bulunan derleme görevleri dosyalarını görüntüler! INCLUDE yönergesi.  Bkz: [derleme görevleri dosyası önişleme yönergeleri](../build/makefile-preprocessing-directives.md) daha fazla bilgi için.|
+|/ HELP, /?|NMAKE komut satırı sözdizimi kısa bir özetini görüntüler.|
+|/I|Tüm komutlarından çıkış kodlarını dikkate almaz. Ayarlayın veya derleme görevleri dosyası parçası için /I temizlemek için kullanın **! CMDSWITCHES**. Derleme görevleri dosyası bölümü için çıkış kodları yoksaymak için bir tire (-) komut değiştiricisini kullanın veya [. Yoksay](../build/dot-directives.md). Her ikisi de belirtilirse /K geçersiz kılar.|
+|/K|Bir komut hata verirse ilgisiz bağımlılıkları oluşturmaya devam eder. Ayrıca bir uyarı verir ve bir çıkış kodu 1 döndürür. Varsayılan olarak, herhangi bir komutu bir sıfır olmayan çıkış kodu döndürürse NMAKE durdurur. /K gelen uyarılar /C tarafından bastırılan; Her ikisi de belirtilirse /I /K geçersiz kılar.|
+|/N|Görüntüler ancak komutları yürütmez. Ön işlem komutları yürütülür. Komutları özyinelemeli NMAKE çağrılarında görüntülemez. Derleme görevleri dosyası hata ayıklama ve zaman damgaları denetimi için kullanışlıdır. Ayarlayın veya derleme görevleri dosyası parçası için /N temizlemek için kullanın **! CMDSWITCHES**.|
+|/NOLOGO|NMAKE telif hakkı iletisini görüntüler.|
+|/P|Daha fazla bilgi görüntüler (makro tanımları, çıkarım kuralları, hedefler [. SONEKLERİ](../build/dot-directives.md) listesi) için standart çıktı ve ardından yapı çalıştırır. Herhangi bir derleme görevleri dosyası veya komut satırı hedef varsa, yalnızca bilgileri görüntüler. /D ile bir derleme görevleri dosyası hata ayıklama için kullanın.|
+|/Q|Denetimleri zaman damgaları hedefleri; derleme çalıştırmaz. Herhangi bir hedef değil tüm hedefleri güncel olması durumunda bir sıfır çıkış kodu ve sıfır olmayan çıkış kodu döndürür. Ön işlem komutları yürütülür. Bir toplu iş dosyasından NMAKE çalıştırma kullanışlıdır.|
+|/R|Temizler **. SONEKLERİ** listelemek ve çıkarım kuralları ve Tools.ini dosyasında tanımlı veya, önceden tanımlanmış makrolar yok sayar.|
+|/S|Yürütülen komutlar görüntülenmesini bastırır. Kısmi derleme görevleri dosyası görüntülenmesini engellemek için kullanın **\@** komut değiştiricisi veya [. Sessiz](../build/dot-directives.md). Ayarlayın veya derleme görevleri dosyası parçası için /S temizlemek için kullanın **! CMDSWITCHES**.|
+|/T|Zaman damgaları komut satırı hedefleri (veya ilk derleme görevleri dosyası hedef) güncelleştirir ve ön işlem komutları yürütür, ancak yapı çalışmaz.|
+|/U|/N. ile birlikte kullanılmalıdır /N çıkış bir toplu iş dosyası olarak kullanılabilir, böylece satır içi NMAKE dosyaları dökümünü yapar.|
+|/X *dosya adı*|NMAKE hata çıktısı gönderir *filename* yerine standart hata. Boşluk veya sekme önünde *filename*. Hata çıktısını standart çıktıya göndermek için bir tire (-) belirtme *filename*. Standart hata komutları çıktısını etkilemez.|
+|/Y|Toplu iş modu çıkarım kuralları devre dışı bırakır. Tüm toplu iş modu çıkarım kuralları, bu seçenek belirlendiğinde, normal çıkarım kuralları kabul edilir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Çalıştırma](../build/running-nmake.md)

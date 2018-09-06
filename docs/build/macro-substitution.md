@@ -16,26 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4028ee710cf38b6a4ef929de9a7e4ffad95f3e41
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8f71ef2e1a8f337a4cd415169b6f9d817042f19a
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368076"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894401"
 ---
 # <a name="macro-substitution"></a>Makro Değiştirme
-Zaman *makroadı* çağrılır, her oluşumu *Dize1* , tanımında dize ile değiştirilir *dize2*.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-$(macroname:string1=string2)  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Makro değiştirme büyük küçük harfe duyarlıdır ve değişmez değer; *Dize1* ve *dize2* makroları çağrılamıyor. Değiştirme orijinal tanımını değiştirmez. Önceden tanımlanmış tüm makrosu dışında metinde yerine [ $$@ ](../build/filename-macros.md).  
-  
- Hiçbir boşluk ya da sekme iki nokta üst üste koyun; herhangi iki nokta üst üste sonra sabit değer olarak yorumlanır. Varsa *dize2* null, tüm oluşumlarını olan *Dize1* makro tanımı dizeden silinir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Makrosu Kullanma](../build/using-an-nmake-macro.md)
+
+Zaman *makroadı* çağrılır, her geçtiği *Dize1* tanımında dize ile değiştirilir *dize2*.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+$(macroname:string1=string2)
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Makro değiştirme büyük/küçük harfe duyarlıdır ve sabitidir. *Dize1* ve *dize2* makroları çağrılamaz. Orijinal tanımını değiştirme değiştirmez. Dışında herhangi bir önceden tanımlanmış makro metinde değiştirebildiği [ $$@ ](../build/filename-macros.md).
+
+Boşluk veya sekme iki nokta üst üste koyun; herhangi iki noktadan sonra değişmez değer olarak yorumlanır. Varsa *dize2* null, tüm oluşumlarını olan *Dize1* makro tanımı dizeden silinir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Makrosu Kullanma](../build/using-an-nmake-macro.md)

@@ -16,28 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6607016e2661817de04fce505bc921a3a25320a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 299d300cb3b2247a4dfa698a53c486bcef6164e3
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219499"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894557"
 ---
 # <a name="exports"></a>EXPORTS
 
-Dışa aktarılan adlarla belirten bir veya daha fazla dışarı aktarma tanımları bir bölümünü veya sıra sayıları işlevleri veya verileri ortaya çıkarır. Her tanım ayrı bir satırda olmalıdır.  
-  
-```DEF  
-EXPORTS  
-   definition  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
+Dışa aktarılan adlarla belirten bir veya daha fazla dışarı aktarma tanımları bir bölümünü veya sıra sayıları işlevleri veya verileri ortaya çıkarır. Her tanım ayrı bir satırda olmalıdır.
 
-İlk *tanımı* aynı satırda olabilir `EXPORTS` anahtar sözcüğü veya bir sonraki satırda. . DEF dosyası, bir veya daha fazla içerebilir `EXPORTS` deyimleri.  
-  
-Bir dışarı aktarma için söz dizimi *tanımı* olan:  
-  
+```DEF
+EXPORTS
+   definition
+```  
+
+## <a name="remarks"></a>Açıklamalar
+
+İlk *tanımı* aynı satırda olabilir `EXPORTS` anahtar sözcüğü veya bir sonraki satırda. . DEF dosyası, bir veya daha fazla içerebilir `EXPORTS` deyimleri.
+
+Bir dışarı aktarma için söz dizimi *tanımı* olan:
+
 ```DEF
 entryname[=internal_name|other_module.another_exported_name] [@Ordinal [NONAME]] [[PRIVATE] | [DATA]]
 ```
@@ -63,48 +63,48 @@ EXPORTS
    func2=other_module.#42
 ```
 
-Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, düzenlenmiş adı internal_name kullanın veya extern "C" kaynak kodunda kullanarak dışarı aktarılan işlevleri tanımlar. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (_) öneki ve soneki oluşan at işareti (@) bağımsız değişken listesinde (ondalık) bayt sayısı ardından.  
-  
-Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](../../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../../build/reference/map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.  
-  
-Kullanabilirsiniz*sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna gideceğini belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.  
-  
-İsteğe bağlı kullanarak `NONAME` anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.  
-  
-İsteğe bağlı anahtar sözcük `PRIVATE` engeller *GirişAdı* bağlantı tarafından oluşturulan içeri aktarma kitaplığına eklenen öğesinden. Dışa aktarma, ayrıca bağlantı tarafından oluşturulan görüntüyü etkilemez.  
-  
-İsteğe bağlı anahtar sözcük `DATA` verme kod değil veri olduğunu belirtir. Bu örnek adlı bir veri değişkeni nasıl dışarı aktarılamadı gösterir `exported_global`:  
-  
-```DEF  
-EXPORTS  
-   exported_global DATA  
+Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, düzenlenmiş adı internal_name kullanın veya extern "C" kaynak kodunda kullanarak dışarı aktarılan işlevleri tanımlar. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
+
+Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](../../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../../build/reference/map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.
+
+Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna gideceğini belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.
+
+İsteğe bağlı kullanarak **NONAME** anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.
+
+İsteğe bağlı anahtar sözcük **özel** engeller *GirişAdı* bağlantı tarafından oluşturulan içeri aktarma kitaplığına eklenen öğesinden. Dışa aktarma, ayrıca bağlantı tarafından oluşturulan görüntüyü etkilemez.
+
+İsteğe bağlı anahtar sözcük **veri** verme kod değil veri olduğunu belirtir. Bu örnek adlı bir veri değişkeni nasıl dışarı aktarılamadı gösterir `exported_global`:
+
+```DEF
+EXPORTS
+   exported_global DATA
 ```  
-  
-Önerilen sırayla yeniden listelenmiş bir tanımını dışarı aktarma için izleyebileceğiniz dört yol vardır:  
-  
-1.  [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü  
-  
-2.  Bir `EXPORTS` deyiminde bir. DEF dosyası  
-  
-3.  Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi  
-  
-4.  A [yorum](../../preprocessor/comment-c-cpp.md) kaynak kodda, formun yönergesi `#pragma comment(linker, "/export: definition ")`  
-  
-Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır.  
-  
-Dışarı aktarmalar bölümün bir örnek aşağıda verilmiştir:  
-  
-```DEF  
-EXPORTS  
-   DllCanUnloadNow      @1          PRIVATE  
-   DllWindowName = WindowName       DATA  
-   DllGetClassObject    @4 NONAME   PRIVATE  
-   DllRegisterServer    @7  
-   DllUnregisterServer  
+
+Önerilen sırayla yeniden listelenmiş bir tanımını dışarı aktarma için izleyebileceğiniz dört yol vardır:
+
+1. [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü
+
+2. Bir `EXPORTS` deyiminde bir. DEF dosyası
+
+3. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+
+4. A [yorum](../../preprocessor/comment-c-cpp.md) kaynak kodda, formun yönergesi `#pragma comment(linker, "/export: definition ")`  
+
+Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır.
+
+Dışarı aktarmalar bölümün bir örnek aşağıda verilmiştir:
+
+```DEF
+EXPORTS
+   DllCanUnloadNow      @1          PRIVATE
+   DllWindowName = WindowName       DATA
+   DllGetClassObject    @4 NONAME   PRIVATE
+   DllRegisterServer    @7
+   DllUnregisterServer
 ```  
-  
-Dışarı aktardığınızda bir değişken DLL'den kullanarak bir. DEF dosyası sahip olmadığınız belirtmek `__declspec(dllexport)` değişken. Ancak, DLL kullanan herhangi bir dosyayı, yine de kullanmalısınız `__declspec(dllimport)` bildiriminde veri.  
-  
+
+Dışarı aktardığınızda bir değişken DLL'den kullanarak bir. DEF dosyası sahip olmadığınız belirtmek `__declspec(dllexport)` değişken. Ancak, DLL kullanan herhangi bir dosyayı, yine de kullanmalısınız `__declspec(dllimport)` bildiriminde veri.
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

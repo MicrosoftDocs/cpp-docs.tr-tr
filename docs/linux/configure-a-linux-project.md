@@ -1,7 +1,7 @@
 ---
 title: Visual Studio'da C++ Linux projesi yapılandırma | Microsoft Docs
 ms.custom: ''
-ms.date: 04/28/2018
+ms.date: 09/05/2018
 ms.reviewer: ''
 ms.suite: ''
 ms.technology:
@@ -14,17 +14,19 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: b4e5bad5b0688a2f0deeb237335c26419e2d9cbe
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: fbc0674a7659ffccd5ab5c655f74167acebdca97
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207908"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895207"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
+
 Bu konuda, Visual Studio'da C++ Linux projesi yapılandırma açıklar. Visual Studio'da CMake Linux projeleri hakkında daha fazla bilgi için bkz: [Linux CMake projesi yapılandırma ](cmake-linux-project.md).
 
 ## <a name="general-settings"></a>Genel ayarlar
+
 Visual Studio ile Linux projesi için çeşitli seçenekler yapılandırılabilir.  Bu seçenekleri görüntülemek için seçin **Proje > Özellikleri** menüsü ya da projeye sağ tıklayarak **Çözüm Gezgini** seçip **özellikleri** bağlam menüsünden. **Genel** ayarları görüntülenir.
 
 ![Genel yapılandırma](media/settings_general.png)
@@ -32,13 +34,14 @@ Visual Studio ile Linux projesi için çeşitli seçenekler yapılandırılabili
 Varsayılan olarak, bir yürütülebilir dosya (.out) aracı ile yerleşik hale getirilmiştir.  Bir statik veya dinamik kitaplığını oluşturmak veya mevcut bir derleme görevleri dosyası kullanmak için **yapılandırma türü** seçimi.
 
 ## <a name="remote-settings"></a>Uzak bağlantı ayarları
+
 Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçenekleri yapılandırma **genel** ayarları:
 
-* Hedef Linux bilgisayarı değiştirmek için kullanın **uzak derleme makinesi** girişi.  Bu, daha önce oluşturduğunuz bağlantılardan birini seçmenize olanak sağlar.  Yeni bir giriş oluşturmak için lütfen bkz [için Uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md) bölümü.
+- Hedef Linux bilgisayarı değiştirmek için kullanın **uzak derleme makinesi** girişi.  Bu, daha önce oluşturduğunuz bağlantılardan birini seçmenize olanak sağlar.  Yeni bir giriş oluşturmak için lütfen bkz [için Uzak Linux bilgisayarınıza bağlanma](connect-to-your-remote-linux-computer.md) bölümü.
 
-* **Uzaktan derleme kök dizini** proje uzak Linux bilgisayarda nerede oluşturulan kök konumu belirler.  Bu varsayılan **~/projects** değiştirmediğiniz sürece.
+- **Uzaktan derleme kök dizini** proje uzak Linux bilgisayarda nerede oluşturulan kök konumu belirler.  Bu varsayılan **~/projects** değiştirmediğiniz sürece.
 
-* **Uzaktan derleme proje dizini** burada uzak Linux bilgisayarda bu belirli proje oluşturulacak olan.  Bu varsayılan **$(RemoteRootDir)/$(ProjectName)**, yukarıda kök dizininin altındaki şu anki proje sonra adlandırılmış bir dizine genişletin.
+- **Uzaktan derleme proje dizini** burada uzak Linux bilgisayarda bu belirli proje oluşturulacak olan.  Bu varsayılan **$(RemoteRootDir)/$(ProjectName)**, yukarıda kök dizininin altındaki şu anki proje sonra adlandırılmış bir dizine genişletin.
 
 > [!NOTE]
 > ' % S'varsayılan C ve C++ Derleyicileri, veya bağlayıcı ve projeyi derlemek için kullanılan Arşivleyicide değiştirmek için uygun girdileri kullanmak **C/C++ > Genel** bölümü ve **bağlayıcı > Genel** bölümü.  Bunlar, örneğin belirli bir sürümü GCC veya hatta Clang derleyici kullanmak için ayarlanabilir.
@@ -61,17 +64,19 @@ Dosyalar kopyalandıktan sonra kullanmak **VC ++ dizinleri** Visual Studio yaln�
 **Visual Studio 2017 sürüm 15.7 ve üzeri:** bkz [yönetme uzak üst bilgiler için IntelliSense](#remote_intellisense).
 
 ## <a name="copy-sources"></a>Kaynakları Kopyala
+
 Oluştururken, kaynak dosyaları PC geliştirme Linux bilgisayara kopyalar ve orada derlenir.  Varsayılan olarak, tüm kaynakları Visual Studio projesini, yukarıdaki ayarlarında belirlenen konumlara kopyalanır.  Ancak, ek kaynaklar listesine de eklenebilir veya kaynakları kopyalama bir derleme görevleri dosyası projesi için varsayılan seçenek tamamen devre dışı kapatılabilir.
 
-* **Kopyalanacak kaynakları** hangi kaynakları uzak bilgisayara kopyalanır belirler.  Varsayılan olarak, **@(SourcesToCopyRemotely)** projedeki tüm kaynak kodu dosyaları için varsayılan olarak, ancak resimler gibi herhangi bir varlık/kaynak dosyası içermiyor.
+- **Kopyalanacak kaynakları** hangi kaynakları uzak bilgisayara kopyalanır belirler.  Varsayılan olarak,  **\@(SourcesToCopyRemotely)** projedeki tüm kaynak kodu dosyaları için varsayılan olarak, ancak resimler gibi herhangi bir varlık/kaynak dosyası içermiyor.
 
-* **Kaynakları Kopyala** açılabilir ve etkinleştirmek ve uzak bilgisayarın kaynak dosyaların kopyalanmasını devre dışı bırakmak için kapalı.
+- **Kaynakları Kopyala** açılabilir ve etkinleştirmek ve uzak bilgisayarın kaynak dosyaların kopyalanmasını devre dışı bırakmak için kapalı.
 
-* **Kopyalanacak ek kaynakları** uzak sisteme kopyalanacak ek kaynak dosyaları eklemenizi sağlar.  Noktalı virgülle ayrılmış liste belirtebilir veya kullanabileceğiniz **: =** kullanılacak yerel ve uzak bir ad belirtmek için sözdizimi:
+- **Kopyalanacak ek kaynakları** uzak sisteme kopyalanacak ek kaynak dosyaları eklemenizi sağlar.  Noktalı virgülle ayrılmış liste belirtebilir veya kullanabileceğiniz **: =** kullanılacak yerel ve uzak bir ad belirtmek için sözdizimi:
 
-  `C:\Projects\ConsoleApplication1\MyFile.cpp:=~/projects/ConsoleApplication1/ADifferentName.cpp;C:\Projects\ConsoleApplication1\MyFile2.cpp:=~/projects/ConsoleApplication1/ADifferentName2.cpp;`
+`C:\Projects\ConsoleApplication1\MyFile.cpp:=~/projects/ConsoleApplication1/ADifferentName.cpp;C:\Projects\ConsoleApplication1\MyFile2.cpp:=~/projects/ConsoleApplication1/ADifferentName2.cpp;`
 
 ## <a name="build-events"></a>Derleme olayları
+
 Tüm derleme bir uzak bilgisayarda gerçekleştiği için birkaç ek derleme olayları proje özelliklerinde Build Events bölümüne eklenmiştir.  Bunlar **uzaktan derleme öncesi olay**, **uzaktan bağlama öncesi olay**, ve **uzaktan derleme sonrası olay**ve uzak bilgisayarda önce veya sonra tek tek adımları meydana gelir işlemi.
 
 ![Derleme olayları](media/settings_buildevents.png)
@@ -91,6 +96,7 @@ apt install zip
 ![Uzak üst bilgi IntelliSense](media/remote-header-intellisense.png)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Proje Özellikleriyle Çalışma](../ide/working-with-project-properties.md)  
 [C++ genel özellikleri (Linux C++)](../linux/prop-pages/general-linux.md)  
 [VC ++ dizinleri (Linux C++)](../linux/prop-pages/directories-linux.md)  

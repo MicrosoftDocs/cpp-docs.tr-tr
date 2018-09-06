@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0babb0932fc059a91fd8da79f649039bcaebc457
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 02453ae14ab6e8cd4a75a9f2d8725ce69e2b7f02
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753742"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895298"
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 
@@ -116,11 +116,11 @@ class CUrl
 
 `CUrl` yol veya bağlantı noktası numarası gibi bir URL alanlarını yönetmenize olanak sağlar. `CUrl` Aşağıdaki biçimindeki URL'ler anlar:
 
-\<Düzeni > ://\<kullanıcı adı >:\<parola > @\<ana bilgisayar adı >:\<PortNumber > /\<UrlPath >\<ExtraInfo >
+\<Düzeni > ://\<kullanıcı adı >:\<parola >\@\<ana bilgisayar adı >:\<PortNumber > /\<UrlPath >\<ExtraInfo >
 
 (Bazı alanlar isteğe bağlıdır.) Örneğin, bu URL'yi göz önünde bulundurun:
 
-http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
+`http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents`
 
 [CUrl::CrackUrl](#crackurl) gibi ayrıştırır:
 
@@ -130,7 +130,7 @@ http://someone:secret@www.microsoft.com:80/visualc/stuff.htm#contents
 
 - Parola: "gizli"
 
-- Ana bilgisayar adı: "www.microsoft.com"
+- Ana bilgisayar adı: "`www.microsoft.com`"
 
 - PortNumber: 80
 
@@ -235,7 +235,7 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE.
 
 Bu yöntem, aşağıdaki biçimi kullanarak eksiksiz bir URL dizesi oluşturmak için her bir alanı ekler:
 
-**\<düzeni > ://\<kullanıcı >:\<geçirmek > @\<etki alanı >:\<bağlantı noktası >\<yolu >\<ek >**
+**\<düzeni > ://\<kullanıcı >:\<geçirmek >\@\<etki alanı >:\<bağlantı noktası >\<yolu >\<ek >**
 
 Bu yöntem çağrılırken *pdwMaxLength* parametresi tarafından başvurulan dize arabelleğinin en büyük uzunluğu başlangıçta içermelidir *lpszUrl* parametresi. Değerini *pdwMaxLength* parametresi gerçek URL dize uzunluğu ile güncelleştirilir.
 

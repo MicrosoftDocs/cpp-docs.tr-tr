@@ -1,7 +1,7 @@
 ---
 title: Derleyici Hatası C3851 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/05/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,25 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82104776b2d1153310d0552bd873238333e746f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f495a61fd3c157862fe65d82c1ffe5f047d798dd
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268845"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895181"
 ---
 # <a name="compiler-error-c3851"></a>Derleyici Hatası C3851
-'char': evrensel-karakter-name temel karakter kümesinde bir karakter belirtemezsiniz  
-  
- C++ derlenmiş kod içinde bir dize dışında temel kaynak karakter kümesinde bir karakter veya karakter sabiti temsil eden bir evrensel karakter adı kullanamazsınız. Daha fazla bilgi için bkz: [karakter kümesi](../../cpp/character-sets.md). C derlenmiş kod içinde bir evrensel karakter adını karakterler 0x20 0x7f, ('$'), 0x24 dışında (dahil) aralığında 0x40 kullanamazsınız (' @'), ya da 0x60 ('' ').  
-  
- Aşağıdaki örnekler C3851 oluşturmak ve nasıl düzeltileceği göster:  
-  
-```cpp  
-// C3851.cpp  
+
+> '*char*': bir evrensel karakter adı temel karakter kümesindeki bir karakteri belirtemez
+
+## <a name="remarks"></a>Açıklamalar
+
+C++ derlenmiş kod içinde bir karakter, temel kaynak karakter kümesi dışında bir dize veya karakter sabiti temsil eden bir evrensel karakter adı kullanamazsınız. Daha fazla bilgi için [karakter kümesi](../../cpp/character-sets.md). C derlenmiş kodda, bir evrensel karakter adı karakterleri aralığında 0x20 0x7f, kapsamlı 0x24 ('$')'hariç 0x40 kullanamazsınız ('\@'), veya 0x60 ('\`').
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekleri C3851 oluşturmak ve bu sorunun nasıl göster:
+
+```cpp
+// C3851.cpp
 int main()  
-{  
-   int test1_\u0041 = 0;   // C3851, \u0041 = 'A' in basic character set  
-   int test2_A = 0;        // OK  
-}  
+{
+   int test1_\u0041 = 0;   // C3851, \u0041 = 'A' in basic character set
+   int test2_A = 0;        // OK
+}
 ```

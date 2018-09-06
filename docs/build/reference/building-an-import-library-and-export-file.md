@@ -1,7 +1,7 @@
 ---
-title: İçeri aktarma kitaplığı ve dışarı aktarma dosyası derleme | Microsoft Docs
+title: Bir içeri aktarma kitaplığını ve dışarı aktarma dosyası derleme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/05/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -35,44 +35,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93f817aadf2de826c628a14255ae9257be2f29ba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c832ee24d500eba28c14713d1c0a092baf90a440
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372106"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894622"
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
-Derleme içeri aktarma kitaplığı ve dışarı aktarmak için aşağıdaki sözdizimini kullanın:  
-  
-```  
-LIB /DEF[:deffile] [options] [objfiles] [libraries]  
-```  
-  
- / Def belirtildiğinde, LIB çıktı dosyaları LIB komutunda geçirilen verme belirtimleri oluşturur. Önerilen Kullanım sırasına göre listelenen dışarı aktarmaları belirtme için üç yöntem vardır:  
-  
-1.  A **__declspec(dllexport)** birini tanımında *objfiles* veya *kitaplıkları*  
-  
-2.  / Export belirtimi:*adı* LIB komut satırında  
-  
-3.  Bir açıklamasında bir **dışarı** deyiminde bir `deffile`  
-  
- Bunlar, dışarı verme program bağlarken belirtmek için kullanın, aynı yöntemleridir. Bir program birden fazla yöntemini kullanabilirsiniz. LIB komutu bölümlerini belirtebilirsiniz (birden çok gibi *objfiles* ya da/Export belirtimleri) LIB komutu bir komut dosyasında yalnızca yapabileceğiniz bir bağlantı komutu.  
-  
- Aşağıdaki seçenekler, içeri aktarma kitaplığı oluşturmaya dairdir ve dışarı aktarmak:  
-  
- / ÇIKIŞI: *alma*  
- Varsayılan çıkış dosyası adı için geçersiz kılar *alma* kitaplığı oluşturuluyor. /OUT belirtilmediğinde, varsayılan adı temel ilk nesne dosyası veya LIB komut ve uzantı kitaplıkta adıdır. lib. Dışa aktarma dosyası içeri aktarma kitaplığı ve uzantı aynı temel adı verilir. exp.  
-  
- / EXPORT: *GirişAdı*[= *InternalName*] [, @ `ordinal`[, **NONAME**]] [, **veri**]  
- Bir işlevi çağırmak için diğer programları izin vermek için programınızdan işlevi dışarı aktarır. Verileri dışarı aktarabilirsiniz (kullanarak **veri** anahtar sözcüğü). Dışarı aktarma genellikle DLL'de tanımlanır.  
-  
- *GirişAdı* çağıran program tarafından kullanılacak olan işlevi veya veri öğesinin adı aynıdır. İsteğe bağlı olarak, belirtebilirsiniz *InternalName* tanımlama program; varsayılan olarak, bilinen işlevi olarak *InternalName* aynı *GirişAdı*. `ordinal` Belirtmezseniz, 1 ile 65.535; aralığında verme tabloya bir dizini belirtir `ordinal`, LIB bir atar. **NONAME** anahtar sözcüğü dışa aktarır işlevi bir sıra yalnızca olmadan bir *GirişAdı*. **Veri** anahtar sözcüğü yalnızca veri nesneleri dışarı aktarmak için kullanılır.  
-  
- / INCLUDE: `symbol`  
- Belirtilen simgeyi sembol tablosuna ekler. Bu seçenek, aksi takdirde dahil olmayacaktır bir kitaplık nesnesi kullanılmasını zorlamak için yararlıdır.  
-  
- .dll oluşturmadan önce ilk adım, içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığını oluştururken geçirilen gibi aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)
+
+İçeri aktarma kitaplığı oluşturmak ve dosyasını dışarı aktarmak için aşağıdaki sözdizimini kullanın:
+
+> **LIB/def**[**:**<em>deffile</em>] [*seçenekleri*] [*objfiles*] [*kitaplıkları*]
+
+/ Def belirtildiğinde LIB çıktı dosyaları LIB komutta geçirilen dışarı aktarma belirtimleri oluşturur. Önerilen Kullanım sırasına göre listelenmiş dışa belirtmek için üç yöntem vardır:
+
+1. A **__declspec(dllexport)** birini tanımında *objfiles* veya *kitaplıkları*
+
+2. / Export belirtimi:*adı* LIB komut satırında
+
+3. Bir tanım bir **dışarı AKTARMALARI** deyiminde bir *deffile*
+
+Bunlar bir dışarı aktarma programı'nı bağlarken dışarı aktarmaları belirtmek için kullandığınız aynı yöntemleridir. Bir program, birden fazla yöntemi kullanabilirsiniz. LIB komutunun bölümleri belirtebilirsiniz (gibi birden çok *objfiles* veya/Export belirtimleri) LIB komutu bir komut dosyasında bıraktığınız gibi için bir bağlantı komutu.
+
+Aşağıdaki seçenekler, içeri aktarma kitaplığı oluşturmaya dairdir ve dosyasını dışa aktarın:
+
+> **/ OUT:** *içeri aktarma*  
+
+İçin varsayılan çıkış dosyası adını geçersiz kılar *alma* kitaplığı oluşturuluyor. / Out belirtilmediğinde, varsayılan adı temel nesne dosyası birinci ya da LIB komut ve uzantı kitaplıkta adıdır. LIB. Dışarı aktarma dosyası içeri aktarma kitaplığını ve uzantı olarak aynı temel adı verilir. üs.
+
+> **/ EXPORT:** *GirişAdı* \[ **=** *InternalName*]\[,**\@** <em>sıralı</em>\[, **NONAME**]]\[, **veri**]
+
+Bir işlev programınızı işlevi çağırmak diğer programları olanak verir. Ayrıca verileri aktarabilirsiniz (kullanarak **veri** anahtar sözcüğü). Dışarı aktarmalar, genellikle bir DLL içinde tanımlanır.
+
+*GirişAdı* çağırma program tarafından kullanılacak olan işlev veya veri öğesinin adını aynıdır. İsteğe bağlı olarak belirtebilirsiniz *InternalName* tanımlama program; varsayılan olarak bilinen işlevi olarak *InternalName* aynı *GirişAdı*. *Sıralı* belirtmezseniz, dizin ' % s'aralık 1 ile 65.535; dışa aktarma tablosunda içine belirtir *sıralı*, LIB bir atar. **NONAME** anahtar sözcüğü işlevin olmadan yalnızca bir sıralı, dışarı bir *GirişAdı*. **Veri** anahtar sözcüğü, yalnızca veri nesneleri dışarı aktarmak için kullanılır.
+
+> **/ INCLUDE:** *simgesi*
+
+Belirtilen ekler *sembol* sembol tablosuna. Bu seçenek, aksi takdirde dahil olmazdı bir kitaplık nesnesi kullanılmasını zorlamak için yararlıdır.
+
+Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığı derlerken geçti olarak, aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma](../../build/reference/working-with-import-libraries-and-export-files.md)

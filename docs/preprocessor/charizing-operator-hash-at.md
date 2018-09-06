@@ -18,38 +18,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6aa18936497f0415da331697aceb26f26345500
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: d86c49c8d7d0cda91ba2415167cc79c810a96b3d
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466338"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895311"
 ---
 # <a name="charizing-operator-"></a>Karakterleştirme İşleci (#@)
-**Microsoft'a özgü**  
-  
-Karakter haline getirme işleci yalnızca makrolar bağımsız değişkenlerle kullanılabilir. Varsa `#@` biçimsel parametre önündeki Makro tanımında gerçek bağımsız değişkeni tek tırnak işareti içine alınmış ve makro genişletildiğinde bir karakter olarak kabul edilir. Örneğin:  
-  
-```  
-#define makechar(x)  #@x  
-```  
-  
-deyim neden olur  
-  
-```  
-a = makechar(b);  
-```  
-  
-değerine genişletilmesi  
-  
-```  
-a = 'b';  
-```  
-  
-Tek tırnak karakteri karakter haline getirme işleci ile kullanılamaz.  
-  
-**END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- 
+**Microsoft'a özgü**
+
+Karakter haline getirme işleci yalnızca makrolar bağımsız değişkenlerle kullanılabilir. Varsa `#@` biçimsel parametre önündeki Makro tanımında gerçek bağımsız değişkeni tek tırnak işareti içine alınmış ve makro genişletildiğinde bir karakter olarak kabul edilir. Örneğin:
+
+```
+#define makechar(x)  #@x
+```
+
+deyim neden olur
+
+```
+a = makechar(b);
+```
+
+değerine genişletilmesi
+
+```
+a = 'b';
+```
+
+Tek tırnak karakteri karakter haline getirme işleci ile kullanılamaz.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
 [Ön İşlemci İşleçleri](../preprocessor/preprocessor-operators.md)

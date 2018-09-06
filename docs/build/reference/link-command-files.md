@@ -1,7 +1,7 @@
 ---
 title: LINK komut dosyaları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/05/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -21,33 +21,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6614af87f072c54353ead39c2c5ca789da18dbb8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8934758d8aa406ea7b7c959b1fc535cde32195b1
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375291"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894687"
 ---
 # <a name="link-command-files"></a>LINK Komut Dosyaları
-Komut satırı bağımsız değişkenleri, bir komut dosyası biçiminde bağlantısına geçirebilirsiniz. Bağlayıcı için bir komut dosyası belirtmek için aşağıdaki sözdizimini kullanın:  
-  
-```  
-LINK @commandfile  
-```  
-  
- `commandfile` Bir metin dosyasının adıdır. Arasında hiç boşluk veya sekmesinde izin at işareti (@) ve dosya adı. Hiçbir varsayılan uzantı yoktur; Tüm uzantısı dahil tam dosya adı belirtmelisiniz. Joker karakterler kullanılamaz. Dosya adı ile mutlak veya göreli bir yol belirtebilirsiniz. BAĞLANTI dosyayı aramak için bir ortam değişkeni kullanmaz.  
-  
- Komut dosyasında bağımsız değişkenleri alanları veya sekmelerle (komut satırında gibi) ayrılabilir ve yeni satır karakterlerini tarafından.  
-  
- Bir komut dosyası, komut satırında bir bölümünü veya tümünü belirtebilirsiniz. Bir bağlantı komutta birden fazla komut dosyası kullanabilirsiniz. Komut satırında o konumda belirtilmiş olması durumunda gibi bağlantı komut dosyası girişi kabul eder. Komut dosyaları iç içe olamaz. BAĞLANTI görüntülemektedir komut dosyaları, içeriğini sürece [/nologo](../../build/reference/nologo-suppress-startup-banner-linker.md) seçeneği belirtildi.  
-  
-## <a name="example"></a>Örnek  
- DLL oluşturmak için aşağıdaki komutu ayrı komut dosyaları nesne dosyaları ve kitaplıkları adları geçirir ve kullandığı dosya/dışarı aktarmalar seçeneği belirtimi için üçüncü komut:  
-  
-```  
-link /dll @objlist.txt @liblist.txt @exports.txt  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Komut satırı bağımsız değişkenleri, bir komut dosyası biçiminde bağlantıya geçirebilirsiniz. Bağlayıcı için bir komut dosyası belirtmek için aşağıdaki sözdizimini kullanın:
+
+> **Bağlantı \@**  <em>commandfile</em>
+
+*Commandfile* bir metin dosyasının adıdır. Hiçbir boşluk veya sekme arasında izin at işareti (**\@**) ve dosya adı. Hiçbir varsayılan uzantı yoktur; herhangi bir uzantısına dahil olmak üzere tam dosya adı belirtmeniz gerekir. Joker karakterler kullanılamaz. Mutlak veya göreli bir yol ile dosya adını belirtebilirsiniz. BAĞLANTI, dosyayı aramak için bir ortam değişkeni kullanmaz.
+
+Komut dosyasında bağımsız değişkenleri tarafından boşluk veya sekme (komut satırında gibi) ayrılabilir ve yeni satır karakterleri.
+
+Komut satırının bir kısmını veya tamamını bir komut dosyasında belirtebilirsiniz. Birden fazla komut dosyasında bir LINK komutunu kullanabilirsiniz. Komut satırında o konumda belirtildi alacağı bağlantı komut dosyası girişi kabul eder. Komut dosyaları iç içe olamaz. BAĞLANTI yankılayan komut dosyalarının içeriğini sürece [/nologo](../../build/reference/nologo-suppress-startup-banner-linker.md) seçeneği belirtildi.
+
+## <a name="example"></a>Örnek
+
+Bir DLL yapılandırmak için aşağıdaki komutu ayrı komut dosyaları nesne dosyaları ve kitaplıkları adlarını geçirir ve kullanır, dosya/EXPORTS seçeneğinin belirtimi için üçüncü komut:
+
+```cmd
+link /dll @objlist.txt @liblist.txt @exports.txt
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

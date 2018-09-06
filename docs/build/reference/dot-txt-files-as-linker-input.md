@@ -16,16 +16,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b142fd35fd2e29a4d82e7b1aa0741e8f234e21
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bd865772b3629939306d835728e5033da763eaa9
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369909"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43895272"
 ---
 # <a name="txt-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Txt Dosyaları
-BAĞLANTI çeşitli metin dosyalarını ek giriş bekliyor. [Komut dosyası](../../build/reference/link-command-files.md) tanımlayıcısı (@) ve [taban adresi](../../build/reference/base-base-address.md) (/ Temel), [/def](../../build/reference/def-specify-module-definition-file.md), ve [/sipariş](../../build/reference/order-put-functions-in-order.md) seçeneklerini tüm metin dosyaları belirtin. Bu dosyalar, herhangi bir uzantı, yalnızca değil .txt olabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LINK giriş dosyaları](../../build/reference/link-input-files.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+BAĞLANTI çeşitli metin dosyaları ek giriş bekleniyor. [Komut dosyası](../../build/reference/link-command-files.md) tanımlayıcısı (**\@**) ve [temel adresi](../../build/reference/base-base-address.md) (/ BASE) [/def](../../build/reference/def-specify-module-definition-file.md), ve  [ /Order](../../build/reference/order-put-functions-in-order.md) tüm seçenekler, metin dosyaları belirtin. Bu dosyalar, herhangi bir uzantı, yalnızca değil .txt olabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LINK giriş dosyaları](../../build/reference/link-input-files.md)   
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

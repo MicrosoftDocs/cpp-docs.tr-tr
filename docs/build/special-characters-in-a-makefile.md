@@ -17,25 +17,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 157f9ed499ef7a0ac9efdd6bebe118ca593acabb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 40d9ad442e4838ee837c93ada0352f230fc0cbed
+ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380465"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43894440"
 ---
 # <a name="special-characters-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Özel Karakterler
-NMAKE özel karakter harf karakter olarak kullanmak için önündeki şapka (^) yerleştirin. NMAKE diğer karakterlerden önce belirliyorsanız düzeltme işaretleri yoksayar. Özel karakterler şunlardır:  
-  
- `:  ;  #  (  )  $  ^  \  {  }  !  @  —`  
-  
- Tırnak işaretli dize içinde bir şapka (^) değişmez değer düzeltme işareti karakteri olarak kabul edilir. Bir satır sonunda bir şapka bir dize veya makrosu değişmez değer yeni satır karakteri ekler.  
-  
- Makrolardaki bir ters eğik çizgi (\\) ve ardından tarafından yeni satır karakteri boşlukla değiştirildi.  
-  
- Komutlarda, yüzde simgesi (%) dosya tanımlayıcısı ' dir. % Gerçek anlamda bir komutu temsil etmek için çift yüzde işareti (%) yerine tek bir tane belirtin. Tek bir % NMAKE diğer durumlarda, tam anlamıyla yorumlar, ancak her zaman bir double yorumlar %% tek bir %. Bu nedenle, bir hazır değer temsil etmek için %%, ya da üç yüzde işaretleri belirtin %%%, veya dört yüzde işaretleri %%%.  
-  
- Bir komut değişmez değer bir karakteri olarak dolar işareti ($) kullanmak için iki dolar işareti ($$) belirtin. Bu yöntem, diğer durumlarda kullanılabilir olduğu ^ $ çalışır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)
+
+NMAKE özel karakter değişmez değer olarak kullanmak için önündeki bir şapka (^) yerleştirin. NMAKE diğer karakterlerden önce düzeltme işaretleri yok sayar. Özel karakterler şunlardır:
+
+`:  ;  #  (  )  $  ^  \  {  }  !  @  —`  
+
+Tırnak işaretli dize içindeki bir şapka (^) bir değişmez değer şapka karakteri kabul edilir. Bir giriş işaretini bir satır sonunda bir değişmez değer yeni satır karakteri bir dize veya makro ekler.
+
+Makrolardaki ters eğik çizgi (\\) ve ardından tarafından bir yeni satır karakteri bir boşluk ile değiştirilir.
+
+Komutlarda, yüzde işareti (%) bir dosya tanımlayıcısı ' dir. % Gerçek anlamda bir komutu temsil etmek için bir çift yüzde işareti (%) yerine tek bir tane belirtin. Tek bir % NMAKE diğer durumlarda, tam anlamıyla yorumlar, ancak her zaman bir çift yorumlar %% tek bir %. Bu nedenle, bir sabit değer temsil etmek için %%, ya da üç yüzde işaretleri belirtin %%%, veya dört yüzde işaretleri %%%.
+
+Değişmez değer komutunda dolar işareti ($) kullanmak için iki dolar işareti ($$) belirtin. Bu yöntem, diğer durumlarda kullanılabilir olduğu ^ $ çalışır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası İçeriği](../build/contents-of-a-makefile.md)
