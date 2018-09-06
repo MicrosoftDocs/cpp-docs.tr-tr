@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c229a07d7d8dbf8d74e487c99e6f79b8203f04f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
-ms.translationtype: MT
+ms.openlocfilehash: 4a12e5abcc02017acbd06c841cc9ab62a9d25bdf
+ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.translationtype: HT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202651"
+ms.lasthandoff: 09/04/2018
+ms.locfileid: "43688006"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 Windows ortak değer değiştirme düğmesi denetimi işlevlerini sağlar.  
@@ -154,7 +154,7 @@ virtual BOOL CreateEx(
   
 ### <a name="parameters"></a>Parametreler  
  *dwExStyle*  
- Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](https://msdn.microsoft.com/library/windows/desktop/ms632680) Windows SDK.  
+ Oluşturulan denetimin genişletilmiş stilini belirtir. Genişletilmiş windows stilleri bir listesi için bkz. *dwExStyle* parametresi için [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.  
   
  *dwStyle*  
  Döndürme düğme denetiminin stilini belirtir. Değer değiştirme düğmesi denetimi stilleri herhangi bir birleşimini denetimi için geçerlidir. Bu stiller açıklanan [yukarı-aşağı denetim stilleri](/windows/desktop/Controls/up-down-control-styles) Windows SDK.  
