@@ -7,12 +7,12 @@ f1_keywords:
 - hash_set/std::swap
 - hash_set/std::swap (hash_multiset)
 ms.assetid: 557a0162-3728-4537-97dc-f9f6cc7ece94
-ms.openlocfilehash: ad8041ff6a4abab84272d2bbbdee290bfce4eff6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5c96ac897d870e1f8dc153847797379b6720dc7b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961883"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103253"
 ---
 # <a name="lthashsetgt-functions"></a>&lt;hash_set&gt; işlevleri
 
@@ -35,9 +35,11 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan hash_set veya öğeleri olan hash_set olanlar değiştirilecek hash_set *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan hash_set veya öğeleri olan hash_set olanlar değiştirilecek hash_set *sol*.
 
-*Sol* öğeleri olan hash_set olanlar değiştirilecek hash_set *doğru*.
+*Sol*<br/>
+Öğeleri olan hash_set olanlar değiştirilecek hash_set *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -64,9 +66,11 @@ void swap(hash_multiset <Key, Traits, Allocator>& left, hash_multiset <Key, Trai
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan hash_multiset veya öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *sol*.
 
-*Sol* öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *doğru*.
+*Sol*<br/>
+Öğeleri olan hash_multiset olanlar değiştirilecek hash_multiset *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 

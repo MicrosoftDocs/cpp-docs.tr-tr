@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::inner_product [C++]
 - std::iota [C++]
 - std::partial_sum [C++]
-ms.openlocfilehash: 1060c5c02b0e599de5ca5a39970825fd5622ebf5
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ae1c3e043d35ba91813fb5288e100610986dbd76
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199194"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100189"
 ---
 # <a name="ltnumericgt-functions"></a>&lt;Sayısal&gt; işlevleri
 
@@ -48,13 +48,17 @@ Type accumulate(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* yapılacak veya belirtilen bir ikili işleme göre birleştirilen aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
+*ilk*<br/>
+Yapılacak veya belirtilen bir ikili işleme göre birleştirilen aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*Son* yapılacak veya gerçekten tekrarlayan birikime dahil son öğenin ötesinde bir konum olduğu belirtilen bir ikili işleme göre birleştirilen aralıktaki son öğeyi ele alan bir giriş yineleyici.
+*Son*<br/>
+Yapılacak veya gerçekten tekrarlayan birikime dahil son öğenin ötesinde bir konum olduğu belirtilen bir ikili işleme göre birleştirilen aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-*VAL* olduğu her öğe sırayla eklendiğinde veya belirtilen bir ikili işleme göre birlikte bir başlangıç değeri.
+*VAL*<br/>
+İstediğiniz her öğe sırayla eklendiğinde veya belirtilen bir ikili işleme göre birlikte bir başlangıç değeri.
 
-*binary_op* belirtilen aralık ve sonucu önceki uygulamaların içindeki her öğeye uygulanacak olan ikili işlem.
+*binary_op*<br/>
+Belirtilen aralığı ve sonucu önceki uygulamaların içindeki her öğeye uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -151,16 +155,16 @@ int main( )
 
 ```Output
 The original vector v1 is:
- ( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
+( 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 ).
 The sum of the integers from 1 to 20 is: 210.
 The vector of partial sums is:
- ( 1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171 190 210 ).
+( 1 3 6 10 15 21 28 36 45 55 66 78 91 105 120 136 153 171 190 210 ).
 
 The original vector v3 is:
- ( 1 2 3 4 5 6 7 8 9 10 ).
+( 1 2 3 4 5 6 7 8 9 10 ).
 The product of the integers from 1 to 10 is: 3628800.
 The vector of partial products is:
- ( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
+( 1 2 6 24 120 720 5040 40320 362880 3628800 ).
 ```
 
 ## <a name="adjacent_difference"></a>  adjacent_difference
@@ -184,13 +188,17 @@ OutputIterator adjacent_difference(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* belirtilen ikili işlemde çalıştırılacağı öğeleri ile ilgili kendi Öncüller differenced için veya değer çiftinin üzerinde bir başkası tarafından yapılacak olan giriş aralığındaki ilk öğeyi ele alan giriş yineleyici.
+*ilk*<br/>
+Öğeleri karşılık gelen öncelleriyle fark kaydı yapılacak olan giriş aralığındaki ilk öğeyi ele alan veya değer çiftinin başka bir belirtilen ikili işlemde çalıştırılacağı bir giriş yineleyici.
 
-*Son* belirtilen ikili işlemde çalıştırılacağı öğeleri ile ilgili kendi Öncüller differenced için veya değer çiftinin üzerinde bir başkası tarafından yapılacak olan giriş aralığındaki son öğeyi ele alan giriş yineleyici.
+*Son*<br/>
+Öğeleri karşılık gelen öncelleriyle fark kaydı yapılacak olan giriş aralığındaki son öğeyi ele alan veya değer çiftinin başka bir belirtilen ikili işlemde çalıştırılacağı bir giriş yineleyici.
 
-*Sonuç* olduğu fark dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
+*Sonuç*<br/>
+Fark dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
 
-*binary_op* fark kayıt yordamındaki çıkarma işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
+*binary_op*<br/>
+Fark kayıt yordamındaki çıkarma işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -291,17 +299,23 @@ Type inner_product(
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* olan iç ürün veya ikinci aralıkla genelleştirilmiş iç ürün hesaplanmasını ilk aralıktaki ilk öğeyi ele alan giriş yineleyici.
+*first1*<br/>
+İç ürün veya ikinci aralıkla genelleştirilmiş iç ürün hesaplanmasını ilk aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*last1* olan iç ürün veya ikinci aralıkla genelleştirilmiş iç ürün hesaplanmasını ilk aralıktaki son öğeyi ele alan giriş yineleyici.
+*last1*<br/>
+Hesaplanan değer olan iç ürün veya ikinci aralıkla genelleştirilmiş iç ürün olan ilk aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-*first2* ikinci ilk öğeyi ele alan giriş yineleyici aralığı olan dahili ürün ya da ilk aralıkla genelleştirilmiş iç ürün hesaplanan değer.
+*first2*<br/>
+İç ürün veya ilk aralıkla genelleştirilmiş iç ürün hesaplanmasını ikinci aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*VAL* iç ürün veya aralıklar arasında genelleştirilmiş iç ürün olduğu eklenmesi için bir başlangıç değeri.
+*VAL*<br/>
+İç ürün veya aralıklar arasında genelleştirilmiş iç ürün eklenecek olduğu ilk değeri.
 
-*binary_op1* iç ürünün Genelleştirme aralığın öğe düzeyinde çarpımının ürünleri uygulanan toplam iç ürün işleyişini değiştirir ikili işlem.
+*binary_op1*<br/>
+İç ürünün Genelleştirme aralığın öğe düzeyinde çarpımının ürünleri uygulanan toplam iç ürün işleyişini yerini alan ikili işlem.
 
-*binary_op2* iç ürün aralığın öğe düzeyinde çarpımının çalışmasını birden çok kez içinde iç ürünün Genelleştirme değiştirir ikili işlem.
+*binary_op2*<br/>
+İç ürün aralığın öğe düzeyinde çarpımının işleyişini değiştirir ikili işlem içinde iç ürünün Genelleştirme çarpın.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -422,11 +436,14 @@ void iota(ForwardIterator first, ForwardIterator last, Type value);
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* doldurulması için aralıktaki ilk öğeyi ele alan giriş yineleyici.
+*ilk*<br/>
+Doldurulacak aralıktaki ilk öğeyi ele alan giriş yineleyici.
 
-*Son* doldurulacak aralıktaki son öğeyi ele alan giriş yineleyici.
+*Son*<br/>
+Doldurulacak aralıktaki son öğeyi ele alan giriş yineleyici.
 
-*değer* ilk öğeyi ve sırayla sonraki öğeleri için artırma depolamak için başlangıç değeri.
+*value*<br/>
+İlk öğeyi ve sırayla sonraki öğeleri için artırma depolamak için başlangıç değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -493,13 +510,17 @@ OutputIterator partial_sum(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* kısmen toplanan veya belirtilen bir ikili işleme göre birleştirilen aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
+*ilk*<br/>
+Belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıktaki ilk öğeyi ele alan giriş yineleyici.
 
-*Son* kısmen toplanan veya gerçekten tekrarlayan birikime dahil son öğenin ötesinde bir konum olduğu belirtilen bir ikili işleme göre birleştirilen aralıktaki son öğeyi ele alan bir giriş yineleyici.
+*Son*<br/>
+Yineleyen birikime dahil son öğenin ötesinde konumlanmış belirtilen bir ikili işleme göre kısmen toplanan veya birleştirilen aralıktaki son öğeyi ele alan giriş yineleyici.
 
-*Sonuç* nerede dizi kısmı toplamların veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
+*Sonuç*<br/>
+Kısmı toplamların dizilerinin veya belirtilen işlemin sonuçlarının depolanacağı hedef aralıktaki ilk öğeyi ele alan çıkış yineleyici.
 
-*binary_op* kısmi toplam yordamındaki toplama işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
+*binary_op*<br/>
+Kısmi toplam yordamındaki toplama işleminin yerini alan genelleştirilmiş işlemde uygulanacak olan ikili işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

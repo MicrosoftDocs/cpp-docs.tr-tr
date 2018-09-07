@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ac444680a22a99f292b1728181103789435a150
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87e9ba6ef9bcb4a909e97466d7ea71ee18374991
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404714"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110207"
 ---
 # <a name="qsort"></a>qsort
 
-Hızlı sıralama gerçekleştirir. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [qsort_s](qsort-s.md).
+Hızlı sıralama gerçekleştirir. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [qsort_s](qsort-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,35 +59,39 @@ void qsort(
 
 ### <a name="parameters"></a>Parametreler
 
-*temel* hedef dizi başlangıcı.
+<br/>
+Hedef dizi başlangıcı.
 
-*sayı* dizi öğeleri boyutu.
+*Sayı*<br/>
+Öğeleri dizi boyutu.
 
-*Genişlik* öğesi boyutunu bayt cinsinden.
+*Genişlik*<br/>
+Öğe boyutunu bayt cinsinden.
 
-*Karşılaştırma* iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam işaretçi.
+*Karşılaştırma*<br/>
+Kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunların belirten bir değeri döndüren bir yordam için işaretçi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Qsort** işlevi bir dizi sıralamak için hızlı Sıralama algoritması uygulayan *numarası* öğeleri, her biri *genişliği* bayt sayısı. Bağımsız değişken *temel* sıralanacak dizisinin temel bir işaretçidir. **qsort** sıralanmış öğelerini kullanarak bu dizinin üzerine yazar.
+**Qsort** işlevi uygulayan bir dizi sıralamak için hızlı Sıralama algoritması *numarası* öğeleri, her biri *genişliği* bayt. Bağımsız değişken *temel* sıralanacak dizinin temel bir işaretçisidir. **qsort** sıralanmış öğelerini kullanarak bu dizinin üzerine yazar.
 
-**qsort** çağrıları *karşılaştırmak* rutin bir veya daha fazla kez sıralama sırasında ve işaretçileri iki dizi öğelerinin her çağrıda geçirir.
+**qsort** çağrıları *karşılaştırma* rutin bir veya daha fazla zaman sıralama sırasında ve işaretçileri iki dizi öğelerine her çağrıda geçirir.
 
 ```C
 compare( (void *) & elem1, (void *) & elem2 );
 ```
 
-Yordam öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.
+Yordam, öğeleri karşılaştırır ve aşağıdaki değerlerden birini döndürür.
 
-|İşlev dönüş değeri Karşılaştır|Açıklama|
+|İşlev dönüş değeri karşılaştırın|Açıklama|
 |-----------------------------------|-----------------|
-|< 0|**elem1** değerinden **elem2**|
+|< 0|**elem1** küçüktür **elem2**|
 |0|**elem1** eşdeğer **elem2**|
-|> 0|**elem1** büyük **elem2**|
+|> 0|**elem1** büyüktür **elem2**|
 
-Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir dizi sıralamak için "büyüktür" ve "küçüktür" karşılaştırma işlevinde duygusu ters çevrilir.
+Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir diziyi sıralamak için "büyüktür" ve "az" karşılaştırma işlevde anlamı ters çevir.
 
-Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası* olan **NULL**, veya *temel* olan **NULL** ve **numarası* sıfır olmayan, olduğundan veya *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür ve **errno** ayarlanır **EINVAL**.
+Bu işlev, parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası* olan **NULL**, veya *temel* olan **NULL** ve **numarası* sıfır değilse, ya da Eğer *genişliği* küçük sıfırdan, geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür ve **errno** ayarlanır **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -95,7 +99,7 @@ Bu işlev parametrelerini doğrular. Varsa *karşılaştırmak* veya *numarası*
 |-------------|---------------------|
 |**qsort**|\<stdlib.h > ve \<search.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

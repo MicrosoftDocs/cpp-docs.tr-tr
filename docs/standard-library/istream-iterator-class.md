@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e41abbc4d7fa3cd18363982b806811b0698b44f4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e565d5f10bdb06bff6ad8c17047ed3e11070364d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959874"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099596"
 ---
 # <a name="istreamiterator-class"></a>istream_iterator Sınıfı
 
@@ -38,7 +38,7 @@ Bir giriş yineleyici nesnesi tanımlar. Sınıfın nesneleri ayıklar `Type` , 
 ```cpp
 template <class Type, class CharType = char, class Traits = char_traits<CharType>, class Distance = ptrdiff_t,>
 class istream_iterator
- : public iterator<
+: public iterator<
     input_iterator_tag, Type, Distance,
     const Type *,
     const Type&>;
@@ -46,13 +46,17 @@ class istream_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* girdi akışından ayıklanacak nesnenin türü.
+*Türü*<br/>
+Çıkış akışından ayıklanacak nesnenin türü.
 
-*CharType* için karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **char**.
+*CharType*<br/>
+İçin karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **char**.
 
-*Nitelikler* için karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` <  `CharType`>.
+*Nitelikler*<br/>
+İçin karakter türünü temsil eden tür `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `char_traits` <  `CharType`>.
 
-*Uzaklık* işaretli için fark türünü temsil eden tamsayı türü `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `ptrdiff_t`.
+*uzaklık*<br/>
+İşaretli için fark türünü temsil eden tamsayı türü `istream_iterator`. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `ptrdiff_t`.
 
 Veya NULL olmayan depolanmış bir işaretçiyle ile sınıfı istream_iterator artırılmasının ardından, nesne ayıklayın ve türünde bir nesne depolamayı dener `Type` ilişkili giriş akışından. Ayıklama işlemi başarısız olursa, nesne etkili bir şekilde depolanan işaretçinin yerini alır, böylece bir dizi sonu gösterge oluşturur.
 
@@ -144,7 +148,8 @@ istream_iterator(istream_type& _Istr);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr* kullanım okunacağı Giriş akışı başlatmak için `istream_iterator`.
+*_Istr*<br/>
+Kullanım okunacağı Giriş akışı başlatmak için `istream_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 

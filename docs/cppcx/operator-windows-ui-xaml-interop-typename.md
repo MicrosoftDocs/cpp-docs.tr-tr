@@ -9,50 +9,55 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50c7b6a8e62aa957c54f66ebaf87fcd86df458fb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 262fb9d08da72201db041eff1a510a598851e3e2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199349"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105971"
 ---
 # <a name="operator-windowsuixamlinteroptypename"></a>işleç Windows::UI::Xaml::Interop::TypeName
-Dönüştürme sağlayan `Platform::Type` için [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-Operator TypeName(Platform::Type^ type)  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Döndürür bir [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) verildiğinde bir `Platform::Type^`.  
-  
-### <a name="remarks"></a>Açıklamalar  
- `TypeName` tür bilgilerini temsil eden dilden Windows çalışma zamanı struct ' dir. [Platform::type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili arabiriminde (ABI) geçirilemez. Bir işte `TypeName`, [Navigate](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) işlevi:  
-  
-```  
-rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);  
-```  
-  
-### <a name="example"></a>Örnek  
- Sonraki örnek arasında nasıl dönüştürme yapılacağını gösterir `TypeName` ve `Type`.  
-  
-```  
-  
-// Convert from Type to TypeName  
-Windows::UI::Xaml::Interop::TypeName tn = TypeName(MainPage::typeid);  
-  
-// Convert back from TypeName to Type  
-Type^ tx2 = (Type^)(tn);  
-  
-```  
-  
-## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri  
- .NET framework programlar proje `TypeName` olarak [System.Type](assetId:///System.Type?qualifyHint=False&autoUpgrade=True).  
-  
-### <a name="requirements"></a>Gereksinimler  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-windows-ui-xaml-interop-typename.md)   
- [Platform::Type Sınıfı](../cppcx/platform-type-class.md)
+
+Dönüştürme sağlayan `Platform::Type` için [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx).
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+Operator TypeName(Platform::Type^ type);
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Döndürür bir [Windows::UI::Xaml::Interop::TypeName](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.interop.typename.aspx) verildiğinde bir `Platform::Type^`.
+
+### <a name="remarks"></a>Açıklamalar
+
+`TypeName` tür bilgilerini temsil eden dilden Windows çalışma zamanı struct ' dir. [Platform::type](../cppcx/platform-type-class.md) C++ için özeldir ve uygulama ikili arabiriminde (ABI) geçirilemez. Bir işte `TypeName`, [Navigate](https://msdn.microsoft.com/library/windows/apps/hh702394.aspx) işlevi:
+
+```
+rootFrame->Navigate(TypeName(MainPage::typeid), e->Arguments);
+```
+
+### <a name="example"></a>Örnek
+
+Sonraki örnek arasında nasıl dönüştürme yapılacağını gösterir `TypeName` ve `Type`.
+
+```
+
+// Convert from Type to TypeName
+Windows::UI::Xaml::Interop::TypeName tn = TypeName(MainPage::typeid);
+
+// Convert back from TypeName to Type
+Type^ tx2 = (Type^)(tn);
+```
+
+## <a name="net-framework-equivalent"></a>.NET Framework Eşdeğeri
+
+.NET framework programlar proje `TypeName` olarak [System.Type](assetId:///System.Type?qualifyHint=False&autoUpgrade=True).
+
+### <a name="requirements"></a>Gereksinimler
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Windows::UI::Xaml::Interop::TypeName işleci](../cppcx/operator-windows-ui-xaml-interop-typename.md)<br/>
+[Platform::Type Sınıfı](../cppcx/platform-type-class.md)

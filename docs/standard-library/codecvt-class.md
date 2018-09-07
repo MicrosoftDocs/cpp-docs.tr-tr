@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fac73456108669950f59f2399495526b8b319f07
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3198a2d3ef91df80429f7cd245e5616ebe7af43a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956813"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110637"
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 
@@ -70,11 +70,14 @@ class codecvt : public locale::facet, codecvt_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki karakterleri kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*Bayt* bir program dışındaki karakterleri kodlamak için kullanılan bir tür.
+*Bayt*<br/>
+Bir program dışındaki karakterleri kodlamak için kullanılan bir tür.
 
-*StateType* karakter temsillerinin iç ve dış türleri arasındaki bir dönüştürmenin Ara durumlarını temsil etmek için kullanılan bir tür.
+*StateType*<br/>
+Karakter temsillerinin iç ve dış türleri arasındaki bir dönüştürmenin ara durumlarını temsil etmek için kullanılan bir tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -206,7 +209,8 @@ explicit codecvt(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -216,7 +220,7 @@ Olası değerler için *_Refs* parametresi ve bunların önemi:
 
 - 1: nesne ömrü el ile yönetilmesi gerekir.
 
-- \> 1: Bu değerler tanımlanmadı.
+- 2: Bu değerler tanımlanmadı.
 
 Oluşturucu başlatır, `locale::facet` temel nesne **yerel::**[modeli](../standard-library/locale-class.md#facet_class)(`_Refs`).
 
@@ -277,19 +281,26 @@ virtual result do_in(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dönüştürülecek dizisinin işaretçisi.
+*first1*<br/>
+Dönüştürülecek dizinin başlangıç işaretçisi.
 
-*last1* dönüştürülecek dizisi sonu işaretçisi.
+*last1*<br/>
+Dönüştürülecek dizisi sonu işaretçisi.
 
-*next1* ilk Dönüştürülmeyen karaktere dönüştürülmüş sıralı ötesinde işaretçi.
+*next1*<br/>
+İlk Dönüştürülmeyen karaktere dönüştürülmüş sıralı ötesinde işaretçisi.
 
-*first2* işaretçiyi dönüştürülmüş sıralı başlangıcına.
+*first2*<br/>
+Dönüştürülmüş sıralı başına işaretçisi.
 
-*Soyadı2* dönüştürülmüş sıralı sonu işaretçisi.
+*Soyadı2*<br/>
+Dönüştürülmüş sıralı sonu işaretçisi.
 
-*next2* işaretçisine `CharType` son dönüştürülen sonra gelen `CharType`, hedef dizideki ilk değiştirilmemiş karaktere.
+*next2*<br/>
+İşaretçi `CharType` son dönüştürülen sonra gelen `CharType`, hedef dizideki ilk değiştirilmemiş karaktere.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -325,13 +336,17 @@ virtual int do_length(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dış dizisinin işaretçisi.
+*first1*<br/>
+Dış dizinin başlangıç işaretçisi.
 
-*last1* dış dizi sonu işaretçisi.
+*last1*<br/>
+Dış dizi sonu işaretçisi.
 
-*_Len2* sayısı `Byte`üye işlevi tarafından döndürülen s.
+*_Len2*<br/>
+En fazla `Byte`üye işlevi tarafından döndürülen s.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -386,19 +401,26 @@ virtual result do_out(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dönüştürülecek dizisinin işaretçisi.
+*first1*<br/>
+Dönüştürülecek dizinin başlangıç işaretçisi.
 
-*last1* dönüştürülecek dizisi sonu işaretçisi.
+*last1*<br/>
+Dönüştürülecek dizisi sonu işaretçisi.
 
-*next1* ilk işaretçi başvurusu dönüştürmeden `CharType`, son sonra `CharType` dönüştürülür.
+*next1*<br/>
+İlk işaretçi başvurusu dönüştürmeden `CharType`, son sonra `CharType` dönüştürülür.
 
-*first2* işaretçiyi dönüştürülmüş sıralı başlangıcına.
+*first2*<br/>
+Dönüştürülmüş sıralı başına işaretçisi.
 
-*Soyadı2* dönüştürülmüş sıralı sonu işaretçisi.
+*Soyadı2*<br/>
+Dönüştürülmüş sıralı sonu işaretçisi.
 
-*next2* ilk işaretçi başvurusu dönüştürmeden `Byte`, son sonra `Byte` dönüştürülür.
+*next2*<br/>
+İlk işaretçi başvurusu dönüştürmeden `Byte`, son sonra `Byte` dönüştürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -434,13 +456,17 @@ virtual result do_unshift(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first2* hedef aralıktaki ilk konumu için işaretçi.
+*first2*<br/>
+Hedef aralıktaki ilk konumu için işaretçi.
 
-*Soyadı2* hedef aralıktaki son Konum işaretçisi.
+*Soyadı2*<br/>
+Hedef aralıktaki son konuma yönelik işaretçi.
 
-*next2* hedef dizideki ilk değiştirilmemiş öğesinin işaretçisi.
+*next2*<br/>
+Hedef dizideki ilk değiştirilmemiş öğesinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -544,19 +570,26 @@ result in(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dönüştürülecek dizisinin işaretçisi.
+*first1*<br/>
+Dönüştürülecek dizinin başlangıç işaretçisi.
 
-*last1* dönüştürülecek dizisi sonu işaretçisi.
+*last1*<br/>
+Dönüştürülecek dizisi sonu işaretçisi.
 
-*next1* ötesinde dönüştürülmüş sıralı ilk Dönüştürülmeyen karaktere bir işaretçi.
+*next1*<br/>
+Dönüştürülmüş sıralı ilk Dönüştürülmeyen karaktere ötesinde işaretçisi.
 
-*first2* işaretçiyi dönüştürülmüş sıralı başlangıcına.
+*first2*<br/>
+Dönüştürülmüş sıralı başına işaretçisi.
 
-*Soyadı2* dönüştürülmüş sıralı sonu işaretçisi.
+*Soyadı2*<br/>
+Dönüştürülmüş sıralı sonu işaretçisi.
 
-*next2* işaretçisine `CharType` son dönüştürülen sonra gelen `Chartype` hedef dizideki ilk değiştirilmemiş karaktere.
+*next2*<br/>
+İşaretçi `CharType` son dönüştürülen sonra gelen `Chartype` hedef dizideki ilk değiştirilmemiş karaktere.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -610,7 +643,7 @@ int main( )
 
 ```Output
 It worked! The converted string is:
- [This is the string to be converted!]
+[This is the string to be converted!]
 ```
 
 ## <a name="intern_type"></a>  codecvt::intern_type
@@ -639,13 +672,17 @@ int length(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dış dizisinin işaretçisi.
+*first1*<br/>
+Dış dizinin başlangıç işaretçisi.
 
-*last1* dış dizi sonu işaretçisi.
+*last1*<br/>
+Dış dizi sonu işaretçisi.
 
-*_Len2* üye işlevi tarafından döndürülen bayt sayısı.
+*_Len2*<br/>
+Üye işlevi tarafından döndürülen bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -740,19 +777,26 @@ result out(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first1* başına dönüştürülecek dizisinin işaretçisi.
+*first1*<br/>
+Dönüştürülecek dizinin başlangıç işaretçisi.
 
-*last1* dönüştürülecek dizisi sonu işaretçisi.
+*last1*<br/>
+Dönüştürülecek dizisi sonu işaretçisi.
 
-*next1* ilk işaretçi başvurusu dönüştürmeden `CharType` en son `CharType` dönüştürülür.
+*next1*<br/>
+İlk işaretçi başvurusu dönüştürmeden `CharType` en son `CharType` dönüştürülür.
 
-*first2* işaretçiyi dönüştürülmüş sıralı başlangıcına.
+*first2*<br/>
+Dönüştürülmüş sıralı başına işaretçisi.
 
-*Soyadı2* dönüştürülmüş sıralı sonu işaretçisi.
+*Soyadı2*<br/>
+Dönüştürülmüş sıralı sonu işaretçisi.
 
-*next2* ilk işaretçi başvurusu dönüştürmeden `Byte` son dönüştürülen sonra `Byte`.
+*next2*<br/>
+İlk işaretçi başvurusu dönüştürmeden `Byte` son dönüştürülen sonra `Byte`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -796,7 +840,7 @@ int main( )
 
 ```Output
 It worked: The converted string is:
- [This is the wchar_t string to be converted.]
+[This is the wchar_t string to be converted.]
 ```
 
 ## <a name="state_type"></a>  codecvt::state_type
@@ -825,13 +869,17 @@ result unshift(
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* üye işleve yapılan çağrılar arasındaki tutulan dönüştürme durumu.
+*Duru_m*<br/>
+Üye işlev için çağrılar arasında korunur dönüştürme durumu.
 
-*first2* hedef aralıktaki ilk konumu için işaretçi.
+*first2*<br/>
+Hedef aralıktaki ilk konumu için işaretçi.
 
-*Soyadı2* hedef aralıktaki son Konum işaretçisi.
+*Soyadı2*<br/>
+Hedef aralıktaki son konuma yönelik işaretçi.
 
-*next2* hedef dizideki ilk değiştirilmemiş öğesinin işaretçisi.
+*next2*<br/>
+Hedef dizideki ilk değiştirilmemiş öğesinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

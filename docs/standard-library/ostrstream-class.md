@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ea34ac38b70defc873278ce964ff10b8383dcc5
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 526ed4340446e78a723af97f43fbed401f574764
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966591"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106050"
 ---
 # <a name="ostrstream-class"></a>ostrstream Sınıfı
 
@@ -77,7 +77,8 @@ void freeze(bool _Freezeit = true);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Freezeit* A **bool** donabilir akış isteyip istemediğinizi belirten.
+*_Freezeit*<br/>
+A **bool** donabilir akış isteyip istemediğinizi belirten.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -101,11 +102,14 @@ ostrstream(char* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* arabellek.
+*ptr*<br/>
+Arabellek.
 
-*sayısı* arabelleğin bayt cinsinden boyutu.
+*Sayısı*<br/>
+Arabelleğin bayt cinsinden boyutu.
 
-*_Modu* arabellek giriş ve çıkış modu. Bkz: [ios_base::openmode](../standard-library/ios-base-class.md#openmode) daha fazla bilgi için.
+*_Modu*<br/>
+Giriş ve çıkış modu arabellek. Bkz: [ios_base::openmode](../standard-library/ios-base-class.md#openmode) daha fazla bilgi için.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -21,12 +21,12 @@ helpviewer_keywords:
 - std::chrono [C++], duration
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4b85fd369e82ceab0a6b5255267e32d864eab67
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bb4d2c813b53a180f13d5047dc0d78dae98fe59f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956872"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100917"
 ---
 # <a name="duration-class"></a>duration Sınıfı
 
@@ -120,13 +120,17 @@ constexpr duration(const duration<Rep2, Period2>& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Rep2* tıklarının sayısını temsil eden bir aritmetik tür.
+*Rep2*<br/>
+Tıklarının sayısını temsil eden bir aritmetik türü.
 
-*Period2* A `std::ratio` birimlerindeki dönemini saniye temsil etmek için şablon uzmanlığı.
+*Period2*<br/>
+A `std::ratio` birimlerindeki dönemini saniye temsil etmek için şablon uzmanlığı.
 
-*R* varsayılan dönem sayısı.
+*R*<br/>
+Varsayılan dönem sayısı.
 
-*Süre* tarafından belirtilen dönem tıklarının sayısını *Period2*.
+*Süre*<br/>
+Tarafından belirtilen dönem tıklarının sayısını *Period2*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -202,7 +206,8 @@ duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*Div* ilk yönteminde *Div* işaret sayısını temsil eder. İkinci yöntem *Div* olduğu bir `duration` bir onay sayısı içeren nesne.
+*div*<br/>
+İlk yöntem için *Div* işaret sayısını temsil eder. İkinci yöntem *Div* olduğu bir `duration` bir onay sayısı içeren nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -218,7 +223,8 @@ duration& operator*=(const rep& Mult);
 
 ### <a name="parameters"></a>Parametreler
 
-*Mult* tarafından belirtilen türün bir değeri `duration::rep`.
+*Mult*<br/>
+Tarafından belirtilen türün bir değeri `duration::rep`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -234,7 +240,8 @@ duration& operator/=(const rep& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*Div* tarafından belirtilen türün bir değeri `duration::rep`.
+*div*<br/>
+Tarafından belirtilen türün bir değeri `duration::rep`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -274,7 +281,8 @@ duration& operator+=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre* A `duration` nesne.
+*Süre*<br/>
+A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -290,7 +298,8 @@ duration& operator-=(const duration& Dur);
 
 ### <a name="parameters"></a>Parametreler
 
-*Süre* A `duration` nesne.
+*Süre*<br/>
+A `duration` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -314,7 +323,8 @@ duration& operator%=(const rep& Div);duration& operator%=(const duration& Div);
 
 ### <a name="parameters"></a>Parametreler
 
-*Div* bir süre nesnesi ya da işaret sayıları temsil eden bir değer bölen.
+*div*<br/>
+Bir süre nesnesi ya da işaret sayıları temsil eden bir değer bölen.
 
 ### <a name="remarks"></a>Açıklamalar
 

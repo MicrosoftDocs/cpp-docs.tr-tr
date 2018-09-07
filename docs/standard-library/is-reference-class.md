@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7882bdd68d6d35994752c8332329e6a92b74fbfa
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9464e71757416e1a1efb7c185d11740bfc1da3c0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959800"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105867"
 ---
 # <a name="isreference-class"></a>is_reference Sınıfı
 
@@ -37,7 +37,8 @@ struct is_reference;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

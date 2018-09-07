@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fdad6f34fed49ec851f027cba4c53ea08b48902
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 82a5a02ed85e3a02c1131a413eb8588dd49dee90
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195409"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100904"
 ---
 # <a name="ltistreamgt-operators"></a>&lt;istream&gt; işleçleri
 
@@ -64,13 +64,17 @@ basic_istream<Elem, Tr>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* bir karakter.
+*Ch*<br/>
+Bir karakter.
 
-*Istr* bir akış.
+*Istr*<br/>
+Bir akış.
 
-*str* bir dize.
+*str*<br/>
+Bir dize.
 
-*VAL* bir tür.
+*VAL*<br/>
+Bir tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

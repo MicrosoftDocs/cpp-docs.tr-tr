@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 26386ebb5e2bbb20b952200869ccffb7677c59af
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 05442a0c590bcb66449aeae72d54cc6e988421bc
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962432"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44099902"
 ---
 # <a name="gammadistribution-class"></a>gamma_distribution Sınıfı
 
@@ -80,9 +80,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -207,11 +209,14 @@ explicit gamma_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*alfa* `alpha` dağıtım parametresi.
+*alfa*<br/>
+`alpha` Dağıtım parametresi.
 
-*Beta* `beta` dağıtım parametresi.
+*Beta*<br/>
+`beta` Dağıtım parametresi.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -239,11 +244,14 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*alfa* `alpha` dağıtım parametresi.
+*alfa*<br/>
+`alpha` Dağıtım parametresi.
 
-*Beta* `beta` dağıtım parametresi.
+*Beta*<br/>
+`beta` Dağıtım parametresi.
 
-*doğru* `param_type` karşılaştırmak için bu örneği.
+*sağ*<br/>
+`param_type` Karşılaştırmak için bu örneği.
 
 ### <a name="remarks"></a>Açıklamalar
 

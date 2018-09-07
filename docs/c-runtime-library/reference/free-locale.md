@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b74725ddd7884bcc714e1048b28c53f201ebe4e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ce945499505b7efcaaf010585f27fbfaf42a06b8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32397138"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103325"
 ---
 # <a name="freelocale"></a>_free_locale
 
-Bir yerel ayar nesnesi serbest bırakır.
+Bir yerel ayar nesnesini serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -57,13 +57,14 @@ void _free_locale(
 
 ### <a name="parameters"></a>Parametreler
 
-*yerel ayar* boşaltmak için yerel ayar nesnesi.
+*Yerel ayar*<br/>
+Serbest bırakmak için yerel ayar nesnesi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Free_locale** işlev çağrısından alınan yerel nesne serbest için kullanılan **_get_current_locale** veya **_create_locale**.
+**_Free_locale** işlev çağrısından alınan yerel ayar nesnesi ücretsiz için kullanılan **_get_current_locale** veya **_create_locale**.
 
-Bu işlev, önceki adını **__free_locale** (iki başında alt çizgi ile) kullanım dışı bırakıldı.
+Bu işlev, önceki adını **__free_locale** (başında iki alt çizgi ile) kullanım dışı bırakıldı.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,7 +72,7 @@ Bu işlev, önceki adını **__free_locale** (iki başında alt çizgi ile) kull
 |---------------|---------------------|
 |**_free_locale**|\<Locale.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

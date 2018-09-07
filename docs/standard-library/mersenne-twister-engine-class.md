@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bb03b35ed792bda7c506fd06d6102dda83c768e6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f868a6f2ec63e38573d49a1dc4b3b7a122f4d8f2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959277"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100228"
 ---
 # <a name="mersennetwisterengine-class"></a>mersenne_twister_engine Sınıfı
 
@@ -39,23 +39,32 @@ class mersenne_twister_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*UIntType* işeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*<br/>
+İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*W* **Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `2u < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `2u < W ≤ numeric_limits<UIntType>::digits`
 
-*N* **durum boyutu**. (Değerler) durumu dizideki öğelerin sayısı.
+*N*<br/>
+**Durum boyutu**. (Değerler) durumu dizideki öğelerin sayısı.
 
-*M* **kaydırma boyutu**. Her geçiş sırasında atlanacak öğe sayısı. **Önkoşul**: `0 < M ≤ N`
+*M*<br/>
+**Kaydırma boyutu**. Her geçiş sırasında atlanacak öğe sayısı. **Önkoşul**: `0 < M ≤ N`
 
-*R* **bit maskesi**. **Önkoşul**: `R ≤ W`
+*R*<br/>
+**Bit maskesi**. **Önkoşul**: `R ≤ W`
 
-*A* **XOR maskesi**. **Önkoşul**: `A ≤ (1u<<W) - 1u`
+*A*<br/>
+**XOR maskesi**. **Önkoşul**: `A ≤ (1u<<W) - 1u`
 
-*U*, *S*, *T*, *L* **Tempering shift parametreleri**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul: `U,S,T,L ≤ W`
+*U*, *S*, *T*, *M*<br/>
+**Shift parametreleri tempering**. Shift değerleri olarak (tempering) karıştırma sırasında kullanılır. Önkoşul: `U,S,T,L ≤ W`
 
-*D*, *B*, *C* **Tempering bit maskesi parametreleri**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul: `D,B,C ≤ (1u<<W) - 1u`
+*D*, *B*, *C*<br/>
+**Bit maskesi parametreleri tempering**. Bit maskesi değerleri (tempering) karıştırma sırasında kullanılır. Önkoşul: `D,B,C ≤ (1u<<W) - 1u`
 
-*F* **başlatma çarpan**. Başlatma sırası ile yardımcı olmak için kullanılır. Önkoşul: `F ≤ (1u<<W) - 1u`
+*F*<br/>
+**Başlatma çarpan**. Başlatma sırası ile yardımcı olmak için kullanılır. Önkoşul: `F ≤ (1u<<W) - 1u`
 
 ## <a name="members"></a>Üyeler
 

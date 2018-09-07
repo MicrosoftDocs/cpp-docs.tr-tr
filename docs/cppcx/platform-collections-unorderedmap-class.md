@@ -11,12 +11,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3e12028d91d488aed635adfeedc206eaffe08ae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2050be008f89ff2d125842d5919407dc292eed40
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205819"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105841"
 ---
 # <a name="platformcollectionsunorderedmap-class"></a>Platform::Collections::UnorderedMap Sınıfı
 
@@ -35,13 +35,13 @@ ref class Map sealed;
 
 #### <a name="parameters"></a>Parametreler
 
-*K*  
+*K*<br/>
 Anahtar-değer çifti anahtar türü.
 
-*V*  
+*V*<br/>
 Anahtar-değer çiftindeki değer türü.
 
-*C*  
+*C*<br/>
 İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::equal_to\<K >](../standard-library/equal-to-struct.md).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -118,7 +118,7 @@ virtual void Clear();
 
 ```cpp
 virtual Windows::Foundation::Collections::IIterator<
-   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^ 
+   Windows::Foundation::Collections::IKeyValuePair<K, V>^>^
    First();
 ```
 
@@ -158,7 +158,7 @@ bool HasKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 UnorderedMap öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -180,10 +180,10 @@ virtual bool Insert(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
-*value*  
+*value*<br/>
 Anahtar-değer çiftinin değer bölümünü. Türünü *değer* TypeName *V*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -204,7 +204,7 @@ V Lookup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bir öğe içinde UnorderedMap bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -242,7 +242,7 @@ virtual void Remove(
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 ## <a name="size"></a>  UnorderedMap::Size yöntemi
@@ -346,31 +346,32 @@ UnorderedMap(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*  
+*InIt*<br/>
 Geçerli UnorderedMap tür adı.
 
-*P*  
+*P*<br/>
 Eşit olup olmadığını belirlemek için iki anahtarı karşılaştıran bir işlev nesnesi. Bu parametre için varsayılan olarak [std::equal_to\<K >](../standard-library/equal-to-struct.md).
 
-*H*  
+*H*<br/>
 Bir anahtar için bir karma değer üreten bir işlev nesnesi. Bu parametre için varsayılan olarak [sınıf 1 karma](../standard-library/hash-class.md) sınıfı, anahtar türleri için destekler.
 
-*m*  
+*m*<br/>
 Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir [std::unordered_map](../standard-library/unordered-map-class.md) geçerli UnorderedMap başlatmak için kullanılır.
 
-*IL* A [std::initializer_list](../standard-library/initializer-list-class.md) , [std::pair](../standard-library/pair-structure.md) harita başlatmak için kullanılan nesne.
+*IL*<br/>
+A [std::initializer_list](../standard-library/initializer-list-class.md) , [std::pair](../standard-library/pair-structure.md) harita başlatmak için kullanılan nesne.
 
-*ilk*  
+*ilk*<br/>
 Geçerli UnorderedMap başlatmak için kullanılan öğelerin bir aralıktaki ilk öğenin bir giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Geçerli UnorderedMap başlatmak için kullanılan öğelerin bir aralığını sonra ilk öğenin bir giriş yineleyici.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)  
-[Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)  
-[Platform::Collections::UnorderedMapView Sınıfı](../cppcx/platform-collections-unorderedmapview-class.md)  
-[Koleksiyonlar](../cppcx/collections-c-cx.md)  
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)<br/>
+[Platform::Collections::Map Sınıfı](../cppcx/platform-collections-map-class.md)<br/>
+[Platform::Collections::UnorderedMapView Sınıfı](../cppcx/platform-collections-unorderedmapview-class.md)<br/>
+[Koleksiyonlar](../cppcx/collections-c-cx.md)<br/>
+[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

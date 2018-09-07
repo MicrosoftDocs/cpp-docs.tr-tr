@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4069dc5151dd231773e926aadf17de7c03d3770
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a3b5ed9880a29e0738f67ca30695ea87c81de6b7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958285"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110220"
 ---
 # <a name="linearcongruentialengine-class"></a>linear_congruential_engine Sınıfı
 
@@ -55,13 +55,17 @@ class linear_congruential_engine{
 
 ### <a name="parameters"></a>Parametreler
 
-*UIntType* işeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*<br/>
+İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*A* **çarpan**. **Önkoşul**: bkz. Açıklamalar bölümü.
+*A*<br/>
+**Çarpan**. **Önkoşul**: bkz. Açıklamalar bölümü.
 
-*C* **artışı**. **Önkoşul**: bkz. Açıklamalar bölümü.
+*C*<br/>
+**Artırma**. **Önkoşul**: bkz. Açıklamalar bölümü.
 
-*M* **Modulus**. **Önkoşul**: açıklamalara bakın.
+*M*<br/>
+**Modulus**. **Önkoşul**: açıklamalara bakın.
 
 ## <a name="members"></a>Üyeler
 

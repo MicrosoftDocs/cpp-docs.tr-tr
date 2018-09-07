@@ -104,12 +104,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6bacb90052b46b687349e9069fd7c47f825f0221
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6bc4fa8da5d9fa2d15febc3c7b016622e614129a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202798"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100969"
 ---
 # <a name="basicstreambuf-class"></a>basic_streambuf Sınıfı
 
@@ -124,9 +124,11 @@ class basic_streambuf;
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* A [char_type](#char_type).
+*Elem*<br/>
+A [char_type](#char_type).
 
-*Tr* karakter [traits_type](#traits_type).
+*tr*<br/>
+Karakter [traits_type](#traits_type).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -250,7 +252,8 @@ basic_streambuf(const basic_streambuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir lvalue başvurusuna `basic_streambuf` bu değerleri ayarlamak için kullanılan nesne `basic_streambuf` nesne.
+*sağ*<br/>
+Bir lvalue başvurusuna `basic_streambuf` bu değerleri ayarlamak için kullanılan nesne `basic_streambuf` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -312,7 +315,8 @@ void gbump(int count);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* işaretçi ilerleyin tutarı.
+*Sayısı*<br/>
+Tutarı işaretçi ilerleyin.
 
 ## <a name="getloc"></a>  basic_streambuf::getloc
 
@@ -370,7 +374,8 @@ virtual void imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Loc* bir yerel ayar için bir başvuru.
+*_Loc*<br/>
+Bir yerel ayar için bir başvuru.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -436,7 +441,8 @@ basic_streambuf& operator=(const basic_streambuf& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir lvalue başvurusuna `basic_streambuf` değerleri bu nesneye atamak için kullanılan nesne.
+*sağ*<br/>
+Bir lvalue başvurusuna `basic_streambuf` değerleri bu nesneye atamak için kullanılan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -452,7 +458,8 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta* karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*<br/>
+Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -486,7 +493,8 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta* karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
+*_Meta*<br/>
+Karakter arabelleğine ekleme veya **traits_type::**[eof](../standard-library/char-traits-struct.md#eof).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -524,7 +532,8 @@ void pbump(int count);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* yazma taşımak karakter sayısını İleri getirin.
+*Sayısı*<br/>
+Yazma konumunu ilerlemek karakter sayısı.
 
 ## <a name="pos_type"></a>  basic_streambuf::pos_type
 
@@ -556,7 +565,8 @@ locale pubimbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Loc* bir yerel ayar için bir başvuru.
+*_Loc*<br/>
+Bir yerel ayar için bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -582,11 +592,14 @@ pos_type pubseekoff(off_type _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* göreli arama konumu *_Way*.
+*_Off*<br/>
+Arama için göreli konumunu *_Way*.
 
-*_Way* işlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Way*<br/>
+İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -606,9 +619,11 @@ pos_type pubseekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in | ios
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp* için arama konumu.
+*_Sp*<br/>
+Arama konumu.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -630,9 +645,11 @@ basic_streambuf<Elem, Tr> *pubsetbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer* işaretçisi `char_type` bu örneklemesi için.
+*_Buffer*<br/>
+Bir işaretçi `char_type` bu örneklemesi için.
 
-*sayısı* arabellek boyutu.
+*Sayısı*<br/>
+Arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -707,11 +724,14 @@ virtual pos_type seekoff(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* göreli arama konumu *_Way*.
+*_Off*<br/>
+Arama için göreli konumunu *_Way*.
 
-*_Way* işlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Way*<br/>
+İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -741,9 +761,11 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp* için arama konumu.
+*_Sp*<br/>
+Arama konumu.
 
-*_Which* işaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -769,9 +791,11 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Buffer* arabellek için işaretçi.
+*_Buffer*<br/>
+Arabellek için işaretçi.
 
-*sayısı* arabellek boyutu.
+*Sayısı*<br/>
+Arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -793,11 +817,14 @@ void setg(char_type* _Gbeg,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Gbeg* arabelleğin başına bir işaretçi.
+*_Gbeg*<br/>
+Arabelleğin başına bir işaretçi.
 
-*_Gnext* yere bir işaretçi arabellek ortasında.
+*_Gnext*<br/>
+Yere bir işaretçi arabellek ortasında.
 
-*_Gend* arabelleğin sonuna bir işaretçi.
+*_Gend*<br/>
+Arabelleğin sonuna bir işaretçi.
 
 ## <a name="setp"></a>  basic_streambuf::setp
 
@@ -809,9 +836,11 @@ void setp(char_type* _Pbeg, char_type* _Pend);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pbeg* arabelleğin başına bir işaretçi.
+*_Pbeg*<br/>
+Arabelleğin başına bir işaretçi.
 
-*_Pend* arabelleğin sonuna bir işaretçi.
+*_Pend*<br/>
+Arabelleğin sonuna bir işaretçi.
 
 ## <a name="sgetc"></a>  basic_streambuf::sgetc
 
@@ -863,9 +892,11 @@ streamsize sgetn(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* ayıklanan karakterleri içeren arabellek.
+*ptr*<br/>
+Ayıklanan karakterleri içeren arabellek.
 
-*sayısı* okumak için öğe sayısı.
+*Sayısı*<br/>
+Okunacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -967,7 +998,8 @@ int_type sputbackc(char_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* karakter.
+*_Ch*<br/>
+Karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1014,7 +1046,8 @@ int_type sputc(char_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* karakter.
+*_Ch*<br/>
+Karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1056,9 +1089,11 @@ streamsize sputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* karakter dizesi.
+*ptr*<br/>
+Karakter dizesi.
 
-*sayısı* karakter sayısı.
+*Sayısı*<br/>
+Karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1281,9 +1316,11 @@ virtual streamsize xsgetn(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* ayıklanan karakterleri içeren arabellek.
+*ptr*<br/>
+Ayıklanan karakterleri içeren arabellek.
 
-*sayısı* ayıklamak için öğe sayısı.
+*Sayısı*<br/>
+Ayıklanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1303,9 +1340,11 @@ virtual streamsize xsputn(const char_type* ptr, streamsize count);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* öğeleri eklemek için işaretçi.
+*ptr*<br/>
+Öğeleri eklemeye yönelik işaretçi.
 
-*sayısı* eklenecek öğe sayısı.
+*Sayısı*<br/>
+Eklenecek öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt;&lt; (bitset)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d01a9ad5ef0b5cc3198231ae2b361e04856449f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 83e6e1bc3d35f076d3a1b8fd2151ad4c94c060cb
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955026"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107665"
 ---
 # <a name="ltbitsetgt-operators"></a>&lt;bitset&gt; işleçleri
 
@@ -48,9 +48,11 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `AND`.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `AND`.
 
-*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND`.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -98,7 +100,8 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* türünde bir nesne **bitset\<N >** olan dize olarak çıkış akışına içine eklenecek.
+*sağ*<br/>
+Bir nesne türü **bitset\<N >** olan dize olarak çıkış akışına içine eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -157,9 +160,11 @@ _Istr,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr* bitset eklenecek Giriş akışı tarafları olan dize.
+*_Istr*<br/>
+Bitset eklenecek giriş akışının içine girilen bir dize.
 
-*doğru* BITS girdi akışından alıyor bitset.
+*sağ*<br/>
+BITS, giriş akışından alıyor bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -240,9 +245,11 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `EXCLUSIVE-OR`.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `EXCLUSIVE-OR`.
 
-*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `EXCLUSIVE-OR`.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `EXCLUSIVE-OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -290,9 +297,11 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `OR`.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki bitsets ilk `OR`.
 
-*doğru* iki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR`.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

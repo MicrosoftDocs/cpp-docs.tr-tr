@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeedb217466262d8643a851b5f93cb9ac26fb0a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2975e63f79818e5eac430056258b72b9c6641a49
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408454"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100280"
 ---
 # <a name="swab"></a>_swab
 
@@ -59,21 +59,24 @@ void _swab(
 
 ## <a name="parameters"></a>Parametreler
 
-*src* kopyalanır ve takas için veri.
+*src*<br/>
+Kopyalanır ve takas için veriler.
 
-*Hedef* değiştirilen verileri için depolama konumu.
+*Hedef*<br/>
+Değiştirilen verileri için depolama konumu.
 
-*n* kopyalanır ve takas bayt sayısı.
+*n*<br/>
+Kopyalanır ve takas için bayt sayısı.
 
 ## <a name="return-value"></a>Dönüş değeri
 
-**Swab** işlevi bir değer döndürmez. İşlev kümeleri **errno** için **EINVAL** her iki *src* veya *taşınmaya* işaretçidir null veya *n* küçük sıfır ve geçersiz bir parametre işleyici, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md).
+**Swab** işlevi, bir değer döndürmüyor. İşlev kümeleri **errno** için **EINVAL** ya da *src* veya *dest* işaretçisi, null veya *n* küçük sıfır ve geçersiz parametre açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md).
 
-Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer dönüş kodları hakkında daha fazla bilgi için.
+Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bu ve diğer döndürme kodları hakkında daha fazla bilgi için.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa *n* olsa bile, **_swab** işlev kopyaları *n* baytlar *src*her çifti bitişik bayt değiştirir ve sonucundadepolar*taşınmaya*. Varsa *n* tek, olup **_swab** kopyalar ve ilk değiştirir *n*-1 bayt *src*, ve son bayt kopyalanmaz. **_Swab** işlevi farklı bayt sırası kullanan bir makine aktarmak için ikili verileri hazırlamak için genellikle kullanılır.
+Varsa *n* olsa bile, **_swab** işlev kopyaları *n* bayt *src*bitişik bayt her çiftini değiştirir ve sonucu konumundadepolar*dest*. Varsa *n* tektir, **_swab** kopyalar ve ilk değiştirir *n*-1 bayt *src*, ve son bayt kopyalanmaz. **_Swab** işlevi genellikle farklı bayt sırası kullanan bir bilgisayara aktarmak için ikili verileri hazırlamak için kullanılır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -81,7 +84,7 @@ Varsa *n* olsa bile, **_swab** işlev kopyaları *n* baytlar *src*her çifti bit
 |-------------|---------------------|
 |**_swab**|C: \<stdlib.h > C++: \<cstdlib > veya \<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

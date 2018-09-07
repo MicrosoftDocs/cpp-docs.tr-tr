@@ -44,19 +44,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62e0fea9154801f850640234355af53dc1154160
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: afcd461446f98024e04e44e28facae4fba65b0aa
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408921"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100411"
 ---
 # <a name="searchenv-wsearchenv"></a>_searchenv, _wsearchenv
 
-Bir dosyayı aramak için ortam yolları kullanır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md).
+Bir dosyayı aramak için ortam yollarını kullanır. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_searchenv_s, _wsearchenv_s](searchenv-s-wsearchenv-s.md).
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -87,29 +87,32 @@ void _wsearchenv(
 
 ### <a name="parameters"></a>Parametreler
 
-*filename* aramak için dosyanın adı.
+*Dosya adı*<br/>
+Aranacak dosyanın adı.
 
-*varName* aramak için ortam.
+*varName*<br/>
+Aranacak ortam.
 
-*PathName* arabellek tam yolunu depolar.
+*yol adı*<br/>
+Tam yolu depolayan arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Searchenv** rutin hedef dosya belirtilen etki alanında arar. *Varname* değişkeni herhangi bir ortam veya kullanıcı tanımlı değişken olabilir — örneğin, **yolu**, **LIB**, veya **INCLUDE**— belirleyen bir dizin yolları listesi. Çünkü **_searchenv** , küçük harf duyarlıdır *varname* ortam değişkeni durumunun eşleşmesi gerekir.
+**_Searchenv** yordamı hedef dosyayı belirtilen etki alanındaki arar. *Varname* herhangi bir ortam veya kullanıcı tanımlı değişken olabilir — örneğin, **yolu**, **LIB**, veya **INCLUDE**— belirten bir dizin yolları listesi. Çünkü **_searchenv** , duyarlıdır *varname* ortam değişkeninin durum eşleşmesi gerekir.
 
-Geçerli çalışma dizini dosyasında rutin ilk arar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizin aracılığıyla arar. Hedef dosya bu dizinlerin birinde varsa, yeni oluşturulan yolu kopyalanır *pathname*. Varsa *filename* dosya bulunamadı, *pathname* null ile sonlandırılmış boş bir dize içeriyor.
+Yordam önce dosyanın geçerli çalışma dizininde arar. Dosyayı bulamazsa, ortam değişkeni tarafından belirtilen dizinleri arar. Hedef dosya bu dizinlerden birindeyse, yeni oluşturulan yol kopyalanır *pathname*. Varsa *filename* dosya bulunamadı, *pathname* boş bir null ile sonlandırılmış dize içerir.
 
-*Pathname* arabellek en az olmalıdır **_MAX_PATH** karakter uzunluğunda oluşturulan yol adı tam uzunluğu uyum sağlamak için. Aksi takdirde, **_searchenv** taşması *pathname* arabellek ve beklenmeyen davranışlara neden olabilir.
+*Pathname* arabellek olmalıdır en az **_MAX_PATH** oluşturulan yol adının tam uzunluğunu karşılamak için karakter uzunluğunda. Aksi takdirde, **_searchenv** arabelleğinden taşabilir *pathname* arabellek ve beklenmeyen davranışlara neden olabilir.
 
-**_wsearchenv** bir joker karakter sürümü **_searchenv**ve bağımsız değişkenleri **_wsearchenv** joker karakter dizelerdir. **_wsearchenv** ve **_searchenv** Aksi takdirde aynı şekilde davranır.
+**_wsearchenv** geniş karakterli sürümüdür **_searchenv**ve bağımsız değişkenleri **_wsearchenv** geniş karakterli dizelerdir. **_wsearchenv** ve **_searchenv** aynı şekilde davranır.
 
-Varsa *filename* bu işlevlerin dönüş boş bir dize olan **ENOENT**.
+Varsa *filename* bu işlevler döndürür bir boş bir dize ise **ENOENT**.
 
-Varsa *filename* veya *pathname* olan bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
+Varsa *filename* veya *pathname* olduğu bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler -1 döndürür ve **errno** için **EINVAL**.
 
-Hakkında daha fazla bilgi için **errno** ve hata kodları bakın [errno sabitleri](../../c-runtime-library/errno-constants.md).
+Hakkında daha fazla bilgi için **errno** ve hata kodları [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
-C++'da, bu işlevlerin daha yeni, daha güvenli ortaklarınıza çağırma şablon aşırı yüklemeleri bu işlevler vardır. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++'da, bu işlevler, bu işlevlerin daha yeni ve güvenli karşılıklarını çağırma şablon aşırı yüklemeleri vardır. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -124,7 +127,7 @@ C++'da, bu işlevlerin daha yeni, daha güvenli ortaklarınıza çağırma şabl
 |**_searchenv**|\<stdlib.h >|
 |**_wsearchenv**|\<stdlib.h > veya \<wchar.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

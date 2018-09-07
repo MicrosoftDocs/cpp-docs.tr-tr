@@ -32,16 +32,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 24cf01facaba326c36454ea5410da8dbb05848f2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 92d6148f6cbe49799a122d1745a6a6cde4c8be30
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32396875"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100385"
 ---
 # <a name="crtmemdumpallobjectssince"></a>_CrtMemDumpAllObjectsSince
 
-Program yürütme başlangıç ya da belirtilen yığın durumu (yalnızca hata ayıklama sürümü) yığın nesneleri hakkında bilgi dökümünü yapar.
+Program yürütme başlangıcından veya belirtilen yığın durumundan (yalnızca hata ayıklama sürümü) yığındaki nesneler hakkında bilgi dökümünü yapar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,17 +53,18 @@ void _CrtMemDumpAllObjectsSince(
 
 ### <a name="parameters"></a>Parametreler
 
-*durumu* gelen dökme başlamak için yığın durumu işaretçisi veya **NULL**.
+*durumu*<br/>
+Gelen dökme başlamak için yığın durumuna yönelik işaretçi veya **NULL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_CrtMemDumpAllObjectsSince** işlevi, kullanıcı tarafından okunabilir bir biçimde yığınındaki ayrılmış nesnelerin hata ayıklama üst bilgileri dökümünü yapar. Döküm bilgilerini ayırmaları izlemek ve bellek sorunları algılamak için uygulama tarafından kullanılabilir. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemDumpAllObjectsSince** ön işleme sırasında kaldırılır.
+**_CrtMemDumpAllObjectsSince** işlevi, hata ayıklama üst bilgi bilgileri kullanıcı tarafından okunabilen bir formda yığında ayrılan nesnelerin dökümünü alır. Döküm bilgilerini ayırmaları İzle ve bellek sorunlarını algılamak için uygulama tarafından kullanılabilir. Zaman [_DEBUG](../../c-runtime-library/debug.md) tanımlı değil, çağrılar **_CrtMemDumpAllObjectsSince** ön işleme sırasında kaldırılır.
 
-**_CrtMemDumpAllObjectsSince** değerini kullanır *durumu* döküm işlemi başlatmak nereye belirlemek için parametre. Belirtilen yığın durumundan dökme başlamaya *durumu* parametresi için bir işaretçi olmalıdır bir **_CrtMemState** tarafından doldurulmuştur yapısı [_CrtMemCheckpoint](crtmemcheckpoint.md) önce **_CrtMemDumpAllObjectsSince** çağrıldı. Zaman *durumu* olan **NULL**, program yürütme başından döküm işlevi başlar.
+**_CrtMemDumpAllObjectsSince** değerini kullanır *durumu* döküm işlemini başlatmak nereye belirlemek için parametre. Belirtilen yığın durumu dökme başlamak için *durumu* parametresi işaretçi olmalıdır bir **_CrtMemState** ile doldurulmuştur yapısı [_CrtMemCheckpoint](crtmemcheckpoint.md) önce **_CrtMemDumpAllObjectsSince** çağrıldı. Zaman *durumu* olduğu **NULL**, döküm program yürütme başlangıcından işlev başlar.
 
-Uygulama bir döküm kanca işlevini çağırarak yüklü olmadığını [_CrtSetDumpClient](crtsetdumpclient.md), sonra her zaman **_CrtMemDumpAllObjectsSince** hakkında bilgi dökümleri bir **_clıent_block** türü bloğu, uygulama tarafından sağlanan döküm işlevi de çağırır. Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek dökümü işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi,'nı açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları içerecek şekilde. Ayrıca, olarak işaretlenmiş blokları serbest veya göz ardı (**_FREE_BLOCK**, **_ıgnore_block**) bellek dökümü dahil edilmez.
+Uygulama bir döküm kanca işlevini çağırarak yüklü olmadığını [_CrtSetDumpClient](crtsetdumpclient.md), ardından her **_CrtMemDumpAllObjectsSince** hakkında bilgi dökümlerini bir **_clıent_block** türü bloğu, uygulama tarafından sağlanan döküm işlevi de çağırır. Varsayılan olarak, iç C çalışma zamanı blokları (**_CRT_BLOCK**) bellek dökümü işlemlerinde dahil edilmez. [_CrtSetDbgFlag](crtsetdbgflag.md) işlevi, açmak için kullanılabilir **_CRTDBG_CHECK_CRT_DF** , bit **_crtDbgFlag** bu blokları içerecek şekilde. Ayrıca, olarak işaretlenmiş blokların serbest veya göz ardı (**_FREE_BLOCK**, **_ıgnore_block**) bellek dökümü içinde yer almaz.
 
-Yığın durumu İşlevler hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılmış, başlatılmış ve temel yığın hata ayıklama sürümü yönetilen hakkında daha fazla bilgi için bkz: [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
+Yığın durumu işlevleri hakkında daha fazla bilgi ve **_CrtMemState** yapısı için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details). Nasıl bellek blokları ayrılan, başlatılır ve taban yığının hata ayıklama sürümünde yönetilen hakkında daha fazla bilgi için bkz. [CRT hata ayıklama öbeği ayrıntıları](/visualstudio/debugger/crt-debug-heap-details).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,7 +72,7 @@ Yığın durumu İşlevler hakkında daha fazla bilgi ve **_CrtMemState** yapıs
 |-------------|---------------------|
 |**_CrtMemDumpAll-ObjectsSince**|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -79,7 +80,7 @@ Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime
 
 ## <a name="example"></a>Örnek
 
-Nasıl kullanılacağına ilişkin bir örnek için **_CrtMemDumpAllObjectsSince**, bkz: [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
+Nasıl kullanılacağını gösteren bir örnek **_CrtMemDumpAllObjectsSince**, bkz: [crt_dbg2](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/crt/crt_dbg2).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

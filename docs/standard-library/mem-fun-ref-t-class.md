@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc0684d51fd406f16588188555f67fcebb351fbf
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a2dffdb71b8121073775af52ed42cda205c70589
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956104"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100176"
 ---
 # <a name="memfunreft-class"></a>mem_fun_ref_t Sınıfı
 
@@ -42,9 +42,11 @@ class mem_fun_ref_t : public unary_function<Type, Result> {
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pm* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
+*_Pm*<br/>
+Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
-*Sol* nesne, *_Pm* üye işlevi çağrılır.
+*Sol*<br/>
+Nesne, *_Pm* üye işlevi çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

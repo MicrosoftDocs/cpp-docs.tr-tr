@@ -9,12 +9,12 @@ f1_keywords:
 ms.assetid: d1af4b56-9a95-4c65-ab01-bf43e982c7bd
 author: corob-msft
 ms.author: corob
-ms.openlocfilehash: 11c4f3d1c994ee7a29ee47e35881d533f8c8715a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 31db26453efbecceb136b614b8eabf178a0cdfea
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216194"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100372"
 ---
 # <a name="ltnewgt-operators"></a>&lt;Yeni&gt; işleçleri
 
@@ -39,7 +39,8 @@ void operator delete(void* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* değeri olan silme işleminden geçersiz işlenmek üzere bir işaretçi.
+*ptr*<br/>
+Silme işleminden geçersiz işlenmek üzere değeri olan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -71,7 +72,8 @@ void operator delete[](void* ptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* değeri olan silme işleminden geçersiz işlenmek üzere bir işaretçi.
+*ptr*<br/>
+Silme işleminden geçersiz işlenmek üzere değeri olan işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -101,9 +103,11 @@ void* operator new(std::size_t count,
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* depolama ayrılacak bayt sayısı.
+*Sayısı*<br/>
+Depolama ayrılacak bayt sayısı.
 
-*PTR* döndürülmesi için işaretçi.
+*ptr*<br/>
+Döndürülecek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -198,9 +202,11 @@ void* operator new[](std::size_t count,
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* depolama dizi nesnesi için ayrılacak bayt sayısı.
+*Sayısı*<br/>
+Depolama dizisi nesne için ayrılacak bayt sayısı.
 
-*PTR* döndürülmesi için işaretçi.
+*ptr*<br/>
+Döndürülecek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

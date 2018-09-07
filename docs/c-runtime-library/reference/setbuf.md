@@ -32,16 +32,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f8592e8008fa78402ced307b60188ea8610960a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea1c979b261b81f80d95e4219f948dd2a3f5849e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407320"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100359"
 ---
 # <a name="setbuf"></a>setbuf
 
-Denetim akışı arabelleğe alma. Bu işlev kullanım dışıdır; kullanmak [setvbuf](setvbuf.md) yerine.
+Denetim akışı arabelleğe alma. Bu işlev kullanım dışı; kullanma [setvbuf](setvbuf.md) yerine.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,15 +54,17 @@ void setbuf(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış* işaretçi **dosya** yapısı.
+*Stream*<br/>
+İşaretçi **dosya** yapısı.
 
-*Arabellek* kullanıcı tarafından ayrılan arabellek.
+*Arabellek*<br/>
+Kullanıcı tarafından ayrılan bir arabellek.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Setbuf** işlev için arabelleğe alma denetimleri *akış*. *Akış* bağımsız değişkeni bir açık dosyasına okuma yazılmış veya kaldırılmış başvurması gerekir. Varsa *arabellek* bağımsız değişkeni **NULL**, beklemediğiniz arabelleğe alınan bir akışıdır. Arabellek uzunluğu için bir karakter dizisi noktası değil, **BUFSIZ**, burada **BUFSIZ** STDIO içinde tanımlanan arabellek boyutu olan. H. Kullanıcı tarafından belirtilen arabellek, belirtilen akışa için varsayılan sistem tarafından ayrılmış arabellek yerine g/ç için kullanılan arabelleğe alma. **Stderr** akış varsayılan olarak kaldırmayı arabelleğe alınan ancak kullanabilirsiniz **setbuf** arabelleklere atamak için **stderr**.
+**Setbuf** işlev denetimleri için arabelleğe alma *stream*. *Stream* bağımsız değişkeni, okuma yazılan veya açık bir dosyaya başvurmalıdır. Varsa *arabellek* bağımsız değişkeni **NULL**, hazırlanmamış arabelleğe alınan bir akıştır. Arabellek uzunluğu bir karakter dizisi olarak işaret etmiyor, varsa **BUFSIZ**burada **BUFSIZ** STDIO içinde tanımlanan arabellek boyutu olan. H Kullanıcı tarafından belirtilen arabellek, belirtilen akışa için varsayılan sistem tarafından ayrılmış arabellek yerine g/ç için kullanılan arabelleğe alma. **Stderr** akış varsayılan olarak beklemediğiniz arabelleğe alınan ancak kullanabilirsiniz **setbuf** arabelleklere atamak **stderr**.
 
-**setbuf** almıştır [setvbuf](setvbuf.md), yeni kodu için tercih edilen yordamı olduğu. **setbuf** var olan kodu ile uyumluluk için tutulmaktadır.
+**setbuf** almıştır [setvbuf](setvbuf.md), yeni kodu için tercih edilen yordamı olduğu. **setbuf** mevcut kodlarda uyumluluk için tutulmaktadır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,7 +72,7 @@ void setbuf(
 |-------------|---------------------|
 |**setbuf**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -113,7 +115,7 @@ stream2 buffering disabled
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [fclose, _fcloseall](fclose-fcloseall.md)<br/>
 [fflush](fflush.md)<br/>
 [fopen, _wfopen](fopen-wfopen.md)<br/>

@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c56cdcf59c6dad891029e21e14940598e0cfeae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9a44cccd38d64f3e6b0c2b7af390d06292f70157
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209090"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105672"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
@@ -146,11 +146,14 @@ class basic_string;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* dizede depolanacak tek karakterli veri türü. C++ Standart Kitaplığı tür tanımları içeren bu şablon sınıfının uzmanlıklar sağlar [dize](../standard-library/string-typedefs.md#string) türü öğeler için **char**, [wstring](../standard-library/string-typedefs.md#wstring), için**wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) için `char16_t`, ve [u32string](../standard-library/string-typedefs.md#u32string) için `char32_t`.
+*CharType*<br/>
+Dizede depolanacak tek karakterli veri türü. C++ Standart Kitaplığı tür tanımları içeren bu şablon sınıfının uzmanlıklar sağlar [dize](../standard-library/string-typedefs.md#string) türü öğeler için **char**, [wstring](../standard-library/string-typedefs.md#wstring), için**wchar_t**, [u16string](../standard-library/string-typedefs.md#u16string) için `char16_t`, ve [u32string](../standard-library/string-typedefs.md#u32string) için `char32_t`.
 
-*Nitelikler* çeşitli önemli özelliklerini `CharType` öğeleri uzmanlığındaki sınıfı tarafından açıklanan `Traits`. Varsayılan değer `char_traits` <  `CharType`>.
+*Nitelikler*<br/>
+Çeşitli önemli özelliklerini `CharType` öğeleri uzmanlığındaki sınıfı tarafından açıklanan `Traits`. Varsayılan değer `char_traits` <  `CharType`>.
 
-*Allocator* dizenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer **ayırıcı**< `CharType`>.
+*Ayırıcı*<br/>
+Dizenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer **ayırıcı**< `CharType`>.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -314,19 +317,26 @@ basic_string<CharType, Traits, Allocator>& append(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* eklenecek C dizesi.
+*ptr*<br/>
+C-eklenecek dize.
 
-*str* karakterine eklenecek dize.
+*str*<br/>
+Eklenecek dize.
 
-*_Off* sağlama eklenecek karakter kaynak dizesi parçası dizini.
+*_Off*<br/>
+Sağlama eklenecek karakter kaynak dizesi parçası dizini.
 
-*sayısı* , en fazla kaynak dizesi eklenecek karakter sayısı.
+*Sayısı*<br/>
+En fazla kaynak dizesi eklenecek karakter sayısı.
 
-*_Ch* eklenecek karakter değeri.
+*_Ch*<br/>
+Eklenecek karakter değeri.
 
-*İlk* eklenecek aralıktaki ilk öğeyi ele alan giriş yineleyici.
+*ilk*<br/>
+Eklenecek aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*Son* bir giriş Yineleyici, const_pointer veya aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
+*Son*<br/>
+Bir giriş Yineleyici, const_pointer ya da aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -468,19 +478,26 @@ basic_string<CharType, Traits, Allocator>& assign(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* karakter hedef dizesi olarak atanacak C dizesi için bir işaretçi.
+*ptr*<br/>
+Karakter hedef dizesi olarak atanacak C dizesi için bir işaretçi.
 
-*sayısı* kaynak dizesi atanan karakter sayısı.
+*Sayısı*<br/>
+Kaynak dizesi atanan karakter sayısı.
 
-*str* karakterine olan hedef dizeye atanacak kaynak dizesi.
+*str*<br/>
+Hedef dizeye atanacak karakterine olan kaynak dizesi.
 
-*_Ch* atanacak karakter değeri.
+*_Ch*<br/>
+Atanacak karakter değeri.
 
-*İlk* bir giriş Yineleyici, const_pointer veya ilk karakter kaynak dizesi aralığında adresleme const_iterator hedef aralığın atanacak.
+*ilk*<br/>
+Bir giriş Yineleyici, const_pointer veya ilk karakter kaynak dizesi aralığında adresleme const_iterator hedef aralığın atanacak.
 
-*Son* bir giriş Yineleyici, const_pointer veya const_iterator kaynak dizedeki son karakter aralığı dışında birini ele alan hedef aralığın atanacak.
+*Son*<br/>
+Bir giriş Yineleyici, const_pointer veya const_iterator kaynak dizedeki son karakter aralığı dışında birini ele alan hedef aralığın atanacak.
 
-*Kapalı* hangi yeni karakter başlayacak atanacak konumu.
+*Kapalı*<br/>
+Yeni karakter atanacak başlayacağı konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -595,7 +612,8 @@ reference at(size_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* dizinini başvurulmak üzere öğenin konumu.
+*_Off*<br/>
+Başvurulacak öğenin konumunu dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -721,12 +739,12 @@ basic_string(
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last);
 
 template <class InputIterator>
 basic_string(
- InputIterator first,
+InputIterator first,
     InputIterator last,
     const allocator_type& _Al);
 
@@ -741,21 +759,29 @@ basic_string(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* C-karakterine başlatmak için kullanılacak dize `string` oluşturuluyor. Bu değer, bir null işaretçi olamaz.
+*ptr*<br/>
+C-karakterine başlatmak için kullanılacak dize `string` oluşturuluyor. Bu değer, bir null işaretçi olamaz.
 
-*_Al* yapılandırılan bir dize nesnesi için depolama ayırıcı sınıf.
+*_Al*<br/>
+Yapılandırılan bir dize nesnesi için depolama ayırıcı sınıf.
 
-*sayısı* başlatılacak karakter sayısı.
+*Sayısı*<br/>
+Başlatılacak karakter sayısı.
 
-*doğru* yapılandırılmakta dizeyi başlatmak için dize.
+*sağ*<br/>
+Yapılandırılan bir dizeyi başlatmak için dize.
 
-*_Roff* yapılandırılmakta dizesi için karakter değerlerini başlatmak için kullanılacak ilk dize bir karakter dizini.
+*_Roff*<br/>
+Bir karakter, karakter değerlerini yapılandırılmakta dize için başlatmak için kullanılacak ilk dize dizini.
 
-*_Ch* yapılandırılmakta dizeye kopyalanacak karakter değeri.
+*_Ch*<br/>
+Yapılandırılan bir dizeye kopyalanacak karakter değeri.
 
-*İlk* bir giriş Yineleyici, const_pointer veya kaynak aralıktaki ilk öğeyi ele alan const_iterator eklenecek.
+*ilk*<br/>
+Bir giriş Yineleyici, const_pointer veya kaynak aralıktaki ilk öğeyi ele alan const_iterator eklenecek.
 
-*Son* bir giriş Yineleyici, const_pointer veya kaynak aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
+*Son*<br/>
+Bir giriş Yineleyici, const_pointer veya kaynak aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -851,7 +877,7 @@ int main( ) {
    cout << "The full original string str1 is: " << str1 << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'G';
+*str1_Iter = 'G';
    cout << "The first character of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The full modified string str1 is now: " << str1 << endl;
@@ -1148,19 +1174,26 @@ int compare(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* işlenen dizeye Karşılaştırılacak dize.
+*str*<br/>
+İşlenen dizeye Karşılaştırılacak dize.
 
-*_Pos1* dizinini işlenen dize karşılaştırma başlar.
+*_Pos1*<br/>
+Karşılaştırma başlar işlenen dize dizini.
 
-*_Num1* işlenen dizesinden Karşılaştırılacak karakter sayısı.
+*_Num1*<br/>
+Karşılaştırılacak işlenen dizesindeki karakter sayısı.
 
-*_Num2* parametre dizesi Karşılaştırılacak karakter sayısı.
+*_Num2*<br/>
+Parametre dizesi Karşılaştırılacak karakter sayısı.
 
-*_Off* dizin parametresi dizenin karşılaştırma başlar.
+*_Off*<br/>
+Dizin parametresi dize karşılaştırma başlar.
 
-*sayısı* parametre dizesi Karşılaştırılacak karakter sayısı.
+*Sayısı*<br/>
+Parametre dizesi Karşılaştırılacak karakter sayısı.
 
-*PTR* işlenen dizeye Karşılaştırılacak C dizesi.
+*ptr*<br/>
+C-işlenen dizeye Karşılaştırılacak dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1341,14 +1374,14 @@ The operand string is equal to the parameter string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter string.
+are equal to the parameter string.
 The first three characters of the operand string
- are less than the parameter string.
+are less than the parameter string.
 
 The operand string is: AACAB
 The parameter string is: DCABD
 The three characters from position 2 of the operand string are equal to
- the 3 characters parameter string from position 1.
+the 3 characters parameter string from position 1.
 
 The operand string is: ABC
 The parameter C-string is: DEF
@@ -1357,12 +1390,12 @@ The operand string is less than the parameter C-string.
 The operand string is: AACAB
 The parameter string is: CAB
 The last three characters of the operand string
- are equal to the parameter C-string.
+are equal to the parameter C-string.
 
 The operand string is: AACAB
 The parameter C-string is: ACAB
 The 3 characters from position 2 of the operand string are equal to
- the first 3 characters of the parameter C-string.
+the first 3 characters of the parameter C-string.
 ```
 
 ## <a name="const_iterator"></a>  basic_string::const_iterator
@@ -1470,11 +1503,13 @@ size_type copy(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* kopyalanacak öğe için olan hedef karakter dizisi.
+*ptr*<br/>
+Öğelerin kopyalanacağı olan hedef karakter dizisi.
 
 _ *Sayısı* , en fazla kaynak dizesi kopyalanacak karakter sayısı.
 
-*_Off* içerdiği kopyaları olan yapılacak kaynak dizedeki başlangıç konumu.
+*_Off*<br/>
+Kaynak dizesi kopyalarıdır yapılacak başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1573,13 +1608,16 @@ size_type _Copy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef* kopyalanacak öğe için olan hedef karakter dizisi.
+*Hedef*<br/>
+Öğelerin kopyalanacağı olan hedef karakter dizisi.
 
-*dest_size* boyutunu *dest*.
+*dest_size*<br/>
+Boyutu *dest*.
 
 _ *Sayısı* , en fazla kaynak dizesi kopyalanacak karakter sayısı.
 
-*_Off* içerdiği kopyaları olan yapılacak kaynak dizedeki başlangıç konumu.
+*_Off*<br/>
+Kaynak dizesi kopyalarıdır yapılacak başlangıç konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1847,7 +1885,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_Iter = 'T';
+*str1_Iter = 'T';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_Iter << endl;
    cout << "The modified string str1 is now: " << str1 << endl;
@@ -1891,15 +1929,20 @@ basic_string<CharType, Traits, Allocator>& erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* silinmesi için aralıktaki ilk öğenin konumunu ele alan bir yineleyici.
+*ilk*<br/>
+Silinecek şekilde aralıktaki ilk öğenin konumunu ele alan bir yineleyici.
 
-*Son* silinecek şekilde bir önceki öğenin konumunu son öğeyi aralıktaki ele alan bir yineleyici.
+*Son*<br/>
+Silinecek şekilde bir önceki öğenin konumunu son öğeyi aralıktaki ele alan bir yineleyici.
 
-*_Bt* silinmesi için dize içindeki öğenin konumunu ele alan bir yineleyici.
+*_Bt*<br/>
+Silinecek şekilde dizedeki öğenin konumunu ele alan bir yineleyici.
 
-*_Pos* kaldırılacak dizedeki ilk karakter dizini.
+*_Pos*<br/>
+Kaldırılacak dizedeki ilk karakter dizini.
 
-*sayısı* varsa dize başlayarak aralığında çok kaldırılacak öğe sayısını *_Pos*.
+*Sayısı*<br/>
+Varsa dize başlayarak aralığında çok kaldırılacak öğe sayısını *_Pos*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1998,15 +2041,20 @@ size_type find(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu başlamak için konumun dizini.
+*_Off*<br/>
+Aramaya başlamak için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2130,7 +2178,7 @@ The Character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' after
- the 5th position in str2 is: 17
+the 5th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: This is a sample string for this program
@@ -2139,7 +2187,7 @@ The index of the next occurrence of 'for' is in str3 begins at: 24
 
 The original string str4 is: clearly this perfectly unclear.
 The index of the 1st element of 'clear' after
- the 5th position in str4 is: 25
+the 5th position in str4 is: 25
 The index of the 1st element of 'clear' in str4 is: 0
 ```
 
@@ -2171,15 +2219,20 @@ size_type find_first_not_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu başlamak için konumun dizini.
+*_Off*<br/>
+Aramaya başlamak için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2312,21 +2365,21 @@ The index of the 'non x' found in str1 is: 1
 
 The original string str2 is: BBB-1111
 Elements of the substring 'B1' were not
- found in str2 after the 6th position.
+found in str2 after the 6th position.
 The index of the 1st element of 'B2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 444-555-GGG
 The index of the 1st occurrence of an element in str3
- other than one of the characters in '45G' is: 3
+other than one of the characters in '45G' is: 3
 The index of the second occurrence of an element of '45G' in str3
- after the 0th position is: 7
+after the 0th position is: 7
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st non occurrence of an element of 'ba3' in str4 after
- the 5th position is: 5
+the 5th position is: 5
 The index of the 1st non occurrence of an element of '12' in str4 after
- the 0th position is: 2
+the 0th position is: 2
 ```
 
 ## <a name="find_first_of"></a>  basic_string::find_first_of
@@ -2357,15 +2410,20 @@ size_type find_first_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu başlamak için konumun dizini.
+*_Off*<br/>
+Aramaya başlamak için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2497,21 +2555,21 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the 1st occurrence of an element of 'B1' in str2 after
- the 6th position is: 11
+the 6th position is: 11
 The index of the 1st element of 'D2' after
- the 0th position in str2 is: 3
+the 0th position in str2 is: 3
 
 The original string str3 is: 123-abc-123-abc-456-EFG-456-EFG
 The index of the 1st occurrence of an element of '5G' in str3 after
- the 0th position is: 17
+the 0th position is: 17
 The index of the second occurrence of an element of '5G' in str3
- after the 0th position is: 22
+after the 0th position is: 22
 
 The original string str4 is: 12-ab-12-ab
 The index of the 1st occurrence of an element of 'ba3' in str4 after
- the 5th position is: 9
+the 5th position is: 9
 The index of the 1st occurrence of an element of 'a2' in str4 after
- the 0th position is: 1
+the 0th position is: 1
 ```
 
 ## <a name="find_last_not_of"></a>  basic_string::find_last_not_of
@@ -2542,15 +2600,20 @@ size_type find_last_not_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu tamamlamak için konumun dizini.
+*_Off*<br/>
+Aramayı bitirmek için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2680,25 +2743,25 @@ int main( )
 ```Output
 The original string str1 is: dddd-1dd4-abdd
 The index of the last non 'd'
- found before the 7th position in str1 is: 5
+found before the 7th position in str1 is: 5
 The index of the non 'd' found in str1 is: 11
 
 The original string str2 is: BBB-1111
 The index of the last occurrence of a element
- not of 'B1' in str2 before the 6th position is: 3
+not of 'B1' in str2 before the 6th position is: 3
 The elements of the substring 'B-1' were not found in str2 .
 
 The original string str3 is: 444-555-GGG
 The index of the last occurrence of an element in str3
- other than one of the characters in '45G' is: 7
+other than one of the characters in '45G' is: 7
 The index of the penultimate occurrence of an element
- not in '45G' in str3 is: 3
+not in '45G' in str3 is: 3
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element not
- in 'b-a' in str4 before the 5th position is: 1
+in 'b-a' in str4 before the 5th position is: 1
 The index of the last occurrence of an element not in '12'
- in str4 before the end position is: 10
+in str4 before the end position is: 10
 ```
 
 ## <a name="find_last_of"></a>  basic_string::find_last_of
@@ -2729,15 +2792,20 @@ size_type find_last_of(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu tamamlamak için konumun dizini.
+*_Off*<br/>
+Aramayı bitirmek için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2858,19 +2926,19 @@ The character 'x' was not found in str1.
 
 The original string str2 is: ABCD-1234-ABCD-1234
 The index of the last occurrence of an element of 'B1' in str2 before
- the 12th position is: 11
+the 12th position is: 11
 The index of the last element of 'D2' after
- the 0th position in str2 is: 16
+the 0th position in str2 is: 16
 
 The original string str3 is: 456-EFG-456-EFG
 The index of the last occurrence of an element of '5E' in str3 before
- the 8th position is: 4
+the 8th position is: 4
 
 The original string str4 is: 12-ab-12-ab
 The index of the last occurrence of an element of 'ba3' in str4 before
- the 8th position is: 4
+the 8th position is: 4
 The index of the last occurrence of an element of 'a2' in str4 before
- the 0th position is: 9
+the 0th position is: 9
 ```
 
 ## <a name="front"></a>  basic_string::Front
@@ -2992,23 +3060,32 @@ void insert(
 
 ### <a name="parameters"></a>Parametreler
 
-*_P0* konumun arkasına ekleme noktasını dizinini yeni karakterler.
+*_P0*<br/>
+Konumun arkasına ekleme noktasını dizinini yeni karakterler.
 
-*PTR* tamamen veya kısmen dizeye eklenecek C dizesi.
+*ptr*<br/>
+C-tamamen veya kısmen dizeye eklenecek dize.
 
-*sayısı* eklenecek karakter sayısı.
+*Sayısı*<br/>
+Eklenecek karakter sayısı.
 
-*str* tamamen veya kısmen hedef dizeye eklenecek dize.
+*str*<br/>
+Tamamen veya kısmen hedef dizeye eklenecek dize.
 
-*_Off* sağlama eklenecek karakter kaynak dizesi parçası dizini.
+*_Off*<br/>
+Sağlama eklenecek karakter kaynak dizesi parçası dizini.
 
-*_Ch* eklenecek öğelerin karakter değeri.
+*_Ch*<br/>
+Eklenecek öğelerin karakter değeri.
 
-*_Bt* bir karakter olduğu eklenecek konumu ele alan bir yineleyici.
+*_Bt*<br/>
+Bir karakter eklenecek konumu ele alan bir yineleyici.
 
-*İlk* bir giriş Yineleyici, const_pointer veya kaynak aralıktaki ilk öğeyi ele alan const_iterator eklenecek.
+*ilk*<br/>
+Bir giriş Yineleyici, const_pointer veya kaynak aralıktaki ilk öğeyi ele alan const_iterator eklenecek.
 
-*Son* bir giriş Yineleyici, const_pointer veya kaynak aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
+*Son*<br/>
+Bir giriş Yineleyici, const_pointer veya kaynak aralıktaki son öğeden sonra bir konumunu bulan const_iterator eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3288,11 +3365,14 @@ basic_string<CharType, Traits, Allocator>& operator+=(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* eklenecek karakter.
+*_Ch*<br/>
+Eklenecek karakter.
 
-*PTR* karakterinin eklenmesi için C dizesi.
+*ptr*<br/>
+Eklenecek C dizesi karakterleri.
 
-*doğru* karakterleri eklenecek dize.
+*sağ*<br/>
+Karakter eklenecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3377,11 +3457,14 @@ basic_string<CharType, Traits, Allocator>& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* atanacak karakter değeri.
+*_Ch*<br/>
+Atanacak karakter değeri.
 
-*PTR* karakter hedef dizesi olarak atanacak C dizesi için bir işaretçi.
+*ptr*<br/>
+Karakter hedef dizesi olarak atanacak C dizesi için bir işaretçi.
 
-*doğru* karakterine olan hedef dizeye atanacak kaynak dizesi.
+*sağ*<br/>
+Hedef dizeye atanacak karakterine olan kaynak dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3459,7 +3542,8 @@ reference operator[](size_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* dizinini başvurulmak üzere öğenin konumu.
+*_Off*<br/>
+Başvurulacak öğenin konumunu dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -3575,7 +3659,8 @@ void push_back(value_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* dizenin sonuna eklenecek karakter.
+*_Ch*<br/>
+Dizenin sonuna eklenecek karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -3667,7 +3752,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'A';
+*str1_rIter = 'A';
    cout << "The first character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3689,10 +3774,10 @@ int main( )
 ```Output
 The first character-letter of the reversed string str1 is: a
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The first character-letter of the modified str1 is now: A
 The full modified reversed string str1 is now:
- AblE was I ere I saw elbA
+AblE was I ere I saw elbA
 The string str2 is empty.
 ```
 
@@ -3766,7 +3851,7 @@ int main( )
    cout << endl;
 
    // The dereferenced iterator can be used to modify a character
- *str1_rIter = 'o';
+*str1_rIter = 'o';
    cout << "The last character-letter of the modified str1 is now: "
         << *str1_rIter << endl;
    cout << "The full modified reversed string str1 is now:\n ";
@@ -3788,10 +3873,10 @@ int main( )
 ```Output
 The last character-letter of the reversed string str1 is: A
 The full reversed string str1 is:
- ablE was I ere I saw elbA
+ablE was I ere I saw elbA
 The last character-letter of the modified str1 is now: o
 The full modified reversed string str1 is now:
- ablE was I ere I saw elbo
+ablE was I ere I saw elbo
 The string str2 is empty.
 ```
 
@@ -3873,29 +3958,39 @@ basic_string<CharType, Traits, Allocator>& replace(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* karakter işlenen dize için bir kaynak olarak dize.
+*str*<br/>
+Karakter işlenen dize için bir kaynak olarak dize.
 
-*_Pos1* değiştirme işlemine başlar işlenen dize dizini.
+*_Pos1*<br/>
+Değiştirme işlemine başlar işlenen dize dizini.
 
-*_Num1* işlenen dizede değiştirilecek karakterlerin sayısı.
+*_Num1*<br/>
+İşlenen dizede değiştirilecek karakterlerin sayısı.
 
-*_Pos2* dizin parametresi dizenin kopyalama başlangıçtan başlar.
+*_Pos2*<br/>
+Başlangıçtan kopyalamaya başlar parametre dizesi dizini.
 
-*_Num2* C-string parametresinden kullanılacak karakter sayısı.
+*_Num2*<br/>
+C-string parametresinden kullanılacak karakter sayısı.
 
-*PTR* karakter işlenen dize için bir kaynak olacak C dizesi.
+*ptr*<br/>
+C-karakter işlenen dize için bir kaynak olarak dize.
 
-*_Ch* işlenen dizeye kopyalanacak karakter.
+*_Ch*<br/>
+İşlenen dizeye kopyalanacak karakter.
 
 * first0 * bir işlenen dizesinde kaldırılacak ilk karakteri yineleyici.
 
 * last0 * bir işlenen dizesinde kaldırılacak son karakter yineleyici.
 
-*İlk* bir yineleyici, const_pointer veya ilk karakter adresleme const_iterator parametresi dizenin kopyalanacak.
+*ilk*<br/>
+Bir Yineleyici, const_pointer veya ilk karakter adresleme const_iterator parametresi dizenin kopyalanacak.
 
-*Son* bir yineleyici, const_pointer veya son karakter adresleme const_iterator parametresi dizenin kopyalanacak.
+*Son*<br/>
+Bir Yineleyici, const_pointer veya son karakter adresleme const_iterator parametresi dizenin kopyalanacak.
 
-*sayısı* kaç kez *_Ch* işlenen dizesine kopyalanır.
+*Sayısı*<br/>
+Kaç kez *_Ch* işlenen dizesine kopyalanır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4039,45 +4134,45 @@ The operand string s1o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs1p is: CCC
 The result of s1o.replace ( 1 , 3 , s1p )
- is the string: ABBBAAAA.
+is the string: ABBBAAAA.
 The result of s1o.replace ( 5 , 3 , cs1p )
- is the string: ABBBACCC.
+is the string: ABBBACCC.
 
 The operand string s2o is: AAAAAAAA
 The parameter string s1p is: BBB
 The parameter C-string cs2p is: CCC
 The result of s2o.replace (1, 3, s2p, 1, 2)
- is the string: ABBAAAA.
+is the string: ABBAAAA.
 The result of s2o.replace (4 ,3 ,cs2p)
- is the string: ABBAC.
+is the string: ABBAC.
 
 The operand string s3o is: AAAAAAAA
 The parameter character c1p is: C
 The result of s3o.replace(1, 3, 4, ch3p)
- is the string: ACCCCAAAA.
+is the string: ACCCCAAAA.
 
 The operand string s4o is: AAAAAAAA
 The parameter string s4p is: BBB
 The parameter C-string cs4p is: CCC
 The result of s1o.replace (IterF0, IterL0, s4p)
- is the string: BBBAAAAA.
+is the string: BBBAAAAA.
 The result of s4o.replace (IterF0, IterL0, cs4p)
- is the string: CCCAAAAA.
+is the string: CCCAAAAA.
 
 The operand string s5o is: AAAAAAAF
 The parameter C-string cs5p is: CCCBB
 The result of s5o.replace (IterF1, IterL1, cs4p ,4)
- is the string: CCCBAAAF.
+is the string: CCCBAAAF.
 
 The operand string s6o is: AAAAAAAG
 The parameter character ch6p is: q
 The result of s6o.replace (IterF1, IterL1, 4, ch6p)
- is the string: qqqqAAAAG.
+is the string: qqqqAAAAG.
 
 The operand string s7o is: OOOOOOO
 The parameter string s7p is: PPPP
 The result of s7o.replace (IterF3 ,IterL3 ,IterF4 ,IterL4)
- is the string: OPPOOOO.
+is the string: OPPOOOO.
 ```
 
 ## <a name="reserve"></a>  basic_string::reserve
@@ -4090,7 +4185,8 @@ void reserve(size_type count = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* kendisi için bellek ayrılmıştır karakter sayısı.
+*Sayısı*<br/>
+Kendisi için bellek ayrılan karakter sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4184,9 +4280,11 @@ void resize(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* dize yeni boyutu.
+*Sayısı*<br/>
+Yeni dize boyutu.
 
-*_Ch* eklenen karakter değeri başlatılır ile ek öğeler gerekiyorsa.
+*_Ch*<br/>
+Eklenen karakter değeri başlatılır ile ek öğeler gerekiyorsa.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4321,15 +4419,20 @@ size_type rfind(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* üye işlev olduğu aramak için karakter değeri.
+*_Ch*<br/>
+Üye işlevi arama gerçekleştirmektir karakter değeri.
 
-*_Off* arama olduğu başlamak için konumun dizini.
+*_Off*<br/>
+Aramaya başlamak için olduğu konumun dizini.
 
-*PTR* üye işlev olduğu aramak için C dizesi.
+*ptr*<br/>
+C-üye işlevi arama gerçekleştirmektir dize.
 
-*sayısı* İleri ilk karakteri, üye işlev olduğu aramak için C dizesi sayımı karakter sayısı.
+*Sayısı*<br/>
+Üye işlevi arama gerçekleştirmektir C-dizesindeki ilk karakter İleri sayım karakter sayısı.
 
-*str* üye işlev olduğu aranacak dize.
+*str*<br/>
+Üye işlevi arama gerçekleştirmektir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4454,7 +4557,7 @@ The character 'x' was not found in str1.
 
 The original string str2 is: Let me make this perfectly clear.
 The index of the 1st element of 'perfect' before
- the 30th position in str2 is: 17
+the 30th position in str2 is: 17
 The substring 'imperfect' was not found in str2 .
 
 The original string str3 is: It is a nice day. I am happy.
@@ -4599,9 +4702,11 @@ basic_string<CharType, Traits, Allocator> substr(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* dizin öğesi içinden dizenin kopyası yapılır, 0 varsayılan değeri ile bir konumda bulunuyor.
+*_Off*<br/>
+Bir dizini öğesine dizenin kopyası, 0 varsayılan değeri ile yapıldığı konumda bulunuyor.
 
-*sayısı* varsa kopyalanacak karakter sayısı.
+*Sayısı*<br/>
+Mevcut değilse kopyalanacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -4635,13 +4740,13 @@ int main( )
 
 ```Output
 The original string str1 is:
- Heterological paradoxes are persistent.
+Heterological paradoxes are persistent.
 
 The substring str1 copied is: logical
 
 The default substring str3 is:
- Heterological paradoxes are persistent.
- which is the entire original string.
+Heterological paradoxes are persistent.
+which is the entire original string.
 ```
 
 ## <a name="swap"></a>  basic_string::Swap
@@ -4655,7 +4760,8 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* öğeleri olan hedef dizesi içinde öğesiyle değiştirilecek kaynak dizesi.
+*str*<br/>
+Hedef dize dosyalarla değiştirilecek öğeleri olan kaynak dizesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -4697,11 +4803,11 @@ int main( )
 
 ```Output
 Before swapping string s1 and s2:
- The basic_string s1 = Tweedledee.
- The basic_string s2 = Tweedledum.
+The basic_string s1 = Tweedledee.
+The basic_string s2 = Tweedledum.
 After swapping string s1 and s2:
- The basic_string s1 = Tweedledum.
- The basic_string s2 = Tweedledee.
+The basic_string s1 = Tweedledum.
+The basic_string s2 = Tweedledee.
 ```
 
 ## <a name="traits_type"></a>  basic_string::traits_type

@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ce85d846d142e2c15a0fba6d2d3fb76c924b97f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 914f3623e3ac288a27554edac848686efc025896
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966608"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105893"
 ---
 # <a name="fpos-class"></a>fpos Sınıfı
 
@@ -47,7 +47,8 @@ class fpos
 
 ### <a name="parameters"></a>Parametreler
 
-*Statetype* durum bilgileri.
+*Statetype*<br/>
+Durum bilgileri.
 
 ### <a name="constructors"></a>Oluşturucular
 
@@ -92,11 +93,14 @@ fpos(Statetype _State, fpos_t _Filepos);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* akış olan uzaklık.
+*_Off*<br/>
+Akış olan uzaklık.
 
-*Duru_m* başlangıç durumunu `fpos` nesne.
+*Duru_m*<br/>
+Başlangıç durumunu `fpos` nesne.
 
-*_Filepos* akış olan uzaklık.
+*_Filepos*<br/>
+Akış olan uzaklık.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -114,7 +118,8 @@ bool operator!=(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* karşı karşılaştırmak için dosya konumu göstergesi.
+*sağ*<br/>
+Dosya konumu göstergesi olan karşılaştırmak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -186,7 +191,8 @@ fpos<Statetype> operator+(streamoff _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* dosya konumu göstergesi artırmak istediğiniz uzaklığı.
+*_Off*<br/>
+Dosya konumu göstergesi artırmak istediğiniz uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -210,7 +216,8 @@ fpos<Statetype>& operator+=(streamoff _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* dosya konumu göstergesi artırmak istediğiniz uzaklığı.
+*_Off*<br/>
+Dosya konumu göstergesi artırmak istediğiniz uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -236,9 +243,11 @@ fpos<Statetype> operator-(streamoff _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* dosya konumu.
+*sağ*<br/>
+Dosya konumu.
 
-*_Off* Stream uzaklığı.
+*_Off*<br/>
+Stream uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -258,7 +267,8 @@ fpos<Statetype>& operator-=(streamoff _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* Stream uzaklığı.
+*_Off*<br/>
+Stream uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -282,7 +292,8 @@ bool operator==(const fpos<Statetype>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* karşı karşılaştırmak için dosya konumu göstergesi.
+*sağ*<br/>
+Dosya konumu göstergesi olan karşılaştırmak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -355,7 +366,8 @@ void state(Statetype _State);
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* yeni dönüştürme durumu.
+*Duru_m*<br/>
+Yeni dönüştürme durumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

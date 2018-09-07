@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 366a0ec46b69567e9f03f1e0667555acd08f31be
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a3e3b61de731b518d965d3b7d1473489f6e863f0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960960"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100864"
 ---
 # <a name="cauchydistribution-class"></a>cauchy_distribution Sınıfı
 
@@ -80,9 +80,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -259,11 +261,14 @@ explicit cauchy_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* `a` dağıtım parametresi.
+*a*<br/>
+`a` Dağıtım parametresi.
 
-*b* `b` dağıtım parametresi.
+*b*<br/>
+`b` Dağıtım parametresi.
 
-*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
+*parametre*<br/>
+`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -291,11 +296,14 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*bir* `a` dağıtım parametresi.
+*a*<br/>
+`a` Dağıtım parametresi.
 
-*b* `b` dağıtım parametresi.
+*b*<br/>
+`b` Dağıtım parametresi.
 
-*doğru* `param_type` için karşılaştırılacak nesne.
+*sağ*<br/>
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

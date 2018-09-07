@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d3549d222ccfcf317b2621c2e2f8869b6634249
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bdc179413b3e5d77646be4ccb98f23bcff407fb7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959225"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110272"
 ---
 # <a name="ismemberpointer-class"></a>is_member_pointer Sınıfı
 
@@ -37,7 +37,8 @@ struct is_member_pointer;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

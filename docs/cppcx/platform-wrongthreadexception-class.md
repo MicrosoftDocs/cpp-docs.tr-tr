@@ -16,33 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbe88c460dfc3341832abdcda21698357a649570
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1fe772f1c2925ce28d0e445023ab14d82b9b3f23
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759921"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107698"
 ---
 # <a name="platformwrongthreadexception-class"></a>Platform::WrongThreadException sınıfı
-Bir iş parçacığı için iş parçacığının grubunu ait değil bir proxy nesnesi için bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-public ref class WrongThreadException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Desteklenen en düşük istemci:** Windows 8  
-  
- **Sunucu desteklenen en düşük:** Windows Server 2012  
-  
- **Namespace:** platformu  
-  
- **Meta veri:** platform.winmd  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+
+Bir iş parçacığı için iş parçacığının grubunu ait değil bir proxy nesnesi için bir arabirim işaretçisi aracılığıyla çağırdığında oluşturulur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+public ref class WrongThreadException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+**Desteklenen en düşük istemci:** Windows 8
+
+**Sunucu desteklenen en düşük:** Windows Server 2012
+
+**Namespace:** platformu
+
+**Meta veri:** platform.winmd
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

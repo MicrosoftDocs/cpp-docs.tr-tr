@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4250a2b13740b5aa71ca10300a90560ed615f68e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 51dc841efa3e9f64a106002945c07ce10bcf7565
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200034"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102622"
 ---
 # <a name="basicistream-class"></a>basic_istream Sınıfı
 
@@ -193,11 +193,14 @@ basic_istream(basic_istream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf* türünde bir nesne [basic_streambuf](../standard-library/basic-streambuf-class.md).
+*strbuf*<br/>
+Bir nesne türü [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd* **true** bir standart akışa; bu ise, aksi takdirde, **false**.
+*_Isstd*<br/>
+**doğru** bir standart akışa; bu ise, aksi takdirde, **false**.
 
-*doğru* A `basic_istream` kopyalanacak nesne.
+*sağ*<br/>
+A `basic_istream` kopyalanacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -277,15 +280,20 @@ basic_istream<Elem, Tr>& get(basic_streambuf<Elem, Tr>& strbuf, Elem Delim);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* okunacak karakter sayısını `strbuf`.
+*Sayısı*<br/>
+Okunacak karakter sayısını `strbuf`.
 
-*Delim* önce karşılaşılırsa okuma sonlandırması gerektiğini karakter *sayısı*.
+*Delim*<br/>
+Önce karşılaşılırsa okuma sonlandırması gerektiğini karakter *sayısı*.
 
-*str* yazılacağı bir dize.
+*str*<br/>
+Yazılacak olan bir dize.
 
-*CH* almak için bir karakter.
+*Ch*<br/>
+Alınacak karakter.
 
-*strbuf* yazılacağı bir arabellek.
+*strbuf*<br/>
+Yazılacak olan bir arabellek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -356,11 +364,14 @@ basic_istream<Elem, Tr>& getline(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* okunacak karakter sayısını `strbuf`.
+*Sayısı*<br/>
+Okunacak karakter sayısını `strbuf`.
 
-*Delim* önce karşılaşılırsa okuma sonlandırması gerektiğini karakter *sayısı*.
+*Delim*<br/>
+Önce karşılaşılırsa okuma sonlandırması gerektiğini karakter *sayısı*.
 
-*str* yazılacağı bir dize.
+*str*<br/>
+Yazılacak olan bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -414,9 +425,11 @@ basic_istream<Elem, Tr>& ignore(
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* geçerli atlanacak öğe konumu sayıyı okuyun.
+*Sayısı*<br/>
+Geçerli okuma konumundan geçilecek öğelerin sayısı.
 
-*Delim* sayısı önce karşılaştıysanız neden olan öğe `ignore` dönün ve sonra tüm öğeleri *Delim* okumak için.
+*Delim*<br/>
+Sayısı önce karşılaştıysanız neden olan öğe `ignore` dönün ve sonra tüm öğeleri *Delim* okumak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -474,11 +487,14 @@ basic_istream& operator>>(long double& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pfn* işlev işaretçisi.
+*pfn*<br/>
+Bir işlev işaretçisi.
 
-*strbuf* türünde bir nesne `stream_buf`.
+*strbuf*<br/>
+Bir nesne türü `stream_buf`.
 
-*VAL* değeri akıştan okunamıyor.
+*VAL*<br/>
+Akıştan okunan değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -584,7 +600,8 @@ basic_istream& operator=(basic_istream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir `rvalue` başvurusu bir `basic_ifstream` nesne.
+*sağ*<br/>
+Bir `rvalue` başvurusu bir `basic_ifstream` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -653,7 +670,8 @@ basic_istream<Elem, Tr>& putback(
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* bir karakteri akışa geri yerleştirin.
+*Ch*<br/>
+Akışa geri koymak için bir karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -702,9 +720,11 @@ basic_istream<Elem, Tr>& read(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* karakterleri okunacağı dizide.
+*str*<br/>
+Dizi içindeki karakterleri okumak.
 
-*sayısı* okunacak karakter sayısı.
+*Sayısı*<br/>
+Okunacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -764,9 +784,11 @@ streamsize readsome(
 
 ### <a name="parameters"></a>Parametreler
 
-*str* dizisinde `readsome` okuduğu karakterleri depolar.
+*str*<br/>
+Dizide `readsome` okuduğu karakterleri depolar.
 
-*sayısı* okunacak karakter sayısı.
+*Sayısı*<br/>
+Okunacak karakter sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -819,11 +841,14 @@ basic_istream<Elem, Tr>& seekg(off_type off, ios_base::seekdir way);
 
 ### <a name="parameters"></a>Parametreler
 
-*POS* okuma işaretçiyi mutlak konumu.
+*POS*<br/>
+Okuma işaretçiyi için mutlak konumu.
 
-*Kapalı* göreli olarak okundu işaretçiyi bir uzaklık *şekilde*.
+*Kapalı*<br/>
+Göreli olarak okundu işaretçiyi bir uzaklık *şekilde*.
 
-*yol* birini [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) numaralandırma.
+*yolu*<br/>
+Aşağıdakilerden birini [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) numaralandırma.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -887,7 +912,8 @@ void swap(basic_istream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir lvalue başvurusuna bir `basic_istream` nesne.
+*sağ*<br/>
+Bir lvalue başvurusuna bir `basic_istream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

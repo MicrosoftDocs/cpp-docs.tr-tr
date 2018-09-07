@@ -90,12 +90,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c85e1637691d602c63208cd180071c0f388c5893
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 017d5d5c2934fa687f91898b896a0ad6f1dcab6f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954961"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102583"
 ---
 # <a name="forwardlist-class"></a>forward_list Sınıfı
 
@@ -522,7 +522,7 @@ forward_list(InputIterator First, InputIterator Last, const Allocator& Al);
 |*Al*|Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.|
 |*Sayısı*|Oluşturulan listedeki öğelerin sayısı.|
 |*VAL*|Oluşturulan listedeki öğelerin değeri.|
-|*Sağ*|Oluşturulan listenin kopyası olacak olduğu listesi.|
+|*sağ*|Oluşturulan listenin kopyası olacak olduğu listesi.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Kopyalanacağı initializer_list.|
@@ -881,15 +881,20 @@ void splice_after(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* eklenecek sonra hedef forward_list konumu.
+*Burada*<br/>
+Eklenecek sonra hedef forward_list konumu.
 
-*Kaynak* hedef forward_list eklenecek olan kaynak forward_list.
+*Kaynak*<br/>
+Hedef forward_list eklenecek olan kaynak forward_list.
 
-*Iter* kaynak forward_list eklenecek öğe.
+*Iter*<br/>
+Kaynak forward_list eklenecek öğe.
 
-*İlk* kaynak forward_list eklenecek aralıktaki ilk öğeyi.
+*ilk*<br/>
+Kaynak forward_list eklenecek aralıktaki ilk öğeyi.
 
-*Son* kaynak forward_list eklenecek aralığın ötesindeki ilk konumu.
+*Son*<br/>
+Kaynak forward_list eklenecek aralığın ötesindeki ilk konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 

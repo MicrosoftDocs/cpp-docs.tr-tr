@@ -14,12 +14,12 @@ helpviewer_keywords:
 - std::endl [C++]
 - std::ends [C++]
 - std::flush [C++]
-ms.openlocfilehash: d30ad23956c978ee47ef447463a0d5422a94d4b9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 494c750ec80000ef9090824e0436f6e443593847
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962328"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107620"
 ---
 # <a name="ltostreamgt-functions"></a>&lt;ostream&gt; işlevleri
 
@@ -42,11 +42,14 @@ basic_ostream<Elem, Tr>& endl(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* öğe türü.
+*Elem*<br/>
+Öğe türü.
 
-*Ostr* türünde bir nesne **basic_ostream**.
+*Ostr*<br/>
+Bir nesne türü **basic_ostream**.
 
-*Tr* karakter nitelikleri.
+*tr*<br/>
+Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -86,11 +89,14 @@ basic_ostream<Elem, Tr>& ends(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* öğe türü.
+*Elem*<br/>
+Öğe türü.
 
-*Ostr* türünde bir nesne `basic_ostream`.
+*Ostr*<br/>
+Bir nesne türü `basic_ostream`.
 
-*Tr* karakter nitelikleri.
+*tr*<br/>
+Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -132,11 +138,14 @@ basic_ostream<Elem, Tr>& flush(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* öğe türü.
+*Elem*<br/>
+Öğe türü.
 
-*Ostr* türünde bir nesne `basic_ostream`.
+*Ostr*<br/>
+Bir nesne türü `basic_ostream`.
 
-*Tr* karakter nitelikleri.
+*tr*<br/>
+Karakter nitelikleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -177,13 +186,17 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* öğe türü.
+*Elem*<br/>
+Öğe türü.
 
-*Tr* karakter nitelikleri.
+*tr*<br/>
+Karakter nitelikleri.
 
-*Sol* bir lvalue başvurusuna bir `basic_ostream` nesne.
+*Sol*<br/>
+Bir lvalue başvurusuna bir `basic_ostream` nesne.
 
-*doğru* bir lvalue başvurusuna bir `basic_ostream` nesne.
+*sağ*<br/>
+Bir lvalue başvurusuna bir `basic_ostream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

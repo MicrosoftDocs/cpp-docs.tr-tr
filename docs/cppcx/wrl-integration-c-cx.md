@@ -9,17 +9,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2fc36582e6ffbff8f7608a5a26cc472687132e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1bd61fd12c555c42f3226d523a519c29f1d09c10
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760984"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102700"
 ---
 # <a name="wrl-integration-ccx"></a>WRL tümleştirme (C + +/ CX)
 
 Windows çalışma zamanı C++ Şablon kitaplığı (WRL) kod WRL koduyla serbestçe karıştırabilirsiniz. WRL tanıtıcı nesne ile bildirilen nesneler aynı çeviri biriminde kullanabilirsiniz (`^`) Akıllı işaretçi gösterimini ve WRL (`ComPtr<T>`) gösterimi. Ancak, el ile dönüş değerleri ve WRL HRESULT hata kodları ve WRL özel durumlarını işlemelidir.
-  
+
 ## <a name="wrl-development"></a>WRL geliştirme
 
 Yazma ve WRL bileşenlerinin kullanma hakkında daha fazla bilgi için bkz. [Windows çalışma zamanı C++ Şablon kitaplığı (WRL)](../windows/windows-runtime-cpp-template-library-wrl.md).
@@ -115,9 +115,8 @@ IVector<String^>^ GetTypeMethods(Object^ instance)
     }
     return retVal;
 }
-
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Diğer dillerle birlikte çalışma](interoperating-with-other-languages-c-cx.md)  
+[Diğer dillerle birlikte çalışma](interoperating-with-other-languages-c-cx.md)

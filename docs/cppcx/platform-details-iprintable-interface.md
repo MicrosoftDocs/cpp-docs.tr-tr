@@ -15,33 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40b7fe1d4ef032b8895cfe9095a9c5b9a6bd32df
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e0b9e4b8be239ef178827ce78f4a90b21866187f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765154"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102136"
 ---
 # <a name="platformdetailsiprintable-interface"></a>Platform::details:: IPrintable arabirimi
-Bu arabirim, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-  
-interface class IPrintable;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bu arabirim, tarayıcılarla inceledi çünkü yalnızca bütünlük açısından sağlanır.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `Platform`  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Meta veri:** platform.winmd  
-  
- **Namespace:** Platform::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+Bu arabirim, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+interface class IPrintable;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Bu arabirim, tarayıcılarla inceledi çünkü yalnızca bütünlük açısından sağlanır.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`Platform`
+
+### <a name="requirements"></a>Gereksinimler
+
+**Meta veri:** platform.winmd
+
+**Namespace:** Platform::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform Namespace](platform-namespace-c-cx.md)

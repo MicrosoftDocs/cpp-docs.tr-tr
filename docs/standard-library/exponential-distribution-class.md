@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e40c06d2dc95366e154f4299dda0087c42698312
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 018af5d544e38485dc38608f280d57ce595db49c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960202"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103285"
 ---
 # <a name="exponentialdistribution-class"></a>exponential_distribution Sınıfı
 
@@ -77,9 +77,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* rasgele sayı üreteci altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Rasgele sayı üreteci altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -191,9 +193,11 @@ explicit exponential_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lambda* `lambda` dağıtım parametresi.
+*lambda*<br/>
+`lambda` Dağıtım parametresi.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre paketi.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre paketi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -220,9 +224,11 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*Lambda* `lambda` dağıtım parametresi.
+*lambda*<br/>
+`lambda` Dağıtım parametresi.
 
-*doğru* `param_type` için karşılaştırılacak nesne.
+*sağ*<br/>
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

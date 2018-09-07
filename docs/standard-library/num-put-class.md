@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81bdbd07e06ef2ec24a5f220fcd11a228b783888
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 19e08d1544a23ad1272bde5066a63f37b1e511fd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965996"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100930"
 ---
 # <a name="numput-class"></a>num_put Sınıfı
 
@@ -45,9 +45,11 @@ class num_put : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-*Outputıterator* kendi çıktılarının yazılacağı yineleyici sayısal yerleştirme işlevleri türü.
+*Outputıterator*<br/>
+Sayısal koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -153,13 +155,17 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>Parametreler
 
-*sonraki* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
+*Sonraki*<br/>
+Eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-*_Iosbase* belirtilen yerel ayarı çıktı ve çıktıyı biçimlendirmek için bayrakları punctuate kullanılacak numpunct modelinde içeren akış.
+*_Iosbase*<br/>
+Numpunct modelinde çıkış ve çıktıyı biçimlendirmek için bayrakları punctuate kullanılacak yerel ayar içeren akış belirtildi.
 
-*_Fill* aralığı için kullanılan bir karakter.
+*_Fill*<br/>
+Aralığı için kullanılan karakter.
 
-*VAL* sayı veya çıkış olarak Boole türü.
+*VAL*<br/>
+Sayı veya çıkış olarak Boole türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -318,7 +324,8 @@ explicit num_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -397,13 +404,17 @@ iter_type put(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
+*Hedef*<br/>
+Eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-*_Iosbase* numpunct modelinde çıkış ve çıktıyı biçimlendirmek için bayrakları punctuate kullanılacak yerel ayar içeren akış belirtildi.
+*_Iosbase*<br/>
+Numpunct modelinde çıkış ve çıktıyı biçimlendirmek için bayrakları punctuate kullanılacak yerel ayar içeren akış belirtildi.
 
-*_Fill* aralığı için kullanılan bir karakter.
+*_Fill*<br/>
+Aralığı için kullanılan karakter.
 
-*VAL* sayı veya çıkış olarak Boole türü.
+*VAL*<br/>
+Sayı veya çıkış olarak Boole türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

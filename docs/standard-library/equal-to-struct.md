@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68ca39b459b0d0e60305105986d3e76aa86a5bed
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 78ee4e040bc70b3ababe357fea2c6a279fb1b09a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961658"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105442"
 ---
 # <a name="equalto-struct"></a>equal_to Yapısı
 
@@ -33,27 +33,29 @@ Eşitlik işlemi gerçekleştiren bir ikili koşula (`operator==`) üzerinde ba�
 ```cpp
 template <class Type = void>
 struct equal_to : public binary_function<Type, Type, bool>
- {
+{
     bool operator()(const Type& Left, const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator==
 template <>
 struct equal_to<void>
- {
+{
     template <class T, class U>
     auto operator()(T&& Left, U&& Right) const
       ->  decltype(std::forward<T>(Left) == std::forward<U>(Right));
- };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator==` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* eşitlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Eşitlik işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* eşitlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Eşitlik işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

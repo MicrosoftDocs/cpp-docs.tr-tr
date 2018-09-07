@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4aad6fdd96df22375e93207e70dfd0f7cf1f44c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b136dc29431164de195eeebf9085c2377664f869
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405607"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105685"
 ---
 # <a name="qsorts"></a>qsort_s
 
@@ -59,46 +59,51 @@ void qsort_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*temel* hedef dizi başlangıcı.
+*base*<br/>
+Hedef dizi başlangıcı.
 
-*sayı* dizi öğeleri boyutu.
+*Sayı*<br/>
+Öğeleri dizi boyutu.
 
-*Genişlik* öğesi boyutunu bayt cinsinden.
+*Genişlik*<br/>
+Öğe boyutunu bayt cinsinden.
 
-*Karşılaştırma* karşılaştırma işlevi. İlk bağımsız değişken *bağlamı* işaretçi. İkinci bağımsız değişkeni gösteren bir işaretçidir *anahtar* arama için. Üçüncü bağımsız değişkeni bir dizi öğesi ile Karşılaştırılacak işaretçidir *anahtar*.
+*Karşılaştırma*<br/>
+Karşılaştırma işlevi. İlk bağımsız değişken *bağlam* işaretçi. İkinci bağımsız değişkeni bir işaretçisidir *anahtar* arama. Üçüncü bağımsız değişkeni ile Karşılaştırılacak dizi öğesinin işaretçisidir *anahtar*.
 
-*bağlam* herhangi bir bağlam için bir işaretçi nesne *karşılaştırmak* yordamı erişim gerekir.
+*Bağlam*<br/>
+Bir işaretçi herhangi bir bağlam nesnesi *karşılaştırma* yordamı erişim gerekir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Qsort_s** işlevi bir dizi sıralamak için hızlı Sıralama algoritması uygulayan *numarası* öğeleri, her biri *genişliği* bayt sayısı. Bağımsız değişken *temel* sıralanacak dizisinin temel bir işaretçidir. **qsort_s** bu diziye sıralanmış öğeleriyle üzerine yazar. Bağımsız değişken *karşılaştırmak* iki dizi öğeleri karşılaştırır ve ilişkilerini belirten bir değer döndüren bir kullanıcı tarafından sağlanan yordam bir işaretçidir. **qsort_s** çağrıları *karşılaştırmak* rutin bir veya daha fazla kez işaretçileri iki dizi öğelerinin her çağrıda geçirme sıralama sırasında:
+**Qsort_s** işlevi uygulayan bir dizi sıralamak için hızlı Sıralama algoritması *numarası* öğeleri, her biri *genişliği* bayt. Bağımsız değişken *temel* sıralanacak dizinin temel bir işaretçisidir. **qsort_s** sıralanmış öğelerle bu dizinin üzerine yazar. Bağımsız değişken *karşılaştırma* kullanıcı tarafından sağlanan iki diziyi öğe karşılaştırır ve bunların belirten bir değeri döndüren bir yordam bir işaretçisidir. **qsort_s** çağrıları *karşılaştırma* rutin bir veya daha fazla kez işaretçileri iki dizi öğelerine her çağrıda geçirme sıralama sırasında:
 
 ```C
 compare( context, (void *) & elem1, (void *) & elem2 );
 ```
 
-Yordam, öğeleri karşılaştırmak ve aşağıdaki değerlerden birini döndürür:
+Yordam, öğeleri karşılaştırın ve aşağıdaki değerlerden birini döndürür:
 
 |Dönüş değeri|Açıklama|
 |------------------|-----------------|
-|< 0|**elem1** değerinden **elem2**|
+|< 0|**elem1** küçüktür **elem2**|
 |0|**elem1** eşdeğer **elem2**|
-|> 0|**elem1** büyük **elem2**|
+|> 0|**elem1** büyüktür **elem2**|
 
-Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir dizi sıralamak için "büyüktür" ve "küçüktür" karşılaştırma işlevinde duygusu ters çevrilir.
+Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düzende sıralanır. Azalan olarak bir diziyi sıralamak için "büyüktür" ve "az" karşılaştırma işlevde anlamı ters çevir.
 
-İşlev için geçersiz parametreler aktarılırsa geçersiz parametre işleyicisi, açıklandığı gibi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütme izin sonra işlevi döndürür ve **errno** ayarlanır **EINVAL**. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Geçersiz parametreler bir işleve geçirilirse geçersiz parametre işleyicisi açıklandığı gibi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilir sonra işlevi döndürür ve **errno** ayarlanır **EINVAL**. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
 ### <a name="error-conditions"></a>Hata koşulları
 
-|anahtar|taban|compare|NUM|genişlik|errno|
+|anahtar|taban|compare|sayı|genişlik|errno|
 |---------|----------|-------------|---------|-----------|-----------|
-|**NULL**|tüm|tüm|tüm|tüm|**EINVAL**|
-|tüm|**NULL**|tüm|!= 0|tüm|**EINVAL**|
-|tüm|tüm|tüm|tüm|<= 0|**EINVAL**|
-|tüm|tüm|**NULL**|tüm|tüm|**EINVAL**|
+|**NULL**|Tüm|Tüm|Tüm|Tüm|**EINVAL**|
+|Tüm|**NULL**|Tüm|!= 0|Tüm|**EINVAL**|
+|Tüm|Tüm|Tüm|Tüm|<= 0|**EINVAL**|
+|Tüm|Tüm|**NULL**|Tüm|Tüm|**EINVAL**|
 
-**qsort_s** aynı davranışı sahiptir **qsort** ancak *bağlamı* parametre ve kümelerini **errno**. Geçirerek bir *bağlamı* parametresi, karşılaştırma işlevleri bir nesne işaretçisi nesnesi işlevselliği veya diğer bilgileri erişilebilir bir öğesi işaretçisi erişmek için kullanabilirsiniz. Eklenmesi *bağlamı* parametreyi yapar **qsort_s** daha güvenli olduğundan *bağlamı* yapmak için statik değişkenler kullanarak sunulan yeniden giriş hataları önlemek için kullanılabilir Mevcut bilgilere paylaşılan *karşılaştırmak* işlevi.
+**qsort_s** aynı davranışı sahiptir **qsort** ancak *bağlam* parametresi ve kümelerini **errno**. Geçirerek bir *bağlam* parametresi, karşılaştırma işlevleri nesne işaretçisi nesne işlevselliği veya diğer bilgileri erişilebilir değil, bir öğe işaretçisi erişmek için kullanabilirsiniz. Ek *bağlam* parametreyi yapar **qsort_s** olduğundan daha güvenli *bağlam* yapmak için statik değişkenlerini kullanarak sunulan yeniden giriş hataları önlemek için kullanılabilir Mevcut bilgilere paylaşılan *karşılaştırma* işlevi.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -106,13 +111,13 @@ Dizi karşılaştırma işlevi tarafından tanımlandığı şekilde, artan düz
 |-------------|---------------------|
 |**qsort_s**|\<stdlib.h > ve \<search.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 **Kitaplıklar:** tüm sürümlerini [CRT kitaplık özellikleri](../../c-runtime-library/crt-library-features.md).
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnekte nasıl kullanılacağı ortaya *bağlamı* parametresinde **qsort_s** işlevi. *Bağlamı* parametre iş parçacığı sıralar yapılacağı kolaylaştırır. İş parçacığı güvenliği sağlamak için eşitlenmesi gereken statik değişkenler kullanmak yerine, farklı bir geçirmek *bağlamı* her sıralama parametresi. Bu örnekte, bir yerel ayar nesnesi olarak kullanılan *bağlamı* parametresi.
+Aşağıdaki örnek nasıl kullanılacağını gösterir *bağlam* parametresinde **qsort_s** işlevi. *Bağlam* parametre iş parçacığı açısından güvenli sıralar gerçekleştirmeyi kolaylaştırır. İş parçacığı güvenliği sağlamak için eşitlenmesi gereken statik değişkenler kullanmak yerine, farklı bir geçirmek *bağlam* her sıralama parametresi. Bu örnekte, bir yerel ayar nesnesi olarak kullanılan *bağlam* parametresi.
 
 ```cpp
 // crt_qsort_s.cpp

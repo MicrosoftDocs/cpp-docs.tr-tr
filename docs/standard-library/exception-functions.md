@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::terminate [C++]
 - std::uncaught_exception [C++]
 - std::unexpected [C++]
-ms.openlocfilehash: 5734c745f19d22c562f68aa2b518c9b4315ba12e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9401772e35527c63f47dc10bbb0e501029558825
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962279"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105412"
 ---
 # <a name="ltexceptiongt-functions"></a>&lt;özel durum&gt; işlevleri
 
@@ -75,7 +75,8 @@ exception_ptr make_exception_ptr(E Except);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dışında* kopyalanacak özel duruma sahip sınıf. Genellikle, belirttiğiniz bir [özel durum sınıfı](../standard-library/exception-class.md) bağımsız değişkeni olarak bir nesne `make_exception_ptr` herhangi bir sınıf nesnesi bağımsız değişken olsa da, işlev.
+*Dışında*<br/>
+Kopyalanacak özel duruma sahip sınıf. Genellikle, belirttiğiniz bir [özel durum sınıfı](../standard-library/exception-class.md) bağımsız değişkeni olarak bir nesne `make_exception_ptr` herhangi bir sınıf nesnesi bağımsız değişken olsa da, işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -97,7 +98,8 @@ void rethrow_exception(exception_ptr P);
 
 ### <a name="parameters"></a>Parametreler
 
-*P* yeniden harekete geçirerek özel durum yakalandı. Varsa *P* null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), işlevin [gt; Std::bad_exception &](../standard-library/bad-exception-class.md).
+*P*<br/>
+Yeniden oluşturulması için bir özel durum yakalandı. Varsa *P* null [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), işlevin [gt; Std::bad_exception &](../standard-library/bad-exception-class.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -121,7 +123,8 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*fnew* sonlandırma sırasında çağrılacak işlev.
+*fnew*<br/>
+Sonlandırma sırasında çağrılacak işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -178,7 +181,8 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*fnew* beklenmeyen bir özel durum oluştuğunda çağrılacak işlev.
+*fnew*<br/>
+Beklenmeyen bir özel durum oluştuğunda çağrılacak işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
