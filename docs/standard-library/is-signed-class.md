@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b9b58235d404b523629a0e9d24121182d1119c3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 65cb6e07a3b47d6aa74741b38418d33b9a0ca3ea
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960336"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109297"
 ---
 # <a name="issigned-class"></a>is_signed Sınıfı
 
@@ -37,7 +37,8 @@ struct is_signed;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

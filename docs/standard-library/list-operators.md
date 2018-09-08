@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (list)
 - std::operator&lt;= (list)
 - std::operator== (list)
-ms.openlocfilehash: ba77722abb28f246d305b44fb78379b2297ccc14
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 809dae9fb6bd255d36f9d7417bf6ab606b1309be
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965723"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102739"
 ---
 # <a name="ltlistgt-operators"></a>&lt;Liste&gt; işleçleri
 
@@ -46,9 +46,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -95,9 +97,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -148,9 +152,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -201,9 +207,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -250,9 +258,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -303,9 +313,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `list`.
+*Sol*<br/>
+Bir nesne türü `list`.
 
-*doğru* türünde bir nesne `list`.
+*sağ*<br/>
+Bir nesne türü `list`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

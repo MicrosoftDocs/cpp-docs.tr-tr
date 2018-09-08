@@ -48,12 +48,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31f3f2a4c01645df17af8992cc7f6b92dd57966a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ab9674ffafbf6563f566778d11991f8aa95c44d8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960937"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106476"
 ---
 # <a name="regextraits-class"></a>regex_traits Sınıfı
 
@@ -92,7 +92,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* açıklamak için karakter öğe türü.
+*Elem*<br/>
+Açıklamak için karakter öğe türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -365,7 +366,8 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*loc* saklamak için yerel ayar nesnesi.
+*LOC*<br/>
+Saklamak için yerel ayar nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -452,9 +454,11 @@ bool isctype(char_type ch, char_class_type cls) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* test edilecek öğe.
+*ch*<br/>
+Test edilecek öğe.
 
-*CLS* test etmek için sınıflar.
+*CLS*<br/>
+Test etmek için sınıflar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -541,7 +545,7 @@ static size_type length(const char_type *str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*
+*str*<br/>
 
 Null ile sonlandırılmış dizisi.
 
@@ -714,9 +718,11 @@ char_class_type lookup_classname(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* bakarak için dizinin başlangıcı.
+*ilk*<br/>
+Aranacak dizisi başlangıcı.
 
-*Son* aramak için son sırasının.
+*Son*<br/>
+Son sırasının aramak için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -808,9 +814,11 @@ string_type lookup_collatename(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* bakarak için dizinin başlangıcı.
+*ilk*<br/>
+Aranacak dizisi başlangıcı.
 
-*Son* aramak için son sırasının.
+*Son*<br/>
+Son sırasının aramak için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1149,9 +1157,11 @@ string_type transform(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürmek için bir dizi başlangıcı.
+*ilk*<br/>
+Dönüştürmek için bir dizi başlangıcı.
 
-*Son* dönüştürmek için son sırasının.
+*Son*<br/>
+Son sırasının dönüştürmek için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1239,9 +1249,11 @@ string_type transform_primary(FwdIt first, FwdIt last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürmek için bir dizi başlangıcı.
+*ilk*<br/>
+Dönüştürmek için bir dizi başlangıcı.
 
-*Son* dönüştürmek için son sırasının.
+*Son*<br/>
+Son sırasının dönüştürmek için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1328,7 +1340,8 @@ char_type translate(char_type ch) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* dönüştürmek için öğesi.
+*ch*<br/>
+Dönüştürmek için öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1415,7 +1428,8 @@ char_type translate_nocase(char_type ch) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* dönüştürmek için öğesi.
+*ch*<br/>
+Dönüştürmek için öğesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1502,9 +1516,11 @@ int value(Elem ch, int radix) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* dönüştürmek için öğesi.
+*ch*<br/>
+Dönüştürmek için öğesi.
 
-*sayı tabanını* kullanmak için temel aritmetik.
+*radix*<br/>
+Kullanılacak temel aritmetik.
 
 ### <a name="remarks"></a>Açıklamalar
 

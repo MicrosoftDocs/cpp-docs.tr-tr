@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 4dfe0805-cc6e-479f-887f-a1c164f73837
-ms.openlocfilehash: c2c61e3fce5d1cf58f59bc9dd51920bccc0eb2f3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0dda1415ea875b01c943a0a275122458f399f69c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966478"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105886"
 ---
 # <a name="ltscopedallocatorgt-operators"></a>&lt;scoped_allocator&gt; işleçleri
 
@@ -35,9 +35,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* sol `scoped_allocator_adaptor` nesne.
+*Sol*<br/>
+Sol `scoped_allocator_adaptor` nesne.
 
-*Sağ* sağ `scoped_allocator_adaptor` nesne.
+*sağ*<br/>
+Sağa `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -56,9 +58,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* sol `scoped_allocator_adaptor` nesne.
+*Sol*<br/>
+Sol `scoped_allocator_adaptor` nesne.
 
-*Sağ* sağ `scoped_allocator_adaptor` nesne.
+*sağ*<br/>
+Sağa `scoped_allocator_adaptor` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

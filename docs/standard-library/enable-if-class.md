@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2192ea954df1e7a63157d6deb04c7d34cd42337c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c4cdc26c66c05cda821b43367b806ecc2a2a8168
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966491"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100812"
 ---
 # <a name="enableif-class"></a>enable_if Sınıfı
 
@@ -37,9 +37,11 @@ struct enable_if;
 
 ### <a name="parameters"></a>Parametreler
 
-*B* elde edilen türü varlığını belirleyen bir değer.
+*B*<br/>
+Sonuç türü varlığını belirleyen değeri.
 
-*T* varsa örneklemek için tür *B* geçerlidir.
+*T*<br/>
+Varsa örneklemek için tür *B* geçerlidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -64,12 +66,12 @@ Dört örnek senaryolar şunlardır:
     template <your_stuff>
 typename enable_if<your_condition, your_return_type>::type
     yourfunction(args) {// ...
- }
+}
 // The alias template makes it more concise:
     template <your_stuff>
 enable_if_t<your_condition, your_return_type>
 yourfunction(args) {// ...
- }
+}
 ```
 
 - Senaryo 2: varsayılan bir bağımsız değişkene sahip bir işlev parametresi ekleme:
@@ -78,7 +80,7 @@ yourfunction(args) {// ...
     template <your_stuff>
 your_return_type_if_present
     yourfunction(args, enable_if_t<your condition, FOO> = BAR) {// ...
- }
+}
 ```
 
 - Senaryo 3: varsayılan bir bağımsız değişkene sahip bir şablon parametresi ekleme:
@@ -95,7 +97,7 @@ rest_of_function_declaration_goes_here
 void your_function(const T& t,
     enable_if_t<is_something<T>::value, const string&>
 s) {// ...
- }
+}
 ```
 
 Senaryo 1, dönüş türleri olmadığından taşıma oluşturucuları ve dönüştürme işleçleri ile çalışmaz.

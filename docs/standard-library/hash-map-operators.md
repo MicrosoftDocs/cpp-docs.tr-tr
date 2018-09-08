@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 24b9bb9e-e983-4060-bce5-2c7c8161ee61
-ms.openlocfilehash: 135922bb88b02c00849a577fb8d8457b6fb21989
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bd140fed954c097fa73f179c92cbc64f3148e77c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958243"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108467"
 ---
 # <a name="lthashmapgt-operators"></a>&lt;hash_map&gt; işleçleri
 
@@ -36,9 +36,11 @@ bool operator!=(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_map`.
+*Sol*<br/>
+Bir nesne türü `hash_map`.
 
-*doğru* türünde bir nesne `hash_map`.
+*sağ*<br/>
+Bir nesne türü `hash_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -103,9 +105,11 @@ bool operator==(const hash_map <Key, Type, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_map`.
+*Sol*<br/>
+Bir nesne türü `hash_map`.
 
-*doğru* türünde bir nesne `hash_map`.
+*sağ*<br/>
+Bir nesne türü `hash_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -168,9 +172,11 @@ bool operator!=(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_multimap`.
+*Sol*<br/>
+Bir nesne türü `hash_multimap`.
 
-*doğru* türünde bir nesne `hash_multimap`.
+*sağ*<br/>
+Bir nesne türü `hash_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -233,9 +239,11 @@ bool operator==(const hash_multimap <Key, Type, Traits, Allocator>& left, const 
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_multimap`.
+*Sol*<br/>
+Bir nesne türü `hash_multimap`.
 
-*doğru* türünde bir nesne `hash_multimap`.
+*sağ*<br/>
+Bir nesne türü `hash_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

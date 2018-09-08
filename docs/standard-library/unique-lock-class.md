@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b7cd9a949fef63e742d75bc01b199871d4950cc
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c448c551e7b800301e374fed9a8f6acb7aa7ab1b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956482"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110142"
 ---
 # <a name="uniquelock-class"></a>unique_lock Sınıfı
 
@@ -76,7 +76,7 @@ Dahili olarak, bir `unique_lock` ilişkili bir yönelik bir işaretçi depolayan
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-`unique_lock`
+*unique_lock*<br/>
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -131,7 +131,7 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*  
- A `unique_lock` nesne.
+A `unique_lock` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -182,7 +182,7 @@ void swap(unique_lock& Other) noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *Diğer*  
- A `unique_lock` nesne.
+A `unique_lock` nesne.
 
 ## <a name="try_lock"></a>  try_lock
 
@@ -215,7 +215,7 @@ bool try_lock_for(
 ### <a name="parameters"></a>Parametreler
 
 *Rel_time*  
- A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
+A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -241,7 +241,7 @@ bool try_lock_until(const xtime* Abs_time);
 ### <a name="parameters"></a>Parametreler
 
 *Abs_time*  
- Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
+Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -284,16 +284,16 @@ unique_lock(mutex_type& Mtx,
 ### <a name="parameters"></a>Parametreler
 
 *Mtx*  
- Mutex nesnesi türü.
+Mutex nesnesi türü.
 
 *Rel_time*  
- A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
+A [chrono::duration](../standard-library/duration-class.md) yöntemi sahipliğini almayı dener en uzun süreyi belirten nesne `mutex`.
 
 *Abs_time*  
- Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
+Sonra yöntemi artık girişimlerini sahipliğini almayı eşiği belirten zaman içinde nokta `mutex`.
 
 *Diğer*  
- A `unique_lock` nesne.
+A `unique_lock` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

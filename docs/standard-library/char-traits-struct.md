@@ -37,12 +37,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c2346ed8a7d9cc2359c0bdf984b52993a13b05a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: bc8f906c4c084ef4cabef9b26ef9e6b48e9e33cd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956888"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106089"
 ---
 # <a name="chartraits-struct"></a>char_traits Yapısı
 
@@ -57,7 +57,8 @@ struct char_traits;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* öğe veri türü.
+*CharType*<br/>
+Öğe veri türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -116,11 +117,13 @@ static char_type *assign(char_type* strTo,
 
 **_** *CharFrom* değeri olan atanacak karakter.
 
-*_CharTo* karakter değeri atanacak öğe.
+*_CharTo*<br/>
+Karakter değeri atanacak öğe.
 
 * strTo * ilk öğeleri karakter değerlerini atanacak olan dize veya karakter dizisi.
 
-*_Num* değerleri atanacak giderek öğe sayısı.
+*_Num*<br/>
+Değerleri atanacak giderek öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -199,7 +202,8 @@ static int compare(const char_type* str1,
 
 * str2 * birbirine Karşılaştırılacak ikinci iki dizenin.
 
-*_Num* Karşılaştırılacak dizeler içindeki öğelerin sayısını.
+*_Num*<br/>
+Karşılaştırılacak dizeler içindeki öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -258,11 +262,14 @@ static char_type *copy(char_type* _To,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Hata* öğe başına dize veya karakter dizisi hedefleyen kopyalanan karakter dizisini almak için.
+*_Hata*<br/>
+Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisi başına öğe.
 
-*_Konağa* Kopyalanacak kaynak dize veya karakter dizisinin başında öğesi.
+*_Konağa*<br/>
+Kopyalanacak kaynak dize veya karakter dizisi başına öğe.
 
-*_Num* kopyalanacak öğe sayısı.
+*_Num*<br/>
+Kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -317,13 +324,17 @@ static char_type *_Copy_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef* dize veya karakter dizisi hedefleyen kopyalanan karakter dizisini almak için.
+*Hedef*<br/>
+Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisi.
 
-*dest_size* boyutunu *dest*. Varsa `char_type` olduğu **char**, bu boyutu bayt cinsinden kaldırılır. Varsa `char_type` olduğu **wchar_t**, sözcükleri bu boyutu ise.
+*dest_size*<br/>
+Boyutu *dest*. Varsa `char_type` olduğu **char**, bu boyutu bayt cinsinden kaldırılır. Varsa `char_type` olduğu **wchar_t**, sözcükleri bu boyutu ise.
 
-*_Konağa* Kopyalanacak kaynak dize veya karakter dizisi.
+*_Konağa*<br/>
+Kopyalanacak kaynak dize veya karakter dizisi.
 
-*sayısı* kopyalanacak öğe sayısı.
+*Sayısı*<br/>
+Kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -425,9 +436,11 @@ static bool eq(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch1* eşitlik için test edilecek ilk iki karakter.
+*_Ch1*<br/>
+Eşitlik için test edilecek ilk iki karakter.
 
-*_Ch2* eşitlik için test edilecek ikinci iki karakter.
+*_Ch2*<br/>
+Eşitlik için test edilecek ikinci iki karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -483,9 +496,11 @@ static bool eq_int_type(const int_type& _Ch1, const int_type& _Ch2);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch1* eşitlik için test edilecek ilk iki karakter `int_type`s.
+*_Ch1*<br/>
+İlk iki karakter eşitlik için test edilecek `int_type`s.
 
-*_Ch2* eşitlik için test edilecek ikinci iki karakter `int_type`s.
+*_Ch2*<br/>
+İkinci iki karakter eşitlik için test edilecek `int_type`s.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -551,9 +566,9 @@ The char_types and corresponding int_types are:
     ch3 = x corresponding to int1 = 120.
 
 The int_type representation of character ch1
- is not equal to the int_type representation of ch2.
+is not equal to the int_type representation of ch2.
 The int_type representation of character ch1
- is equal to the int_type representation of ch3.
+is equal to the int_type representation of ch3.
 ```
 
 ## <a name="find"></a>  char_traits::Find
@@ -568,11 +583,14 @@ static const char_type* find(const char_type* str,
 
 ### <a name="parameters"></a>Parametreler
 
-*str* ilk karakter, aranacak dize.
+*str*<br/>
+Aranacak dizedeki ilk karakter.
 
-*_Num* birinciden sayım konumlarını sayısını aranacak aralıktaki.
+*_Num*<br/>
+Konum, birinciden sayım sayısına aranacak aralıktaki.
 
-*_Ch* karakter aralığı içinde arama yapılacak.
+*_Ch*<br/>
+Aralık içinde arama yapılacak karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -616,7 +634,7 @@ int main( )
 The string to be searched is: f2d-1234-abcd
 The character searched for in s1 is: d
 The string beginning with the first occurrence
- of the character 'd' is: d-1234-abcd
+of the character 'd' is: d-1234-abcd
 The result2 of the search is NULL.
 ```
 
@@ -646,7 +664,8 @@ static size_t length(const char_type* str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* uzunluğu olan ölçülecek C dizesi.
+*str*<br/>
+C-ölçülecek uzunluğu olan dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -688,9 +707,11 @@ static bool lt(const char_type& _Ch1, const char_type& _Ch2);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch1* için test edilecek ilk iki karakter küçüktür.
+*_Ch1*<br/>
+İçin test edilecek ilk iki karakter küçüktür.
 
-*_Ch2* için test edilecek ikinci iki karakter küçüktür.
+*_Ch2*<br/>
+İçin test edilecek ikinci iki karakter küçüktür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -749,11 +770,14 @@ static char_type *move(char_type* _To,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Hata* öğe başına dize veya karakter dizisi hedefleyen kopyalanan karakter dizisini almak için.
+*_Hata*<br/>
+Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisi başına öğe.
 
-*_Konağa* Kopyalanacak kaynak dize veya karakter dizisinin başında öğesi.
+*_Konağa*<br/>
+Kopyalanacak kaynak dize veya karakter dizisi başına öğe.
 
-*_Num* kaynak dizesi kopyalanacak öğe sayısı.
+*_Num*<br/>
+Kaynak dizesi kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -823,13 +847,17 @@ static char_type *_Move_s(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef* öğe başına dize veya karakter dizisi hedefleyen kopyalanan karakter dizisini almak için.
+*Hedef*<br/>
+Kopyalanan karakter dizisini almak için hedeflenen dize veya karakter dizisi başına öğe.
 
-*dest_size* boyutunu *dest*. Varsa `char_type` olduğu **char**, sonra da bu bayttır. Varsa `char_type` olduğu **wchar_t**, bu sözcükleri kaldırılır.
+*dest_size*<br/>
+Boyutu *dest*. Varsa `char_type` olduğu **char**, sonra da bu bayttır. Varsa `char_type` olduğu **wchar_t**, bu sözcükleri kaldırılır.
 
-*_Konağa* Kopyalanacak kaynak dize veya karakter dizisinin başında öğesi.
+*_Konağa*<br/>
+Kopyalanacak kaynak dize veya karakter dizisi başına öğe.
 
-*sayısı* kaynak dizesi kopyalanacak öğe sayısı.
+*Sayısı*<br/>
+Kaynak dizesi kopyalanacak öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -895,7 +923,8 @@ static int_type not_eof(const int_type& _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* karakter olarak temsil edilen bir `int_type` veya EOF karakteri olup test edilecek.
+*_Ch*<br/>
+Karakter olarak temsil edilen bir `int_type` veya EOF karakteri olup test edilecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1002,7 +1031,8 @@ static char_type to_char_type(const int_type& _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* `int_type` karakter olarak temsil edilecek bir `char_type`.
+*_Ch*<br/>
+`int_type` Karakter olarak temsil edilecek bir `char_type`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1107,7 +1137,8 @@ static int_type to_int_type(const char_type& _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* `char_type` karakter olarak temsil edilecek bir `int_type`.
+*_Ch*<br/>
+`char_type` Karakter olarak temsil edilecek bir `int_type`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

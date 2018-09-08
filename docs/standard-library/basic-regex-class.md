@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f13dfb45073a1a21e8d6a7b4585f0dfc5c71b8e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 372dc829810fd08e3cc872abfb769221b2ca2a58
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959754"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100891"
 ---
 # <a name="basicregex-class"></a>basic_regex Sınıfı
 
@@ -84,9 +84,11 @@ class basic_regex {
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* eşleşecek öğelerin türü.
+*Elem*<br/>
+Eşleşecek öğelerin türü.
 
-*RXtraits* öğeler için nitelikler sınıfı.
+*RXtraits*<br/>
+Öğeler için nitelikler sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -148,27 +150,37 @@ basic_regex& assign(
 
 ### <a name="parameters"></a>Parametreler
 
-*STtraits* bir dize kaynağı için nitelikler sınıfı.
+*STtraits*<br/>
+Bir dize kaynağı için nitelikler sınıfı.
 
-*STalloc* bir dize kaynağı için ayırıcı sınıf.
+*STalloc*<br/>
+Bir dize kaynağı için ayırıcı sınıf.
 
-*InIt* giriş için bir aralık kaynak yineleyici türü.
+*InIt*<br/>
+Bir aralık kaynağı için giriş yineleyici türü.
 
-*doğru* kopyalamak için Regex kaynak.
+*sağ*<br/>
+Kopyalamak için Regex kaynağı.
 
-*PTR* dizisi başına kopyalamak için işaretçi.
+*ptr*<br/>
+Başlangıç dizisi kopyalamak için işaretçi.
 
-*bayrakları* kopyalanırken eklemek için söz dizimi seçeneği bayrakları.
+*bayrakları*<br/>
+Kopyalanırken eklemek için söz dizimi seçeneği bayraklar.
 
 *Len/TD >* kopyalanacağı dizinin uzunluğu.
 
-*str* dizesini kopyalayın.
+*str*<br/>
+Kopyalamak için dize.
 
-*İlk* kopyalamak için bir dizi başlangıcı.
+*ilk*<br/>
+Kopyalamak için bir dizi başlangıcı.
 
-*Son* kopyalamak için son sırasının.
+*Son*<br/>
+Son sırasının kopyalamak için.
 
-*IList* kopyalanacağı initializer_list.
+*IList*<br/>
+Kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -293,27 +305,37 @@ explicit basic_regex(
 
 ### <a name="parameters"></a>Parametreler
 
-*STtraits* bir dize kaynağı için nitelikler sınıfı.
+*STtraits*<br/>
+Bir dize kaynağı için nitelikler sınıfı.
 
-*STalloc* bir dize kaynağı için ayırıcı sınıf.
+*STalloc*<br/>
+Bir dize kaynağı için ayırıcı sınıf.
 
-*InIt* giriş için bir aralık kaynak yineleyici türü.
+*InIt*<br/>
+Bir aralık kaynağı için giriş yineleyici türü.
 
-*doğru* kopyalamak için Regex kaynak.
+*sağ*<br/>
+Kopyalamak için Regex kaynağı.
 
-*PTR* dizisi başına kopyalamak için işaretçi.
+*ptr*<br/>
+Başlangıç dizisi kopyalamak için işaretçi.
 
-*bayrakları* kopyalanırken eklemek için söz dizimi seçeneği bayrakları.
+*bayrakları*<br/>
+Kopyalanırken eklemek için söz dizimi seçeneği bayraklar.
 
 *Len/TD >* kopyalanacağı dizinin uzunluğu.
 
-*str* dizesini kopyalayın.
+*str*<br/>
+Kopyalamak için dize.
 
-*İlk* kopyalamak için bir dizi başlangıcı.
+*ilk*<br/>
+Kopyalamak için bir dizi başlangıcı.
 
-*Son* kopyalamak için son sırasının.
+*Son*<br/>
+Son sırasının kopyalamak için.
 
-*IList* kopyalanacağı initializer_list.
+*IList*<br/>
+Kopyalanacağı initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -706,7 +728,8 @@ locale_type imbue(locale_type loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*loc* saklamak için yerel ayar nesnesi.
+*LOC*<br/>
+Saklamak için yerel ayar nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1006,13 +1029,17 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 
 ### <a name="parameters"></a>Parametreler
 
-*STtraits* bir dize kaynağı için nitelikler sınıfı.
+*STtraits*<br/>
+Bir dize kaynağı için nitelikler sınıfı.
 
-*STalloc* bir dize kaynağı için ayırıcı sınıf.
+*STalloc*<br/>
+Bir dize kaynağı için ayırıcı sınıf.
 
-*doğru* kopyalamak için Regex kaynak.
+*sağ*<br/>
+Kopyalamak için Regex kaynağı.
 
-*str* dizesini kopyalayın.
+*str*<br/>
+Kopyalamak için dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1113,7 +1140,8 @@ void swap(basic_regex& right) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* ile takas için normal ifade nesnesi.
+*sağ*<br/>
+İle takas için normal ifade nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 

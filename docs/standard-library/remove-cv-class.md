@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b14733ea906fa47e7339c23efb8942763e928828
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 139526c689a54929d9e77b9c23c6ea34f2cc8449
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956315"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105815"
 ---
 # <a name="removecv-class"></a>remove_cv Sınıfı
 
@@ -40,7 +40,8 @@ using remove_cv_t = typename remove_cv<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* değiştirilecek tür.
+*T*<br/>
+Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

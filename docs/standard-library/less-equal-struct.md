@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cfe7f0c579e0e22e3de98a9e5edf3abee6cfc2b3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fb6c0051fbf4a1d5b58cb53891325058effb0db1
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953175"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108999"
 ---
 # <a name="lessequal-struct"></a>less_equal Yapısı
 
@@ -51,9 +51,11 @@ struct less_equal<void>
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator<=` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* daha az--veya-eşittir-işlemin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Daha az--veya-eşittir-işlemin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* daha az--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Daha az--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

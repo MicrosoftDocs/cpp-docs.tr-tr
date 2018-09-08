@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b632fabe8f596d46a0423d670ff57bb12de93cd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: cdef0e68e50085513871d1fcacd9cfdb302e9f51
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953462"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107579"
 ---
 # <a name="pointertobinaryfunction-class"></a>pointer_to_binary_function Sınıfı
 
@@ -44,11 +44,14 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*pfunc* dönüştürülecek ikili fonksiyon.
+*pfunc*<br/>
+Dönüştürülecek ikili fonksiyon.
 
-*Sol* sol nesne  *\*pfunc* üzerinde çağrılır.
+*Sol*<br/>
+Sol nesne  *\*pfunc* üzerinde çağrılır.
 
-*doğru* sağ nesne  *\*pfunc* üzerinde çağrılır.
+*sağ*<br/>
+Sağa nesne  *\*pfunc* üzerinde çağrılır.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

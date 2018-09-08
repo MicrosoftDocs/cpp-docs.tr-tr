@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8468cb290b6845050943159aaa69b9cd000d2bc7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4ca6120a8cd649b1c4d3d5d662cb987d950b9b4e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960300"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110392"
 ---
 # <a name="geometricdistribution-class"></a>geometric_distribution Sınıfı
 
@@ -76,9 +76,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*İnt'i*<br/>
+Tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -228,9 +230,11 @@ explicit geometric_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*p* `p` dağıtım parametresi.
+*p*<br/>
+`p` Dağıtım parametresi.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -257,9 +261,11 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*p* `p` dağıtım parametresi.
+*p*<br/>
+`p` Dağıtım parametresi.
 
-*doğru* `param_type` karşılaştırmak için bu örneği.
+*sağ*<br/>
+`param_type` Karşılaştırmak için bu örneği.
 
 ### <a name="remarks"></a>Açıklamalar
 

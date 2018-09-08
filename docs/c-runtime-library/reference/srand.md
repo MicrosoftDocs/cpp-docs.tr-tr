@@ -38,16 +38,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2b527561e312ce9c50dce106a243d7e49a1d303
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7972ddfe6ae9c1d591bdbd4cc5e208d78e826037
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406894"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107565"
 ---
 # <a name="srand"></a>srand
 
-Tarafından kullanılan geçici rastgele sayı üreticisinin için başlangıç çekirdek değeri ayarlar **rand** işlevi.
+Tarafından kullanılan sözde rastgele sayı üretici için başlangıç çekirdek değerini ayarlar **rand** işlevi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -59,11 +59,12 @@ void srand(
 
 ### <a name="parameters"></a>Parametreler
 
-*Çekirdek* geçici rastgele sayı oluşturma için çekirdek
+*Çekirdek*<br/>
+Sözde rastgele sayı üretimi için çekirdek
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Srand** işlevi, geçerli iş parçacığında geçici rastgele tamsayılar bir dizi oluşturmak için başlangıç noktası ayarlar. Sonuçların aynı dizisini oluşturmak için oluşturucunun yeniden başlatmak için arama **srand** işlev ve aynı *çekirdek* yeniden bağımsız değişkeni. Başka bir değer için *çekirdek* oluşturucunun geçici rastgele sırayla farklı bir başlangıç noktası olarak ayarlar. **rand** oluşturulan geçici rastgele sayılar alır. Çağırma **rand** herhangi çağrıdan önce **srand** arama aynı sırada oluşturur **srand** ile *çekirdek* 1 olarak geçirildi.
+**Srand** işlevi, geçerli iş parçacığında bir sözde rastgele tamsayı dizisi oluşturmak için başlangıç noktasını ayarlar. Aynı sonuç dizisini oluşturmak için oluşturucu yeniden başlatmak için çağrı **srand** işlevini ve aynı *çekirdek* yeniden bağımsız değişken. İçin herhangi bir değer *çekirdek* Oluşturucu sözde rastgele dizi içinde farklı bir başlangıç noktası olarak ayarlar. **rand** oluşturulan sözde rastgele sayıları alır. Çağırma **rand** yapılan tüm çağrıların önce **srand** arama aynı dizi oluşturur **srand** ile *çekirdek* 1 olarak geçmesiyle.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,11 +72,11 @@ void srand(
 |-------------|---------------------|
 |**srand**|\<stdlib.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [rand](rand.md).
+Örneğin bakın [rand](rand.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

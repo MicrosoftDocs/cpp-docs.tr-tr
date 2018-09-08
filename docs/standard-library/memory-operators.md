@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad33ff04c688ab79fa4a73234829d3e13fd1b44d
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: e37d1506fd713f90b793c6f3f9a04b39bf53f7a4
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954241"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100476"
 ---
 # <a name="ltmemorygt-operators"></a>&lt;bellek&gt; işleçleri
 
@@ -56,13 +56,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* eşitsizlik için test edilecek nesnelerden biri.
+*Sol*<br/>
+Bir eşitsizlik için test edilecek nesne.
 
-*doğru* eşitsizlik için test edilecek nesnelerden biri.
+*sağ*<br/>
+Bir eşitsizlik için test edilecek nesne.
 
-*Ty1* sol tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty1*<br/>
+Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2* sağ tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty2*<br/>
+Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -154,13 +158,17 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* eşitlik için test edilecek nesnelerden biri.
+*Sol*<br/>
+Eşitlik için test edilecek nesnelerden biri.
 
-*doğru* eşitlik için test edilecek nesnelerden biri.
+*sağ*<br/>
+Eşitlik için test edilecek nesnelerden biri.
 
-*Ty1* sol tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty1*<br/>
+Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2* sağ tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty2*<br/>
+Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -258,13 +266,17 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* bir Karşılaştırılacak nesne.
+*Sol*<br/>
+Bir Karşılaştırılacak nesne.
 
-*doğru* bir Karşılaştırılacak nesne.
+*sağ*<br/>
+Bir Karşılaştırılacak nesne.
 
-*Ty1* sol tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty1*<br/>
+Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2* sağ tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty2*<br/>
+Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -288,13 +300,17 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* bir Karşılaştırılacak nesne.
+*Sol*<br/>
+Bir Karşılaştırılacak nesne.
 
-*doğru* bir Karşılaştırılacak nesne.
+*sağ*<br/>
+Bir Karşılaştırılacak nesne.
 
-*Ty1* sol işaretçiyle kontrol edilen tür.
+*Ty1*<br/>
+Sol işaretçiyle kontrol edilen tür.
 
-*Ty2* doğru işaretçiyle kontrol edilen tür.
+*Ty2*<br/>
+Doğru işaretçiyle kontrol edilen tür.
 
 ## <a name="op_lt_eq"></a>  İşleci&lt;=
 
@@ -314,13 +330,17 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* bir Karşılaştırılacak nesne.
+*Sol*<br/>
+Bir Karşılaştırılacak nesne.
 
-*doğru* bir Karşılaştırılacak nesne.
+*sağ*<br/>
+Bir Karşılaştırılacak nesne.
 
-*Ty1* sol tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty1*<br/>
+Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2* sağ tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty2*<br/>
+Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -344,13 +364,17 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* bir Karşılaştırılacak nesne.
+*Sol*<br/>
+Bir Karşılaştırılacak nesne.
 
-*doğru* bir Karşılaştırılacak nesne.
+*sağ*<br/>
+Bir Karşılaştırılacak nesne.
 
-*Ty1* sol tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty1*<br/>
+Sol paylaşılan işaretçiyle kontrol edilen tür.
 
-*Ty2* sağ tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty2*<br/>
+Doğru paylaşılan işaretçiyle kontrol edilen tür.
 
 ## <a name="op_lt_lt"></a>  İşleci&lt;&lt;
 
@@ -364,15 +388,20 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* akış öğesinin türü.
+*Elem*<br/>
+Akış öğesi türü.
 
-*Tr* türü akış öğesi özellikleri.
+*tr*<br/>
+Türü akış öğesi özellikleri.
 
-*Ty* paylaşılan işaretçiyle kontrol edilen tür.
+*Ty*<br/>
+Paylaşılan işaretçiyle kontrol edilen tür.
 
-*Çıkış* çıkış akışı.
+*out*<br/>
+Çıkış akışı.
 
-*SP* paylaşılan işaretçi.
+*SP*<br/>
+Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 

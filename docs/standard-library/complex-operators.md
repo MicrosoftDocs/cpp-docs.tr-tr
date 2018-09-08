@@ -19,12 +19,12 @@ helpviewer_keywords:
 - std::operator!= (complex)
 - std::operator&gt;&gt; (complex)
 - std::operator&lt;&lt; (complex), std::operator== (complex)
-ms.openlocfilehash: 2491cb859de8908bbe0710f03d12f836bbd80e2f
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: de26779c569326f46794ba76b7b886f994cd8b11
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208682"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110200"
 ---
 # <a name="ltcomplexgt-operators"></a>&lt;karmaşık&gt; işleçleri
 
@@ -58,9 +58,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*Sol*<br/>
+Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
-*doğru* karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*sağ*<br/>
+Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -196,9 +198,11 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
+*Sol*<br/>
+İlk iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
-*doğru* ikinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
+*sağ*<br/>
+İkinci iki karmaşık sayılar veya ile çarpılmasına olan karmaşık bir sayıyı için parametre türü bir sayı \* işlemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -295,9 +299,11 @@ complex<Type> operator+(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilk iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
+*Sol*<br/>
+İlk iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
 
-*doğru* ikinci iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
+*sağ*<br/>
+İkinci iki karmaşık sayılar olarak eklenecek olan karmaşık bir sayıyı için parametre türü bir sayı veya + işlem.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -402,7 +408,7 @@ The argument of cs3 is: 0.463648 radians, which is 26.5651 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of + to the right-side
- complex number is: cs4 = (3,4)
+complex number is: cs4 = (3,4)
 The modulus of cs4 is: 5
 The argument of cs4 is: 0.927295 radians, which is 53.1301 degrees.
 ```
@@ -433,9 +439,11 @@ complex<Type> operator-(const complex<Type>& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* ilk iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
+*Sol*<br/>
+İlk iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
 
-*doğru* ikinci iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
+*sağ*<br/>
+İkinci iki karmaşık sayılar veya işlem tarafından çıkarılan için karmaşık bir sayıyı için parametre türü bir sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -542,7 +550,7 @@ The argument of cs3 is: -1.10715 radians, which is -63.4349 degrees.
 
 The right-side complex number is cr4 = (3,4)
 The result of the unary application of - to the right-side
- complex number is: cs4 = (-3,-4)
+complex number is: cs4 = (-3,-4)
 The modulus of cs4 is: 5
 The argument of cs4 is: -2.2143 radians, which is -126.87 degrees.
 ```
@@ -570,9 +578,11 @@ complex<Type> operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* karmaşık bir sayıyı veya pay ile paydası bölünüp olan karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
+*Sol*<br/>
+Karmaşık bir sayıyı veya pay ile paydası bölünüp olan karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
 
-*doğru* karmaşık bir sayıyı veya pay ile ayırmak için kullanılacak ise karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
+*sağ*<br/>
+Karmaşık bir sayıyı veya pay ile ayırmak için kullanılacak ise karmaşık bir sayıyı için parametre türü bir sayı / işlemi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -678,9 +688,11 @@ basic_ostream<Elem, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Ostr* içine karmaşık sayı girilen çıkış akışı.
+*Ostr*<br/>
+Karmaşık sayıyı girilmiş olan çıkış akışı.
 
-*doğru* çıkış akışına girilmesi gereken karmaşık numara
+*sağ*<br/>
+Çıkış akımına girilmesi gereken karmaşık numara
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -749,9 +761,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*Sol*<br/>
+Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
-*doğru* karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
+*sağ*<br/>
+Karmaşık bir sayıyı veya parametre türünü eşitsizlik için test edilecek nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -877,9 +891,11 @@ basic_istream<Elem, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Istr* Giriş akışı, karmaşık sayı ayıklanır.
+*Istr*<br/>
+Karmaşık sayıyı ayıklandığı Giriş akışı.
 
-*doğru* girdi akışından ayıklanan karmaşık sayı.
+*sağ*<br/>
+Girdi akışından ayıklanan karmaşık sayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

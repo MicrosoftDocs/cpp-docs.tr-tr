@@ -1,5 +1,5 @@
 ---
-title: Geri Sar | Microsoft Docs
+title: rewind | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58f8eddd2cae672f2a3677ebc9af87987889d166
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 37f54ff6b2c3738550c707887f2068986ca4abd6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406839"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100293"
 ---
 # <a name="rewind"></a>geri sar
 
-Dosya işaretçisini dosya başına yeniden konumlandırır.
+Dosya işaretçisini dosyanın başına yeniden konumlandırır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -55,19 +55,20 @@ void rewind(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış* işaretçi **dosya** yapısı.
+*Stream*<br/>
+İşaretçi **dosya** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Geri sarma** işlevi ile ilişkili dosya işaretçisini yeniden konumlandırır *akış* dosya başına. Çağrı **geri sarma** benzer
+**Rewind** işlevi, ilişkili dosya işaretçisini yeniden konumlandırır *stream* dosyanın başına. Bir çağrı **rewind** benzer
 
-**(void) fseek (** _akış_**, 0 L, SEEK_SET);**
+**(void) fseek (** _stream_**, 0 L, SEEK_SET);**
 
-Ancak, farklı [fseek](fseek-fseeki64.md), **geri sarma** akış için hata göstergeleri yanı sıra dosya sonu göstergesi temizler. Ayrıca, farklı [fseek](fseek-fseeki64.md), **geri sarma** işaretçinin başarıyla taşındı olup olmadığını belirten bir değer döndürmüyor.
+Ancak, farklı [fseek](fseek-fseeki64.md), **rewind** akış için hata göstergeleri yanı sıra dosya sonu göstergesini temizler. Ayrıca, farklı [fseek](fseek-fseeki64.md), **rewind** işaretçi başarıyla taşındı olup olmadığını belirten bir değer döndürmez.
 
-Klavye arabellek silmek için kullanın **geri sarma** akış ile **stdin**, klavye ile varsayılan olarak ilişkili olduğu.
+Klavye arabellek silmek için kullanın **rewind** stream ile **stdin**, klavye ile ilişkili olduğu.
 
-Akış ise bir **NULL** işaretçi, geçersiz parametre işleyicisi çağrılır, açıklandığı gibi [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev, yürütme devam etmek için izin verilip verilmediğini, döndürür ve **errno** ayarlanır **EINVAL**.
+Akış ise bir **NULL** işaretçiyse, geçersiz parametre işleyicisi çağrılır, açıklandığı [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevi döndürür ve **errno** ayarlanır **EINVAL**.
 
 Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
@@ -77,7 +78,7 @@ Bunlar ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno,
 |-------------|---------------------|
 |**rewind**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
@@ -125,4 +126,4 @@ The values read are: 1 and -37
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>

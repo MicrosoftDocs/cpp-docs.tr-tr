@@ -9,56 +9,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92076ac919664fb8ebf6a01513b9382ade52f2a5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6a262b608bef9ba2e1393337660f58b7f14fb05c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754126"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108973"
 ---
 # <a name="weak-references-and-breaking-cycles-ccx"></a>Zayıf başvurular ve döngüleri kesme (C + +/ CX)
-Başvuru türleri için başvuru sayımı alan hiçbir tür sistemindeki kurabilir *döngüleri*— diğer bir deyişle, bir nesne, ikinci bir nesneye başvurur, ikinci nesne bazı son nesnenin geri başvurduğu kadar üçüncü vb. nesnesini ifade eder. ilk nesne. Bir nesnenin başvuru sayısının sıfır olduğunda bir döngüsünde doğru nesneler silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [çözmek](../cppcx/platform-weakreference-class.md#resolve) nesnesi artık yok veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne, Canlı ancak türündedeğil`T`.  
-  
- Bir senaryoda `WeakReference` kullanılmalıdır olduğunda `this` işaretçi bir olay işleyicisi tanımlamak için kullanılan bir lambda ifadesinde yakalanan. Olay işleyicilerini tanımlar, ancak bir lambda, olay işleyicisi için kullanmak istediğiniz adlandırılmış yöntemleri kullanmanızı öneririz — ya da diğer bazı durumlarda döngü sayımı bir başvuru ayırmak varsa — kullanın `WeakReference`. Örnek buradadır:  
-  
-```  
-  
-using namespace Platform::Details;  
-using namespace Windows::UI::Xaml;  
-using namespace Windows::UI::Xaml::Input;  
-using namespace Windows::UI::Xaml::Controls;  
-  
-Class1::Class1()  
-{  
-    // Class1 has a reference to m_Page  
-    m_Page = ref new Page();  
-  
-    // m_Page will have a reference to this Class1  
-    // so create a weak reference to this  
-    WeakReference wr(this);  
-    m_Page->DoubleTapped += ref new DoubleTappedEventHandler(   
-        [wr](Object^ sender, DoubleTappedRoutedEventArgs^ args)  
-    {  
-       // Use the weak reference to get the object  
-       Class1^ c = wr.Resolve<Class1>();  
-       if (c != nullptr)  
-       {  
-           c->m_eventFired = true;  
-       }  
-       else  
-       {  
-           // Inform the event that this handler should be removed  
-           // from the subscriber list  
-           throw ref new DisconnectedException();  
-       }  
-    });   
-}  
-  
-}  
-```  
-  
- Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyicisi abone listeden kaldırmak neden olur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
 
+Başvuru türleri için başvuru sayımı alan hiçbir tür sistemindeki kurabilir *döngüleri*— diğer bir deyişle, bir nesne, ikinci bir nesneye başvurur, ikinci nesne bazı son nesnenin geri başvurduğu kadar üçüncü vb. nesnesini ifade eder. ilk nesne. Bir nesnenin başvuru sayısının sıfır olduğunda bir döngüsünde doğru nesneler silinemiyor. Bu sorun, C + gidermenize yardımcı olacak +/ CX sağlar [Platform::WeakReference sınıfı](../cppcx/platform-weakreference-class.md) sınıfı. A `WeakReference` nesnesi [çözmek](../cppcx/platform-weakreference-class.md#resolve) nesnesi artık yok veya oluşturur, null döndüren yöntemi bir [Platform::InvalidCastException](../cppcx/platform-invalidcastexception-class.md) nesne, Canlı ancak türündedeğil`T`.
+
+Bir senaryoda `WeakReference` kullanılmalıdır olduğunda `this` işaretçi bir olay işleyicisi tanımlamak için kullanılan bir lambda ifadesinde yakalanan. Olay işleyicilerini tanımlar, ancak bir lambda, olay işleyicisi için kullanmak istediğiniz adlandırılmış yöntemleri kullanmanızı öneririz — ya da diğer bazı durumlarda döngü sayımı bir başvuru ayırmak varsa — kullanın `WeakReference`. Örnek buradadır:
+
+```
+
+using namespace Platform::Details;
+using namespace Windows::UI::Xaml;
+using namespace Windows::UI::Xaml::Input;
+using namespace Windows::UI::Xaml::Controls;
+
+Class1::Class1()
+{
+    // Class1 has a reference to m_Page
+    m_Page = ref new Page();
+
+    // m_Page will have a reference to this Class1
+    // so create a weak reference to this
+    WeakReference wr(this);
+    m_Page->DoubleTapped += ref new DoubleTappedEventHandler(
+        [wr](Object^ sender, DoubleTappedRoutedEventArgs^ args)
+    {
+       // Use the weak reference to get the object
+       Class1^ c = wr.Resolve<Class1>();
+       if (c != nullptr)
+       {
+           c->m_eventFired = true;
+       }
+       else
+       {
+           // Inform the event that this handler should be removed
+           // from the subscriber list
+           throw ref new DisconnectedException();
+       }
+    });
+}
+
+}
+```
+
+Ne zaman bir olay işleyicisi oluşturur `DisconnectedException`, olay işleyicisi abone listeden kaldırmak neden olur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
 

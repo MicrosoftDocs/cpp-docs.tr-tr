@@ -34,12 +34,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96256f71a94f20f126f02b04511c57c831ad2a00
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 783225412b01430d1043dafd4761cb7432eaa1d7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32406647"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108325"
 ---
 # <a name="setprintfcountoutput"></a>_set_printf_count_output
 
@@ -55,15 +55,16 @@ int _set_printf_count_output(
 
 ### <a name="parameters"></a>Parametreler
 
-*etkinleştirme* etkinleştirmek için sıfır olmayan bir değer **%n** desteği, devre dışı bırakmak için 0 **%n** destekler.
+*Etkinleştirme*<br/>
+Etkinleştirmek için sıfır olmayan bir değer **%n** desteği devre dışı bırakmak için 0 **%n** destekler.
 
 ## <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
 
-Durumu **%n** destek bu işlevi çağrılmadan önce: sıfır olursa **%n** desteği etkindir, onu devre dışı bırakılmışsa 0.
+Durumunu **%n** desteği bu işlevi çağırmadan önce: sıfır olmayan if **%n** desteği etkindir, 0 devre dışı bırakıldı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Güvenlik nedenleriyle desteği **%n** biçim belirticisi varsayılan olarak devre dışıdır **printf** ve tüm türevleri. Varsa **%n** olarak karşılaşılan bir **printf** biçim belirtimi, varsayılan davranış olduğu açıklandığı gibi geçersiz parametre işleyicisi çağrılacak [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Çağırma **_set_printf_count_output** sıfır olmayan bağımsız değişkeniyle neden olacak **printf**-yorumlamaya ailesi işlevleri **%n** açıklandığı gibi [biçimi Belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
+Güvenlik nedenleriyle desteği **%n** biçim belirticisi varsayılan olarak devre dışıdır **printf** ve tüm çeşitlerinin. Varsa **%n** ile karşılaşılırsa bir **printf** biçim belirtimi, varsayılan davranışı açıklandığı gibi geçersiz parametre işleyicisini çağırır etmektir [Parameter Validation](../../c-runtime-library/parameter-validation.md). Çağırma **_set_printf_count_output** sıfır olmayan bir bağımsız değişkeni ile neden olacak **printf**-yorumlamak için ailesi işlevleri **%n** açıklandığı [biçimi Belirtim Sözdizimi: printf ve wprintf işlevleri](../../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -71,7 +72,7 @@ Güvenlik nedenleriyle desteği **%n** biçim belirticisi varsayılan olarak dev
 |-------------|---------------------|
 |**_set_printf_count_output**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

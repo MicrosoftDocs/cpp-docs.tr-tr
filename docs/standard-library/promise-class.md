@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::promise [C++], swap
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a1ddfd30a1e061426f0a19ac1118aa5ade1de17
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a56e188e581ea5d9dcafaa222ab4367e0b4b33fe
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958570"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100306"
 ---
 # <a name="promise-class"></a>promise Sınıfı
 
@@ -75,7 +75,7 @@ class promise;
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-`promise`
+*Promise*<br/>
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -107,7 +107,8 @@ promise& operator=(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* A `promise` nesne.
+*Diğer*<br/>
+A `promise` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -130,9 +131,11 @@ promise(promise&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* bellek ayırıcı. Bkz: [ \<ayırıcılar >](../standard-library/allocators-header.md) daha fazla bilgi için.
+*Al*<br/>
+Bellek ayırıcı Bkz: [ \<ayırıcılar >](../standard-library/allocators-header.md) daha fazla bilgi için.
 
-*Diğer* A `promise` nesne.
+*Diğer*<br/>
+A `promise` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -152,7 +155,8 @@ void set_exception(exception_ptr Exc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hariç tutulan* bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
+*Hariç tutulan*<br/>
+Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -172,7 +176,8 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Hariç tutulan* bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
+*Hariç tutulan*<br/>
+Bir [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) depolanan bu yöntem tarafından özel durum sonucu olarak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -195,7 +200,8 @@ void promise<void>::set_value();
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* sonuç olarak depolanacak değer.
+*VAL*<br/>
+Sonuç olarak depolanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -226,7 +232,8 @@ void promise<void>::set_value_at_thread_exit();
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* sonuç olarak depolanacak değer.
+*VAL*<br/>
+Sonuç olarak depolanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -254,7 +261,8 @@ void swap(promise& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* A `promise` nesne.
+*Diğer*<br/>
+A `promise` nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

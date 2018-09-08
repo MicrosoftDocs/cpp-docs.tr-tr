@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d50b53f9c06c5edbd159e7e2bac112f6f30432df
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 20566e34200b5c0e89b532d7096821d58a5f564f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954922"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103709"
 ---
 # <a name="queue-class"></a>queue Sınıfı
 
@@ -52,9 +52,11 @@ class queue
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* kuyrukta depolanacak öğe veri türü
+*Türü*<br/>
+Kuyrukta depolanacak öğe veri türü
 
-*Kapsayıcı* sıranın uygulamak için kullanılan temel alınan kapsayıcı türü.
+*Kapsayıcı*<br/>
+Sıranın uygulamak için kullanılan temel alınan kapsayıcı türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -331,7 +333,8 @@ void push(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* kuyruğun geri eklenen öğe.
+*VAL*<br/>
+Kuyruğun geri eklenen öğe.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -381,7 +384,8 @@ explicit queue(const container_type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* **const** kapsayıcı oluşturulan kuyruk olduğu kopyası olacak.
+*sağ*<br/>
+**Const** kapsayıcı oluşturulan kuyruk olduğu kopyası olacak.
 
 ### <a name="remarks"></a>Açıklamalar
 

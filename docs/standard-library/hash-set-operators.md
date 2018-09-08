@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 403d8e4e-0b3f-43fb-bc5a-8100c4f331c5
-ms.openlocfilehash: ecc6640dd41fcc6a275de10becf1d9c03128f562
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b9c6fe6b39b771b81b6508c10abd43c71774f9a7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966660"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108268"
 ---
 # <a name="lthashsetgt-operators"></a>&lt;hash_set&gt; işleçleri
 
@@ -36,9 +36,11 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_set`.
+*Sol*<br/>
+Bir nesne türü `hash_set`.
 
-*doğru* türünde bir nesne `hash_set`.
+*sağ*<br/>
+Bir nesne türü `hash_set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -102,9 +104,11 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_set`.
+*Sol*<br/>
+Bir nesne türü `hash_set`.
 
-*doğru* türünde bir nesne `hash_set`.
+*sağ*<br/>
+Bir nesne türü `hash_set`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -166,9 +170,11 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_multiset`.
+*Sol*<br/>
+Bir nesne türü `hash_multiset`.
 
-*doğru* türünde bir nesne `hash_multiset`.
+*sağ*<br/>
+Bir nesne türü `hash_multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -230,9 +236,11 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* türünde bir nesne `hash_multiset`.
+*Sol*<br/>
+Bir nesne türü `hash_multiset`.
 
-*doğru* türünde bir nesne `hash_multiset`.
+*sağ*<br/>
+Bir nesne türü `hash_multiset`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

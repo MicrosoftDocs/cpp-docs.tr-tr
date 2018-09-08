@@ -36,16 +36,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8aa84e5c032cefa49ef3a9d21d3bbfc2073d02e0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 254550acf94acb846826bc0efe76ef26753c54b8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32399744"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107597"
 ---
 # <a name="assert-asserte-assertexpr-macros"></a>_ASSERT, _ASSERTE, _ASSERT_EXPR makroları
 
-Bir ifade değerlendirme ve sonucu olduğunda hata ayıklama rapor oluşturmak **False** (yalnızca hata ayıklama sürümü).
+Bir ifadeyi değerlendirir ve sonucu olduğunda bir hata ayıklama raporunu oluşturur **False** (yalnızca hata ayıklama sürümü).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -58,35 +58,37 @@ _ASSERTE( booleanExpression );
 
 ### <a name="parameters"></a>Parametreler
 
-*booleanDeyimi* sıfır olmayan bir değer (true) veya 0 (false) (işaretçi ifadeleri dahil) bir skaler ifade.
+*booleanDeyimi*<br/>
+Skaler bir ifade (işaretçi ifadeleri dahil), sıfır olmayan (true) veya 0 (false) için değerlendirir.
 
-*İleti* rapor bir parçası olarak görüntülenecek geniş bir dize.
+*message*<br/>
+Raporun parçası görüntülenecek bir geniş dize.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** makrolar varsayımlar hata ayıklama işlemi sırasında denetleme temiz ve basit bir mekanizma ile bir uygulama sağlar. İçinde alınmalıdır gerekmediği için çok esnektir `#ifdef` olmasını engellemek için deyimleri adlı bir uygulama bir perakende yapı içinde. Bu esneklik kullanılarak elde edilir [_DEBUG](../../c-runtime-library/debug.md) makrosu. **_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** yalnızca ne zaman kullanılabilir **_DEBUG** derleme zamanında tanımlanır. Zaman **_DEBUG** olan tanımlı değilse, bu makroları çağrıları ön işleme sırasında kaldırılır.
+**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** makroları bir uygulama hata ayıklama işlemi sırasında varsayımlar denetimi temiz ve basit bir mekanizma sağlar. İçinde içine alınması gerekmez çünkü bunlar çok esnek `#ifdef` olmasını engellemek için ifadeleri adlı bir uygulama bir perakende yapı içinde. Bu esnekliğin kullanılarak elde edilir [_DEBUG](../../c-runtime-library/debug.md) makrosu. **_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** yalnızca ne zaman kullanılabilir **_DEBUG** derleme zamanında tanımlanır. Zaman **_DEBUG** olduğu tanımlı değilse, bu makroları için çağrılar ön işleme sırasında kaldırılır.
 
-**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** değerlendirmek kendi *booleanDeyimi* bağımsız değişkeni ve sonuç olduğunda **yanlış**(0), bir tanılama iletisi ve çağrı yazdırma [_CrtDbgReportW](crtdbgreport-crtdbgreportw.md) hata ayıklama rapor oluşturmak için. **_ASSERT** makrosu yazdırır basit bir tanılama iletisi **_ASSERTE** iletisinde başarısız ifade bir dize gösterimini içeren ve **_ASSERT_EXPR** içeren *ileti* tanılama iletisi dizesi. Bu makroları hiçbir şey yapma zaman *booleanDeyimi* için sıfır olmayan değerlendirir.
+**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** değerlendirmek, *booleanDeyimi* bağımsız değişkeni ve sonucu olduğunda **false**(0), bir tanılama iletisi ve çağrı yazdırma [_CrtDbgReportW](crtdbgreport-crtdbgreportw.md) hata ayıklama raporu oluşturmak için. **_ASSERT** makrosu basit bir tanılama iletisi yazdırır **_ASSERTE** iletide başarısız ifadesi bir dize gösterimini içerir ve **_ASSERT_EXPR** içerir *ileti* tanılama iletisi dizesi. Bu makrolar hiçbir şey yapma, *booleanDeyimi* için sıfır olmayan değerlendirir.
 
-**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** çağırma **_CrtDbgReportW**, geniş karakter olması tüm çıktı neden olur. **_ASSERTE** Unicode karakterler düzgün yazdırır *booleanDeyimi* ve **_ASSERT_EXPR** Unicode karakter yazdırır *ileti*.
+**_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** çağırma **_CrtDbgReportW**, geniş karakter olacak şekilde tüm çıktı neden olur. **_ASSERTE** Unicode karakterler düzgün yazdırır *booleanDeyimi* ve **_ASSERT_EXPR** Unicode karakter yazdırır *ileti*.
 
-Çünkü **_ASSERTE** makrosu başarısız ifade belirtir ve **_ASSERT_EXPR** sağlar oluşturulan rapora bir ileti belirtin, başvurma olmadan sorunu tanımlamak kullanıcıları etkinleştir Uygulama kaynak koduna. Ancak, bir dezavantajı her bulunduğunu *ileti* tarafından yazdırılan **_ASSERT_EXPR** ve tarafından değerlendirilen her ifade **_ASSERTE** çıkış (hata ayıklama sürümü) dahil Uygulamanızı bir dize sabiti olarak dosyası. Bu nedenle, çok sayıda varsa çağrıları yapılan **_ASSERT_EXPR** veya **_ASSERTE**, bu ifadeler, çıktı dosyanızın boyutunu önemli ölçüde artırabilir.
+Çünkü **_ASSERTE** makrosu, başarısız bir ifade belirtir ve **_ASSERT_EXPR** sağlar oluşturulan raporda bir ileti belirtin, bunlar başvuru olmadan sorunu tanımlamak kullanıcıları etkinleştirin Uygulama kaynak kodu. Ancak, bir dezavantajı, her var. *ileti* tarafından yazdırılan **_ASSERT_EXPR** ve her bir ifade tarafından değerlendirilen **_ASSERTE** çıkış (hata ayıklama sürümü) dahildir Dosya, uygulamanızın bir dize sabiti olarak. Bu nedenle, çok sayıda varsa çağrıları yapılan **_ASSERT_EXPR** veya **_ASSERTE**, bu ifadeler, çıktı dosyanızın boyutunu önemli ölçüde artırabilirsiniz.
 
-Aksi takdirde ile belirtilmedikçe [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleri, iletileri ayarına eşdeğer bir açılır iletişim kutusu görüntülenir:
+İle aksini belirtmediğiniz sürece [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleri, iletileri ayarına eşdeğer bir açılır iletişim kutusu görüntülenir:
 
 ```C
 _CrtSetReportMode(CRT_ASSERT, _CRTDBG_MODE_WNDW);
 ````
 
-**_CrtDbgReportW** hata ayıklama raporu oluşturur ve hedef veya geçerli rapor modu veya modları ve dosya için tanımlanan göre hedefler belirler **_CRT_ASSERT** rapor türü. Varsayılan olarak, onaylama işlemi hataları ve hataları bir hata ayıklama iletisi penceresine yönlendirilirsiniz. [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.
+**_CrtDbgReportW** hata ayıklama raporunu oluşturur ve kendi hedef veya hedefleri, geçerli rapor modunu veya modlarını ve dosya için tanımlı temel belirler **_CRT_ASSERT** rapor türü. Varsayılan olarak, onaylama hatalarını ve hata için bir hata ayıklama ileti penceresine yönlendirilirsiniz. [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevler her rapor türü için hedeflerini tanımlamak için kullanılır.
 
-Hedef bir hata ayıklama iletisi penceresi ve kullanıcı olduğunda tıklar **yeniden deneme** düğmesini **_CrtDbgReportW** 1, döndürür neden **_ASSERT_EXPR**, **_ ASSERT** ve **_ASSERTE** makroları tam zamanında (JIT) hata ayıklama etkin olması koşuluyla hata ayıklayıcısını başlatmak üzere.
+Hedef bir hata ayıklama ileti penceresiyle ve kullanıcı olduğunda tıkladığında **yeniden** düğmesi **_CrtDbgReportW** 1 döndürür neden **_ASSERT_EXPR**, **_ ASSERT** ve **_ASSERTE** makroların just-in-time (JIT) hata ayıklama etkin olması koşuluyla, hata ayıklayıcıyı başlatın.
 
-Raporlama işlemi hakkında daha fazla bilgi için bkz: [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) işlevi. Onaylama işlemi hataları giderme ve hata ayıklama bir hata işleme mekanizması olarak bu makroları kullanma hakkında daha fazla bilgi için bkz: [doğrulama ve raporlama makroları kullanarak](/visualstudio/debugger/macros-for-reporting).
+Raporlama işlemi hakkında daha fazla bilgi için bkz: [_CrtDbgReport, _CrtDbgReportW](crtdbgreport-crtdbgreportw.md) işlevi. Onaylama işlemi hataları çözme ve bu makrolar hata ayıklama bir hata işleme mekanizması olarak kullanma hakkında daha fazla bilgi için bkz. [doğrulama ve raporlama için makroları kullanma](/visualstudio/debugger/macros-for-reporting).
 
-Ek olarak **_ASSERT** makroları [assert](assert-macro-assert-wassert.md) makrosu, program mantığı doğrulamak için kullanılabilir. Bu makrosu hem hata ayıklama ve yayın sürümlerini kitaplıkları içinde kullanılabilir. [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) debug makroları de hata ayıklama raporu oluşturmak için kullanılabilir, ancak bu bir ifade değerlendirmez. **_RPT** makroları basit bir rapor oluşturur. **_RPTF** makroları oluşturulan rapora burada rapor makrosu çağrıldı kaynak dosyası ve satır numarası içerir. Geniş karakter Bu makroların sürümleri (**_RPTW**, **_RPTFW**). Geniş karakter dizeleri tüm dizesi parametreleri ve çıktı için kullanılan dışında geniş karakter sürümleri dar karakter sürümleri için aynıdır.
+Ek olarak **_ASSERT** makroları [assert](assert-macro-assert-wassert.md) makrosu, program mantığı doğrulamak için kullanılabilir. Bu makro, hem hata ayıklama ve yayın sürümlerinde kitaplıkları kullanılabilir. [_RPT, _RPTF](rpt-rptf-rptw-rptfw-macros.md) hata ayıklama makroları hata ayıklama raporunu oluşturmak için kullanılabilen aynı zamanda, ancak bir ifadeyi değerlendirmez. **_RPT** makroları, basit bir rapor oluşturur. **_RPTF** makroları, oluşturulan raporda rapor makroyu burada çağrıldı kaynak dosya ve satır numarası içerir. Bu makroların geniş karakter sürümleri kullanılabilir (**_RPTW**, **_RPTFW**). Geniş karakter sürümleri, geniş karakter dizeleri, tüm dize parametreleri ve çıkış için kullanılan dışında dar karakter sürümleri için aynıdır.
 
-Ancak **_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** makrolar ve ekleyerek kullanılabilir \<crtdbg.h >, uygulama ile hata ayıklama bağlamanız gerekir C çalışma zamanı kitaplığı sürümü zaman **_DEBUG** bu makroları diğer çalışma zamanı işlevleri çağırmak için tanımlanır.
+Ancak **_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** makrolar ve ekleyerek kullanılabilir \<crtdbg.h >, uygulama ile hata ayıklama bağlamanız gerekir C çalışma zamanı kitaplık sürümünü olduğunda **_DEBUG** Bu makrolar diğer çalışma zamanı işlevleri çağırmak için tanımlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -96,7 +98,7 @@ Ancak **_ASSERT_EXPR**, **_ASSERT** ve **_ASSERTE** makrolar ve ekleyerek kullan
 
 ## <a name="example"></a>Örnek
 
-Bu programda çağrıları yapılan **_ASSERT** ve **_ASSERTE** koşulu test etmek için makroları `string1 == string2`. Koşul başarısız olursa, bu makroları bir tanılama iletisi yazdırın. **_RPT** ve **_RPTF** makroları grup da kullandı bu programda alternatif olarak **printf** işlevi.
+Bu programda çağrıları yapılan **_ASSERT** ve **_ASSERTE** koşulunu test etmek için makroları `string1 == string2`. Koşul başarısız olursa, bu makrolar bir tanılama iletisi yazdırın. **_RPT** ve **_RPTF** makroları grup da kullandı bu programda, alternatif olarak **printf** işlevi.
 
 ```C
 // crt_ASSERT_macro.c

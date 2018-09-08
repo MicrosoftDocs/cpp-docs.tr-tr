@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c655ea4adec0364f35d0b43c637eae9c270cdb0e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 652937aba7b1c5626b617cec4e80761a22b55066
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962071"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109829"
 ---
 # <a name="ispod-class"></a>is_pod Sınıfı
 
@@ -37,7 +37,8 @@ struct is_pod;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* Sorgulanacak tür.
+*T*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

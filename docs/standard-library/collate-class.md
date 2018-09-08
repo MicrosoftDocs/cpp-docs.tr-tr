@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 604d8a2082d609e85e4c55f1d4ae3b6d15c4ce22
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 054246ce78601abf61f36d070500845275b61761
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966465"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110379"
 ---
 # <a name="collate-class"></a>collate Sınıfı
 
@@ -52,7 +52,8 @@ class collate : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki karakterleri kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -111,15 +112,17 @@ public:
 
 protected:
     collate(
- const char* _Locname,
+const char* _Locname,
     size_t _Refs = 0);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
-*_Locname* yerel ayar adı.
+*_Locname*<br/>
+Yerel ayar adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -146,13 +149,17 @@ int compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* Karşılaştırılacak ilk dizideki ilk öğesinin işaretçisi.
+*first1*<br/>
+Karşılaştırılacak ilk dizideki ilk öğesinin işaretçisi.
 
-*last1* Karşılaştırılacak ilk sıradaki son öğesinin işaretçisi.
+*last1*<br/>
+Karşılaştırılacak Birinci sıradaki son öğesinin işaretçisi.
 
-*first2* Karşılaştırılacak ikinci dizideki ilk öğesinin işaretçisi.
+*first2*<br/>
+Karşılaştırılacak ikinci dizideki ilk öğesinin işaretçisi.
 
-*Soyadı2* Karşılaştırılacak ikinci dizideki son öğesinin işaretçisi.
+*Soyadı2*<br/>
+Karşılaştırılacak ikinci dizideki son öğesinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -208,13 +215,17 @@ virtual int do_compare(const CharType* first1,
 
 ### <a name="parameters"></a>Parametreler
 
-*first1* Karşılaştırılacak ilk dizideki ilk öğesinin işaretçisi.
+*first1*<br/>
+Karşılaştırılacak ilk dizideki ilk öğesinin işaretçisi.
 
-*last1* Karşılaştırılacak ilk sıradaki son öğesinin işaretçisi.
+*last1*<br/>
+Karşılaştırılacak Birinci sıradaki son öğesinin işaretçisi.
 
-*first2* Karşılaştırılacak ikinci dizideki ilk öğesinin işaretçisi.
+*first2*<br/>
+Karşılaştırılacak ikinci dizideki ilk öğesinin işaretçisi.
 
-*Soyadı2* Karşılaştırılacak ikinci dizideki son öğesinin işaretçisi.
+*Soyadı2*<br/>
+Karşılaştırılacak ikinci dizideki son öğesinin işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -244,9 +255,11 @@ virtual long do_hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* belirlenmesi için ayarlanmış olan değer dizideki ilk karaktere bir işaretçi olduğu.
+*ilk*<br/>
+Belirlenmesi için ayarlanmış olan değer dizideki ilk karaktere bir işaretçi var.
 
-*Son* ayarlanmış olan değer dizideki son karakter belirlenecek işaretçisidir.
+*Son*<br/>
+Bir özelliği olan değer dizideki son karakter belirlenecek işaretçisidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -270,9 +283,11 @@ virtual string_type do_transform(const CharType* first, const CharType* last) co
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürülecek dizideki ilk karaktere bir işaretçi.
+*ilk*<br/>
+Dönüştürülecek dizideki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek dizideki son karakter işaretçisi.
+*Son*<br/>
+Dönüştürülecek dizideki son karakter işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -296,9 +311,11 @@ long hash(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* belirlenmesi için ayarlanmış olan değer dizideki ilk karaktere bir işaretçi olduğu.
+*ilk*<br/>
+Belirlenmesi için ayarlanmış olan değer dizideki ilk karaktere bir işaretçi var.
 
-*Son* ayarlanmış olan değer dizideki son karakter belirlenecek işaretçisidir.
+*Son*<br/>
+Bir özelliği olan değer dizideki son karakter belirlenecek işaretçisidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -364,9 +381,11 @@ string_type transform(const CharType* first, const CharType* last) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* dönüştürülecek dizideki ilk karaktere bir işaretçi.
+*ilk*<br/>
+Dönüştürülecek dizideki ilk karaktere bir işaretçi.
 
-*Son* dönüştürülecek dizideki son karakter işaretçisi.
+*Son*<br/>
+Dönüştürülecek dizideki son karakter işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

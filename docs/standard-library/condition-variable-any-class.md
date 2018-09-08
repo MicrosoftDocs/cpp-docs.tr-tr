@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::condition_variable_any::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 56082c63ccc64e117d9962ff35dddc01969f403b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9acd5abc941c3cc3ab2f1c22486298d7cc7da16c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959238"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106970"
 ---
 # <a name="conditionvariableany-class"></a>condition_variable_any Sınıfı
 
@@ -111,9 +111,11 @@ void wait(Lock& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* A `mutex` herhangi bir türde nesne.
+*Lck*<br/>
+A `mutex` herhangi bir türde nesne.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -140,11 +142,14 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* A `mutex` herhangi bir türde nesne.
+*Lck*<br/>
+A `mutex` herhangi bir türde nesne.
 
-*Rel_time* A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
+*Rel_time*<br/>
+A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -192,11 +197,14 @@ void wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* mutex nesnesi.
+*Lck*<br/>
+Mutex nesnesi.
 
-*Abs_time* A [chrono::time_point](../standard-library/time-point-class.md) nesne.
+*Abs_time*<br/>
+A [chrono::time_point](../standard-library/time-point-class.md) nesne.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

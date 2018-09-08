@@ -32,16 +32,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc6dfd832d18dbabc1ebc10aec252cc8afe15346
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 35a1ae1a27b08db14673b125ecbc2978fd4738a3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32402523"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100489"
 ---
 # <a name="free"></a>serbest
 
-Kaldırır veya bir bellek bloğu boşaltır.
+Kaldırır veya bir bellek bloğunu serbest bırakır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,19 +53,20 @@ void free(
 
 ### <a name="parameters"></a>Parametreler
 
-*memblock* boşaltılacak bellek bloğu önceden ayrılmış.
+*memblock*<br/>
+Daha önce ayrılmış bellek bloğu serbest bırakılacak.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Ücretsiz** işlevi bir bellek bloğu kaldırır (*memblock*) önceden ayrılmış bir çağrı tarafından **calloc**, **malloc**, veya **realloc**. Boşaltılmış bayt sayısı bloğu ayrıldı, istenen bayt sayısı eşdeğerdir (veya yeniden tahsis edilmesini durumunda **realloc**). Varsa *memblock* olan **NULL**, işaretçi yok sayılır ve **ücretsiz** hemen döndürür. Geçersiz bir işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğu için bir işaretçi **calloc**, **malloc**, veya **realloc**) sonraki ayırma isteklerini etkileyebilir ve hatalara neden olabilir.
+**Ücretsiz** işlevi bir bellek bloğunu kaldırır (*memblock*) önceden ayrılmış bir çağrı tarafından **calloc**, **malloc**, veya **realloc**. Serbest bırakılan bayt sayısı bloğu ayrıldı, istenen bayt sayısını eşdeğerdir (veya yeniden tahsis, durumunda **realloc**). Varsa *memblock* olduğu **NULL**, işaretçi yok sayılır ve **ücretsiz** hemen döndürür. Geçersiz işaretçi serbest bırakma girişimi (tarafından ayrılmamış bir bellek bloğuna işaretçi **calloc**, **malloc**, veya **realloc**) sonraki ayırma isteklerini etkileyebilir ve hataya neden olur.
 
-Bellek boşaltma içinde bir hata oluşursa, **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için bkz: [errno, _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
+Bellek serbest bırakma hata oluşması durumunda **errno** bilgilerle hata işletim sisteminden yapısı üzerinde ayarlanır. Daha fazla bilgi için [errno _doserrno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-Bir bellek bloğu serbest sonra [_heapmin](heapmin.md) kullanılmayan bölgeler birleştirmesi ve işletim sistemine geri serbest öbek boş bellek miktarı en aza indirir. İşletim sistemine serbest bırakılmış belleği serbest havuza geri ve yeniden ayırma için kullanılamıyor.
+Bir bellek bloğunu serbest sonra [_heapmin](heapmin.md) kullanılmayan bölgeleri birleşim ve işletim sistemine bırakmadan yığın boş bellek miktarı en aza indirir. İşletim sistemi tarafından serbest bırakılmış bellek serbest havuza geri ve yeniden ayırma için kullanılabilir.
 
-Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağlandığında **ücretsiz** çözümler [_free_dbg](free-dbg.md). Öbek hata ayıklama işlemi sırasında nasıl yönetilir hakkında daha fazla bilgi için bkz: [CRT hata ayıklama yığını](/visualstudio/debugger/crt-debug-heap-details).
+Uygulamayı hata ayıklama sürümü C çalışma zamanı kitaplıkları ile ilişkilendirildiğinde **ücretsiz** çözümler [_free_dbg](free-dbg.md). Yığının hata ayıklama işlemi sırasında nasıl yönetildiği hakkında daha fazla bilgi için bkz. [CRT hata ayıklama yığın](/visualstudio/debugger/crt-debug-heap-details).
 
-**Ücretsiz** işaretlenmiş `__declspec(noalias)`, işlev genel değişkenler değiştirmemeniz garanti anlamına gelir. Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md).
+**Ücretsiz** işaretlenmiş `__declspec(noalias)`, işlevin genel değişkenleri garanti anlamına gelir. Daha fazla bilgi için [noalias](../../cpp/noalias.md).
 
 İle ayrılan belleği boşaltmak için [_malloca](malloca.md), kullanın [_freea](freea.md).
 
@@ -75,11 +76,11 @@ Uygulama hata ayıklama sürümü C çalışma zamanı kitaplıkları ile bağla
 |--------------|---------------------|
 |**free**|\<stdlib.h > ve \<malloc.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [malloc](malloc.md).
+Örneğin bakın [malloc](malloc.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

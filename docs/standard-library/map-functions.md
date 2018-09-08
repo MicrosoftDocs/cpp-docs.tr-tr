@@ -7,12 +7,12 @@ f1_keywords:
 - map/std::swap (map)
 - map/std::swap (multimap)
 ms.assetid: 7cb3d1a5-7add-4726-a73f-61927eafd466
-ms.openlocfilehash: 3c6cb7d0308e4bafc531fe0baf0c5d666228c3ec
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 36af7eb87f777686a0a83fab98032ce36e75c906
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966374"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102531"
 ---
 # <a name="ltmapgt-functions"></a>&lt;Harita&gt; işlevleri
 
@@ -33,9 +33,11 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan eşlemesi veya öğeleri harita öğelerle ilişkili harita *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan eşlemesi veya öğeleri harita öğelerle ilişkili harita *sol*.
 
-*Sol* öğeleri harita öğelerle ilişkili harita *doğru*.
+*Sol*<br/>
+Öğeleri olan harita öğelerle için harita *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -58,9 +60,11 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap *sol*.
 
-*Sol* öğeleri olan çoklu eşlem olanlar değiştirilecek multimap *doğru*.
+*Sol*<br/>
+Öğeleri olan çoklu eşlem olanlar değiştirilecek multimap *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 

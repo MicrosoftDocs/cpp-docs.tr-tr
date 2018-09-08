@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::make_unchecked_array_iterator [C++]
 - std::next [C++]
 - std::prev [C++]
-ms.openlocfilehash: 995aa846af4642070150f2dd41d4bf6463f46ee8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d14bba0e38e49145ccd7d0078f4bbfd731e08827
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964471"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110431"
 ---
 # <a name="ltiteratorgt-functions"></a>&lt;Yineleyici&gt; işlevleri
 
@@ -64,9 +64,11 @@ void advance(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt* artırılacak ve bir giriş yineleyici için gereksinimleri karşılaması gereken yineleyici.
+*InIt*<br/>
+Artırılacak ve bir girişi yineleyicisinin gereksinimleri karşılaması gereken yineleyici.
 
-*Kapalı* yineleyicinin fark türüne dönüştürülebilir ve yineleyici konumunun olduğundan yükseltileceği artış sayısını belirten bir tamsayı türü.
+*Kapalı*<br/>
+Yineleyicinin fark türüne dönüştürülebilir ve yineleyici konumunun yükseltileceği artış sayısını belirten integral türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -134,7 +136,8 @@ back_insert_iterator<Container> back_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont* içine geri ekleme yürütülecek kapsayıcısı.
+*_Cont*<br/>
+İçine geri ekleme yürütülecek kapsayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -172,9 +175,9 @@ int main( )
 
    // Insertions can be done with template function
    back_insert_iterator<vector<int> > backiter ( vec );
- *backiter = 30;
+*backiter = 30;
    backiter++;
- *backiter = 40;
+*backiter = 40;
 
    // Alternatively, insertions can be done with the
    // back_insert_iterator member function
@@ -212,9 +215,11 @@ Ty *begin(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*sürekli teslim* bir kapsayıcı.
+*devamı*<br/>
+Bir kapsayıcı.
 
-*dizi* türü nesnelerin dizisi `Ty`.
+*Dizi*<br/>
+Bir dizi türünde nesne `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -305,7 +310,8 @@ auto cbegin(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*sürekli teslim* kapsayıcı ya da initializer_list.
+*devamı*<br/>
+Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -337,7 +343,8 @@ auto cend(const Container& cont)
 
 ### <a name="parameters"></a>Parametreler
 
-*sürekli teslim* kapsayıcı ya da initializer_list.
+*devamı*<br/>
+Bir kapsayıcı ya da initializer_list.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -368,9 +375,11 @@ typename iterator_traits<InputIterator>::difference_type distance(InputIterator 
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* olan ikinci uzaklıktır belirlenecek birinci yineleyicisi.
+*ilk*<br/>
+Belirlenecek olan ikinci mesafe olan ilk yineleyicisi.
 
-*Son* , ilk uzaklığı olan belirlenecek ikinci yineleyicisi.
+*Son*<br/>
+İlk uzaklığı belirlenecek olan ikinci yineleyicisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -447,9 +456,11 @@ Ty *end(Ty (& array)[Size]);
 
 ### <a name="parameters"></a>Parametreler
 
-*sürekli teslim* bir kapsayıcı.
+*devamı*<br/>
+Bir kapsayıcı.
 
-*dizi* türü nesnelerin dizisi `Ty`.
+*Dizi*<br/>
+Bir dizi türünde nesne `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -472,7 +483,8 @@ front_insert_iterator<Container> front_inserter(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont* olan ön öğeye sahip kapsayıcı nesnesi eklenir.
+*_Cont*<br/>
+Olan ön öğeye sahip kapsayıcı nesnesi eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -512,7 +524,7 @@ int main( )
 
    // Using the template function to insert an element
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 100;
+*Iter = 100;
 
    // Alternatively, you may use the front_insert member function
    front_inserter ( L ) = 200;
@@ -526,9 +538,9 @@ int main( )
 
 ```Output
 The list L is:
- ( -1 0 1 2 3 4 5 6 7 8 ).
+( -1 0 1 2 3 4 5 6 7 8 ).
 After the front insertions, the list L is:
- ( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
+( 200 100 -1 0 1 2 3 4 5 6 7 8 ).
 ```
 
 ## <a name="inserter"></a>  inserter
@@ -545,9 +557,11 @@ inserter(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont* eklenecek yeni öğe için olan kapsayıcı.
+*_Cont*<br/>
+Yeni öğeleri eklenecek olan kapsayıcı.
 
-*_Where* ekleme noktasını bulmak için bir yineleyici.
+*_Where*<br/>
+Ekleme noktasını bulmak için bir yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -581,7 +595,7 @@ int main( )
 
    // Using the template version to insert an element
    insert_iterator<list <int> > Iter( L, L.begin ( ) );
- *Iter = 1;
+*Iter = 1;
 
    // Alternatively, using the member function to insert an element
    inserter ( L, L.end ( ) ) = 500;
@@ -595,9 +609,9 @@ int main( )
 
 ```Output
 The list L is:
- ( 20 30 40 ).
+( 20 30 40 ).
 After the insertions, the list L is:
- ( 1 20 30 40 500 ).
+( 1 20 30 40 500 ).
 ```
 
 ## <a name="make_checked_array_iterator"></a>  make_checked_array_iterator
@@ -611,18 +625,21 @@ Oluşturur bir [checked_array_iterator](../standard-library/checked-array-iterat
 template <class Iter>
 checked_array_iterator<Iter>
     make_checked_array_iterator(
- Iter Ptr,
+Iter Ptr,
     size_t Size,
     size_t Index = 0);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* hedef dizisine bir işaretçi.
+*PTR*<br/>
+Hedef dizi için işaretçi.
 
-*Boyutu* hedef dizinin boyutu.
+*Boyutu*<br/>
+Hedef dizinin boyutu.
 
-*Dizin* diziye isteğe bağlı dizin.
+*Index*<br/>
+Diziye isteğe bağlı dizin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -704,7 +721,8 @@ make_move_iterator(const Iterator& _It);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Bt* yeni depolanmış yineleyiciyi yineleyici taşıyın.
+*_Bt*<br/>
+Yeni taşıma yineleyicisi depolanan yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -725,7 +743,8 @@ unchecked_array_iterator<Iter>
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* hedef dizisine bir işaretçi.
+*PTR*<br/>
+Hedef dizi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -802,9 +821,11 @@ InputIterator next(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* geçerli konumu.
+*ilk*<br/>
+Geçerli konumu.
 
-*_Off* yineleme sayısı.
+*_Off*<br/>
+Kaç kez yinelemek için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -827,9 +848,11 @@ BidirectionalIterator prev(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* geçerli konumu.
+*ilk*<br/>
+Geçerli konumu.
 
-*_Off* yineleme sayısı.
+*_Off*<br/>
+Kaç kez yinelemek için.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -31,12 +31,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80cb3dd5d60665fbfb510fb2fddf94f17ef9f171
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 7fc38fe11fa267fe4f14d149d883da4ad5ec02e0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963800"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100760"
 ---
 # <a name="locale-class"></a>locale Sınıfı
 
@@ -301,7 +301,8 @@ locale combine(const locale& Loc) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Loc* modeli hedef yerel ayara eklenecek içeren yerel ayar.
+*LOC*<br/>
+Yerel ayar modeli hedef yerel ayara eklenecek içeren.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -369,7 +370,8 @@ static locale global(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Loc* program tarafından varsayılan yerel ayar olarak kullanılacak yerel ayar.
+*LOC*<br/>
+Program tarafından varsayılan yerel ayar olarak kullanılacak yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -436,15 +438,20 @@ locale(const locale& Loc, const Facet* Fac);
 
 ### <a name="parameters"></a>Parametreler
 
-*Locname* bir yerel ayar adı.
+*Locname*<br/>
+Bir yerel ayar adı.
 
-*Loc* yeni yerel oluştururken kopyalanacak bir yerel ayar.
+*LOC*<br/>
+Yeni yerel oluştururken kopyalanacak bir yerel ayar.
 
-*Diğer* kendisinden bir kategori seçmek bir yerel ayar.
+*Diğer*<br/>
+Bir kategori seçmek için bir yerel ayar.
 
-*Cat* kategori oluşturulmuş bir yerel ayar yerine kullanılacak.
+*Cat*<br/>
+Oluşturulan yerel ayara atanması kategorisi.
 
-*Fac* oluşturulmuş bir yerel ayar yerine kullanılacak model.
+*Fac*<br/>
+İçinde oluşturulan yerel ayar yerine kullanılacak model.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -555,7 +562,8 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir eşitsizlik için test edilecek gezinin.
+*sağ*<br/>
+Bir eşitsizlik için test edilecek gezinin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -600,9 +608,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252) and
- loc2 (German_Germany.1252) are equal.
+loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252) and
- loc3 (English_United States.1252) are not equal.
+loc3 (English_United States.1252) are not equal.
 ```
 
 ## <a name="op_call"></a>  Locale:: operator()
@@ -618,9 +626,11 @@ bool operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* sol dize.
+*Sol*<br/>
+Sol dize.
 
-*doğru* doğru dize.
+*sağ*<br/>
+Doğru dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -685,7 +695,8 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir eşitlik için test edilecek gezinin.
+*sağ*<br/>
+Bir eşitlik için test edilecek gezinin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -734,9 +745,9 @@ int main( )
 
 ```Output
 locales loc1 (German_Germany.1252)
- and loc2 (German_Germany.1252) are equal.
+and loc2 (German_Germany.1252) are equal.
 locales loc1 (German_Germany.1252)
- and loc3 (English_United States.1252) are not equal.
+and loc3 (English_United States.1252) are not equal.
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

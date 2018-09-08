@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2fc6fe93b3c7b798a53f6989d95e83c3be4b022
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2cb6364a9f1cb74f9a002e37c278f3686b9916ca
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959826"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110129"
 ---
 # <a name="numget-class"></a>num_get Sınıfı
 
@@ -44,9 +44,11 @@ class num_get : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-*Inputıterator* türü yineleyici sayısal alma işlevlerinin kendi girişlerini okuyacağı.
+*Inputıterator*<br/>
+Sayısal alma işlevlerinin kendi girişlerini okuyacağı yineleyicinin türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -175,15 +177,20 @@ virtual iter_type do_get(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* sayı okunacak karakter aralığı başlangıcı.
+*ilk*<br/>
+Sayı okunacak karakter aralığı başlangıcı.
 
-*Son* aralığın sayı okunacak karakter.
+*Son*<br/>
+Sayı okunacak karakter aralığı sonu.
 
-*_Iosbase* [ios_base](../standard-library/ios-base-class.md) olan bayrakları dönüştürme tarafından kullanılır.
+*_Iosbase*<br/>
+[İos_base](../standard-library/ios-base-class.md) olan bayrakları dönüştürme tarafından kullanılır.
 
-*Duru_m* hangi failbit durumuna (bkz [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) başarısızlık durumunda eklenir.
+*Duru_m*<br/>
+Hangi failbit durumuna (bkz [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) başarısızlık durumunda eklenir.
 
-*VAL* okundu değeri.
+*VAL*<br/>
+Değer okundu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -417,15 +424,20 @@ iter_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* sayı okunacak karakter aralığı başlangıcı.
+*ilk*<br/>
+Sayı okunacak karakter aralığı başlangıcı.
 
-*Son* aralığın sayı okunacak karakter.
+*Son*<br/>
+Sayı okunacak karakter aralığı sonu.
 
-*_Iosbase* [ios_base](../standard-library/ios-base-class.md) olan bayrakları dönüştürme tarafından kullanılır.
+*_Iosbase*<br/>
+[İos_base](../standard-library/ios-base-class.md) olan bayrakları dönüştürme tarafından kullanılır.
 
-*Duru_m* hangi failbit durumuna (bkz [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) başarısızlık durumunda eklenir.
+*Duru_m*<br/>
+Hangi failbit durumuna (bkz [ios_base::iostate](../standard-library/ios-base-class.md#iostate)) başarısızlık durumunda eklenir.
 
-*VAL* okundu değeri.
+*VAL*<br/>
+Değer okundu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -571,7 +583,8 @@ explicit num_get(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 

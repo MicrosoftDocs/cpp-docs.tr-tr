@@ -1,5 +1,5 @@
 ---
-title: -doc (işlem belgesi açıklamaları) (C/C++) | Microsoft Docs
+title: -doc (işlem belgeleri açıklamaları) (C/C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,49 +21,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 899ff6b774c365ce9df3019ef5ba6d08d0d7b93d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ee09b3fe61c86015d8dc7464ef9925419fc745d9
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371287"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100346"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc (İşlem Belgeleri Açıklamaları) (C/C++)
-Kaynak kodu dosyaları ve belge açıklamaları olan her kaynak kodu dosyasının bir .xdc dosyası oluşturmak için işlem belgesi açıklamaları derleyiciye neden olur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/doc[name]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `name`  
- Derleyici oluşturacak .xdc dosyasının adı. Yalnızca bir .cpp dosya derlemede geçirildiğinde geçerli.  
-  
-## <a name="remarks"></a>Açıklamalar  
- .Xdc dosyaları xdcmake.exe ile bir .xml dosyasına işlenir. Daha fazla bilgi için bkz: [XDCMake başvurusu](../../ide/xdcmake-reference.md).  
-  
- Belge açıklamaları için kaynak kodu dosyaları ekleyebilirsiniz. Daha fazla bilgi için bkz: [belge açıklamaları için önerilen etiketler](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md).  
-  
- IntelliSense ile oluşturulmuş .xml dosyasını kullanmak için destek ve .xml dosyasını yerleştirmek istediğiniz derleme derlemeyle aynı dizinde aynıdır .xml dosyasının dosya adını olun. Visual Studio projesini derleme başvurulduğunda .xml dosyası da bulunur. Daha fazla bilgi için bkz: [kullanarak IntelliSense](/visualstudio/ide/using-intellisense) ve [XML kodu açıklamalarını sağlama](/visualstudio/ide/supplying-xml-code-comments).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
-  
-3.  Genişletme **C/C++** düğümü.  
-  
-4.  Seçin **çıktı dosyaları** özellik sayfası.  
-  
-5.  Değiştirme **XML belge dosyalarını oluşturmak** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GenerateXMLDocumentationFiles%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+Derleyicinin işlem belgeleri açıklamaları için kaynak kodu dosyalarında ve belge açıklamaları olan her kaynak kodu dosyası için bir .xdc dosyasını oluşturmak için neden olur.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/ doc**[*adı*]
+
+## <a name="arguments"></a>Arguments
+
+*Adı*<br/>
+Derleyici oluşturacak .xdc dosyasının adı. Yalnızca bir .cpp dosyası derlemede geçirildiğinde geçerlidir.
+
+## <a name="remarks"></a>Açıklamalar
+
+.Xdc dosyalarının bir .xml dosyasına xdcmake.exe'yi ile işlenir. Daha fazla bilgi için [XDCMake başvurusu](../../ide/xdcmake-reference.md).
+
+Belge açıklamaları için kaynak kod dosyalarınızı ekleyebilirsiniz. Daha fazla bilgi için [belge açıklamaları için önerilen etiketler](../../ide/recommended-tags-for-documentation-comments-visual-cpp.md).
+
+IntelliSense ile oluşturulan .xml dosyasını kullanmak için destek ve .xml dosyasını yerleştirmek istediğiniz derleme ile aynı derleme olarak aynı dizinde olduğu .xml dosyasının dosya adını olun. Visual Studio projesinde derlemeye başvurulduğundan, .xml dosyasını da bulunur. Daha fazla bilgi için [IntelliSense kullanarak](/visualstudio/ide/using-intellisense) ve [XML kodu açıklamalarını sağlama](/visualstudio/ide/supplying-xml-code-comments).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
+
+1. Değiştirme **XML belge dosyaları oluştur** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GenerateXMLDocumentationFiles%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

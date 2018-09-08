@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::shared_future [C++], wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f27162b1dfc96b4797184b3fefc1ad8ecc464f55
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c3f59bcb792d17f031b7a8ce7363158630d87506
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955000"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100786"
 ---
 # <a name="sharedfuture-class"></a>shared_future Sınıfı
 
@@ -115,7 +115,8 @@ shared_future& operator=(const shared_future& Right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sağ* A `shared_future` nesne.
+*sağ*<br/>
+A `shared_future` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -140,7 +141,8 @@ shared_future(const shared_future& Right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sağ* A [gelecekteki](../standard-library/future-class.md) veya `shared_future` nesne.
+*sağ*<br/>
+A [gelecekteki](../standard-library/future-class.md) veya `shared_future` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -186,7 +188,8 @@ future_status wait_for(
 
 ### <a name="parameters"></a>Parametreler
 
-*Rel_time* A [chrono::duration](../standard-library/duration-class.md) maksimum zaman aralığını belirten bir nesne, iş parçacığını engeller.
+*Rel_time*<br/>
+A [chrono::duration](../standard-library/duration-class.md) maksimum zaman aralığını belirten bir nesne, iş parçacığını engeller.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -208,7 +211,8 @@ future_status wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*Abs_time* A [chrono::time_point](../standard-library/time-point-class.md) nesnesini geçmesi iş parçacığını engellemesini bir süreyi belirtir.
+*Abs_time*<br/>
+A [chrono::time_point](../standard-library/time-point-class.md) nesnesini geçmesi iş parçacığını engellemesini bir süreyi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

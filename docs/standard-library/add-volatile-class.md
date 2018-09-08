@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8775c681954799e2239da5ad429f9f8131ca25b1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 39740894e9422c2aec90c3598b0e45965e8ddba7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958896"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100747"
 ---
 # <a name="addvolatile-class"></a>add_volatile Sınıfı
 
@@ -40,7 +40,8 @@ using add_volatile_t = typename add_volatile<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* değiştirilecek tür.
+*T*<br/>
+Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

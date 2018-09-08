@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5092107cc1af6327c5ab7d6e08f373f88dd56711
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 74b230aca540f03bf8c9e94fe65ede3ac4ae8681
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959251"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102791"
 ---
 # <a name="chisquareddistribution-class"></a>chi_squared_distribution Sınıfı
 
@@ -76,9 +76,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Tekdüzen rastgele sayı üretici altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -243,9 +245,11 @@ explicit chi_squared_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*n* `n` dağıtım parametresi.
+*n*<br/>
+`n` Dağıtım parametresi.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -272,9 +276,11 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*n* `n` dağıtım parametresi.
+*n*<br/>
+`n` Dağıtım parametresi.
 
-*doğru* `param_type` için karşılaştırılacak nesne.
+*sağ*<br/>
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

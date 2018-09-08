@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e709ce37d60281bbc56a0e8ecf3cc7eafef5b0ee
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 4b6a9323a75b18349b0967259ec89dbabd46d88b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207617"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108440"
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator Sınıfı
 
@@ -40,7 +40,8 @@ class front_insert_iterator;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapsayıcı* kapsayıcı türü olan öğeler tarafından ekleneceği ön bir `front_insert_iterator`.
+*Kapsayıcı*<br/>
+Kapsayıcı türü olan öğeler tarafından ekleneceği ön bir `front_insert_iterator`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -125,7 +126,8 @@ explicit front_insert_iterator(Container& _Cont);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Cont* kapsayıcı nesnede `front_insert_iterator` öğeleri eklemektir.
+*_Cont*<br/>
+Kapsayıcı nesnede `front_insert_iterator` öğeleri eklemektir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -162,7 +164,7 @@ int main( )
 
    // Alternatively, one may use the template function
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 30;
+*Iter = 30;
 
    cout << "After the front insertions, the list L is:\n ( ";
    for ( L_Iter = L.begin( ) ; L_Iter != L.end( ); L_Iter++)
@@ -171,9 +173,9 @@ int main( )
 }
 \* Output:
 The list L is:
- ( -2 0 2 4 6 8 10 12 14 16 ).
+( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
- ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
+( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
 *\
 ```
 
@@ -220,7 +222,7 @@ int main( )
    cout << ")." << endl;
 
    front_insert_iterator< list < int> > Iter(L);
- *Iter = 20;
+*Iter = 20;
 
    // Alternatively, you may use
    front_inserter ( L ) = 30;
@@ -232,9 +234,9 @@ int main( )
 }
 \* Output:
 The list L is:
- ( -2 0 2 4 6 8 10 12 14 16 ).
+( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
- ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
+( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
 *\
 ```
 
@@ -271,11 +273,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
- *iter = 10;
+*iter = 10;
    iter++;
- *iter = 20;
+*iter = 20;
    iter++;
- *iter = 30;
+*iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -301,7 +303,8 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* kapsayıcıya atanacak değer.
+*VAL*<br/>
+Kapsayıcıya atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -332,11 +335,11 @@ int main( )
 
    list<int> L1;
    front_insert_iterator<list<int> > iter ( L1 );
- *iter = 10;
+*iter = 10;
    iter++;
- *iter = 20;
+*iter = 20;
    iter++;
- *iter = 30;
+*iter = 30;
    iter++;
 
    list <int>::iterator vIter;
@@ -373,9 +376,9 @@ int main( )
 
    list<int> L;
    front_insert_iterator<list<int> > fiivIter( L );
- *fiivIter = 10;
- *fiivIter = 20;
- *fiivIter = 30;
+*fiivIter = 10;
+*fiivIter = 20;
+*fiivIter = 30;
 
    list<int>::iterator LIter;
    cout << "The list L is: ( ";

@@ -33,16 +33,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c78355277fbb987d82bed46fb0b5f4ffd848b6a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c4bfc37a53e3b2b4e3c185c101685b7009d9d354
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32395308"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105282"
 ---
 # <a name="clearerr"></a>clearerr
 
-Bir akış için hata göstergesi sıfırlar. Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
+Bir akış için hata göstergesi sıfırlar. Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,15 +54,16 @@ void clearerr(
 
 ### <a name="parameters"></a>Parametreler
 
-*Akış* işaretçi **dosya** yapısı.
+*Stream*<br/>
+İşaretçi **dosya** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Clearerr** işlevi sıfırlar için dosya sonu göstergesi ve hata göstergesi *akış*. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarladıktan sonra bir hata değeri kadar döndürmek Bu akış işlemleri devam **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [geri sarma](rewind.md) olarak adlandırılır.
+**Clearerr** işlevi için dosya sonu göstergesi ve hata göstergesi sıfırlar *stream*. Hata göstergeleri otomatik olarak temizlenmez; Belirtilen bir akış için hata göstergesi ayarlandıktan sonra kadar bir hata değeri döndürmek bu işlemler devam **clearerr**, [fseek](fseek-fseeki64.md), **fsetpos**, veya [rewind](rewind.md) çağrılır.
 
-Varsa *akış* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Bu işlev devam etmek için yürütülmesine izin veriliyorsa, ayarlar **errno** için **EINVAL** ve döndürür. Daha fazla bilgi için **errno** ve hata kodları bakın [errno sabitleri](../../c-runtime-library/errno-constants.md).
+Varsa *stream* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse, bu işlev ayarlar **errno** için **EINVAL** ve döndürür. Daha fazla bilgi için **errno** ve hata kodları [errno sabitleri](../../c-runtime-library/errno-constants.md).
 
-Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
+Bu işlevin daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearerr-s.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -70,7 +71,7 @@ Bu işlev daha güvenli bir sürümü kullanılabilir; bkz: [clearerr_s](clearer
 |-------------|---------------------|
 |**clearerr**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -122,7 +123,7 @@ No read error
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [Hata İşleme](../../c-runtime-library/error-handling-crt.md)<br/>
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_eof](eof.md)<br/>
 [feof](feof.md)<br/>
 [ferror](ferror.md)<br/>

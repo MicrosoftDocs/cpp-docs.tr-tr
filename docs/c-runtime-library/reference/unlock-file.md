@@ -35,16 +35,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d000dce4c0009341c787a211ed8ef41d1728b51b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63b0950aaea5520849f9a32b2b08ab138cd8099b
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407778"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107553"
 ---
 # <a name="unlockfile"></a>_unlock_file
 
-Dosyaya erişmek için diğer işlemlere izin verme, bir dosya kilidini açar.
+Dosyaya erişmek diğer işlemlere izin verme, bir dosyanın kilidini açar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -56,11 +56,12 @@ void _unlock_file(
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya* dosya tanıtıcısı.
+*Dosya*<br/>
+Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Unlock_file** işlevi tarafından belirtilen dosyanın kilidini açarak *dosya*. Bir dosya kilidini başka işlemler tarafından dosyaya erişim sağlar. Bu işlev sürece çağrılmamalıdır **_lock_file** üzerinde önceden çağrıldı *dosya* işaretçi. Çağırma **_unlock_file** kilitli olmayan bir dosyada bir kilitlenmeye neden olabilir. Bir örnek için bkz: [_lock_file](lock-file.md).
+**_Unlock_file** işlevi tarafından belirtilen dosyanın kilidini açarak *dosya*. Bir dosyanın kilidini başka işlemler tarafından dosyaya erişim sağlar. Bu işlev sürece çağrılmamalıdır **_lock_file** üzerinde daha önceden çağrıldığından *dosya* işaretçi. Çağırma **_unlock_file** kilitli olmayan bir dosyada bir kilitlenmeyle neden olabilir. Bir örnek için bkz. [_lock_file](lock-file.md).
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -68,7 +69,7 @@ void _unlock_file(
 |-------------|---------------------|
 |**_unlock_file**|\<stdio.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

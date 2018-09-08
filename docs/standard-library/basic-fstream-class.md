@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 832a7b8f864dc21214d3b2428f83fd0c68330ff9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2b4712a76be411d237ee2abc97ddbdd4b67e57f2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959897"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108364"
 ---
 # <a name="basicfstream-class"></a>basic_fstream Sınıfı
 
@@ -46,9 +46,11 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* dosya arabelleğinin temel öğe.
+*Elem*<br/>
+Dosya tamponunun temel öğe.
 
-*Tr* temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
+*tr*<br/>
+Temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -135,11 +137,14 @@ basic_fstream(basic_fstream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgisi _dosya adını* açmak için dosyanın adı.
+*Bilgisi _dosya adını*<br/>
+Açmak için dosya adı.
 
-*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu*<br/>
+Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot* varsayılan dosyanın koruması, eşdeğer açma *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+Koruma, eşdeğer açma varsayılan dosya *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -215,11 +220,14 @@ void open(
 
 ### <a name="parameters"></a>Parametreler
 
-*Bilgisi _dosya adını* açmak için dosyanın adı.
+*Bilgisi _dosya adını*<br/>
+Açmak için dosya adı.
 
-*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu*<br/>
+Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*_Prot* varsayılan dosyanın koruması, eşdeğer açma *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+*_Prot*<br/>
+Koruma, eşdeğer açma varsayılan dosya *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -239,7 +247,8 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir lvalue başvurusuna bir `basic_fstream` nesne.
+*sağ*<br/>
+Bir lvalue başvurusuna bir `basic_fstream` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -275,7 +284,8 @@ void swap(basic_fstream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir `lvalue` başvurusu bir `basic_fstream` nesne.
+*sağ*<br/>
+Bir `lvalue` başvurusu bir `basic_fstream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

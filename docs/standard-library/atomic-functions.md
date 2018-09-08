@@ -68,12 +68,12 @@ helpviewer_keywords:
 - std::kill_dependency [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b70f4df63b5a885403b91c1470c3066c33f5f123
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: c00f66eef11d2d26bbcaa07110e9d9e738fc7c2f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466343"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110168"
 ---
 # <a name="ltatomicgt-functions"></a>&lt;atomik&gt; işlevleri
 
@@ -110,11 +110,14 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir *atomik* türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir *atomik* türünde bir değer depolar nesne `Ty`.
 
-*Exp* türünde bir değer için bir işaretçi `Ty`.
+*exp*<br/>
+Bir değer türünün işaretçisi `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -148,15 +151,20 @@ inline bool atomic_compare_exchange_strong_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Exp* türünde bir değer için bir işaretçi `Ty`.
+*exp*<br/>
+Bir değer türünün işaretçisi `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
-*Order1* ilk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişken.
+*Order1*<br/>
+İlk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişken.
 
-*Order2* ikinci `memory_order` bağımsız değişken. Değerini *Order2* olamaz `memory_order_release` veya `memory_order_acq_rel`, değerinden daha güçlü olamaz *Order1*.
+*Order2*<br/>
+İkinci `memory_order` bağımsız değişken. Değerini *Order2* olamaz `memory_order_release` veya `memory_order_acq_rel`, değerinden daha güçlü olamaz *Order1*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -186,11 +194,14 @@ inline bool atomic_compare_exchange_strong(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Exp* türünde bir değer için bir işaretçi `Ty`.
+*exp*<br/>
+Bir değer türünün işaretçisi `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -224,15 +235,20 @@ inline bool atomic_compare_exchange_weak_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Exp* türünde bir değer için bir işaretçi `Ty`.
+*exp*<br/>
+Bir değer türünün işaretçisi `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
-*Order1* ilk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişken.
+*Order1*<br/>
+İlk [memory_order](../standard-library/atomic-enums.md#memory_order_enum) bağımsız değişken.
 
-*Order2* ikinci `memory_order` bağımsız değişken. Değerini *Order2* olamaz `memory_order_release` veya `memory_order_acq_rel`, ya da değerinden daha güçlü olabilir *Order1*.
+*Order2*<br/>
+İkinci `memory_order` bağımsız değişken. Değerini *Order2* olamaz `memory_order_release` veya `memory_order_acq_rel`, ya da değerinden daha güçlü olabilir *Order1*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -256,9 +272,11 @@ inline T atomic_exchange(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -288,11 +306,14 @@ inline Ty atomic_exchange_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -315,9 +336,11 @@ T* atomic_fetch_add(atomic<T*>* Atom, ptrdiff_t Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
 
-*Değer* türünde bir değer `ptrdiff_t`.
+*Değer*<br/>
+Türünde bir değer `ptrdiff_t`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -357,9 +380,11 @@ T* atomic_fetch_add_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
 
-*Değer* türünde bir değer `ptrdiff_t`.
+*Değer*<br/>
+Türünde bir değer `ptrdiff_t`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -398,9 +423,11 @@ inline T atomic_fetch_and(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -430,11 +457,14 @@ inline T atomic_fetch_and_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -457,9 +487,11 @@ inline T atomic_fetch_or (volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -489,11 +521,14 @@ inline T atomic_fetch_or_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -521,9 +556,11 @@ T* atomic_fetch_sub(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
 
-*Değer* türünde bir değer `ptrdiff_t`.
+*Değer*<br/>
+Türünde bir değer `ptrdiff_t`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -561,9 +598,11 @@ T* atomic_fetch_sub_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` yazmanız için bir işaretçi depolayan nesneyi `T`.
 
-*Değer* türünde bir değer `ptrdiff_t`.
+*Değer*<br/>
+Türünde bir değer `ptrdiff_t`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -603,9 +642,11 @@ inline T atomic_fetch_xor(volatile atomic<T>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -635,11 +676,14 @@ inline T atomic_fetch_xor_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
-*Değer* türünde bir değer `T`.
+*Değer*<br/>
+Türünde bir değer `T`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -660,7 +704,8 @@ inline void atomic_flag_clear(atomic_flag* Flag) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı* bir işaretçi bir `atomic_flag` nesne.
+*Bayrağı*<br/>
+Bir işaretçi bir `atomic_flag` nesne.
 
 ## <a name="atomic_flag_clear_explicit"></a>  atomic_flag_clear_explicit
 
@@ -673,9 +718,11 @@ inline void atomic_flag_clear_explicit(atomic_flag* Flag, memory_order Order) no
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı* bir işaretçi bir `atomic_flag` nesne.
+*Bayrağı*<br/>
+Bir işaretçi bir `atomic_flag` nesne.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flag_test_and_set"></a>  atomic_flag_test_and_set
 
@@ -688,7 +735,8 @@ inline bool atomic_flag_test_and_set(atomic_flag* Flag,) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı* bir işaretçi bir `atomic_flag` nesne.
+*Bayrağı*<br/>
+Bir işaretçi bir `atomic_flag` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -705,9 +753,11 @@ inline bool atomic_flag_test_and_set_explicit(atomic_flag* Flag, memory_order Or
 
 ### <a name="parameters"></a>Parametreler
 
-*Bayrağı* bir işaretçi bir `atomic_flag` nesne.
+*Bayrağı*<br/>
+Bir işaretçi bir `atomic_flag` nesne.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -726,9 +776,11 @@ inline void atomic_init(atomic<Ty>* Atom, Ty Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -747,7 +799,8 @@ inline bool atomic_is_lock_free(const atomic<T>* Atom) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer depolar nesne `T`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -770,7 +823,8 @@ inline Ty atomic_load(const atomic<Ty>* Atom) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -793,9 +847,11 @@ inline Ty atomic_load_explicit(const atomic<Ty>* Atom, memory_order Order) noexc
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Kullanmayın `memory_order_release` veya `memory_order_acq_rel`.
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Kullanmayın `memory_order_release` veya `memory_order_acq_rel`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -811,7 +867,8 @@ inline void atomic_signal_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sipariş* bellek sıralaması Çit türünü belirleyen kısıtlaması.
+*Sırası*<br/>
+Bellek sıralaması Çit türünü belirleyen kısıtlaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -839,9 +896,11 @@ inline Ty atomic_store_explicit(const atomic<Ty>* Atom, T Value) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* türünde bir değer içeren bir atomik nesne işaretçisi `Ty`.
+*Atom*<br/>
+Türünde bir değer içeren bir atomik nesne işaretçisi `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -867,11 +926,14 @@ inline Ty atomic_store_explicit(
 
 ### <a name="parameters"></a>Parametreler
 
-*Atom* bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
+*Atom*<br/>
+Bir işaretçi bir `atomic` türünde bir değer içeren nesne `Ty`.
 
-*Değer* türünde bir değer `Ty`.
+*Değer*<br/>
+Türünde bir değer `Ty`.
 
-*Sipariş* A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Kullanmayın `memory_order_consume`, `memory_order_acquire`, veya `memory_order_acq_rel`.
+*Sırası*<br/>
+A [memory_order](../standard-library/atomic-enums.md#memory_order_enum). Kullanmayın `memory_order_consume`, `memory_order_acquire`, veya `memory_order_acq_rel`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -887,7 +949,8 @@ inline void atomic_thread_fence(memory_order Order) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sipariş* bellek sıralaması Çit türünü belirleyen kısıtlaması.
+*Sırası*<br/>
+Bellek sıralaması Çit türünü belirleyen kısıtlaması.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -913,7 +976,8 @@ Ty kill_dependency(Ty Arg) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Arg* türünde bir değer `Ty`.
+*bağımsız değişken*<br/>
+Türünde bir değer `Ty`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

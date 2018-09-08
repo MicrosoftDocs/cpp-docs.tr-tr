@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c0230c92a448eedf0cae7c80778c2bd4c48d077
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 58551874227bde5d158946c7df9c77bcc0ff3ef3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963173"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108352"
 ---
 # <a name="codecvtutf8"></a>codecvt_utf8
 
@@ -34,9 +34,12 @@ class codecvt_utf8 : public std::codecvt<Elem, char, StateType>
 
 ## <a name="parameters"></a>Parametreler
 
-*Elem* geniş karakter öğe türü.
-*Maxcode* yerel ayar modeli için karakter sayısı.
-*Modu* yerel ayar modeli için yapılandırma bilgileri.
+*Elem*<br/>
+Geniş karakter öğe türü.
+*Maxcode*<br/>
+Yerel ayar modeli için karakter sayısı.
+*Modu*<br/>
+Yerel ayar modeli için yapılandırma bilgileri.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -44,4 +47,5 @@ Bayt akışı, ikili dosya ya da bir metin dosyası yazılabilir.
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: <codecvt> Namespace: std
+Başlık: \<codecvt > \
+Namespace: std
