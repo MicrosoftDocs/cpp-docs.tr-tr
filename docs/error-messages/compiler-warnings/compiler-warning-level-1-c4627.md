@@ -1,7 +1,7 @@
 ---
 title: Derleyici Uyarısı (düzey 1) C4627 | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/09/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -16,17 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcde9e6707465fd95dbcb10e073a852624f0de0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f6be9ba8ba45adecfe5355848126dcb4b3b2fd1
+ms.sourcegitcommit: 592a2f402fef502450a45571a846175cc3ab1ceb
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33284192"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44249626"
 ---
 # <a name="compiler-warning-level-1-c4627"></a>Derleyici Uyarısı (düzey 1) C4627
-'\<tanımlayıcısı >': önceden derlenmiş üstbilgi kullanım aramakta zaman atlandı  
+
+> '*header_fıle*': Ön derlenmiş üstbilgi kullanımı aranırken atlandı
+
+Geçerli kaynak dosyanın varsa [/Yu \(kullanım önceden derlenmiş üst bilgi dosyası)](../../build/reference/yu-use-precompiled-header-file.md) seçenek kümesi, ardından önceden derlenmiş üst bilgi eklenir önce derleyici dosyadaki her şeyi yoksayar. Uyarı **C4627** , Visual Studio 2015 veya önceki sürümlerinde oluşturulan *header_fıle* önce önceden derlenmiş üst bilgi dosyasını dahil ve önceden derlenmiş üst bilgi de içermiyorsa*header_fıle*.
+
+## <a name="example"></a>Örnek
+
+Bu örnek nasıl hata ortaya çıkabilir ve nasıl düzeltileceğini gösteren gösterir:
+ 
+```cpp
+// c4627.cpp
+#include <iostream>       // C4627 - iostream not included by pch.h
+#include "pch.h"          // precompiled header file that does not include iostream
+// #include <iostream>    // To fix, move the iostream header include here from above
+int main()
+{
+    std::cout << "std::cout is defined!\n";
+}
+```
   
- Önceden derlenmiş üst bilgi kullanıldığı konumunu aranırken derleyici karşılaştı bir `#include` için yönerge  *\<tanımlayıcısı >* dosya ekleyin. Derleyici yoksayar `#include` yönergesi, ancak uyarı sorunları **C4627** önceden derlenmiş üst bilgi zaten içermiyorsa  *\<tanımlayıcısı >* dosya ekleyin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)
