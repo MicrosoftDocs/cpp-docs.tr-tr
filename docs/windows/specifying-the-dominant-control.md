@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - dominant controls
-- Dialog editor, dominant control
+- Dialog Editor [C++], dominant control
 - controls [C++], dominant
 ms.assetid: 42b523a7-192a-417b-9512-d4af795e002f
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93e8d1dff23d77d861a52d4f1531203ebd05987b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a4721cec6ebc11cf2107afe0048da90164c0f47f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593302"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315567"
 ---
 # <a name="specifying-the-dominant-control"></a>Baskın Denetimi Belirtme
 

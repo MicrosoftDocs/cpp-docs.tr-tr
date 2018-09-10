@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81dee8442d38a4436b503da83f2853c030b652da
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ff3d6f9376678240f53113d925a868adfcb4da6d
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103220"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314527"
 ---
 # <a name="plus-struct"></a>plus Yapısı
 
@@ -104,11 +104,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 0 4 8 12 16 20 )
 The vector v2 = ( -4 -6 -8 -10 -12 -14 )
 The element-wise sums are: ( -4 -2 0 2 4 6 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

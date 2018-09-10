@@ -1,5 +1,5 @@
 ---
-title: Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri | Microsoft Docs
+title: Oluşturma, taşıma ve düzenleme araç çubuğu düğmeleri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,22 +8,22 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- buttons, custom toolbars
-- toolbar buttons (in Toolbar editor), editing
+- buttons [C++], custom toolbars
+- toolbar buttons [C++], editing
 - buttons
-- toolbar buttons (in Toolbar editor), creating
+- toolbar buttons [C++], creating
 ms.assetid: d0f0c6c6-9d7e-42b5-a86a-7558127386e7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2003356ee451ca744011a46c2991b639856f88ce
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b5b3daa57a4453e37826b276d2c89c807929d006
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594486"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313227"
 ---
 # <a name="creating-moving-and-editing-toolbar-buttons"></a>Araç Çubuğu Düğmelerini Oluşturma, Taşıma ve Düzenleme
 

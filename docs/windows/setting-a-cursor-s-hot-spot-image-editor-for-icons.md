@@ -10,7 +10,7 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- cursors, hot spots
+- cursors [C++], hot spots
 - hot spots
 ms.assetid: a610388a-45c8-43cd-98a2-fd31f29238b8
 author: mikeblome
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 539f16c1de7569818a1d460730f9c48fbca82ed8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fe80ae0d4045514c22c40af38deeeecbbfecc363
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590831"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316386"
 ---
 # <a name="setting-a-cursor39s-hot-spot-image-editor-for-icons"></a>Bir imleç ayarlama&#39;s etkin nokta (simgeler için görüntü Düzenleyicisi)
 

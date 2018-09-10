@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı tablosunda giriş bulma | Microsoft Docs
+title: (C++) Hızlandırıcı tablosunda giriş bulma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0db79773412b204b0aa006e3402c51daa9dc928d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 01785329b23ced8dd9ea5b22387f418173815ac8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605263"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314982"
 ---
 # <a name="finding-an-entry-in-an-accelerator-table"></a>Hızlandırıcı Tablosunda Giriş Bulma
 

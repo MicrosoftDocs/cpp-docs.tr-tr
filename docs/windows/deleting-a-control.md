@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- dialog box controls, deleting
+- dialog box controls [C++], deleting
 - controls [C++], deleting
 ms.assetid: 95237fac-938e-41b2-b9ae-25f03aa949cb
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96ad1050bdf065fbc1a48fe0e84d4d812c6b8dfe
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 215a9efd8086ec60ad21e8df03afdc62b02ce51e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611422"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313371"
 ---
 # <a name="deleting-a-control"></a>Denetimi Silme
 

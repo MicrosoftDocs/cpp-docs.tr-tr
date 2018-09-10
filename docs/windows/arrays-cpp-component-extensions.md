@@ -13,7 +13,6 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - array keyword [C++]
-- declaring arrays, about declaring arrays
 - arrays [C++], multidimensional
 - multidimensional arrays
 - arrays [C++]
@@ -23,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0241e2b8259e3e5ff5a314b4f01b6f911c64d813
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: fa004d449190003f6438744c09c1c8023a0cbda3
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612181"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314436"
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 

@@ -8,22 +8,22 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, default control events
+- Dialog Editor [C++], default control events
 - controls [C++], default control events
 - events [C++], controls
-- dialog box controls, events
+- dialog box controls [C++], events
 ms.assetid: 75556b23-18f5-4390-97a4-2ecad3309741
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1a208e85418f362bfa698055ba6b3b403c21bce0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7a57cb6c72d7d444c345140f4a738a3d4a3232c0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610876"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315619"
 ---
 # <a name="default-control-events"></a>Varsayılan Denetim Olayları
 

@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3294730f8f1cc835af49ee003d8f81830d64c9a6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 02bd6b1c5ed9cf29b87dc2a218f7a5e9eda3e3dc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198308"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319064"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -187,11 +187,11 @@ int main( int argc, char* argv[] )
       cout << " " << vaApplied[i];
    cout << " )" << endl;
 }
-\* Output:
+/* Output:
 The initial Right valarray is: ( 0 0 -2 3 0 -5 6 0 -8 9 )
 The element-by-element result of applying MyApplyFunc to vaR is the
 valarray: (  0 0 -4 6 0 -10 12 0 -16 18 )
-*\
+*/
 ```
 
 ## <a name="cshift"></a>  valarray::cshift
@@ -261,14 +261,14 @@ int main()
         cout << " " << va2[i];
     cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The operand valarray va1 is: ( 0 1 2 3 4 5 6 7 8 9)
 The cyclically shifted valarray va1 is:
 va1.cshift (4) = ( 4 5 6 7 8 9 0 1 2 3)
 The operand valarray va2 is: ( 10 9 8 7 6 5 4 3 2 1)
 The cyclically shifted valarray va2 is:
 va2.shift (-4) = ( 4 3 2 1 10 9 8 7 6 5)
-*\
+*/
 ```
 
 ## <a name="free"></a>  valarray::Free
@@ -336,10 +336,10 @@ int main( )
    cout << "The largest element in the valarray is: "
         << MaxValue  << "." << endl;
 }
-\* Output:
+/* Output:
 The operand valarray is: ( 0 1 8 3 7 5 6 13 2 9 ).
 The largest element in the valarray is: 13.
-*\
+*/
 ```
 
 ## <a name="min"></a>  valarray::Min
@@ -388,10 +388,10 @@ int main( )
    cout << "The smallest element in the valarray is: "
         << MinValue  << "." << endl;
 }
-\* Output:
+/* Output:
 The operand valarray is: ( 0 2 3 -3 8 0 -6 14 -3 -9 ).
 The smallest element in the valarray is: -9.
-*\
+*/
 ```
 
 ## <a name="op_not"></a>  valarray::operator!
@@ -444,11 +444,11 @@ int main( )
          cout << vaNOT [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The element-by-element result of the logical NOT operator! is the
  valarray: ( 1 1 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## <a name="op_mod_eq"></a>  valarray::operator%=
@@ -508,12 +508,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is: ( 53 -67 53 -67 53 -67 ).
 The initial  right valarray is: ( 1 4 7 10 13 16 ).
 The remainders from the element-by-element division is the
  valarray: ( 0 -3 4 -7 1 -3 ).
-*\
+*/
 ```
 
 ## <a name="and_eq"></a>  valarray::operator&amp;=
@@ -579,12 +579,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is:  ( 0 0 0 2 0 4 0 6 0 8 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The element-by-element result of the logical AND operator&= is the
  valarray: ( 0 0 0 2 0 4 0 6 0 8 ).
-*\
+*/
 ```
 
 ## <a name="op_gt_gt_eq"></a>  valarray::operator&gt;&gt;=
@@ -648,12 +648,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial operand valarray is: ( 64 -64 64 -64 64 -64 64 -64 ).
 The  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the right shift is the
  valarray: ( 64 -32 16 -8 4 -2 1 -1 ).
-*\
+*/
 ```
 
 ## <a name="op_lt_lt_eq"></a>  valarray::operator&lt;&lt;=
@@ -717,13 +717,13 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial operand valarray is: ( 1 -1 1 -1 1 -1 1 -1 ).
 The  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the left shift
  on the operand array is the valarray:
  ( 1 -2 4 -8 16 -32 64 -128 ).
-*\
+*/
 ```
 
 ## <a name="op_star_eq"></a>  valarray::operator * =
@@ -783,12 +783,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the multiplication is the
  valarray: ( 0 -1 4 -3 8 -5 12 -7 ).
-*\
+*/
 ```
 
 ## <a name="op_add"></a>  valarray::operator +
@@ -835,11 +835,11 @@ int main( )
          cout << vaPLUS [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is:  ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 The element-by-element result of the operator+ is the
  valarray: ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
-*\
+*/
 ```
 
 ## <a name="op_add_eq"></a>  valarray::operator +=
@@ -899,12 +899,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is: ( 2 -1 2 -1 2 -1 2 -1 ).
 The initial  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the sum is the
  valarray: ( 2 0 4 2 6 4 8 6 ).
-*\
+*/
 ```
 
 ## <a name="valarray__operator-"></a>  valarray::operator-
@@ -951,11 +951,11 @@ int main( )
          cout << vaMINUS [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is:  ( 0 0 -2 2 -4 4 -6 6 -8 8 ).
 The element-by-element result of the operator+ is the
  valarray: ( 0 0 2 -2 4 -4 6 -6 8 -8 ).
-*\
+*/
 ```
 
 ## <a name="valarray__operator-_eq"></a>  valarray::operator-=
@@ -1015,12 +1015,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is: ( 10 0 10 0 10 0 10 0 ).
 The initial  right valarray is: ( 0 1 2 3 4 5 6 7 ).
 The element-by-element result of the difference is the
  valarray: ( 10 -1 8 -3 6 -5 4 -7 ).
-*\
+*/
 ```
 
 ## <a name="op_div_eq"></a>  valarray::operator / =
@@ -1080,12 +1080,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial valarray is: ( 100 -100 100 -100 100 -100 ).
 The initial Right valarray is: ( 0 2 4 6 8 10 ).
 The element-by-element result of the quotient is the
  valarray: ( inf -50 25 -16.6667 12.5 -10 ).
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  valarray::operator =
@@ -1188,12 +1188,12 @@ int main( )
          cout << " " << va [ i ];
    cout << endl;
 }
-\* Output:
+/* Output:
 The operand valarray va is: 0 1 2 3 4 5 6 7 8 9
 The operand valarray vaR is: 10 9 8 7 6 5 4 3 2 1
 The reassigned valarray va is: 10 9 8 7 6 5 4 3 2 1
 The reassigned valarray va is: 10 10 10 10 10 10 10 10 10 10
-*\
+*/
 ```
 
 ## <a name="op_at"></a>  valarray::operator]
@@ -1322,12 +1322,12 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial operand valarray is:  ( 1 0 1 0 1 0 1 0 1 0 ).
 The  right valarray is: ( 0 0 1 3 3 4 6 6 7 9 ).
 The element-by-element result of the bitwise XOR operator^= is the
  valarray: ( 1 0 0 3 2 4 7 6 6 9 ).
-*\
+*/
 ```
 
 ## <a name="op_or_eq"></a>  valarray::operator&#124;=
@@ -1397,7 +1397,7 @@ int main( )
          cout << vaL [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial operand valarray is:
  ( 1 0 1 0 1 0 1 0 1 0 ).
 The  right valarray is:
@@ -1405,7 +1405,7 @@ The  right valarray is:
 The element-by-element result of the logical OR
  operator|= is the valarray:
  ( 1 0 1 3 3 4 7 6 7 9 ).
-*\
+*/
 ```
 
 ## <a name="op_dtor"></a>  valarray::operator ~
@@ -1488,7 +1488,8 @@ int main( )
          cout << vaNOT2 [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+
+/* Output:
 The initial valarray <unsigned short int> is:  ( 0 5 2 15 4 25 6 35 8 45 ).
 The element-by-element result of the bitwise NOT operator~ is the
  valarray: ( 65535 65530 65533 65520 65531 65510 65529 65500 65527 65490 ).
@@ -1499,7 +1500,7 @@ The element-by-element result of the bitwise NOT operator~ is the
 The element-by-element result of adding one
  is the negative of the original elements the
  valarray: ( 0 2 -2 6 -4 10 -6 14 -8 18 ).
-*\
+*/
 ```
 
 ## <a name="resize"></a>  valarray::Resize
@@ -1644,12 +1645,12 @@ int main( )
          cout << va2 [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The operand valarray va1(10) is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The shifted valarray va1 is: va1.shift (4) = ( 4 5 6 7 8 9 0 0 0 0 ).
 The operand valarray va2(10) is: ( 10 9 8 7 6 5 4 3 2 1 ).
 The shifted valarray va2 is: va2.shift (-4) = ( 0 0 0 0 10 9 8 7 6 5 ).
-*\
+*/
 ```
 
 ## <a name="size"></a>  valarray::size
@@ -1772,10 +1773,10 @@ int main( )
    cout << "The sum of elements in the valarray is: "
         << sumva  << "." <<endl;
 }
-\* Output:
+/* Output:
 The operand valarray va (10) is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The sum of elements in the valarray is: 45.
-*\
+*/
 ```
 
 ## <a name="swap"></a>  valarray::Swap
@@ -1975,11 +1976,11 @@ int main( )
          cout << va [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial operand valarray is:  ( 0 -1 2 -1 4 -1 6 -1 8 -1 ).
 The decalared value_type Right is: 10
 The resulting valarray is:  ( 0 -10 20 -10 40 -10 60 -10 80 -10 ).
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

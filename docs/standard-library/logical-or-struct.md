@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a1e4f530cbc0f8bd92e90edf549c8b05fdcb152
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 86074c341e26965778aaa5668c219c721a984d79
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108923"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318919"
 ---
 # <a name="logicalor-struct"></a>logical_or Yapısı
 
@@ -114,14 +114,14 @@ int main( )
       cout << *iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 Original deque:
 d1 = ( true true false false true false false )
 Original deque:
 d2 = ( false false false true true true true )
 The deque which is the disjuction of d1 & d2 is:
 d3 = ( true true false true true true true )
-*\
+*/
 
 ```
 

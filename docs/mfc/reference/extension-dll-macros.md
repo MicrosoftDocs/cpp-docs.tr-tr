@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee79ccad55d2fd360166b9d693f3d4757fe2049f
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: d3f34a6bc42f1c01783e21e1c3b0f9f04adad46f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339234"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317764"
 ---
 # <a name="macros-and-functions-for-managing-dlls"></a>Makrolar ve İşlevler DLL'leri yönetmek için
 
@@ -99,7 +99,7 @@ void AFXAPI AfxOleInitModule( );
  Bir OLE denetim oluşturma ve kullanıyorsanız `COleControlModule`, değil, çağırmalıdır `AfxOleInitModule` çünkü `InitInstance` üye işlevi için `COleControlModule` çağrıları `AfxOleInitModule`.  
    
 ### <a name="requirements"></a>Gereksinimler  
- **Üst bilgi**: < afxdll_.h >  
+ **Üst bilgi**: \<afxdll_.h >  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
@@ -117,7 +117,7 @@ void AFXAPI AfxNetInitModule( );
  MFC yuva DLL bir MFC uzantılı DLL dosyasıdır; bir MFC uzantılı DLL içine kablolu için sırada bir `CDynLinkLibrary` zinciri gerekir oluşturma bir `CDynLinkLibrary` onu kullanan her bir modüle bağlamında nesne. `AfxNetInitModule` oluşturur `CDynLinkLibrary` içine kablolu, böylece Normal MFC DLL bağlamda nesne `CDynLinkLibrary` nesnesi Normal MFC DLL'SİNİN zinciri.  
    
 ### <a name="requirements"></a>Gereksinimler  
- **Başlık:** < afxdll_.h >  
+ **Başlık:** \<afxdll_.h >  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   

@@ -8,7 +8,7 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- override specifiers, Visual C++
+- override specifiers, C++
 - override specifiers
 ms.assetid: 155bbf6f-4722-4654-afb1-9cb52af799fb
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 71cafe3d73204b6a318e731d0a95f2dfcc73fa5a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bcbc46ea12dd053c0c0cf5066173ea2a28857452
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600129"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316126"
 ---
 # <a name="override-specifiers--c-component-extensions"></a>Geçersiz Kılma Tanımlayıcıları (C++ Bileşen Uzantıları)
 

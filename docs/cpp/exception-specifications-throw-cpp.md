@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15e872faab5beee296e4543c8404141428345842
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1dfc9c50503fcd277f34e8f5dfc4a630d888eebf
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402409"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318284"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
@@ -43,7 +43,7 @@ void MyFunction(int i) noexcept;
 
 |Özel durum belirtimi|Açıklama|
 |-----------------------------|-------------|
-|`noexcept`<br>`noexcept(true)`<br>`throw()`|İşlev bir özel durum oluşturmaz. İçinde [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) (varsayılandır) modunu `noexcept` ve `noexcept(true)` eşdeğerdir. Bir özel durum bildirildi bir işlevden harekete geçirildiğinde `noexcept` veya `noexcept(true)`, [std::terminate](../standard-library/exception-functions.md#terminate) çağrılır. Olarak bildirilen bir işlevden bir özel durum harekete geçirildiğinde `throw()` içinde **/Std: c ++ 14** modu, sonucun tanımsız davranış olduğu. Belirli bir işlevi çağrılır. Bu, derleyicinin çağırmak için gereken bir Geçitler C ++ 14 standardı'ndan [std::unexpected](../standard-library/exception-functions.md#unexpected).  <br> **Visual Studio 2017 sürüm 15.5 ve üzeri**: içinde **/Std: c ++ 17** modu `noexcept`, `noexcept(true)`, ve `throw()` tüm eşdeğerdir. İçinde **/Std: c ++ 17** modu `throw()` için bir diğer addır `noexcept(true)`. İçinde **/Std: c ++ 17** modu, tüm bu özellikleri ile bildirilen bir işlevden bir özel durum oluştuğunda [std::terminate](../standard-library/exception-functions.md#terminate) çağrılır C ++ 17 standart tarafından gerekli.|
+|`noexcept`<br/>`noexcept(true)`<br/>`throw()`|İşlev bir özel durum oluşturmaz. İçinde [/Std: c ++ 14](../build/reference/std-specify-language-standard-version.md) (varsayılandır) modunu `noexcept` ve `noexcept(true)` eşdeğerdir. Bir özel durum bildirildi bir işlevden harekete geçirildiğinde `noexcept` veya `noexcept(true)`, [std::terminate](../standard-library/exception-functions.md#terminate) çağrılır. Olarak bildirilen bir işlevden bir özel durum harekete geçirildiğinde `throw()` içinde **/Std: c ++ 14** modu, sonucun tanımsız davranış olduğu. Belirli bir işlevi çağrılır. Bu, derleyicinin çağırmak için gereken bir Geçitler C ++ 14 standardı'ndan [std::unexpected](../standard-library/exception-functions.md#unexpected).  <br/> **Visual Studio 2017 sürüm 15.5 ve üzeri**: içinde **/Std: c ++ 17** modu `noexcept`, `noexcept(true)`, ve `throw()` tüm eşdeğerdir. İçinde **/Std: c ++ 17** modu `throw()` için bir diğer addır `noexcept(true)`. İçinde **/Std: c ++ 17** modu, tüm bu özellikleri ile bildirilen bir işlevden bir özel durum oluştuğunda [std::terminate](../standard-library/exception-functions.md#terminate) çağrılır C ++ 17 standart tarafından gerekli.|
 |`noexcept(false)`<br/>`throw(...)`<br/>Belirtim|İşlev herhangi bir türde bir durum oluşturabilir.|
 |`throw(type)`| (**c ++ 14 ve önceki**) işlev türünde bir özel durum oluşturabilecek `type`. Derleyici söz dizimini kabul eder, ancak bunu olarak yorumlar `noexcept(false)`. İçinde **/Std: c ++ 17** modu derleyici C5040 uyarı verir.|
 

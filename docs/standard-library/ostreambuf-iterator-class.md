@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba1a48fe9a4e7f0f8921861abeab2b76de3169c8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: cec1f3fe6a3a1955b18dacd695d5a459b5550c05
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107391"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318700"
 ---
 # <a name="ostreambufiterator-class"></a>ostreambuf_iterator Sınıfı
 
@@ -134,10 +134,10 @@ int main( )
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
 by charOutBuf are: OUT.
-*\
+*/
 ```
 
 ## <a name="failed"></a>  ostreambuf_iterator::Failed
@@ -185,10 +185,10 @@ int main( )
    else
        cout << "No insertions failed." << endl;
 }
-\* Output:
+/* Output:
 abc are characters output individually.
 No insertions failed.
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostreambuf_iterator::operator\*
@@ -232,10 +232,10 @@ int main( )
 *charOutBuf = 'U';
 *charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostreambuf_iterator::operator++
@@ -280,10 +280,10 @@ int main( )
 *charOutBuf = 'U';
 *charOutBuf = 'T';
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 OUT
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostreambuf_iterator::operator=
@@ -388,10 +388,10 @@ int main( )
    string str = "These characters are being written to the output stream.\n ";
    copy ( str.begin ( ), str. end ( ), strOut );
 }
-\* Output:
+/* Output:
 OUT are characters output individually.
 These characters are being written to the output stream.
-*\
+*/
 ```
 
 ## <a name="ostreambuf_iterator_ostream_type"></a>  ostreambuf_iterator::ostream_type
@@ -470,10 +470,10 @@ int main( )
    charOutBuf++;
    cout << "." << endl;
 }
-\* Output:
+/* Output:
 The characters written to the output stream
 by charOutBuf are: OUT.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

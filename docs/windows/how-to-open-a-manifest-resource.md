@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: bildirim kaynağını açma | Microsoft Docs'
+title: 'Nasıl yapılır: bildirim kaynağını (C++) açma | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,20 +8,20 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- manifest resources
-- resources [Visual Studio], opening
+- manifest resources [C++]
+- resources [C++], opening
 ms.assetid: bd6f9c47-2a1e-417d-9d2a-c1ad7d3b9635
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 53b414507fe2d21f610be1cd6a4db3bfce9628d1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7bb55c18bf577e8ef7bbf1f9504af1df0e1ebe7f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42550667"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315528"
 ---
 # <a name="how-to-open-a-manifest-resource"></a>Nasıl Yapılır: Bildirim Kaynağını Açma
 

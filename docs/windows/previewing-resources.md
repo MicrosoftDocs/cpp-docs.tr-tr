@@ -1,5 +1,5 @@
 ---
-title: Kaynakları Önizleme | Microsoft Docs
+title: Kaynakları (C++) Önizleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,21 +11,19 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resources [Visual Studio], viewing
-- resource previews
-- code, viewing
+- resources [C++], viewing
 ms.assetid: d6abda66-0e2b-4ac3-a59a-a57b8c6fb70b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6e15a4557d8368596021307ba7045bfb4b08664
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 80d4256057cb268baf2c8750f6d781e7d7aba4db
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583838"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314307"
 ---
 # <a name="previewing-resources"></a>Kaynakları Önizleme
 

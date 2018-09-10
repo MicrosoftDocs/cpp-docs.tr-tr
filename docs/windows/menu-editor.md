@@ -1,5 +1,5 @@
 ---
-title: Menü düzenleyicisi | Microsoft Docs
+title: Menü Düzenleyicisi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,22 +10,22 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resource editors, Menu editor
+- resource editors [C++], Menu editor
 - editors, menus
 - Menu editor
-- menus, Menu editor
+- menus [C++], Menu editor
 ms.assetid: 421fb215-6e12-4ec9-a3af-82d77f87bfa6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 892b1b11d234d25232daeea69caa282cc908ad3c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 80519b17fc5d9aee963ec3718cf82c7fe44d686b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201839"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316374"
 ---
 # <a name="menu-editor"></a>Menü Düzenleyicisi
 

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf266e11f975e3ce01e5359c1dac65b46a42435a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: bb2a78219cd5474f879407e75c5a89f14f87b647
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221349"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315970"
 ---
 # <a name="complexltfloatgt"></a>karmaşık&lt;float&gt;
 
@@ -112,7 +112,7 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
  as type float gives c1 = (4,5)
 Implicit conversion from type double to type float,
@@ -122,7 +122,7 @@ Explicit conversion from type long double to type float,
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
  arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- colors, Colors window
+- colors [C++], Colors window
 - Colors window, hiding colors
 - Show Colors Window command
 - Colors window, displaying colors
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 757360f231f15bc7166008e0e8d003bebab9eb3d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 307024980c0d7e338030563507d17ebfd561d2e0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578761"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317634"
 ---
 # <a name="displaying-or-hiding-the-colors-window-image-editor-for-icons"></a>Renkler Penceresini Görüntüleme veya Gizleme (Simgeler İçin Görüntü Düzenleyicisi)
 

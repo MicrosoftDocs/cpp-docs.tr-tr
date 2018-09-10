@@ -76,18 +76,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba97d3bcd356a044245e7613470bead1cc42eb25
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0da454b2b980be3565ee27fde4ee14d7eadd42fb
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417135"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313638"
 ---
 # <a name="strnicmp-wcsnicmp-mbsnicmp-strnicmpl-wcsnicmpl-mbsnicmpl"></a>_strnicmp, _wcsnicmp, _mbsnicmp, _strnicmp_l, _wcsnicmp_l, _mbsnicmp_l
-Belirtilen sayıda servis talebi dikkate almaksızın iki dize karakterlerini karşılaştırır.
+Belirtilen sayıda karakteri çalışması dikkate almaksızın, iki dizenin karşılaştırır.
 
 > [!IMPORTANT]
-> **_mbsnicmp** ve **_mbsnicmp_l** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbsnicmp** ve **_mbsnicmp_l** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -130,7 +130,7 @@ int _mbsnicmp_l(
 ### <a name="parameters"></a>Parametreler
 
 *Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+Karşılaştırmak için null ile sonlandırılmış dizeler.
 
 *Sayısı*<br/>
 Karşılaştırılacak karakter sayısı.
@@ -140,25 +140,25 @@ Kullanılacak yerel ayar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Alt dizeler arasındaki ilişkiyi gibi gösterir.
+Aşağıdaki gibi alt dizeler arasındaki ilişkiyi gösterir.
 
 |Dönüş değeri|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* alt dizesidir değerinden *dize2* substring.|
-|0|*Dize1* alt dizesidir aynı *dize2* substring.|
-|> 0|*Dize1* alt dizesidir büyük *dize2* substring.|
+|< 0|*Dize1* alt dizesidir küçüktür *dize2* alt dize.|
+|0|*Dize1* substring aynıdır *dize2* alt dize.|
+|> 0|*Dize1* alt dizeyi büyük *dize2* alt dize.|
 
-Üzerinde bir parametre doğrulama hatası, bu işlevlerin dönüş **_NLSCMPERROR**, içinde tanımlanan \<string.h > ve \<mbstring.h >.
+Bu işlevler bir parametre doğrulama hatasını döndürür **_NLSCMPERROR**, tanımlanan \<string.h > ve \<mbstring.h >.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Strnicmp** işlevi ordinally karşılaştırır, en fazla ilk *sayısı* karakterlerinden *Dize1* ve *dize2*. Karşılaştırma durum dikkate almaksızın küçük her karakter dönüştürme tarafından gerçekleştirilir. **_strnicmp** büyük küçük harf duyarsız bir sürümü **strncmp**. Karşılaştırma sonlandırma bir null karakter önce ya da dizesinde ulaşıldığında sona *sayısı* karakter karşılaştırılır. Dizeleri eşitse, ne zaman bir sonlandırma null karakter ulaşıldığında önce ya da dizesinde *sayısı* karakter karşılaştırılır, kısa daha düşük bir dizedir.
+**_Strnicmp** işlevi ordinally karşılaştırır, en çok ilk *sayısı* karakterlerinden *Dize1* ve *dize2*. Karşılaştırma çalışması bakılmaksızın, her bir karakteri küçük harfe dönüştürme tarafından gerçekleştirilir. **_strnicmp** büyük küçük harf duyarlı bir sürümüdür **strncmp**. Bir sonlandırıcı null karakter ya da dize önce ulaşılırsa karşılaştırma sonlandırır *sayısı* karakter karşılaştırılmadan. Dizeler eşitse bir sonlandırıcı null karakter ulaşıldığında önce her iki dizede *sayısı* karakter karşılaştırılmadan, kısa dize küçüktür.
 
-ASCII tablosundaki 96 91 karakterleri ('[','\\', ']', ' ^', '_' ve '\`') olarak değerinden alfabetik bir karakterle değerlendirin. Bu sıralama aynı **stricmp**.
+ASCII tablosunda 96 91 karakterleri ('[','\\', ']', ' ^', '_' ve '\`') olarak küçüktür herhangi bir alfabetik karakterle değerlendirin. Bu sıralama olarak aynı **stricmp**.
 
-**_wcsnicmp** ve **_mbsnicmp** joker karakter ve çok baytlı karakter sürümleri **_strnicmp**. Bağımsız değişkenleri **_wcsnicmp** joker karakter olan dizeleri; bu **_mbsnicmp** çok baytlı karakter dizeleri belirtilmiştir. **_mbsnicmp** geçerli birden çok baytlı kod sayfasına göre çok baytlı karakter sıralarının tanır ve döndürür **_NLSCMPERROR** bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlevler aynı şekilde aksi davranır. Bu işlevler yerel ayardan etkilenir — olmayan sürümleri **_l** yerel ayara bağımlı davranışlarını geçerli yerel kullanılmak soneki; olan sürümleri **_l** soneki Bunun yerine kullanın *yerel* olarak geçirilir. Daha fazla bilgi için bkz: [yerel ayar](../../c-runtime-library/locale.md).
+**_wcsnicmp** ve **_mbsnicmp** geniş karakter ve çok baytlı karakter sürümleridir **_strnicmp**. Bağımsız değişkenleri **_wcsnicmp** geniş karakterli dizelerdir; **_mbsnicmp** çok baytlı karakter dizeleridir. **_mbsnicmp** geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizileri tanır ve döndürür **_NLSCMPERROR** üzerinde hata. Daha fazla bilgi için [kod sayfaları](../../c-runtime-library/code-pages.md). Bu üç işlev aynı şekilde davranır. Bu işlevler, yerel ayar tarafından etkilenen — sahip olmayan sürümleri **_l** soneki geçerli yerel ayar için yerel ayara bağlı davranışları; sahip sürümler **_l** soneki Bunun yerine kullanın *yerel ayar* olarak geçirilir. Daha fazla bilgi için [yerel](../../c-runtime-library/locale.md).
 
-Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki *Dize1* veya *dize2* null işaretçi açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, bu işlevlerin dönüş **_NLSCMPERROR** ve **errno** için **EINVAL**.
+Bu işlevlerin tümü kendi parametrelerini doğrular. Ya da *Dize1* veya *dize2* null bir işaretçiyse, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, bu işlevler döndürür **_NLSCMPERROR** ayarlayıp **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -172,15 +172,15 @@ Tüm bu işlevlerin kendi parametreleri doğrulayın. Her iki *Dize1* veya *dize
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_strnicmp**, **_strnicmp_l**|< string.h >|
-|**_wcsnicmp**, **_wcsnicmp_l**|< string.h > veya < wchar.h >|
+|**_strnicmp**, **_strnicmp_l**|\<String.h >|
+|**_wcsnicmp**, **_wcsnicmp_l**|\<String.h > veya \<wchar.h >|
 |**_mbsnicmp**, **_mbsnicmp_l**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md).
+Örneğin bakın [strncmp](strncmp-wcsncmp-mbsncmp-mbsncmp-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

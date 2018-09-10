@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu düğmesi silme | Microsoft Docs
+title: (C++) bir araç çubuğu düğmesi silme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,22 +8,22 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- toolbar buttons (in Toolbar editor), deleting
-- Toolbar editor, deleting buttons
+- toolbar buttons [C++], deleting
+- Toolbar editor [C++], deleting buttons
 ms.assetid: 0888cb9b-6804-4717-93d0-3437bbc6241c
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1bdcd4a08cbfa00e509c7f654d3d8feaaf3da7a7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ce8b3bd682c7d4a0b019bf339e1fb543553bfc03
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592217"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318066"
 ---
-# <a name="deleting-a-toolbar-button"></a>Araç Çubuğu Düğmesi Silme
+# <a name="deleting-a-toolbar-button-c"></a>(C++) bir araç çubuğu düğmesi silme
 
 ### <a name="to-delete-a-toolbar-button"></a>Araç çubuğu düğmesi silme
 

@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynakları kopyalama | Microsoft Docs'
+title: 'Nasıl yapılır: kaynakları (C++) kopyalama | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,26 +11,26 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resources [Visual Studio], moving between files
-- resources [Visual Studio], copying
-- resource files, copying or moving resources between
-- resource files, tiling
-- .rc files, copying resources between
-- rc files, copying resources between
+- resources [C++], moving between files
+- resources [C++], copying
+- resource files [C++], copying or moving resources between
+- resource files [C++], tiling
+- .rc files [C++], copying resources between
+- rc files [C++], copying resources between
 ms.assetid: 65f523e8-017f-4fc6-82d1-083c56d9131f
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 20abc194f1286e47477c4510f9ceef6250b9b3f7
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cc0fc8f3177baa01742df84c926a3c6421aa9a16
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43687225"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314590"
 ---
-# <a name="how-to-copy-resources"></a>Nasıl Yapılır: Kaynakları Kopyalama
+# <a name="how-to-copy-resources-c"></a>Nasıl yapılır: kopyalama kaynaklar (C++)
 
 Kaynakları bir dosyadan başka değişiklik yapmadan kopyalayabilir veya yapabilecekleriniz [dilini veya koşulunu kaynağının bu kopyalarken değiştirme](../windows/how-to-change-the-language-or-condition-of-a-resource-while-copying.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı tablosunu giriş ekleme | Microsoft Docs
+title: (C++) Hızlandırıcı tablosunu giriş ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,18 +16,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6d463dc59e88dbd5c302de632d5261f29d8a4aab
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7055c21a2b9e7d0e32f3dac56641513b19953e18
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595573"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315588"
 ---
-# <a name="adding-an-entry-to-an-accelerator-table"></a>Hızlandırıcı Tablosunu Giriş Ekleme
+# <a name="adding-an-entry-to-an-accelerator-table-c"></a>(C++) Hızlandırıcı tablosunu giriş ekleme
 
 ### <a name="to-add-an-entry-to-an-accelerator-table"></a>Hızlandırıcı tablosunu giriş ekleme
 
-1. Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
+1. Bir C++ projesinde Hızlandırıcı tablosu simgeye çift tıklayarak açın [kaynak görünümü](../windows/resource-view-window.md).
 
    > [!NOTE]
    > Projenize bir .rc dosyası yoksa, lütfen bkz [yeni bir kaynak betik dosyası oluşturma](../windows/how-to-create-a-resource-script-file.md).

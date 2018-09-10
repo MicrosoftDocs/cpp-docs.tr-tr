@@ -12,8 +12,7 @@ dev_langs:
 helpviewer_keywords:
 - bitmaps [C++]
 - images [C++], creating
-- resource toolbars
-- resources [Visual Studio], creating images
+- resources [C++], creating images
 - bitmaps [C++], creating
 - graphics [C++], creating
 - Image editor [C++], creating images
@@ -23,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bab69a9f7e62161d95ebcf788a05f776af88f10f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 82479dab780fce677eeee84c4ccde880fe19d2bc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607240"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314917"
 ---
 # <a name="creating-an-icon-or-other-image-image-editor-for-icons"></a>Simge veya Başka Görüntü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

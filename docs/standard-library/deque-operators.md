@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (deque)
 - std::operator&lt;= (deque)
 - std::operator== (deque)
-ms.openlocfilehash: a714fe6cb84697df9cd449cf79ff024671e75ba6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 5055d637e385754e0cd2c7cf46402bdf6d53b3a4
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110363"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314514"
 ---
 # <a name="ltdequegt-operators"></a>&lt;deque&gt; işleçleri
 
@@ -79,9 +79,9 @@ int main( )
    else
       cout << "The deques are equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are not equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  İşleci&lt;
@@ -133,9 +133,9 @@ int main( )
    else
       cout << "Deque c1 is not less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than deque c2.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  İşleci&lt;=
@@ -187,9 +187,9 @@ int main( )
    else
       cout << "Deque c1 is greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is less than or equal to deque c2.
-*\
+*/
 
 ```
 
@@ -244,10 +244,10 @@ int main( )
    else
       cout << "The deques are not equal." << endl;
 }
-\* Output:
+/* Output:
 The deques are equal.
 The deques are not equal.
-*\
+*/
 
 ```
 
@@ -301,9 +301,9 @@ int main( )
    else
       cout << "Deque c1 is not greater than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than deque c2.
-*\
+*/
 
 ```
 
@@ -357,9 +357,9 @@ int main( )
    else
       cout << "Deque c1 is less than deque c2." << endl;
 }
-\* Output:
+/* Output:
 Deque c1 is greater than or equal to deque c2.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

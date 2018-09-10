@@ -10,7 +10,7 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- symbols, value restrictions
+- symbols [C++], value restrictions
 - restrictions, symbol values
 ms.assetid: 32467ec3-690b-4cd0-a4d0-7d189a3296cb
 author: mikeblome
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5ed1631d9b8f0c591006c7b708662b3a7321f22b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6b174e46df7822ddf5ffbc747d0a7eb3cd71245e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602750"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315411"
 ---
 # <a name="symbol-value-restrictions"></a>Sembol Değeri Kısıtlamaları
 

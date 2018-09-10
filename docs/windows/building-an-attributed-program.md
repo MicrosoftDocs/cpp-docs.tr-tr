@@ -8,16 +8,13 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- tlb files
+- tlb files [C++]
 - MIDL
 - MIDL, linker output
-- IDL files
-- tlb files, building attributed programs
-- .tlb files, building attributed programs
-- IDL files, building
-- attributes [C++], building type libraries and .idl files
-- .tlb files
-- .idl files, building
+- IDL files [C++]
+- building type libraries and .idl files
+- .tlb files [C++]
+- .idl files [C++]
 - type libraries, linker options for building
 ms.assetid: 04997b5f-bf2c-46ec-b868-c4adebbef5f4
 author: mikeblome
@@ -25,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7909884a355ccad5e1bf9d18a38dd3e4690296ee
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2fc148478433106eabdb2bc57ef7bb6c91d13601
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42587513"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315300"
 ---
 # <a name="building-an-attributed-program"></a>Öznitelikli Program Derleme
 

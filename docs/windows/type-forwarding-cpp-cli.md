@@ -8,19 +8,19 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- type forwarding, Visual C++
+- type forwarding, C++
 ms.assetid: ae730b69-0c27-41cc-84e1-3132783866ea
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 44b76e1a3eaff778fc64806eec49eff1bf2a10eb
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d10c025c22523e6329f051fcfbe76988337992a2
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596675"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318154"
 ---
 # <a name="type-forwarding-ccli"></a>Tür İletme (C++/CLI)
 

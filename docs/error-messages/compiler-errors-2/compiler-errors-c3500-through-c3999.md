@@ -255,12 +255,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1a157bcd3ecdce16a25d5bb6523ed6962a94a18
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 49677077761a11df93a540a749e140485fa9485f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465536"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319077"
 ---
 # <a name="compiler-errors-c3500-through-c3999"></a>Derleyici hataları C3500 ile c3999 arasındaki
 
@@ -496,7 +496,7 @@ Belgelerin bu bölümdeki makaleleri bir alt kümesini derleyici tarafından olu
 |[Derleyici Hatası C3721](compiler-error-c3721.md)|'*imza*': olay için uyumsuz imza|
 |[Derleyici Hatası C3722](compiler-error-c3722.md)|Genel bir olaya izin verilmez|
 |[Derleyici Hatası C3723](compiler-error-c3723.md)|'*işlevi*': olay çözümlenemedi|
-|[Derleyici Hatası C3724](compiler-error-c3724.md)|gereken # kullanmak için < windows.h > include olaylarda çoklu iş parçacığı|
+|[Derleyici Hatası C3724](compiler-error-c3724.md)|gereken #include \<windows.h > kullanılacak olaylarda çoklu iş parçacığı|
 |Derleyici Hatası C3725|Kullanımdan kalktı.|
 |Derleyici Hatası C3726|Kullanımdan kalktı.|
 |[Derleyici Hatası C3727](compiler-error-c3727.md)|'*olay*': yönetilen bir olay bir temsilci işaretçisidir veri üyesi veya bir üye işlev olmalıdır|

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cb03720238ee9b0eccdb7d996d1cc8e20a85b4e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3f377d2005625237113ebe881081f1eaf41d2b74
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44099505"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318609"
 ---
 # <a name="minus-struct"></a>minus Yapısı
 
@@ -109,11 +109,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 1 5 9 13 17 21 )
 The vector v2 = ( -1 2 5 8 11 14 )
 The element-wise differences between v1 and v2 are: ( 2 3 4 5 6 7 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

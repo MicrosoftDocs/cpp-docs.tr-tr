@@ -8,19 +8,19 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++]
+- attributes [C++/CLI]
 ms.assetid: 9f4dd43f-9909-43d6-91d2-05734643876e
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ddcb6fc7da45eb5e90c8ffdfde80748d015323df
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ad982ee72e93a2779e4f3334984a325514248565
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601428"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315112"
 ---
 # <a name="attributes-by-group"></a>Gruplara Göre Öznitelikler
 C++ öznitelikleri, aşağıdaki işlevsel gruplar halinde düzenlenir.

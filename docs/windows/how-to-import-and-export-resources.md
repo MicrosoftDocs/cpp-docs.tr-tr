@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: içeri ve dışarı aktarma kaynakları | Microsoft Docs'
+title: 'Nasıl yapılır: içeri ve dışarı aktarma, kaynakları (C++) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,10 +11,10 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resources [Visual Studio], exporting
+- resources [C++], exporting
 - graphics [C++], exporting
 - graphics [C++], importing
-- resources [Visual Studio], importing
+- resources [C++], importing
 - bitmaps [C++], importing and exporting
 - toolbars [C++], importing
 - images [C++], importing
@@ -27,12 +27,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2d6e2c3a27204ffb6e1c23f158f1f3fdc93a792e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a6b975b932545d62b62db0b44bad549a3570a602
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596977"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318557"
 ---
 # <a name="how-to-import-and-export-resources"></a>Nasıl Yapılır: Kaynakları İçeri ve Dışarı Aktarma
 

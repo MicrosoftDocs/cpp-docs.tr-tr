@@ -8,19 +8,19 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], grouped by category
+- attributes [C++/CLI], grouped by category
 ms.assetid: 0f0679dc-2c1e-4463-b6a8-5829e36782e1
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a53577446db1001b354f5765c9c7b6c5e0e1e06b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7ce109fa4a7eb3adbcb15150a14a03801a9e247b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604201"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316490"
 ---
 # <a name="attribute-categories"></a>Öznitelik Kategorileri
 Öznitelik başvurusu, Visual c++'ta kullanabileceğiniz özniteliklerin çeşitli türleri açıklanmaktadır.

@@ -49,19 +49,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df2168da257c6d1d07cff6400122830da60b5fef
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ca1591bba9518b1b5f6122f51bf60f5a23fc7a26
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32417451"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319012"
 ---
 # <a name="strcmp-wcscmp-mbscmp"></a>strcmp, wcscmp, _mbscmp
 
-Dizeleri karşılaştırın.
+Dizeleri karşılaştırır.
 
 > [!IMPORTANT]
-> **_mbscmp** Windows çalışma zamanı'nda yürütme uygulamaları kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> **_mbscmp** Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -83,23 +83,23 @@ int _mbscmp(
 ### <a name="parameters"></a>Parametreler
 
 *Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+Karşılaştırmak için null ile sonlandırılmış dizeler.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
 Bu işlevlerin her biri için dönüş değeri sıralı ilişkisi gösterir *Dize1* için *dize2*.
 
-|Değer|Dize2 Dize1 ilişkisi|
+|Değer|Dize1 dize2 ile ilişkisi|
 |-----------|----------------------------------------|
-|< 0|*Dize1* olan değerinden *dize2*|
+|< 0|*Dize1* olduğu küçüktür *dize2*|
 |0|*Dize1* aynıdır *dize2*|
-|> 0|*Dize1* değerinden daha büyük *dize2*|
+|> 0|*Dize1* büyüktür *dize2*|
 
-Parametre doğrulama hata **_mbscmp** döndürür **_NLSCMPERROR**, içinde tanımlanan \<string.h > ve \<mbstring.h >.
+Parametre doğrulama hata **_mbscmp** döndürür **_NLSCMPERROR**, tanımlanan \<string.h > ve \<mbstring.h >.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Strcmp** işlevi gerçekleştiren bir sıra karşılaştırması *Dize1* ve *dize2* ve ilişkilerini gösteren bir değer döndürür. **wcscmp** ve **_mbscmp** , sırasıyla, joker karakter ve çok baytlı karakter sürümleridir **strcmp**. **_mbscmp** geçerli birden çok baytlı kod sayfasına göre çok baytlı karakter sıralarının tanır ve döndürür **_NLSCMPERROR** bir hata. Daha fazla bilgi için bkz: [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, varsa *Dize1* veya *dize2* null işaretçi **_mbscmp** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa **_mbscmp** döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**. **strcmp** ve **wcscmp** parametrelerini doğrulamaz. Bu üç işlevler aynı şekilde aksi davranır.
+**Strcmp** işlevi, sıralı bir karşılaştırma gerçekleştirir *Dize1* ve *dize2* ve ilişkilerini gösteren bir değer döndürür. **wcscmp** ve **_mbscmp** , sırasıyla, geniş karakter ve çok baytlı karakter sürümleridir **strcmp**. **_mbscmp** geçerli çok baytlı kod sayfasına göre çok baytlı karakter dizileri tanır ve döndürür **_NLSCMPERROR** üzerinde hata. Daha fazla bilgi için [kod sayfaları](../../c-runtime-library/code-pages.md). Ayrıca, varsa *Dize1* veya *dize2* null bir işaretçiyse, **_mbscmp** açıklandığı gibi geçersiz parametre işleyicisini çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse **_mbscmp** döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**. **strcmp** ve **wcscmp** kendi parametrelerini doğrulamazlar. Bu üç işlev aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -107,23 +107,23 @@ Parametre doğrulama hata **_mbscmp** döndürür **_NLSCMPERROR**, içinde tan�
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tcscmp**|**strcmp**|**_mbscmp**|**wcscmp**|
 
-**Strcmp** işlevler farklı **strcoll** , işlevlerde **strcmp** karşılaştırmaları sıralı ve yerel ayar tarafından etkilenmez. **strcoll** kullanarak dizeleri lexicographically karşılaştırır **LC_COLLATE** geçerli yerel ayar kategorisi. Hakkında daha fazla bilgi için **LC_COLLATE** kategorisi, bkz: [setlocale, _wsetlocale](setlocale-wsetlocale.md).
+**Strcmp** işlevleri tümünden **strcoll** , İşlevler **strcmp** karşılaştırmaları sıralı ve yerel ayar tarafından etkilenmez. **strcoll** lexicographically kullanarak dizeleri karşılaştırır **LC_COLLATE** geçerli yerel ayarının kategori. Hakkında daha fazla bilgi için **LC_COLLATE** kategori bkz [setlocale, _wsetlocale](setlocale-wsetlocale.md).
 
-"C" yerel karakter kümesi (ASCII karakter kümesi) karakter sırasını lexicographic karakter sırası ile aynıdır. Ancak, diğer yerlerde karakter kümesinden karakter sırasını lexicographic siparişte farklı olabilir. Örneğin, Avrupa belirli yerlerde karakter 'a' (değer 0x61) karakterinin önünde 'ä' (değer 0xE4) karakter kümesi, ancak 'ä' gelen önünde karakter karakter gelir 'bir' lexicographically.
+"C" yerel ayarında (ASCII karakter kümesi) karakter kümesindeki karakterlerin sırası sözlük karakter sırası ile aynıdır. Ancak, başka yerel ayarlara karakter kümesindeki karakterlerin sırası sözlük sırasından farklı olabilir. Örneğin, Avrupa belirli yerlerde karakter 'a' (değer 0x61) önceki karakteri 'ä' (değer 0xE4) karakter kümesi, ancak 'ä' gelen karakterin önüne karakter gelir 'bir' lexicographically.
 
-Karakter kümesi ve lexicographic karakter sırası için farklı yerlerde kullandığınız **strcoll** yerine **strcmp** dizeleri lexicographic karşılaştırması. Alternatif olarak, kullanabileceğiniz **strxfrm** özgün dizeleri ve sonra kullanıma **strcmp** elde edilen dizelerde.
+Kendisi için karakter kümesi ve lexicographic karakter sırası farklı yerlerde kullandığınız **strcoll** yerine **strcmp** lexicographic karşılaştırmasını dizeleri için. Alternatif olarak, **strxfrm** özgün dizeleri ve ardından **strcmp** elde edilen dizeler.
 
-**Strcmp** işlevleri duyarlıdır. **_stricmp**, **_wcsicmp**, ve **_mbsicmp** ilk bunları küçük formlarına dönüştürerek dizeleri karşılaştırmak. 'Z' arasında bulunan karakterler içeren iki dizeyi ve ASCII tablosundaki ' bir' ('[','\\', ']', ' ^', '_' ve '\`') farklı şekilde, kendi çalışması bağlı olarak karşılaştırın. Örneğin, iki "ABCDE" dizeleri ve "ABCD ^" karşılaştırma küçük harf ise bir yolu karşılaştırma ("abcde" > "abcd ^") ve diğer bir yol ("ABCDE" < "ABCD ^") karşılaştırma büyük harf ise.
+**Strcmp** işlevleri duyarlıdır. **_stricmp**, **_wcsicmp**, ve **_mbsicmp** ilk bunları küçük formlarına dönüştürerek dizeleri karşılaştırır. Bulunduğu 'Z' arasında karakterler içeren iki dizeyi ASCII tablosunda ' bir ' ('[','\\', ']', ' ^', '_' ve '\`') bağlı olarak farklı şekilde karşılaştırın. Örneğin, iki "ABCDE" dizeleri ve "ABCD ^" karşılaştırma küçük harf ise tek yolla karşılaştırılır ("abcde" > "abcd ^") ve başka bir yolla ("ABCDE" < "ABCD ^") karşılaştırma büyük harf ise.
 
 ## <a name="requirements"></a>Gereksinimler
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**strcmp**|< string.h >|
-|**wcscmp**|< string.h > veya < wchar.h >|
+|**strcmp**|\<String.h >|
+|**wcscmp**|\<String.h > veya \<wchar.h >|
 |**_mbscmp**|\<Mbstring.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

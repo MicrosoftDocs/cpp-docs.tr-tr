@@ -1,5 +1,5 @@
 ---
-title: İletişim kutusunda denetimleri ortalama | Microsoft Docs
+title: (C++) iletişim kutusunda denetimleri ortalama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], aligning
-- dialog box controls, placement
+- dialog box controls [C++], placement
 - Center in Dialog command
 ms.assetid: 501fed94-af47-4845-9faa-a6642d7eb786
 author: mikeblome
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 434d4a8a0746bf14dc613543338f64c97adb79c6
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f21517d9a8151c853586b2fc4a0beb1821b114e9
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595904"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317010"
 ---
-# <a name="centering-controls-in-a-dialog-box"></a>İletişim Kutusunda Denetimleri Ortalama
+# <a name="centering-controls-in-a-dialog-box-c"></a>(C++) iletişim kutusunda denetimleri ortalama
 
 ### <a name="to-center-controls-in-a-dialog-box"></a>İletişim kutusundaki denetimlere ortalamak için
 

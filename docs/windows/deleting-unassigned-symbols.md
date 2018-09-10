@@ -8,8 +8,8 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- symbols, deleting
-- symbols, unassigned
+- symbols [C++], deleting
+- symbols [C++], unassigned
 - unassigned symbols
 ms.assetid: 47641c46-1bad-44fb-8f85-79ae36919f13
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0ee2e0cdaca30099938422954ed0d29fc446610f
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2c4b19cc2bf1ed60f02687b82a57745c328fc114
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609231"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44312698"
 ---
 # <a name="deleting-unassigned-symbols"></a>Atanmamış Sembolleri Silme
 

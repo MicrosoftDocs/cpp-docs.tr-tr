@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - guides, disabling snapping
-- Dialog editor, snap to guides
+- Dialog editor [C++], snap to guides
 - snap to guides (Dialog editor)
 - controls [C++], snap to guides/grid
 ms.assetid: 51efa07b-8684-474e-a0b4-191ec5d91d1a
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9dd35bad3d7cf5a83ba25a6937ea606af81407c8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1e3ae2e982ce04743644f9c94d9c163478c0b67e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598927"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313123"
 ---
 # <a name="disabling-guides"></a>Kılavuzları Devre Dışı Bırakma
 

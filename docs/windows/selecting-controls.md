@@ -8,9 +8,9 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, selecting controls
+- Dialog Editor [C++], selecting controls
 - dominant controls
-- dialog box controls, selecting in editor
+- dialog box controls [C++], selecting in editor
 - controls [C++], selecting
 - size, controls
 - controls [C++], dominant
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 29372cc451105de81fc340da1e4e0de427551529
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 82abd52573c35b253e83587a18f2c4531af6bf23
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595167"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313136"
 ---
 # <a name="selecting-controls"></a>Denetimleri Seçme
 

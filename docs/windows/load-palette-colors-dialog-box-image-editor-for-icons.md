@@ -1,5 +1,5 @@
 ---
-title: Palet Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) renkler | Microsoft Docs
+title: Palet Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++) renkler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,23 +11,23 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - color palettes
-- Load Palette Colors dialog box
+- Load Palette Colors dialog box [C++]
 ms.assetid: a1b17203-3e02-4498-91de-4ed089156df1
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f1322f4146c4b4f8d497dfe4f7a2c06df18394b7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 24eb04dc07ced27d5ba24e1c8a567facff47bf98
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612122"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316334"
 ---
-# <a name="load-palette-colors-dialog-box-image-editor-for-icons"></a>Palet Renkleri Yükle İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
+# <a name="load-palette-colors-dialog-box-c-image-editor-for-icons"></a>Palet renkleri Yükle iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
-Projenizde kullanılacak özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).
+C++ projenizde kullanılacak özel renk paletlerini yüklemek için bu iletişim kutusunu kullanın. Daha fazla bilgi için [kaydetme ve yükleme farklı renk paletlerini](../windows/saving-and-loading-different-color-palettes-image-editor-for-icons.md).
 
 ### <a name="look-in"></a>İçine bak
 

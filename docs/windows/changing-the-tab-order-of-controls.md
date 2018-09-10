@@ -10,22 +10,22 @@ dev_langs:
 helpviewer_keywords:
 - controls [C++], tab order
 - focus, tab order
-- tab controls, tab order
+- tab controls [C++], tab order
 - Tabstop property for controls
 - controls [C++], focus
-- dialog box controls, tab order
+- dialog box controls [C++], tab order
 ms.assetid: e2cee764-4367-42d7-9563-65a68f76f5ff
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f5f846244956687b73b6fc7272fe0c4d7d00d0e0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 330fe056a4b06e006d69e630cc933b4402eeb0c0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596347"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316607"
 ---
 # <a name="changing-the-tab-order-of-controls"></a>Denetimlerin Sekme Sırasını Değiştirme
 

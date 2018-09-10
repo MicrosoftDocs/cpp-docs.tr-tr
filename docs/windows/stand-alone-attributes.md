@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - standalone attributes
-- attributes [C++], standalone
+- attributes [C++/CLI], standalone
 ms.assetid: 0d72e84e-236c-43b3-ac9a-d9b91fcd6794
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 6562a1de8baa9a5805f044233b97bf8dd8840638
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5d395053231f54570e1bf86ba79f6237b89681fc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613764"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315554"
 ---
 # <a name="stand-alone-attributes"></a>Tek Başına Öznitelikler
 Tek başına öznitelik C++ anahtar sözcüğü çalışmaz, ancak bir kod satırı gibi daha fazla. Tek başına öznitelik deyimleri noktalı virgül satırın sonunda gerektirir.

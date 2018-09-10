@@ -8,9 +8,6 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- closed figures, drawing
-- lines [C++], painting
-- lines [C++], drawing
 - Image editor [C++], drawing lines
 - shapes, drawing
 ms.assetid: 7edd86db-77b1-451f-8001-bbfed9c6304f
@@ -19,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3d1eba17d961db9ec96e4250e49c10ecad5b75b4
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c6c5652f61211ebd4d33de6f2dce07bd49b4f0a0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590736"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313246"
 ---
 # <a name="drawing-lines-or-closed-figures-image-editor-for-icons"></a>Çizgi veya Kapalı Şekiller Çizme (Simgeler İçin Görüntü Düzenleyicisi)
 

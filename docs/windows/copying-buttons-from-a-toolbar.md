@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğundan düğme kopyalama | Microsoft Docs
+title: (C++) araç çubuğundan düğme kopyalama | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Toolbar editor, copying buttons
+- Toolbar editor [C++], copying buttons
 - toolbars [C++], copying buttons
 - toolbar buttons [C++], copying
 ms.assetid: 3a31e428-f125-44c6-8966-a8a3fac5b117
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f4e35cd10b2e41551cb7eb019b53a2bcf0735bcc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 92002b41ace8fe68c80d2b607bb692f7fb9f9c62
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596016"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318687"
 ---
-# <a name="copying-buttons-from-a-toolbar"></a>Araç Çubuğundan Düğme Kopyalama
+# <a name="copying-buttons-from-a-toolbar-c"></a>(C++) araç çubuğundan düğme kopyalama
 
 ### <a name="to-copy-buttons-from-a-toolbar"></a>Araç çubuğundan düğme kopyalama
 

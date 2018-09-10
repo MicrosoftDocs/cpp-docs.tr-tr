@@ -8,8 +8,8 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- display devices, copying images
-- cursors, copying
+- display devices [C++], copying images
+- cursors [C++], copying
 - icons, copying
 ms.assetid: 0510c20c-f820-4770-92a5-e9263a63d8be
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 31ba668078d80b927d6a898d4700efe1e546ea1e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: f1d68b3f35f20d74de95e559a21e7ccca3dc0919
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600103"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313890"
 ---
 # <a name="copying-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Kopyalama (Simgeler İçin Görüntü Düzenleyicisi)
 

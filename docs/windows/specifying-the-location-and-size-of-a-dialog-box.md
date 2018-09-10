@@ -1,5 +1,5 @@
 ---
-title: İletişim kutusunun boyutunu ve konumunu belirtme | Microsoft Docs
+title: Bir iletişim kutusu (C++) boyutunu ve konumunu belirtme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,24 +8,24 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- dialog boxes, size
-- dialog boxes, positioning
+- dialog boxes [C++], size
+- dialog boxes [C++], positioning
 ms.assetid: 2b7c495e-6595-4cfb-9664-80b2826d0851
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: be3db9c689b79edd17af567831d62071d79cad2d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 854e4df84bfc5f75eda8f98fa117c199ba054b3a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604625"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316581"
 ---
-# <a name="specifying-the-location-and-size-of-a-dialog-box"></a>İletişim Kutusunun Boyutunu ve Konumunu Belirtme
+# <a name="specifying-the-location-and-size-of-a-dialog-box-c"></a>Bir iletişim kutusu (C++) boyutunu ve konumunu belirtme
 
-Bir iletişim kutusu yanı sıra konumu boyutunu ve denetimleri içindeki boyutunu ve konumunu, iletişim kutusu birimleri cinsinden ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerleri tek tek denetimler ve iletişim kutusu görünür.
+Bir C++ iletişim kutusu yanı sıra konumu boyutunu ve denetimleri içindeki boyutunu ve konumunu, iletişim kutusu birimleri cinsinden ölçülür. Visual Studio durum seçtiğiniz zaman çubuğunda sağ alt köşesindeki değerleri tek tek denetimler ve iletişim kutusu görünür.
 
 İçinde ayarlayabilirsiniz üç özellik [Özellikler penceresi](/visualstudio/ide/reference/properties-window) bir iletişim kutusu ekran görüneceği yeri belirtmek için. **Merkezi** özelliğidir; Boole değeri ayarlamanız **True**, iletişim kutusunda her zaman ekranın ortasında görünür. Ayarlarsanız **False**, ardından ayarlayabilirsiniz **XPos** ve **YPos** ekranda olduğunda iletişim kutusu görünür açıkça tanımlamak için özellikleri. Sol üst köşesinde olarak tanımlanan görüntüleme alanının sapma değerlerini konumu özelliklerdir `{X=0, Y=0}`. Konumu de bağlıdır **mutlak hizalama** özelliği: varsa **True**, ekrana göreli; koordinatları, **False**, iletişim göreli koordinatları Sahibin penceresi.
 

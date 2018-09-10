@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::chrono [C++], time_point
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99209063e8856ffe9ea26ffaaf0917e1f6cd487b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 72ce06a3f722bca0147d220fb8602ab9e30f8751
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954266"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319025"
 ---
 # <a name="timepoint-class"></a>time_point Sınıfı
 
@@ -160,7 +160,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 
 İlk Oluşturucu bir nesne oluşturur, saklı `duration` değeri eşittir [duration::zero](../standard-library/duration-class.md#zero).
 
-İkinci oluşturucu depolanmış süre değeri eşit olan bir nesne oluşturur *süre*. Sürece `is_convertible<Duration2, duration>` *korumadıkça*, İkinci kurucu aşırı yükleme çözünürlüğü içinde yer almaz. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
+İkinci oluşturucu depolanmış süre değeri eşit olan bir nesne oluşturur *süre*. Sürece `is_convertible<Duration2, duration>` tutan true, İkinci kurucu aşırı yükleme çözünürlüğü içinde yer yok. Daha fazla bilgi için [< type_traits >](../standard-library/type-traits.md).
 
 Üçüncü Oluşturucu başlatır, `duration` kullanarak değer `Tp.time_since_epoch()`.
 

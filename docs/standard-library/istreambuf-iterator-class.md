@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 381316cd7b05f62ba8b730c376e266e5fd0a70cb
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 16d22cef053dab691d74351aacf7380764861152
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109296"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314501"
 ---
 # <a name="istreambufiterator-class"></a>istreambuf_iterator Sınıfı
 
@@ -217,9 +217,9 @@ int main( )
    istreambuf_iterator<char>::int_type inttype1 = 100;
    cout << "The inttype1 = " << inttype1 << "." << endl;
 }
-\* Output:
+/* Output:
 The inttype1 = 100.
-*\
+*/
 ```
 
 ## <a name="istream_type"></a>  istreambuf_iterator::istream_type

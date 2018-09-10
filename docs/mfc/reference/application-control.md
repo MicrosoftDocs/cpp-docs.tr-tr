@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6d8780c249fdf768c322e3026240642c4da43c4
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 538a376dd14eae32864b494b7e79db1c89686b84
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338727"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315021"
 ---
 # <a name="application-control"></a>Uygulama Denetimi
 OLE uygulamaları ve bunların nesneler üzerinde önemli denetim gerektirir. OLE sistem DLL'lerini Başlat ve uygulamaları otomatik olarak yayınlayın, üretim ve değişikliği nesnelerin koordine etmek ve benzeri olması gerekir. Bu konudaki işlevleri bu gereksinimleri karşılar. OLE sistem DLL'lerini çağrılan ek olarak, bu işlevler, bazen de uygulamalar tarafından çağrılmalıdır. 
@@ -186,7 +186,7 @@ AfxOleLockControl(_T("MSCAL.Calendar"));
 ```
    
 ### <a name="requirements"></a>Gereksinimler  
- **Başlık:** < afxwin.h >  
+ **Başlık:** afxwin.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)   
@@ -332,7 +332,7 @@ AfxOleUnlockControl(_T("MSCAL.Calendar"));
 ```
    
 ### <a name="requirements"></a>Gereksinimler  
- **Başlık:** < afxwin.h >  
+ **Başlık:** afxwin.h  
    
 ### <a name="see-also"></a>Ayrıca Bkz.  
  [Makroları ve genel öğeleri](mfc-macros-and-globals.md)  

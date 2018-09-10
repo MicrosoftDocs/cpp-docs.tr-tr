@@ -8,7 +8,7 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], parameter attributes
+- attributes [C++/CLI], parameter attributes
 - parameter attributes
 ms.assetid: 024c2dd5-49d7-4ced-a17a-c56c1bc485b6
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa757834e61dab89ce6ff4682bd9a390c9b650bf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 632937d229e7f7cd3d0dfb6c9df03e2c5a28cb07
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598703"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314930"
 ---
 # <a name="parameter-attributes"></a>Parametre Öznitelikleri
 

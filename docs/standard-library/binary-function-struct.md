@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6019f2bb3d425b8ebfa4c49c3b6623d331fa5534
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b9aa8c65632f2a4c1555e211985d3b3005fabe11
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212574"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316932"
 ---
 # <a name="binaryfunction-struct"></a>binary_function Yapısı
 
@@ -98,12 +98,11 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 11 5.5 3.66667 2.75 2.2 1.83333 )
 The vector v2 = ( -0 -2 -4 -6 -8 -10 )
 The element-wise averages are: ( 5.5 1.75 -0.166667 -1.625 -2.9 -4.08333 )
-*\
-
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

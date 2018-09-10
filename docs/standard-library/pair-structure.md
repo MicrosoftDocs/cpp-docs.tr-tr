@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcee56d93059e30bc07e3f964b581624f0bb555d
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f11fb76f4009f6497020c26f26184d2ddca4506b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108836"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318277"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
@@ -154,7 +154,7 @@ int main( )
            << " is already in m1,\n so the insertion failed." << endl;
    }
 }
-\* Output:
+/* Output:
 The pair p1 is: ( 10, 0.011 ).
 The pair p2 is: ( 10, 0.222 ).
 The pair p3 is: ( 10, 0.011 ).
@@ -163,7 +163,7 @@ The element (4,40) was inserted successfully in m1.
 The element with a key value of
 ( (pr2.first) -> first ) = 1 is already in m1,
 so the insertion failed.
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

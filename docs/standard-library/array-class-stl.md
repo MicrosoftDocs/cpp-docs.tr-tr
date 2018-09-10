@@ -106,12 +106,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac07884d3ac7390bdb3aba4144c1c436041434f0
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c52a68e87e29aaa827a61e657e04364acf6205b4
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110064"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318797"
 ---
 # <a name="array-class-c-standard-library"></a>array sınıfı (Standart C++ Kitaplığı)
 
@@ -1224,7 +1224,7 @@ int main()
 Denetlenen dizi değiştirir.
 
 ```cpp
-array <Value>%  operator=(array <Value>% right);
+array<Value> operator=(array<Value> right);
 ```
 
 ### <a name="parameters"></a>Parametreler

@@ -8,19 +8,19 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], contexts
+- attributes [C++/CLI], contexts
 ms.assetid: 3086351f-77a8-4048-99e9-3b6b041b9437
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7635f49a494648f18bcd59eb8d212cc76d1f1539
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0e3935b168220b528afaecd2e1438cfe49496b1b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600806"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313669"
 ---
 # <a name="attribute-contexts"></a>Öznitelik Bağlamları
 C++ öznitelikleri, dört temel alan kullanarak tanımlanabilen: Bunlar uygulanabilir hedef (**uygulanacağı**), tekrarlanabilir olsalar da (**Repeatable**), diğer öznitelikleri (varlığınıgerekli **Gerekli öznitelik**) ve diğer özniteliklerini uyumsuzluklar (**geçersiz öznitelikler**). Bu alanlar, her özniteliğin başvuru konusu eşlik eden bir tabloda listelenir. Bu alanların her biri aşağıda açıklanmıştır.

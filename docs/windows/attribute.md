@@ -13,19 +13,19 @@ helpviewer_keywords:
 - __typeof keyword
 - custom attributes, creating
 - attribute attribute
-- attributes [C++], custom
+- attributes [C++/CLI], custom
 ms.assetid: 8cb3489f-65c4-44ea-b0aa-3c3c6b15741d
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa6c9dfa36ae753e87f0dd4b8c0fc13d3db6aeba
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 54699888fc2988dd9b4ccec2a57b6d9df0d4e79e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679914"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314779"
 ---
 # <a name="attribute"></a>özniteliği
 

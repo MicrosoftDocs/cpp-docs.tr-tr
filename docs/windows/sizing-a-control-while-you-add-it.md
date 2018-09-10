@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- dialog box controls, size
+- dialog box controls [C++], size
 - controls [C++], sizing
 ms.assetid: 06b1dd2b-0ba1-4e1f-adc3-cb73679f765e
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f1693ecdf60109732eaf13f41665590ee806a951
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: da998c748a3471f053c922e0a80c33d1526b2055
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598768"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313149"
 ---
 # <a name="sizing-a-control-while-you-add-it"></a>Eklerken Denetimi Boyutlandırma
 

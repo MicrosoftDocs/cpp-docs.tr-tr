@@ -1,5 +1,5 @@
 ---
-title: İletişim kutusu düzenleyicisindeki özel denetimler | Microsoft Docs
+title: Özel denetimler iletişim kutusu düzenleyicisindeki (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,24 +11,24 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], templates
-- custom controls [Visual Studio], dialog boxes
-- custom controls [Visual Studio]
-- dialog box controls, custom (user) controls
-- Dialog editor, custom controls
+- custom controls [C++], dialog boxes
+- custom controls [C++]
+- dialog box controls [C++], custom (user) controls
+- Dialog Editor [C++], custom controls
 ms.assetid: f494b314-4000-4bbe-bbd0-4b18fb71ede1
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7329873b8f56b44904c38161e737d99d29efa580
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c1bebca381bc9d6d644ac1aac95b902065268a9d
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592992"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317712"
 ---
-# <a name="custom-controls-in-the-dialog-editor"></a>İletişim Kutusu Düzenleyicisindeki Özel Denetimler
+# <a name="custom-controls-in-the-dialog-editor-c"></a>Özel denetimler iletişim kutusu düzenleyicisindeki (C++)
 
 İletişim kutusu Düzenleyicisi var olanı kullan "özel" veya "kullanıcı" iletişim kutusunda şablon denetimlerinde sağlar.
 

@@ -8,8 +8,6 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- images [C++], magnification in Image editor
-- magnification, Image editor
 - Image editor [C++], magnification
 ms.assetid: d1b0c9e0-fe54-4b2a-b75e-ffa0fa7c8cd9
 author: mikeblome
@@ -17,12 +15,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d7c7f95179f91577725821dd9348cd4b26b99ff3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 561c5c46d0486718cbe05af1507459c26babea8b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606768"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315281"
 ---
 # <a name="changing-the-magnification-factor-image-editor-for-icons"></a>Büyütme Katsayısını Değiştirme (Simgeler İçin Görüntü Düzenleyicisi)
 

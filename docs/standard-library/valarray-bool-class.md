@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6b9cd3778ceb90e5e73a927f098c62d2c1e9bad
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c05b1bd6e8bb13e0c2f19b8f3c666b57308e6680
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964303"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316997"
 ---
 # <a name="valarrayltboolgt-class"></a>valarray&lt;bool&gt; sınıfı
 
@@ -73,12 +73,12 @@ int main( )
       cout << vaBool [ i ] << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The initial Left valarray is: ( 0 1 -2 3 -4 5 -6 7 -8 9 ).
 The initial Right valarray is: ( 0 1 2 3 4 5 6 7 8 9 ).
 The result of the less-than comparison test is the
  valarray<bool>: ( 0 0 1 0 1 0 1 0 1 0 ).
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

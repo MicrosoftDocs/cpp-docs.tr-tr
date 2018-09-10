@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 629c7fa0a113f0db279403fcfbcc82b6c0a0571b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: ff8e486be6e28de313a8e1a20634af4c50c350e8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33854255"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313864"
 ---
 # <a name="unaryfunction-struct"></a>unary_function Yapısı
 
-Birli işlev nesnesi sağlayan türetilmiş sınıflar tarafından devralınır türlerini tanımlayan bir boş temel yapı.
+Birli işlev nesnesi sağlayan türetilen sınıfları tarafından devralındığından türlerini tanımlayan boş bir temel yapı.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,9 +38,9 @@ struct unary_function
 ```
 ## <a name="remarks"></a>Açıklamalar
 
-Şablon yapısı biçiminde üye işlevi tanımlayan sınıflar için temel görevi gören **result_type**`operator()`( **constargument_type &**) **const**.
+Şablon yapı biçiminde bir üye işlevi tanımlayan sınıflar için temel olarak hizmet veren **result_type**`operator()`( **constargument_type &**) **const**.
 
-Tüm bu türetilmiş birli işlevleri kendi tek bağımsız değişken türü başvurabilirsiniz **argument_type** ve kendi dönüş türü olarak **result_type**.
+Tüm bu türetilmiş birli işlevleri kendi tek bağımsız değişken türü olarak başvurabilir **argument_type** ve kendi dönüş türü olarak **result_type**.
 
 ## <a name="example"></a>Örnek
 
@@ -86,15 +86,15 @@ int main()
     cout << "The number of elements in v1 greater than 10 is: "
          << result1 << "." << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 

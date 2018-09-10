@@ -8,8 +8,8 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, selecting controls
-- dialog box controls, selecting in editor
+- Dialog Editor [C++], selecting controls
+- dialog box controls [C++], selecting in editor
 - controls [C++], selecting
 - controls [C++], removing from groups
 ms.assetid: efbdbade-0a3a-4328-b36e-a6376c06e8de
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 72daa8e4bebfb8a3483c26a25c1f1d253faee8c2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6789a378b163da9e3cefbabb506f84a3cb9a5d7f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611988"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317787"
 ---
 # <a name="selecting-multiple-controls"></a>Birden Çok Denetim Seçme
 

@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4b7184e2eebcea83770aff55a5e9f75242aa1c1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 04e331da219f0c7a3996dda69d53769ea443b55e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206177"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319103"
 ---
 # <a name="visual-c-change-history-2003---2015"></a>Visual C++ değişiklik geçmişi 2003-2015
 
@@ -65,7 +65,7 @@ Ayrıca, derleyici uyumluluğu yapılan sürekli geliştirmeler bazen nasıl der
   
 - **C++ aşırı matematik kitaplığı işlevi** önceki sürümlerinde, \<math.h > bazı, tümü değil, C++ aşırı yüklemeleri matematik kitaplığı işlevi için tanımlı. \<cmath > overloads biri dahil etmek için gereken şekilde almak için diğer aşırı yüklemeler, tanımlanan \<cmath > Üstbilgi. Bu işlev aşırı yükleme çözümü yalnızca dahil kod ile ilgili sorunların LED'i \<math.h >. Şimdi tüm C++ aşırı yüklemeler kaldırılmış olan \<math.h > yalnızca artık mevcutsa \<cmath >.  
   
-     Hataları gidermek için dahil <cmath> öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Aşağıdaki tabloda, taşınan işlevleri listeler.  
+     Hataları gidermek için dahil \<cmath > öğesinden kaldırılan işlevlerin bildirimleri almak için \<math.h >. Aşağıdaki tabloda, taşınan işlevleri listeler.  
   
      Taşınan İşlevler:  
   

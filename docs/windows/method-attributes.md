@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - method attributes
-- attributes [C++], reference topics
+- attributes [C++/CLI], reference topics
 ms.assetid: b2313352-480d-488b-8c35-6242ffd3a549
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 67db478fbca64d56769ca9b57e7e72c41325925b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 27540db2da7aecbe7a4b70b786bbf05bf608e889
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603572"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317439"
 ---
 # <a name="method-attributes"></a>Yöntem Öznitelikleri
 

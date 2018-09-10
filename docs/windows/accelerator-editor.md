@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı Düzenleyicisi | Microsoft Docs
+title: Hızlandırıcı Düzenleyicisi (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,27 +11,26 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - accelerator tables [C++], editing
-- tables [Visual Studio], accelerator key
-- accelerator keys
-- resource editors, Accelerator editor
+- tables [C++], accelerator key
+- accelerator keys [C++]
+- resource editors [C++], Accelerator editor
 - keyboard shortcuts [C++], Accelerator editor
-- Accelerator editor
 ms.assetid: 013c30b6-5d61-4f1c-acef-8bd15bed7060
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 04401180cfcd82f3a699f71ba594523cf0f9cb9b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 42870002ff84b697599443da8ab9b9b88dbbd7ca
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43681729"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318804"
 ---
-# <a name="accelerator-editor"></a>Hızlandırıcı Düzenleyicisi
+# <a name="accelerator-editor-c"></a>Hızlandırıcı Düzenleyicisi (C++)
 
-Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da bilinir) bir listesini içeren bir Windows kaynağı ve bunlarla ilişkili komut tanımlayıcıları ' dir. Bir program, birden fazla Hızlandırıcı tablosu olabilir.
+Hızlandırıcı tablosunu hızlandırma tuşları (kısayol tuşları olarak da bilinir) bir listesini içeren bir C++ Windows kaynak ve bunlarla ilişkili komut tanımlayıcıları ' dir. Bir program, birden fazla Hızlandırıcı tablosu olabilir.
 
 Normalde, Hızlandırıcıları klavye kısayolları da menü veya araç çubuğunda kullanılabilir program komutları için kullanılır. Ancak, Hızlandırıcı tablosu tuş bileşimleri için ilişkili bir kullanıcı arabirimi nesnesi olmayan komutları tanımlamak için kullanabilirsiniz.
 

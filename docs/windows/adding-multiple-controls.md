@@ -8,20 +8,19 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- controls [Visual Studio], adding multiple
-- dialog box controls, adding to dialog boxes
+- controls [C++], adding multiple
 ms.assetid: cc100201-0669-4e74-bb08-f7134ddd03aa
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: dfca22badbe0836598eba1d67aed81d368e918ed
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: abaf92080710d4b69fc85684d523d2478bcd60d4
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589471"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317140"
 ---
 # <a name="adding-multiple-controls"></a>Birden Çok Denetim Ekleme
 

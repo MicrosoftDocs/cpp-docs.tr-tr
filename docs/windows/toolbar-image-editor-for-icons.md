@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Araç çubuğu (simgeler için görüntü Düzenleyicisi C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,14 +22,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fbad27020b18bafe2f9fc60ee08282d9101ea5a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9a454d067881a15f6d125430c304f4b5af71b5d1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604142"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314410"
 ---
-# <a name="toolbar-image-editor-for-icons"></a>Araç Çubuğu (Simgeler İçin Görüntü Düzenleyicisi)
+# <a name="toolbar-c-image-editor-for-icons"></a>Araç çubuğu (simgeler için görüntü Düzenleyicisi C++)
 
 **Resim Düzenleyicisi** araç çubuğu çizim, boyama, metin girme, silme ve görünüm işlemek için araçları içerir. Ayrıca, her aracını kullanma seçenekleri seçebilirsiniz bir seçenek belirleyici içerir. Örneğin, çeşitli fırça genişlikleri, büyütme faktörleri ve satır stilleri seçebilirsiniz.
 

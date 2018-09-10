@@ -50,19 +50,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15038e42b87a9803312df79eb5d235f1add51669
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 43c9da102f81654062518ca8e886aab1c49df623
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32405022"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314969"
 ---
 # <a name="mbsnbicmp-mbsnbicmpl"></a>_mbsnbicmp, _mbsnbicmp_l
 
-Karşılaştırır **n** bayt iki çok baytlı karakter dizeleri ve durumu yok sayar.
+Karşılaştırır **n** iki çok baytlı karakterinin bayt dizeleri ve çalışması yok sayar.
 
 > [!IMPORTANT]
-> Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+> Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -77,7 +77,7 @@ int _mbsnbicmp(
 ### <a name="parameters"></a>Parametreler
 
 *Dize1*, *dize2*<br/>
-Karşılaştırılacak null ile sonlandırılmış dizeler.
+Karşılaştırmak için null ile sonlandırılmış dizeler.
 
 *Sayısı*<br/>
 Karşılaştırılacak bayt sayısı.
@@ -88,23 +88,23 @@ Dönüş değeri alt dizeler arasındaki ilişkiyi gösterir.
 
 |Dönüş değeri|Açıklama|
 |------------------|-----------------|
-|< 0|*Dize1* substring değerinden *dize2* substring.|
-|0|*Dize1* substring aynı *dize2* substring.|
-|> 0|*Dize1* substring büyük *dize2* substring.|
+|< 0|*Dize1* alt dize küçüktür *dize2* alt dize.|
+|0|*Dize1* aynı alt dizeyi *dize2* alt dize.|
+|> 0|*Dize1* alt dizeyi büyük *dize2* alt dize.|
 
-Bir hata **_mbsnbicmp** döndürür **_NLSCMPERROR**, String.h ve Mbstring.h tanımlanmış.
+Bir hatada **_mbsnbicmp** döndürür **_NLSCMPERROR**, String.h ve Mbstring.h içinde tanımlanan.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Mbsnbicmp** işlevi gerçekleştiren bir sıralı karşılaştırma en fazla ilk *sayısı* bayt *Dize1* ve *dize2*. Her karakteri küçük harf dönüştürerek karşılaştırma gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) büyük küçük harfe duyarlı bir sürümü **_mbsnbicmp**. Karşılaştırma sonlandırma bir null karakter önce ya da dizesinde ulaşıldığında sona *sayısı* karakter karşılaştırılır. Dizeleri eşitse, ne zaman bir sonlandırma null karakter ulaşıldığında önce ya da dizesinde *sayısı* karakter karşılaştırılır, kısa daha düşük bir dizedir.
+**_Mbsnbicmp** işlevi, en fazla ilk sıralı bir karşılaştırma gerçekleştirir *sayısı* bayt *Dize1* ve *dize2*. Her bir karakteri küçük harfe dönüştürerek bir karşılaştırma gerçekleştirilir; [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md) büyük küçük harfe duyarlı bir sürümüdür **_mbsnbicmp**. Bir sonlandırıcı null karakter ya da dize önce ulaşılırsa karşılaştırma sonlandırır *sayısı* karakter karşılaştırılmadan. Dizeler eşitse bir sonlandırıcı null karakter ulaşıldığında önce her iki dizede *sayısı* karakter karşılaştırılmadan, kısa dize küçüktür.
 
-**_mbsnbicmp** benzer [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)dizeleri kadar karşılaştırır dışında *sayısı* karaktere göre yerine bayt.
+**_mbsnbicmp** benzer [_mbsnbcmp](mbsnbcmp-mbsnbcmp-l.md)kadar dizeleri karşılaştırır, dışında *sayısı* karakter yerine bayt.
 
-Karakterleri içeren iki dizeyi 'Z' arasında yer alan ve ASCII tablosundaki ' bir' ('[','\\', ']', ' ^', '_' ve '\`') farklı şekilde, kendi çalışması bağlı olarak karşılaştırın. Örneğin, iki "ABCDE" dizeleri ve "ABCD ^" karşılaştırma küçük harf ise bir yolu karşılaştırma ("abcde" > "abcd ^") ve diğer bir yol ("ABCDE" < "ABCD ^") büyük harf ise.
+'Z' arasında karakterler içeren iki dize bulunan ve ASCII tablosunda ' bir' ('[','\\', ']', ' ^', '_' ve '\`') bağlı olarak farklı şekilde karşılaştırın. Örneğin, iki "ABCDE" dizeleri ve "ABCD ^" karşılaştırma küçük harf ise tek yolla karşılaştırılır ("abcde" > "abcd ^") ve başka bir yolla ("ABCDE" < "ABCD ^") büyük harf ise.
 
-**_mbsnbicmp** göre çok baytlı karakter sıralarının tanıdığı [birden çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Geçerli yerel ayarı tarafından etkilenmez.
+**_mbsnbicmp** çok baytlı karakter sıralarına göre tanır [çok baytlı kod sayfası](../../c-runtime-library/code-pages.md) şu anda kullanımda. Geçerli yerel ayar tarafından etkilenmez.
 
-Her iki *Dize1* veya *dize2* null işaretçi **_mbsnbicmp** açıklandığı gibi geçersiz bir parametre işleyiciyi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Yürütme devam etmek için izin verilip verilmediğini, işlevi döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
+Ya da *Dize1* veya *dize2* null bir işaretçiyse, **_mbsnbicmp** açıklandığı gibi geçersiz parametre işleyicisi çağırır [parametredoğrulama](../../c-runtime-library/parameter-validation.md). Yürütmenin devam etmesine izin verilirse, işlev döndürür **_NLSCMPERROR** ve ayarlar **errno** için **EINVAL**.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -117,13 +117,13 @@ Her iki *Dize1* veya *dize2* null işaretçi **_mbsnbicmp** açıklandığı gib
 
 |Yordam|Gerekli başlık|
 |-------------|---------------------|
-|**_mbsnbicmp**|< mbstring.h >|
+|**_mbsnbicmp**|\<Mbstring.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
-Örneğin bkz [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md).
+Örneğin bakın [_mbsnbcmp, _mbsnbcmp_l](mbsnbcmp-mbsnbcmp-l.md).
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

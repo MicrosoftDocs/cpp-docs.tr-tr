@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (map)
 - std::operator&lt;= (map)
 - std::operator== (map)
-ms.openlocfilehash: 0113f792a20c1680ce931d43cbaf016e7bcfaf59
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 92314d923c591cce886683fcf536a24b404ba133
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108312"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314880"
 ---
 # <a name="ltmapgt-operators"></a>&lt;Harita&gt; işleçleri
 
@@ -94,10 +94,10 @@ int main( )
    else
       cout << "The maps m1 and m3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  İşleci&lt;
@@ -158,10 +158,10 @@ int main( )
    else
       cout << "The map m1 is not less than the map m3." << endl;
 }
-\* Output:
+/* Output:
 The map m1 is less than the map m2.
 The map m1 is not less than the map m3.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  İşleci&lt;=
@@ -224,11 +224,11 @@ int main( )
    else
       cout << "The map m1 is greater than the map m4." << endl;
 }
-\* Output:
+/* Output:
 The map m1 is less than or equal to the map m2.
 The map m1 is greater than the map m3.
 The map m1 is less than or equal to the map m4.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq"></a>  işleç ==
@@ -289,10 +289,10 @@ int main( )
    else
       cout << "The maps m1 and m3 are not equal." << endl;
 }
-\* Output:
+/* Output:
 The maps m1 and m2 are not equal.
 The maps m1 and m3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  İşleci&gt;
@@ -353,10 +353,10 @@ int main( )
    else
       cout << "The map m1 is not greater than the map m3." << endl;
 }
-\* Output:
+/* Output:
 The map m1 is not greater than the map m2.
 The map m1 is greater than the map m3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq"></a>  İşleci&gt;=
@@ -419,11 +419,11 @@ int main( )
    else
       cout << "The map m1 is less than the map m4." << endl;
 }
-\* Output:
+/* Output:
 The map m1 is less than the map m2.
 Map m1 is greater than or equal to map m3.
 Map m1 is greater than or equal to map m4.
-*\
+*/
 ```
 
 ## <a name="op_neq_multimap"></a>  işleç! = (multimap)
@@ -484,10 +484,10 @@ int main( )
    else
       cout << "The multimaps m1 and m3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The multimaps m1 and m2 are not equal.
 The multimaps m1 and m3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt_multimap"></a>  İşleci&lt;
@@ -548,10 +548,10 @@ int main( )
    else
       cout << "The multimap m1 is not less than the multimap m3." << endl;
 }
-\* Output:
+/* Output:
 The multimap m1 is less than the multimap m2.
 The multimap m1 is not less than the multimap m3.
-*\
+*/
 ```
 
 ## <a name="eq_multimap"></a>  İşleci&lt;=
@@ -614,11 +614,11 @@ int main( )
    else
       cout << "m1 is greater than m4" << endl;
 }
-\* Output:
+/* Output:
 m1 is less than or equal to m2
 m1 is greater than m3
 m1 is less than or equal to m4
-*\
+*/
 ```
 
 ## <a name="op_eq_eq_multimap"></a>  işleç ==
@@ -679,10 +679,10 @@ int main( )
    else
       cout << "m1 and m3 are not equal" << endl;
 }
-\* Output:
+/* Output:
 m1 and m2 are not equal
 m1 and m3 are equal
-*\
+*/
 ```
 
 ## <a name="op_gt_multimap"></a>  İşleci&gt;
@@ -743,10 +743,10 @@ int main( )
    else
       cout << "The multimap m1 is not greater than the multimap m3." << endl;
 }
-\* Output:
+/* Output:
 Multimap m1 is not greater than multimap m2.
 The multimap m1 is greater than the multimap m3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq_multimap"></a>  İşleci&gt;=
@@ -809,11 +809,11 @@ int main( )
    else
       cout << "The multimap m1 is less than the multimap m4." << endl;
 }
-\* Output:
+/* Output:
 The multimap m1 is less than the multimap m2.
 The multimap m1 is greater than or equal to the multimap m3.
 The multimap m1 is greater than or equal to the multimap m4.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

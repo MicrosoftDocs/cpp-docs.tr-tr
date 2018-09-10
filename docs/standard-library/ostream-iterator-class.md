@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c166b39a6252c3b49427f06d88c179bd9ca25ce8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e3f18f3d312adb00370d6dc51203542c259914ec
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108338"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314254"
 ---
 # <a name="ostreamiterator-class"></a>ostream_iterator Sınıfı
 
@@ -121,13 +121,13 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 The integers written to the output stream
 by intOut are:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  ostream_iterator::operator*
@@ -171,12 +171,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  ostream_iterator::operator++
@@ -221,12 +221,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  ostream_iterator::operator=
@@ -275,12 +275,12 @@ int main( )
 *intOut = 20;
 *intOut = 30;
 }
-\* Output:
+/* Output:
 Elements written to output stream:
 10
 20
 30
-*\
+*/
 ```
 
 ## <a name="ostream_iterator"></a>  ostream_iterator::ostream_iterator
@@ -349,12 +349,12 @@ int main( )
           ostream_iterator<int> ( cout, " : " ) );
    cout << endl;
 }
-\* Output:
+/* Output:
 10
 20
 Elements output without delimiter: 123456
 Elements output with delimiter: 1 : 2 : 3 : 4 : 5 : 6 :
-*\
+*/
 ```
 
 ## <a name="ostream_type"></a>  ostream_iterator::ostream_type
@@ -414,13 +414,13 @@ int main( )
 *intOut = 10;
 *intOut = 100;
 }
-\* Output:
+/* Output:
 The integers written to output stream
 by intOut are:
 1
 10
 100
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

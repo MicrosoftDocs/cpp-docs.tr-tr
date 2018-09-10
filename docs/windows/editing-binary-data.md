@@ -1,5 +1,5 @@
 ---
-title: İkili verileri düzenleme | Microsoft Docs
+title: İkili verileri (C++) düzenleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 96a4370d56e2f5d9758e97010965668bd08306c3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 050f52dface260da77f7290f47a9cbb204caaafe
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593011"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315464"
 ---
 # <a name="editing-binary-data"></a>İkili Verileri Düzenleme
 

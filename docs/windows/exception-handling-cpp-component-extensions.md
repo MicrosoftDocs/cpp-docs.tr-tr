@@ -8,12 +8,11 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- structured exception handling, managed exceptions
+- structured exception handling [C++], managed exceptions
 - Exception class, managed applications
 - exception handling
 - C++ exception handling
 - exception handling, types of
-- managed exceptions
 - System::Exception class in managed applications
 ms.assetid: ccb11fe8-6938-41ac-b477-a183e85865b9
 author: mikeblome
@@ -21,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 566ed55df84accef0c3e5308e750a2684c36b91c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6074519f472fff82af60695f37d0f96d9557f193
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606800"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313656"
 ---
 # <a name="exception-handling--c-component-extensions"></a>Özel Durum İşleme (C++ Bileşen Uzantıları)
 

@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı tablosundan giriş silme | Microsoft Docs
+title: (C++) Hızlandırıcı tablosundan giriş silme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,14 +16,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0c191a2e37e4fe99c12486270c34a558cf4e8455
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 747e0db32a73a277ef26e18e787e3e5a31f69578
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605413"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315125"
 ---
-# <a name="deleting-an-entry-from-an-accelerator-table"></a>Hızlandırıcı Tablosundan Giriş Silme
+# <a name="deleting-an-entry-from-an-accelerator-table-c"></a>(C++) Hızlandırıcı tablosundan giriş silme
 
 ### <a name="to-delete-an-entry-from-an-accelerator-table"></a>Hızlandırıcı tablosundan giriş silme
 

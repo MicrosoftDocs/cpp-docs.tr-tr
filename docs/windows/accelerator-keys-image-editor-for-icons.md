@@ -1,5 +1,5 @@
 ---
-title: Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,14 +19,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f211b15134ad292c9e7e4d3ed92d81ea59dd3b86
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 26818aaaec16e06553bde24ba7e5d6d350971cef
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683306"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317751"
 ---
-# <a name="accelerator-keys-image-editor-for-icons"></a>Hızlandırma Tuşları (Simgeler İçin Görüntü Düzenleyicisi)
+# <a name="accelerator-keys-c-image-editor-for-icons"></a>Hızlandırma tuşları (simgeler için görüntü Düzenleyicisi C++)
 
 Anahtarlar için varsayılan olarak bağlı olan Resim Düzenleyicisi komutları için hızlandırma tuşları aşağıdadır. Hızlandırıcı tuşları değiştirmek için tıklayın **seçenekleri** üzerinde **Araçları** menüsünde ve ardından **klavye** altında **ortam** klasör. Daha fazla bilgi için [tanımlama ve özelleştirme klavye kısayolları](/visualstudio/ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio).
 

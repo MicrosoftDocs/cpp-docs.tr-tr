@@ -10,11 +10,11 @@ dev_langs:
 helpviewer_keywords:
 - access keys [C++], adding
 - keyboard shortcuts [C++], controls
-- dialog box controls, mnemonics
+- dialog box controls [C++], mnemonics
 - access keys [C++], checking
-- mnemonics, checking for duplicate
+- mnemonics [C++], checking for duplicate
 - mnemonics
-- mnemonics, dialog box controls
+- mnemonics [C++], dialog box controls
 - keyboard shortcuts [C++], uniqueness checking
 - Check Mnemonics command
 - controls [C++], access keys
@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 084b9a84f7a113458ca1cf76549b865d019216cc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6ab44d406d71eb1cc23c803f1074636e9e5cc38a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613442"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316243"
 ---
 # <a name="defining-mnemonics-access-keys"></a>Anımsatıcıları Tanımlama (Erişim Tuşları)
 

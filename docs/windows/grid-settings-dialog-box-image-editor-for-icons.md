@@ -1,5 +1,5 @@
 ---
-title: Kılavuz ayarları iletişim kutusu (simgeler için görüntü Düzenleyicisi) | Microsoft Docs
+title: Kılavuz ayarları iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,21 +11,21 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Grid Settings dialog box
+- Grid Settings dialog box [C++]
 ms.assetid: 59ce033a-ff10-48cd-b414-f9cb74da6789
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b9d312e7a2d13c13aefe3adaa51531af498fe638
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 52f6aea7bb934f3dd7b3c42c2c13ff7939a8b168
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578737"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316230"
 ---
-# <a name="grid-settings-dialog-box-image-editor-for-icons"></a>Kılavuz Ayarları İletişim Kutusu (Simgeler İçin Görüntü Düzenleyicisi)
+# <a name="grid-settings-dialog-box-c-image-editor-for-icons"></a>Kılavuz ayarları iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
 Görüntünüzü için kılavuz ayarları belirtmenize olanak tanır ve düzenlenen görüntüsünden kılavuz çizgilerini görüntüler. Satırları düzenleme görüntüsü için yararlıdır, ancak görüntünün kendisi bir parçası olarak kaydedilmez.
 

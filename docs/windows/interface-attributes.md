@@ -8,7 +8,7 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], reference topics
+- attributes [C++/CLI], reference topics
 - interface attributes
 ms.assetid: 27fcdfee-abce-4585-8b53-ee31635356e8
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8c61aeb0dcf3a9e0e001f89b9872b43b0af092b2
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 850646e2dda1f226eff7c921dd3fe9f85595ca69
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593329"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317660"
 ---
 # <a name="interface-attributes"></a>Arabirim Öznitelikleri
 

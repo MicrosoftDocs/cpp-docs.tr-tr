@@ -14,21 +14,21 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - editors, images
-- resource editors, graphics
+- resource editors [C++], graphics
 - Image editor [C++]
-- resource editors, Image editor
+- resource editors [C++], Image editor
 ms.assetid: 586d2b8b-0348-4883-a85d-1ff0ddbf14dd
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b4f038dea14aedc4016746297ac99aedd57445eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8d160a042263f783b88c7ff2d9dfd03c46759079
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215847"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318817"
 ---
 # <a name="image-editor-for-icons"></a>Simgeler İçin Görüntü Düzenleyicisi
 

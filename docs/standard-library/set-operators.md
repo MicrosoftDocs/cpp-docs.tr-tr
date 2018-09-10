@@ -20,12 +20,12 @@ helpviewer_keywords:
 - std::operator&lt; (set)
 - std::operator&lt;= (set)
 - std::operator== (set)
-ms.openlocfilehash: 43ee5b62bcda9a38946bfd61c3ed3efbc8d89523
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a90c7e2ea7af1200b3e6cfee895b69b29352fb21
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110077"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314877"
 ---
 # <a name="ltsetgt-operators"></a>&lt;ayarlama&gt; işleçleri
 
@@ -91,10 +91,10 @@ int main( )
    else
       cout << "The sets s1 and s3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt"></a>  İşleç&lt; (set)
@@ -152,10 +152,10 @@ int main( )
    else
       cout << "The set s1 is not less than the set s3." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is less than the set s2.
 The set s1 is not less than the set s3.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq"></a>  İşleç&lt;= (set)
@@ -219,11 +219,11 @@ int main( )
    else
       cout << "The set s1 is greater than the set s4." << endl;
 }
-\* Output:
+/* Output:
 Set s1 is less than or equal to the set s2.
 The set s1 is greater than the set s3.
 Set s1 is less than or equal to the set s4.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq"></a>  işleç == (set)
@@ -281,10 +281,10 @@ int main( )
    else
       cout << "The sets s1 and s3 are not equal." << endl;
 }
-\* Output:
+/* Output:
 The sets s1 and s2 are not equal.
 The sets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt"></a>  İşleç&gt; (set)
@@ -342,10 +342,10 @@ int main( )
    else
       cout << "The set s1 is not greater than the set s3." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is not greater than the set s2.
 The set s1 is greater than the set s3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq"></a>  İşleç&gt;= (set)
@@ -409,11 +409,11 @@ int main( )
    else
       cout << "The set s1 is less than the set s4." << endl;
 }
-\* Output:
+/* Output:
 The set s1 is less than the set s2.
 Set s1 is greater than or equal to set s3.
 Set s1 is greater than or equal to set s4.
-*\
+*/
 ```
 
 ## <a name="op_neq_multiset"></a>  işleç! = (multiset)
@@ -471,10 +471,10 @@ int main( )
    else
       cout << "The multisets s1 and s3 are equal." << endl;
 }
-\* Output:
+/* Output:
 The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_lt_multiset"></a>  İşleç&lt; (multiset)
@@ -536,10 +536,10 @@ int main( )
       cout << "The multiset s1 is not less than "
            << "the multiset s3." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than the multiset s2.
 The multiset s1 is not less than the multiset s3.
-*\
+*/
 ```
 
 ## <a name="op_lt_eq_multiset"></a>  İşleç&lt;= (multiset)
@@ -609,11 +609,11 @@ int main( )
       cout << "The multiset s1 is greater than "
            << "the multiset s4." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than or equal to the multiset s2.
 The multiset s1 is greater than the multiset s3.
 The multiset s1 is less than or equal to the multiset s4.
-*\
+*/
 ```
 
 ## <a name="op_eq_eq_multiset"></a>  işleç == (multiset)
@@ -671,10 +671,10 @@ int main( )
    else
       cout << "The multisets s1 and s3 are not equal." << endl;
 }
-\* Output:
+/* Output:
 The multisets s1 and s2 are not equal.
 The multisets s1 and s3 are equal.
-*\
+*/
 ```
 
 ## <a name="op_gt_multiset"></a>  İşleç&gt; (multiset)
@@ -736,10 +736,10 @@ int main( )
       cout << "The multiset s1 is not greater than "
            << "the multiset s3." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is not greater than the multiset s2.
 The multiset s1 is greater than the multiset s3.
-*\
+*/
 ```
 
 ## <a name="op_gt_eq_multiset"></a>  İşleç&gt;= (multiset)
@@ -809,11 +809,11 @@ int main( )
       cout << "The multiset s1 is less than "
            << "the multiset s4." << endl;
 }
-\* Output:
+/* Output:
 The multiset s1 is less than the multiset s2.
 The multiset s1 is greater than or equal to the multiset s3.
 The multiset s1 is greater than or equal to the multiset s4.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

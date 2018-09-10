@@ -9,9 +9,9 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - 256-color palette
-- cursors, color
-- colors, icons
-- colors, cursors
+- cursors [C++], color
+- colors [C++], icons
+- colors [C++], cursors
 - icons, color
 ms.assetid: 2738089b-4fd3-4c45-96ae-6a15e4c6b780
 author: mikeblome
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34336a62574e83a25af5341c753df78be72a6a15
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 930a73f478b02d5aa7a16f262f98131dccba9f76
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601689"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315941"
 ---
 # <a name="creating-a-256-color-icon-or-cursor-image-editor-for-icons"></a>256-Renk Simgesi veya İmleci Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

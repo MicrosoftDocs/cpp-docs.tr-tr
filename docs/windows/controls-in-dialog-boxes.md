@@ -1,5 +1,5 @@
 ---
-title: İletişim kutularındaki denetimler | Microsoft Docs
+title: (C++) iletişim kutularındaki denetimler | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], dialog boxes
-- dialog box controls, about dialog box controls
+- dialog box controls [C++], about dialog box controls
 - dialog box controls
 ms.assetid: e216c4f9-2fd4-429d-889a-8ebce7bad177
 author: mikeblome
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 70e3bcfb644893f1dc8b41b9c11a3aee5c92103d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d8128859f2b136fb945376eeea8afa0d1ef8e6e1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591964"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317114"
 ---
-# <a name="controls-in-dialog-boxes"></a>İletişim Kutularındaki Denetimler
+# <a name="controls-in-dialog-box-ces"></a>Es denetimleri iletişim kutusu (C++)
 
 Kullanarak bir iletişim kutusu denetimleri ekleyebilirsiniz [iletişim kutusu Düzenleyicisi sekmesi](../windows/dialog-editor-tab-toolbox.md) içinde [araç penceresi](/visualstudio/ide/reference/toolbox), iletişim kutusuna sürükleyin ve istediğiniz denetim seçmenize olanak sağlar. Varsayılan olarak, araç penceresi otomatik gizleme için ayarlanır. İletişim kutusu düzenleyicisini açtığınızda çözümünüzün sol kenar çubuğunda sekme olarak görünür. Ancak, sabitleyebilirsiniz **araç kutusu** tıklayarak konumu penceresine **Otomatik Gizle** pencerenin sağ üst köşesindeki düğme. Bu pencere davranışını denetleme hakkında daha fazla bilgi için bkz. [pencere yönetimi](/visualstudio/ide/customizing-window-layouts-in-visual-studio).
 

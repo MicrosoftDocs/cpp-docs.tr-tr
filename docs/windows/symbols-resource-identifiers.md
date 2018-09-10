@@ -1,5 +1,5 @@
 ---
-title: 'Semboller: Kaynak Tanımlayıcıları | Microsoft Docs'
+title: 'Semboller: Kaynak Tanımlayıcıları (C++) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,25 +10,25 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- symbols, resource identifiers
-- symbols, creating
+- symbols [C++], resource identifiers
+- symbols [C++], creating
 - resource symbols
-- symbols, editing
-- resource editors, resource symbols
+- symbols [C++], editing
+- resource editors [C++], resource symbols
 ms.assetid: 8fccc09a-0237-4a65-b9c4-57d60c59e324
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d1914f13a74a9af33fc2008f759062ea22c20c5b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8a1a0b16ebee0ebac141d5c1675d7ff7560b374b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42604344"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318219"
 ---
-# <a name="symbols-resource-identifiers"></a>Semboller: Kaynak Tanımlayıcılar
+# <a name="symbols-resource-identifiers-c"></a>Semboller: Kaynak Tanımlayıcıları (C++)
 
 İki bölümden oluşan bir kaynak tanımlayıcısı (ID) bir semboldür: tamsayı değerine (sembol değeri) eşlenmiş bir metin dizesi (sembol adı). Örneğin:
 

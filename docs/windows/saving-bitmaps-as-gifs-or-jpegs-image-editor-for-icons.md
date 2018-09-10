@@ -10,14 +10,14 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- .gif files, saving bitmaps as
-- jpg files, saving bitmaps as
-- jpeg files, saving bitmaps as
-- .jpg files, saving bitmaps as
+- .gif files [C++], saving bitmaps as
+- jpg files [C++], saving bitmaps as
+- jpeg files [C++], saving bitmaps as
+- .jpg files [C++], saving bitmaps as
 - Image editor [C++], converting image formats
-- gif files, saving bitmaps as
+- gif files [C++], saving bitmaps as
 - bitmaps [C++], converting formats
-- .jpeg files, saving bitmaps as
+- .jpeg files [C++], saving bitmaps as
 - graphics [C++], converting formats
 - images [C++], converting formats
 ms.assetid: 115df69f-10fb-4e6f-906b-853c1e4a54af
@@ -26,12 +26,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 4e8ec15272fd9e49173149655c0806f7873f2a1d
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ab9f8e6056c0f97d36d0c0eb4853fbb7eed80dc0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42590960"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313045"
 ---
 # <a name="saving-bitmaps-as-gifs-or-jpegs-image-editor-for-icons"></a>Bit Eşlemleri GIF veya JPEG Olarak Kaydetme (Simgeler İçin Görüntü Düzenleyicisi)
 

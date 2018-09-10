@@ -1,5 +1,5 @@
 ---
-title: Birden çok menü veya menü komutu seçme | Microsoft Docs
+title: Birden çok menü veya menü komutları (C++) seçme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,21 +8,21 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- menu commands, selecting
-- menus, selecting
-- commands, menu commands
+- menu commands [C++], selecting
+- menus [C++], selecting
+- commands [C++], menu commands
 ms.assetid: b6f17897-2a40-4afd-97d4-a38b7661680b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a90aab0fae3edbb54dfdd9176ffe47a18ad1796a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 30c272d6f13c2792fa1782b8d4adfd7f1ab0ccf8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596947"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316165"
 ---
 # <a name="selecting-multiple-menus-or-menu-commands"></a>Birden Çok Menü veya Menü Komutu Seçme
 

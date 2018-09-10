@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: belirtin kaynaklar için dizin eklemeyi | Microsoft Docs'
+title: 'Nasıl yapılır: belirtin (C++) kaynaklar için dizin eklemeyi | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,22 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - directories [C++], specifying include paths for resources
-- include files, specifying for resources
-- resources [Visual Studio], including in projects
+- include files [C++], specifying for resources
+- resources [C++], including in projects
 ms.assetid: d6a7c0f6-4810-4bb0-b4b7-7d2476a20ca2
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e0b655713a378c859bb017f661022f86aa687ab6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 257ca11dcc44b22d6ddbb5043315d29a70377148
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676438"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313955"
 ---
-# <a name="how-to-specify-include-directories-for-resources"></a>Nasıl Yapılır: Kaynaklar İçin Dizin Eklemeyi Belirtme
+# <a name="how-to-specify-include-directories-for-resources-c"></a>Nasıl yapılır: belirtin (C++) kaynaklar için dizin eklemeyi
 
 ### <a name="to-specify-include-directories-for-a-specific-rc-file"></a>Belirli bir .rc dosyası için ekleme kodu dizinlerini belirtme
 

@@ -11,19 +11,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - symbol names
-- symbols, names
+- symbols [C++], names
 ms.assetid: 26541832-8dba-4177-b642-e08f94502ea7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e2fb5268ca23def96c31f724b93fbdf1c81c4a43
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8b80c854d144f0f2010d1482a03f692062ea81ef
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599701"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315905"
 ---
 # <a name="changing-a-symbol-or-symbol-name-id"></a>Sembolü veya Sembol Adını (ID) Değiştirme
 

@@ -1,5 +1,5 @@
 ---
-title: İletişim kutularındaki denetimlerin | Microsoft Docs
+title: Denetimlerin düzenlenmesi iletişim kutuları (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,22 +9,22 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - controls [C++], positioning
-- dialog box controls, placement
-- Dialog editor, arranging controls
+- dialog box controls [C++], placement
+- Dialog Editor [C++], arranging controls
 ms.assetid: 832491cf-98af-42e5-a854-2cb135fd45c6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d47e3602e151f64fab0a543882c759225410f6dc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 46bc2d627c9efbb49227e17c809d188aa3a8b5fc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583573"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315242"
 ---
-# <a name="arrangement-of-controls-on-dialog-boxes"></a>İletişim Kutularındaki Denetimlerin Düzenlenmesi
+# <a name="arrangement-of-controls-on-dialog-box-ces"></a>İletişim kutusundaki denetimlerin kutu es (C++)
 
 **İletişim** Düzenleyicisi, hizalama ve denetimleri boyut otomatik düzeni araçlar sağlar. Çoğu görevler için kullanabileceğiniz [iletişim kutusu araç çubuğunu](../windows/showing-or-hiding-the-dialog-editor-toolbar.md). Tüm **iletişim kutusu Düzenleyicisi** araç çubuğu komutlarını kullanılabilir ayrıca **biçimi** menü ve çoğu [kısayol tuşları](../windows/accelerator-keys-for-the-dialog-editor.md).
 

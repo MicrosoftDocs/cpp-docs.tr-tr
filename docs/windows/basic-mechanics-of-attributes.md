@@ -8,20 +8,20 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], inserting in code
-- attributes [C++], about attributes
+- attributes [C++/CLI], inserting in code
+- attributes [C++/CLI], about attributes
 ms.assetid: dc2069c3-b9f3-4a72-965c-4e5208ce8e34
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75f30fbe64251e0fbb7fdb48f1d0a628ec4563b8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6f6563d61988beb5df91ce0a3ccb871e3a5a9adc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601231"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315957"
 ---
 # <a name="basic-mechanics-of-attributes"></a>Özniteliklerin Temel Mekanikleri
 

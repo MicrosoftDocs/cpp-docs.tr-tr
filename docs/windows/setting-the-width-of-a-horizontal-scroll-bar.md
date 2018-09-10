@@ -8,25 +8,25 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- list controls, scroll bar width
+- list controls [C++], scroll bar width
 - CListBox::SetHorizontalExtent
 - controls [C++], scroll bar
-- scroll bars, displaying in controls
+- scroll bars [C++], displaying in controls
 - horizontal scroll bar width
 - CListBox class, scroll bar width
-- scroll bars, width
+- scroll bars [C++], width
 ms.assetid: 51dad141-aa0b-46a3-a82c-46b80d603d94
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 64dd7bea162839642a10253baddfc7abbe9eb802
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 671da02bd1b836cd482c057c09ab31d27b42843f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42612418"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314670"
 ---
 # <a name="setting-the-width-of-a-horizontal-scroll-bar"></a>Yatay Kaydırma Çubuğunun Genişliğini Ayarlama
 

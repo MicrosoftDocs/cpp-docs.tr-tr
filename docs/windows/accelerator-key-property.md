@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı tuşu özelliği | Microsoft Docs
+title: Hızlandırıcı tuşu özelliği (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 162cb774e985d490385c68bebab01f48222b3616
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9fecfd06e26d9c49c3442e5b8011f6183a96cec0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598323"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314644"
 ---
-# <a name="accelerator-key-property"></a>Hızlandırıcı Tuşu Özelliği
+# <a name="accelerator-key-property-c"></a>Hızlandırıcı tuşu özelliği (C++)
 
 Hızlandırıcı tablosu bir anahtar özellik için yasal girişleri şunlardır:
 

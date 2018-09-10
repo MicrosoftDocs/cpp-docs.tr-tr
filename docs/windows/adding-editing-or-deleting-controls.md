@@ -8,21 +8,19 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Dialog editor, creating controls
-- dialog box controls, adding to dialog boxes
-- controls [C++], adding to dialog boxes
+- Dialog Editor [C++], creating controls
 ms.assetid: 73cef03f-5c8c-456a-87d1-1458dff185cf
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: b28736e4e9c4b4f327f80a97b5b7ed3b6d1c7c40
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ce32186083e156525ccc1f75a6d93d58c7f9294e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686278"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316074"
 ---
 # <a name="adding-editing-or-deleting-controls"></a>Denetimleri Ekleme, Düzenleme veya Silme
 

@@ -1,5 +1,5 @@
 ---
-title: DirectX kullanarak oyun oluşturmak için kaynaklar | Microsoft Docs
+title: Bir C++ DirectX kullanarak oyun oluşturmak için kaynaklar | Microsoft Docs
 ms.custom: ''
 ms.date: 06/08/2018
 ms.technology:
@@ -17,14 +17,14 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 99c2671874823ee13164b2cfd226b6ef3c35bbb7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 414074c6cbc7945573409923da8070eac218c91a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221774"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315658"
 ---
-# <a name="resources-for-creating-a-game-using-directx"></a>DirectX Kullanarak Oyun Oluşturmak için Kaynaklar
+# <a name="resources-for-creating-a-c-game-using-directx"></a>Bir C++ DirectX kullanarak oyun oluşturmak için kaynaklar
 
 En iyi masaüstü oyunları oluşturmak Visual C++ ile DirectX kullanın.
 

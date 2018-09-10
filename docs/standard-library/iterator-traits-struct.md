@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4188c099e676ba58b0194953110fc2e62e8aced8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fb91bc7ec37d4738aaf9f1c7ac6532079a0b71d0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204925"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313736"
 ---
 # <a name="iteratortraits-struct"></a>iterator_traits Yapısı
 
@@ -118,12 +118,12 @@ int main( )
    function( vc.begin( ), vc.end( ) );
    function( li.begin( ), li.end( ) );
 }
-\* Output:
+/* Output:
 struct std::random_access_iterator_tag
 a a a a a a a a a a
 struct std::bidirectional_iterator_tag
 0 0 0 0 0 0 0 0 0 0
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

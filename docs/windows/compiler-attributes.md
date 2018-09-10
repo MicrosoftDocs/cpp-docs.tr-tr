@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cl.exe compiler, attributes
-- attributes [C++], compiler
+- attributes [C++/CLI], compiler
 ms.assetid: 53cd9bee-1521-48ec-b171-80feac2096cc
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 29c58b94293ed00ba95d4288458788a0b2edd679
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 1c1ce698992f1f34434a476be83da6f4697f619c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42601712"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316542"
 ---
 # <a name="compiler-attributes"></a>Derleyici Öznitelikleri
 

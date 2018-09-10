@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynak şablonlarını kullanma | Microsoft Docs'
+title: 'Nasıl yapılır: kaynak şablonları (C++) | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,27 +8,27 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- language-specific template files
+- language-specific template files [C++]
 - resource templates
-- resources [Visual Studio], creating
-- rct files
+- resources [C++], creating
+- rct files [C++]
 - templates, resource templates
-- resources [Visual Studio], templates
-- .rct files
+- resources [C++], templates
+- .rct files [C++]
 ms.assetid: bdfe7060-f98e-4859-8285-9c8570360e9d
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5bd85dd5c5b6468ca8246fdf11f4068eae928107
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 90c94e87693929c2ae33d65fe3f3a4b2dd55d48b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602446"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313981"
 ---
-# <a name="how-to-use-resource-templates"></a>Nasıl Yapılır: Kaynak Şablonlarını Kullanma
+# <a name="how-to-use-resource-templates-c"></a>Nasıl yapılır: kaynak şablonları (C++)
 
 Kaynak şablon bir .rct dosyası olarak kaydettiğiniz bir özelleştirilmiş bir kaynaktır. Kaynak şablonu diğer kaynakları oluşturmak için bir başlangıç noktası olarak hizmet verebilir. Kaynak şablonları, ek kaynaklar ya da standart denetimler gibi özellikleri ve diğer yinelenen öğeleri paylaşan kaynakların grupları geliştirmede zamandan tasarruf edin. Örneğin, Yardım düğmesi ve bir şirket logosu simgesi birkaç iletişim kutularında eklemek isteyebilirsiniz. Kadar hızlı bir şekilde yapmak için yeni bir iletişim kutusu şablonu oluşturma ve Yardım düğmesini logosu ile özelleştirebilir.
 

@@ -8,19 +8,19 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], reference topics
+- attributes [C++/CLI], reference topics
 ms.assetid: 613a3611-b3eb-4347-aa38-99b654600e1c
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: afa5d7e3297cd77d1c5d8362d005bd2a48aee4d5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c2c98ac16e9e5cb554d72a8880c5d4c45ff610d2
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690203"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315710"
 ---
 # <a name="c-attributes-reference"></a>C++ Öznitelikleri Başvurusu
 

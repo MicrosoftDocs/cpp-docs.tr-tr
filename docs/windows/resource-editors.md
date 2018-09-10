@@ -1,5 +1,5 @@
 ---
-title: Kaynak düzenleyicileri | Microsoft Docs
+title: Kaynak Düzenleyicileri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d05557b6f92fa5bce8506572fd1c651950d6aa23
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a4dab1ce421582d865895fcec0d55685bdbf30db
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594299"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315229"
 ---
 # <a name="resource-editors"></a>Kaynak Düzenleyicileri
 

@@ -9,8 +9,8 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - New Device Image command
-- display devices, adding images
-- cursors, adding
+- display devices [C++], adding images
+- cursors [C++], adding
 - icons, adding
 ms.assetid: 394f87dd-ea19-49d8-bb9e-139cd28b69c2
 author: mikeblome
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1d1ceece6556d0e962293267d8dc151151b00076
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 4691a3c3afd5b5dfeececc1244a0dc0d03b9b0d2
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596817"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313071"
 ---
 # <a name="adding-an-image-for-a-different-display-device-image-editor-for-icons"></a>Farklı Görüntüleme Cihazı için Görüntü Ekleme (Simgeler İçin Görüntü Düzenleyicisi)
 

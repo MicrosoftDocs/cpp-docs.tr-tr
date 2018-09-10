@@ -1,5 +1,5 @@
 ---
-title: Grafik kaynakları (simgeler için görüntü Düzenleyicisi) düzenleme | Microsoft Docs
+title: Grafik kaynakları düzenleme (simgeler için görüntü Düzenleyicisi C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,14 +22,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d66345685dbb6780b0ecf11d91d699c8b6866c47
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: c46f8391f39d65c84860f8c0ca62f69288d834c8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608867"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44312642"
 ---
-# <a name="editing-graphical-resources-image-editor-for-icons"></a>Grafik Kaynakları Düzenleme (Simgeler İçin Görüntü Düzenleyicisi)
+# <a name="editing-graphical-resources-c-image-editor-for-icons"></a>Grafik kaynakları düzenleme (simgeler için görüntü Düzenleyicisi C++)
 
 Grafik kaynakları uygulamanız için tanımladığınız görüntüleridir. Freehand çizin veya şekilleri kullanarak çizin. Düzenleme, çevirme veya yeniden boyutlandırma için görüntünün parçalarını seçebilir veya seçili bir görüntü bölümünden özel bir fırça oluştur ve bu fırça ile çizin. Görüntü özelliklerini tanımlayın, görüntüleri farklı biçimlerde kaydetme ve görüntülerini bir biçimden diğerine dönüştürme.
 

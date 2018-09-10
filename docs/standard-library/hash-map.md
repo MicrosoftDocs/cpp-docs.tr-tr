@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caae1a52c36c5d21e55e90a821b280f2face7ede
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0ef090aec97308a6d423c18daab5ee540efdd8a1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959780"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316333"
 ---
 # <a name="lthashmapgt"></a>&lt;hash_map&gt;
 
@@ -32,7 +32,7 @@ Kapsayıcı şablon sınıfları hash_map ve hash_multimap ve kendi destek şabl
 
 ## <a name="syntax"></a>Sözdizimi
 
-> #<a name="include-hashmap"></a>< hash_map > Ekle
+> #<a name="include-hashmap"></a>dahil \<hash_map >
 
 ### <a name="operators"></a>İşleçler
 
@@ -64,6 +64,6 @@ Kapsayıcı şablon sınıfları hash_map ve hash_multimap ve kendi destek şabl
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](cpp-standard-library-header-files.md)
-[güvenliği C++ Standart kitaplığında iş parçacığı](thread-safety-in-the-cpp-standard-library.md)
+[Üstbilgi dosyaları başvurusu](cpp-standard-library-header-files.md)<br/>
+[C++ Standart Kitaplığında İş Parçacığı Güvenliği](thread-safety-in-the-cpp-standard-library.md)<br/>
 [C++ Standart Kitaplığı Başvurusu](cpp-standard-library-reference.md)

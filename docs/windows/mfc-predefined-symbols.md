@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - MFC symbols
-- symbols, MFC
+- symbols [C++], MFC
 ms.assetid: c1e689c4-45d7-40a3-8ee9-f47676cc3bbb
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 46d563a3344216bed6477ed4afee520449f30dc0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b26d070728a45ba34013276b92ba3f5677c53a6b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603470"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318947"
 ---
 # <a name="mfc-predefined-symbols"></a>MFC Önceden Tanımlanmış Semboller
 

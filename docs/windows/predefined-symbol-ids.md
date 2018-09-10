@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- symbols, predefined IDs
+- symbols [C++], predefined IDs
 - predefined symbol IDs
 ms.assetid: 91a5d610-1a04-47e8-b8a4-63ad650a90df
 author: mikeblome
@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ee34744a110b31eba125e4b6cbef48207081f5d7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a41df160f8b5c6fbfbe120902e6bbd398729db82
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42578646"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317881"
 ---
 # <a name="predefined-symbol-ids"></a>Önceden Tanımlanmış Sembol Kimlikleri
 

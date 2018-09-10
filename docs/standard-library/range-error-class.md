@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf6c2f46d3dedc80cb89e6776a82eee6ebe57026
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 91769b0982bcc92c1f300766250b3ca13d231706
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465632"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313838"
 ---
 # <a name="rangeerror-class"></a>range_error Sınıfı
 
@@ -60,10 +60,10 @@ int main()
       cerr << "Type: " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: The range is in error!
 Type: class std::range_error
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

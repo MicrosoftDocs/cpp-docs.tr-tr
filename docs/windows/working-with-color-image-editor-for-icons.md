@@ -15,7 +15,7 @@ helpviewer_keywords:
 - colors [C++], image
 - Colors Palette, Image editor
 - palettes, Image editor colors
-- foreground colors, Image editor
+- foreground colors [C++], Image editor
 - colors [C++]
 ms.assetid: d34ff96f-241d-494f-abdd-13811ada8cd3
 author: mikeblome
@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 97e334e3fa2ea2dc099665876d7df95a367c3b57
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 200c71b6d2196251c8db3542b2b1b2ce88fdff85
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609881"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315541"
 ---
 # <a name="working-with-color-image-editor-for-icons"></a>Renklerle Çalışma (Simgeler İçin Görüntü Düzenleyicisi)
 

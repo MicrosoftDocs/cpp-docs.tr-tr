@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03d5b9396d6bc1cd73bfdda0c55312e728cfd9e2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7ef86d368a0ca9f7aa2c3b6700350ccaaa8f7836
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689282"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317335"
 ---
 # <a name="underflowerror-class"></a>underflow_error Sınıfı
 
@@ -63,10 +63,10 @@ int main( )
       cerr << "Type: " << typeid( e ).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: The number's a bit small, captain!
 Type: class std::underflow_error
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

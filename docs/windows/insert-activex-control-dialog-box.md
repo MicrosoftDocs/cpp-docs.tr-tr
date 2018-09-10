@@ -1,5 +1,5 @@
 ---
-title: ActiveX denetimi Ekle iletişim kutusu | Microsoft Docs
+title: ActiveX denetimi Ekle iletişim kutusu (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,7 +10,7 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- Insert ActiveX Control dialog box
+- Insert ActiveX Control dialog box [C++]
 - ActiveX controls [C++], adding to dialog boxes
 ms.assetid: 06638ea3-0726-40da-a989-9b89292d0e3d
 author: mikeblome
@@ -18,14 +18,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ef8f2142f00b862ff198df9c75e142dc66a049b5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 16777dc2354787057e3cfe6afb329268272a16e2
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689970"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317374"
 ---
-# <a name="insert-activex-control-dialog-box"></a>ActiveX Denetimi Ekle İletişim Kutusu
+# <a name="insert-activex-control-dialog-box-c"></a>ActiveX denetimi Ekle iletişim kutusu (C++)
 
 Bu iletişim kutusu sayesinde [, iletişim kutusuna ActiveX denetimleri ekleme](../windows/viewing-and-adding-activex-controls-to-a-dialog-box.md) kullanırken [iletişim kutusu Düzenleyicisi](../windows/dialog-editor.md).
 

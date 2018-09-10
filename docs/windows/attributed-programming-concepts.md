@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - attributed programming [C++]
-- attributes [C++]
+- attributes [C++/CLI]
 - programming [C++], attributed programming
 ms.assetid: 563e7e7c-65e1-44f4-b0b2-da04a6c1bc9e
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 223359e10ef0e64860a611079abf9e7e83a26fe1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9f91474ec4c435b6fb2a005b47c67210a54d0804
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222814"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317270"
 ---
 # <a name="attributed-programming-concepts"></a>Öznitelikli Programlama Kavramları
 

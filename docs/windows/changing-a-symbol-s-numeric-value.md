@@ -11,7 +11,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - numeric values
-- symbols, numeric values
+- symbols [C++], numeric values
 - numeric values, changing symbols
 ms.assetid: 468e903b-9c07-4251-ae09-3b6cb754cc2b
 author: mikeblome
@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c05c732f87434754fb6776d7f914b4ffa5c26015
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: eef16275bcd563a258347f8853a3c705594df99d
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43219282"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318684"
 ---
 # <a name="changing-a-symbol39s-numeric-value"></a>Bir sembol değiştirme&#39;s sayısal değer
 

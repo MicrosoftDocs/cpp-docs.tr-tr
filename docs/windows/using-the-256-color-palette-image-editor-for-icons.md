@@ -9,8 +9,8 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - 256-color palette
-- colors, icons and cursors
-- cursors, color
+- colors [C++], icons and cursors
+- cursors [C++], color
 - color palettes, 256-color
 - palettes, 256-color
 - icons, color
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c148fbfe1ba54aab1ccf4ba86c23656ef83e129a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2eeadca20a722cc0e7e63d903f470cb3aced6d32
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42581027"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313683"
 ---
 # <a name="using-the-256-color-palette-image-editor-for-icons"></a>256-Renk Paletini Kullanma (Simgeler İçin Görüntü Düzenleyicisi)
 

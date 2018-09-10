@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - MFC symbols
-- symbols, MFC
+- symbols [C++], MFC
 - Windows programming MFC symbols [C++]
 ms.assetid: fcc2194d-b639-4e0c-be2c-75f5579f2780
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 91fc04db620f2876f184619fcf0318cc1f3cd030
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ef471f5e06e770d79f67e4630c004e14d2aff968
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595032"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317037"
 ---
 # <a name="mfc-windows-programming-symbols"></a>MFC Windows Programlama Sembolleri
 

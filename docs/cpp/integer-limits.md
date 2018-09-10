@@ -17,18 +17,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b9a516ef366952f9d55e16891dfcb7bb81fac7e
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 6f49e224520751e08ba6aa7e37932314e11ef8a5
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406025"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315195"
 ---
 # <a name="integer-limits"></a>Tamsayı Sınırları
 
 **Microsoft'a özgü**
 
-Tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar, ayrıca < lımıts.h > standart üstbilgi dosyasında tanımlanır.
+Tamsayı türleri için sınırlar aşağıdaki tabloda listelenmiştir. Bu sınırlar da standart üstbilgi dosyasında tanımlanan \<lımıts.h >.
 
 ## <a name="limits-on-integer-constants"></a>Tamsayı sabitleri sınırlamaları
 
@@ -59,4 +59,5 @@ Microsoft derleyicisi, bir değeri en büyük tamsayı gösterimi aşarsa, bir h
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Kayan Sınırlar](../cpp/floating-limits.md)  
+
+[Kayan Sınırlar](../cpp/floating-limits.md)

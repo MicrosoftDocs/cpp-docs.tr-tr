@@ -8,23 +8,23 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++], reference topics
+- attributes [C++/CLI], reference topics
 - IDL attributes
-- .idl files, attributes
-- IDL files, attributes
-- .idl files
+- .idl files [C++], attributes
+- IDL files [C++], attributes
+- .idl files [C++]
 ms.assetid: 04c596f4-c97b-4952-8053-316678b1d0b6
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5b4207549a5b9992f3c9ac4f99c0b0cac0275772
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 13c776faee71b757f9d5ce259a2d5ee88ba29066
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679901"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315384"
 ---
 # <a name="idl-attributes"></a>IDL Öznitelikleri
 

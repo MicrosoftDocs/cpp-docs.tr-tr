@@ -10,13 +10,10 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- resource files, multiple
-- Resource Includes dialog box
-- symbol header files, changing names
-- symbol header files
-- header files, changing names
-- names [C++], symbol header files
-- symbols, symbol header files
+- resource files [C++], multiple
+- Resource Includes dialog box [C++]
+- symbol header files [C++], changing names
+- symbols [C++], symbol header files
 - Resource.h
 ms.assetid: b948284a-7899-402e-ab12-9f2c8480ca9d
 author: mikeblome
@@ -24,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2df697df91374b61b72b9093c8cf16e1ac613863
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 587cc5315395a58e6fdeb01929f920f506031e58
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605232"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317400"
 ---
 # <a name="changing-the-names-of-symbol-header-files"></a>Sembol Başlık Dosyalarının Adlarını Değiştirme
 

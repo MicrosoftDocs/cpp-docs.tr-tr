@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f8917d2d1a6895f4454aad8d48dd25ee4bdaa3f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: cc0fdcc1ecfec18403904e75e0efbe3341137f02
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110571"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313787"
 ---
 # <a name="multiplies-struct"></a>multiplies Yapısı
 
@@ -109,12 +109,12 @@ int main( )
       cout << *Iter3 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 2 4 6 8 10 12 )
 The vector v2 = ( 3 6 9 12 15 18 )
 The element-wise products of vectors V1 & v2
 are: ( 6 24 54 96 150 216 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

@@ -9,22 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - union attributes
-- attributes [C++], reference topics
-- struct attributes
-- typedef attributes
-- enum attributes
+- attributes [C++/CLI], reference topics
 ms.assetid: f8a4fe94-dc02-4aed-bc31-3e500d42f4c7
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3c8cca379b9b9ba6498908469761acefce189117
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 74e9bbf3ad593f5ce1e6d1868d8e1a09b0bd885e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686994"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314605"
 ---
 # <a name="typedef-enum-union-and-struct-attributes"></a>Typedef, Enum, Union ve Struct Öznitelikleri
 

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a826d258cf9b88294a2d870cf802763a588520e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e43c47d5f5c3da22a5a0e0df11022d3b667149bd
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105737"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313903"
 ---
 # <a name="negate-struct"></a>negate Yapısı
 
@@ -95,10 +95,10 @@ int main( )
       cout << *Iter2 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( -10 -5 0 5 10 15 20 25 )
 The negated elements of the vector = ( 10 5 0 -5 -10 -15 -20 -25 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

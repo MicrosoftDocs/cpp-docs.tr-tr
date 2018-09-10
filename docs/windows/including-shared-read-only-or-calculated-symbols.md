@@ -10,9 +10,9 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- symbols, read-only
-- symbols, shared
-- symbols, calculated
+- symbols [C++], read-only
+- symbols [C++], shared
+- symbols [C++], calculated
 - read-only symbols
 - symbol directives
 - calculated symbols
@@ -23,12 +23,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 29449031485f1b701d6b6a1cfe671993c5ebc73a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 63da1f6ffb684cd2971808f4a56167e19f7bd347
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589321"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313409"
 ---
 # <a name="including-shared-read-only-or-calculated-symbols"></a>Paylaşılan (Salt Okunur) veya Hesaplanan Sembolleri Ekleme
 

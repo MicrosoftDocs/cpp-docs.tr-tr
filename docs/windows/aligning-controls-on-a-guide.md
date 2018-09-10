@@ -10,9 +10,9 @@ dev_langs:
 helpviewer_keywords:
 - DLUs (dialog units)
 - controls [C++], aligning
-- Dialog editor, snap to guides
+- Dialog Editor [C++], snap to guides
 - guides, tick mark interval
-- dialog box controls, placement
+- dialog box controls [C++], placement
 - guides, aligning controls
 - dialog units (DLUs)
 - snap to guides (Dialog editor)
@@ -25,12 +25,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 55cf669d2c84bc0a603354a672706e32656a7c3c
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2790d9fc3bd4e0af6c86bdbd71be236d8980ab4a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603934"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314995"
 ---
 # <a name="aligning-controls-on-a-guide"></a>Kılavuzdaki Denetimleri Hizalama
 

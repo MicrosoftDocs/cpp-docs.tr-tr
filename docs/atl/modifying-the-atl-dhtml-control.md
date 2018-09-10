@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a0652ca867ba49243ca5c87caa1dec98da929cf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8a08563396a77dec5f72ea35e10dd8a349095077
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764556"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314241"
 ---
 # <a name="modifying-the-atl-dhtml-control"></a>ATL DHTML denetimini değiştirme
 
@@ -51,7 +51,7 @@ ATL denetimi Sihirbazı, yapı ve denetim çalıştırın ve proje dosyalarında
 
    Kullanabileceğiniz **Iwebbrowser2** yöntemleri çünkü ATL bu arabirim işaretçisi, .h dosyanızda sağlar.
 
-Ardından, oluşturduğunuz yöntemlerini çağırmak için HTML kaynak değiştirin. Bu yöntemleri çağırmak için üç düğmeler ekleyeceksiniz.  
+Ardından, oluşturduğunuz yöntemlerini çağırmak için HTML kaynak değiştirin. Bu yöntemleri çağırmak için üç düğmeler ekleyeceksiniz.
 
 #### <a name="to-modify-the-html-resource"></a>HTML kaynağı değiştirmek için
 
@@ -72,9 +72,9 @@ Ardından, oluşturduğunuz yöntemlerini çağırmak için HTML kaynak değişt
 3. Çağrısı ekleyin `HelloHTML` oluşturduğunuz yöntemi. Örneğin:
 
     ```html
-    <br>  
-    <br>  
-    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>  
+    <br>
+    <br>
+    <BUTTON onclick='window.external.HelloHTML();'>HelloHTML</BUTTON>
     ```
 
    Bu yöntem etiketli bir düğme oluşturur **HelloHTML**, kullanıcı görüntülemek için tıklayabileceği `HelloHTML` ileti kutusu.

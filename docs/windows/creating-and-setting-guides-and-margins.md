@@ -10,8 +10,8 @@ dev_langs:
 helpviewer_keywords:
 - guides, clearing
 - guides
-- Dialog editor, guides and margins
-- dialog box controls, placement
+- Dialog Editor [C++], guides and margins
+- dialog box controls [C++], placement
 - controls [C++], guides and margins
 - guides, creating
 - guides, moving
@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2fedae08467243c0fe981b287e63f4e2e041d910
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8ceee8a6275ef612cb26eff042d29efa35e8aa5c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589172"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318765"
 ---
 # <a name="creating-and-setting-guides-and-margins"></a>Kılavuzlar ve Kenar Boşlukları Oluşturma ve Ayarlama
 

@@ -9,8 +9,8 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - performance, C++
-- Visual C++, performance
-- Visual C++, generics
+- C++, performance
+- C++, generics
 - generics [C++], performance
 ms.assetid: f14a175b-301f-46cc-86e4-c82d35f9aa3e
 author: mikeblome
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 519d498f9ff62773171dbe14eef828899bb2f5c1
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 9f946970f78b432774a5e4c7ba20fd15a00ae654
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42571253"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318532"
 ---
 # <a name="how-to-improve-performance-with-generics-visual-c"></a>Nasıl yapılır: Genel Türlerle Performansı Artırma (Visual C++)
 

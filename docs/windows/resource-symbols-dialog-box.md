@@ -1,5 +1,5 @@
 ---
-title: Kaynak sembolleri iletişim kutusu | Microsoft Docs
+title: Kaynak sembolleri iletişim kutusu (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,25 +10,25 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- New Symbol dialog box
-- Resource Symbols dialog box
-- Change Symbol dialog box
+- New Symbol dialog box [C++]
+- Resource Symbols dialog box [C++]
+- Change Symbol dialog box [C++]
 ms.assetid: 9706cde3-1f48-4fcd-bedb-2b03b455e3c1
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fc4c6a749a5e3ef1835d959e7803ac6b6f4435ec
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 064fb9adce8b41c13709819f7ce0b7c515fea12a
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609825"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313175"
 ---
-# <a name="resource-symbols-dialog-box"></a>Kaynak Sembolleri İletişim Kutusu
+# <a name="resource-symbols-dialog-box-c"></a>Kaynak sembolleri iletişim kutusu (C++)
 
-**Kaynak sembolleri** iletişim kutusu, yeni kaynak sembolleri eklemek için görüntülenen ya da sembol kullanımda olduğu konumda kaynak kodu atlamak simgeleri değiştirme tanır.
+**Kaynak sembolleri** C++ iletişim kutusu, yeni kaynak sembolleri eklemek için görüntülenir ya da sembol kullanımda olduğu konumda kaynak kodu atlamak sembolleri değiştirme olanak tanır.
 
 **Ad**  
 Simgenin adını görüntüler. Daha fazla bilgi için [sembol adı kısıtlamaları](../windows/symbol-name-restrictions.md).

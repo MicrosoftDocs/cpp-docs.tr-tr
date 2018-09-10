@@ -8,28 +8,23 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- opaque backgrounds
-- background colors, images
+- opaque backgrounds [C++]
 - colors [C++], image
 - Image editor [C++], transparent or opague backgrounds
-- background images
 - images [C++], transparency
 - images [C++], opaque background
-- transparent backgrounds
-- transparency, background
-- transparent backgrounds, images
 ms.assetid: 61b743d9-c86b-405d-9a81-0806431b4363
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: cd5ec3ca119b23e62fa87f1cd216d1131ae179e5
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5c0c4c306191af519103c65b39e3bb89afdb47f9
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591421"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313487"
 ---
 # <a name="choosing-a-transparent-or-opaque-background-image-editor-for-icons"></a>Saydam veya Donuk Arka Plan Seçme (Simgeler İçin Görüntü Düzenleyicisi)
 

@@ -8,19 +8,19 @@ ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
-- boxing, Visual C++
+- boxing, C++
 ms.assetid: b5fd2c98-c578-4f83-8257-6dd663478665
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8d429e34d994ab554146d411ec9d62f3a5eefbeb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 92dc2032031fd0f3032db57b9eca8c723367da9e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200714"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316724"
 ---
 # <a name="boxing--c-component-extensions"></a>Kutulama (C++ Bileşen Uzantıları)
 

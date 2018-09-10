@@ -12,8 +12,7 @@ dev_langs:
 helpviewer_keywords:
 - cursors [C++], creating
 - icons [C++], creating
-- display devices
-- display devices, creating image
+- display devices [C++], creating image
 - images [C++], creating for display devices
 - icons [C++], inserting
 ms.assetid: 5a536928-32df-4ace-beb1-1521ce3b871f
@@ -22,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0a8af9b18b8fc1afb4ad7d0770a1b302e4e7a0e9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 753971a7b010c8e3af1c36c56833a123c182a708
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597381"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318128"
 ---
 # <a name="creating-a-device-image-image-editor-for-icons"></a>Cihaz Görüntüsü Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

@@ -9,19 +9,19 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - RichEdit 1.0 control
-- rich edit controls, RichEdit 1.0
+- rich edit controls [C++], RichEdit 1.0
 ms.assetid: 5a9060dd-44d8-4ef3-956e-16152f7e23d2
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 459815b29ec8caff42d4f9a892b468dff3bf7832
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 27e3ad32500d1b0ff0efa2dab40888f163744bb1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607057"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318713"
 ---
 # <a name="using-the-richedit-10-control-with-mfc"></a>MFC ile RichEdit 1.0 Denetimini Kullanma
 

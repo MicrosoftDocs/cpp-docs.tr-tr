@@ -23,16 +23,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6c89e2550c01db695aa513a98d6d1cc8f116ca0
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: dea292ad348a155c6acdf64352dae47e858140b0
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465274"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314111"
 ---
 # <a name="left-shift-and-right-shift-operators-gtgt-and-ltlt"></a>Sol kaydırma ve sağ kaydırma işleçleri (&gt; &gt; ve &lt; &lt;)
 
-Bit düzeyinde kaydırma işleçleri olan sağa kaydırma işleci (>>), bitlerini shift_expression *shift-expression* sağa ve sola kaydırma işleci (<<), bitlerini shift_expression *shift-expression* sol. <sup>1</sup>
+Bit düzeyinde kaydırma işleçleri olan sağa kaydırma işleci (**&gt;&gt;**), bitlerini shift_expression *shift-expression* sağa ve sola kaydırma işleci (**&lt; &lt;**), bitlerini shift_expression *shift-expression* sol. <sup>1</sup>
 
 ## <a name="syntax"></a>Sözdizimi
 

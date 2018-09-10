@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - Win32 [C++], predefined symbols
-- symbols, Win32 predefined
+- symbols [C++], Win32 predefined
 - Windows API [C++], predefined symbols
 ms.assetid: 45c8e193-ee2a-4024-bfc2-34d1ec9c9239
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8578692701d6f9037ed40ed9ece34c79ca7f2275
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: cb24c8d0d24351ba09cdc8750cebbe04f7335942
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592794"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313214"
 ---
 # <a name="win32-predefined-symbols"></a>Win32 Önceden Tanımlanmış Semboller
 

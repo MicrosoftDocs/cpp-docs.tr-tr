@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82fa31d81b55df624c0eab4cdd68cf18c9c7f19b
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: baa0cd298e157db6facb8fcdb16e7724392a56fc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33842644"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314540"
 ---
 # <a name="domainerror-class"></a>domain_error Sınıfı
 
-Sınıfı, bir etki alanı hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak görev yapar.
+Sınıfı, bir etki alanı hatayı bildirmek için oluşturulan tüm özel durumlar için temel sınıf olarak hizmet verir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -41,7 +41,7 @@ public:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyası **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
+Tarafından döndürülen değer [ne](../standard-library/exception-class.md) bir kopyasıdır **ileti**`.`[veri](../standard-library/basic-string-class.md#data).
 
 ## <a name="example"></a>Örnek
 
@@ -64,10 +64,10 @@ int main( )
       cerr << "Type: " << typeid(e).name( ) << endl;
    };
 }
-\* Output:
+/* Output:
 Caught: Your domain is in error!
 Type: class std::domain_error
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

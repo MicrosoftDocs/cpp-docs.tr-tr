@@ -1,5 +1,5 @@
 ---
-title: Hızlandırıcı tablolarını düzenleme | Microsoft Docs
+title: Hızlandırıcı tablolarını (C++) düzenleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,16 +18,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1c258f691b7dbea814c707cbf1f3825b9db5ba42
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 14f9e82e87d395341dc1f05f1de49a20d58fec52
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596409"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314891"
 ---
-# <a name="editing-accelerator-tables"></a>Hızlandırıcı Tablolarını Düzenleme
+# <a name="editing-accelerator-tables-c"></a>(C++) Hızlandırıcı tablolarını düzenleme
 
-Visual C++'da, doğrudan yerinde düzenlemedeki ile Hızlandırıcı tablosunu düzenleyebilirsiniz **hızlandırıcı** Düzenleyici.
+Bir C++ projesinde, doğrudan yerinde düzenlemeyle Hızlandırıcı tablosunu düzenleyebilirsiniz **hızlandırıcı** Düzenleyici.
 
 Standart özellik sayfalarının kullanımı için aşağıdaki yordamlara bakın, ancak aynı sonucu yerinde düzenleme ve özellik sayfası yöntemi vardır. Özellik sayfaları veya yerinde düzenlemeyi kullanarak yapılan değişiklikler hemen Hızlandırıcı tablosunda yansıtılır.
 

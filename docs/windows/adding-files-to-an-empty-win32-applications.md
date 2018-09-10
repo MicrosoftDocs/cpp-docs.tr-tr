@@ -8,7 +8,7 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- empty projects, adding files
+- empty projects [C++], adding files
 - projects [C++], adding items
 - blank projects
 - files [C++], adding to projects
@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1db86f2ba4b9f023d0a0a0abaf67114176c0ddf4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2801ddf7169bfd8d9ede93ada28cd4716057661c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690216"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315749"
 ---
 # <a name="adding-files-to-an-empty-win32-applications"></a>Boş Win32 Uygulamalarına Dosya Ekleme
 

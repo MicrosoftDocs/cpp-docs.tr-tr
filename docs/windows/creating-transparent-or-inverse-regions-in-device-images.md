@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - cursors [C++], screen regions
-- inverse colors, device images
+- inverse colors [C++], device images
 - transparent regions, device images
 - transparency, device images
 - Image editor [C++], device images
@@ -18,11 +18,11 @@ helpviewer_keywords:
 - screen colors
 - regions, transparent
 - icons [C++], transparent regions
-- display devices, transparent and screen regions
+- display devices [C++], transparent and screen regions
 - transparent regions in devices
 - regions, inverse
 - colors [C++], Image editor
-- device projects, transparent images
+- device projects [C++], transparent images
 - icons [C++], screen regions
 ms.assetid: a994954b-b039-4391-a535-58d1fa10fc3b
 author: mikeblome
@@ -30,12 +30,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: ba32b0c15f6262763fa001d89d3439c153f5fa3d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ab57df8151d02064b244212f28fe21628f0f3bb8
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680295"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314852"
 ---
 # <a name="creating-transparent-or-inverse-regions-in-device-images-image-editor-for-icons"></a>Cihaz Görüntülerinde Saydam veya Ters Bölgeler Oluşturma (Simgeler İçin Görüntü Düzenleyicisi)
 

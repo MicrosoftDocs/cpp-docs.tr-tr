@@ -1,5 +1,5 @@
 ---
-title: Önceden tanımlanmış Hızlandırıcı tuşları | Microsoft Docs
+title: Önceden tanımlanmış Hızlandırıcı tuşları (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,21 +12,21 @@ dev_langs:
 helpviewer_keywords:
 - accelerator keys
 - keyboard shortcuts
-- keyboard shortcuts, predefined
+- keyboard shortcuts [C++], predefined
 ms.assetid: f234c5f2-4ec3-4c9e-834a-b5dd297625b9
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 3f5ed6d95b48a4ecbe2fa23a377d8aac7a73feb9
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 5e6498e0b0722b5de28b5569c5f3565b0f033ea9
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42603799"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315684"
 ---
-# <a name="predefined-accelerator-keys"></a>Önceden Tanımlanmış Hızlandırıcı Tuşları
+# <a name="predefined-accelerator-keys-c"></a>Önceden tanımlanmış Hızlandırıcı tuşları (C++)
 
 Bir Windows uygulaması projesi parçası olabilecek önceden tanımlanmış Hızlandırıcı tuşları vardır. Bu sanal anahtarları bazıları Windows ortamınız için değişir. Diğer destek tarayıcılar veya Unicode uygulamalar. Bu anahtarları bir Hızlandırıcı kullanabilirsiniz.
 

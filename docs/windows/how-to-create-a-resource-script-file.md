@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynak betik dosyası oluştur | Microsoft Docs'
+title: 'Nasıl yapılır: kaynak betik dosyası (C++) oluştur | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,23 +8,23 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- rc files, creating
-- .rc files, creating
-- resource script files, creating
+- rc files [C++], creating
+- .rc files [C++], creating
+- resource script files [C++], creating
 ms.assetid: 82be732a-cdcd-4a58-8de7-976d1418f86b
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8b07efbd4f1434992c76de2b7e959f4578d60096
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 092cb7c33aab2805ca40410cac404d43ba5c9274
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42608743"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313254"
 ---
-# <a name="how-to-create-a-resource-script-file"></a>Nasıl Yapılır: Kaynak Betik Dosyası Oluşturma
+# <a name="how-to-create-a-resource-script-file-c"></a>Nasıl yapılır: kaynak betik dosyası (C++) oluştur
 
 > [!NOTE]
 > **Kaynak Düzenleyicisi** Express sürümlerinde kullanılamaz.

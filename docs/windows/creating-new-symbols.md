@@ -10,20 +10,20 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- New Symbol dialog box
-- symbols, creating
+- New Symbol dialog box [C++]
+- symbols [C++], creating
 ms.assetid: 35168d31-3af6-4ecd-9362-3707d47b53f3
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d84eef4c91442eedc830fdee836dc5d950b5eae
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 91d27752af42b861c0374e9d8881db9e121fd5fd
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209596"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315333"
 ---
 # <a name="creating-new-symbols"></a>Yeni Semboller Oluşturma
 

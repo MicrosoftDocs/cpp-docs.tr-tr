@@ -8,22 +8,20 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- blank projects
 - projects [C++], creating
-- empty projects
-- empty projects, creating
+- empty projects [C++]
 ms.assetid: e0f0e628-041d-4c50-b221-5807b9184000
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0c8bbd345e2d3fe0c5571407d41f590c6cc8d7ba
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3dd9ab540f7abab45013bd2dee46076d5978d918
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676829"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313162"
 ---
 # <a name="creating-an-empty-windows-desktop-application"></a>Boş Windows masaüstü uygulaması oluşturma
 

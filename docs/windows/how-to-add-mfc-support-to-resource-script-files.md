@@ -1,5 +1,5 @@
 ---
-title: 'Nasıl yapılır: kaynak betik dosyalarına MFC desteği ekleme | Microsoft Docs'
+title: 'Nasıl yapılır: kaynak betik dosyalarına (C++) için MFC desteği ekleme | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,24 +10,24 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- rc files, adding MFC support
-- .rc files, adding MFC support
+- rc files [C++], adding MFC support
+- .rc files [C++], adding MFC support
 - MFC, adding support to resource scripts files
-- resource script files, adding MFC support
+- resource script files [C++], adding MFC support
 ms.assetid: 599dfe9d-ad26-4e34-899c-49b56599e37f
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 194f2b4f2e6659412c9c2b5f688e0b73eea3bba5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f6951a5e8ceb56d366f8f9024aef479c83a5925f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692034"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317361"
 ---
-# <a name="how-to-add-mfc-support-to-resource-script-files"></a>Nasıl Yapılır: Kaynak Betik Dosyalarına MFC Desteği Ekleme
+# <a name="how-to-add-mfc-support-to-resource-script-files-c"></a>Nasıl yapılır: kaynak betik dosyalarına (C++) için MFC desteği ekleme
 
 Normalde, Windows kullanmaya yönelik bir MFC uygulaması oluşturduğunuzda [MFC Uygulama Sihirbazı](../mfc/reference/mfc-application-wizard.md), Microsoft Foundation'ın temel özelliklerini içeren temel bir kümesi (kaynak betiği (.rc) dosyası da dahil olmak üzere) dosyaları sihirbaz oluşturur sınıfları (MFC). Ancak, MFC'ye dayalı olmayan bir Windows uygulaması için bir .rc dosyasını düzenliyorsanız MFC çerçevesine özgü aşağıdaki özellikler kullanılabilir değildir:
 

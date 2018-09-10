@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eb91708545d2303304177093e79ea49e8fa9208
-ms.sourcegitcommit: 894b3b3a91fcd8894b582747b03135c0be450c1f
+ms.openlocfilehash: 6645bb81a1fd4a2b42eb7419a0d008b9ac7692ad
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "37850426"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44319090"
 ---
 # <a name="compiler-warnings-by-compiler-version"></a>Derleyici sürümüne göre derleyici uyarıları
 
@@ -382,15 +382,15 @@ C4572|[ParamArray] özniteliği/CLR altında kullanım dışı bırakılmıştı
 C4580|[attribute] Kullanımdan kalktı; Bunun yerine belirtin *belirtilen*bir temel sınıf olarak özniteliği
 C4581|kullanımdan kalkan davranış: ' "*adı*"' yerine '*adı*' özniteliği işlemek için
 C4606|#pragma uyarısı: '*sayı*' yoksayıldı; Kod çözümleme uyarıları, uyarı düzeyleriyle ilişkili değil.
-C4631|MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. *açıklaması*
+C4631|MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
 C4632|XML belgesi açıklaması: *açıklama* -erişim reddedildi: *açıklaması*
 C4633|XML belgesi açıklaması*açıklama*: hata: *açıklaması*
 C4634|XML belgesi açıklaması*açıklama*: uygulanamaz: *açıklaması*
 C4635|XML belgesi açıklaması*açıklama*: hatalı oluşturulmuş XML: *açıklaması*
 C4636|XML belgesi açıklaması*açıklama*: etiketi boş gerekli '*açıklama*' özniteliği.
-C4637|XML belgesi açıklaması*açıklama*: \<dahil > Etiket atıldı. *açıklaması*
+C4637|XML belgesi açıklaması*açıklama*: \<dahil > Etiket atıldı. *Açıklaması*
 C4638|XML belgesi açıklaması*açıklama*: Bilinmeyen sembole başvuru '*açıklama*'.
-C4639|MSXML hatası, XML belgesi açıklamaları işlenmeyecek. *açıklaması*
+C4639|MSXML hatası, XML belgesi açıklamaları işlenmeyecek. *Açıklaması*
 C4641|XML belgesi açıklamasında belirsiz bir çapraz başvuru var:
 C4678|temel sınıfı*bildirimi*'den daha az erişilebilir olan'*adı*'
 C4679|'*açıklama*': üye alınamadı
@@ -404,7 +404,7 @@ C4694|'*türü*': kapalı bir soyut sınıf temel sınıf olamaz*türü*'
 C4720|Satır içi Birleştirici raporları: '*açıklama*'
 C4721|'*açıklama*': iç öğe olarak kullanılamıyor
 C4722|'*açıklama*': yok edici hiç dönmüyor, olası bellek sızıntısı
-C4726|ARM arch4/4T yalnızca destekleyen ' < cpsr_f > veya < spsr_f >' değerini
+C4726|ARM arch4/4T yalnızca destekleyen '\<cpsr_f > veya \<spsr_f >' değerini
 C4727|Adlı PCH *adı* bulunan aynı zaman damgasına sahip *adı* ve *adı*.  İlk PCH kullanılıyor.
 C4729|Akış grafı için çok büyük işlevi, uyarı tabanlı
 C4730|'*açıklama*': mixing _m64 ve kayan nokta ifadeleri hatalı koda neden olabilir
@@ -497,7 +497,7 @@ C4096|'*türü*': arabirim bir COM arabirimi değil; ıdl'ye değil
 C4097|pragma parametresinin 'restore' olması bekleniyor veya 'off'
 C4165|'HRESULT' 'bool'; dönüştürülüyor budur başlatmak için istediğinize emin misiniz?
 C4183|'*adı*': dönüş türü eksik; 'int' döndüren bir üye işlev olduğu varsayıldı
-C4199|*açıklaması*
+C4199|*Açıklaması*
 C4255|'*adı*': hiçbir işlev prototipi verilmedi: '(') '(void)' olarak dönüştürülüyor
 C4256|'*bildirimi*': sanal tabanları olan sınıfın oluşturucusunda '...' var; çağrılar eski Visual C++ sürümleriyle uyumlu olmayabilir
 C4258|'*adı*': tanımından döngü göz ardı edilir için; kapsayan kapsamdan gelen tanım kullanılır

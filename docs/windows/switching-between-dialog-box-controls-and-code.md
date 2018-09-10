@@ -1,5 +1,5 @@
 ---
-title: İletişim kutusu denetimleri ile kod arasında geçiş yapma | Microsoft Docs
+title: İletişim kutusu (C++) denetimleri ile kod arasında geçiş yapma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -11,24 +11,24 @@ helpviewer_keywords:
 - events [C++], viewing for controls
 - Windows messages [C++], controls
 - messages [C++], viewing for dialog boxes
-- Dialog editor, accessing code
+- Dialog Editor [C++], accessing code
 - code [C++], switching from Dialog Editor
 - controls [C++], jumping to code
-- Dialog editor, switching between controls and code
+- Dialog Editor [C++], switching between controls and code
 ms.assetid: 7da73815-b853-4203-ba45-bbe570695122
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9aa603afdd6392f9dbe6082a76c1ae157bd008af
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0ef2bcd7dc6bf70f4d0486334d71bd5f7798c83f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42610862"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314397"
 ---
-# <a name="switching-between-dialog-box-controls-and-code"></a>İletişim Kutusu Denetimleri ile Kod Arasında Geçiş Yapma
+# <a name="switching-between-dialog-box-c-controls-and-code"></a>İletişim kutusu (C++) denetimleri ile kod arasında geçiş yapma
 
 MFC uygulamalarında iletişim kutusu denetimleri üzerinde işleyici kodlarını atlayın veya hızlı bir şekilde saplama işleyici işlevleri oluşturmak için çift tıklayabilirsiniz.
 

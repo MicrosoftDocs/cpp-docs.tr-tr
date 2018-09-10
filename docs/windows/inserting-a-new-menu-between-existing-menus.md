@@ -1,5 +1,5 @@
 ---
-title: Mevcut menülerin arasına yeni menü ekleme | Microsoft Docs
+title: (C++) varolan menülerin arasına yeni menü ekleme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,22 +8,22 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- menus, adding items
-- commands, adding to menus
+- menus [C++], adding items
+- commands [C++], adding to menus
 ms.assetid: 7a6c807f-3839-40dc-97c9-dedb0e33dcde
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 759ed60206ef9cb68ea2b0f502c1241c9ce5b6cd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 558c6e14c226a9d6138f0bad36cb1620e4ce18be
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42602979"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314956"
 ---
-# <a name="inserting-a-new-menu-between-existing-menus"></a>Varolan Menülerin Arasına Yeni Menü Ekleme
+# <a name="inserting-a-new-menu-between-existing-menus-c"></a>(C++) varolan menülerin arasına yeni menü ekleme
 
 ### <a name="to-insert-a-new-menu-between-existing-menus"></a>Mevcut menülerin arasına yeni menü eklemek için
 

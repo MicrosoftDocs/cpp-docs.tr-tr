@@ -12,7 +12,7 @@ dev_langs:
 helpviewer_keywords:
 - Windows applications [C++]
 - applications [C++], Windows
-- Visual C++, Windows applications
+- C++, Windows applications
 - Windows applications [C++], about creating Windows applications
 ms.assetid: be15855a-fa3f-41e9-89cd-41b9484ebfdb
 author: mikeblome
@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 23028ee742f05016509da5147c8f6c0ab6b1a532
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 7418a8af4909b4073301b21905a81ef1f7f537cc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598164"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318623"
 ---
 # <a name="windows-desktop-applications-c"></a>Windows Masaüstü uygulamaları (C++)
 

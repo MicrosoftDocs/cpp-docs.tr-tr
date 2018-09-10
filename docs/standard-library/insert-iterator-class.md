@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd9b2e3beb30be7eb9aa51d7794d0d858c0be537
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 6011bd8f413a2e0a849e2ef9ba7c5bc229913c41
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101995"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318843"
 ---
 # <a name="insertiterator-class"></a>insert_iterator Sınıfı
 
@@ -111,9 +111,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L2 is: ( 40 20 10 ).
-*\
+*/
 ```
 
 ## <a name="insert_iterator"></a>  insert_iterator::insert_iterator
@@ -174,12 +174,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( 10 20 30 ).
 After the insertions, the list L is:
 ( 2 10 20 30 300 ).
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  insert_iterator::operator *
@@ -234,12 +234,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
 ( 0 2 4 6 ).
 After the insertions, the list L is:
 ( 10 20 30 0 2 4 6 ).
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  insert_iterator::operator++
@@ -298,12 +298,12 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The vector vec is:
 ( 1 2 3 4 ).
 After the insertions, the vector vec becomes:
 ( 30 40 50 1 2 3 4 ).
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  insert_iterator::operator=
@@ -381,12 +381,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The original list L is:
 ( 0 2 4 6 ).
 After the insertions, the list L is:
 ( 10 20 30 0 2 4 6 ).
-*\
+*/
 ```
 
 ## <a name="reference"></a>  insert_iterator::reference
@@ -431,10 +431,10 @@ int main( )
    cout << "The first element in the list L is: "
         << RefFirst << "." << endl;
 }
-\* Output:
+/* Output:
 The list L is: ( 10 20 30 ).
 The first element in the list L is: 10.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

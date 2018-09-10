@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c83e644d8544b7919c0f61199197574d03b13ff8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ec6c778c46998ba8e324fcf97c209598cc2f99dd
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763074"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44315385"
 ---
 # <a name="atl-ole-db-consumer-wizard"></a>ATL OLE DB Tüketicisi Sihirbazı
 
@@ -106,23 +106,23 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
    Bir veri kaynağını seçtikten sonra bu kutu tablo veya seçtiğiniz saklı yordam dayalı bir varsayılan sınıf adını doldurulur (bkz **bir veri kaynağı** aşağıda). Sınıf adını düzenleyebilirsiniz.
 
-- **.h dosyası**  
+- **.h dosyası**
 
    Bir veri kaynağını seçtikten sonra bu kutu, tablo veya seçtiğiniz saklı yordam dayalı varsayılan üstbilgi sınıf adıyla doldurulur (bkz **bir veri kaynağı** aşağıda). Üst bilgi dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
 
-- **Öznitelikli**  
+- **Öznitelikli**
 
    Bu seçenek, sihirbaz öznitelikler veya şablon bildirimleri kullanarak tüketici sınıflar oluşturacak olup olmadığını belirtir. Bu seçeneği belirlediğinizde sihirbaz (varsayılan seçenek budur) şablon bildirimleri yerine öznitelikleri kullanır. Bu seçeneği belirlediğinizde sihirbaz şablon bildirimleri yerine öznitelikleri kullanır.
 
    - Bir tüketici seçerseniz **türü** , **tablo**, Sihirbazı'nı kullanan `db_source` ve `db_table` tablosu ve tablo erişimci sınıf bildirimleri oluşturmak için öznitelikleri ve kullandığı `db_column` için Sütun eşlemesi oluşturun. Örneğin, bu eşlemeyi oluşturur:
 
         ```cpp
-        // Inject table class and table accessor class declarations  
-        [db_source("<initialization_string>"), db_table("dbo.Orders")]  
-        ... 
-        // Column map  
-        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;  
-        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];  
+        // Inject table class and table accessor class declarations
+        [db_source("<initialization_string>"), db_table("dbo.Orders")]
+        ...
+        // Column map
+        [ db_column(1, status=m_dwOrderIDStatus, length=m_dwOrderIDLength) ] LONG m_OrderID;
+        [ db_column(2, status=m_dwCustomerIDStatus, length=m_dwCustomerIDLength) ] TCHAR m_CustomerID[6];
         ...
         ```
 
@@ -133,20 +133,20 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
             class COrdersAccessor; // Table class
             class COrders : public CTable<CAccessor<COrdersAccessor>>;
         // ...
-        // Column map  
+        // Column map
             BEGIN_COLUMN_MAP(COrderDetailsAccessor)
                 COLUMN_ENTRY_LENGTH_STATUS(1, m_OrderID, m_dwOrderIDLength, m_dwOrderIDStatus)
                 COLUMN_ENTRY_LENGTH_STATUS(2, m_CustomerID, m_dwCustomerIDLength, m_dwCustomerIDStatus)
-                // ...  
+                // ...
             END_COLUMN_MAP()
         ```
 
    - Bir tüketici seçerseniz **türü** , **komut**, Sihirbazı kullanır `db_source` ve `db_command` öznitelikleri ve kullandığı `db_column` sütun eşlemesi oluşturmak için. Örneğin, bu eşlemeyi oluşturur:
 
         ```cpp
-        [db_source("<initialization_string>"), db_command("SQL_command")]  
-        ... 
-        // Column map using db_column is the same as for consumer type of 'table'  
+        [db_source("<initialization_string>"), db_command("SQL_command")]
+        ...
+        // Column map using db_column is the same as for consumer type of 'table'
         ```
 
       komut ve komut erişimci kullanmak yerine komut sınıfı .h dosyası bildirimlerinde örneğin sınıfı:
@@ -193,6 +193,6 @@ Bu sihirbaz bir OLE DB Tüketici sınıfı veri bağlamaları ile belirtilen OLE
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)  
-[Kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)  
-[Bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))
+[ATL OLE DB Tüketicisi](../../atl/reference/adding-an-atl-ole-db-consumer.md)
+[kod sihirbazlarıyla işlevsellik ekleme](../../ide/adding-functionality-with-code-wizards-cpp.md)
+[bağlantı dizelerini ve veri bağlantıları (OLE DB)](/previous-versions/windows/desktop/ms718376\(v=vs.85\))

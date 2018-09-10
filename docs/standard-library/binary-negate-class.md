@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58d71ef5d3b2b50ec9d51668e4420c99ef9f3b17
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 33bbd9406f6a9f35e02d5e02aa5a2d6419d1cdae
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108848"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313753"
 ---
 # <a name="binarynegate-class"></a>binary_negate Sınıfı
 
@@ -119,11 +119,11 @@ int main( )
       cout << *Iter1 << " ";
    cout << ")" << endl;
 }
-\* Output:
+/* Output:
 Original vector v1 = ( 6262 6262 2233879413 2621500314 580942933 3715465425 3739828298 )
 Sorted vector v1 = ( 6262 6262 580942933 2233879413 2621500314 3715465425 3739828298 )
 Resorted vector v1 = ( 3739828298 3715465425 2621500314 2233879413 580942933 6262 6262 )
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

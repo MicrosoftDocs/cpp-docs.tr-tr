@@ -1,5 +1,5 @@
 ---
-title: Menü komut özellikleri | Microsoft Docs
+title: Menü komut özellikleri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,14 +15,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 34fa9944d1daa443850454560f8e5741e881f6f8
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 28426e2ca75638f5ad45188a8790d1c281afa99b
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598717"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317927"
 ---
-# <a name="menu-command-properties"></a>Menü Komut Özellikleri
+# <a name="menu-command-properties-c"></a>Menü komut özellikleri (C++)
 
 Aşağıdaki bilgilere göre düzenlenmiş **menü** görünen Özellikler [Özellikler penceresi](/visualstudio/ide/reference/properties-window) seçtiğinizde bir menü komutu. Bu rağmen alfabetik olarak listelenen **özellikleri** pencere Ayrıca bu özellikleri kategoriye göre görüntüle olanak sağlar.
 

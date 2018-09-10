@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğu düğmesi özellikleri | Microsoft Docs
+title: Araç çubuğu düğmesi özellikleri (C++) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,9 +9,9 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - size, toolbar buttons
-- toolbar buttons (in Toolbar editor), setting properties
-- Toolbar editor, toolbar button properties
-- status bars, active toolbar button text
+- toolbar buttons [C++], setting properties
+- Toolbar editor [C++], toolbar button properties
+- status bars [C++], active toolbar button text
 - command IDs, toolbar buttons
 - width, toolbar buttons
 ms.assetid: b2705814-7c5d-4f24-8f77-07559b0cdda2
@@ -20,14 +20,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5377616bd026ad9045345a465749f58dc22edd57
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b23194992d3b2bb4f1e2708f7e57396cb7e94be6
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42592971"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318739"
 ---
-# <a name="toolbar-button-properties"></a>Araç Çubuğu Düğmesi Özellikleri
+# <a name="toolbar-button-properties-c"></a>Araç çubuğu düğmesi özellikleri (C++)
 
 Araç çubuğu düğmesi özellikleri şunlardır:
 

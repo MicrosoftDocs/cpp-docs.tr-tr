@@ -1,5 +1,5 @@
 ---
-title: Menü oluşturma | Microsoft Docs
+title: Menü (C++) oluşturma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -10,23 +10,23 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- mnemonics, associating menu items
-- menus, associating commands with mnemonic keys
-- menus, creating
+- mnemonics [C++], associating menu items
+- menus [C++], associating commands with mnemonic keys
+- menus [C++], creating
 ms.assetid: 66f94448-9b97-4b73-bf97-10d4bf87cc65
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 93788240ae90463c430a2d53df7e3e7f087b2c97
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 59689abec68fc6cff2a742bd4db97b58cd023af1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596740"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316269"
 ---
-# <a name="creating-a-menu"></a>Menü Oluşturma
+# <a name="creating-a-menu-c"></a>Menü (C++) oluşturma
 
 > [!NOTE]
 > **Kaynak penceresi** Express sürümlerinde kullanılamaz.

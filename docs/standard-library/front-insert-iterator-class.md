@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b6a9323a75b18349b0967259ec89dbabd46d88b
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: fcd8d623b4ce16f7f7af671d06dae568ec2a53d1
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108440"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318208"
 ---
 # <a name="frontinsertiterator-class"></a>front_insert_iterator Sınıfı
 
@@ -111,9 +111,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L2 is: ( 40 10 20 ).
-*\
+*/
 ```
 
 ## <a name="front_insert_iterator"></a>  front_insert_iterator::front_insert_iterator
@@ -171,12 +171,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
 ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
-*\
+*/
 ```
 
 ## <a name="op_star"></a>  front_insert_iterator::operator\*
@@ -232,12 +232,12 @@ int main( )
       cout << *L_Iter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L is:
 ( -2 0 2 4 6 8 10 12 14 16 ).
 After the front insertions, the list L is:
 ( 30 20 -2 0 2 4 6 8 10 12 14 16 ).
-*\
+*/
 ```
 
 ## <a name="op_add_add"></a>  front_insert_iterator::operator++
@@ -286,9 +286,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L1 is: ( 30 20 10 ).
-*\
+*/
 ```
 
 ## <a name="op_eq"></a>  front_insert_iterator::operator=
@@ -348,9 +348,9 @@ int main( )
       cout << *vIter << " ";
    cout << ")." << endl;
 }
-\* Output:
+/* Output:
 The list L1 is: ( 30 20 10 ).
-*\
+*/
 ```
 
 ## <a name="reference"></a>  front_insert_iterator::reference
@@ -391,10 +391,10 @@ int main( )
    cout << "The first element in the list L is: "
         << RefFirst << "." << endl;
 }
-\* Output:
+/* Output:
 The list L is: ( 30 20 10 ).
 The first element in the list L is: 30.
-*\
+*/
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

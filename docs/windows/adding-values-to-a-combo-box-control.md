@@ -11,10 +11,9 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - combo boxes [C++], Data property
-- controls [Visual Studio], testing values in combo boxes
+- controls [C++], testing values in combo boxes
 - combo boxes [C++], adding values
 - combo boxes [C++], previewing values
-- controls [C++], testing values in combo boxes
 - Data property
 - combo boxes [C++], testing values
 ms.assetid: 22a78f98-fada-48b3-90d8-7fa0d8e4de51
@@ -23,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c1727313018e88d97f810204428cc99f7aab2366
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 224f52ed9141f302568fe007e7cde4ef609d00ed
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42591615"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44317979"
 ---
 # <a name="adding-values-to-a-combo-box-control"></a>Birleşik Giriş Kutusu Denetimine Değer Ekleme
 

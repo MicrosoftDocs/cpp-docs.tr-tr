@@ -11,12 +11,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - Image editor [C++], Colors Palette
-- Colors Palette
-- colors [C++], image
-- Image editor [C++], Colors window
-- Screen-Color Selector
 - Colors Palette, Image editor
-- Colors window
 - colors [C++], inverting
 - colors [C++]
 - Color Indicator
@@ -26,12 +21,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e6cb463f95bc68d6880fb593ba394ec94d585696
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b7e4976065d32a2f88550e5f89fc464da2dbc00e
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597342"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316711"
 ---
 # <a name="colors-window-image-editor-for-icons"></a>Renkler Penceresi (Simgeler İçin Görüntü Düzenleyicisi)
 

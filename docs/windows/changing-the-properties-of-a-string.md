@@ -1,5 +1,5 @@
 ---
-title: Bir dizenin özelliklerini değiştirme | Microsoft Docs
+title: Bir dize kaynağı (C++) özelliklerini değiştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - resource identifiers, string properties
-- string tables, changing strings
+- string tables [C++], changing strings
 - strings [C++], properties
 ms.assetid: 0a220434-f444-4405-9a64-d28d6b965687
 author: mikeblome
@@ -17,14 +17,14 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 5897801a0b0350d813f7dddc5d1595e04213e2dd
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b1fdf47a6995a29641cf18018199f8d7b88a622c
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221646"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44318362"
 ---
-# <a name="changing-the-properties-of-a-string"></a>Dizenin Özelliklerini Değiştirme
+# <a name="changing-the-properties-of-a-string-resource-c"></a>Bir dize kaynağı (C++) özelliklerini değiştirme
 
 ### <a name="to-change-a-string-or-its-identifier"></a>Bir dize veya tanımlayıcısını değiştirmek için
 

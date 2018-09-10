@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6520bb5b7ad28d650eaf71f033c9d1f3934d85c8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 92b0a7c9ae697bc28ad9fe3bd89d37f22d7a8cdc
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106645"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313474"
 ---
 # <a name="complexltlong-doublegt"></a>karmaşık&lt;uzun çift&gt;
 
@@ -108,7 +108,7 @@ int main( )
         << argc3 << " radians, which is " << argc3 * 180 / pi
         << " degrees." << endl;
 }
-\* Output:
+/* Output:
 Specifying initial real & imaginary parts,
 as type float gives c1 = (4,5)
 Implicit conversion from type float to type long double,
@@ -118,7 +118,7 @@ gives c3longdouble = (3,4)
 The modulus of c3 is recovered from c3 using: abs ( c3 ) = 5
 Argument of c3 is recovered from c3 using:
 arg ( c3 ) = 0.927295 radians, which is 53.1301 degrees.
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

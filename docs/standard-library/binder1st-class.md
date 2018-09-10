@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9e53d9344e56f9efc4f20b834ce31bcb05f9fbb
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 876aa74de2a7cadd780198146b7902c1fcdeb2e6
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103993"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314150"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
@@ -115,11 +115,11 @@ int main()
     cout << "The number of elements in v1 less than 10 is: "
          << result2 << "." << endl;
 }
-\* Output:
+/* Output:
 The vector v1 = ( 0 5 10 15 20 25 )
 The number of elements in v1 greater than 10 is: 3.
 The number of elements in v1 less than 10 is: 2.
-*\
+*/
 ```
 
 ## <a name="requirements"></a>Gereksinimler

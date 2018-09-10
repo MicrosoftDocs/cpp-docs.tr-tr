@@ -1,5 +1,5 @@
 ---
-title: Araç çubuğundaki düğmeler arasına boşluk koyma | Microsoft Docs
+title: (C++) araç çubuğundaki düğmeler arasına boşluk koyma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -8,22 +8,22 @@ ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
-- Toolbar editor, spacing toolbar buttons
-- toolbar buttons (in Toolbar editor), space between buttons
+- Toolbar editor [C++], spacing toolbar buttons
+- toolbar buttons [C++], space between buttons
 ms.assetid: 4925ea6b-5d3a-4949-a920-bf371a37e529
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d45fb3c7d0d61e1895ff03fff64ab75c828eda0e
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 09086ea214bcf2abd9708f8abcee4f9f5f376994
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599672"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44313422"
 ---
-# <a name="inserting-a-space-between-buttons-on-a-toolbar"></a>Araç Çubuğundaki Düğmeler Arasına Boşluk Koyma
+# <a name="inserting-a-space-between-buttons-on-a-toolbar-c"></a>(C++) araç çubuğundaki düğmeler arasına boşluk koyma
 
 Genel olarak, düğmeler arasına boşluk eklemek için bunları birbirine uzağa araç sürüklemeniz yeterlidir. Alanı kaldırmak için bunları birbirine doğru sürükleyin.
 

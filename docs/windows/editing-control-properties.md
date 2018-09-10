@@ -10,19 +10,19 @@ dev_langs:
 helpviewer_keywords:
 - controls [C++], undoing changes
 - controls [C++], editing properties
-- dialog box controls, editing properties
+- dialog box controls [C++], editing properties
 ms.assetid: 9bdae21d-6dec-4344-a197-2ca4fc46d040
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c2b4e729b840fd1a24fb79e840b6bc4beabf6bd6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7f136b742d743fb359c4bb38640bd449e0e336af
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43203014"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44316919"
 ---
 # <a name="editing-control-properties"></a>Denetim Özelliklerini Düzenleme
 

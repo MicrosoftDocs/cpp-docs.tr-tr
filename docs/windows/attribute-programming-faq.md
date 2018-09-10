@@ -9,7 +9,7 @@ dev_langs:
 - C++
 helpviewer_keywords:
 - attributed programming
-- attributes [C++], frequently asked questions
+- attributes [C++/CLI], frequently asked questions
 - FAQs (frequently asked questions), attributed programming [C++]
 ms.assetid: a1b8349f-7f51-43c4-95ea-4edb6e5f243f
 author: mikeblome
@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 7977db48aa2b27db11f86d2a8a12bea88da962b0
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 3a3cd267aaa42cef366631ad634db286ea93905f
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598271"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314033"
 ---
 # <a name="attribute-programming-faq"></a>Öznitelik Programlama SSS
 

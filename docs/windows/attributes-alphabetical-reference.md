@@ -10,19 +10,19 @@ f1_keywords:
 dev_langs:
 - C++
 helpviewer_keywords:
-- attributes [C++]
+- attributes [C++/CLI]
 ms.assetid: fb2216ef-9fbd-44f4-afed-732aa99450e2
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 1203c871b67c8bd87faef92c840c6236fb028cd3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e2353b952964ffe6b8078f688b4ac8e129d891d7
+ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595814"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44314696"
 ---
 # <a name="attributes-alphabetical-reference"></a>Öznitelikler Alfabetik Başvurusu
 
