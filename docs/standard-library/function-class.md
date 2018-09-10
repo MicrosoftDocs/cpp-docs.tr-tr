@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ca8621067c851b5a1e107eb16800d546562fbb6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3cfafc2c17ef804cb8d87c1189c8a7f3163d3c46
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959943"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104140"
 ---
 # <a name="function-class"></a>function Sınıfı
 
@@ -89,9 +89,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty* sarmalamak için işlev türü.
+*Fty*<br/>
+Kaydırmak için işlev türü.
 
-*AX* ayırıcı işlevi.
+*AX*<br/>
+Allocator işlev.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -164,11 +166,14 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-*_Func* çağrılabilir bir nesne.
+*_Func*<br/>
+Aranabilir bir nesne.
 
-*_Fnref* çağrılabilir nesnesi içeren reference sarmalayıcı.
+*_Fnref*<br/>
+Çağrılabilir nesnesi içeren bir başvuru sarmalayıcı.
 
-*AX* ayırıcı nesnesi.
+*AX*<br/>
+Ayırıcı nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -199,17 +204,23 @@ template <class Fx, class Alloc>
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* kopyalamak için işlev nesnesi.
+*sağ*<br/>
+Kopyalamak için işlev nesnesi.
 
-*FX* çağrılabilir nesnenin türü.
+*FX*<br/>
+Çağrılabilir nesnenin türü.
 
-*_Func* sarmalamak için çağrılabilir nesne.
+*_Func*<br/>
+Kaydırmak için çağrılabilir nesne.
 
-*Ayırma* ayırıcı türü.
+*Ayırma*<br/>
+Ayırıcı türü.
 
-*AX* ayırıcı.
+*AX*<br/>
+Ayırıcı.
 
-*_Fnref* sarmalamak için çağrılabilir nesne başvurusu.
+*_Fnref*<br/>
+Kaydırmak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -340,9 +351,11 @@ result_type operator()(
 
 ### <a name="parameters"></a>Parametreler
 
-*TN* n. çağrı bağımsız değişken türü.
+*TN*<br/>
+Çağrı bağımsız değişken türü n.
 
-*tN* n. çağrı bağımsız değişkeni.
+*TN*<br/>
+Nth çağrı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -391,13 +404,17 @@ template <class Fty>
 
 ### <a name="parameters"></a>Parametreler
 
-*npc* boş işaretçi sabiti.
+*npc*<br/>
+Boş işaretçi sabiti.
 
-*doğru* kopyalamak için işlev nesnesi.
+*sağ*<br/>
+Kopyalamak için işlev nesnesi.
 
-*fn* sarmalamak için çağrılabilir nesne.
+*fn*<br/>
+Kaydırmak için çağrılabilir nesne.
 
-*fnref* sarmalamak için çağrılabilir nesne başvurusu.
+*fnref*<br/>
+Kaydırmak için çağrılabilir nesne başvurusu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -506,7 +523,8 @@ void swap(function& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* ile takas için işlev nesnesi.
+*sağ*<br/>
+İle takas için işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -567,7 +585,8 @@ template <class Fty2>
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty2* test etmek için hedef çağrılabilir nesne türü.
+*Fty2*<br/>
+Test etmek için hedef çağrılabilir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00114711f93fcc1ec057ea50b1ce681523db3a9c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 945de6e2ef7e9ec3967091f88b1d0cfeaa8df5e3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958009"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108895"
 ---
 # <a name="autoptr-class"></a>auto_ptr Sınıfı
 
@@ -65,9 +65,11 @@ public:
 ```
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `auto_ptr` mevcut bir kaynağı alınmaya başlanacağı.
+*sağ*<br/>
+`auto_ptr` Mevcut bir kaynağı alınmaya başlanacağı.
 
-*PTR* depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçi.
+*ptr*<br/>
+Depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -130,9 +132,11 @@ auto _ptr(auto _ptr<Other>& right) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* nesne işaretçisi, `auto_ptr` kapsüller.
+*ptr*<br/>
+Nesne işaretçisi, `auto_ptr` kapsüller.
 
-*doğru* `auto_ptr` Oluşturucu tarafından kopyalanacak nesne.
+*sağ*<br/>
+`auto_ptr` Oluşturucu tarafından kopyalanacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -282,7 +286,8 @@ auto_ptr<Type>& operator=(auto_ptr_ref<Type> right) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* türünde bir nesne `auto_ptr`.
+*sağ*<br/>
+Bir nesne türü `auto_ptr`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -499,7 +504,8 @@ void reset(Type* ptr = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçi `myptr`.
+*ptr*<br/>
+Depolanmış bir işaretçiyle değiştirmek için belirtilen işaretçi `myptr`.
 
 ### <a name="example"></a>Örnek
 

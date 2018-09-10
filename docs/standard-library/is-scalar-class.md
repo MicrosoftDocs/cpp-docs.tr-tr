@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c0e37eb0eaa7f0a6e40f385315822742f15516e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 8c0dae274d1f3aa61e2e8f2d3000b277edb0debd
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962377"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107022"
 ---
 # <a name="isscalar-class"></a>is_scalar Sınıfı
 
@@ -37,7 +37,8 @@ struct is_scalar;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

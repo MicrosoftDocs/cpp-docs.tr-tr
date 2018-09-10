@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe3311e46ea28424717a0274fbe9e956610cdc54
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a6854a3b11d5c5850d790e749789e91a7cb986a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767718"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110050"
 ---
 # <a name="atl-dialog-wizard"></a>ATL iletişim kutusu Sihirbazı
 
@@ -35,7 +35,7 @@ Sihirbazın üst bilgi dosyasına ekler bir [ileti eşlemesi](../../atl/message-
 **Kısa ad**  
 ATL iletişim nesnenin kısaltılmış adını ayarlar. Bu alanları ayrı ayrı değiştirmediğiniz sürece sağladığınız adın sınıf adı ve dosya (.cpp ve .h) adlarını belirler.
 
-`Class`  
+**Sınıfı**  
 Oluşturulacak sınıfın adını ayarlar. Bu ad, size sağlamak adına dayanarak **kısa ad**, 'C', tipik bir sınıf adı öneki öncesinde.
 
 **.h dosyası**  

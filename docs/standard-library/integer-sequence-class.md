@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be1d3c6d583783c391321555ae52077fba4bee3a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 909bcb8446c7d876828a6d020cd20a7398ec04d5
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960745"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108752"
 ---
 # <a name="integersequence-class"></a>integer_sequence Sınıfı
 
@@ -44,9 +44,11 @@ struct integer_sequence
 
 ### <a name="parameters"></a>Parametreler
 
-*T* türü değerler; bir tamsayı türü olmalıdır: bool, char, char16_t, char32_t, wchar_t, veya imzalı veya imzasız tamsayı türleri.
+*T*<br/>
+Değerlerin türü; bir tamsayı türü olmalıdır: bool, char, char16_t, char32_t, wchar_t, veya imzalı veya imzasız tamsayı türleri.
 
-*Elenen* T. integral türünde değerler dizisini temsil eden bir tür olmayan parametre paketi
+*Elenen*<br/>
+T integral türünde değerler dizisini temsil eden bir tür olmayan parametre paketi
 
 ## <a name="members"></a>Üyeler
 
@@ -129,7 +131,7 @@ Yapmak için bir `index_sequence` kullanmak için bir parametre paketi `index_se
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: < type_traits >
+Başlık: \<type_traits\>
 
 Ad alanı: std
 

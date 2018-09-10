@@ -9,22 +9,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d4aec775dc716a5e88e6b421a7cd7f818730c23
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c74508c114b7815ac8eded9daa8e968fa7588c28
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767549"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101833"
 ---
 # <a name="interoperating-with-other-languages-ccx"></a>Diğer dillerle birlikte çalışma (C + +/ CX)
-Belgelerin bu bölümü C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıklar tarafından kullanılabilen Windows çalışma zamanı bileşenleri yazmak için. Ayrıca, tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönlerini tanımlar, C + +/ CX uygulama JavaScript, .NET Framework yönetilen dil veya Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılmış bileşenler birlikte çalışır.  
-  
-## <a name="related-topics"></a>İlgili konular  
-  
--   [JavaScript tümleştirme](../cppcx/javascript-integration-c-cx.md)  
-  
--   [CLR tümleştirmesi](../cppcx/clr-integration-c-cx.md)  
-  
--   [WRL tümleştirme](../cppcx/wrl-integration-c-cx.md)  
-  
--   [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)
+
+Belgelerin bu bölümü C + kullanmayı açıklar +/ CX diğer programlama dilleri ve kitaplıklar tarafından kullanılabilen Windows çalışma zamanı bileşenleri yazmak için. Ayrıca, tüm diller tarafından kullanılan bileşenleri de yazabilirsiniz. Bu bölümde dikkate almanız gereken farklı yönlerini tanımlar, C + +/ CX uygulama JavaScript, .NET Framework yönetilen dil veya Windows çalışma zamanı C++ Şablon kitaplığı kullanılarak yazılmış bileşenler birlikte çalışır.
+
+## <a name="related-topics"></a>İlgili konular
+
+- [JavaScript tümleştirme](../cppcx/javascript-integration-c-cx.md)
+
+- [CLR tümleştirmesi](../cppcx/clr-integration-c-cx.md)
+
+- [WRL tümleştirme](../cppcx/wrl-integration-c-cx.md)
+
+- [Visual C++ Dil Başvurusu](../cppcx/visual-c-language-reference-c-cx.md)

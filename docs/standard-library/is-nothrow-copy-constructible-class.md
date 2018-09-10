@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc4f839ed955048b96f6327c63cd2cc82fef8aca
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b007b14bf6dbeb345c06f86825a794e2f1f15c90
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953779"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104270"
 ---
 # <a name="isnothrowcopyconstructible-class"></a>is_nothrow_copy_constructible Sınıfı
 
@@ -36,7 +36,8 @@ struct is_nothrow_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

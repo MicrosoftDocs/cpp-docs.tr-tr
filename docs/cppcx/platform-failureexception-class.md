@@ -16,33 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e644ec013b4beac6ebc4f7c774f926711dc1093e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 12fd236f0b34020d6c368f603b81fe50729dcb7f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758966"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105152"
 ---
 # <a name="platformfailureexception-class"></a>Platform::FailureException sınıfı
-İşlemi başarısız olduğunda oluşturulur. Bunu E_FAIL HRESULT eşdeğerdir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-public ref class FailureException : COMException,    IException,    IPrintable,    IEquatable  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Desteklenen en düşük istemci:** Windows 8  
-  
- **Sunucu desteklenen en düşük:** Windows Server 2012  
-  
- **Namespace:** platformu  
-  
- **Meta veri:** platform.winmd  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)
+
+İşlemi başarısız olduğunda oluşturulur. Bunu E_FAIL HRESULT eşdeğerdir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+public ref class FailureException : COMException,    IException,    IPrintable,    IEquatable
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Daha fazla bilgi için [COMException](../cppcx/platform-comexception-class.md) sınıfı.
+
+### <a name="requirements"></a>Gereksinimler
+
+**Desteklenen en düşük istemci:** Windows 8
+
+**Sunucu desteklenen en düşük:** Windows Server 2012
+
+**Namespace:** platformu
+
+**Meta veri:** platform.winmd
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform::COMException Sınıfı](../cppcx/platform-comexception-class.md)

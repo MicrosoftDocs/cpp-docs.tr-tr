@@ -118,12 +118,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aec1d5291526360157b4e1a0b5b4eff9ae9fd454
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 66818710a1d5811f2ff52acf7f9785de09ba0c53
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956469"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101696"
 ---
 # <a name="iosbase-class"></a>ios_base Sınıfı
 
@@ -272,11 +272,14 @@ typedef void (__cdecl *event_callback)(
 
 ### <a name="parameters"></a>Parametreler
 
-*_E* [olay](#event).
+*_E*<br/>
+[Olay](#event).
 
-*_Temel* akış olayı çağrıldı.
+*_Temel*<br/>
+Akış olayı çağrıldı.
 
-*_Lisans* kullanıcı tanımlı bir sayı.
+*_I*<br/>
+Kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -349,7 +352,8 @@ fmtflags flags(fmtflags fmtfl);
 
 ### <a name="parameters"></a>Parametreler
 
-*fmtfl* yeni `fmtflags` ayarı.
+*fmtfl*<br/>
+Yeni `fmtflags` ayarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -499,7 +503,8 @@ locale imbue(const locale& _Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Loc* yeni yerel ayarı.
+*_Loc*<br/>
+Yeni yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -575,7 +580,8 @@ long& iword(int idx);
 
 ### <a name="parameters"></a>Parametreler
 
-*IDX* dizin değeri olarak depolamak için bir `iword`.
+*IDX*<br/>
+Dizin değeri olarak depolamak için bir `iword`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -649,7 +655,8 @@ ios_base& operator=(const ios_base& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* türünde bir nesne `ios_base`.
+*sağ*<br/>
+Bir nesne türü `ios_base`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -672,7 +679,8 @@ streamsize precision(streamsize _Prec);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Prec* görüntülemek için anlamlı basamak sayısı veya sabit gösterimde ondalık basamak sayısı.
+*_Prec*<br/>
+Görüntülenecek anlamlı basamak sayısı veya sabit gösterimde ondalık basamak sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -716,7 +724,8 @@ void *& pword(int _Idx);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Idx* dizin değeri olarak depolamak için bir `pword`.
+*_Idx*<br/>
+Dizin değeri olarak depolamak için bir `pword`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -741,9 +750,11 @@ void register_callback(
 
 ### <a name="parameters"></a>Parametreler
 
-*pfn* geri çağırma işlevi işaretçisi.
+*pfn*<br/>
+Geri çağırma işlevi işaretçisi.
 
-*IDX* kullanıcı tanımlı bir sayı.
+*IDX*<br/>
+Kullanıcı tanımlı bir sayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -901,17 +912,19 @@ fmtflags setf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maskesi* açmak için bayrakları.
+*_Maskesi*<br/>
+Açmak için bayrakları.
 
-*_Unset* devre dışı bırakmak için bayrak.
+*_Unset*<br/>
+Devre dışı bırakmak için bayrak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-    The previous format flags
+Önceki biçim bayrakları
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The first member function effectively calls [flags](#flags)(_ *Mask* &#124; \_ *Flags*) (set selected bits) and then returns the previous format flags. The second member function effectively calls **flags**(\_ *Mask* **& fmtfl, flags& ~**`_Mask`) (replace selected bits under a mask) and then returns the previous format flags.
+İlk üye işlevi etkili bir şekilde çağıran [bayrakları](#flags)(_ *maskesi* &#124; \_ *bayrakları*) (Seçili bit ayarlanır) ve ardından önceki biçim bayrakları döndürür. İkinci üye işlevi etkili bir şekilde çağıran **bayrakları**(\_ *maskesi* **& fmtfl, bayrakları & ~**`_Mask`) (Seçili bit maskesi altındaki değiştirme) ve ardından önceki biçim bayrakları döndürür.
 
 ### <a name="example"></a>Örnek
 
@@ -949,15 +962,16 @@ static bool sync_with_stdio(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sync* tüm akışları ile eşitleme halindeki `stdio`.
+*_Sync*<br/>
+Tüm akışları ile eşitleme halindeki `stdio`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-    Previous setting for this function.
+Bu işlev için önceki ayar.
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The static member function stores a `stdio` sync flag, which is initially **true**. When **true**, this flag ensures that operations on the same file are properly synchronized between the [iostreams](../standard-library/iostreams-conventions.md) functions and those defined in the C++ Standard Library. Otherwise, synchronization may or may not be guaranteed, but performance may be improved. The function stores *_Sync* in the `stdio` sync flag and returns its previous stored value. You can call it reliably only before performing any operations on the standard streams.
+Statik üye işlevi depoları bir `stdio` eşitleme başlangıçta bayrak **true**. Zaman **true**, aynı dosya üzerindeki işlemler arasında düzgün bir şekilde eşitlendiğini bu bayrağı sağlar [iostreams](../standard-library/iostreams-conventions.md) işlevler ve C++ Standart Kitaplığı'nda tanımlanan. Aksi takdirde, eşitleme olabilir veya garanti edilmez, ancak performans artırılabilir. İşlev depoları *_Sync* içinde `stdio` eşitleme bayrağı ve önceki depolanan değerine döndürür. Yalnızca standart akışlar üzerinde herhangi bir işlem gerçekleştirmeden önce güvenle çağırabilirsiniz.
 
 ## <a name="unsetf"></a> ios_base::unsetf
 
@@ -971,15 +985,16 @@ void unsetf(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Maskesi* kapatmak istediğiniz bayrakları.
+*_Maskesi*<br/>
+Kapatmak istediğiniz bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The member function effectively calls [flags](#flags)(`~`*_Mask* **& flags**) (clear selected bits).
+Üye işlevi etkili bir şekilde çağıran [bayrakları](#flags)(`~`*_maskesi* **& bayrakları**) (Seçili bit Temizle).
 
 ### <a name="example"></a>Örnek
 
-    See [ios_base::setf](#setf) for a sample of using `unsetf`.
+Bkz: [ios_base::setf](#setf) kullanımının bir örneği için `unsetf`.
 
 ## <a name="width"></a> ios_base::width
 
@@ -994,15 +1009,16 @@ streamsize width(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Wide* çıkış akışı istenen boyutu.
+*_Wide*<br/>
+Çıkış akışı istenen boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-    The current width setting.
+Geçerli genişliği ayarı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-    The first member function returns the stored field width. The second member function stores *_Wide* in the field width and returns its previous stored value.
+İlk üye işlevi, depolanan alan genişliği döndürür. İkinci üye işlevi depoları *_Wide* alan genişliğini ve döndürür, önceki değer depolanır.
 
 ### <a name="example"></a>Örnek
 
@@ -1027,7 +1043,7 @@ int main( ) {
 
 ## <a name="xalloc"></a> ios_base::xalloc
 
-    Specifies that a variable is part of the stream.
+Bir değişken akışın bir parçası olduğunu belirtir.
 
 ```cpp
 static int xalloc( );
@@ -1035,11 +1051,11 @@ static int xalloc( );
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-    The static member function returns a stored static value, which it increments on each call.
+Statik üye işlevi her çağrıda artırır depolanan bir statik değeri döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-    You can use the return value as a unique index argument when calling the member functions [iword](#iword) or [pword](#pword).
+Dönüş değeri üye işlevlerini çağırırken bir benzersiz dizin bağımsız değişken olarak kullanabilirsiniz [iword](#iword) veya [pword](#pword).
 
 ### <a name="example"></a>Örnek
 

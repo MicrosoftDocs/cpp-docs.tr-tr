@@ -15,42 +15,46 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1a755314adec83e8853c2c29d9c9d9bb363575b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 660ba394e6eacb640aae72a791d034499d69aa4e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759596"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101852"
 ---
 # <a name="platformmetadata-namespace"></a>Platform::metadata Namespace
-Bu ad alanı türlerinin bildirimlerini değiştirme öznitelikleri içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-  
-namespace Platform {  
-   namespace Metadata {  
-}}  
-```  
-  
-### <a name="members"></a>Üyeler  
- Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.  
-  
-|Ad|Açıklama|  
-|----------|------------|  
-|Öznitelik|Öznitelikleri için temel sınıfı.|  
-|[Platform::Metadata::DefaultMemberAttribute Özniteliği](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Birkaç olası aşırı yüklenmiş işlevleri çağırmak için tercih edilen işlev gösterir.|  
-|[Platform::metadata:: FlagsAttribute özniteliği](../cppcx/platform-metadata-flagsattribute-attribute.md)bayrakları|Sabit bir numaralandırma bit alanları olarak bildirir.<br /><br /> Aşağıdaki örnek nasıl uygulanacağını gösterir `Flags` numaralandırma özniteliği.<br /><br /> `[Flags] enum class MyEnumeration { enumA = 1, enumB = 2, enumC = 3}`|  
-|[Platform::metadata::RuntimeClassNameAttribute](../cppcx/platform-metadata-runtimeclassname.md)|Özel bir başvuru sınıfı, geçerli çalışma zamanı sınıf adı sahip olmasını sağlar.|  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `Platform`  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Meta veri:** platform.winmd  
-  
- **Namespace:** Platform::Metadata  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+Bu ad alanı türlerinin bildirimlerini değiştirme öznitelikleri içerir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+namespace Platform {
+   namespace Metadata {
+}}
+```
+
+### <a name="members"></a>Üyeler
+
+Bu ad dahili kullanım içindir ancak tarayıcılar bu ad aşağıdaki üyeleri görüntüleyebilir.
+
+|Ad|Açıklama|
+|----------|------------|
+|Öznitelik|Öznitelikleri için temel sınıfı.|
+|[Platform::Metadata::DefaultMemberAttribute Özniteliği](../cppcx/platform-metadata-defaultmemberattribute-attribute.md)|Birkaç olası aşırı yüklenmiş işlevleri çağırmak için tercih edilen işlev gösterir.|
+|[Platform::metadata:: FlagsAttribute özniteliği](../cppcx/platform-metadata-flagsattribute-attribute.md)bayrakları|Sabit bir numaralandırma bit alanları olarak bildirir.<br /><br /> Aşağıdaki örnek nasıl uygulanacağını gösterir `Flags` numaralandırma özniteliği.<br /><br /> `[Flags] enum class MyEnumeration { enumA = 1, enumB = 2, enumC = 3}`|
+|[Platform::metadata::RuntimeClassNameAttribute](../cppcx/platform-metadata-runtimeclassname.md)|Özel bir başvuru sınıfı, geçerli çalışma zamanı sınıf adı sahip olmasını sağlar.|
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`Platform`
+
+### <a name="requirements"></a>Gereksinimler
+
+**Meta veri:** platform.winmd
+
+**Namespace:** Platform::Metadata
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform Namespace](platform-namespace-c-cx.md)

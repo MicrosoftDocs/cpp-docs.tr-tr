@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eab6d6ce44655177d20073ca5c5cda3859cb8b3
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0dcd4b578f0b498995dcd92e314f9dcc1bf63551
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966387"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101047"
 ---
 # <a name="ispolymorphic-class"></a>is_polymorphic Sınıfı
 
@@ -37,7 +37,8 @@ struct is_polymorphic;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

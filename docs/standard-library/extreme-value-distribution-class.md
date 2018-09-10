@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec80db9282bc51106c6beedd42dd05a1ba636c74
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 10c93374a1ed9ed4fa875c78310d9ffa34406b83
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958025"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100851"
 ---
 # <a name="extremevaluedistribution-class"></a>extreme_value_distribution Sınıfı
 
@@ -81,9 +81,11 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*URNG* rasgele sayı üreteci altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*URNG*<br/>
+Rasgele sayı üreteci altyapısı. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -200,11 +202,14 @@ explicit extreme_value_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*a_value* `a` dağıtım parametresi.
+*a_value*<br/>
+`a` Dağıtım parametresi.
 
-*b_value* `b` dağıtım parametresi.
+*b_value*<br/>
+`b` Dağıtım parametresi.
 
-*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
+*parametre*<br/>
+`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -232,11 +237,14 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*a_value* `a` dağıtım parametresi.
+*a_value*<br/>
+`a` Dağıtım parametresi.
 
-*b_value* `b` dağıtım parametresi.
+*b_value*<br/>
+`b` Dağıtım parametresi.
 
-*doğru* `param_type` için karşılaştırılacak nesne.
+*sağ*<br/>
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

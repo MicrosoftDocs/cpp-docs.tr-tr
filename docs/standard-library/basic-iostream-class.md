@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 662c4915753cc49534fa9f489eb61504907744c4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0ef4b993ec628771666ac3773b575ee518c18173
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954714"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106444"
 ---
 # <a name="basiciostream-class"></a>basic_iostream Sınıfı
 
@@ -85,9 +85,11 @@ basic_iostream();
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf* varolan `basic_streambuf` nesne.
+*strbuf*<br/>
+Varolan bir `basic_streambuf` nesnesi.
 
-*doğru* varolan `basic_iostream` yeni oluşturmak için kullanılan nesne `basic_iostream`.
+*sağ*<br/>
+Mevcut bir `basic_iostream` yeni oluşturmak için kullanılan nesne `basic_iostream`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -105,7 +107,8 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir `rvalue` başvurusu bir `basic_iostream` nesnesine atayın.
+*sağ*<br/>
+Bir `rvalue` başvurusu bir `basic_iostream` nesnesine atayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -121,7 +124,8 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `basic_iostream` değiştirilecek nesne.
+*sağ*<br/>
+`basic_iostream` Değiştirilecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -28,12 +28,12 @@ helpviewer_keywords:
 - std::setiosflags [C++]
 - std::setprecision [C++]
 - std::setw [C++]
-ms.openlocfilehash: 5882a2fc31d5c9369429cdc39fb86a1c08e0c828
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 673289f5ac8b739dfe7c1a4de446a37d85763452
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208838"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108416"
 ---
 # <a name="ltiomanipgt-functions"></a>&lt;iomanip&gt; işlevleri
 
@@ -55,9 +55,11 @@ T7 get_money(Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Amount* ayıklanan parasal değer.
+*_Amount*<br/>
+Ayıklanan parasal değer.
 
-*_Intl* varsa **true**, uluslararası biçimini kullanın. Varsayılan değer **false**.
+*_Intl*<br/>
+Varsa **true**, uluslararası biçimini kullanın. Varsayılan değer **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -76,9 +78,11 @@ T10 put_time(struct tm *_Tptr, const Elem *_Fmt);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Tptr* zaman yapısı biçiminde saat.
+*_Tptr*<br/>
+Zaman yapısı biçiminde saat.
 
-*_Fmt* saat değeri elde etmek için kullanmak istediğiniz biçimi.
+*_Fmt*<br/>
+İstenen biçimi, saat değeri elde etmek için kullanılacak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -95,9 +99,11 @@ T8 put_money(const Money& _Amount, bool _Intl);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Amount* akımına eklenecek parasal tutar.
+*_Amount*<br/>
+Akışa eklemek için parasal tutar.
 
-*_Intl* kümesine **true** işleyici Uluslararası biçim kullanması gerekiyorsa **false** gerektiğini değil ise.
+*_Intl*<br/>
+Kümesine **true** işleyici Uluslararası biçim kullanması gerekiyorsa **false** gerektiğini değil ise.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -120,9 +126,11 @@ T10 put_time(struct tm* _Tptr, const Elem* _Fmt);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Tptr* zaman yapısı içinde sağlanan akış yazmak için zaman değeri.
+*_Tptr*<br/>
+Zaman yapısı içinde sağlanan akış yazmak için saat değeri.
 
-*_Fmt* zaman değeri yazmak için istediğiniz biçimi.
+*_Fmt*<br/>
+Zaman değeri yazmak için istenen biçimi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -141,11 +149,14 @@ quoted(const char* str, char delimiter, char escape) // or wide versions
 
 ### <a name="parameters"></a>Parametreler
 
-*str* std::string, char\*, dize sabit değeri veya ham dize sabit değeri veya bunlardan birine geniş bir sürümünü (örneğin, std::wstring, wchar_t\*).
+*str*<br/>
+Std::string, char\*, dize sabit değeri veya ham dize sabit değeri veya bunlardan birine geniş bir sürümünü (örneğin, std::wstring, wchar_t\*).
 
-*sınırlayıcı* bir kullanıcı tarafından belirtilen karakter veya geniş karakter başlangıç ve bitiş dizesi için ayırıcı olarak kullanılacak.
+*Sınırlayıcı*<br/>
+Bir kullanıcı tarafından belirtilen karakter veya geniş karakter başlangıç ve bitiş dizesi için ayırıcı olarak kullanılacak.
 
-*kaçış* bir kullanıcı tarafından belirtilen karakter veya kaçış dizileri dizenin içinde kaçış karakteri olarak kullanılmak üzere, geniş karakter.
+*Kaçış*<br/>
+Bir kullanıcı tarafından belirtilen karakter veya kaçış dizileri dizenin içinde kaçış karakteri olarak kullanılmak üzere, geniş karakter.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -303,7 +314,8 @@ T1 resetiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>Parametreler
 
-*Maske* temizlemek için bayrakları.
+*Maskesi*<br/>
+Temizlemek için bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -323,7 +335,8 @@ T3 setbase(int _Base);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Temel* sayı tabanı.
+*_Temel*<br/>
+Sayı tabanı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -352,7 +365,8 @@ T4 setfill(Elem Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*CH* sağa yaslanmış görüntüsündeki alanları doldurmak için kullanılan karakter.
+*Ch*<br/>
+Sağa yaslanmış görüntüsündeki alanları doldurmak için kullanılan karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -372,7 +386,8 @@ T2 setiosflags(ios_base::fmtflags Mask);
 
 ### <a name="parameters"></a>Parametreler
 
-*Maske* ayarlamak için bayrakları.
+*Maskesi*<br/>
+Ayarlanacak bayraklar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -392,7 +407,8 @@ T5 setprecision(streamsize Prec);
 
 ### <a name="parameters"></a>Parametreler
 
-*Prec* duyarlık kayan nokta değerleri.
+*Prec*<br/>
+Duyarlık kayan nokta değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -412,7 +428,8 @@ T6 setw(streamsize Wide);
 
 ### <a name="parameters"></a>Parametreler
 
-*Geniş* görüntü alanının genişliği.
+*Geniş*<br/>
+Görüntü alanının genişliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

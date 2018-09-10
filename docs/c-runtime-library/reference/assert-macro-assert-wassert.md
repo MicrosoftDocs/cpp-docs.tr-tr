@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c1d2bef607e80e2e972915bd8a8b0517b7c6e5eb
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 67fef1231d4488b1714cc2f0f2f0e892737e627d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200673"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101943"
 ---
 # <a name="assert-macro-assert-wassert"></a>Assert makrosu, _assert, _wassert
 
@@ -69,13 +69,17 @@ void _wassert(
 
 ### <a name="parameters"></a>Parametreler
 
-*ifade* için sıfır dışında değerlendirilen (işaretçi ifadeleri dahil) bir skaler ifade (**true**) veya 0 (**false**).
+*İfade*<br/>
+İçin sıfır dışında değerlendirilen (işaretçi ifadeleri dahil) bir skaler ifade (**true**) veya 0 (**false**).
 
-*İleti* görüntülenecek ileti.
+*message*<br/>
+Görüntülenecek ileti.
 
-*filename* dosyasının kaynak adını onaylama işlemi başarısız oldu.
+*Dosya adı*<br/>
+Kaynak dosyanın adı, onaylama işlemi başarısız oldu.
 
-*Satır* başarısız onaylama kaynak dosyadaki satır numarası.
+*Satır*<br/>
+Onaylama başarısız kaynak dosyadaki satır numarası.
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e199df62aa6bc0c3dc670bd2951a7af2667e7faa
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9eccefff291dc509f846bce951cfe9508834876e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758384"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103885"
 ---
 # <a name="platformcollectionsmap-class"></a>Platform::Collections:: Map sınıfı
 
@@ -46,17 +46,16 @@ ref class Map sealed;
 
 ### <a name="parameters"></a>Parametreler
 
-*K*  
- Anahtar-değer çifti anahtar türü.
+*K*<br/>
+Anahtar-değer çifti anahtar türü.
 
-*V*  
+*V*<br/>
 Anahtar-değer çiftindeki değer türü.
 
-*C*  
+*C*<br/>
 İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Varsayılan olarak, [std::less\<K >](../standard-library/less-struct.md).
 
-*__is_valid_winrt_type()*  
-Derleyicinin ürettiği funkci türünü doğrular *K* ve *V* ve kolay hata iletisi türü haritada depolanırsa sağlar.
+*__is_valid_winrt_type()* türünü doğrulayan bir derleyicinin ürettiği işlevi *K* ve *V* ve kolay hata iletisi türü haritada depolanırsa sağlar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -169,7 +168,7 @@ bool HasKey(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Harita öğesini bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -188,10 +187,10 @@ virtual bool Insert(K key, V value);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
-*value*  
+*value*<br/>
 Anahtar-değer çiftinin değer bölümünü. Türünü *değer* TypeName *V*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -210,7 +209,7 @@ V Lookup(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Haritada bir öğeyi bulmak için kullanılan anahtar. Türünü *anahtarı* TypeName *K*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -240,19 +239,19 @@ Map(
 
 ### <a name="parameters"></a>Parametreler
 
-*InIt*  
+*InIt*<br/>
 Geçerli eşlemesi tür adı.
 
-*Comp*  
+*Comp*<br/>
 İki öğenin değerlerini haritadaki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür.
 
-*m*  
+*m*<br/>
 Bir başvuru veya [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir `map Class` geçerli eşlemesi başlatmak için kullanılır.
 
-*ilk*  
+*ilk*<br/>
 Geçerli eşlemesi başlatmak için kullanılan öğelerin bir aralıktaki ilk öğenin bir giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Geçerli eşlemesi başlatmak için kullanılan öğelerin bir aralığını sonra ilk öğenin bir giriş yineleyici.
 
 ## <a name="mapchanged"></a>  Map::MapChanged olayı
@@ -285,7 +284,7 @@ virtual void Remove(K key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Anahtar-değer çifti anahtar bölümü. Türünü *anahtarı* TypeName *K*.
 
 ## <a name="size"></a>  Map::size yöntemi
@@ -304,5 +303,5 @@ Eşlem içindeki öğelerin sayısı.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

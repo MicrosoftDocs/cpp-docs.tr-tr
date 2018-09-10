@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::to_wstring [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6534d93b4f04826188fa13c942efd080e152aebe
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a80749e6eaffe02d748167f462580782a2755f89
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954909"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106749"
 ---
 # <a name="ltstringgt-functions"></a>&lt;dize&gt; işlevleri
 
@@ -85,11 +85,14 @@ basic_istream<Allocator, Traits>& getline(
 
 ### <a name="parameters"></a>Parametreler
 
-*olan* içinden bir dizedir ayıklanacak Giriş akışı.
+*is*<br/>
+Bir dize ayıklanacak olduğu giriş akışı.
 
-*str* içine okunur karakterleri girdi akışından dize.
+*str*<br/>
+Karakterleri giriş akışından okuma dize.
 
-*delim* satır ayırıcı.
+*Delim*<br/>
+Satır sınırlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -426,9 +429,11 @@ void swap(basic_string<CharType, Traits, Allocator>& left, basic_string<CharType
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* başka bir dizenin olanlar değiştirilecek öğeleri olan bir dize.
+*Sol*<br/>
+Başka bir dizenin olanlar değiştirilecek öğeleri olan bir dize.
 
-*doğru* öğeleri olan ilk dize ile değiştirilecek dize.
+*sağ*<br/>
+Öğeleri ilk dizeyle değiştirilecek olan dize.
 
 ### <a name="remarks"></a>Açıklamalar
 

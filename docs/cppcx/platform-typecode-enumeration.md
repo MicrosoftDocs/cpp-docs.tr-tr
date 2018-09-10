@@ -15,49 +15,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e874b3dc479755f688128b3e6690eee89929c1c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: cb19a922655a77a2f7a2b5806c9b721f17e028f8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760142"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104179"
 ---
 # <a name="platformtypecode-enumeration"></a>Platform::TypeCode numaralandırması
-Yerleşik türünü temsil eden sayısal bir kategorisini belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-enum class TypeCode {};  
-```  
-  
-### <a name="members"></a>Üyeler  
-  
-|Türü kodu|Açıklama|  
-|---------------|-----------------|  
-|Boole değeri|Platform::Boolean türü.|  
-|char16|Default::char16 türü.|  
-|DateTime|Bir DateTime türü.|  
-|Ondalık|Bir sayısal tür.|  
-|Çift|Default::float64 türü.|  
-|boş|Geçersiz kılma|  
-|Int16|Default::int16 türü.|  
-|Int32|Default::int32 türü.|  
-|Int64|Default::int64 türü.|  
-|Int8|Default::int8 türü.|  
-|Nesne|Platform::Object türü.|  
-|Tek|Default::float32 türü.|  
-|Dize|Platform::String türü.|  
-|UInt16|Default::uint16 türü.|  
-|UInt32|Default::uint32 türü.|  
-|UInt64|Default::uint64 türü.|  
-|UInt8|Default::uint8 türü.|  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Desteklenen en düşük istemci:** Windows 8  
-  
- **Sunucu desteklenen en düşük:** Windows Server 2012  
-  
- **Namespace:** platformu  
-  
- **Meta veri:** platform.winmd
+
+Yerleşik türünü temsil eden sayısal bir kategorisini belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+enum class TypeCode {};
+```
+
+### <a name="members"></a>Üyeler
+
+|Türü kodu|Açıklama|
+|---------------|-----------------|
+|Boole değeri|Platform::Boolean türü.|
+|char16|Default::char16 türü.|
+|DateTime|Bir DateTime türü.|
+|Ondalık|Bir sayısal tür.|
+|Çift|Default::float64 türü.|
+|boş|Geçersiz kılma|
+|Int16|Default::int16 türü.|
+|Int32|Default::int32 türü.|
+|Int64|Default::int64 türü.|
+|Int8|Default::int8 türü.|
+|Nesne|Platform::Object türü.|
+|Tek|Default::float32 türü.|
+|Dize|Platform::String türü.|
+|UInt16|Default::uint16 türü.|
+|UInt32|Default::uint32 türü.|
+|UInt64|Default::uint64 türü.|
+|UInt8|Default::uint8 türü.|
+
+### <a name="requirements"></a>Gereksinimler
+
+**Desteklenen en düşük istemci:** Windows 8
+
+**Sunucu desteklenen en düşük:** Windows Server 2012
+
+**Namespace:** platformu
+
+**Meta veri:** platform.winmd

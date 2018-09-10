@@ -20,176 +20,178 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44beeca9b860e2010b092739d8c39044ad0bb5b1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3fb37261de4bd68a73b27baa6bdab5200b616cd6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680931"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106697"
 ---
 # <a name="platformwriteonlyarray-class"></a>Platform::WriteOnlyArray sınıfı
-Doldur yönteminin bir dizi çağırana başarılı olduğunda giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.  
-  
- Bu başvuru sınıfı, private olarak vccorlib.h bildirilir; Bu nedenle, meta verilerde yayılır değildir ve yalnızca C++'tan tüketilebilir. Bu sınıf, çağırana ayırdığı bir dizi alan bir giriş parametresi olarak kullanılmak üzere yalnızca yöneliktir. Kullanıcı kodundan atmamalıdır değil. Doğrudan bu diziye yazmak C++ yöntemi sağlar — olarak bilinen bir deseni *FillArray* deseni. Daha fazla bilgi için [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-private ref class WriteOnlyArray<T, 1>  
-```  
-  
-### <a name="members"></a>Üyeler  
-  
-### <a name="public-methods"></a>Ortak Yöntemler  
- Bu yöntemleri dahili erişilebilirlik sahip — diğer bir deyişle, bunlar yalnızca C++ uygulama veya bileşen içinde erişilebilir.  
-  
-|Ad|Açıklama|  
-|----------|-----------------|  
 
-|[WriteOnlyArray::begin](#begin)| Dizinin ilk öğeyi gösteren bir yineleyici. |  
-|[WriteOnlyArray::Data](#data)| Veri arabelleği için bir işaretçi. |  
-|[WriteOnlyArray::end](#end)| Dizi içindeki son öğeden bir öncekine gösteren bir yineleyici. |  
-|[WriteOnlyArray::FastPass](#fastpass)| Dizi şeffaf bir şekilde sistem tarafından gerçekleştirilen bir iyileştirme FastPass mekanizması kullanıp kullanamayacağını belirtir. Bu, kodunuzdaki kullanmayın |  
-|[WriteOnlyArray::Length](#length)| Dizideki öğelerin sayısını döndürür. |  
-|[WriteOnlyArray::set](#set)| Belirtilen öğeyi belirtilen değere ayarlar. |  
+Doldur yönteminin bir dizi çağırana başarılı olduğunda giriş parametresi olarak kullanılan bir tek boyutlu dizi temsil eder.
 
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `WriteOnlyArray`  
-  
-### <a name="requirements"></a>Gereksinimler  
- Derleyici seçeneği: **/ZW**  
-  
- **Meta veri:** Platform.winmd  
-  
- **Namespace:** platformu  
+Bu başvuru sınıfı, private olarak vccorlib.h bildirilir; Bu nedenle, meta verilerde yayılır değildir ve yalnızca C++'tan tüketilebilir. Bu sınıf, çağırana ayırdığı bir dizi alan bir giriş parametresi olarak kullanılmak üzere yalnızca yöneliktir. Kullanıcı kodundan atmamalıdır değil. Doğrudan bu diziye yazmak C++ yöntemi sağlar — olarak bilinen bir deseni *FillArray* deseni. Daha fazla bilgi için [dizi ve WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+private ref class WriteOnlyArray<T, 1>
+```
+
+### <a name="members"></a>Üyeler
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+Bu yöntemleri dahili erişilebilirlik sahip — diğer bir deyişle, bunlar yalnızca C++ uygulama veya bileşen içinde erişilebilir.
+
+|Ad|Açıklama|
+|----------|-----------------|
+
+|[WriteOnlyArray::begin](#begin)| Dizinin ilk öğeyi gösteren bir yineleyici. | | [WriteOnlyArray::Data](#data)| Veri arabelleği için bir işaretçi. | | [WriteOnlyArray::end](#end)| Dizi içindeki son öğeden bir öncekine gösteren bir yineleyici. | | [WriteOnlyArray::FastPass](#fastpass)| Dizi şeffaf bir şekilde sistem tarafından gerçekleştirilen bir iyileştirme FastPass mekanizması kullanıp kullanamayacağını belirtir. Bu, kodunuzdaki kullanmayın | | [WriteOnlyArray::Length](#length)| Dizideki öğelerin sayısını döndürür. | | [WriteOnlyArray::set](#set)| Belirtilen öğeyi belirtilen değere ayarlar. |
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`WriteOnlyArray`
+
+### <a name="requirements"></a>Gereksinimler
+
+Derleyici seçeneği: **/ZW**
+
+**Meta veri:** Platform.winmd
+
+**Namespace:** platformu
 
 ## <a name="begin"></a>  WriteOnlyArray::begin yöntemi
-Dizideki ilk öğe için bir işaretçi döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T* begin() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizideki ilk öğe işaretçisi.  
-  
-### <a name="remarks"></a>Açıklamalar  
- STL algoritmaları ile bu yineleyici gibi kullanılabilir `std::sort` dizideki öğeler üzerinde çalışılacak.  
-  
 
+Dizideki ilk öğe için bir işaretçi döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+T* begin() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizideki ilk öğe işaretçisi.
+
+### <a name="remarks"></a>Açıklamalar
+
+STL algoritmaları ile bu yineleyici gibi kullanılabilir `std::sort` dizideki öğeler üzerinde çalışılacak.
 
 ## <a name="data"></a>  WriteOnlyArray::Data özelliği
-Veri arabelleği için işaretçi.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-property T* Data{  
-   T* get() const;  
-}  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizinin ham bayt için bir işaretçi.  
-  
 
+Veri arabelleği için işaretçi.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+property T* Data{
+   T* get() const;
+}
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizinin ham bayt için bir işaretçi.
 
 ## <a name="end"></a>  WriteOnlyArray::end yöntemi
-Dizi içindeki son öğeden bir öncekine bir işaretçi döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T* end() const;  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizi içindeki son öğeden bir öncekine işaretçi yineleyici.  
-  
-### <a name="remarks"></a>Açıklamalar  
- STL algoritmaları ile bu yineleyici gibi işlemleri gerçekleştirmek için kullanılabilir `std::sort` dizi öğeleri üzerinde.  
-  
 
+Dizi içindeki son öğeden bir öncekine bir işaretçi döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+T* end() const;
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizi içindeki son öğeden bir öncekine işaretçi yineleyici.
+
+### <a name="remarks"></a>Açıklamalar
+
+STL algoritmaları ile bu yineleyici gibi işlemleri gerçekleştirmek için kullanılabilir `std::sort` dizi öğeleri üzerinde.
 
 ## <a name="fastpass"></a>  WriteOnlyArray::FastPass özelliği
-İç FastPass iyileştirme gerçekleştirip gerçekleştirmediğini belirtir. Kullanıcı kodu tarafından kullanılmak üzere tasarlanmamıştır.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-property bool FastPass{  
-   bool get() const;  
-}  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizi FastPass olup olmadığını gösteren Boole değeri.  
-  
 
+İç FastPass iyileştirme gerçekleştirip gerçekleştirmediğini belirtir. Kullanıcı kodu tarafından kullanılmak üzere tasarlanmamıştır.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+property bool FastPass{
+   bool get() const;
+}
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizi FastPass olup olmadığını gösteren Boole değeri.
 
 ## <a name="get"></a>  WriteOnlyArray::get yöntemi
-Belirtilen dizindeki öğeyi döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T& get(  
-   unsigned int indexArg) const;  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- `indexArg`  
-  
-### <a name="return-value"></a>Dönüş Değeri  
-  
 
+Belirtilen dizindeki öğeyi döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+T& get(unsigned int indexArg) const;
+```
+
+### <a name="parameters"></a>Parametreler
+
+*indexArg*<br/>
+Kullanılacak dizin.
+
+### <a name="return-value"></a>Dönüş Değeri
 
 ## <a name="length"></a>  WriteOnlyArray::Length özelliği
-Arayana ayrılan dizideki öğelerin sayısını döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-property unsigned int Length{  
-   unsigned int get() const;  
-}  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Dizideki öğelerin sayısı  
-  
 
+Arayana ayrılan dizideki öğelerin sayısını döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+property unsigned int Length{
+   unsigned int get() const;
+}
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Dizideki öğelerin sayısı
 
 ## <a name="set"></a>  WriteOnlyArray::set işlevi
-Dizi belirtilen dizindeki belirtilen değere ayarlar.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-T& set(  
-   unsigned int indexArg,  
-   T valueArg);  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- `indexArg`  
- Ayarlanacak öğenin dizini.  
-  
- `valueArg`  
- Ayarlanan değer `indexArg`.  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Ayarlamanız yeterlidir öğeye bir başvuru.  
-  
 
-  
-### <a name="remarks"></a>Açıklamalar  
- HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes).  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform Namespace](platform-namespace-c-cx.md)   
- [C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)
+Dizi belirtilen dizindeki belirtilen değere ayarlar.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+T& set(
+   unsigned int indexArg,
+   T valueArg);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*indexArg*<br/>
+Ayarlanacak öğenin dizini.
+
+*valueArg*<br/>
+Ayarlanan değer `indexArg`.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Ayarlamanız yeterlidir öğeye bir başvuru.
+
+### <a name="remarks"></a>Açıklamalar
+
+HRESULT değerini yorumlama hakkında daha fazla bilgi için bkz. [yapısı COM hata kodlarını](/windows/desktop/com/structure-of-com-error-codes).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

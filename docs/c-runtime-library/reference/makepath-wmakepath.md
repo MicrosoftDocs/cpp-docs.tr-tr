@@ -43,12 +43,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20985ce09d301002e6db3164cc3e99f36b03717b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 21cfcfb8a1c82fb351b85b0fb169a94dd3c2c5d4
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204910"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105100"
 ---
 # <a name="makepath-wmakepath"></a>_makepath, _wmakepath
 
@@ -75,15 +75,20 @@ void _wmakepath(
 
 ### <a name="parameters"></a>Parametreler
 
-*yol* tam yol Ara.
+*Yolu*<br/>
+Tam yol Ara.
 
-*Sürücü* bir harf (A, B vb.) içeren istenen sürücü ve isteğe bağlı sondaki iki nokta karşılık gelen. **_makepath** eksik olup olmadığını iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa *sürücü* olduğu **NULL** veya noktaları boş bir dize için sürücü harfi görünür içinde bileşik *yolu* dize.
+*Sürücü*<br/>
+Bir harf (A, B vb.) içeren istenen sürücü ve isteğe bağlı sondaki iki nokta karşılık gelen. **_makepath** eksik olup olmadığını iki nokta üst üste bileşik yolu otomatik olarak ekler. Varsa *sürücü* olduğu **NULL** veya noktaları boş bir dize için sürücü harfi görünür içinde bileşik *yolu* dize.
 
-*dir* sürücü göstergesi ya da gerçek dosya adı dahil değil, dizin yolunu içerir. Eğik isteğe bağlıdır ve eğik çizgi (/) veya ters eğik çizgi (\\) veya her ikisi de tek bir kullanılabilir *dir* bağımsız değişken. Sonda eğik çizgi olmadığına varsa (/ veya \\) belirtilirse, otomatik olarak eklenir. Varsa *dir* olduğu **NULL** veya noktalarına hiçbir dizin yolu boş bir dize içinde bileşik eklenen *yolu* dize.
+*dizini*<br/>
+Sürücü göstergesi ya da gerçek dosya adı dahil değil, dizin yolunu içerir. Eğik isteğe bağlıdır ve eğik çizgi (/) veya ters eğik çizgi (\\) veya her ikisi de tek bir kullanılabilir *dir* bağımsız değişken. Sonda eğik çizgi olmadığına varsa (/ veya \\) belirtilirse, otomatik olarak eklenir. Varsa *dir* olduğu **NULL** veya noktalarına hiçbir dizin yolu boş bir dize içinde bileşik eklenen *yolu* dize.
 
-*fname* herhangi bir dosya adı uzantısı olmadan temel dosya adı içeriyor. Varsa *fname* olduğu **NULL** veya dosya adı boş bir dize noktalarına bileşik içinde eklenen *yolu* dize.
+*fname*<br/>
+Herhangi bir dosya adı uzantısı olmadan temel dosya adı içeriyor. Varsa *fname* olduğu **NULL** veya dosya adı boş bir dize noktalarına bileşik içinde eklenen *yolu* dize.
 
-*ext* gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. **_makepath** dönemi içinde görünmüyorsa, otomatik olarak ekler *ext*. Varsa *ext* olduğu **NULL** veya işaret uzantısı boş bir dize içinde bileşik eklenen *yolu* dize.
+*ext*<br/>
+Gerçek dosya adı uzantısı ile veya olmadan başında nokta (.) içerir. **_makepath** dönemi içinde görünmüyorsa, otomatik olarak ekler *ext*. Varsa *ext* olduğu **NULL** veya işaret uzantısı boş bir dize içinde bileşik eklenen *yolu* dize.
 
 ## <a name="remarks"></a>Açıklamalar
 

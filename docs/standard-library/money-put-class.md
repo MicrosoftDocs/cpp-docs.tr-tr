@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de84f708957074878fba84ebfe3db600a1b6ed86
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 299d11ea29afa5331ef79c7947ccd2684713b29e
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954818"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108908"
 ---
 # <a name="moneyput-class"></a>money_put Sınıfı
 
@@ -47,9 +47,11 @@ class money_put : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
-*Outputıterator* kendi çıktılarının yazılacağı yineleyici için parasal yerleştirme işlevleri türü.
+*Outputıterator*<br/>
+Parasal koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -117,15 +119,20 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>Parametreler
 
-*sonraki* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
+*Sonraki*<br/>
+Eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-*_Intl* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
+*_Intl*<br/>
+Beklenen dizide para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-*_Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir
+*_Iosbase*<br/>
+Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir
 
-*_Fill* aralığı için kullanılan bir karakteri.
+*_Fill*<br/>
+Aralığı için kullanılan bir karakter.
 
-*VAL* dönüştürülecek bir dize nesnesi.
+*VAL*<br/>
+Dönüştürülecek bir dize nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -195,7 +202,8 @@ explicit money_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -234,15 +242,20 @@ iter_type put(
 
 ### <a name="parameters"></a>Parametreler
 
-*sonraki* eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
+*Sonraki*<br/>
+Eklenen dizenin ilk öğeyi adresleyen bir yineleyici.
 
-*_Intl* beklendiği sırayla para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
+*_Intl*<br/>
+Beklenen dizide para birimi simgesi türünü gösteren bir Boole değeri: **true** uluslararası varsa **false** yurtiçi durumunda.
 
-*_Iosbase* bir biçimi olan bayrak kümesi para birimi simgesi isteğe bağlı olduğunu gösterir; Aksi takdirde, gerekli değildir
+*_Iosbase*<br/>
+Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir
 
-*_Fill* aralığı için kullanılan bir karakteri.
+*_Fill*<br/>
+Aralığı için kullanılan bir karakter.
 
-*VAL* dönüştürülecek bir dize nesnesi.
+*VAL*<br/>
+Dönüştürülecek bir dize nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

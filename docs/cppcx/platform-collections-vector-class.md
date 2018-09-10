@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeaed487db1063efd14dddbca28480a169b13522
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 36fe82bc5d17cd3c4951b008af28ba89b171c78f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761117"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103938"
 ---
 # <a name="platformcollectionsvector-class"></a>Platform::Collections:: Vector sınıfı
 
@@ -49,10 +49,10 @@ template <typename T, typename E>
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Vektör nesnesinde yer alan öğelerin türü.
 
-*E*  
+*E*<br/>
 Türündeki değerlerle eşitlik testi için bir ikili koşula belirtir *T*. Varsayılan değer `std::equal_to<T>` şeklindedir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -128,7 +128,7 @@ virtual void Append(T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Vektöre eklenecek öğe. Türünü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="clear"></a>  Vector::Clear yöntemi
@@ -173,7 +173,7 @@ virtual T GetAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -194,10 +194,10 @@ virtual unsigned int GetMany(
 
 ### <a name="parameters"></a>Parametreler
 
-*startIndex*  
+*startIndex*<br/>
 Alınacak öğelerin başladığı sıfır tabanlı dizini.
 
-*Hedef*  
+*Hedef*<br/>
 Belirtilen öğede başlayan öğeleri arayana ayrılan dizi *startIndex* ve vektör içindeki son öğeden sonunda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -234,10 +234,10 @@ virtual bool IndexOf(T value, unsigned int* index);
 
 ### <a name="parameters"></a>Parametreler
 
-*value*  
+*value*<br/>
 Bulunacak öğe.
 
-*Dizin*  
+*Dizin*<br/>
 Öğenin sıfır tabanlı dizini, parametre *değer* bulundu; Aksi takdirde, 0.
 
 *Dizin* parametresi ise 0 öğe vektör ilk öğesidir ya da öğe bulunamadı. Dönüş değeri ise `true`, öğe bulundu ve ilk öğedir; Aksi takdirde, öğe bulunamadı.
@@ -262,10 +262,10 @@ virtual void InsertAt(unsigned int index, T item)
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
 
-*Öğesi*  
+*Öğesi*<br/>
 Bir öğe tarafından belirtilen öğenin sonra vektöre Ekle *dizin*. Türünü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="removeat"></a>  Vector::RemoveAt yöntemi
@@ -280,7 +280,7 @@ virtual void RemoveAt(unsigned int index);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
 
 ## <a name="removeatend"></a>  Vector::RemoveAtEnd yöntemi
@@ -305,7 +305,7 @@ virtual void ReplaceAll(const ::Platform::Array<T>^ arr);
 
 ### <a name="parameters"></a>Parametreler
 
-*arr*  
+*arr*<br/>
 Bir dizi türü tarafından tanımlanan nesnelerin *T* typename.
 
 ## <a name="setat"></a>  Vector::SetAt yöntemi
@@ -320,10 +320,10 @@ virtual void SetAt(unsigned int index, T item);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Belirli bir öğenin vektör nesnesi belirtir. sıfır tabanlı, işaretsiz bir tamsayı.
 
-*Öğesi*  
+*Öğesi*<br/>
 Belirtilen öğe için atanacak değer. Türünü *öğesi* tarafından tanımlanan *T* typename.
 
 ## <a name="size"></a>  Vector::size yöntemi
@@ -365,40 +365,40 @@ Vector(std::initializer_list<T> il);
 
 ### <a name="parameters"></a>Parametreler
 
-*a*  
+*a*<br/>
 A [std::array](../standard-library/array-class-stl.md) vektör başlatmak için kullanılır.
 
-*arr*  
+*arr*<br/>
 A [Platform::Array](../cppcx/platform-array-class.md) vektör başlatmak için kullanılır.
 
-*InIt*  
+*InIt*<br/>
 Geçerli vektör başlatmak için kullanılan bir koleksiyon nesnelerin türü.
 
-*IL*  
+*IL*<br/>
 A [std::initializer_list](../standard-library/initializer-list-class.md) türünde nesne *T* vektör başlatmak için kullanılır.
 
-*N*  
+*N*<br/>
 Bir koleksiyondaki öğeleri geçerli vektör başlatmak için kullanılan nesnelerin sayısı.
 
-*Boyutu*  
+*Boyutu*<br/>
 Vektördeki öğe sayısı.
 
-*value*  
+*value*<br/>
 Geçerli bir vektör içindeki her öğeyi başlatmak için kullanılan bir değer.
 
-*v*  
+*v*<br/>
 Bir [Lvalues ve Rvalues](../cpp/lvalues-and-rvalues-visual-cpp.md) için bir [std::vector](../standard-library/vector-class.md) geçerli vektör başlatmak için kullanılır.
 
-*ptr*  
+*ptr*<br/>
 İşaretçi bir `std::vector` geçerli vektör başlatmak için kullanılır.
 
-*ilk*  
+*ilk*<br/>
 Geçerli vektör başlatmak için kullanılan nesnelerin bir dizideki ilk öğe. Türünü *ilk* yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
-*Son*  
+*Son*<br/>
 Son öğeden bir dizideki nesnelerin geçerli vektör başlatmak için kullanılır. Türünü *son* yoluyla geçirilen *kusursuz iletme*. Daha fazla bilgi için [Rvalue başvuru Bildirimcisi: & &](../cpp/rvalue-reference-declarator-amp-amp.md).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Platform Namespace](platform-namespace-c-cx.md)  
-[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)  
+[Platform Namespace](platform-namespace-c-cx.md)<br/>
+[C++'ta Windows çalışma zamanı bileşenleri oluşturma](/windows/uwp/winrt-components/creating-windows-runtime-components-in-cpp)

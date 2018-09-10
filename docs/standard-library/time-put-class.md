@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b6c1c11a9c81123c518e3a0da3e56cc81d4cd5c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 02c4c537f1a420a096fbcd979580ff7b10076845
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958935"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106762"
 ---
 # <a name="timeput-class"></a>time_put Sınıfı
 
@@ -46,10 +46,10 @@ class time_put : public locale::facet;
 ### <a name="parameters"></a>Parametreler
 
 *CharType*  
- Bir program içindeki karakterleri kodlamak için kullanılan tür.
+Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
 *Outputıterator*  
- Saat koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
+Saat koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -109,19 +109,19 @@ virtual iter_type do_put(
 ### <a name="parameters"></a>Parametreler
 
 *Sonraki*  
- Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
+Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
 
 *_Iosbase*  
- Kullanılmayan.
+Kullanılmayan.
 
 *_Pt*  
- Çıktı olan saat ve tarih bilgilerinin.
+Çıktı olan saat ve tarih bilgilerinin.
 
 *_Fmt*  
- Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 *_Mod*  
- Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -172,28 +172,28 @@ iter_type put(iter_type next,
 ### <a name="parameters"></a>Parametreler
 
 *Sonraki*  
- Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
+Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
 
 *_Iosbase*  
- Kullanılmayan.
+Kullanılmayan.
 
 *_Fill*  
- Karakter türü `CharType` aralığı için kullanılan.
+Karakter türü `CharType` aralığı için kullanılan.
 
 *_Pt*  
- Çıktı olan saat ve tarih bilgilerinin.
+Çıktı olan saat ve tarih bilgilerinin.
 
 *_Fmt*  
- Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 *_Mod*  
- Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 *ilk*  
- Çıktı biçimlendirme dizesi başlangıcı. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Çıktı biçimlendirme dizesi başlangıcı. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 *Son*  
- Çıktı biçimlendirme dizesi sonu. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
+Çıktı biçimlendirme dizesi sonu. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -257,7 +257,8 @@ explicit time_put(size_t _Refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 

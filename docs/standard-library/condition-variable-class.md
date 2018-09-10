@@ -30,12 +30,12 @@ helpviewer_keywords:
 - std::condition_variable::wait_until
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca85765d6fed21938a61f52f25c1a377ec43c499
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0e4d31a93ac8e0f7785ea567821c0ac6b0ad6a58
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965184"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109842"
 ---
 # <a name="conditionvariable-class"></a>condition_variable Sınıfı
 
@@ -125,9 +125,11 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*Lck*<br/>
+A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -159,11 +161,14 @@ bool wait_for(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*Lck*<br/>
+A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
 
-*Rel_time* A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
+*Rel_time*<br/>
+A `chrono::duration` iş parçacığı süre miktarını belirten nesne uyanır.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -214,11 +219,14 @@ bool wait_until(
 
 ### <a name="parameters"></a>Parametreler
 
-*Lck* A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
+*Lck*<br/>
+A [unique_lock\<mutex >](../standard-library/unique-lock-class.md) nesne.
 
-*Abs_time* A [chrono::time_point](../standard-library/time-point-class.md) nesne.
+*Abs_time*<br/>
+A [chrono::time_point](../standard-library/time-point-class.md) nesne.
 
-*Pred* döndüren herhangi bir ifade **true** veya **false**.
+*Pred*<br/>
+Döndüren herhangi bir ifade **true** veya **false**.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

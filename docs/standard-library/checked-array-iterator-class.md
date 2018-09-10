@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7091ba3c7f4d40a2b16c48afadfd5068bcd794bb
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d74c9930816f353be7594bb67bf5e44b5251aa6c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961746"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106738"
 ---
 # <a name="checkedarrayiterator-class"></a>checked_array_iterator Sınıfı
 
@@ -145,7 +145,7 @@ int main()
     return 0;
 }
 \* Output:
- 0 1 2 3 4 5 6 7 8 9
+0 1 2 3 4 5 6 7 8 9
 *\
 ```
 
@@ -253,11 +253,14 @@ checked_array_iterator(
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* dizisine bir işaretçi.
+*ptr*<br/>
+Dizisine bir işaretçi.
 
-*boyutu* dizinin boyutu.
+*Boyutu*<br/>
+Dizinin boyutu.
 
-*Dizin* (yineleyici başlatmak için isteğe bağlı) bir öğe dizisi.  Varsayılan olarak, dizideki ilk öğe için bir yineleyici başlatılır.
+*Dizin*<br/>
+(İsteğe bağlı) Yineleyici başlatmak için bu dizideki bir öğe.  Varsayılan olarak, dizideki ilk öğe için bir yineleyici başlatılır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -325,7 +328,8 @@ bool operator==(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşı eşitlik için denetleyin.
+*sağ*<br/>
+`checked_array_iterator` Karşı eşitlik için denetleyin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -380,7 +384,8 @@ bool operator!=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşı eşitsizlik için denetlenecek.
+*sağ*<br/>
+`checked_array_iterator` Karşı eşitsizlik için denetlenecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -435,7 +440,8 @@ bool operator<(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşı eşitsizlik için denetlenecek.
+*sağ*<br/>
+`checked_array_iterator` Karşı eşitsizlik için denetlenecek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -490,7 +496,8 @@ bool operator>(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşılaştırma yapmak.
+*sağ*<br/>
+`checked_array_iterator` Karşılaştırma yapmak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -508,7 +515,8 @@ bool operator<=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşılaştırma yapmak.
+*sağ*<br/>
+`checked_array_iterator` Karşılaştırma yapmak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -526,7 +534,8 @@ bool operator>=(const checked_array_iterator<_Iterator>& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `checked_array_iterator` karşılaştırma yapmak.
+*sağ*<br/>
+`checked_array_iterator` Karşılaştırma yapmak.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -756,7 +765,8 @@ checked_array_iterator<_Iterator>& operator+=(difference_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* , yineleyici artırmak uzaklık.
+*_Off*<br/>
+Yineleyici artırmak üzere uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -803,7 +813,8 @@ checked_array_iterator<_Iterator> operator+(difference_type _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* eklenecek uzaklık `checked_array_iterator`.
+*_Off*<br/>
+Eklenecek uzaklık `checked_array_iterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -850,7 +861,8 @@ checked_array_iterator<_Iterator>& operator-=(difference_type _Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* , yineleyici artırmak uzaklık.
+*_Off*<br/>
+Yineleyici artırmak üzere uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -900,7 +912,8 @@ difference_type operator-(const checked_array_iterator& right) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* gelen azaltılacak uzaklık `checked_array_iterator`.
+*_Off*<br/>
+Gelen azaltılacak uzaklık `checked_array_iterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -922,7 +935,8 @@ reference operator[](difference_type _Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off* uzaklığı `checked_array_iterator` adresi.
+*_Off*<br/>
+Uzaklığı `checked_array_iterator` adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

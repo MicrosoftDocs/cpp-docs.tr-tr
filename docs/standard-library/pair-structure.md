@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ad86773fdc78f3cb8d5219ce14919a035755f3b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcee56d93059e30bc07e3f964b581624f0bb555d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955338"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108836"
 ---
 # <a name="pair-structure"></a>pair Yapısı
 
@@ -54,11 +54,14 @@ struct pair
 
 ### <a name="parameters"></a>Parametreler
 
-*Val1* ilk öğesi başlatma değeri `pair`.
+*val1*<br/>
+İlk öğesi başlatma değeri `pair`.
 
-*Val2* ikinci öğesini başlatma değeri `pair`.
+*Val2*<br/>
+İkinci öğesini başlatma değeri `pair`.
 
-*Sağ* değerleri olan başka bir çifti öğelerini başlatmak için kullanılacak bir çifti.
+*sağ*<br/>
+Başka bir çifti öğelerini başlatmak için kullanılacak değerleri olan bir çifti.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
@@ -158,8 +161,8 @@ The pair p3 is: ( 10, 0.011 ).
 The element pairs of the map m1 are: ( 1, 10 ) ( 2, 20 ) ( 3, 30 ).
 The element (4,40) was inserted successfully in m1.
 The element with a key value of
- ( (pr2.first) -> first ) = 1 is already in m1,
- so the insertion failed.
+( (pr2.first) -> first ) = 1 is already in m1,
+so the insertion failed.
 *\
 ```
 

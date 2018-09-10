@@ -26,80 +26,87 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1840d2f2ff7d968fdcc19e2013a89af9cec32d24
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4014c58a7e562aa632dba62dcac04c835352cbf
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378957"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101735"
 ---
 # <a name="fa-fa-listing-file"></a>/FA, /Fa (Listeleme Dosyası)
-Derleyici kodu içeren bir listeyi dosyası oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-> **/FA**[**c**\][**s**\][**u**]  
-> **/FA**_yol adı_  
-  
-## <a name="remarks"></a>Açıklamalar  
-`/FA` Derleyici seçeneği genellikle C veya C++ bir kaynak dosyaya karşılık gelen derleme her çeviri birimi için bir assembler listeleme dosyası oluşturur. Varsayılan olarak, yalnızca assembler ANSI kodlanmış listeleme dosyasına dahil edilir. İsteğe bağlı `c`, `s`, ve `u` bağımsız değişkenleri `/FA` denetim kodu olup olmadığını makine veya kaynak kodu listeleme assembler birlikte çıkarılır ve olup listenin kodlanmış UTF-8 olarak.  
-  
-Varsayılan olarak, her listeleme dosyası kaynak dosyası olarak aynı temel adını alır ve .asm uzantısına sahip. Ne zaman makine kodu dahil kullanarak `c` seçeneği, listeleme dosyası .cod uzantısı vardır. Adı ve uzantısı listeleme dosyası ve nerede oluşturulacağını kullanarak dizin değiştirebileceğiniz `/Fa` seçeneği.  
 
-### <a name="fa-arguments"></a>/FA bağımsız değişkenleri  
+Derleme kodu içeren bir listeleme dosyası oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/FA**[**c**\][**s**\][**u**] **/Fa**_yol adı_
+
+## <a name="remarks"></a>Açıklamalar
+
+**/FA** derleyici seçeneği, genellikle bir C veya C++ kaynak dosyasına karşılık gelen derleme her çeviri birimi için bir assembler listeleme dosyası oluşturur. Varsayılan olarak, yalnızca assembler ANSI kodlanmış listeleme dosyası dahildir. İsteğe bağlı **c**, **s**, ve **u** bağımsız değişkenleri **/FA** birlikte assembler çıkış denetimi, kod olup olmadığını makine ya da kaynak kodu Listeleme ve listenin UTF-8 kodlanmış olup olmadığı.
+
+Varsayılan olarak, her listeleme dosyası kaynak dosyası olarak aynı temel adlı alır ve bir .asm uzantısına sahiptir. Makine kodu zaman dahil kullanarak **c** seçeneği, listeleme dosyası .cod uzantısı vardır. Adını ve uzantısını listeleme dosyası ve onu oluşturulduğu kullanarak dizini değiştirebilirsiniz **/Fa** seçeneği.
+
+### <a name="fa-arguments"></a>/FA bağımsız değişkenleri
+
 yok  
-Yalnızca assembler dil listesindeki dahil edilir.  
-  
-`c`  
-İsteğe bağlı. Makine kodu listesindeki içerir.  
-  
-`s`  
-İsteğe bağlı. Kaynak kodu listesindeki içerir.  
-  
-`u` İsteğe bağlı. UTF-8 biçiminde listeleme dosyası kodlar ve bayt sırası işaret içerir. Varsayılan olarak, dosya ANSI kodlanır. Kullanım `u` doğru herhangi bir sisteminde görüntüler bir listeyi dosyası oluşturmak için veya Unicode kullanıyorsanız, kaynak kodu dosyaları derleyici giriş olarak.  
-  
-Her iki `s` ve `u` belirtilir ve dosya bir kaynak kod kullanıyorsa, UTF-8 sonra .asm dosyasındaki kod satırı düzgün görüntülenmeyebilir dışında bir Unicode kodlama.  
-  
-### <a name="fa-argument"></a>/FA bağımsız değişken  
+Yalnızca Çevirici dil listesinde dahil edilir.
+
+**c**  
+İsteğe bağlı. Makine kodu listesindeki içerir.
+
+**s**  
+İsteğe bağlı. Kaynak kodu listesindeki içerir.
+
+**u**  
+İsteğe bağlı. UTF-8 biçiminde listeleme dosyası kodlar ve bayt sırası işareti içerir. Varsayılan olarak, dosya ANSI kodlanır. Kullanım `u` herhangi bir sistemde doğru bir şekilde görüntüleyen bir listeleme dosyası oluşturmak için veya Unicode kullanıyorsanız, kaynak kodu dosyaları derleyici giriş olarak.
+
+Her iki **s** ve **u** belirtilir ve dosya bir kaynak kodu UTF-8, ardından .asm dosyasına kod satırları düzgün görüntülenmeyebilir dışındaki bir Unicode kodlaması kullanır.
+
+### <a name="fa-argument"></a>/FA bağımsız değişken
+
 yok  
-Bir *kaynak*.asm dosyası, her kaynak kodu dosyasının derlemedeki için oluşturulur.  
-  
-*Dosya adı* adlı bir listeyi dosyası *filename*.asm geçerli dizinde yerleştirilir. Bu yalnızca bir tek kaynak kodu dosyasının derlerken geçerlidir.  
-  
-*dosyaadı.uzantı*  
-Adlı bir listeyi dosyası *dosyaadı.uzantı* geçerli dizinde yerleştirilir. Bu yalnızca bir tek kaynak kodu dosyasının derlerken geçerlidir.  
-  
-*Dizin*\  
-Bir *source_file*.asm dosya oluşturulur ve belirtilen yerleştirilen *directory* her kaynak kodu dosyasının derlemedeki için. Gerekli eğik unutmayın. Yalnızca geçerli disk üzerindeki yollara izin verilir.  
-  
-*Dizin*\\*filename* adlı bir listeyi dosyası *filename*.asm yerleştirilir belirtilen *directory*. Bu yalnızca bir tek kaynak kodu dosyasının derlerken geçerlidir.  
-  
-*Dizin*\\*dosyaadı.uzantı*  
-Adlı bir listeyi dosyası *dosyaadı.uzantı* yerleştirildiğinde belirtilen *directory*. Bu yalnızca bir tek kaynak kodu dosyasının derlerken geçerlidir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Açık **C/C++** klasörü ve select **çıktı dosyaları** özellik sayfası.  
-  
-3.  Değiştirme **derleyici çıktı** ayarlamak için özellik `/FAc` ve `/FAs` derleyici, makine ve kaynak kodu için Seçenekler. Değiştirme **kullanım listeleme Assembler Unicode için** ayarlamak için özellik `/FAu` ANSI veya UTF-8 çıktı seçeneği. Değiştirme **ASM listesi konumu** ayarlamak için `/Fa` dosya adını ve konumunu listeleme seçeneği.  
-  
-Her ikisi de bu ayarı Not **derleyici çıktı** ve **kullanım listeleme Assembler Unicode için** özellikleri neden olabilir [komut satırı uyarısı D9025](../../error-messages/tool-errors/command-line-warning-d9025.md). IDE bu seçeneklerinde birleştirmek için kullanın **ek seçenekler** alanındaki **komut satırı** özellik sayfasında yerine.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> veya <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>. Belirtmek için `/FAu`, bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki komut satırını birleşik kaynak oluşturur ve makine kod listesi HELLO.cod çağrılır:  
-  
-```  
-CL /FAcs HELLO.CPP  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+Bir *kaynak*.asm dosyasına, her kaynak kodu dosyasında derleme için oluşturulur.
+
+*Dosya adı*  
+Adlı bir listeleme dosyası *filename*.asm geçerli dizine yerleştirilir. Bu yalnızca bir tek bir kaynak kodu dosyasını derlerken geçerlidir.
+
+*gt;filename.Extension*  
+Adlı bir listeleme dosyası *gt;filename.Extension* geçerli dizine yerleştirilir. Bu yalnızca bir tek bir kaynak kodu dosyasını derlerken geçerlidir.
+
+*Dizin*__\\__  
+Bir *$source_file*.asm dosyasına oluşturulur ve belirtilen yerleştirilen *dizin* her kaynak kodu dosyasında derleme için. Gerekli eğik unutmayın. Yalnızca geçerli disk üzerindeki yollara izin verilir.
+
+*Dizin*__\\__*dosya adı*  
+Adlı bir listeleme dosyası *filename*.asm yerleştirilir belirtilen *dizin*. Bu yalnızca bir tek bir kaynak kodu dosyasını derlerken geçerlidir.
+
+*Dizin*__\\__*gt;filename.Extension*  
+Adlı bir listeleme dosyası *gt;filename.Extension* yerleştirilir belirtilen *dizin*. Bu yalnızca bir tek bir kaynak kodu dosyasını derlerken geçerlidir.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+2. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
+
+3. Değiştirme **Assembler çıkışı** ayarlamak için özellik **/Fac** ve **/Fas** assembler, makine ve kaynak kodu için Seçenekler. Değiştirme **kullanım listeleme Assembler Unicode için** ayarlamak için özellik **/fau** ANSI ya da UTF-8 çıkışı için seçeneği. Değiştirme **ASM liste konumu** ayarlanacak **/Fa** dosya adını ve konumunu listeleme seçeneği.
+
+Her ikisi de o ayarı unutmayın **Assembler çıkışı** ve **kullanım listeleme Assembler Unicode için** özellikleri açabilir [komut satırı uyarısı D9025](../../error-messages/tool-errors/command-line-warning-d9025.md). IDE'de bu seçenekleri birleştirmek için kullanın **ek seçenekler** alanındaki **komut satırı** özellik sayfasında bunun yerine.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerListingLocation%2A> veya <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AssemblerOutput%2A>. Belirtmek için **/fau**, bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="example"></a>Örnek
+Aşağıdaki komut satırını birleştirilmiş bir kaynak oluşturur ve makine kod listesi HELLO.cod çağrılır:
+
+```cmd
+CL /FAcs HELLO.CPP
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
+[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

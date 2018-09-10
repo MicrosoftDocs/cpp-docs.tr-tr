@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f8b516a3e5f5e19731a372a6531d9f26cb94fa6
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: b4b99c9b187e80a7c1e0a91badc4ccad06de593f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958922"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104257"
 ---
 # <a name="greaterequal-struct"></a>greater_equal Yapısı
 
@@ -44,16 +44,18 @@ struct greater_equal<void>
   template <class T, class U>
   auto operator()(T&& Left, U&& Right) const`
     -> decltype(std::forward<T>(Left)>= std::forward<U>(Right));
- };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator>=` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* büyük-veya-eşittir-yeri işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Büyük-veya-eşittir-yeri işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* büyük--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Büyük--veya-eşittir-işlemin sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

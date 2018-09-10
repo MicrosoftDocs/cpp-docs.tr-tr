@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a2b776fb155d8927b610de38bdd79370f4c0803
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 5c93f32a7684d32cba0d2822571bd138f9206f46
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208656"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107420"
 ---
 # <a name="ltfunctionalgt-functions"></a>&lt;işlevsel&gt; işlevleri
 
@@ -70,13 +70,17 @@ unspecified bind(Fty fn, T1 t1, T2 t2, ..., TN tN);
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty* çağırmak için nesnenin türü.
+*Fty*<br/>
+Aranacak nesne türü.
 
-*TN* n. çağrı bağımsız değişken türü.
+*TN*<br/>
+Çağrı bağımsız değişken türü n.
 
-*fn* aranacak nesne.
+*fn*<br/>
+Aranacak nesne.
 
-*tN* n. çağrı bağımsız değişkeni.
+*TN*<br/>
+Nth çağrı bağımsız değişkeni.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -165,9 +169,11 @@ binder1st <Operation> bind1st (const Operation& func, const Type& left);
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
+*FUNC*<br/>
+Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
 
-*Sol* bağlanacak ikili fonksiyon nesnesi ilk bağımsız değişkeni için olan değerdir.
+*Sol*<br/>
+İlk bağımsız değişken ikili işlev nesnesine bağlı olduğu değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -257,9 +263,11 @@ binder2nd <Operation> bind2nd(const Operation& func, const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
+*FUNC*<br/>
+Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
 
-*doğru* bağlanacak ikili fonksiyon nesnesi ikinci bağımsız değişkeni için olan değerdir.
+*sağ*<br/>
+İkinci bağımsız değişken ikili işlev nesnesine bağlı olduğu değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -348,7 +356,7 @@ struct bit_and : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator&
 template <>
@@ -364,9 +372,11 @@ struct bit_and<void>
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator&` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* sol işleneni, bit düzeyinde AND işlemi. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Bit düzeyinde AND işlemi sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* bit düzeyinde AND işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Bit düzeyinde AND işlemi sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -383,24 +393,26 @@ Bit düzeyinde tamamlayıcı (değil) işlemi gerçekleştiren bir önceden tan�
 ```cpp
 template <class Type = void>
 struct bit_not : public unary_function<Type, Type>
- {
+{
     Type operator()(const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator~
 template <>
 struct bit_not<void>
- {
+{
     template <class Type>
     auto operator()(Type&& Right) const  ->  decltype(~std::forward<Type>(Right));
- };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* bir birli destekleyen bir türü `operator~`.
+*Türü*<br/>
+Bir birli destekleyen bir türü `operator~`.
 
-*Sağ* işleneni, bit düzeyinde tamamlayıcı işlemi. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue veya rvalue başvuru türünde bir bağımsız değişken çıkarsanan iletilmesini mükemmel *türü*.
+*sağ*<br/>
+Bit düzeyinde tamamlayıcı işleminin işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue veya rvalue başvuru türünde bir bağımsız değişken çıkarsanan iletilmesini mükemmel *türü*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -420,7 +432,7 @@ struct bit_or : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator|
 template <>
@@ -436,9 +448,11 @@ struct bit_or<void>
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator|` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* bit düzeyinde OR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Bit düzeyinde OR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* bit düzeyinde OR işleminde sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Bit düzeyinde OR işleminde sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -458,7 +472,7 @@ struct bit_xor : public binary_function<Type, Type, Type> {
     Type operator()(
     const Type& Left,
     const Type& Right) const;
- };
+};
 
 // specialized transparent functor for operator^
 template <>
@@ -474,9 +488,11 @@ struct bit_xor<void>
 
 *Tür*, *T*, *U* destekleyen herhangi bir türü bir `operator^` , belirtilen veya çıkarsanan tür işlenen alır.
 
-*Sol* bit düzeyinde XOR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
+*Sol*<br/>
+Bit düzeyinde XOR işleminin sol işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *T*.
 
-*Sağ* bit düzeyinde XOR işlem sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
+*sağ*<br/>
+Bit düzeyinde XOR işlem sağ işleneni. Uzmanlaşmamış şablon türü bir lvalue başvuru bağımsız değişkeni alır *türü*. Özelleşmiş şablon lvalue iletilmesini mükemmel ve rvalue başvuru bağımsız değişkenleri tür çıkarımı yapılan *U*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -500,9 +516,11 @@ reference_wrapper<const Ty> cref(const reference_wrapper<Ty>& arg);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* sarmalamak için bağımsız değişken türü.
+*Ty*<br/>
+Kaydırmak için bağımsız değişken türü.
 
-*arg* sarmalamak için bağımsız değişken.
+*bağımsız değişken*<br/>
+Kaydırmak için bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -552,9 +570,11 @@ unspecified mem_fn(Ret Ty::*pm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ret* sarılan işlevin dönüş türü.
+*ret*<br/>
+Sarılan işlevin dönüş türü.
 
-*Ty* üye işlev işaretçisi türü.
+*Ty*<br/>
+Üye işlev işaretçisi türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -623,7 +643,8 @@ const_mem_fun1_t<Result, Type, Arg> mem_fun(Result (Type::* pmem)(Arg) const);
 
 ### <a name="parameters"></a>Parametreler
 
-*pmem* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
+*pmem*<br/>
+Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -709,7 +730,8 @@ const_mem_fun1_ref_t<Result, Type, Arg> mem_fun_ref(Result (T::* pmem)(Arg) cons
 
 ### <a name="parameters"></a>Parametreler
 
-*pmem* sınıfının üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
+*pmem*<br/>
+Bir sınıfın üye işlevi işaretçisi `Type` bir işlev nesnesi için dönüştürülecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -804,7 +826,8 @@ unary_negate<UnaryPredicate> not1(const UnaryPredicate& pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pred* negatif için birli koşulu.
+*Pred*<br/>
+Negatif birli koşul.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -875,7 +898,8 @@ binary_negate<BinaryPredicate> not2(const BinaryPredicate& func);
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC* negatif için ikili koşul.
+*FUNC*<br/>
+Negatif için ikili koşul.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -953,7 +977,8 @@ pointer_to_binary_function<Arg1, Arg2, Result, Result (*)(Arg1, Arg2)> ptr_fun(R
 
 ### <a name="parameters"></a>Parametreler
 
-*pfunc* uyarlanabilir bir işleve dönüştürülecek birli veya ikili işlev işaretçisi.
+*pfunc*<br/>
+Uyarlanabilir bir işleve dönüştürülecek birli veya ikili fonksiyon işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1072,11 +1097,14 @@ void swap(function<Fty>& f1, function<Fty>& f2);
 
 ### <a name="parameters"></a>Parametreler
 
-*Fty* işlev nesneleri tarafından kontrol edilen tür.
+*Fty*<br/>
+İşlev nesneleri tarafından kontrol edilen tür.
 
-*F1* ilk işlev nesnesi.
+*F1*<br/>
+İlk işlev nesnesi.
 
-*F2* ikinci bir işlev nesnesi.
+*F2*<br/>
+İkinci işlev nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 

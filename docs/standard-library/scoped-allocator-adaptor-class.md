@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7025e0d52aa882c26e2785279626959ca6b29ac1
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 62bdeeddf0e81cf017c49eac51ca0e2eaaf046c1
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962936"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104073"
 ---
 # <a name="scopedallocatoradaptor-class"></a>scoped_allocator_adaptor Sınıfı
 
@@ -131,9 +131,11 @@ pointer allocate(size_type count);pointer allocate(size_type count, const_void_p
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* ayrılacak yeterli depolama alanı için olan öğe sayısı.
+*Sayısı*<br/>
+Yeterli depolama alanı ayrılacak olan öğe sayısı.
 
-*İpucu* ayırıcı nesnesini isteği önce ayrılmış bir nesne adresi bularak yardımcı bir işaretçi.
+*İpucu*<br/>
+Ayırıcı nesnesini, istek önce ayrılmış bir nesne adresi bularak yardımcı bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -168,15 +170,20 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* olduğu bir nesne oluşturulması bellek konumuna bir işaretçi.
+*ptr*<br/>
+Nesnenin oluşturulması olduğu bellek konumu için bir işaretçi.
 
-*args* bağımsız değişkenlerinin listesi.
+*bağımsız değişken*<br/>
+Bağımsız değişken listesi.
 
-*İlk* bir çift ilk türünde bir nesne.
+*ilk*<br/>
+Bir çift ilk türünden bir nesne.
 
-*İkinci* bir çift ikinci türünde bir nesne.
+*Saniye*<br/>
+Bir çift ikinci türünden bir nesne.
 
-*doğru* taşınamaz veya kopyalanamaz için var olan bir nesne.
+*sağ*<br/>
+Taşınamaz veya kopyalanamaz için var olan bir nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -208,9 +215,11 @@ void deallocate(pointer ptr, size_type count);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* işaretçisi serbest bırakılması nesnelerin başlangıç konumu.
+*ptr*<br/>
+Serbest bırakılması nesnelerin başlangıç konumu için bir işaretçi.
 
-*sayısı* ayırması kaldırılacak nesne sayısı.
+*Sayısı*<br/>
+Serbest bırakmak nesne sayısı.
 
 ## <a name="destroy"></a>  scoped_allocator_adaptor::Destroy
 
@@ -223,7 +232,8 @@ void destroy(Ty* ptr)
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* yok edilecek nesneye bir işaretçi.
+*ptr*<br/>
+Yok edilecek nesneye bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -283,10 +293,10 @@ scoped_allocator_adaptor();
 scoped_allocator_adaptor(const scoped_allocator_adaptor& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(
- const scoped_allocator_adaptor<Outer2, Inner...>& right) noexcept;
+const scoped_allocator_adaptor<Outer2, Inner...>& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(
- scoped_allocator_adaptor<Outer2, Inner...>&& right) noexcept;
+scoped_allocator_adaptor<Outer2, Inner...>&& right) noexcept;
 template <class Outer2>
 scoped_allocator_adaptor(Outer2&& al,
     const Inner&... rest) noexcept;
@@ -294,11 +304,14 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* varolan `scoped_allocator_adaptor`.
+*sağ*<br/>
+Mevcut bir `scoped_allocator_adaptor`.
 
-*Al* dış ayırıcı kullanılacak mevcut bir ayırıcı.
+*Al*<br/>
+Dış ayırıcı kullanılacak mevcut bir ayırıcı.
 
-*REST* ayırıcılar iç ayırıcılar kullanılacak bir listesi.
+*REST*<br/>
+Ayırıcılar iç ayırıcılar kullanılacak bir listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 

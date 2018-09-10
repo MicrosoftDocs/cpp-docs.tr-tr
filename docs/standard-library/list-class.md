@@ -108,12 +108,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b31f1562e5db85f0638dfd32ba6e2db0f6f70fea
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 86e1c74d3aa53dd64a48676e4fe9bdbc2065b9c5
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962923"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107500"
 ---
 # <a name="list-class"></a>list Sınıfı
 
@@ -128,9 +128,11 @@ class list
 
 ### <a name="parameters"></a>Parametreler
 
-*Tür* listesinde depolanacak öğe veri türü.
+*Türü*<br/>
+Listede depolanacak öğe veri türü.
 
-*Allocator* listenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı**\<*türü*>.
+*Ayırıcı*<br/>
+Listenin ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı**\<*türü*>.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -250,15 +252,20 @@ void assign(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* bağımsız değişken listesinden kopyalanacak ilk öğenin aralığındaki öğelerin konumu.
+*ilk*<br/>
+Bağımsız değişken listesinden kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*Son* bağımsız değişken listesinden kopyalanacak yalnızca öğe aralığının dışındaki ilk öğenin konumu.
+*Son*<br/>
+Yalnızca bağımsız değişken listesinden kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
 
-*Sayısı* listesine eklenen öğenin kopyası sayısı.
+*Sayısı*<br/>
+Listeye eklenen öğe kopyası sayısı.
 
-*VAL* listesine eklenen öğenin değeri.
+*VAL*<br/>
+Listeye eklenen öğe değeri.
 
-*IList* eklenecek öğeleri içeren initializer_list.
+*IList*<br/>
+Eklenecek öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -952,7 +959,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+*c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is "
         << *c1_Iter << endl;
 
@@ -983,11 +990,14 @@ iterator erase(iterator first, iterator last);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* listeden kaldırılacak öğenin konumu.
+*Burada*<br/>
+Listeden kaldırılacak öğenin konumu.
 
-*İlk* ilk öğenin konumunu listeden kaldırıldı.
+*ilk*<br/>
+İlk öğenin konumunu listeden kaldırıldı.
 
-*Son* yalnızca son öğenin ötesinde listeden kaldırıldı.
+*Son*<br/>
+Yalnızca son öğenin ötesinde listeden kaldırıldı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1275,7 +1285,7 @@ list(InputIterator First, InputIterator Last, const Allocator& Al);
 |*Al*|Bu nesneyle kullanılacak kaynak ayırıcı sınıfı.|
 |*Sayısı*|Oluşturulan listedeki öğelerin sayısı.|
 |*VAL*|Listedeki öğelerin değeri.|
-|*Sağ*|Oluşturulan listenin kopyası olacak olduğu listesi.|
+|*sağ*|Oluşturulan listenin kopyası olacak olduğu listesi.|
 |*ilk*|Kopyalanacak öğe aralığındaki ilk öğenin konumu.|
 |*Son*|Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.|
 |*IList*|Kopyalanacak öğe içeren initializer_list.|
@@ -1437,9 +1447,11 @@ void merge(list<Type, Allocator>& right, Traits comp);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* hedef listenin ile birleştirilecek bağımsız değişken listesi.
+*sağ*<br/>
+Hedef liste ile birleştirilecek bağımsız değişken listesi.
 
-*comp* hedef listenin öğelerini sıralamak için kullanılan karşılaştırma işleci.
+*Comp*<br/>
+Hedef liste öğelerini sıralamak için kullanılan karşılaştırma işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1834,7 +1846,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;
+*c1_rIter = 40;
    cout << "The last element in the list is now " << *c1_rIter << "." << endl;
 }
 ```
@@ -1892,7 +1904,8 @@ void remove(const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* değerin, bir öğe tarafından tutulan, o öğenin listeden kaldırılmasıyla sonuçlanır.
+*VAL*<br/>
+Değer, bir öğe tarafından tutulan, o öğenin listeden kaldırılmasıyla sonuçlanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1949,7 +1962,8 @@ void remove_if(Predicate pred)
 
 ### <a name="parameters"></a>Parametreler
 
-*Pred* birli koşul, o öğenin listeden silme işlemi, bir öğe tarafından karşılanan sonuçlanır.
+*Pred*<br/>
+Bir öğe tarafından karşılanan, o öğenin listeden silme ile sonuçlanır, birli koşul.
 
 ### <a name="example"></a>Örnek
 
@@ -2099,9 +2113,11 @@ void resize(size_type _Newsize, Type val);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newsize* listenin yeni boyutu.
+*_Newsize*<br/>
+Listenin yeni boyutu.
 
-*VAL* yeni boyutu büyükse, listeye eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
+*VAL*<br/>
+Yeni boyutu büyükse, listeye eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2279,7 +2295,8 @@ void sort(Traits comp);
 
 ### <a name="parameters"></a>Parametreler
 
-*comp* ardışık öğeleri sıralamak için kullanılan karşılaştırma işleci.
+*Comp*<br/>
+Ardışık öğeleri sıralamak için kullanılan karşılaştırma işleci.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2350,15 +2367,20 @@ void splice(const_iterator Where, list<Type, Allocator>&& Source, const_iterator
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada* eklenecek önce hedef listenin konumu.
+*Burada*<br/>
+Eklenecek önce hedef listenin konumu.
 
-*Kaynak* hedef listeye eklenecek olan kaynak listesi.
+*Kaynak*<br/>
+Hedef listeye eklenecek olan kaynak listesi.
 
-*Iter* kaynak listeden eklenecek öğe.
+*Iter*<br/>
+Kaynak listesinden eklenecek öğe.
 
-*İlk* kaynak listeden eklenecek aralıktaki ilk öğeyi.
+*ilk*<br/>
+Kaynak listesinden eklenecek aralıktaki ilk öğeyi.
 
-*Son* kaynak listeden eklenecek aralıktaki son öğeden ötesindeki ilk konumu.
+*Son*<br/>
+Kaynak listesinden eklenecek aralığındaki ilk konumu son öğenin ötesinde.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2460,9 +2482,11 @@ friend void swap(list<Type, Allocator>& left, list<Type, Allocator>& right)
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* değiştirilecek öğeleri sağlayan liste veya liste öğeleri listenin öğelerle ilişkili *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan liste veya liste öğeleri listenin öğelerle ilişkili *sol*.
 
-*Sol* öğeleri listenin öğelerle ilişkili bir liste *doğru*.
+*Sol*<br/>
+Bir liste öğeleri listenin öğelerle ilişkili *doğru*.
 
 ### <a name="example"></a>Örnek
 
@@ -2525,7 +2549,8 @@ void unique(BinaryPredicate pred);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pred* ardışık öğeleri karşılaştırmak için kullanılan ikili koşul.
+*Pred*<br/>
+Ardışık öğeleri karşılaştırmak için kullanılan ikili koşul.
 
 ### <a name="remarks"></a>Açıklamalar
 

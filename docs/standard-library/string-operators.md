@@ -24,12 +24,12 @@ helpviewer_keywords:
 - std::operator&lt; (string)
 - std::operator&lt;&lt; (string)
 - std::operator&lt;= (string), std::operator== (string)
-ms.openlocfilehash: 728a0f643a77b47bf857d409517407bec3a1b8b4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 0b4ec7d6d79f70423b2d7c30e1de73e05eb04d9c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966634"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101816"
 ---
 # <a name="ltstringgt-operators"></a>&lt;dize&gt; işleçleri
 
@@ -107,9 +107,11 @@ basic_string<CharType, Traits, Allocator>&& operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` birleştirilecek.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` birleştirilecek.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` birleştirilecek.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` birleştirilecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -194,9 +196,11 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -283,9 +287,11 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -372,9 +378,11 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -466,9 +474,11 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -557,9 +567,11 @@ basic_ostream<CharType, Traits>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ostr* üzerine yazılan çıkış akışı.
+*_Ostr*<br/>
+Yazılmakta olan çıkış akışı.
 
-*str* çıkış akışına girilmesi dize.
+*str*<br/>
+Çıkış akımına girilmesi dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -592,9 +604,11 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -693,9 +707,11 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*Sol*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
-*doğru* C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
+*sağ*<br/>
+C stili dize veya bir nesne türü `basic_string` karşılaştırılmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -784,9 +800,11 @@ basic_istream<CharType, Traits>& operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Istr* dizisi çıkarmak için kullanılan giriş akışı
+*_Istr*<br/>
+Sıra çıkarmak için kullanılan giriş akışı
 
-*doğru* girdi akışından ayıklanan dize.
+*sağ*<br/>
+Girdi akışından ayıklanan dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

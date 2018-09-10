@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f5e02f1cfd7b35244c347ef0f07542e61938d7b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5d4dd1f7b428e3b19f86445bf0b191fb840ecdb9
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960973"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101008"
 ---
 # <a name="regextokeniterator-class"></a>regex_token_iterator Sınıfı
 
@@ -87,11 +87,14 @@ private:
 
 ### <a name="parameters"></a>Parametreler
 
-*BidIt* alt eşleşmeleri için yineleyici türü.
+*BidIt*<br/>
+Alt eşleşmeleri için yineleyici türü.
 
-*Elem* eşleşecek öğelerin türü.
+*Elem*<br/>
+Eşleşecek öğelerin türü.
 
-*RXtraits* öğeler için nitelikler sınıfı.
+*RXtraits*<br/>
+Öğeler için nitelikler sınıfı.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -335,7 +338,8 @@ bool operator!=(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* yineleyici karşılaştırın.
+*sağ*<br/>
+Karşılaştırma yapılacak yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -679,7 +683,8 @@ bool operator==(const regex_token_iterator& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* yineleyici karşılaştırın.
+*sağ*<br/>
+Karşılaştırma yapılacak yineleyici.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1144,13 +1149,17 @@ regex_token_iterator(BidIt first, BidIt last,
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* eşleşecek dizi başlangıcı.
+*ilk*<br/>
+Eşleştirilecek sıralı başlangıcı.
 
-*Son* eşleşecek şekilde son sırasının.
+*Son*<br/>
+Eşleştirilecek sıralı sonu.
 
-*RE* eşleşmeleri için normal ifade.
+*RE*<br/>
+Eşleşme için normal ifade.
 
-*f* eşleşmeleri bayrakları.
+*f*<br/>
+Eşleşme bayrakları.
 
 ### <a name="remarks"></a>Açıklamalar
 

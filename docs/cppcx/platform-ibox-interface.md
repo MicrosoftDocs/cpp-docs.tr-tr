@@ -14,60 +14,68 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d83afb854aaa400a02f9de95e269f85cfeba1a96
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 540b759153b8fac0532a8817d89e704d55fbffd3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761518"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44102084"
 ---
 # <a name="platformibox-interface"></a>Platform::ıbox arabirimi
-[Platform::ıbox](../cppcx/platform-ibox-interface.md) arabirimi için C++ addır `Windows::Foundation::IReference` arabirimi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-template <typename T>  
-interface class IBox  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `T`  
- Paketlenmiş değer türü.  
-  
-### <a name="remarks"></a>Açıklamalar  
- `IBox<T>` Arabirimi öncelikle dahili olarak kullanılan boş değer atanabilen değer türleri temsil etmek için açıklandığı [değer sınıfları ve yapıları (C + +/ CX)](../cppcx/value-classes-and-structs-c-cx.md). Parametre türü C++ yöntemlere iletilen kutusu değer türleri için de arabirimi kullanılır `Object^`. Giriş parametresi olarak açıkça bildirebilirsiniz `IBox<SomeValueType>`. Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).  
-  
-### <a name="requirements"></a>Gereksinimler  
-  
-### <a name="members"></a>Üyeler  
- `Platform::IBox` Arabirimi devralır [Platform::ıvaluetype](../cppcx/platform-ivaluetype-interface.md) arabirimi. `IBox` Bu üyeleri içerir:  
-  
- **Özellikler**  
-  
-|Yöntem|Açıklama|  
-|------------|-----------------|  
-|[Değer](#value)|Bu konuda daha önce depolanan kutulanmamış değer döndürür `IBox` örneği.|  
+
+[Platform::ıbox](../cppcx/platform-ibox-interface.md) arabirimi için C++ addır `Windows::Foundation::IReference` arabirimi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+template <typename T>
+interface class IBox
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Paketlenmiş değer türü.
+
+### <a name="remarks"></a>Açıklamalar
+
+`IBox<T>` Arabirimi öncelikle dahili olarak kullanılan boş değer atanabilen değer türleri temsil etmek için açıklandığı [değer sınıfları ve yapıları (C + +/ CX)](../cppcx/value-classes-and-structs-c-cx.md). Parametre türü C++ yöntemlere iletilen kutusu değer türleri için de arabirimi kullanılır `Object^`. Giriş parametresi olarak açıkça bildirebilirsiniz `IBox<SomeValueType>`. Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
+
+### <a name="requirements"></a>Gereksinimler
+
+### <a name="members"></a>Üyeler
+
+`Platform::IBox` Arabirimi devralır [Platform::ıvaluetype](../cppcx/platform-ivaluetype-interface.md) arabirimi. `IBox` Bu üyeleri içerir:
+
+**Özellikler**
+
+|Yöntem|Açıklama|
+|------------|-----------------|
+|[Değer](#value)|Bu konuda daha önce depolanan kutulanmamış değer döndürür `IBox` örneği.|
 
 ## <a name="value"></a> IBox::Value özelliği
-Bu nesnesinde depolanan değeri döndürür.  
-  
-### <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-property T Value {T get();}  
-```  
-  
-### <a name="parameters"></a>Parametreler  
- `T`  
- Paketlenmiş değer türü.  
-  
-### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri  
- Bu nesnesinde depolanan değeri döndürür.  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform ad alanı](../cppcx/platform-namespace-c-cx.md)
+
+Bu nesnesinde depolanan değeri döndürür.
+
+### <a name="syntax"></a>Sözdizimi
+
+```cpp
+property T Value {T get();}
+```
+
+### <a name="parameters"></a>Parametreler
+
+*T*<br/>
+Paketlenmiş değer türü.
+
+### <a name="property-valuereturn-value"></a>Özellik Değeri/Dönüş Değeri
+
+Bu nesnesinde depolanan değeri döndürür.
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir örnek için bkz. [kutulama](../cppcx/boxing-c-cx.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform ad alanı](../cppcx/platform-namespace-c-cx.md)

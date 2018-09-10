@@ -20,51 +20,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed0ad03d18493cc5618f9aad2a16b07e4a01717f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 952933f72ae5d3f65aa646964ec6e04e758a27c6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373146"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103781"
 ---
 # <a name="f-set-stack-size"></a>/F (Yığın Boyutunu Ayarla)
-Program yığın boyutunu bayt cinsinden ayarlar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/F number  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `number`  
- Yığın boyutunu bayt cinsinden.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek olmadan yığın boyutu 1 MB ile varsayılan olarak ayarlanır. `number` Bağımsız değişken ondalık veya dil C gösterimi olabilir. Bağımsız değişkeni 1'den bağlayıcı tarafından kabul maksimum yığın boyutu değişebilir. Bağlayıcı yakın 4 bayt belirtilen değere yukarı yuvarlar. Kenar boşlukları arasındaki boşluğu **/F** ve `number` isteğe bağlıdır.  
-  
- Programınızı yığın taşması iletileri alırsa yığın boyutunu artırın gerekebilir.  
-  
- Ayrıca yığın boyutunu da ayarlayabilirsiniz:  
-  
--   Kullanarak **/yığın** bağlayıcı seçeneği. Daha fazla bilgi için bkz: [/yığın](../../build/reference/stack.md).  
-  
--   EDITBIN .exe dosyası kullanıyor. Daha fazla bilgi için bkz: [EDITBIN başvurusu](../../build/reference/editbin-reference.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+Program yığın boyutu bayt cinsinden ayarlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/F** *numarası*
+
+## <a name="arguments"></a>Arguments
+
+*Sayı*<br/>
+Yığın boyutunu bayt cinsinden.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek olmadan, yığın boyutu 1 MB ile varsayılan olarak. *Numarası* bağımsız değişkeni, ondalık ya da C dili gösterimi olabilir. Bağımsız değişkeni 1'den bağlayıcı tarafından kabul edilen maksimum yığın boyutu değişebilir. Bağlayıcı, belirtilen değeri en yakın 4 bayt yuvarlar. Arasındaki boşluk **/F** ve *numarası* isteğe bağlıdır.
+
+Programınızı yığın taşması iletileri alırsa yığın boyutunu artırabilir gerekebilir.
+
+Ayrıca yığın boyutu ayarlayabileceğiniz:
+
+-   Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](../../build/reference/stack.md).
+
+-   EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](../../build/reference/editbin-reference.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

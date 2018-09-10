@@ -96,16 +96,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a53a069138b4e54988be008917e5ca2b24fa0a6c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 69347ab698661346b8d598dda1bb007d071a21f8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32411890"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104153"
 ---
 # <a name="rpt-rptf-rptw-rptfw-macros"></a>_RPT, _RPTF, _RPTW, _RPTFW Makroları
 
-Hata ayıklama rapor (yalnızca hata ayıklama sürümü) oluşturarak uygulamanın ilerleme durumunu izler. Unutmayın *n* değişkenlerinde sayısını belirtir *args* ve 0, 1, 2, 3, 4 veya 5 olabilir.
+Hata ayıklama raporunu (yalnızca hata ayıklama sürümü) oluşturarak bir uygulamanın ilerlemesini izler. Unutmayın *n* bağımsız değişken sayısını belirten *args* ve 0, 1, 2, 3, 4 veya 5 olabilir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -136,35 +136,38 @@ _RPTFWn(
 
 ### <a name="parameters"></a>Parametreler
 
-*reportType* rapor türü: **_CRT_WARN**, **_CRT_ERROR**, veya **_CRT_ASSERT**.
+*reportType*<br/>
+Rapor türü: **_CRT_WARN**, **_CRT_ERROR**, veya **_CRT_ASSERT**.
 
-*Biçim* kullanıcı iletisi oluşturmak için kullanılan biçim denetimi dize.
+*Biçim*<br/>
+Kullanıcı iletisini oluşturmak için kullanılan biçim denetimi dizesi.
 
-*bağımsız değişken* tarafından kullanılan değiştirme bağımsız *biçimi*.
+*bağımsız değişken*<br/>
+Tarafından kullanılan değiştirme bağımsız değişkenleri *biçimi*.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makroları ele *reportType* ve *biçimi* parametreleri. Ayrıca, bunlar en çok dört ek bağımsız değişkenler, makrosu adına eklenen numarasına göre miktarlara de alabilir. Örneğin, **_RPT0** ve **_RPTF0** hiçbir ek bağımsız değişkenler almayan **_RPT1** ve **_RPTF1** ele *arg1*, **_RPT2** ve **_RPTF2** ele *arg1* ve **arg2**ve benzeri.
+Bu makrolar ele *reportType* ve *biçimi* parametreleri. Ayrıca, bunların en fazla dört ek bağımsız değişkenler, makro adına numarası miktarlara da sürebilir. Örneğin, **_RPT0** ve **_RPTF0** hiçbir ek bağımsız değişkenler almayan **_RPT1** ve **_RPTF1** ele *arg1*, **_RPT2** ve **_RPTF2** ele *arg1* ve **arg2**ve benzeri.
 
-**_RPT** ve **_RPTF** makroları benzer [printf](printf-printf-l-wprintf-wprintf-l.md) işlev çünkü hata ayıklama işlemi sırasında bir uygulamanın ilerleme durumunu izlemek için kullanılabilir. Ancak, bu makroları daha esnektir **printf** içinde alınmalıdır gerekmediği için **#ifdef** olmasını engellemek için deyimleri adlı bir uygulama bir perakende yapı içinde. Bu esneklik kullanılarak elde edilir [_DEBUG](../../c-runtime-library/debug.md) makrosu; **_RPT** ve **_RPTF** makroları yalnızca kullanılabilir olduğunda **_DEBUG** bayrağı tanımlı. Zaman **_DEBUG** olan tanımlı değilse, bu makroları çağrıları ön işleme sırasında kaldırılır.
+**_RPT** ve **_RPTF** makroları benzer [printf](printf-printf-l-wprintf-wprintf-l.md) işlev çünkü hata ayıklama işlemi sırasında bir uygulamanın ilerleme durumunu izlemek için kullanılabilir. Ancak, bu makrolar daha esnek **printf** içinde içine alınması gerekmez çünkü **#ifdef** olmasını engellemek için ifadeleri adlı bir uygulama bir perakende yapı içinde. Bu esnekliğin kullanılarak elde edilir [_DEBUG](../../c-runtime-library/debug.md) makrosu; **_RPT** ve **_RPTF** makroları yalnızca kullanılabilir olduğunda **_DEBUG** bayrağı tanımlı. Zaman **_DEBUG** olduğu tanımlı değilse, bu makroları için çağrılar ön işleme sırasında kaldırılır.
 
-**_RPTW** ve **_RPTFW** makroları bu makroları geniş karakter sürümü bulunmaktadır. Gibi olduklarını **wprintf** ve joker karakter dizeleri bağımsız olarak gerçekleştirin.
+**_RPTW** ve **_RPTFW** makrolardır Bu makroların geniş baytlık karakter sürümleridir. Gibi olduklarını **wprintf** ve geniş karakterli dize bağımsız değişkenleri olarak gerçekleştirin.
 
-**_RPT** makroları çağrısı [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) kullanıcı iletisi içeren bir hata ayıklama rapor oluşturmak için işlev. **_RPTW** makroları çağrısı **_CrtDbgReportW** geniş karakterler ile aynı rapor oluşturmak için işlev. **_RPTF** ve **_RPTFW** makroları nerede rapor makrosu çağrıldı, ayrıca kullanıcı iletisi kaynak dosyasının ve satır numarası ile hata ayıklama rapor oluşturun. Kullanıcı ileti getirilmesiyle oluşturulur **arg**[*n*] bağımsız değişkenleriyle *biçimi* tarafından tanımlanan aynı kurallarını kullanarak, dize [printf](printf-printf-l-wprintf-wprintf-l.md)işlevi.
+**_RPT** makro çağrısı [_CrtDbgReport](crtdbgreport-crtdbgreportw.md) kullanıcı iletisi ile hata ayıklama rapor oluşturma için işlevi. **_RPTW** makro çağrısı **_CrtDbgReportW** geniş karakterler ile aynı raporu oluşturmak için işlev. **_RPTF** ve **_RPTFW** makroları nerede rapor makrosu çağrıldı, ayrıca kullanıcı iletisi için kaynak dosya ve satır numarası ile bir hata ayıklama raporu oluşturun. Kullanıcı iletisini getirilmesiyle oluşturulur **arg**[*n*] bağımsız değişkenleriyle *biçimi* tarafından tanımlanan aynı kuralları kullanarak, dize [printf](printf-printf-l-wprintf-wprintf-l.md)işlevi.
 
-**_CrtDbgReport** veya **_CrtDbgReportW** hata ayıklama rapor oluşturur ve onun geçerli rapor modlarını dayalı hedefleri ve dosyası için tanımlı belirler *reportType*. [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevleri, her rapor türü için hedefleri tanımlamak için kullanılır.
+**_CrtDbgReport** veya **_CrtDbgReportW** hata ayıklama raporunu oluşturur ve kendi hedeflere göre geçerli rapor modlarına ve dosya için tanımlı belirler *reportType*. [_CrtSetReportMode](crtsetreportmode.md) ve [_CrtSetReportFile](crtsetreportfile.md) işlevler her rapor türü için hedeflerini tanımlamak için kullanılır.
 
-Varsa bir **_RPT** makrosu çağrılır ve hiçbiri **_CrtSetReportMode** ya da **_CrtSetReportFile** bırakıldı olarak adlandırılan, iletileri gibi görüntülenir.
+Varsa bir **_RPT** makrosu çağrılır ve her iki **_CrtSetReportMode** ya da **_CrtSetReportFile** olmuştur adlı iletiler gibi görüntülenir.
 
 |Rapor türü|Çıktı hedefi|
 |-----------------|------------------------|
 |**_CRT_WARN**|Uyarı metni görüntülenmez.|
-|**_CRT_ERROR**|Açılır pencere. Aynı gibi `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` belirtilmiş.|
+|**_CRT_ERROR**|Bir açılır pencere. Aynı gibi `_CrtSetReportMode(_CRT_ERROR, _CRTDBG_MODE_WNDW);` belirtilmiş.|
 |**_CRT_ASSERT**|Aynı **_CRT_ERROR**.|
 
-Ne zaman hedef bir hata ayıklama iletisi penceredir ve kullanıcının seçtiği **yeniden deneme** düğmesi, **_CrtDbgReport** veya **_CrtDbgReportW** başlatmak bu makroları neden 1 değerini döndürür tam zamanında (JIT) hata ayıklama etkin olması koşuluyla, hata ayıklayıcı. Hata ayıklama bir hata işleme mekanizması olarak bu makroları kullanma hakkında daha fazla bilgi için bkz: [doğrulama ve raporlama makroları kullanarak](/visualstudio/debugger/macros-for-reporting).
+Olduğunda, hedef hata ayıklama ileti penceresine ve kullanıcı **yeniden** düğmesi **_CrtDbgReport** veya **_CrtDbgReportW** başlatmak Bu makrolar neden 1 döndürür Just-ın-time (JIT) hata ayıklama etkin olması koşuluyla, hata ayıklayıcı. Bu makrolar hata ayıklama bir hata işleme mekanizması olarak kullanma hakkında daha fazla bilgi için bkz. [doğrulama ve raporlama için makroları kullanma](/visualstudio/debugger/macros-for-reporting).
 
-Diğer iki makroları hata ayıklama raporu oluşturan mevcut. [_ASSERT](assert-asserte-assert-expr-macros.md) makrosu ancak ifade bağımsız değişkeni FALSE olarak değerlendirildiğinde yalnızca bir rapor oluşturur. [_ASSERTE](assert-asserte-assert-expr-macros.md) tam olarak benzer olduğunu **_ASSERT**, ancak oluşturulan rapora başarısız ifade içeriyor.
+Diğer iki makroları hata ayıklama raporunu oluşturur yok. [_ASSERT](assert-asserte-assert-expr-macros.md) makrosu ancak ifadesi bağımsız değişkeni FALSE olarak değerlendirildiğinde yalnızca bir rapor oluşturur. [_ASSERTE](assert-asserte-assert-expr-macros.md) tam olarak benzer olan **_ASSERT**, ancak oluşturulan raporda başarısız ifadesi içerir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -175,17 +178,17 @@ Diğer iki makroları hata ayıklama raporu oluşturan mevcut. [_ASSERT](assert-
 |**_RPTW** makroları|\<crtdbg.h >|
 |**_RPTFW** makroları|\<crtdbg.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 
 Hata ayıklama sürümleri [C çalışma zamanı kitaplıkları](../../c-runtime-library/crt-library-features.md) yalnızca.
 
-Bunlar makrolar ve Crtdbg.h dahil ederek elde edilir, ancak uygulama bu makroları diğer çalışma zamanı işlevleri çağırmak için hata ayıklama kitaplıklarından birini bağlamanız gerekir.
+Bu makrolar ve Crtdbg.h eklenerek elde edilir olsa da, uygulamanın bu makrolar diğer çalışma zamanı işlevleri çağırmak için hata ayıklama kitaplıklarını biriyle bağlamanız gerekir.
 
 ## <a name="example"></a>Örnek
 
-Örnekte bkz [_ASSERT](assert-asserte-assert-expr-macros.md) konu.
+Örnekte bakın [_ASSERT](assert-asserte-assert-expr-macros.md) konu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

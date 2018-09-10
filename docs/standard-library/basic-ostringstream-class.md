@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fb0027ba6afbceed8cc5f1daafef8cb183759ce
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 623e1df599f3d1e0e2011f2cea3c7f9422516c67
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955240"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108869"
 ---
 # <a name="basicostringstream-class"></a>basic_ostringstream Sınıfı
 
@@ -42,11 +42,14 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ayırma* ayırıcı sınıf.
+*Ayırma*<br/>
+Ayırıcı sınıf.
 
-*Elem* dizenin temel öğe türü.
+*Elem*<br/>
+Dizenin temel öğe türü.
 
-*Tr* karakter nitelikleri dizenin temel öğe üzerinde özelleştirilmiş.
+*tr*<br/>
+Karakter nitelikleri temel dize öğesinde anlayışıyla çalışır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -97,9 +100,11 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu*<br/>
+Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str* türünde bir nesne `basic_string`.
+*str*<br/>
+Bir nesne türü `basic_string`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -141,7 +146,8 @@ void str(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newstr* yeni bir dize.
+*_Newstr*<br/>
+Yeni bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

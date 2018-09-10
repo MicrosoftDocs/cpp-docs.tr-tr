@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53760cd2d69067fd93a76a35b0ba29fcc82a4664
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9580068474eba77bcf50067efefb98b5949d464f
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960075"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109896"
 ---
 # <a name="basicistringstream-class"></a>basic_istringstream Sınıfı
 
@@ -44,11 +44,14 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Ayırma* ayırıcı sınıf.
+*Ayırma*<br/>
+Ayırıcı sınıf.
 
-*Elem* dizenin temel öğe türü.
+*Elem*<br/>
+Dizenin temel öğe türü.
 
-*Tr* karakter nitelikleri dizenin temel öğe üzerinde özelleştirilmiş.
+*tr*<br/>
+Karakter nitelikleri temel dize öğesinde anlayışıyla çalışır.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -112,11 +115,14 @@ basic_istringstream(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Modu* numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+*_Modu*<br/>
+Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*str* türünde bir nesne `basic_string`.
+*str*<br/>
+Bir nesne türü `basic_string`.
 
-*doğru* bir rvalue başvurusunu bir `basic_istringstream` nesne.
+*sağ*<br/>
+Bir rvalue başvurusunu bir `basic_istringstream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -136,7 +142,8 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* rvalue başvurusuna bir `basic_istringstream` nesne.
+*sağ*<br/>
+Rvalue başvurusuna bir `basic_istringstream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -172,7 +179,8 @@ void str(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newstr* yeni bir dize.
+*_Newstr*<br/>
+Yeni bir dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

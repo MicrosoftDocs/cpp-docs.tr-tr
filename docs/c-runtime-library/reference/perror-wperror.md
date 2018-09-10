@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 455bf63cdac425217c40068853b302edefb94f16
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1df9e064ac7af761a858c6e18d99526a9b3c7ffb
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32404288"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103794"
 ---
 # <a name="perror-wperror"></a>perror, _wperror
 
@@ -64,11 +64,12 @@ void _wperror(
 
 ### <a name="parameters"></a>Parametreler
 
-*İleti* yazdırmak için dize ileti.
+*message*<br/>
+Yazdırmak için dize iletisi.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Perror** işlevi bir hata iletisi yazdırır **stderr**. **_wperror** bir joker karakter sürümü **_perror**; *ileti* bağımsız değişkeni **_wperror** bir joker karakter dizesidir. **_wperror** ve **_perror** Aksi takdirde aynı şekilde davranır.
+**Perror** işlevi bir hata iletisi yazdırır **stderr**. **_wperror** geniş karakterli sürümüdür **_perror**; *ileti* bağımsız değişkeni **_wperror** geniş karakterli bir dizedir. **_wperror** ve **_perror** aynı şekilde davranır.
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -76,13 +77,13 @@ void _wperror(
 |---------------------|------------------------------------|--------------------|-----------------------|
 |**_tperror**|**perror**|**perror**|**_wperror**|
 
-*İleti* ilk olarak, bir iki nokta üst üste ve ardından bir hata üretilen son kitaplığı çağrı için sistem hata iletisini ve ardından yazdırılır ve son olarak yeni satır karakteri tarafından. Varsa *ileti* null işaretçi ya da boş bir dize için bir işaretçi **perror** yalnızca sistem hata iletisi yazdırır.
+*İleti* bir iki nokta üst üste, ardından bir sistem hatası iletisi hata oluşturan son kitaplık çağrısı için ilk olarak, yazdırılır ve son yeni satır karakteriyle. Varsa *ileti* null bir işaretçi veya boş bir dize işaretçisi **perror** yalnızca sistem hatası iletisi yazdırır.
 
-Hata numarası değişkende depolanır [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (ERRNO içinde tanımlanmıştır. H). Sistem hata iletilerini değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), bir dizi hata numarasına göre sıralanmış iletileri olduğu. **perror** uygun hata iletisini kullanarak yazdırır **errno** değeri için bir dizin olarak **_sys_errlist**. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) öğe maksimum sayısı olarak tanımlanan **_sys_errlist** dizi.
+Hata numarasını değişkeninde depolanan [errno](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) (ERRNO içinde tanımlanır. H). Sistem hata mesajlarına değişken üzerinden erişilen [_sys_errlist](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md), hata numarasıyla sıralanan mesajlar dizisi olan. **perror** kullanarak ilgili hata iletisi yazdırır **errno** değeri bir dizin olarak **_sys_errlist**. Değişkenin değerini [_sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) içindeki öğelerin maksimum sayısını olarak tanımlanan **_sys_errlist** dizisi.
 
-Doğru sonuçlar için arama **perror** hemen bir hata ile kitaplığı yordamı döndükten sonra. Aksi halde, sonraki çağrılar kılabilirsiniz **errno** değeri.
+Doğru sonuçlar için çağrı **perror** sonra hemen bir yordamı ile ilgili bir hata döndürür. Aksi halde, sonraki çağrılar üzerine yazıp **errno** değeri.
 
-Windows işletim sistemi, bazı **errno** değerleri ERRNO içinde listelenen. H kullanılmayan. Bu değerler UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) listesini **errno** Windows işletim sistemi tarafından kullanılan değerler. **perror** için boş bir dize yazdırır **errno** değeri bu platformlar tarafından kullanılmaz.
+Windows işletim sistemi, bazı **errno** değerleri ERRNO içinde listelenir. H kullanılmayan. Bu değerler, UNIX işletim sistemi tarafından kullanılmak üzere ayrılmıştır. Bkz: [_doserrno, errno, _sys_errlist ve _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bir listesi için **errno** Windows işletim sistemi tarafından kullanılan değerler. **perror** için boş bir dize yazdırır **errno** değeri bu platformlar tarafından kullanılmaz.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -91,7 +92,7 @@ Windows işletim sistemi, bazı **errno** değerleri ERRNO içinde listelenen. H
 |**perror**|\<stdio.h > veya \<stdlib.h >|
 |**_wperror**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="libraries"></a>Kitaplıklar
 

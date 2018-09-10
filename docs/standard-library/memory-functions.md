@@ -82,12 +82,12 @@ helpviewer_keywords:
 - std::uninitialized_fill_n [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d104d8a64dd60e5aaa7244e5bf5f535343f6e132
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 762cc70c40c2d6e201b42c0c10ed83c981c97ec7
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957431"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101670"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 
@@ -113,7 +113,8 @@ T* addressof(T& Val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* nesne veya işlev doğru adresi alacak.
+*VAL*<br/>
+Doğru adresi alacak nesne veya işlev.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -136,13 +137,17 @@ void* align(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hizalama* hizalama bağlı denemek için.
+*Hizalama*<br/>
+Denenecek hizalama sınırı.
 
-*Boyutu* hizalanmış depolama için bayt cinsinden boyutu.
+*Boyutu*<br/>
+Hizalanmış depolama için bayt cinsinden boyut.
 
-*PTR* kullanılacak mevut bitişik depolama havuzunun başlangıç adresi. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalama başarılı olursa yeni başlangıç adresini içerecek şekilde ayarlanır. Varsa `align()` olduğundan başarısız, bu parametre değiştirilmez.
+*PTR*<br/>
+Kullanılacak mevut bitişik depolama havuzunun başlangıç adresi. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalama başarılı olursa yeni başlangıç adresini içerecek şekilde ayarlanır. Varsa `align()` olduğundan başarısız, bu parametre değiştirilmez.
 
-*Alanı* kullanılabilir toplam alan `align()` hizalanmış depolama oluştururken kullanım için. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalanmış depolamanın ve herhangi ilişkili ek yükün çıkarılmasının ardından depolama arabelleğinde kalan düzenlenmiş alanı içerir.
+*alanı*<br/>
+Kullanılabilir toplam alan `align()` hizalanmış depolama oluştururken kullanım için. Bu parametre aynı zamanda bir çıktı parametresidir ve hizalanmış depolamanın ve herhangi ilişkili ek yükün çıkarılmasının ardından depolama arabelleğinde kalan düzenlenmiş alanı içerir.
 
 Varsa `align()` olduğundan başarısız, bu parametre değiştirilmez.
 
@@ -189,9 +194,11 @@ allocate_shared(Allocator Alloc, Types&&... Args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ayırma* nesneleri oluşturmak için kullanılan ayırıcı.
+*Ayırma*<br/>
+Nesneleri oluşturmak için kullanılan ayırıcı.
 
-*Args* nesneler haline gelen sıfır veya daha fazla bağımsız değişken.
+*Args*<br/>
+Nesneler haline gelen sıfır veya daha fazla bağımsız değişken.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -209,11 +216,14 @@ const_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* döndürülen tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty*<br/>
+Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* bağımsız değişken paylaşılan işaretçi.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -275,7 +285,8 @@ void declare_reachable(void* ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* erişilebilir, ayrılmış, geçerli depolama alanı için bir işaretçi.
+*ptr*<br/>
+Erişilebilir, ayrılmış, geçerli depolama alanı için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -296,7 +307,8 @@ struct default_delete {
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* silmek için nesneye işaretçi.
+*PTR*<br/>
+Silinecek nesne işaretçisi.
 
 Diğer silinecek dizideki öğelerin türü.
 
@@ -316,11 +328,14 @@ dynamic_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* döndürülen tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty*<br/>
+Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
 
-*SP* bağımsız değişken paylaşılan işaretçi.
+*SP*<br/>
+Bağımsız değişken paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -373,11 +388,14 @@ D* get_deleter(const shared_ptr<Ty>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*D* Silici türü.
+*D*<br/>
+Silici türü.
 
-*Ty* paylaşılan işaretçiyle kontrol edilen tür.
+*Ty*<br/>
+Paylaşılan işaretçiyle kontrol edilen tür.
 
-*SP* paylaşılan işaretçi.
+*SP*<br/>
+Paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -451,7 +469,8 @@ pair<Type *, ptrdiff_t> get_temporary_buffer(ptrdiff_t count);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* hangi bellek için istenen öğelerin maksimum sayıdır ayrılacak.
+*Sayısı*<br/>
+En fazla öğe sayısı, bellek tahsis edilecek olduğu istedi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -619,15 +638,20 @@ make_unique(Types&&...) = delete;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* nesnenin türü, `unique_ptr` işaret.
+*T*<br/>
+Nesne türü, `unique_ptr` işaret.
 
-*Türleri* tarafından belirtilen oluşturucu bağımsız değişken türlerinin *Args*.
+*Türler*<br/>
+Tarafından belirtilen oluşturucu bağımsız değişken türlerinin *Args*.
 
-*Args* nesne türü oluşturucusuna geçirilecek bağımsız değişkenleri *T*.
+*Args*<br/>
+Nesne türü oluşturucusuna geçirilecek bağımsız değişkenleri *T*.
 
-*Elem* bir dizi türünde öğeler *T*.
+*Elem*<br/>
+Bir dizi türünde öğeler *T*.
 
-*Boyutu* yeni bir dizi için alan ayırmak için öğe sayısı.
+*Boyutu*<br/>
+Yeni bir dizi için alan ayırmak için öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -684,9 +708,11 @@ struct owner_less<weak_ptr<Type>>
 
 ### <a name="parameters"></a>Parametreler
 
-*_left* bir paylaşılan veya zayıf işaretçi.
+*_left*<br/>
+Paylaşılan veya zayıf işaretçi.
 
-*doğru* bir paylaşılan veya zayıf işaretçi.
+*sağ*<br/>
+Paylaşılan veya zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -703,7 +729,8 @@ void return_temporary_buffer(Type* _Pbuf);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pbuf* serbest bırakılması bellek işaretçisi.
+*_Pbuf*<br/>
+Serbest bırakılması bellek işaretçisi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -744,7 +771,7 @@ int main( )
 ```Output
 The number of integers in the array is: 7.
 The number of elements that the allocated memory
- could store is given by: resultPair.second = 7.
+could store is given by: resultPair.second = 7.
 ```
 
 ## <a name="static_pointer_cast"></a>  static_pointer_cast
@@ -759,11 +786,14 @@ static_pointer_cast(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* döndürülen tarafından kontrol edilen tür paylaşılan işaretçi.
+*Ty*<br/>
+Döndürülen paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* bağımsız değişken paylaşılan işaretçi.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -818,13 +848,17 @@ void swap(weak_ptr<Ty>& left, weak_ptr<Other>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* sol/zayıf paylaşılan işaretçiyle kontrol edilen tür.
+*Ty*<br/>
+Sol/zayıf paylaşılan işaretçiyle kontrol edilen tür.
 
-*Diğer* sağ paylaşılan/zayıf işaretçi tarafından kontrol edilen tür.
+*Diğer*<br/>
+Doğrudan paylaşılan/zayıf işaretçiyle kontrol edilen tür.
 
-*Sol* sol paylaşılan zayıf işaretçi.
+*Sol*<br/>
+Sol paylaşılan zayıf işaretçi.
 
-*doğru* sağ paylaşılan/zayıf işaretçi.
+*sağ*<br/>
+Doğrudan paylaşılan/zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -927,11 +961,14 @@ ForwardIterator uninitialized_copy(InputIterator first, InputIterator last, Forw
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* kaynak aralıktaki ilk öğeyi ele alan giriş yineleyici.
+*ilk*<br/>
+Kaynak aralıktaki ilk öğeyi ele alan bir giriş yineleyici.
 
-*Son* kaynak aralıktaki son öğeyi ele alan giriş yineleyici.
+*Son*<br/>
+Kaynak aralıktaki son öğeyi ele alan bir giriş yineleyici.
 
-*Hedef* hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
+*Hedef*<br/>
+Hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1032,11 +1069,14 @@ ForwardIterator uninitialized_copy_n(
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* kopyalanacak nesneye başvuran bir giriş yineleyici.
+*ilk*<br/>
+Kopyalanacak nesneye başvuran Bir girdi yineleyicisi.
 
-*sayısı* A imzalı veya imzasız tamsayı türü sayısını belirten bir nesneyi kopyalamak için.
+*Sayısı*<br/>
+Nesnenin kaç defa kopyalanacağını belirten işaretli veya işaretsiz tamsayı türü.
 
-*Hedef* yeni kopyanın gideceği yere başvuran ileri doğru yineleyici.
+*Hedef*<br/>
+Yeni kopyanın gideceği yere başvuran ileri doğru yineleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1066,11 +1106,14 @@ void uninitialized_fill(ForwardIterator first, ForwardIterator last, const Type&
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* başlatılması için hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
+*ilk*<br/>
+Başlatılacak olan hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
 
-*Son* başlatılması için hedef aralıktaki son öğeyi ele alan ileriye doğru yineleyici.
+*Son*<br/>
+Başlatılacak olan hedef aralıktaki son öğeyi ele alan ileriye doğru yineleyici.
 
-*VAL* hedef aralığı başlatmak için kullanılacak değer.
+*VAL*<br/>
+Hedef aralığı başlatmak için kullanılacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1135,11 +1178,14 @@ void uninitialized_fill_n(ForwardIterator first, Size count, const Type& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*İlk* başlatılacak hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
+*ilk*<br/>
+Başlatılacak hedef aralıktaki ilk öğeyi bulan ileriye doğru yineleyici.
 
-*sayısı* başlatılacak öğe sayısı.
+*Sayısı*<br/>
+Başlatılacak öğe sayısı.
 
-*VAL* hedef aralığı başlatmak için kullanılacak değer.
+*VAL*<br/>
+Hedef aralığı başlatmak için kullanılacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 

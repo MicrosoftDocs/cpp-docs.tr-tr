@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b7b604fd58c3f320b62c022e6b5d1749c1f3a87
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f6b4faf2ac5f04a2dcc9e1e9112016038fa2fcec
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954896"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44106457"
 ---
 # <a name="messages-class"></a>messages Sınıfı
 
@@ -54,7 +54,8 @@ class messages : public messages_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType* bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
+*CharType*<br/>
+Bir program içindeki yerel ayarın karakterlerini kodlamak için kullanılan tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -114,7 +115,8 @@ void close(catalog _Catval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval* kapatılması için kataloğu.
+*_Catval*<br/>
+Kapatılması Kataloğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -130,7 +132,8 @@ virtual void do_close(catalog _Catval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval* kapatılması için kataloğu.
+*_Catval*<br/>
+Kapatılması Kataloğu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -156,13 +159,17 @@ virtual string_type do_get(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval* aranacak ileti kataloğunu belirten kimlik değeri.
+*_Catval*<br/>
+İleti kataloğunu aranacak belirten kimlik değeri.
 
-*_Küme* ilk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Küme*<br/>
+İlk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
 
-*İl_eti* ikinci tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*İl_eti*<br/>
+İkinci belirlenen bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
 
-*_Dfault* hata olduğunda döndürülecek bir dize.
+*_Dfault*<br/>
+Hata olduğunda döndürülecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -188,9 +195,11 @@ virtual catalog do_open(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catname* aranacak katalog adı.
+*_Catname*<br/>
+Aranacak katalog adı.
 
-*_Loc* katalogda Aranan yerel ayar.
+*_Loc*<br/>
+Katalogda Aranan yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -220,13 +229,17 @@ string_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catval* aranacak ileti kataloğunu belirten kimlik değeri.
+*_Catval*<br/>
+İleti kataloğunu aranacak belirten kimlik değeri.
 
-*_Küme* ilk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*_Küme*<br/>
+İlk tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
 
-*İl_eti* ikinci tanımlanan bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
+*İl_eti*<br/>
+İkinci belirlenen bir ileti bir ileti Kataloğu'nda bulmak için kullanılır.
 
-*_Dfault* hata olduğunda döndürülecek bir dize.
+*_Dfault*<br/>
+Hata olduğunda döndürülecek dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -251,9 +264,11 @@ protected: messages(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Refs* nesne için bellek yönetimi türünü belirtmek için kullanılan bir tamsayı değeri.
+*_Refs*<br/>
+Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
-*_Locname* yerel ayar adı.
+*_Locname*<br/>
+Yerel ayar adı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -281,9 +296,11 @@ catalog open(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Catname* aranacak katalog adı.
+*_Catname*<br/>
+Aranacak katalog adı.
 
-*_Loc* katalogda Aranan yerel ayar.
+*_Loc*<br/>
+Katalogda Aranan yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

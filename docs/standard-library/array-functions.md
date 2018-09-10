@@ -18,12 +18,12 @@ helpviewer_keywords:
 - std::swap [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d369ba9b2af313c27e96e9981129fe2cf1da3c8
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a67a22b8236646b549032e236006cd4855c3a43c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961077"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108732"
 ---
 # <a name="ltarraygt-functions"></a>&lt;dizi&gt; işlevleri
 
@@ -50,13 +50,17 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin* öğesi uzaklığı.
+*Index*<br/>
+Öğe uzaklığı.
 
-*T* öğenin türü.
+*T*<br/>
+Öğenin türü.
 
-*N* dizideki öğelerin sayısı.
+*N*<br/>
+Dizideki öğelerin sayısı
 
-*arr* dizi seçin.
+*arr*<br/>
+Aralarından seçim yapabileceğiniz dizisi.
 
 ### <a name="example"></a>Örnek
 
@@ -101,13 +105,17 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* öğenin türü.
+*Ty*<br/>
+Öğenin türü.
 
-*N* dizinin boyutu.
+*N*<br/>
+Dizinin boyutu.
 
-*Sol* takas etmek için ilk dizi.
+*Sol*<br/>
+Takas etmek için ilk dizi.
 
-*doğru* takas etmek için ikinci bir dizi.
+*sağ*<br/>
+Takas etmek için ikinci dizi.
 
 ### <a name="remarks"></a>Açıklamalar
 

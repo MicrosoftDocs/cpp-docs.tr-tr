@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4819f5b5d5d6a16720bce29dd176fd0eb873014a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 766ab6f9a93cc617c2a3ecb4c305775d670a9640
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955939"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108960"
 ---
 # <a name="ltostreamgt-operators"></a>&lt;ostream&gt; işleçleri
 
@@ -88,17 +88,23 @@ basic_ostream <_Elem, _Tr>& operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* bir karakter.
+*_Ch*<br/>
+Bir karakter.
 
-*_Elem* öğe türü.
+*_Elem*<br/>
+Öğe türü.
 
-*_Ostr* A `basic_ostream` nesne.
+*_Ostr*<br/>
+A `basic_ostream` nesne.
 
-*str* bir karakter dizesi.
+*str*<br/>
+Bir karakter dizesi.
 
-*_Tr* karakter nitelikleri.
+*_Tr*<br/>
+Karakter nitelikleri.
 
-*VAL* türü
+*VAL*<br/>
+Türü
 
 ### <a name="return-value"></a>Dönüş Değeri
 

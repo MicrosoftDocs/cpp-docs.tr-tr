@@ -92,12 +92,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcf3a5fcdb8c604dac368b60cf4a368bdb1c3f14
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: f766df104df31ba2ba154c081338f7a6d1d4a05c
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33865760"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107536"
 ---
 # <a name="regexconstants-class"></a>regex_constants Sınıfı
 
@@ -110,12 +110,12 @@ namespace regex_constants {
     enum syntax_option_type;
     enum match_flag_type;
     enum error_type;
- }
+}
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Ad alanı `regex_constants` birkaç bayrağı türlerini ve bunların ilişkili bayrak değerleri yalıtır.
+Ad alanı `regex_constants` birkaç bayrak türünü ve bunların ilişkili bayrak değerlerini kapsüller.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -125,7 +125,7 @@ Ad alanı `regex_constants` birkaç bayrağı türlerini ve bunların ilişkili 
 
 ## <a name="error_type"></a>  regex_constants::error_type
 
-Normal ifade sözdizimi hataları raporlama için işaretler.
+Normal ifade söz dizimi hatalarını raporlama için kullanılan bayraklar.
 
 ```cpp
 enum error_type
@@ -150,43 +150,43 @@ enum error_type
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata bayrakları tutabilen bir nesneyi tanımlayan bir enum türü türüdür. Ayrı bayrak değerleri şunlardır:
+Hata bayrakları tutabilen bir nesneyi tanımlayan bir listeden seçimli türü türüdür. Farklı bayrak değerleri şunlardır:
 
-`error_backref` --İfade geçersiz arka başvuru içeriyor
+`error_backref` --İfade geçersiz arka başvuru içeriyor.
 
-`error_badbrace` --İfade geçersiz bir sayı {} ifadesinde bulunan
+`error_badbrace` --{} ifadesinde geçersiz bir sayı ifadesi içeriyor
 
-`error_badrepeat` --bir yineleme ifadesi (biri ' *', '', '+', ' {' çoğu bağlamlarda) bir ifade tarafından öncesinde değil
+`error_badrepeat` --bir yineleme ifadesi (bir ' *', '', '+', ' {' çoğu bağlamlarda) bir ifade tarafından öncesinde değil
 
-`error_brace` --ifade eşleşmeyen bulunan ' {' veya '}'
+`error_brace` --ifadesi eşleşmeyen yer alan ' {' veya '}'
 
-`error_brack` --ifade eşleşmeyen bulunan ' [' veya ']'
+`error_brack` --ifadesi eşleşmeyen yer alan ' [' veya ']'
 
-`error_collate` --İfade geçersiz bir harmanlama öğe adı yer alan
+`error_collate` --ifade yer alan geçersiz bir harmanlama öğesi adı
 
-`error_complexity` --Denenen bir eşleşme çok karmaşık olduğundan başarısız oldu
+`error_complexity` --çok karmaşık olduğundan denenen bir eşleşme başarısız oldu
 
-`error_ctype` --İfade geçersiz karakter sınıf adı içeriyor
+`error_ctype` --ifade yer alan bir geçersiz karakter sınıfı adı
 
-`error_escape` --İfade geçersiz kaçış dizisi içeriyor
+`error_escape` --İfade geçersiz bir kaçış dizisi içeriyor
 
-`error_paren` --ifade eşleşmeyen bulunan '(' veya')'
+`error_paren` --ifadesi eşleşmeyen yer alan '(' veya')'
 
 `error_parse` --ifadesi ayrıştırılamadı
 
-`error_range` --bir geçersiz karakter aralığı belirticisi ifade içeriyor
+`error_range` --ifade yer alan bir geçersiz karakter aralığı tanımlayıcısı
 
-`error_space` --bir normal ifade ayrıştırma başarısız oldu kullanılabilir yeterli kaynak yok
+`error_space` --bir normal ifade ayrıştırma işlemi başarısız oldu çünkü kullanılabilir yeterli kaynak yok
 
 `error_stack` --Denenen bir eşleşme başarısız oldu çünkü kullanılabilir yeterli bellek yoktu
 
 `error_syntax` --bir sözdizimi hatası ayrıştırılamadı
 
-`error_backref` --İfade geçersiz arka başvuru içeriyor
+`error_backref` --İfade geçersiz arka başvuru içeriyor.
 
 ## <a name="match_flag_type"></a>  regex_constants::match_flag_type
 
-Normal ifade seçenekleri eşleşen bayrakları.
+Seçenekleri eşleşen normal ifade bayrakları.
 
 ```cpp
 enum match_flag_type
@@ -210,41 +210,41 @@ enum match_flag_type
 
 ### <a name="remarks"></a>Açıklamalar
 
-Türü bir normal ifade ve biçim karşı bir metin dizisi eşleşen metni yerleştirirken kullanılacak bayrakları yapılırken kullanılacak seçenekleri açıklayan bir bit maskesi türüdür. Seçenekler ile birleştirilebilir `|`.
+Bir normal ifade ve biçim karşı bir metin dizisi ile eşleşen metin değiştirirken kullanılan bayraklar yapılırken kullanılacak seçeneklerle bir bit maskesi türünde türüdür. Seçenekleri ile birleştirilebilir `|`.
 
-Eşleşme Seçenekler şunlardır:
+Eşleşme seçenekleri şunlardır:
 
-`match_default`
+*match_default*<br/>
 
-`match_not_bol` --hedef sırası ilk konumda bir satır başına olarak görmeyin
+`match_not_bol` --Hedef dizideki ilk konumu bir satırın başına olarak davran değil
 
-`match_not_eol` --hedef sırası geçmiş--end konumda bir satır sonu olarak görmeyin
+`match_not_eol` --past--end konumu hedef dizideki bir satırın sonuna davran değil
 
-`match_not_bow` --hedef sırası ilk konumda bir sözcüğün başlangıcına olarak görmeyin
+`match_not_bow` --Hedef dizideki ilk konumu olarak bir sözcüğün başlangıcını kabul değil
 
-`match_not_eow` --hedef sırası geçmiş--end konumda bir sözcüğün sonuna görmeyin
+`match_not_eow` --past--end konumu hedef dizideki bir sözcüğün sonuna davran değil
 
-`match_any` --birden fazla eşleşme mümkün ise eşleşme kabul edilebilir.
+`match_any` --herhangi bir eşleşme birden fazla eşleşme Mümkünse, kabul edilebilir
 
-`match_not_null` --boş bir değişkene bir eşleşme olarak görmeyin
+`match_not_null` --boş bir alt diziyi bir eşleşme olarak işle değil
 
-`match_continuous` --hedef sırası başındaki dışında eşleşmeler arama değil
+`match_continuous` --Hedef dizinin başındaki dışında eşleşmeleri için arama
 
-`match_prev_avail` -- `--first` Geçerli bir yineleyici olan; Yoksay `match_not_bol` ve `match_not_bow` varsa Ayarla
+`match_prev_avail` -- `--first` Geçerli bir yineleyici olduğunu; Yoksay `match_not_bol` ve `match_not_bow` varsa Ayarla
 
-Biçim bayraklar şunlardır:
+Biçim bayrakları şunlardır:
 
-`format_default` --ECMAScript biçimi kurallarını kullan
+`format_default` --ECMAScript biçim kuralları kullanma
 
-`format_sed` --azaltılabilir biçimi kurallarını kullan
+`format_sed` --sed biçim kuralları kullanma
 
 `format_no_copy` --normal ifadeyle eşleşmez metin kopyalamayın
 
-`format_first_only` --için eşleşen birinci sonra arama
+`format_first_only` --sonra ilk öğe için eşleşme arama
 
 ## <a name="syntax_option_type"></a>  regex_constants::syntax_option_type
 
-Sözdizimi seçenekleri seçmek için işaretler.
+Söz dizimi seçenekleri için bayrakları.
 
 ```cpp
 enum syntax_option_type
@@ -266,9 +266,9 @@ enum syntax_option_type
 
 ### <a name="remarks"></a>Açıklamalar
 
-Dil tanımlayıcıları ve sözdizimi değiştiricileri normal bir ifade derleme yapılırken kullanılacak açıklayan bir bit maskesi türü türüdür. Seçenekler ile birleştirilebilir `|`. Aynı anda birden fazla dil belirleyici kullanılmalıdır.
+Türü bir normal ifade derlenirken kullanılacak dil tanımlayıcıları ve söz dizimi değiştiriciler betimleyen bir bit maskesi türdür. Seçenekleri ile birleştirilebilir `|`. Aynı anda birden fazla dil tanımlayıcısı kullanılmalıdır.
 
-Dil tanımlayıcıları şunlardır:
+Dil tanımlayıcılarıdır:
 
 `ECMAScript` --ECMAScript derleme
 
@@ -282,15 +282,15 @@ Dil tanımlayıcıları şunlardır:
 
 `egrep` --egrep derleme
 
-Sözdizimi değiştiricileri şunlardır:
+Söz dizimi değiştiricilerdir:
 
-`icase` --eşleşmeleri büyük küçük harf duyarsız olun
+`icase` --eşleşme büyük/küçük harfe olun
 
-`nosubs` --implementaton yakalama grupları içeriğini izlemenize yok
+`nosubs` --implementaton yakalama gruplarının içeriğini izlemenize yok
 
-`optimize` --Uygulama normal ifade derleme hızına yerine eşleşen hızı vurgulamak
+`optimize` --Uygulama normal ifade derlemesinin hız yerine eşleşen hızı vurgulamak
 
-`collate` --yapma yerel ayara duyarlı eşleşir
+`collate` --olun, yerel ayar duyarlı eşleşir
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

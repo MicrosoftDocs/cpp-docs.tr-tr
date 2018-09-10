@@ -45,16 +45,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9fd388e2963a0e28389fbf7cc2c4bd146ac9b61e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8942dbaddcc1f4ab1ec5d571d08d95d8669d302d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32401444"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107061"
 ---
 # <a name="ftime-ftime32-ftime64"></a>_ftime, _ftime32, _ftime64
 
-Geçerli saati alır. Bu işlevlerin daha güvenli sürümleri kullanılabilir; bkz: [_ftime_s, _ftime32_s, _ftime64_s](ftime-s-ftime32-s-ftime64-s.md).
+Geçerli saati alın. Bu işlevlerin daha güvenli sürümleri mevcuttur; bkz: [_ftime_s, _ftime32_s, _ftime64_s](ftime-s-ftime32-s-ftime64-s.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -66,24 +66,25 @@ void _ftime64( struct __timeb64 *timeptr );
 
 ### <a name="parameters"></a>Parametreler
 
-*timeptr* işaretçi bir **_timeb**, **__timeb32**, veya **__timeb64** yapısı.
+*timeptr*<br/>
+İşaretçi bir **_timeb**, **__timeb32**, veya **__timeb64** yapısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Ftime** işlevi geçerli yerel saat alır ve gösterdiği yapısı depolar *timeptr*. **_Timeb**, **__timeb32**, ve **__timeb64** yapıları tanımlanmış \<sys\\timeb.h >. Aşağıdaki tabloda listelenen dört alanları içerir.
+**_Ftime** işlevi, geçerli yerel saat alır ve işaret ettiği yapısında depolar *timeptr*. **_Timeb**, **__timeb32**, ve **__timeb64** yapıları tanımlanmış \<sys\\timeb.h >. Aşağıdaki tabloda listelenen dört alan içerirler.
 
 |Alan|Açıklama|
 |-|-|
-|**dstflag**|Günışığından şu an için yerel saat dilimi etkinse, sıfır olmayan. (Bkz [_tzset](tzset.md) günışığından belirleme hakkında ayrıntılı açıklamalar için.)|
-|**millitm**|Saniyenin milisaniye cinsinden verin.|
-|**Saat**|Gece yarısından beri geçen saniye süre (00: 00:00), 1 Ocak 1970'den itibaren Eşgüdümlü Evrensel Saat (UTC).|
-|**Saat dilimi**|Dakika cinsinden fark westward, UTC ve yerel saat arasında taşıma. Değeri **saat dilimi** genel değişkeni değerinden ayarlamak **_timezone** (bkz **_tzset**).|
+|**dstflag**|Gün ışığından yararlanma saatine göre geçerli yerel saat dilimini ise sıfır olmayan. (Bkz [_tzset](tzset.md) gün ışığından yararlanma saatine nasıl belirlendiğini'nın açıklaması.)|
+|**millitm**|Saniyenin milisaniye cinsinden.|
+|**saat**|Saniye cinsinden gece yarısından itibaren saat (00: 00:00), 1 Ocak 1970, Eşgüdümlü Evrensel Saat (UTC).|
+|**saat dilimi**|Dakika cinsinden farkı westward, yerel saat ve UTC arasında taşıma. Değerini **saat dilimi** genel değişkenin değerini ayarlamak **_timezone** (bkz **_tzset**).|
 
-**_Ftime64** kullanan işlevi **__timeb64** yapısı, 23:59:59, 31 Aralık 3000 UTC; yukarı ifade için dosya oluşturma tarihleri sağlarken **_ftime32**yalnızca ile 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısından, 1 Ocak 1970'ten, bu işlevler için tarih aralığını alt sınırdır.
+**_Ftime64** kullanan işlevi **__timeb64** yapısı, 23:59:59, 31 Aralık, 3000, UTC; yukarı ifade edilecek tarihleri dosya oluşturma sağlarken **_ftime32**yalnızca 23:59:59 18 Ocak 2038, UTC tarihleri temsil eder. Gece yarısı, 1 Ocak 1970, tüm bu işlevler için tarih aralığının alt sınırdır.
 
-**_Ftime** işlevi eşdeğerdir **_ftime64**, ve **_timeb** sürece bir 64-bit saati içeren **_USE_32BIT_TIME_T** , dosyasında tanımlanan eski davranışı durumda etkili olur; **_ftime** 32-bit zamanını kullanır ve **_timeb** 32-bit saati içerir.
+**_Ftime** işlev, eşdeğer **_ftime64**, ve **_timeb** 64-bit zaman pr'nin **_use_32bıt_tıme_t** , dosyasında tanımlanan eski davranışı durumda etkindir; **_ftime** bir 32-bit kullanır ve **_timeb** 32-bit saati içerir.
 
-**_ftime** parametrelerini doğrular. Null işaretçi olarak aktarılırsa *timeptr*, açıklandığı gibi geçersiz parametre işleyicisi işlevi çağırır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, işlevi ayarlar **errno** için **EINVAL**.
+**_ftime** kendi parametrelerini doğrular. Null bir işaretçi olarak geçirilmiş *timeptr*, işlev içinde açıklanan şekilde geçersiz parametre işleyicisi çağırır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse işlev ayarlar **errno** için **EINVAL**.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -93,7 +94,7 @@ void _ftime64( struct __timeb64 *timeptr );
 |**_ftime32**|\<sys/Types.h > ve \<sys/timeb.h >|
 |**_ftime64**|\<sys/Types.h > ve \<sys/timeb.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

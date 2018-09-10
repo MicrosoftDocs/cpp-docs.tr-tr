@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8191b572595b8ada96f59357af095baf5d846bc4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: a9e53d9344e56f9efc4f20b834ce31bcb05f9fbb
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961727"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103993"
 ---
 # <a name="binder1st-class"></a>binder1st Sınıfı
 
@@ -53,11 +53,14 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC* birli işlev nesnesi için dönüştürülecek ikili fonksiyon nesnesi.
+*FUNC*<br/>
+Birli işlevi nesnesine dönüştürülecek ikili fonksiyon nesnesi.
 
-*Sol* bağlanacak ikili fonksiyon nesnesi ilk bağımsız değişkeni için olan değerdir.
+*Sol*<br/>
+İlk bağımsız değişken ikili işlev nesnesine bağlı olduğu değeri.
 
-*doğru* uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak karşılaştırır bağımsız değişkeninin değeri.
+*sağ*<br/>
+Uyarlanmış ikili nesne sabit değeri ikinci bağımsız değişkeni olarak karşılaştıran bir bağımsız değişken değeri.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

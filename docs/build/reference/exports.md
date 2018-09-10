@@ -1,7 +1,7 @@
 ---
 title: DIŞARI AKTARMALAR | Microsoft Docs
 ms.custom: ''
-ms.date: 08/20/2018
+ms.date: 09/07/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 299d300cb3b2247a4dfa698a53c486bcef6164e3
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f3ea5c28fe54e5d117ef40430912ef3f8ea0efd8
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894557"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104296"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -38,9 +38,7 @@ EXPORTS
 
 Bir dışarı aktarma için söz dizimi *tanımı* olan:
 
-```DEF
-entryname[=internal_name|other_module.another_exported_name] [@Ordinal [NONAME]] [[PRIVATE] | [DATA]]
-```
+> *GirişAdı*\[__=__*internal_name*|*other_module.exported_name*] \[ **\@** _sıralı_ \[ **NONAME**]] \[ \[ **özel**] | \[ **Veri**]]
 
 *GirişAdı* dışarı aktarmak istediğiniz işlev veya değişken adı. Bu gereklidir. Dll adı vermek istediğiniz adı farklıysa, dışarı aktarma'nın adı DLL'deki kullanarak belirtin *internal_name*. Örneğin, bir işlev, DLL dışarı aktarmaları `func1` ve çağrı yapanların olarak kullanmak istediğiniz `func2`, şunu belirtmeniz gerekir:
 
@@ -56,18 +54,18 @@ EXPORTS
    func2=other_module.func1
 ```
 
-Dışarı aktarma DLL'de sıralı kullanarak dışarı aktarmak istediğiniz adı, sıralı olarak dışarı aktarır, başka bir modülden ise belirtin *other_module. #ordinal_number*. Örneğin, burada, sıralı 42 ve çağrı yapanların olarak kullanmak istediğiniz diğer modülünde DLL'niz işlevi dışarı aktarır `func2`, şunu belirtmeniz gerekir:
+Dışarı aktarma DLL'de sıralı kullanarak dışarı aktarmak istediğiniz adı, sıralı olarak dışarı aktarır, başka bir modülden ise belirtin *other_module*.__#__ *sıralı*. Örneğin, burada, sıralı 42 ve çağrı yapanların olarak kullanmak istediğiniz diğer modülünde DLL'niz işlevi dışarı aktarır `func2`, şunu belirtmeniz gerekir:
 
 ```DEF
 EXPORTS
    func2=other_module.#42
 ```
 
-Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, düzenlenmiş adı internal_name kullanın veya extern "C" kaynak kodunda kullanarak dışarı aktarılan işlevleri tanımlar. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
+Visual C++ derleyicisi için C++ işlevlerini bir düzenlemeyi Adlandır kullandığından, ya da düzenlenmiş adı kullanmalıdır *internal_name* veya dışarı aktarılan işlevleri kullanarak tanımladığınız `extern "C"` kaynak kodunda. Derleyici kullanmak için C işlevlerini de düzenler [__stdcall](../../cpp/stdcall.md) çağırma kuralı ile bir alt çizgi (\_) önek ve sonek oluşan at işareti (\@) (ondalık) bayt sayısı, ardından bağımsız değişken listesi.
 
 Derleyici tarafından üretilen düzenlenmiş adların bulmak için kullanın [DUMPBIN](../../build/reference/dumpbin-reference.md) aracını veya bağlayıcı [/MAP](../../build/reference/map-generate-mapfile.md) seçeneği. Düzenlenmiş adlar derleyici özgüdür. Düzenlenmiş adları dışa aktarmak istemiyorsanız. DEF dosyası için DLL'e yürütülebilir dosyalar derleyici aynı sürümünü kullanarak da oluşturulmalıdır. Bu çağrıyı düzenlenmiş adları dışarı aktarılan adlarının eşleştiğini sağlar. DEF dosyası.
 
-Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna gideceğini belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.
+Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dışarı aktarma tablosuna giden belirtmek için. Birçok Windows DLL'leri, eski kodu desteklemek için sıra sayıları dışarı aktarın. Bir DLL boyutunu en aza indirmenize yardımcı çünkü 16-bit Windows kod içinde sıra sayıları kullanmak yaygın. İsteğe bağlı olarak, DLL'nin istemci için eski destek gerekli olmadıkça işlevlerini dışa aktarma sıra sayısı ile önerilmemektedir. Çünkü. LIB dosyası sıra ile işlevi arasındaki eşlemeyi içerir, DLL kullanan projelerde normalde yaptığınız gibi işlev adı kullanabilirsiniz.
 
 İsteğe bağlı kullanarak **NONAME** anahtar sözcüğü, yalnızca sıralı olarak dışarı aktarma ve ortaya çıkan DLL'yi dışa aktarma tablosunda boyutunu küçültün. Ancak, kullanmak istiyorsanız [GetProcAddress](https://msdn.microsoft.com/library/windows/desktop/ms683212.aspx) DLL adı geçerli değil çünkü sıra bilmeniz gerekir.
 
@@ -88,9 +86,16 @@ EXPORTS
 
 3. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
 
-4. A [yorum](../../preprocessor/comment-c-cpp.md) kaynak kodda, formun yönergesi `#pragma comment(linker, "/export: definition ")`  
+4. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`. Aşağıdaki örnek, bir işlev bildiriminden önce #pragma comment yönergesi gösterir. burada `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
 
-Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır.
+    ```cpp
+    #pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
+    BOOL CALLBACK PlainFuncName( Things * lpParams)
+    ```
+
+#Pragma yönergesi ve işlev adı dışarı aktarma ve derleme yapılandırmasına bağlı olarak farklı verir (örneğin, 32 bit veya 64 bit derlemelerde) sahip gerektiğinde kullanışlıdır.
+
+Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır. 
 
 Dışarı aktarmalar bölümün bir örnek aşağıda verilmiştir:
 

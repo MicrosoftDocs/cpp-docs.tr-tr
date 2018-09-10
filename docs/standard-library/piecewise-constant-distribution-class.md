@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 875df2d76f10b1d8319df0e82541ddf73e9d8c2c
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2c2b4c93604a95b4c2d73c69a834ab6724bd9193
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963543"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103951"
 ---
 # <a name="piecewiseconstantdistribution-class"></a>piecewise_constant_distribution Sınıfı
 
@@ -90,7 +90,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan nokta sonuç türü ve ayarlarına **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan nokta sonuç türü ve ayarlarına **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -258,23 +259,32 @@ explicit piecewise_constant_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*firstI* dağıtım aralıktaki ilk öğenin bir giriş yineleyici.
+*firstI*<br/>
+Dağıtım aralıktaki ilk öğenin bir giriş yineleyici.
 
-*lastI* dağıtım aralıktaki son öğenin bir giriş yineleyici.
+*lastI*<br/>
+Dağıtım aralıktaki son öğeden bir giriş yineleyici.
 
-*firstW* ağırlıkları aralıktaki ilk öğenin bir giriş yineleyici.
+*firstW*<br/>
+Ağırlıklar aralıktaki ilk öğenin bir giriş yineleyici.
 
-*aralıkları* bir [initializer_list](../cpp/initializers.md) dağıtım aralıklarına sahip.
+*aralıkları*<br/>
+Bir [initializer_list](../cpp/initializers.md) dağıtım aralıklarına sahip.
 
-*sayısı* dağıtım aralıktaki öğelerin sayısı.
+*Sayısı*<br/>
+Dağıtım aralıktaki öğelerin sayısı.
 
-*xMin* dağıtım aralıktaki en düşük değeri.
+*xMin*<br/>
+Dağıtım aralıktaki en düşük değeri.
 
-*xMax* dağıtım aralıktaki en yüksek değeri. Değerinden büyük olmalıdır *xmin*.
+*xmax*<br/>
+Dağıtım aralıktaki en yüksek değeri. Değerinden büyük olmalıdır *xmin*.
 
-*weightfunc* dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
+*weightfunc*<br/>
+Dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

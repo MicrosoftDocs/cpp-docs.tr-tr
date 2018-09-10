@@ -13,33 +13,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d6461e6c94a6889c956ac0319c55c9ee5d2a361
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: edcb67686db871e4ebddb961ed254d260b630139
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751386"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107155"
 ---
 # <a name="defaulttypenamegethashcode-method"></a>Varsayılan:: (type_name):: GetHashCode metodu
-Bu örneğin karma kodunu döndürür.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-public:int GetHashCode()  
-```  
-  
-### <a name="return-value"></a>Dönüş Değeri  
- Bu örneğin karma kodu.  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Desteklenen en düşük istemci:** Windows 8  
-  
- **Sunucu desteklenen en düşük:** Windows Server 2012  
-  
- **Namespace:** varsayılan  
-  
- **Başlık:** vccorlib.h  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Varsayılan Ad Alanı](../cppcx/default-namespace.md)
+
+Bu örneğin karma kodunu döndürür.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+public:int GetHashCode();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Bu örneğin karma kodu.
+
+### <a name="requirements"></a>Gereksinimler
+
+**Desteklenen en düşük istemci:** Windows 8
+
+**Sunucu desteklenen en düşük:** Windows Server 2012
+
+**Namespace:** varsayılan
+
+**Başlık:** vccorlib.h
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Varsayılan Ad Alanı](../cppcx/default-namespace.md)

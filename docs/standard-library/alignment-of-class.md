@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb492c1c804aacd79f1552afb5293b8b40a8b648
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 0089d190b28489d2274df2209890bc3a391b6f66
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465067"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44103859"
 ---
 # <a name="alignmentof-class"></a>alignment_of Sınıfı
 
@@ -37,7 +37,8 @@ struct alignment_of;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty* Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

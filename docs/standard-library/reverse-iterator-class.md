@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcd141134dfef7b7044d0a4f9635ff5bcc252c93
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 348cff70b46af133009703c513ac9d939486cd91
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43223370"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105919"
 ---
 # <a name="reverseiterator-class"></a>reverse_iterator Sınıfı
 
@@ -275,7 +275,8 @@ reverse_iterator<RandomIterator> operator+(difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* ters yineleyici eklenecek uzaklığı.
+*Kapalı*<br/>
+Ters yineleyici eklenecek olan uzaklık.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -335,9 +336,9 @@ int main( )
 The vector vec is: ( 2 4 6 8 10 ).
 The vector vec reversed is: ( 10 8 6 4 2 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 After the +2 offset, the iterator rVPOS2 points
- to the 3rd element in the reversed sequence: 6.
+to the 3rd element in the reversed sequence: 6.
 ```
 
 ## <a name="op_add_add"></a>  reverse_iterator::operator++
@@ -408,9 +409,9 @@ int main( )
 The vector vec is: ( 1 3 5 7 9 ).
 The vector vec reversed is: ( 9 7 5 3 1 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 9.
+in the reversed sequence: 9.
 After incrementing, the iterator rVPOS1 points
- to the second element in the reversed sequence: 7.
+to the second element in the reversed sequence: 7.
 ```
 
 ## <a name="op_add_eq"></a>  reverse_iterator::operator +=
@@ -423,7 +424,8 @@ reverse_iterator<RandomIterator>& operator+=(difference_type Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* , yineleyici artırmak uzaklık.
+*Kapalı*<br/>
+Yineleyici artırmak üzere uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -480,9 +482,9 @@ int main( )
 The vector vec is: ( 2 4 6 8 10 ).
 The vector vec reversed is: ( 10 8 6 4 2 ).
 The iterator rVPOS1 initially points to the first element
- in the reversed sequence: 10.
+in the reversed sequence: 10.
 After the +2 offset, the iterator rVPOS1 now points
- to the third element in the reversed sequence: 6.
+to the third element in the reversed sequence: 6.
 ```
 
 ## <a name="reverse_iterator__operator-"></a>  reverse_iterator::operator-
@@ -495,7 +497,8 @@ reverse_iterator<RandomIterator> operator-(difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* reverse_iterator çıkarılsın uzaklığı.
+*Kapalı*<br/>
+Reverse_iterator çıkarılsın uzaklığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -556,9 +559,9 @@ int main( )
 The vector vec is: ( 3 6 9 12 15 ).
 The vector vec reversed is: ( 15 12 9 6 3 ).
 The iterator rVPOS1 initially points to the last element
- in the reversed sequence: 3.
+in the reversed sequence: 3.
 After the -2 offset, the iterator rVPOS2 points
- to the 2nd element from the last in the reversed sequence: 9.
+to the 2nd element from the last in the reversed sequence: 9.
 ```
 
 ## <a name="reverse_iterator__operator--"></a>  reverse_iterator::operator--
@@ -629,9 +632,9 @@ int main( )
 The vector vec is: ( 1 3 5 7 9 ).
 The vector vec reversed is: ( 9 7 5 3 1 ).
 The iterator rVPOS1 initially points to the last element
- in the reversed sequence: 1.
+in the reversed sequence: 1.
 After the decrement, the iterator rVPOS1 points
- to the next-to-last element in the reversed sequence: 3.
+to the next-to-last element in the reversed sequence: 3.
 ```
 
 ## <a name="reverse_iterator__operator-_eq"></a>  reverse_iterator::operator-=
@@ -644,7 +647,8 @@ reverse_iterator<RandomIterator>& operator-=(difference_type Off);
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* çıkarmanın yapılacağı uzaklık `reverse_iterator`.
+*Kapalı*<br/>
+Çıkarmanın yapılacağı uzaklık `reverse_iterator`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -703,9 +707,9 @@ int main( )
 The vector vec is: ( 3 6 9 12 15 ).
 The vector vec reversed is: ( 15 12 9 6 3 ).
 The iterator rVPOS1 initially points to the last element
- in the reversed sequence: 3.
+in the reversed sequence: 3.
 After the -2 offset, the iterator rVPOS1 now points
- to the 2nd element from the last in the reversed sequence: 9.
+to the 2nd element from the last in the reversed sequence: 9.
 ```
 
 ## <a name="op_arrow"></a>  reverse_iterator::operator-&gt;
@@ -797,7 +801,8 @@ reference operator[](difference_type Off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* uzaklığı `reverse_iterator` adresi.
+*Kapalı*<br/>
+Uzaklığı `reverse_iterator` adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -966,7 +971,8 @@ reverse_iterator(const reverse_iterator<Type>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* yineleyiciyi tersten çalışmaya uygun olacak bir `reverse_iterator`.
+*sağ*<br/>
+Yineleyiciyi tersten çalışmaya uygun olacak bir `reverse_iterator`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

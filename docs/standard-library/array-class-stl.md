@@ -106,12 +106,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf54b113e5eb3750d02b887945345880dca94775
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ac07884d3ac7390bdb3aba4144c1c436041434f0
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960049"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110064"
 ---
 # <a name="array-class-c-standard-library"></a>array sınıfı (Standart C++ Kitaplığı)
 
@@ -202,7 +202,8 @@ array(const array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* eklemek için nesne veya aralığı.
+*sağ*<br/>
+Nesne veya eklenecek aralık.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -257,7 +258,8 @@ void assign(const Ty& val);
 
 ### <a name="parameters"></a>Parametreler
 
-*VAL* atanacak değer.
+*VAL*<br/>
+Atanacak değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -313,7 +315,8 @@ constexpr const_reference at(size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* erişmek için öğenin konumu.
+*Kapalı*<br/>
+Erişim öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1173,7 +1176,8 @@ constexpr const_reference operator[](size_type off) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Kapalı* erişmek için öğenin konumu.
+*Kapalı*<br/>
+Erişim öğenin konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1225,7 +1229,8 @@ array <Value>%  operator=(array <Value>% right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* kopyalanacak kapsayıcı.
+*sağ*<br/>
+Kopyalanacak kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1602,7 +1607,8 @@ void swap(array& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* içeriklerini takas için dizi.
+*sağ*<br/>
+İle içeriklerini Takas Et dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 

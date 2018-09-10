@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c2f2351d55a4b4f868021bd0c44a0b942633c68
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fb8a30f8dde14801b89b1e2d36e349ea8e93a5c6
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958536"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107115"
 ---
 # <a name="lognormaldistribution-class"></a>lognormal_distribution Sınıfı
 
@@ -78,7 +78,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -204,11 +205,14 @@ explicit lognormal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*m* `m` dağıtım parametresi.
+*m*<br/>
+`m` Dağıtım parametresi.
 
-*s* `s` dağıtım parametresi.
+*s*<br/>
+`s` Dağıtım parametresi.
 
-*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
+*parametre*<br/>
+`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -236,11 +240,14 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*m* `m` dağıtım parametresi.
+*m*<br/>
+`m` Dağıtım parametresi.
 
-*s* `s` dağıtım parametresi.
+*s*<br/>
+`s` Dağıtım parametresi.
 
-*doğru* `param_type` karşılaştırmak için kullanılan yapısı.
+*sağ*<br/>
+`param_type` Karşılaştırmak için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

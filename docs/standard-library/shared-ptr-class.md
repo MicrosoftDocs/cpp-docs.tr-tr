@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9192f52b35ec50c7acb1672e03ea248d140c7f71
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 999b4bcee00c633184795e22865bc5c75ee64846
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957528"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109881"
 ---
 # <a name="sharedptr-class"></a>shared_ptr Sınıfı
 
@@ -351,9 +351,11 @@ shared_ptr& operator=(unique_ptr<Other, Deletor>&& ap);
 
 ### <a name="parameters"></a>Parametreler
 
-*SP* kopyalamak için paylaşılan işaretçi.
+*SP*<br/>
+Kopyalamak için paylaşılan işaretçi.
 
-*AP* kopyalamak için otomatik işaretçi.
+*AP*<br/>
+Kopyalamak için otomatik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -441,7 +443,8 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-*PTR* bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
+*ptr*<br/>
+Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -466,17 +469,23 @@ void reset(Other *ptr, D dtor, A alloc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* bağımsız değişken işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken işaretçiyle kontrol edilen tür.
 
-*D* Silici türü.
+*D*<br/>
+Silici türü.
 
-*PTR* kopya işaretçisi.
+*ptr*<br/>
+Kopya işaretçisi.
 
-*dtor* kopyalamak için Silici.
+*dtor*<br/>
+Kopyalamak için Silici.
 
-*A* ayırıcı türü.
+*A*<br/>
+Ayırıcı türü.
 
-*ayırma* kopyalamak için ayırıcı.
+*Ayırma*<br/>
+Kopyalanacak kaynak ayırıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -581,23 +590,32 @@ shared_ptr(const unique_ptr<Other, D>& up) = delete;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer* bağımsız değişken işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken işaretçiyle kontrol edilen tür.
 
-*PTR* kopya işaretçisi.
+*ptr*<br/>
+Kopya işaretçisi.
 
-*D* Silici türü.
+*D*<br/>
+Silici türü.
 
-*A* ayırıcı türü.
+*A*<br/>
+Ayırıcı türü.
 
-*dtor* Silici.
+*dtor*<br/>
+Silici.
 
-*etmeni* ayırıcı.
+*etmeni*<br/>
+Ayırıcı.
 
-*SP* kopyalamak için akıllı işaretçi.
+*SP*<br/>
+Kopyalamak için akıllı işaretçi.
 
-*WP* zayıf işaretçi.
+*WP*<br/>
+Zayıf işaretçi.
 
-*AP* kopyalamak için otomatik işaretçi.
+*AP*<br/>
+Kopyalamak için otomatik işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -722,7 +740,8 @@ void swap(shared_ptr& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*SP* paylaşılan işaretçi ile değiştirilecek.
+*SP*<br/>
+Paylaşılan işaretçi ile değiştirilecek.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9c8ddf5941394a8979832a753ed73cfda5f0876
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 5ba798b6e67f4813e780740bae27ade69df5c189
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959130"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104231"
 ---
 # <a name="removepointer-class"></a>remove_pointer Sınıfı
 
@@ -40,7 +40,8 @@ using remove_pointer_t = typename remove_pointer<T>::type;
 
 ### <a name="parameters"></a>Parametreler
 
-*T* değiştirilecek tür.
+*T*<br/>
+Değiştirilecek tür.
 
 ## <a name="remarks"></a>Açıklamalar
 

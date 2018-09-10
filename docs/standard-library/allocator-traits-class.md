@@ -50,12 +50,12 @@ helpviewer_keywords:
 - std::allocator_traits [C++], select_on_container_copy_construction
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9bae212ec3d8edfacc7cd3afb37ab3c13dc11aef
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fb00f7205dcb470785c9682335341ca07935aae5
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38962457"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110444"
 ---
 # <a name="allocatortraits-class"></a>allocator_traits Sınıfı
 
@@ -116,11 +116,14 @@ static pointer allocate(Alloc& al, size_type count,
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
-*sayısı* ayrılacak öğe sayısı.
+*Sayısı*<br/>
+Ayrılacak öğe sayısı.
 
-*İpucu* A `const_pointer` yardımcı olan ayırıcı nesnesini isteği önce ayrılmış bir nesneye adresini bularak depolama talebi karşılamadığınızı içinde. Bir null işaretçiyse, hiçbir ipucu olarak kabul edilir.
+*İpucu*<br/>
+A `const_pointer` yardımcı olan ayırıcı nesnesini isteği önce ayrılmış bir nesneye adresini bularak depolama talebi karşılamadığınızı içinde. Bir null işaretçiyse, hiçbir ipucu olarak kabul edilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -141,11 +144,14 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
-*PTR* nesne olduğunda kendisinden oluşturulacağı konumu için bir işaretçi.
+*ptr*<br/>
+Nesnenin oluşturulması olduğu yere bir işaretçi.
 
-*args* nesne oluşturucuya geçirilen bağımsız değişkenlerin bir listesi.
+*bağımsız değişken*<br/>
+Nesne oluşturucuya geçirilen bağımsız değişkenler listesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -163,11 +169,14 @@ static void deallocate(Alloc al,
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
-*PTR* işaretçisi serbest bırakılması nesnelerin başlangıç konumu.
+*ptr*<br/>
+Serbest bırakılması nesnelerin başlangıç konumu için bir işaretçi.
 
-*sayısı* ayırması kaldırılacak nesne sayısı.
+*Sayısı*<br/>
+Serbest bırakmak nesne sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -186,9 +195,11 @@ static void destroy(Alloc& al, Uty* ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
-*PTR* nesnenin konumu için bir işaretçi.
+*ptr*<br/>
+Nesnenin konumu için bir işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -204,7 +215,8 @@ static size_type max_size(const Alloc& al);
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -220,7 +232,8 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 ### <a name="parameters"></a>Parametreler
 
-*Al* ayırıcı nesnesi.
+*Al*<br/>
+Ayırıcı nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

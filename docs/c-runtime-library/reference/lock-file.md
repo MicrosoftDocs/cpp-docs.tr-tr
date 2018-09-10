@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a7be40c729faff78c75c4ee751737a7b53592aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 705210881faed70a32c1ddd52d7257b5b5e5f161
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32400664"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107504"
 ---
 # <a name="lockfile"></a>_lock_file
 
-Kilitler bir **dosya** erişen iş parçacığı sayısı için tutarlılık sağlamak için nesne **dosya** eşzamanlı olarak nesne.
+Kilitler bir **dosya** erişen iş parçacığı için tutarlılık sağlamak için nesne **dosya** eşzamanlı olarak nesnesi.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -53,11 +53,12 @@ void _lock_file( FILE* file );
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya* dosya tanıtıcısı.
+*Dosya*<br/>
+Dosya tanıtıcısı.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**_Lock_file** işlev kilitleri **dosya** tarafından belirtilen nesne *dosya*. Temel alınan dosya tarafından kilitlenmediğinden **_lock_file**. Kullanım [_unlock_file](unlock-file.md) dosya üzerindeki kilidi serbest bırakmak için. Çağrılar **_lock_file** ve **_unlock_file** bir iş parçacığında eşlenmesi gerekir.
+**_Lock_file** işlev kilitleri **dosya** nesnesi tarafından belirtilen *dosya*. Temel alınan dosya tarafından kilitlenmediğinden **_lock_file**. Kullanım [_unlock_file](unlock-file.md) kilidini serbest bırakmak için. Çağrılar **_lock_file** ve **_unlock_file** bir iş parçacığında eşlenmesi gerekir.
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -65,7 +66,7 @@ void _lock_file( FILE* file );
 |-------------|---------------------|
 |**_lock_file**|\<stdio.h >|
 
-Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 

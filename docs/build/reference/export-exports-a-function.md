@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16ec6be15635ebfc085615015b1221231645970d
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 5063eae507ee6c83cbed2ae7fc92679098b91f36
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894800"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104625"
 ---
 # <a name="export-exports-a-function"></a>/EXPORT (İşlevi Dışarı Aktarır)
 
@@ -36,26 +36,35 @@ Bir işlev adı veya sıra veya veri, programınızı dışarı aktarır.
 
 ## <a name="remarks"></a>Açıklamalar
 
-/ Export seçeneğiyle diğer programları işlevi çağırabilirsiniz programınıza ait bir işlev verebilirsiniz. Ayrıca, verileri dışarı aktarabilirsiniz. Dışarı aktarmalar, genellikle bir DLL içinde tanımlanır.
+**/Dışarı aktarma** seçeneği programınızı diğer programları işlevi çağırabilir veya verileri dışarı aktarmak için bir işlev veya veri öğesi belirtir. Dışarı aktarmalar, genellikle bir DLL içinde tanımlanır.
 
-*GirişAdı* çağırma program tarafından kullanılacak olan işlev veya veri öğesinin adını aynıdır. `ordinal` 1 ile 65.535 aralığındaki dışarı aktarma tablosuna bir dizin belirtir; Siz belirtmezseniz `ordinal`, bağlantı bir atar. **NONAME** anahtar sözcüğü işlevin olmadan yalnızca bir sıralı, dışarı bir *GirişAdı*.
+*GirişAdı* çağırma program tarafından kullanılacak olan işlev veya veri öğesinin adını aynıdır. *Sıralı* belirtmezseniz, dizin ' % s'aralık 1 ile 65.535; dışarı aktarma tablosuna belirtir *sıralı*, bağlantı bir atar. **NONAME** anahtar sözcüğü işlevin olmadan yalnızca bir sıralı, dışarı bir *GirişAdı*.
 
 **Veri** anahtar sözcüğü, dışarı aktarılan öğesi bir veri öğesi olduğunu belirtir. Veri öğesi istemci programı kullanılarak bildirilmelidir **extern __declspec(dllimport)**.
 
-Önerilen Kullanım sırasına göre listelenmiş bir tanımını dışa aktarmak için üç yöntem vardır:
+Önerilen Kullanım sırasına göre listelenmiş bir tanımını dışarı aktarma için dört yöntemleri vardır:
 
 1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
 
-2. Bir [dışarı AKTARMALARI](../../build/reference/exports.md) .def dosyası deyimi
+1. Bir [dışarı AKTARMALARI](../../build/reference/exports.md) .def dosyası deyimi
 
-3. Bir LINK komutunu/Export belirtiminde
+1. Bir LINK komutunu/Export belirtiminde
 
-Her üç yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, yapı .exp dosyasının kullanılmadığı sürece ayrıca bir içeri aktarma kitaplığı oluşturur.
+1. A [yorum](../../preprocessor/comment-c-cpp.md) yönergesi, kaynak kodda, formun `#pragma comment(linker, "/export: definition ")`.
 
-BAĞLANTI kullanan tanımlayıcıların forms düzenlenmiş. .Obj dosyası oluşturduğunda, derleyici tanımlayıcı düzenler. Varsa *GirişAdı* bağlayıcıda ve onun için belirttiğiniz (kaynak kodunda göründüğü gibi) oluşturmak, bağlantı denemeleri adıyla eşleşecek şekilde. Benzersiz bir eşleşme bulamazsa, bağlantı bir hata iletisi verir. Kullanım [DUMPBIN](../../build/reference/dumpbin-reference.md) almak için aracı [düzenlenmiş adları](../../build/reference/decorated-names.md) bağlayıcıya belirtmek gerektiğinde bir tanımlayıcının formu.
+Bu yöntemlerin tümü, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, yapı .exp dosyasının kullanılmadığı sürece ayrıca bir içeri aktarma kitaplığı oluşturur.
+
+BAĞLANTI kullanan tanımlayıcıların forms düzenlenmiş. .Obj dosyası oluşturduğunda, derleyici tanımlayıcı düzenler. Varsa *GirişAdı* bağlayıcıda ve onun için belirttiğiniz (kaynak kodunda göründüğü gibi) oluşturmak, bağlantı denemeleri adıyla eşleşecek şekilde. Benzersiz bir eşleşme bulamazsa, bağlantı bir hata iletisi verir. Kullanım [DUMPBIN](../../build/reference/dumpbin-reference.md) almak için aracı [ile düzenlenmiş adın](../../build/reference/decorated-names.md) bağlayıcıya belirtmek gerektiğinde bir tanımlayıcının formu.
 
 > [!NOTE]
 > C tanımlayıcıları, bildirilen düzenlenmiş biçiminde belirtmeyin `__cdecl` veya `__stdcall`.
+
+Bir ve işlev adı dışarı aktarma ve derleme yapılandırmasına bağlı olarak farklı verir (örneğin, 32 bit veya 64 bit derlemelerde) olması gerekiyorsa, her yapılandırma için farklı DEF dosyaları kullanabilirsiniz. (Koşullu önişlemci yönergeleri DEF dosyaları içinde kullanılamaz.) Alternatif olarak, kullandığınız bir `#pragma comment` işlev bildiriminden önce yönerge burada gösterilen şekilde `PlainFuncName` ve adıdır ve `_PlainFuncName@4` işlev düzenlenmiş adı:
+
+```cpp
+#pragma comment(linker, "/export:PlainFuncName=_PlainFuncName@4")
+BOOL CALLBACK PlainFuncName( Things * lpParams)
+```
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 

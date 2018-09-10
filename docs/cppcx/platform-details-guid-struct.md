@@ -15,33 +15,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0aaaffb4254fc676e95f6c6bb315d5f257d64e48
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 984af1944a6181382207d33a8ee60799cfcee634
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754910"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44101841"
 ---
 # <a name="platformdetailsguid-struct"></a>Platform::details:: __guıd yapısı
-Bu yapı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-  
-ref struct __GUID;  
-```  
-  
-### <a name="remarks"></a>Açıklamalar  
- Tarayıcılarla inceledi çünkü bu yapının yalnızca bütünlük açısından sağlanır.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- `Platform`  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Meta veri:** platform.winmd  
-  
- **Namespace:** Platform::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+Bu yapı, yalnızca dahili kullanım içindir ve geliştirme için kullanılması amaçlanmamıştır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+ref struct __GUID;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Tarayıcılarla inceledi çünkü bu yapının yalnızca bütünlük açısından sağlanır.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+`Platform`
+
+### <a name="requirements"></a>Gereksinimler
+
+**Meta veri:** platform.winmd
+
+**Namespace:** Platform::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform Namespace](platform-namespace-c-cx.md)

@@ -28,16 +28,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbbab8314a038d796ebd1a13342f3054e59f3e68
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8eda76666679b133b2d5486d21cd4c8e24d1fdf3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407372"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44105089"
 ---
 # <a name="staticassert-macro"></a>_STATIC_ASSERT Makrosu
 
-Derleme zamanında bir ifade değerlendirme ve sonuç olduğunda bir hata oluştur **FALSE**.
+Derleme zamanında bir ifadeyi değerlendirir ve sonucu olduğunda bir hata oluşturmak **FALSE**.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -49,15 +49,16 @@ _STATIC_ASSERT(
 
 ### <a name="parameters"></a>Parametreler
 
-*booleanDeyimi* için sıfır olmayan hesaplar (işaretçileri dahil) ifade (**TRUE**) veya 0 (**FALSE**).
+*booleanDeyimi*<br/>
+İçin sıfır dışında değerlendirilen (işaretçileri dahil) ifade (**TRUE**) veya 0 (**FALSE**).
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu makrosu benzer [_ASSERT ve _ASSERTE makroları](assert-asserte-assert-expr-macros.md)dışında *booleanDeyimi* derleme zamanında yerine çalışma zamanında değerlendirilir. Varsa *booleanDeyimi* değerlendiren **FALSE** (0), [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
+Bu makro benzer [_ASSERT ve _ASSERTE makroları](assert-asserte-assert-expr-macros.md)dışında *booleanDeyimi* derleme zamanında yerine çalışma zamanında değerlendirilir. Varsa *booleanDeyimi* değerlendiren **FALSE** (0) [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) oluşturulur.
 
 ## <a name="example"></a>Örnek
 
-Bu örnekte, biz denetleyin olup olmadığını [sizeof](../../c-language/sizeof-operator-c.md) bir **int** büyük veya 2 bayta eşit olup [sizeof](../../c-language/sizeof-operator-c.md) bir **uzun** 1 bayttır. Program derlenmez ve onu oluşturacaktır [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) çünkü bir **uzun** 1 bayt büyük.
+Bu örnekte biz denetleyin olup olmadığını [sizeof](../../c-language/sizeof-operator-c.md) bir **int** değerden büyük veya eşittir 2 bayt ve [sizeof](../../c-language/sizeof-operator-c.md) bir **uzun** 1 bayt. Program derlenmez ve onu oluşturacaktır [derleyici hatası C2466](../../error-messages/compiler-errors-1/compiler-error-c2466.md) çünkü bir **uzun** 1 bayt büyük.
 
 ```C
 // crt__static_assert.c

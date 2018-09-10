@@ -33,12 +33,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00c23cf21b8d9c5c46976f522f837dddb941f24f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 97ac9d7e8e00e5f81d974aa84befaad99881391d
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38964216"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108765"
 ---
 # <a name="discretedistribution-class"></a>discrete_distribution Sınıfı
 
@@ -82,7 +82,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*İnt'i* tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*İnt'i*<br/>
+Tamsayı sonuç türü varsayılan olarak **int**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -209,21 +210,29 @@ explicit discrete_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*firstW* dağıtımın oluşturulması için listeden birinci yineleyicisi.
+*firstW*<br/>
+Dağıtımın oluşturulması için listeden birinci yineleyicisi.
 
-*lastW* (yineleyiciler boş bir öğenin sona kullandığından dahil) dağıtımın oluşturulması hangi listesindeki son yineleyici.
+*lastW*<br/>
+(Boş bir öğenin sona yineleyiciler kullandığından dahil) dağıtımın oluşturulması hangi listesindeki son yineleyici.
 
-*weightlist* [initializer_list](../cpp/initializers.md) ilk dağıtımın oluşturulması.
+*weightlist*<br/>
+[İnitializer_list](../cpp/initializers.md) ilk dağıtımın oluşturulması.
 
-*sayısı* dağıtım aralıktaki öğelerin sayısı. Varsa `count==0`, varsayılan oluşturucu eşdeğerdir (her zaman sıfır oluşturur).
+*Sayısı*<br/>
+Dağıtım aralıktaki öğelerin sayısı. Varsa `count==0`, varsayılan oluşturucu eşdeğerdir (her zaman sıfır oluşturur).
 
-*düşük* dağıtım aralıktaki en düşük değeri.
+*Düşük*<br/>
+Dağıtım aralıktaki en düşük değeri.
 
-*Yüksek* dağıtım aralıktaki en yüksek değeri.
+*Yüksek*<br/>
+Dağıtım aralıktaki en yüksek değeri.
 
-*weightfunc* dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
+*weightfunc*<br/>
+Dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
 
-*parametre* `param_type` dağıtımın oluşturulması için kullanılan yapısı.
+*parametre*<br/>
+`param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -269,21 +278,29 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*firstW* dağıtımın oluşturulması için listeden birinci yineleyicisi.
+*firstW*<br/>
+Dağıtımın oluşturulması için listeden birinci yineleyicisi.
 
-*lastW* (yineleyiciler boş bir öğenin sona kullandığından dahil) dağıtımın oluşturulması hangi listesindeki son yineleyici.
+*lastW*<br/>
+(Boş bir öğenin sona yineleyiciler kullandığından dahil) dağıtımın oluşturulması hangi listesindeki son yineleyici.
 
-*weightlist* [initializer_list](../cpp/initializers.md) ilk dağıtımın oluşturulması.
+*weightlist*<br/>
+[İnitializer_list](../cpp/initializers.md) ilk dağıtımın oluşturulması.
 
-*sayısı* dağıtım aralıktaki öğelerin sayısı. Varsa *sayısı* 0'dır, bu varsayılan oluşturucuya eşdeğerdir (her zaman sıfır oluşturur).
+*Sayısı*<br/>
+Dağıtım aralıktaki öğelerin sayısı. Varsa *sayısı* 0'dır, bu varsayılan oluşturucuya eşdeğerdir (her zaman sıfır oluşturur).
 
-*düşük* dağıtım aralıktaki en düşük değeri.
+*Düşük*<br/>
+Dağıtım aralıktaki en düşük değeri.
 
-*Yüksek* dağıtım aralıktaki en yüksek değeri.
+*Yüksek*<br/>
+Dağıtım aralıktaki en yüksek değeri.
 
-*weightfunc* dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
+*weightfunc*<br/>
+Dağıtım için olasılık işlevini temsil eden nesne. Parametre ve dönüş değeri hem dönüştürülebilir olmalıdır **çift**.
 
-*doğru* `param_type` için karşılaştırılacak nesne.
+*sağ*<br/>
+`param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b65cfbe156ba462af9e87abf82d63023cfdc44b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2c9620003c1f57af966628dda2a5a0ab8352c6d2
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38957444"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107334"
 ---
 # <a name="discardblockengine-class"></a>discard_block_engine Sınıfı
 
@@ -36,11 +36,14 @@ class discard_block_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*Altyapısı* temel altyapısı türü.
+*Altyapısı*<br/>
+Temel altyapısı türü.
 
-*P* **bloğu boyutunu**. Değerleri blokların sayısı.
+*P*<br/>
+**Bloğu boyutunu**. Değerleri blokların sayısı.
 
-*R* **kullanılan blok**. Her bir blok içinde kullanılan değerleri sayısı. Rest atılır (`P` - `R`). **Önkoşul**: `0 < R ≤ P`
+*R*<br/>
+**Kullanılan blok**. Her bir blok içinde kullanılan değerleri sayısı. Rest atılır (`P` - `R`). **Önkoşul**: `0 < R ≤ P`
 
 ## <a name="members"></a>Üyeler
 

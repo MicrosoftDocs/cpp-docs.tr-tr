@@ -15,39 +15,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62d531418e4729c34907cb65d446f89bfa60fb63
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 54959b293752ac0453ba383f86ab225e0b45e471
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754715"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107009"
 ---
 # <a name="platformmetadatadefaultmemberattribute-attribute"></a>Platform::metadata:: DefaultMemberAttribute özniteliği
-Birkaç olası aşırı yüklenmiş işlevleri çağırmak için tercih edilen işlev gösterir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-  
-public ref class DefaultMember abstract : Attribute  
-```  
-  
-## <a name="inheritance"></a>Devralma  
- [Platform::Object](../cppcx/platform-object-class.md)   
-  
- [Platform::metadata:: attribute](../cppcx/platform-metadata-attribute-attribute.md)  
-  
-### <a name="remarks"></a>Açıklamalar  
- Bir JavaScript uygulaması tarafından kullanılan bir yöntem için DefaultMember özniteliği uygulayın.  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Desteklenen en düşük istemci:** Windows 8  
-  
- **Sunucu desteklenen en düşük:** Windows Server 2012  
-  
- **Namespace:** Platform::Metadata  
-  
- **Meta veri:** platform.winmd  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)
+
+Birkaç olası aşırı yüklenmiş işlevleri çağırmak için tercih edilen işlev gösterir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+public ref class DefaultMember abstract : Attribute
+```
+
+## <a name="inheritance"></a>Devralma
+
+[Platform::Object](../cppcx/platform-object-class.md)
+
+[Platform::metadata:: attribute](../cppcx/platform-metadata-attribute-attribute.md)
+
+### <a name="remarks"></a>Açıklamalar
+
+Bir JavaScript uygulaması tarafından kullanılan bir yöntem için DefaultMember özniteliği uygulayın.
+
+### <a name="requirements"></a>Gereksinimler
+
+**Desteklenen en düşük istemci:** Windows 8
+
+**Sunucu desteklenen en düşük:** Windows Server 2012
+
+**Namespace:** Platform::Metadata
+
+**Meta veri:** platform.winmd
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform::Metadata Ad Alanı](../cppcx/platform-metadata-namespace.md)

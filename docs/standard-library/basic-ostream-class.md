@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be74641b229fbf888504df72a97f8a5c025d9b7b
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f30e2b226524e1d4a62c9f8cc950f4dd30846861
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38963722"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44100982"
 ---
 # <a name="basicostream-class"></a>basic_ostream Sınıfı
 
@@ -50,9 +50,11 @@ class basic_ostream : virtual public basic_ios<Elem, Tr>
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* A `char_type`.
+*Elem*<br/>
+A `char_type`.
 
-*Tr* karakter `traits_type`.
+*tr*<br/>
+Karakter `traits_type`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -63,16 +65,16 @@ iostate state = goodbit;
 const sentry ok(*this);
 
 if (ok)
- {try
- {<convert and insert elements
+{try
+{<convert and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 width(0);
@@ -91,16 +93,16 @@ const sentry ok(*this);
 if (!ok)
     state |= badbit;
 else
- {try
- {<obtain and insert elements
+{try
+{<obtain and insert elements
     accumulate flags in state> }
     catch (...)
- {try
- {setstate(badbit);
+{try
+{setstate(badbit);
 
 }
     catch (...)
- {}
+{}
     if ((exceptions()& badbit) != 0)
     throw; }}
 setstate(state);
@@ -161,11 +163,14 @@ basic_ostream(basic_ostream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf* türünde bir nesne [basic_streambuf](../standard-library/basic-streambuf-class.md).
+*strbuf*<br/>
+Bir nesne türü [basic_streambuf](../standard-library/basic-streambuf-class.md).
 
-*_Isstd* **true** bir standart akışa; bu ise, aksi takdirde, **false**.
+*_Isstd*<br/>
+**doğru** bir standart akışa; bu ise, aksi takdirde, **false**.
 
-*doğru* türü bir nesneye bir rvalue başvurusuna `basic_ostream`.
+*sağ*<br/>
+Türü bir nesneye bir rvalue başvurusuna `basic_ostream`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -242,11 +247,14 @@ basic_ostream<Elem, Tr>& operator<<(const void* val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Pfn* işlev işaretçisi.
+*pfn*<br/>
+Bir işlev işaretçisi.
 
-*strbuf* bir işaretçi bir `stream_buf` nesne.
+*strbuf*<br/>
+Bir işaretçi bir `stream_buf` nesne.
 
-*VAL* akışa yazmak için bir öğe.
+*VAL*<br/>
+Akışa yazmak için bir öğe.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -360,7 +368,8 @@ basic_ostream& operator=(basic_ostream&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bir `rvalue` başvurusu bir `basic_ostream` nesne.
+*sağ*<br/>
+Bir `rvalue` başvurusu bir `basic_ostream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -376,7 +385,8 @@ basic_ostream<Elem, Tr>& put(char_type _Ch);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Ch* bir karakter.
+*_Ch*<br/>
+Bir karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -419,11 +429,14 @@ basic_ostream<Elem, Tr>& seekp(off_type _Off, ios_base::seekdir _Way);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos* akışta konumu.
+*_Pos*<br/>
+Akışta konumu.
 
-*_Off* göreli uzaklık *_Way*.
+*_Off*<br/>
+Göreli uzaklık *_Way*.
 
-*_Way* birini [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) numaralandırma.
+*_Way*<br/>
+Aşağıdakilerden birini [ios_base::seekdir](../standard-library/ios-base-class.md#seekdir) numaralandırma.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -485,7 +498,8 @@ void swap(basic_ostream& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* başvuru bir `basic_ostream` nesne.
+*sağ*<br/>
+Bir başvuru bir `basic_ostream` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -521,9 +535,11 @@ basic_ostream<Elem, Tr>& write(const char_type* str, streamsize count);
 
 ### <a name="parameters"></a>Parametreler
 
-*sayısı* akışa koymak karakter sayısı.
+*Sayısı*<br/>
+Akışa koymak karakter sayısı.
 
-*str* akışa koymak için karakter.
+*str*<br/>
+Akışa koymak için karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -13,33 +13,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86d3a6b839b51f9398a2c2ab6b4942e0f728fed6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 699ccd3bf97df9e278d101e23ccd8e4dbc3cf323
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753860"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44104030"
 ---
 # <a name="platformcollectionsdetails-namespace"></a>Platform::Collections:: details Namespace
-Bu ad alanı destekler `Platform` altyapı ve doğrudan kodunuzdan kullanılmaya yönelik değildir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-  
-namespace Platform {  namespace Collections {    namespace Details {}}}  
-```  
-  
-### <a name="members"></a>Üyeler  
- Bu ad alanının üyeleri collection.h içinde tanımlanır ve Nesne Tarayıcısı'nda gösterilmez.  
-  
-## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
- [Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)  
-  
-### <a name="requirements"></a>Gereksinimler  
- **Başlık:** Collection.h  
-  
- **Namespace:** Platform::Collection::Details  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Platform Namespace](platform-namespace-c-cx.md)
+
+Bu ad alanı destekler `Platform` altyapı ve doğrudan kodunuzdan kullanılmaya yönelik değildir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+namespace Platform {  namespace Collections {    namespace Details {}}}
+```
+
+### <a name="members"></a>Üyeler
+
+Bu ad alanının üyeleri collection.h içinde tanımlanır ve Nesne Tarayıcısı'nda gösterilmez.
+
+## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
+
+[Platform::Collections Ad Alanı](../cppcx/platform-collections-namespace.md)
+
+### <a name="requirements"></a>Gereksinimler
+
+**Başlık:** Collection.h
+
+**Namespace:** Platform::Collection::Details
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Platform Namespace](platform-namespace-c-cx.md)

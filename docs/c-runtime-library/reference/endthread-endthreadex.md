@@ -40,12 +40,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2bed0b93b2c9643a19aa8fd97c0e52da2ba1f8be
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8e380b3d39d20806b63452f0d3093d9853170c26
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43198796"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44109751"
 ---
 # <a name="endthread-endthreadex"></a>_endthread, _endthreadex
 
@@ -62,7 +62,8 @@ void _endthreadex(
 
 ### <a name="parameters"></a>Parametreler
 
-*retval* iş parçacığı çıkış kodu.
+*retval*<br/>
+İş parçacığı çıkış kodu.
 
 ## <a name="remarks"></a>Açıklamalar
 

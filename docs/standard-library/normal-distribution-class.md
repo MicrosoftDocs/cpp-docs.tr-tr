@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c92b24dbd5ccfbd308cb1b52dee7347f1df1e4
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ee9e6af44c77c16099dc5e30c78ac4a5f39aa54a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959868"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108553"
 ---
 # <a name="normaldistribution-class"></a>normal_distribution Sınıfı
 
@@ -81,7 +81,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*RealType* kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*RealType*<br/>
+Kayan noktalı bir sonuç türü varsayılan olarak **çift**. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -208,11 +209,14 @@ explicit normal_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*Ortalama* `mean` dağıtım parametresi.
+*Ortalama*<br/>
+`mean` Dağıtım parametresi.
 
-*stddev* `stddev` dağıtım parametresi.
+*stddev*<br/>
+`stddev` Dağıtım parametresi.
 
-*parametre* dağıtımın oluşturulması için kullanılan parametre yapısı.
+*parametre*<br/>
+Dağıtımın oluşturulması için kullanılan parametre yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -239,11 +243,14 @@ struct param_type {
 ```
 ### <a name="parameters"></a>Parametreler
 
-*Ortalama* `mean` dağıtım parametresi.
+*Ortalama*<br/>
+`mean` Dağıtım parametresi.
 
-*stddev* `stddev` dağıtım parametresi.
+*stddev*<br/>
+`stddev` Dağıtım parametresi.
 
-*doğru* `param_type` karşılaştırmak için kullanılan yapısı.
+*sağ*<br/>
+`param_type` Karşılaştırmak için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
 

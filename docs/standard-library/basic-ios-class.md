@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28854866824b1750fb1887d5e822d2165034f687
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3abc3c08b46577f7d59b2831a68ded812a5da60a
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38956849"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44110024"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 
@@ -86,9 +86,11 @@ class basic_ios : public ios_base
 
 ### <a name="parameters"></a>Parametreler
 
-*Elem* bir tür.
+*Elem*<br/>
+Bir tür.
 
-*Nitelikler* türünde bir değişken `char_traits`.
+*Nitelikler*<br/>
+Türünde bir değişken `char_traits`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -202,7 +204,8 @@ basic_ios();
 
 ### <a name="parameters"></a>Parametreler
 
-*SB* giriş veya çıkış öğelerini depolamak için standart arabellek.
+*sb*<br/>
+Giriş veya çıkış öğelerini depolamak için standart bir arabellek.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -256,7 +259,8 @@ const basic_ios<Elem, Traits>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* bayrakları kopyalamak istediğiniz akış.
+*sağ*<br/>
+Bayrakları kopyalamak istediğiniz akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -338,7 +342,8 @@ void exceptions(io_state Newexcept);
 
 ### <a name="parameters"></a>Parametreler
 
-*Newexcept* bir özel durum istediğiniz bayrakları.
+*Newexcept*<br/>
+Özel durum istediğiniz bayrakları.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -426,7 +431,8 @@ char_type fill(char_type Char);
 
 ### <a name="parameters"></a>Parametreler
 
-*Char* doldurma karakteri olarak istediğiniz karakteri.
+*Char*<br/>
+Doldurma karakteri olarak istediğiniz karakteri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -489,7 +495,8 @@ locale imbue(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*Loc* bir yerel ayar dizesi.
+*LOC*<br/>
+Bir yerel ayar dizesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -531,9 +538,11 @@ void init(basic_streambuf<Elem,Traits>* _Sb, bool _Isstd = false);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sb* giriş veya çıkış öğelerini depolamak için standart arabellek.
+*_Sb*<br/>
+Giriş veya çıkış öğelerini depolamak için standart bir arabellek.
 
-*_Isstd* bir standart akışa olup olmadığını belirtir.
+*_Isstd*<br/>
+Bir standart akışa olup olmadığını belirtir.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -577,7 +586,8 @@ void move(basic_ios&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `ios_base` değerlerinden taşımak için nesne.
+*sağ*<br/>
+`ios_base` Değerlerinden taşımak için nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -593,9 +603,11 @@ char narrow(char_type Char, char Default = '\0') const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Char* **char** dönüştürülecek.
+*Char*<br/>
+**Char** dönüştürülecek.
 
-*Varsayılan* **char** eşdeğeri bulunursa döndürülmesini istediğiniz.
+*Default*<br/>
+**Char** eşdeğeri bulunursa döndürülmesini istediğiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -726,7 +738,8 @@ basic_streambuf<Elem, Traits>* _Sb);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sb* bir akış.
+*_Sb*<br/>
+Bir akış.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -817,7 +830,8 @@ void setstate(iostate _State);
 
 ### <a name="parameters"></a>Parametreler
 
-*Duru_m* ayarlamak için ek bayraklar.
+*Duru_m*<br/>
+Ayarlamak için ek bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -866,7 +880,8 @@ basic_streambuf<Elem, Tr>* strbuf)
 
 ### <a name="parameters"></a>Parametreler
 
-*strbuf* akış arabelleğinin Okuma arabelleği olacak.
+*strbuf*<br/>
+Okuma arabelleği olacak akış arabelleği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -884,7 +899,8 @@ basic_ostream<Elem, Traits>* str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str* bir akış.
+*str*<br/>
+Bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -930,7 +946,8 @@ char_type widen(char Char) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Char* dönüştürülecek karakter.
+*Char*<br/>
+Dönüştürülecek karakter.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -971,7 +988,8 @@ void swap(basic_ios&& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*doğru* `basic_ios` değerleri değişimi için kullanılan nesne.
+*sağ*<br/>
+`basic_ios` Değerleri değişimi için kullanılan nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

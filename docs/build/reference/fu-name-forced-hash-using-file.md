@@ -20,48 +20,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a92e8d30d2c15ac07bc5a6ff3e6438da46438674
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: acf4afebc7288a953a0f8785e1f18097c21d71e3
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597507"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44107410"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU (Zorlanan #using Dosyasını Adlandır)
-Alternatif dosya adı olarak kullanabileceğiniz bir derleyici seçeneği [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md) kaynak kodundaki.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/FU file  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `file`  
- Bu derlemeye başvurmak için meta veri dosyası belirtir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- /FU anahtarı yalnızca bir dosya adı alır. Birden çok dosyayı belirtmek için her biri ile /FU kullanın.  
-  
- C + kullanıyorsanız +/ CLI ve kullanmak için meta verileri başvuru [arkadaş derlemeleri](../../dotnet/friend-assemblies-cpp.md) özelliğini kullanamaz **/FU**. Kullanarak kod meta verilerde başvurmalıdır `#using`— ile birlikte `[as friend]` özniteliği. Arkadaş derlemeleri desteklenmez Visual C++ bileşeni uzantılarında C + +/ CX.  
-  
- Bir derleme veya modül için ortak dil çalışma zamanı (CLR) oluşturma hakkında daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). C + oluşturma hakkında daha fazla bilgi için +/ CX'deki bkz [uygulamaları ve kitaplıkları oluşturmak](../../cppcx/building-apps-and-libraries-c-cx.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **C/C++** klasör.  
-  
-3.  Seçin **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **zorla #using** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedUsingFiles%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Alternatif dosya adı olarak kullanabileceğiniz bir derleyici seçeneği [#using yönergesi](../../preprocessor/hash-using-directive-cpp.md) kaynak kodundaki.
+
+## <a name="syntax"></a>Sözdizimi
+
+> **/FU** *dosyası*
+
+## <a name="arguments"></a>Arguments
+
+*Dosya*<br/>
+Bu derlemeye başvurmak için meta veri dosyası belirtir.
+
+## <a name="remarks"></a>Açıklamalar
+
+/FU anahtarı yalnızca bir dosya adı alır. Birden çok dosyayı belirtmek için her biri ile /FU kullanın.
+
+C + kullanıyorsanız +/ CLI ve kullanmak için meta verileri başvuru [arkadaş derlemeleri](../../dotnet/friend-assemblies-cpp.md) özelliğini kullanamaz **/FU**. Kullanarak kod meta verilerde başvurmalıdır `#using`— ile birlikte `[as friend]` özniteliği. Arkadaş derlemeleri desteklenmez Visual C++ bileşeni uzantılarında C + +/ CX.
+
+Bir derleme veya modül için ortak dil çalışma zamanı (CLR) oluşturma hakkında daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md). C + oluşturma hakkında daha fazla bilgi için +/ CX'deki bkz [uygulamaları ve kitaplıkları oluşturmak](../../cppcx/building-apps-and-libraries-c-cx.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri** > **C/C++** > **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **zorla #using** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedUsingFiles%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

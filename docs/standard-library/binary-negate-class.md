@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f54f036c6e647c3f04bb202b68109e227061bf7a
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 58d71ef5d3b2b50ec9d51668e4420c99ef9f3b17
+ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38961928"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44108848"
 ---
 # <a name="binarynegate-class"></a>binary_negate Sınıfı
 
@@ -44,11 +44,14 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*FUNC* negatif için ikili fonksiyon.
+*FUNC*<br/>
+Negatif ikili fonksiyon.
 
-*Sol* negatif için ikili fonksiyon sol işleneni.
+*Sol*<br/>
+Negatif için ikili fonksiyon sol işleneni.
 
-*doğru* negatif için ikili fonksiyon sağ işleneni.
+*sağ*<br/>
+Negatif için ikili fonksiyon sağ işleneni.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
