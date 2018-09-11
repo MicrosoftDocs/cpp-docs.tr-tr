@@ -15,12 +15,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec3509b71d78221c3e15607d34f674fc38d9f635
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 2d3b238b9a5bc01fa3ee053acdb3c7c84b95df71
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130995"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44385014"
 ---
 # <a name="qspectre"></a>/ Qspectre
 
@@ -44,7 +44,7 @@ Kodunuzu bir güven sınırı aştığında veri çalışır sonra kullanmanız�
 
 ### <a name="availability"></a>Kullanılabilirlik
 
-**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 ve şirket veya 23 Ocak 2018'den sonra yapılan tüm güncelleştirmeler için Microsoft Visual C++ Derleyicileri (MSVC) kullanılabilir.
+**/Qspectre** seçeneği, Visual Studio 2017 sürüm 15.5.5 ve şirket veya 23 Ocak 2018'den sonra yapılan tüm güncelleştirmeler için Microsoft Visual C++ Derleyicileri (MSVC) kullanılabilir. Visual Studio yükleyicisi, derleyici güncelleştirilecek ve tek tek bileşenleri olarak Spectre azaltılabilir kitaplıklarını yüklemek için kullanın. **/Qspectre** seçenek, ayrıca bir düzeltme eki Visual Studio 2015 güncelleştirme 3'te kullanılabilir. Daha fazla bilgi için [KB 4338871](https://support.microsoft.com/help/4338871).
 
 Visual Studio 2017 sürüm 15.5 ve tüm önizlemeleri Visual Studio'nun sürüm 15.6 zaten belgelenmemiş bir seçenek dahil tüm sürümlerini **/d2guardspecload**, yani ilk davranışını eşdeğer   **/qspectre**. Kullanabileceğiniz **/d2guardspecload** derleyicisinin bu sürümü kodunuzda aynı risk azaltma işlemleri uygulamak için. Yapınızı kullanmak için lütfen güncelleştirme **/qspectre** seçeneği; destekleyen kapsayıcılar içinde **/qspectre** seçeneği derleyicinin sonraki sürümlerde yeni risk azaltma işlemleri de destekleyebilir.
 

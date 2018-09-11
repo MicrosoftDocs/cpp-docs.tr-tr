@@ -1,7 +1,7 @@
 ---
 title: match_results sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47efe412dc1e9eb1fa2e68b9f85baa3c7852e8ae
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: bf10da4c7a2662e7df1d3d4aefdbedbdd7cb0831
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102570"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44385027"
 ---
 # <a name="matchresults-class"></a>match_results Sınıfı
 
@@ -30,44 +30,11 @@ Bir dizi alt eşleşmelerin tutar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```cpp
-class match_results {
-   public:
-   explicit match_results(const Alloc& alloc = Alloc());
-   match_results(const match_results& right);
-   match_results& operator=(const match_results& right);
-   difference_type position(size_type sub = 0) const;
-   difference_type length(size_type sub = 0) const;
-   string_type str(size_type sub = 0) const;
-   const_reference operator[](size_type n) const;
-   const_reference prefix() const;
-   const_reference suffix() const;
-   const_iterator begin() const;
-   const_iterator end() const;
-   template <class OutIt>
-   OutIt format(OutIt out,
-   const string_type& fmt, match_flag_type flags = format_default) const;
-   string_type format(const string_type& fmt,
-   match_flag_type flags = format_default) const;
-   allocator_type get_allocator() const;
-   void swap(const match_results& other) throw();
-   size_type size() const;
-   size_type max_size() const;
-   bool empty() const;
-   typedef sub_match<BidIt>
-   value_type;
-   typedef const typename Alloc::const_reference const_reference;
-   typedef const_reference reference;
-   typedef T0 const_iterator;
-   typedef const_iterator iterator;
-   typedef typename iterator_traits<BidIt>::difference_type difference_type;
-   typedef typename Alloc::size_type size_type;
-   typedef Alloc allocator_type;
-   typedef typename iterator_traits<BidIt>::value_type char_type;
-   typedef basic_string<char_type> string_type;
-   };
+template <class BidIt, class Alloc>
+class match_results
 ```
 
-### <a name="parameters"></a>Parametreler
+## <a name="parameters"></a>Parametreler
 
 *BidIt*<br/>
 Alt eşleşmeleri için yineleyici türü.
@@ -79,11 +46,157 @@ Depolamayı yönetmek için bir ayırıcı türü.
 
 Şablon sınıfı türü öğeler değiştirilebilir olmayan bir dizi denetleyen bir nesneyi tanımlayan `sub_match<BidIt>` bir normal ifade araması tarafından oluşturulur. Her öğenin o öğe için karşılık gelen yakalama grubuyla eşleşen alt diziyi işaret eder.
 
+### <a name="constructors"></a>Oluşturucular
+
+|Oluşturucu|Açıklama|
+|-|-|
+|[match_results](#match_results)|Bir nesne oluşturur.|
+
+### <a name="typedefs"></a>Tür tanımları
+
+|Tür adı|Açıklama|
+|-|-|
+|[allocator_type](#allocator_type)|Depolamayı yönetmek için bir ayırıcı türü.|
+|[char_type](#char_type)|Öğenin türü.|
+|[const_iterator](#const_iterator)|Alt eşleşmeleri için const yineleyici türü.|
+|[const_reference](#const_reference)|Bir öğe const başvuru türü.|
+|[difference_type](#difference_type)|Bir yineleyicinin fark türü.|
+|[Yineleyici](#iterator)|Alt eşleşmeleri için yineleyici türü.|
+|[Başvuru](#reference)|Bir öğe başvurusu türü.|
+|[size_type](#size_type)|Alt eşleşme sayısı türü.|
+|[string_type](#string_type)|Bir dize türü.|
+|[value_type](#value_type)|Bir alt eşleşme türü.|
+
+### <a name="member-functions"></a>Üye işlevleri
+
+|Üye işlevi|Açıklama|
+|-|-|
+|[başlayın](#begin)|Alt eşleşme dizisi başlangıcını belirtir.|
+|[boş](#empty)|Hiçbir alt eşleşmelerin sınar.|
+|[Son](#end)|Alt eşleşme dizinin sonuna belirler.|
+|[Biçim](#format)|Alt eşleşmeleri biçimlendirir.|
+|[get_allocator](#get_allocator)|Depolanan ayırıcı döndürür.|
+|[Uzunluğu](#length)|Bir alt eşleşme uzunluğunu döndürür.|
+|[max_size](#max_size)|Alt eşleşmeleri en büyük sayısını alır.|
+|[Konumu](#position)|Başlangıç uzaklığı bir alt alın.|
+|[prefix](#prefix)|İlk alt eşleşme önce dizisini alır.|
+|[Boyutu](#size)|Alt eşleşmelerin sayısını sayar.|
+|[str](#str)|Bir alt eşleşme döndürür.|
+|[suffix](#suffix)|Sonra son alt eşleşme dizisini alır.|
+|[değiştirme](#swap)|İki match_results nesneleri değiştirir.|
+
+### <a name="operators"></a>İşleçler
+
+|İşleç|Açıklama|
+|-|-|
+|[operator=](#op_eq)|Match_results nesne kopyalayın.|
+|[operator]](#op_at)|Bir alt nesneye erişim.|
+
 ## <a name="requirements"></a>Gereksinimler
 
 **Başlık:** \<regex >
 
 **Namespace:** std
+
+## <a name="example"></a>Örnek
+
+```cpp
+// std__regex__match_results.cpp
+// compile with: /EHsc
+#include <regex>
+#include <iostream>
+
+int main()
+{
+    std::regex rx("c(a*)|(b)");
+    std::cmatch mr;
+
+    std::regex_search("xcaaay", mr, rx);
+
+    std::cout << "prefix: matched == " << std::boolalpha
+        << mr.prefix().matched
+        << ", value == " << mr.prefix() << std::endl;
+    std::cout << "whole match: " << mr.length() << " chars, value == "
+        << mr.str() << std::endl;
+    std::cout << "suffix: matched == " << std::boolalpha
+        << mr.suffix().matched
+        << ", value == " << mr.suffix() << std::endl;
+    std::cout << std::endl;
+
+    std::string fmt("\"c(a*)|(b)\" matched \"$&\"\n"
+        "\"(a*)\" matched \"$1\"\n"
+        "\"(b)\" matched \"$2\"\n");
+    std::cout << mr.format(fmt) << std::endl;
+    std::cout << std::endl;
+
+    // index through submatches
+    for (size_t n = 0; n < mr.size(); ++n)
+    {
+        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
+            << mr[n].matched <<
+            " at position " << mr.position(n) << std::endl;
+        std::cout << "  " << mr.length(n)
+            << " chars, value == " << mr[n] << std::endl;
+    }
+    std::cout << std::endl;
+
+    // iterate through submatches
+    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
+    {
+        std::cout << "next submatch: matched == " << std::boolalpha
+            << it->matched << std::endl;
+        std::cout << "  " << it->length()
+            << " chars, value == " << *it << std::endl;
+    }
+    std::cout << std::endl;
+
+    // other members
+    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
+
+    std::cmatch::allocator_type al = mr.get_allocator();
+    std::cmatch::string_type str = std::string("x");
+    std::cmatch::size_type maxsiz = mr.max_size();
+    std::cmatch::char_type ch = 'x';
+    std::cmatch::difference_type dif = mr.begin() - mr.end();
+    std::cmatch::const_iterator cit = mr.begin();
+    std::cmatch::value_type val = *cit;
+    std::cmatch::const_reference cref = val;
+    std::cmatch::reference ref = val;
+
+    maxsiz = maxsiz;  // to quiet "unused" warnings
+    if (ref == cref)
+        ch = ch;
+    dif = dif;
+
+    return (0);
+}
+```
+
+```Output
+prefix: matched == true, value == x
+whole match: 4 chars, value == caaa
+suffix: matched == true, value == y
+
+"c(a*)|(b)" matched "caaa"
+"(a*)" matched "aaa"
+"(b)" matched ""
+
+submatch[0]: matched == true at position 1
+  4 chars, value == caaa
+submatch[1]: matched == true at position 2
+  3 chars, value == aaa
+submatch[2]: matched == false at position 6
+  0 chars, value ==
+
+next submatch: matched == true
+  4 chars, value == caaa
+next submatch: matched == true
+  3 chars, value == aaa
+next submatch: matched == false
+  0 chars, value ==
+  
+empty == false
+```
 
 ## <a name="allocator_type"></a>  match_results::allocator_type
 
@@ -97,115 +210,6 @@ typedef Alloc allocator_type;
 
 Typedef şablon bağımsız değişkeni eşanlamlıdır *ayırma*.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_allocator_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="begin"></a>  match_results::Begin
 
 Alt eşleşme dizisi başlangıcını belirtir.
@@ -217,115 +221,6 @@ const_iterator begin() const;
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi bu noktalarda ilk öğe dizisi (veya yalnızca boş bir dizi bitiminin ötesinde) bir rastgele erişim yineleyici döndürür.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_begin.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="char_type"></a>  match_results::char_type
 
@@ -339,115 +234,6 @@ typedef typename iterator_traits<BidIt>::value_type char_type;
 
 Typedef türü eşanlamlıdır `iterator_traits<BidIt>::value_type`, aranan karakter dizisi ' öğe türü.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_char_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="const_iterator"></a>  match_results::const_iterator
 
 Alt eşleşmeleri için const yineleyici türü.
@@ -459,115 +245,6 @@ typedef T0 const_iterator;
 ### <a name="remarks"></a>Açıklamalar
 
 Typedef, denetlenen dizi için sabit bir rastgele erişim yineleyici olarak hizmet verebilen bir nesneyi tanımlar.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_const_iterator.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="const_reference"></a>  match_results::const_reference
 
@@ -581,115 +258,6 @@ typedef const typename Alloc::const_reference const_reference;
 
 Typedef değerinin denetlenen dizideki bir öğe için sabit bir başvuru olarak hizmet verebilen bir nesneyi tanımlar.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_const_reference.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="difference_type"></a>  match_results::difference_type
 
 Bir yineleyicinin fark türü.
@@ -701,115 +269,6 @@ typedef typename iterator_traits<BidIt>::difference_type difference_type;
 ### <a name="remarks"></a>Açıklamalar
 
 Typedef türü eşanlamlıdır `iterator_traits<BidIt>::difference_type`; değerinin denetlenen dizideki öğeler işaret herhangi iki yineleyici arasındaki farkı temsil edebilen bir nesneyi tanımlar.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_difference_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="empty"></a>  match_results::empty
 
@@ -823,115 +282,6 @@ bool empty() const;
 
 Üye işlevi, yalnızca normal ifade araması başarısız olduysa true değerini döndürür.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_empty.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="end"></a>  match_results::End
 
 Alt eşleşme dizinin sonuna belirler.
@@ -944,115 +294,6 @@ const_iterator end() const;
 
 Üye işlevi, dizinin sonuna hemen ötesine işaret eden bir yineleyici döndürür.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_end.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="format"></a>  match_results::Format
 
 Alt eşleşmeleri biçimlendirir.
@@ -1061,7 +302,6 @@ Alt eşleşmeleri biçimlendirir.
 template <class OutIt>
 OutIt format(OutIt out,
     const string_type& fmt, match_flag_type flags = format_default) const;
-
 
 string_type format(const string_type& fmt, match_flag_type flags = format_default) const;
 ```
@@ -1086,115 +326,6 @@ Her üye işlevi biçiminin denetiminde biçimlendirilmiş metin üretir *fmt*. 
 
 Biçimlendirilmiş metin oluşturmak için. Biçim dizesindeki değişmez metin normalde hedef dizisine kopyalanır. Biçim dizesindeki her çıkış dizisi temsil ettiği metin tarafından değiştirilir. Kopyalama ve değiştirmeyle ilgili ayrıntılar işleve geçirilen biçim bayrakları tarafından denetlenir.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_format.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="get_allocator"></a>  match_results::get_allocator
 
 Depolanan ayırıcı döndürür.
@@ -1207,115 +338,6 @@ allocator_type get_allocator() const;
 
 Üye işlevi tarafından kullanılan ayırıcı nesnesinin bir kopyasını döndürür `*this` ayırmak için kendi `sub_match` nesneleri.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_get_allocator.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="iterator"></a>  match_results::iterator
 
 Alt eşleşmeleri için yineleyici türü.
@@ -1327,115 +349,6 @@ typedef const_iterator iterator;
 ### <a name="remarks"></a>Açıklamalar
 
 Denetlenen dizi için bir rastgele erişim yineleyici olarak hizmet verebilen bir nesneyi tanımlayan bir tür.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_iterator.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="length"></a>  match_results::length
 
@@ -1453,115 +366,6 @@ Alt eşleşme dizini.
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevinin döndürdüğü `(*this)[sub].length()`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_length.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="match_results"></a>  match_results::match_results
 
@@ -1585,115 +389,6 @@ Kopyalanacak match_results nesne.
 
 İlk Oluşturucu yapıları bir `match_results` hiçbir alt eşleşmelerin tutan nesne. İkinci oluşturucu yapıları bir `match_results` bir kopyasını nesnesini *doğru*.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_construct.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="max_size"></a>  match_results::max_size
 
 Alt eşleşmeleri en büyük sayısını alır.
@@ -1705,115 +400,6 @@ size_type max_size() const;
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi, nesneyi de denetleyebilir kastetmek uzunluğunu döndürür.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_max_size.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="op_eq"></a>  match_results::operator =
 
@@ -1832,115 +418,6 @@ Kopyalanacak match_results nesne.
 
 Üye işleci tarafından denetlenen dizinin değiştirir `*this` tarafından denetlenen dizinin bir kopyasını *doğru*.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_operator_as.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="op_at"></a>  match_results::operator]
 
 Bir alt nesneye erişim.
@@ -1957,115 +434,6 @@ Alt eşleşme dizini.
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi öğeye bir başvuru döndürür *n* denetlenen dizi ya da boş bir başvuru `sub_match` , nesne `size() <= n` veya yakalama grubu *n* eşleşmenin bir parçası değildi.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_operator_br.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="position"></a>  match_results::Position
 
@@ -2084,115 +452,6 @@ Alt eşleşme dizini.
 
 Üye işlevinin döndürdüğü `std::distance(prefix().first, (*this)[sub].first)`, diğer bir deyişle, ilk karakter, alt eşleşme için hedef dizideki ilk karakteri uzaklığı işaret edilen öğe tarafından `n` denetlenen dizinin.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_position.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="prefix"></a>  match_results::prefix
 
 İlk alt eşleşme önce dizisini alır.
@@ -2204,115 +463,6 @@ const_reference prefix() const;
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden hedef dizideki başlangıcında başlar ve biter karakter dizisi `(*this)[0].first`, diğer bir deyişle, eşleşen alt diziyi önündeki metne işaret eder.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_prefix.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="reference"></a>  match_results::Reference
 
@@ -2326,115 +476,6 @@ typedef const_reference reference;
 
 Türe ilişkin bir eşanlam türüdür `const_reference`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_reference.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="size"></a>  match_results::size
 
 Alt eşleşmelerin sayısını sayar.
@@ -2447,115 +488,6 @@ size_type size() const;
 
 Üye araması için kullanılan normal ifadedeki yakalama gruplarının sayısı'birden fazla döndürür bir işlev veya arama yaptıysanız sıfır.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_size.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="size_type"></a>  match_results::size_type
 
 Alt eşleşme sayısı türü.
@@ -2567,115 +499,6 @@ typedef typename Alloc::size_type size_type;
 ### <a name="remarks"></a>Açıklamalar
 
 Türe ilişkin bir eşanlam türüdür `Alloc::size_type`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_size_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="str"></a>  match_results::Str
 
@@ -2694,115 +517,6 @@ Alt eşleşme dizini.
 
 Üye işlevinin döndürdüğü `string_type((*this)[sub])`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_str.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="string_type"></a>  match_results::string_type
 
 Bir dize türü.
@@ -2815,115 +529,6 @@ typedef basic_string<char_type> string_type;
 
 Türe ilişkin bir eşanlam türüdür `basic_string<char_type>`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_string_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="suffix"></a>  match_results::suffix
 
 Sonra son alt eşleşme dizisini alır.
@@ -2935,115 +540,6 @@ const_reference suffix() const;
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi bir başvuru türü bir nesne döndürür `sub_match<BidIt>` işaret eden başlangıcı karakter dizisi `(*this)[size() - 1].second` ve diğer bir deyişle, hedef dizinin sonuna uçta eşleşen alt diziyi takip metne işaret.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_suffix.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="swap"></a>  match_results::Swap
 
@@ -3062,115 +558,6 @@ void swap(const match_results& right) throw();
 
 Üye işlevi içeriğini değiştirir `*this` ve *doğru* sabit zamanlı ve özel durum oluşturmaz.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_swap.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
-
 ## <a name="value_type"></a>  match_results::value_type
 
 Bir alt eşleşme türü.
@@ -3182,115 +569,6 @@ typedef sub_match<BidIt> value_type;
 ### <a name="remarks"></a>Açıklamalar
 
 Typedef türü eşanlamlıdır `sub_match<BidIt>`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__match_results_value_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex rx("c(a*)|(b)");
-    std::cmatch mr;
-
-    std::regex_search("xcaaay", mr, rx);
-
-    std::cout << "prefix: matched == " << std::boolalpha
-        << mr.prefix().matched
-        << ", value == " << mr.prefix() << std::endl;
-    std::cout << "whole match: " << mr.length() << " chars, value == "
-        << mr.str() << std::endl;
-    std::cout << "suffix: matched == " << std::boolalpha
-        << mr.suffix().matched
-        << ", value == " << mr.suffix() << std::endl;
-    std::cout << std::endl;
-
-    std::string fmt("\"c(a*)|(b)\" matched \"$0\"\n"
-        "\"(a*)\" matched \"$1\"\n"
-        "\"(b)\" matched \"$2\"\n");
-    std::cout << mr.format(fmt) << std::endl;
-    std::cout << std::endl;
-
-// index through submatches
-    for (size_t n = 0; n < mr.size(); ++n)
-        {
-        std::cout << "submatch[" << n << "]: matched == " << std::boolalpha
-            << mr[n].matched <<
-            " at position " << mr.position(n) << std::endl;
-        std::cout << "  " << mr.length(n)
-            << " chars, value == " << mr[n] << std::endl;
-        }
-    std::cout << std::endl;
-
-// iterate through submatches
-    for (std::cmatch::iterator it = mr.begin(); it != mr.end(); ++it)
-        {
-        std::cout << "next submatch: matched == " << std::boolalpha
-            << it->matched << std::endl;
-        std::cout << "  " << it->length()
-            << " chars, value == " << *it << std::endl;
-        }
-    std::cout << std::endl;
-
-// other members
-    std::cmatch mr1(mr);
-    mr = mr1;
-    mr.swap(mr1);
-
-    char buf[10];
-*mr.format(&buf[0], "<$0>") = '\0';
-    std::cout << &buf[0] << std::endl;
-    std::cout << "empty == " << std::boolalpha << mr.empty() << std::endl;
-
-    std::cmatch::allocator_type al = mr.get_allocator();
-    std::cmatch::string_type str = std::string("x");
-    std::cmatch::size_type maxsiz = mr.max_size();
-    std::cmatch::char_type ch = 'x';
-    std::cmatch::difference_type dif = mr.begin() - mr.end();
-    std::cmatch::const_iterator cit = mr.begin();
-    std::cmatch::value_type val = *cit;
-    std::cmatch::const_reference cref = val;
-    std::cmatch::reference ref = val;
-
-    maxsiz = maxsiz;  // to quiet "unused" warnings
-    if (ref == cref)
-        ch = ch;
-    dif = dif;
-
-    return (0);
-    }
-
-```
-
-```Output
-prefix: matched == true, value == x
-whole match: 4 chars, value == caaa
-suffix: matched == true, value == y
-
-"c(a*)|(b)" matched "caaa"
-"(a*)" matched "aaa"
-"(b)" matched ""
-
-submatch[0]: matched == true at position 1
-  4 chars, value == caaa
-submatch[1]: matched == true at position 2
-  3 chars, value == aaa
-submatch[2]: matched == false at position 6
-  0 chars, value ==
-
-next submatch: matched == true
-  4 chars, value == caaa
-next submatch: matched == true
-  3 chars, value == aaa
-next submatch: matched == false
-  0 chars, value ==
-
-<caaa>
-empty == false
-```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

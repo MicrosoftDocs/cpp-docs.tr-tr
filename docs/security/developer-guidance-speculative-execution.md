@@ -14,16 +14,16 @@ helpviewer_keywords:
 - Spectre
 - CVE-2017-5753
 - Speculative Execution
-author: mamillmsft
+author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 378c6fe9a86cc44d80252f69367cf8c70234f469
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 0800812e39d4d5240b87b24961585610814cd367
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613252"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384962"
 ---
 # <a name="c-developer-guidance-for-speculative-execution-side-channels"></a>Kurgusal yürütme yan kanal için C++ Geliştirici Kılavuzu
 
@@ -31,7 +31,7 @@ Bu makalede, tanımlamak ve C++ yazılım kurgusal yürütme yan kanal donanım 
 
 Bu makalede tarafından sağlanan yönergeleri sınıfları tarafından temsil edilen güvenlik açıklarının ilişkilidir:
 
-1. CVE-2017-5753, Spectre değişkeni 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı bir koşullu dalı misprediction sonucu olarak ortaya çıkan kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilişkilidir. Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` savunmasız kodlama desenleri sınırlı bir dizi için bir derleme zamanı azaltma sağlayan anahtar CVE-2017-5753 için ilgili. Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. 
+1. CVE-2017-5753, Spectre değişkeni 1 olarak da bilinir. Bu donanım güvenlik açığı sınıfı bir koşullu dalı misprediction sonucu olarak ortaya çıkan kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilişkilidir. Visual Studio 2017 (sürüm 15.5.5 ile başlayarak) Visual C++ derleyicisi için destek içerir `/Qspectre` savunmasız kodlama desenleri sınırlı bir dizi için bir derleme zamanı azaltma sağlayan anahtar CVE-2017-5753 için ilgili. `/Qspectre` Anahtarıdır ayrıca Visual Studio 2015 güncelleştirme 3'ten kullanılabilir [KB 4338871](https://support.microsoft.com/help/4338871). Belgelerine [/qspectre](https://docs.microsoft.com/cpp/build/reference/qspectre) bayrağı kullanım ve etkileri hakkında daha fazla bilgi sağlar. 
 
 2. CVE-2018-olarak da bilinen 3639, [kurgusal Store atlama (SSB)](https://aka.ms/sescsrdssb). Bu donanım güvenlik açığı sınıfı, bir iş yükünün bellek erişim misprediction sonucunda bağımlı bir deposu önceden kurgusal yürütmeyi nedeniyle ortaya çıkabilecek yan kanal ilgilidir.
 

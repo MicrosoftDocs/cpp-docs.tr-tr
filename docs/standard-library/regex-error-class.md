@@ -1,7 +1,7 @@
 ---
 title: regex_error sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6cdf1f5a3a8477e0af7d6bb04426599df590fffa
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 7358af41e1a7172daec619bec3e701ff4541fd0c
+ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102687"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44384988"
 ---
 # <a name="regexerror-class"></a>regex_error Sınıfı
 
@@ -32,19 +32,24 @@ Hatalı basic_regex nesne bildirir.
 
 ```cpp
 class regex_error
-: public std::runtime_error {
-public:
-    explicit regex_error(regex_constants::error_code error);
-
-    regex_constants::error_code code() const;
-
-
-};
+: public std::runtime_error
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
 Hata oluşturma veya kullanımını raporlamak için oluşturulan bir özel durum nesnesi sınıfı açıklar bir `basic_regex` nesne.
+
+### <a name="constructors"></a>Oluşturucular
+
+|Oluşturucu|Açıklama|
+|-|-|
+|[regex_error](#regex_error)|Bir nesne oluşturur.|
+
+### <a name="member-functions"></a>Üye işlevleri
+
+|Üye işlevi|Açıklama|
+|-|-|
+|[Kod](#code)|Hata kodu döndürür.|
 
 ## <a name="requirements"></a>Gereksinimler
 
@@ -52,22 +57,10 @@ Hata oluşturma veya kullanımını raporlamak için oluşturulan bir özel duru
 
 **Namespace:** std
 
-## <a name="code"></a>  regex_error::Code
-
-Hata kodu döndürür.
+## <a name="example"></a>Örnek
 
 ```cpp
-regex_constants::error_code code() const;
-```
-
-### <a name="remarks"></a>Açıklamalar
-
-Üye işlevi, nesnenin oluşturucuya geçirilen değeri döndürür.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_error_code.cpp
+// std__regex__regex_error.cpp
 // compile with: /EHsc
 #include <regex>
 #include <iostream>
@@ -83,8 +76,7 @@ int main()
     catch (const std::regex_error& rerr)
         {
         std::cout << "regex error: "
-            << (rerr.code() == paren.code()
-                 "unbalanced parentheses" : "")
+            << (rerr.code() == paren.code() ? "unbalanced parentheses" : "")
             << std::endl;
         }
     catch (...)
@@ -94,12 +86,23 @@ int main()
 
     return (0);
     }
-
 ```
 
 ```Output
 regex error: unbalanced parentheses
 ```
+
+## <a name="code"></a>  regex_error::Code
+
+Hata kodu döndürür.
+
+```cpp
+regex_constants::error_code code() const;
+```
+
+### <a name="remarks"></a>Açıklamalar
+
+Üye işlevi, nesnenin oluşturucuya geçirilen değeri döndürür.
 
 ## <a name="regex_error"></a>  regex_error::regex_error
 
@@ -117,43 +120,6 @@ Hata kodu.
 ### <a name="remarks"></a>Açıklamalar
 
 Oluşturucu değeri tutan bir nesne oluşturur *hata*.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_error_construct.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-int main()
-    {
-    std::regex_error paren(std::regex_constants::error_paren);
-
-    try
-        {
-        std::regex rx("(a");
-        }
-    catch (const std::regex_error& rerr)
-        {
-        std::cout << "regex error: "
-            << (rerr.code() == paren.code()
-                 "unbalanced parentheses" : "")
-            << std::endl;
-        }
-    catch (...)
-        {
-        std::cout << "unknown exception" << std::endl;
-        }
-
-    return (0);
-    }
-
-```
-
-```Output
-regex error: unbalanced parentheses
-```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
