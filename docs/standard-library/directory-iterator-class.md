@@ -1,7 +1,7 @@
 ---
 title: directory_iterator sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -35,24 +35,24 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36cbf9e8d4ebdf62cbbfdc5a37ca1c49d7106a42
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 09970c0d3cf8771317c93670c0ec7f029e1ace2a
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105219"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691594"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 
-Bir dizin adlarında aracılığıyla dizilerinin bir giriş yineleyici açıklar. Bir yineleyici X, ifade için * X değerlendirilen bir nesnenin dosya adını ve durumunu hakkında bilinen herhangi bir şey sarmalayan directory_entry sınıfı.
+Bir dizin adlarında aracılığıyla dizilerinin bir giriş yineleyici açıklar. Bir yineleyici için `X`, ifade `*X` sınıfın nesne olarak değerlendirilen `directory_entry` dosya adını ve durumunu hakkında bilinen herhangi bir şey sarmalar.
 
-Sınıf türü yolunun adlı bir nesne depolar `mydir` burada exposition amacı doğrultusunda, temsil eden sıralı için dizinin adı ve bir nesne türü directory_entry adlı `myentry` burada olan geçerli dosya adını temsil eder Dizin sırayla. Bir varsayılan oluşturulmuş nesne türü directory_entry sahip `mydir` yol dizisi son yineleyiciyi temsil eder.
+Sınıf türünden bir nesne depolar `path`adlı `mydir` sıralı için dizinin adını temsil eden exposition amaçları ve bir nesne türü için burada `directory_entry` adlı `myentry` burada olan geçerli temsil eder Dizin dizisini de kullanabilirsiniz. Varsayılan oluşturulan nesnenin türü `directory_entry` sahip `mydir` yol dizisi son yineleyiciyi temsil eder.
 
-Örneğin, dizin verilen abc def girişleri ve GHI, kod ile:
+Örneğin, dizin verilen `abc` girişlerle `def` ve `ghi`, kod:
 
 `for (directory_iterator next(path("abc")), end; next != end; ++next)     visit(next->path());`
 
-' ın arayacağı `visit` path("abc/ghi") ve bağımsız değişkenler path("abc/def").
+' ın arayacağı `visit` bağımsız değişkenleriyle `path("abc/def")` ve `path("abc/ghi")`.
 
 Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 
@@ -72,7 +72,7 @@ class directory_iterator;
 
 |Üye işlevi|Açıklama|
 |-|-|
-|[Artırma](#increment)|İşlev, sonraki dosya dizininde ilerleyin dener.|
+|[Artırma](#increment)|Sonraki dosya dizininde ilerletmek çalışır.|
 
 ### <a name="operators"></a>İşleçler
 

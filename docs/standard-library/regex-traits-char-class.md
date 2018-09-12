@@ -1,7 +1,7 @@
 ---
 title: regex_traits&lt;char&gt; sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -16,16 +16,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fec9d9e80a277a8c10a1767734a9e758177df508
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 9f5d02ebae152a78bfc99682afc20e33ba71b015
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966426"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691568"
 ---
 # <a name="regextraitsltchargt-class"></a>regex_traits&lt;char&gt; sınıfı
 
-Regex_traits alt uzmanlaşması char için.
+Alt uzmanlaşması `regex_traits` için **char**.
 
 ## <a name="syntax"></a>Sözdizimi
 

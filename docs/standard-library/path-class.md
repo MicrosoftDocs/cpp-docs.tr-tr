@@ -1,7 +1,7 @@
 ---
 title: PATH sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,16 +14,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4559bec84d7e6051155ad73f68a1ef8ae13ca6cc
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e47310a93a3901f072330a57619c2655aefb7ff5
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104166"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691516"
 ---
 # <a name="path-class"></a>path Sınıfı
 
-**Yolu** sınıfı dize türünde bir nesne depolar\_türü, burada myname exposition, uygun bir yol adı olarak kullanmak amacıyla çağırılır. dize\_türüdür temel ilişkin bir eşanlam\_dize\<value_type >, burada değer\_türü, Windows altında char veya wchar_t POSIX altında ilişkin bir eşanlam.
+**Yolu** sınıf türünde bir nesne depolar `string_type`adlı `myname` doğrultusunda exposition, uygun bir yol adı olarak kullanmak için burada. `string_type` eşanlamlıdır `basic_string<value_type>`burada `value_type` eşanlamlıdır **char** Windows altında veya **wchar_t** POSIX altında.
 
 Daha fazla bilgi ve kod örnekleri için bkz. [dosya sistemi gezintisi (C++)](../standard-library/file-system-navigation.md).
 
@@ -443,7 +443,7 @@ Sınıfı, atayan bir çift yönlü sabit yineleyiciyi açıklayan `path` bileş
 
 ## <a name="make_preferred"></a> PATH::make_preferred
 
-Her ayırıcı bir preferred_separator için gerektiği şekilde dönüştürür.
+Her ayırıcısı dönüştürür bir `preferred_separator` gerektiğinde.
 
 ```cpp
 path& make_preferred();
@@ -529,7 +529,7 @@ Eklenen kaynağı.
 
 1. `concat(source);`
 
-1. `concat(path(basic_string\<Elem>(1, elem)));`
+1. `concat(path(basic_string<Elem>(1, elem)));`
 
 ## <a name="op_divide"></a> PATH::operator / =
 
@@ -576,7 +576,7 @@ path parent_path() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Üst'ın yol bileşenini döndürür `myname`, özellikle öneki `myname` kaldırdıktan sonra `filename().native()` ve hemen önceki dizin ayırıcı. (Durumunda, eşit şekilde, `begin() != end()`, birleştirme [const_iterator, / = işleci sırayla uygulayarak--end()). aralıktaki tüm öğelerin olan) Bileşen boş olabilir.
+Üst'ın yol bileşenini döndürür `myname`, özellikle öneki `myname` kaldırdıktan sonra `filename().native()` ve hemen önceki dizin ayırıcı. (Durumunda, eşit şekilde, `begin() != end()`, aralıktaki tüm öğelerin birleştirme olan `[begin(), --end())` sırayla uygulayarak `operator/=`.) Bileşen boş olabilir.
 
 ## <a name="path"></a> PATH::PATH
 
@@ -687,7 +687,7 @@ Yeni uzantı.
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk soneki kaldırır `extension().native()` gelen `myname`. Sonra eğer `!newext.empty() && newext[0] != dot` (burada `dot` olduğu `*path(".").c_str()`), ardından `dot` eklenir `myname`. Ardından `newext` eklenir `myname`.
+İlk soneki kaldırır `extension().native()` gelen `myname`. Sonra eğer `!newext.empty() && newext[0] != dot` (burada `dot` olduğu `*path(".").c_str()`), ardından `dot` eklenir `myname`. Ardından *newext* eklenir `myname`.
 
 ## <a name="replace_filename"></a> PATH::replace_filename
 
@@ -747,7 +747,7 @@ path root_path() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-Kök yolu bileşenini döndürür `myname`, özellikle root_name() / root_directory. Bileşen boş olabilir.
+Kök yolu bileşenini döndürür `myname`, özellikle `root_name()`  /  `root_directory`. Bileşen boş olabilir.
 
 ## <a name="stem"></a> PATH::stem
 
@@ -773,7 +773,7 @@ string string() const;
 
 ### <a name="remarks"></a>Açıklamalar
 
-İlk (şablon) üye işlevi aynı şekilde YOLUM içinde depolanan dizisi dönüştürür:
+Depolanan dizisi ilk (şablon) üye işlevi dönüştürür `mypath` aynı şekilde çalışır:
 
 1. `string()` için `string<char, Traits, Alloc>()`
 
@@ -783,7 +783,7 @@ string string() const;
 
 1. `u32string()` için `string<char32_t, Traits, Alloc>()`
 
-İkinci üye işlevi, depolanan dizisi dönüştürür `mypath` konak sistemi için bir karakter dizisi ve dize türünde bir nesne içinde depolanan döndürür tarafından stadyumlarda kodlama için.
+İkinci üye işlevi, depolanan dizisi dönüştürür `mypath` için ana bilgisayar sistemi tarafından stadyumlarda kodlama için bir **char** dizisi ve türünün nesnesinde depolanan döndürür `string`.
 
 ## <a name="string_type"></a> PATH::string_type
 
@@ -827,7 +827,7 @@ string u8string() const;
 
 ## <a name="value_type"></a> PATH::value_type
 
-Türü konak işletim sistemi tarafından stadyumlarda yolu öğeleri açıklar.
+Türü tanımlayan `path` konak işletim sistemi tarafından stadyumlarda öğeleri.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -839,7 +839,7 @@ typedef char value_type;
 
 ## <a name="wstring"></a> PATH::wstring
 
-Depolanan dizisi dönüştürür `mypath` için ana bilgisayar sistemi tarafından stadyumlarda kodlama için bir `wchar_t` dizisi ve türünün nesnesinde depolanan döndürür `wstring`.
+Depolanan dizisi dönüştürür `mypath` için ana bilgisayar sistemi tarafından stadyumlarda kodlama için bir **wchar_t** dizisi ve türünün nesnesinde depolanan döndürür `wstring`.
 
 ```cpp
 wstring wstring() const;

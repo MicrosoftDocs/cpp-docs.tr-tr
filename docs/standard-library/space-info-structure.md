@@ -1,7 +1,7 @@
 ---
 title: space_info yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0f1eb9818356e7261125efaea69e275c3e29b8
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e078b38dd90fcda7a6973ac1b0aee13c301823d4
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684689"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691438"
 ---
 # <a name="spaceinfo-structure"></a>space_info Yapısı
 

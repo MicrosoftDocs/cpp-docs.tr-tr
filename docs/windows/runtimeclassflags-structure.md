@@ -1,28 +1,30 @@
 ---
 title: RuntimeClassFlags yapısı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/07/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClassFlags
+- implements/Microsoft::WRL::RuntimeClassFlags::value
 dev_langs:
 - C++
 helpviewer_keywords:
-- RuntimeClassFlags structure
+- Microsoft::WRL::RuntimeClassFlags structure
+- Microsoft::WRL::RuntimeClassFlags::value constant
 ms.assetid: 7098d605-bd14-4d51-82f4-3def8296a938
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f0a32fc373900af1a4322f4f2511c44417d2916a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6c3cb141576598aa39c718316048900622c4df41
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594280"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691464"
 ---
 # <a name="runtimeclassflags-structure"></a>RuntimeClassFlags Yapısı
 
@@ -48,7 +50,7 @@ A [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[RuntimeClassFlags::value Sabiti](../windows/runtimeclassflags-value-constant.md)|İçeren bir [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.|
+|[RuntimeClassFlags::value Sabiti](#value-constant)|İçeren bir [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -60,6 +62,10 @@ A [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="value-constant"></a>RuntimeClassFlags::value sabiti
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+İçeren bir alanda bir [RuntimeClassType numaralandırması](../windows/runtimeclasstype-enumeration.md) değeri.
+  
+```cpp
+static const unsigned int value = flags;
+```

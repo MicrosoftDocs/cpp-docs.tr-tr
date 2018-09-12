@@ -1,28 +1,34 @@
 ---
 title: SimpleActivationFactory sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/07/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - module/Microsoft::WRL::SimpleActivationFactory
+- module/Microsoft::WRL::SimpleActivationFactory::ActivateInstance
+- module/Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName
+- module/Microsoft::WRL::SimpleActivationFactory::GetTrustLevel
 dev_langs:
 - C++
 helpviewer_keywords:
-- SimpleActivationFactory class
+- Microsoft::WRL::SimpleActivationFactory class
+- Microsoft::WRL::SimpleActivationFactory::ActivateInstance method
+- Microsoft::WRL::SimpleActivationFactory::GetRuntimeClassName method
+- Microsoft::WRL::SimpleActivationFactory::GetTrustLevel method
 ms.assetid: aff768e0-0038-4fd7-95d2-ad7d308da41c
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 0820012c8c22de1287fcb09037212b870a4ff7bf
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 07c37dbf1629461141d592eb1987ce071324e22c
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42594804"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691477"
 ---
 # <a name="simpleactivationfactory-class"></a>SimpleActivationFactory Sınıfı
 
@@ -54,9 +60,9 @@ Aşağıdaki kod örneği ile SimpleActivationFactory kullanımı gösterilmişt
 
 |Ad|Açıklama|
 |----------|-----------------|
-|[SimpleActivationFactory::ActivateInstance Metodu](../windows/simpleactivationfactory-activateinstance-method.md)|Belirtilen arabirim bir örneğini oluşturur.|
-|[SimpleActivationFactory::GetRuntimeClassName Metodu](../windows/simpleactivationfactory-getruntimeclassname-method.md)|Çalışma zamanı sınıf adı tarafından belirtilen sınıfın örneğini alır *temel* sınıfı şablon parametresi.|
-|[SimpleActivationFactory::GetTrustLevel Metodu](../windows/simpleactivationfactory-gettrustlevel-method.md)|Tarafından belirtilen sınıfın bir örneği güven düzeyini alır *temel* sınıfı şablon parametresi.|
+|[SimpleActivationFactory::ActivateInstance Metodu](#activateinstance)|Belirtilen arabirim bir örneğini oluşturur.|
+|[SimpleActivationFactory::GetRuntimeClassName Metodu](#getruntimeclassname)|Çalışma zamanı sınıf adı tarafından belirtilen sınıfın örneğini alır *temel* sınıfı şablon parametresi.|
+|[SimpleActivationFactory::GetTrustLevel Metodu](#gettrustlevel)|Tarafından belirtilen sınıfın bir örneği güven düzeyini alır *temel* sınıfı şablon parametresi.|
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -88,6 +94,67 @@ Aşağıdaki kod örneği ile SimpleActivationFactory kullanımı gösterilmişt
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="activateinstance"></a>Simpleactivationfactory::activateınstance yöntemi
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+Belirtilen arabirim bir örneğini oluşturur.
+
+```cpp
+STDMETHOD( ActivateInstance )(
+    _Deref_out_ IInspectable **ppvObject
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*ppvObject*  
+Bu işlem tamamlandığında, işaretçi tarafından belirtilen nesnede örneğine `Base` sınıfı şablon parametresi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsa `__WRL_STRICT__` olan tanımlanan, türetilen sınıf şablonu parametresinde belirtilen temel sınıf değil, bir onay hata yayıldığını [RuntimeClass](../windows/runtimeclass-class.md), ya da WinRt veya WinRtClassicComMix ile yapılandırılmamış [ RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+
+## <a name="getruntimeclassname"></a>SimpleActivationFactory::GetRuntimeClassName metodu
+
+Çalışma zamanı sınıf adı tarafından belirtilen sınıfın örneğini alır `Base` sınıfı şablon parametresi.
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*runtimeName*  
+Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Varsa `__WRL_STRICT__` olan sınıfın belirtilen tanımlanan, bir onay hatası yayılır `Base` olmayan şablon parametresi sınıf türetilmiş [RuntimeClass](../windows/runtimeclass-class.md), ya da WinRt veya WinRtClassicComMix ileyapılandırılmamış[RuntimeClassType](../windows/runtimeclasstype-enumeration.md) numaralandırma değeri.
+
+## <a name="gettrustlevel"></a>SimpleActivationFactory::GetTrustLevel metodu
+
+Tarafından belirtilen sınıfın bir örneği güven düzeyini alır `Base` sınıfı şablon parametresi.
+
+```cpp
+STDMETHOD(
+   GetTrustLevel
+)(_Out_ TrustLevel* trustLvl);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*trustLvl*  
+Bu işlem tamamlandığında geçerli sınıf nesnesi güven düzeyi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Her zaman S_OK.

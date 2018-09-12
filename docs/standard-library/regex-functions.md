@@ -1,7 +1,7 @@
 ---
 title: '&lt;Regex&gt; işlevleri | Microsoft Docs'
 ms.custom: ''
-ms.date: 06/19/2018
+ms.date: 09/10/2018
 ms.topic: reference
 f1_keywords:
 - regex/std::regex_match
@@ -17,12 +17,12 @@ helpviewer_keywords:
 - std::regex_search [C++]
 - std::swap [C++]
 - std::swap [C++]
-ms.openlocfilehash: 9a417cc9738aec739bdeaec58cc5d50476c9c753
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3b78ce35b20c3049c168ab23c512ae7ae23b9886
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107543"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691557"
 ---
 # <a name="ltregexgt-functions"></a>&lt;Regex&gt; işlevleri
 
@@ -47,7 +47,6 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (2)
 template <class BidIt, class Elem, class RXtraits, class Alloc2>
 bool regex_match(
@@ -55,7 +54,6 @@ bool regex_match(
     Bidit last,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (3)
 template <class Elem, class Alloc, class RXtraits, class Alloc2>
@@ -65,14 +63,12 @@ bool regex_match(
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
 
-
 // (4)
 template <class Elem, class RXtraits, class Alloc2>
 bool regex_match(
     const Elem *ptr,
     const basic_regex<Elem, RXtraits, Alloc2>& re,
     match_flag_type flags = match_default);
-
 
 // (5)
 template <class IOtraits, class IOalloc, class Alloc, class Elem, class RXtraits, class Alloc2>
@@ -142,15 +138,15 @@ Almayan işlevleri bir `match_results` nesne üyelerini eşleşmenin başarılı
 ### <a name="example"></a>Örnek
 
 ```cpp
-#include "stdafx.h"
+// std__regex__regex_match.cpp
+// compile with: /EHsc
 #include <regex>
 #include <iostream>
 
 using namespace std;
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
-
     // (1) with char*
     // Note how const char* requires cmatch and regex
     const char *first = "abc";
@@ -159,8 +155,10 @@ int _tmain(int argc, _TCHAR* argv[])
     regex rx("a(b)c");
 
     bool found = regex_match(first, last, narrowMatch, rx);
+    if (found)
+        wcout << L"Regex found in abc" << endl;
 
-    // (1) with std::wstring
+    // (2) with std::wstring
     // Note how wstring requires wsmatch and wregex.
     // Note use of const iterators cbegin() and cend().
     wstring target(L"Hello");
@@ -170,12 +168,15 @@ int _tmain(int argc, _TCHAR* argv[])
     if (regex_match(target.cbegin(), target.cend(), wideMatch, wrx))
         wcout << L"The matching text is:" << wideMatch.str() << endl;
 
-    // (2) with std::string
+    // (3) with std::string
     string target2("Drizzle");
     regex rx2(R"(D\w+e)"); // no double backslashes with raw string literal
-    found = regex_match(target2.cbegin(), target2.cend(), rx2);
 
-    // (3) with wchar_t*
+    found = regex_match(target2.cbegin(), target2.cend(), rx2);
+    if (found)
+        wcout << L"Regex found in Drizzle" << endl;
+
+    // (4) with wchar_t*
     const wchar_t* target3 = L"2014-04-02";
     wcmatch wideMatch2;
 
@@ -189,6 +190,13 @@ int _tmain(int argc, _TCHAR* argv[])
 
      return 0;
 }
+```
+
+```Output
+Regex found in abc
+The matching text is: Hello
+Regex found in Drizzle
+The matching text is: 2014-04-02
 ```
 
 ## <a name="regex_replace"></a>  regex_replace

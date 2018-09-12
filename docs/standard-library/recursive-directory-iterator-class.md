@@ -1,7 +1,7 @@
 ---
 title: recursive_directory_iterator sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82df045c5a41767093e690ec35ffeb3d81032474
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 0d3765f57ee299a70a54e3b69dbaee0e0687a64c
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110662"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691659"
 ---
 # <a name="recursivedirectoryiterator-class"></a>recursive_directory_iterator Sınıfı
 
@@ -41,7 +41,7 @@ class recursive_directory_iterator;
 
 1. bir nesne türü `directory_entry` adlı `myentry` burada olan geçerli dosya dizini dizideki temsil eder
 
-1. bir nesne türü `bool`adlı `no_push` burada olan alt dizinler halinde özyinelemeli iniş devre dışı bırakılıp bırakılmadığını kaydeder
+1. bir nesne türü **bool**adlı `no_push` burada olan alt dizinler halinde özyinelemeli iniş devre dışı bırakılıp bırakılmadığını kaydeder
 
 1. bir nesne türü `directory_options`adlı `myoptions` burada olan yapım sırasında belirlenen seçenekleri kaydeder
 

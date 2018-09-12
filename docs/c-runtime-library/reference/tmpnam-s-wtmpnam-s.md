@@ -40,16 +40,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d8c6298c7b66c8967a4e5e23a37c3614edcddf3d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2c5272f662580eff92e9ec15860b978ab739e613
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32415537"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691607"
 ---
 # <a name="tmpnams-wtmpnams"></a>tmpnam_s, _wtmpnam_s
 
-Geçici dosyaları oluşturmak için kullanabileceğiniz adları oluşturun. Sürümleri bunlar [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
+Geçici dosyalar oluşturmak için kullanabileceğiniz adları oluşturun. Bunlar sürümleridir [tmpnam ve _wtmpnam](tempnam-wtempnam-tmpnam-wtmpnam.md) açıklandığı gibi güvenlik geliştirmeleri ile [CRT'deki güvenlik özellikleri](../../c-runtime-library/security-features-in-the-crt.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -75,34 +75,34 @@ errno_t _wtmpnam_s(
 ### <a name="parameters"></a>Parametreler
 
 *str*<br/>
-Oluşturulan ad tutacak işaretçi.
+Oluşturulan ad tutacak işaretçisi.
 
 *sizeInChars*<br/>
-Karakter cinsinden arabellek boyutu.
+Arabelleğin karakter cinsinden boyutu.
 
 ## <a name="return-value"></a>Dönüş Değeri
 
-Bu işlevlerin her ikisi de 0 başarılı olursa ya da bir hata numarası hatası döndürür.
+Bu işlevlerin her ikisi de, hata durumunda 0 başarılı olursa ya da bir hata numarası döndürür.
 
 ### <a name="error-conditions"></a>Hata koşulları
 
 |||||
 |-|-|-|-|
-|*str*|*sizeInChars*|**Dönüş değeri**|**İçeriği***str* |
-|**NULL**|tüm|**EINVAL**|değiştirilmedi|
-|Değil **NULL** (noktaları için geçerli bellek)|çok kısa|**ERANGE**|değiştirilmedi|
+|*str*|*sizeInChars*|**Dönüş değeri**|**İçeriğini***str* |
+|**NULL**|Tüm|**EINVAL**|değiştirilmedi|
+|Değil **NULL** (geçerli bellek noktaları)|çok kısa|**ERANGE**|değiştirilmedi|
 
-Varsa *str* olan **NULL**, açıklandığı gibi geçersiz parametre işleyicisi çağrılır [parametre doğrulaması](../../c-runtime-library/parameter-validation.md). Devam etmek için yürütülmesine izin veriliyorsa, bu işlevler kümesi **errno** için **EINVAL** ve geri dönüp **EINVAL**.
+Varsa *str* olduğu **NULL**, açıklanan şekilde geçersiz parametre işleyicisi çağrılır [Parameter Validation](../../c-runtime-library/parameter-validation.md). Yürütme devam etmesine izin verilirse bu işlevler kümesi **errno** için **EINVAL** ve dönüş **EINVAL**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu işlevlerin her biri şu anda var olmayan bir dosya adını döndürür. **tmpnam_s** geçerli çalışma dizini içinde benzersiz adını döndürür. Bir dosya adı bekletilen bir ters eğik çizgi ve \fname21 gibi hiçbir yol bilgileriyle olduğunda bu adın geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.
+Bu işlevlerin her biri, şu anda mevcut olmayan bir dosya adını döndürür. **tmpnam_s** tarafından döndürülen belirlenen Windows geçici dizinde benzersiz bir ad verir [GetTempPathW](/windows/desktop/api/fileapi/nf-fileapi-gettemppathw). Bir dosya adı bekletilen ters eğik çizgi ve \fname21 gibi hiçbir yol bilgisi olduğunda bu adı geçerli çalışma dizini için geçerli olduğunu belirttiğinden unutmayın.
 
-İçin **tmpnam_s**, bu oluşturulan dosya adı depolayabilir *str*. Tarafından döndürülen dize uzunluğu en fazla **tmpnam_s** olan **L_tmpnam_s**, STDIO tanımlı. H. Varsa *str* olan **NULL**, ardından **tmpnam_s** sonucu bir iç statik arabellek bırakır. Bu nedenle yapılan sonraki çağrılar bu değer yok. Tarafından oluşturulan adı **tmpnam_s** bir program tarafından oluşturulan dosya adının ve ilk çağrısından sonra oluşan **tmpnam_s**, bir dosya uzantısı temel 32 sıralı sayıların (.1-.1vvvvvu olduğunda **TMP _MAX_S** STDIO içinde. H ise **INT_MAX**).
+İçin **tmpnam_s**, bu oluşturulan dosya adında depolayabilirsiniz *str*. Tarafından döndürülen bir dize uzunluğu en fazla **tmpnam_s** olduğu **L_tmpnam_s**STDIO içinde tanımlanmış. H Varsa *str* olduğu **NULL**, ardından **tmpnam_s** sonucu bir iç statik arabellek bırakır. Bu nedenle sonraki çağrılar, bu değer yok. Tarafından oluşturulan adı **tmpnam_s** bir program tarafından oluşturulan dosya adı ve ilk çağrısından sonra oluşan **tmpnam_s**, sıralı sayıların temel 32 bir dosya uzantısı (.1-.1vvvvvu olduğunda **TMP _MAX_S** STDIO içinde. H ise **INT_MAX**).
 
-**tmpnam_s** otomatik olarak çok baytlı karakter sıralarının OEM kod sayfasına göre algılamayı tanıtıcıları çok baytlı karakter dizesi bağımsız değişken olarak uygun alınan işletim sisteminden. **_wtmpnam_s** bir joker karakter sürümü **tmpnam_s**; bağımsız değişkeni ve dönüş değeri **_wtmpnam_s** joker karakter dizelerdir. **_wtmpnam_s** ve **tmpnam_s** durumlar dışında aynı şekilde davranır **_wtmpnam_s** çok baytlı karakter dizeleri işlemez.
+**tmpnam_s** otomatik olarak algılamayı OEM kod sayfasına göre çok baytlı karakter dizileri işler çok baytlı karakter dizesi bağımsız değişken olarak uygun alınan işletim sisteminden. **_wtmpnam_s** geniş karakterli sürümüdür **tmpnam_s**; bağımsız değişkeni ve dönüş değeri **_wtmpnam_s** geniş karakterli dizelerdir. **_wtmpnam_s** ve **tmpnam_s** aynı şekilde davranır **_wtmpnam_s** çok baytlı karakter dizelerini işlemez.
 
-C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından basitleştirilmiştir; aşırı, boyutu bağımsız değişkeniyle belirtme ihtiyacını ortadan arabellek uzunluğu bir otomatik olarak Infer. Daha fazla bilgi için bkz: [güvenli şablon aşırı yüklemeler](../../c-runtime-library/secure-template-overloads.md).
+C++ dilinde bu işlevlerin kullanılması şablon aşırı yüklemeleriyle basitleştirilmiştir; aşırı yüklemeler arabellek uzunluğu bir boyut bağımsız değişkeni belirtme gereksinimi ortadan otomatik olarak çıkarabilir. Daha fazla bilgi için [güvenli şablon aşırı yüklemeleri](../../c-runtime-library/secure-template-overloads.md).
 
 ### <a name="generic-text-routine-mappings"></a>Genel Metin Yordam Eşleşmeleri
 
@@ -117,7 +117,7 @@ C++'da, bu işlevler kullanılarak şablon aşırı yüklemeleri tarafından bas
 |**tmpnam_s**|\<stdio.h >|
 |**_wtmpnam_s**|\<stdio.h > veya \<wchar.h >|
 
-Ek uyumluluk bilgileri için bkz: [Uyumluluk](../../c-runtime-library/compatibility.md).
+Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibility.md).
 
 ## <a name="example"></a>Örnek
 
@@ -152,9 +152,27 @@ int main( void )
 }
 ```
 
+```Output
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.0 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.1 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.2 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.3 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.4 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.5 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.6 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.7 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.8 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.9 is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.a is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.b is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.c is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.d is safe to use as a temporary file.
+C:\Users\LocalUser\AppData\Local\Temp\u19q8.e is safe to use as a temporary file.
+```
+
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Akış g/ç](../../c-runtime-library/stream-i-o.md)<br/>
+[Stream g/ç](../../c-runtime-library/stream-i-o.md)<br/>
 [_getmbcp](getmbcp.md)<br/>
 [malloc](malloc.md)<br/>
 [_setmbcp](setmbcp.md)<br/>

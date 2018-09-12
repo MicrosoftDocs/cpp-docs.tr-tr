@@ -1,7 +1,7 @@
 ---
 title: directory_entry sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -44,12 +44,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdb2962d2d1dc4e39d2528c89267a9cf8871937a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 3c61d69c1ee5ad40191771dabd829514e3381e88
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105789"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691412"
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 
@@ -311,5 +311,5 @@ Durum hata kodu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)  
-[\<dosya sistemi&gt;](../standard-library/filesystem.md)  
+[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md)<br/>
+[\<dosya sistemi&gt;](../standard-library/filesystem.md)<br/>

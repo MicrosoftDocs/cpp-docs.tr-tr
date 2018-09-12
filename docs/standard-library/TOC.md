@@ -346,7 +346,7 @@
 #### [<regex> tür tanımları](regex-typedefs.md)
 #### [basic_regex Sınıfı](basic-regex-class.md)
 #### [match_results Sınıfı](match-results-class.md)
-#### [regex_constants Sınıfı](regex-constants-class.md)
+#### [regex_constants ad alanı](regex-constants-class.md)
 #### [regex_error Sınıfı](regex-error-class.md)
 #### [regex_iterator Sınıfı](regex-iterator-class.md)
 #### [regex_token_iterator Sınıfı](regex-token-iterator-class.md)

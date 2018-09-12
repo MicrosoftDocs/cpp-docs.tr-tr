@@ -1,7 +1,7 @@
 ---
 title: file_status sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -22,12 +22,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::file_status::permissions
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7dc955aa615deadb6e99cfdbb8d72513cc93ced8
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: cc45e785b6a3aeefd9e2cf5d0539b5d387af7143
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314566"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44691672"
 ---
 # <a name="filestatus-class"></a>file_status Sınıfı
 
