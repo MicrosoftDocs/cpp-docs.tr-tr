@@ -1,7 +1,7 @@
 ---
 title: MFC Internet programlama görevleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -15,29 +15,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df7efbc8d29b2e36c6911255389cc270e7bf5e37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e8d8fab6fe78c6ca1e32f7973327d2285cfcd20
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33347252"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534917"
 ---
 # <a name="mfc-internet-programming-tasks"></a>MFC Internet Programlama Görevleri
-Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı adımlar içerir. Mevcut uygulamalarınızı Internet etkinleştir MFC sınıfları kullanma ve etkin belge desteği, varolan bir COM bileşeni eklemek nasıl konuları içerir. En güncel stok teklifler, Pittsburgh'ın futbol puanları, bir belge oluşturmak istiyor musunuz ve en son sıcaklık Antarktika Microsoft teknolojileri Internet üzerinden yapmanıza yardımcı olmak için çeşitli sağlar.  
+Bu bölümde, uygulamalarınız için Internet desteğini eklemek için ayrıntılı adımları içerir. Mevcut uygulamalarınızı Internet etkinleştirmek için MFC sınıflarını kullanmayı ve etkin belge desteği, var olan bir COM bileşenine ekleme konuları içerir. Associated stok tırnak işaretleri, futbol puanları Pittsburgh'ın, bir belge oluşturmak istiyor musunuz ve en son sıcaklık Antarktika Microsoft teknolojileri, Internet üzerinden yapmanıza yardımcı olmak için birkaç sağlar.  
   
- Etkin teknolojileri şunları içerir: ActiveX denetimlerini (önceki adıyla OLE denetimleri) ve etkin belgeler; WinINet; kolayca almaya ve Internet üzerinden dosyaları kaydetme ve verimli veriler için zaman uyumsuz adları indirme. Visual C++ sihirbazları yardımcı olması için hızlı bir şekilde bir başlangıç uygulaması ile çalışmaya başlama sağlar. Bu teknolojiler giriş için bkz: [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md) ve [MFC COM](../mfc/mfc-com.md).  
+ Etkin teknolojileri şunları içerir: ActiveX denetimlerini (eski adı OLE denetimleri) ve etkin belgeler; WinINet; kolayca alma ve Internet üzerinden dosyaları kaydetme ve verimli veri yükleme zaman uyumsuz adlar. Visual C++ sihirbazları yardımcı olması için bir başlangıç uygulaması ile hızlıca çalışmaya başlayın sağlar. Bu teknolojiler bir giriş için bkz [MFC Internet Programlama temelleri](../mfc/mfc-internet-programming-basics.md) ve [MFC COM](../mfc/mfc-com.md).  
   
- Sahip olduğunuz her zaman bir dosya FTP istemeniz ancak henüz öğrenilen WinSock ve ağ protokolleri WinINet sınıfları programlama kapsülleyen bu protokollerin dosyalarını indirmek için Internet'te bir istemci uygulaması yazma için kullanabileceğiniz işlevleri basit bir dizi sağlama HTTP, FTP ve gopher kullanma. WinINet dizinler için sabit diskinizde veya tüm dünyada aramak için kullanabilirsiniz. Saydam birkaç farklı türlerdeki veri toplamak ve kullanıcı için tümleşik bir arabirim sunar.  
+ Sahip olduğunuz her zaman bir dosya FTP istedi, ancak henüz öğrenilen WinSock ve ağ protokolleri WinINet sınıfları programlama kapsülleyen bu protokolleri, basit bir istemci uygulaması dosyalarını indirmek için Internet'te yazmak için kullanabileceğiniz işlevler kümesi sağlama HTTP, FTP ve gopher kullanma. WinINet dizinleri sabit sürücünüzdeki veya dünyanın dört bir yanındaki aramak için kullanabilirsiniz. Şeffaf bir şekilde birkaç farklı türlerdeki verileri toplamak ve tümleşik bir arabirimde kullanıcıya sunar.  
   
- Büyük miktarlarda zorunda verilerini zaman uyumsuz indirmek için takma adlar büyük nesneler aşamalı işleme için bir COM (Bileşen Nesne modeli) çözümü sağlar. WinINet ayrıca zaman uyumsuz olarak kullanılabilir.  
+ Sizde büyük miktarlarda verileri zaman uyumsuz indirmek için takma adlar bir COM (Bileşen Nesne modeli) çözümü büyük nesneler aşamalı işleme için sağlar. WinINet de zaman uyumsuz olarak kullanılabilir.  
   
- Aşağıdaki tabloda bu teknolojiler ile yapabileceği şeylerden bazılarının açıklanmaktadır.  
+ Aşağıdaki tabloda bu teknolojiler ile yapabileceğiniz çok şey birkaç açıklanmaktadır.  
   
 |Sahip olduğunuz|İstediğiniz|Yapmanız gerekenler|  
 |--------------|-----------------|----------------|  
-|Bir Web sunucusu.|Oturum açma ve URL istekler hakkında ayrıntılı bilgi izler.|Bir filtre, oturum açma olayları ve URL eşlemesi için istek bildirimlerini yazma.|  
-|Bir Web tarayıcısı.|Dinamik içerik sağlar.|ActiveX denetimlerini ve etkin belgeler oluşturma.|  
-|Belge tabanlı bir uygulama.|Destek FTP bir dosya ekleyin.|WinINet veya zaman uyumsuz adlar kullanın.|  
+|Bir Web sunucusu.|Oturumlar ve istekler URL hakkında ayrıntılı bilgi izleyin.|İstek bildirimleri oturum açma olaylarını ve URL eşlemesi için bir filtre yazın.|  
+|Bir Web tarayıcısı.|Dinamik içerik sağlar.|ActiveX denetimleri ve etkin belgeler oluşturun.|  
+|Belge tabanlı bir uygulama.|Destek FTP için bir dosya ekleyin.|WinINet veya zaman uyumsuz adlar kullanın.|  
   
  Başlamanıza yardımcı olmak ayrıntılı bilgi için aşağıdaki konulara bakın:  
   
@@ -48,8 +48,6 @@ Bu bölüm, uygulamalarınızı Internet desteği eklemek için ayrıntılı ad�
 -   [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)  
   
 -   [Varolan Bir ActiveX Denetimini Güncelleştirme](../mfc/upgrading-an-existing-activex-control.md)  
-  
--   [Internet'te Etkin Belgeler](../mfc/active-documents-on-the-internet.md)  
   
 -   [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
   

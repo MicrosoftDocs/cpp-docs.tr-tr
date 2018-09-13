@@ -1,7 +1,7 @@
 ---
 title: MFC COM | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e8c3af361e1ffb5928132727fa124f03a99e81e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 026e8b39d751a352830b37ae0b5692882e2daa3f
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205655"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534839"
 ---
 # <a name="mfc-com"></a>MFC COM
 MFC bir alt kümesi, en etkin Şablon kitaplığı (ATL), tasarlanmış olmasına rağmen COM'u desteklemek üzere tasarlanmıştır COM programlama için. Bu bölümde konu com için MFC'nin desteğini açıklar.  
@@ -34,8 +34,6 @@ MFC bir alt kümesi, en etkin Şablon kitaplığı (ATL), tasarlanmış olmasın
  (Örneğin, ActiveX denetimleri, etkin belge kapsaması, OLE ve benzeri) etkin teknolojileri, ağ ortamında, oldukları diline bakılmaksızın birbiriyle etkileşim kurmak yazılım bileşenlerini etkinleştirmek için Bileşen Nesne Modeli (COM) kullanın. oluşturuldu. Etkin teknoloji, masaüstü veya Internet üzerinde çalışan uygulamalar oluşturmak için kullanılabilir. Daha fazla bilgi için [COM'a giriş](../atl/introduction-to-com.md) veya [Bileşen Nesne modeli](/windows/desktop/com/the-component-object-model).  
   
  Etkin teknoloji, aşağıdakiler dahil olmak üzere, istemci ve sunucu teknolojileri şunları içerir:  
-  
--   [Etkin belge kapsaması](../mfc/active-document-containment.md)4.2 MFC sürümlerinde de desteklenir ve daha sonra kullanıcıların görüntülemesine olanak tanır [etkin belgeler](../mfc/active-documents.md) (Microsoft Excel veya Word dosyaları gibi) ve belgenin yerel tüm arabirimi etkinleştirin tüm istemci alanını uygulaması bir [etkin belge kapsayıcı](../mfc/active-document-containers.md) Microsoft Office Binder ya da Microsoft Internet Explorer gibi. Tarafından sağlanan belgeleri sırada kapsayıcıları istemcileri olarak davranan [etkin belge sunucuları](../mfc/active-document-servers.md). Etkin belgeler Internet uygulamalarında kullanma hakkında daha fazla bilgi için bkz: [Internet'te etkin belgeler](../mfc/active-documents-on-the-internet.md).  
   
 -   ActiveX denetimleri, bir Web sitesi gibi kapsayıcılar kullanılabilir etkileşimli nesnelerdir. ActiveX denetimleri hakkında daha fazla bilgi için bkz:  
   

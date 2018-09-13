@@ -1,7 +1,7 @@
 ---
 title: . YİNELEME | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -16,24 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41e3dadaa95cb4bf0ca4a17af32332d5b5471245
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 8856ed0e1d86277a413baac2c56e5c5ca2ea9ff0
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32052456"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "43687958"
 ---
 # <a name="repeat"></a>.REPEAT
-Bloğunu yürütülmesi yineler kod oluşturur *deyimleri* kadar `condition` true olur. [. UNTILCXZ](../../assembler/masm/dot-untilcxz.md), CX sıfır, hangi true olur yerine kullanılır [. KADAR](../../assembler/masm/dot-until.md). `condition` İle isteğe bağlı olduğu **. UNTILCXZ**.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-   .REPEAT  
-statements  
-.UNTIL condition  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)
+
+Bloğunu yürütülmesini tekrarlar kod oluşturur *deyimleri* kadar `condition` true olur. [. UNTILCXZ](../../assembler/masm/dot-untilcxz.md), CX sıfır olduğunda, true olur yerine kullanılır [. KADAR](../../assembler/masm/dot-until.md). `condition` İle isteğe bağlı olduğu **. UNTILCXZ**.
+
+## <a name="syntax"></a>Sözdizimi
+
+> .REPEAT<br/>
+> deyimler<br/>
+> . Koşul kadar
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Yönergeler Başvurusu](../../assembler/masm/directives-reference.md)<br/>

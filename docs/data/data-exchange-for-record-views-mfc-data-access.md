@@ -19,19 +19,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 58bda2d9a712e38951b8201c08e5bbbe369537eb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4041feb4e8e2b2f57a2a195f0086d6174491015f
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/13/2018
 ms.locfileid: "33089421"
 ---
 # <a name="data-exchange-for-record-views---mfc-data-access"></a>Kayıt görünümleri (MFC veri erişimi) için veri değişimi
-Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) kayıt görünümünün iletişim şablon kaynağı denetimlerinde kayıt alanlarına eşlemek için her iki yönde veri değişimi framework yönetir — denetimlerine kayıt kümesi ve kayıt kümesine denetimleri. DDX mekanizmasını kullanarak kendiniz geri ve İleri veri aktarmak için kod yazmanız gerekmez anlamına gelir.  
+Kullandığınızda [sınıfı Ekle](../mfc/reference/adding-an-mfc-odbc-consumer.md) kayıt görünümünün iletişim şablon kaynağı denetimlerinde kümesinin alanları eşleştirmek için çift yönlü veri değişimi framework yönetir; denetimleri için kayıt ve kayıt kümesine denetimleri. DDX mekanizması kullanarak kendiniz geri ve İleri veri aktarımı için kod yazmanız gerekmez anlamına gelir.  
   
- Kayıt görünümleri için DDX çalışır birlikte [RFX](../data/odbc/record-field-exchange-rfx.md) sınıfının kayıt kümeleri için `CRecordset` (ODBC).  RFX veri kaynağının geçerli kaydı ve bir kayıt kümesi nesnesi alan veri üyeleri arasında verileri taşır. DDX formundaki denetimler için alan veri üyeleri verileri taşır. Bu birleşim başlangıçta ve kullanıcı kayıttan kayda form denetimlerini doldurur. Bu da güncelleştirilmiş verileri geri kayıt kümesi ve ardından veri kaynağını taşıyabilirsiniz.  
+ Kayıt görünümleri için DDX çalışır birlikte [RFX](../data/odbc/record-field-exchange-rfx.md) sınıfın kayıt kümeleri için `CRecordset` (ODBC).  RFX veri kaynağının geçerli kayıt ve kayıt kümesi nesnesi alan veri üyeleri arasında verileri taşır. DDX veri alan veri üyeleri ' form denetimlerinde taşır. Bu birleşim, başlangıçta ve kullanıcı kayıttan kayda form denetimlerini doldurur. Bu da güncelleştirilmiş verileri geri kayıt ve ardından veri kaynağını taşıyabilirsiniz.  
   
- Aşağıdaki şekil kayıt görünümleri için DDX ve RFX arasındaki ilişkiyi gösterir.  
+ Aşağıdaki şekil, kayıt görünümleri için DDX RFX arasındaki ilişkiyi gösterir.  
   
  ![İletişim&#45;veri değişimi ve kayıt&#45;alan exchange](../data/media/vc37xt1.gif "vc37xt1")  
 İletişim kutusu veri değişimi ve kayıt alanı değişimi  

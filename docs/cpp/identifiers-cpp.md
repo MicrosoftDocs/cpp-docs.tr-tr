@@ -1,7 +1,7 @@
 ---
 title: Tanımlayıcılar (C++) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-language
 ms.topic: language-reference
@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d112e7ca192e56ede21d06e7ff17a775d661d01
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: cad3c53be23d472a8ce40dae9056d73ab1de1c89
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405236"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535151"
 ---
 # <a name="identifiers-c"></a>Tanımlayıcılar (C++)
 Bir tanımlayıcı, aşağıdakilerden birini belirtmek için kullanılan karakter dizisidir:  
@@ -104,7 +104,7 @@ int main() {
   
  Tanımlayıcılar tam olarak aynı yazım ve çalışması olarak anahtar sözcükler olamaz. Anahtar sözcük içeren tanımlayıcılar kullanılabilir. Örneğin, `Pint` içerse yasal bir tanımlayıcısı olan **int**, bir anahtar sözcük olduğu.  
   
- İki ardışık alt çizgi karakterleri kullanımını ( **__** ) bir tanımlayıcı veya büyük harf ve ardından tek bir başındaki altçizgiyi başında, tüm kapsamlarda C++ uygulamaları için ayrılmıştır. Bir alt çizgi bir küçük harf dosya kapsamına sahip adlar için geçerli veya gelecek ayrılmış tanımlayıcılarla olası çakışmaları ardından kullanarak kaçınmanız gerekir.  
+ İki ardışık alt çizgi karakterleri kullanımını ( **__** ) bir tanımlayıcı veya büyük harf ve ardından tek bir öncesinde alt çizgi, tüm kapsamlarda C++ uygulamaları için ayrılmıştır. Bir alt çizgi bir küçük harf dosya kapsamına sahip adlar için geçerli veya gelecek ayrılmış tanımlayıcılarla olası çakışmaları ardından kullanarak kaçınmanız gerekir.  
   
 ## <a name="see-also"></a>Ayrıca bkz.  
  [Sözcük Temelli Kurallar](../cpp/lexical-conventions.md)

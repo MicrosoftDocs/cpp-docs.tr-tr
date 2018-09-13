@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: ActiveX denetimlerini dağıtma | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -35,50 +35,54 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d052b2d77df8b3209671b4330347ef642877e47a
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: d400bf09d2fd3484b573112d87735ce0a74d944e
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928888"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534904"
 ---
 # <a name="mfc-activex-controls-distributing-activex-controls"></a>MFC ActiveX Denetimleri: ActiveX Denetimlerini Dağıtma
-Bu makalede ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  
+Bu makalede, ActiveX denetimlerini yeniden dağıtma için ilgili çeşitli sorunlar ele alınmıştır:  
   
 -   [ANSI veya Unicode denetim sürümleri](#_core_ansi_or_unicode_control_versions)  
   
--   [ActiveX denetimleri ve yeniden dağıtılabilir DLL'leri yükleme](#_core_installing_activex_controls_and_redistributable_dlls)  
+-   [ActiveX denetimleri ve yeniden dağıtılabilir DLL'lerinin yükleme](#_core_installing_activex_controls_and_redistributable_dlls)  
   
--   [Denetimleri kaydetme](#_core_registering_controls)  
+-   [Denetimlerini kaydetme](#_core_registering_controls)  
+
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
 ##  <a name="_core_ansi_or_unicode_control_versions"></a> ANSI veya Unicode denetim sürümleri  
- ANSI veya Unicode bir sürüm denetim ya da her ikisini de dağıtmayı karar vermeniz gerekir. Bu karara ANSI ve Unicode karakter kümesi yapısında taşınabilirlik faktörleri temel alır.  
+ Bir denetim ya da her ikisini de ANSI veya Unicode sürümü dağıtmayı karar vermeniz gerekir. Bu kararı ANSI ve Unicode karakter kümelerindeki doğal taşınabilirlik etkenlere bağlıdır.  
   
- Tüm Win32 işletim sistemlerinde çalışabilir, ANSI denetimleri çeşitli Win32 işletim sistemleri arasında en fazla taşınabilirlik izin verir. Unicode denetimleri yalnızca Windows NT (3.51 veya sonraki bir sürümü), ancak Windows 95 veya Windows 98 üzerinde çalışır. Taşınabilirlik birincil önceliğiniz, sevk ANSI denetimleri ise. Denetimleri yalnızca Windows NT üzerinde çalıştırırsanız, Unicode denetimleri gönderebilirsiniz. Her ikisi de sevk ve kullanıcının işletim sistemi için en uygun sürümünü yükleyin, uygulamaya sahip seçebilir.  
+ Çeşitli Win32 işletim sistemleri arasında en fazla taşınabilirlik için tüm Win32 işletim sistemlerinde çalışan, ANSI denetimleri sağlar. Unicode denetim, yalnızca Windows NT (sürüm 3.51 sürümü veya üstü), ancak Windows 95 ya da Windows 98 çalışır. Taşınabilirlik, birincil sevk ANSI denetimleri önemliyse. Denetimleri yalnızca Windows NT çalıştıracaksanız, Unicode denetim sevk edebilir. Ayrıca, her ikisi de gönderin ve kullanıcının işletim sistemi için en uygun sürümünü yüklemek uygulamanızı oluşturdunuz seçebilirsiniz.  
   
-##  <a name="_core_installing_activex_controls_and_redistributable_dlls"></a> ActiveX denetimleri ve yeniden dağıtılabilir DLL'leri yükleme  
- ActiveX denetimleri ile sağladığınız Kurulum programı Windows dizinin özel bir alt dizini oluşturmak ve denetimleri yükleyin. OCX dosyaları.  
+##  <a name="_core_installing_activex_controls_and_redistributable_dlls"></a> ActiveX denetimleri ve yeniden dağıtılabilir DLL'lerinin yükleme  
+ Kurulum programı, ActiveX denetimleriyle sağlamanız Windows dizininin özel bir alt oluşturun ve denetimleri yükle. İçindeki dosyaların OCX.  
   
 > [!NOTE]
->  Windows kullanan `GetWindowsDirectory` Windows dizinin adını almak için Kurulum programı API. Alt dizin adı, şirketinizi veya ürününüzü adından türetilen isteyebilirsiniz.  
+>  Windows kullanan `GetWindowsDirectory` Windows dizinin adını almak için Kurulum programınız API. Alt ad şirketinizi veya ürününüzü adından türetilir isteyebilirsiniz.  
   
- Kurulum programı gerekli redistributable DLL dosyaları Windows sistem dizininde yüklemeniz gerekir. DLL zaten kullanıcının makinesinde varsa, Kurulum programı sürümlerine yüklemekte olduğunuz sürümleriyle karşılaştırmanız gerekir. Yalnızca sürüm numarası zaten yüklü dosyadan daha yüksek olduğunda bir dosyayı yeniden yükleyin.  
+ Kurulum programını yeniden dağıtılabilir gerekli DLL dosyalarının Windows sistem dizininde yüklemeniz gerekir. DLL zaten kullanıcının makinesine varsa, Kurulum programı sürümlerine yüklemekte olduğunuz sürümleri ile karşılaştırmanız gerekir. Yalnızca sürüm numarasının zaten yüklü dosyasından daha yüksekse, bir dosyayı yeniden yükleyin.  
   
- ActiveX denetimleri yalnızca OLE kapsayıcı uygulamaları kullanılabildiğinden, tamamını OLE DLL'leri denetimleri ile dağıtmak için gerek yoktur. İçeren uygulama (veya işletim sistemi) standart OLE yüklü DLL'leri olduğunu kabul edilebilir.  
+ ActiveX denetimleri yalnızca OLE kapsayıcı uygulamalarında kullanılabildiğinden OLE DLL'leri denetimleri ile tam kümesini dağıtmak için gerek yoktur. İçeren uygulama (veya işletim sistemi) standart OLE yüklü DLL'leri olduğunu varsayabilirsiniz.  
   
-##  <a name="_core_registering_controls"></a> Denetimleri kaydetme  
- Uygun girişleri denetim kullanılabilmesi için Windows kayıt veritabanında oluşturulmalıdır. Bazı ActiveX denetimi kapsayıcıları için kullanıcıların yeni denetimler kaydetmek menü öğesi sağlasa da, bu özellik tüm kapsayıcıları kullanılabilir durumda olmayabilir. Bu nedenle, yüklendiklerinde denetimleri kaydetmek için Kurulum programı isteyebilirsiniz.  
+##  <a name="_core_registering_controls"></a> Denetimlerini kaydetme  
+ Uygun girişleri denetim kullanılabilmesi için Windows kayıt defteri veritabanındaki oluşturulmalıdır. Bazı ActiveX denetimi kapsayıcıları için menü öğesi için yeni denetimler kaydedin açmasına sağlasa da, bu özellik tüm kapsayıcılarda kullanılamayabilir. Bu nedenle yüklendiklerinde denetimleri kaydetmek için Kurulum programınıza isteyebilirsiniz.  
   
- İsterseniz, Denetim bunun yerine doğrudan kaydetmek için Kurulum programı yazabilirsiniz.  
+ Tercih ederseniz, bunun yerine denetimi doğrudan kaydetmek için Kurulum programı yazabilirsiniz.  
   
- Kullanım `LoadLibrary` Windows API'ı denetimi DLL yüklenemiyor. Ardından, kullanın `GetProcAddress` "DllRegisterServer" işlevi adresini elde edin. Son olarak, arama `DllRegisterServer` işlevi. Aşağıdaki kod örneği, olası bir yöntemi gösterir nerede `hLib` denetim kitaplığı tanıtıcısı depolar ve `lpDllEntryPoint` "DllRegisterServer" işlevin adresini depolar.  
+ Kullanım `LoadLibrary` Windows API'ı denetim DLL yüklenemedi. Ardından, `GetProcAddress` "DllRegisterServer" işlevin adresini almak için. Son olarak, çağrı `DllRegisterServer` işlevi. Aşağıdaki kod örneği, olası bir yöntemi gösterir burada `hLib` denetim kitaplığı tanıtıcısını depolar ve `lpDllEntryPoint` "DllRegisterServer" işlevin adresini depolar.  
   
  [!code-cpp[NVC_MFC_AxCont#16](../mfc/codesnippet/cpp/mfc-activex-controls-distributing-activex-controls_1.cpp)]  
   
- Denetimi doğrudan kaydetme avantajı, çağırma ve ayrı bir işlemde (yani, REGSVR32) yüklemek yükleme süresini azaltma değil olmanızdır. Ayrıca, kayıt iç işlem olduğundan, Kurulum programı hataları işleyebilir ve öngörülemeyen durumlarda bir dış işlem iyi olabilir.  
+ Denetimi doğrudan kaydetme avantajı, çağırma ve ayrı bir işlemde (yani, REGSVR32) yüklemek yükleme süresini azaltarak değil olmanızdır. Ayrıca, kayıt bir iç işlem olduğundan, Kurulum programı hataları işleyebilir ve öngörülemeyen durumlarda bir dış işlem iyi olabilir.  
   
 > [!NOTE]
->  ActiveX denetimi, Kurulum programı yüklemeden önce çağırmalıdır `OleInitialize`. Kurulum programı tamamlandığında, çağrı `OleUnitialize`. Bu ActiveX denetimini kaydettirmek için uygun durumda OLE sistem DLL'leri olan sağlar.  
+>  ActiveX denetimi, Kurulum programı yüklemeden önce çağırmalıdır `OleInitialize`. Kurulum programınıza sona erdiğinde, çağrı `OleUnitialize`. Bu şekilde, bir ActiveX denetimi kaydetmek için uygun durumda OLE sistem DLL'lerini olmasını sağlar.  
   
  MFCx0.DLL kaydetmeniz.  
   

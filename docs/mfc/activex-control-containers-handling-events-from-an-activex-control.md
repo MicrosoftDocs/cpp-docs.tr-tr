@@ -1,7 +1,7 @@
 ---
 title: 'ActiveX denetimi kapsayıcıları: ActiveX denetimindeki etkinlikleri işleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -21,56 +21,60 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a3844788330cfe79366221ee215c437fc4aefc8
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: bf642a5485ed7659e313467679f57ceda7eead19
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36930667"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534878"
 ---
 # <a name="activex-control-containers-handling-events-from-an-activex-control"></a>ActiveX Denetimi Kapsayıcıları: ActiveX Denetimindeki Etkinlikleri İşleme
-Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak anlatılmaktadır. Olay işleyicileri belirli olaylar (denetiminden ek olarak) bildirimlerini almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olay tetikleme" adı verilir.  
+Bu makalede, bir ActiveX denetimi kapsayıcısı ActiveX denetimleri için olay işleyicileri yüklemek için Özellikler penceresini kullanarak açıklanmaktadır. Olay işleyicileri, belirli olaylar (denetiminden) bildirimleri almak ve yanıt olarak bazı eylemleri gerçekleştirmek için kullanılır. Bu bildirim, "olayı tetiklenmekte" adı verilir.
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+  
   
 > [!NOTE]
->  Bu makalede, kapsayıcı ve yordamları ve kod örnekleri olarak Dai adlı bir katıştırılmış denetimi adlı iletişim tabanlı ActiveX denetimi kapsayıcısı projesi kullanır.  
+>  Bu makalede, kapsayıcı ve yordamları ve kod örnekleri olarak Dai adlı bir katıştırılmış denetime adlı bir iletişim kutusu tabanlı ActiveX denetimi kapsayıcısı proje kullanır.  
   
- Özellikler penceresinde Events düğmesini kullanarak ActiveX denetimi kapsayıcısı uygulamanızda oluşabilir olayları haritasını oluşturabilirsiniz. Bir "olay havuz eşlemesi,'' adlandırılan bu harita oluşturulur ve denetim kapsayıcı sınıfına olay işleyicileri eklediğinizde Visual C++ tarafından korunur. Bir olay eşleme girişi ile uygulanan her olay işleyicisi belirli bir olay bir kapsayıcı olay işleyicisi üye işlevine eşler. ActiveX denetim nesnesi tarafından belirtilen olay başlatıldığında bu olay işleyicisi işlevi çağrılır.  
+ Özellikler penceresinde olayları düğmesini kullanarak ActiveX denetimi kapsayıcısı uygulamanızda oluşabilecek olayları haritasını oluşturabilirsiniz. Bir "olay havuzu eşlemesi,'' adlı bu harita, oluşturulur ve denetim kapsayıcısı sınıfına olay işleyicisi eklediğinizde, Visual C++ tarafından korunur. Olay eşleme girişi ile uygulanan, her bir olay işleyicisi, bir kapsayıcı olay işleyicisi üye işlevi için belirli bir olay eşler. ActiveX denetim nesnesi tarafından belirtilen olay tetiklendiğinde bu olay işleyicisi işlevi çağrılır.  
   
- Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz: [olay iç havuz eşlemeleri](../mfc/reference/event-sink-maps.md) içinde *sınıf kitaplığı başvurusu*.  
+ Olay iç havuz eşlemeleri hakkında daha fazla bilgi için bkz. [olay iç havuz eşlemeleri](../mfc/reference/event-sink-maps.md) içinde *sınıf kitaplığı başvurusu*.  
   
-##  <a name="_core_event_handler_modifications_to_the_project"></a> Olay işleyici değişiklikler projeye  
- Olay işleyicileri eklemek için Özellikler penceresini kullandığınızda, bir olay havuz eşlemesi bildirilen ve projenizde tanımlı. Aşağıdaki deyimleri denetimine eklenir. CPP dosya ilk kez bir olay işleyicisi eklenir. Bu kod, bir olay havuz eşlemesi iletişim kutusu sınıfı için bildirir (Bu durumda, `CContainerDlg`):  
+##  <a name="_core_event_handler_modifications_to_the_project"></a> Olay işleyicisi değişiklikleri projeye  
+ Olay işleyicileri eklemek için Özellikler penceresini kullandığınızda, bir olay havuzu eşlemesi bildirildi ve projenizde tanımlanan. Aşağıdaki deyimleri denetimi eklenir. CPP dosyasına ilk kez bir olay işleyicisi eklenir. Bu kod, iletişim kutusu sınıfı için bir olay havuzu eşlemesi bildirir. (Bu durumda, `CContainerDlg`):  
   
  [!code-cpp[NVC_MFC_AxCont#8](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_1.cpp)]  
 [!code-cpp[NVC_MFC_AxCont#9](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_2.cpp)]  
   
- Olay eklemek için Özellikler penceresini kullanın gibi bir olay eşleme girişi (`ON_EVENT`) eklenir olay havuz eşlemesi ve bir olay işleyicisi işlevi kapsayıcının uygulamasına eklenir (. CPP) dosyası.  
+ Olay eklemek için Özellikler penceresini kullanın gibi bir olay eşleme girişi (`ON_EVENT`) eklendiğinde olay havuzu eşlemesi ve bir olay işleyicisi işlevi kapsayıcının uygulamasına eklendi (. CPP) dosyası.  
   
  Aşağıdaki örnek adlı bir olay işleyicisi bildirir `OnClickInCircCtrl`, Dai denetimin için `ClickIn` olay:  
   
  [!code-cpp[NVC_MFC_AxCont#10](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_3.cpp)]  
   
- Ayrıca, aşağıdaki şablonu eklenen `CContainerDlg` sınıf uygulama (. Olay işleyici üye işlevi için CPP) dosyası:  
+ Ayrıca, aşağıdaki şablon eklenir `CContainerDlg` sınıf uygulama (. Olay işleyicisi üye işlev için CPP) dosyası:  
   
  [!code-cpp[NVC_MFC_AxCont#11](../mfc/codesnippet/cpp/activex-control-containers-handling-events-from-an-activex-control_4.cpp)]  
   
- Olay iç havuz makroları hakkında daha fazla bilgi için bkz: [olay iç havuz eşlemeleri](../mfc/reference/event-sink-maps.md) içinde *sınıf kitaplığı başvurusu*.  
+ Olay havuzu makrolar hakkında daha fazla bilgi için bkz. [olay iç havuz eşlemeleri](../mfc/reference/event-sink-maps.md) içinde *sınıf kitaplığı başvurusu*.  
   
-#### <a name="to-create-an-event-handler-function"></a>Bir olay işleyicisi işlevi oluşturmak için  
+#### <a name="to-create-an-event-handler-function"></a>Bir olay işleyici işlevi oluşturmak için  
   
-1.  Sınıf görünümünden ActiveX denetimini içeren iletişim kutusu sınıfı seçin. Bu örneğin `CContainerDlg`.  
+1.  Sınıf Görünümü'ndeki ActiveX denetimini içeren bir iletişim kutusu sınıfı seçin. Bu örneğin `CContainerDlg`.  
   
-2.  Özellikler penceresinde **olayları** düğmesi.  
+2.  Özellikler penceresinde tıklayın **olayları** düğmesi.  
   
-3.  Özellikler penceresinde katıştırılmış ActiveX denetiminin denetim kimliği seçin. Bu örneğin `IDC_CIRCCTRL1`.  
+3.  Özellikler penceresinde, katıştırılmış ActiveX denetimi denetim Kimliğini seçin. Bu örneğin `IDC_CIRCCTRL1`.  
   
-     Özellikler penceresini katıştırılmış ActiveX denetimi tarafından tetiklenen olaylar listesini görüntüler. Zaten kalın olarak gösterilen herhangi bir üye işlevini atanmış işleyici işlevleri vardır.  
+     Özellikler penceresinde katıştırılmış ActiveX denetimi tarafından tetiklenen olayların listesini görüntüler. Hiçbir üye işlevini kalın yazılarak gösterilmiştir zaten atanmış işleyici işlevleri vardır.  
   
-4.  İşlemek için iletişim kutusu sınıfı istediğiniz olayı seçin. Bu örnek için select **tıklatın**.  
+4.  İşlemek için iletişim kutusu sınıfı istediğiniz olayı seçin. Bu örnekte, seçin **tıklayın**.  
   
 5.  Sağdaki aşağı açılan liste kutusundan seçin  **\<Ekle > ClickCircctrl1**.  
   
-6.  Olay işleyicisi kodunu uygulamalarında atlamak için sınıf görünümünden yeni işleyici işlevi çift tıklatın (. CPP) dosyasının `CContainerDlg`.  
+6.  Uygulama olay işleyici kodunun atlamak için sınıf görünümünden yeni işleyici işlevi çift tıklayın (. CPP) dosyası `CContainerDlg`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)

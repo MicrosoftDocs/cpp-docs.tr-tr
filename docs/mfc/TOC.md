@@ -141,7 +141,6 @@
 ### [MFC Uygulamaları Yazma](writing-mfc-applications.md)
 ### [Internet'te ActiveX Denetimleri](activex-controls-on-the-internet.md)
 ### [Varolan Bir ActiveX Denetimini Güncelleştirme](upgrading-an-existing-activex-control.md)
-### [Internet'te Etkin Belgeler](active-documents-on-the-internet.md)
 ### [Internet'teki Zaman Uyumsuz Adlar](asynchronous-monikers-on-the-internet.md)
 ### [Internet Uygulamalarını Test Etme](testing-internet-applications.md)
 ### [Internet Güvenliği (C++)](internet-security-cpp.md)

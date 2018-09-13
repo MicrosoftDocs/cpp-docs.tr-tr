@@ -12,27 +12,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: caa6d435db98c7177cbf55b866bb8e5a4a110c1d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 22c2afae3678e945678862059034b4d60be456b0
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/13/2018
 ms.locfileid: "32380608"
 ---
 # <a name="stack-allocation"></a>Yığın Ayırma
-Bir işlevin giriş yerel değişkenler için yığın alanı ayırma için sorumlu, kaydedilmiş yazmaçlar, parametreleri yığın ve parametreleri kaydedin.  
+Bir işlevin giriş yığın alanı yerel değişkenler için sorumlu olan, kaydedilmiş yazmaçlar, parametreleri yığın ve parametreleri kaydedin.  
   
- (Alloca kullanılır) parametre alanını her zaman yığının sonuna olsa dahi, böylece her zaman herhangi bir işlev çağrısı sırasında dönüş adresi bitişik olacak. En az dört girdiler içeriyor ancak her zaman tüm parametreleri tutmak için yeterli alan çağrılabilir herhangi bir işlev gerekli. Parametreleri kendilerini hiçbir zaman yığına barındırılan olsa bile alan kayıt parametreleri için her zaman ayrılır unutmayın; bir Aranan alanı tüm parametreleri için ayrıldı garanti edilmez. Çağrılan işlev bağımsız değişken listesi (va_list) ya da tek bir bağımsız değişkeni adresini yapılacak gerekebileceği ardışık bir alanı kullanılabilir olacak şekilde ev adresleri kayıt bağımsız değişkenleri için gereklidir. Bu alan aynı zamanda kayıt bağımsız değişkenleri dönüştürücü yürütme sırasında ve hata ayıklama seçeneği olarak kaydetmek için uygun bir yer sağlar (örneğin, bağımsız değişkenleri giriş kodunda ev adreslerini depolanıyorsa hata ayıklama sırasında bulmayı kolaylaştırır). Çağrılan işlev 4 adetten daha az parametreleri olsa bile bu 4 yığının konumları etkili bir şekilde çağrılan işlev tarafından sahip olunan ve parametre kayıt değerlerini kaydetme yanı sıra diğer amaçlar için çağrılan işlev tarafından kullanılıyor olabilir.  Bu nedenle arayan bilgileri yığınının bu bölgede bir işlev aramasıyla kaydedemeyebilir.  
+ Parametre alanı (alloca kullanılsa bile), her zaman yığının en altında olan, böylece bu her zaman herhangi bir işlev çağrısı sırasında dönüş adresi için bitişik olacaktır. En az dört girişler içeriyor, ancak tüm parametreleri tutmak için yeterli alan çağrılabilir hiçbir işlev tarafından her zaman gerekli. Parametreleri yığına hiçbir zaman barındırılan olsa bile alan kayıt parametreleri için her zaman ayrılır dikkat edin. bir çağrılan alanı tüm parametreleri için ayrıldı garanti edilir. Bağımsız değişken listesi (va_list) ya da tek bir bağımsız değişken adresini almak çağrılan işlev ihtiyacı ardışık bir alanı kullanılabilir olması, ev adresleri yazmaç bağımsız değişkenleri gereklidir. Bu alan ayrıca kayıt bağımsız değişkenleri dönüştürücü yürütme sırasında ve hata ayıklama seçeneği olarak kaydetmek için uygun bir yer sağlar (örneğin, bağımsız değişkenler ev adreslerini giriş kodu içinde depolanıyorsa hata ayıklama sırasında bulmayı kolaylaştırır). Çağrılan işlev en az 4 parametreleri olsa bile, bu 4 yığın konumlarının etkili bir şekilde çağrılan işlev tarafından sahip olunan ve parametre kayıt değerlerini kaydetme yanı sıra diğer amaçlar için çağrılan işlev tarafından kullanılıyor olabilir.  Bu nedenle arayan bilgileri yığınının bu bölgede bir işlev çağrısı kaydedemeyebilir.  
   
- Alan bir işlevde (alloca) dinamik olarak ayrılır, kalıcı bir kayıt temeli yığın sabit bir parçası olan işaretlemek için bir çerçeve işaretçisi olarak kullanılması gerekir ve bu kayıt kaydedilir ve giriş başlatıldı. Alloca kullanıldığında, aynı Aranan çağrıları aynı kayıt parametreleri için farklı ev adresleri gerekebileceğini unutmayın.  
+ Alan bir işlevde (alloca) dinamik olarak ayrılır, yığın sabit parçası tabanı işaretlemek için bir çerçeve işaretçisi olarak kalıcı bir kayıt kullanılmalıdır ve konusu kasaya kaydedilir ve giriş bölümünde başlatılır. Alloca kullanıldığında, aynı çağrılan çağrıları aynı kayıt parametreleri için farklı ev adresleri gerekebileceğini unutmayın.  
   
- Yığın her zaman 16 bayt sürdürüleceği hizalanmış olarak dışındaki giriş (örneğin dönüş adresi gönderilen sonra) içinde ve belirtilen yerlerde dışındaki [işlev türleri](../build/function-types.md) çerçeve işlevlerin belirli bir sınıf için.  
+ Yığın her zaman 16 baytlık korunur hizalanmış, giriş (örneğin, sonra dönüş adresi gönderilir) ve belirtilen belirtilmediği [işlev türleri](../build/function-types.md) çerçeve işlevlerinin belirli bir sınıf için.  
   
- Burada bir işlev çağrılarını yaprak olmayan B. işlev A'ın giriş işlev yığın düzeni örneği zaten alt kısmındaki yığın b'de gerektirdiği tüm kayıt ve yığın parametreleri için alan ayırdığı verilmiştir. Dönüş adresi çağrı iter, B'nin giriş kendi yerel değişkenler, kalıcı Yazmaçları ve işlevleri çağırmak için ihtiyaç duyulan alanı için alan ayırır. B alloca kullanıyorsa, alan yerel değişken/kalıcı kayıt kaydetme alanı ve parametre yığın alanı arasında ayrılır.  
+ Burada A'dan B'ye işlevi giriş yaprak olmayan bir işlev çağrıları işlev yığın düzeni örneği zaten yığının sonuna B için gerekli tüm kayıt ve yığın parametreler için alanı ayırdığı verilmiştir. Çağrının dönüş adresi gönderir ve yerel değişkenleri ve kalıcı kayıtlar işlevleri çağırmak için ihtiyaç duyulan alanı B kullanıcısının giriş alanı ayırır. B alloca kullanıyorsa, yerel değişken/kalıcı kayıt kaydetme alanı arasında parametre yığın alanı alanı ayrılır.  
   
- ![AMD Dönüşüm örneği](../build/media/vcamd_conv_ex_5.png "vcAmd_conv_ex_5")  
+ ![AMD dönüştürme örnek](../build/media/vcamd_conv_ex_5.png "vcAmd_conv_ex_5")  
   
- Dönüş adresi B işlevi başka bir işlevi aradığında, yalnızca aşağıdaki ev adresi RCX için gönderilir.  
+ Dönüş adresi B işlevi başka bir işlevi çağırdığında, yalnızca aşağıdaki ev adresi RCX için gönderilir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Yığın Kullanımı](../build/stack-usage.md)

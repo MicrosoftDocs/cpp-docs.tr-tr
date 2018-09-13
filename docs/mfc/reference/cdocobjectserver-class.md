@@ -1,7 +1,7 @@
 ---
 title: CDocObjectServer sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 701cfc2f8a88f57a1c50c9c4310ecd21154ef09a
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 156480c05833b9d653a903986a37f77878c37671
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337872"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535294"
 ---
 # <a name="cdocobjectserver-class"></a>CDocObjectServer sınıfı
 Normal hale getirmek için gereken ek OLE arabirimlerini uygular `COleDocument` sunucu bir tam DocObject sunucusuna: `IOleDocument`, `IOleDocumentView`, `IOleCommandTarget`, ve `IPrint`.  
@@ -71,7 +71,7 @@ class CDocObjectServer : public CCmdTarget
   
  DocObject sunucunuzun özelleştirmek için kendi sınıfından türetilen `CDocObjectServer` ve kendi görünüm Kurulum işlevleri geçersiz kılma [OnActivateView](#onactivateview), [OnApplyViewState](#onapplyviewstate), ve [OnSaveViewState ](#onsaveviewstate). Sınıfınıza yanıt framework çağrıları olarak yeni bir örneğini sağlamanız gerekir.  
   
- DocObjects hakkında daha fazla bilgi için bkz: [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md) ve [Colecmduı](../../mfc/reference/colecmdui-class.md) içinde *MFC başvurusu*. Ayrıca bkz: [Internet ilk adımlar: etkin belgeler](../../mfc/active-documents-on-the-internet.md) ve [etkin belgeler](../../mfc/active-documents-on-the-internet.md).  
+ DocObjects hakkında daha fazla bilgi için bkz: [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md) ve [Colecmduı](../../mfc/reference/colecmdui-class.md) içinde *MFC başvurusu*.  
   
  Ayrıca aşağıdaki Bilgi Bankası makalesine bakın:  
   

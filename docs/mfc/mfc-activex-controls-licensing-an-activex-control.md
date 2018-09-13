@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: ActiveX denetimini lisanslama | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -21,106 +21,109 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b0b1e8f0c54cf4d409aedb99fc3195b927d5f127
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 115cddbda3323ee3c6450bc30f0a959c346c5d72
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929750"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535274"
 ---
 # <a name="mfc-activex-controls-licensing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Lisanslama
-Destek lisanslama, ActiveX denetimlerinin, isteğe bağlı bir özellik sağlar. kullanabilir veya denetim dağıtmak kimin. (Lisans sorunları lisans sorunları, ek açıklama için bkz [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).)  
+Destek lisanslama, ActiveX denetimlerinin, isteğe bağlı bir özellik sayesinde kullanın veya denetim dağıtmak mümkün olan denetim. (Lisans sorunları ek açıklaması için bkz: Lisans sorunları [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).)  
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
- Bu makalede aşağıdaki konular ele alınmıştır:  
+ Bu makalede, aşağıdaki konular ele alınmaktadır:  
   
 -   [ActiveX denetimini lisanslama genel bakış](#_core_overview_of_activex_control_licensing)  
   
--   [Lisanslı denetimi oluşturma](#_core_creating_a_licensed_control)  
+-   [Lisanslı bir denetim oluşturma](#_core_creating_a_licensed_control)  
   
 -   [Lisans desteği](#_core_licensing_support)  
   
 -   [Bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control)  
   
- Lisans uygulamak ActiveX denetimleri, diğer kişilerin ActiveX denetimini nasıl kullanılacağını belirlemek için denetim geliştiricisi olarak, izin verin. Denetimle denetim satın alan sağlamak ve. LİS dosyasıyla satın alan kişinin denetim dağıtacağını ancak anlaşma. Denetimi kullanan bir uygulama ile lisans sözleşmesi dosyası. Bu, kullanıcıların, denetimden ilk lisans olmadan denetim kullanan yeni uygulamalar yazmasını uygulamasının engeller.  
+ Lisanslama uygulayan ActiveX denetimleri, diğer kişilerin ActiveX denetimini nasıl kullanacağını belirleme denetim geliştiriciyseniz izin verin. Denetim yerleştirmesi denetimle sağlayın ve. LİS dosyasıyla satın alan denetimi dağıtacağını ancak sözleşme. Denetimi kullanan bir uygulama ile lisans sözleşmesi dosyası. Bu denetim, Denetim ilk lisans olmadan kullanan yeni uygulamalar yazma, uygulamanın kullanıcıları engeller.  
   
 ##  <a name="_core_overview_of_activex_control_licensing"></a> ActiveX denetimini lisanslama genel bakış  
- ActiveX denetimleri için lisans desteği sağlamak için [COleObjectFactory](../mfc/reference/coleobjectfactory-class.md) SAX çeşitli işlevleri için uygulama `IClassFactory2` arabirimi: `IClassFactory2::RequestLicKey`, `IClassFactory2::GetLicInfo`, ve `IClassFactory2::CreateInstanceLic`. Kapsayıcı uygulama geliştiricisinin denetimi, bir çağrı örneğini oluşturmak için bir istek zaman hale getirir `GetLicInfo` doğrulamak için yapılan denetim. LİS dosya yok. Denetim lisanslanmışsa denetim örneği oluşturulur ve kapsayıcısında yerleştirilir. Geliştirici kapsayıcı uygulaması oluşturma tamamlandıktan sonra başka bir işlev çağrısı, bu sefer `RequestLicKey`, yapılır. Bu işlev, kapsayıcı uygulamaya bir lisans anahtarı (Basit karakter dizesi) döndürür. Döndürülen anahtar ardından uygulamada katıştırılır.  
+ ActiveX denetimleri için lisanslama destek sağlamak üzere [COleObjectFactory](../mfc/reference/coleobjectfactory-class.md) SAX içinde çeşitli işlevler için bir uygulama `IClassFactory2` arabirimi: `IClassFactory2::RequestLicKey`, `IClassFactory2::GetLicInfo`, ve `IClassFactory2::CreateInstanceLic`. Kapsayıcı uygulama geliştiricisinin denetimi, bir çağrı örneğini oluşturma isteği yapar ne zaman `GetLicInfo` doğrulamak için yapılan denetim. Lisans Sözleşmesi dosya yok. Denetim lisanslanmışsa denetim örneği oluşturulabilir ve kapsayıcıda yerleştirilir. Geliştirici kapsayıcı uygulaması oluşturma işlemini tamamladıktan sonra başka bir işlev çağrısı, şu anda `RequestLicKey`, yapılır. Bu işlev, kapsayıcılı bir uygulama bir lisans anahtarı (Basit karakter dizesi) döndürür. Döndürülen anahtar ardından uygulamada katıştırılır.  
   
- Aşağıdaki şekilde bir kapsayıcı uygulama geliştirme sırasında kullanılacak bir ActiveX denetimi lisans doğrulanması gösterir. Daha önce belirtildiği gibi kapsayıcı uygulama geliştiricisi uygun olması gerekir. Lisans Sözleşmesi dosyası denetimi örneğini oluşturmak için geliştirme makinede yüklü.  
+ Aşağıdaki şekilde, lisans doğrulama, kapsayıcılı bir uygulama geliştirme sırasında kullanılacak bir ActiveX denetimi gösterir. Daha önce belirtildiği gibi kapsayıcı uygulama geliştiricisinin uygun olması gerekir. LİS dosyası denetimi örneğini oluşturmak için geliştirme makinenizde yüklü.  
   
- ![ActiveX denetimi geliştirme doğrulanır lisanslı](../mfc/media/vc374d1.gif "vc374d1")  
-Lisanslı bir ActiveX denetimi doğrulama geliştirme sırasında  
+ ![ActiveX denetimi geliştirme için doğrulanmış lisanslı](../mfc/media/vc374d1.gif "vc374d1")  
+Geliştirme sırasında doğrulama lisanslı bir ActiveX denetimi  
   
- Son kullanıcı kapsayıcı uygulamayı çalıştırdığında aşağıdaki şekilde gösterildiği sonraki işlemi gerçekleşir.  
+ Son kullanıcı kapsayıcı uygulama çalışırken aşağıdaki şekilde gösterilen sonraki işlemi gerçekleşir.  
   
- Uygulama başlatıldığında, denetim örneği genellikle oluşturulması gerekir. Kapsayıcı bunu yapılan bir çağrı yaparak gerçekleştirir `CreateInstanceLic`, katıştırılmış lisans anahtarı parametre olarak geçirme. Dize karşılaştırması sonra katıştırılmış lisans anahtarı ve lisans anahtarı denetimin kendi kopyasını arasında yapılır. Eşleştirme başarılı olursa, denetim örneği oluşturulur ve uygulama normalde yürütmeye devam eder. Dikkat edin. LİS dosya denetim kullanıcının makinesinde mevcut olması gerekmez.  
+ Uygulama başlatıldığında denetim örneği genellikle oluşturulması gerekir. Kapsayıcı bu çağrı yaparak gerçekleştirir. `CreateInstanceLic`, katıştırılmış lisans anahtarı bir parametre olarak geçirerek. Dize karşılaştırması, sonra katıştırılmış lisans anahtarı ve lisans anahtarı denetimin kendi kopyasını arasında yapılır. Eşleşmenin başarılı olursa, denetim bir örneği oluşturulur ve uygulama normal çalışmasına devam eder. Dikkat edin. Lisans Sözleşmesi dosya denetim kullanıcının makinede mevcut olması gerekmez.  
   
- ![ActiveX denetimi yürütme sırasında doğrulandı lisanslı](../mfc/media/vc374d2.gif "vc374d2")  
-Lisanslı bir ActiveX denetimi doğrulama yürütme sırasında  
+ ![ActiveX denetimi yürütmeyi doğrulandı lisanslı](../mfc/media/vc374d2.gif "vc374d2")  
+Yürütme sırasında doğrulama lisanslı bir ActiveX denetimi  
   
- Denetimini lisanslama iki temel bileşenlerden oluşur: DLL denetim uygulamasında özel kod ve lisans dosyası. Kod iki (veya büyük olasılıkla üç) işlev çağrılarını ve bundan sonra "Telif hakkı uyarısı içeren bir lisans dize", başvurulan bir karakter dizesi kümesinden oluşur. Bu çağrıları ve lisans dize denetim uygulamasında bulunan (. CPP) dosyası. ActiveX Denetim Sihirbazı tarafından oluşturulan lisans dosyası, telif hakkı bildirimi ile bir metin dosyasıdır. Proje adıyla kullanarak adlı bir. LİS uzantısı, örneğin örnek. LİSANS SÖZLEŞMESİ. Tasarım zamanı kullanım gerekirse lisanslı denetim lisans dosyası tarafından eklenmelidir.  
+ Denetimini lisanslama, iki temel bileşenden oluşur: DLL denetimi uygulamada belirli kod ve lisans dosyası. Kod, iki (veya büyük olasılıkla üç) işlev çağrıları ve bundan sonra "Telif hakkı bildirimi içeren bir lisans dize olarak" başvurulan bir karakter dizesi oluşur. Bu çağrılar ve lisans dize denetim uygulamasında bulunur (. CPP) dosyası. ActiveX Denetim Sihirbazı tarafından üretilen lisans dosyası, telif hakkı bildirimini içeren bir metin dosyasıdır. Proje adı ile kullanarak adlı bir. Lisans Sözleşmesi uzantısı, örneğin örnek. LİSANS SÖZLEŞMESİ. Tasarım zamanında kullanımı gerekirse lisanslı bir denetim tarafından bir lisans dosyası bulunmalıdır.  
   
-##  <a name="_core_creating_a_licensed_control"></a> Lisanslı denetimi oluşturma  
- Denetim çerçevesi oluşturmak için ActiveX Denetim Sihirbazı'nı kullandığınızda, destek lisans dahil kolaydır. Denetim bir çalışma zamanı Lisansı olmalıdır belirttiğinizde, ActiveX Denetim Sihirbazı'nı kod lisans desteklemek için denetim sınıfı ekler. Lisans doğrulama için bir anahtar ve lisans dosyası kullanan işlevler kodu oluşur. Bu işlevler de denetimini lisanslama özelleştirmek için değiştirilebilir. Lisans özelleştirme hakkında daha fazla bilgi için bkz: [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control) bu makalenin ilerisinde yer.  
+##  <a name="_core_creating_a_licensed_control"></a> Lisanslı bir denetim oluşturma  
+ ActiveX Denetim Sihirbazı'nı denetim çerçevesi oluşturmak için kullandığınız zaman desteği içeren çok daha kolaydır. Denetimi bir çalışma zamanı Lisansı olmalıdır belirttiğinizde, ActiveX Denetim Sihirbazı'nı lisanslama desteklemek için denetim sınıfı için kod ekler. Lisans doğrulama için bir anahtar ve lisansın dosyası kullanan işlevler kod oluşur. Bu işlevler, aynı zamanda denetimini lisanslama özelleştirmek için değiştirilebilir. Lisans özelleştirme hakkında daha fazla bilgi için bkz. [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control) bu makalenin ilerleyen bölümlerinde.  
   
-#### <a name="to-add-support-for-licensing-with-the-activex-control-wizard-when-you-create-your-control-project"></a>Denetim projenizi oluşturduğunuzda ActiveX Denetim Sihirbazı'nı kullanarak lisans için destek eklemek için  
+#### <a name="to-add-support-for-licensing-with-the-activex-control-wizard-when-you-create-your-control-project"></a>Denetim projenizi oluşturduğunuzda ile ActiveX Denetim Sihirbazı'nı lisanslama için destek eklemek için  
   
-1.  Konusundaki yönergeleri kullanın [MFC ActiveX denetimi oluşturma](../mfc/reference/creating-an-mfc-activex-control.md). **Uygulama ayarları** ActiveX Denetim Sihirbazı sayfasında denetimi ile çalışma zamanı lisans oluşturma seçeneğini içerir.  
+1.  Yönergeleri kullanın [MFC ActiveX denetimi oluşturma](../mfc/reference/creating-an-mfc-activex-control.md). **Uygulama ayarları** ActiveX Denetim Sihirbazı'nın sayfa denetimi ile çalışma zamanı lisansı oluşturmak için bu seçeneği içerir.  
   
- ActiveX Denetim Sihirbazı'nı şimdi temel lisans desteği içeren bir ActiveX denetimi çerçeve oluşturur. Lisans kodu ayrıntılı bir açıklaması için sonraki konusuna bakın.  
+ ActiveX Denetim Sihirbazı'nı temel lisans desteği içeren bir ActiveX denetimi çerçeve şimdi oluşturur. Lisans kodu ayrıntılı bir açıklaması için sonraki konusuna bakın.  
   
 ##  <a name="_core_licensing_support"></a> Lisans desteği  
- Bir ActiveX denetimini lisanslama desteği eklemek için ActiveX Denetim Sihirbazı'nı kullandığınızda, ActiveX Denetim Sihirbazı'nı bildirir ve lisans yetenek uygulayan kod control üstbilgisinin ve uygulama dosyalarını eklenir ekler. Bu kod oluşan bir `VerifyUserLicense` üye işlevini ve `GetLicenseKey` bulunan varsayılan uygulamaları geçersiz üye işlevi [COleObjectFactory](../mfc/reference/coleobjectfactory-class.md) . Bu işlevler almak ve denetim lisans doğrulayın.  
+ Bir ActiveX denetimine lisanslama desteği eklemek için ActiveX Denetim Sihirbazı'nı kullandığınızda, ActiveX Denetim Sihirbazı'nı bildirir ve lisans özelliği uygulayan kodu control üst bilgisi ve uygulama dosyaları eklenir ekler. Bu kod çağrılardan oluşan bir `VerifyUserLicense` üye işlevi ve bir `GetLicenseKey` bulunan varsayılan uygulamaları geçersiz üye işlevini [COleObjectFactory](../mfc/reference/coleobjectfactory-class.md) . Bu işlevler, almak ve denetim lisans doğrulayın.  
   
 > [!NOTE]
->  Üçüncü bir üye işlevi `VerifyLicenseKey` ActiveX Denetim Sihirbazı tarafından oluşturulmaz, ancak lisans anahtarı doğrulama davranışını özelleştirmek için geçersiz kılınabilir.  
+>  Üçüncü üye işlevi, `VerifyLicenseKey` ActiveX Denetim Sihirbazı tarafından oluşturulmaz, ancak lisans anahtarı doğrulama davranışını özelleştirmek için geçersiz kılınabilir.  
   
  Bu üye işlevleri şunlardır:  
   
 -   [VerifyUserLicense](../mfc/reference/coleobjectfactory-class.md#verifyuserlicense)  
   
-     Varlığı için sistem denetimi lisans dosyasının denetleyerek denetimi tasarım zamanı kullanım izin verdiğini doğrular. Bu işlev işleme bir parçası olarak çerçevesi tarafından çağrılır `IClassFactory2::GetLicInfo` ve `IClassFactory::CreateInstanceLic`.  
+     Denetimin denetimi lisans dosyasının varlığı için sistemi kontrol ederek tasarım zamanı kullanım izin doğrular. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::GetLicInfo` ve `IClassFactory::CreateInstanceLic`.  
   
 -   [GetLicenseKey](../mfc/reference/coleobjectfactory-class.md#getlicensekey)  
   
-     Benzersiz bir anahtar denetim DLL'i ister. Bu anahtar kapsayıcı uygulamasında katıştırılmış ve daha sonra ile birlikte kullanılan `VerifyLicenseKey`denetimi örneğini oluşturmak için. Bu işlev işleme bir parçası olarak çerçevesi tarafından çağrılır `IClassFactory2::RequestLicKey`.  
+     Benzersiz bir anahtar DLL denetiminden ister. Bu anahtar kapsayıcısı uygulamaya ve daha sonra birlikte kullanılan `VerifyLicenseKey`, denetimin bir örneği oluşturulamadı. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::RequestLicKey`.  
   
 -   [VerifyLicenseKey](../mfc/reference/coleobjectfactory-class.md#verifylicensekey)  
   
-     Katıştırılmış anahtar ve denetim benzersiz anahtar aynı olduğunu doğrular. Bu denetimin kullanılması için bir örneğini oluşturmak kapsayıcı sağlar. Bu işlev işleme bir parçası olarak çerçevesi tarafından çağrılır `IClassFactory2::CreateInstanceLic` ve lisans anahtarı özelleştirilmiş doğrulanmasını sağlamak için geçersiz kılınabilir. Varsayılan uygulama dize karşılaştırmasının gerçekleştirir. Daha fazla bilgi için bkz: [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control), bu makalenin ilerisinde yer.  
+     Katıştırılmış anahtar ve denetimin benzersiz anahtar aynı olduğunu doğrular. Bu denetim kullanımı için bir örneğini oluşturmak kapsayıcı sağlar. Bu işlev, işleme bir parçası olarak çerçeve tarafından çağrılır `IClassFactory2::CreateInstanceLic` ve özelleştirilmiş lisans anahtarı sağlamak için geçersiz kılınabilir. Varsayılan uygulama, bir dize karşılaştırma gerçekleştirir. Daha fazla bilgi için [bir ActiveX denetimini lisanslama özelleştirme](#_core_customizing_the_licensing_of_an_activex_control), bu makalenin ilerleyen bölümlerinde.  
   
-###  <a name="_core_header_file_modifications"></a> Üstbilgi dosyası değişikliği  
- ActiveX Denetim Sihirbazı'nı aşağıdaki kodu denetimi üstbilgi dosyasına yerleştirir. Bu örnekte, iki üye işlevlerini `CSampleCtrl`kullanıcının nesnesi `factory` bildirildiğinde, bir denetim varlığını doğrular. LİS dosya ve diğeri de denetimi içeren bir uygulama içinde kullanılacak lisans anahtarı alır:  
+###  <a name="_core_header_file_modifications"></a> Üstbilgi dosya değişiklikleri  
+ ActiveX Denetim Sihirbazı'nı aşağıdaki kodu denetimi üstbilgi dosyasına yerleştirir. Bu örnekte, iki üye işlevleri `CSampleCtrl`kullanıcının nesne `factory` bildirildiğinde, bir denetimin varlığını doğrular. Lisans Sözleşmesi dosya ve diğeri de denetimi içeren uygulama lisans anahtarı alır:  
   
  [!code-cpp[NVC_MFC_AxUI#39](../mfc/codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_1.h)]  
   
 ###  <a name="_core_implementation_file_modifications"></a> Uygulama dosya değişiklikleri  
- ActiveX Denetim Sihirbazı'nı aşağıdaki iki ifadeleri lisans filename ve lisans dize bildirmek için Denetim uygulama dosyasına yerleştirir:  
+ ActiveX Denetim Sihirbazı'nı aşağıdaki iki deyimi lisans filename ve lisans dize bildirmek için denetim uygulaması dosyasına yerleştirir:  
   
  [!code-cpp[NVC_MFC_AxUI#40](../mfc/codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_2.cpp)]  
   
 > [!NOTE]
->  Değiştirirseniz `szLicString` herhangi bir yolla denetimi ilk satırı da değiştirmelisiniz. LİS dosya ya da lisans düzgün çalışmaz.  
+>  Değiştirirseniz `szLicString` herhangi bir yolla da denetimin ilk satırı değiştirmeniz gerekir. Lisans Sözleşmesi dosya ya da lisans düzgün çalışmaz.  
   
- ActiveX Denetim Sihirbazı'nı aşağıdaki kodu control sınıfı tanımlamak için Denetim uygulama dosyasına yerleştirir `VerifyUserLicense` ve `GetLicenseKey` işlevleri:  
+ ActiveX Denetim Sihirbazı'nı aşağıdaki kodu denetimi sınıfını tanımlamak için denetim uygulaması dosyasına yerleştirir. `VerifyUserLicense` ve `GetLicenseKey` İşlevler:  
   
  [!code-cpp[NVC_MFC_AxUI#41](../mfc/codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_3.cpp)]  
   
- Son olarak, **ActiveX Denetim Sihirbazı** denetim projeyi değiştirir. IDL dosyası. **Lisanslı** anahtar sözcüğü, aşağıdaki örnekte olduğu gibi denetimi coclass bildirimi eklenir:  
+ Son olarak, **ActiveX Denetim Sihirbazı'nı** denetimi projeyi değiştirir. IDL dosyası. **Lisanslı** anahtar sözcüğü, aşağıdaki örnekte olduğu gibi denetim coclass'ı bildirimi eklenir:  
   
  [!code-cpp[NVC_MFC_AxUI#42](../mfc/codesnippet/cpp/mfc-activex-controls-licensing-an-activex-control_4.idl)]  
   
 ##  <a name="_core_customizing_the_licensing_of_an_activex_control"></a> Bir ActiveX denetimini lisanslama özelleştirme  
- Çünkü `VerifyUserLicense`, `GetLicenseKey`, ve `VerifyLicenseKey` bildirildiğinde denetim fabrika sınıfı sanal üye işlevleri denetimin lisans davranışını özelleştirebilirsiniz.  
+ Çünkü `VerifyUserLicense`, `GetLicenseKey`, ve `VerifyLicenseKey` bildirilir denetim fabrika sınıfı sanal üye işlevleri denetimin lisans davranışını özelleştirebilirsiniz.  
   
- Örneğin, denetim için geçersiz kılarak lisansı birkaç düzeyleri sağlayabilir `VerifyUserLicense` veya `VerifyLicenseKey` üye işlevleri. Bu işlev içinde hangi özelliklerinin veya yöntemlerin, algılanan lisans düzeyine göre kullanıcıya sunulan ayarlamak.  
+ Örneğin, denetim için geçersiz kılarak lisanslama çeşitli düzeylerde sağlayabilir `VerifyUserLicense` veya `VerifyLicenseKey` üye işlevleri. Bu işlev içinde hangi özelliklerinin veya yöntemlerin algıladığınız lisans düzeyinize kullanıcıya sunulan ayarlamak.  
   
- Kod ayrıca ekleyebilirsiniz `VerifyLicenseKey` oluşturma kontrol kullanıcı bildiren başarısız oldu, özelleştirilmiş bir yöntem sağlayan işlevi. Örneğin, sizin `VerifyLicenseKey` bir ileti görüntüler üye işlevi kutusuna denetim başlatılamadı belirten ve neden.  
+ Kod ayrıca ekleyebilirsiniz `VerifyLicenseKey` işlevi oluşturma denetleyen kullanıcı bildiren başarısız oldu, özelleştirilmiş bir yöntem sağlar. Örneğin, uygulamanızın `VerifyLicenseKey` üye işlevi bir ileti görüntüler kutusu denetim başlatılamadı belirten ve neden.  
   
 > [!NOTE]
->  ActiveX denetimi lisans doğrulama özelleştirmek için başka bir çağırmak yerine, belirli kayıt defteri anahtarı için kayıt veritabanını kontrol etmek üzere yoludur `AfxVerifyLicFile`. Varsayılan uygulama örneği için bkz: [uygulama dosya değişiklikleri](#_core_implementation_file_modifications) bu makalenin.  
+>  ActiveX denetimi lisans doğrulama özelleştirmek için başka bir yöntem çağırmak yerine, belirli kayıt defteri anahtarı için kayıt defteri veritabanında denetlemektir `AfxVerifyLicFile`. Varsayılan uygulama örneği için bkz: [uygulama dosya değişiklikleri](#_core_implementation_file_modifications) bu makalenin.  
   
- Lisans sorunları lisans sorunları, ek açıklama için bkz [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).  
+ Lisanslama sorunları lisans sorunları ek açıklaması için bkz. [varolan bir ActiveX denetimini güncelleştirme](../mfc/upgrading-an-existing-activex-control.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   

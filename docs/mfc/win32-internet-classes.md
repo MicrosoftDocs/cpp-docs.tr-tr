@@ -1,7 +1,7 @@
 ---
 title: Win32 Internet sınıfları | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -19,55 +19,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1fa996ad36970faa97c9c6d248060a8121680a6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1e93c2c3ea9efeb8be6ec5d79b9f2ef7729b9e9
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33383230"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534943"
 ---
 # <a name="win32-internet-classes"></a>Win32 Internet Sınıfları
-MFC Internet programlama kolaylaştırmak için Win32 Internet (WinINet) ve ActiveX teknolojisini sarmalar.  
+MFC ActiveX teknoloji ve Win32 Internet (WinINet) Internet programlamayı kolaylaştırmak için sarmalar.
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
- [CInternetSession](../mfc/reference/cinternetsession-class.md)  
- Oluşturur ve bir Internet oturum ya da birkaç eşzamanlı Internet oturum başlatır ve gerekirse, bir proxy sunucusu bağlantısı açıklar.  
+  
+ [Cınternetsession](../mfc/reference/cinternetsession-class.md)  
+ Oluşturur ve Internet oturumu bir veya birden çok eşzamanlı Internet oturumu başlatır ve gerekiyorsa, proxy sunucusuna bağlanırken açıklar.  
   
  [CInternetConnection](../mfc/reference/cinternetconnection-class.md)  
- Internet sunucusu bağlantınız yönetir.  
+ Internet sunucusuyla olan bağlantınızı yönetir.  
   
- [CInternetFile](../mfc/reference/cinternetfile-class.md)  
- Bu sınıf ve türetilmiş sınıflarının dosyaları Internet protokolleri kullanır uzak sistemlere erişime izin verin.  
+ [Cınternetfile](../mfc/reference/cinternetfile-class.md)  
+ Bu sınıf ve türetilmiş sınıflarının Internet protokolleri kullanan uzak sistemlerdeki dosyalara erişimi verin.  
   
  [CHttpConnection](../mfc/reference/chttpconnection-class.md)  
- Bir HTTP sunucusuna bağlantınız yönetir.  
+ HTTP sunucusuyla olan bağlantınızı yönetir.  
   
  [CHttpFile](../mfc/reference/chttpfile-class.md)  
- Bul ve bir HTTP sunucusunda dosyaları okumak için işlevsellik sağlar.  
+ Bulmak ve bir HTTP sunucusunda dosyaları okumak için gereken işlevleri sağlar.  
   
  [CGopherFile](../mfc/reference/cgopherfile-class.md)  
- Bulma ve bir gopher sunucusundaki dosyaları okumak için işlevsellik sağlar.  
+ Bulmak ve bir gopher sunucusunda dosyaları okumak için gereken işlevleri sağlar.  
   
  [CFtpConnection](../mfc/reference/cftpconnection-class.md)  
- Bir FTP sunucusuna bağlantınız yönetir.  
+ Bir FTP sunucusuna olan bağlantınızı yönetir.  
   
  [CGopherConnection](../mfc/reference/cgopherconnection-class.md)  
- Gopher sunucusuna bağlantınız yönetir.  
+ Bir gopher sunucusuna olan bağlantınızı yönetir.  
   
  [CFileFind](../mfc/reference/cfilefind-class.md)  
- Yerel ve Internet dosya aramaları gerçekleştirir.  
+ Yerel ve Internet dosyalarında gerçekleştirir.  
   
  [CFtpFileFind](../mfc/reference/cftpfilefind-class.md)  
- Internet dosya aramaları FTP sunucularının yardımcı olur.  
+ İnternet'e yönelik dosyası aramalarındaki FTP sunucuları.  
   
  [CGopherFileFind](../mfc/reference/cgopherfilefind-class.md)  
- Internet dosya aramaları gopher sunucularının yardımcı olur.  
+ Gopher sunucularına, Internet dosyası aramalarındaki Yardımcıları.  
   
  [CGopherLocator](../mfc/reference/cgopherlocator-class.md)  
- Bir gopher "Bulucusu" bir gopher sunucudan alır, Bulucu'nın türü belirler ve Bulucu için kullanılabilir hale getirir `CGopherFileFind`.  
+ Bir gopher sunucusundan "Konum Belirleyicisi" alır, konum belirleyicinin türünü ve Bulucu kullanılabilmesini `CGopherFileFind`.  
   
- [CInternetException](../mfc/reference/cinternetexception-class.md)  
- Bir Internet işlemle ilişkili bir özel durumu temsil eder.  
+ [Cınternetexception](../mfc/reference/cinternetexception-class.md)  
+ Bir Internet işlemiyle ilgili bir özel durum koşulunu temsil eder.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sınıfa genel bakış](../mfc/class-library-overview.md)
+ [Sınıfına genel bakış](../mfc/class-library-overview.md)
 

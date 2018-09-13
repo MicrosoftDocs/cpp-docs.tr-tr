@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: Gelişmiş özellik uygulama | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -16,15 +16,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2eb3ba387d4b6fcca7b30cd360dff84b9da4302a
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: e5357354a747dd2ce2487bf66821e8be7d2a04a4
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36928370"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534930"
 ---
 # <a name="mfc-activex-controls-advanced-property-implementation"></a>MFC ActiveX Denetimleri: Gelişmiş Özellik Uygulama
-Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilgili konular açıklanmaktadır:  
+Bu makalede, bir ActiveX denetimi özelliklerini Gelişmiş uygulama için ilgili konuları açıklanır.
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).  
   
 -   [Salt okunur ve salt yazılır Özellikler](#_core_read2donly_and_write2donly_properties)  
   
@@ -33,21 +36,21 @@ Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilg
 ##  <a name="_core_read2donly_and_write2donly_properties"></a> Salt okunur ve salt yazılır Özellikler  
  Özellik Ekleme Sihirbazı'nı denetimi için salt okunur veya salt yazılır özellikler uygulamak için hızlı ve kolay bir yöntem sağlar.  
   
-#### <a name="to-implement-a-read-only-or-write-only-property"></a>Bir salt okunur veya sadece yazılabilir özelliği uygulamak için  
+#### <a name="to-implement-a-read-only-or-write-only-property"></a>Bir salt okunur veya salt yazılır özelliği uygulamak için  
   
 1.  Denetiminizin proje yükleyin.  
   
-2.  Sınıf Görünümü'nde denetiminizin kitaplığı düğümünü genişletin.  
+2.  Sınıf Görünümü'nde denetim kitaplığı düğümünü genişletin.  
   
-3.  Arabirim (kitaplık düğümünün İkinci düğüm) denetlemek için kısayol menüsünü açmak için düğümü.  
+3.  Arabirim (ikinci düğüm kitaplığı düğümünün) denetlemek için kısayol menüsünü açmak için düğümü.  
   
-4.  Kısayol menüsünden tıklatın **Ekle** ve ardından **Özellik Ekle**.  
+4.  Kısayol menüsünden tıklayın **Ekle** ve ardından **Özellik Ekle**.  
   
      Bu açılır [Özellik Ekleme Sihirbazı'nı](../ide/names-add-property-wizard.md).  
   
 5.  İçinde **özellik adı** , özelliğin adını yazın.  
   
-6.  İçin **uygulama türü**, tıklatın **Get/Set yöntemleri**.  
+6.  İçin **uygulama türü**, tıklayın **Get/Set yöntemleri**.  
   
 7.  İçinde **özellik türü** kutusunda, uygun türde bir özellik için seçin.  
   
@@ -55,25 +58,25 @@ Bu makalede bir ActiveX denetimini özelliklerinde Gelişmiş uygulama için ilg
   
 9. **Son**'a tıklayın.  
   
- Bunu yaptığınızda, Özellik Ekleme Sihirbazı'nı işlevi ekler `SetNotSupported` veya `GetNotSupported` normal yerine gönderme eşleme girişi ayarlayın veya alın işlevi.  
+ Bunu yaptığınızda, Özellik Ekleme Sihirbazı'nı işlevi ekler `SetNotSupported` veya `GetNotSupported` yerine normal bir dağıtım eşleme girişi ayarlayın veya alın işlevi.  
   
- Salt okunur veya sadece yazılabilir olması için var olan bir özelliği değiştirmek istiyorsanız, gönderme harita el ile düzenleyin ve denetim sınıfından gereksiz kümesi veya Get işlevi kaldırın.  
+ Salt okunur veya sadece yazılabilir olması için var olan bir özelliği değiştirmek istiyorsanız, dağıtım eşlemesi el ile düzenlemeniz ve gereksiz ayarlama veya alma işlevi denetim sınıfından kaldırın.  
   
- Koşullu salt okunur veya salt okunur (örneğin, yalnızca belirli bir modda denetiminizi çalışırken) için özellik istiyorsanız, normal, ayarlama veya Get işlevi sağlar ve arama `SetNotSupported` veya `GetNotSupported` uygun olan yerlerde işlev. Örneğin:  
+ Bir özellik koşullu olarak salt okunur veya salt yazılır (örneğin, yalnızca belirli bir modunda denetiminiz çalışırken) olmasını istiyorsanız, normal, ayarlama veya alma işlevi sağlar ve çağrı `SetNotSupported` veya `GetNotSupported` uygun yerlerde işlev. Örneğin:  
   
  [!code-cpp[NVC_MFC_AxUI#29](../mfc/codesnippet/cpp/mfc-activex-controls-advanced-property-implementation_1.cpp)]  
   
- Bu kod örneği çağırır `SetNotSupported` varsa `m_bReadOnlyMode` veri üyesi olduğu **doğru**. Varsa **yanlış**, özelliği yeni değere ayarlanır.  
+ Bu kod örneği çağrıları `SetNotSupported` varsa `m_bReadOnlyMode` veri üyesi **TRUE**. Varsa **FALSE**, özelliği, yeni değere ayarlanır.  
   
 ##  <a name="_core_returning_error_codes_from_a_property"></a> Bir özellikten hata kodları döndürme  
- Get veya bir özellik Ayarla çalışılırken bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` işlevi bir ' % s'SCODE (durum kodu) bir parametre olarak alır. Önceden tanımlanmış SCODE kullanın veya kendi tanımlayın. Önceden tanımlanmış SCODEs ve özel SCODEs tanımlamaya yönelik yönergeler listesi için bkz: [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.  
+ Get veya özellik ayarlama girişimi sırasında bir hata oluştu belirtmek için kullanın `COleControl::ThrowError` işlevinin bir ' % s'SCODE (durum kodu) parametre olarak alır. Önceden tanımlanmış SCODE kullanabilir veya kendi tanımlayın. Önceden tanımlanmış SCODEs ve özel SCODEs tanımlamaya yönelik yönergeler listesi için bkz. [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makale ActiveX denetimleri: Gelişmiş Konular.  
   
- Yardımcı işlevleri mevcut SCODEs, en sık karşılaşılan gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
+ Yardımcı işlevleri mevcut SCODEs, en yaygın gibi önceden tanımlanmış [COleControl::SetNotSupported](../mfc/reference/colecontrol-class.md#setnotsupported), [COleControl::GetNotSupported](../mfc/reference/colecontrol-class.md#getnotsupported), ve [COleControl::SetNotPermitted](../mfc/reference/colecontrol-class.md#setnotpermitted).  
   
 > [!NOTE]
->  `ThrowError` bir özelliğin Get veya kümesi içinde bir hatadan döndüren yalnızca bir aracı olarak kullanılması amaçlanmıştır işlevi ya da bir Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyici olacaktır kez yığında sunar.  
+>  `ThrowError` bir özelliğin Get veya Set içindeki bir hatadan döndüren yalnızca bir yol olarak kullanılmak üzere tasarlanmıştır işlevi veya Otomasyon yöntemi. Yalnızca bunlar uygun özel durum işleyicisi olacak kez yığında sunar.  
   
- Diğer alanlarda özel durum kodunun raporlama ile ilgili daha fazla bilgi için bkz: [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konular.  
+ Diğer alanlarda özel durumları kodun Raporlama ile ilgili daha fazla bilgi için [COleControl::FireError](../mfc/reference/colecontrol-class.md#fireerror) ve bölüm [bilgisayarınızı ActiveX denetiminde hata işleme](../mfc/mfc-activex-controls-advanced-topics.md) makalede ActiveX denetimleri: Gelişmiş Konuları.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX denetimleri](../mfc/mfc-activex-controls.md)   

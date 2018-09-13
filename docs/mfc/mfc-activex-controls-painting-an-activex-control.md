@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: ActiveX denetimini boyama | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -15,64 +15,67 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de12a21c4b411f3cd1fe25d7d6badd8d26318351
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: c6a43f5e3e5aa202513fa5a9461a326e6c0c7a6c
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929818"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535307"
 ---
 # <a name="mfc-activex-controls-painting-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Boyama
-Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileştirmek için nasıl alter açıklanır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri denetimleri tek tek zorunluluğunu ortadan kaldırarak çizim iyileştirmek nasıl daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimler çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)  
+Bu makalede, ActiveX denetimini boyama işleminin ve süreçlerini optimize etmek için Boya kod nasıl alter açıklanmaktadır. (Bkz [denetim çizim en iyi duruma getirme](../mfc/optimizing-control-drawing.md) teknikleri üzerinde çizim denetimleri ayrı ayrı zorunluluğunu ortadan kaldırarak en iyi duruma getirme, daha önce seçilen GDI nesneleri geri yüklemek için. Tüm denetimleri çizilmiş sonra kapsayıcı otomatik olarak özgün nesneleri geri yükleyebilirsiniz.)  
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
- Bu makaledeki örneklerde varsayılan ayarlarla MFC ActiveX Denetim Sihirbazı tarafından oluşturulan bir denetim arasındadır. MFC ActiveX Denetim Sihirbazı'nı kullanarak bir iskelet denetim uygulaması oluşturma hakkında daha fazla bilgi için bkz: [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md).  
+ Bu makaledeki örneklerde, varsayılan ayarlarla MFC ActiveX Denetim Sihirbazı tarafından oluşturulan denetim arasındadır. MFC ActiveX Denetim Sihirbazı'nı kullanarak bir çatı denetim uygulaması oluşturma hakkında daha fazla bilgi için bkz [MFC ActiveX Denetim Sihirbazı](../mfc/reference/mfc-activex-control-wizard.md).  
   
  Aşağıdaki konular ele alınmaktadır:  
   
--   [Boyama için genel işlem bir denetim ve kodu ActiveX denetimini boyama desteklemek için sihirbaz tarafından oluşturulan](#_core_the_painting_process_of_an_activex_control)  
+-   [Denetim ve bir boyama desteklemek için ActiveX Denetim Sihirbazı tarafından oluşturulan kod boyama için genel işlem](#_core_the_painting_process_of_an_activex_control)  
   
 -   [Boyama işleminin en iyi duruma getirme](#_core_optimizing_your_paint_code)  
   
--   [Meta dosyaları kullanarak denetim boyamak nasıl](#_core_painting_your_control_using_metafiles)  
+-   [Nasıl meta dosyaları kullanarak denetim boyama](#_core_painting_your_control_using_metafiles)  
   
 ##  <a name="_core_the_painting_process_of_an_activex_control"></a> Bir ActiveX denetimini boyama işlemi  
- ActiveX denetimleri başlangıçta görüntülenir veya yeniden düzenlenmiş, bunlar MFC, önemli bir ayrımdır ile kullanılarak geliştirilen diğer uygulamalar için benzer bir boyama süreci izleyin: ActiveX denetimlerini etkin veya etkin olmayan bir durumda olabilir.  
+ ActiveX denetimleri, ilk olarak görüntülenen veya yeniden düzenlenmiş, MFC, ile önemli bir ayrım kullanılarak geliştirilen diğer uygulamalara benzer bir boyama işlem izlerler: ActiveX denetimleri, etkin veya etkin olmayan bir durumda olabilir.  
   
- Etkin bir denetimi alt pencere olarak bir ActiveX denetim kapsayıcısındaki temsil edilir. Diğer windows gibi WM_PAINT iletisi alındığında kendisini boyama için sorumludur. Denetimin temel sınıfı olan [COleControl](../mfc/reference/colecontrol-class.md), bu iletiyi işleyen kendi `OnPaint` işlevi. Bu varsayılan uygulama çağırır `OnDraw` denetiminizin işlevi.  
+ Etkin bir denetim, bir ActiveX denetim kapsayıcısındaki bir alt pencere tarafından temsil edilir. Diğer windows gibi bir WM_PAINT iletisini aldığınızda kendisini boyama için sorumludur. Denetimin temel sınıf [COleControl](../mfc/reference/colecontrol-class.md), bu iletiyi işleyen kendi `OnPaint` işlevi. Bu varsayılan uygulama çağrıları `OnDraw` denetiminizin işlevi.  
   
- Etkin olmayan denetimi farklı boyanır. Denetim etkin olduğunda, bir boyama ileti alabilir olmayan şekilde onun penceresi görünmez ya da var olmayan, değil. Bunun yerine, denetimi kapsayıcısı doğrudan çağıran `OnDraw` denetiminin işlevi. Bu etkin bir denetimin boyama işlem farklıdır `OnPaint` üye işlevi hiçbir zaman çağrılır.  
+ Etkin olmayan bir denetim farklı boyanır. Denetim etkin olduğunda, bir boyama iletisinin alabileceği değil, pencerenin görünmez ya da yok, olduğundan. Bunun yerine, Denetim kapsayıcısı doğrudan çağıran `OnDraw` işlevi denetimi. Bu etkin bir denetim boyama işlem farklıdır `OnPaint` üye işlev hiçbir zaman çağrılır.  
   
- Önceki paragrafta anlatıldığı gibi bir ActiveX denetimini nasıl güncelleştirileceğini denetiminin durumuna bağlıdır. Ancak, framework çağırdığı için `OnDraw` üye işlevi her iki durumda da, bu üye işlevi boyama kodunuzda çoğunluğu ekleyin.  
+ Önceki paragrafta açıklandığı gibi bir ActiveX denetimini nasıl güncelleştirileceğini denetimin durumuna bağlıdır. Ancak, framework çağırdığı `OnDraw` üye işlevi her iki durumda da, bu üye işlevi boyama kodunuzu çoğunu ekleyin.  
   
- `OnDraw` Üye işlevi denetim boyama işler. Bir denetim etkin olduğunda, denetimi kapsayıcısı çağırır `OnDraw`, Denetim kapsayıcısının cihaz bağlamı ve denetim tarafından Dolu Dikdörtgen koordinatlarını geçirme.  
+ `OnDraw` Üye işlevi denetim boyama işler. Bir denetimi devre dışı olduğunda denetim kapsayıcısı çağırır `OnDraw`, Denetim kapsayıcısı cihaz bağlamı ve denetim tarafından dolu dikdörtgen alan koordinatlarını geçirme.  
   
- Dikdörtgen geçirilen framework tarafından `OnDraw` üye işlevi denetim tarafından kapladığı alanı içerir. Denetim etkin sol üst köşesindeki ise, (0, 0) ve geçirilen cihaz bağlamı için denetimi içeren alt pencere. Denetim etkin değilse, sol üst koordinat olmak zorunda değildir (0, 0) ve geçirilen cihaz bağlamı denetimi içeren denetimi için kapsayıcıdır.  
+ Dikdörtgen geçirilen için framework tarafından `OnDraw` üye işlevi denetim tarafından kapladığı alanı içerir. Denetimin etkin olursa, sol üst köşesinin olduğu (0, 0) ve geçirilen cihaz bağlamı denetimi içeren bir alt pencere için. Denetimin etkin değilse, sol üst koordinat olmak zorunda değildir (0, 0) ve geçirilen cihaz bağlamı denetimi içeren denetimi için kapsayıcıdır.  
   
 > [!NOTE]
->  Önemlidir, yaptığınız değişiklikler `OnDraw` dikdörtgenin üst sol noktasında eşit olan dayanmayan (0, 0) ve yalnızca dikdörtgende çizmek için geçirilen `OnDraw`. Dikdörtgenin alanı çizme beklenmedik sonuçlar oluşabilir.  
+>  Önemli olduğu, değişikliklerinizi `OnDraw` dikdörtgenin üst sol noktası eşit olan bağlı olmayan (0, 0) ve yalnızca içinde dikdörtgen çizmek için geçirilen `OnDraw`. Dikdörtgen alan çizerseniz beklenmedik sonuçlar oluşabilir.  
   
- MFC ActiveX Denetim Sihirbazı'nı Denetim dosyasında yer alan uygulama tarafından sağlanan varsayılan uygulama (. CPP) gösterilen aşağıda beyaz fırça dikdörtgen boyar ve üç nokta geçerli arka plan rengiyle doldurur.  
+ MFC ActiveX Denetim Sihirbazı'nı Denetim uygulama dosyasında tarafından sağlanan varsayılan uygulama (. CPP) gösterilen aşağıda beyaz bir fırça dikdörtgen boyar ve üç nokta geçerli arka plan rengi ile doldurur.  
   
  [!code-cpp[NVC_MFC_AxUI#1](../mfc/codesnippet/cpp/mfc-activex-controls-painting-an-activex-control_1.cpp)]  
   
 > [!NOTE]
->  Bir denetim boyama yaparken olarak geçirilen cihaz bağlamı durumu hakkındaki varsayımları yapmamalısınız *pdc* parametresi `OnDraw` işlevi. Bazen cihaz bağlamı kapsayıcı uygulama tarafından sağlanan ve mutlaka varsayılan durumuna başlatılmayacak. Özellikle, kalemler, Fırçalar, renkleri, yazı tipleri ve çizim kodunuzu bağımlı diğer kaynaklar açıkça seçin.  
+>  Bir denetim boyama, olarak geçirilen cihaz bağlamı durumuyla ilgili varsayımlar yapmamalısınız *pdc* parametresi `OnDraw` işlevi. Bazen bir cihaz bağlamı kapsayıcı uygulama tarafından sağlanan ve mutlaka varsayılan duruma başlatılmayacak. Özellikle, kalemler, Fırçalar, renkleri, yazı tipleri ve çizim kodunuz bağımlı diğer kaynaklar açıkça seçin.  
   
-##  <a name="_core_optimizing_your_paint_code"></a> Paint kodunuzu iyileştirme  
- Denetimi başarıyla kendisini boyama olduğu sonra sonraki en iyi duruma getirme adımdır `OnDraw` işlevi.  
+##  <a name="_core_optimizing_your_paint_code"></a> Boyama kodunuzu iyileştirme  
+ Denetim başarıyla kendisini boyama olan sonra iyileştirmek için sonraki adım olan `OnDraw` işlevi.  
   
- ActiveX denetimini boyama varsayılan uygulaması tüm denetim alanı boyar. Bu basit denetimler için yeterli olmakla birlikte, güncelleştirme gerekli bölümü, tüm denetim yerine yeniden çizilmiş yalnızca çoğu durumda denetimi yeniden çizerken daha hızlı olacaktır.  
+ ActiveX denetimini boyama varsayılan uygulamasını tüm denetim alanı boyar. Bu basit denetimler için yeterlidir ancak güncelleştirilmesi gereken bölümü, tüm denetim yerine yeniden çizilmesini yalnızca çoğu durumda denetimi yeniden çizerken daha hızlı olacaktır.  
   
- `OnDraw` İşlevi geçirerek en iyi duruma getirme kolay bir yöntemini sağlar *rcInvalid*, yeniden ihtiyacı olan denetim dikdörtgen. Bu alan boyama işlemi hızlandırmak için tüm denetim alanı genellikle daha küçük kullanın.  
+ `OnDraw` İşlevi geçirerek iyileştirme kolay bir yöntemini sağlar *rcInvalid*, yeniden gereken denetimin dikdörtgen alan. Bu alan boyama sürecini hızlandırmak için tüm denetim alanı genellikle daha küçük kullanın.  
   
 ##  <a name="_core_painting_your_control_using_metafiles"></a> Meta dosyaları kullanarak denetim boyama  
- Çoğu durumda *pdc* parametresi `OnDraw` işlevi bir ekran cihaz bağlamı (DC) işaret eder. Ancak, denetim veya Baskı Önizleme oturumu sırasında görüntülerini yazdırırken, işleme için alınan DC bir "meta DC" adlı bir özel türüdür. Hemen kendisine gönderilen istekleri işler, bir ekran DC, daha sonraki bir zamanda tekrarlanmasını istekleri meta dosyası DC depolar. Bazı kapsayıcı uygulamaları meta dosyası Tasarım modunda DC kullanarak denetim görüntüsü oluşturmak de seçebilirsiniz.  
+ Çoğu durumda *pdc* parametresi `OnDraw` işlevi, bir ekran cihaz bağlamı (DC) işaret eder. Ancak, görüntüleri denetimi ya da yazdırma önizleme oturumu sırasında yazdırırken işleme için alınan DC bir "meta DC" adlı özel bir türü olur. Hemen buna gönderilen istekleri işleyen bir ekran DC, daha sonraki bir zamanda tekrarlanmasını istekleri bir DC meta depolar. Bazı kapsayıcı uygulamaları, Tasarım modunda DC bir meta dosyasını kullanan denetimi görüntüsünü işlemek de tercih edebilirsiniz.  
   
- İstekleri çizim meta dosyası, iki arabirim işlevleri aracılığıyla kapsayıcı tarafından yapılabilir: `IViewObject::Draw` (Bu işlev, aynı zamanda olmayan-çizim meta dosyası için çağrılabilir) ve `IDataObject::GetData`. DC geçirilen parametrelerden biri meta dosyası, MFC çerçevesi için bir çağrı yapar [COleControl::OnDrawMetafile](../mfc/reference/colecontrol-class.md#ondrawmetafile). Bu sanal üye işlevi olduğundan, bu işlev herhangi bir özel işlem yapmak için Denetim sınıfında geçersiz kılar. Varsayılan davranış çağrıları `COleControl::OnDraw`.  
+ İstekleri çizim meta dosyası, iki arabirim işlevleri aracılığıyla kapsayıcı tarafından yapılabilir: `IViewObject::Draw` (Bu işlev, aynı zamanda olmayan-çizim meta dosyası için çağrılabilir) ve `IDataObject::GetData`. DC parametrelerinden biri geçirilir meta dosyası, MFC çerçevesi çağrıda [COleControl::OnDrawMetafile](../mfc/reference/colecontrol-class.md#ondrawmetafile). Bu, bir sanal üye işlev olduğu için bu işlevi herhangi bir özel işlem yapmak için Denetim sınıfında geçersiz kılar. Varsayılan davranış çağrıları `COleControl::OnDraw`.  
   
- Denetim ekran ve meta dosyası cihaz bağlamlarında çizilebilir emin olmak için bir ekran hem meta dosyası DC desteklenen üye işlevlerini kullanmanız gerekir. Koordinat sistemi piksel cinsinden mi ölçüleceğini değil olduğunu unutmayın.  
+ Denetimin ekranda hem meta dosyası cihaz bağlamlarında kurulabilir emin olmak için bir ekran ve bir meta dosyası DC desteklenen üye işlevleri kullanmanız gerekir. Koordinat sistemi piksel cinsinden mi ölçüleceğini değil olduğunu unutmayın.  
   
- Çünkü varsayılan uygulaması `OnDrawMetafile` denetimin çağırır `OnDraw` işlev, kılmanız sürece, meta dosyası ve bir ekran cihaz bağlamı için uygun olan üye işlevlerini `OnDrawMetafile`. Aşağıdaki alt kümesini listeler `CDC` meta dosyası ve bir ekran cihaz bağlamı içinde kullanılabilir üye işlevleri. Bu işlevler hakkında daha fazla bilgi için bkz [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu*.  
+ Çünkü varsayılan uygulamasını `OnDrawMetafile` denetimin çağırır `OnDraw` işlevi, geçersiz kılmanız sürece, bir meta dosyası ve bir ekran cihaz bağlamı için uygun olan üye işlevlerini `OnDrawMetafile`. Aşağıdaki alt kümesini listeler `CDC` meta dosyası ve bir ekran cihaz bağlamı kullanılabilir üye işlevleri. Bu işlevler hakkında daha fazla bilgi için bkz. [CDC](../mfc/reference/cdc-class.md) içinde *MFC başvurusu*.  
   
 |Yay|BibBlt|Tel|  
 |---------|------------|-----------|  
@@ -91,25 +94,25 @@ Bu makalede, ActiveX denetimini boyama işleminin ve boyama kod işlemi iyileşt
 |`SetViewportOrg`|`SetWindowExt`|`SetWindowORg`|  
 |`StretchBlt`|`TextOut`||  
   
- Ek olarak `CDC` üye işlevleri meta dosyası DC uyumlu olan çeşitli işlevleri vardır. Bunlar [CPalette::AnimatePalette](../mfc/reference/cpalette-class.md#animatepalette), [CFont::CreateFontIndirect](../mfc/reference/cfont-class.md#createfontindirect)ve üç üye işlevlerini `CBrush`: [CreateBrushIndirect](../mfc/reference/cbrush-class.md#createbrushindirect), [CreateDIBPatternBrush](../mfc/reference/cbrush-class.md#createdibpatternbrush), ve [CreatePatternBrush](../mfc/reference/cbrush-class.md#createpatternbrush).  
+ Ek olarak `CDC` üye işlevleri, meta dosyası DC uyumlu olan diğer birçok işlev vardır. Bunlar [CPalette::AnimatePalette](../mfc/reference/cpalette-class.md#animatepalette), [CFont::CreateFontIndirect](../mfc/reference/cfont-class.md#createfontindirect), üç üye işlevleri `CBrush`: [CreateBrushIndirect](../mfc/reference/cbrush-class.md#createbrushindirect), [CreateDIBPatternBrush](../mfc/reference/cbrush-class.md#createdibpatternbrush), ve [CreatePatternBrush](../mfc/reference/cbrush-class.md#createpatternbrush).  
   
- Bir meta kayıtlı olmayan işlevlerdir: [DrawFocusRect](../mfc/reference/cdc-class.md#drawfocusrect), [DrawIcon](../mfc/reference/cdc-class.md#drawicon), [DrawText](../mfc/reference/cdc-class.md#drawtext), [ExcludeUpdateRgn](../mfc/reference/cdc-class.md#excludeupdatergn), [FillRect](../mfc/reference/cdc-class.md#fillrect), [FrameRect](../mfc/reference/cdc-class.md#framerect), [GrayString](../mfc/reference/cdc-class.md#graystring), [InvertRect](../mfc/reference/cdc-class.md#invertrect), [ScrollDC](../mfc/reference/cdc-class.md#scrolldc)ve [TabbedTextOut](../mfc/reference/cdc-class.md#tabbedtextout). Meta dosyası DC gerçekte bir aygıtla ilişkili olmadığından bir meta dosyası DC SetDIBits, GetDIBits ve CreateDIBitmap kullanamazsınız. Hedef olarak bir meta dosyası DC SetDIBitsToDevice ve StretchDIBits kullanabilirsiniz. [CreateCompatibleDC](../mfc/reference/cdc-class.md#createcompatibledc), [CreateCompatibleBitmap](../mfc/reference/cbitmap-class.md#createcompatiblebitmap), ve [CreateDiscardableBitmap](../mfc/reference/cbitmap-class.md#creatediscardablebitmap) bir meta dosyası DC anlamlı değildir.  
+ Bir meta dosyası içinde kayıtlı olmayan işlevler: [DrawFocusRect](../mfc/reference/cdc-class.md#drawfocusrect), [DrawIcon](../mfc/reference/cdc-class.md#drawicon), [DrawText](../mfc/reference/cdc-class.md#drawtext), [ExcludeUpdateRgn](../mfc/reference/cdc-class.md#excludeupdatergn), [FillRect](../mfc/reference/cdc-class.md#fillrect), [FrameRect](../mfc/reference/cdc-class.md#framerect), [GrayString](../mfc/reference/cdc-class.md#graystring), [InvertRect](../mfc/reference/cdc-class.md#invertrect), [ScrollDC](../mfc/reference/cdc-class.md#scrolldc)ve [TabbedTextOut](../mfc/reference/cdc-class.md#tabbedtextout). Bir meta dosyası DC aslında bir cihazla ilişkili olmadığı için bir meta dosyası DC SetDIBits GetDIBits ve CreateDIBitmap kullanamazsınız. Hedef olarak bir meta dosyası DC SetDIBitsToDevice ve StretchDIBits kullanabilirsiniz. [CreateCompatibleDC](../mfc/reference/cdc-class.md#createcompatibledc), [CreateCompatibleBitmap](../mfc/reference/cbitmap-class.md#createcompatiblebitmap), ve [CreateDiscardableBitmap](../mfc/reference/cbitmap-class.md#creatediscardablebitmap) bir meta dosyası DC anlamlı değildir.  
   
- Meta dosyası DC kullanırken dikkate alınması gereken başka bir koordinat sistemi piksel cinsinden mi ölçüleceğini değil, noktasıdır. Bu nedenle, tüm çizim kodunuzu ayarlanmış dikdörtgende sığması için geçirilen `OnDraw` içinde *rcBounds* parametresi. Bu denetimi dışında kalan yanlışlıkla boyama çünkü engeller *rcBounds* denetimin pencere boyutunu temsil eder.  
+ Bir meta dosyası DC kullanırken dikkate alınması gereken başka bir koordinat sistemini piksel cinsinden mi ölçüleceğini değil, noktasıdır. Bu nedenle, tüm çizim kodunuz dikdörtgenine için belirlenebilir geçirilen `OnDraw` içinde *rcBounds* parametresi. Bu denetimin dışında kalan yanlışlıkla boyama çünkü engeller *rcBounds* denetimin pencere boyutunu temsil eder.  
   
- Meta dosyası işleme denetimi için uyguladıktan sonra Test kapsayıcısı meta dosyası sınamak için kullanın. Bkz: [test özellikleri ve olayları Test kapsayıcısı ile](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcısı erişim hakkında bilgi için.  
+ Denetimin meta dosyası işleme uyguladıysanız sonra Test kapsayıcı meta dosyası test etmek için kullanın. Bkz: [Test kapsayıcısı ile test etme özellikleri ve olayları](../mfc/testing-properties-and-events-with-test-container.md) test kapsayıcı erişim hakkında daha fazla bilgi için.  
   
 #### <a name="to-test-the-controls-metafile-using-test-container"></a>Denetimin meta dosyası test kapsayıcısı kullanarak test etmek için  
   
-1.  Test kapsayıcısı üzerinde **Düzenle** menüsünde tıklatın **yeni denetimi Ekle**.  
+1.  Test kapsayıcının üzerinde **Düzenle** menüsünde tıklatın **yeni denetimi Ekle**.  
   
-2.  İçinde **yeni denetimi Ekle** kutusuna denetimi seçin ve tıklatın **Tamam**.  
+2.  İçinde **yeni denetimi Ekle** kutusunda, istediğiniz denetimi seçin ve tıklayın **Tamam**.  
   
-     Denetimi Test kapsayıcısı içinde görüntülenir.  
+     Denetim Test kapsayıcısında görünür.  
   
-3.  Üzerinde **denetim** menüsünde tıklatın **çizin meta dosyası**.  
+3.  Üzerinde **denetimi** menüsünde tıklatın **çizmek meta**.  
   
-     Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Denetimin meta ölçeklendirme nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir anda bu pencereyi kapatabilirsiniz.  
+     Meta dosyası görüntülendiği ayrı bir pencerede görüntülenir. Ölçeklendirme denetimin meta nasıl etkilediğini görmek için bu pencere boyutunu değiştirebilirsiniz. Herhangi bir zamanda bu pencereyi kapatabilirsiniz.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX Denetimleri](../mfc/mfc-activex-controls.md)

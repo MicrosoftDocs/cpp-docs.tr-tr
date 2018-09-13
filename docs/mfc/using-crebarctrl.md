@@ -18,19 +18,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5fbd58954e5b5b0bf16a052e3a667e28f6bc981
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 29f678eb776e17fc9dc7cbd07e9a0fa91eef530c
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
+ms.lasthandoff: 09/13/2018
 ms.locfileid: "33383315"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
-Rebar denetimiyle alt windows için kapsayıcı görevi görür. Bu alt windows, genellikle diğer denetimlerin bir rebar denetimi bant atanır. Rebar denetimiyle Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir bileşimini sahip her bant ile bir veya daha fazla bantları içerebilir. Ancak, bantlar birden fazla alt pencere içeremez.  
+Rebar denetimiyle alt pencereler için kapsayıcı görevi görür. Bu alt pencereler, genellikle diğer denetimleri, bir çubuk barınağı denetim bandı atanır. Rebar denetimiyle, her bant bir Mandal çubuğu, bir bit eşlem, bir metin etiketi ve alt pencere herhangi bir birleşimini sahip olan bir veya daha fazla bant içerebilir. Ancak, bantlar birden fazla alt penceresi içeremez.  
   
- Aşağıdaki çizimde iki bantları sahip rebar denetimiyle gösterir. Bir Mandal çubuğu, bir metin etiketi ("Adres") ve birleşik giriş kutusu alt pencere içeriyor. Başka bir bant Mandal çubuğu, bir metin etiketi ve (içeren bir alt pencere uygulanan) düz bir araç içerir.  
+ Aşağıdaki çizimde, iki bant olmayan bir çubuk barınağı denetimi gösterir. Bir Mandal çubuğu, bir metin etiketi ("Adres") ve birleşik giriş kutusunun alt pencere içeriyor. Başka bir bant kavrayıcı çubuğu, bir metin etiketi ve (bir alt pencere ile uygulanan) bir düz araç içerir.  
   
- ![İki bantları sahip denetimini rebar](../mfc/media/vc4ruz1.gif "vc4ruz1")  
+ ![Rebar bantları iki olan denetim](../mfc/media/vc4ruz1.gif "vc4ruz1")  
   
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz  
   

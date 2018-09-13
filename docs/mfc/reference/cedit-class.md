@@ -1,7 +1,7 @@
 ---
 title: CEdit sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27ea5ccb0d15bd57a526c78cd3c57a4e83369ed0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4d3c7f9e1d638c547b2b340a610a52af9318c714
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757796"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535411"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Windows düzenleme denetimi işlevlerini sağlar.  
@@ -520,7 +520,7 @@ BOOL GetHighlight(
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [EM_GETHILITE](/windows/desktop/Controls/em-gethilite) Windows SDK'da açıklanan ileti. Her ikisi de `SetHighlight` ve `GetHighlight` yalnızca UNICODE yapıları için şu anda etkin değil. 
   
 ##  <a name="getlimittext"></a>  CEdit::GetLimitText  
  Bu metin sınırı almak için bu üye işlevi çağrısı `CEdit` nesne.  
@@ -985,7 +985,7 @@ void SetHighlight(
 |[in] *ichEnd*|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti.  
+ Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti.  Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti. Her ikisi de `SetHighlight` ve `GetHighlight` yalnızca UNICODE yapıları için etkinleştirilir. 
   
 ##  <a name="setlimittext"></a>  CEdit::SetLimitText  
  Bu metin sınırlamak için bu üye işlevini çağırın `CEdit` nesne.  

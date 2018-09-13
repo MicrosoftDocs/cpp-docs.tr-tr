@@ -1,7 +1,7 @@
 ---
 title: MFC ActiveX denetimleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -25,15 +25,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f0f0d88274e6804d087f8acf905ba3181d57798
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 64b44afa6f9605c8c10d933b06fcec79b92f7c97
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205848"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535203"
 ---
 # <a name="mfc-activex-controls"></a>MFC ActiveX Denetimleri
-ActiveX denetimi Bileşen Nesne Modeli (çok çeşitli OLE işlevselliği destekleyen ve çok sayıda yazılım gereksinimlerini karşılayacak şekilde özelleştirilebilir COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. ActiveX denetimleri, sıradan bir ActiveX denetim kapsayıcıları hem World Wide Web sayfalarında Internet'teki kullanmak için tasarlanmıştır. Burada veya ile açıklanan, MFC ActiveX denetimleri oluşturabilirsiniz [Etkin Şablon kitaplığı (ATL)](../atl/active-template-library-atl-concepts.md).  
+
+ActiveX denetimi Bileşen Nesne Modeli (çok çeşitli OLE işlevselliği destekleyen ve çok sayıda yazılım gereksinimlerini karşılayacak şekilde özelleştirilebilir COM) dayalı bir yeniden kullanılabilir yazılım bileşenidir. 
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. Daha fazla bilgi için [ActiveX denetimlerini](activex-controls.md).
+
+ActiveX denetimleri, sıradan bir ActiveX denetim kapsayıcıları hem World Wide Web sayfalarında Internet'teki kullanmak için tasarlanmıştır. Burada veya ile açıklanan, MFC ActiveX denetimleri oluşturabilirsiniz [Etkin Şablon kitaplığı (ATL)](../atl/active-template-library-atl-concepts.md).  
   
  ActiveX denetimi kendisini çizebilirsiniz kendi penceresinde (örneğin, fare tıklamaları) olaylara yanıt verme ve özelliklere ve yöntemlere benzer Otomasyon nesneleri içeren bir arabirim üzerinden yönetiliyor olabilir.  
   

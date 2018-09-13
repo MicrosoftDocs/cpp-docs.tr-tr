@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: İyileştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -24,15 +24,18 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 424bb8e7082432cea3f730bb0783c2c1912c293f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 09d441a44660310a13be264b24286ad2f0ccc6cd
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220512"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535190"
 ---
 # <a name="mfc-activex-controls-optimization"></a>MFC ActiveX Denetimleri: İyileştirme
 Bu makalede, ActiveX denetimleri daha iyi performans için en iyi duruma getirmek için kullanabileceğiniz teknikleri açıklar.  
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
  Konular [kapatma kapalı görünürken etkinleştir seçeneğini](../mfc/turning-off-the-activate-when-visible-option.md) ve [sağlama fare etkileşimi sırada etkin olmayan](../mfc/providing-mouse-interaction-while-inactive.md) etkinleştirilinceye kadar bir pencere oluşturma denetimleri tartışın. Konu [penceresiz etkinleştirme sağlama](../mfc/providing-windowless-activation.md) bile aktifleştirilmiş hiçbir zaman bir pencere oluşturma denetimleri açıklar.  
   

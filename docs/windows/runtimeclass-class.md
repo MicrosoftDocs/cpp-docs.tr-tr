@@ -1,28 +1,50 @@
 ---
 title: RuntimeClass sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/11/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
 f1_keywords:
 - implements/Microsoft::WRL::RuntimeClass
+- implements/Microsoft::WRL::RuntimeClass::AddRef
+- implements/Microsoft::WRL::RuntimeClass::DecrementReference
+- implements/Microsoft::WRL::RuntimeClass::GetIids
+- implements/Microsoft::WRL::RuntimeClass::GetRuntimeClassName
+- implements/Microsoft::WRL::RuntimeClass::GetTrustLevel
+- implements/Microsoft::WRL::RuntimeClass::GetWeakReference
+- implements/Microsoft::WRL::RuntimeClass::InternalAddRef
+- implements/Microsoft::WRL::RuntimeClass::QueryInterface
+- implements/Microsoft::WRL::RuntimeClass::Release
+- implements/Microsoft::WRL::RuntimeClass::RuntimeClass
+- implements/Microsoft::WRL::RuntimeClass::~RuntimeClass
 dev_langs:
 - C++
 helpviewer_keywords:
-- RuntimeClass class
+- Microsoft::WRL::RuntimeClass class
+- Microsoft::WRL::RuntimeClass::AddRef method
+- Microsoft::WRL::RuntimeClass::DecrementReference method
+- Microsoft::WRL::RuntimeClass::GetIids method
+- Microsoft::WRL::RuntimeClass::GetRuntimeClassName method
+- Microsoft::WRL::RuntimeClass::GetTrustLevel method
+- Microsoft::WRL::RuntimeClass::GetWeakReference method
+- Microsoft::WRL::RuntimeClass::InternalAddRef method
+- Microsoft::WRL::RuntimeClass::QueryInterface method
+- Microsoft::WRL::RuntimeClass::Release method
+- Microsoft::WRL::RuntimeClass::RuntimeClass, constructor
+- Microsoft::WRL::RuntimeClass::~RuntimeClass, destructor
 ms.assetid: d52f9d1a-98e5-41f2-a143-8fb629dd0727
 author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 8f6cca23834eb889ecb83d91b40861b92fe922ad
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 07cd5fdc2aa47e5e7486f48c0106b7b24ff16d9f
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605990"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535049"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass Sınıfı
 
@@ -51,10 +73,24 @@ Arabirimlerin listesini ötesinde nesne uygulayan `IUnknown`, `IInspectable` vey
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 
-|Ad|Açıklama|
-|----------|-----------------|
-|[RuntimeClass::RuntimeClass Oluşturucusu](../windows/runtimeclass-runtimeclass-constructor.md)|RuntimeClass sınıfının geçerli örneğinin başlatır.|
-|[RuntimeClass::~RuntimeClass Yıkıcısı](../windows/runtimeclass-tilde-runtimeclass-destructor.md)|RuntimeClass sınıfının geçerli örneğinin başlatmasını geri alır.|
+| Ad                                               | Açıklama                                                     |
+| -------------------------------------------------- | --------------------------------------------------------------- |
+| [RuntimeClass::RuntimeClass](#runtimeclass)        | Geçerli örneğinin başlatır `RuntimeClass` sınıfı.   |
+| [RuntimeClass:: ~ RuntimeClass](#tilde-runtimeclass) | Geçerli örneğinin başlatmasını geri alır `RuntimeClass` sınıfı. |
+
+### <a name="public-methods"></a>Ortak Yöntemler
+
+| Ad                                                      | Açıklama                                                                                        |
+| --------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| [RuntimeClass::AddRef](#addref)                           | Geçerli başvuru sayısını artırır `RuntimeClass` nesne.                              |
+| [RuntimeClass::DecrementReference](#decrementreference)   | Başvuru için geçerli sayısını azaltır `RuntimeClass` nesne.                              |
+| [Runtimeclass::getıids](#getiids)                         | Kimlikleri geçerli tarafından uygulanan arabirimi içerebilir bir dizisini alır `RuntimeClass` nesne. |
+| [RuntimeClass::GetRuntimeClassName](#getruntimeclassname) | Geçerli çalışma zamanı sınıf adını alır `RuntimeClass` nesne.                                  |
+| [RuntimeClass::GetTrustLevel](#gettrustlevel)             | Geçerli güven düzeyine alır `RuntimeClass` nesne.                                         |
+| [RuntimeClass::GetWeakReference](#getweakreference)       | Geçerli zayıf başvuru nesnesine bir işaretçi alır `RuntimeClass` nesne.                 |
+| [Runtimeclass::ınternaladdref](#internaladdref)           | Geçerli başvuru sayısını artırır `RuntimeClass` nesne.                               |
+| [Runtimeclass::QueryInterface](#queryinterface)           | Belirtilen arabirim kimliği. bir işaretçi alır.                                                 |
+| [RuntimeClass::Release](#release)                         | Geçerli bir COM yayınında işlemi gerçekleştirir `RuntimeClass` nesne.                             |
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
@@ -66,6 +102,189 @@ Bir uygulama ayrıntısı budur.
 
 **Namespace:** Microsoft::WRL
 
-## <a name="see-also"></a>Ayrıca Bkz.
+## <a name="tilde-runtimeclass"></a>RuntimeClass:: ~ RuntimeClass
 
-[Microsoft::WRL Ad Alanı](../windows/microsoft-wrl-namespace.md)
+Geçerli örneğinin başlatmasını geri alır `RuntimeClass` sınıfı.
+
+```cpp
+virtual ~RuntimeClass();
+```
+
+## <a name="addref"></a>RuntimeClass::AddRef
+
+Geçerli başvuru sayısını artırır `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   AddRef
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+## <a name="decrementreference"></a>RuntimeClass::DecrementReference
+
+Başvuru için geçerli sayısını azaltır `RuntimeClass` nesne.
+
+```cpp
+ULONG DecrementReference();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+## <a name="getiids"></a>Runtimeclass::getıids
+
+Kimlikleri geçerli tarafından uygulanan arabirimi içerebilir bir dizisini alır `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD(
+   GetIids
+)  
+   (_Out_ ULONG *iidCount,
+   _Deref_out_ _Deref_post_cap_(*iidCount) IID **iids);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*Iidcount*  
+Bu işlem tamamlandığında, toplam sayısı dizideki öğelerin *IID'leri*.
+
+*IID'leri*  
+Bu işlem tamamlandığında arabirim kimlikleri dizisi için bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, E_OUTOFMEMORY.
+
+## <a name="getruntimeclassname"></a>RuntimeClass::GetRuntimeClassName
+
+Geçerli çalışma zamanı sınıf adını alır `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD( GetRuntimeClassName )(
+    _Out_ HSTRING* runtimeName
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*runtimeName*  
+Bu işlem tamamlandığında, çalışma zamanı sınıf adı.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Assert hata durumunda yayıldığını `__WRL_STRICT__` veya `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` tanımlanmadı.
+
+## <a name="gettrustlevel"></a>RuntimeClass::GetTrustLevel
+
+Geçerli güven düzeyine alır `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD(GetTrustLevel)(
+    _Out_ TrustLevel* trustLvl
+);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*trustLvl*  
+Bu işlem tamamlandığında, geçerli güven düzeyine `RuntimeClass` nesne.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Her zaman S_OK.
+
+### <a name="remarks"></a>Açıklamalar
+
+Assert hata durumunda yayıldığını `__WRL_STRICT__` veya `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` tanımlanmadı.
+
+## <a name="getweakreference"></a>RuntimeClass::GetWeakReference
+
+Geçerli zayıf başvuru nesnesine bir işaretçi alır `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD(
+   GetWeakReference
+)(_Deref_out_ IWeakReference **weakReference);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*weakReference*  
+Bu işlem tamamlandığında zayıf başvuru nesnesine bir işaretçi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Her zaman S_OK.
+
+## <a name="internaladdref"></a>Runtimeclass::ınternaladdref
+
+Geçerli başvuru sayısını artırır `RuntimeClass` nesne.
+
+```cpp
+ULONG InternalAddRef();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Sonuçta elde edilen başvuru sayısı.
+
+## <a name="queryinterface"></a>Runtimeclass::QueryInterface
+
+Belirtilen arabirim kimliği. bir işaretçi alır.
+
+```cpp
+STDMETHOD(
+   QueryInterface
+)  
+   (REFIID riid,
+   _Deref_out_ void **ppvObject);
+```
+
+### <a name="parameters"></a>Parametreler
+
+*riid*  
+Bir arabirim kimliği.
+
+*ppvObject*  
+Bu opereation tamamlandığında tarafından belirtilen arabirim işaretçisi *riid* parametresi.
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+## <a name="release"></a>RuntimeClass::Release
+
+Geçerli bir COM yayınında işlemi gerçekleştirir `RuntimeClass` nesne.
+
+```cpp
+STDMETHOD_(
+   ULONG,
+   Release
+)();
+```
+
+### <a name="return-value"></a>Dönüş Değeri
+
+Başarılıysa S_OK; Aksi takdirde, HRESULT hata olduğunu gösterir.
+
+### <a name="remarks"></a>Açıklamalar
+
+Başvuru sayısı sıfır olduğunda `RuntimeClass` nesnesi silinir.
+
+## <a name="runtimeclass"></a>RuntimeClass::RuntimeClass
+
+Geçerli örneğinin başlatır `RuntimeClass` sınıfı.
+
+```cpp
+RuntimeClass();
+```

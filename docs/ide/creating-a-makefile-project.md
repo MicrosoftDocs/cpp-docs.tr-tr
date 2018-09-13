@@ -1,7 +1,7 @@
 ---
-title: Derleme görevleri dosyası projesi oluşturma | Microsoft Docs
+title: Bir C++ derleme görevleri dosyası projesi oluşturma | Microsoft Docs
 ms.custom: ''
-ms.date: 02/28/2018
+ms.date: 09/12/2018
 ms.technology:
 - cpp-ide
 ms.topic: conceptual
@@ -17,34 +17,40 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc854f96f1c41baf28a5af4ca1f253e47d9a8914
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 3be9c22302bc693c44293266ea49ca97fae54f82
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33336784"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535062"
 ---
-# <a name="creating-a-makefile-project"></a>Derleme Görevleri Dosyası Projesi Oluşturma
+# <a name="creating-a-c-makefile-project"></a>Bir C++ derleme görevleri dosyası projesi oluşturma
 
-Derleme görevleri dosyası kullanarak komut satırından derleme mevcut bir kaynak kod projesini varsa, Visual Studio geliştirme ortamında Visual Studio IDE özelliklerinden gerçekleştirebileceğiniz bir projeye kapatma çeşitli yolları vardır. Bu makalede, Visual Studio'da IDE kodunuzda oluşturmak için varolan makefile kullanan derleme görevleri dosyası projesi oluşturmak açıklar. Alternatif olarak, kullanabileceğiniz **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzdan yerel MSBuild proje oluşturmak için Sihirbazı. Daha fazla bilgi için bkz: [nasıl yapılır: Varolan koddan C++ projesi oluşturma](how-to-create-a-cpp-project-from-existing-code.md). Visual Studio 2017 içinde başlayarak, ayrıca kullanabilirsiniz **Klasör Aç** yerel Visual Studio projeleri değilmiş gibi birkaç varolan yapı sistemler kullanabilir özelliğini. Daha fazla bilgi için bkz: [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
+A *derleme görevleri dosyası* derleme ve bağlama ilişkin yönergeleri içeren bir metin dosyasıdır (veya *derleme*) C++ kaynak kodu dosyaları kümesi. A *olun* program derleme görevleri dosyası okur ve bir derleyici, bağlayıcı ve büyük olasılıkla diğer programları yürütülebilir bir dosya olmak için çağırır. Microsoft'un *olun* program çağrılır **NMAKE**. (Varsayılan olarak visual Studio .vcsproj dosyalara bağlı MSBuild sistemi kullanır; bu tarafından oluşturulan **dosya | Yeni | Proje**.)
 
-Açın ve kaynak kodunuzu, varolan derleme görevleri dosyası kullanarak oluşturmak için Visual Studio kullanmak için önce yeni bir proje derleme görevleri dosyası proje şablonu seçerek oluşturun. Sihirbaz, derleme görevleri dosyası tarafından kullanılan ortam ve komutları belirtmenize yardımcı olur. Bu proje sonra Visual Studio geliştirme ortamında kodunuzun oluşturmak için de kullanabilirsiniz.
+Mevcut bir derleme görevleri dosyası projesi varsa, kod ve/veya Visual Studio IDE içinde hata ayıklamak istiyorsanız bu seçeneğiniz vardır: 
 
-Varsayılan olarak, derleme görevleri dosyası projesi hiçbir dosya Çözüm Gezgini'nde görüntüler. Derleme görevleri dosyası projesi projenin özellik sayfasındaki yansıtılır oluşturma ayarlarını belirtir.
+- Visual Studio'da IDE, kodunuzu derlemek için mevcut derleme görevleri dosyası kullanan bir derleme görevleri dosyası projesi oluşturun. (, Yerel bir MSBuild projesi ile aldığınız tüm IDE özelliklerini yoktur.) Bkz: [makefile projesi oluşturmak için](#create_a_makefile_project) aşağıda.
+- Kullanım **varolan kod dosyalarından yeni proje oluştur** kaynak kodunuzu yerel bir MSBuild projesi oluşturmak için Sihirbazı. Daha fazla bilgi için [nasıl yapılır: Varolan koddan C++ projesi oluşturma](how-to-create-a-cpp-project-from-existing-code.md). 
+- **Visual Studio 2017 ve üzeri**: kullanım **klasörünü Aç** özelliğini bir derleme görevleri dosyası açın. Daha fazla bilgi için [Klasör Aç Visual C++ projelerinde](non-msbuild-projects.md).
 
-Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası hala yapı işlemi denetler ve yapı hedefleri belirtir.
+## <a name="a-namecreateamakefileproject-to-create-a-makefile-project-with-the-makefile-project-template"></a><a name="create_a_makefile_project"> Derleme görevleri dosyası proje şablonuyla bir derleme görevleri dosyası projesi oluşturmak için
 
-## <a name="to-create-a-makefile-project"></a>Makefile projesi oluşturmak için
+Visual Studio 2017 ve sonraki sürümlerinde, C++ masaüstü geliştirme iş yükü yüklendiğinde Makefile projesi şablonunu kullanılabilir. 
 
-1. Yardım konusundaki yönergeleri izleyerek [proje bir Visual C++ Uygulama Sihirbazı oluşturma](../ide/creating-desktop-projects-by-using-application-wizards.md).
+Komutlar ve ortam, derleme görevleri dosyası tarafından kullanılan belirtmek için sihirbazı izleyin. Ardından bu projeyi Visual Studio geliştirme ortamında, kodunuzu derlemek için de kullanabilirsiniz. 
 
-1. İçinde **yeni proje** iletişim kutusunda, genişletin **Visual C++** > **genel** ve ardından **derleme görevleri dosyası projesi** içinde Proje Sihirbazı'nı açmak için Şablonlar bölmesinde.
+Varsayılan olarak, derleme görevleri dosyası projesi hiçbir dosya Çözüm Gezgini'nde görüntüler. Derleme görevleri dosyası proje, projenin özellik sayfasına yansıyan derleme ayarlarını belirtir.
 
-1. İçinde [uygulama ayarları](../ide/application-settings-makefile-project-wizard.md) sayfasında, komut çıktısında, temizleyin ve yeniden bilgi için hata ayıklama ve perakende derlemeler sağlayın.
+Projede belirttiğiniz çıktı dosyasının, derleme komut dosyasının oluşturduğu ad üzerinde hiçbir etkisi yoktur; yalnızca bir amaç belirtir. Derleme görevleri dosyası yine de derleme işlemini denetler ve yapı hedeflerini belirtir.
 
-1. Tıklatın **son** Sihirbazı kapatmak ve yeni oluşturulan projede açmak için **Çözüm Gezgini**.
+1. "Derleme görevleri dosyası" yazın Visual Studio başlangıç sayfasından **yeni proje** arama kutusu. Veya **yeni proje** iletişim kutusunda **Visual C++** > **genel** (Visual Studio 2015) veya **diğer** (görsel Studio 2017'de) ve ardından **derleme görevleri dosyası projesi** Proje Sihirbazı'nı açmak için şablonlar bölmesindeki.
 
-Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Bkz: [Visual C++ proje özelliklerini ayarlama](../ide/working-with-project-properties.md) özellik sayfası görüntüleme hakkında bilgi.
+1. İçinde [uygulama ayarları](../ide/application-settings-makefile-project-wizard.md) sayfasında, komut çıktısında, temizleme ve yeniden oluşturma bilgileri için hata ayıklama ve perakende derlemeleri sağlayın.
+
+1. Tıklayın **son** sihirbazı kapatın ve yeni oluşturulan projeyi **Çözüm Gezgini**.
+
+Özellik sayfasında projenin özelliklerini görüntüleyebilir ve düzenleyebilirsiniz. Bkz: [Visual C++ proje özelliklerini ayarlama](../ide/working-with-project-properties.md) özellik sayfasını görüntüleme hakkında bilgi.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

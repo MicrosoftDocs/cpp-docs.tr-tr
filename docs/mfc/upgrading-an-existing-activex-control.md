@@ -1,7 +1,7 @@
 ---
 title: Varolan bir ActiveX denetimini güncelleştirme | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -22,15 +22,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d162aea1d000aa9e65aea253f974c38ffc85bcd
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0bca0cca66f7f8b9c59dcea4911550abfc2024c8
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686192"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535281"
 ---
 # <a name="upgrading-an-existing-activex-control"></a>Varolan Bir ActiveX Denetimini Güncelleştirme
-Varolan bir ActiveX denetimleri (eski adı OLE denetimleri) yapmadan Internet üzerinde kullanılabilir. Ancak, performansı artırmak için denetimleri değiştirmek isteyebilirsiniz. Denetiminizi Web sayfasında kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosya ve tüm destekleyici dosyaları hedef makinede olmalıdır ya da Internet üzerinden indirilebilir. Bu kod boyutu ve önemli bir husus zaman indirme kolaylaştırır. İndirmeler imzalanmış .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  
+Varolan bir ActiveX denetimleri (eski adı OLE denetimleri) yapmadan Internet üzerinde kullanılabilir. Ancak, performansı artırmak için denetimleri değiştirmek isteyebilirsiniz. 
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
+
+Denetiminizi Web sayfasında kullanırken dikkat edilecek diğer noktalar vardır. .Ocx dosya ve tüm destekleyici dosyaları hedef makinede olmalıdır ya da Internet üzerinden indirilebilir. Bu kod boyutu ve önemli bir husus zaman indirme kolaylaştırır. İndirmeler imzalanmış .cab dosyasında paketlenebilir. Denetim kodlama için güvenli olarak ve başlatma için güvenli olarak işaretleyebilirsiniz.  
   
  Bu makalede, aşağıdaki konular ele alınmaktadır:  
   

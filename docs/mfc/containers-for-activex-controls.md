@@ -1,7 +1,7 @@
 ---
 title: ActiveX denetimleri için kapsayıcılar | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -14,26 +14,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 008cf9ea24958cad0866e180d74a43fb031416c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 00c40a158777622856942c4c436299470aba3e6f
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33341452"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534865"
 ---
 # <a name="containers-for-activex-controls"></a>ActiveX Denetimleri için Kapsayıcılar
-ActiveX denetimi kapsamasını destekledikleri sürece diğer uygulamalarda Visual C++'da geliştirilmiş ActiveX denetimleri kullanabilirsiniz. Microsoft uygulamaları listelenen sürümler ile başlayarak, bir dizi ActiveX denetimi kapsamasını destekler.  
+ActiveX denetimi kapsamasını destekledikleri sürece, diğer uygulamalar, Visual C++'da geliştirilmiş ActiveX denetimleri kullanabilirsiniz. Microsoft uygulamaları, listelenen sürümler ile başlayan bir dizi ActiveX denetimi kapsamasını destekler.
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).  
   
 > [!NOTE]
->  Aşağıdaki listede, ActiveX denetimlerini destekler ancak sınamada en sık kullanılan kümesini temsil eden uygulamaların tam bir listesi değil:  
+>  Aşağıdaki listede, ActiveX denetimlerini destekleyen ancak sınamada en sık kullanılan kümesini temsil eden uygulamaların tam bir listesi değil:  
   
  ActiveX denetimi kapsamasını destekleyen uygulamalar şunlardır:  
   
--   Internet Explorer 3.x büyük  
+-   Internet Explorer 3.x ve büyük  
   
--   Visual Basic 4.x büyük  
+-   Visual Basic 4.x ve büyük  
   
--   Visual C++ 4.x büyük  
+-   Visual C++ 4.x ve büyük  
   
 -   Erişim 95 ve daha sonraki sürümleri  
   
@@ -53,11 +56,11 @@ ActiveX denetimi kapsamasını destekledikleri sürece diğer uygulamalarda Visu
   
 -   PowerBuilder  
   
--   Delphi'de  
+-   Delphi  
   
 -   C++ Oluşturucusu  
   
--   NCompass Netscape Gezgini eklentisi  
+-   NCompass Netscape Navigator için eklenti  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ActiveX Denetim Kapsayıcıları](../mfc/activex-control-containers.md)

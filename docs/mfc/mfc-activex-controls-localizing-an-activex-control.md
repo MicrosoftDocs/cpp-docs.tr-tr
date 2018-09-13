@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: ActiveX denetimini yerelleştirme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -20,48 +20,51 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9a6495c23695f8cdedf45fbdd7cbc915b96873e
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: f8eb474a0d527ca6673d6c50602e0914f10bbf76
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929614"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535034"
 ---
 # <a name="mfc-activex-controls-localizing-an-activex-control"></a>MFC ActiveX Denetimleri: ActiveX Denetimini Yerelleştirme
-Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıklanmaktadır.  
+ActiveX denetim arabirimleri yerelleştirme için yordamlar anlatılmaktadır.  
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).
   
- Uluslararası pazar bir ActiveX denetimine uyum isterseniz, Denetim yerelleştirme isteyebilirsiniz. Windows varsayılan İngilizce, Almanca, Fransızca ve İsveççe dahil olmak üzere ek olarak birçok dili destekler. Onun arabirim sadece İngilizce'dir, bu denetimi için sorun oluşturabilir.  
+ ActiveX denetimi bir Uluslararası pazara uyarlamak isterseniz, Denetim yerelleştirmek isteyebilirsiniz. Windows varsayılan İngilizce, Almanca, Fransızca ve İsveç dili gibi ek olarak çok sayıda dili destekler. Arabirimi yalnızca İngilizce olarak ise bu denetim için sorunları sunabilir.  
   
- Genel olarak, ActiveX denetimlerini kendi yerel ortam LocaleID özelliği temel her zaman almalısınız. Bunu yapmak için üç yolu vardır:  
+ Genel olarak, ActiveX denetimleri, yerel ayar LocaleID ortam özelliği temel her zaman. Bunu yapmak için üç yolu vardır:  
   
--   Her zaman geçerli değerine göre ortam LocaleID özelliği isteğe bağlı kaynakları yükleyin. MFC ActiveX denetimleri örnek [LOCALIZE](../visual-cpp-samples.md) bu strateji kullanır.  
+-   Her zaman geçerli LocaleID ortam özelliği değerine göre isteğe bağlı kaynakları yükleyin. MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../visual-cpp-samples.md) bu strateji kullanır.  
   
--   İlk denetim ortam LocaleID özelliğine dayalı instanced kaynakları yükleme ve bu kaynakları diğer tüm örnekler için kullanın. Bu makalede bu stratejiyi gösterir.  
-  
-    > [!NOTE]
-    >  Gelecekteki örnekleri farklı yerel ayarlara varsa bu bazı durumlarda, çalışmaz.  
-  
--   Kullanım `OnAmbientChanged` kapsayıcının yerel ayar için doğru kaynakları dinamik olarak yüklemek için bildirim işlevi.  
+-   İlk denetim, ortam LocaleID özelliğini temel alarak örnekli yükleme kaynakları ve diğer tüm örnekleri için bu kaynakları kullanın. Bu makalede, bu strateji gösterilmektedir.  
   
     > [!NOTE]
-    >  Bu denetim için çalışır, ancak ortam LocaleID özelliği değiştiğinde çalışma zamanı DLL kendi kaynaklarını dinamik olarak güncelleştirilmez. Ayrıca, çalışma zamanı DLL'ler ActiveX denetimleri için iş parçacığı yerel ayar kaynaklarını yerel belirlemek için kullanın.  
+    >  Farklı yerel ayarlar gelecekteki örneğiniz varsa bu bazı durumlarda, çalışmaz.  
   
- Bu makalenin geri kalanında iki yerelleştirme stratejilerini açıklar. İlk stratejisi [denetimin programlama arabirimi yerelletirilmesi](#_core_localizing_your_control.92.s_programmability_interface) (özellikleri, yöntemleri ve olayları adları). İkinci stratejisi [denetimin kullanıcı arabirimi yerelletirilmesi](#_core_localizing_the_control.92.s_user_interface), kapsayıcının ortam LocaleID özelliği kullanarak. MFC ActiveX denetimleri örneği denetimini yerelleştirme tanıtımı için bkz: [LOCALIZE](../visual-cpp-samples.md).  
+-   Kullanım `OnAmbientChanged` bildirim işlevini kapsayıcının yerel ayar için doğru kaynakları dinamik olarak yüklenemiyor.  
+  
+    > [!NOTE]
+    >  Bu denetim için çalışır, ancak LocaleID ortam özelliği değiştiğinde çalışma zamanı DLL kendi kaynaklarını dinamik olarak güncelleştirmez. Ayrıca, çalışma zamanı dll ActiveX denetimleri için yerel kaynaklarını belirlemek için iş parçacığı yerel ayarı kullanın.  
+  
+ Bu makalenin geri kalanında, iki yerelleştirme stratejilerini açıklar. İlk strateji [denetimin programlama arabirimi yerelletirilmesi](#_core_localizing_your_control.92.s_programmability_interface) (özellikleri, yöntemleri ve olayları adları). İkinci strateji [denetimin kullanıcı arabirimi yerelletirilmesi](#_core_localizing_the_control.92.s_user_interface), kapsayıcının ortam LocaleID özelliğini kullanma. MFC ActiveX denetimleri örnek denetimi yerelleştirme gösterimi için bkz. [YERELLEŞTİRİN](../visual-cpp-samples.md).  
   
 ##  <a name="_core_localizing_your_control.92.s_programmability_interface"></a> Denetimin programlama arabirimi yerelleştirme  
- Denetimin programlama arabirimi (denetiminizi kullanan uygulamaları yazma programcıları tarafından kullanılan arabirim) yerelleştirme, Denetim değiştirilmiş bir sürümünü oluşturmanız gerekir. IDL, desteklemek istediğiniz her dil için (Denetim tür kitaplığı oluşturmak için bir komut dosyası) dosyası. Bu, denetim özellik adları yerelleştirme gereken tek yerdir.  
+ Denetimin programlama arabirimi (denetiminiz kullanan uygulamalar yazma programcılar tarafından kullanılan arabirimi) yerelleştirme, denetimin değiştirilmiş bir sürümünü oluşturmanız gerekir. IDL dosyası (denetimi tür kitaplığına oluşturmaya yönelik bir komut dosyası) desteklemeyi planladığınız her dil için. Bu, denetim özelliği adları yerelleştirmek için gereken tek yerdir.  
   
- Yerelleştirilmiş denetimi geliştirirken, yerel ayar kimliği türü kitaplığı düzeyinde bir öznitelik olarak içerir. Örneğin, Fransızca yerelleştirilmiş özellik adlarıyla bir tür kitaplığı sağlamak istiyorsanız, ÖRNEĞİNİZİ bir kopyasını oluşturun. IDL dosya ve SAMPLEFR çağırın. IDL. Yerel ayar kimliği özniteliği (Fransızca için yerel ayar kimliği: 0x040c) dosyasına eklemek için aşağıdakilere benzer:  
+ Yerelleştirilmiş bir denetim geliştirdiğinizde, tür kitaplığı düzeyinde özniteliği olarak yerel ayar kimliği içerir. Örneğin, bir tür kitaplığı ile Fransızca yerelleştirilmiş özellik adları sağlamak istiyorsanız, örneğin bir kopyasını olun. IDL dosyası ve SAMPLEFR çağırın. IDL. Bir yerel ayar kimliği öznitelik (0x040c Fransızca için yerel ayar kimliği'dir) dosyasına eklemek için aşağıdakilere benzer:  
   
  [!code-cpp[NVC_MFC_AxLoc#1](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_1.idl)]  
   
- SAMPLEFR özellik adlarını değiştirin. IDL kendi Fransızca eşdeğerleri ve MKTYPLIB kullanın. Fransızca üretmek için EXE kitaplığı, SAMPLEFR yazın. TLB.  
+ Özellik adlarını alınan SAMPLEFR değiştirin. IDL kendi Fransızca eşdeğerleri ve MKTYPLIB kullanın. Fransızca üretmek için EXE kitaplığı SAMPLEFR yazın. TLB.  
   
- Birden çok yerelleştirilmiş tür kitaplıklarının oluşturmak için herhangi bir yerelleştirilmiş ekleyebilirsiniz. Projeye IDL dosyaları ve otomatik olarak oluşturulacak.  
+ Birden fazla yerelleştirilmiş tür kitaplığı oluşturmak için tüm yerelleştirilmiş ekleyebilirsiniz. IDL dosyaları projeye ve otomatik olarak oluşturulur.  
   
 #### <a name="to-add-an-idl-file-to-your-activex-control-project"></a>Eklemek için bir. ActiveX denetimi projenize IDL dosyası  
   
-1.  Projenizle denetim açık **proje** menüsünde tıklatın **varolan öğeyi Ekle**.  
+1.  Projenizle denetimi açık **proje** menüsünde tıklatın **varolan öğeyi Ekle**.  
   
      **Varolan öğeyi Ekle** iletişim kutusu görüntülenir.  
   
@@ -69,38 +72,38 @@ Bu makalede ActiveX denetim arabirimleri yerelleştirme için yordamlar açıkla
   
 3.  İçinde **dosya türü** kutusunda **tüm dosyalar (\*.\*)** .  
   
-4.  Dosya liste kutusunu çift tıklatın. IDL dosyası projeye eklemek istediğiniz.  
+4.  Dosya liste kutusuna çift tıklayın. IDL dosyası projeye eklemek istediğiniz.  
   
-5.  Tıklatın **açık** zaman eklediğiniz tüm gerekli. IDL dosyaları.  
+5.  Tıklayın **açık** zaman eklediğiniz tüm gerekli. IDL dosyaları.  
   
- Dosyaları projeye eklenmiş olduğundan, bunlar projenin kalanı yapılandırıldığında oluşturulacaktır. Yerelleştirilmiş tür kitaplıklarının geçerli ActiveX denetimi proje dizininde bulunur.  
+ Dosya projeye eklenmemiş olduğundan, bunlar projenin geri kalanını oluşturulduğunda oluşturulur. Yerelleştirilmiş tür kitaplıklarını geçerli ActiveX denetimi proje dizininde yer alır.  
   
- Kodunuz içinde (genellikle İngilizce dilinde) iç özellik adları her zaman kullanılır ve hiçbir zaman yerelleştirilmiştir. Bu denetim gönderme eşlemesi, özellik exchange işlevleri ve özellik sayfası veri exchange kodunuzu içerir.  
+ Kodunuz içinde (genellikle, İngilizce) iç özellik adları her zaman kullanılır ve hiçbir zaman yerelleştirilmiş. Bu denetim dağıtım eşlemesi, özellik değişim işlevleri ve özellik sayfası veri exchange kodunuzu içerir.  
   
- Yalnızca bir tür kitaplığı (. TLB) dosya denetim uygulaması kaynakları bağlı (. OCX) dosyası. Bu genellikle standartlaştırılmış ile sürümdür (genellikle İngilizce) adları. Yerelleştirilmiş bir sürümün sevk gerekir, denetimin sevk etmek. OCX (hangi zaten varsayılan bağlandı. TLB sürüm) ve. TLB uygun yerel ayar için. Bu, yalnızca anlamına gelir. OCX İngilizce sürümleri için bu yana doğru gereklidir. TLB zaten kendisine bağlandı. Diğer ülkeler için yerelleştirilmiş tür kitaplığı da ile birlikte gelen gerekir. OCX.  
+ Yalnızca bir tür kitaplığı (. TLB) dosya denetim uygulamasının kaynaklara bağlı (. OCX) dosyası. Genellikle bu sürümle standartlaştırılmış budur (genellikle, İngilizce) adları. Denetiminiz ihtiyacınız göndermeye yerelleştirilmiş bir sürümünü oluşturmak için. (Bu varsayılan olarak önceden bağlandı. OCX TLB sürüm) ve. TLB uygun yerel ayar için. Bu, yalnızca anlamına gelir. OCX İngilizce sürümleri için doğru beri gereklidir. TLB zaten kendisine bağlandı. Diğer yerel ayar için yerelleştirilmiş bir tür kitaplığı da ile birlikte gelen gerekir. OCX.  
   
- İstemcileri denetiminizin yerelleştirilmiş tür kitaplığı bulabilmeniz için yerel ayarlara özgü kaydedin. TLB dosyaları Windows Sistem kayıt defteri TypeLib bölümü altında. Üçüncü parametrenin (normalde isteğe bağlı) [AfxOleRegisterTypeLib](../mfc/reference/registering-ole-controls.md#afxoleregistertypelib) işlevi bu amaç için sağlanır. Aşağıdaki örnek, bir ActiveX denetimini Fransızca tür kitaplığının kaydeder:  
+ İstemciler denetiminizin yerelleştirilmiş tür kitaplığı bulabileceğinizden emin olmak için yerel ayara özgü kaydedin. Windows Sistem kayıt defterini TypeLib bölümünde TLB dosyaları. Öğesinin üçüncü parametresi (normalde isteğe bağlı) [AfxOleRegisterTypeLib](../mfc/reference/registering-ole-controls.md#afxoleregistertypelib) işlevi, bu amaç için sağlanır. Aşağıdaki örnek, bir ActiveX denetimi için Fransızca tür kitaplığını kaydeder:  
   
  [!code-cpp[NVC_MFC_AxLoc#2](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_2.cpp)]  
   
- Denetim kaydedildiğinde `AfxOleRegisterTypeLib` işlevi otomatik olarak arar için belirtilen. TLB dosyası denetimi ile aynı dizinde ve Windows kayıt veritabanında kaydeder. Varsa. TLB dosya bulunamadı, işlevi hiçbir etkisi olmaz.  
+ Denetiminiz kaydedildiğinde `AfxOleRegisterTypeLib` işlevi otomatik olarak arar belirtilen. Denetim ile aynı dizinde TLB dosyası ve Windows kayıt defteri veritabanındaki kaydeder. Varsa. TLB dosya bulunamazsa, işlev hiçbir etkisi olmaz.  
   
 ##  <a name="_core_localizing_the_control.92.s_user_interface"></a> Denetimin kullanıcı arabirimi yerelleştirme  
- Bir denetimin kullanıcı arabirimi yerelleştirme için tüm denetim kullanıcıya görünen kaynakları (örneğin, özellik sayfaları ve hata iletileri) dile özgü kaynak DLL'leri yerleştirin. Kullanıcının yerel ayarı için uygun DLL seçmek için kapsayıcının ortam LocaleID özelliği sonra kullanabilirsiniz.  
+ Bir denetimin kullanıcı arabirimi yerelleştirmek için tüm denetim kullanıcıya görünen kaynakları (örneğin, özellik sayfaları ve hata iletileri) dile özgü kaynak DLL'leri yerleştirin. Kapsayıcının ortam LocaleID özelliği daha sonra kullanıcının yerel ayar için uygun DLL seçmek için de kullanabilirsiniz.  
   
- Aşağıdaki kod örneğinde bulmak ve belirli bir yerel kaynak DLL'si yüklemek için bir yaklaşım gösterilmektedir. Adlı bu üye işlevi `GetLocalizedResourceHandle` Bu örnekte, ActiveX denetimi sınıfınızın üye işlevi olabilir:  
+ Aşağıdaki kod örneği bulun ve belirli bir yerel ayar için kaynak DLL'ini yükler için bir yaklaşım gösterilmektedir. Bu üye, çağrılan işlev, `GetLocalizedResourceHandle` Bu örnekte, bir ActiveX denetimi sınıfının üye işlevi olabilir:  
   
  [!code-cpp[NVC_MFC_AxLoc#3](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_3.cpp)]  
   
- Alt dili kimliği daha özelleştirilmiş yerelleştirme sağlamak için switch deyimi, her durumda iade edilemedi unutmayın. Bu işlev tanıtımı için bkz: `GetResourceHandle` işlevinde MFC ActiveX denetimleri örnek [LOCALIZE](../visual-cpp-samples.md).  
+ Alt dili kimliği daha özel yerelleştirme sağlamak için switch deyimi, her durumda iade edilemedi unutmayın. Bu işlev bir gösterimi için bkz. `GetResourceHandle` işlevinde MFC ActiveX denetimleri örnek [YERELLEŞTİRİN](../visual-cpp-samples.md).  
   
- Bir kapsayıcıya, kendisini ilk denetimi yüklediğinde, çağırabilirsiniz [COleControl::AmbientLocaleID](../mfc/reference/colecontrol-class.md#ambientlocaleid) yerel ayar kimliğini almak için Denetimin ardından döndürülen yerel ayar kimliği değerine geçirebilirsiniz `GetLocalizedResourceHandle` uygun kaynak kitaplığı yükler işlevi. Denetim elde edilen tanıtıcı varsa geçirmelisiniz için [AfxSetResourceHandle](../mfc/reference/application-information-and-management.md#afxsetresourcehandle):  
+ Denetimin ilk kez kendisi bir kapsayıcıya yüklediğinde çağırabilirsiniz [COleControl::AmbientLocaleID](../mfc/reference/colecontrol-class.md#ambientlocaleid) yerel ayar kimliğini almak için Denetimin ardından döndürülen yerel ayar kimliği değeri geçirebilirsiniz `GetLocalizedResourceHandle` uygun kaynak kitaplığı yükleyen bir işlev. Denetim varsa, sonuçta elde edilen tanıtıcı geçmelidir için [AfxSetResourceHandle](../mfc/reference/application-information-and-management.md#afxsetresourcehandle):  
   
  [!code-cpp[NVC_MFC_AxLoc#4](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_4.cpp)]  
   
- Üye işlevi geçersiz kılma gibi denetimin Yukarıdaki kod örneğini yerleştirin [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). Ayrıca, *m_hResDLL* control sınıfının üye değişkeni olmalıdır.  
+ Yukarıdaki kod örneğinde, bir üye işlev geçersiz kılma gibi denetimin yerleştirin [COleControl::OnSetClientSite](../mfc/reference/colecontrol-class.md#onsetclientsite). Ayrıca, *m_hResDLL* denetim sınıfının bir üye değişkeni olmalıdır.  
   
- Bir denetimin özellik sayfası yerelleştirme için benzer mantığı kullanabilirsiniz. Özellik sayfası yerelleştirme için aşağıdaki örneğe benzer bir kod özelliği sayfanızın uygulama dosyasına ekleyin (geçersiz kılma içinde [COlePropertyPage::OnSetPageSite](../mfc/reference/colepropertypage-class.md#onsetpagesite)):  
+ Bir denetimin özellik sayfası yerelleştirmek için de aynı mantığı kullanabilirsiniz. Özellik sayfasını yerelleştirmek için aşağıdaki örneğe benzer bir kod özelliği sayfanızın uygulama dosyasına ekleyin (geçersiz kılma olarak [COlePropertyPage::OnSetPageSite](../mfc/reference/colepropertypage-class.md#onsetpagesite)):  
   
  [!code-cpp[NVC_MFC_AxLoc#5](../mfc/codesnippet/cpp/mfc-activex-controls-localizing-an-activex-control_5.cpp)]  
   

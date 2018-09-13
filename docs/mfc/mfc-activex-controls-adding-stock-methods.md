@@ -1,7 +1,7 @@
 ---
 title: 'MFC ActiveX denetimleri: Stok yöntemler ekleme | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -16,44 +16,47 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2005391c6d91ee09703194eb8b8062ecfe08ba77
-ms.sourcegitcommit: 060f381fe0807107ec26c18b46d3fcb859d8d2e7
+ms.openlocfilehash: 604a095ab26abf4953d56786e00461cabd07e579
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36929805"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45534956"
 ---
 # <a name="mfc-activex-controls-adding-stock-methods"></a>MFC ActiveX Denetimleri: Stok Yöntemler Ekleme
-Stok yöntemi bir özel yönteminden farklıdır sınıfı tarafından zaten uygulanmış [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetiminiz için yenileme yöntemi destekleyen önceden tanımlanmış üye işlevi içeriyor. Stok bu yöntem için gönderme eşleme girişi DISP_STOCKFUNC_REFRESH ' dir.  
+Sınıfı tarafından zaten uygulandı, stok metodu bir özel yönteminden farklıdır [COleControl](../mfc/reference/colecontrol-class.md). Örneğin, `COleControl` denetim için yenileme yöntemi destekleyen önceden tanımlı üye işlevi içeriyor. Bu hisse senedi yöntemi için gönderme eşleme girişi DISP_STOCKFUNC_REFRESH ' dir.
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. ActiveX yerini modern teknolojiler hakkında daha fazla bilgi için bkz. [ActiveX denetimlerini](activex-controls.md).  
   
- `COleControl` Stok iki yöntemi destekler: DoClick ve yenileyin. Yenileme denetimin görünümünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; Denetimin tıklatın tetiklenecek DoClick çağrılan olay.  
+ `COleControl` Stok iki yöntemi destekler: DoClick ve yenileme. Yenileme denetiminin görünüşünü hemen güncelleştirmek için denetimin kullanıcı tarafından çağrılır; DoClick denetimin tıklatın ateşlenmesine çağrıldığında olay.  
   
 |Yöntem|Gönderme eşleme girişi|Yorum|  
 |------------|------------------------|-------------|  
-|`DoClick`|**DISP_STOCKPROP_DOCLICK)**|Click olayını tetikler.|  
-|`Refresh`|**DISP_STOCKPROP_REFRESH)**|Denetimin görünümünü hemen güncelleştirir.|  
+|`DoClick`|**DISP_STOCKPROP_DOCLICK)**|Bir tıklama olayı tetikler.|  
+|`Refresh`|**DISP_STOCKPROP_REFRESH)**|Hemen bir denetimin görünümünü güncelleştirir.|  
   
-##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Stok yöntemi kullanarak ekleme yöntem Ekleme Sihirbazı  
- Stok yöntem ekleme basittir kullanarak [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md). Aşağıdaki yordamda, MFC ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir denetime Refresh yöntemi ekleme gösterilmektedir.  
+##  <a name="_core_adding_a_stock_method_using_classwizard"></a> Stok yöntemi kullanarak bir ekleme yöntem Ekleme Sihirbazı  
+ Stok yöntem ekleme basit kullanarak [yöntem Ekleme Sihirbazı'nı](../ide/add-method-wizard.md). Aşağıdaki yordam, MFC ActiveX Denetim Sihirbazı kullanılarak oluşturulan bir denetime Refresh yöntemi ekleme göstermektedir.  
   
-#### <a name="to-add-the-stock-refresh-method-using-the-add-method-wizard"></a>Yöntem Ekleme Sihirbazı'nı kullanarak stok yenileme yöntemini eklemek için  
+#### <a name="to-add-the-stock-refresh-method-using-the-add-method-wizard"></a>Yöntem Ekleme Sihirbazı'nı kullanarak stok Refresh yöntemi eklemek için  
   
 1.  Denetiminizin proje yükleyin.  
   
-2.  Sınıf Görünümü'nde denetiminizin kitaplığı düğümünü genişletin.  
+2.  Sınıf Görünümü'nde denetim kitaplığı düğümünü genişletin.  
   
-3.  Arabirim (kitaplık düğümünün İkinci düğüm) denetlemek için kısayol menüsünü açmak için düğümü.  
+3.  Arabirim (ikinci düğüm kitaplığı düğümünün) denetlemek için kısayol menüsünü açmak için düğümü.  
   
-4.  Kısayol menüsünden tıklatın **Ekle** ve ardından **ekleme yöntemi**.  
+4.  Kısayol menüsünden tıklayın **Ekle** ve ardından **Ekle yöntemi**.  
   
      Bu yöntem Ekleme Sihirbazı'nı açar.  
   
-5.  İçinde **yöntem adı** kutusunda, **yenileme**.  
+5.  İçinde **yöntem adı** kutusunun **Yenile**.  
   
 6.  **Son**'a tıklayın.  
   
-##  <a name="_core_classwizard_changes_for_stock_methods"></a> Yöntemi Sihirbazı değişiklikleri için stok yöntemler ekleme  
- Stok yenileme yöntemi denetimin temel sınıfı tarafından desteklenmediği için **yöntem Ekleme Sihirbazı'nı** denetimin sınıf bildirimi herhangi bir şekilde değiştirmez. Denetimin gönderme harita ve çok yöntemi için bir giriş ekler. IDL dosyası. Denetimin gönderme eşlemesi, kendi uygulamasında bulunan aşağıdaki satırı eklenir (. CPP) dosyası:  
+##  <a name="_core_classwizard_changes_for_stock_methods"></a> Yöntemi Sihirbazı değişiklikler için stok yöntemler ekleme  
+ Stok Refresh yöntemi denetimin taban sınıfı tarafından desteklenmediği için **yöntem Ekleme Sihirbazı'nı** denetimin sınıf bildirimi hiçbir şekilde değiştirmez. Denetimin dağıtım eşlemesi ve çok yöntemi için bir giriş ekler. IDL dosyası. Denetimin dağıtım eşlemesi uygulaması içinde bulunan, aşağıdaki satırı eklenir (. CPP) dosyası:  
   
  [!code-cpp[NVC_MFC_AxUI#16](../mfc/codesnippet/cpp/mfc-activex-controls-adding-stock-methods_1.cpp)]  
   

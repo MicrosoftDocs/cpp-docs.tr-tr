@@ -1,7 +1,7 @@
 ---
 title: regex_iterator sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/10/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264f61ede0fb47e198459593b2eea154846cc7b9
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 2502ab1d7fbcbfc33883df3627ec36dfcf46e2d7
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108297"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535346"
 ---
 # <a name="regexiterator-class"></a>regex_iterator Sınıfı
 
@@ -43,37 +43,10 @@ ms.locfileid: "44108297"
 template<class BidIt,
    class Elem = typename std::iterator_traits<BidIt>::value_type,
    class RxTraits = regex_traits<Elem> >
-class regex_iterator {
-public:
-   typedef basic_regex<Elem, RXtraits> regex_type;
-   typedef match_results<BidIt> value_type;
-   typedef std::forward_iterator_tag iterator_category;
-   typedef std::ptrdiff_t difference_type;
-   typedef const match_results<BidIt>* pointer;
-   typedef const match_results<BidIt>& reference;
-
-   regex_iterator();
-   regex_iterator(
-      BidIt first, BidIt last, const regex_type& re,
-      regex_constants::match_flag_type f = regex_constants::match_default);
-
-   bool operator==(const regex_iterator& right);
-   bool operator!=(const regex_iterator& right);
-   const match_results<BidIt>& operator*();
-   const match_results<BidIt> * operator->();
-   regex_iterator& operator++();
-   regex_iterator& operator++(int);
-
-private:
-   BidIt begin; // exposition only
-   BidIt end; // exposition only
-   regex_type *pregex;     // exposition only
-   regex_constants::match_flag_type flags; // exposition only
-   match_results<BidIt> match; // exposition only
-   };
+class regex_iterator 
 ```
 
-### <a name="parameters"></a>Parametreler
+## <a name="parameters"></a>Parametreler
 
 *BidIt*<br/>
 Alt eşleşmeleri için yineleyici türü.
@@ -88,6 +61,39 @@ Eşleşecek öğelerin türü.
 
 Şablon sınıfı, bir sabit ileriye doğru yineleyici nesnesi tanımlar. Türündeki nesneler ayıklar `match_results<BidIt>` , normal ifade nesnesi tekrar tekrar uygulayarak `*pregex` yineleyici aralığı tarafından tanımlanan karakter dizisine `[begin, end)`.
 
+### <a name="constructors"></a>Oluşturucular
+
+|Oluşturucu|Açıklama|
+|-|-|
+|[regex_iterator](#regex_iterator)|Yineleyici oluşturur.|
+
+### <a name="typedefs"></a>Tür tanımları
+
+|Tür adı|Açıklama|
+|-|-|
+|[difference_type](#difference_type)|Bir yineleyicinin fark türü.|
+|[iterator_category](#iterator_category)|Yineleyici kategori türü.|
+|[İşaretçi](#pointer)|Bir eşleşme için bir işaretçi türü.|
+|[Başvuru](#reference)|Bir eşleşme için bir başvuru türü.|
+|[regex_type](#regex_type)|Eşleştirilecek normal ifade türü.|
+|[value_type](#value_type)|Bir eşleşme türü.|
+
+### <a name="operators"></a>İşleçler
+
+|İşleç|Açıklama|
+|-|-|
+|[operator!=](#op_neq)|Yineleyiciler eşitsizlik için karşılaştırır.|
+|[operator *](#op_star)|Belirlenen eşleşme erişir.|
+|[operator ++](#op_add_add)|Bir yineleyiciyi artırır.|
+|[operator=](#op_eq)|Yineleyiciler eşitlik için karşılaştırır.|
+|[-> işleci](#op_arrow)|Belirlenen eşleşme erişir.|
+
+## <a name="requirements"></a>Gereksinimler
+
+**Başlık:** \<regex >
+
+**Namespace:** std
+
 ## <a name="examples"></a>Örnekler
 
 Normal ifadelere örnekler için aşağıdaki konulara bakın:
@@ -100,11 +106,46 @@ Normal ifadelere örnekler için aşağıdaki konulara bakın:
 
 - [değiştirme](../standard-library/regex-functions.md#swap)
 
-## <a name="requirements"></a>Gereksinimler
+```cpp
+// std__regex__regex_iterator.cpp
+// compile with: /EHsc
+#include <regex>
+#include <iostream>
 
-**Başlık:** \<regex >
+typedef std::regex_iterator<const char *> Myiter;
+int main()
+    {
+    const char *pat = "axayaz";
+    Myiter::regex_type rx("a");
+    Myiter next(pat, pat + strlen(pat), rx);
+    Myiter end;
 
-**Namespace:** std
+    for (; next != end; ++next)
+        std::cout << "match == " << next->str() << std::endl;
+
+// other members
+    Myiter it1(pat, pat + strlen(pat), rx);
+    Myiter it2(it1);
+    next = it1;
+
+    Myiter::iterator_category cat = std::forward_iterator_tag();
+    Myiter::difference_type dif = -3;
+    Myiter::value_type mr = *it1;
+    Myiter::reference ref = mr;
+    Myiter::pointer ptr = &ref;
+
+    dif = dif; // to quiet "unused" warnings
+    ptr = ptr;
+
+    return (0);
+    }
+```
+
+```Output
+match == a
+match == a
+match == a
+```
 
 ## <a name="difference_type"></a>  regex_iterator::difference_type
 
@@ -118,49 +159,6 @@ typedef std::ptrdiff_t difference_type;
 
 Türü eşanlamlıdır `std::ptrdiff_t`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_difference_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="iterator_category"></a>  regex_iterator::iterator_category
 
 Yineleyici kategori türü.
@@ -172,49 +170,6 @@ typedef std::forward_iterator_tag iterator_category;
 ### <a name="remarks"></a>Açıklamalar
 
 Türü eşanlamlıdır `std::forward_iterator_tag`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_iterator_category.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="op_neq"></a>  regex_iterator::operator! =
 
@@ -233,49 +188,6 @@ Karşılaştırma yapılacak yineleyici.
 
 Üye işlevinin döndürdüğü `!(*this == right)`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_operator_ne.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="op_star"></a>  regex_iterator::operator *
 
 Belirlenen eşleşme erişir.
@@ -287,49 +199,6 @@ const match_results<BidIt>& operator*();
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi depolanan değeri döndürür `match`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_operator_star.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="op_add_add"></a>  regex_iterator::operator++
 
@@ -345,49 +214,6 @@ regex_iterator& operator++(int);
 Geçerli eşleşme herhangi bir karakter varsa, ilk işleci çağırır `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail | regex_constants::match_not_null)`; Aksi takdirde, saklanan değer ilerler `begin` geçerli eşleşen sonra ardından çağrıları ilk karaktere işaret edecek şekilde `regex_search(begin, end, match, *pregex, flags | regex_constants::match_prev_avail)`. Arama işleci başarısız olursa her iki durumda da, nesne dizisi bitiş yineleyici ayarlar. İşleci, nesneyi döndürür.
 
 İkinci işleç nesnesinin bir kopyasını getirir, nesne artırır ve sonra kopyayı döndürür.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_operator_inc.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="op_eq"></a>  regex_iterator::operator=
 
@@ -406,49 +232,6 @@ Karşılaştırma yapılacak yineleyici.
 
 Üye işlev true döndürür `*this` ve *doğru* dizisi son yineleyiciler veya birinin diğerinden dizisi bitiş yineleyici olup olmadığını ve `begin == right.begin`, `end == right.end`, `pregex == right.pregex`, ve `flags == right.flags`. Aksi takdirde false döndürür.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_operator_as.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="op_arrow"></a>  regex_iterator::operator-&gt;
 
 Belirlenen eşleşme erişir.
@@ -460,49 +243,6 @@ const match_results<BidIt> * operator->();
 ### <a name="remarks"></a>Açıklamalar
 
 Üye işlevi depolanan değeri adresini döndürür `match`.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_operator_arrow.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="pointer"></a>  regex_iterator::pointer
 
@@ -516,49 +256,6 @@ typedef match_results<BidIt> *pointer;
 
 Türü eşanlamlıdır `match_results<BidIt>*`burada `BidIt` şablon parametresi.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_pointer.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="reference"></a>  regex_iterator::Reference
 
 Bir eşleşme için bir başvuru türü.
@@ -570,50 +267,6 @@ typedef match_results<BidIt>& reference;
 ### <a name="remarks"></a>Açıklamalar
 
 Türü eşanlamlıdır `match_results<BidIt>&`burada `BidIt` şablon parametresi.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_reference.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="regex_iterator"></a>  regex_iterator::regex_iterator
 
@@ -646,50 +299,6 @@ Eşleşme bayrakları.
 
 İlk Oluşturucu bir dizisi bitiş yineleyici oluşturur. İkinci oluşturucu depolanmış değere başlatır `begin` ile *ilk*, depolanan değer `end` ile *son*, depolanan değer `pregex` ile `&re`ve depolanan değeri `flags` ile *f*. Ardından `regex_search(begin, end, match, *pregex, flags)`. Arama başarısız olursa, oluşturucu nesne dizisi bitiş yineleyici ayarlar.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_construct.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="regex_type"></a>  regex_iterator::regex_type
 
 Eşleştirilecek normal ifade türü.
@@ -702,50 +311,6 @@ typedef basic_regex<Elem, RXtraits> regex_type;
 
 Typedef eşanlamlıdır `basic_regex<Elem, RXtraits>`.
 
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_regex_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-
-```
-
-```Output
-match == a
-match == a
-match == a
-```
-
 ## <a name="value_type"></a>  regex_iterator::value_type
 
 Bir eşleşme türü.
@@ -757,50 +322,6 @@ typedef match_results<BidIt> value_type;
 ### <a name="remarks"></a>Açıklamalar
 
 Türü eşanlamlıdır `match_results<BidIt>`burada `BidIt` şablon parametresi.
-
-### <a name="example"></a>Örnek
-
-```cpp
-// std__regex__regex_iterator_value_type.cpp
-// compile with: /EHsc
-#include <regex>
-#include <iostream>
-
-typedef std::regex_iterator<const char *> Myiter;
-int main()
-    {
-    const char *pat = "axayaz";
-    Myiter::regex_type rx("a");
-    Myiter next(pat, pat + strlen(pat), rx);
-    Myiter end;
-
-    for (; next != end; ++next)
-        std::cout << "match == " << next->str() << std::endl;
-
-// other members
-    Myiter it1(pat, pat + strlen(pat), rx);
-    Myiter it2(it1);
-    next = it1;
-
-    Myiter::iterator_category cat = std::forward_iterator_tag();
-    Myiter::difference_type dif = -3;
-    Myiter::value_type mr = *it1;
-    Myiter::reference ref = mr;
-    Myiter::pointer ptr = &ref;
-
-    dif = dif; // to quiet "unused" warnings
-    ptr = ptr;
-
-    return (0);
-    }
-
-```
-
-```Output
-match == a
-match == a
-match == a
-```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

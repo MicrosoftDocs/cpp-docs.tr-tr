@@ -1,7 +1,7 @@
 ---
 title: Colecmduı sınıfı | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: reference
@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b057620e0ea348559b9c37f55ba7658b7f5270c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4ece2d45bdce490d09c7195deec380728d79392d
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851489"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535250"
 ---
 # <a name="colecmdui-class"></a>Colecmduı sınıfı
 Uygulayan bir yöntem için kullanıcı arabirimi nesnelerinin durumunu güncelleştirmek MFC ilgili `IOleCommandTarget`-uygulamanızın özelliklerini temelli.  
@@ -61,7 +61,7 @@ class COleCmdUI : public CCmdUI
   
  `COleCmdUI` DocObject kapsayıcısının kullanıcı arabiriminde (örneğin, dosya yeni, açık, yazdırma ve benzeri) kaynaklanan komutları almak üzere, ve kapsayıcı DocObject'ın kullanıcı arabiriminde kaynaklanan komutları almasına olanak sağlar. Ancak `IDispatch` aynı komutları gönderme için kullanılabilecek `IOleCommandTarget` sorgulamak ve komutları, bağımsız değişken olmadan genellikle standart bir dizi kullanır ve hiçbir tür bilgileri söz konusu olduğundan yürütmek için daha basit bir yol sağlar. `COleCmdUI` etkinleştirme, güncelleştirme ve DocObject kullanıcı arabirimi komutları diğer özelliklerini ayarlamak için kullanılabilir. Çağırmak istediğinizde, çağrı [COleServerDoc::OnExecOleCmd](../../mfc/reference/coleserverdoc-class.md#onexecolecmd).  
   
- DocObjects hakkında daha fazla bilgi için bkz: [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md). Ayrıca bkz: [Internet ilk adımlar: etkin belgeler](../../mfc/active-documents-on-the-internet.md) ve [etkin belgeler](../../mfc/active-documents-on-the-internet.md).  
+ DocObjects hakkında daha fazla bilgi için bkz: [CDocObjectServer](../../mfc/reference/cdocobjectserver-class.md) ve [Cdocobjectserverıtem](../../mfc/reference/cdocobjectserveritem-class.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [Ccmduı](../../mfc/reference/ccmdui-class.md)  

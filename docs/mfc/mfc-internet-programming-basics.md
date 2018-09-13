@@ -1,7 +1,7 @@
 ---
 title: MFC Internet Programlama temelleri | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/12/2018
 ms.technology:
 - cpp-mfc
 ms.topic: conceptual
@@ -26,19 +26,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6896daddc0eb900f9e2a29497eb2dd8a1dc78446
-ms.sourcegitcommit: 19a108b4b30e93a9ad5394844c798490cb3e2945
+ms.openlocfilehash: 980822792c3be4bc9c4de93baa20d4b3decb5af9
+ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34255615"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45535164"
 ---
 # <a name="mfc-internet-programming-basics"></a>MFC Internet Programlama Temelleri
-Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sağlar. Internet için birçok yeni uygulama yazılmış ve yeni uygulama türlerini teknolojileri, tarayıcı yetenekleri ve güvenlik seçeneklerini değiştir yazılır. Tarayıcılar World Wide Web erişimi sağlama ve metin, grafik, ActiveX denetimleri ve belgeleri içeren HTML sayfalarını görüntüleme istemci bilgisayarlarda çalıştırın. Sunucuları, FTP, HTTP ve gopher hizmetleri sağlamak ve sunucu uzantısı uygulamaları CGI kullanmanın çalıştırın. Özel uygulamanızı bilgilerini almak ve veri Internet'te sağlayın.  
+
+Microsoft, hem istemci hem de sunucu uygulamalarına programlama için birçok API'ler sağlar. İnternet'e birçok yeni uygulama yazılan ve yeni uygulama türleri teknolojileri, tarayıcı yetenekleri ve güvenlik seçenekleri değişiklik yazılır. Tarayıcılar, World Wide Web erişim sağlayarak ve metin, grafik, ActiveX denetimleri ve belgeleri içeren HTML sayfalarını görüntüleme istemci bilgisayarlarda çalışması. Sunucuları, FTP, HTTP ve gopher hizmetleri sağlamak ve CGI kullanmanın server uzantısı uygulamalarını çalıştırmak. Özel uygulamanızın bilgi alabilir ve Internet'te veriler sağlar.  
+
+>[!IMPORTANT]
+> ActiveX yeni geliştirme projeleri için kullanılmaması gereken eski bir teknolojidir. Daha fazla bilgi için [ActiveX denetimlerini](activex-controls.md).
   
  ![İstemci ve sunucu uygulamaları](../mfc/media/vc38bq1.gif "vc38bq1")  
   
- MFC Internet programlama destekleyen sınıflar sağlar. Kullanabileceğiniz [COleControl](../mfc/reference/colecontrol-class.md) ve [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) ve ilgili ActiveX denetimlerini ve etkin belgeler yazmak için MFC sınıfları. MFC sınıfları gibi kullanabilir [CInternetSession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) dosya ve FTP gibi Internet protokolleri kullanarak bilgi almak için HTTP ve gopher.  
+ MFC Internet programlama destekleyen sınıflar sağlar. Kullanabileceğiniz [COleControl](../mfc/reference/colecontrol-class.md) ve [CDocObjectServer](../mfc/reference/cdocobjectserver-class.md) ve ilgili MFC sınıfları ActiveX denetimleri ve etkin belgeler yazılacak. MFC sınıfları gibi kullanabileceğiniz [Cınternetsession](../mfc/reference/cinternetsession-class.md), [CFtpConnection](../mfc/reference/cftpconnection-class.md), ve [CAsyncMonikerFile](../mfc/reference/casyncmonikerfile-class.md) dosyaları ve FTP gibi Internet protokollerini kullanarak bilgileri almak için HTTP ve gopher.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
@@ -58,8 +62,6 @@ Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sa�
   
 -   [Internet'te ActiveX Denetimleri](../mfc/activex-controls-on-the-internet.md)  
   
--   [Internet'te Etkin Belgeler](../mfc/active-documents-on-the-internet.md)  
-  
 -   [Internet'teki Zaman Uyumsuz Adlar](../mfc/asynchronous-monikers-on-the-internet.md)  
   
 -   [Win32 Internet Uzantıları (WinInet)](../mfc/win32-internet-extensions-wininet.md)  
@@ -77,14 +79,14 @@ Microsoft, istemci ve sunucu uygulamaları programlama için birçok API'ler sa�
 -   [DHTML Denetimleri için ATL Desteği](../atl/atl-support-for-dhtml-controls.md)  
   
 ##  <a name="_core_web_sites_for_more_information"></a> Daha fazla bilgi için Web siteleri  
- Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar bildirilmeksizin değiştirilebilir.)  
+ Microsoft Internet teknolojisi hakkında ek bilgi için bkz: [Microsoft Developer Network (MSDN)](http://go.microsoft.com/fwlink/p/?linkid=56322) Web sitesi. (Bağlantılar değiştirilebilir.)  
   
- Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolojileri ve son ve yaklaşan konferans ilgili üst hikayeler kullanma hakkında bilgi içerir. Bu sayfadan .NET ve XML Geliştirici Merkezi gibi birçok ilgili Geliştirici sitelere atlayabilirsiniz. Ayrıca, beta SDK'ları ve örnekleri de indirebilirsiniz.  
+ Bu Web sitesi geliştiricileri için Microsoft geliştirme araçları ve teknolojileri ve güncel ve gelecek konferanslarda hakkında öne çıkan Haberler kullanma hakkında bilgi içerir. Bu sayfadan XML Geliştirici merkezleri ve .NET dahil olmak üzere birçok ilgili Geliştirici sitesi atlayabilirsiniz. Beta SDK'lar ve örnekler de indirebilirsiniz.  
   
- [World Wide Web Konsorsiyumu (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri için belirtimler yayımlar.  
+ [World Wide Web Consortium (W3C)](http://go.microsoft.com/fwlink/p/?linkid=37125) HTML, HTTP, CGI ve diğer World Wide Web teknolojileri özellikleri yayımlar.  
   
-##  <a name="_core_more_internet_help"></a> Internet ile ilgili daha fazla yardım  
- Windows SDK'sı OLE bölümü OLE programlama hakkında ek bilgi içerir. Bu bilgiler MFC sınıfları aracılığıyla yapmak yerine, doğrudan, Win32 WinINet işlevlerini kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca, Internet teknolojileri hakkında genel bilgi içerir.  
+##  <a name="_core_more_internet_help"></a> Daha fazla Internet Yardımı  
+ Windows SDK'sı OLE bölümünü OLE programlama hakkında ek bilgiler içerir. Bu bilgiler, Win32 WinINet işlevleri doğrudan kullanmak yerine MFC sınıflarını kullanma hakkında ayrıntılı bilgi sağlar. Ayrıca Internet teknolojileri hakkında genel bilgiler içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
 

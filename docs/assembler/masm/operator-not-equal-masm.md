@@ -1,7 +1,7 @@
 ---
-title: operator! = (MASM) | Microsoft Docs
+title: işleç! = (MASM) | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 08/30/2018
 ms.technology:
 - cpp-masm
 ms.topic: reference
@@ -17,22 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4b0292d95fcd2b0b7c816c98a3d4709b4fdc5e6
-ms.sourcegitcommit: dbca5fdd47249727df7dca77de5b20da57d0f544
+ms.openlocfilehash: 6dc66aac000cc346ae04d06c4b0c2374ff0762e4
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32054643"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "43688060"
 ---
 # <a name="operator--masm"></a>!= işleci (MASM)
-Eşit değil. İçinde yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-expression1 != expression2  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşleçler Başvurusu](../../assembler/masm/operators-reference.md)
+
+Eşit değildir. Yalnızca kullanılan [. Eğer](../../assembler/masm/dot-if.md), [. SIRADA](../../assembler/masm/dot-while.md), veya [. Yineleme](../../assembler/masm/dot-repeat.md) engeller ve derleme zamanında çalışma zamanında değerlendirilir.
+
+## <a name="syntax"></a>Sözdizimi
+
+> İfade1! expression2 =
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşleçler Başvurusu](../../assembler/masm/operators-reference.md)<br/>

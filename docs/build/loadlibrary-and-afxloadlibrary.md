@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03815ac535033d9b0fdf0146c0200be16e5ae91a
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e24a86ead18cde836fd52df4e0c279f69b4c67a1
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465928"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "43687941"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 
-İşler çağrı [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187) (veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) bir DLL'ye açıkça bağlanmak için. İşlev başarılı olursa, belirtilen DLL'yi çağıran işlemin adres alanına eşler ve diğer işlevlerle açık bağlamada kullanılan DLL için bir tanıtıcı döndürür; Örneğin, `GetProcAddress` ve `FreeLibrary`.
+İşler çağrı [LoadLibraryExA](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexa) veya [LoadLibraryExW](/windows/desktop/api/libloaderapi/nf-libloaderapi-loadlibraryexw)(veya [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)) bir DLL'ye açıkça bağlanmak için. İşlev başarılı olursa, belirtilen DLL'yi çağıran işlemin adres alanına eşler ve diğer işlevlerle açık bağlamada kullanılan DLL için bir tanıtıcı döndürür; Örneğin, `GetProcAddress` ve `FreeLibrary`.
 
 `LoadLibrary` örtük bağlama için kullanılanla aynı arama sırasını kullanarak DLL'yi bulmaya çalışır. Sistem DLL'yi bulamazsa ya da giriş noktası işlevi FALSE döndürürse, `LoadLibrary` NULL döndürür. Çağrı `LoadLibrary` çağıran işlemin adres alanına eşlenmiş bir DLL modülü belirtiyorsa işlev modülün başvuru sayısını artırır ve DLL bir tanıtıcı döndürür.
 
@@ -59,5 +59,3 @@ Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işle
 ## <a name="see-also"></a>Ayrıca bkz.
 
 - [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
-- [LoadLibrary](https://go.microsoft.com/fwlink/p/?LinkID=259187)
-- [AfxLoadLibrary](../mfc/reference/application-information-and-management.md#afxloadlibrary)
