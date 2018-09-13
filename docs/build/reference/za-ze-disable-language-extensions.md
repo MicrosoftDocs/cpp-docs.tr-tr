@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e30fb37be6738b7100b84a1898c02ab4230c41b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 63c4998ae0ff6efc6fa520c66a4cabff2476f0d0
+ms.sourcegitcommit: 6e479e33e8fd8e30ea32801edbff2e3415f31bf7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42597579"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45556760"
 ---
 # <a name="za-ze-disable-language-extensions"></a>/Za, /Ze (Dil Uzantılarını Devre Dışı Bırak)
 **/Za** derleyici seçeneği, ANSI C89 veya ISO C ++ 11 ile uyumlu olmayan dil yapıları için bir hata gösterir. **/Ze** derleyici seçeneği, varsayılan olarak açıktır, Microsoft uzantıları sağlar.  
@@ -54,8 +54,8 @@ ms.locfileid: "42597579"
   
  Belirterek dil uzantılarını devre dışı öneririz **/Za** programınızı diğer ortamlara bağlantı noktası planlıyorsanız seçeneği. Zaman **/Za** belirtilirse, derleyici Microsoft genişletilmiş anahtar sözcükleri basit tanımlayıcıları olarak değerlendirir, diğer Microsoft uzantılarını devre dışı bırakır ve otomatik olarak tanımlar `__STDC__` C programları için önceden tanımlanmış makro.  
   
- İle kullanılan diğer derleyici seçeneklerini **/Za** nasıl derleyici standartlara uyum sağlar etkileyebilir. Örneğin, **/Za** ve [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md) uymuyor kayan nokta türü promosyon davranışındaki ISO C99 veya C ++ 11 standartlar neden olabilir.  
-  
+ İle kullanılan diğer derleyici seçeneklerini **/Za** nasıl derleyici standartlara uyum sağlar etkileyebilir.
+
  Belirli standartlarla uyumlu davranışı ayarları belirtmek daha fazla yolu için bkz [/Zc](../../build/reference/zc-conformance.md) derleyici seçeneği.  
   
  Visual C++ ile uyumluluk sorunları hakkında daha fazla bilgi için bkz. [standart dışı davranış](../../cpp/nonstandard-behavior.md).  
