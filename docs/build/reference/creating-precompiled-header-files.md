@@ -19,113 +19,113 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d9708f203c3d79d4cf369583c75d348278d06a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 893fc8a88a4a0d28aa5b98cfc7bacffbe0556ee0
+ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 09/13/2018
 ms.locfileid: "32379217"
 ---
 # <a name="creating-precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma
   
-Microsoft C ve C++ Derleyicileri satır içi kod dahil olmak üzere tüm C veya C++ kodu önceden derlemek için seçenekler sağlar. Bu performans özelliğini kullanarak, kod kararlı gövdesi, kod derlenmiş durumu bir dosyada saklayabilir ve, sonraki derlemeler sırasında önceden derlenmiş kod halen geliştirilme aşamasındadır kodu ile birleştirin. Sonraki her derleme daha hızlı çünkü tutarlı kodun derlenmesi gerekmez.  
+Microsoft C and C++ Derleyicileri, satır içi kod dahil olmak üzere tüm C veya C++ kodu önceden derlemek için seçenekler sağlar. Bu performans özelliği kullanarak, kod kararlı gövdesi, kodun derlenmiş hali bir dosyada depolar ve, sonraki derleme sırasında önceden derlenmiş kod hala geliştirilmekte olan kod ile birleştirin. Tutarlı kodun derlenmesi gerekmez çünkü her sonraki derleme daha hızlıdır.  
   
-Bu konuda aşağıdaki önceden derlenmiş üst bilgi konuları içerir:  
+Bu konu, önceden derlenmiş üst bilgi aşağıdaki konuları içerir:  
   
 -   [Kaynak kodu önceden derlemek ne zaman](#when-to-precompile-source-code)  
   
 -   [Kodu önceden derlemek için iki seçenek](#two-choices-for-precompiling-code)  
   
--   [Önceden derlenmiş başlık tutarlığı kuralları](#precompiled-header-consistency-rules)  
+-   [Önceden derlenmiş üst bilgi tutarlığı kuralları](#precompiled-header-consistency-rules)  
   
--   [Önceden derlenmiş başlıkların dosya başına kullanım için tutarlık kuralları](#consistency-rules-for-per-file-use-of-precompiled-headers)  
+-   [Önceden derlenmiş üst bilgilerin dosya başına kullanım için tutarlık kuralları](#consistency-rules-for-per-file-use-of-precompiled-headers)  
   
 -   [/Yc ve /Yu için tutarlık kuralları](#consistency-rules-for-yc-and-yu)  
   
--   [Projede önceden derlenmiş başlıkları kullanma](#using-precompiled-headers-in-a-project)  
+-   [Projede önceden derlenmiş üst bilgileri kullanma](#using-precompiled-headers-in-a-project)  
   
--   [Derleme işlemindeki PCH dosyaları](#pch-files-in-the-build-process)  
+-   [Derleme sürecindeki PCH dosyaları](#pch-files-in-the-build-process)  
   
 -   [PCH için örnek derleme görevleri dosyası](#sample-makefile-for-pch)  
   
 -   [PCH için örnek kod](#example-code-for-pch)  
   
-Önceden derlenmiş üstbilgiler ilgili derleyici seçenekleri hakkında başvuru bilgileri için bkz: [/Y (önceden derlenmiş başlıklar)](../../build/reference/y-precompiled-headers.md).  
+Önceden derlenmiş üst bilgiler için ilgili derleyici seçenekleri hakkında başvuru bilgileri için bkz [/Y (önceden derlenmiş üst bilgiler)](../../build/reference/y-precompiled-headers.md).  
   
 <a name="when-to-precompile-source-code"></a>  
   
 ## <a name="when-to-precompile-source-code"></a>Kaynak Kodun Ne Zaman Önceden Derleneceği  
   
-Önceden derlenmiş kod derleme süresini azaltmak için geliştirme döngüsü sırasında özellikle yararlıdır:  
+Önceden derlenmiş kod geliştirme döngüsü sırasında derleme zamanı azaltmak için özellikle yararlıdır:  
   
--   Her zaman çok sık değişmeyen kod büyük gövdesi kullanırsınız.  
+-   Her zaman büyük seyrek değişen kod gövdesi de kullanın.  
   
--   Programınızı tümü dosyaları Ekle ve aynı derleme seçenekleri standart kümesi kullanan birden fazla modülü oluşur. Bu durumda, tüm dosyaları içerecek bir önceden derlenmiş üst bilgi önceden derlenmiş olabilir.  
+-   Programınız her biri bir standart içerme dosyaları ve aynı derleme seçenekleri kullanan birden çok modül oluşur. Bu durumda, tüm dosyaları içerecek bir önceden derlenmiş üst bilgi önceden derlenmiş olabilir.  
   
-İlk derleme — önceden derlenmiş üst bilgi (PCH) dosyası oluşturur bir — sonraki derlemeler biraz daha uzun sürer. Önceden derlenmiş kod dahil ederek sonraki derlemeler daha hızlı bir şekilde devam edebilirsiniz.  
+İlk derleme — (PCH) önceden derlenmiş üst bilgi dosyası oluşturur bir — sonraki derlemeler biraz daha uzun sürer. Sonraki derlemeler önceden derlenmiş kod ekleyerek daha hızlı bir şekilde devam edebilirsiniz.  
   
-C ve C++ programlarında ön derleme yap. Programlama C++'da, sınıf arabirimi bilgileri üstbilgi dosyalarına ayırmak için yaygın bir uygulamadır. Bu üst bilgi dosyaları daha sonra bir sınıf kullanma programlarda dahil edilebilir. Bu üstbilgileri önceden derleme tarafından bir programı derlemek için geçen süreyi azaltabilir.  
+Hem C ve C++ programları ön derleme. Programlama C++'da, sınıf arabirimi bilgileri üstbilgi dosyalarına ayırmak için yaygın bir uygulamadır. Bu üst bilgi dosyaları, daha sonra sınıfı kullanan programlarda eklenebilir. Bu üstbilgileri önceden derlemek tarafından bir programı derlemek için gereken süreyi azaltabilir.  
   
 > [!NOTE]
->  Kaynak dosya başına yalnızca bir önceden derlenmiş üst bilgi (.pch) dosyasını kullanabilirsiniz, ancak bir projede birden çok .pch dosyaları kullanabilirsiniz.  
+>  Kaynak dosya yalnızca bir önceden derlenmiş üst bilgi (.pch) dosyasını kullanabilirsiniz, ancak bir projede birden çok .pch dosyaları kullanabilirsiniz.  
   
 <a name="two-choices-for-precompiling-code"></a>  
   
 # <a name="two-choices-for-precompiling-code"></a>Kodu Önceden Derlemek için İki Seçenek  
   
-Visual C++ ile C veya C++ kodu önceden derlemek; yalnızca üst bilgi dosyaları önceden derlemek için sınırlı değildir.  
+Visual C++ ile herhangi bir C veya C++ kodu önceden derlemek; yalnızca üst bilgi dosyaları önceden derlemek için sınırlı değildir.  
   
-Önceden derleme planlama gerektirir, ancak basit üstbilgi dosyaları dışındaki kaynak kodu önceden derlemek durumlarda önemli ölçüde daha hızlı derlemeleri sağlar.  
+Önceden derleme planlama gerektirir, ancak basit bir üst bilgi dosyaları dışındaki kaynak kodu önceden derlemek, önemli ölçüde daha hızlı derlemeler sağlar.  
   
-Kodu önceden derlemek Kaynak dosyalarınız üstbilgi dosyaları ortak kümesi kullanır ancak bunları aynı sırada içerme bildiğiniz durumlarda veya kaynak kodu, ön derlemesi içinde dahil etmek istediğinizde.  
+Kod, kaynak dosyalarınızda ortak başlık dosyaları kümesi kullanın ancak bunları aynı sırada içermez bildiğinizde ya da kaynak kodu, ön derleme içinde dahil etmek istediğiniz ön derleme.  
   
-Önceden derlenmiş üstbilgi seçenekleri [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) ve [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md). Kullanım **/Yc** önceden derlenmiş üstbilgi oluşturmak için. İsteğe bağlı ile kullanıldığında [hdrstop](../../preprocessor/hdrstop.md) pragma, **/Yc** , her iki üst bilgi dosyaları önceden derlemek ve kaynak kodu sağlar. Seçin **/Yu** varolan derlemede varolan bir önceden derlenmiş üstbilgi kullanılacak. Aynı zamanda **/Fp** ile **/Yc** ve **/Yu** seçenekleri önceden derlenmiş üstbilgi için alternatif bir ad girin.  
+Önceden derlenmiş üst bilgi seçenekleri [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) ve [/Yu (önceden derlenmiş üst bilgi dosyasını kullanma)](../../build/reference/yu-use-precompiled-header-file.md). Kullanım **/Yc** bir önceden derlenmiş üst bilgi oluşturulacak. İsteğe bağlı ile kullanıldığında [hdrstop](../../preprocessor/hdrstop.md) pragması **/Yc** her iki başlık dosyası ön derleme ve kaynak kodu sağlar. Seçin **/Yu** mevcut derlemede varolan önceden derlenmiş üst bilgi kullanılacak. Ayrıca **/FP** ile **/Yc** ve **/Yu** önceden derlenmiş üst bilgi alternatif bir ad vermek için Seçenekler.  
   
-Derleyici seçeneği başvuru konuları için **/Yu** ve **/Yc** geliştirme ortamında bu işleve erişmek nasıl ele almaktadır.  
+Derleyici seçeneği başvuru konusundan **/Yu** ve **/Yc** geliştirme ortamındaki bu işleve erişmek nasıl ele almaktadır.  
   
 <a name="precompiled-header-consistency-rules"></a>  
   
 ## <a name="precompiled-header-consistency-rules"></a>Önceden Derlenmiş Üst Bilgi Tutarlığı Kuralları  
   
-PCH dosyaları makine ortamı hakkında bilgi bilgilerinin yanı sıra bellek adresi program içerdiğinden, yalnızca oluşturulduğu makinedeki bir PCH dosyası kullanmanız gerekir.  
+PCH dosyaları makine ortamı hakkında bilgi bilgilerinin yanı sıra bellek adresi program içerdiğinden, yalnızca oluşturulduğu, makinedeki bir PCH dosyası kullanmanız gerekir.  
   
 <a name="consistency-rules-for-per-file-use-of-precompiled-headers"></a>  
   
 ## <a name="consistency-rules-for-per-file-use-of-precompiled-headers"></a>Önceden Derlenmiş Üst Bilgilerin Dosya Başına Kullanım için Tutarlık Kuralları
 
-[/Yu](../../build/reference/yu-use-precompiled-header-file.md) derleyici seçeneği kullanmak için hangi PCH dosyasını belirtmenize olanak sağlar.  
+[/Yu](../../build/reference/yu-use-precompiled-header-file.md) derleyici seçeneği kullanmak için hangi PCH dosyası belirtmenize olanak sağlar.  
   
-PCH dosyasını kullandığınızda, aynı derleme ortamı derleyici varsayar — tutarlı derleyici seçenekleri, pragmaları ve benzeri kullanan —, edildi yürürlükte PCH dosyasını oluştururken aksi belirtilmedikçe. Derleyici bir tutarsızlık algılarsa bir uyarı verir ve mümkün olduğunda tutarsızlığı tanımlar. Bu tür uyarılar PCH dosyası ile ilgili bir sorun göstermiyor; Bunlar yalnızca olası çakışmaları sizi uyarır. PCH dosyaları için tutarlılık gereksinimleri aşağıdaki bölümlerde açıklanmıştır.  
+PCH dosyası kullandığınızda, derleyici aynı derleme ortamı varsayar — tutarlı derleyici seçenekleri, pragmalar vb. kullanan bir — olan geçerli PCH dosyası oluştururken, aksini belirtmediğiniz sürece. Derleyici bir tutarsızlık algılarsa bir uyarı verir ve mümkün olduğunda tutarsızlığı tanımlar. Bu tür uyarılar PCH dosyası ile ilgili bir sorun göstermez; Bunlar yalnızca olası çakışmaların uyar. PCH dosyaları tutarlılık gereksinimleri, aşağıdaki bölümlerde açıklanmıştır.  
   
 ### <a name="compiler-option-consistency"></a>Derleyici seçeneği tutarlılık  
   
-Aşağıdaki derleyici seçenekleri PCH dosyası kullanıldığında bir tutarsızlık uyarı tetikleyebilirsiniz:  
+Aşağıdaki derleyici seçeneklerinin PCH dosyası kullanırken bir tutarsızlık uyarı tetikleyebilir:  
   
--   Önişlemci kullanılarak oluşturulan makroları (/ D) seçeneği oluşturmuş olduğunuz PCH dosyası derleme ve geçerli derleme arasında aynı olması gerekir. Tanımlı sabitler durumunu işaretli, ancak bunlar değiştirirseniz, beklenmedik sonuçlar oluşabilir.  
+-   Önişlemci kullanılarak oluşturulan makroları (/ D) seçeneği PCH dosyası oluşturulan derleme ve geçerli derleme arasında aynı olması gerekir. Tanımlı sabitler durumunu işaretli, ancak bunlar değiştirirseniz, beklenmeyen sonuçlar oluşabilir.  
   
--   PCH dosyaları /E ve /EP seçenekleriyle çalışmaz.  
+-   PCH dosyaları /E ve /EP seçenekleriyle birlikte çalışmaz.  
   
--   PCH dosyaları ya da Gözat bilgisi Oluştur kullanılarak oluşturulmalıdır (/ FR) seçeneğini veya dışarıda yerel değişkenler (/ Fr) PCH dosyası kullanmak sonraki derlemeler bu seçenekleri kullanmadan önce seçeneği.  
+-   PCH dosyaları ya da Gözat bilgisi Oluştur kullanılarak oluşturulmalıdır (/ FR) seçeneği veya dışarıda yerel değişkenler (/ Fr) PCH dosyası kullanan sonraki derlemeler bu seçenekler kullanabilmeniz için seçenek.  
   
 ### <a name="c-70-compatible-z7"></a>C 7.0 uyumlu (/ Z7)  
   
-PCH dosyasını oluştururken bu seçeneği etkinse, PCH dosyası kullanmak sonraki derlemeler hata ayıklama bilgileri kullanabilirsiniz.  
+PCH dosyası oluşturulduğunda bu seçenek geçerli ise PCH dosyası kullanan sonraki derleme, hata ayıklama bilgileri kullanabilirsiniz.  
   
-Varsa 7.0 uyumlu C (/ Z7) seçeneği etkin PCH dosyasını oluştururken, PCH dosya ve /Z7 kullanmaya sonraki derlemelerinin bir uyarı tetikleyecek. Hata ayıklama bilgisi geçerli .obj dosyasında yerleştirilir ve yerel semboller PCH dosyasında tanımlanan hata ayıklayıcısı için kullanılabilir değil.  
+C 7.0 uyumlu (/ Z7) seçeneği etkin PCH dosyası oluşturulduğunda, / z7 ve PCH dosyası kullanan sonraki derlemeler bir uyarı tetikler. Hata ayıklama bilgileri geçerli bir .obj dosyasında yerleştirilir ve yerel semboller PCH dosyasında tanımlanan hata ayıklayıcısı için kullanılabilir değil.  
   
 ### <a name="include-path-consistency"></a>Yol tutarlılık içerir  
   
-PCH dosyası oluşturulduğunda, yürürlükte olan INCLUDE yolu hakkında bilgi içermiyor. PCH dosyasını kullandığınızda, derleyici geçerli derlemede belirtilen INCLUDE yolu her zaman kullanır.  
+PCH dosyası oluşturulduğunda, yürürlükte olan yoluna hakkında bilgi içermiyor. PCH dosyası kullandığınızda, derleyici her zaman geçerli derlemede belirtilen yoluna kullanır.  
   
 ### <a name="source-file-consistency"></a>Kaynak dosya tutarlılığı  
   
-Önceden derlenmiş üstbilgi dosyası kullan (/Yu) seçeneği belirttiğinizde, derleyici önceden derlenmiş kaynak kodunda görünür (pragmaları dahil) tüm önişlemci yönergeleri yok sayar. Bu tür önişlemci yönergeleri tarafından belirtilen derleme önceden derlenmiş üst bilgi dosyası oluştur (/Yc) seçeneği için kullanılan derleme ile aynı olması gerekir.  
+Önceden derlenmiş üst bilgi dosyasını kullanma (/Yu) seçeneğini belirttiğinizde, derleyici kaynak kodda önceden derlenmiş (pragmaları dahil) tüm önişlemci yönergeleri yok sayar. Bu tür önişlemci yönergeleri tarafından belirtilen derleme seçeneği önceden derlenmiş üst bilgi dosyası oluştur (/Yc) için kullanılan derleme ile aynı olmalıdır.  
   
 ### <a name="pragma-consistency"></a>Pragma tutarlılık    
   
-PCH dosya oluşturma sırasında genellikle işlenen pragmaları ile sonradan PCH dosya kullanılan dosya etkiler. `comment` Ve `message` pragmaları derleme kalanını etkilemez.  
+PCH dosyası oluşturma sırasında genellikle işlenen pragmalar, sonradan PCH dosyası kullanılan dosya etkiler. `comment` Ve `message` pragmaları derleme geri kalanında etkilemez.  
   
-Bu pragmaları yalnızca PCH dosya içindeki kod etkiler; Daha sonra PCH dosyası kullanan kodu etkilemez:  
+Bu pragmaları yalnızca PCH dosyası içindeki kod etkiler; Daha sonra PCH dosyası kullanan kodu etkilemez:  
   
 ||||  
 |-|-|-|  
@@ -133,7 +133,7 @@ Bu pragmaları yalnızca PCH dosya içindeki kod etkiler; Daha sonra PCH dosyas�
 |`linesize`|`pagesize`|`title`|  
 |`message`|`skip`||  
   
-Bu pragmaları önceden derlenmiş üst bilgi bir parçası olarak korunur ve önceden derlenmiş üst bilgi kullanan bir derleme kalanı etkiler:  
+Bu pragmalar, önceden derlenmiş üstbilgi bir parçası olarak korunur ve önceden derlenmiş üst bilgi kullanan derleme geri kalanında etkiler:  
   
 ||||  
 |-|-|-|  
@@ -148,53 +148,53 @@ Bu pragmaları önceden derlenmiş üst bilgi bir parçası olarak korunur ve ö
   
 ## <a name="consistency-rules-for-yc-and-yu"></a>/Yc ve /Yu İçin Tutarlık Kuralları  
   
-/Yc veya /Yu kullanılarak oluşturulan önceden derlenmiş üstbilgi kullandığınızda, derleyici geçerli derleme ortamı PCH dosyasını oluştururken var olan bir karşılaştırır. (Tutarlı derleyici seçenekleri, pragmaları vb. kullanarak) öncekinin geçerli derleme için tutarlı bir ortam belirttiğinizden emin olun. Derleyici bir tutarsızlık algılarsa bir uyarı verir ve mümkün olduğunda tutarsızlığı tanımlar. Bu tür uyarılar mutlaka PCH dosyası ile ilgili bir sorun göstermediği; Bunlar yalnızca olası çakışmaları sizi uyarır. Aşağıdaki bölümlerde önceden derlenmiş üst bilgileri için tutarlılık gereksinimleri açıklanmaktadır.  
+/Yc veya /Yu kullanılarak oluşturulan önceden derlenmiş üst bilgi kullandığınızda, derleyici PCH dosyası oluştururken var olan bir geçerli derleme ortamı karşılaştırır. (Tutarlı derleyici seçenekleri, pragmalar vb. kullanarak) önceki bir geçerli derleme için tutarlı bir ortam belirttiğinizden emin olun. Derleyici bir tutarsızlık algılarsa bir uyarı verir ve mümkün olduğunda tutarsızlığı tanımlar. Bu tür uyarılar, mutlaka PCH dosyası ile ilgili bir sorun göstermediği; Bunlar yalnızca olası çakışmaların uyar. Aşağıdaki bölümlerde, önceden derlenmiş üst bilgiler için tutarlılık gereksinimleri açıklanmaktadır.  
   
 ### <a name="compiler-option-consistency"></a>Derleyici seçeneği tutarlılık  
   
-Bu tabloda bir tutarsızlık uyarı önceden derlenmiş üst bilgi kullanırken tetikleyebilir derleyici seçenekleri listelenmiştir:  
+Bu tablo, bir önceden derlenmiş üst bilgi kullanırken bir tutarsızlık uyarı tetikleyebilir derleyici seçenekleri listeler:  
   
 |Seçenek|Ad|Kural|  
 |------------|----------|----------|  
-|/D|Sabitler ve makroları tanımlama|Önceden derlenmiş üst bilgi oluşturulan derleme ve geçerli derleme arasında aynı olmalıdır. Tanımlı sabitler durumunu işaretli, ancak değiştirilen sabitleri değerlerine dosyalarınızı bağımlı beklenmedik sonuçlar oluşabilir.|  
-|/E veya /EP|Önişlemci çıktısını standart çıktıya Kopyala|Önceden derlenmiş üstbilgiler /E veya /EP seçeneğiyle çalışmaz.|  
-|/FR veya /FR|Microsoft kaynak tarayıcısı bilgileri oluşturmak|Önceden derlenmiş üst bilgi oluşturulduğunda /Fr ve /FR seçenekleri /Yu seçeneğiyle geçerli olması, bunlar ayrıca yürürlükte verilmiş olması gerekir. Önceden derlenmiş üstbilgi kullanmak sonraki derlemeler Ayrıca kaynak tarayıcısı bilgisi oluşturur. Tarayıcı bilgileri tek .sbr dosyası yerleştirilir ve CodeView bilgileri aynı şekilde diğer dosyalar tarafından başvuruluyor. Kaynak tarayıcı bilgileri yerleşimini geçersiz kılamaz.|  
-|/ GA /GD, /GE, /Gw veya /GW|Windows protokolü seçenekleri|Önceden derlenmiş üst bilgi oluşturulan derleme ve geçerli derleme arasında aynı olmalıdır. Bu seçenekler farklıysa, bir uyarı iletisi sonuçlanır.|  
-|/Zi|Tam hata ayıklama bilgisi oluştur|Önceden derlenmiş üst bilgi oluşturulduğunda, bu seçeneği etkinse, ön derlemesi kullanan sonraki derlemeler, hata ayıklama bilgileri kullanabilirsiniz. Önceden derlenmiş üst bilgi oluşturulduğunda, / zi etkin değilse, ön derlemesi ve /Zi seçeneği kullanan sonraki derlemelerinin bir uyarı tetikler. Hata ayıklama bilgileri geçerli nesne dosyasında yerleştirilir ve önceden derlenmiş üst bilgi tanımlanan yerel semboller hata ayıklayıcısı için kullanılabilir değil.|  
+|/D|Sabitleri ve makroları tanımlama|Önceden derlenmiş üst bilgi oluşturulan derleme ve geçerli derleme arasında aynı olması gerekir. Tanımlı sabitler durumunu işaretli, ancak dosyalarınızı değiştirilen sabitlerin değerlerine bağımlı beklenmeyen sonuçlar oluşabilir.|  
+|/E veya /EP|Önişlemci çıktısını standart çıktıya Kopyala|Önceden derlenmiş üst bilgiler /E veya /EP seçeneğiyle çalışmaz.|  
+|/FR veya /FR|Microsoft kaynak tarayıcı bilgilerini oluştur|Önceden derlenmiş üstbilgi oluşturulduğunda /Fr ve /FR seçenekleri /Yu seçeneğiyle geçerli olması, bunlar da aslında verilmiş olması gerekir. Önceden derlenmiş üst bilgi kullanan sonraki derlemeler, kaynak tarayıcı bilgileri de oluşturur. Tarayıcı bilgileri tek .sbr dosyasında yerleştirilir ve aynı şekilde CodeView bilgisi olarak diğer dosyalar tarafından başvuruluyor. Kaynak tarayıcı bilgileri yerleşimini geçersiz kılamaz.|  
+|/ GA, /GD, /GE, /Gw veya /GW|Windows protokol seçenekleri|Önceden derlenmiş üst bilgi oluşturulan derleme ve geçerli derleme arasında aynı olması gerekir. Bu seçenekler farklıysa, bir uyarı iletisi sonuçlanır.|  
+|/Zi|Tam hata ayıklama bilgileri üret|Ön derlenmiş üstbilgi oluşturulduğunda bu seçeneği etkinse, ön derleme kullanan sonraki derleme, hata ayıklama bilgileri kullanabilirsiniz. Ön derlenmiş üstbilgi oluşturulduğunda / zi etkin değilse, ön derleme ve/zi seçeneğini kullanan sonraki derlemeler bir uyarı tetikler. Hata ayıklama bilgileri geçerli nesne dosyasında yerleştirilir ve yerel semboller derlenmiş üstbilgide tanımlanan hata ayıklayıcısı için kullanılabilir değil.|  
   
 > [!NOTE]
->  Önceden derlenmiş üst bilgi tesis yalnızca C ve C++ kaynak dosyalarını kullanımına yöneliktir.  
+>  Önceden derlenmiş üst bilgi özelliği yalnızca C ve C++ kaynak dosyaları kullanımına yöneliktir.  
   
 <a name="using-precompiled-headers-in-a-project"></a>  
   
 ## <a name="using-precompiled-headers-in-a-project"></a>Projede Önceden Derlenmiş Üst Bilgileri Kullanma  
   
-Önceki bölümlerde önceden derlenmiş üstbilgiler genel bir bakış sunar: /Yc ve /Yu, /Fp seçeneği ve [hdrstop](../../preprocessor/hdrstop.md) pragması. Bu bölümde bir proje ile el ile önceden derlenmiş başlık seçeneklerini kullanmak için bir yöntem açıklar; Örnek derleme görevleri dosyası ve yönettiği koduyla sona erer.  
+Önceki bölümlerde, önceden derlenmiş üst bilgiler genel bir bakış sunar: /Yc ve /Yu/FP seçeneği ve [hdrstop](../../preprocessor/hdrstop.md) pragması. Bu bölümde, bir projede el ile önceden derlenmiş üst bilgi Seçenekleri'ni kullanarak bir yöntem anlatılmaktadır; bir örnek derleme görevleri dosyası ve yönettiği kod ile sona erer.  
   
-Bir proje ile el ile önceden derlenmiş başlık seçeneklerini kullanarak başka bir yaklaşım için Visual C++ varsayılan kurulum sırasında oluşturulur MFC\SRC dizininde bulunan derleme görevleri dosyaları biri üzerinde çalışın. Bu derleme görevleri dosyaları bu bölümde sunulan bir benzer bir yaklaşım uygular, ancak Microsoft Program Bakımı yardımcı programı (NMAKE) makroları büyük kullanılmasını sağlamak ve bu derleme işleminin daha fazla denetim sağlar.  
+Bir projede el ile önceden derlenmiş üst bilgi Seçenekleri'ni kullanarak başka bir yaklaşım için bir Visual C++ varsayılan kurulum sırasında oluşturulur MFC\SRC dizininde bulunan derleme görevleri dosyalarını inceleyin. Bu derleme görevleri dosyalarını bu bölümde sunulan bir benzer bir yaklaşım yararlanın ancak Microsoft Program Bakımı yardımcı programı (NMAKE) makroları büyük kullanılmasını sağlamak ve yapı işleminin daha fazla denetim sağlar.  
   
 <a name="pch-files-in-the-build-process"></a>  
   
 ## <a name="pch-files-in-the-build-process"></a>Derleme Sürecindeki PCH Dosyaları  
   
-Bir yazılım projenin kod temeli genellikle birden çok C veya C++ kaynak dosyaları, nesne dosyaları, kitaplıklar ve başlık dosyaları içinde yer alır. Genellikle, bir derleme görevleri dosyası bu öğelerin bileşimini yürütülebilir bir dosya halinde düzenler. Aşağıdaki şekilde önceden derlenmiş üst bilgi dosyası kullanan derleme görevleri dosyası yapısını gösterir. NMAKE makrosu adlarını ve dosya adlarını Bu diyagramda bulunan örnek kodda edilenlerle tutarlı [PCH için örnek derleme görevleri dosyası](#sample-makefile-for-pch) ve [PCH için örnek kod](#example-code-for-pch).  
+Bir yazılım projesinde kod tabanını genellikle birden çok C veya C++ kaynak dosyaları, nesne dosyaları, kitaplıklar ve üst bilgi dosyaları içinde yer alır. Genellikle, bir derleme görevleri dosyası bu öğeleri birleşimi bir yürütülebilir dosyasına düzenler. Aşağıdaki şekilde önceden derlenmiş üst bilgi dosyası kullanan derleme görevleri dosyası yapısı gösterilmektedir. NMAKE makrosu adları ve dosya adları Bu diyagramda bulunan örnek kodda tutarlı [PCH için örnek derleme görevleri dosyası](#sample-makefile-for-pch) ve [PCH için örnek kod](#example-code-for-pch).  
   
-Şekil derleme işlem akışını göstermek için üç grafiksel cihazlar kullanır. Dikdörtgenler temsil eder, her dosya veya makro adlı; bir veya daha fazla dosyaları üç makroları gösterir. Gölgeli alanların her derleme veya bağlantı eylemini temsil eder. Oklar, hangi dosyaları ve makroları derleme ve bağlama işlemi sırasında birlikte gösterir.  
+Şekil, yapı işleminin akışını göstermek için üç içeren cihazlarda kullanır. Her dosya veya makro dikdörtgenler temsil adlı; üç makroları, bir veya daha fazla dosyayı temsil eder. Gölgeli alanları her derleme veya bağlantı eylemi temsil eder. Oklar, hangi dosyaları ve makroları derleme ve bağlama işlemi sırasında birleştirilir gösterir.  
   
-![Önceden derlenmiş üst bilgi dosyasını kullanan derleme görevleri dosyası](../../build/reference/media/vc30ow1.gif "önceden derlenmiş başlık dosyası kullanan derleme görevleri dosyası yapısı")  
+![Önceden derlenmiş üst bilgi dosyası kullanan derleme görevleri dosyası](../../build/reference/media/vc30ow1.gif "önceden derlenmiş bir üstbilgi dosyası kullanan derleme görevleri dosyası yapısı")  
 ##### <a name="structure-of-a-makefile-that-uses-a-precompiled-header-file"></a>Önceden derlenmiş üst bilgi dosyası kullanan derleme görevleri dosyası yapısı  
   
-Diyagram üstünde başlayarak, STABLEHDRS ve sınır NMAKE makroları dosyaları yeniden derlenmek gerek olası değil listesi var. Bu dosyalar komut dizesi tarafından derlenen  
+Diyagramın üst kısmında başlayarak STABLEHDRS hem sınır dosyalarını yeniden derleme gerek olası değil listelediğiniz NMAKE makrolardır. Bu dosyalar komut dizesi tarafından derlenen  
   
 `CL /c /W3 /Yc$(BOUNDRY) applib.cpp myapp.cpp`  
   
-yalnızca önceden derlenmiş üst bilgi dosyasını (STABLE.pch) yoksa veya iki makrolarındaki listelenen dosyaları değişiklik yaparsanız. Her iki durumda da, önceden derlenmiş üst bilgi dosyası yalnızca STABLEHDRS makro içinde listelenen dosyaların koddan içerir. SINIR makrosu önceden derlenmiş istediğiniz dosyanın son listeleyin.  
+önceden derlenmiş üst bilgi dosyası (STABLE.pch) mevcut değilse veya dosyalarda değişiklik yapmadan yalnızca iki makrolarındaki listelenir. Her iki durumda da, önceden derlenmiş üst bilgi dosyası yalnızca STABLEHDRS makro içinde listelenen dosyaların koddan içerir. SINIR makroda önceden derlenmiş istediğiniz dosyanın son listeleyin.  
   
-Bu makroları listesinde dosyaları üstbilgi dosyaları veya C veya C++ kaynak dosyalarını olabilir. (Tek bir PCH dosyası C ve C++ modüllerle kullanılamaz.) Kullanabileceğiniz Not **hdrstop** makrosu ön derlemesi sınır dosyası içinde belirli bir noktada durdurmak için. Bkz: [hdrstop](../../preprocessor/hdrstop.md) daha fazla bilgi için.  
+Bu makrolar liste dosyaları, üstbilgi dosyaları veya C veya C++ kaynak dosyaları olabilir. (Tek bir PCH dosyası hem C hem de C++ modülleri ile kullanılamaz.) Kullanabileceğiniz Not **hdrstop** ön derleme sınır dosyası içinde belirli bir noktada durdurmak için makrosu. Bkz: [hdrstop](../../preprocessor/hdrstop.md) daha fazla bilgi için.  
   
-Diyagram devam etmeden, APPLIB.obj son uygulamanızda kullanılan destek kodunu temsil eder. APPLIB.cpp oluşturulur, dosya UNSTABLEHDRS makro içinde listelenen ve önceden derlenmiş üst bilgi koddan önceden derlenmiş.  
+Diyagramı devam, APPLIB.obj son uygulamanızda kullanılan destek kodunu temsil eder. APPLIB.cpp oluşturulur, dosyaları UNSTABLEHDRS makroda listelenen ve önceden derlenmiş üst bilgi koddan önceden derlenmiş.  
   
-MYAPP.obj son uygulamanızı temsil eder. MYAPP.cpp oluşturulur, dosya UNSTABLEHDRS makro içinde listelenen ve önceden derlenmiş üst bilgi koddan önceden derlenmiş.  
+MYAPP.obj son uygulamanızı temsil eder. MYAPP.cpp oluşturulur, dosyaları UNSTABLEHDRS makroda listelenen ve önceden derlenmiş üst bilgi koddan önceden derlenmiş.  
   
 Son olarak, yürütülebilir dosya (UYGULAMAM. EXE) OBJS makrosu (APPLIB.obj ve MYAPP.obj) içinde listelenen dosyaların bağlayarak oluşturulur.  
   
@@ -202,7 +202,7 @@ Son olarak, yürütülebilir dosya (UYGULAMAM. EXE) OBJS makrosu (APPLIB.obj ve 
   
 ## <a name="sample-makefile-for-pch"></a>PCH için Örnek Derleme Görevleri Dosyası  
   
-Aşağıdaki derleme görevleri dosyası makroları kullanır ve bir! EĞER! BAŞKA! Projeniz için kendi uyarlama basitleştirmek için denetim akışı komutu yapısı ENDIF.  
+Aşağıdaki görevleri makrolarını kullanır ve bir! EĞER! BAŞKA! Projenize, uyarlama kolaylaştıran denetim akışı komutu yapısı ENDIF.  
   
 ```NMAKE  
 # Makefile : Illustrates the effective use of precompiled  
@@ -248,28 +248,28 @@ stable.pch : $(STABLEHDRS)
     $(CPP) $(CLFLAGS) /Yc$(BOUNDRY)    applib.cpp myapp.cpp  
 ```  
   
-"Yapısı, bir derleme görevleri dosyası olduğunu kullanan bir önceden derlenmiş üstbilgi dosyası" çizimde gösterilen STABLEHDRS, sınır ve UNSTABLEHDRS makroları yanı sıra [derleme sürecindeki PCH dosyaları](#pch-files-in-the-build-process), bu derleme görevleri dosyası CLFLAGS makrosu ve bir LINKFLAGS sağlar Makro. Derleme ve hata ayıklama veya yürütülebilir dosya uygulamanın son sürümü derleme olup olmadığını geçerli bağlayıcı seçenekleri listelemek için bu makroları kullanmanız gerekir. Ayrıca vardır KİTAPLIKLAR makrosu listesinde nereye kitaplıklarının projenizi gerektirir.  
+"Yapısı, bir derleme görevleri dosyası olduğunu kullanan bir önceden derlenmiş üstbilgi dosyası" çizimde gösterilen STABLEHDRS, sınır ve UNSTABLEHDRS makroları yanı sıra [derleme sürecindeki PCH dosyaları](#pch-files-in-the-build-process), bu derleme görevleri dosyası CLFLAGS makro ve bir LINKFLAGS sağlar. Makro. Bu makrolar, derleyici ve hata ayıklama veya son sürümü uygulamanın yürütülebilir dosyanın derleme olup olmadığını geçerli bağlayıcı seçenekleri listelemede kullanmanız gerekir. De mevcuttur LIBS makrosu listesinde burada kitaplıklarını projenize gerektirir.  
   
-Derleme görevleri dosyası da kullanır. EĞER! BAŞKA! NMAKE komut satırında bir hata ayıklama simge tanımlamak olup olmadığını algılamak için ENDIF:  
+Derleme görevleri dosyası da kullanır. EĞER! BAŞKA! NMAKE komut satırında bir hata ayıklama sembolünü tanımlayın olup olmadığını algılamak için ENDIF:  
   
 ```NMAKE  
 NMAKE DEBUG=[1|0]  
 ```  
   
-Bu özellik, aynı derleme görevleri dosyası geliştirme sırasında kullanmak ve son sürümleri programınızın mümkün kılar — hata ayıklama kullanmak = 0 son sürümleri için. Aşağıdaki komut satırlarından eşdeğerdir:  
+Bu özellik, aynı derleme görevleri dosyası geliştirme sırasında kullanmanızı ve programınızı son sürümleri için mümkün kılar — hata ayıklama kullanmak = 0 son sürümleri. Aşağıdaki komut satırlarını eşdeğerdir:  
   
 ```NMAKE  
 NMAKE   
 NMAKE DEBUG=0  
 ```  
   
-Derleme görevleri dosyaları hakkında daha fazla bilgi için bkz: [NMAKE başvurusu](../../build/nmake-reference.md). Ayrıca bkz. [derleyici seçenekleri](../../build/reference/compiler-options.md) ve [bağlayıcı seçenekleri](../../build/reference/linker-options.md).  
+Derleme görevleri dosyaları hakkında daha fazla bilgi için bkz. [NMAKE başvurusu](../../build/nmake-reference.md). Ayrıca bkz: [derleyici seçenekleri](../../build/reference/compiler-options.md) ve [bağlayıcı seçenekleri](../../build/reference/linker-options.md).  
   
 <a name="example-code-for-pch"></a>  
   
 ## <a name="example-code-for-pch"></a>PCH için Örnek Kod  
   
-Aşağıdaki kaynak dosyalarını açıklanan makefile kullanılan [derleme sürecindeki PCH dosyaları](#pch-files-in-the-build-process) ve [PCH için örnek derleme görevleri dosyası](#sample-makefile-for-pch). Açıklama önemli bilgiler içeren unutmayın.  
+Aşağıdaki kaynak dosyaları açıklanan derleme görevleri dosyası kullanılan [derleme sürecindeki PCH dosyaları](#pch-files-in-the-build-process) ve [PCH için örnek derleme görevleri dosyası](#sample-makefile-for-pch). Açıklamaları önemli bilgileri içerdiğini unutmayın.  
   
 ```cpp  
 // ANOTHER.H : Contains the interface to code that is not  
