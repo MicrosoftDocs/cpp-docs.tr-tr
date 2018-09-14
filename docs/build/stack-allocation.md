@@ -12,11 +12,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 22c2afae3678e945678862059034b4d60be456b0
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: caa6d435db98c7177cbf55b866bb8e5a4a110c1d
+ms.sourcegitcommit: 6e479e33e8fd8e30ea32801edbff2e3415f31bf7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
+ms.lasthandoff: 09/14/2018
 ms.locfileid: "32380608"
 ---
 # <a name="stack-allocation"></a>Yığın Ayırma

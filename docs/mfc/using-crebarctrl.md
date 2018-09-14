@@ -18,11 +18,11 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29f678eb776e17fc9dc7cbd07e9a0fa91eef530c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: a5fbd58954e5b5b0bf16a052e3a667e28f6bc981
+ms.sourcegitcommit: 6e479e33e8fd8e30ea32801edbff2e3415f31bf7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
+ms.lasthandoff: 09/14/2018
 ms.locfileid: "33383315"
 ---
 # <a name="using-crebarctrl"></a>CReBarCtrl Kullanma
