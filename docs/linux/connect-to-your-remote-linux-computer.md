@@ -13,12 +13,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: 9b3977c46e05ab0b175dad3658d1dcc390d33354
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: bba17549abc9f747d93299cf22c39ae7c3e8f4d6
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39207672"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601450"
 ---
 # <a name="connect-to-your-remote-linux-computer"></a>Uzak Linux bilgisayarınıza bağlanma
 
@@ -41,7 +41,7 @@ Visual Studio'da C++ Linux projesi oluştururken, kodu uzak Linux bilgisayarın�
    | **Kullanıcı adı**           | Kullanıcı olarak kimlik doğrulaması yapmak için
    | **Kimlik doğrulaması türü** | Parola veya özel anahtar desteklenir
    | **Parola**            | Girilen kullanıcı adının parolası
-   | **Özel anahtar dosyası**    | Ssh bağlantısı için oluşturulan özel anahtarı
+   | **Özel anahtar dosyası**    | Özel anahtar dosyası için ssh bağlantı oluşturuldu
    | **Parola**          | Yukarıda seçilen özel anahtarlı kullanılan parola
 
 1. Tıklayın **Connect** uzak bilgisayara bağlanmaya düğmesi.  Değiştirilmesi gereken giriş kutularının bağlantı başarısız olursa, kırmızı renkle gösterilir.

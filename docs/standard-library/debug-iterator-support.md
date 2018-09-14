@@ -1,7 +1,7 @@
 ---
 title: Hata ayıklama yineleyici desteği | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/13/2018
 ms.technology:
 - cpp-standard-libraries
 ms.topic: reference
@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 237ce1e956cd05f21a34d0b2b159ba104167ca37
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ffcd69475d13277884deaf9ee114f3cd8d86516f
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959598"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601476"
 ---
 # <a name="debug-iterator-support"></a>Hata Ayıklama Yineleyicisi Desteği
 
@@ -38,7 +38,7 @@ Standart C++ üye işlevleri geçersiz olmasına Yineleyicilerin bir kapsayıcı
 
 - Artırıldığında bir [vektör](../standard-library/vector.md) kullanarak anında iletme veya nedenler yineleyiciler içine Ekle `vector` geçersiz olacak.
 
-## <a name="example"></a>Örnek
+## <a name="invalid-iterators"></a>Geçersiz yineleyiciler
 
 Bu örnek program hata ayıklama modunda derlemek, çalışma zamanında onaylar ve sonlandırır.
 
@@ -49,12 +49,7 @@ Bu örnek program hata ayıklama modunda derlemek, çalışma zamanında onaylar
 #include <iostream>
 
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
-
+   std::vector<int> v {10, 15, 20};
    std::vector<int>::iterator i = v.begin();
    ++i;
 
@@ -69,7 +64,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="using-iteratordebuglevel"></a>_Iterator_debug_level kullanma
 
 Önişlemci makrosu kullanabileceğiniz [_ıterator_debug_level](../standard-library/iterator-debug-level.md) özellik hata ayıklama derlemesinde hata ayıklama yineleyici devre dışı bırakmak için. Bu program assert değil, ancak yine de tanımsız davranış tetikler.
 
@@ -81,11 +76,7 @@ int main() {
 #include <iostream>
 
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
+    std::vector<int> v {10, 15, 20};
 
    std::vector<int>::iterator i = v.begin();
    ++i;
@@ -106,7 +97,7 @@ int main() {
 -572662307
 ```
 
-## <a name="example"></a>Örnek
+## <a name="unitialized-iterators"></a>Unitialized yineleyiciler
 
 Assert da başlatılmadan önce aşağıda gösterildiği gibi bir yineleyici kullanmayı denerseniz oluşur:
 
@@ -123,7 +114,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="incompatible-iterators"></a>Uyumsuz yineleyiciler
 
 Aşağıdaki kod örneği bir onaylama işlemi olduğundan neden için iki yineleyici [for_each](../standard-library/algorithm-functions.md#for_each) algoritması uyumsuz. Aynı kapsayıcı için sağlanan yineleyiciler anılıp anılmadığını algoritmaları denetleyin.
 
@@ -136,14 +127,8 @@ using namespace std;
 
 int main()
 {
-    vector<int> v1;
-    vector<int> v2;
-
-    v1.push_back(10);
-    v1.push_back(20);
-
-    v2.push_back(10);
-    v2.push_back(20);
+    vector<int> v1 {10, 20};
+    vector<int> v2 {10, 20};
 
     // The next line asserts because v1 and v2 are
     // incompatible.
@@ -153,7 +138,7 @@ int main()
 
 Bu örnek, lambda ifadesi kullanır bildirimi `[] (int& elem) { elem *= 2; }` bir functor yerine. Bu seçenek onay hatası ilgisi yoktur ancak — benzer bir işlev ise aynı hataya neden — lambdalar compact işlev nesnesi görevleri gerçekleştirmek için çok kullanışlı bir yol olan. Lambda ifadeleri hakkında daha fazla bilgi için bkz. [Lambda ifadeleri](../cpp/lambda-expressions-in-cpp.md).
 
-## <a name="example"></a>Örnek
+## <a name="iterators-going-out-of-scope"></a>Kapsam dışına giderek yineleyiciler
 
 Hata ayıklama yineleyici denetimleri de içinde bildirilen bir yineleyici değişken neden bir **için** tanesi olmasını döngü ne zaman kapsam **için** kapsamı sona erene döngü.
 
@@ -163,11 +148,7 @@ Hata ayıklama yineleyici denetimleri de içinde bildirilen bir yineleyici deği
 #include <vector>
 #include <iostream>
 int main() {
-   std::vector<int> v ;
-
-   v.push_back(10);
-   v.push_back(15);
-   v.push_back(20);
+   std::vector<int> v {10, 15, 20};
 
    for (std::vector<int>::iterator i = v.begin(); i != v.end(); ++i)
       ;   // do nothing
@@ -175,9 +156,9 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Örnek
+## <a name="destructors-for-debug-iterators"></a>Hata ayıklama yineleyiciler için Yıkıcılar
 
-Hata ayıklama yineleyiciler Önemsiz yok ediciler sahip. Bir yok edici çalışmazsa herhangi bir nedenle, erişim ihlallerine ve veri bozulması oluşabilir. Bu örneği göz önünde bulundurun:
+Hata ayıklama yineleyiciler Önemsiz yok ediciler sahip. Bir yok edici çalışmaz, ancak nesnenin belleği serbest erişim ihlalleri ve veri bozulması meydana gelebilir. Bu örneği göz önünde bulundurun:
 
 ```cpp
 // iterator_debugging_5.cpp
@@ -195,11 +176,10 @@ struct derived : base {
 };
 
 int main() {
-   std::vector<int> vect( 10 );
-   base * pb = new derived( vect.begin() );
-   delete pb;  // doesn't call ~derived()
-   // access violation
-}
+  auto vect = std::vector<int>(10);
+  auto sink = new auto(std::begin(vect));
+  ::operator delete(sink); // frees the memory without calling ~iterator()
+} // access violation
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.

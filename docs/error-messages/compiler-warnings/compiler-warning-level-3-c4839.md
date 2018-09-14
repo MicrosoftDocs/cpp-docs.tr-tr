@@ -1,6 +1,6 @@
 ---
 title: Derleyici Uyarısı (Düzey 3) C4839 | Microsoft Docs
-ms.date: 10/25/2017
+ms.date: 09/13/2018
 ms.technology:
 - cpp-diagnostics
 ms.topic: error-reference
@@ -15,24 +15,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b72289eef03c56356865b0b62a999c417da570a6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14a79c6abb118fb173382be87ebda4316545c65a
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291963"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601411"
 ---
-# <a name="compiler-warning-level-4-c4839"></a>Derleyici Uyarısı (düzey 4) C4839
+# <a name="compiler-warning-level-3-c4839"></a>Derleyici Uyarısı (Düzey 3) C4839
 
-> sınıfı standart kullanımını*türü*' variadic işlevi bağımsız değişken olarak
+> sınıfının standart dışı kullanımı*türü*' bir bağımsız değişken içeren işlev bağımsız değişkeni olarak
 
-Visual Studio 2017 içinde sınıflar ya da bir variadic geçirilen yapının işlev gibi `printf` trivially copyable olması gerekir. Bu tür nesneleri geçirirken, derleyici, sadece Bitsel bir kopya oluşturur ve oluşturucunun ya da yıkıcı çağırmaz.
+Sınıflar veya yapılar gibi değişen sayıda bağımsız değişken işleve geçirilen `printf` artık önemsiz olarak kopyalanabilir olması gerekir. Bu tür nesneleri geçirirken, derleyici, basit bit düzeyinde bir kopya oluşturur ve oluşturucu veya yıkıcı çağırmaz.
+
+Bu uyarı, Visual Studio 2017'de kullanılabilir başlangıcıdır.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki örnek C4839 oluşturur:
+Aşağıdaki örnek, C4839 oluşturur:
 
 ```cpp
+// C4839.cpp
+// compile by using: cl /EHsc /W3 C4839.cpp
 #include <atomic>
 #include <memory>
 #include <stdio.h>
@@ -42,38 +46,21 @@ int main()
     std::atomic<int> i(0);
     printf("%i\n", i); // error C4839: non-standard use of class 'std::atomic<int>'
                         // as an argument to a variadic function
-                        // note: the constructor and destructor will not be called; 
+                        // note: the constructor and destructor will not be called;
                         // a bitwise copy of the class will be passed as the argument
                         // error C2280: 'std::atomic<int>::atomic(const std::atomic<int> &)':
                         // attempting to reference a deleted function
-
-    struct S {
-        S(int i) : i(i) {}
-        S(const S& other) : i(other.i) {}
-        operator int() { return i; }
-    private:
-        int i;
-    } s(0);
-    printf("%i\n", s); // warning C4840 : non-portable use of class 'main::S'
-                      // as an argument to a variadic function
 }
 ```
 
-Hatayı düzeltmek için trivially copyable türü döndüren bir üye işlev çağrısı,
+Hatayı düzeltmek için artık önemsiz olarak kopyalanabilir türü döndüren bir üye işlevi çağırabilir,
 
 ```cpp
     std::atomic<int> i(0);
     printf("%i\n", i.load());
 ```
 
-Aksi takdirde geçirmeden önce nesneyi dönüştürmek için bir statik atama gerçekleştirin:
-
-```cpp
-    struct S {/* as before */} s(0);
-    printf("%i\n", static_cast<int>(s))
-```
-
-Oluşturulan ve yönetilen kullanarak dizeleri için `CStringW`, sağlanan `operator LPCWSTR()` dönüştürmek için kullanılması gereken bir `CStringW` biçim dizesi tarafından beklenen C işaretçi nesnesine.
+Oluşturulan ve yönetilen kullanarak dizeleri `CStringW`, sağlanan `operator LPCWSTR()` dönüştürme için kullanılması gereken bir `CStringW` C işaretçisine biçim dizesi tarafından beklenen nesne.
 
 ```cpp
     CStringW str1;

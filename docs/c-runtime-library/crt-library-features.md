@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5785d06a09c823140362fa4afc6a8b12954e5ac3
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: 866f6832869675f3c92d09642064e5aafce9a449
+ms.sourcegitcommit: 87d317ac62620c606464d860aaa9e375a91f4c99
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42465199"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45601541"
 ---
 # <a name="crt-library-features"></a>CRT Kitaplık Özellikleri
 
@@ -65,7 +65,8 @@ Bu tabloda vcruntime kitaplığı uygulayan kitaplıkları listeler.
 |vcruntime.lib|vcruntime\<sürüm > .dll|DLL içeri aktarma kitaplığını vcruntime için.|**/MD**|_MT, _DLL|
 |vcruntimed.lib|vcruntime\<sürüm > d.dll|DLL içeri aktarma kitaplığı hata ayıklama vcruntime için. Değil yeniden dağıtılabilir.|**/MDd**|_DEBUG, _MT, _DLL|
 
-Yeniden düzenleme UCRT oluştuğunda eşzamanlılık çalışma zamanı işlevleri C++ yeniden dağıtılabilir paketinin bir parçası olduğu concrt140.dll taşındı. C++ paralel kapsayıcılar ve algoritmalar gibi bu DLL gerekiyor `concurrency::parallel_for`. Ayrıca, Windows XP koşul değişkenleri olmadığından bu DLL eşitleme temellerine desteklemek için Windows XP C++ Standart kitaplığı gerektirir.
+> [!NOTE] 
+> Yeniden düzenleme UCRT oluştuğunda eşzamanlılık çalışma zamanı işlevleri C++ yeniden dağıtılabilir paketi eklenen concrt140.dll içine taşındı. C++ paralel kapsayıcılar ve algoritmalar gibi bu DLL gerekiyor `concurrency::parallel_for`. Ayrıca, Windows XP koşul değişkenleri olmadığından bu DLL eşitleme temellerine desteklemek için Windows XP C++ Standart kitaplığı gerektirir.
 
 CRT başlatan bir CRT kitaplığının statik veya dinamik olarak bağlı, veya yerel, yönetilen veya karma kodu olduğuna göre birden çok kitaplık kodudur. Bu kod, CRT başlatma, iç iş parçacığı başına veri başlatma ve sonlandırma işler. Kullanılan derleyici sürümüne özeldir. Dinamik olarak bağlı UCRT kullanırken bile bu kitaplığı her zaman statik olarak bağlanır.
 
