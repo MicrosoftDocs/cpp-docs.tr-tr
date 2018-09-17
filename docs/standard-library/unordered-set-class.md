@@ -144,12 +144,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf2179666943dd5ad26f173368edd809fdf17bcd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2ce2228c5ee81fc6974f2a60ccbdf0a7e4d53901
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954844"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726693"
 ---
 # <a name="unorderedset-class"></a>unordered_set Sınıfı
 
@@ -373,8 +373,8 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Eşlenecek anahtar değeri.
+*keyval*<br/>
+Eşlenecek anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -513,8 +513,8 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*  
- Demet sayısı.
+*nbucket*<br/>
+Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -865,8 +865,8 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1175,8 +1175,8 @@ equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1243,17 +1243,17 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*  
- Kaldırılacak öğenin konumu.
+*Burada*<br/>
+Kaldırılacak öğenin konumu.
 
-*ilk*  
- Kaldırılacak ilk öğenin konumu.
+*ilk*<br/>
+Kaldırılacak ilk öğenin konumu.
 
-*Son*  
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+*Son*<br/>
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Key*  
- Kaldırılacak öğe anahtar değeri.
+*Key*<br/>
+Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1275,8 +1275,8 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1874,8 +1874,8 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktörü*  
- Yeni en yüksek yük faktörünün.
+*faktörü*<br/>
+Yeni en yüksek yük faktörünün.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2148,8 +2148,8 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*  
- İstenen demet sayısı.
+*nbuckets*<br/>
+İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2326,8 +2326,8 @@ void swap(unordered_set& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- İle takas için kapsayıcı.
+*sağ*<br/>
+İle takas için kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2441,7 +2441,7 @@ unordered_set(
 |*Comp*|Depolanacak karşılaştırma işlevi nesnesi.|
 |*Karma*|Depolanacak karma işlev nesnesi.|
 |*bucket_count*|En düşük demet sayısı.|
-|*Sağ*|Kopyalanacak kapsayıcı.|
+|*sağ*|Kopyalanacak kapsayıcı.|
 |*IList*|Kopyalanacak öğe içeren initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar

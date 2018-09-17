@@ -12,22 +12,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e7135802bdc91c611132760ebbee4e0619ba0de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9dd43318d19bafa2f69514f81e82da6d303528d2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380255"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725627"
 ---
 # <a name="unwind-helpers-for-masm"></a>MASM için Yardımcıları Bırakma
-Düzgün derleme yordamları yazmak için bir dizi gerçek derleme yönergeleri ile paralel sanal işlem bulunur ve ve.xdata'yı oluşturmak için kullanılabilir sözde işlemler vardır. Vardır de sağlayan makrolar kümesi Basitleştirilmiş sözde işlemler için en yaygın kullanımları kullanımı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu bölümde aşağıdaki konular şunlardır:  
-  
--   [Ham Sözde İşlemler](../build/raw-pseudo-operations.md)  
-  
--   [MASM Makroları](../build/masm-macros.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Durum İşleme (x64)](../build/exception-handling-x64.md)
+
+Uygun derleme yordamları yazmak için bir dizi gerçek derleme yönergeleri ile paralel uygun .pdata ve .xdata oluşturmak için kullanılabilir sözde işlemler vardır. Vardır makroları sağlayan bir dizi sözde işlemler için en yaygın kullanımları kullanımını da Basitleştirilmiş.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu bölümde aşağıdaki konular şunlardır:
+
+- [Ham Sözde İşlemler](../build/raw-pseudo-operations.md)
+
+- [MASM Makroları](../build/masm-macros.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özel Durum İşleme (x64)](../build/exception-handling-x64.md)

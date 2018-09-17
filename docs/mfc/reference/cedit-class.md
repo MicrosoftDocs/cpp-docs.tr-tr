@@ -104,12 +104,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d3c7f9e1d638c547b2b340a610a52af9318c714
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: e8442f771cda2b7130a60148582288a31977fa59
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535411"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726641"
 ---
 # <a name="cedit-class"></a>CEdit sınıfı
 Windows düzenleme denetimi işlevlerini sağlar.  
@@ -445,11 +445,11 @@ CString GetCueBanner() const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *lpszText*  
- İşaret metni içeren bir dize işaretçisi.  
+*lpszText*<br/>
+[out] İşaret metni içeren bir dize işaretçisi.  
   
- [in] *cchText*  
- Alınabilir karakter sayısı. Bu sondaki boş karakter içerir.  
+*cchText*<br/>
+[in] Alınabilir karakter sayısı. Bu sondaki boş karakter içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa ilk aşırı yükleme için TRUE; Aksi durumda FALSE.  
@@ -513,8 +513,8 @@ BOOL GetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pichStart*|Vurgulanmış metin aralığını ilk karakter sıfır tabanlı dizini.|  
-|[out] *pichEnd*|Vurgulanmış metin aralığını son karakter sıfır tabanlı dizini.|  
+|*pichStart*|[out] Vurgulanmış metin aralığını ilk karakter sıfır tabanlı dizini.|  
+|*pichEnd*|[out] Vurgulanmış metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -917,11 +917,11 @@ BOOL SetCueBanner(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszText*  
- Düzenleme denetiminde görüntülenecek ipucu içeren bir dize işaretçisi.  
+*lpszText*<br/>
+[in] Düzenleme denetiminde görüntülenecek ipucu içeren bir dize işaretçisi.  
   
- [in] *fDrawWhenFocused*  
- Kullanıcı düzenleme denetiminde tıkladığı ve denetim odağı yanlışsa, işaret başlığı çizilmiştir değil.  
+*fDrawWhenFocused*<br/>
+[in] Kullanıcı düzenleme denetiminde tıkladığı ve denetim odağı yanlışsa, işaret başlığı çizilmiştir değil.  
   
  Hatta denetim odağa sahip olduğunda TRUE ise işaret başlığı çizilir. Kullanıcı denetimi türüne başladığında işaret başlığı kaybolur.  
   
@@ -981,8 +981,8 @@ void SetHighlight(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *ichStart*|Vurgulamak için metin aralığını ilk karakter sıfır tabanlı dizini.|  
-|[in] *ichEnd*|Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
+|*ichStart*|[in] Vurgulamak için metin aralığını ilk karakter sıfır tabanlı dizini.|  
+|*ichEnd*|[in] Vurgulamak için metin aralığını son karakter sıfır tabanlı dizini.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti.  Bu yöntem gönderir [EM_SETHILITE](/windows/desktop/Controls/em-sethilite) Windows SDK'da açıklanan ileti. Her ikisi de `SetHighlight` ve `GetHighlight` yalnızca UNICODE yapıları için etkinleştirilir. 
@@ -1245,10 +1245,10 @@ BOOL ShowBalloonTip(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pEditBalloonTip*|İşaretçi bir [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) balon ipucu açıklayan yapısı.|  
-|[in] *lpszTitle*|Balon ipucu başlığını içeren bir Unicode dize işaretçisi.|  
-|[in] *lpszText*|Balon ipucu metnini içeren bir Unicode dize işaretçisi.|  
-|[in] *ttiIcon*|Bir **INT** balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. TTI_NONE varsayılan değerdir. Daha fazla bilgi için `ttiIcon` üyesi [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) yapısı.|  
+|*pEditBalloonTip*|[in] İşaretçi bir [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) balon ipucu açıklayan yapısı.|  
+|*lpszTitle*|[in] Balon ipucu başlığını içeren bir Unicode dize işaretçisi.|  
+|*lpszText*|[in] Balon ipucu metnini içeren bir Unicode dize işaretçisi.|  
+|*ttiIcon*|[in] Bir **INT** balon ipucu ile ilişkilendirilecek simgesi türünü belirtir. TTI_NONE varsayılan değerdir. Daha fazla bilgi için `ttiIcon` üyesi [EDITBALLOONTIP](/windows/desktop/api/commctrl/ns-commctrl-_tageditballoontip) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

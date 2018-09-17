@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7601913b3940de8e6ade2c76100f4d773281db7
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: ca2582e4c792e0ef60cb11d632c6f4e88891852d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464960"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726056"
 ---
 # <a name="section"></a>section
 Bir .obj dosyasında bölüm oluşturur.  
@@ -43,30 +43,17 @@ Bir bölüm tanımlandıktan sonra derleme geri kalanı için geçerli kalır. A
 *Bölüm adı* bölümün adı gerekli bir parametredir. Adı herhangi bir standart bölüm adı ile çakışmaması gerekir. Bkz: [/SECTION](../build/reference/section-specify-section-attributes.md) kullanmamanız bölüm oluştururken adları listesi.  
   
 *öznitelikleri* bölümüne atamak istediğiniz bir veya daha fazla virgülle ayrılmış özniteliklerin oluşan isteğe bağlı bir parametre. Olası *öznitelikleri* şunlardır:  
-  
-**read**  
-Verileri okuma işlemleri sağlar.  
-  
-**write**  
-Veri yazma işlemleri sağlar.  
-  
-**Yürütme**  
-Yürütülecek kodu sağlar.  
-  
-**Paylaşılan**  
-Resmi yüklemek tüm işlemler arasında bölümü paylaşır.  
-  
-**nopage**  
-Bölüm alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
-  
-**NoCache**  
-Bölüm önbelleğe alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
-  
-**Atma**  
-Bölüm discardable olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.  
-  
-**remove**  
-Bölüm değil bellekte olarak işaretler; Sanal cihaz sürücüleri (V*x*D) yalnızca.  
+
+|Öznitelik|Açıklama|
+|-|-|
+|**read**|Verileri okuma işlemleri sağlar.|
+|**write**|Veri yazma işlemleri sağlar.|
+|**Yürütme**|Yürütülecek kodu sağlar.|
+|**Paylaşılan**|Resmi yüklemek tüm işlemler arasında bölümü paylaşır.|
+|**nopage**|Bölüm alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|
+|**NoCache**|Bölüm önbelleğe alınabilir değil olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|
+|**Atma**|Bölüm discardable olarak işaretler; Win32 aygıt sürücülerini yönetmek için kullanışlıdır.|
+|**remove**|Bölüm değil bellekte olarak işaretler; Sanal cihaz sürücüleri (V*x*D) yalnızca.|
   
 Öznitelikleri belirtmezseniz, bölümü okuyun ve yazma öznitelikleri.  
   

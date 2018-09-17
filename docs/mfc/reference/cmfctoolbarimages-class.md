@@ -150,12 +150,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 682f4ecbbc4d048f6353be6844bfef042efbc45f
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 95d9da94e2fa7a79db6696649854fafa989941f4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466010"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726277"
 ---
 # <a name="cmfctoolbarimages-class"></a>Cmfctoolbarımages sınıfı
 Araç çubuğundaki görüntüler. `CMFCToolBarImages` Sınıfı uygulama kaynaklarından veya dosyalardan yüklenen araç çubuğu görüntülerini yönetir.  
@@ -282,8 +282,8 @@ void AdaptColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clrBase*  
- [in] *clrTone*  
+*clrBase*<br/>
+[in] [in] *clrTone*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -297,11 +297,11 @@ int AddIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hIcon*  
- Simge eklemek için bir tanıtıcı.  
+*hIcon*<br/>
+[in] Simge eklemek için bir tanıtıcı.  
   
- [in] *bAlphaBlend*  
- Eğer bu simge, alfa karıştırma kullanılır; Aksi durumda FALSE.  
+*bAlphaBlend*<br/>
+[in] Eğer bu simge, alfa karıştırma kullanılır; Aksi durumda FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, eklenen araç çubuğu görüntüsü sıfır tabanlı dizini; Aksi takdirde-1.  
@@ -320,17 +320,17 @@ int AddImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hbmp*  
- Bit eşlem eklemek için tanıtıcı.  
+*hbmp*<br/>
+[in] Bit eşlem eklemek için tanıtıcı.  
   
- [in] *bSetBitPerPixel*  
- TRUE ise `CMFCToolBarImages` nesnesini kullanır yeni görüntünün renk derinliği (piksel başına bit) FALSE ise `CMFCToolbarImages` nesne geçerli renk derinliği tutar.  
+*bSetBitPerPixel*<br/>
+[in] TRUE ise `CMFCToolBarImages` nesnesini kullanır yeni görüntünün renk derinliği (piksel başına bit) FALSE ise `CMFCToolbarImages` nesne geçerli renk derinliği tutar.  
   
- [in] *ImageList*  
- Bir başvuru bir `CMFCToolbarImages` eklemek için görüntü içeren nesne.  
+*ImageList*<br/>
+[in] Bir başvuru bir `CMFCToolbarImages` eklemek için görüntü içeren nesne.  
   
- [in] *nIndex*  
- Kaynak dizin `CMFCToolbarImages` eklemek için görüntü nesnesi.  
+*nIndex*<br/>
+[in] Kaynak dizin `CMFCToolbarImages` eklemek için görüntü nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç çubuğu sayısı, görüntüleri `CMFCToolBarImages` nesne tutan yeni bir bit eşlem başarıyla eklendikten sonra işlem başarısız oldu -1.  
@@ -397,8 +397,8 @@ BOOL CreateFromImageList(const CImageList& imageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ImageList*  
- Araç çubuğu görüntülerini için bir kaynak olarak kullanılacak resim listesi.  
+*ImageList*<br/>
+[in] Araç çubuğu görüntülerini için bir kaynak olarak kullanılacak resim listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman TRUE değerini döndürür.  
@@ -416,8 +416,8 @@ static HRGN __stdcall CreateRegionFromImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bmp*  
- [in] *clrTransparent*  
+*BMP*<br/>
+[in] [in] *clrTransparent*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -431,8 +431,8 @@ BOOL DeleteImage(int iImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iImage*  
- Sıfır tabanlı dizini silmek için görüntüyü belirtir.  
+*iImage*<br/>
+[in] Sıfır tabanlı dizini silmek için görüntüyü belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü başarıyla silinirse TRUE; Görüntü dizini geçersiz ise FALSE `CMFCToolbarImages` nesnedir geçici `CMFCToolbarImages` nesne kullanıcı tanımlı bir görüntü içermiyor ya da başka varsa bir hata oluştu.  
@@ -455,35 +455,35 @@ BOOL Draw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *x*  
- Görüntü çizilecek olduğu dikdörtgenin sol tarafının X koordinatı.  
+*x*<br/>
+[in] Görüntü çizilecek olduğu dikdörtgenin sol tarafının X koordinatı.  
   
- [in] *y*  
- Görüntü çizilecek olduğu dikdörtgenin üstünün Y koordinatı.  
+*Y*<br/>
+[in] Görüntü çizilecek olduğu dikdörtgenin üstünün Y koordinatı.  
   
- [in] *iImageIndex*  
- Görüntülenecek resmin sıfır tabanlı dizini.  
+*iImageIndex*<br/>
+[in] Görüntülenecek resmin sıfır tabanlı dizini.  
   
- [in] *bHilite*  
- Görüntü vurgulanmasını ise TRUE; Aksi durumda FALSE.  
+*bHilite*<br/>
+[in] Görüntü vurgulanmasını ise TRUE; Aksi durumda FALSE.  
   
- [in] *bDevre Dışı*  
- Görüntü devre dışı stili çizilecek ise TRUE; Aksi durumda FALSE.  
+*bDevre Dışı*<br/>
+[in] Görüntü devre dışı stili çizilecek ise TRUE; Aksi durumda FALSE.  
   
- [in] *bIndeterminate*  
- Görüntü belirlenmemiş durum stili çizilecek ise TRUE; Aksi durumda FALSE.  
+*bIndeterminate*<br/>
+[in] Görüntü belirlenmemiş durum stili çizilecek ise TRUE; Aksi durumda FALSE.  
   
- [in] *bShadow*  
- Görüntü ile bir gölge çizilecek ise TRUE; Aksi durumda FALSE.  
+*bShadow*<br/>
+[in] Görüntü ile bir gölge çizilecek ise TRUE; Aksi durumda FALSE.  
   
- [in] *bInactive*  
- Görüntü etkin olmayan duruma stilinde çizilecek ise TRUE; Aksi durumda FALSE.  
+*bInactive*<br/>
+[in] Görüntü etkin olmayan duruma stilinde çizilecek ise TRUE; Aksi durumda FALSE.  
   
- [in] *alphaSrc*  
- Alfa kanalı (opaklık) değeri. 255 değeri görüntünün anlamına gelir çizilen donuk olan. 0 değeri görüntünün anlamına gelir saydam olarak çizilir. Bu değer, yalnızca 32 bit renk görüntülerini ve Windows Vista cam stil görüntülenen görüntüleri için kullanılır.  
+*alphaSrc*<br/>
+[in] Alfa kanalı (opaklık) değeri. 255 değeri görüntünün anlamına gelir çizilen donuk olan. 0 değeri görüntünün anlamına gelir saydam olarak çizilir. Bu değer, yalnızca 32 bit renk görüntülerini ve Windows Vista cam stil görüntülenen görüntüleri için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen görüntü başarıyla görüntüleniyorsa TRUE; FALSE görüntü dizini geçersizdi veya başka bir hata oluştu.  
@@ -506,14 +506,14 @@ BOOL DrawEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *iImageIndex*  
- [in] *horzAlign*  
- [in] *vertAlign*  
- [in] *rectSrc*  
- [in] *0*  
- [in] *0)*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*iImageIndex*<br/>
+[in] [in] *horzAlign*  
+*vertAlign*<br/>
+[in] [in] *rectSrc*  
+*0*<br/>
+[in] [in] *0)*  
  [in] *alphaSrc*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -540,8 +540,8 @@ void EndDrawImage(CAfxDrawState& ds);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ds*  
- Bir başvuru `CAfxDrawState` geçildi nesne `PrepareDrawImage` yöntemi.  
+*DS*<br/>
+[in] Bir başvuru `CAfxDrawState` geçildi nesne `PrepareDrawImage` yöntemi.  
   
 ##  <a name="extracticon"></a>  CMFCToolBarImages::ExtractIcon  
  Araç çubuğu görüntülerini belirtilen görüntü dizinden sahip simgesini döndürür.  
@@ -551,8 +551,8 @@ HICON ExtractIcon(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Görüntü, simge olarak ayıklanacak bulunduğu bir görüntü listesi sıfır tabanlı dizin.  
+*nIndex*<br/>
+[in] Görüntü, simge olarak ayıklanacak bulunduğu bir görüntü listesi sıfır tabanlı dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işleme ayıklanan simgesine veya yoksa NULL *nIndex* je mimo rozsah.  
@@ -567,11 +567,11 @@ static void FillDitheredRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Doldurmak için bir dikdörtgen koordinatları.  
+*Rect*<br/>
+[in] Doldurmak için bir dikdörtgen koordinatları.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir dikdörtgen ortalaması COLOR_BTNFACE ve COLOR_BTNHIGHLIGHT sistem renkleri, bir rengi ile doldurmak için bu yöntemi kullanın. Sistem renkleri 256 veya daha az kullanıyorsa, dikdörtgen bunun yerine bu iki renkleri Titremeli deseni ile doldurulur.  
@@ -629,8 +629,8 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDest*  
- Hedef boyutunu almak için TRUE; Kaynak görüntü boyutunu almak için FALSE.  
+*bDest*<br/>
+[in] Hedef boyutunu almak için TRUE; Kaynak görüntü boyutunu almak için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `SIZE` yapısı, görüntü boyutunu piksel cinsinden belirtir.  
@@ -719,8 +719,8 @@ int GetResourceOffset(UINT uiResId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiResId*  
- Bir görüntü kaynak kimliği.  
+*uiResId*<br/>
+[in] Bir görüntü kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir görüntü dizini; Belirtilen kaynak kimliği ile görüntü yoksa -1.  
@@ -744,8 +744,8 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nGrayImageLuminancePercentage*  
- Aydınlatma yüzdesi.  
+*nGrayImageLuminancePercentage*<br/>
+[in] Aydınlatma yüzdesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Koleksiyondaki görüntüleri başarıyla gri TRUE; Aksi durumda FALSE.  
@@ -844,20 +844,20 @@ BOOL Load(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiResID*  
- Bir bit eşlem kaynağının kimliği.  
+*uiResID*<br/>
+[in] Bir bit eşlem kaynağının kimliği.  
   
- [in] *hinstRes*  
- Kaynak DLL'si örneği.  
+*hinstRes*<br/>
+[in] Kaynak DLL'si örneği.  
   
- [in] *bekle*  
- Var olan bit eşlem değiştirmek için yüklenen bit eşlem var olan bit eşlem ya da FALSE eklemek için TRUE.  
+*Bekle*<br/>
+[in] Var olan bit eşlem değiştirmek için yüklenen bit eşlem var olan bit eşlem ya da FALSE eklemek için TRUE.  
   
- [in] *lpszBmpFileName*  
- Bir disk dosyasının yolu olan bit eşlem yüklenemiyor.  
+*lpszBmpFileName*<br/>
+[in] Bir disk dosyasının yolu olan bit eşlem yüklenemiyor.  
   
- [in] *nMaxFileSize*  
- Bit eşlem dosyasında bayt sayısı; ya da bit eşlem dosyası boyutundan bağımsız olarak yüklemek için 0. Dosyasının boyutu bu maksimum boyutu aşıyor, yöntem false değerini döndürür ve bit eşlem yüklemez.  
+*nMaxFileSize*<br/>
+[in] Bit eşlem dosyasında bayt sayısı; ya da bit eşlem dosyası boyutundan bağımsız olarak yüklemek için 0. Dosyasının boyutu bu maksimum boyutu aşıyor, yöntem false değerini döndürür ve bit eşlem yüklemez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bit eşlem başarıyla yüklendi TRUE; Aksi durumda FALSE.  
@@ -876,8 +876,8 @@ BOOL LoadStr(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszResourceName*  
- [in] *hinstRes*  
+*lpszResourceName*<br/>
+[in] [in] *hinstRes*  
  [in] *bekle*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -894,8 +894,8 @@ static COLORREF __stdcall MapFromSysColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- [in] *bUseRGBQUAD*  
+*Renk*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -912,8 +912,8 @@ BOOL MapTo3dColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bUseRGBQUAD*  
- [in] *clrSrc*  
+*bUseRGBQUAD*<br/>
+[in] [in] *clrSrc*  
  [in] *clrDest*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -930,8 +930,8 @@ static COLORREF __stdcall MapToSysColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- [in] *bUseRGBQUAD*  
+*Renk*<br/>
+[in] [in] *bUseRGBQUAD*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -974,11 +974,11 @@ static BOOL MirrorBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *hbmp*  
- Bit eşlem yansıtmak için işleyici.  
+*hbmp*<br/>
+[out içinde] Bit eşlem yansıtmak için işleyici.  
   
- [in] *cxImage*  
- Resmin piksel cinsinden genişliği.  
+*cxImage*<br/>
+[in] Resmin piksel cinsinden genişliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü başarıyla yansıtılmış TRUE; Aksi durumda FALSE.  
@@ -996,8 +996,8 @@ static BOOL __stdcall MirrorBitmapVert(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hbmp*  
- [in] *cyImage*  
+*hbmp*<br/>
+[in] [in] *cyImage*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1035,8 +1035,8 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hbmp*  
- [in] *bAutoCheckPremlt*  
+*hbmp*<br/>
+[in] [in] *bAutoCheckPremlt*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1066,14 +1066,14 @@ BOOL PrepareDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ds*  
- Bir başvuru `CAfxDrawState` yapısı, görüntü işleme aşamalar arasında ayrılan kaynakları depolar.  
+*DS*<br/>
+[in] Bir başvuru `CAfxDrawState` yapısı, görüntü işleme aşamalar arasında ayrılan kaynakları depolar.  
   
- [in] *sizeImageDest*  
- Bir hedef görüntü boyutunu belirtir.  
+*sizeImageDest*<br/>
+[in] Bir hedef görüntü boyutunu belirtir.  
   
- [in] *bFadeInactive*  
- Çizilecek etkin olmayan görüntüleri soluk istiyorsanız TRUE.  
+*bFadeInactive*<br/>
+[in] Çizilecek etkin olmayan görüntüleri soluk istiyorsanız TRUE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç çubuğu görüntüsü çizmek için gereken kaynakları başarılı bir şekilde, aksi takdirde FALSE ayrılan TRUE.  
@@ -1118,8 +1118,8 @@ static void SetDisabledImageAlpha(BYTE nValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nDeğer*  
- Alfa kanalını yeni değeri.  
+*nDeğer*<br/>
+[in] Alfa kanalını yeni değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Devre dışı görüntüleri için özel bir alfa değeri ayarlamak için bu yöntemi kullanın. Varsayılan değer, 127, yarı saydam olacak şekilde devre dışı düğme resimlerini neden olur. 0 değeri ayarlarsanız, devre dışı görüntüleri tamamen saydam olacak. 255 değerini ayarlarsanız, devre dışı görüntüleri tamamen opak olacaktır.  
@@ -1146,8 +1146,8 @@ void SetImageSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *sizeImage*  
- Araç çubuğu görüntülerini yeni boyutu.  
+*sizeImage*<br/>
+[in] Araç çubuğu görüntülerini yeni boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak araç görüntüsünün boyutu 16 x 15 pikseldir. Araç çubuğu görüntülerini farklı bir boyut kullanmak istiyorsanız bu yöntemi çağırın.  
@@ -1205,8 +1205,8 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clrTransparent*  
- Bir RGB değeri.  
+*clrTransparent*<br/>
+[in] Bir RGB değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki saydam rengi.  
@@ -1224,11 +1224,11 @@ BOOL UpdateImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iImage*  
- Görüntünün güncelleştirmek için sıfır tabanlı dizini.  
+*iImage*<br/>
+[in] Görüntünün güncelleştirmek için sıfır tabanlı dizini.  
   
- [in] *hbmp*  
- Bit eşlem görüntüsünü güncelleştirmek, işleyici.  
+*hbmp*<br/>
+[in] Bit eşlem görüntüsünü güncelleştirmek, işleyici.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü başarıyla güncelleştirildi TRUE; Görüntü listesi kullanıcı tanımlı ya da geçici değilse FALSE.  

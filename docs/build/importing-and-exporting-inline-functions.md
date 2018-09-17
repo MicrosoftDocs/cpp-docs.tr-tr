@@ -22,36 +22,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b666d450766a5a285f02517d92d5eb4dc3f29c68
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 431b7c3becffb4e5b2543984fd66cae0a1507738
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368583"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726563"
 ---
 # <a name="importing-and-exporting-inline-functions"></a>Satır İçi İşlevleri İçeri ve Dışarı Aktarma
-İçeri aktarılan işlevler satır içi olarak tanımlanabilir. Etkisi kabaca standart işlev satır içi tanımlama aynıdır; işlev çağrıları makro gibi satır içi koda genişletilir. C++ destekleyen bir şekilde DLL'de bazı üye işlevleri için verimliliğini sınıflarını gibi temelde faydalı olur.  
-  
- Bir içe aktarılan satır içi işlev c++'ta adresini sürebilir özelliğidir. Derleyici DLL'de bulunan satır içi işlev kopyasını adresini döndürür. Başka bir içeri aktarılan satır içi işlevleri içeri aktarılan işlevinin genel içeri aktarılan verileri farklı olarak statik yerel veri başlatabilir özelliğidir.  
-  
+
+İçeri aktarılan işlevler, satır içi olarak tanımlanabilir. Etkisi kabaca bir standart bir işlevi satır içi tanımlama aynıdır; işlev çağrıları, bir makro benzer bir satır içi kod içine genişletilir. Bu, temelde C++ destekleyen bir yol DLL'de verimlilik için bazı üye işlevleri, sınıflarını kullanışlıdır.
+
+Bir içeri aktarılan satır içi işlev c++'ta adresini alabilir özelliğidir. Derleyici DLL'de yer alan satır içi işlev kopyasını adresini döndürür. Başka bir içeri aktarılan satır içi işlevleri içeri aktarılan işlevinin genel içeri aktarılan verileri farklı olarak statik yerel veriler başlatabilirsiniz özelliğidir.
+
 > [!CAUTION]
->  Sürüm çakışması olasılığı oluşturduğundan sağlama satır içi işlevleri içeri aktarırken dikkatli olmanız gerekir. Satır içi işlev uygulama koda genişletilmiş; işlevi yeniden yazma, uygulamanın kendisinin derlenmiştir sürece bu nedenle, onu güncelleştirilmez. (Normalde, DLL işlevleri bunları kullanan uygulamaları derlenmeden güncelleştirilebilir.)  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)  
-  
--   [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)  
-  
--   [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
-  
--   [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarmak](../build/exporting-and-importing-using-afx-ext-class.md)  
-  
--   [C dili yürütülebilir öğelerinde kullanmak için C++ işlevlerini dışarı aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)  
-  
--   [Hangi dışarı aktarma yöntemini kullanacağınızı belirleme](../build/determining-which-exporting-method-to-use.md)  
-  
--   [__Declspec(dllimport) kullanarak bir uygulama içeri aktarmak için](../build/importing-into-an-application-using-declspec-dllimport.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+>  Sürüm çakışması olasılığı oluşturduğundan sağlama satır içi işlevleri içeri aktarırken dikkatli olmanız. Satır içi işlev, uygulama kodunda genişletilmiş; Daha sonra işlevi yeniden yazma, uygulamanın kendisi yeniden derlenen sürece bu nedenle, bu güncelleştirilmiyor. (Normalde, DLL işlevleri bunları kullanan uygulamalar yeniden derlenmeden güncelleştirilebilir.)
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [DLL'den dışarı aktarma](../build/exporting-from-a-dll.md)
+
+- [Kullanarak bir DLL dışarı aktarın. DEF dosyaları](../build/exporting-from-a-dll-using-def-files.md)
+
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)

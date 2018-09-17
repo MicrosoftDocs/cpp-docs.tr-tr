@@ -43,12 +43,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc7d2b959bd8ad3ed89ae270e1f7d93406526695
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2a0dd4f32f8c7b3a9e859e23fcc26e668fa87cdb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43218392"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726368"
 ---
 # <a name="popen-wpopen"></a>_popen, _wpopen
 
@@ -61,12 +61,12 @@ Bir kanal oluşturur ve bir komutu yürütür.
 
 ```C
 FILE *_popen(
-const char *command,
-const char *mode
+    const char *command,
+    const char *mode
 );
 FILE *_wpopen(
-const wchar_t *command,
-const wchar_t *mode
+    const wchar_t *command,
+    const wchar_t *mode
 );
 ```
 
@@ -88,13 +88,12 @@ Bu ve diğer hata kodları hakkında daha fazla bilgi için bkz: [_doserrno, err
 
 **_Popen** işlevi bir kanal oluşturur ve belirtilen dizeyi içeren komut işleyicisi üretilmiş bir kopyasını zaman uyumsuz olarak yürütür *komut*. Karakter dizesi *modu* gibi istenen erişim türünü belirtir.
 
-**"r"** çağırma işlemine üretilmiş komut standart çıkışında döndürülen akışa kullanarak okuyabilir.
-
-**"w"** çağırma işlemine döndürülen akışa kullanarak üretilmiş komut standart girişi yazabilirsiniz.
-
-**"b"** İkili modda açık.
-
-**"t"** metin modunda açın.
+|Erişim modu|Açıklama|
+|-|-|
+|**"r"**|Çağırma işlemi üretilmiş komut standart çıkışında döndürülen akışa kullanarak okuyabilir.|
+|**"w"**|Çağırma işlemi, döndürülen akışa kullanarak üretilmiş komut standart girişi yazabilirsiniz.|
+|**"b"**|İkili modda açık.|
+|**"t"**|Metin modunda açın.|
 
 > [!NOTE]
 > Bir Windows programı kullandıysanız **_popen** işlevi, programın süresiz olarak yanıt vermemesine neden olan bir geçersiz dosya işaretçisini döndürür. **_popen** bir konsol uygulamasında düzgün çalışır. Giriş ve çıkış yönlendiren bir Windows uygulaması oluşturmak için bkz: [yeniden yönlendirilen giriş ve çıkış bir alt işlemi oluşturma](/windows/desktop/ProcThread/creating-a-child-process-with-redirected-input-and-output) Windows SDK.

@@ -18,20 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19457258ae9fe2017430c6445fa9b7d876343680
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a4516a415695b8ebf0594d393981b3fa3211f1ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376747"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726343"
 ---
 # <a name="tsaware"></a>/TSAWARE
-```  
-/TSAWARE[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir programın görüntü kullanılan gibi aynı şekilde değiştirmek EDITBIN yardımcı programı/TSAWARE seçeneği sağlar [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) bağlayıcı seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+
+```
+/TSAWARE[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ TSAWARE seçeneği EDITBIN yardımcı programı, senaryosuyla aynı şekilde program görüntüsü değiştirebilmenizi sağlar [/TSAWARE](../../build/reference/tsaware-create-terminal-server-aware-application.md) bağlayıcı seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

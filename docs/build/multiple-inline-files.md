@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ee9be15f029c0aaab3ca4bc47fb183e1499c2e2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 87d68034c4f0018d65020915d24d0b5c2ec5d61a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368219"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725601"
 ---
 # <a name="multiple-inline-files"></a>Birden Çok Satır İçi Dosya
-Bir komutu, birden fazla satır içi dosya oluşturabilirsiniz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      command << <<  
-inlinetext  
-<<[KEEP | NOKEEP]  
-inlinetext  
-<<[KEEP | NOKEEP]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Her dosya için satır içi metin sınırlayıcısı içeren bir kapanış satırı tarafından izlenen bir veya daha fazla satırı belirtin. İlk dosya sınırlandırma çizgi aşağıdaki satırda ikinci dosyanın metni başlayın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)
+
+Bir komutu birden fazla satır içi dosya oluşturabilirsiniz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+command << <<
+inlinetext
+<<[KEEP | NOKEEP]
+inlinetext
+<<[KEEP | NOKEEP]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Her dosya için satır içi metin sınırlayıcısı içeren bir kapanış satır tarafından izlenen bir veya daha fazla satır belirtin. İlk dosya sınırlandırma satırı aşağıdaki satırdaki ikinci dosyanın metin başlayın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

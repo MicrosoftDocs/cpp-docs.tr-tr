@@ -148,12 +148,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28fbbce7c63e60bfdeb75c32b3c919b4f38b2b2a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 9082e4a8269e692bf9e1d9b8a27f61291b2707a9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107478"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726238"
 ---
 # <a name="unorderedmap-class"></a>unordered_map Sınıfı
 
@@ -561,7 +561,7 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*  
+*nbucket*<br/>
 Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -925,7 +925,7 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
+*keyval*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1190,7 +1190,7 @@ std::pair<const_iterator, const_iterator>  equal_range(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
+*keyval*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -1260,16 +1260,16 @@ size_type erase(const key_type& Key);
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*  
+*Burada*<br/>
 Kaldırılacak öğenin konumu.
 
-*ilk*  
+*ilk*<br/>
 Kaldırılacak ilk öğenin konumu.
 
-*Son*  
+*Son*<br/>
 Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Key*  
+*Key*<br/>
 Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1292,7 +1292,7 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
+*keyval*<br/>
 Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2009,7 +2009,7 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktörü*  
+*faktörü*<br/>
 Yeni en yüksek yük faktörünün.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2381,7 +2381,7 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*  
+*nbuckets*<br/>
 İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2565,7 +2565,7 @@ void swap(unordered_map& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
+*sağ*<br/>
 İle takas için kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar

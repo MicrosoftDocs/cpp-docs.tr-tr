@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06f0b78938534f685f14757ca16e5ad2574412f2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4708f180a1a1f5e936a6b30650a6432d48878d53
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684813"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726758"
 ---
 # <a name="ctooltipctrl-class"></a>CToolTipCtrl sınıfı
 Bir "araç ipucunu denetimini," tek satırlık bir uygulamada bir aracın amacını açıklayan metin görüntüleyen küçük bir açılır pencere işlevselliğini kapsüller.  
@@ -374,7 +374,7 @@ BOOL GetCurrentTool(LPTOOLINFO lpToolInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *lpToolInfo*|İşaretçi bir [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) yapısı geçerli araç ipucu penceresi hakkında bilgi alır.|  
+|*lpToolInfo*|[out] İşaretçi bir [TOOLINFO](/windows/desktop/api/commctrl/ns-commctrl-tagtoolinfoa) yapısı geçerli araç ipucu penceresi hakkında bilgi alır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bilgileri başarıyla alınırsa TRUE; Aksi takdirde FALSE.  
@@ -504,7 +504,7 @@ void GetTitle(PTTGETTITLE pttgt) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pttgt*|İşaretçi bir [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) araç ipucu denetimi hakkında bilgi içeren yapısı. Bu yöntem döndürüldüğünde, *pszTitle* üyesi [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) başlığın metin noktalarını yapılandırın.|  
+|*pttgt*|[out] İşaretçi bir [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) araç ipucu denetimi hakkında bilgi içeren yapısı. Bu yöntem döndürüldüğünde, *pszTitle* üyesi [TTGETTITLE](/windows/desktop/api/commctrl/ns-commctrl-_ttgettitle) başlığın metin noktalarını yapılandırın.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem gönderir [TTM_GETTITLE](/windows/desktop/Controls/ttm-gettitle) Windows SDK'da açıklanan ileti.  

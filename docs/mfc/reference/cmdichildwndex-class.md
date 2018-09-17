@@ -122,12 +122,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b103e2409da08dc67a55aae8ba8c5f49f377434
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cc9965371de0ea75ece0cb31c7ec5187b9279cef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677697"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726719"
 ---
 # <a name="cmdichildwndex-class"></a>Cmdıchildwndex sınıfı
 `CMDIChildWndEx` Sınıf işlevlerini bir Windows Çok Belgeli Arabirim (MDI) alt penceresi sağlar. İşlevselliğini genişletir [Cmdıchildwnd sınıfı](../../mfc/reference/cmdichildwnd-class.md). Bir MDI uygulaması belirli MFC sınıflarını kullandığında, çatı bu sınıfı gerektirir.  
@@ -239,11 +239,11 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bölme için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bölme için bir işaretçi.  
   
- [in] *bTail*  
- Bölmenin yerleştirme yöneticisini bölmeleri listesinin sonuna eklemek için TRUE; Aksi takdirde FALSE.  
+*bTail*<br/>
+[in] Bölmenin yerleştirme yöneticisini bölmeleri listesinin sonuna eklemek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmenin yerleştirme yöneticisiyle başarıyla kaydedildi TRUE; Aksi takdirde FALSE.  
@@ -256,8 +256,8 @@ void AddTabbedPane(CDockablePane* pControlBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bölme için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bölme için bir işaretçi.  
   
 ##  <a name="adjustdockinglayout"></a>  CMDIChildWndEx::AdjustDockingLayout  
  Yerleştirme düzeni ayarlar.  
@@ -267,8 +267,8 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hdwp*  
- Ertelenmiş pencere konumu yapısına işleyin.  
+*hdwp*<br/>
+[in] Ertelenmiş pencere konumu yapısına işleyin.  
   
 ##  <a name="canshowonmditabs"></a>  CMDIChildWndEx::CanShowOnMDITabs  
 
@@ -305,14 +305,14 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Bölme için bir işaretçi.  
+*pBar*<br/>
+[in] Bölme için bir işaretçi.  
   
- [in] *nDockBarID*  
- Bölmenin kimliği.  
+*nDockBarID*<br/>
+[in] Bölmenin kimliği.  
   
- [in] *lpRect*  
- Bir dikdörtgen bir işaretçi.  
+*lpRect*<br/>
+[in] Bir dikdörtgen bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *LpRect* parametre kullanılmaz.  
@@ -349,8 +349,8 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwDockStyle*  
- Etkin ana çerçeve penceresinin tarafını belirtir. Bir veya daha fazla aşağıdaki bayraklar kullanın.  
+*dwDockStyle*<br/>
+[in] Etkin ana çerçeve penceresinin tarafını belirtir. Bir veya daha fazla aşağıdaki bayraklar kullanın.  
   
 - CBRS_ALIGN_LEFT  
   
@@ -371,8 +371,8 @@ BOOL EnableDocking(DWORD dwDockStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwDockStyle*  
- Etkinleştirmek için yerleştirme hizalamayı belirtir.  
+*dwDockStyle*<br/>
+[in] Etkinleştirmek için yerleştirme hizalamayı belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -453,8 +453,8 @@ CBasePane* GetPane(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Denetim Kimliği bul bölmesi.  
+*nID*<br/>
+[in] Denetim Kimliği bul bölmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde bulunan, aksi takdirde NULL bir işaretçi.  
@@ -506,14 +506,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bölmesine eklemek için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bölmesine eklemek için bir işaretçi.  
   
- [in] *pTarget*  
- Bitişik bölmesi için bir işaretçi.  
+*pTarget*<br/>
+[in] Bitişik bölmesi için bir işaretçi.  
   
- [in] *bBu*  
- TRUE ise *pControlBar* eklenen *pTarget*. FALSE ise *pControlBar* önce eklenen *pTarget*.  
+*bBu*<br/>
+[in] TRUE ise *pControlBar* eklenen *pTarget*. FALSE ise *pControlBar* önce eklenen *pTarget*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, TRUE, FALSE Aksi takdirde.  
@@ -529,14 +529,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Belirtilen nokta.  
+*Noktası*<br/>
+[in] Belirtilen nokta.  
   
- [in] *dwBarAlignment*  
- Hangi uç noktaya yaklaştı belirtir. CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM olası değerler şunlardır:  
+*dwBarAlignment*<br/>
+[in] Hangi uç noktaya yaklaştı belirtir. CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM olası değerler şunlardır:  
   
- [in] *bOuterEdge*  
- Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
+*bOuterEdge*<br/>
+[in] Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dock sitesiyle noktası ise TRUE; Aksi durumda FALSE.  
@@ -580,8 +580,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFrame*  
- Bir mini çerçeve işaretçisi.  
+*pFrame*<br/>
+[in] Bir mini çerçeve işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aksi takdirde FALSE yöntem başarılı olursa TRUE.  
@@ -596,11 +596,11 @@ virtual void OnSetPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bPreview*  
- TRUE ise, yazdırma Önizleme modundan girin. FALSE ise, çıkış Yazdırma Önizleme modundan.  
+*bPreview*<br/>
+[in] TRUE ise, yazdırma Önizleme modundan girin. FALSE ise, çıkış Yazdırma Önizleme modundan.  
   
- [in] *pState*  
- Baskı Önizleme durum yapısına yönelik işaretçi.  
+*pState*<br/>
+[in] Baskı Önizleme durum yapısına yönelik işaretçi.  
   
 ##  <a name="onupdateframetitle"></a>  CMDIChildWndEx::OnUpdateFrameTitle  
  Çerçevenin başlık güncelleştirmek için framework tarafından çağırılır.  
@@ -610,8 +610,8 @@ virtual void OnUpdateFrameTitle(BOOL bAddToTitle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bAddToTitle*  
- TRUE ise belge adını başlığı ekleyin.  
+*bAddToTitle*<br/>
+[in] TRUE ise belge adını başlığı ekleyin.  
   
 ##  <a name="panefrompoint"></a>  CMDIChildWndEx::PaneFromPoint  
  Belirtilen noktasını içeren bölme döndürür.  
@@ -631,20 +631,20 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Noktasını denetlemek için ekran koordinatları olarak belirtir.  
+*Noktası*<br/>
+[in] Noktasını denetlemek için ekran koordinatları olarak belirtir.  
   
- [in] *nSensitivity*  
- Bu tutara göre arama alanını artırın. Belirtilen noktasını artan alanında düşerse bir bölmesinde arama ölçütlerini karşılar.  
+*nSensitivity*<br/>
+[in] Bu tutara göre arama alanını artırın. Belirtilen noktasını artan alanında düşerse bir bölmesinde arama ölçütlerini karşılar.  
   
- [in] *bExactBar*  
- Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
+*bExactBar*<br/>
+[in] Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
   
- [in] *pRTCBarType*  
- BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
+*pRTCBarType*<br/>
+[in] BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
   
- [in] *dwAlignment*  
- Belirli bir noktada bir bölme bulunursa, bu parametre için belirtilen nokta en yakın bölmesinde tarafında yer alır. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
+*dwAlignment*<br/>
+[in] Belirli bir noktada bir bölme bulunursa, bu parametre için belirtilen nokta en yakın bölmesinde tarafında yer alır. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi `CBasePane`-hiçbir bölmesinde bulunduysa belirtilen noktasını ya da NULL içeren türetilmiş nesne.  
@@ -662,8 +662,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bNotify*  
- TRUE ise, pencerenin etkin yerinde öğeyi Düzen değişikliği bildirim alır.  
+*bNotify*<br/>
+[in] TRUE ise, pencerenin etkin yerinde öğeyi Düzen değişikliği bildirim alır.  
   
 ##  <a name="removepanefromdockmanager"></a>  CMDIChildWndEx::RemovePaneFromDockManager  
  Bir bölme yerleştirme Manager'dan kaldırır.  
@@ -678,20 +678,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bölmesinde, kaldırmak için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bölmesinde, kaldırmak için bir işaretçi.  
   
- [in] *bDestroy*  
- TRUE ise, kaldırılan bölmesinde yok edilir.  
+*bDestroy*<br/>
+[in] TRUE ise, kaldırılan bölmesinde yok edilir.  
   
- [in] *bAdjustLayout*  
- TRUE ise yerleştirme düzeni hemen ayarlayın.  
+*bAdjustLayout*<br/>
+[in] TRUE ise yerleştirme düzeni hemen ayarlayın.  
   
- [in] *bAutoHide*  
- TRUE ise, yerleştirme düzeni autohide çubukları listesine ilişkilidir. FALSE ise, yerleştirme düzeni normal bölmeleri listesine ilişkilidir.  
+*bAutoHide*<br/>
+[in] TRUE ise, yerleştirme düzeni autohide çubukları listesine ilişkilidir. FALSE ise, yerleştirme düzeni normal bölmeleri listesine ilişkilidir.  
   
- [in] *pBarReplacement*  
- Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
+*pBarReplacement*<br/>
+[in] Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
   
 ##  <a name="setrelatedtabgroup"></a>  CMDIChildWndEx::SetRelatedTabGroup  
 
@@ -717,10 +717,10 @@ void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- [in] *bBilgi Göster*  
- [in] *bDelay*  
- [in] *bActivate*  
+*pBar*<br/>
+[in] [in] *bBilgi Göster*  
+*bDelay*<br/>
+[in] [in] *bActivate*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

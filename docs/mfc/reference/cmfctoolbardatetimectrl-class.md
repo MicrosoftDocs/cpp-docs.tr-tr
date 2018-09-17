@@ -58,12 +58,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad99ccf1f037d16bcff57f9a643f2332f36e7d7a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2b1ee8e1beb6022d6a940e7036d9673e3844f35
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220440"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726732"
 ---
 # <a name="cmfctoolbardatetimectrl-class"></a>CMFCToolBarDateTimeCtrl sınıfı
 Bir tarih ve Saat Seçici denetimini içeren bir araç çubuğu düğmesi.  
@@ -155,17 +155,17 @@ CMFCToolBarDateTimeCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Denetim kimliği.  
+*uiID*<br/>
+[in] Denetim kimliği.  
   
- [in] *iImage*  
- Araç çubuğunun, görüntünün dizinini `CMFCToolBarImages` nesne.  
+*iImage*<br/>
+[in] Araç çubuğunun, görüntünün dizinini `CMFCToolBarImages` nesne.  
   
- [in] *dwStyle*  
- Stilini `CMFCToolBarDateTimeCtrlImpl` pencere, kullanıcı düğmeye tıkladığında oluşturulur.  
+*dwStyle*<br/>
+[in] Stilini `CMFCToolBarDateTimeCtrlImpl` pencere, kullanıcı düğmeye tıkladığında oluşturulur.  
   
- [in] *iWidth*  
- Denetimin piksel cinsinden genişliği.  
+*iWidth*<br/>
+[in] Denetimin piksel cinsinden genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu nesne için sistem tarihi ve saati başlatılır. Pencere stili iç `CMFCToolBarDateTimeCtrlImpl` nesneyi içeren *dwStyle* parametresi ve WS_CHILD ve ws_vısıble stilleri. Bu stiller değiştiremezsiniz `CMFCToolBarDateTimeCtrl::SetStyle`. Kullanım `SetStyle` stilini değiştirmek için `CMFCToolBarDateTimeCtrl` denetimi.  
@@ -183,8 +183,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *src*  
- Kopyalanacak kaynak düğmesini başvuru.  
+*src*<br/>
+[in] Kopyalanacak kaynak düğmesini başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu araç çubuğu düğmesi için başka bir araç çubuğu düğmesini kopyalama için bu yöntemi çağırın. *src* türünde olmalıdır `CMFCToolBarDateTimeCtrl`.  
@@ -197,8 +197,8 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *menuButton*  
- Hedef menü düğmesine bir başvuru.  
+*MenuButton*<br/>
+[in] Hedef menü düğmesine bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem, TRUE döndürür.  
@@ -214,8 +214,8 @@ static CMFCToolBarDateTimeCtrl* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Komut Kimliği Al düğmesi.  
+*uiCmd*<br/>
+[in] Komut Kimliği Al düğmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk `CMFCToolBarDateTimeCtrl` Hayır ise belirtilen komut kimliği veya boş olan uygulamayı nesnesinde `CMFCToolBarDateTimeCtrl` nesneler sahip belirtilen komut kimliği.  
@@ -259,11 +259,11 @@ DWORD GetTime(LPSYSTEMTIME pTimeDest) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *timeDest*  
- İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
+*timeDest*<br/>
+[out] İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
   
- [out] *pTimeDest*  
- Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
+*pTimeDest*<br/>
+[out] Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk aşırı yükleme, zaman başarıyla yazılır, sıfır olmayan, [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) nesne; Aksi durumda 0. İkinci ve üçüncü aşırı belirlenip dwFlag üye eşit olan bir DWORD dönüş değeri olduğu [NMDATETIMECHANGE](/windows/desktop/api/commctrl/ns-commctrl-tagnmdatetimechange) yapısı.  
@@ -289,14 +289,14 @@ static DWORD GetTimeAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Bir araç çubuğu düğmesinin komut kimliğini belirtir.  
+*uiCmd*<br/>
+[in] Bir araç çubuğu düğmesinin komut kimliğini belirtir.  
   
- [out] *timeDest*  
- İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
+*timeDest*<br/>
+[out] İlk aşırı yükleme içinde bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) sistem saat bilgilerini alacak nesne. İkinci aşırı yükleme, bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) sistem saat bilgilerini alacak nesne.  
   
- [out] *pTimeDest*  
- Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
+*pTimeDest*<br/>
+[out] Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) sistem saat bilgilerini almak için yapısı. NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Framework komut kimlik eşleştiren bir araç çubuğu düğmesi bulamazsanız *uiCmd*, ilk aşırı yükleme sıfır ve diğer aşırı yüklemeler de GDT_NONE değer döndürülür. Araç çubuğu düğmesini bulunursa, dönüş değeri bir çağrıdan dönüş değeri aynıdır [CMFCToolBarDateTimeCtrl::GetTime](#gettime) bu düğmesine. Dönüş değeri sıfır veya GDT_NONE düğmesi, olduğunu belirten bulunduğunda oluşabilir çağrısı `GetTime` diğer bir neden için geçerli bir tarih döndürmedi.  
@@ -325,8 +325,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iNotifyCode*  
- Komutu ile ilişkili bir uyarı iletisi.  
+*iNotifyCode*<br/>
+[in] Komutu ile ilişkili bir uyarı iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  WM_COMMAND ileti veya yanlış ileti üst araç tarafından ele alınması gerektiğini göstermek için düğmeyi işler TRUE.  
@@ -356,8 +356,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Yeni üst pencere.  
+*pWndParent*<br/>
+[in] Yeni üst pencere.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Temel sınıf uygulamasına bu metodu geçersiz kılar ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) iç yeniden tarafından `CMFCToolBarDateTimeCtrlImpl` nesne.  
@@ -372,11 +372,11 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Kullanılmayan.  
+*pWnd*<br/>
+[in] Kullanılmayan.  
   
- [in] *bDelay*  
- Kullanılmayan.  
+*bDelay*<br/>
+[in] Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmenin click iletiyi işler olursa sıfır dışı; Aksi durumda 0.  
@@ -394,11 +394,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Düğme görüntüler cihaz bağlamı.  
+*pDC*<br/>
+[in] Düğme görüntüler cihaz bağlamı.  
   
- [in] *nCtlColor*  
- Kullanılmayan.  
+*nCtlColor*<br/>
+[in] Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmenin arka plan boyama için framework kullanan genel fırçasına tanıtıcı.  
@@ -438,8 +438,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğmeyi görülebilir. Aksi halde düğme görünür değil.  
+*bBilgi Göster*<br/>
+[in] Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğmeyi görülebilir. Aksi halde düğme görünür değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)), düğmeyi görüntüleyerek *bBilgi Göster* true'dur. Aksi takdirde, bu yöntem düğmesi gizlenir.  
@@ -452,8 +452,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iSize*  
- Yeni piksel cinsinden düğmenin genişliği.  
+*iSize*<br/>
+[in] Yeni piksel cinsinden düğmenin genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan sınıf uygulamasını bu metodu geçersiz kılar ( [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)) boyutunu ve konumunu iç güncelleştirerek `CMFCToolBarDateTimeCtrlImpl` nesne.  
@@ -470,17 +470,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst pencere.  
+*pWndParent*<br/>
+[in] Üst pencere.  
   
- [in] *iButtonIndex*  
- Düğmenin üst düğme koleksiyondaki sıfır tabanlı dizini.  
+*iButtonIndex*<br/>
+[in] Düğmenin üst düğme koleksiyondaki sıfır tabanlı dizini.  
   
- [in] *wndToolTip*  
- Araç ipucu metnini görüntüleyen denetim.  
+*wndToolTip*<br/>
+[in] Araç ipucu metnini görüntüleyen denetim.  
   
- [out] *str*  
- A `CString` güncelleştirilmiş araç ipucunu alan nesnesi.  
+*str*<br/>
+[out] A `CString` güncelleştirilmiş araç ipucunu alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç İpucu metni yöntemi güncelleştirmeleri olursa sıfır dışı; Aksi durumda 0.  
@@ -498,11 +498,11 @@ BOOL SetTime(LPSYSTEMTIME pTimeNew=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *timeNew*  
- İlk sürümünde, bir başvuru bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
+*timeNew*<br/>
+[in] İlk sürümünde, bir başvuru bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
   
- [in] *pTimeNew*  
- Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
+*pTimeNew*<br/>
+[in] Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -528,14 +528,14 @@ static BOOL SetTimeAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Bir araç çubuğu düğmesinin komut kimliğini belirtir.  
+*uiCmd*<br/>
+[in] Bir araç çubuğu düğmesinin komut kimliğini belirtir.  
   
- [in] *timeNew*  
- İlk sürümünde, bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
+*timeNew*<br/>
+[in] İlk sürümünde, bir [COleDateTime sınıfı](../../atl-mfc-shared/reference/coledatetime-class.md) için Denetim ayarlanacak zaman içeren nesne. İkinci sürümünde, bir işaretçi bir [CTime](../../atl-mfc-shared/reference/ctime-class.md) olduğu denetim ayarlanacak zaman içeren nesne.  
   
- [in] *pTimeNew*  
- Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
+*pTimeNew*<br/>
+[in] Bir işaretçi [SYSTEMTIME](https://msdn.microsoft.com/library/windows/desktop/ms724950) için Denetim ayarlanacak zamanı içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  

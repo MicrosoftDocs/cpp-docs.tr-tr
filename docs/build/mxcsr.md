@@ -12,34 +12,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9df2225526c20463bdbd618322d031c3245d9493
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0d18a4247d36e6894230d74322d52cd5854e42fb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368632"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726511"
 ---
 # <a name="mxcsr"></a>MxCsr
-Kayıt durumu MxCsr de içerir. Çağırma kuralı bu kayıt geçici ve kalıcı bir bölümü olarak böler. Volatile bölümü 6 durumu bayrakları, MXCSR oluşur [0:5], MXCSR [6:15] kaydı geri kalanı kalıcı olarak değerlendirilir.  
-  
- Kalıcı bölümü, program yürütme başlangıcında aşağıdaki standart değerlere ayarlanır:  
-  
-```  
-MXCSR[6]         : Denormals are zeros - 0  
-MXCSR[7:12]      : Exception masks all 1's (all exceptions masked)  
-MXCSR[13:14]   : Rounding  control - 0 (round to nearest)  
-MXCSR[15]      : Flush to zero for masked underflow - 0 (off)  
-```  
-  
- MXCSR içindeki kalıcı alanlar değiştirir Aranan bunları çağırıcısına döndürmeden önce geri yüklemeniz gerekir. Ayrıca, bu alanların hiçbirini değiştirdi çağıran bunları standart değerlerine anlaşmayla Aranan değiştirilen değerleri bekliyor olmadıkça çağrılan çağırmadan önce geri yüklemeniz gerekir.  
-  
- Denetim bayrakları olmayan-volatilite ilgili kuralları için iki özel durum vardır:  
-  
--   Verilen işlevin belgelenen amacı geçici olamayan MxCsr değiştirme olduğu işlevlerde işaretler.  
-  
--   Kanıtlanabilir olduğunda bu kuralları ihlali davranır/burada bu kurallar, örneğin, tüm program Analizi ile ihlal edilmemesi bir program ile aynı yol bir programlarda sonuçları düzeltin.  
-  
- Hiçbir varsayımlar özellikle bir işlevin belgelerinde açıklanan sürece MXCSR geçici kısmının işlevi sınır arasında durumuyla ilgili yapılabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma Kuralı](../build/calling-convention.md)
+
+Kayıt durumu MxCsr de içerir. Çağırma kuralı bu kayıt, geçici ve kalıcı bir bölümü böler. MXCSR 6 durumu bayrakları geçici bir bölümü oluşur [0:5], kayıt, [6:15] MXCSR geri kalanında kalıcı olarak değerlendirilir.
+
+Kalıcı bölümü, program yürütme başlangıcında standart aşağıdaki değerlere ayarlanır:
+
+```
+MXCSR[6]         : Denormals are zeros - 0
+MXCSR[7:12]      : Exception masks all 1's (all exceptions masked)
+MXCSR[13:14]   : Rounding  control - 0 (round to nearest)
+MXCSR[15]      : Flush to zero for masked underflow - 0 (off)
+```
+
+Kalıcı alanlar MXCSR içinde değiştiren bir çağrılan çağırana döndürülmeden önce bunları geri yüklemelisiniz. Ayrıca, bu alanların değiştirdiği bir çağıranın bunları standart değerlerine sözleşmesiyle çağrılan değiştirilen değerlerin bekliyor sürece çağrılan çağırmadan önce geri yüklemeniz gerekir.
+
+Denetim bayrakları, olmayan-volatility ilgili kuralları iki istisna mevcuttur:
+
+- Kalıcı MxCsr değiştirmek için verilen işlevi belgelenen amacı olduğu işlevlerde işaretler.
+
+- Bu kural ihlalini davranışını/bir program burada bu kurallar, örneğin, tüm program Analizi ile ihlal edilmemesi ile aynı anlamına gelir, bir program sonuçları kanıtlanabilir geldiğinde düzeltin.
+
+Hiçbir varsayım özellikle bir işlevin belgelerinde açıklanan sürece MXCSR geçici kısmı bir işlev sınırı arasında durumuyla ilgili yapılabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çağırma Kuralı](../build/calling-convention.md)

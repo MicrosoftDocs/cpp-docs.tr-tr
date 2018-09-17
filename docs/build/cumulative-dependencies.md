@@ -16,52 +16,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d502912a8aeee2e6b3782e7795f44238386e1dba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5a66b153a52da06cca14845b9a58fcef0f42676d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366981"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725718"
 ---
 # <a name="cumulative-dependencies"></a>Birikmeli Bağımlılıklar
-Bir hedef yineleniyorsa açıklama bloğunda toplu bağımlılıklardır.  
-  
- Örneğin, bu kuralları ayarlamak,  
-  
-```Output  
-bounce.exe : jump.obj  
-bounce.exe : up.obj  
-   echo Building bounce.exe...  
-```  
-  
- şunun gibi değerlendirilir:  
-  
-```Output  
-bounce.exe : jump.obj up.obj  
-   echo Building bounce.exe...  
-```  
-  
- Birden çok hedef birden çok bağımlılık satırlarındaki tek açıklama bloğundaki her bir ayrı açıklama bloğu içinde belirtildi, ancak son bağımlılık satırına olmayan hedefleri komutları blok kullanmayın sanki değerlendirilir. NMAKE çıkarım kuralı gibi hedefler için kullanmayı dener.  
-  
- Örneğin, bu kuralları ayarlamak,  
-  
-```Output  
-leap.exe bounce.exe : jump.obj  
-bounce.exe climb.exe : up.obj  
-   echo Building bounce.exe...  
-```  
-  
- şunun gibi değerlendirilir:  
-  
-```Output  
-  
-leap.exe : jump.obj  
-# invokes an inference rule  
-bounce.exe : jump.obj up.obj  
-   echo Building bounce.exe...  
-climb.exe : up.obj  
-   echo Building bounce.exe...  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefler](../build/targets.md)
+
+Bir hedef yinelenen bir açıklama bloğu içinde toplu bağımlılıkları vardır.
+
+Örneğin, bu kuralları ayarlamak,
+
+```Output
+bounce.exe : jump.obj
+bounce.exe : up.obj
+   echo Building bounce.exe...
+```
+
+şunun gibi değerlendirilir:
+
+```Output
+bounce.exe : jump.obj up.obj
+   echo Building bounce.exe...
+```
+
+Birden çok hedefi tek bir açıklama bloğunda birden çok bağımlılık satırlarında, her bir ayrı açıklama bloğu içinde belirtilmiş, ancak son bağımlılık satırında olmayan hedefleri komutları blok kullanmayın yokmuş gibi değerlendirilir. NMAKE çıkarım kuralı kullanmak için tür hedeflerle dener.
+
+Örneğin, bu kuralları ayarlamak,
+
+```Output
+leap.exe bounce.exe : jump.obj
+bounce.exe climb.exe : up.obj
+   echo Building bounce.exe...
+```
+
+şunun gibi değerlendirilir:
+
+```Output
+
+leap.exe : jump.obj
+# invokes an inference rule
+bounce.exe : jump.obj up.obj
+   echo Building bounce.exe...
+climb.exe : up.obj
+   echo Building bounce.exe...
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hedefler](../build/targets.md)

@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdf2134b334c259a6543af279ee058b659cf21d6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 9eb3b70851cb5e51ef2ddc0e99347c81fe632b6d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210193"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726667"
 ---
 # <a name="cdatetimectrl-class"></a>CDateTimeCtrl sınıfı
 Bir tarih ve Saat Seçici denetiminin işlevselliğini kapsüller.  
@@ -192,7 +192,7 @@ BOOL GetDateTimePickerInfo(LPDATETIMEPICKERINFO pDateTimePickerInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pDateTimePickerInfo*|Bir işaretçi bir [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) yapısı geçerli tarih ve Saat Seçici denetiminin açıklamasını alır.<br /><br /> Bu yapı ayırma için çağıran sorumludur. Ancak, bu yöntem başlatır *cbSize* yapı üyesi.|  
+|*pDateTimePickerInfo*|[out] Bir işaretçi bir [DATETIMEPICKERINFO](/windows/desktop/api/commctrl/ns-commctrl-tagdatetimepickerinfo) yapısı geçerli tarih ve Saat Seçici denetiminin açıklamasını alır.<br /><br /> Bu yapı ayırma için çağıran sorumludur. Ancak, bu yöntem başlatır *cbSize* yapı üyesi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -347,7 +347,7 @@ BOOL GetIdealSize(LPSIZE psize) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *psize*|İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) denetimi için ideal boyutu içeren yapısı.|  
+|*psize*|[out] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) denetimi için ideal boyutu içeren yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri her zaman doğrudur.  
@@ -458,7 +458,7 @@ DWORD SetMonthCalStyle(DWORD dwStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwStyle*|Ay takvim denetimi stilleri bit düzeyinde birleşimi (veya) olan yeni aylık takvim denetimi stili. Daha fazla bilgi için [aylık takvim denetimi stilleri](/windows/desktop/Controls/month-calendar-control-styles).|  
+|*dwStyle*|[in] Ay takvim denetimi stilleri bit düzeyinde birleşimi (veya) olan yeni aylık takvim denetimi stili. Daha fazla bilgi için [aylık takvim denetimi stilleri](/windows/desktop/Controls/month-calendar-control-styles).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Açılan ay Takvim denetimi önceki stili.  

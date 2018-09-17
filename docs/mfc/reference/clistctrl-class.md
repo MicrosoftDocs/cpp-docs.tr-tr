@@ -274,12 +274,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 094cf61c2535ef40991d2ab6ab9a1bc4a9dff014
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f1e869fd70fb8f2d0b52d69dedb555c600fd390b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43684963"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726823"
 ---
 # <a name="clistctrl-class"></a>CListCtrl sınıfı
 "Her biri bir simge (bir görüntü listesinden) ve bir etiketten oluşan bir koleksiyonunu görüntüleyen öğeleri bir liste görünümü denetimi," işlevselliğini kapsüller.  
@@ -1276,8 +1276,8 @@ BOOL GetGroupInfoByIndex(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *İIndex*|Bir grubu sıfır tabanlı dizini.|  
-|[out] *pGroup*|İşaretçi bir [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) tarafından belirtilen grubu hakkında bilgi alır yapısı *İIndex* parametresi.<br /><br /> Üyelerini başlatma için çağıran sorumludur [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) yapısı. Ayarlama `cbSize` üye yapının boyutunu ve bayraklarını `mask` üyesi almak için gereken bilgileri belirtin.|  
+|*İIndex*|[in] Bir grubu sıfır tabanlı dizini.|  
+|*pGroup*|[out] İşaretçi bir [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) tarafından belirtilen grubu hakkında bilgi alır yapısı *İIndex* parametresi.<br /><br /> Üyelerini başlatma için çağıran sorumludur [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) yapısı. Ayarlama `cbSize` üye yapının boyutunu ve bayraklarını `mask` üyesi almak için gereken bilgileri belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1353,9 +1353,9 @@ BOOL GetGroupRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iGroupId*|Bir grubu belirtir.|  
-|[out içinde] *lpRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı tarafından belirtilen grubun dikdörtgen koordinatlarını alır *iGroupId*.|  
-|[in] *iCoords*|Dikdörtgen koordinatları alınacak belirtir. Şu değerlerden birini kullanın:<br /><br /> -LVGGR_GROUP - tüm genişletilmiş grubu koordinatları (varsayılan).<br />-LVGGR_HEADER - koordinatları yalnızca üst bilgisi (daraltılmış grubu).<br />-LVGGR_SUBSETLINK - yalnızca alt bağlantısı (biçimlendirme alt) düzenler.|  
+|*iGroupId*|[in] Bir grubu belirtir.|  
+|*lpRect*|[out içinde] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı tarafından belirtilen grubun dikdörtgen koordinatlarını alır *iGroupId*.|  
+|*iCoords*|[in] Dikdörtgen koordinatları alınacak belirtir. Şu değerlerden birini kullanın:<br /><br /> -LVGGR_GROUP - tüm genişletilmiş grubu koordinatları (varsayılan).<br />-LVGGR_HEADER - koordinatları yalnızca üst bilgisi (daraltılmış grubu).<br />-LVGGR_SUBSETLINK - yalnızca alt bağlantısı (biçimlendirme alt) düzenler.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1406,8 +1406,8 @@ UINT GetGroupState(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iGroupId*|Bir grubu sıfır tabanlı dizini.|  
-|[in] *dwMask*|Belirtilen grup için alınacak durum değeri belirten maskesi. Daha fazla bilgi için `mask` üyesi [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) yapısı.|  
+|*iGroupId*|[in] Bir grubu sıfır tabanlı dizini.|  
+|*dwMask*|[in] Belirtilen grup için alınacak durum değeri belirten maskesi. Daha fazla bilgi için `mask` üyesi [LVGROUP](/windows/desktop/api/commctrl/ns-commctrl-taglvgroup) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen grup ya da grubu bulunamazsa 0 için istenen durumu.  
@@ -1660,10 +1660,10 @@ BOOL GetItemIndexRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) üst öğenin alt yapısı.<br /><br /> Ayırma ve üyelerinin ayarlamak için çağıran sorumludur [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre NULL olamaz.|  
-|[in] *iColumn*|Denetim bir sütunun sıfır tabanlı dizini.|  
-|[in] *rectType*|İçin sınırlayıcı dikdörtgenini alınacağı liste görünüm alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - etiket ve simgeyi dahil olmak üzere tüm alt sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_ICON - sınırlayıcı dikdörtgenini simge veya alt küçük simgesini döndürür.<br /><br /> LVIR_LABEL - alt metnin dikdörtgen döndürür.|  
-|[out] *pRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı alt dikdörtgen hakkındaki bilgileri alır.<br /><br /> Çağıranın sorumlu olan [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu parametre NULL olamaz.|  
+|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) üst öğenin alt yapısı.<br /><br /> Ayırma ve üyelerinin ayarlamak için çağıran sorumludur [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) yapısı. Bu parametre NULL olamaz.|  
+|*iColumn*|[in] Denetim bir sütunun sıfır tabanlı dizini.|  
+|*rectType*|[in] İçin sınırlayıcı dikdörtgenini alınacağı liste görünüm alt kısmı. Aşağıdaki değerlerden birini belirtin:<br /><br /> LVIR_BOUNDS - etiket ve simgeyi dahil olmak üzere tüm alt sınırlayıcı dikdörtgenini döndürür.<br /><br /> LVIR_ICON - sınırlayıcı dikdörtgenini simge veya alt küçük simgesini döndürür.<br /><br /> LVIR_LABEL - alt metnin dikdörtgen döndürür.|  
+|*pRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı alt dikdörtgen hakkındaki bilgileri alır.<br /><br /> Çağıranın sorumlu olan [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu parametre NULL olamaz.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1821,9 +1821,9 @@ BOOL GetItemSpacing(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *fSmall*|Öğe aralığı almak istediğiniz görünümü. TRUE, küçük simge görünümünde veya simge görünümü için FALSE belirtir.|  
-|[out] *pnHorzSpacing*|Öğeleri arasındaki yatay boşluk içeriyor.|  
-|[out] *pnVertSpacing*|Dikey aralığı öğeleri arasında içerir.|  
+|*fSmall*|[in] Öğe aralığı almak istediğiniz görünümü. TRUE, küçük simge görünümünde veya simge görünümü için FALSE belirtir.|  
+|*pnHorzSpacing*|[out] Öğeleri arasındaki yatay boşluk içeriyor.|  
+|*pnVertSpacing*|[out] Dikey aralığı öğeleri arasında içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1944,8 +1944,8 @@ BOOL GetNextItemIndex(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out içinde] *pItemIndex*|İşaretçi [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) arama başladığı öğenin açıkladığı yapısı veya bayrak eşleşen ilk öğeyi bulmak için -1 *nFlags* parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` arama tarafından bulunan öğe yapısını açıklar.|  
-|[in] *nFlags*|Bitsel bir birleşimi (veya) aramanın nasıl yapılacağını belirten bayrak.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağımlı olabilir ya da hedef öğenin fiziksel konumu göreli öğesi tarafından belirtilen *pItemIndex* parametresi. Daha fazla bilgi için *bayrakları* parametresinde [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) ileti.|  
+|*pItemIndex*|[out içinde] İşaretçi [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) arama başladığı öğenin açıkladığı yapısı veya bayrak eşleşen ilk öğeyi bulmak için -1 *nFlags* parametresi.<br /><br /> Bu yöntem başarılı olursa `LVITEMINDEX` arama tarafından bulunan öğe yapısını açıklar.|  
+|*nFlags*|[in] Bitsel bir birleşimi (veya) aramanın nasıl yapılacağını belirten bayrak.<br /><br /> Arama dizini, durumu veya hedef öğenin görünümünü bağımlı olabilir ya da hedef öğenin fiziksel konumu göreli öğesi tarafından belirtilen *pItemIndex* parametresi. Daha fazla bilgi için *bayrakları* parametresinde [LVM_GETNEXTITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb761059) ileti.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -2647,7 +2647,7 @@ BOOL IsItemVisible(int index) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dizini*|Geçerli liste görünümü denetimi içindeki bir öğenin sıfır tabanlı dizini.|  
+|*Dizin*|[in] Geçerli liste görünümü denetimi içindeki bir öğenin sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe görünür; Aksi takdirde FALSE ise TRUE.  
@@ -2666,7 +2666,7 @@ UINT MapIDToIndex(UINT id) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *kimliği*|Öğeyi benzersiz kimliği.|  
+|*id*|[in] Öğeyi benzersiz kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli dizin için belirtilen kimliği  
@@ -2689,7 +2689,7 @@ UINT MapIndexToID(UINT index) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dizini*|Bir öğenin sıfır tabanlı dizini.|  
+|*Dizin*|[in] Bir öğenin sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe için benzersiz bir kimliği.  
@@ -2773,11 +2773,11 @@ void MoveItemToGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *idItemFrom*  
- Taşınacak öğenin dizini.  
+*idItemFrom*<br/>
+[in] Taşınacak öğenin dizini.  
   
- [in] *idGroupTo*  
- Öğe grubu tanıtıcısı taşınır.  
+*idGroupTo*<br/>
+[in] Öğe grubu tanıtıcısı taşınır.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -3496,9 +3496,9 @@ BOOL SetItemIndexState(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pItemIndex*|İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyelerini ayarlamak için çağıran sorumludur.|  
-|[in] *dwState*|Öğe için ayarlanacak durumu Bitsel bir birleşimi olan [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states). Sıfırlama için sıfır veya bir ayarlamak için bir durum belirtin.|  
-|[in] *dwMask*|Tarafından belirtilen durumunun geçerli bit maskesi *dwState* parametresi. Bit düzeyinde birleşimi (veya) belirtin [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states).|  
+|*pItemIndex*|[in] İşaretçi bir [LVITEMINDEX](https://msdn.microsoft.com/library/windows/desktop/bb774762) öğeyi tanımlayan yapısı. Bu yapı ayırma ve üyelerini ayarlamak için çağıran sorumludur.|  
+|*dwState*|[in] Öğe için ayarlanacak durumu Bitsel bir birleşimi olan [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states). Sıfırlama için sıfır veya bir ayarlamak için bir durum belirtin.|  
+|*dwMask*|[in] Tarafından belirtilen durumunun geçerli bit maskesi *dwState* parametresi. Bit düzeyinde birleşimi (veya) belirtin [liste görünümü öğesi durumları](/windows/desktop/Controls/list-view-item-states).|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -3838,13 +3838,13 @@ BOOL SortItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pfnCompare*  
- Uygulama tanımlı karşılaştırma işlevi adresi.  
+*pfnCompare*<br/>
+[in] Uygulama tanımlı karşılaştırma işlevi adresi.  
   
  Sıralama işlemi iki liste öğelerin göreli sırasını her durumda belirlenecek karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik bir üye ya da herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.  
   
- [in] *dwData*  
- Karşılaştırma işlevine geçirilen uygulama tanımlı değer.  
+*dwData*<br/>
+[in] Karşılaştırma işlevine geçirilen uygulama tanımlı değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise başarılı; yöntemi Aksi durumda FALSE.  
@@ -3899,8 +3899,8 @@ BOOL SortItemsEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pfnCompare*|Uygulama tanımlı karşılaştırma işlevi adresi.<br /><br /> Sıralama işlemi iki liste öğelerin göreli sırasını her durumda belirlenecek karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik bir üye ya da herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.|  
-|[in] *dwData*|Karşılaştırma işlevine geçirilen uygulama tanımlı değer.|  
+|*pfnCompare*|[in] Uygulama tanımlı karşılaştırma işlevi adresi.<br /><br /> Sıralama işlemi iki liste öğelerin göreli sırasını her durumda belirlenecek karşılaştırma işlevi çağırır. Karşılaştırma işlevi, bir sınıfın statik bir üye ya da herhangi bir sınıf üyesi olmayan tek başına bir işlev olmalıdır.|  
+|*dwData*|[in] Karşılaştırma işlevine geçirilen uygulama tanımlı değer.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

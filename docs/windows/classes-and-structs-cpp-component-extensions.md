@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e29b141ff89a37cee59f55624d7fecadbe6acc4c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 04a632e657b57519d02c013d9c03e558b9aec8e1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215876"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726628"
 ---
 # <a name="classes-and-structs--c-component-extensions"></a>Sınıflar ve Yapılar (C++ Bileşen Uzantıları)
 
@@ -46,20 +46,20 @@ class_accessvalue structnamemodifier :  inherit_accessbase_type {};
 
 ### <a name="parameters"></a>Parametreler
 
-*class_access* (isteğe bağlı)  
-Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.
+*class_access*  
+(İsteğe bağlı) Sınıfın veya yapının derleme dışından erişilebilirlik. Olası değerler **genel** ve **özel** (**özel** varsayılandır). İç içe geçmiş sınıflar veya yapılar sahip bir *class_access* tanımlayıcısı.
 
 *Adı*  
 Sınıfın veya yapının adı.
 
-*değiştiricisi* (isteğe bağlı)  
-[soyut](../windows/abstract-cpp-component-extensions.md) ve [korumalı](../windows/sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.
+*Değiştiricisi*  
+(İsteğe bağlı) [soyut](../windows/abstract-cpp-component-extensions.md) ve [korumalı](../windows/sealed-cpp-component-extensions.md) geçerli değiştiricilerdir.
 
-*inherit_access* (isteğe bağlı)  
-Erişilebilirliğini *taban_türü*. Yalnızca izin verilen erişilebilirlik, **genel** (**genel** varsayılandır).
+*inherit_access*  
+(İsteğe bağlı) Erişilebilirliğini *taban_türü*. Yalnızca izin verilen erişilebilirlik, **genel** (**genel** varsayılandır).
 
-*taban_türü* (isteğe bağlı)  
-Bir taban türü. Ancak, bir değer türü temel tür olarak davranamaz.
+*taban_türü*  
+(İsteğe bağlı) Bir taban türü. Ancak, bir değer türü temel tür olarak davranamaz.
 
 Daha fazla bilgi için bu parametre Windows çalışma zamanı ve ortak dil Runtimesections dile özgü açıklamaları bakın.
 
@@ -97,8 +97,8 @@ Bkz: [başvuru sınıfları ve yapıları](../cppcx/ref-classes-and-structs-c-cx
 
 ### <a name="parameters"></a>Parametreler
 
-*taban_türü* (isteğe bağlı)  
-Bir taban türü. A **başvuru sınıfı** veya **ref struct** sıfır veya daha fazla arabirimi ve sıfır veya bir devralabilir **ref** türleri. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla ara birimden devralınabilir.
+*taban_türü*  
+(İsteğe bağlı) Bir taban türü. A **başvuru sınıfı** veya **ref struct** sıfır veya daha fazla arabirimi ve sıfır veya bir devralabilir **ref** türleri. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla ara birimden devralınabilir.
 
 Kullanarak bir nesne bildirdiğinizde **başvuru sınıfı** veya **ref struct** anahtar sözcükler, nesne tarafından erişildiğinde bir nesne için bir tanıtıcı; diğer bir deyişle, bir nesneye başvuru sayaç işaretçi. Bildirilmiş bir değişken kapsam dışına çıktığında, derleyici, temel alınan nesnede otomatik olarak siler. Nesne bir arama parametresi olarak kullanılan veya bir değişkende depolanan nesnesi için bir tanıtıcı gerçekten aktarılan veya depolanan.
 
@@ -116,8 +116,8 @@ Aşağıdaki tabloda gösterilen söz dizimi farklılıklarını **tüm çalış
 
 ### <a name="parameters"></a>Parametreler
 
-*taban_türü* (isteğe bağlı)  
-Bir taban türü. A **başvuru sınıfı** veya **ref struct** arabirimleri ve sıfır veya bir başvuru türlerinde birden fazla yönetilen ya da sıfırdan devralabilir. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla yönetilen Ara birimden devralınabilir.
+*taban_türü*  
+(İsteğe bağlı) Bir taban türü. A **başvuru sınıfı** veya **ref struct** arabirimleri ve sıfır veya bir başvuru türlerinde birden fazla yönetilen ya da sıfırdan devralabilir. A **değer sınıfının** veya **değeri yapı** yalnızca sıfır veya daha fazla yönetilen Ara birimden devralınabilir.
 
 **Başvuru sınıfı** ve **ref struct** anahtar sözcükleri yığında ayrılacak sınıf veya yapıda olduğundan derleyici söyleyin. Nesne bir arama parametresi olarak kullanılan veya bir değişkende depolanan nesnesine bir başvuru gerçekten aktarılan veya depolanan.
 

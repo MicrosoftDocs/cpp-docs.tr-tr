@@ -1,5 +1,5 @@
 ---
-title: "Yerelleştirilmiş MFC uygulamalarında kaynaklar: Uydu DLL'leri | Microsoft Docs"
+title: "MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri | Microsoft Docs"
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,44 +22,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0740f567f17c8d44069211274ab1a4c66da311c1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 888d0ce0e53fef45df868e0980953ffb763d8771
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369123"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726298"
 ---
 # <a name="localized-resources-in-mfc-applications-satellite-dlls"></a>MFC Uygulamalarında Yerelleştirilmiş Kaynaklar: Uydu DLL'leri
-MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, birden çok dil için yerelleştirilmiş uygulamaları oluşturmaya yardımcı olan bir özellik için gelişmiş destek sağlar. DLL uydu bir [yalnızca kaynak DLL](../build/creating-a-resource-only-dll.md) belirli bir dil için yerelleştirilmiş bir uygulamanın kaynaklar içeriyor. Uygulama çalışmaya başladığında, MFC yerelleştirilmiş kaynak ortamınız için en uygun otomatik olarak yükler. Örneğin, İngilizce dil kaynaklarla iki Uydu DLL'leri, biri, kaynaklarınızı ve diğer Almanca çevirisini içeren Fransızca çeviri içeren bir uygulama olabilir. Uygulamayı bir İngilizce dil sistemde çalıştırdığınızda İngilizce kaynaklarını kullanır. Fransızca sistemde, Fransızca kaynakları kullanır; Almanca sistemde, Almanca kaynakları kullanır.  
-  
- MFC DLL uydu yükleme girişimleri bir MFC uygulamasında yerelleştirilmiş kaynaklar desteklemek için belirli bir dil için kaynakları içeren yerelleştirilmiş. Uydu DLL'leri adlı *ApplicationNameXXX*.dll, burada *ApplicationName* .exe veya .dll MFC, kullanarak adıdır ve *XXX* dil için üç harfli kod Kaynakları (örneğin, 'ENU' veya 'DEU').  
-  
- MFC kaynak DLL'si her biri bulduğunda durdurma sırayla aşağıdaki diller için yüklemeyi dener:  
-  
-1. GetUserDefaultUILanguage() Win32 API'den döndürülen geçerli kullanıcının varsayılan kullanıcı Arabirimi dili.  
-  
-2.  Belirli bir alt dili olmadan geçerli kullanıcının varsayılan kullanıcı Arabirimi dilinde (yani, ÇÖZÜCÜ [Kanada İngilizce] trk [ABD olur İngilizce]).  
-  
-3.  GetSystemDefaultUILanguage() API'den döndürülen gibi sistemin varsayılan kullanıcı Arabirimi dili. Diğer platformlarda OS dili budur.  
-  
-4.  Sistemin varsayılan kullanıcı Arabirimi dili, belirli bir alt dili olmadan.  
-  
-5.  3 harfli kod loc sahte bir dille  
-  
- MFC herhangi bir Uydu DLL'leri bulamazsa, hangi kaynak uygulamada bulunan kullanır.  
-  
- Örnek olarak, bir uygulama LangExample.exe MFC kullanır ve bir birden çok kullanıcı arabirimi sistem üzerinde çalışan varsayın. Sistem kullanıcı Arabirimi dili trk [ABD olduğunu İngilizce] ve geçerli kullanıcının kullanıcı Arabirimi dili FRC [Kanada Fransızca] olarak ayarlayın. MFC aşağıdaki DLL'leri aşağıdaki sırayla arar:  
-  
-1.  LangExampleFRC.dll (kullanıcının kullanıcı Arabirimi dili).  
-  
-2.  LangExampleFRA.dll (Bu örnekte Fransızca (Fransa) alt dili olmadan kullanıcının kullanıcı Arabirimi dili.  
-  
-3.  LangExampleENU.dll (sistem UI Dili).  
-  
-4.  LangExampleLOC.dll.  
-  
- Bu DLL'ler hiçbiri bulunamazsa, MFC LangExample.exe'deki kaynakları kullanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'leri](../build/dlls-in-visual-cpp.md)   
- [TN057: MFC Bileşenlerini Yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)
+
+MFC sürüm 7.0 ve üzeri, Uydu DLL'leri, çoklu dillerde yerelleşmiş uygulamalar oluşturmaya yardım eden bir özellik için gelişmiş destek sağlar. Bir uydu DLL bir [yalnızca kaynak DLL](../build/creating-a-resource-only-dll.md) uygulama için belirli bir dil için yerelleştirilmiş kaynaklar içerir. Uygulama çalışmaya başladığında, MFC, ortamınız için en uygun yerelleştirilmiş kaynak otomatik olarak yükler. Örneğin, iki Uydu DLL'leri, Fransız bir çeviri kaynaklarınızı ve Almanca çevirisini içeren diğer içeren ile İngilizce dil kaynakları ile bir uygulama olabilir. Uygulamayı bir İngilizce sistemde çalıştırdığınızda, İngilizce kaynak kullanır. Fransız bir sistemde, Fransızca kaynakları kullanır; Almanca bir sistemde, Alman kaynakları kullanır.
+
+Bir MFC uygulamasında, bir uydu DLL yüklemeyi dener yerelleştirilmiş kaynakları desteklemek için kaynakları içeren belirli bir dil için yerelleştirilmiş. Uydu DLL'leri adlı *ApplicationNameXXX*.dll, burada *ApplicationName* .exe veya .dll, MFC kullanarak adıdır ve *XXX* üç harfli dil kodu Kaynakları (örneğin, 'Trk' veya 'DEU').
+
+MFC her biri bulduğunda durdurma sırasıyla aşağıdaki diller için ' % s'kaynak DLL'ini yükler dener:
+
+1. GetUserDefaultUILanguage() Win32 API öğesinden geri döndürülen şekilde geçerli kullanıcının varsayılan kullanıcı Arabirimi dili.
+
+1. Belirli bir alt dili olmadan geçerli kullanıcının varsayılan kullanıcı Arabirimi dilinde (yani ENC [Kanada İngilizce] [ABD trk olur İngilizce]).
+
+1. GetSystemDefaultUILanguage() API'den döndürülen sistemin varsayılan kullanıcı Arabirimi dili. Diğer platformlarda OS dili budur.
+
+1. Sistemin varsayılan kullanıcı Arabirimi dili, belirli bir alt dili olmadan.
+
+1. Loc 3 harfli kod ile sahte bir dil
+
+MFC herhangi bir Uydu DLL'leri bulamazsa, hangi kaynak uygulama içinde yer alan kullanır.
+
+Örneğin, uygulamanın LangExample.exe MFC kullanır ve bir birden çok kullanıcı arabirimi sistemi üzerinde çalışan varsayın. Sistem kullanıcı arabiriminde trk [ABD olan İngilizce] ve [Kanada Fransızcası] FRC için geçerli kullanıcının kullanıcı Arabirimi dilinde ayarlanır. MFC aşağıdaki DLL'leri şu sırayla arar:
+
+1. LangExampleFRC.dll (kullanıcı arabiriminde).
+
+1. LangExampleFRA.dll (kullanıcının kullanıcı Arabirimi dili Fransızca (Fransa) Bu örnekte alt dili olmadan.
+
+1. LangExampleENU.dll (sistem kullanıcı Arabirimi dilinde).
+
+1. LangExampleLOC.dll.
+
+Bu DLL'leri hiçbiri bulunursa, MFC LangExample.exe'deki kaynakları kullanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)<br/>
+[TN057: MFC Bileşenlerini Yerelleştirme](../mfc/tn057-localization-of-mfc-components.md)

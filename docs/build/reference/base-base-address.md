@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c43e01a1417710751bf0604e5365beaf143a293
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 1f6f287f98b542a3d8eb24f9cc2b5e725e27dceb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895220"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725978"
 ---
 # <a name="base-base-address"></a>/BASE (Temel Adres)
 
@@ -60,11 +60,11 @@ Komut satırında temel adresini belirtmek için başka bir temel adres bir yan�
 
 *Anahtar* alfasayısal karakterden oluşan bir dizedir ve büyük/küçük harfe duyarlı değildir. Bu genellikle bir DLL'nin adıdır, ancak olmaması. *Anahtarı* temel tarafından izlenen *adresi* C dili, onaltılık veya ondalık gösterim ve isteğe bağlı bir maksimum *boyutu*. Tüm üç bağımsız değişken, boşluk veya sekme tarafından ayrılır. Bağlayıcı, yalnızca bir uyarı verir belirtilen *boyutu* program tarafından gereken sanal adres alanı'dan küçük. A *yorum* noktalı virgül belirtilirse (**;**) ve aynı ya da ayrı bir satır üzerinde olabilir. Bağlayıcı satırın sonuna noktalı virgülden tüm metni yok sayar. Bu örnekte, böyle bir dosya parçası gösterilmiştir:
 
-```  
+```
 main   0x00010000    0x08000000    ; for PROJECT.exe
 one    0x28000000    0x00100000    ; for DLLONE.DLL
 two    0x28100000    0x00300000    ; for DLLTWO.DLL
-```  
+```
 
 Bu satırlar içeren dosyanın DLLS.txt çağrılırsa, bu bilgiler aşağıdaki örnekte komut geçerlidir:
 
@@ -88,5 +88,5 @@ Temel adresi ayarlamak için başka bir yolu kullanmaktır *temel* bağımsız d
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

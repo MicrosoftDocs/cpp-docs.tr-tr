@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6793cbb120b44456a880a47ffd114c346662376
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a3aee777cf7d003beb2d1f76d57bf029d358aba6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208891"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726797"
 ---
 # <a name="application-information-and-management"></a>Uygulama Bilgileri ve Yönetimi
 Tek bir uygulama yazdığınızda, oluşturduğunuz [CWinApp](../../mfc/reference/cwinapp-class.md)-türetilmiş bir nesneye. Bazen bu nesneden dışında hakkında bilgi edinmek isteyebilirsiniz `CWinApp`-türetilmiş bir nesneye. Veya diğer genel "mananger'a" nesnelere erişimi gerekebilir.
@@ -406,8 +406,8 @@ Verilen aralığında bir genişletilmiş çerçeve nesnesi olup olmadığını 
 BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Türetilen bir nesneye bir işaretçi `CWnd`.  
+*pWnd*<br/>
+[in] Türetilen bir nesneye bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen pencere bir genişletilmiş çerçeve nesnesi ise TRUE; Aksi durumda FALSE.  
@@ -442,8 +442,8 @@ Belirtilen pencere bir araç çubuğu nesnesi olup olmadığını belirler.
 BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);  
 ```
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Türetilen bir nesneye bir işaretçi `CWnd`.  
+*pWnd*<br/>
+[in] Türetilen bir nesneye bir işaretçi `CWnd`.  
    
 ### <a name="return-value"></a>Dönüş Değeri  
  Sağlanan penceresi araç çubuğu nesnesi ise TRUE; Aksi durumda FALSE.  
@@ -636,8 +636,8 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- TRUE, kayıt defteri bilgilerini HKCU düğüme yönlendirilir gösterir; FALSE, uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
+*bSistemlerde*<br/>
+[in] TRUE, kayıt defteri bilgilerini HKCU düğüme yönlendirilir gösterir; FALSE, uygulama varsayılan düğüme kayıt defteri bilgilerini yazar gösterir. Varsayılan düğüm **HKEY_CLASSES_ROOT** ( **HKCR**).  
   
 ### <a name="remarks"></a>Açıklamalar  
 

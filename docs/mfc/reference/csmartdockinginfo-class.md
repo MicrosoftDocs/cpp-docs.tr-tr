@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a900ab0e0307cd059aaeb6f4333ef6d28f98dad6
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: efd214e4368e122a800e51e9bd90cb72a6a4616b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849821"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725861"
 ---
 # <a name="csmartdockinginfo-class"></a>Csmartdockingınfo sınıfı
 Akıllı Yerleştirme işaretçilerinin görünümünü tanımlar.  
@@ -119,8 +119,8 @@ void CopyTo(CSmartDockingInfo& params);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *params*  
- Bir nesne türü `CSmartDockingInfo` geçerli akıllı yerleştirme parametreleri ile doldurulur.  
+*params*<br/>
+[out] Bir nesne türü `CSmartDockingInfo` geçerli akıllı yerleştirme parametreleri ile doldurulur.  
   
 ##  <a name="m_busethemecolorinshading"></a>  CSmartDockingInfo::m_bUseThemeColorInShading  
  Framework akıllı yerleştirme işaretçilerinin görüntülediğinde geçerli Tema rengi kullanılıp kullanılmayacağını belirtir.  

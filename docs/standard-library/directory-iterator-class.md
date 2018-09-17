@@ -35,12 +35,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_iterator::operator++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09970c0d3cf8771317c93670c0ec7f029e1ace2a
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: dd5fedb8869533755546089bdee903403f30dcea
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691594"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726381"
 ---
 # <a name="directoryiterator-class"></a>directory_iterator Sınıfı
 
@@ -112,7 +112,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
 Depolanan dosya adı yolu.
 
 *EC*<br/>
-Durum hata kodu. 
+Durum hata kodu.
 
 *directory_iterator*<br/>
 Depolanan nesne.

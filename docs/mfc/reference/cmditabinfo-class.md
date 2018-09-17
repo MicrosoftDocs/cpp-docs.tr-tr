@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37522cc2eaaa57abd5c3c7a0986532bb47d73f5e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 7cd0355c4d0ce203617729142e03860e9960190a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336461"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726615"
 ---
 # <a name="cmditabinfo-class"></a>Cmdıtabınfo sınıfı
 `CMDITabInfo` Sınıfı için parametreleri geçirmek için kullanılan [CMDIFrameWndEx::EnableMDITabbedGroups](../../mfc/reference/cmdiframewndex-class.md#enablemditabbedgroups) yöntemi. Sekmeli grupları MDI davranışını denetlemek için bu sınıfın üyelerini ayarlayın.  
@@ -235,8 +235,8 @@ void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ar*  
- A [CArchive sınıfı](../../mfc/reference/carchive-class.md) nesneyi serileştirmek için.  
+*ar*<br/>
+[in] A [CArchive sınıfı](../../mfc/reference/carchive-class.md) nesneyi serileştirmek için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md)   

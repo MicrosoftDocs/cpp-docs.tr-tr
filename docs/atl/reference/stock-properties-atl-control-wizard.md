@@ -14,29 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b84563c2576f4969acb4162bcaa92d6f62f97c72
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eb123f6ca46841b59d178bba88b97ca44b55f621
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767471"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725887"
 ---
 # <a name="stock-properties-atl-control-wizard"></a>Stok özellikleri, ATL denetimi Sihirbazı
 
 Sihirbazın bu sayfası denetimi için desteklenen stok özellikleri tanımlar. Varsayılan olarak, hiçbir özellik tanımlanır.
 
-**Desteklenmiyor**  
-Denetim için şu anda desteklenmeyen kullanılabilir özellikleri gösterir.
+- **Desteklenmiyor**
 
-**Desteklenen**  
-Denetim için şu anda desteklenen özellikleri gösterir.
+   Denetim için şu anda desteklenmeyen kullanılabilir özellikleri gösterir.
+
+- **Desteklenen**
+
+   Denetim için şu anda desteklenen özellikleri gösterir.
 
 |Aktarım düğmesi|Açıklama|
 |---------------------|-----------------|
 |**>**|Ekler **desteklenen** geçerli seçili özellik adı listesi **desteklenmiyor** listesi.|
 |**>>**|Ekler **desteklenen** bulunan tüm özellik adlarını listelemek **desteklenmiyor** listesi.|
-|**<**|Şu anda seçili özellik adı kaldırır **desteklenen** listesi.|
-|**<<**|Şu anda listelenen tüm özellik adlarını kaldırır **desteklenen** listesi.|
+|**\<**|Şu anda seçili özellik adı kaldırır **desteklenen** listesi.|
+|**\<\<**|Şu anda listelenen tüm özellik adlarını kaldırır **desteklenen** listesi.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

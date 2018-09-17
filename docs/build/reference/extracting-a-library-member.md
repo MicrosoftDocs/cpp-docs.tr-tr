@@ -21,21 +21,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0dc0dc67a6d9e4a3ff61aa3b82ac10b9eabcb94b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9207a77868b3257d09f0d9efe38e4765cb8f4906
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371248"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726524"
 ---
 # <a name="extracting-a-library-member"></a>Kitaplık Üyesini Ayıklama
-LIB var olan bir kitaplık üyesi bir kopyasını içeren bir nesne (.obj) dosyası oluşturmak için kullanabilirsiniz. Üye bir kopyasını ayıklamak için aşağıdaki sözdizimini kullanın:  
-  
-```  
-LIB library /EXTRACT:member /OUT:objectfile  
-```  
-  
- Bu komut adlı bir .obj dosyası oluşturur *objectfile* bir kopyasını içeren bir `member` , bir *Kitaplığı*. `member` Adı büyük küçük harfe duyarlı. Tek bir komut yalnızca bir üye ayıklayabilirsiniz. /OUT seçeneği gereklidir; Varsayılan çıkış adı yok. Bir dosya çağrıldıklarında *objectfile* belirtilen dizinde zaten var. (veya dizin yok ile belirtilmişse, geçerli dizin *objectfile*), ayıklanan *objectfile*varolan dosyanın yerini alır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB Başvurusu](../../build/reference/lib-reference.md)
+
+LIB, var olan bir kitaplık üyesi bir kopyasını içeren bir nesne (.obj) dosyası oluşturmak için kullanabilirsiniz. Üye bir kopyasını ayıklamak için aşağıdaki sözdizimini kullanın:
+
+```
+LIB library /EXTRACT:member /OUT:objectfile
+```
+
+Bu komut, adı verilen bir .obj dosyası oluşturur. *objectfile* bir kopyasını içeren bir `member` , bir *Kitaplığı*. `member` Adı küçük harfe duyarlıdır. Tek bir komutta yalnızca bir üye ayıklayabilirsiniz. / Out seçeneği gereklidir; Varsayılan çıkış adı yoktur. Bir dosya çağrılırsa *objectfile* belirtilen dizinde zaten var (veya dizin yok belirtilirse geçerli dizin *objectfile*), ayıklanan *objectfile*varolan dosyanın yerini alır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LIB Başvurusu](../../build/reference/lib-reference.md)

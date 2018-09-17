@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e24a86ead18cde836fd52df4e0c279f69b4c67a1
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: e2fe0b0523fb411b8ef4700a7dea7832c1cdfc52
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "43687941"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45726307"
 ---
 # <a name="loadlibrary-and-afxloadlibrary"></a>LoadLibrary ve AfxLoadLibrary
 
@@ -39,7 +39,7 @@ MFC uzantı DLL'leri yükleyen MFC uygulamaları için biz kullanmanızı öneri
 
 Windows, DLL'yi yükleyemezse işlem hatadan kurtarmayı dener. Örneğin, işlem hatası kullanıcıyı uyarır ve kullanıcıdan başka bir DLL yolu belirtin.
 
-> [!IMPORTANT]  
+> [!IMPORTANT]
 > DLL'lerin tam yolunu belirttiğinizden emin olun. Dosyalar yüklendiğinde geçerli dizin ilk aranır. Dosya yolunu nitelendirmezseniz, hedeflenen bir olmayan bir dosya yüklenebilir. Bunu önlemek için başka bir yolu kullanmaktır [/DEPENDENTLOADFLAG](../build/reference/dependentloadflag.md) bağlayıcı seçeneği.
 
 ## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
