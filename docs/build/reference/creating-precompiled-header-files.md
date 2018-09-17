@@ -19,11 +19,11 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 893fc8a88a4a0d28aa5b98cfc7bacffbe0556ee0
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 31d9708f203c3d79d4cf369583c75d348278d06a
+ms.sourcegitcommit: 6e479e33e8fd8e30ea32801edbff2e3415f31bf7
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
+ms.lasthandoff: 09/14/2018
 ms.locfileid: "32379217"
 ---
 # <a name="creating-precompiled-header-files"></a>Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma
