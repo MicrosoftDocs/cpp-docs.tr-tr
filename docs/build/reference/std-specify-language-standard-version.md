@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b3254d61295e0cfe0fc398e4aa2a2f2a926dbb1
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 80c501c74d0e36d7a1c564e107101782468708c3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130916"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709078"
 ---
 # <a name="std-specify-language-standard-version"></a>/ Std (dil standart sürümünü belirt)
 
@@ -46,27 +46,27 @@ Varsayılan **/Std: c ++ 14** seçeneği, Visual C++ derleyicisi tarafından uyg
 - [U8 karakter değişmez değerleri](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2014/n4267.html)
 
 Ek bilgi için hangi C ++ 14 ve C ++ 17 özellikleri üzerinde ne zaman etkin **/Std: c ++ 14** olduğundan belirtilen notları bkz [Visual C++ dil uyumluluğu](../../visual-cpp-language-conformance.md).
-  
-**/Std: c ++ 17** seçeneği, Visual C++ derleyicisi tarafından uygulanan C ++ 17 özellikleri kümesini sağlar. Bu seçenek, C ++ 17 sonra derleyici ve değiştirilen özellikler veya yeni sürümlerinde C++ standart çalışma taslak ve hata güncelleştirmeleri standart kitaplığı desteği devre dışı bırakır.  
-  
-**/Std: c ++ Son** seçenek en çok izlemek için Visual C++ tarafından uygulanan C++ dil ve kitaplığa özellikler kümesi sağlar, ayrıca C ++ 17 bulunmayan C ++ 20 çalışma taslak ve hata güncel C++ standart. Post almak için bu anahtarı kullanın-C ++ 17 dil özellikleri standart kitaplık ve derleyici tarafından desteklenir. Desteklenen Dil ve kitaplık özelliklerinin listesi için bkz: [Visual C++ için Yenilikler](../../what-s-new-for-visual-cpp-in-visual-studio.md). **/Std: c ++ Son** seçeneği tarafından korunan özellikler sağlamaz **/ Deneysel** geçin.  
-  
+
+**/Std: c ++ 17** seçeneği, Visual C++ derleyicisi tarafından uygulanan C ++ 17 özellikleri kümesini sağlar. Bu seçenek, C ++ 17 sonra derleyici ve değiştirilen özellikler veya yeni sürümlerinde C++ standart çalışma taslak ve hata güncelleştirmeleri standart kitaplığı desteği devre dışı bırakır.
+
+**/Std: c ++ Son** seçenek en çok izlemek için Visual C++ tarafından uygulanan C++ dil ve kitaplığa özellikler kümesi sağlar, ayrıca C ++ 17 bulunmayan C ++ 20 çalışma taslak ve hata güncel C++ standart. Post almak için bu anahtarı kullanın-C ++ 17 dil özellikleri standart kitaplık ve derleyici tarafından desteklenir. Desteklenen Dil ve kitaplık özelliklerinin listesi için bkz: [Visual C++ için Yenilikler](../../what-s-new-for-visual-cpp-in-visual-studio.md). **/Std: c ++ Son** seçeneği tarafından korunan özellikler sağlamaz **/ Deneysel** geçin.
+
 **/Std** seçeneği geçerli bir C++ derleme sırasında kullanarak algılanamıyor [ \_MSVC\_LANG](../../preprocessor/predefined-macros.md) önişlemci makrosu. Daha fazla bilgi için [Önişlemci makroları](../../preprocessor/predefined-macros.md).
 
 **/Std: c ++ 14** ve **/Std: c ++ Son** seçeneklerdir Visual C++ 2015 güncelleştirme 3'te sonraki sürümlerinde kullanılabilir. **/Std: c ++ 17** seçeneği olan Visual C++ 2017 sürüm 15.3 sonraki sürümlerinde kullanılabilir. Bazı C ++ 17 yukarıdaki standart belirtildiği gibi davranışı etkinleştirilir **/Std: c ++ 14** seçeneği yanı sıra, diğer tüm C ++ 17 özellikleri etkindir **/Std: c ++ 17**.
-  
+
 > [!NOTE]
-> Visual C++ Derleyici sürümü veya güncelleştirme düzeyine bağlı olarak bazı C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumlu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual C++ 2017 RTM Derleyici tam C ++ 14-uyumlu desteklemez `constexpr`, Aşama 2 adı arama veya ifade SFINAE. C++ dil uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz. [Visual C++ dil uyumluluğu](../../visual-cpp-language-conformance.md). 
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **yapılandırma özellikleri**, **C/C++**, **dil**.  
-  
-3.  İçinde **C++ dil standardı**, dil standardı açılır denetimden desteklemek ve ardından seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
-  
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)   
+> Visual C++ Derleyici sürümü veya güncelleştirme düzeyine bağlı olarak bazı C ++ 14 veya C ++ 17 özellikleri değil tam olarak uygulanabilir veya tam olarak belirttiğiniz zaman uyumlu **/Std: c ++ 14** veya **/Std: c ++ 17** seçenekleri. Örneğin, Visual C++ 2017 RTM Derleyici tam C ++ 14-uyumlu desteklemez `constexpr`, Aşama 2 adı arama veya ifade SFINAE. C++ dil uyumluluğu Visual C++ sürümü tarafından genel bakış için bkz. [Visual C++ dil uyumluluğu](../../visual-cpp-language-conformance.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri**, **C/C++**, **dil**.
+
+1. İçinde **C++ dil standardı**, dil standardı açılır denetimden desteklemek ve ardından seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

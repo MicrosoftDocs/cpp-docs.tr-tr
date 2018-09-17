@@ -18,17 +18,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 602cfb415c17c9e57d9fc1e932777cd1929e5f40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee14f187545e09bbdca81f760b85e771fba3936d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331403"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703917"
 ---
 # <a name="interlockedaddlargestatistic"></a>_InterlockedAddLargeStatistic
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- İlk işleneni bir 64-bit değeri olduğu ınterlocked ek gerçekleştirir.  
+ İlk işleneni bir 64-bit değeri olduğu bir birbirine kenetlenmiş ek gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,14 +40,14 @@ long _InterlockedAddLargeStatistic(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `Addend`  
- İlk işlenen ekleme işlemi için bir işaretçi. İşaret değer eklenmesi sonucu değiştirilir.  
+*Formülündeki toplanan*<br/>
+[out içinde] Ekleme işlemi için ilk işlenen bir işaretçi. İşaret ettiği değer toplamın sonucunu tarafından değiştirilir.  
   
- [in] `Value`  
- İkinci işlenen; ilk işlenen eklenecek değer.  
+*Değer*<br/>
+[in] İkinci işlenenin; ilk işleneni eklenecek değer.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- İkinci işlenen değeri.  
+ İkinci işlenenin değeri.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -55,14 +55,14 @@ long _InterlockedAddLargeStatistic(
 |---------------|------------------|  
 |`_InterlockedAddLargeStatistic`|x86|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- İki kilitli yönergeleri ayrı olarak uygulanan olduğundan bu iç atomik değil. Başka bir iş parçacığında bu yürütme sırasında iç oluşur atomik bir 64-bit okuma okunan tutarsız bir değerinde neden olabilir.  
+ Kilitli yönergeleri iki ayrı olarak uygulanan çünkü bu iç atomik değildir. Bu yürütme sırasında başka bir iş parçacığında içsel oluşan atomik bir 64-bit okuma okunan tutarsız bir değeri neden olabilir.  
   
- Bu işlev bir okuma-yazma engelle davranır. Daha fazla bilgi için bkz: [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).  
+ Bu işlev, bir okuma-yazma engel davranır. Daha fazla bilgi için [_ReadWriteBarrier](../intrinsics/readwritebarrier.md).  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

@@ -19,17 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72597007922e78ab9b83687cb5b80bd6ecef7d01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a1c6b21ded6814492557ced792772508add06e53
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338201"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712854"
 ---
 # <a name="mminsertsi64-mminsertisi64"></a>_mm_insert_si64, _mm_inserti_si64
-**Microsoft özel**  
+
+**Microsoft'a özgü**  
   
- Oluşturur `insertq` BITS, ikinci işlenen kendi ilk işlenen eklemek için yönerge.  
+Oluşturur `insertq` BITS ikinci işleneniyle ilk işleneni eklemek için yönerge.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -47,20 +48,20 @@ __m128i _mm_inserti_si64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Source1`  
- Kendi alt 64 alana eklenecek olan BITS giriş verilerini 128-bit alanıyla.  
+*Kaynak1*<br/>
+[in] 128-bit alanı, daha düşük bir alan eklenecek olan 64bitový giriş verileri.  
   
- [in]  `Source2`  
- Düşük bit'leri eklenecek veri 128-bit alanıyla.  İçin `_mm_insert_si64`, ayrıca bir alan tanımlayıcısı yüksek bit cinsinden içerir.  
+*Kaynak2*<br/>
+[in] 128-bit alanı ile düşük bit'leri eklenecek veri.  İçin `_mm_insert_si64`, ayrıca bir alan tanımlayıcısı, yüksek bit içerir.  
   
- [in]  `Length`  
- Eklenecek alanın uzunluğu belirten tamsayı sabiti.  
+*Uzunluğu*<br/>
+[in] Eklemek için alan uzunluğunu belirten bir tamsayı sabiti.  
   
- [in]  `Index`  
- En az önemli bit veri eklenecek olan alanın dizinini belirten bir tamsayı sabiti.  
+*Index*<br/>
+[in] Alanın veri eklenecek olan en az önemli bite dizinini belirten bir tamsayı sabiti.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Daha düşük olan 64 bit içeren özgün düşük 64 bit düzeyi 128-bit alan `Source1` belirtilen bit alanıyla yerini tarafından düşük bit `Source2`. Dönüş değeri üst 64 bit tanımlanmamış.  
+ Daha düşük olan 64 bit içeren özgün düşük 64 bit bir 128-bit alanı `Source1` düşük bitleri tarafından belirtilen bit alanı ile değiştirilen `Source2`. Üst 64 bit geri dönüş değeri tanımsızdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -69,16 +70,16 @@ __m128i _mm_inserti_si64(
 |`_mm_insert_si64`|SSE4a|  
 |`_mm_inserti_si64`|SSE4a|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç oluşturur `insertq` bitten eklemek için yönerge `Source2` içine `Source1`. İç bu iki sürümü vardır: `_mm_inserti_si64`, hemen sürümü ve `_mm_insert_si64` hemen olmayan adrestir.  Her sürümün belirtilen uzunlukta bir bit alanı kaynak2 ayıklar ve kaynak1 ekler.  Ayıklanan kaynak2 en az önemli bitleri bittir.  Bu BITS eklenecek olan alan kaynak1 uzunluğu ve en az önemli bit dizini tarafından tanımlanır.  Dizin ve uzunluk değerler mod 64 alınır, böylece -1 ile 127 63 yorumlanır. (Sınırlı) bit dizin ve (sınırlı) alan uzunluğu toplamı 64'den büyükse, sonuçları tanımlanmamış. Alan uzunluğu için sıfır değeri 64 yorumlanır.  Alan uzunluğu ve bit dizini hem sıfır, BITS 63:0 varsa `Source2` eklenir `Source1`.  Alan uzunluğu sıfır ancak bit dizin sıfır değilse, sonuçları tanımlanmamış.  
+ Bu iç oluşturur `insertq` bitten eklemek için talimat `Source2` içine `Source1`. İç bu iki sürümü vardır: `_mm_inserti_si64`, hemen sürümü ve `_mm_insert_si64` hemen olmayan bir sertifikadır.  Her sürüm kaynak2 belirtilen uzunlukta bir bit alanı ayıklar ve kaynak1 ekler.  Ayıklanan kaynak2 en az önemli bitlerini bittir.  Bu bit eklenecek olan alan kaynak1, en az önemli bit dizinini ve uzunluğu ile tanımlanır.  Değerlerin dizinini ve uzunluğu 64 mod alınır, böylece hem -1 ile 127 63 yorumlanır. (Daraltılmış) bit dizini ve (daraltılmış) alan uzunluğu 64 ' büyükse, sonuçlar tanımsızdır. Alan uzunluğu sıfır değerini 64 yorumlanır.  Alan uzunluğu ve bit dizini iki sıfır, BITS 63:0 varsa `Source2` eklendiği `Source1`.  Alan uzunluğu sıfır ancak bit dizin sıfır olmayan, sonuçlar tanımsızdır.  
   
- _Mm_insert_si64 için bir çağrı alan uzunluğu BITS 77:72 kaynak2 ve BITS 69:64 dizininde bulunur.  
+ Alan uzunluğu _mm_insert_si64 çağrısı içinde BITS 77:72 kaynak2 ve BITS 69:64 dizininde yer alır.  
   
- Çağırırsanız `_mm_inserti_si64` derleyici tamsayı sabitleri olmasını belirleyemiyor bağımsız değişkenlerle derleyici bu değerleri XMM yazmaç paketlemek için ve çağırmak için kodu oluşturur. `_mm_insert_si64`.  
+ Eğer `_mm_inserti_si64` derleyici tamsayı sabitleri olmasını belirlenemiyor bağımsız değişkenleri ile derleyici bu değerleri bir XMM yazmacına paketi ve çağırmak için kod oluşturur. `_mm_insert_si64`.  
   
- Donanım desteğini belirlemek için `insertq` yönerge çağrısı `__cpuid` ile iç `InfoType=0x80000001` ve bit 6 denetleyin `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Kullanan kodu bu iç desteklemediği donanımda çalıştırırsanız `insertq` yönerge, sonuçlar tahmin edilemez.  
+ İçin donanım desteği belirlemek için `insertq` yönerge çağrı `__cpuid` ile iç `InfoType=0x80000001` ve 6 bit `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `insertq` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
 ## <a name="example"></a>Örnek  
   
@@ -124,8 +125,9 @@ result2 = 0xfffffffff3210fff
 result3 = 0xfffffffff3210fff  
 ```  
   
-**SON Microsoft özel**  
- Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**  
+
+Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_mm_extract_si64, _mm_extracti_si64](../intrinsics/mm-extract-si64-mm-extracti-si64.md)   

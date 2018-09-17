@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 097be395b26935b1c889a5ed542da3f544501ceb
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4ab6941e891d75e06aaea1ca492a3c64e509b0f7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465925"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711678"
 ---
 # <a name="writecr4"></a>__writecr4
 **Microsoft'a özgü**  
@@ -37,8 +37,8 @@ void writecr4(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Data`  
- CR4 kasaya yazılacak değer.  
+*Veri*<br/>
+[in] CR4 kasaya yazılacak değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

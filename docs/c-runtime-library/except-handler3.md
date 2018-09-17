@@ -29,15 +29,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e8253db3ce5a1ec60001bb32b241bfebe000502
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 664de5ad25fcce2bf744fb9365542d63f3d91e51
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389413"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699908"
 ---
 # <a name="excepthandler3"></a>_except_handler3
-İç CRT işlevi. Geçerli özel durumu işlemek için uygun özel durum işleyicisi bulmak için bir framework tarafından kullanıldı.  
+İç CRT işlevi. Geçerli özel durumu işlemek için uygun özel durum işleyicisi bulmak için framework tarafından kullanılır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,24 +50,25 @@ int _except_handler3(
 );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [in] `exception_record`  
- Bir özel durum hakkında bilgi sağlar.  
+#### <a name="parameters"></a>Parametreler
+
+*exceptıon_record*<br/>
+[in] Özel durum hakkında bilgi sağlar.  
   
- [in] `registration`  
- Hangi kapsam tablo gösterir kaydı, özel durum işleyici bulmak için kullanılmalıdır.  
+*Kayıt*<br/>
+[in] Özel durum işleyicisi bulmak için kapsam tablo belirten kayıt kullanılmalıdır.  
   
- [in] `context`  
- Ayrılmış.  
+*Bağlam*<br/>
+[in] Ayrılmış.  
   
- [in] `dispatcher`  
- Ayrılmış.  
+*Dağıtıcı*<br/>
+[in] Ayrılmış.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Bir özel durum kapatıldığında, döndürür `DISPOSITION_DISMISS`. Kapsülleyerek özel durum işleyicileri için özel bir düzey yukarı iletilmesi gereken ise döndürür `DISPOSITION_CONTINUE_SEARCH`.  
+ Bir özel durum oluşturmayabilir, döndürür `DISPOSITION_DISMISS`. Özel durum bir düzey yukarı kapsülleyerek özel durum işleyicilerine geçirilmelidir döndürür `DISPOSITION_CONTINUE_SEARCH`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yöntem uygun özel durum işleyicisi bulursa, işleyicinin özel durum geçirir. Bu durumda, bu yöntem adlı kodu döndürmüyor ve dönüş değeri önemli değildir.  
+ Bu yöntemin uygun özel durum işleyicisi bulunursa, özel durum işleyicisine geçirir. Bu durumda, bu yöntemi çağıran koda döndürmüyor ve dönüş değeri önemli değildir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fbabd502ca6d9d81c569831f9dcb0b344523bb3e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a6313bcf0a4acfaa705cb4718570dd49374530b4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215334"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707537"
 ---
 # <a name="cmfccolorbutton-class"></a>CMFCColorButton sınıfı
 `CMFCColorButton` Ve [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) sınıfları birlikte bir renk seçici denetimini uygulamak için kullanılır.  
@@ -159,14 +159,14 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Otomatik düğmenin metni belirtir.  
+*lpszLabel*<br/>
+[in] Otomatik düğmenin metni belirtir.  
   
- [in] *colorAutomatic*  
- Otomatik düğmenin varsayılan rengini belirten bir RGB değeri.  
+*colorAutomatic*<br/>
+[in] Otomatik düğmenin varsayılan rengini belirten bir RGB değeri.  
   
- [in] *bSistemlerde*  
- Otomatik düğmenin etkin mi yoksa devre dışı mı olduğunu belirtir.  
+*bSistemlerde*<br/>
+[in] Otomatik düğmenin etkin mi yoksa devre dışı mı olduğunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -181,14 +181,14 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Düğmenin metni belirtir.  
+*lpszLabel*<br/>
+[in] Düğmenin metni belirtir.  
   
- [in] *bAltColorDlg*  
- Belirtir olup olmadığını [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu veya sistem renk iletişim kutusu açılır kullanıcı düğmeyi tıkladığında.  
+*bAltColorDlg*<br/>
+[in] Belirtir olup olmadığını [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu veya sistem renk iletişim kutusu açılır kullanıcı düğmeyi tıkladığında.  
   
- [in] *bSistemlerde*  
- "Diğer" düğmesi etkin mi yoksa devre dışı mı olduğunu belirtir.  
+*bSistemlerde*<br/>
+[in] "Diğer" düğmesi etkin mi yoksa devre dışı mı olduğunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Renk iletişim kutusu görüntülemek için "diğer" düğmesine tıklayın. Varsa *bAltColorDlg* parametredir TRUE, [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md) görüntülenir; Aksi takdirde, sistem renk iletişim kutusu görüntülenir.  
@@ -249,14 +249,14 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Düğme görüntüsü oluşturmak için kullanılan cihaz bağlamı işaret eder.  
+*pDC*<br/>
+[in] Düğme görüntüsü oluşturmak için kullanılan cihaz bağlamı işaret eder.  
   
- [in] *dikdörtgen*  
- Düğme sınırların bir dikdörtgen.  
+*Rect*<br/>
+[in] Düğme sınırların bir dikdörtgen.  
   
- [in] *uiState*  
- Düğmenin görsel durum belirtir.  
+*uiState*<br/>
+[in] Düğmenin görsel durum belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İşleme sürecini özelleştirmek için bu yöntemi yok sayın.  
@@ -272,14 +272,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- İşaret kenarlık çizmek için kullanılan bir cihaz bağlamı.  
+*pDC*<br/>
+[in] İşaret kenarlık çizmek için kullanılan bir cihaz bağlamı.  
   
- [in] *rectClient*  
- Tarafından belirtilen cihaz bağlamında bir dikdörtgen *pDC* düğmesinin çizilmesi sınırlarını tanımlar parametresi.  
+*rectClient*<br/>
+[in] Tarafından belirtilen cihaz bağlamında bir dikdörtgen *pDC* düğmesinin çizilmesi sınırlarını tanımlar parametresi.  
   
- [in] *uiState*  
- Düğmenin görsel durum belirtir.  
+*uiState*<br/>
+[in] Düğmenin görsel durum belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev, renk düğmenin kenarlık görünümünü özelleştirmek için geçersiz kılın.  
@@ -294,11 +294,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Odak dikdörtgen çizmek için kullanılan bir cihaz bağlamı işaret eder.  
+*pDC*<br/>
+[in] Odak dikdörtgen çizmek için kullanılan bir cihaz bağlamı işaret eder.  
   
- [in] *rectClient*  
- Tarafından belirtilen cihaz bağlamında bir dikdörtgen *pDC* düğmenin sınırlarını tanımlar parametresi.  
+*rectClient*<br/>
+[in] Tarafından belirtilen cihaz bağlamında bir dikdörtgen *pDC* düğmenin sınırlarını tanımlar parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Odak dikdörtgenini görünümünü özelleştirmek için bu yöntemi yok sayın.  
@@ -323,7 +323,7 @@ void RebuildPalette(CPalette* pPal);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pPal*|Bir mantıksal paletini veya NULL bir işaretçi. NULL ise, varsayılan sistem paleti kullanılır.|  
+|*pPal*|[in] Bir mantıksal paletini veya NULL bir işaretçi. NULL ise, varsayılan sistem paleti kullanılır.|  
   
 ##  <a name="setcolor"></a>  CMFCColorButton::SetColor  
  Düğmenin rengini belirtir.  
@@ -333,8 +333,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Bir RGB değeri.  
+*Renk*<br/>
+[in] Bir RGB değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -348,11 +348,11 @@ static void SetColorName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Renk RGB değeri.  
+*Renk*<br/>
+[in] Renk RGB değeri.  
   
- [in] *strName*  
- Renk adı.  
+*strName*<br/>
+[in] Renk adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Renk adlarının listesi, uygulama başına geneldir. Sonuç olarak, bu yöntem parametrelerini aktarır [CMFCColorBar::SetColorName](../../mfc/reference/cmfccolorbar-class.md#setcolorname).  
@@ -365,8 +365,8 @@ void SetColumnsNumber(int nColumns);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nColumns*  
- Sütun sayısını belirtir.  
+*nColumns*<br/>
+[in] Sütun sayısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcının, önceden tanımlanmış renkleri tablosu görüntüler bir açılan renk çubuğu bir renk seçebilirsiniz. Tablodaki sütun sayısını tanımlamak için bu yöntemi kullanın.  
@@ -381,11 +381,11 @@ void SetDocumentColors(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Belge renkleri kümesiyle görüntülenecek etiketi belirtir.  
+*lpszLabel*<br/>
+[in] Belge renkleri kümesiyle görüntülenecek etiketi belirtir.  
   
- [in] *lstColors*  
- RGB değerleri listesi başvuru.  
+*lstColors*<br/>
+[in] RGB değerleri listesi başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  A `CMFCColorButton` nesne tutar aktarılır RGB değerleri listesi bir [CMFCColorBar sınıfı](../../mfc/reference/cmfccolorbar-class.md) nesne. Renk Çubuğu görüntülendiğinde, bu renklerin olan etiketi tarafından belirtilen özel bir bölümü gösterilir *lpszLabel* parametresi.  
@@ -398,8 +398,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pPalette*  
- Renk paleti işaretçisi.  
+*pPalette*<br/>
+[in] Renk paleti işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -411,8 +411,8 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bCalcOnly*  
- Sıfır olmayan, yeni düğme denetiminin boyutunu hesaplanır ancak gerçek boyutu değiştirilmez.  
+*bCalcOnly*<br/>
+[in] Sıfır olmayan, yeni düğme denetiminin boyutunu hesaplanır ancak gerçek boyutu değiştirilmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CSize` yeni bir düğme denetiminin boyutunu belirten bir nesne.  
@@ -427,8 +427,8 @@ virtual void UpdateColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Kullanıcının seçtiği bir renk.  
+*Renk*<br/>
+[in] Kullanıcının seçtiği bir renk.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `UpdateColor` İşlevi şu anda seçili düğmenin rengini değiştirir ve kendi üst WM_COMMAND ileti ile BN_CLICKED standart bildirim göndererek size bildirir. Kullanım [CMFCColorButton::GetColor](#getcolor) seçilen rengin almak için yöntemi.  

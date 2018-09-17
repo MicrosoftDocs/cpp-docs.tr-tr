@@ -150,12 +150,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd7ebc32fa76165e35aa3ea23cf3acda61b80189
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 411d787f4ab021abc46bd0b02c5f7b476c0e9c21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466011"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710833"
 ---
 # <a name="cmfcvisualmanagerwindows-class"></a>CMFCVisualManagerWindows sınıfı
 `CMFCVisualManagerWindows` Kullanıcı bir Windows XP veya Vista teması seçtiğinde Microsoft Windows XP veya Microsoft Vista görünümünü taklit eder.  
@@ -313,10 +313,10 @@ virtual BOOL DrawComboBorderWinXP(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bDevre Dışı*  
- [in] *bIsDropped*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bDevre Dışı*<br/>
+[in] [in] *bIsDropped*  
  [in] *bIsHighlighted*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -336,10 +336,10 @@ virtual BOOL DrawComboDropButtonWinXP(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bDevre Dışı*  
- [in] *bIsDropped*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bDevre Dışı*<br/>
+[in] [in] *bIsDropped*  
  [in] *bIsHighlighted*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -358,10 +358,10 @@ virtual BOOL DrawPushButtonWinXP(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pButton*  
- [in] *uiState*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pButton*<br/>
+[in] [in] *uiState*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -435,8 +435,8 @@ virtual COLORREF GetToolbarButtonTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- [in] *durumu*  
+*pButton*<br/>
+[in] [in] *durumu*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -536,10 +536,10 @@ virtual void OnDrawBarGripper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectGripper*  
- [in] *bHorz*  
- [in] *pBar*  
+*pDC*<br/>
+[in] [in] *rectGripper*  
+*bHorz*<br/>
+[in] [in] *pBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -556,10 +556,10 @@ virtual BOOL OnDrawBrowseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pEdit*  
- [in] *durumu*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pEdit*<br/>
+[in] [in] *durumu*  
  [in] *clrText*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -578,10 +578,10 @@ virtual void OnDrawButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *dikdörtgen*  
- [in] *durumu*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*Rect*<br/>
+[in] [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -598,10 +598,10 @@ virtual void OnDrawButtonSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *dikdörtgen*  
- [in] *durumu*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*Rect*<br/>
+[in] [in] *durumu*  
  [in] *bHorz*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -621,12 +621,12 @@ virtual void OnDrawCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *bActive*  
- [in] *bHorz*  
- [in] *bMaximized*  
- [in] *bDevre Dışı*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*bActive*<br/>
+[in] [in] *bHorz*  
+*bMaximized*<br/>
+[in] [in] *bDevre Dışı*  
  [in] *nImageID*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -645,12 +645,12 @@ virtual void OnDrawCaptionButtonIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *kimliği*  
- [in] *bActive*  
- [in] *bDevre Dışı*  
- [in] *ptImage*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*id*<br/>
+[in] [in] *bActive*  
+*bDevre Dışı*<br/>
+[in] [in] *ptImage*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -668,12 +668,12 @@ virtual void OnDrawCheckBoxEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *nDurum*  
- [in] *bHighlighted*  
- [in] *bPressed*  
- [in] *bEtkin*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*nDurum*<br/>
+[in] [in] *bHighlighted*  
+*bPressed*<br/>
+[in] [in] *bEtkin*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -691,12 +691,12 @@ virtual void OnDrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bDevre Dışı*  
- [in] *bIsDropped*  
- [in] *bIsHighlighted*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bDevre Dışı*<br/>
+[in] [in] *bIsDropped*  
+*bIsHighlighted*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -714,12 +714,12 @@ virtual void OnDrawComboDropButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bDevre Dışı*  
- [in] *bIsDropped*  
- [in] *bIsHighlighted*  
- [in] *pButton*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bDevre Dışı*<br/>
+[in] [in] *bIsDropped*  
+*bIsHighlighted*<br/>
+[in] [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -748,10 +748,10 @@ virtual void OnDrawEditBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bDevre Dışı*  
- [in] *bIsHighlighted*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bDevre Dışı*<br/>
+[in] [in] *bIsHighlighted*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -768,10 +768,10 @@ virtual void OnDrawExpandingBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bIsOpened*  
- [in] *colorBox*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bIsOpened*<br/>
+[in] [in] *colorBox*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -787,10 +787,10 @@ virtual void OnDrawFloatingToolbarBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pToolBar*  
- [in] *rectBorder*  
- [in] *rectBorderSize*  
+*pDC*<br/>
+[in] [in] *pToolBar*  
+*rectBorder*<br/>
+[in] [in] *rectBorderSize*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -807,10 +807,10 @@ virtual void OnDrawHeaderCtrlBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pCtrl*  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bIsPressed*  
+*pCtrl*<br/>
+[in] [in] *pDC*  
+*Rect*<br/>
+[in] [in] *bIsPressed*  
  [in] *bIsHighlighted*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -827,10 +827,10 @@ virtual void OnDrawHeaderCtrlSortArrow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pCtrl*  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bIsUp*  
+*pCtrl*<br/>
+[in] [in] *pDC*  
+*Rect*<br/>
+[in] [in] *bIsUp*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -845,8 +845,8 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pMenu*  
+*pDC*<br/>
+[in] [in] *pMenu*  
  [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -864,10 +864,10 @@ virtual void OnDrawMenuSystemButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *uiSystemCommand*  
- [in] *nStyle*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*uiSystemCommand*<br/>
+[in] [in] *nStyle*  
  [in] *bHighlight*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -884,10 +884,10 @@ virtual void OnDrawMiniFrameBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pFrameWnd*  
- [in] *rectBorder*  
- [in] *rectBorderSize*  
+*pDC*<br/>
+[in] [in] *pFrameWnd*  
+*rectBorder*<br/>
+[in] [in] *rectBorderSize*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -903,10 +903,10 @@ virtual void OnDrawOutlookPageButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectBtn*  
- [in] *bIsHighlighted*  
- [in] *bIsPressed*  
+*pDC*<br/>
+[in] [in] *rectBtn*  
+*bIsHighlighted*<br/>
+[in] [in] *bIsPressed*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -921,8 +921,8 @@ virtual void OnDrawPaneBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pBar*  
+*pDC*<br/>
+[in] [in] *pBar*  
  [in] *dikdörtgen*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -940,10 +940,10 @@ virtual COLORREF OnDrawPaneCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pBar*  
- [in] *bActive*  
- [in] *rectCaption*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*bActive*<br/>
+[in] [in] *rectCaption*  
  [in] *rectButtons*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -961,8 +961,8 @@ virtual void OnDrawPopupWindowButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectClient*  
+*pDC*<br/>
+[in] [in] *rectClient*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -980,10 +980,10 @@ virtual void OnDrawScrollButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *nBorderSize*  
- [in] *iImage*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*nBorderSize*<br/>
+[in] [in] *iImage*  
  [in] *bHilited*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1000,10 +1000,10 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pBar*  
- [in] *dikdörtgen*  
- [in] *bIsHoriz*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*Rect*<br/>
+[in] [in] *bIsHoriz*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1020,10 +1020,10 @@ virtual void OnDrawSpinButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectSpin*  
- [in] *nDurum*  
- [in] *bOrientation*  
+*pDC*<br/>
+[in] [in] *rectSpin*  
+*nDurum*<br/>
+[in] [in] *bOrientation*  
  [in] *pSpinCtrl*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1041,10 +1041,10 @@ virtual void OnDrawStatusBarPaneBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pBar*  
- [in] *rectPane*  
- [in] *uiID*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*rectPane*<br/>
+[in] [in] *uiID*  
  [in] *nStyle*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1066,14 +1066,14 @@ virtual void OnDrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pStatusBar*  
- [in] *rectProgress*  
- [in] *nProgressTotal*  
- [in] *nProgressCurr*  
- [in] *clrBar*  
- [in] *clrProgressBarDest*  
- [in] *clrProgressText*  
+*pDC*<br/>
+[in] [in] *pStatusBar*  
+*rectProgress*<br/>
+[in] [in] *nProgressTotal*  
+*nProgressCurr*<br/>
+[in] [in] *clrBar*  
+*clrProgressBarDest*<br/>
+[in] [in] *clrProgressText*  
  [in] *bProgressText*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1089,8 +1089,8 @@ virtual void OnDrawStatusBarSizeBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pStatBar*  
+*pDC*<br/>
+[in] [in] *pStatBar*  
  [in] *rectSizeBox*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1108,10 +1108,10 @@ virtual void OnDrawTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectTab*  
- [in] *iTab*  
- [in] *bIsActive*  
+*pDC*<br/>
+[in] [in] *rectTab*  
+*iTab*<br/>
+[in] [in] *bIsActive*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1130,12 +1130,12 @@ virtual void OnDrawTabCloseButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pTabWnd*  
- [in] *bIsHighlighted*  
- [in] *bIsPressed*  
- [in] *bIsDisabled*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pTabWnd*<br/>
+[in] [in] *bIsHighlighted*  
+*bIsPressed*<br/>
+[in] [in] *bIsDisabled*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1152,10 +1152,10 @@ virtual void OnDrawTabsButtonBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pButton*  
- [in] *uiState*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pButton*<br/>
+[in] [in] *uiState*  
  [in] *pWndTab*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1173,10 +1173,10 @@ virtual void OnDrawTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pTask*  
- [in] *pIcons*  
- [in] *bIsHighlighted*  
+*pDC*<br/>
+[in] [in] *pTask*  
+*pIcons*<br/>
+[in] [in] *bIsHighlighted*  
  [in] *bIsSelected*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1193,10 +1193,10 @@ virtual void OnDrawTasksGroupAreaBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bÖzel*  
- [in] *bNoTitle*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bÖzel*<br/>
+[in] [in] *bNoTitle*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1213,10 +1213,10 @@ virtual void OnDrawTasksGroupCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pGroup*  
- [in] *bIsHighlighted*  
- [in] *bIsSelected*  
+*pDC*<br/>
+[in] [in] *pGroup*  
+*bIsHighlighted*<br/>
+[in] [in] *bIsSelected*  
  [in] *bCanCollapse*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1232,8 +1232,8 @@ virtual void OnDrawTearOffCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *bIsActive*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1249,8 +1249,8 @@ virtual void OnErasePopupWindowButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectClient*  
+*pDC*<br/>
+[in] [in] *rectClient*  
  [in] *pButton*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1266,8 +1266,8 @@ virtual void OnEraseTabsArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1284,10 +1284,10 @@ virtual void OnEraseTabsButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pButton*  
- [in] *pWndTab*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pButton*<br/>
+[in] [in] *pWndTab*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1302,8 +1302,8 @@ virtual BOOL OnEraseTabsFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *pTabWnd*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1323,10 +1323,10 @@ virtual void OnFillBarBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pBar*  
- [in] *rectClient*  
- [in] *rectClip*  
+*pDC*<br/>
+[in] [in] *pBar*  
+*rectClient*<br/>
+[in] [in] *rectClip*  
  [in] *bNCArea*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1343,10 +1343,10 @@ virtual void OnFillButtonInterior(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *dikdörtgen*  
- [in] *durumu*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*Rect*<br/>
+[in] [in] *durumu*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1361,8 +1361,8 @@ virtual COLORREF OnFillCommandsListBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *bIsSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1381,10 +1381,10 @@ virtual COLORREF OnFillMiniFrameCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectCaption*  
- [in] *pFrameWnd*  
- [in] *bActive*  
+*pDC*<br/>
+[in] [in] *rectCaption*  
+*pFrameWnd*<br/>
+[in] [in] *bActive*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1403,10 +1403,10 @@ virtual void OnFillOutlookPageButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *bIsHighlighted*  
- [in] *bIsPressed*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*bIsHighlighted*<br/>
+[in] [in] *bIsPressed*  
  [in] *clrText*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1422,8 +1422,8 @@ virtual void OnFillTasksGroupInterior(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *bÖzel*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -1438,8 +1438,8 @@ virtual void OnFillTasksPaneBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectWorkArea*  
+*pDC*<br/>
+[in] [in] *rectWorkArea*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1455,10 +1455,10 @@ virtual void OnHighlightMenuItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *pButton*  
- [in] *dikdörtgen*  
- [in] *clrText*  
+*pDC*<br/>
+[in] [in] *pButton*  
+*Rect*<br/>
+[in] [in] *clrText*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1472,8 +1472,8 @@ virtual void OnHighlightRarelyUsedMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *rectRarelyUsed*  
+*pDC*<br/>
+[in] [in] *rectRarelyUsed*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

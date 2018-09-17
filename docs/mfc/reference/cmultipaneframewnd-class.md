@@ -90,12 +90,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05f80ef1a7fd4e21bda2fd9705c4ed1be391e9a9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: d4bc80f8370924377a089b3cb9838030943b9943
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465551"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706751"
 ---
 # <a name="cmultipaneframewnd-class"></a>CMultiPaneFrameWnd sınıfı
 `CMultiPaneFrameWnd` Sınıfını genişleten [CPaneFrameWnd sınıfı](../../mfc/reference/cpaneframewnd-class.md). Bu, birden çok bölmeyi destekleyebilir. Bir denetim çubuğuna tek bir gömülü tanıtıcı yerine `CMultiPaneFrameWnd` içeren bir [CPaneContainerManager sınıfı](../../mfc/reference/cpanecontainermanager-class.md) bir kullanıcının sağlayan nesne `CMultiPaneFrameWnd` diğerine ve dinamik olarak birden fazla kayan oluşturmak, sekmeli Windows.  
@@ -237,10 +237,10 @@ virtual void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndToDock*  
- [in] *ptMouse*  
- [in] *rectResult*  
- [in] *bDrawTab*  
+*pWndToDock*<br/>
+[in] [in] *ptMouse*  
+*rectResult*<br/>
+[in] [in] *bDrawTab*  
  [in] *ppTargetBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -307,8 +307,8 @@ virtual BOOL DockFrame(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDockedFrame*  
- [in] *dockMethod*  
+*pDockedFrame*<br/>
+[in] [in] *dockMethod*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -419,8 +419,8 @@ virtual BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- [in] *pTarget*  
+*pControlBar*<br/>
+[in] [in] *pTarget*  
  [in] *bBu*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -437,8 +437,8 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- [in] *uiID*  
+*lpszProfileName*<br/>
+[in] [in] *uiID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -490,8 +490,8 @@ virtual void OnShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- [in] *bBilgi Göster*  
+*pBar*<br/>
+[in] [in] *bBilgi Göster*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -506,8 +506,8 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- [in] *nSensitivity*  
+*Noktası*<br/>
+[in] [in] *nSensitivity*  
  [in] *bCheckVisibility*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -534,8 +534,8 @@ virtual void RemovePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- [in] *bDestroy*  
+*pBar*<br/>
+[in] [in] *bDestroy*  
  [in] *bNoDelayedDestroy*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -550,8 +550,8 @@ virtual void ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBarOrg*  
- [in] *pBarReplaceWith*  
+*pBarOrg*<br/>
+[in] [in] *pBarReplaceWith*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -565,8 +565,8 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- [in] *uiID*  
+*lpszProfileName*<br/>
+[in] [in] *uiID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -619,8 +619,8 @@ virtual BOOL SetPreDockState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *preDockState*  
- [in] *pBarToDock*  
+*preDockState*<br/>
+[in] [in] *pBarToDock*  
  [in] *dockMethod*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -649,8 +649,8 @@ virtual void StoreRecentTabRelatedInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDockingBar*  
- [in] *pTabbedBar*  
+*pDockingBar*<br/>
+[in] [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

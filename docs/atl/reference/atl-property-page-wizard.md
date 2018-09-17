@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94bca969b150718450da166501abaea9c89b75d7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 671cb2fa19d920b0e60acd8d34623a05fe4a048e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760389"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703801"
 ---
 # <a name="atl-property-page-wizard"></a>ATL Özellik Sayfası Sihirbazı
 
@@ -56,17 +56,20 @@ Nesne uygulamak için oluşturulan C++ sınıfına ilişkin bilgi sağlar.
 
 Nesne için COM işlevleri hakkında bilgi sağlar.
 
-**Coclass'ı**  
-Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfı adını ayarlar.
+- **Coclass'ı**
 
-> [!NOTE]
->  Öznitelikleri kullanarak projenizi oluşturmak ya da özellik sayfasını öznitelikleri kullanır Bu sihirbaz sayfasındaki gösteriyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz `coclass` özniteliği.
+   Nesne tarafından desteklenen arabirimlerin listesini içeren bileşen sınıfı adını ayarlar.
 
-**Türü**  
-Ayarlar kayıt defterinde görünür nesne açıklaması
+   > [!NOTE]
+   > Öznitelikleri kullanarak projenizi oluşturmak ya da özellik sayfasını öznitelikleri kullanır Bu sihirbaz sayfasındaki gösteriyorsa, ATL içermez çünkü bu seçeneği değiştiremezsiniz `coclass` özniteliği.
 
-**ProgID**  
-Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
+- **Türü**
+
+   Ayarlar kayıt defterinde görünür nesne açıklaması
+
+- **ProgID**
+
+   Kapsayıcı nesnesinin CLSID yerine kullanabileceği adını ayarlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

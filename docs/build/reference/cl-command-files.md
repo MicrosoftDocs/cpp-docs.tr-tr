@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a1e2b25330bd326ac32dbe1c1b8abcc37c89d09
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 8458462304a9b739c61997505724d21bb56763f6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894765"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708677"
 ---
 # <a name="cl-command-files"></a>CL Komut Dosyaları
 
@@ -37,25 +37,25 @@ Bir komut dosyası tarafından belirtilen bir at işareti (**\@**) tarafından b
 
 Örneğin, aşağıdaki komutu yanıt adındaki bir dosyada ise:
 
-```  
+```
 /Og /link LIBC.LIB
-```  
+```
 
 ve aşağıdaki CL komutu belirtin:
 
-```  
+```
 CL /Ob2 @RESP MYAPP.C
-```  
+```
 
 CL komutu aşağıdaki gibidir:
 
-```  
+```
 CL /Ob2 /Og MYAPP.C /link LIBC.LIB
-```  
+```
 
 Komut satırını ve komut dosyalı komutlar etkili bir şekilde birleştirilir unutmayın.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)
-[derleyici seçenekleri](../../build/reference/compiler-options.md)
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)

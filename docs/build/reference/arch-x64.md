@@ -1,5 +1,5 @@
 ---
-title: -(x64) arch | Microsoft Docs
+title: -arch (x64) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,49 +12,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 848d229d6cf8df7d08494d0c300e082c6dc7d0a9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 236923732a193830fe3fad643570666db56cddac
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371677"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707362"
 ---
 # <a name="arch-x64"></a>/arch (x64)
-X64 üzerinde kod oluşturma için Mimari belirtir. Ayrıca bkz. [/(x86) arch](../../build/reference/arch-x86.md) ve [/arch (ARM)](../../build/reference/arch-arm.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/arch:[AVX|AVX2]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- **/arch:AVX**  
- Intel Gelişmiş vektör uzantıları yönergeleri kullanımını etkinleştirir.  
-  
- **/arch:AVX2**  
- Intel Gelişmiş vektör Extensions 2 yönergeleri kullanımını etkinleştirir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/ arch** etkiler kod oluşturmayı yerel işlevler için yalnızca. Kullandığınızda [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) derlemek için **/arch** kod oluşturma için yönetilen işlevler üzerinde etkisi yoktur.  
-  
- `__AVX__` Önişlemci sembolü tanımlanmış zaman **/arch:AVX** derleyici seçeneği belirtildi. `__AVX2__` Önişlemci sembolü tanımlanmış zaman **/arch:AVX2** derleyici seçeneği belirtildi. Daha fazla bilgi için bkz: [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md). **/Arch:AVX2** seçeneği, Visual Studio 2013 güncelleştirme 2 ', sürüm 12.0.34567.1 sunulmuştur.  
-  
-### <a name="to-set-the-archavx-or-archavx2-compiler-option-in-visual-studio"></a>Visual Studio'da /arch:AVX veya /arch:AVX2 derleyici seçeneği ayarlamak için  
-  
-1.  Açık **özellik sayfaları** projesi için iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **yapılandırma özellikleri**, **C/C++** klasör.  
-  
-3.  Seçin **kod oluşturma** özellik sayfası.  
-  
-4.  İçinde **etkinleştirmek gelişmiş yönerge kümesi** açılır kutusunda, seçin **Gelişmiş vektör Uzantıları (/ arch: AVX)** veya **Gelişmiş vektör uzantıları 2 (/ arch: AVX2)**.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/ arch (en düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+X64 kod oluşturma mimarisini belirtir. Ayrıca bkz: [/arch (x86)](../../build/reference/arch-x86.md) ve [/arch (ARM)](../../build/reference/arch-arm.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/arch:[AVX|AVX2]
+```
+
+## <a name="arguments"></a>Arguments
+
+**/ arch:**<br/>
+Intel Gelişmiş vektör uzantıları yönergelerinin kullanımını etkinleştirir.
+
+**/arch:AVX2**<br/>
+Intel Gelişmiş vektör uzantıları 2 yönergeleri kullanımını etkinleştirir.
+
+## <a name="remarks"></a>Açıklamalar
+
+**/ arch** yalnızca kod oluşturma için yerel işlevleri etkiler. Kullanırken [/CLR](../../build/reference/clr-common-language-runtime-compilation.md) derlemek için **/arch** kod oluşturma için yönetilen işlevler üzerinde etkisi yoktur.
+
+`__AVX__` Önişlemci sembolü tanımlı olduğunda **/arch:** derleyici seçeneği belirtildi. `__AVX2__` Önişlemci sembolü tanımlı olduğunda **/arch:AVX2** derleyici seçeneği belirtildi. Daha fazla bilgi için [önceden tanımlanmış makrolar](../../preprocessor/predefined-macros.md). **/Arch:AVX2** seçeneği, Visual Studio 2013 Update 2 ', sürüm 12.0.34567.1 tanıtılmıştır.
+
+### <a name="to-set-the-archavx-or-archavx2-compiler-option-in-visual-studio"></a>Visual Studio'da / arch: veya /arch:AVX2 derleyici seçeneğini ayarlamak için
+
+1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **yapılandırma özellikleri**, **C/C++** klasör.
+
+1. Seçin **kod oluşturma** özellik sayfası.
+
+1. İçinde **etkinleştirme gelişmiş yönerge kümesi** açılan kutusunda **Gelişmiş vektör Uzantıları (/ arch: AVX)** veya **Gelişmiş vektör uzantıları 2 (/ arch: AVX2)**.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableEnhancedInstructionSet%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/ arch (en düşük CPU Mimarisi)](../../build/reference/arch-minimum-cpu-architecture.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

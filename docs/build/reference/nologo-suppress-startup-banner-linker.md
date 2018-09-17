@@ -23,33 +23,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a76e99496114c0ebdc60f81724e67dd88a482055
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 405cfd08b681d8b48343bae5055f5be9cf23dadb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374199"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707583"
 ---
 # <a name="nologo-suppress-startup-banner-linker"></a>/NOLOGO (Başlangıç Başlığını Gösterme) (Bağlayıcı)
-```  
-/NOLOGO  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / Nologo seçeneği telif hakkı iletisi ve sürüm numarasını görüntülenmesini engeller.  
-  
- Bu seçenek, aynı zamanda komut dosyaları Yankı bastırır. Ayrıntılar için bkz [LINK komut dosyaları](../../build/reference/link-command-files.md).  
-  
- Varsayılan olarak, bu bilgileri çıktı penceresinde bağlayıcı tarafından gönderilir. Komut satırında bunu standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Bu seçenek, yalnızca komut satırından kullanılmalıdır.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bu bağlayıcı seçeneği programlı olarak değiştirilemez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/NOLOGO
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Nologo seçeneği telif hakkı iletisi ve sürüm numarasını görüntülenmesini önler.
+
+Bu seçenek, ayrıca komut dosyaları Yankı bastırır. Ayrıntılar için bkz [LINK komut dosyaları](../../build/reference/link-command-files.md).
+
+Varsayılan olarak, bu bilgiler, çıkış penceresine bağlayıcı tarafından gönderilir. Komut satırında, bunu standart çıktıya gönderilir ve bir dosyaya yönlendirilebilir.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Bu seçenek, yalnızca komut satırından kullanılmalıdır.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bu bağlayıcı seçeneğini program aracılığıyla değiştirilemez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

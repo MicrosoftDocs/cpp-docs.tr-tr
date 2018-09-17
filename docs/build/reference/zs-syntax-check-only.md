@@ -19,41 +19,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bbefdf18ac5299addc4c0c251d801b39ab038e1e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e2f8d9f711309d7039672cbf3f92aa49b906fc3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380051"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706491"
 ---
 # <a name="zs-syntax-check-only"></a>/Zs (Yalnızca Sözdizimi Denetimi)
-Yalnızca kaynak dosyaları komut satırında sözdizimini denetleyin bildirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Zs  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek kullanıldığında, hiçbir çıktı dosyaları oluşturulur ve hata iletileri standart çıktıya yazılır.  
-  
- **/Zs** seçeneği bulmak ve derlemek ve kaynak dosyası bağlamak önce sözdizimi hataları düzeltmek için hızlı bir yolunu sağlar.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Yalnızca komut satırında kaynak dosyalarının söz dizimini kontrol etmek için derleyiciye bildirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Zs
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçeneği kullandığınızda hiçbir çıkış dosyası oluşturulur ve hata iletileri, Standart çıkışa yazılır.
+
+**/Zs** seçeneğini bulun ve derleme ve bir kaynak dosyası bağlamak için önce söz dizimi hataları düzeltmek için hızlı bir yol sağlar.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -17,17 +17,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e8a65066ad19b78319867782255d70da8d5b721
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2fb8608e03a514228ecdbaf321124c17a00aeb5c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333150"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700173"
 ---
 # <a name="mmstreamsd"></a>_mm_stream_sd
-**Microsoft özel**  
+
+**Microsoft'a özgü**  
   
- 64-bit veri önbellekleri kirletmesini olmadan bir bellek konumuna yazar.  
+ 64-bit veri önbelleklerinin kirletmesini olmadan bir bellek konumuna yazar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,11 +40,11 @@ void _mm_stream_sd(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out] `Dest`  
- Veri kaynağını yazılacağı konuma bir işaretçi.  
+*Hedef*<br/>
+[out] Kaynak verilerin yazılacağı konum için bir işaretçi.  
   
- [in] `Source`  
- 128-bit değerini içeren `double` 64 bit kendi alt yazılacak değer...  
+*Kaynak*<br/>
+[in] 128-bit değeri içeren bir `double` 64 bit kendi alt yazılacak değer...  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Yok.  
@@ -54,12 +55,12 @@ void _mm_stream_sd(
 |---------------|------------------|  
 |`_mm_stream_sd`|SSE4a|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç oluşturur `movntsd` yönergesi. Bu yönerge donanım desteğini belirlemek için arama `__cpuid` ile iç `InfoType=0x80000001` ve bit 6 denetleyin `CPUInfo[2] (ECX)`. Bu yönerge ve 0 donanım aksi destekliyorsa, bu biti 1'dir.  
+ Bu iç oluşturur `movntsd` yönergesi. Bu yönerge için donanım desteği belirlemek için çağrı `__cpuid` ile iç `InfoType=0x80000001` ve 6 bit `CPUInfo[2] (ECX)`. Aksi takdirde bu yönerge ve 0 donanım destekliyorsa, bu bit 1'dir.  
   
- Kullanan kodu çalıştırırsanız `_mm_stream_sd` desteklemediği donanımda iç `movntsd` yönerge, sonuçlar tahmin edilemez.  
+ Kullanan kodu çalıştırırsanız `_mm_stream_sd` desteği olmayan donanımda iç `movntsd` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
 ## <a name="example"></a>Örnek  
   
@@ -88,8 +89,9 @@ int main()
 d[0] = -1, d[1] = 1  
 ```  
   
-**SON Microsoft özel**  
- Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**  
+
+Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_mm_stream_ss](../intrinsics/mm-stream-ss.md)   

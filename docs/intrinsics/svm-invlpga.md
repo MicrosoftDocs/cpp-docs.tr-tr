@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77ada66d0478996eac30c8218793d962e8fcf7ca
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c2f962ec4a348cca7ffdf43852cb01d673f3fb18
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680094"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706608"
 ---
 # <a name="svminvlpga"></a>__svm_invlpga
 **Microsoft'a özgü**  
@@ -41,8 +41,8 @@ void __svm_invlpga(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Va`|Geçersiz kılmak için sayfanın sanal adres.|  
-|[in] `ASID`|Geçersiz kılmak için sayfanın adres alanı tanımlayıcısı (ASID).|  
+|*Va*|[in] Geçersiz kılmak için sayfanın sanal adres.|  
+|*ASID*|[in] Geçersiz kılmak için sayfanın adres alanı tanımlayıcısı (ASID).|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `__svm_invlpga` İşlev, eşdeğer `INVLPGA` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" konumundaki belge numarasını 24593, düzeltme 3.11, [AMD corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  

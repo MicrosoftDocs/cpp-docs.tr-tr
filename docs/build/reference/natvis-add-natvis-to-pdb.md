@@ -1,5 +1,5 @@
 ---
-title: -NATVIS (Natvis eklemek için PDB) | Microsoft Docs
+title: -NATVIS (PDB'ye Natvis Ekle) | Microsoft Docs
 ms.date: 08/10/2017
 ms.technology:
 - cpp-tools
@@ -19,42 +19,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3bce34095aec1558d2466447770a8ac4c46528f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2c1a20fef785c0267eb630bf044c8cb9609605e2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377108"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708129"
 ---
-# <a name="natvis-add-natvis-to-pdb"></a>/ NATVIS (Natvis PDB için ekleme)
-  
-> / NATVIS:*dosya adı*  
-  
-## <a name="parameters"></a>Parametreler  
-  
-*Dosya adı*  
-PDB dosyasına eklemek için bir Natvis dosyası. Natvis dosyasında hata ayıklayıcı görselleştirmeleri PDB katıştırır.  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-/NATVIS seçeneği Natvis dosyasında tanımlanan hata ayıklayıcı görselleştirmeleri katıştırır *filename* bağlantı tarafından oluşturulan PDB dosyasına. Bu görsel .natvis dosya bağımsız olarak görüntülenecek hata ayıklayıcı sağlar. Oluşturulan PDB dosyasında birden fazla Natvis dosya eklemek için birden çok /NATVIS seçeneklerini kullanabilirsiniz.  
-  
-BAĞLANTI yok sayıyor /NATVIS PDB dosyası kullanılarak oluşturulduğunda değil, bir [/DEBUG](../../build/reference/debug-generate-debug-info.md) seçeneği. Oluşturma ve .natvis dosyalarının kullanılması hakkında daha fazla bilgi için bkz: [Visual Studio Hata Ayıklayıcısı'ndaki yerel nesnelerin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **komut satırı** özellik sayfasında **bağlayıcı** klasör.  
-  
-3.  /NATVIS seçeneğine eklemek **ek seçenekler** metin kutusu.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bu seçenek programatik eşdeğeri yok.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-  
-[Visual Studio Hata Ayıklayıcısı'ndaki yerel nesnelerin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects)  
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
+# <a name="natvis-add-natvis-to-pdb"></a>/ NATVIS (Natvıs PDB'ye natvis Ekle)
+
+> / NATVIS:*dosya adı*
+
+## <a name="parameters"></a>Parametreler
+
+*Dosya adı*<br/>
+PDB dosyasına eklemek için bir Natvis dosyası. Natvis dosyasında hata ayıklayıcı Görselleştirmelerini PDB katıştırır.
+
+## <a name="remarks"></a>Açıklamalar
+
+Natvis dosyasında tanımlanan hata ayıklayıcı Görselleştirmelerini /NATVIS seçeneği katıştırır *filename* bağlantı tarafından oluşturulmuş bir PDB dosyası içine. Bu, hata ayıklayıcı görselleştirmeleri değiştirebilir .natvis dosyasını bağımsız olarak görüntülemek sağlar. Oluşturulan PDB dosyası içinde birden fazla Natvis dosyası eklemek için birden çok /NATVIS seçeneklerini kullanabilirsiniz.
+
+BAĞLANTI yok sayar /NATVIS bir PDB dosyası kullanılarak oluşturulan değil, bir [/DEBUG](../../build/reference/debug-generate-debug-info.md) seçeneği. Oluşturma ve .natvis dosyaları kullanımı hakkında daha fazla bilgi için bkz. [Visual Studio hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Seçin **komut satırı** özellik sayfasında **bağlayıcı** klasör.
+
+1. /NATVIS seçeneği ekleyin **ek seçenekler** metin kutusu.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bu seçenek, bir program eşdeğerini yok.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual Studio hata ayıklayıcıda yerel nesnelerin özel görünümlerini oluşturma](/visualstudio/debugger/create-custom-views-of-native-objects)<br/>
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

@@ -22,38 +22,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44f35c995a0c839fdc0d4ccf3d286e332793cf70
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bd90cb7824050e9bd0110e75f7120c4f004b8b47
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374043"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713472"
 ---
 # <a name="noentry-no-entry-point"></a>/NOENTRY (Giriş Noktası Yok)
-```  
-/NOENTRY  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- /NOENTRY seçeneği çalıştırılabilir kod içermeyen bir yalnızca kaynak DLL oluşturmak için gereklidir. Daha fazla bilgi için bkz: [Resource-Only DLL oluşturma](../../build/creating-a-resource-only-dll.md).  
-  
- Bir başvuru bağlama bağlantı engellemek için bu seçeneği kullanın `_main` DLL içine.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **bağlayıcı** klasör.  
-  
-3.  Seçin **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **No giriş noktası** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yalnızca kaynak DLL oluşturma](../../build/creating-a-resource-only-dll.md)   
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/NOENTRY
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ NOENTRY seçeneği, yürütülebilir kod içermeyen bir kaynak DLL'si oluşturmak için gereklidir. Daha fazla bilgi için [Resource-Only DLL oluşturma](../../build/creating-a-resource-only-dll.md).
+
+BAĞLANTI bir başvuru önleme için bu seçeneği kullanın `_main` DLL içine.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Seçin **bağlayıcı** klasör.
+
+1. Seçin **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **Hayır giriş noktası** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ResourceOnlyDLL%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yalnızca Kaynak DLL Oluşturma](../../build/creating-a-resource-only-dll.md)<br/>
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

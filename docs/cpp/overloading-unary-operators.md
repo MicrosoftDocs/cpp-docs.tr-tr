@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c00f9d40fedd084afa2da6e2e7bfaf0ee831b3a9
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 54529bed25fc60815f80ea8660bcf5786cb2887c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401886"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700693"
 ---
 # <a name="overloading-unary-operators"></a>Aşırı Yükleme Birli İşleçleri
 Aşırı yüklenebilen birli işleçler şunlardır:  
@@ -55,15 +55,15 @@ Aşırı yüklenebilen birli işleçler şunlardır:
   
  Aşağıdaki kurallar diğer tüm birli işleçler için doğrudur. Birli işleç işlevini statik olmayan bir üye olarak bildirmek için şu biçimde bildirmeniz gerekir:  
   
- `ret-type operator` `op` `()`  
+> *ret-type* **işleci** *op* **)**  
   
- Burada `ret-type` dönüş türü ve `op` yukarıdaki tabloda listelenen işleçlerden.  
+ Burada *ret-type* dönüş türü ve *op* yukarıdaki tabloda listelenen işleçlerden.  
   
  Birli işleç işlevini genel bir işlev olarak bildirmek için şu biçimde bildirmeniz gerekir:  
   
- `ret-type operator` `op` (`arg` )  
+> *ret-type* **işleci** *op* **(** *arg* **)**  
   
- Burada `ret-type` ve `op` üye işleci işlevleri için tanımlanmıştır ve `arg` üzerinde çalışacağı sınıf türünün bir bağımsız değişken.  
+ Burada *ret-type* ve *op* üye işleci işlevleri için tanımlanmıştır ve *arg* üzerinde çalışacağı sınıf türünün bir bağımsız değişken.  
   
 > [!NOTE]
 >  Birli operatörlerin dönüş türleriyle ilgili bir kısıtlama yoktur. Örneğin, mantıksal değil için mantıklıdır (`!`) bir tamsayı değeri, ancak bu döndürülecek zorlanmaz.  

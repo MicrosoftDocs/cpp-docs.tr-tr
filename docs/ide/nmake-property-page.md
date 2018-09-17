@@ -1,5 +1,5 @@
 ---
-title: NMake özellik sayfası (Windows C++) | Microsoft Docs
+title: NMake özellik sayfası (C++ Windows) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,54 +19,65 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f156d69467f00c4c4a62ec84d3b870e2999d7115
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 29d10b35b0855e34826c10b813a2df48cd84cfef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33327466"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711977"
 ---
 # <a name="nmake-property-page"></a>NMake Özellik Sayfaları
-**NMake** özellik sayfası NMake projeleri için yapılandırma ayarlarını belirtmenize olanak sağlar.  
+**NMake** özellik sayfası NMake projeleri için derleme ayarları belirtmenize olanak sağlar.  
   
- NMake projeler hakkında daha fazla bilgi için bkz: [derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md). Non_Windows derleme görevleri dosyası projeleri için bkz: [derleme görevleri dosyası proje özellikleri (Linux C++)](../linux/prop-pages/makefile-linux.md), [genel proje özellikleri (Android C++ derleme görevleri dosyası)](/visualstudio/cross-platform/general-makefile-android-prop-page) veya [NMake özellikleri (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
+NMake projeleri hakkında daha fazla bilgi için bkz. [bir derleme görevleri dosyası projesi oluşturma](../ide/creating-a-makefile-project.md). Non_Windows derleme görevleri dosyası projeleri için bkz: [derleme görevleri dosyası proje özellikleri (Linux C++)](../linux/prop-pages/makefile-linux.md), [genel proje özellikleri (Android C++ derleme görevleri dosyası)](/visualstudio/cross-platform/general-makefile-android-prop-page) veya [NMake özellikleri (Android C++)](/visualstudio/cross-platform/nmake-android-prop-page).
   
- **NMake** özellik sayfası, aşağıdaki özellikleri içerir.  
+**NMake** özellik sayfası, aşağıdaki özellikleri içerir.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Komut satırı derleme**  
- Ne zaman çalıştırılması için komutu belirler **yapı** üzerinde tıkladığınız **yapı** menüsü.  
+
+- **Komut satırı derleme**
+
+   Ne zaman çalıştırılacak komutu belirtir **derleme** üzerinde tıklandığında **derleme** menüsü.  
   
- **Tüm komut satırı yeniden oluşturma**  
- Ne zaman çalıştırılması için komutu belirler **yeniden tüm** üzerinde tıkladığınız **yapı** menüsü.  
+- **Rebuild all komut satırı**
+
+   Ne zaman çalıştırılacak komutu belirtir **Rebuild All** üzerinde tıklandığında **derleme** menüsü.  
   
- **Komut satırı Temizle**  
- Ne zaman çalıştırılması için komutu belirler **temiz** üzerinde tıkladığınız **yapı** menüsü.  
+- **Temizle komut satırı**
+
+   Ne zaman çalıştırılacak komutu belirtir **temiz** üzerinde tıklandığında **derleme** menüsü.  
   
- **Output**  
- Komut satırı için çıktı içeren dosyanın adını belirtir. Varsayılan olarak, bu dosya adı proje adına göre temel alır.  
+- **Output**
+
+   Çıkış komut satırı içerecek dosyanın adını belirtir. Varsayılan olarak, bu dosya adı proje adı temel alır.  
   
- **Önişlemci tanımları**  
- Kaynak kullanım dosyalar herhangi önişlemci tanımları belirtir. Varsayılan değer geçerli platform ve yapılandırması tarafından belirlenir.  
+- **Önişlemci tanımları**
+
+   Kaynak kullanan dosyaları tüm önişlemci tanımlarını belirtir. Varsayılan değer, geçerli platform ve yapılandırma tarafından belirlenir.  
   
- **Arama Yolu Ekle**  
- Burada derleyici için dosyaları Ekle arar dizinleri belirtir.  
+- **Arama Yolu Ekle**
+
+   Derleyici için dahil etme dosyaları nerede arar dizinleri belirtir.  
   
- **Zorlanan içerir**  
- Proje dosyaları dahil edilmeyen olsa bile önişlemci otomatik olarak işler dosyalarını belirtir.  
+- **Zorlanmış içerir**
+
+   Proje dosyalarında bulunmayan olsa bile, önişlemci otomatik olarak işleyen dosyalarını belirtir.  
   
- **Derleme arama yolu**  
- Burada .NET Framework araması ne zaman dizinleri belirtir, .NET derlemelerini çözümlemek için trys.  
+- **Bütünleştirilmiş kod arama yolu**
+
+   Burada .NET Framework araması ne zaman dizinleri belirtir, .NET derlemelerini çözümlenecek trys.  
   
- **Derlemeler kullanma zorla**  
- .NET Framework otomatik olarak işler derlemeleri belirtir.  
+- **Zorlanarak kullanılan bütünleştirilmiş kodlar**
+
+   .NET Framework otomatik olarak işler bütünleştirilmiş kodları belirtir.  
   
- **Ek Seçenekler**  
- C++ dosyalarını ayrıştırırken kullanılacak IntelliSense için hiçbir ek derleyici anahtarları belirtir.  
+- **Ek Seçenekler**
+
+   C++ dosyaları ayıklarken kullanılacak IntelliSense için herhangi bir ek derleyici anahtarlarını belirtir.  
   
- Nasıl erişileceği hakkında bilgi için **NMake** özellik sayfası, bkz: [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+Nasıl erişileceği hakkında daha fazla bilgi için **NMake** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
- Program aracılığıyla erişim üyeleri bu nesne için hakkında daha fazla bilgi için bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.  
+Bu nesne program aracılığıyla üyelerine erişim hakkında daha fazla bilgi için bkz. <xref:Microsoft.VisualStudio.VCProjectEngine.VCNMakeTool>.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   

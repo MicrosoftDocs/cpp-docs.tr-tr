@@ -72,12 +72,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9be1d106257787d5a5dd919372726c8d31a1edc1
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 604ccf9ba0695cf9d17790f149be1f0738266076
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339286"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701772"
 ---
 # <a name="cdatarecoveryhandler-class"></a>CDataRecoveryHandler sınıfı
 `CDataRecoveryHandler` Kapanıyorsa belgeler ve uygulama beklenmedik bir şekilde geri yükler.  
@@ -188,8 +188,8 @@ virtual BOOL AutosaveDocumentInfo(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Bir işaretçi `CDocument` kaydetmek için.|  
-|[in] *bResetModifiedFlag*|TRUE gösterir `CDataRecoveryHandler` göz önünde bulundurur *pDocument* değiştirilecek; FALSE gösterir framework hesaba katıldığından emin *pDocument* değiştirilmemiş olacak. Bu bayrak etkisi hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.|  
+|*pDocument*|[in] Bir işaretçi `CDocument` kaydetmek için.|  
+|*bResetModifiedFlag*|[in] TRUE gösterir `CDataRecoveryHandler` göz önünde bulundurur *pDocument* değiştirilecek; FALSE gösterir framework hesaba katıldığından emin *pDocument* değiştirilmemiş olacak. Bu bayrak etkisi hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Uygun bayrakları ayarlandıysa TRUE ve *pDocument* geçerli bir `CDocument` nesne.  
@@ -218,8 +218,8 @@ CDataRecoveryHandler(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *dwRestartManagerSupportFlags*|Yeniden başlatma Yöneticisi'nin hangi seçeneklerin desteklendiğini gösterir.|  
-|[in] *nAutosaveInterval*|Kapanıyorsa arasındaki süre. Bu parametre, milisaniye cinsindendir.|  
+|*dwRestartManagerSupportFlags*|[in] Yeniden başlatma Yöneticisi'nin hangi seçeneklerin desteklendiğini gösterir.|  
+|*nAutosaveInterval*|[in] Kapanıyorsa arasındaki süre. Bu parametre, milisaniye cinsindendir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  MFC çerçevesi otomatik olarak oluşturur bir `CDataRecoveryHandler` kullandığınızda, uygulamanız için nesne **yeni proje** Sihirbazı. Veri kurtarma davranışı veya yeniden başlatma Yöneticisi'ni özelleştirme sürece değil, oluşturmalısınız bir `CDataRecoveryHandler` nesne.  
@@ -237,7 +237,7 @@ virtual BOOL CreateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Bir işaretçi bir `CDocument`. Bu yöntem, bu belge bilgilerini oluşturur `CDocument`.|  
+|*pDocument*|[in] Bir işaretçi bir `CDocument`. Bu yöntem, bu belge bilgilerini oluşturur `CDocument`.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan uygulama, TRUE döndürür.  
@@ -269,7 +269,7 @@ virtual BOOL DeleteAutosavedFile(const CString& strAutosavedFile);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *strAutosavedFile*|Otomatik kaydedilmiş dosya adını içeren bir dize.|  
+|*strAutosavedFile*|[in] Otomatik kaydedilmiş dosya adını içeren bir dize.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan uygulama her zaman TRUE döndürür.  
@@ -285,8 +285,8 @@ virtual CString GenerateAutosaveFileName(const CString& strDocumentName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strDocumentName*  
- Belge adını içeren bir dize. `GenerateAutosaveFileName` Bu belge adı, karşılık gelen bir otomatik kaydetme dosyası adı oluşturmak için kullanır.  
+*strDocumentName*<br/>
+[in] Belge adını içeren bir dize. `GenerateAutosaveFileName` Bu belge adı, karşılık gelen bir otomatik kaydetme dosyası adı oluşturmak için kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Oluşturulan otomatik kaydetme dosyası adı *strDocumentName*.  
@@ -326,7 +326,7 @@ virtual CString GetDocumentListName(CDocument* pDocument) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Bir işaretçi bir `CDocument`. `GetDocumentListName` Bu belge adını alır `CDocument`.|  
+|*pDocument*|[in] Bir işaretçi bir `CDocument`. `GetDocumentListName` Bu belge adını alır `CDocument`.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belge adından *pDocument*.  
@@ -346,7 +346,7 @@ virtual CString GetNormalDocumentTitle(CDocument* pDocument);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Bir işaretçi bir `CDocument`.|  
+|*pDocument*|[in] Bir işaretçi bir `CDocument`.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen belge için normal başlığı.  
@@ -362,8 +362,8 @@ virtual CString GetRecoveredDocumentTitle(const CString& strDocumentTitle) const
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strDocumentTitle*  
- Belge için normal başlığı.  
+*strDocumentTitle*<br/>
+[in] Belge için normal başlığı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kurtarılan belgenin başlığı.  
@@ -462,7 +462,7 @@ virtual BOOL RemoveDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Belgenin kaldırmak için bir işaretçi.|  
+|*pDocument*|[in] Belgenin kaldırmak için bir işaretçi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *pDocument* listeden kaldırıldı Bir hata oluştuğunda FALSE.  
@@ -529,8 +529,8 @@ Virtual void SetAutosaveInterval(int nAutosaveInterval);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nAutosaveInterval*  
- Yeni otomatik kaydetme aralığını milisaniye cinsinden.  
+*nAutosaveInterval*<br/>
+[in] Yeni otomatik kaydetme aralığını milisaniye cinsinden.  
   
 ##  <a name="setautosavepath"></a>  CDataRecoveryHandler::SetAutosavePath  
  Otomatik kaydedilmiş dosyalarının depolandığı dizine ayarlar.  
@@ -544,7 +544,7 @@ virtual void SetAutosavePath(const CString& strAutosavePath);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *strAutosavePath*|Otomatik kaydetme dosyalarının depolandığı yolu.|  
+|*strAutosavePath*|[in] Otomatik kaydetme dosyalarının depolandığı yolu.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Otomatik kaydetme dizini değiştirmek şu anda otomatik kaydedilmiş dosyaları taşımaz.  
@@ -561,7 +561,7 @@ virtual void SetRestartIdentifier(const CString& strRestartIdentifier);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *strRestartIdentifier*|Yeniden başlatma Yöneticisi için benzersiz tanımlayıcı.|  
+|*strRestartIdentifier*|[in] Yeniden başlatma Yöneticisi için benzersiz tanımlayıcı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeniden başlatma Yöneticisi, kayıt defterinde açık belgeleri ilgili bilgileri kaydeder. Bu bilgileri yeniden benzersiz tanımlayıcısına sahip anahtar olarak depolanır. Yeniden başlatma tanımlayıcısı uygulamanın her örneği için benzersiz olduğundan, bir uygulamanın birden çok örneği beklenmedik bir şekilde sonlandırılabilir ve yeniden başlatma Yöneticisi her birine kurtarabilirsiniz.  
@@ -578,7 +578,7 @@ virtual void SetSaveDocumentInfoOnIdle(BOOL bSaveOnIdle);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *bSaveOnIdle*|Geçerli boşta döngü sırasında belge bilgileri kaydetmek için TRUE; Kaydetme işlemi yapmayacak şekilde FALSE.|  
+|*bSaveOnIdle*|[in] Geçerli boşta döngü sırasında belge bilgileri kaydetmek için TRUE; Kaydetme işlemi yapmayacak şekilde FALSE.|  
   
 ##  <a name="setshutdownbyrestartmanager"></a>  CDataRecoveryHandler::SetShutdownByRestartManager  
  Uygulamanın önceki çıkış yeniden başlatma Yöneticisi tarafından kaynaklandı olup olmadığını belirler.  
@@ -592,7 +592,7 @@ virtual void SetShutdownByRestartManager(BOOL bShutdownByRestartManager);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *bShutdownByRestartManager*|Yeniden başlatma Yöneticisi uygulamadan çıkmak neden belirtmek için TRUE; Uygulama başka bir nedenle çıkıldı belirtmek için FALSE.|  
+|*bShutdownByRestartManager*|[in] Yeniden başlatma Yöneticisi uygulamadan çıkmak neden belirtmek için TRUE; Uygulama başka bir nedenle çıkıldı belirtmek için FALSE.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework, önceki çıkış olup olmadığını beklenmiyordu veya olup yeniden başlatma Yöneticisi tarafından başlatılan farklı göre davranır.  
@@ -609,7 +609,7 @@ virtual BOOL UpdateDocumentInfo(CDocument* pDocument);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pDocument*|Kaydedilen belge işaretçisi.|  
+|*pDocument*|[in] Kaydedilen belge işaretçisi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem otomatik kaydedilmiş belge silindi ve güncelleştirilmiş belge bilgileri gerekiyorsa TRUE; Bir hata oluştuğunda FALSE.  

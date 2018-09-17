@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef1eb1c0c1ee8c9fb2814bc7cd808ea2e524b8a4
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 149facb5ed934b68d3407f9acc17238482021f06
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200339"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716322"
 ---
 # <a name="general-manifest-tool-configuration-properties-ltprojectnamegt-property-pages-dialog-box"></a>Genel, bildirim aracı, yapılandırma özellikleri, &lt;Projectname&gt; özellik sayfaları iletişim kutusu
 Genel seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](https://msdn.microsoft.com/library/aa375649).  
@@ -32,18 +32,21 @@ Genel seçeneklerini belirtmek için bu iletişim kutusunu kullanın [Mt.exe](ht
  Bu özellik sayfası iletişim kutusu erişmek için projenizi veya, özellik sayfası için özellik sayfalarını açın. Genişletin **bildirim aracında** düğümünde **yapılandırma özellikleri**ve ardından **genel**.  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Başlangıç başlığını gösterme**  
- **Evet (/ nologo)** bildirim aracı başlatıldığında standart Microsoft telif hakkı verileri gizlenir belirtir. Bir yapı ortamı veya bir yapı işleminin bir parçası olarak mt.exe çalıştırdığınızda günlük dosyalarında istenmeyen çıkış gizlemek için bu seçeneği kullanın.  
+- **Başlangıç başlığını gösterme**
+
+   **Evet (/ nologo)** bildirim aracı başlatıldığında standart Microsoft telif hakkı verileri gizlenir belirtir. Bir yapı ortamı veya bir yapı işleminin bir parçası olarak mt.exe çalıştırdığınızda günlük dosyalarında istenmeyen çıkış gizlemek için bu seçeneği kullanın.  
   
- **Ayrıntılı çıkış**  
- **Evet (/ verbose)** bildirim oluşturulması sırasında ek yapı bilgilerini gösterileceğini belirtir.  
+- **Ayrıntılı çıkış**
+
+   **Evet (/ verbose)** bildirim oluşturulması sırasında ek yapı bilgilerini gösterileceğini belirtir.  
   
- **Derleme kimliği**  
- Bir kimlik dizesi belirtmek için /identity seçeneğini kullanan özniteliklerini oluşan [ \<assemblyIdentity > öğesi](/visualstudio/deployment/assemblyidentity-element-clickonce-application). Bir kimlik dizesi değeri ile başlayan `name` özniteliği ve takip *özniteliği* = *değer* çiftleri. Bir kimlik dizesi öznitelikleri virgülle sınırlandırılmıştır.  
+- **Derleme kimliği**
+
+   Bir kimlik dizesi belirtmek için /identity seçeneğini kullanan özniteliklerini oluşan [ \<assemblyIdentity > öğesi](/visualstudio/deployment/assemblyidentity-element-clickonce-application). Bir kimlik dizesi değeri ile başlayan `name` özniteliği ve takip *özniteliği* = *değer* çiftleri. Bir kimlik dizesi öznitelikleri virgülle sınırlandırılmıştır.  
   
- Kimlik dizesi örneği verilmiştir:  
+   Kimlik dizesi örneği verilmiştir:  
   
- `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`  
+   `Microsoft.Windows.Common-Controls, processorArchitecture=x86, version=6.0.0.0, type=win32, publicKeyToken=6595b64144ccf1df`  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [ClickOnce Uygulama bildirimi](/visualstudio/deployment/clickonce-application-manifest)   

@@ -22,41 +22,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 493199cf4d5e66a866fbaa87aafc4098c3114cf6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eeec9ddce36777fc6fcb15b30a864f1c04a7b09b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373835"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700849"
 ---
 # <a name="gt-support-fiber-safe-thread-local-storage"></a>/GT (Fiber-Güvenli İş Parçacığı-Yerel Depolamayı Destekle)
-Statik iş parçacığı yerel depolama, diğer bir deyişle, ile ayrılmış veri kullanılarak ayrılmış veriler için Fiber güvenliği destekleyen `__declspec(thread)`.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/GT  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Veri bildirilen ile `__declspec(thread)` bir iş parçacığı yerel depolaması (TLS) dizisi başvurulur. Her iş parçacığı için sistem tutar adresler dizisinin TLS dizisidir. Bu dizinin her adresi iş parçacığı yerel depolama verilerin konumunu sağlar.  
-  
- Bir fiber bir yığını ve bir kayıt bağlamı oluşur ve çeşitli iş parçacıklarında zamanlanmış basit bir nesnedir. Bir fiber hiçbir iş parçacığı üzerinde çalışabilir. Bir fiber takas ve daha sonra farklı bir iş parçacığı yeniden çünkü TLS dizi adresini gerekir değil önbelleğe alınacak veya işlev çağrısı arasında ortak bir alt en iyi duruma getirilmiş (bkz [/Og (Global iyileştirmeler)](../../build/reference/og-global-optimizations.md) seçenek için Ayrıntılar için). **/GT** gibi en iyi duruma getirme engeller.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **en iyi duruma getirme** özellik sayfası.  
-  
-4.  Değiştirme **etkinleştirmek Fiber-güvenli iyileştirmeler** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFiberSafeOptimizations%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Statik iş parçacığı yerel depolama, diğer bir deyişle, ile ayrılmış veri kullanılarak yer ayrılmış veri için Fiber güvenliğini destekler `__declspec(thread)`.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/GT
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Veri ile bildirilmiş `__declspec(thread)` iş parçacığı yerel depolama (TLS) dizisi başvurulur. TLS dizi, sistem her iş parçacığı için tutar adresleri dizisidir. Bu dizinin her adresi iş parçacığı yerel depolama veri konumunu sağlar.
+
+Bir fiber bir yığın ve kayıt bağlam oluşur ve çeşitli iş parçacıklarında zamanlanabilir basit bir nesnedir. Bir fiber herhangi bir iş parçacığı üzerinde çalıştırabilirsiniz. Bir fiber takas ve daha sonra farklı bir iş parçacığını yeniden olduğundan, TLS dizi adresini gerekir önbelleğe veya ortak bir alt ifade bir işlev çağrısı arasında en iyi duruma getirilmiş (bkz [/Og (Global iyileştirmeler)](../../build/reference/og-global-optimizations.md) seçeneğini Ayrıntılar için). **/GT** gibi iyileştirmeler engeller.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **iyileştirme** özellik sayfası.
+
+1. Değiştirme **Fiber uyumlu iyileştirmeleri etkinleştir** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.EnableFiberSafeOptimizations%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

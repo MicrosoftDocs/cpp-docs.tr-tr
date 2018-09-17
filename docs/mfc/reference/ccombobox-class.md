@@ -118,12 +118,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4fc2eb252c81e903174d99d4a55b2f3c1eed321
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 4b0226e38b34268217b4f21a1f5262cd1f1afbec
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205293"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702097"
 ---
 # <a name="ccombobox-class"></a>CComboBox sınıfı
 Windows birleşik giriş kutusu işlevlerini sağlar.  
@@ -612,8 +612,8 @@ BOOL GetCueBanner(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *lpszText*|İşaret başlık metnini alan arabellek için işaretçi.|  
-|[in] *cchText*|Arabellek boyutu, *lpszText* parametresi işaret eder.|  
+|*lpszText*|[out] İşaret başlık metnini alan arabellek için işaretçi.|  
+|*cchText*|[in] Arabellek boyutu, *lpszText* parametresi işaret eder.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk aşırı yükleme içinde bir [CString](../../atl-mfc-shared/using-cstring.md) varsa; işaret başlık metnini içeren nesne Aksi halde, bir `CString` sıfır uzunlukta bir nesne.  
@@ -1048,7 +1048,7 @@ BOOL SetCueBanner(LPCTSTR lpszText);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *lpszText*|İşaret metni içeren null ile sonlandırılmış bir arabellek için işaretçi.|  
+|*lpszText*|[in] İşaret metni içeren null ile sonlandırılmış bir arabellek için işaretçi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1291,7 +1291,7 @@ BOOL SetMinVisibleItems(int iMinVisible);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iMinVisible*|Görünen öğeleri en az sayısını belirtir.|  
+|*iMinVisible*|[in] Görünen öğeleri en az sayısını belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

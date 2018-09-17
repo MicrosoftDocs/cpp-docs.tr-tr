@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bad61c157926fd417467afaa2d97d0db517430f6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c43139dd1d927d9e6173d9e78765d0fcdbddae6a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201562"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716020"
 ---
 # <a name="dbsource"></a>db_source
 
@@ -43,11 +43,11 @@ Bir veri kaynağı için bir bağlantı oluşturur.
 *db_source*  
 Veri kaynağına bağlanmak için kullanılan bağlantı dizesi. Bağlantı dizesinin biçimi için bkz: [bağlantı dizelerini ve veri bağlantıları](/previous-versions/windows/desktop/ms718376\(v=vs.85\)) içinde SDK Microsoft Data Access Components (MDAC).
 
-*Ad* (isteğe bağlı)  
-Kullanırken **db_source** bir sınıfta *adı* sahip bir veri kaynağı nesnesinin bir örneğini **db_source** (bkz. örnek 1) uygulanan bir öznitelik. Kullanırken **db_source** satır bir yöntem uygulaması içinde *adı* verilere erişmek için kullanılan bir değişken (yöntemi yerel) (2 örneğe bakın) kaynak. Bu geçirdiğiniz *adı* için *source_name* parametresinin `db_command` veri kaynağı bir komut ile ilişkilendirilecek.
+*Adı*  
+(İsteğe bağlı) Kullanırken **db_source** bir sınıfta *adı* sahip bir veri kaynağı nesnesinin bir örneğini **db_source** (bkz. örnek 1) uygulanan bir öznitelik. Kullanırken **db_source** satır bir yöntem uygulaması içinde *adı* verilere erişmek için kullanılan bir değişken (yöntemi yerel) (2 örneğe bakın) kaynak. Bu geçirdiğiniz *adı* için *source_name* parametresinin `db_command` veri kaynağı bir komut ile ilişkilendirilecek.
 
-*HRESULT* (isteğe bağlı)  
-Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
+*HRESULT*  
+(İsteğe bağlı) Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
 
 ## <a name="remarks"></a>Açıklamalar
 

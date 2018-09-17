@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc74f89708132b0895c8980538b852c15087b5e6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 4e987910cf27135858d4fe272bc02da7c90f622f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43682333"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710157"
 ---
 # <a name="cpanedialog-class"></a>CPaneDialog sınıfı
 `CPaneDialog` Sınıfı, engelleyici olmayan, yerleştirilebilir bir iletişim kutusunu destekler.  
@@ -122,32 +122,32 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszWindowName*  
- Yerleştirme iletişim kutusunun adı.  
+*lpszWindowName*<br/>
+[in] Yerleştirme iletişim kutusunun adı.  
   
- [in] *pParentWnd*  
- Üst pencere işaret eder.  
+*pParentWnd*<br/>
+[in] Üst pencere işaret eder.  
   
- [in] *bHasGripper*  
- Bir resim yazısı (kavrayıcı); yerleştirme iletişim kutusu oluşturmak için TRUE Aksi takdirde FALSE.  
+*bHasGripper*<br/>
+[in] Bir resim yazısı (kavrayıcı); yerleştirme iletişim kutusu oluşturmak için TRUE Aksi takdirde FALSE.  
   
- [in] *lpszTemplateName*  
- Kaynak iletişim şablonunun adı.  
+*lpszTemplateName*<br/>
+[in] Kaynak iletişim şablonunun adı.  
   
- [in] *nStyle*  
- Windows stili.  
+*nStyle*<br/>
+[in] Windows stili.  
   
- [in] *nID*  
- Denetim kimliği.  
+*nID*<br/>
+[in] Denetim kimliği.  
   
- [in] *nIDTemplate*  
- İletişim şablonu kaynak kimliği.  
+*nIDTemplate*<br/>
+[in] İletişim şablonu kaynak kimliği.  
   
- [in] *dwTabbedStyle*  
- Kullanıcı bu denetimi bölme açıklamalı alt yazı başka bir Denetim Masası sürüklediğinde sonuçları sekmeli pencere stili. AFX_CBRS_REGULAR_TABS varsayılan değerdir. Daha fazla bilgi için Açıklamalar bölümüne bakın. [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
+*dwTabbedStyle*<br/>
+[in] Kullanıcı bu denetimi bölme açıklamalı alt yazı başka bir Denetim Masası sürüklediğinde sonuçları sekmeli pencere stili. AFX_CBRS_REGULAR_TABS varsayılan değerdir. Daha fazla bilgi için Açıklamalar bölümüne bakın. [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
- [in] *dwControlBarStyle*  
- Ek stil öznitelikleri. AFX_DEFAULT_DOCKING_PANE_STYLE varsayılan değerdir. Daha fazla bilgi için Açıklamalar bölümüne bakın. [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
+*dwControlBarStyle*<br/>
+[in] Ek stil öznitelikleri. AFX_DEFAULT_DOCKING_PANE_STYLE varsayılan değerdir. Daha fazla bilgi için Açıklamalar bölümüne bakın. [CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -170,11 +170,11 @@ afx_msg LRESULT HandleInitDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *wParam*  
- Varsayılan klavye odağının alınacağı denetimi için işler.  
+*wParam*<br/>
+[in] Varsayılan klavye odağının alınacağı denetimi için işler.  
   
- [in] *lParam*  
- Ek başlatma verilerini belirtir.  
+*lParam*<br/>
+[in] Ek başlatma verilerini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE. Ayrıca, doğru klavye odağı tarafından belirtilen denetim ayarlar *wParam* parametre; Varsayılan klavye odağı ayarını FALSE engeller.  
@@ -190,8 +190,8 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pOccDialogInfo*  
- İletişim kutusu nesnesi oluşturmak için kullanılan bir iletişim kutusunda şablon için işaretçi. Bu parametrenin değerini daha sonra içine geçirilen [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemi.  
+*pOccDialogInfo*<br/>
+[in] İletişim kutusu nesnesi oluşturmak için kullanılan bir iletişim kutusunda şablon için işaretçi. Bu parametrenin değerini daha sonra içine geçirilen [COccManager::CreateDlgControls](../../mfc/reference/coccmanager-class.md#createdlgcontrols) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman TRUE.  

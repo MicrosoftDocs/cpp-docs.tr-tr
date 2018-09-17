@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 356480333a62d998213726016f3940b318c218a0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0e69d1a7c62d4e9c52cc628f30f94c346d83647f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367946"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715422"
 ---
 # <a name="image-format"></a>Görüntü Biçimi
-Yürütülebilir görüntü biçimi PE32 +'dır. Statik görüntü verilerini adreslemek için göreli bir 32 bit öteleme ile adresleme kullanılabilmesi için yürütülebilir görüntü (DLL'ler ve exe) sınırını 2 gigabayt kısıtlanır. Bu veriler, içeri aktarma adres tablosunu, dize sabitleri, statik genel verileri vb. içerir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 Yazılım Kuralları](../build/x64-software-conventions.md)
+
+Yürütülebilir görüntü biçimi PE32 +'dır. Yürütülebilir görüntüler (dll ve exe) 2 gigabayt cinsinden maksimum boyutu için kısıtlı olduğundan statik resim verilerini adreslemek için göreli bir 32-bit öteleme ile adresleme kullanılabilir. Bu veriler, içeri aktarma adres tablosunda, dize sabitleri, statik bir genel veri vb. içerir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[x64 Yazılım Kuralları](../build/x64-software-conventions.md)

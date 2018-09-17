@@ -22,54 +22,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eac7df694994b625e08ded710d43837d857df2d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 51305212f97482c6963ee2ba0d272c5c4692416e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378346"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709403"
 ---
 # <a name="showincludes-list-include-files"></a>/showIncludes (Liste Dosyaları İçerir)
-Dosyaları Ekle listesini çıkarmak derleyici neden olur. İç içe geçmiş içeren dosyalardır de (eklediğiniz dosyalarından dahil edilen görüntülenen dosyalar).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/showIncludes  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir içerme dosyası derleme sırasında karşılaşıldığında, bir ileti çıktı, örneğin şöyledir:  
-  
-```  
-Note: including file: d:\MyDir\include\stdio.h  
-```  
-  
- İç içe geçmiş dahil dosyaları belirtilir girinti, her iç içe geçme düzeyi için bir boşluk tarafından örneğin:  
-  
-```  
-Note: including file: d:\temp\1.h  
-Note: including file:  d:\temp\2.h  
-```  
-  
- Bu durumda, `2.h` gelen içinde dahil edildiğinden `1.h`, bu nedenle girinti.  
-  
- **/Showıncludes** seçeneği yayar için `stderr`değil `stdout`.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **Göster içeren** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Ekleme kodu dosyalarının bir listesini çıkarmak derleyicinin neden olur. İç içe geçmiş içeren dosyaları (dahil dosyalarından içerdiği görüntülenen dosyaları) de bulunur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/showIncludes
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+İçerme dosyası derlenirken karşılaşıldığında, bir ileti çıktı, örneğin.
+
+```
+Note: including file: d:\MyDir\include\stdio.h
+```
+
+İç içe geçmiş içeren dosyaları gösterilen bir girinti, her iç içe geçme düzeyi için bir alanı örneğin:
+
+```
+Note: including file: d:\temp\1.h
+Note: including file:  d:\temp\2.h
+```
+
+Bu durumda, `2.h` gelen içinde gelen `1.h`, bu nedenle girinti.
+
+**/Showıncludes** seçeneği yayan için `stderr`değil `stdout`.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **Göster içerir** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ShowIncludes%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

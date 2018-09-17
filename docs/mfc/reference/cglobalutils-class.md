@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c92ccfe9dbf25fa1355885a5f6dd3570df4884b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2c594e86c0e0bcb74fe624743c863c70a1c7f9e6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464685"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707817"
 ---
 # <a name="cglobalutils-class"></a>CGlobalUtils sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -104,8 +104,8 @@ void AdjustRectToworkArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *dikdörtgen*  
- [in] *pRectDelta*  
+*Rect*<br/>
+[out içinde] [in] *pRectDelta*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -123,12 +123,12 @@ void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *barContainerManager*  
- [in] *pWndTodock*  
- [in] *ptMouse*  
- [out] *rectResult*  
- [out] *bDrawTab*  
- [out] *ppTargetBar*  
+*barContainerManager*<br/>
+[in] [in] *pWndTodock*  
+*ptMouse*<br/>
+[in] [out] *rectResult*  
+*bDrawTab*<br/>
+[out] [out] *ppTargetBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -176,14 +176,14 @@ BOOL CheckAlignment(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- [in] *pBar*  
- [in] *nSensitivity*  
- [in] *pDockManager*  
- [in] *bOuterEdge*  
- [out] *dwAlignment*  
- [in] *dwEnabledDockBars*  
- [in] *lpRectBounds*  
+*Noktası*<br/>
+[in] [in] *pBar*  
+*nSensitivity*<br/>
+[in] [in] *pDockManager*  
+*bOuterEdge*<br/>
+[in] [out] *dwAlignment*  
+*dwEnabledDockBars*<br/>
+[in] [in] *lpRectBounds*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -199,8 +199,8 @@ BOOL CyFromString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *cy*  
- [in] *psz*  
+*CY*<br/>
+[out] [in] *psz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -216,8 +216,8 @@ BOOL DecimalFromString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *ondalık*  
- [in] *psz*  
+*decimal*<br/>
+[out] [in] *psz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -233,8 +233,8 @@ void FlipRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *dikdörtgen*  
- [in] *nDegrees*  
+*Rect*<br/>
+[out içinde] [in] *nDegrees*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -249,8 +249,8 @@ void ForceAdjustLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pDockManager*  
- [in] *bForce*  
+*pDockManager*<br/>
+[out içinde] [in] *bForce*  
  [in] *bForceInvisible*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -297,12 +297,12 @@ BOOL GetPaneAndAlignFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *barContainerManager*  
- [in] *pt*  
- [out] *ppTargetControlBar*  
- [out] *dwAlignment*  
- [out] *bTabArea*  
- [out] *bCaption*  
+*barContainerManager*<br/>
+[in] [in] *pt*  
+*ppTargetControlBar*<br/>
+[out] [out] *dwAlignment*  
+*bTabArea*<br/>
+[out] [out] *bCaption*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -333,8 +333,8 @@ void SetNewParent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lstControlBars*  
- [in] *pNewParent*  
+*lstControlBars*<br/>
+[in] [in] *pNewParent*  
  [in] *bCheckVisibility*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -349,8 +349,8 @@ BOOL StringFromCy(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *str*  
- [in] *cy*  
+*str*<br/>
+[out] [in] *cy*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -366,8 +366,8 @@ BOOL StringFromDecimal(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *str*  
- [in] *ondalık*  
+*str*<br/>
+[out] [in] *ondalık*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   

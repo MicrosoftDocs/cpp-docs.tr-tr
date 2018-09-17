@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94d9b49983ff75af7064e89279209447d099f0d1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: afc569f0c0158b1bab327dc0b6c32951fd28e483
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370299"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713615"
 ---
 # <a name="headers"></a>/HEADERS
-```  
-/HEADERS  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek, dosya üstbilgisi ve her bölüm başlığı görüntüler. Bir kitaplığı ile kullanıldığında, her üye nesne için üst bilgiyi görüntüler.  
-  
- Yalnızca **/HEADERS** DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+```
+/HEADERS
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, dosya üst bilgisi ve her bölüm için bir başlık görüntüler. Bir kitaplığıyla kullanılırsa, her üye nesne için üst bilgi görüntüler.
+
+Yalnızca **OPTIONAL** DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

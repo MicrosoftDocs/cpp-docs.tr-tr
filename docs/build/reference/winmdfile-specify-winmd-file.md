@@ -14,34 +14,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eaf1bfc805db568a012c28d66361bbd99745a95
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bdea558f1c9a56e68a8e2e61703b92ea569a0629
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375603"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709897"
 ---
 # <a name="winmdfile-specify-winmd-file"></a>/WINMDFILE (winmd Dosyası Belirtin)
-Tarafından oluşturulan Windows çalışma zamanı meta verileri (.winmd) çıktı dosyası için dosya adını belirten [/WINMD](../../build/reference/winmd-generate-windows-metadata.md) bağlayıcı seçeneği.  
-  
-```  
-/WINMDFILE:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirtilen değeri kullanmak `filename` varsayılan .winmd dosya adı geçersiz kılmak için (`binaryname`.winmd). İçin ".winmd" eklemeyin fark `filename`.  Birden çok değerleri üzerinde listeleniyorsa **/WINMDFILE** komut satırı sonuncu önceliklidir.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **bağlayıcı** klasör.  
-  
-3.  Seçin **Windows meta verileri** özellik sayfası.  
-  
-4.  İçinde **Windows meta veri dosyası** kutusuna, dosya konumu girin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/ WINMD (Windows meta verileri oluşturun)](../../build/reference/winmd-generate-windows-metadata.md)   
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Tarafından oluşturulan Windows çalışma zamanı meta veri (.winmd) çıktı dosyasının dosya adını belirtir [/WINMD](../../build/reference/winmd-generate-windows-metadata.md) bağlayıcı seçeneği.
+
+```
+/WINMDFILE:filename
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirtilen değeri kullanın `filename` varsayılan .winmd dosyası adını geçersiz kılacak (`binaryname`.winmd). İçin ".winmd" eklemeyin fark `filename`.  Birden çok değer üzerinde listeleniyorsa **/wınmdfıle** komut satırı, sonuncu öncelik alır.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **bağlayıcı** klasör.
+
+1. Seçin **Windows meta verileri** özellik sayfası.
+
+1. İçinde **Windows meta veri dosyası** kutusuna, dosya konumu girin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/ WINMD (Windows meta verileri oluşturun)](../../build/reference/winmd-generate-windows-metadata.md)
+[bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

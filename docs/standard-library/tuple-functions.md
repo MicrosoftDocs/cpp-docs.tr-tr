@@ -17,12 +17,12 @@ helpviewer_keywords:
 - std::get [C++]
 - std::make_tuple [C++]
 - std::tie [C++]
-ms.openlocfilehash: f0b995c4a966481e02ebd96748b247fd8844f19f
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: c9280de6a2fde3ce2758b5884437704a2cdd879f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966413"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712770"
 ---
 # <a name="lttuplegt-functions"></a>&lt;Tanımlama grubu&gt; işlevleri
 
@@ -64,17 +64,17 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>Parametreler
 
-*Index*  
- Alınacak öğenin dizini.
+*Index*<br/>
+Alınacak öğenin dizini.
 
-*Türler*  
- Bildirim sırasında tanımlama grubu türleri dizisi bildirilmiş.
+*Türler*<br/>
+Bildirim sırasında tanımlama grubu türleri dizisi bildirilmiş.
 
-*T*  
- Alınacak öğenin türü.
+*T*<br/>
+Alınacak öğenin türü.
 
-*Tanımlama grubu*  
- Herhangi bir sayıda öğe içeren std::tuple.
+*Tanımlama grubu*<br/>
+Herhangi bir sayıda öğe içeren std::tuple.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -122,11 +122,11 @@ template <class T1, class T2, ..., class TN>
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*  
- Nth işlevi parametrenin türü.
+*TN*<br/>
+Nth işlevi parametrenin türü.
 
-*TN*  
- Nth işlevi parametresinin değeri.
+*TN*<br/>
+Nth işlevi parametresinin değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -180,8 +180,8 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 
 ### <a name="parameters"></a>Parametreler
 
-*TN*  
- Nth demet öğesi temel türü.
+*TN*<br/>
+Nth demet öğesi temel türü.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e6ec22be873dcec06f224913eb905a2779e4efd
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: dac2df26f393b7491d94abdb6d987a8e424723e1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42465360"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715565"
 ---
 # <a name="region-endregion"></a>region, endregion
 `#pragma region` Genişlet veya daralt kullanarak bir kod bloğunu belirtmenizi sağlar [anahat oluşturma özelliği](/visualstudio/ide/outlining) Visual Studio Kod Düzenleyicisi'nin.  
@@ -40,11 +40,11 @@ ms.locfileid: "42465360"
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-*Yorum* (isteğe bağlı)  
-Kod Düzenleyicisi'nde görüntüleyen bir açıklama.  
+*Açıklama*  
+(İsteğe bağlı) Kod Düzenleyicisi'nde görüntüleyen bir açıklama.  
   
-*Ad* (isteğe bağlı)  
-Bölge adı.  Bu ad, Kod Düzenleyicisi'nde görüntülenir.  
+*Adı*  
+(İsteğe bağlı) Bölge adı.  Bu ad, Kod Düzenleyicisi'nde görüntülenir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  

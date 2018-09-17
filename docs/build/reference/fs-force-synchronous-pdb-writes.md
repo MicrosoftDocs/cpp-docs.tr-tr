@@ -17,41 +17,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8565022a77742a1a8c7ed1f243a192d94c8627fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b332782cb9bcd929bcd67d4d81b7a7d0259f53cc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374797"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714603"
 ---
 # <a name="fs-force-synchronous-pdb-writes"></a>/FS (Zaman Uyumlu PDB Yazmalarını Zorla)
-Zorlar program veritabanı (PDB) dosyasına yazar — tarafından oluşturulan [/zı](../../build/reference/z7-zi-zi-debug-information-format.md) veya [/zı](../../build/reference/z7-zi-zi-debug-information-format.md)— MSPDBSRV serileştirilmesi için. EXE.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/FS  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, zaman **/zı** veya **/zı** belirtilirse, derleyicinin türü bilgilerini ve simgesel hata ayıklama bilgilerini yazmak için PDB dosyalarını kilitler. Bu, derleyicinin türlerinin sayısı büyük olduğunda türü bilgileri oluşturmak için gereken süreyi önemli ölçüde azaltabilir. Başka bir işlem PDB dosya geçici olarak kilitler — Örneğin, bir virüsten koruma programı — derleyici tarafından yazma başarısız olabilir ve önemli bir hata oluşabilir. Cl.exe birden çok kopyasının aynı PDB dosyası eriştiğinizde Bu sorun ayrıca oluşabilir — Örneğin, çözümünüzü bağımsız varsa aynı projeleri ara dizinleri veya çıkış dizinleri ve paralel derlemeleri etkinleştirilir. **/FS** derleyici seçeneği derleyici PDB dosyası kilitlemelerini engeller ve MSPDBSRV gitmek için yazma zorlar. EXE erişim serileştirir. Bu derlemeleri önemli ölçüde uzun hale getirebilir ve cl.exe birden çok örneği aynı anda PDB dosyası eriştiğinizde oluşabilecek tüm hatalar engellemez. Böylece bağımsız projeleri Ara ayırmak yazma ve çıktı konumlarını ya da sizin olun projelerden biri diğerine bağımlı serileştirilmiş zorla proje derlemeleri çözümünüzü değiştirmenizi öneririz.  
-  
- [/MP](../../build/reference/mp-build-with-multiple-processes.md) seçeneği belirlendiğinde **/FS** varsayılan olarak.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **C/C++** klasör.  
-  
-3.  Seçin **komut satırı** özellik sayfası.  
-  
-4.  Değiştirme **ek seçenekler** eklenecek özellik `/FS` ve ardından **Tamam**.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Zorlar, program veritabanı (PDB) dosyasına yazar — tarafından oluşturulan [/zi](../../build/reference/z7-zi-zi-debug-information-format.md) veya [/zi](../../build/reference/z7-zi-zi-debug-information-format.md)— MSPDBSRV seri hale. EXE.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/FS
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, zaman **/zi** veya **/zi** belirtilirse, derleyicinin tür bilgisini ve sembolik hata ayıklama bilgisini yazmak için PDB dosyalarını kilitler. Bu, derleyicinin türleri sayısı büyük olduğunda tür bilgisi üretmek için gereken süreyi önemli ölçüde azaltabilir. Başka bir işlem PDB dosyası geçici olarak kilitler, — örneğin, virüsten koruma programı — derleyici tarafından yazma işlemleri başarısız olabilir ve önemli bir hata oluşabilir. Cl.exe birden çok kopyasını aynı PDB dosyası eriştiğinizde de bu sorun oluşabilir; Örneğin, bağımsız bir çözümünüz varsa aynı kullanan projeler Ara dizin veya çıkış dizinleri ve paralel yapılar etkinleştirilir. **/FS** derleyici seçeneği derleyici PDB dosyası kilitlemelerini engeller ve MSPDBSRV gitmek için yazma zorlar. EXE erişim serileştirir. Bu derlemeler önemli ölçüde uzun yapabilir ve birden çok cl.exe aynı anda PDB dosyası erişirken oluşabilecek tüm hatalar engellemez. Böylece Ara ayırmak bağımsız projeler yazma ve çıktı konumlarını ya da olun projelerden biri diğerine bağımlı serileştirilmiş zorla proje derlemeleri çözümünüzü değiştirmenizi öneririz.
+
+[/MP](../../build/reference/mp-build-with-multiple-processes.md) seçeneğini etkinleştirir **/FS** varsayılan olarak.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **C/C++** klasör.
+
+1. Seçin **komut satırı** özellik sayfası.
+
+1. Değiştirme **ek seçenekler** eklenecek özellik `/FS` seçip **Tamam**.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

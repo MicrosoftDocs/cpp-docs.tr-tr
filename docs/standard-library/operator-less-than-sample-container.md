@@ -24,19 +24,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93c56a5b56cfa52affa48b02892734db74a41106
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: fd6e3343c4b0d64e16ce1d1a33d94ecaa7ef3fa5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33852783"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713549"
 ---
 # <a name="operatorlt-ltsample-containergt"></a>İşleç&lt; (&lt;örnek kapsayıcı&gt;)
 
 > [!NOTE]
-> Bu konu, Visual C++ belge C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsel bir örnek olarak kullanılıyor. Daha fazla bilgi için bkz: [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
+> Bu konuda C++ Standart Kitaplığı'nda kullanılan kapsayıcıları işlevsiz bir örnek olarak Visual C++ belgelerinin bulunduğu. Daha fazla bilgi için [C++ Standart Kitaplığı kapsayıcıları](../standard-library/stl-containers.md).
 
-Overloads **işleci <** iki nesne şablonu sınıfının Karşılaştırılacak [kapsayıcı](../standard-library/sample-container-class.md).
+Aşırı **işleç <** şablon sınıfının iki nesneleri karşılaştırmak için [kapsayıcı](../standard-library/sample-container-class.md).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -54,5 +54,5 @@ Döndürür `lexicographical_compare(left.begin, left.end, right.begin, right.en
 ## <a name="see-also"></a>Ayrıca bkz.
 
 [\<Örnek kapsayıcı >](../standard-library/sample-container.md)<br/>
-[Başlangıç](../standard-library/container-class-begin.md)<br/>
-[Bitiş](../standard-library/container-class-end.md)  
+[başlayın](../standard-library/container-class-begin.md)<br/>
+[Son](../standard-library/container-class-end.md)

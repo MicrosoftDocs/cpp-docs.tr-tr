@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1be97919f0f5b55d6e63eca8e59eb15e8ef9dff
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 9841b74d7bef74a117350b84747a606043d05d67
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42466159"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707674"
 ---
 # <a name="dataseg"></a>data_seg
 Başlatılmamış değişkenler .obj dosyasında depolandığı veri segmenti belirtir.  
@@ -34,31 +34,33 @@ Başlatılmamış değişkenler .obj dosyasında depolandığı veri segmenti be
 #pragma data_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
+### <a name="parameters"></a>Parametreler
+
+**push**<br/>
+(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A **anında iletme** olabilir bir *tanımlayıcı* ve *segment-name*.  
+
+**POP**<br/>
+(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+  
+*tanımlayıcı*<br/>
+(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
+  
+*tanımlayıcı* tek bir POP birden çok kayıt getirir **pop** komutu.  
+  
+*"segment-name"*<br/>
+(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
+  
+*"segment-class"*<br/>
+(İsteğe bağlı) 2.0. sürümden önceki C++ ile uyumluluk için dahildir. Yoksayılır.  
+  
 ## <a name="remarks"></a>Açıklamalar 
 
 Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.  
   
 OBJ dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. Başlatılmış değişkenleri için .obj dosyasındaki varsayılan segment .data ' dir. Başlatılmamış değişkenler sıfıra başlatılması kabul edilir ve .bss içinde depolanır.  
   
-**data_seg** hiçbir parametre olmadan için .data kesimi sıfırlar.  
-  
-*anında iletme* (isteğe bağlı)  
-İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
-  
-*POP* (isteğe bağlı)  
-Derleyici iç yığının en üstünden bir kayıt kaldırır.  
-  
-*tanımlayıcı* (isteğe bağlı)  
-İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
-  
-*tanımlayıcı* tek bir POP birden çok kayıt getirir *pop* komutu.  
-  
-*"segment-name"*(isteğe bağlı)  
-Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
-  
-*"segment-class"* (isteğe bağlı)  
-Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
-  
+**data_seg** hiçbir parametre olmadan için .data kesimi sıfırlar.
+
 ## <a name="example"></a>Örnek  
   
 ```cpp  

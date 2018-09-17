@@ -1,5 +1,5 @@
 ---
-title: -EP (#line yönergeleri olmadan stdout'ta Önişle) | Microsoft Docs
+title: -EP (#line yönergeleri olmadan stdout'ta önişle ön işleme) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,56 +21,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 38047fecbbd1bbaa87db3766b046efa8b446d93a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 598c202cbac0176cb77243c7f0f891ef94c3dcc6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375389"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714889"
 ---
 # <a name="ep-preprocess-to-stdout-without-line-directives"></a>/EP (#line Yönergeleri Olmadan stdout'ta Önişle)
-C ve C++ kaynak dosyalarını preprocesses ve standart çıktı aygıtına önceden işlenmiş dosyalarını kopyalar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/EP  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- İşlemdeki tüm önişlemci yönergeleri gerçekleştirilir, makrosu genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıkış açıklamaları korumak için kullanmak [/C (korumak açıklamaları sırasındaki)](../../build/reference/c-preserve-comments-during-preprocessing.md) seçeneğini **/EP**.  
-  
- **/EP** seçeneği derleme gizler. Derleme önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/EP** de çıktı dosyalarını bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için bkz: [/FA, /Fa (listeleme dosyası)](../../build/reference/fa-fa-listing-file.md) ve [(/FM eşlem dosyasını Adlandır)](../../build/reference/fm-name-mapfile.md).  
-  
- İşleme sonraki aşamaları sırasında oluşturulan hatalar özgün kaynak dosya yerine önceden işlenmiş dosya satır numaralarını bakın. Özgün kaynak dosyasına başvurmak için satır numaralarını istiyorsanız kullanın [/E (Stdout'a Önişle)](../../build/reference/e-preprocess-to-stdout.md) yerine. **/E** seçeneği ekler `#line` bu amaç için çıktıyı yönergeleri.  
-  
- İle önceden işlenmiş çıkış göndermek için `#line` yönergeleri, bir dosyaya kullanmak [/P (dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md) bunun yerine seçeneği.  
-  
- İle stdout önceden işlenmiş çıkış göndermek için `#line` yönergeleri kullanın **/P** ve **/EP** birlikte.  
-  
- Önceden derlenmiş üst bilgileri ile kullanamazsınız **/EP** seçeneği.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **önişlemci** özellik sayfası.  
-  
-4.  Değiştirme **ön işlemesi yapılan dosya oluşturmak** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki komut satırını dosya preprocesses `ADD.C`açıklamaları korur ve standart çıktı aygıtında sonucu görüntüler:  
-  
-```  
-CL /EP /C ADD.C  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+C ve C++ kaynak dosyalarını önceden işler ve standart çıktı cihazına önceden işlenmiş dosya kopyalar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/EP
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+İşleminde, tüm önişlemci yönergeleri gerçekleştirilir, makro genişletmeleri gerçekleştirilir ve açıklamaları kaldırılır. Önceden işlenmiş çıktı açıklamalarda korumak için kullanın [/C (korumak açıklamaları sırasındaki)](../../build/reference/c-preserve-comments-during-preprocessing.md) seçeneğini **/EP**.
+
+**/EP** seçeneği derleme bastırır. Derleme için önceden işlenmiş dosyayı yeniden göndermeniz gerekir. **/EP** çıktı dosyalarından da bastırır **/FA**, **/Fa**, ve **/Fm** seçenekleri. Daha fazla bilgi için [/FA, /Fa (listeleme dosyası)](../../build/reference/fa-fa-listing-file.md) ve [/Fm (eşlem dosyasını Adlandır)](../../build/reference/fm-name-mapfile.md).
+
+İşleme sonraki aşamaları sırasında oluşturulan hatalar için satır numaralarını önceden işlenmiş dosyayı yerine orijinal kaynak dosyasına bakın. Özgün kaynak dosyasına başvurmak için satır numaralarını istiyorsanız kullanın [/E (Stdout'a önişle)](../../build/reference/e-preprocess-to-stdout.md) yerine. **/E** seçeneği ekler `#line` yönergeleri bu amaç için çıktı.
+
+İle önceden işlenmiş çıkış göndermek için `#line` yönergelerini, bir dosyaya, kullanmak [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) bunun yerine seçeneği.
+
+İle stdout için önceden işlenmiş çıkış göndermek için `#line` yönergeleri kullanan **/P** ve **/EP** birlikte.
+
+Önceden derlenmiş üst bilgiler ile kullanamazsınız **/EP** seçeneği.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **önişlemci** özellik sayfası.
+
+1. Değiştirme **önceden işlenmiş dosya oluştur** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.GeneratePreprocessedFile%2A>.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki komut satırını dosyasını ön işlemden geçirir `ADD.C`yorumları korur ve sonucu standart çıktı cihazında gösterir:
+
+```
+CL /EP /C ADD.C
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 700c88fa71e82e35602efef768fc5753760a5e1a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: bc930fdc142dc7b044b4dbd60cfd459b7ce52aea
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42593486"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709156"
 ---
 # <a name="generic-functions-ccli"></a>Genel İşlevler (C++/CLI)
 
@@ -63,11 +63,11 @@ return-type identifier<type-parameter identifier(s)>
 
 ### <a name="parameters"></a>Parametreler
 
-*öznitelikleri* (isteğe bağlı)  
-Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
+*Öznitelikleri*  
+(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
-*değiştiriciler* (isteğe bağlı)  
-Statik gibi işlevine yönelik bir değiştirici.  **Sanal** sanal yöntem genel olamaz bu yana izin verilmez.
+*Değiştiriciler*  
+(İsteğe bağlı) Statik gibi işlevine yönelik bir değiştirici.  **Sanal** sanal yöntem genel olamaz bu yana izin verilmez.
 
 *dönüş türü*  
 Yöntem tarafından döndürülen tür. Dönüş türü void ise, dönüş değeri gereklidir.
@@ -78,8 +78,8 @@ Yöntem tarafından döndürülen tür. Dönüş türü void ise, dönüş değe
 *tür-parametresi tanımlayıcıları*  
 Tanımlayıcıları virgülle ayrılmış listesi.
 
-*Resmi-parametreler* (isteğe bağlı)  
-Parametre listesi.
+*Resmi-Parametreler*  
+(İsteğe bağlı) Parametre listesi.
 
 *tür parametresi kısıtlamaları tümceleri*  
 Bu tür bağımsız değişkenleri kullanılan türler üzerindeki kısıtlamaları belirtir ve belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md).

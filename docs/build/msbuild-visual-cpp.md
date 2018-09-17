@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 743aba156f9b937f28242b63e6deaf4c6dfb8369
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4bdb48c71c244adc2df5beef9668e12ee47f2b48
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369311"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703956"
 ---
 # <a name="msbuild-visual-c"></a>MSBuild (Visual C++)
-Kullanabileceğiniz **MSBuild** aracı komut isteminden bir Visual C++ uygulaması oluşturma. Derleme işlemi oluşturma ve düzenleme bir proje dosyası (.vcxproj) bilgileri tarafından denetlenir. Proje dosyası derleme aşamaları, koşulları ve olayları temel yapı seçenekleri belirtir.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
-  
-|Terim|Tanım|  
-|----------|----------------|  
-|[MSBuild’e (Visual C++) Genel Bakış](../build/msbuild-visual-cpp-overview.md)|Visual C++ nasıl kullandığını açıklar **MSBuild** sistem.|  
-|[Derleme Sistemi Değişiklikleri](../build/build-system-changes.md)|Geçerli yapı sistemi ve önceki sürümü arasındaki farklılıklar açıklanır.|  
-|[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Kullanarak bir Visual C++ projesi oluşturmak nasıl gösteren **MSBuild**.|  
-|[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)|Derlemede particuler aşamada oluşan bir eylem belirtin gösterilmiştir: derleme başlamadan önce; bağlantı adım başlamadan önce; veya ve yapı sona erdikten sonra.|  
-|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|Kullanıcı tanımlı bir aşama için derleme sırası eklemek gösterilmiştir.|  
-|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|Belirli bir dosya oluşturma aracını ilişkilendirilecek gösterilmiştir.|  
-|[Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|Proje özellikleri için özel bir araç seçeneklerini ekleneceği gösterilmektedir.|  
-|[Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Birden fazla çerçeveleri veya toolsets bir projeyi derlemek gösterilmiştir.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut satırında C/C++ kodu derleme](../build/building-on-the-command-line.md)
+
+Kullanabileceğiniz **MSBuild** komut isteminden Visual C++ uygulaması oluşturmak için aracı. Yapı işlemi oluşturma ve düzenleme bir proje dosyası (.vcxproj) bilgileri tarafından denetlenir. Proje dosyası derleme aşamaları, koşullar ve olayları temel derleme seçenekleri belirtir.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+|Terim|Tanım|
+|----------|----------------|
+|[MSBuild’e (Visual C++) Genel Bakış](../build/msbuild-visual-cpp-overview.md)|Visual C++ nasıl kullandığını açıklar **MSBuild** sistem.|
+|[Derleme Sistemi Değişiklikleri](../build/build-system-changes.md)|Geçerli derleme sistemi ve önceki sürümü arasındaki farklılıklar açıklanır.|
+|[İzlenecek yol: Visual C++ Projesi Oluşturmak için MSBuild Kullanma](../build/walkthrough-using-msbuild-to-create-a-visual-cpp-project.md)|Kullanarak bir Visual C++ projesi oluşturma işlemini gösterir **MSBuild**.|
+|[Nasıl Yapılır: MSBuild Projelerinde Derleme Olaylarını Kullanma](../build/how-to-use-build-events-in-msbuild-projects.md)|Gösterilmektedir yapı particuler aşamasında oluşan bir eylem belirtin: oluşturma başlamadan önce; bağlantı adım başlatılmadan önce; ya da yapı sona erdikten sonra.|
+|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Adımı Ekleme](../build/how-to-add-a-custom-build-step-to-msbuild-projects.md)|Kullanıcı tanımlı bir aşama için derleme sıra ekleme gösterir.|
+|[Nasıl Yapılır: MSBuild Projelerine Özel Derleme Araçları Ekleme](../build/how-to-add-custom-build-tools-to-msbuild-projects.md)|Bir yapı aracı belirli bir dosya ile ilişkilendirmek nasıl gösterir.|
+|[Nasıl Yapılır: Özel Araçlarla Proje Özelliklerini Tümleştirme](../build/how-to-integrate-custom-tools-into-the-project-properties.md)|Proje özellikleri için özel bir araç seçenekleri gösterilmektedir.|
+|[Nasıl Yapılır: Hedef Framework ve Platform Araç Kümesini Değiştirme](../build/how-to-modify-the-target-framework-and-platform-toolset.md)|Birden çok çerçeve veya araç takımları için proje derlemek nasıl gösterir.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Komut satırında C/C++ kodu derleme](../build/building-on-the-command-line.md)

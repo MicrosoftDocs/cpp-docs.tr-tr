@@ -24,60 +24,65 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 506f0900cfc7ef5f84e11b2c76d4b593f81d10ba
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: a580488650a1272ec1dffcd1f0ba27c736df92da
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109090"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705347"
 ---
 # <a name="i-additional-include-directories"></a>/I (Ek İçeren Dizinler)
+
 Bir dizin dahil etme dosyaları için Aranan dizinleri listesine ekler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```  
+```
 /I[ ]directory
-```  
+```
 
 ## <a name="arguments"></a>Arguments
+
 *Dizin*<br/>
 Dizinleri listesine eklenecek dizine dahil etme dosyaları için Aranan.
 
 ## <a name="remarks"></a>Açıklamalar
+
 Birden fazla dizin eklemek için bu seçeneği birden çok kez kullanın. Yalnızca belirlenen içerme dosyasına bulunana kadar dizinlerde arama yapılır.
 
 Ignore Standard INCLUDE Paths ile bu seçeneği kullanabilirsiniz ([/X (Ignore Standard INCLUDE Paths)](../../build/reference/x-ignore-standard-include-paths.md)) seçeneği.
 
 Derleyici dizinleri şu sırayla arar:
 
-1.  Kaynak dosyayı içeren dizinler.
+1. Kaynak dosyayı içeren dizinler.
 
-2.  İle belirtilen dizinlerde **/I** CL bunları karşılaştığında sırada seçeneği.
+1. İle belirtilen dizinlerde **/I** CL bunları karşılaştığında sırada seçeneği.
 
-3.  Belirtilen dizinleri **INCLUDE** ortam değişkeni.
+1. Belirtilen dizinleri **INCLUDE** ortam değişkeni.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2.  Tıklayın **C/C++** klasör.
+1. Tıklayın **C/C++** klasör.
 
-3.  Tıklayın **genel** özellik sayfası.
+1. Tıklayın **genel** özellik sayfası.
 
-4.  Değiştirme **ek içerik dizinleri** özelliği.
+1. Değiştirme **ek içerik dizinleri** özelliği.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalIncludeDirectories%2A>.
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalIncludeDirectories%2A>.
 
 ## <a name="example"></a>Örnek
+
 Aşağıdaki komutu şu sırayla MAIN.c tarafından talep edilen dahil edilme dosyalarını arar: ilk MAIN.c, ardından içinde \INCLUDE dizini'a ve ardından \MY\INCLUDE dizinde içeren ve son olarak dizinler atanmış EKLEMEYLE dizinde ortam değişkeni.
 
-```  
+```
 CL /I \INCLUDE /I\MY\INCLUDE MAIN.C
-```  
+```
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

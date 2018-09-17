@@ -22,41 +22,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47e287a9991f8192f16ec2f93e4068dc797ff72a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: adfa2e2feaf44f5f29c1a16b8e68642e438095fe
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376266"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703332"
 ---
 # <a name="od-disable-debug"></a>/Od (Devre Dışı Bırak (Hata Ayıkla))
-Programı tüm iyileştirmeler kapatır ve derleme hızlandırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Od  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek varsayılandır. Çünkü **/Od** kodu taşıma bastırır hata ayıklama işlemi basitleştirir. Hata ayıklama için derleyici seçenekleri hakkında daha fazla bilgi için bkz: [/Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **en iyi duruma getirme** özellik sayfası.  
-  
-4.  Değiştirme **en iyi duruma getirme** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)
+
+Programdaki tüm iyileştirmeler devre dışı bırakır ve derleme hızlandırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Od
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek varsayılandır. Çünkü **/Od** kod taşıma bastırır hata ayıklama işlemi basitleştirir. Hata ayıklama için derleyici seçenekleri hakkında daha fazla bilgi için bkz. [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **iyileştirme** özellik sayfası.
+
+1. Değiştirme **iyileştirme** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Optimization%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md)

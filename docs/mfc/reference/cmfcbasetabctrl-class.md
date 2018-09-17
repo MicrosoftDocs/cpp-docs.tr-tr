@@ -248,12 +248,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbd12c98014e2adfe9617f0bdaac891f33ebc600
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 866cdc59157aa39a3c6ecbece225d1789cfec789
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693932"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712585"
 ---
 # <a name="cmfcbasetabctrl-class"></a>CMFCBaseTabCtrl sınıfı
 Sekmeli pencereler için temel işlevselliğini uygular.  
@@ -436,11 +436,11 @@ void AddIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hIcon*  
- Simge eklemek için bir tanıtıcı.  
+*hIcon*<br/>
+[in] Simge eklemek için bir tanıtıcı.  
   
- [in] *iIcon*  
- Korunan simgesinin sıfır tabanlı dizin `CImageList m_Images` üyesi.  
+*iIcon*<br/>
+[in] Korunan simgesinin sıfır tabanlı dizin `CImageList m_Images` üyesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -463,20 +463,20 @@ virtual void AddTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTabWnd*  
- Bu yöntem yeni bir sekme temsil eden penceresine bir işaretçi.  
+*pTabWnd*<br/>
+[in] Bu yöntem yeni bir sekme temsil eden penceresine bir işaretçi.  
   
- [in] *lpszTabLabel*  
- Yeni sekmenin etiketini içeren bir dize.  
+*lpszTabLabel*<br/>
+[in] Yeni sekmenin etiketini içeren bir dize.  
   
- [in] *uiImageId*  
- Görüntü listesinden görüntü kimliği. Sekme denetimi bu görüntü, simge olarak yeni sekmesini kullanır.  
+*uiImageId*<br/>
+[in] Görüntü listesinden görüntü kimliği. Sekme denetimi bu görüntü, simge olarak yeni sekmesini kullanır.  
   
- [in] *uiResTabLabel*  
- Etiket için kaynak kimliği.  
+*uiResTabLabel*<br/>
+[in] Etiket için kaynak kimliği.  
   
- [in] *bDetachable*  
- Yeni sekme çıkarılabilir olup olmadığını belirleyen bir Boole parametresi.  
+*bDetachable*<br/>
+[in] Yeni sekme çıkarılabilir olup olmadığını belirleyen bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *pTabWnd* türünden türetilmediğinden bir nesneyi işaret [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve *bDetachable* doğru ise, framework için bir sarmalayıcı otomatik olarak oluşturur. *pTabWnd* nesne. Sarmalayıcı sağlar *pTabWnd* nesne çıkarılabilir. Varsayılan olarak, kapsayıcı örneğidir [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Varsayılan kapsayıcı tarafından sunulan işlevselliği kabul edilebilir değilse kullanmak [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) farklı bir sarmalayıcı belirtmek için yöntemi.  
@@ -546,14 +546,14 @@ virtual CWnd* CreateWrapper(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndToWrap*  
- Kaydırılan çerçeve penceresine bir işaretçi.  
+*pWndToWrap*<br/>
+[in] Kaydırılan çerçeve penceresine bir işaretçi.  
   
- [in] *lpszTabLabel*  
- Pencerenin etiketini içeren bir dize.  
+*lpszTabLabel*<br/>
+[in] Pencerenin etiketini içeren bir dize.  
   
- [in] *bDetachable*  
- Pencerenin çıkarılabilir olup olmadığını belirten bir Boole parametresi.  
+*bDetachable*<br/>
+[in] Pencerenin çıkarılabilir olup olmadığını belirten bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Türetilen bir sarmalayıcı işaretçiye `CDockablePane` , sınıf `CreateWrapper` başarıyla için bir sarmalayıcı sınıfı oluşturur *pWndToWrap*. Yöntem başarısız olursa, retruns *pWndToWrap*.  
@@ -576,14 +576,14 @@ virtual BOOL DetachTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dockMethod*  
- Tarafından sağlanan bir listelenmiş veri türü [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md). Bu veri türü sekmesi ayırmak için kullanılan yöntemi belirtir.  
+*dockMethod*<br/>
+[in] Tarafından sağlanan bir listelenmiş veri türü [CBasePane sınıfı](../../mfc/reference/cbasepane-class.md). Bu veri türü sekmesi ayırmak için kullanılan yöntemi belirtir.  
   
- [in] *nTabNum*  
- Ayrılmış olması için sekmesinde sıfır tabanlı dizini.  
+*nTabNum*<br/>
+[in] Ayrılmış olması için sekmesinde sıfır tabanlı dizini.  
   
- [in] *bHide*  
- Framework ayrılmış sekmesi Gizle olup olmadığını gösteren bir Boole parametresi.  
+*bHide*<br/>
+[in] Framework ayrılmış sekmesi Gizle olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -611,8 +611,8 @@ void EnableAutoColor(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Framework otomatik renkleri kullanıp kullanmayacağını belirleyen bir Boole parametresi.  
+*bSistemlerde*<br/>
+[in] Framework otomatik renkleri kullanıp kullanmayacağını belirleyen bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sekme denetimine bir dizi önceden tanımlanmış birkaç renkleri vardır. Framework otomatik renkleri kullandığında, her bir dizi sekmeye sekmesinde bu diziden sonraki renk atanır.  
@@ -627,8 +627,8 @@ BOOL EnableCustomToolTips(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Özel araç ipuçları kullanılıp kullanılmayacağını belirleyen bir Boole değeri.  
+*bSistemlerde*<br/>
+[in] Özel araç ipuçları kullanılıp kullanılmayacağını belirleyen bir Boole değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -644,8 +644,8 @@ virtual void EnableInPlaceEdit(BOOL bEnable) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Doğrudan sekmesini etiketlerini düzenleme etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole parametresi.  
+*bSistemlerde*<br/>
+[in] Doğrudan sekmesini etiketlerini düzenleme etkinleştirilip etkinleştirilmeyeceğini belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, doğrudan sekmesini etiketlerini düzenleme için sekmesinde denetimleri devre dışıdır.  
@@ -664,11 +664,11 @@ virtual BOOL EnableTabDetach(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini.  
   
- [in] *bSistemlerde*  
- Sekme çıkarılabilir olun gösteren bir Boole değeri.  
+*bSistemlerde*<br/>
+[in] Sekme çıkarılabilir olun gösteren bir Boole değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -681,8 +681,8 @@ void EnableTabSwap(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Sekme takas etkinleştirilip etkinleştirilmeyeceğini gösteren bir Boole değeri.  
+*bSistemlerde*<br/>
+[in] Sekme takas etkinleştirilip etkinleştirilmeyeceğini gösteren bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sekme takas etkin olduğunda, kullanıcı bir sekme sürükleyin ve sekme denetimindeki göreli konumunu değiştirebilirsiniz.  
@@ -695,8 +695,8 @@ virtual BOOL EnsureVisible(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -723,8 +723,8 @@ virtual CWnd* FindTargetWnd(const CPoint& pt) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pt*  
- İstemci alanını kullanarak tanımlanan bir noktası koordinatları [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesne.  
+*PT*<br/>
+[in] İstemci alanını kullanarak tanımlanan bir noktası koordinatları [CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir [CWnd](../../mfc/reference/cwnd-class.md) nesne başarılı; Aksi takdirde NULL.  
@@ -830,11 +830,11 @@ virtual CWnd* GetFirstVisibleTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *iTabNum*  
- Bir tamsayının bir başvuru. Bu yöntem, bu parametre için ilk görünür sekme sıfır tabanlı dizini yazar.  
+*iTabNum*<br/>
+[out] Bir tamsayının bir başvuru. Bu yöntem, bu parametre için ilk görünür sekme sıfır tabanlı dizini yazar.  
   
- [in] *iStartFrom*  
- Denetlenecek ilk sekme sıfır tabanlı dizini.  
+*iStartFrom*<br/>
+[in] Denetlenecek ilk sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa ilk görünür sekme için bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -935,11 +935,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectTabAreaTop*  
- Bir başvuru bir `CRect` nesne. `GetTabArea` Bu nesne, boyutunu ve konumunu üst sekme alanının depolamak için kullanır.  
+*rectTabAreaTop*<br/>
+[in] Bir başvuru bir `CRect` nesne. `GetTabArea` Bu nesne, boyutunu ve konumunu üst sekme alanının depolamak için kullanır.  
   
- [in] *rectTabAreaBottom*  
- Bir başvuru bir `CRect` nesne. `GetTabArea` Bu nesne, boyutunu ve konumunu alt sekme alanının depolamak için kullanır.  
+*rectTabAreaBottom*<br/>
+[in] Bir başvuru bir `CRect` nesne. `GetTabArea` Bu nesne, boyutunu ve konumunu alt sekme alanının depolamak için kullanır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sonra `GetTabArea` döndürür, `CRect` parametreleri, boyutunu ve sekme denetimi istemci koordinatları, sekme alanının konumunu içerir. Üst veya alt kısmındaki sekme denetimi sekme alanı ise `rectTabAreaTop` veya `rectTabAreaBottom` boştur.  
@@ -954,8 +954,8 @@ virtual COLORREF GetTabBkColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](/windows/desktop/gdi/colorref) belirtilen sekme arka plan rengini gösteren değer; -1 ise *iTab* je mimo rozsah.  
@@ -981,8 +981,8 @@ virtual int GetTabByID(int id) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *kimliği*  
- Bir sekme kimliği  
+*id*<br/>
+[in] Bir sekme kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bulunursa bir sekme sıfır tabanlı dizini; sekme kimliği bulunmazsa -1.  
@@ -1009,8 +1009,8 @@ virtual int GetTabFromHwnd(HWND hwnd) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hwnd*  
- Bir pencere için işleme.  
+*HWND*<br/>
+[in] Bir pencere için işleme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme başarılı olursa sıfır tabanlı dizini; Sekme içeriyorsa, -1 *hwnd*.  
@@ -1023,8 +1023,8 @@ virtual int GetTabFromPoint(CPoint& pt) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pt*  
- Sekme denetim noktası istemci koordinatları.  
+*PT*<br/>
+[in] Sekme denetim noktası istemci koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dizinini içeren sekmeyi *pt*; sekme içeriyorsa, -1 *pt*.  
@@ -1051,8 +1051,8 @@ virtual HICON GetTabHicon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme için sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme için sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa bir sekme etiketle ilişkilendirilmiş HICON; Hiçbir HICON varsa veya yöntem başarısız olursa NULL.  
@@ -1065,8 +1065,8 @@ virtual UINT GetTabIcon(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen bir sekme başarılı olursa simgesi kimliği; dizin geçersiz olduğu görünmüyorsa-1 döndürülür.  
@@ -1082,8 +1082,8 @@ int GetTabID(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme veya -1 ise kimliği *iTab* je mimo rozsah.  
@@ -1098,11 +1098,11 @@ virtual BOOL GetTabLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
- [out] *strLabel*  
- Bir başvuru bir `CString` nesne. Bu yöntem, sekmenin etiketini bu parametrede depolar.  
+*strLabel*<br/>
+[out] Bir başvuru bir `CString` nesne. Bu yöntem, sekmenin etiketini bu parametrede depolar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; FALSE Aksi takdirde.  
@@ -1122,11 +1122,11 @@ virtual BOOL GetTabRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
- [out] *dikdörtgen*  
- Bir başvuru bir `CRect` nesne. Bu yöntem, boyutunu ve konumunu sekmesinin bu parametrede depolar.  
+*Rect*<br/>
+[out] Bir başvuru bir `CRect` nesne. Bu yöntem, boyutunu ve konumunu sekmesinin bu parametrede depolar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Sekme dizini geçerli değilse FALSE.  
@@ -1172,8 +1172,8 @@ virtual COLORREF GetTabTextColor(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [COLORREF](/windows/desktop/gdi/colorref) belirtilen sekme metin rengini gösteren parametre; -1 ise *iTab* je mimo rozsah.  
@@ -1186,8 +1186,8 @@ virtual CWnd* GetTabWnd(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi [CWnd](../../mfc/reference/cwnd-class.md) sekmesinde bulunan nesne, *iTab* belirtir. NULL ise *iTab* geçersiz.  
@@ -1205,8 +1205,8 @@ virtual CWnd* GetTabWndNoWrapper(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi [CWnd](../../mfc/reference/cwnd-class.md) belirtilen sekmesinde; bulunan nesne NULL ise *iTab* geçersiz.  
@@ -1258,8 +1258,8 @@ virtual void HideSingleTab(BOOL bHide = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bHide*  
- Tek sekmeler gizleme etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boole değeri.  
+*bHide*<br/>
+[in] Tek sekmeler gizleme etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızı tek sekmeler gizlemek için yapılandırıldığında, ikinci sekme Sekme denetimine eklendiğinde framework sekmeleri otomatik olarak görüntüler.  
@@ -1285,23 +1285,23 @@ virtual void InsertTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pNewWnd*  
- Bu yöntem yeni bir sekme ekleyen penceresine bir işaretçi.  
+*pNewWnd*<br/>
+[in] Bu yöntem yeni bir sekme ekleyen penceresine bir işaretçi.  
   
- [in] *lpszTabLabel*  
- Yeni sekmenin etiketini içeren bir dize.  
+*lpszTabLabel*<br/>
+[in] Yeni sekmenin etiketini içeren bir dize.  
   
- [in] *nInsertAt*  
- Yeni sekme sıfır tabanlı dizini.  
+*nInsertAt*<br/>
+[in] Yeni sekme sıfır tabanlı dizini.  
   
- [in] *uiImageId*  
- Görüntü listesinden görüntü kimliği. Sekme denetimi bu görüntü, simge olarak yeni sekmesini kullanır.  
+*uiImageId*<br/>
+[in] Görüntü listesinden görüntü kimliği. Sekme denetimi bu görüntü, simge olarak yeni sekmesini kullanır.  
   
- [in] *bDetachable*  
- Yeni sekme çıkarılabilir olup olmadığını belirleyen bir Boole parametresi.  
+*bDetachable*<br/>
+[in] Yeni sekme çıkarılabilir olup olmadığını belirleyen bir Boole parametresi.  
   
- [in] *uiResTabLabel*  
- Etiket için kaynak kimliği.  
+*uiResTabLabel*<br/>
+[in] Etiket için kaynak kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Nesne tarafından belirtilmişse *pNewWnd* türünden türetilmediğinden [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve *bDetachable* parametresi TRUE, çerçeve için özel bir sarmalayıcı oluşturur. Yeni sekme. Varsayılan olarak, kapsayıcı örneğidir [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Kullanım [CMFCBaseTabCtrl::SetDockingBarWrapperRTC](#setdockingbarwrapperrtc) farklı sarmalayıcı sınıfı oluşturmak için yöntemi. Herhangi bir özel bir sarmalayıcı sınıf nesnesinden türetilmesi gereken `CDockablePaneAdapter`.  
@@ -1435,8 +1435,8 @@ BOOL IsIconAdded(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hIcon*  
- [in] *iIcon*  
+*hIcon*<br/>
+[in] [in] *iIcon*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1500,8 +1500,8 @@ virtual BOOL IsPtInTabArea(CPoint point) const = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Test noktası.  
+*Noktası*<br/>
+[in] Test noktası.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme alanı noktasıdır olursa sıfır dışı; Aksi durumda 0.  
@@ -1539,8 +1539,8 @@ virtual BOOL IsTabDetachable(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Denetlemek için sekmesinde sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Denetlemek için sekmesinde sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekme çıkarılabilir ise TRUE; FALSE Aksi takdirde.  
@@ -1556,8 +1556,8 @@ virtual BOOL IsTabIconOnly(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir sekme etiketi yalnızca simgeleri varsa TRUE; FALSE Aksi takdirde.  
@@ -1586,8 +1586,8 @@ virtual BOOL IsTabVisible(int iTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Denetlemek için sekmesinde sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Denetlemek için sekmesinde sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen sekme görünür durumdaysa sıfır; Aksi durumda 0.  
@@ -1633,8 +1633,8 @@ virtual void MoveTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Nkaynak*  
- [in] *nDest*  
+*Nkaynak*<br/>
+[in] [in] *nDest*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1660,8 +1660,8 @@ virtual BOOL OnDrop(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *COleDataObject**  
- [in] *DROPEFFECT*  
- [in] *CPoint*  
+*DROPEFFECT*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1679,8 +1679,8 @@ virtual DROPEFFECT OnDragOver(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *COleDataObject**  
- [in] *DWORD*  
- [in] *CPoint*  
+*DWORD*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1707,8 +1707,8 @@ virtual DROPEFFECT OnDragEnter(
   
 ### <a name="parameters"></a>Parametreler  
  [in] *COleDataObject**  
- [in] *DWORD*  
- [in] *CPoint*  
+*DWORD*<br/>
+[in] [in] *CPoint*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1722,8 +1722,8 @@ virtual BOOL OnRenameTab(int, CString&);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *int*  
- [in] *CString &*  
+*int*<br/>
+[in] [in] *CString &*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1773,11 +1773,11 @@ virtual BOOL RemoveTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini.  
   
- [in] *bRecalcLayout*  
- Sekmenin düzenini yeniden hesapla belirten bir Boole parametresi.  
+*bRecalcLayout*<br/>
+[in] Sekmenin düzenini yeniden hesapla belirten bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem sekmesini başarıyla kaldırırsa TRUE; Aksi durumda FALSE.  
@@ -1823,8 +1823,8 @@ virtual BOOL SetActiveTab(int iTab) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini `SetActiveTab` bu dizin ile sekmesindeki etkin hale getirir.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini `SetActiveTab` bu dizin ile sekmesindeki etkin hale getirir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1840,8 +1840,8 @@ virtual void SetActiveTabColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clr*  
- Yeni arka plan rengini belirtir.  
+*CLR*<br/>
+[in] Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework etkin sekmelerinden varsayılan arka plan rengini alır [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor)yöntemi.  
@@ -1854,8 +1854,8 @@ virtual void SetActiveTabTextColor(COLORREF clr);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clr*  
- A [COLORREF](/windows/desktop/gdi/colorref) parametresi yeni metin rengini belirtir.  
+*CLR*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) parametresi yeni metin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, çerçeve metin rengini alır [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor). Bu varsayılan renk kullanarak geçersiz `SetActiveTabTextColor` yöntemi.  
@@ -1868,8 +1868,8 @@ void SetAutoColors(const CArray<COLORREF,COLORREF>& arColors);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *arColors*  
- RGB renkleri dizisi.  
+*arColors*<br/>
+[in] RGB renkleri dizisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel bir renk dizisi sağlarsanız, varsayılan renkler bir dizi göz ardı edilir. Parametre *arColors* olan boş, framework renkleri varsayılan dizisi döner.  
@@ -1884,8 +1884,8 @@ void SetDockingBarWrapperRTC(CRuntimeClass* pRTC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRTC*  
- Yeni bir sarmalayıcı sınıf için çalışma zamanı sınıf bilgileri.  
+*pRTC*<br/>
+[in] Yeni bir sarmalayıcı sınıf için çalışma zamanı sınıf bilgileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yöntemleri kullanarak bir sekme denetimine sekmeler ekleme [CMFCBaseTabCtrl::AddTab](#addtab) ve [CMFCBaseTabCtrl::InsertTab](#inserttab). Bir sekme eklediğinizde, bu sekme üzerindeki her denetim yerleştirilebilir olması gerekir. Türetilmiş değil herhangi bir nesne `CDockablePane` alınmalıdır. `AddTab` ve `InsertTab` bu nesneler için bir sarmalayıcı oluşturur. Varsayılan bir sarmalayıcı sınıftır [CDockablePaneAdapter sınıfı](../../mfc/reference/cdockablepaneadapter-class.md). Yöntem `SetDockingBarWrapperRTC` sarmalayıcı sınıf olarak kullanılan sınıf değiştirmenize olanak tanır. Sağladığınız sarmalayıcı sınıfı nesnesinden türetilmesi `CDockablePaneAdapter`.  
@@ -1900,11 +1900,11 @@ void SetDrawNoPrefix(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bNoPrefix*  
- Ön ek işlemek istiyorsanız TRUE; Aksi durumda FALSE.  
+*bNoPrefix*<br/>
+[in] Ön ek işlemek istiyorsanız TRUE; Aksi durumda FALSE.  
   
- [in] *bRedraw*  
- Sekmeli pencereyi yeniden çizmeniz istiyorsanız TRUE; Aksi durumda FALSE.  
+*bRedraw*<br/>
+[in] Sekmeli pencereyi yeniden çizmeniz istiyorsanız TRUE; Aksi durumda FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ön ek karakter bir ampersan tarafından öncesinde bir anımsatıcı karakterdir (&).  
@@ -1922,17 +1922,17 @@ virtual BOOL SetImageList(HIMAGELIST hImageList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Bir bit eşlemi Kaynak Kimliği `SetImageList` görüntü listesi, bu kaynaktan yükler.  
+*uiID*<br/>
+[in] Bir bit eşlemi Kaynak Kimliği `SetImageList` görüntü listesi, bu kaynaktan yükler.  
   
- [in] *cx*  
- Her görüntü piksel cinsinden genişliği.  
+*CX*<br/>
+[in] Her görüntü piksel cinsinden genişliği.  
   
- [in] *clrTransp*  
- A [COLORREF](/windows/desktop/gdi/colorref) resminin saydam rengi belirten bir parametre.  
+*clrTransp*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) resminin saydam rengi belirten bir parametre.  
   
- [in] *hImageList*  
- Önceden yüklenmiş görüntü listesi için bir tanıtıcı.  
+*hImageList*<br/>
+[in] Önceden yüklenmiş görüntü listesi için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -1966,11 +1966,11 @@ virtual BOOL SetTabBkColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
- [in] *rengi*  
- Ayarlanacak rengi.  
+*Renk*<br/>
+[in] Ayarlanacak rengi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; FALSE Aksi takdirde.  
@@ -1985,11 +1985,11 @@ virtual void SetTabBorderSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nTabBorderSize*  
- Yeni sınır boyutu piksel.  
+*nTabBorderSize*<br/>
+[in] Yeni sınır boyutu piksel.  
   
- [in] *bRepaint*  
- Çerçeve denetimi yeniden çizer olup olmadığını gösteren bir Boole parametresi.  
+*bRepaint*<br/>
+[in] Çerçeve denetimi yeniden çizer olup olmadığını gösteren bir Boole parametresi.  
   
 ##  <a name="settabhicon"></a>  CMFCBaseTabCtrl::SetTabHicon  
  Simge için sekmesinde etiket ayarlar.  
@@ -2001,11 +2001,11 @@ virtual BOOL SetTabHicon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekme sıfır tabanlı dizini. Bu yöntem için sekmesinde bu simgeyi değiştirir.  
+*iTab*<br/>
+[in] Bir sekme sıfır tabanlı dizini. Bu yöntem için sekmesinde bu simgeyi değiştirir.  
   
- [in] *hIcon*  
- Simge tanıtıcı.  
+*hIcon*<br/>
+[in] Simge tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -2020,11 +2020,11 @@ virtual BOOL SetTabIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Güncelleştirme için sekmesinde sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Güncelleştirme için sekmesinde sıfır tabanlı dizini.  
   
- [in] *uiIcon*  
- Yeni simge için simge kimliği. Bu kimliği iç başvuran [Cımagelist](../../mfc/reference/cimagelist-class.md) nesne.  
+*uiIcon*<br/>
+[in] Yeni simge için simge kimliği. Bu kimliği iç başvuran [Cımagelist](../../mfc/reference/cimagelist-class.md) nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -2040,14 +2040,14 @@ virtual BOOL SetTabIconOnly(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Değiştirmek için sekmesinde sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Değiştirmek için sekmesinde sıfır tabanlı dizini.  
   
- [in] *bIconOnly*  
- Yalnızca Simgeler görüntülenip görüntülenmeyeceğini belirten bir Boole parametresi.  
+*bIconOnly*<br/>
+[in] Yalnızca Simgeler görüntülenip görüntülenmeyeceğini belirten bir Boole parametresi.  
   
- [in] *bShowTooltipAlways*  
- Framework yalnızca simgeleri görüntüleyen bir sekme etiketi için araç ipuçları gösterip göstermediğini belirleyen bir Boole parametresi.  
+*bShowTooltipAlways*<br/>
+[in] Framework yalnızca simgeleri görüntüleyen bir sekme etiketi için araç ipuçları gösterip göstermediğini belirleyen bir Boole parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -2065,11 +2065,11 @@ virtual BOOL SetTabLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Güncelleştirme için sekmesinde sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Güncelleştirme için sekmesinde sıfır tabanlı dizini.  
   
- [in] *strLabel*  
- Yeni metin için sekmesinde etiket içeren bir dize için bir başvuru.  
+*strLabel*<br/>
+[in] Yeni metin için sekmesinde etiket içeren bir dize için bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -2091,8 +2091,8 @@ BOOL SetTabsOrder(const CArray<int,int>& arOrder);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *arOrder*  
- Yeni sekme sırasını tanımlayan bir dizi sıfır tabanlı dizin.  
+*arOrder*<br/>
+[in] Yeni sekme sırasını tanımlayan bir dizi sıfır tabanlı dizin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi takdirde başarısız.  
@@ -2110,11 +2110,11 @@ virtual BOOL SetTabTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Sekme sıfır tabanlı dizini.  
   
- [in] *rengi*  
- A [COLORREF](/windows/desktop/gdi/colorref) yeni metin rengini belirten bir parametre.  
+*Renk*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) yeni metin rengini belirten bir parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -2131,17 +2131,17 @@ virtual BOOL ShowTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Sekme dizini, `ShowTab` göster veya gizle.  
+*iTab*<br/>
+[in] Sekme dizini, `ShowTab` göster veya gizle.  
   
- [in] *bBilgi Göster*  
- Sekme gösterilip gösterilmeyeceğini belirten bir Boole parametresi.  
+*bBilgi Göster*<br/>
+[in] Sekme gösterilip gösterilmeyeceğini belirten bir Boole parametresi.  
   
- [in] *bRecalcLayout*  
- Hemen pencere düzenini yeniden hesapla gösteren bir Boole parametresi.  
+*bRecalcLayout*<br/>
+[in] Hemen pencere düzenini yeniden hesapla gösteren bir Boole parametresi.  
   
- [in] *bActivate*  
- Tarafından belirtilen sekmesini seçip seçmemeye gösteren bir Boole parametresi *iTab*.  
+*bActivate*<br/>
+[in] Tarafından belirtilen sekmesini seçip seçmemeye gösteren bir Boole parametresi *iTab*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -2173,8 +2173,8 @@ virtual void SwapTabs(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFisrtTabID*  
- [in] *nSecondTabID*  
+*nFisrtTabID*<br/>
+[in] [in] *nSecondTabID*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

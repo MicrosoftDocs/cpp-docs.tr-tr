@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 243881a2ca18ba54e3a6c9cafee407f07746baca
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 5cbdb880c7165f314c004a7cbcad44dd3b76fd36
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336991"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709845"
 ---
 # <a name="cdoctemplate-class"></a>CDocTemplate sınıfı
 Belge şablonları için temel işlevselliği tanımlayan soyut bir temel sınıf.  
@@ -431,11 +431,11 @@ virtual CDocument* OpenDocumentFile(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPathName*  
- İşaretçi açılacak belgeyi içeren dosyanın yolu.  
+*lpszPathName*<br/>
+[in] İşaretçi açılacak belgeyi içeren dosyanın yolu.  
   
- [in] *bAddToMRU*  
- Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.  
+*bAddToMRU*<br/>
+[in] Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Olarak adlandırılan, dosya belge işaretçisi *lpszPathName*; İşlem başarısız olursa NULL.  

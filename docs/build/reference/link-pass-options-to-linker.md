@@ -1,5 +1,5 @@
 ---
-title: -bağlantı (geçiş seçenekleri bağlayıcıya) | Microsoft Docs
+title: -bağlantı (seçenekleri bağlayıcıya geçir) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,43 +21,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b22e21022162a0f9f75e41e3e0bfdce348947e1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 663407e4948ebc4e3c0a1676c44e8d2b4bd53fcc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373299"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704125"
 ---
 # <a name="link-pass-options-to-linker"></a>/link (Seçenekleri Bağlayıcıya Geçir)
-Bir veya daha fazla bağlayıcı seçenekleri bağlayıcıya geçirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/link linkeroptions  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `linkeroptions`  
- Bağlayıcı seçeneği veya bağlayıcıya geçirilecek seçenekleri.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/Link** seçeneği ve bağlayıcı seçenekleri herhangi dosya adları ve CL seçenekleri sonra görünmelidir. Bir arasında gerekli bir alandır **/link** ve `linkeroptions`. Daha fazla bilgi için bkz: [bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Bağlayıcı özellik sayfasını tıklatın.  
-  
-4.  Bir veya daha fazla özelliklerini değiştirin.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bu derleyici seçeneği programlı olarak değiştirilemez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Bir veya daha fazla bağlayıcı seçenekleri bağlayıcıya iletir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/link linkeroptions
+```
+
+## <a name="arguments"></a>Arguments
+
+*linkeroptions*<br/>
+Seçenekleri bağlayıcıya geçirilemez ve bağlayıcı seçeneği.
+
+## <a name="remarks"></a>Açıklamalar
+
+**/Link** seçeneği ve bağlayıcı seçenekleri herhangi bir dosya adlarını ve CL seçenekleri sonra görünmelidir. Bir arasında gerekli bir alandır **/link** ve `linkeroptions`. Daha fazla bilgi için [bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Bağlayıcı özellik sayfasını tıklatın.
+
+1. Bir veya daha fazla özelliklerini değiştirin.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bu derleyici seçeneğini program aracılığıyla değiştirilemez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c4ea8cf95298918088f54c3099a8f41d9c16ca9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f20a5f2767da015bb92a8e64491c2e5226f58aa5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690158"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705919"
 ---
 # <a name="cprogressctrl-class"></a>CProgressCtrl sınıfı
 Windows ortak ilerleme çubuğu denetimi işlevlerini sağlar.  
@@ -347,7 +347,7 @@ COLORREF SetBarColor(COLORREF clrBar);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *clrBar*|A [COLORREF](/windows/desktop/gdi/colorref) İlerleme göstergesi yeni rengini belirten bir değer. Varsayılan rengini kullanılacak ilerleme çubuğu neden CLR_DEFAULT belirtin.|  
+|*clrBar*|[in] A [COLORREF](/windows/desktop/gdi/colorref) İlerleme göstergesi yeni rengini belirten bir değer. Varsayılan rengini kullanılacak ilerleme çubuğu neden CLR_DEFAULT belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 
@@ -399,8 +399,8 @@ BOOL SetMarquee(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *fMarqueeMode*|Açık veya kayan modu devre dışı bırakmak için FALSE dönüş çerçevesi modu için true.|  
-|[in] *Naralık*|Güncelleştirmeleri çerçevesi animasyonun arasındaki milisaniye cinsinden süre.|  
+|*fMarqueeMode*|[in] Açık veya kayan modu devre dışı bırakmak için FALSE dönüş çerçevesi modu için true.|  
+|*Naralık*|[in] Güncelleştirmeleri çerçevesi animasyonun arasındaki milisaniye cinsinden süre.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem, her zaman TRUE döndürür.  
@@ -478,7 +478,7 @@ int SetState(int iState);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iState*|İlerleme çubuğu ayarlanacak durumu. Aşağıdaki değerlerden birini kullanın:<br /><br /> -İlerleme PBST_NORMAL-<br />-PBST_ERROR - hata<br />-PBST_PAUSED - duraklatıldı|  
+|*iState*|[in] İlerleme çubuğu ayarlanacak durumu. Aşağıdaki değerlerden birini kullanın:<br /><br /> -İlerleme PBST_NORMAL-<br />-PBST_ERROR - hata<br />-PBST_PAUSED - duraklatıldı|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli ilerleme çubuğu denetimi önceki durumu.  

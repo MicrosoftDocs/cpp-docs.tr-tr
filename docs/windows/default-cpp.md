@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d1055c0865988edf9b54539c0d214cebcda13735
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6baefb7ef0af5054cb46ed4ad74b6a6bf80fbb61
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220426"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699927"
 ---
 # <a name="default-c"></a>default (C++)
 
@@ -46,8 +46,8 @@ Bir nesne oluşturmak, komut dosyası ortamlar için kullanılabilir hale getiri
 
 Herhangi bir varsayılan arabirim belirtilirse, bir kaynak arabirimi ilk geçtiği varsayılan olarak kullanılır.
 
-*interface2*(isteğe bağlı)  
-Varsayılan kaynak arabirimi. Bu arabirim ile de belirtmeniz gerekir [kaynak](../windows/source-cpp.md) özniteliği.
+*interface2*<br/>
+(İsteğe bağlı) Varsayılan kaynak arabirimi. Bu arabirim ile de belirtmeniz gerekir [kaynak](../windows/source-cpp.md) özniteliği.
 
 İlk kaynak arabirimi, hiçbir varsayılan kaynak arabirimi belirtilmezse, varsayılan olarak kullanılır.
 

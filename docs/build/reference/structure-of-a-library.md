@@ -14,17 +14,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6eff0000aef01790106b44b49b4855218fcf9332
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 03c2c66d45ee415ddc4f3ba27b6a100c5e2ec1dc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373107"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702110"
 ---
 # <a name="structure-of-a-library"></a>Kitaplık Yapısı
-Bir kitaplık COFF nesnelerini içerir. Bir kitaplık nesneleri işlevler ve diğer nesneleri bir program tarafından harici olarak başvurulabilir verileri içerir. Bir Kitaplığı'nda bir nesne, bazen kitaplığı üye olarak da adlandırılır.  
-  
- /LINKERMEMBER seçeneğiyle DUMPBIN Aracı'nı çalıştırarak bir kitaplık içeriği hakkında ek bilgi alabilirsiniz. Bu seçenek hakkında daha fazla bilgi için bkz: [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)
+
+Bir kitaplık COFF nesnelerini içerir. Bir kitaplık nesneleri, işlevleri ve dışarıdan bir programdaki diğer nesneler tarafından başvurulan veri içerir. Bir nesne bir kitaplıkta, bazen kitaplığı üyesi olarak da adlandırılır.
+
+/LINKERMEMBER seçeneğiyle DUMPBIN aracını çalıştırarak bir Kitaplığı'nın içeriği hakkında ek bilgi alabilirsiniz. Bu seçenek hakkında daha fazla bilgi için bkz. [DUMPBIN başvurusu](../../build/reference/dumpbin-reference.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)

@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4594e24ddf88292d311679b64371ac981642bc5d
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ee6c74693987c35f37caf210e604835061cbefd6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222727"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715344"
 ---
 # <a name="basicfilebuf-class"></a>basic_filebuf Sınıfı
 
@@ -71,10 +71,10 @@ class basic_filebuf : public basic_streambuf<Elem, Tr>
 ### <a name="parameters"></a>Parametreler
 
 *Elem*<br/>
- Dosya tamponunun temel öğe.
+Dosya tamponunun temel öğe.
 
 *tr*<br/>
- Temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
+Temel öğesinin dosya arabelleğinin nitelikler (genellikle `char_traits` <  `Elem`>).
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -413,13 +413,13 @@ basic_filebuf<Elem, Tr> *open(
 ### <a name="parameters"></a>Parametreler
 
 *Bilgisi _dosya adını*<br/>
- Açmak için dosya adı.
+Açmak için dosya adı.
 
 *_Modu*<br/>
- Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
+Numaralandırmalardan biri [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
 *_Prot*<br/>
- Koruma, eşdeğer açma varsayılan dosya *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
+Koruma, eşdeğer açma varsayılan dosya *shflag* parametresinde [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -462,7 +462,7 @@ basic_filebuf& operator=(basic_filebuf&& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Rvalue başvurusuna bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesne.
+Rvalue başvurusuna bir [basic_filebuf](../standard-library/basic-filebuf-class.md) nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -483,7 +483,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof);
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*<br/>
- Karakter arabelleğine ekleme veya `traits_type::eof`.
+Karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -510,7 +510,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof);
 ### <a name="parameters"></a>Parametreler
 
 *_Meta*<br/>
- Karakter arabelleğine ekleme veya `traits_type::eof`.
+Karakter arabelleğine ekleme veya `traits_type::eof`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -547,13 +547,13 @@ virtual pos_type seekoff(off_type _Off,
 ### <a name="parameters"></a>Parametreler
 
 *_Off*<br/>
- Arama için göreli konumunu *_Way*.
+Arama için göreli konumunu *_Way*.
 
 *_Way*<br/>
- İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
 *_Which*<br/>
- İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -578,10 +578,10 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Which = ios_base::in 
 ### <a name="parameters"></a>Parametreler
 
 *_Sp*<br/>
- Arama konumu.
+Arama konumu.
 
 *_Which*<br/>
- İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -608,10 +608,10 @@ virtual basic_streambuf<Elem, Tr> *setbuf(
 ### <a name="parameters"></a>Parametreler
 
 *_Buffer*<br/>
- Arabellek için işaretçi.
+Arabellek için işaretçi.
 
 *Sayısı*<br/>
- Arabellek boyutu.
+Arabellek boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -632,7 +632,7 @@ void swap(basic_filebuf& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Bir `lvalue` başka bir başvuru `basic_filebuf`.
+Bir `lvalue` başka bir başvuru `basic_filebuf`.
 
 ## <a name="sync"></a>  basic_filebuf::Sync
 

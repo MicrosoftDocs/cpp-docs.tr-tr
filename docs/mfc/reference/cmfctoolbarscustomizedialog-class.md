@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9132df889f057696a08afe9a1ca6ad2277c46f10
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d796908504d746baee7863a6c6735bca3572d02b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43211058"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702823"
 ---
 # <a name="cmfctoolbarscustomizedialog-class"></a>CMFCToolBarsCustomizeDialog sınıfı
 Modsuz sekme iletişim kutusu ( [CPropertySheet sınıfı](../../mfc/reference/cpropertysheet-class.md)) araç çubuklarını, menüleri, klavye kısayolları, kullanıcı tanımlı Araçlar ve uygulamada görsel stil özelleştirmek için kullanıcı sağlar. Genellikle, bu iletişim kutusunu erişen seçerek kullanıcı **Özelleştir** gelen **Araçları** menüsü.  
@@ -137,17 +137,17 @@ void AddButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCategoryId*  
- Düğme eklemek hangi kategorisi Kimliğini belirtir.  
+*uiCategoryId*<br/>
+[in] Düğme eklemek hangi kategorisi Kimliğini belirtir.  
   
- [in] *düğmesi*  
- Eklemek için düğmeyi belirtir.  
+*Düğme*<br/>
+[in] Eklemek için düğmeyi belirtir.  
   
- [in] *iInsertBefore*  
- Düğme önce eklenen bir araç çubuğu düğmesi sıfır tabanlı dizini belirtir.  
+*iInsertBefore*<br/>
+[in] Düğme önce eklenen bir araç çubuğu düğmesi sıfır tabanlı dizini belirtir.  
   
- [in] *lpszCategory*  
- Düğme eklemek için kategori dizeyi belirtir.  
+*lpszCategory*<br/>
+[in] Düğme eklemek için kategori dizeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `AddButton` Yöntemi standart komut kimlikleri (örneğin, ID_FILE_MRU_FILE1) düğmeleri yoksayar, komutları, kullanımına izin verilmez (bkz [CMFCToolBar::IsCommandPermitted](../../mfc/reference/cmfctoolbar-class.md#iscommandpermitted)) ve kukla düğmeleri.  
@@ -171,8 +171,8 @@ BOOL AddMenu(UINT uiMenuResId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiMenuResId*  
- Yüklemek için bir menü kaynak Kimliğini belirtir.  
+*uiMenuResId*<br/>
+[in] Yüklemek için bir menü kaynak Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir menü başarıyla eklenmişse TRUE; Aksi durumda FALSE.  
@@ -192,17 +192,17 @@ void AddMenuCommands(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMenu*  
- Eklenecek CMenu nesne işaretçisi.  
+*pMenu*<br/>
+[in] Eklenecek CMenu nesne işaretçisi.  
   
- [in] *bPopup*  
- Komutların açılan menü öğelerinin listesine eklemek etkinleştirilip etkinleştirilmeyeceğini belirtir.  
+*bPopup*<br/>
+[in] Komutların açılan menü öğelerinin listesine eklemek etkinleştirilip etkinleştirilmeyeceğini belirtir.  
   
- [in] *lpszCategory*  
- Menü eklemek için bir kategori adı.  
+*lpszCategory*<br/>
+[in] Menü eklemek için bir kategori adı.  
   
- [in] *lpszMenuPath*  
- Komut içinde gösterildiğinde adına eklenecek bir ön ek **tüm kategorileri** listesi.  
+*lpszMenuPath*<br/>
+[in] Komut içinde gösterildiğinde adına eklenecek bir ön ek **tüm kategorileri** listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `AddMenuCommands` Yöntemi döngüler tüm menü öğelerinin üzerinden *pMenu*. Bu yöntem, bir alt içermeyen her menü öğesi için oluşturur bir [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) nesne ve çağrıları [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) yöntemi bir araç çubuğu menü öğesi eklemek için Düğme komutları listesine **komutları** sayfası. Ayırıcılar, bu işlemde göz ardı edilir.  
@@ -223,14 +223,14 @@ BOOL AddToolBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCategoryId*  
- Araç çubuğuna eklenecek kategori kaynak Kimliğini belirtir.  
+*uiCategoryId*<br/>
+[in] Araç çubuğuna eklenecek kategori kaynak Kimliğini belirtir.  
   
- [in] *uiToolbarResId*  
- Bir araç çubuğunun komutlarının komutlar listesine eklenen kaynak Kimliğini belirtir.  
+*uiToolbarResId*<br/>
+[in] Bir araç çubuğunun komutlarının komutlar listesine eklenen kaynak Kimliğini belirtir.  
   
- [in] *lpszCategory*  
- Araç eklenecek kategorisinin adını belirtir.  
+*lpszCategory*<br/>
+[in] Araç eklenecek kategorisinin adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -251,8 +251,8 @@ virtual BOOL CheckToolsValidity(const CObList& lstTools);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lstTools*  
- Denetlenecek kullanıcı tanımlı Araçlar listesi.  
+*lstTools*<br/>
+[in] Denetlenecek kullanıcı tanımlı Araçlar listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kullanıcı tanımlı Araçlar listesi geçerli ise TRUE döndürür; Aksi durumda FALSE. Varsayılan uygulama her zaman TRUE değerini döndürür.  
@@ -274,14 +274,14 @@ CMFCToolBarsCustomizeDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParentFrame*  
- Ana çerçeve işaretçisi. Bu parametre NULL olmamalıdır.  
+*pWndParentFrame*<br/>
+[in] Ana çerçeve işaretçisi. Bu parametre NULL olmamalıdır.  
   
- [in] *bAutoSetFromMenus*  
- Menü komutlarını tüm menülerden üzerinde komutların listesini eklenip eklenmeyeceğini belirten bir Boole değeri **komutları** sayfası. Bu parametre TRUE ise, menü komutlarını eklenir. Aksi takdirde, menü komutlarını eklenmez.  
+*bAutoSetFromMenus*<br/>
+[in] Menü komutlarını tüm menülerden üzerinde komutların listesini eklenip eklenmeyeceğini belirten bir Boole değeri **komutları** sayfası. Bu parametre TRUE ise, menü komutlarını eklenir. Aksi takdirde, menü komutlarını eklenmez.  
   
- [in] *uiFlags*  
- İletişim kutusunun davranışını etkileyen bayrakların birleşimi. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir:  
+*uiFlags*<br/>
+[in] İletişim kutusunun davranışını etkileyen bayrakların birleşimi. Bu parametre, bir veya daha fazla aşağıdaki değerlerden biri olabilir:  
   
 - AFX_CUSTOMIZE_MENU_SHADOWS  
   
@@ -299,8 +299,8 @@ CMFCToolBarsCustomizeDialog(
   
 - AFX_CUSTOMIZE_NO_LARGE_ICONS  
   
- [in] *plistCustomPages*  
- Listesine bir işaretçi `CRuntimeClass` ek özel sayfalar belirttiğiniz nesneleri.  
+*plistCustomPages*<br/>
+[in] Listesine bir işaretçi `CRuntimeClass` ek özel sayfalar belirttiğiniz nesneleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *PlistCustomPages* parametre listesine başvuruyor `CRuntimeClass` ek özel sayfalar belirttiğiniz nesneleri. Oluşturucu kullanarak daha fazla sayfa iletişim kutusuna ekler [CRuntimeClass::CreateObject](../../mfc/reference/cruntimeclass-structure.md#createobject) yöntemi. CustomPages örnek sayfalar ekleyen bir örnek için bkz. **Özelleştir** iletişim kutusu.  
@@ -333,8 +333,8 @@ void EnableUserDefinedToolbars(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kullanıcı tanımlı araç çubukları etkinleştirmek için TRUE; Araç çubuklarını devre dışı bırakmak için FALSE.  
+*bSistemlerde*<br/>
+[in] Kullanıcı tanımlı araç çubukları etkinleştirmek için TRUE; Araç çubuklarını devre dışı bırakmak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *bSistemlerde* TRUE ise **yeni**, **Yeniden Adlandır** ve **Sil** düğmeleri görüntülenir **araç çubukları** Sayfa.  
@@ -349,8 +349,8 @@ virtual void FillAllCommandsList(CListBox& wndListOfCommands) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] `wndListOfCommands`  
- Bir başvuru `CListBox` doldurulacak nesne.  
+*wndListOfCommands*<br/>
+[out] Bir başvuru `CListBox` doldurulacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  **Tüm komutları** kategorisi, tüm kategorileri komutlarını içerir. [CMFCToolBarsCustomizeDialog::AddButton](#addbutton) yöntemi için sağlanan düğmesi ile ilişkili olan komut ekler **tüm komutları** , kategori.  
@@ -369,11 +369,11 @@ void FillCategoriesComboBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *wndCategory*  
- Bir başvuru `CComboBox` doldurulacak nesne.  
+*wndCategory*<br/>
+[out] Bir başvuru `CComboBox` doldurulacak nesne.  
   
- [in] *bAddEmpty*  
- Kategorileri komutları olmayan açılan kutu eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre ise TRUE, boş kategorileri birleşik giriş kutusuna eklenir. Aksi takdirde boş kategorileri eklenmez.  
+*bAddEmpty*<br/>
+[in] Kategorileri komutları olmayan açılan kutu eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre ise TRUE, boş kategorileri birleşik giriş kutusuna eklenir. Aksi takdirde boş kategorileri eklenmez.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem benzer [CMFCToolBarsCustomizeDialog::FillCategoriesListBox](#fillcategorieslistbox) yöntemi dışında bu yöntem çalışır bir `CComboBox` nesne.  
@@ -394,11 +394,11 @@ void FillCategoriesListBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *wndCategory*  
- Bir başvuru `CListBox` doldurulacak nesne.  
+*wndCategory*<br/>
+[out] Bir başvuru `CListBox` doldurulacak nesne.  
   
- [in] *bAddEmpty*  
- Kategorileri komutları olmayan liste kutusuna eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre ise TRUE, boş kategorileri liste kutusuna eklenir. Aksi takdirde boş kategorileri eklenmez.  
+*bAddEmpty*<br/>
+[in] Kategorileri komutları olmayan liste kutusuna eklenip eklenmeyeceğini belirten bir Boole değeri. Bu parametre ise TRUE, boş kategorileri liste kutusuna eklenir. Aksi takdirde boş kategorileri eklenmez.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem benzer [CMFCToolBarsCustomizeDialog::FillCategoriesComboBox](#fillcategoriescombobox) yöntemi dışında bu yöntem çalışır bir `CListBox` nesne.  
@@ -417,8 +417,8 @@ LPCTSTR GetCommandName(UINT uiCmd) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Alınacak komut kimliği.  
+*uiCmd*<br/>
+[in] Alınacak komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Komut yoksa, belirtilen komut kimliği ya da NULL ile ilişkili ad.  
@@ -433,11 +433,11 @@ int GetCountInCategory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszItemName*  
- Eşleştirilecek metin etiketi.  
+*lpszItemName*<br/>
+[in] Eşleştirilecek metin etiketi.  
   
- [in] *lstCommands*  
- Bir başvuru içeren bir liste `CMFCToolBarButton` nesneleri.  
+*lstCommands*<br/>
+[in] Bir başvuru içeren bir liste `CMFCToolBarButton` nesneleri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sağlanan öğe sayısı, metin etiketi eşittir listesinde *lpszItemName*.  
@@ -492,8 +492,8 @@ virtual void OnAfterChangeTool(CUserTool* pSelTool);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pSelTool*  
- Değiştirildi kullanıcı aracı nesnesine bir işaretçi.  
+*pSelTool*<br/>
+[out içinde] Değiştirildi kullanıcı aracı nesnesine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem bir kullanıcı bir kullanıcı tanımlı araç özellikleri değiştiğinde framework tarafından çağırılır. Varsayılan uygulama, hiçbir şey yapmaz. Türetilen bir sınıfta bu yöntemin üzerine yazması `CMFCToolBarsCustomizeDialog` kullanıcı aracı için bir değişiklik gerçekleştikten sonra işleme gerçekleştirmek için.  
@@ -506,8 +506,8 @@ virtual BOOL OnAssignKey(ACCEL* pAccel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pAccel*  
- İşaretçi olarak ifade edilen önerilen klavye atama bir [HIZLANDIRMA](/windows/desktop/api/winuser/ns-winuser-tagaccel) yapısı.  
+*pAccel*<br/>
+[out içinde] İşaretçi olarak ifade edilen önerilen klavye atama bir [HIZLANDIRMA](/windows/desktop/api/winuser/ns-winuser-tagaccel) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Anahtar atanmışsa anahtar atanan veya FALSE olabilir, TRUE. Varsayılan uygulama her zaman TRUE değerini döndürür.  
@@ -523,8 +523,8 @@ virtual void OnBeforeChangeTool(CUserTool* pSelTool);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pSelTool*  
- Yaklaşık değiştirilmesi gereken kullanıcı aracı nesnesine bir işaretçi.  
+*pSelTool*<br/>
+[out içinde] Yaklaşık değiştirilmesi gereken kullanıcı aracı nesnesine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı tanımlı araç kümesidir değişmek üzere bu yöntem çerçeve tarafından çağrılır. Varsayılan uygulama, hiçbir şey yapmaz. Geçersiz kılma `OnBeforeChangeTool` sınıfından türetilen bir sınıfta yöntemi `CMFCToolBarsCustomizeDialog` kaynakları serbest bırakmak gibi bir kullanıcı aracı için bir değişiklik gerçekleşmeden önce işlem gerçekleştirmek istiyorsanız, *pSelTool* kullanır.  
@@ -540,14 +540,14 @@ virtual BOOL OnEditToolbarMenuImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst penceresine bir işaretçi.  
+*pWndParent*<br/>
+[in] Üst penceresine bir işaretçi.  
   
- [in] *bit eşlem*  
- Düzenlenecek bir bit eşlem nesnesine bir başvuru.  
+*Bit eşlem*<br/>
+[in] Düzenlenecek bir bit eşlem nesnesine bir başvuru.  
   
- [in] *nBitsPerPixel*  
- Piksel başına bit renk çözünürlüğü bit eşlem.  
+*nBitsPerPixel*<br/>
+[in] Piksel başına bit renk çözünürlüğü bit eşlem.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir değişiklik kararlıdır TRUE; Aksi durumda FALSE. Varsayılan uygulama, bir iletişim kutusu görüntüler ve kullanıcı varsa TRUE değerini döndürür **Tamam**, kullanıcı tıklarsa false **iptal** veya **Kapat** düğmesi.  
@@ -604,14 +604,14 @@ int RemoveButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCategoryId*  
- Düğme kaldırılacağı kategorisi Kimliğini belirtir.  
+*uiCategoryId*<br/>
+[in] Düğme kaldırılacağı kategorisi Kimliğini belirtir.  
   
- [in] *uiCmdId*  
- Düğme komut Kimliğini belirtir.  
+*uiCmdId*<br/>
+[in] Düğme komut Kimliğini belirtir.  
   
- [in] *lpszCategory*  
- Kaldır düğmesi kategori adını belirtir.  
+*lpszCategory*<br/>
+[in] Kaldır düğmesi kategori adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kaldırılan düğmesini ya da belirtilen komut kimliği belirtilen kategoride bulunmadığında -1 sıfır tabanlı dizini. Varsa *uiCategoryId* -1, dönüş değeri 0'dır.  
@@ -629,11 +629,11 @@ BOOL RenameCategory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszCategoryOld*  
- Değiştirmek için kategori adı.  
+*lpszCategoryOld*<br/>
+[in] Değiştirmek için kategori adı.  
   
- [in] *lpszCategoryNew*  
- Yeni kategori adı.  
+*lpszCategoryNew*<br/>
+[in] Yeni kategori adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -651,11 +651,11 @@ void ReplaceButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Değiştirilecek komut düğmesi belirtir.  
+*uiCmd*<br/>
+[in] Değiştirilecek komut düğmesi belirtir.  
   
- [in] *düğmesi*  
- A **const** eski düğmesi değiştirir araç çubuğu düğmesi nesnesine başvuru alınamıyor.  
+*Düğme*<br/>
+[in] A **const** eski düğmesi değiştirir araç çubuğu düğmesi nesnesine başvuru alınamıyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Zaman [CMFCToolBarsCustomizeDialog::AddMenu](#addmenu), [CMFCToolBarsCustomizeDialog::AddMenuCommands](#addmenucommands), veya [CMFCToolBarsCustomizeDialog::AddToolBar](#addtoolbar) ekler bir komut **komutları** sayfasında komut biçiminde olduğunu bir [CMFCToolBarButton sınıfı](../../mfc/reference/cmfctoolbarbutton-class.md) nesnesi (veya [CMFCToolBarMenuButton sınıfı](../../mfc/reference/cmfctoolbarmenubutton-class.md) nesne için bir menü tarafından eklenen bir alt içeren öğe `AddMenuCommands`). Framework de komutları otomatik olarak eklemek için bu üç yöntem çağırır. Bunun yerine türetilmiş bir tür tarafından temsil edilebilir komutu istiyorsanız, çağrı `ReplaceButton` ve türetilmiş bir türde bir düğme geçirin.  
@@ -673,8 +673,8 @@ BOOL SetUserCategory(LPCTSTR lpszCategory);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszCategory*  
- Kategori adı.  
+*lpszCategory*<br/>
+[in] Kategori adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  

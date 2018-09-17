@@ -12,38 +12,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d05dd4f9d213c3d2729459486a9d0cfdbd79110
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d775e9c42ceb8a564e2cc7992cb95ac9717a966d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375262"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707687"
 ---
 # <a name="guard-enable-guard-checks"></a>/GUARD (Koruyucu Denetimlerini Etkinleştirme)
-Denetim akışı koruyucu denetimlerini desteği yürütülebilir görüntüde belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/GUARD:{CF|NO}  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- /GUARD:cf belirtildiğinde, bağlayıcı bir .dll veya .exe denetim akışı Guard (CFG) çalışma zamanı denetimleri için destek belirtmek için üstbilgisinin değiştirir. Bağlayıcı gerekli denetim akışı hedef adres verileri de üstbilgiye ekler. Varsayılan olarak, /GUARD:CF devre dışıdır. Bunu açıkça /GUARD:NO kullanarak devre dışı bırakılabilir. Etkili olması için /GUARD:CF de gerektirir [/DYNAMICBASE (adres boşluğu düzeni rastgele'seçimini kullan)](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) varsayılan olarak açık bağlayıcı seçeneği.  
-  
- Kaynak kodu zaman derlenmiş kullanarak [/guard:cf](../../build/reference/guard-enable-control-flow-guard.md) seçeneği, derleyici çözümler denetim akışı tüm dolaylı çağrıları olası hedef adresleri için inceleyerek. Derleyici hedef dolaylı çağrı yönerge bilinen hedef adresleri çalışma zamanında listesinde adresidir doğrulamak için kodu ekler. CFG Dur CFG çalışma zamanı başarısız bir program destekleyen işletim sistemleri denetleyin. Bu, arama hedefini değiştirmek için veri bozulması kullanarak kötü amaçlı kod yürütmek bir saldırganın zorlaştırır.  
-  
- /GUARD:CF seçeneği derleyici ve bağlayıcı CFG etkin yürütülebilir görüntüler oluşturmak için belirtilmesi gerekir. Derlenmiş ancak /GUARD:CF kullanarak bağlantılı olmayan kod çalışma zamanı denetimleri maliyet oluşturur, ancak CFG koruma sağlamaz. İçin /GUARD:CF seçeneği belirtildiğinde `cl` derlemek ve tek bir adımda derleyici bağlamak için komut bağlayıcıya bayrağı geçirir. Zaman **denetim akışı koruma** özelliği, Visual Studio'da ayarlanmışsa, /GUARD:CF seçeneği derleyici ve bağlayıcı için geçirilir. Nesne dosyaları veya kitaplıkları ayrı olarak derlenmiştir zaman seçeneği açıkça belirtilmelidir `link` komutu.  
-  
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneği ayarlamak için  
-  
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Genişletme **yapılandırma özellikleri**, **bağlayıcı**, **komut satırı**.  
-  
-3.  İçinde **ek seçenekler**, girin `/GUARD:CF`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/Guard (etkinleştirmek denetim akışı koruma)](../../build/reference/guard-enable-control-flow-guard.md)   
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Denetim akışı koruyucusu denetimleri için destek yürütülebilir bir görüntüde belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/GUARD:{CF|NO}
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Guard: cf belirtildiğinde, bağlayıcı üst bilgisine bir .dll veya .exe denetim akışı koruyucusu (CFG) çalışma zamanı denetimleri için destek belirtmek için değiştirir. Bağlayıcı, gerekli denetimi akış hedef adresi veri başlığına da ekler. Varsayılan olarak, / Guard: cf devre dışıdır. Bu açıkça /GUARD:NO kullanarak devre dışı bırakılabilir. Gerektirir ayrıca/Guard: cf etkili olması için [dynamıcbase (adres boşluğu düzeni rastgele'seçimini kullan)](../../build/reference/dynamicbase-use-address-space-layout-randomization.md) bağlayıcı seçeneği varsayılan olarak açıktır.
+
+Zaman kaynak kodu derlendiğinde kullanarak [/Guard: cf](../../build/reference/guard-enable-control-flow-guard.md) seçeneği, derleyicinin çözümler denetim akışı olası hedef adresi için tüm dolaylı aramalar inceleyerek. Derleme zamanında bilinen hedef adresi listesinden bir dolaylı çağrı talimatı hedef adresi olduğu doğrulamak için kod ekler. CFG durdurma CFG çalışma zamanı başarısız bir program destekleyen işletim sistemleri denetleyin. Çağrı hedefi değiştirmek için veri bozulması kullanarak kötü amaçlı kod yürütmek bir saldırgan daha zor yapar.
+
+/ Guard: cf seçeneği, derleyici ve bağlayıcı CFG özellikli yürütülebilir görüntüler oluşturmak için için belirtilmelidir. Kod derlenir, ancak/Guard: cf kullanarak bağlantılı olmayan çalışma zamanı denetimleri maliyeti doğurur, ancak CFG koruma sağlamaz. İçin/Guard: cf seçeneği belirtildiğinde `cl` derlemek ve bir adımda, derleyici bağlamak için komut bayrağı bağlayıcıya geçirir. Zaman **denetim akışı koruyucusu** özelliği, Visual Studio'da ayarlanır, derleyici ve bağlayıcı için/Guard: cf seçeneği geçirilir. Nesne dosyalarında veya kitaplıklarındaki ayrı olarak derlenen, seçeneğini açıkça belirtilmesi gerekir `link` komutu.
+
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Genişletin **yapılandırma özellikleri**, **bağlayıcı**, **komut satırı**.
+
+1. İçinde **ek seçenekler**, girin `/GUARD:CF`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Guard (Denetim etkinleştirme akışı)](../../build/reference/guard-enable-control-flow-guard.md)
+[bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

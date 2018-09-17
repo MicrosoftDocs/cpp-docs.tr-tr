@@ -14,12 +14,12 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: fbc0674a7659ffccd5ab5c655f74167acebdca97
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: a66e2f6b6506d995859c89d9588b59056047220e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895207"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713589"
 ---
 # <a name="configure-a-linux-project"></a>Linux projesi yapılandırma
 
@@ -48,7 +48,8 @@ Uzak Linux bilgisayara ilgili ayarları değiştirmek için görünen Uzak seçe
 
 ## <a name="include-directories-and-intellisense-support"></a>Dizinleri ve IntelliSense desteğini içerir
 
-**Visual Studio 2017 sürüm 15.6 ve önceki:** varsayılan olarak, Visual Studio, sistem düzeyinde içerik dosyalarını Linux bilgisayardan içermez.  Örneğin, öğeler **/usr/INCLUDE** dizini Visual Studio'da mevcut değildir.
+**Visual Studio 2017 sürüm 15.6 ve önceki sürümler:**<br/>
+Varsayılan olarak, Visual Studio sistem düzeyindeki içerik dosyalarını Linux bilgisayardan içermez.  Örneğin, öğeler **/usr/INCLUDE** dizini Visual Studio'da mevcut değildir.
 Tam [IntelliSense](/visualstudio/ide/using-intellisense) desteği gerekir, geliştirme bilgisayarınızdaki bir konuma dosyaları kopyalayın ve Visual Studio bu konuma işaret edecek.  Bir seçenek, dosyaları kopyalamak için SCP'yi (güvenli kopya) kullanmaktır.  Windows 10'da kullandığınız [Windows üzerinde Bash](https://msdn.microsoft.com/commandline/wsl/about) scp çalıştırılacak.  Önceki Windows sürümleri için aşağıdaki gibi kullanabilirsiniz [PSCP'yi (PuTTY güvenli kopya)](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).
 
 Aşağıdakine benzer bir komut kullanarak dosyalarını kopyalayabilirsiniz:
@@ -61,7 +62,8 @@ Dosyalar kopyalandıktan sonra kullanmak **VC ++ dizinleri** Visual Studio yaln�
 
 ![VC ++ dizinleri](media/settings_directories.png)
 
-**Visual Studio 2017 sürüm 15.7 ve üzeri:** bkz [yönetme uzak üst bilgiler için IntelliSense](#remote_intellisense).
+**Visual Studio 2017 sürüm 15.7 ve üzeri:**<br/>
+Bkz: [uzak üst bilgiler için IntelliSense yönetme](#remote_intellisense).
 
 ## <a name="copy-sources"></a>Kaynakları Kopyala
 

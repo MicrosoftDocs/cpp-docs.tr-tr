@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d67f4fb4fdb6a46d00ef8cdf21559cf6043932e2
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 1339b291c92879beb7606b0dabe77904ad9f462e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336526"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713602"
 ---
 # <a name="cfileexception-class"></a>CFileException sınıfı
 Bir dosya ile ilgili özel durum koşulunu temsil eder.  
@@ -148,14 +148,14 @@ virtual BOOL GetErrorMessage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *lpszError*  
- Bir hata iletisi alan arabellek için işaretçi.  
+*lpszError*<br/>
+[out içinde] Bir hata iletisi alan arabellek için işaretçi.  
   
- [in] *nMaxError*  
- Belirtilen arabellek tutabilir karakter sayısı. Bu sondaki boş karakter içerir.  
+*nMaxError*<br/>
+[in] Belirtilen arabellek tutabilir karakter sayısı. Bu sondaki boş karakter içerir.  
   
- [out içinde] *pnHelpContext*  
- Yardım içeriği kimliği alır, işaretsiz bir tamsayı işaretçisi Varsa `NULL`, hiçbir kimliği döndürülür.  
+*pnHelpContext*<br/>
+[out içinde] Yardım içeriği kimliği alır, işaretsiz bir tamsayı işaretçisi Varsa `NULL`, hiçbir kimliği döndürülür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  

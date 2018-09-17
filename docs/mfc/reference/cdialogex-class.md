@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d941b112047dc8f90a8cdc4686e422f028b6d7e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: a3fa9720e519336b39299e84e3061860f34cf24a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335964"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716312"
 ---
 # <a name="cdialogex-class"></a>CDialogEx sınıfı
 `CDialogEx` Sınıfı bir iletişim kutusunun arka plan görüntüsü ve arka plan rengini belirtir.  
@@ -90,17 +90,17 @@ CDialogEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIDTemplate*  
- Bir iletişim kutusu şablonu kaynak kimliği.  
+*nIDTemplate*<br/>
+[in] Bir iletişim kutusu şablonu kaynak kimliği.  
   
- [in] *lpszTemplateName*  
- Bir iletişim kutusu şablonu kaynak adı.  
+*lpszTemplateName*<br/>
+[in] Bir iletişim kutusu şablonu kaynak adı.  
   
- [in] *pParent*  
- Üst penceresine bir işaretçi. Varsayılan değer NULL olur.  
+*pParent*<br/>
+[in] Üst penceresine bir işaretçi. Varsayılan değer NULL olur.  
   
- [in] *pParentWnd*  
- Üst penceresine bir işaretçi. Varsayılan değer NULL olur.  
+*pParentWnd*<br/>
+[in] Üst penceresine bir işaretçi. Varsayılan değer NULL olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -116,11 +116,11 @@ void SetBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Bir RGB renk değeri.  
+*Renk*<br/>
+[in] Bir RGB renk değeri.  
   
- [in] *bRepaint*  
- Ekranın hemen güncelleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
+*bRepaint*<br/>
+[in] Ekranın hemen güncelleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -142,20 +142,20 @@ BOOL SetBackgroundImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Hbıtmap*  
- Arka plan görüntüsü için bir tanıtıcı.  
+*Hbıtmap*<br/>
+[in] Arka plan görüntüsü için bir tanıtıcı.  
   
- [in] *uiBmpResId*  
- Arka plan görüntü kaynak kimliği.  
+*uiBmpResId*<br/>
+[in] Arka plan görüntü kaynak kimliği.  
   
- [in] *konumu*  
- Aşağıdakilerden birini `CDialogEx::BackgroundLocation` görüntüsünün konumu belirten değerleri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT BACKGR_TOPRIGHT BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. BACKGR_TILE varsayılan değerdir.  
+*Konum*<br/>
+[in] Aşağıdakilerden birini `CDialogEx::BackgroundLocation` görüntüsünün konumu belirten değerleri. Geçerli değerler BACKGR_TILE, BACKGR_TOPLEFT BACKGR_TOPRIGHT BACKGR_BOTTOMLEFT ve BACKGR_BOTTOMRIGHT içerir. BACKGR_TILE varsayılan değerdir.  
   
- [in] *bAutoDestroy*  
- Otomatik olarak arka plan görüntüsü yok etmek için TRUE; Aksi takdirde FALSE.  
+*bAutoDestroy*<br/>
+[in] Otomatik olarak arka plan görüntüsü yok etmek için TRUE; Aksi takdirde FALSE.  
   
- [in] *bRepaint*  
- Hemen iletişim kutusunu yeniden çizmek için TRUE; Aksi takdirde FALSE.  
+*bRepaint*<br/>
+[in] Hemen iletişim kutusunu yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa İkinci yöntemde sözdiziminin doğru aşırı; Aksi takdirde FALSE.  

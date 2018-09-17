@@ -126,12 +126,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a44cccd38d64f3e6b0c2b7af390d06292f70157
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: e6c22d91bafc45699371dd40d317b66cf3d1ca11
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44105672"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706621"
 ---
 # <a name="basicstring-class"></a>basic_string Sınıfı
 
@@ -3979,9 +3979,11 @@ C-karakter işlenen dize için bir kaynak olarak dize.
 *_Ch*<br/>
 İşlenen dizeye kopyalanacak karakter.
 
-* first0 * bir işlenen dizesinde kaldırılacak ilk karakteri yineleyici.
+*first0*<br/>
+İşlenen dizesinde kaldırılacak ilk karakteri ele alan bir yineleyici.
 
-* last0 * bir işlenen dizesinde kaldırılacak son karakter yineleyici.
+*last0*<br/>
+İşlenen dizesinde kaldırılacak son karakter ele alan bir yineleyici.
 
 *ilk*<br/>
 Bir Yineleyici, const_pointer veya ilk karakter adresleme const_iterator parametresi dizenin kopyalanacak.

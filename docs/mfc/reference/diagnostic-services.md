@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5be60ff1f0aa8b2ceff7517a9af968e0b7690478
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d3adeff7c0c242d9e83b2e71afff78ec130f950
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214685"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712964"
 ---
 # <a name="diagnostic-services"></a>Tanı Hizmetleri
 Microsoft Foundation Class Kitaplığı programlarınızın daha kolay hata ayıklaması yapmak çok sayıda tanı hizmetleri sağlar. Bu tanılama Hizmetleri makroları ve programınızın bellek ayırmaları, çalışma zamanı sırasında nesnelerin içeriğini dökümü ve çalışma zamanı sırasında hata ayıklama iletilerini yazdırma izlemenize olanak tanıyan genel işlevleri içerir. Makrolar ve genel işlevler için tanı Hizmetleri aşağıdaki kategorilere ayrılır:  
@@ -619,8 +619,8 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDump*  
- TRUE, bellek sızıntısı dökümü etkinleştirildiğini belirtir; FALSE, bellek sızıntısı dökümü devre dışı gösterir.  
+*bDump*<br/>
+[in] TRUE, bellek sızıntısı dökümü etkinleştirildiğini belirtir; FALSE, bellek sızıntısı dökümü devre dışı gösterir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu bayrak önceki değeri.  

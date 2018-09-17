@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ee0763608edde0f7ceff81983a324190b605ff7
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: b3e0fef319fbe119118e3a915a66bea3546bbb9a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43130897"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702903"
 ---
 # <a name="install-c-support-in-visual-studio"></a>Visual Studio'da C++ desteği yükleme
 
@@ -37,9 +37,9 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
 
 ## <a name="visual-studio-2015-installation"></a>Visual Studio 2015 yüklemesi
 
- Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin. 
+Visual Studio 2015'i yüklemek için Git [Visual Studio'nun eski sürümlerini indirin](https://www.visualstudio.com/vs/older-downloads/). Kurulum programını çalıştırın ve seçin **özel yükleme** C++ bileşeni seçin.
 
- Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
+Genel olarak, Visual Studio 2015 derleyici kullanarak kodunuzu derlemek için ihtiyacınız olsa bile, Visual Studio 2017 kullanmanızı öneririz. Daha fazla bilgi için [yerel çoklu sürüm desteğinin Visual Studio'da eski projeleri oluşturmak için kullanmak](../porting/use-native-multi-targeting.md).
 
 ## <a name="visual-studio-2017-installation"></a>Visual Studio 2017 yüklemesi
 
@@ -59,13 +59,13 @@ Disk alanı ve işletim sistemi gereksinimleri hakkında daha fazla bilgi için 
 
    ![C++ ile masaüstü geliştirme](../build/media/desktop-development-with-cpp.png "C++ ile masaüstü geliştirme")
 
-    C++ için seçin **C++ ile masaüstü geliştirme** iş yükü ve ardından **yükleme**.
+   C++ için seçin **C++ ile masaüstü geliştirme** iş yükü ve ardından **yükleme**.
 
    ![Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin](../build/media/vscpp-concierge-choose-workload.gif "Masaüstü uygulama geliştirme ile C++ iş yükünü yükleyin.")
 
 1. Yükleme tamamlandığında seçin **başlatma** Visual Studio'yu başlatmak için düğme.
 
-   Visual Studio'yu çalıştırdığınız ilk kez Microsoft Account oturum açmaları istenir. Yoksa, bir ücretsiz oluşturabilirsiniz. Ayrıca, bir tema seçmeniz gerekir. Endişelenmeyin, isterseniz, daha sonra değiştirebilirsiniz. 
+   Visual Studio'yu çalıştırdığınız ilk kez Microsoft Account oturum açmaları istenir. Yoksa, bir ücretsiz oluşturabilirsiniz. Ayrıca, bir tema seçmeniz gerekir. Endişelenmeyin, isterseniz, daha sonra değiştirebilirsiniz.
 
    Birçok Visual Studio sürebilir hazır hale getirmek için dakika, onu çalıştırdığınız ilk kez kullanın. İşte bu şekilde bir hızlı atlamalı görünür:
 

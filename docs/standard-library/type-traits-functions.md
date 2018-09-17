@@ -26,12 +26,12 @@ helpviewer_keywords:
 - std::is_trivially_copy_assignable
 - std::is_trivially_move_assignable
 - std::is_trivially_move_constructible
-ms.openlocfilehash: 3754af9a32ab1beeb4f3b9a783547bd081d57a46
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 551282b6d99491e49a185bab2ede2f775bb55498
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955844"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707830"
 ---
 # <a name="lttypetraitsgt-functions"></a>&lt;type_traits&gt; işlevleri
 
@@ -53,11 +53,11 @@ struct is_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Hedef*  
- Atamayı alan nesnenin türü.
+*Hedef*<br/>
+Atamayı alan nesnenin türü.
 
-*Kaynak*  
- Değer sağlayan bir nesne türü.
+*Kaynak*<br/>
+Değer sağlayan bir nesne türü.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -74,8 +74,8 @@ struct is_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -92,8 +92,8 @@ struct is_copy_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -145,8 +145,8 @@ struct is_default_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
- Sorgulanacak tür.
+*T*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -198,8 +198,8 @@ struct is_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
- Sorgulanacak tür.
+*T*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -216,8 +216,8 @@ struct is_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
- Değerlendirilecek tür
+*T*<br/>
+Değerlendirilecek tür
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -234,8 +234,8 @@ struct is_nothrow_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -252,8 +252,8 @@ struct is_trivially_copy_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
- Sorgulanacak tür.
+*T*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -272,8 +272,8 @@ struct is_trivially_move_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -302,8 +302,8 @@ struct is_trivially_move_constructible;
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Sorgulanacak tür.
+*Ty*<br/>
+Sorgulanacak tür.
 
 ### <a name="remarks"></a>Açıklamalar
 

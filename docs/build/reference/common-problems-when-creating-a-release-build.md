@@ -1,5 +1,5 @@
 ---
-title: Yayın derlemesi oluşturma genel sorunlar | Microsoft Docs
+title: Yayın derlemesi oluşturmadaki genel sorunlar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -28,46 +28,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8860783a2cf9fb88b28e24e0bc16eb16c0dd5d77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b423f173bfa2d7fdc3fd8e97fe9eb42cf8e76f3d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373172"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702461"
 ---
 # <a name="common-problems-when-creating-a-release-build"></a>Yayın Derlemesi Oluşturmadaki Genel Sorunlar
-Geliştirme sırasında genellikle derleme ve projenizin hata ayıklama derlemesi ile test. Ardından, uygulamanız yayın derlemesi için yapılandırdıysanız, bir erişim ihlali alabilirsiniz.  
-  
- Aşağıdaki liste bir hata ayıklama ve yayın (nondebug) derlemesi arasındaki birincil farklılıklar gösterir. Diğer farklar vardır, ancak bir hata ayıklama derlemesi çalışırken, bir yayın derleme bir uygulama başarısız olmasına neden olur farklılıklar şunlardır.  
-  
--   [Yığın düzeni](#_core_heap_layout)  
-  
--   [Derleme](#_core_compilation)  
-  
--   [İşaretçi desteği](#_core_pointer_support)  
-  
--   [En iyi duruma getirme](#_core_optimizations)  
-  
- Bkz: [/GZ (Catch yayın derleme hatalarını hata ayıklama yapı içinde)](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md) derleyici seçeneği yayın catch hakkında bilgi için hata ayıklama derlemelerinde hataları oluşturun.  
-  
-##  <a name="_core_heap_layout"></a> Yığın düzeni  
- Uygulama hata ayıklama, ancak değil yayın çalışırken yığın düzeni belirgin sorunları yaklaşık yüzde doksanına neden olur.  
-  
- Hata ayıklama için projeyi derlerken hata ayıklama bellek ayırıcısı kullanıyor. Bu, tüm bellek ayırmaları etrafında yerleştirilen koruma bayt olduğu anlamına gelir. Bu koruma bayt algılamak belleğin üzerine yazma. Yığın düzeni hata ayıklama ve yayın arasında farklı olduğu için sürümler, belleğin üzerine yazma sorunları bir hata ayıklama derlemesi oluşturmayabilir, ancak bir yayın derleme yıkıcı iş etkisi.  
-  
- Daha fazla bilgi için bkz: [denetleyin bellek üzerine yazmak için](../../build/reference/checking-for-memory-overwrites.md) ve [hata ayıklama yapı denetleyin bellek üzerine yazmak için kullanın](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md).  
-  
-##  <a name="_core_compilation"></a> Derleme  
- MFC makroları ve çoğu sürüm için derlerken MFC uygulaması değişiklikleri çoğunu. Özellikle, ASSERTs içinde bulunan kod hiçbiri yürütülecek şekilde ASSERT makrosu Nothing bir sürümde yapıdaki değerlendirir. Daha fazla bilgi için bkz: [ASSERT deyimleri inceleyin](../../build/reference/using-verify-instead-of-assert.md).  
-  
- Bazı işlevler sürümde yapıdaki daha yüksek hız için satır içi. En iyi duruma getirme genellikle bir yayın yapı içinde etkinleştirilir. Farklı bellek ayırıcısı de kullanılıyor.  
-  
-##  <a name="_core_pointer_support"></a> İşaretçi desteği  
- Hata ayıklama bilgilerini eksikliği doldurma uygulamanızdan kaldırır. Bir yayın derleme parazit işaretçileri hata ayıklama bilgileri işaret eden yerine başlatılmamış bellek işaret eden, büyük şansına sahip olabilirsiniz.  
-  
-##  <a name="_core_optimizations"></a> En iyi duruma getirme  
- Bazı kod parçalarını yapısına bağlı en iyi duruma getirme derleyici beklenmeyen kodu oluşturabilir. Yayın derlemesi sorunlarını az olası nedeni budur ancak bazen kaynaklanır. Bir çözüm için bkz: [kodunuzu en iyi duruma getirme](../../build/reference/optimizing-your-code.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın derlemeleri](../../build/reference/release-builds.md)   
- [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)
+
+Geliştirme sırasında genellikle derleme ve projenizin hata ayıklama derlemesi ile test edin. Daha sonra uygulamanızı bir yayın yapısı için oluşturma, erişim ihlali alabilirsiniz.
+
+Aşağıdaki listede bir hata ayıklama ve yayın (nondebug) derleme arasındaki temel farklar gösterilmektedir. Diğer farklar vardır, ancak hata ayıklama yapısında çalışırken, bir yayın yapıda uygulamanın başarısız olmasına neden farklar aşağıda verilmiştir.
+
+- [Yığın düzeni](#_core_heap_layout)
+
+- [Derleme](#_core_compilation)
+
+- [İşaretçi desteği](#_core_pointer_support)
+
+- [En iyi duruma getirme](#_core_optimizations)
+
+Bkz: [/GZ (Catch yayın derleme hatalarını hata ayıklama derleme içinde)](../../build/reference/gz-enable-stack-frame-run-time-error-checking.md) derleyici seçeneği yayın catch hakkında bilgi için hata ayıklama yapılarında hata oluşturun.
+
+##  <a name="_core_heap_layout"></a> Yığın düzeni
+
+Yığın düzeni, uygulamanın hata ayıklama, ancak değil yayın çalışırken yaklaşık yüzde doksanı görünen sorunlara neden olacaktır.
+
+Hata ayıklama için projenizi yapılandırdığınızda, hata ayıklama bellek ayırıcısı kullanıyor. Bu, tüm bellek ayırmaları etrafında yerleştirilen guard bayt olduğu anlamına gelir. Bu koruma bayt belleğin üzerine yazma algılayın. Yığın düzeni yayınlama ve hata ayıklama arasında farklı olduğundan sürümleri, belleğin üzerine yazma sorunları, hata ayıklama derlemesinde oluşturmayabilir, ancak bir sürüm yapıda yıkıcı etkileri olabilir.
+
+Daha fazla bilgi için [denetlemek için bellek üzerine](../../build/reference/checking-for-memory-overwrites.md) ve [bellek üzerine yazmak için hata ayıklama derleme denetleyin kullanın](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md).
+
+##  <a name="_core_compilation"></a> Derleme
+
+MFC makroları ve çoğu için yayın oluşturma sırasında MFC uygulaması değişikliklerin birçoğu. Özellikle, ASSERTs içinde bulunan bir kodu hiçbiri yürütülecek şekilde ASSERT makrosu derleme, hiçbir şey için değerlendirir. Daha fazla bilgi için [ASSERT deyimleri inceleyin](../../build/reference/using-verify-instead-of-assert.md).
+
+Yüksek hızda sürüm oluşturma için bazı işlevleri yapılırlar. İyileştirmeler genellikle bir yayın yapısı içinde etkinleştirilir. Farklı bellek ayırıcı da kullanılıyor.
+
+##  <a name="_core_pointer_support"></a> İşaretçi desteği
+
+Hata ayıklama bilgilerini eksikliği doldurmayı uygulamadan kaldırır. Bir yayın yapıda parazit işaretçileri hata ayıklama bilgilerini işaret eden yerine başlatılmamış belleği işaret eden, büyük şansına sahip olabilirsiniz.
+
+##  <a name="_core_optimizations"></a> En iyi duruma getirme
+
+Bazı kod parçalarını doğasına bağlı olarak, beklenmeyen bir kod iyileştirici derleyiciyi üretebilir. Yayın derlemesi sorunlarını az olası nedeni budur ancak bu durum ortaya çıkar. Bir çözüm için bkz: [kodunuzu en iyi duruma getirme](../../build/reference/optimizing-your-code.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yayın Derlemeleri](../../build/reference/release-builds.md)<br/>
+[Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

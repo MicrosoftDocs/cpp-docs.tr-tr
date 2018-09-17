@@ -82,12 +82,12 @@ helpviewer_keywords:
 - std::uninitialized_fill_n [C++]
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 762cc70c40c2d6e201b42c0c10ed83c981c97ec7
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b740613666c7e4e1b5cc2c1b14c5cbf04b0fe6ef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44101670"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702877"
 ---
 # <a name="ltmemorygt-functions"></a>&lt;bellek&gt; işlevleri
 
@@ -310,7 +310,8 @@ struct default_delete {
 *PTR*<br/>
 Silinecek nesne işaretçisi.
 
-Diğer silinecek dizideki öğelerin türü.
+*Diğer*<br/>
+Silinecek dizideki öğelerin türü.
 
 ### <a name="remarks"></a>Açıklamalar
 

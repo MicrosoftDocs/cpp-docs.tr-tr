@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53e9396148a89a4778d7e12066a814f2065bbac6
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c326a13e55ed14f93b35ed486f7ee4596c643758
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465923"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712523"
 ---
 # <a name="cmfcribbonlinkctrl-class"></a>CMFCRibbonLinkCtrl sınıfı
 Şerit üzerinde konumlandırılmış bir köprü uygular. Düğmeyi tıklattığınızda köprüyü bir Web sayfası açılır.  
@@ -106,14 +106,14 @@ CMFCRibbonLinkCtrl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Bağlantı denetimi tıklandığında yürüten komutu komut Kimliğini belirtir.  
+*nID*<br/>
+[in] Bağlantı denetimi tıklandığında yürüten komutu komut Kimliğini belirtir.  
   
- [in] *lpszText*  
- Bağlantı Denetimde görüntülenecek etiketi belirtir.  
+*lpszText*<br/>
+[in] Bağlantı Denetimde görüntülenecek etiketi belirtir.  
   
- [in] *lpszLink*  
- Bağlantı denetimi ile ilişkili köprü belirtir.  
+*lpszLink*<br/>
+[in] Bağlantı denetimi ile ilişkili köprü belirtir.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek oluşturucusuna kullanımı gösterilmiştir `CMFCRibbonLinkCtrl` sınıfı. Bu kod parçacığı parçasıdır [Şerit araçları örnek](../../visual-cpp-samples.md).  
@@ -263,8 +263,8 @@ void SetLink(LPCTSTR lpszLink);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLink*  
- Köprü metni belirtir.  
+*lpszLink*<br/>
+[in] Köprü metni belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

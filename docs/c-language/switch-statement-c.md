@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71fa5ae717963d8ab2afc0b290bb42a3de72c0b6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5d5a4598a83c448a36750dc1aac6b4a22ef3513f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760363"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704359"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C)
 `switch` Ve **çalışması** deyimleri Yardım denetimi karmaşık koşullu ya da dal oluşturma işlemleri. `switch` Deyimi denetimi kendi gövdesi içindeki bir ifade aktarır.  
@@ -39,18 +39,20 @@ Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşl
   
 Kullanım `switch` deyimi genellikle görünür aşağıdakine benzer:  
 
-**geçiş** ( *ifade* )  
-**{**  
-&nbsp;&nbsp;&nbsp;&nbsp;*Bildirimleri*  
-&nbsp;&nbsp;&nbsp;&nbsp;/\* . biçimindeki telefon numarasıdır. biçimindeki telefon numarasıdır. \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi** *sabit-ifade* **:**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* ifade eşitse yürütülen deyimleri \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* Bu sabit-ifade değeri \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**BREAK;**  
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* ifade eşit olmadığı durumlarda yürütülen deyimleri \*/  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/\* büyük/küçük harf tüm sabit-ifade \*/  
-**}**
+```C
+switch ( expression )
+{
+    // declarations
+    // . . .
+    case constant_expression:
+        // statements executed if the expression equals the
+        // value of this constant_expression
+        break;
+    default:
+        // statements executed if expression does not equal
+        // any case constant_expression
+}
+```
 
 Kullanabileceğiniz **sonu** deyimi içinde belirli bir durumun işlenmesini sonlandırmak için `switch` deyimi ve dal sonuna `switch` deyimi. Olmadan **sonu**, program sonraki durumuna kadar deyim yürütmeye devam eder bir **sonu** veya deyimin sonuna ulaşıldı. Bazı durumlarda, bu devamlılık istenebilir.
 

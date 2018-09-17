@@ -23,45 +23,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a93172296b0e2e6d54dc428ffc62812ad979b160
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 400985751d9ceebf7cc2c5f632cb33c5ba847bfe
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374472"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714291"
 ---
 # <a name="j-default-char-type-is-unsigned"></a>/J (Varsayılan Karakter Türü İmzasız)
-Varsayılan değişiklikleri `char` gelen yazın `signed char` için `unsigned char`ve `char` türü olduğunda sıfır genişletilmiş devam eder bir `int` türü.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/J  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa bir `char` değeri olarak bildirilen açıkça `signed`, **/J** seçeneği bu etkilemez ve devam eder ise, değer oturum genişletilmiş bir `int` türü.  
-  
- **/J** seçeneği tanımlar `_CHAR_UNSIGNED`, ile kullanılan `#ifndef` varsayılan aralığı tanımlamak için Lımıts.h dosyasındaki `char` türü.  
-  
- ANSI C ve C++, belirli bir uygulamasına gerektirmez `char` türü. İngilizce dışında bir dil içine sonunda çevrilir karakter verileriyle çalışırken bu kullanışlı bir seçenektir.  
-  
+
+Varsayılan değişiklikleri `char` türünü `signed char` için `unsigned char`ve `char` türü sıfır genişletilmiş için genişletildiğinde bir `int` türü.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/J
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsa bir `char` değeri olarak bildirilen açıkça `signed`, **/J** seçeneği bunu etkilemez ve değer için genişletildiğinde işaret genişletilmiş bir `int` türü.
+
+**/J** seçeneği tanımlar `_CHAR_UNSIGNED`, birlikte kullanılan `#ifndef` varsayılan aralığını tanımlamak için Lımıts.h dosyasındaki `char` türü.
+
+ANSI C ve C++ özel uygulanışı gerektirmez `char` türü. Bu seçenek, sonunda İngilizce dışında bir dil çevrileceğini karakter verileriyle çalışırken yararlıdır.
+
 > [!NOTE]
->  ATL/MFC ile Bu derleyici seçeneği kullanırsanız, bir hata oluşturulabilir. Tanımlayarak bu hatayı devre dışı bırakılamadı rağmen `_ATL_ALLOW_CHAR_UNSIGNED`, bu geçici çözüm desteklenmez ve her zaman çalışmayabilir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.  
-  
-2.  Projedeki **özellik sayfaları** iletişim kutusunda, sol bölmede altında **yapılandırma özellikleri**, genişletin **C/C++** ve ardından **komut satırı**.  
-  
-3.  İçinde **ek seçenekler** bölmesinde belirtin **/J** derleyici seçeneği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Proje Özellikleriyle Çalışma](../../ide/working-with-project-properties.md)
+>  ATL/MFC ile Bu derleyici seçeneğini kullanırsanız, bir hata oluşturulabilir. Tanımlayarak bu hatayı devre dışı bırakılamadı rağmen `_ATL_ALLOW_CHAR_UNSIGNED`, bu geçici çözüm desteklenmez ve her zaman çalışmayabilir.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. İçinde **Çözüm Gezgini**, proje için kısayol menüsünü açın ve ardından **özellikleri**.
+
+1. Projedeki **özellik sayfaları** iletişim kutusunda, sol bölmede altında **yapılandırma özellikleri**, genişletme **C/C++** seçip **komutsatırı**.
+
+1. İçinde **ek seçenekler** bölmesinde belirtin **/J** derleyici seçeneği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.DefaultCharIsUnsigned%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Proje Özellikleriyle Çalışma](../../ide/working-with-project-properties.md)

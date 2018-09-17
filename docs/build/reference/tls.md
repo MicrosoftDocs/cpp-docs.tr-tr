@@ -17,22 +17,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5e510f406ceae7508f9b84f99e7ab397d22f114
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 78f485a783dbe8b5fe9a49ed3100754115bf50b8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373530"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714681"
 ---
 # <a name="tls"></a>/TLS
-Yürütülebilir bir dosya IMAGE_TLS_DIRECTORY yapısından görüntüler.  
-  
-## <a name="remarks"></a>Açıklamalar  
- / TLS TLS yapısı alanlarının yanı sıra TLS geri arama işlevleri adreslerini görüntüler.  
-  
- Bir program iş parçacığı yerel depolaması kullanmıyorsa, görüntü bir TLS yapısı içermez.  Bkz: [iş parçacığı](../../cpp/thread.md) daha fazla bilgi için.  
-  
- IMAGE_TLS_DIRECTORY winnt.h içinde tanımlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+Yürütülebilir dosyadan IMAGE_TLS_DIRECTORY yapısını görüntüler.
+
+## <a name="remarks"></a>Açıklamalar
+
+/ TLS yanı sıra TLS geri çağırma işlevler adresleri TLS yapının alanları görüntüler.
+
+Bir program iş parçacığı yerel depolama kullanmıyorsa görüntüsünü TLS yapısı içermez.  Bkz: [iş parçacığı](../../cpp/thread.md) daha fazla bilgi için.
+
+IMAGE_TLS_DIRECTORY winnt.h içinde tanımlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

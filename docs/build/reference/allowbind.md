@@ -18,27 +18,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af4a9f3d898d0087f0e8e861ccfe72e4adadb1de
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0ce0a33ebb0b8b9ba34ac241c8335e9524dec08b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368921"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715580"
 ---
 # <a name="allowbind"></a>/ALLOWBIND
-DLL bağlı olup olmadığını belirtir.  
-  
-```  
-  
-/ALLOWBIND[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/ALLOWBIND** seçeneği ayarlar biraz DLL üstbilgisinde Bind.exe için görüntüyü bağlanması için izin verildiğini gösterir. Bağlama yükleyicisi rebase ve her başvurulan DLL için adres düzeltmesi gerçekleştirmek sahip olmadığında daha hızlı yüklemek bir görüntü izin verebilirsiniz. Dijital olarak imzalı olup olmadığını bağlanması için bir DLL istemeyebilirsiniz — bağlama imza geçersiz kılar. Bağlama hiçbir etkisi adres boşluğu düzeni rastgele seçimini (ASLR) kullanarak görüntü için etkinse **/DYNAMICBASE** ASLR destekleyen Windows sürümleri üzerinde.  
-  
- Kullanım **/ALLOWBIND:NO** DLL bağlamayı Bind.exe önlemek için.  
-  
- Daha fazla bilgi için bkz: [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) bağlayıcı seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+
+DLL'in bağlı olamayacağını belirtir.
+
+```
+
+/ALLOWBIND[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**/ALLOWBIND** seçeneği görüntü bağlanması için izin verildiğini Bind.exe'yi gösteren DLL üst bilgisinde bir bit ayarlar. Yükleyici rebase ve her başvurulan DLL için adres düzeltmesi gerçekleştirmek sahip olmadığında daha hızlı bir şekilde yüklemek bir görüntü bağlama izin verebilirsiniz. Bir DLL dijital olarak imzalanmışsa bağlı olmasını istemeyebilirsiniz — bağlama imzayı geçersiz kılar. Bağlama hiçbir etkisi rastgele adres alanı düzenini (ASLR) kullanarak görüntüyü etkinse **dynamıcbase** ASLR destekleyen Windows sürümleri üzerinde.
+
+Kullanım **/ALLOWBIND:NO** DLL bağlama gelen Bind.exe'yi önlemek için.
+
+Daha fazla bilgi için [/ALLOWBIND](../../build/reference/allowbind-prevent-dll-binding.md) bağlayıcı seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

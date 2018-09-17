@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f36d6231cfce86314be082a77a39034b619741ad
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 5778b5be050fec50d30215a8b9cef2ca6e4b6dd4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336949"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709689"
 ---
 # <a name="cautohidedocksite-class"></a>CAutoHideDockSite sınıfı
 `CAutoHideDockSite` Genişletir [CDockSite sınıfı](../../mfc/reference/cdocksite-class.md) otomatik gizleme dock panellerini uygulamak için.  
@@ -115,7 +115,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pBar*|Framework testleri temel bölme.|  
+|*pBar*|[in] Framework testleri temel bölme.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *pBar* türetilir `CMFCAutoHideBar`; FALSE Aksi takdirde.  
@@ -138,9 +138,9 @@ virtual void DockPane(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWnd*|Framework noktaları bölmesi.|  
-|[in] *dockMethod*|Seçenekler bölmesi için yerleştirme.|  
-|[in] *lpRect*|Yerleştirilmiş bölmenin sınırlarını belirten bir dikdörtgen.|  
+|*pWnd*|[in] Framework noktaları bölmesi.|  
+|*dockMethod*|[in] Seçenekler bölmesi için yerleştirme.|  
+|*lpRect*|[in] Yerleştirilmiş bölmenin sınırlarını belirten bir dikdörtgen.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama parametresini kullanmıyor *dockMethod*, gelecekte kullanılmak üzere sağlanır.  
@@ -159,7 +159,7 @@ void GetAlignRect(CRect& rect) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *dikdörtgen*|Bir dikdörtgen bir başvuru. Yöntemi, bu dikdörtgenin içindeki dock sitesiyle boyutunu depolar.|  
+|*Rect*|[in] Bir dikdörtgen bir başvuru. Yöntemi, bu dikdörtgenin içindeki dock sitesiyle boyutunu depolar.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Böylece dahil edilmez dikdörtgen uzaklık kenar boşluklarını ayarlanır.  
@@ -182,8 +182,8 @@ void SetOffsetLeft(int nOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nOffset*  
- Yeni uzaklığı.  
+*nOffset*<br/>
+[in] Yeni uzaklığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneler üzerinde statik olarak konumlandırılmıştır `CAutoHideDockSite` nesne. Bu kullanıcı konumunu el ile değiştiremez anlamına gelir `CMFCAutoHideBar` nesneleri. `SetOffsetLeft` Yöntemi en soldaki sol tarafındaki arasındaki boşluğu denetleyen `CMFCAutoHideBar` ve sol tarafındaki `CAutoHideDockSite`.  
@@ -196,8 +196,8 @@ void SetOffsetRight(int nOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nOffset*  
- Yeni uzaklığı.  
+*nOffset*<br/>
+[in] Yeni uzaklığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesneler üzerinde statik olarak konumlandırılmıştır `CAutoHideDockSite` nesne. Bu kullanıcı konumunu el ile değiştiremez anlamına gelir `CMFCAutoHideBar` nesneleri. `SetOffsetRight` Yöntemi en sağdaki sağ tarafında arasındaki boşluğu denetleyen `CMFCAutoHideBar` ve sağ tarafında `CAutoHideDockSite`.  
@@ -214,7 +214,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *rectNewClientArea*|Ayrılmış bir değer.|  
+|*rectNewClientArea*|[in] Ayrılmış bir değer.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama kullanmaz *rectNewClientArea*. Bu, bölmeleri genel araç kenar boşluklarını ve düğme aralığı ile yeniden çizer.  
@@ -231,7 +231,7 @@ void UnSetAutoHideMode(CMFCAutoHideBar* pAutoHideToolbar);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pAutoHideToolbar*|Bir işaretçi bir [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesne bölmesinde bulunan `CAutoHideDockSite`.|  
+|*pAutoHideToolbar*|[in] Bir işaretçi bir [CMFCAutoHideBar](../../mfc/reference/cmfcautohidebar-class.md) nesne bölmesinde bulunan `CAutoHideDockSite`.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem içeren satır için arar *pAutoHideToolbar*. Çağrı `CMFCAutoHideBar.UnSetAutoHideMode` tüm `CMFCAutoHideBar` satırının nesneleri. Varsa *pAutoHideToolbar* bulunamadı veya NULL ise, bu yöntemin çağırdığı `CMFCAutoHideBar.UnSetAutoHideMode` tüm `CMFCAutoHideBar` üzerindeki nesneleri `CAutoHideDockSite`.  

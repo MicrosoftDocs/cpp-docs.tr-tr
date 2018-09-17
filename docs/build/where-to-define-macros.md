@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9cf3e87a50362c770d45f00c4dc17ac3d264f611
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 29a2899d7dba0b34c0ac3319c253c8056912d883
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380920"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713823"
 ---
 # <a name="where-to-define-macros"></a>Makroları Nerede Tanımlamalı
-Makrolar, bir komut satırı, komut dosyası, derleme görevleri dosyası veya Tools.ini dosyasında tanımlayın.  
-  
- Derleme görevleri dosyası veya Tools.ini dosyasında, her bir makro tanımı ayrı bir satırda görünmesini gerekir ve bir boşluk veya sekme ile başlayamaz. Boşluk veya eşittir işaretinden geçici sekmeleri göz ardı edilir. Tüm [dize karakter](../build/defining-an-nmake-macro.md) çevresindeki tırnak işaretleri ve katıştırılmış boşluklar dahil olmak üzere hazır olan.  
-  
- Komut satırı veya komut dosyası, boşluk ve sekme değişkenleri sınırlar ve eşittir işaretinden çevreleyen olamaz. Varsa `string` boşluk veya sekmeler, katıştırılmış içeren dize veya tüm makro çift tırnak işaretleri içine alın ("").  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)
+
+Bir komut satırı, komut dosyası, derleme görevleri dosyası veya Tools.ini dosya makroları tanımlar.
+
+Derleme görevleri dosyası veya Tools.ini dosyanın, her bir makro tanımı ayrı bir satıra görünmesi gerekir ve bir boşluk veya sekme ile başlayamaz. Boşluk veya sekme eşittir işareti etrafında göz ardı edilir. Tüm [dize karakter](../build/defining-an-nmake-macro.md) tırnak işaretleri ve gömülü boşluklar çevreleyen dahil olmak üzere kelimesine yapılmış.
+
+Komut satırını veya komut dosyası, boşluk ve sekme bağımsız değişkenleri sınırlandırmak ve eşittir işaretini çevreleyen olamaz. Varsa `string` boşluk veya sekme, katıştırılmış içeren dize ya da tüm makro çift tırnak işaretleri içine alın ("").
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)

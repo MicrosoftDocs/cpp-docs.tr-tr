@@ -1,5 +1,5 @@
 ---
-title: -Makine (hedef platformu belirt) | Microsoft Docs
+title: -MACHINE (hedef platformu belirt) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,37 +21,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4e82cc0fec843dede07f474e1ad5bbdfcc2958f2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e159fe15b0aed441b1a96047a3ffb035077d6266
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374027"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708623"
 ---
 # <a name="machine-specify-target-platform"></a>/MACHINE (Hedef Platformu Belirt)
-```  
-/MACHINE:{ARM|EBC|X64|X86}  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- /MACHINE seçeneği programı hedef platformu belirtir.  
-  
- Genellikle, /MACHINE seçeneği belirtmeniz gerekmez. BAĞLANTI .obj dosyaları makine türünden oluşturur. Ancak, bazı durumlarda, bağlantı sorunları ve makine türünü belirleyemiyor bir [Bağlayıcı araçları hatası LNK1113](../../error-messages/tool-errors/linker-tools-error-lnk1113.md). Böyle bir hata oluşursa, /MACHINE belirtin.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **hedef makine** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/MACHINE:{ARM|EBC|X64|X86}
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ MACHINE seçeneği program için hedef platformu belirtir.
+
+Genellikle, / MACHINE seçeneği belirtmeniz gerekmez. BAĞLANTI .obj dosyaları makine türünden çıkarır. Ancak, bazı durumlarda, bağlantı sorunları ve makine türü belirlenemiyor bir [Bağlayıcı araçları hatası LNK1113](../../error-messages/tool-errors/linker-tools-error-lnk1113.md). Böyle bir hata oluşursa/Machine belirtin.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **hedef makine** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.TargetMachine%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

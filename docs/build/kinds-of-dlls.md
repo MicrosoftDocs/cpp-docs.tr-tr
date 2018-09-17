@@ -16,63 +16,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 605d60535df8d0a94d58e120df89f975402b8a22
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1ca646c39bbe99ba4ed4059f350d9478b669d408
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369948"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710183"
 ---
 # <a name="kinds-of-dlls"></a>DLL Türleri
-Bu konu, DLL derleme türünü belirlemenize yardımcı olacak bilgiler sağlar.  
-  
-##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Farklı türdeki kullanılabilir DLL'ler  
- Visual C++ kullanarak, Win32 DLL'leri C veya C++ Microsoft Foundation Class (MFC) kitaplığı kullanmayan oluşturabilirsiniz. Win32 Uygulama Sihirbazı'ndaki bir MFC DLL projesi oluşturabilirsiniz.  
-  
- MFC Kitaplığı ya da statik bağlantı kitaplıkları veya DLL'ler, MFC DLL Sihirbazı'nı kullanarak bir dizi, kullanılabilir. MFC DLL kullanıyorsanız, Visual C++ üç farklı DLL geliştirme senaryolarını destekler:  
-  
--   Statik olarak Normal MFC DLL oluşturma  
-  
--   MFC bağlantıları dinamik olarak Normal MFC DLL oluşturma  
-  
--   MFC uzantı DLL'si oluşturma, her zaman dinamik olarak MFC'ye  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)  
-  
--   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
-  
--   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
-  
--   [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)  
-  
--   [Hangi tür DLL kullanmak için](#_core_which_kind_of_dll_to_use)  
-  
-##  <a name="_core_which_kind_of_dll_to_use"></a> Hangi tür DLL kullanmaya karar verme  
- MFC DLL kullanmıyorsa, Visual C++ dışı MFC Win32 DLL oluşturmak için kullanın. (Statik veya dinamik olarak), DLL MFC'ye bağlantılandırma önemli disk alanı ve bellek alır. MFC DLL gerçekte kullanmadığı sürece MFC'ye bağlantı yapmamanız gerekir.  
-  
- DLL MFC kullanma ve MFC veya MFC olmayan uygulamaları tarafından kullanılan, dinamik olarak MFC'ye bağlı normal MFC DLL ya da MFC'ye normal bir MFC DLL oluşturmanız gerekir. Çoğu durumda, muhtemelen dinamik olarak MFC'ye DLL dosyasının boyutu çok küçük olmaz ve MFC paylaşılan sürümünü kullanarak bellekte tasarrufları önemli olabilir çünkü bağlanan normal bir MFC DLL kullanmak istiyorsunuz. Statik olarak MFC'ye bağlantı varsa, DLL dosyası boyutunu daha büyük olabilir ve kendi özel MFC kitaplık kodu kopyasını yüklediğinden ek bellek büyük olasılıkla alabilir.  
-  
- Dinamik olarak MFC'ye bağlanan bir DLL oluşturma MFC'nin bağlamak gerekli olmadığından, MFC'ye bir DLL oluşturmaktan daha hızlıdır. Bu bağlayıcı hata ayıklama bilgileri nerede sıkıştırmasının gerektiği hata ayıklama derlemelerinde özellikle doğrudur. Hata ayıklama bilgilerini içeren bir DLL ile bağlayarak, DLL sıkıştırmak için daha az hata ayıklama bilgisi yoktur.  
-  
- Dinamik olarak MFC'ye bağlantılandırma bir dezavantajı, paylaşılan DLL'leri Mfcx0.dll ve Msvcrxx.dll (veya benzer dosyaları) DLL ile dağıtmanız gerektiğidir. MFC DLL'leri ücretsiz olarak yeniden dağıtılabilir, ancak hala Kurulum programınıza DLL'leri yüklemeniz gerekir. Ayrıca, hem programınız ve MFC DLL'leri tarafından kullanılan C çalışma zamanı kitaplığı içeren Msvcrxx.dll hazırlamalısınız.  
-  
- DLL yalnızca MFC yürütülebilir dosyaları tarafından kullanılacaksa, normal bir MFC DLL veya MFC uzantı DLL oluşturma arasında seçim sahip. DLL varolan MFC sınıflarından türetilmiş yeniden kullanılabilir sınıfları uygulayan veya uygulama ve DLL arasında MFC'den türetilen nesneleri geçirmek gerekirse, MFC uzantı DLL'si yapılandırmanız gerekir.  
-  
- DLL dinamik olarak MFC'ye bağlanıyorsa, MFC DLL'leri DLL ile dağıtılabilir. Bu mimari, disk alanından tasarruf ve bellek kullanımını en aza indirmek için birden fazla yürütülebilir dosyalar arasında sınıf kitaplığı paylaşımı için özellikle yararlıdır.  
-  
- Sürüm 4.0, MFC kullanılan DLL'leri Visual C++ yalnızca desteklenen iki tür önce: USRDLL ve AFXDLL. Statik olarak MFC'ye bağlı normal MFC DLL'leri önceki USRDLL ile aynı özelliklere sahip. MFC uzantı DLL'leri eski AFXDLL aynı özelliklere sahip.  
-  
-### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)  
-  
--   [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)  
-  
--   [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)  
-  
--   [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+
+Bu konu, oluşturacağınız DLL'nin türünü belirlemenize yardımcı olacak bilgiler sağlar.
+
+##  <a name="_core_the_different_kinds_of_dlls_available_with_visual_c.2b2b"></a> Farklı türdeki kullanılabilir DLL'ler
+
+Visual C++ kullanarak, Microsoft Foundation Class (MFC) kitaplığı kullanmayan Win32 DLL'leri C veya C++ oluşturabilirsiniz. Win32 Uygulama Sihirbazı ile MFC DLL projesi oluşturabilirsiniz.
+
+MFC Kitaplığı hem statik bağlantı kitaplıklarında veya bir bazı DLL'lerde MFC DLL Sihirbazı ile kullanılabilir. DLL'niz MFC kullanıyorsa, Visual C++ üç farklı DLL geliştirme senaryosu destekler:
+
+- Statik bir Normal MFC DLL oluşturma
+
+- Dinamik olarak Normal MFC DLL oluşturma
+
+- Bir MFC uzantılı DLL oluşturma, her zaman dinamik olarak MFC'ye
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)
+
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+
+- [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)
+
+- [Hangi tür DLL kullanılacak?](#_core_which_kind_of_dll_to_use)
+
+##  <a name="_core_which_kind_of_dll_to_use"></a> Hangi tür DLL kullanılacağına karar verme
+
+DLL'niz MFC kullanmıyorsa, bir MFC olmayan Win32 DLL oluşturmak için Visual C++'yı kullanın. (Statik veya dinamik olarak) DLL'nizi MFC'ye bağlama, önemli ölçüde disk alanını ve belleği doldurur. Aslında DLL dosyanız bir MFC kullanmadığı sürece MFC'ye bağlantı yapmamanız gerekir.
+
+DLL'niz MFC kullanacaksa ve MFC veya MFC olmayan uygulamalar tarafından kullanılan, dinamik olarak MFC'ye bağlanan normal bir MFC DLL veya statik olarak MFC'ye bağlı normal MFC DLL'SİNİN oluşturmanız gerekir. Çoğu durumda, büyük olasılıkla, DLL dosyanızın boyutu daha küçük olacağından ve tasarruf kullanarak MFC'nin paylaşılan sürümünden belleğe yapılan kayıtlar önemli olabileceğinden MFC'ye dinamik olarak bağlanan normal MFC DLL'SİNİN kullanmak istediğiniz. MFC'ye statik olarak bağlarsanız, DLL dosyanızın boyutu daha büyük ve fazla bellek alanı dolduracaktır, kendi özel MFC kitaplık kodu kopyasını yüklediğinden potansiyel olarak alın.
+
+MFC'ye dinamik olarak bir DLL derlenirken MFC'nin kendisine bağlamak gerekli olduğundan, statik olarak MFC'ye bağlı bir DLL'yi oluşturmaktan daha hızlıdır. Bu, özellikle nerede bağlayıcı hata ayıklama bilgilerini sıkıştırmasının gerektiği hata ayıklama yapılarında doğrudur. Hata ayıklama bilgilerini önceden içeren bir DLL'ye, DLL dosyanız içinde sıkıştırmak için daha az hata ayıklama bilgileri yoktur.
+
+MFC'ye dinamik olarak bağlama bir dezavantajı, paylaşılan dll Mfcx0.dll ve Msvcrxx.dll (veya benzer dosyaları) DLL ile dağıtmanız ' dir. MFC DLL'leri ücretsiz olarak yeniden dağıtılabilir, ancak yine de DLL'leri Kurulum programınıza yüklemelisiniz. Ayrıca, programınız ve MFC DLL'lerinin kendilerinin kullanılan C çalışma zamanı kitaplığı içeren Msvcrxx.dll hazırlamalısınız.
+
+DLL'niz yalnızca MFC yürütülebilir dosyaları tarafından kullanılacaksa, Normal MFC DLL'SİNİN veya bir MFC uzantılı DLL oluşturma arasında seçim sahip. DLL'niz varolan MFC sınıflarından türetilmiş yeniden kullanılabilir sınıfları tümleştirirse veya uygulama ve DLL arasında MFC'den türetilmiş nesneler geçirmek istiyorsanız, bir MFC uzantılı DLL oluşturmanız gerekir.
+
+DLL'nizi MFC'ye, MFC DLL'leri DLL'niz ile yeniden dağıtılabilir. Bu mimari, disk alanından tasarruf etmek ve bellek kullanımını en aza indirmek için birden fazla yürütülebilir dosya arasında sınıf kitaplığının paylaşımı için özellikle yararlıdır.
+
+MFC kullanılan dll türleri yalnızca desteklenen iki Visual C++, 4.0 sürümünden önce: USRDLL ve AFXDLL kullanan. Statik olarak MFC'ye bağlı normal MFC DLL'lerin önceki USRDLL ile aynı özelliklere sahip. MFC uzantı DLL'leri önceki AFXDLL'ler aynı özelliklere sahip.
+
+### <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [MFC Dışı DLL'ler: Genel Bakış](../build/non-mfc-dlls-overview.md)
+
+- [Statik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-statically-linked-to-mfc.md)
+
+- [Dinamik olarak MFC'ye bağlı normal MFC DLL'leri](../build/regular-dlls-dynamically-linked-to-mfc.md)
+
+- [MFC uzantı DLL'leri: Genel Bakış](../build/extension-dlls-overview.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

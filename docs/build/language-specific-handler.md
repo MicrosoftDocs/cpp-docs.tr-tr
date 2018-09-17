@@ -12,61 +12,63 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6cbfbe6a9b98828a63fb4a092717bfab583e9a2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 678f5695523751ebc1ef3c5dba2b63154b21833c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368804"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714954"
 ---
 # <a name="language-specific-handler"></a>Dile Özel İşleyici
-UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları ayarlamak her dile özel işleyici göreli adresini UNWIND_INFO öğesinde mevcuttur. Önceki bölümde açıklandığı gibi dile özel işleyici araması bir özel durum işleyici için bir parçası olarak veya bırakmayla bir parçası olarak adlandırılır. Aşağıdaki prototipe sahiptir:  
-  
-```  
-typedef EXCEPTION_DISPOSITION (*PEXCEPTION_ROUTINE) (  
-    IN PEXCEPTION_RECORD ExceptionRecord,  
-    IN ULONG64 EstablisherFrame,  
-    IN OUT PCONTEXT ContextRecord,  
-    IN OUT PDISPATCHER_CONTEXT DispatcherContext  
-);  
-```  
-  
- **ExceptionRecord** standart Win64 tanımını içeren bir özel durum kaydı için bir işaretçi sağlar.  
-  
- **EstablisherFrame** bu işlev için sabit yığın ayırma tabanı adresidir.  
-  
- **ContextRecord** özel durumu (özel durum işleyici durumda) yükseltildi saatteki veya geçerli özel durum bağlamı noktalarına "bırakma" bağlamını (sonlandırma işleyicisi durumda).  
-  
- **DispatcherContext** bu işlev için dağıtıcı bağlamını işaret eder. Aşağıdaki tanımı vardır:  
-  
-```  
-typedef struct _DISPATCHER_CONTEXT {  
-    ULONG64 ControlPc;  
-    ULONG64 ImageBase;  
-    PRUNTIME_FUNCTION FunctionEntry;  
-    ULONG64 EstablisherFrame;  
-    ULONG64 TargetIp;  
-    PCONTEXT ContextRecord;  
-    PEXCEPTION_ROUTINE LanguageHandler;  
-    PVOID HandlerData;  
-} DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;  
-```  
-  
- **ControlPc** RIP bu işlev içinde değerdir. Bu, bir özel durum adresi ya da Denetim kurucu işlevden sola adresi değil. Bu denetim bu işlev içinde bazı Korumalı yapı içinde olup olmadığını belirlemek için kullanılan RIP olur (örneğin, bir yapıda bloğu için \__try /\__except veya \__try /\__finally).  
-  
- **ImageBase** temel (yük adresi) işlevi girişte kullanılan 32-bit uzaklıkları eklenmesi ve göreli adresleri kaydetmek için bilgilerindeki bu işlevi içeren modülü görüntüdür.  
-  
- **FunctionEntry** kaynakları RUNTIME_FUNCTION işaretçi bir işlev tutarak işlev giriş ve bu işlev için bilgi görüntü tabanlı göreli adresleri bırakma.  
-  
- **EstablisherFrame** bu işlev için sabit yığın ayırma tabanı adresidir.  
-  
- **TargetIp** bırakma devamlılık adresini belirten bir isteğe bağlı talimat adresi sağlar. Bu adres yoksayılır **EstablisherFrame** belirtilmedi.  
-  
- **ContextRecord** gönderme/bırakma Sistem özel durum kodu tarafından kullanılmak üzere özel durum bağlamı işaret eder.  
-  
- **LanguageHandler** çağrılan dile özgü dil işleyicisi yordamına işaret eder.  
-  
- **HandlerData** bu işlev için dile özel işleyici verileri işaret eder.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel Durum İşleme (x64)](../build/exception-handling-x64.md)
+
+UNW_FLAG_EHANDLER veya UNW_FLAG_UHANDLER bayrakları ayarlanmış her dile özel işleyici göreli adresini UNWIND_INFO öğesinde mevcuttur. Önceki bölümde açıklandığı gibi dile özel işleyici, özel durum işleyicisi için arama bir parçası olarak veya bir geriye doğru izleme bir parçası olarak adlandırılır. Aşağıdaki prototip şunları içerir:
+
+```
+typedef EXCEPTION_DISPOSITION (*PEXCEPTION_ROUTINE) (
+    IN PEXCEPTION_RECORD ExceptionRecord,
+    IN ULONG64 EstablisherFrame,
+    IN OUT PCONTEXT ContextRecord,
+    IN OUT PDISPATCHER_CONTEXT DispatcherContext
+);
+```
+
+**ExceptionRecord** standart Win64 tanımını içeren bir özel durum kaydı için bir işaretçi sağlar.
+
+**EstablisherFrame** bu işlev için sabit bir yığın ayırma taban adresidir.
+
+**ContextRecord** noktaları (özel durum işleyicisi durumda) özel duruma neden zaman ya da geçerli özel durum bağlamı için "bırakma" bağlamında (sonlandırma işleyicisi durumda).
+
+**DispatcherContext** bu işlev için dağıtıcı bağlamını işaret eder. Bunu aşağıdaki tanımları içerir:
+
+```
+typedef struct _DISPATCHER_CONTEXT {
+    ULONG64 ControlPc;
+    ULONG64 ImageBase;
+    PRUNTIME_FUNCTION FunctionEntry;
+    ULONG64 EstablisherFrame;
+    ULONG64 TargetIp;
+    PCONTEXT ContextRecord;
+    PEXCEPTION_ROUTINE LanguageHandler;
+    PVOID HandlerData;
+} DISPATCHER_CONTEXT, *PDISPATCHER_CONTEXT;
+```
+
+**ControlPc** RIP bu işlev içindeki değeridir. Bir özel durum adresi ya da Denetim kurmanın işlevi sola adres budur. Bu denetim bu işlev içindeki bazı Korumalı yapı içinde olup olmadığını belirlemek için kullanılan RIP, (örneğin, __try bloğu için \__try /\__except veya \__try /\__finally).
+
+**ImageBase** temel (yük adresi), işlev girişi kullanılan 32-bit uzaklıkları eklenmesi ve göreli adreslerini kaydetmek için bu işlevi içeren modül görüntüsüdür.
+
+**FunctionEntry** kaynakları RUNTIME_FUNCTION işaretçi bir işlev tutarak işlev giriş ve bu işlev için bilgileri görüntü tabanlı göreli adreslerini bırakma.
+
+**EstablisherFrame** bu işlev için sabit bir yığın ayırma taban adresidir.
+
+**TargetIp** geriye doğru izleme devamlılık adresini belirten bir isteğe bağlı bir yönerge adresi sağlar. Bu adres yoksayılır **EstablisherFrame** belirtilmedi.
+
+**ContextRecord** gönderme ve bırakma Sistem özel durum kodu tarafından kullanılmak üzere özel durum bağlamı işaret eder.
+
+**LanguageHandler** çağrılan dile özgü dil işleyici rutinini işaret eder.
+
+**HandlerData** bu işlev için dile özel işleyici veri işaret eder.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özel Durum İşleme (x64)](../build/exception-handling-x64.md)

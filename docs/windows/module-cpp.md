@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: a119ebcccea3881d7b595e0581e23f53c656b91c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: ac443927c2dcbb00cc01dd3cd63a95441a4a1bf0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43200224"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711821"
 ---
 # <a name="module-c"></a>modül (C++)
 
@@ -52,8 +52,8 @@ Kitaplık blok .idl dosyasında tanımlar.
 
 ### <a name="parameters"></a>Parametreler
 
-*tür* (isteğe bağlı)  
-Aşağıdakilerden biri olabilir:
+*Türü*  
+(İsteğe bağlı) Aşağıdakilerden biri olabilir:
 
 - `dll` İşlevleri ve işlemde COM sunucusu olarak çalışabilmesi ortaya çıkan DLL'yi izin sınıflar ekler. Varsayılan değer budur.
 
@@ -63,11 +63,11 @@ Aşağıdakilerden biri olabilir:
 
 - `unspecified` Modül özniteliği için ilgili ATL kod ekleme devre dışı bırakır: ekleme ATL modül sınıfı, genel örnek _AtlModule ve giriş noktası işlevleri. ATL kod projesinde diğer öznitelikleri nedeniyle ekleme devre dışı bırakmaz.
 
-*Ad* (isteğe bağlı)  
-Kitaplık blok adı.
+*Adı*  
+(İsteğe bağlı) Kitaplık blok adı.
 
-*Sürüm* (isteğe bağlı)  
-Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
+*Sürüm*  
+(İsteğe bağlı) Kitaplığını bloğuna atamak istediğiniz sürüm numarası. 1.0 varsayılan değerdir.
 
 *uuid*  
 Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için bir kimliği otomatik olarak oluşturulur. Almanız gerekebilir *UUID* tanımlayıcısını kullanarak bunu yapabilirsiniz, kitaplık bloğunun **__uuidof (** *libraryname* **)**.
@@ -75,32 +75,32 @@ Kitaplık için benzersiz kimliği. Bu parametreyi unutursanız, kitaplık için
 *lcid*  
 Yerelleştirme parametre. Bkz: [LCID](/windows/desktop/Midl/lcid) daha fazla bilgi için.
 
-*Denetim* (isteğe bağlı)  
-Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
+*control*  
+(İsteğe bağlı) Kitaplığı'nda, tüm coclass'ları denetimleri olduğunu belirtir.
 
 *helpstring*  
 Tür kitaplığını belirtir.
 
-*helpstringdll* (isteğe bağlı)  
-Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](/windows/desktop/Midl/helpstringdll) daha fazla bilgi için.
+*helpstringdll*  
+(İsteğe bağlı) Bir belge dize araması gerçekleştirmek için kullanılacak .dll dosyasının adını ayarlar. Bkz: [helpstringdll](/windows/desktop/Midl/helpstringdll) daha fazla bilgi için.
 
-*HelpFile* (isteğe bağlı)  
-Adını **yardımcı** tür kitaplığı dosyası.
+*helpfile*  
+(İsteğe bağlı) Adını **yardımcı** tür kitaplığı dosyası.
 
-*HelpContext* (isteğe bağlı)  
-**Yardımcı kimliği** bu tür kitaplığı için.
+*helpcontext*  
+(İsteğe bağlı) **Yardımcı kimliği** bu tür kitaplığı için.
 
-*helpstringcontext* (isteğe bağlı)  
-Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.
+*helpstringcontext*  
+(İsteğe bağlı) Bkz: [helpstringcontext](../windows/helpstringcontext.md) daha fazla bilgi için.
 
-*Gizli* (isteğe bağlı)  
-Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
+*hidden*  
+(İsteğe bağlı) Tüm Kitaplığı görüntülenmesini engeller. Bu kullanım denetimleri ile kullanıma yöneliktir. Genişletilmiş özelliklere sahip bir denetim sarmalayan yeni bir tür kitaplığı oluşturmak konakları gerekir. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*kısıtlı* (isteğe bağlı)  
-Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
+*restricted*  
+(İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
-*özel* (isteğe bağlı)  
-Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
+*Özel*  
+(İsteğe bağlı) Bir veya daha fazla öznitelik varsa Bu benzer [özel](../windows/custom-cpp.md) özniteliği. İlk parametre olarak *özel* özniteliğinin GUID'dir. Örneğin:
 
 ```
 [module(custom={guid,1}, custom={guid1,2})]

@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ebebb6e7d237746f96c7ac7e27c249244ff825b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cebb544b1d8fc8489de298bf7512cc612a6dfef2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367439"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701174"
 ---
 # <a name="environment-variable-macros"></a>Ortam Değişkeni Makroları
-NMAKE makrosu tanımları oturum başlamadan önce mevcut ortam değişkenleri için devralır. Bir değişken işletim sistemi ortamında ayarlarsanız, NMAKE makrosu kullanılabilir. Devralınan adları büyük harfe dönüştürülür. Devralma ön işleme önce gerçekleşir. Derleme görevleri dosyası aynı adla makroların geçersiz kılmak için ortam değişkenleri devralınan makroları neden /E seçeneğini kullanın.  
-  
- Ortam değişkeni makroları oturumda tanımlanabilir ve bu karşılık gelen ortam değişkenini değiştirir. Ortam değişkenleri SET komutu ile de değiştirebilirsiniz. Bir ortam değişkeni bir oturumda değiştirmek için SET komutunu kullanarak karşılık gelen makrosu ancak değiştirmez.  
-  
- Örneğin:  
-  
-```  
-PATH=$(PATH);\nonesuch  
-  
-all:  
-    echo %PATH%  
-```  
-  
- Bu örnekte, değiştirme `PATH` karşılık gelen ortam değişkenini değiştirir `PATH`; bu ekler `\nonesuch` yolunuz için.  
-  
- Bir ortam değişkeni bir makefile sözdizimsel olarak doğru olacak bir dize olarak tanımlanmışsa, hiçbir makrosu oluşturulur ve herhangi bir uyarı üretilir. Bir değişkenin değeri dolar işareti ($) içeriyorsa, NMAKE makrosu çağırma başlayan olarak yorumlar. Makro kullanarak beklenmeyen davranışlara neden olabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Özel NMAKE Makroları](../build/special-nmake-macros.md)
+
+NMAKE oturumu başlamadan önce mevcut ortam değişkenleri için makro tanımlarını alır. İşletim sistemi ortamında bir değişken ayarlandıysa, NMAKE makrosu kullanılabilir. Devralınan adlarını büyük harfe dönüştürülür. Devralma, ön işleme önce gerçekleşir. Derleme görevleri dosyası içinde aynı ada sahip tüm makrolar geçersiz kılmak için ortam değişkenlerini devralınan makroları neden /E seçeneğini kullanın.
+
+Ortam değişkeni makroları oturumda tanımlanabilir ve bu karşılık gelen ortam değişkenini değiştirir. Ayrıca, ortam değişkenleri KÜMESİ komutu değiştirebilirsiniz. Bir oturumda bir ortam değişkeni değiştirmek için Ayarla komutunu kullanarak karşılık gelen makrosu, ancak değiştirmez.
+
+Örneğin:
+
+```
+PATH=$(PATH);\nonesuch
+
+all:
+    echo %PATH%
+```
+
+Bu örnekte, değiştirme `PATH` karşılık gelen ortam değişkenini değiştirir `PATH`; bunu ekler `\nonesuch` yolunuza.
+
+Bir ortam değişkeni, bir derleme görevleri dosyasında sözdizimsel olarak yanlış olan dize olarak tanımlanırsa, makro oluşturulur ve herhangi bir uyarı oluşturulur. NMAKE bir değişken değerini bir dolar işareti ($) içeriyorsa, bir makro çağrısı başlangıcı olarak yorumlar. Makro kullanarak beklenmeyen davranışlara neden olabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Özel NMAKE Makroları](../build/special-nmake-macros.md)

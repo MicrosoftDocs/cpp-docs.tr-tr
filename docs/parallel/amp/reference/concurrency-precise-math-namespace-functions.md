@@ -98,12 +98,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8265b8c179f9e317fa3e2a66df4797660528f444
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 60c2b85c3a5c1ca5e2da9b0ef3b42148510b59e1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107438"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711070"
 ---
 # <a name="concurrencyprecisemath-namespace-functions"></a>CONCURRENCY::precise_math ad alanı işlevleri
 ||||
@@ -1564,8 +1564,8 @@ inline double modf(
 `_X`  
 Kayan nokta değeri
 
-`_Iptr` (dışarı parametresi)  
-Tamsayı kısmını `_X`, kayan nokta değeri olarak.
+`_Iptr`  
+[out] Tamsayı kısmını `_X`, kayan nokta değeri olarak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 İşaretli kesirli kısmını `_X`.
@@ -1891,8 +1891,8 @@ inline double remquo(
 `_Y`  
 İkinci kayan noktalı bağımsız değişken.
 
-`_Quo` (dışarı parametresi)  
-Kesirli bitlerinin kalanını döndürmek için kullanılan bir tamsayı adresi `_X` kesirli bitleri tarafından ayrılmış `_Y`.
+`_Quo`  
+[out] Kesirli bitlerinin kalanını döndürmek için kullanılan bir tamsayı adresi `_X` kesirli bitleri tarafından ayrılmış `_Y`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 Kalanı döndürür `_X` bölü `_Y`.
@@ -1914,8 +1914,8 @@ inline float remquof(
 `_Y`  
 İkinci kayan noktalı bağımsız değişken.
 
-`_Quo` (dışarı parametresi)  
-Kesirli bitlerinin kalanını döndürmek için kullanılan bir tamsayı adresi `_X` kesirli bitleri tarafından ayrılmış `_Y`.
+`_Quo`  
+[out] Kesirli bitlerinin kalanını döndürmek için kullanılan bir tamsayı adresi `_X` kesirli bitleri tarafından ayrılmış `_Y`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 Kalanı döndürür `_X` bölü `_Y`.

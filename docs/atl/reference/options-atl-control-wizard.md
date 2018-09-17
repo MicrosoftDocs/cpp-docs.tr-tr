@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28342c71602409f3d62023e6d7923d49ca63a96f
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 25116b0750016fdbb4ffd792d0b16efb6c6c1793
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766249"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711957"
 ---
 # <a name="options-atl-control-wizard"></a>ATL denetimi Sihirbazı, Seçenekler
 
@@ -31,10 +31,11 @@ Sihirbazın bu sayfası, oluşturmakta olduğunuz denetim türünü ve içerdiğ
 
 ## <a name="uielement-list"></a>UIElement Listesi
 
-**Denetim türü**  
+### <a name="control-type"></a>Denetim türü
+
 Oluşturmak istediğiniz denetim türü.
 
-- **Standart denetim: bir ActiveX denetimi.**
+- **Standart denetim**: bir ActiveX denetimi.
 
 - **Bileşik Denetim**: (iletişim kutusuna benzer) içeren bir ActiveX denetimi diğer ActiveX denetimleri veya Windows denetimleri. Bileşik Denetim şunları içerir:
 
@@ -54,10 +55,12 @@ Oluşturmak istediğiniz denetim türü.
 
      Daha fazla bilgi için [DHTML denetim projesinin öğelerini tanımlama](../../atl/identifying-the-elements-of-the-dhtml-control-project.md).
 
-**En az denetim**  
+### <a name="minimal-control"></a>En az denetim
+
 Çoğu kapsayıcı tarafından kesinlikle gerekli arabirimleri destekler. Ayarlayabileceğiniz **en az bir denetim** herhangi bir denetim türü için: en az standart bir denetimde, en az bir bileşik denetim veya en az bir DHTML denetimi oluşturabilirsiniz.
 
-**Toplama**  
+### <a name="aggregation"></a>Toplama
+
 Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için [toplama](../../atl/aggregation.md).
 
 - **Evet**: toplanabilir bir denetim oluşturursunuz.
@@ -66,25 +69,28 @@ Oluşturmakta olduğunuz Denetim toplama desteği ekler. Daha fazla bilgi için 
 
 - **Yalnızca**: yalnızca toplama oluşturulan bir denetim oluşturursunuz.
 
-**İş parçacığı modeli**  
+### <a name="threading-model"></a>İş parçacığı modeli
+
 İş parçacığı modeli denetim tarafından kullanılan belirtir.
 
 - **Tek**: denetim, yalnızca birincil COM iş parçacığında çalışır.
 
 - **Apartman**: denetimin herhangi tek iş parçacığı grubu oluşturulabilir. Varsayılan.
 
-**Arabirimi**  
+### <a name="interface"></a>Arabirim
+
 Arabirim türü bu denetim için kapsayıcı gösterir.
 
 - **Çift**: özellikler ve yöntemler aracılığıyla kullanıma sunduğu bir arabirim oluşturur `IDispatch` ve doğrudan VTBL.
 
 - **Özel**: doğrudan bir VTBL aracılığıyla yöntemlerini gösteren bir arabirim oluşturur.
 
-     Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](/windows/desktop/com/marshaling-details) daha fazla bilgi için Windows SDK.
+   Seçerseniz **özel**, denetimin olduğunu belirtin ve **otomasyon uyumlu**. Seçerseniz **otomasyon uyumlu**, sihirbaz ekler sonra [oleautomation](../../windows/oleautomation.md) IDL arabiriminde özniteliği ve arabirimi oleaut32.dll, Evrensel sıralayıcı tarafından sıralanabilir. Bkz: [hazırlama ayrıntıları](/windows/desktop/com/marshaling-details) daha fazla bilgi için Windows SDK.
 
-     Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemler için tüm parametreleri VARYANT olmalıdır uyumlu.
+   Ayrıca, seçerseniz **otomasyon uyumlu**, denetimdeki tüm yöntemler için tüm parametreleri VARYANT olmalıdır uyumlu.
 
-**Destek**  
+### <a name="support"></a>Destek
+
 Ek çeşitli destek denetimi için ayarlar.
 
 - **Bağlantı noktaları**: nesneniz için bağlantı noktaları sağlar, nesnenin sınıfı türetilen yaparak [Iconnectionpointcontainerımpl](../../atl/reference/iconnectionpointcontainerimpl-class.md) ve bir kaynak arabirimi kullanıma izin veren.

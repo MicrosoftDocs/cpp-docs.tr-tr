@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a2ccefbc435cac5b48cd2c9509831699dcec70af
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 68746d76c9c7842e9fc8c16addeca2cb44f31211
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849675"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701746"
 ---
 # <a name="cmfcribboncombobox-class"></a>CMFCRibbonComboBox sınıfı
 `CMFCRibbonComboBox` Sınıfı bir Şerit çubuğuna, Şerit paneline veya Şerit açılır menüsüne ekleyebileceğiniz birleşik giriş kutusu denetimi uygular.  
@@ -127,11 +127,11 @@ virtual INT_PTR AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszItem*  
- Eklenecek öğe dizisi.  
+*lpszItem*<br/>
+[in] Eklenecek öğe dizisi.  
   
- [in] *dwData*  
- Eklenecek öğe ile ilişkili veriler.  
+*dwData*<br/>
+[in] Eklenecek öğe ile ilişkili veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Eklenen öğe sıfır tabanlı dizini.  
@@ -153,20 +153,20 @@ CMFCRibbonComboBox();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Birleşik giriş kutusu kimliği.  
+*nID*<br/>
+[in] Birleşik giriş kutusu kimliği.  
   
- [in] *bHasEditBox*  
- Düzenleme kutusu denetiminde istiyorsanız TRUE; FALSE Aksi takdirde.  
+*bHasEditBox*<br/>
+[in] Düzenleme kutusu denetiminde istiyorsanız TRUE; FALSE Aksi takdirde.  
   
- [in] *nWidth*  
- Birleşik giriş kutusu piksel cinsinden genişliği; veya varsayılan genişliğini için -1.  
+*nWidth*<br/>
+[in] Birleşik giriş kutusu piksel cinsinden genişliği; veya varsayılan genişliğini için -1.  
   
- [in] *lpszLabel*  
- Birleşik giriş kutusunun görünen etiket.  
+*lpszLabel*<br/>
+[in] Birleşik giriş kutusunun görünen etiket.  
   
- [in] *bir*  
- Birleşik giriş kutusu küçük resim dizini.  
+*Bir*<br/>
+[in] Birleşik giriş kutusu küçük resim dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan genişliğini 108 pikseldir.  
@@ -182,14 +182,14 @@ BOOL DeleteItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Silinecek öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Silinecek öğenin sıfır tabanlı dizini.  
   
- [in] *dwData*  
- Silinecek öğe ile ilişkili veriler.  
+*dwData*<br/>
+[in] Silinecek öğe ile ilişkili veriler.  
   
- [in] *lpszText*  
- Silinecek öğe dizisi. Aynı dize ile birden çok öğe varsa, ilk öğe silindi.  
+*lpszText*<br/>
+[in] Silinecek öğe dizisi. Aynı dize ile birden çok öğe varsa, ilk öğe silindi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe silindiyse TRUE; Aksi takdirde FALSE.  
@@ -204,8 +204,8 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Etkinleştirme yeniden boyutlandırma için true; Yeniden boyutlandırma devre dışı bırakmak için FALSE.  
+*bSistemlerde*<br/>
+[in] Etkinleştirme yeniden boyutlandırma için true; Yeniden boyutlandırma devre dışı bırakmak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeniden boyutlandırma etkinleştirildiğinde, liste kutusunun boyutu görüntülediği öğelerin uyacak şekilde değiştirir.  
@@ -218,8 +218,8 @@ int FindItem(LPCTSTR lpszText) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszText*  
- Liste kutusunda bir öğe dizisi.  
+*lpszText*<br/>
+[in] Liste kutusunda bir öğe dizisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğenin sıfır tabanlı dizini; veya öğenin bulunamaması durumunda -1.  
@@ -268,8 +268,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Birleşik giriş kutusu için bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Birleşik giriş kutusu için bir cihaz bağlamı işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Birleşik giriş kutusunun boyutu.  
@@ -285,8 +285,8 @@ LPCTSTR GetItem(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Liste kutusunda bir öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğesiyle ilişkili dize için bir işaretçi; Aksi takdirde NULL dizin parametresi geçersiz olması veya dizin parametresi -1'dir ve birleşik giriş kutusunda seçili öğe yok.  
@@ -301,8 +301,8 @@ DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Liste kutusunda bir öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğeyle ilişkili verileri; 0 veya öğe mevcut değil veya dizin parametresi -1'dir ve liste kutusunda seçili öğe yok.  
@@ -340,8 +340,8 @@ virtual void OnSelectItem(int nItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nItem*  
- Seçilen öğenin dizini.  
+*nItem*<br/>
+[in] Seçilen öğenin dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı giriş seçimi işlemek istiyorsanız bu yöntemi yok sayın.  
@@ -366,14 +366,14 @@ BOOL SelectItem(LPCTSTR lpszText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Liste kutusunda bir öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Liste kutusunda bir öğenin sıfır tabanlı dizini.  
   
- [in] *dwData*  
- Liste kutusunda bir öğe ile ilişkili veriler.  
+*dwData*<br/>
+[in] Liste kutusunda bir öğe ile ilişkili veriler.  
   
- [in] *lpszText*  
- Liste kutusunda bir öğe dizisi.  
+*lpszText*<br/>
+[in] Liste kutusunda bir öğe dizisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -388,8 +388,8 @@ void SetDropDownHeight(int nHeight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nHeight*  
- Liste kutusu piksel cinsinden yüksekliği.  
+*nHeight*<br/>
+[in] Liste kutusu piksel cinsinden yüksekliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan yükseklik 150 pikseldir.  

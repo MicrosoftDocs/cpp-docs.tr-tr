@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 878fa1f530a73a9d872a1b094d0ea0ee1b822971
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 81feb345c25ea1c1e9d15dba8dceebb7a2cdb418
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756369"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709806"
 ---
 # <a name="idispatchimpl-class"></a>Idispatchımpl sınıfı
 
@@ -52,23 +52,23 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 
 #### <a name="parameters"></a>Parametreler
 
-[in] *T*  
-Çift arabirim.
+*T*<br/>
+[in] Çift arabirim.
 
-[in] *piid*  
-Laboratuvardaki işaretçisi *T*.
+*piid*<br/>
+[in] Laboratuvardaki işaretçisi *T*.
 
-[in] *plibid*  
-Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.
+*plibid*<br/>
+[in] Arabirimi hakkında bilgi içeren tür kitaplığının Kitaplık kimliği için bir işaretçi. Varsayılan olarak, sunucu düzeyinde tür kitaplığı geçirilir.
 
-[in] *wMajor*  
-Tür kitaplığının ana sürümü. Varsayılan değer 1'dir.
+*wMajor*<br/>
+[in] Tür kitaplığının ana sürümü. Varsayılan değer 1'dir.
 
-[in] *wMinor*  
-Tür kitaplığının bir alt sürümü. Varsayılan değer 0'dır.
+*wMinor*<br/>
+[in] Tür kitaplığının bir alt sürümü. Varsayılan değer 0'dır.
 
-[in] *tihclass*  
-İçin tür bilgilerini yönetmek için kullanılan sınıf *T*. Varsayılan değer olan `CComTypeInfoHolder`.
+*tihclass*<br/>
+[in] İçin tür bilgilerini yönetmek için kullanılan sınıf *T*. Varsayılan değer olan `CComTypeInfoHolder`.
 
 ## <a name="members"></a>Üyeler
 

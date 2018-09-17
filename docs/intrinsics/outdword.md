@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 326ebeeb1d282950ed7d481014d4349c168dc897
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1181cfa4fc2868fe96deb1d68d4140b9ab80e29b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465181"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708688"
 ---
 # <a name="outdword"></a>__outdword
 **Microsoft'a özgü**  
@@ -40,11 +40,11 @@ void __outdword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Port`  
- Veri göndermek için bağlantı noktası.  
+*Bağlantı noktası*<br/>
+[in] Veri göndermek için bağlantı noktası.  
   
- [in] `Data`  
- Gönderilecek doubleword.  
+*Veri*<br/>
+[in] Gönderilecek doubleword.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

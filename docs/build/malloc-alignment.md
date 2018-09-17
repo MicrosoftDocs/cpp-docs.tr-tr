@@ -12,19 +12,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d503d0dd891c651a405cb79bb5ce50996f46cff6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa6e2748691eeb8a11834bcf8e6962252be7ab3f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368671"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712068"
 ---
 # <a name="malloc-alignment"></a>malloc Hizalaması
-[malloc](../c-runtime-library/reference/malloc.md) temel hizalama ve, herhangi bir nesne depolama tahsis edilen bellek miktarında sığacak için uygun hizalanır bellek döndürmek için sağlanır. A *temel hizalama* bir hizalama belirtimi olmadan uygulaması tarafından desteklenen en büyük hizalama küçük veya ona eşit bir hizalama. (Visual C++'da, bu için gerekli hizalama olan bir `double`, veya 8 bayt. 64 bit platformları hedefler kodda, 16 bayt'tır.) Örneğin, dört bayt ayırma dört bayt veya daha küçük nesne destekleyen bir sınır hizalı.  
-  
- Visual C++ türlerine izin verir *hizalama Genişletilmiş*, olarak da bilinen olduğu *aşırı hizalı* türleri. Örneğin, SSE türleri [__m128](../cpp/m128.md) ve `__m256`ve kullanarak belirtilen türlerine `__declspec(align( n ))` burada `n` 8'den büyükse, hizalama uzattınız. Bellek hizalama genişletilmiş hizalama gerektiren bir nesne için uygun bir sınırında tarafından garanti edilmez `malloc`. Aşırı hizalanmış türleri için bellek ayırmak için kullanır [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yığın kullanımı](../build/stack-usage.md)   
- [Hizalama](../cpp/align-cpp.md)   
- [__declspec](../cpp/declspec.md)
+
+[malloc](../c-runtime-library/reference/malloc.md) temel hizalama ve, olan herhangi bir nesneyi depolamak için ayrılan bellek miktarına uygun olabilecek için uygun şekilde hizalanmış belleğe dönmesi garanti edilir. A *temel hizalama* hizalama belirtimleri olmaksızın uygulamayla desteklenen en geniş hizalamadan küçük veya ona eşit olan hizalamadır. (Visual C++'da, bunun için gerekli olan hizalamadır bir `double`, veya 8 bayt. 64-bit platformları hedefleyen kodda, 16 bayttır.) Örneğin, dört baytlık bir atama dört bayt veya daha küçük bir nesne destekleyen bir sınır üzerinde hizalanabilir.
+
+Visual C++ verir sahip türleri *genişletilmiş hizaya*, olarak da bilinen olduğu *aşırı hizalanmış* türleri. Örneğin SSE türleri [__m128](../cpp/m128.md) ve `__m256`ve kullanılarak bildirilen türler `__declspec(align( n ))` burada `n` 8'den büyükse, genişletilmiş hizaya sahiptir. Genişletilmiş hizalama gerektiren bir nesne için uygun olan bir sınır üzerinde bellek hizalama tarafından garanti edilmez `malloc`. Aşırı hizalanmış türlere bellek ayırmak için kullanmak [_aligned_malloc](../c-runtime-library/reference/aligned-malloc.md) ve ilgili işlevleri.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yığın Kullanımı](../build/stack-usage.md)<br/>
+[align](../cpp/align-cpp.md)<br/>
+[__declspec](../cpp/declspec.md)

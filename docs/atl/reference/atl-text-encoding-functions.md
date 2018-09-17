@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5043b421d4ca63b22cde0f413e68b3a666a483b3
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a5147b8079d694e59141c244a860f12c59f42f7b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757477"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706842"
 ---
 # <a name="atl-text-encoding-functions"></a>ATL metin kodlama işlevleri
 
@@ -494,20 +494,20 @@ inline BOOL QPDecode(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *pbSrcData*  
-Kodu çözülecek veriler içeren arabellek.
+*pbSrcData*<br/>
+[in] Kodu çözülecek veriler içeren arabellek.
 
-[in] *nSrcLen*  
-Bayt cinsinden uzunluğu *pbSrcData*.
+*nSrcLen*<br/>
+[in] Bayt cinsinden uzunluğu *pbSrcData*.
 
-[out] *szDest*  
-Kodu çözülmüş verileri almak için çağırıcı tarafından ayrılan arabelleği.
+*szDest*<br/>
+[out] Kodu çözülmüş verileri almak için çağırıcı tarafından ayrılan arabelleği.
 
-[out] *pnDestLen*  
-Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.
+*pnDestLen*<br/>
+[out] Bayt cinsinden uzunluğunu içeren bir değişken işaretçisi *szDest*. İşlev başarılı olursa değişken arabelleğe yazılan bayt sayısını alır. İşlev başarısız olursa, değişken arabelleğin bayt cinsinden gerekli uzunluğunu alır.
 
-[in] *CertOpenStore*  
-Dönüştürme nasıl gerçekleştirilecek açıklayan ATLSMTP_QPENCODE bayraklar.
+*CertOpenStore*<br/>
+[in] Dönüştürme nasıl gerçekleştirilecek açıklayan ATLSMTP_QPENCODE bayraklar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

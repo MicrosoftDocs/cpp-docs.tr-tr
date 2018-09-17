@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1731c32506ec0e9c4c392ff9429e28e5b71b3c7c
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c1cd37ee2ad7fe09e2838d5e3cecb3488594d2c9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43221138"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706634"
 ---
 # <a name="csettingsstore-class"></a>CSettingsStore sınıfı
 Windows API işlevlerini, kayıt defterine erişmek için kullandığınız bir nesne yönelimli bir arabirim sağlayan sarmalar.  
@@ -102,8 +102,8 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszPath*  
- Oluşturulacak veya açılan bir anahtarın adını belirtir.  
+*pszPath*<br/>
+[in] Oluşturulacak veya açılan bir anahtarın adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  başarılıysa 0; Aksi halde sıfır olmayan bir değer.  
@@ -121,11 +121,11 @@ CSettingsStore(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bYönetim*  
- Belirten bir Boole parametresi olmadığını `CSettingsStore` nesne Yönetici modunda çalışan.  
+*bYönetim*<br/>
+[in] Belirten bir Boole parametresi olmadığını `CSettingsStore` nesne Yönetici modunda çalışan.  
   
- [in] *bReadOnly*  
- Belirten bir Boole parametresi olmadığını `CSettingsStore` nesnesi salt okunur erişim modunda oluşturulur.  
+*bReadOnly*<br/>
+[in] Belirten bir Boole parametresi olmadığını `CSettingsStore` nesnesi salt okunur erişim modunda oluşturulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *bYönetim* TRUE olarak ayarlandığında `m_hKey` üye değişkeni ayarlanır **HKEY_LOCAL_MACHINE**. Ayarlarsanız *bYönetim* false olarak `m_hKey` ayarlanır **HKEY_CURRENT_USER**.  
@@ -144,11 +144,11 @@ virtual BOOL DeleteKey(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszPath*  
- Silinecek anahtar adı.  
+*pszPath*<br/>
+[in] Silinecek anahtar adı.  
   
- [in] *bYönetim*  
- Anahtarı silmek için anahtar konumunu belirtir.  
+*bYönetim*<br/>
+[in] Anahtarı silmek için anahtar konumunu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -166,8 +166,8 @@ virtual BOOL DeleteValue(LPCTSTR pszValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszValue*  
- Kaldırmak için değer alanını belirtir.  
+*pszValue*<br/>
+[in] Kaldırmak için değer alanını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -180,8 +180,8 @@ virtual BOOL Open(LPCTSTR pszPath);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszPath*  
- Bir kayıt defteri anahtarı adı.  
+*pszPath*<br/>
+[in] Bir kayıt defteri anahtarı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -265,53 +265,53 @@ virtual BOOL Read(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszKey*  
- Kayıt defterinden okumak için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.  
+*pszKey*<br/>
+[in] Kayıt defterinden okumak için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.  
   
- [out] *iVal*  
- Kayıt defteri anahtarından okuma değerini alan bir tamsayı değişkenine başvuru.  
+*iVal*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir tamsayı değişkenine başvuru.  
   
- [out] *dwVal*  
- Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük değişkenine başvuru.  
+*dwVal*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük değişkenine başvuru.  
   
- [out] *sVal*  
- Kayıt defteri anahtarından okuma değerini alan bir dize değişkeni başvuru.  
+*sVal*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir dize değişkeni başvuru.  
   
- [out] *scStringList*  
- Kayıt defteri anahtarından okuma değerini alan bir dize listesi değişkenine başvuru.  
+*scStringList*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir dize listesi değişkenine başvuru.  
   
- [out] *scArray*  
- Kayıt defteri anahtarından okuma değerini alan bir dize dizi değişkenine başvuru.  
+*scArray*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir dize dizi değişkenine başvuru.  
   
- [out] *dwcArray*  
- Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük dizi değişkenine başvuru.  
+*dwcArray*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir 32-bit çift sözcük dizi değişkenine başvuru.  
   
- [out] *wcArray*  
- Kayıt defteri anahtarından okuma değerini alan bir 16 bit sözcük dizi değişkenine başvuru.  
+*wcArray*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir 16 bit sözcük dizi değişkenine başvuru.  
   
- [out] *bcArray*  
- Kayıt defteri anahtarından okuma değerini alan bir bayt dizisi değişkenine başvuru.  
+*bcArray*<br/>
+[out] Kayıt defteri anahtarından okuma değerini alan bir bayt dizisi değişkenine başvuru.  
   
- [out] *Lppoınt*  
- Başvuru için bir işaretçi bir `POINT` kayıt defteri anahtarından değer alan yapısı okuyun.  
+*Lppoınt*<br/>
+[out] Başvuru için bir işaretçi bir `POINT` kayıt defteri anahtarından değer alan yapısı okuyun.  
   
- [out] *dikdörtgen*  
- Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
+*Rect*<br/>
+[out] Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
- [out] *ppData*  
- İşaretçi değeri alan veri işaretçisi, kayıt defteri anahtarından okuma.  
+*ppData*<br/>
+[out] İşaretçi değeri alan veri işaretçisi, kayıt defteri anahtarından okuma.  
   
- [out] *pBytes*  
- Bir işaretsiz tamsayı değişkeni işaretçisi. Bu değişken arabellek boyutunu alır, *ppData* işaret eder.  
+*pBytes*<br/>
+[out] Bir işaretsiz tamsayı değişkeni işaretçisi. Bu değişken arabellek boyutunu alır, *ppData* işaret eder.  
   
- [out] *listesi*  
- Başvuru bir [CObList](../../mfc/reference/coblist-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
+*list*<br/>
+[out] Başvuru bir [CObList](../../mfc/reference/coblist-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
- [out] *obj*  
- Başvuru bir [CObject](../../mfc/reference/cobject-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
+*obj*<br/>
+[out] Başvuru bir [CObject](../../mfc/reference/cobject-class.md) değeri alan değişken kayıt defteri anahtarından okuma.  
   
- [out] *pObj*  
- Başvuru için bir işaretçi bir `CObject` değeri alan değişken kayıt defteri anahtarından okuma.  
+*pObj*<br/>
+[out] Başvuru için bir işaretçi bir `CObject` değeri alan değişken kayıt defteri anahtarından okuma.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -395,53 +395,53 @@ virtual BOOL Write(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszKey*  
- Ayarlanacak değerin adını içeren bir dize işaretçisi.  
+*pszKey*<br/>
+[in] Ayarlanacak değerin adını içeren bir dize işaretçisi.  
   
- [in] *iVal*  
- Depolamak için verileri içeren bir tamsayı değişkenine başvuru.  
+*iVal*<br/>
+[in] Depolamak için verileri içeren bir tamsayı değişkenine başvuru.  
   
- [in] *dwVal*  
- Verileri depolamak için bir 32-bit çift sözcük değişkenine başvuru.  
+*dwVal*<br/>
+[in] Verileri depolamak için bir 32-bit çift sözcük değişkenine başvuru.  
   
- [in] *pszVal*  
- Verileri depolamak için bir null ile sonlandırılmış dize değişkeni işaretçisi.  
+*pszVal*<br/>
+[in] Verileri depolamak için bir null ile sonlandırılmış dize değişkeni işaretçisi.  
   
- [in] *scStringList*  
- Başvuru bir [CStringList](../../mfc/reference/cstringlist-class.md) depolamak için verileri içeren bir değişkeni.  
+*scStringList*<br/>
+[in] Başvuru bir [CStringList](../../mfc/reference/cstringlist-class.md) depolamak için verileri içeren bir değişkeni.  
   
- [in] *bcArray*  
- Depolamak için verileri içeren bir bayt dizisi değişken başvuru.  
+*bcArray*<br/>
+[in] Depolamak için verileri içeren bir bayt dizisi değişken başvuru.  
   
- [in] *scArray*  
- Depolamak için verileri içeren bir dize dizi değişkeni başvuru.  
+*scArray*<br/>
+[in] Depolamak için verileri içeren bir dize dizi değişkeni başvuru.  
   
- [in] *dwcArray*  
- Verileri depolamak için bir 32-bit çift sözcük dizi değişkeni başvuru.  
+*dwcArray*<br/>
+[in] Verileri depolamak için bir 32-bit çift sözcük dizi değişkeni başvuru.  
   
- [in] *wcArray*  
- Depolamak için verileri içeren bir 16 bit sözcük dizi değişkenine başvuru.  
+*wcArray*<br/>
+[in] Depolamak için verileri içeren bir 16 bit sözcük dizi değişkenine başvuru.  
   
- [in] *dikdörtgen*  
- Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) depolamak için verileri içeren bir değişkeni.  
+*Rect*<br/>
+[in] Başvuru bir [CRect](../../atl-mfc-shared/reference/crect-class.md) depolamak için verileri içeren bir değişkeni.  
   
- [in] *Lppoınt*  
- Başvuru için bir işaretçi bir `POINT` depolamak için verileri içeren bir değişkeni.  
+*Lppoınt*<br/>
+[in] Başvuru için bir işaretçi bir `POINT` depolamak için verileri içeren bir değişkeni.  
   
- [in] *pData*  
- Verileri depolamak için içeren arabellek için işaretçi.  
+*pData*<br/>
+[in] Verileri depolamak için içeren arabellek için işaretçi.  
   
- [in] *nBytes*  
- Hangi verilerin bayt cinsinden boyutunu belirtir *pData* parametresi noktaları.  
+*nBytes*<br/>
+[in] Hangi verilerin bayt cinsinden boyutunu belirtir *pData* parametresi noktaları.  
   
- [in] *listesi*  
- Başvuru bir [CObList](../../mfc/reference/coblist-class.md) depolamak için verileri içeren bir değişkeni.  
+*list*<br/>
+[in] Başvuru bir [CObList](../../mfc/reference/coblist-class.md) depolamak için verileri içeren bir değişkeni.  
   
- [in] *obj*  
- Başvuru bir [CObject](../../mfc/reference/cobject-class.md) depolamak için verileri içeren bir değişkeni.  
+*obj*<br/>
+[in] Başvuru bir [CObject](../../mfc/reference/cobject-class.md) depolamak için verileri içeren bir değişkeni.  
   
- [in] *pObj*  
- Bir işaretçi işaretçisi bir `CObject` depolamak için verileri içeren bir değişkeni.  
+*pObj*<br/>
+[in] Bir işaretçi işaretçisi bir `CObject` depolamak için verileri içeren bir değişkeni.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  

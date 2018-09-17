@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 855bc48da10e8ca4dd83cf091e155746450a33f1
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 0d9b730e9cb1ca78b5247ea09f1f24a9bb8c307c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848525"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709793"
 ---
 # <a name="cmfcribbonbuttonsgroup-class"></a>CMFCRibbonButtonsGroup sınıfı
 `CMFCRibbonButtonsGroup` Sınıfı, bir grup olarak Şerit düğme kümesi düzenlemenizi sağlar. Gruptaki tüm düğmeler yatay olarak doğrudan yaratır ve bir kenarlık içine alınmıştır.  
@@ -106,8 +106,8 @@ void AddButton(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- Bir düğme eklemek için bir işaretçi.  
+*pButton*<br/>
+[in] Bir düğme eklemek için bir işaretçi.  
   
 ##  <a name="addbuttons"></a>  CMFCRibbonButtonsGroup::AddButtons  
  Düğmelerin listesini bir gruba ekler.  
@@ -118,8 +118,8 @@ void AddButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lstButtons*  
- Eklemek istediğiniz düğme için işaretçiler listesi.  
+*lstButtons*<br/>
+[in] Eklemek istediğiniz düğme için işaretçiler listesi.  
   
 ##  <a name="cmfcribbonbuttonsgroup"></a>  CMFCRibbonButtonsGroup::CMFCRibbonButtonsGroup  
  Oluşturur bir `CMFCRibbonButtonsGroup` nesne.  
@@ -130,8 +130,8 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- Yeni oluşturulan eklemeye yönelik bir düğmeyi belirtir `CMFCRibbonButtonsGroup` nesne.  
+*pButton*<br/>
+[in] Yeni oluşturulan eklemeye yönelik bir düğmeyi belirtir `CMFCRibbonButtonsGroup` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -145,8 +145,8 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ediyorum*  
- Bir düğme döndürülecek bir sıfır tabanlı dizini.  
+*i*<br/>
+[in] Bir düğme döndürülecek bir sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizinde bulunan bir düğme için bir işaretçi. Belirtilen dizin aralık dışında ise NULL değerini DÖNDÜRÜR.  
@@ -183,8 +183,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Cihaz bağlamı Şerit grubunun işaretçisi.  
+*pDC*<br/>
+[in] Cihaz bağlamı Şerit grubunun işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -214,17 +214,17 @@ virtual void OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Cihaz bağlamı işaretçisine `CMFCRibbonButtonsGroup` nesne.  
+*pDC*<br/>
+[in] Cihaz bağlamı işaretçisine `CMFCRibbonButtonsGroup` nesne.  
   
- [in] *rectImage*  
- Dikdörtgen içinde bir görüntü çizin.  
+*rectImage*<br/>
+[in] Dikdörtgen içinde bir görüntü çizin.  
   
- [in] *pButton*  
- Görüntü çizme istediğiniz düğme.  
+*pButton*<br/>
+[in] Görüntü çizme istediğiniz düğme.  
   
- [in] *nImageIndex*  
- Resmi düğmesine (normal, vurgulanan veya devre dışı düğmelerinin üç görüntü diziler biri) çizilecek dizini.  
+*nImageIndex*<br/>
+[in] Resmi düğmesine (normal, vurgulanan veya devre dışı düğmelerinin üç görüntü diziler biri) çizilecek dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -248,14 +248,14 @@ void SetImages(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pImages*  
- Normal görüntüler.  
+*pImages*<br/>
+[in] Normal görüntüler.  
   
- [in] *pHotImages*  
- Sık erişimli görüntüler.  
+*pHotImages*<br/>
+[in] Sık erişimli görüntüler.  
   
- [in] *pDisabledImages*  
- Devre dışı görüntüler.  
+*pDisabledImages*<br/>
+[in] Devre dışı görüntüler.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağrı `SetImages` düğmeleri grubuna eklemeden önce. Görüntü sayısı, gruba eklenecek düğmeleri sayısına eşit veya büyük olması gerekir.  
@@ -271,8 +271,8 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pCategory*  
- Ayarlanacak üst kategori işaretçisine (Şerit denetimleri sekmeli gruplarında kategoriler olarak adlandırılır).  
+*pCategory*<br/>
+[in] Ayarlanacak üst kategori işaretçisine (Şerit denetimleri sekmeli gruplarında kategoriler olarak adlandırılır).  
   
 ### <a name="remarks"></a>Açıklamalar  
   

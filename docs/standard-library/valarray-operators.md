@@ -34,12 +34,12 @@ helpviewer_keywords:
 - std::operator&lt; (valarray)
 - std::operator&lt;&lt; (valarray)
 - std::operator&lt;= (valarray), std::operator== (valarray)
-ms.openlocfilehash: b828081fea1f9886c1a661323e2d0e0c79d1ae96
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 83958ee300143463a1da9b10d2edb6eb1707ec4f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315034"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703566"
 ---
 # <a name="ltvalarraygt-operators"></a>&lt;valarray&gt; işleçleri
 
@@ -78,11 +78,11 @@ operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Eşitsizlik için test edilecek öğeleri olan iki valarrays ilk.
+*Sol*<br/>
+Eşitsizlik için test edilecek öğeleri olan iki valarrays ilk.
 
-*sağ*  
- Eşitsizlik için test edilecek öğeleri olan iki valarrays saniye.
+*sağ*<br/>
+Eşitsizlik için test edilecek öğeleri olan iki valarrays saniye.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -173,11 +173,11 @@ operator%(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray bölünür sağlamaktır.
+*Sol*<br/>
+Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray bölünür sağlamaktır.
 
-*sağ*  
- Bir değer veya bölen olarak hizmet veren ve, başka bir değerle böler valarray veya valarray.
+*sağ*<br/>
+Bir değer veya bölen olarak hizmet veren ve, başka bir değerle böler valarray veya valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -256,11 +256,11 @@ operator&(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-*sağ*  
- İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `AND` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -345,11 +345,11 @@ operator&&(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
+*Sol*<br/>
+İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
-*sağ*  
- İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `AND` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -432,11 +432,11 @@ operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
+*sağ*<br/>
+Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -523,11 +523,11 @@ operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
+*sağ*<br/>
+Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -614,11 +614,11 @@ operator>>(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
+*Sol*<br/>
+Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
 
-*sağ*  
- Sağa kaydırma veya valarray belirten değeri öğeleri sağa kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
+*sağ*<br/>
+Sağa kaydırma veya valarray belirten değeri öğeleri sağa kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -701,11 +701,11 @@ operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
+*sağ*<br/>
+Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -792,11 +792,11 @@ operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Her bir valarray öğe ile Karşılaştırılacak ilk Karşılaştırılacak öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
+*sağ*<br/>
+Karşılaştırılacak öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile Karşılaştırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -883,11 +883,11 @@ operator<<(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
+*Sol*<br/>
+Kaydırılmasına değer veya kaydırılmasına öğeleri olan valarray.
 
-*sağ*  
- Sola kaydırma veya valarray belirten bir değeri, öğeleri sola kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
+*sağ*<br/>
+Sola kaydırma veya valarray belirten bir değeri, öğeleri sola kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -970,11 +970,11 @@ operator*(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Her bir valarray öğe ile çarpılmasına ilk çarpılmasına öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Her bir valarray öğe ile çarpılmasına ilk çarpılmasına öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Öğeleri çarpılmasına olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile çarpılmasına.
+*sağ*<br/>
+Öğeleri çarpılmasına olan iki valarrays ikinci veya belirtilen değer bir valarray her bir öğe ile çarpılmasına.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1053,11 +1053,11 @@ operator+(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir valarray her öğesinin eklenmesi ilk eklenecek öğeleri olan iki valarrays ya da belirtilen bir değer.
+*Sol*<br/>
+Bir valarray her öğesinin eklenmesi ilk eklenecek öğeleri olan iki valarrays ya da belirtilen bir değer.
 
-*sağ*  
- Eklenecek öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her öğeyle eklenecek.
+*sağ*<br/>
+Eklenecek öğeleri olan iki valarrays ikinci veya belirtilen değer bir valarray her öğeyle eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1136,11 +1136,11 @@ operator-(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir değer veya içerdiği diğer değerleri veya valarrays fark oluşturan içinde çıkarılan için olan Eksilen görevi gören valarray.
+*Sol*<br/>
+Bir değer veya içerdiği diğer değerleri veya valarrays fark oluşturan içinde çıkarılan için olan Eksilen görevi gören valarray.
 
-*sağ*  
- Bir değer veya diğer değerleri veya fark oluşturan içinde valarrays çıkarmanın yapılacağı olan çıkarılan görevi gören valarray.
+*sağ*<br/>
+Bir değer veya diğer değerleri veya fark oluşturan içinde valarrays çıkarmanın yapılacağı olan çıkarılan görevi gören valarray.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1225,11 +1225,11 @@ operator/(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray sayının oluşturan içinde bölünür sağlamaktır.
+*Sol*<br/>
+Bir değer veya hangi başka bir değer ile bölünen hizmet veren valarray ya da valarray sayının oluşturan içinde bölünür sağlamaktır.
 
-*sağ*  
- Bir değer veya valarray bölen olarak hizmet veren ve başka bir değer veya bölümü oluşturan içinde valarray böler.
+*sağ*<br/>
+Bir değer veya valarray bölen olarak hizmet veren ve başka bir değer veya bölümü oluşturan içinde valarray böler.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1314,11 +1314,11 @@ operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Eşitlik için test edilecek öğeleri olan iki valarrays ilk.
+*Sol*<br/>
+Eşitlik için test edilecek öğeleri olan iki valarrays ilk.
 
-*sağ*  
- Eşitlik için test edilecek öğeleri olan iki valarrays saniye.
+*sağ*<br/>
+Eşitlik için test edilecek öğeleri olan iki valarrays saniye.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1405,11 +1405,11 @@ operator^(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-*sağ*  
- İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci **XOR** veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1498,11 +1498,11 @@ operator|(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*Sol*<br/>
+İlgili öğeleri olan bit ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
-*sağ*  
- İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan bit ile birleştirilecek ikinci `OR` veya bir valarray her öğesinin bit düzeyinde birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1591,11 +1591,11 @@ operator||(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
+*Sol*<br/>
+İlgili öğeleri olan mantıksal ile birleştirilecek iki valarrays ilk `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
-*sağ*  
- İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
+*sağ*<br/>
+İki valarrays ilgili öğeleri olan mantıksal ile birleştirilecek ikinci `OR` veya bir valarray her bir öğe ile birleştirilecek öğe türü belirtilen değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

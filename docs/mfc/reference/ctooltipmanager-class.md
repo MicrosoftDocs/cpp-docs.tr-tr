@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9de39d2054f3c75e00e8827ebb4aaefac9970d59
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 81e027108d0f7b62ba707718c5396432396bdc5e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464981"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711886"
 ---
 # <a name="ctooltipmanager-class"></a>CTooltipManager sınıfı
 İpuçları hakkındaki çalışma zamanı bilgilerini tutar. `CTooltipManager` Sınıfı, uygulama başına örneklenmiş bir kez.  
@@ -76,14 +76,14 @@ static BOOL CreateToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *pToolTip*  
- Bir araç ipucu işaretçisi başvurusu. İşlevi döndüğünde, yeni oluşturulan araç ipucu işaret edecek şekilde ayarlanır.  
+*pToolTip*<br/>
+[out] Bir araç ipucu işaretçisi başvurusu. İşlevi döndüğünde, yeni oluşturulan araç ipucu işaret edecek şekilde ayarlanır.  
   
- [in] *pWndParent*  
- Üst araç ipucu.  
+*pWndParent*<br/>
+[in] Üst araç ipucu.  
   
- [in] *nTür*  
- Araç İpucu türü.  
+*nTür*<br/>
+[in] Araç İpucu türü.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç İpucu bir gösterimiyse başarıyla oluşturuldu.  
@@ -117,8 +117,8 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pToolTip*  
- Yok edilecek bir araç ipucu için bir işaretçi başvuru.  
+*pToolTip*<br/>
+[out içinde] Yok edilecek bir araç ipucu için bir işaretçi başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Her biri için bu yöntemi çağıran [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md) tarafından oluşturulan [CTooltipManager::CreateToolTip](#createtooltip). Üst denetimin bu yöntemi çağırmanız gerekir, `OnDestroy` işleyici. Bu, doğru framework araç ipucu kaldırmak için gereklidir. Bu yöntem ayarlar *pToolTip* döndürülmeden önce null.  
@@ -134,14 +134,14 @@ void SetTooltipParams(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nTypes*  
- Denetim türlerini belirtir.  
+*nTypes*<br/>
+[in] Denetim türlerini belirtir.  
   
- [in] *pRTC*  
- Çalışma zamanı sınıfının özel araç ipucu.  
+*pRTC*<br/>
+[in] Çalışma zamanı sınıfının özel araç ipucu.  
   
- [in] *pParams*  
- Araç İpucu parametreleri.  
+*pParams*<br/>
+[in] Araç İpucu parametreleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ilk parametrelerini ve çalışma zamanı sınıfı, ayarlar [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) araç ipuçları oluşturduğunda kullanır. Bir denetim çağırdığında [CTooltipManager::CreateToolTip](#createtooltip) ve bir araç ipucu geçişlerinde tür tarafından belirtilen türlerden birinde *nTypes*, araç ipucu manager örneği olan bir araç ipucu denetimi oluşturur tarafından belirtilen çalışma zamanı sınıf *pRTC* tarafından belirtilen parametreleri ve geçirir *pParams* için yeni bir araç ipucu.  
@@ -168,20 +168,20 @@ static void SetTooltipText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *PTI*  
- TOOLINFO nesnesine bir işaretçi.  
+*PTI*<br/>
+[in] TOOLINFO nesnesine bir işaretçi.  
   
- [out içinde] *pToolTip*  
- Metin ve açıklama ayarlamak istediğiniz araç ipucu denetimi için bir işaretçi.  
+*pToolTip*<br/>
+[out içinde] Metin ve açıklama ayarlamak istediğiniz araç ipucu denetimi için bir işaretçi.  
   
- [in] *nTür*  
- Bu araç ipucu ilişkilendirildiği denetim türünü belirtir.  
+*nTür*<br/>
+[in] Bu araç ipucu ilişkilendirildiği denetim türünü belirtir.  
   
- [in] *strText*  
- Araç İpucu metin olarak ayarlamak için metin.  
+*strText*<br/>
+[in] Araç İpucu metin olarak ayarlamak için metin.  
   
- [in] *lpszDescr*  
- Araç İpucu açıklaması için bir işaretçi. NULL olabilir.  
+*lpszDescr*<br/>
+[in] Araç İpucu açıklaması için bir işaretçi. NULL olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Değerini *nTür* aynı değere sahip olmalıdır *nTür* parametresinin [CTooltipManager::CreateToolTip](#createtooltip) oluşturduğunuzda araç ipucu.  

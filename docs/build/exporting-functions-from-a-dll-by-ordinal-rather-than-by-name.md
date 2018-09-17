@@ -1,5 +1,5 @@
 ---
-title: İşlevleri dışarı aktarma DLL'den yerine sıraya göre adı | Microsoft Docs
+title: DLL'den ad yerine sıraya işlevleri dışarı aktarma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -19,24 +19,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b05f3e429406b3c24c7a21ce9ee8e10fe19c14b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2d894df971dd0c50556a420eafa2909474ee6912
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367699"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714265"
 ---
 # <a name="exporting-functions-from-a-dll-by-ordinal-rather-than-by-name"></a>DLL'den İşlevleri Ad Yerine Sıraya Göre Dışarı Aktarma
-Ada göre verilecek en basit yolu, DLL'den dışarı aktarma işlevleri var. Bu kullandığınızda neler olduğunu **__declspec(dllexport)**, örneğin. Ancak, bunun yerine işlevleri sıralı olarak dışa aktarabilirsiniz. Bu teknikle .def dosyası yerine kullanmalısınız **__declspec(dllexport)**. Bir işlevin sıra sayısı değerini belirtmek için kendi sıra .def dosyası işlev adı ekleyin. Sıra numaraları belirtme hakkında daha fazla bilgi için bkz: [.def dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md).  
-  
+
+En basit yolu, bir DLL'den işlevleri dışarı aktarmak için bunları adına göre dışa aktarılmamasıdır. Bu kullandığınızda neler olduğunu **__declspec(dllexport)**, örneğin. Ancak, bunun yerine sıralı olarak işlevleri dışarı aktarabilirsiniz. Bu teknikte bir .def dosyası yerine kullanmalısınız **__declspec(dllexport)**. Bir işlevin sıra değeri belirtmek için kendi sıra .def dosyasında işlev adı ekleyin. Sıra sayıları belirtme hakkında daha fazla bilgi için bkz: [.def dosyası kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md).
+
 > [!TIP]
->  DLL dosyası boyutu en iyi hale getirmek istiyorsanız, kullanmak **NONAME** dışarı aktarılan her işlevi özniteliği. İle **NONAME** özniteliği, sıra numaraları depolanır işlev adları yerine tablo DLL dışarı aktarma. Birçok işlevini veriyorsanız bu önemli tasarruf olabilir.  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [Sıralı olarak dışa aktarabilirsiniz şekilde .def dosyası kullanın](../build/exporting-from-a-dll-using-def-files.md)  
-  
--   [__Declspec(dllexport) kullanın](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+>  DLL dosyanızın boyutunu en iyi duruma getirmek istediğiniz kullanırsanız **NONAME** her dışarı aktarılan işlevin özniteliği. İle **NONAME** özniteliği, sıra sayıları içinde depolanıyorsa tablosu yerine işlev adlarını DLL'nin dışarı aktarma. Birçok işlevleri dışa aktarıyorsanız, bu önemli ölçüde tasarruf olabilir.
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [Sıralı olarak dışarı aktarabilir, dolayısıyla bir .def dosyası kullanmanıza](../build/exporting-from-a-dll-using-def-files.md)
+
+- [__Declspec(dllexport) kullanın](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)

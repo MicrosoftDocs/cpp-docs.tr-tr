@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27bdcea6f7ebd51f000310f4916f16bfec7840e5
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8d45b08ee356fd217207b625ffe7bf4fb0abffec
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686633"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708701"
 ---
 # <a name="multiset-class"></a>multiset Sınıfı
 
@@ -117,15 +117,15 @@ class multiset
 ### <a name="parameters"></a>Parametreler
 
 *Key*<br/>
- Çoklu kümede depolanacak öğe veri türü.
+Çoklu kümede depolanacak öğe veri türü.
 
 *Compare*<br/>
- İki öğenin değerlerini çoklu kümedeki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul **daha az**\<Key > varsayılan değerdir.
+İki öğenin değerlerini çoklu kümedeki kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul **daha az**\<Key > varsayılan değerdir.
 
 C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
 *Ayırıcı*<br/>
- Çoklu küme için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer `allocator<Key>` şeklindedir.
+Çoklu küme için bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Varsayılan değer `allocator<Key>` şeklindedir.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -482,7 +482,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Multiset eşleştirilecek öğe anahtarı.
+Multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -878,7 +878,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -963,16 +963,16 @@ size_type erase(
 ### <a name="parameters"></a>Parametreler
 
 *Burada*<br/>
- Kaldırılacak öğenin konumu.
+Kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Kaldırılacak ilk öğenin konumu.
+Kaldırılacak ilk öğenin konumu.
 
 *Son*<br/>
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
 *Key*<br/>
- Kaldırılacak öğe anahtar değeri.
+Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -998,7 +998,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir çoklu küme Aranmakta öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+Bir çoklu küme Aranmakta öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1441,7 +1441,7 @@ iterator lower_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2048,7 +2048,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Hedef multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken multiset.
+Hedef multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2117,7 +2117,7 @@ iterator upper_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Bir çoklu küme Aranmakta öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

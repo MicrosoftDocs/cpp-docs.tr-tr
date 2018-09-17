@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: befbf65c8faa74e889d837a0b310eda4bc6fe576
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 227c7d43334419326670dae5fabad28d18ec58a0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676786"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716176"
 ---
 # <a name="cmfcpropertygridtooltipctrl-class"></a>CMFCPropertyGridToolTipCtrl sınıfı
 Uygulayan bir araç ipucu denetimi [CMFCPropertyGridCtrl sınıfı](../../mfc/reference/cmfcpropertygridctrl-class.md) araç ipuçlarını görüntülemek için kullanır.  
@@ -106,8 +106,8 @@ BOOL Create(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst penceresine bir işaretçi.  
+*pWndParent*<br/>
+[in] Üst penceresine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencerenin başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
@@ -130,8 +130,8 @@ void GetLastRect(CRect& rect) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *dikdörtgen*  
- Araç İpucu denetimi son konumunu içerir.  
+*Rect*<br/>
+[out] Araç İpucu denetimi son konumunu içerir.  
   
 ##  <a name="hide"></a>  CMFCPropertyGridToolTipCtrl::Hide  
  Araç İpucu denetimi gizler.  
@@ -148,8 +148,8 @@ void SetTextMargin(int nTextMargin);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nTextMargin*  
- Araç ipucunu denetimini araç ipucu penceresinin kenarlığı arasındaki boşluğu belirtir. Varsayılan değer 10 pikseldir.  
+*nTextMargin*<br/>
+[in] Araç ipucunu denetimini araç ipucu penceresinin kenarlığı arasındaki boşluğu belirtir. Varsayılan değer 10 pikseldir.  
   
 ##  <a name="track"></a>  CMFCPropertyGridToolTipCtrl::Track  
  Araç İpucu denetimi görüntüler.  
@@ -161,11 +161,11 @@ void Track(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dikdörtgen*  
- Araç İpucu denetiminin boyutunu ve konumunu belirtir.  
+*Rect*<br/>
+[in] Araç İpucu denetiminin boyutunu ve konumunu belirtir.  
   
- [in] *strText*  
- Araç ipucunda gösterilecek olan metni belirtir.  
+*strText*<br/>
+[in] Araç ipucunda gösterilecek olan metni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tarafından belirtilen boyut ve konum araç ipucu denetimi görüntüler *rect*. Konum, boyut ve metin bu yöntemi çağrıldı son saatinden itibaren değişmiş değil, bu yöntem etkisizdir.  

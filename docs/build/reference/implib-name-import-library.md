@@ -20,48 +20,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72edc0fcb1b216319d6f6c9924cb92a165b3196b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 25d997bf7df96d3f6ee518a8b7ca0568a44efa93
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375278"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707648"
 ---
 # <a name="implib-name-import-library"></a>/IMPLIB (İçeri Aktarma Kitaplığını Adlandır)
-  
-> / IMPLIB:*dosya adı*  
-  
-## <a name="parameters"></a>Parametreler  
-  
-*Dosya adı*  
-Bir kullanıcı tarafından belirtilen adı içeri aktarma kitaplığı. Varsayılan adı değiştirir.  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-/IMPLIB seçenek bağlantı dışarı aktarmaları içeren bir program oluşturduğunda oluşturan içeri aktarma kitaplığı için varsayılan adı geçersiz kılar. Varsayılan adı ana çıkış dosyasını ve uzantı temel adından oluşturulmuş. lib. Aşağıdakilerden birini veya birkaçını belirtilmezse, bir program dışarı içerir:  
-  
--   [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodundaki anahtar sözcüğü  
-  
--   [Dışarı aktarma](../../build/reference/exports.md) .def dosyası deyimi  
-  
--   Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komutunda belirtimi  
-  
- İçeri aktarma kitaplığı değil oluşturulduğunda bağlantı /IMPLIB yok sayar. Hiçbir dışarı aktarma belirttiyseniz, bağlantıyı içeri aktarma kitaplığı oluşturmaz. Dışa aktarma dosyası derleme kullanılırsa, bağlantı içeri aktarma kitaplığı zaten var ve bir oluşturmaz varsayar. İçeri aktarma kitaplıkları ve dışarı aktarma dosyaları hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **içeri aktarma kitaplığını** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+> / IMPLIB:*dosya adı*
+
+## <a name="parameters"></a>Parametreler
+
+*Dosya adı*<br/>
+İçeri aktarma kitaplığının kullanıcı tarafından belirtilen adı. Varsayılan adını değiştirir.
+
+## <a name="remarks"></a>Açıklamalar
+
+/IMPLIB seçenek dışarı aktarmaları içeren bir program oluşturduğunda bağlantı oluşturan içeri aktarma kitaplığı için varsayılan adı geçersiz kılar. Varsayılan adı uzantısı ile ana çıkış dosyası ve temel adından oluşturulur. LIB. Bir veya daha fazlasını belirtilmişse bir program dışarı aktarmaları içerir:
+
+- [__Declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak koddaki anahtar sözcüğü
+
+- [Dışarı aktarmalar](../../build/reference/exports.md) .def dosyası deyimi
+
+- Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+
+İçeri aktarma kitaplığı değil oluşturulurken bağlantı /IMPLIB yok sayar. Hiçbir dışarı aktarma belirtilmezse, içeri aktarma kitaplığı bağlantı oluşturmaz. Bir dışarı aktarma dosyası derleme kullanılırsa, içeri aktarma kitaplığı zaten var ve bir oluşturmaz bağlantı varsayar. İçeri aktarma kitaplıkları ve dışarı aktarma dosyaları hakkında daha fazla bilgi için bkz: [LIB başvurusu](../../build/reference/lib-reference.md).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **içeri aktarma kitaplığını** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ImportLibrary%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

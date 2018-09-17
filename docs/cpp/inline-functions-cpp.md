@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b39a6889dfd8a28d65aebcab04881d4bc28ce1e
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: b86c2c4031e1257e2a8a8e0f7b504686ea1c4588
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403673"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701695"
 ---
 # <a name="inline-functions-c"></a>Satır İçi İşlevler (C++)
 Sınıf bildirimi gövdesinde tanımlanan bir işlev, satır içi işlevdir.  
@@ -156,7 +156,8 @@ private:
   
  Özyinelemeli İşlevler, satır içi olarak değiştirilebilir tarafından belirtilen bir derinlik olabilir [inline_depth](../preprocessor/inline-depth.md) pragması, en çok 16 çağrısı. Bu derinlikten sonra yinelenen işlev çağrıları, işlev örneği çağrıları olarak kabul edilir.  Özyinelemeli işlevlerin derinliği 16'yı geçmeyecek şekilde satır içi buluşsal yöntem tarafından incelenir. [İnline_recursion](../preprocessor/inline-recursion.md) pragması şu anda bir işlevin satır içi genişletme denetler. Bkz: [satır içi işlev genişletmesi](../build/reference/ob-inline-function-expansion.md) (/ Ob) derleyici seçeneği ilgili bilgiler için.  
   
-**END Microsoft özgü**  
+**END Microsoft özgü**
+
  Kullanma hakkında daha fazla bilgi için **satır içi** belirticisi bakın:  
   
 -   [Satır içi sınıfı üye fonksiyonları](../cpp/inline-functions-cpp.md)  

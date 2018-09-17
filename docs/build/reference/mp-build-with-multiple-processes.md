@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e61f1ac30c2a50cbbefe6c0cbd9e28011a0d0bd
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: bb24ed970d3b02835d5545cb0eaf1d9fd8e81c7e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465451"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713433"
 ---
 # <a name="mp-build-with-multiple-processes"></a>/MP (Birden Çok Süreçle Derleme)
 
@@ -127,7 +127,7 @@ Visual Studio kullanan [MSBuild.exe](/visualstudio/msbuild/msbuild-reference) ç
 
 Derleme süresi çözümünüzün kısmen derlemeyi gerçekleştirmek işlemlerin sayısına bağlıdır. *Numarası* bağımsız değişkeni [/maxcpucount](/visualstudio/msbuild/msbuild-command-line-reference) MSBuild seçeneği projeleri aynı anda en fazla sayısını belirtir. Benzer şekilde, *processMax* bağımsız değişkeni **/MP** derleyici seçeneği, aynı anda oluşturmak için derleme biriminden maksimum sayısını belirtir. Varsa **/maxcpucount** seçeneği belirtir *P* projeleri ve **/MP** seçeneği belirtir *C* işler, en fazla *P*  x *C* işlemler aynı anda yürütme.
 
- MSBuild kullanılacak karar yönelik yönerge veya **/MP** teknoloji aşağıdaki gibidir:
+MSBuild kullanılacak karar yönelik yönerge veya **/MP** teknoloji aşağıdaki gibidir:
 
 - Birçok projeleriyle her projedeki bazı dosyalar varsa, MSBuild Aracı'nı kullanın.
 

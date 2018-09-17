@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e513b0397a41a19c9a8088332eb3d1793b6b6647
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: ce4c5159a66963268ae83e0c0adfdc082dfcc81c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894596"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706946"
 ---
 # <a name="midl-specify-midl-command-line-options"></a>/MIDL (MIDL Komut Satırı Seçeneklerini Belirt)
 
@@ -38,7 +38,7 @@ MIDL komut satırı seçenekleri için bir yanıt dosyası belirtir
 
 ## <a name="arguments"></a>Arguments
 
-*Dosya*  
+*Dosya*<br/>
 İçeren dosyanın adını [MIDL komut satırı seçeneklerini](/windows/desktop/Midl/general-midl-command-line-syntax).
 
 ## <a name="remarks"></a>Açıklamalar
@@ -61,9 +61,9 @@ Bu dosya her satırda bir MIDL komut satırı seçeneği içermelidir.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
-[Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
-[/ IDLOUT (MIDL çıktı dosyalarının adı)](../../build/reference/idlout-name-midl-output-files.md)   
-[/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
-[/ TLBOUT (adı. TLB dosyası)](../../build/reference/tlbout-name-dot-tlb-file.md)   
-[Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+[/ IDLOUT (MIDL çıktı dosyalarının adını)](../../build/reference/idlout-name-midl-output-files.md)
+[/ıgnoreıdl (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+ [ /tlbout (adı. TLB dosyası)](../../build/reference/tlbout-name-dot-tlb-file.md)
+[öznitelikli Program derleme](../../windows/building-an-attributed-program.md)

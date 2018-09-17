@@ -19,36 +19,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8d806af709d6d6e2a5754bc80a34a473900177f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3b3327f4d0ae20b13c97ea0916e7a2c86e7006dd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212918"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710105"
 ---
 # <a name="building-cc-isolated-applications-and-side-by-side-assemblies"></a>C/C++ Yalıtılmış Uygulamaları ve Yan Yana Derlemeleri Oluşturma
-Visual C++ fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modelini destekler [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [yan yana derlemeler](/windows/desktop/SbsCs/about-side-by-side-assemblies-). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan yalıtılmış uygulamalar derleme [bildirimlerini](https://msdn.microsoft.com/library/aa375365) Visual C++ kitaplıklarındaki bağımlılıklarını tanımlamak için.  
-  
- C/C++ programları olarak yalıtılmış uygulamalar derleme çeşitli avantajlar sunar. Örneğin, diğer C/C++ uygulamaları yüklediğinizde veya Visual C++ kitaplıklarının kaldırma yalıtılmış bir uygulama etkilenmez. Yalıtılmış uygulamalar tarafından kullanılan visual C++ kitaplıkları, yine de uygulamanın yerel klasörü veya (WinSxS); yerel derleme önbelleğine yükleme dağıtılabilir zaten dağıtılmış uygulamaları kullanılarak basitleştirilebilir için Visual C++ kitaplıklarının ancak bakım bir [yayımcı yapılandırma dosyası](/windows/desktop/SbsCs/publisher-configuration). Yalıtılmış uygulama dağıtım modeli hala olasılığını sistem yöneticileri için açık bırakarak belirli bir bilgisayarda çalışan bir C/C++ uygulamalarında Visual C++ kitaplıklarının en son sürümünü kullandığınızdan emin olmak kolaylaştırır ve uygulama yazarları, sürüm bağlama bunların bağımlı dll uygulamaları denetlemek için.  
-  
- Bu bölümde ele alınmaktadır nasıl yalıtılmış bir uygulama olarak C/C++ uygulamanızı derleme ve bildirim kullanarak Visual C++ kitaplıklarına bağlar emin olun. Bu bölümdeki bilgiler, öncelikle yerel veya yönetilmeyen, Visual C++ uygulamaları için geçerlidir. Visual C++ ile oluşturulan yerel uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)  
-  
- [C/C++ Yalıtılmış Uygulamaları Derleme](../build/building-c-cpp-isolated-applications.md)  
-  
- [C/C++ Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-side-by-side-assemblies.md)  
-  
- [Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme](../build/how-to-build-registration-free-com-components.md)  
-  
- [Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)  
-  
- [C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)  
-  
- [C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [Yalıtılmış uygulamalar ve yan yana derlemeler](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)  
-  
- [Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)
+
+Visual C++ fikrini tabanlı Windows istemci uygulamaları için bir dağıtım modelini destekler [yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications) ve [yan yana derlemeler](/windows/desktop/SbsCs/about-side-by-side-assemblies-). Varsayılan olarak, Visual C++ tüm yerel C/C++ uygulamaları kullanan yalıtılmış uygulamalar derleme [bildirimlerini](https://msdn.microsoft.com/library/aa375365) Visual C++ kitaplıklarındaki bağımlılıklarını tanımlamak için.
+
+C/C++ programları olarak yalıtılmış uygulamalar derleme çeşitli avantajlar sunar. Örneğin, diğer C/C++ uygulamaları yüklediğinizde veya Visual C++ kitaplıklarının kaldırma yalıtılmış bir uygulama etkilenmez. Yalıtılmış uygulamalar tarafından kullanılan visual C++ kitaplıkları, yine de uygulamanın yerel klasörü veya (WinSxS); yerel derleme önbelleğine yükleme dağıtılabilir zaten dağıtılmış uygulamaları kullanılarak basitleştirilebilir için Visual C++ kitaplıklarının ancak bakım bir [yayımcı yapılandırma dosyası](/windows/desktop/SbsCs/publisher-configuration). Yalıtılmış uygulama dağıtım modeli hala olasılığını sistem yöneticileri için açık bırakarak belirli bir bilgisayarda çalışan bir C/C++ uygulamalarında Visual C++ kitaplıklarının en son sürümünü kullandığınızdan emin olmak kolaylaştırır ve uygulama yazarları, sürüm bağlama bunların bağımlı dll uygulamaları denetlemek için.
+
+Bu bölümde ele alınmaktadır nasıl yalıtılmış bir uygulama olarak C/C++ uygulamanızı derleme ve bildirim kullanarak Visual C++ kitaplıklarına bağlar emin olun. Bu bölümdeki bilgiler, öncelikle yerel veya yönetilmeyen, Visual C++ uygulamaları için geçerlidir. Visual C++ ile oluşturulan yerel uygulamalarını dağıtma hakkında daha fazla bilgi için bkz: [Visual C++ dosyalarını yeniden dağıtma](../ide/redistributing-visual-cpp-files.md).
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Yalıtılmış Uygulama ve Yan Yana Derleme Kavramları](../build/concepts-of-isolated-applications-and-side-by-side-assemblies.md)
+
+[C/C++ Yalıtılmış Uygulamaları Derleme](../build/building-c-cpp-isolated-applications.md)
+
+[C/C++ Yan Yana Derlemeleri Oluşturma](../build/building-c-cpp-side-by-side-assemblies.md)
+
+[Nasıl Yapılır: Kayıt Gerektirmeyen COM Bileşenlerini Derleme](../build/how-to-build-registration-free-com-components.md)
+
+[Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme](../build/how-to-build-isolated-applications-to-consume-com-components.md)
+
+[C/C++ Programları Bildirim Üretimini Anlama](../build/understanding-manifest-generation-for-c-cpp-programs.md)
+
+[C/C++ Yalıtılmış Uygulamalar ve Yan Yana Derlemeler ile İlgili Sorunları Giderme](../build/troubleshooting-c-cpp-isolated-applications-and-side-by-side-assemblies.md)
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[Yalıtılmış uygulamalar ve yan yana derlemeler](/windows/desktop/SbsCs/isolated-applications-and-side-by-side-assemblies-portal)
+
+[Masaüstü uygulamalarını dağıtma](../ide/deploying-native-desktop-applications-visual-cpp.md)

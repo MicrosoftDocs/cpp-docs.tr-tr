@@ -15,26 +15,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a8ff7c58033ac5f7e42764d185c45c206bf406f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a8a5cb7a0285f7abf8bcf476141451eae1b10f85
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367127"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705581"
 ---
 # <a name="defining-a-rule"></a>Kural Tanımlama
-*Fromext* bağımlı bir dosyanın uzantısını temsil eder ve *toext* bir hedef dosya uzantısını temsil eder.  
-  
-```  
-.fromext.toext:  
-   commands  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Uzantılar büyük küçük harfe duyarlı değildir. Makrolar temsil etmek için çağrılacak *fromext* ve *toext*; makrolar ön işleme sırasında genişletilir. Önceki nokta (.) *fromext* satırın başındaki görünmesi gerekir. İki nokta (:) sıfır veya daha fazla boşluk ya da sekme tarafından gelmelidir. Yalnızca boşluk veya sekmeler, komutu belirtmek için noktalı virgül (;), bir açıklama belirtmek için bir numara işareti (#) veya yeni satır karakteri ile izlenebilir. Diğer bir boşluk izin verilir. Komutları açıklama blokları olduğu gibi belirtilir.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
- [Yolları kurallarda Ara](../build/search-paths-in-rules.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkarım Kuralları](../build/inference-rules.md)
+
+*Fromext* bağımlı bir dosyanın uzantısını temsil eder ve *toext* hedef dosya uzantısını temsil eder.
+
+```
+.fromext.toext:
+   commands
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Uzantılar büyük/küçük harfe duyarlı değildir. Makrolar temsil etmek için çağrılacak *fromext* ve *toext*; ön işleme sırasında makroları genişletilir. Önceki nokta (.) *fromext* satırın başında yer almalıdır. İki nokta üst üste (:) sıfır veya daha fazla boşluk veya sekme gelmelidir. Yalnızca boşluk veya sekme, komutu belirtmek için noktalı virgül (;), yorum belirtmek için bir sayı işaretiyle (#) veya yeni satır karakteri tarafından izlenebilir. Diğer boşluk izin verilir. Açıklama blokları olduğu gibi komutları belirtilir.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+[Yolları kurallarda Ara](../build/search-paths-in-rules.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıkarım Kuralları](../build/inference-rules.md)

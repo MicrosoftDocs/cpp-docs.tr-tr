@@ -14,38 +14,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1b94a41aef1122a507a8966c475b9a87c69e3789
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6d2acabb6a5e9c35029b346097a66eaf1311826c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196838"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704034"
 ---
 # <a name="how-to-build-isolated-applications-to-consume-com-components"></a>Nasıl Yapılır: COM Bileşenlerini Kullanacak Yalıtılmış Uygulamalar Derleme
-Yalıtılmış uygulamalar programa oluşturulan bildirimleri sahip uygulamalardır. COM bileşenlerini kullanacak yalıtılmış uygulamalar oluşturabilirsiniz.  
-  
-### <a name="to-add-com-references-to-manifests-of-isolated-applications"></a>Yalıtılmış uygulama bildirimlerinin COM başvuruları eklemek için  
-  
-1.  Yalıtılmış bir uygulama için proje özelliği sayfalarından açın.  
-  
-2.  Genişletin **yapılandırma özellikleri** düğümünü ve ardından **bildirim aracında** düğümü.  
-  
-3.  Seçin **yalıtılmış COM** özellik sayfası ve ardından **Bileşen dosyası adı** özelliğini kullanmak için yalıtılmış bir uygulama istediğiniz COM bileşeni adı.  
-  
-4.  **Tamam**'ı tıklatın.  
-  
-### <a name="to-build-manifests-into-isolated-applications"></a>Yalıtılmış uygulamalarınızı bildirimleri oluşturmak için  
-  
-1.  Yalıtılmış bir uygulama için proje özelliği sayfalarından açın.  
-  
-2.  Genişletin **yapılandırma özellikleri** düğümünü ve ardından **bildirim aracında** düğümü.  
-  
-3.  Seçin **giriş ve çıkış** özellik sayfası ve ardından **ekleme bildirimi** özelliği eşit **Evet**.  
-  
-4.  **Tamam**'ı tıklatın.  
-  
-5.  Çözümü oluşturun.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)   
- [Yan yana derlemeler hakkında](/windows/desktop/SbsCs/about-side-by-side-assemblies-)
+
+Yalıtılmış uygulamalar programa oluşturulan bildirimleri sahip uygulamalardır. COM bileşenlerini kullanacak yalıtılmış uygulamalar oluşturabilirsiniz.
+
+### <a name="to-add-com-references-to-manifests-of-isolated-applications"></a>Yalıtılmış uygulama bildirimlerinin COM başvuruları eklemek için
+
+1. Yalıtılmış bir uygulama için proje özelliği sayfalarından açın.
+
+1. Genişletin **yapılandırma özellikleri** düğümünü ve ardından **bildirim aracında** düğümü.
+
+1. Seçin **yalıtılmış COM** özellik sayfası ve ardından **Bileşen dosyası adı** özelliğini kullanmak için yalıtılmış bir uygulama istediğiniz COM bileşeni adı.
+
+1. **Tamam**'ı tıklatın.
+
+### <a name="to-build-manifests-into-isolated-applications"></a>Yalıtılmış uygulamalarınızı bildirimleri oluşturmak için
+
+1. Yalıtılmış bir uygulama için proje özelliği sayfalarından açın.
+
+1. Genişletin **yapılandırma özellikleri** düğümünü ve ardından **bildirim aracında** düğümü.
+
+1. Seçin **giriş ve çıkış** özellik sayfası ve ardından **ekleme bildirimi** özelliği eşit **Evet**.
+
+1. **Tamam**'ı tıklatın.
+
+1. Çözümü oluşturun.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yalıtılmış uygulamalar](/windows/desktop/SbsCs/isolated-applications)<br/>
+[Yan yana derlemeler hakkında](/windows/desktop/SbsCs/about-side-by-side-assemblies-)

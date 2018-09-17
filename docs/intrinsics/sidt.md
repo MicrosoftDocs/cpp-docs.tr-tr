@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 202e982d30fd0877814fa0c0fe967091057f920f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 6731bb6a06f775c06ba16eb4885a3982d934f3cd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685983"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699877"
 ---
 # <a name="sidt"></a>__sidt
 **Microsoft'a özgü**  
@@ -40,7 +40,7 @@ void __sidt(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Destination`|IDTR depolandığı konumun bellek işaretçisi.|  
+|*Hedef*|[in] IDTR depolandığı konumun bellek işaretçisi.|  
   
 ## <a name="requirements"></a>Gereksinimler  
   

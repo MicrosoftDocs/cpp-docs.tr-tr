@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 623077695731b88285769c5b887b1f64f5263855
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: d6d316c272a2db1bdb3351aa54f72db46dd66583
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464777"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713213"
 ---
 # <a name="bittest-bittest64"></a>_bittest, _bittest64
 **Microsoft'a özgü**  
@@ -47,11 +47,11 @@ unsigned char _bittest64(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
-[in] `a`  
-İncelemek için bellek işaretçisi.  
+*a*<br/>
+[in] İncelemek için bellek işaretçisi.  
   
-[in] `b`  
-Test etmek için bit konumu.  
+*b*<br/>
+[in] Test etmek için bit konumu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 Belirtilen konumdaki bit.  

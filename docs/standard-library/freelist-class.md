@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 05354361bd460f64daced16684e9f8b70de94898
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ae7e56fd33de888ad31a24ad1e3130acc96daa28
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954118"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702836"
 ---
 # <a name="freelist-class"></a>freelist Sınıfı
 
@@ -35,8 +35,7 @@ Bellek bloklarını listesini yönetir.
 
 ```cpp
 template <std::size_t Sz, class Max>
-class freelist
- : public Max
+class freelist : public Max
 ```
 
 ### <a name="parameters"></a>Parametreler

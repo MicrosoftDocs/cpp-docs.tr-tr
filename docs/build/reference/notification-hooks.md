@@ -14,77 +14,81 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0210c4ee058694594893a029789442c89003da2e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 97e471e2de1ecb6ec6664658a2f1c5df09bc8079
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377825"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700628"
 ---
 # <a name="notification-hooks"></a>Bildirim Kancaları
-Yalnızca aşağıdaki eylemleri içindeki Yardımcısı yordamı gerçekleştirmeden önce bildirim kancaları çağrılır:  
-  
--   Kitaplıkta depolanan tanıtıcısı, önceden yüklenip yüklenmediğini görmek için denetlenir.  
-  
--   **LoadLibrary** DLL yükünü denemeye olarak adlandırılır.  
-  
--   **GetProcAddress** yordam adresini alma girişimi için çağrılır.  
-  
--   Gecikme alma yük dönüştürücü döndür.  
-  
- Bildirim kanca etkinleştirilir:  
-  
--   İşaretçinin yeni bir tanımı sağlayarak **__pfnDliNotifyHook2** bildirimleri alan kendi işlevi işaret edecek şekilde başlatıldı.  
-  
-     -veya-  
-  
--   İşaretçinin ayarlayarak **__pfnDliNotifyHook2** yükleme programı DLL yapılan her çağrı gecikme önce kanca işlevi.  
-  
- Bildirim ise **dliStartProcessing**, kanca işlevini döndürebilirsiniz:  
-  
- NULL  
- Varsayılan yardımcı DLL yüklenmesini işler. Bu yalnızca bilgilendirme amaçlıdır çağrılacak yararlıdır.  
-  
- işlev işaretçisi  
- Varsayılan gecikme yükü işleme atlama. Bu, kendi yük işleyici sağlamanıza olanak tanır.  
-  
- Bildirim ise **dliNotePreLoadLibrary**, kanca işlevini döndürebilirsiniz:  
-  
--   0, yalnızca bilgilendirme bildirimleri isterse.  
-  
--   HModule'ü DLL yüklerse yüklenen DLL için.  
-  
- Bildirim ise **dliNotePreGetProcAddress**, kanca işlevini döndürebilirsiniz:  
-  
--   0, yalnızca bilgilendirme bildirimleri isterse.  
-  
--   Kanca işlevini adresi alırsa içeri aktarılan işlevin adresi.  
-  
- Bildirim ise **dliNoteEndProcessing**, kanca işlevin dönüş değeri yoksayılır.  
-  
- This işaretçisi (sıfır) başlatılırsa, Gecikmeli Yükleme Yardımcısı yürütülmesinin boyunca belirli bildirim noktalarda işlevi çağırır. İşlev işaretçisi aşağıdaki tanımı vardır:  
-  
-```  
-// The "notify hook" gets called for every call to the  
-// delay load helper.  This allows a user to hook every call and  
-// skip the delay load helper entirely.  
-//  
-// dliNotify == {  
-//  dliStartProcessing |  
-//  dliNotePreLoadLibrary  |  
-//  dliNotePreGetProc |  
-//  dliNoteEndProcessing}  
-//  on this call.  
-//  
-ExternC  
-PfnDliHook   __pfnDliNotifyHook2;  
-  
-// This is the failure hook, dliNotify = {dliFailLoadLib|dliFailGetProc}  
-ExternC  
-PfnDliHook   __pfnDliFailureHook2;  
-```  
-  
- Bildirimleri geçirin bir **DelayLoadInfo** bildirim değeri birlikte kanca işlevini yapısına. Bu veriler Gecikmeli Yükleme Yardımcısı yordamı tarafından kullanılan aynıdır. Bildirim değer tanımlanan değerlerden biri olacaktır [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)
+
+Bildirim kancaları yalnızca aşağıdaki eylemleri Yardımcısı yordamı gerçekleştirmeden önce çağrılır:
+
+- Kitaplığa depolanmış tanıtıcı, önceden yüklenip yüklenmediğini görmek için denetlenir.
+
+- **LoadLibrary** dll yükleme girişiminde çağrılır.
+
+- **GetProcAddress** yordamı adresini alma girişimi için çağrılır.
+
+- Dönüş gecikmesi içeri aktarmak için dönüştürücü yükleyin.
+
+Bildirim kanca etkinleştirilir:
+
+- Yeni bir tanımı işaretçinin sağlama tarafından **__pfnDliNotifyHook2** bildirimleri alan kendi işlevine işaret edecek şekilde başlatılır.
+
+   \-veya -
+
+- İşaretçi ayarlayarak **__pfnDliNotifyHook2** kanca işlevinize yükleme çağrıları program DLL gecikme önce.
+
+Bildirim ise **dliStartProcessing**, kanca işlevini döndürebilir:
+
+- NULL
+
+   Varsayılan Yardımcısı DLL'in yüklenmesini işler. Bu, yalnızca bilgilendirici amaçlarla çağrılacak kullanışlıdır.
+
+- İşlev işaretçisi
+
+   Varsayılan gecikme yükü boşaltma atlama. Bu, kendi yük işleyici sağlamanıza olanak tanır.
+
+Bildirim ise **dliNotePreLoadLibrary**, kanca işlevini döndürebilir:
+
+- yalnızca bir bilgi bildirimleri istiyorsa, 0.
+
+- HModule'ü DLL yüklerse yüklenen DLL için.
+
+Bildirim ise **dliNotePreGetProcAddress**, kanca işlevini döndürebilir:
+
+- yalnızca bir bilgi bildirimleri istiyorsa, 0.
+
+- Kanca işlevini adresi alırsa içeri aktarılan bir işlevin adresi.
+
+Bildirim ise **dliNoteEndProcessing**, kanca işlevin dönüş değeri yok sayılır.
+
+This işaretçisi (sıfırdan farklı) başlatılırsa, gecikme yük yardımcı yürütme boyunca belirli bir bildirim noktalarda işlevi çağırır. İşlev işaretçisi aşağıdaki tanımları içerir:
+
+```C
+// The "notify hook" gets called for every call to the
+// delay load helper.  This allows a user to hook every call and
+// skip the delay load helper entirely.
+//
+// dliNotify == {
+//  dliStartProcessing |
+//  dliNotePreLoadLibrary  |
+//  dliNotePreGetProc |
+//  dliNoteEndProcessing}
+//  on this call.
+//
+ExternC
+PfnDliHook   __pfnDliNotifyHook2;
+
+// This is the failure hook, dliNotify = {dliFailLoadLib|dliFailGetProc}
+ExternC
+PfnDliHook   __pfnDliFailureHook2;
+```
+
+Bildirimleri geçirin bir **DelayLoadInfo** bildirim değerin yanı sıra kanca işlevini yapısına. Bu veriler, gecikme yük yardımcı yordamı tarafından kullanılmak için aynıdır. Bildirim değeri içinde tanımlanan değerlerden olacaktır [yapı ve sabit tanımları](../../build/reference/structure-and-constant-definitions.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)

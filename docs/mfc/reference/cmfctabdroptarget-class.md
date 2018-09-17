@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2991135d7cbb7e2e9df66e871b5d047e69b93d16
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 717be77589e31292fe6adbb4920a704794979a57
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852974"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711639"
 ---
 # <a name="cmfctabdroptarget-class"></a>CMFCTabDropTarget sınıfı
 Sekme denetimi ve OLE kitaplıkları arasındaki iletişim mekanizmasını sağlar.  
@@ -100,10 +100,10 @@ virtual DROPEFFECT OnDragEnter(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWnd*|Kullanılmayan.|  
-|[in] *pDataObject*|Kullanıcının sürüklediği nesneye bir işaretçi.|  
-|[in] *dwKeyState*|Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|  
-|[in] *noktası*|İstemci koordinatları imleç konumu.|  
+|*pWnd*|[in] Kullanılmayan.|  
+|*pDataObject*|[in] Kullanıcının sürüklediği nesneye bir işaretçi.|  
+|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|  
+|*Noktası*|[in] İstemci koordinatları imleç konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından belirtilen konumda bırak ortaya çıkarsa, etkili *noktası*. Bir veya daha fazlasını olabilir:  
@@ -135,7 +135,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWnd*|Kullanılmayan.|  
+|*pWnd*|[in] Kullanılmayan.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemin çağırdığı `CMFCBaseTabCtrl::OnDragLeave` sürükleme işlemi gerçekleştirmek için yöntemi.  
@@ -156,10 +156,10 @@ virtual DROPEFFECT OnDragOver(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWnd*|Kullanılmayan.|  
-|[in] *pDataObject*|Kullanıcının sürüklediği nesneye bir işaretçi.|  
-|[in] *dwKeyState*|Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|  
-|[in] *noktası*|Fare işaretçisi istemci koordinatlarına göre konumu.|  
+|*pWnd*|[in] Kullanılmayan.|  
+|*pDataObject*|[in] Kullanıcının sürüklediği nesneye bir işaretçi.|  
+|*dwKeyState*|[in] Değiştirici tuşları durumunu içerir. Bu, aşağıdaki herhangi bir sayıda oluşur: MK_CONTROL, MK_SHIFT, MK_ALT, MK_LBUTTON, MK_MBUTTON ve MK_RBUTTON.|  
+|*Noktası*|[in] Fare işaretçisi istemci koordinatlarına göre konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tarafından belirtilen konumda bırak ortaya çıkarsa, etkili *noktası*. Bir veya daha fazlasını olabilir:  
@@ -196,11 +196,11 @@ virtual DROPEFFECT OnDropEx(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWnd*|Kullanılmayan.|  
-|[in] *pDataObject*|Kullanıcının sürüklediği nesneye bir işaretçi.|  
-|[in] *dropEffect*|Varsayılan bırakma işlemi.|  
-|[in] *listeyi*|Kullanılmayan.|  
-|[in] *noktası*|Fare işaretçisi istemci koordinatlarına göre konumu.|  
+|*pWnd*|[in] Kullanılmayan.|  
+|*pDataObject*|[in] Kullanıcının sürüklediği nesneye bir işaretçi.|  
+|*dropEffect*|[in] Varsayılan bırakma işlemi.|  
+|*Listeyi*|[in] Kullanılmayan.|  
+|*Noktası*|[in] Fare işaretçisi istemci koordinatlarına göre konumu.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sonuçta elde edilen bırakma efekti. Bir veya daha fazlasını olabilir:  
@@ -232,7 +232,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pOwner*|Bir bırakma hedefi kaydetmek için sekmesinde denetimi.|  
+|*pOwner*|[in] Bir bırakma hedefi kaydetmek için sekmesinde denetimi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kayıt başarılı olursa sıfır dışı; Aksi durumda 0.  

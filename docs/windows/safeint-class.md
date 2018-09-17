@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 75c5e4df92cf23198d7225dfe337a5c82ecf5596
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b765f6393b9bd2d632539abb5fb7cd17c29297b6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42609210"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701759"
 ---
 # <a name="safeint-class"></a>SafeInt Sınıfı
 
@@ -45,9 +45,9 @@ class SafeInt;
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *sol*|Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
-|[in] *ediyorum*|Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
-|[in] *BITS*|Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
+|*Sol*|[in] Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
+|*i*|[in] Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
+|*BITS*|[in] Birden fazla tek başına işlevlerde işlecinin sağ tarafında değerini temsil eden giriş parametresi.|
 
 ## <a name="members"></a>Üyeler
 

@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7a04710d900aa9eb5889c19fbdc419a3b7f3cbc
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b3b697901ac564a88f48cdbc3154f29089c23acc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204616"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706166"
 ---
 # <a name="set-class"></a>set Sınıfı
 
@@ -119,15 +119,15 @@ class set
 ### <a name="parameters"></a>Parametreler
 
 *Key*<br/>
- Kümede depolanacak öğe veri türü.
+Kümede depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
- İki öğenin değerlerini kümede kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul **daha az**  *\<anahtarı >* varsayılan değerdir.
+İki öğenin değerlerini kümede kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul **daha az**  *\<anahtarı >* varsayılan değerdir.
 
 C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
 *Ayırıcı*<br/>
- Kümenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
+Kümenin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -488,7 +488,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Kümeden eşleştirilecek öğe anahtarı.
+Kümeden eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -934,7 +934,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1019,16 +1019,16 @@ size_type erase(
 ### <a name="parameters"></a>Parametreler
 
 *Burada*<br/>
- Kaldırılacak öğenin konumu.
+Kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Kaldırılacak ilk öğenin konumu.
+Kaldırılacak ilk öğenin konumu.
 
 *Son*<br/>
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
 *Key*<br/>
- Kaldırılacak öğe anahtar değeri.
+Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1131,7 +1131,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan kümesinden bir öğenin sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+Aranan kümesinden bir öğenin sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1595,7 +1595,7 @@ iterator lower_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2215,7 +2215,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Hedef ile değiştirilecek öğeleri sağlayan kümesi bağımsız değişkeni ayarlayın.
+Hedef ile değiştirilecek öğeleri sağlayan kümesi bağımsız değişkeni ayarlayın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2284,7 +2284,7 @@ iterator upper_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan kümesinden bir öğenin sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

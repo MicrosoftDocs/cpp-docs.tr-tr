@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 356aa3448c3912c1842d5e04c697fc86fc9714c0
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: c3e9c9e5122e4bef7007a767fb3225483984e11d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37338405"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711691"
 ---
 # <a name="cmfccaptionbutton-class"></a>CMFCCaptionButton sınıfı
 `CMFCCaptionButton` Sınıfı için yerleştirme bölmesinin veya mini çerçevenin başlık çubuğunda görüntülenen bir düğme uygular. Genellikle, framework resim yazılı düğmelerini otomatik olarak oluşturur.  
@@ -106,11 +106,11 @@ CMFCCaptionButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nHit*  
- İlişkili düğme komutu.  
+*nHit*<br/>
+[in] İlişkili düğme komutu.  
   
- [in] *bLeftAlign*  
- Düğmenin soluna hizalanıp hizalanmayacağını belirtir.  
+*bLeftAlign*<br/>
+[in] Düğmenin soluna hizalanıp hizalanmayacağını belirtir.  
   
  İçin olası değerler aşağıdaki tabloda *nHit* parametresi.  
   
@@ -161,11 +161,11 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bHorz*  
- Sol veya sağ ok görüntü kimlikleri için TRUE; Yukarı veya aşağı ok görüntü kimliği yanlış için.  
+*bHorz*<br/>
+[in] Sol veya sağ ok görüntü kimlikleri için TRUE; Yukarı veya aşağı ok görüntü kimliği yanlış için.  
   
- [in] *bMaximized*  
- Ekranı Kapla görüntü kimliği için TRUE; Bir simge durumuna küçült görüntüsü kimliği için FALSE  
+*bMaximized*<br/>
+[in] Ekranı Kapla görüntü kimliği için TRUE; Bir simge durumuna küçült görüntüsü kimliği için FALSE  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü Kimliği  
@@ -221,11 +221,11 @@ void Move(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ptTo*  
- Yeni konumu.  
+*ptTo*<br/>
+[in] Yeni konumu.  
   
- [in] *bHide*  
- Düğme gösterilip gösterilmeyeceğini belirtir.  
+*bHide*<br/>
+[in] Düğme gösterilip gösterilmeyeceğini belirtir.  
   
 ##  <a name="ondraw"></a>  CMFCCaptionButton::OnDraw  
  Başlık düğmesi çizer.  
@@ -240,20 +240,20 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Düğme için bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Düğme için bir cihaz bağlamı işaretçisi.  
   
- [in] *bActive*  
- Etkin düğmesine görüntü çizme verilmeyeceğini belirtir.  
+*bActive*<br/>
+[in] Etkin düğmesine görüntü çizme verilmeyeceğini belirtir.  
   
- [in] *bHorz*  
- Türetilen bir sınıfta kullanılmak üzere ayrılmıştır.  
+*bHorz*<br/>
+[in] Türetilen bir sınıfta kullanılmak üzere ayrılmıştır.  
   
- [in] *bMaximized*  
- Tam ekran düğmesi bir görüntü çizin verilmeyeceğini belirtir.  
+*bMaximized*<br/>
+[in] Tam ekran düğmesi bir görüntü çizin verilmeyeceğini belirtir.  
   
- [in] *bDevre Dışı*  
- Etkinleştirildi düğmesi bir görüntü çizin verilmeyeceğini belirtir.  
+*bDevre Dışı*<br/>
+[in] Etkinleştirildi düğmesi bir görüntü çizin verilmeyeceğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *BMaximized* parametresi Simge Durumuna Küçült düğmesi veya bir Ekranı Kapla düğmesi olduğunda kullanılır.  
@@ -266,8 +266,8 @@ void SetMiniFramebutton(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- Mini başlık çubuğu yüksekliği için TRUE; Varsayılan başlık çubuğu yüksekliği için FALSE.  
+*bInternet*<br/>
+[in] Mini başlık çubuğu yüksekliği için TRUE; Varsayılan başlık çubuğu yüksekliği için FALSE.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

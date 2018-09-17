@@ -20,66 +20,68 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1239ee3b33a9d6c8443161bacae6daea20260c1f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a3f7c1bf81b94eebbe32b40053fc5ce3aeaa0bd7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368541"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715799"
 ---
 # <a name="importing-function-calls-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak İşlev Çağrılarını İçeri Aktarma
-Aşağıdaki kod örneğinde nasıl kullanılacağını gösterir **_declspec(dllimport)** işlev çağrıları, bir uygulamaya DLL'den dışarı aktarmak için. Varsayımında `func1` içeren .exe dosyasından ayrı bir DLL bulunan bir işlevi olduğunu **ana** işlevi.  
-  
- Olmadan **__declspec(dllimport)**, bu kodu verilir:  
-  
-```  
-int main(void)   
-{  
-   func1();  
-}  
-```  
-  
- Derleyici şuna benzer bir kod oluşturur:  
-  
-```  
-call func1  
-```  
-  
- ve şöyle bir şey çağrıyı bağlayıcı çevirir:  
-  
-```  
-call 0x4000000         ; The address of 'func1'.  
-```  
-  
- Varsa `func1` adresinin ne bilerek hiçbir şekilde sahip olduğu başka bir DLL'de bağlayıcı bunu doğrudan çözümleyemez `func1` değil. 16 bit ortamlarda, bağlayıcı yükleyicisi doğru adresle çalışma zamanında düzeltme ekini uygulayacağı .exe dosyası bir listede bu kod adresini ekler. 32 bit ve 64-bit ortamlarda, bağlayıcı hangi adresi bilen dönüştürücü oluşturur. Bir 32 bit ortamda dönüştürücü aşağıdakine benzer:  
-  
-```  
-0x40000000:    jmp DWORD PTR __imp_func1  
-```  
-  
- Burada `imp_func1` adresidir `func1` .exe dosyası içeri aktarma adres tablosunu yuvasında. Tüm adresler böylece bağlayıcıya olarak bilinir. Yükleyici her şeyin doğru şekilde çalışması yükleme zamanında .exe dosyasının içeri aktarma adres tablosunu güncelleştirmek yalnızca vardır.  
-  
- Bu nedenle, kullanarak **__declspec(dllimport)** gerekli değilse bağlayıcı dönüştürücü oluşturmaz olduğundan daha iyidir. Dönüştürücüler kodu daha büyük hale (RISC sistemlerinde, bu çok yönerge olabilir) ve önbellek performansı düşürebilir. Derleyici DLL'de işlevidir bildirirseniz, bu dolaylı bir çağrı sizin için oluşturur.  
-  
- Artık bu kodu:  
-  
-```  
-__declspec(dllimport) void func1(void);  
-int main(void)   
-{  
-   func1();  
-}  
-```  
-  
- Bu yönergeyi oluşturur:  
-  
-```  
-call DWORD PTR __imp_func1  
-```  
-  
- Dönüştürücü ve Hayır `jmp` böylece kodu daha küçük ve daha hızlı yönerge.  
-  
- Diğer taraftan, DLL içinden işlev çağrıları için dolaylı çağrı kullanmak zorunda istediğiniz değil. Bir işlevin adresi zaten biliyor. Yük ve Dolaylı çağrıdan önce işlevin adresini depolamak için zaman ve yer gerekli olduğundan, doğrudan çağrı her zaman daha hızlı ve daha küçük. Yalnızca kullanmak istediğiniz **__declspec(dllimport)** DLL işlevlerini DLL dışında çağrılırken. Kullanmayın **__declspec(dllimport)** bu DLL oluştururken DLL içindeki işlevlerde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)
+
+Aşağıdaki kod örneği kullanma işlemini gösterir **_declspec(dllimport)** işlev çağrıları, bir uygulamaya bir DLL'den içeri aktarmak için. Varsayımında `func1` içeren .exe dosyadan ayrı bir DLL içinde yer alan bir işlev, **ana** işlevi.
+
+Olmadan **__declspec(dllimport)**, bu kodu verilir:
+
+```
+int main(void)
+{
+   func1();
+}
+```
+
+Derleyici, şuna benzeyen bir kod oluşturur:
+
+```
+call func1
+```
+
+ve şunun gibi çağrıyı bağlayıcı çevirir:
+
+```
+call 0x4000000         ; The address of 'func1'.
+```
+
+Varsa `func1` adresinin ne olduğunu bilmesinin bir yolu yoktur çünkü başka bir DLL bağlayıcı bunu doğrudan çözümleyemez `func1` olduğu. 16-bit ortamlarında bağlayıcı yükleyici doğru adresi ile çalışma zamanında düzeltme ekini uygulayacağı .exe dosyası bir listede bu kod adresini ekler. 32 bit ve 64-bit ortamlarında hangi adresi bilen bir dönüştürücü bağlayıcı oluşturur. Bir 32-bit ortamında dönüştürücü gibi görünür:
+
+```
+0x40000000:    jmp DWORD PTR __imp_func1
+```
+
+Burada `imp_func1` adresi `func1` .exe dosyasını içeri aktarma adres tablosunda yuvası. Bu nedenle tüm adresleri bağlayıcıya bilinir. Yükleyici, her şeyin doğru şekilde çalışması yükleme zamanında .exe dosyasının içeri aktarma adresi tablosunu güncelleştirmek yalnızca vardır.
+
+Bu nedenle, kullanarak **__declspec(dllimport)** gerekli değilse, bağlayıcı bir dönüştürücü oluşturmaz, çünkü daha iyidir. Dönüştürücüleri kodu daha büyük hale (RISC sistemlerde, bu çok yönerge olabilir) ve, önbellek performansını düşürebilir. Bir DLL içinde işlev, derleyici bildirirseniz, onu dolaylı çağrı üretebilir.
+
+Bu nedenle şimdi bu kodu:
+
+```
+__declspec(dllimport) void func1(void);
+int main(void)
+{
+   func1();
+}
+```
+
+Bu yönerge oluşturur:
+
+```
+call DWORD PTR __imp_func1
+```
+
+Dönüştürücü ve yoktur `jmp` yönergesi, böylece kod daha küçük ve daha hızlı.
+
+Öte yandan, bir DLL içinde işlev çağrıları için bir dolaylı çağrı kullanmak zorunda istediğiniz değil. Bir işlevin adresi biliyorsunuzdur. Yükleme ve bir dolaylı çağrı önce bir işlevin adresini depolamak için zaman ve alan gerekli olduğundan, doğrudan arama her zaman daha hızlı ve daha küçük. Yalnızca kullanmak istediğiniz **__declspec(dllimport)** DLL dışında DLL işlevlerini çağırırken. Kullanmayın **__declspec(dllimport)** bu DLL'yi oluştururken bir DLL içinde işlevleri.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

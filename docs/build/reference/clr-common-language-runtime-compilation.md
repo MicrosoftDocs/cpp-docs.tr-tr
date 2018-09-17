@@ -23,12 +23,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b0f4660e9221855c93835a0a5ba5e0557178a66
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: b46f61ef727c1b283137bb3d537d2dbad416c1d8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703826"
 ---
 # <a name="clr-common-language-runtime-compilation"></a>/clr (Ortak Dil Çalışma Zamanı Derlemesi)
 
@@ -40,7 +40,7 @@ Ortak dil çalışma zamanı (CLR) özellikleri kullanmak, uygulamaları ve bile
 
 ## <a name="arguments"></a>Arguments
 
-*Seçenekler*  
+*Seçenekler*<br/>
 Bir veya daha fazla aşağıdaki anahtarları, virgülle ayrılmış.
 
 - yok
@@ -140,5 +140,5 @@ C++ için Yönetilen Uzantılar kullanan kodu varsa, C + kullanmak üzere bağla
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

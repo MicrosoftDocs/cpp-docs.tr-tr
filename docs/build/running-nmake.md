@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eb3ba676da2de9790fc992b9f788963f8dcdbc1
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: bdc9d89dbc0e77a8002cc34e5d010ee49d761da4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894648"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706699"
 ---
 # <a name="running-nmake"></a>NMAKE Çalıştırma
 
@@ -41,11 +41,11 @@ NMAKE derleme yalnızca belirtilen *hedefleri* veya belirtilmezse, derleme göre
 
 ## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
 
-[NMAKE seçenekleri](../build/nmake-options.md)  
+[NMAKE seçenekleri](../build/nmake-options.md)
 
-[Tools.ini ve NMAKE](../build/tools-ini-and-nmake.md)  
+[Tools.ini ve NMAKE](../build/tools-ini-and-nmake.md)
 
-[NMAKE çıkış kodları](../build/exit-codes-from-nmake.md)  
+[NMAKE çıkış kodları](../build/exit-codes-from-nmake.md)
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

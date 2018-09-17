@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4d0f45498015006141591f7132ef38af52751f9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9f395ae726725507bf27f5033b20a4ece2a226a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465556"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715669"
 ---
 # <a name="cmfctooltipctrl-class"></a>CMFCToolTipCtrl sınıfı
 Genişletilmiş araç ipucu uygulaması temel alarak [CToolTipCtrl sınıfı](../../mfc/reference/ctooltipctrl-class.md). Bir araç ipucu temel alarak `CMFCToolTipCtrl` sınıfı bir simge bir etiket ve bir açıklama görüntüleyebilirsiniz. Degrade dolgusu, özel metin ve kenarlık renkleri, kalın metin, yuvarlak köşeler veya balon stili kullanarak görünümünü özelleştirebilirsiniz.  
@@ -204,14 +204,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı işaretçisi.  
   
- [in] *dikdörtgen*  
- Araç İpucu sınırlayıcı dikdörtgenini.  
+*Rect*<br/>
+[in] Araç İpucu sınırlayıcı dikdörtgenini.  
   
- [in] *clrLine*  
- Kenarlık rengi.  
+*clrLine*<br/>
+[in] Kenarlık rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta araç ipucu kenarlığı görünümünü özelleştirmek için bu yöntemi yok sayın.  
@@ -227,8 +227,8 @@ virtual CSize OnDrawDescription(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *bCalcOnly*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -245,11 +245,11 @@ virtual BOOL OnDrawIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rectImage*  
- Simge koordinatları.  
+*rectImage*<br/>
+[in] Simge koordinatları.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Simge çizilmiş TRUE. Aksi durumda FALSE.  
@@ -268,14 +268,14 @@ virtual CSize OnDrawLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Sınırlayıcı dikdörtgeni etiket alanının.  
+*Rect*<br/>
+[in] Sınırlayıcı dikdörtgeni etiket alanının.  
   
- [in] *bCalcOnly*  
- TRUE ise, etiket çizilmez.  
+*bCalcOnly*<br/>
+[in] TRUE ise, etiket çizilmez.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Etiketin piksel cinsinden boyutu.  
@@ -295,17 +295,17 @@ virtual void OnDrawSeparator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *x1*  
- Ayırıcının sol ucuna yatay koordinatı.  
+*x1*<br/>
+[in] Ayırıcının sol ucuna yatay koordinatı.  
   
- [in] *x2*  
- Yatay koordinatı sağ ucunun ayırıcı.  
+*x2*<br/>
+[in] Yatay koordinatı sağ ucunun ayırıcı.  
   
- [in] *Y*  
- Ayırıcı dikey koordinatı.  
+*Y*<br/>
+[in] Ayırıcı dikey koordinatı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama noktasından bir çizgi çizer (x1, y) noktasına (x2, y).  
@@ -324,17 +324,17 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Sınırlayıcı dikdörtgenini doldurmak için alanı belirtir.  
+*Rect*<br/>
+[in] Sınırlayıcı dikdörtgenini doldurmak için alanı belirtir.  
   
- [in] *clrText*  
- Araç İpucu ön plan rengi.  
+*clrText*<br/>
+[in] Araç İpucu ön plan rengi.  
   
- [in] *clrLine*  
- Kenarlıklar ve etiket ve açıklama arasında sınırlayıcı çizgi rengi.  
+*clrLine*<br/>
+[in] Kenarlıklar ve etiket ve açıklama arasında sınırlayıcı çizgi rengi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama tarafından belirtilen dikdörtgen doldurur *rect* renk veya en son çağrısı tarafından belirtilen desenle [CMFCToolTipCtrl::SetParams](#setparams).  
@@ -349,8 +349,8 @@ virtual void SetDescription(const CString strDesrciption);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strDesrciption*  
- Açıklama metni.  
+*strDesrciption*<br/>
+[in] Açıklama metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açıklama metnini ayırıcı altında araç ipucu görüntülenir.  
@@ -365,8 +365,8 @@ void SetFixedWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nWidthRegular*  
- [in] *nWidthLargeImage*  
+*nWidthRegular*<br/>
+[in] [in] *nWidthLargeImage*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -402,8 +402,8 @@ void SetParams(CMFCToolTipInfo* pParams);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParams*  
- İşaretçi bir [Cmfctooltipınfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md) görüntüleme parametreleri içeren nesne.  
+*pParams*<br/>
+[in] İşaretçi bir [Cmfctooltipınfo sınıfı](../../mfc/reference/cmfctooltipinfo-class.md) görüntüleme parametreleri içeren nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Her araç ipucu görüntülenir, renkler kullanarak çizildiğinde ve görsel stilleri *pParams* belirtir. Değerini *pParams* korumalı üye depolanan `m_Params`, hangi erişilebilir kılan türetilmiş bir sınıf tarafından [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl: : OnDrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolTipCtrl::OnDrawSeparator](#ondrawseparator), veya [CMFCToolTipCtrl::OnFillBackground](#onfillbackground)belirtilen görünümünü korumak için.  

@@ -1,5 +1,5 @@
 ---
-title: Bağlantı noktası Sihirbazı'nı uygulamak | Microsoft Docs
+title: Uygulama bağlantı noktası Sihirbazı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,36 +16,41 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef2f7efa92de3714170e403ea50b5f486c8367d6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9f3c92fa219c32ca00050597dab5adfcec17e86b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323764"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703553"
 ---
 # <a name="implement-connection-point-wizard"></a>Bağlantı Noktası Uygulama Sihirbazı
-Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası veya herhangi bir giden arabirimi kendi arabirimleri için getirebilir. Visual C++ hem de Windows giden arabirimine sahip türü kitaplıkları sağlar. Her giden arabirimi, bir nesne (diğer bir deyişle, bir havuz) istemci tarafından uygulanabilir.  
+
+Bu sihirbaz bir COM nesnesi için bir bağlantı noktası uygular. Bağlanılabilirlik bir nesne (diğer bir deyişle, bir kaynak) bir bağlantı noktası kendi arabirimleri veya herhangi bir giden arabirimi üzerinden kullanıma sunabilirsiniz. Visual C++ hem de Windows giden arabirimlere sahip tür kitaplıkları sağlar. Giden her arabirim bir istemcide bir nesnenin (diğer bir deyişle, bir havuz) tarafından uygulanabilir.  
   
- Daha fazla bilgi için bkz: [ATL bağlantı noktaları](../atl/atl-connection-points.md).  
+Daha fazla bilgi için [ATL bağlantı noktaları](../atl/atl-connection-points.md).  
   
- **Kullanılabilir tür kitaplıkları**  
- Bağlantı noktaları uygulayabilirsiniz arabirimi tanımlarını içeren kullanılabilir tür kitaplıklarını görüntüler. Kullanmak için tür kitaplığı içeren bir dosyayı bulmak için üç nokta düğmesini tıklatın.  
+- **Kullanılabilir tür kitaplıkları**
+
+   Bağlantı noktaları uygulayabileceğiniz arabirim tanımlarını içeren kullanılabilir tür kitaplıklarını görüntüler. Tür kitaplığı içeren bir dosyayı bulmak için üç nokta düğmesine tıklayın.  
   
- **Konum**  
- Şu anda seçili tür kitaplığı konumunu görüntüler **kullanılabilir tür kitaplıklarının** listesi.  
+- **Konum**
+
+   Şu anda seçilen tür kitaplığının konumu görüntüler **kullanılabilir tür kitaplıklarını** listesi.  
   
- **Arabirimler**  
- Tanımları, şu anda seçili tür kitaplığı içerdiği arabirimleri görüntüler **kullanılabilir tür kitaplıklarının** kutusu.  
+- **Arabirimler**
+
+   Görüntüler, tanımları, şu anda seçili tür kitaplığı içerdiği arabirimleri **kullanılabilir tür kitaplıklarını** kutusu.  
   
-|Aktarma düğmesi|Açıklama|  
-|---------------------|-----------------|  
-|**>**|Ekler **uygulamak bağlantı noktaları** geçerli seçili arabirim adı listesi **arabirimleri** listesi.|  
-|**>>**|Ekler **uygulamak bağlantı noktaları** bulunan tüm arabirim adlarını listelemek **arabirimleri** listesi.|  
-|**<**|Şu anda seçili arabirim adı kaldırır **uygulamak bağlantı noktaları** listesi.|  
-|**<<**|Tüm arabirim şu anda listelenen adları kaldırır **uygulamak bağlantı noktaları** listesi.|  
+   |Aktarım düğmesi|Açıklama|  
+   |---------------------|-----------------|  
+   |**>**|Ekler **uygulamak bağlantı noktaları** geçerli seçili arabirim adı listesi **arabirimleri** listesi.|  
+   |**>>**|Ekler **uygulamak bağlantı noktaları** bulunan tüm arabirimi adlarını listelemek **arabirimleri** listesi.|  
+   |**\<**|Şu anda seçili arabirim adını kaldırır **uygulamak bağlantı noktaları** listesi.|  
+   |**\<\<**|Şu anda listelenen adları tüm arabirim kaldırır **uygulamak bağlantı noktaları** listesi.|  
   
- **Uygulama bağlantı noktaları**  
- Kendisi için uygulamanız bağlantı noktaları tıkladığınızda arabirimleri adlarını görüntüler **son**.  
+- **Uygulama bağlantı noktaları**
+
+   Kendisi için uygulamanız bağlantı noktaları tıkladığınızda arabirimleri adlarını görüntüler **son**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir bağlantı noktası uygulama](../ide/implementing-a-connection-point-visual-cpp.md)
+ [Bağlantı noktasını uygulama](../ide/implementing-a-connection-point-visual-cpp.md)

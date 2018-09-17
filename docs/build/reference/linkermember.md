@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac961f985de65bb7eea9a4ad0f5d10b75fbe60d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0979009260381eb210e7992377bab8b5ae613338
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371505"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700615"
 ---
 # <a name="linkermember"></a>/LINKERMEMBER
-```  
-/LINKERMEMBER[:{1|2}]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek Kitaplığı'nda tanımlanan genel simgeler görüntüler. Kendi uzaklıkları birlikte nesne sırayla simgelerini görüntülemek için 1 bağımsız değişkenini belirtin. Uzaklıkları ve dizin numaralarını nesneleri görüntülemek için 2 bağımsız değişkeni belirtmeniz ve simgeleri her nesne dizini birlikte alfabetik sırada listeleyin. Her iki çıkışları almak için sayı bağımsız değişken olmadan /LINKERMEMBER belirtin.  
-  
- Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+```
+/LINKERMEMBER[:{1|2}]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, kitaplıkta tanımlanan ortak simgeleri görüntüler. Kendi farkların yanı sıra nesnesi sırayla simgelerini görüntülemek için 1 bağımsız değişkenini belirtin. Kaydırmalar ve dizin numaralarını nesne görüntülenecek 2 bağımsız değişkeni belirtmeniz ve ardından simgeleri alfabetik her nesne dizini ile birlikte listeler. Her iki çıkışları almak için /LINKERMEMBER sayı bağımsız değişken olmadan belirtin.
+
+Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

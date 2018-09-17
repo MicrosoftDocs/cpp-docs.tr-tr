@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90972e39bbad812f820452816ff3df982174539f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 577e4b4e7bf54742035c8b4333d345ca894501ac
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202982"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709000"
 ---
 # <a name="cusertool-class"></a>CUserTool sınıfı
 Kullanıcı aracı dış uygulamayı çalıştıran menü öğesidir. **Araçları** sekmesinde **Özelleştir** iletişim kutusu ( [CMFCToolBarsCustomizeDialog sınıfı](../../mfc/reference/cmfctoolbarscustomizedialog-class.md)) kullanıcının kullanıcı araçları eklemesine ve adını, komut, bağımsız değişken belirtmenizi sağlar ve Her kullanıcı aracı için başlangıç dizini.  
@@ -122,11 +122,11 @@ void DrawToolIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rectImage*  
- Simge görüntülenecek alanın koordinatları belirtir.  
+*rectImage*<br/>
+[in] Simge görüntülenecek alanın koordinatları belirtir.  
   
 ##  <a name="getcommand"></a>  CUserTool::GetCommand  
  Kullanıcı aracı ile ilişkili komut metnini içeren bir dize döndürür.  
@@ -223,8 +223,8 @@ void SetCommand(LPCTSTR lpszCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszCmd*  
- Kullanıcı aracı ile ilişkilendirilecek yeni uygulamayı belirtir.  
+*lpszCmd*<br/>
+[in] Kullanıcı aracı ile ilişkilendirilecek yeni uygulamayı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı aracı çalıştıran yeni bir uygulama ayarlamak için bu yöntemi çağırın. Yöntemi, eski simgesi yok eder ve belirtilen uygulamayı yeni bir simge yükler. Uygulamadan bir simge yüklenemiyor, çağırarak kullanıcı aracı için varsayılan simgeyi yükler [CUserTool::LoadDefaultIcon](#loaddefaulticon).  

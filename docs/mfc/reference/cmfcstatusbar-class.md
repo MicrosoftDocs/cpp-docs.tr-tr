@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b153d733aca6b526150c2d149c1952811c994b4
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7150789756273f9d70b3dd6e156c63d0649d0957
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465461"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708194"
 ---
 # <a name="cmfcstatusbar-class"></a>CMFCStatusBar sınıfı
 `CMFCStatusBar` Sınıfı için benzer bir durum çubuğu uygular `CStatusBar` sınıfı. Ancak, `CMFCStatusBar` sınıfı tarafından önerilmeyen özelliklere sahiptir `CStatusBar` resimleri, animasyonları ve ilerleme çubuğunu görüntüleme ve çift tıklamalara yanıt verme gibi bir sınıf. 
@@ -197,8 +197,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -229,8 +229,8 @@ BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- [in] *dwStyle*  
+*pParentWnd*<br/>
+[in] [in] *dwStyle*  
  [in] *nID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -249,10 +249,10 @@ BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- [in] *dwCtrlStyle*  
- [in] *dwStyle*  
- [in] *nID*  
+*pParentWnd*<br/>
+[in] [in] *dwCtrlStyle*  
+*dwStyle*<br/>
+[in] [in] *nID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -277,8 +277,8 @@ void EnablePaneDoubleClick(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- TRUE ise, fare çift tıklatması işlenmesini sağlar. Aksi takdirde, fare çift tıklatması işlenmesini devre dışı bırakın.  
+*bSistemlerde*<br/>
+[in] TRUE ise, fare çift tıklatması işlenmesini sağlar. Aksi takdirde, fare çift tıklatması işlenmesini devre dışı bırakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Durum çubuğunu çift tıklatma işlemek için etkinse, Windows durum çubuğu kullanıcı çift tıkladığında durum çubuğu bölmesinde her seferinde sahibi bir kaynak kimliği ile birlikte WM_COMMAND bildirim gönderir.  
@@ -297,23 +297,23 @@ void EnablePaneProgressBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Etkinleştirmek için ilerleme çubuğu bölmesi dizinini belirtir.  
+*nIndex*<br/>
+[in] Etkinleştirmek için ilerleme çubuğu bölmesi dizinini belirtir.  
   
- [in] *nAkışlara*  
- İlerleme çubuğu için maksimum değeri belirtir.  
+*nAkışlara*<br/>
+[in] İlerleme çubuğu için maksimum değeri belirtir.  
   
- [in] *bDisplayText*  
- İlerleme çubuğu geçerli ilerleme değer görüntülemesi gerekip gerekmediğini belirtir.  
+*bDisplayText*<br/>
+[in] İlerleme çubuğu geçerli ilerleme değer görüntülemesi gerekip gerekmediğini belirtir.  
   
- [in] *clrBar*  
- İlerleme çubuğu arka plan rengini belirtir.  
+*clrBar*<br/>
+[in] İlerleme çubuğu arka plan rengini belirtir.  
   
- [in] *clrBarDest*  
- İlerleme çubuğu arka plan ikincil rengi belirtir. Değerinden farklı bir değer kullanmazsanız *clrBar* gradyan karışık bir renge göre doldurmak için.  
+*clrBarDest*<br/>
+[in] İlerleme çubuğu arka plan ikincil rengi belirtir. Değerinden farklı bir değer kullanmazsanız *clrBar* gradyan karışık bir renge göre doldurmak için.  
   
- [in] *clrProgressText*  
- İlerleme çubuğu metninin rengini belirtir.  
+*clrProgressText*<br/>
+[in] İlerleme çubuğu metninin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlerleme çubuğu çağrısı devre dışı bırakmak isterseniz `EnablePaneProgressBar` ile *nAkışlara* -1 olarak ayarlayın. Varsayılan olarak *nAkışlara* 100'e ayarlayın. Bu nedenle, yüzde olarak ilerleme durumunu görüntülemek için diğer tüm hesaplamalar gerekmez.  
@@ -381,8 +381,8 @@ void GetItemRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *lpRect*  
+*nIndex*<br/>
+[in] [in] *lpRect*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -398,10 +398,10 @@ void GetPaneInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *nID*  
- [in] *nStyle*  
- [in] *cxWidth*  
+*nIndex*<br/>
+[in] [in] *nID*  
+*nStyle*<br/>
+[in] [in] *cxWidth*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -445,8 +445,8 @@ CString GetPaneText(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *s*  
+*nIndex*<br/>
+[in] [in] *s*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -460,8 +460,8 @@ int GetPaneWidth(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Durum çubuğu bölmesinin dizinini belirtir.  
+*nIndex*<br/>
+[in] Durum çubuğu bölmesinin dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durum çubuğu bölmesinin genişliğini, *nIndex* belirtir; durum çubuğu bölmesinin yoksa, aksi takdirde, sıfır.  
@@ -474,8 +474,8 @@ CString GetTipText(int nIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Araç ipucu metnini almak bölmesi dizinini belirtir.  
+*nIndex*<br/>
+[in] Araç ipucu metnini almak bölmesi dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durum çubuğu bölmesinin araç ipucu metnini, *nIndex* belirtir. Aksi takdirde boş dize bir durum çubuğu bölmesinin belirtilen mevcut değilse *nIndex* veya araç ipucu metnini boşsa.  
@@ -488,8 +488,8 @@ void InvalidatePaneContent(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- İçerikleri geçersiz kılındı ve yeniden düzenlenmiş olan bölmesinin dizinini belirtir.  
+*nIndex*<br/>
+[in] İçerikleri geçersiz kılındı ve yeniden düzenlenmiş olan bölmesinin dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Durum çubuğunda geçersiz kılınması yeniden için işaretlenir. Windows çizer olduğunda `UpdateWindow` yöntemi WM_PAINT ileti gönderir `OnPaint` yöntemi.  
@@ -504,11 +504,11 @@ virtual void OnDrawPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Çizim için bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Çizim için bir cihaz bağlamı için bir işaretçi.  
   
- [in] *pPane*  
- Bir işaretçi bir `CMFCStatusBarPaneInfo` çizilmesini bölmesinde ilgili bilgiler içeren yapısı.  
+*pPane*<br/>
+[in] Bir işaretçi bir `CMFCStatusBarPaneInfo` çizilmesini bölmesinde ilgili bilgiler içeren yapısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, `OnDrawPane` bölmesinde cihaz bağlamını kullanarak yeniden çizer *pDC* bölmedeki stil ve içeriğe göre.  
@@ -551,8 +551,8 @@ BOOL SetIndicators(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpIDArray*  
- [in] *nIDCount*  
+*lpIDArray*<br/>
+[in] [in] *nIDCount*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -570,17 +570,17 @@ void SetPaneAnimation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Bir animasyon atamak istediğiniz bölmesi dizinini belirtir.  
+*nIndex*<br/>
+[in] Bir animasyon atamak istediğiniz bölmesi dizinini belirtir.  
   
- [in] *hImageList*  
- Animasyon kareleri tutan resim listesi için bir tanıtıcı belirtir.  
+*hImageList*<br/>
+[in] Animasyon kareleri tutan resim listesi için bir tanıtıcı belirtir.  
   
- [in] *nFrameRate*  
- Kare hızı, animasyon için milisaniye cinsinden belirtir.  
+*nFrameRate*<br/>
+[in] Kare hızı, animasyon için milisaniye cinsinden belirtir.  
   
- [in] *bgüncelleştirmesinin*  
- TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, geçersiz kılınması bölmesinde içeriği güncelleştirilir.  
+*bgüncelleştirmesinin*<br/>
+[in] TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, geçersiz kılınması bölmesinde içeriği güncelleştirilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli animasyon devre dışı bırakmak isterseniz, çağrı `SetPaneAnimation` ile `hImageList` NULL olarak ayarlayın.  
@@ -596,14 +596,14 @@ void SetPaneBackgroundColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Bölmesinde yeni bir arka plan rengini ayarlamak istediğiniz dizini belirtir.  
+*nIndex*<br/>
+[in] Bölmesinde yeni bir arka plan rengini ayarlamak istediğiniz dizini belirtir.  
   
- [in] *clrBackground*  
- Yeni arka plan rengini belirtir.  
+*clrBackground*<br/>
+[in] Yeni arka plan rengini belirtir.  
   
- [in] *bgüncelleştirmesinin*  
- TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
+*bgüncelleştirmesinin*<br/>
+[in] TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
   
 ##  <a name="setpaneicon"></a>  CMFCStatusBar::SetPaneIcon  
  Durum çubuğu bölmesinin simgeyi ayarlayın.  
@@ -623,20 +623,20 @@ void SetPaneIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Bölmesinin resmi ayarlamak istediğiniz dizini belirtir.  
+*nIndex*<br/>
+[in] Bölmesinin resmi ayarlamak istediğiniz dizini belirtir.  
   
- [in] *hIcon*  
- Bölmesinde görüntüsü olarak ayarlanacak simgesi için bir tanıtıcı belirtir.  
+*hIcon*<br/>
+[in] Bölmesinde görüntüsü olarak ayarlanacak simgesi için bir tanıtıcı belirtir.  
   
- [in] *bgüncelleştirmesinin*  
- İçerik bölmesinde hemen güncelleştirilip güncelleştirilmeyeceğini belirtir.  
+*bgüncelleştirmesinin*<br/>
+[in] İçerik bölmesinde hemen güncelleştirilip güncelleştirilmeyeceğini belirtir.  
   
- [in] *hBmp*  
- Bit eşlem bölmesinde görüntüsü olarak ayarlanacak için bir tanıtıcı belirtir.  
+*hBmp*<br/>
+[in] Bit eşlem bölmesinde görüntüsü olarak ayarlanacak için bir tanıtıcı belirtir.  
   
- [in] *clrTransparent*  
- Bit eşlem saydam rengini belirtir, *hBmp* gösterir.  
+*clrTransparent*<br/>
+[in] Bit eşlem saydam rengini belirtir, *hBmp* gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bölmedeki resmi ayarlamak için saydam rengi ile birlikte HICON ya da HBITMAP geçirebilirsiniz. Artık görüntüyü istemiyorsanız NULL değeri görüntü tanıtıcı geçirin.  
@@ -655,10 +655,10 @@ void SetPaneInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *nID*  
- [in] *nStyle*  
- [in] *cxWidth*  
+*nIndex*<br/>
+[in] [in] *nID*  
+*nStyle*<br/>
+[in] [in] *cxWidth*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -673,14 +673,14 @@ void SetPaneProgress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- İlerleme göstergesi güncelleştirileceği bölmesi dizinini belirtir.  
+*nIndex*<br/>
+[in] İlerleme göstergesi güncelleştirileceği bölmesi dizinini belirtir.  
   
- [in] *nCurr*  
- İlerleme göstergesi geçerli değerini belirtir.  
+*nCurr*<br/>
+[in] İlerleme göstergesi geçerli değerini belirtir.  
   
- [in] *bgüncelleştirmesinin*  
- Bölmesinde hemen güncelleştirilmesi gerekip gerekmediğini belirtir.  
+*bgüncelleştirmesinin*<br/>
+[in] Bölmesinde hemen güncelleştirilmesi gerekip gerekmediğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Belirtilen bölmesinde ilerleme çubuğu için İlerleme göstergesi güncelleştireceğinizi kaldığında bu yöntemi çağırın.  
@@ -697,8 +697,8 @@ void SetPaneStyle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *nStyle*  
+*nIndex*<br/>
+[in] [in] *nStyle*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -713,8 +713,8 @@ virtual BOOL SetPaneText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- [in] *lpszNewText*  
+*nIndex*<br/>
+[in] [in] *lpszNewText*  
  [in] *bgüncelleştirmesinin*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -732,14 +732,14 @@ void SetPaneTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Yeni bir metin rengi atamak istediğiniz bölmesinin dizinini belirtir.  
+*nIndex*<br/>
+[in] Yeni bir metin rengi atamak istediğiniz bölmesinin dizinini belirtir.  
   
- [in] *clrText*  
- Metin rengini belirtir.  
+*clrText*<br/>
+[in] Metin rengini belirtir.  
   
- [in] *bgüncelleştirmesinin*  
- TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
+*bgüncelleştirmesinin*<br/>
+[in] TRUE ise bölmesinde içeriği hemen güncelleştirin. Aksi takdirde, bölmesinde farklı bir yöntemle geçersiz kadar bölmesinde içeriği güncelleştirmez.  
   
 ##  <a name="setpanewidth"></a>  CMFCStatusBar::SetPaneWidth  
  Durum çubuğu bölmesinin genişliğini ayarlayın.  
@@ -751,11 +751,11 @@ void SetPaneWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Yeni bir genişlik ayarlanacak durum çubuğu bölmesinin dizini.  
+*nIndex*<br/>
+[in] Yeni bir genişlik ayarlanacak durum çubuğu bölmesinin dizini.  
   
- [in] *cx*  
- Durum çubuğu bölmesinin piksel cinsinden yeni genişliği.  
+*CX*<br/>
+[in] Durum çubuğu bölmesinin piksel cinsinden yeni genişliği.  
   
 ##  <a name="settiptext"></a>  CMFCStatusBar::SetTipText  
  Durum çubuğu bölmesinin araç ipucu metni ayarlayın.  
@@ -767,11 +767,11 @@ void SetTipText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Araç İpucu metni atamak istediğiniz bölmesinde dizini.  
+*nIndex*<br/>
+[in] Araç İpucu metni atamak istediğiniz bölmesinde dizini.  
   
- [in] *pszTipText*  
- Yeni araç ipucu metni.  
+*pszTipText*<br/>
+[in] Yeni araç ipucu metni.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

@@ -19,17 +19,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a8ba4986abf097a5827d3db7f93dbbd0a9640862
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0d4db2fa67924a6925a19d2714c604f2c9aaa4e7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33331460"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705659"
 ---
 # <a name="mmextractsi64-mmextractisi64"></a>_mm_extract_si64, _mm_extracti_si64
-**Microsoft özel**  
+
+**Microsoft'a özgü**  
   
- Oluşturur `extrq` belirtilen BITS düşük 64 bitten ilk bağımsız değişkenin değerini ayıklamak için yönerge.  
+Oluşturur `extrq` ilk bağımsız değişkeninin düşük 64 bit görüntüyü belirtilen BITS ayıklanacak yönergesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,20 +47,20 @@ __m128i _mm_extracti_si64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Source`  
- Kendi alt 64 bit giriş verilerini 128-bit alanıyla.  
+*Kaynak*<br/>
+[in] 128-bit alanı alt, 64 bit giriş verileri.  
   
- [in]  `Descriptor`  
- Ayıklanacak bit alan açıklar 128-bit alanı.  
+*Tanımlayıcı*<br/>
+[in] Ayıklanacak bit alanı açıklar 128-bit alanı.  
   
- [in]  `Length`  
- Ayıklanacak alanının uzunluğunu belirten bir tamsayı.  
+*Uzunluğu*<br/>
+[in] Ayıklanacak alan uzunluğunu belirten bir tamsayı.  
   
- [in]  `Index`  
- Ayıklanacak alanın dizinini belirten bir tamsayı  
+*Index*<br/>
+[in] Ayıklanacak alan dizinini belirten bir tamsayı  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- En az önemli BITS ayıklanan alanında 128-bit alanıyla.  
+ 128-bit alanı, en az önemli bitlerin ayıklanan alanıyla.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -68,16 +69,16 @@ __m128i _mm_extracti_si64(
 |`_mm_extract_si64`|SSE4a|  
 |`_mm_extracti_si64`|SSE4a|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu iç oluşturur `extrq` bitten ayıklamak için yönerge `Source`. İç bu iki sürümü vardır: `_mm_extracti_si64` hemen sürümü ve `_mm_extract_si64` hemen olmayan adrestir.  Gelen her sürümü ayıklar `Source` uzunluğu ve en az önemli bit dizini tarafından tanımlanan bir bit alanı. Dizin ve uzunluk değerler mod 64 alınır, böylece -1 ile 127 63 yorumlanır. (Sınırlı) dizin ve (sınırlı) alan uzunluğu toplamı 64'den büyükse, sonuçları tanımlanmamış. Alan uzunluğu için sıfır değeri 64 yorumlanır. Alan uzunluğu ve bit dizini hem sıfır, BITS 63:0 varsa `Source` ayıklanır. Alan uzunluğu sıfır ancak bit dizin sıfır değilse, sonuçları tanımlanmamış.  
+ Bu iç oluşturur `extrq` bitten ayıklamak için yönerge `Source`. İç bu iki sürümü vardır: `_mm_extracti_si64` hemen sürümü ve `_mm_extract_si64` hemen olmayan bir sertifikadır.  Her sürüm ayıklar `Source` , en az önemli bit dizinini ve uzunluğu ile tanımlanan bir bit alanı. Değerlerin dizinini ve uzunluğu 64 mod alınır, böylece hem -1 ile 127 63 yorumlanır. (Daraltılmış) dizin ve (daraltılmış) alan uzunluğu 64 ' büyükse sonuçlar tanımsızdır. Alan uzunluğu sıfır değerini 64 yorumlanır. Alan uzunluğu ve bit dizini iki sıfır, BITS 63:0 varsa `Source` ayıklanır. Alan uzunluğu sıfır ancak bit dizin sıfır olmayan, sonuçlar tanımsızdır.  
   
- _Mm_extract_si64, çağrıda `Descriptor` BITS 13:8 ve BITS 5:0 olarak ayıklanacak veri alanı uzunluğu dizinini içeren...  
+ _Mm_extract_si64, bir çağrıda `Descriptor` BITS 13:8 ve BITS 5:0 ayıklanacak veri alanı uzunluğu dizin içeren...  
   
- Çağırırsanız `_mm_extracti_si64` derleyici tamsayı sabitleri olmasını belirleyemiyor bağımsız değişkenlerle derleyici bu değerleri XMM kayıt paketi için kod oluşturur (`Descriptor`) ve çağırmak için `_mm_extract_si64`.  
+ Eğer `_mm_extracti_si64` derleyici tamsayı sabitleri olmasını belirlenemiyor bağımsız değişkenlerle derleyici bu değerleri bir XMM kaydı paketlemek için kod oluşturur. (`Descriptor`) ve çağırmak için `_mm_extract_si64`.  
   
- Donanım desteğini belirlemek için `extrq` yönerge, çağrı `__cpuid` ile iç `InfoType=0x80000001` ve bit 6 denetleyin `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Desteklemediği iç bu donanım kullanan kodu çalıştırırsanız `extrq` yönerge, sonuçlar tahmin edilemez.  
+ İçin donanım desteği belirlemek için `extrq` yönerge, çağrı `__cpuid` ile iç `InfoType=0x80000001` ve 6 bit `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Desteklemediği bu iç donanım kullanan kodu çalıştırırsanız `extrq` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
 ## <a name="example"></a>Örnek  
   
@@ -114,8 +115,9 @@ result2 = 0x30eca86
 result3 = 0x30eca86  
 ```  
   
-**SON Microsoft özel**  
- Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**
+
+Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [_mm_insert_si64, _mm_inserti_si64](../intrinsics/mm-insert-si64-mm-inserti-si64.md)   

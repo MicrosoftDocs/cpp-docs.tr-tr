@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c77b232fe87a722194a21d60457a01051827a7e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: afcf2528ba84edd90179ef6eb29d356466372633
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214172"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713312"
 ---
 # <a name="deque-class"></a>deque Sınıfı
 
@@ -119,10 +119,10 @@ class deque
 ### <a name="parameters"></a>Parametreler
 
 *Türü*<br/>
- Deque içinde depolanacak öğe veri türü.
+Deque içinde depolanacak öğe veri türü.
 
 *Ayırıcı*<br/>
- Deque'nın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı\<türü >**.
+Deque'nın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer **ayırıcı\<türü >**.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -246,19 +246,19 @@ void assign(initializer_list<Type> IList);
 ### <a name="parameters"></a>Parametreler
 
 *ilk*<br/>
- Bağımsız değişken deque kopyalanacak öğe aralığındaki ilk öğenin konumu.
+Bağımsız değişken deque kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
 *Son*<br/>
- Bağımsız değişken deque kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+Bağımsız değişken deque kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
 
 *Sayısı*<br/>
- Deque eklenen öğe kopyası sayısı.
+Deque eklenen öğe kopyası sayısı.
 
 *VAL*<br/>
- Deque eklenen öğe değeri.
+Deque eklenen öğe değeri.
 
 *IList*<br/>
- Deque eklenen initializer_list.
+Deque eklenen initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -333,7 +333,7 @@ const_reference at(size_type pos) const;
 ### <a name="parameters"></a>Parametreler
 
 *POS*<br/>
- Alt simge (veya konum numarası) öğesinin içinde deque başvurmak için.
+Alt simge (veya konum numarası) öğesinin içinde deque başvurmak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1314,7 +1314,7 @@ int main( )
    cout << "The last integer of c1 is " << *c1_Iter << endl;
 
    c1_Iter--;
- *c1_Iter = 400;
+   *c1_Iter = 400;
    cout << "The new next-to-last integer of c1 is " << *c1_Iter << endl;
 
    // If a const iterator had been declared instead with the line:
@@ -1346,13 +1346,13 @@ iterator erase(iterator first, iterator last);
 ### <a name="parameters"></a>Parametreler
 
 *_Where*<br/>
- Deque kaldırılacak öğenin konumu.
+Deque kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Deque kaldırılan ilk öğenin konumu.
+Deque kaldırılan ilk öğenin konumu.
 
 *Son*<br/>
- Konum yalnızca son öğeden sonra deque kaldırıldı.
+Konum yalnızca son öğeden sonra deque kaldırıldı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1603,7 +1603,7 @@ const_reference operator[](size_type pos) const;
 ### <a name="parameters"></a>Parametreler
 
 *POS*<br/>
- Başvurulacak deque öğenin konumu.
+Başvurulacak deque öğenin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1714,7 +1714,7 @@ int main( )
 
    cout << "     ";
    S<MyDeque&&>::show ( move< MyDeque& > (d1) );
- }
+}
 ```
 
 ## <a name="pointer"></a>  deque::pointer
@@ -1951,7 +1951,7 @@ int main( )
    cout << endl;
 
    c1_rIter = c1.rbegin( );
- *c1_rIter = 40;  // This would have caused an error if a
+   *c1_rIter = 40;  // This would have caused an error if a
                     // const_reverse iterator had been declared as
                     // noted above
    cout << "Last element in deque is now " << *c1_rIter << "." << endl;
@@ -2069,7 +2069,7 @@ int main( )
    c1_rIter = c1.rend( );
    c1_rIter--; // Decrementing the reverse iterator moves it backward
                // in the reversed deque (to the last element here)
- *c1_rIter = 40; // This modification of the last element would
+   *c1_rIter = 40; // This modification of the last element would
                    // have caused an error if a const_reverse
                    // iterator had been declared (as noted above)
    cout << "The modified reversed deque is: ";
@@ -2099,10 +2099,10 @@ void resize(size_type _Newsize, Type val);
 ### <a name="parameters"></a>Parametreler
 
 *_Newsize*<br/>
- Deque yeni boyutu.
+Deque yeni boyutu.
 
 *VAL*<br/>
- Yeni boyutu büyükse deque için eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
+Yeni boyutu büyükse deque için eklenecek yeni öğelerin değeri, özgün boyutu. Değer atlanırsa yeni öğeler sınıfı için varsayılan değer atanır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2278,10 +2278,10 @@ void swap(deque<Type, Allocator>& left, deque<Type, Allocator>& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Değiştirilecek öğeleri sağlayan deque veya öğeleri olan deque olanlar değiştirilecek deque `left`.
+Değiştirilecek öğeleri sağlayan deque veya öğeleri olan deque olanlar değiştirilecek deque `left`.
 
 *Sol*<br/>
- Deque olanlar değiştirilecek öğeleri olan bir deque *doğru*.
+Deque olanlar değiştirilecek öğeleri olan bir deque *doğru*.
 
 ### <a name="example"></a>Örnek
 

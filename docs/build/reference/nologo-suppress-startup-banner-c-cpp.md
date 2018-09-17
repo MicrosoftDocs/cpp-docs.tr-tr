@@ -20,38 +20,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51209280fe4ce4b32aa108adb02815c1b9cf57fe
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 36f1d1771abb56bd22e8239923fe2e3c15b1588f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373848"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711873"
 ---
 # <a name="nologo-suppress-startup-banner-cc"></a>/nologo (Başlangıç Başlığını Gösterme) (C/C++)
-Telif hakkı başlığını derleyici başladığında görünümünü ve bilgilendirici iletileri görüntülemeyi derleme sırasında gizler.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/nologo  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **genel** özellik sayfası.  
-  
-4.  Değiştirme **Başlangıç başlığını gösterme** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Derleme sırasında görüntülenen bilgi iletilerini ve derleyici başlatıldığında telif hakkı başlığı görüntüsünü bastırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/nologo
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **genel** özellik sayfası.
+
+1. Değiştirme **Başlangıç başlığını gösterme** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.SuppressStartupBanner%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

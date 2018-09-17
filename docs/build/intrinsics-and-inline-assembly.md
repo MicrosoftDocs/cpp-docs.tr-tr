@@ -12,17 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2b99eedcdd81a96dc3091046a4f62ffe002509
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6a87e577af339099eda56a3b9d91929a05253a43
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465998"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716254"
 ---
 # <a name="intrinsics-and-inline-assembly"></a>Yapı İçi Değerler ve Satır İçi Derleme
-Bir x64 için kısıtlamaların derleyici satır içi assembler desteği yok etmektir. İşlevler yani C veya C++ ortamında ya da alt yordamlar veya derleyici tarafından desteklenen iç işlevleri olarak yazılması gerekir yazılamaz. Diğerleri oluşturulmazken belirli performans duyarlı işlevlerdir. Performans açısından duyarlı işlevleri, iç işlev olarak uygulanmalıdır.  
-  
- Derleyici tarafından desteklenen yapı içlerini açıklanan [derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [x64 Yazılım Kuralları](../build/x64-software-conventions.md)
+
+Bir x64 için kısıtlamaların derleyici satır içi assembler desteği yok etmektir. İşlevler yani C veya C++ ortamında ya da alt yordamlar veya derleyici tarafından desteklenen iç işlevleri olarak yazılması gerekir yazılamaz. Diğerleri oluşturulmazken belirli performans duyarlı işlevlerdir. Performans açısından duyarlı işlevleri, iç işlev olarak uygulanmalıdır.
+
+Derleyici tarafından desteklenen yapı içlerini açıklanan [derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[x64 Yazılım Kuralları](../build/x64-software-conventions.md)

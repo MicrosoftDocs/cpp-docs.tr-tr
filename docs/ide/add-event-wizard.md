@@ -16,49 +16,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f92f871f22fb01f3f0f37677c393fcd481c08120
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: f3c12be98fa94e5109d5113ef65901972bff59a5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33325201"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703618"
 ---
 # <a name="add-event-wizard"></a>Olay Ekleme Sihirbazı
-Bu sihirbaz, bir olay bir MFC ActiveX denetimi projesine ekler. Stok olayları listesinden seçebilirsiniz veya genellikle stok olay özelleştirebilirsiniz veya kendi olay belirtebilirsiniz.  
+Bu sihirbaz, MFC ActiveX denetimi projesi için bir olay ekler. Kendi olay belirtebilirsiniz, genellikle stok olayı özelleştirebilirsiniz veya stok olaylar listesinden seçebilirsiniz.  
   
- **Olay adı**  
- Sınıfından bir olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.  
+- **Olay adı**  
+
+   Sınıftan olay istemek için Otomasyon istemcileri tarafından kullanılan adını ayarlar. Bir ad girin veya listeden birini seçin.  
   
- **Olay türü**  
- Eklenecek olay türünü belirtir. Yalnızca menüden seçerseniz kullanılabilir **olay adı** listesi.  
+- **Olay türü**  
+
+   Eklenecek olay türünü belirtir. Yalnızca gelen seçerseniz kullanılabilir **olay adı** listesi.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Hisse senedi**|Bir düğmeye gibi bir stok olayı Bu sınıf için uygulanacak belirtir. Stok olayları Microsoft Foundation Class (MFC) Kitaplığı'nda tanımlanır.|  
-|**Özel**|Olayın kendi uygulama sağlama belirtir.|  
+   |Seçenek|Açıklama|
+   |------------|-----------------|
+   |**Hisse senedi**|Bir düğmeye tıklatma gibi bir stok olayı Bu sınıf için uygulanacak belirtir. Stok olaylar, Microsoft Foundation Class (MFC) Kitaplığı'nda tanımlanır.|
+   |**Özel**|Olayın kendi uygulamanız sağlama belirtir.|
+
+- **İç adı**  
+
+   Olayı gönderen üye işlevinin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad verin istiyorsanız iç adını değiştirebilirsiniz **olay adı**.  
   
- **İç adı**  
- Olay gönderir üye işlevin adını ayarlar. Yalnızca özel olaylar için kullanılabilir. Ad temel **olay adı**. Farklı bir ad sağlamak istiyorsanız iç adını değiştirebilirsiniz **olay adı**.  
+- **Parametre türü**  
+
+   Tür için ayarlar **parametre adı**. Türü listeden seçin.  
   
- **Parametre türü**  
- Türü için ayarlar **parametre adı**. Listeden seçin.  
+- **Parametre adı**  
+
+   Etkinliğiniz geçmek için bir parametre adını ayarlar. Adını yazdıktan sonra tıklamanız **Ekle** parametre listesi eklemek için.  
   
- **Parametre adı**  
- Olayınızın iletmek için bir parametre adını ayarlar. Adını yazdıktan sonra'ı tıklatmalısınız **Ekle** parametreleri listesine eklemek için.  
+   ' A tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.  
   
- Tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.  
+   > [!NOTE]
+   > Parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, sonra parametre olaya eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir. **Parametre listesi**  
   
-> [!NOTE]
->  Bir parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, parametre olaya eklenmez sonra. Find yöntemi ve parametre el ile ekleyin. **Parametre listesi**  
+- **Add**  
+
+   Belirttiğiniz parametre ekler **parametre adı**ve onun türü için **parametre listesi**. ' A tıklamalıdır **Ekle** parametre listesine eklenecek.  
   
- **Ekle**  
- Belirttiğiniz parametre ekler **parametre adı**ve kendi türü için **parametre listesi**. ' I tıklatmalısınız **Ekle** bir parametre listesine eklemek için.  
+- **Kaldır**  
+
+   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.  
   
- **Kaldır**  
- Öğesinde parametre kaldırır **parametre listesi** listeden.  
-  
- **Parametre listesi**  
- Tüm parametreleri ve şu anda yöntemi için eklenen türlerini görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülemek için.  
+- **Parametre listesi**  
+
+   Tüm parametreler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** her parametre türü ile görüntülenecek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Olay ekleme](../ide/adding-an-event-visual-cpp.md)

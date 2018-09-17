@@ -12,21 +12,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 322bd45abbfe217671fd39f0617987fde21445db
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6dfb36dc9e177fdb9ad196c0e2a8ad0f352d5f2d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367657"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709572"
 ---
 # <a name="function-types"></a>İşlev Türleri
-Temel işlevler iki tür vardır. Yığın çerçevesi gerektiren bir işlev çerçeve işlevi çağrılır. Yığın çerçevesi gerektirmeyen bir işlev yaprak işlevi çağrılır.  
-  
- Çerçeve işlevi yığın alan ayırır, diğer işlevleri çağıran, kalıcı Yazmaçları kaydeden veya özel durum işleme kullanan bir işlevdir. Ayrıca, bir işlev tablo girişi gerektirir. Çerçeve işlevi bir giriş ve bitiş gerektirir. Çerçeve işlevi yığın alanı dinamik olarak ayırabilir ve bir çerçeve işaretçisi tercih edebilirsiniz. Çerçeve işlevi, alt elden standart çağırma özelliklerinin tamamı bu sahiptir.  
-  
- Çerçeve işlevi başka bir işlev çağırmaz sonra yığını hizalamak için gerekli olmayan ('bölümünde [yığın ayırma](../build/stack-allocation.md)).  
-  
- Bir yaprak işlevi tablo girişi gerektirmeyen bir işlevdir. Bu, tüm işlevler çağıramaz ya yığın alanı ayırdığınızdan emin anlamına gelir RSP dahil olmak üzere tüm kalıcı Yazmaçları değişiklik yapamazsınız. Yürütürken yığın hizalanmamış bırakın izin verilmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yığın Kullanımı](../build/stack-usage.md)
+
+Temel işlevleri iki tür vardır. Bir yığın çerçevesini gerektiren bir işlev çerçeve işlevi çağrılır. Bir yığın çerçevesini gerektirmeyen bir işlev, bir yaprak işlevi çağrılır.
+
+Yığın alanı ayırır, diğer işlevleri çağırır, kalıcı Yazmaçları kaydeder veya özel durum işleme kullanan bir işlev bir çerçeve işlevidir. Ayrıca, bir işlevin tablo girişi gerektirir. Çerçeve işlevi, bir giriş ve bitiş gerektirir. Çerçeve işlevi yığın alanı dinamik olarak ayırabilir ve bir çerçeve işaretçisi tercih edebilirsiniz. Çerçeve işlevi tüm özelliklerini, atma standart çağırma vardır.
+
+Çerçeve işlevi başka bir işlevi çağırmadığı sonra yığın hizalamak için gerekli değildir (bölümünde başvurulan [yığın ayırma](../build/stack-allocation.md)).
+
+Bir yaprak işlev bir tablo girişi gerektirmeyen bir işlevdir. Bu, onun tüm işlevler veya yığın alanı ayırmak, yani RSP dahil olmak üzere tüm kalıcı Yazmaçları değişiklik yapamazsınız. Yığın yürütürken hizalanmamış bırakın izin verilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yığın Kullanımı](../build/stack-usage.md)

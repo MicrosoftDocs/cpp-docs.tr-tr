@@ -1,5 +1,5 @@
 ---
-title: Giriş dosyaları .netmodule biçimlerinin seçme | Microsoft Docs
+title: Giriş dosyaları biçimini .netmodule seçme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,36 +12,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62575d3e816bdc10587e7a4c9cebcea735329ec1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1eaa48769525a907ecdcc1d0612d67a169fb6cd1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372727"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715812"
 ---
 # <a name="choosing-the-format-of-netmodule-input-files"></a>.netmodule Giriş Dosyaları Biçimini Seçme
-MSIL .obj dosya (ile derlenmiş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md)) .netmodule dosyası olarak da kullanılabilir.  .obj dosyaları meta verileri ve yerel simgeler içermelidir.  .netmodules yalnızca meta verileri içerir.  
-  
- MSIL .obj dosya için diğer Visual Studio derleyici/addmodule derleyici seçeneği geçirin (ancak edebilirsiniz .obj dosya elde edilen derlemeyi parçası haline gelir ve derleme sevk unutmayın).  Örneğin, Visual C# ve Visual Basic/addmodule derleyici seçeneği vardır.  
-  
+
+Bir MSIL .obj dosyası (ile derlenmiş [/CLR](../../build/reference/clr-common-language-runtime-compilation.md)) bir .netmodule dosyası da kullanılabilir.  meta veri ve yerel semboller .obj dosyaları içerir.  netmodule'leri yalnızca meta veriler içerir.
+
+Bir MSIL .obj dosyası için başka bir Visual Studio derleyici / addmodule derleyici seçeneği geçirin (ancak edebilirsiniz .obj dosyası elde edilen derlemenin parçası haline gelir ve bütünleştirilmiş kod ile birlikte gelen unutmayın).  Örneğin, Visual C# ve Visual Basic/addmodule derleyici seçeneği vardır.
+
 > [!NOTE]
->  Çoğu durumda, bağlayıcıya .obj dosya .net modülünde oluşturulan derlemeden geçmesi gerekir.  Bir .dll veya .netmodule MSIL modülü dosyası bağlayıcıya geçirme içinde LNK1107 neden olabilir.  
-  
- aracılığıyla başvuru bunların ilişkili .h dosyaları birlikte .obj dosyaları #include, .netmodule dosyasında yalnızca yönetilen türler bir C++ uygulaması tarafından kullanılabilecek ancak modülü içindeki yerel türler kullanmak C++ uygulamaları izin verin.  .Obj dosyasına geçirmeye çalışırsanız #using yerel türler hakkında bilgi; kullanılamaz # .obj dosyanın .h dosyası yerine include.  
-  
- Diğer Visual Studio derleyicileri yalnızca yönetilen bir modül türlerinden kullanmasını sağlayabilirsiniz.  
-  
- Visual C++ bağlayıcı modülü giriş olarak bir .netmodule veya .obj dosyası kullanmanız gerekip gerekmediğini belirlemek için aşağıdakileri kullanın:  
-  
--   Visual C++ dışında bir Visual Studio derleyici ile oluşturuluyorsa, bir .netmodule oluşturabilir ve bağlayıcı giriş olarak .netmodule kullanın.  
-  
--   Modüller ve modüller dışında bir kitaplığı oluşturmak için kullanılan varsa üretmek için Visual C++ derleyicisi kullanıyorsanız, bağlayıcı modülü giriş olarak derleyici tarafından üretilen .obj dosyaları kullanın; .netmodule dosya giriş olarak kullanmayın.  
-  
--   Modüllerinizi yerel (olmayan bir yönetilen) kitaplığı oluşturmak için kullanılan, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .lib kitaplık dosyası oluşturur.  
-  
--   Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için tüm modül girişi (/ CLR: safe ile üretilen) doğrulanabilir olacaksa, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .dll (derleme) veya .netmodule (modül) kitaplık dosyası oluşturun.  
-  
--   Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için bir veya daha fazla modülleri giriş yalnızca/CLR ile üretilecek, bağlayıcı için modül girişi olarak .obj dosyaları kullanın ve .dll (derleme) oluşturur.  Kitaplığı'ndan yönetilen türler ve ayrıca yerel türler Kitaplığı'nda kullanmak için C++ uygulamaları istiyorsanız kullanıma sunmak istiyorsanız, kitaplık (aynı zamanda her modül için .h dosyaları sevk etmek istediğiniz kitaplıkları bileşen modülleri .obj dosyaları oluşur ile başvurulabilir şekilde # kaynak kodundan include).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı Girişi olarak .netmodule Dosyaları](../../build/reference/netmodule-files-as-linker-input.md)
+>  Çoğu durumda, bağlayıcıya .obj dosyasına .net modülü oluşturulan derlemeden geçmesi gerekir.  Bir .dll veya .netmodule MSIL Modülü dosyasını bağlayıcıya geçirme LNK1107 neden olabilir.
+
+aracılığıyla başvuru ilişkili .h dosyalarla birlikte .obj dosyaları #include, bir .netmodule dosyası yalnızca yönetilen türleri C++ uygulama tarafından tüketilebilecek ise yerel modül türlerini kullanmak C++ uygulamaları izin verin.  Bir .obj dosyasına geçirmeye çalışırsanız #using yerel türleri hakkında bilgi; kullanılamaz # .obj dosyasına ait .h dosyası yerine include.
+
+Diğer Visual Studio derleyicileri, yalnızca yönetilen bir modül türlerinden kullanabilir.
+
+Modül Visual C++ bağlayıcı girişi olarak .netmodule veya .obj dosyası kullanmak gerekip gerekmediğini belirlemek için aşağıdakileri kullanın:
+
+- Visual C++ dışında bir Visual Studio derleyici ile oluşturuluyorsa, bir .netmodule üretmek ve bağlayıcı girişi olarak .netmodule kullanın.
+
+- Modüllerin ve modüller kitaplık dışında bir şey oluşturmak için kullanılan, oluşturmak için Visual C++ derleyicisi kullanıyorsanız, bağlayıcı modülü giriş olarak derleyici tarafından üretilmiş .obj dosyalarını kullanın. .netmodule dosyası, giriş olarak kullanmayın.
+
+- Modüllerinizi (bir yönetilmeyen) yerel kitaplık oluşturmak için kullanılan, modülü bağlayıcı girişi olarak .obj dosyaları kullanın ve .lib kitaplık dosyası oluşturur.
+
+- Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı tüm modül giriş (/ CLR: safe ile üretilen) doğrulanabilir olacaksa, modülü bağlayıcı girişi olarak .obj dosyaları kullanın ve bir .dll (derleme) veya .netmodule (Modülü) kitaplık dosyası oluşturur.
+
+- Modüllerinizi yönetilen kitaplık oluşturmak için kullanılan ve bağlayıcı için bir veya daha fazla modül giriş yalnızca/CLR ile üretilecek, modülü bağlayıcı girişi olarak .obj dosyaları kullanın ve bir .dll (derleme) oluşturur.  Kitaplığı'ndan yönetilen türleri ve ayrıca Kitaplığı'nda yerel türler kullanmak için C++ uygulamaları istiyorsanız kullanıma sunmak istiyorsanız, kitaplık (Ayrıca her bir modül için .h dosyaları göndermeye isteyeceksiniz kitaplıkları bileşen modüller için .obj dosyaları oluşur ile başvurulabilir, böylece # kaynak kodundan include).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Girişi olarak .netmodule Dosyaları](../../build/reference/netmodule-files-as-linker-input.md)

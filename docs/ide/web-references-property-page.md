@@ -19,31 +19,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dac300f08a9b02ce6e9f4aec66618350b46af952
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0ff2a9ccec1dac6be41727b4a829bf4e63669f40
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692206"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699653"
 ---
 # <a name="web-references-property-page"></a>Web Başvuruları Özellik Sayfası
 **Web başvuruları** özellik sayfası XML Web hizmeti proxy sınıfı oluşturulan nasıl belirtir. Bir web başvurusu projenize eklediğiniz bir XML Web hizmeti proxy sınıfı oluşturulur.  
   
  **Web başvuruları** özellik sayfası, aşağıdaki özellikleri içerir:  
   
- **Çıkış dosyası**  
- XML Web hizmeti proxy sınıfı içeren dosyanın adı.  
+- **Çıkış dosyası**
+
+   XML Web hizmeti proxy sınıfı içeren dosyanın adı.  
   
- **Başlangıç başlığını gösterme**  
- Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlığı görüntüleme.  
+- **Başlangıç başlığını gösterme**
+
+   Web Hizmetleri Açıklama Dili Aracı (Wsdl.exe) için başlığı görüntüleme.  
   
- **Namespace**  
- Oluşturulan web Ara sunucusu adını belirtir.  
+- **Namespace**
+
+   Oluşturulan web Ara sunucusu adını belirtir.  
   
- **Ek başvurular**  
- DLL proxy tarafından başvurulan ek DLL'leri belirtir.  
+- **Ek başvurular**
+
+   DLL proxy tarafından başvurulan ek DLL'leri belirtir.  
   
- Erişim hakkında daha fazla bilgi için **Web başvurusu** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
+Erişim hakkında daha fazla bilgi için **Web başvurusu** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik Sayfaları](../ide/property-pages-visual-cpp.md)

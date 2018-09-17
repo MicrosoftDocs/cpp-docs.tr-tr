@@ -18,15 +18,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f6afd5349595f849e8b7418fa1efb628c200b4b6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 03c38c5328500394871bee937cbc05395eb44cd5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332032"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715514"
 ---
 # <a name="stosq"></a>__stosq
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
  Bir depolama dize yönergesi oluşturur (`rep stosq`).  
   
@@ -41,14 +41,14 @@ void __stosb(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out] `Dest`  
- İşlemin hedefi.  
+*Hedef*<br/>
+[out] İşlemin hedefi.  
   
- [in] `Data`  
- Depolamak için veriler.  
+*Veri*<br/>
+[in] Depolamak için veriler.  
   
- [in] `Count`  
- Yazılacak quadwords Blok uzunluğu.  
+*Sayısı*<br/>
+[in] Yazılacak quadwords bloğunu uzunluğu.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -56,12 +56,12 @@ void __stosb(
 |---------------|------------------|  
 |`__stosq`|AMD64|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sonuç quadword olan `Data` bloğunun yazılan `Count` quadwords içinde `Dest` dize.  
+ Sonuç quadword olan `Data` bloğu yazılmış `Count` içinde quadwords `Dest` dize.  
   
- Bu yordam yalnızca bir iç kullanılabilir.  
+ Bu yordam yalnızca bir iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -89,7 +89,7 @@ int main()
 0 ffffffffffff ffffffffffff 0  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

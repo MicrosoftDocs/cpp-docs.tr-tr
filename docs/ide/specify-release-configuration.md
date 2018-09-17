@@ -1,5 +1,5 @@
 ---
-title: Var olan koddan yeni proje yayın yapılandırma | Microsoft Docs
+title: Mevcut koddan yeni proje yapılandırmasını Release | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,49 +14,59 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f3995b1a7227e4d2f0a531c86726b84e960d8ec
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: c4e7d5fb707c455aa7b7fb9f0e14dff95ee5633f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340495"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703371"
 ---
 # <a name="specify-release-configuration-settings-create-new-project-from-existing-code-files-wizard"></a>Yayın Yapılandırma Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı
-Oluşturma yeni proje varolan kod dosyaları sihirbazın bu sayfası yayın yapılandırması proje ayarları belirtmek için kullanın.  
+Oluşturma yeni proje varolan kod dosyalarından sihirbazın bu sayfası, proje ayarları belirtmek için kullanın.  
   
 ## <a name="task-list"></a>Görev Listesi  
  [Nasıl Yapılır: Varolan Koddan C++ Projesi Oluşturma](../ide/how-to-create-a-cpp-project-from-existing-code.md)  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Aynı hata ayıklama yapılandırması**  
- Sihirbaz hata ayıklama yapılandırması proje ayarları için yayın yapılandırması proje ayarları aynı oluşturacaktır belirtir. Bu seçenek varsayılan olarak işaretli. Bu kutunun işaretini sürece bu sayfadaki tüm diğer seçenekler devre dışıdır.  
+- **Hata ayıklama yapılandırması ile aynı**
+
+   Sihirbazı için hata ayıklama yapılandırması proje ayarları sürüm yapılandırması proje ayarları aynı oluşturacağını belirtir. Bu seçenek varsayılan olarak denetlenir. Bu kutunun işaretini kaldırın sürece bu sayfadaki diğer tüm seçenekler devre dışıdır.  
   
- **Komut satırı derleme**  
- Yeni Proje derlemeler komut satırını belirtir. Derleyici artı anahtarları veya yeni proje oluşturmak için kullanmak istediğiniz bağımsız değişken adını girin. Bu seçenek etkinleştirildiğinde, **kullanım dış yapı sistem** seçeneği seçildiğinde, **proje ayarlarını belirt** sayfası.  
+- **Komut satırı derleme**
+
+   Yeni projeyi derler komut satırını belirtir. Derleyici yanı sıra anahtarları veya yeni projeyi oluşturmak için kullanmak istediğiniz bağımsız değişken adını girin. Bu seçenek etkin olduğunda **kullanım dış derleme sistemi** seçeneği seçildiğinde, **proje ayarlarını belirtme** sayfası.  
   
- **Komut satırı yeniden oluşturma**  
- Yeni proje oluşturur komut satırını belirtir. Bu seçenek etkinleştirildiğinde, **kullanım dış yapı sistem** seçeneği seçildiğinde, **proje ayarlarını belirt** sayfası.  
+- **Yeniden derle komut satırı**
+
+   Yeni proje oluşturur. komut satırı belirtir. Bu seçenek etkin olduğunda **kullanım dış derleme sistemi** seçeneği seçildiğinde, **proje ayarlarını belirtme** sayfası.  
   
- **Temiz komut satırı**  
- Yeni proje için derleme araçları tarafından oluşturulan destek dosyaları silmek için komut satırını belirtir. Bu seçenek etkinleştirildiğinde, **kullanım dış yapı sistem** seçeneği seçildiğinde, **proje ayarlarını belirt** sayfası.  
+- **Temizle komut satırı**
+
+   Yeni proje için yapı araçları tarafından oluşturulan destek dosyalarını silmek için komut satırını belirtir. Bu seçenek etkin olduğunda **kullanım dış derleme sistemi** seçeneği seçildiğinde, **proje ayarlarını belirtme** sayfası.  
   
- **Çıktı (için hata ayıklama)**  
- Yeni Proje hata ayıklama yapılandırması için çıkış dosyalarının dizin yolunu belirtir. Bu seçenek etkinleştirildiğinde, **kullanım dış yapı sistem** seçeneği seçildiğinde, **proje ayarlarını belirt** sayfası.  
+- **Çıkış (hata ayıklama için)**
+
+   Yeni projenin hata ayıklama yapılandırması için çıkış dosyalarının dizin yolunu belirtir. Bu seçenek etkin olduğunda **kullanım dış derleme sistemi** seçeneği seçildiğinde, **proje ayarlarını belirtme** sayfası.  
   
- **Önişlemci tanımları (/ D)**  
- Yeni proje için önişlemci simgelerini tanımlar. Daha fazla bilgi için bkz: [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).  
+- **Önişlemci tanımları (/ D)**
+
+   Yeni proje için önişlemci sembolleri tanımlar. Daha fazla bilgi için [/D (önişlemci tanımları)](../build/reference/d-preprocessor-definitions.md).  
   
- **Arama Yolu Ekle (/ t)**  
- Önişlemci yönergeleri yeni proje dosyası başvuruları çözümlemek için geçirilen derleyici arama dizinleri listesine eklemek için dizin yolu belirtir. Daha fazla bilgi için bkz: [/ı (ek içeren dizinler)](../build/reference/i-additional-include-directories.md).  
+- **Arama Yolu Ekle (/ ı)**
+
+   Ön İşlemci yönergelerinde yeni proje için geçirilen dosya başvurularını çözümlemek için derleyicinin arama yapacağı dizinleri listesine eklemek için dizin yolu belirtir. Daha fazla bilgi için [/ı (ek içeren dizinler)](../build/reference/i-additional-include-directories.md).  
   
- **Zorlanmış eklenen dosyalar (/FI)**  
- Yeni proje oluşturulurken işlemek için üstbilgi dosyaları belirtir. Daha fazla bilgi için bkz: [/FI (zorla dahil dosyasını Adlandır)](../build/reference/fi-name-forced-include-file.md).  
+- **Zorunlu eklenen dosyalar (/FI)**
+
+   Yeni proje oluştururken işlenecek üst bilgi dosyaları belirtir. Daha fazla bilgi için [/FI (zorla dahil dosyasını Adlandır)](../build/reference/fi-name-forced-include-file.md).  
   
- **.NET derleme arama yolu (/ AI)**  
- Önişlemci yönergeleri yeni projede derleyici .NET derleme başvuruları çözümlemek için arayacağı dizin yolları geçirilecek belirtir. Daha fazla bilgi için bkz: [/AI (meta veri dizinlerini belirtin)](../build/reference/ai-specify-metadata-directories.md).  
+- **.NET bütünleştirilmiş kod arama yolu (/ AI)**
+
+   Ön İşlemci yönergelerinde yeni proje için .NET derleme başvurularını çözümlemek için derleyicinin arama yapacağı dizin yolları geçirildi belirler. Daha fazla bilgi için [/AI (meta veri dizinlerini belirtin)](../build/reference/ai-specify-metadata-directories.md).  
   
- **.NET derlemelerini kullanarak zorla (/ FU)**  
- Yeni proje oluşturulurken işlemek için .NET derlemelerini belirtir. Daha fazla bilgi için bkz: [/FU (zorlanan adı #using)](../build/reference/fu-name-forced-hash-using-file.md).  
+- **Zorunlu .NET derlemeleri (/ FU)**
+
+   Yeni proje oluştururken işlenecek .NET bütünleştirilmiş kodları belirtir. Daha fazla bilgi için [/FU (zorlanan adı #using)](../build/reference/fu-name-forced-hash-using-file.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Proje Ayarlarını Belirtme, Varolan Kod Dosyalarından Yeni Proje Oluşturma Sihirbazı](../ide/specify-project-settings-create-new-project-from-existing-code-files-wizard.md)

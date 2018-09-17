@@ -16,18 +16,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3ae6a3aef4bdf774b5630a9bb0b2a0b49f7f29b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4d4518a48d51e6187015dc3fd7b5456e04e1ae84
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33336332"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701538"
 ---
 # <a name="add-member-variable-wizard"></a>Üye Değişkeni Ekleme Sihirbazı
-Bu sihirbaz bir üye değişken bildirimi üstbilgi dosyası ekler ve belirlediğiniz seçeneklere bağlı olarak bu kodu .cpp dosyasına ekleyebilirsiniz. Sihirbazı'nı kullanarak üye değişkeni ekledikten sonra geliştirme ortamı kodda düzenleyebilirsiniz.  
+Bu sihirbaz bir üye değişken bildiriminde üstbilgi dosyasına ekler ve seçeneklere bağlı olarak, bu kod için .cpp dosyası ekleyebilirsiniz. Sihirbazı kullanarak üye değişkenini ekledikten sonra kodu geliştirme ortamında düzenleyebilirsiniz.  
   
- **Erişim**  
- Erişim için üye değişkeni ayarlar. Erişim değiştiricileri üye değişkeni diğer sınıflara sahip oldukları erişim belirttiğiniz anahtar sözcükler. Bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md) erişim belirtme hakkında daha fazla bilgi için. Üye değişkeni erişim düzeyini ayarlamak **ortak** varsayılan olarak.  
+- **Erişim**
+
+   Erişim bir üye değişkeni ayarlar. Erişim değiştiricileri bir üye değişkeni diğer sınıflara sahip erişimi belirtin sözcüklerdir. Bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md) erişim belirtme hakkında daha fazla bilgi için. Üye değişkeni erişim düzeyini ayarlamak **genel** varsayılan olarak.  
   
 -   [public](../cpp/public-cpp.md)  
   
@@ -35,62 +36,74 @@ Bu sihirbaz bir üye değişken bildirimi üstbilgi dosyası ekler ve belirledi�
   
 -   [private](../cpp/private-cpp.md)  
   
- **Değişken türü**  
- Eklediğiniz üye değişkeni için dönüş türünü ayarlar.  
+- **Değişken türü**
+
+   Eklediğiniz üye değişkeni için dönüş türünü ayarlar.  
   
--   Bir iletişim kutusu denetimi değil bir üye değişkenine ekliyorsanız, kullanılabilir türler listesinden seçin.  
+   - Bir iletişim kutusu denetimi olmayan bir üye değişkeni ekliyorsanız, kullanılabilir türler listesinden seçin.  
   
-     Türleri hakkında daha fazla bilgi için bkz: [temel türleri](../cpp/fundamental-types-cpp.md).  
+      Türleri hakkında daha fazla bilgi için bkz: [temel türler](../cpp/fundamental-types-cpp.md).  
   
-    |||  
-    |-|-|  
-    |`char`|**short**|  
-    |**double**|`unsigned char`|  
-    |**float**|`unsigned int`|  
-    |`int`|`unsigned long`|  
-    |**long**||  
+      |||  
+      |-|-|  
+      |**char**|**short**|  
+      |**double**|**İmzasız char**|  
+      |**float**|**işaretsiz int**|  
+      |**int**|**İmzasız long**|  
+      |**long**||  
   
--   Bir iletişim kutusu denetimi için bir üye değişkeni ekliyorsanız, bu kutu bir denetim veya değer için döndürülen nesne türü ile doldurulur. Seçerseniz **denetim**, ardından **değişken türü** öğesinde denetim temel sınıfını belirtir **denetim kimliği** kutusu. İletişim kutusu denetimi bir değer içeriyorsa ve seçerseniz **değeri**, ardından **değişken türü** denetim içerebilir değer uygun türünü belirtir. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.  
+   - Bir iletişim kutusu denetimi için bir üye değişkeni ekliyorsanız, bu kutu bir denetim veya değer için döndürülen nesnenin türü ile doldurulur. Seçerseniz **denetimi**, ardından **değişken türü** seçtiğiniz denetim temel sınıfını belirtir **denetim kimliği** kutusu. İletişim kutusu denetiminin bir değer içerebilir ve seçerseniz **değer**, ardından **değişken türü** denetimi içerebileceği değeri uygun türünü belirtir. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.  
   
-     Bu değer seçime bağlıdır **denetim kimliği** ve değiştirilemez.  
+      Bu değer seçime bağlıdır **denetim kimliği** ve değiştirilemez.  
   
- **Değişken adı**  
- Eklediğiniz üye değişkeni adını ayarlar. Üye değişkenleri genellikle tanımlayıcı dizesi "sizin için varsayılan olarak sağlanan m_," ile başlar.  
+- **Değişken adı**
+
+   Eklediğiniz üye değişkeni adını ayarlar. Üye değişkenleri genellikle tanımlayıcı dizesi "sizin için varsayılan olarak sağlanan m_," ile başlar.  
   
- **Denetim değişkeni**  
- Üye değişkeni içeren bir iletişim kutusu denetimine yönetir gösterir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md) destekler. Bkz: [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) daha fazla bilgi için. Bu seçenek yalnızca türetilmiş sınıflara eklenen üye değişkenleri için kullanılabilir [CDialog](../mfc/reference/cdialog-class.md). Etkinleştirmek için bu kutuyu işaretleyin **denetim kimliği** ve **denetim türü** seçenekleri.  
+- **Denetim değişkeni**
+
+   Üye değişkeni içeren bir iletişim kutusu denetimine yönetir gösterir [veri değişimi ve veri doğrulama](../mfc/dialog-data-exchange-and-validation.md) destekler. Bkz: [DoDataExchange](../mfc/reference/cwnd-class.md#dodataexchange) daha fazla bilgi için. Bu seçenek yalnızca türetilen sınıfların eklenen üye değişkenleri için kullanılabilir [CDialog](../mfc/reference/cdialog-class.md). Etkinleştirmek için bu kutuyu seçin **denetim kimliği** ve **denetim türü** seçenekleri.  
   
- **Denetim Kimliği**  
- Eklediğiniz denetim değişkeni Kimliğini ayarlar. Üye değişkeni ekleme denetim türü için kimliği listeden seçin. Yalnızca etkin olduğunda listesidir **denetim değişkeni** kutusu seçilidir ve iletişim kutusu zaten eklenmiş denetimleri için kimlikleri için sınırlı olur. Örneğin, standart **Tamam** düğme denetim kimliğidir **IDOK**.  
+- **Denetim Kimliği**
+
+   Eklemekte olduğunuz denetim değişkeni için bir kimlik ayarlar. Listeden üye değişkeni ekleme denetim türü kimliği seçin. Yalnızca etkin olduğunda listesidir **denetim değişkeni** kutusu seçilidir ve zaten iletişim kutusuna eklenen denetimler için kimlikleri için sınırlı. Örneğin, standart için **Tamam** düğme denetimi kimliğidir **IDOK**.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**denetimi**|Bu seçenek, Denetim türü için varsayılan olarak ayarlanır. (Liste kutusu, birleşik giriş kutusu veya düzenleme kutusu yapmak istediğiniz gibi) kendisi ve değil durumu veya içeriği denetimi yönettiği denetimi.|  
-|**Değer**|Kendisi için ve (örneğin, bir düzenleme kutusu) bir değer içeren veya durumu (örneğin, bir onay kutusu) yansıtacak denetim türleri için bu seçeneği kullanılabilir aralığı, içeriği veya durum yönetmek. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Denetimi**|Bu seçenek, Denetim türü için varsayılan olarak ayarlanır. Denetim kendisini ve durumu ya da değil içeriği (liste kutusu, birleşik giriş kutusu veya düzenleme kutusu yapmak isteyebileceğiniz gibi) yönettiği denetimi.|  
+   |**Değer**|(Örneğin, bir düzenleme kutusuna) bir değer içermesi veya yansıtacak bir durumda (örneğin, bir onay kutusu) denetim tipleri için ve kendisi için bu seçenek kullanılabilir aralık, içeriği veya durum yönettiğiniz. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.|  
   
- **Kategori**  
- Değişkeni denetim türü veya denetiminin değerine göre belirtir.  
+- **Kategori**
+
+   Değişkeni bir denetim türü veya denetimin değerini temel alan olup olmadığını belirtir.  
   
- **Denetim türü**  
- Eklenmekte olan denetim türünü ayarlar. Bu kutu değiştirmek kullanılabilir değil. Örneğin, bir düğme denetim türü olan **düğmesini**, ve birleşik giriş kutusu denetim türü **COMBOBOX**. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.  
+- **Denetim türü**
+
+   Eklenen denetimin türünü ayarlar. Bu kutuyu değiştirmek kullanılabilir değil. Örneğin, bir düğme denetim türü olan **düğmesi**, ve bir birleşik giriş kutusu denetim türünü **COMBOBOX**. Bkz: [iletişim kutusu denetimleri ve değişken türleri](../ide/dialog-box-controls-and-variable-types.md) daha fazla bilgi için.  
   
- **En fazla karakter**  
- Yalnızca **değişken türü** ayarlanır [CString](../atl-mfc-shared/reference/cstringt-class.md). En fazla denetim tutabilir karakter sayısını belirtir.  
+- **En fazla karakter**
+
+   Yalnızca **değişken türü** ayarlanır [CString](../atl-mfc-shared/reference/cstringt-class.md). En fazla denetimi içerebileceği karakter sayısını belirtir.  
   
- **En küçük değer**  
- Yalnızca değişken türü olduğunda kullanılabilir **BOOL**, `int`, **UINT**, **uzun**, `DWORD`, **float**, **çift**, **bayt**, **kısa**, [COLECurrency](../mfc/reference/colecurrency-class.md) veya [CTime](../atl-mfc-shared/reference/ctime-class.md). Bir ölçek veya tarih aralığı için kabul edilebilir en düşük değer gösterir.  
+- **En düşük değer**
+
+   Değişken türü olduğunda kullanılabilir **BOOL**, `int`, **UINT**, **uzun**, `DWORD`, **float**, **çift**, **bayt**, **kısa**, [COLECurrency](../mfc/reference/colecurrency-class.md) veya [CTime](../atl-mfc-shared/reference/ctime-class.md). Bir ölçek veya tarih aralığını kabul edilebilir en düşük değeri gösterir.  
   
- **En yüksek değeri**  
- Yalnızca değişken türü olduğunda kullanılabilir **BOOL**, `int`, **UINT**, **uzun**, `DWORD`, **float**, **çift**, **bayt**, **kısa**, `COLECurrency` veya `CTime`. Bir ölçek veya tarih aralığı için kabul edilebilir en yüksek değeri gösterir.  
+- **En yüksek değer**
+
+   Değişken türü olduğunda kullanılabilir **BOOL**, `int`, **UINT**, **uzun**, `DWORD`, **float**, **çift**, **bayt**, **kısa**, `COLECurrency` veya `CTime`. Bir ölçek veya tarih aralığını kabul edilebilir en yüksek değeri gösterir.  
   
- **.h dosyası**  
- ActiveX denetimleri için sarmalayıcı sınıfı, üye değişkenleri gerektirir. Sınıf bildirimi eklemek için üstbilgi dosyası adını ayarlar.  
+- **.h dosyası**
+
+   ActiveX denetimleri için üye değişkenleri olan bir sarmalayıcı sınıfı gerektirir. Sınıf bildirimi eklemek için üst bilgi dosyası adını ayarlar.  
   
- **.cpp dosyası**  
- ActiveX denetimleri için sarmalayıcı sınıfı, üye değişkenleri gerektirir. Sınıf tanımı eklemek için uygulama dosyasının adını ayarlar.  
+- **.cpp dosyası**
+
+   ActiveX denetimleri için üye değişkenleri olan bir sarmalayıcı sınıfı gerektirir. Sınıf tanımı eklemek için uygulama dosyasının adını ayarlar.  
   
- **Yorum**  
- Üstbilgi dosyasında üye değişkeni için bir açıklama sağlar.  
+- **Yorum**
+
+   Üye değişkeni için üst bilgi dosyası bir açıklama sağlar.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Üye değişkeni ekleme](../ide/adding-a-member-variable-visual-cpp.md)

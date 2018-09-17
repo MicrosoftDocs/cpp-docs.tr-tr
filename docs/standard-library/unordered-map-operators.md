@@ -9,12 +9,12 @@ f1_keywords:
 dev_langs:
 - C++
 ms.assetid: 9d5add0b-84bd-4a79-bd82-3f58b55145ed
-ms.openlocfilehash: a43528b270571a9994187711e2a21ca5a0e1f096
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: d74eaf0c0f2a431bc481341ce5160d07ee0a4bb5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958909"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701434"
 ---
 # <a name="ltunorderedmapgt-operators"></a>&lt;unordered_map&gt; işleçleri
 
@@ -32,11 +32,11 @@ bool operator!=(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir nesne türü `unordered_map`.
+*Sol*<br/>
+Bir nesne türü `unordered_map`.
 
-*sağ*  
- Bir nesne türü `unordered_map`.
+*sağ*<br/>
+Bir nesne türü `unordered_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -97,11 +97,11 @@ bool operator==(const unordered_map <Key, Type, Hash, Pred, Allocator>& left, co
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir nesne türü `unordered_map`.
+*Sol*<br/>
+Bir nesne türü `unordered_map`.
 
-*sağ*  
- Bir nesne türü `unordered_map`.
+*sağ*<br/>
+Bir nesne türü `unordered_map`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -162,11 +162,11 @@ bool operator!=(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir nesne türü `unordered_multimap`.
+*Sol*<br/>
+Bir nesne türü `unordered_multimap`.
 
-*sağ*  
- Bir nesne türü `unordered_multimap`.
+*sağ*<br/>
+Bir nesne türü `unordered_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -228,11 +228,11 @@ bool operator==(const unordered_multimap <Key, Type, Hash, Pred, Allocator>& lef
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
- Bir nesne türü `unordered_multimap`.
+*Sol*<br/>
+Bir nesne türü `unordered_multimap`.
 
-*sağ*  
- Bir nesne türü `unordered_multimap`.
+*sağ*<br/>
+Bir nesne türü `unordered_multimap`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

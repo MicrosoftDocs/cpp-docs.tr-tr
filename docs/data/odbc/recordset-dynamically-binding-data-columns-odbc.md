@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fe0be424b07fd9d13eec63c56172b2b0195b83d9
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: e64a8a795181115652ab25750c1bac8712fabbad
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39338817"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703137"
 ---
 # <a name="recordset-dynamically-binding-data-columns-odbc"></a>Kayıt Kümesi: Veri Sütunlarını Dinamik Olarak Bağlama (ODBC)
 Bu konu MFC ODBC sınıflarına uygulanır.  
@@ -91,19 +91,16 @@ Sütunları dinamik olarak bağlamak için yapı listesi
      Bir yaklaşım ise ana kümenizin bir döngü eklemek için `DoFieldExchange` , listedeki her sütun için uygun RFX işlevi çağırmak, yeni bir sütun listesi üzerinden döngü işlevi. RFX her çağrıda, sütun adı listesi ve bir depolama konumuna karşılık gelen sonuç değeri listesi üyesi bir sütun adı geçirin.  
   
 ###  <a name="_core_lists_of_columns"></a> Sütun listesi  
- Çalışmak için gereken dört liste aşağıdaki tabloda gösterilmektedir.  
-  
- **Geçerli tablo sütunlarını (çizimdeki liste 1)** şu anda veri kaynağı üzerinde tablodaki sütunlar listesi. Bu liste, şu anda kümenize bağlı sütun listesi eşleşebilir.  
-  
- **Bağlı kayıt kümesi sütunları (çizimdeki Liste 2)**  
- Sütun listesini kümenize bağlı. Bu sütunlar zaten RFX deyimleri içerir, `DoFieldExchange` işlevi.  
-  
- **Bağlama-dinamik sütunlar (çizimdeki liste 3)**  
- Sütun tablodaki ancak kayıt listesi. Dinamik olarak bağlamak istediğiniz sütunları şunlardır.  
-  
- **Dinamik sütun değerleri (şekildeki listesi 4)**  
- Depolama için değerleri içeren bir liste sütunları dinamik olarak bağlama alınır. Bu liste öğeleri de bağlama-dinamik sütunlar, bire bir karşılık gelir.  
-  
+
+Çalışmak için gereken dört liste aşağıdaki tabloda gösterilmektedir.  
+
+|||
+|-|-|  
+**Geçerli tablo sütunları**| (Liste 1 çizimde) Şu anda veri kaynağı üzerinde tablodaki sütunlar listesi. Bu liste, şu anda kümenize bağlı sütun listesi eşleşebilir.|
+|**Bağlı kayıt kümesi sütunları**| (Liste 2 çizimde) Sütun listesini kümenize bağlı. Bu sütunlar zaten RFX deyimleri içerir, `DoFieldExchange` işlevi.|
+|**Bağlama-dinamik sütunlar**| (Liste 3 şekilde) Sütun tablodaki ancak kayıt listesi. Dinamik olarak bağlamak istediğiniz sütunları şunlardır.|
+|**Dinamik sütun değerleri**| (Liste 4 çizimde) Depolama için değerleri içeren bir liste sütunları dinamik olarak bağlama alınır. Bu liste öğeleri de bağlama-dinamik sütunlar, bire bir karşılık gelir.|
+
 ###  <a name="_core_building_your_lists"></a> Listelerinizi oluşturma  
  Göz önünde genel bir strateji ile ayrıntılara kapatabilirsiniz. Bu konunun geri kalanında yordamları gösterilen listeleri nasıl oluşturacağınızı göstermek [sütun listeleri](#_core_lists_of_columns). Yordamlarda size kılavuzluk eder:  
   

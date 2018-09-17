@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: d0b34cbd2cebea2b1c4d6bf32e61a7f496b70d7a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 47fcbdb82501744c8155432e4f4cf220ed945dec
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42596274"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709911"
 ---
 # <a name="dbcommand"></a>db_command
 
@@ -99,26 +99,26 @@ TCHAR m_state[3] = 'CA';
 ]
 ```
 
-*Ad* (isteğe bağlı)  
-Satır kümesi ile çalışmak için kullandığınız işleyici adı. Belirtirseniz *adı*, **db_command** belirli bir sınıf oluşturur *adı*, kullanılabilen çapraz satır kümesi veya birden çok eylem sorgularını yürütmek için. Siz belirtmezseniz *adı*, sonuçların birden fazla satır kullanıcıya döndürülecek mümkün olmayacaktır.
+*Adı*  
+(İsteğe bağlı) Satır kümesi ile çalışmak için kullandığınız işleyici adı. Belirtirseniz *adı*, **db_command** belirli bir sınıf oluşturur *adı*, kullanılabilen çapraz satır kümesi veya birden çok eylem sorgularını yürütmek için. Siz belirtmezseniz *adı*, sonuçların birden fazla satır kullanıcıya döndürülecek mümkün olmayacaktır.
 
-*source_name* (isteğe bağlı)  
-`CSession` Değişkeni veya bir sınıf örneğini `db_source` özniteliği uygulanmış komutu yürütür. Bkz: [db_source](../windows/db-source.md).
+*source_name*  
+(İsteğe bağlı) `CSession` Değişkeni veya bir sınıf örneğini `db_source` özniteliği uygulanmış komutu yürütür. Bkz: [db_source](../windows/db-source.md).
 
 **db_command** denetimler için kullanılan değişkeni emin olmak için *source_name* belirtilen değişkeni işlevi veya genel kapsamlı bu nedenle geçerlidir.
 
-*HRESULT* (isteğe bağlı)  
-Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
+*HRESULT*  
+(İsteğe bağlı) Bu veritabanı komutunun HRESULT alacak değişkeni tanımlar. Değişkeni mevcut değilse özniteliği tarafından otomatik olarak eklenecek.
 
-*bağlamaları* (isteğe bağlı)  
-Bağlama parametrelerinde, OLE DB komutu ayrı sağlar.
+*Bağlamaları*  
+(İsteğe bağlı) Bağlama parametrelerinde, OLE DB komutu ayrı sağlar.
 
 İçin bir değer belirtirseniz *bağlamaları*, **db_command** ilişkili değer ayrıştırır ve değil ayrıştırmaz \[ *bindtype*] parametresi. Bu kullanım OLE DB sağlayıcısı sözdizimi kullanmanıza olanak tanır. Ayrıştırma, parametreleri, bağlama olmadan devre dışı bırakmak için belirtin `Bindings=""`.
 
 İçin bir değer belirtmezseniz *bağlamaları*, **db_command** aranırken bağlama parametresi blok ayrıştırmaz '**(**' çizgidir **\[** _bindtype_**]** tarafından izlenen bir veya daha fazla önceden tanımlanmış C++ üye değişkenlerine tarafından izlenen parantez içine '**)**'. Ayraçlar arasındaki tüm metni ortaya çıkan komuttan kaldırılır ve bu parametreler, bu komut için sütun ve parametre bağlamaları oluşturmak için kullanılacak.
 
-*bulk_fetch* (isteğe bağlı)  
-Getirilecek satır sayısını belirten bir tamsayı değeri.
+*bulk_fetch*  
+(İsteğe bağlı) Getirilecek satır sayısını belirten bir tamsayı değeri.
 
 Varsayılan değer, tek satır getirme belirtir. 1 ' dir (satır türünde olacaktır [CRowset](../data/oledb/crowset-class.md)).
 

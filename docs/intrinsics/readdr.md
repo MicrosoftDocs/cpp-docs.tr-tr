@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd45e8919e7b1f0347511e2c3ad782975ecbe71a
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1d5cabbd1d779de4c6c081b57b8f241d9fa92f62
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465083"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709069"
 ---
 # <a name="readdr"></a>__readdr
 Belirtilen hata ayıklama kaydı değerini okur.  
@@ -34,8 +34,8 @@ unsigned __int64 __readdr(unsigned int DebugRegister);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `DebugRegister`  
- Hata ayıklama tanımlayan 0 ile 7 arasında bir sabit kaydedin.  
+*DebugRegister*<br/>
+[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sabit kaydedin.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Belirtilen hata ayıklama kayıt değeri.  

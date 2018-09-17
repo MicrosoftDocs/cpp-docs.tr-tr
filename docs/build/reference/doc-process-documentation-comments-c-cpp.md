@@ -21,14 +21,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee09b3fe61c86015d8dc7464ef9925419fc745d9
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 488ee353cf245303b5ea73be139a262aea5be49d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44100346"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706582"
 ---
 # <a name="doc-process-documentation-comments-cc"></a>/doc (İşlem Belgeleri Açıklamaları) (C/C++)
+
 Derleyicinin işlem belgeleri açıklamaları için kaynak kodu dosyalarında ve belge açıklamaları olan her kaynak kodu dosyası için bir .xdc dosyasını oluşturmak için neden olur.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -50,7 +51,7 @@ IntelliSense ile oluşturulan .xml dosyasını kullanmak için destek ve .xml do
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **Çıkış dosyalarını** özellik sayfası.
 
@@ -62,5 +63,5 @@ IntelliSense ile oluşturulan .xml dosyasını kullanmak için destek ve .xml do
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

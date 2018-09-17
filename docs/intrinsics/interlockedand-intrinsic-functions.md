@@ -66,12 +66,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b991d4d0546ea20e26f2896bc78032e2fb1c6136
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 26ae6034e9a54a6cf198b39c81d688f10616d1d0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466090"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707869"
 ---
 # <a name="interlockedand-intrinsic-functions"></a>_Interlockedand iç işlevleri
 **Microsoft'a özgü**  
@@ -180,11 +180,11 @@ __int64 _InterlockedAnd64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `value`  
- Sonucu değiştirilecek ilk işlenen bir işaretçi.  
+*value*<br/>
+[out içinde] Sonucu değiştirilecek ilk işlenen bir işaretçi.  
   
- [in] `mask`  
- İkinci işlenen.  
+*Maskesi*<br/>
+[in] İkinci işlenen.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Birinci işlenenin özgün değer.  

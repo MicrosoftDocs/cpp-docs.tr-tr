@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5136826b62fb5c0e6b8e7affd06be3aa81c03d6
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: e946406a708f26685d6f1b7307476b6253c5362e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42464691"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713299"
 ---
 # <a name="eh-exception-handling-model"></a>/EH (Özel Durum İşleme Modeli)
 
@@ -117,8 +117,8 @@ Ancak, oluşturmayan özniteliği işlev tarafından oluşturulan özel durum ga
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
-[Hatalar ve özel durum işleme](../../cpp/errors-and-exception-handling-modern-cpp.md)  
-[Özel Durum Belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)  
-[Yapılandırılmış Özel Durum İşleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)  
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Hatalar ve özel durum işleme](../../cpp/errors-and-exception-handling-modern-cpp.md)<br/>
+[Özel durum belirtimleri (throw)](../../cpp/exception-specifications-throw-cpp.md)
+[yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md)

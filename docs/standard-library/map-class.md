@@ -98,12 +98,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2eb6baf664c2cac7bfc1ed2c95a5fbd204d289b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: ccab97a7ac1fd0ad073a3f507dfa6687f311efc4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686805"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703930"
 ---
 # <a name="map-class"></a>map Sınıfı
 
@@ -124,18 +124,18 @@ class map;
 ### <a name="parameters"></a>Parametreler
 
 *Key*<br/>
- Eşlemde depolanacak anahtar veri türü.
+Eşlemde depolanacak anahtar veri türü.
 
 *Türü*<br/>
- Eşlemde depolanacak öğe veri türü.
+Eşlemde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
- İki öğenin değerlerini eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
+İki öğenin değerlerini eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. Bu bağımsız değişken isteğe bağlıdır ve ikili koşul `less<Key>` varsayılan değerdir.
 
 C ++ 14 sürümünde türü parametresi yok std::less <> koşul belirterek heterojen arama etkinleştirebilirsiniz. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#sequence_containers)
 
 *Ayırıcı*<br/>
- Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair<const Key, Type> >`.
+Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair<const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -577,7 +577,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Öğeleri eşlemden eşleştirilmesi için anahtar değeri.
+Öğeleri eşlemden eşleştirilmesi için anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1041,7 +1041,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1128,16 +1128,16 @@ size_type erase(
 ### <a name="parameters"></a>Parametreler
 
 *Burada*<br/>
- Kaldırılacak öğenin konumu.
+Kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Kaldırılacak ilk öğenin konumu.
+Kaldırılacak ilk öğenin konumu.
 
 *Son*<br/>
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
 *Key*<br/>
- Kaldırılacak öğe anahtar değeri.
+Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1240,7 +1240,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir öğenin Aranan eşlemesinden sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+Bir öğenin Aranan eşlemesinden sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1702,7 +1702,7 @@ const_iterator lower_bound(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+Bir öğenin Aranan eşlemesinden sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2492,7 +2492,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Hedef haritayla değiştirilecek öğeleri sağlayan bağımsız değişken eşleme.
+Hedef haritayla değiştirilecek öğeleri sağlayan bağımsız değişken eşleme.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2563,7 +2563,7 @@ const_iterator upper_bound(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Bir öğenin Aranan eşlemesinden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
+Bir öğenin Aranan eşlemesinden sıralama anahtar değeri ile Karşılaştırılacak bağımsız değişken anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

@@ -20,14 +20,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 952933f72ae5d3f65aa646964ec6e04e758a27c6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 244fea4b776f0713b6fb2281563e39d27a910a2d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44103781"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704266"
 ---
 # <a name="f-set-stack-size"></a>/F (Yığın Boyutunu Ayarla)
+
 Program yığın boyutu bayt cinsinden ayarlar.
 
 ## <a name="syntax"></a>Sözdizimi
@@ -47,9 +48,9 @@ Programınızı yığın taşması iletileri alırsa yığın boyutunu artırabi
 
 Ayrıca yığın boyutu ayarlayabileceğiniz:
 
--   Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](../../build/reference/stack.md).
+- Kullanarak **/STACK** bağlayıcı seçeneği. Daha fazla bilgi için [/STACK](../../build/reference/stack.md).
 
--   EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](../../build/reference/editbin-reference.md).
+- EDITBIN .exe dosyası kullanma. Daha fazla bilgi için [EDITBIN başvurusu](../../build/reference/editbin-reference.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
@@ -65,5 +66,5 @@ Ayrıca yığın boyutu ayarlayabileceğiniz:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

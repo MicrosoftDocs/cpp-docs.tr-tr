@@ -15,48 +15,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5249f4528038771162bb96b714524ed751ff39a7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8ea6590a57a336740be0a9439c959ebe32239d4e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367553"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703468"
 ---
-# <a name="creating-a-resource-only-dll"></a>Yalnızca Kaynak DLL Oluşturma  
-  
-Yalnızca kaynak DLL simgeler, bit eşlemler, dizeler ve iletişim kutuları gibi kaynakları içeren bir DLL'dir. Yalnızca kaynak DLL kullanarak aynı kümesini kaynakları birden çok programlar arasında paylaşmak için iyi bir yöntemidir. Ayrıca uygulamanın birden çok dil için yerelleştirilmiş kaynaklar sağlamak için en iyi yolu olan (bkz [MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri](../build/localized-resources-in-mfc-applications-satellite-dlls.md)).  
-  
-Yalnızca kaynak DLL oluşturmak için yeni bir Win32 DLL (MFC olmayan) projesi oluşturun ve kaynaklarınızı projeye ekleyin.  
-  
--   Win32 projedeki seçin **yeni proje** iletişim kutusuna ve Win32 Proje Sihirbazı'nda bir DLL proje türünü belirtin.  
-  
--   DLL için kaynakları (örneğin, bir dize veya menü) içeren yeni bir kaynak betik oluşturun ve .rc dosyasını kaydedin.  
-  
--   Üzerinde **proje** menüsünde tıklatın **varolan öğeyi Ekle**ve ardından yeni .rc dosyası projeye ekleyin.  
-  
--   Belirtin [/NOENTRY](../build/reference/noentry-no-entry-point.md) bağlayıcı seçeneği. / NOENTRY bağlayıcı başvuru bağlama engeller `_main` DLL'e; yalnızca kaynak DLL oluşturmak için bu seçeneği gereklidir.  
-  
--   Dll dosyasını oluşturun.  
-  
-Yalnızca kaynak DLL kullanan uygulama çağrısı [LoadLibrary](../build/loadlibrary-and-afxloadlibrary.md) DLL'ye açıkça bağlanmak için. Kaynaklara erişmek için genel işlevlerini `FindResource` ve `LoadResource`, hangi iş her türlü kaynak veya aşağıdaki kaynak özgü işlevleri birini arayın:  
-  
--   `FormatMessage`  
-  
--   `LoadAccelerators`  
-  
--   `LoadBitmap`  
-  
--   `LoadCursor`  
-  
--   `LoadIcon`  
-  
--   `LoadMenu`  
-  
--   `LoadString`  
-  
-Uygulama çağırmalıdır `FreeLibrary` onu bittiğinde kaynakları kullanarak.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-  
-[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)  
+# <a name="creating-a-resource-only-dll"></a>Yalnızca Kaynak DLL Oluşturma
+
+Yalnızca kaynak DLL simgeler, bit eşlemler, dizeler ve iletişim kutuları gibi kaynakları içeren bir DLL'dir. Yalnızca kaynak DLL kullanarak aynı kümesi kaynakları birden çok programlar arasında paylaşmak için iyi bir yoludur. Ayrıca bir uygulamanın birden çok dil için yerelleştirilmiş kaynaklar sağlamak için en iyi yolu olan (bkz [MFC uygulamalarında yerelleştirilmiş kaynaklar: Uydu DLL'leri](../build/localized-resources-in-mfc-applications-satellite-dlls.md)).
+
+Yalnızca kaynak DLL'i oluşturmak için yeni bir Win32 DLL (MFC olmayan) projesi oluşturun ve kaynaklarınızı projeye ekleyin.
+
+- Win32 projesi içinde seçin **yeni proje** iletişim kutusu ve Win32 Proje Sihirbazı'nda bir DLL projesi türünü belirtin.
+
+- DLL için kaynakları (örneğin, bir dize veya menü) içeren yeni bir kaynak betiği oluşturun ve .rc dosyasını kaydedin.
+
+- Üzerinde **proje** menüsünde tıklatın **varolan öğeyi Ekle**ve ardından yeni bir .rc dosyasını projeye ekleyin.
+
+- Belirtin [/NOENTRY](../build/reference/noentry-no-entry-point.md) bağlayıcı seçeneği. / NOENTRY bağlayıcı başvuru bağlamadan engeller `_main` DLL; yalnızca kaynak DLL'i oluşturmak için bu seçeneği gereklidir.
+
+- DLL oluşturun.
+
+Yalnızca kaynak DLL kullanan uygulama çağırmalıdır [LoadLibrary](../build/loadlibrary-and-afxloadlibrary.md) DLL'ye açıkça bağlanmak için. Kaynaklara erişmek için genel işlevlerini `FindResource` ve `LoadResource`, iş kaynağı herhangi bir türden veya aşağıdaki kaynağa özgü işlevleri birini çağırın:
+
+- `FormatMessage`
+
+- `LoadAccelerators`
+
+- `LoadBitmap`
+
+- `LoadCursor`
+
+- `LoadIcon`
+
+- `LoadMenu`
+
+- `LoadString`
+
+Uygulama çağırmalıdır `FreeLibrary` bunu bittiğinde kaynakları kullanarak.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kaynak Dosyalarıyla Çalışma](../windows/working-with-resource-files.md)<br/>
 [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

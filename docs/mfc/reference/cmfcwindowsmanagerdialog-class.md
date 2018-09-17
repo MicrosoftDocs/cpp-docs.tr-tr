@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b5ae46280a537577ae3e3ab0fbdf73f2e449e58
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 71c85d3061da7cf4c87abef9549542900e962f64
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042107"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707011"
 ---
 # <a name="cmfcwindowsmanagerdialog-class"></a>CMFCWindowsManagerDialog sınıfı
-`CMFCWindowsManagerDialog` MDI alt pencereleri MDI uygulamasında yönetmek bir kullanıcı nesnesi sağlar.  
+`CMFCWindowsManagerDialog` Bir MDI uygulamasında MDI alt pencereleri yönetmek bir kullanıcı nesnesi sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,15 +40,15 @@ class CMFCWindowsManagerDialog : public CDialog
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCWindowsManagerDialog::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Oluşturan bir `CMFCWindowsManagerDialog` nesnesi.|  
+|[CMFCWindowsManagerDialog::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Oluşturur bir `CMFCWindowsManagerDialog` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `CMFCWindowsManagerDialog` Uygulamada açık olan MDI alt pencereleri listesini içerir. Kullanıcı, bu iletişim kutusunu kullanarak MDI alt pencereleri durumunu el ile denetleyebilirsiniz.  
   
- `CMFCWindowsManagerDialog` içinde katıştırılmış [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md). `CMFCWindowsManagerDialog` El ile oluşturmanız gerekir bir sınıf değil. Bunun yerine, bir işlevi çağırmak [CMDIFrameWndEx::ShowWindowsDialog](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), görüntüler oluşturmak ve ve bir `CMFCWindowsManagerDialog` nesnesi.  
+ `CMFCWindowsManagerDialog` içinde katıştırılmış [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md). `CMFCWindowsManagerDialog` El ile oluşturması gereken bir sınıf değil. Bunun yerine, işlev çağrısı [CMDIFrameWndEx::ShowWindowsDialog](../../mfc/reference/cmdiframewndex-class.md#showwindowsdialog), oluşturmak ve görüntülemek ve bir `CMFCWindowsManagerDialog` nesne.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCWindowsManagerDialog` çağırarak nesne `CMDIFrameWndEx::ShowWindowsDialog`. Bu kod parçacığını parçası olan [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCWindowsManagerDialog` çağırarak `CMDIFrameWndEx::ShowWindowsDialog`. Bu kod parçacığı parçasıdır [Visual Studio gösterim örneği](../../visual-cpp-samples.md).  
   
  [!code-cpp[NVC_MFC_VisualStudioDemo#18](../../mfc/codesnippet/cpp/cmfcwindowsmanagerdialog-class_1.cpp)]  
   
@@ -67,7 +67,7 @@ class CMFCWindowsManagerDialog : public CDialog
  **Başlık:** afxWindowsManagerDialog.h  
   
 ##  <a name="cmfcwindowsmanagerdialog"></a>  CMFCWindowsManagerDialog::CMFCWindowsManagerDialog  
- Oluşturan bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) nesnesi.  
+ Oluşturur bir [CMFCWindowsManagerDialog](../../mfc/reference/cmfcwindowsmanagerdialog-class.md) nesne.  
   
 ```  
 CMFCWindowsManagerDialog(
@@ -76,14 +76,14 @@ CMFCWindowsManagerDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMDIFrame*  
- Üst veya sahibi penceresi için bir işaretçi.  
+*pMDIFrame*<br/>
+[in] Üst veya sahip penceresine bir işaretçi.  
   
- [in] *bHelpButton*  
- Framework mı gösterileceğini belirten bir Boolean parametresiyle bir **yardımcı** düğmesi.  
+*bHelpButton*<br/>
+[in] Framework görüntülenip görüntülenmeyeceğini belirten bir Boole parametresi bir **yardımcı** düğmesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Görsel yöneticileri hakkında daha fazla bilgi için bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md).  
+ Görsel Yöneticiler hakkında daha fazla bilgi için bkz: [seri hale getirme Yöneticisi](../../mfc/visualization-manager.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

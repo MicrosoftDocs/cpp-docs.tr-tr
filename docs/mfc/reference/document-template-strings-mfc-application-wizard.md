@@ -16,35 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32d684d7b9b5f8057893d79b864be7b6d9b512fc
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: a2b1e30ac1e4381cdcd80eddd7fdd4ea27bde5a4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37122202"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700576"
 ---
 # <a name="document-template-strings-mfc-application-wizard"></a>Belge Şablonu Dizeleri, MFC Uygulama Sihirbazı
-MFC Uygulama Sihirbazı'nın bu sayfasında, sağlayın veya belge yönetimi ve yerelleştirme yardımcı olması için aşağıdaki seçeneklerden daraltın. Belge şablonu dizeleri içeren uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md). İletişim kutuları için kullanılamaz. Çoğu belge şablonu dizeleri görünür ve uygulamanın kullanıcılar tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiştir **kaynak dili** belirtilen **uygulama türü** Sihirbazı sayfası.  
+Bu sayfada MFC Uygulama Sihirbazı sağlayın veya belge yönetimi ve yerelleştirme yardımcı olması için aşağıdaki seçeneklerden daraltın. Belge şablonu dizeleri içeren uygulamalar için kullanılabilir **belge/görünüm mimarisi desteği** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md). İletişim kutuları için kullanılamaz. Çoğu belge şablonu dizeleri, görünür ve uygulamanın kullanıcılar tarafından kullanılan olduğundan, bunlar içine yerelleştirilmiş olduğunu **kaynak dili** belirtilen **uygulama türü** Sihirbazı sayfası.  
   
- **Yerelleştirilmemiş dizeleri**  
- Kullanıcı belgeleri oluşturmak uygulamalar için geçerlidir. Kullanıcılar açabilir, yazdırma ve bir dosya uzantısı ile bir dosya türü kimliği sağlarsanız, belgeleri daha kolayca kaydetme Sistemi yerine kullanıcı tarafından kullanıldığı için bu öğeler yerelleştirilmiş değil.  
+- **Yerelleştirilmemiş dizeleri**
+
+   Kullanıcı belgeleri oluşturma ve uygulamaları için geçerlidir. Kullanıcılar açın, yazdırma ve bir dosya uzantısı ve dosya türü kimliği sağlarsanız belgeleri daha kolayca Kaydet Sistemi yerine kullanıcı tarafından kullanıldığı için bu öğeleri yerelleştirilmedi.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Dosya uzantısı**|Kullanıcı uygulamayı kullanırken kaydeder belgeleri ile ilişkili dosya uzantısı ayarlar. Örneğin, projenizin pencere öğesi olarak adlandırılmışsa, dosya uzantısı .wgt adlandırabilirsiniz. (Dosya uzantısı girdiğinizde, dönem eklemeyin.)<br /><br /> Bir dosya uzantısı sağlarsanız, Explorer kullanıcı bir yazıcı simgesine belge simgesi düştüğünde uygulamanızı başlatmadan uygulamanızın belgeleri yazdırabilirsiniz.<br /><br /> Uzantı belirtmezseniz, bir kullanıcının bir dosya uzantısı dosyaları kaydederken belirtmeniz gerekir. Sihirbaz, bir varsayılan dosya uzantısı sağlamaz.|  
-|**Dosya türü kimliği**|Etiket belge türü için sistem kayıt defterinde ayarlar.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Dosya uzantısı**|Kullanıcı uygulamayı kullanırken kaydeder belgeleri ile ilişkili dosya uzantısı belirler. Örneğin, projeniz pencere öğesi ise, dosya uzantısı .wgt adlandırabilirsiniz. (Dosya uzantısı girdiğinizde dönem eklemeyin.)<br /><br /> Bir dosya uzantısı sağlarsanız, Gezgini kullanıcı bir yazıcı simgesini belge simgesi düştüğünde uygulamanızı çalıştırmak zorunda kalmadan, uygulamanızın belgeleri yazdırabilirsiniz.<br /><br /> Bir uzantı belirtmezseniz, bir kullanıcı bir dosya uzantısı dosyalarını kaydederken belirtmeniz gerekir. Sihirbaz, bir varsayılan dosya uzantısı sağlamaz.|  
+   |**Dosya türü kimliği**|Etiket, belge türü için sistem kayıt defterinde ayarlar.|  
   
- **Yerelleştirilmiş dizeleri**  
- Dizeleri okuma ve dizeleri yerelleştirilmiş uygulamanın kullanıcılar tarafından kullanılan belge ve uygulama ile ilişkili üretir.  
+- **Yerelleştirilmiş dizeleri**
+
+   Okuma ve uygulamanın kullanıcı tarafından kullanılan dizelerin yerelleştirilmiş belge ve uygulama ile ilişkilendirilmiş dizeleri üretir.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Dil**|Dizeleri görüntüleneceği altındaki tüm kutuları için dili gösterir **dizeleri yerelleştirilmiş**. Bu kutudaki değer değiştirmek için uygun dili altında seçin **kaynak dili** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.|  
-|**Ana çerçeve açıklamalı alt yazı**|Ana uygulama çerçevesi üst kısmında görünen metin ayarlar. Varsayılan olarak, proje adı.|  
-|**Belge türü adı**|Bir belge uygulamasının altında gruplandırılabilir belge türünü tanımlar. Varsayılan olarak, proje adı. Varsayılan değiştirme bu iletişim kutusundaki diğer seçenekler değiştirmez.|  
-|**Filtre adı**|Dosya, dosya türü bulmak için kullanıcılarınızın belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı türde Kaydet** standart Windows seçeneklerinde **açık** ve **Farklı Kaydet** iletişim kutuları. Varsayılan, proje adı artı dosyaları tarafından ve arkasından sağlanan uzantı **dosya uzantısı**. Örneğin, projenizin pencere öğesi olarak adlandırılır ve .wgt, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wgt) varsayılan olarak açıktır.|  
-|**Dosya yeni kısa ad**|Standart Windows görünen adını ayarlar **yeni** iletişim kutusunda, yeni birden çok belge şablonu ise. Uygulamanız ise bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, proje adı.|  
-|**Dosya türü uzun adı**|Dosya türü adı Sistem kayıt defterinde ayarlar. Uygulamanız bir Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, artı proje adı. Belge.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Dil**|Dizeleri görüntülendiği altındaki tüm kutuları için dil belirten **yerelleştirilmiş dizeleri**. Bu kutudaki değeri değiştirmek için uygun dil altında seçin **kaynak dili** içinde [uygulama türü](../../mfc/reference/application-type-mfc-application-wizard.md) MFC Uygulama Sihirbazı sayfası.|  
+   |**Ana çerçeve resim yazısı**|Ana uygulama çerçevesinin üstte görüntülenecek metni ayarlar. Varsayılan olarak, proje adı.|  
+   |**Belge türü adı**|Bir belge uygulamasının altında gruplandırılabilir belge türünü tanımlar. Varsayılan olarak, proje adı. Varsayılan değiştirilmesi, bu iletişim kutusunda diğer seçenekleri değiştirmez.|  
+   |**Filtre adı**|Dosya türünüze dosyaları bulmak için kullanıcılarınızın belirtebilir adını ayarlar. Bu seçenek kullanılabilir **dosya türü** ve **farklı kaydetme türü** standart Windows seçeneklerinde **açık** ve **Kaydet** iletişim kutuları. Sağlanan uzantı varsayılan, proje adı yanı sıra dosyaları tarafından ardından **dosya uzantısı**. Örneğin, projeniz pencere öğesi olarak adlandırılır ve .wgt, dosya uzantısı ise **filtre adı** pencere öğesi dosyaları (*.wgt) varsayılan olarak açıktır.|  
+   |**Dosya yeni kısa adı**|Standart Windows içinde görünen adını ayarlar **yeni** iletişim kutusunda, yeni bir belge şablonu birden fazla ise. Uygulamanız bir [Otomasyon sunucusu](../../mfc/automation-servers.md), bu ad, Otomasyon nesnesi kısa adı olarak kullanılır. Varsayılan olarak, proje adı.|  
+   |**Dosya türü uzun adı**|Dosya türü adı, sistem kayıt defterinde ayarlar. Uygulamanız Otomasyon sunucusu ise, bu ad, Otomasyon nesnesi uzun adı olarak kullanılır. Varsayılan olarak, artı proje adı. Belge.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)

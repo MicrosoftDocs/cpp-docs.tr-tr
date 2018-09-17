@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42ae4ddf3c3b17023f3a6968e3498c178813d039
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e0cab78f1f35ab003d8457c0e185aa031a112e09
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765351"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702604"
 ---
 # <a name="service-map-macros"></a>Hizmet eşleme makroları
 
@@ -123,14 +123,14 @@ STDMETHOD(QueryService)(
 
 ### <a name="parameters"></a>Parametreler
 
-[IN] *guidService*  
-Hizmet tanımlayıcısı (SID) yönelik işaretçi.
+*guidService*<br/>
+[in] Hizmet tanımlayıcısı (SID) yönelik işaretçi.
 
-[IN] *riid*  
-Arayan erişim elde etmek için arabirim tanımlayıcısı.
+*riid*<br/>
+[in] Arayan erişim elde etmek için arabirim tanımlayıcısı.
 
-[OUT] *ppvObj*  
-Dolaylı istenen arabirim işaretçisi.
+*ppvObj*<br/>
+[out] Dolaylı istenen arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

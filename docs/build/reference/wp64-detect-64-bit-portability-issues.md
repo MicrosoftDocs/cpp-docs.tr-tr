@@ -1,5 +1,5 @@
 ---
-title: -Wp64 (64 Bit taşınabilirlik sorunlarını Algıla) | Microsoft Docs
+title: -Wp64 (64-Bit taşınabilirlik sorunlarını Algıla) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,58 +21,58 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 295f2f690cb3c9db17a410cea1f23d04e54b0054
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ac86fb6372db5aa88b4416dba07fd183f5f1df20
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379178"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700745"
 ---
 # <a name="wp64-detect-64-bit-portability-issues"></a>/Wp64 (64 Bit Taşınabilirlik Sorunlarını Algıla)
 
-Bu derleyici seçeneği kullanımdan kalkmıştır. Visual Studio 2013 önce Visual Studio sürümlerinde, bu da işaretlenir türleri üzerinde 64 bit taşınabilirlik sorunlarını algılar [__w64](../../cpp/w64.md) anahtar sözcüğü.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Wp64  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
+Bu derleyici seçeneğini kullanımdan kalkmıştır. Visual Studio 2013 önce Visual Studio sürümlerinde, 64-bit taşınabilirlik sorunlarını ile işaretlenmiş türlerinde bunu algılar [__w64](../../cpp/w64.md) anahtar sözcüğü.
 
-Varsayılan olarak, Visual Studio 2013 önce Visual Studio sürümlerinde **/Wp64** derleyici seçeneği Visual C++ derleyicinin 32-bit x86 derlemeler kapalıdır kod, üzerinde Visual C++ derleyicisi 64-bit, x64 yapılara ve kod.  
-  
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Wp64
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, önce Visual Studio 2013, Visual Studio sürümlerinde **/Wp64** derleyici seçeneği 32-bit x86 oluşturan Visual C++ derleyicisi kapalıdır kod üzerinde Visual C++ derleyicinin 64-bit, x64 yapılara ve kod.
+
 > [!IMPORTANT]
->  [/Wp64](../../build/reference/wp64-detect-64-bit-portability-issues.md) derleyici seçeneği ve [__w64](../../cpp/w64.md) anahtar sözcüğü Visual Studio 2010 ve Visual Studio 2012'de kullanım dışı bırakılmış ve Visual Studio 2013'te başlangıç desteklenmiyor. Bu anahtarı kullanan bir proje dönüştürürseniz, anahtar dönüştürme sırasında geçirilmez. Visual Studio 2010 veya Visual Studio 2012 bu seçeneği kullanmak için derleyici anahtarı altındaki yazın **ek seçenekler** içinde **komut satırı** proje özelliklerini bölümü. Kullanırsanız **/Wp64** derleyici seçeneği komut satırında derleyici komut satırı uyarısı D9002 verir. Bu seçenek ve anahtar sözcüğü 64 bit taşınabilirlik sorunlarını algılamak için kullanmak yerine, bir 64-bit platformu hedefleyen Visual C++ Derleyici kullanın ve belirtin [/W4](../../build/reference/compiler-option-warning-level.md) seçeneği. Daha fazla bilgi için bkz: [yapılandırma Visual C++ 64-bit, x64 için hedefleri](../../build/configuring-programs-for-64-bit-visual-cpp.md).  
-  
-Aşağıdaki türlerde değişkenleri bir 64-bit işletim sisteminde kullanılmakta gibi bir 32 bit işletim sisteminde test edildiğini:  
-  
--   int  
-  
--   long  
-  
--   pointer  
-  
- Düzenli olarak 64-bit, x64 derlemeler derleyici kullanarak uygulamanızı derleyin, kod, yalnızca devre dışı bırakabilirsiniz **/Wp64** , 32-bit derlemelerde çünkü 64 bit derleyici tüm sorunları algılar. Hedef Windows 64-bit işletim sistemine hakkında daha fazla bilgi için bkz: [yapılandırma Visual C++ 64-bit, x64 için hedefleri](../../build/configuring-programs-for-64-bit-visual-cpp.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu.  
-  
-     Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Değiştirme **ek seçenekler** dahil etmek için kutusunu **/Wp64**.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
+>  [/Wp64](../../build/reference/wp64-detect-64-bit-portability-issues.md) derleyici seçeneği ve [__w64](../../cpp/w64.md) anahtar sözcüğü, Visual Studio 2010 ve Visual Studio 2012'de kullanım dışı ve Visual Studio 2013 itibariyle desteklenmiyor. Bu anahtar kullanan bir proje dönüştürürseniz, anahtar dönüştürme sırasında geçirilmez. Visual Studio 2010 veya Visual Studio 2012'de bu seçeneği kullanmak için derleyici anahtarı altındaki yazın **ek seçenekler** içinde **komut satırı** Proje Özellikleri bölümünde. Kullanırsanız **/Wp64** derleyici seçeneği komut satırında derleyici komut satırı uyarısı D9002 verir. Bu seçenek ve anahtar sözcüğü 64-bit taşınabilirlik sorunlarını algılamak için kullanmak yerine 64-bit platformu hedefleyen bir Visual C++ Derleyici kullanın ve belirtin [/W4](../../build/reference/compiler-option-warning-level.md) seçeneği. Daha fazla bilgi için [yapılandırma Visual C++ 64 bit x64 için hedefleri](../../build/configuring-programs-for-64-bit-visual-cpp.md).
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
-[Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
+Bunlar bir 64-bit işletim sisteminde olarak kullanılıyorsa şu türlerinin değişkenleri bir 32-bit işletim sisteminde test edilmez:
+
+- int
+
+- long
+
+- pointer
+
+Düzenli olarak 64-bit, x64 oluşturan bir derleyici kullanarak uygulamanızı derlemek, kod, yalnızca devre dışı bırakabilirsiniz **/Wp64** , 32-bit derlemelerde çünkü 64 bit derleyici tüm sorunları algılar. Hedef bir Windows 64-bit işletim sistemi hakkında daha fazla bilgi için bkz. [yapılandırma Visual C++ 64 bit x64 için hedefleri](../../build/configuring-programs-for-64-bit-visual-cpp.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu.
+
+   Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Değiştirme **ek seçenekler** kutusuna **/Wp64**.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.Detect64BitPortabilityProblems%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [Visual C++’ı 64 bit, x64 hedefler için yapılandırma](../../build/configuring-programs-for-64-bit-visual-cpp.md)

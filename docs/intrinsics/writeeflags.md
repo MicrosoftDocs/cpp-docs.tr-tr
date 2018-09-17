@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a6f3d8f8a3527e193ed1bec0f7dc4b563593b84
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8c01e10a77278f0a02658778ec178f0a4226eb36
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464681"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704866"
 ---
 # <a name="writeeflags"></a>__writeeflags
 Belirtilen değer programın Yazar durumu ve denetim (EFLAGS) kaydedin.  
@@ -37,7 +37,7 @@ void __writeeflags(unsigned __int64 Value);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Value`|EFLAGS kasaya yazılacak değer. `Value` Parametresi 32 bit bir 32-bit platformu için uzun ve 64 bit, 64-bit platformu için uzun.|  
+|*Değer*|[in] EFLAGS kasaya yazılacak değer. `Value` Parametresi 32 bit bir 32-bit platformu için uzun ve 64 bit, 64-bit platformu için uzun.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  

@@ -84,12 +84,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e9932f8814855213f133323f2102e0cacf1e69c8
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a55623c28ca7114f43f208e5c660b9df38d1242b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196717"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701839"
 ---
 # <a name="cbutton-class"></a>CButton sınıfı
 Windows düğme denetimleri işlevlerini sağlar.  
@@ -394,8 +394,8 @@ BOOL GetNote(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *lpszNote*|İşaretçi bir arabellek ayırma ve serbest bırakılıyor çağıran sorumludur. Dönüş değeri TRUE ise, geçerli komut bağlantı denetimle ilişkili not metni arabellek içerir. Aksi takdirde, arabellek değiştirilmez.|  
-|[out içinde] *cchNote*|Bir işaretsiz tamsayı değişkeni için bir işaretçi.<br /><br /> Bu yöntem çağrıldığında, değişkeni tarafından belirtilen arabellek boyutu içeren *lpszNote* parametresi.<br /><br /> Ne zaman dönüş değeri TRUE değişkeni ise bu yöntemi döndürür, geçerli komut bağlantı denetimle ilişkili Not boyutunu içerir. Dönüş değeri FALSE ise, değişken Not içerecek şekilde gerekli arabellek boyutunu içerir.|  
+|*lpszNote*|[out] İşaretçi bir arabellek ayırma ve serbest bırakılıyor çağıran sorumludur. Dönüş değeri TRUE ise, geçerli komut bağlantı denetimle ilişkili not metni arabellek içerir. Aksi takdirde, arabellek değiştirilmez.|  
+|*cchNote*|[out içinde] Bir işaretsiz tamsayı değişkeni için bir işaretçi.<br /><br /> Bu yöntem çağrıldığında, değişkeni tarafından belirtilen arabellek boyutu içeren *lpszNote* parametresi.<br /><br /> Ne zaman dönüş değeri TRUE değişkeni ise bu yöntemi döndürür, geçerli komut bağlantı denetimle ilişkili Not boyutunu içerir. Dönüş değeri FALSE ise, değişken Not içerecek şekilde gerekli arabellek boyutunu içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk aşırı yükleme içinde bir [CString](../../atl-mfc-shared/using-cstring.md) geçerli komut bağlantı denetimle ilişkili not metni içeren nesne.  
@@ -467,7 +467,7 @@ BOOL GetSplitInfo(PBUTTON_SPLITINFO pInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı geçerli Bölünmüş düğme denetimi ile ilgili bilgileri alır. Yapı ayırma için çağıran sorumludur.|  
+|*pInfo*|[out] İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı geçerli Bölünmüş düğme denetimi ile ilgili bilgileri alır. Yapı ayırma için çağıran sorumludur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -488,7 +488,7 @@ BOOL GetSplitSize(LPSIZE pSize) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pSize*|İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı bir dikdörtgen açıklamasını alır.|  
+|*pSize*|[out] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı bir dikdörtgen açıklamasını alır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -687,7 +687,7 @@ BOOL SetDropDownState(BOOL fDropDown);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *fDropDown*|BST_DROPDOWNPUSHED durumu ayarlamak için TRUE; Aksi takdirde FALSE.|  
+|*fDropDown*|[in] BST_DROPDOWNPUSHED durumu ayarlamak için TRUE; Aksi takdirde FALSE.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -718,7 +718,7 @@ BOOL SetElevationRequired(BOOL fElevationRequired);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *fElevationRequired*|Kümesi true `elevation required` durum; Aksi takdirde FALSE.|  
+|*fElevationRequired*|[in] Kümesi true `elevation required` durum; Aksi takdirde FALSE.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -790,7 +790,7 @@ BOOL SetNote(LPCTSTR lpszNote);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *lpszNote*|Komut bağlantı denetimi için Not metni olarak ayarlanmış bir Unicode dize işaretçisi.|  
+|*lpszNote*|[in] Komut bağlantı denetimi için Not metni olarak ayarlanmış bir Unicode dize işaretçisi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -821,7 +821,7 @@ BOOL SetSplitGlyph(TCHAR chGlyph);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *chGlyph*|Bölünmüş düğme açılan liste okunu kullanılacak karakter belirten bir karakter.|  
+|*chGlyph*|[in] Bölünmüş düğme açılan liste okunu kullanılacak karakter belirten bir karakter.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -844,7 +844,7 @@ BOOL SetSplitImageList(CImageList* pSplitImageList);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pSplitImageList*|İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) geçerli Bölünmüş düğme denetimi atamak için nesne.|  
+|*pSplitImageList*|[in] İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) geçerli Bölünmüş düğme denetimi atamak için nesne.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -865,7 +865,7 @@ BOOL SetSplitInfo(PBUTTON_SPLITINFO pInfo);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pInfo*|İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) geçerli Bölünmüş düğme denetimi tanımlayan yapısını.|  
+|*pInfo*|[in] İşaretçi bir [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) geçerli Bölünmüş düğme denetimi tanımlayan yapısını.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -896,7 +896,7 @@ BOOL SetSplitSize(LPSIZE pSize);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pSize*|İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) sınırlayıcı bir dikdörtgen açıklayan yapısı.|  
+|*pSize*|[in] İşaretçi bir [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) sınırlayıcı bir dikdörtgen açıklayan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -929,7 +929,7 @@ BOOL SetSplitStyle(UINT uSplitStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *uSplitStyle*|Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı.|  
+|*uSplitStyle*|[in] Bölünmüş düğme stilleri Bitsel bir birleşimi. Daha fazla bilgi için `uSplitStyle` üyesi [BUTTON_SPLITINFO](/windows/desktop/api/commctrl/ns-commctrl-tagbutton_splitinfo) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

@@ -1,5 +1,5 @@
 ---
-title: Kayan nokta sayıları duyarlık kaybedebileceği neden | Microsoft Docs
+title: Kayan noktalı sayıların duyarlık kaybedebileceği neden | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,59 +16,62 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb673f087d98f6c7acdd1e98b5649cc84a48d277
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: de54610676ade49f7ce41e00ed0049b20e46709c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376143"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700027"
 ---
 # <a name="why-floating-point-numbers-may-lose-precision"></a>Kayan Noktalı Sayıların Neden Duyarlık Kaybedebileceği
-Kayan noktalı ondalık değer tam bir ikili temsili genellikle gerekmez. Bir yan etkisi, CPU kayan nokta verisi nasıl temsil ettiğini budur. Bu nedenle, bazı duyarlık kaybına karşılaşabilirsiniz ve bazı kayan nokta işlemleri beklenmeyen sonuçlara neden olabilir.  
-  
- Bu davranış aşağıdakilerden birini sonucudur:  
-  
--   Ondalık sayı ikili gösterimidir kesin olmayabilir.  
-  
--   Kullanılan sayılar arasında (örneğin, karıştırma float ve double) tür uyuşmazlığı var.  
-  
- Davranışı çözümlemek için çoğu programcıları ya da değer büyüktür veya daha düşük gerekli olduğundan emin olun veya alın ve duyarlık tutacağı bir ikili kodlanmış ondalık (BCD) kitaplığını kullanın.  
-  
- Kayan nokta değerlerine ikili gösterimidir duyarlık ve kayan nokta hesaplamaları doğruluğunu etkiler. Microsoft Visual C++ kullanan [IEEE kayan nokta biçimi](../../build/reference/ieee-floating-point-representation.md).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// Floating-point_number_precision.c  
-// Compile options needed: none. Value of c is printed with a decimal   
-// point precision of 10 and 6 (printf rounded value by default) to   
-// show the difference  
-#include <stdio.h>  
-  
-#define EPSILON 0.0001   // Define your own tolerance  
-#define FLOAT_EQ(x,v) (((v - EPSILON) < x) && (x <( v + EPSILON)))  
-  
-int main() {  
-   float a, b, c;  
-  
-   a = 1.345f;  
-   b = 1.123f;  
-   c = a + b;  
-   // if (FLOAT_EQ(c, 2.468)) // Remove comment for correct result  
-   if (c == 2.468)            // Comment this line for correct result  
-      printf_s("They are equal.\n");  
-   else  
-      printf_s("They are not equal! The value of c is %13.10f "  
-                "or %f",c,c);  
-}  
-```  
-  
-```Output  
-They are not equal! The value of c is  2.4679999352 or 2.468000  
-```  
-  
-## <a name="comments"></a>Açıklamalar  
- EPSILON için float 1.192092896e olarak için tanımlanan flt_epsılon sabitleri kullanabilirsiniz-07F, ya da çift 2.2204460492503131e olarak için tanımlanan dbl_epsılon-016. Bu sabitleri float.h eklemeniz gerekir. Bu sabit değerler tanımlanmadı en küçük pozitif sayı x, bu tür bu x + 1.0 1.0 eşit değil. Bu çok küçük bir sayı olduğundan, kullanıcı tanımlı dayanıklılık çok büyük sayılar içeren hesaplamalar için içermelidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)
+
+Ondalık kayan nokta değerlerine tam bir ikili gösterim genellikle gerekmez. Bir yan etkisi, CPU kayan nokta verisi nasıl temsil ettiğini budur. Bu nedenle, karşılaşabileceğiniz bazı kesinlik kaybı ve bazı kayan nokta işlemleri beklenmeyen sonuçlara neden olabilir.
+
+Bu davranış aşağıdakilerden birini sonucudur:
+
+- Ondalık sayı ikili gösterimini tam olmayabilir.
+
+- Kullanılan sayılar arasında (örneğin, karıştırma float ve çift) tür uyuşmazlığı var.
+
+Davranışını çözümlemek için çoğu programcılar ya da değer büyükse veya daha düşük gerekli olduğundan emin olun veya alın ve duyarlık tutacaktır bir ikili kodlanmış ondalık (BCD) kitaplığını kullanın.
+
+Kayan nokta değerleri ikili gösterimini duyarlılık ve kayan nokta hesaplamalarının doğruluğunu etkiler. Microsoft Visual C++ kullanan [IEEE kayan nokta biçimi](../../build/reference/ieee-floating-point-representation.md).
+
+## <a name="example"></a>Örnek
+
+```
+// Floating-point_number_precision.c
+// Compile options needed: none. Value of c is printed with a decimal
+// point precision of 10 and 6 (printf rounded value by default) to
+// show the difference
+#include <stdio.h>
+
+#define EPSILON 0.0001   // Define your own tolerance
+#define FLOAT_EQ(x,v) (((v - EPSILON) < x) && (x <( v + EPSILON)))
+
+int main() {
+   float a, b, c;
+
+   a = 1.345f;
+   b = 1.123f;
+   c = a + b;
+   // if (FLOAT_EQ(c, 2.468)) // Remove comment for correct result
+   if (c == 2.468)            // Comment this line for correct result
+      printf_s("They are equal.\n");
+   else
+      printf_s("They are not equal! The value of c is %13.10f "
+                "or %f",c,c);
+}
+```
+
+```Output
+They are not equal! The value of c is  2.4679999352 or 2.468000
+```
+
+## <a name="comments"></a>Açıklamalar
+
+EPSILON için kayan 1.192092896e olarak tanımlanan flt_epsılon sabitleri kullanın-07F, ya da çift 2.2204460492503131e olarak için tanımlanan dbl_epsılon-016. Bu sabitleri için float.h eklemeniz gerekir. Bu sabitler tanımlanan en küçük pozitif x sayı, söz konusu x + 1.0 1.0 eşit değil. Bu çok az sayıda olduğundan çok büyük sayılar içeren hesaplamalar için kullanıcı tanımlı dayanıklılık içermelidir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)

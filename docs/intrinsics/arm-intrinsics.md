@@ -1941,12 +1941,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 030ac6bb2e6fb7acd9745d4fa818e89d29ee1832
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 1a504df1dfb2826b5056b5feb5b13ac3555515ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208981"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712809"
 ---
 # <a name="arm-intrinsics"></a>ARM İç Bilgileri
 Visual C++ derleyici aşağıdaki yapı içlerini ARM mimarisine kullanılabilir hale getirir. ARM hakkında daha fazla bilgi için bkz: [ARM mimarisi başvuru kılavuzlarına](http://go.microsoft.com/fwlink/p/?LinkId=522049) ve [ARM Assembler araçları Kılavuzu](http://go.microsoft.com/fwlink/p/?LinkId=246102) ARM Bilgi Merkezi Web sitesinde.  
@@ -2165,8 +2165,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
  `Location`  
  Bir bellek konumunu okuma veya yazma adresi.  
   
- `Value` (yalnızca iç depolama)  
- Belirtilen bellek konumuna yazılacak değer.  
+ `Value`  
+ (Yalnızca depolama ön tanımlı) belirtilen bellek konumuna yazılacak değer.  
   
  **Dönüş değeri (yalnızca yük iç)**  
   
@@ -2176,9 +2176,8 @@ void __iso_volatile_store8(volatile __int8 * Location, __int8 Value)
   
  Kullanabileceğiniz `__iso_volatile_load8/16/32/64` ve `__iso_volatile_store8/16/32/64` iç derleyici iyileştirmelerini tabi olmayan bellek erişimi açıkça gerçekleştirilecek. Derleyici, synthetize, kaldıramıyor veya bu işlemlerin göreli sırasını değiştirme, ancak örtük donanım belleği engelleri oluşturmaz. Bu nedenle, donanım gözlemlenebilir bellek erişimlerinin birden çok iş parçacığı arasında yeniden yine de. Bu iç daha kesin altında derlenmiş olarak aşağıdaki ifadeleri için eşdeğer **/volatile:iso**.  
   
-```  
-  
-      int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
+```cpp
+int a = __iso_volatile_load32(p);    // equivalent to: int a = *(const volatile __int32*)p;   
 __iso_volatile_store32(p, a);        // equivalent to: *(volatile __int32*)p = a;  
 ```  
   

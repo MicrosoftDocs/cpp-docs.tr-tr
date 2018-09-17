@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c8dc98e679de6255ae5762777fd51cbe3554a32
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8ec83d862c119645582a552b7685e5ca364be6f9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464772"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709150"
 ---
 # <a name="rotl8-rotl16"></a>_rotl8, _rotl16
 **Microsoft'a özgü**  
@@ -44,11 +44,11 @@ unsigned short _rotl16(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `value`  
- Döndürülecek değer.  
+*value*<br/>
+[in] Döndürülecek değer.  
   
- [in] `shift`  
- Döndürmek için bit sayısı.  
+*Kaydırma*<br/>
+[in] Döndürmek için bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Döndürülen değer.  

@@ -12,24 +12,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cd72de4922c297b4a230e0dc0fb606b56a2a473
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7f01e65adfb42a5fb3361e75ce34060f7dc1b9f9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366919"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709678"
 ---
 # <a name="conflicts-with-the-x86-compiler"></a>x86 Derleyicisi ile Çakışma
-X86 kullandığınızda 4 bayt yığında otomatik olarak hizalanmaz büyük veri türleri bir uygulama derlemek için derleyicisi. Çünkü derleyici olan bir 4 bayt hizalı yığını, 4 bayttan 64-bit tamsayı, büyük bir şey yapamazsınız otomatik olarak hizalı bir 8 bayt adresine x86 mimarisi.  
-  
- Hizalanmamış verilerle iki etkilere sahiptir.  
-  
--   Hizalanmamış konumlara erişim hizalanmış konumlarına erişmek için gereken daha uzun sürebilir.  
-  
--   Hizalanmamış konumlar birbirine kenetlenmiş işlemler içinde kullanılamaz.  
-  
- Daha sıkı hizalama gerekiyorsa kullanın `__declspec(align(N)) on your variable declarations`. Bu, dinamik olarak belirtimleri karşılamak için yığın hizalamak derleyici neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlayarak, uygulamanızın yavaş yürütülmesine neden olabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Türler ve depolama](../build/types-and-storage.md)   
- [align](../cpp/align-cpp.md)
+
+X86 kullandığınızda 4 bayt yığın üzerinde otomatik olarak hizalanmaz daha büyük olan veri türleri bir uygulama derlemek için derleyici. Çünkü derleyicisidir bir 4 bayt hizalı yığını, örneğin, bir 64-bit tamsayı olan 4 bayt daha büyük bir şey olamaz otomatik olarak hizalanmayacak 8 baytlık adresin x86 mimarisi.
+
+Hizalanmamış veri ile çalışma, iki olası etkilere sahiptir.
+
+- Hizalanmış konumlara erişmek için gereken daha Hizalanmamış konumlara erişmek için daha uzun sürebilir.
+
+- Hizalanmamış konumları birbirine kenetlenmiş işlemler içinde kullanılamaz.
+
+Daha fazla katı hizalama gerektiren kullanırsanız `__declspec(align(N)) on your variable declarations`. Bu, derleyicinin yığın belirtimleri karşılamak için dinamik olarak hizalamak neden olur. Ancak, yığın çalışma zamanında dinamik olarak ayarlama, uygulamanızın daha yavaş yürütme neden olabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Türler ve Depolama](../build/types-and-storage.md)<br/>
+[align](../cpp/align-cpp.md)

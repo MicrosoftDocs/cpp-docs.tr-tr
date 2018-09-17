@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f62346d12c978a466de14357352f78345e99f1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bc03777a490613cb3da111e4a3b678311f09f678
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691114"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706543"
 ---
 # <a name="cmfcoutlookbarpane-class"></a>CMFCOutlookBarPane sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -184,32 +184,32 @@ BOOL AddButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiImage*  
- Bir bit eşlemi kaynak tanımlayıcısını belirtir.  
+*uiImage*<br/>
+[in] Bir bit eşlemi kaynak tanımlayıcısını belirtir.  
   
- [in] *lpszLabel*  
- Düğmenin metni belirtir.  
+*lpszLabel*<br/>
+[in] Düğmenin metni belirtir.  
   
- [in] *iIdCommand*  
- Düğme denetiminin kimliğini belirtir.  
+*iIdCommand*<br/>
+[in] Düğme denetiminin kimliğini belirtir.  
   
- [in] *iInsertAt*  
- Outlook çubuğu sayfasında, düğme eklemek sıfır tabanlı dizinini belirtir.  
+*iInsertAt*<br/>
+[in] Outlook çubuğu sayfasında, düğme eklemek sıfır tabanlı dizinini belirtir.  
   
- [in] *uiLabel*  
- Bir dize kaynak kimliği  
+*uiLabel*<br/>
+[in] Bir dize kaynak kimliği  
   
- [in] *szBmpFileName*  
- Yüklemek için disk görüntü dosyasının adını belirtir.  
+*szBmpFileName*<br/>
+[in] Yüklemek için disk görüntü dosyasının adını belirtir.  
   
- [in] *szLabel*  
- Düğmenin metni belirtir.  
+*szLabel*<br/>
+[in] Düğmenin metni belirtir.  
   
- [in] *hBmp*  
- Bir düğmenin bit eşlem işleyici.  
+*hBmp*<br/>
+[in] Bir düğmenin bit eşlem işleyici.  
   
- [in] *hIcon*  
- Bir düğme simge tanıtıcı.  
+*hIcon*<br/>
+[in] Bir düğme simge tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir düğme başarıyla eklenmişse TRUE; Aksi durumda FALSE.  
@@ -254,17 +254,17 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- Outlook Çubuğu bölmesi denetiminin üst penceresine belirtir. NULL olmamalıdır.  
+*pParentWnd*<br/>
+[in] Outlook Çubuğu bölmesi denetiminin üst penceresine belirtir. NULL olmamalıdır.  
   
- [in] *dwStyle*  
- Pencere stili.  Pencere stilleri bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] Pencere stili.  Pencere stilleri bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *uiID*  
- Denetim kimliği. Etkinleştirmek için benzersiz olması gerekir denetimin durumunu kaydetme.  
+*uiID*<br/>
+[in] Denetim kimliği. Etkinleştirmek için benzersiz olması gerekir denetimin durumunu kaydetme.  
   
- [in] *dwControlBarStyle*  
- Outlook Çubuğu'ndan ayrıldığında, Outlook Çubuğu bölmesi denetimi davranışını tanımlayan özel stilleri belirtir.  
+*dwControlBarStyle*<br/>
+[in] Outlook Çubuğu'ndan ayrıldığında, Outlook Çubuğu bölmesi denetimi davranışını tanımlayan özel stilleri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -284,11 +284,11 @@ virtual BOOL EnableContextMenuItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- Bir kullanıcının bir araç çubuğu düğmesi için bir işaretçi.  
+*pButton*<br/>
+[in] Bir kullanıcının bir araç çubuğu düğmesi için bir işaretçi.  
   
- [in] *pPopup*  
- Kısayol menüsüne bir işaretçi.  
+*pPopup*<br/>
+[in] Kısayol menüsüne bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kısayol menüsünde görüntülenen TRUE döndürür; Aksi durumda FALSE.  
@@ -309,8 +309,8 @@ void EnablePageScrollMode(BOOL bPageScroll=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bPageScroll*  
- TRUE ise, sayfa kaydırma modu etkinleştirin. FALSE ise, sayfa kaydırma modu devre dışı bırakın.  
+*bPageScroll*<br/>
+[in] TRUE ise, sayfa kaydırma modu etkinleştirin. FALSE ise, sayfa kaydırma modu devre dışı bırakın.  
   
 ##  <a name="getregularcolor"></a>  CMFCOutlookBarPane::GetRegularColor  
  Normal döndürür (diğer bir deyişle, seçili olmayan) Outlook Çubuğu bölmesi metin rengi.  
@@ -365,8 +365,8 @@ BOOL RemoveButton(UINT iIdCommand);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iIdCommand*  
- Kaldırmak için bir düğme komut Kimliğini belirtir.  
+*iIdCommand*<br/>
+[in] Kaldırmak için bir düğme komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğme başarıyla kaldırıldıysa TRUE; Belirtilen komut kimliği geçerli değilse FALSE.  
@@ -379,8 +379,8 @@ void SetBackColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Yeni arka plan rengini belirtir.  
+*Renk*<br/>
+[in] Yeni arka plan rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Outlook Çubuğu geçerli arka plan rengini ayarlamak için bu işlevi çağırın. Arka plan rengi, yalnızca arka plan görüntü olduğunda kullanılır.  
@@ -393,8 +393,8 @@ void SetBackImage(UINT uiImageID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiImageID*  
- Görüntü kaynak kimliğini belirtir.  
+*uiImageID*<br/>
+[in] Görüntü kaynak kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Outlook ayarlamak için bu yöntemi çağırın çubuğunun arka plan resmi. Arka plan görüntüleri listesi yönetilen katıştırılmış tarafından [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesne.  
@@ -426,11 +426,11 @@ void SetTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clrRegText*  
- Yeni seçili olmayan metin rengini belirtir.  
+*clrRegText*<br/>
+[in] Yeni seçili olmayan metin rengini belirtir.  
   
- [in] *clrSelText*  
- Seçili metin için yeni rengini belirtir.  
+*clrSelText*<br/>
+[in] Seçili metin için yeni rengini belirtir.  
   
 ##  <a name="settransparentcolor"></a>  CMFCOutlookBarPane::SetTransparentColor  
  Outlook Çubuğu bölmesi saydam rengini belirler.  

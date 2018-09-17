@@ -18,17 +18,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67dbc6ae3ad331ab3297b62d00044c3edf679994
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 56c0c0c93163759b604352a6e623f15726b8e7ec
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368414"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715838"
 ---
 # <a name="pseudotargets"></a>Sözde Hedefler
-Bir pseudotarget bir bağımlılık satırda bir dosya adı yerine kullanılan bir etiketi belirtin. Yok ve bu nedenle güncel olan bir dosya olarak yorumlanır. NMAKE pseudotarget ait zaman damgası tüm bağımlıları en son olduğunu varsayar. Hiçbir bağımlıları varsa, geçerli saati varsayılır. Bir pseudotarget hedef olarak kullanılıyorsa, kendi komutları her zaman yürütülür. Bağımlı kullanılan bir pseudotarget de başka bir bağımlılık olarak hedefi olarak yer almalıdır. Ancak, bu bağımlılık komutları blok olması gerekmez.  
-  
- Pseudotarget adları hedefler için dosya adı sözdizimi kurallarına. Ancak, bir uzantı adı yoksa (yani, bir nokta içermeyen), dosya adları için 8 karakterlik sınırı aşabilir ve en fazla 256 karakterden uzun olamaz.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefler](../build/targets.md)
+
+Bir pseudotarget bir bağımlılık satırda bir dosya adı yerine kullanılan bir etikettir. Bu yok ve bu nedenle, güncel olmayan bir dosya yorumlanır. NMAKE pseudotarget'ın zaman damgası tüm etkilenenleri en son olduğunu varsayar. Hiçbir bağımlıları varsa, geçerli zamanı varsayılır. Hedef olarak bir pseudotarget kullandıysanız, kendi komutları her zaman yürütülür. Bir bağlı kullanılan bir pseudotarget de bir hedef olarak başka bir bağımlılık olarak yer almalıdır. Ancak, bu bağımlılık komutları blok olması gerekmez.
+
+Pseudotarget adları hedefler için dosya adı sözdizimi kurallarını izleyin. Ancak, bir uzantı adı yoksa (yani, bir nokta içermeyen), dosya adları için 8 karakter sınırı aşabilir ve en fazla 256 karakter uzunluğunda olabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hedefler](../build/targets.md)

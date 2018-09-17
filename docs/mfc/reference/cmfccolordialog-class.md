@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a1d5c2d7bb2da2ba293ac29a59948f80c1bed59
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3cf85ec6de81ca18f32b8cd6bea015341f78287c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680616"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715370"
 ---
 # <a name="cmfccolordialog-class"></a>CMFCColorDialog sınıfı
 `CMFCColorDialog` Sınıfı, bir renk seçimi iletişim kutusunu gösterir.  
@@ -125,17 +125,17 @@ CMFCColorDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *clrInit*  
- Varsayılan renk seçimi. Değer belirtilmezse, varsayılan RGB(0,0,0) (siyah) olur.  
+*clrInit*<br/>
+[in] Varsayılan renk seçimi. Değer belirtilmezse, varsayılan RGB(0,0,0) (siyah) olur.  
   
- [in] *CertOpenStore*  
- (Ayrılmış)  
+*CertOpenStore*<br/>
+[in] Ayrılmış.
   
- [in] *pParentWnd*  
- İletişim kutusunun üst veya sahip penceresine bir işaretçi.  
+*pParentWnd*<br/>
+[in] İletişim kutusunun üst veya sahip penceresine bir işaretçi.  
   
- [in] *hPal*  
- Renk paleti işleyici.  
+*hPal*<br/>
+[in] Renk paleti işleyici.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -182,8 +182,8 @@ void SetCurrentColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rgb*  
- Bir RGB renk değeri  
+*RGB*<br/>
+[in] Bir RGB renk değeri  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -195,8 +195,8 @@ void SetNewColor(COLORREF rgb);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rgb*  
- A [COLORREF](/windows/desktop/gdi/colorref) bir RGB rengi belirtir.  
+*RGB*<br/>
+[in] A [COLORREF](/windows/desktop/gdi/colorref) bir RGB rengi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -211,14 +211,14 @@ void SetPageOne(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *R*  
- Kırmızı bileşeni RGB değeri belirtir.  
+*R*<br/>
+[in] Kırmızı bileşeni RGB değeri belirtir.  
   
- [in] *G*  
- Yeşil bileşeni RGB değeri belirtir.  
+*G*<br/>
+[in] Yeşil bileşeni RGB değeri belirtir.  
   
- [in] *B*  
- Mavi bileşeni RGB değeri belirtir.  
+*B*<br/>
+[in] Mavi bileşeni RGB değeri belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -233,14 +233,14 @@ void SetPageTwo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *R*  
- RGB değeri kırmızı bir bileşeni belirtir.  
+*R*<br/>
+[in] RGB değeri kırmızı bir bileşeni belirtir.  
   
- [in] *G*  
- Bir RGB değeri yeşil bir bileşeni belirtir.  
+*G*<br/>
+[in] Bir RGB değeri yeşil bir bileşeni belirtir.  
   
- [in] *B*  
- Bir RGB değeri mavi bir bileşeni belirtir.  
+*B*<br/>
+[in] Bir RGB değeri mavi bir bileşeni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

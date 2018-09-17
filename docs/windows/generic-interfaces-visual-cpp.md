@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9d3e54f13f6b165288402bbb1d783a2f1979f4ac
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: abad906c7fcc5c86a6901757ddfbb5dfeff2ec29
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607705"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704906"
 ---
 # <a name="generic-interfaces-visual-c"></a>Genel Arabirimler (Visual C++)
 
@@ -42,8 +42,8 @@ Arabirimleri hakkında daha fazla bilgi için bkz. [arabirim sınıfı](../windo
 
 ## <a name="remarks"></a>Açıklamalar
 
-*öznitelikleri* (isteğe bağlı)  
-Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
+*Öznitelikleri*  
+(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikler ve öznitelik sınıfları hakkında daha fazla bilgi için bkz. **öznitelikleri**.
 
 *sınıf anahtarı*  
 **sınıf** veya **typename**
@@ -54,20 +54,20 @@ Tanımlayıcıları virgülle ayrılmış listesi.
 *tür parametresi kısıtlamaları tümceleri*  
 Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*erişilebilirlik değiştiricileri* (isteğe bağlı)  
-Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).
+*erişilebilirlik değiştiricileri*  
+(İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel ve özel**).
 
 *tanımlayıcı*  
 Arabirim adı.
 
-*temel-liste* (isteğe bağlı)  
-Virgülle ayırarak bir veya daha fazla açık temel arabirimlerini içeren liste.
+*temel-liste*  
+(İsteğe bağlı) Virgülle ayırarak bir veya daha fazla açık temel arabirimlerini içeren liste.
 
 *Arabirim-gövdesi*  
 Arabirim üyelerinin bildirimleri.
 
-*Bildirimciler* (isteğe bağlı)  
-Bu türe dayanan değişkenlerin bildirimleri.
+*Bildirimciler*  
+(İsteğe bağlı) Bu türe dayanan değişkenlerin bildirimleri.
 
 ## <a name="example"></a>Örnek
 

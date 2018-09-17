@@ -1,5 +1,5 @@
 ---
-title: Dosya adı parçaları sözdizimi | Microsoft Docs
+title: Filename-Parts söz dizimi | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,37 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d807087be171a2ad63ed37a8b359c3200c812040
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5bf7a9685face739059c4b947a5796cc0a28950a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367491"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703176"
 ---
 # <a name="filename-parts-syntax"></a>Dosya Adı Parçaları Sözdizimi
-Dosya adı parçaları sözdizimi komutlarda bileşenlerini (olabilen bir kapsanan bağımlı) ilk bağımlı dosya adını temsil eder. Disk üzerinde mevcut değil gibi Filename dosyanın sürücü, yol, temel adı ve uzantısı, belirtildiği bileşenleridir. Kullanım **%s** tam dosya adını temsil etmek için. Kullanım **%&#124;**[*bölümleri*]**F** (dikey çubuk karakteri izleyen yüzde simgesi) dosya bölümlerini temsil etmek için burada *bölümleri*sıfır veya daha fazla aşağıdaki harfler, herhangi bir sırada olabilir.  
-  
-|Harfi|Açıklama|  
-|------------|-----------------|  
-|Harfi yok|Tam adı (aynı **%s**)|  
-|**d**|Sürücü|  
-|**p**|Yol|  
-|**f**|Temel dosya adı|  
-|**e**|Dosya uzantısı|  
-  
- Örneğin, dosya adı c:\prog.exe ise:  
-  
--   %s c:\prog.exe olur  
-  
--   %&#124;F c:\prog.exe olacaktır  
-  
--   %&#124;dF c olacaktır  
-  
--   %&#124;pF c:\ olacaktır  
-  
--   %&#124;fF prog olacaktır  
-  
--   %&#124;eF exe olacaktır  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)
+
+Filename-parts söz dizimi komutlarda adının (aynı örtük bir bağımlı olabilir) ilk bağımlı bileşenlerini temsil eder. Diskte yok olarak dosyanın sürücü, yol, temel adı ve uzantısı olarak belirtilen, Filename bileşenleri şunlardır. Kullanım **%s** tam dosya adını göstermek için. Kullanım **%&#124;**[*bölümleri*]**F** (dikey çubuk karakterini izleyen yüzde simgesi) filename parçalarını temsil etmek için burada *bölümleri*sıfır veya daha fazla aşağıdaki harfler, herhangi bir sırada olabilir.
+
+|Harfi|Açıklama|
+|------------|-----------------|
+|Hiçbir harf|Tam adı (aynı **%s**)|
+|**d**|Sürücü|
+|**p**|Yol|
+|**f**|Dosyası taban adı|
+|**e**|Dosya uzantısı|
+
+Örneğin, dosya adı c:\prog.exe ise:
+
+- %s c:\prog.exe olacaktır
+
+- %&#124;F c:\prog.exe olacaktır
+
+- %&#124;dF c olacaktır
+
+- %&#124;pF c:\ olacaktır
+
+- %&#124;fF prog olacaktır
+
+- %&#124;eF exe olacaktır
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)

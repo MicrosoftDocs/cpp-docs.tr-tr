@@ -15,16 +15,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ded5b692d7c51e5a46a325a69ad6969083025ff5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ed12828d9170aac576a97c63b9988bb4b303ef58
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378931"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711925"
 ---
 # <a name="pgosweep"></a>pgosweep
 
-Profil temelli iyileştirme tüm profil verilerini çalışan bir programı .pgc dosyaya yazmak için kullanılır.
+Profil temelli iyileştirme, tüm profil verilerini çalışan bir programı .pgc dosyaya yazmak için kullanılır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -32,35 +32,35 @@ Profil temelli iyileştirme tüm profil verilerini çalışan bir programı .pgc
 
 ### <a name="parameters"></a>Parametreler
 
-*Seçenekler* (isteğe bağlı)<br/>
-İçin geçerli değerleri *seçenekleri* şunlardır:
+*Seçenekler*<br/>
+(İsteğe bağlı) İçin geçerli değerleri *seçenekleri* şunlardır:
 
-- **/?** veya **/Yardım** Yardım iletisi görüntüler.
+- **/?** veya **/help** yardım iletisini görüntüler.
 
-- **/noreset** çalışma zamanı veri yapılarını sayıma korur.
+- **noreset** çalışma zamanı veri yapıları sayı korur.
 
 *Görüntü*<br/>
-Kullanılarak oluşturulmuş bir .exe veya .dll dosyasının tam yolu [/GENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), [/FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), veya [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneği.
+Kullanılarak oluşturulan bir .exe veya .dll dosyasının tam yolu [/genprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), [fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md), veya [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneği.
 
 *pgcfile*<br/>
-Burada bu komutu sayımları verileri yazar .pgc dosyası.
+Bu komut verileri sayıları nereye yazdığını .pgc dosyası.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**Pgosweep** komutu çalışır kullanılarak oluşturulmuş programları [/GENPROFILE veya /FASTGENPROFILE](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) seçeneği veya kullanım dışı [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneği. Çalışan bir program keser ve profil verileri yeni bir .pgc dosyaya yazar. Varsayılan olarak, komutu sayımları sonra her yazma işlemi sıfırlar. Belirtirseniz **/noreset** seçeneğini komutu kayıt değerlerine ancak bunları çalışan programa sıfırlama. Profil verileri daha sonra alırsanız bu seçenek, yinelenen verileri sağlar.
+**Pgosweep** komutu kullanılarak oluşturulan programlar çalışır [/genprofıle veya fastgenprofıle](genprofile-fastgenprofile-generate-profiling-instrumented-build.md) seçeneği veya kullanım dışı [/LTCG:PGINSTRUMENT](ltcg-link-time-code-generation.md) seçeneği. Bu, çalışan bir program keser ve yeni bir .pgc dosyası için profil verileri yazar. Varsayılan olarak, komut sonra her yazma işlemi sayısını sıfırlar. Belirtirseniz **noreset** seçeneği, komut değerleri kaydedin ancak bunları sıfırlamak çalışan programa değil. Bu seçenek daha sonra profil verilerini alma, yinelenen verileri sağlar.
 
-Alternatif kullanımınız için **pgosweep** yalnızca uygulamanın normal işlem için profil bilgilerini almak için. Örneğin, çalıştırabilirsiniz **pgosweep** kısa bir süre sonra uygulamayı başlatmak ve bu dosyayı atmak sonra. Bu başlangıç maliyetleri ile ilişkili profil verilerini kaldırabilirsiniz. Daha sonra çalıştırabilirsiniz **pgosweep** uygulama sonlandırmadan önce. Artık toplanan veriler, kullanıcının programla destekliyordu profili bilgileri yalnızca zamandan sahiptir.
+Alternatif bir kullanım için **pgosweep** yalnızca uygulamanın normal işlem için profil bilgilerini almak için. Örneğin, çalıştırabilirsiniz **pgosweep** kısa bir süre sonra uygulamayı başlatın ve bu dosyayı atmak sonra. Bu başlangıç maliyetleri ile ilişkili profil verilerini kaldırır. Daha sonra çalıştırabileceğiniz **pgosweep** uygulamayı sonlandırmadan önce. Artık toplanan verileri, kullanıcının programla destekliyordu profil bilgilerini yalnızca zamandan sahiptir.
 
-.Pgc dosya adı zaman (kullanarak *pgcfile* parametresi), standart biçiminde kullanabilirsiniz *appname! n*.pgc. Bu biçimi kullanıyorsanız, bu verileri derleyici otomatik olarak bulur. **/LTCG /USEPROFILE** veya **/LTCG:PGO** aşaması. Standart biçim kullanmazsanız, kullanmalısınız [pgomgr](pgomgr.md) .pgc dosyaları birleştirmek için.
+.Pgc dosyası adı ne zaman (kullanarak *pgcfile* parametresi), standart biçiminde kullanabileceğiniz *appname! n*.pgc. Bu biçimi kullanırsanız, derleyici bu verileri otomatik olarak bulur. **/LTCG /USEPROFILE** veya **/LTCG:PGO** aşaması. Standart biçim kullanmazsanız kullanmalısınız [pgomgr](pgomgr.md) .pgc dosyaları birleştirmek için.
 
 > [!NOTE]
-> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor.
+> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
 
-Yürütülebilir dosyanın içindeki profil verileri yakalama hakkında daha fazla bilgi için bkz: [PgoAutoSweep](pgoautosweep.md).
+Yürütülebilir dosyanın içindeki profili verileri yakalama hakkında daha fazla bilgi için bkz: [PgoAutoSweep](pgoautosweep.md).
 
 ## <a name="example"></a>Örnek
 
-Bu örnek komutta **pgosweep** myapp!1.pgc için myapp.exe geçerli profil bilgilerini yazar.
+Bu örnek komutta **pgosweep** için myapp!1.pgc myapp.exe geçerli profil bilgilerini yazar.
 
 `pgosweep myapp.exe myapp!1.pgc`
 

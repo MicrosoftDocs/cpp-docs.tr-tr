@@ -58,12 +58,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7eff5cab57c1288af1f6e1109fae458c35e0fa7b
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b301483e2c2f76838054059af838b282aee2d523
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42611389"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711262"
 ---
 # <a name="interlockedcompareexchange-intrinsic-functions"></a>_Interlockedcompareexchange iç işlevleri
 **Microsoft'a özgü**  
@@ -186,14 +186,14 @@ __int64 _InterlockedCompareExchange64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `Destination`  
- Hedef değer işaretçisi. Oturum yok sayılır.  
+*Hedef*<br/>
+[out içinde] Hedef değer işaretçisi. Oturum yok sayılır.  
   
- [in] `Exchange`  
- Exchange değeri. Oturum yok sayılır.  
+*Exchange*<br/>
+[in] Exchange değeri. Oturum yok sayılır.  
   
- [in] `Comparand`  
- Hedefe Karşılaştırılacak değer. Oturum yok sayılır.  
+*Karşılaştırılan*<br/>
+[in] Hedefe Karşılaştırılacak değer. Oturum yok sayılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri ilk değeri `Destination` işaretçi.  

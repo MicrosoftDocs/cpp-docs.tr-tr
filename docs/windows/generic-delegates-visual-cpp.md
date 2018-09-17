@@ -16,12 +16,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9556aee6ef2d9d7cf10e0bb2bd24bdc61c9a0ecd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 8a9613dbc28b3e1f263133c15ae88d20294962e9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42583479"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702539"
 ---
 # <a name="generic-delegates-visual-c"></a>Genel Temsilciler (Visual C++)
 
@@ -39,8 +39,8 @@ generic < [class | typename] type-parameter-identifiers>
 
 ### <a name="parameters"></a>Parametreler
 
-*öznitelikleri* (isteğe bağlı)  
-Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
+*Öznitelikleri*  
+(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *tür-parametresi-tanımlayıcıları*  
 Virgülle ayrılmış tanımlayıcılar tür parametrelerinin listesi.
@@ -48,8 +48,8 @@ Virgülle ayrılmış tanımlayıcılar tür parametrelerinin listesi.
 *tür parametresi kısıtlamaları tümceleri*  
 Belirtilen biçimi alır [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../windows/constraints-on-generic-type-parameters-cpp-cli.md)
 
-*erişilebilirlik değiştiricileri* (isteğe bağlı)  
-Erişilebilirlik değiştiricileri (örneğin **genel**, **özel**).
+*erişilebilirlik değiştiricileri*  
+(İsteğe bağlı) Erişilebilirlik değiştiricileri (örneğin **genel**, **özel**).
 
 *Sonuç türü*  
 Temsilcinin dönüş türü.
@@ -57,8 +57,8 @@ Temsilcinin dönüş türü.
 *tanımlayıcı*  
 Metot temsilcisinin adı.
 
-*Resmi-parametreler* (isteğe bağlı)  
-Metot temsilcisinin parametre listesi.
+*Resmi-Parametreler*  
+(İsteğe bağlı) Metot temsilcisinin parametre listesi.
 
 ## <a name="example"></a>Örnek
 

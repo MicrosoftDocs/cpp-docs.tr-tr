@@ -17,42 +17,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4bb296c8a1fdfde46969ef601fde33c901c9306
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d979dc9005921ce1a760b2e61c4519ef852b7f84
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377436"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709442"
 ---
 # <a name="qfasttranscendentals-force-fast-transcendentals"></a>/Qfast_transcendentals (Hızlı Soyutları Zorla)
-Soyut işlevleri için satır içi kod oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Qfast_transcendentals  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu derleyici seçeneği yürütme hızını artırmak için satır içi kod dönüştürülecek soyut işlevleri zorlar. Bu seçenek yalnızca ile eşleştirilmiş olduğunda bir etkisi **/fp: dışında** veya **/fp: kesin**. Soyut işlevleri için satır içi kod oluşturma altındaki varsayılan davranışı bulunmakta **/fp:fast**.  
-  
- Bu seçenek ile uyumsuz **/fp: katı**. Bkz: [/fp (Floating-Point davranış belirtin)](../../build/reference/fp-specify-floating-point-behavior.md) kayan nokta derleyici seçenekleri hakkında daha fazla bilgi.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+aşkın işlevleri için satır içi kod oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Qfast_transcendentals
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu derleyici seçeneğini yürütme hızını artırmak için satır içi kod dönüştürülecek aşkın işlevleri zorlar. Bu seçenek yalnızca ile birlikte kullanıldığında bir etkisi **/FP: dışında** veya **/FP: precise**. Aşkın işlevler için satır içi kod oluşturma zaten varsayılan davranıştır altında **Fast**.
+
+Bu seçenek ile uyumsuz **/FP: strict**. Bkz: [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md) kayan nokta derleyici seçenekleri hakkında daha fazla bilgi.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

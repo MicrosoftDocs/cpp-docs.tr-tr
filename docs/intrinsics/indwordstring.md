@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00c0f8e67a535d126eab3a19bf17b0bf8bfd7440
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2c504b4f9a17c65affbcc2635ef63ec743f7ad93
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465275"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700901"
 ---
 # <a name="indwordstring"></a>__indwordstring
 **Microsoft'a özgü**  
@@ -41,14 +41,14 @@ void __indwordstring(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Port`  
- Okunacak bağlantı noktası.  
+*Bağlantı noktası*<br/>
+[in] Okunacak bağlantı noktası.  
   
- [out] `Buffer`  
- Bağlantı noktasından okunan veriler burada yazılır.  
+*Arabellek*<br/>
+[out] Bağlantı noktasından okunan veriler burada yazılır.  
   
- [in] `Count`  
- Okunacak veri bayt sayısı.  
+*Sayısı*<br/>
+[in] Okunacak veri bayt sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

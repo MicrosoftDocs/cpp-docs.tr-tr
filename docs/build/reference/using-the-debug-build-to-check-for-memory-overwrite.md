@@ -14,39 +14,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c89242a63484eaccd0330eddac28c4e543ec61b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 96afeb6be9aac754c952824716322c55d4819d6e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376699"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706361"
 ---
 # <a name="using-the-debug-build-to-check-for-memory-overwrite"></a>Belleğin Üzerine Yazma Denetimi için Hata Ayıklama Derlemesini Kullanma
-Belleğin üzerine yazma için denetlemek için hata ayıklama derlemesi kullanmak için ilk projeniz hata ayıklama için yeniden oluşturmanız gerekir. Ardından, uygulamanızın çok başlangıcına Git `InitInstance` işlev ve aşağıdaki satırı ekleyin:  
-  
-```  
-afxMemDF |= checkAlwaysMemDF;  
-```  
-  
- Hata ayıklama bellek ayırıcısı koruma bayt tüm bellek ayırmaları geçici koyar. Ancak, bunlar bayt koruma (hangi belleğin üzerine yazma gösterir) değiştirildikten olup olmadığını denetleyin sürece tüm iyi desteklemez. Aksi takdirde, bu yalnızca aslında, belleğin üzerine yazma ile hemen almak için izin verebilir bir arabellek sağlar.  
-  
- Açarak `checkAlwaysMemDF`, MFC çağırmaya zorlayacağı `AfxCheckMemory` her işlev çağrısı için **yeni** veya **silmek** yapılır. Belleğin üzerine yazma algılandı, aşağıdakine benzer bir izleme iletisi oluşturur:  
-  
-```  
-Damage Occurred! Block=0x5533  
-```  
-  
- Bu iletiler birini görürseniz, hasarı nerede oluştuğunu belirlemek için kodunuzu adım gerekir. Belleğin üzerine yazma oluştuğu daha kesin olarak ayırmak için açık çağrılar yapabilirsiniz `AfxCheckMemory` kendiniz. Örneğin:  
-  
-```  
-ASSERT(AfxCheckMemory());  
-    DoABunchOfStuff();  
-    ASSERT(AfxCheckMemory());  
-```  
-  
- İlk ASSERT başarılı ve ikincisi başarısız olursa, belleğin üzerine yazma işlevi iki çağrılar arasında oluşan gerekir anlamına gelir.  
-  
- Uygulamanızı yapısına bağlı açamayabilirsiniz `afxMemDF` programınızı bile test etmek için çok yavaş çalışmasına neden olur. `afxMemDF` Değişkeni neden `AfxCheckMemory` her çağrı için yeni çağrılması ve silmek için. Bu durumda, kendi çağrıları dağılım `AfxCheckMemory`(yukarıda gösterildiği gibi) ve bellek ayırmak için try üzerine bu şekilde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)
+
+Belleğin üzerine yazma için kontrol etmek için hata ayıklama derlemesini kullanmak için önce projenizin hata ayıklama için yeniden oluşturmanız gerekir. Ardından, çok uygulamanızın başlangıcına geçin `InitInstance` işlev ve aşağıdaki satırı ekleyin:
+
+```
+afxMemDF |= checkAlwaysMemDF;
+```
+
+Hata ayıklama bellek ayırıcısı guard bayt tüm bellek ayırmaları geçici bir çözüm getirir. Ancak, bunlar bayt koruyucu (hangi belleğin üzerine yazma gösterir) değiştirildikten olup olmadığını denetlemeden herhangi iyi desteklemez. Aksi takdirde, bu yalnızca, bir belleğin üzerine yazma ile almasını aslında izin verebilir bir arabellek sağlar.
+
+Etkinleştirerek `checkAlwaysMemDF`, çağrı yapmak için MFC zorlayacak `AfxCheckMemory` her işlev çağrısı **yeni** veya **Sil** yapılır. Belleğin üzerine yazma algılandı, aşağıdakine benzer bir izleme iletisi oluşturur:
+
+```
+Damage Occurred! Block=0x5533
+```
+
+Şu iletilerden birini görürseniz, hasarı nerede oluştuğunu belirlemek için kodunuzda adım adım ilerleyin gerekir. Belleğin üzerine yazma oluştuğu daha kesin bir şekilde yalıtmak için yapılan açık çağrıları yapabilir `AfxCheckMemory` kendiniz. Örneğin:
+
+```
+ASSERT(AfxCheckMemory());
+    DoABunchOfStuff();
+    ASSERT(AfxCheckMemory());
+```
+
+İlk ASSERT başarılı olur ve ikincisi başarısız olursa, belleğin üzerine yazma, iki çağrı arasında işlevde oluşan gerektiğini anlamına gelir.
+
+Uygulamanızı doğasına bağlı olarak, size, gelebilir `afxMemDF` programınızı bile test etmek için çok yavaş çalışmasına neden olur. `afxMemDF` Değişkeni neden `AfxCheckMemory` silin ve yeni yapılan her çağrı için çağrılabilir. Kendi çağrısına bu durumda, dağılım `AfxCheckMemory`böylece üzerine yukarıda da gösterildiği gibi () ve bellek ayırmak için deneyin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

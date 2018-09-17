@@ -16,20 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2222f063969ff1c93d68ef8f8fd494c176005529
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 56ea492c6b5295403976133e30667153754dd237
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366942"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702006"
 ---
 # <a name="dependents"></a>Bağımlılıklar
-Geçerli bir dosya kullanarak sıfır veya daha fazla bağımlıları iki nokta üst üste (:) veya çift iki nokta (:) sonra bir bağımlılık satırda belirtin veya [pseudotarget](../build/pseudotargets.md). Birden çok bağımlıları bir veya daha fazla boşluk ya da sekme ile ayırın. Bağımlılıklar büyük küçük harfe duyarlı değildir. Yollar ile dosya adlarını izin verilir.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
- [Çıkarsanan bağımlılıklar](../build/inferred-dependents.md)  
-  
- [Bağımlılıklar için yollar Ara](../build/search-paths-for-dependents.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Açıklama Blokları](../build/description-blocks.md)
+
+Bir bağımlılık satırda, geçerli bir dosya kullanarak sıfır veya daha fazla bağımlıları sonra iki nokta üst üste (:) veya çift iki nokta üst üste (:) belirtin veya [pseudotarget](../build/pseudotargets.md). Birden çok bağımlılıklar, bir veya daha fazla boşluk veya sekme ile ayırın. Bağımlılıklar, büyük/küçük harfe duyarlı değildir. Yollar ile dosya adlarını izin verilir.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+[Çıkarsanan bağımlılıklar](../build/inferred-dependents.md)
+
+[Bağımlılıklar için yollar Ara](../build/search-paths-for-dependents.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Açıklama Blokları](../build/description-blocks.md)

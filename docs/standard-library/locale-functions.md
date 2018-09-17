@@ -36,12 +36,12 @@ helpviewer_keywords:
 - std::tolower [C++]
 - std::toupper [C++]
 - std::use_facet [C++]
-ms.openlocfilehash: 3a93a9c4e8cf9059d80b602d80043809fb75152a
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: c92f4f845552f5f6c14adb08191f1bd0519c7ba9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895337"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712458"
 ---
 # <a name="ltlocalegt-functions"></a>&lt;yerel ayar&gt; işlevleri
 
@@ -64,7 +64,7 @@ bool has_facet(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*LOC*  
+*LOC*<br/>
 Bir model varlığını test edilecek yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -107,10 +107,10 @@ bool isalnum(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek alfasayısal öğe.
 
-*LOC*  
+*LOC*<br/>
 Test edilecek alfasayısal öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -174,10 +174,10 @@ bool isalpha(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Test edilecek alfabetik öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -239,10 +239,10 @@ bool iscntrl(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -304,10 +304,10 @@ bool isdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -369,10 +369,10 @@ bool isgraph(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -434,10 +434,10 @@ bool islower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -499,10 +499,10 @@ bool isprint(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -563,10 +563,10 @@ bool ispunct(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -628,10 +628,10 @@ bool isspace(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -693,10 +693,10 @@ bool isupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -758,10 +758,10 @@ bool isxdigit(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Test edilecek öğe.
 
-*LOC*  
+*LOC*<br/>
 Sınanacak öğeyi içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -825,10 +825,10 @@ CharType tolower(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Küçük harflere dönüştürülecek karakter.
 
-*LOC*  
+*LOC*<br/>
 Dönüştürülecek karakter içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -874,10 +874,10 @@ CharType toupper(CharType Ch, const locale& Loc)
 
 ### <a name="parameters"></a>Parametreler
 
-*Ch*  
+*Ch*<br/>
 Büyük harfe dönüştürülecek karakter.
 
-*LOC*  
+*LOC*<br/>
 Dönüştürülecek karakter içeren yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -923,7 +923,7 @@ const Facet& use_facet(const locale& Loc);
 
 ### <a name="parameters"></a>Parametreler
 
-*LOC*  
+*LOC*<br/>
 Başvurulan model türü içeren const yerel ayar.
 
 ### <a name="return-value"></a>Dönüş Değeri

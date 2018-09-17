@@ -54,12 +54,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6af43074e78ffb66299b9eeda97dd18f073d77fd
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: a7a450d683bfa2c358e26a4109a2e8a75c04e233
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599405"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716228"
 ---
 # <a name="interlockedexchange-intrinsic-functions"></a>_Interlockedexchange iç işlevleri
 **Microsoft'a özgü**  
@@ -152,11 +152,11 @@ __int64 _InterlockedExchange64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `Target`  
- Değiştirilecek değer işaretçisi. Bu değişken işlev ayarlar `Value` ve önceki değerini döndürür.  
+*Hedef*<br/>
+[out içinde] Değiştirilecek değer işaretçisi. Bu değişken işlev ayarlar `Value` ve önceki değerini döndürür.  
   
- [in] `Value`  
- Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
+*Değer*<br/>
+[in] Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  İşaret ettiği ilk değeri döndürür `Target`.  

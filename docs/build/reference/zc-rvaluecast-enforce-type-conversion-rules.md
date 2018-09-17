@@ -1,5 +1,5 @@
 ---
-title: /ZC:rvalueCast (tür dönüştürme kurallarını) | Microsoft Docs
+title: '/ ZC: rvaluecast (tür dönüştürme kurallarını zorlama) | Microsoft Docs'
 ms.custom: ''
 ms.date: 03/06/2018
 ms.technology:
@@ -22,16 +22,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d730563d01a3b59d4f2ac6bbadc980ca51112203
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 626cabbec169d541a63dd65c22a7380718613b79
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379890"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706595"
 ---
 # <a name="zcrvaluecast-enforce-type-conversion-rules"></a>/Zc:rvalueCast (Tür dönüştürme kurallarını zorlama)
 
-Zaman **/Zc:rvalueCast** seçeneği belirtildiğinde, derleyicinin C ++ 11 standart uygun atama işleminin sonucu olarak bir rvalue başvuru türü doğru şekilde tanımlar. Seçeneği belirtilmedi derleyici davranışı Visual Studio 2012 ile aynı olur.
+Zaman **/ZC: rvaluecast** seçeneği belirtildiğinde, derleyici C ++ 11 standardına uygun olarak bir dönüştürme işleminin sonucu olarak bir rvalue başvuru türünü doğru tanımlar. Bu seçenek belirtilmediğinde derleyici davranışı Visual Studio 2012 olduğu gibi aynıdır.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -39,11 +39,11 @@ Zaman **/Zc:rvalueCast** seçeneği belirtildiğinde, derleyicinin C ++ 11 stand
 
 ## <a name="remarks"></a>Açıklamalar
 
-Varsa **/Zc:rvalueCast** belirtilirse, C ++ 11 standart 5.4 bölümünü derleyici izler ve davranır yalnızca cast cast işlev olmayan türleri rvalue başvuru sonucu ifadeleri ve neden başvuru olmayan türlerinde ifadeleri rvalue türleri olarak. Varsayılan olarak, veya **/Zc:rvalueCast-** belirtilirse, derleyici uyumlu olmayan olduğu ve rvalues olarak rvalue başvuru sonucu tüm cast ifadeleri değerlendirir. Uyumluluk ve atamalar kullanımını hataları ortadan kaldırmak için kullanmanız önerilir **/Zc:rvalueCast**.
+Varsa **/ZC: rvaluecast** belirtilirse, derleyici C ++ 11 standardının 5.4 bölümünü izler ve yalnızca yayın neden başvuru olmayan türleri ve işlev olmayan türlerin rvalue başvuruları neden ifadeleri cast ifadeleri rvalue türü. Varsayılan olarak veya **/Zc:rvalueCast-** belirtilirse, derleyici uyumsuzdur ve rvalues olarak rvalue başvuruları sonuçlanan tüm cast ifadeleri gibi davranır. Uyumluluk ve cast kullanımında hatalarını ortadan kaldırmak için kullanmanızı öneririz **/ZC: rvaluecast**.
 
-Varsayılan olarak, **/Zc:rvalueCast** kapalı (**/Zc:rvalueCast-**). [/ İzin veren-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:rvalueCast-**.
+Varsayılan olarak, **/ZC: rvaluecast** kapalı (**/Zc:rvalueCast-**). [/ Permissive-](permissive-standards-conformance.md) derleyici seçeneği, bu seçenek örtük olarak ayarlar, ancak kullanarak kılınabilir **/Zc:rvalueCast-**.
 
-Kullanım **/Zc:rvalueCast** rvalue başvuru türü götüren bir işleve bağımsız değişken olarak bir cast ifadesi geçirirseniz. Derleyici Hatası varsayılan davranışa neden [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) zaman derleyici yanlış belirler cast ifadesi türü. Bu örnek bir derleyici hatası doğru gösterir ne zaman kod **/Zc:rvalueCast** belirtilmedi:
+Kullanım **/ZC: rvaluecast** atama ifadesini bağımsız değişken olarak bir rvalue başvuru türü alan bir işlev için geçirirseniz. Varsayılan çalışma biçimi derleyici hatasına [C2664](../../error-messages/compiler-errors-2/compiler-error-c2664.md) zaman derleyici yanlış belirler atama ifadesi türü. Bu örnek, bir derleyici hatası doğru gösterir ne zaman kod **/ZC: rvaluecast** belirtilmemiş:
 
 ```cpp
 // Test of /Zc:rvalueCast
@@ -63,8 +63,8 @@ struct Thing {
    T& thing2;
 };
 
-// Create a Thing, using move semantics if possible  
-template <typename T>  
+// Create a Thing, using move semantics if possible
+template <typename T>
 Thing<T> make_thing(T&& t1, T&& t2)
 {
    return (Thing<T>(std::forward<T>(t1), std::forward<T>(t2)));
@@ -74,33 +74,33 @@ struct Test1 {
    long a;
    long b;
 
-   Thing<long> test() { 
+   Thing<long> test() {
       // Use identity casts to create rvalues as arguments
       return make_thing(static_cast<long>(a), static_cast<long>(b));
    }
 };
 ```
 
-Varsayılan derleyici davranışı hata C2102 uygun olduğunda rapor. Cast bir kimliği tarafından oluşturulan bir rvalue adresini ne zaman alınmışsa Bu örnekte, derleyici hata bildirmez **/Zc:rvalueCast** belirtilmedi:
+Varsayılan derleyici çalışma biçimi uygun olduğunda C2102 hata bildirmeyebilir. Ne zaman cast bir kimlik tarafından oluşturulan bir rvalue adresi alınmışsa Bu örnekte, derleyici bir hata bildirmez **/ZC: rvaluecast** belirtilmemiş:
 
 ```cpp
 int main() {
    int a = 1;
-   int *p = &a;   // Okay, take address of lvalue 
+   int *p = &a;   // Okay, take address of lvalue
                   // Identity cast creates rvalue from lvalue;
    p = &(int)a;   // problem: should cause C2102: '&' requires l-value
 }
 ```
 
-Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **komut satırı** özellik sayfası.
 
-1. Değiştirme **ek seçenekler** eklenecek özellik **/Zc:rvalueCast** ve ardından **Tamam**.
+1. Değiştirme **ek seçenekler** eklenecek özellik **/ZC: rvaluecast** seçip **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

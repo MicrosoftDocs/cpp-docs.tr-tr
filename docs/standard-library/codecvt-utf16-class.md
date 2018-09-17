@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9614303e62d3d1ca374eecca8c04cc30a7f94106
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: aa4147f28e7b780e9d916526f0e46e91432fd1ce
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44109803"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714239"
 ---
 # <a name="codecvtutf16"></a>codecvt_utf16
 
@@ -36,8 +36,10 @@ class codecvt_utf16 : public std::codecvt<Elem, char, StateType>
 
 *Elem*<br/>
 Geniş karakter öğe türü.
+
 *Maxcode*<br/>
 Yerel ayar modeli için karakter sayısı.
+
 *Modu*<br/>
 Yerel ayar modeli için yapılandırma bilgileri.
 
@@ -49,4 +51,6 @@ Bayt akışından bir ikili dosyaya yazılması gerekir; bir metin dosyasına ya
 
 ## <a name="requirements"></a>Gereksinimler
 
-Başlık: \<codecvt > Namespace: std
+Başlık: \<codecvt >
+
+Namespace: std

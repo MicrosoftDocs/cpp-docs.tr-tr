@@ -14,27 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12fee7eadecbd81e3c4e410d254de50bcf3a9ac0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 7da654321dfae520f458374654a21a9e8ebb98f5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208832"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706660"
 ---
 # <a name="idl-attributes-add-property-wizard"></a>IDL Öznitelikleri, Özellik Ekleme Sihirbazı
 Bir özellik için arabirim tanımlama dili (IDL) ayarlarını belirtmek için bu sayfanın bir özellik Ekleme Sihirbazı'nı kullanın.  
   
- **id**  
- Özelliği tanımlayan sayısal bir kimlik ayarlar. Bu seçenek, özel arabirimler özellikleri için kullanılamaz. Bkz: [kimliği](/windows/desktop/Midl/id) içinde *MIDL başvuru*.  
+- **id**
+
+   Özelliği tanımlayan sayısal bir kimlik ayarlar. Bu seçenek, özel arabirimler özellikleri için kullanılamaz. Bkz: [kimliği](/windows/desktop/Midl/id) içinde *MIDL başvuru*.  
   
- **helpcontext**  
- Kullanıcı Yardım dosyasında bu özellik hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir. Bkz: [helpcontext](/windows/desktop/Midl/helpcontext) içinde *MIDL başvuru*.  
+- **helpcontext**
+
+   Kullanıcı Yardım dosyasında bu özellik hakkındaki bilgileri görüntüleme sağlayan bir bağlam kimliği belirtir. Bkz: [helpcontext](/windows/desktop/Midl/helpcontext) içinde *MIDL başvuru*.  
   
- **helpstring**  
- Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir. Varsayılan olarak ayarlanmış "özelliği *özellik adı*." Bkz: [helpstring](/windows/desktop/Midl/helpstring) içinde *MIDL başvuru*.  
+- **helpstring**
+
+   Uygulandığı öğe açıklamak için kullanılan bir karakter dizesi belirtir. Varsayılan olarak ayarlanmış "özelliği *özellik adı*." Bkz: [helpstring](/windows/desktop/Midl/helpstring) içinde *MIDL başvuru*.  
   
 ## <a name="other-options"></a>Diğer Seçenekler  
- Tüm seçenekler için tüm özellik türleri kullanılabilir değildir.  
+
+Tüm seçenekler için tüm özellik türleri kullanılabilir değildir.  
   
 |Seçenek|Açıklama|  
 |------------|-----------------|  

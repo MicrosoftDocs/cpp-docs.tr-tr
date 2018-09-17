@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd1fbd635b1d3d3a5f9963edaa9f22e22472dad1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: decd015a184b66fa5867435177c07fdf23ad53ae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43691757"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704385"
 ---
 # <a name="obj-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Obj Dosyaları
 
@@ -42,9 +42,9 @@ Derleyicide ve bağlayıcıda hakkında daha fazla bilgi için bkz: [derleyicide
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)  
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  
-[Unicode Desteği](../../text/support-for-unicode.md)  
-[Derleyicide ve Bağlayıcıda Unicode Desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md)  
-[Unicode standardı](http://www.unicode.org/)  
-[PE biçimi](/windows/desktop/Debug/pe-format)  
+[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+[Unicode Desteği](../../text/support-for-unicode.md)<br/>
+[Derleyicide ve Bağlayıcıda Unicode Desteği](../../build/reference/unicode-support-in-the-compiler-and-linker.md)<br/>
+[Unicode standardı](http://www.unicode.org/)<br/>
+[PE biçimi](/windows/desktop/Debug/pe-format)

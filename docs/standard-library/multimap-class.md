@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de4fa70eb4be67eb9ec29fbd24b7b1476681f7bd
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3d69497092ba89b91a4dbfaf56ac842fa8e07236
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678570"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707460"
 ---
 # <a name="multimap-class"></a>multimap Sınıfı
 
@@ -120,18 +120,18 @@ class multimap;
 ### <a name="parameters"></a>Parametreler
 
 *Key*<br/>
- Çoklu eşlemde depolanacak anahtar veri türü.
+Çoklu eşlemde depolanacak anahtar veri türü.
 
 *Türü*<br/>
- Çoklu eşlemde depolanacak öğe veri türü.
+Çoklu eşlemde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
- İki öğenin değerlerini çoklu eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul `less<Key>` varsayılan değerdir.
+İki öğenin değerlerini çoklu eşlemde kendi göreli sıralarını belirlemek için sıralama anahtarları olarak karşılaştırabilen bir işlev nesnesi sağlayan tür. İkili koşul `less<Key>` varsayılan değerdir.
 
 C ++ 14'te belirterek heterojen arama etkinleştirebilirsiniz `std::less<>` veya `std::greater<>` hiçbir tür parametreleri olan koşul. Daha fazla bilgi için [, ilişkili kapsayıcılar için heterojen arama](../standard-library/stl-containers.md#heterogeneous-lookup-in-associative-containers-c14)
 
 *Ayırıcı*<br/>
- Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type> >`.
+Eşlemin bellek ayırmayı ve ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<pair <const Key, Type> >`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -515,7 +515,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Multimap eşleştirilecek öğe anahtarı.
+Multimap eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -916,7 +916,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1003,16 +1003,16 @@ size_type erase(
 ### <a name="parameters"></a>Parametreler
 
 *Burada*<br/>
- Kaldırılacak öğenin konumu.
+Kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Kaldırılacak ilk öğenin konumu.
+Kaldırılacak ilk öğenin konumu.
 
 *Son*<br/>
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
 *Key*<br/>
- Kaldırılacak öğe anahtarı.
+Kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1038,7 +1038,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
+Aranan multimap bir öğeyi sıralama anahtarı tarafından eşleştirilecek anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1493,7 +1493,7 @@ const_iterator lower_bound(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2189,7 +2189,7 @@ void swap(
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap `left`.
+Değiştirilecek öğeleri sağlayan multimap veya öğeleri olan çoklu eşlem olanlar değiştirilecek multimap `left`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2259,7 +2259,7 @@ const_iterator upper_bound(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan multimap bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

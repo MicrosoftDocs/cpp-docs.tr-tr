@@ -12,60 +12,62 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 403220306a2585b1506a990664eaa2ec8f2ac1a3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cb436acae117c78bfa5c752b905bd3f4f910e9da
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368700"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707856"
 ---
 # <a name="masm-macros"></a>MASM Makroları
-Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo-operations.md), normal yordama öğesinin ve sonuçları oluşturmak için kullanılan ksamd64.inc içinde tanımlı makrolar kümesi vardır.  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-|Makrosu|Açıklama|  
-|-----------|-----------------|  
-|alloc_stack(n)|Yığın çerçevesi (alt rsp, n kullanarak) n bayt ayırır ve yayar uygun geriye doğru izleme bilgilerini (.allocstack n)|  
-|save_reg reg, loc|Kalıcı kayıt reg dosyasını RSP uzaklık konumu yığında kaydeder ve uygun bilgileri bırakma. (.savereg reg, loc)|  
-|push_reg reg|Kalıcı kayıt reg yığına ve yayar uygun geriye doğru izleme bilgilerini. (.pushreg reg)|  
-|rex_push_reg reg|2 bayt push kullanarak Yığında kalıcı kayıt kaydedin ve yayar uygun geriye doğru izleme bilgilerini bu kullanılmalıdır itme işlevi tamsayı olduğundan emin olmak için ilk yönerge işlevinde ise (.pushreg reg).|  
-|save_xmm128 reg, loc|Yığında dosyasını RSP uzaklık konumu yığında reg XMM kaydının kaydeder ve uygun geriye doğru izleme bilgilerini (.savexmm128 reg, loc)|  
-|set_frame reg, uzaklık|Çerçeve kayıt reg rsp + (mov ya da bir ö kullanarak) uzaklığı için ayarlar ve bilgiler (.set_frame reg, offset) uygun geriye doğru izleme|  
-|push_eflags|Eflags pushfq yönergesiyle gönderir ve uygun geriye doğru izleme bilgilerini (gösterir.alloc_stack 8)|  
-  
- Makrolar uygun kullanımıyla birlikte örnek işlev girişi şöyledir:  
-  
-```  
-SkFrame struct   
-Fill    dq ?; fill to 8 mod 16   
-SavedRdi dq ?; saved register RDI   
-SavedRsi dq ?; saved register RSI   
-SkFrame ends  
-  
-sampleFrame struct  
-Filldq?; fill to 8 mod 16  
-SavedRdidq?; Saved Register RDI   
-SavedRsi  dq?; Saved Register RSI  
-sampleFrame ends  
-  
-sample2 PROC FRAME  
-alloc_stack(sizeof sampleFrame)  
-save_reg rdi, sampleFrame.SavedRdi  
-save_reg rsi, sampleFrame.SavedRsi  
-.end_prolog  
-  
-; function body  
-  
-mov rsi, sampleFrame.SavedRsi[rsp]  
-mov rdi, sampleFrame.SavedRdi[rsp]  
-  
-; Here’s the official epilog  
-  
-add rsp, (sizeof sampleFrame)  
-ret  
-sample2 ENDP  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [MASM için Yardımcıları Bırakma](../build/unwind-helpers-for-masm.md)
+
+Kullanımını kolaylaştırmak için [ham sözde işlemler](../build/raw-pseudo-operations.md), tipik yordamı öğesinin ve sonuçları oluşturmak için kullanılan ksamd64.inc içinde tanımlı makrolar, bir dizi vardır.
+
+## <a name="remarks"></a>Açıklamalar
+
+|Makrosu|Açıklama|
+|-----------|-----------------|
+|alloc_stack(n)|Bir yığın çerçevesi (kullanarak alt rsp, n) n bayt ayırır ve yayan uygun geriye doğru izleme bilgilerini (.allocstack n)|
+|save_reg reg, loc|Yığında dosyasını RSP uzaklık konumu kalıcı kayıt reg kaydeder ve uygun geriye doğru izleme bilgilerini. (.savereg reg, loc)|
+|push_reg reg|Kalıcı kayıt reg yığına ve yayan uygun geriye doğru izleme bilgilerini. (.pushreg reg)|
+|rex_push_reg reg|2 bayt push kullanarak yığında bir kayıt kaydedin uygun geriye doğru izleme bilgilerini bu kullanılmalıdır anında iletme işlevi anında düzeltme eki eklenebilen olduğundan emin olmak için ilk yönerge işlevindeki ise (.pushreg reg).|
+|save_xmm128 reg, loc|Yığında dosyasını RSP uzaklık konumu reg XMM kaydının kaydeder ve uygun geriye doğru izleme bilgilerini (.savexmm128 reg, loc)|
+|set_frame reg, uzaklık|Çerçeve kaydı reg rsp + (mov ya da bir ö kullanarak) uzaklığı için ayarlar ve uygun geriye doğru izleme bilgilerini (.set_frame reg, uzaklık)|
+|push_eflags|Pushfq yönergesiyle eflags ve bilgilerini (gösterir 8 .alloc_stack) uygun geriye doğru izleme|
+
+Örnek işlevi giriş makroları uygun kullanımıyla birlikte aşağıda verilmiştir:
+
+```asm
+SkFrame struct
+Fill    dq ?; fill to 8 mod 16
+SavedRdi dq ?; saved register RDI
+SavedRsi dq ?; saved register RSI
+SkFrame ends
+
+sampleFrame struct
+Filldq?; fill to 8 mod 16
+SavedRdidq?; Saved Register RDI
+SavedRsi  dq?; Saved Register RSI
+sampleFrame ends
+
+sample2 PROC FRAME
+alloc_stack(sizeof sampleFrame)
+save_reg rdi, sampleFrame.SavedRdi
+save_reg rsi, sampleFrame.SavedRsi
+.end_prolog
+
+; function body
+
+    mov rsi, sampleFrame.SavedRsi[rsp]
+    mov rdi, sampleFrame.SavedRdi[rsp]
+
+; Here’s the official epilog
+
+    add rsp, (sizeof sampleFrame)
+    ret
+sample2 ENDP
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[MASM için Yardımcıları Bırakma](../build/unwind-helpers-for-masm.md)

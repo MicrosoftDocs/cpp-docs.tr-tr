@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27a96082f620a09687102dd3fd42e6253968f2f7
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8a0da6941a3076b23eb127cdcb87fee2953a80b9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693978"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707472"
 ---
 # <a name="cmfceditbrowsectrl-class"></a>CMFCEditBrowseCtrl sınıfı
 `CMFCEditBrowseCtrl` Sınıfı, isteğe bağlı olarak bir Gözat düğmesi içeren düzenlenebilir metin kutusu olan düzenleme Gözat denetimini destekler. Kullanıcı gözatma düğmesini tıkladığında denetim özel bir eylem gerçekleştirir veya dosya Gezgini veya klasör Gezgini içeren standart iletişim kutusunu görüntüler.  
@@ -84,14 +84,17 @@ class CMFCEditBrowseCtrl : public CEdit
   
  `CMFCEditBrowseCtrl` Sınıfı aşağıdaki modlarını destekler.  
   
- **özel mod**  
- Kullanıcı Gözat düğmesine tıkladığında, özel bir eylem gerçekleştirilir. Örneğin, bir uygulamaya özgü iletişim kutusunu görüntüleyebilirsiniz.  
+- **özel mod**
+
+   Kullanıcı Gözat düğmesine tıkladığında, özel bir eylem gerçekleştirilir. Örneğin, bir uygulamaya özgü iletişim kutusunu görüntüleyebilirsiniz.  
   
- **dosya modu**  
- Kullanıcı Gözat düğmesine tıkladığında, standart dosya seçimi iletişim kutusu görüntülenir.  
+- **dosya modu**
+
+   Kullanıcı Gözat düğmesine tıkladığında, standart dosya seçimi iletişim kutusu görüntülenir.  
   
- **Klasör modunda**  
- Kullanıcı gözatma düğmesini tıkladığında bir standart klasör seçimi iletişim kutusu görüntülenir.  
+- **Klasör modunda**
+
+   Kullanıcı gözatma düğmesini tıkladığında bir standart klasör seçimi iletişim kutusu görüntülenir.  
   
 ## <a name="how-to-specify-an-edit-browse-control"></a>Nasıl yapılır: bir düzenleme Gözat denetimi belirtin  
  Uygulamanızdaki bir düzenleme Gözat denetimini eklemek için aşağıdaki adımları gerçekleştirin:  

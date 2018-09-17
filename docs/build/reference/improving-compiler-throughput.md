@@ -17,19 +17,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c78c0640e415f4a531149a47430833ba94770719
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 883b4056226a3595f2255dcadfb4cc056e1150ef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371440"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704144"
 ---
 # <a name="improving-compiler-throughput"></a>Derleyici Üretimini Geliştirme
-Projenizi daha hızlı oluşturmak için önceden derlenmiş üstbilgi dosyaları kullanın. ATL, MFC ya da Windows SDK'sı üst bilgi dosyaları kullanıyorsanız, bu önemlidir.  
-  
- Bkz: [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/Yu](../../build/reference/yu-use-precompiled-header-file.md).  
-  
- Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz: [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)
+
+Daha hızlı derleme için önceden derlenmiş üst bilgi dosyalarını kullanın. ATL, MFC ve Windows SDK'sı üst bilgi dosyaları kullanıyorsanız, bu önemlidir.
+
+Bkz: [/Yc](../../build/reference/yc-create-precompiled-header-file.md) ve [/Yu](../../build/reference/yu-use-precompiled-header-file.md).
+
+Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz. [önceden derlenmiş üst bilgi dosyaları oluşturma](../../build/reference/creating-precompiled-header-files.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)

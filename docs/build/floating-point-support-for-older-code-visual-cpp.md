@@ -1,5 +1,5 @@
 ---
-title: Eski kod (Visual C++) için kayan nokta desteği | Microsoft Docs
+title: (Visual C++) eski kod için kayan nokta desteği | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,15 +12,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cd7cbf955fbf795d06d9cd2448d0736dc435f3b5
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7285325bf1a934afcef337da318d019ec6fe375c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367166"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706816"
 ---
 # <a name="floating-point-support-for-older-code-visual-c"></a>Eski Kod için Kayan Nokta Desteği (Visual C++)
-MMX ve kayan nokta yığın kayıtları (MM0-MM7/ST0-ST7) içerik geçişleri boyunca korunur.  Bu kayıtları için açık bir çağrı kuralı yok.  Bu yazmaçların kullanımı çekirdek modu kodunda kesinlikle yasaktır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma Kuralı](../build/calling-convention.md)
+
+Kayan nokta yığın kayıtları (MM0-MM7/ST0-ST7) ve MMX bağlam geçişleri boyunca korunur.  Bu kayıtlar için açık bir çağrı kuralı yok.  Bu yazmaçların kullanımı kesinlikle çekirdek modu kodu içinde kullanılamaz.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çağırma Kuralı](../build/calling-convention.md)

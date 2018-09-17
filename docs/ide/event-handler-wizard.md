@@ -16,36 +16,43 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 544ce4cd0f4ed9a7f3592e5ec1691fb3734b8772
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 4c2ff441fc38d460e27039d7825753a2011dac3e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340014"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702773"
 ---
 # <a name="event-handler-wizard"></a>Olay İşleyici Sihirbazı
-Bu sihirbaz, tercih ettiğiniz sınıfı için bir iletişim kutusu denetimi için bir olay işleyicisi ekler. Bir olay işleyiciden eklerseniz [Özellikler penceresini](/visualstudio/ide/reference/properties-window), iletişim kutusu uygulayan sınıfına ekleyin. Bkz: [iletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md) daha fazla bilgi için.  
+Bu sihirbaz, seçtiğiniz sınıfa bir iletişim kutusu denetimi için bir olay işleyicisi ekler. Bir olay işleyicisinden eklerseniz [Özellikler penceresi](/visualstudio/ide/reference/properties-window), iletişim kutusu uygulayan sınıfına ekleyin. Bkz: [iletişim kutusu denetimleri için olay işleyicileri ekleme](../windows/adding-event-handlers-for-dialog-box-controls.md) daha fazla bilgi için.  
   
- **Komut adı**  
- Olay işleyicisi eklenen Seçili denetimi tanımlar. Bu kutu kullanılamıyor.  
+- **Komut adı**
+
+   Kendisi için olay işleyicisi eklenir, seçilen denetimi tanımlar. Bu kutuyu kullanılamıyor.  
   
- **İleti türü**  
- Seçili denetimi için geçerli olası ileti işleyicileri listesini görüntüler.  
+- **İleti türü**
+
+   Seçili denetim için geçerli olası ileti işleyicileri listesini görüntüler.  
   
- **İşlev işleyicisi adı**  
- Olayını işlemek için eklenen işlevin adını görüntüler. Varsayılan olarak, ad ileti türü ve "Açık" $a komutu, temel alır. Örneğin, düğmesini adlı `IDC_BUTTON1`, ileti türü `BN_CLICKED` işlevi işleyici adını görüntüler `OnBnClickedButton1`.  
+- **İşlev işleyicisi adı**
+
+   Olayı işlemek için eklenen işlev adını görüntüler. Varsayılan olarak, ileti türü ve "Açık" başına, komut adı temel alır. Örneğin, düğme için adlı `IDC_BUTTON1`, ileti türü `BN_CLICKED` işlev işleyicisi adı görüntüler `OnBnClickedButton1`.  
   
- **Sınıf listesi**  
- Olay işleyici ekleyebileceğiniz kullanılabilir sınıflarını görüntüler. Seçilen iletişim kutusu için sınıf kırmızı olarak görüntülenir.  
+- **Sınıf listesi**
+
+   Bir olay işleyicisi ekleyebileceğiniz kullanılabilir sınıflarını görüntüler. Seçili iletişim kutusu sınıfı kırmızı renkte görüntülenir.  
   
- **İşleyici açıklaması**  
- Seçili öğe için bir açıklama sağlar **ileti türü** kutusu. Bu kutu kullanılamıyor.  
+- **İşleyici açıklaması**
+
+   Seçili öğe için bir açıklama sağlar **ileti türü** kutusu. Bu kutuyu kullanılamıyor.  
   
- **Ekleme ve düzenleme**  
- Seçilen sınıf veya nesne ileti işleyicisi ekler ve denetim bildirim işleyici kodu ekleyebileceğiniz yeni işlev için Metin Düzenleyicisi'ni açar.  
+- **Ekleme ve düzenleme**
+
+   Seçilen bir sınıf veya nesne için ileti işleyicisi ekler ve sonra Denetim bildirimi işleyicinizin kodunu ekleyebilmek yeni işleve Metin Düzenleyicisi'ni açar.  
   
- **Kod düzenleme**  
- Ekleme veya denetim bildirim işleyici kodu düzenleme için seçilen var işlevi için Metin Düzenleyicisi'ni açar.  
+- **Kodu düzenleme**
+
+   Ekleme ya da Denetim bildirimi işleyicinizin kodunu düzenle seçili mevcut işlevi metin düzenleyicisi açılır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Olay işleyici ekleme](../ide/adding-an-event-handler-visual-cpp.md)

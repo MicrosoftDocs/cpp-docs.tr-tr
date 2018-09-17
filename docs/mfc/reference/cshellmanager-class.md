@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35f186822e00f74552e3bf8d52950f3c4bbe5b45
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 48312e4840436b1e0cc7c3e176d86f1783ff1746
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43207398"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714675"
 ---
 # <a name="cshellmanager-class"></a>CShellManager sınıfı
 Tanımlayıcı listeleri (Pıdl'ler) için işaretçilerle çalışmanıza olanak tanıyan çeşitli yöntemler uygular.  
@@ -104,23 +104,23 @@ BOOL BrowseForFolder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *strOutFolder*  
- Yöntem tarafından seçilen klasör yolu depolamak için kullanılan dize.  
+*strOutFolder*<br/>
+[out] Yöntem tarafından seçilen klasör yolu depolamak için kullanılan dize.  
   
- [in] *pWndParent*  
- Üst penceresine bir işaretçi.  
+*pWndParent*<br/>
+[in] Üst penceresine bir işaretçi.  
   
- [in] *lplszInitialFolder*  
- İletişim kutusu görüntülendiğinde, varsayılan olarak seçilen klasörü içeren bir dize.  
+*lplszInitialFolder*<br/>
+[in] İletişim kutusu görüntülendiğinde, varsayılan olarak seçilen klasörü içeren bir dize.  
   
- [in] *lpszTitle*  
- İletişim kutusunun başlığı.  
+*lpszTitle*<br/>
+[in] İletişim kutusunun başlığı.  
   
- [in] *ulFlags*  
- İletişim kutusu için seçenekleri belirten bayraklar. Bkz: [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) ayrıntılı bir açıklaması için.  
+*ulFlags*<br/>
+[in] İletişim kutusu için seçenekleri belirten bayraklar. Bkz: [BROWSEINFO](/windows/desktop/api/shlobj_core/ns-shlobj_core-_browseinfoa) ayrıntılı bir açıklaması için.  
   
- [out] *piFolderImage*  
- Yöntem seçili klasör görüntü dizini nereye yazdığını tamsayı değerini bir işaretçi.  
+*piFolderImage*<br/>
+[out] Yöntem seçili klasör görüntü dizini nereye yazdığını tamsayı değerini bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İletişim kutusundan bir klasör kullanıcının seçtiği olursa sıfır dışı; Aksi durumda 0.  
@@ -143,11 +143,11 @@ LPITEMIDLIST ConcatenateItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pidl1*  
- İlk öğe.  
+*pidl1*<br/>
+[in] İlk öğe.  
   
- [in] *pidl2*  
- İkinci öğe.  
+*pidl2*<br/>
+[in] İkinci öğe.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa, yeni bir öğe listesine bir işaretçi bulunmazsa null değerini DÖNDÜRÜR.  
@@ -163,8 +163,8 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pidlSource*  
- Orijinal öğe listesi.  
+*pidlSource*<br/>
+[in] Orijinal öğe listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa yeni oluşturulan öğeyi listesine bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -180,8 +180,8 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *cbSize*  
- Öğesi listenin boyutu.  
+*cbSize*<br/>
+[in] Öğesi listenin boyutu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa oluşturulan öğeyi listesine bir işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -204,8 +204,8 @@ void FreeItem(LPITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *PIDL işaretçisiyle birlikte*  
- Silmek için bir öğe listesi.  
+*PIDL işaretçisiyle birlikte*<br/>
+[in] Silmek için bir öğe listesi.  
   
 ##  <a name="getitemcount"></a>  CShellManager::GetItemCount  
  Bir öğe listesinden öğe sayısını döndürür.  
@@ -215,8 +215,8 @@ UINT GetItemCount(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *PIDL işaretçisiyle birlikte*  
- Bir öğe listesine bir işaretçi.  
+*PIDL işaretçisiyle birlikte*<br/>
+[in] Bir öğe listesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğe listesindeki öğe sayısı.  
@@ -229,8 +229,8 @@ UINT GetItemSize(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *PIDL işaretçisiyle birlikte*  
- Bir öğe listesine bir işaretçi.  
+*PIDL işaretçisiyle birlikte*<br/>
+[in] Bir öğe listesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğesi listenin boyutu.  
@@ -243,8 +243,8 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *PIDL işaretçisiyle birlikte*  
- Yinelemek için öğeleri listesi.  
+*PIDL işaretçisiyle birlikte*<br/>
+[in] Yinelemek için öğeleri listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Listede bir sonraki öğeye bir işaretçi.  
@@ -262,11 +262,11 @@ int GetParentItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpidl*  
- Ana alınan bir PIDL işaretçisiyle birlikte.  
+*lpidl*<br/>
+[in] Ana alınan bir PIDL işaretçisiyle birlikte.  
   
- [out] *lpidlParent*  
- Yöntemin sonucu depolayacağınız PIDL işaretçisiyle birlikte bir başvuru.  
+*lpidlParent*<br/>
+[out] Yöntemin sonucu depolayacağınız PIDL işaretçisiyle birlikte bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  PIDL işaretçisiyle birlikte üst düzeyi.  
@@ -284,11 +284,11 @@ HRESULT ItemFromPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPath*  
- Öğesinin yolu belirten bir dize.  
+*lpszPath*<br/>
+[in] Öğesinin yolu belirten bir dize.  
   
- [out] *PIDL işaretçisiyle birlikte*  
- Bir PIDL işaretçisiyle birlikte bir başvuru. Yöntemi, işaretçi dönüş değerini depolamak için bu PIDL işaretçisiyle birlikte kullanır.  
+*PIDL işaretçisiyle birlikte*<br/>
+[out] Bir PIDL işaretçisiyle birlikte bir başvuru. Yöntemi, işaretçi dönüş değerini depolamak için bu PIDL işaretçisiyle birlikte kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa; NOERROR döndürür bir OLE tanımlı hata değeri.  

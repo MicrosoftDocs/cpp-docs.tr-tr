@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c03c47502fdd9309b3d6553c3f46f9685d4eaa9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 883e7bdefe4bc1424dfea343d8d473015e6387d6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958272"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700225"
 ---
 # <a name="tuplesize-class"></a>tuple_size sınıfı;
 
@@ -66,22 +66,22 @@ template <class Tuple>
 
 ### <a name="parameters"></a>Parametreler
 
-*Tanımlama grubu*  
+*Tanımlama grubu*<br/>
 Demet türü.
 
-*Elem*  
+*Elem*<br/>
 Dizi öğelerinin türü.
 
-*Boyutu*  
+*Boyutu*<br/>
 Dizinin boyutu.
 
-*T1*  
+*T1*<br/>
 Çiftin ilk üye türü.
 
-*T2*  
+*T2*<br/>
 Çiftin ikinci üyenin türü.
 
-*Türler*  
+*Türler*<br/>
 Tanımlama grubu öğelerinin türleri.
 
 ## <a name="remarks"></a>Açıklamalar

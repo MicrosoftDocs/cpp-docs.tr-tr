@@ -20,47 +20,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1daa27ce48590d4a122eafde9f63f7142271610
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 95a746a37183f26585fd013327a964b922589221
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373706"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699771"
 ---
 # <a name="force-force-file-output"></a>/FORCE (Dosya Çıktısını Zorla)
-```  
-/FORCE:[MULTIPLE|UNRESOLVED]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / Force seçeneği geçerli .exe dosyası oluşturmak için bağlayıcı söyler veya DLL bir simge başvurulan ancak olsa bile tanımlanan ya da tanımlanmış çarpın.  
-  
- / Force seçeneği isteğe bağlı bir bağımsız değişken alabilir:  
-  
--   BAĞLANTI bir simge için birden fazla tanım bulursa olup olmadığına bakılmaksızın bir çıktı dosyası oluşturmak için /Force:MULTIPLE kullanın.  
-  
--   / Force kullanın: tanımlanmamış bir simge bağlantı bulursa olup olmadığına bakılmaksızın bir çıktı dosyası oluşturmak için ÇÖZÜMLENMEMİŞ. / FORCE: ÇÖZÜMLENMEMİŞ giriş noktası simgesi çözümlenmemiş ise göz ardı edilir.  
-  
- / FORCE bağımsız değişken içermeyen iki birden çok anlamına gelir ve Çözülmemiş.  
-  
- Bu seçenek ile oluşturulmuş bir dosya beklendiği gibi çalışmayabilir. / Force seçeneği belirtildiğinde bağlayıcı artımlı olarak bağlayacaksınız değil.  
-  
- Bir modül ile derlenmiş ise **/CLR**, **/FORCE** görüntüyü oluşturmaz.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Seçenek içine türünü **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/FORCE:[MULTIPLE|UNRESOLVED]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Force seçeneği geçerli bir .exe dosyası oluşturmak için söyler veya DLL sembole başvurulduğunda ancak bile tanımlanan veya tanımlı çarpın.
+
+/ Force seçeneği isteğe bağlı bağımsız değişken alabilir:
+
+- BAĞLANTI bir sembol için birden fazla tanım bulursa olup olmadığını bulmadığında çıkış dosyası oluşturmak için/Force: multıple kullanın.
+
+- / Force kullanın: tanımsız bir sembol bağlantı bulursa olup olmadığını bir çıkış dosyası oluşturmak için. / FORCE: ÇÖZÜMLENMEMİŞ giriş noktası sembolü çözümlenmemiş ise göz ardı edilir.
+
+/ Bağımsız değişken olmadan FORCE, hem birden çok anlamına gelir ve çözümlenmemiş.
+
+Bu seçenekle oluşturulan bir dosya, beklendiği gibi çalışmayabilir. / Force seçeneği belirtildiğinde bağlayıcı artımlı olarak bağlayacaksınız değil.
+
+Bir modül ile derlenmişse **/CLR**, **/FORCE** görüntü oluşturmaz.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

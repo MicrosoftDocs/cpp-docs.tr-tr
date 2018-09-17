@@ -1,5 +1,5 @@
 ---
-title: C dili yürütülebilir öğelerinde kullanmak için C++ işlevlerini dışarı aktarma | Microsoft Docs
+title: C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışarı aktarma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,44 +17,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf5f348675752ff9c0b548693c442812fa6be697
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: abdc8dc0f853faf0649581d535cb631c232e8276
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367592"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709949"
 ---
-# <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C Dili Yürütülebilir Öğelerinde Kullanmak için C++ İşlevlerini Dışarı Aktarma  
-  
-C dili modülünden erişmek istediğiniz, bu işlevler C++ bağlantı yerine C bağlantısı ile bildirmelisiniz C++ ile yazılmış bir DLL işlevleri varsa. Aksi belirtilmediği sürece, C++ derleyicisi C++ tür kullanımı uyumlu (ad düzenlemesi olarak da bilinir) adlandırma ve C++ çağırma C'den çağrı zor olabilir kuralları kullanır.  
-  
-C bağlantı belirtmek için belirtin `extern "C"` işlev bildirimleriniz için. Örneğin:  
-  
-```  
-extern "C" __declspec( dllexport ) int MyFunc(long parm1);  
-```  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [.Def dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)  
-  
--   [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
-  
--   [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarmak](../build/exporting-and-importing-using-afx-ext-class.md)  
-  
--   [C veya C++ dili yürütülebilir öğelerinde kullanmak için C işlevlerini dışarı aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)  
-  
--   [Hangi dışarı aktarma yöntemini kullanacağınızı belirleme](../build/determining-which-exporting-method-to-use.md)  
-  
--   [__Declspec(dllimport) kullanarak bir uygulama içeri aktarmak için](../build/importing-into-an-application-using-declspec-dllimport.md)  
-  
--   [DLL başlatma](../build/run-time-library-behavior.md#initializing-a-dll)  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Düzenlenmiş adlar](../build/reference/decorated-names.md)  
-  
--   [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+# <a name="exporting-c-functions-for-use-in-c-language-executables"></a>C Dili Yürütülebilir Öğelerinde Kullanmak için C++ İşlevlerini Dışarı Aktarma
+
+C++ programında yazılan C dili modülünden erişmek istiyorsanız, bu işlevler C++ bağlantısı yerine C bağlaması olan bildirmelidir DLL'de işlevleri varsa. Aksi belirtilmediği sürece, C++ Derleyici C++ tür kullanımı uyumlu (ad düzenlemesi olarak da bilinir) adlandırma ve çağırma kuralları, C'den çağırmak zor olabilecek C++ kullanır.
+
+C bağlaması belirtmek için belirtin `extern "C"` , işlev bildirimleri için. Örneğin:
+
+```
+extern "C" __declspec( dllexport ) int MyFunc(long parm1);
+```
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)
+
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+
+- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+
+- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Düzenlenmiş adlar](../build/reference/decorated-names.md)
+
+- [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)

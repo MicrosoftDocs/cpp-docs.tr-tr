@@ -16,68 +16,79 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08a406bf633715f6a6e9546295da3b02a41f0063
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6d8342c76e58b5d21f36147f073e1380fbad15bd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33369316"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712120"
 ---
 # <a name="control-names-mfc-activex-control-wizard"></a>Denetim Adları, MFC ActiveX Denetim Sihirbazı
-Denetim ve özellik sayfası sınıf, tür adları için ad belirtmek ve denetlemek için tanımlayıcıları yazın. Dışında **kısa ad**, diğer tüm alanlar bağımsız olarak düzenlenebilir. Metni değiştirirseniz **kısa ad**, değişiklik bu sayfasındaki diğer tüm alanların adlarını yansıtılır. Bu adlandırma davranış denetiminizi geliştirdikçe tüm adlar kolayca tanımlanabilen yapmak için tasarlanmıştır.  
+Özellik sayfası sınıfının, tür adları ve denetim sınıf adlarını belirtin ve tanımlayıcıları denetiminizin yazın. Dışında **kısa ad**, diğer tüm alanlar birbirinden bağımsız olarak düzenlenebilir. Metni değiştirirseniz **kısa ad**, bu değişiklik bu sayfadaki diğer tüm alanların adlarındaki yansıtılır. Bu adlandırma davranışı denetiminiz geliştirirken tüm adlarını kolayca tanımlanabilen yapmak için tasarlanmıştır.  
   
- **Kısa ad**  
- Denetim için kısa bir ad girin. Varsayılan olarak, bu ad, sağladığınız proje adı dayanır **yeni proje** iletişim kutusu. Bu alanlar ayrı ayrı değiştirmediğiniz sürece sağladığınız ad sınıf adları, tür adları ve tür tanımlayıcıları belirler.  
+- **Kısa ad**
+
+   Denetim için kısaltılmış bir ad belirtin. Varsayılan olarak, bu ad, sağlanan proje adı dayanır **yeni proje** iletişim kutusu. Bu alanları ayrı ayrı değiştirmediğiniz sürece sağladığınız adın sınıf adları, tür adları ve tür tanımlayıcıları belirler.  
   
- **Denetimin sınıf adı**  
- Varsayılan olarak, ile kısa adına denetim sınıfın adını dayanır `C` öneki olarak ve `Ctrl` soneki olarak. Örneğin, Denetim kısa adı ise `Price`, denetim sınıf adı `CPriceCtrl`.  
+- **Denetim sınıfı adı**
+
+   Varsayılan olarak, denetim sınıfı adı kısa adına, ile dayalı `C` öneki olarak ve `Ctrl` soneki olarak. Örneğin, Denetim kısa adı ise `Price`, denetim sınıfı adı `CPriceCtrl`.  
   
- **Denetim .h dosyası**  
- Varsayılan olarak, ile kısa adına üstbilgi dosyası adını dayanır `Ctrl` soneki olarak ve `.h` dosya uzantısı olarak. Örneğin, Denetim kısa adı ise `Price`, üstbilgi dosya adı `PriceCtrl.h`. Bu alandaki denetim sınıf adı adıyla aynı olmalıdır.  
+- **Denetim .h dosyası**
+
+   Varsayılan olarak, üst bilgi dosyası adını kısa adına, ile dayalı `Ctrl` soneki olarak ve `.h` dosya uzantısı. Örneğin, Denetim kısa adı ise `Price`, üst bilgi dosyası adı: `PriceCtrl.h`. Bu alan adlarında denetim sınıfı adı eşleşmelidir.  
   
- **Denetim .cpp dosyası**  
- Varsayılan olarak, ile kısa adına üstbilgi dosyası adını dayanır `Ctrl` soneki olarak ve `.cpp` dosya uzantısı olarak. Örneğin, Denetim kısa adı ise `Price`, üstbilgi dosya adı `PriceCtrl.cpp`. Bu alandaki üstbilgi adı adıyla aynı olmalıdır.  
+- **Denetim .cpp dosyası**
+
+   Varsayılan olarak, üst bilgi dosyası adını kısa adına, ile dayalı `Ctrl` soneki olarak ve `.cpp` dosya uzantısı. Örneğin, Denetim kısa adı ise `Price`, üst bilgi dosyası adı: `PriceCtrl.cpp`. Bu alan adlarında, üst bilgi adı eşleşmelidir.  
   
- **Denetim türü adı**  
- Varsayılan olarak, Denetim türü adını ve ardından kısa ad dayanır `Control`. Örneğin, Denetim kısa adı ise `Price`, denetim sınıf türü adı `Price Control`. Bu alandaki değer değiştirirseniz, bir devralma adını gösterir emin olun.  
+- **Denetim türü adı**
+
+   Varsayılan olarak, ardından kısa adı, Denetim türü adını dayanır `Control`. Örneğin, Denetim kısa adı ise `Price`, denetim sınıf türü adı `Price Control`. Bu alandaki değer değiştirirseniz, bir devralma adından da anlaşılacağı emin olun.  
   
- **Denetim türü kimliği**  
- Denetim sınıfı kimlik denetimi türünü ayarlar. Bir projeye eklendiğinde denetimi bu dize kayıt defterine yazar. Kapsayıcı uygulamaları bu dize denetimi örneğini oluşturmak için kullanın.  
+- **Denetim türü kimliği**
+
+   Denetim sınıfı kimlik denetimi türünü ayarlar. Bir projeye eklendiğinde denetim kayıt defterine bu bir dize yazar. Kapsayıcı uygulamaları denetimi örneğini oluşturmak için şu dizeyi kullanın.  
   
- Varsayılan olarak, Denetim türü kimliği içinde belirtilen proje adı dayanır **yeni proje** iletişim kutusu ve kısa ad. Bu ad, tür adının eşleşmesi gerekir.  
+   Varsayılan olarak, Denetim türü kimliği, belirtilen proje adı dayanır **yeni proje** iletişim kutusu ve kısa ad. Bu ad, tür adı eşleşmelidir.  
   
- Varsayılan olarak, Denetim türü kimliği aşağıdaki gibi görünür:  
+   Varsayılan olarak, Denetim türü kimliği aşağıdaki gibi görünür:  
   
- *ProjectName.ShortName*Ctrl.1  
+   *ProjectName.ShortName*Ctrl.1  
   
- Bu iletişim kutusunda kısa adını değiştirirseniz, Denetim türü kimliği aşağıdaki gibi görünür:  
+   Bu iletişim kutusunda kısa adını değiştirirseniz, Denetim türü kimliği şu şekilde görünür:  
   
- *ProjectName.NewShortName*Ctrl.1  
+   *ProjectName.NewShortName*Ctrl.1  
   
- **PropPage sınıf adı**  
- Varsayılan olarak, ile kısa adına özellik sayfası sınıfın adını dayanır `C` öneki olarak ve `PropPage` soneki olarak. Örneğin, Denetim kısa adı ise `Price`, özellik sayfasında sınıf adı `CPricePropPage`. Bu adı ile eklenen denetim sınıf adı eşleşmelidir `PropPage`.  
+- **PropPage sınıf adı**
+
+   Varsayılan olarak, özellik sayfası sınıfının adını kısa adına, ile dayalı `C` öneki olarak ve `PropPage` soneki olarak. Örneğin, Denetim kısa adı ise `Price`, özellik sayfası sınıfı adı `CPricePropPage`. Bu ad, protokolün denetim sınıfı adı eşleşmelidir `PropPage`.  
   
- **PropPage .h dosyası**  
- Varsayılan olarak, özellik sayfasında üstbilgi dosyası adını kısa adına sahip olarak dayanır bir `PropPage` soneki olarak ve `.h` dosya uzantısı olarak. Örneğin, Denetim kısa adı ise `Price`, özellik sayfasında üstbilgi dosya adı `PricePropPage.h`. Bu sınıf adı adıyla aynı olmalıdır.  
+- **PropPage .h dosyası**
+
+   Varsayılan olarak, özellik sayfasında üst bilgi dosyası adını kısa adına, ile olarak dayalı bir `PropPage` soneki olarak ve `.h` dosya uzantısı. Örneğin, Denetim kısa adı ise `Price`, özellik sayfa üst bilgisi dosya adı `PricePropPage.h`. Bu ad, sınıf adı eşleşmelidir.  
   
- **PropPage .cpp dosyası**  
- Varsayılan olarak, özellik sayfasında uygulama dosyasının adı kısa adına sahip olarak dayanır bir `PropPage` soneki olarak ve `.cpp` dosya uzantısı olarak. Örneğin, Denetim kısa adı ise `Price`, özellik sayfasında üstbilgi dosya adı `PricePropPage.cpp`. Bu ad üstbilgi dosyası adı eşleşmelidir.  
+- **PropPage .cpp dosyası**
+
+   Varsayılan olarak, özellik sayfası uygulama dosyasının adı kısa adına, ile olarak dayalı bir `PropPage` soneki olarak ve `.cpp` dosya uzantısı. Örneğin, Denetim kısa adı ise `Price`, özellik sayfa üst bilgisi dosya adı `PricePropPage.cpp`. Bu ad, üst bilgi dosyası adı eşleşmelidir.  
   
- **PropPage türü adı**  
- Varsayılan olarak, özellik sayfasında türü adı arkasından kısa ad dayanır `Property Page`. Örneğin, Denetim kısa adı ise `Price`, özellik sayfasında tür adı `Price Property Page`. Bu alandaki değer değiştirirseniz, denetim sınıf adını gösterir emin olun.  
+- **PropPage tür adı**
+
+   Varsayılan olarak, ardından kısa adı, özellik sayfa türü adı dayanır `Property Page`. Örneğin, Denetim kısa adı ise `Price`, özellik sayfa türü adı `Price Property Page`. Bu alandaki değer değiştirirseniz, denetim sınıfı adı gösterir emin olun.  
   
- **PropPage türü kimliği**  
- Özellik sayfası sınıfı Kimliğini ayarlar. Bir projeye uygulandığında denetimi bu dize kayıt defterinde yazar. Bir kapsayıcı uygulama denetimin özellik sayfası örneği oluşturmak için bu dizeyi kullanır.  
+- **PropPage tür kimliği**
+
+   Özellik sayfası sınıfının bir kimlik ayarlar. Bir projeye uygulandığında denetim kayıt defterinde bu bir dize yazar. Bir kapsayıcı uygulaması denetimin özellik sayfasının bir örneğini oluşturmak için bu dizeyi kullanır.  
   
- Varsayılan olarak, özellik sayfasında türü kimliği içinde belirtilen proje adı dayanır **yeni proje** iletişim kutusu ve kısa ad. Bu ad, tür adının eşleşmesi gerekir.  
+   Varsayılan olarak, belirtilen proje adı, özellik sayfa türü kimliği dayanır **yeni proje** iletişim kutusu ve kısa ad. Bu ad, tür adı eşleşmelidir.  
   
- Varsayılan olarak, özellik sayfasında türü kimliği aşağıdaki gibi görünür:  
+   Varsayılan olarak, özellik sayfa türü kimliği aşağıdaki gibi görünür:  
   
- *ProjectName.ShortName*PropPage.1  
+   *ProjectName.ShortName*PropPage.1  
   
- Bu iletişim kutusunda kısa adını değiştirirseniz, özellik sayfasında türü kimliği aşağıdaki gibi görünür:  
+   Bu iletişim kutusunda kısa adını değiştirirseniz, özellik sayfa türü kimliği şu şekilde görünür:  
   
- *ProjectName.NewShortName*PropPage.1  
+   *ProjectName.NewShortName*PropPage.1  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC ActiveX Denetim Sihirbazı](../../mfc/reference/mfc-activex-control-wizard.md)   

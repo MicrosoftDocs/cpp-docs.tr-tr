@@ -1,5 +1,5 @@
 ---
-title: -PROFILE (performans araçları Profil Oluşturucusu) | Microsoft Docs
+title: -PROFILE (performans araçları Profiler) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,53 +17,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 15379914b4c4852e3065d1abc03c2ce1b17fb044
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 859ea4091502fa6c339a809a5b9e439c91462bd7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377124"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707776"
 ---
 # <a name="profile-performance-tools-profiler"></a>/PROFILE (Performans Araçları Profil Oluşturucusu)
-Performans araçları Profil Oluşturucu ile kullanılan bir çıktı dosyası oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/PROFILE  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / PROFILE bağlayıcı şunlardan anlamına gelir:  
-  
--   [/ OPT: BAŞVURU](../../build/reference/opt-optimizations.md)  
-  
--   / OPT: NOICF  
-  
--   [/ INCREMENTAL: HAYIR](../../build/reference/incremental-link-incrementally.md)  
-  
--   [/ SABİT: HAYIR](../../build/reference/fixed-fixed-base-address.md)  
-  
- / PROFILE bağlayıcı program görüntüyü yeniden konumlandırma bölüm oluşturmak neden olur.  Yeniden konumlandırma bölümü profil verileri almak için program görüntü dönüştürmek profil oluşturucu sağlar.  
-  
- **/ PROFİL** yalnızca yalnızca (takım geliştirme) Enterprise sürümlerinde kullanılabilir.  PREfast hakkında daha fazla bilgi için bkz: [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
-  
-3.  Genişletme **bağlayıcı** düğümü.  
-  
-4.  Seçin **Gelişmiş** özellik sayfası.  
-  
-5.  Değiştirme **profil** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Performans araçları Profilcisi ile kullanılabilecek bir çıkış dosyası üretir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/PROFILE
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ PROFILE bağlayıcı şunlardan anlamına gelir:
+
+- [/ OPT: REF](../../build/reference/opt-optimizations.md)
+
+- / OPT: NOICF
+
+- [/ INCREMENTAL: NO](../../build/reference/incremental-link-incrementally.md)
+
+- [/ FIXED: NO](../../build/reference/fixed-fixed-base-address.md)
+
+/ PROFILE bağlayıcı program görüntüyü bir yeniden konumlandırma bölümü oluşturmak neden olur.  Bir yeniden konumlandırma bölümü profil verilerini almak için program görüntüyü dönüştürmek profil oluşturucu sağlar.
+
+**/ PROFİL** yalnızca (takım geliştirme) Enterprise sürümlerinde kullanılabilir.  PREfast hakkında daha fazla bilgi için bkz. [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Genişletin **yapılandırma özellikleri** düğümü.
+
+1. Genişletin **bağlayıcı** düğümü.
+
+1. Seçin **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **profili** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.Profile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

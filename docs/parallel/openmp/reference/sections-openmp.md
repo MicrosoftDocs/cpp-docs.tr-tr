@@ -1,5 +1,5 @@
 ---
-title: bölümler (OpenMP) | Microsoft Docs
+title: bölümleri (OpenMP) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,15 +17,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60bc94685a7e6128e22cc3545ae8702abe6d472e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d3b369cfbd68edd32b644c9a4ec0520329507b6e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692083"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708038"
 ---
 # <a name="sections-openmp"></a>sections (OpenMP)
-Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.  
+Tüm iş parçacıkları arasında bölünmesi için kod bölümleri tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,14 +39,13 @@ Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.
 }  
 ```  
   
+## <a name="arguments"></a>Arguments
+
+*Yan tümcesi*<br/>
+(İsteğe bağlı) Sıfır veya daha fazla tümceciği. Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **bölümleri**.
+
 ## <a name="remarks"></a>Açıklamalar  
- Burada,  
-  
- `clause` (isteğe bağlı)  
- Sıfır veya daha çok yan tümceleri. Tarafından desteklenen yan tümceleri bir listesi için Açıklamalar bölümüne bakın **bölümleri**.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Bölümleri** yönergesi sıfır veya daha fazla içerebilir **bölüm** yönergeleri.  
+ **Bölümleri** yönergesi, sıfır veya daha fazla içerebilir **bölümü** yönergeleri.  
   
  **Bölümleri** yönergesi aşağıdaki OpenMP yan tümceleri destekler:  
   
@@ -60,9 +59,9 @@ Tüm iş parçacıkları arasında bölünür için kod bölümleri tanımlar.
   
 -   [reduction](../../../parallel/openmp/reference/reduction.md)  
   
- Varsa **paralel** de belirtilirse, `clause` herhangi bir koşul tarafından kabul **paralel** veya **bölümleri** yönergeleri, dışında `nowait`.  
+ Varsa **paralel** de belirtilirse, `clause` herhangi yan tümcesi tarafından kabul edilebilen **paralel** veya **bölümleri** yönergeleri dışında `nowait`.  
   
- Daha fazla bilgi için bkz: [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md).  
+ Daha fazla bilgi için [2.4.2 sections yapı](../../../parallel/openmp/2-4-2-sections-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

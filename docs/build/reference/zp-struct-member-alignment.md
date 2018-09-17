@@ -21,16 +21,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1666da40f748d18c762eae19595692addcdbf78a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0268f5c5d5d34d8fa244dc6260889bea6b1e837a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715916"
 ---
 # <a name="zp-struct-member-alignment"></a>/Zp (Yapı Üyesi Hizalama)
 
-Bir yapı üyeleri belleğe nasıl paketlenmiş denetler ve tüm yapılar aynı sevk modülde belirtir.
+Bir yapının üyelerine belleğe nasıl paketlenir denetler ve tüm yapıları için aynı paket bir modülde belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,24 +38,24 @@ Bir yapı üyeleri belleğe nasıl paketlenmiş denetler ve tüm yapılar aynı 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Belirttiğinizde **/Zp**_n_ seçeneği, ilk iki üye türü boyutuna depolandıktan sonra her yapısı üye veya *n*-bayt sınırları (burada *n* 1, 2, 4, 8 ya da 16), hangisi daha küçüktür.
+Belirttiğinizde **/ZP**_n_ seçeneği, ilk iki üye türü boyutuna depolandıktan sonra her yapı üyesi veya *n*-baytlık sınırlar (burada *n* 1, 2, 4, 8 veya 16 olan), hangisi daha küçükse.
 
-Kullanılabilir paket değerleri aşağıdaki tabloda açıklanmıştır:
+Kullanılabilir paketleme değerleri aşağıdaki tabloda açıklanmıştır:
 
 |/ZP bağımsız değişken|Efekt|
 |-|-|
-|1.|1-bayt sınırları yapıları paketleri. Aynı **/Zp**.|
-|2|2-bayt sınırları yapıları paketleri.|
-|4|4-bayt sınırları yapıları paketleri.|
-|8|Paketleri yapıları 8 baytlık sınırlarda (varsayılan).|
-|16| Yapıları 16 bayt sınırları paketleri.|
+|1.|1 baytlık sınırlardaki yapıları paketler. Aynı **/ZP**.|
+|2|2 baytlık sınırlardaki yapıları paketler.|
+|4|4 baytlık sınırlardaki yapıları paketler.|
+|8|(Varsayılan) 8 baytlık sınırlardaki yapıları paketler.|
+|16| 16 baytlık sınırlardaki yapıları paketler.|
 
-Belirli bir uyum gereksinimlerin sürece bu seçeneği kullanmamanız gerekir.
+Hizalama belirli gereksinimleriniz yoksa bu seçeneği kullanmamanız gerekir.
 
-> [!WARNING]  
-> C++ üstbilgi Windows SDK'sındaki varsayın **/Zp8** paket. Bellek Bozulması oluşabilir **/Zp** Windows SDK üst bilgilerinin kullanırken ayarı değiştirildi.
+> [!WARNING]
+> Windows SDK'sındaki C++ üstbilgi varsayar **/zp8** paketleme. Bellek Bozulması oluşabilir **/ZP** Windows SDK'sı üst bilgileri kullanırken ayarı değiştirildi.
 
-Aynı zamanda [paketi](../../preprocessor/pack.md) denetim yapısı paket için. Hizalama hakkında daha fazla bilgi için bkz.
+Ayrıca [paketi](../../preprocessor/pack.md) denetim yapısı paketleme için. Hizalama hakkında daha fazla bilgi için bkz.
 
 - [align](../../cpp/align-cpp.md)
 
@@ -67,7 +67,7 @@ Aynı zamanda [paketi](../../preprocessor/pack.md) denetim yapısı paket için.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **C/C++** > **kod oluşturma** özellik sayfası.
 
@@ -75,9 +75,9 @@ Aynı zamanda [paketi](../../preprocessor/pack.md) denetim yapısı paket için.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.StructMemberAlignment%2A>.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
 - [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

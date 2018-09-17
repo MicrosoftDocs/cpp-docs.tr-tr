@@ -1,5 +1,5 @@
 ---
-title: '&lt;Gelecekteki&gt; numaralandırmaları | Microsoft Docs'
+title: '&lt;Gelecekteki&gt; sabit listeleri | Microsoft Docs'
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,14 +8,14 @@ f1_keywords:
 - future/std::future_status
 - future/std::launch
 ms.assetid: 8c675645-db47-4cab-bc0e-7b87f8a302df
-ms.openlocfilehash: 6e228eb538a0d281dff8066390b0c6dd2e7ea4d8
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 0056d54844e9396d517fd44c3649f1bc9605829b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33843853"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700563"
 ---
-# <a name="ltfuturegt-enums"></a>&lt;Gelecekteki&gt; numaralandırmaları
+# <a name="ltfuturegt-enums"></a>&lt;Gelecekteki&gt; sabit listeleri
 
 ||||
 |-|-|-|
@@ -23,26 +23,40 @@ ms.locfileid: "33843853"
 
 ## <a name="future_errc"></a>  future_errc numaralandırması
 
-Sağladığı tüm tarafından bildirilen hataları için simgesel adları [future_error](../standard-library/future-error-class.md) sınıfı.
+Tüm tarafından bildirilen hataları için simgesel adlar sağlar [future_error](../standard-library/future-error-class.md) sınıfı.
 
-sınıf future_errc {broken_promise, future_already_retrieved, promise_already_satisfied, no_state};
+```cpp
+class future_errc {
+   broken_promise,
+   future_already_retrieved,
+   promise_already_satisfied,
+   no_state
+   };
+```
 
 ## <a name="future_status"></a>  future_status numaralandırması
 
-Zamanlanmış bekleme işlevi döndürebilir nedeniyle simgesel adları sağlar.
+Zamanlanmış bekleme işlevi döndürebilir nedenleri için simgesel adlar sağlar.
 
 ```cpp
-enum future_status{    ready,
+enum future_status{
+    ready,
     timeout,
- deferred};
+    deferred
+};
 ```
 
 ## <a name="launch"></a>  launch numaralandırması
 
-Şablon işlevi için olası modları tanımlayan bir bit maskesi türünü temsil eden [zaman uyumsuz](../standard-library/future-functions.md#async).
+Şablon işlevi için olası modları açıklar bir bit maskesi türünü temsil eden [zaman uyumsuz](../standard-library/future-functions.md#async).
 
-sınıf başlatma {ertelenmiş zaman uyumsuz,};
+```cpp
+class launch{
+   async,
+   deferred
+   };
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[\<sonraki >](../standard-library/future.md)<br/>
+[\<gelecek >](../standard-library/future.md)<br/>

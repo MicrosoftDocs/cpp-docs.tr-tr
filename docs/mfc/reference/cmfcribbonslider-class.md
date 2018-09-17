@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0816a490a4375504168b11d8055ddbe41dae2109
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 165dbf85e22a6f30089bbf1523068057b972b7e8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465168"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709338"
 ---
 # <a name="cmfcribbonslider-class"></a>CMFCRibbonSlider sınıfı
 `CMFCRibbonSlider` Sınıfı bir Şerit çubuğuna veya Şerit durum çubuğuna ekleyebileceğiniz kaydırıcı denetimi uygular. Şerit kaydırıcı denetimi Office 2007 uygulamalarında görünen yakınlaştırma kaydırıcılarına benzer.  
@@ -112,8 +112,8 @@ CMFCRibbonSlider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Kaydırıcı kimliği.  
+*nID*<br/>
+[in] Kaydırıcı kimliği.  
   
  [in]. *nWidth*  
  Kaydırıcı piksel cinsinden genişliği.  
@@ -207,11 +207,11 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPos*  
- Kaydırıcısını konumu belirtir. Kaydırıcı başlangıcına göre konumdur.  
+*nPos*<br/>
+[in] Kaydırıcısını konumu belirtir. Kaydırıcı başlangıcına göre konumdur.  
   
- [in] *bRedraw*  
- TRUE ise, kaydırıcıyı çizilir.  
+*bRedraw*<br/>
+[in] TRUE ise, kaydırıcıyı çizilir.  
   
 ##  <a name="setrange"></a>  CMFCRibbonSlider::SetRange  
  Kaydırıcı denetimi için değer aralığını ayarlayın.  
@@ -223,11 +223,11 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nMin*  
- Kaydırıcı denetimi en küçük değerini belirtir.  
+*nMin*<br/>
+[in] Kaydırıcı denetimi en küçük değerini belirtir.  
   
- [in] *nMax*  
- Kaydırıcı denetimi en büyük değerini belirtir.  
+*nMax*<br/>
+[in] Kaydırıcı denetimi en büyük değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Minimum ve maksimum değerleri ayarlayarak kaydırıcı denetimi için değer aralığını belirtir.  
@@ -251,8 +251,8 @@ void SetZoomIncrement(int nZoomIncrement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nZoomIncrement*  
- Kaydırıcı denetimi yakınlaştırma artışı belirtir.  
+*nZoomIncrement*<br/>
+[in] Kaydırıcı denetimi yakınlaştırma artışı belirtir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

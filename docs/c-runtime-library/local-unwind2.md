@@ -29,15 +29,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bee1decf5b5a3676e6111960282c19e87628c48
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4774156f36e5f929db1c5ddd35f423caa5cf7831
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391385"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702513"
 ---
 # <a name="localunwind2"></a>_local_unwind2
-İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicileri çalışır.  
+İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicilerini çalıştırır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,16 +49,16 @@ void _local_unwind2(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `xr`  
- Bir kapsam tablo ile ilişkilendirilmiş bir kaydolma kaydı.  
+*XR*<br/>
+[in] Bir kapsam tablo ile ilişkilendirilmiş bir kaydolma kaydı.  
   
- [in] `stop`  
- Yeri gösteren sözcük düzeyi `_local_unwind2` durdurmanız gerekir.  
+*Durdur*<br/>
+[in] Yeri belirten sözcük düzeyi `_local_unwind2` durdurmanız gerekir.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu yöntem yalnızca çalışma zamanı ortamı tarafından kullanılır. Yöntemi, kodunuzda çağırmayın.  
   
- Sonlandırma işleyicileri bu yöntem yürütür, geçerli sözcük düzeyinde başlar ve works kendi şekilde düzeyi, ulaşana kadar sözcük düzeylerinde tarafından belirtilir `stop`. Sonlandırma işleyicileri tarafından gösterilen düzeyinde yürütmez `stop`.  
+ Sonlandırma işleyicileri bu yöntem yürütür, geçerli sözcük düzeyinde başlar ve works düzeyi, ulaşana kadar sözcük düzeylerinde yedekleme yolu tarafından belirtilen `stop`. Sonlandırma işleyicileri tarafından belirtilen düzeyde yürütmez `stop`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

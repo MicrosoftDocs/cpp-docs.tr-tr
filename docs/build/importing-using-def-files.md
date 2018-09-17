@@ -18,57 +18,59 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b36a68267251f76294ec6f3a0391ffa5f259704c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3e1562e14b20e4e1dd96764414978889d6205179
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368863"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710547"
 ---
 # <a name="importing-using-def-files"></a>DEF Dosyalarını Kullanarak İçeri Aktarma
-Kullanmayı seçerseniz **__declspec(dllimport)** .def dosyası ile birlikte, hatalı kodlamanın bir soruna neden olasılığını azaltmak için veri SABİTİ yerine kullanılacak .def dosyası değiştirmeniz gerekir:  
-  
-```  
-// project.def  
-LIBRARY project  
-EXPORTS  
-   ulDataInDll   DATA  
-```  
-  
- Aşağıdaki tabloda nedenini gösterir.  
-  
-|Anahtar sözcüğü|İçeri aktarma kitaplığı'nda yayar|Dışarı aktarma|  
-|-------------|---------------------------------|-------------|  
-|`CONSTANT`|`_imp_ulDataInDll`, `_ulDataInDll`|`_ulDataInDll`|  
-|`DATA`|`_imp_ulDataInDll`|`_ulDataInDll`|  
-  
- Kullanarak **__declspec(dllimport)** ve sabit listeleri her ikisi de `imp` sürümü ve .lib DLL ve adı açıkça bağlama izin vermek için oluşturulan kitaplığı içeri aktarın. Kullanarak **__declspec(dllimport)** ve veri listeler yalnızca `imp` adının sürümü.  
-  
- Sabit kullanırsanız, aşağıdaki kod yapılarından birini kullanılabilir erişimi `ulDataInDll`:  
-  
-```  
-__declspec(dllimport) ULONG ulDataInDll; /*prototype*/  
-if (ulDataInDll == 0L)   /*sample code fragment*/  
-```  
-  
- -veya-  
-  
-```  
-ULONG *ulDataInDll;      /*prototype*/  
-if (*ulDataInDll == 0L)  /*sample code fragment*/  
-```  
-  
- Ancak, veri .def dosyanızda kullanırsanız, yalnızca aşağıdaki tanımıyla derlenmiş kod değişkenine erişebileceği `ulDataInDll`:  
-  
-```  
-__declspec(dllimport) ULONG ulDataInDll;  
-  
-if (ulDataInDll == 0L)   /*sample code fragment*/  
-```  
-  
- SABİTİ kullanarak olduğundan daha riskli yöneltme ek düzeyini kullanmayı unutursanız, büyük olasılıkla alma adresi tablonun işaretçi değişkenine erişebilir — değişkenin kendisine değil. İçeri aktarma adres tablosu derleyici ve bağlayıcı tarafından salt okunur yapılmıştır çünkü bu tür sorunlar genelde bir erişim ihlali olarak bildirilebilir.  
-  
- Bu durumda hesaba .def dosyası SABİTİNDE görürse geçerli Visual C++ bağlayıcı bir uyarı verir. SABİTİ kullanmak için yalnızca gerçek neden, burada üstbilgi dosyası değil listesinde bazı nesne dosyası derleyememenizdir **__declspec(dllimport)** prototipinde.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)
+
+Kullanmayı tercih ederseniz **__declspec(dllimport)** .def dosyası ile birlikte kodlama yanlış bir soruna neden olasılığını azaltmak için veri SABİTİ yerine kullanılacak .def dosyasını değiştirmeniz gerekir:
+
+```
+// project.def
+LIBRARY project
+EXPORTS
+   ulDataInDll   DATA
+```
+
+Aşağıdaki tabloda neden olduğunu göstermektedir.
+
+|Anahtar sözcüğü|İçeri aktarma kitaplığı'nda yayar|Dışarı aktarma|
+|-------------|---------------------------------|-------------|
+|`CONSTANT`|`_imp_ulDataInDll`, `_ulDataInDll`|`_ulDataInDll`|
+|`DATA`|`_imp_ulDataInDll`|`_ulDataInDll`|
+
+Kullanarak **__declspec(dllimport)** ve sabit listelerini her ikisi de `imp` sürümü ve DLL .lib düzenlenmemiş adını açık bağlama izin verecek şekilde oluşturulan kitaplık içeri aktarın. Kullanarak **__declspec(dllimport)** ve veri listeleri yalnızca `imp` adının sürümü.
+
+SABİTİ kullanıyorsanız, aşağıdaki kod yapılarından birini kullanılabilir erişimi `ulDataInDll`:
+
+```
+__declspec(dllimport) ULONG ulDataInDll; /*prototype*/
+if (ulDataInDll == 0L)   /*sample code fragment*/
+```
+
+\-veya -
+
+```
+ULONG *ulDataInDll;      /*prototype*/
+if (*ulDataInDll == 0L)  /*sample code fragment*/
+```
+
+Ancak, .def dosyasında veri kullanırsanız, yalnızca aşağıdaki tanımıyla derlenmiş kod değişkenine erişebileceği `ulDataInDll`:
+
+```
+__declspec(dllimport) ULONG ulDataInDll;
+
+if (ulDataInDll == 0L)   /*sample code fragment*/
+```
+
+SABİTİ kullanarak olduğundan daha sakıncalıdır ek yöneltme düzeyi kullanılacak unutursanız, potansiyel olarak içeri aktarma adres tablosunun işaretçi değişkenine erişebilir — değişkenin kendisine değil. İçeri aktarma adres tablosunda derleyici ve bağlayıcı tarafından salt okunur yapıldığı için bu tür sorunlar genellikle bir erişim ihlali olarak bildirilebilir.
+
+Bu durumda hesap için .def dosyasında SABİTİ görürse, geçerli Visual C++ bağlayıcı bir uyarı verir. Burada üstbilgi dosyasının değil listesinde bazı nesne dosyası derlemeniz olamaz, SABİTİ kullanmak için yalnızca gerçek neden olduğu **__declspec(dllimport)** prototipinde.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

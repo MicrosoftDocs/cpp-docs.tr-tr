@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5782cf051fe680cb99dcd99c8e9c2d050c4184cc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7bfa501834102e37c14de11ee1af84a21e82c35f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758137"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703852"
 ---
 # <a name="ccomgitptr-class"></a>Ccomgıtptr sınıfı
 
@@ -130,17 +130,17 @@ CComGITPtr(CComGITPtr&& rv);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *p*  
-Genel arabirim tablosu (GIT) depolanması için bir arabirim işaretçisi.
+*p*<br/>
+[in] Genel arabirim tablosu (GIT) depolanması için bir arabirim işaretçisi.
 
-[in] *git*  
-Var olan bir başvuru `CComGITPtr` nesne.
+*Git*<br/>
+[in] Var olan bir başvuru `CComGITPtr` nesne.
 
-[in] *dwCookie*  
-Arabirim işaretçisi tanımlamak için kullanılan tanımlama bilgisi.
+*dwCookie*<br/>
+[in] Arabirim işaretçisi tanımlamak için kullanılan tanımlama bilgisi.
 
-[in] *önlemek için rv*  
-Kaynak `CComGITPtr` verileri taşımak için nesne.
+*önlemek için RV*<br/>
+[in] Kaynak `CComGITPtr` verileri taşımak için nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -238,17 +238,17 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *p*  
-Bir arabirim işaretçisi.
+*p*<br/>
+[in] Bir arabirim işaretçisi.
 
-[in] *git*  
-Bir başvuru bir `CComGITPtr` nesne.
+*Git*<br/>
+[in] Bir başvuru bir `CComGITPtr` nesne.
 
-[in] *dwCookie*  
-Arabirim işaretçisi tanımlamak için kullanılan tanımlama bilgisi.
+*dwCookie*<br/>
+[in] Arabirim işaretçisi tanımlamak için kullanılan tanımlama bilgisi.
 
-[in] *önlemek için rv*  
-`CComGITPtr` Verileri taşımak için.
+*önlemek için RV*<br/>
+[in] `CComGITPtr` Verileri taşımak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

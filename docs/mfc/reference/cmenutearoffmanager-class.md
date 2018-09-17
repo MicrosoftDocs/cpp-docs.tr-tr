@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b05c93bbdfd09bc28288b27a55520c5ac664b723
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 0ca3af6aba4c208672038de2ca663efdb2cc9d9a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465732"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700940"
 ---
 # <a name="cmenutearoffmanager-class"></a>CMenuTearOffManager sınıfı
 Etiket menülerini yönetir. Bir etiket menü menü çubuğunda bir menü ' dir. Kullanıcının bir etiket menü menü çubuğundan kaydırmak ayrılabilir menüyü menü neden kaldırabilirsiniz.  
@@ -99,8 +99,8 @@ void Build(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiTearOffBarID*  
- [in] *strText*  
+*uiTearOffBarID*<br/>
+[in] [in] *strText*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -136,14 +136,14 @@ BOOL Initialize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszRegEntry*  
- Bir kayıt defteri girişi yolunu içeren bir dize. Uygulamalarınız bu kayıt defteri girdisi etkinleştiriliyorken çubukları için ayarları depolar.  
+*lpszRegEntry*<br/>
+[in] Bir kayıt defteri girişi yolunu içeren bir dize. Uygulamalarınız bu kayıt defteri girdisi etkinleştiriliyorken çubukları için ayarları depolar.  
   
- [in] *uiTearOffMenuFirst*  
- Bir etiket menü ilk menü kimliği.  
+*uiTearOffMenuFirst*<br/>
+[in] Bir etiket menü ilk menü kimliği.  
   
- [in] *uiTearOffMenuLast*  
- Bir etiket menü son menü kimliği.  
+*uiTearOffMenuLast*<br/>
+[in] Bir etiket menü son menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -201,8 +201,8 @@ void SetInUse(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdId*  
- [in] *bBilinmeyen*  
+*uiCmdId*<br/>
+[in] [in] *bBilinmeyen*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

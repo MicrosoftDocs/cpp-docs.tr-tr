@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4ce0ef6ba923332d03972e2bd8b7ebb1f1cfb9e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2251aefebd6805cfd071d014ad6be30cbea065bb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205709"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711236"
 ---
 # <a name="arm-exception-handling"></a>ARM özel durum işleme
 
@@ -175,26 +175,26 @@ Paketlenmiş geriye doğru izleme biçimi işlevi geriye doğru izleme açıklam
 1. Sanal işlem bulunur yapısı toplam boyutunu açıklayan ve anahtar işlevi veri sağlayan bir 1 veya 2 sözcük üstbilgisi. İkinci sözcük yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* alanları her ikisi de 0 olarak ayarlanır. Bu tablodaki alanlar belirtilir:
 
    |Word|Bits|Amaç|
-    |----------|----------|-------------|
-    |0|0-17|*İşlev uzunluğu* işlevi 2 ile bölünen bayt cinsinden toplam uzunluğunu belirten bir 18 bit alanıdır. Bir işlev 512 KB'den büyükse, .pdata ve .xdata birden çok kayıt işlevi tanımlamak için kullanılmalıdır. Ayrıntılar için bu belgede büyük işlevler bölümüne bakın.|
-    |0|18-19|*Vers* 2-bit alanı, kalan xdata sürümü açıklanmaktadır. Yalnızca 0 sürümü şu anda tanımlanır; 1-3, değerler ayrılmıştır.|
-    |0|20|*X* varlığı (1) veya özel durum verileri yokluğu (0) gösteren bir 1 bit alanıdır.|
-    |0|21|*E* olan ek kapsam gerektiren yerine tek bir kapanış açıklayan bilgileri (1) üstbilgisine iyileştirmesiyle doludur gösteren bir 1 bit alanı sözcükleri sonraki (0).|
-    |0|22|*F* bu kaydı işlevi parça (1) veya tam bir işlev (0) açıklayan gösteren bir 1 bit alanıdır. Bir parça yok prolog olduğunu ve tüm prolog işleme yoksayılıp yoksayılmaması gerektiğini gösterir.|
-    |0|23-27|*Kapanış sayısı* durumuna bağlı olarak iki anlama sahip 5-bit alanı *E* bit:<br /><br /> -Eğer *E* 0'dır, bu alan 3 bölümünde açıklanan özel durum kapsamları toplam sayısı bir sayıdır. Birden fazla 31 kapsamları işlevi ve ardından bu alan varsa ve *kod sözcükleri* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.<br />-Eğer *E* 1, bu alan yalnızca kapanış açıklayan ilk geriye doğru izleme kodu dizinini belirtir.|
-    |0|28-31|*Kod sözcük* tüm bölüm 4'teki geriye doğru izleme kodları içermesi için gerekli 32 bit sözcük sayısını belirten bir 4-bit alanıdır. En fazla 63 geriye doğru izleme kodu bayt için bu alan 15'ten fazla sözcük gerekiyorsa ve *kapanış sayısı* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.|
-    |1.|0-15|*Kapanış sayısı Genişletilmiş* sonuçları olağan dışı derecede büyük sayıda kodlama için daha fazla alan sağlayan bir 16 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
-    |1.|16-23|*Kod sözcük Genişletilmiş* olağan dışı derecede büyük bir geriye doğru izleme kodu sözcük sayısını kodlama için daha fazla alan sağlayan bir 8 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
-    |1.|24-31|Ayrılmış|
+   |----------|----------|-------------|
+   |0|0-17|*İşlev uzunluğu* işlevi 2 ile bölünen bayt cinsinden toplam uzunluğunu belirten bir 18 bit alanıdır. Bir işlev 512 KB'den büyükse, .pdata ve .xdata birden çok kayıt işlevi tanımlamak için kullanılmalıdır. Ayrıntılar için bu belgede büyük işlevler bölümüne bakın.|
+   |0|18-19|*Vers* 2-bit alanı, kalan xdata sürümü açıklanmaktadır. Yalnızca 0 sürümü şu anda tanımlanır; 1-3, değerler ayrılmıştır.|
+   |0|20|*X* varlığı (1) veya özel durum verileri yokluğu (0) gösteren bir 1 bit alanıdır.|
+   |0|21|*E* olan ek kapsam gerektiren yerine tek bir kapanış açıklayan bilgileri (1) üstbilgisine iyileştirmesiyle doludur gösteren bir 1 bit alanı sözcükleri sonraki (0).|
+   |0|22|*F* bu kaydı işlevi parça (1) veya tam bir işlev (0) açıklayan gösteren bir 1 bit alanıdır. Bir parça yok prolog olduğunu ve tüm prolog işleme yoksayılıp yoksayılmaması gerektiğini gösterir.|
+   |0|23-27|*Kapanış sayısı* durumuna bağlı olarak iki anlama sahip 5-bit alanı *E* bit:<br /><br /> -Eğer *E* 0'dır, bu alan 3 bölümünde açıklanan özel durum kapsamları toplam sayısı bir sayıdır. Birden fazla 31 kapsamları işlevi ve ardından bu alan varsa ve *kod sözcükleri* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.<br />-Eğer *E* 1, bu alan yalnızca kapanış açıklayan ilk geriye doğru izleme kodu dizinini belirtir.|
+   |0|28-31|*Kod sözcük* tüm bölüm 4'teki geriye doğru izleme kodları içermesi için gerekli 32 bit sözcük sayısını belirten bir 4-bit alanıdır. En fazla 63 geriye doğru izleme kodu bayt için bu alan 15'ten fazla sözcük gerekiyorsa ve *kapanış sayısı* alanı hem de ayarlanması gerekir 0 için bir uzantı Word'ün gerekli olduğunu belirtmek için.|
+   |1.|0-15|*Kapanış sayısı Genişletilmiş* sonuçları olağan dışı derecede büyük sayıda kodlama için daha fazla alan sağlayan bir 16 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
+   |1.|16-23|*Kod sözcük Genişletilmiş* olağan dışı derecede büyük bir geriye doğru izleme kodu sözcük sayısını kodlama için daha fazla alan sağlayan bir 8 bit alanıdır. Bu alan içeren uzantı sözcüğünü yalnızca var ise *kapanış sayısı* ve *kod sözcükleri* ilk üstbilgi sözcük alanlarında hem de 0 olarak ayarlanır.|
+   |1.|24-31|Ayrılmış|
 
 2. Özel durum verileri sonra (varsa *E* bit üst bilgisindeki 0 olarak ayarlanmıştır), başlangıç uzaklığını artan sıraya göre depolanır ve bir Word paketlenmiş kapanış kapsamları hakkında bilgi listesidir. Her kapsam, bu alanları içerir:
 
    |Bits|Amaç|
-    |----------|-------------|
-    |0-17|*Kapanış başlangıç uzaklığı* kapanış, 2, işlev başlangıcını göre bölü bayt uzaklığı açıklayan bir 18 bit alanıdır.|
-    |18-19|*Res* gelecekteki genişleme için ayrılmış bir 2 bit alanıdır. Değeri 0 olmalıdır.|
-    |20-23|*Koşul* altında kapanış yürütülen koşulu sağlayan bir 4-bit alanıdır. Koşulsuz sonuçları için "her zaman" gösteren 0xE ayarlamanız gerekir. (Bir kapanış tamamen koşullu ya da tamamen koşulsuz olmalıdır ve ilk yönerge sonra BT opcode ile kapanış Thumb-2 modunda başlar.)|
-    |24-31|*Kapanış başlangıç dizini* bu kapanış açıklayan ilk geriye doğru izleme kodu bayt dizinini belirten bir 8 bit alanıdır.|
+   |----------|-------------|
+   |0-17|*Kapanış başlangıç uzaklığı* kapanış, 2, işlev başlangıcını göre bölü bayt uzaklığı açıklayan bir 18 bit alanıdır.|
+   |18-19|*Res* gelecekteki genişleme için ayrılmış bir 2 bit alanıdır. Değeri 0 olmalıdır.|
+   |20-23|*Koşul* altında kapanış yürütülen koşulu sağlayan bir 4-bit alanıdır. Koşulsuz sonuçları için "her zaman" gösteren 0xE ayarlamanız gerekir. (Bir kapanış tamamen koşullu ya da tamamen koşulsuz olmalıdır ve ilk yönerge sonra BT opcode ile kapanış Thumb-2 modunda başlar.)|
+   |24-31|*Kapanış başlangıç dizini* bu kapanış açıklayan ilk geriye doğru izleme kodu bayt dizinini belirten bir 8 bit alanıdır.|
 
 3. Bu makalede geriye doğru izleme kodları bölümünde ayrıntılı olarak açıklanan geriye doğru izleme kodları içeren bir bayt dizisi kapanış kapsam listesi çağrıldıktan sonra. Bu dizi için en yakın tam sözcük sınırı sonunda sıfır eklenir. Küçük endian modunda doğrudan getirilebilir, böylece bayt little endian sırayla depolanır.
 
@@ -358,16 +358,16 @@ Daha karmaşık bir özel durum işlevi parçaların *sabit*, işlevinde kaydı 
 
 ```asm
 ShrinkWrappedFunction
-     push   {r4, lr}          ; A: save minimal non-volatiles
-     sub    sp, sp, #0x100    ; A: allocate all stack space up front
-     ...                     ; A:
-     add    r0, sp, #0xE4     ; A: prepare to do the inner save
-     stm    r0, {r5-r11}      ; A: save remaining non-volatiles
-     ...                     ; B:
-     add    r0, sp, #0xE4     ; B: prepare to do the inner restore
-     ldm    r0, {r5-r11}      ; B: restore remaining non-volatiles
-     ...                     ; C:
-     pop    {r4, pc}          ; C:
+    push   {r4, lr}          ; A: save minimal non-volatiles
+    sub    sp, sp, #0x100    ; A: allocate all stack space up front
+    ...                      ; A:
+    add    r0, sp, #0xE4     ; A: prepare to do the inner save
+    stm    r0, {r5-r11}      ; A: save remaining non-volatiles
+    ...                      ; B:
+    add    r0, sp, #0xE4     ; B: prepare to do the inner restore
+    ldm    r0, {r5-r11}      ; B: restore remaining non-volatiles
+    ...                      ; C:
+    pop    {r4, pc}          ; C:
 ```
 
 Naylon işlevleri genellikle normal prolog içinde ek kayıt kaydeder alan önceden ayırmak için beklenen ve kayıt kaydeder kullanarak gerçekleştirin `str` veya `stm` yerine `push`. Bu işlevin özgün prolog içinde tüm yığın işaretçisi işleme tutar.
@@ -386,14 +386,14 @@ Bir yönerge için bölge B girişinden önce yığını düzenlenmesini azaltı
 
 ```asm
 ShrinkWrappedFunction
-     push   {r4, lr}          ; A: save minimal non-volatile registers
-     sub    sp, sp, #0xE0     ; A: allocate minimal stack space up front
-     ...                     ; A:
-     push   {r4-r9}           ; A: save remaining non-volatiles
-     ...                     ; B:
-     pop    {r4-r9}           ; B: restore remaining non-volatiles
-     ...                     ; C:
-     pop    {r4, pc}          ; C: restore non-volatile registers
+    push   {r4, lr}          ; A: save minimal non-volatile registers
+    sub    sp, sp, #0xE0     ; A: allocate minimal stack space up front
+    ...                      ; A:
+    push   {r4-r9}           ; A: save remaining non-volatiles
+    ...                      ; B:
+    pop    {r4-r9}           ; B: restore remaining non-volatiles
+    ...                      ; C:
+    pop    {r4, pc}          ; C: restore non-volatile registers
 ```
 
 Burada her yönerge sınırında yığın geriye doğru izleme kodları bölge ile tam olarak tutarlı olduğunu anahtardır. Bu örnekte iç anında iletme önce bir geriye doğru izleme meydana gelirse, A bölgesinin bir parçası olarak kabul edilir ve yalnızca bir giriş bölgesi geriye doğru çözülür. Geriye doğru izleme iç anında iletme sonra meydana gelirse, hiçbir prolog var, ancak iç anında iletme hem özgün prolog A. benzer bir mantık bölgeden açıklayan geriye doğru izleme kodları olan B bölgesinin bir parçası için iç pop tutan kabul edilir.
@@ -749,6 +749,5 @@ Function:
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)  
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
-
+[ARM ABI Kurallarına Genel Bakış](../build/overview-of-arm-abi-conventions.md)<br/>
+[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)

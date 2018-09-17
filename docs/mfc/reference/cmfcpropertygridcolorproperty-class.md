@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 164e54ccbd9365e7e4fb2c1989f84891e5813c2f
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 7b1023ff59af0f64d5205447e6e7b17ead1f5186
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849179"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705841"
 ---
 # <a name="cmfcpropertygridcolorproperty-class"></a>CMFCPropertyGridColorProperty sınıfı
 `CMFCPropertyGridColorProperty` Sınıfı, bir renk seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
@@ -103,20 +103,20 @@ CMFCPropertyGridColorProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strName*  
- Özelliğin adı.  
+*strName*<br/>
+[in] Özelliğin adı.  
   
- [in] *rengi*  
- Özelliğin renk değeri.  
+*Renk*<br/>
+[in] Özelliğin renk değeri.  
   
- [in] *pPalette*  
- Renk paleti işaretçisi. Varsayılan değer NULL olur.  
+*pPalette*<br/>
+[in] Renk paleti işaretçisi. Varsayılan değer NULL olur.  
   
- [in] *lpszDescr*  
- Özellik açıklaması. Varsayılan değer NULL olur.  
+*lpszDescr*<br/>
+[in] Özellik açıklaması. Varsayılan değer NULL olur.  
   
- [in] *dwData*  
- Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
+*dwData*<br/>
+[in] Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
   
 ##  <a name="enableautomaticbutton"></a>  CMFCPropertyGridColorProperty::EnableAutomaticButton  
  Sağlar *otomatik* renk seçimi iletişim kutusunu düğmesi. (Standart otomatik düğme **otomatik**.)  
@@ -129,14 +129,14 @@ void EnableAutomaticButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Otomatik düğmenin etiket metni.  
+*lpszLabel*<br/>
+[in] Otomatik düğmenin etiket metni.  
   
- [in] *colorAutomatic*  
- Otomatik (varsayılan) renk RGB renk değeri.  
+*colorAutomatic*<br/>
+[in] Otomatik (varsayılan) renk RGB renk değeri.  
   
- [in] *bSistemlerde*  
- Otomatik düğmenin etkinleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Otomatik düğmenin etkinleştirmek için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -151,14 +151,14 @@ void EnableOtherButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Diğer düğmenin etiket metni.  
+*lpszLabel*<br/>
+[in] Diğer düğmenin etiket metni.  
   
- [in] *bAltColorDlg*  
- Görüntülemek true `CMFCColorDialog` ; iletişim kutusu Standart renk seçimi iletişim kutusunu görüntülemek için FALSE. Varsayılan değer True'dur.  
+*bAltColorDlg*<br/>
+[in] Görüntülemek true `CMFCColorDialog` ; iletişim kutusu Standart renk seçimi iletişim kutusunu görüntülemek için FALSE. Varsayılan değer True'dur.  
   
- [in] *bSistemlerde*  
- Bir düğme görüntülemek için TRUE; Aksi takdirde FALSE.  Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Bir düğme görüntülemek için TRUE; Aksi takdirde FALSE.  Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -182,8 +182,8 @@ void SetColor(COLORREF color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Bir RGB renk değeri.  
+*Renk*<br/>
+[in] Bir RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -195,8 +195,8 @@ void SetColumnsNumber(int nColumnsNumber);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nColumnsNumber*  
- Tercih edilen renk özellik kılavuzunda sütun sayısı.  
+*nColumnsNumber*<br/>
+[in] Tercih edilen renk özellik kılavuzunda sütun sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem değerini ayarlar `m_nColumnsNumber` veri üyesi korumalı.  
@@ -209,8 +209,8 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *varValue*  
- Bir değer.  
+*varValue*<br/>
+[in] Bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanım [CMFCPropertyGridProperty::ResetOriginalValue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) düzenlenmiş bir özelliğin özgün değeri sıfırlamak için yöntemi.  

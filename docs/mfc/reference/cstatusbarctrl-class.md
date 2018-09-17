@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a555cc26e8857899690852743fa177a706afa0f2
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 94d56a6defbc47a133e3f583daab188921622d84
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677751"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711814"
 ---
 # <a name="cstatusbarctrl-class"></a>CStatusBarCtrl sınıfı
 Windows ortak durum çubuğu denetimi işlevlerini sağlar.  
@@ -261,7 +261,7 @@ HICON GetIcon(int iPart) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iPart*|Alınacak simge içeren bölümü sıfır tabanlı dizini. Bu parametreyi -1 olması durumunda, durum çubuğu basit mod durum çubuğu olduğu varsayılır.|  
+|*iPart*|[in] Alınacak simge içeren bölümü sıfır tabanlı dizini. Bu parametreyi -1 olması durumunda, durum çubuğu basit mod durum çubuğu olduğu varsayılır.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Simge tanıtıcı, başarılı; yöntemi Aksi takdirde NULL.  
@@ -521,8 +521,8 @@ BOOL SetSimple(BOOL bSimple = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSimple*  
- Görüntü türü bayrak. Bu parametre TRUE ise, basit metin denetimi görüntüler; FALSE ise, birden fazla bölümü görüntüler.  
+*bSimple*<br/>
+[in] Görüntü türü bayrak. Bu parametre TRUE ise, basit metin denetimi görüntüler; FALSE ise, birden fazla bölümü görüntüler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman 0 değerini döndürür.  

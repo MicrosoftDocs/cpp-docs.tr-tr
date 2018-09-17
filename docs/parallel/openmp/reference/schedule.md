@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d00db7daf5c2c9882c1d54ac054ee285de1fdac4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 32c05f2c4740e978d58540727067ea0d76d95871
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691839"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712159"
 ---
 # <a name="schedule"></a>zamanlama
-Uygulandığı öğe [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  
+Uygulandığı [için](../../../parallel/openmp/reference/for-openmp.md) yönergesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,11 +44,11 @@ schedule(type[,size])
   
 -   `static`  
   
- `size` (isteğe bağlı)  
- Yineleme boyutunu belirtir. `size` bir tamsayı olmalıdır. Geçersiz olduğunda `type` olan `runtime`.  
+*Boyutu*<br/>
+(İsteğe bağlı) Yinelemeler boyutunu belirtir. `size` bir tamsayı olmalıdır. Geçersiz zaman `type` olduğu `runtime`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  
+ Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

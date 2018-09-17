@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5817d44657fa429bdce19f8641255d7db630eac7
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 4aa0f8e94e0797badbae2a409ae1ce02caea6e81
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38954870"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707544"
 ---
 # <a name="weakptr-class"></a>weak_ptr Sınıfı
 
@@ -77,8 +77,8 @@ public:
 
 ### <a name="parameters"></a>Parametreler
 
-*Ty*  
- Zayıf işaretçiyle kontrol edilen tür.
+*Ty*<br/>
+Zayıf işaretçiyle kontrol edilen tür.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -290,14 +290,14 @@ weak_ptr& operator=(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*  
- Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-*WP*  
- Kopyalamak için zayıf işaretçi.
+*WP*<br/>
+Kopyalamak için zayıf işaretçi.
 
-*SP*  
- Kopyalamak için paylaşılan işaretçi.
+*SP*<br/>
+Kopyalamak için paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -349,8 +349,8 @@ bool owner_before(const weak_ptr<Other>& ptr);
 
 ### <a name="parameters"></a>Parametreler
 
-*ptr*  
- Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
+*ptr*<br/>
+Bir `lvalue` başvuru ya da bir `shared_ptr` veya `weak_ptr`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -409,8 +409,8 @@ void swap(weak_ptr& wp);
 
 ### <a name="parameters"></a>Parametreler
 
-*WP*  
- İle takas için zayıf işaretçi.
+*WP*<br/>
+İle takas için zayıf işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -529,14 +529,14 @@ weak_ptr(const shared_ptr<Other>& sp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*  
- Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
+*Diğer*<br/>
+Bağımsız değişken paylaşılan zayıf işaretçiyle kontrol edilen tür.
 
-*WP*  
- Kopyalamak için zayıf işaretçi.
+*WP*<br/>
+Kopyalamak için zayıf işaretçi.
 
-*SP*  
- Kopyalamak için paylaşılan işaretçi.
+*SP*<br/>
+Kopyalamak için paylaşılan işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
 

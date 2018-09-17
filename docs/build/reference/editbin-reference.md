@@ -19,24 +19,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e1e9963328d328767d97b3af34e20b1d2a1840b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 809d1d4f25611b2310d651702f01e1e98888ad4a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465081"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699953"
 ---
 # <a name="editbin-reference"></a>EDITBIN Başvurusu
-Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. Exe dosyası) ikili dosyaları ortak nesne dosyası biçimi (COFF) değiştirir. Nesne dosyaları, yürütülebilir dosyalar ve dinamik bağlantı kitaplıklarını (DLL) değiştirileceğini EDITBIN kullanabilirsiniz.  
-  
+
+Microsoft COFF ikili dosya Düzenleyicisi'ni (EDITBIN. Exe dosyası) ikili dosyaları ortak nesne dosyası biçimi (COFF) değiştirir. Nesne dosyaları, yürütülebilir dosyalar ve dinamik bağlantı kitaplıklarını (DLL) değiştirileceğini EDITBIN kullanabilirsiniz.
+
 > [!NOTE]
->  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.  
-  
- EDITBIN ile üretilen dosyaları kullanmak için erişilebilir değil [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyalara yapılan tüm değişiklikler, yeniden derlemeden ve bağlama elde gerekecektir.  
-  
--   [EDITBIN komut satırı](../../build/reference/editbin-command-line.md)  
-  
--   [EDITBIN seçenekleri](../../build/reference/editbin-options.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)
+>  Bu araç yalnızca Visual Studio komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor.
+
+EDITBIN ile üretilen dosyaları kullanmak için erişilebilir değil [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği. /GL ile üretilen ikili dosyalara yapılan tüm değişiklikler, yeniden derlemeden ve bağlama elde gerekecektir.
+
+- [EDITBIN komut satırı](../../build/reference/editbin-command-line.md)
+
+- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)

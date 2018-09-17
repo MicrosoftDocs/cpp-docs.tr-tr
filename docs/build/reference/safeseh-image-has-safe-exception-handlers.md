@@ -18,107 +18,109 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9156fd0d4d0433cfb975c242bc87008471bc4723
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 035485540135fb3b3b082de630b31d6bf934b3d9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466071"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713888"
 ---
 # <a name="safeseh-image-has-safe-exception-handlers"></a>/SAFESEH (Görüntüde Güvenli Özel Durum İşleyicileri Var)
-```  
-/SAFESEH[:NO]  
-```  
-  
- Zaman **SAFESEH** belirtildiğinde, bağlayıcı yalnızca ilişkilendiren bir görüntü, görüntünün güvenli özel durum işleyicileri tablosu oluşturabilir. Bu tabloda görüntüye ait geçerli özel durum işleyicilerine işletim sistemini belirtir.  
-  
- **/ SAFESEH** x86 için bağlanırken yalnızca geçerli olan hedefler. **/ SAFESEH** zaten belirtilen özel durum işleyicileri var platformlar için desteklenmiyor. Örneğin, x64 ve ARM, tüm özel durum işleyicileri PDATA içinde belirtilmiştir. ML64.exe ml64 işlevleri aracılığıyla geriye doğru izleme olanak tanıyan, görüntüye (XDATA ve PDATA) SEH bilgileri yayma ek açıklamaları ekleme desteği vardır. Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) daha fazla bilgi için.  
-  
- Varsa **SAFESEH** belirtilmezse, tüm modüller güvenli özel durum işleme özelliği ile uyumlu değilse, bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretir. Modüllerin özellik Güvenli özel durum işleme ile uyumlu değilse, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretmek yazılmayacak söz konusu alt sistemlerde hiçbirine değişiklik bilgilerini kullanın.  
-  
- Varsa **/SAFESEH:NO** belirtildiğinde, bağlayıcı olmayan ilişkilendiren görüntünün güvenli özel durum işleyicileri tablosu ile özellik Güvenli özel durum işleme ile uyumlu olan tüm modülleri olsa bile.  
-  
- Görüntü üretmek yükleyemeyecektir bağlayıcı en yaygın nedeni, bir veya daha fazla bağlayıcı giriş dosyaları (modülleri) güvenli özel durum işleyicileri özelliği ile uyumlu olmadığından olmasıdır. Visual C++'ın önceki bir sürümden bir derleyici ile oluşturulduğundan bir modül, güvenli özel durum işleyicileri ile uyumlu olmaması için yaygın bir nedeni var.  
-  
- Kullanarak bir yapılandırılmış özel durum işleyici bir işlev kaydedebilirsiniz [. SAFESEH](../../assembler/masm/dot-safeseh.md).  
-  
- Mevcut bir işaretlemek mümkün değildir ikili olarak güvenli özel durum işleyicileri (veya hiçbir özel durum işleyicileri); oluşturma zamanında güvenli özel durum işleme hakkında bilgi eklenmesi gerekir.  
-  
- Bağlayıcı'nın Güvenli özel durum işleyicileri tablosu oluşturma olanağı, C çalışma zamanı kitaplığı kullanarak uygulamaya bağlıdır. İle bağlarsanız [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) ve, güvenli özel durum işleyicileri tablosu istiyorsanız, bir yük yapılandırma yapısı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamak gereken Visual C++ için tanımlanmış olan tüm girişleri içerir. Örneğin:  
-  
-```  
-#include <windows.h>  
-extern DWORD_PTR __security_cookie;  /* /GS security cookie */  
-  
-/*  
- * The following two names are automatically created by the linker for any  
- * image that has the safe exception table present.  
-*/  
-  
-extern PVOID __safe_se_handler_table[]; /* base of safe handler entry table */  
-extern BYTE  __safe_se_handler_count;  /* absolute symbol whose address is  
-                                           the count of table entries */  
-typedef struct {  
-    DWORD       Size;  
-    DWORD       TimeDateStamp;  
-    WORD        MajorVersion;  
-    WORD        MinorVersion;  
-    DWORD       GlobalFlagsClear;  
-    DWORD       GlobalFlagsSet;  
-    DWORD       CriticalSectionDefaultTimeout;  
-    DWORD       DeCommitFreeBlockThreshold;  
-    DWORD       DeCommitTotalFreeThreshold;  
-    DWORD       LockPrefixTable;            // VA  
-    DWORD       MaximumAllocationSize;  
-    DWORD       VirtualMemoryThreshold;  
-    DWORD       ProcessHeapFlags;  
-    DWORD       ProcessAffinityMask;  
-    WORD        CSDVersion;  
-    WORD        Reserved1;  
-    DWORD       EditList;                   // VA  
-    DWORD_PTR   *SecurityCookie;  
-    PVOID       *SEHandlerTable;  
-    DWORD       SEHandlerCount;  
-} IMAGE_LOAD_CONFIG_DIRECTORY32_2;  
-  
-const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {  
-    sizeof(IMAGE_LOAD_CONFIG_DIRECTORY32_2),  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    0,  
-    &__security_cookie,  
-    __safe_se_handler_table,  
-    (DWORD)(DWORD_PTR) &__safe_se_handler_count  
-};  
-```  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **bağlayıcı** klasör.  
-  
-3.  Seçin **komut satırı** özellik sayfası.  
-  
-4.  Seçeneğini girin **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/SAFESEH[:NO]
+```
+
+Zaman **SAFESEH** belirtildiğinde, bağlayıcı yalnızca ilişkilendiren bir görüntü, görüntünün güvenli özel durum işleyicileri tablosu oluşturabilir. Bu tabloda görüntüye ait geçerli özel durum işleyicilerine işletim sistemini belirtir.
+
+**/ SAFESEH** x86 için bağlanırken yalnızca geçerli olan hedefler. **/ SAFESEH** zaten belirtilen özel durum işleyicileri var platformlar için desteklenmiyor. Örneğin, x64 ve ARM, tüm özel durum işleyicileri PDATA içinde belirtilmiştir. ML64.exe ml64 işlevleri aracılığıyla geriye doğru izleme olanak tanıyan, görüntüye (XDATA ve PDATA) SEH bilgileri yayma ek açıklamaları ekleme desteği vardır. Bkz: [x64 (ml64.exe) için MASM](../../assembler/masm/masm-for-x64-ml64-exe.md) daha fazla bilgi için.
+
+Varsa **SAFESEH** belirtilmezse, tüm modüller güvenli özel durum işleme özelliği ile uyumlu değilse, bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretir. Modüllerin özellik Güvenli özel durum işleme ile uyumlu değilse, elde edilen görüntü güvenli özel durum işleyicileri tablosu içermez. Varsa [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) WINDOWSCE veya EFI_ * seçeneklerden birini belirtir bağlayıcı görüntünün güvenli özel durum işleyicileri tablosu ile üretmek yazılmayacak söz konusu alt sistemlerde hiçbirine değişiklik bilgilerini kullanın.
+
+Varsa **/SAFESEH:NO** belirtildiğinde, bağlayıcı olmayan ilişkilendiren görüntünün güvenli özel durum işleyicileri tablosu ile özellik Güvenli özel durum işleme ile uyumlu olan tüm modülleri olsa bile.
+
+Görüntü üretmek yükleyemeyecektir bağlayıcı en yaygın nedeni, bir veya daha fazla bağlayıcı giriş dosyaları (modülleri) güvenli özel durum işleyicileri özelliği ile uyumlu olmadığından olmasıdır. Visual C++'ın önceki bir sürümden bir derleyici ile oluşturulduğundan bir modül, güvenli özel durum işleyicileri ile uyumlu olmaması için yaygın bir nedeni var.
+
+Kullanarak bir yapılandırılmış özel durum işleyici bir işlev kaydedebilirsiniz [. SAFESEH](../../assembler/masm/dot-safeseh.md).
+
+Mevcut bir işaretlemek mümkün değildir ikili olarak güvenli özel durum işleyicileri (veya hiçbir özel durum işleyicileri); oluşturma zamanında güvenli özel durum işleme hakkında bilgi eklenmesi gerekir.
+
+Bağlayıcı'nın Güvenli özel durum işleyicileri tablosu oluşturma olanağı, C çalışma zamanı kitaplığı kullanarak uygulamaya bağlıdır. İle bağlarsanız [/nodefaultlıb](../../build/reference/nodefaultlib-ignore-libraries.md) ve, güvenli özel durum işleyicileri tablosu istiyorsanız, bir yük yapılandırma yapısı (loadcfg.c CRT kaynak dosyasında bulunan gibi) sağlamak gereken Visual C++ için tanımlanmış olan tüm girişleri içerir. Örneğin:
+
+```
+#include <windows.h>
+extern DWORD_PTR __security_cookie;  /* /GS security cookie */
+
+/*
+* The following two names are automatically created by the linker for any
+* image that has the safe exception table present.
+*/
+
+extern PVOID __safe_se_handler_table[]; /* base of safe handler entry table */
+extern BYTE  __safe_se_handler_count;  /* absolute symbol whose address is
+                                           the count of table entries */
+typedef struct {
+    DWORD       Size;
+    DWORD       TimeDateStamp;
+    WORD        MajorVersion;
+    WORD        MinorVersion;
+    DWORD       GlobalFlagsClear;
+    DWORD       GlobalFlagsSet;
+    DWORD       CriticalSectionDefaultTimeout;
+    DWORD       DeCommitFreeBlockThreshold;
+    DWORD       DeCommitTotalFreeThreshold;
+    DWORD       LockPrefixTable;            // VA
+    DWORD       MaximumAllocationSize;
+    DWORD       VirtualMemoryThreshold;
+    DWORD       ProcessHeapFlags;
+    DWORD       ProcessAffinityMask;
+    WORD        CSDVersion;
+    WORD        Reserved1;
+    DWORD       EditList;                   // VA
+    DWORD_PTR   *SecurityCookie;
+    PVOID       *SEHandlerTable;
+    DWORD       SEHandlerCount;
+} IMAGE_LOAD_CONFIG_DIRECTORY32_2;
+
+const IMAGE_LOAD_CONFIG_DIRECTORY32_2 _load_config_used = {
+    sizeof(IMAGE_LOAD_CONFIG_DIRECTORY32_2),
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    &__security_cookie,
+    __safe_se_handler_table,
+    (DWORD)(DWORD_PTR) &__safe_se_handler_count
+};
+```
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Seçin **bağlayıcı** klasör.
+
+1. Seçin **komut satırı** özellik sayfası.
+
+1. Seçeneğini girin **ek seçenekler** kutusu.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

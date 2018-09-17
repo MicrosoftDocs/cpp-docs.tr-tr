@@ -21,66 +21,68 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 712c22bec1d6ce2d67208de9a139dff7621ad4cd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ea6ea90460f3fd28724ee1fd34dfdeb3f6ae80b2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376565"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711782"
 ---
 # <a name="using-verify-instead-of-assert"></a>ASSERT Yerine VERIFY Kullanma
-Hata ayıklama sürümü, MFC Uygulama çalıştırdığınızda, olduğunu herhangi bir sorun varsayalım. Ancak, aynı uygulama sürümünü kilitlenmeler, hatalı sonuçlar döndürür ve/veya başka bir anormal davranışı sergiler.  
-  
- Doğru bir şekilde gerçekleştirir doğrulamak için bir onay deyimi önemli kod yerleştirdiğinizde bu soruna neden olabilir. ASSERT deyimleri bir MFC programı yayın derleme dışı bırakılır olduğundan, bir yayın derleme kodu çalışmaz.  
-  
- Bir işlev çağrısı başarılı olduğunu doğrulamak için ASSERT kullanıyorsanız kullanmayı [doğrula](../../mfc/reference/diagnostic-services.md#verify) yerine. VERIFY makrosu hem hata ayıklama kendi değişkenlerinde değerlendirir ve uygulamanın sürüm oluşturur.  
-  
- Başka bir işlevin dönüş değeri geçici bir değişkene atayın ve ardından değişkeni bir onay deyimi sınamak için bir tekniktir tercih edilir.  
-  
- Aşağıdaki kod parçası inceleyin:  
-  
-```  
-enum {  
-    sizeOfBuffer = 20  
-};  
-char *buf;  
-ASSERT(buf = (char *) calloc(sizeOfBuffer, sizeof(char) ));  
-strcpy_s( buf, sizeOfBuffer, "Hello, World" );  
-free( buf );  
-```  
-  
- Bu kodu bir hata ayıklama MFC uygulaması sürümünde kusursuz şekilde çalışır. Varsa çağrısı `calloc( )` başarısız dosya ve satır numarası içeren bir tanılama iletisi görüntülenir. Ancak, bir perakende bir MFC uygulamasına oluşturun:  
-  
--   çağrı `calloc( )` hiçbir zaman oluşur, bırakarak `buf` başlatılmadı, veya  
-  
--   `strcpy_s( )` kopya "`Hello, World`" bellek, büyük olasılıkla uygulama kilitlenen veya yanıt vermeyi sisteme neden rastgele bir parçası olarak veya  
-  
--   `free()` hiçbir zaman ayrılmış Bellek boşaltmak çalışır.  
-  
- ASSERT doğru bir şekilde kullanmak için kodu örneği aşağıdaki değiştirilmelidir:  
-  
-```  
-enum {  
-    sizeOfBuffer = 20  
-};  
-char *buf;  
-buf = (char *) calloc(sizeOfBuffer, sizeof(char) );  
-ASSERT( buf != NULL );  
-strcpy_s( buf, sizeOfBuffer, "Hello, World" );  
-free( buf );  
-```  
-  
- Veya bunun yerine doğrula kullanabilirsiniz:  
-  
-```  
-enum {  
-    sizeOfBuffer = 20  
-};  
-char *buf;  
-VERIFY(buf = (char *) calloc(sizeOfBuffer, sizeof(char) ));  
-strcpy_s( buf, sizeOfBuffer, "Hello, World" );  
-free( buf );  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)
+
+MFC uygulamanızı hata ayıklama sürümünü çalıştırdığınızda, herhangi bir sorun yok varsayalım. Ancak aynı uygulamanın yayın sürümünü çöküyor, hatalı sonuçlar verir ve/veya bazı diğer anormal bir davranış gösteriyor.
+
+Doğru bir şekilde gerçekleştirir doğrulamak için bir onay deyimi önemli kod yerleştirdiğinizde bu soruna neden olabilir. MFC programı bir yayın derlemesinin ASSERT deyimleri satırlarıdır olduğundan, bir yayın yapı içinde kod çalıştırmaz.
+
+Bir işlev çağrısı başarılı olduğunu doğrulamak için onayı kullanıyorsanız, kullanmayı [doğrulama](../../mfc/reference/diagnostic-services.md#verify) yerine. VERIFY makrosu hem hata ayıklama bağımsız kendi değişkenlerini değerlendirir ve uygulamayı yayın oluşturur.
+
+Başka bir tekniktir işlevin dönüş değeri geçici bir değişkene atayın ve ardından değişkeni bir onay deyimi içinde test etmek için tercih edilir.
+
+Aşağıdaki kod parçası inceleyin:
+
+```
+enum {
+    sizeOfBuffer = 20
+};
+char *buf;
+ASSERT(buf = (char *) calloc(sizeOfBuffer, sizeof(char) ));
+strcpy_s( buf, sizeOfBuffer, "Hello, World" );
+free( buf );
+```
+
+Bu kod, bir MFC uygulaması, bir hata ayıklama sürümünde mükemmel bir şekilde çalışır. Çağrı `calloc( )` başarısız dosya ve satır numarası içeren bir tanılama iletisi görünür. Ancak, bir perakende bir MFC uygulaması oluşturun:
+
+- çağrı `calloc( )` hiçbir zaman oluşur, bırakarak `buf` başlatılmamış, veya
+
+- `strcpy_s( )` kopya "`Hello, World`" bellek, büyük olasılıkla uygulama kilitlenme veya sistem yanıt vermeyi durdurmasına neden rastgele bir parçası olarak veya
+
+- `free()` hiçbir zaman ayrılan belleği boşaltmak çalışır.
+
+ASSERT doğru bir şekilde kullanmak için kodu örneği aşağıdaki değiştirilmelidir:
+
+```
+enum {
+    sizeOfBuffer = 20
+};
+char *buf;
+buf = (char *) calloc(sizeOfBuffer, sizeof(char) );
+ASSERT( buf != NULL );
+strcpy_s( buf, sizeOfBuffer, "Hello, World" );
+free( buf );
+```
+
+Veya bunun yerine doğrulama kullanabilirsiniz:
+
+```
+enum {
+    sizeOfBuffer = 20
+};
+char *buf;
+VERIFY(buf = (char *) calloc(sizeOfBuffer, sizeof(char) ));
+strcpy_s( buf, sizeOfBuffer, "Hello, World" );
+free( buf );
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

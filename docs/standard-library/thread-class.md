@@ -33,12 +33,12 @@ helpviewer_keywords:
 - std::thread [C++], swap
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47afdbd5e4a5045ec5f91f8f766b45d3d547ba3e
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: f0606258ada9a3b4298bdb9710f3c3021e793b8e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38958211"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706894"
 ---
 # <a name="thread-class"></a>thread Sınıfı
 
@@ -200,8 +200,8 @@ thread& operator=(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*  
- A **iş parçacığı** nesne.
+*Diğer*<br/>
+A **iş parçacığı** nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -223,8 +223,8 @@ void swap(thread& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*Diğer*  
- A **iş parçacığı** nesne.
+*Diğer*<br/>
+A **iş parçacığı** nesne.
 
 ## <a name="thread"></a>  Thread::thread Oluşturucusu
 
@@ -240,14 +240,14 @@ thread(thread&& Other) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*F*  
- İş parçacığı tarafından yürütülecek bir uygulama tanımlı işlev.
+*F*<br/>
+İş parçacığı tarafından yürütülecek bir uygulama tanımlı işlev.
 
-*A*  
- Geçirilecek bağımsız değişkenler listesi *F*.
+*A*<br/>
+Geçirilecek bağımsız değişkenler listesi *F*.
 
-*Diğer*  
- Mevcut bir **iş parçacığı** nesne.
+*Diğer*<br/>
+Mevcut bir **iş parçacığı** nesne.
 
 ### <a name="remarks"></a>Açıklamalar
 

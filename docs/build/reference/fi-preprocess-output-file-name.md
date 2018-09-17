@@ -19,41 +19,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e7fe5ffbb8a6ccdd5ef02d2cf3feb6b94d48233
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: dfe9e54dbafbcbd27763060dc9d81b21bac2503d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371518"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709409"
 ---
 # <a name="fi-preprocess-output-file-name"></a>/Fi (Çıktı Dosyası Adını Önişle)
-Çıktı dosyasına adını belirtir [/P (dosyaya Önişle)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği önceden işlenmiş çıktısı yazar.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Fipathname  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
-  
-|Parametre|Açıklama|  
-|---------------|-----------------|  
-|`pathname`|Çıktı dosyası yolu ve adı üretilen **/P** derleyici seçeneği.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kullanım **/Fi** derleyici seçeneği ile birlikte **/P** derleyici seçeneği.  
-  
- İçin bir yol belirtirseniz, `pathname` parametresi, kaynak dosyasının temel adı önceden işlenmiş çıkış dosyasının temel adı kullanılır. `pathname` Parametresi belirli dosya adı uzantısı gerektirmez. Ancak, bir dosya adı uzantısı belirtmezseniz, ".i" uzantısı kullanılır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki komut satırını PROGRAM.cpp preprocesses, Yorumlar korur, ekler [#line](../../preprocessor/hash-line-directive-c-cpp.md) yönergeleri ve sonucu MYPROCESS.i dosyasına yazar.  
-  
-```  
-CL /P /FiMYPROCESS.I PROGRAM.CPP  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [/P (dosyaya önişle)](../../build/reference/p-preprocess-to-a-file.md)   
- [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+
+Hangi çıkış dosyasının adını belirtir [/P (dosyaya ön işleme)](../../build/reference/p-preprocess-to-a-file.md) derleyici seçeneği önceden işlenmiş çıktı yazar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Fipathname
+```
+
+#### <a name="parameters"></a>Parametreler
+
+|Parametre|Açıklama|
+|---------------|-----------------|
+|`pathname`|Tarafından üretilen çıkış dosyasının yolunu ve adını **/P** derleyici seçeneği.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Kullanım **/FI** derleyici seçeneği ile birlikte **/P** derleyici seçeneği.
+
+İçin bir yol belirtirseniz `pathname` parametresi, kaynak dosyanın temel adı önceden işlenmiş çıktı dosyasının temel adı olarak kullanılır. `pathname` Parametre belirli dosya adı uzantısı gerektirmez. Ancak, bir dosya adı uzantısı belirtmezseniz ".i" uzantısı kullanılır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki komut satırını PROGRAM.cpp önceden işler, yorumları korur, ekler [#line](../../preprocessor/hash-line-directive-c-cpp.md) yönergeleri ve sonucu MYPROCESS.i dosyaya yazar.
+
+```
+CL /P /FiMYPROCESS.I PROGRAM.CPP
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[/P (dosyaya önişle)](../../build/reference/p-preprocess-to-a-file.md)
+[yol adını belirtme](../../build/reference/specifying-the-pathname.md)

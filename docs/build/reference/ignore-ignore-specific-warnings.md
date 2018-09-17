@@ -1,5 +1,5 @@
 ---
-title: -Yoksay (belirli uyarıları atla) | Microsoft Docs
+title: -Ignore (belirli uyarıları atla) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,57 +16,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b096fc12f69fbe637a3067646c20f6d520a9250f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aee498951c01c332dffe720dbd6e3b77c8121aa5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378015"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705867"
 ---
 # <a name="ignore-ignore-specific-warnings"></a>/IGNORE (Belirli Uyarıları Atla)
-```  
-/IGNORE:warning[,warning]  
-```  
-  
-## <a name="parameters"></a>Parametreler  
- `warning`  
- Bağlayıcı, 4000 için 4999 aralığında gizlemek için uyarı sayısı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, tüm uyarıları bağlantı raporlar. Belirtin **yoksay:** `warning` belirli bir uyarı numarası gizlemek için bağlayıcı bildirmek için. Birden çok uyarıları yok saymak için uyarı numaralarını virgülle ayırın.  
-  
- Bağlayıcı göz ardı yönelik bazı uyarılar izin vermiyor. Bu tabloda tarafından gizlenen olmayan uyarıların **Yoksay**:  
-  
-|Bağlayıcı uyarı||  
-|--------------------|-|  
-|LNK4017|`keyword` deyimi hedef platformu için desteklenmiyor; göz ardı|  
-|[LNK4044](../../error-messages/tool-errors/linker-tools-warning-lnk4044.md)|Tanınmayan seçenek '`option`'; yoksayıldı|  
-|LNK4062|'`option`'ile uyumlu değil'`architecture`' hedef makine; göz ardı seçeneği|  
-|[LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md)|yoksayılıyor "`option1`"son için"`option2`" belirtimi|  
-|[LNK4086](../../error-messages/tool-errors/linker-tools-warning-lnk4086.md)|EntryPoint '`function`'ile __stdcall değil'`number`' bağımsız değişkenleri; bayt görüntü çalıştıramıyor|  
-|LNK4088|/ Force seçeneği nedeniyle oluşturulan görüntü; Görüntü çalışmayabilir|  
-|[LNK4105](../../error-messages/tool-errors/linker-tools-warning-lnk4105.md)|seçeneğiyle belirtilen bağımsız değişken '`option`'; göz ardı anahtarı|  
-|LNK4203|Program veritabanı okunurken hata oluştu '`filename`'; hiç hata ayıklama bilgileri gibi nesne bağlama|  
-|[LNK4204](../../error-messages/tool-errors/linker-tools-warning-lnk4204.md)|'`filename`' hata ayıklama modülü; başvurma bilgileri eksik olan hiçbir hata ayıklama bilgileri gibi nesne bağlama|  
-|[LNK4205](../../error-messages/tool-errors/linker-tools-warning-lnk4205.md)|'`filename`' modülü; başvuran için geçerli hata ayıklama bilgileri eksik hiçbir hata ayıklama bilgileri gibi nesne bağlama|  
-|[LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md)|önceden derlenmiş türü bilgileri; bulunamadı '`filename`' bağlantılı ya da üzerine; hiç hata ayıklama bilgileri gibi nesne bağlama|  
-|LNK4207|'`filename`' /Yc /Yu /Z7 derlenmiş; hiç hata ayıklama bilgileri gibi PDB, / zi ile yeniden derleyebilirsiniz; bağlama nesnesi oluşturulamıyor|  
-|LNK4208|uyumsuz PDB biçiminde '`filename`'; silin ve yeniden oluşturun; hiç hata ayıklama bilgileri gibi nesne bağlama|  
-|LNK4209|hata ayıklama bilgileri bozuk; Modül derlenir; hata ayıklama bilgileri gibi nesne bağlama|  
-|[LNK4224](../../error-messages/tool-errors/linker-tools-warning-lnk4224.md)|`option` artık desteklenmemektedir; göz ardı|  
-|LNK4228|'`option`' geçersiz bir DLL için; yoksayıldı|  
-|[LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)|Geçersiz yönergesi /`directive` göz ardı; bulundu|  
-  
- Genel olarak, yoksayılamaz bağlayıcı uyarılarını derleme hataları, komut satırı hataları veya sorununu çözer yapılandırma hataları temsil eder.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  İçinde **bağlayıcı** klasöründe seçin **komut satırı** özellik sayfası.  
-  
-3.  Değiştirme **ek seçenekler** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+
+```
+/IGNORE:warning[,warning]
+```
+
+## <a name="parameters"></a>Parametreler
+
+*warning*<br/>
+Bağlayıcı, aralığında 4000 için 4999 gizlemek için uyarı sayısı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, tüm uyarılar bağlantısı bildirir. Belirtin **yoksay:** `warning` belirli bir uyarı numarası bastırmak için bağlayıcı söylemek için. Birden çok uyarılarını gözardı etme uyarı numaralarını virgülle ayırın.
+
+Bağlayıcı, bazı uyarılar yok sayılacak izin vermez. Bu tabloda tarafından gizlenen olmayan uyarıların **Yoksay**:
+
+|Bağlayıcı Uyarısı||
+|--------------------|-|
+|LNK4017|`keyword` deyimi; için hedef platform desteklenmiyor yoksayıldı|
+|[LNK4044](../../error-messages/tool-errors/linker-tools-warning-lnk4044.md)|Tanınmayan seçenek '`option`'; yoksayıldı|
+|LNK4062|'`option`'ile uyumlu değil'`architecture`' hedef makine; seçenek yoksayıldı|
+|[LNK4075](../../error-messages/tool-errors/linker-tools-warning-lnk4075.md)|yoksayma "`option1`"için"`option2`" belirtimi|
+|[LNK4086](../../error-messages/tool-errors/linker-tools-warning-lnk4086.md)|Giriş Noktası '`function`'ile __stdcall değildir'`number`' bayt bağımsız değişken; görüntü çalışmayabilir|
+|LNK4088|/ Force seçeneği nedeniyle oluşturulan görüntü; Görüntü çalışmayabilir|
+|[LNK4105](../../error-messages/tool-errors/linker-tools-warning-lnk4105.md)|seçeneği ile belirtilen hiçbir bağımsız değişken '`option`'; göz ardı anahtarı|
+|LNK4203|Program veritabanı okunurken hata oluştu '`filename`'; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|[LNK4204](../../error-messages/tool-errors/linker-tools-warning-lnk4204.md)|'`filename`' modülü; başvuru için hata ayıklama eksik nesne hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|[LNK4205](../../error-messages/tool-errors/linker-tools-warning-lnk4205.md)|'`filename`' başvuru modülü; için geçerli hata ayıklama bilgileri eksik nesne hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|[LNK4206](../../error-messages/tool-errors/linker-tools-warning-lnk4206.md)|önceden derlenmiş tür bilgileri bulunamadı; '`filename`' değil bağlantılı veya üzerine yazılmış; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|LNK4207|'`filename`' /Yc /Yu/z7 derledi; PDB; /Zi ile yeniden derleyin; bağlama nesnesi yok hata ayıklama bilgileri yokmuş gibi oluşturulamıyor|
+|LNK4208|içinde uyumsuz PDB formatı '`filename`'; silin ve yeniden derleyin; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|LNK4209|hata ayıklama bilgileri bozuk; Modülü yeniden derleyin; Nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor|
+|[LNK4224](../../error-messages/tool-errors/linker-tools-warning-lnk4224.md)|`option` artık desteklenmiyor; yoksayıldı|
+|LNK4228|'`option`' DLL için geçersiz; yoksayıldı|
+|[LNK4229](../../error-messages/tool-errors/linker-tools-warning-lnk4229.md)|Geçersiz yönerge /`directive` bulundu; yoksayıldı|
+
+Genel olarak, göz ardı edilemez bağlayıcı uyarılarını derleme hatalarını, komut satırı hataları veya düzelmeniz gerekmektedir yapılandırma hataları temsil eder.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. İçinde **bağlayıcı** klasörüne **komut satırı** özellik sayfası.
+
+1. Değiştirme **ek seçenekler** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.

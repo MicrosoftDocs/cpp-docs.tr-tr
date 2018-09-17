@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3531fd45bbccd351bd8f95ce0d4bb26de846b01
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 960a1a0338a3390fdc10cf03ddc235bcf4ecbae9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37039472"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712757"
 ---
 # <a name="cmfcspinbuttonctrl-class"></a>CMFCSpinButtonCtrl sınıfı
-`CMFCSpinButtonCtrl` Sınıfı, bir değer değiştirme düğmesi denetimi çizer visual Yöneticisi'ni destekler.  
+`CMFCSpinButtonCtrl` Sınıfı, bir değer değiştirme düğmesi denetimi çizen bir görsel yöneticiyi destekler.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,19 +41,19 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 |Ad|Açıklama|  
 |----------|-----------------|  
 |`CMFCSpinButtonCtrl::CMFCSpinButtonCtrl`|Varsayılan Oluşturucu.|  
-|`CMFCSpinButtonCtrl::~CMFCSpinButtonCtrl`|Yok Edicisi.|  
+|`CMFCSpinButtonCtrl::~CMFCSpinButtonCtrl`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCSpinButtonCtrl::OnDraw](#ondraw)|Geçerli değer değiştirme düğmesi denetimi şekilde yeniden boyar.|  
+|[CMFCSpinButtonCtrl::OnDraw](#ondraw)|Geçerli değer değiştirme düğmesi denetimi halinde yeniden boyar.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Değer değiştirme düğmesi denetimi uygulamanızda çizmek için görsel bir Yöneticisi'ni kullanmak için tüm örneklerinin yerine `CSpinButtonCtrl` ile sınıfı `CMFCSpinButtonCtrl` sınıfı.  
+ Uygulamanızda bir değer değiştirme düğmesi denetimi çizmek için bir görsel yöneticiyi kullanmak için tüm örneklerinin yerine `CSpinButtonCtrl` sınıfıyla `CMFCSpinButtonCtrl` sınıfı.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bir nesne oluşturmak gösterilmiştir `CMFCSpinButtonCtrl` sınıfı ve kullanmak, `Create` yöntemi.  
+ Aşağıdaki örnek, bir nesnenin oluşturulacağı gösterilmektedir `CMFCSpinButtonCtrl` kullanın ve sınıf kendi `Create` yöntemi.  
   
  [!code-cpp[NVC_MFC_RibbonApp#25](../../mfc/reference/codesnippet/cpp/cmfcspinbuttonctrl-class_1.cpp)]  
   
@@ -72,18 +72,18 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
  **Başlık:** afxspinbuttonctrl.h  
   
 ##  <a name="ondraw"></a>  CMFCSpinButtonCtrl::OnDraw  
- Geçerli değer değiştirme düğmesi denetimi şekilde yeniden boyar.  
+ Geçerli değer değiştirme düğmesi denetimi halinde yeniden boyar.  
   
 ```  
 virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Framework çağrıları `CMFCSpinButtonCtrl::OnPaint` yöntemini [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) ileti ve yöntemi sırayla bu çağırdığı `CMFCSpinButtonCtrl::OnDraw` yöntemi. Değer değiştirme düğmesi denetimi framework çizer biçimini özelleştirmek üzere bu yöntemi geçersiz kılın.  
+ Framework çağrıları `CMFCSpinButtonCtrl::OnPaint` işlemek için gereken yöntemini [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) iletisi ve yöntemi sırayla bu ProcessOrder `CMFCSpinButtonCtrl::OnDraw` yöntemi. Framework değer değiştirme düğmesi denetimi çizen biçimini özelleştirmek için bu yöntemi yok sayın.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

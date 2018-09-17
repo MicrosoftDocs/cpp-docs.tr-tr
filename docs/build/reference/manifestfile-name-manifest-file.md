@@ -18,39 +18,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b95337afc790436187c547bba108da2161b0738b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7d3869b0cb656e7bde9a12fb028f84d1d4d09965
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373354"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706985"
 ---
 # <a name="manifestfile-name-manifest-file"></a>/MANIFESTFILE (Bildirim Dosyasını Adlandır)
-```  
-/MANIFESTFILE:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / MANIFESTFILE bildirim dosyasının varsayılan adı değiştirmenize olanak verir.  Eklenen .manifest dosya adıyla bildirim dosyasının varsayılan addır.  
-  
- / MANIFESTFILE, herhangi bir etkisi olacaktır, ayrıca ile bağlamayın varsa [/bildirimi](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Genişletme **yapılandırma özellikleri** düğümü.  
-  
-3.  Genişletme **bağlayıcı** düğümü.  
-  
-4.  Seçin **bildirim dosyası** özellik sayfası.  
-  
-5.  Değiştirme **bildirim dosyası** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/MANIFESTFILE:filename
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ MANIFESTFILE, bildirim dosyasının varsayılan adını değiştirmenizi sağlar.  Dosya adına .manifest bildirim dosyasının varsayılan addır.
+
+/ MANIFESTFILE, herhangi bir etkisi olacaktır, siz de ile bağlamazsanız [/MANIFEST](../../build/reference/manifest-create-side-by-side-assembly-manifest.md).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Genişletin **yapılandırma özellikleri** düğümü.
+
+1. Genişletin **bağlayıcı** düğümü.
+
+1. Seçin **bildirim dosyası** özellik sayfası.
+
+1. Değiştirme **bildirim dosyası** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ManifestFile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

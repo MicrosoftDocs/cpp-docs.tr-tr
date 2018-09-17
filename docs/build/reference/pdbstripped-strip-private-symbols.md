@@ -21,59 +21,61 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 331e490512afe8e9267eb1d0d370cbcf99aa99aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0680f265214849c2e46c4ceb23dcb71bdff61c3f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376643"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710846"
 ---
 # <a name="pdbstripped-strip-private-symbols"></a>/PDBSTRIPPED (Özel Simgeleri Çıkart)
-```  
-/PDBSTRIPPED:pdb_file_name  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- *pdb_file_name*  
- Kullanıcı tarafından belirtilen veritabanı için bir ad bağlayıcı oluşturan kırpılmış program (PDB).  
-  
-## <a name="remarks"></a>Açıklamalar  
- PDB dosyası oluşturma seçenekleri program yansımanıza derleyici veya bağlayıcı yapılandırdığınızda /PDBSTRIPPED seçeneği ikinci bir program veritabanı (PDB) dosyası oluşturur ([/DEBUG](../../build/reference/debug-generate-debug-info.md), [/Z7](../../build/reference/z7-zi-zi-debug-information-format.md), /Zd veya /zı). Bu ikinci PDB dosyası, sevk müşterilerinize istemezsiniz simgeleri atlar. İkinci PDB dosyası yalnızca içerir:  
-  
--   Genel semboller  
-  
--   Nesne dosyaları ve katkıda bulundukları yürütülebilir dosya bölümünü listesi  
-  
--   Çerçeve işaretçisi en iyi duruma getirme (FPO) hata ayıklama kayıtlarını yığın geçiş yapmak için kullanılan  
-  
- Kırpılmış PDB dosyası içermez:  
-  
--   Tür bilgileri  
-  
--   Satır numarası bilgileri  
-  
--   İşlevler, yerel ve statik verileri için olanlar gibi nesne başına dosya CodeView simgeleri  
-  
- /PDBSTRIPPED kullandığınızda tam PDB dosyası hala oluşturulur.  
-  
- PDB dosyası oluşturmazsanız /PDBSTRIPPED göz ardı edilir.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **hata ayıklama** özellik sayfası.  
-  
-4.  Değiştirme **özel simgeleri** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StripPrivateSymbols%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/PDBSTRIPPED:pdb_file_name
+```
+
+## <a name="arguments"></a>Arguments
+
+*pdb_file_name*<br/>
+Bir kullanıcı tarafından belirtilen ad bağlayıcının oluşturduğu kesilmiş program veritabanı (PDB).
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir PDB dosyası üretmek seçenekleri herhangi bir derleyici veya bağlayıcı ile program görüntüsünü oluşturduğunuzda/pdbstrıpped seçeneği, ikinci program veritabanı (PDB) dosyası oluşturur. ([/DEBUG](../../build/reference/debug-generate-debug-info.md), [/z7](../../build/reference/z7-zi-zi-debug-information-format.md), / ZD, veya /Zi). Bu ikinci PDB dosyası, size gönderilen müşterilerinize istemezsiniz sembolleri atar. İkinci PDB dosyası yalnızca içerir:
+
+- Ortak semboller
+
+- Nesne dosyaları ve yürütülebilir katkıda bulundukları kısımları listesi
+
+- Yığın geçirmek için kullanılan çerçeve işaretçisi iyileştirme (FPO) hata ayıklama kayıtlarını
+
+Kesilmiş bir PDB dosyası içermez:
+
+- Tür bilgileri
+
+- Satır numarası bilgisi
+
+- İşlevleri, Yereller ve statik veriler için olanlar gibi her nesne için dosya CodeView semboller
+
+/ Pdbstrıpped kullandığınızda tam PDB dosyası yine de oluşturulur.
+
+Bir PDB dosyası oluşturmazsanız/pdbstrıpped göz ardı edilir.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **hata ayıklama** özellik sayfası.
+
+1. Değiştirme **özel sembolleri sök** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.StripPrivateSymbols%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

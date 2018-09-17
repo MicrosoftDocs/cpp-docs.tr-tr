@@ -12,17 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f65e88c8609d6a2097e9e54c3f52cbd27dce36d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e8e877387dbb5b0be865e11017a3ac71a0c38faa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32366802"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707661"
 ---
 # <a name="callercallee-saved-registers"></a>Çağıran ve Çağrılan Kaydedilmiş Yazmaçlar
-İşlev çağrıları RAX, RCX, RDX, R8, R9, R10, R11 geçici olarak kabul edilir ve dikkate alınmalıdır kayıtları yok (sürece aksi tarafından güvenliği kanıtlanabilme analiz bütün program iyileştirmesi gibi).  
-  
- Yazmaçları RBX, RBP, RDI, RSI, RSP, R12, R13, R14 ve R15 kayıtları kalıcı olarak kabul edilir ve kaydedilmesi gerekir ve bir işlev tarafından geri, bunları kullanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çağırma Kuralı](../build/calling-convention.md)
+
+İşlev çağrılarında RAX'daki, RCX, RDX, R8, R9, R10, R11 geçici olarak kabul edilir ve dikkate alınması gereken kayıtları yok (sürece Aksi durumda güvenlik-kanıtlanabilir bütün program iyileştirmesi gibi analiz tarafından).
+
+Yazmaçları RBX, RBP, RDI, RSI, RSP, R12, R13, R14 ve R15 kayıtları kalıcı olarak kabul edilir ve kaydedilmesi gerekir ve bir işlev tarafından geri, bunları kullanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çağırma Kuralı](../build/calling-convention.md)

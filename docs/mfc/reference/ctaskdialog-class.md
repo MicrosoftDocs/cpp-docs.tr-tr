@@ -126,12 +126,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a1c3e55f6045b0096ef614e1d3b4b054db60265
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 51970f99a05b587bcdbccc5d24ad21b036d87f74
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43202401"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710820"
 ---
 # <a name="ctaskdialog-class"></a>CTaskDialog sınıfı
 
@@ -274,17 +274,17 @@ void AddCommandControl(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Komut denetimi kimlik numarası.
+*nCommandControlID*<br/>
+[in] Komut denetimi kimlik numarası.
 
-[in] *strCaption*  
-Dize, `CTaskDialog` kullanıcıya görüntüler. Komut amacı açıklamak için şu dizeyi kullanın.
+*strCaption*<br/>
+[in] Dize, `CTaskDialog` kullanıcıya görüntüler. Komut amacı açıklamak için şu dizeyi kullanın.
 
-[in] *bEtkin*  
-Yeni düğmesi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.
+*bEtkin*<br/>
+[in] Yeni düğmesi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.
 
-[in] *bRequiresElevation*  
-Bir komut ayrıcalık gerekli olup olmadığını gösteren bir Boole parametresi.
+*bRequiresElevation*<br/>
+[in] Bir komut ayrıcalık gerekli olup olmadığını gösteren bir Boole parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -309,14 +309,14 @@ void CTaskDialog::AddRadioButton(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Radyo düğmesinin kimlik numarası.
+*nRadioButtonID*<br/>
+[in] Radyo düğmesinin kimlik numarası.
 
-[in] *strCaption*  
-Dize, `CTaskDialog` yanındaki radyo düğmesini gösterir.
+*strCaption*<br/>
+[in] Dize, `CTaskDialog` yanındaki radyo düğmesini gösterir.
 
-[in] *bEtkin*  
-Radyo düğmesi etkin olup olmadığını gösteren bir Boole parametresi.
+*bEtkin*<br/>
+[in] Radyo düğmesi etkin olup olmadığını gösteren bir Boole parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -339,8 +339,8 @@ void ClickCommandControl(int nCommandControlID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Denetimin tıklayın komut kimliği.
+*nCommandControlID*<br/>
+[in] Denetimin tıklayın komut kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -357,8 +357,8 @@ void ClickRadioButton(int nRadioButtonID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Radyo düğmesini tıklatın kimliği.
+*nRadioButtonID*<br/>
+[in] Radyo düğmesini tıklatın kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -391,29 +391,29 @@ CTaskDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strContent*  
-İçeriği için kullanılacak dize `CTaskDialog`.
+*strContent*<br/>
+[in] İçeriği için kullanılacak dize `CTaskDialog`.
 
-[in] *strMainInstruction*  
-Ana yönergesinin `CTaskDialog`.
+*strMainInstruction*<br/>
+[in] Ana yönergesinin `CTaskDialog`.
 
-[in] *strTitle*  
-Başlığı `CTaskDialog`.
+*strTitle*<br/>
+[in] Başlığı `CTaskDialog`.
 
-[in] *nCommonButtons*  
-Ortak bir düğme eklemek için bir maske `CTaskDialog`.
+*nCommonButtons*<br/>
+[in] Ortak bir düğme eklemek için bir maske `CTaskDialog`.
 
-[in] *nTaskDialogOptions*  
-Kullanılmak üzere seçenekleri kümesi `CTaskDialog`.
+*nTaskDialogOptions*<br/>
+[in] Kullanılmak üzere seçenekleri kümesi `CTaskDialog`.
 
-[in] *strFooter*  
-Alt bilgi olarak kullanılacak dize.
+*strFooter*<br/>
+[in] Alt bilgi olarak kullanılacak dize.
 
-[in] *nIDCommandControlsFirst*  
-İlk komut dize kimliği.
+*nIDCommandControlsFirst*<br/>
+[in] İlk komut dize kimliği.
 
-[in] *nIDCommandControlsLast*  
-Son komut dize kimliği.
+*nIDCommandControlsLast*<br/>
+[in] Son komut dize kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -437,8 +437,8 @@ INT_PTR DoModal (HWND hParent = ::GetActiveWindow());
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hParent*  
-Üst pencere için `CTaskDialog`.
+*hParent*<br/>
+[in] Üst pencere için `CTaskDialog`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -482,8 +482,8 @@ int GetCommonButtonFlag(int nButtonId) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nButtonId*  
-Standart Windows düğme değeri.
+*nButtonId*<br/>
+[in] Standart Windows düğme değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -499,8 +499,8 @@ int GetCommonButtonId(int nFlag);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nFlag*  
-Ortak düğme türü ile ilişkili `CTaskDialog` sınıfı.
+*nFlag*<br/>
+[in] Ortak düğme türü ile ilişkili `CTaskDialog` sınıfı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -592,8 +592,8 @@ BOOL IsCommandControlEnabled(int nCommandControlID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Test kimliği komut düğmesi denetimi veya düğmesi.
+*nCommandControlID*<br/>
+[in] Test kimliği komut düğmesi denetimi veya düğmesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -619,8 +619,8 @@ BOOL IsRadioButtonEnabled(int nRadioButtonID) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Test etmek için radyo düğmesinin kimliği.
+*nRadioButtonID*<br/>
+[in] Test etmek için radyo düğmesinin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -666,11 +666,11 @@ void LoadCommandControls(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIDCommandControlsFirst*  
-İlk komut dize kimliği.
+*nIDCommandControlsFirst*<br/>
+[in] İlk komut dize kimliği.
 
-[in] *nIDCommandControlsLast*  
-Son komut dize kimliği.
+*nIDCommandControlsLast*<br/>
+[in] Son komut dize kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -694,11 +694,11 @@ void LoadRadioButtons(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nIDRadioButtonsFirst*  
-İlk radyo düğmesinin dize kimliği.
+*nIDRadioButtonsFirst*<br/>
+[in] İlk radyo düğmesinin dize kimliği.
 
-[in] *nIDRadioButtonsLast*  
-Son radyo düğmesinin dize kimliği.
+*nIDRadioButtonsLast*<br/>
+[in] Son radyo düğmesinin dize kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -721,8 +721,8 @@ void NavigateTo(CTaskDialog& oTaskDialog) const;
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *oTaskDialog*  
-`CTaskDialog` , Odağı alır.
+*oTaskDialog*<br/>
+[in] `CTaskDialog` , Odağı alır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -738,8 +738,8 @@ virtual HRESULT OnCommandControlClick(int nCommandControlID);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Kullanıcının seçtiği komut düğme denetiminin kimliği.
+*nCommandControlID*<br/>
+[in] Kullanıcının seçtiği komut düğme denetiminin kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -791,8 +791,8 @@ virtual HRESULT OnExpandButtonClicked(BOOL bExpanded);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bExpanded*  
-Sıfır dışında bir değeri, ek bilgilerin görüntülendiğini gösterir; 0, ek bilgiler gösterir.
+*bExpanded*<br/>
+[in] Sıfır dışında bir değeri, ek bilgilerin görüntülendiğini gösterir; 0, ek bilgiler gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -828,8 +828,8 @@ virtual HRESULT OnHyperlinkClick(const CString& strHref);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strHref*  
-Köprüyü temsil eden dize.
+*strHref*<br/>
+[in] Köprüyü temsil eden dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -883,8 +883,8 @@ virtual HRESULT OnRadioButtonClick(int nRadioButtonID);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Kullanıcı tıklanan radyo düğmesi denetimini kimliği.
+*nRadioButtonID*<br/>
+[in] Kullanıcı tıklanan radyo düğmesi denetimini kimliği.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -904,8 +904,8 @@ virtual HRESULT OnTimer(long lTime);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lTime*  
-Bu yana milisaniye cinsinden süre `CTaskDialog` oluşturuldu veya Zamanlayıcı sıfırlandı.
+*lTime*<br/>
+[in] Bu yana milisaniye cinsinden süre `CTaskDialog` oluşturuldu veya Zamanlayıcı sıfırlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -925,8 +925,8 @@ virtual HRESULT OnVerificationCheckboxClick(BOOL bChecked);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bChecked*  
-TRUE, doğrulama onay kutusu seçili gösterir; FALSE değildir gösterir.
+*bChecked*<br/>
+[in] TRUE, doğrulama onay kutusu seçili gösterir; FALSE değildir gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -973,14 +973,14 @@ void SetCommandControlOptions(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Güncelleştirme Komut denetiminin kimliği.
+*nCommandControlID*<br/>
+[in] Güncelleştirme Komut denetiminin kimliği.
 
-[in] *bEtkin*  
-Belirtilen komut düğmesi denetimi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.
+*bEtkin*<br/>
+[in] Belirtilen komut düğmesi denetimi etkin veya devre dışı olduğunu gösteren bir Boole parametresi.
 
-[in] *bRequiresElevation*  
-Belirtilen komut düğmesi denetimi yükseltme gerektirip gerektirmediğini belirten bir Boole parametresi.
+*bRequiresElevation*<br/>
+[in] Belirtilen komut düğmesi denetimi yükseltme gerektirip gerektirmediğini belirten bir Boole parametresi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1002,11 +1002,11 @@ void SetCommonButtonOptions(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nDisabledButtonMask*  
-Ortak düğmeleri devre dışı bırakmak için bir maske.
+*nDisabledButtonMask*<br/>
+[in] Ortak düğmeleri devre dışı bırakmak için bir maske.
 
-[in] *nElevationButtonMask*  
-Yetki yükseltmesi gerektiren yaygın düğmeleri için bir maske.
+*nElevationButtonMask*<br/>
+[in] Yetki yükseltmesi gerektiren yaygın düğmeleri için bir maske.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1033,14 +1033,14 @@ void SetCommonButtons(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nButtonMask*  
-Düğme eklemek için bir maske `CTaskDialog`.
+*nButtonMask*<br/>
+[in] Düğme eklemek için bir maske `CTaskDialog`.
 
-[in] *nDisabledButtonMask*  
-Düğmeleri devre dışı bırakmak için bir maske.
+*nDisabledButtonMask*<br/>
+[in] Düğmeleri devre dışı bırakmak için bir maske.
 
-[in] *nElevationButtonMask*  
-Yetki yükseltmesi gerektiren düğmeleri maskesi.
+*nElevationButtonMask*<br/>
+[in] Yetki yükseltmesi gerektiren düğmeleri maskesi.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1066,8 +1066,8 @@ void SetContent(const CString& strContent);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strContent*  
-Kullanıcıya görüntülenecek dize.
+*strContent*<br/>
+[in] Kullanıcıya görüntülenecek dize.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1087,8 +1087,8 @@ void SetDefaultCommandControl(int nCommandControlID);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nCommandControlID*  
-Varsayılan komut düğmesi denetiminin kimliği.
+*nCommandControlID*<br/>
+[in] Varsayılan komut düğmesi denetiminin kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1110,8 +1110,8 @@ void SetDefaultRadioButton(int nRadioButtonID);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Varsayılan olarak kullanılacak radyo düğmesinin kimliği.
+*nRadioButtonID*<br/>
+[in] Varsayılan olarak kullanılacak radyo düğmesinin kimliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1133,8 +1133,8 @@ void SetDialogWidth(int nWidth = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nWidth*  
-İletişim kutusunda, piksel cinsinden genişliği.
+*nWidth*<br/>
+[in] İletişim kutusunda, piksel cinsinden genişliği.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1159,14 +1159,14 @@ void SetExpansionArea(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strExpandedInformation*  
-Dize, `CTaskDialog` iletişim kutusunun ana gövdesinde kullanıcı genişletme düğmesine tıkladığında görüntülenir.
+*strExpandedInformation*<br/>
+[in] Dize, `CTaskDialog` iletişim kutusunun ana gövdesinde kullanıcı genişletme düğmesine tıkladığında görüntülenir.
 
-[in] *strCollapsedLabel*  
-Dize, `CTaskDialog` genişletilmiş alan daraltıldığında yanındaki genişletme düğmesi görüntüler.
+*strCollapsedLabel*<br/>
+[in] Dize, `CTaskDialog` genişletilmiş alan daraltıldığında yanındaki genişletme düğmesi görüntüler.
 
-[in] *strExpandedLabel*  
-Dize, `CTaskDialog` genişletilmiş alan görüntülendiğinde yanındaki genişletme düğmesi görüntüler.
+*strExpandedLabel*<br/>
+[in] Dize, `CTaskDialog` genişletilmiş alan görüntülendiğinde yanındaki genişletme düğmesi görüntüler.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1189,11 +1189,11 @@ void SetFooterIcon(LPCWSTR lpszFooterIcon);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hFooterIcon*  
-Yeni simgesi `CTaskDialog`.
+*hFooterIcon*<br/>
+[in] Yeni simgesi `CTaskDialog`.
 
-[in] *lpszFooterIcon*  
-Yeni simgesi `CTaskDialog`.
+*lpszFooterIcon*<br/>
+[in] Yeni simgesi `CTaskDialog`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1217,8 +1217,8 @@ void SetFooterText(const CString& strFooterText);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strFooterText*  
-Yeni alt bilgi metni.
+*strFooterText*<br/>
+[in] Yeni alt bilgi metni.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1239,11 +1239,11 @@ void SetMainIcon(LPCWSTR lpszMainIcon);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hMainIcon*  
-Yeni simge.
+*hMainIcon*<br/>
+[in] Yeni simge.
 
-[in] *lpszMainIcon*  
-Yeni simge.
+*lpszMainIcon*<br/>
+[in] Yeni simge.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1265,8 +1265,8 @@ void SetMainInstruction(const CString& strInstructions);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strInstructions*  
-Yeni ana yönerge.
+*strInstructions*<br/>
+[in] Yeni ana yönerge.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1286,8 +1286,8 @@ void SetOptions(int nOptionFlag);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nOptionFlag*  
-Kullanılacak bayrakları kümesini `CTaskDialog`.
+*nOptionFlag*<br/>
+[in] Kullanılacak bayrakları kümesini `CTaskDialog`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1330,11 +1330,11 @@ void SetProgressBarMarquee(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bEtkin*  
-Kayan çubuğunu etkinleştirmek için TRUE; Kayan çubuğundaki devre dışı bırakabilir ve oradan kaldırın FALSE `CTaskDialog`.
+*bEtkin*<br/>
+[in] Kayan çubuğunu etkinleştirmek için TRUE; Kayan çubuğundaki devre dışı bırakabilir ve oradan kaldırın FALSE `CTaskDialog`.
 
-[in] *nMarqueeSpeed*  
-Kayan çubuğu hızını gösteren bir tamsayı.
+*nMarqueeSpeed*<br/>
+[in] Kayan çubuğu hızını gösteren bir tamsayı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1358,8 +1358,8 @@ void SetProgressBarPosition(int nProgressPos);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nProgressPos*  
-İlerleme çubuğu konumu.
+*nProgressPos*<br/>
+[in] İlerleme çubuğu konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1381,11 +1381,11 @@ void SetProgressBarRange(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRangeMin*  
-İlerleme çubuğu alt sınırı.
+*nRangeMin*<br/>
+[in] İlerleme çubuğu alt sınırı.
 
-[in] *nRangeMax*  
-İlerleme çubuğu üst sınırı.
+*nRangeMax*<br/>
+[in] İlerleme çubuğu üst sınırı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1409,8 +1409,8 @@ void SetProgressBarState(int nState = PBST_NORMAL);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nDurum*  
-İlerleme çubuğu durumu. Olası değerler için Açıklamalar bölümüne bakın.
+*nDurum*<br/>
+[in] İlerleme çubuğu durumu. Olası değerler için Açıklamalar bölümüne bakın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1442,11 +1442,11 @@ void SetRadioButtonOptions(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *nRadioButtonID*  
-Radyo düğmesi denetimini kimliği.
+*nRadioButtonID*<br/>
+[in] Radyo düğmesi denetimini kimliği.
 
-[in] *bEtkin*  
-Radyo düğmesini etkinleştirmek için TRUE; Radyo düğmesi devre dışı bırakmak için FALSE.
+*bEtkin*<br/>
+[in] Radyo düğmesini etkinleştirmek için TRUE; Radyo düğmesi devre dışı bırakmak için FALSE.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1466,8 +1466,8 @@ void SetVerificationCheckbox(BOOL bChecked);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bChecked*  
-TRUE doğrulama onay kutusunu ne zaman seçtiğiniz `CTaskDialog` görüntülenir; YANLIŞ doğrulama onay kutusunun seçili `CTaskDialog` görüntülenir.
+*bChecked*<br/>
+[in] TRUE doğrulama onay kutusunu ne zaman seçtiğiniz `CTaskDialog` görüntülenir; YANLIŞ doğrulama onay kutusunun seçili `CTaskDialog` görüntülenir.
 
 ### <a name="example"></a>Örnek
 
@@ -1483,8 +1483,8 @@ void SetVerificationCheckboxText(CString& strVerificationText);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strVerificationText*  
-Bu yöntem yanındaki onay kutusunu doğrulama görüntülenen metin.
+*strVerificationText*<br/>
+[in] Bu yöntem yanındaki onay kutusunu doğrulama görüntülenen metin.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1504,8 +1504,8 @@ void SetWindowTitle(CString& strWindowTitle);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strWindowTitle*  
-Yeni başlığını `CTaskDialog`.
+*strWindowTitle*<br/>
+[in] Yeni başlığını `CTaskDialog`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1531,29 +1531,29 @@ static INT_PTR ShowDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *strContent*  
-İçeriği için kullanılacak dize `CTaskDialog`.
+*strContent*<br/>
+[in] İçeriği için kullanılacak dize `CTaskDialog`.
 
-[in] *strMainInstruction*  
-Ana yönergesinin `CTaskDialog`.
+*strMainInstruction*<br/>
+[in] Ana yönergesinin `CTaskDialog`.
 
-[in] *strTitle*  
-Başlığı `CTaskDialog`.
+*strTitle*<br/>
+[in] Başlığı `CTaskDialog`.
 
-[in] *nIDCommandControlsFirst*  
-İlk komut dize kimliği.
+*nIDCommandControlsFirst*<br/>
+[in] İlk komut dize kimliği.
 
-[in] *nIDCommandControlsLast*  
-Son komut dize kimliği.
+*nIDCommandControlsLast*<br/>
+[in] Son komut dize kimliği.
 
-[in] *nCommonButtons*  
-Düğme eklemek için bir maske `CTaskDialog`.
+*nCommonButtons*<br/>
+[in] Düğme eklemek için bir maske `CTaskDialog`.
 
-[in] *nTaskDialogOptions*  
-Kullanılmak üzere seçenekleri kümesi `CTaskDialog`.
+*nTaskDialogOptions*<br/>
+[in] Kullanılmak üzere seçenekleri kümesi `CTaskDialog`.
 
-[in] *strFooter*  
-Alt bilgi olarak kullanılacak dize.
+*strFooter*<br/>
+[in] Alt bilgi olarak kullanılacak dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1589,20 +1589,20 @@ HRESULT TaskDialogCallback(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *hwnd*  
-İşleyici `m_hWnd` için yapı `CTaskDialog`.
+*HWND*<br/>
+[in] İşleyici `m_hWnd` için yapı `CTaskDialog`.
 
-[in] *uNotification*  
-Bildirim kodunu oluşturulan iletiyi belirtir.
+*uNotification*<br/>
+[in] Bildirim kodunu oluşturulan iletiyi belirtir.
 
-[in] *wParam*  
-İleti hakkında daha fazla bilgi.
+*wParam*<br/>
+[in] İleti hakkında daha fazla bilgi.
 
-[in] *lParam*  
-İleti hakkında daha fazla bilgi.
+*lParam*<br/>
+[in] İleti hakkında daha fazla bilgi.
 
-[in] *dwRefData*  
-Bir işaretçi `CTaskDialog` nesnesini geri çağırma iletisi için geçerlidir.
+*dwRefData*<br/>
+[in] Bir işaretçi `CTaskDialog` nesnesini geri çağırma iletisi için geçerlidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

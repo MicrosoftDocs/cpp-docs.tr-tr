@@ -36,17 +36,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c06e2f2b490aacc424e1c8ad0d31c0011bcf989b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7607083a50d98a1b531d6ea45e04866f253a7dfb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33333953"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709533"
 ---
 # <a name="interlockedadd-intrinsic-functions"></a>_InterlockedAdd İç İşlevleri
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Birden çok iş parçacığı bir paylaşılan değişken erişimi olduğunda işlemi başarıyla tamamlandıktan sağlayan bir atomik eklenmesini gerçekleştirme.  
+ Birden çok iş parçacığı paylaşılan değişkene erişimi olduğunda işlemin başarıyla tamamlanmasını sağlar bir atomik ayrıca gerçekleştirin.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -86,14 +86,14 @@ __int64 _InterlockedAdd64_rel(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [içinde out] `Addend`  
- İşaretçi eklenecek tamsayıya; ek sonuç tarafından değiştirildi.  
+*Formülündeki toplanan*<br/>
+[out içinde] Eklenecek tamsayı işaretçisi; toplamın sonucunu tarafından değiştirildi.  
   
- [in] `Value`  
- Eklenecek değer.  
+*Değer*<br/>
+[in] Eklenecek değer.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Her iki işlevler toplamın sonucunu döndürür.  
+ Her iki işlev de toplamın sonucunu döndürür.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -108,12 +108,12 @@ __int64 _InterlockedAdd64_rel(
 |`_InterlockedAdd64_nf`|ARM|  
 |`_InterlockedAdd64_rel`|ARM|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlevleri sürümlerini `_acq` veya `_rel` sonekleri edinme veya yayın semantiği aşağıdaki ınterlocked ek gerçekleştirin. Alma işleminin sonucu yapılan tüm iş parçacıkları ve işlemci görünür sonraki belleği okuyan ve yazan önce semantiği anlamına gelir. Alma önemli bir bölümü girerken yararlıdır. Yayın semantiği tüm bellek okuma ve yazma işlemleri işlemin sonucunu kendisini görünür hale gelir önce tüm iş parçacıkları ve işlemci görünür duruma getirilmek üzere zorlanır anlamına gelir. Yayın önemli bir bölümü ayrılırken yararlıdır. İç bilgiler ile bir `_nf` ("hiçbir dilimi") soneki bir bellek engeli hareket değil.  
+ Sahip bu işlevlerin sürümleri `_acq` veya `_rel` sonekleri bir birbirine kenetlenmiş ayrıca Al veya sürüm semantiği aşağıdaki gerçekleştirin. Önce herhangi bir sonraki bellek, okuma ve yazma işleminin sonucu tüm iş parçacıkları ve işlemciler görünür yapılır semantiği anlamına gelir edinin. Alma kritik bölüm girerken yararlı olur. Release semantikleri, tüm bellek okuma ve yazma işleminin sonucu kendisini görünür hale gelir önce tüm iş parçacıkları ve işlemciler için görünür duruma zorlanır anlamına gelir. Yayın, bir kritik bölüm ayrılırken yararlıdır. Yapı içleri ile bir `_nf` ("hiçbir sınır") soneki bellek önünde bir engel hareket değil.  
   
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
 ## <a name="example"></a>Örnek  
   
@@ -173,7 +173,7 @@ ff0000000000 + ff0000ffffffff = ffff00ffffffff
 Return value: ffff00ffffffff  
 ```  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

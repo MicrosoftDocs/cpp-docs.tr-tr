@@ -18,29 +18,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bea07361a292ee5e7cde99cedad2d5ac4c8a53aa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 76ab322dc4573863a30092b296e87e90c41619ab
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374284"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716221"
 ---
 # <a name="compiler-options"></a>Derleyici Seçenekleri
 
-cl.exe Microsoft Visual C++ (MSVC) C ve C++ Derleyicileri ve bağlayıcı denetleyen bir araçtır. cl.exe yalnızca Microsoft Windows için Visual Studio desteklendiği işletim sistemlerinin üzerinde çalıştırılabilir.
+cl.exe Microsoft Visual C++ (MSVC) C ve C++ Derleyicileri ve bağlayıcı denetleyen bir araçtır. cl.exe yalnızca Microsoft Visual Studio için Windows destekleyen işletim sistemleri üzerinde çalıştırılabilir.
 
-> [!NOTE]  
-> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut istemi veya dosya Gezgini başlatılamıyor. Daha fazla bilgi için bkz: [komut satırında C/C++ derleme kodu](../building-on-the-command-line.md).
+> [!NOTE]
+> Bu araç yalnızca Visual Studio Geliştirici komut isteminden başlatabilirsiniz. Bir sistem komut satırından veya dosya Gezgini'nden başlatılamıyor. Daha fazla bilgi için [komut satırında C/C++ derleme kodu](../building-on-the-command-line.md).
 
-Derleyicileri ortak nesne dosyası biçimi (COFF) nesne (.obj) dosyaları üretir. Bağlayıcı yürütülebilir dosyanın (.exe) dosyaları veya dinamik bağlantı kitaplıklarını (DLL'ler) oluşturur.
+Derleyiciler, ortak nesne dosyası biçimi (COFF) nesne (.obj) dosyaları oluşturur. Bağlayıcı yürütülebilir (.exe) dosya veya dinamik bağlantı kitaplıklarını (DLL'ler) üretir.
 
-Tüm derleyici seçenekleri büyük küçük harfe duyarlı olduğunu unutmayın. Her iki eğik kullanabilir (`/`) veya bir tire (`-`) derleyici seçeneği belirtmek için.
+Tüm derleyici seçeneklerinin büyük küçük harfe duyarlı olduğunu unutmayın. Her iki eğik çizgi kullanabilir (`/`) veya tire (`-`) bir derleyici seçeneğini belirtmek için.
 
-Bağlantılandırmadan derleme için kullanmak [/c](../../build/reference/c-compile-without-linking.md) seçeneği.
+Bağlamadan derlemek için kullanın [/c](../../build/reference/c-compile-without-linking.md) seçeneği.
 
-## <a name="find-a-compiler-option"></a>Derleyici seçeneği Bul
+## <a name="find-a-compiler-option"></a>Derleyici seçeneği bulun
 
-Belirli derleyici seçeneği bulmak için aşağıdaki listede birine bakın:
+Belirli bir derleyici seçeneği bulmak için aşağıdaki listelerden birine bakın:
 
 - [Alfabetik Listelenmiş Derleyici Seçenekleri](../../build/reference/compiler-options-listed-alphabetically.md)
 
@@ -48,7 +48,7 @@ Belirli derleyici seçeneği bulmak için aşağıdaki listede birine bakın:
 
 ## <a name="specify-compiler-options"></a>Derleyici seçeneklerini belirtin
 
-Her derleyici seçeneği konuda geliştirme ortamında nasıl ayarlanabilir anlatılmaktadır. Geliştirme ortamı dışında seçeneklerini belirtme hakkında daha fazla bilgi için bkz:
+Her derleyici seçeneğinin konuda geliştirme ortamında nasıl ayarlanabilir açıklanır. Geliştirme ortamı dışında seçenekleri belirtme hakkında daha fazla bilgi için bkz:
 
 - [Derleyici Komut Satırı Sözdizimi](../../build/reference/compiler-command-line-syntax.md)
 
@@ -56,13 +56,13 @@ Her derleyici seçeneği konuda geliştirme ortamında nasıl ayarlanabilir anla
 
 - [CL Ortam Değişkenleri](../../build/reference/cl-environment-variables.md)
 
-## <a name="related-build-tools"></a>İlgili derleme araçları
+## <a name="related-build-tools"></a>İlgili yapı araçları
 
-[Bağlayıcı seçenekleri](../../build/reference/linker-options.md) programınızı nasıl yapılandırıldığını de etkiler.
+[Bağlayıcı seçenekleri](../../build/reference/linker-options.md) programınızın nasıl oluşturulduğunu da etkiler.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
-[Hızlı Derleme](../../build/reference/fast-compilation.md)  
-[CL Bağlayıcı Çağırır](../../build/reference/cl-invokes-the-linker.md)  
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Hızlı Derleme](../../build/reference/fast-compilation.md)<br/>
+[CL Bağlayıcı Çağırır](../../build/reference/cl-invokes-the-linker.md)

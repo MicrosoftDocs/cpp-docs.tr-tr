@@ -18,21 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5e0296b994f7944d5b26e98ba1b0545a03ec55b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: efa9a5cf17a4578fc7be9cbadc51605ee32c1650
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360119"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706257"
 ---
 # <a name="active-technology-and-dlls"></a>Etkin Teknoloji ve DLL'ler
-Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanmasına izin verir. Bu tür sunucuya işlemdeki sunucu adı verilir. Çoğunlukla etkin teknoloji kapsayıcının ana ileti döngüye kanca için bir sunucu için bir yol sağlamadığından MFC tamamen işlemdeki sunucuları görsel düzenleme, tüm özellikler için desteklemez. MFC Hızlandırıcı tuşları ve boşta kalma süresi işleme işlemek için kapsayıcı uygulamanın ileti döngüsü erişim gerektirir.  
-  
- Otomasyon sunucusu yazıyorsanız ve kullanıcı arabirimi olmadan sunucunuz varsa, sunucunuz bir işlem sunucusu sağlamak ve tamamen bir DLL içine koyabilirsiniz.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Otomasyon Sunucuları](../mfc/automation-servers.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+
+Etkin teknoloji nesne sunucularının DLL içinde tamamen uygulanması sağlar. Sunucu bu tür bir işlem sunucusu olarak adlandırılır. Esas olarak etkin teknoloji kapsayıcının ana ileti döngüsü içinde bağlama bir sunucu için bir yol sağlamaz çünkü MFC tamamen işlem içi sunucular görsel düzenleme, tüm özellikler için desteklemez. MFC kısayol tuşları ve boşta kalma süresi işleme işlemek için kapsayıcı uygulamasının ileti döngüsü erişim gerektirir.
+
+Otomasyon sunucusu yazıyorsanız ve kullanıcı arabirimi olmadan sunucunuz varsa, bir işlem sunucusu sunucunuzun olun ve tamamen bir DLL içine koyabilirsiniz.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

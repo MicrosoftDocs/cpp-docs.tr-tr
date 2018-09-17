@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 11c83332c12daa6753add0618367b90f8c759532
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a13c7971e65a926799cc0134c811845c292161d4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37848774"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709196"
 ---
 # <a name="cmfcribbonundobutton-class"></a>CMFCRibbonUndoButton sınıfı
 `CMFCRibbonUndoButton` Sınıfı en son kullanıcı komutları içeren bir açılan liste düğmesi uygular. Kullanıcılar, bir veya daha fazla en son komutları Yinele veya geri almak için aşağı açılan listeden seçebilirsiniz.  
@@ -89,8 +89,8 @@ void AddUndoAction(LPCTSTR lpszLabel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszLabel*  
- Aşağı açılan listeden görüntülenen eylem etiketi.  
+*lpszLabel*<br/>
+[in] Aşağı açılan listeden görüntülenen eylem etiketi.  
   
 ##  <a name="cleanupundolist"></a>  CMFCRibbonUndoButton::CleanUpUndoList  
  Aşağı açılan liste eylem listesini temizler.  
@@ -117,20 +117,20 @@ CMFCRibbonUndoButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Komut tanımlayıcısını belirtir.  
+*nID*<br/>
+[in] Komut tanımlayıcısını belirtir.  
   
- [in] *lpszText*  
- Düğmenin metin etiketini belirtir.  
+*lpszText*<br/>
+[in] Düğmenin metin etiketini belirtir.  
   
- [in] *nSmallImageIndex*  
- Üst nesne düğmenin küçük resmi için resim listesi içindeki sıfır tabanlı dizin.  
+*nSmallImageIndex*<br/>
+[in] Üst nesne düğmenin küçük resmi için resim listesi içindeki sıfır tabanlı dizin.  
   
- [in] *nLargeImageIndex*  
- Görüntü listesi için üst nesnenin içindeki sıfır tabanlı dizin düğmenin büyük görüntünün.  
+*nLargeImageIndex*<br/>
+[in] Görüntü listesi için üst nesnenin içindeki sıfır tabanlı dizin düğmenin büyük görüntünün.  
   
- [in] *hIcon*  
- Bir düğmenin resim olarak kullanabileceğiniz bir simge tanıtıcı.  
+*hIcon*<br/>
+[in] Bir düğmenin resim olarak kullanabileceğiniz bir simge tanıtıcı.  
   
 ##  <a name="getactionnumber"></a>  CMFCRibbonUndoButton::GetActionNumber  
  Aşağı açılan listeden bir kullanıcı seçili öğe sayısını belirler.  

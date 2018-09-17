@@ -18,24 +18,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1203a38380e9d5975460fe05de3ced32b939c237
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4a845c071979c0736e2e968cf3e7c74568dc95b9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368128"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704476"
 ---
 # <a name="inline-files-in-a-makefile"></a>Derleme Görevleri Dosyasındaki Satır İçi Dosyalar
-Satır içi dosya metni makefile belirttiğiniz içerir. İşletim sistemine komutları geçirebilir veya adını (örneğin, bir bağlantı komut dosyası) giriş olarak komutlarda kullanılabilir. Dosyayı oluşturan bir komut çalıştırdığınızda dosyanın disk üzerinde oluşturulur.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
- [Satır içi dosya belirtme](../build/specifying-an-inline-file.md)  
-  
- [Satır içi dosya metni oluşturma](../build/creating-inline-file-text.md)  
-  
- [Satır içi dosyaları yeniden kullanma](../build/reusing-inline-files.md)  
-  
- [Birden çok satır içi dosyalar](../build/multiple-inline-files.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)
+
+Satır içi dosya derleme görevleri dosyasında belirttiğiniz metni içerir. Komutlar işletim sistemine geçirebilir veya adını komutlarını (örneğin, bir bağlantı komut dosyası) giriş olarak kullanılabilir. Dosyayı oluşturur bir komutu çalıştırdığınızda dosyanın disk üzerinde oluşturulur.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+[Satır içi dosya belirtme](../build/specifying-an-inline-file.md)
+
+[Satır içi dosya metni oluşturma](../build/creating-inline-file-text.md)
+
+[Satır içi dosyaları yeniden kullanma](../build/reusing-inline-files.md)
+
+[Birden çok satır içi dosyalar](../build/multiple-inline-files.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası Komutları](../build/commands-in-a-makefile.md)

@@ -20,47 +20,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3daf62c818b454a5477de04a27c4b4f308c271d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c4ad42a72a874537a6307cfc547852f812f4aaaa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377238"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707973"
 ---
 # <a name="v-version-number"></a>/V (Sürüm Numarası)
-Kullanım dışı. Bir metin dizesi .obj dosyasında katıştırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Vstring  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `string`  
- Sürüm numarası veya telif hakkı bildirimi .obj dosyasında katıştırılmış belirten bir dize.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir sürüm numarası veya telif hakkı uyarısı .obj dosyasıyla stringcan etiketi. Dizesinin bir parçası ise herhangi bir alan veya sekme karakteri çift tırnak işaretleri (") içine alınması gerekir. Ters eğik çizgi (\\) dizesinin bir parçası olması durumunda tüm çift tırnak işareti gelmelidir. Arasında bir boşluk **/V** ve `string` isteğe bağlıdır.  
-  
- Aynı zamanda [Açıklama (C/C++)](../../preprocessor/comment-c-cpp.md) derleyici adını ve sürüm numarasını .obj dosyasında yerleştirmek için derleyici açıklama tür bağımsız değişkeni ile.  
-  
- **/V** seçeneği Visual Studio 2005'te; itibaren kullanım dışıdır **/V** öncelikle olan sanal aygıt sürücüleri (VXD) oluşturulmasını desteklemede kullanılan ve vxd oluşturma Visual C++ araç takımı tarafından artık desteklenmektedir. Kullanım dışı derleyici seçeneklerinin listesi için bkz: **kullanım dışı ve kaldırılmış derleyici seçenekleri** içinde [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Kullanım dışı. Bir metin dizesi .obj dosyasına katıştırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Vstring
+```
+
+## <a name="arguments"></a>Arguments
+
+*string*<br/>
+Sürüm numarası veya telif hakkı bildirimi bir .obj dosyasında katıştırılmış belirten bir dize.
+
+## <a name="remarks"></a>Açıklamalar
+
+Stringcan etiketi bir sürüm numarası veya telif hakkı bildirimi içeren bir .obj dosyası. Dize bir parçası olmaları durumunda herhangi bir boşluk veya sekme karakterlerinden çift tırnak işaretleri (") içine alınması gerekir. Ters eğik çizgi (\\) dizesini bir parçası olmaları durumunda tüm çift tırnak işareti gelmelidir. Arasında boşluk **/V** ve `string` isteğe bağlıdır.
+
+Ayrıca [yorum (C/C++)](../../preprocessor/comment-c-cpp.md) .obj dosyasında derleyicinin adını ve sürüm numarasını yerleştirmek için derleyici açıklama türü bağımsız değişkeni.
+
+**/V** seçeneği Visual Studio 2005'te; başlayarak kullanım dışı **/V** öncelikle olan sanal cihaz sürücüleri (VXD) oluşturulmasını desteklemede kullanılan ve vxd oluşturma Visual C++ araç takımı tarafından artık desteklenmiyor. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** içinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

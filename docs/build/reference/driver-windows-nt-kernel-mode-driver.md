@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66291391ed38c27ce7446eccc6fca227c7c2c2d7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8ae096c502cdc94d47a516caf4c29ac4f3eceb4b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373120"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705555"
 ---
 # <a name="driver-windows-nt-kernel-mode-driver"></a>/DRIVER (Windows NT Çekirdek Modu Sürücüsü)
 
@@ -33,27 +33,27 @@ ms.locfileid: "32373120"
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kullanım **/sürücü** bir Windows NT Çekirdek modu sürücüsü oluşturmak için bağlayıcı seçeneği.
+Kullanım **Driver/Driver** bir Windows NT Çekirdek modu sürücüsü oluşturmak için bağlayıcı seçeneği.
 
-**/DRIVER:UPONLY** eklemek bağlayıcı neden **IMAGE_FILE_UP_SYSTEM_ONLY** özelliklerinin tek işlemcili (UP) sürücüsü olduğunu belirtmek için çıkış üstbilgisinde bit. İşletim sistemi, çok işlemcili (MP) sisteminde yukarı sürücüsünü yüklemek reddeder.
+**/DRIVER:UPONLY** eklemek bağlayıcı neden **ımage_fıle_up_system_only** tek işlemcili (UP) sürücü olduğunu belirtmek için çıkış üst özelliklerine bit. İşletim sistemi, UP sürücüsünü çok işlemcili bir (MP) sistemi yüklenecek reddeder.
 
-**/DRIVER:WDM** ayarlamak bağlayıcı neden **IMAGE_DLLCHARACTERISTICS_WDM_DRIVER** isteğe bağlı başlığının DllCharacteristics alanına bit.
+**/ DRIVER: WDM** ayarlanacak bağlayıcının neden **ımage_dllcharacterıstıcs_wdm_drıver** isteğe bağlı üst bilgi dllcharacteristics bit.
 
-Varsa **/sürücü** belirtilmemişse, bu BITS bağlayıcı tarafından ayarlı değil.
+Varsa **Driver/Driver** belirtilmemişse, bu bit bağlayıcı tarafından ayarlı değil.
 
-Varsa **/sürücü** belirtilir:
+Varsa **Driver/Driver** belirtilir:
 
-- **/FIXED:NO** etkili olur. Daha fazla bilgi için bkz: [/FIXED (sabit temel adres)](../../build/reference/fixed-fixed-base-address.md).
+- **/ FIXED: No** etkindir. Daha fazla bilgi için [/FIXED (sabit temel adres)](../../build/reference/fixed-fixed-base-address.md).
 
-- Çıkış dosyasının uzantısı .sys için ayarlanır. Kullanım **/OUT** varsayılan dosya adı ve uzantısı değiştirmek için. Daha fazla bilgi için bkz: [/OUT (çıktı dosyası adı)](../../build/reference/out-output-file-name.md).
+- Çıkış dosyasının uzantısı .sys için ayarlanır. Kullanım **/OUT** varsayılan dosya adı ve uzantısını değiştirmek için. Daha fazla bilgi için [/OUT (çıktı dosyası adı)](../../build/reference/out-output-file-name.md).
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
 
-1. Tıklatın **bağlayıcı** klasör.
+1. Tıklayın **bağlayıcı** klasör.
 
-1. Tıklatın **sistem** özellik sayfası.
+1. Tıklayın **sistem** özellik sayfası.
 
 1. Değiştirme **sürücü** özelliği.
 
@@ -63,5 +63,5 @@ Varsa **/sürücü** belirtilir:
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

@@ -1,5 +1,5 @@
 ---
-title: -ARALIĞI | Microsoft Docs
+title: -RANGE | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,38 +17,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d06d699500ba3ea441af61a2e2a5a0da3f96903a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 47e7525b8c1872616182141d624bff8f94571952
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374430"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712198"
 ---
 # <a name="range"></a>/RANGE
-/RAWDATA veya /DISASM gibi diğer DUMPBIN seçenekleri ile kullanıldığında DUMPBIN çıktısını değiştirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/RANGE:vaMin[,vaMax]  
-```  
-  
-## <a name="flags"></a>Bayraklar  
- **vaMin**  
- DUMPBIN işlemini başlatmak istediğiniz sanal adres.  
-  
- **vaMax** (isteğe bağlı)  
- DUMPBIN işlemi sona erdirmek için istediğiniz sanal adres. Belirtilmezse, DUMPBIN dosyasının sonuna gidin.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Görüntüyü sanal adreslerini görmek için eşleme dosyası (RVA + Bankası) görüntüsü için kullandığınız **/DISASM** veya **/HEADERS** DUMPBIN veya Visual Studio hata ayıklayıcısında ayrıştırma penceresi seçeneği.  
-  
-## <a name="example"></a>Örnek  
- Bu örnekte, **/aralığı** görüntüsünü değiştirmek için kullanılan **/disasm** seçeneği. Bu örnekte, başlangıç değerini ondalık bir sayı olarak ifade edilir ve bitiş değeri bir onaltılık sayı olarak belirtilir.  
-  
-```  
-dumpbin /disasm /range:4219334,0x004061CD t.exe  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+/RAWDATA veya /DISASM gibi diğer DUMPBIN seçenekleri ile birlikte kullanıldığında dumpbin çıktısını değiştirir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/RANGE:vaMin[,vaMax]
+```
+
+## <a name="parameters"></a>Parametreler
+
+*vaMin*<br/>
+Başlamak için DUMPBIN işlemi istediğiniz sanal adres.
+
+*vaMax*<br/>
+(İsteğe bağlı) DUMPBIN işlemi sonlandırmak için istediğiniz sanal adres. Belirtilmezse, dosyanın sonuna dumpbin geçer.
+
+## <a name="remarks"></a>Açıklamalar
+
+Görüntü sanal adreslerini görmek için eşleme dosyası (RVA + Base) görüntüsü için kullandığınız **/DISASM** veya **OPTIONAL** dumpbin veya Visual Studio hata ayıklayıcısını ayrıştırma penceresinde seçeneği.
+
+## <a name="example"></a>Örnek
+
+Bu örnekte, **/aralığı** görüntülenme durumunu değiştirmek için kullanılan **/disasm** seçeneği. Bu örnekte, başlangıç değeri bir ondalık sayı olarak ifade edilir ve bitiş değeri, onaltılık bir sayı belirtilir.
+
+```
+dumpbin /disasm /range:4219334,0x004061CD t.exe
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

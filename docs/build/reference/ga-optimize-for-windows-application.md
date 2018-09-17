@@ -20,41 +20,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61bf8844a5471a97214ca6f3d3b5b473c9cd6217
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2ef8aaf1e2b3f1dd75f7ca2669aaf09f3d121a98
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43194669"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710066"
 ---
 # <a name="ga-optimize-for-windows-application"></a>/GA (Windows Uygulaması için İyileştir)
-İş parçacığı yerel depolama (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kod sonuçlanır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/GA  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/GA** veri erişimi ile bildirilmiş [gt;__declspec(thread)](../../cpp/declspec.md) Windows tabanlı bir programı. Bu seçenek ayarlandığında [__tls_index](/windows/desktop/ProcThread/thread-local-storage) makrosu 0 olarak varsayılır.  
-  
- Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklayın **C/C++** klasör.  
-  
-3.  Tıklayın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+İş parçacığı yerel depolama (TLS) değişkenleri erişmek için bir .exe dosyası için daha verimli kod sonuçlanır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/GA
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**/GA** veri erişimi ile bildirilmiş [gt;__declspec(thread)](../../cpp/declspec.md) Windows tabanlı bir programı. Bu seçenek ayarlandığında [__tls_index](/windows/desktop/ProcThread/thread-local-storage) makrosu 0 olarak varsayılır.
+
+Kullanarak **/GA** için bir DLL hatalı kod oluşturma neden olabilir.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -144,7 +144,6 @@
 ### [Derleme Özelleştirmeleri Sorunlarını Giderme](troubleshooting-build-customizations.md)
 ### [Özel Derleme Adımının veya Derleme Olayının Çıktısını Biçimlendirme](formatting-the-output-of-a-custom-build-step-or-build-event.md)
 ## [Genel Derleme Komutları ve Özellikler Makroları](common-macros-for-build-commands-and-properties.md)
-## [Harici Projeler Derleme](building-external-projects.md)
 ## [Proje Dosyaları](project-files.md)
 ## [İzlenecek Yol: Visual Studio'da CLR'yi Hedefleyen C++ Programını Derleme](walkthrough-compiling-a-cpp-program-that-targets-the-clr-in-visual-studio.md)
 # [C++ Masaüstü Geliştirmesi için Visual Studio IDE Kullanma](using-the-visual-studio-ide-for-cpp-desktop-development.md)

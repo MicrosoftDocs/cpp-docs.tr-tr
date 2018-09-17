@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 456772306c854d4450a7be3996285e90a1d5783f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1435d5fc286349efb2d44eeba65c3ee2231d111f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679470"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703904"
 ---
 # <a name="cdockablepane-class"></a>CDockablePane sınıfı
 Bir dock sitesine yerleştirilebilen veya sekmeli bir bölmeye eklenebilen bir bölme uygular.  
@@ -332,14 +332,14 @@ virtual CDockablePane* AttachToTabWnd(
  [in] [out] *pTabControlBarAttachTo*  
  Geçerli bölmesini ekler hedef bölmesinde belirtir. Hedef bölmesinde yerleştirilebilir bir bölme olmalıdır.  
   
- [in] *dockMethod*  
- Yerleştirme yöntemini belirtir.  
+*dockMethod*<br/>
+[in] Yerleştirme yöntemini belirtir.  
   
- [in] *bSetActive*  
- Sekmeli bölme iliştirme işleminden sonra etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSetActive*<br/>
+[in] Sekmeli bölme iliştirme işleminden sonra etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
- [out] *ppTabbedControlBar*  
- İliştirme işleminden kaynaklanan sekmeli bölme içerir.  
+*ppTabbedControlBar*<br/>
+[out] İliştirme işleminden kaynaklanan sekmeli bölme içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekmeli bir bölmeye değilse geçerli bölmesi için bir işaretçi; Aksi durumda iliştirme işleminden kaynaklanan sekmeli bölme için bir işaretçi. Geçerli bölmesini eklediyseniz ya da bir hata oluşursa, döndürülen değer NULL olur.  
@@ -375,11 +375,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- Kullanılmadı.  
+*bStretch*<br/>
+[in] Kullanılmıyor.  
   
- [in] *bHorz*  
- Kullanılmadı.  
+*bHorz*<br/>
+[in] Kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CSize` bölmesinde dikdörtgen boyutunu içeren nesne.  
@@ -392,8 +392,8 @@ virtual BOOL CanAcceptMiniFrame(CPaneFrameWnd* pMiniFrame) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMiniFrame*  
- İşaretçi bir `CPaneFrameWnd` nesne.  
+*pMiniFrame*<br/>
+[in] İşaretçi bir `CPaneFrameWnd` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *pMiniFrame* bölmesine yerleştirilmiş; Aksi takdirde yanlış olabilir.  
@@ -406,8 +406,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Geçerli bölmesine sabitlemek için bölmenin belirtir.  
+*pBar*<br/>
+[in] Geçerli bölmesine sabitlemek için bölmenin belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen bölmesinde bu bölme için yerleştirilmiş olması gerekiyorsa TRUE; Aksi takdirde FALSE.  
@@ -469,8 +469,8 @@ virtual void ConvertToTabbedDocument(BOOL bActiveTabOnly = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bActiveTabOnly*  
- Dönüştürürken bir `CTabbedPane`, yalnızca etkin sekmede dönüştürmek için true değerini belirtin. Bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.  
+*bActiveTabOnly*<br/>
+[in] Dönüştürürken bir `CTabbedPane`, yalnızca etkin sekmede dönüştürmek için true değerini belirtin. Bölmedeki tüm sekmeleri dönüştürmek için FALSE belirtin.  
   
 ##  <a name="checkautohidecondition"></a>  CDockablePane::CheckAutoHideCondition  
  Yerleştirme bölmesi (autohide modu olarak da bilinir) gizlenip gizlenmeyeceğini belirler.  
@@ -495,8 +495,8 @@ virtual BOOL CheckStopSlideCondition(BOOL bDirection);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDirection*  
- Bölmesi görünür durumda TRUE; Bölmenin gizli değilse FALSE.  
+*bDirection*<br/>
+[in] Bölmesi görünür durumda TRUE; Bölmenin gizli değilse FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durdurma koşul karşılanıyorsa TRUE; Aksi takdirde FALSE.  
@@ -514,8 +514,8 @@ virtual void CopyState(CDockablePane* pOrgBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pOrgBar*  
- Yerleştirilebilir bir bölme için bir işaretçi.  
+*pOrgBar*<br/>
+[in] Yerleştirilebilir bir bölme için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CDockablePane::CopyState` durumu kopyalar *pOrgBar* aşağıdaki yöntemleri çağırarak geçerli bölmesine:  
@@ -558,38 +558,38 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszCaption*  
- Pencere adını belirtir.  
+*lpszCaption*<br/>
+[in] Pencere adını belirtir.  
   
  [in] [out] *pParentWnd*  
  Üst pencere belirtir.  
   
- [in] *dikdörtgen*  
- İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.  
+*Rect*<br/>
+[in] İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.  
   
- [in] *bHasGripper*  
- Bir resim yazısı bölmesi oluşturmak için TRUE; Aksi takdirde FALSE.  
+*bHasGripper*<br/>
+[in] Bir resim yazısı bölmesi oluşturmak için TRUE; Aksi takdirde FALSE.  
   
- [in] *nID*  
- Alt pencere Kimliğini belirtir. Bu değer bu yerleştirme bölmesi takma durumunu kaydetmek istiyorsanız benzersiz olmalıdır.  
+*nID*<br/>
+[in] Alt pencere Kimliğini belirtir. Bu değer bu yerleştirme bölmesi takma durumunu kaydetmek istiyorsanız benzersiz olmalıdır.  
   
- [in] *dwStyle*  
- Pencere stili özniteliklerini belirtir.  
+*dwStyle*<br/>
+[in] Pencere stili özniteliklerini belirtir.  
   
- [in] *dwTabbedStyle*  
- Sekmeli kullanıcı bu bölme, açıklamalı alt yazı bir bölmeyi sürüklediğinde oluşturulur sekmeli pencere stilini belirtir.  
+*dwTabbedStyle*<br/>
+[in] Sekmeli kullanıcı bu bölme, açıklamalı alt yazı bir bölmeyi sürüklediğinde oluşturulur sekmeli pencere stilini belirtir.  
   
- [in] *dwControlBarStyle*  
- Ek stili özniteliklerini belirtir.  
+*dwControlBarStyle*<br/>
+[in] Ek stili özniteliklerini belirtir.  
   
  [in] [out] *pContext*  
  Pencere oluşturma bağlamını belirtir.  
   
- [in] *lpszWindowName*  
- Pencere adını belirtir.  
+*lpszWindowName*<br/>
+[in] Pencere adını belirtir.  
   
- [in] *sizeDefault*  
- Pencerenin boyutunu belirtir.  
+*sizeDefault*<br/>
+[in] Pencerenin boyutunu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirilebilir bölmesinde başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
@@ -612,14 +612,14 @@ static CPaneDivider* __stdcall CreateDefaultPaneDivider(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Bölmenin yerleştirilmiş ana çerçeve tarafını belirtir. Varsa *dwAlignment* CBRS_ALIGN_LEFT veya CBRS_ALIGN_RIGHT bayrağını içeren bu yöntem dikey oluşturur (`CPaneDivider::SS_VERT`) ayırıcı; Aksi takdirde, bu yöntem bir yatay oluşturur (`CPaneDivider::SS_HORZ`) ayırıcı.  
+*dwAlignment*<br/>
+[in] Bölmenin yerleştirilmiş ana çerçeve tarafını belirtir. Varsa *dwAlignment* CBRS_ALIGN_LEFT veya CBRS_ALIGN_RIGHT bayrağını içeren bu yöntem dikey oluşturur (`CPaneDivider::SS_VERT`) ayırıcı; Aksi takdirde, bu yöntem bir yatay oluşturur (`CPaneDivider::SS_HORZ`) ayırıcı.  
   
- [in] *pParent*  
- Ana çerçeve işaretçisi.  
+*pParent*<br/>
+[in] Ana çerçeve işaretçisi.  
   
- [in] *pSliderRTC*  
- Kullanılmadı.  
+*pSliderRTC*<br/>
+[in] Kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Ayırıcı oluşturulması başarısız olursa bu yöntem yeni oluşturulan ayırıcı veya NULL bir işaretçi döndürür.  
@@ -652,32 +652,32 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwStyleEx*  
- Yeni pencere için genişletilmiş stili özniteliklerini belirtir.  
+*dwStyleEx*<br/>
+[in] Yeni pencere için genişletilmiş stili özniteliklerini belirtir.  
   
- [in] *lpszCaption*  
- Pencere adını belirtir.  
+*lpszCaption*<br/>
+[in] Pencere adını belirtir.  
   
  [in] [out] *pParentWnd*  
  Üst pencere belirtir.  
   
- [in] *dikdörtgen*  
- İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.  
+*Rect*<br/>
+[in] İstemci koordinatları içinde pencerenin konumunu ve boyutunu belirtir *pParentWnd*.  
   
- [in] *bHasGripper*  
- Bir resim yazısı bölmesi oluşturmak için TRUE; Aksi takdirde FALSE.  
+*bHasGripper*<br/>
+[in] Bir resim yazısı bölmesi oluşturmak için TRUE; Aksi takdirde FALSE.  
   
- [in] *nID*  
- Alt pencere Kimliğini belirtir. Bu değer bu yerleştirme bölmesi takma durumunu kaydetmek istiyorsanız benzersiz olmalıdır.  
+*nID*<br/>
+[in] Alt pencere Kimliğini belirtir. Bu değer bu yerleştirme bölmesi takma durumunu kaydetmek istiyorsanız benzersiz olmalıdır.  
   
- [in] *dwStyle*  
- Pencere stili özniteliklerini belirtir.  
+*dwStyle*<br/>
+[in] Pencere stili özniteliklerini belirtir.  
   
- [in] *dwTabbedStyle*  
- Sekmeli kullanıcı bu bölme, açıklamalı alt yazı bir bölmeyi sürüklediğinde oluşturulur sekmeli pencere stilini belirtir.  
+*dwTabbedStyle*<br/>
+[in] Sekmeli kullanıcı bu bölme, açıklamalı alt yazı bir bölmeyi sürüklediğinde oluşturulur sekmeli pencere stilini belirtir.  
   
- [in] *dwControlBarStyle*  
- Ek stili özniteliklerini belirtir.  
+*dwControlBarStyle*<br/>
+[in] Ek stili özniteliklerini belirtir.  
   
  [in] [out] *pContext*  
  Pencere oluşturma bağlamını belirtir.  
@@ -720,14 +720,14 @@ virtual BOOL DockPaneContainer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *barContainerManager*  
- Sabitlenmiş kapsayıcı kapsayıcı yöneticisinin bir başvuru.  
+*barContainerManager*<br/>
+[in] Sabitlenmiş kapsayıcı kapsayıcı yöneticisinin bir başvuru.  
   
- [in] *dwAlignment*  
- DWORD kapsayıcı sabitlenmiş bölmesinde tarafını belirtir.  
+*dwAlignment*<br/>
+[in] DWORD kapsayıcı sabitlenmiş bölmesinde tarafını belirtir.  
   
- [in] *dockMethod*  
- Kullanılmadı.  
+*dockMethod*<br/>
+[in] Kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kapsayıcı, başarıyla bölmesine yerleştirilmiş TRUE; Aksi takdirde FALSE.  
@@ -750,8 +750,8 @@ virtual CPane* DockPaneStandard(BOOL& bWasDocked);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bWasDocked*  
- Yöntem döndürüldüğünde bölmesinde başarıyla sabitlenmiş değilse bu değeri TRUE içerir; Aksi takdirde FALSE içerir.  
+*bWasDocked*<br/>
+[in] Yöntem döndürüldüğünde bölmesinde başarıyla sabitlenmiş değilse bu değeri TRUE içerir; Aksi takdirde FALSE içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sekmeli pencere bölmesi sabitlenmiş veya sekmeli pencere yerleştirme sonucunda oluşturduysanız, bu yöntem sekmeli penceresine bir işaretçi döndürür. Bölmenin yerleştirilmiş başarıyla aksi olup olmadığını, bu yöntemi döndürür **bu** işaretçi. Yerleştirme başarısız olursa bu yöntem NULL döndürür.  
@@ -783,11 +783,11 @@ virtual BOOL DockToWindow(
  [in] [out] *pTargetWindow*  
  Bu bölme için sabitlemek için yerleştirilebilir bölmesinde belirtir.  
   
- [in] *dwAlignment*  
- Bölmenin yerleştirme hizalamasını belirtir. CBRS_ALIGN_LEFT CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT CBRS_ALIGN_BOTTOM veya cbrs_alıgn_any biri olabilir. (Afxres.h içinde tanımlanan.)  
+*dwAlignment*<br/>
+[in] Bölmenin yerleştirme hizalamasını belirtir. CBRS_ALIGN_LEFT CBRS_ALIGN_TOP, CBRS_ALIGN_RIGHT CBRS_ALIGN_BOTTOM veya cbrs_alıgn_any biri olabilir. (Afxres.h içinde tanımlanan.)  
   
- [in] *lpRect*  
- Bölmenin yerleştirme dikdörtgen belirtir.  
+*lpRect*<br/>
+[in] Bölmenin yerleştirme dikdörtgen belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde başarıyla yerleştirilmiş TRUE; Aksi takdirde FALSE.  
@@ -805,11 +805,11 @@ virtual void DrawCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Çizim için kullanılan cihaz bağlamını temsil eder.  
+*pDC*<br/>
+[in] Çizim için kullanılan cihaz bağlamını temsil eder.  
   
- [in] *rectCaption*  
- Sınırlayıcı dikdörtgenini bölmedeki resim yazısını belirtir.  
+*rectCaption*<br/>
+[in] Sınırlayıcı dikdörtgenini bölmedeki resim yazısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework yerleştirilebilir bir bölme başlığını çizmek için bu yöntemi çağırır.  
@@ -824,8 +824,8 @@ void EnableAutohideAll(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Otomatik Gizle yerleştirilebilir bölmesi için tüm özelliğini etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Otomatik Gizle yerleştirilebilir bölmesi için tüm özelliğini etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcının ne zaman tutan **Ctrl** anahtarı ve tıklama autohide modu, diğer tüm bölmelerde aynı kapsayıcı bir bölme geçmek pin düğmesini de autohide moduna geçti.  
@@ -840,8 +840,8 @@ virtual void EnableGripper(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Açıklamalı alt yazı etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Açıklamalı alt yazı etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework yerleştirilebilir bölmeleri oluşturduğunda, bunlar WS_STYLE pencere stili belirtilmiş olsa bile yok. Bu bölmedeki başlıktır framework tarafından denetlenen bir istemci dışı alan, ancak bu alan standart pencere başlığı farklı anlamına gelir.  
@@ -908,11 +908,11 @@ virtual AFX_CS_STATUS GetDockingStatus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pt*  
- İşaretçiyi ekran koordinatlarına göre konumu.  
+*PT*<br/>
+[in] İşaretçiyi ekran koordinatlarına göre konumu.  
   
- [in] *nSensitivity*  
- Piksel cinsinden uzaklığı bir dikdörtgenin edge uzağa, yerleştirme etkinleştirmek için işaretçi olması gerekir.  
+*nSensitivity*<br/>
+[in] Piksel cinsinden uzaklığı bir dikdörtgenin edge uzağa, yerleştirme etkinleştirmek için işaretçi olması gerekir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durumu aşağıdaki değerlerden biri:  
@@ -964,11 +964,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectTabAreaTop*  
- `GetTabArea` Bu değişken sekmeleri bölmesinin üst kısmında bulunan ile sekmesindeki alanı doldurur. Sekmeleri bölmesinin altında bulunuyorsa, bu değişken boş bir dikdörtgen ile doldurulur.  
+*rectTabAreaTop*<br/>
+[in] `GetTabArea` sekmeleri bölmesinin üst kısmında bulunuyorsa bu değişkeni ile sekmesindeki alanı doldurur. Sekmeleri bölmesinin altında bulunuyorsa, bu değişken boş bir dikdörtgen ile doldurulur.  
   
- [in] *rectTabAreaBottom*  
- `GetTabArea` Bu değişken bölmesinin en altında bulunan bir sekme ile sekmesindeki alanı doldurur. Bölmenin en üstünde sekmeleri bulunuyorsa, bu değişken boş bir dikdörtgen ile doldurulur.  
+*rectTabAreaBottom*<br/>
+[in] `GetTabArea` sekmeleri bölmesinin altında bulunuyorsa bu değişkeni ile sekmesindeki alanı doldurur. Bölmenin en üstünde sekmeleri bulunuyorsa, bu değişken boş bir dikdörtgen ile doldurulur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, türetilmiş sınıflarda kullanılır `CDockablePane` ve sekmeler. Daha fazla bilgi için [CTabbedPane::GetTabArea](../../mfc/reference/ctabbedpane-class.md#gettabarea) ve [CMFCOutlookBar::GetTabArea](../../mfc/reference/cmfcoutlookbar-class.md#gettabarea).  
@@ -1011,11 +1011,11 @@ virtual int HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Test noktası belirtir.  
+*Noktası*<br/>
+[in] Test noktası belirtir.  
   
- [in] *bDetectCaption*  
- Bölmedeki resim yazısını noktasıysa HTCAPTION döndürülmesi gereken TRUE; Aksi takdirde FALSE.  
+*bDetectCaption*<br/>
+[in] Bölmedeki resim yazısını noktasıysa HTCAPTION döndürülmesi gereken TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Aşağıdaki değerlerden biri:  
@@ -1228,11 +1228,11 @@ virtual void OnBeforeChangeParent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndNewParent*  
- Yeni üst penceresine bir işaretçi.  
+*pWndNewParent*<br/>
+[in] Yeni üst penceresine bir işaretçi.  
   
- [in] *bDelay*  
- Yerleştirme düzeni hesaplanması bölmesinde yerleştirilmemiş ise gecikme belirten Boole. Daha fazla bilgi için [CDockablePane::UndockPane](#undockpane).  
+*bDelay*<br/>
+[in] Yerleştirme düzeni hesaplanması bölmesinde yerleştirilmemiş ise gecikme belirten Boole. Daha fazla bilgi için [CDockablePane::UndockPane](#undockpane).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bölmenin yerleştirilmiş ve yeni üst yerleştirme izin vermez, bu yöntem bölmesinde çıkarabilirsiniz.  
@@ -1249,11 +1249,11 @@ virtual BOOL OnBeforeFloat(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectFloat*  
- Kayan bir durumda olduğunda bölmesinin boyutunu ve konumunu belirtir.  
+*rectFloat*<br/>
+[in] Kayan bir durumda olduğunda bölmesinin boyutunu ve konumunu belirtir.  
   
- [in] *dockMethod*  
- Yerleştirme yöntemini belirtir. Bkz: [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) olası değerler listesi.  
+*dockMethod*<br/>
+[in] Yerleştirme yöntemini belirtir. Bkz: [CPane::DockPane](../../mfc/reference/cpane-class.md#dockpane) olası değerler listesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde kaydırıldı TRUE; Aksi takdirde FALSE.  
@@ -1269,8 +1269,8 @@ virtual void OnPressButtons(UINT nHit);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nHit*  
- Bu parametre kullanılmaz.  
+*nHit*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel düğme yerleştirilebilir bir bölme açıklamalı alt yazı ekleme, kullanıcı düğmeye bastığında bildirimleri almak için bu yöntemi geçersiz kılın.  
@@ -1283,8 +1283,8 @@ virtual void OnSlide(BOOL bSlideOut);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSlideOut*  
- Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
+*bSlideOut*<br/>
+[in] Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta özel autohide efektleri uygulamak için bu yöntemi yok sayın.  
@@ -1310,14 +1310,14 @@ BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBarToReplaceWith*  
- Yerleştirilebilir bir bölme için bir işaretçi.  
+*pBarToReplaceWith*<br/>
+[in] Yerleştirilebilir bir bölme için bir işaretçi.  
   
- [in] *dockMethod*  
- Kullanılmadı.  
+*dockMethod*<br/>
+[in] Kullanılmıyor.  
   
- [in] *bRegisterWithFrame*  
- TRUE ise yeni bir bölme eski bölmesinin üst yerleştirme Manager'a kayıtlı. Yeni bir bölme eski takma Yöneticisi tarafından tutulan bölmeleri listesi bölmesinde dizine eklenir.  
+*bRegisterWithFrame*<br/>
+[in] TRUE ise yeni bir bölme eski bölmesinin üst yerleştirme Manager'a kayıtlı. Yeni bir bölme eski takma Yöneticisi tarafından tutulan bölmeleri listesi bölmesinde dizine eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Değiştirme başarılı ise TRUE; Aksi takdirde FALSE.  
@@ -1344,17 +1344,17 @@ virtual CMFCAutoHideBar* SetAutoHideMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bMode*  
- Otomatik Gizle modunu etkinleştirmek için TRUE; Normal yerleştirme modunu etkinleştirmek için FALSE.  
+*bMode*<br/>
+[in] Otomatik Gizle modunu etkinleştirmek için TRUE; Normal yerleştirme modunu etkinleştirmek için FALSE.  
   
- [in] *dwAlignment*  
- Oluşturulacak autohide bölmesinde hizalamasını belirtir.  
+*dwAlignment*<br/>
+[in] Oluşturulacak autohide bölmesinde hizalamasını belirtir.  
   
  [in] [out] *pCurrAutoHideBar*  
  Geçerli autohide araç için bir işaretçi. NULL olabilir.  
   
- [in] *bUseTimer*  
- Autohide etkin kullanıcı bölmesinde autohide moduna geçiş yaptığında kullanın veya bölmesinde hemen gizlemek için belirtir.  
+*bUseTimer*<br/>
+[in] Autohide etkin kullanıcı bölmesinde autohide moduna geçiş yaptığında kullanın veya bölmesinde hemen gizlemek için belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Otomatik Gizle modu veya NULL Geçiş sonucunda oluşturulan autohide araç çubuğu.  
@@ -1374,11 +1374,11 @@ void SetAutoHideParents(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pToolBar*  
- Otomatik gizleme araç işaretçisi.  
+*pToolBar*<br/>
+[in] Otomatik gizleme araç işaretçisi.  
   
- [in] *pBtn*  
- Otomatik Gizle düğmesi işaretçisi.  
+*pBtn*<br/>
+[in] Otomatik Gizle düğmesi işaretçisi.  
   
 ##  <a name="setlastpercentinpanecontainer"></a>  CDockablePane::SetLastPercentInPaneContainer  
  Bir bölme kapsayıcısının içinde kapladığı alan yüzdesini belirler.  
@@ -1388,8 +1388,8 @@ void SetLastPercentInPaneContainer(int n);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Bir **int** bölmesinin alt kapsayıcıda kapladığı alan yüzdesini belirtir.  
+*n*<br/>
+[in] Bir **int** bölmesinin alt kapsayıcıda kapladığı alan yüzdesini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework düzenini hesaplandığında yeni değer kullanması için bölmenin ayarlar.  
@@ -1402,8 +1402,8 @@ void SetRestoredDefaultPaneDivider(HWND hRestoredSlider);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hRestoredSlider*  
- Bölmesinde ayırıcı (kaydırma çubuğu) için bir tanıtıcı.  
+*hRestoredSlider*<br/>
+[in] Bölmesinde ayırıcı (kaydırma çubuğu) için bir tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir bölme seri durumda olduğunda, geri yüklenen varsayılan bölmesinde ayırıcı elde edilir. Daha fazla bilgi için [CDockablePane::RestoreDefaultPaneDivider](#restoredefaultpanedivider).  
@@ -1416,8 +1416,8 @@ void SetTabbedPaneRTC(CRuntimeClass* pRTC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRTC*  
- Sekmeli bölme için çalışma zamanı sınıf bilgileri.  
+*pRTC*<br/>
+[in] Sekmeli bölme için çalışma zamanı sınıf bilgileri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dinamik olarak oluşturulan sekmeli bölmeleri için çalışma zamanı sınıf bilgileri ayarlamak için bu yöntemi çağırın. Bu kullanıcı başka bir bölme açıklamalı alt yazı bir bölme sürüklediğinde veya çağırırsanız oluşabilir [CDockablePane::AttachToTabWnd](#attachtotabwnd) sekmeli bir bölmeye yerleştirilebilir iki bölmeden programlı olarak oluşturmak için yöntemi.  
@@ -1443,14 +1443,14 @@ virtual void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
   
- [in] *bDelay*  
- Gecikme true yerleştirme düzeni ayarlama; Yerleştirme düzeni hemen ayarlamak için FALSE.  
+*bDelay*<br/>
+[in] Gecikme true yerleştirme düzeni ayarlama; Yerleştirme düzeni hemen ayarlamak için FALSE.  
   
- [in] *bActivate*  
- Gösterilen bölmesinde etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bActivate*<br/>
+[in] Gösterilen bölmesinde etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yerine bu yöntemi çağıran [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow) gösterirken veya gizlerken bölmeleri yerleştirilebilir.  
@@ -1465,11 +1465,11 @@ virtual void Slide(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSlideOut*  
- Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
+*bSlideOut*<br/>
+[in] Bölmesini görüntülemek için TRUE; Bölmesinde gizlemek için FALSE.  
   
- [in] *bUseTimer*  
- Otomatik Gizle etkisi olan bölmesini göster veya gizle için TRUE; Göstermek veya bölmesinde hemen gizlemek için FALSE.  
+*bUseTimer*<br/>
+[in] Otomatik Gizle etkisi olan bölmesini göster veya gizle için TRUE; Göstermek veya bölmesinde hemen gizlemek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework autohide modunda bir bölme animasyon uygulamak için bu yöntemi çağırır.  
@@ -1494,8 +1494,8 @@ virtual void UndockPane(BOOL bDelay = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDelay*  
- Gecikme true yerleştirme düzeni hesaplanıyor; Yerleştirme düzeni hemen yeniden hesaplamak için FALSE.  
+*bDelay*<br/>
+[in] Gecikme true yerleştirme düzeni hesaplanıyor; Yerleştirme düzeni hemen yeniden hesaplamak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ana çerçeve penceresinin veya çoklu miniframe pencere kapsayıcı (bir tek çerçeve gizlenmek ile diğer bölmeler, kayan bölme) bir bölme çıkarmak için bu yöntemi çağırın.  

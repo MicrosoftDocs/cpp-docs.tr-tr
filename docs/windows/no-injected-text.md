@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: e63b0b47dcc3f53ecd5af2d51505df844f66437a
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 055b14c38e3084a7368953cbce4f95373e1a77f3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42599392"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706335"
 ---
 # <a name="noinjectedtext"></a>no_injected_text
 
@@ -38,8 +38,8 @@ Derleyici, özellik kullanımı sonucu olarak kod ekleme öğesinden engeller.
 
 ### <a name="parameters"></a>Parametreler
 
-*Boole* (isteğe bağlı)  
-**doğru** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.
+*Boole değeri*  
+(İsteğe bağlı) **true** eklenen, herhangi bir kod isterseniz **false** eklenmesi için kod izin vermek için. **doğru** varsayılandır.
 
 ## <a name="remarks"></a>Açıklamalar
 

@@ -40,12 +40,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82447c14209f2f47fb6224df7e1daeb18ed6048e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3026e614b00f48b7668420aee20fd5915c270da2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43212897"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707492"
 ---
 # <a name="ckeyboardmanager-class"></a>CKeyboardManager sınıfı
 Ana çerçeve penceresi ve alt çerçeve pencereleri için kısayol tuşu tablolarını yönetir.  
@@ -134,17 +134,17 @@ static BOOL FindDefaultAccelerator(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Komut kimliği.  
+*uiCmd*<br/>
+[in] Komut kimliği.  
   
- [out] *str*  
- Bir başvuru bir `CString` nesne.  
+*str*<br/>
+[out] Bir başvuru bir `CString` nesne.  
   
- [in] *pWndFrame*  
- Çerçeve penceresi için bir işaretçi.  
+*pWndFrame*<br/>
+[in] Çerçeve penceresi için bir işaretçi.  
   
- [in] *bIsDefaultFrame*  
- Çerçeve penceresi varsayılan çerçeve penceresi olup olmadığını belirtir.  
+*bIsDefaultFrame*<br/>
+[in] Çerçeve penceresi varsayılan çerçeve penceresi olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kısayol bulunursa sıfır; Aksi durumda 0.  
@@ -168,10 +168,10 @@ static BOOL __stdcall IsKeyHandled(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *nKey*|Denetlenecek anahtarı.|  
-|[in] *fVirt*|Kısayol tuşu davranışını belirtir. Olası değerler listesi için bkz. [HIZLANDIRMA yapısı](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
-|[in] *pWndFrame*|Çerçeve penceresi. Bu yöntem, bir kısayol tuşu bu çerçeveye işlenip işlenmediğini belirler.|  
-|[in] *bIsDefaultFrame*|Belirten bir Boole parametresi olmadığını *pWndFrame* varsayılan çerçeve penceresidir.|  
+|*nKey*|[in] Denetlenecek anahtarı.|  
+|*fVirt*|[in] Kısayol tuşu davranışını belirtir. Olası değerler listesi için bkz. [HIZLANDIRMA yapısı](/windows/desktop/api/winuser/ns-winuser-tagaccel).|  
+|*pWndFrame*|[in] Çerçeve penceresi. Bu yöntem, bir kısayol tuşu bu çerçeveye işlenip işlenmediğini belirler.|  
+|*bIsDefaultFrame*|[in] Belirten bir Boole parametresi olmadığını *pWndFrame* varsayılan çerçeve penceresidir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kısayol tuşu işlenen TRUE. FALSE anahtar işlenmezse ya da *pWndFrame* null.  
@@ -191,7 +191,7 @@ static BOOL __stdcall IsKeyPrintable(const UINT nChar);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *nChar*|Bu yöntem denetleyen karakter.|  
+|*nChar*|[in] Bu yöntem denetleyen karakter.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sıfır dışında yazdırılabilir bir karakterse, değilse sıfır.  
@@ -222,11 +222,11 @@ BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Kayıt defteri yolu burada `CKeyboardManager` verileri kaydedilir.  
+*lpszProfileName*<br/>
+[in] Kayıt defteri yolu burada `CKeyboardManager` verileri kaydedilir.  
   
- [in] *pDefaultFrame*  
- Varsayılan pencere olarak kullanılacak bir çerçeve penceresi için bir işaretçi.  
+*pDefaultFrame*<br/>
+[in] Varsayılan pencere olarak kullanılacak bir çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durum, aksi takdirde başarıyla yüklendi ya da 0 olursa sıfır dışı.  
@@ -256,11 +256,11 @@ BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Kaydetmek için kayıt defteri yolu `CKeyboardManager` durumu.  
+*lpszProfileName*<br/>
+[in] Kaydetmek için kayıt defteri yolu `CKeyboardManager` durumu.  
   
- [in] *pDefaultFrame*  
- Varsayılan pencere olur bir çerçeve penceresi için bir işaretçi.  
+*pDefaultFrame*<br/>
+[in] Varsayılan pencere olur bir çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Klavye manager durumu başarıyla kaydedildi olursa sıfır dışı ya da aksi durumda 0.  
@@ -280,11 +280,11 @@ static void ShowAllAccelerators(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bShowAll*  
- TRUE ise tüm kısayol tuşlarının görüntülenir. FALSE ise, yalnızca ilk kısayol tuşu görüntülenir.  
+*bShowAll*<br/>
+[in] TRUE ise tüm kısayol tuşlarının görüntülenir. FALSE ise, yalnızca ilk kısayol tuşu görüntülenir.  
   
- [in] *lpszDelimiter*  
- Kısayol tuşları arasında eklemek için bir dize. Bir kısayol tuşu görüntülenir, yalnızca bu sınırlayıcı bir etkisi yoktur.  
+*lpszDelimiter*<br/>
+[in] Kısayol tuşları arasında eklemek için bir dize. Bir kısayol tuşu görüntülenir, yalnızca bu sınırlayıcı bir etkisi yoktur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir komut ile ilişkili birden fazla kısayol tuşu varsa, varsayılan olarak, yalnızca ilk kısayol tuşu gösterilir. Bu işlev tüm komutları ile ilişkili tüm kısayol tuşlarının listelemenize olanak sağlar.  
@@ -299,8 +299,8 @@ static UINT TranslateCharToUpper(const UINT nChar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nChar*  
- Dönüştürülecek karakter.  
+*nChar*<br/>
+[in] Dönüştürülecek karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Giriş parametresinin üst kaydıdır karakter.  
@@ -323,20 +323,20 @@ BOOL UpdateAccelTable(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTemplate*  
- Bir belge şablonu için bir işaretçi.  
+*pTemplate*<br/>
+[in] Bir belge şablonu için bir işaretçi.  
   
- [in] *lpAccel*  
- Yeni kısayol tuşu işaretçisi.  
+*lpAccel*<br/>
+[in] Yeni kısayol tuşu işaretçisi.  
   
- [in] *nSize*  
- Yeni kısayol tablo boyutu.  
+*nSize*<br/>
+[in] Yeni kısayol tablo boyutu.  
   
- [in] *pDefaultFrame*  
- Varsayılan çerçeve penceresi için bir işaretçi.  
+*pDefaultFrame*<br/>
+[in] Varsayılan çerçeve penceresi için bir işaretçi.  
   
- [in] *hAccelNew*  
- Yeni kısayol tablo için bir tanıtıcı.  
+*hAccelNew*<br/>
+[in] Yeni kısayol tablo için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  

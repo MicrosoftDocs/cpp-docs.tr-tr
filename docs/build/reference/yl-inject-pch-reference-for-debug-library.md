@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fda6ac3336b1f2a5e910355b5460633916b0803
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 378d8e6b43a391c6d94c55b278bc71789981d9e3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894662"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712380"
 ---
 # <a name="yl-inject-pch-reference-for-debug-library"></a>/Yl (Hata Ayıklama Kitaplığı için PCH Başvurusu Ekle)
 
@@ -31,16 +31,16 @@ ms.locfileid: "43894662"
 
 ## <a name="syntax"></a>Sözdizimi
 
->**/Yl**  
->**/Yl**_adı_  
->**/Yl-**  
+>**/Yl**
+> **/Yl**_adı_
+> **/Yl-**
 
 ### <a name="arguments"></a>Arguments
 
-*Adı*  
+*Adı*<br/>
 Benzersiz bir simge bir parçası olarak kullanılan isteğe bağlı adı.
 
-*\-*  
+*\-*<br/>
 Bir tire (-) açıkça devre dışı bırakır **/Yl** derleyici seçeneği.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -75,5 +75,5 @@ Kullanırsanız **/Yl-**, **/Yc** ve [/z7](../../build/reference/z7-zi-zi-debug-
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a19c958998630399b6698f0e28b6e36d77d93ce
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 848612f59c2d5cc24289b6d8c56b0c9eeaebc961
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318999"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712796"
 ---
 # <a name="rawstorageiterator-class"></a>raw_storage_iterator Sınıfı
 
@@ -285,8 +285,8 @@ int main( void )
    int *pInt = new int[5];
    std::raw_storage_iterator<int*,int> it( pInt );
    for ( int i = 0; i < 5; i++, it++ ) {
-*it = 2 * i;
-};
+      *it = 2 * i;
+   };
 
    for ( int i = 0; i < 5; i++ ) cout << "array " << i << " = " << pInt[i] << endl;;
 

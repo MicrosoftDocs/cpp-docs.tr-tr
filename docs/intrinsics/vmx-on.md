@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4321a082efa71ecc81963099317ad3600ce8b36f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 9cefe61fc6fb651933a76cfc36b3039d48ea9de9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676204"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713407"
 ---
 # <a name="vmxon"></a>__vmx_on
 **Microsoft'a özgü**  
@@ -38,8 +38,8 @@ unsigned char __vmx_on(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `VmsSupportPhysicalAddress`  
- Bir sanal makine denetim yapısı (Windows VMCS) işaret eden bir 64 bit fiziksel adresi için bir işaretçi.  
+*VmsSupportPhysicalAddress*<br/>
+[in] Bir sanal makine denetim yapısı (Windows VMCS) işaret eden bir 64 bit fiziksel adresi için bir işaretçi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

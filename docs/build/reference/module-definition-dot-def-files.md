@@ -16,44 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57bad3a63e910918b6a22b6263f0df3faca0dcd1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f04035f3c5f0acd77fc197cbef3d2ab507feb0d4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374732"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710196"
 ---
 # <a name="module-definition-def-files"></a>Modül-Tanımlama (.Def) Dosyaları
-Modül-tanımlama (.def) dosyaları bağlayıcı dışarı aktarma, öznitelikler ve diğer bilgileri bağlanması programı hakkında bilgiler sağlar. .Def dosyası DLL oluştururken kullanışlıdır. Olduğundan [bağlayıcı seçenekleri](../../build/reference/linker-options.md) kullanılabilecek modül tanımlama deyimleri yerine .def dosyaları genellikle gerekli değildir. Aynı zamanda [__declspec(dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) belirtmek için bir yol işlevleri verdi.  
-  
- İle bağlayıcı aşamasında .def dosyası çağırabileceği [/def (modül tanım dosyasını belirtin)](../../build/reference/def-specify-module-definition-file.md) bağlayıcı seçeneği.  
-  
- .Def dosyası kullanarak, hiçbir dışarı aktarma içeren bir .exe dosyası oluşturuluyorsa, çıktı dosyası daha büyük ve daha yavaş yükleniyor hale getirir.  
-  
- Bir örnek için bkz: [bir DLL kullanarak DEF dosyaları dışarı aktarma](../../build/exporting-from-a-dll-using-def-files.md).  
-  
- Daha fazla bilgi edinmek için aşağıdaki bölümlere bakın:  
-  
--   [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)  
-  
--   [EXPORTS](../../build/reference/exports.md)  
-  
--   [HEAPSIZE](../../build/reference/heapsize.md)  
-  
--   [LIBRARY](../../build/reference/library.md)  
-  
--   [ADI](../../build/reference/name-c-cpp.md)  
-  
--   [BÖLÜMLER](../../build/reference/sections-c-cpp.md)  
-  
--   [STACKSIZE](../../build/reference/stacksize.md)  
-  
--   [STUB](../../build/reference/stub.md)  
-  
--   [SÜRÜM](../../build/reference/version-c-cpp.md)  
-  
--   [Ayrılmış sözcükler](../../build/reference/reserved-words.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  
+
+Modül-tanımlama (.def) dosyaları, bağlayıcı dışarı aktarma, öznitelikleri ve bağlanacak programı hakkında diğer bilgiler hakkında bilgi sağlar. Bir .def dosyası bir DLL'yi oluştururken en kullanışlıdır. Olduğundan [bağlayıcı seçenekleri](../../build/reference/linker-options.md) kullanılabilecek modül tanımlama deyimleri yerine .def dosyaları genellikle gerekli değildir. Ayrıca [__declspec(dllexport)](../../build/exporting-from-a-dll-using-declspec-dllexport.md) belirtmek için bir yol dışa aktarılan işlevleri.
+
+Bir .def dosyası ile bağlayıcı aşamasında çağırabilirsiniz [/def (modül tanım dosyası belirtin)](../../build/reference/def-specify-module-definition-file.md) bağlayıcı seçeneği.
+
+Bir .def dosyası kullanarak, hiçbir dışarı sahip bir .exe dosyası oluşturuyorsanız çıktı dosyası daha büyük ve daha yavaş yükleniyor hale getirir.
+
+Bir örnek için bkz. [bir DLL kullanarak DEF dosyaları dışarı aktarma](../../build/exporting-from-a-dll-using-def-files.md).
+
+Daha fazla bilgi için aşağıdaki bölümlere bakın:
+
+- [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+
+- [EXPORTS](../../build/reference/exports.md)
+
+- [HEAPSIZE](../../build/reference/heapsize.md)
+
+- [LIBRARY](../../build/reference/library.md)
+
+- [ADI](../../build/reference/name-c-cpp.md)
+
+- [BÖLÜMLERİ](../../build/reference/sections-c-cpp.md)
+
+- [STACKSIZE](../../build/reference/stacksize.md)
+
+- [STUB](../../build/reference/stub.md)
+
+- [SÜRÜM](../../build/reference/version-c-cpp.md)
+
+- [Ayrılmış sözcükler](../../build/reference/reserved-words.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

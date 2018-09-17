@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6f03ea1ea39b9202d4bb7b850bb81354a4a47f1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: c0c8b5a22cfef8ebde74fbe6d1f6920a969e7bc6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677386"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706387"
 ---
 # <a name="vmxvmread"></a>__vmx_vmread
 **Microsoft'a özgü**  
@@ -42,8 +42,8 @@ unsigned char __vmx_vmread(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Field`|Okunacak Windows VMCS alan.|  
-|[in] `FieldValue`|Bir işaretçi değeri depolamak için konum için okuma tarafından belirtilen Windows VMCS alanından `Field` parametresi.|  
+|*Alan*|[in] Okunacak Windows VMCS alan.|  
+|*FieldValue*|[in] Bir işaretçi değeri depolamak için konum için okuma tarafından belirtilen Windows VMCS alanından `Field` parametresi.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

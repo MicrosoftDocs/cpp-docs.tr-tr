@@ -828,12 +828,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb6010d47be6fe2c771ac407bff26729c772f14
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: a35d65509de75e117bdbeef679618b8d49ef37a2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43678413"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711626"
 ---
 # <a name="cwnd-class"></a>CWnd sınıfı
 
@@ -1680,11 +1680,11 @@ virtual void CalcWindowRect(
 
 ### <a name="parameters"></a>Parametreler
 
-[out içinde] *lpClientRect*  
-Dikdörtgen bir yapıya yönelik işaretçi. Giriş, bu yapı istemci dikdörtgeni içerir. Yöntemi tamamlandığında, bu yapı belirtilen istemci dikdörtgeni içeren pencere dikdörtgeni içerir.
+*lpClientRect*<br/>
+[out içinde] Dikdörtgen bir yapıya yönelik işaretçi. Giriş, bu yapı istemci dikdörtgeni içerir. Yöntemi tamamlandığında, bu yapı belirtilen istemci dikdörtgeni içeren pencere dikdörtgeni içerir.
 
-[in] *nAdjustType*  
-Kullanma `CWnd::adjustBorder` penceresinde koordinatları WS_EX_CLIENTEDGE stili; olmadan hesaplamak için Aksi takdirde kullanın `CWnd::adjustOutside`.
+*nAdjustType*<br/>
+[in] Kullanma `CWnd::adjustBorder` penceresinde koordinatları WS_EX_CLIENTEDGE stili; olmadan hesaplamak için Aksi takdirde kullanın `CWnd::adjustOutside`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1924,26 +1924,26 @@ virtual BOOL Create(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lpszClassName*  
-Kayıtlı sistem pencere sınıfının adını içeren null ile sonlandırılmış bir dize işaretçisi; veya önceden tanımlanmış sistem pencere sınıfı adı.
+*lpszClassName*<br/>
+[in] Kayıtlı sistem pencere sınıfının adını içeren null ile sonlandırılmış bir dize işaretçisi; veya önceden tanımlanmış sistem pencere sınıfı adı.
 
-[in] *lpszWindowName*  
-Pencereyi içeren null ile sonlandırılmış bir dize işaretçisine görünen adı; Aksi takdirde NULL pencere için görünen ad.
+*lpszWindowName*<br/>
+[in] Pencereyi içeren null ile sonlandırılmış bir dize işaretçisine görünen adı; Aksi takdirde NULL pencere için görünen ad.
 
-[in] *dwStyle*  
-Bit düzeyinde birleşimi (veya) [pencere stilleri](styles-used-by-mfc.md#window-styles). WS_POPUP seçeneği geçerli bir stil değildir.
+*dwStyle*<br/>
+[in] Bit düzeyinde birleşimi (veya) [pencere stilleri](styles-used-by-mfc.md#window-styles). WS_POPUP seçeneği geçerli bir stil değildir.
 
-[in] *dikdörtgen*  
-Pencerenin üst penceresinin sol üst köşedeki göreli konumunu ve boyutu.
+*Rect*<br/>
+[in] Pencerenin üst penceresinin sol üst köşedeki göreli konumunu ve boyutu.
 
-[in] *pParentWnd*  
-Ana pencere işaretçisi.
+*pParentWnd*<br/>
+[in] Ana pencere işaretçisi.
 
-[in] *nID*  
-Pencerenin kimliği.
+*nID*<br/>
+[in] Pencerenin kimliği.
 
-[in] *pContext*  
-İşaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) belge-görünüm mimarisinin uygulama için özelleştirmek için kullanılan yapısı.
+*pContext*<br/>
+[in] İşaretçi bir [CCreateContext](../../mfc/reference/ccreatecontext-structure.md) belge-görünüm mimarisinin uygulama için özelleştirmek için kullanılan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -5985,10 +5985,10 @@ afx_msg void OnAppCommand(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pWnd*|İşaretçi bir `CWnd` kullanıcısının testine düğmeye tıkladı veya komut tuşa penceresini temsil eden nesne. Bu pencereyi alt pencere ileti alma penceresinin olabilir.|
-|[in] *nCmd*|Uygulama komutu belirtir. Olası değerler listesi için bkz: komutları altında *cmd* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
-|[in] *nDevice*|Giriş Olayı oluşturan giriş cihazı. Aygıtları olası değerler listesi için bkz. *uDevice* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
-|[in] *nKey*|Aşağı, CTRL tuşunu veya farenin sol düğmesi gibi tüm sanal anahtarları gösterir. Anahtarları altında olası değerler listesi için bkz. *dwKeys* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand). Daha fazla bilgi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
+|*pWnd*|[in] İşaretçi bir `CWnd` kullanıcısının testine düğmeye tıkladı veya komut tuşa penceresini temsil eden nesne. Bu pencereyi alt pencere ileti alma penceresinin olabilir.|
+|*nCmd*|[in] Uygulama komutu belirtir. Olası değerler listesi için bkz: komutları altında *cmd* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|*nDevice*|[in] Giriş Olayı oluşturan giriş cihazı. Aygıtları olası değerler listesi için bkz. *uDevice* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand).|
+|*nKey*|[in] Aşağı, CTRL tuşunu veya farenin sol düğmesi gibi tüm sanal anahtarları gösterir. Anahtarları altında olası değerler listesi için bkz. *dwKeys* bölümünü *lParam* parametresinin [WM_APPCOMMAND](/windows/desktop/inputdev/wm-appcommand). Daha fazla bilgi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -6273,8 +6273,8 @@ afx_msg void OnColorizationColorChanged(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *dwColorizationColor*|Yeni renklendirme rengi belirtir.<br /><br /> Renk biçimi onaltılık form 0xAARRGGBB dört bileşenlerin her biriyle 0xFF 0x00 burada aralıkları sayısıdır. Alfa değeri AA bileşendir, RR kırmızı renkte, GG yeşil ve mavi BB.|
-|[in] *bOpacity*|Yeni renk opaklık ile harmanlanan TRUE; Değilse FALSE.|
+|*dwColorizationColor*|[in] Yeni renklendirme rengi belirtir.<br /><br /> Renk biçimi onaltılık form 0xAARRGGBB dört bileşenlerin her biriyle 0xFF 0x00 burada aralıkları sayısıdır. Alfa değeri AA bileşendir, RR kırmızı renkte, GG yeşil ve mavi BB.|
+|*bOpacity*|[in] Yeni renk opaklık ile harmanlanan TRUE; Değilse FALSE.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7127,9 +7127,9 @@ afx_msg void OnHotKey(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHotKeyId*|İleti oluşturulan sık kullanılan tuş tanımlayıcısı. İleti, sistem tarafından tanımlanan sık kullanılan tuş tarafından üretilmişse, bu parametre aşağıdaki değerlerden biri olur:<br /><br /> -IDHOT_SNAPDESKTOP - ek Masaüstünde kısayol tuşuna basıldı.<br />-IDHOT_SNAPWINDOW - ek penceresi kısayol tuşuna basıldı.|
-|[in] *nKey1*|Bir bit düzeyinde (veya) tarafından belirtilen anahtarla birlikte basılan anahtarlarını gösteren bayrak birleşimi *nKey2* parametresi. Olası değerler şunlardır:<br /><br /> -MOD_ALT - ya da ALT tuşunu basılıyken.<br />-MOD_CONTROL - ya da CTRL tuşunu basılıyken.<br />-MOD_SHIFT - ya da SHIFT tuşunu basılıyken.<br />-MOD_WIN - ya da WINDOWS tuşu basılıyken. Bu anahtarlar, Microsoft Windows logosu ile etiketlenir.|
-|[in] *nKey2*|Kısayol tuşu sanal anahtar kodu.|
+|*nHotKeyId*|[in] İleti oluşturulan sık kullanılan tuş tanımlayıcısı. İleti, sistem tarafından tanımlanan sık kullanılan tuş tarafından üretilmişse, bu parametre aşağıdaki değerlerden biri olur:<br /><br /> -IDHOT_SNAPDESKTOP - ek Masaüstünde kısayol tuşuna basıldı.<br />-IDHOT_SNAPWINDOW - ek penceresi kısayol tuşuna basıldı.|
+|*nKey1*|[in] Bir bit düzeyinde (veya) tarafından belirtilen anahtarla birlikte basılan anahtarlarını gösteren bayrak birleşimi *nKey2* parametresi. Olası değerler şunlardır:<br /><br /> -MOD_ALT - ya da ALT tuşunu basılıyken.<br />-MOD_CONTROL - ya da CTRL tuşunu basılıyken.<br />-MOD_SHIFT - ya da SHIFT tuşunu basılıyken.<br />-MOD_WIN - ya da WINDOWS tuşu basılıyken. Bu anahtarlar, Microsoft Windows logosu ile etiketlenir.|
+|*nKey2*|[in] Kısayol tuşu sanal anahtar kodu.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7321,7 +7321,7 @@ afx_msg void OnInputDeviceChange(unsigned short uFlag);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *uFlag*|Bu bayrak, aşağıdaki değerleri içerebilir:<br /><br /> -GIDC_ARRIVAL - yeni cihaz sisteme eklendi.<br />Sistemden - GIDC_REMOVAL - cihaz kaldırıldı.|
+|*uFlag*|[in] Bu bayrak, aşağıdaki değerleri içerebilir:<br /><br /> -GIDC_ARRIVAL - yeni cihaz sisteme eklendi.<br />Sistemden - GIDC_REMOVAL - cihaz kaldırıldı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7344,8 +7344,8 @@ afx_msg void OnInputLangChange(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nCharSet*|Yeni yerel karakter kümesi. Daha fazla bilgi için *lfCharSet* parametresinin [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.|
-|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
+|*nCharSet*|[in] Yeni yerel karakter kümesi. Daha fazla bilgi için *lfCharSet* parametresinin [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.|
+|*nLocaleId*|[in] Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7368,8 +7368,8 @@ afx_msg void OnInputLangChangeRequest(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bit düzeyinde (veya) yeni yerel ayar listesinde gezinin yüklü önceki veya sonraki ayarında seçildiği ya da yeni giriş yerel klavye düzeni sistem karakter kümesiyle kullanılabilir gösteren bayrakların birleşimi.<br /><br /> Olası değerler INPUTLANGCHANGE_BACKWARD INPUTLANGCHANGE_FORWARD ve INPUTLANGCHANGE_SYSCHARSET ' dir.|
-|[in] *nLocaleId*|Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
+|*nFlags*|[in] Bit düzeyinde (veya) yeni yerel ayar listesinde gezinin yüklü önceki veya sonraki ayarında seçildiği ya da yeni giriş yerel klavye düzeni sistem karakter kümesiyle kullanılabilir gösteren bayrakların birleşimi.<br /><br /> Olası değerler INPUTLANGCHANGE_BACKWARD INPUTLANGCHANGE_FORWARD ve INPUTLANGCHANGE_SYSCHARSET ' dir.|
+|*nLocaleId*|[in] Giriş yerel ayar tanımlayıcısı. Daha fazla bilgi için [dil tanımlayıcısı sabitleri ve dizeleri](/windows/desktop/Intl/language-identifier-constants-and-strings).|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7800,8 +7800,8 @@ afx_msg UINT OnMenuDrag(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nPos*|Sürükleme işlemi başladığında menü öğesinin dizin konumu.|
-|[in] *pMenu*|İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü öğesi içeren nesne.|
+|*nPos*|[in] Sürükleme işlemi başladığında menü öğesinin dizin konumu.|
+|*pMenu*|[in] İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü öğesi içeren nesne.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -7829,7 +7829,7 @@ afx_msg UINT OnMenuGetObject(MENUGETOBJECTINFO* pMenuGetObjectInfo);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pMenu*|İşaretçi bir [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) sürükle-bırak menüsünün fare imlecini hakkında bilgi içeren yapısı açıktır.|
+|*pMenu*|[in] İşaretçi bir [MENUGETOBJECTINFO](/windows/desktop/api/winuser/ns-winuser-tagmenugetobjectinfo) sürükle-bırak menüsünün fare imlecini hakkında bilgi içeren yapısı açıktır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -7859,8 +7859,8 @@ afx_msg void OnMenuRButtonUp(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nPos*|Sağ fare düğmesine yayımlandığında menü öğesinin dizin konumu.|
-|[in] *pMenu*|İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü öğesi içeren nesne.|
+|*nPos*|[in] Sağ fare düğmesine yayımlandığında menü öğesinin dizin konumu.|
+|*pMenu*|[in] İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü öğesi içeren nesne.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -7977,8 +7977,8 @@ afx_msg void OnMouseHover(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8014,9 +8014,9 @@ afx_msg void OnMouseHWheel(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
-|[in] *zDelta*|Tekerlek döndürme, 120 olduğu katları veya WHEEL_DELTA, bölümlerini ifade uzaklığı belirtir. Tekerleği sağ Döndürülmüş pozitif bir değer gösterir. Tekerlek sola döndürülmüş negatif bir değer belirtir.|
-|[in] *pt*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
+|*zDelta*|[in] Tekerlek döndürme, 120 olduğu katları veya WHEEL_DELTA, bölümlerini ifade uzaklığı belirtir. Tekerleği sağ Döndürülmüş pozitif bir değer gösterir. Tekerlek sola döndürülmüş negatif bir değer belirtir.|
+|*PT*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8441,8 +8441,8 @@ afx_msg void OnNcMouseHover(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
+|*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8586,7 +8586,7 @@ afx_msg void OnNcRenderingChanged(BOOL bIsRendering);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *bIsRendering*|Masaüstü Pencere Yöneticisi'ni (DWM) işleme için pencerenin istemci olmayan alanın etkin TRUE; İşleme devre dışı bırakılırsa FALSE.|
+|*bIsRendering*|[in] Masaüstü Pencere Yöneticisi'ni (DWM) işleme için pencerenin istemci olmayan alanın etkin TRUE; İşleme devre dışı bırakılırsa FALSE.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8610,9 +8610,9 @@ void OnNcXButtonDblClk(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|[in] *Ndüğme*|İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
+|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8636,9 +8636,9 @@ afx_msg void OnNcXButtonDown(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|[in] *Ndüğme*|İlk X fare düğmesini basılı, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine basıldığında.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
+|*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
+|*Ndüğme*|[in] İlk X fare düğmesini basılı, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine basıldığında.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8662,9 +8662,9 @@ afx_msg void OnNcXButtonUp(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nHitTest*|Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
-|[in] *Ndüğme*|İlk X fare düğmesi serbest bırakıldığında, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine yayımlanır.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
+|*nHitTest*|[in] Tarafından döndürülen değerin isabet sınaması [CWnd::DefWindowProc](#defwindowproc) işlev sonucu olarak işleme [wm_nchıttest](/windows/desktop/inputdev/wm-nchittest) ileti.|
+|*Ndüğme*|[in] İlk X fare düğmesi serbest bırakıldığında, XBUTTON1 değerini veya XBUTTON2, ikinci X düğmesine yayımlanır.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci ekranın sol üst köşesinin göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8687,8 +8687,8 @@ afx_msg void OnNextMenu(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nKey*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
-|[in] *lpMdiNextMenu*|İşaretçi bir [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) menüsünde etkinleştirilmesi hakkında bilgi içeren yapısı.|
+|*nKey*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.<br /><br /> Bayrakları bir listesi için bkz: "İleti parametreleri" kullanılandan [hakkında fare girişi](/windows/desktop/inputdev/about-mouse-input).|
+|*lpMdiNextMenu*|[in] İşaretçi bir [MDINEXTMENU](/windows/desktop/api/winuser/ns-winuser-tagmdinextmenu) menüsünde etkinleştirilmesi hakkında bilgi içeren yapısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -8745,8 +8745,8 @@ afx_msg UINT OnNotifyFormat(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pWnd*|Bir işaretçi bir `CWnd` penceresine gönderilmesi temsil eden nesne [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti.<br /><br /> Bu parametre bir denetim için bir işaretçi ise *nyürütülen komut* parametresi ise NF_QUERY veya işaretçiyi bir denetimin ana penceresine *nyürütülen komut* NF_REQUERY olduğu.|
-|[in] *nyürütülen komut*|Wm_notıfy iletisi uzmanlaşmış komut değeri. Olası değerler şunlardır:<br /><br /> -NF_QUERY-<br />     İleti, ANSI ya da Unicode yapıları wm_notıfy iletileri kullanılması gerekip gerekmediğini belirlemek için kullanılan bir sorgudur. Bu ileti bir denetimden denetim ve bu iletinin NF_REQUERY forma yanıt oluşturma sırasında üst pencereye gönderilir.<br />-NF_REQUERY-<br />     Bu iletinin NF_QUERY formun üst pencereye göndermek bir denetim için bir istek iletisidir. Bu istek üst penceresinden gönderilir ve wm_notıfy iletileri kullanmak için bir yapı türü hakkında üst sorgulayacak denetimin sorar. Varsa *nyürütülen komut* parametre NF_REQUERY ve sorgulamayı işleminin sonucu dönüş değeridir.|
+|*pWnd*|[in] Bir işaretçi bir `CWnd` penceresine gönderilmesi temsil eden nesne [wm_notıfy](https://msdn.microsoft.com/library/windows/desktop/bb775583) ileti.<br /><br /> Bu parametre bir denetim için bir işaretçi ise *nyürütülen komut* parametresi ise NF_QUERY veya işaretçiyi bir denetimin ana penceresine *nyürütülen komut* NF_REQUERY olduğu.|
+|*nyürütülen komut*|[in] Wm_notıfy iletisi uzmanlaşmış komut değeri. Olası değerler şunlardır:<br /><br /> -NF_QUERY-<br />     İleti, ANSI ya da Unicode yapıları wm_notıfy iletileri kullanılması gerekip gerekmediğini belirlemek için kullanılan bir sorgudur. Bu ileti bir denetimden denetim ve bu iletinin NF_REQUERY forma yanıt oluşturma sırasında üst pencereye gönderilir.<br />-NF_REQUERY-<br />     Bu iletinin NF_QUERY formun üst pencereye göndermek bir denetim için bir istek iletisidir. Bu istek üst penceresinden gönderilir ve wm_notıfy iletileri kullanmak için bir yapı türü hakkında üst sorgulayacak denetimin sorar. Varsa *nyürütülen komut* parametre NF_REQUERY ve sorgulamayı işleminin sonucu dönüş değeridir.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -8910,8 +8910,8 @@ afx_msg UINT OnPowerBroadcast(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nPowerEvent*|Güç Yönetimi olayının.|
-|[in] *nEventData*|Özel olay verileri.|
+|*nPowerEvent*|[in] Güç Yönetimi olayının.|
+|*nEventData*|[in] Özel olay verileri.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -9022,8 +9022,8 @@ afx_msg void OnRawInput(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nInputCode*|Uygulama ön planda veya giriş oluştu olup olmadığını gösteren giriş kodu. Her iki durumda da uygulamayı çağırması gerekir [CWnd::DefWindowProc](#defwindowproc) sistem temizleme gerçekleştirebilmek için.<br /><br /> Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> Uygulama ön planda - RIM_INPUT - giriş oluştu.<br />Uygulama ön planda değildi - RIM_INPUTSINK - giriş oluştu.|
-|[in] *hRawInput*|İşlemek için bir [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) CİHAZDAN ham giriş yapısı.|
+|*nInputCode*|[in] Uygulama ön planda veya giriş oluştu olup olmadığını gösteren giriş kodu. Her iki durumda da uygulamayı çağırması gerekir [CWnd::DefWindowProc](#defwindowproc) sistem temizleme gerçekleştirebilmek için.<br /><br /> Bu parametre aşağıdaki değerlerden biri olabilir:<br /><br /> Uygulama ön planda - RIM_INPUT - giriş oluştu.<br />Uygulama ön planda değildi - RIM_INPUTSINK - giriş oluştu.|
+|*hRawInput*|[in] İşlemek için bir [RAWINPUT](https://msdn.microsoft.com/library/windows/desktop/ms645562) CİHAZDAN ham giriş yapısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9208,8 +9208,8 @@ afx_msg void OnSessionChange(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nSessionState*|Bir durum kodu, oturum durumu değişikliği açıklar.|
-|[in] *nId*|Bir oturum tanımlayıcısı.|
+|*nSessionState*|[in] Bir durum kodu, oturum durumu değişikliği açıklar.|
+|*nId*|[in] Bir oturum tanımlayıcısı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9973,9 +9973,9 @@ afx_msg void OnUniChar(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nChar*|Basılan tuşa karakter kodunu belirtir.|
-|[in] *nRepCnt*|Geçerli iletinin yineleme sayısını belirtir. Kaç kez tuş vuruşu autorepeated tuşunu basılı tutarak kullanıcı sonucu olan değerdir. Tuş vuruşu yeterince uzun yapılmazsa, birden çok ileti gönderilir. Ancak, yineleme sayısını toplu değil.|
-|[in] *nFlags*|Bu bayraklar tarama kod, genişletilmiş anahtar, bağlam kod, önceki anahtar durumu ve geçiş durumu, aşağıdaki tabloda gösterildiği gibi belirtin:<br /><br /> **0-7:** tarama kodu belirtir. Değeri, orijinal ekipman üreticisi (OEM) bağlıdır.<br /><br /> **8:** Gelişmiş 101 ya da 102 tuşlu klavyede görünen sağ ALT ve CTRL tuşları gibi genişletilmiş bir anahtar belirtir. Bayrağı 1 ise anahtar genişletilmiş bir anahtardır. Aksi halde, 0'dır.<br /><br /> **9-12:** Windows tarafından dahili olarak kullanılır.<br /><br /> **13:** bağlam kodu belirtir. Bayrağı tuşuna basıldığında sırasında ALT tuşunu basılı 1 ise. Aksi takdirde, değeri 0'dır.<br /><br /> **14:** önceki anahtar durumu belirtir. Anahtar yukarı bayrağı ileti gönderilmeden önce kapalı anahtar ise 1 veya 0 ise.<br /><br /> **15:** geçiş durumu belirtir. Tuşuna basıldığında bayrağı anahtar serbest 1 veya 0 ise.|
+|*nChar*|[in] Basılan tuşa karakter kodunu belirtir.|
+|*nRepCnt*|[in] Geçerli iletinin yineleme sayısını belirtir. Kaç kez tuş vuruşu autorepeated tuşunu basılı tutarak kullanıcı sonucu olan değerdir. Tuş vuruşu yeterince uzun yapılmazsa, birden çok ileti gönderilir. Ancak, yineleme sayısını toplu değil.|
+|*nFlags*|[in] Bu bayraklar tarama kod, genişletilmiş anahtar, bağlam kod, önceki anahtar durumu ve geçiş durumu, aşağıdaki tabloda gösterildiği gibi belirtin:<br /><br /> **0-7:** tarama kodu belirtir. Değeri, orijinal ekipman üreticisi (OEM) bağlıdır.<br /><br /> **8:** Gelişmiş 101 ya da 102 tuşlu klavyede görünen sağ ALT ve CTRL tuşları gibi genişletilmiş bir anahtar belirtir. Bayrağı 1 ise anahtar genişletilmiş bir anahtardır. Aksi halde, 0'dır.<br /><br /> **9-12:** Windows tarafından dahili olarak kullanılır.<br /><br /> **13:** bağlam kodu belirtir. Bayrağı tuşuna basıldığında sırasında ALT tuşunu basılı 1 ise. Aksi takdirde, değeri 0'dır.<br /><br /> **14:** önceki anahtar durumu belirtir. Anahtar yukarı bayrağı ileti gönderilmeden önce kapalı anahtar ise 1 veya 0 ise.<br /><br /> **15:** geçiş durumu belirtir. Tuşuna basıldığında bayrağı anahtar serbest 1 veya 0 ise.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -9998,8 +9998,8 @@ afx_msg void OnUnInitMenuPopup(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *pMenu*|İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü veya alt temsil eden nesne.|
-|[in] *nFlags*|Silinen menüsü. Şu anda, Pencere menüsünden MF_SYSMENU yalnızca olabilir.|
+|*pMenu*|[in] İşaretçi [CMenu](../../mfc/reference/cmenu-class.md) menü veya alt temsil eden nesne.|
+|*nFlags*|[in] Silinen menüsü. Şu anda, Pencere menüsünden MF_SYSMENU yalnızca olabilir.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10196,7 +10196,7 @@ afx_msg void OnWindowMaximizedChanged(BOOL bIsMaximized);
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *bIsMaximized*|Geçerli pencere ekranı kaplamış ve, değilse FALSE ise TRUE.|
+|*bIsMaximized*|[in] Geçerli pencere ekranı kaplamış ve, değilse FALSE ise TRUE.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10324,9 +10324,9 @@ afx_msg void OnXButtonDblClk(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|[in] *Ndüğme*|İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
+|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10362,9 +10362,9 @@ afx_msg void OnXButtonDown(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|[in] *Ndüğme*|İlk Microsoft IntelliMouse X düğmesine tıkladıysanız XBUTTON1 değerini veya XBUTTON2, ikinci X düğmeye tıkladı.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
+|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine tıkladıysanız XBUTTON1 değerini veya XBUTTON2, ikinci X düğmeye tıkladı.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -10400,9 +10400,9 @@ afx_msg void OnXButtonUp(
 
 |Parametre|Açıklama|
 |---------------|-----------------|
-|[in] *nFlags*|Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
-|[in] *Ndüğme*|İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
-|[in] *noktası*|A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
+|*nFlags*|[in] Bitsel bir birleşimi (veya) hangi değiştirici tuşları basılı belirten bayrak. Örneğin, CTRL tuşuna basıldığında MK_CONTROL bayrağı gösterir.|
+|*Ndüğme*|[in] İlk Microsoft IntelliMouse X düğmesine çift ise XBUTTON1 veya XBUTTON2 değerini ise ikinci X düğmesine çift.|
+|*Noktası*|[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) belirten nesne *x* ve *y* imleci üst sol löşede istemci alanının göreli koordinatları.|
 
 ### <a name="remarks"></a>Açıklamalar
 

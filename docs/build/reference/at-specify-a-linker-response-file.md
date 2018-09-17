@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4ff031c64ab57373beadd8a88235d018f2e5c0f5
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f692dd8006618661d6710ee6e8e681047fea3b1f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894427"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706326"
 ---
 # <a name="-specify-a-linker-response-file"></a>@ (Bağlayıcı Yanıt Dosyasını Belirt)
 
@@ -37,7 +37,7 @@ Bağlayıcı yanıt dosyasını belirtir.
 
 ## <a name="arguments"></a>Arguments
 
-*response_file*  
+*response_file*<br/>
 Bağlayıcı komutları belirten bir metin dosyasıdır.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -54,5 +54,5 @@ Bkz: [@ (derleyici yanıt dosyasını belirt)](../../build/reference/at-specify-
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

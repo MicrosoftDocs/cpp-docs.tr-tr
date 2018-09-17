@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eacffcd5e66d73cd7594207f58356a4a8a0ecb47
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7e9ca899b7ad0f83faed4b8aefe318d2c62abb76
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465558"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704996"
 ---
 # <a name="segmentlimit"></a>__segmentlimit
 **Microsoft'a özgü**  
@@ -38,8 +38,8 @@ unsigned long __segmentlimit(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `a`  
- Segment Seçici belirten sabit.  
+*a*<br/>
+[in] Segment Seçici belirten sabit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kesim Seçici kesimi sınırını `a`, seçici geçerli izin düzeyinde geçerli ve görünür olması şartıyla.  

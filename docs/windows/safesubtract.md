@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 055c1a0c19afce43338df90a92afef2a8469f3f7
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: ac6968a688c50ad665e8b28a883eaf62255aaf28
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42584035"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700116"
 ---
 # <a name="safesubtract"></a>SafeSubtract
 
@@ -41,14 +41,14 @@ inline bool SafeSubtract (
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *t*  
-Çıkarma ilk numarası. Bu tür olmalıdır `T`.
+*T*<br/>
+[in] Çıkarma ilk numarası. Bu tür olmalıdır `T`.
 
-[in] *u*  
-Den çıkarılacak sayı *t*. Bu tür olmalıdır `U`.
+*u*<br/>
+[in] Den çıkarılacak sayı *t*. Bu tür olmalıdır `U`.
 
-[out] *sonucu*  
-Parametrenin nereden **SafeSubtract** sonucu depolar.
+*Sonuç*<br/>
+[out] Parametrenin nereden **SafeSubtract** sonucu depolar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

@@ -15,17 +15,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7519fb18ac7f24e79a5f7f664cb35f8eb5b3fd77
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 551028999d11379c06d3319f01e882a33ad57936
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368934"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705204"
 ---
 # <a name="binding-imports"></a>İçeri Aktarılanları Bağlama
-Varsayılan bağlayıcı Gecikmeli yüklenen DLL için bağlanabilirse içeri aktarma adres tablosunu oluşturmak için davranıştır. DLL bağlıysa yardımcı işlevini ilişkili bilgi arama yerine kullanmayı dener **GetProcAddress** her başvurulan alır. Zaman damgası veya tercih edilen adres olanlar yüklenen DLL'nin eşleşmiyorsa, yardımcı işlevini ilişkili içeri aktarma adres tablosunu güncel değil ve onu mevcut değilse gibi devam edecek varsayar.  
-  
- Hiçbir zaman DLL'nin Gecikmeli yüklenen içeri aktarmalar bağlamak istiyorsanız, belirtme [/delay](../../build/reference/delay-delay-load-import-settings.md): nobınd bağlayıcı'nın komut satırında, ilişkili içeri aktarma adres tablosunu oluşturulan ve alan alanı görüntü dosyasındaki yüklenmesini engeller.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+
+Varsayılan bağlayıcı davranışı Gecikmeli yüklenen DLL için bağlanabilir içeri aktarma adres tablosu oluşturmaktır. DLL bağlıysa yardımcı işlevini çağırmak yerine ilişkili bilgileri kullanmak deneyecek **GetProcAddress** her başvurulan alır. Zaman damgası veya tercih edilen adresi bu yüklenen DLL'nin eşleşmiyorsa, yardımcı işlevini bağlı içeri aktarma adres tablosunun güncel değil ve yok edildiğinde devam edecek varsayar.
+
+Hiçbir zaman DLL'nin Gecikmeli yüklenen içeri aktarmalar bağlamak istiyorsanız, belirtme [/delay](../../build/reference/delay-delay-load-import-settings.md): nobınd bağlayıcı'nın komut satırında, ilişkili içeri aktarma adres tablosunun resim dosyası içinde oluşturulan ve alıcı alanı yüklenmesini engeller.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

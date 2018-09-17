@@ -44,12 +44,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef37b3bae0fa6bff9353b4415a614d252ddf661e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 6a385ac850148caab582821b039fece5709f75b6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43205346"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701668"
 ---
 # <a name="bitset-class"></a>bitset Sınıfı
 
@@ -65,7 +65,7 @@ class bitset
 ### <a name="parameters"></a>Parametreler
 
 *N*<br/>
- Bitset nesnesindeki sıfır olmayan bir tamsayı türü ile bit sayısını belirtir. `size_t` , gerekir bilinir derleme zamanında.
+Bitset nesnesindeki sıfır olmayan bir tamsayı türü ile bit sayısını belirtir. `size_t` , gerekir bilinir derleme zamanında.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -239,25 +239,25 @@ explicit bitset(
 ### <a name="parameters"></a>Parametreler
 
 *VAL*<br/>
- İki temel temsili yapılandırılmakta bitset bitler başlatmak için kullanılan işaretsiz tamsayı.
+İki temel temsili yapılandırılmakta bitset bitler başlatmak için kullanılan işaretsiz tamsayı.
 
 *str*<br/>
- Sıfır ve bitset bit değerleri başlatmak için kullanılan değerler dizisi.
+Sıfır ve bitset bit değerleri başlatmak için kullanılan değerler dizisi.
 
 *_CStr*<br/>
- Sıfır ve vm'lere bitset bit değerleri başlatmak için kullanılan bir C tarzı dizesi.
+Sıfır ve vm'lere bitset bit değerleri başlatmak için kullanılan bir C tarzı dizesi.
 
 *_Pos*<br/>
- Soldan sağa sayım ve bitset'in ilk bit başlatmak için kullanılan sıfır ile başlayarak dizedeki karakter konumu.
+Soldan sağa sayım ve bitset'in ilk bit başlatmak için kullanılan sıfır ile başlayarak dizedeki karakter konumu.
 
 *Sayısı*<br/>
- Bitset bitler için başlangıç değerlerini sağlamak için kullanılan dize karakter sayısı.
+Bitset bitler için başlangıç değerlerini sağlamak için kullanılan dize karakter sayısı.
 
 *_Zero*<br/>
- Sıfır temsil etmek için kullanılan karakter. '0' varsayılandır.
+Sıfır temsil etmek için kullanılan karakter. '0' varsayılandır.
 
 *_Bir*<br/>
- Bir tane temsil etmek için kullanılan karakter. '1' varsayılandır.
+Bir tane temsil etmek için kullanılan karakter. '1' varsayılandır.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -474,7 +474,7 @@ bitset\<N>& flip(size_t _Pos);
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Ters için değeri olan bit konumu.
+Ters için değeri olan bit konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -603,7 +603,7 @@ bool operator!=(const bitset\<N>& right) const;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Eşitsizlik için hedef bitset karşılaştırılacak olan bitset.
+Eşitsizlik için hedef bitset karşılaştırılacak olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -665,7 +665,7 @@ bitset\<N>& operator&=(const bitset\<N>& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
+Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -699,7 +699,7 @@ int main( )
 
    b1 &= b2;
    cout << "After bitwise AND combination,\n"
-        << " the target bitset b1 becomes:   ( "<< b1 << " )."
+        << "the target bitset b1 becomes:   ( "<< b1 << " )."
         << endl;
 
    // Note that the parameter-specified bitset is unchanged
@@ -717,7 +717,7 @@ The target bitset b1 is:    ( 00111 ).
 The parameter bitset b2 is: ( 01011 ).
 
 After bitwise AND combination,
- the target bitset b1 becomes:   ( 00011 ).
+the target bitset b1 becomes:   ( 00011 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
@@ -732,7 +732,7 @@ bitset\<N> operator<<(size_t _Pos) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bitset bitler kaydırılmasına olan sol konumlara sayısı.
+Bitset bitler kaydırılmasına olan sol konumlara sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -784,7 +784,7 @@ bitset\<N>& operator<<=(size_t _Pos);
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Sol kaydırılmasına bitset bitler olan konumlara sayısı.
+Sol kaydırılmasına bitset bitler olan konumlara sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -809,7 +809,7 @@ int main( )
    cout << "The target bitset b1 is: ( "<< b1 << " )." << endl;
    b1 <<= 2;
    cout << "After shifting the bits 2 positions to the left,\n"
-        << " the target bitset b1 becomes: ( "<< b1 << " )."
+        << "the target bitset b1 becomes: ( "<< b1 << " )."
         << endl;
 }
 ```
@@ -817,7 +817,7 @@ int main( )
 ```Output
 The target bitset b1 is: ( 00111 ).
 After shifting the bits 2 positions to the left,
- the target bitset b1 becomes: ( 11100 ).
+the target bitset b1 becomes: ( 11100 ).
 ```
 
 ## <a name="op_eq_eq"></a>  bitset::operator ==
@@ -831,7 +831,7 @@ bool operator==(const bitset\<N>& right) const;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Hedef bitset eşitlik için karşılaştırılması gereken olan bitset.
+Hedef bitset eşitlik için karşılaştırılması gereken olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -892,7 +892,7 @@ bitset\<N> operator>>(size_t _Pos) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
+Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -916,12 +916,12 @@ int main( )
    b2 = b1 << 2;
 
    cout << "After shifting the bits 2 positions to the left,\n"
-        << " the bitset b2 is: ( "<< b2 << " )."
+        << "the bitset b2 is: ( "<< b2 << " )."
         << endl;
    bitset<5> b3 = b2 >> 1;
 
    cout << "After shifting the bits 1 position to the right,\n"
-        << " the bitset b3 is: ( " << b3 << " )."
+        << "the bitset b3 is: ( " << b3 << " )."
         << endl;
 }
 ```
@@ -929,9 +929,9 @@ int main( )
 ```Output
 The bitset b1 is: ( 00111 ).
 After shifting the bits 2 positions to the left,
- the bitset b2 is: ( 11100 ).
+the bitset b2 is: ( 11100 ).
 After shifting the bits 1 position to the right,
- the bitset b3 is: ( 01110 ).
+the bitset b3 is: ( 01110 ).
 ```
 
 ## <a name="op_rshift_eq"></a>  bitset::operator&gt;&gt;=
@@ -945,7 +945,7 @@ bitset\<N>& operator>>=(size_t _Pos);
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
+Bitset bitler kaydırılmasına olan konum sağındaki sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -971,7 +971,7 @@ int main( )
 
    b1 >>= 2;
    cout << "After shifting the bits 2 positions to the right,\n"
-        << " the target bitset b1 becomes: ( "<< b1 << " )."
+        << "the target bitset b1 becomes: ( "<< b1 << " )."
         << endl;
 }
 ```
@@ -979,7 +979,7 @@ int main( )
 ```Output
 The target bitset b1 is: ( 11100 ).
 After shifting the bits 2 positions to the right,
- the target bitset b1 becomes: ( 00111 ).
+the target bitset b1 becomes: ( 00111 ).
 ```
 
 ## <a name="op_at"></a>  bitset::operator]
@@ -994,7 +994,7 @@ reference operator[](size_t _Pos);
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bitset içindeki bit bulma konumu.
+Bitset içindeki bit bulma konumu.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1037,7 +1037,7 @@ bitset\<N>& operator^=(const bitset\<N>& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
+Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1070,7 +1070,7 @@ int main( )
 
    b1 ^= b2;
    cout << "After bitwise exclusive OR combination,\n"
-        << " the target bitset b1 becomes:   ( "<< b1 << " )."
+        << "the target bitset b1 becomes:   ( "<< b1 << " )."
         << endl;
 
    // Note that the parameter-specified bitset in unchanged
@@ -1088,7 +1088,7 @@ The target bitset b1 is:    ( 00111 ).
 The parameter bitset b2 is: ( 01011 ).
 
 After bitwise exclusive OR combination,
- the target bitset b1 becomes:   ( 01100 ).
+the target bitset b1 becomes:   ( 01100 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
@@ -1103,7 +1103,7 @@ bitset\<N>& operator|=(const bitset\<N>& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
+Bit düzeyinde hedef bitset ile birleştirilecek olan bitset.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1137,7 +1137,7 @@ int main( )
 
    b1 |= b2;
    cout << "After bitwise inclusive OR combination,\n"
-        << " the target bitset b1 becomes:   ( "<< b1 << " )."
+        << "the target bitset b1 becomes:   ( "<< b1 << " )."
         << endl;
 
    // Note that the parameter-specified bitset in unchanged
@@ -1155,7 +1155,7 @@ The target bitset b1 is:    ( 00111 ).
 The parameter bitset b2 is: ( 01011 ).
 
 After bitwise inclusive OR combination,
- the target bitset b1 becomes:   ( 01111 ).
+the target bitset b1 becomes:   ( 01111 ).
 The parameter bitset b2 remains: ( 01011 ).
 ```
 
@@ -1223,10 +1223,10 @@ public:
 ### <a name="parameters"></a>Parametreler
 
 *VAL*<br/>
- Nesne türü değeri **bool** biraz içinde bir bitset atanacak.
+Nesne türü değeri **bool** biraz içinde bir bitset atanacak.
 
 *_Bitref*<br/>
- Bir formun başvurusu *x [i]* konumunda bit *miyim* bitset içinde *x*.
+Bir formun başvurusu *x [i]* konumunda bit *miyim* bitset içinde *x*.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1267,13 +1267,13 @@ int main( )
    // in bitset x
    b1[ 0 ] = true;
    cout << "The bitset<5> b1 with the bit at position 0 set to 1"
-        << " is: ( "<< b1 << " )" << endl;
+        << "is: ( "<< b1 << " )" << endl;
 
    // Example of x [i] = y [j] storing the bool value of the
    // bit at position j in bitset y at bit position i in bitset x
    b2 [4] = b1 [0];      // b1 [0] = true
    cout << "The bitset<5> b2 with the bit at position 4 set to the "
-        << "value\n of the bit at position 0 of the bit in "
+        << "value\nof the bit at position 0 of the bit in "
         << "bitset<5> b1 is: ( "<<  b2  << " )" << endl;
 
    // Example of b = ~x [i] flipping the value of the bit at
@@ -1300,14 +1300,14 @@ int main( )
    // Example of x [i] . flip ( ) toggling the value of the bit at
    // position i of bitset x
    cout << "Before flipping the value of the bit at position 4 in "
-        << "bitset b2,\n it is ( "<<  b2  << " )." << endl;
+        << "bitset b2,\nit is ( "<<  b2  << " )." << endl;
    b2 [4].flip( );
    cout << "After flipping the value of the bit at position 4 in "
-        << "bitset b2,\n it becomes ( "<<  b2  << " )." << endl;
+        << "bitset b2,\nit becomes ( "<<  b2  << " )." << endl;
    bool c;
    c = b2 [4].flip( );
-   cout << "After a second flip, the value of the position 4"
-        << " bit in b2 is now: " << c << ".";
+   cout << "After a second flip, the value of the position 4 "
+        << "bit in b2 is now: " << c << ".";
 }
 ```
 
@@ -1316,13 +1316,13 @@ The initialized bitset<5> b1( 2 ) is: ( 00010 ).
 The initialized bitset<5> b2( 6 ) is: ( 00110 ).
 The bitset<5> b1 with the bit at position 0 set to 1 is: ( 00011 )
 The bitset<5> b2 with the bit at position 4 set to the value
- of the bit at position 0 of the bit in bitset<5> b1 is: ( 10110 )
+of the bit at position 0 of the bit in bitset<5> b1 is: ( 10110 )
 The value of the object b = ~b2 [4] of type bool is false.
 The value of the object b = b2 [4] of type bool is true.
 Before flipping the value of the bit at position 4 in bitset b2,
- it is ( 10110 ).
+it is ( 10110 ).
 After flipping the value of the bit at position 4 in bitset b2,
- it becomes ( 00110 ).
+it becomes ( 00110 ).
 After a second flip, the value of the position 4 bit in b2 is now: 1.
 ```
 
@@ -1338,7 +1338,7 @@ bitset\<N>& reset(size_t _Pos);
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bit konumu 0 olarak sıfırlanması bitset içinde.
+Bit konumu 0 olarak sıfırlanması bitset içinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1367,13 +1367,13 @@ int main( )
    bitset<5> b1r3;
    b1r3 = b1.reset( 2 );
    cout << "The collecion of bits obtained from resetting the\n"
-        << " third bit of bitset b1 is: ( "<< b1r3 << " )"
+        << "third bit of bitset b1 is: ( "<< b1r3 << " )"
         << endl;
 
    bitset<5> b1r;
    b1r = b1.reset( );
    cout << "The collecion of bits obtained from resetting all\n"
-        << " the elements of the bitset b1 is: ( "<< b1r << " )"
+        << "the elements of the bitset b1 is: ( "<< b1r << " )"
         << endl;
 }
 ```
@@ -1381,9 +1381,9 @@ int main( )
 ```Output
 The set of bits in bitset<5> b1(13) is: ( 01101 )
 The collecion of bits obtained from resetting the
- third bit of bitset b1 is: ( 01001 )
+third bit of bitset b1 is: ( 01001 )
 The collecion of bits obtained from resetting all
- the elements of the bitset b1 is: ( 00000 )
+the elements of the bitset b1 is: ( 00000 )
 ```
 
 ## <a name="set"></a>  bitset::set
@@ -1401,10 +1401,10 @@ bitset\<N>& set(
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bit konumu bitset ayarlamak için bir değer atanır.
+Bit konumu bitset ayarlamak için bir değer atanır.
 
 *VAL*<br/>
- Belirtilen konumdaki bite atanacak değer.
+Belirtilen konumdaki bite atanacak değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1433,13 +1433,13 @@ int main( )
    bitset<5> b1s0;
    b1s0 = b1.set( 0 );
    cout << "The collecion of bits obtained from setting the\n"
-        << " zeroth bit of bitset b1 is: ( "<< b1s0 << " )"
+        << "zeroth bit of bitset b1 is: ( "<< b1s0 << " )"
         << endl;
 
    bitset<5> bs1;
    bs1 = b1.set( );
    cout << "The collecion of bits obtained from setting all the\n"
-        << " elements of the bitset b1 is: ( "<< bs1 << " )"
+        << "elements of the bitset b1 is: ( "<< bs1 << " )"
         << endl;
 }
 ```
@@ -1447,9 +1447,9 @@ int main( )
 ```Output
 The set of bits in bitset<5> b1(6) is: ( 00110 )
 The collecion of bits obtained from setting the
- zeroth bit of bitset b1 is: ( 00111 )
+zeroth bit of bitset b1 is: ( 00111 )
 The collecion of bits obtained from setting all the
- elements of the bitset b1 is: ( 11111 )
+elements of the bitset b1 is: ( 11111 )
 ```
 
 ## <a name="size"></a>  bitset::size
@@ -1507,7 +1507,7 @@ bool test(size_t _Pos) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Pos*<br/>
- Bitset değeri için test edilecek bit konumu.
+Bitset değeri için test edilecek bit konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

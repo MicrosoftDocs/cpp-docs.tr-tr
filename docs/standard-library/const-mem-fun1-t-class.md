@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32a748c240d8da55765ac5862c9a2f11eafb14ef
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d42bc03e9fcb16ba8c0832a10ee96b361c525523
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43201729"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699979"
 ---
 # <a name="constmemfun1t-class"></a>const_mem_fun1_t Sınıfı
 
@@ -31,12 +31,11 @@ ms.locfileid: "43201729"
 
 ```cpp
 template <class Result, class Type, class Arg>
-class const_mem_fun1_t
- : public binary_function<const Type *, Arg, Result>
+class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 {
     explicit const_mem_fun1_t(Result (Type::* _Pm)(Arg) const);
     Result operator()(const Type* _Pleft, Arg right) const;
- };
+};
 ```
 
 ### <a name="parameters"></a>Parametreler

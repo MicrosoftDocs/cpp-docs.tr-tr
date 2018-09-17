@@ -15,16 +15,16 @@ ms.author: corob
 ms.workload:
 - cplusplus
 - linux
-ms.openlocfilehash: bbc19b4c8e698c520be2283376ac5297cdae33df
-ms.sourcegitcommit: f923f667065cd6c4203d10ca9520600ee40e5f84
+ms.openlocfilehash: 346e83461fd9dbfb7635b85e8765d241564d3157
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42900518"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708012"
 ---
 # <a name="configure-a-linux-cmake-project"></a>Linux CMake projesi yapılandırma
 
-**Visual Studio 2017 sürüm 15.4 ve üzeri**  
+**Visual Studio 2017 sürüm 15.4 ve üzeri**<br/>
 Linux CMake desteği, Visual Studio için Linux C++ iş yükünü yüklediğinizde varsayılan olarak seçilidir. Artık CMake için Visual Studio projesi dönüştürmek zorunda kalmadan kullanan mevcut kod tabanınız üzerinde çalışabilirsiniz. Kod tabanınız platformlar arası ise, hem Windows hem de Visual Studio içinden Linux'u hedefleyebilirsiniz.
 
 Bu konuda, Visual Studio'da CMake desteği temel olarak bilindiğini sahip olduğunuz varsayılır. Daha fazla bilgi için [Visual C++ için CMake araçlarını](../ide/cmake-tools-for-visual-cpp.md). CMake kendisi hakkında daha fazla bilgi için bkz: [derleme, Test ve paket Your yazılım CMake ile](https://cmake.org/).
@@ -65,7 +65,7 @@ Bir Linux hedef belirttikten sonra kaynak Linux makinenizi kopyalanır. Daha son
 
 ![Linux üzerinde CMake önbelleğini oluşturun](media/cmake-linux-1.png "Linux'ta CMake önbelleğini oluşturun")
 
-**Visual Studio 2017 sürüm 15.7 ve üzeri:**  
+**Visual Studio 2017 sürüm 15.7 ve üzeri:**<br/>
 Uzak üst bilgiler için IntelliSense desteği sağlamak için Visual Studio otomatik olarak onları yerel Windows makinenizde bir dizine kopyalar. Daha fazla bilgi için [uzak üst bilgiler için IntelliSense](configure-a-linux-project.md#remote_intellisense).
 
 ## <a name="debug-the-project"></a>Proje hata ayıklama

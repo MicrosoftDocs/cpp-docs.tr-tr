@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12b6d0b0ccc21f4ab1f8b3d7116f098a532d0418
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b510b05c80ba7cdbea0bbf0ec580e88daa55fbed
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216267"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704372"
 ---
 # <a name="cmfctoolbarfontcombobox-class"></a>CMFCToolBarFontComboBox sınıfı
 Sistem yazı tiplerini listesinden bir yazı tipi seçmek kullanıcının sağlayan bir birleşik giriş kutusu denetimi içeren bir araç çubuğu düğmesi.  
@@ -110,14 +110,14 @@ CMFCToolBarFontComboBox();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Birleşik giriş kutusu komut kimliği.  
+*uiID*<br/>
+[in] Birleşik giriş kutusu komut kimliği.  
   
- [in] *iImage*  
- Bir araç çubuğu görüntüsü sıfır tabanlı dizini. Görüntüsü bulunan [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı tutar.  
+*iImage*<br/>
+[in] Bir araç çubuğu görüntüsü sıfır tabanlı dizini. Görüntüsü bulunan [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı tutar.  
   
- [in] *nFontType*  
- Birleşik giriş kutusu içeren yazı tipleri türleri. Bu parametre aşağıdaki değerlerden (mantıksal veya) birleşimi olabilir:  
+*nFontType*<br/>
+[in] Birleşik giriş kutusu içeren yazı tipleri türleri. Bu parametre aşağıdaki değerlerden (mantıksal veya) birleşimi olabilir:  
   
  DEVICE_FONTTYPE  
   
@@ -125,20 +125,20 @@ CMFCToolBarFontComboBox();
   
  TRUETYPE_FONTTYPE  
   
- [in] *nCharSet*  
- Tüm karakter kümelerindeki tüm benzersiz adlı yazı DEFAULT_CHARSET, birleşik giriş kutusu kümesine içeriyorsa. (Varsa aynı ada sahip iki yazı tipi birleşik giriş kutusu bunlardan biri içeriyor.) Yalnızca belirtilen karakter kümesini yazı tipi birleşik giriş kutusu bir geçersiz karakter kümesi değere ayarlanmış içeriyorsa. Bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) olası karakter bir listesi için ayarlar.  
+*nCharSet*<br/>
+[in] Tüm karakter kümelerindeki tüm benzersiz adlı yazı DEFAULT_CHARSET, birleşik giriş kutusu kümesine içeriyorsa. (Varsa aynı ada sahip iki yazı tipi birleşik giriş kutusu bunlardan biri içeriyor.) Yalnızca belirtilen karakter kümesini yazı tipi birleşik giriş kutusu bir geçersiz karakter kümesi değere ayarlanmış içeriyorsa. Bkz: [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) olası karakter bir listesi için ayarlar.  
   
- [in] *dwStyle*  
- Birleşik giriş kutusunun stili. (bkz [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
+*dwStyle*<br/>
+[in] Birleşik giriş kutusunun stili. (bkz [birleşik giriş kutusu stilleri](../../mfc/reference/styles-used-by-mfc.md#combo-box-styles))  
   
- [in] *iWidth*  
- Düzenleme denetiminin piksel cinsinden genişliği.  
+*iWidth*<br/>
+[in] Düzenleme denetiminin piksel cinsinden genişliği.  
   
- [in] *nPitchAndFamily*  
- Küme DEFAULT_PITCH, birleşik giriş kutusu için yazı tiplerini aralık bakılmaksızın içeriyorsa. FIXED_PITCH veya VARIABLE_PITCH ayarlayın, birleşik giriş kutusu yalnızca bu aralık türü yazı tiplerini içeriyorsa. Yazı tipi ailesini temel alan filtre şu anda desteklenmiyor.  
+*nPitchAndFamily*<br/>
+[in] Küme DEFAULT_PITCH, birleşik giriş kutusu için yazı tiplerini aralık bakılmaksızın içeriyorsa. FIXED_PITCH veya VARIABLE_PITCH ayarlayın, birleşik giriş kutusu yalnızca bu aralık türü yazı tiplerini içeriyorsa. Yazı tipi ailesini temel alan filtre şu anda desteklenmiyor.  
   
- [out] *pLstFontsExternal*  
- İşaretçi bir [CObList sınıfı](../../mfc/reference/coblist-class.md) yazı tiplerini depolayan bir nesne.  
+*pLstFontsExternal*<br/>
+[out] İşaretçi bir [CObList sınıfı](../../mfc/reference/coblist-class.md) yazı tiplerini depolayan bir nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Genellikle, `CMFCToolBarFontComboBox` nesneleri depolamak kullanılabilir yazı tiplerinin bir listesini tek bir paylaşılan `CObList` nesne. İkinci oluşturucu aşırı yüklemesini kullanın ve geçerli işaretçi sağlayan *pLstFontsExternal*, o `CMFCToolBarFontComboBox` nesne yerine doldurur `CObList` , *pLstFontsExternal* kullanılabilir yazı tipleri ile işaret eder.  
@@ -156,8 +156,8 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Bir birleşik giriş kutusu öğesinin sıfır tabanlı dizinini belirtir.  
+*İIndex*<br/>
+[in] Bir birleşik giriş kutusu öğesinin sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir `CMFCFontInfo` nesne. Varsa *İIndex* bir geçerli öğe dizini belirtmiyor döndürülen değer NULL olur.  
@@ -183,14 +183,14 @@ BOOL SetFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszName*  
- Yazı tipi adı veya ön ekini belirtir.  
+*lpszName*<br/>
+[in] Yazı tipi adı veya ön ekini belirtir.  
   
- [in] *nCharSet*  
- Karakter kümesini belirtir.  
+*nCharSet*<br/>
+[in] Karakter kümesini belirtir.  
   
- [in] *bExact*  
- Belirtir olup olmadığını *lpszName* yazı tipi adı veya yazı tipi ön ek içeriyor.  
+*bExact*<br/>
+[in] Belirtir olup olmadığını *lpszName* yazı tipi adı veya yazı tipi ön ek içeriyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazı tipi başarıyla seçildiyse sıfır olmayan; Aksi durumda 0.  

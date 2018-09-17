@@ -1,5 +1,5 @@
 ---
-title: -Z7, - Zi, - ZI (hata ayıklama bilgileri biçimi) | Microsoft Docs
+title: -Z7, - Zi, - zı (hata ayıklama bilgileri biçimi) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/22/2018
 ms.technology:
@@ -33,68 +33,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a86605b8fd47c0febedfc9ab022dfc2c2728822a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 271948368190ddf5110d8b1fb357fe770a72e1aa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379087"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714278"
 ---
 # <a name="z7-zi-zi-debug-information-format"></a>/Z7, /Zi, /ZI (Hata Ayıklama Bilgileri Biçimi)
 
-Hata ayıklama bilgisi için oluşturulan programınızı ve bu bilgiler nesne dosyaları veya bir program veritabanı (PDB) dosyasında tutulur türünü belirtir.
+Programınız ve bu bilgileri nesne dosyalarında veya program veritabanı (PDB) dosyası tutulur için oluşturulan hata ayıklama bilgilerinin türünü belirtir.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/Z**{**7**|**i**|**I**}  
+> **/Z**{**7**|**i**|**I**}
 
 ## <a name="remarks"></a>Açıklamalar
 
-Kod derlenmiş ve hata ayıklama modunda yerleşik olduğunda derleyici işlevleri ve değişkenler, tür bilgilerini ve satır numarası konumları hata ayıklayıcı tarafından kullanılmak için Sembol adları üretir. Bu simgesel hata ayıklama bilgisi derleyici tarafından üretilen nesne dosyaları (.obj dosyaları) veya yürütülebilir dosyası için ayrı bir PDB dosyası (.pdb dosyası) dahil edilebilir.  Hata ayıklama bilgileri biçimi seçeneklerini aşağıdaki bölümlerde açıklanmıştır.  
-  
+Derleyici, kod derlenir ve hata ayıklama modunda yerleşik işlevleri ve değişkenler, tür bilgilerini ve satır numarası konumları hata ayıklayıcı tarafından kullanılmak için Sembol adlarını üretir. Bu sembolik hata ayıklama bilgileri, derleyici tarafından üretilen nesne dosyalarında (.obj dosyaları) veya yürütülebilir dosya için ayrı bir PDB dosyası (.pdb dosyası) eklenebilir.  Hata ayıklama bilgi biçimi seçenekleri aşağıdaki bölümlerde açıklanmıştır.
+
 ### <a name="none"></a>Yok.
 
-Hiçbir hata ayıklama bilgileri biçimi seçeneği belirtilmezse, varsayılan olarak, derleme daha hızlı olacak şekilde derleyici hiçbir hata ayıklama bilgilerini oluşturur.  
-  
+Hata ayıklama bilgi biçimi seçeneği belirtilmezse, varsayılan olarak, derleyici derleme daha hızlı, bu nedenle, hata ayıklama bilgisi üretir.
+
 ### <a name="z7"></a>/Z7
 
-**/Z7** seçeneği kullanmak için tam simgesel hata ayıklama bilgilerini hata ayıklayıcısı ile de içeren nesne dosyaları üretir. Bu nesne dosyaları ve yerleşik yürütülebilir hata ayıklama bilgisi dosyaları önemli ölçüde daha büyük olabilir. Simgesel hata ayıklama bilgilerini adlarını ve türlerini değişkenlerinin yanı sıra işlevleri ve satır numaralarını içerir. PDB dosyası oluşturulur.
+**/Z7** seçeneği de kullanmak için hata ayıklayıcısı ile tam sembolik hata ayıklama bilgilerini içeren bir nesne dosyaları üretir. Bu nesne dosyaları ve yerleşik yürütülebilir dosya hata ayıklama bilgisi dosyalardan önemli ölçüde daha büyük olabilir. Sembolik hata ayıklama bilgileri, adlarını ve türlerini değişkenlerin, hem de işlevler ve satır numaralarını içerir. Hiç PDB dosyası oluşturulur.
 
-İçin dağıtıcıları üçüncü taraf kitaplıkların hata ayıklama sürümleri PDB dosyası olmaması bir avantajı vardır. Ancak, tüm önceden derlenmiş üst bilgileri için nesne dosyaları kitaplığı bağlantı aşamasında ve hata ayıklama için gereklidir. Varsa yalnızca bilgi (kod) .pch nesne dosyasında yazıp, ayrıca kullanmalısınız [/Yl (eklenmeye PCH başvurusu hata ayıklama kitaplığı için)](../../build/reference/yl-inject-pch-reference-for-debug-library.md) kitaplığı derlerken, varsayılan olarak etkinleştirilen seçeneği.
+Hata ayıklama sürümleri, üçüncü taraf kitaplıkların dağıtıcıları için bir PDB dosyası olmaması bir avantajı yoktur. Ancak, önceden derlenmiş üst bilgileri için nesne dosyaları kitaplığı bağlantı aşaması sırasında ve hata ayıklama için gereklidir. Varsa yalnızca .pch nesne dosyasında bilgi (ve kod) yazın, ayrıca kullanmalısınız [/Yl (ekleme PCH başvurusu hata ayıklama kitaplığı için)](../../build/reference/yl-inject-pch-reference-for-debug-library.md) seçeneği kitaplığı derlerken, varsayılan olarak etkindir.
 
-[/GM derlemeyi (etkinleştirmek en az yeniden derleme)](../../build/reference/gm-enable-minimal-rebuild.md) seçeneği kullanılamaz ne zaman **/Z7** belirtilir.
+[/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../../build/reference/gm-enable-minimal-rebuild.md) seçeneği kullanılamaz olduğunda **/z7** belirtilir.
 
 ### <a name="zi"></a>/Zi
 
-**/Zı** seçeneği tüm simgesel hata ayıklama bilgileri kullanmak için hata ayıklayıcısı ile içeren ayrı bir PDB dosyası oluşturur. Hata ayıklama bilgilerini nesne dosyalarında dahil edilmeyen veya yürütülebilir dosyası, hangi bunlar çok daha küçük olur.
+**/Zi** seçenek sembolik hata ayıklama bilgilerini kullanmak için hata ayıklayıcısı ile içeren ayrı bir PDB dosyası oluşturur. Hata ayıklama bilgilerini nesne dosyalarında bulunmayan veya yürütülebilir dosyası, hangi bunları çok daha küçük yapar.
 
-Kullanımı **/zı** en iyi duruma getirme etkilemez. Ancak, **/zı** anlamına gelmez **/debug**; bkz [/Debug (hata ayıklama bilgisi üret)](../../build/reference/debug-generate-debug-info.md) daha fazla bilgi için.
+Kullanım **/zi** iyileştirmeleri etkilemez. Ancak, **/zi** gelmez **/debug**; bkz [/Debug (hata ayıklama bilgisi Oluştur)](../../build/reference/debug-generate-debug-info.md) daha fazla bilgi için.
 
+Belirtirseniz her ikisi de **/zi** ve **/CLR**, <xref:System.Diagnostics.DebuggableAttribute> özniteliği derleme metaverisine yerleştirilmez değil yerleştirilir. İsterseniz, kaynak kodda belirtmeniz gerekir. Bu öznitelik, uygulamanın çalışma zamanı performansını etkileyebilir. Nasıl hakkında daha fazla bilgi için **Debuggable** özniteliği performansını etkiler ve performans etkisini değiştirebileceğiniz edinmek bkz [bir görüntü için hata ayıklama kolaylaştıracak](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).
 
-Belirtirseniz her ikisi de **/zı** ve **/CLR**, <xref:System.Diagnostics.DebuggableAttribute> özniteliği derleme meta verilerde yok yerleştirilir. İsterseniz, kaynak kodunda belirtmeniz gerekir. Bu öznitelik, uygulamanın çalışma zamanı performansını etkileyebilir. Ne hakkında daha fazla bilgi için **Debuggable** özniteliği performansını etkiler ve performans etkisi değiştirebileceğiniz bkz [bir görüntü Debug kolaylaştırma](/dotnet/framework/debug-trace-profile/making-an-image-easier-to-debug).
+PDB dosyası derleme adları *proje*.pdb. Proje dışındaki dosyasını derlerseniz derleyici, VC adlı bir PDB dosyası oluşturur.*x*.pdb, burada *x* derleyici sürümü kullanılıyor büyük ve küçük sürüm numarasını bir yapıdır. Derleyici hata ayıklayıcıyı sembolik bilgilere ve satır numarası bilgileri konumuna işaret bu seçenek kullanılarak oluşturulan her bir nesne dosyası adını PDB ve tanımlayıcı bir zaman damgalı imzası katıştırır. Ada ve imzaya PDB dosyasında hata ayıklayıcıda yüklenecek semboller çalıştırılabilir dosyanın eşleşmesi gerekir. WinDBG hata ayıklayıcısını kullanarak eşleşmeyen sembolleri yükleyebilir `.symopt+0x40` komutu. Visual Studio eşleşmeyen simgeleri yüklemek için benzer bir seçeneği yok.
 
-Derleyici PDB dosya adları *proje*.pdb. Proje dışındaki bir dosyasını derleyin, derleyici VC adlı bir PDB dosyası oluşturur*x*.pdb, burada *x* kullanımda derleyici sürümünün birincil ve ikincil sürüm numarası yapıdır. Derleyici hata ayıklayıcı simgesel ve satır numarası bilgileri konumuna işaret bu seçeneği kullanılarak oluşturulan her nesne dosya adı PDB ve bir tanımlayıcı zaman damgalı imza katıştırır. Ad ve imza PDB dosyasında hata ayıklayıcısı'ndaki yüklenmesi simgeleri çalıştırılabilir dosyanın eşleşmesi gerekir. WinDBG hata ayıklayıcısını kullanarak eşleşmeyen simgeleri yükleyebilirsiniz `.symopt+0x40` komutu. Visual Studio eşleşmeyen simgeleri yüklemek için benzer bir seçeneği yok.
-
-Bir kitaplık kullanılarak derlendi nesnelerden oluşturursanız **/zı**, kitaplık bir programa bağlandığında ilişkili .pdb dosyasını kullanılabilir olması gerekir. Bu nedenle, kitaplık dağıtırsanız, PDB dosyası da dağıtmanız gerekir. PDB dosyaları kullanmadan hata ayıklama bilgilerini içeren bir kitaplığı oluşturmak için seçmelisiniz **/Z7** seçeneği. Önceden derlenmiş üstbilgiler seçenekleri kullanırsanız, hata ayıklama bilgileri önceden derlenmiş üst bilgi ve kaynak kodu geri kalanı için PDB dosyasında yerleştirilir.
+Kullanılarak derlenmiş nesnelerden bir kitaplık oluşturursanız **/zi**, kitaplık bir programa bağlandığında ilgili .pdb dosyası kullanılabilir olmalıdır. Bu nedenle, kitaplığı dağıtırsanız, PDB dosyası da dağıtmanız gerekir. PDB dosyası kullanmadan hata ayıklama bilgilerini içeren bir kitaplık oluşturmak için seçmelisiniz **/z7** seçeneği. Önceden derlenmiş üstbilgiler seçenekleri kullanıyorsanız, hem önceden derlenmiş üst bilgi hem de kaynak kodunun kalanı için hata ayıklama bilgisi PDB dosyası içinde yer alır.
 
 ### <a name="zi"></a>/ZI
 
-**/Zı** seçeneği benzer **/zi**, ancak destekleyen bir biçimde PDB dosyası üreten [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) özelliği. Düzenle ve devam et hata ayıklama özellikleri kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özellik Geliştirici üretkenliği için yararlıdır, ancak kod boyutu, performans ve derleyici uyumluluğu sorunlarına neden. Çoğu iyileştirmeler Düzenle ve devam et ile uyumsuz olduğundan kullanarak **/zı** herhangi devre dışı bırakır `#pragma optimize` deyimlerinde kodunuzu. **/Zı** seçeneği, aynı zamanda kullanımı ile uyumlu değil [ &#95; &#95;satır&#95; &#95; önceden tanımlanmış makrosu](../../preprocessor/predefined-macros.md); derlenmiş kod **/zı** kullanamazsınız **&#95; &#95;Satır&#95; &#95;** bir tür olmayan şablon bağımsız değişken olarak rağmen **&#95; &#95;satır&#95; &#95;** makrosu genişletmeleri içinde kullanılabilir.
+**/Zi** seçeneği benzer **/zi**, ancak destekleyen biçimde bir PDB dosyası oluşturan [Düzenle ve devam et](/visualstudio/debugger/edit-and-continue-visual-cpp) özelliği. Düzenle ve devam et hata ayıklama özellikleri kullanmak için bu seçeneği kullanmanız gerekir. Düzenle ve devam et özelliğini Geliştirici üretkenliğini için yararlıdır, ancak kod boyutuna, performans ve derleyici uyumluluğu sorunlarına neden olabilir. Çoğu iyileştirme Düzenle ve devam et ile uyumlu olmadığından kullanarak **/zi** herhangi `#pragma optimize` kodunuzda deyimleri. **/Zi** seçeneği kullanımıyla uyumlu ayrıca [ &#95; &#95;satırı&#95; &#95; önceden tanımlanmış makro](../../preprocessor/predefined-macros.md); derlenmiş kodu **/zi** kullanamazsınız **&#95; &#95;Satırı&#95; &#95;** bir tür olmayan şablon bağımsız değişkeni olarak rağmen **&#95; &#95;satırı&#95; &#95;** makro genişletme içinde kullanılabilir.
 
-**/Zı** seçeneği her ikisi de zorlar [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md) ve [/FC (tam yolu, kaynak kodu dosyasının tanılamadaki)](../../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md) , derlemede kullanılacak seçenekleri.
+**/Zi** seçeneği hem de zorlar [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md) ve [/FC (tam yol, kaynak kodu dosyasında tanılama)](../../build/reference/fc-full-path-of-source-code-file-in-diagnostics.md) öğelerinin derlemenizde kullanılacak Seçenekler.
 
-**/ZI** ile uyumlu olmayan [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+**/Zı** ile uyumlu olmayan [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
 
 > [!NOTE]
-> **/Zı** seçenek, yalnızca x86 hem x64 işlemciler hedefleme derleyicileri kullanılabilir; Bu derleyici seçeneği ARM işlemcileri hedefleme derleyicileri kullanılabilir değil.
+> **/Zi** seçeneği, yalnızca x86 ve x64 işlemcileri hedefleyen derleyicilerde kullanılabilir; Bu derleyici seçeneğini ARM işlemcileri hedefleyen derleyicilerde kullanılabilir değil.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Açık **yapılandırma özellikleri** > **C/C++** > **genel** özellik sayfası.
 
-1. Değiştirme **hata ayıklama bilgileri biçimi** özelliği. Seçin **Tamam** yaptığınız değişiklikleri kaydetmek için.
+1. Değiştirme **hata ayıklama bilgi biçimi** özelliği. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -102,6 +101,6 @@ Bir kitaplık kullanılarak derlendi nesnelerden oluşturursanız **/zı**, kita
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
 

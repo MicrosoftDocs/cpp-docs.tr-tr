@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dee20d07ff37024506ef925fd94363bf85ceb8bc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 49e25fa8a730ea31caf747d07ce30a0622c4bd01
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756892"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714694"
 ---
 # <a name="application-settings-atl-project-wizard"></a>Uygulama ayarları, ATL Proje Sihirbazı
 
@@ -31,32 +31,40 @@ Kullanım **uygulama ayarları** tasarlamak ve temel özellikleri yeni bir ATL p
 
 Üç sunucu türlerinden birini seçin:
 
-**Dinamik bağlantı kitaplığı (DLL)**  
-İşlem sunucusu oluşturmak için bu seçeneği seçin.
+- **Dinamik bağlantı kitaplığı (DLL)**  
 
-**Yürütülebilir (EXE)**  
-Yerel bir işlem dışı sunucu oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermez. İçin proxy/saplama kodunun birleştirilmesine izin vermez.
+   İşlem sunucusu oluşturmak için bu seçeneği seçin.
 
-**Hizmet (EXE)**  
-Windows başladığında arka planda çalışan bir Windows uygulaması oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermiyor veya için proxy/saplama kodunun birleştirilmesine izin vermiyor.
+- **Yürütülebilir (EXE)**  
+
+   Yerel bir işlem dışı sunucu oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermez. İçin proxy/saplama kodunun birleştirilmesine izin vermez.
+
+- **Hizmet (EXE)**  
+
+   Windows başladığında arka planda çalışan bir Windows uygulaması oluşturmak için bu seçeneği seçin. Bu seçenek, MFC veya COM + 1.0 desteği izin vermiyor veya için proxy/saplama kodunun birleştirilmesine izin vermiyor.
 
 ## <a name="additional-options"></a>Ek Seçenekler
 
 > [!NOTE]
->  Tüm ek seçenekler, yalnızca DLL projeleri için kullanılabilir.
+> Tüm ek seçenekler, yalnızca DLL projeleri için kullanılabilir.
 
-**Proxy/saplama kodunun birleştirilmesine izin ver**  
-Seçin **proxy/saplama kodunun birleştirilmesine izin** arabirimleri sıralama gerekli olduğunda bir kolaylık olarak onay kutusu. Bu seçenek MIDL tarafından oluşturulan proxy ve saplama kodu aynı yürütülebilir sunucusu olarak yerleştirir.
+- **Proxy/saplama kodunun birleştirilmesine izin ver**  
 
-**MFC desteği**  
-Nesneniz için MFC desteği içerdiğini belirtmek için bu seçeneği seçin. Tüm sınıfları ve bunların içerdiği işlevleri erişebilmeleri bu seçenek için MFC kitaplıklarını projenize bağlar.
+   Seçin **proxy/saplama kodunun birleştirilmesine izin** arabirimleri sıralama gerekli olduğunda bir kolaylık olarak onay kutusu. Bu seçenek MIDL tarafından oluşturulan proxy ve saplama kodu aynı yürütülebilir sunucusu olarak yerleştirir.
 
-**COM + 1.0 desteği**  
-COM + 1.0 bileşenleri desteklemek için proje oluşturma ayarlarını değiştirmek için bu seçeneği seçin. Standart kitaplıkları listesine ek olarak sihirbaz COM + 1.0 bileşeni özgü kitaplığı comsvcs.lib ekler.
+- **MFC desteği**  
 
-Ayrıca, mtxex.dll, uygulamanız başlatıldığında konak sisteminde yüklü gecikmesidir.
+   Nesneniz için MFC desteği içerdiğini belirtmek için bu seçeneği seçin. Tüm sınıfları ve bunların içerdiği işlevleri erişebilmeleri bu seçenek için MFC kitaplıklarını projenize bağlar.
 
-- **Bileşen Kaydedicisi Destek** projenize ATL COM + 1.0 bileşenleri için destek içeriyorsa, bu seçeneği ayarlayabilirsiniz. Bileşen kayıt şirketi, COM + 1.0 nesnesinin bileşenlerin listesini alın, bileşenleri kaydetmek veya bileşenleri (tek tek veya tek seferde) kaydını sağlar.
+- **COM + 1.0 desteği**  
+
+   COM + 1.0 bileşenleri desteklemek için proje oluşturma ayarlarını değiştirmek için bu seçeneği seçin. Standart kitaplıkları listesine ek olarak sihirbaz COM + 1.0 bileşeni özgü kitaplığı comsvcs.lib ekler.
+
+   Ayrıca, mtxex.dll, uygulamanız başlatıldığında konak sisteminde yüklü gecikmesidir.
+
+- **Destek bileşen Kaydedicisi**
+
+   ATL projenizin COM + 1.0 bileşenleri için destek içeriyorsa, bu seçeneği ayarlayabilirsiniz. Bileşen kayıt şirketi, COM + 1.0 nesnesinin bileşenlerin listesini alın, bileşenleri kaydetmek veya bileşenleri (tek tek veya tek seferde) kaydını sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

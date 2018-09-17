@@ -1,5 +1,5 @@
 ---
-title: -Yu (önceden derlenmiş başlık dosyasını) | Microsoft Docs
+title: -Yu (önceden derlenmiş üst bilgi dosyasını kullanma) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -21,87 +21,92 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d115017e843e7f03455e1eef2b384b3475a1b798
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a0b2935c10b5d99f4fa97163310a3e2cba3006b3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378723"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707752"
 ---
 # <a name="yu-use-precompiled-header-file"></a>/Yu (Önceden Derlenmiş Üst Bilgi Dosyasını Kullanma)
-Geçerli derlemedeki varolan önceden derlenmiş üst bilgi (.pch) dosyasını kullanmak için derleyicisi bildirir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Yu[filename]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- *Dosya adı*  
- Kullanılarak kaynak dosyasında bulunan bir üstbilgi dosyası adı bir **#include** önişlemci yönergesi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- İçerme dosyası adını her ikisi için aynı olmalıdır **/Yc** önceden derlenmiş üst bilgi ve tüm oluşturur seçeneği sonraki **/Yu** önceden derlenmiş üst bilgi kullanımını gösteren seçeneği.  
-  
- İçin **/Yc**, `filename` noktada belirtir hangi ön derlemesi durdurur; ancak tüm kod derleyici işlemini gerçekleştirir `filename` ve içerme dosyası ve bir uzantı temel adı kullanılarak elde edilen önceden derlenmiş üst bilgi adları .PCH.  
-  
- .Pch dosyası kullanılarak oluşturulmuş olması gerekir **/Yc**.  
-  
- Derleyici .h dosyası olarak derlenmiş önce gerçekleşen tüm kodu değerlendirir. Bunu yalnızca ötesine atlar **#include** .h dosyayla ilişkili yönergesi .pch dosyasında yer alan kodu kullanır ve sonra tüm kodu derler `filename`.  
-  
- Komut satırında arasında boşluk bulunmamalıdır **/Yu** ve `filename`.  
-  
- Belirttiğinizde **/Yu** seçeneği olmadan bir dosya adı, kaynak programınızı içermelidir bir [#pragma hdrstop](../../preprocessor/hdrstop.md) pragma .pch dosyası önceden derlenmiş üst bilgi dosya adını belirtir. Bu durumda, derleyici tarafından adlı önceden derlenmiş üst bilgi (.pch dosyası Adlandır) kullanacağı [/Fp (adı. PCH dosyası)](../../build/reference/fp-name-dot-pch-file.md). Derleyici bu pragma konuma atlar, pragma tarafından belirtilen önceden derlenmiş üst bilgi dosyasından derlenmiş durumunu geri yükler ve pragma aşağıdaki kodu derler. Varsa **#pragma hdrstop** , temel bir .pch uzantısına sahip kaynak dosya adını türetilmiş bir ada sahip bir dosya derleyici arar bir dosya adı belirtmiyor. Aynı zamanda **/Fp** seçeneği farklı .pch dosyası belirtin.  
-  
- Belirtirseniz **/Yu** seçeneği bir dosya adı ve belirtmek başarısız bir **hdrstop** pragma, bir hata iletisi oluşturulur ve derleme başarısız olur.  
-  
- Varsa **/Yc** `filename` ve **/Yu** `filename` seçenekleri aynı komut satırında oluşur ve her ikisi de aynı dosya adına başvuru **/Yc** `filename` alır Öncelik, kadar tüm kodu önceden derlemek ve adlandırılmış dosya dahil olmak üzere. Bu özellik, derleme görevleri dosyaları yazma basitleştirir.  
-  
- .PCH dosyaları makine ortamı hakkında bilgi bilgilerinin yanı sıra bellek adresi program içerdiğinden, yalnızca oluşturulduğu makinedeki bir pch dosyası kullanmanız gerekir.  
-  
- Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz:  
-  
--   [/Y (Önceden Derlenmiş Üst Bilgiler)](../../build/reference/y-precompiled-headers.md)  
-  
--   [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Belirtin [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) projenizdeki .cpp dosyada.  
-  
-2.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-3.  Tıklatın **C/C++** klasör.  
-  
-4.  Tıklatın **önceden derlenmiş üstbilgiler** özellik sayfası.  
-  
-5.  Değiştirme **aracılığıyla PCH dosya oluştur/kullan** özelliği veya **Oluştur/Kullan önceden derlenmiş üstbilgi** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>.  
-  
-## <a name="examples"></a>Örnekler  
- Aşağıdaki kod:  
-  
-```  
-#include <afxwin.h>   // Include header for class library  
-#include "resource.h" // Include resource definitions  
-#include "myapp.h"    // Include information specific to this app  
-...  
-```  
-  
- komut satırı ile derlenmiş `CL /YuMYAPP.H PROG.CPP`, derleyici üç işlemez deyimleri ancak kullanan önceden derlenmiş kod MYAPP.pch, böylece dosyaları (ve bunların içerebilir dosyaları) üçünü önişlemde söz konusu zaman kaydetme içermiyor.  
-  
- Kullanabileceğiniz [/Fp (adı. PCH dosyası)](../../build/reference/fp-name-dot-pch-file.md) seçeneğini **/Yu** adı ya da dosya adı bağımsız değişkeni'den farklı ise .pch dosyası adını belirtmek için seçeneği **/Yc** veya kaynak dosyasının içinde olarak temel adı Aşağıdaki:  
-  
-```  
-CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP  
-```  
-  
- Bu komut MYPCH.pch adlı bir önceden derlenmiş üst bilgi dosyası belirtir. Derleyici içeriğinin tüm kadar üstbilgi dosyaları ve dahil olmak üzere MYAPP.h önceden derlenmiş durumunu geri yüklemek için kullanır. Derleyici sonra MYAPP.h sonra gerçekleşir kodu derler **dahil** deyimi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Derleyicinin geçerli derlemede varolan önceden derlenmiş üst bilgi (.pch) dosyasını kullanmak için sağlar.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Yu[filename]
+```
+
+## <a name="arguments"></a>Arguments
+
+*Dosya adı*<br/>
+Kullanılarak kaynak dosyasında yer alan bir üst bilgi dosyasının adını bir **#include** önişlemci yönergesi.
+
+## <a name="remarks"></a>Açıklamalar
+
+İçerme dosyasının adını hem de aynı olmalıdır **/Yc** seçeneği önceden derlenmiş üst bilgi ve tüm oluşturan sonraki **/Yu** seçeneği önceden derlenmiş üst bilgi kullanımını gösteren.
+
+İçin **/Yc**, `filename` noktada belirtir hangi ön derleme durur; yine de tüm kod derleyici işlemini gerçekleştirir `filename` ve temel bir içerme dosyası ve bir uzantı adını kullanarak elde edilen önceden derlenmiş üst bilgi adları .PCH.
+
+.Pch dosyası kullanılarak oluşturulmuş olması gerekir **/Yc**.
+
+Derleyici .h dosyası olarak derlenmiş önce gerçekleşen tüm kodu değerlendirir. Bunu yalnızca ötesine atlar **#include** .h dosyası ile ilişkili yönergesi .pch dosyasında yer alan kod kullanır ve ardından sonra tüm kodu derler `filename`.
+
+Komut satırında arasında boşluk izin **/Yu** ve `filename`.
+
+Belirttiğinizde **/Yu** seçeneği olmadan bir dosya adı, kaynak programınızı içermelidir bir [#pragma hdrstop](../../preprocessor/hdrstop.md) .pch dosyası Adlandır önceden derlenmiş üst bilgi dosyası adını belirten pragması. Bu durumda, derleyici tarafından adlandırılan önceden derlenmiş üst bilgi (.pch dosyası Adlandır) kullanacağı [FP (adı. PCH dosyası)](../../build/reference/fp-name-dot-pch-file.md). Derleyici, bu pragma konumuna atlar, derlenmiş halin pragması tarafından belirlenen önceden derlenmiş üstbilgi dosyasından geri yükler ve ardından pragmayı izleyen kodu derler. Varsa **#pragma hdrstop** derleyici görünüyor .pch uzantılı kaynak dosyanın temel adı türetilen bir ada sahip bir dosya için bir dosya adı belirtmiyor. Ayrıca **/FP** farklı .pch dosyası belirtmek için seçeneği.
+
+Belirtirseniz **/Yu** seçeneği olmadan bir dosya adı ve belirtmek başarısız bir **hdrstop** pragması, bir hata iletisi oluşturulur ve derleme başarısız olur.
+
+Varsa **/Yc** `filename` ve **/Yu** `filename` seçeneklerini aynı komut satırında oluşur ve her ikisi de aynı dosya adına başvuru **/Yc** `filename` alır öncelik kadar tüm kodu önceden derlemek ve adlandırılmış dosyası dahil. Bu özellik, derleme görevleri dosyalarını yazımını basitleştirir.
+
+.PCH dosyaları makine ortamı hakkında bilgi bilgilerinin yanı sıra bellek adresi program içerdiğinden, yalnızca oluşturulduğu, makinedeki bir pch dosyası kullanmanız gerekir.
+
+Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz:
+
+- [/Y (Önceden Derlenmiş Üst Bilgiler)](../../build/reference/y-precompiled-headers.md)
+
+- [Önceden Derlenmiş Üst Bilgi Dosyaları Oluşturma](../../build/reference/creating-precompiled-header-files.md)
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Belirtin [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md) projenizdeki bir .cpp dosyası üzerinde.
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **önceden derlenmiş üst bilgiler** özellik sayfası.
+
+1. Değiştirme **dosya üzerinden PCH Oluştur/Kullan** özelliği veya **önceden derlenmiş üst bilgi Oluştur/Kullan** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.PrecompiledHeaderThrough%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.UsePrecompiledHeader%2A>.
+
+## <a name="examples"></a>Örnekler
+
+Aşağıdaki kodu:
+
+```
+#include <afxwin.h>   // Include header for class library
+#include "resource.h" // Include resource definitions
+#include "myapp.h"    // Include information specific to this app
+...
+```
+
+komut satırı ile derlenmiş `CL /YuMYAPP.H PROG.CPP`, derleyici üç işlemez deyimleri ancak MYAPP.pch, kullanan önceden derlenmiş koddan böylece dosyaları (ve bunlar içerebilir herhangi bir dosya) üç önişlemde harcanan süreyi kaydetmeyi içerir.
+
+Kullanabileceğiniz [FP (adı. PCH dosyası)](../../build/reference/fp-name-dot-pch-file.md) seçeneğini **/Yu** adı ya da dosya adı bağımsız değişkeni için farklı ise .pch dosyası adını belirtmek için seçeneği **/Yc** veya giriş olarak kaynak dosyanın temel adı Aşağıdaki:
+
+```
+CL /YuMYAPP.H /FpMYPCH.pch PROG.CPP
+```
+
+Bu komut MYPCH.pch adlı bir ön derlenmiş üstbilgi dosyası belirtir. Derleyici içeriğinin tüm üst bilgi dosyaları'kurmak için ve de dahil olmak üzere MYAPP.h önceden derlenmiş durumunu geri yüklemek için kullanır. Derleyici, ardından MYAPP.h sonra oluşan kodu derler **dahil** deyimi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

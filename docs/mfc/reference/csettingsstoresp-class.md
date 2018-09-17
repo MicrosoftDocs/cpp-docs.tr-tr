@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1cf84e2e7db6f829cb7afcd1831521b4f94535bd
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 4223ce5c358f4e95ab94baac9d5cf0edda5ad73f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850793"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716370"
 ---
 # <a name="csettingsstoresp-class"></a>CSettingsStoreSP sınıfı
 `CSettingsStoreSP` Örneklerini oluşturmak için kullanabileceğiniz bir yardımcı sınıfı [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
@@ -88,11 +88,11 @@ CSettingsStore& CSettingsStoreSP Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bYönetim*  
- Belirleyen bir Boole parametresi olup olmadığını bir `CSettingsStore` nesnesi, Yönetici modunda oluşturulur.  
+*bYönetim*<br/>
+[in] Belirleyen bir Boole parametresi olup olmadığını bir `CSettingsStore` nesnesi, Yönetici modunda oluşturulur.  
   
- [in] *bReadOnly*  
- Belirleyen bir Boole parametresi olup olmadığını bir `CSettingsStore` nesnesi salt okunur erişim için oluşturulur.  
+*bReadOnly*<br/>
+[in] Belirleyen bir Boole parametresi olup olmadığını bir `CSettingsStore` nesnesi salt okunur erişim için oluşturulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan bir başvuru `CSettingsStore` nesne.  
@@ -117,8 +117,8 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwUserData*  
- Kullanıcı tanımlı veri, `CSettingsStoreSP` nesnesini depolar.  
+*dwUserData*<br/>
+[in] Kullanıcı tanımlı veri, `CSettingsStoreSP` nesnesini depolar.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CSettingsStoreSP` Nesne verilerden depolar *dwUserData* korumalı üye değişkeni içinde `m_dwUserData`.  
@@ -131,8 +131,8 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRTI*  
- Türetilen bir sınıf için çalışma zamanı sınıf bilgileri işaretçisi [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
+*pRTI*<br/>
+[in] Türetilen bir sınıf için çalışma zamanı sınıf bilgileri işaretçisi [CSettingsStore sınıfı](../../mfc/reference/csettingsstore-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; YANLIŞ bir sınıf tarafından tanımlanan *pRTI* türünden türetilmediğinden `CSettingsStore`.  

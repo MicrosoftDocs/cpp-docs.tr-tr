@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10c01fcc7c75fb3ea9abf5803f5f17d3bd378333
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 62d78fb7c2b9cbaee62baf59636303f90177cf7b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953907"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45699601"
 ---
 # <a name="timeputbyname-class"></a>time_put_byname Sınıfı
 
@@ -50,11 +50,11 @@ protected:
 
 ### <a name="parameters"></a>Parametreler
 
-*_Locname*  
- Bir yerel ayar adı.
+*_Locname*<br/>
+Bir yerel ayar adı.
 
-*_Refs*  
- Bir ilk başvuru sayısı.
+*_Refs*<br/>
+Bir ilk başvuru sayısı.
 
 ## <a name="remarks"></a>Açıklamalar
 

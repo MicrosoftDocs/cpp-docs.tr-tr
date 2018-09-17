@@ -27,12 +27,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 66096fcfee62e869577527b632f3409fea231b35
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: d93ebf1bdc679c27d79392bf75576f47e8844a27
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690837"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709643"
 ---
 # <a name="errorcondition-class"></a>error_condition Sınıfı
 
@@ -252,7 +252,7 @@ template <class _Enum>
 error_condition(_Enum error,
     typename enable_if<is_error_condition_enum<_Enum>::value,
     error_condition>::type&
- operator=(Enum _Errcode);
+    operator=(Enum _Errcode);
 ```
 
 ### <a name="parameters"></a>Parametreler

@@ -44,12 +44,12 @@ helpviewer_keywords:
 - std::experimental::filesystem::directory_entry::operator&gt;=
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c61d69c1ee5ad40191771dabd829514e3381e88
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: 46a031b727f5c592925aaa4d343fc1299f6d4cdf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691412"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701525"
 ---
 # <a name="directoryentry-class"></a>directory_entry Sınıfı
 
@@ -115,13 +115,13 @@ void assign(const std::experimental::filesystem::path& pval,
 ### <a name="parameters"></a>Parametreler
 
 *pval*<br/>
-Depolanan dosya adı yolu.  
+Depolanan dosya adı yolu.
 
 *stat_arg*<br/>
-Depolanan dosya adındaki durumu.  
+Depolanan dosya adındaki durumu.
 
 *symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.  
+Depolanan dosya adındaki sembolik bağlantı durumu.
 
 ## <a name="directory_entry"></a> directory_entry
 
@@ -139,13 +139,13 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 ### <a name="parameters"></a>Parametreler
 
 *pval*<br/>
-Depolanan dosya adı yolu.  
+Depolanan dosya adı yolu.
 
 *stat_arg*<br/>
-Depolanan dosya adındaki durumu.  
+Depolanan dosya adındaki durumu.
 
 *symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.  
+Depolanan dosya adındaki sembolik bağlantı durumu.
 
 ## <a name="op_neq"></a> işleç! =
 
@@ -158,7 +158,7 @@ bool operator!=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="op_as"></a> işleç =
 
@@ -172,7 +172,7 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) içine kopyalanan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) içine kopyalanan `directory_entry`.
 
 ## <a name="op_eq"></a> işleç ==
 
@@ -185,7 +185,7 @@ bool operator==(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="op_lt"></a> İşleci&lt;
 
@@ -198,7 +198,7 @@ bool operator<(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="op_lteq"></a> İşleci&lt;=
 
@@ -211,7 +211,7 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="op_gt"></a> İşleci&gt;
 
@@ -224,7 +224,7 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="op_gteq"></a> İşleci&gt;=
 
@@ -237,7 +237,7 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
-[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.  
+[Directory_entry](../standard-library/directory-entry-class.md) karşılaştırılan `directory_entry`.
 
 ## <a name="path_type"></a> işleci const path_type &
 
@@ -269,13 +269,13 @@ void replace_filename(
 ### <a name="parameters"></a>Parametreler
 
 *pval*<br/>
-Depolanan dosya adı yolu.  
+Depolanan dosya adı yolu.
 
 *stat_arg*<br/>
-Depolanan dosya adındaki durumu.  
+Depolanan dosya adındaki durumu.
 
 *symstat_arg*<br/>
-Depolanan dosya adındaki sembolik bağlantı durumu.  
+Depolanan dosya adındaki sembolik bağlantı durumu.
 
 ## <a name="status"></a> Durumu
 
@@ -293,7 +293,7 @@ file_status status(error_code& ec) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *EC*<br/>
-Durum hata kodu.  
+Durum hata kodu.
 
 ## <a name="symlink_status"></a> symlink_status
 
@@ -307,7 +307,7 @@ file_status symlink_status(error_code& ec) const noexcept;
 ### <a name="parameters"></a>Parametreler
 
 *EC*<br/>
-Durum hata kodu.  
+Durum hata kodu.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

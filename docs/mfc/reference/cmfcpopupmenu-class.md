@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 125b15062fc46850ad9b0d2512f9f7cc2e2095e1
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 065529796ead2a37b9a417f5e1a2352deb429aba
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43204218"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711249"
 ---
 # <a name="cmfcpopupmenu-class"></a>CMFCPopupMenu sınıfı
 Windows açılır menü işlevselliğini uygular ve etiket menüler ve araç ipuçları gibi özellikleri ekleyerek genişletir.
@@ -315,8 +315,8 @@ static BOOL __stdcall ActivatePopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTopFrame*  
- [in] *pPopupMenu*  
+*pTopFrame*<br/>
+[in] [in] *pPopupMenu*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -330,8 +330,8 @@ static void AlwaysShowEmptyToolsEntry(BOOL bShow = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Açılır menü boş girişlerini görüntülemek TRUE; FALSE Aksi takdirde.  
+*bBilgi Göster*<br/>
+[in] Açılır menü boş girişlerini görüntülemek TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="areallcommandsshown"></a>  CMFCPopupMenu::AreAllCommandsShown  
 
@@ -352,8 +352,8 @@ MENUAREA_TYPE CheckArea(const CPoint& ptScreen) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ptScreen*  
- Ekran koordinatlarında bir nokta.  
+*ptScreen*<br/>
+[in] Ekran koordinatlarında bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Nokta açılır menüyü olduğu gösteren MENUAREA_TYPE parametresi.  
@@ -395,11 +395,11 @@ CMFCPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pCustPage*  
- Özelleştirme sayfası için bir işaretçi.  
+*pCustPage*<br/>
+[in] Özelleştirme sayfası için bir işaretçi.  
   
- [in] *lpszTitle*  
- Menü başlığı içeren bir dize.  
+*lpszTitle*<br/>
+[in] Menü başlığı içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem için kaynakları ayıran bir `CMFCPopupMenu`. Açılır menü öğesi oluşturmak için arama [CMFCPopupMenu::Create](#create).  
@@ -418,23 +418,23 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst pencere için `CMFCPopupMenu`.  
+*pWndParent*<br/>
+[in] Üst pencere için `CMFCPopupMenu`.  
   
- [in] *x*  
- Açılır menü konumunu yatay Ekran koordinatı  
+*x*<br/>
+[in] Açılır menü konumunu yatay Ekran koordinatı  
   
- [in] *y*  
- Açılır menü konumunu dikey Ekran koordinatı.  
+*Y*<br/>
+[in] Açılır menü konumunu dikey Ekran koordinatı.  
   
- [in] *hMenu*  
- Bir menü kaynağı için tanıtıcı.  
+*hMenu*<br/>
+[in] Bir menü kaynağı için tanıtıcı.  
   
- [in] *engellendi*  
- Menü özelleştirilebilir olup olmadığını belirten bir Boole parametresi. FALSE, açılan menüyü özelleştirilebilir olduğunu gösterir.  
+*Engellendi*<br/>
+[in] Menü özelleştirilebilir olup olmadığını belirten bir Boole parametresi. FALSE, açılan menüyü özelleştirilebilir olduğunu gösterir.  
   
- [in] *bOwnMessage*  
- Menü iletileri framework tarafından nasıl yönlendirdiği gösteren bir Boole parametresi. Daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
+*bOwnMessage*<br/>
+[in] Menü iletileri framework tarafından nasıl yönlendirdiği gösteren bir Boole parametresi. Daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -458,8 +458,8 @@ virtual CPane* CreateTearOffBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndMain*  
- [in] *uiID*  
+*pWndMain*<br/>
+[in] [in] *uiID*  
  [in] *lpszName*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -487,11 +487,11 @@ void EnableMenuLogo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iLogoSize*  
- Logo, piksel cinsinden boyutu.  
+*iLogoSize*<br/>
+[in] Logo, piksel cinsinden boyutu.  
   
- [in] *nLogoLocation*  
- Logo konumunu gösteren listelenmiş veri türü.  
+*nLogoLocation*<br/>
+[in] Logo konumunu gösteren listelenmiş veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Logo görüntülenecek yöntemi uygulamak [CFrameWndEx::OnDrawMenuLogo](../../mfc/reference/cframewndex-class.md#ondrawmenulogo) ana çerçeve penceresinde.  
@@ -506,8 +506,8 @@ static void EnableMenuSound(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Ses, aksi takdirde FALSE etkinleştirmek için TRUE.  
+*bSistemlerde*<br/>
+[in] Ses, aksi takdirde FALSE etkinleştirmek için TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ses etkinleştirirseniz, framework çağırır [PlaySound](/windows/desktop/api/shobjidl_core/nf-shobjidl_core-iusernotification-playsound) yöntemi, bir kullanıcı bir açılır menü açılır veya bir menü komutu seçer. Varsayılan olarak, bu özelliği etkin.  
@@ -596,8 +596,8 @@ static CMFCPopupMenu::ANIMATION_TYPE GetAnimationType(BOOL bNoSystem = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bNoSystem*  
- Bu yöntem genel değer denetleyip denetlemediğini belirten bir Boole parametresi. Bu örneği için animasyon stil döndürmek için bu yöntem istiyorsanız FALSE [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md).  
+*bNoSystem*<br/>
+[in] Bu yöntem genel değer denetleyip denetlemediğini belirten bir Boole parametresi. Bu örneği için animasyon stil döndürmek için bu yöntem istiyorsanız FALSE [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Animasyon türü tanımlayan numaralandırılmış değer.  
@@ -682,8 +682,8 @@ CMFCToolBarMenuButton* GetMenuItem(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Bir menü öğesinin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Bir menü öğesinin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir menü öğesi için bir işaretçi. Dizin geçersiz olduğu yoksa NULL.  
@@ -849,11 +849,11 @@ int InsertItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *düğmesi*  
- Menü öğesi eklemek için bir başvuru.  
+*Düğme*<br/>
+[in] Menü öğesi eklemek için bir başvuru.  
   
- [in] *iInsertAt*  
- Yeni öğenin sıfır tabanlı dizini. Varsa *iInsertAt* -1 ' dir öğe menü sonuna eklenir.  
+*iInsertAt*<br/>
+[in] Yeni öğenin sıfır tabanlı dizini. Varsa *iInsertAt* -1 ' dir öğe menü sonuna eklenir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Öğe nereye yerleştirildiğini konumu sıfır tabanlı dizini. yöntem başarısız olursa -1.  
@@ -869,8 +869,8 @@ int InsertSeparator(int iInsertAt = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iInsertAt*  
- Sıfır tabanlı dizin konumu ayırıcı burada bu yöntem ekler.  
+*iInsertAt*<br/>
+[in] Sıfır tabanlı dizin konumu ayırıcı burada bu yöntem ekler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Ayırıcı nereye yerleştirildiğini konumu sıfır tabanlı dizini. Bu yöntem başarısız olursa -1.  
@@ -1073,10 +1073,10 @@ virtual BOOL OnCmdMsg(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- [in] *nCode*  
- [in] *pExtra*  
- [in] *pHandlerInfo*  
+*nID*<br/>
+[in] [in] *nCode*  
+*pExtra*<br/>
+[in] [in] *pHandlerInfo*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -1137,8 +1137,8 @@ BOOL RemoveItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Silinecek öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Silinecek öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1163,8 +1163,8 @@ static void SetAnimationSpeed(UINT nElapse);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nElapse*  
- Yeni animasyon hızı, milisaniye cinsinden.  
+*nElapse*<br/>
+[in] Yeni animasyon hızı, milisaniye cinsinden.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon hızı, genel bir değerdir ve uygulamadaki tüm açılır menüler etkiler. Bu değer animasyonun tamamlamak bir açılır menü için ne kadar sürer belirtir.  
@@ -1179,8 +1179,8 @@ static void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *türü*  
- Animasyon türü belirten bir listelenmiş veri türü.  
+*Türü*<br/>
+[in] Animasyon türü belirten bir listelenmiş veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bkz: [CMFCPopupMenu::GetAnimationType](#getanimationtype) için geçerli değerlerin bir listesi için *türü*.  
@@ -1205,8 +1205,8 @@ void SetDefaultItem(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Yeni varsayılan komut menü komut kimliği.  
+*uiCmd*<br/>
+[in] Yeni varsayılan komut menü komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan komutu açılır menüdeki açılır menü görüntülendiğinde, seçtiğiniz komutudur.  
@@ -1219,8 +1219,8 @@ static void SetForceMenuFocus(BOOL bValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDeğer*  
- Giriş odağı açılır menü görüntülendiğinde çubuğu menüsüne zorlamak için framework istiyorsanız TRUE. Odağı korumak için açılır menü istiyorsanız FALSE.  
+*bDeğer*<br/>
+[in] Giriş odağı açılır menü görüntülendiğinde çubuğu menüsüne zorlamak için framework istiyorsanız TRUE. Odağı korumak için açılır menü istiyorsanız FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, uygulamadaki tüm açılır menüler için genel bir bayrak ayarlar. Varsayılan olarak, bu özellik etkin değil.  
@@ -1233,8 +1233,8 @@ static void SetForceShadow(BOOL bValue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDeğer*  
- Menü gölgeler, aksi takdirde FALSE çizilmesi gerektiğinde framework istiyorsanız TRUE.  
+*bDeğer*<br/>
+[in] Menü gölgeler, aksi takdirde FALSE çizilmesi gerektiğinde framework istiyorsanız TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırdığınızda, uygulamanızda genel bir bayrak ayarlar. Bu bayrak, uygulamanızdaki tüm açılır menüler etkiler.  
@@ -1247,8 +1247,8 @@ void SetMaxWidth(int iMaxWidth);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iMaxWidth*  
- Maksimum genişliğini piksel cinsinden açılan menüsü.  
+*iMaxWidth*<br/>
+[in] Maksimum genişliğini piksel cinsinden açılan menüsü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir menü komutu ile ilişkili metin maksimum genişliği sığmayacak kesilir ve uymayan bir parçası üç noktaya değiştirilir.  
@@ -1306,8 +1306,8 @@ void SetRightAlign(BOOL bRightAlign = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bRightAlign*  
- Menü hizalamasını belirten bir Boole değeri. Sağa hizalama TRUE gösterir, FALSE, sola hizalama gösterir.  
+*bRightAlign*<br/>
+[in] Menü hizalamasını belirten bir Boole değeri. Sağa hizalama TRUE gösterir, FALSE, sola hizalama gösterir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, tüm açılır menüler sola hizalanır.  
@@ -1320,8 +1320,8 @@ static void SetSendMenuSelectMsg(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- Açılır menü, üst çerçeve yanlış aksi bildirmesi durumunda TRUE.  
+*bInternet*<br/>
+[in] Açılır menü, üst çerçeve yanlış aksi bildirmesi durumunda TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu uygulamadaki tüm açılır menüler için genel bir seçenektir. Etkinleştirilirse, açılır menüler kullanıcı komutu seçtiğinde ana kareye WM_MENUSELECT ileti gönderir.  
@@ -1353,8 +1353,8 @@ static void UpdateAllShadows(LPRECT lprectScreen = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lprectScreen*  
- Bir dikdörtgen ekran koordinatlarında güncelleştirmek için bölgeye belirtir.  
+*lprectScreen*<br/>
+[in] Bir dikdörtgen ekran koordinatlarında güncelleştirmek için bölgeye belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon denetimleri veya dinamik içerik başka windows üzerinden açılır menü görüntülendiğinde bu yöntem yararlı olur.  
@@ -1367,8 +1367,8 @@ void UpdateShadow(LPRECT lprectScreen = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lprectScreen*  
- Güncelleştirilecek bölge sınırlarını belirten bir dikdörtgen, ekran koordinatlarında.  
+*lprectScreen*<br/>
+[in] Güncelleştirilecek bölge sınırlarını belirten bir dikdörtgen, ekran koordinatlarında.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Animasyonlu görüntü gölge içeren bir açılır menü çakıştığında bu yöntemi çağırın.  

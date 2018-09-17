@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3a53dd239d2c6cdba77f977cc94642828c5e91b7
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 79facf2498769c0f4385f6dbc84133c3773fe0e7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216480"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705711"
 ---
 # <a name="cmfcribbonfontcombobox-class"></a>CMFCRibbonFontComboBox sınıfı
 Yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu uygular. Bir Şerit panel üzerine birleşik giriş kutusu yerleştirin.  
@@ -106,14 +106,14 @@ void BuildFonts(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFontType*  
- Yazı tipi eklemek için yazı tipini belirtir.  
+*nFontType*<br/>
+[in] Yazı tipi eklemek için yazı tipini belirtir.  
   
- [in] *nCharSet*  
- Eklenecek yazı tiplerinin karakter kümesini belirtir.  
+*nCharSet*<br/>
+[in] Eklenecek yazı tiplerinin karakter kümesini belirtir.  
   
- [in] *nPitchAndFamily*  
- Eklenecek yazı tipi ailesi ve sıklıktaki değişimi belirtir.  
+*nPitchAndFamily*<br/>
+[in] Eklenecek yazı tipi ailesi ve sıklıktaki değişimi belirtir.  
   
 ##  <a name="cmfcribbonfontcombobox"></a>  CMFCRibbonFontComboBox::CMFCRibbonFontComboBox  
  Oluşturur ve başlatır bir [CMFCRibbonFontComboBox](../../mfc/reference/cmfcribbonfontcombobox-class.md) nesne.  
@@ -128,20 +128,20 @@ CMFCRibbonFontComboBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Kullanıcı birleşik giriş kutusundan bir öğe seçtiğinde yürüten komutu komut kimliği.  
+*nID*<br/>
+[in] Kullanıcı birleşik giriş kutusundan bir öğe seçtiğinde yürüten komutu komut kimliği.  
   
- [in] *nFontType*  
- Yazı tipi birleşik giriş kutusunda görüntülenecek türlerini belirtir. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.  
+*nFontType*<br/>
+[in] Yazı tipi birleşik giriş kutusunda görüntülenecek türlerini belirtir. DEVICE_FONTTYPE, RASTER_FONTTYPE ve TRUETYPE_FONTTYPE ya da bir bit düzeyinde birleşimlere geçerli seçenekler şunlardır.  
   
- [in] *nCharSet*  
- Yazı tipi birleşik giriş kutusunda belirtilen karakter kümesine ait olanlar filtreler...  
+*nCharSet*<br/>
+[in] Yazı tipi birleşik giriş kutusunda belirtilen karakter kümesine ait olanlar filtreler...  
   
- [in] *nPitchAndFamily*  
- Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesini belirtir.  
+*nPitchAndFamily*<br/>
+[in] Aralık ve birleşik giriş kutusunda görüntülenen yazı tipi ailesini belirtir.  
   
- [in] *nWidth*  
- Birleşik giriş kutusu piksel cinsinden genişliğini belirtir.  
+*nWidth*<br/>
+[in] Birleşik giriş kutusu piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Olası hakkında daha fazla bilgi için *nFontType* parametre değerleri görmek [EnumFontFamProc](https://msdn.microsoft.com/library/windows/desktop/dd162621) Windows SDK belgelerinde.  

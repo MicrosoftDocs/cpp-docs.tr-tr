@@ -27,36 +27,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae68de707ece35825a32a404ce14032d4bbd3141
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5ca32769d7797446dbb0766c41867da1554b037f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376734"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706218"
 ---
 # <a name="link-output"></a>LINK Çıktısı
-LINK çıktısı .exe dosyaları, DLL'ler, eşlem dosyaları ve iletileri içerir.  
-  
-##  <a name="_core_output_files"></a> Çıkış dosyaları  
- Varsayılan çıkış dosyası bağlantısından bir .exe dosyasıdır. Varsa [/dll](../../build/reference/dll-build-a-dll.md) seçeneği belirtildiğinde, bağlantı bir .dll dosyası oluşturur. Çıkış dosya adıyla denetleyebilirsiniz [çıktı dosyası adını (/ OUT)](../../build/reference/out-output-file-name.md) seçeneği.  
-  
- Artımlı modunda bağlantı programı daha sonra artımlı derlemeler için durum bilgilerini tutmak için bir .ilk dosyası oluşturur. .İlk dosyaları hakkında daha fazla ayrıntı için bkz: [.ilk dosyaları](../../build/reference/dot-ilk-files-as-linker-input.md). Artımlı bağlama hakkında daha fazla bilgi için bkz: [artımlı bağlantı (/ ARTIMLI)](../../build/reference/incremental-link-incrementally.md) seçeneği.  
-  
- BAĞLANTI oluşturduğunda (genellikle bir DLL) içeren bir program aktarır, .exp dosyası derleme kullanılmadığı sürece, ayrıca .lib dosyası oluşturur. İçeri aktarma kitaplığı dosya adıyla denetleyebilirsiniz [/IMPLIB](../../build/reference/implib-name-import-library.md) seçeneği.  
-  
- Varsa [eşlem dosyası oluştur (/ eşleme)](../../build/reference/map-generate-mapfile.md) seçeneği belirtildiğinde, bağlantı bir eşlem dosyası oluşturur.  
-  
- Varsa [hata ayıklama bilgisi üret (/ DEBUG)](../../build/reference/debug-generate-debug-info.md) seçeneği belirtildiğinde, program için hata ayıklama bilgileri içerecek şekilde PDB bağlantı oluşturur.  
-  
-##  <a name="_core_other_output"></a> Başka bir çıktı  
- Yazdığınızda `link` herhangi diğer komut satırı girişi olmadan, bağlantı seçeneklerini özetler kullanım deyimini görüntüler.  
-  
- BAĞLANTI telif hakkı ve sürüm iletisi görüntüler ve komut dosyası girişi, sürece görüntülemektedir [Başlangıç başlığını gösterme (/ NOLOGO)](../../build/reference/nologo-suppress-startup-banner-linker.md) seçenek kullanılır.  
-  
- Kullanabileceğiniz [yazdırma ilerleme durumu iletileri (/ VERBOSE)](../../build/reference/verbose-print-progress-messages.md) derleme hakkında ek ayrıntıları görüntülemek için seçeneği.  
-  
- BAĞLANTI sorunları LNK formunda hata ve uyarı iletileri*nnnn*. Ayrıca bu hata öneki ve dizi numarası LIB, DUMPBIN ve EDITBIN tarafından kullanılır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+LINK çıktısı .exe dosyaları, DLL'ler, eşlem ve iletileri içerir.
+
+##  <a name="_core_output_files"></a> Çıktı dosyaları
+
+Varsayılan çıkış dosyası bağlantısından bir .exe dosyasıdır. Varsa [/dll](../../build/reference/dll-build-a-dll.md) seçeneği belirtilmemişse, bağlantısını bir .dll dosyası oluşturur. Çıkış dosya adından denetleyebilirsiniz [çıkış dosyası adı (/ OUT)](../../build/reference/out-output-file-name.md) seçeneği.
+
+Artımlı modda bağlantısı programının daha sonra artımlı derlemeleri için durum bilgileri tutmak için bir .ilk dosyası oluşturur. .İlk dosyaları hakkında daha fazla ayrıntı için bkz: [.ilk dosyaları](../../build/reference/dot-ilk-files-as-linker-input.md). Artımlı bağlama hakkında daha fazla bilgi için bkz. [artımlı bağlantı (/ INCREMENTAL)](../../build/reference/incremental-link-incrementally.md) seçeneği.
+
+BAĞLANTISINI oluşturur (genellikle bir DLL) içeren bir program aktarır, .exp dosyasının yapı kullanılmadığı sürece bir .lib dosyasına da alır. İçeri aktarma kitaplığı dosya adıyla denetleyebilirsiniz [/IMPLIB](../../build/reference/implib-name-import-library.md) seçeneği.
+
+Varsa [eşlem dosyası oluştur (/ MAP)](../../build/reference/map-generate-mapfile.md) seçeneği belirtildiğinde, bağlantı, bir eşlem dosyası oluşturur.
+
+Varsa [hata ayıklama bilgisi oluştur (/ DEBUG)](../../build/reference/debug-generate-debug-info.md) seçeneği belirtilmemişse, programın hata ayıklama bilgilerini içeren bir PDB bağlantısını oluşturur.
+
+##  <a name="_core_other_output"></a> Diğer çıktısı
+
+Yazdığınızda `link` herhangi diğer komut satırı girişi olmadan, bağlantı seçeneklerini özetleyen bir kullanım deyimi görüntüler.
+
+BAĞLANTI telif hakkı ve sürüm bir ileti görüntüler ve komut dosyası girişi, sürece yankılayan [Başlangıç başlığını gösterme (/ NOLOGO)](../../build/reference/nologo-suppress-startup-banner-linker.md) seçeneği kullanılır.
+
+Kullanabileceğiniz [ilerleme iletilerini Yazdır (/ VERBOSE)](../../build/reference/verbose-print-progress-messages.md) yapı hakkındaki ek ayrıntıları görüntülemek için seçeneği.
+
+BAĞLANTI sorunları hata ve uyarı iletileri LNK biçiminde*nnnn*. Bu hata öneki ve dizi numarası ayrıca LIB, DUMPBIN ve EDITBIN tarafından kullanılır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

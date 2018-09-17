@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 991b8c55c02272613ce329be9a053ff0110f1926
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 817c828c56fe2e95756e517c3d930d365714ad99
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764881"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701720"
 ---
 # <a name="cframewnd-class"></a>CFrameWnd sınıfı
 Windows tek Belgeli Arabirim (SDI) çakışan veya açılır çerçeve penceresinde ve pencereyi yönetmek için üye işlevlerini sağlar.  
@@ -986,7 +986,7 @@ virtual BOOL SetMenuBarState(DWORD nState);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *nDurum*|Görüntüleme veya gizleme menüyü belirtir. *NDurum* parametresi, aşağıdaki değerleri içerebilir:<br /><br /> -AFX_MBS_VISIBLE (0x01) - gizlenir ancak görünür durumdaysa etkisizdir durumunda menü görüntüler.<br />-AFX_MBS_HIDDEN (0x02) - menüsünün görünür ancak gizli ise, hiçbir etkisi olmaz gizler.|  
+|*nDurum*|[in] Görüntüleme veya gizleme menüyü belirtir. *NDurum* parametresi, aşağıdaki değerleri içerebilir:<br /><br /> -AFX_MBS_VISIBLE (0x01) - gizlenir ancak görünür durumdaysa etkisizdir durumunda menü görüntüler.<br />-AFX_MBS_HIDDEN (0x02) - menüsünün görünür ancak gizli ise, hiçbir etkisi olmaz gizler.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarıyla menü değişerek TRUE; Aksi takdirde FALSE.  
@@ -1005,7 +1005,7 @@ virtual void SetMenuBarVisibility(DWORD nStyle);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *nStyle*|Menü gizli, varsayılan olarak görünür ve odağa sahip olup olmadığını belirtir. *NStyle* parametresi, aşağıdaki değerleri içerebilir:<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     Menü, her zaman görüntülenir ve varsayılan olarak, odak noktası yok.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     Menü, varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için ALT tuşuna basın. Menü gösterilirse, menüyü Gizle için ALT ya da ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (karşılaştırmaya (veya)) - menüsünde varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü gösterilirse, veya menüyü Kapat odağı değiştirilecek F10 tuşuna basın. Kadar gizlemek için ALT ya da ESC tuşuna basın menüsü görüntülenir.|  
+|*nStyle*|[in] Menü gizli, varsayılan olarak görünür ve odağa sahip olup olmadığını belirtir. *NStyle* parametresi, aşağıdaki değerleri içerebilir:<br /><br /> -AFX_MBV_KEEPVISIBLE (0X01)-<br />     Menü, her zaman görüntülenir ve varsayılan olarak, odak noktası yok.<br />-AFX_MBV_DISPLAYONFOCUS (0X02)-<br />     Menü, varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için ALT tuşuna basın. Menü gösterilirse, menüyü Gizle için ALT ya da ESC tuşuna basın.<br />-AFX_MBV_ DISPLAYONFOCUS (0x02) &#124; AFX_MBV_DISPLAYONF10 (0x04)<br />     (karşılaştırmaya (veya)) - menüsünde varsayılan olarak gizlidir. Menü gizli ise, menüsünü görüntüleyin ve odaklanmak için F10 tuşuna basın. Menü gösterilirse, veya menüyü Kapat odağı değiştirilecek F10 tuşuna basın. Kadar gizlemek için ALT ya da ESC tuşuna basın menüsü görüntülenir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa değerini *nStyle* parametresi geçerli değil, bu yöntem başlatır ve hata ayıklama modu ile onaylar [Cınvalidargexception](../../mfc/reference/cinvalidargexception-class.md) yayın modunda. Diğer çalışma zamanı hataları durumunda, bu yöntemi hata ayıklama modunda onaylar ve türetilen özel durum harekete [CException](../../mfc/reference/cexception-class.md) sınıfı.  

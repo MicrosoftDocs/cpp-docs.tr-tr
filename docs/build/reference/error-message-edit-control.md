@@ -14,15 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49a0852b0b73adb3c70ba1b01b8c7f4805f80321
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa0851f31487bf79ba3977bdedee86ce3b718f21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32369620"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701903"
 ---
 # <a name="error-message-edit-control"></a>Hata İletisi Düzenleme Denetimi
-**Hata iletisi** kutusu sistem hata iletisi veya girilen değere göre modülü hata iletisi metni içerir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)
+
+**Hata iletisi** sistem hatası iletisi veya modülü hata iletisi girdiğiniz değere göre metin kutusu içerir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)

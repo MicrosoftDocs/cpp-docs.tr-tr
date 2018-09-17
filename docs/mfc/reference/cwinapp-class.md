@@ -202,12 +202,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c940ec56b0f522e90410b786d595f4cbf929ed89
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1236cbdaca396aa6d52d4e30095d9a0df5379142
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688551"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712042"
 ---
 # <a name="cwinapp-class"></a>CWinApp sınıfı
 
@@ -437,8 +437,8 @@ virtual DWORD ApplicationRecoveryCallback(LPVOID lpvParam);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lpvParam*  
-Daha sonraki kullanımlar için ayrılmıştır.
+*lpvParam*<br/>
+[in] Gelecekte kullanılmak üzere ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1745,11 +1745,11 @@ virtual CDocument* OpenDocumentFile(
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *lpszFileName*  
-Açılması için dosyanın adı.
+*lpszFileName*<br/>
+[in] Açılması için dosyanın adı.
 
-[in] *bAddToMRU*  
-Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.
+*bAddToMRU*<br/>
+[in] Belgenin en son dosyaları biri TRUE gösterir; FALSE, belge en son dosyalardan biri değil gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1936,8 +1936,8 @@ void RegisterShellFileTypes(BOOL bCompat = FALSE);
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *bCompat*  
-TRUE, yazdırma ve yazdırma dosyaları doğrudan kabuğundan veya dosya için bir yazıcı nesnesi sürükleyerek yazdırmak bir kullanıcı izin vermek için Kabuk komutları için kayıt defteri girdileri ekler. Ayrıca, bir defaultIcon anahtar ekler. Varsayılan olarak, bu parametre FALSE olduğunda geriye dönük uyumluluk için.
+*bCompat*<br/>
+[in] TRUE, yazdırma ve yazdırma dosyaları doğrudan kabuğundan veya dosya için bir yazıcı nesnesi sürükleyerek yazdırmak bir kullanıcı izin vermek için Kabuk komutları için kayıt defteri girdileri ekler. Ayrıca, bir defaultIcon anahtar ekler. Varsayılan olarak, bu parametre FALSE olduğunda geriye dönük uyumluluk için.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1973,14 +1973,14 @@ virtual HRESULT RegisterWithRestartManager(
 |||
 |-|-|
 |Parametre|Açıklama|
-|[in] *bRegisterRecoveryCallback*|TRUE, uygulamanın bu örneği bir kurtarma geri çağırma işlevini kullandığını gösterir; FALSE, mevcut olduğunu gösterir. Uygulama beklenmedik bir şekilde çıktığında framework Kurtarma geri çağırma işlevini çağırır. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|[in] *strRestartIdentifier*|Bu örneği yeniden başlatma Yöneticisi'ni tanımlayan benzersiz dize. Yeniden başlatma Yöneticisi uygulamanın her örneği için benzersiz tanımlayıcısıdır.|
-|[in] *pwzCommandLineArgs*|Komut satırından herhangi bir ek bağımsız değişken içeren bir dize.|
-|[in] *dwRestartFlags*|Yeniden başlatma Yöneticisi için isteğe bağlı bayraklar. Daha fazla bilgi için Açıklamalar bölümüne bakın.|
-|[in] *pRecoveryCallback*|Kurtarma geri çağırma işlevi. Bu işlev, giriş olarak LPVOID parametre almaz ve bir DWORD döndürür. Varsayılan kurtarma geri çağırma işlevidir `CWinApp::ApplicationRecoveryCallback`.|
-|[in] *lpvParam*|Kurtarma geri çağırma işlevi için giriş parametresi. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
-|[in] *dwPingInterval*|Kurtarma için geri dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği sürenin uzunluğunu. Bu parametre, milisaniye cinsindendir.|
-|[in] *dwCallbackFlags*|Bayrakları Kurtarma geri çağırma işlevine geçirilen. Daha sonraki kullanımlar için ayrılmıştır.|
+|*bRegisterRecoveryCallback*|[in] TRUE, uygulamanın bu örneği bir kurtarma geri çağırma işlevini kullandığını gösterir; FALSE, mevcut olduğunu gösterir. Uygulama beklenmedik bir şekilde çıktığında framework Kurtarma geri çağırma işlevini çağırır. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
+|*strRestartIdentifier*|[in] Bu örneği yeniden başlatma Yöneticisi'ni tanımlayan benzersiz dize. Yeniden başlatma Yöneticisi uygulamanın her örneği için benzersiz tanımlayıcısıdır.|
+|*pwzCommandLineArgs*|[in] Komut satırından herhangi bir ek bağımsız değişken içeren bir dize.|
+|*dwRestartFlags*|[in] Yeniden başlatma Yöneticisi için isteğe bağlı bayraklar. Daha fazla bilgi için Açıklamalar bölümüne bakın.|
+|*pRecoveryCallback*|[in] Kurtarma geri çağırma işlevi. Bu işlev, giriş olarak LPVOID parametre almaz ve bir DWORD döndürür. Varsayılan kurtarma geri çağırma işlevidir `CWinApp::ApplicationRecoveryCallback`.|
+|*lpvParam*|[in] Kurtarma geri çağırma işlevi için giriş parametresi. Daha fazla bilgi için [CWinApp::ApplicationRecoveryCallback](#applicationrecoverycallback).|
+|*dwPingInterval*|[in] Kurtarma için geri dönmek geri çağırma işlevi yeniden başlatma Yöneticisi bekleyeceği sürenin uzunluğunu. Bu parametre, milisaniye cinsindendir.|
+|*dwCallbackFlags*|[in] Bayrakları Kurtarma geri çağırma işlevine geçirilen. Daha sonraki kullanımlar için ayrılmıştır.|
 
 ### <a name="return-value"></a>Dönüş Değeri
 

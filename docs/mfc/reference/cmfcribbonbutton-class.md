@@ -124,12 +124,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff14a4d8e013adc401b13daa68ffcb9a739706d8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 2649e7e4cbaa1ba7fe6f2fcc18a5c5e933fc1032
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466084"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712971"
 ---
 # <a name="cmfcribbonbutton-class"></a>CMFCRibbonButton sınıfı
 `CMFCRibbonButton` Sınıfı, paneller, hızlı erişim araç çubukları ve açılır menüler gibi Şerit çubuğu öğeleri üzerine yerleştirebilir düğmeler uygular.  
@@ -261,11 +261,11 @@ void AddSubItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pSubItem*  
- Yeni öğe eklemek için bir işaretçi belirtir.  
+*pSubItem*<br/>
+[in] Yeni öğe eklemek için bir işaretçi belirtir.  
   
- [in] *nIndex*  
- Düğmenin menü öğelerinin diziye öğe eklemek dizin belirtir; menü öğeleri dizi sonuna öğe eklemek için -1.  
+*nIndex*<br/>
+[in] Düğmenin menü öğelerinin diziye öğe eklemek dizin belirtir; menü öğeleri dizi sonuna öğe eklemek için -1.  
   
 ##  <a name="canbestretched"></a>  CMFCRibbonButton::CanBeStretched  
 
@@ -318,20 +318,20 @@ CMFCRibbonButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Düğme komut Kimliğini belirtir.  
+*nID*<br/>
+[in] Düğme komut Kimliğini belirtir.  
   
- [in] *lpszText*  
- Düğmenin metin etiketini belirtir.  
+*lpszText*<br/>
+[in] Düğmenin metin etiketini belirtir.  
   
- [in] *nSmallImageIndex*  
- Bir düğmenin küçük resmi sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
+*nSmallImageIndex*<br/>
+[in] Bir düğmenin küçük resmi sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
   
- [in] *nLargeImageIndex*  
- Bir düğmenin büyük görüntü sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
+*nLargeImageIndex*<br/>
+[in] Bir düğmenin büyük görüntü sıfır tabanlı dizini üst kategori görüntü listesini belirtir.  
   
- [in] *hIcon*  
- Düğmenin resim olarak uygulamanın kullandığı simge için bir tanıtıcı belirtir.  
+*hIcon*<br/>
+[in] Düğmenin resim olarak uygulamanın kullandığı simge için bir tanıtıcı belirtir.  
   
 ### <a name="example"></a>Örnek  
  Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonButton` nesne.  
@@ -348,8 +348,8 @@ CSize DrawBottomText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *bCalcOnly*  
+*pDC*<br/>
+[in] [in] *bCalcOnly*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -366,8 +366,8 @@ virtual void DrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *türü*  
+*pDC*<br/>
+[in] [in] *türü*  
  [in] *rectImage*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -385,10 +385,10 @@ virtual int DrawRibbonText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *strText*  
- [in] *rectText*  
- [in] *uiDTFlags*  
+*pDC*<br/>
+[in] [in] *strText*  
+*rectText*<br/>
+[in] [in] *uiDTFlags*  
  [in] *clrText*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -403,8 +403,8 @@ int FindSubItemIndexByID(UINT uiID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Açılır menü öğesinin komut Kimliğini belirtir.  
+*uiID*<br/>
+[in] Açılır menü öğesinin komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlişkili olduğu alt öğenin sıfır tabanlı dizini *uiID*. Böyle bir alt öğe yoksa -1.  
@@ -456,8 +456,8 @@ int GetImageIndex(BOOL bLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bLargeImage*  
- TRUE ise büyük resimler içeren görüntü listesinden görüntü dizini döndürür; Aksi takdirde, küçük resimler içeren görüntü listesinden görüntü dizini döndürür.  
+*bLargeImage*<br/>
+[in] TRUE ise büyük resimler içeren görüntü listesinden görüntü dizini döndürür; Aksi takdirde, küçük resimler içeren görüntü listesinden görüntü dizini döndürür.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlişkili görüntü listesinde düğmenin resim dizini.  
@@ -763,8 +763,8 @@ virtual void OnClick(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Fare tıklatın konumunu belirtir.  
+*Noktası*<br/>
+[in] Fare tıklatın konumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu olayı işlemek isterseniz türetilen bir sınıfta bu yöntemi yok sayın.  
@@ -822,8 +822,8 @@ BOOL RemoveSubItem(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Kaldırmak istediğiniz menü öğesinin sıfır tabanlı dizinini belirtir.  
+*nIndex*<br/>
+[in] Kaldırmak istediğiniz menü öğesinin sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe başarıyla kaldırıldıysa TRUE; Aksi takdirde FALSE ise *nIndex* negatif veya açılır menüsündeki menü öğelerinin sayısını aşıyor.  
@@ -857,8 +857,8 @@ void SetAlwaysLargeImage(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- TRUE ise, büyük bir görüntü düğme görüntülenir. Aksi takdirde, bir küçük resim düğme görüntülenir.  
+*bInternet*<br/>
+[in] TRUE ise, büyük bir görüntü düğme görüntülenir. Aksi takdirde, bir küçük resim düğme görüntülenir.  
   
 ##  <a name="setdefaultcommand"></a>  CMFCRibbonButton::SetDefaultCommand  
  Şerit düğmesi için varsayılan komut etkinleştirir.  
@@ -868,8 +868,8 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- TRUE ise, kendi varsayılan komut düğmesi yürütebilir. FALSE ise, düğmeyi kendi varsayılan komutu yürütülemiyor.  
+*bInternet*<br/>
+[in] TRUE ise, kendi varsayılan komut düğmesi yürütebilir. FALSE ise, düğmeyi kendi varsayılan komutu yürütülemiyor.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *bInternet* yalnızca düğme menü olduğunda geçerlidir. Varsa *bInternet* TRUE ise, kendi varsayılan komut düğmesi yürütebilir ve yalnızca bir kullanıcı düğmeye sağ tarafındaki oka tıkladığında atanmış açılır menü görünür. Aksi takdirde, düğmeyi kendi varsayılan komutu yürütülemiyor ve düğmeyi alanı bağımsız olarak kullanıcı tıkladığında açılan menü görüntülenir.  
@@ -896,11 +896,11 @@ void SetImageIndex(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Görüntü dizini belirtir.  
+*nIndex*<br/>
+[in] Görüntü dizini belirtir.  
   
- [in] *bLargeImage*  
- TRUE ise belirtilen dizinde büyük resimler listesine ifade eder. Aksi takdirde, küçük resimler listesine dizini ifade eder.  
+*bLargeImage*<br/>
+[in] TRUE ise belirtilen dizinde büyük resimler listesine ifade eder. Aksi takdirde, küçük resimler listesine dizini ifade eder.  
   
 ##  <a name="setmenu"></a>  CMFCRibbonButton::SetMenu  
  Açılır menü için Şerit düğmesi atar.  
@@ -953,8 +953,8 @@ void SetRightAlignMenu(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- TRUE ise, menü sağa hizalanır. Aksi takdirde, sola hizalanmış menüsü  
+*bInternet*<br/>
+[in] TRUE ise, menü sağa hizalanır. Aksi takdirde, sola hizalanmış menüsü  
   
 ##  <a name="settext"></a>  CMFCRibbonButton::SetText  
 

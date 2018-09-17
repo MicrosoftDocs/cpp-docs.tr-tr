@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 27f27b164d7a00e05e8d080a692f97b696776cbe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f88d086c76ea6b56f1bb049b886df70ceadbdbb9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33136213"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707908"
 ---
 # <a name="marshalcontextmarshalas"></a>marshal_context::marshal_as
-Yönetilen ve yerel veri türü arasında dönüştürme için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.  
+Yönetilen ve yerel veri türü arasında dönüştürmek için belirli bir veri nesnesi üzerinde sıralama gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -39,21 +39,21 @@ To_Type marshal_as<To_Type>(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `input`  
- İçin hazırlamak istediğiniz değeri bir `To_Type` değişkeni.  
+*Giriş*<br/>
+[in] İçin hazırlamak istediğiniz değeri bir `To_Type` değişkeni.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Türünde bir değişken `To_Type` diğer bir deyişle dönüştürülmüş değeri `input`.  
+ Türünde bir değişken `To_Type` dönüştürülmüş değeri diğer bir deyişle `input`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlev bir özel veri nesnesi hazırlama gerçekleştirir. Bu işlev yalnızca tabloda belirtildiği dönüşümleri kullanın [, genel bakış hazırlama c++](../dotnet/overview-of-marshaling-in-cpp.md).  
+ Bu işlev bir özel veri nesnesinde sıralama gerçekleştirir. Bu işlevi yalnızca tabloda belirtildiği dönüşümlü kullanın [Overview of Marshaling c++](../dotnet/overview-of-marshaling-in-cpp.md).  
   
- Desteklenmeyen veri türleri çifti sıralamakta çalışırsanız `marshal_as` bir hata oluşturur [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) derleme zamanında. Daha fazla bilgi için bu hata ile sağlanan iletisini okuyun. `C4996` Hata birden fazla yalnızca kullanım dışı işlevleri için oluşturulabilir. Bu hatayı üreten iki koşul desteklenmeyen veri türleri çifti hazırlarken ve kullanmayı deneyen `marshal_as` bir bağlam gerektiren bir dönüştürme için.  
+ Bir çift desteklenmeyen veri türleri sıralamanız çalışırsanız `marshal_as` bir hata oluşturur [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) derleme zamanında. Daha fazla bilgi için bu hata ile sağlanmış bir iletiyi okuyun. `C4996` Hata birden fazla yalnızca kullanım dışı işlevler için oluşturulabilir. Bu hata üreten iki koşul hazırlarken bir çift desteklenmeyen veri türleri ve kullanmayı denemek `marshal_as` bir bağlam gerektiren bir dönüştürme için.  
   
- Hazırlama kitaplığını birkaç üstbilgi dosyaları içerir. Herhangi bir dönüştürmeye yalnızca bir dosya gerektirir, ancak diğer dönüştürmeleri için gerekiyorsa, ek dosyalar içerebilir. Tabloda `Marshaling Overview in C++` hangi hazırlama dosyasını her dönüştürme için eklenmesi gerektiğini gösterir.  
+ Sıralama Kitaplığı çeşitli üstbilgi dosyalarından oluşur. Herhangi bir dönüştürmeyi yalnızca bir dosya gerektirir, ancak diğer dönüştürmeleri için gerekiyorsa, ek dosyalar içerebilir. Tablodaki `Marshaling Overview in C++` hazırlama hangi dosya her dönüştürme için dahil edilmesi gereken gösterir.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, gelen hazırlama için bir bağlam oluşturur bir `System::String` için bir `const char *` değişken türü. Dönüştürülen veri bağlamı siler satırından sonra geçerli olmayacak.  
+ Bu örnek, gelen hazırlama için bir bağlam oluşturur. bir `System::String` için bir `const char *` değişken türü. Dönüştürülmüş veri bağlamını siler satırından sonra geçerli olmayacak.  
   
 ```  
 // marshal_context_test.cpp  
@@ -76,7 +76,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, veya \<msclr\marshal_atl.h >  
+ **Üst bilgi dosyası:** \<msclr\marshal.h >, \<msclr\marshal_windows.h >, \<msclr\marshal_cppstd.h >, veya \<msclr\marshal_atl.h >  
   
  **Namespace:** msclr::interop  
   

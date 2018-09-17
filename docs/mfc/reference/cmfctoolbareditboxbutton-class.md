@@ -62,12 +62,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 928e2845321ad12a92e4ba3f42838b3f468dce70
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3ffb78d1c7893255666e5a340ce48649da72df6c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215521"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706907"
 ---
 # <a name="cmfctoolbareditboxbutton-class"></a>CMFCToolBarEditBoxButton sınıfı
 Bir düzenleme denetimi içeren bir araç çubuğu düğmesi ( [CEdit sınıfı](../../mfc/reference/cedit-class.md)).  
@@ -177,17 +177,17 @@ CMFCToolBarEditBoxButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Denetim kimliğini belirtir.  
+*uiID*<br/>
+[in] Denetim kimliğini belirtir.  
   
- [in] *iImage*  
- Bir araç çubuğu görüntüsü sıfır tabanlı dizini belirtir. Görüntüsü bulunan [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı tutar.  
+*iImage*<br/>
+[in] Bir araç çubuğu görüntüsü sıfır tabanlı dizini belirtir. Görüntüsü bulunan [Cmfctoolbarımages sınıfı](../../mfc/reference/cmfctoolbarimages-class.md) nesnesinin [CMFCToolBar sınıfı](../../mfc/reference/cmfctoolbar-class.md) sınıfı tutar.  
   
- [in] *dwStyle*  
- Düzenleme denetiminin stilini belirtir.  
+*dwStyle*<br/>
+[in] Düzenleme denetiminin stilini belirtir.  
   
- [in] *iWidth*  
- Düzenleme denetiminin piksel cinsinden genişliğini belirtir.  
+*iWidth*<br/>
+[in] Düzenleme denetiminin piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan Oluşturucu aşağıdaki birleşimi için düzenleme denetiminin stilini ayarlar:  
@@ -204,8 +204,8 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *src*  
- Kopyalanacak kaynak düğmesini başvuru.  
+*src*<br/>
+[in] Kopyalanacak kaynak düğmesini başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu araç çubuğu düğmesi için başka bir araç çubuğu düğmesini kopyalama için bu yöntemi çağırın. *src* türünde olmalıdır `CMFCToolBarEditBoxButton`.  
@@ -220,11 +220,11 @@ virtual CEdit* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Düzenleme denetiminin üst penceresine belirtir. NULL olmamalıdır.  
+*pWndParent*<br/>
+[in] Düzenleme denetiminin üst penceresine belirtir. NULL olmamalıdır.  
   
- [in] *dikdörtgen*  
- Düzenleme denetiminin boyutunu ve konumunu belirtir.  
+*Rect*<br/>
+[in] Düzenleme denetiminin boyutunu ve konumunu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan düzenleme denetimi için bir işaretçi; Denetim oluşturma ve ek başarısız olursa NULL ise.  
@@ -240,8 +240,8 @@ static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Komut Kimliği Al düğmesi.  
+*uiCmd*<br/>
+[in] Komut Kimliği Al düğmesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk `CMFCToolBarEditBoxButton` böyle bir nesne varsa, belirtilen komut kimliği ya da NULL olan uygulama nesnesi.  
@@ -257,8 +257,8 @@ static CString __stdcall GetContentsAll(UINT uiCmd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Düğme içeriğinin alınacağı komut kimliği.  
+*uiCmd*<br/>
+[in] Düğme içeriğinin alınacağı komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CString` belirtilen komut kimliği olduğundan ilk düzenleme kutusu araç çubuğu denetiminin metin içeren nesne  
@@ -287,8 +287,8 @@ virtual void GetEditBorder(CRect& rectBorder);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *rectBorder*  
- Bir başvuru `CRect` dikdörtgen alan nesnesi.  
+*rectBorder*<br/>
+[out] Bir başvuru `CRect` dikdörtgen alan nesnesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem istemci koordinatları düzenleme denetiminin sınırlayıcı dikdörtgeni alır. Bu, bir piksel boyutunu her yönde bir dikdörtgen genişletir.  
@@ -368,8 +368,8 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iNotifyCode*  
- Komutu ile ilişkili bir uyarı iletisi.  
+*iNotifyCode*<br/>
+[in] Komutu ile ilişkili bir uyarı iletisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  WM_COMMAND ileti veya yanlış ileti üst araç tarafından işlenmesi gerektiğini belirtmek için düğmeyi işler TRUE.  
@@ -399,8 +399,8 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Yeni üst penceresine bir işaretçi.  
+*pWndParent*<br/>
+[in] Yeni üst penceresine bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Temel sınıf uygulamasına bu metodu geçersiz kılar ( [CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) iç yeniden tarafından `CEdit` nesne.  
@@ -415,11 +415,11 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Kullanılmayan.  
+*pWnd*<br/>
+[in] Kullanılmayan.  
   
- [in] *bDelay*  
- Kullanılmayan.  
+*bDelay*<br/>
+[in] Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmenin click iletiyi işler olursa sıfır dışı; Aksi durumda 0.  
@@ -437,11 +437,11 @@ virtual HBRUSH OnCtlColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Düğme görüntüler cihaz bağlamı.  
+*pDC*<br/>
+[in] Düğme görüntüler cihaz bağlamı.  
   
- [in] *nCtlColor*  
- Kullanılmayan.  
+*nCtlColor*<br/>
+[in] Kullanılmayan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Genel pencere fırçasına tanıtıcı.  
@@ -481,8 +481,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğmeyi görülebilir. Aksi halde düğme görünür değil.  
+*bBilgi Göster*<br/>
+[in] Düğmenin görünür olup olmadığını belirtir. Bu parametre TRUE ise, düğmeyi görülebilir. Aksi halde düğme görünür değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Temel sınıf uygulamasına bu yöntemin genişlettiği ( [CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)), düğmeyi görüntüleyerek *bBilgi Göster* true'dur. Aksi takdirde, bu yöntem düğmesi gizlenir.  
@@ -495,8 +495,8 @@ virtual void OnSize(int iSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iSize*  
- Yeni piksel cinsinden düğmenin genişliği.  
+*iSize*<br/>
+[in] Yeni piksel cinsinden düğmenin genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan sınıf uygulamasını bu metodu geçersiz kılar [CMFCToolBarButton::OnSize](../../mfc/reference/cmfctoolbarbutton-class.md#onsize), boyutunu ve konumunu iç güncelleştirerek `CEdit` nesne.  
@@ -513,17 +513,17 @@ virtual BOOL OnUpdateToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Kullanılmayan.  
+*pWndParent*<br/>
+[in] Kullanılmayan.  
   
- [in] *iButtonIndex*  
- Kullanılmayan.  
+*iButtonIndex*<br/>
+[in] Kullanılmayan.  
   
- [in] *wndToolTip*  
- Araç ipucu metnini görüntüleyen denetim.  
+*wndToolTip*<br/>
+[in] Araç ipucu metnini görüntüleyen denetim.  
   
- [out] *str*  
- A `CString` güncelleştirilmiş araç ipucunu alan nesnesi.  
+*str*<br/>
+[out] A `CString` güncelleştirilmiş araç ipucunu alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Araç İpucu metni yöntemi güncelleştirmeleri olursa sıfır dışı; Aksi durumda 0.  
@@ -539,8 +539,8 @@ virtual void SetContents(const CString& sContents);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *sContents*  
- Ayarlanacak yeni metni belirtir.  
+*sContents*<br/>
+[in] Ayarlanacak yeni metni belirtir.  
   
 ##  <a name="setcontentsall"></a>  CMFCToolBarEditBoxButton::SetContentsAll  
  Bulur bir [CMFCToolBarEditBoxButton](../../mfc/reference/cmfctoolbareditboxbutton-class.md) belirtilen komut Kimliğine sahip ve belirtilen metin, metin kutusundaki ayarlar nesnesi.  
@@ -552,11 +552,11 @@ static BOOL SetContentsAll(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Metin değiştirilecek denetim komut Kimliğini belirtir.  
+*uiCmd*<br/>
+[in] Metin değiştirilecek denetim komut Kimliğini belirtir.  
   
- [in] *strContents*  
- Ayarlanacak yeni metni belirtir.  
+*strContents*<br/>
+[in] Ayarlanacak yeni metni belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Metni ayarlanmadı olursa sıfır dışı; 0 ise `CMFCToolBarEditBoxButton` Denetim belirtilen komut kimliği yok.  
@@ -569,8 +569,8 @@ void SetContextMenuID(UINT uiResID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmd*  
- Kısayol menüsünde kaynak kimliği.  
+*uiCmd*<br/>
+[in] Kısayol menüsünde kaynak kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework, kullanıcı araç çubuğu düğmesini tıklattığında kısayolunu oluşturmak için kaynak Kimliğini kullanır.  
@@ -583,8 +583,8 @@ static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bFlat*  
- Düzenleme kutusu düğmeleri düz stili. Bu parametre TRUE ise, düz bir stil görünümünü etkinleştirilir; Aksi takdirde düz stil görünümünü devre dışı bırakıldı.  
+*bFlat*<br/>
+[in] Düzenleme kutusu düğmeleri düz stili. Bu parametre TRUE ise, düz bir stil görünümünü etkinleştirilir; Aksi takdirde düz stil görünümünü devre dışı bırakıldı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan düz stil için düzenleme kutusu düğmeleri, TRUE şeklindedir. Kullanım [CMFCToolBarEditBoxButton::IsFlatMode](#isflatmode) , uygulamanızın düz stil görünümünü almak için yöntemi.  
@@ -597,8 +597,8 @@ virtual void SetStyle(UINT nStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nStyle*  
- Ayarlanacak yeni stili.  
+*nStyle*<br/>
+[in] Ayarlanacak yeni stili.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ayarlar [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) için *nStyle* uygulamayı Özelleştir modunda ve uygulamayı özelleştirme modu (bkz: olmadığındasağlar,ayrıcametinkutusunudevredışıbırakır[ CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) ve [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) geçerli stili bayrakların listesi için.  

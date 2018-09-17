@@ -22,12 +22,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00f71faa5a7b81931c8ee3fbce00ea4b7e66249b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 9cc4c44807a40425d4531c747526148837e0a25c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466367"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711171"
 ---
 # <a name="readgsbyte-readgsdword-readgsqword-readgsword"></a>__readgsbyte, __readgsdword, __readgsqword, __readgsword
 **Microsoft'a özgü**  
@@ -52,8 +52,8 @@ unsigned __int64 __readgsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Offset`  
- Başından uzaklık `GS` okuma için.  
+*uzaklık*<br/>
+[in] Başından uzaklık `GS` okuma için.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bayt, word, çift sözcük veya (çağrılan işlev adı tarafından belirtildiği şekilde) quadword bellek içeriğini konumda `GS:[Offset]`.  

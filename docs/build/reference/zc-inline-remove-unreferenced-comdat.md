@@ -20,16 +20,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067ba5dad4e0751a86835ea56c536a5b7250485d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: db9f0ff58108328979b945b32af0c0b884998639
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379594"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708539"
 ---
 # <a name="zcinline-remove-unreferenced-comdat"></a>/Zc:inline (Başvurulmayan COMDAT'ı kaldırma)
 
-Kaldırır başvurulmayan işlevleri veya COMDATs veya yalnızca iç bağlantı sahip veriler. Zaman **/ZC: inline** belirtilirse, derleyici gerektirir veya satır içi işlevler satır içi verileri kullanmak çeviri birimleri, veri veya işlevler için tanımları de dahil etmelisiniz.
+Başvurulmayan işlevleri kaldırır veya comdat'ları veya yalnızca iç bağlantıya sahip veri. Zaman **/ZC: inline** belirtilirse, derleyici gerektirir veya satır içi verileri satır içi işlevleri kullanmak çeviri birimleri veri veya işlevler için tanımları de içermelidir.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -37,15 +37,15 @@ Kaldırır başvurulmayan işlevleri veya COMDATs veya yalnızca iç bağlantı 
 
 ## <a name="remarks"></a>Açıklamalar
 
-Zaman **/ZC: inline** belirtilirse, derleyici sembol bilgileri başvurulmayan comdat'ı işlevleri veya veriler veya işlevler veya yalnızca iç bağlantı sahip veriler yayma değil. Bu iyileştirme yayın derlemelerde bağlayıcı tarafından gerçekleştirilen iş bazıları basitleştirir veya ne zaman bağlayıcı seçeneği [/OPT:REF](../../build/reference/opt-optimizations.md) belirtilir. Bu iyileştirme derleyici gerçekleştirdiğinde, bu önemli ölçüde .obj dosya boyutunu küçültmek ve bağlayıcı hızını artırmak. İyileştirmeleri devre dışı bırakıldığında Bu derleyici seçeneği etkin değil ([/Od](../../build/reference/od-disable-debug.md)) veya ne zaman [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) belirtilir.
+Zaman **/ZC: inline** belirtilirse, derleyici sembol bilgilerini başvurulmayan COMDAT işlevleri veya veri veya işlevler veya yalnızca iç bağlantıya sahip veri ktıları. Bu iyileştirme, sürüm yapılarında bağlayıcı tarafından gerçekleştirilen işin bir kısmını basitleştirir veya bağlayıcı seçeneği [/OPT: ref](../../build/reference/opt-optimizations.md) belirtilir. Derleyici bu en iyi duruma getirme gerçekleştirdiğinde, önemli ölçüde .obj dosya boyutunu küçültmek ve bağlayıcı hızını artırın. İyileştirmeleri devre dışı bırakıldığında Bu derleyici seçeneğini etkin değil ([/Od](../../build/reference/od-disable-debug.md)) veya [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) belirtilir.
 
-Varsayılan olarak, bu seçenek kapalıdır (**/Zc:inline-**). [/ İzin veren-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: inline**.
+Varsayılan olarak, bu seçenek kapalıdır (**/Zc:inline-**). [/ Permissive-](permissive-standards-conformance.md) seçeneği sağlamaz **/ZC: inline**.
 
-Varsa **/ZC: inline** belirtilirse, derleyici zorlar bildirilen tüm işlevler C ++ 11 gereksinim `inline` kullanıldıkları tanımı aynı çeviri biriminde kullanılabilir olması gerekir. Seçenek belirtilmediğinde bildirilen işlevler çağırır uyumlu olmayan kod Microsoft derleyicisi tanır `inline` tanım görülemiyor olsa bile. Daha fazla bilgi için C ++ 11 standart, 3.2 ve bölümleri 7.1.2 bakın. Bu derleyici seçeneği Visual Studio 2013 güncelleştirme 2'de sunulmuştur.
+Varsa **/ZC: inline** belirtilirse, derleyici zorlar bildirilen tüm işlevlerin C ++ 11 gereksinim `inline` kullanılıyorlarsa bir tanımı aynı çeviri biriminde kullanılabilir olması gerekir. Microsoft derleyici bildirilen işlevlerle çağıran uyumlu olmayan kod izin verir, bu seçenek belirtilmediğinde, `inline` bile tanım görülebilir. Daha fazla bilgi için C ++ 11 standardında, 3.2 ve bölümleri 7.1.2 bakın. Bu derleyici seçeneğini Visual Studio 2013 güncelleştirme 2'de kullanıma sunulmuştur.
 
-Kullanılacak **/ZC: inline** seçeneği, güncelleştirme uyumlu olmayan kod.
+Kullanılacak **/ZC: inline** seçeneğini güncelleştirme uyumlu olmayan kod.
 
-Bu örnek nasıl uyumlu olmayan bir satır içi işlev bildirimi bir tanımı olmadan kullanımını hala derler ve ne zaman bağlantıları gösterir varsayılan **/Zc:inline-** seçeneği kullanıldığında:
+Bu örnek nasıl uyumlu olmayan bir satır içi işlev bildirimi bir tanımı olmadan hala derler ve ne zaman bağlantıları gösterir. varsayılan **/Zc:inline-** seçeneği kullanıldığında:
 
 ```cpp
 // example.h
@@ -67,11 +67,11 @@ public:
 #include "example.h"
 
 void Example::inline_call() {
-   printf("inline_call was called.\n"); 
+   printf("inline_call was called.\n");
 }
 
 void Example::normal_call() {
-   printf("normal_call was called.\n"); 
+   printf("normal_call was called.\n");
    inline_call(); // with /Zc:inline-, inline_call forced into .obj file
 }
 ```
@@ -87,9 +87,9 @@ void main() {
 }
 ```
 
-Zaman **/ZC: inline** etkin, aynı kod neden bir [LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md) hata derleyici içermesinden olmayan kod gövdesi için yayma değil çünkü `Example::inline_call` example.obj içinde. Bu satır içi olmayan çağrısında neden `main` tanımlanmamış bir dış simge başvurmak için.
+Zaman **/ZC: inline** etkin, aynı kodu neden bir [LNK2019](../../error-messages/tool-errors/linker-tools-error-lnk2019.md) hata, derleyici bir satır içi olmayan kod gövdesi vermez çünkü `Example::inline_call` example.obj içinde. Bu satır içi olmayan çağrısında neden `main` tanımlanmamış bir dış sembol başvurmak için.
 
-Bu hatayı gidermek için kaldırabilirsiniz `inline` bildirimi anahtar sözcüğünün `Example::inline_call`, tanımını taşıma `Example::inline_call` üstbilgisi içine dosya ya da uygulanmasını taşıma `Example` main.cpp içine. Sonraki örnek üstbilgi içeren herhangi bir çağırıcı görünür olduğu üstbilgi dosyası tanımı taşır.
+Bu hatayı gidermek için kaldırabilirsiniz `inline` bildirimi from anahtar sözcüğü `Example::inline_call`, tanımını Taşı `Example::inline_call` üstbilgi içine dosya ya da uygulanması taşıma `Example` Main.cpp öğesi içinde. Sonraki örnek, başlık içeren tüm çağırana görünür olduğu üstbilgi dosyasına tanımı taşır.
 
 ```cpp
 // example2.h
@@ -100,7 +100,7 @@ Bu hatayı gidermek için kaldırabilirsiniz `inline` bildirimi anahtar sözcü�
 class Example2 {
 public:
    inline void inline_call() {
-      printf("inline_call was called.\n"); 
+      printf("inline_call was called.\n");
    }
    void normal_call();
    Example2() {};
@@ -113,8 +113,8 @@ public:
 #include "example2.h"
 
 void Example2::normal_call() {
-   printf("normal_call was called.\n"); 
-   inline_call(); 
+   printf("normal_call was called.\n");
+   inline_call();
 }
 ```
 
@@ -129,15 +129,15 @@ void main() {
 }
 ```
 
-Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** özellik sayfası.
 
-1. Değiştirme **başvurulmayan kodu ve verileri** özelliği ve ardından **Tamam**.
+1. Değiştirme **başvurulmayan kod ve verileri Kaldır** özelliği ve ardından **Tamam**.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

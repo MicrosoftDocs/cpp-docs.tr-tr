@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3ea5c28fe54e5d117ef40430912ef3f8ea0efd8
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 62b49c20248ca4825bcf2c95b6c7adc956a39025
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104296"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714536"
 ---
 # <a name="exports"></a>EXPORTS
 
@@ -30,7 +30,7 @@ Dışa aktarılan adlarla belirten bir veya daha fazla dışarı aktarma tanıml
 ```DEF
 EXPORTS
    definition
-```  
+```
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -76,7 +76,7 @@ Kullanabileceğiniz \@ *sıralı* bir sayı ve işlev adı değil, DLL'nin dış
 ```DEF
 EXPORTS
    exported_global DATA
-```  
+```
 
 Önerilen sırayla yeniden listelenmiş bir tanımını dışarı aktarma için izleyebileceğiniz dört yol vardır:
 
@@ -95,7 +95,7 @@ EXPORTS
 
 #Pragma yönergesi ve işlev adı dışarı aktarma ve derleme yapılandırmasına bağlı olarak farklı verir (örneğin, 32 bit veya 64 bit derlemelerde) sahip gerektiğinde kullanışlıdır.
 
-Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır. 
+Tüm dört yöntemi, aynı programda kullanılabilir. BAĞLANTI dışarı aktarmaları içeren bir program oluşturduğunda, ayrıca bir içeri aktarma kitaplığını sürece oluşturur bir. EXP dosyası derlemede kullanılır.
 
 Dışarı aktarmalar bölümün bir örnek aşağıda verilmiştir:
 
@@ -106,7 +106,7 @@ EXPORTS
    DllGetClassObject    @4 NONAME   PRIVATE
    DllRegisterServer    @7
    DllUnregisterServer
-```  
+```
 
 Dışarı aktardığınızda bir değişken DLL'den kullanarak bir. DEF dosyası sahip olmadığınız belirtmek `__declspec(dllexport)` değişken. Ancak, DLL kullanan herhangi bir dosyayı, yine de kullanmalısınız `__declspec(dllimport)` bildiriminde veri.
 

@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a167b228b054a24a812ce5099f396521adda0d08
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: f81b1e675f6b0c12330d84d17b2e6b1635503dfc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690427"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704944"
 ---
 # <a name="clinkctrl-class"></a>CLinkCtrl sınıfı
 Windows SysLink denetimi işlevlerini sağlar.  
@@ -237,7 +237,7 @@ int GetIdealSize(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *cxMaxWidth*|Maksimum genişliğini piksel cinsinden bağlantı.|  
+|*cxMaxWidth*|[in] Maksimum genişliğini piksel cinsinden bağlantı.|  
 |[out] \* *pSize*|Bir Windows işaretçisi [BOYUTU](https://msdn.microsoft.com/library/windows/desktop/dd145106) yapısı. Bu yöntem döndürüldüğünde, *cy* üyesi `SIZE` yapısı tarafından belirtilen bağlantı metni genişliği için ideal bağlantı metni yükseklik içeren *cxMaxWidth*. *Cx* yapı üyesi için gerekli olan bağlantı metni genişliği içerir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  

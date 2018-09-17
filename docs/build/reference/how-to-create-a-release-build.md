@@ -15,19 +15,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 949cfe629332488821da4313c13d40054778ef06
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f1221133b55002d49c93d66210c5eae6844b534b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370882"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705614"
 ---
 # <a name="how-to-create-a-release-build"></a>Nasıl yapılır: Yayın Derlemesi Oluşturma
-### <a name="to-generate-a-release-build-of-your-program"></a>Yayın derlemesi programınızın oluşturmak için  
-  
-1.  Seçin **sürüm** gelen **çözüm yapılandırması** açıktır aşağı açılan listesinde, **standart** araç.  
-  
-2.  Üzerinde **yapı** menüsünde tıklatın **yapı**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın Derlemeleri](../../build/reference/release-builds.md)
+
+### <a name="to-generate-a-release-build-of-your-program"></a>Programınızın bir yayın derlemesi oluşturmak için
+
+1. Seçin **yayın** gelen **çözüm yapılandırması** açık aşağı açılan listesinde, **standart** araç çubuğu.
+
+1. Üzerinde **derleme** menüsünde tıklatın **yapı**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yayın Derlemeleri](../../build/reference/release-builds.md)

@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 597adf6d7a32b537f31f9a824049dc9ffedf899f
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 6cececaa0380f2e3806348e40debbf9b9ca2c351
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37037850"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705243"
 ---
 # <a name="cmfcbasetoolbar-class"></a>CMFCBaseToolBar sınıfı
 Araç çubukları için temel sınıf.  
@@ -45,16 +45,16 @@ class CMFCBaseToolBar : public CPane
 |Ad|Açıklama|  
 |----------|-----------------|  
 |`CMFCBaseToolBar::CMFCBaseToolBar`|Varsayılan Oluşturucu.|  
-|`CMFCBaseToolBar::~CMFCBaseToolBar`|Yok Edicisi.|  
+|`CMFCBaseToolBar::~CMFCBaseToolBar`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCBaseToolBar::CreateObject`|Bu sınıf türü dinamik bir örneğini oluşturmak için framework tarafından kullanıldı.|  
+|`CMFCBaseToolBar::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
 |[CMFCBaseToolBar::GetDockingMode](#getdockingmode)|Yerleştirme modunu döndürür. (Geçersiz kılmaları [CBasePane::GetDockingMode](../../mfc/reference/cbasepane-class.md#getdockingmode).)|  
-|[CMFCBaseToolBar::GetMinSize](#getminsize)|Araç çubuğu minimum boyutu döndürür. (Geçersiz kılmaları [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|  
-|[CMFCBaseToolBar::OnAfterChangeParent](#onafterchangeparent)|Bölmesi'nin üst değiştikten sonra çerçevesi tarafından çağrılır. (Geçersiz kılmaları [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|  
+|[CMFCBaseToolBar::GetMinSize](#getminsize)|En az bir araç çubuğu boyutunu döndürür. (Geçersiz kılmaları [CPane::GetMinSize](../../mfc/reference/cpane-class.md#getminsize).)|  
+|[CMFCBaseToolBar::OnAfterChangeParent](#onafterchangeparent)|Bölmedeki üst değiştikten sonra framework tarafından çağırılır. (Geçersiz kılmaları [CBasePane::OnAfterChangeParent](../../mfc/reference/cbasepane-class.md#onafterchangeparent).)|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -83,26 +83,26 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
  Yerleştirme modu.  
   
 ##  <a name="getminsize"></a>  CMFCBaseToolBar::GetMinSize  
- Araç çubuğu minimum boyutu döndürür.  
+ En az bir araç çubuğu boyutunu döndürür.  
   
 ```  
 virtual void GetMinSize(CSize& size) const;  
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *boyutu*  
- Araç çubuğu için en küçük boyut.  
+*Boyutu*<br/>
+[out] Araç çubuğu için en küçük boyut.  
   
 ##  <a name="onafterchangeparent"></a>  CMFCBaseToolBar::OnAfterChangeParent  
- Bölmesi'nin üst değiştikten sonra çerçevesi tarafından çağrılır.  
+ Bölmedeki üst değiştikten sonra framework tarafından çağırılır.  
   
 ```  
 virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndOldParent*  
- Önceki üst pencere için bir işaretçi.  
+*pWndOldParent*<br/>
+[in] Önceki üst penceresine bir işaretçi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

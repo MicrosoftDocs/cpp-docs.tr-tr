@@ -1,5 +1,5 @@
 ---
-title: Çıkarımı yapılan bağımlılıklar ve kurallar | Microsoft Docs
+title: Çıkarsanan bağımlılıklar ve kurallar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -17,25 +17,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aae09fd756e0eb4eab3031beb5b4cba8c4d35a40
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c13ae7784ff40b39642ce26fd062a1aab80f2d4c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368050"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707557"
 ---
 # <a name="inferred-dependents-and-rules"></a>Çıkarsanan Bağımlılıklar ve Kurallar
-Geçerli çıkarım kuralı varsa NMAKE bir oluşturulursa bağımlı bir hedef için varsayar. Bir kural geçerlidir:  
-  
--   *toext* hedefin uzantısı ile eşleşir.  
-  
--   *fromext* hedef temel ad ve sahip bir dosya uzantısı geçerli ya da belirtilen dizinde var. eşleşir.  
-  
--   *fromext* yer [. SONEKLERİ](../build/dot-directives.md); başka *fromext* bir eşleşen kuralı daha yüksek olan **. SONEKLERİ** öncelik.  
-  
--   Hiçbir açık bağımlı daha yüksek olan **. SONEKLERİ** öncelik.  
-  
- Çıkarsanan bağımlılıklar beklenmeyen yan etkileri neden olabilir. Hedefin açıklama blok komutları içeriyorsa, NMAKE kuralında komutları yerine bu komutları yürütür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkarım Kuralları](../build/inference-rules.md)
+
+Geçerli çıkarım kuralı varsa, bir hedef için gösterilen bir bağımlı NMAKE varsayar. Bir kural uygular:
+
+- *toext* hedefin uzantısı eşleşir.
+
+- *fromext* eşleşen hedef temel ad ve bir dosya uzantısı geçerli ya da belirtilen dizinde bulunmaktadır.
+
+- *fromext* bulunduğu [. SONEKLERİ](../build/dot-directives.md); başka hiçbir *fromext* bir eşleşen kuralı daha yüksek bir sahip **. SONEKLERİ** öncelik.
+
+- Hiçbir açık bağımlı daha yüksek bir sahip **. SONEKLERİ** öncelik.
+
+Çıkarsanan bağımlılıklar beklenmeyen etkilere neden olabilir. Hedefin açıklama bloğu komutları içeriyorsa, NMAKE kuralda komutlar yerine bu komutları yürütür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıkarım Kuralları](../build/inference-rules.md)

@@ -65,12 +65,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 60b38ae134d761ea186b50545f9886275700dbc3
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0f5297b6764ba29805b842329403557ad2aa4c3b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677463"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701928"
 ---
 # <a name="afxglobaldata-structure"></a>AFX_GLOBAL_DATA Yapısı
 `AFX_GLOBAL_DATA` Yapısı, alanları ve framework yönetmek veya uygulamanızın davranışını ve görünümünü özelleştirmek için kullanılan yöntemleri içerir.  
@@ -220,14 +220,14 @@ BOOL DrawParentBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *pWnd*  
- Bir denetimin pencere işaretçisi.  
+*pWnd*<br/>
+[in] Bir denetimin pencere işaretçisi.  
   
- [in] *pDC*  
- Bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı işaretçisi.  
   
- [in] *lpRect*  
- Alanın, çizmek için sınırların bir dikdörtgen işaretçisi. Varsayılan değer NULL olur.  
+*lpRect*<br/>
+[in] Alanın, çizmek için sınırların bir dikdörtgen işaretçisi. Varsayılan değer NULL olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -250,36 +250,36 @@ BOOL DrawTextOnGlass(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *hTheme*  
- Bir pencerenin tema verileri işlemek veya NULL. Çerçeve, bu parametre NULL değilse ve Temalar desteklenen metnini çizmek için belirtilen tema kullanır. Aksi takdirde, framework metnini çizmek için bir tema kullanmaz.  
+*hTheme*<br/>
+[in] Bir pencerenin tema verileri işlemek veya NULL. Çerçeve, bu parametre NULL değilse ve Temalar desteklenen metnini çizmek için belirtilen tema kullanır. Aksi takdirde, framework metnini çizmek için bir tema kullanmaz.  
   
  Kullanım [OpenThemeData](/windows/desktop/api/uxtheme/nf-uxtheme-openthemedata) bir HTHEME oluşturmak için yöntemi.  
   
- [in] *pDC*  
- Bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı işaretçisi.  
   
- [in] *iPartId*  
- İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.  
+*iPartId*<br/>
+[in] İstenen metin görünümü olan denetim bölümü. Daha fazla bilgi için tablonun bölümleri sütununu görmek [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210). Bu değer 0 ise, varsayılan yazı tipi veya bir yazı tipi cihaz bağlamına seçili metni çizilir.  
   
- [in] *iStateId*  
- İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210).  
+*iStateId*<br/>
+[in] İstenen metin görünümü olan denetim durumu. Daha fazla bilgi için bkz: durumları sütun tablonun [bölümler ve durumlar](https://msdn.microsoft.com/library/windows/desktop/bb773210).  
   
- [in] *strText*  
- Çizmek için metin.  
+*strText*<br/>
+[in] Çizmek için metin.  
   
- [in] *dikdörtgen*  
- Belirtilen metin çizilen alanın sınır.  
+*Rect*<br/>
+[in] Belirtilen metin çizilen alanın sınır.  
   
- [in] *CertOpenStore*  
- Bitsel bir birleşimi (veya) belirtilen metnin nasıl çizilmeden belirten bayraklar.  
+*CertOpenStore*<br/>
+[in] Bitsel bir birleşimi (veya) belirtilen metnin nasıl çizilmeden belirten bayraklar.  
   
  Varsa *hTheme* parametresi `NULL` veya Temalar desteklenmez ve etkin *nFormat* parametresinin [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext) yöntemi geçerli açıklar bayrakları. Temalar destekleniyorsa, *CertOpenStore* parametresinin [DrawThemeTextEx](/windows/desktop/api/uxtheme/nf-uxtheme-drawthemetextex) yöntemi geçerli bayrakları açıklar.  
   
- [in] *nGlowSize*  
- Belirtilen metin çizmeden önce arka plan üzerine çizilmiş bir parlaklık efekti boyutu. Varsayılan değer 0’dır.  
+*nGlowSize*<br/>
+[in] Belirtilen metin çizmeden önce arka plan üzerine çizilmiş bir parlaklık efekti boyutu. Varsayılan değer 0’dır.  
   
- [in] *clrText*  
- Belirtilen metin çizilen rengi. Varsayılan renk varsayılan değerdir.  
+*clrText*<br/>
+[in] Belirtilen metin çizilen rengi. Varsayılan renk varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen metni çizmek için bir tema kullanılıyorsa TRUE; Aksi takdirde FALSE.  
@@ -305,8 +305,8 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *bSistemlerde*  
- Erişilebilirlik desteğini etkinleştirmek için TRUE; Erişilebilirlik desteği devre dışı bırakmak için FALSE. Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Erişilebilirlik desteğini etkinleştirmek için TRUE; Erişilebilirlik desteği devre dışı bırakmak için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkin Erişilebilirlik şekilde programları ve Windows işletim sistemi iş yardımcı teknoloji ürünlerinin birlikte geliştiren bir COM tabanlı bir teknolojidir. Bu, kullanıcı arabirimi öğeleri hakkında bilgi kullanıma sunmak için güvenilir yöntemleri sağlar. Ancak, Microsoft UI Otomasyonu adlı yeni bir erişilebilirlik modeli kullanıma sunulmuştur. İki teknolojileri karşılaştırması için bkz: [UI Otomasyonu ve Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).  
@@ -331,17 +331,17 @@ BOOL ExcludeTag(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *strBuffer*  
- Metin arabelleği.  
+*strBuffer*<br/>
+[in] Metin arabelleği.  
   
- [in] *lpszTag*  
- Açma ve kapama XML etiketlerini çiftinin adı.  
+*lpszTag*<br/>
+[in] Açma ve kapama XML etiketlerini çiftinin adı.  
   
- [out] *strTag*  
- Bu yöntem döndürüldüğünde, *strTag* parametresi tarafından adlandırılan etiketleri açılış ve kapanış XML arasında olan metni içeren *lpszTag* parametresi. Tüm başta veya sonda boşluk sonuçtan kırpılır.  
+*strTag*<br/>
+[out] Bu yöntem döndürüldüğünde, *strTag* parametresi tarafından adlandırılan etiketleri açılış ve kapanış XML arasında olan metni içeren *lpszTag* parametresi. Tüm başta veya sonda boşluk sonuçtan kırpılır.  
   
- [in] *bIsCharsList*  
- Çıkış karakterlerinin tanınmasından dönüştürme simgeleri true *strTag* gerçek kaçış karakterleri; parametresine Dönüştürme işlemleri için FALSE. Varsayılan değer FALSE olur. Daha fazla bilgi için açıklamalara bakın.  
+*bIsCharsList*<br/>
+[in] Çıkış karakterlerinin tanınmasından dönüştürme simgeleri true *strTag* gerçek kaçış karakterleri; parametresine Dönüştürme işlemleri için FALSE. Varsayılan değer FALSE olur. Daha fazla bilgi için açıklamalara bakın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -370,8 +370,8 @@ COLORREF GetColor(int nColor);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *nColor*  
- Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) yöntemi.  
+*nColor*<br/>
+[in] Bir kullanıcı arabirimi öğesi olan renk alınan belirten bir değeri. Geçerli değerlerin listesi için bkz. *nIndex* parametresinin [GetSysColor](/windows/desktop/api/winuser/nf-winuser-getsyscolor) yöntemi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kullanıcı arabirimi öğesi RGB renk değeri. Daha fazla bilgi için açıklamalara bakın.  
@@ -416,8 +416,8 @@ BOOL GetNonClientMetrics(NONCLIENTMETRICS& info);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [out içinde] *bilgileri*  
- A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.  
+*Bilgileri*<br/>
+[out içinde] A [NONCLIENTMETRICS](https://msdn.microsoft.com/library/windows/desktop/ff729175) nonminimized pencerenin istemci olmayan alanın ile ilişkili ölçeklenebilir ölçümleri içeren yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -435,8 +435,8 @@ int GetTextHeight(BOOL bHorz = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *bHorz*  
- Metin yatay olarak çalıştığında karakterlerin yüksekliği almak için TRUE; Metin dikey olarak çalıştığında karakterlerin yüksekliği almak için FALSE. Varsayılan değer True'dur.  
+*bHorz*<br/>
+[in] Metin yatay olarak çalıştığında karakterlerin yüksekliği almak için TRUE; Metin dikey olarak çalıştığında karakterlerin yüksekliği almak için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  , Ascender için kendi descender ölçülür geçerli yazı yüksekliği.  
@@ -693,8 +693,8 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *lpszClassNamePrefix*  
- Kaydedilecek pencere sınıfı adı.  
+*lpszClassNamePrefix*<br/>
+[in] Kaydedilecek pencere sınıfı adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa kayıtlı sınıfın tam adını; Aksi takdirde, bir [kaynak özel durum](exception-processing.md#afxthrowresourceexception).  
@@ -733,17 +733,17 @@ BOOL SetLayeredAttrib(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *hwnd*  
- Katmanlı penceresine işleyin.  
+*HWND*<br/>
+[in] Katmanlı penceresine işleyin.  
   
- [in] *crKey*  
- Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) katmanlı pencere oluşturmak için kullanır.  
+*crKey*<br/>
+[in] Saydamlık rengi anahtar [Masaüstü Pencere Yöneticisi](/windows/desktop/dwm/dwm-overview) katmanlı pencere oluşturmak için kullanır.  
   
- [in] *bAlpha*  
- Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri.  
+*bAlpha*<br/>
+[in] Pencerenin katmanlı opaklığını açıklamak için kullanılan alfa değeri.  
   
- [in] *CertOpenStore*  
- Bitsel bir birleşimi (veya) kullanmak için hangi yöntemi parametrelerini belirten bayrak. Kullanılacak LWA_COLORKEY belirtin *crKey* parametre olarak saydam rengi. Kullanılacak LWA_ALPHA belirtin *bAlpha* katmanlı pencere opaklığını belirlemek için parametre.  
+*CertOpenStore*<br/>
+[in] Bitsel bir birleşimi (veya) kullanmak için hangi yöntemi parametrelerini belirten bayrak. Kullanılacak LWA_COLORKEY belirtin *crKey* parametre olarak saydam rengi. Kullanılacak LWA_ALPHA belirtin *bAlpha* katmanlı pencere opaklığını belirlemek için parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.   
@@ -763,11 +763,11 @@ BOOL SetMenuFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler   
- [in] *lpLogFont*  
- Bir yazı tipi özniteliklerini içeren bir yapıya yönelik işaretçi.  
+*lpLogFont*<br/>
+[in] Bir yazı tipi özniteliklerini içeren bir yapıya yönelik işaretçi.  
   
- [in] *bHorz*  
- Metnin yatay olarak çalıştığını belirtmek için TRUE; FALSE metni dikey olarak çalışacağını belirtirsiniz.  
+*bHorz*<br/>
+[in] Metnin yatay olarak çalıştığını belirtmek için TRUE; FALSE metni dikey olarak çalışacağını belirtirsiniz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE. Hata ayıklama modunda, bu yöntem, bu yöntem başarısız olup olmadığını onaylar.  

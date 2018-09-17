@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47fabb7120cc13eeca38bc9d06428f686fc9f1b9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: fd0a8bbffd3a6e0f03635b659dd3743e12c9f077
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955572"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700771"
 ---
 # <a name="istriviallyassignable-class"></a>is_trivially_assignable sınıfı
 
@@ -37,8 +37,10 @@ struct is_trivially_assignable;
 
 ### <a name="parameters"></a>Parametreler
 
-Atamayı alan nesne türü için.
+*Hedef*<br/>
+Atamayı alan nesnenin türü.
 
+*Kaynak*<br/>
 Değer sağlayan bir nesne türü.
 
 ## <a name="remarks"></a>Açıklamalar

@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af6e9ce4c252e2d798615292291dcd3e21cbd72a
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 810a375fce13d8628db5ff00d89964d84c83b525
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853676"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704053"
 ---
 # <a name="cmfckeymapdialog-class"></a>CMFCKeyMapDialog sınıfı
 `CMFCKeyMapDialog` Sınıfı komutları klavyedeki tuşlarla eşleyen bir denetimi destekler.  
@@ -110,11 +110,11 @@ CMFCKeyMapDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParentFrame*  
- Üst penceresine bir işaretçi `CMFCKeyMapDialog` nesne.  
+*pWndParentFrame*<br/>
+[in] Üst penceresine bir işaretçi `CMFCKeyMapDialog` nesne.  
   
- [in] *bEnablePrint*  
- Kısayol tuşları listesi yazdırılabilir TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.  
+*bEnablePrint*<br/>
+[in] Kısayol tuşları listesi yazdırılabilir TRUE; Aksi takdirde FALSE. Varsayılan değer false'tur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -144,8 +144,8 @@ virtual CString FormatItem(int nItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nItem*  
- Anahtar eşlemelerinin iç listesinde bir öğe sıfır tabanlı dizini.  
+*nItem*<br/>
+[in] Anahtar eşlemelerinin iç listesinde bir öğe sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CString` biçimlendirilmiş öğesi metni içeren nesne.  
@@ -160,8 +160,8 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdID*  
- Komut kimliği.  
+*uiCmdID*<br/>
+[in] Komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Noktalı virgül ile ayrılmış belirtilen komutu ile ilişkilendirilmiş (';') kısayol tuşları listesi.  
@@ -178,11 +178,11 @@ virtual void OnInsertItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- Klavye tuş bileşimi bir komut ad ve açıklama eşlemek için kullanılan bir araç çubuğu düğmesi için bir işaretçi. Anahtar eşleme öğesi bir iç liste denetiminde saklanır.  
+*pButton*<br/>
+[in] Klavye tuş bileşimi bir komut ad ve açıklama eşlemek için kullanılan bir araç çubuğu düğmesi için bir işaretçi. Anahtar eşleme öğesi bir iç liste denetiminde saklanır.  
   
- [in] *nItem*  
- Yeni anahtar eşleme öğesi iç listesi denetimi eklemek istediğiniz yeri belirtir sıfır tabanlı dizini.  
+*nItem*<br/>
+[in] Yeni anahtar eşleme öğesi iç listesi denetimi eklemek istediğiniz yeri belirtir sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -197,14 +197,14 @@ virtual int OnPrintHeader(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dc*  
- Yazıcı için cihaz bağlamı.  
+*DC*<br/>
+[in] Yazıcı için cihaz bağlamı.  
   
- [in] *nPage*  
- Yazdırılacak sayfa numarası.  
+*nPage*<br/>
+[in] Yazdırılacak sayfa numarası.  
   
- [in] *cx*  
- Üstbilginin piksel cinsinden yatay uzaklık.  
+*CX*<br/>
+[in] Üstbilginin piksel cinsinden yatay uzaklık.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa, yazdırılan metin yüksekliği. Daha fazla bilgi için dönüş değeri bölümüne bakın. [CDC::DrawText](../../mfc/reference/cdc-class.md#drawtext).  
@@ -225,20 +225,20 @@ virtual int OnPrintItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dc*  
- Yazıcı cihaz bağlamı.  
+*DC*<br/>
+[in] Yazıcı cihaz bağlamı.  
   
- [in] *nItem*  
- Yazdırmak için öğenin sıfır tabanlı dizini.  
+*nItem*<br/>
+[in] Yazdırmak için öğenin sıfır tabanlı dizini.  
   
- [in] *y*  
- Sayfanın üst öğenin konumunu arasındaki dikey uzaklık.  
+*Y*<br/>
+[in] Sayfanın üst öğenin konumunu arasındaki dikey uzaklık.  
   
- [in] *cx*  
- Sayfanın solundaki öğenin konumunu arasındaki yatay uzaklık.  
+*CX*<br/>
+[in] Sayfanın solundaki öğenin konumunu arasındaki yatay uzaklık.  
   
- [in] *bCalcHeight*  
- Yazıcı öğesi için en iyi yükseklik hesaplamak için TRUE; Böylece varsayılan alanı sığar yazdırma öğesi kesmek için FALSE.  
+*bCalcHeight*<br/>
+[in] Yazıcı öğesi için en iyi yükseklik hesaplamak için TRUE; Böylece varsayılan alanı sığar yazdırma öğesi kesmek için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazdırılan öğe yüksekliği.  

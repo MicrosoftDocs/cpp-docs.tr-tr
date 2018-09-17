@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6fa9b8fb7fe85aca21e90195534f33201bee59fc
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: ff616e767d47be06c61c1bddf9ffc336f5144bc4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39464940"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704611"
 ---
 # <a name="staticassert"></a>static_assert
 Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade FALSE ise, derleyici bir sağlanır ve derleme hatalarını hata C2338 ile başarısız olursa belirtilen iletiyi görüntüler; Aksi halde bildirimin etkisi yoktur.  
@@ -34,8 +34,7 @@ Derleme zamanında yazılım onayını sınar. Belirtilen sabit ifade FALSE ise,
 ```   
 static_assert( constant-expression, string-literal );  
 
-**Visual Studio 2017 and later:**
-static_assert( constant-expression ); 
+static_assert( constant-expression ); // Visual Studio 2017 and later
 ```  
   
 #### <a name="parameters"></a>Parametreler  

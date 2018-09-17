@@ -15,16 +15,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b174747b3153bb44f6850f251713f8f3fca168c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: be674af25fceec377d2d7b8979b3a52de91cf640
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372409"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712484"
 ---
 # <a name="exe-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exe Dosyaları
-[MS-DOS saplama dosyası adı](../../build/reference/stub-ms-dos-stub-file-name.md) (/ SAPLAMA) seçeneği MS-DOS ile çalışan bir .exe dosyası adını belirtir. BAĞLANTI geçerli bir MS-DOS program olduğundan emin olmak için belirtilen dosya inceler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LINK giriş dosyaları](../../build/reference/link-input-files.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+[MS-DOS saplama dosyası adı](../../build/reference/stub-ms-dos-stub-file-name.md) (/ SAPLAMA) seçeneği, MS-DOS ile çalışan bir .exe dosyasının adını belirtir. Belirtilen dosya geçerli bir MS-DOS programı olduğundan emin olmak için bağlantı inceler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

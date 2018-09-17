@@ -19,51 +19,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9877c5a229c3cabcb7703dd2617d1d57e3512f0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a024d7488eb1683f40548839ab843da1e56f65e8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368518"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710222"
 ---
 # <a name="importing-data-using-declspecdllimport"></a>__declspec(dllimport) Kullanarak Veriyi İçeri Aktarma
-Kullanarak verileri, söz konusu olduğunda **__declspec(dllimport)** yöneltme bir katmanı kaldırır kolaylık öğedir. DLL'den dışarı veri aktardığınızda, içeri aktarma adres tablosunu Git çözümlenmedi. Önce **__declspec(dllimport)**, bu verilere erişme DLL'den dışarı aktardığınızda yöneltme için fazladan bir düzey yapmayı unutmayın gerekiyordu anlamına gelir:  
-  
-```  
-// project.h  
-#ifdef _DLL   // If accessing the data from inside the DLL  
-   ULONG ulDataInDll;  
-  
-#else         // If accessing the data from outside the DLL  
-   ULONG *ulDataInDll;  
-#endif  
-```  
-  
- Ardından verileri dışarı aktarır. DEF dosyası:  
-  
-```  
-// project.def  
-LIBRARY project  
-EXPORTS  
-   ulDataInDll   CONSTANT  
-```  
-  
- ve dışında DLL'ine erişebilir:  
-  
-```  
-if (*ulDataInDll == 0L)   
-{  
-   // Do stuff here  
-}  
-```  
-  
- Verileri olarak işaretlediğinizde **__declspec(dllimport)**, derleyici otomatik olarak yöneltme kod sizin için oluşturur. Artık, yukarıdaki adımları hakkında endişelenmeniz gerekmez. Daha önce belirtildiği gibi kullanmayın **__declspec(dllimport)** DLL oluştururken verileri bildirimi. DLL işlevlerinde veri nesnesine erişmek için içeri aktarma adres tablosunu kullanmayın; Bu nedenle, yöneltme mevcut ek düzeyini olmayacaktır.  
-  
- Verileri otomatik olarak DLL'den dışarı aktarmak için bu bildirimi kullanın:  
-  
-```  
-__declspec(dllexport) ULONG ulDataInDLL;  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)
+
+Kullanarak verileri, söz konusu olduğunda **__declspec(dllimport)** katmanındaki yöneltme kaldıran bir kolaylık öğesidir. DLL'den verileri içeri aktardığınızda, içeri aktarma adres tablosu Git çözümlenmedi. Önce **__declspec(dllimport)**, bu verilere erişme DLL'den dışarı aktardığınızda, ek bir yöneltme düzeyi yapmayı unutmamanız gerekiyordu geliyordu:
+
+```
+// project.h
+#ifdef _DLL   // If accessing the data from inside the DLL
+   ULONG ulDataInDll;
+
+#else         // If accessing the data from outside the DLL
+   ULONG *ulDataInDll;
+#endif
+```
+
+Ardından verileri aktarın. DEF dosyası:
+
+```
+// project.def
+LIBRARY project
+EXPORTS
+   ulDataInDll   CONSTANT
+```
+
+ve DLL dışında erişebilirsiniz:
+
+```
+if (*ulDataInDll == 0L)
+{
+   // Do stuff here
+}
+```
+
+Verileri olarak işaretlediğinizde **__declspec(dllimport)**, derleyici otomatik olarak yöneltme kod sizin için oluşturur. Artık, yukarıdaki adımları hakkında endişelenmeniz gerekmez. Daha önce belirtildiği gibi kullanmayın **__declspec(dllimport)** DLL'yi oluştururken veri bildiriminde. DLL içindeki işlevleri içeri aktarma adres tablosunda veri nesnesine erişmek için kullanmayın; Bu nedenle, ek düzeyi yöneltme mevcut olmaz.
+
+Verileri otomatik olarak DLL'den dışarı aktarmak için bu bildirimi kullanın:
+
+```
+__declspec(dllexport) ULONG ulDataInDLL;
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bir Uygulamaya Aktarma](../build/importing-into-an-application.md)

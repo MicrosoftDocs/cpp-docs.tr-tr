@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a139efed1fadd8f7b821363b7cb9cdbf97c9a29
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: d9beadf4f532d24ca1f4023ad95dd8583d653c11
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408646"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707778"
 ---
 # <a name="comma-operator-"></a>Virgül İşleci: ,
 Bir deyim beklenirken iki deyimin gruplandırılmasını sağlar.  
@@ -37,11 +37,7 @@ expression , expression
   
  Virgüller, işlev bağımsız değişken listeleri gibi bazı bağlamlarda ayırıcılar olarak kullanılabilir. Ayırıcı olarak virgül kullanımını işleç olarak kullanımıyla karıştırmayın; iki kullanım birbirinden tamamen farklıdır.  
   
- Şu ifadeyi göz önünde bulundurun  
-  
- *E1* , *e2*  
-  
- Tür ve ifade değeri türü ve değeri olan *e2*; değerlendirme sonucu *e1* atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.  
+ `e1, e2` ifadesini göz önünde bulundurun. Tür ve ifade değeri türü ve değeri olan *e2*; değerlendirme sonucu *e1* atılır. Sağ işlenen l değeriyse, sonuç bir l değeri olur.  
   
  Virgülün normalde bir ayırıcı olarak kullanıldığı yerlerde (örneğin, işlevlerin veya toplama başlatıcılarının gerçek bağımsız değişkenlerinde), virgül işleci ve işlenenleri parantez içine alınmalıdır. Örneğin:  
   

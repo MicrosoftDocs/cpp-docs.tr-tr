@@ -14,39 +14,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40aed3969ae0707b07f0912d7247b49886d0319d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 13ca43386c9ef46f526538781a91fd1a81ade537
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373988"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710586"
 ---
 # <a name="using-function-name-without--produces-no-code"></a>() Olmadan İşlev Adının Kullanılması Kod Üretmez
-Programınıza bildirilen bir işlev adı parantez olmadan kullanıldığında, derleyici kod üretmez. Bu işlev adresi derleyici hesaplar çünkü olsun veya olmasın işlev parametreleri alır bağımsız olarak gerçekleşir; İşlev çağırma işleci (")" mevcut olmadığından, ancak hiçbir çağrı yapılır. Bu sonuç aşağıdakine benzer:  
-  
-```  
-// compile with /Wall to generate a warning  
-int a;  
-a;      // no code generated here either  
-```  
-  
- Visual C++'da, hatta uyarı düzeyini 4 kullanarak tanılama çıktı oluşturur. Hiçbir uyarı görüntülenir; kod oluşturulur.  
-  
- Aşağıdaki örnek kod (bir uyarıyla) derler ve bağlantıları doğru hatasız ancak reference için kod üretmez `funcn( )`. Bu doğru çalışması işlev çağırma işleci (")" ekleyin.  
-  
-```  
-#include <stdio.h>  
-void funcn();  
-  
-int main() {  
-   funcn;      /* missing function call operator;   
-                  call will fail.  Use funcn() */  
-   }  
-  
-void funcn() {  
-   printf("\nHello World\n");  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)
+
+Programınızda bildirilen bir işlev adı parantez olmadan kullanıldığında, derleyici kod üretmez. Bu, derleyici bir işlevi adresi hesapladığından olup olmadığını işlevi parametre almayan bağımsız olarak gerçekleşir; Bununla birlikte, işlev çağrısı işleci (")" mevcut olmadığı için hiçbir çağrı yapılır. Bu sonuç aşağıdakine benzer olacaktır:
+
+```
+// compile with /Wall to generate a warning
+int a;
+a;      // no code generated here either
+```
+
+Visual C++'da, hatta uyarı düzeyi 4 kullanarak tanılama hiçbir çıktı oluşturur. Herhangi bir uyarı verilir; kod oluşturulur.
+
+Aşağıdaki örnek kodu (bir uyarı ile) derler ve bağlantıları doğru bir şekilde hatasız ancak reference için kod üretmez `funcn( )`. Bunun düzgün çalışması için işlev çağrısı işleci (")" ekleyin.
+
+```
+#include <stdio.h>
+void funcn();
+
+int main() {
+   funcn;      /* missing function call operator;
+                  call will fail.  Use funcn() */
+   }
+
+void funcn() {
+   printf("\nHello World\n");
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kodunuzu İyileştirme](../../build/reference/optimizing-your-code.md)

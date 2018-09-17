@@ -56,12 +56,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9dc88b6b4488115390f4e6be57fbba2caadcc01
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 02806f26f623b2f4ad7f19cd67216018da984e42
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853640"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713706"
 ---
 # <a name="cmfcpopupmenubar-class"></a>CMFCPopupMenuBar sınıfı
 Bir menü çubuğu açılır menüde gömülü.  
@@ -140,8 +140,8 @@ virtual void AdjustSizeImmediate(BOOL bRecalcLayout);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bRecalcLayout*  
- Otomatik olarak açılan menü çubuğu bölmesinin düzenini yeniden hesapla için TRUE; Aksi takdirde FALSE.  
+*bRecalcLayout*<br/>
+[in] Otomatik olarak açılan menü çubuğu bölmesinin düzenini yeniden hesapla için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -153,8 +153,8 @@ BOOL BuildOrigItems(UINT uiMenuResID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiMenuResID*  
- Yüklemek için menü kaynağı menü Kimliğini belirtir.  
+*uiMenuResID*<br/>
+[in] Yüklemek için menü kaynağı menü Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE ya da aksi takdirde FALSE döndürür.  
@@ -190,8 +190,8 @@ CMFCToolBar* FindDestintationToolBar(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Ekranda bir nokta.  
+*Noktası*<br/>
+[in] Ekranda bir nokta.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsa bir tanıtıcı araç çubuğuna burada noktası olduğunda, döndürür veya yoksa NULL.  
@@ -257,11 +257,11 @@ virtual BOOL ImportFromMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
- Açılan menü düğmeleri alınacağı menüsü.  
+*hMenu*<br/>
+[in] Açılan menü düğmeleri alınacağı menüsü.  
   
- [in] *bShowAllCommands*  
- İçeri aktarılan veya yanlış nadiren kullanılan olanları gizlenebilir menüsünde TRUE tüm komutları olacak.  
+*bShowAllCommands*<br/>
+[in] İçeri aktarılan veya yanlış nadiren kullanılan olanları gizlenebilir menüsünde TRUE tüm komutları olacak.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Menü veya FALSE ise düğmeleri başarıyla alınamadı, TRUE döndürür.  
@@ -325,8 +325,8 @@ BOOL LoadFromHash(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
- Arşivlenen menüsüne yüklemek için bir tanıtıcı.  
+*hMenu*<br/>
+[in] Arşivlenen menüsüne yüklemek için bir tanıtıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Menü başarıyla yüklendi ya da aksi takdirde FALSE ise true değeri döndürür.  
@@ -364,11 +364,11 @@ virtual void SetButtonStyle(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Ayarlanacak stilini olan araç çubuğu düğmesini sıfır tabanlı dizini.  
+*nIndex*<br/>
+[in] Ayarlanacak stilini olan araç çubuğu düğmesini sıfır tabanlı dizini.  
   
- [in] *nStyle*  
- Düğmenin stili. Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) kullanılabilir araç çubuğu düğmesi stilleri listesi.  
+*nStyle*<br/>
+[in] Düğmenin stili. Bkz: [ToolBar denetim stilleri](../../mfc/reference/toolbar-control-styles.md) kullanılabilir araç çubuğu düğmesi stilleri listesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -380,8 +380,8 @@ void SetOffset(int iOffset);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iOffset*  
- Açılan menü çubuğu uzaklığı, satır sayısı.  
+*iOffset*<br/>
+[in] Açılan menü çubuğu uzaklığı, satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -395,11 +395,11 @@ void StartPopupMenuTimer(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMenuButton*  
- Menü düğmesine gecikme Zamanlayıcı ayarlanacak işaretçisi.  
+*pMenuButton*<br/>
+[in] Menü düğmesine gecikme Zamanlayıcı ayarlanacak işaretçisi.  
   
- [in] *nDelayFactor*  
- Bir gecikme faktörü, en az bir standart menü gecikme süresini (genellikle yarım saniye arasında arama ve beş saniye) tarafından çarpmak için eşittir.  
+*nDelayFactor*<br/>
+[in] Bir gecikme faktörü, en az bir standart menü gecikme süresini (genellikle yarım saniye arasında arama ve beş saniye) tarafından çarpmak için eşittir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

@@ -17,39 +17,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0a5ecfcc336e198de0adcc2393f740072d70cae
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7a82611c453a96e9247e414d6adb777c07320482
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376760"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703995"
 ---
 # <a name="functionpadmin-create-hotpatchable-image"></a>/FUNCTIONPADMIN (Düzeltme Eki Eklenebilen Görüntü Oluşturma)
 
-Görüntü için anında hazırlar.
+Görüntüyü düzeltme eki eklemek üzere hazırlar.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **/ FUNCTIONPADMIN**[**:**_alanı_]  
+> **/ FUNCTIONPADMIN**[**:**_alanı_]
 
 ### <a name="arguments"></a>Arguments
 
-*Alanı*<br/>
-Her işlev bayt başlangıcını eklemek için doldurma miktarı. X86 üzerinde bu 5 baytını doldurma Varsayılanları ve x64 üzerinde bu 6 bayt varsayılan olarak. Diğer hedeflerde bir değer sağlanmalıdır.
+*alanı*<br/>
+Bayt cinsinden her işlevin başlangıcına eklemek için doldurma miktarı. X86 üzerinde bu 5 bayt doldurma Varsayılanları ve x64 üzerinde bu 6 bayt için varsayılan olarak. Diğer hedefler üzerinde bir değer belirtilmelidir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Düzeltme eki eklenebilen görüntü üretmek bağlayıcı için sırayla .obj dosyaları ile derlenmiştir gerekir [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](../../build/reference/hotpatch-create-hotpatchable-image.md).
+Bir hotpatchable görüntü üretmek bağlayıcı için sırada .obj dosyaları ile derlenmiş olmalıdır [/hotpatch (düzeltme eki eklenebilen görüntü oluşturma)](../../build/reference/hotpatch-create-hotpatchable-image.md).
 
-Derleme ve cl.exe, tek bir çağrı görüntüyle bağlantı **/hotpatch** gelir **/functionpadmin**.
+Derleme ve görüntü cl.exe, tek bir çağrı ile bağlantı **/hotpatch** gelir **/functionpadmin**.
 
 ### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **bağlayıcı** > **komut satırı** özellik sayfası.
 
-1. Girin **/FUNCTIONPADMIN** seçeneğini **ek seçenekler**. Seçin **Tamam** yaptığınız değişiklikleri kaydetmek için.
+1. Girin **/FUNCTIONPADMIN** seçeneğini **ek seçenekler**. Seçin **Tamam** yaptığınız değişiklikleri kaydedin.
 
 ### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
 

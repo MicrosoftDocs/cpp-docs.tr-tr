@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: f9b5bc8568c3655d8c038d70d78f3887b2c3becc
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 775fbe39edc9478b1fce3afb39ee2bf1f6d5ed36
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42607531"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714317"
 ---
 # <a name="interface-class--c-component-extensions"></a>arabirim sınıfı (C++ Bileşen Uzantıları)
 
@@ -50,8 +50,8 @@ Arabirimin adı.
 *inherit_access*  
 Erişilebilirliğini *base_interface*.  Yalnızca izin verilen erişilebilirlik için temel arabirim **genel** (varsayılan).
 
-*base_interface* (isteğe bağlı)  
-Arabirim için temel bir arabirim *adı*.
+*base_interface*  
+(İsteğe bağlı) Arabirim için temel bir arabirim *adı*.
 
 ### <a name="remarks"></a>Açıklamalar
 

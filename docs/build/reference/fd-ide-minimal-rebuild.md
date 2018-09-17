@@ -18,19 +18,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18e31955b131e4ca22d23013565e53f83493275d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 74fb35ec25bed808e2165498c00b65723aba5bac
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373406"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702448"
 ---
 # <a name="fd-ide-minimal-rebuild"></a>/FD (IDE En Az Yeniden Derleme)
-**/FD** kullanıcılara gösterilmez [komut satırı](../../ide/command-line-property-pages.md) C++ projenin özellik sayfasındaki **özellik sayfaları** iletişim kutusunda, varsa ve yalnızca [/GM derlemeyi (etkinleştirmek en az yeniden derleme)](../../build/reference/gm-enable-minimal-rebuild.md) de seçilmedi. **/FD** geliştirme ortamından dışında herhangi bir etkisi olmaz. **/FD** çıktısında gösterilmeyen **cl /?**.  
-  
- Değil etkinleştirirseniz, **/GM derlemeyi** geliştirme ortamında **/FD** kullanılır. **/FD** .idb dosya yeterli bağımlılık bilgi sahip olmasını sağlar. **/FD** yalnızca geliştirme ortamı tarafından kullanılır ve bu komut satırı veya bir yapı komut dosyasından kullanılmamalıdır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+**/FD** kullanıcılara gösterilmez [komut satırı](../../ide/command-line-property-pages.md) C++ proje özellik sayfası **özellik sayfaları** iletişim kutusunda, varsa ve yalnızca [/GM derlemeyi (etkinleştirme en az yeniden derlemeyi)](../../build/reference/gm-enable-minimal-rebuild.md) ayrıca seçilmedi. **/FD** geliştirme ortamından dışında hiçbir etkisi olmaz. **/FD** çıktısında gösterilmeyen **cl /?**.
+
+Değil etkinleştirirseniz **/GM derlemeyi** geliştirme ortamında **/FD** kullanılır. **/FD** .idb dosya bağımlılık yeterli bilgiye sahip olmasını sağlar. **/FD** yalnızca geliştirme ortamı tarafından kullanılır ve bu komut satırında veya derleme betiğinin kullanılmamalıdır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

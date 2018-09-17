@@ -17,53 +17,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 171acf9689c01649b86c2383d17136c926e25c57
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0ad52e8efde017ce7be6132594552e13584b38dc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374180"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705334"
 ---
 # <a name="explicitly-unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Açıkça Kaldırma
-[/Delay](../../build/reference/delay-delay-load-import-settings.md): unload bağlayıcı seçeneği gecikme yüklü olduğu bir DLL dosyası olanak tanır. Varsayılan olarak, kodunuzu DLL bellekten kaldırıldığında, (/ DELAY: Unload kullanarak ve **__FUnloadDelayLoadedDLL2**), alma adresi tablosunda (IAT) Gecikmeli yüklenen içeri aktarmalar kalır. Ancak, / DELAY: Unload bağlayıcı komut satırında kullanırsanız, yardımcı işlevini IAT özgün formuna sıfırlama DLL açık kaldırılması destekler; Şimdi geçersiz işaretçileri üzerine yazılır. Bir alandır IAT [ImgDelayDescr](../../build/reference/calling-conventions-parameters-and-return-type.md) içeren bir kopyasını özgün IAT adresini (varsa).  
-  
-## <a name="example"></a>Örnek  
-  
-### <a name="code"></a>Kod  
-  
-```  
-// link with /link /DELAYLOAD:MyDLL.dll /DELAY:UNLOAD  
-#include <windows.h>  
-#include <delayimp.h>  
-#include "MyDll.h"  
-#include <stdio.h>  
-  
-#pragma comment(lib, "delayimp")  
-#pragma comment(lib, "MyDll")  
-int main()  
-{  
-    BOOL TestReturn;  
-    // MyDLL.DLL will load at this point  
-    fnMyDll();  
-  
-    //MyDLL.dll will unload at this point  
-    TestReturn = __FUnloadDelayLoadedDLL2("MyDll.dll");  
-  
-    if (TestReturn)  
-        printf_s("\nDLL was unloaded");  
-    else  
-        printf_s("\nDLL was not unloaded");  
-}  
-```  
-  
-### <a name="comments"></a>Açıklamalar  
- Gecikmeli yüklenen DLL'i kaldırma üzerinde önemli notlar:  
-  
--   Uygulaması bulabilirsiniz **__FUnloadDelayLoadedDLL2** dosyasında işlevi \VC7\INCLUDE\DELAYHLP. CPP.  
-  
--   Name parametresi **__FUnloadDelayLoadedDLL2** işlevi tam olarak eşleşmelidir (harf dahil olmak üzere) ne içeri aktarma kitaplığı (yani dize da görüntü alma tablosunda) içerir. İle içeri aktarma kitaplığını içindekileri görüntüleyebilirsiniz [/DEPENDENTS DUMPBIN](../../build/reference/dependents.md). Büyük küçük harf duyarlı dize eşleştirme isterseniz güncelleştirebilirsiniz **__FUnloadDelayLoadedDLL2** CRT dize işlevleri veya bir Windows API çağrısı birini kullanmak için.  
-  
- Bkz: [Delay-Loaded DLL'i kaldırma](../../build/reference/unloading-a-delay-loaded-dll.md) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+
+[/Delay](../../build/reference/delay-delay-load-import-settings.md): unload bağlayıcı seçeneği Gecikmeli yüklendi olan bir DLL dosyası olanak tanır. Varsayılan olarak, kodunuzun DLL kaldırdığında (/ DELAY: Unload kullanarak ve **__FUnloadDelayLoadedDLL2**), içeri aktarma adres tablosunda (IAT) Gecikmeli yüklenen içeri aktarmalar kalır. Bununla birlikte, / DELAY: Unload bağlayıcı komut satırına kullanırsanız, yardımcı işlevini IAT için özgün biçimlerinde sıfırlama DLL açık kaldırma desteği: artık geçersiz işaretçileri üzerine yazılır. Bir alandır IAT [ImgDelayDescr](../../build/reference/calling-conventions-parameters-and-return-type.md) içeren özgün IAT bir kopyasını adresini (varsa).
+
+## <a name="example"></a>Örnek
+
+### <a name="code"></a>Kod
+
+```
+// link with /link /DELAYLOAD:MyDLL.dll /DELAY:UNLOAD
+#include <windows.h>
+#include <delayimp.h>
+#include "MyDll.h"
+#include <stdio.h>
+
+#pragma comment(lib, "delayimp")
+#pragma comment(lib, "MyDll")
+int main()
+{
+    BOOL TestReturn;
+    // MyDLL.DLL will load at this point
+    fnMyDll();
+
+    //MyDLL.dll will unload at this point
+    TestReturn = __FUnloadDelayLoadedDLL2("MyDll.dll");
+
+    if (TestReturn)
+        printf_s("\nDLL was unloaded");
+    else
+        printf_s("\nDLL was not unloaded");
+}
+```
+
+### <a name="comments"></a>Açıklamalar
+
+Bir Gecikmeli yüklenen DLL'i kaldırma üzerinde önemli notlar:
+
+- Uygulamasını bulabilirsiniz **__FUnloadDelayLoadedDLL2** işlevi dosyasındaki \VC7\INCLUDE\DELAYHLP. CPP.
+
+- Name parametresi **__FUnloadDelayLoadedDLL2** işlevi tam olarak eşleşmesi gerekir (çalışması gibi) ne içeri aktarma kitaplığına (yani dize da görüntü içeri aktarma tablosunda) içerir. İçeri aktarma kitaplığı ile içeriğini görüntüleyebilirsiniz [DUMPBIN/DEPENDENTS](../../build/reference/dependents.md). Büyük küçük harf duyarlı dize eşleştirme isteniyorsa güncelleştirebilirsiniz **__FUnloadDelayLoadedDLL2** CRT dize işlevleri veya bir Windows API çağrısı birini kullanmak için.
+
+Bkz: [Delay-Loaded DLL'i kaldırma](../../build/reference/unloading-a-delay-loaded-dll.md) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

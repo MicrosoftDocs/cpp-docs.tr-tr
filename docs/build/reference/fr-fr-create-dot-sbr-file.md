@@ -23,51 +23,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6f61a3360c820a2d47d54f7c174af484079d154
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a5691a87f7350c7816e8ddb58d5591e16cc18189
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374771"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709617"
 ---
 # <a name="fr-fr-create-sbr-file"></a>/FR, /Fr (.Sbr Dosyası Oluştur)
-.SBR dosyaları oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/FR[pathname[\filename]]  
-/Fr[pathname[\filename]]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Derleme işlemi sırasında Microsoft Gözat bilgi dosyası bakım yardımcı programı (BSCMAKE) oluşturmak için bu dosyaları kullanan bir. Gözatma bilgileri görüntülemek için kullanılan BSC dosyası.  
-  
- **/FR** tam simgesel bilgilerle .sbr dosyası oluşturur.  
-  
- **/FR** yerel değişkenlerde bilgisi olmadan .sbr dosyası oluşturur.  
-  
- Belirtmezseniz, `filename`, temel kaynak dosya adıyla aynı .sbr dosyası alır.  
-  
- **/FR** kullanım dışıdır; kullanın **/FR** yerine. Daha fazla bilgi için bkz: kullanım dışı ve kaldırılmış derleyici seçeneklerinde [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
-  
+
+.SBR dosyaları oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/FR[pathname[\filename]]
+/Fr[pathname[\filename]]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Derleme işlemi sırasında Microsoft Gözat bilgi dosya Bakımı yardımcı programı (BSCMAKE) oluşturmak için bu dosyaları kullanan bir. BSC dosyası, gözatma bilgilerini görüntülemek için kullanılır.
+
+**/FR** tam sembolik bilgilerle .sbr dosyası oluşturur.
+
+**/FR** yerel değişkenlerde bilgileri olmadan .sbr dosyası oluşturur.
+
+Siz belirtmezseniz `filename`, kaynak dosyası olarak aynı temel adlı .sbr dosyası alır.
+
+**/FR** kullanım dışıdır; kullanın **/FR** yerine. Daha fazla bilgi için bkz: kullanım dışı ve kaldırıldı derleyici seçeneklerinde [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+
 > [!NOTE]
->  .Sbr uzantısını değiştirmeyin. BSCMAKE Ara dosyaların uzantıya sahip olmasını gerektirir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Gezinti Bölmesi'nde seçin **C/C++**, **Gözat bilgi** özellik sayfası.  
-  
-3.  Değiştirme **bilgi dosyaya Gözat** veya **Gözat bilgi etkinleştirmek** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+>  .Sbr uzantısı değiştirmeyin. BSCMAKE Ara dosyaları uzantıya sahip olmasını gerektirir.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Gezinti bölmesinde **C/C++**, **göz atma bilgisi** özellik sayfası.
+
+1. Değiştirme **Gözat bilgi dosyası** veya **göz atma bilgisi etkinleştirme** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformation%2A> ve <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.BrowseInformationFile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

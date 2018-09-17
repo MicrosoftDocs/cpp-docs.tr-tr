@@ -22,12 +22,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: fa004d449190003f6438744c09c1c8023a0cbda3
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: dbfcedd2bc17e21b94de46c63edd95bf58f576a7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314436"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714460"
 ---
 # <a name="arrays-c-component-extensions"></a>Dizeler (C++ Bileşen Uzantıları)
 
@@ -62,12 +62,14 @@ Sözdiziminin ilk örnekte **yeni başvuru** bir dizi ayırmak için toplam anah
     {initialization-list [,...]}
 ```
 
-*niteleyiciler* [isteğe bağlı] bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
+*niteleyicileri*<br/>
+(İsteğe bağlı) Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
 
 *dizi türü*  
 Dizi değişkeni türü. Geçerli türler, Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları ve yerel işaretçileri olan (`type*`).
 
-*derece* [isteğe bağlı] dizi boyutları sayısı. 1 olmalıdır.
+*boyut sayısı*<br/>
+(İsteğe bağlı) Dizinin boyut sayısı. 1 olmalıdır.
 
 *tanımlayıcı*  
 Dizi değişkeni adı.
@@ -75,7 +77,8 @@ Dizi değişkeni adı.
 *başlatma türü*  
 Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma türü* aynı türdedir. Türleri dönüştürme ise farklı olabilir ancak *başlatma türü* için *dizi türü*— Örneğin, varsa *başlatma türü* türetilmiş*dizi türü*.
 
-*başlatma listesi* [isteğe bağlı] kuşak değerlerin virgülle ayrılmış bir listesini köşeli ayraçlar, başlatma dizinin öğeleri. Örneğin, varsa *derece boyutlarının listesi* olan `(3)`, tek boyutlu bir dizi 3 öğe bildirir *başlatma listesi* olabilir `{1,2,3}`.
+*başlatma listesi*<br/>
+(İsteğe bağlı) Dizi öğelerine ön değer atamak süslü ayraçlar değerleri virgülle ayrılmış listesi. Örneğin, varsa *derece boyutlarının listesi* olan `(3)`, tek boyutlu bir dizi 3 öğe bildirir *başlatma listesi* olabilir `{1,2,3}`.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -115,12 +118,14 @@ Sözdiziminin ilk örnekte **gcnew** anahtar sözcüğü, bir dizi ayırmak içi
     {initialization-list [,...]}
 ```
 
-*niteleyiciler* [isteğe bağlı] bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
+*niteleyicileri*<br/>
+(İsteğe bağlı) Bir veya daha fazla bu depolama sınıfı tanımlayıcıları: [değişebilir](../cpp/mutable-data-members-cpp.md), [geçici](../cpp/volatile-cpp.md), [const](../cpp/const-cpp.md), [extern](../cpp/using-extern-to-specify-linkage.md), [statik](../cpp/static-members-cpp.md).
 
 *dizi türü*  
 Dizi değişkeni türü. Geçerli türler Windows çalışma zamanı sınıflar ve temel türler, başvuru sınıfları ve yapıları, değer sınıfları ve yapıları, yerel işaretçiler (`type*`) ve yerel POD (düz eski veriler) türleri.
 
-*derece* [isteğe bağlı] dizi boyutları sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.
+*boyut sayısı*<br/>
+(İsteğe bağlı) Dizinin boyut sayısı. Varsayılan değer 1'dir; en fazla 32'dir. Dizinin her boyutunun kendisi bir dizidir.
 
 *tanımlayıcı*  
 Dizi değişkeni adı.
@@ -131,7 +136,8 @@ Dizi başlatma değerlerin türü. Genellikle, *dizi türü* ve *başlatma tür�
 *derece boyutlarının listesi*  
 Dizideki her boyutun boyutu virgülle ayrılmış listesi. Alternatif olarak, *başlatma listesi* parametresi belirtildiğinde, derleyici her boyutu çıkarabilir ve *derece boyutlarının listesi* atlanabilir.
 
-*başlatma listesi* [isteğe bağlı] kuşak değerlerin virgülle ayrılmış bir listesini köşeli ayraçlar, başlatma dizinin öğeleri. Veya virgülle ayrılmış bir listesini iç içe geçmiş *başlatma listesi* başlatmak çok boyutlu bir dizideki öğeler öğeleri.
+*başlatma listesi*<br/>
+(İsteğe bağlı) Dizi öğelerine ön değer atamak süslü ayraçlar değerleri virgülle ayrılmış listesi. Veya virgülle ayrılmış bir listesini iç içe geçmiş *başlatma listesi* başlatmak çok boyutlu bir dizideki öğeler öğeleri.
 
 Örneğin, varsa *derece boyutlarının listesi* olan `(3)`, tek boyutlu bir dizi 3 öğe bildirir *başlatma listesi* olabilir `{1,2,3}`. Varsa *derece boyutlarının listesi* olan `(3,2,4)`, ilk boyutu, 2 öğe ikinci ve üçüncü 4 öğelerinde 3 öğelerin üç boyutlu bir diziyi bildirir *başlatma listesi* olabilir `{{1,2,3},{0,0},{-5,10,-21,99}}`.)
 

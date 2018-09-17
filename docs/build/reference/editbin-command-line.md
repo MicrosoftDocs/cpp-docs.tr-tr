@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23fb39a614854912a8de52ac606009f3de19b497
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a8868b455c135d12d2fffaf0ae5ab5632c51a324
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371183"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700600"
 ---
 # <a name="editbin-command-line"></a>EDITBIN Komut Satırı
-EDITBIN çalıştırmak için aşağıdaki sözdizimini kullanın:  
-  
-```  
-EDITBIN [options] files...  
-```  
-  
- Bir veya daha fazla nesneleri veya değiştirilecek görüntüler ve dosyaları değiştirmek için bir veya daha fazla seçeneklerini belirtin.  
-  
- Komut yazdığınızda `editbin` herhangi diğer komut satırı girişi olmadan, EDITBIN kendi seçenekleri özetler kullanım deyimini görüntüler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C/C++ derleme araçları](../../build/reference/c-cpp-build-tools.md)   
- [EDITBIN Başvurusu](../../build/reference/editbin-reference.md)
+
+EDITBIN çalıştırmak için aşağıdaki sözdizimini kullanın:
+
+```
+EDITBIN [options] files...
+```
+
+Nesneler veya değiştirilecek görüntüleri için bir veya daha fazla dosya ve dosyaları değiştirmek için bir veya daha fazla seçeneği belirtin.
+
+Komut yazdığınızda `editbin` herhangi diğer komut satırı girişi olmadan, EDITBIN seçenekleri özetleyen bir kullanım deyimi görüntüler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)<br/>
+[EDITBIN Başvurusu](../../build/reference/editbin-reference.md)

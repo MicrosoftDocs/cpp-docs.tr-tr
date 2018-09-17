@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a51544f1e367e1db0b5ae72948af68fbedfa7504
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: cc842aa40b732543c496bb209b4b163635a19bb1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209734"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713864"
 ---
 # <a name="multiplicative-operators-and-the-modulus-operator"></a>Çarpan İşleçleri ve Modulus İşleci
 ## <a name="syntax"></a>Sözdizimi  
@@ -72,11 +72,13 @@ f / 0.0
 > [!NOTE]
 >  Çarpma işleçleri tarafından gerçekleştirilen dönüştürmeler taşma veya yetersiz kalma koşulları sağlamadığından, çarpma işleminin sonucu dönüştürme sonrası işlenenlerin türünde gösterilmezse bilgiler kaybolabilir.  
   
-## <a name="microsoft-specific"></a>Microsoft'a Özgü  
- Microsoft C++'da, bir mod ifadesinin sonucu her zaman birinci işlenenin işaretiyle aynıdır.  
-  
-**END Microsoft özgü**  
- Hesaplanan iki tamsayı bölümünü kesin değilse ve yalnızca tek bir işlenen negatif ise, sonuç bölme işleminin vereceği tam değerden daha küçük en büyük tamsayı (büyüklükte, işaret dikkate alınmadığında) olur. Örneğin, hesaplanan değeri -11 / 3-3.666666666. Bu integral bölümünün sonucu -3 ' dir.  
+**Microsoft'a özgü**
+
+Microsoft C++'da, bir mod ifadesinin sonucu her zaman birinci işlenenin işaretiyle aynıdır.
+
+**END Microsoft özgü**
+
+Hesaplanan iki tamsayı bölümünü kesin değilse ve yalnızca tek bir işlenen negatif ise, sonuç bölme işleminin vereceği tam değerden daha küçük en büyük tamsayı (büyüklükte, işaret dikkate alınmadığında) olur. Örneğin, hesaplanan değeri -11 / 3-3.666666666. Bu integral bölümünün sonucu -3 ' dir.  
   
  Çarpma işleçleri arasındaki ilişki Özdeşlik ile verilir (*e1* / *e2*) \* *e2*  +  *e1* % *e2* == *e1*.  
   

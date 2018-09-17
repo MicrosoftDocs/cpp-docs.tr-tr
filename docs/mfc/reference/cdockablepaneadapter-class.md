@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 71d89020869db10b45688dbaae71f38711d2667c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 68534770419bd8d688c282b6d837c55983e33c27
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43676369"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712081"
 ---
 # <a name="cdockablepaneadapter-class"></a>CDockablePaneAdapter sınıfı
 İçin yerleştirme desteği sağlar `CWnd`-bölmeler.  
@@ -90,14 +90,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Profil adı.  
+*lpszProfileName*<br/>
+[in] Profil adı.  
   
- [in] *nIndex*  
- Profili dizini.  
+*nIndex*<br/>
+[in] Profili dizini.  
   
- [in] *uiID*  
- Bölmesinde kimliği.  
+*uiID*<br/>
+[in] Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -114,14 +114,14 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Profil adı.  
+*lpszProfileName*<br/>
+[in] Profil adı.  
   
- [in] *nIndex*  
- Profili dizini (varsayılan pencere denetim kimliği olarak).  
+*nIndex*<br/>
+[in] Profili dizini (varsayılan pencere denetim kimliği olarak).  
   
- [in] *uiID*  
- Bölmesinde kimliği.  
+*uiID*<br/>
+[in] Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -135,8 +135,8 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Sarılacak bölmesinde bağdaştırıcısı penceresine bir işaretçi.  
+*pWnd*<br/>
+[in] Sarılacak bölmesinde bağdaştırıcısı penceresine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   

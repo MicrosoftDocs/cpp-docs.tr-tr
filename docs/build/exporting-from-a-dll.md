@@ -20,52 +20,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07efe3d73b3f78dfb30e85ffad6434e2907c36c4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e1beb36b76c54c585505f4d92b33a275e063318e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367959"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707986"
 ---
-# <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma  
-  
-Önemli bir farkla bir .exe dosyası için çok benzer bir düzeni DLL dosyası olan — bir dışarı aktarma tablosu bir DLL dosyası içerir. Dışarı aktarma tablosu diğer yürütülebilir DLL dışarı aktarmaları her işlevin adını içerir. Bu işlevler DLL öğesinin içine giriş noktalarıdır; yalnızca işlevleri dışarı aktarma tablosundaki diğer yürütülebilir tarafından erişilebilir. Herhangi bir işlev DLL DLL'e özeldir. Kullanarak DLL'den dışarı aktarma tablosu görüntülenebilir [DUMPBIN](../build/reference/dumpbin-reference.md) aracı/dışarı aktarmalar seçeneği ile.  
-  
- İki yöntemi kullanarak DLL'den işlevleri dışarı aktarabilirsiniz:  
-  
--   Modül tanımlama (.def) dosyası oluşturun ve DLL oluştururken .def dosyası kullanın. İstiyorsanız bu yaklaşımı kullanın [işlevleri yerine sıraya göre adı, DLL'den dışarı](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).  
-  
--   Anahtar sözcüğü kullanmak **__declspec(dllexport)** işlev tanımı'nda.  
-  
- Her iki yöntemle işlevlerini dışarı aktarılırken kullandığınızdan emin olun [__stdcall](../cpp/stdcall.md) çağırma.  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [.Def dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)  
-  
--   [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
-  
--   [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarmak](../build/exporting-and-importing-using-afx-ext-class.md)  
-  
--   [C dili yürütülebilir öğelerinde kullanmak için C++ işlevlerini dışarı aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)  
-  
--   [C veya C++ dili yürütülebilir öğelerinde kullanmak için C işlevlerini dışarı aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)  
-  
--   [DLL'den sıra yerine ada göre dışarı aktarma işlevleri](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)  
-  
--   [Hangi dışarı aktarma yöntemini kullanacağınızı belirleme](../build/determining-which-exporting-method-to-use.md)  
-  
--   [Hangi bağlama yöntemini kullanacağınızı belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)  
-  
--   [DLL başlatma](../build/run-time-library-behavior.md#initializing-a-dll)  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Bir uygulamaya aktarma](../build/importing-into-an-application.md)  
-  
--   [İçeri ve dışarı aktarma satır içi işlevler](../build/importing-and-exporting-inline-functions.md)  
-  
--   [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+# <a name="exporting-from-a-dll"></a>DLL'den Dışarı Aktarma
+
+Bir DLL dosyası önemli bir fark dışında bir .exe dosyası çok benzer bir düzeni vardır — bir dışarı aktarma tablosu bir DLL dosyası içerir. Dışarı aktarma tablosu diğer yürütülebilir dosyalar için DLL dışarı aktarmaları her işlevin adını içerir. Bu işlevler, DLL içine için giriş noktalarıdır; işlevleri dışarı aktarma tablosuna yalnızca diğer yürütülebilir dosyaları tarafından erişilebilir. DLL'ye DLL'deki diğer işlevleri özeldir. Kullanarak DLL'den dışarı aktarma tablosu görüntülenebilir [DUMPBIN ](../build/reference/dumpbin-reference.md) /EXPORTS seçeneğiyle aracı.
+
+İki yöntemi kullanarak DLL'den işlevleri dışarı aktarabilirsiniz:
+
+- Modül tanım (.def) dosyası oluşturun ve DLL'yi oluştururken .def dosyasını kullanın. İsterseniz, bu yaklaşımı kullanın [tarafından ad yerine sıraya işlevlerini kullanarak DLL'den dışa aktarma](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md).
+
+- Anahtar sözcüğünü kullanın **__declspec(dllexport)** işlevin tanımı.
+
+İki yöntemden biriyle işlevleri dışa aktarırken kullandığınızdan emin olun [__stdcall](../cpp/stdcall.md) çağırma kuralı.
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)
+
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+
+- [C dili çalıştırılabilirlerinde kullanmak için C++ işlevlerini dışa aktarma](../build/exporting-cpp-functions-for-use-in-c-language-executables.md)
+
+- [C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışa aktarma](../build/exporting-c-functions-for-use-in-c-or-cpp-language-executables.md)
+
+- [İşlevler tarafından ad yerine sıraya DLL'den dışarı aktarma](../build/exporting-functions-from-a-dll-by-ordinal-rather-than-by-name.md)
+
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+
+- [Hangi bağlama yönteminin kullanılacağını belirleme](../build/linking-an-executable-to-a-dll.md#determining-which-linking-method-to-use)
+
+- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Bir uygulamaya aktarma](../build/importing-into-an-application.md)
+
+- [İçeri ve dışarı aktarma satır içi işlevler](../build/importing-and-exporting-inline-functions.md)
+
+- [Karşılıklı içeri aktarmalar](../build/mutual-imports.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)

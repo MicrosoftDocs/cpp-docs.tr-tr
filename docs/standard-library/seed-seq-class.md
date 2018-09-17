@@ -24,16 +24,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e466d8a176d5c4c7fd1e2250373b42ee263a6d4
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 2c4e86ff5ad4e1ebdba728202904324d9dc9e66f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33856338"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711756"
 ---
 # <a name="seedseq-class"></a>seed_seq Sınıfı
 
-Rastgele sayı altyapısı için rastgele çekirdek sağlayabilir imzasız tamsayı değerleri vektörü depolar.
+Rastgele sayı altyapısı için rastgele bir tohum sağlayabilirsiniz işaretsiz tamsayı değerleri bir vektör depolar.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -68,34 +68,67 @@ public:
 
 ## <a name="types"></a>Türler
 
-`typedef unsigned int result_type;` Çekirdek dizisi öğelerin türü. Bir 32 bit işaretsiz tamsayıyı türü.
+```cpp
+typedef unsigned int result_type;
+```
+
+Çekirdek dizisinin öğelerinin türü. Bir 32-bit işaretsiz tamsayı türü.
 
 ## <a name="constructors"></a>Oluşturucular
 
-`seed_seq();` Varsayılan Oluşturucu, boş bir iç sıra olmasını başlatır.
+```cpp
+seed_seq();
+```
 
-`template<class T>` `seed_seq(initializer_list<T> initlist);` Kullanan `initlist` iç sırasını ayarlamak için.
-`T` tamsayı türde olması gerekir.
+Varsayılan Oluşturucu boş bir iç sıra olmasını başlatır.
 
-`template<class InputIterator>` `seed_seq(InputIterator begin, InputIterator end);` Sağlanan giriş yineleyici aralığında kullanan tüm öğeler iç dizisini başlatır.
-`iterator_traits<InputIterator>::value_type` tamsayı türde olması gerekir.
+```cpp
+template<class T>
+seed_seq(initializer_list<T> initlist);
+```
+
+Kullanan `initlist` iç sırasını ayarlamak için.
+`T` bir tamsayı türü olmalıdır.
+
+```cpp
+template<class InputIterator>
+seed_seq(InputIterator begin, InputIterator end);
+```
+
+Sağlanan giriş yineleyici aralıktaki tüm öğeleri kullanılarak iç dizisini başlatır.
+`iterator_traits<InputIterator>::value_type` bir tamsayı türü olmalıdır.
 
 ## <a name="members"></a>Üyeler
 
-### <a name="generating-functions"></a>İşlevler oluşturma
+### <a name="generating-functions"></a>İşlev oluşturma
 
-`template<class RandomAccessIterator> void generate(RandomAccessIterator begin,          RandomAccessIterator end);` Bir iç algoritma kullanarak sağlanan sıradaki doldurur. Bu algoritma, iç dizisiyle etkilenen `seed_seq` başlatıldı.
-Hiçbir şey yapmaz varsa `begin == end`.
+```cpp
+template<class RandomAccessIterator>
+void generate(RandomAccessIterator begin,
+          RandomAccessIterator end);
+```
+
+Bir iç algoritmaya kullanarak sağlanan dizisinin doldurur. Bu algoritma, iç dizisiyle etkilenen `seed_seq` başlatıldı.
+Hiçbir şey yapmaz, `begin == end`.
 
 ### <a name="property-functions"></a>Özellik İşlevleri
 
-`size_t size() const;` Öğelerin sayısını döndürür `seed_seq`.
+```cpp
+size_t size() const;
+```
 
-`template<class OutputIterator> void param(OutputIterator dest) const;` İç dizisi çıkış yineleyici kopyalar `dest`.
+İçindeki öğelerin sayısını döndürür `seed_seq`.
+
+```cpp
+template<class OutputIterator>
+void param(OutputIterator dest) const;
+```
+
+Çıkış yineleyici iç sıra kopyalar `dest`.
 
 ## <a name="example"></a>Örnek
 
-Aşağıdaki kod örneğinde üç oluşturucular kullanır ve oluşan bir çıktı üretir `seed_seq` örnekleri bir dizi atandığında. Kullanan bir örnek `seed_seq` rastgele sayı üreticisinin ile bkz [ \<rastgele >](../standard-library/random.md).
+Aşağıdaki kod örneği, üç oluşturucular sınayan ve oluşan bir çıktı üretir `seed_seq` örneklerini bir diziye atandığında. Kullanan bir örnek için `seed_seq` rastgele sayı üreticisinin ile bkz [ \<rastgele >](../standard-library/random.md).
 
 ```cpp
 #include <iostream>
@@ -164,7 +197,7 @@ Generating a sequence of 5 elements into an array:
 
 ## <a name="remarks"></a>Açıklamalar
 
-Bu sınıfın üye işlevleri özel durumlar oluşturmayın.
+Bu sınıfın üye işlevleri, özel durum oluşturması beklenmiyor.
 
 ## <a name="requirements"></a>Gereksinimler
 

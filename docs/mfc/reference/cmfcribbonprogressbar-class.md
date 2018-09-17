@@ -36,12 +36,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82c72a928c3f747251f4c02305cc61b83cfcedcb
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 286c95b775b95d44ad8fd9dc216b161aed717796
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465367"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711990"
 ---
 # <a name="cmfcribbonprogressbar-class"></a>CMFCRibbonProgressBar sınıfı
 Uzun bir işlemin ilerlemesini görsel olarak belirten bir denetim uygular.  
@@ -106,14 +106,14 @@ CMFCRibbonProgressBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Şerit ilerleme çubuğu komut Kimliğini belirtir.  
+*nID*<br/>
+[in] Şerit ilerleme çubuğu komut Kimliğini belirtir.  
   
- [in] *nWidth*  
- Şerit ilerleme çubuğunun piksel cinsinden genişliğini belirtir.  
+*nWidth*<br/>
+[in] Şerit ilerleme çubuğunun piksel cinsinden genişliğini belirtir.  
   
- [in] *nHeight*  
- Şerit ilerleme çubuğunun piksel cinsinden yüksekliğini belirtir.  
+*nHeight*<br/>
+[in] Şerit ilerleme çubuğunun piksel cinsinden yüksekliğini belirtir.  
   
 ##  <a name="getpos"></a>  CMFCRibbonProgressBar::GetPos  
  İlerleme çubuğu geçerli konumunu döndürür.  
@@ -197,8 +197,8 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- İlerleme çubuğu sonsuz modunda olduğunu belirtmek için TRUE; Aksi takdirde FALSE.  
+*bInternet*<br/>
+[in] İlerleme çubuğu sonsuz modunda olduğunu belirtmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İlerleme çubuğu sonsuz modundaysa, genellikle, kullanıcı bir işlem devam ediyor, ancak tamamlama süresi bilinmiyor söylüyor. Bu nedenle, ilerleme çubuğu için maksimum değer minimum değerden art arda doldurur.  
@@ -213,11 +213,11 @@ void SetPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPos*  
- İlerleme çubuğu için ayarlanmış konumunu belirtir.  
+*nPos*<br/>
+[in] İlerleme çubuğu için ayarlanmış konumunu belirtir.  
   
- [in] *bRedraw*  
- İlerleme çubuğu çizilmesi olup olmadığını belirtir.  
+*bRedraw*<br/>
+[in] İlerleme çubuğu çizilmesi olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ayarlanan aralığı tarafından belirtilen aralıkta olmalıdır [CMFCRibbonProgressBar::SetRange](#setrange) yöntemi.  
@@ -232,11 +232,11 @@ void SetRange(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nMin*  
- En küçük aralık değerini belirtir.  
+*nMin*<br/>
+[in] En küçük aralık değerini belirtir.  
   
- [in] *nMax*  
- En büyük aralık değerini belirtir.  
+*nMax*<br/>
+[in] En büyük aralık değerini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Minimum ve maksimum değerleri ayarlayarak ilerleme çubuğu aralığını tanımlamak için bu yöntemi kullanın.  

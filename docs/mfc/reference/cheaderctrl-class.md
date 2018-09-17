@@ -74,12 +74,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ebe4b604958220a846ee3a91b1a6251f6f461de9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 763849c2f13e88c11280ec7594385afd85552080
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758862"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712744"
 ---
 # <a name="cheaderctrl-class"></a>CHeaderCtrl sınıfı
 Windows ortak üstbilgi denetimi işlevlerini sağlar.  
@@ -490,8 +490,8 @@ BOOL GetItemDropDownRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iItem*|Stilini HDF_SPLITBUTTON olduğu başlık öğesinin sıfır tabanlı dizini. Daha fazla bilgi için `fmt` üyesi [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) yapısı.|  
-|[out] *lpRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı bir dikdörtgen bilgileri almak için.|  
+|*iItem*|[in] Stilini HDF_SPLITBUTTON olduğu başlık öğesinin sıfır tabanlı dizini. Daha fazla bilgi için `fmt` üyesi [HDITEM](/windows/desktop/api/commctrl/ns-commctrl-_hd_itema) yapısı.|  
+|*lpRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı sınırlayıcı bir dikdörtgen bilgileri almak için.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu işlev başarılı ise TRUE; Aksi takdirde FALSE.  
@@ -567,7 +567,7 @@ BOOL GetOverflowRect(LPRECT lpRect) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *lpRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgeni bilgileri alan yapısı.|  
+|*lpRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) sınırlayıcı dikdörtgeni bilgileri alan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu işlev başarılı ise TRUE; Aksi takdirde FALSE.  
@@ -598,7 +598,7 @@ int HitTest(LPHDHITTESTINFO* phdhti);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out içinde] *phdhti*|İşaretçi bir [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) test etmek için noktasını belirtir ve test sonuçlarını alan yapısı.|  
+|*phdhti*|[out içinde] İşaretçi bir [HDHITTESTINFO](/windows/desktop/api/commctrl/ns-commctrl-_hd_hittestinfo) test etmek için noktasını belirtir ve test sonuçlarını alan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Üstbilgi öğesi, varsa, belirli bir konumda sıfır tabanlı dizini; Aksi durumda, -1.  
@@ -726,7 +726,7 @@ BOOL SetFocusedItem(int iItem);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iItem*|Başlık öğesinin sıfır tabanlı dizini.|  
+|*iItem*|[in] Başlık öğesinin sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  

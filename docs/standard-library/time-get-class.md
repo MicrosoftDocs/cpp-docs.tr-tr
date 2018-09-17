@@ -48,12 +48,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ff44c6352224b65d712161a62d34b34ee858ad6
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 98ef24f5a714b1df5cb9be0875cdfd5adcb3fe62
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44102752"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704880"
 ---
 # <a name="timeget-class"></a>time_get Sınıfı
 
@@ -69,10 +69,10 @@ class time_get : public time_base;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*  
+*CharType*<br/>
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*Inputıterator*  
+*Inputıterator*<br/>
 Saat değerlerinin okunacağı yineleyici.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -320,19 +320,19 @@ virtual iter_type do_get_date(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Tarih bilgisi depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -371,19 +371,19 @@ virtual iter_type do_get_monthname(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Kullanılmayan.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar çıkış parametresi.
 
-*ptm*  
+*ptm*<br/>
 Ay bilgilerin depolanacağı olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -414,19 +414,19 @@ virtual iter_type do_get_time(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Kullanılmayan.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Tarih bilgisi depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -465,19 +465,19 @@ virtual iter_type do_get_weekday(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Hafta içi bilgilerin depolanacağı olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -508,19 +508,19 @@ virtual iter_type do_get_year(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Yıl bilgileri depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -563,31 +563,31 @@ iter_type get(
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başladığı gösteren giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizinin sonuna belirten giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Akış.
 
-*durumu*  
+*durumu*<br/>
 Uygun bir bit maskesi öğelerini, hataları göstermek akış durumu için ayarlanır.
 
-*ptm*  
+*ptm*<br/>
 Depolanacak süresinin olduğu zamanı yapısına yönelik işaretçi.
 
-*FMT*  
+*FMT*<br/>
 Bir dönüştürme tanımlayıcı karakteri.
 
-*mod*  
+*mod*<br/>
 Bir isteğe bağlı bir değiştirici karakter.
 
-*fmt_first*  
+*fmt_first*<br/>
 Biçim yönergeleri başladığı için işaret eder.
 
-*fmt_last*  
+*fmt_last*<br/>
 Biçim yönergeleri sonuna işaret eder.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -620,19 +620,19 @@ iter_type get_date(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Tarih bilgisi depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -714,19 +714,19 @@ iter_type get_monthname(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Kullanılmayan.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar çıkış parametresi.
 
-*ptm*  
+*ptm*<br/>
 Ay bilgilerin depolanacağı olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -806,19 +806,19 @@ iter_type get_time(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Kullanılmayan.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Tarih bilgisi depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -887,19 +887,19 @@ iter_type get_weekday(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Hafta içi bilgilerin depolanacağı olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -964,19 +964,19 @@ iter_type get_year(iter_type first,
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
+*ilk*<br/>
 Dönüştürülecek dizisi başına ele alan giriş yineleyici.
 
-*Son*  
+*Son*<br/>
 Dönüştürülecek dizisi sonunu ele alan giriş yineleyici.
 
-*iosbase*  
+*iosbase*<br/>
 Bir biçim, bayrak kümesi para birimi simgesi isteğe bağlı; olduğunu belirtiyorsa Aksi takdirde, gerekli değildir.
 
-*durumu*  
+*durumu*<br/>
 İşlem başarılı olup olmadığını göre akış durumu için uygun bir bit maskesi öğeleri ayarlar.
 
-*ptm*  
+*ptm*<br/>
 Yıl bilgileri depolanacak olduğu için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1050,7 +1050,7 @@ explicit time_get(size_t refs = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*refs*  
+*refs*<br/>
 Bellek yönetimi için nesne türünü belirtmek için kullanılan tamsayı değeri.
 
 ### <a name="remarks"></a>Açıklamalar

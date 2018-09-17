@@ -16,12 +16,12 @@ helpviewer_keywords:
 - std::swap (unordered_map/multimap)
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76210e9ae860f8a7de0f22db2b7108e90e09e5be
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3a6d8a925f493a8299cf1afd8e851456277a68e9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965558"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715526"
 ---
 # <a name="ltunorderedmapgt-functions"></a>&lt;unordered_map&gt; işlevleri
 
@@ -42,26 +42,26 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*  
- Anahtar türü.
+*Key*<br/>
+Anahtar türü.
 
-*Ty*  
- Eşlenen tür.
+*Ty*<br/>
+Eşlenen tür.
 
-*Karma*  
- Karma işlev nesne türü.
+*Karma*<br/>
+Karma işlev nesne türü.
 
-*Pred*  
- Eşitlik karşılaştırma işlevi nesne türü.
+*Pred*<br/>
+Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*  
- Ayırıcı sınıf.
+*Ayırma*<br/>
+Ayırıcı sınıf.
 
-*Sol*  
- Takas etmek için ilk kapsayıcı.
+*Sol*<br/>
+Takas etmek için ilk kapsayıcı.
 
-*sağ*  
- Takas etmek için ikinci kapsayıcı.
+*sağ*<br/>
+Takas etmek için ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -136,26 +136,26 @@ void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*Key*  
- Anahtar türü.
+*Key*<br/>
+Anahtar türü.
 
-*Ty*  
- Eşlenen tür.
+*Ty*<br/>
+Eşlenen tür.
 
-*Karma*  
- Karma işlev nesne türü.
+*Karma*<br/>
+Karma işlev nesne türü.
 
-*Pred*  
- Eşitlik karşılaştırma işlevi nesne türü.
+*Pred*<br/>
+Eşitlik karşılaştırma işlevi nesne türü.
 
-*Ayırma*  
- Ayırıcı sınıf.
+*Ayırma*<br/>
+Ayırıcı sınıf.
 
-*Sol*  
- Takas etmek için ilk kapsayıcı.
+*Sol*<br/>
+Takas etmek için ilk kapsayıcı.
 
-*sağ*  
- Takas etmek için ikinci kapsayıcı.
+*sağ*<br/>
+Takas etmek için ikinci kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 

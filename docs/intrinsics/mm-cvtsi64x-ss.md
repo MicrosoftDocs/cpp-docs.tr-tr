@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae300569c4aa04a313f44a23fe988f1de7b826a1
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: eb253ab776565339aeaeade26d6d355b4f6a742b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464983"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700008"
 ---
 # <a name="mmcvtsi64xss"></a>_mm_cvtsi64x_ss
 **Microsoft'a özgü**  
@@ -39,11 +39,11 @@ __m128 _mm_cvtsi64x_ss(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `a`  
- Bir `__m128` dört tek duyarlıklı kayan nokta değerleri içeren yapısı.  
+*a*<br/>
+[in] Bir `__m128` dört tek duyarlıklı kayan nokta değerleri içeren yapısı.  
   
- [in] `b`  
- Bir kayan nokta değerine dönüştürülmesi 64-bit tamsayı.  
+*b*<br/>
+[in] Bir kayan nokta değerine dönüştürülmesi 64-bit tamsayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir `__m128` yapısı ilk kayan nokta değeri olan dönüştürme işleminin sonucu. Diğer üç değerden gelen değişmeden kopyalanır `a`.  

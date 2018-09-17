@@ -1,5 +1,5 @@
 ---
-title: CRecentDockSiteInfo sınıfı | Microsoft Docs
+title: Crecentdocksiteınfo sınıfı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -40,15 +40,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01fec88a49852ba46c8feb68f18842d2a1de437f
-ms.sourcegitcommit: be0e3457f2884551f18e183ef0ea65c3ded7f689
+ms.openlocfilehash: 42fd0c5df1731ded5e48bda74cb280b282e6b0cb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37079006"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702617"
 ---
-# <a name="crecentdocksiteinfo-class"></a>CRecentDockSiteInfo sınıfı
-`CRecentDockSiteInfo` Sınıftır için son durum bilgilerini depolayan bir yardımcı sınıfı [CPane sınıfı](../../mfc/reference/cpane-class.md).  
+# <a name="crecentdocksiteinfo-class"></a>Crecentdocksiteınfo sınıfı
+`CRecentDockSiteInfo` İçin son durum bilgilerini depolayan bir yardımcı sınıfı [CPane sınıfı](../../mfc/reference/cpane-class.md).  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -83,14 +83,14 @@ class CRecentDockSiteInfo : public CObject
 |[CRecentDockSiteInfo::StoreDockInfo](#storedockinfo)||  
   
 ## <a name="remarks"></a>Açıklamalar  
- `CRecentDockSiteInfo` Veri yönetim sınıfı bir sınıftır. En son durumunu izleyen bir `CPane` yerleşik ve kayan arasında geçiş olarak. Bir kullanıcı çift kayan dockable bölmesinde tıkladığında, yerleşik haline gelir. Çift tıklatarak yerleşik bölmesinde, önceki konumu, boyutu ve durumunu döndürür. Benzer şekilde, bölmesi yeniden yerleşik olduğunda önceki yerleştirme konumuna döndürür. Bu veri, mümkün kılan bir sınıftır. Bu sınıf üyeleri için yerleşik bölmesinde durum bilgilerini depolamak olduğundan, bunlar doğrudan uygulamanız tarafından değiştirilmemelidir.  
+ `CRecentDockSiteInfo` Veri yönetim sınıfı. En son durumunu izleyen bir `CPane` kayan ve yerleştirilmiş arasında geçiş olarak. Bir kullanıcı çift tıkladığında bir kayan yerleştirilebilir bölmesi, yerleşik hale gelir. Çift tıklatarak yerleştirilmiş bölmesinde, önceki konum, boyutu ve durumunu döndürür. Benzer şekilde, bölmesinde yeniden dayalı olduğunda önceki yerleştirme konumunu döndürür. Bu mümkün kılan bu veri sınıftır. Bu sınıfın üyeleri yerleştirilmiş bölmenin için durum bilgilerini depolamak olduğundan, bunlar doğrudan uygulamanız tarafından değiştirilmemelidir.  
   
- A `CRecentDockSiteInfo` nesnesi, bir bölme oluşturulan her zaman oluşturulur. Her `CPane` nesneye sahip bir üye değişkenine [CPane::m_recentDockInfo](../../mfc/reference/cpane-class.md#m_recentdockinfo), bu bilgileri depolamak için.  
+ A `CRecentDockSiteInfo` nesnesi bir bölme oluşturulan her zaman oluşturulur. Her `CPane` nesnesinde bir üye değişkeni [CPane::m_recentDockInfo](../../mfc/reference/cpane-class.md#m_recentdockinfo), bu bilgileri depolamak için.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
   
- [CRecentDockSiteInfo](../../mfc/reference/crecentdocksiteinfo-class.md)  
+ [Crecentdocksiteınfo](../../mfc/reference/crecentdocksiteinfo-class.md)  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Başlık:** afxrecentDockSiteInfo.h  
@@ -244,8 +244,8 @@ void SaveListOfRecentPanes(CList<HWND,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *CList < HWND*  
- [in] *lstOrg*  
+*CList < HWND*<br/>
+[in] [in] *lstOrg*  
  [in] *bForSlider*  
   
 ### <a name="remarks"></a>Açıklamalar  
@@ -260,8 +260,8 @@ virtual void SetInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bForSlider*  
- [in] *srcInfo*  
+*bForSlider*<br/>
+[in] [in] *srcInfo*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -275,8 +275,8 @@ virtual void StoreDockInfo(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRecentContainer*  
- [in] *pTabbedBar*  
+*pRecentContainer*<br/>
+[in] [in] *pTabbedBar*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

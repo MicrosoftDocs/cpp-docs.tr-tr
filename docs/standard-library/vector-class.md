@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d60d47757bfcf1564d81dcb58c0727b1ca56b3ce
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2fdb8fea78d62202dd460f5dd219f2686bd99c6b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199501"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710242"
 ---
 # <a name="vector-class"></a>vector Sınıfı
 
@@ -116,11 +116,11 @@ class vector
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
- Vektör içinde depolanacak öğe veri türü
+*Türü*<br/>
+Vektör içinde depolanacak öğe veri türü
 
-*Ayırıcı*  
- Vektörün ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Type>`.
+*Ayırıcı*<br/>
+Vektörün ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Type>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -234,20 +234,20 @@ void assign(InputIterator First, InputIterator Last);
 
 ### <a name="parameters"></a>Parametreler
 
-*ilk*  
- Kopyalanacak öğe aralığındaki ilk öğenin konumu.
+*ilk*<br/>
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.
 
-*Son*  
- Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
+*Son*<br/>
+Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.
 
-*Sayısı*  
- Kopya vektöre eklenen bir öğe sayısı.
+*Sayısı*<br/>
+Kopya vektöre eklenen bir öğe sayısı.
 
-*VAL*  
- Vektöre eklenen öğe değeri.
+*VAL*<br/>
+Vektöre eklenen öğe değeri.
 
-*IList*  
- Eklenecek öğeleri içeren initializer_list.
+*IList*<br/>
+Eklenecek öğeleri içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -313,8 +313,8 @@ const_reference at(size_type _Pos) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Pos*  
- Vektör içinde başvurmak için öğe konumu veya alt simge sayısı.
+*_Pos*<br/>
+Vektör içinde başvurmak için öğe konumu veya alt simge sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1562,7 +1562,7 @@ void push_back(T&& Val);
 ### <a name="parameters"></a>Parametreler
 
 *VAL*<br/>
- Vektör sonuna eklenen öğe atanacak değer.
+Vektör sonuna eklenen öğe atanacak değer.
 
 ### <a name="example"></a>Örnek
 
@@ -1726,8 +1726,8 @@ void reserve(size_type count);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*  
- Depolama için vektör ayrılacak en az uzunluğu.
+*Sayısı*<br/>
+Depolama için vektör ayrılacak en az uzunluğu.
 
 ### <a name="example"></a>Örnek
 
@@ -1768,11 +1768,11 @@ void resize(size_type Newsize, Type Val);
 
 ### <a name="parameters"></a>Parametreler
 
-*Newsize*  
- Vektör yeni boyutu.
+*Newsize*<br/>
+Vektör yeni boyutu.
 
-*VAL*  
- Yeni boyutu büyükse, vektör için eklenen yeni öğeleri başlatma değeri, özgün boyutu. Değer atlanırsa yeni nesneleri, varsayılan oluşturucu kullanın.
+*VAL*<br/>
+Yeni boyutu büyükse, vektör için eklenen yeni öğeleri başlatma değeri, özgün boyutu. Değer atlanırsa yeni nesneleri, varsayılan oluşturucu kullanın.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2010,11 +2010,11 @@ friend void swap(
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Değiştirilecek öğeleri sağlayan bir vektör veya öğeleri vektör öğelerle ilişkili bir vektör *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan bir vektör veya öğeleri vektör öğelerle ilişkili bir vektör *sol*.
 
-*Sol*  
- Öğeleri vektör öğelerle ilişkili bir vektör *doğru*.
+*Sol*<br/>
+Öğeleri vektör öğelerle ilişkili bir vektör *doğru*.
 
 ### <a name="example"></a>Örnek
 

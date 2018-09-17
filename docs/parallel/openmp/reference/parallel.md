@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e0436dbbc75690d38b5930a491b7058ee095341
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1c8b1466eae343b6c644b6ecfbd919c3241259bf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692291"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705971"
 ---
 # <a name="parallel"></a>parallel
-Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir paralel bölge tanımlar.  
+Birden çok iş parçacığı paralel olarak yürütülen kodu bir paralel bölgenin tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,11 +35,10 @@ Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir pa
 }  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
-  
- `clause` (isteğe bağlı)  
- Sıfır veya daha çok yan tümceleri.  Tarafından desteklenen yan tümceleri bir listesi için Açıklamalar bölümüne bakın **paralel**.  
+## <a name="arguments"></a>Arguments
+
+*Yan tümcesi*<br/>
+(İsteğe bağlı) Sıfır veya daha fazla tümceciği.  Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **paralel**.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Paralel** yönergesi aşağıdaki OpenMP yan tümceleri destekler:  
@@ -62,10 +61,10 @@ Paralel olarak birden çok iş parçacığı tarafından yürütülen kod bir pa
   
  **Paralel** ile de kullanılabilir [bölümleri](../../../parallel/openmp/reference/sections-openmp.md) ve [için](../../../parallel/openmp/reference/for-openmp.md) yönergeleri.  
   
- Daha fazla bilgi için bkz: [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
+ Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, iş parçacığı sayısını ayarlayın ve paralel bölge tanımlamasına gösterilmektedir. Varsayılan olarak, iş parçacığı sayısını makinedeki mantıksal işlemci sayısına eşittir. Örneğin, hiper iş parçacığı etkin olan bir fiziksel işlemci sahip bir makine varsa, iki mantıksal işlemci ve bu nedenle, iki iş parçacığı olması.  
+ Aşağıdaki örnek, iş parçacığı sayısını ayarlayın ve bir paralel bölgenin tanımlamak gösterilmektedir. Varsayılan olarak, iş parçacığı sayısı makinede mantıksal işlemci sayısı eşittir. Örneğin, bir makine hiper iş parçacıklı olan bir fiziksel işlemci ile varsa, iki mantıksal işlemciler ve bu nedenle, iki iş parçacığı olması.  
   
 ```  
 // omp_parallel.cpp  

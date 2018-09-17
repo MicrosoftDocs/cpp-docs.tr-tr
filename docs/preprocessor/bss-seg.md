@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08304a42b961f93b7d9e4e6e644e1514e34eb335
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: 3c3a80e50bd0b012773a5e5a197674965f73b526
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464468"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45711164"
 ---
 # <a name="bssseg"></a>bss_seg
 Başlatılmamış değişkenler .obj dosyasında depolandığı segmenti belirtir.  
@@ -35,27 +35,27 @@ Başlatılmamış değişkenler .obj dosyasında depolandığı segmenti belirti
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- 
+
 Obj dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. Başlatılmamış veriler için .obj dosyasındaki varsayılan segment .bss ' dir. Bazı durumlarda kullanımını **bss_seg** hızlandırabilirsiniz yükleme sürelerini bir bölüme başlatılmamış veri gruplandırarak.  
   
 **bss_seg** hiçbir parametre olmadan için .bss kesimi sıfırlar.  
   
-*anında iletme* (isteğe bağlı)  
-İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
+**push**<br/>
+(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A *pu*sh * olabilir bir *tanımlayıcı* ve *segment-name*.  
   
-*POP* (isteğe bağlı)  
-Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+**POP**<br/>
+(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.  
   
-*tanımlayıcı* (isteğe bağlı)  
-İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
+*tanımlayıcı*<br/>
+(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
   
-*tanımlayıcı* tek bir POP birden çok kayıt getirir *pop* komutu.  
+*tanımlayıcı* tek bir POP birden çok kayıt getirir **pop** komutu.  
   
-*"segment-name"*(isteğe bağlı)  
-Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
+*"segment-name"*<br/>
+(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
   
-*"segment-class"* (isteğe bağlı)  
-Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
+*"segment-class"*<br/>
+(İsteğe bağlı) 2.0. sürümden önceki C++ ile uyumluluk için dahildir. Yoksayılır.  
   
 ## <a name="example"></a>Örnek  
   

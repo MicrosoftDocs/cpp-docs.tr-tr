@@ -30,18 +30,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9a518402d027ae128fcf403752fafb448461628
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 57b1cfca4740b3190c2afb8eb557fabded3895bd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390475"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707622"
 ---
 # <a name="lock"></a>_lock
-Çoklu iş parçacığı kilit alır.  
+Çoklu iş parçacığı kilidi alır.  
   
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT kullanılamaz.  
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,11 +52,11 @@ void __cdecl _lock
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `locknum`  
- Kilit edinmeye tanımlayıcısı.  
+*locknum*<br/>
+[in] Kilit almaya tanımlayıcısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kilidi zaten alınmış, bu yöntem kilit yine de alır ve bir iç C çalışma zamanı (CRT) hataya neden olur. Yöntemin bir kilidi alamazsa, önemli bir hata ile çıkar ve hata kodu ayarlar `_RT_LOCK`.  
+ Kilidi zaten alınmış, bu yöntem kilit yine de alır ve bir iç C çalışma zamanı (CRT) hata neden olur. Yöntem bir kilit alınamıyor, önemli bir hata ile çıkar ve hata kodunu ayarlar `_RT_LOCK`.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Kaynak:** mlock.c  

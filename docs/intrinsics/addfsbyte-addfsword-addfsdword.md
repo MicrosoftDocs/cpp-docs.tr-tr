@@ -23,17 +23,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4c2b4a9e185f709ff829a3b88ea9cb67741fa1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 08a9948bb986ae57e42e37253b3b54737cf4d3f9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330252"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45714226"
 ---
 # <a name="addfsbyte-addfsword-addfsdword"></a>__addfsbyte, __addfsword, __addfsdword
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir uzaklık başlangıcı göre tarafından belirtilen bir bellek konumunu bir değer ekleyin `FS` kesimi.  
+ Başlangıcına göre bir uzaklık tarafından belirtilen bellek konumuna bir değer ekleyin `FS` kesimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -53,11 +53,11 @@ void __addfsdword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Offset`  
- Başından uzaklık `FS`.  
+*uzaklık*<br/>
+[in] Başından uzaklık `FS`.  
   
- [in] `Data`  
- Bellek konumuna eklenecek değer.  
+*Veri*<br/>
+[in] Bellek konumuna eklenecek değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -68,9 +68,9 @@ void __addfsdword(
 |`__addfsdword`|x86|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__incfsbyte, \__incfsword, \__incfsdword](../intrinsics/incfsbyte-incfsword-incfsdword.md)   

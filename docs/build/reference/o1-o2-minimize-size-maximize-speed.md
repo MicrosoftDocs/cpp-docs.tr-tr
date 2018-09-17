@@ -1,5 +1,5 @@
 ---
-title: -O1, - O2 (boyutu en aza indir, hızı en üst düzeye) | Microsoft Docs
+title: -O1, - O2 (boyutu en aza indir, hızı en) | Microsoft Docs
 ms.custom: ''
 ms.date: 09/25/2017
 ms.technology:
@@ -26,44 +26,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5003695c5ae2b16faf8aa80f68928858a3a48288
-ms.sourcegitcommit: 4cdfff1114829599ab54178767f57664ad3424d1
+ms.openlocfilehash: 832ea689b2db9a34b55664b695747079ac277bae
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36270558"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702565"
 ---
 # <a name="o1-o2-minimize-size-maximize-speed"></a>/O1, /O2 (Boyutu En Aza İndir, Hızı En Yükseğe Çıkart)
 
-Önceden tanımlanmış boyutu etkileyen seçenekleri kümesi ve oluşturulan kod hızına seçer.
+Önceden tanımlanmış bir dizi boyutu etkileyen seçeneği ve oluşturulan kod hızına seçer.
 
 ## <a name="syntax"></a>Sözdizimi
 
-> / O1  
-> / O2
+> / O1, / O2
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/O1** ve **O2** derleyici seçenekleridir birkaç belirli en iyi duruma getirme seçenekleri aynı anda ayarlamak için hızlı bir şekilde. **/O1** seçenek çoğu durumda en küçük kod oluşturan tek tek en iyi duruma getirme seçenekleri ayarlar. **O2** seçenek çoğu durumda hızlı kod oluşturma seçenekleri ayarlar. **O2** sürüm yapıları için varsayılan seçenektir. Bu tabloda tarafından belirlenen belirli seçenekler gösterilmektedir **/O1** ve **O2**:
+**/O1** ve **/O2** derleyici seçenekleri aynı anda birden fazla özel İyileştirme seçeneklerini ayarlamak için hızlı bir yol olan. **/O1** seçenek çoğu durumda en küçük kod oluşturan bireysel iyileştirme seçenekleri ayarlar. **/O2** seçenek çoğu durumda en hızlı kodu oluşturma seçeneklerini ayarlar. **/O2** sürüm yapıları için varsayılan seçenektir. Bu tablo tarafından ayarlanan belirli seçenekleri gösterir **/O1** ve **/O2**:
 
-|Seçenek|Eşdeğer|
+|Seçenek|Eşdeğerdir|
 |------------|-------------------|
-|**/ O1** (boyutu en aza)|[/Og](../../build/reference/og-global-optimizations.md) [/Os](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/Ob2](../../build/reference/ob-inline-function-expansion.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
-|**/ O2** (hızı en üst düzeye)|[/Og](../../build/reference/og-global-optimizations.md) [/Oi](../../build/reference/oi-generate-intrinsic-functions.md) [/Ot](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/Ob2](../../build/reference/ob-inline-function-expansion.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
+|**/ O1** (boyutu en aza indir)|[/Og](../../build/reference/og-global-optimizations.md) [/Os](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/ob2](../../build/reference/ob-inline-function-expansion.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
+|**/ O2** (hızını en üst düzeye)|[/Og](../../build/reference/og-global-optimizations.md) [/Oi](../../build/reference/oi-generate-intrinsic-functions.md) [/Ot](../../build/reference/os-ot-favor-small-code-favor-fast-code.md) [/Oy](../../build/reference/oy-frame-pointer-omission.md) [/ob2](../../build/reference/ob-inline-function-expansion.md) [/GF](../../build/reference/gf-eliminate-duplicate-strings.md) [/Gy](../../build/reference/gy-enable-function-level-linking.md)|
 
-**/ O1** ve **O2** karşılıklı olarak birbirini dışlar.
+**/ O1** ve **/O2** karşılıklı olarak birbirini dışlar.
 
-> [!NOTE]  
-> **x86 belirli**  
-> Bu seçenekler çerçeve işaretçisini atlama kullanıldığı anlamına ([/Oy](../../build/reference/oy-frame-pointer-omission.md)) seçeneği.
+> [!NOTE]
+> **x86 belirli** çerçeve işaretçisini atlama kullanımını bu seçenekleri belirtir ([/Oy](../../build/reference/oy-frame-pointer-omission.md)) seçeneği.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Altında **yapılandırma özellikleri**, açık **C/C++** ve ardından **en iyi duruma getirme** özellik sayfası.
+1. Altında **yapılandırma özellikleri**açın **C/C++** seçip **iyileştirme** özellik sayfası.
 
-1. Değiştirme **en iyi duruma getirme** özelliği.
+1. Değiştirme **iyileştirme** özelliği.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
@@ -71,7 +69,7 @@ ms.locfileid: "36270558"
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
+[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
 [/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)

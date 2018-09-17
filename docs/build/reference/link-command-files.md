@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8934758d8aa406ea7b7c959b1fc535cde32195b1
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 2611fc0c16e4ff30d7802989518ca8c5d8dc33af
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894687"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713738"
 ---
 # <a name="link-command-files"></a>LINK Komut Dosyaları
 
@@ -50,5 +50,5 @@ link /dll @objlist.txt @liblist.txt @exports.txt
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
 [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

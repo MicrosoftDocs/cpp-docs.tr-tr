@@ -19,47 +19,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f1dce7c7c48e7c7c94da95ca187e0388b3f5d4d
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 97b5e3ef2e5c14ae93d4fcc3b016f4dbc955edbd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131647"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709169"
 ---
-# <a name="diagnostics-compiler-diagnostic-options"></a>/ Diagnostics (derleyici tanılama seçenekleri)  
-  
-Kullanım **/Diagnostics** konum bilgilerini hata ve uyarı görünümünü belirtmek için derleyici seçeneği.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/diagnostics:{caret|classic|column}
-```  
+# <a name="diagnostics-compiler-diagnostic-options"></a>/ Diagnostics (derleyici tanılama seçenekleri)
 
-## <a name="remarks"></a>Açıklamalar  
+Kullanım **/Diagnostics** konum bilgilerini hata ve uyarı görünümünü belirtmek için derleyici seçeneği.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/diagnostics:{caret|classic|column}
+```
+
+## <a name="remarks"></a>Açıklamalar
 
 Bu seçenek, Visual Studio 2017 ve sonraki sürümlerde desteklenir.
 
-**/Diagnostics** derleyici seçeneği, hata ve uyarı bilgilerini görünümünü denetler.  
-  
-**/Diagnostics:classic** raporları nereye sorunu bulundu satır numarasını varsayılan seçenektir.  
-  
-**/Diagnostics:column** seçeneği de burada sorunu bulundu sütun içerir. Bu soruna neden olan karakter ya da belirli bir dil yapısı belirlemenize yardımcı olabilir.  
-  
-**/Diagnostics:caret** seçeneği nerede sorun bulundu ve bir şapka (^) sorunun algılandığı yere kod satırı altında konuma yerleştirir sütun içerir.  
-  
-Bazı durumlarda, derleyicinin bir sorun oluştuğu algılamaz unutmayın. Örneğin, diğer, beklenmeyen sembolleri karşılaştı kadar eksik noktalı virgül algılanamayabilir. Sütun bildirilir ve giriş işaretini derleyici bir şey her zaman düzeltmenizi yapmak gerek duyduğunuz değil yanlış olduğunu algılandığı yere yerleştirilir.  
-  
-**/Diagnostics** seçenek, Visual Studio 2017'den itibaren kullanılabilir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1. Projenizin açın **özellik sayfaları** iletişim kutusu.   
-  
-2. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **genel** özellik sayfası.  
-  
-3. Dropdown denetimi kullanın **tanılama biçimi** bir tanılama seçmek için alan görüntü seçeneği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+**/Diagnostics** derleyici seçeneği, hata ve uyarı bilgilerini görünümünü denetler.
+
+**/Diagnostics:classic** raporları nereye sorunu bulundu satır numarasını varsayılan seçenektir.
+
+**/Diagnostics:column** seçeneği de burada sorunu bulundu sütun içerir. Bu soruna neden olan karakter ya da belirli bir dil yapısı belirlemenize yardımcı olabilir.
+
+**/Diagnostics:caret** seçeneği nerede sorun bulundu ve bir şapka (^) sorunun algılandığı yere kod satırı altında konuma yerleştirir sütun içerir.
+
+Bazı durumlarda, derleyicinin bir sorun oluştuğu algılamaz unutmayın. Örneğin, diğer, beklenmeyen sembolleri karşılaştı kadar eksik noktalı virgül algılanamayabilir. Sütun bildirilir ve giriş işaretini derleyici bir şey her zaman düzeltmenizi yapmak gerek duyduğunuz değil yanlış olduğunu algılandığı yere yerleştirilir.
+
+**/Diagnostics** seçenek, Visual Studio 2017'den itibaren kullanılabilir.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenizin açın **özellik sayfaları** iletişim kutusu.
+
+2. Altında **yapılandırma özellikleri**, genişletme **C/C++** klasörü seçin **genel** özellik sayfası.
+
+3. Dropdown denetimi kullanın **tanılama biçimi** bir tanılama seçmek için alan görüntü seçeneği. Seçin **Tamam** veya **Uygula** yaptığınız değişiklikleri kaydedin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

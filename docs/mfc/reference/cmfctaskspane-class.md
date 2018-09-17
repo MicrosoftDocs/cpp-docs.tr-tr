@@ -204,12 +204,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0477bb2dfa60b8a3803c6aff2502de7fd0ad15c
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 453bbb5d99d87a03a8627d231e45316cb5456794
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686463"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45702059"
 ---
 # <a name="cmfctaskspane-class"></a>CMFCTasksPane sınıfı
 Daha fazla ayrıntı için bulunan kaynak koduna bakın **VC\\atlmfc\\src\\mfc** Visual Studio yüklemenizin klasör.  
@@ -399,20 +399,20 @@ int AddGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPageIdx*  
- Sıfır tabanlı sayfa dizini belirtir.  
+*nPageIdx*<br/>
+[in] Sıfır tabanlı sayfa dizini belirtir.  
   
- [in] *lpszGroupName*  
- Grubun adını belirtir.  
+*lpszGroupName*<br/>
+[in] Grubun adını belirtir.  
   
- [in] *bBottomLocation*  
- Görev bölmesi denetimi altındaki grup oluşturmak için TRUE; Aksi takdirde FALSE.  
+*bBottomLocation*<br/>
+[in] Görev bölmesi denetimi altındaki grup oluşturmak için TRUE; Aksi takdirde FALSE.  
   
- [in] *bÖzel*  
- Bu grup olarak işaretlemek için doğru bir *özel* grubu; Aksi takdirde FALSE. Özel gruplar hakkında daha fazla bilgi için bkz. Açıklamalar bölümüne `CMFCTasksPane`.  
+*bÖzel*<br/>
+[in] Bu grup olarak işaretlemek için doğru bir *özel* grubu; Aksi takdirde FALSE. Özel gruplar hakkında daha fazla bilgi için bkz. Açıklamalar bölümüne `CMFCTasksPane`.  
   
- [in] *hIcon*  
- Grup başlığı görüntülemek için bu simgeyi belirtir.  
+*hIcon*<br/>
+[in] Grup başlığı görüntülemek için bu simgeyi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sınıf tutar grupları iç listesinde grubunun sıfır tabanlı dizini.  
@@ -434,17 +434,17 @@ int AddLabel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Etiket burada eklenir grubunun dizinini belirtir.  
+*Ngrup*<br/>
+[in] Etiket burada eklenir grubunun dizinini belirtir.  
   
- [in] *lpszLabelName*  
- Etiketin adını belirtir.  
+*lpszLabelName*<br/>
+[in] Etiketin adını belirtir.  
   
- [in] *nTaskIcon*  
- Etiket yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
+*nTaskIcon*<br/>
+[in] Etiket yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
   
- [in] *bIsBold*  
- Etiket kalın metin olarak görüntülemek için TRUE; Aksi takdirde FALSE.  
+*bIsBold*<br/>
+[in] Etiket kalın metin olarak görüntülemek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Grubun etiketi eklenen burada sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
@@ -462,11 +462,11 @@ int AddMRUFilesList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Bir grubu dizini belirtir. Bu yöntem MRU dosyalar listesinde bu parametre tarafından belirtilen gruba ekler.  
+*Ngrup*<br/>
+[in] Bir grubu dizini belirtir. Bu yöntem MRU dosyalar listesinde bu parametre tarafından belirtilen gruba ekler.  
   
- [in] *nMaxFiles*  
- MRU dosyalar listesinde görüntülenecek dosyaların sayısını belirtir.  
+*nMaxFiles*<br/>
+[in] MRU dosyalar listesinde görüntülenecek dosyaların sayısını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  MRU dosyalar listesini burada eklenen grubu sıfır tabanlı dizini veya grubu tarafından belirtilmişse, -1 *Ngrup* yok.  
@@ -479,8 +479,8 @@ int AddPage(LPCTSTR lpszPageLabel);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPageLabel*  
- Sayfası için etiketi belirtir.  
+*lpszPageLabel*<br/>
+[in] Sayfası için etiketi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni sayfa sıfır tabanlı dizini.  
@@ -512,20 +512,20 @@ int AddTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Burada görev eklenir grubu dizinini belirtir.  
+*Ngrup*<br/>
+[in] Burada görev eklenir grubu dizinini belirtir.  
   
- [in] *lpszTaskName*  
- Görev adını belirtir.  
+*lpszTaskName*<br/>
+[in] Görev adını belirtir.  
   
- [in] *nTaskIcon*  
- Görev yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
+*nTaskIcon*<br/>
+[in] Görev yanında gösterilecek simgeyi belirtir. Framework simgeleri görüntülerin listesini depolar. Bu liste bir dizin parametredir.  
   
- [in] *uiCommandID*  
- Kullanıcı görevi tıkladığında çalıştırılacak komutu komut Kimliğini belirtir. Görev, bir etiket olarak değerlendirilir *uiCommandID* 0'dır.  
+*uiCommandID*<br/>
+[in] Kullanıcı görevi tıkladığında çalıştırılacak komutu komut Kimliğini belirtir. Görev, bir etiket olarak değerlendirilir *uiCommandID* 0'dır.  
   
- [in] *dwUserData*  
- Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
+*dwUserData*<br/>
+[in] Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görevi nerede eklenen grubu sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
@@ -543,20 +543,20 @@ int AddWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Pencerenin burada eklenir grubu dizinini belirtir.  
+*Ngrup*<br/>
+[in] Pencerenin burada eklenir grubu dizinini belirtir.  
   
- [in] *hwndTask*  
- İşleyiciyi eklemek için pencerenin belirtir.  
+*hwndTask*<br/>
+[in] İşleyiciyi eklemek için pencerenin belirtir.  
   
- [in] *nWndHeight*  
- Pencerenin yüksekliğini belirtir.  
+*nWndHeight*<br/>
+[in] Pencerenin yüksekliğini belirtir.  
   
- [in] *bAutoDestroyWindow*  
- Görev kaldırıldığında penceresini yok etmek için TRUE; Aksi takdirde FALSE.  
+*bAutoDestroyWindow*<br/>
+[in] Görev kaldırıldığında penceresini yok etmek için TRUE; Aksi takdirde FALSE.  
   
- [in] *dwUserData*  
- Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
+*dwUserData*<br/>
+[in] Görev ile ilişkili kullanıcı tanımlı veri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencerenin eklenen burada grubu sıfır tabanlı dizini ya da grubun belirtilen -1 *Ngrup* yok.  
@@ -584,8 +584,8 @@ void CollapseAllGroups(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bCollapse*  
- [in] *nPageIdx*  
+*bCollapse*<br/>
+[in] [in] *nPageIdx*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -604,14 +604,14 @@ BOOL CollapseGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pGroup*  
- Grubu daraltmak için belirtir.  
+*pGroup*<br/>
+[in] Grubu daraltmak için belirtir.  
   
- [in] *bCollapse*  
- Grubu daraltmak için TRUE; Grubu genişletmek için FALSE.  
+*bCollapse*<br/>
+[in] Grubu daraltmak için TRUE; Grubu genişletmek için FALSE.  
   
- [in] *Ngrup*  
- Grupları iç listesinde daraltmak için Grup sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Grupları iç listesinde daraltmak için Grup sıfır tabanlı dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Grup daraltır ya da başarılı bir şekilde genişletir gerekiyorsa TRUE; Aksi takdirde FALSE.  
@@ -656,8 +656,8 @@ void EnableAnimation(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bir görev grubu genişletir veya daraltır geldiğinde gerçekleşen animasyonu etkinleştirilir.  
@@ -670,8 +670,8 @@ void EnableGroupCollapse(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kullanıcılar, görev grupları daraltabilirsiniz TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Kullanıcılar, görev grupları daraltabilirsiniz TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Daraltılmış bir görev grubu yalnızca Grup başlığını görüntüler. Görev listesini gizlenir.  
@@ -684,8 +684,8 @@ void EnableHistoryMenuButtons(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Etkinleştirme açılan menülerde true **sonraki** ve **önceki** gezinti düğmeleri; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Etkinleştirme açılan menülerde true **sonraki** ve **önceki** gezinti düğmeleri; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, açılan menülerde **sonraki** ve **önceki** düğmeleri devre dışı bırakıldı.  
@@ -706,17 +706,17 @@ void EnableNavigationToolbar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Gezinti araç etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Gezinti araç etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
- [in] *uiToolbarBmpRes*  
- Araç çubuğunda görüntülenecek resimler içeren bir bit eşlemi Kaynak Kimliğini belirtir.  
+*uiToolbarBmpRes*<br/>
+[in] Araç çubuğunda görüntülenecek resimler içeren bir bit eşlemi Kaynak Kimliğini belirtir.  
   
- [in] *sizeToolbarImage*  
- Bir araç çubuğu görüntüsü boyutunu belirtir.  
+*sizeToolbarImage*<br/>
+[in] Bir araç çubuğu görüntüsü boyutunu belirtir.  
   
- [in] *sizeToolbarButton*  
- Araç çubuğu düğmesi boyutunu belirtir.  
+*sizeToolbarButton*<br/>
+[in] Araç çubuğu düğmesi boyutunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Gezinti araç görev bölmesinin üst kısmında framework görüntüleyen bir araç çubuğudur. Gezinti araç çubuğu içerir **geri**, **İleri**, ve **giriş** gezinti düğmeleri ve kullanılabilir sayfaların listesini içeren bir menü düğmesi.  
@@ -743,8 +743,8 @@ void EnableScrollButtons(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Görev bölmesi yerine bir kaydırma çubuğunun kaydırma düğmelerine görüntülemek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Görev bölmesi yerine bir kaydırma çubuğunun kaydırma düğmelerine görüntülemek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, Çerçeve kaydırma düğmelerine görev bölmesinde görüntüler.  
@@ -757,8 +757,8 @@ void EnableWrapLabels(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Görev bölmesinde görüntülenen etiketlerinin metin kaydırma için true; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Görev bölmesinde görüntülenen etiketlerinin metin kaydırma için true; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, çerçeve metni etiketleri Kaydır değil. Sözcük kaydırma etkin olduğunda, etiket metni birden fazla çizgiyi görünebilir. Satır işaretçileri gibi sonu etiketi içerebilir `\n` ve alt çizgi işaret `&`.  
@@ -771,8 +771,8 @@ void EnableWrapTasks(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Görevler görev bölmesinde sarmalamak için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Görevler görev bölmesinde sarmalamak için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, görevler için sözcük kaydırmayı devre dışıdır.  
@@ -840,11 +840,11 @@ BOOL GetGroupLocation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pGroup*  
- Konumu alınan görev grubunu belirtir.  
+*pGroup*<br/>
+[in] Konumu alınan görev grubunu belirtir.  
   
- [out] *Ngrup*  
- Görev grubu sıfır tabanlı dizinini içerir.  
+*Ngrup*<br/>
+[out] Görev grubu sıfır tabanlı dizinini içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev grubu bulunduysa TRUE; Aksi takdirde FALSE.  
@@ -894,11 +894,11 @@ BOOL GetPageByGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görev grubu sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Görev grubu sıfır tabanlı dizini belirtir.  
   
- [out] *nPage*  
- Belirtilen grup için sayfa dizini içerir. Görev grubu yalnızca bir varsayılan sayfası içeriyorsa, döndürülen değer 0'dır.  
+*nPage*<br/>
+[out] Belirtilen grup için sayfa dizini içerir. Görev grubu yalnızca bir varsayılan sayfası içeriyorsa, döndürülen değer 0'dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise grup *Ngrup* var; Aksi takdirde FALSE.  
@@ -949,11 +949,11 @@ CMFCTasksPaneTask* GetTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görevi içeren grubun sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Görevi içeren grubun sıfır tabanlı dizini belirtir.  
   
- [in] *nGörev*  
- Tarafından belirtilen listesinde görev sıfır tabanlı dizini belirtir *Ngrup*.  
+*nGörev*<br/>
+[in] Tarafından belirtilen listesinde görev sıfır tabanlı dizini belirtir *Ngrup*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizindeki görev.  
@@ -966,8 +966,8 @@ int GetTaskCount(int nGroup) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görev grubu dizini belirtir.  
+*Ngrup*<br/>
+[in] Görev grubu dizini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen grup veya 0 ise görevlerin sayısını *Ngrup* geçersiz.  
@@ -980,8 +980,8 @@ CMFCTasksPaneTaskGroup* GetTaskGroup(int nGroup) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Alınacak grubunun sıfır tabanlı dizinini belirtir.  
+*Ngrup*<br/>
+[in] Alınacak grubunun sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizindeki görev grubu.  
@@ -1007,20 +1007,20 @@ BOOL GetTaskLocation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCommandID*  
- Bulunacak görev komut Kimliğini belirtir.  
+*uiCommandID*<br/>
+[in] Bulunacak görev komut Kimliğini belirtir.  
   
- [out] *Ngrup*  
- Görev grubu dizinini içerir.  
+*Ngrup*<br/>
+[out] Görev grubu dizinini içerir.  
   
- [out] *nGörev*  
- Görev grubundaki görev dizinini içerir.  
+*nGörev*<br/>
+[out] Görev grubundaki görev dizinini içerir.  
   
- [in] *hwndTask*  
- Görev ile ilişkili penceresi belirtir.  
+*hwndTask*<br/>
+[in] Görev ile ilişkili penceresi belirtir.  
   
- [in] *pTask*  
- Bulma görevi belirtir.  
+*pTask*<br/>
+[in] Bulma görevi belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev konumu bulunduysa TRUE; Belirtilen görev yoksa FALSE.  
@@ -1199,8 +1199,8 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1238,17 +1238,17 @@ virtual void OnClickTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nGroupNumber*  
- Tıklandı görev içeren grubunu sıfır tabanlı dizini belirtir.  
+*nGroupNumber*<br/>
+[in] Tıklandı görev içeren grubunu sıfır tabanlı dizini belirtir.  
   
- [in] *nTaskNumber*  
- Tıklandı görev sıfır tabanlı dizini belirtir.  
+*nTaskNumber*<br/>
+[in] Tıklandı görev sıfır tabanlı dizini belirtir.  
   
- [in] *uiCommandID*  
- Görevle ilgili komut Kimliğini belirtir.  
+*uiCommandID*<br/>
+[in] Görevle ilgili komut Kimliğini belirtir.  
   
- [in] *dwUserData*  
- Tıklandı görev ile ilişkili kullanıcı tanımlı veri içerir.  
+*dwUserData*<br/>
+[in] Tıklandı görev ile ilişkili kullanıcı tanımlı veri içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı göreve tıkladığı zaman framework bu yöntemi çağırır. Varsayılan olarak, çerçeve tıklandı görevle ilgili komut kimliği denetler ve sıfır değilse, görev bölmesi denetimi sahibine WM_COMMAND ileti gönderir.  
@@ -1310,8 +1310,8 @@ virtual void OnPressOtherButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pbtn*  
- [in] *pWndOwner*  
+*pbtn*<br/>
+[in] [in] *pWndOwner*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1339,8 +1339,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1378,8 +1378,8 @@ void RemoveAllGroups(int nPageIdx = 0);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPageIdx*  
- Sayfasının sıfır tabanlı dizinini belirtir.  
+*nPageIdx*<br/>
+[in] Sayfasının sıfır tabanlı dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İle belirtilen sayfadaki tüm grupları kaldırır *nPageIdx*, veya yalnızca bir varsayılan sayfa varsa tüm grupları.  
@@ -1399,8 +1399,8 @@ void RemoveAllTasks(int nGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Grup sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Grup sıfır tabanlı dizini belirtir.  
   
 ##  <a name="removegroup"></a>  CMFCTasksPane::RemoveGroup  
  Bir grubu kaldırır.  
@@ -1410,8 +1410,8 @@ void RemoveGroup(int nGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Kaldırmak için grubun sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Kaldırmak için grubun sıfır tabanlı dizini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, tek bir grup kaldırır. Tüm grupları kaldırmak için çağrı [CMFCTasksPane::RemoveAllGroups](#removeallgroups) yerine.  
@@ -1426,8 +1426,8 @@ void RemovePage(int nPageIdx);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPageIdx*  
- Sayfasında, kaldırmak için sıfır tabanlı dizini belirtir.  
+*nPageIdx*<br/>
+[in] Sayfasında, kaldırmak için sıfır tabanlı dizini belirtir.  
   
 ##  <a name="removetask"></a>  CMFCTasksPane::RemoveTask  
  Bir görev, bir görev grubundan kaldırır.  
@@ -1440,14 +1440,14 @@ BOOL RemoveTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görev grubunun kaldırmak için görevini içeren sıfır tabanlı dizinini belirtir.  
+*Ngrup*<br/>
+[in] Görev grubunun kaldırmak için görevini içeren sıfır tabanlı dizinini belirtir.  
   
- [in] *nGörev*  
- Görevi kaldırmak için sıfır tabanlı dizini belirtir.  
+*nGörev*<br/>
+[in] Görevi kaldırmak için sıfır tabanlı dizini belirtir.  
   
- [in] *bRedraw*  
- Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
+*bRedraw*<br/>
+[in] Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşlev başarılı olursa TRUE; FALSE ise *Ngrup* veya *nGörev* geçersiz.  
@@ -1463,8 +1463,8 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- [in] *nIndex*  
+*lpszProfileName*<br/>
+[in] [in] *nIndex*  
  [in] *uiID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -1491,8 +1491,8 @@ void SetActivePage(int nPageIdx);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPageIdx*  
- Görüntülenecek sayfasının sıfır tabanlı dizinini belirtir.  
+*nPageIdx*<br/>
+[in] Görüntülenecek sayfasının sıfır tabanlı dizinini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, onaylar *nPageIdx* geçersiz.  
@@ -1505,8 +1505,8 @@ void SetCaption(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszName*  
- Resim yazısı adını belirtir.  
+*lpszName*<br/>
+[in] Resim yazısı adını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir görev bölmesi, birden fazla sayfa varsa, varsayılan sayfada bu işlevi kullanarak ayarlanmış başlık vardır.  
@@ -1519,8 +1519,8 @@ void SetGroupCaptionHeight(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Açıklamalı alt yazı yüksekliğini belirtir.  
+*n*<br/>
+[in] Açıklamalı alt yazı yüksekliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kenar boşlukları görev bölmesi öğeleri özelleştirmek için bu yöntemi çağırın.  
@@ -1535,8 +1535,8 @@ void SetGroupCaptionHorzOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Grup başlığı yatay uzaklığını belirtir.  
+*n*<br/>
+[in] Grup başlığı yatay uzaklığını belirtir.  
   
 ##  <a name="setgroupcaptionvertoffset"></a>  CMFCTasksPane::SetGroupCaptionVertOffset  
  Bir Grup başlığını dikey uzaklığı belirler.  
@@ -1546,8 +1546,8 @@ void SetGroupCaptionVertOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Grup başlığını piksel cinsinden dikey uzaklığını belirtir.  
+*n*<br/>
+[in] Grup başlığını piksel cinsinden dikey uzaklığını belirtir.  
   
 ##  <a name="setgroupname"></a>  CMFCTasksPane::SetGroupName  
  Grup adını ayarlar.  
@@ -1559,11 +1559,11 @@ BOOL SetGroupName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Grup sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Grup sıfır tabanlı dizini belirtir.  
   
- [in] *lpszGroupName*  
- Grubun adını belirtir.  
+*lpszGroupName*<br/>
+[in] Grubun adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Grup adı başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
@@ -1579,14 +1579,14 @@ BOOL SetGroupTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Grup sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Grup sıfır tabanlı dizini belirtir.  
   
- [in] *rengi*  
- Metin rengini belirtir.  
+*Renk*<br/>
+[in] Metin rengini belirtir.  
   
- [in] *colorHot*  
- Vurgulanan grubun metin rengini belirtir. -1 ise, varsayılan Vurgu rengi kullanılır.  
+*colorHot*<br/>
+[in] Vurgulanan grubun metin rengini belirtir. -1 ise, varsayılan Vurgu rengi kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Grubun metin rengini başarıyla değiştirilmişse TRUE; Aksi takdirde FALSE.  
@@ -1599,8 +1599,8 @@ void SetGroupVertOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Dikey uzaklığını belirtir.  
+*n*<br/>
+[in] Dikey uzaklığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Dikey uzaklık bir görev grubu ve görev bölmesinde kenarlığı arasındaki uzaklığı dayalıdır.  
@@ -1615,8 +1615,8 @@ void SetHorzMargin(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Kenar boşluğunun piksel cinsinden belirtir.  
+*n*<br/>
+[in] Kenar boşluğunun piksel cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yatay boşluğu, bir görev bölmesi ve istemci alanının üst ve alt kenarları arasındaki uzaklık olur.  
@@ -1636,17 +1636,17 @@ void SetIconsList(HIMAGELIST hIcons);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiImageListResID*  
- Görüntü listesi kaynak Kimliğini belirtir.  
+*uiImageListResID*<br/>
+[in] Görüntü listesi kaynak Kimliğini belirtir.  
   
- [in] *cx*  
- Görüntü listesinden simgeler boyutunu belirtir.  
+*CX*<br/>
+[in] Görüntü listesinden simgeler boyutunu belirtir.  
   
- [in] *clrTransparent*  
- Saydam rengini belirtir.  
+*clrTransparent*<br/>
+[in] Saydam rengini belirtir.  
   
- [in] *hIcons*  
- Görev bölmesi simgelerini içeren görüntü listesini belirtir.  
+*hIcons*<br/>
+[in] Görev bölmesi simgelerini içeren görüntü listesini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework simgeleri bir görüntü listesinde de depolar. Görevler, bu listede depolanan simgeler ile ilişkilidir.  
@@ -1663,11 +1663,11 @@ void SetPageCaption(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPageIdx*  
- Sayfasının sıfır tabanlı dizinini belirtir.  
+*nPageIdx*<br/>
+[in] Sayfasının sıfır tabanlı dizinini belirtir.  
   
- [in] *lpszName*  
- Sayfada görüntülemek için açıklamalı alt yazı metni belirtir.  
+*lpszName*<br/>
+[in] Sayfada görüntülemek için açıklamalı alt yazı metni belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir görev bölmesi, birden fazla sayfa varsa, varsayılan sayfada bu yöntemi kullanarak ayarlanmış başlık vardır.  
@@ -1683,14 +1683,14 @@ BOOL SetTaskName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görev grubu sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Görev grubu sıfır tabanlı dizini belirtir.  
   
- [in] *nGörev*  
- Görevin sıfır tabanlı dizinini belirtir.  
+*nGörev*<br/>
+[in] Görevin sıfır tabanlı dizinini belirtir.  
   
- [in] *lpszTaskName*  
- Görev adını belirtir.  
+*lpszTaskName*<br/>
+[in] Görev adını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev adı başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
@@ -1703,8 +1703,8 @@ void SetTasksHorzOffset(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Yatay uzaklığını belirtir.  
+*n*<br/>
+[in] Yatay uzaklığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yatay uzaklık bir grubun sol ve sağ kenarları piksel cinsinden uzaklık dayalıdır.  
@@ -1749,17 +1749,17 @@ BOOL SetTaskTextColor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Görev grubunun görevi içeren sıfır tabanlı dizinini belirtir.  
+*Ngrup*<br/>
+[in] Görev grubunun görevi içeren sıfır tabanlı dizinini belirtir.  
   
- [in] *nGörev*  
- Görevin sıfır tabanlı dizinini belirtir.  
+*nGörev*<br/>
+[in] Görevin sıfır tabanlı dizinini belirtir.  
   
- [in] *rengi*  
- Görev için metin rengini belirtir.  
+*Renk*<br/>
+[in] Görev için metin rengini belirtir.  
   
- [in] *colorHot*  
- Vurgulanan grubun metin rengini belirtir. Bu yöntem-1, varsayılan Vurgu rengi kullanır.  
+*colorHot*<br/>
+[in] Vurgulanan grubun metin rengini belirtir. Bu yöntem-1, varsayılan Vurgu rengi kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev için metin rengi başarılı bir şekilde ayarlandıysa TRUE; Aksi takdirde FALSE.  
@@ -1772,8 +1772,8 @@ void SetVertMargin(int n = -1);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *n*  
- Ayarlanacak dikey boşluğu belirtir.  
+*n*<br/>
+[in] Ayarlanacak dikey boşluğu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir görev bölmesi ve istemci alanını dikey kenarları arasındaki uzaklık dikey boşluğu olur.  
@@ -1796,14 +1796,14 @@ BOOL SetWindowHeight(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Pencere denetim içeren grubunu sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Pencere denetim içeren grubunu sıfır tabanlı dizini belirtir.  
   
- [in] *hwndTask*  
- Pencere denetim tanıtıcısını belirtir.  
+*hwndTask*<br/>
+[in] Pencere denetim tanıtıcısını belirtir.  
   
- [in] *nWndHeight*  
- Ayarlanacak yüksekliğini belirtir.  
+*nWndHeight*<br/>
+[in] Ayarlanacak yüksekliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pencere denetimin yüksekliği başarılı bir şekilde ayarlandıysa TRUE; FALSE ise *Ngrup* geçersiz veya *hwndTask* yok.  
@@ -1835,17 +1835,17 @@ BOOL ShowTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Ngrup*  
- Grup sıfır tabanlı dizini belirtir.  
+*Ngrup*<br/>
+[in] Grup sıfır tabanlı dizini belirtir.  
   
- [in] *nGörev*  
- Göstermek veya gizlemek için görev sıfır tabanlı dizini belirtir.  
+*nGörev*<br/>
+[in] Göstermek veya gizlemek için görev sıfır tabanlı dizini belirtir.  
   
- [in] *bBilgi Göster*  
- Görev göstermek için TRUE; Görev gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Görev göstermek için TRUE; Görev gizlemek için FALSE.  
   
- [in] *bRedraw*  
- Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
+*bRedraw*<br/>
+[in] Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev başarıyla gösterilen veya gizli gerekiyorsa TRUE; Görev ve belirtilen grup mevcut değilse FALSE.  
@@ -1864,14 +1864,14 @@ BOOL ShowTaskByCmdId(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCommandID*  
- Göstermek veya gizlemek için görev komut Kimliğini belirtir.  
+*uiCommandID*<br/>
+[in] Göstermek veya gizlemek için görev komut Kimliğini belirtir.  
   
- [in] *bBilgi Göster*  
- Görev göstermek için TRUE; Görev gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Görev göstermek için TRUE; Görev gizlemek için FALSE.  
   
- [in] *bRedraw*  
- Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
+*bRedraw*<br/>
+[in] Görev bölmesinde yeniden çizmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görev başarıyla gösterilen veya gizli gerekiyorsa TRUE; YANLIŞ bir görev ile belirtilen komut kimliği yok.  

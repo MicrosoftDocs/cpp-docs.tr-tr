@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9a3fdc9b094ebb81db1bfe841d7974c5df89ca0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 627e6bfdb33561e3d4be55aebf07e831b6cdc035
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464775"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705139"
 ---
 # <a name="writemsr"></a>__writemsr
 **Microsoft'a özgü**  
@@ -40,11 +40,11 @@ void __writemsr(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Register`  
- Model belirli kaydolun.  
+*Kaydolun*<br/>
+[in] Model belirli kaydolun.  
   
- [in] `Value`  
- Yazılacak değer.  
+*Değer*<br/>
+[in] Yazılacak değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

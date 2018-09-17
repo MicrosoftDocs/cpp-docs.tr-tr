@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132841c8c24e2b625dad218aaaef2a19cba0a264
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1f52c2c2ca60f66218b669201f293ca377d4ca5a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680504"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707024"
 ---
 # <a name="vmxvmwrite"></a>__vmx_vmwrite
 **Microsoft'a özgü**  
@@ -42,8 +42,8 @@ unsigned char __vmx_vmwrite(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `Field`|Yazmak için Windows VMCS alan.|  
-|[in] `FieldValue`|Windows VMCS alanına yazılacak değer.|  
+|*Alan*|[in] Yazmak için Windows VMCS alan.|  
+|*FieldValue*|[in] Windows VMCS alanına yazılacak değer.|  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  0  

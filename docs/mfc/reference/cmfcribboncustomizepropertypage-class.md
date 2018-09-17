@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 542c34fc02eca1f090072f49b9688d3edd4d78e6
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 7bb2f799dedd11ed1c8e0e909e7a5b1dcbb7adc5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040681"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45707515"
 ---
 # <a name="cmfcribboncustomizepropertypage-class"></a>CMFCRibbonCustomizePropertyPage sınıfı
 Özel bir sayfa için uygulayan **Özelleştir** Şerit tabanlı uygulamalarda iletişim kutusu.  
@@ -45,24 +45,24 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 |||  
 |-|-|  
 |Ad|Açıklama|  
-|[CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage](#cmfcribboncustomizepropertypage)|Oluşturan bir `CMFCRibbonCustomizePropertyPage` nesnesi.|  
-|`CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage`|Yok Edicisi.|  
+|[CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage](#cmfcribboncustomizepropertypage)|Oluşturur bir `CMFCRibbonCustomizePropertyPage` nesne.|  
+|`CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |||  
 |-|-|  
 |Ad|Açıklama|  
-|[CMFCRibbonCustomizePropertyPage::AddCustomCategory](#addcustomcategory)|Özel bir kategori ekler **komutları** birleşik giriş kutusu.|  
-|`CMFCRibbonCustomizePropertyPage::CreateObject`|Bu sınıf türü dinamik bir örneğini oluşturmak için framework tarafından kullanıldı.|  
-|`CMFCRibbonCustomizePropertyPage::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
-|[CMFCRibbonCustomizePropertyPage::OnOK](#onok)|Sistem tarafından bir kullanıcı tıkladığında adlı **Tamam** üzerinde **Özelleştir** iletişim kutusu.|  
+|[CMFCRibbonCustomizePropertyPage::AddCustomCategory](#addcustomcategory)|Ekler için özel bir kategori **komutları** birleşik giriş kutusu.|  
+|`CMFCRibbonCustomizePropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
+|`CMFCRibbonCustomizePropertyPage::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
+|[CMFCRibbonCustomizePropertyPage::OnOK](#onok)|Sistem tarafından bir kullanıcı tıkladığında çağrılır **Tamam** üzerinde **Özelleştir** iletişim kutusu.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Özel komutlar eklemek istiyorsanız **Özelleştir** iletişim kutusu, AFX_WM_ON_RIBBON_CUSTOMIZE iletiyi işlemesi gerekir. İleti işleyicisi örneği bir `CMFCRibbonCustomizePropertyPage` yığında nesnesi. Özel komutlar listesini oluşturmak ve ardından arama `AddCustomCategory` yeni sayfa eklemek için **Özelleştir** iletişim kutusu.  
+ Özel komutları eklemek istiyorsanız **Özelleştir** iletişim kutusu, AFX_WM_ON_RIBBON_CUSTOMIZE iletiyi işlemesi gerekir. İleti işleyicisi örneği bir `CMFCRibbonCustomizePropertyPage` yığında nesne. Özel komutların bir listesini oluşturun ve ardından çağırın `AddCustomCategory` yeni sayfasına eklenecek **Özelleştir** iletişim kutusu.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCRibbonCustomizePropertyPage` nesne ve özel bir kategori eklemek için.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonCustomizePropertyPage` nesne ve özel bir kategori eklemek için.  
   
  [!code-cpp[NVC_MFC_RibbonApp#22](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizepropertypage-class_1.cpp)]  
   
@@ -85,7 +85,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
  **Başlık:** afxribboncustomizedialog.h  
   
 ##  <a name="addcustomcategory"></a>  CMFCRibbonCustomizePropertyPage::AddCustomCategory  
- Özel bir kategori ekler **komutları** birleşik giriş kutusu.  
+ Ekler için özel bir kategori **komutları** birleşik giriş kutusu.  
   
 ```  
 void AddCustomCategory(
@@ -98,32 +98,32 @@ void AddCustomCategory(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *lpszName*|Özel kategori adı belirtir.|  
-|[in] *lstIDS*|Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
+|*lpszName*|[in] Özel kategori adını belirtir.|  
+|*lstIDS*|[in] Özel kategoride gösterilecek Şerit komut kimlikleri içeriyor.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem adlı bir kategori ekler *lpszName* için **komutları** birleşik giriş kutusu. Komutları kullanıcı kategorisini seçtiğinde, belirtilen *lstIDS* komutu listede görüntülenir.  
+ Bu yöntem olarak adlandırılmış kategorisi ekler *lpszName* için **komutları** birleşik giriş kutusu. Komutlar kullanıcı kategorisini seçtiğinde, belirtilen *lstIDS* komut listede görünür.  
   
 ##  <a name="cmfcribboncustomizepropertypage"></a>  CMFCRibbonCustomizePropertyPage::CMFCRibbonCustomizePropertyPage  
- Oluşturan bir `CMFCRibbonCustomizePropertyPage` nesnesi.  
+ Oluşturur bir `CMFCRibbonCustomizePropertyPage` nesne.  
   
 ```  
 CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRibbonBar*  
- Kendisi için bir Şerit denetimi için bir işaretçi özelleştirmek için seçenekleri.  
+*pRibbonBar*<br/>
+[in] Bir Şerit denetimi kendisi için bir işaretçi özelleştirmek için seçenek.  
   
 ##  <a name="onok"></a>  CMFCRibbonCustomizePropertyPage::OnOK  
- Bir kullanıcı tıkladığında sistem tarafından Calleld **Tamam** üzerinde **Özelleştir** iletişim kutusu.  
+ Kullanıcı tıkladığında sistem tarafından Calleld **Tamam** üzerinde **Özelleştir** iletişim kutusu.  
   
 ```  
 virtual void OnOK();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama seçili seçeneklerini uygular **Özelleştir** hızlı erişim araç iletişim kutusu.  
+ Varsayılan uygulama, seçilen seçeneklerin geçerlidir **Özelleştir** hızlı erişim araç çubuğu iletişim kutusu.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

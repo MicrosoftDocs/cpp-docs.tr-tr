@@ -1,5 +1,5 @@
 ---
-title: C veya C++ dili çalıştırılabilir öğelerinde kullanmak için C işlevlerini dışarı aktarma | Microsoft Docs
+title: C veya C++ dili çalıştırılabilirlerinde kullanmak için C işlevlerini dışarı aktarma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,61 +18,62 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee1d572bbfaa31ac626bfeb2b6ed7f61604628c8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 88d9b18620c2e648ab519a59745876569b66ec30
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367712"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45708103"
 ---
-# <a name="exporting-c-functions-for-use-in-c-or-c-language-executables"></a>C ya da C++ Dili Çalıştırılabilir Öğelerinde Kullanmak için C İşlevlerini Dışarı Aktarma  
-  
-C'de yazılmış C ya da C++ dili modülünden erişmek istediğiniz, kullanmanız gereken bir DLL işlevleri varsa **__cplusplus** dili belirlemek için önişlemci makrosu derleniyor ve bunlar bildirme C++ dili modülünden kullanılıyorlarsa C bağlantısı ile çalışır. Bu teknik kullanıyorsanız ve için DLL üstbilgi dosyaları sağlamak, bu işlevler değişiklik olmadan C ve C++ kullanıcılar tarafından kullanılabilir.  
-  
-Aşağıdaki kod C ve C++ istemci uygulamaları tarafından kullanılabilecek bir üstbilgi dosyası gösterir:  
-  
-```h  
-// MyCFuncs.h  
-#ifdef __cplusplus  
-extern "C" {  // only need to export C interface if  
-              // used by C++ source code  
-#endif  
-  
-__declspec( dllimport ) void MyCFunc();  
-__declspec( dllimport ) void AnotherCFunc();  
-  
-#ifdef __cplusplus  
-}  
-#endif  
-```  
-  
-C++ yürütülebilir C işlevlerini bağlamanız gerekir ve işlev bildirim başlık dosyaları yukarıdaki tekniği C++ kaynak dosyasına kullanmamış, C işlev adlarını dekorasyon derleyici önlemek için aşağıdakileri yapın:  
-  
-```cpp  
-extern "C" {  
-#include "MyCHeader.h"  
-}  
-```  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [.Def dosyaları kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)  
-  
--   [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)  
-  
--   [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarmak](../build/exporting-and-importing-using-afx-ext-class.md)  
-  
--   [Hangi dışarı aktarma yöntemini kullanacağınızı belirleme](../build/determining-which-exporting-method-to-use.md)  
-  
--   [__Declspec(dllimport) kullanarak bir uygulama içeri aktarmak için](../build/importing-into-an-application-using-declspec-dllimport.md)  
-  
--   [DLL başlatma](../build/run-time-library-behavior.md#initializing-a-dll)  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Düzenlenmiş adlar](../build/reference/decorated-names.md)  
-  
--   [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)
+# <a name="exporting-c-functions-for-use-in-c-or-c-language-executables"></a>C ya da C++ Dili Çalıştırılabilir Öğelerinde Kullanmak için C İşlevlerini Dışarı Aktarma
+
+C için yazılmış C ya da C++ dili modülünden erişmek istiyorsanız, kullanmanız gereken bir DLL'de işlevleri varsa **__cplusplus** hangi dil belirlemek için önişlemci makrosu derleniyor ve bunlar bildirme C++ dil modülünden kullanılıyorlarsa C bağlaması olan işlevler. Bu tekniği kullanın ve başlık dosyaları için DLL dosyanızı sağlamak, bu işlevler, değişikliğe sahip C ve C++ kullanıcılar tarafından kullanılabilir.
+
+Aşağıdaki kod, C ve C++ istemci uygulamaları tarafından kullanılabilecek bir üstbilgi dosyası gösterir:
+
+```h
+// MyCFuncs.h
+#ifdef __cplusplus
+extern "C" {  // only need to export C interface if
+              // used by C++ source code
+#endif
+
+__declspec( dllimport ) void MyCFunc();
+__declspec( dllimport ) void AnotherCFunc();
+
+#ifdef __cplusplus
+}
+#endif
+```
+
+C işlevlerinin C++ yürütülebilir bağlamanız gerekir ve C++ kaynak dosyada işlev bildirimi üst bilgi dosyaları yukarıdaki tekniği kullanmadığınız, derleyicinin C işlev adlarını dekorasyon gelen önlemek için aşağıdakileri yapın:
+
+```cpp
+extern "C" {
+#include "MyCHeader.h"
+}
+```
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [.Def dosyalarını kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-def-files.md)
+
+- [__Declspec(dllexport) kullanarak DLL'den dışarı aktarma](../build/exporting-from-a-dll-using-declspec-dllexport.md)
+
+- [AFX_EXT_CLASS kullanarak içeri ve dışarı aktarma](../build/exporting-and-importing-using-afx-ext-class.md)
+
+- [Hangi dışa aktarma yönteminin kullanılacağını belirleme](../build/determining-which-exporting-method-to-use.md)
+
+- [__Declspec(dllimport) kullanarak bir uygulamayı içeri aktarın](../build/importing-into-an-application-using-declspec-dllimport.md)
+
+- [DLL'yi Başlat](../build/run-time-library-behavior.md#initializing-a-dll)
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Düzenlenmiş adlar](../build/reference/decorated-names.md)
+
+- [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DLL'den Dışarı Aktarma](../build/exporting-from-a-dll.md)

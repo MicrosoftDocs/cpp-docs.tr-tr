@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13f411f9f50b1a498dba718b41245f8fbb7c6e79
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a6bed16f338c5ee3333529613189fe03ad7e3ec3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37851593"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45709559"
 ---
 # <a name="cmfclinkctrl-class"></a>CMFCLinkCtrl sınıfı
 `CMFCLinkCtrl` Sınıfı bir düğmeyi köprü olarak görüntüler ve düğme tıklandığında bağlantı hedefini çağırır.  
@@ -91,11 +91,11 @@ virtual void OnDrawFocusRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rectClient*  
- Bağlantı denetimi sınırların bir dikdörtgen.  
+*rectClient*<br/>
+[in] Bağlantı denetimi sınırların bir dikdörtgen.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Düğme odak dikdörtgenini çizmek için kendi kodunuzu kullanmak istediğinizde bu yöntemi yok sayın.  
@@ -108,8 +108,8 @@ void SetURL(LPCTSTR lpszURL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszURL*  
- Görüntülenecek düğme metni.  
+*lpszURL*<br/>
+[in] Görüntülenecek düğme metni.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -121,8 +121,8 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPrefix*  
- URL protokolü öneki.  
+*lpszPrefix*<br/>
+[in] URL protokolü öneki.  
   
 ### <a name="remarks"></a>Açıklamalar  
  URL öneki ayarlamak için bu yöntemi kullanın. Önek düğmenin yüzüne görüntülenmez, ancak URL'nin hedefine Gözat yardımcı olması için kullanın.  
@@ -137,11 +137,11 @@ virtual CSize SizeToContent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bVCenter*  
- Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasındaki bit eşlem merkezi için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
+*bVCenter*<br/>
+[in] Düğme metni ve dikey olarak üst ve alt bağlantı denetimi arasındaki bit eşlem merkezi için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
   
- [in] *bHCenter*  
- Düğme metni ve bit eşlem ve bağlantı denetimin sol tarafında arasındaki yatay olarak ortalamak için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
+*bHCenter*<br/>
+[in] Düğme metni ve bit eşlem ve bağlantı denetimin sol tarafında arasındaki yatay olarak ortalamak için TRUE; Aksi takdirde FALSE. Varsayılan değer FALSE olur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CSize](../../atl-mfc-shared/reference/csize-class.md) yeni bağlantı denetiminin boyutunu içeren nesne.  

@@ -170,12 +170,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08b8aa623f79c32303a0d5fb84c9b865bff918d9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 2ddfeb41f9036e783fbf2b303a796fddf48405c9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683583"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701798"
 ---
 # <a name="cdockingmanager-class"></a>CDockingManager sınıfı
 Ana çerçeve penceresindeki yerleştirme düzeni denetleyen temel işlevselliğini uygular.  
@@ -320,11 +320,11 @@ BOOL AddDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bilgileri*  
- Bir başvuru içeren bir bilgi yapısı yerleştirme bölmesi hizalama.  
+*Bilgileri*<br/>
+[in] Bir başvuru içeren bir bilgi yapısı yerleştirme bölmesi hizalama.  
   
- [out] *ppDockBar*  
- Yeni bir yerleştirme bölmesi için bir işaretçi işaretçisi.  
+*ppDockBar*<br/>
+[out] Yeni bir yerleştirme bölmesi için bir işaretçi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme bölmesi başarıyla oluşturulursa TRUE; FALSE Aksi takdirde.  
@@ -337,8 +337,8 @@ void AddHiddenMDITabbedBar(CDockablePane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- İşaretçi çubuk bölmesi  
+*pBar*<br/>
+[in] İşaretçi çubuk bölmesi  
   
 ##  <a name="addpane"></a>  CDockingManager::AddPane  
  Bir bölme yerleştirme Yöneticisi ile kaydeder.  
@@ -352,17 +352,17 @@ BOOL AddPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *pWnd*  
- Yerleştirme Manager'a eklenecek bölmesinde belirtir.  
+*pWnd*<br/>
+[out içinde] Yerleştirme Manager'a eklenecek bölmesinde belirtir.  
   
- [in] *bTail*  
- Bölmenin yerleştirme yöneticisini bölmeleri listesinin sonuna eklemek için TRUE; Aksi takdirde FALSE.  
+*bTail*<br/>
+[in] Bölmenin yerleştirme yöneticisini bölmeleri listesinin sonuna eklemek için TRUE; Aksi takdirde FALSE.  
   
- [in] *bAutoHide*  
- Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.  
+*bAutoHide*<br/>
+[in] Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.  
   
- [in] *bInsertForOuterEdge*  
- Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.  
+*bInsertForOuterEdge*<br/>
+[in] Yalnızca iç kullanım içindir. Her zaman varsayılan değeri FALSE kullanın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmenin yerleştirme yöneticisiyle başarıyla kaydedildi TRUE; Aksi takdirde FALSE.  
@@ -378,8 +378,8 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hdwp*  
- Ertelenmiş pencere konumu yapısı belirtir. Daha fazla bilgi için [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).  
+*hdwp*<br/>
+[in] Ertelenmiş pencere konumu yapısı belirtir. Daha fazla bilgi için [Windows veri türleri](/windows/desktop/WinProg/windows-data-types).  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -391,8 +391,8 @@ virtual BOOL AddMiniFrame(CPaneFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Çerçeve işaretçisi.  
+*pWnd*<br/>
+[in] Çerçeve işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çerçeve mini çerçeve listesinde değilse ve başarılı bir şekilde eklendiğinde TRUE; FALSE Aksi takdirde.  
@@ -416,11 +416,11 @@ virtual BOOL AdjustRectToClientArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectResult*  
- Bir başvuru bir `CRect` nesnesi  
+*rectResult*<br/>
+[in] Bir başvuru bir `CRect` nesnesi  
   
- [in] *dwAlignment*  
- Hizalama `CRect` nesnesi  
+*dwAlignment*<br/>
+[in] Hizalama `CRect` nesnesi  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise hizalamasını `CRect` nesne ayarlandı; FALSE Aksi takdirde.  
@@ -446,11 +446,11 @@ void AlignAutoHidePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDefaultSlider*  
- Yerleştirme kaydırıcı bölmesi.  
+*pDefaultSlider*<br/>
+[in] Yerleştirme kaydırıcı bölmesi.  
   
- [in] *bIsVisible*  
- Yerleştirme bölmesi görünür ise TRUE; FALSE Aksi takdirde.  
+*bIsVisible*<br/>
+[in] Yerleştirme bölmesi görünür ise TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="autohidepane"></a>  CDockingManager::AutoHidePane  
  Otomatik Gizle araç oluşturur.  
@@ -462,11 +462,11 @@ CMFCAutoHideToolBar* AutoHidePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- İşaretçi çubuk bölmesi.  
+*pBar*<br/>
+[in] İşaretçi çubuk bölmesi.  
   
- [in] *pCurrAutoHideToolBar*  
- Bir Otomatik Gizle araç için bir işaretçi.  
+*pCurrAutoHideToolBar*<br/>
+[in] Bir Otomatik Gizle araç için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Otomatik Gizle araç oluşturulmadı yoksa NULL; Aksi halde yeni araç için bir işaretçi.  
@@ -481,11 +481,11 @@ void BringBarsToTop(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Diğer windows üstüne ulaşırlar dock çubukları hizalaması.  
+*dwAlignment*<br/>
+[in] Diğer windows üstüne ulaşırlar dock çubukları hizalaması.  
   
- [in] *bExcludeDockedBars*  
- Yerleşik çubukları üstte dışında bırakmak için TRUE; Aksi durumda FALSE.  
+*bExcludeDockedBars*<br/>
+[in] Yerleşik çubukları üstte dışında bırakmak için TRUE; Aksi durumda FALSE.  
   
 ##  <a name="buildpanesmenu"></a>  CDockingManager::BuildPanesMenu  
  Bir menü adları takma bölme ve araç çubukları ekler.  
@@ -497,11 +497,11 @@ void BuildPanesMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *menüsü*  
- Yerleştirme bölmesi ve araç çubukları adları eklemek için bir menü.  
+*Menü*<br/>
+[in] Yerleştirme bölmesi ve araç çubukları adları eklemek için bir menü.  
   
- [in] *bToolbarsOnly*  
- Menüyü tek araç adları eklemek için TRUE; FALSE Aksi takdirde.  
+*bToolbarsOnly*<br/>
+[in] Menüyü tek araç adları eklemek için TRUE; FALSE Aksi takdirde.  
   
 ##  <a name="calcexpecteddockedrect"></a>  CDockingManager::CalcExpectedDockedRect  
  Yerleşik pencere beklenen dikdörtgen hesaplar.  
@@ -516,20 +516,20 @@ void CalcExpectedDockedRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Pencere sabitlemek için bir işaretçi.  
+*pWnd*<br/>
+[in] Pencere sabitlemek için bir işaretçi.  
   
- [in] *ptMouse*  
- Fare konumu.  
+*ptMouse*<br/>
+[in] Fare konumu.  
   
- [out] *rectResult*  
- Hesaplanan dikdörtgen.  
+*rectResult*<br/>
+[out] Hesaplanan dikdörtgen.  
   
- [in] *bDrawTab*  
- Bir sekme çizim için true; Aksi durumda FALSE.  
+*bDrawTab*<br/>
+[in] Bir sekme çizim için true; Aksi durumda FALSE.  
   
- [out] *ppTargetBar*  
- Hedef bölmesine bir işaretçi işaretçisi.  
+*ppTargetBar*<br/>
+[out] Hedef bölmesine bir işaretçi işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, bir kullanıcı tarafından belirtilen noktasına penceresi Sürüklediyseniz, bir pencere kaplayabilir dikdörtgen hesaplar *ptMouse* ve yerleştirilmiş vardır.  
@@ -542,8 +542,8 @@ BOOL Create(CFrameWnd* pParentWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- Üst çerçevenin takma Yöneticisi için bir işaretçi. Bu değer NULL olmamalıdır.  
+*pParentWnd*<br/>
+[in] Üst çerçevenin takma Yöneticisi için bir işaretçi. Bu değer NULL olmamalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman TRUE.  
@@ -562,23 +562,23 @@ virtual AFX_CS_STATUS DeterminePaneAndStatus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pt*  
- Denetlenecek bölmenin konumu.  
+*PT*<br/>
+[in] Denetlenecek bölmenin konumu.  
   
- [in] *nSensitivity*  
- Her işaretli bölmesinin Pencere dikdörtgeni artırmak için değer. Belirtilen noktasını artan bu bölgede değilse bir bölmesinde arama ölçütlerini karşılar.  
+*nSensitivity*<br/>
+[in] Her işaretli bölmesinin Pencere dikdörtgeni artırmak için değer. Belirtilen noktasını artan bu bölgede değilse bir bölmesinde arama ölçütlerini karşılar.  
   
- [in] *dwEnabledAlignment*  
- Yerleştirme bölmesi hizalaması.  
+*dwEnabledAlignment*<br/>
+[in] Yerleştirme bölmesi hizalaması.  
   
- [out] *ppTargetBar*  
- Hedef bölmesine bir işaretçi işaretçisi.  
+*ppTargetBar*<br/>
+[out] Hedef bölmesine bir işaretçi işaretçisi.  
   
- [in] *pBarToIgnore*  
- Yöntem yoksayar bölme.  
+*pBarToIgnore*<br/>
+[in] Yöntem yoksayar bölme.  
   
- [in] *pBarToDock*  
- Sabitlenmiş bölme.  
+*pBarToDock*<br/>
+[in] Sabitlenmiş bölme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme durumu.  
@@ -601,8 +601,8 @@ void DisableRestoreDockState(BOOL bDisable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *devre dışı bırakın*  
- Kayıt defterinden yerleştirme düzeni yüklenmesini devre dışı bırakma için true; Aksi takdirde FALSE.  
+*devre dışı bırakın*<br/>
+[in] Kayıt defterinden yerleştirme düzeni yüklenmesini devre dışı bırakma için true; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulama durumu yüklenirken geçerli düzen bölmeleri ve araç çubukları yerleştirme korumaya aldığınızda bu yöntemi çağırın.  
@@ -618,14 +618,14 @@ void DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- İşaretçi çubuk bölmesi için yerleştirmek için.  
+*pBar*<br/>
+[in] İşaretçi çubuk bölmesi için yerleştirmek için.  
   
- [in] *nDockBarID*  
- Sabitlemek için çubuğu kimliği.  
+*nDockBarID*<br/>
+[in] Sabitlemek için çubuğu kimliği.  
   
- [in] *lpRect*  
- Hedef dikdörtgenin.  
+*lpRect*<br/>
+[in] Hedef dikdörtgenin.  
   
 ##  <a name="dockpaneleftof"></a>  CDockingManager::DockPaneLeftOf  
  Bir bölme, başka bir bölmesinin solunda docks.  
@@ -637,11 +637,11 @@ BOOL DockPaneLeftOf(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBarToDock*  
- Bir işaretçi solunda yerleştirilemediğinde bölmesine *pTargetBar*.  
+*pBarToDock*<br/>
+[in] Bir işaretçi solunda yerleştirilemediğinde bölmesine *pTargetBar*.  
   
- [in] *pTargetBar*  
- Hedef bölmesi için bir işaretçi.  
+*pTargetBar*<br/>
+[in] Hedef bölmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde başarıyla yerleştirilmiş TRUE; Aksi takdirde FALSE.  
@@ -654,8 +654,8 @@ BOOL EnableAutoHidePanes(DWORD dwStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwStyle*  
- Yerleştirme hizalaması.  
+*dwStyle*<br/>
+[in] Yerleştirme hizalaması.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme bölmesi başarıyla oluşturulursa TRUE; FALSE Aksi takdirde.  
@@ -668,8 +668,8 @@ BOOL EnableDocking(DWORD dwStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwStyle*  
- Yerleştirme hizalaması.  
+*dwStyle*<br/>
+[in] Yerleştirme hizalaması.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme bölmesi başarıyla oluşturulursa TRUE; FALSE Aksi takdirde.  
@@ -682,8 +682,8 @@ static void EnableDockSiteMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Dock sitesine menüsünü etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Dock sitesine menüsünü etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bölmenin yerleştirme durumunu değiştirmek için aşağıdaki seçeneklerden dock sitesine menü görüntüler:  
@@ -710,17 +710,17 @@ void EnablePaneContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- TRUE ise, kitaplık otomatik bağlam menüsü için desteği etkinleştirir; FALSE ise otomatik bağlam menüsü için destek kitaplığı kapatır.  
+*bSistemlerde*<br/>
+[in] TRUE ise, kitaplık otomatik bağlam menüsü için desteği etkinleştirir; FALSE ise otomatik bağlam menüsü için destek kitaplığı kapatır.  
   
- [in] *uiCustomizeCmd*  
- Bir komut kimliği **Özelleştir** menüsünde öğesi.  
+*uiCustomizeCmd*<br/>
+[in] Bir komut kimliği **Özelleştir** menüsünde öğesi.  
   
- [in] *strCustomizeText*  
- Metnin **Özelleştir** öğesi.  
+*strCustomizeText*<br/>
+[in] Metnin **Özelleştir** öğesi.  
   
- [in] *bToolbarsOnly*  
- TRUE ise, menü yalnızca uygulama araç çubukları listesini görüntüler; FALSE ise, kitaplık bu listeye uygulama yerleştirme bölmesine ekler.  
+*bToolbarsOnly*<br/>
+[in] TRUE ise, menü yalnızca uygulama araç çubukları listesini görüntüler; FALSE ise, kitaplık bu listeye uygulama yerleştirme bölmesine ekler.  
   
 ##  <a name="finddocksite"></a>  CDockingManager::FindDockSite  
  Çubuk alır bölmesinde belirtilen konumda olan ve belirtilen hizalamaya sahip.  
@@ -732,11 +732,11 @@ virtual CDockSite* FindDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Hizalama çubuğu bölmesi.  
+*dwAlignment*<br/>
+[in] Hizalama çubuğu bölmesi.  
   
- [in] *bOuter*  
- TRUE ise denetim çubuklarını baş konumu listesinde çubuğunda alın. Aksi takdirde, Denetim çubuklarını kuyruk konumu listesinde çubuğunda alın.  
+*bOuter*<br/>
+[in] TRUE ise denetim çubuklarını baş konumu listesinde çubuğunda alın. Aksi takdirde, Denetim çubuklarını kuyruk konumu listesinde çubuğunda alın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen hizalamaya sahip yerleştirme bölmesi; Bulunmazsa null değerini DÖNDÜRÜR.  
@@ -751,11 +751,11 @@ virtual CBasePane* FindPaneByID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uBarID*  
- Bulunacak bölmesi denetim Kimliğini belirtir.  
+*uBarID*<br/>
+[in] Bulunacak bölmesi denetim Kimliğini belirtir.  
   
- [in] *bSearchMiniFrames*  
- Tüm kayan bölmeleri aramaya dahil edilmesi için TRUE. Yalnızca yerleşik bölmeler dahil etmek için FALSE.  
+*bSearchMiniFrames*<br/>
+[in] Tüm kayan bölmeleri aramaya dahil edilmesi için TRUE. Yalnızca yerleşik bölmeler dahil etmek için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  [CBasePane](../../mfc/reference/cbasepane-class.md) belirtilen bölmesinde bulunamazsa, belirtilen denetim kimliği ya da NULL olan nesne.  
@@ -770,8 +770,8 @@ virtual CDockSite* FindDockSiteByPane(CPane* pTargetBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTargetBar*  
- Hedef çubuğu bölmesi için bir işaretçi.  
+*pTargetBar*<br/>
+[in] Hedef çubuğu bölmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çubuk hedef çubuğu bölmesinin; kimliğine sahip bölmesi Hiçbir gibi bölmesinde çubuk yoksa null değerini DÖNDÜRÜR.  
@@ -797,14 +797,14 @@ virtual CPaneFrameWnd* FrameFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pt*  
- Noktasını denetlemek için ekran koordinatları olarak belirtir.  
+*PT*<br/>
+[in] Noktasını denetlemek için ekran koordinatları olarak belirtir.  
   
- [in] *pFrameToExclude*  
- Dışlamak için bir çerçeve işaretçisi.  
+*pFrameToExclude*<br/>
+[in] Dışlamak için bir çerçeve işaretçisi.  
   
- [in] *bFloatMultiOnly*  
- Örneklerini olmayan dışlama çerçeveler için true `CMultiPaneFrameWnd`; FALSE Aksi takdirde.  
+*bFloatMultiOnly*<br/>
+[in] Örneklerini olmayan dışlama çerçeveler için true `CMultiPaneFrameWnd`; FALSE Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen noktasını içeren çerçeveyi; Bulunmazsa null değerini DÖNDÜRÜR.  
@@ -819,8 +819,8 @@ void GetClientAreaBounds(CRect& rcClient);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *rcClient*  
- İstemci alanı sınırları içeren dikdörtgen bir başvuru.  
+*rcClient*<br/>
+[out] İstemci alanı sınırları içeren dikdörtgen bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İstemci alanı sınırları içeren dikdörtgen.  
@@ -899,17 +899,17 @@ void GetPaneList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *lstBars*  
- Geçerli yerleştirme manager'ın tüm bölme içerir.  
+*lstBars*<br/>
+[out içinde] Geçerli yerleştirme manager'ın tüm bölme içerir.  
   
- [in] *bIncludeAutohide*  
- Otomatik Gizle modundaki bölmeleri dahil edilmesi için TRUE; Aksi takdirde FALSE.  
+*bIncludeAutohide*<br/>
+[in] Otomatik Gizle modundaki bölmeleri dahil edilmesi için TRUE; Aksi takdirde FALSE.  
   
- [in] *pRTCFilter*  
- BOŞ değilse, döndürülen liste belirtilen çalışma zamanı sınıfının yalnızca bölme içerir.  
+*pRTCFilter*<br/>
+[in] BOŞ değilse, döndürülen liste belirtilen çalışma zamanı sınıfının yalnızca bölme içerir.  
   
- [in] *bIncludeTabs*  
- Sekmeleri dahil edilmesi için TRUE; Aksi takdirde FALSE.  
+*bIncludeTabs*<br/>
+[in] Sekmeleri dahil edilmesi için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yerleştirme Yöneticisi'nde herhangi bir sekmeli bölmelerde varsa, yöntem işaretçileri döndürür [CBaseTabbedPane sınıfı](../../mfc/reference/cbasetabbedpane-class.md) nesneleri ve gerekir listeleme sekmeleri açıkça.  
@@ -958,11 +958,11 @@ void HideAutoHidePanes(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBarToExclude*  
- Bir çubuk gizleme hariç tutmak için bir işaretçi.  
+*pBarToExclude*<br/>
+[in] Bir çubuk gizleme hariç tutmak için bir işaretçi.  
   
- [in] *bImmediately*  
- Bölmeyi hemen gizlemek için TRUE; Otomatik Gizle etkisi bölmesiyle gizlemek için FALSE.  
+*bImmediately*<br/>
+[in] Bölmeyi hemen gizlemek için TRUE; Otomatik Gizle etkisi bölmesiyle gizlemek için FALSE.  
   
 ##  <a name="insertdocksite"></a>  CDockingManager::InsertDockSite  
  Bir yerleştirme bölmesi oluşturur ve denetim çubukları listesine ekler.  
@@ -975,14 +975,14 @@ BOOL InsertDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bilgileri*  
- Yerleştirme bölmesi hizalama bilgilerini içeren yapısı.  
+*Bilgileri*<br/>
+[in] Yerleştirme bölmesi hizalama bilgilerini içeren yapısı.  
   
- [in] *dwAlignToInsertAfter*  
- Yerleştirme bölmesinin hizalaması.  
+*dwAlignToInsertAfter*<br/>
+[in] Yerleştirme bölmesinin hizalaması.  
   
- [out] *ppDockBar*  
- Yerleştirme bölmesine bir işaretçi işaretçisi.  
+*ppDockBar*<br/>
+[out] Yerleştirme bölmesine bir işaretçi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme bölmesi başarıyla oluşturulursa TRUE; FALSE Aksi takdirde.  
@@ -998,14 +998,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bir denetim bölmesi için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bir denetim bölmesi için bir işaretçi.  
   
- [in] *pTarget*  
- Bir hedef bölmesi için bir işaretçi.  
+*pTarget*<br/>
+[in] Bir hedef bölmesi için bir işaretçi.  
   
- [in] *bBu*  
- Hedef bölmenin konumunu sonra bölmesine eklemek için TRUE; FALSE Aksi takdirde.  
+*bBu*<br/>
+[in] Hedef bölmenin konumunu sonra bölmesine eklemek için TRUE; FALSE Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim Masası'nı Denetim çubukları listesine başarıyla eklenirse TRUE; FALSE Aksi takdirde.  
@@ -1060,14 +1060,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Belirtilen nokta.  
+*Noktası*<br/>
+[in] Belirtilen nokta.  
   
- [out] *dwBarAlignment*  
- Hangi uç noktaya yaklaştı belirtir. Olası değerler şunlardır: CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM.  
+*dwBarAlignment*<br/>
+[out] Hangi uç noktaya yaklaştı belirtir. Olası değerler şunlardır: CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT, CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM.  
   
- [out] *bOuterEdge*  
- Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
+*bOuterEdge*<br/>
+[out] Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dock sitesiyle noktası ise TRUE; Aksi durumda FALSE.  
@@ -1092,11 +1092,11 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Profil adı.  
+*lpszProfileName*<br/>
+[in] Profil adı.  
   
- [in] *uiID*  
- Yerleştirme manager kimliği.  
+*uiID*<br/>
+[in] Yerleştirme manager kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yerleştirme manager durumu başarıyla yüklendi TRUE; Aksi durumda FALSE.  
@@ -1109,8 +1109,8 @@ void LockUpdate(BOOL bLock);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bloğu*  
- Pencerenin kilitlenmesi durumunda TRUE; FALSE Aksi takdirde.  
+*Blok*<br/>
+[in] Pencerenin kilitlenmesi durumunda TRUE; FALSE Aksi takdirde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir pencere kilitliyken taşınamaz ve onu düzenlenemez.  
@@ -1173,8 +1173,8 @@ virtual void OnActivateFrame(BOOL bActivate);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bActivate*  
- TRUE ise, çerçeve penceresi etkinleştirilir; FALSE ise, çerçeve penceresi devre dışı bırakılır.  
+*bActivate*<br/>
+[in] TRUE ise, çerçeve penceresi etkinleştirilir; FALSE ise, çerçeve penceresi devre dışı bırakılır.  
   
 ##  <a name="onclosepopupmenu"></a>  CDockingManager::OnClosePopupMenu  
  Etkin bir açılan menü WM_DESTROY iletiyi işleyen framework tarafından çağırılır.  
@@ -1194,8 +1194,8 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFrame*  
- Bir mini çerçeve işaretçisi.  
+*pFrame*<br/>
+[in] Bir mini çerçeve işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1208,8 +1208,8 @@ void OnPaneContextMenu(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Menü konumunu belirtir.  
+*Noktası*<br/>
+[in] Menü konumunu belirtir.  
   
 ##  <a name="panefrompoint"></a>  CDockingManager::PaneFromPoint  
  Belirtilen noktasını içeren bölme döndürür.  
@@ -1232,26 +1232,26 @@ virtual CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Noktasını denetlemek için ekran koordinatları olarak belirtir.  
+*Noktası*<br/>
+[in] Noktasını denetlemek için ekran koordinatları olarak belirtir.  
   
- [in] *nSensitivity*  
- Her işaretli bölmesinin Pencere dikdörtgeni Şişir değer. Belirtilen noktasını inflated bu bölgede değilse bir bölmesinde arama ölçütlerini karşılar.  
+*nSensitivity*<br/>
+[in] Her işaretli bölmesinin Pencere dikdörtgeni Şişir değer. Belirtilen noktasını inflated bu bölgede değilse bir bölmesinde arama ölçütlerini karşılar.  
   
- [in] *bExactBar*  
- Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
+*bExactBar*<br/>
+[in] Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
   
- [in] *pRTCBarType*  
- BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
+*pRTCBarType*<br/>
+[in] BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
   
- [in] *bCheckVisibility*  
- Yalnızca görünür bölmeleri denetlemek için TRUE; Aksi takdirde FALSE.  
+*bCheckVisibility*<br/>
+[in] Yalnızca görünür bölmeleri denetlemek için TRUE; Aksi takdirde FALSE.  
   
- [out] *dwAlignment*  
- Belirli bir noktada bir bölme bulunursa, bu parametre için belirtilen nokta en yakın bölmesinde tarafında yer alır. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
+*dwAlignment*<br/>
+[out] Belirli bir noktada bir bölme bulunursa, bu parametre için belirtilen nokta en yakın bölmesinde tarafında yer alır. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- [in] *pBarToIgnore*  
- Yöntemi, boş değilse bu parametre tarafından belirtilen bölmeleri yok sayar.  
+*pBarToIgnore*<br/>
+[in] Yöntemi, boş değilse bu parametre tarafından belirtilen bölmeleri yok sayar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  [CBasePane](../../mfc/reference/cbasepane-class.md)-hiçbir bölmesinde bulunduysa belirtilen noktasını ya da NULL içeren türetilmiş nesne.  
@@ -1271,17 +1271,17 @@ BOOL ProcessPaneContextMenuCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Bir denetim çubuğuna menü kimliği.  
+*nID*<br/>
+[in] Bir denetim çubuğuna menü kimliği.  
   
- [in] *nCode*  
- Komut bildirim kodu.  
+*nCode*<br/>
+[in] Komut bildirim kodu.  
   
- [in] *pExtra*  
- Void bir işaretçi işaretçisi Integer `CCmdUI` varsa *nCode* CN_UPDATE_COMMAND_UI olduğu.  
+*pExtra*<br/>
+[in] Void bir işaretçi işaretçisi Integer `CCmdUI` varsa *nCode* CN_UPDATE_COMMAND_UI olduğu.  
   
- [in] *pHandlerInfo*  
- Bir bilgi yapısına yönelik işaretçi. Bu parametre kullanılmaz.  
+*pHandlerInfo*<br/>
+[in] Bir bilgi yapısına yönelik işaretçi. Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *pEXtra* NULL değil ve *nCode* CN_UPDATE_COMMAND_UI, eşittir veya varsa belirli bir denetim çubuğu *nID*.  
@@ -1294,8 +1294,8 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bNotify*  
- Bu parametre kullanılmaz.  
+*bNotify*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ##  <a name="releaseemptypanecontainers"></a>  CDockingManager::ReleaseEmptyPaneContainers  
  Boş bölmesinde kapsayıcıları serbest bırakır.  
@@ -1312,8 +1312,8 @@ void RemoveHiddenMDITabbedBar(CDockablePane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- İşaretçi çubuk bölmesinde kaldırmak için.  
+*pBar*<br/>
+[in] İşaretçi çubuk bölmesinde kaldırmak için.  
   
 ##  <a name="removeminiframe"></a>  CDockingManager::RemoveMiniFrame  
  Belirtilen bir çerçeve mini çerçeve listesinden kaldırır.  
@@ -1323,8 +1323,8 @@ virtual BOOL RemoveMiniFrame(CPaneFrameWnd* pWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Kaldırmak için bir çerçeve işaretçisi.  
+*pWnd*<br/>
+[in] Kaldırmak için bir çerçeve işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen çerçeve kaldırılırsa TRUE; FALSE Aksi takdirde.  
@@ -1342,20 +1342,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Kaldırılacak bir bölme için bir işaretçi.  
+*pWnd*<br/>
+[in] Kaldırılacak bir bölme için bir işaretçi.  
   
- [in] *bDestroy*  
- TRUE ise, kaldırılan bölmesinde yok edilir.  
+*bDestroy*<br/>
+[in] TRUE ise, kaldırılan bölmesinde yok edilir.  
   
- [in] *bAdjustLayout*  
- TRUE ise yerleştirme düzeni hemen ayarlayın.  
+*bAdjustLayout*<br/>
+[in] TRUE ise yerleştirme düzeni hemen ayarlayın.  
   
- [in] *bAutoHide*  
- TRUE ise bölmesinde autohide çubukları listesinden kaldırılır. FALSE ise bölmesinde normal bölmeleri listesinden kaldırılır.  
+*bAutoHide*<br/>
+[in] TRUE ise bölmesinde autohide çubukları listesinden kaldırılır. FALSE ise bölmesinde normal bölmeleri listesinden kaldırılır.  
   
- [in] *pBarReplacement*  
- Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
+*pBarReplacement*<br/>
+[in] Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
   
 ##  <a name="replacepane"></a>  CDockingManager::ReplacePane  
  Bir bölme birbiriyle değiştirir.  
@@ -1367,11 +1367,11 @@ BOOL ReplacePane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pOriginalBar*  
- Özgün bölmesi için bir işaretçi.  
+*pOriginalBar*<br/>
+[in] Özgün bölmesi için bir işaretçi.  
   
- [in] *pNewBar*  
- Özgün bölmesinde değiştirir bölmesi için bir işaretçi.  
+*pNewBar*<br/>
+[in] Özgün bölmesinde değiştirir bölmesi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde başarıyla değiştirildi TRUE; FALSE Aksi takdirde.  
@@ -1393,11 +1393,11 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Bir kayıt defteri anahtarı bir yolu.  
+*lpszProfileName*<br/>
+[in] Bir kayıt defteri anahtarı bir yolu.  
   
- [in] *uiID*  
- Yerleştirme manager kimliği  
+*uiID*<br/>
+[in] Yerleştirme manager kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durumu başarılı bir şekilde kaydedilmiş ise TRUE; Aksi durumda FALSE.  
@@ -1416,14 +1416,14 @@ BOOL SendMessageToMiniFrames(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uMessage*  
- Gönderilecek ileti.  
+*uMessage*<br/>
+[in] Gönderilecek ileti.  
   
- [in] *wParam*  
- Ek ileti bağımlı bilgileri.  
+*wParam*<br/>
+[in] Ek ileti bağımlı bilgileri.  
   
- [in] *lParam*  
- Ek ileti bağımlı bilgileri.  
+*lParam*<br/>
+[in] Ek ileti bağımlı bilgileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman TRUE.  
@@ -1436,8 +1436,8 @@ void Serialize(CArchive& ar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *ar*  
- Bir arşiv nesnesine bir başvuru.  
+*ar*<br/>
+[in] Bir arşiv nesnesine bir başvuru.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir arşiv yerleştirme manager yazma, Denetim çubuklarını ve kaydırıcılar yerleştirme ve denetim çubukları, mini çerçeve, Otomatik Gizle'yi çubukları ve sekmeli MDI çubukları arşive yazma sayısını belirleyen içerir.  
@@ -1450,8 +1450,8 @@ void SetAutohideZOrder(CDockablePane* pAHDockingBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pAHDockingBar*  
- Yerleştirilebilir bir bölme için bir işaretçi.  
+*pAHDockingBar*<br/>
+[in] Yerleştirilebilir bir bölme için bir işaretçi.  
   
 ##  <a name="setdockingmode"></a>  CDockingManager::SetDockingMode  
  Yerleştirme modunu ayarlar.  
@@ -1497,11 +1497,11 @@ void SetPrintPreviewMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bPreview*  
- Baskı Önizleme modunu ayarlanmışsa TRUE; FALSE Aksi takdirde.  
+*bPreview*<br/>
+[in] Baskı Önizleme modunu ayarlanmışsa TRUE; FALSE Aksi takdirde.  
   
- [in] *pState*  
- Bir önizleme durumuna yönelik bir işaretçi. Bu parametre kullanılmaz.  
+*pState*<br/>
+[in] Bir önizleme durumuna yönelik bir işaretçi. Bu parametre kullanılmaz.  
   
 ##  <a name="setsmartdockingparams"></a>  CDockingManager::SetSmartDockingParams  
  Akıllı Yerleştirme davranışını tanımlayan parametreler ayarlar.  
@@ -1511,8 +1511,8 @@ static void SetSmartDockingParams(CSmartDockingInfo& params);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *params*  
- Akıllı yerleştirme için parametreleri tanımlar.  
+*params*<br/>
+[out içinde] Akıllı yerleştirme için parametreleri tanımlar.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Görünüm, renk ve akıllı yerleştirme işaretçilerinin şeklini özelleştirmek istiyorsanız bu yöntemi çağırın.  
@@ -1527,8 +1527,8 @@ void ShowDelayShowMiniFrames(BOOL bshow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Gösterilen çerçeve penceresini etkinleştirmek için TRUE; Pencerenin çerçevesinin gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Gösterilen çerçeve penceresini etkinleştirmek için TRUE; Pencerenin çerçevesinin gizlemek için FALSE.  
   
 ##  <a name="showpanes"></a>  CDockingManager::ShowPanes  
  Denetim ve autohide çubukların bölmeleri gizler veya gösterir.  
@@ -1538,8 +1538,8 @@ virtual BOOL ShowPanes(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Bölmelerini göstermek için TRUE; Bölmeleri gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Bölmelerini göstermek için TRUE; Bölmeleri gizlemek için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman FALSE.  
@@ -1552,8 +1552,8 @@ void StartSDocking(CWnd* pDockingWnd);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDockingWnd*  
- Bir pencere sabitlemek için bir işaretçi.  
+*pDockingWnd*<br/>
+[in] Bir pencere sabitlemek için bir işaretçi.  
   
 ##  <a name="stopsdocking"></a>  CDockingManager::StopSDocking  
  Yerleştirme durur akıllı.  

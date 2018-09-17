@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 9fc3be9fb25b6593f4b69f846394544b7b7d756a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 73047962daf32eae6c01bb0ea6f6688a83e19402
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43220471"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45715539"
 ---
 # <a name="idlmodule"></a>idl_module
 
@@ -49,26 +49,26 @@ function declaration
 *Adı*  
 Kullanıcı tanımlı bir ad .idl dosyasında görünür kod bloğu için.
 
-*dll* (isteğe bağlı)  
-Dışarı aktarma içeren .dll dosyası.
+*dll adı*  
+(İsteğe bağlı) Dışarı aktarma içeren .dll dosyası.
 
-*uuid* (isteğe bağlı)  
-Benzersiz kimliği
+*uuid*  
+(İsteğe bağlı) Benzersiz kimliği
 
-*HelpString* (isteğe bağlı)  
-Tür kitaplığını açıklamak için kullanılan bir karakter dizesi.
+*helpstring*  
+(İsteğe bağlı) Tür kitaplığını açıklamak için kullanılan bir karakter dizesi.
 
-*helpstringcontext* (isteğe bağlı)  
-Bir Yardım konusu .hlp veya .chm dosyasındaki kimliği.
+*helpstringcontext*  
+(İsteğe bağlı) Bir Yardım konusu .hlp veya .chm dosyasındaki kimliği.
 
-*HelpContext* (isteğe bağlı)  
-Bu tür kitaplığı Yardım kimliği.
+*helpcontext*  
+(İsteğe bağlı) Bu tür kitaplığı Yardım kimliği.
 
-*Gizli* (isteğe bağlı)  
-Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
+*hidden*  
+(İsteğe bağlı) Kitaplık görüntülenmesini engeller. bir parametre. Bkz: [gizli](/windows/desktop/Midl/hidden) daha fazla bilgi için MIDL özniteliği.
 
-*kısıtlı* (isteğe bağlı)  
-Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
+*restricted*  
+(İsteğe bağlı) Kitaplık üyelerini rasgele çağrılamaz. Bkz: [kısıtlı](/windows/desktop/Midl/restricted) daha fazla bilgi için MIDL özniteliği.
 
 *işlev bildirimi*  
 Tanımladığınız bir işlev.

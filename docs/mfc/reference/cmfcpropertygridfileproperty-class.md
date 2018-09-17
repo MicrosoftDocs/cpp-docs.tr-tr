@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 79089a7457d1a3f08c58c374ae2501a48feca79d
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 82d1b4c3790f50032ac9775febf920e0e8c6c547
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465746"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700847"
 ---
 # <a name="cmfcpropertygridfileproperty-class"></a>CMFCPropertyGridFileProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir dosya seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
@@ -78,29 +78,29 @@ CMFCPropertyGridFileProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strName*  
- Özellik adı.  
+*strName*<br/>
+[in] Özellik adı.  
   
- [in] *bOpenFileDialog*  
- Açık true bir **Dosya Aç** ; iletişim kutusu Açmak için yanlış bir **dosyayı Kaydet** iletişim kutusu.  
+*bOpenFileDialog*<br/>
+[in] Açık true bir **Dosya Aç** ; iletişim kutusu Açmak için yanlış bir **dosyayı Kaydet** iletişim kutusu.  
   
- [in] *strFileName*  
- İlk dosya adı.  
+*strFileName*<br/>
+[in] İlk dosya adı.  
   
- [in] *lpszDefExt*  
- Bir veya daha fazla dosya adı uzantıları bir dize. Varsayılan değer NULL olur.  
+*lpszDefExt*<br/>
+[in] Bir veya daha fazla dosya adı uzantıları bir dize. Varsayılan değer NULL olur.  
   
- [in] *CertOpenStore*  
- İletişim kutusu bayraklar. Bitsel bir birleşimi (veya) OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT varsayılan değerdir.  
+*CertOpenStore*<br/>
+[in] İletişim kutusu bayraklar. Bitsel bir birleşimi (veya) OFN_HIDEREADONLY ve OFN_OVERWRITEPROMPT varsayılan değerdir.  
   
- [in] *lpszFilter*  
- Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer NULL olur.  
+*lpszFilter*<br/>
+[in] Bir veya daha fazla dosya filtreleri dizesi. Varsayılan değer NULL olur.  
   
- [in] *lpszDescr*  
- Özellik öğesi açıklaması. Varsayılan değer NULL olur.  
+*lpszDescr*<br/>
+[in] Özellik öğesi açıklaması. Varsayılan değer NULL olur.  
   
- [in] *dwData*  
- Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, 32-bit tamsayı veya diğer veri işaretçisi. Varsayılan değer 0’dır.  
+*dwData*<br/>
+[in] Özellik öğesi ile ilişkilendirilen uygulamaya özgü verileri. Örneğin, 32-bit tamsayı veya diğer veri işaretçisi. Varsayılan değer 0’dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   

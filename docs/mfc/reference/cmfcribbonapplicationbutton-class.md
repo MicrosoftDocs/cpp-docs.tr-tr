@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eddce134c3cda27e57a6a20d709bc4eab08d6e80
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 17efa63488a736089c988e6cfbb7bd97330816aa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849021"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701395"
 ---
 # <a name="cmfcribbonapplicationbutton-class"></a>CMFCRibbonApplicationButton sınıfı
 Uygular uygulama penceresinin sol üst köşedeki özel bir düğme bulunur. Tıklandığında, düğmeyi genellikle ortak içeren bir menü açılır **dosya** gibi komutlar **açık**, **Kaydet**, ve **çıkış**.  
@@ -98,11 +98,11 @@ void SetImage(HBITMAP hBmp);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiBmpResID*  
- Uygulama çubuğunda görüntülemek için kaynak Kimliğini görüntü.  
+*uiBmpResID*<br/>
+[in] Uygulama çubuğunda görüntülemek için kaynak Kimliğini görüntü.  
   
- [in] *hBmp*  
- Uygulama çubuğunda görüntülenecek bir bit eşlem işleyici.  
+*hBmp*<br/>
+[in] Uygulama çubuğunda görüntülenecek bir bit eşlem işleyici.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Düğme oluşturduktan sonra yeni bir görüntü için Şerit uygulama düğmesini atamak için bu yöntemi kullanın. Uygulama düğmesi, uygulama penceresinin sol üst köşede bulunur.  

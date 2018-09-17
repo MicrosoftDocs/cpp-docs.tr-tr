@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adc104e3325a2a9fda922f8ef32aa84982f35366
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3ff43920400028e0fb13fc17615fb58cc551726b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465280"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704229"
 ---
 # <a name="outdwordstring"></a>__outdwordstring
 **Microsoft'a özgü**  
@@ -41,14 +41,14 @@ void __outdwordstring(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Port`  
- Veri göndermek için bağlantı noktası.  
+*Bağlantı noktası*<br/>
+[in] Veri göndermek için bağlantı noktası.  
   
- [in] `Buffer`  
- Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.  
+*Arabellek*<br/>
+[in] Belirtilen bağlantı noktasına gönderilecek verileri için bir işaretçi.  
   
- [in] `Count`  
- Gönderilecek doublewords sayısı.  
+*Sayısı*<br/>
+[in] Gönderilecek doublewords sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

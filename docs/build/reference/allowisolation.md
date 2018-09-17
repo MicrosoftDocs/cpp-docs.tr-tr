@@ -18,33 +18,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b9511ce2d94a426756581b87d863051da25a627b
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 12ee07a0ea6dbe2c3bea21aaa6b394b4c3e6f156
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465644"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704099"
 ---
 # <a name="allowisolation"></a>/ALLOWISOLATION
-Bildirim arama davranışını belirtir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-/ALLOWISOLATION[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/ ALLOWISOLATION** aramalar ve yükleri bildirim işletim sisteminin neden olur.  
-  
- **/ ALLOWISOLATION** varsayılandır.  
-  
- **/ALLOWISOLATION:No** yokmuş gibi hiçbir bildirim ve nedenleri yürütülebilir dosyaları yüklendiğini gösteren [EDITBIN başvurusu](../../build/reference/editbin-reference.md) ayarlanacak `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` isteğe bağlı üst bilgisinde ait bit `DllCharacteristics` alan.  
-  
- Bir yürütülebilir dosya için yalıtım devre dışı bırakıldığında, Windows Yükleyicisi için yeni oluşturulan işlemi bir uygulama bildirimi bulmak dener. Yeni işlem yürütülebilir bildiriminde yok ya da bir bildirim yoksa, adına sahip olsa bile varsayılan etkinleştirme bağlamı yok *yürütülebilir dosya adı*. exe.manifest.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN seçenekleri](../../build/reference/editbin-options.md)   
- [/ ALLOWISOLATION (bildirim arama)](../../build/reference/allowisolation-manifest-lookup.md)   
- [Bildirim dosyaları başvurusu](/windows/desktop/SbsCs/manifest-files-reference)
+
+Bildirim arama davranışını belirtir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+/ALLOWISOLATION[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**/ ALLOWISOLATION** aramalar ve yükleri bildirim işletim sisteminin neden olur.
+
+**/ ALLOWISOLATION** varsayılandır.
+
+**/ALLOWISOLATION:No** yokmuş gibi hiçbir bildirim ve nedenleri yürütülebilir dosyaları yüklendiğini gösteren [EDITBIN başvurusu](../../build/reference/editbin-reference.md) ayarlanacak `IMAGE_DLLCHARACTERISTICS_NO_ISOLATION` isteğe bağlı üst bilgisinde ait bit `DllCharacteristics` alan.
+
+Bir yürütülebilir dosya için yalıtım devre dışı bırakıldığında, Windows Yükleyicisi için yeni oluşturulan işlemi bir uygulama bildirimi bulmak dener. Yeni işlem yürütülebilir bildiriminde yok ya da bir bildirim yoksa, adına sahip olsa bile varsayılan etkinleştirme bağlamı yok *yürütülebilir dosya adı*. exe.manifest.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)<br/>
+[/ ALLOWISOLATION (bildirim arama)](../../build/reference/allowisolation-manifest-lookup.md)
+[bildirimi başvuru dosyaları](/windows/desktop/SbsCs/manifest-files-reference)

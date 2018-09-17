@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d78b37971cda2ca1bcf468a794abf69555efc3e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: eb4af8f218a6040080cdf429b061205269cbc4dc
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39462257"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45703592"
 ---
 # <a name="smart-pointers-modern-c"></a>Akıllı İşaretçiler (Modern C++)
 Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, hangi programları sağlamak için kullanılan bellek ve kaynak sızıntıları ve özel durum açısından güvenli olmalarını.  
@@ -69,8 +69,9 @@ Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, h
 ## <a name="kinds-of-smart-pointers"></a>Akıllı İşaretçi Türleri  
  Aşağıdaki bölümde Windows programlama ortamında bulunan farklı türden akıllı işaretçiler özetlenir ve bunların ne zaman kullanılacağı açıklanır.  
   
- **C++ Standart Kitaplığı akıllı işaretçiler**  
- Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.  
+### <a name="c-standard-library-smart-pointers"></a>C++ Standart Kitaplığı akıllı işaretçiler
+
+Bu akıllı işaretçileri eski C++ nesnelerine (POCO) işaretçi kapsüllemek için ilk seçenek olarak kullanın.  
   
 -   `unique_ptr`   
      Temel alınan işaretçi için, kesin olarak tek bir sahibe izin verir. İhtiyacınız olan belirli bilmiyorsanız varsayılan seçenek olarak değilseniz POCO için kullanmak bir `shared_ptr`. Bir yeni kullanıcıya taşınabilir, ancak kopyalanamaz veya paylaşılamaz. Değiştirir `auto_ptr`, kullanım dışı. Karşılaştırılacak `boost::scoped_ptr`. `unique_ptr` küçük ve verimli değildir; boyutu bir işaretçidir ve hızlı ekleme ve C++ Standart Kitaplığı koleksiyonu alma için rvalue başvurularını destekler. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: unique_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-unique-ptr-instances.md) ve [unique_ptr sınıfı](../standard-library/unique-ptr-class.md).  
@@ -81,8 +82,9 @@ Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, h
 -   `weak_ptr`   
     Özel durum akıllı işaretçisi ile kullanılmak üzere `shared_ptr`. A `weak_ptr` bir veya daha fazla sahip olduğu bir nesneye erişim sağlar `shared_ptr` örnekler, ancak başvuru sayımına değil. Bir nesneyi görmek istiyorsanız ancak canlı kalmasını istemiyorsanız kullanın. Bazı durumlarda arasındaki döngüsel başvuruları bölmek için gereken `shared_ptr` örnekleri. Üst bilgi dosyası: `<memory>`. Daha fazla bilgi için [nasıl yapılır: weak_ptr örnekleri oluşturma ve kullanma](../cpp/how-to-create-and-use-weak-ptr-instances.md) ve [weak_ptr sınıfı](../standard-library/weak-ptr-class.md).  
   
- **COM nesneleri (Klasik Windows programlama) için akıllı işaretçiler**  
- COM nesneleriyle çalışırken, arabirim işaretçilerini uygun akıllı işaretçi türüne sarın. Etkin Şablon Kitaplığı (ATL) çeşitli amaçlar için birçok akıllı işaretçi tanımlar. Ayrıca `_com_ptr_t` .tlb dosyalarından sarmalayıcı sınıflar oluşturduğunda, derleyicinin kullandığı akıllı işaretçi türü. ATL üstbilgi dosyalarını eklemek istemediğinizde en iyi seçenektir.  
+### <a name="smart-pointers-for-com-objects-classic-windows-programming"></a>{1&gt;COM Nesneleri (Klasik Windows Programlama) için Akıllı İşaretçiler&lt;1}
+
+COM nesneleriyle çalışırken, arabirim işaretçilerini uygun akıllı işaretçi türüne sarın. Etkin Şablon Kitaplığı (ATL) çeşitli amaçlar için birçok akıllı işaretçi tanımlar. Ayrıca `_com_ptr_t` .tlb dosyalarından sarmalayıcı sınıflar oluşturduğunda, derleyicinin kullandığı akıllı işaretçi türü. ATL üstbilgi dosyalarını eklemek istemediğinizde en iyi seçenektir.  
   
  [CComPtr Sınıfı](../atl/reference/ccomptr-class.md)  
  ATL kullanabiliyorsanız bunu kullanın. Kullanarak başvuru sayımı gerçekleştirir `AddRef` ve `Release` yöntemleri. Daha fazla bilgi için [nasıl yapılır: oluşturma ve kullanım CComPtr ve CComQIPtr örnekleri](../cpp/how-to-create-and-use-ccomptr-and-ccomqiptr-instances.md).  
@@ -99,8 +101,9 @@ Modern C++ programlamada standart kitaplık içeren *akıllı işaretçileri*, h
  [_com_ptr_t Sınıfı](../cpp/com-ptr-t-class.md)  
  Benzer `CComQIPtr` işlev ancak ATL üstbilgilerine benzemez.  
   
- **POCO nesneleri için ATL akıllı işaretçiler**  
- COM nesneleri için akıllı işaretçilere ek olarak, ATL aynı zamanda düz ve eski C++ nesnelerinde akıllı işaretçileri ve koleksiyonlarını tanımlar. Klasik Windows programlamada, özellikle kod taşınabilirliği gerekli olmadığında veya C++ Standart Kitaplığı ve ATL programlama modellerini karıştırmak istemediğinizde bu türler C++ Standart Kitaplığı koleksiyon için kullanışlı alternatiflerdir olan  
+### <a name="atl-smart-pointers-for-poco-objects"></a>{1&gt;POCO Nesneleri için ATL Akıllı İşaretçiler&lt;1}
+
+COM nesneleri için akıllı işaretçilere ek olarak, ATL aynı zamanda düz ve eski C++ nesnelerinde akıllı işaretçileri ve koleksiyonlarını tanımlar. Klasik Windows programlamada, özellikle kod taşınabilirliği gerekli olmadığında veya C++ Standart Kitaplığı ve ATL programlama modellerini karıştırmak istemediğinizde bu türler C++ Standart Kitaplığı koleksiyon için kullanışlı alternatiflerdir olan  
   
  [CAutoPtr Sınıfı](../atl/reference/cautoptr-class.md)  
  Sahipliği bir kopyaya aktararak benzersiz sahipliği zorlayan akıllı işaretçi. Kullanım dışı karşılaştırılabilir `std::auto_ptr` sınıfı.  

@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 947c9bf0892da52b44a99486b3ff0f1d59bc6fee
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1cba221f0944f840f9cdf76da86ec7ce37f37ca8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464673"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713785"
 ---
 # <a name="mmcvtsssi64x"></a>_mm_cvtss_si64x
 **Microsoft'a özgü**  
@@ -38,8 +38,8 @@ __int64 _mm_cvtss_si64x(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `value`  
- Bir `__m128` kayan nokta değerleri içeren yapısı.  
+*value*<br/>
+[in] Bir `__m128` kayan nokta değerleri içeren yapısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir 64-bit tamsayı, ilk kayan nokta değeri bir tamsayıya dönüştürme işleminin sonucu.  

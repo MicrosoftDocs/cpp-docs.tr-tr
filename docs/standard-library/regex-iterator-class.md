@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2502ab1d7fbcbfc33883df3627ec36dfcf46e2d7
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: b723294c0ecdbdf585acecc257174251b13d56ca
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535346"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710365"
 ---
 # <a name="regexiterator-class"></a>regex_iterator Sınıfı
 
@@ -43,7 +43,7 @@ ms.locfileid: "45535346"
 template<class BidIt,
    class Elem = typename std::iterator_traits<BidIt>::value_type,
    class RxTraits = regex_traits<Elem> >
-class regex_iterator 
+class regex_iterator
 ```
 
 ## <a name="parameters"></a>Parametreler

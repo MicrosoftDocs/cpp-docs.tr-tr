@@ -16,23 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1eb74d09c1facf664c39781f8134d653f3105c9c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fe854d4e3c625d23a5b83cee50ab468b76abcfff
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380021"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45710209"
 ---
 # <a name="special-nmake-macros"></a>Özel NMAKE Makroları
-NMAKE çeşitli dosya adları ve komutları temsil etmek için çeşitli özel makrolar sağlar. Bir bu makroları bazıları için önceden tanımlanmış çıkarım kurallarındaki kullanılır. Tüm makrolar gibi NMAKE tarafından sağlanan makroları büyük/küçük harfe duyarlıdır.  
-  
--   [Dosya adı makroları](../build/filename-macros.md)  
-  
--   [Özyineleme makroları](../build/recursion-macros.md)  
-  
--   [Komut makroları ve seçenek makroları](../build/command-macros-and-options-macros.md)  
-  
--   [Ortam Değişkeni Makroları](../build/environment-variable-macros.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Makrolar ve NMAKE](../build/macros-and-nmake.md)
+
+NMAKE çeşitli dosya adlarını ve komutları temsil etmek için çeşitli özel makroları sağlar. Bu makrolar bazılarını bir kullanım içindeki önceden tanımlanmış çıkarım kuralları içindir. Tüm makrolar gibi NMAKE tarafından sağlanan makroları büyük/küçük harfe duyarlıdır.
+
+- [Dosya adı makroları](../build/filename-macros.md)
+
+- [Özyineleme makroları](../build/recursion-macros.md)
+
+- [Komut makroları ve seçenek makroları](../build/command-macros-and-options-macros.md)
+
+- [Ortam Değişkeni Makroları](../build/environment-variable-macros.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Makrolar ve NMAKE](../build/macros-and-nmake.md)

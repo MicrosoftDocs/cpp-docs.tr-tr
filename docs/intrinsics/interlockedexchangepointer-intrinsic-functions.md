@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dfeb1453cffac6cfe338f42da8b8efe60e18c9f8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: fa2aa8fb79a0590c437699bcf887f2a7e1c1bb21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466285"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705022"
 ---
 # <a name="interlockedexchangepointer-intrinsic-functions"></a>_Interlockedexchangepointer iç işlevleri
 **Microsoft'a özgü**  
@@ -72,11 +72,11 @@ void * _InterlockedExchangePointer_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `Target`  
- Exchange değere işaretçi işaretçisi. İşlev bir değer ayarlar `Value` ve önceki değerini döndürür.  
+*Hedef*<br/>
+[out içinde] Exchange değere işaretçi işaretçisi. İşlev bir değer ayarlar `Value` ve önceki değerini döndürür.  
   
- [in] `Value`  
- Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
+*Değer*<br/>
+[in] Değeri ile değiştirilecek değeri tarafından işaret edilen `Target`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  İşlevi tarafından işaret ilk değerini döndürür `Target`.  

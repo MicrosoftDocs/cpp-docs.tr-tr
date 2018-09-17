@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1a1d2d710631c01a39b910e7d9b15f14179b3125
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: dcda07b5d2ab499a769c389538e8f272fd8441a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965749"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45713174"
 ---
 # <a name="ltallocatorsgt"></a>&lt;Ayırıcılar&gt;
 
@@ -47,9 +47,10 @@ Bir ayırıcıyı depolama ayırmayı ve nesneleri ve belirlenen türünde nesne
 
 Bu türün tüm şablonları ayırıcılar şunlardır:
 
-`template<class` `Type` `>`
-
-`class allocator;`
+```cpp
+template<class Type>
+class allocator;
+```
 
 Burada şablon bağımsız değişkeni `Type` ayırıcı örneği tarafından yönetilen bir tür. C++ Standart Kitaplığı sağlayan Şablon sınıfı, bir varsayılan ayırıcı [ayırıcı](../standard-library/allocator-class.md), tanımlanan [ \<bellek >](../standard-library/memory.md). \<Ayırıcılar > üst bilgi aşağıdaki ayırıcılar sağlar:
 

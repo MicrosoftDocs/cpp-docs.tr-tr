@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 598b95df8fd2f4dd2826fcfa1f59a7e2daa8d523
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b559edf26c847404d718440e86037cab4026297b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465287"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704957"
 ---
 # <a name="writedr"></a>__writedr
 Belirtilen değer, belirtilen hata ayıklama kaydı için yazar.  
@@ -34,11 +34,11 @@ void __writedr(unsigned DebugRegister, unsigned __int64 DebugValue);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `DebugRegister`  
- Hata ayıklama tanımlayan 0 ile 7 arasında bir sayı kaydedin.  
+*DebugRegister*<br/>
+[in] Hata ayıklama tanımlayan 0 ile 7 arasında bir sayı kaydedin.  
   
- [in] `DebugValue`  
- Yazma hata ayıklama için bir değer kaydedin.  
+*DebugValue*<br/>
+[in] Yazma hata ayıklama için bir değer kaydedin.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.  

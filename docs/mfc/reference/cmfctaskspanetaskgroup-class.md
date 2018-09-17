@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2f53aa98d7743ccee804ed7a89df160368c8a23
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 57c7c55ae2214c4123973e93c65f5e189d32b99a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849172"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701655"
 ---
 # <a name="cmfctaskspanetaskgroup-class"></a>CMFCTasksPaneTaskGroup sınıfı
 `CMFCTasksPaneTaskGroup` Bir yardımcı sınıfı tarafından kullanılan [CMFCTasksPane](../../mfc/reference/cmfctaskspane-class.md) denetimi. Türündeki nesneler `CMFCTasksPaneTaskGroup` temsil eden bir *görev grubu*. Görev grubu, framework Daralt düğmesi olan ayrı bir kutuda görüntülediği öğelerin listesidir. Kutu isteğe bağlı bir başlık (grup adı) olabilir. Bir grup daraltılmışsa, görevlerin listesi görünür değil.  
@@ -216,11 +216,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParent*  
- Geçerli görev grubunun ana pencereyi temsil eder.  
+*pParent*<br/>
+[in] Geçerli görev grubunun ana pencereyi temsil eder.  
   
- [out] *veri*  
- Bir nesne türü `CAccessibilityData` geçerli görev grubunun erişilebilirlik verilerle doldurulur.  
+*Veri*<br/>
+[out] Bir nesne türü `CAccessibilityData` geçerli görev grubunun erişilebilirlik verilerle doldurulur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *veri* parametre başarıyla geçerli görev grubunun erişilebilirlik verilerle doldurulmuş; Aksi takdirde FALSE.  

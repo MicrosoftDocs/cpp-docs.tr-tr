@@ -8,12 +8,12 @@ f1_keywords:
 ms.assetid: 6cdcf043-eef6-4330-83f0-4596fb9f968a
 helpviewer_keywords:
 - std::swap [vector]
-ms.openlocfilehash: 29b23ec4afe32d1aa383afd4fdaf3ca280d49161
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 71594b225c950714d8b9aba169e68804033c93a2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38955267"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700758"
 ---
 # <a name="ltvectorgt-functions"></a>&lt;vektör&gt; işlevleri
 
@@ -29,11 +29,11 @@ void swap(vector<Type, Allocator>& left, vector<Type, Allocator>& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Değiştirilecek öğeleri sağlayan vektör veya öğeleri vektör öğelerle ilişkili vektör *sol*.
+*sağ*<br/>
+Değiştirilecek öğeleri sağlayan vektör veya öğeleri vektör öğelerle ilişkili vektör *sol*.
 
-*Sol*  
- Öğeleri vektör öğelerle ilişkili vektör *doğru*.
+*Sol*<br/>
+Öğeleri vektör öğelerle ilişkili vektör *doğru*.
 
 ### <a name="remarks"></a>Açıklamalar
 

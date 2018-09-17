@@ -19,40 +19,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72e620e5347d422a8de66cba3ea9cfd601bb3f29
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 30cc9cbab9a3575eee2f791b0af7dfcaffc1538d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374342"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701096"
 ---
 # <a name="errorreport-report-internal-linker-errors"></a>/ERRORREPORT (Dahili Bağlayıcı Hatalarını Raporla)
 
-> **/ errorreport:**[ **hiçbiri** | **istemi** | **sıra** | **Gönder** ]
+> **/ errorreport:**[ **hiçbiri** | **istemi** | **kuyruk** | **Gönder** ]
 
 ## <a name="arguments"></a>Arguments
 
-**Yok**  
-İç derleyici hataları hakkında raporlar değil toplanmayacak veya Microsoft'a gönderilir.
+**Yok**<br/>
+Derleyici iç hatalarıyla ilgili raporlar toplanmaz ve Microsoft'a gönderilir.
 
-**istemi**  
-Derleyici iç hatası aldığınızda, bir raporu göndermek isteyip istemediğinizi sorar. **İstemi** bir uygulama geliştirme ortamında derlendiğinde varsayılandır.
+**istemi**<br/>
+Derleyici iç hatası aldığınızda rapor göndermek isteyip istemediğinizi sorar. **İstemi** geliştirme ortamında uygulama derlendiğinde varsayılandır.
 
-**Sırası**  
-Hata raporu sıralar. Yönetici ayrıcalıklarıyla oturum kapatışınızda oturum en son ne zaman bu yana hataları rapor için bir pencere görüntülenir (üç günde birden çok kez hata raporu göndermek için istenir değildir). **sıra** uygulamanın bir komut isteminde derlendiğinde varsayılandır.
+**Kuyruk**<br/>
+Hata raporunu kuyruğa alır. Böylece son kez oturum açtıktan sonra herhangi bir hata rapor, yönetici ayrıcalıklarıyla oturum açtığınızda, bir pencere görüntülenir (, üç günde birden çok kez hata raporu göndermek isteyip istemediğiniz değil). **Kuyruk** bir komut isteminde uygulama derlendiğinde varsayılandır.
 
-**Gönder**  
-Otomatik olarak raporlama tarafından Windows Hata Raporlama hizmeti ayarları etkinse, iç derleyici hata raporlarını Microsoft'a gönderir.
+**Gönder**<br/>
+Otomatik olarak Windows hata bildirimi hizmeti ayarları tarafından raporlama etkinse, derleyici iç hata raporlarını Microsoft'a gönderir.
 
 ## <a name="remarks"></a>Açıklamalar
 
-**/Errorreport** seçeneği iç derleyici hatası (çok) bilgilerini doğrudan Microsoft'a olanak sağlar.
+**/Errorreport** seçeneği derleyici iç hatası (ICE) bilgilerini doğrudan Microsoft'a sağlamasına olanak sağlar.
 
-Seçenek **/errorreport:send** Windows Hata Raporlama hizmeti ayarları tarafından etkinleştirilirse hata bilgilerini Microsoft'a otomatik olarak gönderir.
+Seçenek **okunmalı** Windows hata bildirimi hizmeti ayarları tarafından etkinleştirilirse hata bilgileri Microsoft'a otomatik olarak gönderir.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Açık **yapılandırma özellikleri** > **bağlayıcı** > **Gelişmiş** özellik sayfası.
 
@@ -64,6 +64,6 @@ Seçenek **/errorreport:send** Windows Hata Raporlama hizmeti ayarları tarafın
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[/errorReport (Dahili Derleme Hatalarını Raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)  
-[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)  
-[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)  
+[/ errorreport (dahili derleme hatalarını raporla)](../../build/reference/errorreport-report-internal-compiler-errors.md)
+[bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

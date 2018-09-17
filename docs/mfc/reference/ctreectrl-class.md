@@ -172,12 +172,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ebae1828d102881d866e05d41f1831e35e01a51
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e623c0990477c5ee24fb4dcc782a6f243dce3337
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679253"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712178"
 ---
 # <a name="ctreectrl-class"></a>CTreeCtrl sınıfı
 Windows ortak ağaç görünümü denetimi işlevlerini sağlar.  
@@ -465,7 +465,7 @@ BOOL EndEditLabelNow(BOOL fCancelWithoutSave);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *fCancelWithoutSave*|Düzenleme işlemi ya da işlemi tamamlanırken önce değişiklikleri ağaç görünümü öğesine kaydetmek için FALSE tamamlanırken önce ağaç görünümü öğesi değişiklikleri atmak için TRUE.|  
+|*fCancelWithoutSave*|[in] Düzenleme işlemi ya da işlemi tamamlanırken önce değişiklikleri ağaç görünümü öğesine kaydetmek için FALSE tamamlanırken önce ağaç görünümü öğesi değişiklikleri atmak için TRUE.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -732,7 +732,7 @@ int GetItemExpandedImageIndex(HTREEITEM hItem)const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü denetimi öğesi işler.|  
+|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntüyü belirtilen öğeyi genişletilmiş durumdayken dizini.  
@@ -798,9 +798,9 @@ BOOL GetItemPartRect(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü denetimi öğesi işler.|  
-|[in] *nPart*|Bölümü için tanımlayıcı. TVGIPR_BUTTON için ayarlamanız gerekir.|  
-|[out] *lpRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı bölümü tarafından belirtilen dikdörtgen koordinatlarını alır *hItem* ve *nPart*.|  
+|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|  
+|*nPart*|[in] Bölümü için tanımlayıcı. TVGIPR_BUTTON için ayarlamanız gerekir.|  
+|*lpRect*|[out] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) yapısı. Bu yöntem başarılı olursa, yapı bölümü tarafından belirtilen dikdörtgen koordinatlarını alır *hItem* ve *nPart*.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -879,7 +879,7 @@ UINT GetItemStateEx(HTREEITEM hItem) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü denetimi öğesi işler.|  
+|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Genişletilmiş durumu öğesi. Daha fazla bilgi için `uStateEx` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.  
@@ -1322,7 +1322,7 @@ HTREEITEM MapAccIdToItem(UINT uAccId) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *uAccId*|Ağaç görünümü öğesinde bir öğe için bir erişilebilirlik tanımlayıcısı.|  
+|*uAccId*|[in] Ağaç görünümü öğesinde bir öğe için bir erişilebilirlik tanımlayıcısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir ağaç görünümü öğesi tanıtıcısını ( `HTREEITEM`) karşılık gelen *uAccId* parametresi. Daha fazla bilgi için *hItem* üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.  
@@ -1353,7 +1353,7 @@ UINT MapItemToAccID(HTREEITEM hItem) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü öğesi denetiminde tanıtıcısı. Daha fazla bilgi için *hItem* üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
+|*hItem*|[in] Bir ağaç görünümü öğesi denetiminde tanıtıcısı. Daha fazla bilgi için *hItem* üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Karşılık gelen erişilebilirlik tanımlayıcı *hItem* parametresi.  
@@ -1474,8 +1474,8 @@ BOOL SetAutoscrollInfo(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *uPixelsPerSec*|Kaydırmak için saniye başına piksel sayısı.|  
-|[in] *uUpdateTime*|Güncelleştirmeleri denetimi arasındaki zaman aralığı.|  
+|*uPixelsPerSec*|[in] Kaydırmak için saniye başına piksel sayısı.|  
+|*uUpdateTime*|[in] Güncelleştirmeleri denetimi arasındaki zaman aralığı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman TRUE değerini döndürür.  
@@ -1555,8 +1555,8 @@ DWORD SetExtendedStyle(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwExMask*|Geçerli ağaç görünümü denetiminde hangi stilleri, bu yöntem tarafından etkilenen belirten bir bit maskesi. Bu parametre sıfır ise, göz ardı edilir ve değerini *dwExStyles* parametresi için ağaç görünümü denetimi atanır.<br /><br /> Sıfır veya bir bit düzeyinde birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles).|  
-|[in] *dwExStyles*|Geçerli ağaç görünümünde hangi stilleri belirleme veya temizleme için Denetim belirten bir bit maskesi.<br /><br /> Stilleri bir birleşimini ayarlamak için Bitsel bir birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles). Bir stil kümesi temizlemek için sıfır belirtin.|  
+|*dwExMask*|[in] Geçerli ağaç görünümü denetiminde hangi stilleri, bu yöntem tarafından etkilenen belirten bir bit maskesi. Bu parametre sıfır ise, göz ardı edilir ve değerini *dwExStyles* parametresi için ağaç görünümü denetimi atanır.<br /><br /> Sıfır veya bir bit düzeyinde birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles).|  
+|*dwExStyles*|[in] Geçerli ağaç görünümünde hangi stilleri belirleme veya temizleme için Denetim belirten bir bit maskesi.<br /><br /> Stilleri bir birleşimini ayarlamak için Bitsel bir birleşimi (veya) açıklanan stilleri belirtmek [ağaç görünümü denetimi genişletilmiş stiller](/windows/desktop/Controls/tree-view-control-window-extended-styles). Bir stil kümesi temizlemek için sıfır belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim stilleri genişletilmiş önceki içeren bir değer.  
@@ -1747,8 +1747,8 @@ BOOL SetItemExpandedImageIndex(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü denetimi öğesi işler.|  
-|[in] *iExpandedImage*|Görüntüyü belirtilen öğeyi genişletilmiş durumdayken dizini.|  
+|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|  
+|*iExpandedImage*|[in] Görüntüyü belirtilen öğeyi genişletilmiş durumdayken dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1858,8 +1858,8 @@ BOOL SetItemStateEx(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü denetimi öğesi işler.|  
-|[in] *uStateEx*|Genişletilmiş durumu öğesi. Daha fazla bilgi için `uStateEx` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
+|*hItem*|[in] Bir ağaç görünümü denetimi öğesi işler.|  
+|*uStateEx*|[in] Genişletilmiş durumu öğesi. Daha fazla bilgi için `uStateEx` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1984,7 +1984,7 @@ void ShowInfoTip(HTREEITEM hItem);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *hItem*|Bir ağaç görünümü öğesi denetiminde işleyici. Daha fazla bilgi için `hItem` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
+|*hItem*|[in] Bir ağaç görünümü öğesi denetiminde işleyici. Daha fazla bilgi için `hItem` üyesi [TVITEMEX](/windows/desktop/api/commctrl/ns-commctrl-tagtvitemexa) yapısı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç ipuçları ve infotips arasındaki fark hakkında daha fazla bilgi için "Araç ipuçları ve Infotips" konusuna arama [Microsoft Developer Network](http://go.microsoft.com/fwlink/p/?linkid=56322).  

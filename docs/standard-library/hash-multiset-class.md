@@ -96,12 +96,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c02db557f877f43f39286856de02d68b87959fee
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 767c57db8f9af90ab997b0e75ce40461a2494725
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43210438"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701877"
 ---
 # <a name="hashmultiset-class"></a>hash_multiset Sınıfı
 
@@ -120,13 +120,13 @@ class hash_multiset
 ### <a name="parameters"></a>Parametreler
 
 *Key*<br/>
- Hash_multiset içinde depolanacak öğe veri türü.
+Hash_multiset içinde depolanacak öğe veri türü.
 
 *Nitelikler*<br/>
- İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü diğer bir deyişle bir ikili koşula birli koşul eşleştirme anahtar değerleri öğelerin işaretsiz bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırmak için tamsayı türü `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
+İki işlev nesneleri içeren, bir sınıfın karşılaştırma türü diğer bir deyişle bir ikili koşula birli koşul eşleştirme anahtar değerleri öğelerin işaretsiz bir karma işlevi ve kendi göreli sıralarını belirlemek için sıralama anahtarları olarak iki öğenin değerlerini karşılaştırmak için tamsayı türü `size_t`. Bu bağımsız değişken isteğe bağlıdır ve `hash_compare<Key, less<Key> >` varsayılan değerdir.
 
 *Ayırıcı*<br/>
- Hash_multiset'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
+Hash_multiset'ın ayırma ve bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `allocator<Key>`.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -555,7 +555,7 @@ size_type count(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Hash_multiset eşleştirilecek öğe anahtarı.
+Hash_multiset eşleştirilecek öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1022,7 +1022,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1111,16 +1111,16 @@ size_type erase(const key_type& key);
 ### <a name="parameters"></a>Parametreler
 
 *_Where*<br/>
- Hash_multiset kaldırılacak öğenin konumu.
+Hash_multiset kaldırılacak öğenin konumu.
 
 *ilk*<br/>
- Hash_multiset kaldırılan ilk öğenin konumu.
+Hash_multiset kaldırılan ilk öğenin konumu.
 
 *Son*<br/>
- Konum yalnızca son öğeden sonra hash_multiset kaldırıldı.
+Konum yalnızca son öğeden sonra hash_multiset kaldırıldı.
 
 *Anahtarı*<br/>
- Hash_multiset kaldırılacak öğe anahtarı.
+Hash_multiset kaldırılacak öğe anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1232,7 +1232,7 @@ const_iterator find(const Key& key) const;
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan hash_multiset bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
+Aranan hash_multiset bir öğeyi sıralama anahtarı olarak eşleşen bağımsız değişken anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1667,7 +1667,7 @@ iterator lower_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -2150,7 +2150,7 @@ void swap(hash_multiset& right);
 ### <a name="parameters"></a>Parametreler
 
 *sağ*<br/>
- Hedef hash_multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_multiset.
+Hedef hash_multiset ile değiştirilecek öğeleri sağlayan bağımsız değişken hash_multiset.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2226,7 +2226,7 @@ iterator upper_bound(const Key& key);
 ### <a name="parameters"></a>Parametreler
 
 *Anahtarı*<br/>
- Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
+Aranan hash_multiset bir öğeyi sıralama anahtarı ile Karşılaştırılacak bağımsız değişken anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 

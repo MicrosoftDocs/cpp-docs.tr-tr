@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97b143311f6326e938e9ac61175b02c82d3c8c2c
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: 44ccd0c1625e971fd74e913b9618d7f3ae811be5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027186"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45712499"
 ---
 # <a name="cmfcribboncheckbox-class"></a>CMFCRibbonCheckBox sınıfı
 `CMFCRibbonCheckBox` Sınıfı bir Şerit paneli, hızlı erişim araç çubuğu veya açılır menü ekleyebileceğiniz bir onay kutusu uygular.  
@@ -103,11 +103,11 @@ CMFCRibbonCheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Komut kimliğini belirtir.  
+*nID*<br/>
+[in] Komut kimliğini belirtir.  
   
- [in] *lpszText*  
- Metin etiketini belirtir.  
+*lpszText*<br/>
+[in] Metin etiketini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir Şerit onay kutusunu nesnesi oluşturur.  
@@ -125,8 +125,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Onay kutusuyla ilişkili CDC işaretçisi.  
+*pDC*<br/>
+[in] Onay kutusuyla ilişkili CDC işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir `CSize` onay kutusunu compact boyutunu içeren nesne.  
@@ -142,8 +142,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bu onay kutusu ile ilişkili CDC işaretçisi.  
+*pDC*<br/>
+[in] Bu onay kutusu ile ilişkili CDC işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CSize` onay kutusunu Ara boyutu içeren nesne.  
@@ -159,8 +159,8 @@ virtual CSize GetRegularSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bu onay kutusu ile ilişkili CDC nesne işaretçisi.  
+*pDC*<br/>
+[in] Bu onay kutusu ile ilişkili CDC nesne işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Döndürür bir `CSize` onay kutusunu normal boyutunu içeren nesne.  
@@ -188,8 +188,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Onay kutusu Çiz edileceği CDC işaretçisi.  
+*pDC*<br/>
+[in] Onay kutusu Çiz edileceği CDC işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -204,8 +204,8 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
  [in] *CDC**  
  Onay kutusuyla ilişkili CDC işaretçisi.  
   
- [in] *CRect*  
- A `CRect` nesne, menü görüntüsü çizmek dikdörtgen belirtme.  
+*CRect*<br/>
+[in] A `CRect` nesne, menü görüntüsü çizmek dikdörtgen belirtme.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü çizilmiş TRUE, değilse FALSE döndürür.  
@@ -227,23 +227,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Onay kutusu Çiz cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Onay kutusu Çiz cihaz bağlamı işaretçisi.  
   
- [in] *strText*  
- Görünen metin.  
+*strText*<br/>
+[in] Görünen metin.  
   
- [in] *nTextOffset*  
- Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
+*nTextOffset*<br/>
+[in] Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in] *dikdörtgen*  
- Onay kutusu için görünen dikdörtgen.  
+*Rect*<br/>
+[in] Onay kutusu için görünen dikdörtgen.  
   
- [in] *bIsSelected*  
- Onay kutusunun seçili ya da aksi takdirde FALSE ise TRUE.  
+*bIsSelected*<br/>
+[in] Onay kutusunun seçili ya da aksi takdirde FALSE ise TRUE.  
   
- [in] *bHighlighted*  
- Onay kutusunu vurgulanan ya da aksi takdirde FALSE ise TRUE.  
+*bHighlighted*<br/>
+[in] Onay kutusunu vurgulanan ya da aksi takdirde FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

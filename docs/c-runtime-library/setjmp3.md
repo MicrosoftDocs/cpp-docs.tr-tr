@@ -29,15 +29,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04d06bd7728347770bd17c48abc9898f2a2467a4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1db24214cde4358e55f86ce5ca60f3547220511f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32408373"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45704320"
 ---
 # <a name="setjmp3"></a>_setjmp3
-İç CRT işlevi. Yeni bir uyarlamasını `setjmp` işlevi.  
+İç CRT işlevi. Yeni bir uygulamasını `setjmp` işlevi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,20 +50,20 @@ int _setjmp3(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out] `env`  
- Durum bilgilerini depolamak için arabellek adresi.  
+*Env*<br/>
+[out] Durum bilgilerini depolamak için arabellek adresi.  
   
- [in] `count`  
- Ek sayısı `DWORD`depolanan bilgilerin s `optional parameters`.  
+*Sayısı*<br/>
+[in] Ek sayısı `DWORD`s depolanan bilgilerin `optional parameters`.  
   
- [in] `optional parameters`  
- Tarafından ek veriler gönderilir `setjmp` iç. İlk `DWORD` ek veri bırakma ve bir kalıcı döndürmek için kullanılan bir işlev işaretçisi durumu kaydedeceksiniz. İkinci `DWORD` geri yüklenmesi deneyin düzeydir. Daha fazla veri genel veri dizisinde kaydedilir `jmp_buf`.  
+*İsteğe bağlı parametreler*<br/>
+[in] Tarafından ek veri gönderilen `setjmp` iç. İlk `DWORD` ek veri bırakma ve için bir kalıcı döndürmek için kullanılan bir işlev işaretçisi kayıt durumu olan. İkinci `DWORD` geri yüklenmesi deneyin düzeyidir. Genel veri dizideki herhangi bir veri kaydedilir `jmp_buf`.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Her zaman 0 döndürür.  
+ Her zaman 0 değerini döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu işlev bir C++ programı kullanmayın. C++ desteklemiyor iç bir işlevdir. Nasıl kullanılacağı hakkında daha fazla bilgi için `setjmp`, bkz: [setjmp/longjmp kullanma](../cpp/using-setjmp-longjmp.md).  
+ Bu işlev, bir C++ programında kullanmayın. C++ desteklemez iç bir işlevdir. Nasıl kullanılacağı hakkında daha fazla bilgi için `setjmp`, bkz: [setjmp/longjmp kullanma](../cpp/using-setjmp-longjmp.md).  
   
 ## <a name="requirements"></a>Gereksinimler  
   

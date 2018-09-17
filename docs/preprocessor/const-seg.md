@@ -1,7 +1,7 @@
 ---
 title: const_seg | Microsoft Docs
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-tools
 ms.topic: reference
@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3081837cc4516750f8c2c0d75cfc37eef208f9d
-ms.sourcegitcommit: d4c803bd3a684d7951bf88dcecf1f14af43ae411
+ms.openlocfilehash: db73d212a11fe096c07a7e14d033c21e6b61311c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "42464762"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45705217"
 ---
 # <a name="constseg"></a>const_seg
 Segmenti belirtir burada [const](../cpp/const-cpp.md) değişkenlerin .obj dosyasında depolanır.  
@@ -34,33 +34,35 @@ Segmenti belirtir burada [const](../cpp/const-cpp.md) değişkenlerin .obj dosya
 #pragma const_seg ( [ [ { push | pop}, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- 
+### <a name="parameters"></a>Parametreler
+
+**push**<br/>
+(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A **anında iletme** olabilir bir *tanımlayıcı* ve *segment-name*.  
+  
+**POP**<br/>
+(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+  
+*tanımlayıcı*<br/>
+(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
+  
+Kullanarak *tanımlayıcı* tek bir POP birden çok kayıt getirir **pop** komutu.  
+  
+"*segment-name*"<br/>  
+(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
+  
+"*segment sınıfı*"<br/>
+(İsteğe bağlı) 2.0. sürümden önceki C++ ile uyumluluk için dahildir. Yoksayılır.  
+  
+## <a name="remarks"></a>Açıklamalar
+
 Koşulları anlamını *segment* ve *bölümü* bu konudaki birbirinin yerine kullanılabilir.  
   
 OBJ dosyaları görüntülenebilir [dumpbin](../build/reference/dumpbin-command-line.md) uygulama. .Obj dosyasındaki varsayılan segment `const` değişkenleri .rdata'dır. Bazı `const` skalerler gibi değişkenleri otomatik olarak satır içi kod akışı. Satır içine alınan kod .rdata'da görünmez.  
   
 İçinde dinamik başlatma gerektiren bir nesne tanımlayan bir `const_seg` tanımsız davranışlara neden olur.  
   
-`#pragma const_seg` Hiçbir parametre olmadan, segmenti .rdata olarak sıfırlar.  
-  
-*anında iletme* (isteğe bağlı)  
-İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
-  
-*POP* (isteğe bağlı)  
-Derleyici iç yığının en üstünden bir kayıt kaldırır.  
-  
-*tanımlayıcı* (isteğe bağlı)  
-İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
-  
-Kullanarak *tanımlayıcı* tek bir POP birden çok kayıt getirir *pop* komutu.  
-  
-"*segment-name*" (isteğe bağlı)  
-Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin segment adı haline gelir.  
-  
-"*segment sınıfı*" (isteğe bağlı)  
-Sürüm 2.0'dan önceki C++ ile uyumluluk sağlamak için dahil edilir. Yoksayılır.  
-  
+`#pragma const_seg` Hiçbir parametre olmadan, segmenti .rdata olarak sıfırlar.
+
 ## <a name="example"></a>Örnek  
   
 ```cpp  

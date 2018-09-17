@@ -1,5 +1,5 @@
 ---
-title: Bağımlılıklar için yollar Ara | Microsoft Docs
+title: Arama yolları için Bağımlılara | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,24 +15,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 577fc7e44bfff35cf7efdcff20dc4cdca1c7001e
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d1fd407f99abb98fb949b6d5bcc45b10c6ff9121
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380491"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706322"
 ---
 # <a name="search-paths-for-dependents"></a>Bağımlılıklar için Yollar Ara
-Her bağlı şekilde belirtilen bir isteğe bağlı arama yolu vardır:  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-{directory[;directory...]}dependent  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- NMAKE bağımlı geçerli dizinin ilk olarak ve belirtilen sırada dizinlerde arar. Makro bölümünü veya tümünü bir arama yolu belirtebilirsiniz. Dizin adı kaşlı ({}); alın birden çok dizin, noktalı virgül (;) ayırın. Hiçbir boşluk ya da sekme izin verilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağımlılıklar](../build/dependents.md)
+
+Her bağlı gibi belirtilen bir isteğe bağlı arama yolu vardır:
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+{directory[;directory...]}dependent
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+NMAKE bağımlı bir geçerli dizin ilk olarak ve belirtilen sırada dizinde arar. Makro bölümünü veya tümünü bir arama yolu belirtebilirsiniz. Dizin adları ({}); küme ayraçları içine alın. birden çok dizin, noktalı virgül (;) ayırın. Boşluk veya sekme izin verilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağımlılıklar](../build/dependents.md)

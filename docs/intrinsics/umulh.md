@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afddee0ec2afc43bef22250d37daef201a0fe8dd
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 07d1bf4dcf942fe358b0367f02ed0486ee10bd39
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464779"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706920"
 ---
 # <a name="umulh"></a>__umulh
 **Microsoft'a özgü**  
@@ -38,11 +38,11 @@ unsigned __int64 __umulh(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `a`  
- Çarpılacak ilk sayı.  
+*a*<br/>
+[in] Çarpılacak ilk sayı.  
   
- [in] `b`  
- Çarpılacak ikinci sayı.  
+*b*<br/>
+[in] Çarpılacak ikinci sayı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Çarpma 128-bit sonucunu yüksek 64 bit.  

@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d25fccd56522d420a96b589796ef77cc30148d3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: d438d31088c6ded53df3137e76ebc6a2953890e6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42600898"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700927"
 ---
 # <a name="interlockedexchangeadd-intrinsic-functions"></a>_InterlockedExchangeAdd İç İşlevleri
 **Microsoft'a özgü**  
@@ -164,11 +164,11 @@ __int64 _InterlockedExchangeAdd64_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `Addend`  
- Eklenecek değer; toplamın sonucunu tarafından değiştirildi.  
+*Formülündeki toplanan*<br/>
+[out içinde] Eklenecek değer; toplamın sonucunu tarafından değiştirildi.  
   
- [in] `Value`  
- Eklenecek değer.  
+*Değer*<br/>
+[in] Eklenecek değer.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Dönüş değeri ilk işaret ettiği değişken değeri `Addend` parametresi.  

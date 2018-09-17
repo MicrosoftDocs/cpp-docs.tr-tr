@@ -18,15 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e059b8144518f3d0cacdde5d7f438c04b7933a2
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: dc6625e9f9137bc6adbe10270ef7192d2f1672f0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467508"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45700862"
 ---
 # <a name="sptr-uptr"></a>__sptr, __uptr
-**Microsoft'a özgü**  
+**Microsoft'a özgü**
+
  Kullanım **__sptr** veya **__uptr** nasıl derleyicinin 64-bit işaretçi bir 32 bit işaretçi dönüştürür belirtmek için bir 32 bit işaretçi bildirimde değiştiricisi. Bir 64-bit işaretçi değişkenine atanan ya da bir 64-bit platformda başvurusu bir 32 bit işaretçi gibi dönüştürülür.  
   
  Microsoft belge desteği için 64-bit platformlarda bazen bir 32 bit işaretçi en önemli bite imza biti ifade eder. Varsayılan olarak, derleyici bir 32 bit işaretçi bir 64-bit işaretçiye dönüştürmek için işaret uzantısı kullanır. Diğer bir deyişle, en az önemli 32 bit 64-bit işaretçisinin 32 bit işaretçi değerine ayarlanır ve en önemli 32 bit imza biti 32-bit işaretçinin değerine ayarlanır. Bu dönüştürme, imza biti 0 ise, ancak imza biti 1 değilse, doğru sonuçlar verir. Örneğin, 32-bit adres 0x7FFFFFFF eşdeğer 64 bit adres 0x000000007FFFFFFF verir, ancak 0x80000000 32-bit adres yanlış 0xFFFFFFFF80000000 için değiştirilir.  
