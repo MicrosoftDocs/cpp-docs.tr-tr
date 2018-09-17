@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 423cd4585fa6e9ae5a5fbb16cf7d5c43aaf7c152
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 00ef28954a686dac72c8b7f55b86c88313e74643
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42605933"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719726"
 ---
 # <a name="rdx"></a>rdx
 
@@ -43,8 +43,8 @@ Bir kayıt defteri anahtarı oluşturur veya mevcut bir kayıt defteri anahtarı
 *Anahtarı*  
 Açılan veya oluşturulacak anahtar adı.
 
-*ValueName* (isteğe bağlı)  
-Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
+*değer adı*  
+(İsteğe bağlı) Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
 
 *regtype*  
 Eklenen kayıt defteri anahtarı türü. Aşağıdakilerden biri olabilir: `text`, `dword`, `binary`, veya `CString`.

@@ -19,12 +19,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b56a493ce91c6ac7f0864a1bf4e10476603d79fd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 146a764cd2b1fcc567a564a6995c191c4f838262
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38959049"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722234"
 ---
 # <a name="systemclock-structure"></a>system_clock Yapısı
 
@@ -86,8 +86,8 @@ static time_point from_time_t(time_t Tm) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*TM*  
- A [time_t](../c-runtime-library/standard-types.md) nesne.
+*TM*<br/>
+A [time_t](../c-runtime-library/standard-types.md) nesne.
 
 ## <a name="is_monotonic_constant"></a>  system_clock::is_monotonic sabiti
 
@@ -143,8 +143,8 @@ static time_t to_time_t(const time_point& Time) noexcept;
 
 ### <a name="parameters"></a>Parametreler
 
-*saat*  
- A [time_point](../standard-library/time-point-class.md) nesne.
+*saat*<br/>
+A [time_point](../standard-library/time-point-class.md) nesne.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

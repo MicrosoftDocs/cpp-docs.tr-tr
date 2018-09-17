@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 449d79119b15e814485f3b7e0c3eb7472d314d19
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ee3bf6b087777bc550a34234a8969e2127c8ec2d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852490"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720258"
 ---
 # <a name="cmfcimagepaintarea-class"></a>Cmfcımagepaintarea sınıfı
 Bir Resim Düzenleyicisi iletişim kutusunu görüntüdeki değiştirmek için kullandığınız resim alanı sağlar.  
@@ -98,7 +98,7 @@ CMFCImagePaintArea(CMFCImageEditorDialog* pParentDlg);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pParentDlg*|Üst görüntü Düzenleyicisi iletişim kutusu için bir işaretçi.|  
+|*pParentDlg*|[in] Üst görüntü Düzenleyicisi iletişim kutusu için bir işaretçi.|  
   
 ##  <a name="getmode"></a>  CMFCImagePaintArea::GetMode  
  Geçerli çizim modunu alır.  
@@ -122,7 +122,7 @@ void SetBitmap(CBitmap* pBitmap);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pBitmap*|Görüntülenecek yeni bit eşlem resim.|  
+|*pBitmap*|[in] Görüntülenecek yeni bit eşlem resim.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *pBitmap* NULL ise bu yöntem değiştirilebilir Boya alanın boyutu sıfır olarak ayarlıyor. Aksi takdirde, sağlanan bit eşlem görüntüsüne boyutunu değiştirilebilir Boya alanının boyutunu ayarlar.  
@@ -139,7 +139,7 @@ void SetColor(COLORREF color);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *rengi*|Yeni Çizim rengi.|  
+|*Renk*|[in] Yeni Çizim rengi.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ne zaman bir renk Resim Düzenleyicisi palet çubuğundan seçin veya Renk Seçici, framework geçerli çizim rengini güncelleştirmek için bu yöntemi çağırır. İlk çizim rengi siyah (0 COLORREF değeri).  
@@ -158,7 +158,7 @@ void SetMode(IMAGE_EDIT_MODE mode);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *modu*|Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten bir değer.|  
+|*Modu*|[in] Bir [ımage_edıt_mode](cmfcimagepaintarea-image-edit-mode-enumeration.md) geçerli çizim modu belirten bir değer.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

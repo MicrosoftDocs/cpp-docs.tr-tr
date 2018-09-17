@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b9de076f4682bd3649f62940a0dd492eb801e28
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 9ed3a07b7994d2c7adc7a5d708d31abe9c49437f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37850189"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717112"
 ---
 # <a name="cmfcoutlookbar-class"></a>CMFCOutlookBar sınıfı
 Öğesinin görsel görünümüne sahip sekmeli bölme **Gezinti bölmesinde** Microsoft Outlook 2000 veya Outlook 2003'te. `CMFCOutlookBar` Nesne içeren bir [CMFCOutlookBarTabCtrl sınıfı](../../mfc/reference/cmfcoutlookbartabctrl-class.md) nesnesi ve bir dizi sekme. Sekmeleri olabilir [CMFCOutlookBarPane sınıfı](../../mfc/reference/cmfcoutlookbarpane-class.md) nesneleri veya `CWnd`-türetilmiş nesneler. Kullanıcıya Outlook Çubuğu bir dizi düğme ve görüntüleme alanı görünür. Kullanıcı bir düğmeyi tıkladığında karşılık gelen denetim veya düğme bölmesi görüntülenir.  
@@ -210,8 +210,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Bu bölme için yerleştirilmiş başka bir bölme için bir işaretçi.  
+*pBar*<br/>
+[in] Bu bölme için yerleştirilmiş başka bir bölme için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başka bir bölme Outlook Çubuğu bölmesi için yerleştirilmiş olması gerekiyorsa TRUE; Aksi durumda FALSE.  
@@ -253,26 +253,26 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszCaption*  
- Pencere resim yazısını belirtir.  
+*lpszCaption*<br/>
+[in] Pencere resim yazısını belirtir.  
   
- [in] *pParentWnd*  
- Bir üst penceresine bir işaretçi belirtir. NULL olmamalıdır.  
+*pParentWnd*<br/>
+[in] Bir üst penceresine bir işaretçi belirtir. NULL olmamalıdır.  
   
- [in] *dikdörtgen*  
- Outlook çubuğu boyutunu ve konumunu piksel cinsinden belirtir.  
+*Rect*<br/>
+[in] Outlook çubuğu boyutunu ve konumunu piksel cinsinden belirtir.  
   
- [in] *nID*  
- Denetim kimliğini belirtir. Diğer denetimi uygulamada kullanılan kimlikleri farklı olmalıdır.  
+*nID*<br/>
+[in] Denetim kimliğini belirtir. Diğer denetimi uygulamada kullanılan kimlikleri farklı olmalıdır.  
   
- [in] *dwStyle*  
- İstenen denetim çubuğu stilini belirtir. Olası değerler için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] İstenen denetim çubuğu stilini belirtir. Olası değerler için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *dwControlBarStyle*  
- Kitaplığı tarafından tanımlanan özel stilleri belirtir.  
+*dwControlBarStyle*<br/>
+[in] Kitaplığı tarafından tanımlanan özel stilleri belirtir.  
   
- [in] *pContext*  
- Bağlam oluşturur.  
+*pContext*<br/>
+[in] Bağlam oluşturur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -300,17 +300,17 @@ CMFCOutlookBarPane* CreateCustomPage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPageName*  
- Sayfa etiketi.  
+*lpszPageName*<br/>
+[in] Sayfa etiketi.  
   
- [in] *bActivatePage*  
- TRUE ise, sayfa oluşturulduktan sonra etkinleşir.  
+*bActivatePage*<br/>
+[in] TRUE ise, sayfa oluşturulduktan sonra etkinleşir.  
   
- [in] *dwEnabledDocking*  
- Etkin yerleştirme kenarı sayfanın ayrıldığında belirten CBRS_ALIGN_ bayrakların birleşimi.  
+*dwEnabledDocking*<br/>
+[in] Etkin yerleştirme kenarı sayfanın ayrıldığında belirten CBRS_ALIGN_ bayrakların birleşimi.  
   
- [in] *bEnableTextLabels*  
- TRUE ise, sayfada bulunan düğmelerinin metin etiketlerini etkinleştirilir.  
+*bEnableTextLabels*<br/>
+[in] TRUE ise, sayfada bulunan düğmelerinin metin etiketlerini etkinleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni oluşturulan bir sayfa ya da oluşturma başarısız olursa NULL bir işaretçi.  
@@ -350,17 +350,17 @@ virtual BOOL FloatTab(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Kayan nokta bölmesi için bir işaretçi.  
+*pBar*<br/>
+[in] Kayan nokta bölmesi için bir işaretçi.  
   
- [in] *nTabID*  
- Kayan nokta için sekmesinde sıfır tabanlı dizini.  
+*nTabID*<br/>
+[in] Kayan nokta için sekmesinde sıfır tabanlı dizini.  
   
- [in] *dockMethod*  
- Bölmesinde float yapmak için kullanılacak yöntemi belirtir.  Daha fazla bilgi için [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
+*dockMethod*<br/>
+[in] Bölmesinde float yapmak için kullanılacak yöntemi belirtir.  Daha fazla bilgi için [CBaseTabbedPane::FloatTab](../../mfc/reference/cbasetabbedpane-class.md#floattab).  
   
- [in] *bHide*  
- Kayan önce bölmesinde gizlemek için TRUE; Aksi takdirde FALSE. Bu yöntemin temel sınıftaki sürümün, bu parametre bir varsayılan değer yok.  
+*bHide*<br/>
+[in] Kayan önce bölmesinde gizlemek için TRUE; Aksi takdirde FALSE. Bu yöntemin temel sınıftaki sürümün, bu parametre bir varsayılan değer yok.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde kaydırıldı TRUE; Aksi takdirde FALSE.  
@@ -391,11 +391,11 @@ virtual void GetTabArea(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *rectTabAreaTop*  
- İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) üst sekme alanının içerir.  
+*rectTabAreaTop*<br/>
+[out] İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) üst sekme alanının içerir.  
   
- [out] *rectTabAreaBottom*  
- İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) alt sekme alanının içerir.  
+*rectTabAreaBottom*<br/>
+[out] İşlevi döndüğünde, boyutunu ve konumunu (istemci koordinatlarında) alt sekme alanının içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çerçeve hedef bölmesine yerleştirme türünü belirlemek için bu yöntemi çağırır. Kullanıcı'nin hedef bölmesinin sekme alanı yerleştirilemediğinde bölmesi simge durumuna küçültülmüş framework belirlediğinde, ilk bölmesinde hedef bölmesinde yeni bir sekme eklemeyi dener. Aksi takdirde, uygun bir hedef bölmesinde tarafındaki ilk bölmesinde sabitlemek çalışır. Framework ek yerleştirilmiş bölmenin uyum sağlamak için bir kaydırıcı ile yeni bir kapsayıcı oluşturur.  
@@ -425,8 +425,8 @@ virtual void OnAfterAnimation(int nPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPage*  
- Etkin hale sekme sayfası sıfır tabanlı dizini.  
+*nPage*<br/>
+[in] Etkin hale sekme sayfası sıfır tabanlı dizini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkin sekmede ayarlamanın görsel efekt animasyonu olup etkinleştirdiyseniz üzerinde bağlıdır. Daha fazla bilgi için [CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation).  
@@ -439,8 +439,8 @@ virtual BOOL OnBeforeAnimation(int nPage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nPage*  
- Yaklaşık etkin olarak ayarlanması için sekmesinde sayfasının sıfır tabanlı dizini.  
+*nPage*<br/>
+[in] Yaklaşık etkin olarak ayarlanması için sekmesinde sayfasının sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Animasyon yeni etkin sekmede ayarı kullanılması gerekiyorsa TRUE veya FALSE animasyon devre dışı bırakılmalıdır döndürür.  
@@ -455,8 +455,8 @@ virtual void OnScroll(BOOL bDown);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bDown*  
- Outlook Çubuğu aşağı kaydırarak veya yukarı kaydırma, FALSE ise TRUE.  
+*bDown*<br/>
+[in] Outlook Çubuğu aşağı kaydırarak veya yukarı kaydırma, FALSE ise TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -470,11 +470,11 @@ BOOL RemoveCustomPage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Uıpage*  
- Sayfanın üst Outlook penceresindeki sıfır tabanlı dizini.  
+*Uıpage*<br/>
+[in] Sayfanın üst Outlook penceresindeki sıfır tabanlı dizini.  
   
- [in] *pTargetWnd*  
- Verildiğinde Outlook üst pencere.  
+*pTargetWnd*<br/>
+[in] Verildiğinde Outlook üst pencere.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Özel sayfa başarıyla kaldırıldı olursa sıfır dışı; Aksi durumda 0.  
@@ -496,11 +496,11 @@ void SetButtonsFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFont*  
- Yeni yazı tipini belirtir.  
+*pFont*<br/>
+[in] Yeni yazı tipini belirtir.  
   
- [in] *bRedraw*  
- TRUE ise Outlook Çubuğu çizilir.  
+*bRedraw*<br/>
+[in] TRUE ise Outlook Çubuğu çizilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir outlook sekmesinde sayfa düğmelerini görüntülenen metnin yazı tipi ayarlamak için bu yöntemi kullanın.  
@@ -513,8 +513,8 @@ void SetMode2003(BOOL bMode2003=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bMode2003*  
- TRUE ise, Office 2003 modu etkin.  
+*bMode2003*<br/>
+[in] TRUE ise, Office 2003 modu etkin.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Office 2003 modunu devre dışı bırakmak veya etkinleştirmek için bu işlevi kullanın. Bu modda, Outlook Çubuğu bir ek araç çubuğu özelleştirme düğmesi vardır. Microsoft Office 2003'te Outlook Çubuğu davranışını Outlook Çubuğu davranışını uyar.  

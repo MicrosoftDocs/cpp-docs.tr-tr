@@ -34,12 +34,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b903946a2e907b67d70e5008bff602670f1751e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a0bb29fdaff72370ec197fc9b3f651b5ff574c32
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849477"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717437"
 ---
 # <a name="cmfcmaskededit-class"></a>CMFCMaskedEdit sınıfı
 `CMFCMaskedEdit` Sınıfı, kullanıcı girişini maskeye doğrulayan ve doğrulanmış sonuçları bir şablona göre görüntüleyen maskelenmiş düzenleme denetimini destekler.  
@@ -132,8 +132,8 @@ void EnableGetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Belirtmek için TRUE [CMFCMaskedEdit::GetWindowText](#getwindowtext) yöntemi almak yalnızca karakter; maskelenen FALSE yöntemi tam metin aldığını belirtir. Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Belirtmek için TRUE [CMFCMaskedEdit::GetWindowText](#getwindowtext) yöntemi almak yalnızca karakter; maskelenen FALSE yöntemi tam metin aldığını belirtir. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Maskeli karakterlerini alma etkinleştirmek için bu yöntemi kullanın. Ardından telefon numarası gibi (425) 555-0187 karşılık gelen bir maskeli düzen denetimi oluşturun. Eğer `GetWindowText` yöntemi döndürür "4255550187". Maskeli karakterlerini alma devre dışı bırakırsanız `GetWindowText` yöntemi düzenleme denetiminin, örneğin "(425) 555-0187" görüntülenen metni döndürür.  
@@ -150,17 +150,17 @@ void EnableMask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszMask*  
- Kullanıcı girişi her konumda görünebilir karakter türünü belirtir ve maske dizesini. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır. Maske karakterler hakkında daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
+*lpszMask*<br/>
+[in] Kullanıcı girişi her konumda görünebilir karakter türünü belirtir ve maske dizesini. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır. Maske karakterler hakkında daha fazla ayrıntı için Açıklamalar bölümüne bakın.  
   
- [in] *lpszInputTemplate*  
- Karakter değişmez değeri belirten bir maske şablon dize kullanıcı girişi her konumda görünür. Alt çizgi karakteri ('_') karakteri yer tutucu olarak kullanın. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır.  
+*lpszInputTemplate*<br/>
+[in] Karakter değişmez değeri belirten bir maske şablon dize kullanıcı girişi her konumda görünür. Alt çizgi karakteri ('_') karakteri yer tutucu olarak kullanın. Uzunluğunu *lpszInputTemplate* ve *lpszMask* parametresi dizeleri aynı olmalıdır.  
   
- [in] *chMaskInputTemplate*  
- Kullanıcı girişi geçersiz her karakter için framework yerini alır ve varsayılan karakter. Bu parametrenin varsayılan değeri, alt çizgi ('_') ' dir.  
+*chMaskInputTemplate*<br/>
+[in] Kullanıcı girişi geçersiz her karakter için framework yerini alır ve varsayılan karakter. Bu parametrenin varsayılan değeri, alt çizgi ('_') ' dir.  
   
- [in] *lpszValid*  
- Geçerli karakter kümesini içeren bir dize. NULL, tüm karakterlerin geçerli olduğunu gösterir. Bu parametrenin varsayılan değeri null.  
+*lpszValid*<br/>
+[in] Geçerli karakter kümesini içeren bir dize. NULL, tüm karakterlerin geçerli olduğunu gösterir. Bu parametrenin varsayılan değeri null.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Maske maskeli düzen denetimi oluşturmak için bu yöntemi kullanın. Öğesinden bir sınıf türetin `CMFCMaskedEdit` sınıf ve geçersiz kılma [CMFCMaskedEdit::IsMaskedChar](#ismaskedchar) kendi kodunuzu özel maskesi işleme için kullanılan yöntem.  
@@ -186,8 +186,8 @@ void EnableSelectByGroup(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Yalnızca grupları seçmek için TRUE; Tüm metni seçmek için FALSE. Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Yalnızca grupları seçmek için TRUE; Tüm metni seçmek için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Maskeli düzen denetimi, bir kullanıcı grubu ya da tüm metni seçmek izin verip vermeyeceğini belirtmek için bu işlevi kullanın.  
@@ -218,8 +218,8 @@ void EnableSetMaskedCharsOnly(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kullanıcı karakter maskelenmiş yalnızca girişi karşı doğrulamak için TRUE; Tüm maske karşı doğrulamak için FALSE. Varsayılan değer True'dur.  
+*bSistemlerde*<br/>
+[in] Kullanıcı karakter maskelenmiş yalnızca girişi karşı doğrulamak için TRUE; Tüm maske karşı doğrulamak için FALSE. Varsayılan değer True'dur.  
   
 ##  <a name="getwindowtext"></a>  CMFCMaskedEdit::GetWindowText  
  Maskeli düzen denetimi metni alır doğrulandı.  
@@ -233,14 +233,14 @@ void GetWindowText(CString& rstrString) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *lpszStringBuf*  
- Metin düzenleme denetiminden alan arabellek için işaretçi.  
+*lpszStringBuf*<br/>
+[out] Metin düzenleme denetiminden alan arabellek için işaretçi.  
   
- [in] *nMaxCount*  
- Almak için karakter sayısı.  
+*nMaxCount*<br/>
+[in] Almak için karakter sayısı.  
   
- [out] *rstrString*  
- Metin düzenleme denetiminden alan dize nesnesine bir başvuru.  
+*rstrString*<br/>
+[out] Metin düzenleme denetiminden alan dize nesnesine bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk yöntem aşırı yüklemesi kopyalanır dizesinin bayt sayısını döndürür *lpszStringBuf* parametre arabelleği; Maskelenmiş Düzenleme denetiminin metin sahipse 0.  
@@ -260,11 +260,11 @@ virtual BOOL IsMaskedChar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *chChar*  
- Doğrulanacak karakter.  
+*chChar*<br/>
+[in] Doğrulanacak karakter.  
   
- [in] *chMaskChar*  
- Maske dizesini karşılık gelen karakter.  
+*chMaskChar*<br/>
+[in] Maske dizesini karşılık gelen karakter.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise *chChar* parametresi tarafından izin verilen karakter türüdür *chMaskChar* parametre; Aksi takdirde FALSE.  
@@ -280,8 +280,8 @@ void SetValidChars(LPCTSTR lpszValid=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszValid*  
- Geçerli giriş karakter kümesini içeren bir dize. NULL tüm karakterlerin geçerli olduğu anlamına gelir. Bu parametrenin varsayılan değeri null.  
+*lpszValid*<br/>
+[in] Geçerli giriş karakter kümesini içeren bir dize. NULL tüm karakterlerin geçerli olduğu anlamına gelir. Bu parametrenin varsayılan değeri null.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Geçerli karakterler listesini tanımlamak için bu yöntemi kullanın. Bir girdi karakteri bu listede değilse, maskeli düzen denetimi bunu kabul etmez.  
@@ -298,8 +298,8 @@ void SetWindowText(LPCTSTR lpszString);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszString*  
- Bir bilgi istemi olarak kullanılacak bir boş sonlandırılmış dizeye işaret eder.  
+*lpszString*<br/>
+[in] Bir bilgi istemi olarak kullanılacak bir boş sonlandırılmış dizeye işaret eder.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, Denetim metin ayarlar.  

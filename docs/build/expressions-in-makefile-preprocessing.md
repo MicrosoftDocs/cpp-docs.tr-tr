@@ -16,22 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 04a53e5e6fe45c2c846cae3fb9e973fe1c712107
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1070eb01802bd4b39f62ae24519ad6dabca7eb90
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367274"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719013"
 ---
 # <a name="expressions-in-makefile-preprocessing"></a>Derleme Görevleri Dosyası Önişlemlerindeki İfadeler
-**! Eğer** veya **! ELSE IF** `constantexpression` tamsayı Sabitleri (içinde ondalık veya dil C gösterimi), dize sabitleri veya komutları oluşur. Grup ifadeleri için ayraç kullanın. C türü imzalı uzun tamsayı aritmetik ifadeler kullanın; sayı 32-bit ikiye aralığında - 2147483648 ile 2147483647 arasındaki şeklindedir.  
-  
- İfadeler sabit değerleri, komutları, dizeleri, makroları ve dosya sistemi yolları çıkış kodlarından hareket işleçleri kullanabilirsiniz.  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
- [Derleme görevleri dosyası önişlem işleçleri](../build/makefile-preprocessing-operators.md)  
-  
- [Bir programı önişlemde yürütme](../build/executing-a-program-in-preprocessing.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası Ön İşlemi](../build/makefile-preprocessing.md)
+
+**! Eğer** veya **! ELSE IF** `constantexpression` tamsayı Sabitleri (gösterimde ondalık ya da C dili), dize sabitleri veya komutları oluşur. İfadeleri gruplamak için parantez kullanın. C stili imzalı uzun tamsayı aritmetik ifadeler kullanın. 32 bitlik ikiye tamamlayıcı biçimde aralığında - 2147483648 ile 2147483647 arasında sayılardır.
+
+İfadeler, sabit değerleri, çıkış kodlarından komutları, dizeler, makroları ve dosya sistemi yolları gibi davranan işleçlerini kullanabilirsiniz.
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+[Derleme görevleri dosyası ön işleme işleçleri](../build/makefile-preprocessing-operators.md)
+
+[Programı önişlemde yürütme](../build/executing-a-program-in-preprocessing.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası Ön İşlemi](../build/makefile-preprocessing.md)

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 789a8165a12977d11220d299e2c99549121dba64
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: ef348275059fd2623ca83b40730f010a7d18d6d5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465642"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721181"
 ---
 # <a name="cmfcribbonminitoolbar-class"></a>CMFCRibbonMiniToolBar sınıfı
 Bağlamsal açılan araç çubuğu uygular.  
@@ -98,11 +98,11 @@ void SetCommands(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pRibbonBar*  
- Şerit çubuğunun mini araç çubuğu düğmeleri görüntülemek arar.  
+*pRibbonBar*<br/>
+[in] Şerit çubuğunun mini araç çubuğu düğmeleri görüntülemek arar.  
   
- [in] *lstCommands*  
- Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorisi ilişkili düğmeleri bulmak için arama yapılır.  
+*lstCommands*<br/>
+[in] Mini araç çubuğunda görüntülenecek komutları listesi. Tüm Şerit kategorisi ilişkili düğmeleri bulmak için arama yapılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Mini araç çubuğunda görüntülenecek komutların listesini ayarlamak için bu işlevi kullanın.  
@@ -122,11 +122,11 @@ BOOL Show(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *x*  
- Ekran koordinatlarında mini araç yatay konumu belirtir.  
+*x*<br/>
+[in] Ekran koordinatlarında mini araç yatay konumu belirtir.  
   
- [in] *y*  
- Ekran koordinatlarında mini araç dikey konumu belirtir.  
+*Y*<br/>
+[in] Ekran koordinatlarında mini araç dikey konumu belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Mini araç başarıyla görüntüleniyorsa TRUE; Aksi takdirde FALSE.  
@@ -143,17 +143,17 @@ BOOL ShowWithContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *x*  
- Bağlam menüsünün yatay konum ekran koordinatlarında belirtir.  
+*x*<br/>
+[in] Bağlam menüsünün yatay konum ekran koordinatlarında belirtir.  
   
- [in] *y*  
- Ekran koordinatlarında bağlam menüsü dikey konumu belirtir.  
+*Y*<br/>
+[in] Ekran koordinatlarında bağlam menüsü dikey konumu belirtir.  
   
- [in] *uiMenuResID*  
- Bağlam menüsünü görüntülemek için kaynak Kimliğini belirtir.  
+*uiMenuResID*<br/>
+[in] Bağlam menüsünü görüntülemek için kaynak Kimliğini belirtir.  
   
- [in] *pWndOwner*  
- Bağlam menüsünden iletileri alan penceresini tanımlar.  
+*pWndOwner*<br/>
+[in] Bağlam menüsünden iletileri alan penceresini tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bağlam menüsü başarıyla görüntüleniyorsa TRUE; Aksi takdirde FALSE.  

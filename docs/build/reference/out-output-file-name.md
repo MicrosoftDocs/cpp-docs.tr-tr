@@ -21,45 +21,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fd9ec1b1631104355e076071370f627a36b4037
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8c4bfc79a257424820bed5f784cb0a83daf016d5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376111"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725406"
 ---
 # <a name="out-output-file-name"></a>/OUT (Çıktı Dosyası Adı)
-```  
-/OUT:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- *Dosya adı*  
- Bir kullanıcı tarafından belirtilen çıkış dosyasının adı. Varsayılan adı değiştirir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan ad ve konum bağlayıcı oluşturur programın /OUT seçeneğini geçersiz kılar.  
-  
- Varsayılan olarak, bağlayıcı temel belirtilen ilk .obj dosyasının adını ve uygun bir uzantı (.exe veya .dll) kullanarak dosya adı oluşturur.  
-  
- Bu bir .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçeneği. Ayrıntılar için bkz [oluşturmak Mapfile](../../build/reference/map-generate-mapfile.md) (/ eşleme) ve [/IMPLIB](../../build/reference/implib-name-import-library.md).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **genel** özellik sayfası.  
-  
-4.  Değiştirme **çıktı dosyası** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/OUT:filename
+```
+
+## <a name="arguments"></a>Arguments
+
+*Dosya adı*<br/>
+Bir kullanıcı tarafından belirtilen çıkış dosyasının adı. Varsayılan adını değiştirir.
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Out seçeneği varsayılan adını ve bağlayıcının oluşturduğu program konumunu geçersiz kılar.
+
+Varsayılan olarak, bağlayıcı ilk .obj dosyası belirtilmedi ve uygun bir uzantı (.exe veya .dll) temel adını kullanarak dosya adı oluşturur.
+
+Bu .mapfile veya içeri aktarma kitaplığı için varsayılan taban adı seçeneği. Ayrıntılar için bkz [eşlem dosyası oluştur](../../build/reference/map-generate-mapfile.md) (/ MAP) ve [/IMPLIB](../../build/reference/implib-name-import-library.md).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **genel** özellik sayfası.
+
+1. Değiştirme **çıkış dosyası** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.OutputFile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

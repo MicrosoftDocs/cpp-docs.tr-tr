@@ -36,12 +36,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b37279ef28073e758be2ebc849d6657168c22339
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: c97b80031c60dabb22d3dfea905c9a46f7731f67
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104205"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716449"
 ---
 # <a name="uniformintdistribution-class"></a>uniform_int_distribution Sınıfı
 
@@ -201,13 +201,13 @@ explicit uniform_int_distribution(const param_type& parm);
 
 ### <a name="parameters"></a>Parametreler
 
-*a*  
+*a*<br/>
 Kapsamlı rastgele değerler için alt sınır.
 
-*b*  
+*b*<br/>
 Kapsamlı rastgele değerler için üst sınır.
 
-*parametre*  
+*parametre*<br/>
 `param_type` Dağıtımın oluşturulması için kullanılan yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -237,13 +237,13 @@ struct param_type {
 
 ### <a name="parameters"></a>Parametreler
 
-*a*  
+*a*<br/>
 Kapsamlı rastgele değerler için alt sınır.
 
-*b*  
+*b*<br/>
 Kapsamlı rastgele değerler için üst sınır.
 
-*sağ*  
+*sağ*<br/>
 `param_type` İçin karşılaştırılacak nesne.
 
 ### <a name="remarks"></a>Açıklamalar

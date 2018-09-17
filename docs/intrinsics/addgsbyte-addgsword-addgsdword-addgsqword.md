@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50c0025e561c86fc18bbf5c4554c9f894fe32ec7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: cd5341dc4d47740410df01feadbd9e6aa3926a23
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465999"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721396"
 ---
 # <a name="addgsbyte-addgsword-addgsdword-addgsqword"></a>__addgsbyte, __addgsword, __addgsdword, __addgsqword
 **Microsoft'a özgü**  
@@ -60,11 +60,11 @@ void __addgsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Offset`  
- Başından uzaklık `GS`.  
+*uzaklık*<br/>
+[in] Başından uzaklık `GS`.  
   
- [in] `Data`  
- Bellek konumuna eklenecek değer.  
+*Veri*<br/>
+[in] Bellek konumuna eklenecek değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

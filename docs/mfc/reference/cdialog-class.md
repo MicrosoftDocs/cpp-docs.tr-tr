@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff3bc9ea331be6c25be80b21c14a309d47718c8e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c18a9b1e4a35a1089b8a7fb441161552bb3a3909
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43217339"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724314"
 ---
 # <a name="cdialog-class"></a>CDialog sınıfı
 İletişim kutularını ekranda görüntülemek için kullanılan taban sınıf.  
@@ -472,8 +472,8 @@ Virtual void OnSetFont(CFont* pFont);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFont*  
- Bir işaretçi varsayılan yazı tipini, bu iletişim kutusundaki tüm denetimler için kullanılacak yazı tipini belirtir.  
+*pFont*<br/>
+[in] Bir işaretçi varsayılan yazı tipini, bu iletişim kutusundaki tüm denetimler için kullanılacak yazı tipini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  İletişim kutusu, tüm denetimler için varsayılan olarak belirtilen yazı tipi kullanın.  

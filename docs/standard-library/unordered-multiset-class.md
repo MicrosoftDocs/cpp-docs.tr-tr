@@ -144,12 +144,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f601d636ab280a5f7346447b907c3326a4fdecd
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: ddfbb4887a1b34770a1a350f4d2863635c837db0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38965493"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725917"
 ---
 # <a name="unorderedmultiset-class"></a>unordered_multiset Sınıfı
 
@@ -363,7 +363,8 @@ size_type bucket(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-keyval eşlemek için anahtar değeri.
+*keyval*<br/>
+Eşlenecek anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -507,8 +508,8 @@ size_type bucket_size(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*  
- Demet sayısı.
+*nbucket*<br/>
+Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -873,8 +874,8 @@ size_type count(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1119,8 +1120,8 @@ const_local_iterator end(size_type nbucket) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nbucket*  
- Demet sayısı.
+*nbucket*<br/>
+Demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1187,8 +1188,8 @@ std::pair<const_iterator, const_iterator>
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1261,17 +1262,17 @@ size_type erase(
 
 ### <a name="parameters"></a>Parametreler
 
-*Burada*  
- Kaldırılacak öğenin konumu.
+*Burada*<br/>
+Kaldırılacak öğenin konumu.
 
-*ilk*  
- Kaldırılacak ilk öğenin konumu.
+*ilk*<br/>
+Kaldırılacak ilk öğenin konumu.
 
-*Son*  
- Kaldırılacak yalnızca son öğenin ötesinde konumu.
+*Son*<br/>
+Kaldırılacak yalnızca son öğenin ötesinde konumu.
 
-*Key*  
- Kaldırılacak öğe anahtar değeri.
+*Key*<br/>
+Kaldırılacak öğe anahtar değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1293,8 +1294,8 @@ const_iterator find(const Key& keyval) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*keyval*  
- Aranacak anahtar değeri.
+*keyval*<br/>
+Aranacak anahtar değeri.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1906,8 +1907,8 @@ void max_load_factor(float factor);
 
 ### <a name="parameters"></a>Parametreler
 
-*faktörü*  
- Yeni en yüksek yük faktörünün.
+*faktörü*<br/>
+Yeni en yüksek yük faktörünün.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2188,8 +2189,8 @@ void rehash(size_type nbuckets);
 
 ### <a name="parameters"></a>Parametreler
 
-*nbuckets*  
- İstenen demet sayısı.
+*nbuckets*<br/>
+İstenen demet sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2372,8 +2373,8 @@ void swap(unordered_multiset& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- İle takas için kapsayıcı.
+*sağ*<br/>
+İle takas için kapsayıcı.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -2495,8 +2496,8 @@ unordered_multiset(
 |*Al*|Depolanacak ayırıcı nesne.|
 |*Comp*|Depolanacak karşılaştırma işlevi nesnesi.|
 |*Karma*|Depolanacak karma işlev nesnesi.|
-|*bucket_count*|En düşük demet sayısı.|
-|*Sağ*|Kopyalanacak kapsayıcı.|
+|*Bucket_count*|En düşük demet sayısı.|
+|*sağ*|Kopyalanacak kapsayıcı.|
 |*IList*|Kopyalanacak initializer_list.|
 
 ### <a name="remarks"></a>Açıklamalar
@@ -2505,7 +2506,7 @@ unordered_multiset(
 
 Ayrıca, tüm oluşturucular çeşitli depolanmış değerleri başlatır. Kopya oluşturucusu için gelen değerler elde edilir *sağ*. Aksi durumda:.
 
-demetler en az sayıda bağımsız değişken olan *Bucket_count*, aksi takdirde mevcut açıklanan varsayılan bir değer olup olmadığını burada uygulama tanımlı değer olarak `N0`.
+Demetler en az sayıda bağımsız değişken olan *Bucket_count*, aksi takdirde mevcut açıklanan varsayılan bir değer olup olmadığını burada uygulama tanımlı değer olarak `N0`.
 
 Karma işlev nesnesi bağımsız değişken olan *karma*, mevcut; Aksi durumda, `Hash()`.
 

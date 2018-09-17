@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b88c98fa3debc7bd5cc6a21d1bc9440e9386b988
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f339561e0a1e8c94063aa0c36c3ecbc96545b35f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380294"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722780"
 ---
 # <a name="targets-in-multiple-description-blocks"></a>Birden Çok Açıklama Bloğundaki Hedefler
-Bir hedef farklı komutlarını kullanarak birden çok açıklama bloğundaki güncelleştirmek için iki birbirini izleyen iki nokta üst üste (:) hedefleri ve bağımlılıklar arasında belirtin.  
-  
-```  
-target.lib :: one.asm two.asm three.asm  
-    ml one.asm two.asm three.asm  
-    lib target one.obj two.obj three.obj  
-target.lib :: four.c five.c  
-    cl /c four.c five.c  
-    lib target four.obj five.obj  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hedefler](../build/targets.md)
+
+Bir hedef farklı komutlarını kullanarak birden çok açıklama bloğundaki güncelleştirmek için iki ardışık iki nokta üst üste (:) hedefler ve bağımlılıklar arasında belirtin.
+
+```
+target.lib :: one.asm two.asm three.asm
+    ml one.asm two.asm three.asm
+    lib target one.obj two.obj three.obj
+target.lib :: four.c five.c
+    cl /c four.c five.c
+    lib target four.obj five.obj
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hedefler](../build/targets.md)

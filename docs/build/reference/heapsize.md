@@ -16,19 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a7fd45584cc83a1b5fbfc593959e04304c5aaeb3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e5939828dbcd735e80535192687b91c22b06fd50
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370953"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717671"
 ---
 # <a name="heapsize"></a>HEAPSIZE
-İle aynı işlevselliği sunar [/yığın](../../build/reference/heap-set-heap-size.md) bağlayıcı seçeneği.  
-  
-```  
-/HEAP:reserve[,commit]  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+
+Aynı işlevselliği sunar [/yığın](../../build/reference/heap-set-heap-size.md) bağlayıcı seçeneği.
+
+```
+/HEAP:reserve[,commit]
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

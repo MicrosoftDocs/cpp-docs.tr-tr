@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b32317f4fd67a627a272ea8eefcc949d1b0e63c8
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 32dd81b005570761088cdeb874ad0524bc543df2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853000"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721870"
 ---
 # <a name="cmfccolorpopupmenu-class"></a>CMFCColorPopupMenu sınıfı
 Kullanıcıların bir belge veya uygulamadaki renkleri seçmek için açılır menü temsil eder.  
@@ -133,51 +133,51 @@ CMFCColorPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *renkleri*  
- Açılır menüde framework görüntüler renkleri dizisi.  
+*Renkleri*<br/>
+[in] Açılır menüde framework görüntüler renkleri dizisi.  
   
- [in] *rengi*  
- Varsayılan renk seçili.  
+*Renk*<br/>
+[in] Varsayılan renk seçili.  
   
- [in] *lpszAutoColor*  
- Metin etiketini *otomatik* rengi düğmesi (varsayılan) ya da NULL.  
+*lpszAutoColor*<br/>
+[in] Metin etiketini *otomatik* rengi düğmesi (varsayılan) ya da NULL.  
   
  Standart etiket otomatik düğmenin **otomatik**.  
   
- [in] *lpszOtherColor*  
- Metin etiketini *diğer* görüntüleyen daha rengi seçimleri veya NULL düğmesi.  
+*lpszOtherColor*<br/>
+[in] Metin etiketini *diğer* görüntüleyen daha rengi seçimleri veya NULL düğmesi.  
   
  Diğer düğme için standart etiket **daha fazla renk...** .  
   
- [in] *lpszDocColors*  
- Belge renkleri düğmesinin metin etiketi. Belge renkler paleti belge şu anda kullandığı tüm renkleri listeler.  
+*lpszDocColors*<br/>
+[in] Belge renkleri düğmesinin metin etiketi. Belge renkler paleti belge şu anda kullandığı tüm renkleri listeler.  
   
- [in] *lstDocColors*  
- Belge şu anda kullandığı renkler listesi.  
+*lstDocColors*<br/>
+[in] Belge şu anda kullandığı renkler listesi.  
   
- [in] *nColumns*  
- Renkleri dizi sahip sütun sayısı.  
+*nColumns*<br/>
+[in] Renkleri dizi sahip sütun sayısı.  
   
- [in] *nHorzDockRows*  
- Renk çubuğu yatay yerleştirildiğinde olan satır sayısı.  
+*nHorzDockRows*<br/>
+[in] Renk çubuğu yatay yerleştirildiğinde olan satır sayısı.  
   
- [in] *nVertDockColumns*  
- Renk Çubuğu dikey yerleştirildiğinde olan sütun sayısı.  
+*nVertDockColumns*<br/>
+[in] Renk Çubuğu dikey yerleştirildiğinde olan sütun sayısı.  
   
- [in] *colorAutomatic*  
- Otomatik düğmeyi tıklattığınızda, framework uygulanan varsayılan rengi.  
+*colorAutomatic*<br/>
+[in] Otomatik düğmeyi tıklattığınızda, framework uygulanan varsayılan rengi.  
   
- [in] *uiCommandID*  
- Renk çubuğu denetim komut kimliği.  
+*uiCommandID*<br/>
+[in] Renk çubuğu denetim komut kimliği.  
   
- [in] *bStdColorDlg*  
- Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.  
+*bStdColorDlg*<br/>
+[in] Standart sistem renk iletişim kutusu gösterilip gösterilmeyeceğini belirten bir Boole değeri veya [CMFCColorDialog](../../mfc/reference/cmfccolordialog-class.md) iletişim kutusu.  
   
- [in] *pParentBtn*  
- Bir üst düğme için bir işaretçi.  
+*pParentBtn*<br/>
+[in] Bir üst düğme için bir işaretçi.  
   
- [in] *nID*  
- Komut kimliği.  
+*nID*<br/>
+[in] Komut kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Her aşırı Oluşturucusu kümeleri `m_bEnabledInCustomizeMode` üye false.  
@@ -202,9 +202,9 @@ virtual CPane* CreateTearOffBar(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *pWndMain*|Bölünmüş çubuğunun üst penceresine yönelik işaretçi.|  
-|[in] *uiID*|Bölünmüş çubuk komut kimliği.|  
-|[in] *lpszName*|Bölünmüş çubuk pencere metni.|  
+|*pWndMain*|[in] Bölünmüş çubuğunun üst penceresine yönelik işaretçi.|  
+|*uiID*|[in] Bölünmüş çubuk komut kimliği.|  
+|*lpszName*|[in] Bölünmüş çubuk pencere metni.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni etiket denetim çubuğu nesnesine bir işaretçi.  
@@ -233,8 +233,8 @@ void SetPropList(CMFCPropertyGridCtrl* pWndList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndList*  
- Bir özellik Kılavuzu denetimini nesnesi işaretçisi.  
+*pWndList*<br/>
+[in] Bir özellik Kılavuzu denetimini nesnesi işaretçisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

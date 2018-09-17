@@ -19,23 +19,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdada1f4d07d02988da388e39e332c832f633adb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ac872dd13458c3fe15971f30a72b06e5510c5bd0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371089"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723690"
 ---
 # <a name="creating-an-sbr-file"></a>.Sbr Dosyası Oluşturma
-BSCMAKE için girdi dosyaları .sbr dosyalarıdır. Derleyici derlendiğinden her nesne dosyası (.obj) için bir .sbr dosyası oluşturur. Gözatma bilgileri dosyası derleme veya güncelleştirdiğinizde, tüm .sbr dosyaları projeniz için disk üzerinde kullanılabilir olması gerekir.  
-  
- Tüm olası bilgilerle .sbr dosyası oluşturmak için belirtmek [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md).  
-  
- Yerel semboller içermeyen .sbr dosyası oluşturmak için belirtin [/Fr](../../build/reference/fr-fr-create-dot-sbr-file.md). .Sbr dosyaları yerel semboller içeriyorsa, hala bunları .bsc dosyasından BSCMAKE'ın kullanarak atlayabilirsiniz [/El seçeneği](../../build/reference/bscmake-options.md)`.`  
-  
- Tam bir derleme yapmadan .sbr dosyası oluşturabilirsiniz. Örneğin, bir sözdizimi denetimi gerçekleştirmek ve /FR veya /Fr. belirtirseniz, hala .sbr dosyası oluşturmak için derleyici /Zs seçeneğini belirtebilirsiniz  
-  
- Derleme işlemi .sbr dosyaları başvurulmayan tanımları kaldırmak için ilk paketlenmiş, daha etkili olabilir. Derleyici .sbr dosyaları otomatik olarak paketler.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [.Bsc Dosyası Derleme](../../build/reference/building-a-dot-bsc-file.md)
+
+BSCMAKE giriş dosyalarına .sbr dosyalarıdır. Derleyici, derleme her nesne dosyası (.obj) .sbr dosyası oluşturur. Derleme veya göz atma bilgisi dosyanızı güncelleştirin, projeniz için tüm .sbr dosyaları diskte mevcut olması gerekir.
+
+Tüm olası bilgilerle .sbr dosyası oluşturmak için belirtin [/FR](../../build/reference/fr-fr-create-dot-sbr-file.md).
+
+Yerel semboller içermeyen .sbr dosyası oluşturmak için belirtin [/Fr](../../build/reference/fr-fr-create-dot-sbr-file.md). .Sbr dosyaları yerel semboller içeriyorsa, yine de bunları .bsc dosyasından BSCMAKE'ın kullanarak atlayabilirsiniz [/El seçeneği](../../build/reference/bscmake-options.md)`.`
+
+Tam derleme yapmadan .sbr dosyası oluşturabilirsiniz. Örneğin, bir sözdizimi denetimi gerçekleştirmek ve /FR veya /Fr. belirtirseniz hala .sbr dosyası oluşturmak için derleyicinin /Zs seçeneğini belirtebilirsiniz.
+
+Yapı işlemi .sbr dosyaları başvurulmayan tanımlarını kaldırmak için ilk paketlenir eklenirse daha verimli olabilir. Derleyici, .sbr dosyaları otomatik olarak paketler.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[.Bsc Dosyası Derleme](../../build/reference/building-a-dot-bsc-file.md)

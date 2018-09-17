@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7fc8ef005eea61597eb316090e26af7e83718dd8
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 126e23064bdc599ba230efc5dde472cd05a1aa69
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760851"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720752"
 ---
 # <a name="cmfcshelltreectrl-class"></a>CMFCShellTreeCtrl sınıfı
 `CMFCShellTreeCtrl` Sınıfını genişleten [CTreeCtrl sınıfı](../../mfc/reference/ctreectrl-class.md) Kabuk öğeleri hiyerarşisini görüntüleyerek işlevselliği.  
@@ -104,8 +104,8 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kısayol menüsünün etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boole değeri.  
+*bSistemlerde*<br/>
+[in] Kısayol menüsünün etkinleştirilip etkinleştirilmeyeceğini belirleyen bir Boole değeri.  
   
 ##  <a name="getflags"></a>  CMFCShellTreeCtrl::GetFlags  
  İçin ayarlanan işaretlere döndürür [CMFCShellTreeCtrl sınıfı](../../mfc/reference/cmfcshelltreectrl-class.md) nesne.  
@@ -130,11 +130,11 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *strPath*  
- Bir dize parametresi bir başvuru. Yöntemi, bu parametre için öğenin yolu yazar.  
+*strPath*<br/>
+[out] Bir dize parametresi bir başvuru. Yöntemi, bu parametre için öğenin yolu yazar.  
   
- [in] *htreeItem*  
- Yöntemi, bu ağaç denetim öğesi yolunu alır.  
+*htreeItem*<br/>
+[in] Yöntemi, bu ağaç denetim öğesi yolunu alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -169,10 +169,10 @@ virtual BOOL OnChildNotify(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iletisi*  
- [in] *wParam*  
- [in] *lParam*  
- [in] *pLResult*  
+*message*<br/>
+[in] [in] *wParam*  
+*lParam*<br/>
+[in] [in] *pLResult*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -188,8 +188,8 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pItem*  
- [in] *bSelected*  
+*pItem*<br/>
+[in] [in] *bSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -228,11 +228,11 @@ BOOL SelectPath(LPCITEMIDLIST lpidl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPath*  
- Bir öğenin konumunu belirten bir dize.  
+*lpszPath*<br/>
+[in] Bir öğenin konumunu belirten bir dize.  
   
- [in] *lpidl*  
- Öğeyi belirten bir PIDL işaretçisiyle birlikte  
+*lpidl*<br/>
+[in] Öğeyi belirten bir PIDL işaretçisiyle birlikte  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK; E_FAIL Aksi takdirde.  
@@ -247,11 +247,11 @@ void SetFlags(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *CertOpenStore*  
- Ayarlanacak bayraklar.  
+*CertOpenStore*<br/>
+[in] Ayarlanacak bayraklar.  
   
- [in] *bRefresh*  
- Belirten Boolean bir değer olup olmadığını `CMFCShellTreeCtrl` hemen yenilenmesi.  
+*bRefresh*<br/>
+[in] Belirten Boolean bir değer olup olmadığını `CMFCShellTreeCtrl` hemen yenilenmesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CMFCShellTreeCtrl` Tüm kümesine bayrakları geçişleri [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066). Farklı bayrakları değerler hakkında daha fazla bilgi için bkz. [IShellFolder::EnumObjects](https://msdn.microsoft.com/library/windows/desktop/bb775066).  
@@ -264,8 +264,8 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pShellList*  
- Bir işaretçi bir `CMFCShellListCtrl` nesne.  
+*pShellList*<br/>
+[in] Bir işaretçi bir `CMFCShellListCtrl` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem ilişkilendirir bir `CMFCShellListCtrl` ile bir `CMFCShellTreeCtrl`. Bu nesneleri bir Gezgin benzeri penceresi olarak görüntülenebilir: kullanıcı, nesneyi seçerse `CMFCShellTreeCtrl`, ilişkili öğeleri de `CMFCShellListCtrl` otomatik olarak güncelleştirilir.  

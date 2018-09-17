@@ -24,17 +24,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86e04182cf673674e1f1ba8c073b624760bc4809
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2c24dcd92628b9f03596c9d10c38b5d63806dc6c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332799"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720011"
 ---
 # <a name="lzcnt16-lzcnt-lzcnt64"></a>__lzcnt16, __lzcnt, __lzcnt64
-**Microsoft özel**  
+
+**Microsoft'a özgü**  
   
- Sayıları başında sayısı 16-, 32 veya 64 bit tamsayı sıfırlar.  
+Sayıları, bir 16, 32 veya 64-bit tamsayı içinde satır sayısını sıfırlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -51,11 +52,11 @@ unsigned __int64 __lzcnt64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `value`  
- 16, 32 veya 64 bit işaretsiz tamsayıyı baştaki sıfırlarla taramak için.  
+*value*<br/>
+[in] 16, 32 veya 64-bit işaretsiz tamsayı sıfırları için taramak üzere.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Sıfır bit cinsinden baştaki sayısı `value` parametresi. Varsa `value` sıfırsa, dönüş değeri giriş işleneni (16, 32 veya 64) boyutudur. Varsa, en önemli biti `value` biri, dönüş değeri sıfırdır.  
+ Önde gelen sıfır bit sayısını `value` parametresi. Varsa `value` sıfırsa, boyutu (16, 32 veya 64) giriş işlenenin dönüş değeridir. En önemli biti `value` biri, döndürülen değer sıfırdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -65,14 +66,14 @@ unsigned __int64 __lzcnt64(
 |`__lzcnt`|AMD: Gelişmiş Bit işleme (ABM)<br /><br /> Intel: Haswell|  
 |`__lzcnt64`|AMD: Bit işleme (ABM) 64 bit modunda Gelişmiş.<br /><br /> Intel: Haswell|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yapı her oluşturur `lzcnt` yönergesi.  Değeri, `lzcnt` yönergesi verir bağımsız değişkeni boyutu ile aynı.  32-bit modunda Hayır 64-bit hiçbir 64-bit genel amaçlı kayıtları, bu nedenle vardır `lzcnt`.  
+ Her biri bu iç oluşturur `lzcnt` yönergesi.  Değer boyutu, `lzcnt` yönerge boyutu bağımsız olarak aynı döndürür.  32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `lzcnt`.  
   
- Donanım desteğini belirlemek için `lzcnt` yönerge çağrısı `__cpuid` ile iç `InfoType=0x80000001` ve bit 5 denetleyin `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Kullanan kodu bu iç desteklemediği donanımda çalıştırırsanız `lzcnt` yönerge, sonuçlar tahmin edilemez.  
+ İçin donanım desteği belirlemek için `lzcnt` yönerge çağrı `__cpuid` ile iç `InfoType=0x80000001` ve geçmiş 5 `CPUInfo[2] (ECX)`. Bu bit aksi yönerge destekleniyorsa 1 ve 0 olacaktır. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `lzcnt` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
- Desteklemeyen Intel işlemcileri üzerinde `lzcnt` yönerge olarak yürütüldüğünde yönerge bayt kodlaması `bsr` (bit tarama tersine). Kod taşınabilirlik önemliyse kullanımını göz önünde bulundurun `_BitScanReverse` iç yerine. Daha fazla bilgi için bkz: [_BitScanReverse, _BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md).  
+ Desteklemeyen bir Intel işlemci üzerinde `lzcnt` yönerge olarak yürütülür yönerge bayt kodlama `bsr` (tarama ters bit). Kod taşınabilirliği önemliyse kullanımını göz önünde bulundurun `_BitScanReverse` iç yerine. Daha fazla bilgi için [_BitScanReverse, _BitScanReverse64](../intrinsics/bitscanreverse-bitscanreverse64.md).  
   
 ## <a name="example"></a>Örnek  
   
@@ -112,8 +113,9 @@ __lzcnt(0xffff) = 16
 __lzcnt(0xffffffff) = 0  
 ```  
   
-**SON Microsoft özel**  
- Bu içerik bölümlerini Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 olan Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**
+
+Bu içerik bölümlerini Micro cihazlar, Inc. Gelişmiş telif hakkı 2007 olan Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -100,12 +100,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14fbe2bf5f74a2d6d2f6ae3f394c2e6e74a4e76f
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 8405c41f5235ecba580bbf453a1129a38b4d8421
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206196"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719107"
 ---
 # <a name="cmonthcalctrl-class"></a>CMonthCalCtrl sınıfı
 Aylık takvim denetiminin işlevselliğini kapsüller.  
@@ -297,7 +297,7 @@ BOOL GetCalendarGridInfo(PMCGRIDINFO pmcGridInfo) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pmcGridInfo*|İşaretçi bir [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) yapısı, geçerli ay Takvim denetimi ile ilgili bilgileri alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
+|*pmcGridInfo*|[out] İşaretçi bir [MCGRIDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagmcgridinfo) yapısı, geçerli ay Takvim denetimi ile ilgili bilgileri alır. Ayırma ve bu yapı başlatma çağıran sorumludur.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -733,7 +733,7 @@ void SetCalendarBorder(int cxyBorder);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *cxyBorder*|Kenarlığın piksel cinsinden genişliği.|  
+|*cxyBorder*|[in] Kenarlığın piksel cinsinden genişliği.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem başarılı olursa kenarlık genişliği kümesine *cxyBorder* parametresi. Kenarlık genişliği Aksi takdirde, geçerli belirtilen varsayılan değere sıfırlanır [tema](/windows/desktop/Controls/visual-styles-overview), veya Temalar kullanılmazsa sıfır.  
@@ -773,7 +773,7 @@ BOOL SetCalID(CALID calid);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *calid*|Aşağıdakilerden birini [Takvim tanımlayıcısı](/windows/desktop/Intl/calendar-identifiers) sabitler.|  
+|*calid*|[in] Aşağıdakilerden birini [Takvim tanımlayıcısı](/windows/desktop/Intl/calendar-identifiers) sabitler.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -851,7 +851,7 @@ BOOL SetCurrentView(DWORD dwNewView);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwNewView*|Aylık, yıllık, on veya. yüzyıla uygun görünüm belirten aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görüntüle<br /><br /> MCMV_YEAR: Yıllık görüntüle<br /><br /> MCMV_DECADE: On görüntüle<br /><br /> MCMV_CENTURY: Yüzyıl görüntüle|  
+|*dwNewView*|[in] Aylık, yıllık, on veya. yüzyıla uygun görünüm belirten aşağıdaki değerlerden biri.<br /><br /> MCMV_MONTH: Aylık görüntüle<br /><br /> MCMV_YEAR: Yıllık görüntüle<br /><br /> MCMV_DECADE: On görüntüle<br /><br /> MCMV_CENTURY: Yüzyıl görüntüle|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1137,7 +1137,7 @@ LPRECT SizeRectToMin(LPRECT lpRect);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *lpRect*|İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) takvimler istenen sayısını içeren bir dikdörtgen tanımlayan yapısını.|  
+|*lpRect*|[in] İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) takvimler istenen sayısını içeren bir dikdörtgen tanımlayan yapısını.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi bir [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) boyutu dikdörtgen küçük veya ona eşit olan bir dikdörtgen tanımlayan yapısını tarafından tanımlanan *lpRect* parametresi.  

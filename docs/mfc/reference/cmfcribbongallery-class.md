@@ -88,12 +88,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ed6fde4ffb510c30189e49639112edfadfcfd14
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: de624d9775160d1cbe7f048baf2dd83a592cfbe3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464984"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724802"
 ---
 # <a name="cmfcribbongallery-class"></a>CMFCRibbonGallery sınıfı
 Office 2007 stili Şerit galerileri uygular.  
@@ -195,20 +195,20 @@ void AddGroup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszGroupName*  
- Grubun adını belirtir.  
+*lpszGroupName*<br/>
+[in] Grubun adını belirtir.  
   
- [in] *uiImagesPaletteResID*  
- Kaynak grubu için görüntüleri içeren görüntü listesinin Kimliğini belirtir.  
+*uiImagesPaletteResID*<br/>
+[in] Kaynak grubu için görüntüleri içeren görüntü listesinin Kimliğini belirtir.  
   
- [in] *cxPaletteImage*  
- Resmin piksel cinsinden genişliğini belirtir.  
+*cxPaletteImage*<br/>
+[in] Resmin piksel cinsinden genişliğini belirtir.  
   
- [in] *imagesGroup*  
- Grup görüntüleri içeren bir görüntü listesi başvuru.  
+*imagesGroup*<br/>
+[in] Grup görüntüleri içeren bir görüntü listesi başvuru.  
   
- [in] *nIconsNum*  
- Grup içinde simgelerin sayısını belirtir. Bu parametre yalnızca özel (sahibi tarafından çizilen) belirtilmelidir grupları.  
+*nIconsNum*<br/>
+[in] Grup içinde simgelerin sayısını belirtir. Bu parametre yalnızca özel (sahibi tarafından çizilen) belirtilmelidir grupları.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırarak bir Şerit galeri öğeleri birden çok gruplarına ayırabilirsiniz. Her grupta bir açıklamalı alt yazı olabilir.  
@@ -224,14 +224,14 @@ void AddSubItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pSubItem*  
- Menüsüne eklenecek öğe için bir işaretçi.  
+*pSubItem*<br/>
+[in] Menüsüne eklenecek öğe için bir işaretçi.  
   
- [in] *nIndex*  
- Öğenin ekleneceği konum bir konuma sıfır tabanlı dizini belirtir.  
+*nIndex*<br/>
+[in] Öğenin ekleneceği konum bir konuma sıfır tabanlı dizini belirtir.  
   
- [in] *bOnTop*  
- Şerit Galerisi önce item eklenecek belirtmek için TRUE; Aksi takdirde FALSE.  
+*bOnTop*<br/>
+[in] Şerit Galerisi önce item eklenecek belirtmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemi çağırarak ile açılan menü öğelerinin açılan galeriler birleştirebilirsiniz. Menü öğeleri, önce veya sonra galerinin yerleştirilebilir.  
@@ -325,11 +325,11 @@ void EnableMenuResize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Menü yeniden boyutlandırma etkinleştirmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Menü yeniden boyutlandırma etkinleştirmek için TRUE; Aksi takdirde FALSE.  
   
- [in] *bVertcalOnly*  
- Galeri yalnızca dikey olarak boyutlandırılabilir belirtmek için TRUE; Galeri dikey ve yatay olarak boyutlandırılıp boyutlandırılamayacağını belirtmek için FALSE.  
+*bVertcalOnly*<br/>
+[in] Galeri yalnızca dikey olarak boyutlandırılabilir belirtmek için TRUE; Galeri dikey ve yatay olarak boyutlandırılıp boyutlandırılamayacağını belirtmek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya devre dışı Şerit Galerisi yeniden boyutlandırma için bu yöntemi kullanın. Şerit Galerisi, yeniden boyutlandırma etkinleştirildiğinde, bir kullanıcı, yeniden boyutlandırmak için kullanabileceğiniz kavrayıcının görüntüler.  
@@ -342,8 +342,8 @@ void EnablMenuSideBar(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kenar Çubuğu etkin olduğunu belirtmek için TRUE; Aksi takdirde FALSE.  
+*bSistemlerde*<br/>
+[in] Kenar Çubuğu etkin olduğunu belirtmek için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Etkinleştirmek veya devre dışı menüsünde sol tarafındaki Office XP stili kenar çubuğu için bu yöntemi çağırın.  
@@ -381,8 +381,8 @@ LPCTSTR GetGroupName(int nGroupIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nGroupIndex*  
- Adı almak istediğiniz grubu için sıfır tabanlı dizinini belirtir.  
+*nGroupIndex*<br/>
+[in] Adı almak istediğiniz grubu için sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizinde bulunan grubu adı. Geçersiz dizin geçirme başarısız bir onaylama işlemi neden olur.  
@@ -420,8 +420,8 @@ LPCTSTR GetItemToolTip(int nItemIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nItemIndex*  
- Araç ipucu metnini almak istediğiniz öğenin sıfır tabanlı dizinini belirtir.  
+*nItemIndex*<br/>
+[in] Araç ipucu metnini almak istediğiniz öğenin sıfır tabanlı dizinini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Şerit galeride bir öğeye atanan araç ipucu dizeye bir işaretçi. Bu öğe için hiçbir araç ipucu atanırsa, NULL olabilir.  
@@ -436,8 +436,8 @@ static int GetLastSelectedItem(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdID*  
- Şerit Galerisi açılan menü öğesinin komut Kimliğini belirtir.  
+*uiCmdID*<br/>
+[in] Şerit Galerisi açılan menü öğesinin komut Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kullanıcının herhangi bir öğeyi Şerit galeride seçtiği kitaplığı Şerit Galerisi açılan menü düğmesinin komut kimliği birlikte WM_COMMAND ileti gönderir.  
@@ -576,20 +576,20 @@ virtual void OnDrawPaletteIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Çizim için kullanılan cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Çizim için kullanılan cihaz bağlamı için bir işaretçi.  
   
- [in] *rectIcon*  
- Dikdörtgen çizmek için simgesinin belirtir.  
+*rectIcon*<br/>
+[in] Dikdörtgen çizmek için simgesinin belirtir.  
   
- [in] *nIconIndex*  
- Sıfır tabanlı dizini, simgeyi çizmek için Galeri simgeleri görüntü listesini belirtir.  
+*nIconIndex*<br/>
+[in] Sıfır tabanlı dizini, simgeyi çizmek için Galeri simgeleri görüntü listesini belirtir.  
   
- [in] *pIcon*  
- Çizilen simgesi için bir işaretçi.  
+*pIcon*<br/>
+[in] Çizilen simgesi için bir işaretçi.  
   
- [in] *clrText*  
- Çizmek için öğe metninin rengini belirtir.  
+*clrText*<br/>
+[in] Çizmek için öğe metninin rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Türetilen bir sınıfta bir Şerit Galerisi görünümünü özelleştirmek için bu yöntemi geçersiz kılabilirsiniz.  
@@ -659,11 +659,11 @@ virtual BOOL SetACCData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParent*  
- Şerit Galerisi penceresinin üst pencere.  
+*pParent*<br/>
+[in] Şerit Galerisi penceresinin üst pencere.  
   
- [out] *veri*  
- A `CAccessibilityData` Şerit Galeriden erişilebilirlik veri alan nesnesi.  
+*Veri*<br/>
+[out] A `CAccessibilityData` Şerit Galeriden erişilebilirlik veri alan nesnesi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -678,8 +678,8 @@ void SetButtonMode(BOOL bSet=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInternet*  
- Şerit Galerisi bir açılan menü düğmesi görüntülemek için TRUE; Şerit üzerinde doğrudan Şerit Galerisi içeriğini görüntülemek için FALSE.  
+*bInternet*<br/>
+[in] Şerit Galerisi bir açılan menü düğmesi görüntülemek için TRUE; Şerit üzerinde doğrudan Şerit Galerisi içeriğini görüntülemek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -693,11 +693,11 @@ void SetGroupName(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nGroupIndex*  
- Grubun adı değiştirilirken sıfır tabanlı dizini belirtir.  
+*nGroupIndex*<br/>
+[in] Grubun adı değiştirilirken sıfır tabanlı dizini belirtir.  
   
- [in] *lpszGroupName*  
- Yeni grubun adını belirtir.  
+*lpszGroupName*<br/>
+[in] Yeni grubun adını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Grubun adı değiştiğinde kullanılarak eklenen gerekir [CMFCRibbonGallery::AddGroup](#addgroup) yöntemi.  
@@ -710,8 +710,8 @@ void SetIconsInRow(int nIconsInRow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIconsInRow*  
- Galerideki her bir satırda görünmesini öğe sayısını belirtir.  
+*nIconsInRow*<br/>
+[in] Galerideki her bir satırda görünmesini öğe sayısını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şerit Galerisi genişliğini belirtmek için bu yöntemi kullanın.  
@@ -726,11 +726,11 @@ void SetItemToolTip(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nItemIndex*  
- Araç İpucu ilişkilendirmek için palet öğenin sıfır tabanlı dizini.  
+*nItemIndex*<br/>
+[in] Araç İpucu ilişkilendirmek için palet öğenin sıfır tabanlı dizini.  
   
- [in] *lpszToolTip*  
- Araç İpucu görüntülenecek metin.  
+*lpszToolTip*<br/>
+[in] Araç İpucu görüntülenecek metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -747,14 +747,14 @@ void SetPalette(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *imagesPalette*  
- Galeride görüntülenecek simge görüntü listesini belirtir.  
+*imagesPalette*<br/>
+[in] Galeride görüntülenecek simge görüntü listesini belirtir.  
   
- [in] *uiImagesPaletteResID*  
- Galeride görüntülenecek simge görüntü listesi kaynak Kimliğini belirtir.  
+*uiImagesPaletteResID*<br/>
+[in] Galeride görüntülenecek simge görüntü listesi kaynak Kimliğini belirtir.  
   
- [in] *cxPaletteImage*  
- Galeride görüntünün piksel cinsinden genişliğini belirtir.  
+*cxPaletteImage*<br/>
+[in] Galeride görüntünün piksel cinsinden genişliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -766,8 +766,8 @@ void SetPaletteID(UINT nID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Bir kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND ileti içinde gönderilen komut Kimliğini belirtir.  
+*nID*<br/>
+[in] Bir kullanıcı bir galeri öğesi seçtiğinde WM_COMMAND ileti içinde gönderilen komut Kimliğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Galeriden bir kullanıcı seçili için belirli bir öğeyi belirlemek için çağrı [CMFCRibbonGallery::GetLastSelectedItem](#getlastselecteditem) statik yöntem.  

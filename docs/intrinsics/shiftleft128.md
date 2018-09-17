@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ca2c389b00126ff477b8e184d690afce07c484
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 57846bab53e50f1644dcdc3ec817472e47793840
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465637"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725211"
 ---
 # <a name="shiftleft128"></a>__shiftleft128
 **Microsoft'a özgü**  
@@ -39,14 +39,14 @@ unsigned __int64 __shiftleft128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `LowPart`  
- Kaydırmak için 128 bit miktarı düşük 64 bit.  
+*Alt kısım*<br/>
+[in] Kaydırmak için 128 bit miktarı düşük 64 bit.  
   
- [in] `HighPart`  
- Yüksek 64 bit kaydırmak için 128 bit miktarı.  
+*HighPart*<br/>
+[in] Yüksek 64 bit kaydırmak için 128 bit miktarı.  
   
- [in] `Shift`  
- Kaydırılacak bit sayısı.  
+*Kaydırma*<br/>
+[in] Kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Sonuç yüksek 64 bit.  

@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 132498c5773e4cce1fd178573698b62e874dda48
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: d2349beadb5983c85059be83ee5a933689913886
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691620"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722728"
 ---
 # <a name="submatch-class"></a>sub_match Sınıfı
 
@@ -51,8 +51,8 @@ class sub_match
 
 ## <a name="parameters"></a>Parametreler
 
-*BidIt*  
- Alt eşleşmeleri için yineleyici türü.
+*BidIt*<br/>
+Alt eşleşmeleri için yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
 
@@ -159,14 +159,14 @@ int compare(const value_type *ptr) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Karşılaştırma yapılacak alt eşleşme.
+*sağ*<br/>
+Karşılaştırma yapılacak alt eşleşme.
 
-*str*  
- Karşılaştırma yapılacak dize.
+*str*<br/>
+Karşılaştırma yapılacak dize.
 
-*ptr*  
- Karşılaştırmak için null ile sonlandırılmış dizisi.
+*ptr*<br/>
+Karşılaştırmak için null ile sonlandırılmış dizisi.
 
 ### <a name="remarks"></a>Açıklamalar
 

@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5cb5747530f4c3aaa7bcfddc7a44c0c8d91e1270
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 90638ad00f120e23e4c9168710d1e099c2c74d09
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691306"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716956"
 ---
 # <a name="critical"></a>critical
-Kod yalnızca olması yürütüldüğünde, bir iş parçacığı üzerinde aynı anda belirtir.  
+Kodu yalnızca olması yürütüldüğünde, bir iş parçacığında aynı anda belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,16 +35,15 @@ Kod yalnızca olması yürütüldüğünde, bir iş parçacığı üzerinde ayn�
 }  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
-  
- (`name`) (isteğe bağlı)  
- Kritik kod tanımlamak için bir ad. Bu ada parantez içine alınmalıdır unutmayın.  
+## <a name="arguments"></a>Arguments
+
+*Adı*<br/>
+(İsteğe bağlı) Kritik kod tanımlamak için bir ad. Bu ad, parantez içine alınmalıdır unutmayın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Kritik** yönergesi yok OpenMP yan tümceleri destekler.  
   
- Daha fazla bilgi için bkz: [2.6.2 kritik oluşturmak](../../../parallel/openmp/2-6-2-critical-construct.md).  
+ Daha fazla bilgi için [2.6.2 kritik oluşturmak](../../../parallel/openmp/2-6-2-critical-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

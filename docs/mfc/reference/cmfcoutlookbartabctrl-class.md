@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7b0d2972c7d6b1f7211d5f43fa0248a8b2980f10
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: a54f8e21c253c46c6a6a086fd10d193a18b7e59e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465277"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718269"
 ---
 # <a name="cmfcoutlookbartabctrl-class"></a>CMFCOutlookBarTabCtrl sınıfı
 Öğesinin görsel görünümüne sahip sekme denetimi **Gezinti bölmesinde** Microsoft Outlook.  
@@ -148,20 +148,20 @@ void AddControl(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndCtrl*  
- Bir denetim eklemek için bir işaretçi.  
+*pWndCtrl*<br/>
+[in] Bir denetim eklemek için bir işaretçi.  
   
- [in] *lpszName*  
- Sekme adını belirtir.  
+*lpszName*<br/>
+[in] Sekme adını belirtir.  
   
- [in] *bDetachable*  
- TRUE ise, sayfa gibi çıkarılabilir oluşturulur.  
+*bDetachable*<br/>
+[in] TRUE ise, sayfa gibi çıkarılabilir oluşturulur.  
   
- [in] *nImageID*  
- Yeni sekmede gösterilecek görüntü için iç görüntü listesinden görüntü dizini.  
+*nImageID*<br/>
+[in] Yeni sekmede gösterilecek görüntü için iç görüntü listesinden görüntü dizini.  
   
- [in] *dwControlBarStyle*  
- Sarmalanan yerleştirme bölmesine AFX_ CBRS_ * stilini belirtir.  
+*dwControlBarStyle*<br/>
+[in] Sarmalanan yerleştirme bölmesine AFX_ CBRS_ * stilini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeni bir outlook çubuğu sayfa olarak bir denetim eklemek için bu işlevi kullanın.  
@@ -212,14 +212,14 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dikdörtgen*  
- Başlangıç boyutu ve konumu, piksel cinsinden belirtir.  
+*Rect*<br/>
+[in] Başlangıç boyutu ve konumu, piksel cinsinden belirtir.  
   
- [in] *pParentWnd*  
- Üst pencere işaret eder. NULL olmamalıdır.  
+*pParentWnd*<br/>
+[in] Üst pencere işaret eder. NULL olmamalıdır.  
   
- [in] *nID*  
- Denetim kimliği.  
+*nID*<br/>
+[in] Denetim kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim başarıyla oluşturuldu olursa sıfır dışı; Aksi durumda 0.  
@@ -235,8 +235,8 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Animasyon etkin veya devre dışı olup olmadığını belirtir.  
+*bSistemlerde*<br/>
+[in] Animasyon etkin veya devre dışı olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Enable ve disable animasyon için bu işlevi çağırın. Bir sekme sayfası kullanıcı oturum açtığında, animasyon etkinse, sayfanın başlığı yukarı veya aşağı çıkar. Animasyon devre dışıysa, sayfa hemen etkin hale gelir.  
@@ -268,14 +268,14 @@ void EnableScrollButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kaydırma düğmelerine görüntülenip görüntülenmeyeceğini belirler.  
+*bSistemlerde*<br/>
+[in] Kaydırma düğmelerine görüntülenip görüntülenmeyeceğini belirler.  
   
- [in] *bIsUp*  
- Üst ScrollBar'ın görüntülenip görüntülenmeyeceğini belirler.  
+*bIsUp*<br/>
+[in] Üst ScrollBar'ın görüntülenip görüntülenmeyeceğini belirler.  
   
- [in] *bIsDown*  
- Alt ScrollBar'ın görüntülenip görüntülenmeyeceğini belirler.  
+*bIsDown*<br/>
+[in] Alt ScrollBar'ın görüntülenip görüntülenmeyeceğini belirler.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kaydırma düğmelerine görüntülenmesini sağlar. Bu yöntem etkin sekmede kaydırma düğmelerine geri yüklemek için değiştiğinde framework tarafından çağırılır.  
@@ -367,8 +367,8 @@ virtual BOOL SetActiveTab(int iTab);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTab*  
- Bir sekmede açılacak sıfır tabanlı dizini.  
+*iTab*<br/>
+[in] Bir sekmede açılacak sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen sekme başarıyla açılmış olursa sıfır dışı; Aksi durumda 0.  
@@ -384,8 +384,8 @@ void SetBorderSize(int nBorderSize);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nBorderSize*  
- Yeni sınır boyutunu piksel cinsinden belirtir.  
+*nBorderSize*<br/>
+[in] Yeni sınır boyutunu piksel cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Yeni sınır boyutu ayarlar ve outlook pencere düzenini yeniden hesaplar.  
@@ -400,11 +400,11 @@ void SetPageButtonTextAlign(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiAlign*  
- Metin hizalamasını belirtir.  
+*uiAlign*<br/>
+[in] Metin hizalamasını belirtir.  
   
- [in] *bRedraw*  
- TRUE ise outlook penceresi çizilir.  
+*bRedraw*<br/>
+[in] TRUE ise outlook penceresi çizilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sayfa düğmelerini metin hizalamasını değiştirmek için bu işlevi kullanın.  
@@ -430,14 +430,14 @@ BOOL SetToolbarImageList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Yüklenecek görüntünün kaynak Kimliğini belirtir.  
+*uiID*<br/>
+[in] Yüklenecek görüntünün kaynak Kimliğini belirtir.  
   
- [in] *cx*  
- Piksel cinsinden görüntü listesinden görüntü genişliğini belirtir.  
+*CX*<br/>
+[in] Piksel cinsinden görüntü listesinden görüntü genişliğini belirtir.  
   
- [in] *clrTransp*  
- Saydam rengini belirtir bir RGB değeri.  
+*clrTransp*<br/>
+[in] Saydam rengini belirtir bir RGB değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sahipse TRUE değerini döndürür; Aksi takdirde FALSE döndürür.  

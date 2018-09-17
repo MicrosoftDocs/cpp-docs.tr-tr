@@ -18,12 +18,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 648b1084b978e4a7ab38775aefcdc7026fee1243
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d301f2bc7464d52be643d252e4febf7049657c2b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43206467"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724782"
 ---
 # <a name="event--c-component-extensions"></a>olay (C++ Bileşen Uzantıları)
 
@@ -157,7 +157,7 @@ Oluşturma ve olayları Visual c++'ta kullanmak için aşağıdaki adımlar atı
 
    - Bir olay temsilcisi oluşturuldu.
 
-   - (isteğe bağlı) Temsilci örneği ile bildirilen doğrulayan bir yöntem **olay** anahtar sözcüğü bulunmaktadır. Aksi takdirde, bu mantık, olayı tetikler kodda yerleştirilmelidir.
+   - (İsteğe bağlı) Temsilci örneği ile bildirilen doğrulayan bir yöntem **olay** anahtar sözcüğü bulunmaktadır. Aksi takdirde, bu mantık, olayı tetikler kodda yerleştirilmelidir.
 
    - Olayı çağıran yöntemleri. Bu yöntemler, bazı temel sınıf işlevselliğini geçersiz kılmalarına olabilir.
 

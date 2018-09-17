@@ -21,43 +21,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0c712b81fbb755edd132c6f97efc906ba4f5ff9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0ec7458f5b81dd2b9d5aac49959b935f49377081
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371157"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720420"
 ---
 # <a name="def-specify-module-definition-file"></a>/DEF (Modül Tanım Dosyasını Belirt)
-```  
-/DEF:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- *Dosya adı*  
- Bir modül tanım dosyasını bağlayıcıya geçirilecek (.def) adı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- / DEF seçeneği modül tanım dosyasını (.def) bağlayıcıya geçirir. Yalnızca bir .def dosyası bağlantı belirtilebilir. .Def dosyaları hakkında daha fazla ayrıntı için bkz: [modül tanımı dosyaları](../../build/reference/module-definition-dot-def-files.md).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **giriş** özellik sayfası.  
-  
-4.  Değiştirme **modül tanım dosyası** özelliği.  
-  
- Geliştirme ortamında bir .def dosyası belirtmek için diğer dosyaların yanı sıra projeye ekleyin ve/DEF seçeneği dosyasına belirtmeniz gerekir.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ModuleDefinitionFile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/DEF:filename
+```
+
+## <a name="arguments"></a>Arguments
+
+*Dosya adı*<br/>
+Modül tanım dosyasını (.def) bağlayıcıya geçirilecek adı.
+
+## <a name="remarks"></a>Açıklamalar
+
+/ DEF seçeneği modül tanım dosyasını (.def) bağlayıcıya iletir. BAĞLANTI için yalnızca bir .def dosyası belirtilebilir. .Def dosyaları hakkında daha fazla ayrıntı için bkz: [modül-tanımlama dosyaları](../../build/reference/module-definition-dot-def-files.md).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **giriş** özellik sayfası.
+
+1. Değiştirme **modül tanım dosyası** özelliği.
+
+Geliştirme ortamında bir .def dosyası belirtmek için birlikte diğer dosyalar projeye ekleyin ve ardından/DEF seçeneği dosyayı belirtin.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ModuleDefinitionFile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

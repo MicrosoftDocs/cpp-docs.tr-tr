@@ -50,12 +50,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 709992c42cf7fd489fbe8fe8d4ebf40bf92a989e
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 0ea0bf6ed8361419af3519a41edbe6bb3c4b4a77
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37849971"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725666"
 ---
 # <a name="cmfccolorpickerctrl-class"></a>CMFCColorPickerCtrl sınıfı
 `CMFCColorPickerCtrl` Sınıfı renkleri seçmek için kullanılan bir denetim için işlevsellik sağlar.  
@@ -158,11 +158,11 @@ virtual void DrawCursor(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı işaretçisi.  
   
- [in] *dikdörtgen*  
- Seçili renk çevresinde bir dikdörtgen alan belirtir.  
+*Rect*<br/>
+[in] Seçili renk çevresinde bir dikdörtgen alan belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Seçilen renge işaret eden imleci şeklini değiştirmek istediğinizde bu yöntemi yok sayın.  
@@ -190,14 +190,14 @@ void GetHLS(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *hue*  
- Çift aldığı hue bilgi türünde bir değişken işaretçisi.  
+*Hue*<br/>
+[out] Çift aldığı hue bilgi türünde bir değişken işaretçisi.  
   
- [out] *parlaklık*  
- Çift aldığı aydınlatma bilgi türünde bir değişken işaretçisi.  
+*Parlaklık*<br/>
+[out] Çift aldığı aydınlatma bilgi türünde bir değişken işaretçisi.  
   
- [out] *doygunluğu*  
- Çift aldığı doygunluğu bilgi türünde bir değişken işaretçisi.  
+*Doygunluğu*<br/>
+[out] Çift aldığı doygunluğu bilgi türünde bir değişken işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -253,20 +253,20 @@ BOOL SelectCellHexagon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *R*  
- Kırmızı renk bileşeni.  
+*R*<br/>
+[in] Kırmızı renk bileşeni.  
   
- [in] *G*  
- Yeşil renk bileşeni.  
+*G*<br/>
+[in] Yeşil renk bileşeni.  
   
- [in] *B*  
- Mavi renk bileşeni.  
+*B*<br/>
+[in] Mavi renk bileşeni.  
   
- [in] *x*  
- X koordinatı bir hücre Altıgene işaret imleci.  
+*x*<br/>
+[in] X koordinatı bir hücre Altıgene işaret imleci.  
   
- [in] *y*  
- Y koordinatı bir hücre Altıgene işaret imleci.  
+*Y*<br/>
+[in] Y koordinatı bir hücre Altıgene işaret imleci.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yönteminin ikinci aşırı yüklemesini her zaman false değerini döndürür.  
@@ -284,8 +284,8 @@ void SetColor(COLORREF Color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Rengi*  
- Bir RGB renk değeri.  
+*Renk*<br/>
+[in] Bir RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -301,17 +301,17 @@ void SetHLS(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hue*  
- Hue değeri.  
+*Hue*<br/>
+[in] Hue değeri.  
   
- [in] *parlaklık*  
- Aydınlatma değeri.  
+*Parlaklık*<br/>
+[in] Aydınlatma değeri.  
   
- [in] *doygunluğu*  
- Doygunluk değeri.  
+*Doygunluğu*<br/>
+[in] Doygunluk değeri.  
   
- [in] *bInvalidate*  
- Pencerenin yeni renge hemen güncelleştirmeye zorlamak için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
+*bInvalidate*<br/>
+[in] Pencerenin yeni renge hemen güncelleştirmeye zorlamak için TRUE; Aksi takdirde FALSE. Varsayılan değer True'dur.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -323,8 +323,8 @@ void SetHue(double Hue);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Hue*  
- Hue değeri.  
+*Hue*<br/>
+[in] Hue değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -336,8 +336,8 @@ void SetLuminance(double Luminance);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Parlaklık*  
- Aydınlatma değeri.  
+*Parlaklık*<br/>
+[in] Aydınlatma değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -349,8 +349,8 @@ void SetLuminanceBarWidth(int w);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *w*  
- Aydınlatma çubuğunun genişliğini piksel cinsinden ölçülür.  
+*w*<br/>
+[in] Aydınlatma çubuğunun genişliğini piksel cinsinden ölçülür.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açık aydınlatma çubuğu, yeniden boyutlandırmak için bu yöntemi kullanmak **özel** Renk Seçici denetimini sekmesi. *w* parametresi yeni aydınlatma çubuğunun genişliğini belirtir. İstemci alan genişliği üç fourths aşarsa genişlik değeri yok sayıldı.  
@@ -363,8 +363,8 @@ void SetOriginalColor(COLORREF ref);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *başvuru*  
- Bir RGB renk değeri.  
+*ref*<br/>
+[in] Bir RGB renk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Renk Seçici denetimini başlatıldığında, bu yöntemi çağırın.  
@@ -377,8 +377,8 @@ void SetPalette(CPalette* pPalette);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pPalette*  
- Renk paleti işaretçisi.  
+*pPalette*<br/>
+[in] Renk paleti işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Renk paletini sunulan dizi renklerin renk seçici denetimi tanımlar.  
@@ -391,8 +391,8 @@ void SetSaturation(double Saturation);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *Doygunluğu*  
- Doygunluk değeri.  
+*Doygunluğu*<br/>
+[in] Doygunluk değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -404,8 +404,8 @@ void SetType(COLORTYPE colorType);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *colorType*  
- Renk Seçici denetim türü.  
+*colorType*<br/>
+[in] Renk Seçici denetim türü.  
   
  Türleri tarafından tanımlanan `CMFCColorPickerCtrl::COLORTYPE` sabit listesi. Olası AYDINLATMA, SEÇİCİ, ONALTILIK ve HEX_GREYSCALE türleridir. Varsayılan SEÇİCİ türüdür.  
   

@@ -17,25 +17,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc6c665309f51044f00b05931500065ed087e774
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: dcf760219f06ab71684d9d67240712fa501b3c00
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33841212"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722611"
 ---
 # <a name="c-standard-library-reference"></a>C++ Standart Kitaplığı Başvurusu
 
-C++ programı çok sayıda işlevler üzerinde bu C++ Standart Kitaplığı uyumlu uygulamasından çağırabilirsiniz. Bu işlevler giriş ve çıkış gibi temel Hizmetleri gerçekleştirmek ve sık kullanılan işlemleri verimli uygulamaları sağlar.
+Bir C++ programını çok sayıda işlevleri üzerinde C++ Standart Kitaplığı'nın bu uyumlu uygulamasından çağırabilirsiniz. Bu işlevler, girdi ve çıktı gibi temel Hizmetleri gerçekleştirin ve verimli uygulamaları sık kullanılan işlemler sağlar.
 
-Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz: [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
+Visual C++ çalışma zamanı kitaplıkları hakkında daha fazla bilgi için bkz. [CRT kitaplık özellikleri](../c-runtime-library/crt-library-features.md).
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md) C++ Standart Kitaplığı Microsoft uyarlamasını genel bir bakış sağlar.
+[C++ Standart kitaplığına genel bakış](../standard-library/cpp-standard-library-overview.md) C++ Standart Kitaplığı'nın Microsoft uygulaması için genel bir bakış sağlar.
 
 [iostream programlama](../standard-library/iostream-programming.md) iostream programlaması genel bir bakış sağlar.
 
-[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) C++ Standart Kitaplığı üstbilgi dosyalarıyla kod örnekleri ele başvuru konulara bağlantılar sağlar.
+[Üstbilgi dosyaları başvurusu](../standard-library/cpp-standard-library-header-files.md) C++ Standart Kitaplığı üst bilgi dosyaları, kod örnekleri ile görüştükten başvuru konulara bağlantılar sağlar.
 
 

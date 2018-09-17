@@ -15,29 +15,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41c5f31a72cf734296ecb281e0785d415c8043a7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cde5d0e400f1bdd3f5a851d47da581380273b04a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32360660"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717798"
 ---
 # <a name="automation-in-a-dll"></a>DLL'de Otomasyon
-MFC DLL Sihirbazı'nda Otomasyon seçeneğini seçtiğinizde, sihirbaz, aşağıdaki sağlar:  
-  
--   Başlatıcı nesne Açıklama Dili (. ODL) dosyası  
-  
--   Afxole.h için STDAFX.h dosyasındaki bir içerme yönergesi  
-  
--   Uygulaması `DllGetClassObject` çağıran işlevi **AfxDllGetClassObject** işlevi  
-  
--   Uygulaması `DllCanUnloadNow` çağıran işlevi **AfxDllCanUnloadNow** işlevi  
-  
--   Uygulaması `DllRegisterServer` çağıran işlevi [COleObjectFactory::UpdateRegistryAll](../mfc/reference/coleobjectfactory-class.md#updateregistryall) işlevi  
-  
-## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?  
-  
--   [Otomasyon Sunucuları](../mfc/automation-servers.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)
+
+MFC DLL Sihirbazı'nda Otomasyon seçeneğinin seçtiğinizde, sihirbaz, aşağıdaki sağlar:
+
+- Bir başlatıcı nesne Açıklama Dili (. ODL) dosyası
+
+- Bir Afxole.h STDAFX.h dosyası içindeki INCLUDE yönergesi
+
+- Uygulanışı `DllGetClassObject` çağıran işlevi **AfxDllGetClassObject** işlevi
+
+- Uygulanışı `DllCanUnloadNow` çağıran işlevi **AfxDllCanUnloadNow** işlevi
+
+- Uygulanışı `DllRegisterServer` çağıran işlevi [COleObjectFactory::UpdateRegistryAll](../mfc/reference/coleobjectfactory-class.md#updateregistryall) işlevi
+
+## <a name="what-do-you-want-to-know-more-about"></a>Ne hakkında daha fazla bilgi edinmek istiyorsunuz?
+
+- [Otomasyon Sunucuları](../mfc/automation-servers.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual C++'ta DLL'ler](../build/dlls-in-visual-cpp.md)

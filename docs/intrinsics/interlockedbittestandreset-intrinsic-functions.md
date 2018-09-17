@@ -28,12 +28,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 433d4ba23cbf4ed7e2819a3752cd2155b7c20371
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 12935c6a735d72bb1eb25627c78d69f362073a90
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464970"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724384"
 ---
 # <a name="interlockedbittestandreset-intrinsic-functions"></a>_interlockedbittestandreset iç işlevleri
 **Microsoft'a özgü**  
@@ -82,11 +82,11 @@ unsigned char _interlockedbittestandreset64_HLERelease(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `a`  
- İncelemek için bellek işaretçisi.  
+*a*<br/>
+[in] İncelemek için bellek işaretçisi.  
   
- [in] `b`  
- Test etmek için bit konumu.  
+*b*<br/>
+[in] Test etmek için bit konumu.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Özgün değeri tarafından belirtilen konumdaki bit `b`.  

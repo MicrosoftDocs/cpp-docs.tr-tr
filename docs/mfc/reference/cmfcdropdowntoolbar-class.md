@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b227f9d2fdd43b576f89b74f43e4cdce8476bf9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 23ca73629208e0ac80f7c516f8249e83ae0d41a6
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43692389"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719244"
 ---
 # <a name="cmfcdropdowntoolbar-class"></a>CMFCDropDownToolBar sınıfı
 Kullanıcı bir üst düzey araç çubuğu düğmesini basılı tuttuğunda görünen bir araç çubuğu.  
@@ -133,23 +133,23 @@ virtual BOOL LoadBitmap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiResID*  
- Etkin araç çubuğu görüntülerini başvuran bir bit eşlem kaynak kimliği.  
+*uiResID*<br/>
+[in] Etkin araç çubuğu görüntülerini başvuran bir bit eşlem kaynak kimliği.  
   
- [in] *uiColdResID*  
- Soğuk araç görüntülere başvuruyor bit eşlemi kaynak kimliği.  
+*uiColdResID*<br/>
+[in] Soğuk araç görüntülere başvuruyor bit eşlemi kaynak kimliği.  
   
- [in] *uiMenuResID*  
- Normal menü görüntülere başvuruyor bit eşlemi kaynak kimliği.  
+*uiMenuResID*<br/>
+[in] Normal menü görüntülere başvuruyor bit eşlemi kaynak kimliği.  
   
- [in] *engellendi*  
- Araç kilitlemek için TRUE; Aksi durumda FALSE.  
+*Engellendi*<br/>
+[in] Araç kilitlemek için TRUE; Aksi durumda FALSE.  
   
- [in] *uiDisabledResID*  
- Devre dışı araç görüntülere başvuruyor bit eşlemi kaynak kimliği.  
+*uiDisabledResID*<br/>
+[in] Devre dışı araç görüntülere başvuruyor bit eşlemi kaynak kimliği.  
   
- [in] *uiMenuDisabledResID*  
- Devre dışı bırakılmış menü görüntülere başvuruyor bit eşlemi kaynak kimliği.  
+*uiMenuDisabledResID*<br/>
+[in] Devre dışı bırakılmış menü görüntülere başvuruyor bit eşlemi kaynak kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -174,12 +174,12 @@ virtual BOOL LoadToolBar(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiResID*  
- [in] *uiColdResID*  
- [in] *uiMenuResID*  
- [in] *BOOL*  
- [in] *uiDisabledResID*  
- [in] *uiMenuDisabledResID*  
+*uiResID*<br/>
+[in] [in] *uiColdResID*  
+*uiMenuResID*<br/>
+[in] [in] *BOOL*  
+*uiDisabledResID*<br/>
+[in] [in] *uiMenuDisabledResID*  
  [in] *uiHotResID*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -196,8 +196,8 @@ afx_msg void OnLButtonUp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFlags*  
- [in] *noktası*  
+*nFlags*<br/>
+[in] [in] *noktası*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -211,8 +211,8 @@ afx_msg void OnMouseMove(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFlags*  
- [in] *noktası*  
+*nFlags*<br/>
+[in] [in] *noktası*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -240,8 +240,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

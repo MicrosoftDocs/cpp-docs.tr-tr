@@ -38,12 +38,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02bd6b1c5ed9cf29b87dc2a218f7a5e9eda3e3dc
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 9f95c9d85ab3649c1710881c73df1ae325f9cb60
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44319064"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724821"
 ---
 # <a name="valarray-class"></a>valarray Sınıfı
 
@@ -132,10 +132,10 @@ valarray<Type> apply(Type _Func(constType&)) const;
 ### <a name="parameters"></a>Parametreler
 
 *_Func(Type)*<br/>
- İşlenen valarray her öğesine uygulanacak işlev nesnesi.
+İşlenen valarray her öğesine uygulanacak işlev nesnesi.
 
 *_Func(const Type&)*<br/>
- Const işlenen valarray her öğeye uygulanacak işlev nesnesi.
+Const işlenen valarray her öğeye uygulanacak işlev nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -204,8 +204,8 @@ valarray<Type> cshift(int count) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*  
- İleri kaydırılmasına öğeleridir basamak sayısı.
+*Sayısı*<br/>
+İleri kaydırılmasına öğeleridir basamak sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -463,8 +463,8 @@ valarray<Type>& operator%=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya değeri aynı olan element-wise, işlenen valarray bölmek için işlenen valarray bir öğe türü.
+*sağ*<br/>
+Valarray veya değeri aynı olan element-wise, işlenen valarray bölmek için işlenen valarray bir öğe türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -528,8 +528,8 @@ valarray<Type>& operator&=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türünün, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, mantıksal olarak değer `AND` işlenen valarray ile.
+*sağ*<br/>
+Valarray veya bir öğe türünün, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, mantıksal olarak değer `AND` işlenen valarray ile.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -599,8 +599,8 @@ valarray<Type>& operator>>=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Sağa kaydırma veya valarray belirten değeri öğeleri sağa kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
+*sağ*<br/>
+Sağa kaydırma veya valarray belirten değeri öğeleri sağa kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -668,8 +668,8 @@ valarray<Type>& operator<<=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Sola kaydırma veya valarray belirten bir değeri, öğeleri sola kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
+*sağ*<br/>
+Sola kaydırma veya valarray belirten bir değeri, öğeleri sola kaydırma aralığın öğe düzeyinde çarpımının miktarını belirtin.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -738,8 +738,8 @@ valarray<Type>& operator*=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya değeri aynı olan element-wise, işlenen valarray çarpmak için işlenen valarray bir öğe türü.
+*sağ*<br/>
+Valarray veya değeri aynı olan element-wise, işlenen valarray çarpmak için işlenen valarray bir öğe türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -854,8 +854,8 @@ valarray<Type>& operator+=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türü, element-wise, için işlenen valarray eklenmesi için işlenen valarray, aynı değeri.
+*sağ*<br/>
+Valarray veya bir öğe türü, element-wise, için işlenen valarray eklenmesi için işlenen valarray, aynı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -970,8 +970,8 @@ valarray<Type>& operator-=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türü, element-wise, işlenen valarray çıkarılır için işlenen valarray, aynı değeri.
+*sağ*<br/>
+Valarray veya bir öğe türü, element-wise, işlenen valarray çıkarılır için işlenen valarray, aynı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1035,8 +1035,8 @@ valarray<Type>& operator/=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türü, yani, element-wise, işlenen valarray bölünür işlenen valarray aynı değeri.
+*sağ*<br/>
+Valarray veya bir öğe türü, yani, element-wise, işlenen valarray bölünür işlenen valarray aynı değeri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1110,23 +1110,23 @@ valarray<Type>& operator=(const indirect_array<Type>& _Indarray);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- İşlenen valarray kopyalanacak valarray.
+*sağ*<br/>
+İşlenen valarray kopyalanacak valarray.
 
-*VAL*  
- İşlenen valarray öğelerine atanacak değer.
+*VAL*<br/>
+İşlenen valarray öğelerine atanacak değer.
 
-*_Slicearray*  
- İşlenen valarray kopyalanacak slice_array.
+*_Slicearray*<br/>
+İşlenen valarray kopyalanacak slice_array.
 
-*_Gslicearray*  
- İşlenen valarray kopyalanacak gslice_array.
+*_Gslicearray*<br/>
+İşlenen valarray kopyalanacak gslice_array.
 
-*_Maskarray*  
- İşlenen valarray kopyalanacak mask_array.
+*_Maskarray*<br/>
+İşlenen valarray kopyalanacak mask_array.
 
-*_Indarray*  
- İşlenen valarray kopyalanacak indirect_array.
+*_Indarray*<br/>
+İşlenen valarray kopyalanacak indirect_array.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1228,20 +1228,20 @@ valarray<Type> operator[](const valarray<size_t>& _Indarray) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*  
- Bir değerin atanacağı öğe dizini.
+*_Off*<br/>
+Bir değerin atanacağı öğe dizini.
 
-*_Slicearray*  
- Bir slice_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
+*_Slicearray*<br/>
+Bir slice_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
 
-*_Gslicearray*  
- Bir gslice_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
+*_Gslicearray*<br/>
+Bir gslice_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
 
-*_Boolarray*  
- Bir bool_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
+*_Boolarray*<br/>
+Bir bool_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
 
-*_Indarray*  
- Bir indirect_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
+*_Indarray*<br/>
+Bir indirect_array Seçilecek veya yeni bir valarray için döndürülen bir alt kümesini belirten bir valarray biri.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1269,8 +1269,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türü, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, mantıksal özel tarafından değerini **XOR** işlenen valarray ile.
+*sağ*<br/>
+Valarray veya bir öğe türü, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, mantıksal özel tarafından değerini **XOR** işlenen valarray ile.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1342,8 +1342,8 @@ valarray<Type>& operator|=(const Type& right);
 
 ### <a name="parameters"></a>Parametreler
 
-*sağ*  
- Valarray veya bir öğe türü, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, bit düzeyinde tarafından değerini `OR` işlenen valarray ile.
+*sağ*<br/>
+Valarray veya bir öğe türü, birleştirilecek olan işlenen valarray aynı, aralığın öğe düzeyinde çarpımının, bit düzeyinde tarafından değerini `OR` işlenen valarray ile.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1518,11 +1518,11 @@ void resize(
 
 ### <a name="parameters"></a>Parametreler
 
-*_Newsize*  
- Yeniden boyutlandırılan valarray içindeki öğe sayısı.
+*_Newsize*<br/>
+Yeniden boyutlandırılan valarray içindeki öğe sayısı.
 
-*VAL*  
- Yeniden boyutlandırılan valarray öğelerine verilecek değer.
+*VAL*<br/>
+Yeniden boyutlandırılan valarray öğelerine verilecek değer.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -1589,8 +1589,8 @@ valarray<Type> shift(int count) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*  
- İleri kaydırılmasına öğeleridir basamak sayısı.
+*Sayısı*<br/>
+İleri kaydırılmasına öğeleridir basamak sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -1839,32 +1839,32 @@ valarray(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sayısı*  
- Valarray içinde olacak şekilde öğe sayısı.
+*Sayısı*<br/>
+Valarray içinde olacak şekilde öğe sayısı.
 
-*VAL*  
- Valarray öğeleri başlatılırken kullanılacak değer.
+*VAL*<br/>
+Valarray öğeleri başlatılırken kullanılacak değer.
 
-*PTR*  
- Valarray öğeleri başlatmak için kullanılacak değerler için işaretçi.
+*PTR*<br/>
+Valarray öğeleri başlatmak için kullanılacak değerler için işaretçi.
 
-*sağ*  
- Mevcut bir valarray yeni valarray başlatılamadı.
+*sağ*<br/>
+Mevcut bir valarray yeni valarray başlatılamadı.
 
-*SliceArray*  
- Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir slice_array.
+*SliceArray*<br/>
+Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir slice_array.
 
-*GsliceArray*  
- Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir gslice_array.
+*GsliceArray*<br/>
+Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir gslice_array.
 
-*MaskArray*  
- Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir mask_array.
+*MaskArray*<br/>
+Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir mask_array.
 
-*IndArray*  
- Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir indirect_array.
+*IndArray*<br/>
+Valarray yapılandırılmakta öğeleri başlatılırken kullanılacak öğe değerleri olan bir indirect_array.
 
-*IList*  
- Kopyalanacak öğe içeren initializer_list.
+*IList*<br/>
+Kopyalanacak öğe içeren initializer_list.
 
 ### <a name="remarks"></a>Açıklamalar
 

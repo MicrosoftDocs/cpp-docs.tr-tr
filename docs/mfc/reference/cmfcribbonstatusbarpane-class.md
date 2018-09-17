@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55ef22eec84b4d7e5e4ea27abe611cf2d18f2a1b
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 889a6f083cb4aace6e93d221a33caef29155d7f1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465454"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725018"
 ---
 # <a name="cmfcribbonstatusbarpane-class"></a>CMFCRibbonStatusBarPane sınıfı
 `CMFCRibbonStatusBarPane` Sınıfı bir Şerit durum çubuğuna ekleyebileceğiniz bir Şerit öğesi uygular.  
@@ -136,32 +136,32 @@ CMFCRibbonStatusBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nCmdID*  
- Bölmenin komut Kimliğini belirtir.  
+*nCmdID*<br/>
+[in] Bölmenin komut Kimliğini belirtir.  
   
- [in] *lpszText*  
- Bölmesinde görüntülenecek metin dizesi belirtir.  
+*lpszText*<br/>
+[in] Bölmesinde görüntülenecek metin dizesi belirtir.  
   
- [in] *bIsStatic*  
- TRUE ise, durumu bölmesinde vurgulanmış veya olamaz tıklayarak seçili.  
+*bIsStatic*<br/>
+[in] TRUE ise, durumu bölmesinde vurgulanmış veya olamaz tıklayarak seçili.  
   
- [in] *hIcon*  
- Bölmesinde görüntülenecek bir simge için bir tanıtıcı belirtir.  
+*hIcon*<br/>
+[in] Bölmesinde görüntülenecek bir simge için bir tanıtıcı belirtir.  
   
- [in] *lpszAlmostLargeText*  
- Bölmede görüntülenen en uzun metin dizesi belirtir.  
+*lpszAlmostLargeText*<br/>
+[in] Bölmede görüntülenen en uzun metin dizesi belirtir.  
   
- [in] *hBmpAnimationList*  
- Animasyon için kullanılan bir görüntü listesi için bir tanıtıcı belirtir.  
+*hBmpAnimationList*<br/>
+[in] Animasyon için kullanılan bir görüntü listesi için bir tanıtıcı belirtir.  
   
- [in] *cxAnimation*  
- Piksel cinsinden görüntü listesinde animasyon için kullanılan simge genişliğini belirtir.  
+*cxAnimation*<br/>
+[in] Piksel cinsinden görüntü listesinde animasyon için kullanılan simge genişliğini belirtir.  
   
- [in] *clrTrnsp*  
- Animasyon için kullanılan görüntü listesinde görüntüleri saydam rengini belirtir.  
+*clrTrnsp*<br/>
+[in] Animasyon için kullanılan görüntü listesinde görüntüleri saydam rengini belirtir.  
   
- [in] *uiAnimationListResID*  
- Animasyon için kullanılan bir görüntü listesi kaynak Kimliğini belirtir.  
+*uiAnimationListResID*<br/>
+[in] Animasyon için kullanılan bir görüntü listesi kaynak Kimliğini belirtir.  
   
 ##  <a name="getalmostlargetext"></a>  CMFCRibbonStatusBarPane::GetAlmostLargeText  
  Durum çubuğu bölmesini görüntülemek en uzun metin dizesi alır.  
@@ -253,8 +253,8 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszAlmostLargeText*  
- Durum çubuğu bölmesi kesmeden gösterilebilir en uzun dizeyi belirtir.  
+*lpszAlmostLargeText*<br/>
+[in] Durum çubuğu bölmesi kesmeden gösterilebilir en uzun dizeyi belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kitaplığı metin boyutunu hesaplar, *lpszAlmostLargeText* belirtir ve bölmesinde buna göre yeniden boyutlandırır. Bunu hala bölmesinde uygun değilse, metin kesilecek.  
@@ -275,17 +275,17 @@ BOOL SetAnimationList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hBmpAnimationList*  
- Görüntü listesi için bir tanıtıcı belirtir.  
+*hBmpAnimationList*<br/>
+[in] Görüntü listesi için bir tanıtıcı belirtir.  
   
- [in] *cxAnimation*  
- Görüntü listesi çerçevede piksel cinsinden genişliğini belirtir.  
+*cxAnimation*<br/>
+[in] Görüntü listesi çerçevede piksel cinsinden genişliğini belirtir.  
   
- [in] *clrTransp*  
- Görüntü listesi saydam rengini belirtir.  
+*clrTransp*<br/>
+[in] Görüntü listesi saydam rengini belirtir.  
   
- [in] *uiAnimationListResID*  
- Görüntü listesi kaynak Kimliğini belirtir.  
+*uiAnimationListResID*<br/>
+[in] Görüntü listesi kaynak Kimliğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görüntü listesi durum çubuğu bölmesine başarıyla eklenirse TRUE; FALSE Aksi takdirde.  
@@ -298,8 +298,8 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nAlign*  
- Metin hizalamasını belirtir.  
+*nAlign*<br/>
+[in] Metin hizalamasını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *nAlign* aşağıdaki değerlerden biri olabilir:  
@@ -320,11 +320,11 @@ void StartAnimation(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFrameDelay*  
- Animasyon kare hızı, milisaniye cinsinden belirtir.  
+*nFrameDelay*<br/>
+[in] Animasyon kare hızı, milisaniye cinsinden belirtir.  
   
- [in] *nDuration*  
- Ne kadar süre, milisaniye cinsinden, animasyonun çalmaya belirtir. Sonsuz bir döngü için-1 değerini kullanın.  
+*nDuration*<br/>
+[in] Ne kadar süre, milisaniye cinsinden, animasyonun çalmaya belirtir. Sonsuz bir döngü için-1 değerini kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çağırmadan önce resim listesi için bir tanıtıcı belirtmelisiniz `StartAnimation` kullanarak `SetAnimationList`.  

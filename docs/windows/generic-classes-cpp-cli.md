@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 76dc54662fac3dc769e0bbf72c672908196ef351
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 09390e25ffe06ce6702aef68d73c352e063a48ef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598253"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716787"
 ---
 # <a name="generic-classes-ccli"></a>Genel Sınıflar (C++/CLI)
 
@@ -47,8 +47,8 @@ class-body
 
 Yukarıdaki söz diziminde aşağıdaki terimler kullanılır:
 
-*öznitelikleri* (isteğe bağlı)  
-Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
+*Öznitelikleri*  
+(İsteğe bağlı) Ek bildirim temelli bilgiler. Öznitelikleri öznitelikleri ve öznitelik sınıfları hakkında daha fazla bilgi için bkz.
 
 *sınıf anahtarı*  
 Her iki **sınıfı** veya **typename**
@@ -58,7 +58,7 @@ Her iki **sınıfı** veya **typename**
 *kısıtlama yan tümceleri*  
 (Değil virgülle ayrılmış) listesi **burada** yan tümceleri tür parametreleri için kısıtlamalar belirtme. Şu biçimi alır:
 
-`where`  *türü parametre tanımlayıcısı*`:`*sınırlama listesi*  `...`
+> **Burada** *türü parametre tanımlayıcısı* **:** *sınırlama listesi***...** 
 
 *sınırlama listesi*  
 *sınıf veya arabirim*[`,` *...* ]
@@ -69,8 +69,8 @@ Genel bir sınıf için erişilebilirlik değiştiricileri. Windows çalışma z
 *tanımlayıcı*  
 Geçerli bir C++ tanımlayıcısı genel sınıfın adı.
 
-*değiştiriciler* (isteğe bağlı)  
-Değiştiriciler dahil izin **korumalı** ve **soyut**.
+*Değiştiriciler*  
+(İsteğe bağlı) Değiştiriciler dahil izin **korumalı** ve **soyut**.
 
 *temel-liste*  
 Virgülle ayrılmış tüm arabirimleri ve herhangi bir temel sınıf içeren bir liste uygulanır.

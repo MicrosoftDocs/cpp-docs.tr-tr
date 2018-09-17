@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcaf4e113af6182a2d3d735e4c668b62336e2c79
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 7330d979e841d952f7e800e52ae762256ede6808
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375028"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718308"
 ---
 # <a name="version-cc"></a>VERSION (C/C++)
-DLL veya bir sayı .exe dosyası başlığına yerleştirin Bağla söyler.  
-  
-```  
-VERSION major[.minor]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- *Ana* ve *küçük* bağımsız değişkenler 0 ile 65.535 aralıktaki ondalık sayılar. Varsayılan değer 0,0 sürümüdür.  
-  
- Sürüm numarasını belirtmek için eşdeğer bir yolu [sürüm bilgilerini](../../build/reference/version-version-information.md) (/ sürüm) seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+
+DLL veya .exe dosyasının üst bilgisinde bir sayı put Bağla söyler.
+
+```
+VERSION major[.minor]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+*Ana* ve *küçük* bağımsız değişkenler 0 ile 65.535 aralığındaki ondalık sayı. Varsayılan değer 0,0 sürümüdür.
+
+Bir sürüm numarası belirtmek için eşdeğer bir yöntem, [sürüm bilgisi](../../build/reference/version-version-information.md) (/ sürüm) seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

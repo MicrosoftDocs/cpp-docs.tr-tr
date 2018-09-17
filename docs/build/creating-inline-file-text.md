@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3ab1154935ac4eb8b0595c84ba8d75a9ca13e4d3
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ce0a345c6c2f48d3d5c2e6fb9d9cfc2a5c03e4ed
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367504"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720923"
 ---
 # <a name="creating-inline-file-text"></a>Satır İçi Dosya Metni Oluşturma
-Satır içi dosyalar, geçici veya kalıcı.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-      inlinetext  
-.  
-.  
-.  
-<<[KEEP | NOKEEP]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirtin *inlinetext* komutu sonra ilk satırdaki. Çift köşeli parantez ile biten işaretlemek (<<) ayrı bir satır başında. Tüm dosya içeren *inlinetext* sınırlandırma köşeli önce. *İnlinetext* makrosu uzantılarına ve kısaltmaları, ancak yönergeleri veya derleme görevleri dosyası açıklamaları olabilir. Boşluk, sekme ve yeni satır karakterlerini tam anlamıyla kabul edilir.  
-  
- Geçici bir dosya oturum boyunca var ve diğer komutlarla yeniden kullanılabilir. Belirtin **TUTMAK** NMAKE oturumun ardından; dosyayı korumak için kapanış açılı ayraçları sonra adsız bir dosya diskte oluşturulan dosya adı ile korunur. Belirtin **NOKEEP** veya geçici bir dosya için hiçbir şey yok. **TUTMAK** ve **NOKEEP** büyük küçük harfe duyarlı değildir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)
+
+Satır içi geçici veya kalıcı dosyalarıdır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+inlinetext
+.
+.
+.
+<<[KEEP | NOKEEP]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirtin *inlinetext* komuttan sonra ilk satırda. End çift açılı ayraçlar ile İşaretle (<<) ayrı bir satır başında. Tüm dosya içeren *inlinetext* sınırlandırma köşeli ayraçlar önce. *İnlinetext* makro genişletmeleri ve değişimler, ancak yönergeleri veya derleme görevleri dosyası açıklamaları olabilir. Boşluk, sekme ve yeni satır karakterleri tam anlamıyla kabul edilir.
+
+Geçici bir dosya oturum boyunca var ve diğer komutlar tarafından yeniden kullanılabilir. Belirtin **TUTMAK** NMAKE oturumundan sonra; dosyayı korumak için sağ açılı köşeli sonra isimsiz dosya diskte oluşturulan dosya adı ile korunur. Belirtin **NOKEEP** veya geçici bir dosya için hiçbir şey yok. **TUTUN** ve **NOKEEP** büyük/küçük harfe duyarlı değildir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

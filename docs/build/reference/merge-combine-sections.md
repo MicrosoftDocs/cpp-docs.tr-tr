@@ -22,39 +22,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ece36de793b17b8cc064ec3837ea481a1ce870a9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 01768ffcfd647d3e05c0b96647d544e3d68e77d0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373481"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722676"
 ---
 # <a name="merge-combine-sections"></a>/MERGE (Bölümleri Birleştir)
-```  
-/MERGE:from=to  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / Merge seçeneği ilk bölümü birleştirir (*gelen*) ikinci bölümüyle (*için*), sonuçta ortaya çıkan bölüm adlandırma *için*. Örneğin, `/merge:.rdata=.text`.  
-  
- İkinci bölüm mevcut değilse, bağlantı bölümü yeniden adlandırır *gelen* olarak *için*.  
-  
- / Merge seçenek vxd oluşturmak ve derleyicinin ürettiği bölüm adları geçersiz kılma için yararlıdır.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **birleştirme bölümleri** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergeSections%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/MERGE:from=to
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+İlk bölüm/Merge seçeneği bir araya getirir (*gelen*) ikinci bölümüyle (*için*), sonuç bölümün adlandırma *için*. Örneğin, `/merge:.rdata=.text`.
+
+İkinci bölüm mevcut değilse, bağlantı bölümü yeniden adlandırır *gelen* olarak *için*.
+
+/ Merge seçeneği vxd oluşturup, derleyicinin ürettiği bölüm adları geçersiz kılma için kullanışlıdır.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **birleştirme bölümleri** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergeSections%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

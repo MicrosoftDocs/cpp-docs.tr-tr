@@ -1,5 +1,5 @@
 ---
-title: -WHOLEARCHIVE (tüm kitaplık nesnesi dosyaları dahil) | Microsoft Docs
+title: -WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,37 +10,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6de1aa92938a1523b86a90c58cc2d27f1181bfc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d3a59ed53227e0c9bf598f96b1bb72247a3341b0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376875"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722260"
 ---
-# <a name="wholearchive-include-all-library-object-files"></a>/ WHOLEARCHIVE (tüm kitaplık nesnesi dosyaları içerir)
-Force bağlayıcı bağlantılı yürütülebilir statik kitaplığındaki tüm nesne dosyaları içerir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-> / WHOLEARCHIVE [:*Kitaplığı*]  
-  
-## <a name="remarks"></a>Açıklamalar  
-  
-/WHOLEARCHIVE seçeneği her nesne dosyasından ya da belirtilen bir statik kitaplık dahil etmek veya bağlantısını belirtilen tüm statik kitaplıklarından kitaplık belirtilmezse, komut için bağlayıcı zorlar. Birden çok kitaplıkları /WHOLEARCHIVE seçeneği belirtmek için birden fazla /WHOLEARCHIVE geçiş bağlayıcı komut satırında kullanabilirsiniz. Yalnızca diğer nesne yürütülebilir dosyalarında başvurduğu simgeleri veriyorsanız varsayılan olarak, bağlayıcı bağlantılı çıkış nesne dosyaları içerir. Bağlayıcı komut satırında ayrı ayrı belirtilmiş olması gibi bir statik kitaplık arşivlenen tüm nesne dosyaları kabul bağlayıcı /WHOLEARCHIVE seçenektir.  
-  
-/WHOLEARCHIVE seçeneği statik kitaplığından tüm sembolleri yeniden vermek için kullanılabilir. Bir bileşenin birden fazla statik kitaplığından oluşturduğunuzda, tüm kitaplık kodu, kaynakları ve meta verileri dahil edildiğinden emin olmanızı sağlar. Windows çalışma zamanı bileşenleri dışa aktarma için bir statik kitaplık oluşturduğunuzda LNK4264 uyarı içeriyor görürseniz, bu kitaplığın başka bir bileşeni ya da uygulama bağlama /WHOLEARCHIVE seçeneği kullanın.  
-  
-/WHOLEARCHIVE seçeneği Visual Studio 2015 güncelleştirme 2'de sunulmuştur.  
-  
-### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneği ayarlamak için  
-  
-1.  Projeyi açın **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-1.  Seçin **komut satırı** altında özellik sayfası **yapılandırma özellikleri**, **bağlayıcı**.  
-  
-1.  /WHOLEARCHIVE seçeneğine eklemek **ek seçenekler** metin kutusu.  
-  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+# <a name="wholearchive-include-all-library-object-files"></a>/ WHOLEARCHIVE (tüm kitaplık nesnesi dosyalarını dahil et)
+
+Bağlantılı yürütülebilir dosya içindeki statik kitaplıkta tüm nesnesi dosyalarını dahil için zorla.
+
+## <a name="syntax"></a>Sözdizimi
+
+> / WHOLEARCHIVE [:*Kitaplığı*]
+
+## <a name="remarks"></a>Açıklamalar
+
+Wholearchıve seçeneği bağlayıcıya her nesne dosyasından ya da belirtilen bir statik kitaplık içeren veya bağlantı için belirtilen tüm statik kitaplıklarından kitaplık belirtilmezse, komut zorlar. Birden çok kitaplık wholearchıve seçeneğini belirtmek için birden fazla wholearchıve geçiş bağlayıcı komut satırına kullanabilirsiniz. Yalnızca diğer nesne dosyaları yürütülebilir dosya tarafından başvurulan sembolleri veriyorsanız varsayılan olarak, bağlı çıktısında nesne dosyalarının bağlayıcı içerir. Tüm nesne dosyaları tek tek bağlayıcı komut satırına belirtikleri gibi statik kitaplıkta bırakılıyorsa kabul bağlayıcı wholearchıve seçenektir.
+
+Wholearchıve seçeneği, statik bir kitaplıktan tüm sembolleri yeniden dışarı aktarmak için kullanılabilir. Bu, birden fazla statik Kitaplığı'ndan bir bileşen oluşturduğunuzda tüm kitaplık kodu, kaynakları ve meta verileri bulunduğundan emin olmanızı sağlar. Windows çalışma zamanı bileşenleri için dışarı aktarma uyarısı statik kitaplık oluşturduğunuzda LNK4264 içeren görürseniz, bu kitaplığın başka bir bileşen ya da uygulama bağlama wholearchıve seçeneği kullanın.
+
+Wholearchıve seçeneği, Visual Studio 2015 güncelleştirme 2'de sunulmuştur.
+
+### <a name="to-set-this-linker-option-in-visual-studio"></a>Visual Studio'da bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projeyi açmak **özellik sayfaları** iletişim kutusu. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **komut satırı** altında özellik sayfası **yapılandırma özellikleri**, **bağlayıcı**.
+
+1. Wholearchıve seçeneği ekleyin **ek seçenekler** metin kutusu.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

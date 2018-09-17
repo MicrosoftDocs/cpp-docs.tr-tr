@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c0d85436aef5ed48c0a8787f8bce330bf6d3e96
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 73983094f10088920100b4fbbb8d870aee13f05e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380111"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720570"
 ---
 # <a name="specifying-an-inline-file"></a>Satır İçi Dosya Belirtme
-İki köşeli belirtin (<<) komutta nerede *filename* görünecektir. Köşeli makrosu genişletme olamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-<<[filename]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Komutu çalıştırdığınızda, köşeli parantez değiştirilir *filename*, belirtildiği takdirde veya NMAKE oluşturulan benzersiz bir ad. Belirtilmişse, *filename* köşeli bir boşluk veya sekme olmadan izlemeniz gerekir. Bir yola izin verilir. Hiçbir uzantı gerekli veya olduğu varsayılır. Varsa *filename* belirtilirse, dosyanın geçerli oluşturulur veya belirtilen dizin, var olan üzerine dosya bu adı; Aksi takdirde TMP dizininde oluşturulur (veya geçerli dizinin varsa TMP ortam değişkeni tanımlı değil). Bir önceki varsa *filename* olduğundan yeniden, NMAKE önceki dosya ile değiştirir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)
+
+İki açılı ayraçlar belirtin (<<) komutta burada *filename* görünecektir. Açılı ayraçlar, bir makro genişletmesinin olamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+<<[filename]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Komutu çalıştırdığınızda, açılı ayraçlar tarafından değiştirilir *filename*, belirtilmişse veya NMAKE tarafından oluşturulan benzersiz bir ad. Belirtilmişse *filename* açılı ayraçlar boşluk veya sekme olmadan izlemeniz gerekir. Bir yol izin verilir. Hiçbir uzantı gerekli veya varsayılır. Varsa *filename* belirtilirse, dosyayı geçerli oluşturan veya belirtilen dizin, dosya bu adla herhangi bir mevcut üzerine; Aksi takdirde TMP dizininde oluşturulur (veya geçerli dizin, TMP ortam değişkeni tanımlı değil). Bir önceki varsa *filename* olan yeniden kullanılabilir NMAKE önceki dosyanın yerini alır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

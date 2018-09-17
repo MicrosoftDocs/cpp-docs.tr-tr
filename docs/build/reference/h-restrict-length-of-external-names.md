@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d178fcd62c39c65d9f4f8958fde3b178a074671
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 61a931ac5f9793f800157ed02ffcb7ff5071f4df
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895324"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724405"
 ---
 # <a name="h-restrict-length-of-external-names"></a>/H (Dış Adların Uzunluğunu Kısıtla)
 
@@ -37,7 +37,7 @@ Kullanım dışı. Dış adların uzunluğunu kısıtlar.
 
 ## <a name="arguments"></a>Arguments
 
-*Sayı*  
+*Sayı*<br/>
 Dış adlar bir programda izin verilen en büyük uzunluğunu belirtir.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -96,5 +96,5 @@ Kullanım **/H** ile uyumsuz [/GL (bütün Program iyileştirmesi)](../../build/
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

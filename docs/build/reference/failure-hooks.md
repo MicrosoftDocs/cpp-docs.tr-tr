@@ -14,37 +14,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be598a77ca48eeee03360a3b598b0567abc6ee4b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e4c69759034dbb7233970bd89616a062a369cc13
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371791"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721285"
 ---
 # <a name="failure-hooks"></a>Hata Kancaları
-Aynı şekilde hatası kanca etkin [bildirim kanca](../../build/reference/notification-hooks.md). Böylece işleme uygun değeri döndürmek için kanca rutin gereksinimlerini (bir HINSTANCE veya FARPROC) devam edebilir veya bir özel durum olduğunu göstermek için 0.  
-  
- Kullanıcı tanımlı işlev için başvuruyor işaretçi değişkeninin şöyledir:  
-  
-```  
-// This is the failure hook, dliNotify = {dliFailLoadLib|dliFailGetProc}  
-ExternC  
-PfnDliHook   __pfnDliFailureHook2;  
-```  
-  
- **DelayLoadInfo** yapısı doğru değeri de dahil olmak üzere, hata raporlama için gerekli tüm ilgili verileri içeren `GetLastError`.  
-  
- Bildirim ise **dliFailLoadLib**, kanca işlevini döndürebilirsiniz:  
-  
--   0, hata yürütemiyorsa.  
-  
--   Hata kanca sorunun giderilmiş ve kitaplık yüklenen bir hModule'ü.  
-  
- Bildirim ise **dliFailGetProc**, kanca işlevini döndürebilirsiniz:  
-  
--   0, hata yürütemiyorsa.  
-  
--   Geçerli proc adresine (içeri aktarma işlevi adresi), hata kanca varsa başarılı adresi alma.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)
+
+Hata kanca ile aynı şekilde etkin [bildirim kanca](../../build/reference/notification-hooks.md). Kanca rutin gerekir böylece işleme uygun değeri döndürür (HINSTANCE veya FARPROC bir) devam edebilir veya bir özel durum olduğunu göstermek için 0.
+
+Kullanıcı tanımlı işlevi için gösterir işaretçi değişkeninin şöyledir:
+
+```
+// This is the failure hook, dliNotify = {dliFailLoadLib|dliFailGetProc}
+ExternC
+PfnDliHook   __pfnDliFailureHook2;
+```
+
+**DelayLoadInfo** yapısı doğru gelen değer de dahil olmak üzere, hata raporlama için gerekli tüm ilgili verileri içeren `GetLastError`.
+
+Bildirim ise **dliFailLoadLib**, kanca işlevini döndürebilir:
+
+- 0 hata yürütemiyorsa.
+
+- Hata kanca sorunu düzeltildi ve kitaplığın kendisi yüklenen bir hModule'ü.
+
+Bildirim ise **dliFailGetProc**, kanca işlevini döndürebilir:
+
+- 0 hata yürütemiyorsa.
+
+- Geçerli proc adresi (içeri aktarma işlevi adresi) başarılı ise hata kanca adresi alınırken.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Hata İşleme ve Bildirme](../../build/reference/error-handling-and-notification.md)

@@ -15,27 +15,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ce6f0acc898dc719d2252d5cc59dff92bda4a98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 21a3d8873fd1fee61afec865181bab27305bebfd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368619"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722221"
 ---
 # <a name="precedence-in-macro-definitions"></a>Makro Tanımlarında Öncelik
-Makro birden fazla tanımı varsa, en yüksek öncelik tanımını NMAKE kullanır. Aşağıdaki liste yüksekten en düşüğe öncelik sırasını göstermektedir:  
-  
-1.  Komut satırında tanımlanan makrosu  
-  
-2.  Makro derleme görevleri dosyası içinde tanımlanan veya dosya ekleyin  
-  
-3.  Devralınan bir ortam değişkeni makrosu  
-  
-4.  Tools.ini dosyasında tanımlanan bir makrosu  
-  
-5.  Önceden tanımlanmış bir makrosu gibi [CC](../build/command-macros-and-options-macros.md) ve [AS](../build/command-macros-and-options-macros.md)  
-  
- Derleme görevleri dosyası makroları aynı adda geçersiz kılmak için ortam değişkenleri devralınan makroları neden /E kullanın. Kullanım **! UNDEF** bir komut satırı geçersiz kılmak için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)
+
+NMAKE bir makro birden fazla tanım var, en yüksek öncelikli tanımı kullanır. Aşağıdaki liste, yüksekten en düşüğe öncelik sırasını gösterir:
+
+1. Komut satırında tanımlanan bir makrosu
+
+1. Makro bir derleme görevleri dosyasında tanımlanan veya dosyasını dahil edin
+
+1. Devralınan bir ortam değişkeni makrosu
+
+1. Tools.ini dosyasında tanımlanan bir makrosu
+
+1. Önceden tanımlanmış bir makro gibi [CC](../build/command-macros-and-options-macros.md) ve [AS](../build/command-macros-and-options-macros.md)
+
+Aynı ada sahip derleme görevleri dosyası makroları geçersiz kılmak için ortam değişkenlerini devralınan makroları neden /E kullanın. Kullanım **! UNDEF** bir komut satırı geçersiz kılmak için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)

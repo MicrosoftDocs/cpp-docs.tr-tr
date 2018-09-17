@@ -32,15 +32,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d64d503c4bad0d452be174064e2932ed100d7de
-ms.sourcegitcommit: 208d445fd7ea202de1d372d3f468e784e77bd666
+ms.openlocfilehash: ce47dc5fc0a1d05d2f7200539718fb11c60d810e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37121763"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718867"
 ---
 # <a name="ctabview-class"></a>CTabView sınıfı
-`CTabView` Sınıfı basitleştirir sekmesi denetim sınıfı kullanımını ( [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)) MFC'nin belge/görünüm mimarisi kullanan uygulamalarda.  
+`CTabView` Sınıfı basitleştirir sekme denetim sınıfının kullanımı ( [CMFCTabCtrl](../../mfc/reference/ctabview-class.md)) MFC'nin belge/görünüm mimarisini kullanan uygulamalarda.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -54,9 +54,9 @@ class CTabbedView : public CView
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CTabView::AddView](#addview)|Yeni bir görünüm sekme denetimi ekler.|  
+|[CTabView::AddView](#addview)|Yeni bir görünüm için sekmesinde denetimi ekler.|  
 |[CTabView::FindTab](#findtab)|Belirtilen Görünüm dizini içinde Sekme denetimini döndürür.|  
-|[CTabView::GetActiveView](#getactiveview)|Şu anda etkin görünümün bir işaretçi döndürür|  
+|[CTabView::GetActiveView](#getactiveview)|Şu anda etkin görünüm için bir işaretçi döndürür|  
 |[CTabView::GetTabControl](#gettabcontrol)|Sekme denetimi görünüm ile ilişkilendirilen bir başvuru döndürür.|  
 |[CTabView::RemoveView](#removeview)|Görünüm sekmesini denetiminden kaldırır.|  
 |[CTabView::SetActiveView](#setactiveview)|Bir görünümü etkin hale getirir.|  
@@ -65,18 +65,18 @@ class CTabbedView : public CView
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CTabView::IsScrollBar](#isscrollbar)|Sekmesi görünümü paylaşılan yatay kaydırma çubuğu olup olmadığını belirlemek için sekme görünüm oluşturulurken çerçevesi tarafından çağrılır.|  
-|[CTabView::OnActivateView](#onactivateview)|Etkin veya devre dışı sekmesi görünümü yapıldığında çerçevesi tarafından çağrılır.|  
+|[CTabView::IsScrollBar](#isscrollbar)|Sekme görünümü paylaşılan yatay kaydırma çubuğu olup olmadığını belirlemek için sekmesinde görünümü oluştururken framework tarafından çağırılır.|  
+|[CTabView::OnActivateView](#onactivateview)|Etkin veya devre dışı sekmesi görünümü yapıldığında framework tarafından çağırılır.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu sınıf, bir belge/görünüm uygulamasına sekmeli bir görünüm yerleştirilecek kolaylaştırır. `CTabView` olan bir `CView`-katıştırılmış içeren sınıf türetilmiş `CMFCTabCtrl` nesnesi. `CTabView` desteklemek için gereken tüm iletileri işleme `CMFCTabCtrl` nesnesi. Yalnızca öğesinden bir sınıf türetin `CTabView` ve uygulamanıza takın, ardından ekleyin `CView`-türetilmiş sınıfları kullanarak `AddView` yöntemi. Sekme denetimi bu görünümler sekmeleri... olarak görüntüler.  
+ Bu sınıf, bir belge/görünüm uygulamasına sekmeler halinde görüntüleniyor koymak kolaylaştırır. `CTabView` olan bir `CView`-katıştırılmış içeren sınıf türetilmiş `CMFCTabCtrl` nesne. `CTabView` desteklemek için gereken tüm iletileri işleyen `CMFCTabCtrl` nesne. Yalnızca bir sınıftan türetilen `CTabView` ve uygulamanıza eklenir ve ardından eklemek `CView`-türetilmiş sınıfları kullanarak `AddView` yöntemi. Sekme denetimine sekmeler bu görünümleri görüntüler.  
   
- Örneğin, farklı şekillerde temsil edilebilir bir belge olabilir: bir elektronik tablo, grafik bir düzenlenebilir bir forma ve benzeri. Verileri gerektiğinde çizim tek bir görünüm oluşturun, bunların içine yerleştirin, `CTabView`-türetilen nesnesini ve bunları ek hiçbir kodlama olmadan sekmeli.  
+ Örneğin, farklı şekilde temsil edilebilen bir belge olabilir: bir elektronik tablo, bir grafik, bir düzenlenebilir formda ve benzeri. Verileri gereken şekilde çizim tek bir görünüm oluşturun, bunları eklemek, `CTabView`-türetilmiş bir nesneye ve herhangi ek kodlama olmadan sekmeli sağlayabilirsiniz.  
   
- [TabbedView örnek: MFC sekmeli görünüm uygulama](../../visual-cpp-samples.md) kullanımını göstermektedir `CTabView`.  
+ [TabbedView örneği: MFC sekmeli görünüm uygulaması](../../visual-cpp-samples.md) kullanımını `CTabView`.  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte gösterildiği nasıl `CTabView` TabbedView örnek kullanılır.  
+ Aşağıdaki örnekte gösterildiği nasıl `CTabView` TabbedView örnekte kullanılır.  
   
  [!code-cpp[NVC_MFC_TabbedView#1](../../mfc/reference/codesnippet/cpp/ctabview-class_1.h)]  
   
@@ -84,7 +84,7 @@ class CTabbedView : public CView
  **Başlık:** afxTabView.h  
   
 ##  <a name="addview"></a>  CTabView::AddView  
- Bir görünüm sekme denetimi ekler.  
+ Bir görünüm için sekmesinde denetimi ekler.  
   
 ```  
 int AddView(
@@ -95,23 +95,23 @@ int AddView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pViewClass*  
- Eklenen görünümünün bir çalışma zamanı sınıf için bir işaretçi.  
+*pViewClass*<br/>
+[in] Eklenen görünümünün bir çalışma zamanı sınıf işaretçisi.  
   
- [in] *strViewLabel*  
- Sekmenin metnini belirtir.  
+*strViewLabel*<br/>
+[in] Sekmenin metnini belirtir.  
   
- [in] *İIndex*  
- Görünüm eklenecek sıfır tabanlı konumunda belirtir. Konumu -1 olması durumunda yeni sekmede sonuna eklenir.  
+*İIndex*<br/>
+[in] Görünüm eklemek, sıfır tabanlı konumu belirtir. Konumu -1 olması durumunda, yeni sekmenin sonuna eklenir.  
   
- [in] *pContext*  
- Bir işaretçi `CCreateContext` görünüm.  
+*pContext*<br/>
+[in] Bir işaretçi `CCreateContext` görünümün.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa Görünüm dizini. Aksi durumda, -1.  
+ Bu yöntem başarılı olursa görünümü dizini. Aksi durumda, -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çerçevede katıştırılmış sekme denetimi bir görünüm eklemek için bu işlevini çağırın.  
+ Bir çerçevede katıştırılmış sekme denetimi için Görünüm eklemek için bu işlevi çağırın.  
   
 ##  <a name="findtab"></a>  CTabView::FindTab  
  Belirtilen Görünüm dizini içinde Sekme denetimini döndürür.  
@@ -121,24 +121,24 @@ int FindTab(HWND hWndView) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hWndView*  
- Görünüm işleci.  
+*hWndView*<br/>
+[in] Görünümün tanıtıcısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bulunursa görünümün dizinini; Aksi durumda, -1.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Belirtilen tanıtıcı olan bir görünümde dizin almak için bu işlevini çağırın.  
+ Belirtilen bir tanıtıcı olan bir görünümde dizin almak için bu işlevi çağırın.  
   
 ##  <a name="getactiveview"></a>  CTabView::GetActiveView  
- Bir işaretçi şu anda etkin görünümüne döndürür.  
+ Şu anda etkin görünüm için bir işaretçi döndürür.  
   
 ```  
 CView* GetActiveView() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Etkin görünümü ya da etkin görünüm ise NULL için geçerli bir işaretçi.  
+ Geçerli bir işaretçi etkin veya etkin görünüm yoksa NULL.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -150,36 +150,36 @@ DECLARE_DYNCREATE CMFCTabCtrl& GetTabControl();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görünüm ile ilişkilendirilen sekme denetimi referansı.  
+ Sekme denetimi görünüm ile ilişkilendirilen bir başvuru.  
   
 ##  <a name="isscrollbar"></a>  CTabView::IsScrollBar  
- Sekmesi görünümü paylaşılan yatay kaydırma çubuğu olup olmadığını belirlemek için sekme görünüm oluşturulurken çerçevesi tarafından çağrılır.  
+ Sekme görünümü paylaşılan yatay kaydırma çubuğu olup olmadığını belirlemek için sekmesinde görünümü oluştururken framework tarafından çağırılır.  
   
 ```  
 virtual BOOL IsScrollBar() const;  
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sekmesi görünümü ile birlikte bir paylaşılan kaydırma çubuğunun oluşturulmalıdır TRUE. Aksi takdirde FALSE.  
+ Sekmesi görünümü ile birlikte bir paylaşılan bir kaydırma çubuğuna oluşturulması gerekiyorsa TRUE. Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem framework çağırır olduğunda bir *CTabView* nesnesi oluşturuluyor.  
+ Framework bu yöntemi çağırır olduğunda bir *CTabView* nesnesi oluşturuluyor.  
   
- Geçersiz kılma *IsScrollBar* yönteminde bir *CTabView*-türetilmiş sınıf ve paylaşılan yatay kaydırma çubuğu sahip bir görünüm oluşturmak istiyorsanız, TRUE döndürür.  
+ Geçersiz kılma *IsScrollBar* yönteminde bir *CTabView*-türetilmiş sınıf ve paylaşılan yatay kaydırma çubuğu içeren bir görünüm oluşturmak istiyorsanız TRUE döndürür.  
   
 ##  <a name="onactivateview"></a>  CTabView::OnActivateView  
- Etkin veya devre dışı sekmesi görünümü yapıldığında çerçevesi tarafından çağrılır.  
+ Etkin veya devre dışı sekmesi görünümü yapıldığında framework tarafından çağırılır.  
   
 ```  
 virtual void OnActivateView(CView* view);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *görünümü*  
- Görünüm için bir işaretçi.  
+*Görünümü*<br/>
+[in] Görünüm için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsayılan uygulama hiçbir şey yapmaz. Bu yöntemi geçersiz kılın bir `CTabView`-türetilmiş sınıf bu bildirim işleyemedi.  
+ Varsayılan uygulama, hiçbir şey yapmaz. Bu yöntemin bir `CTabView`-türetilmiş sınıf bu bildirimi.  
   
 ##  <a name="removeview"></a>  CTabView::RemoveView  
  Görünüm sekmesini denetiminden kaldırır.  
@@ -189,11 +189,11 @@ BOOL RemoveView(int iTabNum);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTabNum*  
- Kaldırmak için Görünüm dizini.  
+*iTabNum*<br/>
+[in] Dizini görünümün kaldırın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu yöntem başarılı olursa kaldırılan Görünüm dizini. Aksi takdirde-1.  
+ Bu yöntem başarılı olursa kaldırılan görünümü dizini. Aksi takdirde-1.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -205,14 +205,14 @@ BOOL SetActiveView(int iTabNum);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iTabNum*  
- Sekmesi görünümü sıfır tabanlı dizini.  
+*iTabNum*<br/>
+[in] Sekme görünümü sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Görünümün dizin geçersizse belirtilen görünüm yanlış etkin yapılmışsa TRUE.  
+ Görünümün dizin geçersiz ise belirtilen görünümü yanlış etkin yapıldıysa TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).  
+ Daha fazla bilgi için [CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

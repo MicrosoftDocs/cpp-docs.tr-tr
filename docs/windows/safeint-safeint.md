@@ -19,12 +19,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2ddb7092b1a5556485848d122e21ac54b6efe182
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: de318ab79638f63fae98856987340ad62534f695
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42606961"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721351"
 ---
 # <a name="safeintsafeint"></a>SafeInt::SafeInt
 
@@ -56,14 +56,14 @@ SafeInt (
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *ediyorum*  
-Yeni değeri **SafeInt** nesne. Bu oluşturucuya bağlı olarak U, ya da T türünde bir parametresi olmalıdır.
+*i*<br/>
+[in] Yeni değeri **SafeInt** nesne. Bu oluşturucuya bağlı olarak U, ya da T türünde bir parametresi olmalıdır.
 
-[in] *b*  
-Yeni bir Boole değeri **SafeInt** nesne.
+*b*<br/>
+[in] Yeni bir Boole değeri **SafeInt** nesne.
 
-[in] *u*  
-A **SafeInt** türüne Yeni **SafeInt** nesnesi aynı değere sahip *u*, ancak türü t
+*u*<br/>
+[in] A **SafeInt** türüne Yeni **SafeInt** nesnesi aynı değere sahip *u*, ancak türü t
 
 U depolanan verilerin türünü **SafeInt**. Bu, bir Boole değeri, karakter veya tamsayı türü olabilir. Bir tamsayı türü ise, yeniden imzalanmış imzalanmamış veya bırakılabilir ve 8 ile 64 bit arasında olmalıdır.
 

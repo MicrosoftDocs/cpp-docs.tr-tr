@@ -22,41 +22,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5ccb94ad20735e81fc3d83f757cc0265cdc32169
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 784281df23b0a8d43625766297b6cbbd20179c14
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372886"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717203"
 ---
 # <a name="libpath-additional-libpath"></a>/LIBPATH (Ek Libpath)
-```  
-/LIBPATH:dir  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- `dir`  
- Bir yol belirtir LIB ortam seçeneğinde belirtilen yol arar önce bağlayıcı arar.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Ortam Kitaplığı yol geçersiz kılmak için / Libpath seçeneğini kullanın. Bağlayıcı önce bu seçeneği tarafından belirtilen yol içinde arama ve LIB ortam değişkeninde belirtilen yolda arayın. Girdiğiniz her/Libpath seçeneği yalnızca bir dizine belirtebilirsiniz. Birden fazla dizine belirtmek istiyorsanız, birden çok/Libpath seçeneği belirtmeniz gerekir. Bağlayıcı, belirtilen dizinlerin sonra sırayla arar.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **genel** özellik sayfası.  
-  
-4.  Değiştirme **ek kitaplık dizinleri** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/LIBPATH:dir
+```
+
+## <a name="parameters"></a>Parametreler
+
+*dizini*<br/>
+Bir yol belirtir LIB ortam seçeneğinde belirtilen yolu arar önce bağlayıcı arar.
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Libpath seçeneği, kullanıcının ortam kitaplık yolunu geçersiz kılmak için kullanın. Bağlayıcı bu seçeneği tarafından belirtilen yoldaki ilk arama ve LIB ortam değişkeninde belirtilen yolda arayın. Yalnızca bir dizine, girdiğiniz her/Libpath seçeneği belirtebilirsiniz. Birden fazla dizine belirtmek istiyorsanız, birden çok/Libpath seçeneği belirtmeniz gerekir. Bağlayıcı, ardından sırayla belirtilen dizinleri arar.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **genel** özellik sayfası.
+
+1. Değiştirme **ek kitaplık dizinleri** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalLibraryDirectories%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

@@ -17,88 +17,101 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 409fd7f0cde2090b84ed2a997fedc43b2ffd5db7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b06353f7e0756cadb6ad05e1e5b35b3cd36b526c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33370148"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725159"
 ---
 # <a name="mfc-class-wizard"></a>MFC Sınıf Sihirbazı
-Projenizdeki sınıfları iletileri ve ileti işleyicileri eklemenizi sağlar. Ayrıca, diğer sihirbazları Başlat veya projeniz için bir sınıf ekleyin.  
+Projeniz içerisindeki sınıflar iletileri ve ileti işleyicileri eklemenizi sağlar. Ayrıca, diğer sihirbazları başlatmak veya projenize bir sınıf ekleyin.  
   
- Açmak için **MFC Sınıf Sihirbazı**, **proje** menüsünde tıklatın **sınıf Sihirbazı**. Bir klavye kısayolu ile Sihirbazı'nı açmak için CTRL + SHIFT + X yazın.  
+ Açmak için **MFC Sınıf Sihirbazı**, **proje** menüsünü tıklatın **sınıf Sihirbazı**. Bir klavye kısayolu sihirbazını açmak için CTRL + SHIFT + X yazın.  
   
-## <a name="uielement-list"></a>UIElement Listesi  
- **Project**  
- Çözümünüzdeki bir proje adı.  
+## <a name="uielement-list"></a>UIElement Listesi
+
+- **Project**
+
+   Çözümünüzde bir proje adı.  
   
- Aşağı açılan liste kutusundan çözümünüzdeki diğer projeleri seçebilirsiniz.  
+   Aşağı açılan liste kutusundan çözümünüzdeki diğer projelere seçebilirsiniz.  
   
- **Sınıf adı**  
- Projenizdeki sınıfı adı.  
+- **Sınıf adı**
+
+   Projenizdeki bir sınıf adı.  
   
- Bir sınıf seçtiğinizde **sınıf adı** listesi, veri sınıfından doldurur denetimlerinde **MFC Sınıf Sihirbazı**. Bir denetimin değerini değiştirdiğinizde, seçilen sınıf verilerde etkilenir.  
+   Bir sınıfta seçtiğinizde **sınıf adı** listesinde, veri sınıfından doldurur denetimlerinde **MFC Sınıf Sihirbazı**. Bir denetimin değerini değiştirdiğinizde, seçilen bir sınıf içinde veri etkilenir.  
   
- **Sınıf ekleme**  
- Bir sınıf çeşitli kaynaklardan birini eklemenizi sağlar.  
+- **Sınıf ekleme**
+
+   Çeşitli kaynaklardan birinden bir sınıfa eklemenizi sağlar.  
   
- Yaptığınız seçime bağlı olarak **MFC sınıfı ekleme**, **Typelib sihirbazın sınıfı ekleme**, **sınıfı gelen ActiveX Denetim Ekleme Sihirbazı**, veya **MFC ODBC Tüketici Sihirbazı** başlatılır.  
+   Yaptığınız seçime bağlı olarak **MFC sınıf Ekleme Sihirbazı**, **Typelib sihirbazın sınıfı Ekle**, **ekleme sınıfı gelen ActiveX Denetim Sihirbazı**, veya **MFC ODBC Tüketici Sihirbazı** başlatılır.  
   
- **Taban sınıfı**  
- Görüntülenen sınıfın temel sınıf **sınıf adı**.  
+- **Temel sınıf**
+
+   Görüntülenen sınıfın temel sınıf **sınıf adı**.  
   
- **Sınıf bildirimi**  
- Sınıfında **sınıf adı** sınıfı bildirildi.  
+- **Sınıf bildirimi**
+
+   Sınıfta **sınıf adı** sınıfı bildirilir.  
   
- **Sınıf bildiriminin** kutusu yalnızca adlarında adı farklıysa görüntülenir **sınıf uygulamasını**.  
+   **Sınıf bildiriminin** kutusu yalnızca adlarında adı farklıysa görüntülenir **sınıf uygulamasını**.  
   
- **Kaynak**  
- Kaynak Kimliğini **sınıf adı**, varsa. Aksi takdirde, **kaynak** kutusu boştur.  
+- **Kaynak**
+
+   Kaynak Kimliği **sınıf adı**, varsa. Aksi takdirde, **kaynak** kutusu boştur.  
   
- **Uygulama sınıfı**  
- Sınıfında uyarlamasını içeren dosyanın adını **sınıf adı**.  
+- **Sınıf uygulama**
+
+   Sınıfta uygulamasını içeren dosyanın adını **sınıf adı**.  
   
- Oka tıklayarak farklı uygulama dosyası seçebilirsiniz. Aşağıdaki tabloda kullanılabilir seçenekler listeler.  
+   Oka tıklanarak farklı uygulama dosyasını seçebilirsiniz. Aşağıdaki tablo, kullanılabilen seçenekleri listeler.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Dosya Aç**|Sınıf Sihirbazı'ndan çıkar ve geçerli sınıf uygulama dosyasını açar.|  
-|**İçeren klasörü aç**|Geçerli sınıf uygulama dosyasını içeren klasörü açılır.|  
-|**Tam yol Panoya Kopyala**|Geçerli uygulama dosyasının yolunu Panoya kopyalar.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Dosya Aç**|Sınıf Sihirbazı çıkar ve geçerli sınıf uygulaması dosya açılır.|  
+   |**İçeren klasörü aç**|Geçerli sınıf uygulama dosyasını içeren klasörü açar.|  
+   |**Tam yolu Panoya Kopyala**|Geçerli uygulama dosyasının yolunu Panoya kopyalar.|  
   
- **Komutları**  
- Ekleme, silme, düzenleme veya bir komut ve ileti işleyicisi için arama olanak sağlar.  
+- **Komutları**
+
+   Eklemek, silmek, düzenlemek veya bir komut ve kendi ileti işleyicisi için arama sağlar.  
   
- Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeyi çift **nesne kimlikleri** listesi veya **iletileri** listesi. Sonuçta elde edilen işlev adı, kimliği ve iletisi görüntülenir **üye işlevleri** listesi.  
+   Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeye çift **nesne kimlikleri** listesi veya **iletileri** listesi. Sonuçta elde edilen işlev adı, Kimliğini ve ileti görüntülenen **üye işlevleri** listesi.  
   
- Bir işleyici silmek için bir öğe seçin **üye işlevleri** listeleyin ve ardından **silmek işleyici**.  
+   Bir işleyici silmek için bir öğe seçin **üye işlevleri** listeleyin ve ardından **Sil işleyici**.  
   
- Bir işleyici değiştirmek için karşılık gelen öğe ile çift **üye işlevleri** listesi. Veya, liste kutusunda bir öğe seçin ve ardından **kodu Düzenle**.  
+   Bir işleyici değiştirmek için karşılık gelen öğe ile çift **üye işlevleri** listesi. Veya, liste kutusunda bir öğe seçin ve ardından **kodunu Düzenle**.  
   
- **İletiler**  
- Ekleme, silme, düzenleme veya bir ileti ve kendi ileti işleyicisi için arama olanak sağlar.  
+- **İletiler**
+
+   Ekleme, silme, düzenleme veya bir ileti ve kendi ileti işleyicisi için arama sağlar.  
   
- Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeyi çift **iletileri** listesi.  
+   Bir işleyici eklemek için tıklatın **işleyici Ekle**, veya bir öğeye çift **iletileri** listesi.  
   
- Özel ileti eklemek için tıklatın **eklemek özel ileti** veya Enter tuşuna basın ve değerleri belirtin **eklemek özel ileti** iletişim kutusu. Bu iletişim kutusunda, öğesini de seçebilirsiniz **kayıtlı ileti** işletim sistemi benzersiz olması garanti bir pencere ileti işlemek için.  
+   Özel bir ileti eklemek için tıklatın **özel ileti Ekle** veya Enter tuşuna basın ve ardından değerleri belirtin **özel ileti Ekle** iletişim kutusu. Bu iletişim kutusunda de seçebilirsiniz **kayıtlı ileti** boyunca işletim sistemi benzersiz olması garanti bir pencere iletisini işlemek için.  
   
- **Sanal İşlevler**  
- Ekleme, silme, düzenleme veya sanal işlev ya da geçersiz kılınan bir sanal işlev için arama olanak sağlar.  
+- **Sanal İşlevler**
+
+   Ekleme, silme, düzenleme veya sanal bir işlev veya geçersiz kılınan bir sanal işlev arayın sağlar.  
   
- **Üye değişkenleri**  
- Ekleme, silme, düzenleme veya üye değişkeni için arama olanak sağlar.  
+- **Üye değişkenleri**
+
+   Ekleme, silme, düzenleme veya bir üye değişkeni için arama sağlar.  
   
- **Yöntemler**  
- Eklemek, silmek veya aramak için bir yöntem ve ayrıca tanımı ya da bir yöntem bildirimi gidin olanak tanır.  
+- **Yöntemler**
+
+   Ekleme, silme, veya aramak için bir yöntem ve tanımı veya bir yöntem bildirimi de Git sağlar.  
   
- Bir yöntem eklemek için tıklatın **ekleme yöntemi**ve değerlerini belirtin **ekleme yöntemi** iletişim kutusu.  
+   Bir yöntem eklemek için tıklatın **Ekle yöntemi**ve değerleri belirtin **Ekle yöntemi** iletişim kutusu.  
   
- Bir yöntem silmek için bir öğe seçin **yöntemleri** listeleyin ve ardından **Delete yöntemini**.  
+   Bir yöntemi silmek için bir öğe seçin **yöntemleri** listeleyin ve ardından **Delete yöntemini**.  
   
- Bir bildirimi görüntülemek için bir öğe seçin **yöntemleri** listeleyin ve ardından **bildirimine gidin.**  
+   Bir bildirimi görüntülemek için bir öğe seçin **yöntemleri** listeleyin ve ardından **bildirimine gidin.**  
   
- Bir tanımı görüntülemek için bir öğeyi çift **yöntemleri** listesi. Veya, bir öğe seçin **yöntemleri** listeleyin ve ardından **Tanıma Git** düğmesi.  
+   Bir tanımı görüntülemek için bir öğeye çift **yöntemleri** listesi. Veya, bir öğe seçin **yöntemleri** listeleyin ve ardından **Tanıma Git** düğmesi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Sınıf ekleme](../../ide/adding-a-class-visual-cpp.md)

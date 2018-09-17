@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd5ebd1b70476fd4248d3e309dec967ea471cf0
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2f839b6c9b87bb37564951d1c15935ad573e1b46
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197403"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719296"
 ---
 # <a name="hook"></a>__hook
 
@@ -75,8 +75,8 @@ Olay işleyicisi yöntemi, bir olay kancalandı için bir işaretçi. İşleyici
 
 - Yönetilen olaylar: *ReceiverClass* olay alıcısı sınıfına olduğu ve `HandlerMethod` işleyicidir.
 
-*Alıcı* (isteğe bağlı)<br/>
-Olay alıcısı sınıfına örneğine bir işaretçi. Bir alıcı belirtmezseniz, alıcı sınıfın veya yapının, varsayılan değer **__hook** çağrılır.
+*Alıcı*<br/>
+(İsteğe bağlı) Olay alıcısı sınıfına örneğine bir işaretçi. Bir alıcı belirtmezseniz, alıcı sınıfın veya yapının, varsayılan değer **__hook** çağrılır.
 
 ## <a name="usage"></a>Kullanım
 

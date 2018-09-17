@@ -128,12 +128,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0e5fe8c9f9eb5f4d09bac28c4ffed3eda95454c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 5528e8eb8c7eeb54e221ca6c6167246a6491d7b2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464880"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720076"
 ---
 # <a name="cwinappex-class"></a>CWinAppEx sınıfı
 `CWinAppEx` Uygulama durumu işler, durumu kayıt defterine kaydeder, kayıt defterinden durumu yükler, uygulama yöneticilerini başlatır ve aynı uygulama yöneticileri için bağlantılar sağlar.  
@@ -254,8 +254,8 @@ virtual BOOL CleanState(LPCTSTR lpszSectionName=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSectionName*  
- Kayıt defteri anahtarının yolunu içeren bir dize.  
+*lpszSectionName*<br/>
+[in] Kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -271,8 +271,8 @@ CWinAppEx(BOOL bResourceSmartUpdate = FALSE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bResourceSmartUpdate*  
- Çalışma alanı nesnesi algılamak ve kaynak güncelleştirmeleri tanımlama belirten bir Boole parametresi.  
+*bResourceSmartUpdate*<br/>
+[in] Çalışma alanı nesnesi algılamak ve kaynak güncelleştirmeleri tanımlama belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CWinAppEx` Sınıf başlatma yöntemi vardır, kaydetme ve uygulama bilgileri kayıt defterine yükleme için işlevsellik sağlar ve genel uygulama ayarlarını denetler. Ayrıca, genel yöneticileri gibi kullanmasına olanak sağlar [CKeyboardManager sınıfı](../../mfc/reference/ckeyboardmanager-class.md) ve [CUserToolsManager sınıfı](../../mfc/reference/cusertoolsmanager-class.md). Her uygulamanın yalnızca bir örneği olabilir `CWinAppEx` sınıfı.  
@@ -285,8 +285,8 @@ void EnableLoadWindowPlacement(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Uygulama kayıt defterinden ilk boyut ve konum ana çerçeve penceresinin yüklemediğini belirtir.  
+*bSistemlerde*<br/>
+[in] Uygulama kayıt defterinden ilk boyut ve konum ana çerçeve penceresinin yüklemediğini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, ana çerçeve konumunu ve boyutunu yüklendiği diğer uygulama ayarları ile birlikte bir kayıt defteri. Bu sistemdeki [CWinAppEx::LoadState](#loadstate). Kayıt defterinden ilk pencere yerleştirme yüklemek istemiyorsanız, bu yöntemi çağırın *bSistemlerde* FALSE olarak ayarlayın.  
@@ -302,14 +302,14 @@ BOOL EnableTearOffMenus(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszRegEntry*  
- Bir kayıt defteri anahtarının yolunu içeren bir dize. Uygulama bu kayıt defteri anahtarı için etiket menülerini bilgilerini depolamak üzere kullanır.  
+*lpszRegEntry*<br/>
+[in] Bir kayıt defteri anahtarının yolunu içeren bir dize. Uygulama bu kayıt defteri anahtarı için etiket menülerini bilgilerini depolamak üzere kullanır.  
   
- [in] *uiCmdFirst*  
- Menü ilk etiket kimliği  
+*uiCmdFirst*<br/>
+[in] Menü ilk etiket kimliği  
   
- [in] *uiCmdLast*  
- Menü son etiket kimliği  
+*uiCmdLast*<br/>
+[in] Menü son etiket kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE ise `CMenuTearOffManager` oluşturulur ve başarıyla başlatıldı YANLIŞ bir hata oluşursa veya `CMenuTearOffManager` zaten mevcut.  
@@ -331,23 +331,23 @@ BOOL EnableUserTools(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdToolsDummy*  
- Framework kullanıcı Araçlar menüsünden komut kimliği için bir yer tutucu olarak kullanan bir işaretsiz tamsayı.  
+*uiCmdToolsDummy*<br/>
+[in] Framework kullanıcı Araçlar menüsünden komut kimliği için bir yer tutucu olarak kullanan bir işaretsiz tamsayı.  
   
- [in] *uiCmdFirst*  
- İlk kullanıcı aracı komutu için komut kimliği.  
+*uiCmdFirst*<br/>
+[in] İlk kullanıcı aracı komutu için komut kimliği.  
   
- [in] *uiCmdLast*  
- Son kullanıcı aracı komutu için komut kimliği.  
+*uiCmdLast*<br/>
+[in] Son kullanıcı aracı komutu için komut kimliği.  
   
- [in] *pToolRTC*  
- Sınıf A `CUserToolsManager` nesne yeni kullanıcı araçları oluşturmak için kullanır.  
+*pToolRTC*<br/>
+[in] Sınıf A `CUserToolsManager` nesne yeni kullanıcı araçları oluşturmak için kullanır.  
   
- [in] *uArgMenuID*  
- Bağımsız değişken menü kimliği.  
+*uArgMenuID*<br/>
+[in] Bağımsız değişken menü kimliği.  
   
- [in] *uInitDirMenuID*  
- İlk aracı dizini menü kimliği.  
+*uInitDirMenuID*<br/>
+[in] İlk aracı dizini menü kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntemi oluşturur ve başlatır, TRUE bir `CUserToolsManager` nesne; FALSE yöntem başarısız olursa veya bir `CUserToolsManager` nesne zaten mevcut.  
@@ -381,14 +381,14 @@ BOOL GetBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [out] *ppData*  
- Yöntemi, ikili verilerle doldurur. arabellek için işaretçi.  
+*ppData*<br/>
+[out] Yöntemi, ikili verilerle doldurur. arabellek için işaretçi.  
   
- [out] *pBytes*  
- Okunan bayt sayısını yazılacak yöntemini kullanan bir işaretsiz tamsayı işaretçisi.  
+*pBytes*<br/>
+[out] Okunan bayt sayısını yazılacak yöntemini kullanan bir işaretsiz tamsayı işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; FALSE Aksi takdirde.  
@@ -452,11 +452,11 @@ int GetInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri girişi adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri girişi adını içeren bir dize.  
   
- [in] *Nvarsayılan*  
- Belirtilen kayıt defteri girdisi yok ise yöntem döndürür. varsayılan değer.  
+*Nvarsayılan*<br/>
+[in] Belirtilen kayıt defteri girdisi yok ise yöntem döndürür. varsayılan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa kayıt defteri verisi; Aksi takdirde *Nvarsayılan*.  
@@ -502,11 +502,11 @@ BOOL GetObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri girişi göreli yolu içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri girişi göreli yolu içeren bir dize.  
   
- [out] *obj*  
- Bir başvuru bir `CObject`. Yöntemi, kayıt defteri verilerini depolamak için bu başvuru kullanır.  
+*obj*<br/>
+[out] Bir başvuru bir `CObject`. Yöntemi, kayıt defteri verilerini depolamak için bu başvuru kullanır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -537,8 +537,8 @@ CString GetRegSectionPath(LPCTSTR szSectionAdd = _T(""));
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *szSectionAdd*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*szSectionAdd*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CString` içeren bir kayıt defteri anahtarı mutlak yolu.  
@@ -558,17 +558,17 @@ BOOL GetSectionBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *lpszEntry*  
- Okunacak değeri içeren bir dize.  
+*lpszEntry*<br/>
+[in] Okunacak değeri içeren bir dize.  
   
- [out] *ppData*  
- Yöntem verileri depoladığı arabellek için işaretçi.  
+*ppData*<br/>
+[out] Yöntem verileri depoladığı arabellek için işaretçi.  
   
- [out] *pBytes*  
- İşaretsiz tamsayıya yönelik işaretçi. Yöntem boyutunu Yazar *ppData* Bu parametre için.  
+*pBytes*<br/>
+[out] İşaretsiz tamsayıya yönelik işaretçi. Yöntem boyutunu Yazar *ppData* Bu parametre için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -589,14 +589,14 @@ int GetSectionInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *lpszEntry*  
- Okunacak değeri içeren bir dize.  
+*lpszEntry*<br/>
+[in] Okunacak değeri içeren bir dize.  
   
- [in] *Nvarsayılan*  
- Belirtilen değer yok ise döndürülecek varsayılan değeri.  
+*Nvarsayılan*<br/>
+[in] Belirtilen değer yok ise döndürülecek varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen kayıt defteri değerinde depolanan tamsayı veri; *Nvarsayılan* verileri mevcut değilse.  
@@ -617,14 +617,14 @@ BOOL GetSectionObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *lpszEntry*  
- Okunacak değeri içeren bir dize.  
+*lpszEntry*<br/>
+[in] Okunacak değeri içeren bir dize.  
   
- [out] *obj*  
- Bir başvuru bir `CObject`. Bu yöntemi kullanır `CObject` kayıt defteri verilerini depolamak için.  
+*obj*<br/>
+[out] Bir başvuru bir `CObject`. Bu yöntemi kullanır `CObject` kayıt defteri verilerini depolamak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -645,14 +645,14 @@ CString GetSectionString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *lpszEntry*  
- Okunacak değeri içeren bir dize.  
+*lpszEntry*<br/>
+[in] Okunacak değeri içeren bir dize.  
   
- [in] *lpszDefault*  
- Belirtilen değer yok ise döndürülecek varsayılan değeri.  
+*lpszDefault*<br/>
+[in] Belirtilen değer yok ise döndürülecek varsayılan değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dize verileri varsa belirtilen kayıt defteri değerinde depolanan verileri; Aksi takdirde *lpszDefault*.  
@@ -685,11 +685,11 @@ CString GetString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri anahtarı adını içeren bir dize  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize  
   
- [in] *lpzDefault*  
- Belirtilen kayıt defteri girdisi yok ise yöntem döndürür. varsayılan değer.  
+*lpzDefault*<br/>
+[in] Belirtilen kayıt defteri girdisi yok ise yöntem döndürür. varsayılan değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa kayıt defterinde saklanan dize verileri; *lpszDefault* Aksi takdirde.  
@@ -819,8 +819,8 @@ BOOL IsStateExists(LPCTSTR lpszSectionName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSectionName*  
- Kayıt defteri anahtarının yolunu içeren bir dize.  
+*lpszSectionName*<br/>
+[in] Kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Kayıt defterinde anahtar ise sıfır olmayan; Aksi durumda 0.  
@@ -862,14 +862,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFrame*  
- Çerçeve pencere nesnesi için bir işaretçi. Yöntemi bu çerçeve penceresi için durum bilgileri kayıt uygular.  
+*pFrame*<br/>
+[in] Çerçeve pencere nesnesi için bir işaretçi. Yöntemi bu çerçeve penceresi için durum bilgileri kayıt uygular.  
   
- [in] *lpszSectionName*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSectionName*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *pFrameImpl*  
- Bir işaretçi bir `CFrameImpl` nesne. Yöntemi bu çerçeve penceresi için durum bilgileri kayıt uygular.  
+*pFrameImpl*<br/>
+[in] Bir işaretçi bir `CFrameImpl` nesne. Yöntemi bu çerçeve penceresi için durum bilgileri kayıt uygular.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -892,14 +892,14 @@ virtual BOOL LoadWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *rectNormalPosition*  
- Geri yüklenen konumda olduğunda ana çerçeve penceresinin koordinat içeren bir dikdörtgen.  
+*rectNormalPosition*<br/>
+[out] Geri yüklenen konumda olduğunda ana çerçeve penceresinin koordinat içeren bir dikdörtgen.  
   
- [out] *nFlags*  
- Simge durumuna küçültülmüş pencereyi ve işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen pencere arasında nasıl geçiş konumunu denetleyen bayraklar.  
+*nFlags*<br/>
+[out] Simge durumuna küçültülmüş pencereyi ve işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen pencere arasında nasıl geçiş konumunu denetleyen bayraklar.  
   
- [out] *nShowCmd*  
- Pencerenin durumunu göster belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
+*nShowCmd*<br/>
+[out] Pencerenin durumunu göster belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -929,11 +929,11 @@ virtual void OnAppContextHelp(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndControl*  
- Bağlam Yardımı kullanıcının kendisi için çağrılan bir pencere nesnesi için bir işaretçi.  
+*pWndControl*<br/>
+[in] Bağlam Yardımı kullanıcının kendisi için çağrılan bir pencere nesnesi için bir işaretçi.  
   
- [in] *dwHelpIDArray]*  
- Ayrılmış bir değer.  
+*dwHelpIDArray]*<br/>
+[in] Ayrılmış bir değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, şu anda kullanılmak üzere ayrılmıştır. Varsayılan uygulama, hiçbir şey yapmaz ve framework tarafından şu anda çağrılmaz.  
@@ -946,8 +946,8 @@ virtual void OnClosingMainFrame(CFrameImpl* pFrameImpl);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFrameImpl*  
- Bir işaretçi bir `CFrameImpl` nesne.  
+*pFrameImpl*<br/>
+[in] Bir işaretçi bir `CFrameImpl` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemin varsayılan uygulama durumunu kaydeder *pFrameImpl*.  
@@ -962,11 +962,11 @@ virtual BOOL OnViewDoubleClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Türetilmiş bir nesneye bir işaretçi [CView sınıfı](../../mfc/reference/cview-class.md).  
+*pWnd*<br/>
+[in] Türetilmiş bir nesneye bir işaretçi [CView sınıfı](../../mfc/reference/cview-class.md).  
   
- [in] *iViewId*  
- Görünüm kimliği.  
+*iViewId*<br/>
+[in] Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Framework komut bulunursa TRUE; Aksi durumda FALSE.  
@@ -1016,8 +1016,8 @@ virtual BOOL ReloadWindowPlacement(CFrameWnd* pFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFrame*  
- Çerçeve penceresi için bir işaretçi.  
+*pFrame*<br/>
+[in] Çerçeve penceresi için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; başarısız veya orada yükü hiçbir veri yüklemek için ise 0.  
@@ -1060,14 +1060,14 @@ BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSectionName*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSectionName*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *pFrameImpl*  
- Bir işaretçi bir `CFrameImpl` nesne. Bu çerçeve Windows kayıt defterine kaydedildi.  
+*pFrameImpl*<br/>
+[in] Bir işaretçi bir `CFrameImpl` nesne. Bu çerçeve Windows kayıt defterine kaydedildi.  
   
- [in] *pFrame*  
- Çerçeve pencere nesnesi için bir işaretçi. Bu çerçeve Windows kayıt defterine kaydedildi.  
+*pFrame*<br/>
+[in] Çerçeve pencere nesnesi için bir işaretçi. Bu çerçeve Windows kayıt defterine kaydedildi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; FALSE Aksi takdirde.  
@@ -1085,8 +1085,8 @@ LPCTSTR SetRegistryBase(LPCTSTR lpszSectionName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSectionName*  
- Bir kayıt defteri anahtarının yolunu içeren bir dize.  
+*lpszSectionName*<br/>
+[in] Bir kayıt defteri anahtarının yolunu içeren bir dize.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan kayıt defteri konumu yolu içeren bir dize.  
@@ -1105,14 +1105,14 @@ virtual BOOL ShowPopupMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiMenuResId*  
- Bir menü kaynak kimliği  
+*uiMenuResId*<br/>
+[in] Bir menü kaynak kimliği  
   
- [in] *noktası*  
- A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) ekran koordinatlarında menünün konumu belirtir.  
+*Noktası*<br/>
+[in] A [CPoint](../../atl-mfc-shared/reference/cpoint-class.md) ekran koordinatlarında menünün konumu belirtir.  
   
- [in] *pWnd*  
- Açılan menü sahip penceresine bir işaretçi.  
+*pWnd*<br/>
+[in] Açılan menü sahip penceresine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Açılan menü başarıyla görüntülenen olursa sıfır dışı; Aksi durumda 0.  
@@ -1133,14 +1133,14 @@ virtual BOOL StoreWindowPlacement(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFlags*  
- Simge durumuna küçültülmüş pencereyi ve işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen pencere arasında nasıl geçiş konumunu denetleyen bayraklar.  
+*nFlags*<br/>
+[in] Simge durumuna küçültülmüş pencereyi ve işletim sistemi bir simge durumuna küçültülmüş pencereyi geri yüklenen pencere arasında nasıl geçiş konumunu denetleyen bayraklar.  
   
- [in] *nShowCmd*  
- Pencerenin durumunu göster belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
+*nShowCmd*<br/>
+[in] Pencerenin durumunu göster belirten bir tamsayı. Olası değerler hakkında daha fazla bilgi için bkz: [CWnd::ShowWindow](../../mfc/reference/cwnd-class.md#showwindow).  
   
- [in] *rectNormalPosition*  
- Geri yüklenen durumdayken ana çerçeve penceresinin koordinat içeren bir dikdörtgen.  
+*rectNormalPosition*<br/>
+[in] Geri yüklenen durumdayken ana çerçeve penceresinin koordinat içeren bir dikdörtgen.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -1161,14 +1161,14 @@ BOOL WriteBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [in] *pData*  
- Depolamak için veriler.  
+*pData*<br/>
+[in] Depolamak için veriler.  
   
- [in] *nBytes*  
- Boyutu *pData* bayt.  
+*nBytes*<br/>
+[in] Boyutu *pData* bayt.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1188,11 +1188,11 @@ BOOL WriteInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [in] *nDeğer*  
- Depolamak için veriler.  
+*nDeğer*<br/>
+[in] Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1212,11 +1212,11 @@ BOOL WriteObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Ayarlanacak değer içeren bir dize.  
+*lpszEntry*<br/>
+[in] Ayarlanacak değer içeren bir dize.  
   
- [in] *obj*  
- Bir başvuru `CObject` yöntemi depolayacak veri.  
+*obj*<br/>
+[in] Bir başvuru `CObject` yöntemi depolayacak veri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1236,17 +1236,17 @@ BOOL WriteSectionBinary(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarı adını içeren bir dize  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize  
   
- [in] *lpszEntry*  
- Ayarlanacak değer içeren bir dize.  
+*lpszEntry*<br/>
+[in] Ayarlanacak değer içeren bir dize.  
   
- [in] *pData*  
- Kayıt defterine yazılacak veriler.  
+*pData*<br/>
+[in] Kayıt defterine yazılacak veriler.  
   
- [in] *nBytes*  
- Boyutu *pData* bayt.  
+*nBytes*<br/>
+[in] Boyutu *pData* bayt.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1267,14 +1267,14 @@ BOOL WriteSectionInt(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarının göreli yolu içeren bir dize.  
   
- [in] *lpszEntry*  
- Ayarlanacak değer içeren bir dize.  
+*lpszEntry*<br/>
+[in] Ayarlanacak değer içeren bir dize.  
   
- [in] *nDeğer*  
- Kayıt defterine yazılacak veriler.  
+*nDeğer*<br/>
+[in] Kayıt defterine yazılacak veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1295,14 +1295,14 @@ BOOL WriteSectionObject(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [in] *lpszEntry*  
- Ayarlanacak değerin adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Ayarlanacak değerin adını içeren bir dize.  
   
- [in] *obj*  
- Depolamak için veriler.  
+*obj*<br/>
+[in] Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1323,14 +1323,14 @@ BOOL WriteSectionString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszSubSection*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszSubSection*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [in] *lpszEntry*  
- Ayarlanacak değer içeren bir dize.  
+*lpszEntry*<br/>
+[in] Ayarlanacak değer içeren bir dize.  
   
- [in] *lpszValue*  
- Kayıt defterine yazmak için dize verileri.  
+*lpszValue*<br/>
+[in] Kayıt defterine yazmak için dize verileri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -1350,11 +1350,11 @@ BOOL WriteString(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszEntry*  
- Bir kayıt defteri anahtarı adını içeren bir dize.  
+*lpszEntry*<br/>
+[in] Bir kayıt defteri anahtarı adını içeren bir dize.  
   
- [in] *lpszValue*  
- Depolamak için veriler.  
+*lpszValue*<br/>
+[in] Depolamak için veriler.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi durumda FALSE.  

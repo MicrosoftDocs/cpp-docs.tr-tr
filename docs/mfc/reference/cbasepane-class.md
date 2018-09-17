@@ -176,12 +176,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1485e997afda54a80cf4c44787881d8ffdb15ac4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 48c73e220c3e80abf0535e414572427f75b04511
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43683758"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718217"
 ---
 # <a name="cbasepane-class"></a>CBasePane sınıfı
 MFC içinde tüm bölmeler için temel sınıf.  
@@ -372,8 +372,8 @@ virtual void AccNotifyObjectFocusEvent(int);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *int*  
- Kullanılmadı.  
+*int*<br/>
+[in] Kullanılmıyor.  
   
 ##  <a name="addpane"></a>  CBasePane::AddPane  
  Bir bölme yerleştirme yöneticiye ekler.  
@@ -383,8 +383,8 @@ void AddPane(CBasePane* pBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Bir bölme eklemek için bir işaretçi.  
+*pBar*<br/>
+[in] Bir bölme eklemek için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu bölme bir yerleştirme Manager'a ekleyen bir kolaylık yöntemdir. Bu yöntemi kullanarak, üst çerçeve türünü çözümler kod yazma gerekmez.  
@@ -399,8 +399,8 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *hdwp*  
- Birden çok pencere konumlarını içeren bir yapıya tanıtıcı.  
+*hdwp*<br/>
+[out] Birden çok pencere konumlarını içeren bir yapıya tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu takma düzenini ayarlayan bir kullanışlı bir yöntemdir. Bu yöntemi kullanarak, üst çerçeve türünü çözümler kod yazma gerekmez.  
@@ -427,11 +427,11 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- Çubuk çerçevenin boyutuna esnetilmiş olup olmadığını gösterir. *BStretch* parametre olduğunda sıfır olmayan çubuğu (yerleştirme için kullanılamaz) bir takma çubuğu ve yerleşik veya kayan olduğunda 0 (yerleştirme için kullanılabilir).  
+*bStretch*<br/>
+[in] Çubuk çerçevenin boyutuna esnetilmiş olup olmadığını gösterir. *BStretch* parametre olduğunda sıfır olmayan çubuğu (yerleştirme için kullanılamaz) bir takma çubuğu ve yerleşik veya kayan olduğunda 0 (yerleştirme için kullanılabilir).  
   
- [in] *bHorz*  
- Çubuk yatay veya dikey yönlendirilmiş olduğunu gösterir. *BHorz* parametresi ise sıfır olmayan çubuğu yönlendirilmiş yatay ve dikey yönlendirilmiş ise 0'dır.  
+*bHorz*<br/>
+[in] Çubuk yatay veya dikey yönlendirilmiş olduğunu gösterir. *BHorz* parametresi ise sıfır olmayan çubuğu yönlendirilmiş yatay ve dikey yönlendirilmiş ise 0'dır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim çubuğu boyutu piksel cinsinden bir `CSize` nesne.  
@@ -447,8 +447,8 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Yerleştirme bölmesine bir işaretçi.  
+*pBar*<br/>
+[in] Yerleştirme bölmesine bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başka bir bölme kabul edilebilir TRUE; Aksi durumda FALSE.  
@@ -515,8 +515,8 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDockBar*  
- Başka bir bölme için bir işaretçi.  
+*pDockBar*<br/>
+[in] Başka bir bölme için bir işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu bölme, başka bir bölüme yuvalanabilir TRUE; Aksi durumda FALSE.  
@@ -597,8 +597,8 @@ virtual void CopyState(CBasePane* pOrgBar);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pOrgBar*  
- Başka bir bölme için bir işaretçi.  
+*pOrgBar*<br/>
+[in] Başka bir bölme için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem durumundan kopyalar *pOrgBar* bu bölme için.  
@@ -611,8 +611,8 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectInitial*  
- Mini çerçeve penceresi ilk koordinatlarını belirtir.  
+*rectInitial*<br/>
+[in] Mini çerçeve penceresi ilk koordinatlarını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeni bir mini çerçeve penceresi ya da oluşturma başarısız olursa NULL bir işaretçi.  
@@ -639,32 +639,32 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwStyleEx*  
- Genişletilmiş stiller (bkz [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) daha fazla bilgi için).  
+*dwStyleEx*<br/>
+[in] Genişletilmiş stiller (bkz [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) daha fazla bilgi için).  
   
- [in] *lpszClassName*  
- Pencere sınıfı adı.  
+*lpszClassName*<br/>
+[in] Pencere sınıfı adı.  
   
- [in] *lpszWindowName*  
- Pencere adı.  
+*lpszWindowName*<br/>
+[in] Pencere adı.  
   
- [in] *dwStyle*  
- Styl okna (bkz [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)).  
+*dwStyle*<br/>
+[in] Styl okna (bkz [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex)).  
   
- [in] *dikdörtgen*  
- İlk dikdörtgen.  
+*Rect*<br/>
+[in] İlk dikdörtgen.  
   
- [in] *pParentWnd*  
- Üst penceresine bir işaretçi.  
+*pParentWnd*<br/>
+[in] Üst penceresine bir işaretçi.  
   
- [in] *nID*  
- Bölmesinde kimliğini belirtir. Benzersiz olması gerekir.  
+*nID*<br/>
+[in] Bölmesinde kimliğini belirtir. Benzersiz olması gerekir.  
   
- [in] *dwControlBarStyle*  
- Stil bölmeleri için işaretler.  
+*dwControlBarStyle*<br/>
+[in] Stil bölmeleri için işaretler.  
   
- [in] *pContext*  
- Bir işaretçi `CcreateContext`  
+*pContext*<br/>
+[in] Bir işaretçi `CcreateContext`  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde başarıyla oluşturulursa TRUE; Aksi durumda FALSE.  
@@ -699,14 +699,14 @@ virtual BOOL DockPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDockBar*  
- Başka bir bölme için bir işaretçi.  
+*pDockBar*<br/>
+[in] Başka bir bölme için bir işaretçi.  
   
- [in] *lpRect*  
- Hedef dikdörtgenin belirtir.  
+*lpRect*<br/>
+[in] Hedef dikdörtgenin belirtir.  
   
- [in] *dockMethod*  
- Yerleştirme yöntemini belirtir.  
+*dockMethod*<br/>
+[in] Yerleştirme yöntemini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Denetim çubuğu başarıyla yerleştirilmiş TRUE; Aksi takdirde FALSE.  
@@ -724,8 +724,8 @@ void DockPaneUsingRTTI(BOOL bUseDockSite);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bUseDockSite*  
- TRUE ise yerleştirme siteye yerleştir. FALSE ise, ana kareye yerleştir.  
+*bUseDockSite*<br/>
+[in] TRUE ise yerleştirme siteye yerleştir. FALSE ise, ana kareye yerleştir.  
   
 ##  <a name="docktoframewindow"></a>  CBasePane::DockToFrameWindow  
  Yerleştirilebilir bir bölme için bir çerçeve docks.  
@@ -741,23 +741,23 @@ virtual BOOL DockToFrameWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Bölmesine sabitlemek istediğiniz üst çerçevenin yanında.  
+*dwAlignment*<br/>
+[in] Bölmesine sabitlemek istediğiniz üst çerçevenin yanında.  
   
- [in] *lpRect*  
- İstenen boyutu.  
+*lpRect*<br/>
+[in] İstenen boyutu.  
   
- [in] *dwDockFlags*  
- Yoksayıldı.  
+*dwDockFlags*<br/>
+[in] Yoksayıldı.  
   
- [in] *pRelativeBar*  
- Yoksayıldı.  
+*pRelativeBar*<br/>
+[in] Yoksayıldı.  
   
- [in] *nRelativeIndex*  
- Yoksayıldı.  
+*nRelativeIndex*<br/>
+[in] Yoksayıldı.  
   
- [in] *bOuterEdge*  
- Diğer yerleştirilebilir bölmeler tarafından belirtilen tarafında doğru ve var olup olmadığını *dwAlignment*, diğer bölmeler dışında bölmesinde yerleştirildiğini üst çerçevenin kenarına daha yakın. FALSE ise bölmesinde yakın istemci alanını merkezine yerleştirilir.  
+*bOuterEdge*<br/>
+[in] Diğer yerleştirilebilir bölmeler tarafından belirtilen tarafında doğru ve var olup olmadığını *dwAlignment*, diğer bölmeler dışında bölmesinde yerleştirildiğini üst çerçevenin kenarına daha yakın. FALSE ise bölmesinde yakın istemci alanını merkezine yerleştirilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -792,8 +792,8 @@ virtual void DoPaint(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan uygulama arkaplanını doldurmak için geçerli görsel yöneticisini çağırır ( [CMFCVisualManager::OnFillBarBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)).  
@@ -806,8 +806,8 @@ virtual void EnableDocking(DWORD dwAlignment);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Etkinleştirmek için yerleştirme hizalamayı belirtir.  
+*dwAlignment*<br/>
+[in] Etkinleştirmek için yerleştirme hizalamayı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ana çerçevenin takma hizalamayı etkinleştirmek için bu yöntemi çağırın. CBRS_ALIGN_ bayrakların birleşimi geçirebilirsiniz (daha fazla bilgi için [CControlBar::EnableDocking](../../mfc/reference/ccontrolbar-class.md#enabledocking)).  
@@ -824,8 +824,8 @@ virtual void EnableGripper(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Kavrayıcının etkinleştirmek için TRUE; Devre dışı bırakmak için FALSE.  
+*bSistemlerde*<br/>
+[in] Kavrayıcının etkinleştirmek için TRUE; Devre dışı bırakmak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Çerçeve ws_captıon stili kullanmak yerine kavrayıcının etkinleştirmek için bu yöntemi kullanır.  
@@ -841,14 +841,14 @@ virtual BOOL FloatPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rectFloat*  
- Kayan bölmesinde görüntülendiği ekran koordinatları belirtir.  
+*rectFloat*<br/>
+[in] Kayan bölmesinde görüntülendiği ekran koordinatları belirtir.  
   
- [in] *dockMethod*  
- Bölmesinde kaydırmak için kullanılacak dock yöntemini belirtir.  
+*dockMethod*<br/>
+[in] Bölmesinde kaydırmak için kullanılacak dock yöntemini belirtir.  
   
- [in] *bBilgi Göster*  
- Kayan bölme görünür (TRUE) olup olmadığını belirtir ya da gizli (FALSE).  
+*bBilgi Göster*<br/>
+[in] Kayan bölme görünür (TRUE) olup olmadığını belirtir ya da gizli (FALSE).  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde başarıyla kaydırıldı TRUE; Aksi durumda FALSE.  
@@ -867,14 +867,14 @@ virtual HRESULT get_accHelpTopic(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pszHelpFile*  
- Tam yolunu alır bir BSTR adresini **WinHelp** varsa belirtilen nesnesiyle ilişkilendirilen dosya.  
+*pszHelpFile*<br/>
+[in] Tam yolunu alır bir BSTR adresini **WinHelp** varsa belirtilen nesnesiyle ilişkilendirilen dosya.  
   
- [in] *varChild*  
- Yardım konusu, alınacak nesne veya bir nesnenin alt öğeleri olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesne için bir Yardım konusu almak için) veya bir alt öğe kimliği (Yardım konusunun bir alt nesne öğeleri elde edilir) olabilir.  
+*varChild*<br/>
+[in] Yardım konusu, alınacak nesne veya bir nesnenin alt öğeleri olup olmadığını belirtir. Bu parametre, CHILDID_SELF (nesne için bir Yardım konusu almak için) veya bir alt öğe kimliği (Yardım konusunun bir alt nesne öğeleri elde edilir) olabilir.  
   
- [in] *pidTopic*  
- Tanımlar **yardımcı** belirtilen nesne ile ilişkili dosya konu.  
+*pidTopic*<br/>
+[in] Tanımlar **yardımcı** belirtilen nesne ile ilişkili dosya konu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `CBasePane` Bu yöntem uygulamıyor. Bu nedenle, `CBasePane::get_accHelpTopic` her zaman S_FALSE döndürür.  
@@ -890,8 +890,8 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pvarChildren*  
- Seçilen alt öğeleri tanımlayan bilgileri alır.  
+*pvarChildren*<br/>
+[in] Seçilen alt öğeleri tanımlayan bilgileri alır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `CBasePane` Bu yöntem uygulamıyor. Varsa *pvarChildren* NULL ise bu yöntem E_INVALIDARG döndürür. Aksi takdirde, bu yöntem DISP_E_MEMBERNOTFOUND döndürür.  
@@ -1017,8 +1017,8 @@ virtual HICON GetPaneIcon(BOOL bBigIcon);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBigIcon*  
- TRUE ise 32 piksel simgesi ile 32 piksel belirtir. bir 16 piksel 16 piksel simgesi FALSE ise belirtir.  
+*bBigIcon*<br/>
+[in] TRUE ise 32 piksel simgesi ile 32 piksel belirtir. bir 16 piksel 16 piksel simgesi FALSE ise belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesi simge tanıtıcı. İşlem başarısız olursa, NULL döndürür.  
@@ -1067,8 +1067,8 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bNoAssert*  
- TRUE ise bu yöntem için geçerli olmayan işaretçileri denetlemez. Bu yöntem çağırırsanız, uygulamanız çıkış yaptığında bu parametresi TRUE olarak ayarlayın.  
+*bNoAssert*<br/>
+[in] TRUE ise bu yöntem için geçerli olmayan işaretçileri denetlemez. Bu yöntem çağırırsanız, uygulamanız çıkış yaptığında bu parametresi TRUE olarak ayarlayın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bir işaretçi bölmesinde kayan, üst Mini çerçeve penceresi için; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -1096,8 +1096,8 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *hWndTab*  
- Bu parametre, dönüş değeri NULL değilse üst sekmeli pencere tanıtıcıyı içerir.  
+*hWndTab*<br/>
+[out] Bu parametre, dönüş değeri NULL değilse üst sekmeli pencere tanıtıcıyı içerir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Geçerli bir işaretçi üst sekmeli pencere veya NULL.  
@@ -1139,14 +1139,14 @@ BOOL InsertPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pControlBar*  
- Bölmesine eklemek için bir işaretçi.  
+*pControlBar*<br/>
+[in] Bölmesine eklemek için bir işaretçi.  
   
- [in] *pTarget*  
- Bitişik bölmesi için bir işaretçi.  
+*pTarget*<br/>
+[in] Bitişik bölmesi için bir işaretçi.  
   
- [in] *bBu*  
- TRUE ise *pControlBar* eklenen *pTarget*. FALSE ise *pControlBar* önce eklenen *pTarget*.  
+*bBu*<br/>
+[in] TRUE ise *pControlBar* eklenen *pTarget*. FALSE ise *pControlBar* önce eklenen *pTarget*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, TRUE, FALSE Aksi takdirde.  
@@ -1270,14 +1270,14 @@ BOOL IsPointNearDockSite(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Belirtilen nokta.  
+*Noktası*<br/>
+[in] Belirtilen nokta.  
   
- [out] *dwBarAlignment*  
- Hangi uç noktaya yaklaştı belirtir. CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM olası değerler şunlardır:  
+*dwBarAlignment*<br/>
+[out] Hangi uç noktaya yaklaştı belirtir. CBRS_ALIGN_LEFT, CBRS_ALIGN_RIGHT CBRS_ALIGN_TOP ve CBRS_ALIGN_BOTTOM olası değerler şunlardır:  
   
- [out] *bOuterEdge*  
- Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
+*bOuterEdge*<br/>
+[out] Dock sitesiyle dış kenarlığı noktası ise TRUE; FALSE Aksi takdirde.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Dock sitesiyle noktası ise TRUE; Aksi durumda FALSE.  
@@ -1349,14 +1349,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Profil adı.  
+*lpszProfileName*<br/>
+[in] Profil adı.  
   
- [in] *nIndex*  
- Profili dizini.  
+*nIndex*<br/>
+[in] Profili dizini.  
   
- [in] *uiID*  
- Bölmesinde kimliği.  
+*uiID*<br/>
+[in] Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bölmesinde durumu başarıyla yüklendi TRUE; Aksi durumda FALSE.  
@@ -1375,14 +1375,14 @@ virtual HDWP MoveWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dikdörtgen*  
- Bir dikdörtgen bölmesinin boyutunu ve yeni konumunu belirtme.  
+*Rect*<br/>
+[in] Bir dikdörtgen bölmesinin boyutunu ve yeni konumunu belirtme.  
   
- [in] *bRepaint*  
- TRUE ise bölmesinde yeniden çizilmesini. FALSE ise bölmesinde yeniden çizilmesini değil.  
+*bRepaint*<br/>
+[in] TRUE ise bölmesinde yeniden çizilmesini. FALSE ise bölmesinde yeniden çizilmesini değil.  
   
- [in] *hdwp*  
- Ertelenmiş pencere konumu yapısına işleyin.  
+*hdwp*<br/>
+[in] Ertelenmiş pencere konumu yapısına işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Ertelenmiş pencere konumu yapısı ya da NULL işleyici.  
@@ -1398,8 +1398,8 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndOldParent*  
- Önceki üst öğeye bir işaretçi.  
+*pWndOldParent*<br/>
+[in] Önceki üst öğeye bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Ana bölmedeki, genellikle bir yerleştirme veya kayan işlemi nedeniyle değişiklikler yaptıktan sonra framework bu yöntemi çağırır.  
@@ -1416,11 +1416,11 @@ virtual void OnBeforeChangeParent(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndNewParent*  
- Yeni bir üst penceresine bir işaretçi.  
+*pWndNewParent*<br/>
+[in] Yeni bir üst penceresine bir işaretçi.  
   
- [in] *bDelay*  
- Düzen ayarlamalar Gecikmeli olup olmadığını belirtir.  
+*bDelay*<br/>
+[in] Düzen ayarlamalar Gecikmeli olup olmadığını belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework bölmedeki üst değişiklikleri hemen önce bu yöntem genellikle bir yerleştirme, kayan veya otomatik gizleme işlemi nedeniyle çağırır.  
@@ -1458,11 +1458,11 @@ virtual void OnPaneContextMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentFrame*  
- Ana çerçeve işaretçisi.  
+*pParentFrame*<br/>
+[in] Ana çerçeve işaretçisi.  
   
- [in] *noktası*  
- Kısayol menüsünü konumunu belirtir.  
+*Noktası*<br/>
+[in] Kısayol menüsünü konumunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `OnPaneContextMenu` Geçerli çerçeve penceresine ait bölmeleri listesini tutar yerleştirme yöneticisini çağırır. Bu yöntem, bölmeleri adlarını bir kısayol menüsüne ekler ve görüntüler. Menü çubuğundaki komutları göster veya tek tek bölmeleri gizle.  
@@ -1477,8 +1477,8 @@ virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMiniFrame*  
- İçinden bölmesinde kaldırılır bir mini çerçeve işaretçisi.  
+*pMiniFrame*<br/>
+[in] İçinden bölmesinde kaldırılır bir mini çerçeve işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir bölme (sonucunda, örneğin yerleştirme) kendi üst Mini çerçeve penceresi kaldırıldığında framework bu yöntemi çağırır.  
@@ -1493,8 +1493,8 @@ virtual BOOL OnSetAccData(long lVal);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lVal*  
- Kullanılmadı.  
+*lVal*<br/>
+[in] Kullanılmıyor.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem, her zaman TRUE döndürür.  
@@ -1513,17 +1513,17 @@ CBasePane* PaneFromPoint(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Noktasını denetlemek için ekran koordinatları olarak belirtir.  
+*Noktası*<br/>
+[in] Noktasını denetlemek için ekran koordinatları olarak belirtir.  
   
- [in] *nSensitivity*  
- Bu tutara göre arama alanını artırın. Belirtilen noktasını artan alanında düşerse bir bölmesinde arama ölçütlerini eşleşecektir.  
+*nSensitivity*<br/>
+[in] Bu tutara göre arama alanını artırın. Belirtilen noktasını artan alanında düşerse bir bölmesinde arama ölçütlerini eşleşecektir.  
   
- [in] *bExactBar*  
- Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
+*bExactBar*<br/>
+[in] Yok saymak için TRUE *nSensitivity* parametre; Aksi takdirde FALSE.  
   
- [in] *pRTCBarType*  
- BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
+*pRTCBarType*<br/>
+[in] BOŞ değilse, yalnızca belirtilen türün bölmeleri yöntemi arar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  `CBasePane`-Hiçbir bölmesinde bulunduysa belirtilen noktasını ya da NULL içeren türetilmiş nesne.  
@@ -1548,20 +1548,20 @@ void RemovePaneFromDockManager(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pBar*  
- Kaldırılacak bir bölme için bir işaretçi.  
+*pBar*<br/>
+[in] Kaldırılacak bir bölme için bir işaretçi.  
   
- [in] *bDestroy*  
- TRUE ise, kaldırılan bölmesinde yok edilir.  
+*bDestroy*<br/>
+[in] TRUE ise, kaldırılan bölmesinde yok edilir.  
   
- [in] *bAdjustLayout*  
- TRUE ise yerleştirme düzeni hemen ayarlayın.  
+*bAdjustLayout*<br/>
+[in] TRUE ise yerleştirme düzeni hemen ayarlayın.  
   
- [in] *bAutoHide*  
- TRUE ise, yerleştirme düzeni autohide çubukları listesine ilişkilidir. FALSE ise, yerleştirme düzeni normal bölmeleri listesine ilişkilidir.  
+*bAutoHide*<br/>
+[in] TRUE ise, yerleştirme düzeni autohide çubukları listesine ilişkilidir. FALSE ise, yerleştirme düzeni normal bölmeleri listesine ilişkilidir.  
   
- [in] *pBarReplacement*  
- Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
+*pBarReplacement*<br/>
+[in] Kaldırılan bölmesinde yerini alan bir bölme için bir işaretçi.  
   
 ##  <a name="savestate"></a>  CBasePane::SaveState  
  Bölmedeki durumu kayıt defterine kaydeder.  
@@ -1574,14 +1574,14 @@ virtual BOOL SaveState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Profil adı.  
+*lpszProfileName*<br/>
+[in] Profil adı.  
   
- [in] *nIndex*  
- Profili dizini.  
+*nIndex*<br/>
+[in] Profili dizini.  
   
- [in] *uiID*  
- Bölmesinde kimliği.  
+*uiID*<br/>
+[in] Bölmesinde kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Durumu başarılı bir şekilde kaydedilmiş ise TRUE; Aksi durumda FALSE.  
@@ -1597,8 +1597,8 @@ CFont* SelectDefaultFont(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsayılan bir işaretçiye [CFont sınıfı](../../mfc/reference/cfont-class.md) nesne.  
@@ -1611,8 +1611,8 @@ virtual void SetControlBarStyle(DWORD dwNewStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwNewStyle*  
- Aşağıdaki değerlerden bit düzeyinde OR birleşimi.  
+*dwNewStyle*<br/>
+[in] Aşağıdaki değerlerden bit düzeyinde OR birleşimi.  
   
 |Stil|Açıklama|  
 |-----------|-----------------|  
@@ -1629,8 +1629,8 @@ void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dockModeNew*  
- Yeni takma bölmesi modunu belirtir.  
+*dockModeNew*<br/>
+[in] Yeni takma bölmesi modunu belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Framework iki yerleştirme modunu destekler: standart ve hemen.  
@@ -1647,8 +1647,8 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwAlignment*  
- Yeni hizalamayı belirtir.  
+*dwAlignment*<br/>
+[in] Yeni hizalamayı belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Genellikle, bir bölme başka bir ana çerçeve taraftan yerleştirildiğinde framework bu yöntemi çağırır.  
@@ -1670,8 +1670,8 @@ virtual void SetPaneStyle(DWORD dwNewStyle);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwNewStyle*  
- Ayarlanacak yeni stilini belirtir.  
+*dwNewStyle*<br/>
+[in] Ayarlanacak yeni stilini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, afxres.h içinde tanımlanan CBRS_ stilleri birini ayarlamak için kullanılabilir. Bölmesinde stil ve bölmesinde hizalama birlikte depolandığından, yeni stil ile geçerli hizalaması gibi birleştirerek için bunu ayarlayın.  
@@ -1693,26 +1693,26 @@ virtual HDWP SetWindowPos(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndInsertAfter*  
- Tanımlar `CWnd` önce gelen nesne `CWnd` Z düzenini nesnesi. Daha fazla bilgi için [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
+*pWndInsertAfter*<br/>
+[in] Tanımlar `CWnd` önce gelen nesne `CWnd` Z düzenini nesnesi. Daha fazla bilgi için [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
   
- [in] *x*  
- Pencerenin sol tarafındaki konumunu belirtir.  
+*x*<br/>
+[in] Pencerenin sol tarafındaki konumunu belirtir.  
   
- [in] *y*  
- Pencerenin konumunu belirtir.  
+*Y*<br/>
+[in] Pencerenin konumunu belirtir.  
   
- [in] *cx*  
- Pencerenin genişliğini belirtir.  
+*CX*<br/>
+[in] Pencerenin genişliğini belirtir.  
   
- [in] *cy*  
- Pencerenin yüksekliğini belirtir.  
+*CY*<br/>
+[in] Pencerenin yüksekliğini belirtir.  
   
- [in] *nFlags*  
- Boyut ve konum seçeneklerini belirtir. Daha fazla bilgi için [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
+*nFlags*<br/>
+[in] Boyut ve konum seçeneklerini belirtir. Daha fazla bilgi için [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos).  
   
- [in] *hdwp*  
- Bir veya daha fazla windows boyut ve konum bilgilerini içeren bir yapıya işleyin.  
+*hdwp*<br/>
+[in] Bir veya daha fazla windows boyut ve konum bilgilerini içeren bir yapıya işleyin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tanıtıcı bir güncelleştirilmiş ertelenmiş pencere konumu yapısı veya NULL.  
@@ -1731,14 +1731,14 @@ virtual void ShowPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Bir bölme belirtir (TRUE) gösterme veya gizleme (FALSE).  
+*bBilgi Göster*<br/>
+[in] Bir bölme belirtir (TRUE) gösterme veya gizleme (FALSE).  
   
- [in] *bDelay*  
- TRUE ise, yerleştirme düzeni yeniden hesaplama gecikir.  
+*bDelay*<br/>
+[in] TRUE ise, yerleştirme düzeni yeniden hesaplama gecikir.  
   
- [in] *bActivate*  
- TRUE ise bölmesinde gösterilen etkin değil.  
+*bActivate*<br/>
+[in] TRUE ise bölmesinde gösterilen etkin değil.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem bölmesini gösterir veya bir gizler. Bu yöntemi yerine kullanın `ShowWindow` çünkü bu yöntem ilgili yerleştirme yöneticileri bölmedeki görünürlük değişiklikler hakkında bilgilendirir.  
@@ -1755,11 +1755,11 @@ virtual CSize StretchPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nLength*  
- Uzunluğu, bölmesinde esnetme.  
+*nLength*<br/>
+[in] Uzunluğu, bölmesinde esnetme.  
   
- [in] *bVert*  
- TRUE ise bölmeyi dikey olarak esnetin. FALSE ise bölmeyi yatay olarak esnetin.  
+*bVert*<br/>
+[in] TRUE ise bölmeyi dikey olarak esnetin. FALSE ise bölmeyi yatay olarak esnetin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Esnetilmiş bölmesi boyutu.  

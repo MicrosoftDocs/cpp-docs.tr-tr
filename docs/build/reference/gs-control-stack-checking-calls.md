@@ -22,27 +22,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c0c6a5af31eaba30af92201a2e2563b67aceed6e
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 38b97354408d87d862955c0883c72d3e1459aa61
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44104114"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719283"
 ---
 # <a name="gs-control-stack-checking-calls"></a>/Gs (Denetim Yığını Denetim Çağrıları)
+
 Yığın araştırmalarını denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```  
+```
 /Gs[size]
-```  
+```
 
 ## <a name="arguments"></a>Arguments
+
 *Boyutu*<br/>
 (İsteğe bağlı) Yerel değişkenler yığın araştırmaları önce kaplayabilir bayt sayısı başlatılır. Varsa **/Gs** seçeneği olmadan belirtilmiş bir `size` bağımsız değişkeni, belirtmekle aynı olacak **/Gs0**,
 
 ## <a name="remarks"></a>Açıklamalar
+
 Bir yığın araştırması, her işlev çağrısını derleyicinin eklediği kod bir dizidir. Başlatıldığında, bir yığın araştırma benignly işlevin yerel değişkenler depolamak için gereken alan miktarı tarafından belleğe ulaşır.
 
 Bir işlev gerektiriyorsa, birden fazla `size` bayt yığın alanı yerel değişkenler için kendi yığın araştırma başlatılır. Varsayılan olarak, derleyici bir işlev yığın alanı birden fazla sayfa gerektirdiğinde yığın araştırma başlatan kodu oluşturur. Bu derleyici seçeneğine eşdeğerdir **/Gs4096** x86 x64 ve ARM platformları için. Bu değer, bir uygulama ve Windows Bellek Yöneticisi için program yığınına çalışma zamanında dinamik olarak kaydedilen bellek miktarını artırmak sağlar.
@@ -58,18 +61,19 @@ Kullanarak, yığın yoklamalarını açıp kapatabilirsiniz [check_stack](../..
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1.  Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-2.  Seçin **C/C++** klasör.
+1. Seçin **C/C++** klasör.
 
-3.  Seçin **komut satırı** özellik sayfası.
+1. Seçin **komut satırı** özellik sayfası.
 
-4.  Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
 
 ### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
 
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

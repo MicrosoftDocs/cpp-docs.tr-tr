@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 83f418d0aaf82dbc9fefba5cbdc1bbf8b2c8bf94
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 582a8d666570b974ed97aea5ce2c882e29e4be44
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372038"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723651"
 ---
 # <a name="loadconfig"></a>/LOADCONFIG
-```  
-/LOADCONFIG  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek IMAGE_LOAD_CONFIG_DIRECTORY yapısı, Windows NT yükleyicisi tarafından kullanılan ve WINNT içinde tanımlanan bir isteğe bağlı yapısı dökümünü yapar. H.  
-  
- Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+```
+/LOADCONFIG
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, Windows NT yükleyicisi tarafından kullanıldığı ve WINNT içinde tanımlanan bir isteğe bağlı yapısı IMAGE_LOAD_CONFIG_DIRECTORY yapısı dökümünü yapar. H
+
+Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

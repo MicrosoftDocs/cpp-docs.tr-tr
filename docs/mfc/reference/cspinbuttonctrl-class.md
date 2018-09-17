@@ -42,12 +42,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a12e5abcc02017acbd06c841cc9ab62a9d25bdf
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 810b59bb85d374b1cf65985a64be32c645e6f3b5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757107"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718087"
 ---
 # <a name="cspinbuttonctrl-class"></a>CSpinButtonCtrl sınıfı
 Windows ortak değer değiştirme düğmesi denetimi işlevlerini sağlar.  
@@ -352,9 +352,10 @@ void SetRange32(
     int nUpper);
 ```  
   
-### <a name="parameters"></a>Parametreler  
- *nLower* ve *nUpper*  
- Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL büyük olabilir veya iki sınırları arasındaki farkı UD_MAXVAL daha azını UD_MINVAL; Ayrıca, aşamaz. `SetRange32` herhangi bir kısıtlama barındırabileceğiniz yerleştirir; herhangi bir tamsayı kullanın.  
+### <a name="parameters"></a>Parametreler
+
+*nLower* ve *nUpper*<br/>
+Denetimi üst ve alt sınırları. İçin `SetRange`, hiçbir sınır UD_MAXVAL büyük olabilir veya iki sınırları arasındaki farkı UD_MAXVAL daha azını UD_MINVAL; Ayrıca, aşamaz. `SetRange32` herhangi bir kısıtlama barındırabileceğiniz yerleştirir; herhangi bir tamsayı kullanın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi `SetRange32` 32-bit aralığı değer değiştirme düğmesi denetimi için ayarlar.  

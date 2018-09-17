@@ -18,28 +18,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6e8af5b23d2e6cd0759f75c4054e0a811f687e1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a93b854dba2855fa68bb3be163cecdcd3570df0
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375054"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723106"
 ---
 # <a name="swaprun"></a>/SWAPRUN
-```  
-/SWAPRUN:{[!]NET|[!]CD}  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek, işletim sisteminin görüntüsünü bir takas dosyasına kopyalayın ve oradan çalıştırın bildirmek için görüntüyü düzenler. Ağları veya çıkarılabilir medyada bulunan görüntüleri için bu seçeneği kullanın.  
-  
- Ekleyebilir veya NET ya da CD niteleyicileri kaldırabilirsiniz:  
-  
--   NET, görüntünün bir ağda bulunan gösterir.  
-  
--   CD görüntüsünün bir CD-ROM veya benzer çıkarılabilir medyayı bulunduğu gösterir.  
-  
--   Kullanım! NET ve! NET ve CD etkileri tersine çevirmek için CD.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [EDITBIN Seçenekleri](../../build/reference/editbin-options.md)
+
+```
+/SWAPRUN:{[!]NET|[!]CD}
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, görüntüyü bir takas dosyasına kopyalayın ve oradan çalıştırın işletim sisteminin bildirmek için görüntü düzenler. Ağları veya çıkarılabilir medyada bulunan görüntüleri için bu seçeneği kullanın.
+
+NET ya da CD niteleyicileri kaldırın ya da ekleyin:
+
+- Görüntünün bir ağda bulunan ağ gösterir.
+
+- CD resmi bir CD-ROM veya benzer çıkarılabilir medyayı bulunduğu gösterir.
+
+- Kullanım! NET ve! NET ve CD etkilerini tersine çevirmek için CD'ı tıklatın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[EDITBIN Seçenekleri](../../build/reference/editbin-options.md)

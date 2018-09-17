@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e5ee2ddc29c2a014aceb8ac6356cae9e42a916d
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: def07f92cc05828c132ba7d34d3dcc06d4aecf50
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39027329"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721454"
 ---
 # <a name="overview-of-arm32-abi-conventions"></a>ARM32 ABI kurallarına genel bakış
 
@@ -64,16 +64,16 @@ Thumb-2 kodda BT yönergelerinin kullanımını etkinleştir, bu özel durumlar 
 - Hedef yönerge bunlardan biri olmalıdır:
 
    |16-bit işlem kodları|örneği|Kısıtlamalar|
-    |---------------------|-----------|------------------|
-    |MOV, MVN|Taşıma|RM! bilgisayarı, Rd =! = PC|
-    |LDR LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez değer formlar|
-    |STR, STRB, STRH|Bellek Store||
-    |ADC, RSB, SBC, ALT EKLEYİN|Eklemek veya çıkartmak|Ancak değil Ekle/SUB SP, SP, imm7 formlar<br /><br /> RM! = PC, Rdn! = PC, Rdm! = PC|
-    |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! = PC, Rn! = PC|
-    |MUL|Çarp||
-    |ASR, LSL, LSR, ROR|Bit kaydırma||
-    |AYRICA, BIC, EOR, ORR TST|Bit düzeyinde aritmetik||
-    |BX|Dal kaydetmek için|RM! = PC|
+   |---------------------|-----------|------------------|
+   |MOV, MVN|Taşıma|RM! bilgisayarı, Rd =! = PC|
+   |LDR LDR [S] B, LDR [S] H|Bellekten yükleme|Ancak LDR değişmez değer formlar|
+   |STR, STRB, STRH|Bellek Store||
+   |ADC, RSB, SBC, ALT EKLEYİN|Eklemek veya çıkartmak|Ancak değil Ekle/SUB SP, SP, imm7 formlar<br /><br /> RM! = PC, Rdn! = PC, Rdm! = PC|
+   |CMP, CMN|{1&gt;Karşılaştır&lt;1}|RM! = PC, Rn! = PC|
+   |MUL|Çarp||
+   |ASR, LSL, LSR, ROR|Bit kaydırma||
+   |AYRICA, BIC, EOR, ORR TST|Bit düzeyinde aritmetik||
+   |BX|Dal kaydetmek için|RM! = PC|
 
 Geçerli ARMv7 CPU kullanımı izin verilmeyen bir yönerge formları raporlayamaz olsa da, gelecek nesil beklenir. Bu formlar algılanmazsa, bunları kullanan herhangi bir programı tanımlanmamış yönerge özel durumla sona erdirilecek.
 
@@ -233,5 +233,5 @@ Bir saat gibi doğru döngü sayacı sayacıdır; Bu nedenle, sayım sıklığı
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM Özel Durum İşleme](../build/arm-exception-handling.md)  
+[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM Özel Durum İşleme](../build/arm-exception-handling.md)

@@ -15,32 +15,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 192e64e1f40df7a4e871d6765f57f16132cc8b5f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 83b48855d990f0c6c3c0872e8c9b22441d04e76a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367075"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718282"
 ---
 # <a name="contents-of-a-makefile"></a>Derleme Görevleri Dosyası İçeriği
-Derleme görevleri içerir:  
-  
--   [Açıklama blokları](../build/description-blocks.md)  
-  
--   [Komutları](../build/commands-in-a-makefile.md)  
-  
--   [Makroları](../build/macros-and-nmake.md)  
-  
--   [Çıkarım kuralları](../build/inference-rules.md)  
-  
--   [Nokta yönergeleri](../build/dot-directives.md)  
-  
--   [Ön işleme yönergeleri](../build/makefile-preprocessing.md)  
-  
-## <a name="remarks"></a>Açıklamalar  
- Derleme görevleri dosyası kullanabileceğiniz diğer özellikler [joker karakterler](../build/wildcards-and-nmake.md), [uzun dosya adları](../build/long-filenames-in-a-makefile.md), [açıklamaları](../build/comments-in-a-makefile.md), ve [özel karakterleri](../build/special-characters-in-a-makefile.md).  
-  
- Bir örnek için bkz: [örnek derleme görevleri dosyası](../build/sample-makefile.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Başvurusu](../build/nmake-reference.md)
+
+Derleme görevleri içerir:
+
+- [Açıklama blokları](../build/description-blocks.md)
+
+- [Komutları](../build/commands-in-a-makefile.md)
+
+- [Makroları](../build/macros-and-nmake.md)
+
+- [Çıkarım kuralları](../build/inference-rules.md)
+
+- [Nokta yönergeleri](../build/dot-directives.md)
+
+- [Ön işleme yönergeleri](../build/makefile-preprocessing.md)
+
+## <a name="remarks"></a>Açıklamalar
+
+Derleme görevleri dosyasında kullanabileceğiniz diğer özellikler [joker karakterler](../build/wildcards-and-nmake.md), [uzun dosya adları](../build/long-filenames-in-a-makefile.md), [açıklamaları](../build/comments-in-a-makefile.md), ve [özel karakterler](../build/special-characters-in-a-makefile.md).
+
+Bir örnek için bkz. [örnek derleme görevleri dosyası](../build/sample-makefile.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Başvurusu](../build/nmake-reference.md)

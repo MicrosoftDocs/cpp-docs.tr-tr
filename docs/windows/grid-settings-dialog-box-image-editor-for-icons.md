@@ -18,28 +18,32 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 52f6aea7bb934f3dd7b3c42c2c13ff7939a8b168
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 17f44f972482aefda0c65c7599fa6a83b49c36fb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44316230"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723254"
 ---
 # <a name="grid-settings-dialog-box-c-image-editor-for-icons"></a>Kılavuz ayarları iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
 Görüntünüzü için kılavuz ayarları belirtmenize olanak tanır ve düzenlenen görüntüsünden kılavuz çizgilerini görüntüler. Satırları düzenleme görüntüsü için yararlıdır, ancak görüntünün kendisi bir parçası olarak kaydedilmez.
 
-**Piksel Kılavuzu**  
-Bu onay kutusu işaretlendiğinde, her pikselin çevresindeki bir kılavuz Resim Düzenleyicisi'nde görüntüler. Kılavuz, yalnızca 4 × ve daha yüksek çözünürlüklerde görünür.
+- **Piksel Kılavuzu**
 
-**Döşeme**  
-Seçili olduğunda, görüntü düzenleyicisinde kılavuz aralık değerleri tarafından belirtilen blokları piksel etrafında bir kılavuz görüntüler.
+   Bu onay kutusu işaretlendiğinde, her pikselin çevresindeki bir kılavuz Resim Düzenleyicisi'nde görüntüler. Kılavuz, yalnızca 4 × ve daha yüksek çözünürlüklerde görünür.
 
-**Genişlik**  
-Her kutucuk bloğunun genişliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.
+- **Döşeme**
 
-**Yükseklik**  
-Her kutucuk blok yüksekliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.
+   Seçili olduğunda, görüntü düzenleyicisinde kılavuz aralık değerleri tarafından belirtilen blokları piksel etrafında bir kılavuz görüntüler.
+
+- **Genişlik**
+
+   Her kutucuk bloğunun genişliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.
+
+- **Yükseklik**
+
+   Her kutucuk blok yüksekliğini belirtir. Bu, düzenli aralıklarla düzenlenmiş birden fazla görüntü içeren bir bit eşlem yeniden çizilirken kullanışlıdır.
 
 ## <a name="requirements"></a>Gereksinimler
 

@@ -30,12 +30,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7f52e0e62a831a77a7a00dc50aeecac45cd0fe9
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 2424ce23c0a376156bbb78869a2e33e501958e73
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38960560"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719140"
 ---
 # <a name="strstreambuf-class"></a>strstreambuf Sınıfı
 
@@ -103,8 +103,8 @@ void freeze(bool _Freezeit = true);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Freezeit*  
- A **bool** donabilir akış isteyip istemediğinizi belirten.
+*_Freezeit*<br/>
+A **bool** donabilir akış isteyip istemediğinizi belirten.
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -191,8 +191,8 @@ virtual int overflow(int _Meta = EOF);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta*  
- Karakter arabelleğine ekleme veya `EOF`.
+*_Meta*<br/>
+Karakter arabelleğine ekleme veya `EOF`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -216,8 +216,8 @@ virtual int pbackfail(int _Meta = EOF);
 
 ### <a name="parameters"></a>Parametreler
 
-*_Meta*  
- Karakter arabelleğine ekleme veya `EOF`.
+*_Meta*<br/>
+Karakter arabelleğine ekleme veya `EOF`.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -280,14 +280,14 @@ virtual streampos seekoff(streamoff _Off,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Off*  
- Arama için göreli konumunu *_Way*.
+*_Off*<br/>
+Arama için göreli konumunu *_Way*.
 
-*_Way*  
- İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
+*_Way*<br/>
+İşlemleri için başlangıç noktası. Bkz: [seekdir](../standard-library/ios-base-class.md#seekdir) için olası değerler.
 
-*_Which*  
- İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -319,11 +319,11 @@ virtual streampos seekpos(streampos _Sp, ios_base::openmode _Which = ios_base::i
 
 ### <a name="parameters"></a>Parametreler
 
-*_Sp*  
- Arama konumu.
+*_Sp*<br/>
+Arama konumu.
 
-*_Which*  
- İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
+*_Which*<br/>
+İşaretçisi konumunu modunu belirtir. Değiştirme okuma ve yazma konumları olanak tanımak için varsayılandır.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
@@ -389,20 +389,20 @@ strstreambuf(const unsigned char* _Getptr,
 
 ### <a name="parameters"></a>Parametreler
 
-*_Allocfunc*  
- Arabellek bellek ayırmak için kullanılan işlev.
+*_Allocfunc*<br/>
+Arabellek bellek ayırmak için kullanılan işlev.
 
-*Sayısı*  
- Tarafından işaret edilen arabellek uzunluğunu belirler *_Getptr*. Varsa *_Getptr* bir bağımsız değişkeni değil (ilk Oluşturucusu formu), önerilen bir ayırma için arabellek boyutu.
+*Sayısı*<br/>
+Tarafından işaret edilen arabellek uzunluğunu belirler *_Getptr*. Varsa *_Getptr* bir bağımsız değişkeni değil (ilk Oluşturucusu formu), önerilen bir ayırma için arabellek boyutu.
 
-*_Freefunc*  
- Arabellek belleği boşaltmak için kullanılan işlev.
+*_Freefunc*<br/>
+Arabellek belleği boşaltmak için kullanılan işlev.
 
-*_Getptr*  
- Giriş için kullanılan arabellek.
+*_Getptr*<br/>
+Giriş için kullanılan arabellek.
 
-*_Putptr*  
- Çıkış için kullanılan arabellek.
+*_Putptr*<br/>
+Çıkış için kullanılan arabellek.
 
 ### <a name="remarks"></a>Açıklamalar
 

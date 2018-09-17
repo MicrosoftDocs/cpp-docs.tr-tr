@@ -21,12 +21,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4893f30bae3b29538c8bead637cb4d083087a57b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 89f0402eedbe6e49d6ce4095dc8c91ec69e15447
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376591"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723612"
 ---
 # <a name="analyze-code-analysis"></a>/analyze (Kod Çözümleme)
 
@@ -40,33 +40,25 @@ Kod analizini ve denetim seçeneklerini etkinleştirir.
 
 ## <a name="arguments"></a>Arguments
 
- /analyze  
- Varsayılan modda analizi açar. Analiz çıkış gider **çıkış** pencere gibi diğer hata iletileri. Kullanım **/ analyze-** açıkça analiz devre dışı bırakma.
+/ Varsayılan modda analizi açar analiz edin. Analiz çıktısı gider **çıkış** penceresi gibi diğer hata iletileri. Kullanım **/ analyze-** analizi açıkça etkinleştirmek için.
 
- /analyze:WX-  
- Belirtme **/ analyze: WX -** Kod Analizi uyarıları anlamına gelir değil kabul edilir hata olarak kullanarak derlediğinizde **/WX**. Daha fazla bilgi için bkz: [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md).
+/ analyze: WX-belirtme **/ analyze: WX -** kullanarak derleme yaptığınızda Kod Analizi uyarılarının anlamına gelir hata olarak işlenmeyeceği **wx**. Daha fazla bilgi için [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md).
 
- / analyze: günlük `filename`  
- Ayrıntılı Çözümleyicisi sonuçları tarafından belirtilen dosya için XML olarak yazılır `filename`.
+/ analyze: log `filename` ayrıntılı çözümleyici sonuçları tarafından belirtilen dosyaya XML olarak yazılır `filename`.
 
- /analyze:quiet  
- Çözümleyici çıktısına kapatır **çıkış** penceresi.
+/ analyze: quiet kapatır çözümleyici çıktısını kapatmak **çıkış** penceresi.
 
- / analyze: stacksıze `number`  
- `number` Bu seçenek ile kullanılır parametre yığın çerçevesi hangi uyarı için bayt cinsinden boyutu belirtir [C6262](/visualstudio/code-quality/c6262) oluşturulur. Bu parametre belirtilmezse, yığın çerçevesinin boyutu varsayılan olarak 16 KB olur.
+/ analyze: stacksize `number` `number` bu seçenekle kullanılan parametresi, yığın çerçevesinin bayt cinsinden boyutunu belirtir [C6262](/visualstudio/code-quality/c6262) oluşturulur. Bu parametre belirtilmezse, yığın çerçevesinin boyutu varsayılan olarak 16 KB olur.
 
- / analyze: max_paths `number`  
- `number` Bu seçenek ile kullanılan parametre çözümlenecek kod yollarının en fazla sayısını belirtir. Bu parametre belirtilmezse, sayı varsayılan olarak 256 olur. Daha büyük değerler daha kapsamlı denetleme gerçekleştirir ancak çözümleme uzun sürebilir.
+/ analyze: max_paths `number` `number` bu seçenekle kullanılan parametre kod yollar, çözümlenecek maksimum sayısını belirtir. Bu parametre belirtilmezse, sayı varsayılan olarak 256 olur. Daha büyük değerler daha kapsamlı denetleme gerçekleştirir ancak çözümleme uzun sürebilir.
 
- /analyze:only  
- Genellikle, derleyici kodu oluşturur ve çözümleyiciyi çalıştırdıktan sonra biraz daha sözdizimi denetimi yapar. **/ Analyze: yalnızca** seçeneği bu kod oluşturma geçişi devre dışı bırakır; Bu analiz hızlandırır ancak derleme hataları ve kod oluşturma geçişi derleyici tarafından bulunmuş uyarıları yayılan değil. Programda kod oluşturma hataları varsa, analiz sonuçları güvenilir olmayabilir. Bu nedenle, bu seçeneği yalnızca kod oluşturma sözdizimi denetimini hatasız şekilde geçerse kullanmanızı öneririz.
+/ analyze: yalnızca genel olarak, derleyici kodu oluşturur ve çözümleyiciyi çalıştırdıktan sonra biraz daha sözdizimi denetimi yapar. **/ Analyze: yalnızca** seçeneği bu kod oluşturma geçişini kapatır açar; bu analiz daha hızlı sağlar ancak derleme hataları ve derleyicinin kod oluşturma geçişi tarafından keşfedilebilecek uyarıları yayılmaz. Programda kod oluşturma hataları varsa, analiz sonuçları güvenilir olmayabilir. Bu nedenle, bu seçeneği yalnızca kod oluşturma sözdizimi denetimini hatasız şekilde geçerse kullanmanızı öneririz.
 
- / analyze: ruleset `<file_path>.ruleset`  
-Analiz etmek için hangi kural kümesi belirtme kendiniz oluşturmanız özel kural kümeleri dahil olmak üzere sağlar. Bu anahtarı ayarlandığında, kurallar altyapısı olmayan-üyeleri belirtilen kural çalıştırmadan önce kümesi dışlar olduğundan daha verimli olur. Anahtar ayarlanmadığında altyapısı tüm kuralları denetler.
+/ analyze: ruleset `<file_path>.ruleset` , analiz etmek için hangi kural kümesi belirtme kendiniz oluşturabileceğiniz özel kural kümeleri dahil olmak üzere sağlar. Bu anahtar ayarlandığında, kural altyapısı üyeleri olmayan çalıştırmadan önce kümesi belirtilen kural içermez çünkü daha verimli olur. Anahtar ayarlandığında, tüm kurallar altyapısı denetler.
 
-Visual Studio ile birlikte rulesets bulunan **%VSINSTALLDIR%\Team Tools\Static analiz Tools\Rule ayarlar.**
+Visual Studio ile birlikte gelen rulesets bulunan **%VSINSTALLDIR%\Team Tools\Static analizi Tools\Rule kümeleri.**
 
-Aşağıdaki örnek özel bir kural kümesi C6001 ve C26494 denetlemek için kurallar altyapısı söyler. Herhangi bir yere sahip olduğu sürece, bu dosya yerleştirebilirsiniz bir `.ruleset` uzantısı ve bağımsız değişkende tam yolunu sağlayın.
+Aşağıdaki örnek özel kural kümesi C6001 ve C26494 denetlemek için kurallar altyapısı söyler. Herhangi bir yere sahip olduğu sürece, bu dosya yerleştirebilirsiniz bir `.ruleset` uzantısı ve bağımsız değişkende tam yolunu sağlayın.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -78,30 +70,30 @@ Aşağıdaki örnek özel bir kural kümesi C6001 ve C26494 denetlemek için kur
 </RuleSet>
 ```
 
-/ analyze: eklentisi  
-Kod çözümleme parçası çalışırken belirtilen PREfast eklentisi sağlar. Eşzamanlılık ile ilgili kod analizi uygulayan eklentisi aralığı C261XX uyarıları denetler LocalEspC.dll olur. Örneğin, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101),..., [C26167](/visualstudio/code-quality/c26167).
+/ analyze: eklenti çalışan kod analizi bir parçası olarak belirtilen PREfast eklenti sağlar.
+Eşzamanlılık ile ilgili kod analizi uygulayan eklenti aralık C261XX uyarıları denetler LocalEspC.dll olur. Örneğin, [C26100](/visualstudio/code-quality/c26100), [C26101](/visualstudio/code-quality/c26101),..., [C26167](/visualstudio/code-quality/c26167).
 
-LocalEspC.dll çalıştırmak için bu derleyici seçeneği kullanın: **/ analyze: eklentisi LocalEspC.dll**
+LocalEspC.dll çalıştırmak için bu derleyici seçeneğini kullanın: **/ analyze: LocalEspC.dll eklentisi**
 
-CppCoreCheck.dll çalıştırmak için önce bir geliştirici komut isteminde bu komutu çalıştırın:
+CppCoreCheck.dll çalıştırmak için önce bir geliştirici komut isteminden şu komutu çalıştırın:
 
 ```cmd
 set Esp.Extensions=CppCoreCheck.dll
 ```
 
-Bu derleyici seçeneği kullanın: **/ analyze: eklenti EspXEngine.dll**.
+Ardından bu derleyici seçeneğini kullanın: **/ analyze: eklenti EspXEngine.dll**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Daha fazla bilgi için bkz: [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) ve [C/C++ uyarıları için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).
+Daha fazla bilgi için [C/C++ genel bakış için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-overview) ve [C/C++ uyarıları için Kod Analizi](/visualstudio/code-quality/code-analysis-for-c-cpp-warnings).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Genişletme **yapılandırma özellikleri** düğümü.
+1. Genişletin **yapılandırma özellikleri** düğümü.
 
-1. Genişletme **Kod Analizi** düğümü.
+1. Genişletin **Kod Analizi** düğümü.
 
 1. Seçin **genel** özellik sayfası.
 

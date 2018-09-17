@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 086fbbc2a25c4af2b09f40d83ac0b20399860ca1
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 3777492212bbff368902acf589f0a3c46ea4ac18
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43679812"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718685"
 ---
 # <a name="svmvmrun"></a>__svm_vmrun
 **Microsoft'a özgü**  
@@ -41,7 +41,7 @@ void __svm_vmrun(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
+|*VmcbPhysicalAddress*|[in] VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `__svm_vmrun` İşlevi sanal makine Konuk kodu yürütmeye başlamak için VMCB içinde en az miktarda bilgi kullanır. Kullanım [__svm_vmsave](../intrinsics/svm-vmsave.md) veya [__svm_vmload](../intrinsics/svm-vmload.md) karmaşık kesmeyi işlemek için veya başka bir konuk geçiş yapmak için daha fazla bilgi gerekiyorsa işlev.  

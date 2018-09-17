@@ -30,18 +30,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 478f942b489aa2350319b90da4c05c61925101f4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fcc842ef134d5f61cf634debe9dd16449b48bbb8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407928"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724028"
 ---
 # <a name="unlock"></a>_unlock
 Çoklu iş parçacığı kilidi serbest bırakır.  
   
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT kullanılamaz.  
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,8 +52,8 @@ void __cdecl _unlock(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `locknum`  
- Serbest bırakmak için kilit tanımlayıcısı.  
+*locknum*<br/>
+[in] Serbest bırakmak için kilit tanımlayıcısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
  **Kaynak:** mlock.c  

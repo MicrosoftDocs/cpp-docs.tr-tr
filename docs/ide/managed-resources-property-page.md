@@ -18,28 +18,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e88f7ccf6f510ad5bcc7178af87714ca22a97252
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 58d2b1eaee54ac33e687d457830372f2bef06230
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43688617"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718516"
 ---
 # <a name="managed-resources-property-page"></a>Yönetilen Kaynaklar Özellik Sayfası
 Kaynak derleyicisi için ayarları sağlar.  
   
  **Yönetilen kaynaklar** özellik sayfası, aşağıdaki özellikleri içerir:  
   
- **Mantıksal kaynak adı**  
- Belirtir *mantıksal adı* üretilen Ara .resources dosyasının. Mantıksal ad kaynağı yüklemek için kullanılan addır. Mantıksal hiçbir ad belirtilmediği takdirde, kaynak (.resx) dosyası adına mantıksal adı olarak kullanılır.  
+- **Mantıksal kaynak adı**
+
+   Belirtir *mantıksal adı* üretilen Ara .resources dosyasının. Mantıksal ad kaynağı yüklemek için kullanılan addır. Mantıksal hiçbir ad belirtilmediği takdirde, kaynak (.resx) dosyası adına mantıksal adı olarak kullanılır.  
   
- **Çıkış dosyası adı**  
- Kaynak (.resx) dosyasının katıldığı son çıktı dosyasının adını belirtir.  
+- **Çıkış dosyası adı**
+
+   Kaynak (.resx) dosyasının katıldığı son çıktı dosyasının adını belirtir.  
   
- **Varsayılan yerelleştirilmiş kaynaklar**  
- Belirtilen .resx dosyasının varsayılan kaynaklara mı uydu .dll DLL'e mi katılacağını belirtir.  
+- **Varsayılan yerelleştirilmiş kaynaklar**
+
+   Belirtilen .resx dosyasının varsayılan kaynaklara mı uydu .dll DLL'e mi katılacağını belirtir.  
   
- Erişim hakkında daha fazla bilgi için **yönetilen kaynaklar** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
+Erişim hakkında daha fazla bilgi için **yönetilen kaynaklar** özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [RC (RC komut satırı) kullanma](/windows/desktop/menurc/using-rc-the-rc-command-line-)   

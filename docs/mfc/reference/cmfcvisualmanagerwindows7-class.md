@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58772f3690a68dc3a0d22c2db863fc7ad4904a1c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: c17a9b6970f612c31ba9491ca2e3483b4a3fa37b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465725"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720557"
 ---
 # <a name="cmfcvisualmanagerwindows7-class"></a>CMFCVisualManagerWindows7 sınıfı
 `CMFCVisualManagerWindows7` Uygulamanın bir Windows 7 uygulaması görünümü verir.  
@@ -149,17 +149,17 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pEdit*  
- Düzenleme denetimine yönelik işaretçi. Bu değer NULL olamaz.  
+*pEdit*<br/>
+[in] Düzenleme denetimine yönelik işaretçi. Bu değer NULL olamaz.  
   
- [out] *bIsHighlighted*  
- Şerit kutusunda vurgulanan olup olmadığını döndürür.  
+*bIsHighlighted*<br/>
+[out] Şerit kutusunda vurgulanan olup olmadığını döndürür.  
   
- [out] *bIsPaneHighlighted*  
- Döndürür TRUE, Şerit paneli içerir *pEdit* vurgulanır.  
+*bIsPaneHighlighted*<br/>
+[out] Döndürür TRUE, Şerit paneli içerir *pEdit* vurgulanır.  
   
- [out] *bIsDisabled*  
- Döndürür olmadığını *pEdit* devre dışı bırakıldı.  
+*bIsDisabled*<br/>
+[out] Döndürür olmadığını *pEdit* devre dışı bırakıldı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düzenleme kutusunun arka plan rengini *pEdit*.  
@@ -178,17 +178,17 @@ virtual void OnFillMenuImageRect(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir menü düğmesinin cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir menü düğmesinin cihaz bağlamı için bir işaretçi.  
   
- [in] *pButton*  
- Bir işaretçi bir `CMFCToolBarButton`. Çerçeve arka plan için bu düğmeyi doldurur.  
+*pButton*<br/>
+[in] Bir işaretçi bir `CMFCToolBarButton`. Çerçeve arka plan için bu düğmeyi doldurur.  
   
- [in] *dikdörtgen*  
- Menü düğmesine görüntü alanını sınırlarını belirten bir dikdörtgen.  
+*Rect*<br/>
+[in] Menü düğmesine görüntü alanını sınırlarını belirten bir dikdörtgen.  
   
- [in] *durumu*  
- Düğme durumu.  
+*durumu*<br/>
+[in] Düğme durumu.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

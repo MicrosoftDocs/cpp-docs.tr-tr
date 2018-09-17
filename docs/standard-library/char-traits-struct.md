@@ -37,12 +37,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc8f906c4c084ef4cabef9b26ef9e6b48e9e33cd
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: ba56cef1ecdcee246b9041b930eeb5bf04728def
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106089"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724613"
 ---
 # <a name="chartraits-struct"></a>char_traits Yapısı
 
@@ -120,7 +120,8 @@ static char_type *assign(char_type* strTo,
 *_CharTo*<br/>
 Karakter değeri atanacak öğe.
 
-* strTo * ilk öğeleri karakter değerlerini atanacak olan dize veya karakter dizisi.
+*strTo*<br/>
+İlk öğeleri karakter değerlerini atanacak olan dize veya karakter dizisi.
 
 *_Num*<br/>
 Değerleri atanacak giderek öğe sayısı.
@@ -198,9 +199,11 @@ static int compare(const char_type* str1,
 
 ### <a name="parameters"></a>Parametreler
 
-* str1 * birbirine Karşılaştırılacak ilk iki dizenin.
+*str1*<br/>
+Birbirine Karşılaştırılacak ilk iki dizenin.
 
-* str2 * birbirine Karşılaştırılacak ikinci iki dizenin.
+*str2*<br/>
+Birbirine Karşılaştırılacak ikinci iki dizenin.
 
 *_Num*<br/>
 Karşılaştırılacak dizeler içindeki öğe sayısı.

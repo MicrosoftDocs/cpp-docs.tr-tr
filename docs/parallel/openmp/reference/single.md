@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6dd5349331ac23998511a8f1b838d2cd13b01998
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7ff1a255933b79d39b6eedbb9362ff76a34e0f8a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691865"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716995"
 ---
 # <a name="single"></a>single
-Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde yürütülmesi gereken belirtmenize olanak sağlar.  
+Kodun bir bölümünü tek bir iş parçacığı üzerinde mutlaka ana iş parçacığının yürütülmesi gereken belirtmenize olanak sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -36,8 +36,9 @@ Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde y�
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `clause` (isteğe bağlı)  
- Sıfır veya daha çok yan tümceleri. Tarafından desteklenen yan tümceleri bir listesi için Açıklamalar bölümüne bakın **tek**.  
+
+`clause`  
+(İsteğe bağlı) Sıfır veya daha fazla tümceciği. Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **tek**.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **Tek** yönergesi aşağıdaki OpenMP yan tümceleri destekler:  
@@ -50,9 +51,9 @@ Kodun bir bölümü, mutlaka ana iş parçacığı gibi tek bir iş üzerinde y�
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
- [Ana](../../../parallel/openmp/reference/master.md) yönergesi kodun bir bölümünü yalnızca ana iş parçacığı üzerinde yürütülmesi gereken belirtmenize olanak sağlar.  
+ [Ana](../../../parallel/openmp/reference/master.md) yönergesi, kodun bir bölümünden yalnızca ana iş parçacığı üzerinde yapılmalıdır belirtmenize olanak sağlar.  
   
- Daha fazla bilgi için bkz: [2.4.3 tek oluşturmak](../../../parallel/openmp/2-4-3-single-construct.md).  
+ Daha fazla bilgi için [2.4.3 tek oluşturmak](../../../parallel/openmp/2-4-3-single-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

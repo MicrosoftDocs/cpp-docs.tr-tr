@@ -21,42 +21,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee2d3d31a9f091e6aa3fbed39f702471047a01dd
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 095db3db73f2be4012efe39f3b8cd8e645ad46c3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376721"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718349"
 ---
 # <a name="gx-enable-exception-handling"></a>/GX (Özel Durum İşlemeyi Etkinleştir)
-Kullanım dışı. Zaman uyumlu özel durum işleme işlevleri varsayımına kullanarak bildirilen kullanarak etkinleştirir `extern "C"` hiçbir zaman bir özel durum.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/GX  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **/GX** kullanım dışı bırakılmıştır. Eşdeğer kullanmak [/EHsc](../../build/reference/eh-exception-handling-model.md) bunun yerine seçeneği. Kullanım dışı derleyici seçeneklerinin listesi için bkz: **kullanım dışı ve kaldırılmış derleyici seçenekleri** bölümüne [derleyici seçenekleri kategoriye göre listelenen](../../build/reference/compiler-options-listed-by-category.md).  
-  
- Varsayılan olarak, **/EHsc**, karşılığıdır **/GX**, Visual Studio geliştirme ortamı kullanarak derlediğinizde etkili olur. Komut satırı araçlarını kullanırken, hiçbir özel durum işleme belirtilir. Bu eşdeğerdir **/GX-**.  
-  
- Daha fazla bilgi için bkz: [C++ özel durum işleme](../../cpp/cpp-exception-handling.md).  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Gezinti Bölmesi'nde seçin **yapılandırma özellikleri**, **C/C++**, **komut satırı**.  
-  
-3.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)
+
+Kullanım dışı. Zaman uyumlu özel durum işleme işlevleri varsayımına kullanarak bildirilen kullanarak etkinleştirir `extern "C"` hiçbir zaman bir özel durum.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/GX
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**/GX** kullanım dışı bırakılmıştır. Eşdeğer kullanın [/ehsc](../../build/reference/eh-exception-handling-model.md) bunun yerine seçeneği. Kullanım dışı derleyici seçeneklerinin bir listesi için bkz. **kullanım dışı ve derleyici seçenekleri kaldırıldı** konusundaki [kategoriye göre listelenmiş derleyici seçenekleri](../../build/reference/compiler-options-listed-by-category.md).
+
+Varsayılan olarak, **/ehsc**, denk olan **/GX**, Visual Studio geliştirme ortamını kullanarak derleme yaptığınızda yürürlükte olur. Komut satırı araçlarını kullanarak, hiçbir özel durum işleme belirtilir. Bu eşdeğerdir **/GX-**.
+
+Daha fazla bilgi için [C++ özel durum işleme](../../cpp/cpp-exception-handling.md).
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Gezinti bölmesinde **yapılandırma özellikleri**, **C/C++**, **komut satırı**.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[/EH (Özel Durum İşleme Modeli)](../../build/reference/eh-exception-handling-model.md)

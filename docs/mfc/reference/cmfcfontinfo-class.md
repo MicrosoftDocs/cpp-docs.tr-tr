@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3984ebc1568c831420e11bd7b3c9004dabcc316b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: eef400f13e36ac543fbcd73ccb7aedf4bc053037
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43222100"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718100"
 ---
 # <a name="cmfcfontinfo-class"></a>Cmfcfontınfo sınıfı
 `CMFCFontInfo` Sınıfı adı ve diğer bir yazı tipi özniteliklerini açıklar.  
@@ -94,23 +94,23 @@ CMFCFontInfo(const CMFCFontInfo& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszName*  
- Yazı tipi adı. Daha fazla bilgi için `lfFaceName` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
+*lpszName*<br/>
+[in] Yazı tipi adı. Daha fazla bilgi için `lfFaceName` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
- [in] *lpszScript*  
- Yazı tipinin betik (karakter kümesi) adı.  
+*lpszScript*<br/>
+[in] Yazı tipinin betik (karakter kümesi) adı.  
   
- [in] *nCharSet*  
- Yazı tipinin karakter kümesi (betik) belirten bir değeri. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
+*nCharSet*<br/>
+[in] Yazı tipinin karakter kümesi (betik) belirten bir değeri. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
- [in] *nPitchAndFamily*  
- Yazı tipi ailesi ve aralık belirten bir değeri. Daha fazla bilgi için `lfPitchAndFamily` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
+*nPitchAndFamily*<br/>
+[in] Yazı tipi ailesi ve aralık belirten bir değeri. Daha fazla bilgi için `lfPitchAndFamily` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
- [in] *nTür*  
- Yazı tipi belirten bir değeri. Bu parametre karşılaştırmaya (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE olabilir.  
+*nTür*<br/>
+[in] Yazı tipi belirten bir değeri. Bu parametre karşılaştırmaya (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE olabilir.  
   
- [in] *src*  
- Mevcut bir `CMFCFontInfo` üyeleri bu oluşturmak için kullanılan nesne `CMFCFontInfo` nesne.  
+*src*<br/>
+[in] Mevcut bir `CMFCFontInfo` üyeleri bu oluşturmak için kullanılan nesne `CMFCFontInfo` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   

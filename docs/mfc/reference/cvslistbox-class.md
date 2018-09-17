@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 946c82d4f558974d548a40af0b14e63f7ccebf4e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: afabb17847f1c94ce7fae1db05e589f03a79506a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680586"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721259"
 ---
 # <a name="cvslistbox-class"></a>CVSListBox sınıfı
 `CVSListBox` Sınıfı, düzenlenebilir bir liste denetimini destekler.  
@@ -124,14 +124,14 @@ virtual int AddItem(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strIext*  
- Bir dizeyi bir başvuru.  
+*strIext*<br/>
+[in] Bir dizeyi bir başvuru.  
   
- [in] *dwData*  
- Dize ile ilişkili bir uygulamaya özgü 32-bit değeri. Varsayılan değer 0’dır.  
+*dwData*<br/>
+[in] Dize ile ilişkili bir uygulamaya özgü 32-bit değeri. Varsayılan değer 0’dır.  
   
- [in] *İIndex*  
- Dize barındıracak konumu sıfır tabanlı dizini. Varsa *İIndex* parametresi, -1, dizenin listenin sonuna eklenir. Varsayılan değer -1'dir.  
+*İIndex*<br/>
+[in] Dize barındıracak konumu sıfır tabanlı dizini. Varsa *İIndex* parametresi, -1, dizenin listenin sonuna eklenir. Varsayılan değer -1'dir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Listesi denetimini dize konumunu sıfır tabanlı dizini.  
@@ -158,8 +158,8 @@ virtual BOOL EditItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Liste Denetim öğesi sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Liste Denetim öğesi sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düzenleme işlemi başarıyla başlatılırsa TRUE; Aksi takdirde FALSE.  
@@ -188,8 +188,8 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe ile ilişkili 32-bit değeri.  
@@ -205,8 +205,8 @@ virtual CString GetItemText(int iIndex) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] `iIndex`  
- Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CString](../../atl-mfc-shared/reference/cstringt-class.md) belirtilen öğenin metnini içeren nesne.  
@@ -246,8 +246,8 @@ virtual BOOL RemoveItem(int iIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen öğe kaldırılırsa TRUE; Aksi takdirde FALSE.  
@@ -262,8 +262,8 @@ virtual BOOL SelectItem(int iItem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iItem*  
- Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
+*iItem*<br/>
+[in] Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -281,11 +281,11 @@ virtual void SetItemData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *İIndex*  
- Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
+*İIndex*<br/>
+[in] Düzenlenebilir bir liste denetimini öğenin sıfır tabanlı dizini.  
   
- [in] *dwData*  
- 32-bit bir değer. Bu değer, uygulamaya özgü tamsayı veya diğer verileri gösteren bir işaretçi olabilir.  
+*dwData*<br/>
+[in] 32-bit bir değer. Bu değer, uygulamaya özgü tamsayı veya diğer verileri gösteren bir işaretçi olabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

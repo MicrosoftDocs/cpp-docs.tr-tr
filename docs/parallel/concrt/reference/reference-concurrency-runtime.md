@@ -463,21 +463,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3caa4ed0cb4a14cea913d141a88d9f2dd079f9bb
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: d06bac8aef674472b817817fde4191f1d655365e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693458"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723235"
 ---
 # <a name="reference-concurrency-runtime"></a>Başvuru (Eşzamanlılık Çalışma Zamanı)
-Bu bölüm eşzamanlılık çalışma zamanı için başvuru bilgileri içerir.
-**Not** C++ dili standart kitaplıklar gibi uygulamaları için bir alt çizgi (_) karakteriyle başlayan tanımlayıcıları kullanımını ayırır. Bu adları, kodunuzda kullanmayın. Bu kural, adları izleyen öğeleri garanti edilmez ve değiştirilebilir gelecek olan kod davranışını serbest bırakır. Bu nedenlerle, bu tür kod öğeleri eşzamanlılık çalışma zamanı belgelerinden göz ardı edilir.
+Bu bölümde, eşzamanlılık çalışma zamanı için başvuru bilgileri içerir.
+
+> [!Note]
+> C++ dil standardı, kütüphane gibi uygulamalar için bir alt çizgi (_) karakteriyle başlayan tanımlayıcı kullanımını ayırır. Kodunuzda bu adları kullanmayın. Öğe adları bu kurala uymayan garantili değildir ve gelecekte değişikliğe tabi olduğu kodun çalışma biçiminin serbest bırakır. Bu nedenlerden dolayı bu tür kod öğeleri eşzamanlılık çalışma zamanı belgelerinden çıkarılır.
 
 ## <a name="in-this-section"></a>Bu Bölümde
-[Eşzamanlılık Namespace](concurrency-namespace.md) eşzamanlılık ad alanı sınıfları sağlar ve size işlevleri erişim eşzamanlılık çalışma zamanı C++ için eşzamanlı bir programlama çerçevesi. Daha fazla bilgi için bkz: [eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
+
+[Eşzamanlılık Namespace](concurrency-namespace.md) size işlevleri erişmek için eşzamanlılık çalışma zamanı C++ için eşzamanlı programlama çerçevesi ve eşzamanlılık ad alanı sınıflar sağlar. Daha fazla bilgi için [eşzamanlılık çalışma zamanı](../concurrency-runtime.md).
 
 [Std ad alanı](std-namespace.md)
+
 [stdx ad alanı](stdx-namespace.md)
-
-

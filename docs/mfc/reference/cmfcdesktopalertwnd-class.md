@@ -54,12 +54,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09f086673ba015b168211261bed68db479ef77a9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: efe15f53cda42089b35d620ae9965050595121c7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466364"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720232"
 ---
 # <a name="cmfcdesktopalertwnd-class"></a>CMFCDesktopAlertWnd sınıfı
 `CMFCDesktopAlertWnd` Sınıfı, bir olay hakkında kullanıcıyı bilgilendirmek üzere ekranda görüntülenen modsuz iletişim kutusu işlevselliğini uygular.  
@@ -166,20 +166,20 @@ virtual BOOL Create(
  [in] [out] *pWndOwner*  
  Uyarı pencerenin sahibini belirtir. Bu sahibi ardından Masaüstü Uyarısı açılır penceresi ilişkin tüm bildirimler alacaksınız. Bu değer NULL olamaz.  
   
- [in] *uiDlgResID*  
- Uyarı pencere kaynak Kimliğini belirtir.  
+*uiDlgResID*<br/>
+[in] Uyarı pencere kaynak Kimliğini belirtir.  
   
- [in] *hMenu*  
- Kullanıcı menü düğmesine tıkladığında görüntüler menüyü belirtir. NULL ise, menü düğmesine görüntülenmez.  
+*hMenu*<br/>
+[in] Kullanıcı menü düğmesine tıkladığında görüntüler menüyü belirtir. NULL ise, menü düğmesine görüntülenmez.  
   
- [in] *ptPos*  
- Ekran koordinatları kullanarak, uyarı penceresi görüntüleyen ilk konumunu belirtir. Bu parametre ise (-1, -1) uyarı penceresi ekranının sağ alt köşesinde görüntülenir.  
+*ptPos*<br/>
+[in] Ekran koordinatları kullanarak, uyarı penceresi görüntüleyen ilk konumunu belirtir. Bu parametre ise (-1, -1) uyarı penceresi ekranının sağ alt köşesinde görüntülenir.  
   
- [in] *pRTIDlgBar*  
- Uyarı pencerenin istemci alanını kapsayan bir özel iletişim kutusu sınıfı için çalışma zamanı sınıf bilgileri.  
+*pRTIDlgBar*<br/>
+[in] Uyarı pencerenin istemci alanını kapsayan bir özel iletişim kutusu sınıfı için çalışma zamanı sınıf bilgileri.  
   
- [in] *params*  
- Bir uyarı pencere oluşturmak için kullanılan parametreleri belirtir.  
+*params*<br/>
+[in] Bir uyarı pencere oluşturmak için kullanılan parametreleri belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Uyarı pencere başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
@@ -311,8 +311,8 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdID*  
- Bu parametre kullanılmaz.  
+*uiCmdID*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Her zaman FALSE.  
@@ -330,8 +330,8 @@ virtual BOOL OnCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *wParam*  
- [in] *lParam*  
+*wParam*<br/>
+[in] [in] *lParam*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -371,8 +371,8 @@ void SetAnimationSpeed(UINT nSpeed);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nSpeed*  
- Yeni animasyon hızı, milisaniye cinsinden belirtir.  
+*nSpeed*<br/>
+[in] Yeni animasyon hızı, milisaniye cinsinden belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uyarı pencere için animasyon hızını ayarlamak için bu yöntemi çağırın. Varsayılan animasyon hızı 30 milisaniyedir.  
@@ -385,8 +385,8 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *türü*  
- Animasyon türü belirtir.  
+*Türü*<br/>
+[in] Animasyon türü belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Animasyon türü ayarlamak için bu yöntemi çağırın. Aşağıdaki değerlerden birini belirleyebilirsiniz.  
@@ -409,8 +409,8 @@ void SetAutoCloseTime(int nTime);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nZaman*  
- Uyarı pencere otomatik olarak kapatılmadan önce milisaniye cinsinden süre, sona erdiğinde.  
+*nZaman*<br/>
+[in] Uyarı pencere otomatik olarak kapatılmadan önce milisaniye cinsinden süre, sona erdiğinde.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı pencere ile etkileşime girmez, uyarı penceresi belirtilen zamandan sonra otomatik olarak kapatılır.  
@@ -423,8 +423,8 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSmallCaption*  
- Uyarı pencere bir küçük resim yazısı görüntüler belirtmek için TRUE; Aksi takdirde FALSE uyarı Pencereyi normal boyutuna açıklamalı alt yazı görüntüler belirtmek için.  
+*bSmallCaption*<br/>
+[in] Uyarı pencere bir küçük resim yazısı görüntüler belirtmek için TRUE; Aksi takdirde FALSE uyarı Pencereyi normal boyutuna açıklamalı alt yazı görüntüler belirtmek için.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Küçük veya normal boyut başlığı görüntülemek için bu yöntemi çağırın. Varsayılan olarak, küçük resim yazısı 7 piksel yüksekliğinde ' dir. Windows API işlevini çağırarak normal açıklamalı alt yazı boyutu edinebilirsiniz `GetSystemMetrics(SM_CYCAPTION)`.  
@@ -437,8 +437,8 @@ void SetTransparency(BYTE nTransparency);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nTransparency*  
- Saydamlık düzeyini belirtir. Bu değer, 0 ve 255, arasında olması gerekir. Değer arttıkça, daha fazla opak penceresi.  
+*nTransparency*<br/>
+[in] Saydamlık düzeyini belirtir. Bu değer, 0 ve 255, arasında olması gerekir. Değer arttıkça, daha fazla opak penceresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Açılan pencere saydamlık düzeyini ayarlamak için bu işlevi çağırın.  

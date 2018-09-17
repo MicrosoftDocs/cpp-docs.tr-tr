@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 10f5aebaf586581446293147f56dfbce8bd3519a
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 73b840eba35ec4291ffb6e57b17c9002b6c501a2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721662"
 ---
 # <a name="for-openmp"></a>(OpenMP) için
-Çalışmanın neden olan bir iş parçacıkları arasında bölünür için paralel bir bölge içinde döngü için.  
+Çalışmanın neden olan bir for döngüsü iş parçacıkları arasında bölünmesi için bir paralel bölgenin içinde.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -33,14 +33,13 @@ ms.locfileid: "33694868"
    for_statement  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+## <a name="arguments"></a>Arguments
+
+*Yan tümcesi*<br/>
+(İsteğe bağlı) Sıfır veya daha fazla tümceciği. Tarafından desteklenen yan tümce listesi için Açıklamalar bölümüne bakın **için**.  
   
- `clause` (isteğe bağlı)  
- Sıfır veya daha çok yan tümceleri. Tarafından desteklenen yan tümceleri bir listesi için Açıklamalar bölümüne bakın **için**.  
-  
- `for_statement`  
- Bir döngü için. Tanımsız davranış içinde kullanıcı kodu sonuçlanacak döngü dizini değişkeni dönüşür.  
+*for_statement*<br/>
+Bir for döngüsü. Tanımsız davranışa neden olur, kullanıcı kodu dizin değişkeni döngü dönüşür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  **İçin** yönergesi aşağıdaki OpenMP yan tümceleri destekler:  
@@ -51,7 +50,7 @@ ms.locfileid: "33694868"
   
 -   [nowait](../../../parallel/openmp/reference/nowait.md)  
   
--   [sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)  
+-   [Sıralı](../../../parallel/openmp/reference/ordered-openmp-directives.md)  
   
 -   [private](../../../parallel/openmp/reference/private-openmp.md)  
   
@@ -59,9 +58,9 @@ ms.locfileid: "33694868"
   
 -   [schedule](../../../parallel/openmp/reference/schedule.md)  
   
- Varsa **paralel** de belirtilirse, `clause` herhangi bir koşul tarafından kabul **paralel** veya **için** yönergeleri, dışında **nowait**.  
+ Varsa **paralel** de belirtilirse, `clause` herhangi yan tümcesi tarafından kabul edilebilen **paralel** veya **için** yönergeleri dışında **nowait**.  
   
- Daha fazla bilgi için bkz: [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  
+ Daha fazla bilgi için [2.4.1 yapı için](../../../parallel/openmp/2-4-1-for-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

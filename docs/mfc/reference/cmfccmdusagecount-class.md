@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 44172ffdf7985b7ab304e232eb03b859313df6bc
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: a1e28b9c28823e77244bc6e686db163e5110a8fa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37853770"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719972"
 ---
 # <a name="cmfccmdusagecount-class"></a>CMFCCmdUsageCount sınıfı
 Windows iletileri, kullanıcı bir menüden bir öğe seçtiğinde gibi kullanım sayısını izler.  
@@ -104,7 +104,7 @@ void AddCmd(UINT uiCmd);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *uiCmd*|Artırılacak komut sayacı belirtir.|  
+|*uiCmd*|[in] Artırılacak komut sayacı belirtir.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem yeni bir giriş komut sayıları harita yapısına ekler `m_CmdUsage`, girdisi zaten mevcut değilse.  
@@ -129,7 +129,7 @@ UINT GetCount(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *uiCmd*|Alınacak komut sayaç kimliği.|  
+|*uiCmd*|[in] Alınacak komut sayaç kimliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen komut kimliğiyle ilişkili kullanım sayısı  
@@ -161,7 +161,7 @@ BOOL IsFreqeuntlyUsedCmd(UINT uiCmd) const;
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *uiCmd*|Denetlemek için komutu belirtir.|  
+|*uiCmd*|[in] Denetlemek için komutu belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Komut sık kullanılan olursa sıfır dışı; Aksi durumda 0.  
@@ -193,7 +193,7 @@ virtual void Serialize(CArchive& ar);
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *ar*|A `CArchive` veya seri hale getirmek için nesne.|  
+|*ar*|[in] A `CArchive` veya seri hale getirmek için nesne.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem komut sayıları harita yapısını serileştiren `m_CmdUsage`ve toplam komut kullanım `m_nTotalUsage`, ya da belirtilen arşive sayaç.  
@@ -214,8 +214,8 @@ static BOOL __stdcall SetOptions(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *nStartCount*|İzlenen tüm komutların yeni ilk sayısı.|  
-|[in] *nMinUsagePercentage*|Yeni en az kullanım yüzdesi.|  
+|*nStartCount*|[in] İzlenen tüm komutların yeni ilk sayısı.|  
+|*nMinUsagePercentage*|[in] Yeni en az kullanım yüzdesi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa, FALSE ise TRUE *nMinUsagePercentage* parametredir 100'değerine eşit veya daha büyük.  

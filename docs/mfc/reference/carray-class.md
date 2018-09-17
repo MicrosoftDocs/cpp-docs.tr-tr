@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53089439c3857dd947a263a80f3330aad3f03f7b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: f59cc50e864a241608e460a45f3336e7cb89ecbb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37339444"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717645"
 ---
 # <a name="carray-class"></a>CArray sınıfı
 C dizilerine olan ancak dinamik olarak azaltmak ve gerektikçe büyütün dizilerini destekler.  
@@ -69,12 +69,13 @@ template <class TYPE, class ARG_TYPE = const TYPE&>
 class CArray : public CObject  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- *TÜRÜ*  
- Şablon parametresi dizide depolanan nesnelerin türünü belirtir. *TÜR* tarafından döndürülen bir parametredir `CArray`.  
-  
- *ARG* *_* *TÜRÜ*  
- Şablon parametresi dizisinde depolanan nesnelere erişmek için kullanılan bağımsız değişken türü belirtir. Genellikle bir başvuru *türü*. *ARG_TYPE* geçirilen bir parametre `CArray`.  
+#### <a name="parameters"></a>Parametreler
+
+*TÜRÜ*<br/>
+Şablon parametresi dizide depolanan nesnelerin türünü belirtir. *TÜR* tarafından döndürülen bir parametredir `CArray`.
+
+*ARG_TYPE*<br/>
+Şablon parametresi dizisinde depolanan nesnelere erişmek için kullanılan bağımsız değişken türü belirtir. Genellikle bir başvuru *türü*. *ARG_TYPE* geçirilen bir parametre `CArray`.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -137,7 +138,7 @@ class CArray : public CObject
  `CArray`  
   
 ## <a name="requirements"></a>Gereksinimler  
- `Header:` afxtempl.h  
+**Başlık:** afxtempl.h  
   
 ##  <a name="add"></a>  CArray::Add  
  1 ile dizi büyüyen bir dizinin sonuna yeni bir öğe ekler.  

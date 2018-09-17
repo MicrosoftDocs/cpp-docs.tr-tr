@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e49fcc87c4c074494164a085e01581077bbfe118
-ms.sourcegitcommit: 3614b52b28c24f70d90b20d781d548ef74ef7082
+ms.openlocfilehash: 3c4ec16ba621ee268be65bfee11798fb4b358673
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38953868"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720297"
 ---
 # <a name="ltvectorgt"></a>&lt;vektör&gt;
 
@@ -83,17 +83,17 @@ void swap (
 
 ### <a name="parameters"></a>Parametreler
 
-*Türü*  
- Şablon parametresi için vektör içinde depolanan verinin türü.
+*Türü*<br/>
+Şablon parametresi için vektör içinde depolanan verinin türü.
 
-*Ayırıcı*  
- Şablon parametresi için bellek ayırmayı ve ayırmayı kaldırma için sorumlu saklı ayırıcı nesnesini.
+*Ayırıcı*<br/>
+Şablon parametresi için bellek ayırmayı ve ayırmayı kaldırma için sorumlu saklı ayırıcı nesnesini.
 
-*Sol*  
- Bir karşılaştırma işlemi ilk (soldaki) vektörü
+*Sol*<br/>
+Bir karşılaştırma işlemi ilk (soldaki) vektörü
 
-*sağ*  
- Bir karşılaştırma işleminde ikinci (sağdaki) vektör.
+*sağ*<br/>
+Bir karşılaştırma işleminde ikinci (sağdaki) vektör.
 
 ### <a name="operators"></a>İşleçler
 

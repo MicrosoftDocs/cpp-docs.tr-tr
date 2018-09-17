@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd8189f15f38d5d3008c1f20959573ca9d2337c9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 8df70d0ba5c0f957620ee204256b6c92ce4c01f1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466373"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722078"
 ---
 # <a name="llrshift"></a>__ll_rshift
 **Microsoft'a özgü**  
@@ -40,11 +40,11 @@ __int64 __ll_rshift(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Mask`  
- Sağa kaydırmak için 64-bit tamsayı değeri.  
+*Maskesi*<br/>
+[in] Sağa kaydırmak için 64-bit tamsayı değeri.  
   
- [in] `nBit`  
- 64 x64 modül ve 32 x86 modül kaydırılacak bit sayısı.  
+*nBit*<br/>
+[in] 64 x64 modül ve 32 x86 modül kaydırılacak bit sayısı.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Maske kaydırılacak tarafından `nBit` bitleri.  

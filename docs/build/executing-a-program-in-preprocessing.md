@@ -1,5 +1,5 @@
 ---
-title: Bir programı Önişlemde yürütme | Microsoft Docs
+title: Programı Önişlemde yürütme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da87a87a2e97736d202b7ddb9be2dbec54fed44d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e2b0571e67e7c5d24cf31dce6fce548735cad966
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32367205"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721467"
 ---
 # <a name="executing-a-program-in-preprocessing"></a>Programı Önişlemde Yürütme
-Ön işleme sırasında bir komutunun çıkış kodu kullanmak için köşeli parantez ([]) içindeki tüm bağımsız değişkenler ile komutu belirtin. Komut yürütülmeden önce makroların genişletilir. NMAKE komutu belirtimi ön işleme denetlemek için bir ifadede kullanılan komutunun çıkış kodu ile yerini alır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyası Ön İşlemlerindeki İfadeler](../build/expressions-in-makefile-preprocessing.md)
+
+Ön işleme sırasında bir komutunun çıkış kodu kullanmak için köşeli ayraç ([]) içindeki tüm bağımsız değişkenleri ile komutu belirtin. Komut yürütülmeden önce tüm makrolar genişletilir. NMAKE komut belirtimi bir ifadede, ön işleme denetlemek için kullanılabilir komut çıkış kodu ile yerini alır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyası Ön İşlemlerindeki İfadeler](../build/expressions-in-makefile-preprocessing.md)

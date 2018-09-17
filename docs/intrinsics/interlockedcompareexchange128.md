@@ -18,17 +18,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e5433e2d1ddf94f23a3f483a8857e3032c27be3
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7e7499bdb615edfb6c03c54ba7fe8272d0fa6b26
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465631"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721129"
 ---
 # <a name="interlockedcompareexchange128"></a>_InterlockedCompareExchange128
+
 **Microsoft'a özgü**  
   
- 128-bit birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.  
+128-bit birbirine kenetlenmiş karşılaştırma ve değişim gerçekleştirir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -42,17 +43,17 @@ unsigned char _InterlockedCompareExchange128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out içinde] `Destination`  
- İki 64-bit tamsayı dizisi hedef işaretçisine 128-bit alanı olarak kabul edilir. Hedef veri 16 baytlık genel koruma hatası kaçınmak için hizalı olmalıdır.  
+*Hedef*<br/>
+[out içinde] İki 64-bit tamsayı dizisi hedef işaretçisine 128-bit alanı olarak kabul edilir. Hedef veri 16 baytlık genel koruma hatası kaçınmak için hizalı olmalıdır.  
   
- [in] `ExchangeHigh`  
- Hedef yüksek bölümüyle değiştirilen 64-bit bir tamsayı.  
+*ExchangeHigh*<br/>
+[in] Hedef yüksek bölümüyle değiştirilen 64-bit bir tamsayı.  
   
- [in] `ExchangeLow`  
- Hedef düşük bölümüyle değiştirilen 64-bit bir tamsayı.  
+*ExchangeLow*<br/>
+[in] Hedef düşük bölümüyle değiştirilen 64-bit bir tamsayı.  
   
- [out içinde] `ComparandResult`  
- İşaretçi (128-bit alanı olarak kabul) iki 64-bit tamsayı dizisi hedef karşılaştırmak için.  Çıkışta, bu hedef özgün değeri ile yazılır.  
+*ComparandResult*<br/>
+[out içinde] İşaretçi (128-bit alanı olarak kabul) iki 64-bit tamsayı dizisi hedef karşılaştırmak için.  Çıkışta, bu hedef özgün değeri ile yazılır.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  128-bit karşılaştırılan hedef özgün değeri eşitse 1. `ExchangeHigh` ve `ExchangeLow` 128-bit hedef üzerine yazın.  
@@ -128,8 +129,9 @@ int main(void)
 BigInt.Int[1] = 34, BigInt.Int[0] = 12  
 ```  
   
-**END Microsoft özgü**  
- Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
+**END Microsoft özgü**
+
+Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici iç bilgileri](../intrinsics/compiler-intrinsics.md)   

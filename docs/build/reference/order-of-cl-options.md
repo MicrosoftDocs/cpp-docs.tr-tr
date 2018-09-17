@@ -16,15 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 165e20eefecd20ad9dec9e01b38c5eaa7926e4eb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 3ffe9a440396df14823775db335e52bca6cacdb3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372815"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725029"
 ---
 # <a name="order-of-cl-options"></a>CL Seçenekleri Sırası
-Seçenekler CL komut satırında son gerçekleşmelidir/Link seçeneği dışında herhangi bir yerde görünür. Belirtilen seçeneklerle derleyici başlar [CL ortam değişkeni](../../build/reference/cl-environment-variables.md) ve ardından komut satırını soldan sağa okur — bunları bulduğu sırayla komut dosyaları işleme. Her seçenek komut satırında tüm dosyalar için geçerlidir. CL çakışan seçenekleri karşılaşırsa en sağdaki seçeneğini kullanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Komut Satırı Sözdizimi](../../build/reference/compiler-command-line-syntax.md)
+
+Seçenekleri, CL komut satırında son gerçekleşmelidir/Link seçeneği dışında herhangi bir yerde görünebilir. Belirtilen seçeneklerle derleyici başlar [CL ortam değişkeninde](../../build/reference/cl-environment-variables.md) ve komut satırı soldan sağa okur; bunları bulduğu sırada komut dosyaları işleme. Her seçeneğin komut satırında tüm dosyalar için geçerlidir. CL çakışan seçenekler karşılaşırsa, en sağdaki seçeneğini kullanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Komut Satırı Sözdizimi](../../build/reference/compiler-command-line-syntax.md)

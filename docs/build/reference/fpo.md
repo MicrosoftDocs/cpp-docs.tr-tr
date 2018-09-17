@@ -18,22 +18,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e0c761dc34d1b9dfc88b31754e00dbe77bffe1c
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 957782d9f360ad5d7a16c46c6b65ae19dd0adec8
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372489"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717158"
 ---
 # <a name="fpo"></a>/FPO
-```  
-/FPO  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek çerçeve işaretçisi en iyi duruma getirme (FPO) kayıtları görüntüler.  
-  
- Yalnızca [/HEADERS](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalarda kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)
+
+```
+/FPO
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, çerçeve işaretçisi iyileştirme (FPO) kayıtları görüntüler.
+
+Yalnızca [OPTIONAL](../../build/reference/headers.md) DUMPBIN seçeneği ile üretilen dosyalar kullanıma [/GL](../../build/reference/gl-whole-program-optimization.md) derleyici seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DUMPBIN Seçenekleri](../../build/reference/dumpbin-options.md)

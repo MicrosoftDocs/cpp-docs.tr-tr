@@ -1,5 +1,5 @@
 ---
-title: Gecikmeli yüklenen DLL'i kaldırma | Microsoft Docs
+title: Bir Gecikmeli yüklenen DLL'i kaldırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,58 +15,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 724ee2ac3987c855f5e2102dee35d12785726641
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fa7b9652c37b6c4e841a798dae3cfeb69779b5ff
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375220"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719933"
 ---
 # <a name="unloading-a-delay-loaded-dll"></a>Gecikmeli Yüklenen DLL'i Kaldırma
-Varsayılan sağlanan Gecikmeli Yükleme Yardımcısı gecikme yükü tanımlayıcıları bir işaretçi ve özgün içeri aktarma adres tablosunu (IAT) bir kopyasını pUnloadIAT alanına sahip olup olmadığını denetler. Bu durumda, onu bir işaretçi alma gecikme tanımlayıcısı listesinde kaydeder. Bu DLL'i açıkça kaldırma desteği adıyla DLL bulmak yardımcı işlevini etkinleştirir.  
-  
- Gecikmeli yüklenen DLL'i açıkça kaldırma için İşlevler ve ilişkili yapıları şunlardır:  
-  
-```  
-//  
-// Unload support from delayimp.h  
-//  
-  
-// routine definition; takes a pointer to a name to unload  
-  
-ExternC  
-BOOL WINAPI  
-__FUnloadDelayLoadedDLL2(LPCSTR szDll);  
-  
-// structure definitions for the list of unload records  
-typedef struct UnloadInfo * PUnloadInfo;  
-typedef struct UnloadInfo {  
-    PUnloadInfo     puiNext;  
-    PCImgDelayDescr pidd;  
-    } UnloadInfo;  
-  
-// from delayhlp.cpp  
-// the default delay load helper places the unloadinfo records in the   
-// list headed by the following pointer.  
-ExternC  
-PUnloadInfo __puiHead;  
-```  
-  
- UnloadInfo yapısı kullanan bir C++ sınıfı kullanılarak uygulanır **LocalAlloc** ve **LocalFree** uygulamaları kendi işleci olarak **yeni** and işleci  **silme** sırasıyla. Bu seçenekler listesinde __puiHead listesi head kullanarak bir standart bağlantılı tutulur.  
-  
- Arama __FUnloadDelayLoadedDLL adını bulmak deneyecek (tam bir eşleşme gereklidir) yüklenen DLL'ler listesinde sağlayın. PUnloadIAT IAT kopyasını bulundu, kopyalanır dönüştürücü işaretçileri geri yüklemek için çalışan IAT üst kitaplığı ile serbest **FreeLibrary**, eşleşen **UnloadInfo** kayıt bağlantısız Listenin silinmiş ve doğru döndürülür.  
-  
- İşlev __FUnloadDelayLoadedDLL2 bağımsız değişkeni büyük küçük harfe duyarlıdır. Örneğin, şunu belirtmeniz gerekir:  
-  
-```  
-__FUnloadDelayLoadedDLL2("user32.DLL");  
-```  
-  
- ve değil:  
-  
-```  
-__FUnloadDelayLoadedDLL2("User32.DLL");.  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yardımcı İşlevini Anlama](understanding-the-helper-function.md)
+
+Varsayılan olarak sağlanan gecikme yük yardımcı gecikme yükü tanımlayıcıları pUnloadIAT alanında bir işaretçi ve orijinal içeri aktarma adres tablosunda (IAT) bir kopyasını olup olmadığını denetler. Bu durumda, bir işaretçi alma gecikme tanımlayıcı listesinde kaydeder. Bu, söz konusu DLL'i açıkça kaldırma desteklemek için ad tarafından DLL bulmak yardımcı işlevini sağlar.
+
+Gecikmeli yüklenen DLL'i açıkça kaldırma işlevlerini ve ilişkili yapıları şunlardır:
+
+```cpp
+//
+// Unload support from delayimp.h
+//
+
+// routine definition; takes a pointer to a name to unload
+
+ExternC
+BOOL WINAPI
+__FUnloadDelayLoadedDLL2(LPCSTR szDll);
+
+// structure definitions for the list of unload records
+typedef struct UnloadInfo * PUnloadInfo;
+typedef struct UnloadInfo {
+    PUnloadInfo     puiNext;
+    PCImgDelayDescr pidd;
+    } UnloadInfo;
+
+// from delayhlp.cpp
+// the default delay load helper places the unloadinfo records in the
+// list headed by the following pointer.
+ExternC
+PUnloadInfo __puiHead;
+```
+
+UnloadInfo yapısını kullanan bir C++ sınıfı kullanılarak uygulanan **LocalAlloc** ve **LocalFree** uygulamalarını, işleci olarak **yeni** ve işleci  **silme** sırasıyla. Bu seçenekler, listenin başındaki __puiHead kullanarak bir standart bağlantılı listesinde saklanır.
+
+Adı bulmak arama __FUnloadDelayLoadedDLL deneyecek (tam bir eşleşme gereklidir) yüklü DLL'leri listesinde sağlayın. PUnloadIAT içinde IAT kopyası bulundu, kopyalanıp kopyalanmadığını dönüştürücü işaretçileri geri yüklemek için çalışan IAT üst, kitaplığı ile serbest **FreeLibrary**, eşleşen **UnloadInfo** kayıt bağlantısız Liste silindi ve TRUE olarak döndürülür.
+
+Bağımsız değişken işlev __FUnloadDelayLoadedDLL2 büyük/küçük harfe duyarlıdır. Örneğin, şunu belirtmeniz gerekir:
+
+```cpp
+__FUnloadDelayLoadedDLL2("user32.DLL");
+```
+
+ve değil:
+
+```cpp
+__FUnloadDelayLoadedDLL2("User32.DLL");.
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yardımcı İşlevini Anlama](understanding-the-helper-function.md)

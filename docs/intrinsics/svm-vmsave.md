@@ -17,12 +17,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50be44d612f44586ff8e6c8e953efa0b1fa90948
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: bc66784a9f5b6c953516bb30271c973779340e09
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680643"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722858"
 ---
 # <a name="svmvmsave"></a>__svm_vmsave
 **Microsoft'a özgü**  
@@ -41,7 +41,7 @@ void __svm_vmsave(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] `VmcbPhysicalAddress`|VMCB fiziksel adresi.|  
+|*VmcbPhysicalAddress*|[in] VMCB fiziksel adresi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
  `__svm_vmsave` İşlev, eşdeğer `VMSAVE` makine yönergesi. Bu işlev, bir konuk işletim sistemi ve uygulamaları ile bir konağın sanal makine İzleyici etkileşimi destekler. Belge için daha fazla bilgi için arama "AMD64 mimarisi Programcı el ile birim 2: Sistem programlama" belge numarasını 24593, düzeltme 3.11 ya da en üstü [AMD Corporation](https://developer.amd.com/resources/developer-guides-manuals/) site.  

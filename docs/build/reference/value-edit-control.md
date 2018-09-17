@@ -14,15 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a7364a294dbb45d28c6168dd8c8939372093e91
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 823306fa95b2a4a317afef8aed21cd361a773be3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373822"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722312"
 ---
 # <a name="value-edit-control"></a>Değer Düzenleme Denetimi
-Denetimi kullanmak için bir değer girin, panodan yapıştırın veya sürükleyip bu düzenleme denetimi ayıklayıcıya gelen bırakın. Onaltılık veya ondalık biçiminde değeri girin ve ardından **Ara**. Onaltılık değerler 0 x gelmelidir; Geçerli karakterlerdir 0-9, A-F ve a-f. Ondalık değer eksi işareti (-); öncesinde Geçerli karakterler 0-9 olur.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [ERRLOOK Başvurusu](../../build/reference/errlook-reference.md)
+
+Denetim kullanmak için bir değer girin, panodan, yapıştırın veya sürükleyip bu düzenleme denetimine hata ayıklayıcısında bırakın. Değeri, onaltılık veya ondalık biçiminde girin ve ardından **Ara**. Onaltılık değerler 0 x gelmelidir; Geçerli karakterler: 0-9, A-F ve a-f. Ondalık değer eksi işareti (-); tümceniz Geçerli karakterler 0-9'dur.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[ERRLOOK Başvurusu](../../build/reference/errlook-reference.md)

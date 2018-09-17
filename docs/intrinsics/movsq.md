@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0231c2514805479c0ec999698ebd027ab51e3119
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 72ed2d47c995e19bdfa473c0abd79034e3e51430
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466064"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720947"
 ---
 # <a name="movsq"></a>__movsq
 **Microsoft'a özgü**  
@@ -41,14 +41,14 @@ void __movsq(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [out] `Dest`  
- İşlemin hedefi.  
+*Hedef*<br/>
+[out] İşlemin hedefi.  
   
- [in] `Source`  
- İşlem kaynağı.  
+*Kaynak*<br/>
+[in] İşlem kaynağı.  
   
- [in] `Count`  
- Kopyalanacak quadwords sayısı.  
+*Sayısı*<br/>
+[in] Kopyalanacak quadwords sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

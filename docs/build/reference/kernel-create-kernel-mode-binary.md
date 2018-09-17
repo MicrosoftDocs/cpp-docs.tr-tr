@@ -15,94 +15,98 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 20ea3423acd19a70c5b7b759b9923b0132e04af0
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: 02c5d8cff2d57a9dc8bfac31c4806a976d58859d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466342"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716800"
 ---
 # <a name="kernel-create-kernel-mode-binary"></a>/kernel (Çekirdek Modu İkilisi Oluştur)
-Windows çekirdeğinde yürütülebilecek bir ikili oluşturur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/kernel[-]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- **/ Kernel**  
- Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kümesi kullanarak bağlı.  
-  
- **/Kernel-**  
- Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kullanmadan bağlı.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Var olan hiçbir `#pragma` eşdeğer bu seçimi denetlemek için.  
-  
- Belirtme **/Kernel** seçeneği söyler derleyicide ve bağlayıcıda hangi dil özellikleri çekirdek modunda izin verilen yönetmeye kalkarsa ve için benzersiz olan çalışma zamanı kararsızlığı engellemek için yeterli etkileyici gücüyle sahip olduğunuzdan emin olun Çekirdek modu C++. Bu, çekirdek modunda kesintiye uğratıp C++ dil özelliklerinin kullanımını yasaklanması ve Uyarılar için olası kesintiye ancak devre dışı bırakılamaz, C++ dil özellikleri sağlayarak gerçekleştirilir.  
-  
- **/Kernel** seçeneği bir derleme derleyici ve bağlayıcı aşamaları için geçerlidir ve proje düzeyinde ayarlanır. Geçirmek **/Kernel** derleyiciye elde edilen ikili bağladıktan sonra Windows çekirdeğe yükleneceğini göstermek için anahtar. Derleyici, çekirdek ile uyumlu olan bir alt kümesi için C++ dil özelliklerinin spektrumun sınırlar.  
-  
- Aşağıdaki tabloda derleyici davranışında değişiklik olduğunda **/Kernel** belirtilir.  
-  
-|Davranış türü|**/ Kernel** davranışı|  
-|-------------------|---------------------------|  
-|C++ Özel Durum İşleme|Devre dışı. Tüm örneklerini `throw` ve `try` anahtar sözcükler, bir derleyici hatası yayma (özel durum belirtimi dışında `throw()`). Hayır **/EH** seçenekleri ile uyumludur **/Kernel**, dışında **/EH-**.|  
-|RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükler, bir derleyici hatası sürece yayma `dynamic_cast` statik olarak kullanılır.|  
-|`new` ve `delete`|Açıkça tanımlamanız gerekir `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan bir tanım sağlamanız.|  
-  
- Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından kabul aynı semantiğe sahip. Emin olmak istiyorsanız `__forceinline` inlining'i niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman öğrenmek için etkin `__forceinline` işlevi satır içine alınmış değil.  
-  
- Derleyici geçirilen zaman **/Kernel** anahtarı, bunu önceden belirler adlı önişlemci makrosu `_KERNEL_MODE` ve değere sahip **1**. Kod yürütme ortamı kullanıcı modunda veya çekirdek modunda olduğuna göre koşullu olarak derlemek için bunu kullanabilirsiniz. Örneğin, aşağıdaki kodu, çekirdek modu yürütme için derlendiğinde sınıfı alınamayan bellek segmentinde olması gerektiğini belirtir.  
-  
-```cpp  
-#ifdef _KERNEL_MODE  
-#define NONPAGESECTION __declspec(code_seg("$kerneltext$"))  
-#else  
-#define NONPAGESECTION  
-#endif  
-  
-class NONPAGESECTION MyNonPagedClass  
-{  
+
+Windows çekirdeğinde yürütülebilecek bir ikili oluşturur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/kernel[-]
+```
+
+## <a name="arguments"></a>Arguments
+
+**/ Kernel**<br/>
+Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kümesi kullanarak bağlı.
+
+**/Kernel-**<br/>
+Geçerli projede kod derlenmiş ve çekirdek modunda çalışacak kodu özgü C++ dil kuralları kullanmadan bağlı.
+
+## <a name="remarks"></a>Açıklamalar
+
+Var olan hiçbir `#pragma` eşdeğer bu seçimi denetlemek için.
+
+Belirtme **/Kernel** seçeneği söyler derleyicide ve bağlayıcıda hangi dil özellikleri çekirdek modunda izin verilen yönetmeye kalkarsa ve için benzersiz olan çalışma zamanı kararsızlığı engellemek için yeterli etkileyici gücüyle sahip olduğunuzdan emin olun Çekirdek modu C++. Bu, çekirdek modunda kesintiye uğratıp C++ dil özelliklerinin kullanımını yasaklanması ve Uyarılar için olası kesintiye ancak devre dışı bırakılamaz, C++ dil özellikleri sağlayarak gerçekleştirilir.
+
+**/Kernel** seçeneği bir derleme derleyici ve bağlayıcı aşamaları için geçerlidir ve proje düzeyinde ayarlanır. Geçirmek **/Kernel** derleyiciye elde edilen ikili bağladıktan sonra Windows çekirdeğe yükleneceğini göstermek için anahtar. Derleyici, çekirdek ile uyumlu olan bir alt kümesi için C++ dil özelliklerinin spektrumun sınırlar.
+
+Aşağıdaki tabloda derleyici davranışında değişiklik olduğunda **/Kernel** belirtilir.
+
+|Davranış türü|**/ Kernel** davranışı|
+|-------------------|---------------------------|
+|C++ Özel Durum İşleme|Devre dışı. Tüm örneklerini `throw` ve `try` anahtar sözcükler, bir derleyici hatası yayma (özel durum belirtimi dışında `throw()`). Hayır **/EH** seçenekleri ile uyumludur **/Kernel**, dışında **/EH-**.|
+|RTTI|Devre dışı. Tüm örneklerini `dynamic_cast` ve `typeid` anahtar sözcükler, bir derleyici hatası sürece yayma `dynamic_cast` statik olarak kullanılır.|
+|`new` ve `delete`|Açıkça tanımlamanız gerekir `new()` veya `delete()` işleci; derleyici ne çalışma zamanı varsayılan bir tanım sağlamanız.|
+
+Çağırma kuralları, özel [/GS](../../build/reference/gs-buffer-security-check.md) derleme seçeneği ve tüm iyileştirmeler kullandığınızda verilen **/Kernel** seçeneği. Satır içi kullanım büyük ölçüde etkilenmez tarafından **/Kernel**, derleyici tarafından kabul aynı semantiğe sahip. Emin olmak istiyorsanız `__forceinline` inlining'i niteleyicisi dikkate alınır, bu uyarı emin olun [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) belirli bir zaman öğrenmek için etkin `__forceinline` işlevi satır içine alınmış değil.
+
+Derleyici geçirilen zaman **/Kernel** anahtarı, bunu önceden belirler adlı önişlemci makrosu `_KERNEL_MODE` ve değere sahip **1**. Kod yürütme ortamı kullanıcı modunda veya çekirdek modunda olduğuna göre koşullu olarak derlemek için bunu kullanabilirsiniz. Örneğin, aşağıdaki kodu, çekirdek modu yürütme için derlendiğinde sınıfı alınamayan bellek segmentinde olması gerektiğini belirtir.
+
+```cpp
+#ifdef _KERNEL_MODE
+#define NONPAGESECTION __declspec(code_seg("$kerneltext$"))
+#else
+#define NONPAGESECTION
+#endif
+
+class NONPAGESECTION MyNonPagedClass
+{
    // ...
-};  
-```  
-  
- Bazı hedef mimarisinin aşağıdaki birleşimler ve **/arch** seçeneği ile kullanıldığında bir hata oluşturmak **/Kernel**:  
-  
--   **/ arch: {SSE&#124;SSE2&#124;AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86.  
-  
--   **/ arch:** desteklenmeyen **/Kernel** x64.  
-  
- İle oluşturma **/Kernel** ayrıca geçirir **/Kernel** bağlayıcıya. Her bağlayıcı davranışı bunun nasıl etkilediği şöyledir:  
-  
--   Artımlı bağlamayı devre dışı bırakıldı. Eklerseniz **/ Incremental** komut satırına, bağlayıcı bu önemli bir hata verir:  
-  
-     **BAĞLANTI: önemli hata LNK1295: '/ INCREMENTAL' ile uyumlu değil ' / çekirdek ' belirtimi; '/ INCREMENTAL' olmadan bağlayın**  
-  
--   Bunu kullanarak derlenen olup olmadığını görmek için her nesne dosyası (veya herhangi bir eklenen arşiv üyesi statik kitaplıklarından) bağlayıcı inceler **/Kernel** seçeneği ancak değildi. Herhangi bir örneği, bu ölçütü karşılaması durumunda bağlayıcı yine de başarılı bir şekilde bağlar ancak aşağıdaki tabloda gösterildiği gibi bir uyarı, sorunu.  
-  
-    ||**/ Kernel** obj|**/Kernel-** obj, MASM obj veya cvtresed|Karışık **/Kernel** ve **/kernel-** objs|  
-    |-|----------------------|-----------------------------------------------|-------------------------------------------------|  
-    |**bağlantı/Kernel**|Evet|Evet|Uyarıyla LNK4257 Evet|  
-    |**Bağlantı**|Evet|Evet|Evet|  
-  
-     **LNK4257 bağlama nesnesi/Kernel ile derlenmemiş; Görüntü çalışmayabilir**  
-  
- **/Kernel** seçeneği ve **Driver/Driver** seçeneği bağımsız olarak çalışır ve diğer ne etkiler.  
-  
-### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>/ Kernel derleyici seçeneğini Visual Studio'da ayarlamak için  
-  
-1.  Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **C/C++** klasör.  
-  
-3.  Seçin **komut satırı** özellik sayfası.  
-  
-4.  İçinde **ek seçenekler** kutusunda `/kernel` veya `/kernel-`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+};
+```
+
+Bazı hedef mimarisinin aşağıdaki birleşimler ve **/arch** seçeneği ile kullanıldığında bir hata oluşturmak **/Kernel**:
+
+- **/ arch: {SSE&#124;SSE2&#124;AVX}** x86 üzerinde desteklenmez. Yalnızca **/arch:IA32** ile desteklenen **/Kernel** x86.
+
+- **/ arch:** desteklenmeyen **/Kernel** x64.
+
+İle oluşturma **/Kernel** ayrıca geçirir **/Kernel** bağlayıcıya. Her bağlayıcı davranışı bunun nasıl etkilediği şöyledir:
+
+- Artımlı bağlamayı devre dışı bırakıldı. Eklerseniz **/ Incremental** komut satırına, bağlayıcı bu önemli bir hata verir:
+
+   **BAĞLANTI: önemli hata LNK1295: '/ INCREMENTAL' ile uyumlu değil ' / çekirdek ' belirtimi; '/ INCREMENTAL' olmadan bağlayın**
+
+- Bunu kullanarak derlenen olup olmadığını görmek için her nesne dosyası (veya herhangi bir eklenen arşiv üyesi statik kitaplıklarından) bağlayıcı inceler **/Kernel** seçeneği ancak değildi. Herhangi bir örneği, bu ölçütü karşılaması durumunda bağlayıcı yine de başarılı bir şekilde bağlar ancak aşağıdaki tabloda gösterildiği gibi bir uyarı, sorunu.
+
+   ||**/ Kernel** obj|**/Kernel-** obj, MASM obj veya cvtresed|Karışık **/Kernel** ve **/kernel-** objs|
+   |-|----------------------|-----------------------------------------------|-------------------------------------------------|
+   |**bağlantı/Kernel**|Evet|Evet|Uyarıyla LNK4257 Evet|
+   |**Bağlantı**|Evet|Evet|Evet|
+
+   **LNK4257 bağlama nesnesi/Kernel ile derlenmemiş; Görüntü çalışmayabilir**
+
+**/Kernel** seçeneği ve **Driver/Driver** seçeneği bağımsız olarak çalışır ve diğer ne etkiler.
+
+### <a name="to-set-the-kernel-compiler-option-in-visual-studio"></a>/ Kernel derleyici seçeneğini Visual Studio'da ayarlamak için
+
+1. Açık **özellik sayfaları** iletişim kutusu için proje. Daha fazla bilgi için [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **C/C++** klasör.
+
+1. Seçin **komut satırı** özellik sayfası.
+
+1. İçinde **ek seçenekler** kutusunda `/kernel` veya `/kernel-`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

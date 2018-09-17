@@ -15,77 +15,77 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 63d3437a08e3c8b69b564176e0f377566ab491e6
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: d224f2551de968cef5dea5698099ad564b7894fb
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34704246"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717450"
 ---
 # <a name="optimization-best-practices"></a>En iyi uygulamaları iyileştirme
 
-Bu belge Visual C++'ta iyileştirme için bazı en iyi uygulamaları açıklar.
+Bu belgede, Visual C++'ta iyileştirme için bazı en iyi uygulamalar açıklanmaktadır.
 
 ## <a name="compiler-and-linker-options"></a>Derleyici ve bağlayıcı seçenekleri
 
 ### <a name="profile-guided-optimization"></a>Profil temelli iyileştirme
 
-Visual C++ destekler *profil temelli iyileştirme* (PGO). Bu en iyi duruma getirme sürücü uygulamasının daha sonraki iyileştirmesi için profil verileri eğitim yürütmeleri uygulama izleme eklenmiş bir sürümünü kullanır. Her geliştiricinin kullanan bir şey olmayabilir şekilde PGO kullanarak zaman alıcı olabilir, ancak bir ürün son yayın derlemesi için PGO kullanmanızı öneririz. Daha fazla bilgi için bkz: [Profile-Guided en iyi duruma getirme](../../build/reference/profile-guided-optimizations.md).
+Visual C++ destekler *profil temelli iyileştirme* (PGO). Bu iyileştirme uygulamasının daha sonraki iyileştirme sürücü için profil verileri eğitim yürütmeleri uygulamanın belgelenmiş bir sürümünü kullanır. PGO kullanılarak zaman alıcı olabilir, böylece her geliştiricinin kullanan bir şey olmayabilir, ancak bir ürün için son sürüm yapılandırması PGO kullanmanızı öneririz. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../../build/reference/profile-guided-optimizations.md).
 
-Ayrıca, *bütün Program iyileştirmesi* (bağlantı zamanı kodu oluşturma da bilir) ve **/O1** ve **O2** en iyi duruma getirme geliştirildi. Genel olarak, aşağıdaki seçeneklerden birini derlenmiş bir uygulamanın bir önceki derleyicisi ile derlenmiş aynı uygulamanın daha hızlı olacaktır. 
+Ayrıca, *tüm Program iyileştirmesi* (bağlama zamanı kod oluşturmayı de bildiği) ve **/O1** ve **/O2** iyileştirmeleri geliştirildi. Genel olarak, aşağıdaki seçeneklerden birini ile derlenen bir uygulamayı aynı uygulamanın daha önceki bir derleyici ile derlenmiş kıyasla daha hızlı olacaktır.
 
-Daha fazla bilgi için bkz: [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) ve [/O1, O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md).
+Daha fazla bilgi için [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md) ve [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md).
 
 ### <a name="which-level-of-optimization-to-use"></a>Hangi düzeyde kullanmak için en iyi duruma getirme
 
-Mümkünse, son sürüm derlemeleri profil temeli iyileştirmeler ile derlenmesi gerekir. Bu izleme eklenmiş derlemeleri çalıştırmak veya senaryoları için erişim olmaması için yetersiz altyapı olup olmadığını nedeniyle PGO ile oluşturmak mümkün değilse, ardından bütün Program iyileştirmesi binada öneririz.
+Bu tamamen Mümkünse, son yayın derlemeleri profil destekli iyileştirmeler ile derlenmelidir. İzleme eklenmiş çalışan veya senaryolarına erişimi olmaması için yetersiz altyapı olmadığını nedeniyle PGO ile oluşturmak mümkün değilse, ardından tüm Program iyileştirmesi ile yapı öneririz.
 
-**/Gy** anahtar da çok yararlıdır. Başvurulmayan COMDATs ve comdat'ı kaldırmak için geldiğinde bağlayıcı daha fazla esneklik sağlayan bir ayrı comdat'ı her işlevin oluşturur Katlama. Kullanarak yalnızca dezavantajı **/Gy** olduğundan bu sorunları hata ayıklama sırasında neden olabilir. Bu nedenle, bu genellikle kullanmak için önerilir. Daha fazla bilgi için bkz: [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md).
+**/Gy** anahtar da çok yararlıdır. Başvurulmayan comdat'ları ve COMDAT'ı kaldırmak için söz konusu olduğunda, bağlayıcı daha fazla esneklik sağlayan ayrı COMDAT her işlevin oluşturur Katlama. Tek dezavantajı kullanarak **/Gy** olduğundan bu sorunları hata ayıklarken neden olabilir. Bu nedenle, bu genellikle bunu kullanmak için önerilir. Daha fazla bilgi için [/Gy (işlev düzeyi bağlamayı etkinleştir)](../../build/reference/gy-enable-function-level-linking.md).
 
-64-bit ortamlarda bağlama için kullanmak için önerilir **/OPT:REF, ICF** bağlayıcı seçeneği ve 32-bit ortamlarda **/OPT:REF** önerilir. Daha fazla bilgi için bkz: [OPT (iyileştirmeler)](../../build/reference/opt-optimizations.md).
+64-bit ortamlarında bağlamak için kullanılacak önerilir **/OPT: ref, ICF** bağlayıcı seçeneği ve 32-bit ortamlarda **/OPT: ref** önerilir. Daha fazla bilgi için [OPT (iyileştirmeler)](../../build/reference/opt-optimizations.md).
 
-Hata ayıklama sembolleriyle, hatta en iyi duruma getirilmiş sürüm yapıları oluşturmak için de önemle tavsiye edilir. Oluşturulan kod efekt değil ve, varsa, uygulamanızın hatalarını ayıklamak daha kolay çok olması gerekir yapar.
+En iyi duruma getirilmiş sürüm yapıları olsa da, hata ayıklama sembolleri oluşturmak için de önemle tavsiye edilir. Oluşturulan kodun efekt değil ve çok, uygulamanızın hata ayıklaması daha kolay olması sağlar.
 
 ### <a name="floating-point-switches"></a>Kayan nokta anahtarları
 
-**/Op** derleyici seçeneği kaldırılmıştır ve noktası iyileştirmeler kayan ile ilgili aşağıdaki dört derleyici seçenekleri eklenmiştir:
+**; /OP &** derleyici seçeneği kaldırıldı ve kayan nokta iyileştirmelerini ile ilgili aşağıdaki dört derleyici seçenekleri eklendi:
 
 |||
 |-|-|
-|**/FP: kesin**|Bu varsayılan öneri ve çoğu durumda kullanılmalıdır.|
-|**/FP:Fast**|Performans örneğin oyunlarda utmost öneme sahip olup olmadığını önerilir. Bu hızlı performans neden olacaktır.|
-|**/FP: katı**|Önerilen IF kesin kayan nokta özel durumlar ve IEEE davranışı istenen. Bu, yavaş performans neden olacaktır.|
-|**/FP: dışındaki [-]**|İle birlikte kullanılan **/fp: katı** veya **/fp: kesin**, ama **/fp:fast**.|
+|**/ FP: precise**|Bu varsayılan öneri ve çoğu durumda kullanılmalıdır.|
+|**Fast**|Performans örneğin oyunlarda dayanıklılığı ise önerilir. Bu hızlı performans neden olur.|
+|**/ FP: strict**|Önerilen if kesin bir kayan nokta özel durumlarını ve IEEE istenen davranışı. Bu, en yavaş performans neden olur.|
+|**/ FP: except [-]**|İle birlikte kullanılabilir **/FP: strict** veya **/FP: precise**, ama **Fast**.|
 
-Daha fazla bilgi için bkz: [/fp (Floating-Point davranış belirtin)](../../build/reference/fp-specify-floating-point-behavior.md).
+Daha fazla bilgi için [FP (Floating-Point davranışını belirtin)](../../build/reference/fp-specify-floating-point-behavior.md).
 
 ## <a name="optimization-declspecs"></a>En iyi duruma getirme declspecs
 
-Bu bölümde biz programlarda performans yardımcı olmak için kullanılan iki declspecs arar: `__declspec(restrict)` ve `__declspec(noalias)`.
+Bu bölümde biz programlarında performans yardımcı olmak için kullanılabilecek iki declspecs sırasında görünür: `__declspec(restrict)` ve `__declspec(noalias)`.
 
-`restrict` Declspec yalnızca bir işaretçi gibi döndüren işlev bildirimlerine uygulanabilir `__declspec(restrict) void *malloc(size_t size);`
+`restrict` Declspec yalnızca gibi bir işaretçi döndüren işlev bildirimlerine uygulanabilir `__declspec(restrict) void *malloc(size_t size);`
 
-`restrict` Declspec unaliased işaretçiler döndüren işlevlerini kullanılır. Bu anahtar sözcük C çalışma zamanı kitaplığı uygulanması için kullanılan `malloc` bu yana hiçbir zaman (, belleği serbest bırakılmış sonra kullanma gibi geçersiz bir şey yapmakta olduğunuz sürece), geçerli program kullanımda olan bir işaretçi değeri döndürür.
+`restrict` Declspec unaliased işaretçileri döndüren işlevler kullanılır. Bu anahtar sözcük C çalışma zamanı kitaplığı uygulaması için kullanılan `malloc` bu yana hiçbir zaman (belleği serbest bırakılmış sonra kullanma gibi geçersiz bir şey yapmakta olduğunuz sürece) zaten kullanılmakta olan geçerli programda bir işaretçi değeri döndürür.
 
-`restrict` Declspec derleyici derleyici iyileştirmelerini gerçekleştirmeye yönelik daha fazla bilgi sağlar. En zor şeylerden belirlemek bir derleyici için biri hangi işaretçileri diğer diğer işaretçiler ve bu bilgileri büyük ölçüde kullanarak derleyici yardımcı olur.
+`restrict` Declspec derleyici derleyici iyileştirmelerini gerçekleştirmeye yönelik daha fazla bilgi sağlar. Sığdırıp belirlemek bir derleme için bir diğer işaretçilerin hangi işaretçileri diğer adıdır ve büyük ölçüde bu bilgileri kullanarak derleyici yardımcı olur.
 
-Bu işaret eden değerinde bu promise derleyici derleyici doğrular şey değil olmasıdır. Programınızı bu kullanıyorsa `restrict` declspec açamayacağı, programınızı yanlış davranışa sahip olabilir.
+Bunu belirtmemiz Bu derleyici derleyici doğrular sorun değil promise olmasıdır. Programınızı kullanıyorsa `restrict` declspec uygunsuz bir şekilde, programınız yanlış davranışa sahip olabilir.
 
-Daha fazla bilgi için bkz: [kısıtlamak](../../cpp/restrict.md).
+Daha fazla bilgi için [kısıtlama](../../cpp/restrict.md).
 
-`noalias` Declspec yalnızca işlevleri için de geçerli ve işlev yarı saf bir işlevi olduğunu gösterir. Yarı saf işlevi, yalnızca yerel öğeler, bağımsız değişkenleri ve birinci düzey indirections bağımsız değişkenleri değiştirir veya başvuruyor biridir. Promise derleyici bu declspec olduğu ve globals işlevi başvuruyor veya ikinci düzey indirections işaretçi bağımsız değişkenlerini daha sonra derleyici kod oluşturabilirsiniz, uygulama keser.
+`noalias` Declspec de yalnızca işlevlere uygulanır ve işlev yarı saf işlev olduğunu gösterir. Yarı saf işlev başvuruyor veya yalnızca yerel öğeler, bağımsız değişkenler ve bağımsız değişkenlerin birinci düzey yöneltmeye değiştirir biridir. Bu declspec derleyici için bir vaattir ve işlev globals başvurur veya işaretçi bağımsız değişkenler ardından derleyici ikinci düzey yöneltmeye kod oluşturmak için kullanabileceğiniz, uygulamanın keser.
 
-Daha fazla bilgi için bkz: [noalias](../../cpp/noalias.md).
+Daha fazla bilgi için [noalias](../../cpp/noalias.md).
 
 ## <a name="optimization-pragmas"></a>En iyi duruma getirme pragmaları
 
-Kodu en iyi duruma yardımcı olmak için birkaç faydalı pragmaları vardır. Aşağıdakiler ele ilk sağlayıcıdır `#pragma optimize`:
+Kodu En İyileştir yardımcı olmak için birkaç faydalı pragmaları vardır. Ele ilki `#pragma optimize`:
 
 ```cpp
 #pragma optimize("{opt-list}", on | off)
 ```
 
-Bu pragma bir işlev tarafından işlevi temelinde verilen iyileştirme düzeyini ayarlamanıza olanak sağlar. Bu bu nadir durumlarda için verilen işlevi iyileştirme ile derlendiğinde, uygulamanızın nerede çöküyor idealdir. Bu iyileştirmeler tek bir işlev için devre dışı bırakmak için kullanabilirsiniz:
+Bu pragma işlev tarafından işlevi olarak verilen iyileştirme düzeyini ayarlamanıza olanak tanır. Bu kullanarak için belirli bir işlevi iyileştirme ile derlendiğinde, uygulamanızın nerede kilitleniyor idealdir. Bu, tek bir işlev için iyileştirmeler devre dışı bırakmak için kullanabilirsiniz:
 
 ```cpp
 #pragma optimize("", off)
@@ -93,53 +93,53 @@ int myFunc() {...}
 #pragma optimize("", on)
 ```
 
-Daha fazla bilgi için bkz: [en iyi duruma getirme](../../preprocessor/optimize.md).
+Daha fazla bilgi için [en iyi duruma getirme](../../preprocessor/optimize.md).
 
-Satır içi kullanım derleyici gerçekleştiren ve burada Biz bu davranışı değiştirmek Yardım pragmaları birkaç hakkında konuşun en önemli iyileştirmeler biridir.
+Satır içi derleyici gerçekleştiren ve burada size bu davranışı değiştirmek yardımcı pragmaları birkaç hakkında konuşmak en önemli iyileştirmeler biridir.
 
-`#pragma inline_recursion` Satır içi bir özyinelemeli çağrı kullanabilmek için uygulamayı isteyip istemediğinizi belirtmek için kullanışlıdır. Varsayılan olarak, kapalıdır. Kısa işlevleri yüzeysel özyineleme için bunu açmanızı olabilir. Daha fazla bilgi için bkz: [inline_recursion](../../preprocessor/inline-recursion.md).
+`#pragma inline_recursion` Satır içi Özyinelenen çağrı için uygulama isteyip istemediğinizi belirtmek için kullanışlıdır. Varsayılan olarak kapalı. Küçük işlevlerin yüzeysel özyineleme için bunu etkinleştirin olabilir. Daha fazla bilgi için [inline_recursion](../../preprocessor/inline-recursion.md).
 
-Derinliğini sınırlamak için başka bir yararlı pragma satır içi kullanım olduğu `#pragma inline_depth`. Bu genellikle, bir program veya işlevi boyutunu sınırlamak için burada çalıştığınız durumlarda yararlıdır. Daha fazla bilgi için bkz: [inline_depth](../../preprocessor/inline-depth.md).
+Derinliğini sınırlamak için başka bir kullanışlı pragma yapılmış olan `#pragma inline_depth`. Bu genellikle bir programı veya işlev boyutunu sınırlamak için burada çalıştığınız durumlarda yararlı olur. Daha fazla bilgi için [inline_depth](../../preprocessor/inline-depth.md).
 
 ## <a name="restrict-and-assume"></a>__restrict ve \__assume
 
-Birkaç performans yardımcı olabilecek Visual c++ anahtar sözcükleri vardır: [__restrict](../../cpp/extension-restrict.md) ve [__assume](../../intrinsics/assume.md).
+Birkaç performans yardımcı olabilecek Visual c++ anahtar sözcükleri: [__restrict](../../cpp/extension-restrict.md) ve [__assume](../../intrinsics/assume.md).
 
-İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı noktalardır. Biraz ilgili karşın, bunların semantiği farklıdır. `__restrict` tür niteleyicisi gibi olan `const` veya `volatile`, ancak işaretçi türleri için özel olarak.
+İlk olarak, unutulmamalıdır, `__restrict` ve `__declspec(restrict)` iki farklı şey vardır. Biraz ilgili olsa da, semantiği farklıdır. `__restrict` gibi bir tür niteleyicisi olan `const` veya `volatile`, ancak yalnızca işaretçi türleri için.
 
-İle değiştiren bir işaretçi `__restrict` olarak adlandırılır bir *işaretçi __restrict*. Yalnızca aracılığıyla erişilebilir bir işaretçi bir __restrict işaretçidir \__kuruluşuma işaretçi. Diğer bir deyişle, başka bir işaretçi işaret verilere erişmek için kullanılamaz \__kuruluşuma işaretçi.
+Değiştirilen bir işaretçi `__restrict` şeklinde adlandırılan bir *işaretçi __restrict*. __Restrict işaretçisi aracılığıyla yalnızca erişilebilir bir işaretçidir \__restrict işaretçi. Diğer bir deyişle, başka bir işaretçi tarafından işaret verilere erişmek için kullanılamaz \__restrict işaretçi.
 
-`__restrict` Visual C++ iyileştirici için güçlü bir araç olabilir, ancak çok dikkatli kullanın. Yanlış kullandıysanız, en iyi hale getirme, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.
+`__restrict` Visual C++ iyileştirici yönelik güçlü bir araç olması, ancak çok dikkatli kullanın. İyileştirici, düzensiz kullandıysanız, uygulamanızın çalışmamasına neden bir iyileştirme gerçekleştirebilir.
 
 `__restrict` Anahtar sözcüğü değiştirir **/Oa** önceki sürümlerden geçiş yapın.
 
-İle `__assume`, geliştirici bazı değişkeninin değeri hakkında varsayımlarda derleyici anlayabilirsiniz.
+İle `__assume`, bir geliştirici bazı değişkeninin değeri hakkında varsayımlar yapmak için derleyici söyleyebilirsiniz.
 
-Örneğin `__assume(a < 5);` bu kodu değişkeni satırında söyler iyileştirici `a` değerinden 5'tir. Yeniden promise derleyici budur. Varsa `a` gerçekten 6 Bu noktada programda sonra derleyici optimize sahip sonra programın davranışını ne beklediğiniz olmayabilir. `__assume` Switch deyimleri ve/veya koşullu ifadeler önce en yararlı olur.
+Örneğin `__assume(a < 5);` iyileştirici, bu değişkeni kod satırında söyler `a` değerinden 5'tir. Yeniden derleyici promise budur. Varsa `a` gerçekten 6 Bu noktada programdaki sonra derleyici optimize sahip sonra programın davranışını beklediğiniz olmayabilir. `__assume` Switch deyimleri ve/veya koşullu ifadeler önce en yararlı olur.
 
-Bazı sınırlamalar vardır `__assume`. İlk olarak, ister `__restrict`, yalnızca bir öneri, yoksaymayı derleyici şekilde boş. Ayrıca, `__assume` şu anda yalnızca değişken inequalities sabitleri karşı çalışır. Simgesel inequalities, örneğin, dağıtılmaz assume(a < b).
+Bazı sınırlamalar vardır `__assume`. İlk olarak, ister `__restrict`, yalnızca bir öneri, derleyici, bu nedenle, bunu yoksaymak için ücretsiz. Ayrıca, `__assume` şu anda yalnızca değişken inequalities sabitleri karşı çalışır. Sembolik inequalities, örneğin, dağıtılmaz assume(a < b).
 
 ## <a name="intrinsic-support"></a>İç desteği
 
-İç bilgiler işlevi olan burada derleyici iç Bilgi Bankası araması hakkında sahip ve bir kitaplıkta bir işlevi çağırmak yerine, bu işlevin kodunun yayar çağırır. Üst bilgi dosyasını \<intrin.h > her desteklenen donanım platformları için tüm kullanılabilir iç bilgileri içerir.
+Yapı içleri olan işlevi burada derleyici iç bilgileri çağrı sahip ve bir kitaplıkta bir işlevi çağırmak yerine, söz konusu işlevin kodu yayan çağırır. Üst bilgi dosyası \<intrin.h > her desteklenen donanım platformları için tüm kullanılabilir yapı içlerini içerir.
 
-İç bilgiler Programcı derleme kullanmak zorunda kalmadan derin koda gitme olanağı verir. İç bilgiler kullanmanın bazı avantajları şunlardır:
+Yapı içleri Programcı bütünleştirilmiş kod kullanmak zorunda kalmadan derin koda gitme olanağı sunar. Kullanarak yapı içleri çeşitli avantajları vardır:
 
-- Kodunuzu daha taşınabilir. İç bilgiler çeşitli birden fazla CPU mimari üzerinde kullanılabilir.
+- Kodunuzun daha taşınabilir olduğundan. Birkaç yapı içlerini birden çok CPU mimarileri üzerinde kullanılabilir.
 
-- Kodunuzu kodu hala C/C++'da yazılmış bu yana okumak daha kolay olur.
+- Kodunuzu kod hala C/C++'da yazılmış bu yana okumak kolaydır.
 
-- Kodunuzu derleyici iyileştirmelerini yararı alır. Derleyici daha iyi alır gibi iç bilgileri için kod oluşturmanın artırır.
+- Kodunuz, derleyici iyileştirmeleri avantajı alır. Derleyici, daha iyi ettiği kod oluşturma için yapı içlerini artırır.
 
-Daha fazla bilgi için bkz: [derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md).
+Daha fazla bilgi için [derleyici iç bilgileri](../../intrinsics/compiler-intrinsics.md).
 
 ## <a name="exceptions"></a>Özel Durumlar
 
-Bir performans yoktur isabet özel durumlar kullanma ile ilişkilendirilmiş. Bazı kısıtlamalar belirli iyileştirmelerini gerçekleştirmeye derleyici engelle try blokları kullanırken sunulur. Üzerinde x86 gelen ek performans düşüşünü yoktur platformları kodu yürütme sırasında oluşturulan ek durum bilgileri nedeniyle blokları deneyin. 64 bit platformlarda deneyin blokları olabildiğince fazla performans düşebilir değil, ancak bir özel durum oluşturulduktan sonra işleyici bulma ve yığını geriye doğru izleme işlemi pahalı olabilir.
+Bir performansın isabet özel durumlar kullanma ile ilişkili. Bazı kısıtlamalar, derleyici belirli iyileştirmelerde gerçekleştirmesini engelle try blokları kullanırken sunulmuştur. Üzerinde x86 blokları, kod yürütme sırasında oluşturulan ek durum bilgilerini nedeniyle ek performansta azalmaya karşı yoktur platformları deneyin. 64-bit platformlarda deneyin bloklar çok performansı düşürebilir değil, ancak bir özel durum sonra işleyici bulma ve yığın geriye doğru izleme işlemini pahalı olabilir.
 
-Bu nedenle, gerçekten ihtiyacınız olmayan koda try/catch blokları önlemek için önerilir. Özel durumlar kullanmanız gerekiyorsa, zaman uyumlu özel durumlar mümkünse kullanın. Daha fazla bilgi için bkz: [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
+Bu nedenle, gerçekten olarak gerekmeyen koda try/catch blokları önlemek için önerilir. Zaman uyumlu özel durumları, özel durumlar kullanmanız gerekiyorsa, mümkünse kullanın. Daha fazla bilgi için [yapılandırılmış özel durum işleme (C/C++)](../../cpp/structured-exception-handling-c-cpp.md).
 
-Son olarak, yalnızca olağanüstü durumlar için özel durumlar oluşturma. Genel denetim akışı için özel durumlar kullanma, performans düşebilir büyük olasılıkla bir hale getirir.
+Son olarak, yalnızca olağanüstü durumlar için özel durumlar. Özel durumlar için genel denetim akışı kullanarak, performans düşebilir büyük olasılıkla bir hale getirir.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -20,57 +20,59 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54ed331022c29ecc47d61bbcccbfac82000cb235
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 90ca214b28296417ab80341232c08a55b92adff4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379243"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725501"
 ---
 # <a name="understanding-the-helper-function"></a>Yardımcı İşlevini Anlama
-Bağlayıcı tarafından desteklenen Gecikmeli Yükleme Yardımcısı işlevi ne gerçekte DLL çalışma zamanında yükler ' dir. Kendi işlevi yazma ve Delayimp.lib içinde sağlanan yardımcı işlevini kullanmak yerine, programa bağlayarak davranışını özelleştirmek için yardımcı işlevini değiştirebilirsiniz. Bir yardımcı işlevini tüm Gecikmeli yüklenen DLL'ler işlevi görür.  
-  
- DLL veya içeri aktarmalar adlarına göre özel işleme yapmak istiyorsanız, kendi yardımcı işlevini sürümü sağlayabilirsiniz.  
-  
- Yardımcı işlevini aşağıdaki eylemleri gerçekleştirir:  
-  
--   Bu önceden yüklenip yüklenmediğini görmek için kitaplığa depolanmış tanıtıcı denetler  
-  
--   Çağrıları **LoadLibrary** DLL yüklenmesini denemek için  
-  
--   Çağrıları **GetProcAddress** yordamı adresi alınıyor denemek için  
-  
--   Şimdi yüklenen giriş noktası çağırmak için dönüştürücü döndürür gecikme içeri aktarmak için yükleme  
-  
- Yardımcı işlevini geri bildirim kanca programınızdaki için her aşağıdaki eylemleri sonra çağırabilirsiniz:  
-  
--   Yardımcı işlevini başladığında  
-  
--   Hemen önce **LoadLibrary** yardımcı işlev çağrılır  
-  
--   Hemen önce **GetProcAddress** yardımcı işlev çağrılır  
-  
--   Varsa çağrısı **LoadLibrary** Yardımcısı işlevinde başarısız oldu  
-  
--   Varsa çağrısı **GetProcAddress** Yardımcısı işlevinde başarısız oldu  
-  
--   Sonra yardımcı işlevi yapılır işleme  
-  
- Bunların her biri bağlama noktaları normal bir şekilde geri dönmek için gecikme alma yük dönüştürücü dışında Yardımcısı yordamında işlenmesini değiştirecek bir değeri geri dönebilirsiniz.  
-  
- Varsayılan yardımcı kod Delayhlp.cpp ve Delayimp.h (vc\include içinde) bulunabilir ve içinde Delayimp.lib (vc\lib içinde) derlenir. Kendi yardımcı işlevinizi yazma sürece bu kitaplık, derlemeleri dahil etmeniz gerekir.  
-  
- Aşağıdaki konular yardımcı işlevini açıklar:  
-  
--   [Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)  
-  
--   [Çağırma Kuralları, Parametreler ve Dönüş Türü](../../build/reference/calling-conventions-parameters-and-return-type.md)  
-  
--   [Yapı ve Sabit Tanımları](../../build/reference/structure-and-constant-definitions.md)  
-  
--   [Gereken Değerleri Hesaplama](../../build/reference/calculating-necessary-values.md)  
-  
--   [Gecikmeli Yüklenen DLL'i Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)
+
+Bağlayıcı tarafından desteklenen Gecikmeli Yükleme Yardımcısı işlevi ne aslında DLL çalışma zamanında yükler ' dir. Kendi işlev yazma ve Delayimp.lib içinde sağlanan yardımcı işlevini kullanmak yerine, programınız için bağlama davranışını özelleştirmek için yardımcı işlevini değiştirebilirsiniz. Tüm Gecikmeli yüklenen DLL'ler bir yardımcı işlevini görür.
+
+DLL içeri aktarmaları ve adlarına göre belirli bir işlemeyi yapmak istiyorsanız, kendi yardımcı işlevi sürümünüzü sağlayabilirsiniz.
+
+Yardımcı işlevini aşağıdaki eylemleri gerçekleştirir:
+
+- Bunu önceden yüklenip yüklenmediğini görmek için kitaplığa depolanmış tanıtıcı denetler
+
+- Çağrıları **LoadLibrary** DLL yükleme girişiminde
+
+- Çağrıları **GetProcAddress** yordamı adresini alma denemek için
+
+- Şimdi yüklenen giriş noktasını çağırmak için dönüştürücü gecikme alınacak döndürür yükleme
+
+Yardımcı işlevini geri için bir bildirim kanca programınızdaki her birinden sonra aşağıdaki eylemlerden birini çağırabilirsiniz:
+
+- Yardımcı işlevini başladığında
+
+- Hemen önce **LoadLibrary** yardımcı işlev çağrılır
+
+- Hemen önce **GetProcAddress** yardımcı işlev çağrılır
+
+- Çağrı **LoadLibrary** yardımcı işlevi başarısız oldu
+
+- Çağrı **GetProcAddress** yardımcı işlevi başarısız oldu
+
+- Sonra yardımcı işlevi yapılır işleme
+
+Bunların her biri bağlama noktaları normal işleme gecikmesi alma yük dönüştürücü dön dışında bir yolla Yardımcısı yordamının değiştirecek bir değer döndürebilir.
+
+Varsayılan yardımcı kod Delayhlp.cpp ve Delayimp.h (vc\include içinde) bulunabilir ve içinde Delayimp.lib (vc\lib içinde) derlenir. Kendi yardımcı işlevinizi yazmadığınız sürece bu kitaplık, derlemelerde dahil etmek gerekir.
+
+Aşağıdaki konularda yardımcı işlevini açıklanmaktadır:
+
+- [Visual C++ 6.0 Sonrasındaki Gecikmeli Yükleme Yardımcısı İşlevi DLL Değişiklikleri](../../build/reference/changes-in-the-dll-delayed-loading-helper-function-since-visual-cpp-6-0.md)
+
+- [Çağırma Kuralları, Parametreler ve Dönüş Türü](../../build/reference/calling-conventions-parameters-and-return-type.md)
+
+- [Yapı ve Sabit Tanımları](../../build/reference/structure-and-constant-definitions.md)
+
+- [Gereken Değerleri Hesaplama](../../build/reference/calculating-necessary-values.md)
+
+- [Gecikmeli Yüklenen DLL'i Kaldırma](../../build/reference/explicitly-unloading-a-delay-loaded-dll.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Gecikmeli Yüklenen DLL'ler için Bağlayıcı Desteği](../../build/reference/linker-support-for-delay-loaded-dlls.md)

@@ -18,39 +18,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4fd1dc3ba92201567f24aa84ff8dddcd96798b38
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 8ccd140a1e132cc260c47b00365e03c32acf5cdf
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33339202"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721593"
 ---
 # <a name="hlsl-property-pages-output-files"></a>HLSL Özellik Sayfaları: Çıktı Dosyaları
-HLSL derleyici (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **çıktı dosyaları** özelliği. Nasıl erişileceği hakkında bilgi için **çıktı dosyaları** özellik sayfası HLSL klasöründeki bkz [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Çıkış dosyalarını** özelliği. Nasıl erişileceği hakkında daha fazla bilgi için **Çıkış dosyalarını** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
 ## <a name="uielement-list"></a>UIElement Listesi  
- **Üstbilgi değişken adı**  
- Kodlanmış HLSL nesne kodu için kullanılan bir dizi adını belirtir. Dizi tarafından HLSL Derleyici çıktısı bir üstbilgi dosyasında yer alır. Tarafından belirtilen üstbilgi dosyası adı **üstbilgi dosyası adı** özelliği.  
+- **Üst bilgi değişken adı**
+
+   Kodlanmış HLSL nesne kodu için kullanılan bir dizi adını belirtir. Dizi, HLSL derleyici tarafından çıktı bir üstbilgi dosyasında yer alır. Üst bilgi dosyasının adı tarafından belirtilen **üst bilgi dosyası adını** özelliği.  
   
- Bu özellik karşılık gelen **/Vn [name]** komut satırı bağımsız değişkeni.  
+ Bu özellik için karşılık gelen **/Vn [ad]** komut satırı bağımsız değişkeni.  
   
- **Üstbilgi dosyası adı**  
- HLSL derleyici tarafından çıktısı üstbilgi dosyası adını belirtir. Üstbilgi bir diziye kodlanmış HLSL nesne kodu içerir. Dizi adı tarafından belirtilen **üstbilgi değişken adı** özelliği.  
+- **Üst bilgi dosyası adı**
+
+   HLSL derleyicisi tarafından çıkış üst bilgi dosyasının adını belirtir. Üstbilgi bir diziye kodlanmış HLSL nesne kodu içerir. Dizi adı tarafından belirtilen **üst bilgi değişken adı** özelliği.  
   
- Bu özellik karşılık gelen **/Fh [name]** komut satırı bağımsız değişkeni.  
+ Bu özellik için karşılık gelen **/Fh [ad]** komut satırı bağımsız değişkeni.  
   
- **Nesne dosya adı**  
- HLSL derleyici tarafından çıktı nesne dosya adını belirtir. Varsayılan değer olan **$(OutDir) % (dosya adı) .cso**.  
+- **Nesne dosyası adı**
+
+   HLSL derleyicisi tarafından çıktı nesne dosyası adını belirtir. Varsayılan değer olan **$(OutDir) % (Filename) .cso**.  
   
- Bu özellik karşılık gelen **/Fo [name]** komut satırı bağımsız değişkeni.  
+ Bu özellik için karşılık gelen **/Fo [ad]** komut satırı bağımsız değişkeni.  
   
- **Derleyici çıktı**  
- **Yalnızca derleme listeleme (/ Fc)** yalnızca derleme dili ifadeleri çıktısını almak için. **Derleme kodunu ve onaltılık (/ Fx)** assembly dili ifadeleri ve karşılık gelen işlem kodu onaltılık çıkış için. Varsayılan olarak, hiçbir çıkış listedir.  
+- **Assembler çıkışı**
+
+   **Sadece bütünleştirilmiş kodların listesi (/ Fc)** yalnızca derleme dili ifadelerini çıkarmak için. **Derleme kodu ve onaltılık (/ Fx)** derleme dili ifadelerini hem karşılık gelen işlem kodu onaltılık çıkış. Varsayılan olarak, hiçbir çıkış listedir.  
   
- **Derleyici çıktı dosyası**  
- HLSL derleyici tarafından çıktı derleme listeleme dosya adını belirtir.  
+- **Assembler çıkış dosyası**
+
+   HLSL derleyicisi tarafından çıktı derleme listeleme dosyası adını belirtir.  
   
- Bu özellik karşılık gelen **/Fc [name]** ve **/Fx [name]** komut satırı bağımsız değişkenleri.  
+   Bu özellik için karşılık gelen **/Fc [name]** ve **/Fx [name]** komut satırı bağımsız değişkenleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [HLSL özellik sayfaları](../ide/hlsl-property-pages.md)   

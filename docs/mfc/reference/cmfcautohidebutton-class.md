@@ -60,12 +60,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4cfc3e0d129fdb10ee10275000df6d8c51604be
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: cc824d31f305fe36e0971704fd63025b3c1fdad2
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465550"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722962"
 ---
 # <a name="cmfcautohidebutton-class"></a>CMFCAutoHideButton sınıfı
 Görüntüleyen veya gizleyen bir düğme bir [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) gizlenmek üzere yapılandırılmış.  
@@ -144,14 +144,14 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentBar*  
- Üst araç çubuğunda bir işaretçi.  
+*pParentBar*<br/>
+[in] Üst araç çubuğunda bir işaretçi.  
   
- [in] *pAutoHideWnd*  
- Bir işaretçi bir [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesne. Bu otomatik gizle düğmesi gizler ve gösteren `CDockablePane`.  
+*pAutoHideWnd*<br/>
+[in] Bir işaretçi bir [CDockablePane](../../mfc/reference/cdockablepane-class.md) nesne. Bu otomatik gizle düğmesi gizler ve gösteren `CDockablePane`.  
   
- [in] *dwAlignment*  
- Ana çerçeve penceresi ile düğme hizalamasını belirten bir değeri.  
+*dwAlignment*<br/>
+[in] Ana çerçeve penceresi ile düğme hizalamasını belirten bir değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -303,8 +303,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Otomatik gizleme düğmeleri, uygulamanızın görünümünü özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Bu yöntem, türetilen bir sınıfta geçersiz.  
@@ -320,14 +320,14 @@ virtual void OnDrawBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *rectBounds*  
- Otomatik Gizle düğmesi sınırlayıcı dikdörtgenini.  
+*rectBounds*<br/>
+[in] Otomatik Gizle düğmesi sınırlayıcı dikdörtgenini.  
   
- [in] *rectBorderSize*  
- Otomatik Gizle düğmesi her iki tarafındaki için kenarlık kalınlığı.  
+*rectBorderSize*<br/>
+[in] Otomatik Gizle düğmesi her iki tarafındaki için kenarlık kalınlığı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızdaki her otomatik gizle düğmesi kenarlığını özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Bu yöntem, türetilen bir sınıfta geçersiz.  
@@ -342,11 +342,11 @@ virtual void OnFillBackground(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Otomatik Gizle düğmesi sınırlayıcı dikdörtgenini.  
+*Rect*<br/>
+[in] Otomatik Gizle düğmesi sınırlayıcı dikdörtgenini.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Uygulamanızdaki otomatik gizleme düğmelerinin arka plan özelleştirmek istiyorsanız, türetilen yeni bir sınıf oluşturun `CMFCAutoHideButton`. Bu yöntem, türetilen bir sınıfta geçersiz.  
@@ -359,8 +359,8 @@ void ShowAttachedWindow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Bu yöntem ekli gösterip göstermediğini belirten Boolean bir değer `CDockablePane`.  
+*bBilgi Göster*<br/>
+[in] Bu yöntem ekli gösterip göstermediğini belirten Boolean bir değer `CDockablePane`.  
   
 ##  <a name="showbutton"></a>  CMFCAutoHideButton::ShowButton  
  Otomatik Gizle düğmesi gizler veya gösterir.  
@@ -370,8 +370,8 @@ virtual void ShowButton(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Otomatik Gizle düğmesi görüntülenip görüntülenmeyeceğini belirten bir Boole değeri.  
+*bBilgi Göster*<br/>
+[in] Otomatik Gizle düğmesi görüntülenip görüntülenmeyeceğini belirten bir Boole değeri.  
   
 ##  <a name="move"></a>  CMFCAutoHideButton::Move  
 
@@ -405,8 +405,8 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pFirstBarInGroup*  
- İlk çubuğunda bir işaretçi.  
+*pFirstBarInGroup*<br/>
+[in] İlk çubuğunda bir işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   

@@ -1,5 +1,5 @@
 ---
-title: -FI (zorla dahil edilen dosyayı Adlandır) | Microsoft Docs
+title: -FI (zorlanmış içerilen dosyayı Adlandır) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,41 +22,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b85bfaebe09203f7aad76c24e8f8fbccfe009d80
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: aa06eaf8f16a80b849ce911468fc0001366b9e29
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373380"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725471"
 ---
 # <a name="fi-name-forced-include-file"></a>/FI (Zorla Dahil Edilen Dosyayı Adlandır)
-Belirtilen üst bilgi dosyasını işlemeye önişlemci neden olur.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/FI[ ]pathname  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek çift tırnak işaretleri ile dosya belirtme aynı etkiye sahiptir bir `#include` CL ortam değişkeni veya bir komut dosyası, komut satırında belirtilen her kaynak dosyasının ilk satırındaki yönergesi. Birden çok kullanırsanız **/FI** seçenekleri, dosyaları, bunlar CL tarafından işlendiği sırada eklenir.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **Gelişmiş** özellik sayfası.  
-  
-4.  Değiştirme **zorla içeren** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+
+Önişlemci belirtilen üstbilgi dosyasını işlemek neden olur.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/FI[ ]pathname
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek dosyayı çift tırnak işaretleri ile belirtmekle aynı etkiye sahip bir `#include` komut satırında, CL ortam değişkeninde veya komut dosyası içinde belirtilen her kaynak dosyasının ilk satırındaki yönergesi. Birden çok kullanırsanız **/FI** seçenekleri, dosyaları, CL ile bunların işlenme sırasını bulunmaktadır.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **Gelişmiş** özellik sayfası.
+
+1. Değiştirme **zorla içerir** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ForcedIncludeFiles%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

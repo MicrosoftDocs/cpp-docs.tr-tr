@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: c3bfa286e253ef634a42fea5a5c926981174c400
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: b599e5f25449dfef3b37d7811db572ee4299b241
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42613007"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719114"
 ---
 # <a name="dbparam"></a>db_param
 
@@ -47,8 +47,8 @@ Belirtilen üye bağımsız değişkenine bir giriş veya çıkış parametresi 
 *Sıra*  
 Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DBCOLUMNINFO sıra).
 
-*paramtype* (isteğe bağlı)  
-İçin parametre türü. Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Bir veya daha fazla DBPARAMIOENUM değerlerinin bir birleşimini türüdür:
+*paramtype*  
+(İsteğe bağlı) İçin parametre türü. Sağlayıcılar, temel alınan veri kaynağı tarafından desteklenen parametre g/ç türlerini destekler. Bir veya daha fazla DBPARAMIOENUM değerlerinin bir birleşimini türüdür:
 
 - DBPARAMIO_INPUT giriş parametresi.
 
@@ -56,20 +56,20 @@ Satır kümesi veri bağlanacak bir alana karşılık gelen sütun numarası (DB
 
 - Erişimci DBPARAMIO_NOTPARAM hiç parametre yok. Ayar `eParamIO` satır içinde bu değer için erişimciler hatırlatır kullanıcı parametreleri göz ardı edilir.
 
-*DbType* (isteğe bağlı)  
-Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) sütun girişi.
+*DbType*  
+(İsteğe bağlı) Bir OLE DB [türü göstergesi](/previous-versions/windows/desktop/ms711251\(v=vs.85\)) sütun girişi.
 
-*Duyarlık* (isteğe bağlı)  
-Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*Duyarlık*  
+(İsteğe bağlı) Sütun girişini kullanılacak hassasiyet. Ayrıntılar için açıklamasını görmek `bPrecision` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*Ölçek* (isteğe bağlı)  
-Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
+*Ölçek*  
+(İsteğe bağlı) Sütun girişi için kullanılacak ölçek. Ayrıntılar için açıklamasını görmek `bScale` öğesinin [IAccessor::CreateAccessor'ı yapısı](/previous-versions/windows/desktop/ms716845\(v=vs.85\))
 
-*Durum* (isteğe bağlı)  
-Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+*Durumu*  
+(İsteğe bağlı) Bu sütun durumunu tutmak için kullanılan bir üye değişkeni. Durum sütun değeri veri değeri NULL gibi diğer bazı değeri olup olmadığını gösterir. Olası değerler için bkz. [durumu](/previous-versions/windows/desktop/ms722617\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
-*uzunluğu* (isteğe bağlı)  
-Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
+*Uzunluğu*  
+(İsteğe bağlı) Sütun boyutunu bayt cinsinden tutmak için kullanılan bir üye değişkeni.
 
 ## <a name="remarks"></a>Açıklamalar
 

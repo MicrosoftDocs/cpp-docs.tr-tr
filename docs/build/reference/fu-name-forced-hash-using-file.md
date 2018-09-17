@@ -20,12 +20,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: acf4afebc7288a953a0f8785e1f18097c21d71e3
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 73edbed02a665d7e66478052c0fee13a227658aa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107410"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720544"
 ---
 # <a name="fu-name-forced-using-file"></a>/FU (Zorlanan #using Dosyasını Adlandır)
 
@@ -62,6 +62,6 @@ Bir derleme veya modül için ortak dil çalışma zamanı (CLR) oluşturma hakk
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

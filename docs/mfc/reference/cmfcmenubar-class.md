@@ -116,12 +116,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2933ed9fbb9a464b4458ce357ce196f2ae9df8f6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: fa6af27d314a4c4421230a9088ead6f3d9e53af3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196388"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723014"
 ---
 # <a name="cmfcmenubar-class"></a>CMFCMenuBar sınıfı
 Yerleştirme uygulayan bir menü çubuğu.  
@@ -265,8 +265,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -282,8 +282,8 @@ virtual CSize CalcLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwMode*  
- [in] *nLength*  
+*dwMode*<br/>
+[in] [in] *nLength*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -333,14 +333,14 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- Yeni üst penceresine bir işaretçi `CMFCMenuBar` nesne.  
+*pParentWnd*<br/>
+[in] Yeni üst penceresine bir işaretçi `CMFCMenuBar` nesne.  
   
- [in] *dwStyle*  
- Yeni menü çubuğu stili.  
+*dwStyle*<br/>
+[in] Yeni menü çubuğu stili.  
   
- [in] *nID*  
- Alt pencere menü çubuğunun kimliği.  
+*nID*<br/>
+[in] Alt pencere menü çubuğunun kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi durumda FALSE.  
@@ -366,20 +366,20 @@ virtual BOOL CreateEx(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParentWnd*  
- Yeni üst pencere işaretçisi `CMFCMenuBar` nesne.  
+*pParentWnd*<br/>
+[in] Yeni üst pencere işaretçisi `CMFCMenuBar` nesne.  
   
- [in] *dwCtrlStyle*  
- Ek stilleri için yeni menü çubuğu.  
+*dwCtrlStyle*<br/>
+[in] Ek stilleri için yeni menü çubuğu.  
   
- [in] *dwStyle*  
- Yeni menü çubuğunun ana stili.  
+*dwStyle*<br/>
+[in] Yeni menü çubuğunun ana stili.  
   
- [in] *rcBorders*  
- A `CRect` kenarlıklarını boyutunu belirten parametresi `CMFCMenuBar` nesne.  
+*rcBorders*<br/>
+[in] A `CRect` kenarlıklarını boyutunu belirten parametresi `CMFCMenuBar` nesne.  
   
- [in] *nID*  
- Alt pencere menü çubuğunun kimliği.  
+*nID*<br/>
+[in] Alt pencere menü çubuğunun kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -406,14 +406,14 @@ virtual void CreateFromMenu(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
- Bir menü kaynağı için tanıtıcı. `CreateFromMenu` Bu kaynak için bir şablon olarak kullandığı `CMFCMenuBar`.  
+*hMenu*<br/>
+[in] Bir menü kaynağı için tanıtıcı. `CreateFromMenu` Bu kaynak için bir şablon olarak kullandığı `CMFCMenuBar`.  
   
- [in] *bDefaultMenu*  
- Yeni menü varsayılan menüsünü olup olmadığını belirten bir Boole değeri.  
+*bDefaultMenu*<br/>
+[in] Yeni menü varsayılan menüsünü olup olmadığını belirten bir Boole değeri.  
   
- [in] *bForceUpdate*  
- Bu yöntem bir menü güncelleştirme zorlar olup olmadığını gösteren bir Boole değeri.  
+*bForceUpdate*<br/>
+[in] Bu yöntem bir menü güncelleştirme zorlar olup olmadığını gösteren bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir menü kaynağı olarak aynı menü öğeleri için bir menü denetimi istiyorsanız bu yöntemi kullanın. Ya da çağırdıktan sonra bu yöntemi çağırmanız [CMFCMenuBar::Create](#create) veya [CMFCMenuBar::CreateEx](#createex).  
@@ -429,14 +429,14 @@ void EnableHelpCombobox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiID*  
- Komut Kimliği düğmesine **yardımcı** birleşik giriş kutusu.  
+*uiID*<br/>
+[in] Komut Kimliği düğmesine **yardımcı** birleşik giriş kutusu.  
   
- [in] *lpszPrompt*  
- Boş ve etkin değil ise birleşik giriş kutusunda framework görüntüleyen metni içeren bir dize. Örneğin, "Enter metnini buraya".  
+*lpszPrompt*<br/>
+[in] Boş ve etkin değil ise birleşik giriş kutusunda framework görüntüleyen metni içeren bir dize. Örneğin, "Enter metnini buraya".  
   
- [in] *nComboBoxWidth*  
- Birleşik giriş kutusu piksel cinsinden düğmenin genişliği.  
+*nComboBoxWidth*<br/>
+[in] Birleşik giriş kutusu piksel cinsinden düğmenin genişliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  **Yardımcı** birleşik giriş kutusu benzer **yardımcı** Microsoft Word'ün menü çubuğundaki birleşik giriş kutusu.  
@@ -451,8 +451,8 @@ static void EnableMenuShadows(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Shadows açılır menüler için etkin olup olmadığını gösteren bir Boole parametresi.  
+*bSistemlerde*<br/>
+[in] Shadows açılır menüler için etkin olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntemde algoritması karmaşıktır ve yavaş sistemlerde uygulamanızın performansını düşürebilir.  
@@ -558,8 +558,8 @@ static const CFont& GetMenuFont(BOOL bHorz = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bHorz*  
- Yatay veya dikey yazı tipi döndürülüp döndürülmeyeceğini belirleyen bir Boole parametresi. TRUE, yatay yazı tipini belirtir.  
+*bHorz*<br/>
+[in] Yatay veya dikey yazı tipi döndürülüp döndürülmeyeceğini belirleyen bir Boole parametresi. TRUE, yatay yazı tipini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi bir [CFont](../../mfc/reference/cfont-class.md) geçerli menü çubuğu yazı tipi içeren bir parametre.  
@@ -575,8 +575,8 @@ CMFCToolBarButton* GetMenuItem(int iItem) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iItem*  
- Döndürülecek menü öğesi dizini.  
+*iItem*<br/>
+[in] Döndürülecek menü öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir işaretçi `CMFCToolBarButton` tarafından belirtilen dizin eşleşen nesne *iItem*. Dizin geçersiz olduğu yoksa NULL.  
@@ -602,8 +602,8 @@ CMFCToolBarMenuButtonsButton* GetSystemButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiBtn*  
- [in] *bByCommand*  
+*uiBtn*<br/>
+[in] [in] *bByCommand*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -639,8 +639,8 @@ static void HighlightDisabledItems(BOOL bHighlight = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bHighlight*  
- Framework kullanılabilir menü öğelerini vurgular olup olmadığını gösteren bir Boole parametresi.  
+*bHighlight*<br/>
+[in] Framework kullanılabilir menü öğelerini vurgular olup olmadığını gösteren bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı fareyi üzerine getirdiğinde varsayılan olarak, çerçeve kullanılabilir menü öğelerini vurgulayın değil.  
@@ -740,14 +740,14 @@ virtual BOOL LoadState(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Windows kayıt defteri anahtarının yolunu içeren bir dize.  
+*lpszProfileName*<br/>
+[in] Windows kayıt defteri anahtarının yolunu içeren bir dize.  
   
- [in] *nIndex*  
- Menü çubuğu denetiminin kimliği.  
+*nIndex*<br/>
+[in] Menü çubuğu denetiminin kimliği.  
   
- [in] *uiID*  
- Ayrılmış bir değer.  
+*uiID*<br/>
+[in] Ayrılmış bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -777,8 +777,8 @@ virtual void OnDefaultMenuLoaded(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
- Menünün işleyici bağlı `CMFCMenuBar` nesne.  
+*hMenu*<br/>
+[in] Menünün işleyici bağlı `CMFCMenuBar` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlevin varsayılan uygulama, hiçbir şey yapmaz. Framework kaynak dosyasından bir menü kaynağı yüklendikten sonra özel kod yürütmek için bu işlevi geçersiz kılar.  
@@ -805,8 +805,8 @@ virtual BOOL OnSetDefaultButtonText(CMFCToolBarButton* pButton);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pButton*  
- Bir işaretçi [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) özelleştirmek için kullanıcının istediği bir nesne.  
+*pButton*<br/>
+[in] Bir işaretçi [CMFCToolBarButton](../../mfc/reference/cmfctoolbarbutton-class.md) özelleştirmek için kullanıcının istediği bir nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Framework menü çubuğuna kullanıcı değişiklikleri geçerliyse TRUE; Aksi durumda FALSE.  
@@ -824,8 +824,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- [in] *PTI*  
+*Noktası*<br/>
+[in] [in] *PTI*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -871,14 +871,14 @@ virtual BOOL SaveState (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Windows kayıt defteri anahtarının yolunu içeren bir dize.  
+*lpszProfileName*<br/>
+[in] Windows kayıt defteri anahtarının yolunu içeren bir dize.  
   
- [in] *nIndex*  
- Menü çubuğu denetiminin kimliği.  
+*nIndex*<br/>
+[in] Menü çubuğu denetiminin kimliği.  
   
- [in] *uiID*  
- Ayrılmış bir değer.  
+*uiID*<br/>
+[in] Ayrılmış bir değer.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; Aksi takdirde FALSE;  
@@ -896,8 +896,8 @@ void SetDefaultMenuResId(UINT uiResId);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiResId*  
- Yeni varsayılan menüsü kaynak kimliği.  
+*uiResId*<br/>
+[in] Yeni varsayılan menüsü kaynak kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  [CMFCMenuBar::RestoreOriginalstate](#restoreoriginalstate) yöntemi varsayılan menüsü kaynak dosyasından geri yükler.  
@@ -927,14 +927,14 @@ void SetMaximizeMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bMax*  
- Modu belirten bir Boolean değer. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
+*bMax*<br/>
+[in] Modu belirten bir Boolean değer. Daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- [in] *pWnd*  
- Değişiyor MDI alt penceresine bir işaretçi.  
+*pWnd*<br/>
+[in] Değişiyor MDI alt penceresine bir işaretçi.  
   
- [in] *bRecalcLayout*  
- Menü çubuğunun düzenini hemen hesaplanması olup olmadığını belirten bir Boole değeri.  
+*bRecalcLayout*<br/>
+[in] Menü çubuğunun düzenini hemen hesaplanması olup olmadığını belirten bir Boole değeri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir MDI alt penceresi büyütüldüğünde, MDI ana çerçeve penceresine bağlı bir menü çubuğu sistem menüsünü görüntüler ve **simge durumuna küçült**, **Ekranı Kapla** ve **Kapat** düğmeleri. Varsa *bMax* true'dur ve *pWnd* NULL değil MDI alt penceresi ve menü çubuğu ek denetimler eklemeniz gerekir. Aksi halde menü çubuğu normal durumuna geri döner.  
@@ -947,8 +947,8 @@ void SetMenuButtonRTC(CRuntimeClass* pMenuButtonRTC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pMenuButtonRTC*  
- [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bilgi bir sınıf için türetilen [CMFCMenuButton sınıfı](../../mfc/reference/cmfcmenubutton-class.md).  
+*pMenuButtonRTC*<br/>
+[in] [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bilgi bir sınıf için türetilen [CMFCMenuButton sınıfı](../../mfc/reference/cmfcmenubutton-class.md).  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir kullanıcı menü çubuğuna yeni düğmeler ekler, framework düğmelerin dinamik olarak oluşturur. Varsayılan olarak, oluşturduğu `CMFCMenuButton` nesneleri. Framework oluşturan düğme nesneleri türünü değiştirmek için bu yöntemi yok sayın.  
@@ -963,11 +963,11 @@ static BOOL SetMenuFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpLogFont*  
- Bir işaretçi bir [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) ayarlamak için yazı tipini tanımlar yapısı.  
+*lpLogFont*<br/>
+[in] Bir işaretçi bir [LOGFONT](/windows/desktop/api/dimm/ns-dimm-__midl___midl_itf_dimm_0000_0000_0003) ayarlamak için yazı tipini tanımlar yapısı.  
   
- [in] *bHorz*  
- İsterseniz TRUE *lpLogFont* yatay yazı tipi için kullanılacak istiyorsanız dikey yazı tipini FALSE kullanılacak parametre.  
+*bHorz*<br/>
+[in] İsterseniz TRUE *lpLogFont* yatay yazı tipi için kullanılacak istiyorsanız dikey yazı tipini FALSE kullanılacak parametre.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -985,8 +985,8 @@ static void SetRecentlyUsedMenus (BOOL bOn = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iyi*  
- Son kullanılan menü komutları gösterilip gösterilmediğini denetler bir Boole değeri.  
+*İyi*<br/>
+[in] Son kullanılan menü komutları gösterilip gösterilmediğini denetler bir Boole değeri.  
   
 ##  <a name="setshowallcommands"></a>  CMFCMenuBar::SetShowAllCommands  
  Bir menü tüm kullanılabilir komutları gösterir olup olmadığını denetler.  
@@ -996,8 +996,8 @@ static void SetShowAllCommands(BOOL bShowAllCommands = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bShowAllCommands*  
- Açılan menüyü menü komutları gösterip göstermediğini belirten bir Boole parametresi.  
+*bShowAllCommands*<br/>
+[in] Açılan menüyü menü komutları gösterip göstermediğini belirten bir Boole parametresi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bir menü menü komutları görüntülenmiyorsa, nadiren kullanılan komutlar gizler. Menü komutlarını görüntüleme hakkında daha fazla bilgi için bkz. [CMFCMenuBar sınıfı](../../mfc/reference/cmfcmenubar-class.md).  

@@ -18,21 +18,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bc2e5b6b1f2a459d7a00e48ff1aaafff38803871
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 28b4b94025c813ea526964ed6395a2e6af1ac0b9
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377938"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721246"
 ---
 # <a name="working-with-import-libraries-and-export-files"></a>İçeri Aktarma Kitaplıkları ve Dışarı Aktarma Dosyalarıyla Çalışma
-/ DEF seçeneği ile LIB içeri aktarma kitaplığı ve dışarı aktarma dosyası oluşturmak için kullanabilirsiniz. Dışarı aktarma dosyasını içeren bir program oluşturmak için bağlantı kullanır (genellikle bir dinamik bağlantı kitaplığı (DLL)) dışa aktarır ve diğer programlarla bu dışarı başvuruları çözümlemek için içeri aktarma kitaplığını kullanır.  
-  
- .dll oluşturmadan önce ilk adım, içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığını oluştururken geçirilen gibi aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.  
-  
- Çoğu durumda, içeri aktarma kitaplığını oluşturmak üzere LIB kullanmak gerekmez. Dışarı aktarmaları içeren bir program (yürütülebilir bir dosyanın veya bir DLL) bağladığınızda, bağlantı otomatik olarak dışarı aktarmaları açıklayan içeri aktarma kitaplığı oluşturur. Daha sonra bu dışarı aktarma başvuruda bulunan bir program bağladığınızda, içeri aktarma kitaplığı belirtin.  
-  
- Bu ayrıca alır bir programa bir DLL dışarı aktarmaları, ancak, olup doğrudan veya dolaylı olarak, LIB içeri aktarma kitaplıkları birini oluşturmak için kullanmanız gerekir. LIB içeri aktarma kitaplığı oluşturduğunda, ayrıca bir dışarı aktarma dosyası oluşturur. Dışa aktarma dosyası Ddl'lerden biri bağlarken kullanmanız gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB Başvurusu](../../build/reference/lib-reference.md)
+
+/ DEF seçeneği ile LIB, bir içeri aktarma kitaplığını ve dışarı aktarma dosyası oluşturmak için kullanabilirsiniz. Dışarı aktarma dosyası içeren bir program oluşturmak için bağlantı kullanır (genellikle bir dinamik bağlantı kitaplığı (DLL)) verir ve diğer programlarda bu dışarı başvurularını çözümlemek için içeri aktarma kitaplığını kullanır.
+
+Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığı derlerken geçti olarak, aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.
+
+Çoğu durumda, LIB, içeri aktarma kitaplığı oluşturmak için kullanın gerekmez. Dışarı aktarmaları içeren bir program (bir yürütülebilir dosya veya bir DLL) bağladığınızda, bağlantı otomatik olarak dışarı aktarmaları açıklayan bir içeri aktarma kitaplığı oluşturur. Daha sonra bu dışarı aktarma başvuran bir program bağladığınızda, içeri aktarma kitaplığını belirtin.
+
+Ayrıca alır bir programa bir DLL'nin dışa aktardığında, ancak olup doğrudan veya dolaylı olarak, LIB içeri aktarma kitaplıkları birini kullanmanız gerekir. LIB içeri aktarma kitaplığı oluşturduğunda, dışarı aktarma dosyası da oluşturur. Dışarı aktarma dosyası Ddl'lerden biri bağlanırken kullanmanız gerekir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LIB Başvurusu](../../build/reference/lib-reference.md)

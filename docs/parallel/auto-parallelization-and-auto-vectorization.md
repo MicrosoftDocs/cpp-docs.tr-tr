@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 240cd4588cb36125b571462b26fcee3853412218
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: c1ff172fde385b4e814508aaf2b567ac15874069
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42466341"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720418"
 ---
 # <a name="auto-parallelization-and-auto-vectorization"></a>Otomatik Paralelleştirme ve Otomatik Vektörleştirme
 Otomatik paralel hale getirici ve otomatik vektör hale getirici, kodunuzda döngüler için otomatik performans artışı sağlamak üzere tasarlanmıştır.  
@@ -75,8 +75,10 @@ Bu komutu kullanarak derleme:
   
  Bu çıktıyı oluşturur:  
   
-**---İşlev analiz ediliyor: __cdecl test(void) geçersiz**   
-**d:\myproject\mytest.cpp(4): döngü paralelleştirildi**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+```
   
 Bu komutu kullanarak derleme:  
   
@@ -84,9 +86,11 @@ Bu komutu kullanarak derleme:
   
 Bu çıktıyı oluşturur:  
   
-**---İşlev analiz ediliyor: __cdecl test(void) geçersiz**   
-**d:\myproject\mytest.cpp(4): döngü paralelleştirildi**   
-**d:\myproject\mytest.cpp(4): döngü neden '1008' nedeniyle paralelleştirilmedi**  
+```Output
+--- Analyzing function: void __cdecl test(void)
+d:\myproject\mytest.cpp(4) : loop parallelized
+d:\myproject\mytest.cpp(4) : loop not parallelized due to reason '1008'
+```
   
 Farklı ikisi arasındaki fark çıkışında [/Qpar-report (otomatik paralel hale getirici raporlama düzeyi)](../build/reference/qpar-report-auto-parallelizer-reporting-level.md) seçenekleri. `/Qpar-report:1` yalnızca başarıyla paralel döngüler için paralel hale getirici iletileri çıkarır. `/Qpar-report:2` hem başarılı ve başarısız döngü parallelizations için paralel hale getirici iletileri çıkarır.  
   

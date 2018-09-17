@@ -15,31 +15,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ab70e590c0dd4db67f97f170f4e6ead05318704
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e8646ad544b6c481ea394add9e6e8faa82919e15
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371362"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725042"
 ---
 # <a name="errlook-reference"></a>ERRLOOK Başvurusu
-ERRLOOK yardımcı programı, Araçlar menüsünden kullanılabilir **hata arama**, bir sistem hatası veya modülü hata iletisini temel girilen değer alır. Sürükleme ve Visual Studio hata ayıklayıcısında araya gelen bir onaltılık veya ondalık değer bırakma durumunda ERRLOOK hata iletisi metni otomatik olarak alır. **değeri** düzenleme denetimi. Ayrıca bir değer içine yazarak ya da girebilirsiniz **değeri** düzen denetimi veya göre panodan yapıştırarak ve tıklatarak **Ara**.  
-  
- Hızlandırıcı tuşları kopyala (CTRL + C), (CTRL + X) kesme ve yapıştırma (CTRL + V) iş her ikisi için de için **değeri** ve **hata iletisi** ilk metni vurgulama denetimleri düzenleyin.  
-  
-## <a name="in-this-section"></a>Bu Bölümde  
- [Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)  
- ERRLOOK, değer düzenleme denetimi açıklar.  
-  
- [Hata İletisi Düzenleme Denetimi](../../build/reference/error-message-edit-control.md)  
- ERRLOOK, hata iletisi düzenleme denetimi açıklar.  
-  
- [Modüller Düğmesi](../../build/reference/modules-button.md)  
- ERRLOOK modülleri düğmesini açıklar.  
-  
- [Ara Düğmesi](../../build/reference/look-up-button.md)  
- ERRLOOK Ara düğmesi açıklanır.  
-  
-## <a name="related-sections"></a>İlgili Bölümler  
- [C/C++ Derleme Araçları](../../build/reference/c-cpp-build-tools.md)  
- C/C++ açıklayan konuların bağlantılarını derleme Visual C++'da sağlanan araçları sağlar.
+
+ERRLOOK yardımcı programı, Araçlar menüsünden kullanılabilir **hata arama**, girilen değer temel bir sistem hatası iletisi veya modülü hata iletisi alır. Sürükleyip Visual Studio hata ayıklayıcısında bir onaltılık veya ondalık değeri açılan ERRLOOK hata iletisi metni otomatik olarak alır. **değer** düzenleme denetimi. Ayrıca bir değer yazmak ya da girebilirsiniz **değer** düzenleme denetimi veya göre panodan yapıştırma ve tıklayarak **Ara**.
+
+Hızlandırıcı tuşları kopyala (CTRL + C), Kes (CTRL + X) ve Yapıştır (CTRL + V) iş hem de **değer** ve **hata iletisi** ilk metni vurgulayın denetimleri düzenleyebilir.
+
+## <a name="in-this-section"></a>Bu Bölümde
+
+[Değer düzenleme denetimi](../../build/reference/value-edit-control.md) ERRLOOK değer düzenleme denetimi açıklar.
+
+[Hata iletisi düzenleme denetimi](../../build/reference/error-message-edit-control.md) ERRLOOK hata iletisi düzenleme denetimi açıklar.
+
+[Modüller düğmesi](../../build/reference/modules-button.md) ERRLOOK modülleri düğmeye açıklar.
+
+[Düğme Ara](../../build/reference/look-up-button.md) ERRLOOK Ara düğmesine açıklar.
+
+## <a name="related-sections"></a>İlgili Bölümler
+
+[C/C++ derleme Araçları](../../build/reference/c-cpp-build-tools.md) derleme araçları Visual C++'da sağlanan C/C++ açıklayan konulara bağlantılar sağlar.

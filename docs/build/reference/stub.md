@@ -16,24 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 385e073f877a938a3b73fa79036d27cf50c1e4ec
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 151d7b425a7f397a05e3a06e9d94489a0c76f899
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375207"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725120"
 ---
 # <a name="stub"></a>STUB
-Bir modül tanım dosyasında sanal aygıt sürücüsü (VxD) derlemeler kullanıldığında (WINNT içinde tanımlanmıştır. IMAGE_DOS_HEADER yapısı içeren bir dosya adı belirtmenize olanak tanır Y) yerine varsayılan başlık sanal aygıt sürücüsü (VxD), kullanılacak.  
-  
-```  
-STUB:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Belirtmek için eşdeğer bir yol *filename* ile [/STUB](../../build/reference/stub-ms-dos-stub-file-name.md) bağlayıcı seçeneği.  
-  
- SAPLAMA modül tanım dosyasında yalnızca bir VxD oluştururken geçerlidir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)
+
+Sanal cihaz sürücüsü (VxD) oluşturan bir modül tanım dosyası içinde kullanıldığında (WINNT içinde tanımlanan. bir IMAGE_DOS_HEADER yapı içeren bir dosya adı belirtmenizi sağlar H) sanal cihaz sürücüsü (VxD) yerine varsayılan başlık kullanılacak.
+
+```
+STUB:filename
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Belirtmek için bir eşdeğer yol *filename* ile [/SAPLAMA](../../build/reference/stub-ms-dos-stub-file-name.md) bağlayıcı seçeneği.
+
+SAPLAMA modül tanım dosyası içinde yalnızca bir VxD derlerken geçerlidir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Modül Tanımlama Deyimleri Kuralları](../../build/reference/rules-for-module-definition-statements.md)

@@ -24,12 +24,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02c4c537f1a420a096fbcd979580ff7b10076845
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 27a200ba94be8c4937342820fadf89e4225ba97d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44106762"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719959"
 ---
 # <a name="timeput-class"></a>time_put Sınıfı
 
@@ -45,10 +45,10 @@ class time_put : public locale::facet;
 
 ### <a name="parameters"></a>Parametreler
 
-*CharType*  
+*CharType*<br/>
 Bir program içindeki karakterleri kodlamak için kullanılan tür.
 
-*Outputıterator*  
+*Outputıterator*<br/>
 Saat koyma işlevlerinin kendi çıktılarının yazılacağı yineleyici türü.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -108,19 +108,19 @@ virtual iter_type do_put(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sonraki*  
+*Sonraki*<br/>
 Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 Kullanılmayan.
 
-*_Pt*  
+*_Pt*<br/>
 Çıktı olan saat ve tarih bilgilerinin.
 
-*_Fmt*  
+*_Fmt*<br/>
 Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
-*_Mod*  
+*_Mod*<br/>
 Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -171,28 +171,28 @@ iter_type put(iter_type next,
 
 ### <a name="parameters"></a>Parametreler
 
-*Sonraki*  
+*Sonraki*<br/>
 Çıktı yineleyicisini temsil eden saat ve tarih dizisi nerede karakter olan eklenecek.
 
-*_Iosbase*  
+*_Iosbase*<br/>
 Kullanılmayan.
 
-*_Fill*  
+*_Fill*<br/>
 Karakter türü `CharType` aralığı için kullanılan.
 
-*_Pt*  
+*_Pt*<br/>
 Çıktı olan saat ve tarih bilgilerinin.
 
-*_Fmt*  
+*_Fmt*<br/>
 Çıkış biçimi. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
-*_Mod*  
+*_Mod*<br/>
 Biçim için bir değiştirici. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
-*ilk*  
+*ilk*<br/>
 Çıktı biçimlendirme dizesi başlangıcı. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
-*Son*  
+*Son*<br/>
 Çıktı biçimlendirme dizesi sonu. Bkz: [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md) geçerli değerleri.
 
 ### <a name="return-value"></a>Dönüş Değeri

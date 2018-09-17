@@ -14,26 +14,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c271d2f39a4d81776c06a107616170192e82d40d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 55a94001e2f912049518120911c25ae64afa24da
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32380179"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721435"
 ---
 # <a name="special-characters-in-macros"></a>Makrolardaki Özel Karakterler
-Bir sayı (#) oturum sonra bir tanımı bir açıklama belirtir. Değişmez değer bir sayı işareti makro belirtmek için de bir şapka (^) kullanın ^ #.  
-  
- Dolar işareti ($) makrosu çağırma belirtir. Belirtmek için değişmez değer $ $$ kullanın.  
-  
- Yeni bir satır tanımına genişletmek için eğik çizgiyle bitmelidir (\\). Makro çağrıldığında, ters eğik çizgi artı yeni satır karakteri boşluk ile değiştirilir. Değişmez değer ters eğik çizgi satırın sonundaki belirtmek için bir şapka (^) koyun veya yorum tanımlayıcısı ile izleyin (#).  
-  
- Değişmez değer yeni satır karakteri belirtmek için de bir şapka (^) içeren satırı Bitir:  
-  
-```  
-CMDS = cls^  
-dir  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)
+
+Bir sayı (#) oturum sonra bir tanımı bir açıklama belirtir. Değişmez değer sayı işareti bir makroda belirtmek için gibi bir şapka (^) kullanın ^ #.
+
+Bir dolar işareti ($), bir makro çağrısını belirtir. Belirtmek için bir sabit değer $ $$ kullanın.
+
+Yeni bir satır için bir tanımı genişletmek için bir ters eğik çizgiyle bitmelidir (\\). Makro çağrıldığında, ters eğik çizgi yanı sıra yeni satır karakteri boşluk ile değiştirilir. Satırın sonunda değişmez bir ters eğik çizgi belirtmek için bir şapka (^) önünde veya yorum tanımlayıcısı ile izleyin (#).
+
+Bir değişmez değer yeni satır karakteri, son bir şapka (^) içeren satırı olarak belirtmek için:
+
+```
+CMDS = cls^
+dir
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[NMAKE Makrosu Tanımlama](../build/defining-an-nmake-macro.md)

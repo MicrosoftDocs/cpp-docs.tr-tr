@@ -17,40 +17,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a688f4b9f8f3c9302bb6a49e4b0a94a0e0931b33
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 98dc9416ecee69bca285ff54d6321144c4a3fd02
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378060"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724431"
 ---
 # <a name="qimprecisefwaits-remove-fwaits-inside-try-blocks"></a>/Qimprecise_fwaits (Try Blokları İçindeki fwaits'i Kaldır)
-Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/fp: dışında](../../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Qimprecise_fwaits  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu seçenek etkisizdir **/fp: dışında** de belirtilmedi. Belirtirseniz **/fp: dışında** derleyici seçeneği ekler bir `fwait` komutu her kod satırı geçici bir `try` bloğu. Bu şekilde, derleyici belirli bir özel durum üreten kod satırını tanımlayabilirsiniz. **/ Qimprecise_fwaits** kaldırır iç `fwait` yönergeleri, yalnızca geçici bekler bırakarak `try` bloğu. Bu performansı artırır ancak derleyici yalnızca hangi söyleyin kuramaz `try` bloğu bir özel durum, hangi satır neden olur.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Kaldırır `fwait` komutları için iç `try` engeller kullandığınızda [/FP: except](../../build/reference/fp-specify-floating-point-behavior.md) derleyici seçeneği.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Qimprecise_fwaits
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu seçenek, hiçbir etkisi olmaz **/FP: except** de ayrıca belirtilmemişse. Belirtirseniz **/FP: dışında** derleyici seçeneğini ekler bir `fwait` komutunu her kod satırı etrafında bir `try` blok. Bu şekilde, derleyici belirli bir özel durum oluşturan kod satırına tanımlayabilirsiniz. **/ Qimprecise_fwaits** kaldırır iç `fwait` yönergeler, yalnızca geçici bir çözüm bekler bırakarak `try` blok. Bunun yapılması performansı artırır, ancak derleyicinin yalnızca hangi söyleyin mümkün olacaktır `try` blok bir özel durum, hangi satır neden olur.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[/Q Seçenekler (düşük düzey işlemler)](../../build/reference/q-options-low-level-operations.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3ae18c5e2dcdb735880509fd158dac4ccaa1462
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4b8d4f0d9b1bf0401cc6630b61449e87d72ff675
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376656"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722130"
 ---
 # <a name="release-builds"></a>Yayın Derlemeleri
-Yayın derlemesi iyileştirmeler kullanır. Yayın derlemesi oluşturma için en iyi duruma getirme kullandığınızda derleyici simgesel hata ayıklama bilgilerini üretmez. Kod izleme ve ASSERT oluşturulmaz olgu birlikte simgesel hata ayıklama bilgilerini yokluğu çağrıları, yürütülebilir dosyasının boyutunu daha azdır ve bu nedenle daha hızlı olacaktır anlamına gelir.  
-  
- Bu bölümde neden ve ne zaman bir yayın derlemesinde hata ayıklama derleme değiştirmek istersiniz hakkında bilgi gösterir. Ayrıca bazı hata ayıklama için yayın derlemesi değiştirirken karşılaşabileceğiniz sorunları açıklanır:  
-  
--   [Yayın derlemesi oluşturma](../../build/reference/how-to-create-a-release-build.md)  
-  
--   [Yayın Derlemesi Oluşturmadaki Genel Sorunlar](../../build/reference/common-problems-when-creating-a-release-build.md)  
-  
--   [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)  
-  
-    -   [ASSERT deyimleri inceleniyor](../../build/reference/using-verify-instead-of-assert.md)  
-  
-    -   [Belleğin üzerine yazma için onay hata ayıklama derlemesini kullanma](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)  
-  
-    -   [Yayın derlemesinde hata ayıklama](../../build/reference/how-to-debug-a-release-build.md)  
-  
-    -   [Bellek Üzerine Yazmalarını Denetleme](../../build/reference/checking-for-memory-overwrites.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Visual Studio'da C++ projeleri derleme](../../ide/building-cpp-projects-in-visual-studio.md)   
- [C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)
+
+Yayın derlemesi iyileştirmeleri kullanır. Yayın derlemesi oluşturma için en iyi duruma getirme kullandığınızda, derleyici sembolik hata ayıklama bilgisi üretmez. Kod için izleme ve onay oluşturulmaz olgu birlikte sembolik hata ayıklama bilgilerini olmaması çağırır, yürütülebilir dosyanızın boyutunu azaltılır ve bu nedenle daha hızlı olduğu anlamına gelir.
+
+Bu bölümde, neden ve ne zaman bir yayın yapısı için hata ayıklama derlemeden değiştirmek istiyorsunuz bilgi sunar. Ayrıca bazı hata ayıklama'dan bir yayın yapısı için değiştirilirken karşılaşabileceğiniz sorunlar açıklanır:
+
+- [Yayın derlemesi oluşturma](../../build/reference/how-to-create-a-release-build.md)
+
+- [Yayın Derlemesi Oluşturmadaki Genel Sorunlar](../../build/reference/common-problems-when-creating-a-release-build.md)
+
+- [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)
+
+   - [ASSERT deyimleri İnceleme](../../build/reference/using-verify-instead-of-assert.md)
+
+   - [Belleğin üzerine yazma için onay hata ayıklama derlemesini kullanma](../../build/reference/using-the-debug-build-to-check-for-memory-overwrite.md)
+
+   - [Yayın derlemesinde hata ayıklama](../../build/reference/how-to-debug-a-release-build.md)
+
+   - [Bellek Üzerine Yazmalarını Denetleme](../../build/reference/checking-for-memory-overwrites.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Visual Studio'da C++ Projeleri Derleme](../../ide/building-cpp-projects-in-visual-studio.md)<br/>
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)

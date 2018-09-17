@@ -16,21 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36d462d4222cbfc143dd7487d4cb6b1b8bb3ba3b
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b4f2e7ff55e935b7e425b552ba85f47f134c6b80
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368492"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725237"
 ---
 # <a name="precedence-in-inference-rules"></a>Çıkarsama Kurallarında Öncelik
-NMAKE çıkarım kuralı birden çok kez tanımlanmış, en yüksek öncelik tanımı kullanır. Aşağıdaki liste yüksekten en düşüğe öncelik sırasını göstermektedir:  
-  
-1.  Derleme görevleri dosyası içinde tanımlanan bir çıkarım kuralı; sonraki tanımları önceliğe sahiptir.  
-  
-2.  Tools.ini içinde tanımlanan bir çıkarım kuralı; sonraki tanımları önceliğe sahiptir.  
-  
-3.  Önceden tanımlanmış çıkarım kuralı.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıkarım Kuralları](../build/inference-rules.md)
+
+NMAKE çıkarım kuralı birden çok kez tanımlanmış, en yüksek öncelikli tanımı kullanır. Aşağıdaki liste, en yüksek öncelikten en düşüğe sırasını gösterir:
+
+1. Derleme görevleri dosyasında tanımlanan bir çıkarma kuralı; sonraki tanımları önceliğe sahip olur.
+
+1. Tools.ini içinde tanımlanan bir çıkarma kuralı; sonraki tanımları önceliğe sahip olur.
+
+1. Bir önceden tanımlanmış çıkarım kuralı.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıkarım Kuralları](../build/inference-rules.md)

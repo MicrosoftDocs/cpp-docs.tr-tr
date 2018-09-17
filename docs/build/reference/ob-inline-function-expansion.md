@@ -34,16 +34,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb7c31dca2d95232850140576be3ddc0ac695cac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6755025ff07d79b7e6086fc8c8a59a3bdebdb777
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377838"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725263"
 ---
 # <a name="ob-inline-function-expansion"></a>/Ob (Satır İçi İşlev Genişletmesi)
 
-Satır içi genişletme işlevlerin denetler.
+İşlevlerin satır içi genişlemeyi denetler.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -51,33 +51,33 @@ Satır içi genişletme işlevlerin denetler.
 
 ## <a name="arguments"></a>Arguments
 
-**0**  
-Satır içi genişletme devre dışı bırakır. Varsayılan olarak, tüm işlevlerde derleyicinin tedbirli genişletme oluşursa genellikle olarak bilinir *otomatik satır içi kullanım*.
+**0**<br/>
+Satır içi genişletme devre dışı bırakır. Varsayılan olarak, genişletme derleyicinin tüm işlevlerde ortaya genellikle olarak adlandırılan *auto-inlining*.
 
-**1**  
-Yalnızca işaretli işlevleri genişlemesi verir [satır içi](../../cpp/inline-functions-cpp.md), `__inline`, veya `__forceinline`, veya sınıf bildiriminde tanımlanmış C++ üye işlevi.
+**1**<br/>
+Olarak işaretlenmiş işlevler yalnızca genişlemesini sağlar [satır içi](../../cpp/inline-functions-cpp.md), `__inline`, veya `__forceinline`, veya bir sınıf bildiriminde tanımlanan C++ üye işlevi.
 
-**2**  
-Varsayılan değer. Genişletme olarak işaretlenmiş işlevleri sağlayan `inline`, `__inline`, veya `__forceinline`ve derleyici seçer herhangi bir işlev.
+**2**<br/>
+Varsayılan değeri. Genişletme olarak işaretlenmiş işlevler sağlayan `inline`, `__inline`, veya `__forceinline`ve derleyicinin seçtiği diğer işlevleri.
 
-**/ Ob2** içinde ne zaman efekt olan [/O1, O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirmek en hızlı iyileştirmeler)](../../build/reference/ox-full-optimization.md) kullanılır.
+**/ Ob2** içinde etkisi yoktur olan [/O1, / O2 (boyutu en aza indirmek, hızı en üst düzeye)](../../build/reference/o1-o2-minimize-size-maximize-speed.md) veya [/Ox (etkinleştirme en hız iyileştirmelerini)](../../build/reference/ox-full-optimization.md) kullanılır.
 
-Bu seçeneği kullanarak iyileştirmeler etkinleştirmenizi istemektedir **/O1**, **O2**, **/Ox**, veya **/Og**.  
+Bu seçenek, en iyi duruma getirme kullanarak etkinleştirmenizi istemektedir **/O1**, **/O2**, **/Ox**, veya **/Og**.
 
 ## <a name="remarks"></a>Açıklamalar
 
-Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Genişletilmiş satır içi işlev olacağını garantisi yoktur. Satır içi genişletme devre dışı bırakabilir, ancak belirli bir işlev satır içi derleyiciye kullanırken bile zorlayamaz `__forceinline` anahtar sözcüğü.
+Derleyici, satır içi genişleme seçeneklerine ve anahtar sözcüklerine öneri olarak davranır. Herhangi bir işlevi satır içi olarak genişletilen olmasını garanti yoktur. Satır içi genişletme devre dışı bırakabilirsiniz, ancak belirli bir işlevi satır içi derleyiciye kullanırken bile zorlayamaz `__forceinline` anahtar sözcüğü.
 
-Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) satır içi genişletme için aday olarak kaldıracağı işlevleri dışlama yönergesi. Ayrıca bkz. `#pragma` [iç](../../preprocessor/intrinsic.md) yönergesi.
+Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) işlevleri satır içi genişletme için aday olarak düşünmeniz dışlanacak yönergesi. Ayrıca bkz: `#pragma` [iç](../../preprocessor/intrinsic.md) yönergesi.
 
 > [!NOTE]
-> Test çalışmaları profil toplanan bilgileri geçersiz kılmalar belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için bkz: [Profile-Guided en iyi duruma getirme](../../build/reference/profile-guided-optimizations.md).
+> Test çalıştırmalarını profil oluşturmadan toplanan bilgileri geçersiz kılar belirtirseniz, aksi takdirde etkili olacak en iyi duruma getirme **/Ob**, **/Os**, veya **/Ot**. Daha fazla bilgi için [permutasyonları iyileştirmeleri](../../build/reference/profile-guided-optimizations.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
-1. Genişletme **yapılandırma özellikleri**, **C/C++** seçip **en iyi duruma getirme**.
+1. Genişletin **yapılandırma özellikleri**, **C/C++** seçip **iyileştirme**.
 
 1. Değiştirme **satır içi işlev genişletmesi** özelliği.
 
@@ -87,6 +87,6 @@ Kullanabileceğiniz `#pragma` [auto_inline](../../preprocessor/auto-inline.md) s
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[/O Seçenekler (Kodu İyileştir)](../../build/reference/o-options-optimize-code.md)  
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
+[/O seçenekler (kodu İyileştir)](../../build/reference/o-options-optimize-code.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
 [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

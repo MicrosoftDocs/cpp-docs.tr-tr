@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ec8840e4a379ce50b9474c114f0a2879d2e7bca
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e0294a16c13941d74ccd3955f78e22e33ef8fc7a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686163"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725187"
 ---
 # <a name="cmfcfontcombobox-class"></a>CMFCFontComboBox sınıfı
 `CMFCFontComboBox` Sınıfı yazı tiplerinin bir listesini içeren bir birleşik giriş kutusu denetimi oluşturur.  
@@ -132,14 +132,14 @@ BOOL SelectFont(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDesc*  
- Bir yazı tipi açıklama nesnesi işaret eder.  
+*pDesc*<br/>
+[in] Bir yazı tipi açıklama nesnesi işaret eder.  
   
- [in] *lpszName*  
- Bir yazı tipi adı belirtir.  
+*lpszName*<br/>
+[in] Bir yazı tipi adı belirtir.  
   
- [in] *nCharSet*  
- Bir karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
+*nCharSet*<br/>
+[in] Bir karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir. Daha fazla bilgi için `lfCharSet` üyesi [LOGFONT](/windows/desktop/api/wingdi/ns-wingdi-taglogfonta) yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazı tipi birleşik giriş kutusundan bir öğe belirtilen yazı tipi açıklama nesne veya yazı tipi adı ve charset eşleşmesi durumunda TRUE; Aksi takdirde FALSE.  
@@ -164,14 +164,14 @@ BOOL Setup(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nFontType*  
- Yazı tipini belirtir. Bit düzeyinde birleşimi (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE varsayılan değerdir.  
+*nFontType*<br/>
+[in] Yazı tipini belirtir. Bit düzeyinde birleşimi (veya) DEVICE_FONTTYPE RASTER_FONTTYPE ve TRUETYPE_FONTTYPE varsayılan değerdir.  
   
- [in] *nCharSet*  
- Yazı tipi karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir.  
+*nCharSet*<br/>
+[in] Yazı tipi karakter kümesini belirtir. DEFAULT_CHARSET varsayılan değerdir.  
   
- [in] *nPitchAndFamily*  
- Aile ve yazı tipi sıklıktaki değişimi belirtir. DEFAULT_PITCH varsayılan değerdir.  
+*nPitchAndFamily*<br/>
+[in] Aile ve yazı tipi sıklıktaki değişimi belirtir. DEFAULT_PITCH varsayılan değerdir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yazı tipi birleşik giriş kutusu başarıyla başlatıldığında TRUE; Aksi takdirde FALSE.  

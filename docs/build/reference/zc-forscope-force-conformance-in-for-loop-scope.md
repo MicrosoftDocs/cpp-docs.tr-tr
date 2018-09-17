@@ -21,16 +21,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b21c844cd29c7fb45e58f44fdf8eaae427b74235
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: bef68f47fe8fdc430138a6961078139b48030b3d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32378619"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723599"
 ---
 # <a name="zcforscope-force-conformance-in-for-loop-scope"></a>/Zc:forScope (Döngü Kapsamında Uyumluluğu Zorla)
 
-Standart C++ davranışını uygulamak için kullanılan [için](../../cpp/for-statement-cpp.md) döngüler Microsoft Uzantıları ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).
+Standart C++ davranışını uygulamak için kullanılan [için](../../cpp/for-statement-cpp.md) Microsoft uzantıları ile ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -38,18 +38,18 @@ Standart C++ davranışını uygulamak için kullanılan [için](../../cpp/for-s
 
 ## <a name="remarks"></a>Açıklamalar
 
-Standart davranıştır izin vermek için bir **için** döngünün Başlatıcı Git sonra kapsam dışında **için** döngü. Altında **/Zc:forScope-** ve [/Ze](../../build/reference/za-ze-disable-language-extensions.md), **için** döngünün Başlatıcı yerel kapsam sonlanana kadar kapsam içinde kalır.
+Standart bir davranıştır izin vermek için bir **için** döngü Başlatıcısı Git kapsam dışına **için** döngü. Altında **/Zc:forScope-** ve [/Ze](../../build/reference/za-ze-disable-language-extensions.md), **için** döngü başlatıcısı, yerel kapsama sonlandırılana kadar kapsam içinde kalır.
 
-**/ZC: forscope** seçeneği varsayılan olarak açıktır. **/ ZC: forscope** zaman etkilenmez [/ izin veren-](permissive-standards-conformance.md) seçeneği belirtildi.
+**/ZC: forscope** seçeneği varsayılan olarak açıktır. **/ ZC: forscope** zaman etkilenmez [/ permissive-](permissive-standards-conformance.md) seçeneği belirtildi.
 
-**/Zc:forScope-** seçeneği kullanım dışıdır ve gelecek sürümde kaldırılacak. Kullanımı **/Zc:forScope-** kullanımdan D9035 uyarı oluşturur.
+**/Zc:forScope-** seçeneği kullanım dışıdır ve gelecek sürümde kaldırılacak. Kullanım **/Zc:forScope-** kullanımdan kaldırma uyarısı D9035 oluşturur.
 
 Altında aşağıdaki kodu derler **/Ze** ancak altında olmayan **/Za**:
 
 ```cpp
 // zc_forScope.cpp
 // compile by using: cl /Zc:forScope- /Za zc_forScope.cpp
-// C2065, D9035 expected  
+// C2065, D9035 expected
 int main() {
     // Compile by using cl /Zc:forScope- zc_forScope.cpp
     // to compile this non-standard code as-is.
@@ -61,17 +61,17 @@ int main() {
 }
 ```
 
-Kullanırsanız **/Zc:forScope-**, C4288 uyarı (varsayılan olarak kapalıdır) bir değişkeni, önceki bir kapsamda yapılan bir bildirimi nedeniyle kapsamları dahilinde olması durumunda oluşturulur. Bunu göstermek için kaldırma `//` bildirmek için örnek kod karakter `int i`.
+Kullanırsanız **/Zc:forScope-**, C4288 uyarı (varsayılan olarak kapalı) bir değişken, bir önceki kapsamındaki yapılan bildirimi nedeniyle kapsamları dahilinde olması durumunda oluşturulur. Bunu göstermek için kaldırma `//` bildirmek için örnek kod karakter `int i`.
 
-Çalışma zamanı davranışını değiştirebilir **/ZC: forscope** kullanarak [uygun](../../preprocessor/conform.md) pragması.
+Çalışma zamanı davranışını değiştirebilirsiniz **/ZC: forscope** kullanarak [uygun](../../preprocessor/conform.md) pragması.
 
-Kullanırsanız **/Zc:forScope-** varolan .pch dosyasını sahip bir proje ile bir uyarı üretilir, **/Zc:forScope-** göz ardı edilir ve derleme varolan .pch dosyaları kullanarak devam eder. Oluşturulan yeni bir .pch dosyası istiyorsanız kullanın [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md).
+Kullanırsanız **/Zc:forScope-** varolan .pch dosyasını içeren bir proje, bir uyarı oluşturulduğu, **/Zc:forScope-** göz ardı edilir ve derleme, var olan .pch dosyaları kullanarak devam eder. Oluşturulan yeni .pch dosyası istiyorsanız kullanın [/Yc (önceden derlenmiş üst bilgi dosyası oluştur)](../../build/reference/yc-create-precompiled-header-file.md).
 
-Visual c++ uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
+Visual C++'ta uyumluluk sorunları hakkında daha fazla bilgi için bkz: [standart dışı davranış](../../cpp/nonstandard-behavior.md).
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
 
-1. Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
 
 1. Seçin **yapılandırma özellikleri** > **C/C++** > **dil** özellik sayfası.
 

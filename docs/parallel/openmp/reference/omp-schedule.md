@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5052aaadc673e38a844ea5b0d1e11ff3a96f3fbe
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8d873d29d5ac6de1073c1ba3f3065dd015cde1f5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691761"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720453"
 ---
 # <a name="ompschedule"></a>OMP_SCHEDULE
-Davranışını değiştiren [zamanlama](../../../parallel/openmp/reference/schedule.md) yan tümcesi olduğunda `schedule(runtime)` içinde belirtilen bir `for` veya `parallel for` yönergesi.  
+Davranışını değiştiren [zamanlama](../../../parallel/openmp/reference/schedule.md) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,11 +32,10 @@ Davranışını değiştiren [zamanlama](../../../parallel/openmp/reference/sche
 set OMP_SCHEDULE[=type[,size]]  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
-  
- `size` (isteğe bağlı)  
- Yineleme boyutunu belirtir. `size` Pozitif bir tamsayı olmalıdır. Varsayılan zaman dışında 1'dir `type` statiktir. Geçersiz olduğunda `type` olan `runtime`.  
+## <a name="arguments"></a>Arguments
+
+*Boyutu*<br/>
+(İsteğe bağlı) Yinelemeler boyutunu belirtir. `size` Pozitif bir tamsayı olmalıdır. Varsayılan değer 1, aşağıdakiler haricinde `type` statiktir. Geçersiz zaman `type` olduğu `runtime`.  
   
  `type`  
  Zamanlama türü:  
@@ -52,7 +51,7 @@ set OMP_SCHEDULE[=type[,size]]
 ## <a name="remarks"></a>Açıklamalar  
  Varsayılan değer OpenMP standart Visual C++ uygulamasında `OMP_SCHEDULE=static,0`.  
   
- Daha fazla bilgi için bkz: [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md).  
+ Daha fazla bilgi için [4.1 OMP_SCHEDULE](../../../parallel/openmp/4-1-omp-schedule.md).  
   
 ## <a name="example"></a>Örnek  
  Aşağıdaki komut kümelerini **OMP_SCHEDULE** ortam değişkeni:  
@@ -61,7 +60,7 @@ set OMP_SCHEDULE[=type[,size]]
 set OMP_SCHEDULE="guided,2"  
 ```  
   
- Aşağıdaki komut geçerli ayarını görüntüler **OMP_SCHEDULE** ortam değişkeni:  
+ Aşağıdaki komut, geçerli ayarı görüntüler **OMP_SCHEDULE** ortam değişkeni:  
   
 ```  
 set OMP_SCHEDULE  

@@ -9,12 +9,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 996a891d62ee254fe2ce769483d34941ffb300b6
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: cc82a45c181d4a2b56670af9cc0d6da055737b8d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680545"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722325"
 ---
 # <a name="whats-new-for-visual-c-in-visual-studio-2017"></a>Visual Studio 2017'de Visual C++ yenilikleri
 
@@ -394,8 +394,7 @@ C++, Evrensel Windows Uygulaması iş yükü için isteğe bağlı bir bileşen 
 ## <a name="new-options-for-c-on-universal-windows-platform-uwp"></a>C++ için yeni seçenekler Evrensel Windows Platformu (UWP) üzerinde
 Artık yazma ve C++ uygulamaları Evrensel Windows platformu ve Windows Store için paketleme için yeni bir seçeneğiniz vardır: var olan bir masaüstü uygulaması veya COM nesnesi için Windows dağıtım paketi için Masaüstü köprüsü altyapı kullanabilirsiniz Store veya dışarıdan yükleme aracılığıyla var olan kanallarınız üzerinden. Windows 10'daki yeni özellikler Masaüstü uygulamanızı çeşitli yollarla UWP işlevselliği eklemek etkinleştirin. Daha fazla bilgi için [Masaüstü köprüsü](/windows/uwp/porting/desktop-to-uwp-root).
 
-**Visual Studio 2017 sürüm 15.5**  
-A **Windows uygulaması paketleme projesi** proje şablonu, büyük ölçüde basitleştirir, Masaüstü Köprüsü'nü kullanarak ile Masaüstü uygulamaları paketleme işi eklenir. Altında kullanılabilir **dosya | Yeni | Proje | Yüklü | Visual C++ | Evrensel Windows platformu**. Daha fazla bilgi için [Visual Studio (Masaüstü köprüsü) kullanarak bir uygulama paketini](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+**Visual Studio 2017 sürüm 15.5**: A **Windows uygulaması paketleme projesi** proje şablonu, büyük ölçüde basitleştirir, Masaüstü Köprüsü'nü kullanarak ile Masaüstü uygulamaları paketleme işi eklenir. Altında kullanılabilir **dosya | Yeni | Proje | Yüklü | Visual C++ | Evrensel Windows platformu**. Daha fazla bilgi için [Visual Studio (Masaüstü köprüsü) kullanarak bir uygulama paketini](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
 Yeni kod yazarken artık C + kullanabilirsiniz +/ WinRT, standart bir C++ dil projeksiyonu yalnızca üstbilgi dosyalarında uygulanan Windows çalışma zamanı. Her iki Yazar sağlar ve Windows çalışma zamanı API'leri kullanarak standartlara uygun herhangi bir C++ derleyicisi. C + +/ WinRT, C++ geliştiricileri için modern Windows API ile birinci sınıf erişim sağlamak için tasarlanmıştır. Daha fazla bilgi için [C + +/ WinRT github'da kullanılabilir](https://moderncpp.com/).
 

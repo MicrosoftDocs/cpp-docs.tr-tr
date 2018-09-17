@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d99f0b2ea50e84e3eb5e89d1f2e24a181653893c
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: 38dcb010df79e0a5c5a54079b4c98021cc406c8d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852483"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720284"
 ---
 # <a name="cmousemanager-class"></a>CMouseManager sınıfı
 Bir kullanıcının farklı komutları belirli bir ile ilişkilendirilecek sağlar [CView](../../mfc/reference/cview-class.md) kullanıcı söz konusu görünümü çift tıkladığında nesne.  
@@ -93,20 +93,20 @@ BOOL AddView(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iViewId*  
- Görünüm kimliği.  
+*iViewId*<br/>
+[in] Görünüm kimliği.  
   
- [in] *uiViewNameResId*  
- Görünüm adı başvuran kaynak dize kimliği.  
+*uiViewNameResId*<br/>
+[in] Görünüm adı başvuran kaynak dize kimliği.  
   
- [in] *uiIconId*  
- Bir görünümü simgesi kimliği  
+*uiIconId*<br/>
+[in] Bir görünümü simgesi kimliği  
   
- [in] *IID*  
- Görünüm kimliği.  
+*IID*<br/>
+[in] Görünüm kimliği.  
   
- [in] *lpszViewName*  
- Bir görünüm adı.  
+*lpszViewName*<br/>
+[in] Bir görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -131,8 +131,8 @@ UINT GetViewDblClickCommand(int iId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *IID*  
- Görünüm kimliği.  
+*IID*<br/>
+[in] Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Görünüm bir komut ile ilişkili ise, komut tanımlayıcısı; Aksi durumda 0.  
@@ -145,8 +145,8 @@ UINT GetViewIconId(int iViewId) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iViewId*  
- Görünüm kimliği.  
+*iViewId*<br/>
+[in] Görünüm kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Simge kaynak tanımlayıcı başarılıysa; Aksi durumda 0.  
@@ -162,8 +162,8 @@ int GetViewIdByName(LPCTSTR lpszName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszName*  
- Görünüm adı.  
+*lpszName*<br/>
+[in] Görünüm adı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bir görünüm kimliği olduğu başarılıysa; Aksi durumda 0.  
@@ -179,8 +179,8 @@ void GetViewNames(CStringList& listOfNames) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *listOfNames*  
- Bir başvuru `CStringList` nesne.  
+*listOfNames*<br/>
+[out] Bir başvuru `CStringList` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem parametre doldurur `listOfNames` kullanarak kayıtlı tüm görünümlere adlarıyla [CMouseManager::AddView](#addview).  
@@ -193,8 +193,8 @@ BOOL LoadState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Bir kayıt defteri anahtarının yolu.  
+*lpszProfileName*<br/>
+[in] Bir kayıt defteri anahtarının yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -212,8 +212,8 @@ BOOL SaveState(LPCTSTR lpszProfileName = NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszProfileName*  
- Bir kayıt defteri anahtarının yolu.  
+*lpszProfileName*<br/>
+[in] Bir kayıt defteri anahtarının yolu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -233,11 +233,11 @@ void SetCommandForDblClk(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iViewId*  
- Görüntüleme tanımlayıcısı.  
+*iViewId*<br/>
+[in] Görüntüleme tanımlayıcısı.  
   
- [in] *uiCmd*  
- Komut tanımlayıcısı.  
+*uiCmd*<br/>
+[in] Komut tanımlayıcısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Özel komut bir görünümü ile ilişkilendirmek için önce görünümü kullanarak kaydetmeniz gerekir [CMouseManager::AddView](#addview). `AddView` Yöntemi giriş parametresi olarak bir görünümü tanımlayıcı gerektirir. Bir görünüm kaydolduğunuzda çağırabilirsiniz `CMouseManager::SetCommandForDblClk` temin ettiğiniz aynı görünümü tanımlayıcı giriş parametresi ile `AddView`. Bundan sonra kullanıcı kayıtlı görünümünde fare çift tıkladığında, uygulama tarafından belirtilen komut yürütülür *uiCmd.* Özel fare davranışı desteklemek için fare Manager'a kayıtlı görünümünü özelleştirmek gerekir. Özel fare davranışı hakkında daha fazla bilgi için bkz: [klavye ve fare özelleştirmesi](../keyboard-and-mouse-customization.md).  

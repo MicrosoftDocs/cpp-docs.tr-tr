@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: bd7d581a632158154822f7ce51ac3dc5042b2a48
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: e673d01aa5657d9ada9ae1ee84ad3d56483e2fc5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589303"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723352"
 ---
 # <a name="safedivide"></a>SafeDivide
 
@@ -41,14 +41,14 @@ inline bool SafeDivide (
 
 ### <a name="parameters"></a>Parametreler
 
-[in] *t*  
-Bölen. Bu t türünde olmalıdır
+*T*<br/>
+[in] Bölen. Bu t türünde olmalıdır
 
-[in] *u*  
-Kar payı. Bu u türü olmalıdır
+*u*<br/>
+[in] Bölünen. Bu u türü olmalıdır
 
-[out] *sonucu*  
-Parametrenin nereden **SafeDivide** sonucu depolar.
+*Sonuç*<br/>
+[out] Parametrenin nereden **SafeDivide** sonucu depolar.
 
 ## <a name="return-value"></a>Dönüş Değeri
 

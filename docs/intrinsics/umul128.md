@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e996a83cfc2a79d4bf5cc458ccc5bdd586355b64
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 6884face758cd7f7b9b507405f41f4fcbac8f188
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464872"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721311"
 ---
 # <a name="umul128"></a>_umul128
 **Microsoft'a özgü**  
@@ -39,14 +39,14 @@ unsigned __int64 _umul128(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Multiplier`  
- Çarpılacak ilk 64-bit tamsayı.  
+*Çarpanı*<br/>
+[in] Çarpılacak ilk 64-bit tamsayı.  
   
- [in] `Multiplicand`  
- Çarpılacak ikinci 64-bit tamsayı.  
+*Çarpan*<br/>
+[in] Çarpılacak ikinci 64-bit tamsayı.  
   
- [out] `HighProduct`  
- Ürünün yüksek 64 bit.  
+*HighProduct*<br/>
+[out] Ürünün yüksek 64 bit.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Ürünün düşük 64 bit.  

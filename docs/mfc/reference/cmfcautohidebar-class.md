@@ -48,12 +48,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 263667b96c052025550f4d366cd236d256e7f7a8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b9ba9f6c2de8260ea846b51e2192ecfb967c5502
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464481"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719985"
 ---
 # <a name="cmfcautohidebar-class"></a>CMFCAutoHideBar sınıfı
 `CMFCAutoHideBar` Otomatik gizleme özelliğini uygulayan bir özel araç sınıfı.  
@@ -136,11 +136,11 @@ CMFCAutoHideButton* AddAutoHideWindow(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pAutoHideWnd*  
- Gizlemek istediğiniz penceresi.  
+*pAutoHideWnd*<br/>
+[in] Gizlemek istediğiniz penceresi.  
   
- [in] *dwAlignment*  
- Uygulama penceresiyle birlikte otomatik gizle düğmesi hizalamasını belirten bir değeri.  
+*dwAlignment*<br/>
+[in] Uygulama penceresiyle birlikte otomatik gizle düğmesi hizalamasını belirten bir değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -176,8 +176,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -207,12 +207,12 @@ virtual BOOL Create(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszClassName*  
- [in] *dwStyle*  
- [in] *dikdörtgen*  
- [in] *pParentWnd*  
- [in] *nID*  
- [in] *dwControlBarStyle*  
+*lpszClassName*<br/>
+[in] [in] *dwStyle*  
+*Rect*<br/>
+[in] [in] *pParentWnd*  
+*nID*<br/>
+[in] [in] *dwControlBarStyle*  
  [in] *pContext*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -342,11 +342,11 @@ virtual CSize StretchPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nLength*  
- Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, yeniden boyutlandırılan bölmesinde uzunluğunu belirtmek için bu değeri kullanın.  
+*nLength*<br/>
+[in] Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, yeniden boyutlandırılan bölmesinde uzunluğunu belirtmek için bu değeri kullanın.  
   
- [in] *bVert*  
- Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, tanıtıcı burada otomatik gizleme çubuk dikey daraltılmış durumda ve FALSE true nerede otomatik gizleme çubuk yatay olarak daraltılmıştır çalışması için kullanın.  
+*bVert*<br/>
+[in] Temel uygulamada değer kullanılmıyor. Türetilmiş uygulamalarında, tanıtıcı burada otomatik gizleme çubuk dikey daraltılmış durumda ve FALSE true nerede otomatik gizleme çubuk yatay olarak daraltılmıştır çalışması için kullanın.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yeniden boyutlandırılan bölmesinde elde edilen boyutu.  

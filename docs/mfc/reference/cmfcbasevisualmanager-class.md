@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b7b21651bdab6bf2e4603a8fa012480a6201e34b
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: db5c1ee0a381d45ce951c627d5f59bfb6eb97ea3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37336233"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724834"
 ---
 # <a name="cmfcbasevisualmanager-class"></a>CMFCBaseVisualManager sınıfı
 Türetilmiş görsel yöneticiler Windows teması API'si arasında bir katmanı.  
@@ -136,25 +136,25 @@ virtual BOOL DrawCheckBox(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi  
   
- [in] *dikdörtgen*  
- Onay kutusu sınırlayıcı dikdörtgenini.  
+*Rect*<br/>
+[in] Onay kutusu sınırlayıcı dikdörtgenini.  
   
- [in] *bHighlighted*  
- Onay kutusunu vurgulanır olup olmadığını belirtir.  
+*bHighlighted*<br/>
+[in] Onay kutusunu vurgulanır olup olmadığını belirtir.  
   
- [in] *nDurum*  
- 0 işaretli normal işaretli 1  
+*nDurum*<br/>
+[in] 0 işaretli normal işaretli 1  
   
  karma normal için 2.  
   
- [in] *bEtkin*  
- Onay kutusunu etkin olup olmadığını belirtir.  
+*bEtkin*<br/>
+[in] Onay kutusunu etkin olup olmadığını belirtir.  
   
- [in] *bPressed*  
- Onay kutusunu basılı olup olmadığını belirtir.  
+*bPressed*<br/>
+[in] Onay kutusunu basılı olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -181,20 +181,20 @@ virtual BOOL DrawComboBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Sınırlayıcı dikdörtgeni birleşik giriş kutusu kenarlığın kalınlığı.  
+*Rect*<br/>
+[in] Sınırlayıcı dikdörtgeni birleşik giriş kutusu kenarlığın kalınlığı.  
   
- [in] *bDevre Dışı*  
- Birleşik giriş kutusu kenarlığı devre dışı bırakılıp bırakılmadığını belirtir.  
+*bDevre Dışı*<br/>
+[in] Birleşik giriş kutusu kenarlığı devre dışı bırakılıp bırakılmadığını belirtir.  
   
- [in] *bIsDropped*  
- Birleşik giriş kutusu kenarlığı açılmış olup olmadığını belirtir.  
+*bIsDropped*<br/>
+[in] Birleşik giriş kutusu kenarlığı açılmış olup olmadığını belirtir.  
   
- [in] *bIsHighlighted*  
- Birleşik giriş kutusu kenarlığı vurgulanır olup olmadığını belirtir.  
+*bIsHighlighted*<br/>
+[in] Birleşik giriş kutusu kenarlığı vurgulanır olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -215,11 +215,11 @@ virtual BOOL DrawComboDropButton(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pDC*|Bir cihaz bağlamı için bir işaretçi.|  
-|[in] *dikdörtgen*|Birleşik giriş kutusu açılan düğmeyi sınırlayıcı dikdörtgenini.|  
-|[in] *bDevre Dışı*|Birleşik giriş kutusu açılan düğmeyi devre dışı bırakılıp bırakılmadığını belirtir.|  
-|[in] *bIsDropped*|Birleşik giriş kutusu açılan düğmeyi açılmış olup olmadığını belirtir.|  
-|[in] *bIsHighlighted*|Birleşik giriş kutusu açılan düğmesi vurgulanmış olup olmadığını belirtir.|  
+|*pDC*|[in] Bir cihaz bağlamı için bir işaretçi.|  
+|*Rect*|[in] Birleşik giriş kutusu açılan düğmeyi sınırlayıcı dikdörtgenini.|  
+|*bDevre Dışı*|[in] Birleşik giriş kutusu açılan düğmeyi devre dışı bırakılıp bırakılmadığını belirtir.|  
+|*bIsDropped*|[in] Birleşik giriş kutusu açılan düğmeyi açılmış olup olmadığını belirtir.|  
+|*bIsHighlighted*|[in] Birleşik giriş kutusu açılan düğmesi vurgulanmış olup olmadığını belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -236,17 +236,17 @@ virtual BOOL DrawPushButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Düğme sınırlayıcı dikdörtgenini.  
+*Rect*<br/>
+[in] Düğme sınırlayıcı dikdörtgenini.  
   
- [in] *pButton*  
- Bir işaretçi [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) çizmek için kullanılan nesne.  
+*pButton*<br/>
+[in] Bir işaretçi [CMFCButton sınıfı](../../mfc/reference/cmfcbutton-class.md) çizmek için kullanılan nesne.  
   
- [in] *uiState*  
- Yoksayıldı. Durumu alınır *pButton*.  
+*uiState*<br/>
+[in] Yoksayıldı. Durumu alınır *pButton*.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -265,23 +265,23 @@ virtual BOOL DrawRadioButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *dikdörtgen*  
- Dikdörtgen radyo düğmesinin.  
+*Rect*<br/>
+[in] Dikdörtgen radyo düğmesinin.  
   
- [in] *bHighlighted*  
- Radyo düğmesi vurgulanmış olup olmadığını belirtir.  
+*bHighlighted*<br/>
+[in] Radyo düğmesi vurgulanmış olup olmadığını belirtir.  
   
- [in] *bChecked*  
- Radyo düğmesinin işaretli olup olmadığını belirtir.  
+*bChecked*<br/>
+[in] Radyo düğmesinin işaretli olup olmadığını belirtir.  
   
- [in] *bEtkin*  
- Radyo düğmesi etkin olup olmadığını belirtir.  
+*bEtkin*<br/>
+[in] Radyo düğmesi etkin olup olmadığını belirtir.  
   
- [in] *bPressed*  
- Radyo düğmesini basılı olup olmadığını belirtir.  
+*bPressed*<br/>
+[in] Radyo düğmesini basılı olup olmadığını belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -303,32 +303,32 @@ virtual BOOL DrawStatusBarProgress(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *pStatusBar*  
- Durum çubuğu için bir işaretçi. Bu değer yoksayılır.  
+*pStatusBar*<br/>
+[in] Durum çubuğu için bir işaretçi. Bu değer yoksayılır.  
   
- [in] *rectProgress*  
- İlerleme çubuğunda sınırlayıcı dikdörtgenini *pDC* koordinatları.  
+*rectProgress*<br/>
+[in] İlerleme çubuğunda sınırlayıcı dikdörtgenini *pDC* koordinatları.  
   
- [in] *nProgressTotal*  
- Toplam devam eden değer.  
+*nProgressTotal*<br/>
+[in] Toplam devam eden değer.  
   
- [in] *nProgressCurr*  
- Geçerli ilerleme değeri.  
+*nProgressCurr*<br/>
+[in] Geçerli ilerleme değeri.  
   
- [in] *clrBar*  
- Başlangıç rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.  
+*clrBar*<br/>
+[in] Başlangıç rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.  
   
- [in] *clrProgressBarDest*  
- Bitiş rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.  
+*clrProgressBarDest*<br/>
+[in] Bitiş rengi. `CMFCBaseVisualManager` Bu yok sayar. Türetilen sınıflar, renk gradyanlar için kullanabilirsiniz.  
   
- [in] *clrProgressText*  
- İlerleme metin rengi. `CMFCBaseVisualManager` Bu yok sayar. Metin rengi tarafından tanımlanan `afxGlobalData.clrBtnText`.  
+*clrProgressText*<br/>
+[in] İlerleme metin rengi. `CMFCBaseVisualManager` Bu yok sayar. Metin rengi tarafından tanımlanan `afxGlobalData.clrBtnText`.  
   
- [in] *bProgressText*  
- İlerleme metni görüntülenip görüntülenmeyeceğini belirtir.  
+*bProgressText*<br/>
+[in] İlerleme metni görüntülenip görüntülenmeyeceğini belirtir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  
@@ -344,14 +344,14 @@ virtual void FillReBarPane(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçi.  
   
- [in] *pBar*  
- Arka planının çizilmesi gerektiğini bölme için bir işaretçi.  
+*pBar*<br/>
+[in] Arka planının çizilmesi gerektiğini bölme için bir işaretçi.  
   
- [in] *rectClient*  
- Doldurulması için alan sınırlayıcı dikdörtgenini.  
+*rectClient*<br/>
+[in] Doldurulması için alan sınırlayıcı dikdörtgenini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Tema API etkinse TRUE; Aksi durumda FALSE.  

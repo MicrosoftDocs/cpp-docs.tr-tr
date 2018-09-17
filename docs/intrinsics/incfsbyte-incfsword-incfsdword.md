@@ -23,17 +23,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2813fd6d06d69ee346e234b73c96b8b2e782b95b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a80dc66f9626c87cef78a79b1c46a62afd0957d3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33330989"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719361"
 ---
 # <a name="incfsbyte-incfsword-incfsdword"></a>__incfsbyte, __incfsword, __incfsdword
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bir değere bir uzaklık başlangıcı göre tarafından belirtilen bir bellek konumuna eklemek `FS` kesimi.  
+ Bir değere başlangıcına göre bir uzaklık tarafından belirtilen bellek konumunda ekleme `FS` kesimi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -50,8 +50,8 @@ void __incfsdword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Offset`  
- Başından uzaklık `FS`.  
+*uzaklık*<br/>
+[in] Başından uzaklık `FS`.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -62,9 +62,9 @@ void __incfsdword(
 |`__incfsdword`|x86|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yapı yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç bilgileri kullanılabilir.  
+ Bu iç öğeler yalnızca çekirdek modunda kullanılabilir ve yordamlar yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__addfsbyte, \__addfsword, \__addfsdword](../intrinsics/addfsbyte-addfsword-addfsdword.md)   

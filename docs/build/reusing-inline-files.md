@@ -16,15 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 017364061093ef7a3c3e006f58c331c48a8009e8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 37544db8076d40e638b6ddf6f340070298229149
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32379906"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722468"
 ---
 # <a name="reusing-inline-files"></a>Satır İçi Dosyaları Yeniden Kullanma
-Satır içi dosya yeniden kullanmak için belirtin <<*filename* dosya tanımlı ve ilk kullanılabilir olduğunda, daha sonra yeniden *filename* olmadan << aynı veya başka bir sonraki komutu. Satır içi dosya oluşturmak için komut dosyasını kullanan tüm komutları önce çalıştırmanız gerekir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)
+
+Satır içi dosya yeniden kullanmak için belirtin <<*filename* dosya tanımlanan ve ilk kullanılabilir olduğunda, daha sonra yeniden *filename* olmadan << aynı veya başka bir sonraki komutu. Satır içi dosya oluşturmak için komutu önce dosyayı kullanan tüm komutları çalıştırmanız gerekir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleme Görevleri Dosyasındaki Satır İçi Dosyalar](../build/inline-files-in-a-makefile.md)

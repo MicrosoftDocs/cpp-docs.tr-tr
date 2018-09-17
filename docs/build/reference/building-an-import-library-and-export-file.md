@@ -35,12 +35,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c832ee24d500eba28c14713d1c0a092baf90a440
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: c6a980a96198db80f0956895292d37f123d0351c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894622"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723313"
 ---
 # <a name="building-an-import-library-and-export-file"></a>İçeri Aktarma Kitaplığı ve Dışarı Aktarma Dosyası Derleme
 
@@ -60,7 +60,7 @@ Bunlar bir dışarı aktarma programı'nı bağlarken dışarı aktarmaları bel
 
 Aşağıdaki seçenekler, içeri aktarma kitaplığı oluşturmaya dairdir ve dosyasını dışa aktarın:
 
-> **/ OUT:** *içeri aktarma*  
+> **/ OUT:** *içeri aktarma*
 
 İçin varsayılan çıkış dosyası adını geçersiz kılar *alma* kitaplığı oluşturuluyor. / Out belirtilmediğinde, varsayılan adı temel nesne dosyası birinci ya da LIB komut ve uzantı kitaplıkta adıdır. LIB. Dışarı aktarma dosyası içeri aktarma kitaplığını ve uzantı olarak aynı temel adı verilir. üs.
 

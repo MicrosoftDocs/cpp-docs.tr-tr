@@ -21,47 +21,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 776d23c0c0c7ce392b1ff0d7a989c3c5503129b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 8717be9ee8f754f4e61dbed0211360a0b4f4f780
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376005"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717251"
 ---
 # <a name="pdb-use-program-database"></a>/PDB (Program Veritabanını Kullan)
-```  
-/PDB:filename  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- burada:  
-  
- *Dosya adı*  
- Kullanıcı tarafından belirtilen veritabanı için bir ad bağlayıcı oluşturan program (PDB). Varsayılan adı değiştirir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsayılan olarak, zaman [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtilirse, bağlayıcı, hata ayıklama bilgilerini tutan bir program veritabanı (PDB) oluşturur. PDB için varsayılan dosya adı uzantısı .pdb ve program taban adına sahip.  
-  
- / Pdb kullanın:*filename* PDB dosyası adını belirtmek için. / Debug belirtilmezse, / pdb seçeneği göz ardı edilir.  
-  
- PDB dosyası 2 GB olabilir.  
-  
- Daha fazla bilgi için bkz: [bağlayıcı girişi olarak .pdb dosyaları](../../build/reference/dot-pdb-files-as-linker-input.md).  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **hata ayıklama** özellik sayfası.  
-  
-4.  Değiştirme **Program veritabanı dosya oluşturmak** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/PDB:filename
+```
+
+## <a name="arguments"></a>Arguments
+
+*Dosya adı*<br/>
+Bir kullanıcı tarafından belirtilen ad bağlayıcının oluşturduğu program veritabanı (PDB). Varsayılan adını değiştirir.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsayılan olarak, zaman [/DEBUG](../../build/reference/debug-generate-debug-info.md) belirtildiğinde, bağlayıcı, hata ayıklama bilgilerini tutan bir program veritabanı (PDB) oluşturur. Varsayılan dosya adı PDB için temel programının adını ve .pdb uzantısına sahiptir.
+
+/ Pdb kullanın:*filename* PDB dosyasının adını belirtmek için. / Pdb seçeneği/Debug belirtilmezse, yoksayılır.
+
+Bir PDB dosyası 2 GB'a kadar olabilir.
+
+Daha fazla bilgi için [bağlayıcı girişi olarak .pdb dosyaları](../../build/reference/dot-pdb-files-as-linker-input.md).
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **hata ayıklama** özellik sayfası.
+
+1. Değiştirme **Program veritabanı dosyası oluştur** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.ProgramDatabaseFile%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

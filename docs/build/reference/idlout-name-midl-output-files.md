@@ -1,5 +1,5 @@
 ---
-title: -IDLOUT (MIDL çıktı dosyalarını Adlandır) | Microsoft Docs
+title: -IDLOUT (MIDL çıktı dosyalarının adını) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -23,61 +23,65 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7eeb7af3d19a57b6948f867df87b8d04d0397b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a6749b59a1c12b5d7c3116a925adc727ad6f7ab5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32376068"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721844"
 ---
 # <a name="idlout-name-midl-output-files"></a>/IDLOUT (MIDL Çıktı Dosyalarını Adlandır)
-```  
-/IDLOUT:[path\]filename  
-```  
-  
-## <a name="parameters"></a>Parametreler  
- *Yol*  
- Bir mutlak veya göreli yol belirtimi. Bir yolu belirterek, yalnızca bir .idl dosyasının konumunu etkiler; diğer tüm dosyalar proje dizininde yer alır.  
-  
- *Dosya adı*  
- MIDL derleyici tarafından oluşturulan .idl dosya adını belirtir. Dosya uzantısı yok varsayılır; belirtin *filename*.idl uzantı istiyorsanız .idl.  
-  
-## <a name="remarks"></a>Açıklamalar  
- /IDLOUT seçeneği .idl dosyasının uzantısını ve adını belirtir.  
-  
- MIDL derleyici projeleri bağlarken Visual C++ bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.  
-  
- / IDLOUT de MIDL derleyicisi ile ilişkili ve çıkış dosyalarının dosya adlarını belirtir:  
-  
--   *filename*.tlb  
-  
--   *Dosya adı*_p.c  
-  
--   *Dosya adı*_i.c  
-  
--   *filename*.h  
-  
- *Dosya adı* /IDLOUT için geçirdiğiniz parametre. Varsa [/TLBOUT](../../build/reference/tlbout-name-dot-tlb-file.md) belirtilirse, .tlb dosyası adını /TLBOUT elde *filename*.  
-  
- /IDLOUT ne /TLBOUT belirtirseniz, bağlayıcı vc70.tlb, vc70.idl, vc70_p.c, vc70_i.c ve vc70.h oluşturur.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **katıştırılmış IDL** özellik sayfası.  
-  
-4.  Değiştirme **birleştirme IDL temel dosya adı** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı seçenekleri](../../build/reference/linker-options.md)   
- [/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)   
- [/ MIDL (MIDL komut satırı seçeneklerini belirt)](../../build/reference/midl-specify-midl-command-line-options.md)   
- [Öznitelikli Program Derleme](../../windows/building-an-attributed-program.md)
+
+```
+/IDLOUT:[path\]filename
+```
+
+## <a name="parameters"></a>Parametreler
+
+*Yolu*<br/>
+Bir mutlak veya göreli yol belirtimi. Bir yolu belirterek, yalnızca bir .idl dosyasının konumunu etkiler; diğer tüm dosyaları proje dizininde yer alır.
+
+*Dosya adı*<br/>
+MIDL derleyicisi tarafından oluşturulan .idl dosyasının adını belirtir. Dosyanın uzantısı varsayılır; belirtin *filename*.idl uzantı istiyorsanız .idl.
+
+## <a name="remarks"></a>Açıklamalar
+
+/ Idlout seçeneği, .idl dosyasının uzantısını ve adını belirtir.
+
+MIDL derleyicisi olan projelerin bağlanırken Visual C++ bağlayıcı tarafından çağrılır [Modülü](../../windows/module-cpp.md) özniteliği.
+
+/ IDLOUT ayrıca MIDL derleyicisi ile ilişkili diğer çıktı dosyalarının dosya adlarını belirtir:
+
+- *filename*.tlb
+
+- *filename*_p.c
+
+- *filename*_i.c
+
+- *filename*.h
+
+*filename*  /ıdlout için geçirdiğiniz parametredir. Varsa [/tlbout](../../build/reference/tlbout-name-dot-tlb-file.md) belirtilirse, .tlb dosyasının adını / tlbout alacak *filename*.
+
+/ Idlout ne/tlbout belirtirseniz, bağlayıcı vc70.tlb, vc70.idl vc70_p.c vc70_i.c ve vc70.h oluşturun.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **katıştırılmış IDL** özellik sayfası.
+
+1. Değiştirme **birleştirme IDL taban dosyası adı** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.MergedIDLBaseFileName%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)<br/>
+[/ IGNOREIDL (öznitelikleri Mıdl'ye işleme)](../../build/reference/ignoreidl-don-t-process-attributes-into-midl.md)
+[/MIDL (MIDL komut satırı seçeneklerini belirt)](../../build/reference/midl-specify-midl-command-line-options.md)
+[öznitelikli Program derleme](../../windows/building-an-attributed-program.md)

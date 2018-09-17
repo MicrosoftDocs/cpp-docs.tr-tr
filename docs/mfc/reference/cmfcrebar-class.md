@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: af74ab381293e04c08a1fa8c601558edaeacf6c4
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0336cb9bd2f0e12c834615647cb4a442ab261316
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43689198"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721519"
 ---
 # <a name="cmfcrebar-class"></a>CMFCReBar sınıfı
 A `CMFCReBar` düzen, süreklilik ve çubuk barınağı denetimleri için durum bilgileri sağlayan denetim çubuğu nesnedir.  
@@ -113,20 +113,20 @@ BOOL AddBar(
  [in] [out] *pBar*  
  Çubuk barınağı eklenecek olan alt penceresine bir işaretçi. Başvurulan nesnenin olmalıdır **WS_CHILD** pencere stili.  
   
- [in] *pszText*  
- Çubuk barınağı görüntülenecek metni belirtir. Metin alt pencere bir parçası değil. Bunun yerine, rebar üzerinde görüntülenir.  
+*pszText*<br/>
+[in] Çubuk barınağı görüntülenecek metni belirtir. Metin alt pencere bir parçası değil. Bunun yerine, rebar üzerinde görüntülenir.  
   
  [in] [out] *pbmp*  
  Çubuk barınağı arka plan üzerinde görüntülenecek bit eşlem belirtir.  
   
- [in] *dwStyle*  
- Bant için uygulanacak stili içerir. Açıklaması bant stilleri tam bir listesi için bkz. `fStyle` içinde [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısındaki Windows SDK Belgeleri.  
+*dwStyle*<br/>
+[in] Bant için uygulanacak stili içerir. Açıklaması bant stilleri tam bir listesi için bkz. `fStyle` içinde [REBARBANDINFO](/windows/desktop/api/commctrl/ns-commctrl-tagrebarbandinfoa) yapısındaki Windows SDK Belgeleri.  
   
- [in] *clrFore*  
- Çubuk barınağı ön plan rengi temsil eder.  
+*clrFore*<br/>
+[in] Çubuk barınağı ön plan rengi temsil eder.  
   
- [in] *clrBack*  
- Çubuk barınağı arka plan rengi temsil eder.  
+*clrBack*<br/>
+[in] Çubuk barınağı arka plan rengi temsil eder.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bant için çubuk barınağı başarıyla eklenmişse TRUE; Aksi takdirde FALSE.  
@@ -146,14 +146,14 @@ BOOL Create(
  [in] [out] *pParentWnd*  
  Bu çubuk barınağı denetiminin üst penceresine bir işaretçi.  
   
- [in] *dwCtrlStyle*  
- Çubuk barınağı denetiminin stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi daraltmak çubuk barınağı denetimi bitişik bantları ayırmak için satır görüntüler. Geçerli stilleri bir listesi için bkz. [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK belgelerinde.  
+*dwCtrlStyle*<br/>
+[in] Çubuk barınağı denetiminin stilini belirtir. Varsayılan Stil değer **RBS_BANDBORDERS**, hangi daraltmak çubuk barınağı denetimi bitişik bantları ayırmak için satır görüntüler. Geçerli stilleri bir listesi için bkz. [Rebar denetim stilleri](/windows/desktop/Controls/rebar-control-styles) Windows SDK belgelerinde.  
   
- [in] *dwStyle*  
- Çubuk barınağı denetiminin pencere stili. Geçerli stilleri bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
+*dwStyle*<br/>
+[in] Çubuk barınağı denetiminin pencere stili. Geçerli stilleri bir listesi için bkz. [pencere stilleri](../../mfc/reference/styles-used-by-mfc.md#window-styles).  
   
- [in] *nID*  
- Barınağının alt penceresi kimliği  
+*nID*<br/>
+[in] Barınağının alt penceresi kimliği  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Çubuk barınağı başarıyla oluşturulursa TRUE; Aksi takdirde FALSE.  
@@ -183,8 +183,8 @@ virtual CSize CalcFixedLayout(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bStretch*  
- [in] *bHorz*  
+*bStretch*<br/>
+[in] [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -248,8 +248,8 @@ virtual INT_PTR OnToolHitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- [in] *PTI*  
+*Noktası*<br/>
+[in] [in] *PTI*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -265,8 +265,8 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pTarget*  
- [in] *bDisableIfNoHndler*  
+*pTarget*<br/>
+[in] [in] *bDisableIfNoHndler*  
   
 ### <a name="remarks"></a>Açıklamalar  
   

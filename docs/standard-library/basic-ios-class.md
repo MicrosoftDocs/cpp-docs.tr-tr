@@ -65,12 +65,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3abc3c08b46577f7d59b2831a68ded812a5da60a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 175d7895331ec960244354870c6bd6845baf37d1
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110024"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725328"
 ---
 # <a name="basicios-class"></a>basic_ios Sınıfı
 
@@ -230,9 +230,11 @@ void clear(io_state state);
 
 ### <a name="parameters"></a>Parametreler
 
-*Durum* (isteğe bağlı) tüm bayraklar temizledikten sonra ayarlamak istediğiniz bayrakları. Varsayılan olarak `goodbit`.
+*durumu*<br/>
+(İsteğe bağlı) Tüm bayraklar temizledikten sonra ayarlamak istediğiniz bayraklar. Varsayılan olarak `goodbit`.
 
-*reraise* (isteğe bağlı) belirtir olup, özel durum yeniden yükseltilmiş olmalıdır. Varsayılan olarak **false** (özel durum yeniden oluşturmaz).
+*reraise*<br/>
+(İsteğe bağlı) Özel durum yeniden yükseltilmiş gerekip gerekmediğini belirtir. Varsayılan olarak **false** (özel durum yeniden oluşturmaz).
 
 ### <a name="remarks"></a>Açıklamalar
 

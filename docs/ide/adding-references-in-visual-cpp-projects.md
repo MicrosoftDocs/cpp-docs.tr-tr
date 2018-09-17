@@ -17,109 +17,131 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bda420768b1ff0819ba666f71d62bfffa86e2105
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 1438b364dac817fe2dbe47f117d672165a7693d5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33336114"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722455"
 ---
 # <a name="adding-references-in-visual-c-projects"></a>Visual C++ projelerine başvuru ekleme
-Programların diğer ikili dosyaları, DLL'ler gibi içinde API'leri çağırmak yaygın Windows çalışma zamanı bileşenleri, uzantı SDK'ları, COM bileşenlerini ve .NET derlemelerini. Bu, diğer ikili dosyaları programınızın bulur biçimi hem de projenizi türünü ve ikili türüne bağlıdır.  
+DLL dosyaları gibi diğer ikili API'lere çağrılacak programları için yaygın olarak görülür Windows çalışma zamanı bileşenleri, uzantı SDK'ları, COM bileşenleri ve .NET derlemeleri. Bu, diğer ikili dosyaları programınızın bulur bir şekilde hem proje türü ve ikili türü bağlıdır.  
   
- Çözümünüzdeki, başka bir projeye göre oluşturulmuyor yerel bir DLL veya COM bileşeni kullanıyorsa yerel C++ projesinde LoadLibrary veya CoCreateInstance ikili dosya yolunu belirtin, aksi takdirde belirli Hoş Geldiniz bakarak bulun sistem izin kullandığınız l tanımlı konumları.  
+ Çözümünüzdeki başka bir proje tarafından üretilmekte olan olmayan yerel bir DLL veya COM bileşeni kullanıyorsa yerel bir C++ projesinde LoadLibrary veya CoCreateInstance ikili dosya yolunu belirtin, aksi takdirde belirli Hoş Geldiniz bakarak bulun sistem ayarlasın kullandığınız m tanımlı konumları.  
   
- Projeleri UWP projeleri veya C + gibi diğer türlerinde +/ CLI projeleri veya ikili çözümünüzdeki başka bir projeye göre üretildiğinde eklediğiniz bir *başvuru* derleme, bileşen veya proje.   Bir başvuru temelde bulun ve ikili ile iletişim kurmak, program sağlayan veri kümesidir.       Visual Studio düşük düzey ayrıntılarını işler, bu, bir başvuru ekleyin. Başvurular bir C++ projesinde .NET Frameworkassemblies ayarlamak için (C + +/ CLI yalnızca), COM bileşenleri, çözüm dahil edilen diğer projelerin paylaşılan projeleri veya bağlı Hizmetleri, sağ tıklayın **başvuruları** düğümünde**Çözüm Gezgini** ortaya çıkarmak için **başvuru Yöneticisi**. Başvuru Yöneticisi'nde gördüğünüz proje türüne bağlı olarak farklılık gösterir.  
+ Diğer türden projeleri gibi UWP projeleri veya C + +/ CLI projeleri veya çözümünüzdeki başka bir proje tarafından üretilen ikili, eklediğiniz bir *başvuru* derleme, bileşen veya proje.   Aslında, bulun ve ikili ile iletişim kurmak için programınızı sağlayan veri kümesi bir başvurudur.       Bir başvuru eklediğinizde, Visual Studio düşük düzey ayrıntıları işler. Bir C++ projesi başvuruları .NET Frameworkassemblies için ayarlanacak (C + +/ CLI yalnızca), COM bileşenlerini, diğer projeleri çözüm gibi proje paylaşılan ya da bağlı hizmetler, sağ **başvuruları** düğümünde**Çözüm Gezgini** ortaya çıkarmak için **başvuru Yöneticisi**. Başvuru Yöneticisi'nde gördüklerinizi, proje türüne bağlı olarak farklılık gösterir.  
   
- Yerel C++ projesinde (ATL) kavram *başvuruları* yalnızca Çözümdeki tüm içinde gördüğünüz olacak şekilde paylaşılan projeleri de dahil olmak üzere diğer projeler için geçerlidir **başvuru Yöneticisi**:  
+ Yerel C++ projesinde (ATL) kavramı *başvuruları* yalnızca tüm içinde gördüğünüz şekilde paylaşılan projeler dahil olmak üzere, çözümdeki diğer projelere uygulanır **başvuru Yöneticisi**:  
   
- ![Visual C&#43; &#43; başvuru Yöneticisi &#40;ATL projeleri&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ başvuru Yöneticisi'ni (ATL projeleri)")  
+ ![Visual C&#43; &#43; başvuru Yöneticisi &#40;ATL projeleri&#41;](../ide/media/visual-c---reference-manager--atl-projects-.png "Visual C++ başvuru Yöneticisi (ATL projeleri)")  
   
- C + +/ CLI ya da evrensel Windows platformu proje başvuruları kavramı ikili dosyaları diğer projeleri yanı sıra daha fazla tür uygulandığı.  Bunlar tüm sunulan **başvuru Yöneticisi**.
+ C + +/ CLI veya evrensel Windows platformu projesi başvuruları kavramını ikili dosyalarının çözümdeki diğer projelerin yanı sıra daha fazla tür uygulandığı.  Bu tüm sunulan **başvuru Yöneticisi**.
   
 ## <a name="reference-properties"></a>Başvuru özellikleri  
- Her tür bir başvuru özelliklere sahiptir. Çözüm Gezgini'nde Başvurusu'ı seçip tuşuna basarak özelliklerini görüntüleyebilirsiniz **Alt + Enter**, veya başka sağ ve seçme **özellikleri**. Bazı özellikleri salt okunurdur ve bazı değiştirilebilir. Ancak, genellikle bu özellikleri el ile değiştirmeniz gerekmez.  
+ Her tür başvurusu özellikleri vardır. Çözüm Gezgini'nde reference'ı seçip tuşuna basarak özelliklerini görüntüleyebilirsiniz **Alt + Enter**, veya başka sağ ve seçme **özellikleri**. Bazı özellikler salt okunurdur ve bazı değiştirilebilir. Ancak, genellikle bu özellikleri el ile değiştirmeniz gerekmez.  
   
 ### <a name="activex-reference-properties"></a>ActiveX başvuru özellikleri  
- ActiveX başvuru özellikleri yalnızca COM bileşenlerini başvurular için kullanılabilir. Yalnızca bir COM bileşeni seçildiğinde bu özellikleri görüntülenir **başvuruları** bölmesi. Özellikleri değiştirilemez.  
+ ActiveX başvurusu özellikleri yalnızca COM bileşenleri başvurular için kullanılabilir. Bu özellikler yalnızca bir COM bileşeni seçildiğinde görüntülenen **başvuruları** bölmesi. Özellikleri değiştirilemez.  
   
- **Denetim tam yolu**  
- Başvurulan denetim dizin yolunu görüntüler.  
+- **Denetim tam yolu**
+
+   Başvurulan denetimin dizin yolunu görüntüler.  
   
- **Denetim GUID**  
- ActiveX denetimi için GUID görüntülüyor.  
+- **Denetim GUID'i**
+
+   ActiveX denetimi için GUID görüntüler.  
   
- **Sürüm denetimi**  
- Başvurulan ActiveX denetiminin sürümünü görüntüler.  
+- **Denetim sürümü**
+
+   Başvurulan ActiveX denetiminin sürümünü görüntüler.  
   
- **Tür kitaplığı adı**  
- Başvurulan tür kitaplığı adını görüntüler.  
+- **Tür kitaplığı adı**
+
+   Başvurulan tür kitaplığının adı görüntüler.  
   
- **Sarmalayıcı aracı**  
- Birlikte çalışma derlemesinden başvurulan COM kitaplığı veya ActiveX denetimi oluşturmak için kullanılan araç görüntüler.  
+- **Sarmalayıcı aracı**
+
+   Başvurulan COM kitaplığından ya da ActiveX denetiminden birlikte çalışma derlemesi oluşturmak için kullanılan araç görüntüler.  
   
-### <a name="assembly-reference-properties"></a>Derleme başvurusu özellikleri  
- Derleme başvurusu özellikler, yalnızca .NET Frameworkassemblies C + başvurular için kullanılabilir +/ CLI projeleri. Yalnızca .NET Frameworkassembly seçildiğinde bu özellikleri görüntülenir **başvuruları** bölmesi. Özellikleri değiştirilemez.  
+### <a name="assembly-reference-properties"></a>Bütünleştirilmiş kod başvuru özellikleri  
+ Derleme başvurusu özellikleri yüklenebilir yalnızca başvurular .NET Frameworkassemblies C + +/ CLI projeleri. Bu özellikler yalnızca .NET Frameworkassembly seçildiğinde görüntülenen **başvuruları** bölmesi. Özellikleri değiştirilemez.  
   
- **Göreli yolu**  
- Proje dizininin başvurulan derleme göreli yolu görüntüler.  
+- **Göreli yolu**
+
+   Proje dizininden başvurulan derlemeye göreli yolunu görüntüler.  
   
-### <a name="build-properties"></a>Özellikleri oluşturma  
- Aşağıdaki özellikler başvuruları çeşitli türlerde kullanılabilir. Bunlar, nasıl oluşturulacağını başvurularla belirtmenize olanak verir.  
+### <a name="build-properties"></a>Derleme özellikleri  
+ Aşağıdaki özellikler, çeşitli türlerdeki başvurular üzerinde kullanılabilir. Derleme başvuruları ile nasıl belirtmenize olanak tanırlar.  
   
- **Yerel kopyalama**  
- Otomatik olarak başvurulan bir derleme sırasında hedef konuma kopyalanıp kopyalanmayacağını belirtir.  
+- **Yerele Kopyala**
+
+   Başvurulan derlemenin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir.  
   
- **Yerel uydu derlemelerini kopyalayın**  
- Otomatik olarak başvurulan derlemeyi uydu derlemelerini derleme sırasında hedef konuma kopyalanıp kopyalanmayacağını belirtir. Yalnızca, kullanılan **kopya yerel** olan `true`.  
+- **Yerel uydu derlemelerini Kopyala**
+
+   Başvurulan derlemenin uydu derlemelerinin bilgisayarın bir yapı sırasında hedef konuma otomatik olarak kopyalanıp kopyalanmayacağını belirtir. Yalnızca **Yereli Kopyala** olduğu `true`.  
   
- **Başvuru derleme çıktı**  
- Bu derleme yapı işleminde kullanıldığını belirtir. Varsa `true`, derleme derleyici komut satırında derleme sırasında kullanılır.  
+- **Başvuru bütünleştirilmiş kodu çıkışı**
+
+   Bu derlemenin yapı işleminde kullanıldığını belirtir. Varsa `true`, derleme yapı sırasında derleyici komut satırında kullanılır.  
   
-### <a name="project-to-project-reference-properties"></a>Proje Proje başvuru özellikleri  
- Aşağıdaki özellikleri tanımlama bir *proje proje başvurusu* seçildiyse projeden **başvuruları** aynı çözüm içinde başka bir projeye bölmesi. Daha fazla bilgi için bkz: [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).  
+### <a name="project-to-project-reference-properties"></a>Projeden projeye başvuru özellikleri  
+ Aşağıdaki özellikleri tanımlayan bir *projeden projeye başvuru* seçili projeden **başvuruları** aynı çözümdeki başka bir projeye bölmesi. Daha fazla bilgi için [bir projedeki başvuruları yönetme](/visualstudio/ide/managing-references-in-a-project).  
   
- **Bağlantı kitaplık bağımlılıkları**  
- Bu özellik olduğunda **doğru**, proje sistemi bağımsız proje tarafından üretilen .lib dosyaları bağımlı projesine bağlar. Genellikle, belirteceksiniz **doğru**.  
+- **Bağlantı kitaplığı bağımlılıkları**
+
+   Bu özellik olduğunda **True**, proje sistemi bağımsız proje tarafından üretilen .lib dosyaları bağımlı projesine bağlar. Genellikle, belirteceği **True**.  
   
- **Proje tanımlayıcısı**  
- Bağımsız proje benzersiz olarak tanımlar. Özellik, bir iç sistem değiştirilemez GUID değeridir.  
+- **Proje tanımlayıcısı**
+
+   Bağımsız projenin benzersiz olarak tanımlar. Özelliği bir iç sistem değiştirilemez GUID değeridir.  
   
- **Kitaplık bağımlılık girişleri kullanın**  
- Bu özellik olduğunda **yanlış**, proje sistemi bağımlı projeye .obj dosyaları bağımsız proje tarafından üretilen kitaplığın bağlayacaksınız değil. Sonuç olarak, bu değer artımlı bağlantılandırma devre dışı bırakır. Genellikle, belirteceksiniz **False** için uygulama oluşturma çok sayıda bağımsız proje varsa uzun zaman alabilir.  
+- **Kitaplık bağımlılığı girişlerini kullan**
+
+   Bu özellik olduğunda **False**, proje sistemi bağımlı projeye bağımsız proje tarafından üretilen kitaplığı .obj dosyaları bağlayacaksınız değil. Sonuç olarak, bu değer artımlı bağlamayı devre dışı bırakır. Genellikle, belirteceği **False** çünkü uygulama oluşturma çok sayıda bağımsız proje ise bir uzun zaman alabilir.  
   
 ### <a name="reference-properties"></a>Başvuru özellikleri  
- Aşağıdaki özellikler COM ve .NET derleme başvurularını üzerinde bulunan ve değiştirilemez.  
+ Aşağıdaki özellikleri, COM ve .NET derleme başvurularını bulunur ve değiştirilemez.  
   
- **Derleme adı**  
- Başvurulan derlemeyi derleme adını görüntüler.  
+- **Derleme adı**
+
+   Başvurulan derlemenin derleme adını görüntüler.  
   
- **Kültür**  
- Seçili başvuruyu kültürünü görüntüler.  
+- **Kültür**
+
+   Seçilen başvurunun kültürü görüntüler.  
   
- **Açıklama**  
- Seçili başvuruyu açıklamasını görüntüler.  
+- **Açıklama**
+
+   Seçilen başvurunun açıklaması görüntüler.  
   
- **Tam yolu**  
- Başvurulan derlemeyi dizin yolunu görüntüler.  
+- **Tam yolu**
+
+   Başvurulan derlemenin dizin yolunu görüntüler.  
   
- **Kimlik**  
- .NET Frameworkassemblies için tam yolunu görüntüler. COM bileşenleri için GUID görüntülüyor.  
+- **Kimlik**
+
+   .NET Frameworkassemblies için tam yolunu görüntüler. COM bileşenleri için GUID görüntüler.  
   
- **Etiket**  
- Başvuru etiketini görüntüler.  
+- **Etiket**
+
+   Başvurunun etiketi görüntüler.  
   
- **Ad**  
- Başvuru adını görüntüler.  
+- **Ad**
+
+   Başvuru adını görüntüler.  
   
- **Ortak anahtar belirteci**  
- Başvurulan derlemeyi tanımlamak için kullanılan ortak anahtar belirteci görüntüler.  
+- **Ortak anahtar belirteci**
+
+   Başvurulan derlemeyi tanımlamak için kullanılan ortak anahtar belirtecini görüntüler.  
   
- **Güçlü ad**  
- `true` Başvurulan derlemeyi tanımlayıcı ad varsa. Güçlü bir adlandırılmış derleme benzersiz olarak sürümlü ' dir.  
+- **Tanımlayıcı ad**
+
+   `true` başvurulan derlemenin tanımlayıcı ad varsa. Bir tanımlayıcı adlı derleme sürümlüdür.  
   
- **Sürüm**  
- Başvurulan derlemeyi sürümünü görüntüler.  
+- **Sürüm**
+
+   Başvurulan derlemenin sürümünü gösterir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Özellik sayfaları](../ide/property-pages-visual-cpp.md)   

@@ -108,12 +108,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 702cc504032f7c4702dcc1b317c517d53b9cccc9
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 0b88e53d7f5cfdd03728f8d1a474ee5171ca5daa
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693886"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717593"
 ---
 # <a name="crebarctrl-class"></a>CReBarCtrl sınıfı
 Alt pencere kapsayıcısı olan bir çubuk barınağı denetiminin işlevselliğini kapsüller.  
@@ -766,8 +766,8 @@ BOOL SetBandWidth(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *uBand*|Bir rebar bant sıfır tabanlı dizini.|  
-|[in] *cxWidth*|Yeni çubuk barınağı bant, piksel cinsinden genişliği.|  
+|*uBand*|[in] Bir rebar bant sıfır tabanlı dizini.|  
+|*cxWidth*|[in] Yeni çubuk barınağı bant, piksel cinsinden genişliği.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -846,8 +846,8 @@ DWORD SetExtendedStyle(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *dwMask*|Bitsel bir birleşimi (veya) hangi bayrak belirten bayrakları *dwStyleEx* parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: varsayılan olarak, bölme ve en altında yatay modda ve sağa doğru dikey modda gösterir.<br /><br /> RBS_EX_TRANSPARENT: İleri [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) üst penceresine ileti.|  
-|[in] *dwStyleEx*|Bitsel bir birleşimi (veya) stilleri uygulamak için belirten bayrak. Stil ayarlamak için kullanılan aynı bayrağını belirtin *dwMask* parametresi. Bir stil sıfırlamak için ikili sıfır belirtin.|  
+|*dwMask*|[in] Bitsel bir birleşimi (veya) hangi bayrak belirten bayrakları *dwStyleEx* parametresi geçerlidir. Bir veya daha fazla aşağıdaki değerleri kullanın:<br /><br /> RBS_EX_SPLITTER: varsayılan olarak, bölme ve en altında yatay modda ve sağa doğru dikey modda gösterir.<br /><br /> RBS_EX_TRANSPARENT: İleri [WM_ERASEBKGND](/windows/desktop/winmsg/wm-erasebkgnd) üst penceresine ileti.|  
+|*dwStyleEx*|[in] Bitsel bir birleşimi (veya) stilleri uygulamak için belirten bayrak. Stil ayarlamak için kullanılan aynı bayrağını belirtin *dwMask* parametresi. Bir stil sıfırlamak için ikili sıfır belirtin.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki genişletilmiş stili.  

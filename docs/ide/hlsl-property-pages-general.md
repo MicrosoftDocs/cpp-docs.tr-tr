@@ -20,49 +20,57 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77cc9a44076999633fd17b049cbcfad75f65eb7e
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 05f4beee7507ecba788e634634ca45eab91b4e7c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340144"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725148"
 ---
 # <a name="hlsl-property-pages-general"></a>HLSL Özellik Sayfaları: Genel
-HLSL derleyici (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **genel** özellik sayfası. Nasıl erişileceği hakkında bilgi için **genel** özellik sayfası HLSL klasöründeki bkz [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **genel** özellik sayfası. Nasıl erişileceği hakkında daha fazla bilgi için **genel** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
-## <a name="uielement-list"></a>UIElement Listesi  
- **Ek içeren dizinler**  
- Bir veya daha fazla dizinleri INCLUDE yolu ekler. Dizinleri ayırmak için noktalı kullanın.  
+## <a name="uielement-list"></a>UIElement Listesi
+
+- **Ek içeren dizinler**
+
+   Bir veya daha fazla dizin yoluna ekler. Dizinleri birbirinden ayırmak için noktalı virgül kullanın.  
   
- Bu özellik karşılık gelen **/I [path]** komut satırı bağımsız değişkeni.  
+ Bu özellik için karşılık gelen **/I [yol]** komut satırı bağımsız değişkeni.  
   
- **Giriş noktası adı**  
- Giriş noktası için gölgelendirici belirtir. Varsayılan değer olan **ana**.  
+- **Giriş noktası adı**
+
+   Gölgelendirici için giriş noktasını belirtir. Varsayılan değer olan **ana**.  
   
- Bu özellik karşılık gelen **/E [name]** komut satırı bağımsız değişkeni.  
+ Bu özellik için karşılık gelen **/E [name]** komut satırı bağımsız değişkeni.  
   
- **İyileştirmeleri devre dışı bırak**  
- **Evet (/ Od)** iyileştirmeler; devre dışı bırakmak için Aksi halde, **Hayır**. Varsayılan değer olan **Evet (/ Od)** için **hata ayıklama** yapılandırmaları ve **Hayır** için **sürüm** yapılandırmaları.  
+- **İyileştirmeleri devre dışı bırak**
+
+   **Evet (/ Od)** ; iyileştirmeleri devre dışı bırakmak için Aksi takdirde, **Hayır**. Varsayılan değer olan **Evet (/ Od)** için **hata ayıklama** yapılandırmaları ve **Hayır** için **yayın** yapılandırmaları.  
   
- **/Od** HLSL derleyici komut satırı bağımsız değişkeni örtük olarak geçerlidir **/Gfp** komut satırı bağımsız değişkeni, ancak çıktı olmayabilir her ikisi de geçirerek üretilen çıkış aynı **/Od**  ve **/Gfp** komut satırı bağımsız değişkenleri açıkça.  
+ **/Od** HLSL derleyici komut satırı bağımsız değişkeni örtük olarak geçerlidir **/gfp** komut satırı bağımsız değişkeni, ancak çıkış olabilir hem de geçirerek üretilen çıktısına benzer **/Od**  ve **/gfp** komut satırı bağımsız değişkenlerini açıkça.  
   
- **Hata ayıklama bilgisi etkinleştir**  
- **Evet (/zı)** hata ayıklama bilgilerini; etkinleştirmek için Aksi halde, **Hayır**. Varsayılan değer olan **(/Zi) Evet** için **hata ayıklama** yapılandırmaları ve **Hayır** için **sürüm** yapılandırmaları.  
+- **Hata ayıklamayı etkinleştir bilgileri**
+
+   **Evet (/Zi)** etkinleştirme hata ayıklama bilgilerini; Aksi takdirde, **Hayır**. Varsayılan değer olan **Evet (/Zi)** için **hata ayıklama** yapılandırmaları ve **Hayır** için **yayın** yapılandırmaları.  
   
- **Gölgelendirici türü**  
- Gölgelendirici türünü belirtir. Gölgelendiriciler farklı türde grafik ardışık düzen farklı kısımlarını uygulayın. Gölgelendiriciler belirli türdeki yalnızca daha yeni gölgelendirici modellerinde kullanılabilir (hangi belirtilen tarafından **gölgelendirici modeli** özelliği) — Örneğin, gölgelendiriciler gölgelendirici modeli 5 sunuldu işlem.  
+- **Gölgelendirici türü**
+
+   Gölgelendirici türünü belirtir. Farklı türde gölgelendiricileri grafik ardışık düzen farklı bölümlerine uygulayın. Belirli türde bir gölgelendirici yalnızca son gölgelendirici modelleri kullanılabilir (tarafından belirtilir **gölgelendirici modeli** özelliği) — örneğin gölgelendiricileri gölgelendirici modeli 5 sunulmuştur işlem.  
   
- Bu özellik karşılık gelen **[türü]** kısmı **/T [türü] _ [model]** HLSL derleyici komut satırı bağımsız değişkeni. **Gölgelendirici modelleri** özellik belirtir **[model]** bağımsız değişkeni kısmı.  
+   Bu özellik için karşılık gelen  **\[türü]** kısmı **/T \[türü] _\[modeli]** HLSL derleyici komut satırı bağımsız değişkeni. **Gölgelendirici modelleri** özellik belirtir **[model]** bağımsız değişkeni bir kısmı.  
   
- **Gölgelendirici modeli**  
- Gölgelendirici modeli belirtir. Farklı gölgelendirici modelleri farklı özellikler vardır. Genel olarak, daha yeni gölgelendirici modelleri genişletilmiş özellikler sunar ancak gölgelendirici kodu çalıştırmak için daha modern grafik donanım gerektirir. Belirli türdeki gölgelendiriciler (tarafından belirtilir **gölgelendirici türü** özelliği) yalnızca daha yeni gölgelendirici modellerinde kullanılabilir — örneğin, gölgelendiriciler gölgelendirici modeli 5 sunuldu işlem.  
+- **Gölgelendirici modeli**
+
+   Gölgelendirici modelini belirtir. Farklı gölgelendirici modelleri, farklı özelliklere sahip. Genel olarak, daha yeni gölgelendirici modelleriyle genişletilmiş özellikler sunar ancak gölgelendirici kodu çalıştırmak için daha modern grafik donanımı gerektirir. Gölgelendiricileri belirli türdeki (tarafından belirtilir **gölgelendirici türünü** özelliği) yalnızca daha yeni gölgelendirici modelleriyle kullanılabilir — örneğin gölgelendiricileri gölgelendirici modeli 5 sunulmuştur işlem.  
   
- Bu özellik karşılık gelen **[model]** kısmı **/T [türü] _ [model]** HLSL derleyici komut satırı bağımsız değişkeni. **Gölgelendirici türü** özellik belirtir **[türü]** bağımsız değişkeni kısmı.  
+   Bu özellik için karşılık gelen  **\[modeli]** kısmı **/T \[türü] _\[modeli]** HLSL derleyici komut satırı bağımsız değişkeni. **Gölgelendirici türünü** özellik belirtir **[türü]** bağımsız değişkeni bir kısmı.  
   
- **Önişlemci tanımları**  
- HLSL kaynak kodu dosyasına uygulamak için bir veya daha fazla önişlemci sembolü tanımları ekler. Simge tanımlarını ayırmak için noktalı kullanın.  
+- **Önişlemci tanımları**
+
+   HLSL kaynak kod dosyasına uygulanacak bir veya daha çok önişlemci sembol tanımlarını ekler. Sembol tanımlarını ayırmak için noktalı virgül kullanın.  
   
- Bu özellik karşılık gelen **/D [tanımları]** HLSL derleyici komut satırı bağımsız değişkeni.  
+   Bu özellik için karşılık gelen **/D \[tanımları]** HLSL derleyici komut satırı bağımsız değişkeni.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [HLSL özellik sayfaları](../ide/hlsl-property-pages.md)   

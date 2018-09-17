@@ -12,12 +12,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 282d8bbd55bec8053961c709eb3733a65972b187
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 5c37e010caa6c7cfb44ddaf2f7dd1e28bbb5c291
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43693119"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717710"
 ---
 # <a name="arm-assembler-directives"></a>ARM Assembler Yönergeleri
 
@@ -25,89 +25,113 @@ ms.locfileid: "43693119"
 
 ## <a name="microsoft-implementations-of-arm-assembly-directives"></a>ARM derleme yönergeleri Microsoft uygulamaları
 
-`AREA`<br/>
-Microsoft ARM derleyicisi bunları destekleyen `AREA` öznitelikleri: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`, `NOINIT`, `READONLY`, `READWRITE`, `THUMB`, `ARM`.
+- ALAN
 
-Hariç `THUMB` ve `ARM` açıklandığı gibi çalışma [ARM derleyici armasm Başvuru Kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
+   Microsoft ARM derleyicisi bunları destekleyen `AREA` öznitelikleri: `ALIGN`, `CODE`, `CODEALIGN`, `DATA`, `NOINIT`, `READONLY`, `READWRITE`, `THUMB`, `ARM`.
 
-Microsoft ARM derleyicisi, `THUMB` belirten bir `CODE` bölümü Thumb kodu içerir ve varsayılan `CODE` bölümler.  `ARM` bölümü, ARM kodu içerdiğini gösterir.
+   Hariç `THUMB` ve `ARM` açıklandığı gibi çalışma [ARM derleyici armasm Başvuru Kılavuzu](http://infocenter.arm.com/help/topic/com.arm.doc.dui0802b/index.html).
 
-`ATTR`<br/>
-Desteklenmez.
+   Microsoft ARM derleyicisi, `THUMB` belirten bir `CODE` bölümü Thumb kodu içerir ve varsayılan `CODE` bölümler.  `ARM` bölümü, ARM kodu içerdiğini gösterir.
 
-`CODE16`<br/>
-Microsoft ARM derleyicisi Project'in izin vermediği pre-UAL Thumb sözdizimi gösterdiğinden desteklenmiyor.  Kullanım `THUMB` bunun yerine, UAL söz dizimi ile birlikte yönergesi.
+- ATTR
 
-`COMMON`<br/>
-Genel bölge için bir hizalama belirtimine desteklenmiyor.
+   Desteklenmez.
 
-`DCDO`<br/>
-Desteklenmez.
+- KODU16
 
-`DN`, `QN`, `SN`<br/>
-Bir türü veya bir kayıt diğer yolundaki belirtimi desteklenmiyor.
+   Microsoft ARM derleyicisi Project'in izin vermediği pre-UAL Thumb sözdizimi gösterdiğinden desteklenmiyor.  Kullanım `THUMB` bunun yerine, UAL söz dizimi ile birlikte yönergesi.
 
-`ENTRY`<br/>
-Desteklenmez.
+- ORTAK
 
-`EQU`<br/>
-Bir tür için tanımlanmış sembol belirtimi desteklenmiyor.
+   Genel bölge için bir hizalama belirtimine desteklenmiyor.
 
-`EXPORT` ve `GLOBAL`
+- DCDO
 
-> **Dışarı aktarma** <em>sym</em>{**[**<em>türü</em>**]**}
+   Desteklenmez.
 
-*sym* verilecek semboldür.  [*türü*], belirtilmişse olabilir `[DATA]` sembol veri noktaları belirtmek için veya `[FUNC]` sembol kod noktaları belirtmek için.
+- `DN`, `QN`, `SN`
 
-`GLOBAL` eşanlamlıdır `EXPORT`.
+   Bir türü veya bir kayıt diğer yolundaki belirtimi desteklenmiyor.
 
-`EXPORTAS`<br/>
-Desteklenmez.
+- GİRİŞ
 
-`FRAME`<br/>
-Desteklenmez.
+   Desteklenmez.
 
-`FUNCTION` ve `PROC`<br/>
-Özel belirtimi için derleme sözdizimi destekler; ancak Kaydet çağıran ve çağrılan tasarrufu olan kayıtları listeleyerek yordamlarını çağırma Microsoft ARM derleyicisi söz dizimini kabul eder ancak kayıt listeleri yoksayar.  Derleyici tarafından oluşturulan hata ayıklama bilgileri yalnızca için varsayılan çağırma kuralını destekler.
+- EQU
 
-`IMPORT` ve `EXTERN`
+   Bir tür için tanımlanmış sembol belirtimi desteklenmiyor.
 
-> **İçeri aktarma** *sym*{**, ZAYIF** *diğer*{**, türü** *t*}}
+- `EXPORT` ve `GLOBAL`
 
-*sym* içeri aktarılacak sembolü adıdır.
+   Dışarı aktarma şu sözdizimini kullanarak belirtir:
 
-Varsa `WEAK` *diğer* belirtilirse, bu gösterir *sym* zayıf bir dış. Bunun için hiçbir tanım bağlantı zamanında bulunan sonra bağlamak yerine tüm başvuruları *diğer*.
+   > **Dışarı aktarma**|**genel** <em>sym</em>{**[**<em>türü</em>**]**}
 
-Varsa `TYPE` *t* , ardından belirtilen *t* nasıl bağlayıcı çözümlemeye belirten *sym*.  Bu değerler için *t* mümkündür:<br/>
-1 — bir kitaplık arama gerçekleştirmeyin *sym*<br/>
-2 — kitaplığı araması gerçekleştirmek *sym*<br/>
-3 —*sym* için bir diğer addır *diğer* (varsayılan)
+   *sym* verilecek semboldür.  [*türü*], belirtilmişse olabilir `[DATA]` sembol veri noktaları belirtmek için veya `[FUNC]` sembol kod noktaları belirtmek için. `GLOBAL` eşanlamlıdır `EXPORT`.
 
-`EXTERN` eşanlamlıdır `IMPORT`dışında *sym* yalnızca, geçerli derlemede ona başvurusu varsa alınır.
+- EXPORTAS
 
-`MACRO`<br/>
-Makro koşul kodunu tutacak bir değişken kullanımı desteklenmiyor. Varsayılan değerleri makrosu parametreler desteklenmez.
+   Desteklenmez.
 
-`NOFP`<br/>
-Desteklenmez.
+- ÇERÇEVE
 
-`OPT`, `TTL`, `SUBT`<br/>
-Microsoft ARM derleyicisi listelerini üretmediği desteklenmiyor.
+   Desteklenmez.
 
-`PRESERVE8`<br/>
-Desteklenmez.
+- `FUNCTION` ve `PROC`
 
-`RELOC`<br/>
-`RELOC n` yalnızca bir yönerge ya da veri tanımı yönergesi takip edebilirsiniz. "Yerleştirildiğinde anonim hiçbir simge" dir.
+   Özel belirtimi için derleme sözdizimi destekler; ancak Kaydet çağıran ve çağrılan tasarrufu olan kayıtları listeleyerek yordamlarını çağırma Microsoft ARM derleyicisi söz dizimini kabul eder ancak kayıt listeleri yoksayar.  Derleyici tarafından oluşturulan hata ayıklama bilgileri yalnızca için varsayılan çağırma kuralını destekler.
 
-`REQUIRE`<br/>
-Desteklenmez.
+- `IMPORT` ve `EXTERN`
 
-`REQUIRE8`<br/>
-Desteklenmez.
+   Bu söz dizimini kullanarak içeri aktarmalar belirtir:
 
-`THUMBX`<br/>
-Microsoft ARM derleyicisi Thumb 2EE yönerge kümesi desteklemediği için desteklenmez.
+   > **İçeri aktarma**|**EXTERN** *sym*{**, ZAYIF** *diğer*{**, türü** *t*}}
+
+   *sym* içeri aktarılacak sembolü adıdır.
+
+   Varsa `WEAK` *diğer* belirtilirse, bu gösterir *sym* zayıf bir dış. Bunun için hiçbir tanım bağlantı zamanında bulunan sonra bağlamak yerine tüm başvuruları *diğer*.
+
+   Varsa `TYPE` *t* , ardından belirtilen *t* nasıl bağlayıcı çözümlemeye belirten *sym*.  Bu değerler için *t* mümkündür:
+
+   |Değer|Açıklama|
+   |-|-|
+   |1.|Bir kitaplık arama gerçekleştirmeyin *sym*|
+   |2|Bir kitaplık arama gerçekleştirmek *sym*|
+   |3|*sym* için bir diğer addır *diğer* (varsayılan)|
+
+   `EXTERN` eşanlamlıdır `IMPORT`dışında *sym* yalnızca, geçerli derlemede ona başvurusu varsa alınır.
+
+- MACRO
+
+   Makro koşul kodunu tutacak bir değişken kullanımı desteklenmiyor. Varsayılan değerleri makrosu parametreler desteklenmez.
+
+- NOFP
+
+   Desteklenmez.
+
+- `OPT`, `TTL`, `SUBT`
+
+   Microsoft ARM derleyicisi listelerini üretmediği desteklenmiyor.
+
+- PRESERVE8
+
+   Desteklenmez.
+
+- RELOC
+
+   `RELOC n` yalnızca bir yönerge ya da veri tanımı yönergesi takip edebilirsiniz. "Yerleştirildiğinde anonim hiçbir simge" dir.
+
+- GEREKTİRİR
+
+   Desteklenmez.
+
+- REQUIRE8
+
+   Desteklenmez.
+
+- THUMBX
+
+   Microsoft ARM derleyicisi Thumb 2EE yönerge kümesi desteklemediği için desteklenmez.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 430e6372c1ca26e946c2ff26bfcfe9180dfb0dba
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: 9c86d49aea2ce7a8d8b438c64cd883b71e5a4646
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894466"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720856"
 ---
 # <a name="-specify-a-compiler-response-file"></a>@ (Derleyici Yanıt Dosyasını Belirt)
 
@@ -35,7 +35,7 @@ Derleyici yanıt dosyasını belirtir.
 
 ## <a name="arguments"></a>Arguments
 
-*response_file*  
+*response_file*<br/>
 Derleyici komutları içeren bir metin dosyası.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -56,5 +56,5 @@ Komut satırından kadar yanıt dosyası seçenekleri belirtebilirsiniz (örneğ
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Derleyici Seçenekleri](../../build/reference/compiler-options.md)  
-[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)  
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

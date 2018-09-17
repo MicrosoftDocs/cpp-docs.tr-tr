@@ -18,16 +18,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: afb57f408c52f6884c68e93af88671d49815ef69
-ms.sourcegitcommit: d55ac596ba8f908f5d91d228dc070dad31cb8360
+ms.openlocfilehash: 156eca047946ad13b1e4f09057edceb9f0bc6b34
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840348"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719192"
 ---
 # <a name="1-object"></a>_1 Nesnesi
 
-Yer tutucuları değiştirebilen bağımsız değişkenler için.
+Değiştirilebilir bağımsız değişkenleri için yer tutucu.
 
 ## <a name="syntax"></a>Sözdizimi
 
@@ -35,12 +35,12 @@ Yer tutucuları değiştirebilen bağımsız değişkenler için.
 namespace placeholders {
     extern unspecified _1,
     _2, ... _M
- } // namespace placeholders (within std)
+} // namespace placeholders (within std)
 ```
 
 ## <a name="remarks"></a>Açıklamalar
 
-Nesneleri `_1, _2, ... _M` olan yer tutucuları belirleme birinci, ikinci,..., ay bağımsız değişkeni, sırasıyla bir işlev çağrısı tarafından döndürülen bir nesne için [bağlama](../standard-library/functional-functions.md#bind). Kullandığınız `_N` n. bağımsız değişkeni, bağlama ifade değerlendirildiğinde nereye ekleneceğini belirlemek için.
+Nesneleri `_1, _2, ... _M` olan yer tutucuları belirleme birinci, ikinci,..., ay bağımsız değişkeni tarafından döndürülen bir nesneye yönelik işlev çağrısında sırasıyla [bağlama](../standard-library/functional-functions.md#bind). Kullandığınız `_N` bağlama ifadesi değerlendirilirken n sayılı bağımsız değişkenin ekleneceği yeri belirtmek için.
 
 Bu uygulamada değeri, `M` 20'dir.
 
@@ -98,11 +98,11 @@ int main()
 
 ## <a name="requirements"></a>Gereksinimler
 
-**Başlık:** \<işlevsel >
+**Başlık:** \<işlev >
 
 **Namespace:** std
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Bağlama](../standard-library/functional-functions.md#bind)<br/>
+[bağlama](../standard-library/functional-functions.md#bind)<br/>
 [is_placeholder Sınıfı](../standard-library/is-placeholder-class.md)<br/>

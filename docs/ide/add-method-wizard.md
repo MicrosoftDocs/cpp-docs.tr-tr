@@ -17,84 +17,97 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc2ebd18640f0ab778cb45252691e63206861d53
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 9c26f4b75c2c4920cbf8a235064aea222a066fca
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33340352"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718854"
 ---
 # <a name="add-method-wizard"></a>Yöntem Ekleme Sihirbazı
-Bir yöntem için bir arabirim eklemek için bu sihirbazı kullanın. Proje türü veya yöntem ekleme arabirim türüne bağlı olarak sihirbazın farklı seçenekler görüntüler.  
+Bir yöntem bir arabirim eklemek için bu sihirbazı kullanın. Proje türü veya yöntem ekleme arabirim türüne bağlı olarak sihirbazın farklı seçenekleri görüntüler.  
   
-## <a name="names"></a>Adlar  
- **Dönüş türü**  
- Yöntemi tarafından döndürülen veri türü. `HRESULT` hataları döndürmek için standart bir yol sağladığından tüm arabirim türleri için önerilir.  
+## <a name="names"></a>Adlar
+
+- **Dönüş türü**
+
+   Yöntem tarafından döndürülen veri türü. `HRESULT` hatalarını döndürmek için standart bir yol sağladığından, tüm arabirim türleri için önerilir.  
   
-|Arabirim türü|Açıklama|  
-|--------------------|-----------------|  
-|Çift arabirim|`HRESULT`. Değiştirilemez.|  
-|Özel arabirim|`HRESULT`. Değiştirilemez.|  
-|Yerel özel arabirimi|Kendi dönüş türü sağlayın veya listeden seçin.|  
-|Görüntüleme arabirimi|Kendi dönüş türü sağlayın veya listeden seçin.|  
-|MFC ActiveX denetim görüntüleme arabirimi|Stok yöntemi uygularsanız, dönüş türü uygun değere ayarlanır ve değiştirilemez. Bir yöntemin seçerseniz **yöntem adı** listesinde ve tıklatın **özel** altında **yöntemi türünü seçin**, listeden bir dönüş türü seçin.|  
+   |Arabirim türü|Açıklama|  
+   |--------------------|-----------------|  
+   |Çift arabirim|`HRESULT`. Değiştirilemez.|  
+   |Özel arabirim|`HRESULT`. Değiştirilemez.|  
+   |Yerel özel arabirimi|Kendi dönüş türü belirtin veya listeden seçin.|  
+   |Dispinterface|Kendi dönüş türü belirtin veya listeden seçin.|  
+   |MFC ActiveX denetimi dispinterface|Stok metodu uygularsanız, dönüş türü uygun değere ayarlanır ve değiştirilemez. Bir yöntemi seçerseniz **yöntem adı** listelemek ve tıklayın **özel** altında **yöntemi türünü seçin**, listeden bir dönüş türü seçin.|  
   
- **Yöntem adı**  
- Yöntem adını belirler.  
+- **Yöntem adı**
+
+   Yöntemin adını ayarlar.  
   
-|Arabirim türü|Açıklama|  
-|--------------------|-----------------|  
-|ATL çift arabirim, özel arabirim ve yerel özel arabirimi|Kendi yöntem adını belirtin.|  
-|MFC görüntüleme arabirimi|Kendi yöntemi adı belirtin veya listeden bir önerilen yöntem adı seçin. Listeden bir adı seçerseniz, uygun değere görünür **dönüş türü** kutusunu ve değiştirilemez.|  
-|MFC ActiveX denetim görüntüleme arabirimi|Kendi sağlayın veya stok yöntemlerinden birini seçin [DoClick](../mfc/reference/colecontrol-class.md#doclick) ve [yenileme](../mfc/reference/colecontrol-class.md#refresh). Bkz: [MFC ActiveX denetimleri: stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md) daha fazla bilgi için.|  
+   |Arabirim türü|Açıklama|  
+   |--------------------|-----------------|  
+   |ATL çift arabirim, özel arabirim ve yerel özel arabirimi|Kendi yöntem adını belirtin.|  
+   |MFC dispinterface|Kendi yöntemi adı belirtin veya listeden bir önerilen yöntem adı seçin. Listeden bir ad seçerseniz, uygun değere görünür **dönüş türü** kutusu ve değiştirilemez.|  
+   |MFC ActiveX denetimi dispinterface|Stok yöntemlerden birini seçin veya kendi sağlamak [DoClick](../mfc/reference/colecontrol-class.md#doclick) ve [Yenile](../mfc/reference/colecontrol-class.md#refresh). Bkz: [MFC ActiveX denetimleri: stok yöntemler ekleme](../mfc/mfc-activex-controls-adding-stock-methods.md) daha fazla bilgi için.|  
   
- **Yöntem türü**  
- MFC ActiveX denetimleri için kullanılabilir. Bir yöntem adı sağlarsanız, **yöntem adı** kutusunda, listeden bir yöntem seçmek yerine bu kutusu kullanılamaz.  
+- **Yöntem türü**
+
+   MFC ActiveX denetimleri için kullanılabilir. Yöntem adı'sağlarsanız **yöntem adı** kutusunda, listeden bir yöntem seçmek yerine bu kutuyu kullanılamıyor.  
   
- Yöntemlerden birini seçerseniz **yöntem adı** listesinde, stok uygulama veya özel bir uygulama seçin.  
+    Metotlarından birini seçerseniz **yöntem adı** listesinde, stok uygulaması ya da özel bir uygulama seçin.  
   
-|Yöntem türü|Açıklama|  
-|-----------------|-----------------|  
-|**Hisse senedi**|Varsayılan. İçinde seçtiğiniz yönteme stok uyarlamasını ekler **yöntem adı** listesi. **Dönüş türü** seçerseniz değiştirilemez olan **hisse senedi**.|  
-|**Özel**|Seçili yöntemi saplama uyarlamasını ekler **yöntem adı** listesi. Özel yöntem türleri için kendi dönüş türü sağlayabilir veya birinden seçebilirsiniz **dönüş türü** listesi.|  
+   |Yöntem türü|Açıklama|  
+   |-----------------|-----------------|  
+   |**Hisse senedi**|Varsayılan. Seçtiğiniz yöntem stok uygulaması ekler **yöntem adı** listesi. **Dönüş türü** seçerseniz değiştirilemez **hisse senedi**.|  
+   |**Özel**|Seçilen yöntemin bir saplama uygulaması ekler **yöntem adı** listesi. Özel yöntem türleri için kendi dönüş türü sağlayabilir veya birinden seçebilirsiniz **dönüş türü** listesi.|  
   
- **İç adı**  
- Yalnızca bir MFC görüntüleme arabirimi eklenen özel yöntemler için kullanılabilir. Gönderme harita, üstbilgi (.h) dosyası ve uygulama (.cpp) dosya kullanılan adını ayarlar. Varsayılan olarak, bu adı aynı olan **yöntem adı**. Bir MFC görüntüleme arabirimi ile çalışıyorsanız veya özel bir yöntem bir MFC ActiveX denetim görüntüleme arabirimi ekliyorsanız, yöntem adını değiştirebilirsiniz.  
+- **İç adı**
+
+   Yalnızca bir MFC dispinterface için eklenen özel yöntemler için kullanılabilir. Dağıtım eşlemesi, üstbilgi (.h) dosyası ve uygulama (.cpp) dosyası içinde kullanılan adını ayarlar. Varsayılan olarak, bu adı aynı olan **yöntem adı**. Bir MFC dispinterface ile çalışıyorsanız ya da özel bir yöntem için bir MFC ActiveX denetimi dispinterface ekliyorsanız, yöntem adını değiştirebilirsiniz.  
   
-|Arabirim türü|Açıklama|  
-|--------------------|-----------------|  
-|ATL çift arabirim, özel arabirim ve yerel özel arabirimi|Yok|  
-|MFC görüntüleme arabirimi|Yöntem adı varsayılan olarak ayarlayın. İç adı düzenleyebilirsiniz.|  
-|MFC ActiveX denetim görüntüleme arabirimi|Yalnızca özel yöntemler için iç ad ayarlayabilirsiniz. Stok yöntemler, bir iç adı kullanmayın.|  
+   |Arabirim türü|Açıklama|  
+   |--------------------|-----------------|  
+   |ATL çift arabirim, özel arabirim ve yerel özel arabirimi|Yok|  
+   |MFC dispinterface|Yöntem adı için varsayılan olarak ayarlayın. İç adını düzenleyebilirsiniz.|  
+   |MFC ActiveX denetimi dispinterface|Yalnızca özel yöntemler için iç ad ayarlayabilirsiniz. Stok yöntemler, bir iç adını kullanmayın.|  
   
- **Parametre öznitelikleri**  
- Belirtilen parametre için ek öznitelik ayarlar **parametre adı**.  
+- **Parametre öznitelikleri**
+
+   Herhangi bir ek özniteliği için belirtilen parametre ayarlar **parametre adı**.  
   
-|Parametre özniteliği|Açıklama|İzin verilen birleşimler|  
-|-------------------------|-----------------|--------------------------|  
-|**İçinde**|Parametresi çağrılan yordamı çağırma yordamdan geçirilen gösterir.|**içinde** yalnızca<br /><br /> **içinde** ve **çıkışı**|  
-|**Çıkışı**|İşaretçi parametresi (sunucudan istemciye) arama yordamı için çağrılan yordamdan döndürülen gösterir.|**out** yalnızca<br /><br /> **içinde** ve **çıkışı**<br /><br /> **out** ve **retval**|  
-|**retval**|Parametresi üyesinin dönüş değerini alan gösterir.|**retval** ve teslim alma|  
+   |Parametre özniteliği|Açıklama|İzin verilen birleşimleri|  
+   |-------------------------|-----------------|--------------------------|  
+   |**İçinde**|Parametrenin çağıran yordamdan çağrılan yordama geçirildiğini gösterir.|**içinde** yalnızca<br /><br /> **içinde** ve **uğradı**|  
+   |**Çıkış**|İşaretçi parametresi çağrılan yordamdan çağıran yordama (sunucudan istemciye) döndürülür gösterir.|**Çıkış** yalnızca<br /><br /> **içinde** ve **uğradı**<br /><br /> **Çıkış** ve **retval**|  
+   |**retval**|Parametrenin, üyenin dönüş değeri alır gösterir.|**retval** ve çıkış|  
   
- **Parametre türü**  
- Parametrenin veri türünü ayarlar. Listeden seçin.  
+- **Parametre türü**
+
+   Parametrenin veri türünü ayarlar. Türü listeden seçin.  
   
- **Parametre adı**  
- Yönteminizi iletmek için bir parametre adını ayarlar. Adını yazdıktan sonra'ı tıklatmalısınız **Ekle** yönteminizi geçirir parametrelerin listesi eklemek için. Bir parametre adı belirtmezseniz, sihirbazın tüm parametre öznitelikleri (yalnızca ATL) göz ardı eder veya **parametre türü** seçimleri.  
+- **Parametre adı**
+
+   Yönteminiz iletilecek parametre adını ayarlar. Adını yazdıktan sonra tıklamanız **Ekle** yönteminiz geçer parametre listesi eklemek için. Parametre adı belirtmezseniz, sihirbazın herhangi bir parametre özniteliği (sadece ATL) göz ardı eder veya **parametre türü** seçimleri.  
   
- Tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.  
+   ' A tıkladığınızda **Ekle**, parametre adı görünür **parametre listesi**.  
   
- **Not** bir parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, yönteme parametre eklenmedi. Find yöntemi ve parametre el ile ekleyin.  
+   > [!Note]
+   > Parametre adı sağlayın ve ardından **son** tıklamadan önce **Ekle**, parametre yönteme eklenmez. Yöntemini bulun ve parametre el ile Ekle gerekir.  
   
- **Ekle**  
- Belirttiğiniz parametre ekler **parametre adı**ve bunun türü ve parametre öznitelikleri için **parametre listesi**. ' I tıklatmalısınız **Ekle** bir parametre listesine eklemek için.  
+- **Add**
+
+   Belirttiğiniz parametre ekler **parametre adı**ve bunun türü ve parametre öznitelikleri için **parametre listesi**. ' A tıklamalıdır **Ekle** parametre listesine eklenecek.  
   
- **Kaldır**  
- Öğesinde parametre kaldırır **parametre listesi** listeden.  
+- **Kaldır**
+
+   Seçtiğiniz parametre kaldırır **parametre listesi** listeden.  
   
- **Parametre listesi**  
- Tüm parametreleri ve değiştiricileri ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** değiştirici ve türe sahip her bir parametreyi görüntülemek için.  
+- **Parametre listesi**
+
+   Tüm parametreler ve değiştiriciler ve şu anda yöntemi için eklenen türleri görüntüler. Parametre ekleme gibi sihirbaz güncelleştirir **parametre listesi** değiştiricisi ve türü her parametre görüntülenecek.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)   
- [IDL Öznitelikleri, Yöntem Ekleme Sihirbazı](../ide/idl-attributes-add-method-wizard.md)
+
+[Yöntem ekleme](../ide/adding-a-method-visual-cpp.md)<br/>
+[IDL Öznitelikleri, Yöntem Ekleme Sihirbazı](../ide/idl-attributes-add-method-wizard.md)

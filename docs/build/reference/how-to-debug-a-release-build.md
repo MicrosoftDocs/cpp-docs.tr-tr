@@ -15,35 +15,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e733375f01d4b2b8ec7090f7f70ad1ec5280cd9
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2dcafe151edf907521c2db49b4ffacca38593e9b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374485"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723911"
 ---
 # <a name="how-to-debug-a-release-build"></a>Nasıl yapılır: Yayın Derlemesinde Hata Ayıklama
-Yayın derlemesi uygulamanın ayıklayabilirsiniz.  
-  
-### <a name="to-debug-a-release-build"></a>Yayın derlemesi hatalarını ayıklamak için  
-  
-1.  Açık **özellik sayfaları** projesi için iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** düğümü. Ayarlama **hata ayıklama bilgileri biçimi** için [C7 uyumlu (/ Z7)](../../build/reference/z7-zi-zi-debug-information-format.md) veya **Program veritabanı (/Zi)**.  
-  
-3.  Genişletme **bağlayıcı** tıklatıp **genel** düğümü. Ayarlama **artımlı bağlantılandırma etkinleştirmek** için [yok (/ ARTIMLI: Hayır)](../../build/reference/incremental-link-incrementally.md).  
-  
-4.  Seçin **hata ayıklama** düğümü. Ayarlama **hata ayıklama bilgileri üret** için [Evet (/ DEBUG)](../../build/reference/debug-generate-debug-info.md).  
-  
-5.  Seçin **en iyi duruma getirme** düğümü. Ayarlama **başvuruları** için [/OPT:REF](../../build/reference/opt-optimizations.md) ve **comdat'ı Katlama etkinleştirmek** için [/OPT:ICF](../../build/reference/opt-optimizations.md).  
-  
-6.  Yayın derleme uygulamanız şimdi ayıklayabilirsiniz. Hatanın oluştuğu bulana kadar bir sorun, adım kodu (veya kullanım sadece zamanında hata ayıklama) aracılığıyla bulmak ve parametreleri yanlış veya kod belirlemek için.  
-  
-     Bir uygulama bir hata ayıklama derlemesi çalışır ancak bir yayın derlemesi başarısız olursa, derleyici iyileştirmelerini birini kaynak kodunu üründe gösterme. Dosya ve soruna neden olan en iyi duruma getirme bulana kadar sorunu ayırt etmek için her kaynak kodu dosyasının seçili en iyi duruma getirme devre dışı bırakın. (İşlemi hızlandırmak için dosyaları iki gruba ayırın, bir grup en iyi duruma getirilmesi devre dışı bırakmak ve bir grup, bir sorunu bulduğunuzda sorun dosya yalıtmak kadar bölme devam edebilirsiniz.)  
-  
-     Kullanabileceğiniz [eş yordamlarla/RTC](../../build/reference/rtc-run-time-error-checks.md) bu tür hataların hata ayıklama derlemelerinde kullanıma dener.  
-  
-     Daha fazla bilgi için bkz: [kodunuzu en iyi duruma getirme](../../build/reference/optimizing-your-code.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)
+
+Bir uygulamanın bir yayın derlemesinde hata ayıklama.
+
+### <a name="to-debug-a-release-build"></a>Bir yayın derlemesinde hata ayıklama için
+
+1. Açık **özellik sayfaları** iletişim kutusu için proje. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** düğümü. Ayarlama **hata ayıklama bilgi biçimi** için [C7 uyumlu (/ Z7)](../../build/reference/z7-zi-zi-debug-information-format.md) veya **Program veritabanı (/Zi)**.
+
+1. Genişletin **bağlayıcı** tıklatıp **genel** düğümü. Ayarlama **artımlı bağlamayı etkinleştir** için [Hayır (/ INCREMENTAL: NO)](../../build/reference/incremental-link-incrementally.md).
+
+1. Seçin **hata ayıklama** düğümü. Ayarlama **hata ayıklama bilgileri üret** için [Evet (/ DEBUG)](../../build/reference/debug-generate-debug-info.md).
+
+1. Seçin **iyileştirme** düğümü. Ayarlama **başvuruları** için [/OPT: ref](../../build/reference/opt-optimizations.md) ve **COMDAT katlamasını etkinleştir** için [/OPT: ICF](../../build/reference/opt-optimizations.md).
+
+1. Yayın derleme uygulamanız şimdi ayıklayabilirsiniz. Hatanın oluştuğu bulana kadar bir sorun, Adımlama, kodu (veya kullanım Just-ın-Time hata ayıklama) bulun ve sonra yanlış parametreler veya kod belirlemek için.
+
+   Bir uygulama için hata ayıklama çalışır, ancak bu bir yayın derleme başarısız olduğunda, bir derleyici iyileştirmelerini kaynak kodunda bir hata gösterme. Dosya ve soruna neden olan en iyi duruma getirme belirleyene kadar sorunu ayırt etmek için her kaynak kodu dosyası için seçili iyileştirmeleri devre dışı bırakın. (İşlemi hızlandırmak için dosyaları iki gruba ayırın, bir grup iyileştirmesini devre dışı bırakmak ve bir grup içinde bir sorun bulduğunuzda sorun dosya yalıtana kadar bölme devam.)
+
+   Kullanabileceğiniz [/RTC](../../build/reference/rtc-run-time-error-checks.md) hata ayıklama yapılarınızda bu tür hatalar ortaya dener.
+
+   Daha fazla bilgi için [kodunuzu en iyi duruma getirme](../../build/reference/optimizing-your-code.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yayın Derlemesi Sorunlarını Giderme](../../build/reference/fixing-release-build-problems.md)

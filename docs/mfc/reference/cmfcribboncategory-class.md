@@ -140,12 +140,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e292ff062449fd53aba0c5f4775e1b2e0b8ff909
-ms.sourcegitcommit: 26fff80635bd1d51bc51899203fddfea8b29b530
+ms.openlocfilehash: ee097dd95a1a88b8cf2cb3dc48c4406499001443
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37852400"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721404"
 ---
 # <a name="cmfcribboncategory-class"></a>CMFCRibbonCategory sınıfı
 `CMFCRibbonCategory` Sınıfı bir dizi içeren bir Şerit sekmesi uygular [Şerit panel](../../mfc/reference/cmfcribbonpanel-class.md).  
@@ -275,8 +275,8 @@ void AddHidden(CMFCRibbonBaseElement* pElem);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pElem*  
- Bir Şerit öğesi işaretçisi.  
+*pElem*<br/>
+[in] Bir Şerit öğesi işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şerit öğeleri özelleştirme iletişim kutusunda hızlı erişim araç çubuğuna eklediğiniz komutlar şunlardır:  
@@ -292,14 +292,14 @@ CMFCRibbonPanel* AddPanel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPanelName*  
- Yeni Şerit panelin adına yönelik işaretçi.  
+*lpszPanelName*<br/>
+[in] Yeni Şerit panelin adına yönelik işaretçi.  
   
- [in] *hIcon*  
- İçin yeni bir Şerit panel varsayılan simgeyi işleyin.  
+*hIcon*<br/>
+[in] İçin yeni bir Şerit panel varsayılan simgeyi işleyin.  
   
- [in] *pRTI*  
- Bir Şerit panel için çalışma zamanı sınıf bilgileri işaretçisi.  
+*pRTI*<br/>
+[in] Bir Şerit panel için çalışma zamanı sınıf bilgileri işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa yeni bir Şerit panel işaretçi; panel oluşturulmadı, bulunmazsa null değerini DÖNDÜRÜR.  
@@ -330,23 +330,23 @@ CMFCRibbonCategory(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pParenrRibbonBar*  
- Üst Şerit çubuğuna Şerit kategorisi için işaretçi.  
+*pParenrRibbonBar*<br/>
+[in] Üst Şerit çubuğuna Şerit kategorisi için işaretçi.  
   
- [in] *lpszName*  
- Şerit kategorisi adı.  
+*lpszName*<br/>
+[in] Şerit kategorisi adı.  
   
- [in] *uiSmallImagesResID*  
- Şerit kategorideki Şerit öğeleri tarafından kullanılan küçük resimler için resim listesi kaynak kimliği.  
+*uiSmallImagesResID*<br/>
+[in] Şerit kategorideki Şerit öğeleri tarafından kullanılan küçük resimler için resim listesi kaynak kimliği.  
   
- [in] *uiLargeImagesResID*  
- Şerit kategorideki Şerit öğeleri tarafından kullanılan büyük resimler için resim listesi kaynak kimliği.  
+*uiLargeImagesResID*<br/>
+[in] Şerit kategorideki Şerit öğeleri tarafından kullanılan büyük resimler için resim listesi kaynak kimliği.  
   
- [in] *sizeSmallImage*  
- Şerit kategorideki Şerit öğeleri için küçük resimlerin boyutunu varsayılan.  
+*sizeSmallImage*<br/>
+[in] Şerit kategorideki Şerit öğeleri için küçük resimlerin boyutunu varsayılan.  
   
- [in] *sizeLargeImage*  
- Varsayılan olarak büyük resimler için Şerit kategorideki Şerit öğeleri boyutu.  
+*sizeLargeImage*<br/>
+[in] Varsayılan olarak büyük resimler için Şerit kategorideki Şerit öğeleri boyutu.  
   
 ##  <a name="copyfrom"></a>  CMFCRibbonCategory::CopyFrom  
  Belirtilen durumunu kopyalar [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) geçerli [CMFCRibbonCategory](../../mfc/reference/cmfcribboncategory-class.md) nesne.  
@@ -356,8 +356,8 @@ virtual void CopyFrom(CMFCRibbonCategory& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *src*  
- Kaynak `CMFCRibbonCategory` nesne.  
+*src*<br/>
+[in] Kaynak `CMFCRibbonCategory` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -371,11 +371,11 @@ CMFCRibbonBaseElement* FindByData(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwData*  
- Bir Şerit öğesi ile ilişkili veriler.  
+*dwData*<br/>
+[in] Bir Şerit öğesi ile ilişkili veriler.  
   
- [in] *bVisibleOnly*  
- Hızlı erişim Şerit öğeleri aramaya dahil edilmesi için TRUE; Arama hızlı erişim Şerit öğeleri hariç tutmak için FALSE.  
+*bVisibleOnly*<br/>
+[in] Hızlı erişim Şerit öğeleri aramaya dahil edilmesi için TRUE; Arama hızlı erişim Şerit öğeleri hariç tutmak için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit öğesi için işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -392,11 +392,11 @@ CMFCRibbonBaseElement* FindByID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdID*  
- Bir Şerit öğesi ile ilişkili komut kimliği.  
+*uiCmdID*<br/>
+[in] Bir Şerit öğesi ile ilişkili komut kimliği.  
   
- [in] *bVisibleOnly*  
- Hızlı erişim Şerit öğeleri aramaya dahil edilmesi için TRUE; Arama hızlı erişim Şerit öğeleri hariç tutmak için FALSE.  
+*bVisibleOnly*<br/>
+[in] Hızlı erişim Şerit öğeleri aramaya dahil edilmesi için TRUE; Arama hızlı erişim Şerit öğeleri hariç tutmak için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit öğesi için işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -411,8 +411,8 @@ CMFCRibbonPanel* FindPanelWithElem(const CMFCRibbonBaseElement* pElement);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pElement*  
- Bir Şerit öğesi işaretçisi.  
+*pElement*<br/>
+[in] Bir Şerit öğesi işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit paneli işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -463,8 +463,8 @@ void GetElements(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out içinde] *arElements*  
- Başvuru bir [CArray](../../mfc/reference/carray-class.md) Şerit öğeleri.  
+*arElements*<br/>
+[out içinde] Başvuru bir [CArray](../../mfc/reference/carray-class.md) Şerit öğeleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hızlı Erişim Araç çubuğu üzerinde kullanılmak üzere tasarlanmış bir Şerit öğeleri, dizide dahil edilir.  
@@ -479,11 +479,11 @@ void GetElementsByID(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiCmdID*  
- Bir Şerit öğesi ile ilişkili komut kimliği.  
+*uiCmdID*<br/>
+[in] Bir Şerit öğesi ile ilişkili komut kimliği.  
   
- [out içinde] *arElements*  
- Başvuru bir [CArray](../../mfc/reference/carray-class.md) Şerit öğeleri.  
+*arElements*<br/>
+[out içinde] Başvuru bir [CArray](../../mfc/reference/carray-class.md) Şerit öğeleri.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hızlı Erişim Araç çubuğu üzerinde kullanılmak üzere tasarlanmış bir Şerit öğeleri, dizide dahil edilir.  
@@ -532,8 +532,8 @@ int GetImageCount(BOOL bIsLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bIsLargeImage*  
- Büyük görüntü listesinden görüntü sayısı için TRUE; Küçük görüntü listesinin görüntüleri sayısı için FALSE.  
+*bIsLargeImage*<br/>
+[in] Büyük görüntü listesinden görüntü sayısı için TRUE; Küçük görüntü listesinin görüntüleri sayısı için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen görüntü listesinden görüntü sayısı.  
@@ -548,8 +548,8 @@ CSize GetImageSize(BOOL bIsLargeImage) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bIsLargeImage*  
- Büyük resimler boyutu için TRUE; Küçük resimlerin boyutunu için FALSE.  
+*bIsLargeImage*<br/>
+[in] Büyük resimler boyutu için TRUE; Küçük resimlerin boyutunu için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen görüntü listesinden görüntü boyutu.  
@@ -567,11 +567,11 @@ void GetItemIDsList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *lstItems*  
- Komut kimlikleri için Şerit kategorideki Şerit öğeleri listesi.  
+*lstItems*<br/>
+[out] Komut kimlikleri için Şerit kategorideki Şerit öğeleri listesi.  
   
- [in] *bHiddenOnly*  
- Şerit paneli Şerit kategorisi içinde görüntülenen bir Şerit öğeleri dışlamak için TRUE; Tüm Şerit öğeleri Şerit kategorisine eklemek için FALSE.  
+*bHiddenOnly*<br/>
+[in] Şerit paneli Şerit kategorisi içinde görüntülenen bir Şerit öğeleri dışlamak için TRUE; Tüm Şerit öğeleri Şerit kategorisine eklemek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -605,8 +605,8 @@ int GetMaxHeight(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı Şerit paneli için işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı Şerit paneli için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Şerit kategoride bulunan Şerit paneli maksimum yüksekliği.  
@@ -634,8 +634,8 @@ CMFCRibbonPanel* GetPanel(int nIndex);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Bir Şerit paneli sıfır tabanlı dizini.  
+*nIndex*<br/>
+[in] Bir Şerit paneli sıfır tabanlı dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen dizinde bulunan Şerit paneline işaretçisi.  
@@ -661,8 +661,8 @@ CMFCRibbonPanel* GetPanelFromPoint(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit paneli işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -678,8 +678,8 @@ int GetPanelIndex(const CMFCRibbonPanel* pPanel) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pPanel*  
- Bir Şerit paneli işaretçisi.  
+*pPanel*<br/>
+[in] Bir Şerit paneli işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Belirtilen bir Şerit panel yöntem başarılı olursa sıfır tabanlı dizini; Aksi takdirde-1.  
@@ -822,11 +822,11 @@ CMFCRibbonPanel* HighlightPanel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pHLPanel*  
- Şerit paneline vurgulamak için işaretçi.  
+*pHLPanel*<br/>
+[in] Şerit paneline vurgulamak için işaretçi.  
   
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Daha önce vurgulanan Şerit paneline işaretçi; Bu yöntem çağrıldığında hiçbir Şerit paneline vurgulanır, bulunmazsa null değerini DÖNDÜRÜR.  
@@ -844,11 +844,11 @@ CMFCRibbonBaseElement* HitTest(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
   
- [in] *bCheckPanelCaption*  
- Şerit paneli resim yazısı test etmek için TRUE; Şerit paneli açıklamalı alt yazı hariç tutmak için FALSE.  
+*bCheckPanelCaption*<br/>
+[in] Şerit paneli resim yazısı test etmek için TRUE; Şerit paneli açıklamalı alt yazı hariç tutmak için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit öğesi için işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -864,8 +864,8 @@ int HitTestEx(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit öğenin sıfır tabanlı dizini; Aksi takdirde-1.  
@@ -881,8 +881,8 @@ CMFCRibbonBaseElement* HitTestScrollButtons(CPoint point) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Test noktası.  
+*Noktası*<br/>
+[in] Test noktası.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Varsa *noktası* ya da sol sınırlayıcı dikdörtgenini veya Şerit kategorisi sağa kaydırma düğmesi içinde kalan, bu düğme için bir işaretçi döndürür veya aksi takdirde, NULL döndürür.  
@@ -939,17 +939,17 @@ virtual BOOL NotifyControlCommand(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bAccelerator*  
- Eğer bu komutu bir Hızlandırıcı veya yanlış, aksi takdirde kaynağı.  
+*bAccelerator*<br/>
+[in] Eğer bu komutu bir Hızlandırıcı veya yanlış, aksi takdirde kaynağı.  
   
- [in] *nNotifyCode*  
- Uyarı kodu.  
+*nNotifyCode*<br/>
+[in] Uyarı kodu.  
   
- [in] *wParam*  
- İletinin WPARAM alan.  
+*wParam*<br/>
+[in] İletinin WPARAM alan.  
   
- [in] *lParam*  
- İletinin LPARAM alan.  
+*lParam*<br/>
+[in] İletinin LPARAM alan.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İleti işlenmiş TRUE, değilse FALSE döndürür.  
@@ -973,8 +973,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Şerit kategorisi için bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Şerit kategorisi için bir cihaz bağlamı işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -992,23 +992,23 @@ virtual BOOL OnDrawImage(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı görüntüsü için işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı görüntüsü için işaretçi.  
   
- [in] *dikdörtgen*  
- Resmi için dikdörtgen görüntüler.  
+*Rect*<br/>
+[in] Resmi için dikdörtgen görüntüler.  
   
- [in] *pElement*  
- Görüntü içeren Şerit öğesinin işaretçisi.  
+*pElement*<br/>
+[in] Görüntü içeren Şerit öğesinin işaretçisi.  
   
- [in] *bIsLargeImage*  
- Görüntü boyutu büyük olduğunda TRUE; Görüntü boyutunun küçük ise FALSE.  
+*bIsLargeImage*<br/>
+[in] Görüntü boyutu büyük olduğunda TRUE; Görüntü boyutunun küçük ise FALSE.  
   
- [in] *nImageIndex*  
- Görüntünün görüntü dizideki Şerit kategoride bulunan sıfır tabanlı dizini.  
+*nImageIndex*<br/>
+[in] Görüntünün görüntü dizideki Şerit kategoride bulunan sıfır tabanlı dizini.  
   
- [in] *bCenter*  
- Görüntünün görüntü dikdörtgenin içindeki merkezi için TRUE; Görüntünün görüntü dikdörtgenin sol üst köşesinde bulunan çizmek için FALSE.  
+*bCenter*<br/>
+[in] Görüntünün görüntü dikdörtgenin içindeki merkezi için TRUE; Görüntünün görüntü dikdörtgenin sol üst köşesinde bulunan çizmek için FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi durumda FALSE.  
@@ -1025,11 +1025,11 @@ virtual void OnDrawMenuBorder(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bu parametre kullanılmaz.  
+*pDC*<br/>
+[in] Bu parametre kullanılmaz.  
   
- [in] *pMenuBar*  
- Bu parametre kullanılmaz.  
+*pMenuBar*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsayılan olarak, bu yöntemi hiçbir şey yapmaz. Bir açılan menü kenarlık çizmek için bu yöntemi yok sayın.  
@@ -1055,8 +1055,8 @@ virtual CMFCRibbonBaseElement* OnLButtonDown(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre fare işaretçisi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa bir Şerit öğesi için işaretçi; bulunmazsa null değerini DÖNDÜRÜR.  
@@ -1071,8 +1071,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1084,8 +1084,8 @@ virtual void OnMouseMove(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
+*Noktası*<br/>
+[in] X ve y koordinatları penceresinin sol üst köşesindeki göre işaretçinin.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1097,8 +1097,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bIsRTL*  
- Sağdan sola düzen ise TRUE; Soldan sağa düzen ise FALSE.  
+*bIsRTL*<br/>
+[in] Sağdan sola düzen ise TRUE; Soldan sağa düzen ise FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem tüm Şerit paneli ve Şerit kategoride bulunan Şerit öğeleri düzenini ayarlar.  
@@ -1113,11 +1113,11 @@ virtual BOOL OnScrollHorz(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bScrollLeft*  
- Sola kaydırma yapmak için TRUE; Sağa kaydırma için FALSE.  
+*bScrollLeft*<br/>
+[in] Sola kaydırma yapmak için TRUE; Sağa kaydırma için FALSE.  
   
- [in] *nScrollOffset*  
- Piksel cinsinden kaydırma uzaklığı.  
+*nScrollOffset*<br/>
+[in] Piksel cinsinden kaydırma uzaklığı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Şerit kategorisi bir yatay yönde taşıdıysanız TRUE; Aksi durumda FALSE.  
@@ -1135,14 +1135,14 @@ virtual void OnUpdateCmdUI(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pCmdUI*  
- İşaretçi `CMFCRibbonCmdUI` nesnesini kullanıcı arabirimi öğeleri olan etkin olmasını ve devre dışı olduğunu belirler.  
+*pCmdUI*<br/>
+[in] İşaretçi `CMFCRibbonCmdUI` nesnesini kullanıcı arabirimi öğeleri olan etkin olmasını ve devre dışı olduğunu belirler.  
   
- [in] *pTarget*  
- Etkinleştirme veya devre dışı kullanıcı arabirimi öğelerini denetleyen pencere işaretçisi.  
+*pTarget*<br/>
+[in] Etkinleştirme veya devre dışı kullanıcı arabirimi öğelerini denetleyen pencere işaretçisi.  
   
- [in] *bDisableIfNoHndler*  
- İşleyici yok ileti eşlemesi içinde tanımlanmışsa, kullanıcı arabirimi öğesi devre dışı bırakmak için TRUE; Aksi takdirde FALSE.  
+*bDisableIfNoHndler*<br/>
+[in] İşleyici yok ileti eşlemesi içinde tanımlanmışsa, kullanıcı arabirimi öğesi devre dışı bırakmak için TRUE; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1154,8 +1154,8 @@ virtual void RecalcLayout(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Şerit kategorisi için bir cihaz bağlamı işaretçisi.  
+*pDC*<br/>
+[in] Şerit kategorisi için bir cihaz bağlamı işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1169,11 +1169,11 @@ BOOL RemovePanel(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nIndex*  
- Dizin numarasını panel kaldırmak için. Çağırılarak [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) yöntemi.  
+*nIndex*<br/>
+[in] Dizin numarasını panel kaldırmak için. Çağırılarak [CMFCRibbonCategory::GetPanelIndex](#getpanelindex) yöntemi.  
   
- [in] *bSil*  
- Bellekten panelinde nesneyi silmek için TRUE; YANLIŞ panel nesnesi silmeden kaldırmak için.  
+*bSil*<br/>
+[in] Bellekten panelinde nesneyi silmek için TRUE; YANLIŞ panel nesnesi silmeden kaldırmak için.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olduysa TRUE; Aksi takdirde FALSE.  
@@ -1186,8 +1186,8 @@ virtual void ReposPanels(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı Şerit kategoride bulunan Şerit paneli için işaretçi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı Şerit kategoride bulunan Şerit paneli için işaretçi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -1199,8 +1199,8 @@ void SetCollapseOrder(const CArray<int,int>& arCollapseOrder);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *arCollapseOrder*  
- Daralt sırasını belirtir. Dizinin sıfır tabanlı dizin, Şerit panel içerir.  
+*arCollapseOrder*<br/>
+[in] Daralt sırasını belirtir. Dizinin sıfır tabanlı dizin, Şerit panel içerir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kitaplık Daralt sırasını tanımlar. Ancak, Kategori Daralt sırayı belirten dizinleri listesiyle sağlayarak bu davranışı özelleştirebilirsiniz.  
@@ -1222,8 +1222,8 @@ void SetData(DWORD_PTR dwData);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *dwData*  
- Kullanıcı tanımlı veri.  
+*dwData*<br/>
+[in] Kullanıcı tanımlı veri.  
   
 ##  <a name="setkeys"></a>  CMFCRibbonCategory::SetKeys  
  Bir keytip Şerit kategorisine atar.  
@@ -1233,8 +1233,8 @@ void SetKeys(LPCTSTR lpszKeys);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszKeys*  
- Tuş ipucunu metin.  
+*lpszKeys*<br/>
+[in] Tuş ipucunu metin.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı Alt tuşunu veya F10 tuşuna bastığında Keytips görüntülenir.  
@@ -1247,8 +1247,8 @@ void SetName(LPCTSTR lpszName);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszName*  
- Tuş ipucunu Şerit kategorisi ve adı.  
+*lpszName*<br/>
+[in] Tuş ipucunu Şerit kategorisi ve adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Şerit kategorisi için tuş ipucunu belirlemek için tuş ipucunu karakterle arkasından bir yeni satır kaçış dizisini ekleme *lpszName*.  
@@ -1261,8 +1261,8 @@ void SetTabColor(AFX_RibbonCategoryColor color);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *rengi*  
- Şerit kategorisi yeni rengini belirtir.  
+*Renk*<br/>
+[in] Şerit kategorisi yeni rengini belirtir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Renk aşağıdaki değerlerden biri olabilir:  

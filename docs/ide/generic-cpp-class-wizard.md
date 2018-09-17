@@ -16,47 +16,56 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43e86a4047ef025f49dd01eda90f324623a90752
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 758aafa91a8b74c52e8af88e0f6862c1cf99f229
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33328311"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719627"
 ---
 # <a name="generic-c-class-wizard"></a>Genel C++ Sınıfı Sihirbazı
-Genel C++ sınıfı bir projeye ekler. ATL ya da MFC sınıfı devralmaz.  
+
+Projeye Genel C++ sınıfı ekler. Sınıfı, ATL veya MFC devralmaz.  
   
- **Sınıf adı**  
- Yeni sınıf adını ayarlar.  
+- **Sınıf adı**
+
+   Yeni bir sınıf adını ayarlar.  
   
- **.h dosyası**  
- Üst bilgi dosyasını yeni sınıfın adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adının dayanır **sınıf adı**. Üst bilgi dosyasını tercih ettiğiniz bir konuma kaydedin veya varolan bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesini tıklatın (**...** ). ' I tıklattığınızda varolan bir dosyanın belirtirseniz **son**, sihirbazın sınıfı bildirim dosyasının içeriğini eklenmiş olup olmadığını belirtmenizi ister. Bildirim eklemek için tıklatın **Evet**; sihirbaza geri dönmek ve başka bir dosya adı belirtin, tıklatın **Hayır**.  
+- **.h dosyası**
+
+   Yeni bir sınıf için üst bilgi dosyası adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Üst bilgi dosyası istediğiniz konuma kaydedin veya mevcut bir dosyaya sınıf bildirimi eklemek için üç nokta düğmesini (**...** ). ' A tıkladığınızda, var olan bir dosya belirtirseniz **son**, sihirbaz sınıf bildirimi dosya içeriğini eklenmeyeceğini belirtmenizi ister. Bildirimi eklemek için tıklatın **Evet**; sihirbaza dönmek ve başka bir dosya adı belirtin, tıklatın **Hayır**.  
   
- **.cpp dosyası**  
- Yeni sınıfı için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adının dayanır **sınıf adı**. Uygulama dosyasını tercih ettiğiniz bir konuma kaydedin veya varolan bir dosyaya sınıf tanımını eklemek için üç nokta düğmesini tıklatın (**...** ). ' I tıklattığınızda varolan bir dosyanın belirtirseniz **son**, sihirbazın sınıf tanımını dosyasının içeriğini eklenmiş olup olmadığını belirtmenizi ister. Tanımı eklemek için tıklatın **Evet**; sihirbaza geri dönmek ve başka bir dosya adı belirtin, tıklatın **Hayır**.  
+- **.cpp dosyası**
+
+   Yeni bir sınıf için uygulama dosyasının adını ayarlar. Varsayılan olarak, bu ad, sağladığınız adın dayanır **sınıf adı**. Uygulama dosyası istediğiniz konuma kaydedin veya mevcut bir dosyaya sınıf tanımı eklemek için üç nokta düğmesini (**...** ). ' A tıkladığınızda, var olan bir dosya belirtirseniz **son**, sihirbaz sınıf tanımının dosyasının içeriğini eklenmeyeceğini belirtmenizi ister. Tanımı eklemek için tıklatın **Evet**; sihirbaza dönmek ve başka bir dosya adı belirtin, tıklatın **Hayır**.  
   
- **Taban sınıfı**  
- Yeni sınıf için temel sınıf olarak ayarlar.  
+- **Temel sınıf**
+
+   Yeni bir sınıf için taban sınıf ayarlar.  
   
- **Erişim**  
- Yeni sınıf için temel sınıf üyelerine erişimi ayarlar. Erişim değiştiricileri sınıf üyesi işlevleri için diğer sınıflara sahip erişim düzeyini belirten anahtar sözcükler. Erişim belirtme hakkında daha fazla bilgi için bkz: [üye erişim denetimi](../cpp/member-access-control-cpp.md). Varsayılan olarak, sınıf erişim düzeyini ayarlamak `public`.  
+- **Erişim**
+
+   Yeni bir sınıf için taban sınıf üyelerine erişimi ayarlar. Erişim değiştiricileri diğer sınıflara sahip sınıf üyesi işlevleri için erişim düzeyini belirten anahtar sözcüklerdir. Erişim belirtme hakkında daha fazla bilgi için bkz. [üye erişim denetimi](../cpp/member-access-control-cpp.md). Varsayılan olarak, sınıf erişim düzeyini ayarlamak `public`.  
   
--   `public`  
+   - `public`  
   
--   `protected`  
+   - `protected`  
   
--   `private`  
+   - `private`  
   
--   **Varsayılan** (herhangi bir erişim değiştiricisi oluşturulur.)  
+   - **Varsayılan** (herhangi bir erişim değiştiricisi oluşturulur.)  
   
- **Sanal yok Edicisi**  
- Sınıf yıkıcı sanal olup olmadığını belirtir. Bir sanal yıkıcı kullanımını türetilen sınıfların örneklerini silindiğinde, doğru yıkıcı adlı sağlamaya yardımcı olur.  
+- **Sanal yıkıcı**
+
+   Sınıf yok edicisini sanal olup olmadığını belirtir. Sanal bir yıkıcı kullanılmasını, özel olarak türetilmiş sınıfların örneklerini silindiğinde doğru yok Edicisi çağrılır sağlamaya yardımcı olur.  
   
- **Satır içi**  
- Sınıf oluşturucu ve satır içi işlev olarak sınıf tanımını üstbilgi dosyasında oluşturur.  
+- **Satır içi**
+
+   Üstbilgi dosyasında, sınıf oluşturucusu hem satır içi işlevleri olarak sınıf tanımı oluşturur.  
   
- **Yönetilen**  
- Seçili olduğunda, bir yönetilen sınıf ve üstbilgi dosyası ekler. Bu onay kutusu temizlendiğinde, yerel bir sınıf ve üstbilgi dosyası ekler.  
+- **Yönetilen**
+
+   Bu onay kutusu seçildiğinde, yönetilen bir sınıf ve üstbilgi dosyası ekler. Bu onay kutusu temizlenirse, yerel bir sınıf ve üstbilgi dosyası ekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Genel C++ Sınıfı Ekleme](../ide/adding-a-generic-cpp-class.md)

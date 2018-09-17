@@ -21,16 +21,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9b5c118e81372bd57810a9472526909ed21f765
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 4badc93f38d5ce76dcc294ad4ae216c8e3f6454c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32371105"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724015"
 ---
 # <a name="exp-files-as-linker-input"></a>Bağlayıcı Girişi olarak .Exp Dosyaları
-Dışarı aktarma (.exp) dosyaları, dışarı aktarılan işlevler ve veri öğeleri hakkında bilgi içerir. LIB içeri aktarma kitaplığı oluşturduğunda, ayrıca bir .exp dosyası oluşturur. Hem verir ve başka bir programda doğrudan veya dolaylı olarak içe aktaran bir program bağladığınızda .exp dosyası kullanın. Bir .exp dosyası ile bağlantı varsa, bağlantı LIB zaten bir oluşturduğunuzu varsayar çünkü bir içeri aktarma kitaplığı üretmez. .Exp dosyaları ve içeri aktarma kitaplıkları hakkında daha fazla ayrıntı için bkz: [içeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](../../build/reference/working-with-import-libraries-and-export-files.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LINK giriş dosyaları](../../build/reference/link-input-files.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Dışarı aktarma (.exp) dosyaları dışarı aktarılan işlevleri ve verileri öğeler hakkındaki bilgileri içerir. LIB içeri aktarma kitaplığı oluşturduğunda, ayrıca bir .exp dosyası oluşturur. Hem verir ve doğrudan veya dolaylı olarak başka bir programdan alır bir program bağladığınızda .exp dosyası kullanın. .Exp dosyasının ile bağlarsanız, LIB zaten bir oluşturduğunuzu varsayar çünkü bağlantı bir içeri aktarma kitaplığını üretmez. .Exp dosyaları ve içeri aktarma kitaplıkları hakkında daha fazla ayrıntı için bkz: [içeri aktarma kitaplıkları ve dışarı aktarma dosyalarıyla çalışma](../../build/reference/working-with-import-libraries-and-export-files.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LINK Giriş Dosyaları](../../build/reference/link-input-files.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

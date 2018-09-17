@@ -16,21 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8caa26685d6132cbc1ffd8a2467f8615bffd42f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 23665897266bab87c71b8b3889688113fe8aa99a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32370494"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720713"
 ---
 # <a name="lib-output-files"></a>LIB Çıktı Dosyaları
-Tarafından LIB çıktı dosyaları aşağıdaki tabloda gösterildiği gibi çünkü kullanılıyor, modunu bağlıdır.  
-  
-|Mod|Çıkış|  
-|----------|------------|  
-|Varsayılan (derleme veya bir kitaplık değiştirme)|COFF kitaplık (.lib)|  
-|/ Extract sahip bir üye ayıklanıyor|Nesne (.obj) dosyası|  
-|Bir verme dosya oluşturup/def kitaplıkla alma|Kitaplık (.lib) ve dışarı aktarma (.exp) dosyasını içeri aktarma|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)
+
+LIB tarafından oluşturulan çıktı dosyaları, aşağıdaki tabloda gösterildiği gibi çünkü kullanılıyor, modunu bağlıdır.
+
+|Mod|Çıkış|
+|----------|------------|
+|Varsayılan (oluşturmak veya bir kitaplık değiştirme)|COFF kitaplık (.lib)|
+|/ Extract ile bir üyesini ayıklama|Nesne (.obj) dosyası|
+|Bir dışarı aktarma dosyası oluşturup ile/def kitaplığı içeri aktarma|Kitaplık (.lib) ve dışarı aktarma (.exp) dosyası içeri aktarma|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[LIB'e Genel Bakış](../../build/reference/overview-of-lib.md)

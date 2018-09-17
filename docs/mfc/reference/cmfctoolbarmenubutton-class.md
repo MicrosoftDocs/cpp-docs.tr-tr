@@ -102,12 +102,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07b582c8b785adb13acce86497d898c183b3128b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d5baebfa1d706bf18b9fc36d706ebe474b6b042d
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765937"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721727"
 ---
 # <a name="cmfctoolbarmenubutton-class"></a>CMFCToolBarMenuButton sınıfı
 Açılır menü içeren bir araç çubuğu düğmesi.  
@@ -220,23 +220,23 @@ CMFCToolBarMenuButton(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *src*  
- Mevcut bir `CMFCToolBarMenuButton` bu kopyalanacak nesne `CMFCToolBarMenuButton` nesne.  
+*src*<br/>
+[in] Mevcut bir `CMFCToolBarMenuButton` bu kopyalanacak nesne `CMFCToolBarMenuButton` nesne.  
   
- [in] *uiID*  
- Bir kullanıcı düğmeye tıkladığında yürütülecek komut kimliği; veya doğrudan bir komutu yürütme değil bir menü düğmesinin (birim) -1.  
+*uiID*<br/>
+[in] Bir kullanıcı düğmeye tıkladığında yürütülecek komut kimliği; veya doğrudan bir komutu yürütme değil bir menü düğmesinin (birim) -1.  
   
- [in] *hMenu*  
- Bir tanıtıcı bir menüye; veya bir menü düğmesine sahip değilse NULL.  
+*hMenu*<br/>
+[in] Bir tanıtıcı bir menüye; veya bir menü düğmesine sahip değilse NULL.  
   
- [in] *iImage*  
- Düğme için resim dizini; Bu düğme simge yok ya da tarafından belirtilen komut için simge kullanıyorsa- 1 *uiID*. Her biri için aynı dizinidir `CMFCToolBarImages` uygulamanızdaki bir nesne.  
+*iImage*<br/>
+[in] Düğme için resim dizini; Bu düğme simge yok ya da tarafından belirtilen komut için simge kullanıyorsa- 1 *uiID*. Her biri için aynı dizinidir `CMFCToolBarImages` uygulamanızdaki bir nesne.  
   
- [in] *lpszText*  
- Araç çubuğu menüsü düğmesi metni.  
+*lpszText*<br/>
+[in] Araç çubuğu menüsü düğmesi metni.  
   
- [in] *bUserButton*  
- Kullanıcı tanımlı bir resim düğme görüntüler TRUE; YANLIŞ düğme tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir resim görüntüler *uiID*.  
+*bUserButton*<br/>
+[in] Kullanıcı tanımlı bir resim düğme görüntüler TRUE; YANLIŞ düğme tarafından belirtilen komut ile ilişkili önceden tanımlanmış bir resim görüntüler *uiID*.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Varsa *uiID* geçerli bir komut kimliği, kullanıcı tıkladığında bu komut düğmesi gerçekleştirir. Varsa *hMenu* bir geçerli bir menü tanıtıcısı bir araç veya bir alt menüde göründüğünde göründüğü bir açılan menü düğmesi sağlar. Her iki *uiID* ve *hMenu* düğme olan Bölünmüş düğme kullanıcı buna tıkladığında bir bölümünü komut gerçekleştirir ve bir bölümü, bir açılır menü bir aşağı ok geçerli olduğunda kullanıcı üzerinde tıklar. Ancak, varsa *hMenu* geçerli bir kullanıcı düğmeyi bir menüye eklendiğinde, bir komut gerçekleştirmek için düğmeye tıklayın mümkün olmayacaktır.  
@@ -280,8 +280,8 @@ virtual void CreateFromMenu(HMENU hMenu);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *hMenu*  
- Bir menüye tanıtıcı.  
+*hMenu*<br/>
+[in] Bir menüye tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu menüsü düğmesi açılan alt görüntüleyebilirsiniz.  
@@ -327,14 +327,14 @@ void DrawDocumentIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Cihaz bağlamı için bir işaretçi.  
+*pDC*<br/>
+[in] Cihaz bağlamı için bir işaretçi.  
   
- [in] *rectImage*  
- Sınırlayıcı dikdörtgeni görüntünün koordinatları.  
+*rectImage*<br/>
+[in] Sınırlayıcı dikdörtgeni görüntünün koordinatları.  
   
- [in] *hIcon*  
- Simge tanıtıcı.  
+*hIcon*<br/>
+[in] Simge tanıtıcı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu yöntem, bir belge simgesini alır ve belirtilen alanında Ortalanan menü düğmesine çizer *rectImage*.  
@@ -424,8 +424,8 @@ void GetImageRect(CRect& rectImage);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *rectImage*  
- Bir başvuru bir `CRect` alan sınırlayıcı dikdörtgeni görüntünün koordinatlarını nesnesi.  
+*rectImage*<br/>
+[out] Bir başvuru bir `CRect` alan sınırlayıcı dikdörtgeni görüntünün koordinatlarını nesnesi.  
   
 ##  <a name="getpaletterows"></a>  CMFCToolBarMenuButton::GetPaletteRows  
  Menü palet modundayken açılan menüde satır sayısını döndürür.  
@@ -560,8 +560,8 @@ virtual SIZE OnCalculateSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *sizeDefault*  
+*pDC*<br/>
+[in] [in] *sizeDefault*  
  [in] *bHorz*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -599,8 +599,8 @@ virtual BOOL OnClick(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- [in] *bDelay*  
+*pWnd*<br/>
+[in] [in] *bDelay*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
@@ -651,14 +651,14 @@ virtual void OnDraw(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
- [in] *pImages*  
- [in] *bHorz*  
- [in] *bCustomizeMode*  
- [in] *bHighlight*  
- [in] *bDrawBorder*  
- [in] *bGrayDisabledButtons*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
+*pImages*<br/>
+[in] [in] *bHorz*  
+*bCustomizeMode*<br/>
+[in] [in] *bHighlight*  
+*bDrawBorder*<br/>
+[in] [in] *bGrayDisabledButtons*  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -673,8 +673,8 @@ virtual int OnDrawOnCustomizeList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- [in] *dikdörtgen*  
+*pDC*<br/>
+[in] [in] *dikdörtgen*  
  [in] *bSelected*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -689,8 +689,8 @@ virtual BOOL OpenPopupMenu(CWnd* pWnd=NULL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWnd*  
- Açılan menü komutlarını alan penceresi belirtir. Yalnızca bir üst penceresine araç çubuğu menüsü düğmesi varsa, NULL olabilir.  
+*pWnd*<br/>
+[in] Açılan menü komutlarını alan penceresi belirtir. Yalnızca bir üst penceresine araç çubuğu menüsü düğmesi varsa, NULL olabilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  TRUE olduğunda bir [CMFCPopupMenu sınıfı](../../mfc/reference/cmfcpopupmenu-class.md) nesne oluşturulur ve açılır başarıyla; Aksi takdirde FALSE.  
@@ -759,8 +759,8 @@ void SetMenuOnly(BOOL bMenuOnly);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bMenuOnly*  
- Geçerli komut kimliği hem bir alt yanlış bir geçerli komut kimliği hem bir alt menüye sahip olduğunda bu düğmeyi bir Bölünmüş düğme olarak göstermek için sahip olduğunda bu düğmeye menü düğmesi olarak göstermek için TRUE.  
+*bMenuOnly*<br/>
+[in] Geçerli komut kimliği hem bir alt yanlış bir geçerli komut kimliği hem bir alt menüye sahip olduğunda bu düğmeyi bir Bölünmüş düğme olarak göstermek için sahip olduğunda bu düğmeye menü düğmesi olarak göstermek için TRUE.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Araç çubuğu menüsü düğmesi, bir alt hem de komut kimliği varsa, genellikle, menünün ok düğmesini ana düğme ve bir bağlı olan bir Bölünmüş düğme gibi görünüyor. Bu yöntem çağırırsanız ve *bMenuOnly* doğru ise, düğmeyi bunun yerine bir aşağı okun düğmesi ile bir tek menü düğmesi gibi görünüyor. Kullanıcı her iki modda da oka tıkladığında, alt menüyü açılır ve kullanıcı tıkladığında düğmesi her iki modda framework ok olmayan parçası komutu yürütür.  
@@ -775,11 +775,11 @@ void SetMenuPaletteMode(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bMenuPaletteMode*  
- Aşağı açılan menüyü palet modunda olup olmadığını belirtir.  
+*bMenuPaletteMode*<br/>
+[in] Aşağı açılan menüyü palet modunda olup olmadığını belirtir.  
   
- [in] *nPaletteRows*  
- Palet satır sayısı.  
+*nPaletteRows*<br/>
+[in] Palet satır sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Palet modunda tüm menü öğelerini sütunlu bir palet görüntülenir. Satır sayısını kullanarak belirttiğiniz *nPaletteRows*.  
@@ -816,8 +816,8 @@ virtual void SetTearOff(UINT uiBarID);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *uiBarID*  
- Yeni bir bölünmüş belirtir çubuğu kimliği.  
+*uiBarID*<br/>
+[in] Yeni bir bölünmüş belirtir çubuğu kimliği.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Kullanıcı menü düğmesine bir menü çubuğu dışına sürüklediğinde oluşturulur etkinleştiriliyorken çubuğunun Kimliğini belirlemek için bu yöntemi çağırın. Varsa *uiBarID* parametresi 0, kullanıcı menüsü düğmesi devre dışı ayırma yapılamıyor.  

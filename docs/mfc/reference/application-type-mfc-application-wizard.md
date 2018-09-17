@@ -16,88 +16,96 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5708e823c57ecdb8470a398c4192cba1a5b6e411
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f302c797dd1074bcd96385c7ec1552589853f127
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33353445"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720700"
 ---
 # <a name="application-type-mfc-application-wizard"></a>Uygulama Türü, MFC Uygulama Sihirbazı
-Bu sayfanın kullanmak [MFC Uygulama Sihirbazı'nı](../../mfc/reference/mfc-application-wizard.md) tasarımı ve yeni bir MFC uygulaması için temel özellikleri ekleyin.  
+Bu sayfanın kullanın [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md) tasarlayıp temel özellikleri eklemek için yeni bir MFC uygulaması.  
   
- **Uygulama türü**  
- Uygulamanızı oluşturmak istediğiniz belge desteği türünü belirtir. Seçtiğiniz uygulama türüne, uygulamanız için kullanılabilen kullanıcı arabirimi seçenekleri belirler. Bkz: [kullanıcı arabirimi özellikleri, MFC Uygulama Sihirbazı'nı](../../mfc/reference/user-interface-features-mfc-application-wizard.md) daha fazla bilgi için.  
+- **Uygulama türü**
+
+   Uygulamanızı oluşturmak istediğiniz belge desteği türünü belirtir. Seçtiğiniz uygulama türüne, uygulamanız için kullanılabilen kullanıcı arabirimi seçenekleri belirler. Bkz: [kullanıcı arabirimi özellikleri, MFC Uygulama Sihirbazı](../../mfc/reference/user-interface-features-mfc-application-wizard.md) daha fazla bilgi için.  
   
- Belge türleri hakkında daha fazla bilgi için bkz:  
+   Belge türleri hakkında daha fazla bilgi için bkz:  
   
--   [SDI ve MDI](../../mfc/sdi-and-mdi.md)  
+   - [SDI ve MDI](../../mfc/sdi-and-mdi.md)  
   
--   [Çerçeve Pencereleri](../../mfc/frame-windows.md)  
+   - [Çerçeve Pencereleri](../../mfc/frame-windows.md)  
   
--   [Çerçeve Penceresi Sınıfları](../../mfc/frame-window-classes.md)  
+   - [Çerçeve Penceresi Sınıfları](../../mfc/frame-window-classes.md)  
   
--   [Belgeler, Görünümler ve Çerçeve](../../mfc/documents-views-and-the-framework.md)  
+   - [Belgeler, Görünümler ve Çerçeve](../../mfc/documents-views-and-the-framework.md)  
   
--   [İletişim Kutuları](../../mfc/dialog-boxes.md)  
+   - [İletişim Kutuları](../../mfc/dialog-boxes.md)  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Tek belge**|Burada bir görünüm sınıfı temel uygulamanız için bir tek belge arabirimi (SDI) mimarisini oluşturur [CView sınıfı](../../mfc/reference/cview-class.md). Görünüm için temel sınıfı değiştirebilirsiniz [oluşturulan sınıflar, MFC Uygulama Sihirbazı'nı](../../mfc/reference/generated-classes-mfc-application-wizard.md) Sihirbazı sayfası. Örneğin, form tabanlı bir uygulama oluşturmak için kullanın [Cformview'yu sınıfı](../../mfc/reference/cformview-class.md) görünüm sınıfı için.<br /><br /> İçinde bu tür bir uygulama, yalnızca tek bir belgenin belge çerçeve penceresi tutabilir.|  
-|**Birden çok belge**|Burada bir görünüm sınıfı dayanır, uygulamanız için bir birden çok belge arabirimi (MDI) mimarisi oluşturur `CView`. Görünüm için temel sınıfı değiştirebilirsiniz **oluşturulan sınıflar** Sihirbazı sayfası. Örneğin, form tabanlı bir uygulama oluşturmak için kullanın `CFormView` görünüm sınıfı için.<br /><br /> İçinde bu tür bir uygulama, windows birden çok alt belge çerçeve penceresi basılı tutabilirsiniz.|  
-|**Sekmeli belgeler**|Her bir belgenin ayrı bir sekmede yerleştirir.|  
-|**Temel iletişim**|Burada bir iletişim kutusu sınıfı dayanır, uygulamanız için iletişim tabanlı bir mimari oluşturur `CDialog`. (Bir HTML iletişim kutusu oluşturmak için kutusunu **kullanım HTML iletişim**.)|  
-|**HTML iletişim kutusunu kullanın**|İletişim kutusu için yalnızca uygulamaları. İletişim sınıfından türetilen [CDHtmlDialog sınıfı](../../mfc/reference/cdhtmldialog-class.md) yerine [CDialog sınıfı](../../mfc/reference/cdialog-class.md). Bu kutuyu işaretlerseniz `CDHtmlDialog` içinde listelenen **temel sınıfı** kutusunda [oluşturulan sınıflar, MFC Uygulama Sihirbazı'nı](../../mfc/reference/generated-classes-mfc-application-wizard.md) Sihirbazı sayfası.<br /><br /> A `CDHtmlDialog`-türetilen iletişim kutusu görüntüler HTML tabanlı iletişim kutuları, HTML alışverişleri verilerle denetler ve HTML olayları işler.|  
-|**Birden çok üst düzey belgeleri**|Burada bir görünüm sınıfı dayanır, uygulamanız için birden çok üst düzey bir mimari oluşturur `CView`.<br /><br /> Bu tür bir uygulama, bir kullanıcı tıkladığında **yeni** (veya **yeni çerçeve**) üzerinde **dosya** menüsünde, uygulama, üst örtük olarak masaüstü bir penceresini oluşturur. Yeni belge çerçeve görev çubuğunda görünür ve uygulama penceresinin istemci alanını sınırlı değil.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Tek belge**|Burada view sınıfı üzerinden hesaplanmıştır uygulamanız için bir tek Belgeli Arabirim (SDI) mimarisi oluşturur [CView sınıfı](../../mfc/reference/cview-class.md). Temel Sınıf Görünümü'nde için değiştirebileceğiniz [oluşturulan sınıflar, MFC Uygulama Sihirbazı](../../mfc/reference/generated-classes-mfc-application-wizard.md) Sihirbazı sayfası. Örneğin, form tabanlı bir uygulama oluşturmak için kullanın [CFormView sınıfı](../../mfc/reference/cformview-class.md) için Görünüm sınıfı.<br /><br /> İçinde bu tür bir uygulama, tek bir belge belgenin çerçeve penceresi barındırabilir.|  
+   |**Birden çok belge**|Burada view sınıfı üzerinden hesaplanmıştır uygulamanız için bir birden çok belge arabirimi (MDI) mimarisi oluşturur `CView`. Temel Sınıf Görünümü'nde için değiştirebileceğiniz **oluşturulan sınıflar** Sihirbazı sayfası. Örneğin, form tabanlı bir uygulama oluşturmak için kullanın `CFormView` için Görünüm sınıfı.<br /><br /> İçinde bu tür bir uygulama belgenin çerçeve penceresinde windows birden fazla alt barındırabilir.|  
+   |**Sekmeli Belge**|Her belge için ayrı bir sekmede yerleştirir.|  
+   |**İletişim kutusu tabanlı**|Burada bir iletişim kutusu sınıfı temel uygulamanız için bir iletişim kutusu tabanlı mimarisi oluşturur `CDialog`. (Bir HTML iletişim kutusu oluşturmak için kutusunu **kullanım HTML iletişim**.)|  
+   |**HTML iletişim kutusunu kullanın**|İletişim kutusu için yalnızca uygulamaları. İletişim sınıfından türetilen [CDHtmlDialog sınıfı](../../mfc/reference/cdhtmldialog-class.md) yerine [CDialog sınıfı](../../mfc/reference/cdialog-class.md). Bu kutuyu işaretlerseniz `CDHtmlDialog` listelenir **temel sınıfı** kutusunda [oluşturulan sınıflar, MFC Uygulama Sihirbazı](../../mfc/reference/generated-classes-mfc-application-wizard.md) Sihirbazı sayfası.<br /><br /> A `CDHtmlDialog`-türetilmiş iletişim kutusu görüntüler HTML tabanlı iletişim kutuları, HTML veri denetler ve HTML olayları işler.|  
+   |**Birden çok en üst düzey belge**|Burada view sınıfı üzerinden hesaplanmıştır uygulamanız için birden çok üst düzey bir mimari oluşturur `CView`.<br /><br /> Bu tür bir uygulama, kullanıcı tıkladığında **yeni** (veya **yeni çerçeve**) üzerinde **dosya** menüsünde, uygulama ana olan örtük olarak masaüstü bir pencere oluşturur. Yeni belge çerçeve, görev çubuğunda görünür ve uygulama penceresinin istemci alanına sınırlı değildir.|  
   
- **Belge/görünüm mimarisi desteği**  
- Belge/görünüm mimarisi kullanarak, uygulamanızda dahil edilip edilmeyeceğini belirtir [CDocument sınıfı](../../mfc/reference/cdocument-class.md) ve [CView sınıfı](../../mfc/reference/cview-class.md) (varsayılan). MFC dışı uygulama bağlantı noktası oluşturma veya derlenmiş yürütülebilir dosyanın boyutunu küçültmek istiyorsanız bu onay kutusunu temizleyin. Varsayılan olarak, bir uygulama belge/görünüm mimarisinin olmadan türetildiği [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md), ve bir disk dosyasından bir belgeyi açmak için MFC desteği içermez.  
+- **Belge/görünüm mimarisi desteği**
+
+   Belge/görünüm mimarisi kullanarak uygulamanızda eklenip eklenmeyeceğini belirtir [CDocument sınıfı](../../mfc/reference/cdocument-class.md) ve [CView sınıfı](../../mfc/reference/cview-class.md) (varsayılan). MFC olmayan uygulama bağlantı noktası oluşturma veya derlenmiş yürütülebilir dosyanızın boyutunu küçültmek istiyorsanız bu onay kutusunu temizleyin. Varsayılan olarak, bir uygulama olmadan belge/görünüm mimarisi türetilen [CWinApp sınıfı](../../mfc/reference/cwinapp-class.md), ve bir disk dosyasından bir belgeyi açmak için MFC desteği içermez.  
   
- **Kaynak dili**  
- Kaynaklarınızın dili ayarlar. Kullanılabilir diller, sisteminizde yüklü Visual Studio tarafından olarak görüntüler. Sistem diliniz dışında bir dil seçmek istiyorsanız, o dil için uygun şablon klasör zaten yüklü olmalıdır. Türkçe kaynaklar kullanılabilir varsayılandan farklı yükleme hakkında daha fazla bilgi için **kaynak dili** listesinde, bkz: [diğer diller için sihirbaz desteği](../../ide/wizard-support-for-other-languages.md).  
+- **Kaynak dili**
+
+   Kaynaklarınızın dili ayarlar. Listede kullanılabilir diller, sisteminizde Visual Studio tarafından yüklenmiş olarak görüntülenir. Sistem dilinizi dışında bir dil seçmek istiyorsanız, bu dil için uygun şablon klasörü zaten yüklü olmalıdır. Dil kaynakları kullanılabilir varsayılandan farklı yükleme hakkında daha fazla bilgi için **kaynak dili** listelemek için bkz: [diğer diller için sihirbaz desteği](../../ide/wizard-support-for-other-languages.md).  
   
- Seçtiğiniz dil yansıtılmıştır **dizeleri yerelleştirilmiş** seçeneği [belge şablonu dizeleri, MFC Uygulama Sihirbazı'nı](../../mfc/reference/document-template-strings-mfc-application-wizard.md) Sihirbazı sayfası.  
+   Seçtiğiniz dili yansıtılır **yerelleştirilmiş dizeleri** seçeneği [belge şablonu dizeleri, MFC Uygulama Sihirbazı](../../mfc/reference/document-template-strings-mfc-application-wizard.md) Sihirbazı sayfası.  
   
- **Unicode kitaplıkları kullanma**  
- MFC kitaplıkları Unicode veya Unicode olmayan sürümünü kullanılıp kullanılmayacağını belirtir.  
+- **Unicode kitaplıklarını kullanma**
+
+   MFC kitaplıkları bir Unicode veya Unicode olmayan sürümünün kullanılıp kullanılmayacağını belirtir.  
   
- **Proje stili**  
- Uygulamanızı bir standart MFC, dosya Gezgini'ni, Visual Studio veya Office mimarisi ve görüntü olup olmadığını gösterir. Daha fazla bilgi için bkz: [dosya Gezgini stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md).  
+- **Proje stili**
+
+   Uygulamanızı bir standart MFC, dosya Gezgini, Visual Studio veya Office mimarisi ve görüntü olup olmadığını gösterir. Daha fazla bilgi için [dosya Gezgini stilinde MFC uygulaması oluşturma](../../mfc/reference/creating-a-file-explorer-style-mfc-application.md).  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**MFC standart**|Bir standart MFC Uygulama mimarisi sağlar.|  
-|**Dosya Gezgini**|Sol bölmede olduğu Bölümlendirici penceresini kullanarak bir dosya gezginini benzeri uygulama uygulayan bir [CTreeView sınıfı](../../mfc/reference/ctreeview-class.md) ve sağ bölmede bir [CListView sınıfı](../../mfc/reference/clistview-class.md).|  
-|**Visual Studio**|Dört dockable bölmeleri içeren Visual Studio benzeri uygulamasını uygular (**dosya görünümü**, **sınıf görünümü**, **özellikleri**, ve **çıkış**) öğesinden türetilen [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve türetilmiş bir ana çerçeve penceresi [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md) (varsayılan).|  
-|**Office**|Türetilen bir Şerit içeren bir Office benzeri uygulama uygulayan [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md), türetilmiş bir Outlook Çubuğu [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md), türetilmiş bir başlık çubuğu [CMFCCaptionBar sınıfı](../../mfc/reference/cmfccaptionbar-class.md)ve türetilmiş bir ana çerçeve [CMDIFrameWndEx sınıfı](../../mfc/reference/cmdiframewndex-class.md).|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**MFC standart**|Standart bir MFC Uygulama mimarisi sağlar.|  
+   |**Dosya Gezgini**|Sol bölmede olduğu bir ayırıcı penceresi kullanarak bir dosyayı Gezgin benzeri uygulama uygulayan bir [CTreeView sınıfı](../../mfc/reference/ctreeview-class.md) ve sağ bölmede bir [CListView sınıfı](../../mfc/reference/clistview-class.md).|  
+   |**Visual Studio**|Dört yerleştirilebilir bölmeleri içeren Visual Studio benzeri uygulamasını uygular (**dosya görünümü**, **sınıf görünümü**, **özellikleri**, ve **çıkış**) sınıfından türetilen [CDockablePane sınıfı](../../mfc/reference/cdockablepane-class.md) ve türetilen bir ana çerçeve penceresi [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md) (varsayılan).|  
+   |**Office**|Türetilen bir Şerit içeren bir Office benzeri uygulama uygulayan [CMFCRibbonBar sınıfı](../../mfc/reference/cmfcribbonbar-class.md), türetilen bir Outlook Çubuğu [CMFCOutlookBar sınıfı](../../mfc/reference/cmfcoutlookbar-class.md), türetilen bir başlık çubuğu [CMFCCaptionBar sınıfı](../../mfc/reference/cmfccaptionbar-class.md), türetilen bir ana çerçeve [Cmdıframewndex sınıfı](../../mfc/reference/cmdiframewndex-class.md).|  
   
- **Görsel stil ve renkleri**  
- Uygulama visual stilini belirler. Aşağıdaki seçenekler mevcuttur:  
+- **Görsel stil ve renkler**
+
+   Uygulamanın görsel stilini belirler. Aşağıdaki seçenekler mevcuttur:  
   
--   **Windows yerel/varsayılan**  
+   - **Windows yerel/varsayılan**  
   
--   **Office 2003**  
+   - **Office 2003**  
   
--   **Visual Studio 2005**  
+   - **Visual Studio 2005**  
   
--   **Office 2007 (mavi tema)**  
+   - **Office 2007 (mavi tema)**  
   
--   **Office 2007 (siyah tema)**  
+   - **Office 2007 (siyah tema)**  
   
--   **Office 2007 (Gümüş tema)**  
+   - **Office 2007 (Gümüş tema)**  
   
--   **Office 2007 (açık mavi tema)**  
+   - **Office 2007 (açık mavi tema)**  
   
- **Görsel stil geçiş etkinleştir**  
- Kullanıcının uygulamanın çalışma zamanında görsel stil genellikle bir menü veya Şerit uygun görsel stil seçerek değiştirip değiştiremeyeceğini belirler.  
+- **Görsel stil geçişini etkinleştir**
+
+   Kullanıcının görsel stili uygulamanın çalışma zamanında, genellikle bir menü veya Şerit uygun görsel stil seçerek değiştirip değiştiremeyeceğini belirtir.  
   
- **MFC kullanımı**  
- MFC Kitaplığı'na bağlamak nasıl belirtir. Varsayılan olarak, MFC paylaşılan DLL olarak bağlanır.  
+- **MFC'nin kullanımı**
+
+   MFC Kitaplığı'na bağlama belirtir. Varsayılan olarak, MFC paylaşılan DLL olarak bağlanır.  
   
-|Seçenek|Açıklama|  
-|------------|-----------------|  
-|**Paylaşılan DLL MFC kullanma**|MFC kitaplığını bir uygulamayı paylaşılan DLL olarak bağlar. Uygulamanın çalışma zamanında MFC kitaplığını çağrılar. Bu seçenek MFC kitaplığını kullanan birden fazla yürütülebilir dosya oluşur uygulamaların disk ve bellek gereksinimlerini azaltır. Win32 ve MFC uygulamaları (varsayılan), DLL işlevleri çağırabilir|  
-|**MFC statik kitaplığa kullanın**|Statik MFC kitaplık uygulamaya derleme zamanında bağlar.|  
+   |Seçenek|Açıklama|  
+   |------------|-----------------|  
+   |**Paylaşılan DLL'de MFC kullan**|MFC Kitaplığı uygulamanın paylaşılan DLL olarak bağlar. Uygulama çalışma zamanında MFC Kitaplığı çağrılar. Bu seçenek, MFC Kitaplığı kullanan birden fazla yürütülebilir dosya oluşan uygulamaları disk ve bellek gereksinimlerini azaltır. Win32 ve MFC uygulamaları (varsayılan), DLL işlevleri çağırabilir|  
+   |**MFC'yi statik kitaplıkta kullan**|Uygulamanın statik MFC Kitaplığı için derleme zamanında bağlar.|  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [MFC Uygulama Sihirbazı](../../mfc/reference/mfc-application-wizard.md)   

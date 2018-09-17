@@ -15,22 +15,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58dca91d5ab3bf0cf28d30a04d33ae8bf5819401
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: edcc84e8c12fab7149bbf6db2baf1f86e8635eb5
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33321200"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725516"
 ---
 # <a name="hlsl-property-pages-advanced"></a>HLSL Özellik Sayfaları: Gelişmiş
-HLSL derleyici (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Gelişmiş** özellik sayfası. Nasıl erişileceği hakkında bilgi için **Gelişmiş** özellik sayfası HLSL klasöründeki bkz [proje özellikleriyle çalışma](../ide/working-with-project-properties.md).  
+HLSL derleyicisi (fxc.exe) aşağıdaki özellikleri yapılandırmak için kullanın, **Gelişmiş** özellik sayfası. Nasıl erişileceği hakkında daha fazla bilgi için **Gelişmiş** HLSL klasöründe, özellik sayfasında bakın [Working with Project Properties](../ide/working-with-project-properties.md).  
   
-## <a name="uielement-list"></a>UIElement Listesi  
- **Başlangıç başlığını gösterme**  
- **Evet (/ nologo)** görüntülenmesine Başlangıç başlığını ve bilgi iletisi; Aksi halde, **Hayır**. Varsayılan değer olan **Evet (/ nologo)**.  
+## <a name="uielement-list"></a>UIElement Listesi
+
+- **Başlangıç başlığını gösterme**
+
+   **Evet (/ nologo)** görüntülenmesine başlangıç başlığının ve bilgi iletisi; Aksi takdirde, **Hayır**. Varsayılan değer olan **Evet (/ nologo)**.  
   
- **Uyarıları hata ele**  
- **Evet (/WX)** tüm derleyici uyarıları hata olarak; değerlendirmek için Aksi halde, **Hayır**.  
+- **Uyarıları hata olarak değerlendir**
+
+   **Evet (/WX)** tüm Derleyici uyarılarını hata olarak; değerlendirmek için Aksi takdirde, **Hayır**.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [HLSL özellik sayfaları](../ide/hlsl-property-pages.md)   

@@ -26,12 +26,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bfb0c3c0544a9c58801f98567825e7e97e48b13c
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: a956212df2579298f1f947bf2388dec1532dff10
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "43687993"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721740"
 ---
 # <a name="subtractwithcarryengine-class"></a>subtract_with_carry_engine Sınıfı
 
@@ -46,17 +46,17 @@ class subtract_with_carry_engine;
 
 ### <a name="parameters"></a>Parametreler
 
-*UIntType*  
- İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
+*UIntType*<br/>
+İşeritsiz tamsayı sonuç türü. Olası türleri için bkz: [ \<rastgele >](../standard-library/random.md).
 
-*W*  
- **Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
+*W*<br/>
+**Word boyutu**. Her sözcüğün bitlerini durum sırası boyutu. **Önkoşul**: `0 < W ≤ numeric_limits<UIntType>::digits`
 
-*S*  
- **Kısa bir gecikme**. Tamsayı değerleri sayısı. **Önkoşul**: `0 < S < R`
+*S*<br/>
+**Kısa bir gecikme**. Tamsayı değerleri sayısı. **Önkoşul**: `0 < S < R`
 
-*R*  
- **Uzun lag**. Yinelenme oluşturulan serisindeki belirler.
+*R*<br/>
+**Uzun lag**. Yinelenme oluşturulan serisindeki belirler.
 
 ## <a name="members"></a>Üyeler
 

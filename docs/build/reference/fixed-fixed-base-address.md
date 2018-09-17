@@ -20,41 +20,44 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 08b1193b7cfe58aed45e4feec598a49227eafc87
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 697f6ccfd98059175311cd04e4e82038877b2110
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32374167"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723404"
 ---
 # <a name="fixed-fixed-base-address"></a>/FIXED (Sabit Temel Adres)
-```  
-/FIXED[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Programı yalnızca, tercih edilen temel adres yüklenecek işletim sistemini söyler. Tercih edilen temel adres kullanılamıyorsa, işletim sistemi dosya yüklemez. Daha fazla bilgi için bkz: [/BASE (Temel adres)](../../build/reference/base-base-address.md).  
-  
- DLL ve /FIXED için herhangi bir proje türü için varsayılan /FIXED:NO varsayılan ayardır.  
-  
- BAĞLANTI /FIXED belirtildiğinde, yeniden konumlandırma bölüm programa oluşturmaz. Çalışma zamanında, işletim sistemi programın belirtilen adresteki yükleyemiyor ise, bir hata iletisi sorunları ve program yüklemez.  
-  
- Programa yeniden konumlandırma bölüm oluşturmak için /FIXED:NO belirtin.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **bağlayıcı** klasör.  
-  
-3.  Seçin **komut satırı** özellik sayfası.  
-  
-4.  Seçenek adı yazın ve ayarı **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/FIXED[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+İşletim sistemine programı yalnızca tercih edilen temel adresini yük için söyler. Tercih edilen taban adresi kullanılamıyorsa, işletim sistemi dosyayı yüklemez. Daha fazla bilgi için [/Base (Temel adres)](../../build/reference/base-base-address.md).
+
+Bir DLL ve/FIXED için herhangi bir proje türü için varsayılan/FIXED: No varsayılan ayardır.
+
+/ FIXED belirtildiğinde, bağlantı programda bir yerleştirme bölümü oluşturmaz. Çalışma zamanında, işletim sistemi belirtilen adresteki programı yüklenemiyor ise, bir hata iletisi yayınlar ve programı yüklemez.
+
+Programda bir yeniden konumlandırma bölümü oluşturmak için/FIXED: No belirtin.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **bağlayıcı** klasör.
+
+1. Seçin **komut satırı** özellik sayfası.
+
+1. Seçenek adını yazın ve ayarı **ek seçenekler** kutusu.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCLinkerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

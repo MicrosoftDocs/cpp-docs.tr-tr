@@ -130,12 +130,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6822957abfa98dab737494bb2924c3ecf84090e
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 16f812fc941284122ce2a869786ae73447bff83a
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37337508"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722637"
 ---
 # <a name="cdocument-class"></a>CDocument sınıfı
 Kullanıcı tanımlı belge sınıfları için temel işlevleri sağlar.  
@@ -659,8 +659,8 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *deEvent*  
- Olayın türünü tanımlayan numaralandırılmış veri türü.  
+*deEvent*<br/>
+[in] Olayın türünü tanımlayan numaralandırılmış veri türü.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Belge olayları birden çok sınıf etkileyebilir. Bu yöntem, sınıf dışındaki etkileyen belge olayları işlenmesinden sorumludur [CDocument sınıfı](../../mfc/reference/cdocument-class.md). Şu anda, belge olaylara yanıt vermesi gereken tek sınıftır [CDataRecoveryHandler sınıfı](../../mfc/reference/cdatarecoveryhandler-class.md). `CDocument` Sınıfında diğer geçersiz kılınabilir yöntemleri üzerinde etkisi işlenmesinden sorumludur `CDocument`.  

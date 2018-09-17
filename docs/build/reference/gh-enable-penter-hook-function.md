@@ -19,92 +19,96 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68497e4e760e1268a0175d5a68452678153896b8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 231eed17f155b9ec184e0cf4fe3bd91e7770a7f4
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373159"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716871"
 ---
 # <a name="gh-enable-penter-hook-function"></a>/Gh (_penter Kanca İşlevini Etkinleştir)
-Çağrı neden `_penter` her yöntemi veya işlev başlangıç işlevi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Gh  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_penter` İşlevi herhangi bir kitaplığı parçası değil ve sizin için bir tanımını sağlamak üzere kadar `_penter`.  
-  
- Açıkça çağırma planlamıyorsanız `_penter`, prototip sağlamanız gerekmez. İşlevi aşağıdaki prototipe vardı ve tüm yazmaçların içeriğini girişinde itme gerekir ve Çıkışta değişmeden içerik pop gibi görünmelidir:  
-  
-```  
-void __declspec(naked) _cdecl _penter( void );  
-```  
-  
- Bu bildirim 64-bit projeleri için kullanılabilir değil.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Derleyici seçeneği yazın **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod ile derlendiğinde **/Gh**, gösterir nasıl `_penter` iki kez; adlı işlevi girerken bir kez `main` işlevi girerken bir kez `x`.  
-  
-```  
-// Gh_compiler_option.cpp  
-// compile with: /Gh  
-// processor: x86  
-#include <stdio.h>  
-void x() {}  
-  
-int main() {  
-   x();  
-}  
-  
-extern "C" void __declspec(naked) _cdecl _penter( void ) {  
-   _asm {  
-      push eax  
-      push ebx  
-      push ecx  
-      push edx  
-      push ebp  
-      push edi  
-      push esi  
-    }  
-  
-   printf_s("\nIn a function!");  
-  
-   _asm {  
-      pop esi  
-      pop edi  
-      pop ebp  
-      pop edx  
-      pop ecx  
-      pop ebx  
-      pop eax  
-      ret  
-    }  
-}  
-```  
-  
-```Output  
-In a function!  
-In a function!  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Bir çağrısına neden `_penter` her yöntem veya işlev başlangıcında işlevi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Gh
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`_penter` İşlevi herhangi kitaplığının parçası değildir ve sizin için bir tanım sağlamak için en fazla `_penter`.
+
+Açıkça çağırmak planlamıyorsanız `_penter`, bir prototip sağlamanız gerekmez. İşlev aşağıdaki prototipe sahip, içeriği tüm kayıtları girişinde anında iletme gerekir ve Çıkışta değişmeden içerik pop gibi görünmelidir:
+
+```
+void __declspec(naked) _cdecl _penter( void );
+```
+
+Bu bildirim, 64-bit projeleri için kullanılabilir değil.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Derleyici seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod ile derlendiğinde **/Gh**, gösterir nasıl `_penter` iki kez; adlı işlev girildiğinde bir kez `main` ve işlev girildiğinde bir kez `x`.
+
+```
+// Gh_compiler_option.cpp
+// compile with: /Gh
+// processor: x86
+#include <stdio.h>
+void x() {}
+
+int main() {
+   x();
+}
+
+extern "C" void __declspec(naked) _cdecl _penter( void ) {
+   _asm {
+      push eax
+      push ebx
+      push ecx
+      push edx
+      push ebp
+      push edi
+      push esi
+    }
+
+   printf_s("\nIn a function!");
+
+   _asm {
+      pop esi
+      pop edi
+      pop ebp
+      pop edx
+      pop ecx
+      pop ebx
+      pop eax
+      ret
+    }
+}
+```
+
+```Output
+In a function!
+In a function!
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

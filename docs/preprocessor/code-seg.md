@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 052e9a55d443fa263ecf8443c9e3933baeb1f3b8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: b9b9be3cd2de53c957074d2acdee18183d688852
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465630"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719127"
 ---
 # <a name="codeseg"></a>code_seg
 İşlevlerin .obj dosyasında saklandığı metin segmentini belirtir.  
@@ -34,6 +34,25 @@ ms.locfileid: "42465630"
 #pragma code_seg( [ [ { push | pop }, ] [ identifier, ] ] [ "segment-name" [, "segment-class" ] )  
 ```  
   
+### <a name="paramters"></a>Parametrelerde
+  
+**push**<br/>
+(İsteğe bağlı) İç derleyici yığınına bir kayıt yerleştirir. A **anında iletme** olabilir bir *tanımlayıcı* ve *segment-name*.  
+  
+**POP**<br/>
+(İsteğe bağlı) Derleyici iç yığının en üstünden bir kayıt kaldırır.  
+  
+*tanımlayıcı*<br/>
+(İsteğe bağlı) İle kullanıldığında **anında iletme**, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında **pop**, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
+  
+*tanımlayıcı* ile yalnızca bir tane POP birden çok kayıt getirir **pop** komutu.  
+  
+"*segment-name*"<br/>  
+(İsteğe bağlı) Segmentin adı. İle kullanıldığında **pop**, yığın silinir ve *segment-name* etkin metin segmentinin adı haline gelir.  
+  
+"*segment sınıfı*"<br/>
+(İsteğe bağlı) Sürüm 2. 0'dan önceki C++ sürümleriyle uyumluluk için eklendi ancak yok sayıldı.  
+  
 ## <a name="remarks"></a>Açıklamalar  
  
 **Code_seg** pragma yönergesi, örneklenmiş şablonlar için oluşturulan nesne kodunun ya da örtük olarak derleyici tarafından oluşturulan kodu yerleşimini denetlemez — Örneğin, özel üye işlevleri. Kullanmanızı öneririz [__declspec(code_seg(...)) ](../cpp/code-seg-declspec.md) verdiğinden özniteliği, bunun yerine, tüm nesne kodu yerleşimi üzerinde denetim. Bu, derleyicinin ürettiği kodu içerir.  
@@ -43,24 +62,7 @@ A *segment* belleğe bir birim olarak yüklenen verilerin adlandırılmış bir 
 **Code_seg** pragma yönergesi, derleyicinin tüm sonraki nesne kodlarının çeviri biriminden adlı bir metin segmentine yerleştirilmesini söyler *segment-name*. Varsayılan olarak, .obj dosyasındaki işlevler için kullanılan metin segmenti .text olarak adlandırılır.  
   
 A **code_seg** parametresiz pragma yönergesi metin segmentinin adı için sonraki nesne kodu .text olarak sıfırlar.  
-  
-*anında iletme* (isteğe bağlı)  
-İç derleyici yığınına bir kayıt yerleştirir. A *anında iletme* olabilir bir *tanımlayıcı* ve *segment-name*.  
-  
-*POP* (isteğe bağlı)  
-Derleyici iç yığının en üstünden bir kayıt kaldırır.  
-  
-*tanımlayıcı* (isteğe bağlı)  
-İle kullanıldığında *anında iletme*, iç derleyici yığınındaki kayda bir ad atar. İle kullanıldığında *pop*, yığından kayıtları kadar iç yığının *tanımlayıcı* ; kaldırılır *tanımlayıcı* bulunamazsa iç yığında hiçbir şey kaldırılmaz.  
-  
-*tanımlayıcı* ile yalnızca bir tane POP birden çok kayıt getirir *pop* komutu.  
-  
-"*segment-name*" (isteğe bağlı)  
-Bir segmentin adı. İle kullanıldığında *pop*, yığın silinir ve *segment-name* etkin metin segmentinin adı haline gelir.  
-  
-"*segment sınıfı*" (isteğe bağlı)  
-Yoksayıldı, ancak C++ 2. 0 öncesi sürümler ile uyumluluk için eklendi.  
-  
+
 Kullanabileceğiniz [DUMPBIN. EXE](../build/reference/dumpbin-command-line.md) .obj dosyalarını görüntülemek için uygulama. Visual Studio ile DUMPBIN sürümleri her desteklenen hedef mimari dahildir.  
   
 ## <a name="example"></a>Örnek  

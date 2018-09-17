@@ -12,18 +12,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 205241f2306885800813597568ed9ae8cf3858b3
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 2c2b1dc80cec8ba18522d8238752857105993074
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42598239"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720739"
 ---
 # <a name="configuring-programs-for-windows-xp"></a>Programları Windows XP için yapılandırma
 
 Visual Studio, birden çok platform araç takımları desteklediğinden, işletim sistemleri ve varsayılan araç takımı tarafından desteklenmez çalışma zamanı kitaplıklarını hedefleyebilir. Örneğin, platform araç takımını geçerek, C ++ 11, C ++ 14 ve C ++ 17 dil geliştirmelerini Visual Studio'da Visual C++ derleyicisi tarafından desteklenen Windows XP ve Windows Server 2003 hedefleyen uygulamalar oluşturmak için kullanabilirsiniz. Ayrıca ikili ile uyumlu eski kod korumak için eski platform araç takımları kullanacak ve yine de Visual Studio IDE'nin en son özelliklerden yararlanın.
 
 ## <a name="install-the-windows-xp-platform-toolset"></a>Windows XP platform araç takımını yükleyin
+
 Visual Studio 2017'deki bileşenleri hedef Windows XP ve Windows Server 2003 ve platform araç kümesini almak için Visual Studio Yükleyicisi'ni çalıştırın. Visual Studio'yu ilk kez yüklediğinizde veya seçtiğinizde **Değiştir** var olan bir yüklemesini değiştirmek için emin olun **C++ ile masaüstü geliştirme** iş yükü seçilidir. Bu iş yükü için isteğe bağlı bileşenler listesinde seçin **C++ için Windows XP desteği**ve ardından **yükleme** veya **Değiştir**.
 
 ## <a name="windows-xp-targeting-experience"></a>Windows XP hedefleme deneyimi
@@ -72,7 +73,7 @@ Platform ve kitaplık desteği farklılıkları nedeniyle, bir Windows XP platfo
 
 - **DirectX grafiklerinde hata ayıklama**
 
-     Grafik hata ayıklayıcı Direct3D 9 API desteklemediği için Windows XP veya Windows Server 2003 üzerinde Direct3D kullanan uygulamalarında hata ayıklamak için kullanılamaz. Ancak, uygulama Direct3D 10 veya Direct3D 11 API'leri kullanan alternatif bir oluşturucu uygularsa, grafik hata ayıklayıcı bu API'leri kullanarak sorunları tanılamak için kullanılabilir.
+   Grafik hata ayıklayıcı Direct3D 9 API desteklemediği için Windows XP veya Windows Server 2003 üzerinde Direct3D kullanan uygulamalarında hata ayıklamak için kullanılamaz. Ancak, uygulama Direct3D 10 veya Direct3D 11 API'leri kullanan alternatif bir oluşturucu uygularsa, grafik hata ayıklayıcı bu API'leri kullanarak sorunları tanılamak için kullanılabilir.
 
 - **HLSL oluşturma**
 

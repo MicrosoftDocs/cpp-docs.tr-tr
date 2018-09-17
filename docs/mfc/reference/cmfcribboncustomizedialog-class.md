@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8e693a0e6a2353693f676ed0d63d7087d3e57455
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: d342ec75fd45224dcd36ba3fc17aa1a6f8c12e33
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040905"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720661"
 ---
 # <a name="cmfcribboncustomizedialog-class"></a>CMFCRibbonCustomizeDialog sınıfı
 Şerit görüntüler **Özelleştir** sayfası.  
@@ -40,21 +40,21 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog)|Oluşturan bir `CMFCRibbonCustomizeDialog` nesnesi.|  
-|`CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog`|Yok Edicisi.|  
+|[CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog](#cmfcribboncustomizedialog)|Oluşturur bir `CMFCRibbonCustomizeDialog` nesne.|  
+|`CMFCRibbonCustomizeDialog::~CMFCRibbonCustomizeDialog`|Yıkıcı.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`CMFCRibbonCustomizeDialog::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
+|`CMFCRibbonCustomizeDialog::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- MFC bu sınıf AFX_WM_ON_RIBBON_CUSTOMIZE yapılacak işlem yok, ya da ileti işleyicisini 0 döndürürse otomatik olarak başlatır.  
+ MFC bu sınıf AFX_WM_ON_RIBBON_CUSTOMIZE iletiyi işlemez veya 0'ı ileti işleyicisi dönerseniz otomatik olarak başlatır.  
   
- Bu sınıf, Şerit görüntülemek için uygulamanızda kullanmak isteyip istemediğinizi **Özelleştir** iletişim kutusu, yalnızca, örneği ve çağrısı `DoModal` yöntemi.  
+ Bu sınıf, Şerit görüntülemek için uygulamanızda kullanmak istiyorsanız **Özelleştir** iletişim kutusunda, yalnızca bu örneği ve çağırmayı `DoModal` yöntemi.  
   
- Bu sınıfın türetildiği için [CMFCPropertySheet sınıfı](../../mfc/reference/cmfcpropertysheet-class.md), kullanarak özel sayfalar ekleyebilirsiniz `CMFCPropertySheet` API.  
+ Bu sınıf türetilir çünkü [CMFCPropertySheet sınıfı](../../mfc/reference/cmfcpropertysheet-class.md), kullanarak özel sayfalar ekleyebilirsiniz `CMFCPropertySheet` API.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  [CObject](../../mfc/reference/cobject-class.md)  
@@ -73,7 +73,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
  **Başlık:** afxribboncustomizedialog.h  
   
 ##  <a name="cmfcribboncustomizedialog"></a>  CMFCRibbonCustomizeDialog::CMFCRibbonCustomizeDialog  
- Oluşturan bir `CMFCRibbonCustomizeDialog` nesnesi.  
+ Oluşturur bir `CMFCRibbonCustomizeDialog` nesne.  
   
 ```  
 CMFCRibbonCustomizeDialog(
@@ -82,19 +82,19 @@ CMFCRibbonCustomizeDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst pencere (genellikle ana çerçeve) için bir işaretçi.  
+*pWndParent*<br/>
+[in] (Genellikle ana çerçeve) üst penceresine bir işaretçi.  
   
- [in] *pRibbon*  
- Bir işaretçi `CMFCRibbonBar` özelleştirilmek üzere olmasıdır.  
+*pRibbon*<br/>
+[in] Bir işaretçi `CMFCRibbonBar` özelleştirilecek olmasıdır.  
   
 ### <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCRibbonCustomizeDialog` nesnesi.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCRibbonCustomizeDialog` nesne.  
   
  [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizedialog-class_1.cpp)]  
   
 ### <a name="remarks"></a>Açıklamalar  
- Oluşturucusu başlatır bir [CMFCRibbonCustomizePropertyPage sınıfı](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) nesne ve özellik sayfası sayfaları koleksiyonuna ekler.  
+ Oluşturucu örnekleyen bir [CMFCRibbonCustomizePropertyPage sınıfı](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) nesne ve özellik sayfası sayfaları koleksiyonuna ekler.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

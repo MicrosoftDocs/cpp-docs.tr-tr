@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8123db8e4a8dfba94e469881af8fbb2ecb40e2a0
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 6c8fea125c61bebe836a31c0b2718741e8c531d3
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37041987"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716874"
 ---
 # <a name="cmfccustomcolorspropertypage-class"></a>CMFCCustomColorsPropertyPage sınıfı
-Özel renkler renk iletişim kutusunda seçim yapabileceğiniz bir özellik sayfasını temsil eder.  
+Özel renkler bir renk iletişim kutusunda seçim yapabileceğiniz bir özellik sayfasını temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,15 +48,15 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 |||  
 |-|-|  
 |Ad|Açıklama|  
-|`CMFCCustomColorsPropertyPage::CreateObject`|Bu sınıf türü dinamik bir örneğini oluşturmak için framework tarafından kullanıldı.|  
-|`CMFCCustomColorsPropertyPage::GetThisClass`|Bir işaretçi elde etmek için çerçevesi tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) Bu sınıf türü ile ilişkili nesne.|  
-|[CMFCCustomColorsPropertyPage::Setup](#setup)|Özellik sayfası renk bileşenlerinin ayarlar.|  
+|`CMFCCustomColorsPropertyPage::CreateObject`|Bu sınıf türünün dinamik bir örneğini oluşturmak için framework tarafından kullanılır.|  
+|`CMFCCustomColorsPropertyPage::GetThisClass`|Bir işaretçi alma için framework tarafından kullanılan [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) bu sınıfı türü ile ilişkilendirilmiş nesne.|  
+|[CMFCCustomColorsPropertyPage::Setup](#setup)|Özellik sayfasını renk bileşenlerinin ayarlar.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CMFCColorDialog` Sınıfı özel renk özellik sayfasını görüntülemek için bu sınıfı kullanır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnekte nasıl oluşturulacağını gösteren bir `CMFCCustomColorsPropertyPage` nesne ve özellik sayfası renk bileşenlerinin ayarlayın.  
+ Aşağıdaki örnek nasıl oluşturulacağını gösterir. bir `CMFCCustomColorsPropertyPage` nesne ve özellik sayfasının renk bileşenlerine ayarlayın.  
   
  [!code-cpp[NVC_MFC_RibbonApp#35](../../mfc/reference/codesnippet/cpp/cmfccustomcolorspropertypage-class_1.cpp)]  
   
@@ -77,7 +77,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
  **Başlık:** afxcustomcolorspropertypage.h  
   
 ##  <a name="setup"></a>  CMFCCustomColorsPropertyPage::Setup  
- Özellik sayfası renk bileşenlerinin ayarlar.  
+ Özellik sayfasını renk bileşenlerinin ayarlar.  
   
 ```  
 void Setup(
@@ -91,12 +91,12 @@ void Setup(
 |||  
 |-|-|  
 |Parametre|Açıklama|  
-|[in] *R*|RGB değeri kırmızı bileşenidir.|  
-|[in] *G*|RGB değeri yeşil bileşenidir.|  
-|[in] *B*|RGB değeri mavi bileşenidir.|  
+|*R*|[in] Kırmızı bileşeni RGB değeri.|  
+|*G*|[in] RGB değeri için yeşil bileşeni.|  
+|*B*|[in] Mavi bileşeni RGB değeri.|  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu yöntem, geçerli RGB ve ilişkili HLS (ton, açıklık ve Doygunluk) renk değerleri özellik sayfasının güncelleştirir. [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) yöntemi framework renk iletişim kutusu başlatır veya sol fare düğmesini kullanıcı bu yöntemi çağırır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).  
+ Bu yöntem, geçerli RGB ve ilişkili HLS (hue, açıklık ve Doygunluk) renk değerleri özellik sayfasının güncelleştirir. [CMFCColorDialog::SetPageTwo](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) yöntemi renk iletişim kutusu çerçevesi başlatır veya kullanıcının sol fare düğmesine bastığında bu yöntemi çağırır. Hakkında daha fazla bilgi için `CMFCColorDialog`, bkz: [CMFCColorDialog sınıfı](../../mfc/reference/cmfccolordialog-class.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Hiyerarşi grafiği](../../mfc/hierarchy-chart.md)   

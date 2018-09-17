@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49d67f9a2e91e3a2e0a2731e61fc0e1c2ec55679
-ms.sourcegitcommit: 76fd30ff3e0352e2206460503b61f45897e60e4f
+ms.openlocfilehash: cc115fbc77ac68c774b85bb86fd0cf9eac1fa51b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028430"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716644"
 ---
 # <a name="overview-of-arm64-abi-conventions"></a>ARM64 ABI kurallarına genel bakış
 
@@ -173,7 +173,7 @@ Listedeki her bağımsız değişken için aşağıdaki kuralları bağımsız d
 
 11. NGRN 8'e ayarlanır.
 
-12. NSAA tarafına yuvarlanır büyük 8 ya da doğal hizalama bağımsız değişkenin türü... 
+12. NSAA tarafına yuvarlanır büyük 8 ya da doğal hizalama bağımsız değişkenin türü...
 
 13. Bağımsız değişken türünün ise bağımsız değişken için ayarlanan NSAA bellek kopyalanır. Bağımsız değişken boyutuna NSAA artırılır. Bağımsız değişken artık ayrıldı.
 
@@ -189,7 +189,7 @@ Değişken sayıda bağımsız değişkenler almayan işlevleri farklı daha yuk
 
 2. SIMD ve Floating-point kaydeder kullanılmaz.
 
-Etkili bir şekilde bu aşağıdaki kurallar sanal yığın burada ilk 64 bayt yığın x0 x7 yüklenir ve kalan tüm yığın bağımsız değişkenleri normalde yerleştirilir bağımsız değişkenleri ayrılacak C.12–C.15 karşılık gelir. 
+Etkili bir şekilde bu aşağıdaki kurallar sanal yığın burada ilk 64 bayt yığın x0 x7 yüklenir ve kalan tüm yığın bağımsız değişkenleri normalde yerleştirilir bağımsız değişkenleri ayrılacak C.12–C.15 karşılık gelir.
 
 ## <a name="return-values"></a>Döndürülen değerler
 
@@ -231,5 +231,5 @@ Döngü sayacı burada gerçek bir döngü sayacı, duvar saati ve böylece say�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)  
-[ARM64 özel durum işleme](../build/arm64-exception-handling.md)  
+[Genel Visual C++ ARM Geçiş Sorunları](../build/common-visual-cpp-arm-migration-issues.md)<br/>
+[ARM64 özel durum işleme](../build/arm64-exception-handling.md)

@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aef6192218f5fae40bca6aa6fb8202a0d238091a
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: b2ae5b321ce9de1e834119e764a65df638d97e10
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43195838"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45721194"
 ---
 # <a name="cmfcshelllistctrl-class"></a>CMFCShellListCtrl sınıfı
 `CMFCShellListCtrl` Sınıf Windows liste denetleme işlevlerini sağlar ve bir kabuk öğeleri listesi görüntüleme özelliğini ekleyerek bunu genişletir.  
@@ -130,11 +130,11 @@ virtual HRESULT DisplayFolder(LPAFX_SHELLITEMINFO lpItemInfo);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lpszPath*  
- Bir klasörün yolunu içeren bir dize.  
+*lpszPath*<br/>
+[in] Bir klasörün yolunu içeren bir dize.  
   
- [in] *lpItemInfo*  
- Bir işaretçi bir `LPAFX_SHELLITEMINFO` açıklayan görüntülemek için bir klasör yapısı.  
+*lpItemInfo*<br/>
+[in] Bir işaretçi bir `LPAFX_SHELLITEMINFO` açıklayan görüntülemek için bir klasör yapısı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılıysa S_OK; E_FAIL Aksi takdirde.  
@@ -157,8 +157,8 @@ void EnableShellContextMenu(BOOL bEnable = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Framework kısayol menüsünü etkinleştirir olup olmadığını belirten bir Boole değeri.  
+*bSistemlerde*<br/>
+[in] Framework kısayol menüsünü etkinleştirir olup olmadığını belirten bir Boole değeri.  
   
 ##  <a name="getcurrentfolder"></a>  CMFCShellListCtrl::GetCurrentFolder  
  Şu anda seçili olan klasörün yolunu alır [CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) nesne.  
@@ -168,8 +168,8 @@ BOOL GetCurrentFolder(CString& strPath) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *strPath*  
- Bir dize parametresi, yöntemin yol nereye yazdığını başvuru.  
+*strPath*<br/>
+[out] Bir dize parametresi, yöntemin yol nereye yazdığını başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -185,8 +185,8 @@ BOOL GetCurrentFolderName(CString& strName) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *strName*  
- Yöntem adı nereye yazdığını bir dize parametresi bir başvuru.  
+*strName*<br/>
+[out] Yöntem adı nereye yazdığını bir dize parametresi bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa sıfır dışı; Aksi durumda 0.  
@@ -227,11 +227,11 @@ BOOL GetItemPath(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [out] *strPath*  
- Bir başvuru bir dizeye yolunu alır.  
+*strPath*<br/>
+[out] Bir başvuru bir dizeye yolunu alır.  
   
- [in] *iItem*  
- Liste öğesi dizini.  
+*iItem*<br/>
+[in] Liste öğesi dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa TRUE; FALSE Aksi takdirde.  
@@ -273,8 +273,8 @@ virtual int OnCompareItems(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lParam1*  
- [in] *lParam2*  
+*lParam1*<br/>
+[in] [in] *lParam2*  
  [in] *iColumn*  
   
 ### <a name="return-value"></a>Dönüş Değeri  
@@ -291,11 +291,11 @@ virtual void OnFormatFileDate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *tmFile*  
- Bir dosya ile ilişkilendirilmiş tarih.  
+*tmFile*<br/>
+[in] Bir dosya ile ilişkilendirilmiş tarih.  
   
- [out] *str*  
- Bir dosya tarih içeren bir dize.  
+*str*<br/>
+[out] Bir dosya tarih içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Olduğunda bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesnesi bir dosya ile ilişkilendirilmiş tarihi görüntüler, onu o tarih dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem bir dize olarak tarihi biçimlendirmek için geçerli yerel ayarı kullanır.  
@@ -310,11 +310,11 @@ virtual void OnFormatFileSize(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *lFileSize*  
- Framework görüntüleyecek dosyasının boyutu.  
+*lFileSize*<br/>
+[in] Framework görüntüleyecek dosyasının boyutu.  
   
- [out] *str*  
- Biçimlendirilmiş dosya boyutunu içeren bir dize.  
+*str*<br/>
+[out] Biçimlendirilmiş dosya boyutunu içeren bir dize.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Olduğunda bir [CMFCShellListCtrl sınıfı](../../mfc/reference/cmfcshelllistctrl-class.md) nesne gereken bir dosyanın boyutunu görüntülemek, dosya boyutu bir dize biçimine dönüştürmeniz gerekir. `CMFCShellListCtrl` Bu dönüştürme yapmak için bu yöntemi kullanır. Varsayılan olarak, bu yöntem, dosya boyutunu bayt için kilobayt dönüştürür ve ardından boyutu dize olarak biçimlendirmek için geçerli yerel ayarı kullanır.  
@@ -329,11 +329,11 @@ virtual int OnGetItemIcon(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iItem*  
- Öğe dizini.  
+*iItem*<br/>
+[in] Öğe dizini.  
   
- [in] *pItem*  
- Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
+*pItem*<br/>
+[in] Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Başarılı olursa simge görüntüsü dizini; işlev başarısız olursa -1.  
@@ -354,14 +354,14 @@ virtual CString OnGetItemText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *iItem*  
- Öğe dizini.  
+*iItem*<br/>
+[in] Öğe dizini.  
   
- [in] *iColumn*  
- İlgilendiğiniz sütun.  
+*iColumn*<br/>
+[in] İlgilendiğiniz sütun.  
   
- [in] *pItem*  
- Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
+*pItem*<br/>
+[in] Öğenin açıkladığı LPAFX_SHELLITEMINFO parametresi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A `CString` öğesiyle ilişkili metin içeriyor.  
@@ -402,8 +402,8 @@ void SetItemTypes(SHCONTF nTypes);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nTypes*  
- Bir liste öğesi türlerinden `CMFCShellListCtrl` nesne destekler.  
+*nTypes*<br/>
+[in] Bir liste öğesi türlerinden `CMFCShellListCtrl` nesne destekler.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Öğe türleri listesi hakkında daha fazla bilgi için bkz. [SHCONTF](/windows/desktop/api/shobjidl_core/ne-shobjidl_core-_shcontf).  

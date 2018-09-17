@@ -21,17 +21,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a639091bd7c5c263a3f09067858cd0fe4ac631cd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34063223addb433a94c877ad56cf410f189e6681
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329202"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724743"
 ---
 # <a name="popcnt16-popcnt-popcnt64"></a>__popcnt16, __popcnt, __popcnt64
-**Microsoft özel**  
+
+**Microsoft'a özgü**  
   
- Bir sayar 16-, 32 veya 64 baytlık bir işaretsiz tamsayı BITS (popülasyon sayısı).  
+ Bir sayar BITS (nüfus sayımı) bir 16, 32 veya 64 bayt işaretsiz tamsayı.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -48,8 +49,8 @@ unsigned __int64 __popcnt64(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `value`  
- 16, 32 veya 64 bit işaretsiz tamsayıyı popülasyon sayısı istiyoruz.  
+*value*<br/>
+[in] 16, 32 veya 64-bit işaretsiz tamsayı nüfus sayımı istiyoruz.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Bir bit sayısı `value` parametresi.  
@@ -58,16 +59,16 @@ unsigned __int64 __popcnt64(
   
 |İç|Mimari|  
 |---------------|------------------|  
-|`__popcnt16`|Gelişmiş Bit düzenleme|  
-|`__popcnt`|Gelişmiş Bit düzenleme|  
-|`__popcnt64`|Gelişmiş Bit düzenlemesi 64-bit modunda.|  
+|`__popcnt16`|Gelişmiş Bit işleme|  
+|`__popcnt`|Gelişmiş Bit işleme|  
+|`__popcnt64`|64 bit modunda Gelişmiş Bit işleme.|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yapı her oluşturur `popcnt` yönergesi.  Değeri, `popcnt` yönergesi verir bağımsız değişkeni boyutu ile aynı.  32-bit modunda Hayır 64-bit hiçbir 64-bit genel amaçlı kayıtları, bu nedenle vardır `popcnt`.  
+ Her biri bu iç oluşturur `popcnt` yönergesi.  Değer boyutu, `popcnt` yönerge boyutu bağımsız olarak aynı döndürür.  32 bit modunda 64 bit Hayır 64-bit genel amaçlı yazmaç yok, bu nedenle vardır `popcnt`.  
   
- Donanım desteğini belirlemek için `popcnt` yönerge, çağrı `__cpuid` ile iç `InfoType=0x00000001` ve biti 23 denetleyin `CPUInfo[2] (ECX)`. Bu yönerge destekleniyorsa 1 ve 0 aksi bitidir. Kullanan kodu bu iç desteklemediği donanımda çalıştırırsanız `popcnt` yönerge, sonuçlar tahmin edilemez.  
+ İçin donanım desteği belirlemek için `popcnt` yönerge, çağrı `__cpuid` ile iç `InfoType=0x00000001` ve 23 bit `CPUInfo[2] (ECX)`. Bu bit Aksi takdirde yönerge destekleniyorsa 1 ve 0 olur. Kullanan kodu bu iç desteği olmayan donanım üzerinde çalıştırdığınız varsa `popcnt` yönergesi, sonuçların tahmin edilemeyeceğine.  
   
 ## <a name="example"></a>Örnek  
   
@@ -106,8 +107,9 @@ __popcnt(0xffff) = 16
 __popcnt(0xffffffff) = 32  
 ```  
   
-**SON Microsoft özel**  
- Gelişmiş Mikro Aygıtlar, Inc. Telif Hakkı 2007 Tüm hakları saklıdır. Gelişmiş Mikro Aygıtlar, Inc. izinle çoğaltılamaz  
+**END Microsoft özgü**  
+
+Telif Hakkı 2007 Gelişmiş Micro cihazlar, Inc. Tüm hakları saklıdır. Gelişmiş Micro cihazlar, Inc. izniyle üretilemez  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Derleyici İç Bilgileri](../intrinsics/compiler-intrinsics.md)

@@ -24,54 +24,58 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ab9f1d9c5c611b8da8b19860fe9e0c05351d75
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 64e047a832b3c097ced57f9d491b1344c51da495
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375629"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724418"
 ---
 # <a name="fd-program-database-file-name"></a>/Fd (Program Veritabanı Dosya Adı)
-Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/Z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-/Fdpathname  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Olmadan **/Fd**, PDB dosya adı VC için varsayılan olarak*x*0.pdb, burada *x* Visual C++ ana sürümü kullanılıyor.  
-  
- (Yolu sona ters eğik çizgiyi) bir dosya adı içermeyen bir yol adı belirtirseniz, derleyici VC adlı bir .pdb dosyası oluşturur*x*0. pdb belirtilen dizindeki.  
-  
- Bir uzantıyı içermeyen bir dosya adı belirtirseniz, derleyici .pdb uzantısı olarak kullanır.  
-  
- Bu seçenek ayrıca en az yeniden derleme ve artımlı derleme için kullanılan durum (.idb) dosyası olarak adlandırır.  
-  
-### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **C/C++** klasör.  
-  
-3.  Tıklatın **çıktı dosyaları** özellik sayfası.  
-  
-4.  Değiştirme **Program veritabanı dosya adı** özelliği.  
-  
-### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ProgramDataBaseFileName%2A>.  
-  
-## <a name="example"></a>Örnek  
- Bu komut satırı PROG.pdb ve PROG.idb adlı bir .idb dosya adında bir .pdb dosyası oluşturur:  
-  
-```  
-CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici seçeneklerini ayarlama](../../build/reference/setting-compiler-options.md)   
- [Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)
+
+Tarafından oluşturulan program veritabanı (PDB) dosyası için bir dosya adı belirtir [/z7, / zi, /zı (hata ayıklama bilgileri biçimi)](../../build/reference/z7-zi-zi-debug-information-format.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+/Fdpathname
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Olmadan **/Fd**, PDB dosya adı varsayılan olarak, VC için*x*0.pdb, burada *x* önemli Visual C++ sürümü kullanılıyor.
+
+Bir dosya adı (yol sona eğik çizgi) içermeyen bir yol adı belirtirseniz, derleyici, VC adlı bir .pdb dosyası oluşturur.*x*belirtilen dizindeki 0. pdb.
+
+Bir uzantı içermeyen bir dosya adı belirtirseniz, derleyicinin .pdb bir uzantısı olarak kullanır.
+
+Bu seçenek ayrıca en az yeniden derleme ve artımlı derleme için kullanılan durum (.idb) dosyasını adlandırır.
+
+### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Bu derleyici seçeneğini Visual Studio geliştirme ortamında ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **C/C++** klasör.
+
+1. Tıklayın **Çıkış dosyalarını** özellik sayfası.
+
+1. Değiştirme **Program veritabanı dosya adı** özelliği.
+
+### <a name="to-set-this-compiler-option-programmatically"></a>Bu derleyici seçeneğini program üzerinden ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.ProgramDataBaseFileName%2A>.
+
+## <a name="example"></a>Örnek
+
+Bu komut satırı PROG.pdb ve PROG.idb adlı .idb dosyası adlı bir .pdb dosyası oluşturur:
+
+```
+CL /DDEBUG /Zi /FdPROG.PDB PROG.CPP
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Çıktı dosyası (/ F) seçenekleri](../../build/reference/output-file-f-options.md)
+[derleyici seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)<br/>
+[Yol Adını Belirtme](../../build/reference/specifying-the-pathname.md)

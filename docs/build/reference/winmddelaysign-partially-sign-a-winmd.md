@@ -1,5 +1,5 @@
 ---
-title: -WINMDDELAYSIGN (kısmen imzala winmd) | Microsoft Docs
+title: -Wınmddelaysıgn (dosyasını kısmen imzalayın winmd) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,33 +14,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c50480fae1f4f3e7421236615d059a642d1074f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: b31f6ae5baf9aadbb40b4b45f532b344b6b2e037
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32375564"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45723859"
 ---
 # <a name="winmddelaysign-partially-sign-a-winmd"></a>/WINMDDELAYSIGN (winmd Dosyasını Kısmen İmzalayın)
-Kısmi bir Windows çalışma zamanı meta verileri (.winmd) dosya imzalama dosyasında ortak anahtarı koyarak sağlar.  
-  
-```  
-/WINMDDELAYSIGN[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Benzer [/delaysign](../../build/reference/delaysign-partially-sign-an-assembly.md) .winmd dosyaya uygulanan bağlayıcı seçeneği. Kullanım **/WINMDDELAYSIGN** .winmd dosyasında yalnızca ortak anahtar koymak istiyorsanız. Varsayılan olarak, bağlayıcı davranır gibi **/WINMDDELAYSIGN:NO** belirtilmiş; diğer bir deyişle, onu winmd dosyasını imzalayın değil.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md).  
-  
-2.  Seçin **bağlayıcı** klasör.  
-  
-3.  Seçin **Windows meta verileri** özellik sayfası.  
-  
-4.  İçinde **Windows meta verileri geciktirin** aşağı açılan liste kutusunda, kullanmak istediğiniz seçeneği seçin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+Kısmi bir Windows çalışma zamanı meta veri (.winmd) dosyasını imzalama dosyasında ortak anahtarı yerleştirerek sağlar.
+
+```
+/WINMDDELAYSIGN[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Benzer [/delaysign](../../build/reference/delaysign-partially-sign-an-assembly.md) .winmd dosyasına uygulanan bağlayıcı seçeneği. Kullanım **/WINMDDELAYSIGN** .winmd dosyasında yalnızca ortak anahtar yerleştirmek istiyorsanız. Varsayılan olarak, bağlayıcı çalışır gibi **wınmddelaysıgn** belirtildi; diğer bir deyişle, bunun bir winmd dosyası oturum açmasını sağlamayan.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Working with Project Properties](../../ide/working-with-project-properties.md).
+
+1. Seçin **bağlayıcı** klasör.
+
+1. Seçin **Windows meta verileri** özellik sayfası.
+
+1. İçinde **Windows meta verileri gecikmeli imza** aşağı açılan liste kutusunda, kullanmak istediğiniz seçeneği seçin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

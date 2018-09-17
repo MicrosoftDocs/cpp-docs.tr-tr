@@ -17,12 +17,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: aa6788945a7f36a2b9b478b72e514552cf8d9603
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: b83acbc8b4ca6beb3288ed9e02667410b239c6e7
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44315814"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722052"
 ---
 # <a name="text-tool-font-dialog-box-c-image-editor-for-icons"></a>Metin aracı yazı tipi iletişim kutusu (simgeler için görüntü Düzenleyicisi) (C++)
 
@@ -34,20 +34,25 @@ Bu iletişim kutusunu kullanın:
 
 Bu iletişim kutusuna erişmek için tıklayın **yazı tipi** düğmesine **metin aracı** iletişim kutusu.
 
-**Yazı tipi**  
-Yazı tiplerini listeler.
+- **Yazı tipi**
 
-**Yazı tipi stili**  
-Belirtilen yazı tipi için kullanılabilir stilleri listeler.
+   Yazı tiplerini listeler.
 
-**Boyutu**  
-Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.
+- **Yazı tipi stili**
 
-**Örnek**  
-Metnin belirtilen yazı tipi ayarlarını ile nasıl görüneceğini gösterir.
+   Belirtilen yazı tipi için kullanılabilir stilleri listeler.
 
-**Komut Dosyası**  
-Belirtilen yazı tipi kullanılabilir dil kodları listeler. Farklı dil komut dosyasını seçin, karakter için dil, çok dilli belgeleri oluşturmak için kullanılabilir duruma ayarlanır.
+- **Boyutu**
+
+   Belirtilen yazı tipi noktası kullanılabilir boyutları listeler.
+
+- **Örnek**
+
+   Metnin belirtilen yazı tipi ayarlarını ile nasıl görüneceğini gösterir.
+
+- **Komut Dosyası**
+
+   Belirtilen yazı tipi kullanılabilir dil kodları listeler. Farklı dil komut dosyasını seçin, karakter için dil, çok dilli belgeleri oluşturmak için kullanılabilir duruma ayarlanır.
 
 ## <a name="requirements"></a>Gereksinimler
 

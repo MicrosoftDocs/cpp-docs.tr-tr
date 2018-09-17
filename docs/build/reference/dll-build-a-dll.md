@@ -20,49 +20,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1767ac9ef063ace2ee9d567dd9038519afababf8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ec5beed66de3834759f35a5021d0155eab0a066e
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32373081"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45716839"
 ---
 # <a name="dll-build-a-dll"></a>/DLL (DLL Derleme)
-```  
-/DLL  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- / DLL seçeneği DLL ana çıktı dosyası oluşturur. DLL genellikle başka bir program tarafından kullanılan dışarı içerir. Önerilen Kullanım sırasına göre listelenen dışarı aktarmaları belirtme için üç yöntem vardır:  
-  
-1.  [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodu  
-  
-2.  Bir [dışarı](../../build/reference/exports.md) .def dosyası deyimi  
-  
-3.  Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komutunda belirtimi  
-  
- Bir program birden fazla yöntemini kullanabilirsiniz.  
-  
- DLL oluşturmak için başka bir yolu **Kitaplığı** modül tanımlama deyimi. /BASE ve/dll seçenekler birbirine eşit olan **Kitaplığı** deyimi.  
-  
- Geliştirme ortamı içinde bu seçeneği belirtmeyin; Bu seçenek yalnızca komut satırı kullanımı için geçerlidir. Bir uygulama sihirbazıyla DLL projesi oluşturduğunuzda, bu seçeneği ayarlayın.  
-  
- .dll oluşturmadan önce ilk adım, içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığını oluştururken geçirilen gibi aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **yapılandırma özellikleri** klasör.  
-  
-3.  Tıklatın **genel** özellik sayfası.  
-  
-4.  Değiştirme **yapılandırma türü** özelliği.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
--   Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/DLL
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+/ DLL seçeneği bir DLL ana çıkış dosyası oluşturur. Bir DLL, genellikle başka bir program tarafından kullanılabilecek dışarı aktarmaları içerir. Önerilen Kullanım sırasına göre listelenmiş dışa belirtmek için üç yöntem vardır:
+
+1. [__declspec(dllexport)](../../cpp/dllexport-dllimport.md) kaynak kodunda
+
+1. Bir [dışarı AKTARMALARI](../../build/reference/exports.md) .def dosyası deyimi
+
+1. Bir [/dışarı aktarma](../../build/reference/export-exports-a-function.md) bağlantı komut belirtimi
+
+Bir program, birden fazla yöntemi kullanabilirsiniz.
+
+Bir DLL yapılandırmak için başka bir yöntem, **Kitaplığı** modül-tanımlama bildirimi. / Base ve/dll seçenekleri eşdeğer birbirine **Kitaplığı** deyimi.
+
+Geliştirme ortamındaki bu seçeneği belirtmeyin; Bu seçenek, yalnızca komut satırı kullanımı için geçerlidir. Bir uygulama Sihirbazı ile bir DLL projesi oluşturduğunuzda, bu seçeneği ayarlanır.
+
+Başlangıç bir adımda, .dll oluşturmadan önce içeri aktarma kitaplığını oluşturursanız, içeri aktarma kitaplığı derlerken geçti olarak, aynı nesne dosyaları kümesini .dll oluştururken geçmesi gerektiğini unutmayın.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **yapılandırma özellikleri** klasör.
+
+1. Tıklayın **genel** özellik sayfası.
+
+1. Değiştirme **yapılandırma türü** özelliği.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+- Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCPropertySheet.ConfigurationType%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)

@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55dc6492faea101df40c2901ced24321822f36e8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 54a816bd4df165b3df9de723560192ac9072b29c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466281"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718841"
 ---
 # <a name="outbytestring"></a>__outbytestring
 **Microsoft'a özgü**  
@@ -41,14 +41,14 @@ void __outbytestring(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Port`  
- Veri göndermek için bağlantı noktası.  
+*Bağlantı noktası*<br/>
+[in] Veri göndermek için bağlantı noktası.  
   
- [in] `Buffer`  
- Belirtilen bağlantı noktasına gönderilecek veri.  
+*Arabellek*<br/>
+[in] Belirtilen bağlantı noktasına gönderilecek veri.  
   
- [in] `Count`  
- Veri gönderilecek bayt sayısı.  
+*Sayısı*<br/>
+[in] Veri gönderilecek bayt sayısı.  
   
 ## <a name="requirements"></a>Gereksinimler  
   

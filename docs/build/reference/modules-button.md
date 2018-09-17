@@ -14,15 +14,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e6ab09578b5d26d262784bcee49033538a45a4b0
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: d6d8bc890bba56835455960e706dea23c80cf395
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32372249"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724736"
 ---
 # <a name="modules-button"></a>Modüller Düğmesi
-Tıklatın **modülleri** ortaya çıkarmak için düğmesi **hata aramak için ek modüller** iletişim. İstenen EXE ya da DLL adını düzenleme kutusuna girin ve tıklatın **Ekle** hata iletisi aramanızda modülleri eklenecek. Bir modül vurgulayarak ve tıklayarak listeden kaldırmak **kaldırmak** düğmesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)
+
+Tıklayın **modülleri** ortaya çıkarmak için düğme **hata arama için ek modüller** iletişim. İstenen EXE veya DLL adını düzenleme kutusuna girin ve tıklayın **Ekle** modülleri, hata iletisi Aramaya eklenecek. Bir modül vurgulayarak ve tıklayarak listeden kaldırmak **Kaldır** düğmesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Değer Düzenleme Denetimi](../../build/reference/value-edit-control.md)

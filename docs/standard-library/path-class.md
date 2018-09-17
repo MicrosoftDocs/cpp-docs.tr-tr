@@ -14,12 +14,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e47310a93a3901f072330a57619c2655aefb7ff5
-ms.sourcegitcommit: fb9448eb96c6351a77df04af16ec5c0fb9457d9e
+ms.openlocfilehash: fd8fa524d0c41d437575a61ff4e4456fd9933404
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691516"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45725315"
 ---
 # <a name="path-class"></a>path Sınıfı
 
@@ -638,7 +638,7 @@ Tüm oluşturmak oluşturucular `myname` çeşitli şekillerde:
 
 ## <a name="preferred_separator"></a> PATH::preferred_separator
 
-Sabit nesne yolu bileşenleri, konak işletim sistemine bağlı olarak ayırmak için tercih edilen karakter sağlar. 
+Sabit nesne yolu bileşenleri, konak işletim sistemine bağlı olarak ayırmak için tercih edilen karakter sağlar.
 
 ```cpp
 #if _WIN32_C_LIB
@@ -654,7 +654,7 @@ Bunun yerine '/' L'ı kullanmak için Windows altında çoğu bağlamlarda eşit
 
 ## <a name="relative_path"></a> PATH::relative_path
 
-Göreli yol bileşenini döndürür `myname`. 
+Göreli yol bileşenini döndürür `myname`.
 
 ```cpp
 path relative_path() const;
@@ -674,7 +674,7 @@ path& remove_filename();
 
 ## <a name="replace_extension"></a> PATH::replace_extension
 
-Uzantısını değiştirir `myname`. 
+Uzantısını değiştirir `myname`.
 
 ```cpp
 path& replace_extension(const path& newext = path());
@@ -715,7 +715,7 @@ return (*this);
 
 ## <a name="root_directory"></a> PATH::root_directory
 
-Kök dizin bileşenini döndürür `myname`. 
+Kök dizin bileşenini döndürür `myname`.
 
 ```cpp
 path root_directory() const;
@@ -727,7 +727,7 @@ Bileşen boş olabilir.
 
 ## <a name="root_name"></a> PATH::root_name
 
-Kök adı bileşenini döndürür `myname`. 
+Kök adı bileşenini döndürür `myname`.
 
 ```cpp
 path root_name() const;

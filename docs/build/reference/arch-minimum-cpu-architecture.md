@@ -19,22 +19,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d1232697619eafa5633f3dc61d1a1c3520e21b6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c6750b2d998976b1c19dcc5b687f407a3c32faef
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368996"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720336"
 ---
 # <a name="arch-minimum-cpu-architecture"></a>/arch (En Düşük CPU Mimarisi)
-Mimari seçeneklerini mimarisi kod oluşturma için belirtin. İle çalışma görmek için hedef platform için seçenekleri arch temel donanım mimarisi seçin.  
-  
--   [/arch (x86)](../../build/reference/arch-x86.md)  
-  
--   [/arch (x64)](../../build/reference/arch-x64.md)  
-  
--   [/arch (ARM)](../../build/reference/arch-arm.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)   
- [Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)
+
+Mimari seçenekleri için kod oluşturma mimarisini belirtin. Çalışma görmek için hedef platform için seçenekleri arch temel donanım mimarisi seçin.
+
+- [/arch (x86)](../../build/reference/arch-x86.md)
+
+- [/arch (x64)](../../build/reference/arch-x64.md)
+
+- [/arch (ARM)](../../build/reference/arch-arm.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)<br/>
+[Derleyici Seçeneklerini Ayarlama](../../build/reference/setting-compiler-options.md)

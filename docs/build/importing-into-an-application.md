@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88f41d20191474da3713f061747d5985fd447116
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e88d34ce685e22e561683cc33db25997650ed7fd
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32368063"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718397"
 ---
 # <a name="importing-into-an-application"></a>Bir Uygulamaya Aktarma
-İki yöntemi kullanarak bir uygulamaya işlevleri içeri aktarabilirsiniz:  
-  
--   Anahtar sözcükler kullanın **__declspec(dllimport)** ana uygulama işlevi tanımında  
-  
--   Modül tanımlama (.def) dosyası ile birlikte kullanın **__declspec(dllimport)**  
-  
-## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?  
-  
--   [__Declspec(dllimport) kullanarak bir uygulamaya içeri aktarma](../build/importing-into-an-application-using-declspec-dllimport.md)  
-  
--   [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](../build/importing-function-calls-using-declspec-dllimport.md)  
-  
--   [__Declspec(dllimport) kullanarak veriyi içeri aktarma](../build/importing-data-using-declspec-dllimport.md)  
-  
--   [DEF dosyalarını kullanarak içeri aktarma](../build/importing-using-def-files.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)
+
+İki yöntemi kullanarak bir uygulamaya işlevleri içeri aktarabilirsiniz:
+
+- Anahtar kelimeler kullanmanız **__declspec(dllimport)** ana uygulamadaki bir işlev tanımı
+
+- Modül tanım (.def) dosyası ile birlikte kullanmak **__declspec(dllimport)**
+
+## <a name="what-do-you-want-to-do"></a>Ne yapmak istiyorsunuz?
+
+- [__Declspec(dllimport) kullanarak bir uygulamaya'na aktarma](../build/importing-into-an-application-using-declspec-dllimport.md)
+
+- [__Declspec(dllimport) kullanarak işlev çağrılarını içeri aktarma](../build/importing-function-calls-using-declspec-dllimport.md)
+
+- [__Declspec(dllimport) kullanarak veriyi içeri aktarma](../build/importing-data-using-declspec-dllimport.md)
+
+- [DEF dosyalarını kullanarak içeri aktarma](../build/importing-using-def-files.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İçeri ve Dışarı Aktarma](../build/importing-and-exporting.md)

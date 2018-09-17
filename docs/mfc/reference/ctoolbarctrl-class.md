@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0801fab2ef5cec0da42cb40e28cd5124141c1007
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 1f97559dd962fefbb4e727c0e75d0102898c8f13
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43686091"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45724080"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 Windows ortak araç çubuğu denetimi işlevlerini sağlar.  
@@ -532,8 +532,8 @@ BOOL ChangeBitmap(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *idButton*|Komut tanımlayıcı alacak yeni bir bit eşlem düğmesi.|  
-|[in] *iBitmap*|Geçerli araç çubuğu denetiminin resim listesi görüntüdeki sıfır tabanlı dizini.|  
+|*idButton*|[in] Komut tanımlayıcı alacak yeni bir bit eşlem düğmesi.|  
+|*iBitmap*|[in] Geçerli araç çubuğu denetiminin resim listesi görüntüdeki sıfır tabanlı dizini.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -841,7 +841,7 @@ CString GetButtonText(int idButton) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *idButton*|Görünen metni alınan düğmesi tanımlayıcısı.|  
+|*idButton*|[in] Görünen metni alınan düğmesi tanımlayıcısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [CString](../../atl-mfc-shared/using-cstring.md) , belirtilen düğmenin görüntü metni içerir.  
@@ -860,7 +860,7 @@ BOOL GetColorScheme(COLORSCHEME* lpColorScheme) const;
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *lpColorScheme*|İşaretçi bir [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) renk şeması bilgileri alan yapısı. Bu yöntem döndürüldüğünde yapısını Vurgu rengi ve araç çubuğu denetimi gölge rengini açıklar.|  
+|*lpColorScheme*|[out] İşaretçi bir [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) renk şeması bilgileri alan yapısı. Bu yöntem döndürüldüğünde yapısını Vurgu rengi ve araç çubuğu denetimi gölge rengini açıklar.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
 Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1053,8 +1053,8 @@ BOOL GetPadding(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[out] *pnHorzPadding*|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden alır bir tamsayı.|  
-|[out] *pnVertPadding*|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden alır bir tamsayı.|  
+|*pnHorzPadding*|[out] Araç çubuğu denetiminin yatay dolgunun piksel cinsinden alır bir tamsayı.|  
+|*pnVertPadding*|[out] Araç çubuğu denetiminin dikey dolgunun piksel cinsinden alır bir tamsayı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1349,8 +1349,8 @@ BOOL IsButtonHighlighted(int nID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Araç çubuğu düğmesini komut kimliği.  
+*nID*<br/>
+[in] Araç çubuğu düğmesini komut kimliği.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Düğmesi vurgulanmış, pozitif tamsayı düğme Vurgulanmayan 0 veya -1 ise bir hata oluşur.  
@@ -1363,8 +1363,8 @@ BOOL IsButtonIndeterminate(int nID) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Araç çubuğundaki düğmenin komut tanımlayıcı.  
+*nID*<br/>
+[in] Araç çubuğundaki düğmenin komut tanımlayıcı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Pozitif bir tamsayı düğme belirsiz, varsa düğme belirsiz değilse veya-1 ise hata oluşuyor sıfır.  
@@ -1491,11 +1491,11 @@ BOOL PressButton(int nID, BOOL bPress = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Düğmeye basın veya yayın için komut tanımlayıcısı.  
+*nID*<br/>
+[in] Düğmeye basın veya yayın için komut tanımlayıcısı.  
   
- [in] *bPress*  
- Belirtilen düğmesine basın için TRUE; Belirtilen düğmenin serbest bırakmak için FALSE. Varsayılan değer True'dur.  
+*bPress*<br/>
+[in] Belirtilen düğmesine basın için TRUE; Belirtilen düğmenin serbest bırakmak için FALSE. Varsayılan değer True'dur.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1516,7 +1516,7 @@ BOOL ReplaceBitmap(LPTBREPLACEBITMAP pReplaceBitmap);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *pReplaceBitmap*|İşaretçi bir [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) değiştirilecek bit eşlem ve yeni bir bit eşlem açıklayan yapısı.|  
+|*pReplaceBitmap*|[in] İşaretçi bir [TBREPLACEBITMAP](/windows/desktop/api/commctrl/ns-commctrl-tbreplacebitmap) değiştirilecek bit eşlem ve yeni bir bit eşlem açıklayan yapısı.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu yöntem başarılı olursa TRUE; Aksi takdirde FALSE.  
@@ -1593,8 +1593,8 @@ BOOL SetAnchorHighlight(BOOL fAnchor = TRUE);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *fAnchor*  
- Yer işareti vurgulama etkin olup olmadığını belirtir. Bu değeri sıfır değilse, bağlantı vurgulama etkinleştirilecektir. Bu değer sıfır ise, bağlantı vurgulama devre dışı bırakılacak  
+*fAnchor*<br/>
+[in] Yer işareti vurgulama etkin olup olmadığını belirtir. Bu değeri sıfır değilse, bağlantı vurgulama etkinleştirilecektir. Bu değer sıfır ise, bağlantı vurgulama devre dışı bırakılacak  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki yer işareti ayar. Vurgulama etkinleştirilmişse, bu sıfır olmayan bir değerdir. Vurgulama etkinleştirilmediyse, bu değeri sıfırdır.  
@@ -1729,7 +1729,7 @@ void SetColorScheme(const COLORSCHEME* lpColorScheme);
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *lpColorScheme*|İşaretçi bir [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Vurgu rengi ve araç çubuğu denetimi gölge rengini betimleyen yapısı.|  
+|*lpColorScheme*|[in] İşaretçi bir [COLORSCHEME](/windows/desktop/api/commctrl/ns-commctrl-tagcolorscheme) Vurgu rengi ve araç çubuğu denetimi gölge rengini betimleyen yapısı.|  
   
 ### <a name="remarks"></a>Açıklamalar  
  Windows Vista görsel temasını ayarlanmışsa bu yöntem etkisizdir.  
@@ -1952,8 +1952,8 @@ DWORD SetPadding(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *nHorzPadding*|Araç çubuğu denetiminin yatay dolgunun piksel cinsinden belirtir.|  
-|[in] *nVertPadding*|Araç çubuğu denetiminin dikey dolgunun piksel cinsinden belirtir.|  
+|*nHorzPadding*|[in] Araç çubuğu denetiminin yatay dolgunun piksel cinsinden belirtir.|  
+|*nVertPadding*|[in] Araç çubuğu denetiminin dikey dolgunun piksel cinsinden belirtir.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Önceki yatay doldurma değeri, alt sözcük içerir ve yüksek olan Word'ün önceki dikey doldurma değeri içeren bir DWORD. Doldurma değerleri piksel cinsinden ölçülür.  
@@ -1979,8 +1979,8 @@ CImagelist* SetPressedImageList(
   
 |Parametre|Açıklama|  
 |---------------|-----------------|  
-|[in] *iImageID*|Görüntü listesi sıfır tabanlı dizini. Yalnızca bir görüntü listesi kullanıyorsanız bu parametre sıfır olarak ayarlayın.|  
-|[in] *pImageList*|İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) içeren yeni bir görüntü listesi.|  
+|*iImageID*|[in] Görüntü listesi sıfır tabanlı dizini. Yalnızca bir görüntü listesi kullanıyorsanız bu parametre sıfır olarak ayarlayın.|  
+|*pImageList*|[in] İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) içeren yeni bir görüntü listesi.|  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İşaretçi bir [Cımagelist](../../mfc/reference/cimagelist-class.md) böyle bir görüntü listesi ayarlarsanız önceki görüntü listesi NULL veya geçerli denetimi içeren.  

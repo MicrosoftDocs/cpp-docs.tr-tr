@@ -16,32 +16,34 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3629b65b8f6373b20fc35dd6d90133d7377e674
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: cb248442a1d687b98e8e97c8846d07a50e484564
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766567"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717515"
 ---
 # <a name="interfaces-atl-control-wizard"></a>ATL denetimi Sihirbazı, arabirimler
 
 Sihirbazın bu sayfası denetimi destekleyen arabirimlerini tanımlar. Varsayılan olarak, genellikle çoğu kapsayıcıları tarafından kullanılan desteklenen arabirimleri olanlardır.
 
 > [!NOTE]
->  Seçtiyseniz **en az bir denetim** üzerinde [seçenekleri](../../atl/reference/options-atl-control-wizard.md) sekmesinde, arabirimlerine varsayılan olarak görünen **desteklenen** liste kutusu.
+> Seçtiyseniz **en az bir denetim** üzerinde [seçenekleri](../../atl/reference/options-atl-control-wizard.md) sekmesinde, arabirimlerine varsayılan olarak görünen **desteklenen** liste kutusu.
 
-**Desteklenmiyor**  
-Denetim için şu anda desteklenmeyen kullanılabilir arabirimleri gösterir.
+- **Desteklenmiyor**
 
-**Desteklenen**  
-Denetim için şu anda desteklenen arabirimleri gösterir.
+   Denetim için şu anda desteklenmeyen kullanılabilir arabirimleri gösterir.
 
-|Aktarım düğmesi|Açıklama|
-|---------------------|-----------------|
-|**>**|Ekler **desteklenen** geçerli seçili arabirim adı listesi **desteklenmiyor** listesi.|
-|**>>**|Ekler **desteklenen** bulunan tüm arabirimi adlarını listelemek **desteklenmiyor** listesi.|
-|**<**|Şu anda seçili arabirim adını kaldırır **desteklenen** listesi.|
-|**<<**|Şu anda listelenen adları tüm arabirim kaldırır **desteklenen** listesi.|
+- **Desteklenen**
+
+   Denetim için şu anda desteklenen arabirimleri gösterir.
+
+   |Aktarım düğmesi|Açıklama|
+   |---------------------|-----------------|
+   |**>**|Ekler **desteklenen** geçerli seçili arabirim adı listesi **desteklenmiyor** listesi.|
+   |**>>**|Ekler **desteklenen** bulunan tüm arabirimi adlarını listelemek **desteklenmiyor** listesi.|
+   |**\<**|Şu anda seçili arabirim adını kaldırır **desteklenen** listesi.|
+   |**\<\<**|Şu anda listelenen adları tüm arabirim kaldırır **desteklenen** listesi.|
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf10da4c7a2662e7df1d3d4aefdbedbdd7cb0831
-ms.sourcegitcommit: 27b5712badd09a09c499d887e2e4cf2208a28603
+ms.openlocfilehash: ef413badb7f8882321e9d561a960ee17ee9cda84
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/11/2018
-ms.locfileid: "44385027"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722442"
 ---
 # <a name="matchresults-class"></a>match_results Sınıfı
 
@@ -194,7 +194,7 @@ next submatch: matched == true
   3 chars, value == aaa
 next submatch: matched == false
   0 chars, value ==
-  
+
 empty == false
 ```
 

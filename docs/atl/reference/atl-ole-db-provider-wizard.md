@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4bb77489a610d9331378e523b6983dcf14d996c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 15104e0252ad6994b6220b433c7324085199440c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762985"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45717216"
 ---
 # <a name="atl-ole-db-provider-wizard"></a>ATL OLE DB sağlayıcısı Sihirbazı
 
@@ -34,49 +34,63 @@ Visual Studio 2008'den itibaren bu sihirbaz tarafından üretilen kayıt betiği
 
 ATL OLE DB sağlayıcısı Sihirbazı seçenekleri aşağıdaki tabloda açıklanmaktadır:
 
-**Kısa ad**  
-Oluşturulacak sağlayıcının kısa adını yazın. Otomatik olarak doldurur sihirbazdaki diğer düzenleme kutuları Buraya yazdığınız üzerinde temel. Dilerseniz diğer ad kutularını düzenleyebilirsiniz.
+- **Kısa ad**
 
-**Coclass'ı**  
-Coclass adı. Program Kimliği adı, bu adla eşleşecek şekilde değiştirilir.
+   Oluşturulacak sağlayıcının kısa adını yazın. Otomatik olarak doldurur sihirbazdaki diğer düzenleme kutuları Buraya yazdığınız üzerinde temel. Dilerseniz diğer ad kutularını düzenleyebilirsiniz.
 
-**Öznitelikli**  
-Bu seçenek, sihirbaz öznitelikler veya şablon bildirimleri kullanarak sağlayıcısı sınıfları oluşturacak olup olmadığını belirtir. Bu seçeneği belirlediğinizde sihirbaz (öznitelikli projesinde oluşturduysanız varsayılan seçenek budur) şablon bildirimleri yerine öznitelikleri kullanır. Bu seçeneği temizleyin, sihirbaz şablon bildirimleri yerine öznitelikleri (öznitelikli projenizi oluşturduysanız varsayılan seçenek budur) kullanır.
+- **Coclass'ı**
 
-Öznitelikli olmayan bir proje oluşturduğunuzda bu seçeneği seçerseniz, sihirbaz proje öznitelikli projesinde dönüştürülür ve devam edilip edilmeyeceğini ister uyarır.
+   Coclass adı. Program Kimliği adı, bu adla eşleşecek şekilde değiştirilir.
 
-**ProgID**  
-Program Kimliği veya programlama tanımlayıcısı, uygulamanızın GUID yerine kullanabileceğiniz bir metin dizesidir. Program Kimliği adı *Projectname.Coclassname*.
+- **Öznitelikli**
 
-**Sürüm**  
-Sağlayıcınızın sürüm numarası. Varsayılan değer 1'dir.
+   Bu seçenek, sihirbaz öznitelikler veya şablon bildirimleri kullanarak sağlayıcısı sınıfları oluşturacak olup olmadığını belirtir. Bu seçeneği belirlediğinizde sihirbaz (öznitelikli projesinde oluşturduysanız varsayılan seçenek budur) şablon bildirimleri yerine öznitelikleri kullanır. Bu seçeneği temizleyin, sihirbaz şablon bildirimleri yerine öznitelikleri (öznitelikli projenizi oluşturduysanız varsayılan seçenek budur) kullanır.
 
-**Veri kaynağı sınıfı**  
-Veri kaynağı sınıfı C formun adını*Shortname*kaynak.
+   Öznitelikli olmayan bir proje oluşturduğunuzda bu seçeneği seçerseniz, sihirbaz proje öznitelikli projesinde dönüştürülür ve devam edilip edilmeyeceğini ister uyarır.
 
-**Veri kaynağı .h dosyası**  
-Veri kaynağı sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+- **ProgID**
 
-**Oturum sınıfı**  
-Oturum sınıfının C formu adını*Shortname*oturumu.
+   Program Kimliği veya programlama tanımlayıcısı, uygulamanızın GUID yerine kullanabileceğiniz bir metin dizesidir. Program Kimliği adı *Projectname.Coclassname*.
 
-**Oturumu .h dosyası**  
-Oturum sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+- **Sürüm**
 
-**Komut sınıfı**  
-Komut sınıfının C formun adı*Shortname*komutu.
+   Sağlayıcınızın sürüm numarası. Varsayılan değer 1'dir.
 
-**Komut .h dosyası**  
-Komut sınıfı için üst bilgi dosyası. Bu ad düzenlenemez ve satır kümesi üst bilgi dosyasının adına bağlıdır.
+- **Veri kaynağı sınıfı**
 
-**Satır kümesi sınıfı**  
-Satır kümesi sınıfının C formun adı*Shortname*satır kümesi.
+   Veri kaynağı sınıfı C formun adını*Shortname*kaynak.
 
-**Satır kümesi .h dosyası**  
-Satır kümesi sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+- **Veri kaynağı .h dosyası**
 
-**Satır kümesi .cpp dosyası**  
-Sağlayıcının uygulama dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir uygulama dosyasını seçebilirsiniz.
+   Veri kaynağı sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+
+- **Oturum sınıfı**
+
+   Oturum sınıfının C formu adını*Shortname*oturumu.
+
+- **Oturumu .h dosyası**
+
+   Oturum sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+
+- **Komut sınıfı**
+
+   Komut sınıfının C formun adı*Shortname*komutu.
+
+- **Komut .h dosyası**
+
+   Komut sınıfı için üst bilgi dosyası. Bu ad düzenlenemez ve satır kümesi üst bilgi dosyasının adına bağlıdır.
+
+- **Satır kümesi sınıfı**
+
+   Satır kümesi sınıfının C formun adı*Shortname*satır kümesi.
+
+- **Satır kümesi .h dosyası**
+
+   Satır kümesi sınıfı için üst bilgi dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir üst bilgi dosyasını seçebilirsiniz.
+
+- **Satır kümesi .cpp dosyası**
+
+   Sağlayıcının uygulama dosyası. Bu dosyanın adını düzenleyebilir veya var olan bir uygulama dosyasını seçebilirsiniz.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 

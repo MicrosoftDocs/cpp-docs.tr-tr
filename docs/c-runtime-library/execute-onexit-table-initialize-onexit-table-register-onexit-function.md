@@ -28,15 +28,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e1f4ebf40bc242d0daf98bbc85c2ea3d1295043
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a54e3e5f5f040c80660bd12e6565cef82d09206
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391495"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45720960"
 ---
 # <a name="executeonexittable-initializeonexittable-registeronexitfunction"></a>_execute_onexit_table, _initialize_onexit_table, _register_onexit_function
-Çıkış zaman çağrılacak yordamları yönetir.  
+Çıkış zaman çağrılacak rutinleri yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -55,24 +55,25 @@ int _execute_onexit_table(
     );  
 ```  
   
-#### <a name="parameters"></a>Parametreler  
- [ınout] `table`  
- Onexit işlevi tablonun işaretçi.  
+#### <a name="parameters"></a>Parametreler
+
+*Tablo*<br/>
+[out içinde] Onexit işlevi tablosu işaretçisi.  
   
- [in] `function`  
- Onexit işlevi tabloya eklemek için bir işlev işaretçisi.  
+*İşlevi*<br/>
+[in] Onexit işlevi tabloya eklenecek bir işlev işaretçisi.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Başarılı olursa, 0 döndürür. Aksi takdirde, negatif bir değer döndürür.  
+ Başarılı olursa 0 döndürür. Aksi takdirde, negatif bir değer döndürür.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu, altyapı uygulama ayrıntılarını C çalışma zamanı desteklemek için kullanılır ve doğrudan kodunuzdan çağrılmamalıdır işlevlerdir. C çalışma zamanı modülünü kullanan bir *onexit işlevi tablo* yapılan çağrılar tarafından kayıtlı işlevleri dizisini temsil etmek için `atexit`, `at_quick_exit`, ve `_onexit`. Onexit işlevi tablo veri C çalışma zamanı donuk uygulama ayrıntılarını yapısıdır; veri üyeleri anlamını ve sırası değişebilir. Bunlar dış kod tarafından incelenmelidir değil.  
+ Bu, altyapı uygulama ayrıntılarını C çalışma zamanı desteklemek için kullanılır ve doğrudan kodunuzdan çağrılmamalıdır işlevlerdir. C çalışma zamanı kullanan bir *onexit işlevi tablo* yapılan çağrılar tarafından kayıtlı işlevleri dizisini temsil etmek için `atexit`, `at_quick_exit`, ve `_onexit`. Onexit işlevi tablo veri yapısını C çalışma zamanı bir donuk uygulama ayrıntısı olduğunu; veri üyelerinin anlamını ve sırası değişebilir. Bunlar dış kod tarafından incelenmelidir değil.  
   
- `_initialize_onexit_table` İşlevi onexit işlevi tablonun ilk değerine başlatır.  Onexit işlevi tablo olarak geçmeden önce bu işlevi çağrılmalıdır `_register_onexit_function` veya `_execute_onexit_table`.  
+ `_initialize_onexit_table` İşlevi onexit işlevi tablonun ilk değerini başlatır.  Bu işlev onexit işlevi tablo olarak geçirilmeden önce çağrılmalıdır `_register_onexit_function` veya `_execute_onexit_table`.  
   
- `_register_onexit_function` İşlevi onexit işlevi tablonun sonuna bir işlev ekler.  
+ `_register_onexit_function` İşlevi bir işlev onexit işlevi tablonun sonuna ekler.  
   
- `_execute_onexit_table` İşlevi tüm işlevleri onexit işlevi tabloda yürütür, tablosunu temizler ve ardından döndürür. Çağrı sonra `_execute_onexit_table`, tablo geçerli olmayan bir durumda; için yapılan bir çağrı tarafından yeniden gerekir `_initialize_onexit_table` yeniden kullanılmadan önce.  
+ `_execute_onexit_table` İşlevi onexit işlevi tablodaki tüm işlevleri yürütür, tablosunu temizler ve ardından döndürür. Çağrısı yapıldıktan sonra `_execute_onexit_table`, tablo, geçerli olmayan bir durumda; yapılan bir çağrıyla yeniden gerekir `_initialize_onexit_table` yeniden kullanılmadan önce.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -80,7 +81,7 @@ int _execute_onexit_table(
 |-------------|---------------------|  
 |`_initialize_onexit_table function`, `_register_onexit_function`, `_execute_onexit_table`|C, C++: \<process.h >|  
   
- `_initialize_onexit_table`, `_register_onexit_function`, Ve `_execute_onexit_table` Microsoft belirli işlevlerdir. Uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md).  
+ `_initialize_onexit_table`, `_register_onexit_function`, Ve `_execute_onexit_table` Microsoft'a özgü işlevlerdir. Uyumluluk bilgileri için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [atexit](../c-runtime-library/reference/atexit.md)   

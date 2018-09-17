@@ -142,12 +142,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 45b9b5bb5beae8599c360d35df878a38b591b1b4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: afd9c9e8069d6140b66a38f4686f562533dd5c21
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761023"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722715"
 ---
 # <a name="cfiledialog-class"></a>CFileDialog sınıfı
 Açık bir dosya veya dosya kaydetme işlemi için kullanılan yaygın bir iletişim kutusunu kapsüller.  
@@ -522,29 +522,29 @@ explicit CFileDialog(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bOpenFileDialog*  
- Parametresi ne tür iletişim kutusunun oluşturulacağını belirtir. Oluşturmak için TRUE olarak ayarlanmış bir **Dosya Aç** iletişim kutusu. Oluşturmak için FALSE olarak ayarlanmış bir **dosyayı farklı Kaydet** iletişim kutusu.  
+*bOpenFileDialog*<br/>
+[in] Parametresi ne tür iletişim kutusunun oluşturulacağını belirtir. Oluşturmak için TRUE olarak ayarlanmış bir **Dosya Aç** iletişim kutusu. Oluşturmak için FALSE olarak ayarlanmış bir **dosyayı farklı Kaydet** iletişim kutusu.  
   
- [in] *lpszDefExt*  
- Varsayılan dosya adı uzantısı. Kullanıcı dosya adı kutusuna bilinen bir uzantı (bir kullanıcının bilgisayarında bir ilişkisi) içermiyorsa, belirtilen uzantısı tarafından *lpszDefExt* dosya adına otomatik olarak eklenir. Bu parametre NULL ise, hiçbir uzantı eklenir.  
+*lpszDefExt*<br/>
+[in] Varsayılan dosya adı uzantısı. Kullanıcı dosya adı kutusuna bilinen bir uzantı (bir kullanıcının bilgisayarında bir ilişkisi) içermiyorsa, belirtilen uzantısı tarafından *lpszDefExt* dosya adına otomatik olarak eklenir. Bu parametre NULL ise, hiçbir uzantı eklenir.  
   
- [in] *lpszFileName*  
- Dosya adı kutusunda görünen ilk dosya adı. NULL ise, ilk dosya adı görüntülenir.  
+*lpszFileName*<br/>
+[in] Dosya adı kutusunda görünen ilk dosya adı. NULL ise, ilk dosya adı görüntülenir.  
   
- [in] *CertOpenStore*  
- Özelleştir iletişim kutusu için kullanabileceğiniz bir veya daha fazla bayrakların birleşimi. Bu bayraklar açıklaması için bkz: [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı. Değiştirirseniz `m_ofn.Flags` yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullanın.  
+*CertOpenStore*<br/>
+[in] Özelleştir iletişim kutusu için kullanabileceğiniz bir veya daha fazla bayrakların birleşimi. Bu bayraklar açıklaması için bkz: [LPSTRFİLE](/windows/desktop/api/commdlg/ns-commdlg-tagofna) Windows SDK'sındaki yapısı. Değiştirirseniz `m_ofn.Flags` yapı üyesi, varsayılan davranışı korumak için değişikliklerinizi bir bit düzeyinde OR işleci kullanın.  
   
- [in] *lpszFilter*  
- Bir dizi filtreleri belirten bir dize çiftleri dosyaya uygulayabilirsiniz. Dosya filtreleri belirtirseniz, yalnızca filtre ölçütüyle eşleşen dosyaları dosya listesinde görünür. Dosya filtreleri ile çalışma hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.  
+*lpszFilter*<br/>
+[in] Bir dizi filtreleri belirten bir dize çiftleri dosyaya uygulayabilirsiniz. Dosya filtreleri belirtirseniz, yalnızca filtre ölçütüyle eşleşen dosyaları dosya listesinde görünür. Dosya filtreleri ile çalışma hakkında daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
- [in] *pParentWnd*  
- Dosya iletişim kutusunun üst veya sahip penceresine bir işaretçi.  
+*pParentWnd*<br/>
+[in] Dosya iletişim kutusunun üst veya sahip penceresine bir işaretçi.  
   
- [in] *dwSize*  
- Boyutu `OPENFILENAME` yapısı. Bu değer, işletim sistemi sürümüne bağlıdır. MFC iletişim kutusu oluşturmak için uygun türünü belirlemek için bu parametreyi kullanılır. Varsayılan boyutu MFC kodu kullanmak için doğru iletişim kutusunun boyutu programın çalıştığı işletim sistemi sürümüne göre belirleyen 0 anlamına gelir.  
+*dwSize*<br/>
+[in] Boyutu `OPENFILENAME` yapısı. Bu değer, işletim sistemi sürümüne bağlıdır. MFC iletişim kutusu oluşturmak için uygun türünü belirlemek için bu parametreyi kullanılır. Varsayılan boyutu MFC kodu kullanmak için doğru iletişim kutusunun boyutu programın çalıştığı işletim sistemi sürümüne göre belirleyen 0 anlamına gelir.  
   
- [in] *bVistaStyle*  
- **Not** bu parametresi olacaktır ve üzeri Visual Studio 2008'de kullanılabilir ve yalnızca Windows Vista veya sonraki sürümlerde çalıştırıyorsanız, kullanılacak yeni stil iletişim neden olur.  
+*bVistaStyle*<br/>
+[in] **Not** bu parametresi olacaktır ve üzeri Visual Studio 2008'de kullanılabilir ve yalnızca Windows Vista veya sonraki sürümlerde çalıştırıyorsanız, kullanılacak yeni stil iletişim neden olur.  
   
  Parametresi dosya iletişim kutusu stilini belirtir. İçin dosya iletişim kutularını kullanın ve yeni Vista stil true ayarlayın. Aksi takdirde, eski stil iletişim kutularının kullanılır. Vista altında çalışan daha fazla bilgi için Açıklamalar bölümüne bakın.  
   
@@ -1346,11 +1346,11 @@ void SetControlText(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Metni ayarlamak istediğiniz denetiminin kimliği.  
+*nID*<br/>
+[in] Metni ayarlamak istediğiniz denetiminin kimliği.  
   
- [in] *lpsz*  
- Denetim için ayarlanacak metni içeren dize işaretçisi.  
+*lpsz*<br/>
+[in] Denetim için ayarlanacak metni içeren dize işaretçisi.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Bu işlev her iki sürümü de Unicode kullanan uygulamalar için geçerlidir. Ancak, yalnızca sürüm LPCSTR türüyle ANSI kullanan uygulamalar için geçerlidir.  
@@ -1435,17 +1435,17 @@ void SetTemplate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nWin3ID*  
- Şablon kaynağı olmayan-Explorer kimliği sayısını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
+*nWin3ID*<br/>
+[in] Şablon kaynağı olmayan-Explorer kimliği sayısını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
- [in] *nWin4ID*  
- Şablon kaynağı kimliği numarasını Gezgini içerir `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
+*nWin4ID*<br/>
+[in] Şablon kaynağı kimliği numarasını Gezgini içerir `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
   
- [in] *lpWin3ID*  
- Şablon kaynağı olmayan-Explorer adında `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
+*lpWin3ID*<br/>
+[in] Şablon kaynağı olmayan-Explorer adında `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 3.51 veya OFN_EXPLORER stili mevcut olmadığında kullanılır.  
   
- [in] *lpWin4ID*  
- Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
+*lpWin4ID*<br/>
+[in] Şablon kaynağı Explorer'ın adını içeren `CFileDialog` nesne. Bu şablon, yalnızca Windows NT 4.0 ve üzeri sürümleri, Windows 95 ve sonraki sürümler üzerinde veya OFN_EXPLORER stili olduğunda kullanılır.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Sistem, belirtilen şablonları yalnızca birini kullanın. Sistem OFN_EXPLORER stil ve uygulamanın üzerinde çalıştığı işletim sistemi olup olmamasına hangi şablonun kullanılacağını belirler. Explorer olmayan ve Gezgin stili şablonu belirterek, Windows NT 3.51, Windows NT 4.0 ve üzeri sürümler ve Windows 95 ve sonraki sürümleri desteklemek kolaydır.  

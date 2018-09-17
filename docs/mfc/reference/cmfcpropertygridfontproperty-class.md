@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9e90570e783b2c42081da4854d54a65d1bdb9b6
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 33c719ffcba207beb4a5f867192af2b98aef2797
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43208872"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45719946"
 ---
 # <a name="cmfcpropertygridfontproperty-class"></a>CMFCPropertyGridFontProperty sınıfı
 `CMFCPropertyGridFileProperty` Sınıfı, bir yazı tipi seçimi iletişim kutusunu açan bir özellik listesi denetim öğesini destekler.  
@@ -83,23 +83,23 @@ CMFCPropertyGridFontProperty(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strName*  
- Özelliğin adı.  
+*strName*<br/>
+[in] Özelliğin adı.  
   
- [in] *lf*  
- Yazı tipi özniteliklerini belirtir mantıksal yazı tipi yapısı.  
+*LF*<br/>
+[in] Yazı tipi özniteliklerini belirtir mantıksal yazı tipi yapısı.  
   
- [in] *dwFontDialogFlags*  
- Özellik değeri açılan Düğmeye tıkladığınızda görüntülenen yazı tipi iletişim kutusu için uygulanan stiller. Bit düzeyinde birleşimi (veya) CF_EFFECTS ve CF_SCREENFONTS varsayılan değerdir. Daha fazla bilgi için *bayrakları* parametresinin [CHOOSEFONT yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
+*dwFontDialogFlags*<br/>
+[in] Özellik değeri açılan Düğmeye tıkladığınızda görüntülenen yazı tipi iletişim kutusu için uygulanan stiller. Bit düzeyinde birleşimi (veya) CF_EFFECTS ve CF_SCREENFONTS varsayılan değerdir. Daha fazla bilgi için *bayrakları* parametresinin [CHOOSEFONT yapısı](/windows/desktop/api/commdlg/ns-commdlg-tagchoosefonta).  
   
- [in] *lpszDescr*  
- Yazı tipi özellik açıklaması. Varsayılan değer NULL olur.  
+*lpszDescr*<br/>
+[in] Yazı tipi özellik açıklaması. Varsayılan değer NULL olur.  
   
- [in] *dwData*  
- Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
+*dwData*<br/>
+[in] Uygulamaya özgü verileri, bir tamsayı ya da özellikle ilişkili diğer veri işaretçisi gibi. Varsayılan değer 0’dır.  
   
- [in] *rengi*  
- Yazı tipi rengi. Varsayılan renk varsayılan değerdir.  
+*Renk*<br/>
+[in] Yazı tipi rengi. Varsayılan renk varsayılan değerdir.  
   
 ### <a name="remarks"></a>Açıklamalar  
  A `CMFCPropertyGridFontProperty` nesnesi bir yazı tipi özelliği bir özellik Kılavuzu yazı tipi denetimini temsil eder.  

@@ -26,17 +26,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85749ff1325c3535c265a445ce76d37522bc252a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77791bdf33f38417d38ebdec3c73b83d96bde36f
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33338308"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45718477"
 ---
 # <a name="writefsbyte-writefsdword-writefsqword-writefsword"></a>__writefsbyte, __writefsdword, __writefsqword, __writefsword
-**Microsoft özel**  
+**Microsoft'a özgü**  
   
- Bellek FS kesim başına göreli bir uzaklık tarafından belirtilen bir konuma yazma.  
+ Bellek FS kesim başlangıcına göre bir uzaklık tarafından belirtilen bir konuma yazma.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -60,11 +60,11 @@ void __writefsqword(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- [in] `Offset`  
- Yazılacak FS başından uzaklık.  
+*uzaklık*<br/>
+[in] Yazılacak FS başından uzaklığı.  
   
- [in] `Data`  
- Yazılacak değer.  
+*Veri*<br/>
+[in] Yazılacak değer.  
   
 ## <a name="requirements"></a>Gereksinimler  
   
@@ -75,12 +75,12 @@ void __writefsqword(
 |`__writefsdword`|x86|  
 |`__writefsqword`|x86|  
   
- **Üstbilgi dosyası** \<intrin.h >  
+ **Üst bilgi dosyası** \<intrin.h >  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu yordamlar, yalnızca iç bilgileri kullanılabilir.  
+ Bu yordamlar, yalnızca iç öğe olarak kullanılabilir.  
   
-**SON Microsoft özel**  
+**END Microsoft özgü**  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [__readfsbyte, \__readfsdword, \__readfsqword, \__readfsword](../intrinsics/readfsbyte-readfsdword-readfsqword-readfsword.md)   

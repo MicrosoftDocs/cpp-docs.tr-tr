@@ -18,39 +18,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 686b17a3db00175340e3490241c6c2e9f9325225
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 91f73af0c270be4452a4b556d2cb77c0d55bed33
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32377293"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45722598"
 ---
 # <a name="wx-treat-linker-warnings-as-errors"></a>/WX (Bağlayıcı Uyarılarını Hata Olarak İşle)
-```  
-/WX[:NO]  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- /WX bağlayıcı bir uyarı oluşturursa oluşturulacak hiçbir çıktı dosyası neden olur.  
-  
- Bu benzer **/WX** derleyici için (bkz [/w, /W0, /W1, /W2, /W3, /W4, /w1, /w2, /w3, /w4, wln, /wd, / biz, /wo, /Wv, /WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md) daha fazla bilgi için). Ancak, belirtme **/WX** derleme, göstermez için **/WX** açıkça belirtmeniz gerekir; ayrıca bağlantı aşaması için uygulanmaz **/WX** her aracı için.  
-  
- Varsayılan olarak, **/WX** etkili değildir. Bağlayıcı uyarılarını hata olarak değerlendirmek için belirtmek **/WX**. **/WX:No** değil belirtme aynı **/WX**.  
-  
-### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için  
-  
-1.  Projenin açmak **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).  
-  
-2.  Tıklatın **bağlayıcı** klasör.  
-  
-3.  Tıklatın **komut satırı** özellik sayfası.  
-  
-4.  Seçenek içine türünü **ek seçenekler** kutusu.  
-  
-### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için  
-  
-1.  Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlayıcı seçeneklerini ayarlama](../../build/reference/setting-linker-options.md)   
- [Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
+
+```
+/WX[:NO]
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Wx bağlayıcı bir uyarı oluşturduğunda çıkış dosyası oluşturulmamasını sağlar.
+
+Bu benzer **wx** derleyici için (bkz [/w, /W0, / W1, / w2, / W3, / W4, / W1, / w2, / W3, / W4, /Wall, WD, / we Wo, wv, /WX (uyarı düzeyi)](../../build/reference/compiler-option-warning-level.md) daha fazla bilgi için). Ancak, belirtme **wx** derleme, gelmez için **wx** bağlantı aşaması için de geçerli olur; açıkça belirtmeniz gerekir **wx** her aracı için.
+
+Varsayılan olarak, **wx** etkili değildir. Bağlayıcı uyarılarını hata olarak değerlendirilecek belirtin **wx**. **/WX:No** değil belirtmekle aynı **wx**.
+
+### <a name="to-set-this-linker-option-in-the-visual-studio-development-environment"></a>Visual Studio geliştirme ortamındaki bu bağlayıcı seçeneğini ayarlamak için
+
+1. Projenin açın **özellik sayfaları** iletişim kutusu. Ayrıntılar için bkz [Visual C++ proje özelliklerini ayarlama](../../ide/working-with-project-properties.md).
+
+1. Tıklayın **bağlayıcı** klasör.
+
+1. Tıklayın **komut satırı** özellik sayfası.
+
+1. Seçeneğini yazın **ek seçenekler** kutusu.
+
+### <a name="to-set-this-linker-option-programmatically"></a>Bu bağlayıcı seçeneğini program aracılığıyla ayarlamak için
+
+1. Bkz: <xref:Microsoft.VisualStudio.VCProjectEngine.VCCLCompilerTool.AdditionalOptions%2A>.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlayıcı Seçeneklerini Ayarlama](../../build/reference/setting-linker-options.md)<br/>
+[Bağlayıcı Seçenekleri](../../build/reference/linker-options.md)
