@@ -16,22 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6a21afc6831c0fb51c96fa6ff8c43de1bebb812
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4332b48ea9ea0a69c1545fbfac8b7df5cf5f8be3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272080"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093356"
 ---
 # <a name="compiler-error-c3820"></a>Derleyici Hatası C3820
-'name': başlatıcıları yönetilmelidir  
-  
- *Adı* Başlatıcı bir yönetilen türü için aynı zamanda yönetilmelidir.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Bir yönetilen Başlatıcı yöntemi belirtin.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Başlatıcılar](../../cpp/initializers.md)   
- [Ek Başlatma Konuları](../../cpp/additional-startup-considerations.md)
+
+'name': başlatıcıların yönetilmesi gerekir
+
+*Adı* yönetilen bir tür için Başlatıcı ayrıca yönetilmelidir.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Yönetilen Başlatıcı yöntemini belirtin.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Başlatıcılar](../../cpp/initializers.md)<br/>
+[Ek Başlatma Konuları](../../cpp/additional-startup-considerations.md)

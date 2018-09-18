@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 203af51226bddd09e67f1d04efba7f97f19f0850
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2dc22555b84a0726aa9ce0da8ce225c00a9d037
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294979"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094579"
 ---
 # <a name="expression-evaluator-error-cxx0005"></a>İfade Değerlendirici Hatası CXX0005
-işleç desteklenmiyor  
-  
- Desteklenmeyen bir C işleci bir ifade belirtildi. Desteklenen C işleçleri kullanarak bir eşdeğer ifade yazın.  
-  
- Bu hata için CAN0005 aynıdır.
+
+işleci desteklenmiyor
+
+Desteklenmeyen bir C işleci bir ifade belirtildi. Desteklenen C işleçleri kullanarak eşdeğer bir ifade yazın.
+
+Bu hata için CAN0005 aynıdır.

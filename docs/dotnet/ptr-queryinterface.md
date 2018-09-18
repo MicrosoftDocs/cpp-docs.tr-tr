@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: dd25661fc14cb9539d4b8e68f42c29895ce0d70e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2a3416f057d32a003eba1b9776456a60d915de95
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33160972"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090147"
 ---
 # <a name="ptrqueryinterface"></a>ptr::QueryInterface
-Arabirimin ait COM nesnesi sorgular ve sonucu diğerine ekler `com::ptr`.  
+Sahip olunan bir COM nesnesi bir arabirim için sorgular ve sonucu bir diğerine ekler `com::ptr`.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,17 +40,17 @@ void QueryInterface(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `other`  
- `com::ptr` Arabirimi alırsınız.  
+*Diğer*<br/>
+`com::ptr` Arabirimi alırsınız.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
- Dahili olarak, `QueryInterface` ait COM nesnesi ve herhangi bir hata adlı `HRESULT` bir özel durum tarafından dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
+ Dahili olarak `QueryInterface` sahip olunan bir COM nesnesi ve herhangi bir hata çağrılır `HRESULT` bir özel durumun dönüştürülür <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A>.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Geçerli sarmalayıcı tarafından sahip olunan COM nesnesinin farklı bir arabirim için COM sarmalayıcı oluşturmak için bu yöntemi kullanın. Bu yöntemi çağırır `QueryInterface` com belirli bir arabirim için bir işaretçi istemek için ait COM nesnesi yoluyla nesne ve geçirilen bileşenine döndürüldü arabirim işaretçisi ekler `com::ptr`.  
+ Geçerli bir sarmalayıcı tarafından sahip olunan COM nesnesinin farklı bir arabirim için COM sarmalayıcı oluşturmak için bu yöntemi kullanın. Bu yöntemin çağırdığı `QueryInterface` com belirli bir arabirim işaretçisi istemek için sahip olunan COM nesnesi aracılığıyla nesne ve geçilen için döndürülen arabirim işaretçisinde ekler `com::ptr`.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek kullanan bir CLR sınıfı uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesnesi. `WriteTopLevelNode` Üye fonksiyonu kullanır `QueryInterface` yerel doldurmak için `com::ptr` ile bir `IXMLDOMNode` ve daha sonra geçirir `com::ptr` (tarafından başvuru izleme) düğümün adını ve metin özelliklerini konsola özel üye işlevi.  
+ Bu örnekte kullanan bir CLR sınıf uygulayan bir `com::ptr` kendi özel üye sarmalamak için `IXMLDOMDocument` nesne. `WriteTopLevelNode` Üye işlevini kullanır `QueryInterface` yerel doldurmak için `com::ptr` ile bir `IXMLDOMNode` geçirir `com::ptr` (yönelik izleme başvurusuna tarafından) bir özel üye işlevine düğümün adını ve metin özellikleri konsola yazar.  
   
 ```  
 // comptr_queryinterface.cpp  
@@ -156,7 +156,7 @@ int main() {
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\com\ptr.h >  
+ **Üst bilgi dosyası** \<msclr\com\ptr.h >  
   
  **Namespace** msclr::com  
   

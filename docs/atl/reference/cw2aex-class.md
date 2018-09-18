@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cd88555ee28b7bdddef51371ba2774047464678
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 0e10650235298e7a5b2931e59c39cb21a5374d0b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759489"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087597"
 ---
 # <a name="cw2aex-class"></a>CW2AEX sınıfı
 
@@ -37,13 +37,13 @@ Bu sınıf, dize dönüşüm makroları CT2AEX, CW2TEX, CW2CTEX ve CT2CAEX ve ty
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<int t_nBufferLength = 128>  
+template<int t_nBufferLength = 128>
 class CW2AEX
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
 
 ## <a name="members"></a>Üyeler
@@ -107,16 +107,16 @@ Bkz: [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md) Bu di
 Oluşturucu.
 
 ```
-CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);  
+CW2AEX(LPCWSTR psz, UINT nCodePage) throw(...);
 CW2AEX(LPCWSTR psz) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Dönüştürülecek metin dizesi.
 
-*nCodePage*  
+*nCodePage*<br/>
 Dönüştürme gerçekleştirmek için kullanılan kod sayfası. Windows SDK'sı işlevi için kod sayfası parametresi tartışmalara bakın [MultiByteToWideChar](/windows/desktop/api/stringapiset/nf-stringapiset-multibytetowidechar) daha fazla ayrıntı için.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -155,7 +155,7 @@ char m_szBuffer[t_nBufferLength];
 
 Dönüştürme işleci.
 
-```  
+```
 operator LPSTR() const throw();
 ```
 
@@ -165,9 +165,9 @@ Metin dizesi LPSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CA2AEX sınıfı](../../atl/reference/ca2aex-class.md)   
-[CA2CAEX sınıfı](../../atl/reference/ca2caex-class.md)   
-[CA2WEX sınıfı](../../atl/reference/ca2wex-class.md)   
-[CW2CWEX sınıfı](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX sınıfı](../../atl/reference/cw2wex-class.md)   
+[CA2AEX Sınıfı](../../atl/reference/ca2aex-class.md)<br/>
+[CA2CAEX Sınıfı](../../atl/reference/ca2caex-class.md)<br/>
+[CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>
+[CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

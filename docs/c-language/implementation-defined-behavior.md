@@ -17,20 +17,22 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dd276b110645dbb868d24315208052a6d05355a4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 496403f21ddd7e55aa5a504dd12e2c1e5e423a88
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383446"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095541"
 ---
 # <a name="implementation-defined-behavior"></a>Uygulama Tanımlı Davranış
-ANSI X3.159-1989, *Amerikan Ulusal standardı bilgi Systems* - *programlama dili* - *C*, adlı bir bölüm içerir "Taşınabilirlik sorunlarını." ANSI bölüm ANSI her belirli bir uygulamaya açık bırakır C dil alanlarının listeler. Bu bölümde, Microsoft C bu uygulama tanımlı alanlar C dilinin nasıl işlediği açıklanmıştır.  
-  
- Bu bölümde ANSI bölüm aynı sırada izler. Her öğe kapsamdaki uygulama tanımlı davranış açıklanmaktadır ANSI başvurular içerir.  
-  
+
+ANSI X3.159-1989, *bilgi sistemleri için Amerikan Ulusal standardı* - *programlama dili* - *C*, adlı bir bölüm içeriyor "Taşınabilirlik sorunlarını." ANSI bölümü, C dilinin belirli her uygulama için ANSI açık bırakır alanlarını listeler. Bu bölümde, Microsoft C bu uygulama tanımlı alanlar C dilinin nasıl işlediğini açıklar.
+
+Bu bölümde, ANSI bölüm aynı sırada izler. Her öğe kapsamdaki uygulama tanımlı davranış açıklayan ANSI başvurular içerir.
+
 > [!NOTE]
->  Bu bölümde ABD açıklanmaktadır C derleyicisi yalnızca İngilizce dil sürümü. Microsoft C uygulamaları diğer diller için biraz farklı olabilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dil Başvurusu](../c-language/c-language-reference.md)
+>  Bu bölümde, ABD açıklanmaktadır. C derleyicisi yalnızca İngilizce sürümü. Microsoft C uygulamaları diğer diller için biraz farklı olabilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dil Başvurusu](../c-language/c-language-reference.md)

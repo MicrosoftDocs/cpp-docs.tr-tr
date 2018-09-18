@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0da9a0299679ec140888e9536329f0957a786279
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 208c89cad441a1fae70f5532204ec7856459de7f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760009"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095865"
 ---
 # <a name="atl-com-property-pages"></a>ATL COM Özellik Sayfaları
 
@@ -38,18 +38,18 @@ Daha fazla bilgi için [özellik bölümleri ve özellik sayfaları](/windows/de
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[Özellik Sayfaları Belirtme](../atl/specifying-property-pages.md)  
+[Özellik Sayfaları Belirtme](../atl/specifying-property-pages.md)<br/>
 Özellik sayfaları, denetim için belirtmek için adımları ve örnek bir sınıf gösterir.
 
-[Özellik Sayfaları Uygulama](../atl/implementing-property-pages.md)  
+[Özellik Sayfaları Uygulama](../atl/implementing-property-pages.md)<br/>
 Özellik sayfaları, geçersiz kılmak için yöntemleri dahil olmak üzere uygulamaya yönelik adımlar listelenmektedir. ATLPages örnek programına dayalı tam bir örnek gösterilmektedir.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATLPages örnek](../visual-cpp-samples.md)  
+[ATLPages örnek](../visual-cpp-samples.md)<br/>
 Örnek özet kullanarak bir özellik sayfası uygulayan ATLPages örnek `IPropertyPageImpl`.
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -41,12 +41,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77876aad65a06cd541949937898496f811375e58
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d1e8e4d8be25a175f40d59aa3d3b8eb1ecbf4c3e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43209609"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097024"
 ---
 # <a name="access-waccess"></a>_access, _waccess
 
@@ -67,10 +67,10 @@ int _waccess(
 
 ### <a name="parameters"></a>Parametreler
 
-*Yolu*  
+*Yolu*<br/>
 Dosya veya dizin yolu.
 
-*Modu*  
+*Modu*<br/>
 Okuma/yazma özniteliği.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -151,8 +151,8 @@ File crt_ACCESS.C does not have write permission.
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Dosya İşleme](../../c-runtime-library/file-handling.md)  
-[_chmod, _wchmod](chmod-wchmod.md)  
-[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)  
-[_open, _wopen](open-wopen.md)  
-[_stat, _wstat işlevleri](stat-functions.md)  
+[Dosya İşleme](../../c-runtime-library/file-handling.md)<br/>
+[_chmod, _wchmod](chmod-wchmod.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[_open, _wopen](open-wopen.md)<br/>
+[_stat, _wstat işlevleri](stat-functions.md)

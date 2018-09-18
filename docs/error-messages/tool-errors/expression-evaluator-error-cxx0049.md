@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d40a823ebcac377198254555181d9821320a848
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea9193363ca5d2fa03ad585816ee618e3c194a16
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295587"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097084"
 ---
 # <a name="expression-evaluator-error-cxx0049"></a>İfade Değerlendirici Hatası CXX0049
-kullanılmayan OMF - Lütfen programı yeniden bağlayın  
-  
- Program bir eski OMF (nesne modülü biçimi) kullanılır.  
-  
- Geçerli bağlayıcı sürümünü kullanarak programı yeniden bağlayın.  
-  
- Bu hata için CAN0049 aynıdır.
+
+kullanılmayan OMF - Lütfen program yeniden Bağla
+
+Program, eski bir OMF (nesne modülü biçimi) kullanılır.
+
+Programın geçerli bağlayıcı sürümünü kullanarak yeniden bağlayın.
+
+Bu hata için CAN0049 aynıdır.

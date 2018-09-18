@@ -16,38 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1467f36757495734018c1ebac9c0a8b115d2919
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d96fa83f072d0c0b86854400753f0b798ac73d14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267077"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094688"
 ---
 # <a name="compiler-error-c3766"></a>Derleyici Hatası C3766
-'type' yöntemi 'function' arabirimi için bir uygulama sağlaması gerekir  
-  
- Arabirim üyeleri arabirimden devralan bir sınıf uygulamalıdır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3766 oluşturur.  
-  
-```  
-// C3766.cpp  
-// compile with: /clr /c  
-  
-delegate void MyDel();  
-  
-interface struct IFace {  
-   virtual event MyDel ^ E;  
-};  
-  
-ref struct Class1 : public IFace {};   // C3766  
-  
-// OK  
-ref struct Class2 : public IFace {  
-   virtual event MyDel ^ E {  
-      void add(MyDel ^) {}  
-      void remove(MyDel ^) {}  
-   }  
-};  
+
+'type' yöntemi 'function' arabirimi için bir uygulama sağlamalıdır
+
+Bir arabirimden devralan bir sınıf, arabirim üyeleri uygulamalıdır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3766 oluşturur.
+
+```
+// C3766.cpp
+// compile with: /clr /c
+
+delegate void MyDel();
+
+interface struct IFace {
+   virtual event MyDel ^ E;
+};
+
+ref struct Class1 : public IFace {};   // C3766
+
+// OK
+ref struct Class2 : public IFace {
+   virtual event MyDel ^ E {
+      void add(MyDel ^) {}
+      void remove(MyDel ^) {}
+   }
+};
 ```

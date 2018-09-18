@@ -17,20 +17,22 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de026c8887e19e76bbce533db8997193679d1371
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: e031aa0ebbad279c630f2687457af11dc478b72d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389890"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095839"
 ---
 # <a name="byte-and-wide-streams"></a>Bayt ve Geniş Akışlar
-Bir bayt akış dosya bir bayt dizisi değerlendirir. Programında, akış bayt aynı dizisidir.  
-  
- Bunun aksine, geniş bir akış bir dosyası çok çeşitli kodlama kuralları olabilir genelleştirilmiş birden çok baytlı karakter dizisi değerlendirir. (Metin ve ikili dosyaları yine okunur ve daha önce açıklandığı şekilde yazılmış.) Programında, akış geniş karakterler karşılık gelen sırası gibi görünüyor. İki sunumu arasında dönüştürme standart C Kitaplığı içinde oluşur. Dönüştürme kuralları temelde için yapılan bir çağrı tarafından değiştirilebilir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) kategori değiştirir `LC_CTYPE`. Geniş her akış dönüştürme kurallarını geniş yönlendirilmiş olur ve bu kuralları olsa bile korur anda belirler kategori `LC_CTYPE` sonradan değiştirir.  
-  
- Geniş bir akış içinde konumlandırma metin steams için olduğu gibi aynı sınırlamalar düşer. Ayrıca, dosya konumu göstergesi durumu bağımlı kodlama ile mücadele etmek iyi olabilir. Genellikle, her iki bir bayt akış ve türünde bir nesne içinde uzaklığı içerir `mbstate_t`. Bu nedenle, geniş bir akış içinde dosya konumu elde etmek için yalnızca güvenilir çağırarak yoldur [fgetpos](../c-runtime-library/reference/fgetpos.md), ve bu şekilde elde bir konuma geri yüklemek için yalnızca güvenilir bir yolu çağırarak [fsetpos](../c-runtime-library/reference/fsetpos.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Dosyalar ve akışlar](../c-runtime-library/files-and-streams.md)   
- [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)
+
+Bir bayt akışı, bir dosya bir bayt dizisi olarak değerlendirir. Program içindeki akış aynı bayt dizisidir.
+
+Aksine, geniş bir akış geniş bir kodlama kuralları olabilir genelleştirilmiş çok baytlı karakter dizisi olarak bir dosyanın değerlendirir. (Metin ve ikili dosyalar hala okuyun ve daha önce açıklandığı gibi yazılan.) Bir program içindeki akış karşılık gelen geniş karakter dizisi gibi görünüyor. İki temsiller arasındaki dönüştürmeler, standart C Kitaplığı içinde oluşur. Dönüştürme kuralları İlkesi, bir çağrı tarafından değiştirilebilir [setlocale](../c-runtime-library/reference/setlocale-wsetlocale.md) , kategori değiştirir `LC_CTYPE`. Her geniş akış dönüştürme kurallarını zaman geniş yönlendirilmiş olur ve bu kuralları bile korur belirler. kategori `LC_CTYPE` sonradan değiştirir.
+
+Geniş bir akış içinde konumlandırma metin steams olduğu gibi aynı sınırlamalar düşer. Ayrıca, dosya konumu göstergesi iyi bir duruma bağlı kodlamayı ile uğraşmak zorunda kalabilirsiniz. Genellikle, akış ve türünde bir nesne içinde uzaklığı bir iki bayt içerir `mbstate_t`. Bu nedenle, geniş bir akış içinde bir dosya konumu almak için yalnızca güvenilir çağırarak yoludur [fgetpos](../c-runtime-library/reference/fgetpos.md), ve bu şekilde elde edilen bir konuma geri yüklemek için yalnızca güvenilir bir şekilde çağrılarak [fsetpos](../c-runtime-library/reference/fsetpos.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Dosyalar ve Akışlar](../c-runtime-library/files-and-streams.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)

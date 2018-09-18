@@ -16,15 +16,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e63c3134dee6c316519dfcc34cff30b591b56460
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 3edc24b2b8dc869022039d4aaaea73af06eac16b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465402"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092550"
 ---
 # <a name="using-abort"></a>abort Kullanma
-Çağırma [iptal](../c-runtime-library/reference/abort.md) işlevi hemen sonlandırılmasına neden olur. Başlatılan genel statik nesneler için normal yıkım işlemini atlar. `atexit` işlevi kullanarak belirtilen herhangi bir özel işlemi de atlar.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Ek Sonlandırma Konuları](../cpp/additional-termination-considerations.md)
+
+Çağırma [iptal](../c-runtime-library/reference/abort.md) işlevi hemen sonlandırılmasına neden olur. Başlatılan genel statik nesneler için normal yıkım işlemini atlar. `atexit` işlevi kullanarak belirtilen herhangi bir özel işlemi de atlar.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Ek Sonlandırma Konuları](../cpp/additional-termination-considerations.md)

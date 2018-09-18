@@ -16,38 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0f88e656b0d63b6a7a4d60ace2f4cd5e2347d188
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7585a75ebe9733c228756e92d8e5ae57699aca27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250293"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088585"
 ---
 # <a name="compiler-error-c3536"></a>Derleyici Hatası C3536
-'simgesi': başlatılmadan kullanılamaz  
-  
- Belirtilen simge başlatılmadan kullanılamaz. Uygulamada, bu değişken kendisini başlatmak için kullanılamaz anlamına gelir.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Bir değişken kendisiyle başlatma değil.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte, her bir değişken kendisiyle başlatılmış olduğundan C3536 verir.  
-  
-```  
-// C3536.cpp  
-// Compile with /Zc:auto  
-int main()  
-{  
-   auto a = a;     //C3536  
-   auto b = &b;    //C3536  
-   auto c = c + 1; //C3536  
-   auto* d = &d;   //C3536  
-   auto& e = e;    //C3536  
-   return 0;  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)
+
+'symbol': başlatılmadan önce kullanılamaz
+
+Belirtilen sembol başlatılmadan önce kullanılamaz. Uygulamada, kendisini başlatmak için bir değişken kullanılamaz anlamına gelir.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Değişkeninin kendisiyle başlatmayın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, her bir değişken kendisi ile başlatılmış olduğundan C3536 verir.
+
+```
+// C3536.cpp
+// Compile with /Zc:auto
+int main()
+{
+   auto a = a;     //C3536
+   auto b = &b;    //C3536
+   auto c = c + 1; //C3536
+   auto* d = &d;   //C3536
+   auto& e = e;    //C3536
+   return 0;
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto Anahtar Sözcüğü](../../cpp/auto-keyword.md)

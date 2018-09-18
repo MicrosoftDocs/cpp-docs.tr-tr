@@ -15,27 +15,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fa7b9323630307aaf959cd55267a918bbd628bc4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f9a301d6e8b2c26d5be7c4234550ba4af7eefd3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33097006"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097912"
 ---
 # <a name="creating-an-ole-db-consumer-using-a-wizard"></a>Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma
-Bu yordam bir OLE DB Şablonları tüketicisi oluşturmak ve almak ve bir veritabanı tablosundaki verileri görüntülemek için konsol uygulaması ana kodunu değiştirmek için ATL Proje Sihirbazı'nı ve ATL OLE DB Tüketici Sihirbazı'nı nasıl kullanabileceğinizi gösterir.  
+
+Bu yordam bir OLE DB Şablonları tüketicisi oluşturmak ve ardından almak ve bir veritabanı tablosundan verileri görüntülemek için konsol uygulamasının ana kod değiştirmek için ATL projesi Sihirbazı'nı ve ATL OLE DB Tüketicisi Sihirbazı'nı nasıl kullanabileceğinizi gösterir.  
   
- Son iki bölüm OLE DB Tüketici Sihirbazı tarafından oluşturulan kodu açıklanmaktadır.  
+OLE DB Tüketici Sihirbazı tarafından oluşturulan kodu son iki bölüm açıklanmaktadır.  
   
- Bu bölüm aşağıdaki konuları içerir:  
+Bu bölümde aşağıdaki konuları içerir:  
   
--   [Basit Tüketici Oluşturma](../../data/oledb/creating-a-simple-consumer.md)  
+- [Basit Tüketici Oluşturma](../../data/oledb/creating-a-simple-consumer.md)  
   
--   [Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md)  
+- [Basit Tüketici Uygulama](../../data/oledb/implementing-a-simple-consumer.md)  
   
--   [Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar](../../data/oledb/consumer-wizard-generated-classes.md)  
+- [Tüketici Sihirbazı Tarafından Oluşturulan Sınıflar](../../data/oledb/consumer-wizard-generated-classes.md)  
   
--   [Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler](../../data/oledb/consumer-wizard-generated-methods.md)  
+- [Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler](../../data/oledb/consumer-wizard-generated-methods.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)
+
+[OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer.md)

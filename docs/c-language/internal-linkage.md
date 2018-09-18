@@ -15,17 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b5703ca23a30cdb1d080e1dc379dabfc6c0df1f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 09b5a02b7892bff0233e37bbd63020a4d2904ec3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384001"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094214"
 ---
 # <a name="internal-linkage"></a>İç Bağlantı
-Bir nesne veya işlevi için bir dosya kapsamı tanımlayıcı bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* **statik**, iç bağlantı tanımlayıcısı vardır. Aksi takdirde, tanımlayıcının dış bağlantısı vardır. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* nonterminal.  
-  
- Bir çeviri birimi içinde iç bağlantı içeren bir tanımlayıcının her örneği aynı tanımlayıcı veya işlevi gösterir. Dahili olarak bağlantılı tanımlayıcılar bir çeviri birimi için benzersizdir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)
+
+Bir nesne veya işlevi için bir dosya kapsam tanımlayıcısının bildirimi içeriyorsa *depolama sınıfı tanımlayıcısı* **statik**, tanımlayıcının iç bağlantısı vardır. Aksi takdirde, tanımlayıcının dış bağlantısı vardır. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) bir irdelemesi *depolama sınıfı tanımlayıcısı* bildirimlere.
+
+Bir çeviri birimi içinde iç bağlantı içeren bir tanımlayıcının her örneği aynı tanımlayıcı veya işlevi gösterir. Dahili olarak bağlantılı tanımlayıcılar bir çeviri birimi için benzersizdir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Bağlantıyı Belirtmek için extern Kullanma](../cpp/using-extern-to-specify-linkage.md)

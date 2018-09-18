@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9ee1c3be0ecc06dd2ccfb28882b6dc99912d7e13
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d776adab3404bf1244c7365e905866b4d041fc00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762482"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091919"
 ---
 # <a name="array-declarations"></a>Dizi Bildirimleri
 
@@ -48,9 +48,9 @@ Bir "dizi bildirimi" dizi adları ve, öğelerinin türünü belirtir. Dizideki 
 
 Çünkü *sabit-ifade* söz dizimine sahip iki forms isteğe bağlıdır:
 
--   İlk form, bir dizi değişkenini tanımlar. *Sabit-ifade* köşeli ayraçlar içindeki bağımsız değişken dizideki öğelerin sayısını belirtir. *Sabit-ifade*, varsa, integral türü ve sıfırdan büyük bir değer olmalıdır. Her öğe tarafından verilen türünde *tür tanımlayıcısı*, dışında herhangi bir tür olabilen `void`. Bir dizi öğesine bir işlev türü olamaz.
+- İlk form, bir dizi değişkenini tanımlar. *Sabit-ifade* köşeli ayraçlar içindeki bağımsız değişken dizideki öğelerin sayısını belirtir. *Sabit-ifade*, varsa, integral türü ve sıfırdan büyük bir değer olmalıdır. Her öğe tarafından verilen türünde *tür tanımlayıcısı*, dışında herhangi bir tür olabilen `void`. Bir dizi öğesine bir işlev türü olamaz.
 
--   İkinci form, başka yerde tanımlanmış bir değişken bildirir. Bunu atlar *sabit-ifade* köşeli ayraçlar, ancak ayraçlar bağımsız değişken. Yalnızca, daha önce bir parametre olarak bildirilen dizi başlatıldı veya başka bir diziye bir başvuru açıkça tanımlanmış olarak bildirilmiş varsa bu formu kullanabilir programı.
+- İkinci form, başka yerde tanımlanmış bir değişken bildirir. Bunu atlar *sabit-ifade* köşeli ayraçlar, ancak ayraçlar bağımsız değişken. Yalnızca, daha önce bir parametre olarak bildirilen dizi başlatıldı veya başka bir diziye bir başvuru açıkça tanımlanmış olarak bildirilmiş varsa bu formu kullanabilir programı.
 
 Her iki formlarında *doğrudan bildirimci* can ve değişken adları değişkenin türünü değiştirin. Köşeli ayraçlar (**[]**) aşağıdaki *doğrudan bildirimci* bildirimci bir dizi türü için değiştirin.
 
@@ -75,6 +75,7 @@ char A[2][3];
 Bir dizinin tek bir öğesine başvurmak için bir alt simge ifadesi açıklandığı kullanın [sonek işleçleri](../c-language/postfix-operators.md).
 
 ## <a name="examples"></a>Örnekler
+
 Bu örneklerde, dizi bildirimleri gösterilmektedir:
 
 ```C

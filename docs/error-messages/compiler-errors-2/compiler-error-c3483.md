@@ -16,34 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e2605674ff701f70f7be6ea1b4158c9f8f0c6ad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: decc04f25689b24c560f59a71fd22a9708754352
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258743"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091692"
 ---
 # <a name="compiler-error-c3483"></a>Derleyici Hatası C3483
-'var' zaten lambda yakalama listenin bir parçasıdır  
-  
- Lambda ifadesi birden fazla kez yakalama listesine aynı değişken geçirildi.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Tüm ek örneklerini değişkeni yakalama listesinden kaldırır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3483 oluşturur çünkü değişkeni `n` lambda ifadesi yakalama listesinde birden fazla kez görüntülenir:  
-  
-```  
-// C3483.cpp  
-  
-int main()  
-{  
-   int m = 6, n = 5;  
-   [m,n,n] { return n + m; }(); // C3483  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'var' zaten lambda yakalama listesinin bir parçasıdır
+
+Birden fazla kez bir lambda ifadesinin yakalama listeye'de aynı değişken geçirildi.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Tüm ek örneklerini değişkeni yakalama listeden kaldırın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek olduğundan C3483 oluşturur değişkeni `n` lambda ifadesinin yakalama listesinde birden fazla kez görüntülenir:
+
+```
+// C3483.cpp
+
+int main()
+{
+   int m = 6, n = 5;
+   [m,n,n] { return n + m; }(); // C3483
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

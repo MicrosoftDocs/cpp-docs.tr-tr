@@ -17,69 +17,73 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff47c9a1b5aed197381a0d3ab0f24456fe75bad4
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 28e5d247c866247b42da8937894fed878985be44
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405155"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090099"
 ---
 # <a name="lvalue-reference-declarator-amp"></a>Lvalue başvuru Bildirimcisi: &amp;
-Bir nesnenin adresini tutar ancak sözdizimsel olarak bir nesne gibi davranır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-type-id & cast-expression  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir lvalue başvurusu bir nesnenin başka bir ad olarak düşünebilirsiniz. İsteğe bağlı bir liste belirleyicilerinin bir başvuru bildirimcisi tarafından izlenen bir lvalue başvurusu bildirimi oluşur. Bir başvuru başlatılmalıdır ve değiştirilemez.  
-  
- Herhangi bir nesnenin adresini verilen işaretçi türüne dönüştürülebilir benzer bir başvuru türüne de dönüştürülebilir. Örneğin, tüm nesne adresini türüne dönüştürülebilir `char *` türüne de dönüştürülebilir `char &`.  
-  
- Başvuru bildirimleri kullanımı ile karıştırmayın [address-of işleci](../cpp/address-of-operator-amp.md). Zaman `&` *tanımlayıcı* gibi bir tür tarafından öncesinde **int** veya **char**, *tanımlayıcı* bir başvuru olarak bildirilir türü. Zaman `&` *tanımlayıcı* değil öncesinde bir tarafından kullanım, address-of işleci türüdür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, bildirerek başvuru bildirimcisi gösterir bir `Person` nesne ve o nesnenin bir başvuru. Çünkü `rFriend` bir başvurudur `myFriend`, güncelleştirme ya da değişken aynı nesneye değiştirir.  
-  
-```cpp 
-// reference_declarator.cpp  
-// compile with: /EHsc  
-// Demonstrates the reference declarator.  
-#include <iostream>  
-using namespace std;  
-  
-struct Person  
-{  
-    char* Name;  
-    short Age;  
-};  
-  
-int main()  
-{  
-   // Declare a Person object.  
-   Person myFriend;  
-  
-   // Declare a reference to the Person object.  
-   Person& rFriend = myFriend;  
-  
-   // Set the fields of the Person object.  
-   // Updating either variable changes the same object.  
-   myFriend.Name = "Bill";  
-   rFriend.Age = 40;  
-  
-   // Print the fields of the Person object to the console.  
-   cout << rFriend.Name << " is " << myFriend.Age << endl;  
-}  
-```  
-  
-```Output  
-Bill is 40  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Başvuruları](../cpp/references-cpp.md)   
- [Başvuru türü işlev bağımsız değişkenleri](../cpp/reference-type-function-arguments.md)   
- [Başvuru türü işlev dönüşleri](../cpp/reference-type-function-returns.md)   
- [İşaretçi Başvuruları](../cpp/references-to-pointers.md)
+
+Bir nesnenin adresini tutar ancak sözdizimsel olarak bir nesne gibi davranır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+type-id & cast-expression
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir lvalue başvurusu bir nesnenin başka bir ad olarak düşünebilirsiniz. İsteğe bağlı bir liste belirleyicilerinin bir başvuru bildirimcisi tarafından izlenen bir lvalue başvurusu bildirimi oluşur. Bir başvuru başlatılmalıdır ve değiştirilemez.
+
+Herhangi bir nesnenin adresini verilen işaretçi türüne dönüştürülebilir benzer bir başvuru türüne de dönüştürülebilir. Örneğin, tüm nesne adresini türüne dönüştürülebilir `char *` türüne de dönüştürülebilir `char &`.
+
+Başvuru bildirimleri kullanımı ile karıştırmayın [address-of işleci](../cpp/address-of-operator-amp.md). Zaman `&` *tanımlayıcı* gibi bir tür tarafından öncesinde **int** veya **char**, *tanımlayıcı* bir başvuru olarak bildirilir türü. Zaman `&` *tanımlayıcı* değil öncesinde bir tarafından kullanım, address-of işleci türüdür.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, bildirerek başvuru bildirimcisi gösterir bir `Person` nesne ve o nesnenin bir başvuru. Çünkü `rFriend` bir başvurudur `myFriend`, güncelleştirme ya da değişken aynı nesneye değiştirir.
+
+```cpp
+// reference_declarator.cpp
+// compile with: /EHsc
+// Demonstrates the reference declarator.
+#include <iostream>
+using namespace std;
+
+struct Person
+{
+    char* Name;
+    short Age;
+};
+
+int main()
+{
+   // Declare a Person object.
+   Person myFriend;
+
+   // Declare a reference to the Person object.
+   Person& rFriend = myFriend;
+
+   // Set the fields of the Person object.
+   // Updating either variable changes the same object.
+   myFriend.Name = "Bill";
+   rFriend.Age = 40;
+
+   // Print the fields of the Person object to the console.
+   cout << rFriend.Name << " is " << myFriend.Age << endl;
+}
+```
+
+```Output
+Bill is 40
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Başvurular](../cpp/references-cpp.md)<br/>
+[Başvuru Türü İşlev Bağımsız Değişkenleri](../cpp/reference-type-function-arguments.md)<br/>
+[Başvuru Türü İşlev Dönüşleri](../cpp/reference-type-function-returns.md)<br/>
+[İşaretçi Başvuruları](../cpp/references-to-pointers.md)

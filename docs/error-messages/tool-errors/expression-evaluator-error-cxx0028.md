@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffb894a9960e74fe2b6c2569aab01b66a0de077e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 023c43f33491d17d4500b8d7e668ed9bce5013bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298843"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087453"
 ---
 # <a name="expression-evaluator-error-cxx0028"></a>İfade Değerlendirici Hatası CXX0028
-struct/union ögesi  
-  
- Bir ifade biçimi 'Struct.Member' veya 'pStruct -> üye' belirtildi, ancak \<üye > yapısının bir öğe değil.  
-  
- İfadesi parantez içine alınmış doğru olmayabilir.  
-  
- Bu hata için CAN0028 aynıdır.
+
+Yapı/birleşim öğesi
+
+Form 'Struct.Member' veya 'üye pStruct ->' bir ifade belirtildi, ancak \<üye > yapısının bir öğe değil.
+
+İfadeyi parantez içine alınmış doğru olmayabilir.
+
+Bu hata için CAN0028 aynıdır.

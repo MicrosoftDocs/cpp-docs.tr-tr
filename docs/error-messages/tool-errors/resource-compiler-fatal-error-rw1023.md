@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff2feab76fb4ade2832986ccc82cb98418fee2c1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 298cde9d9f44ace74e7e46080dcbeeff72b8bb33
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320391"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093499"
 ---
 # <a name="resource-compiler-fatal-error-rw1023"></a>Kaynak Derleyicisi Önemli Hatası RW1023
-Tam sürücü dosyası yazma g/ç hatası  
-  
- Boş alan, en az iki kez oluşturmakta olduğunuz yürütülebilir dosyasının boyutu eşit olmalıdır.
+
+Tam sürücü dosyası yazma g/ç hatası
+
+Boş alan en az iki kere oluşturmakta olduğunuz yürütülebilir dosyasının boyutu eşit olmalıdır.

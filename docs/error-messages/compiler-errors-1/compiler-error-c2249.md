@@ -16,47 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6a4d5ab3de2a3bd04ba2a2bb9c90ebe8f04b3e67
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb9c73ca311b767d9fdb50dd55a832cf8fcc2a4b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171457"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089898"
 ---
 # <a name="compiler-error-c2249"></a>Derleyici Hatası C2249
-'member': erişim üyesine erişilebilir yol bildirilen sanal taban 'sınıfı'  
-  
- `member` Ortak değil devralınan `virtual` temel sınıf veya yapı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2249 oluşturur.  
-  
-```  
-// C2249.cpp  
-class A {  
-private:  
-   void privFunc( void ) {};  
-public:  
-   void pubFunc( void ) {};  
-};  
-  
-class B : virtual public A {} b;  
-  
-int main() {  
-   b.privFunc();    // C2249, private member of A  
-   b.pubFunc();    // OK  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Başka bir akışa C++ Standart Kitaplığı'ndan bir akış atamak çalışırsanız C2249 da oluşabilir.  Aşağıdaki örnek C2249 oluşturur.  
-  
-```  
-// C2249_2.cpp  
-#include <iostream>  
-using namespace std;  
-int main() {  
-   cout = cerr;   // C2249  
-   #define cout cerr;   // OK  
-}  
+
+'member': erişim üye erişilebilir yol yok bildirilen sanal temel 'class'
+
+`member` Bir özel devralınan `virtual` taban sınıf veya yapı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2249 oluşturur.
+
+```
+// C2249.cpp
+class A {
+private:
+   void privFunc( void ) {};
+public:
+   void pubFunc( void ) {};
+};
+
+class B : virtual public A {} b;
+
+int main() {
+   b.privFunc();    // C2249, private member of A
+   b.pubFunc();    // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+C++ Standart Kitaplığı'ndan bir akışa başka bir akışa atamak çalışırsanız C2249 da meydana gelebilir.  Aşağıdaki örnek, C2249 oluşturur.
+
+```
+// C2249_2.cpp
+#include <iostream>
+using namespace std;
+int main() {
+   cout = cerr;   // C2249
+   #define cout cerr;   // OK
+}
 ```

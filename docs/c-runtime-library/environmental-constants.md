@@ -15,26 +15,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7a6189a114091046936ac088ab5b2d4e5b07208
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: cb8f56aa6ea0a6847d7822e8a376d061b47e2328
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388516"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090045"
 ---
 # <a name="environmental-constants"></a>Ortam Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <stdlib.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabit ortam dizelerini tanımlar.  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_MAX_ENV`|Bir ortam dize boyutu en çok dize.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <stdlib.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabit dizeler için ortam uzunluğu tanımlar.
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_MAX_ENV`|Bir ortam dize boyutu en fazla dize.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Sabitler](../c-runtime-library/global-constants.md)

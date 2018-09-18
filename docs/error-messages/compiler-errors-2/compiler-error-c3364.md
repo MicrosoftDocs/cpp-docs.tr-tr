@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 337bcf71e89dc1ff3e434eba6645f76df1022a11
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65ac2c54ccd0fe4a086cfcc79cf4dba269876ad3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257853"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096255"
 ---
 # <a name="compiler-error-c3364"></a>Derleyici Hatası C3364
-'temsilci': temsilci Oluşturucu: yönetilen sınıfının üye işlevini veya genel işlev işaretçisi bağımsız değişkeni olmalıdır.  
-  
- Öğesinin ikinci parametresi, temsilcinin Oluşturucusu üye işlevi adresini veya herhangi bir sınıfın statik üye işlevinin adresini alır. Her ikisi de basit adresleri olarak kabul edilir.  
-  
- Aşağıdaki örnek C3364 oluşturur:  
-  
-```  
-// C3364_2.cpp  
-// compile with: /clr  
-  
-delegate int D( int, int );  
-  
-ref class C {  
-public:  
-   int mf( int, int ) {  
-      return 1;  
-   }  
-};  
-  
-int main() {  
-   C^ pC = gcnew C;  
-   System::Delegate^ pD = gcnew D( pC,pC->mf( 1, 2 ) ); // C3364  
-  
-   // try the following line instead  
-   // System::Delegate^ pD = gcnew D(pC, &C::mf);  
-}  
-```  
+
+'temsilci': temsilci Oluşturucu: bağımsız değişken yönetilen sınıfının üye işlevinde veya genel işlev işaretçisi olması gerekir
+
+Temsilcinin oluşturucusunun ikinci parametresi, bir üye işlevin adresini veya herhangi bir sınıfın bir statik üye işlevin adresini alır. Her ikisi de basit adresleri olarak kabul edilir.
+
+Aşağıdaki örnek, C3364 oluşturur:
+
+```
+// C3364_2.cpp
+// compile with: /clr
+
+delegate int D( int, int );
+
+ref class C {
+public:
+   int mf( int, int ) {
+      return 1;
+   }
+};
+
+int main() {
+   C^ pC = gcnew C;
+   System::Delegate^ pD = gcnew D( pC,pC->mf( 1, 2 ) ); // C3364
+
+   // try the following line instead
+   // System::Delegate^ pD = gcnew D(pC, &C::mf);
+}
+```

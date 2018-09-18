@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32d5510c0db76cc688c850538d9bd5f75c653151
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 34b5bde82eff004628073f1ec6d8b372bd02afc0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296100"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095454"
 ---
 # <a name="expression-evaluator-error-cxx0050"></a>İfade Değerlendirici Hatası CXX0050
-sol tarafı:: struct/sınıfı/birleşimi olmalıdır  
-  
- Kapsam çözümü işleci sol tarafındaki simgesi (`::`) bir sınıf, yapı veya birleşim değildi.  
-  
- Bu hata için CAN0050 aynıdır.
+
+sol tarafı:: sınıf/yapı/birleşim olmalıdır
+
+Kapsam çözümleme işlecinin sol tarafındaki simge (`::`) bir sınıf, yapı veya birleşim değildi.
+
+Bu hata için CAN0050 aynıdır.

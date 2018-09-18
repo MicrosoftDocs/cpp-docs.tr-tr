@@ -310,20 +310,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 65a6eb5fe80c25912c76e3446efb1ee00413fff1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14529f9246572299fc6629ec13ff4eab837bb5fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171278"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095852"
 ---
 # <a name="cc-build-errors"></a>C/C++ Derleme Hataları
 
-Bu bölümdeki makaleleri belgelerin tanılama hata ve derleme araçları tarafından oluşturulan uyarı iletileri açıklanmaktadır.
+Belgelerin bu bölümdeki makaleleri tanılama hata ve uyarı iletilerini, derleme araçlarının ürettiği açıklanmaktadır.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ oluşturma başvurusu](../../build/reference/c-cpp-building-reference.md)   
+[C/C++ Derleme Başvurusu](../../build/reference/c-cpp-building-reference.md)<br/>
 [Visual Studio’da hata ayıklama](/visualstudio/debugger/debugging-in-visual-studio)

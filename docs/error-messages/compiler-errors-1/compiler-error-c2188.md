@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6f9f796da1256710ed08cade743e88317b6b8d42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bfbec3a86c385a5ae6af5a53561736b5a44ad2cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089703"
 ---
 # <a name="compiler-error-c2188"></a>Derleyici Hatası C2188
-'numara': geniş karakter için çok büyük  
-  
- Sayısını joker karakter türü için boyut sınırını aşıyor. Daha büyük bir türü seçin.
+
+'number': geniş karakter için çok büyük
+
+Geniş karakter türü için boyut sınırını aşıyor. Daha büyük bir türü seçin.

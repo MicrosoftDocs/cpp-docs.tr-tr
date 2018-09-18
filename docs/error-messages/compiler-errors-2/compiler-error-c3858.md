@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 19895f08f06dbbce998350c89a7accb9251b9588
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3908dbaca4384b0d76b2554593dc51f4a795a174
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268950"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094669"
 ---
 # <a name="compiler-error-c3858"></a>Derleyici Hatası C3858
-'type': geçerli kapsamda yeniden bildirilen olamaz  
-  
- Tür iki kez aynı kapsamda bildirilemez.  
-  
- Aşağıdaki örnek C3858 oluşturur:  
-  
-```  
-// C3858.cpp  
-// compile with: /LD  
-template <class T>  
-struct Outer  
-{  
-   struct Inner;  
-};  
-  
-template <class T>  
-struct Outer<T>::Inner;   // C3858  
-// try the following line instead  
-// struct Outer<T>::Inner{};  
+
+'type': geçerli kapsamda bildirilemez
+
+Tür iki kez aynı kapsamda bildirilemez.
+
+Aşağıdaki örnek, C3858 oluşturur:
+
+```
+// C3858.cpp
+// compile with: /LD
+template <class T>
+struct Outer
+{
+   struct Inner;
+};
+
+template <class T>
+struct Outer<T>::Inner;   // C3858
+// try the following line instead
+// struct Outer<T>::Inner{};
 ```

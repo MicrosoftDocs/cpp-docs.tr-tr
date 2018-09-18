@@ -22,23 +22,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d75dbc61ae2c9b0c30217a782519ba4e826d2b98
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 60487a502fd304be39f973659cb5fd3432ec7a1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390784"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096801"
 ---
 # <a name="freeentry-usedentry"></a>_FREEENTRY, _USEDENTRY
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <malloc.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabitler tarafından atanan değerlerini temsil eden `_heapwalk` yordamları için **_useflag** öğesinin **_heapınfo** yapısı. Bunlar öbek girişinin durumunu gösterir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <malloc.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabitler tarafından atanan değerleri temsil eden `_heapwalk` yordamlarını **_useflag** öğesinin **_heapınfo** yapısı. Bunlar, yığın girişinin durumunu gösterir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

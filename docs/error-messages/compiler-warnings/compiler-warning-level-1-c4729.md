@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02ccbb80a44123498a231c1909c9c2c6fca72a24
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7d1f5b4fe452937ce74e56886a5214ff92f44af7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281748"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096086"
 ---
 # <a name="compiler-warning-level-1-c4729"></a>Derleyici Uyarısı (düzey 1) C4729
-Uyarılar işlevi akış grafiği için çok büyük dayalı  
-  
- Bir işlev güvenilir bir uyarı üretir durumlar için denetimi ile derlenmesi için çok büyük olduğunda bu uyarı oluşturulur. Bu uyarı Only'dir oluşturulan [/Od](../../build/reference/od-disable-debug.md) derleyici seçeneği kullanılır.  
-  
- Bu uyarıyı çözümlemek için daha küçük işlevlerini işlevi bölün.
+
+Akış grafı için çok büyük işlevi, uyarı tabanlı
+
+Bir işlev ile güvenilir bir uyarı üretir durumlar için denetimi derlenmesi için çok büyük olduğunda bu uyarı oluşturulur. Bu yalnızca bir uyarıdır oluşturulan [/Od](../../build/reference/od-disable-debug.md) derleyici seçeneği kullanılır.
+
+Bu uyarıyı çözmek için işlev daha küçük işlevlere bölün.

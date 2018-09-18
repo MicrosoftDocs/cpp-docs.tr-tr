@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 080a7b9f5da71535f8b141555ec1890a521fe715
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 69b6a7b94e993641452154ede11d65929424df5e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761988"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095761"
 ---
 # <a name="cdefaultchartraits-class"></a>CDefaultCharTraits sınıfı
 
@@ -33,13 +33,13 @@ Bu sınıf, büyük ve küçük arasındaki karakter dönüştürme için iki st
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
+template <typename T>
 class CDefaultCharTraits
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -64,13 +64,13 @@ Bu sınıf sınıf tarafından kullanılan işlevler sağlar [Cstringelementtrai
 Bir karakteri küçük harfe dönüştürmek için bu işlevi çağırın.
 
 ```
-static wchar_t CharToLower(wchar_t x);  
+static wchar_t CharToLower(wchar_t x);
 static char CharToLower(char x);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Küçük harfe dönüştürülecek karakter.
 
 ### <a name="example"></a>Örnek
@@ -82,13 +82,13 @@ Küçük harfe dönüştürülecek karakter.
 Bir karakteri büyük harfe dönüştürmek için bu işlevi çağırın.
 
 ```
-static wchar_t CharToUpper(wchar_t x);  
+static wchar_t CharToUpper(wchar_t x);
 static char CharToUpper(char x);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 Büyük harfe dönüştürülecek karakter.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

@@ -39,12 +39,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 54677e573f36fca65cc46dc5207e8812e4fa4fa6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d2045a6c14a37d270d895a5eeb4fa455711e7354
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097685"
 ---
 # <a name="ccombstr-class"></a>CComBSTR sınıfı
 
@@ -141,16 +141,16 @@ HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` eklenecek nesne.
 
-*ch*  
+*ch*<br/>
 [in] Eklenecek bir karakter.
 
-*lpsz*  
+*lpsz*<br/>
 [in] Eklenecek sıfır ile sonlandırılmış dize. Bir Unicode dize LPCOLESTR aşırı yükleme ya da bir ANSI dizesine LPCSTR sürümü aracılığıyla aracılığıyla geçirebilirsiniz.
 
-*nLen*  
+*nLen*<br/>
 [in] Karakter sayısı *lpsz* eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -175,7 +175,7 @@ HRESULT AppendBSTR(BSTR p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 [in] Eklenecek BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -200,10 +200,10 @@ HRESULT AppendBytes(const char* lpsz, int nLen) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpsz*  
+*lpsz*<br/>
 [in] Eklenecek Bayt dizisine bir işaretçi.
 
-*p*  
+*p*<br/>
 [in] Eklenecek bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -224,7 +224,7 @@ HRESULT ArrayToBSTR(const SAFEARRAY* pSrc) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pSrc*  
+*pSrc*<br/>
 [in] Dizeyi oluşturmak için kullanılan öğeleri içeren SAFEARRAY'i.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -241,7 +241,7 @@ HRESULT AssignBSTR(const BSTR bstrSrc) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] Geçerli atamak için bir BSTR `CComBSTR` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -258,7 +258,7 @@ void Attach(BSTR src) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*src*  
+*src*<br/>
 [in] Nesnesine eklenecek BSTR.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -282,7 +282,7 @@ HRESULT BSTRToArray(LPSAFEARRAY* ppArray) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ppArray*  
+*ppArray*<br/>
 [out] İşlevinin sonuçlarını tutmak için kullanılan SAFEARRAY'i işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -315,31 +315,31 @@ Oluşturucu. Varsayılan Oluşturucu kümeleri [m_str](#m_str) üyesi null.
 
 ```
 CComBSTR() throw();
-CComBSTR(const CComBSTR& src);  
-CComBSTR(REFGUID  guid);  
-CComBSTR(int nSize);  
-CComBSTR(int nSize, LPCOLESTR sz);  
-CComBSTR(int nSize, LPCSTR sz);  
-CComBSTR(LPCOLESTR pSrc);  
-CComBSTR(LPCSTR pSrc);  
+CComBSTR(const CComBSTR& src);
+CComBSTR(REFGUID  guid);
+CComBSTR(int nSize);
+CComBSTR(int nSize, LPCOLESTR sz);
+CComBSTR(int nSize, LPCSTR sz);
+CComBSTR(LPCOLESTR pSrc);
+CComBSTR(LPCSTR pSrc);
 CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nSize*  
+*nSize*<br/>
 [in] Kopyalanacak karakter sayısını *sz* veya ilk boyutu için karakter cinsinden `CComBSTR`.
 
-*SZ*  
+*SZ*<br/>
 [in] Kopyalamak için bir dize. Unicode sürümü bir LPCOLESTR belirtir. ANSI sürümü bir LPCSTR belirtir.
 
-*pSrc*  
+*pSrc*<br/>
 [in] Kopyalamak için bir dize. Unicode sürümü bir LPCOLESTR belirtir. ANSI sürümü bir LPCSTR belirtir.
 
-*src*  
+*src*<br/>
 [in] A `CComBSTR` nesne.
 
-*GUID*  
+*GUID*<br/>
 [in] Bir başvuru bir `GUID` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -396,10 +396,10 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pbstr*  
+*pbstr*<br/>
 [out] Burada bu yöntem tarafından ayrılan dize döndürecek şekilde BSTR adresi.
 
-*pvarDest*  
+*pvarDest*<br/>
 [out] Bir değişken, bu yöntem tarafından ayrılan dize döndürecek şekilde adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -499,7 +499,7 @@ BSTR m_str;
 
 Yayınları bir `CComBSTR` BSTR için nesne.
 
-```  
+```
 operator BSTR() const throw();
 ```
 
@@ -544,13 +544,13 @@ bool operator!= (int nNull) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` nesne.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] Sıfır ile sonlandırılmış dize.
 
-*nNull*  
+*nNull*<br/>
 [in] NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -586,16 +586,16 @@ Bu onay, varsayılan olarak etkin değildir. Bu onay etkinleştirmek için ATL_C
 İçin bir dize ekler `CComBSTR` nesne.
 
 ```
-CComBSTR& operator+= (const CComBSTR& bstrSrc);  
+CComBSTR& operator+= (const CComBSTR& bstrSrc);
 CComBSTR& operator+= (const LPCOLESTR pszSrc);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` eklenecek nesne.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] Eklenecek sıfır ile sonlandırılmış dize.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -629,8 +629,8 @@ Karşılaştırma, kullanıcının varsayılan yerel ayar kullanılarak gerçekl
 Kümeleri [m_str](#m_str) üyeye bir kopyası *pSrc* veya BSTR üyesi bir kopyasını *src*. Taşıma atama işlecini taşır `src` kopyalayarak olmadan.
 
 ```
-CComBSTR& operator= (const CComBSTR& src);  
-CComBSTR& operator= (LPCOLESTR pSrc);  
+CComBSTR& operator= (const CComBSTR& src);
+CComBSTR& operator= (LPCOLESTR pSrc);
 CComBSTR& operator= (LPCSTR pSrc);
 CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
@@ -656,13 +656,13 @@ bool operator== (int nNull) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] A `CComBSTR` nesne.
 
-*pszSrc*  
+*pszSrc*<br/>
 [in] Sıfır ile sonlandırılmış dize.
 
-*nNull*  
+*nNull*<br/>
 [in] NULL olmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -699,7 +699,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pStream*  
+*pStream*<br/>
 [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) akış verilerini içeren bir arabirimdeki.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -756,7 +756,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pStream*  
+*pStream*<br/>
 [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) arabirimdeki bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -773,5 +773,5 @@ BSTR içeriğinden stream kullanarak yeniden oluşturabilirsiniz [ReadFromStream
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [ATL ve MFC dize dönüşüm makroları](string-conversion-macros.md)

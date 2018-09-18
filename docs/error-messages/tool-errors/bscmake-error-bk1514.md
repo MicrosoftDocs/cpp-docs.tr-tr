@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 23f1c72760f0597709de430588052445366e434d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20f66c5c48547e92aef00568d5488a6293303be1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302282"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094721"
 ---
 # <a name="bscmake-error-bk1514"></a>BSCMAKE Hatası BK1514
-Tüm. SBR dosyaları kesildi, hiç dosya bulunamadı  
-  
- Bir güncelleştirme için belirtilen .sbr dosyaları hiçbiri özgün gözatma bilgileri (.bsc) dosyası parçası olan. Bu hatanın nedeni .sbr dosyaları adlarını bulmak için okuma [BK4502](../../error-messages/tool-errors/bscmake-warning-bk4502.md) önüne koyun uyarıları.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  .SBR veya .bsc için belirtilen yanlış bir dosya adı.  
-  
-2.  Bozuk .bsc dosyası BSCMAKE yeniden oluşturmak gereklidir.
+
+Tüm. SBR dosyaları kesildi, hiç dosya bulunamadı
+
+Bir güncelleştirme için belirtilen .sbr dosyaları hiçbiri özgün gözatma bilgisi (.bsc) dosyası bir parçası olan. Bu hatanın nedeni .sbr dosyaları adlarını bulmak için okuma [BK4502](../../error-messages/tool-errors/bscmake-warning-bk4502.md) önünde uyarıları.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. .SBR veya .bsc için belirtilen yanlış dosya adı.
+
+1. Bozuk .bsc dosyasını BSCMAKE yeniden oluşturmak gereklidir.

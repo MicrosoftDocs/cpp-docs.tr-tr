@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5573943fc2c274d48768933a634b2c052361a8f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4240bf2c553957e73d5ead0bdd03ea129450645b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332146"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093005"
 ---
 # <a name="nmake-fatal-error-u1064"></a>NMAKE Önemli Hatası U1064
-Derleme görevleri dosyası bulunamadı ve belirtilen hedef yok  
-  
- NMAKE komut satırı derleme görevleri dosyası ya da bir hedef belirtmedi ve geçerli dizin derleme görevleri dosyası adlı bir dosya içermiyordu.  
-  
- NMAKE derleme görevleri dosyası veya komut satırı hedef (ya da her ikisi de) gerektirir. Derleme görevleri dosyası NMAKE için kullanılabilir hale getirmek /F seçeneğini belirtin veya derleme görevleri dosyası geçerli dizinde adlı bir dosyaya yerleştirin. NMAKE derleme görevleri dosyası sağlanmazsa, bir çıkarım kuralı kullanarak bir komut satırı hedef oluşturabilirsiniz.
+
+Derleme görevleri dosyası bulunamadı ve hedef belirtilmedi
+
+NMAKE komut satırında derleme görevleri dosyası ya da bir hedef belirtilmedi ve geçerli dizine derleme görevleri dosyası adlı bir dosya içermiyor.
+
+NMAKE derleme görevleri dosyası veya komut satırı hedef (ya da her ikisi de) gerektirir. Derleme görevleri dosyası NMAKE için kullanılabilir hale getirmek için /F seçeneği belirtin veya derleme görevleri dosyası geçerli dizinde adlı bir dosya yerleştirmeniz. NMAKE derleme görevleri dosyası belirtilmezse, çıkarım kuralı kullanarak bir komut satırı hedef oluşturabilirsiniz.

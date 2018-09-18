@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d3d5b7a89a3725ae9dee2065bcd21d8f114ca00
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 03724e6f1ad0c85ad70e464786a7393b3f2f61e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323946"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46094994"
 ---
 # <a name="ltexceptiongt-visual-c"></a>&lt;özel durum&gt; (Visual C++)
-\<Özel durum > etiketi hangi özel durum belirtmenize olanak sağlar. Bu etiket için bir yöntem tanımını uygulanır.  
+\<Özel durum > etiketi hangi özel durumlar atılabilir belirtmenize olanak sağlar. Bu etiket, bir yöntem tanımına uygulanır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,20 +35,20 @@ ms.locfileid: "33323946"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `member`  
- Geçerli derleme ortamından kullanılabilir bir özel durum referansı. Ad arama kuralları kullanarak derleyici belirtilen özel durum var ve çevirir denetler `member` XML çıktısında kurallı öğesi adı.  Derleyici bulamadı, bir uyarı verir `member`.  
+*Üyesi*<br/>
+Geçerli derleme ortamdan kullanılabilir bir özel durum başvuru. Ad arama kurallarını kullanarak, derleyici belirtilen özel var ve çevirir denetler `member` kurallı öğesi adı ' % s'çıkış XML dosyası.  Değil bulamazsa, derleyici bir uyarı verir `member`.  
   
- Ad, tek veya çift tırnak işaretleri içine alın.  
+ Ad, tek veya çift tırnak içine alın.  
   
- Genel bir tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bkz >](../ide/see-visual-cpp.md).  
+ Genel tür cref başvuru oluşturma hakkında daha fazla bilgi için bkz: [ \<bakın >](../ide/see-visual-cpp.md).  
   
- `description`  
- Bir açıklama.  
+*Açıklaması*<br/>
+Bir açıklama.  
   
 ## <a name="remarks"></a>Açıklamalar  
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
- Visual C++ derleyicisi belge açıklamaları bir geçiş cref başvurularında çözümlemeye çalışır.  Bu nedenle, C++ arama kurallarını kullanarak, bir simge başvuru işaretlenir derleyici tarafından bulunmaması halinde olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
+ Visual C++ derleyicisi, belge yorumlarını bir geçiş cref başvuruları çözümlemek dener.  Bu nedenle, C++ arama kurallarını kullanarak, bir sembol başvurusu işaretlenir derleyici tarafından bulunamadı olarak çözümlenmemiş. Bkz: [ \<seealso >](../ide/seealso-visual-cpp.md) daha fazla bilgi için.  
   
 ## <a name="example"></a>Örnek  
   

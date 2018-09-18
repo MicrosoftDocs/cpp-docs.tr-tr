@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3814dacff2861bf78800adb8a019b696ce2756b7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ecbf2b415b93526fe856e21411431eb1f20b4c42
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752768"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089586"
 ---
 # <a name="ccomtearoffobject-class"></a>CComTearOffObject sınıfı
 
@@ -45,7 +45,7 @@ class CComTearOffObject : public Base
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 Bölünmüş sınıfınızı türetilen `CComTearOffObjectBase` ve desteklemek için etkinleştiriliyorken nesneyi istediğiniz arabirimleri.
 
 ATL iki aşamada etkinleştiriliyorken arabirimlerini uygular — `CComTearOffObjectBase` yöntemleri işleyen başvuru sayısı ve `QueryInterface`, ancak `CComTearOffObject` uygulayan [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iunknown).
@@ -123,7 +123,7 @@ CComTearOffObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*  
+*BD*<br/>
 [in] Bir işaretçiye dönüştürülür işaretçi bir `CComObject<Owner>` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -164,7 +164,7 @@ CComObject<Owner>* m_pOwner;
 
 ### <a name="parameters"></a>Parametreler
 
-*Sahibi*  
+*Sahibi*<br/>
 [in] Kendisi için bir bölünmüş uygulanan sınıfı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -181,10 +181,10 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabirim Laboratuvardaki.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -209,5 +209,5 @@ Hata ayıklama olmayan yapılarında, her zaman sıfır döndürür. Hata ayıkl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComCachedTearOffObject sınıfı](../../atl/reference/ccomcachedtearoffobject-class.md)   
+[CComCachedTearOffObject Sınıfı](../../atl/reference/ccomcachedtearoffobject-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

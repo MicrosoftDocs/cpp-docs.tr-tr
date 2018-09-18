@@ -27,55 +27,60 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 90c68ed56b52b57deb234717b3b95ec197d26318
-ms.sourcegitcommit: 6e3cf8df676d59119ce88bf5321d063cf479108c
+ms.openlocfilehash: 5f94d60d4c6e804a9bd27293bb0eff67b29a1e8a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/22/2018
-ms.locfileid: "34450940"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092069"
 ---
 # <a name="rtdynamiccast"></a>__RTDynamicCast
-Çalışma zamanı uygulaması [dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-PVOID __RTDynamicCast (  
-   PVOID inptr,   
-   LONG VfDelta,  
-   PVOID SrcType,  
-   PVOID TargetType,   
-   BOOL isReference  
-   ) throw(...)  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `inptr`  
- Çok biçimli nesnesine işaretçi.  
-  
- `VfDelta`  
- Nesnedeki sanal işlev işaretçisi uzaklığı.  
-  
- `SrcType`  
- Tarafından için statik nesne türünü işaret `inptr` parametresi.  
-  
- `TargetType`  
- Cast hedeflenen sonucu.  
-  
- `isReference`  
- `true` Giriş başvuru ise; `false` giriş işaretçi ise.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- İşaretçi başarılı olursa uygun alt nesnesine; Aksi takdirde, **NULL**.  
-  
-## <a name="exceptions"></a>Özel Durumlar  
- `bad_cast()` varsa girdisi `dynamic_cast<>` başvurudur ve dönüştürme başarısız.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Dönüştürür `inptr` türünde bir nesneye `TargetType`. Türü `inptr` bir işaretçi olmalıdır `TargetType` bir işaretçi ya da bir l-değeri ise `TargetType` başvurudur. `TargetType` bir işaretçi veya önceden tanımlanmış sınıf türü için bir başvuru ya da bir işaretçi void olması gerekir.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
+
+Çalışma zamanı uygulaması [dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+PVOID __RTDynamicCast (
+   PVOID inptr,
+   LONG VfDelta,
+   PVOID SrcType,
+   PVOID TargetType,
+   BOOL isReference
+   ) throw(...)
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*inptr*<br/>
+Çok biçimli bir nesne işaretçisi.
+
+*VfDelta*<br/>
+Nesnedeki sanal işlev işaretçisi uzaklığı.
+
+*SrcType*<br/>
+Statik nesne türü tarafından işaret edilen `inptr` parametresi.
+
+*TargetType*<br/>
+Hedeflenen atamanın sonucu.
+
+*IsReference*<br/>
+`true` Giriş bir başvuruysa; `false` Giriş bir işaretçi ise.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Başarılı olursa uygun alt nesneye işaretçi; Aksi takdirde, **NULL**.
+
+## <a name="exceptions"></a>Özel Durumlar
+
+`bad_cast()` Giriş `dynamic_cast<>` bir başvurudur ve dönüştürme başarısız.
+
+## <a name="remarks"></a>Açıklamalar
+
+Dönüştürür `inptr` türünde bir nesne için `TargetType`. Türünü `inptr` bir işaretçi olmalıdır `TargetType` bir işaretçi ya da bir l-değeri ise `TargetType` bir başvurudur. `TargetType` bir işaretçi veya önceden tanımlanmış sınıf türüne yapılan başvuru veya void bir işaretçi olması gerekir.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
 |__RTDynamicCast|rtti.h|

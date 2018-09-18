@@ -1,5 +1,5 @@
 ---
-title: Saklı yordamı birinden birden çok sonuç kümesi kullanma | Microsoft Docs
+title: Saklı yordamı bir birden çok sonuç kümesi kullanma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,25 +16,27 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6393901839e8450ebc45b11f1d4bd2250da2ca56
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3e75a100bb5b56b613419160a3ea063bce42bbdb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106316"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092329"
 ---
 # <a name="using-multiple-result-sets-from-one-stored-procedure"></a>Depolanmış Bir Yordamdan Birden Çok Sonuç Kümesi Kullanma
-Çoğu depolanmış yordam birden çok sonuç kümesi döndürür. Bir veya daha çok select deyimi bu tür bir saklı yordam genellikle bir içerir. Tüketici tüm sonuç kümelerini işlemek için bunu göz önüne almanız gerekir.  
+
+En saklı yordamlar, birden çok sonuç kümesi döndürür. Saklı bir yordam genellikle bir veya daha çok select deyimi. Tüketici bu tüm sonuç kümelerindeki işlemek için göz önünde bulundurmanız gerekir.  
   
 ### <a name="to-handle-multiple-result-sets"></a>Birden çok sonuç kümesini işlemek için  
   
-1.  Oluşturma bir `CCommand` ile sınıf `CMultipleResults` şablon bağımsız değişken olarak ve tercih ettiğiniz erişimcisi. Genellikle, dinamik ya da el ile erişimci budur. Başka bir tür erişimci kullanırsanız, her satır için çıktı sütunlarını belirlemek mümkün olmayabilir.  
+1. Oluşturma bir `CCommand` sınıfıyla `CMultipleResults` ile kendi tercih ettiğiniz ve şablon bağımsız değişken olarak. Genellikle, dinamik veya el ile erişimci budur. Başka türde bir erişimci kullanırsanız, her satır kümesi için çıkış sütunları belirlemek mümkün olmayabilir.  
   
-2.  Saklı yordam her zamanki gibi yürütün ve sütunları bağlayın (bkz [nasıl yedeklerim Fetch Data?](../../data/oledb/fetching-data.md)).  
+1. Saklı yordamı zamanki yürütmek ve sütunları bağlayın (bkz [nasıl yaparım veri getirme?](../../data/oledb/fetching-data.md)).  
   
-3.  Verileri kullanın.  
+1. Verileri kullanın.  
   
-4.  Çağrı `GetNextResult` üzerinde `CCommand` sınıfı. Başka bir sonuç satır kümesi olup olmadığını `GetNextResult` S_OK verir ve el ile erişimci kullanıyorsanız, sütunları yeniden bağlamanız. Varsa `GetNextResult` bir hata döndürür bulunmaktadır başka sonuç kümesi kullanılabilir.  
+1. Çağrı `GetNextResult` üzerinde `CCommand` sınıfı. Başka bir sonuç satır kümesi kullanılabiliyorsa, `GetNextResult` S_OK döndürür ve el ile erişimci kullanıyorsanız sütunlarınızı yeniden. Varsa `GetNextResult` hata verir kullanılabilir başka hiçbir sonuç kümesi vardır.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)
+
+[Saklı Yordamları Kullanma](../../data/oledb/using-stored-procedures.md)

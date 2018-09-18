@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f85ad1c223c9d4b22e3763f1d24a6c2631f6342d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b07dcf360a58b07b84abe655641b758d6137d0e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297426"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087452"
 ---
 # <a name="linker-tools-error-lnk1164"></a>Bağlayıcı Araçları Hatası LNK1164
-Bölüm bölüm hizalama (sayı) /ALIGN değerinden büyük  
-  
- İle belirtilen değer nesne dosyasına verilen bölüm hizalama boyutu aşıyor [/HİZALA](../../build/reference/align-section-alignment.md) seçeneği. **/HİZALA** değeri 2'in üssü olmalıdır ve eşit veya gerekir nesnesi dosyası'nda sağlanan bölüm hizalama aşıyor.  
-  
- Daha küçük bir bölüm hizalama veya artış ya da yeniden derleyebilirsiniz **/HİZALA** değeri.
+
+Bölüm bölüm hizalama (sayı) / ALIGN değerinden büyük
+
+Nesne dosyasında verilen bölüm hizalama boyutu ile belirtilen değeri Aşana [/hizalama](../../build/reference/align-section-alignment.md) seçeneği. **/Hizalama** değeri 2'in kuvveti olmalı ve eşit veya gerekir nesne dosyasında verilen bölüm hizalama aşıyor.
+
+Daha küçük bir bölümü hizalama veya artış ile ya da yeniden derleyin **/hizalama** değeri.

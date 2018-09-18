@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c8081b5a85b09f513152861cb09758b61df8d9b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d3b10648a3251a705085e31559a98b6ee4957c72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763259"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088481"
 ---
 # <a name="cwin32heap-class"></a>CWin32Heap sınıfı
 
@@ -101,7 +101,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -124,10 +124,10 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hHeap*  
+*hHeap*<br/>
 Varolan bir yığın tanıtıcısı.
 
-*bTakeOwnership*  
+*bTakeOwnership*<br/>
 Bayrağı belirten bir IF `CWin32Heap` nesne yığının kaynaklarının sahipliğini etmektir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -149,16 +149,16 @@ CWin32Heap(
 
 ### <a name="parameters"></a>Parametreler
 
-*hHeap*  
+*hHeap*<br/>
 Varolan bir yığın nesnesi.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Yığını oluşturmak için kullanılan bayraklar.
 
-*nInitialSize*  
+*nInitialSize*<br/>
 Yığının ilk boyutu.
 
-*nMaxSize*  
+*nMaxSize*<br/>
 Yığının maksimum boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -213,7 +213,7 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Ücretsiz bellek bloğuna işaretçi. NULL, geçerli bir değer ve hiçbir şey yapmaz.
 
 ##  <a name="getsize"></a>  CWin32Heap::GetSize
@@ -226,7 +226,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bellek Blok boyutu yöntemi elde edersiniz işaretçidir. Tarafından döndürülen bir işaretçi budur [CWin32Heap::Allocate](#allocate) veya [CWin32Heap::Reallocate](#reallocate).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -263,10 +263,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Ayrılacak bellek bloğuna işaretçi.
 
-*nBytes*  
+*nBytes*<br/>
 Yeni boyutu bayt cinsinden ayrılan bloğu. Daha büyük veya küçük blok yapılabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -279,9 +279,9 @@ Varsa *p* NULL ise bellek bloğu henüz ayrılmadı olduğunu kabul edilir ve [C
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[Iatlmemmgr sınıfı](../../atl/reference/iatlmemmgr-class.md)   
-[CLocalHeap sınıfı](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap sınıfı](../../atl/reference/cglobalheap-class.md)   
-[CCRTHeap sınıfı](../../atl/reference/ccrtheap-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)<br/>
+[CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>
+[CCRTHeap Sınıfı](../../atl/reference/ccrtheap-class.md)<br/>
 [CComHeap Sınıfı](../../atl/reference/ccomheap-class.md)

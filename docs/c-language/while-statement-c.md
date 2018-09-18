@@ -17,26 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1aa9c72cbb8724da00b2d370884bd7ddbf7264cc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4dfda5807aab0c9930780b8374ffc934dde001c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763246"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096814"
 ---
 # <a name="while-statement-c"></a>while Deyimi (C)
 
-`while` İfadesi belirtilen bir ifade false olana kadar bir deyimi yineleyin olanak tanır.  
-  
+`while` İfadesi belirtilen bir ifade false olana kadar bir deyimi yineleyin olanak tanır.
+
 ## <a name="syntax"></a>Sözdizimi
 
 *Yineleme deyiminin*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**sırada (***ifade***)***deyimi*
-  
-*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:  
-  
-1. *İfade* değerlendirilir.  
-  
+
+*İfade* aritmetik veya işaretçi türünde olmalıdır. Yürütme aşağıdaki gibi çalışır:
+
+1. *İfade* değerlendirilir.
+
 2. Varsa *ifade* başlangıçta yanlış gövdesinin `while` deyimi asla yürütülmez ve denetim geçer `while` programdaki sonraki deyime deyimi.
 
    Varsa *ifade* true (sıfırdan farklı), deyim gövdesi yürütülür ve adım 1'den itibaren işlem tekrarlanır.

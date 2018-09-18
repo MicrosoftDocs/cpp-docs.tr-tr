@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 828c3881771aa37181822859cc54894e8771c2cb
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eddeb6467dfb3bf578c0287161de989e8ba12483
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767600"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097477"
 ---
 # <a name="using-replaceable-parameters-the-registrar39s-preprocessor"></a>Değiştirilebilir parametreler kullanma (kayıt şirketi&#39;s önişlemci)
 
@@ -36,8 +36,8 @@ Değiştirilebilir parametreler, çalışma zamanı verileri belirtmek bir kayı
 
 Başka bir önişlemci betik verilerini çalışma zamanı verilerle birleştirmek için kullanılır. Örneğin, bir giriş dizesiyle bir modül tam yolunu içeren gereklidir varsayalım "`, 1`" sonuna eklenir. İlk olarak, aşağıdaki genişletme tanımlayın:
 
-```  
-'MySampleKey' = s '%MODULE%, 1'  
+```
+'MySampleKey' = s '%MODULE%, 1'
 ```
 
 Ardından, çağırmadan önce listelenen yöntemleri işleme betiği birini [çağırma betikleri](../atl/invoking-scripts.md), yerini haritaya eklemek:
@@ -53,8 +53,8 @@ Komut dosyası ayrıştırılırken kayıt şirketi genişletir `'%MODULE%, 1'` 
 >  Çalışma zamanında değiştirme değeri yerine koymak istediğiniz komut dosyasına çağrısını kaldırın. [DECLARE_REGISTRY_RESOURCE](../atl/reference/registry-macros.md#declare_registry_resource) veya [DECLARE_REGISTRY_RESOURCEID](../atl/reference/registry-macros.md#declare_registry_resourceid) makrosu. Bunun yerine, kendi değerlerinizle değiştirin `UpdateRegistry` metoduna çağrı yapan [CAtlModule::UpdateRegistryFromResourceD](../atl/reference/catlmodule-class.md#updateregistryfromresourced) veya [CAtlModule::UpdateRegistryFromResourceS](../atl/reference/catlmodule-class.md#updateregistryfromresources)ve _ATL_REGMAP_, dizi geçirin Giriş yapılar. {NULL, NULL} kümesi en az bir giriş _ATL_REGMAP_ENTRY, dizi olması gerekir ve bu giriş, her zaman en son giriş olmalıdır. Aksi takdirde, bir erişim ihlali hata olacaktır oluşturulan `UpdateRegistryFromResource` çağrılır.
 
 > [!NOTE]
->  Yürütülebilir bir dosya çıkarır bir proje derlenirken, ATL ile çalışma zamanında oluşturulan yol adının etrafında tırnak işareti otomatik olarak ekler. **MODÜLÜ %** Kaydedici betik parametresi. Yol adı tırnak işaretleri dahil etmek istemiyorsanız, yeni kullanın **MODULE_RAW %** parametresi yerine.  
->   
+>  Yürütülebilir bir dosya çıkarır bir proje derlenirken, ATL ile çalışma zamanında oluşturulan yol adının etrafında tırnak işareti otomatik olarak ekler. **MODÜLÜ %** Kaydedici betik parametresi. Yol adı tırnak işaretleri dahil etmek istemiyorsanız, yeni kullanın **MODULE_RAW %** parametresi yerine.
+>
 >  Bir DLL çıkaran bir proje derlenirken, ATL tırnak işaretleri yol adını ekler değil **MODÜLÜ %** veya **MODULE_RAW %** kullanılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

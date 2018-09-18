@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ca36074f33299b1a55da0fe7b42786a05dd6c49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f1f657e6d3f64a4d8a2244ab2927a9a712c14b1a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264122"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091679"
 ---
 # <a name="compiler-error-c3747"></a>Derleyici Hatası C3747
-varsayılan tür parametresi eksik: parametre param  
-  
- Genel veya şablon parametrelerini varsayılan değerlerle parametre listesinde varsayılan değerlere sahip parametrelerin izlenemiyor.  
-  
- Aşağıdaki örnek C3747 oluşturur:  
-  
-```  
-// C3747.cpp  
-template <class T1 = int, class T2>   // C3747  
-struct MyStruct {};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C3747b.cpp  
-// compile with: /c  
-template <class T1, class T2 = int>  
-struct MyStruct {};  
+
+varsayılan tür parametresi eksik: parametre param
+
+Varsayılan değeri olan parametrelere genel veya şablon parametre listesinde varsayılan değerlere sahip olmayan parametreler tarafından izlenemiyor.
+
+Aşağıdaki örnek, C3747 oluşturur:
+
+```
+// C3747.cpp
+template <class T1 = int, class T2>   // C3747
+struct MyStruct {};
+```
+
+Olası çözüm:
+
+```
+// C3747b.cpp
+// compile with: /c
+template <class T1, class T2 = int>
+struct MyStruct {};
 ```

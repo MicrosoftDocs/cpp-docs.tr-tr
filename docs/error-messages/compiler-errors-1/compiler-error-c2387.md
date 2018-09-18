@@ -16,48 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e490e2c0016649054c557026a5fa691162c40c07
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a73f2964c7f87ba795ba680947664a0f37b9c303
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225603"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089625"
 ---
 # <a name="compiler-error-c2387"></a>Derleyici Hatası C2387
-'type': belirsiz taban sınıfı  
-  
- Taban sınıf içinde birden fazla işlev var olduğundan derleyici bir işlev çağrısı belirsizliğe çözümlenemedi.  
-  
- Bu hatayı gidermek için taban sınıflarından biri içinden devralma kaldırın veya açıkça işlev çağrısı hakkını kullanmaya devam eder.  
-  
- Aşağıdaki örnek C2387 oluşturur:  
-  
-```  
-// C2387.cpp  
-namespace N1 {  
-   struct B {  
-      virtual void f() {  
-      }  
-   };  
-}  
-  
-namespace N2 {  
-   struct B {  
-      virtual void f() {  
-      }  
-   };  
-}  
-  
-struct D : N1::B, N2::B {  
-   virtual void f() {  
-      B::f();   // C2387  
-      // try the following line instead  
-      // N1::B::f();  
-   }  
-};  
-  
-int main() {  
-   D aD;  
-   aD.f();  
-}  
+
+'type': belirsiz taban sınıfı
+
+Birden fazla temel sınıfta işlevi var olduğundan derleyici bir işlev çağrısı belirsiz çözümlenemedi.
+
+Bu hatayı gidermek için temel sınıflarının biri öğesinden devralmayı kaldırın veya açıkça işlev çağrısı niteleyin.
+
+Aşağıdaki örnek, C2387 oluşturur:
+
+```
+// C2387.cpp
+namespace N1 {
+   struct B {
+      virtual void f() {
+      }
+   };
+}
+
+namespace N2 {
+   struct B {
+      virtual void f() {
+      }
+   };
+}
+
+struct D : N1::B, N2::B {
+   virtual void f() {
+      B::f();   // C2387
+      // try the following line instead
+      // N1::B::f();
+   }
+};
+
+int main() {
+   D aD;
+   aD.f();
+}
 ```

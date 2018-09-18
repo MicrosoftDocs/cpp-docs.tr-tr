@@ -1,5 +1,5 @@
 ---
-title: Dize değişmez değerleri birincil ifadelerde | Microsoft Docs
+title: Dize değişmez değerleri birincil ifadelerdeki | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,15 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5fd8c73bb9dac5a26c62b86bdc4038bd26a0829
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 818284a0eabce779d9f52e8fe7b3af4cc1d8df4b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384947"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095536"
 ---
 # <a name="string-literals-in-primary-expressions"></a>Birincil İfadelerdeki Dize Değişmez Değerleri
-Bir "dize sabit değeri" bir karakter, geniş karakter veya çift tırnak içine alınmış bitişik karakter dizisidir. Dize sabit değerleri veya öğeleri, değişken olmadıkları için atama işleminde bir sol işlenen olamaz. Dize sabit değerinin türü, `char` dizisidir (veya geniş dize sabit değerleri için `wchar_t` dizisidir). İfadelerdeki diziler işaretçilere dönüştürülür. Bkz: [dize değişmez değerleri](../c-language/c-string-literals.md) dizeleri hakkında daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Birincil İfadeler](../c-language/c-primary-expressions.md)
+
+Bir "dize sabit değeri" bir karakter, geniş karakter veya çift tırnak içine alınmış bitişik karakter dizisidir. Dize sabit değerleri veya öğeleri, değişken olmadıkları için atama işleminde bir sol işlenen olamaz. Dize sabit değerinin türü, `char` dizisidir (veya geniş dize sabit değerleri için `wchar_t` dizisidir). İfadelerdeki diziler işaretçilere dönüştürülür. Bkz: [dize değişmez değerleri](../c-language/c-string-literals.md) dizeleri hakkında daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Birincil İfadeler](../c-language/c-primary-expressions.md)

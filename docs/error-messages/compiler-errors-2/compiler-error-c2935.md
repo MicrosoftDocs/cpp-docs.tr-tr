@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b387e7cee3542dd41ab799b00ae28c834fe05903
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c37719276ccb6e541b192873429c0876256bf9b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244748"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088312"
 ---
 # <a name="compiler-error-c2935"></a>Derleyici Hatası C2935
-'class': türü sınıfı kimliği genel bir işlevi olarak yeniden tanımlandı  
-  
- Genel veya Şablon sınıfı genel bir işlevi olarak kullanamazsınız.  
-  
- Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.  
-  
- Aşağıdaki örnek C2935 oluşturur:  
-  
-```  
-// C2935.cpp  
-// compile with: /c  
-template<class T>  
-struct TC {};   
-void TC<int>() {}   // C2935  
-  
-// OK  
-struct TC2 {};   
-void TC2() {}  
-```  
-  
- Ayrıca C2935 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2935b.cpp  
-// compile with: /clr /c  
-generic<class T>   
-ref struct GC { };  
-void GC<int>() {}   // C2935  
-void GC() {}   // OK  
+
+'class': türü sınıf kimliği için genel bir işlev yeniden tanımlandı
+
+Genel veya Şablon sınıfı, genel bir işlev kullanamazsınız.
+
+Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.
+
+Aşağıdaki örnek, C2935 oluşturur:
+
+```
+// C2935.cpp
+// compile with: /c
+template<class T>
+struct TC {};
+void TC<int>() {}   // C2935
+
+// OK
+struct TC2 {};
+void TC2() {}
+```
+
+C2935, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2935b.cpp
+// compile with: /clr /c
+generic<class T>
+ref struct GC { };
+void GC<int>() {}   // C2935
+void GC() {}   // OK
 ```

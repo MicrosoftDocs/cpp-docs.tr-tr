@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcd0a8d0d860bb4c3514d31099626cc578339149
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f494f550393bf1fb1a1a17b522b73945a7581e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089157"
 ---
 # <a name="compiler-error-c2470"></a>Derleyici Hatası C2470
-'function': işlev tanımı gibi görünüyor, ancak hiçbir parametre listesi; yok görünen gövde atlanıyor  
-  
- Bağımsız değişken listesi bir işlev tanımı eksik.  
-  
- Aşağıdaki örnek C2470 oluşturur:  
-  
-```  
-// C2470.cpp  
-int MyFunc {};  // C2470  
-void MyFunc2() {};  //OK  
-  
-int main(){  
-   MyFunc();  
-   MyFunc2();  
-}  
+
+'function': işlev tanımı gibi görünüyor ancak hiçbir parametre listesi; yok görünen gövde atlanıyor
+
+Bir işlev tanımı kendi bağımsız değişken listesi eksik.
+
+Aşağıdaki örnek, C2470 oluşturur:
+
+```
+// C2470.cpp
+int MyFunc {};  // C2470
+void MyFunc2() {};  //OK
+
+int main(){
+   MyFunc();
+   MyFunc2();
+}
 ```

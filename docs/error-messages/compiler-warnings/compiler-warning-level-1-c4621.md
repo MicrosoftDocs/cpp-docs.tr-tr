@@ -16,51 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: efefe6feacd79833e3ec51cc1f2274c142b2426a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70b9273e1c3a91db37be6bee2c1c33a0a4e30b17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281956"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090834"
 ---
 # <a name="compiler-warning-level-1-c4621"></a>Derleyici Uyarısı (düzey 1) C4621
-sonek form işlecinin' türü 'type' öneki formunu kullanarak, bulunan--' yok  
-  
- Belirtilen tür için tanımlı hiçbir sonek azaltma işleci vardı. Derleyici aşırı yüklenmiş önek işleci kullanılır.  
-  
- Bu uyarı bir sonek tanımlayarak önlenebilir `--` işleci. İki bağımsız değişken sürümünü Oluştur `--` aşağıda gösterildiği gibi işleci:  
-  
-```  
-// C4621.cpp  
-// compile with: /W1  
-class A  
-{  
-public:  
-   A(int nData) : m_nData(nData)  
-   {  
-   }  
-  
-   A operator--()  
-   {  
-      m_nData -= 1;  
-      return *this;  
-   }  
-  
-   // A operator--(int)  
-   // {  
-   //    A tmp = *this;  
-   //    m_nData -= 1;  
-   //    return tmp;  
-   // }  
-  
-private:  
-   int m_nData;  
-};  
-  
-int main()  
-{  
-   A a(10);  
-   --a;  
-   a--;   // C4621  
-}  
+
+hiçbir 'operator--'type' önek biçimi kullanılıyor, türü için bulunamadı' sonek biçimi
+
+Verilen tür için tanımlı hiçbir sonek azaltma işlecinin vardı. Derleyici, aşırı yüklenmiş bir önek işleci kullanılır.
+
+Bu uyarı, bir sonek tanımlayarak önlenebilir `--` işleci. İki bağımsız değişkenli sürümü oluşturma `--` aşağıda gösterildiği gibi işleç:
+
+```
+// C4621.cpp
+// compile with: /W1
+class A
+{
+public:
+   A(int nData) : m_nData(nData)
+   {
+   }
+
+   A operator--()
+   {
+      m_nData -= 1;
+      return *this;
+   }
+
+   // A operator--(int)
+   // {
+   //    A tmp = *this;
+   //    m_nData -= 1;
+   //    return tmp;
+   // }
+
+private:
+   int m_nData;
+};
+
+int main()
+{
+   A a(10);
+   --a;
+   a--;   // C4621
+}
 ```

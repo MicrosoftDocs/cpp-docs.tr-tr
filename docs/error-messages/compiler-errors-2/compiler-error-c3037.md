@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64571676a5728e4598613702df8f312d98ed1cb5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a3846aec8810e04813122a9c95c823fa99b3d698
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244904"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089300"
 ---
 # <a name="compiler-error-c3037"></a>Derleyici Hatası C3037
-'var': 'azaltma' yan tümcesinde değişkeni içeriği kapsayan paylaşılabilecek gerekir  
-  
- Belirtilen değişken bir [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi bağlamında her bir iş parçacığı için özel olmayabilir.  
-  
- Aşağıdaki örnek C3037 oluşturur:  
-  
-```  
-// C3037.cpp  
-// compile with: /openmp /c  
-int g_i;  
-  
-int main() {  
-   int i;  
-  
-   #pragma omp parallel private(g_i)  
-   // try the following line instead  
-   // #pragma omp parallel   
-   {  
-      #pragma omp for reduction(+:g_i)   // C3037  
-      for (i = 0 ; i < 10 ; ++i) {  
-         g_i += i;  
-      }  
-   }  
-}  
+
+'var': 'reduction' yan tümcesindeki değişken kapsayan bağlamda paylaşılabilir olmalıdır
+
+Belirtilen bir değişken bir [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi her iş parçacığının bağlamında özel olabilir.
+
+Aşağıdaki örnek, C3037 oluşturur:
+
+```
+// C3037.cpp
+// compile with: /openmp /c
+int g_i;
+
+int main() {
+   int i;
+
+   #pragma omp parallel private(g_i)
+   // try the following line instead
+   // #pragma omp parallel
+   {
+      #pragma omp for reduction(+:g_i)   // C3037
+      for (i = 0 ; i < 10 ; ++i) {
+         g_i += i;
+      }
+   }
+}
 ```

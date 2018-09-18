@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbb5541e07d168df36bae83f81b7b8a8a7273665
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 597d02ff347d399833e2376743b50f65e7674a18
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269520"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46092914"
 ---
 # <a name="compiler-error-c3839"></a>Derleyici Hatası C3839
-yönetilen bir çizgide veya WinRT türü değiştirilemiyor  
-  
- Değişkenleri hizalamasını yönetilen veya Windows çalışma zamanı türleri CLR veya Windows çalışma zamanı tarafından denetlenen ve ile değiştirilemez [Hizala](../../cpp/align-cpp.md).  
-  
- Aşağıdaki örnek C3839 oluşturur:  
-  
-```  
-// C3839a.cpp  
-// compile with: /clr  
-ref class C  
-{  
-public:  
-   __declspec(align(32)) int m_j; // C3839  
-};  
-  
-int main()  
-{  
-}  
+
+yönetilen bir hizalama veya WinRT türü değiştirilemiyor
+
+Değişkenleri hizalamasını yönetilen veya Windows çalışma zamanı türleri CLR ya da Windows çalışma zamanı tarafından denetlenir ve ile değiştirilemez [hizalama](../../cpp/align-cpp.md).
+
+Aşağıdaki örnek, C3839 oluşturur:
+
+```
+// C3839a.cpp
+// compile with: /clr
+ref class C
+{
+public:
+   __declspec(align(32)) int m_j; // C3839
+};
+
+int main()
+{
+}
 ```

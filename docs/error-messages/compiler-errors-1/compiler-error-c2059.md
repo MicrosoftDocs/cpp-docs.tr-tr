@@ -16,127 +16,128 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 69182e4b27b474cafe60b71b02594a244f65a09b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 88d33ba33483ba8a2c9764f5336218a354d644e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171633"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096957"
 ---
 # <a name="compiler-error-c2059"></a>Derleyici Hatası C2059
-sözdizimi hatası: 'belirteci'  
-  
- Belirtecin bir sözdizimi hatası nedeniyle.  
-  
- Aşağıdaki örnek bildiren bir satır için bir hata iletisi oluşturur `j`.  
-  
-```  
-// C2059e.cpp  
-// compile with: /c  
-// C2143 expected  
-// Error caused by the incorrect use of '*'.  
-   int j*; // C2059   
-```  
-  
- Hatanın nedenini belirlemek için yalnızca hata iletisinde listelenen satır, aynı zamanda üstündeki satırları inceleyin. Satırları incelenerek sorun ilgili hiçbir ipucu döndürürse, hata iletisinde listelenen satır ve belki de birkaç satır üzerindeki yorum oluşturmayı deneyin.  
-  
- Hata iletisi hemen izleyen bir sembol oluşursa bir `typedef` değişkeni, değişken kaynak kodunda tanımlandığından emin olun.  
-  
- Bir simge oluşabilir gibi nothing olarak değerlendirilirse C2059 alabilirsiniz zaman **/D** `symbol` **=** derlemek için kullanılır.  
-  
-```  
-// C2059a.cpp  
-// compile with: /DTEST=  
-#include <stdio.h>  
-  
-int main() {  
-   #ifdef TEST  
-      printf_s("\nTEST defined %d", TEST);   // C2059  
-   #else  
-      printf_s("\nTEST not defined");  
-   #endif  
-}  
-```  
-  
- Varsayılan bağımsız değişkenler işlevi için bir yapı belirten bir uygulamayı derlediğinizde C2059 oluşabilen başka bir durumdur. Bağımsız değişken için varsayılan değeri bir ifade olmalıdır. Başlatıcı listesi — Örneğin, bir bir yapı başlatmak için kullanılan — bir ifade değil.  Bu sorunu çözmek için gerekli başlatılmasını gerçekleştirmek için bir oluşturucu tanımlayın.  
-  
- Aşağıdaki örnek C2059 oluşturur:  
-  
-```  
-// C2059b.cpp  
-// compile with: /c  
-struct ag_type {  
-   int a;  
-   float b;  
-   // Uncomment the following line to resolve.  
-   // ag_type(int aa, float bb) : a(aa), b(bb) {}   
-};  
-  
-void func(ag_type arg = {5, 7.0});   // C2059  
-void func(ag_type arg = ag_type(5, 7.0));   // OK  
-```  
-  
- Üye Şablon sınıfı veya sınıfın dışından işlevi tanımlarsanız C2059 elde edebilirsiniz. Bilgi için bkz: [Bilgi Bankası makalesi 241949](http://support.microsoft.com/kb/241949).  
-  
- C2059 hatalı oluşturulmuş bir atama için oluşabilir.  
-  
- Aşağıdaki örnek C2059 oluşturur:  
-  
-```  
-// C2059c.cpp  
-// compile with: /clr  
-using namespace System;  
-ref class From {};  
-ref class To : public From {};  
-  
-int main() {  
-   From^ refbase = gcnew To();  
-   To^ refTo = safe_cast<To^>(From^);   // C2059  
-   To^ refTo2 = safe_cast<To^>(refbase);   // OK  
-}  
-```  
-  
- Nokta içeren bir ad alanı adı oluşturmayı denerseniz, C2059 da oluşabilir.  
-  
- Aşağıdaki örnek C2059 oluşturur:  
-  
-```  
-// C2059d.cpp  
-// compile with: /c  
-namespace A.B {}   // C2059  
-  
-// OK  
-namespace A  {  
-   namespace B {}  
-}  
-```  
-  
- C2059 bir adını nitelemek bir işleç olduğunda meydana gelebilir (`::`, `->`, ve `.`) anahtar sözcüğü tarafından uyulması gereken `template`, bu örnekte gösterildiği gibi:  
-  
-```cpp  
-template <typename T> struct Allocator {  
-    template <typename U> struct Rebind {  
-        typedef Allocator<U> Other;  
-    };  
-};  
-  
-template <typename X, typename AY> struct Container {  
-    typedef typename AY::Rebind<X>::Other AX; // error C2059  
-};  
-  
-```  
-  
- Varsayılan olarak, C++ varsayar `AY::Rebind` olmayan bir şablon; bu nedenle, aşağıdaki `<` daha az yorumlanır-oturum daha.  Derleyici açıkça, size gereken `Rebind` açılı ayraç doğru ayrıştıramıyor böylece bir şablondur. Bu hatayı düzeltmek için kullanmak `template` anahtar sözcüğü aşağıda gösterildiği gibi bağımlı tür adı:  
-  
-```cpp  
-template <typename T> struct Allocator {  
-    template <typename U> struct Rebind {  
-        typedef Allocator<U> Other;  
-    };  
-};  
-  
-template <typename X, typename AY> struct Container {  
-    typedef typename AY::template Rebind<X>::Other AX; // correct  
-};  
-  
+
+sözdizimi hatası: 'belirteci'
+
+Belirteç sözdizimi hatası nedeniyle.
+
+Aşağıdaki örnek, bir hata iletisi bildirir satır oluşturur `j`.
+
+```
+// C2059e.cpp
+// compile with: /c
+// C2143 expected
+// Error caused by the incorrect use of '*'.
+   int j*; // C2059
+```
+
+Hatanın nedenini belirlemek için yalnızca hata iletisinde listelenen satır, aynı zamanda yukarıdaki satırları inceleyin. Satırları incelenerek sorun hakkında hiçbir fikrimiz döndürürse, hata iletisinde listelenen satır ve belki de yukarıdaki birkaç satıra yorum deneyin.
+
+Hata iletisi üzerinde hemen izleyen bir sembolün oluşursa bir `typedef` değişkeni, kaynak kodunda değişkeni tanımlandığından emin olun.
+
+Bir sembol olarak gerçekleşebilir nothing olarak değerlendirilirse C2059 alabilirsiniz, **/D** `symbol` **=** derlemek için kullanılır.
+
+```
+// C2059a.cpp
+// compile with: /DTEST=
+#include <stdio.h>
+
+int main() {
+   #ifdef TEST
+      printf_s("\nTEST defined %d", TEST);   // C2059
+   #else
+      printf_s("\nTEST not defined");
+   #endif
+}
+```
+
+Bir yapının bir işlevin varsayılan bağımsız değişkenler belirten bir uygulamayı derlediğinizde C2059 oluşabilen başka bir durumdur. Bağımsız değişken için varsayılan değeri bir ifade olmalıdır. Başlatıcı listesi — Örneğin, bir yapı başlatmak için kullanılan — bir ifade değil.  Bu sorunu gidermek için gerekli başlatma gerçekleştirmek için bir oluşturucu tanımlar.
+
+Aşağıdaki örnek, C2059 oluşturur:
+
+```
+// C2059b.cpp
+// compile with: /c
+struct ag_type {
+   int a;
+   float b;
+   // Uncomment the following line to resolve.
+   // ag_type(int aa, float bb) : a(aa), b(bb) {}
+};
+
+void func(ag_type arg = {5, 7.0});   // C2059
+void func(ag_type arg = ag_type(5, 7.0));   // OK
+```
+
+Üye Şablon sınıfı veya sınıf dışındaki işlev tanımlarsanız, C2059 alabilirsiniz. Bilgi için [Bilgi Bankası makalesi 241949](http://support.microsoft.com/kb/241949).
+
+C2059 için hatalı oluşturulmuş tür dönüştürme ortaya çıkabilir.
+
+Aşağıdaki örnek, C2059 oluşturur:
+
+```
+// C2059c.cpp
+// compile with: /clr
+using namespace System;
+ref class From {};
+ref class To : public From {};
+
+int main() {
+   From^ refbase = gcnew To();
+   To^ refTo = safe_cast<To^>(From^);   // C2059
+   To^ refTo2 = safe_cast<To^>(refbase);   // OK
+}
+```
+
+Nokta içeren bir ad alanı adı oluşturmaya çalışırsanız C2059 da meydana gelebilir.
+
+Aşağıdaki örnek, C2059 oluşturur:
+
+```
+// C2059d.cpp
+// compile with: /c
+namespace A.B {}   // C2059
+
+// OK
+namespace A  {
+   namespace B {}
+}
+```
+
+C2059 bir adı olabilmek operatörün olduğunda meydana gelebilir (`::`, `->`, ve `.`) anahtar sözcüğüyle gelmelidir `template`, bu örnekte gösterildiği gibi:
+
+```cpp
+template <typename T> struct Allocator {
+    template <typename U> struct Rebind {
+        typedef Allocator<U> Other;
+    };
+};
+
+template <typename X, typename AY> struct Container {
+    typedef typename AY::Rebind<X>::Other AX; // error C2059
+};
+
+```
+
+Varsayılan olarak, C++ olduğunu varsayar `AY::Rebind` olmayan bir şablon; bu nedenle, aşağıdaki `<` daha az yorumlanır-işareti.  Derleyici açıkça, bildirmeniz gerekir `Rebind` böylece doğru açılı ayraç ayrıştırmak bir şablondur. Bu hatayı düzeltmek için `template` anahtar sözcüğü, burada gösterildiği gibi bağımlı tür adı:
+
+```cpp
+template <typename T> struct Allocator {
+    template <typename U> struct Rebind {
+        typedef Allocator<U> Other;
+    };
+};
+
+template <typename X, typename AY> struct Container {
+    typedef typename AY::template Rebind<X>::Other AX; // correct
+};
+
 ```

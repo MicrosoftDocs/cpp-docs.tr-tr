@@ -1,5 +1,5 @@
 ---
-title: Tamsayıları | Microsoft Docs
+title: Tamsayı | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -14,23 +14,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e68a70a0fb6d202d1ba8c7f13c5a16e4318ca5ba
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 559e7e2ab80e904677f77d64ad378c2b88fd2c66
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32383962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097594"
 ---
 # <a name="integers"></a>Tam Sayılar
--   [Tamsayı Değerleri Aralığı](../c-language/range-of-integer-values.md)  
-  
--   [Tam Sayıların İndirgenmesi](../c-language/demotion-of-integers.md)  
-  
--   [İmzalı Bit Düzeyinde İşlemler](../c-language/signed-bitwise-operations.md)  
-  
--   [Kalanlar](../c-language/remainders.md)  
-  
--   [Sağa Kaydırmalar](../c-language/right-shifts.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)
+
+- [Tamsayı Değerleri Aralığı](../c-language/range-of-integer-values.md)
+
+- [Tam Sayıların İndirgenmesi](../c-language/demotion-of-integers.md)
+
+- [İmzalı Bit Düzeyinde İşlemler](../c-language/signed-bitwise-operations.md)
+
+- [Kalanlar](../c-language/remainders.md)
+
+- [Sağa Kaydırmalar](../c-language/right-shifts.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

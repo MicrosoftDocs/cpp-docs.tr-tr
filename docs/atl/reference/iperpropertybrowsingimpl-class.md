@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb4b35d851858eaab5ba0df471cc2d0bd30f19bc
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a8fc5cc44eeb06c5afec23b6a0a094c14987c599
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096099"
 ---
 # <a name="iperpropertybrowsingimpl-class"></a>Iperpropertybrowsingımpl sınıfı
 
@@ -48,7 +48,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IPerPropertyBrowsingImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -153,6 +153,6 @@ Bkz: [IPerPropertyBrowsing::MapPropertyToPage](/windows/desktop/api/ocidl/nf-oci
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ipropertypageımpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   
-[Ispecifypropertypagesımpl sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)   
+[IPropertyPageImpl Sınıfı](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[ISpecifyPropertyPagesImpl Sınıfı](../../atl/reference/ispecifypropertypagesimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

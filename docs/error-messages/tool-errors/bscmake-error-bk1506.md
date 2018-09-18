@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e19ec77818c8017387519b03e400c09d47021bc5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26201a894212701cca19ab2192676b37a69e8b57
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300429"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088702"
 ---
 # <a name="bscmake-error-bk1506"></a>BSCMAKE Hatası BK1506
-Dosya 'filename' açılamıyor [: neden]  
-  
- BSCMAKE dosyası açılamıyor.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Dosya başka bir işlem tarafından kilitlenmiş. Varsa `reason` diyor **izni reddedildi**, tarayıcı dosyayı kullanıyor. Gözat penceresini kapatın ve yapı yeniden deneyin.  
-  
-2.  Tam disk.  
-  
-3.  Bir donanım hatası.  
-  
-4.  Belirtilen çıkış dosyası var olan bir alt dizin olarak aynı ada sahip.
+
+'dosyaadı' dosyası açılamıyor [: neden]
+
+BSCMAKE dosyası açılamıyor.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Dosya başka bir işlem tarafından kilitli. Varsa `reason` diyor **izin reddedildi**, tarayıcı dosyayı kullanıyor olabilir. Göz atma pencereyi kapatın ve derlemeyi yeniden deneyin.
+
+1. Tam disk.
+
+1. Bir donanım hatası.
+
+1. Belirtilen çıkış dosyası var olan bir alt dizini ile aynı ada sahip.

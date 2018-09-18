@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa4b590b494355450909032c78822553004beddc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6e739c5c9fc77c4c9658afb2f5f6d9568c6f43bb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169442"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088364"
 ---
 # <a name="compiler-error-c2191"></a>Derleyici Hatası C2191
-İkinci parametre listesi ilk daha uzun  
-  
- C işlev daha uzun bir parametre listesi ile ikinci kez bildirildi. C aşırı yüklenmiş işlevlerin desteklemez.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2191 oluşturur:  
-  
-```  
-// C2191.c  
-// compile with: /Za /c  
-void func( int );  
-void func( int, float );   // C2191 different parameter list  
-void func2( int, float );   // OK  
+
+İkinci parametre listesi birinciden uzun
+
+C işlevi, ikinci bir kez daha uzun bir parametre listesiyle bildirildi. C, aşırı yüklenmiş işlevler desteklemez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2191 oluşturur:
+
+```
+// C2191.c
+// compile with: /Za /c
+void func( int );
+void func( int, float );   // C2191 different parameter list
+void func2( int, float );   // OK
 ```

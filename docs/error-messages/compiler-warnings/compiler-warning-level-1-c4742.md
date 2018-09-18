@@ -16,45 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9c5c891699e89b177f9a3c070a95f496e2c77ac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 622a1b1cd62024da58191ce1312c391dd39e0d28
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46088598"
 ---
 # <a name="compiler-warning-level-1-c4742"></a>Derleyici Uyarısı (düzey 1) C4742
-'var' olan 'dosya1' ve 'dosya2' farklı hizalama: ve numarası  
-  
- Başvurulan veya iki dosyasında tanımlanan bir dış değişken bu dosyaları farklı hizalama yok. Derleyici bulduğunda, bu uyarıyı yayılan `__alignof` bir değişken için *dosya1* farklıdır `__alignof` bir değişken için *dosya2*. Bu değişken farklı dosyalarında bildirirken uyumsuz türlerin kullanarak veya eşleşmeyen kullanarak kaynaklanabilir `#pragma pack` farklı dosyalarında.  
-  
- Bu uyarıyı çözmek için aynı tür tanımı kullanın veya değişkenleri için farklı adlar kullanabilirsiniz.  
-  
- Daha fazla bilgi için bkz: [paketi](../../preprocessor/pack.md) ve [__alignof işleci](../../cpp/alignof-operator.md).  
-  
-## <a name="example"></a>Örnek  
- Bu türü tanımlayan ilk dosyasıdır.  
-  
-```  
-// C4742a.c  
-// compile with: /c  
-struct X {  
-   char x, y, z, w;  
-} global;  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4742 oluşturur.  
-  
-```  
-// C4742b.c  
-// compile with: C4742a.c /W1 /GL  
-// C4742 expected  
-extern struct X {  
-   int a;  
-} global;  
-  
-int main() {  
-   global.a = 0;  
-}  
+
+'var', 'dosya1' ve 'dosya2' farklı hizalamaya sahip: ve numarası
+
+Başvurulan veya iki dosyalarında tanımlanan bir dış değişkenine bu dosyaları farklı hizalamaya sahip. Bu uyarı, derleyici bulduğunda yayıldığını `__alignof` değişken için *dosya1* farklıdır `__alignof` değişken için *dosya2*. Bu farklı dosyalar değişken bildirirken uyumsuz türler kullanan veya eşleşmeyen kullanarak kaynaklanabilir `#pragma pack` içinde farklı dosyalar.
+
+Bu uyarıyı çözmek için aynı tür tanımını kullanabilir veya değişkenleri için farklı adlar kullanın.
+
+Daha fazla bilgi için [paketi](../../preprocessor/pack.md) ve [__alignof işleci](../../cpp/alignof-operator.md).
+
+## <a name="example"></a>Örnek
+
+Bu türü tanımlayan ilk dosyasıdır.
+
+```
+// C4742a.c
+// compile with: /c
+struct X {
+   char x, y, z, w;
+} global;
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4742 oluşturur.
+
+```
+// C4742b.c
+// compile with: C4742a.c /W1 /GL
+// C4742 expected
+extern struct X {
+   int a;
+} global;
+
+int main() {
+   global.a = 0;
+}
 ```

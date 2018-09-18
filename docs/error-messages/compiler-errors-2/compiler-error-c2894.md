@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92c412aa753d4440a25f8123b4b25e40360b7a3e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14305b88042421817133a3def8fd73db57055026
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243325"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095735"
 ---
 # <a name="compiler-error-c2894"></a>Derleyici Hatası C2894
-'C' bağlantı sağlamak için şablonlar bildirilemez  
-  
- Bu hata içinde tanımlanan bir şablon neden olabilir bir `extern` "C" bloğu.  
-  
- Aşağıdaki örnek C2894 oluşturur:  
-  
-```  
-// C2894.cpp  
-extern "C" {  
-   template<class T> class stack {};   // C2894 fail  
-  
-   template<class T> void f(const T &aT) {}   // C2894  
-}  
-```  
-  
- Aşağıdaki örnek C2894 oluşturur:  
-  
-```  
-// C2894b.cpp  
-// compile with: /c  
-extern "C" template<class T> void f(const T &aT) {}   // C2894  
-  
-template<class T> void f2(const T &aT) {}   // OK  
+
+Şablonlar 'C' bağlaması olacak şekilde bildirilemez
+
+Bu hata içinde tanımlanmış bir şablon neden olabilir bir `extern` "C" blok.
+
+Aşağıdaki örnek, C2894 oluşturur:
+
+```
+// C2894.cpp
+extern "C" {
+   template<class T> class stack {};   // C2894 fail
+
+   template<class T> void f(const T &aT) {}   // C2894
+}
+```
+
+Aşağıdaki örnek, C2894 oluşturur:
+
+```
+// C2894b.cpp
+// compile with: /c
+extern "C" template<class T> void f(const T &aT) {}   // C2894
+
+template<class T> void f2(const T &aT) {}   // OK
 ```

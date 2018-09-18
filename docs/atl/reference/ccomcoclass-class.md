@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 37df260d16c04210fb7e66c0ec9a747a3dad7da4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 11c391e6ad467c835cd8c65ec872db74b85404a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760168"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097620"
 ---
 # <a name="ccomcoclass-class"></a>CComCoClass sınıfı
 
@@ -36,16 +36,16 @@ Bu sınıf, bir sınıfın örneklerini oluşturmak ve özelliklerini almak içi
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, const CLSID* pclsid = &CLSID_NULL>  
+template <class T, const CLSID* pclsid = &CLSID_NULL>
 class CComCoClass
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `CComCoClass`.
 
-*pclsid*  
+*pclsid*<br/>
 CLSID nesnenin bir işaretçi.
 
 ## <a name="members"></a>Üyeler
@@ -91,13 +91,13 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*Q*  
+*Q*<br/>
 Aracılığıyla döndürülmesi gereken bir COM arabirimi *pp*.
 
-*punkOuter*  
+*punkOuter*<br/>
 [in] Dış bilinmeyen veya toplamanın kontrol eden bilinmeyen.
 
-*PP*  
+*PP*<br/>
 [out] Oluşturma başarılı olursa, istenen arabirim işaretçisi alır bir işaretçi değişkeninin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -166,24 +166,25 @@ static HRESULT Error(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszDesc*  
-[in] Hatayı açıklayan bir dize. Unicode sürümü `Error` belirten *lpszDesc* değil LPCOLESTR türü; ANSI sürümü LPCSTR türünü belirtir.  
-*IID*  
+*lpszDesc*<br/>
+[in] Hatayı açıklayan bir dize. Unicode sürümü `Error` belirten *lpszDesc* değil LPCOLESTR türü; ANSI sürümü LPCSTR türünü belirtir.
+
+*IID*<br/>
 [in] Hata işletim sistemi tarafından tanımlanmış olması durumunda hata veya GUID_NULL (varsayılan değer) tanımlama arabirimi Laboratuvardaki.
 
-*Xact_s_lastresourcemanager*  
+*Xact_s_lastresourcemanager*<br/>
 [in] İstediğiniz HRESULT arayana döndürülür. Varsayılan değer 0’dır. Hakkında daha fazla ayrıntı için *Xact_s_lastresourcemanager*, açıklamalara bakın.
 
-*nID*  
+*nID*<br/>
 [in] Hata açıklaması dizesi depolandığı kaynak tanımlayıcısı. Bu değer 0x0200 ile 0xFFFF arasında aralığında yer alan. Hata ayıklama yapılarında, bir **ASSERT** neden olur *nID* geçerli bir dize dizinini oluşturmaz. Sürüm yapılarında hata açıklama dizesi "İçin bilinmeyen hata." ayarlanır.
 
-*dwHelpID*  
+*dwHelpID*<br/>
 [in] Hata için Yardım içeriği tanımlayıcı.
 
-*lpszHelpFile*  
+*lpszHelpFile*<br/>
 [in] Hatayı açıklayan Yardım dosyasının adı ve yolu.
 
-*hInst*  
+*hInst*<br/>
 [in] Kaynağı için tanıtıcı. Varsayılan olarak, bu parametredir `_AtlModule::GetResourceInstance`burada `_AtlModule` genel örneğinin [CAtlModule](../../atl/reference/catlmodule-class.md).
 
 ### <a name="return-value"></a>Dönüş Değeri

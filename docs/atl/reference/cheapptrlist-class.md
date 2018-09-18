@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0e44475d7d9eee547e0e9d47c8d49c439d91bd1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1990de6165e50397f11d84cb0486c1d5d5d67fce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766626"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089239"
 ---
 # <a name="cheapptrlist-class"></a>CHeapPtrList sınıfı
 
@@ -35,7 +35,7 @@ Bu sınıf, yığın işaretçileri listesini oluştururken kullanışlı yönte
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename E, class Allocator = ATL::CCRTAllocator>  
+template<typename E, class Allocator = ATL::CCRTAllocator>
 class CHeapPtrList 
    : public CAtlList<ATL::CHeapPtr<E, Allocator>,
                      CHeapPtrElementTraits<E, Allocator>>
@@ -43,10 +43,10 @@ class CHeapPtrList
 
 #### <a name="parameters"></a>Parametreler
 
-*E*  
+*E*<br/>
 Koleksiyon sınıfı içinde depolanan nesne türü.
 
-*Ayırıcı*  
+*Ayırıcı*<br/>
 Bellek ayırma kullanmak için sınıf. Varsayılan değer [CCRTAllocator](../../atl/reference/ccrtallocator-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -81,7 +81,7 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -90,7 +90,7 @@ Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarını ölçüsü
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlList sınıfı](../../atl/reference/catllist-class.md)   
-[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
-[CHeapPtrElementTraits sınıfı](../../atl/reference/cheapptrelementtraits-class.md)   
+[CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
+[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CHeapPtrElementTraits Sınıfı](../../atl/reference/cheapptrelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

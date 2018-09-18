@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c95d44a90b9325a492a0f179c941d46ff24030c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 857d13de61f03bf0784d8cd10ad092d16f7acdaa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273429"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087054"
 ---
 # <a name="compiler-error-c3893"></a>Derleyici Hatası C3893
-'var': 'type_name' sınıfının bir örneği oluşturucuda initonly veri üyesi l-değeri kullanımına izin yalnızca  
-  
- Statik [initonly](../../dotnet/initonly-cpp-cli.md) veri üyeleri yalnızca statik bir oluşturucu gerçekleştirilecek kendi adresi olabilir.  
-  
- Örnek (statik olmayan) initonly veri üyeleri yalnızca adresleri örneği (statik olmayan) kurucularda alınmış olabilir.  
-  
- Aşağıdaki örnek C3893 oluşturur:  
-  
-```  
-// C3893.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   Y1() : data_var(0) {  
-      int% i = data_var;   // OK  
-   }  
-   initonly int data_var;  
-};  
-  
-int main(){  
-   Y1^ y= gcnew Y1;  
-   int% i = y->data_var;   // C3893  
-}  
+
+'var': initonly veri üyesinin lvalue kullanımına yalnızca 'type_name' sınıfının bir örnek oluşturucusunda izin verilir
+
+Statik [initonly](../../dotnet/initonly-cpp-cli.md) veri üyeleri yalnızca statik bir oluşturucuda adresleri sahiptir.
+
+Örnek (statik olmayan) initonly veri üyeleri yalnızca adresleri (statik olmayan) örneği oluşturucularda alınmış olabilir.
+
+Aşağıdaki örnek, C3893 oluşturur:
+
+```
+// C3893.cpp
+// compile with: /clr
+ref struct Y1 {
+   Y1() : data_var(0) {
+      int% i = data_var;   // OK
+   }
+   initonly int data_var;
+};
+
+int main(){
+   Y1^ y= gcnew Y1;
+   int% i = y->data_var;   // C3893
+}
 ```

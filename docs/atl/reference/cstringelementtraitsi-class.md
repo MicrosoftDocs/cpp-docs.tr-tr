@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12b75398db6e078f28fab4525da55aaae8193663
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d34277bd3c9b47c5ba9367d19348e43ea263f43b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43765300"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46089911"
 ---
 # <a name="cstringelementtraitsi-class"></a>Cstringelementtraitsı sınıfı
 
@@ -36,13 +36,13 @@ Bu sınıf, koleksiyon sınıfı nesnelerini içinde depolanan dizeleri ilgili s
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>  
+template <typename T, class CharTraits = CDefaultCharTraits<T ::XCHAR>>
 class CStringElementTraitsI : public CElementTraitsBase<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -88,10 +88,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 İlk dize öğesi.
 
-*str2*  
+*str2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -112,10 +112,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 İlk dize öğesi.
 
-*str2*  
+*str2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -136,7 +136,7 @@ static ULONG Hash(INARGTYPE str) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -161,6 +161,6 @@ typedef T& OUTARGTYPE;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CStringElementTraits Sınıfı](../../atl/reference/cstringelementtraits-class.md)

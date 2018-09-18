@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 527c03d4f71048064c2120f7cfa9730de198fd46
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1942c334f06dce7a8f208f01cae6e2da1b6bb6cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290861"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087948"
 ---
 # <a name="compiler-warning-level-1-c4926"></a>Derleyici Uyarısı (düzey 1) C4926
-'tanımlayıcısı': sembolü zaten tanımlandı: göz ardı öznitelikleri  
-  
- İleriye dönük bildirimi bulundu ancak aynı ada sahip bir öznitelikli yapısıyla zaten mevcut. İleriye dönük bildirimi özniteliklerini göz ardı edilir.  
-  
- Aşağıdaki örnek C4926 oluşturur:  
-  
-```  
-// C4926.cpp  
-// compile with: /W1  
-[module(name="MyLib")];  
-  
-[coclass]  
-struct a {  
-};  
-  
-[coclass]  
-struct a;   // C4926  
-  
-int main() {  
-}  
+
+'identifier': simge zaten tanımlandı: öznitelikler yoksayıldı
+
+İleri dönük bildirimi bulundu, ancak aynı ada sahip bir öznitelik atanmış yapı zaten mevcut. Öznitelikleri İleri dönük bildirimi için yoksayılır.
+
+Aşağıdaki örnek, C4926 oluşturur:
+
+```
+// C4926.cpp
+// compile with: /W1
+[module(name="MyLib")];
+
+[coclass]
+struct a {
+};
+
+[coclass]
+struct a;   // C4926
+
+int main() {
+}
 ```

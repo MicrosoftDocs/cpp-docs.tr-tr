@@ -16,44 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f40f1065514437463be06a89f01e067c4324cd2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b154941051e1c6887e8e05756befd6a18c62ed72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276002"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091789"
 ---
 # <a name="compiler-error-c3899"></a>Derleyici Hatası C3899
-'var': l-değeri kullanım initonly veri üyesi doğrudan sınıfı 'sınıfı' paralel bir bölgede içinde izin verilmeyen  
-  
- Bir [initonly (C + +/ CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi olan bir oluşturucu kısmı içinde başlatılamıyor bir [paralel](../../parallel/openmp/reference/parallel.md) bölge.  Derleyici bu kodu bir iç konumlandırmasını yaptığından etkili bir şekilde artık Oluşturucusu parçası olan şekilde budur.  
-  
- Çözmek için initonly veri üyesi oluşturucuda ancak paralel bölgesi dışında başlatır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3899 oluşturur.  
-  
-```  
-// C3899.cpp  
-// compile with: /clr /openmp  
-#include <omp.h>   
-  
-public ref struct R {  
-   initonly int x;  
-   R() {  
-      x = omp_get_thread_num() + 1000;   // OK  
-      #pragma omp parallel num_threads(5)  
-      {  
-         // cannot assign to 'x' here  
-         x = omp_get_thread_num() + 1000;   // C3899  
-         System::Console::WriteLine("thread {0}", omp_get_thread_num());  
-      }  
-      x = omp_get_thread_num() + 1000;   // OK  
-   }  
-};  
-  
-int main() {  
-   R^ r = gcnew R;  
-   System::Console::WriteLine(r->x);  
-}  
+
+'var': initonly veri üyesinin lvalue kullanımına doğrudan 'class' sınıfındaki bir paralel bölgenin içinde izin verilmez
+
+Bir [initonly (C + +/ CLI)](../../dotnet/initonly-cpp-cli.md) veri üyesi içinde bir parçası olan bir oluşturucu başlatılamıyor bir [paralel](../../parallel/openmp/reference/parallel.md) bölge.  Derleyici bu kod, dahili bir yeniden konumlandırma gerçekleştirdiğinden etkili bir şekilde artık Oluşturucusu bir parçası olduğu gibi budur.
+
+Çözümlenecek, initonly veri üyesi Oluşturucu, ancak bir paralel bölgenin dışında başlatın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3899 oluşturur.
+
+```
+// C3899.cpp
+// compile with: /clr /openmp
+#include <omp.h>
+
+public ref struct R {
+   initonly int x;
+   R() {
+      x = omp_get_thread_num() + 1000;   // OK
+      #pragma omp parallel num_threads(5)
+      {
+         // cannot assign to 'x' here
+         x = omp_get_thread_num() + 1000;   // C3899
+         System::Console::WriteLine("thread {0}", omp_get_thread_num());
+      }
+      x = omp_get_thread_num() + 1000;   // OK
+   }
+};
+
+int main() {
+   R^ r = gcnew R;
+   System::Console::WriteLine(r->x);
+}
 ```

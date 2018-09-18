@@ -16,31 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 848709fa6cbbbfb4166750f86540de2433a73023
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 90208866ee08d6990d8f1b5322a38fbd2d63a651
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404034"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091796"
 ---
 # <a name="comerrordescription"></a>_com_error::Description
-**Microsoft'a özgü**  
-  
- Çağrıları `IErrorInfo::GetDescription` işlevi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-_bstr_t Description( ) const;  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Sonucunu döndürür `IErrorInfo::GetDescription` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Ortaya çıkan `BSTR` içinde kapsüllenir bir `_bstr_t` nesne. Hayır ise `IErrorInfo` olan kaydedilmemişse, boş bir döndürür `_bstr_t`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Çağrıları `IErrorInfo::GetDescription` işlevi ve alır `IErrorInfo` içinde kaydedilen `_com_error` nesne. Çağrılırken `IErrorInfo::GetDescription` yöntemi göz ardı edilir.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_error Sınıfı](../cpp/com-error-class.md)
+
+**Microsoft'a özgü**
+
+Çağrıları `IErrorInfo::GetDescription` işlevi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+_bstr_t Description( ) const;
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Sonucunu döndürür `IErrorInfo::GetDescription` için `IErrorInfo` nesne kaydedilmiş içinde `_com_error` nesne. Ortaya çıkan `BSTR` içinde kapsüllenir bir `_bstr_t` nesne. Hayır ise `IErrorInfo` olan kaydedilmemişse, boş bir döndürür `_bstr_t`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Çağrıları `IErrorInfo::GetDescription` işlevi ve alır `IErrorInfo` içinde kaydedilen `_com_error` nesne. Çağrılırken `IErrorInfo::GetDescription` yöntemi göz ardı edilir.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_error Sınıfı](../cpp/com-error-class.md)

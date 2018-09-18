@@ -1,5 +1,5 @@
 ---
-title: C komut satırı işlemini özelleştirme | Microsoft Docs
+title: C komut satırı işlemeyi özelleştirme | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -22,19 +22,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 824de86ec0930fb93bf5fa0a2a8ac15a4237e4fb
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 541cfed194262aa5bff6810b19d5d2c89468ffa4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384404"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090821"
 ---
 # <a name="customizing-c-command-line-processing"></a>C Komut Satırı İşlemini Özelleştirme
-Programınızı komut satırı bağımsız değişken almaz, komut satırı işlemini gerçekleştiren kitaplık yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordam adlı **_setargv** (veya **_wsetargv** joker karakter ortamında), açıklandığı gibi [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md). Kullanımını engellemek için dosyayı içeren içinde hiçbir şey yapmaz bir yordamı tanımlayın **ana** işlev ve adlandırın **_setargv** (veya **_wsetargv** geniş karakter ortam). Çağrı **_setargv** veya **_wsetargv** sonra tanımınızı tarafından sağlanıyorsa **_setargv** veya **_wsetargv** , ve kitaplığı sürümü yüklü değil.  
-  
- Benzer şekilde, ortam tabloda hiç erişirseniz `envp` bağımsız değişkeni, yerine kullanılacak kendi boş yordamı sağlayabilir **_setenvp** (veya **_wsetenvp**), ortam işleme yordamı.  
-  
- Programınızı çağrılar yaparsa **_spawn** veya **_exec** C Çalışma Zamanı Kitaplığı'nda yordamları ailesi, size değil bastırmak ortam işleme yordamı geçirmek için bu yordamı kullanıldığından bir Yeni işlem ortamına spawning işlemi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)
+
+Programınızı komut satırı bağımsız değişkenlerini almaz, komut satırı işlemeyi gerçekleştiren yordamı kullanımını gizleme tarafından az miktarda alan kaydedebilirsiniz. Bu yordamı çağrılır **_setargv** (veya **_wsetargv** geniş karakter ortamında) anlatılan şekilde [joker karakter bağımsız değişkenlerini genişletme](../c-language/expanding-wildcard-arguments.md). Kullanımını engellemek için dosya içeren bir şey yapan bir yordam tanımlamak **ana** işlev ve adlandırın **_setargv** (veya **_wsetargv** geniş karakter ortam). Çağrı **_setargv** veya **_wsetargv** ardından tanımınızı tarafından sağlanıyorsa **_setargv** veya **_wsetargv** , ve kitaplık sürümü yüklü değil.
+
+Benzer şekilde, hiçbir zaman ortam tablosuna aracılığıyla erişiyorsanız `envp` bağımsız değişken yerine kullanılacak boş kendi yordamınızı sağlayabilir **_setenvp** (veya **_wsetenvp**), ortam işleme yordamı.
+
+Programınız için çağrılar yaparsa **_spawn** veya **_exec** C Çalışma Zamanı Kitaplığı'ndaki yordamlara ailesi, size değil bastırmak ortam işleme yordamı geçirmek için bu yordamı kullanıldığından bir Yeni işlem ortamı spawning işlemi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[main İşlevi ve Program Yürütme](../c-language/main-function-and-program-execution.md)

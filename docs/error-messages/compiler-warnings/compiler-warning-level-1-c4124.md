@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: accd58c123bcd74e54176eed5eb974c3df33dbab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a69190487c22987ead2d00ec102785ed42ea93c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279324"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090938"
 ---
 # <a name="compiler-warning-level-1-c4124"></a>Derleyici Uyarısı (düzey 1) C4124
-yığın denetlemesi ile birlikte __fastcall yetersiz olduğunu  
-  
- `__fastcall` Anahtar sözcüğü yığın denetimi etkin kullanıldı.  
-  
- `__fastcall` Kuralı daha hızlı kod oluşturur, ancak neden olan daha yavaş kod yığını denetleme. Kullanırken `__fastcall`, ile yığın denetimini devre dışı bırakma **check_stack** pragma veya /Gs.  
-  
- Bu uyarı, yalnızca bu koşullar altında bildirilen ilk işlevi için görüntülenir.
+
+yığın denetimi ile __fastcall yetersiz
+
+`__fastcall` Anahtar sözcüğü, etkin yığın denetimi ile kullanıldı.
+
+`__fastcall` Kuralı daha hızlı kod oluşturur, ancak yığın denetimi daha yavaş kod neden olur. Kullanırken `__fastcall`, yığın ile denetimini kapatır **check_stack** pragma veya /Gs.
+
+Bu uyarı, yalnızca bu koşullar altında bildirilen ilk işlev için görüntülenir.

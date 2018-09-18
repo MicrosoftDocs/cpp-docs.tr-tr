@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3bc07c404a1f4d667045fdfea24009e7d20ad69
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bf03c35c60bebb52c94ed04cca2349f35c06fbc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232639"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093656"
 ---
 # <a name="compiler-error-c2632"></a>Derleyici Hatası C2632
-'type1 'type2' tarafından izlenen' geçersiz  
-  
- Bu hata var. kod iki tür tanımlayıcıları arasında eksikse neden olabilir.  
-  
- Aşağıdaki örnek C2632 oluşturur:  
-  
-```  
-// C2632.cpp  
-int float i;   // C2632  
-```  
-  
- Bu hata, Visual Studio .NET 2003'te yapıldığı derleyici uyumluluğu iş sonucunda de oluşturulabilir. `bool` uygun türde sunulmuştur. Önceki sürümlerde, `bool` bir typedef oldu ve bu adı taşıyan tanımlayıcıları oluşturabilirsiniz.  
-  
- Aşağıdaki örnek C2632 oluşturur:  
-  
-```  
-// C2632_2.cpp  
-// compile with: /LD  
-void f(int bool);   // C2632  
-```  
-  
- Böylece kodu Visual C++, Visual Studio .NET 2003 ve Visual Studio sürümlerinde geçerli bu hatayı gidermek için tanımlayıcı yeniden adlandırın.
+
+'type1 'type2' tarafından izlenen' geçersiz
+
+Bu hata kodu arasında iki tür tanımlayıcıları vardır eksikse, neden olabilir.
+
+Aşağıdaki örnek, C2632 oluşturur:
+
+```
+// C2632.cpp
+int float i;   // C2632
+```
+
+Bu hata, Visual Studio .NET 2003'te yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir. `bool` düzgün türe sunulmuştur. Önceki sürümlerde, `bool` typedef oluştu ve bu ada sahip tanımlayıcılar oluşturabilirsiniz.
+
+Aşağıdaki örnek, C2632 oluşturur:
+
+```
+// C2632_2.cpp
+// compile with: /LD
+void f(int bool);   // C2632
+```
+
+Kod Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümlerinde geçerli olmasını sağlayacak şekilde bu hatayı gidermek için tanımlayıcı yeniden adlandırın.

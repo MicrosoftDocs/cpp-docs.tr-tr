@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edfe84b767136d5ea7e2dcb0b47a06474020c074
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: d674b2e3049d27f0e79eb082a44640f67a395dea
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46097908"
 ---
 # <a name="cwndclassinfo-class"></a>Cwndclassınfo sınıfı
 
@@ -185,7 +185,7 @@ ATOM Register(WNDPROC* pProc);
 
 ### <a name="parameters"></a>Parametreler
 
-*pProc*  
+*pProc*<br/>
 [out] Özgün pencere yordamını, var olan bir pencere sınıfını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -200,5 +200,5 @@ Belirttiyseniz [DECLARE_WND_SUPERCLASS](window-class-macros.md#declare_wnd_super
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

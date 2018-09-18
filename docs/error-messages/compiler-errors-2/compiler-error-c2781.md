@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa42627085494047e10644f86a938b9311cb1625
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3662a1be167f6a443606139ff49daebc5c923eec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235527"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095488"
 ---
 # <a name="compiler-error-c2781"></a>Derleyici Hatası C2781
-'bildirimi': en az bekliyor value1 bağımsız değişken - sağlanan value2  
-  
- Değişken parametre listesi işlevi şablonla çok az bağımsız değişkenlere sahiptir.  
-  
- Aşağıdaki örnek C2781 oluşturur:  
-  
-```  
-// C2781.cpp  
-template<typename T>  
-void f(T, T, ...){}  
-  
-int main() {  
-   f(1);   // C2781  
-  
-   // try the following line instead  
-   f(1,1);  
-}  
+
+'bildirim': en az bekliyor value1 bağımsız değişkeni - sağlanan value2
+
+Değişken parametre listesine sahip bir işlev şablonu çok az sayıda bağımsız değişken var.
+
+Aşağıdaki örnek, C2781 oluşturur:
+
+```
+// C2781.cpp
+template<typename T>
+void f(T, T, ...){}
+
+int main() {
+   f(1);   // C2781
+
+   // try the following line instead
+   f(1,1);
+}
 ```

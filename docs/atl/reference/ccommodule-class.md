@@ -41,12 +41,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eb135fc68e11a5af86fdccde949b8e1761160625
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: faf3080c6363ef0227b71e550ff658b1790d37b9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753285"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090704"
 ---
 # <a name="ccommodule-class"></a>CComModule sınıfı
 
@@ -144,13 +144,13 @@ HRESULT GetClassObject(
 
 ### <a name="parameters"></a>Parametreler
 
-*rclsid*  
+*rclsid*<br/>
 [in] Oluşturulacak nesnenin CLSID.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki.
 
-*ppv*  
+*ppv*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppv* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -224,13 +224,13 @@ HRESULT Init(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 [in] Bir nesne eşleme girişleri dizisine bir işaretçi.
 
-*h*  
+*h*<br/>
 [in] Geçirilen HINSTANCE `DLLMain` veya `WinMain`.
 
-*plibid*  
+*plibid*<br/>
 [in] Projeyle ilişkili tür kitaplığının Kitaplık kimliği için bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -350,19 +350,19 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] CLSID kaydedilecek nesne.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] Nesneyle ilişkili ProgID.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] Sürümden bağımsız bir nesneyle ilişkili ProgID.
 
-*nDescID*  
+*nDescID*<br/>
 [in] Nesnenin tanımı için bir dize kaynağı tanımlayıcısı.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 [in] Kayıt defterinde girmek için iş parçacığı modelini belirtir. Olası değerler şunlardır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -385,10 +385,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwClsContext*  
+*dwClsContext*<br/>
 [in] Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER. Bu değerlerin açıklaması için bkz [CLSCTX](https://msdn.microsoft.com/library/windows/desktop/ms693716) Windows SDK.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 [in] Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE. Bu değerlerin açıklaması için bkz [REGCLS](/windows/desktop/api/combaseapi/ne-combaseapi-tagregcls) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -411,10 +411,10 @@ HRESULT RegisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 [in] Tür kitaplığı kayıtlı olup olmadığını gösterir. Varsayılan değer FALSE olur.
 
-*pCLSID*  
+*pCLSID*<br/>
 [in] CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -442,7 +442,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszIndex*  
+*lpszIndex*<br/>
 [in] Biçim dizesindeki `"\\N"`burada `N` TYPELIB kaynak tamsayı dizinidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -496,13 +496,13 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] CLSID kaydı nesnesi.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 [in] Nesneyle ilişkili ProgID.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 [in] Sürümden bağımsız bir nesneyle ilişkili ProgID.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -526,10 +526,10 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 
 ### <a name="parameters"></a>Parametreler
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 TRUE ise tür kitaplığı da kaydı.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -568,25 +568,25 @@ ATL_DEPRECATED HRESULT UpdateRegistryClass(
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 Kayıtlı veya Kayıtsız CLSID nesne.
 
-*lpszProgID*  
+*lpszProgID*<br/>
 Nesneyle ilişkili ProgID.
 
-*lpszVerIndProgID*  
+*lpszVerIndProgID*<br/>
 Sürümden bağımsız bir nesneyle ilişkili ProgID.
 
-*nDescID*  
+*nDescID*<br/>
 Nesnenin açıklamasını için dize kaynağı tanımlayıcısı.
 
-*szDesc*  
+*szDesc*<br/>
 Nesnenin açıklamasını içeren bir dize.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Kayıt defterinde girmek için iş parçacığı modelini belirtir. Olası değerler şunlardır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
-*bRegister*  
+*bRegister*<br/>
 Nesne kayıtlı olup olmadığını gösterir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -621,16 +621,16 @@ virtual HRESULT UpdateRegistryFromResourceD(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] Bir kaynak adı.
 
-*nResID*  
+*nResID*<br/>
 [in] Bir kaynak kimliği
 
-*bRegister*  
+*bRegister*<br/>
 [in] Nesne kayıtlı olup olmadığını gösterir.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL otomatik olarak kullanan `%MODULE%`. Ek değiştirilebilir parametreler kullanmak için açıklamalar Ayrıntılar için bkz. Aksi takdirde, NULL varsayılan değeri kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -671,16 +671,16 @@ virtual HRESULT UpdateRegistryFromResourceS(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszRes*  
+*lpszRes*<br/>
 [in] Bir kaynak adı.
 
-*nResID*  
+*nResID*<br/>
 [in] Bir kaynak kimliği
 
-*bRegister*  
+*bRegister*<br/>
 [in] Kaynak betiği kayıtlı olup olmadığını gösterir.
 
-*pMapEntries*  
+*pMapEntries*<br/>
 [in] Betiğin değiştirilebilir parametreler ile ilişkili değerleri depolamayı değiştirme eşlemesi için bir işaretçi. ATL otomatik olarak kullanan `%MODULE%`. Ek değiştirilebilir parametreler kullanmak için açıklamalar Ayrıntılar için bkz. Aksi takdirde, NULL varsayılan değeri kullanın.
 
 ### <a name="return-value"></a>Dönüş Değeri

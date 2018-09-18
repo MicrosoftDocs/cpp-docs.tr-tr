@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c70c89c927dca59f9bc242245d19f91e9e4a3894
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4bfdfefa0ee66093708ea7f839d7fbe8630ffe81
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332097"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46093473"
 ---
 # <a name="resource-compiler-error-rc2103"></a>Kaynak Derleyicisi Hatası RC2103
-beklenmeyen dosya sonu dize sabit değeri içinde  
-  
- Bir dosya sonu önce bir dize sonu bulundu. Dizeyi büyük olasılıkla kapanış çift tırnak işareti eksik (**"**).
+
+beklenmeyen dosya sonu içinde dize sabit değeri
+
+Bir dizenin bitiminden önce bir dosya sonu bulundu. Dize, büyük olasılıkla kapanış çift tırnak işareti eksik (**"**).

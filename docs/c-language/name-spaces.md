@@ -20,47 +20,44 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b0fe8a097da3de67d149665928524395988c730
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 269d0eb39b29ccc9dcb09446e7db73a68d8c1188
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390066"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46090061"
 ---
 # <a name="name-spaces"></a>Ad Alanları
-"Ad alanları" derleyici ayarlar farklı türde öğe için kullanılan tanımlayıcıları ayırt etmek için. Her ad alanı içinde adları çakışmayı önlemek için benzersiz olmalıdır, ancak aynı adı birden fazla ad alanı görünebilir. Farklı ad alanlarında öğeleri olması koşuluyla iki veya daha fazla farklı öğeler için aynı tanımlayıcısı kullanabileceğiniz anlamına gelir. Derleyici program tanımlayıcıda söz dizimi bağlamında göre başvuruları çözebilirsiniz.  
-  
+
+"Ad alanları" derleyici ayarlar farklı türlerde öğeler için kullanılan tanımlayıcıları ayırt etmek için. Her ad alanı içinde adları çakışmayı önlemek için benzersiz olmalıdır, ancak aynı ada birden fazla ad alanı içinde görünebilir. Öğeleri farklı bir ad boşluk olması koşuluyla bu iki veya daha fazla farklı öğeler için aynı tanımlayıcıyı kullanabileceğiniz anlamına gelir. Derleyici program tanımlayıcıda söz dizimi bağlamında dayalı başvuruları çözebilirsiniz.
+
 > [!NOTE]
->  Bir ad alanı C++ "ad" özelliği ile sınırlı C kavramı karıştırmayın. Bkz: [ad alanları](../cpp/namespaces-cpp.md) c *++ dil başvurusu* daha fazla bilgi için.  
-  
- Bu liste c dilinde kullanılan ad alanları açıklar  
-  
- Deyimi etiketleri  
- Adlandırılmış deyimi etiketleri deyimleri bir parçasıdır. Deyimi etiketleri tanımları her zaman iki nokta üst üste ancak parçası olan tarafından izlenen **durumda** etiketler. Her zaman deyimi etiketleri kullanımlarını hemen anahtar sözcüğü izleyin `goto`. Deyimi etiketleri diğer adlarını veya diğer işlevleri etiket adları farklı olması gerekmez.  
-  
- Yapısı, union ve numaralandırma etiketleri  
- Bu etiketler tür tanımlayıcıları yapısı, union ve numaralandırma parçası olan ve, varsa, her zaman hemen ayrılmış sözcükler izleyin `struct`, **UNION**, veya `enum`. Etiket adları tüm diğer yapısı, numaralandırma veya aynı görünürlük birleşim etiketleriyle farklı olması gerekir.  
-  
- Yapıları veya birleşimler üyeleri  
- Üye adlarının her yapı ve birleşim türü ile ilişkili ad alanları ayrılır. Diğer bir deyişle, aynı tanımlayıcısı aynı anda yapıları veya birleşimler herhangi bir sayıda bir bileşen adı olabilir. Bileşen adlarına tanımlarını yapısı veya birleşim türü tanımlayıcıları içinde her zaman oluşur. Her zaman bileşen adlarına kullanımlarını hemen üye seçim işleçleri izleyin (**->** ve **.**). Üyenin adını yapı veya birleşim içinde benzersiz olmalıdır, ancak farklı yapılar ve birleşimleri, üyelerin adları dahil olmak üzere bu programı başka bir adı ya da yapısı adı farklı olması gerekmez.  
-  
- Sıradan tanımlayıcıları  
- Tüm diğer adları değişkenler, İşlevler (resmi parametreleri ve yerel değişkenleri dahil) ve numaralandırma sabitleri içeren bir ad alanı ayrılır. İçinde blok tanımlayabilirsiniz şekilde tanımlayıcı adları görünürlük, iç içe.  
-  
- TypeDef adları  
- TypeDef adları aynı kapsamda tanımlayıcıları olarak kullanılamaz.  
-  
- Yapı etiketleri, Yapı üyeleri ve değişken adları üç farklı ad alanlarında olduğundan, örneğin, üç öğe adlı `student` Bu örnekte çakışmasını. Bağlamın her öğenin her oluşumu doğru yorumu izin `student` programı. (Yapıları hakkında daha fazla bilgi için bkz: [yapı bildirimleri](../c-language/structure-declarations.md).)  
-  
-```  
-struct student {  
-   char student[20];  
-   int class;  
-   int id;  
-   } student;  
-```  
-  
- Zaman `student` sonra görünen `struct` anahtar sözcüğü, derleyicisi tanır, yapısı etiketi olarak. Zaman `student` üye seçimi işlecinden sonra görüntülenir (**->** veya **.**), ad yapısı üyesine başvuruyor. Diğer bağlamlarda `student` yapısı değişkenine başvuruyor. Anlamı gizler beri ancak etiketi ad alanı aşırı önerilmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Program Yapısı](../c-language/program-structure.md)
+>  Bir ad alanı C++ "ad" özelliği ile sınırlı C kavramı karıştırmayın. Bkz: [ad alanları](../cpp/namespaces-cpp.md) C'de *++ dil başvurusu* daha fazla bilgi için.
+
+Bu liste C'de kullanılan ad alanları açıklar.
+
+Deyim etiketleri adlandırılmış deyim etiketleri deyimleri bir parçasıdır. Deyim etiketleri tanımları her zaman bir iki nokta üst üste ancak parçası değildir tarafından izlenen **çalışması** etiketler. Hemen izleyin anahtar sözcüğü her zaman deyim etiketleri kullanımları `goto`. Deyim etiketleri diğer adlarını veya diğer işlevlerinde etiket adları benzersiz olması gerekmez.
+
+Yapı, birleşim ve numaralandırma etiketleri bu etiketleri yapı, birleşim ve numaralandırma tür tanımlayıcıları parçasıdır ve, varsa, ayrılmış sözcükler her zaman hemen izleyin `struct`, **birleşim**, veya `enum`. Etiket adları tüm diğer yapısı, sabit listesi ya da aynı görünürlük birleşim etiketlerle farklı olmalıdır.
+
+Üyeleri yapıları veya birleşimler üye adları, her yapı ve birleşim türü ile ilişkili ad alanları ayrılır. Diğer bir deyişle, aynı tanımlayıcıyı aynı anda yapıları veya birleşimler sayısında herhangi bir bileşen adı olabilir. Bileşen adlarına tanımlarını, yapı veya birleşim türü belirticisi içinde her zaman oluşur. Bileşen adlarına her zaman kullanımları üye seçim işleçleri hemen izleyin (**->** ve **.**). Bir üyenin adını yapı veya birleşim içinde benzersiz olmalıdır, ancak farklı yapılar ve birleşimler, üye adlarını da dahil olmak üzere, programdaki diğer adları ya da yapının adını benzersiz olması gerekmez.
+
+Sıradan tanımlayıcıları, diğer tüm adların değişkenler, İşlevler (biçimsel parametreler ve yerel değişkenler dahil) ve numaralandırma sabitlerini içeren bir ad alanı ayrılır. Tanımlayıcı adları içinde blok tanımlayabilirsiniz böylece görünürlük, iç içe.
+
+TypeDef adları Typedef adları aynı kapsamda tanımlayıcı olarak kullanılamaz.
+
+Örneğin, yapı etiketleri, Yapı üyeleri ve değişken adları üç farklı bir ad alanı olduğundan, üç öğeye adlı `student` Bu örnekte çakışmasını. Her bir öğenin bağlam her geçtiği doğru yorumlanması izin `student` programı. (Yapıları hakkında daha fazla bilgi için bkz: [yapı bildirimleri](../c-language/structure-declarations.md).)
+
+```
+struct student {
+   char student[20];
+   int class;
+   int id;
+   } student;
+```
+
+Zaman `student` sonra görünen `struct` anahtar sözcüğü, derleyiciye tanır, yapısı etiket olarak. Zaman `student` üye seçme işlecinden sonra görünür (**->** veya **.**), yapı üyesine adıdır. Diğer bağlamlarda `student` yapısı değişkenine başvuruyor. Anlamı gizler beri ancak etiket ad alanı aşırı önerilmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Program Yapısı](../c-language/program-structure.md)

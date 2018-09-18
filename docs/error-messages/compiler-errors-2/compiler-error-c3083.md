@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7e0a60fbe976e8ab511efce8fc46d59e473958a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28bc0a42aa6f6f59c9241a615764b474b23957b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253052"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46091645"
 ---
 # <a name="compiler-error-c3083"></a>Derleyici Hatası C3083
-'function': simgenin sol tarafındaki bir '::' bir tür olmalıdır  
-  
- Bir işlevin yanlış çağrıldı.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3083 oluşturur.  
-  
-```  
-// C3083.cpp  
-// compile with: /c  
-struct N {  
-   ~N();  
-};  
-  
-struct N1 {  
-   ~N1();  
-};  
-  
-N::N::~N() {}   // C3083  
-N1::~N1() {}   // OK  
+
+'function': sol tarafındaki simge bir '::' bir tür olmalıdır
+
+Bir işlevin yanlış çağrıldı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3083 oluşturur.
+
+```
+// C3083.cpp
+// compile with: /c
+struct N {
+   ~N();
+};
+
+struct N1 {
+   ~N1();
+};
+
+N::N::~N() {}   // C3083
+N1::~N1() {}   // OK
 ```

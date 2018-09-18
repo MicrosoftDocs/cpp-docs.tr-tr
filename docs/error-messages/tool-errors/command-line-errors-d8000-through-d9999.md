@@ -12,16 +12,16 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e608745f4c10d915ee0fc8a2cdad2f372f81046c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1bed2202c8dc7f6372a102eb3926ac49d568793a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302548"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46096710"
 ---
 # <a name="command-line-errors-d8000-through-d9999"></a>Komut Satırı Hataları D8000 - D9999
 
-Bu bölümdeki makaleleri derleme araçları tarafından oluşturulan komut satırı hataları için bir başvuru sağlar.
+Bu bölümdeki makaleler, derleme araçlarının ürettiği komut satırı hataları bir başvuru sağlar.
 
 [!INCLUDE[error-boilerplate](../../error-messages/includes/error-boilerplate.md)]
 
@@ -63,4 +63,4 @@ Bu bölümdeki makaleleri derleme araçları tarafından oluşturulan komut sat�
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C/C++ Derleme Hataları](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)  
+[C/C++ Derleme Hataları](../../error-messages/compiler-errors-1/c-cpp-build-errors.md)

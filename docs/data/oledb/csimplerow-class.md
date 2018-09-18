@@ -46,14 +46,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d5d824529e80319d95e00b6a3831af90a9506a03
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: aa4953c5ba879f5fa0fe8c5b892f91dfa8d15dc9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464882"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46095224"
 ---
 # <a name="csimplerow-class"></a>CSimpleRow Sınıfı
+
 Satır tanıtıcısı kullanılan bir varsayılan uygulamasını sağlar [Irowsetımpl](../../data/oledb/irowsetimpl-class.md) sınıfı.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -63,7 +64,8 @@ class CSimpleRow
 ```  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
 
 ## <a name="members"></a>Üyeler  
   
@@ -72,7 +74,7 @@ class CSimpleRow
 |||  
 |-|-|  
 |[AddRefRow](#addrefrow)|Var olan bir satır işleyici için bir başvuru sayısı ekler.|  
-|[Karşılaştırma](#compare)|Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.|  
+|[Compare](#compare)|Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.|  
 |[CSimpleRow](#csimplerow)|Oluşturucu.|  
 |[ReleaseRow](#releaserow)|Satır serbest bırakır.|  
   
@@ -84,9 +86,11 @@ class CSimpleRow
 |[m_iRowset](#irowset)|İmleç temsil eden satır kümesi için bir dizin.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bir satır tanıtıcı, mantıksal bir sonuç satırı için benzersiz bir etiket değil. `IRowsetImpl` Yeni bir oluşturur `CSimpleRow` her satır içinde istenen için [Irowsetımpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` Satır tanıtıcısı ile kendi uygulaması, varsayılan şablon bağımsız değişkeni olarak da değiştirilebilir `IRowsetImpl`. Türünde tek bir parametre kabul eden bir oluşturucu sağlayın değiştirme sınıfı için bu sınıf değiştirmek için tek gereksinim olmasıdır **uzun**.  
+
+Bir satır tanıtıcı, mantıksal bir sonuç satırı için benzersiz bir etiket değil. `IRowsetImpl` Yeni bir oluşturur `CSimpleRow` her satır içinde istenen için [Irowsetımpl::GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` Satır tanıtıcısı ile kendi uygulaması, varsayılan şablon bağımsız değişkeni olarak da değiştirilebilir `IRowsetImpl`. Türünde tek bir parametre kabul eden bir oluşturucu sağlayın değiştirme sınıfı için bu sınıf değiştirmek için tek gereksinim olmasıdır **uzun**.  
 
 ## <a name="addrefrow"></a> CSimpleRow::AddRefRow
+
 Başvuru sayısı için mevcut bir satır tanıtıcısı iş parçacığı açısından güvenli bir şekilde ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -96,6 +100,7 @@ DWORD AddRefRow();
 ```  
 
 ## <a name="compare"></a> CSimpleRow::Compare
+
 Aynı satır örneğine başvurmak görmek için iki satır karşılaştırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -105,13 +110,16 @@ HRESULT Compare(CSimpleRow* pRow);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *pRow*  
- Bir işaretçi bir `CSimpleRow` nesne.  
+
+*pRow*<br/>
+Bir işaretçi bir `CSimpleRow` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için. 
+
+Genellikle S_OK HRESULT değerini, iki satır aynı satır örneği mı S_FALSE, iki satır belirten farklı belirten. Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* diğer olası dönüş değerleri için. 
 
 ## <a name="csimplerow"></a> CSimpleRow::CSimpleRow
+
 Oluşturucu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -121,13 +129,16 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *iRowsetCur*  
- [in] Geçerli satır kümesi için dizin.  
+
+*iRowsetCur*<br/>
+[in] Geçerli satır kümesi için dizin.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Kümeleri [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) için *iRowsetCur*. 
+
+Kümeleri [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) için *iRowsetCur*. 
 
 ## <a name="releaserow"></a> CSimpleRow::ReleaseRow
+
 Satır iş parçacığı açısından güvenli bir şekilde serbest bırakır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -137,6 +148,7 @@ DWORD ReleaseRow();
 ```  
 
 ## <a name="dwref"></a> CSimpleRow::m_dwRef
+
 Var olan bir satır işlemek için başvuru sayısı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -146,6 +158,7 @@ DWORD m_dwRef;
 ```  
 
 ## <a name="irowset"></a> CSimpleRow::m_iRowset
+
 İmleç temsil eden satır dizini.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -155,6 +168,7 @@ KeyType m_iRowset;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)   
- [IRowsetImpl Sınıfı](../../data/oledb/irowsetimpl-class.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)<br/>
+[IRowsetImpl Sınıfı](../../data/oledb/irowsetimpl-class.md)

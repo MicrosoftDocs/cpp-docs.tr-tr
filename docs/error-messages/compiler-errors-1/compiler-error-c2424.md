@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ca2228929f99431bdec163e4c2dae60cbd42e3ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 268d1b6cb0fe51c44e4f84663de268299834f4b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195964"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46086986"
 ---
 # <a name="compiler-error-c2424"></a>Derleyici Hatası C2424
-'belirteci': 'context' ın hatalı ifade  
-  
- Bu bağlamda yanlış bir ifade belirteci forms bölümü.
+
+'token': 'context' içinde uygun olmayan ifade
+
+Belirteç, bu bağlamda yanlış bir ifade parçası oluşturur.

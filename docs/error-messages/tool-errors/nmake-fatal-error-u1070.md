@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1fe39a5d6f6074596561cd8e32f7b9428bc60f6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6eb462e5c3c7e497cde55151bf92c62ffb2afcd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327047"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46087025"
 ---
 # <a name="nmake-fatal-error-u1070"></a>NMAKE Önemli Hatası U1070
-Makro tanımı 'makroadı' döngüsü  
-  
- Verilen makro tanımı verilen makro tanımlarını içeren bir makro içeriyor. Döngüsel makro tanımı geçersiz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki makrosu tanımları  
-  
-```  
-ONE=$(TWO)  
-TWO=$(ONE)  
-```  
-  
- Aşağıdaki hata neden:  
-  
-```  
-cycle in macro definition 'TWO'  
+
+'makroadı' Makro tanımında döngü
+
+Belirli bir Makro tanımında belirtilen Makro tanımında yer alan bir makro içeriyordu. Döngüsel makro tanımları geçersizdir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki makro tanımları
+
+```
+ONE=$(TWO)
+TWO=$(ONE)
+```
+
+Aşağıdaki hata neden:
+
+```
+cycle in macro definition 'TWO'
 ```
