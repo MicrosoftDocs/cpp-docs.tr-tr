@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e21213f08e25050932274a64d0ed56db96f2a453
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b4977f4a5ac81cf4c04d3b143f6f7e670a9d9279
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170849"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049624"
 ---
 # <a name="compiler-error-c2299"></a>Derleyici Hatası C2299
-'function': davranış değişikliği: kopya oluşturucu veya kopya atama işleci açık uzmanlık olamaz  
-  
- Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucunda da oluşturulabilir: önceki sürümlerinde Visual C++, izin verilen açık özelleştirmeleri kopya oluşturucu veya bir kopya atama işleci.  
-  
- C2299 gidermek için kopya oluşturucu veya atama işleci bir şablon işlevi, ancak bunun yerine bir sınıf türü isteyen bir şablon olmayan işlevi yapmayın. Şablon bağımsız değişken kaldırmak kopya oluşturucu veya atama işleci açıkça bağımsız şablon belirterek çağıran herhangi bir kod gerekir.  
-  
- Aşağıdaki örnek C2299 oluşturur:  
-  
-```  
-// C2299.cpp  
-// compile with: /c  
-class C {  
-   template <class T>  
-   C (T t);  
-  
-   template <> C (const C&);   // C2299  
-   C (const C&);   // OK  
-};  
+
+'function': davranış değişikliği: bir açık özelleştirme bir kopya Oluşturucusu veya kopya atama işleci olamaz
+
+Bu hata için Visual C++ 2005 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: Visual C++'ın önceki sürümlerinde izin verilen açık uzmanlık bir kopya Oluşturucusu veya kopya atama işleci.
+
+C2299 gidermek için kopya oluşturucu veya atama işleci bir şablon işlevi, ancak bunun yerine bir sınıf türü alan bir şablon olmayan işlev yapmayın. Şablon bağımsız değişkenlerini kaldırmak şablon bağımsız değişkenleri açıkça belirterek kopya oluşturucu veya atama işlecini çağıran herhangi bir kod gerekir.
+
+Aşağıdaki örnek, C2299 oluşturur:
+
+```
+// C2299.cpp
+// compile with: /c
+class C {
+   template <class T>
+   C (T t);
+
+   template <> C (const C&);   // C2299
+   C (const C&);   // OK
+};
 ```

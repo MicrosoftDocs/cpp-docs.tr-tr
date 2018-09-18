@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 411a8d62de801591ff6a90a7bf74f3b2cfe67c7a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99d9a1be42a36baac2037e4289cb24db2f45b563
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225436"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050547"
 ---
 # <a name="compiler-error-c2395"></a>Derleyici Hatası C2395
-' your_type::operator'op'': CLR veya WinRT işleci geçerli değil. En az bir parametre aşağıdaki türden olması gerekir: 'T', 'T %', 'T &', 'T ^', 'T ^ %', 'T ^ &', burada T 'your_type' =  
-  
- Windows çalışma zamanı veya yönetilen türü bir işleç türü işleci döndürülen değerin türü ile aynı olan en az bir parametre içermiyor.  
-  
- Aşağıdaki örnek C2395 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2395.cpp  
-// compile with: /clr /c  
-value struct V {  
-   static V operator *(int i, char c);   // C2395  
-  
-   // OK  
-   static V operator *(V v, char c);  
-   // or  
-   static V operator *(int i, V& rv);  
-};  
+
+' your_type::operator'op'': CLR veya WinRT işleci geçerli değil. En az bir parametre aşağıdaki türlerde olmalıdır: 'T', 'T %', 'T &', 'T ^', 'T ^ %', 'T ^ &', burada T = 'your_type'
+
+Bir Windows çalışma zamanı veya yönetilen türü bir işleç türü işleç dönüş değerinin türü ile aynı olan en az bir parametre yok.
+
+Aşağıdaki örnek, C2395 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2395.cpp
+// compile with: /clr /c
+value struct V {
+   static V operator *(int i, char c);   // C2395
+
+   // OK
+   static V operator *(V v, char c);
+   // or
+   static V operator *(int i, V& rv);
+};
 ```

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6d288434cce1e1584a61040145b07d26defd9dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bbb3283ff4d27b6c939434ac3df8f8c1febf0eb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169731"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051431"
 ---
 # <a name="compiler-error-c2153"></a>Derleyici Hatası C2153
-onaltılık sabitleri en az bir onaltılık sayı olmalıdır  
-  
- Onaltılık sabitleri 0 x, 0 X ve \x geçerli değildir. En az bir onaltılık sayı uymalıdır x ya da X.  
-  
- Aşağıdaki örnek C2153 oluşturur:  
-  
-```  
-// C2153.cpp  
-int main() {  
-   int a= 0x;    // C2153  
-   int b= 0xA;   // OK  
-}  
+
+onaltılık sabitlerde en az bir onaltılık basamak olmalıdır
+
+Onaltılık sabitler 0 x, 0 X ve \x geçerli değildir. En az bir onaltılık basamak izlemelidir x ya da X.
+
+Aşağıdaki örnek, C2153 oluşturur:
+
+```
+// C2153.cpp
+int main() {
+   int a= 0x;    // C2153
+   int b= 0xA;   // OK
+}
 ```

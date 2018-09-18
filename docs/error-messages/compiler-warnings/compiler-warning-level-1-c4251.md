@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 366d66a38685e75e47d8921f9ebd525b334ced7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad47d769dbfd09cc741be18598355dc34486bd54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282138"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045698"
 ---
 # <a name="compiler-warning-level-1-c4251"></a>Derleyici Uyarısı (düzey 1) C4251
-'tanımlayıcısı': Sınıf 'type' sınıfı 'type2' istemciler tarafından kullanılacak dll arabirimi olması gerekiyor  
-  
- Bir sınıfla verilirken veri bozulması olasılığını en aza indirmek için [__declspec(dllexport)](../../cpp/dllexport-dllimport.md), emin olun:  
-  
--   Tüm statik verilerinizi DLL'den dışarı aktarılan işlevler aracılığıyla erişimi var.  
-  
--   Sınıfınızın içermesinden hiçbir yöntemi statik verileri değiştirebilirsiniz.  
-  
--   Hiçbir satır içi yöntemi sınıfınızın CRT işlevleri veya statik verileri diğer kitaplık işlevleri kullanın (bkz [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md) daha fazla bilgi için).  
-  
--   Hiçbir yöntemi sınıfınızın (bağımsız olarak, satır içi kullanım) örnekleme EXE ve DLL içinde statik verileri farklılıkları olduğu türlerini kullanabilirsiniz.  
-  
- Sanal işlevlere sahip bir sınıf tanımlar ve işlevleri DLL örneği oluşturmak için çağırabilirsiniz tanımlama ve delete Nesne türü tarafından sınıfları dışarı aktarma önleyebilirsiniz.  Ardından yalnızca sanal işlevler türüne çağırabilirsiniz.  
-  
- Şablonları dışarı aktarma ile ilgili daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).  
-  
- C4251 dikkate bir tür kitaplığı'nda C++ standart bir hata ayıklama yayın derleme türetme varsa (**/MTd**) ve derleyici hata iletisi için _Container_base olduğu anlamına gelir.  
-  
-```  
-// C4251.cpp  
-// compile with: /EHsc /MTd /W2 /c  
-#include <vector>  
-using namespace std;  
-class Node;  
-class __declspec(dllimport) VecWrapper : vector<Node *> {};   // C4251  
+
+'identifier': Sınıf 'type' sınıfı 'type2' istemcileri tarafından kullanılacak dll arabirimi olması gerekiyor
+
+Bir sınıf ile dışarı aktarılırken veri bozulması olasılığını en aza indirmek için [__declspec(dllexport)](../../cpp/dllexport-dllimport.md), emin olun:
+
+- Tüm statik verileri DLL'den dışa aktarılan işlevleri aracılığıyla erişimi var.
+
+- Hiçbir satır içine alınmış yöntemleri sınıfının statik verileri değiştirebilir.
+
+- Hiçbir satır içine alınmış bir yöntem sınıfınızın CRT işlevleri veya diğer kitaplık işlevleri statik veri kullanabilirsiniz (bkz [olası hataları geçirme CRT nesnelerini DLL sınırlar boyunca](../../c-runtime-library/potential-errors-passing-crt-objects-across-dll-boundaries.md) daha fazla bilgi için).
+
+- Sınıfınızın yöntemlerin hiçbiri (bağımsız olarak, satır içi kullanım) örnekleme EXE ve DLL içinde statik veri farklar olduğu türlerini kullanabilirsiniz.
+
+Sanal işlevler içeren bir sınıf tanımlar ve işlevleri bir DLL örneklemek için çağırabilirsiniz tanımlama ve türe ait nesneleri silme tarafından sınıfları dışarı aktarma önleyebilirsiniz.  Ardından yalnızca sanal işlevler türüne çağırabilirsiniz.
+
+Şablonları dışarı aktarma ile ilgili daha fazla bilgi için bkz: [ http://support.microsoft.com/default.aspx?scid=KB; EN-US; 168958](http://support.microsoft.com/default.aspx?scid=KB;EN-US;168958).
+
+C4251 yoksayılan bir tür kitaplığı'nda C++ standart hata ayıklama yayın derleme türetme varsa (**/mtd**) ve derleyici hata iletisinin _Container_base için burada ifade eder.
+
+```
+// C4251.cpp
+// compile with: /EHsc /MTd /W2 /c
+#include <vector>
+using namespace std;
+class Node;
+class __declspec(dllimport) VecWrapper : vector<Node *> {};   // C4251
 ```

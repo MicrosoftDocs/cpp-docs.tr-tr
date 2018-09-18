@@ -19,24 +19,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31914118283c9d0c5c502e3426ba12e86d7c7680
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ff4e032e205680da84369075514e3177fa5fb33e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385175"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051028"
 ---
 # <a name="simple-assignment-c"></a>Basit Atama (C)
-Basit atama işlecinin sağ işleneni, sol işleneni atar. Sağ işleneni değerini atama ifadesi türüne dönüştürüldü ve sol işleneni tarafından belirlenen nesnesinde depolanan değerle değiştirir. Atama dönüştürme kurallarını uygulayın (bkz [atama dönüşümleri](../c-language/assignment-conversions.md)).  
-  
-```  
-double x;  
-int y;  
-  
-x = y;  
-```  
-  
- Bu örnekte, değeri `y` türüne dönüştürülüp **çift** ve atanan `x`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Atama İşleçleri](../c-language/c-assignment-operators.md)
+
+Basit atama işleci, sağ işlenen, sol işleneniyle atar. Sağ işlenen değer atama ifadesi türüne dönüştürülür ve sol işlenen tarafından belirtilen nesnede depolanan nesneyle değiştirir. Uygulama ataması için dönüştürme kuralları (bkz [atama dönüştürmeleri](../c-language/assignment-conversions.md)).
+
+```
+double x;
+int y;
+
+x = y;
+```
+
+Bu örnekte, değerini `y` türüne dönüştürülür **çift** ve atanan `x`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Atama İşleçleri](../c-language/c-assignment-operators.md)

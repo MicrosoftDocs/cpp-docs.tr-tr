@@ -23,14 +23,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: d934e9ae5494b934acb0779665ba4471dfc4c2b7
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 7f148176b8d5d0c85f3e899cfd117bbb381794b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42466070"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047401"
 ---
 # <a name="idbcreatesessionimpl-class"></a>IDBCreateSessionImpl Sınıfı
+
 Bir uygulamasını sağlar [IDBCreateSession](/previous-versions/windows/desktop/ms724076\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -42,14 +43,16 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- TÜRETİLMİŞ SINIFINIZIN  
+
+*T*<br/>
+TÜRETİLMİŞ SINIFINIZIN  
   
- *SessionClass*  
- Oturum nesnesi.  
+*SessionClass*<br/>
+Oturum nesnesi.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h 
+
+**Başlık:** atldb.h 
   
 ## <a name="members"></a>Üyeler  
   
@@ -60,9 +63,11 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 |[CreateSession](#createsession)|Veri kaynağı nesnesinin yeni bir oturum oluşturur ve yeni oluşturulan oturum istenen arabirim döndürür.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Veri kaynağı nesneleri üzerinde zorunlu bir arabirim.  
+
+Veri kaynağı nesneleri üzerinde zorunlu bir arabirim.  
 
 ## <a name="createsession"></a> Idbcreatesessionımpl::createsession
+
 Veri kaynağı nesnesinin yeni bir oturum oluşturur ve yeni oluşturulan oturum istenen arabirim döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -74,8 +79,10 @@ STDMETHOD(CreateSession)(IUnknown * pUnkOuter,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
+
+Bkz: [IDBCreateSession::CreateSession](/previous-versions/windows/desktop/ms714942\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

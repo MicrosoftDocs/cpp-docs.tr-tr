@@ -344,12 +344,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e9e12409320bd82e25f94c02cba83b946252fff
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d3c5f68d35c4cf77073de3f8d2e6090f62a6dae2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43196445"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050105"
 ---
 # <a name="colecontrol-class"></a>COleControl sınıfı
 OLE denetimleri geliştirmek için güçlü bir temel sınıf.
@@ -1692,17 +1692,14 @@ enum ControlFlags {
 
 Varsayılan olarak, `GetControlFlags` döndürür `fastBeginPaint | clipPaintDC`.
 
-`fastBeginPaint` Ayarlanırsa, kullandığı başlangıç Boya işlevi yerine OLE denetimleri için uyarlanmış, [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (varsayılan ayar).
-
-`clipPaintDC` Aksi takdirde, ayarla, çağrısı devre dışı bırakır `IntersectClipRect` tarafından yapılan `COleControl` ve küçük hızı avantajı kazanır. Penceresiz etkinleştirme kullanıyorsanız, bayrak bir etkisi yoktur.
-
-`pointerInactive` Ayarla, Denetim sağlayarak etkin olmadığında fare etkileşimi sağlar `COleControl`'s uygulaması `IPointerInactive` arabirimi, varsayılan olarak devre dışıdır.
-
-`noFlickerActivate` Ayarla, fazladan çizim işlemlerini ve eşlik eden görsel titreşimini ortadan kaldırır. Denetim kendisini aynı etkin ve etkin durumda çizdiğinde kullanın. Penceresiz etkinleştirme kullanıyorsanız, bayrak bir etkisi yoktur.
-
-`windowlessActivate` Ayarla, denetiminizin penceresiz etkinleştirme kullandığını gösterir.
-
-`canOptimizeDraw` Ayarla, kapsayıcı destekliyorsa, iyileştirilmiş çizimi denetimini gerçekleştireceğini gösterir.
+|||
+|-|-|
+|`fastBeginPaint`|Ayarlanırsa, kullandığı başlangıç Boya işlevi yerine OLE denetimleri için uyarlanmış, [BeginPaint](/windows/desktop/api/winuser/nf-winuser-beginpaint) API (varsayılan ayar).|
+|`clipPaintDC`|Aksi takdirde, ayarla, çağrısı devre dışı bırakır `IntersectClipRect` tarafından yapılan `COleControl` ve küçük hızı avantajı kazanır. Penceresiz etkinleştirme kullanıyorsanız, bayrak bir etkisi yoktur.|
+|`pointerInactive`|Ayarla, Denetim sağlayarak etkin olmadığında fare etkileşimi sağlar `COleControl`'s uygulaması `IPointerInactive` arabirimi, varsayılan olarak devre dışıdır.|
+|`noFlickerActivate`|Ayarla, fazladan çizim işlemlerini ve eşlik eden görsel titreşimini ortadan kaldırır. Denetim kendisini aynı etkin ve etkin durumda çizdiğinde kullanın. Penceresiz etkinleştirme kullanıyorsanız, bayrak bir etkisi yoktur.|
+|`windowlessActivate`|Ayarla, denetiminizin penceresiz etkinleştirme kullandığını gösterir.|
+|`canOptimizeDraw`|Ayarla, kapsayıcı destekliyorsa, iyileştirilmiş çizimi denetimini gerçekleştireceğini gösterir.|
 
 Hakkında daha fazla bilgi için `GetControlFlags` ve diğer iyileştirmeler OLE denetimlerinin [ActiveX denetimleri: iyileştirme](../../mfc/mfc-activex-controls-optimization.md).
 

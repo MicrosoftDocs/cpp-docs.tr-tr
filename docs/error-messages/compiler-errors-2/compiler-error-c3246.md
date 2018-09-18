@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb7feedafc4c965912bcb8ee022601e52d0c0f3a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0a588067fa21e0aeee54516bcec28cdf3648ac9f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253258"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047817"
 ---
 # <a name="compiler-error-c3246"></a>Derleyici Hatası C3246
-'class': 'türünden', tanımlanmış olarak devral olamaz 'Kapalı' olarak  
-  
-Olarak işaretlenmiş bir sınıf [korumalı](../../windows/sealed-cpp-component-extensions.md) diğer sınıflar için temel sınıfı olamaz.  
-  
-Aşağıdaki örnek C3246 oluşturur:  
-  
-```  
-// C3246_2.cpp  
-// compile with: /clr /LD  
-ref class X sealed {};  
-  
-ref class Y : public X {}; // C3246  
-```  
+
+'class': 'türünden' olarak bildirilmiş olsa devralınamıyor çünkü 'sealed' olarak
+
+Olarak işaretlenmiş bir sınıf [korumalı](../../windows/sealed-cpp-component-extensions.md) herhangi diğer sınıflar için taban sınıf olamaz.
+
+Aşağıdaki örnek, C3246 oluşturur:
+
+```
+// C3246_2.cpp
+// compile with: /clr /LD
+ref class X sealed {};
+
+ref class Y : public X {}; // C3246
+```

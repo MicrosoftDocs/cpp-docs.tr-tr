@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a52ca6be4cfe2cf4d87e5e76bd1ff943097c8d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd48dec90f607d1744b2f994c96f8e7f6f425168
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33199294"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046972"
 ---
 # <a name="fatal-error-c1201"></a>Önemli hata C1201
-sınıf şablonu tanımında sözdizimi hatadan sonra devam edilemiyor  
-  
- Sınıf şablonu tanımı ayrıştırılırken beklenmeyen bir hata oluştu.  
-  
- Diğer hataları giderin ve yeniden derleyin. Bu başarısız olursa, Not hata durumlarda çalışırsanız yalıtmak ve tekrarlanabilir bir test çalışması oluşturma, ardından başvurun [Microsoft Ürün Destek Hizmetleri'ne](/visualstudio/ide/talk-to-us).
+
+sınıf şablonu tanımındaki sözdizimi hatasından sonra devam edilemiyor
+
+Bir sınıf şablonu tanımı ayrıştırılırken beklenmeyen bir hata oluştu.
+
+Diğer tüm hataları düzeltin ve yeniden derleyin. Bu başarısız olursa, Not, hatanın koşullara çalışırsanız yalıtmak ve tekrarlanabilir bir test çalışması oluşturmak, ardından başvurun [Microsoft Ürün Destek Hizmetleri](/visualstudio/ide/talk-to-us).

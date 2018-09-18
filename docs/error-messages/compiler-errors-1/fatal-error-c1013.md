@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00b5dae643ec20e9d7d8a8dcdf41d9debe7e6b7e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 33c10062cac83984fb1c68835780497b89c4cbc1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198644"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050527"
 ---
 # <a name="fatal-error-c1013"></a>Önemli hata C1013
-Derleyici sınırı: çok fazla açık parantez  
-  
- Bir ifade çok fazla düzeylerini parantez içinde tek bir ifade içeriyor. İfade basitleştirin veya birden çok deyime bölün.  
-  
- Visual C++ 6.0 Service Pack 3 önce tek bir ifade içinde iç içe geçmiş parantez sınırını 59 oluştu. Şu anda, iç içe geçmiş parantez sınırı 256'dır.
+
+Derleyici sınırı: çok fazla açık parantez var
+
+Bir ifade, çok fazla düzeyi parantez içinde tek bir ifade içeriyor. İfadesini Basitleştir veya birden çok açıklamaalarını bölün.
+
+Visual C++ 6.0 Service Pack 3 önce iç içe geçmiş parantez içinde tek bir ifade sınırı 59 oluştu. Şu anda, iç içe geçmiş parantez sınırı 256'dır.

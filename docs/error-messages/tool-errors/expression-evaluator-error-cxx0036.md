@@ -17,34 +17,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18e1bf3cda85d7b3d64d51279688a52cec5c0336
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2d82a1254a11dbda3164ea1c350dc14e2b1a122
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301690"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050118"
 ---
 # <a name="expression-evaluator-error-cxx0036"></a>İfade Değerlendirici Hatası CXX0036
-bozuk içerik {...} belirtim  
-  
- Bu ileti bağlamı işleci kullanımı çeşitli hatalar hiçbiri tarafından oluşturulan (**{}**).  
-  
--   Context işleci söz dizimi (**{}**) yanlış verildi.  
-  
-     Context işleci sözdizimi şöyledir:  
-  
-     {*işlevi*,*Modülü*,*dll*}*ifade*  
-  
-     Bu bağlamı belirtir *ifade*. Context işleci aynı öncelik ve kullanım bir cast türünü sahiptir.  
-  
-     Virgül sondaki atlanabilir. Varsa *işlevi*, *Modülü*, veya *dll* değişmez değer virgül içeren adın tamamını parantez içine alın.  
-  
--   İşlev adı yanlış yazılmış veya belirtilen modül veya dinamik bağlantı kitaplığı yok.  
-  
-     Büyük küçük harfe duyarlı bir dil C olduğu için *işlevi* kaynağında tanımlanan tam durumda verilmelidir.  
-  
--   Modüle ya da DLL bulunamadı.  
-  
-     Belirtilen modül veya DLL tam yol adını kontrol edin.  
-  
- Bu hata için CAN0036 aynıdır.
+
+hatalı bağlam {...} belirtim
+
+Bu ileti, şu içerik işlecini kullanımında çeşitli hatalardan birini tarafından oluşturulabilir (**{}**).
+
+- İçerik işleci sözdizimini (**{}**) hatalı durumda verildi.
+
+     Şu içerik işlecini sözdizimi aşağıdaki gibidir:
+
+     {*işlevi*,*Modülü*,*dll*}*ifadesi*
+
+     Bu bağlamı belirtir *ifade*. Şu içerik işlecini bir cast türünü aynı öncelik ve kullanım vardır.
+
+     Virgül sondaki atlanabilir. Varsa *işlevi*, *Modülü*, veya *dll* sabit bir virgül içeren tüm adı parantez içine almalısınız.
+
+- İşlev adı yanlış yazılmış veya belirtilen modül veya dinamik bağlantı kitaplığı yok.
+
+     C büyük küçük harfe duyarlı bir dil olduğundan *işlevi* kaynağında tanımlanan tam durumda verilmelidir.
+
+- Modül veya DLL bulunamadı.
+
+     Belirtilen modül veya DLL tam yol adını kontrol edin.
+
+Bu hata için CAN0036 aynıdır.

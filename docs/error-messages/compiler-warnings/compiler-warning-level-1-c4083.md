@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0d0d7baa0e521484841c638cef4332001a65e78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 64e81b6a68a9584e4fb30829e15da6472212ce05
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277686"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046374"
 ---
 # <a name="compiler-warning-level-1-c4083"></a>Derleyici Uyarısı (düzey 1) C4083
-Beklenen 'belirteci'; tanımlayıcı 'tanımlayıcısı' bulundu  
-  
- Tanımlayıcı yanlış yerinde ortaya çıkan bir **#pragma** deyimi.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4083.cpp  
-// compile with: /W1 /LD  
-#pragma warning disable:4083    // C4083  
-#pragma warning(disable:4083)   //correct  
-```  
-  
- Sözdizimini denetleyin [#pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) yönergeleri.
+
+Beklenen 'belirteci'; 'identifier' tanımlayıcısı bulundu
+
+Bir tanımlayıcı yanlış bir yerde oluşan bir **#pragma** deyimi.
+
+## <a name="example"></a>Örnek
+
+```
+// C4083.cpp
+// compile with: /W1 /LD
+#pragma warning disable:4083    // C4083
+#pragma warning(disable:4083)   //correct
+```
+
+Sözdizimini denetleyin [#pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) yönergeleri.

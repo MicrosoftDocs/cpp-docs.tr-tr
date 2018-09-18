@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75215a0df53606c8807cc275e86616c1ae8c6b42
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef85e143b13ea5184235676179e33b387f751aa8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237159"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046582"
 ---
 # <a name="compiler-error-c2814"></a>Derleyici Hatası C2814
-'member': yerel tür yönetilen veya WinRT içinde iç içe olamaz 'type' yazın  
-  
-## <a name="example"></a>Örnek  
- Yerel tür bir CLR veya WinRT türünde iç içe olamaz. Aşağıdaki örnek C2814 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2814.cpp  
-// compile with: /clr /c  
-ref class A {  
-   class B {};   // C2814  
-   ref class C {};   // OK  
-};  
-```  
+
+'member': yerel bir tür yönetilen veya WinRT içinde yuvalanamaz 'type' yazın
+
+## <a name="example"></a>Örnek
+
+Yerel bir tür bir CLR veya WinRT türü iç içe olamaz. Aşağıdaki örnek, C2814 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2814.cpp
+// compile with: /clr /c
+ref class A {
+   class B {};   // C2814
+   ref class C {};   // OK
+};
+```

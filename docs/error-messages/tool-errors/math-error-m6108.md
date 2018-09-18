@@ -16,19 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4dfeca48aa04ebfbc097649e5c25253166c50dad
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1624a89b472733b4adb5563c8ba52e0b03dcaa2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325857"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048623"
 ---
 # <a name="math-error-m6108"></a>Matematik Hatası M6108
-kare kökünü  
-  
- Kare kökünü işlemi işlenen negatif.  
-  
- Program 136 çıkış koduyla sona erer.  
-  
+
+Karekök
+
+Bir kare kökünü işlemi işlenen negatif.
+
+Program çıkış kodu ile 136 sonlandırır.
+
 > [!NOTE]
->  `sqrt` C çalışma zamanı kitaplığı ve FORTRAN iç işlevi işlevi **SQRT** bu hatayı oluşturmaz. C `sqrt` işlevi bağımsız değişken işlemi gerçekleştirmeden önce denetler ve işlenen negatifse bir hata değeri döndürür. FORTRAN **SQRT** işlevi hatasına neden etki alanı [M6201](../../error-messages/tool-errors/math-error-m6201.md) yerine bu hata.
+>  `sqrt` İşlevi C çalışma zamanı kitaplığı ve FORTRAN iç işlevi **SQRT** bu hata oluşturmaz. C `sqrt` işlevi bağımsız değişken işlemi gerçekleştirmeden önce denetler ve işlenen negatif ise, bir hata değeri döndürür. FORTRAN **SQRT** işlevi etki alanı hatasına [M6201](../../error-messages/tool-errors/math-error-m6201.md) yerine bu hata.

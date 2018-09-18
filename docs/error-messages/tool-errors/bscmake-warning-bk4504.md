@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a17aa8b4e2a98d3bda5d21ea84962791b8051dc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8a2da8903dade37faf3b14175b65f3169efd908
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295190"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049780"
 ---
 # <a name="bscmake-warning-bk4504"></a>BSCMAKE Uyarısı BK4504
-Dosya çok fazla başvuru içeriyor; Bu kaynaktan gelen ek başvurular yoksayılıyor  
-  
- .Cpp dosyası birden fazla 64.000 simge başvurularını içerir. BSCMAKE bir dosyada 64.000 başvuruları karşılaştığında, tüm ek başvurular yok sayar.  
-  
- Sorunu düzeltmek için dosyayı ikiye bölün ya da daha fazla dosya, her biri daha azını 64.000 sahip sembol başvuruları veya kullanmak `#pragma component(browser)` belirli başvurular için oluşturulan sınırı sembolleri için önişlemci yönergesi. Daha fazla bilgi için bkz: [bileşen](../../preprocessor/component.md).
+
+Dosya çok fazla başvuru içeriyor; Bu kaynaktan diğer başvurular yoksayılıyor
+
+.Cpp dosyası birden fazla 64.000 sembol başvurularını içerir. BSCMAKE 64.000 başvuruları bir dosyada karşılaştı, diğer tüm başvurularını yoksayar.
+
+Sorunu düzeltmek için ya da dosyanın ikiye ayırma ya da daha fazla dosya, her biri sahip az 64.000 sembol başvuruları kullanın `#pragma component(browser)` önişlemci yönergesi için belirli başvurular için oluşturulan sınırı semboller. Daha fazla bilgi için [bileşeni](../../preprocessor/component.md).

@@ -45,39 +45,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f603757706bfdeeaaefe5b6d33cd94bb2624c389
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: fd7278d017002ff0d5aa716db61fdcdb54e24018
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410141"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051144"
 ---
 # <a name="stat-structure-stmode-field-constants"></a>_stat Yapı st_mode Alanı Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <sys/stat.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabitleri dosya türünü belirtmek için kullanılan **st_mode** alanını [_stat yapı](../c-runtime-library/standard-types.md).  
-  
- Bit maskesi sabitleri aşağıda açıklanmıştır:  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_S_IFMT`|Dosya türü maskesi|  
-|`_S_IFDIR`|Dizin|  
-|`_S_IFCHR`|Karakter özel (bir cihaz gösterir ayarlayın)|  
-|`_S_IFREG`|Normal|  
-|`_S_IREAD`|Okuma izni, sahibi|  
-|`_S_IWRITE`|Yazma izni, sahibi|  
-|`_S_IEXEC`|İzni yürütme/arama sahibi|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_stat, _wstat işlevleri](../c-runtime-library/reference/stat-functions.md)   
- [_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)   
- [Standart Türler](../c-runtime-library/standard-types.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <sys/stat.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabitler dosya türünü belirtmek için kullanılan **st_mode** alanını [_stat yapı](../c-runtime-library/standard-types.md).
+
+Bit maskesi sabitleri aşağıda açıklanmıştır:
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_S_IFMT`|Dosya türü maskesi|
+|`_S_IFDIR`|Dizin|
+|`_S_IFCHR`|Özel karakter (bir cihaz belirtir ayarlayın)|
+|`_S_IFREG`|Normal|
+|`_S_IREAD`|Okuma izni, sahibi|
+|`_S_IWRITE`|Yazma izni, sahibi|
+|`_S_IEXEC`|Yürütme/arama iznine sahibi|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_stat, _wstat işlevleri](../c-runtime-library/reference/stat-functions.md)<br/>
+[_fstat, _fstat32, _fstat64, _fstati64, _fstat32i64, _fstat64i32](../c-runtime-library/reference/fstat-fstat32-fstat64-fstati64-fstat32i64-fstat64i32.md)<br/>
+[Standart Türler](../c-runtime-library/standard-types.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

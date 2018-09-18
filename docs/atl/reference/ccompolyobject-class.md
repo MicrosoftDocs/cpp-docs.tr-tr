@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ec995026b0142fc30470836b29697457be91937e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 6fcf62e142c99fad15bec667534bc60b4d19e43d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764816"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045061"
 ---
 # <a name="ccompolyobject-class"></a>CComPolyObject sınıfı
 
@@ -41,14 +41,14 @@ Bu sınıfın uyguladığı `IUnknown` toplanmış veya toplanmayan bir nesne i�
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class contained>  
+template<class contained>
 class CComPolyObject : public IUnknown,
       public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*yer alan*  
+*yer alan*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -127,7 +127,7 @@ CComPolyObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*  
+*BD*<br/>
 [in] Dış bilinmeyen nesne toplanmasını veya yoksa NULL ise bir işaretçi bir nesne değil toplanırsa nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -160,7 +160,7 @@ static HRESULT WINAPI CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*PP*  
+*PP*<br/>
 [out] Bir işaretçi bir **CComPolyObject <** `contained` **>** işaretçi. Varsa `CreateInstance` başarısız, *pp* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -203,7 +203,7 @@ CComContainedObject<contained> m_contained;
 
 ### <a name="parameters"></a>Parametreler
 
-*yer alan*  
+*yer alan*<br/>
 [in] Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -216,22 +216,22 @@ CComContainedObject<contained> m_contained;
 
 ```
 STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
-template <class Q>  
+template <class Q>
 HRESULT QueryInterface(Q** pp);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Q*  
+*Q*<br/>
 COM arabirimi.
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabirim tanımlayıcısı.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
 
-*PP*  
+*PP*<br/>
 [out] Bir işaretçi tarafından tanımlanan arabirimi `__uuidof(Q)`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -256,6 +256,6 @@ Hata ayıklama yapılarında `Release` tanılama için kullanışlı veya test o
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)   
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[DECLARE_POLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_poly_aggregatable)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

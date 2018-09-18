@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 023bf60930a53b6bd881680caebb78c151406df4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dab568ef6622bfa10f0e10566ec92dfaee71d22c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047960"
 ---
 # <a name="compiler-warning-level-1-c4228"></a>Derleyici Uyarısı (düzey 1) C4228
-kullanılan standart olmayan uzantısı: bildirimcisi listesinde virgülle sonra niteleyicileri yok sayılır  
-  
- Niteleyiciler kullanımını ister **const** veya `volatile` değişkenleri bildirirken virgül bir Microsoft uzantısı sonra ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4228.cpp  
-// compile with: /W1  
-int j, const i = 0;  // C4228  
-int k;  
-int const m = 0;  // ok  
-int main()  
-{  
-}  
+
+Standart olmayan uzantı kullanıldı: bildirimci listesinde virgülden sonraki niteleyiciler yoksayıldı
+
+Niteleyiciler kullanımını ister **const** veya `volatile` sonra bir virgül değişkenleri bildirirken bir Microsoft uzantısıdır ([/Ze](../../build/reference/za-ze-disable-language-extensions.md)).
+
+## <a name="example"></a>Örnek
+
+```
+// C4228.cpp
+// compile with: /W1
+int j, const i = 0;  // C4228
+int k;
+int const m = 0;  // ok
+int main()
+{
+}
 ```

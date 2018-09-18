@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef049f85cd17bfeaba243b84da9fca93ae4036b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 613ebe183b61c6b9894ed3b726f90061e2b24ef6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274787"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047180"
 ---
 # <a name="compiler-warning-level-1-c4377"></a>Derleyici Uyarısı (düzey 1) C4377
-Yerel türler varsayılan olarak özel; -d1PrivateNativeTypes kullanım dışı bırakıldı  
-  
- Önceki sürümlerde, derlemeler içindeki yerel türler varsayılan ve belgelenmemiş, iç derleyici seçeneği ortak (**/d1PrivateNativeTypes**) özel hale getirmek için kullanıldı.  
-  
- Tüm türleri, yerel ve CLR, artık özel bir bütünleştirilmiş varsayılan olan şekilde **/d1PrivateNativeTypes** artık gerekli değildir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4377 oluşturur.  
-  
-```  
-// C4377.cpp  
-// compile with: /clr /d1PrivateNativeTypes /W1  
-// C4377 warning expected  
-int main() {}  
+
+Yerel türler varsayılan olarak özeldir; -d1PrivateNativeTypes kullanım dışıdır
+
+Önceki sürümlerde, bütünleştirilmiş kodlarında yerel türler varsayılan ve belgelenmemiş, iç derleyici seçeneği tarafından genel (**/d1PrivateNativeTypes**) özel hale getirmek için kullanıldı.
+
+Tüm türleri, yerel ve CLR, artık varsayılan olarak, derleme özel olan şekilde **/d1PrivateNativeTypes** artık gerekli değildir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4377 oluşturur.
+
+```
+// C4377.cpp
+// compile with: /clr /d1PrivateNativeTypes /W1
+// C4377 warning expected
+int main() {}
 ```

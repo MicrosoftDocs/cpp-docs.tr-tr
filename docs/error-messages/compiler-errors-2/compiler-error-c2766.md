@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0cd83bc18e30fb9b183e27597b1c5902f734c88a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee59a8ebc0de3c539d1c9b775dcf06525b1a77fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234218"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051535"
 ---
 # <a name="compiler-error-c2766"></a>Derleyici Hatası C2766
-Açık uzmanlık; 'uzmanlık' zaten tanımlandı  
-  
- Yinelenen açık özelleştirmeleri izin verilmiyor. Daha fazla bilgi için bkz: [açık uzmanlık, işlev şablonları](../../cpp/explicit-specialization-of-function-templates.md).  
-  
- Aşağıdaki örnek C2766 oluşturur:  
-  
-```  
-// C2766.cpp  
-// compile with: /c  
-template<class T>   
-struct A {};  
-  
-template<>   
-struct A<int> {};  
-  
-template<>   
-struct A<int> {};   // C2766  
-// try the following line instead  
-// struct A<char> {};  
+
+Açık özelleştirme; 'özelleştirmesi' zaten tanımlandı
+
+Yinelenen açık özelleştirme işlemlerine izin verilmez. Daha fazla bilgi için [açık uzmanlığı, işlev şablonları](../../cpp/explicit-specialization-of-function-templates.md).
+
+Aşağıdaki örnek, C2766 oluşturur:
+
+```
+// C2766.cpp
+// compile with: /c
+template<class T>
+struct A {};
+
+template<>
+struct A<int> {};
+
+template<>
+struct A<int> {};   // C2766
+// try the following line instead
+// struct A<char> {};
 ```

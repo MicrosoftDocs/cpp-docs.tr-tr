@@ -23,17 +23,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb0c22e65c33ab8f689026e916f550280bf6a8ad
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6d9900d42a5bae3c7a613028a7ae4ffe4bdc0333
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387268"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044918"
 ---
 # <a name="crtdbgflag"></a>_crtDbgFlag
-**_CrtDbgFlag** bayrağı nasıl bellek ayırmaları öbek hata ayıklama sürümünde izlenen, doğrulandı, bildirilen yazılan ve denetleyen beş bit alanları oluşur. Bit alanları bayrağı kullanılarak ayarlanan [_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md) işlevi. Bu bayrak ve bit alanları Crtdbg.h bildirilir. Bu bayrak yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlandı.  
-  
- Bu bayrak diğer hata ayıklama işlevleri ile birlikte kullanma hakkında daha fazla bilgi için bkz: [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Denetim Bayrakları](../c-runtime-library/control-flags.md)
+
+**_CrtDbgFlag** bayrağı nasıl hata ayıklama sürümü yığın bellek ayırmalarında izlenen, doğrulanan, bildirilen yazılan ve denetleyen beş bit alanlarını içerir. Bit alanları bayrağı kullanılarak ayarlanan [_CrtSetDbgFlag](../c-runtime-library/reference/crtsetdbgflag.md) işlevi. Bu bayrak ve bit alanları Crtdbg.h bildirilir. Bu bayrağı yalnızca kullanılabilir [_DEBUG](../c-runtime-library/debug.md) bayrağı uygulamada tanımlanmış.
+
+Bu bayrak diğer hata ayıklama işlevleri ile birlikte kullanma hakkında daha fazla bilgi için bkz. [yığın durumu raporlama işlevleri](/visualstudio/debugger/crt-debug-heap-details).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Denetim Bayrakları](../c-runtime-library/control-flags.md)

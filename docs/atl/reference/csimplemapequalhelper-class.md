@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1670ff7ed53d05b1dfc09e6953650892b0335f61
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 654b801c61d00f179d6d7ef88763b323d6503873
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761475"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050586"
 ---
 # <a name="csimplemapequalhelper-class"></a>CSimpleMapEqualHelper sınıfı
 
@@ -33,16 +33,16 @@ Bu sınıf için Yardımcısı, [CSimpleMap](../../atl/reference/csimplemap-clas
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class TKey, class TVal>  
+template <class TKey, class TVal>
 class CSimpleMapEqualHelper
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*TKey*  
+*TKey*<br/>
 Anahtar öğesi.
 
-*TVal*  
+*TVal*<br/>
 Değer öğesi.
 
 ## <a name="members"></a>Üyeler
@@ -72,10 +72,10 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 ### <a name="parameters"></a>Parametreler
 
-*K1*  
+*K1*<br/>
 İlk anahtar.
 
-*K2*  
+*K2*<br/>
 İkinci anahtarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -92,10 +92,10 @@ static bool IsEqualValue(const TVal& v1, const TVal& v2);
 
 ### <a name="parameters"></a>Parametreler
 
-*V1*  
+*V1*<br/>
 İlk değer.
 
-*v2*  
+*v2*<br/>
 İkinci değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -104,5 +104,5 @@ Değerler yanlış Aksi takdirde, eşitse true döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CSimpleMapEqualHelperFalse sınıfı](../../atl/reference/csimplemapequalhelperfalse-class.md)   
+[CSimpleMapEqualHelperFalse Sınıfı](../../atl/reference/csimplemapequalhelperfalse-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

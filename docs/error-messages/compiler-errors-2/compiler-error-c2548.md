@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4ac92463c904147631a33e30601e0b9e150e5e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b4fd5087613466ecb483ad4ec28018c9321453ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230410"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050521"
 ---
 # <a name="compiler-error-c2548"></a>Derleyici Hatası C2548
-'class::member': parametre parametresi için varsayılan parametresi eksik  
-  
- Varsayılan parametre listesi bir parametre eksik. Bir parametre listesindeki herhangi bir yere varsayılan parametre sağlarsanız, sonraki tüm parametreler için varsayılan parametreleri tanımlamanız gerekir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2548 oluşturur:  
-  
-```  
-// C2548.cpp  
-// compile with: /c  
-void func( int = 1, int, int = 3);  // C2548  
-  
-// OK  
-void func2( int, int, int = 3);  
-void func3( int, int = 2, int = 3);  
+
+'class::member': parametre parametresinin varsayılan parametresi eksik
+
+Varsayılan parametre listesini bir parametre eksik. Bir parametre listesindeki herhangi bir varsayılan parametre sağlarsanız, sonraki tüm parametreler için varsayılan parametreleri tanımlamanız gerekir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2548 oluşturur:
+
+```
+// C2548.cpp
+// compile with: /c
+void func( int = 1, int, int = 3);  // C2548
+
+// OK
+void func2( int, int, int = 3);
+void func3( int, int = 2, int = 3);
 ```

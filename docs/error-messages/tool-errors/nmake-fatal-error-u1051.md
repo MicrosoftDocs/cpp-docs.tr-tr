@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 570c7e5d8e6e8250a67e4f032ac26b04388cfd00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d3d3a14b75a30aa22bcc9faafb97a218051bb080
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317420"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045022"
 ---
 # <a name="nmake-fatal-error-u1051"></a>NMAKE Önemli Hatası U1051
-Bellek yetersiz  
-  
- NMAKE derleme görevleri dosyası çok büyük veya karmaşık olduğundan sanal bellek dahil olmak üzere, bellek yetersiz kaldı.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Diskte biraz yer açın.  
-  
-2.  Windows NT disk belleği dosyası ya da Windows takas dosyası boyutunu artırın.  
-  
-3.  Yalnızca derleme görevleri dosyası parçası kullanılır, derleme görevleri dosyası ayrı dosyalara bölün veya kullanmak **! Eğer** ön işleme NMAKE işlemelidir miktarını sınırlamak için yönergeleri. **! Eğer** yönergelerini **! Eğer**, `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! ELSE** `IFDEF`, ve **! ELSE** `IFNDEF`.
+
+Bellek yetersiz
+
+NMAKE derleme görevleri dosyası çok büyük veya karmaşık olduğundan, sanal bellek dahil olmak üzere, bellek yetersiz kaldı.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Disk üzerinde biraz alan boşaltın.
+
+1. Windows NT disk belleği dosyası ya da Windows takas dosyası boyutunu artırın.
+
+1. Yalnızca derleme görevleri dosyası parçası kullanılan derleme görevleri dosyası ayrı dosyalara bölün veya kullanın **! Eğer** ön işleme NMAKE işlemelisiniz tutarını sınırlamak için yönergeleri. **! Eğer** yönergelerinde **! Eğer**, `!IFDEF`, **! IFNDEF**, **! ELSE IF**, **! BAŞKA** `IFDEF`, ve **! BAŞKA** `IFNDEF`.

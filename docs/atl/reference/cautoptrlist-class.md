@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d3463b9eaad5134f68fbe533e50431ef3a91cf5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c33c3524d0fb6b39208e2cb7be57805a3ff043f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761205"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046764"
 ---
 # <a name="cautoptrlist-class"></a>CAutoPtrList sınıfı
 
@@ -35,14 +35,14 @@ Bu sınıf, akıllı işaretçiler listesini oluştururken kullanışlı yöntem
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename E>  
-class CAutoPtrList : 
+template<typename E>
+class CAutoPtrList :
    public CAtlList<ATL::CAutoPtr<E>, CAutoPtrElementTraits<E>>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*E*  
+*E*<br/>
 İşaretçi türü.
 
 ## <a name="members"></a>Üyeler
@@ -79,7 +79,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBlockSize*  
+*nBlockSize*<br/>
 Varsayılan değer 10 blok boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -88,6 +88,6 @@ Blok boyutu, yeni bir öğe gerektiğinde ayrılan bellek miktarını ölçüsü
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlList sınıfı](../../atl/reference/catllist-class.md)   
-[CAutoPtrElementTraits sınıfı](../../atl/reference/cautoptrelementtraits-class.md)   
+[CAtlList Sınıfı](../../atl/reference/catllist-class.md)<br/>
+[CAutoPtrElementTraits Sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

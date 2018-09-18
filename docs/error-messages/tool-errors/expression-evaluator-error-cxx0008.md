@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 17c7136d98d9d0502b2118b8e093b10bd8e82b88
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7491e6bd60b98fbed82cace18f98e8483a221b14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33315574"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050612"
 ---
 # <a name="expression-evaluator-error-cxx0008"></a>İfade Değerlendirici Hatası CXX0008
-**"sonunda dizesi eksik**  
-  
- Dizenin sonunda sabit değeri bekleniyordu çift tırnak işareti eksik. Çift tırnak işaretleri değişmez dize kapsayan ifade, yeniden yazın.  
-  
- Bu hata için CAN0008 aynıdır.
+
+**"dizesinin sonunda eksik**
+
+Dizenin sonunda sabit değeri bekleniyor. çift tırnak işareti eksik. Çift tırnak içinde değişmez dize kapsayan bir ifade yazın.
+
+Bu hata için CAN0008 aynıdır.

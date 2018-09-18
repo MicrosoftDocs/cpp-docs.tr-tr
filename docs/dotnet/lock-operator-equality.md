@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 276ad5b44dd2112abad2c7c2e293fc65b173fffc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 38cefb80b1c4c6969cba976c30383c1499a4968d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33133265"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048896"
 ---
 # <a name="lockoperator"></a>lock::operator==
 Eşitlik işleci.  
@@ -39,11 +39,11 @@ template<class T> bool operator==(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `t`  
- Eşitlik için karşılaştırılacak nesne.  
+*T*<br/>
+Eşitlik için karşılaştırma yapılacak nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `true` varsa `t` kilit 's nesnesi, aynı `false` Aksi takdirde.  
+ Döndürür `true` varsa `t` kilit ait nesne aynı `false` Aksi takdirde.  
   
 ## <a name="example"></a>Örnek  
   
@@ -70,7 +70,7 @@ Equal!
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\lock.h >  
+ **Üst bilgi dosyası** \<msclr\lock.h >  
   
  **Namespace** msclr  
   

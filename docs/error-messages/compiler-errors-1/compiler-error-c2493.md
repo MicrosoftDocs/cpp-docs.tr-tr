@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 336378894f5bc6d4e0dc061b630f8517b97e89c7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf65e17aa44746fea51d50cdb7c2a6e8be60cca2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225387"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047999"
 ---
 # <a name="compiler-error-c2493"></a>Derleyici Hatası C2493
-__based geçersiz biçimi  
-  
- A `__based` ifade üzerindeki işaretçi temel alabilir.  
-  
- Aşağıdaki örnek C2493 oluşturur:  
-  
-```  
-// C2493.cpp  
-// compile with: /c  
-char mybase;  
-int __based(mybase) ptr;   // C2493  
-  
-// OK  
-char * mybase;  
-int __based(mybase) * ptr;  
+
+Geçersiz __based biçimi
+
+A `__based` ifade işaretçiye temel alabilir.
+
+Aşağıdaki örnek, C2493 oluşturur:
+
+```
+// C2493.cpp
+// compile with: /c
+char mybase;
+int __based(mybase) ptr;   // C2493
+
+// OK
+char * mybase;
+int __based(mybase) * ptr;
 ```

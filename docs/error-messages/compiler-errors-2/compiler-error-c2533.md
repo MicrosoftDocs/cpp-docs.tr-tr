@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06733dc8ee52462ab7fcac4255ee8fa697a9bac4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 528b78e71713725907a9f0e2bd06cec1a8c62e67
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229672"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045412"
 ---
 # <a name="compiler-error-c2533"></a>Derleyici Hatası C2533
-'tanımlayıcısı': oluşturucular bir dönüş türüne izin verilmiyor  
-  
- Oluşturucu bir dönüş türüne sahip olamaz (değil bile bir `void` dönüş türü).  
-  
- Bu hatanın ortak bir kaynaktan bir sınıf tanımı son ve ilk Oluşturucusu uygulama arasında eksik bir noktalı virgül ' dir. Derleyici Oluşturucusu işlevi için dönüş türü tanımı sınıf görür ve C2533 oluşturur.  
-  
- Aşağıdaki örnek C2533 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2533.cpp  
-// compile with: /c  
-class X {  
-public:  
-   X();     
-};  
-  
-int X::X() {}   // C2533 - constructor return type not allowed  
-X::X() {}   // OK - fix by using no return type  
+
+'identifier': oluşturucuların bir dönüş türüne izin verilmiyor
+
+Oluşturucusu bir dönüş türü olamaz (değil bile bir `void` dönüş türü).
+
+Bu hatanın yaygın bir kaynağı bir sınıf tanımının son ve ilk Oluşturucu uygulaması arasında eksik noktalı virgüldür. Derleyici, sınıf oluşturucu işlevi için dönüş türü tanımı olarak görür ve C2533 oluşturur.
+
+Aşağıdaki örnek, C2533 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2533.cpp
+// compile with: /c
+class X {
+public:
+   X();
+};
+
+int X::X() {}   // C2533 - constructor return type not allowed
+X::X() {}   // OK - fix by using no return type
 ```

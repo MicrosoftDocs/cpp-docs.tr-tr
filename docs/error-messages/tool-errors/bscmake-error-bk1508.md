@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2ae57caba0d6dfda1fa188beee2137a011c1ef3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd27f649563cc750787a4c767a8e359bd7e95b86
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294381"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045334"
 ---
 # <a name="bscmake-error-bk1508"></a>BSCMAKE Hatası BK1508
-Geçici dosya 'filename' silemezsiniz [: neden]  
-  
- BSCMAKE geçici dosyalarından birini silemezsiniz.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Dosyayı başka bir işlem var.  
-  
-2.  Bir donanım hatası.
+
+'dosyaadı' geçici dosyası silinemiyor [: neden]
+
+BSCMAKE bir geçici dosyalar silinemez.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Dosyayı başka bir işlem var.
+
+1. Bir donanım hatası.

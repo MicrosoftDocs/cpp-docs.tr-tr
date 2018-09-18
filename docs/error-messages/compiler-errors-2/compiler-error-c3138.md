@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4eca582ea52aa32eb2c6a25276b468454b530031
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d66ee7cad3b1514d75fedc968f6bf51554695c79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250693"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046915"
 ---
 # <a name="compiler-error-c3138"></a>Derleyici Hatası C3138
-'arabirimi': 'öznitelik' arabirimi IDispatch veya IDispatch devralan bir arabirim devralmalıdır  
-  
- Bir arabirim ile [çift](../../windows/dual.md) veya [görüntüleme arabirimi](../../windows/dispinterface.md) öznitelikleri yok `IDispatch` doğrudan veya dolaylı bir temel arabirim olarak.  
-  
- Aşağıdaki örnek C3138 oluşturur:  
-  
-```  
-// C3138.cpp  
-#include <unknwn.h>  
-  
-[ object, uuid("77ac9240-6e9a-11d2-97de-0000f805d73b") ]  
-__interface IMyCustomInterface  
-{  
-   HRESULT mf1(void);  
-};  
-  
-[ dispinterface, uuid("3536f8a0-6e9a-11d2-97de-0000f805d73b") ]  
-__interface IMyDispInterface : IUnknown  
-{  
-   [id(1)] HRESULT mf2(void);  
-};  
-  
-[ object, dual, uuid("34e90a10-6e9a-11d2-97de-0000f805d73b") ]  
-__interface IMyDualInterface : IMyCustomInterface  // C3138 expected  
-{  
-   HRESULT mf3(void);  
-};  
+
+'interface': 'attribute' arabirimi IDispatch'ten devralmalı veya IDispatch'ten devralan bir arabirimden devralmalıdır
+
+Bir arabirim ile [çift](../../windows/dual.md) veya [dispinterface](../../windows/dispinterface.md) öznitelikleri yok `IDispatch` doğrudan veya dolaylı bir temel arabirim olarak.
+
+Aşağıdaki örnek, C3138 oluşturur:
+
+```
+// C3138.cpp
+#include <unknwn.h>
+
+[ object, uuid("77ac9240-6e9a-11d2-97de-0000f805d73b") ]
+__interface IMyCustomInterface
+{
+   HRESULT mf1(void);
+};
+
+[ dispinterface, uuid("3536f8a0-6e9a-11d2-97de-0000f805d73b") ]
+__interface IMyDispInterface : IUnknown
+{
+   [id(1)] HRESULT mf2(void);
+};
+
+[ object, dual, uuid("34e90a10-6e9a-11d2-97de-0000f805d73b") ]
+__interface IMyDualInterface : IMyCustomInterface  // C3138 expected
+{
+   HRESULT mf3(void);
+};
 ```

@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d64ba734203cdac6a56a82f3fd44853d62af53fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f706b4f1a1935a5c6246ea285c7e8b2b746f08cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249261"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047245"
 ---
 # <a name="compiler-error-c3247"></a>Derleyici Hatası C3247
-'class1': bir coclass'ı başka bir coclass 'class2' devralır olamaz  
-  
- Bir sınıf ile işaretli [coclass](../../windows/coclass.md) özniteliği ile işaretlenmiş başka bir sınıftan devralır olamaz `coclass` özniteliği.  
-  
- Aşağıdaki örnek C3247 oluşturur:  
-  
-```  
-// C3247.cpp  
-[module(name="MyLib")];  
-[coclass]  
-class a {  
-};  
-  
-[coclass]  
-class b : public a {   // C3247  
-};  
-int main() {  
-}  
+
+'class1': bir coclass başka bir coclass 'class2' devralamaz
+
+Bir sınıf ile işaretlenen [coclass'ı](../../windows/coclass.md) özniteliği ile işaretlenmiş başka bir sınıf'öğesinden özellik devralamaz `coclass` özniteliği.
+
+Aşağıdaki örnek, C3247 oluşturur:
+
+```
+// C3247.cpp
+[module(name="MyLib")];
+[coclass]
+class a {
+};
+
+[coclass]
+class b : public a {   // C3247
+};
+int main() {
+}
 ```

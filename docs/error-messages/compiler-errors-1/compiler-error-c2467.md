@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ed9b1b50c63852ed830c2072d7cd8fce668a671
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8bab320bfdba9fcbd408771b7859a22fc85fa06e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225649"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048781"
 ---
 # <a name="compiler-error-c2467"></a>Derleyici Hatası C2467
-Anonim 'kullanıcı tanımlı-tür' geçersiz bildirimi  
-  
- İç içe geçmiş bir kullanıcı tanımlı tür bildirildi. Bu ANSI uyumluluğu seçeneğiyle C kaynak kodu derleme sırasında bir hata olduğunu ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) etkinleştirilmiş.  
-  
- Aşağıdaki örnek C2467 oluşturur:  
-  
-```  
-//C2467.c  
-// compile with: /Za   
-int main() {  
-   struct X {  
-      union { int i; };   // C2467, nested declaration  
-   };  
-}  
+
+Anonim 'kullanıcı tanımlı-tür' bildirimi geçersiz
+
+İç içe geçmiş bir kullanıcı tanımlı tür bildirildi. Bu C kaynak kodu ANSI uyumluluk seçeneği ile derleme yapılırken bir hata olduğunu ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) etkin.
+
+Aşağıdaki örnek, C2467 oluşturur:
+
+```
+//C2467.c
+// compile with: /Za
+int main() {
+   struct X {
+      union { int i; };   // C2467, nested declaration
+   };
+}
 ```

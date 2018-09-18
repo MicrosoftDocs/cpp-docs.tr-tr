@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 73cd133d5dc355dc11c0128aea0ddb44dccafe80
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a534fd379e8ec250f185370d7388171dc9ef3508
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242816"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047596"
 ---
 # <a name="compiler-error-c2831"></a>Derleyici Hatası C2831
-'işleci işleci' varsayılan parametreleri olamaz  
-  
- Yalnızca üç işleçleri varsayılan parametreleri sahip olabilir:  
-  
--   [new](../../cpp/new-operator-cpp.md)  
-  
--   Atama =  
-  
--   Sol parantez)  
-  
- Aşağıdaki örnek C2831 oluşturur:  
-  
-```  
-// C2831.cpp  
-// compile with: /c  
-#define BINOP <=  
-class A {  
-public:  
-   int i;  
-   int operator BINOP(int x = 1) {   // C2831  
-   // try the following line instead  
-   // int operator BINOP(int x) {  
-      return i+x;  
-   }  
-};  
+
+'operator işleci' varsayılan parametrelere sahip olamaz
+
+Varsayılan parametreleri yalnızca üç işleçleri olabilir:
+
+- [new](../../cpp/new-operator-cpp.md)
+
+- Atama =
+
+- Sol parantez)
+
+Aşağıdaki örnek, C2831 oluşturur:
+
+```
+// C2831.cpp
+// compile with: /c
+#define BINOP <=
+class A {
+public:
+   int i;
+   int operator BINOP(int x = 1) {   // C2831
+   // try the following line instead
+   // int operator BINOP(int x) {
+      return i+x;
+   }
+};
 ```

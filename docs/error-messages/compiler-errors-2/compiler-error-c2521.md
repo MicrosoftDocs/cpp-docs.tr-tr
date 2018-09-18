@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 59f0f93876076fcdf0dfb1ded58dcbfc750858ec
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 24df0b75d45f9447b26cd8942ff6ca3e751c6a5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227763"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047349"
 ---
 # <a name="compiler-error-c2521"></a>Derleyici Hatası C2521
-işlev herhangi bir bağımsız değişken almaz  
-  
- Bir yıkıcı veya sonlandırıcıyı bağımsız değişkenleri kullanma girişiminde bulunuldu.  
-  
- Daha fazla bilgi için bkz: [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2521 oluşturur.  
-  
-```  
-// C2521.cpp  
-// compile with: /clr  
-ref class R {  
-protected:  
-   !R() {}  
-  
-public:  
-   void CleanUp() {  
-      this->!R(4);   // C2521  
-      this->!R();   // OK  
-   }  
-};  
-  
-int main() {  
-   R^ r = gcnew R();  
-   r->CleanUp();  
-}  
+
+işlev hiçbir bağımsız değişken almaz
+
+Yıkıcı veya Sonlandırıcı ile bağımsız değişkenleri kullanma girişimi.
+
+Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2521 oluşturur.
+
+```
+// C2521.cpp
+// compile with: /clr
+ref class R {
+protected:
+   !R() {}
+
+public:
+   void CleanUp() {
+      this->!R(4);   // C2521
+      this->!R();   // OK
+   }
+};
+
+int main() {
+   R^ r = gcnew R();
+   r->CleanUp();
+}
 ```

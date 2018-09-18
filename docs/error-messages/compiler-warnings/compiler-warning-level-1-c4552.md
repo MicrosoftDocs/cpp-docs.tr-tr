@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a3b58d33286163050db533fed00d27abe8903e9f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62c08ea81f5f8794a1dd4ff7d0b5644e9a669e0f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281134"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048077"
 ---
 # <a name="compiler-warning-level-1-c4552"></a>Derleyici Uyarısı (düzey 1) C4552
-'işleci': işleci etkisi yoktur; yan etkisi olan beklenen işleci  
-  
- İfade deyimi ifade üst hiçbir yan etkisi olmadan bir işleç varsa, bir hata olabilir.  
-  
- Bu uyarıyı geçersiz kılmak için ifadesi parantez içine yerleştirin.  
-  
- Aşağıdaki örnek C4552 oluşturur:  
-  
-```  
-// C4552.cpp  
-// compile with: /W1  
-int main() {  
-   int i, j;  
-   i + j;   // C4552  
-   // try the following line instead  
-   // (i + j);  
-}  
+
+'operator': işlecin etkisi yok; yan etkisi olan beklenen işleci
+
+Bir ifade deyimi ifade üstüne yan etkiye sahip bir işleç varsa, bir hata olabilir.
+
+Bu uyarıyı geçersiz kılmak için ifadeyi parantez içine yerleştirin.
+
+Aşağıdaki örnek, C4552 oluşturur:
+
+```
+// C4552.cpp
+// compile with: /W1
+int main() {
+   int i, j;
+   i + j;   // C4552
+   // try the following line instead
+   // (i + j);
+}
 ```

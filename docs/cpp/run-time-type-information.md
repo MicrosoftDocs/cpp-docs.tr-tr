@@ -18,31 +18,33 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77584e5fdd731c499629149a9163dbacb5eafb5e
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1244c05b7af94d69394c412a3c67864d6e75c337
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39467332"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050885"
 ---
 # <a name="run-time-type-information"></a>Çalışma Zamanı Türü Bilgileri
-Çalışma zamanı tür bilgisini (RTTI) program yürütme sırasında belirlenmesi için bir nesne türünü izin veren mekanizmadır. Sınıf kitaplıklarının birçok satıcı bu işlevselliği kendilerini uygulama çünkü RTTI C++ dil eklendi. Bu kitaplıklar arasında uyumsuzluk nedeniyle. Bu nedenle, belirgin hale için dil düzeyinde gerekli bir çalışma zamanı türü bilgileri destekler.  
-  
- Netlik sağlamak, bu tartışma RTTI işaretçileri neredeyse tamamen büyük/küçük harf sınırlıdır. Bununla birlikte, açıklanan kavramları başvurular için de geçerlidir.  
-  
- Çalışma zamanı türü bilgileri için üç ana C++ dil öğeleri şunlardır:  
-  
--   [Dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.  
-  
-     Çok biçimli türlerin dönüştürülmesi için kullanılır.  
-  
--   [TypeID](../cpp/typeid-operator.md) işleci.  
-  
-     Bir nesnenin tam tür tanımlamak için kullanılır.  
-  
--   [Type_info](../cpp/type-info-class.md) sınıfı.  
-  
-     Tarafından döndürülen tür bilgileri tutmak için kullanılan **TypeID** işleci.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Atama](../cpp/casting.md)
+
+Çalışma zamanı tür bilgisini (RTTI) program yürütme sırasında belirlenmesi için bir nesne türünü izin veren mekanizmadır. Sınıf kitaplıklarının birçok satıcı bu işlevselliği kendilerini uygulama çünkü RTTI C++ dil eklendi. Bu kitaplıklar arasında uyumsuzluk nedeniyle. Bu nedenle, belirgin hale için dil düzeyinde gerekli bir çalışma zamanı türü bilgileri destekler.
+
+Netlik sağlamak, bu tartışma RTTI işaretçileri neredeyse tamamen büyük/küçük harf sınırlıdır. Bununla birlikte, açıklanan kavramları başvurular için de geçerlidir.
+
+Çalışma zamanı türü bilgileri için üç ana C++ dil öğeleri şunlardır:
+
+- [Dynamic_cast](../cpp/dynamic-cast-operator.md) işleci.
+
+     Çok biçimli türlerin dönüştürülmesi için kullanılır.
+
+- [TypeID](../cpp/typeid-operator.md) işleci.
+
+     Bir nesnenin tam tür tanımlamak için kullanılır.
+
+- [Type_info](../cpp/type-info-class.md) sınıfı.
+
+     Tarafından döndürülen tür bilgileri tutmak için kullanılan **TypeID** işleci.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Atama](../cpp/casting.md)

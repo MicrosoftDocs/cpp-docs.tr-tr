@@ -29,30 +29,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c3500c0bd17b2638026f45c23b047e2bee411cf
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c09801841e25b5de2f98e64c01bf48b1eea9992b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387004"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052094"
 ---
 # <a name="cipow"></a>_CIpow
-Hesaplar *x* için yükseltilmiş *y* güç dayalı yığının üst değerlere.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void __cdecl _CIpow();  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sürümü `pow` işlevi derleyici özelliğini algılayan bir özelleştirilmiş çağırma vardır. Oluşturulmasını önler kopyaları önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.  
-  
- Sonuç değeri yığının en üst gönderilir.  
-  
-## <a name="requirements"></a>Gereksinimler  
- **Platform:** x86  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik işlev başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)   
- [pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)
+
+Hesaplar *x* için harekete geçirilen *y* power temel yığınında üst alan.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void __cdecl _CIpow();
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sürümü `pow` derleyici anlayan özelleştirilmiş bir çağırma kuralı işlevi vardır. Kopya oluşturulmasını önlediği için yürütmeyi hızlandırır ve YAZMAÇ ayırma ile yardımcı olur.
+
+Sonuç değerini yığın üstüne itilir.
+
+## <a name="requirements"></a>Gereksinimler
+ **Platform:** x86
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)<br/>
+[pow, powf, powl](../c-runtime-library/reference/pow-powf-powl.md)

@@ -16,40 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1c3de4c0d3e6a93a783dfb660bc26f07be6fcacf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2d05663b913a3e310c091b62a81483f28bbf2c09
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245890"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049838"
 ---
 # <a name="compiler-error-c2897"></a>Derleyici Hatası C2897
-yok Edicisi/Sonlandırıcı işlevi şablonu olamaz  
-  
- Bir yıkıcı (yıkıcı bir dizi tanımlarsınız) bir şablon bildirme izin için Yıkıcılar veya sonlandırıcılar, aşırı yüklenemez.  
-  
- Aşağıdaki örnek C2897 oluşturur:  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2897 oluşturur.  
-  
-```  
-// C2897.cpp  
-// compile with: /c  
-class X {  
-public:  
-   template<typename T> ~X() {}   // C2897  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2897 oluşturur.  
-  
-```  
-// C2897_b.cpp  
-// compile with: /c /clr  
-ref struct R2 {  
-protected:  
-   template<typename T> !R2(){}   // C2897 error  
-};  
+
+bir yok edici/Sonlandırıcı bir işlev şablonu olamaz
+
+(Bu yok ediciler kümesi tanımlarsınız) bir şablon olarak bir yıkıcı bildirmek izin için yıkıcı veya Sonlandırıcı, aşırı yüklenemez.
+
+Aşağıdaki örnek, C2897 oluşturur:
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2897 oluşturur.
+
+```
+// C2897.cpp
+// compile with: /c
+class X {
+public:
+   template<typename T> ~X() {}   // C2897
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2897 oluşturur.
+
+```
+// C2897_b.cpp
+// compile with: /c /clr
+ref struct R2 {
+protected:
+   template<typename T> !R2(){}   // C2897 error
+};
 ```

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a44d03ad19746719360f0528dceae8d88be6be8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 492f6f938af5e09221bff3c1c848c9688b28931d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229072"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049156"
 ---
 # <a name="compiler-error-c2541"></a>Derleyici Hatası C2541
-'delete': silin: işaretçiler olmayan nesneler silinemiyor  
-  
- [Silmek](../../cpp/delete-operator-cpp.md) işleci bir işaretçi olmayan bir nesnede kullanıldı.  
-  
- Aşağıdaki örnek C2541 oluşturur:  
-  
-```  
-// C2541.cpp  
-int main() {  
-   int i;  
-   delete i;   // C2541 i not a pointer  
-  
-   // OK  
-   int *ip = new int;  
-   delete ip;  
-}  
+
+'delete': Sil: işaretçi olmayan nesneler silinemez
+
+[Sil](../../cpp/delete-operator-cpp.md) işleci, bir işaretçi değil bir nesne üzerinde kullanıldı.
+
+Aşağıdaki örnek, C2541 oluşturur:
+
+```
+// C2541.cpp
+int main() {
+   int i;
+   delete i;   // C2541 i not a pointer
+
+   // OK
+   int *ip = new int;
+   delete ip;
+}
 ```

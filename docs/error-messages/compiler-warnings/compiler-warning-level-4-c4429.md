@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00d4812fb1eefdd4364376288f063a6bf8b5dddf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 19e10806ffa601caa4212b5e5f98b823ec8941d0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293721"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049234"
 ---
 # <a name="compiler-warning-level-4-c4429"></a>Derleyici Uyarısı (düzey 4) C4429
-Olası eksik veya hatalı oluşturulmuş evrensel karakter-adı  
-  
- Derleyici hatalı biçimlendirilmiş evrensel karakter adları olabilir bir karakter dizisi algıladı. Evrensel karakter adları olan `\u` dört onaltılık basamak tarafından izlenen veya `\U` sekiz onaltılık basamak ile izlenen.  
-  
- Aşağıdaki örnek C4429 oluşturur:  
-  
-```  
-// C4429.cpp  
-// compile with: /W4 /WX  
-int \ug0e4 = 0;   // C4429  
-// Try the following line instead:  
-// int \u00e4 = 0;   // OK, a well-formed universal character name.  
+
+Olası eksik veya yanlış biçimlendirilmiş evrensel karakter adı
+
+Derleyici, hatalı biçimlendirilmiş evrensel karakter adı olabilir bir karakter dizisi algıladı. Bir evrensel karakter adı `\u` dört onaltılık basamak, ardından veya `\U` sekiz onaltılık basamak.
+
+Aşağıdaki örnek, C4429 oluşturur:
+
+```
+// C4429.cpp
+// compile with: /W4 /WX
+int \ug0e4 = 0;   // C4429
+// Try the following line instead:
+// int \u00e4 = 0;   // OK, a well-formed universal character name.
 ```

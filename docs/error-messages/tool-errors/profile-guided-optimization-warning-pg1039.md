@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4a2637013bacaecfa3e0d812177c12ce227d19be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d1dd62059697b7f5c50a9fe7863f62ebbe6bf56c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316536"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050534"
 ---
 # <a name="profile-guided-optimization-warning-pg1039"></a>Profil Temelli İyileştirme Uyarısı PG1039
-Sessiz zaman Sweep bekleniyor başarısız oldu.  
-  
- Uygulama izin [pgosweep](../../build/reference/pgosweep.md) çalıştırmak için.  Mümkünse, uygulama boşta durumda olduğunda pgosweep çalıştırın.
+
+Süpürmek için sessiz zaman beklenemedi.
+
+Uygulama izin [pgosweep](../../build/reference/pgosweep.md) çalıştırılacak.  Mümkünse, uygulama boş bir durumda olduğunda pgosweep çalıştırın.

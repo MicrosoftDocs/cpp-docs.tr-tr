@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524435d95e085b0e5014eed21877b6d351e4ca75
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1a1158de2768cd5aea025627caf2fe40ef53e2ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245741"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048467"
 ---
 # <a name="compiler-error-c3135"></a>Derleyici Hatası C3135
-'property': 'geçici' yazın veya bir özellik 'const' bulunamaz  
-  
- [Const](../../cpp/const-cpp.md) ve [volatile](../../cpp/volatile-cpp.md) anahtar sözcükleri özellikleri izin verilmez.
+
+'property': özellik 'const' olamaz veya 'volatile' türünde
+
+[Const](../../cpp/const-cpp.md) ve [geçici](../../cpp/volatile-cpp.md) anahtar sözcükleri özellikleri izin verilmez.

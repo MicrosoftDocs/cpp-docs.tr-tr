@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8991383147618d1168a9819ee02e2567cc4a6852
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 685d83f224cc0b6c259a2fdf6946f28d909a1e6b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252647"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049572"
 ---
 # <a name="compiler-error-c3285"></a>Derleyici Hatası C3285
-for each deyimi türü 'type' değişkenlerde çalıştırılamıyor  
-  
- `for each` Deyimi bir dizi veya nesne koleksiyonu her öğe için bir grup katıştırılmış ifadeler tekrarlar.  
-  
- Bkz: [her biri için de](../../dotnet/for-each-in.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3285 oluşturur.  
-  
-```  
-// C3285.cpp  
-// compile with: /clr  
-int main() {  
-   for each (int i in 0) {}   // C3285   
-  
-   array<int> ^p = { 1, 2, 3 };  
-   for each (int j in p) {}   // OK  
-}  
+
+for each deyimi 'type' türündeki değişkenlerde çalışamaz
+
+`for each` Deyimi bir dizideki veya nesne koleksiyonundaki her öğe için bir katıştırılmış deyim grubunu yineler.
+
+Bkz: [her, içinde](../../dotnet/for-each-in.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3285 oluşturur.
+
+```
+// C3285.cpp
+// compile with: /clr
+int main() {
+   for each (int i in 0) {}   // C3285
+
+   array<int> ^p = { 1, 2, 3 };
+   for each (int j in p) {}   // OK
+}
 ```

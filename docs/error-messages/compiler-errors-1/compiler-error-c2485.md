@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf668f70d0d55c81744119e77fbb3bd24630493a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe33462f5f2e5e958a70823a6b4652882860ba0b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223796"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046634"
 ---
 # <a name="compiler-error-c2485"></a>Derleyici Hatası C2485
-'tanımlayıcısı': Tanınmayan genişletilmiş özniteliği  
-  
- Bildirim özniteliğinin geçerli değil.
+
+'identifier': Tanınmayan genişletilmiş öznitelik
+
+Bildirimi özniteliği geçerli değil.

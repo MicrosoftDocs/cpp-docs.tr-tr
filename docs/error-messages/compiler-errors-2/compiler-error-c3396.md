@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7bc75aec0cd4f92ebced316c76f95598802e4e8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e96231cf72b144c58e925fb2f74a6be29e9030f6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252133"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047453"
 ---
 # <a name="compiler-error-c3396"></a>Derleyici Hatası C3396
-'öznitelik': özel özniteliği 'ad alanında' bulunamadı  
-  
- Güncel bir ortak dil çalışma zamanı kullanmıyorsanız C3396 gösterir.  Çözümlemek için CLR yeniden yükleyin.
+
+'attribute': özel öznitelik 'ad uzayında' bulunamadı
+
+Güncel bir ortak dil çalışma zamanı kullanmıyorsanız C3396 gösterir.  Çözümlemek için CLR yeniden yükleyin.

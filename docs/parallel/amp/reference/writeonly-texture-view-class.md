@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6b1bc5c90fd837f56dbd98eddb37f624e78080b
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 65e4895af0903008e17b75a38981c169f07fc1c7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695411"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047765"
 ---
 # <a name="writeonlytextureview-class"></a>writeonly_texture_view Sınıfı
-Bir doku WriteOnly erişim sağlar.  
+Bir dokuya salt yazılır erişim sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -45,15 +45,15 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `value_type`  
- Dokudaki öğelerin türü.  
+*value_type*<br/>
+Dokudaki öğelerin türü.  
   
- `_Rank`  
- Doku derecesini.  
+*_Dizin*<br/>
+Dokunun boyut sayısı.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -65,25 +65,25 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 |Ad|Açıklama|  
 |----------|-----------------|  
 |[writeonly_texture_view Oluşturucusu](#ctor)|Yeni bir örneğini başlatır `writeonly_texture_view` sınıfı.|  
-|[~ writeonly_texture_view yok Edicisi](#ctor)|Bozar `writeonly_texture_view` nesnesi.|  
+|[~ writeonly_texture_view yok Edicisi](#ctor)|Yok eder `writeonly_texture_view` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[set](#set)|Öğesinin değeri belirtilen dizindeki ayarlar.|  
+|[set](#set)|Belirtilen dizindeki öğenin değerini ayarlar.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|Belirtilen kopyalar `writeonly_texture_view` bu bir nesne.|  
+|[operator=](#operator_eq)|Belirtilen kopyalar `writeonly_texture_view` buna nesne.|  
   
 ### <a name="public-constants"></a>Genel sabitler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[sıra sabiti](#rank)|Derecesini alır `writeonly_texture_view` nesnesi.|  
+|[sıra sabiti](#rank)|Boyut sayısını alır `writeonly_texture_view` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `_Texture_base`  
@@ -97,7 +97,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 ##  <a name="dtor"></a> ~ writeonly_texture_view 
 
- Bozar `writeonly_texture_view` nesnesi.  
+ Yok eder `writeonly_texture_view` nesne.  
   
 ```  
 ~writeonly_texture_view() restrict(amp,cpu);
@@ -105,7 +105,7 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
   
 ##  <a name="operator_eq"></a> işleç = 
 
- Belirtilen kopyalar `writeonly_texture_view` bu bir nesne.  
+ Belirtilen kopyalar `writeonly_texture_view` buna nesne.  
   
 ```  
 writeonly_texture_view<value_type, _Rank>& operator= (
@@ -113,23 +113,23 @@ writeonly_texture_view<value_type, _Rank>& operator= (
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- `writeonly_texture_view` Kopyalanacak nesne.  
+*_Diğer*<br/>
+`writeonly_texture_view` Kopyalanacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu başvuru `writeonly_texture_view` nesnesi.  
+ Bu başvuru `writeonly_texture_view` nesne.  
   
-##  <a name="rank"></a> RANK 
+##  <a name="rank"></a> boyut sayısı 
 
- Derecesini alır `writeonly_texture_view` nesnesi.  
+ Boyut sayısını alır `writeonly_texture_view` nesne.  
   
 ```  
 static const int rank = _Rank;  
 ```  
   
-##  <a name="set"></a> ayarlama 
+##  <a name="set"></a> Ayarlayın 
 
- Öğesinin değeri belirtilen dizindeki ayarlar.  
+ Belirtilen dizindeki öğenin değerini ayarlar.  
   
 ```  
 void set(
@@ -138,11 +138,11 @@ void set(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Index`  
- Öğenin dizini.  
+*_Index*<br/>
+Öğenin dizini.  
   
- `value`  
- Öğesinin yeni değeri.  
+*value*<br/>
+Öğenin yeni değeri.  
   
 ##  <a name="ctor"></a> writeonly_texture_view 
 
@@ -160,14 +160,14 @@ writeonly_texture_view(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Rank`  
- Doku derecesini.  
+*_Dizin*<br/>
+Dokunun boyut sayısı.  
   
- `value_type`  
- Dokudaki öğelerin türü.  
+*value_type*<br/>
+Dokudaki öğelerin türü.  
   
- `_Src`  
- Oluşturmak için kullanılan doku `writeonly_texture_view`.  
+*_Src*<br/>
+Oluşturmak için kullanılan doku `writeonly_texture_view`.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Concurrency::graphics Ad Alanı](concurrency-graphics-namespace.md)

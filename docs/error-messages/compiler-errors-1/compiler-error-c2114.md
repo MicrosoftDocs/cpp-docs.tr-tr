@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d781a63eeee0a39b923c7f31896e23d1dcc440cc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 973a71096e3dee549140e7e1f070049a26dfc573
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165350"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047063"
 ---
 # <a name="compiler-error-c2114"></a>Derleyici Hatası C2114
-'işleci': soldaki; işaretçi sağ taraftaki tamsayı değeri gerekiyor  
-  
- Sol işleneni `operator` sağ işleneni bir tamsayı değeri olmalıdır bir işaretçi oluştu.
+
+'operator': işaretçi solda; sağda tam sayı değer
+
+Sol işleneni `operator` bir işaretçi olduğu, sağ işlenen bir tamsayı değeri olması gerekir.

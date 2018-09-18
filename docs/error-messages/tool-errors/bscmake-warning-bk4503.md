@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d75fe2390872255e283d718caae15f7326677f2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 84310ff2d647a5ee1dc8ba0c4a4832aaf0cde594
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293458"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046595"
 ---
 # <a name="bscmake-warning-bk4503"></a>BSCMAKE Uyarısı BK4503
-küçük hata. SBR göz ardı dosyaadı dosyası  
-  
- .Sbr dosyası derleme durdurmak olmayan bir hata içeriyordu, ancak elde edilen .bsc dosyası yanlış olabilir. Bu sorunu gidermek için yeni bir .sbr oluşturmak için yeniden derleyin.
+
+küçük hata. SBR dosyasının dosya adı yoksayıldı
+
+.Sbr dosyası derleme durdurmak olmayan bir hata içeriyor, ancak sonuç .bsc dosyası yanlış olabilir. Bu sorunu gidermek için yeni bir .sbr oluşturmak için yeniden derleyin.

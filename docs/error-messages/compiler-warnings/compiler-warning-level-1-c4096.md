@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3787ef5482841e33658e02371fa0f6d1682612ac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef2aaf3f37e9699547c3a85c55a2f72d4baab7a6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276285"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047700"
 ---
 # <a name="compiler-warning-level-1-c4096"></a>Derleyici Uyarısı (düzey 1) C4096
-'bir': arabirim COM arabirimi; değil IDL için gösterilen değil  
-  
- COM arabirimi olarak yönelik bir arabirim tanımı COM arabirimi olarak tanımlı değil ve bu nedenle IDL dosyasına yayınlaması değil.  
-  
- Bkz: [arabirim öznitelikleri](../../windows/interface-attributes.md) belirtmek arabirim COM arabirimi bir liste öznitelikler için.  
-  
- Aşağıdaki örnek C4096 oluşturur:  
-  
-```  
-// C4096.cpp  
-// compile with: /W1 /LD  
-#include "windows.h"  
-[module(name="xx")];  
-  
-// [object, uuid("00000000-0000-0000-0000-000000000001")]  
-__interface a  
-{  
-};  
-  
-[coclass, uuid("00000000-0000-0000-0000-000000000002")]  
-struct b : a  
-{  
-};   // C4096, remove coclass or uncomment object  
+
+'bir': arabirim bir COM arabirimi değil IDL için yayılan değil
+
+Bir COM arabirimi olarak hedeflenen bir arabirim tanımı, bir COM arabirimi olarak tanımlı değil ve bu nedenle IDL dosyasına yayılan değil.
+
+Bkz: [arabirim öznitelikleri](../../windows/interface-attributes.md) için bir arabirim bir COM arabirimi olduğunu belirten bir liste öznitelikleri.
+
+Aşağıdaki örnek, C4096 oluşturur:
+
+```
+// C4096.cpp
+// compile with: /W1 /LD
+#include "windows.h"
+[module(name="xx")];
+
+// [object, uuid("00000000-0000-0000-0000-000000000001")]
+__interface a
+{
+};
+
+[coclass, uuid("00000000-0000-0000-0000-000000000002")]
+struct b : a
+{
+};   // C4096, remove coclass or uncomment object
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c8b4a296379ab6e4ac8ad3b70668508303e2779d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b76c5533e79c75d06594d42464ca32104eb065ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299584"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046231"
 ---
 # <a name="linker-tools-error-lnk2026"></a>Bağlayıcı Araçları Hatası LNK2026
-SAFESEH görüntü için güvensiz Modülü  
-  
- [/ SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md) belirtildi, ancak bir modül özelliği güvenli özel durum işleme ile uyumlu değil. Bu modülü ile kullanmak istiyorsanız, **SAFESEH**, modül derlenir gerekecektir.
+
+Modül, SAFESEH görüntüsü için güvenli değil
+
+[/ SAFESEH](../../build/reference/safeseh-image-has-safe-exception-handlers.md) belirtildi, ancak bir modül özellik Güvenli özel durum işleme ile uyumlu değil. Bu modül ile kullanmak istiyorsanız **SAFESEH**, modülü yeniden derleyin gerekecektir.

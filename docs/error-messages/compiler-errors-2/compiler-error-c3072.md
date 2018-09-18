@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6287ba8e84df96adb0447728dbde8f2031c986cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a36eaaf12cf9f8909455847036f670f6fc0cd40b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252490"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047518"
 ---
 # <a name="compiler-error-c3072"></a>Derleyici Hatası C3072
-operator 'işleci' ref sınıfının bir örneği için uygulanamaz  
-  
- birli kullanmak '`operator` ' ref sınıfının bir örneği için bir tanıtıcı türü dönüştürmek için işleci  
-  
- Bir CLR türü CLR işleçleri, yerel (veya standart) işleçleri gerektirir.  Daha fazla bilgi için bkz: [izleme başvurusu işleci](../../windows/tracking-reference-operator-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3072 oluşturur.  
-  
-```  
-// C3072.cpp  
-// compile with: /clr  
-ref class R {};  
-  
-int main() {  
-   R r1;  
-   R^ r2 = &r1;   // C3072  
-   R^ r3 = %r1;   // OK  
-}  
+
+' operator 'işleci bir başvuru sınıfının bir örneğine uygulanamaz
+
+birli Kullan '`operator` ' işleci bir başvuru sınıfının bir örneğini tanıtıcı türüne dönüştürmek için
+
+Bir CLR türü, CLR işleçleri, yerel (veya standart) işleçleri gerektirir.  Daha fazla bilgi için [Tracking Reference Operator](../../windows/tracking-reference-operator-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3072 oluşturur.
+
+```
+// C3072.cpp
+// compile with: /clr
+ref class R {};
+
+int main() {
+   R r1;
+   R^ r2 = &r1;   // C3072
+   R^ r3 = %r1;   // OK
+}
 ```

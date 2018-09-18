@@ -1,5 +1,5 @@
 ---
-title: C çalışma zamanı hatası R6033 görülmesine neden olur | Microsoft Docs
+title: C çalışma zamanı hatası R6033 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed66dec4f4eb17378c9901439be2ad1449597a93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb107dcd2bd044ad6fb933869319bb7afd5aab72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300000"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049806"
 ---
-# <a name="c-runtime-error-r6033"></a>C çalışma zamanı hatası R6033 görülmesine neden olur
-Yerel kod başlatma sırasında bu derlemeye MSIL koddan kullanma girişimi. Bu, uygulamanızın bir hata gösterir. Büyük olasılıkla bir MSIL derlenmiş çağırma sonucu olan (/ clr) yerel bir oluşturucu veya DllMain işlevi.  
-  
+# <a name="c-runtime-error-r6033"></a>C çalışma zamanı hatası R6033
+
+MSIL kodunu yerel kod başlatma sırasında bu derlemedeki kullanmayı dener. Bu, uygulamanızda bir hata gösterir. Bu büyük olasılıkla bir MSIL olarak derlenmiş çağırma sonucu olan (/ clr) yerel bir oluşturucu veya DllMain işlevi.
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, dahili bir sorun olduğundan uygulama kapatıldı. Bu hata, uygulama bir hata veya eklenti veya kullandığı uzantısı bir hata oluşabilir.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** kaldırmayı, onarın veya herhangi bir uzantıları veya eklentileri yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Bu tanılama MSIL yönergeleri yükleyici kilidi sırasında yürütülmekte gösterir. / CLR bayrağını kullanarak yerel C++ derlediğiniz bu durum ortaya çıkabilir. Yalnızca yönetilen kod içeren modülleri/CLR bayrağını kullanın. Daha fazla bilgi için bkz: [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu hata, uygulamada bir hata veya bir hatayı bir eklenti veya kullandığı uzantısında neden olabilir.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** kaldırmak onarın veya tüm eklentileri veya uzantıları yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Bu tanılama MSIL yönergeleri yükleyici kilidi sırasında yürütülen gösterir. Yerel C++/CLR bayrağı kullanılarak derlenmiş ise bu durum oluşabilir. Yalnızca yönetilen kod içeren modülleri/CLR bayrağı kullanın. Daha fazla bilgi için [karışık derlemeleri başlatma](../../dotnet/initialization-of-mixed-assemblies.md).

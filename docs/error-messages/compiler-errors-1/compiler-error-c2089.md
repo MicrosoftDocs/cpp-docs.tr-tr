@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 84f76c5b5ae8212e463a7022680ffca5dd4ca498
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bb64f1f0c2a8c5af2a8b8625cd1a05c530066185
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163667"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046161"
 ---
 # <a name="compiler-error-c2089"></a>Derleyici Hatası C2089
-'tanımlayıcısı': 'sınıfı anahtar' çok büyük  
-  
- Belirtilen yapı veya birlik 4 GB sınırını aşıyor.
+
+'identifier': 'sınıf anahtarı' çok büyük
+
+Belirtilen yapı veya birleşim 4 GB sınırını aşıyor.

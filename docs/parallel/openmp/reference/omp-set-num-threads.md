@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 335cb283026a019d6c6a03565c5dbec541140db3
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 849bdade5c6abfad07ebed262fb367487d3e1415
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691319"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047895"
 ---
 # <a name="ompsetnumthreads"></a>omp_set_num_threads
-İş parçacığı sayısını sonraki paralel bölgelerde tarafından geçersiz kılınmadığı sürece ayarlar bir [num_threads](../../../parallel/openmp/reference/num-threads.md) yan tümcesi.  
+İş parçacığı sayısı tarafından geçersiz kılınmadığı sürece sonraki paralel bölgelerde ayarlar bir [num_threads](../../../parallel/openmp/reference/num-threads.md) yan tümcesi.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,14 +34,13 @@ void omp_set_num_threads(
 );  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `num_threads`  
- Paralel bölge içindeki iş parçacığı sayısı.  
+*num_threads*<br/>
+Paralel bölgenin içinde iş parçacığı sayısı.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [3.1.1 omp_set_num_threads işlevi](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).  
+ Daha fazla bilgi için [3.1.1 omp_set_num_threads işlevi](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [omp_get_num_threads](../../../parallel/openmp/reference/omp-get-num-threads.md) kullanma örneği için `omp_set_num_threads`.  

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 021f19d50d0b83c9526956684737ad23fea9fb01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c85e5fa5ed5e6f202750fef05ffc96e9a0c86bc1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272714"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051704"
 ---
 # <a name="compiler-error-c3891"></a>Derleyici Hatası C3891
-'var': değişmez değer veri üyesi l-değeri kullanılamaz  
-  
- A [değişmez değer](../../windows/literal-cpp-component-extensions.md) değişkenidir const ve bildiriminde başlatıldıktan sonra değeri değiştirilemez.  
-  
- Aşağıdaki örnek C3891 oluşturur:  
-  
-```  
-// C3891.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   literal int staticConst = 9;  
-};  
-  
-int main() {  
-   Y1::staticConst = 0;   // C3891  
-}  
+
+'var': sabit değerli veri üyesi lvalue kullanılamaz
+
+A [değişmez değer](../../windows/literal-cpp-component-extensions.md) değişkendir const ve değeri bildiriminde başlatıldıktan sonra değiştirilemez.
+
+Aşağıdaki örnek, C3891 oluşturur:
+
+```
+// C3891.cpp
+// compile with: /clr
+ref struct Y1 {
+   literal int staticConst = 9;
+};
+
+int main() {
+   Y1::staticConst = 0;   // C3891
+}
 ```

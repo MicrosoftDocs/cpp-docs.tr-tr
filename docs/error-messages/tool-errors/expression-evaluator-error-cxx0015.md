@@ -17,22 +17,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 945dbda4759fa2989acb0411d1a3216a5e9a036c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1aa37a2cc7208063ce4cfa786de196842ab42b45
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297615"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050822"
 ---
 # <a name="expression-evaluator-error-cxx0015"></a>İfade Değerlendirici Hatası CXX0015
-ifade çok karmaşık (yığın taşması)  
-  
- Girdiğiniz ifade çok karmaşık veya iç içe geçmiş çok derine C ifade değerlendiricisi kullanılabilir depolama alanı miktarı.  
-  
- Taşma genellikle çok fazla bekleyen hesaplamalar nedeniyle oluşur.  
-  
- Hesaplanacak ifade diğer bölümleri için beklemek zorunda yerine karşılaştı gibi her bileşen ifadenin değerlendirilmesi şekilde ifadeyi yeniden düzenleyin.  
-  
- Deyim birden fazla komuttan bölün.  
-  
- Bu hata için CAN0015 aynıdır.
+
+ifade çok karmaşık (yığın taşması)
+
+Girdiğiniz ifade çok karmaşık veya C ifade değerlendiricisi için kullanılabilir depolama alanı miktarı çok derin iç içe geçmiş.
+
+Taşma genellikle çok fazla bekleyen hesaplamalar nedeniyle oluşur.
+
+Hesaplanacak ifade diğer bölümleri için beklemek zorunda yerine ifade, karşılaştığından ifade'nın her bileşeninin değerlendirilebilir böylece bunları yeniden düzenleme.
+
+İfade birden çok komutlarına bölün.
+
+Bu hata için CAN0015 aynıdır.
