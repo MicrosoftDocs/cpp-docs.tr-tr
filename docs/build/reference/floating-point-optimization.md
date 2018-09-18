@@ -11,12 +11,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 082cd3a7721f1bc72899130159b724b292e5e217
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: 6208e425ce4a2e1b5738932b8acaf6b11b7db24b
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42595054"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45706686"
 ---
 # <a name="microsoft-visual-c-floating-point-optimization"></a>Microsoft Visual C++ kayan nokta iyileştirme
 
@@ -757,7 +757,6 @@ float sum = f1 + f2;
 Ek bu tür bazı Ara hesaplamalar gerçekleştirmek için SSE2'gibi daha düşük hassasiyet bir kayan nokta birimi kullanarak neden olabilir. FP: Fast yuvarlama doğruluğu, böylece platform bağımlı olur; iyi bir işlemci için derleme kod başka bir işlemci için düzgün çalışmayabilir. Hızı doğruluğu problemleri basıyor varsa belirlemek için kullanıcıya kaldı.
 
 FP: Fast iyileştirme için belirli bir işlevin özellikle sorunlu ise, kayan nokta modu yerel olarak fp için değiştirilebilir: kesin kullanarak `float_control` derleyici pragması.
-
 
 ### <a name="algebraic-transformations-under-fpfast"></a>FP: Fast altında cebirsel dönüşümleri
 
