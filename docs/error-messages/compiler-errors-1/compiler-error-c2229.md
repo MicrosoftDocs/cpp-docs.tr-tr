@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c61708e7e67db39f85b1ff782e8945facc2b9568
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b235b5fae84ba605ecec5419f9334ccfa0a4be6e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172194"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035597"
 ---
 # <a name="compiler-error-c2229"></a>Derleyici Hatası C2229
-türü 'tanımlayıcı' geçersiz bir sıfır boyutlu diziye sahip  
-  
- Bir yapı veya bit alanı üyesi son üyesini değil sıfır boyutlu bir dizi içeriyor.  
-  
- Son yapı üyesi olarak sıfır boyutlu dizi olabileceğinden, yapı ayırdığınızda boyutuna belirtmeniz gerekir.  
-  
- Derleyici, sıfır boyutlu dizi en son yapı üyesi değilse, geri kalan alanları için uzaklık hesaplanamıyor.  
-  
- Aşağıdaki örnek C2229 oluşturur:  
-  
-```  
-// C2229.cpp  
-struct S {  
-   int a[0];  // C2229  zero-sized array  
-   int b[1];  
-};  
-  
-struct S2 {  
-   int a;  
-   int b[0];  
-};  
-  
-int main() {  
-   // allocate 7 elements for b field  
-   S2* s2 = (S2*)new int[sizeof(S2) + 7*sizeof(int)];  
-   s2->b[6] = 100;  
-}  
+
+'identifier' geçersiz bir sıfır boyutlu dizi türünde
+
+Bir yapı ya da bit alanının bir üyesi, son üyesi olmayan bir sıfır boyutlu dizi içeriyor.
+
+En son yapı üyesi bir sıfır boyutlu dizi olabileceğinden, struct ayırdığınızda, boyutuna belirtmeniz gerekir.
+
+Sıfır boyutlu dizi en son yapı üyesi değilse, derleyici kalan alanları için uzaklık hesaplanamaz.
+
+Aşağıdaki örnek, C2229 oluşturur:
+
+```
+// C2229.cpp
+struct S {
+   int a[0];  // C2229  zero-sized array
+   int b[1];
+};
+
+struct S2 {
+   int a;
+   int b[0];
+};
+
+int main() {
+   // allocate 7 elements for b field
+   S2* s2 = (S2*)new int[sizeof(S2) + 7*sizeof(int)];
+   s2->b[6] = 100;
+}
 ```

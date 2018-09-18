@@ -1,5 +1,5 @@
 ---
-title: Dllimport dllexport için kurallar ve sınırlamalar | Microsoft Docs
+title: Dllimport / dllexport için kurallar ve sınırlamalar | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -16,94 +16,96 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e39c3eb9a45c80ff5e855bd5aacbbef5a9533ef6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6819ad58e3814f7c632c44db4549321e0c6969e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388191"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038405"
 ---
 # <a name="rules-and-limitations-for-dllimportdllexport"></a>dllimport/dllexport için Kurallar ve Sınırlamalar
-**Microsoft özel**  
-  
--   Bir işlev olmadan bildirirseniz **dllimport** veya `dllexport` özniteliği işlevi değil olarak kabul DLL arabiriminin parçası. Bu nedenle, işlev tanımının bu modül veya başka bir modül aynı programının mevcut olması gerekir. DLL arabirimi işlevi parçası haline getirmek için başka bir modül işlev tanımı bildirme `dllexport`. Aksi durumda, istemci yapılandırıldığında bağlayıcı hatası oluşur.  
-  
--   Tek bir modül programınızdaki içeriyorsa **dllimport** ve `dllexport` aynı işlevi için bildirimleri `dllexport` özniteliği önceliklidir **dllimport** özniteliği. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:  
-  
-    ```  
-    #define DllImport   __declspec( dllimport )  
-    #define DllExport   __declspec( dllexport )  
-  
-       DllImport void func1( void );  
-       DllExport void func1( void );   /* Warning; dllexport */  
-                                       /* takes precedence. */  
-  
-    ```  
-  
--   Statik veri işaretçi adresi ile bildirilen bir veri nesnesi ile başlatamıyor **dllimport** özniteliği. Örneğin, aşağıdaki kod hatalar oluşturur:  
-  
-    ```  
-    #define DllImport   __declspec( dllimport )  
-    #define DllExport   __declspec( dllexport )  
-  
-       DllImport int i;  
-       .  
-       .  
-       .  
-       int *pi = &i;                           /* Error */  
-  
-       void func2()  
-       {  
-          static int *pi = &i;                   /* Error */  
-       }  
-  
-    ```  
-  
--   Bildirilen bir işlev adresi olan bir statik işlev işaretçisi başlatma **dllimport** işaretçiyi DLL içeri aktarma dönüştürücü (Denetim işleve aktaran bir kod saplama) adresine yerine adresini ayarlar işlev. Bu atama bir hata iletisi oluşturmaz:  
-  
-    ```  
-    #define DllImport   __declspec( dllimport )  
-    #define DllExport   __declspec( dllexport )  
-  
-       DllImport void func1( void   
-       .  
-       .  
-       .  
-       static void ( *pf )( void ) = &func1;   /* No Error */  
-  
-       void func2()  
-       {  
-          static void ( *pf )( void ) = &func1;  /* No Error */  
-       }  
-  
-    ```  
-  
--   Bir program içerdiği için `dllexport` bir nesnesinin bildirimi özniteliğinde, söz konusu nesne tanımı sağlamalıdır, genel veya yerel statik işlev işaretçisi adresiyle başlatabilir bir `dllexport` işlevi. Benzer şekilde, bir genel veya yerel statik verileri işaretçi adresiyle başlatabilir bir `dllexport` veri nesnesi. Örneğin:  
-  
-    ```  
-    #define DllImport   __declspec( dllimport )  
-    #define DllExport   __declspec( dllexport )  
-  
-       DllImport void func1( void );  
-       DllImport int i;  
-  
-       DllExport void func1( void );  
-       DllExport int i;  
-       .  
-       .  
-       .  
-       int *pi = &i;                            /* Okay */  
-       static void ( *pf )( void ) = &func1;    /* Okay */  
-  
-       void func2()  
-       {  
-          static int *pi = i;                     /* Okay */  
-          static void ( *pf )( void ) = &func1;   /* Okay */  
-       }  
-  
-    ```  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)
+
+**Microsoft'a özgü**
+
+- Bir işlev olmadan bildirirseniz **dllimport** veya `dllexport` özniteliği, işlev olarak kabul edilmez DLL arabiriminin bir parçası. Bu nedenle, işlev tanımı bu modüldeki veya başka bir modül aynı programın içinde mevcut olması gerekir. DLL arabirimi işlevi parçası haline getirmek için bir modül olarak işlev tanımı bildirmek `dllexport`. Aksi takdirde istemci oluşturulduğunda bir bağlayıcı hatası meydana gelir.
+
+- Programınızı tek bir modülde varsa **dllimport** ve `dllexport` aynı işlev bildirimlerini `dllexport` özniteliği önceliklidir **dllimport** özniteliği. Ancak, bir derleyici uyarısı oluşturulur. Örneğin:
+
+    ```
+    #define DllImport   __declspec( dllimport )
+    #define DllExport   __declspec( dllexport )
+
+       DllImport void func1( void );
+       DllExport void func1( void );   /* Warning; dllexport */
+                                       /* takes precedence. */
+
+    ```
+
+- Statik veri işaretçisi ile bildirilen bir veri nesnesi adresi ile başlatılamıyor **dllimport** özniteliği. Örneğin, aşağıdaki kod hatalar oluşturur:
+
+    ```
+    #define DllImport   __declspec( dllimport )
+    #define DllExport   __declspec( dllexport )
+
+       DllImport int i;
+       .
+       .
+       .
+       int *pi = &i;                           /* Error */
+
+       void func2()
+       {
+          static int *pi = &i;                   /* Error */
+       }
+
+    ```
+
+- İle bildirilen bir statik işlev işaretçisi bir işlevin adresini ile başlatma **dllimport** işaretçiyi DLL alma dönüştürücü (Denetim işleve aktaran bir kod saplama) adresine yerine adresini ayarlar işlev. Bu atama bir hata iletisi oluşturmaz:
+
+    ```
+    #define DllImport   __declspec( dllimport )
+    #define DllExport   __declspec( dllexport )
+
+       DllImport void func1( void
+       .
+       .
+       .
+       static void ( *pf )( void ) = &func1;   /* No Error */
+
+       void func2()
+       {
+          static void ( *pf )( void ) = &func1;  /* No Error */
+       }
+
+    ```
+
+- Bir program içerdiğinden `dllexport` özniteliği bildiriminde bir nesnenin o nesne tanımı sağlamalısınız, adresi ile bir genel veya yerel statik işlev işaretçisi başlatabilirsiniz bir `dllexport` işlevi. Benzer şekilde, bir genel veya yerel statik veri işaretçisine adresiyle başlatabilirsiniz bir `dllexport` veri nesnesi. Örneğin:
+
+    ```
+    #define DllImport   __declspec( dllimport )
+    #define DllExport   __declspec( dllexport )
+
+       DllImport void func1( void );
+       DllImport int i;
+
+       DllExport void func1( void );
+       DllExport int i;
+       .
+       .
+       .
+       int *pi = &i;                            /* Okay */
+       static void ( *pf )( void ) = &func1;    /* Okay */
+
+       void func2()
+       {
+          static int *pi = i;                     /* Okay */
+          static void ( *pf )( void ) = &func1;   /* Okay */
+       }
+
+    ```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)

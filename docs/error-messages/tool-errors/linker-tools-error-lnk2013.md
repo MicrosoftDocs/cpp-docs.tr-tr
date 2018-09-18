@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9320b9ead0276b6fb5e1b9773260049a01520e12
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d04ce4ca8079317da090cf05d43f41e4e40a6b19
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299857"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041746"
 ---
 # <a name="linker-tools-error-lnk2013"></a>Bağlayıcı Araçları Hatası LNK2013
-düzeltmesi türü düzeltmesi taşması. Hedef 'sembol adını' aralık dışında kalıyor  
-  
- Bağlayıcı hedef simgenin talimat 's konumdan çok uzakta olduğu için gerekli adres veya offset verilen yönerge sığamıyorsa.  
-  
- Birden fazla görüntü oluşturma veya kullanarak bu sorunu çözebilirsiniz [/sipariş](../../build/reference/order-put-functions-in-order.md) yönerge ve hedef birlikte yakın olacak şekilde seçeneği.  
-  
- Sembol adı, kullanıcı tanımlı bir simge (ve derleyicinin ürettiği sembol değil) olduğunda, hatayı gidermek için aşağıdaki eylemleri de deneyebilirsiniz:  
-  
--   Statik işlev olmayan statik olarak değiştirin.  
-  
--   Arayan aynı olacak şekilde statik işlevi içeren kod bölümü yeniden adlandırın.  
-  
- Kullanım `DUMPBIN /SYMBOLS`, bir işlev statik olup olmadığını görmek için.
+
+düzeltme türü düzeltme taşması. Hedef 'sembol adı' je mimo rozsah
+
+Bağlayıcı hedefi sembolü yönergesinin konumdan çok uzakta olduğu için gerekli adres veya offset verilen yönerge sığamıyorsa.
+
+Birden çok görüntü oluşturma veya kullanarak bu sorunu çözebilirsiniz [/sipariş](../../build/reference/order-put-functions-in-order.md) yönerge ve hedef birbirine yakın şekilde seçeneği.
+
+Sembol adı, kullanıcı tanımlı bir sembol (ve bir derleyici tarafından oluşturulan sembolü değil) olduğunda, hatayı gidermek için aşağıdaki eylemleri de deneyebilirsiniz:
+
+- Statik olmayan statik işlevi değiştirin.
+
+- Çağıranın aynı statik işlevi içeren kod bölümünde yeniden adlandırın.
+
+Kullanım `DUMPBIN /SYMBOLS`statik bir işlev olup olmadığını görmek için.

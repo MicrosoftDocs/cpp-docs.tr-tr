@@ -16,18 +16,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc360d0bc3c1266dc6de2b8ff2a33e1e60944989
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5eae8b471a631ed6191b9d93e72b8e5f5c240e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299932"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040849"
 ---
 # <a name="command-line-warning-d9040"></a>Komut Satırı Uyarısı D9040
-seçeneği yoksayılıyor '/ analyze'; Kod çözümleme uyarıları derleyici bu sürümünde kullanılabilir değil  
-  
- **/ Analyze** komut satırı seçeneği tüm Visual Studio sürümlerinde kullanılabilir değil. Bu uyarıyı çözmek için Visual Studio'nun desteklenen bir sürüme geçiş ya da komut satırı seçeneğini kaldırın.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut satırı hataları D8000-D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
+
+yoksayma seçeneği '/ analyze'; Kod Analizi uyarıları derleyicinin bu sürümünde kullanılabilir değil
+
+**/ Analyze** komut satırı seçeneği, Visual Studio'nun tüm sürümlerinde kullanılabilir değil. Bu uyarıyı çözmek için Visual Studio'nun desteklenen bir sürüme geçiş veya komut satırı seçeneğini kaldırın.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[D8000 ile D9999 Arasındaki Komut Satırı Hataları](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)

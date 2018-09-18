@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fa2f2f1749aef354963689ca62cd7551bc112e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 622c9941613c97a494455f689183eb095fc1b2cd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319344"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046322"
 ---
 # <a name="resource-compiler-error-rc2007"></a>Kaynak Derleyicisi Hatası RC2007
-\#sözdizimi tanımlayın  
-  
- İzleyen bir tanımlayıcı bekleniyordu `#define` önişlem yönergesi.
+
+\#söz dizimi tanımlayın
+
+Aşağıdaki bir tanımlayıcı beklendi `#define` ön işleme yönergesi.

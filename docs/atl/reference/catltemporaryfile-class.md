@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 30a0080dd576add0433421bb465d89b2967b9acd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c8d32094dd8ee55cdd76fc21f51a2f809b1b341d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034934"
 ---
 # <a name="catltemporaryfile-class"></a>CAtlTemporaryFile sınıfı
 
@@ -136,7 +136,7 @@ HRESULT Close(LPCTSTR szNewName = NULL) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*szNewName*  
+*szNewName*<br/>
 Geçici dosya içeriği depolamak yeni bir dosya adı. Bu bağımsız değişken NULL ise, geçici dosya içeriği silinir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -157,10 +157,10 @@ HRESULT Create(LPCTSTR pszDir = NULL, DWORD dwDesiredAccess = GENERIC_WRITE) thr
 
 ### <a name="parameters"></a>Parametreler
 
-*pszDir*  
+*pszDir*<br/>
 Geçici dosya yolu. Bu, NULL ise [GetTempPath](/windows/desktop/api/fileapi/nf-fileapi-gettemppatha) yol atamak için çağrılır.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -201,7 +201,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Bayt cinsinden konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -222,7 +222,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nLen*  
+*nLen*<br/>
 Dosyanın bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -271,10 +271,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Kilit nerede başlayacağını dosyanın konumu.
 
-*nCount*  
+*nCount*<br/>
 Kilitlenecek bayt aralığı cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -289,7 +289,7 @@ Bir dosyadaki baytları kilitleme erişim için bu baytlardan başka işlemler t
 
 Geçici dosya için bir tanıtıcı döndürür.
 
-```  
+```
 operator HANDLE() throw();
 ```
 
@@ -306,13 +306,13 @@ HRESULT Read(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBuffer*  
+*pBuffer*<br/>
 Dosyadan okunan veriler alacak arabellek için işaretçi.
 
-*nBufSize*  
+*nBufSize*<br/>
 Arabellek boyutu bayt cinsinden.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 Okunan bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -337,10 +337,10 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nOffset*  
+*nOffset*<br/>
 Başlangıç noktası tarafından verilen, bayt uzaklığı *dwFrom.*
 
-*dwFrom*  
+*dwFrom*<br/>
 Başlangıç noktası (FILE_BEGIN, FILE_CURRENT veya FILE_END).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -365,7 +365,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nNewLen*  
+*nNewLen*<br/>
 Yeni dosyanın bayt cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -402,10 +402,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Kilit açma nerede başlayacağını dosya konumu.
 
-*nCount*  
+*nCount*<br/>
 Kilidinin açılması için bayt aralığı cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -421,7 +421,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 Dosya işaretçisi tarafından belirtilen konumda başlayarak geçici dosya verileri yazmak için bu yöntemi çağırın.
 
 ```
-HRESULT Write(  
+HRESULT Write(
     LPCVOID pBuffer,
     DWORD nBufSize,
     DWORD* pnBytesWritten = NULL) throw();
@@ -429,13 +429,13 @@ HRESULT Write(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBuffer*  
+*pBuffer*<br/>
 Dosyaya yazılacak veriler içeren arabellek.
 
-*nBufSize*  
+*nBufSize*<br/>
 Arabellekteki aktarılacak bayt sayısı.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 Yazılan bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -452,5 +452,5 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CAtlFile Sınıfı](../../atl/reference/catlfile-class.md)

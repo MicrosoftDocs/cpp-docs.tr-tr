@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1996da7bb937fd00a4283ad94a4885432a9d47a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c568f1732a4be5d890a5a654b09638828385383
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247712"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035519"
 ---
 # <a name="compiler-error-c3166"></a>Derleyici Hatası C3166
-'işaretçi': 'type' üyesi olarak bir iç __gc işaretçisi gösteren bir işaretçi bildiremezsiniz  
-  
-Derleyici bulunan bir geçersiz işaretçi bildirimi (bir `__nogc` işaretçi bir `__gc` işaretçi.). 
-  
-C3166 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'işaretçisi': 'type' üyesi olarak bir iç __gc işaretçi işaretçisi bildirilemez
+
+Derleyici, bir geçersiz işaretçi bildirimi bulunamadı (bir `__nogc` işaretçi bir `__gc` işaretçisi.).
+
+C3166 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

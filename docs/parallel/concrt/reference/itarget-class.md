@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9780e4b9ff8950511601b03e8423764c3def77a1
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5dff803a33a35ad9ca30e0a49b6ef09155e4ec26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691508"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020348"
 ---
 # <a name="itarget-class"></a>ITarget Sınıfı
-`ITarget` Sınıftır arabirimi tüm blokları hedef için. Hedef blokları kullanmak için onlara tarafından sunulan iletiler `ISource` engeller.  
+`ITarget` Tüm hedef blokları için sınıf, arabirim. Hedef blokları tarafından kendilerine sunulan iletileri kullanma `ISource` engeller.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -41,42 +41,42 @@ class ITarget;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Yükü iletileri içinde veri türü hedef blok tarafından kabul edildi.  
+*T*<br/>
+Akıştaki yükün bir hedef bloğu tarafından kabul iletileri veri türü.  
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|`filter_method`|İmzasını döndürür bloğu tarafından kullanılan herhangi bir yöntemi, bir `bool` sunulan iletisine kabul edilip edilmeyeceğini belirlemek için değeri.|  
-|`type`|İçin bir tür diğer adı `T`.|  
+|`filter_method`|Döndüren bloğu tarafından kullanılan herhangi bir yöntem imzası bir `bool` sunulan bir iletiye kabul edilip edilmeyeceğini belirlemek için değer.|  
+|`type`|Bir tür diğer adı için `T`.|  
   
 ### <a name="public-constructors"></a>Ortak Oluşturucular  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[~ Itarget yok Edicisi](#dtor)|Bozar `ITarget` nesnesi.|  
+|[~ Itarget yok Edicisi](#dtor)|Yok eder `ITarget` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Yayma](#propagate)|Zaman uyumsuz olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti bu hedef blok kaynak bloğundan geçirir.|  
-|[Gönder](#send)|Zaman uyumlu olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti hedef blok geçirir.|  
-|[supports_anonymous_source](#supports_anonymous_source)|Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu ona bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş ileti tüketim daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak gerektirdiğinden hedef sunulan iletisine erteleyemiyor.|  
+|[Yay](#propagate)|Zaman uyumsuz olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti bir kaynak bloktaki bu hedef bloğa aktarır.|  
+|[Gönder](#send)|Zaman uyumlu olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti hedef bloğa aktarır.|  
+|[supports_anonymous_source](#supports_anonymous_source)|Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.|  
   
 ### <a name="protected-methods"></a>Korumalı Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[link_source](#link_source)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak blok için bağlantılar `ITarget` bloğu.|  
-|[unlink_source](#unlink_source)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak blok bu bağlantıyı keser `ITarget` bloğu.|  
-|[unlink_sources](#unlink_sources)|Türetilen bir sınıfta geçersiz kılındığında, tüm kaynak blokları bu bağlantıyı keser `ITarget` bloğu.|  
+|[link_source](#link_source)|Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak bloğu için bağlantı `ITarget` blok.|  
+|[unlink_source](#unlink_source)|Türetilen bir sınıfta geçersiz kılındığında, bu bir belirtilen kaynak blok olan bağlantısını kesen `ITarget` blok.|  
+|[unlink_sources](#unlink_sources)|Türetilen bir sınıfta geçersiz kılındığında, bu tüm kaynak bloklardan olan bağlantısını kesen `ITarget` blok.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
+ Daha fazla bilgi için [zaman uyumsuz ileti blokları](../../../parallel/concrt/asynchronous-message-blocks.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ITarget`  
@@ -88,7 +88,7 @@ class ITarget;
   
 ##  <a name="dtor"></a> ~ Itarget 
 
- Bozar `ITarget` nesnesi.  
+ Yok eder `ITarget` nesne.  
   
 ```
 virtual ~ITarget();
@@ -96,22 +96,22 @@ virtual ~ITarget();
   
 ##  <a name="link_source"></a> link_source 
 
- Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak blok için bağlantılar `ITarget` bloğu.  
+ Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak bloğu için bağlantı `ITarget` blok.  
   
 ```
 virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PSource`  
- `ISource` İçin bağlantı kurulan engelleme `ITarget` bloğu.  
+*_PSource*<br/>
+`ISource` Engellemek için bu bağlantı kurulan `ITarget` blok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev doğrudan çağrılmamalıdır bir `ITarget` bloğu. Blokları birlikte kullanarak bağlanması `link_target` yöntemi `ISource` çağıracağı blokları `link_source` karşılık gelen hedef yöntemi.  
+ Bu işlev üzerinde doğrudan çağrılmamalıdır bir `ITarget` blok. Blokları kullanarak birbirine bağlanması `link_target` metodunda `ISource` çağıracağı blokları, `link_source` karşılık gelen hedef yöntemi.  
   
-##  <a name="propagate"></a> Yayma 
+##  <a name="propagate"></a> Yay 
 
- Zaman uyumsuz olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti bu hedef blok kaynak bloğundan geçirir.  
+ Zaman uyumsuz olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti bir kaynak bloktaki bu hedef bloğa aktarır.  
   
 ```
 virtual message_status propagate(
@@ -120,21 +120,21 @@ virtual message_status propagate(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
+ Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) ya da özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
 ##  <a name="send"></a> Gönder 
 
- Zaman uyumlu olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti hedef blok geçirir.  
+ Zaman uyumlu olarak türetilen bir sınıfta geçersiz kılındığında, bir ileti hedef bloğa aktarır.  
   
 ```
 virtual message_status send(
@@ -143,51 +143,51 @@ virtual message_status send(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PMessage`  
- Bir işaretçi `message` nesnesi.  
+*_PMessage*<br/>
+Bir işaretçi `message` nesne.  
   
- `_PSource`  
- İleti sunan kaynak bloğu için bir işaretçi.  
+*_PSource*<br/>
+İletiyi sunmayı kaynak blok için işaretçi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A [message_status](concurrency-namespace-enums.md) hedef iletiyle yapmak karar göstergesi.  
+ A [message_status](concurrency-namespace-enums.md) hedef iletinin yapmak karar göstergesi.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yöntem oluşturulur bir [invalid_argument](../../../standard-library/invalid-argument-class.md) her iki özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
+ Çağırılıyorsa yöntem bir [invalid_argument](../../../standard-library/invalid-argument-class.md) ya da özel durum `_PMessage` veya `_PSource` parametresi `NULL`.  
   
- Kullanarak `send` yöntemi ileti başlatma dışında ve bir ağ içinde ileti yayılmasına tehlikeli ve kilitlenmeye neden olabilir.  
+ Kullanarak `send` yöntemi dışında iletisi başlatma ve iletileri bir ağdaki yayılması tehlikelidir ve kilitlenmesine yol açabilir.  
   
- Zaman `send` döndürür, ileti algıladı ya da zaten kabul edildi ve hedef bloğu içine aktarılan ya da hedef tarafından reddedildi.  
+ Zaman `send` ileti algıladı ya da zaten kabul edildi ve hedef blok aktarılan veya hedef tarafından reddedilen döndürür.  
   
 ##  <a name="supports_anonymous_source"></a> supports_anonymous_source 
 
- Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu ona bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş ileti tüketim daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak gerektirdiğinden hedef sunulan iletisine erteleyemiyor.  
+ Türetilen bir sınıfta geçersiz kılındığında, true veya false ileti bloğu kendisine bağlı olmayan bir kaynak tarafından sunulan iletileri kabul edip etmemesine bağlı olarak döndürür. Geçersiz kılınan yöntemi döndürürse `true`, ertelenmiş bir iletiyi kullanımını daha sonra kendi sourse bağlantı kayıt defterinde tanımlanması için kaynak olarak sunulan bir iletiye hedef erteleyemiyor.  
   
 ```
 virtual bool supports_anonymous_source();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- `true` Blok ona bağlı olmayan bir kaynaktan alınan ileti kabul edebiliyorsa `false` Aksi takdirde.  
+ `true` Blok iletiyi kendisine bağlı olmayan bir kaynaktan kabul edebiliyorsa `false` Aksi takdirde.  
   
 ##  <a name="unlink_source"></a> unlink_source 
 
- Türetilen bir sınıfta geçersiz kılındığında, belirtilen kaynak blok bu bağlantıyı keser `ITarget` bloğu.  
+ Türetilen bir sınıfta geçersiz kılındığında, bu bir belirtilen kaynak blok olan bağlantısını kesen `ITarget` blok.  
   
 ```
 virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_PSource`  
- `ISource` Öğesinden bağlantısız engelleme `ITarget` bloğu.  
+*_PSource*<br/>
+`ISource` Bu ayrılmış block `ITarget` blok.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev doğrudan çağrılmamalıdır bir `ITarget` bloğu. Blokları bağlantısı kesilmiş kullanarak `unlink_target` veya `unlink_targets` yöntemlere `ISource` çağıracağı blokları `unlink_source` karşılık gelen hedef yöntemi.  
+ Bu işlev üzerinde doğrudan çağrılmamalıdır bir `ITarget` blok. Blokları bağlantısı kullanarak `unlink_target` veya `unlink_targets` yöntemlerde `ISource` çağıracağı blokları, `unlink_source` karşılık gelen hedef yöntemi.  
   
 ##  <a name="unlink_sources"></a> unlink_sources 
 
- Türetilen bir sınıfta geçersiz kılındığında, tüm kaynak blokları bu bağlantıyı keser `ITarget` bloğu.  
+ Türetilen bir sınıfta geçersiz kılındığında, bu tüm kaynak bloklardan olan bağlantısını kesen `ITarget` blok.  
   
 ```
 virtual void unlink_sources() = 0;

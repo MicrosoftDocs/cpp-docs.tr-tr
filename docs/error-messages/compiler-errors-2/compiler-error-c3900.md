@@ -16,50 +16,51 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc940d174edc337422818bc233c1ef9952b66276
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dfbec5086cd034b56795f47504c029e975aa36b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039679"
 ---
 # <a name="compiler-error-c3900"></a>Derleyici Hatası C3900
-'member': geçerli kapsamda izin verilmiyor  
-  
- Özellik blokları işlev bildirimleri ve yalnızca satır içi işlev tanımları içerebilir. Üye işlevleri dışında özelliği bloklarında izin verilir. Hiçbir tür tanımları, işleçler ya da arkadaş işlevlerini izin verilir. Daha fazla bilgi için bkz: [özelliği](../../windows/property-cpp-component-extensions.md).  
-  
- Olay tanımları yalnızca erişim yöntemleri ve işlevleri içerebilir.  
-  
- Aşağıdaki örnek C3900 oluşturur:  
-  
-```  
-// C3900.cpp  
-// compile with: /clr  
-ref class X {  
-   property int P {  
-      void set(int);   // OK  
-      int i;   // C3900 variable declaration  
-   };  
-};  
-```  
-  
- Aşağıdaki örnek C3900 oluşturur:  
-  
-```  
-// C3900b.cpp  
-// compile with: /clr  
-using namespace System;  
-delegate void H();  
-ref class X {  
-   event H^ E {  
-      int m;   // C3900  
-  
-      // OK  
-      void Test() {}  
-  
-      void add( H^ h ) {}  
-      void remove( H^ h ) {}  
-      void raise( ) {}  
-   }  
-};  
+
+'member': geçerli kapsamda izin verilmiyor
+
+İşlev bildirimleri ve yalnızca satır içi işlev tanımları, özellik blok içerebilir. Üye işlevleri dışındaki özellik bloklarında izin verilir. Hiçbir tür tanımları, işleçler ve arkadaş işlevleri izin verilir. Daha fazla bilgi için [özelliği](../../windows/property-cpp-component-extensions.md).
+
+Olay tanımlarına yalnızca erişim yöntemleri ve işlevleri içerebilir.
+
+Aşağıdaki örnek, C3900 oluşturur:
+
+```
+// C3900.cpp
+// compile with: /clr
+ref class X {
+   property int P {
+      void set(int);   // OK
+      int i;   // C3900 variable declaration
+   };
+};
+```
+
+Aşağıdaki örnek, C3900 oluşturur:
+
+```
+// C3900b.cpp
+// compile with: /clr
+using namespace System;
+delegate void H();
+ref class X {
+   event H^ E {
+      int m;   // C3900
+
+      // OK
+      void Test() {}
+
+      void add( H^ h ) {}
+      void remove( H^ h ) {}
+      void raise( ) {}
+   }
+};
 ```

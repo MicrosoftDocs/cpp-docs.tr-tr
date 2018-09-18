@@ -23,33 +23,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0d4292ae29602b5890a167a3e2c29e460d65373f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1a367522c2f22007abcf24cdf74ada467d94b104
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32407970"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032828"
 ---
 # <a name="setvbuf-constants"></a>setvbuf Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <stdio.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabitleri için arabellek türünü temsil eden `setvbuf`.  
-  
- Olası değerler aşağıdaki bildirim sabitler tarafından verilir:  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_IOFBF`|Tam arabelleğe alma: Arabellek belirtilen çağrıda `setvbuf` kullanılır ve kendi boyuttur olarak belirtilen `setvbuf` çağırın. Arabellek işaretçi ise **NULL**, otomatik olarak ayrılmış arabellek belirtilen boyutunu kullanılır.|  
-|`_IOLBF`|Aynı `_IOFBF`.|  
-|`_IONBF`|Hiçbir arabellek çağrısı değişkenlerinde bağımsız olarak kullanılır `setvbuf`.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [setbuf](../c-runtime-library/reference/setbuf.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <stdio.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabiti temsil etmek için arabellek türü `setvbuf`.
+
+Olası değerler aşağıdaki bildirim sabitleriyle verilmiştir:
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_IOFBF`|Tam arabelleğe alma: Belirtilen arabellek çağrıda `setvbuf` kullanılır ve boyutunu olarak belirtilen `setvbuf` çağırın. Arabellek işaretçi işaret türündeyse **NULL**, otomatik olarak tahsis edilen arabellek belirtilen boyutu kullanılır.|
+|`_IOLBF`|Aynı `_IOFBF`.|
+|`_IONBF`|Arabellek çağrısında bağımsız değişken bağımsız olarak kullanılır `setvbuf`.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[setbuf](../c-runtime-library/reference/setbuf.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

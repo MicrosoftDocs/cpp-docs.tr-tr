@@ -15,22 +15,24 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7554e7ee59f1d25344c61bd208fd0341add797a9
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4e052de60234b065a137c5528c77d2d6c97490e8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464484"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034857"
 ---
 # <a name="reading-strings-into-the-ole-db-provider"></a>Dizeleri OLE DB Sağlayıcısına Okuma
+
 `RMyProviderRowset::Execute` İşlevi bir dosyayı açar ve dizelerini okur. Tüketici dosya adı çağırarak sağlayıcıya geçen [ICommandText::SetCommandText](/previous-versions/windows/desktop/ms709757\(v=vs.85\)). Sağlayıcı dosya adını alır ve üye değişkeni depolar `m_szCommandText`. `Execute` Dosya adından okur `m_szCommandText`. Dosya adı geçersiz veya dosya kullanılamıyor `Execute` bir hata döndürür. Aksi takdirde, çağrılar ve dosyayı açar `fgets` dizeleri alınamadı. Her dizeleri okuma ayarlayın `Execute` kullanıcı kaydını örneği oluşturur (`CAgentMan`) ve bir diziye yerleştirir.  
   
- Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB geçmez [uygunluk testlerini](../../data/oledb/testing-your-provider.md).  
+Dosya açılamıyor, `Execute` DB_E_NOTABLE döndürmelidir. Bunun yerine E_FAIL döndürürse, sağlayıcı birçok tüketicileriyle çalışmaz ve OLE DB geçmez [uygunluk testlerini](../../data/oledb/testing-your-provider.md).  
   
 ## <a name="example"></a>Örnek  
   
 ### <a name="description"></a>Açıklama  
- Düzenlenen `Execute` işlevi şu şekilde görünür:  
+
+Düzenlenen `Execute` işlevi şu şekilde görünür:  
   
 ### <a name="code"></a>Kod  
   
@@ -107,4 +109,5 @@ public:
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)
+
+[Basit Salt Okunur Sağlayıcıyı Uygulama](../../data/oledb/implementing-the-simple-read-only-provider.md)

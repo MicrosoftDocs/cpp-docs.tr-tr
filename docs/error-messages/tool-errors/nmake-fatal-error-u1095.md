@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13c819d18149e61bca71f6a4cb10ea851a2d485d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 964ec1d029e56a5d9d78659ad919c71a4e44506d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317251"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039887"
 ---
 # <a name="nmake-fatal-error-u1095"></a>NMAKE Önemli Hatası U1095
-Genişletilmiş komut satırı 'komut satırı' çok uzun  
-  
- Makro genişletme sonrasında verilen komut satırı komut satırları işletim sistemi için bir uzunluk sınırı aştı.  
-  
- MS-DOS komut satırında en fazla 128 karakter izin verir.  
-  
- Bir dosyadan komut satırı girişi kabul edebilir bir programı için komut ise komutu değiştirin ve disk üzerindeki bir dosyaya veya bir satır içi dosya girişten sağlayın. Örneğin, bağlantı ve LIB bir yanıt dosyası girişi kabul eder.
+
+Genişletilmiş komut satırı 'komut satırı' çok uzun
+
+Makro genişletme sonra verilen komut satırı komut satırları işletim sistemi için bir uzunluk sınırını aştı.
+
+MS-DOS en çok 128 karakter, bir komut satırında izin verir.
+
+Komut dosyasından komut satırı girişi kabul edebilen bir program için ise komutu değiştirmek ve disk üzerindeki bir dosya veya bir satır içi dosyası girişini sağlayın. Örneğin, bağlantı ve LIB bir yanıt dosyası girişi kabul eder.

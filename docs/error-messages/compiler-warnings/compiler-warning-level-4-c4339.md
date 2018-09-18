@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b94d6a059c1c04eeae04bf917a84836c0354197e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ab96374beffed9822b20f4f10db812f170ea6cc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295801"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025236"
 ---
 # <a name="compiler-warning-level-4-c4339"></a>Derleyici Uyarısı (düzey 4) C4339
-'type': Tanımsız Tür kullanımını algılandı WinRT veya CLR meta veri - bu türün kullanımı, bir çalışma zamanı özel durumuna neden olabilir  
-  
- Windows çalışma zamanı veya ortak dil çalışma zamanı için derlenen kodda bir türü tanımlanmadı. Olası çalışma zamanı özel durumu önlemek için türünü tanımlayın.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4339 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C4339.cpp  
-// compile with: /W4 /clr /c  
-// C4339 expected  
-#pragma warning(default : 4339)  
-  
-// Delete the following line to resolve.  
-class A;  
-  
-// Uncomment the following line to resolve.  
-// class A{};  
-  
-class X {  
-public:  
-   X() {}  
-  
-   virtual A *mf() {  
-      return 0;  
-   }  
-};  
-  
-X * f() {  
-   return new X();  
-}  
+
+'type': Tanımsız Tür algılandı WinRT veya CLR meta verilerinde - bu türün kullanılması çalışma zamanı özel durumuna neden
+
+Windows çalışma zamanı veya ortak dil çalışma zamanı için derlenmiş kodda bir türü tanımlanmadı. Olası çalışma zamanı özel önlemek için türü tanımlar.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4339 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C4339.cpp
+// compile with: /W4 /clr /c
+// C4339 expected
+#pragma warning(default : 4339)
+
+// Delete the following line to resolve.
+class A;
+
+// Uncomment the following line to resolve.
+// class A{};
+
+class X {
+public:
+   X() {}
+
+   virtual A *mf() {
+      return 0;
+   }
+};
+
+X * f() {
+   return new X();
+}
 ```

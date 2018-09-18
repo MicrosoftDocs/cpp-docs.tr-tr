@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5af2913e2c0faec16fa9b898998bfb60720cf201
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a687c885a3388e01b2089aca1b399d0559803128
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295233"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045630"
 ---
 # <a name="compiler-warning-level-4-c4296"></a>Derleyici Uyarısı (düzey 4) C4296
-'işleci': ifade değer her zaman false  
-  
- İmzasız bir değişkeni karşılaştırma işlemi sıfır ile kullanıldı.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4296 oluşturur:  
-  
-```  
-// C4296.cpp  
-// compile with: /W4  
-#pragma warning(default : 4296)  
-int main()  
-{  
-   unsigned int u = 9;  
-   if (u < 0)    // C4296  
-      u++;  
-   if (u >= 0)   // C4296  
-      u++;  
-}  
+
+'operator': ifade false, her zaman
+
+Sıfır ile bir karşılaştırma işleminde işaretsiz bir değişken kullanıldı.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4296 oluşturur:
+
+```
+// C4296.cpp
+// compile with: /W4
+#pragma warning(default : 4296)
+int main()
+{
+   unsigned int u = 9;
+   if (u < 0)    // C4296
+      u++;
+   if (u >= 0)   // C4296
+      u++;
+}
 ```

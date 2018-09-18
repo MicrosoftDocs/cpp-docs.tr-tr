@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 18a2ccc8809b18d9a28b1fc60f5460dd4272a49c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd8d28cf0f201b3042fe3d7a13d28e56150c976e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244244"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021609"
 ---
 # <a name="compiler-error-c2920"></a>Derleyici Hatası C2920
-yeniden tanımlama: 'sınıfı': sınıf şablonu veya genel zaten bildirildiği 'türünde'  
-  
- Bir genel veya Şablon sınıfı eşdeğer olmayan birden çok bildirimleri var. Bu hatayı düzeltmek için farklı türleri için farklı adlar kullanın veya tür adı şemadaki kaldırın.  
-  
- Aşağıdaki örnek C2920 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2920.cpp  
-// compile with: /c  
-typedef int TC1;  
-template <class T>   
-struct TC1 {};   // C2920  
-struct TC2 {};   // OK - fix by using a different name  
-```  
-  
- Ayrıca C2920 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2920b.cpp  
-// compile with: /clr /c  
-typedef int GC1;  
-generic <class T>   
-ref struct GC1 {};   // C2920  
-ref struct GC2 {};   // OK - fix by using a different name  
+
+yeniden tanımlama: 'class': sınıf şablonu veya genel zaten bildirildi 'türü olarak'
+
+Bir genel veya Şablon sınıfı, eşdeğer olan birden fazla bildirimi sahiptir. Bu hatayı düzeltmek için farklı türleri için farklı adlar kullanın veya yeniden tanımlanması, tür adı'nı kaldırın.
+
+Aşağıdaki örnek, C2920 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2920.cpp
+// compile with: /c
+typedef int TC1;
+template <class T>
+struct TC1 {};   // C2920
+struct TC2 {};   // OK - fix by using a different name
+```
+
+C2920, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2920b.cpp
+// compile with: /clr /c
+typedef int GC1;
+generic <class T>
+ref struct GC1 {};   // C2920
+ref struct GC2 {};   // OK - fix by using a different name
 ```

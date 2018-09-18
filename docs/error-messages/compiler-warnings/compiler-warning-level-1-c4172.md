@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 746442638820d0c81144611a678996dc4c8483b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 56f606b48fb060472dd67d34800c06946bc41712
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276665"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043514"
 ---
 # <a name="compiler-warning-level-1-c4172"></a>Derleyici Uyarısı (düzey 1) C4172
-yerel değişken ya da geçici adresini döndürüyor  
-  
- Bir işlev adresi yerel değişken ya da geçici nesne döndürür. İşlevi döndüğünde, döndürülen adresi geçerli değil şekilde yerel değişkenleri ve geçici nesneler yok olur.  
-  
- Böylece yerel nesne adresi döndürmüyor işlevi yeniden tasarlamanız.  
-  
- Aşağıdaki örnek C4172 oluşturur:  
-  
-```  
-// C4172.cpp  
-// compile with: /W1 /LD  
-float f = 10;  
-  
-const double& bar() {  
-// try the following line instead  
-// const float& bar() {  
-   return f;   // C4172  
-}  
+
+yerel değişkenin veya geçici adresini döndürüyor
+
+Bir işlev bir yerel değişken veya geçici nesnenin adresini döndürür. Bir işlev geri döndüğünde, döndürülen adresi geçerli değil. Bu nedenle yerel değişkenleri ve geçici nesneler yok edilir.
+
+İşlevi, yerel bir nesnenin adresini döndürmeyen olacak şekilde yeniden tasarlayın.
+
+Aşağıdaki örnek, C4172 oluşturur:
+
+```
+// C4172.cpp
+// compile with: /W1 /LD
+float f = 10;
+
+const double& bar() {
+// try the following line instead
+// const float& bar() {
+   return f;   // C4172
+}
 ```

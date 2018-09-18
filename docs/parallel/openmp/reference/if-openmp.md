@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2467c295c4f2724ec6d258e844f2bdaa84cfe29
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 83e1920ab2cb44815e9547e4f7f4a07999c1c588
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692249"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020959"
 ---
 # <a name="if-openmp"></a>if (OpenMP)
-Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.  
+Bir döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,11 +32,10 @@ Döngü paralel veya seri gerçekleştirilip gerçekleştirilmeyeceğini belirti
 if(expression)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `expression`  
- (Sıfır), true olarak değerlendirilirse, paralel olarak yürütmek için paralel bölgede kod neden bir tamsayı ifade. İfade (sıfır) false hesaplanırsa paralel bölge (tek bir iş parçacığı tarafından) seri olarak yürütülür.  
+*İfade*<br/>
+True (sıfırdan farklı) olarak değerlendirilirse, paralel olarak yürütmek için bir paralel bölgenin içinde kod neden bir tam sayı ifade. İfade false (sıfır) olarak değerlendirilirse, paralel bölgenin içinde seri (tek bir iş parçacığı tarafından) yürütülür.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `if` Aşağıdaki yönergeleri için geçerlidir:  
@@ -45,9 +44,9 @@ if(expression)
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
+ Daha fazla bilgi için [2.3 parallel yapı](../../../parallel/openmp/2-3-parallel-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

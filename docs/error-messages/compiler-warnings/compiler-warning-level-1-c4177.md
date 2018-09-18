@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae001b593d965ead0c834793dbbeee3972a5b0bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 489b3a23fa17cbe7fac473c7c0b51f1c680c234a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032555"
 ---
 # <a name="compiler-warning-level-1-c4177"></a>Derleyici Uyarısı (düzey 1) C4177
-\#pragma pragma genel kapsamda olmalıdır  
-  
- [Pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pragma yerel bir kapsamda kullanılmamalıdır. **Pragma** genel kapsam geçerli kapsam sonra karşılaşılana kadar geçerli olmaz.  
-  
- Aşağıdaki örnek C4177 oluşturur:  
-  
-```  
-// C4177.cpp  
-// compile with: /W1  
-// #pragma bss_seg("global")   // OK  
-  
-int main() {  
-   #pragma bss_seg("local")    // C4177  
-}  
+
+\#pragma pragma genel kapsamda olmalıdır
+
+[Pragma](../../preprocessor/pragma-directives-and-the-pragma-keyword.md) pragması, bir yerel kapsamda kullanılmamalıdır. **Pragma** genel kapsam geçerli kapsam karşılaşılanaa kadar geçerli olmayacaktır.
+
+Aşağıdaki örnek, C4177 oluşturur:
+
+```
+// C4177.cpp
+// compile with: /W1
+// #pragma bss_seg("global")   // OK
+
+int main() {
+   #pragma bss_seg("local")    // C4177
+}
 ```

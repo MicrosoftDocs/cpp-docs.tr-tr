@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 284efeda739f3282bf0ae23f11f950971538645d
-ms.sourcegitcommit: 6408139d5f5ff8928f056bde93d20eecb3520361
+ms.openlocfilehash: 3d3e6ca79794eafe64ee2797c12ec8a82a3bb064
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/02/2018
-ms.locfileid: "37335724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038228"
 ---
 # <a name="cmapptrtoptr-class"></a>CMapPtrToPtr sınıfı
 Void işaretçileriyle Anahtarlanan void işaretçilerin haritalarını destekler.  
@@ -63,9 +63,7 @@ class CMapPtrToPtr : public CObject
 ## <a name="members"></a>Üyeler  
  Üye işlevlerinin `CMapPtrToPtr` sınıfın üye işlevleri için benzer [CMapStringToOb](../../mfc/reference/cmapstringtoob-class.md). Bu benzerlik nedeniyle kullanabileceğiniz `CMapStringToOb` başvuru belgeleri üye işlev özellikleri için. Gördüğünüz yerde bir `CObject` işaretçi bir işlev parametre veya dönüş değeri olarak alternatif bir işaretçiye **void**. Gördüğünüz yerde bir `CString` veya **const** işaretçisine **char** işlevi parametre veya dönüş değeri bir işaretçiye yerine **void**.  
   
- `BOOL CMapStringToOb::Lookup( const char* <key>,`  
-  
- `CObject*& <rValue> ) const;`  
+ `BOOL CMapStringToOb::Lookup( const char* <key>, CObject*& <rValue> ) const;`  
   
  Örneğin, için çevirir  
   

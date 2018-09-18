@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a421f57ca5ab896669c653b5031cc528a9aea87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ea3213c01ce86f6d78a9d7b6f4cf81fe17495c72
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321645"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038217"
 ---
 # <a name="resource-compiler-error-rc2170"></a>Kaynak Derleyicisi Hatası RC2170
-bit eşlem dosyası filename 3.00 biçiminde değil  
-  
- Bit eşlemler Windows sürümü 2.x biçimini kullanarak sürüm 3.x kaynak dosyalarında kullanılamaz.  
-  
- Bu sorunu gidermek için yeniden boyutlandırmaya veya bit eşlem 3.x biçimine dönüştürebilirsiniz.
+
+bit eşlem dosyası dosya adının 3.00 biçimde değil.
+
+Windows sürüm 2.x biçimini kullanarak bit eşlemler sürüm 3.x kaynak dosyalarında kullanılamaz.
+
+Bu sorunu gidermek için yeniden oluşturun veya bit eşlem 3.x biçimine dönüştürün.

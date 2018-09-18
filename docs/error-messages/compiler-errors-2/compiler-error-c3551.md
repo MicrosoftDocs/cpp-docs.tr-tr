@@ -16,21 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f9f69adcf071415d3c1760294bdaaaec7b71f8e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b45a6f66ab7cf2a5ebb7ae6b2a2f78e664092604
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257868"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035740"
 ---
 # <a name="compiler-error-c3551"></a>Derleyici Hatası C3551
-"geç bir dönüş türü belirtilen beklenen"  
-  
- Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için bir yer tutucu olarak belirtilen geç dönüş türü sağlamanız gerekir. Aşağıdaki örnekte, dönüş türü işlevinin geç belirtilen `myFunction` işaretçi türü dört öğelerinin bir dizi `int`.  
-  
-```  
-auto myFunction()->int(*)[4];   
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto](../../cpp/auto-cpp.md)
+
+"bir sonradan belirtilen dönüş türü bekleniyordu"
+
+Kullanırsanız `auto` anahtar sözcüğü bir işlevin dönüş türü için yer tutucu olarak sonradan belirtilmiş dönüş türü sağlamanız gerekir. Aşağıdaki örnekte, sonradan belirtilen dönüş türü işlev `myFunction` dört öğe türü bir dizi işaretçisidir `int`.
+
+```
+auto myFunction()->int(*)[4];
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto](../../cpp/auto-cpp.md)

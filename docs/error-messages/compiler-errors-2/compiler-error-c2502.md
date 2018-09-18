@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 093980d1e604eacde92a8ea7aa029f77f57d48b7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f5e3197ca71ff277f2904666261e7d0546a9128f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032540"
 ---
 # <a name="compiler-error-c2502"></a>Derleyici Hatası C2502
-'tanımlayıcısı': temel sınıfı üzerinde çok fazla erişim değiştiricileri  
-  
- Taban sınıfı birden fazla erişim değiştiricisi sahiptir. Yalnızca bir erişim değiştiricisi (`public`, `private`, veya `protected`) izin verilir.  
-  
- Aşağıdaki örnek C2502 oluşturur:  
-  
-```  
-// C2502.cpp  
-// compile with: /c  
-class A { };  
-class B { };  
-class C : private public A { };   // C2502  
-  
-// OK  
-class D : private A {};  
-class E : public A, private B {};  
+
+'identifier': taban sınıfta çok fazla erişim değiştiricileri
+
+Temel sınıfın birden fazla erişim değiştiricisi vardır. Yalnızca bir erişim belirleyici (`public`, `private`, veya `protected`) izin verilir.
+
+Aşağıdaki örnek, C2502 oluşturur:
+
+```
+// C2502.cpp
+// compile with: /c
+class A { };
+class B { };
+class C : private public A { };   // C2502
+
+// OK
+class D : private A {};
+class E : public A, private B {};
 ```

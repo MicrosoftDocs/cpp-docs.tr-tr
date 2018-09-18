@@ -15,17 +15,19 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4368f52bebf9bb171fd4b0956dfccf9794f91356
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 69b4522fe2bbb49a19dc703f36b6e98d31d1a8fb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33104288"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021245"
 ---
 # <a name="schema-rowsets"></a>Şema Satır Kümeleri
-Şema (veya meta veriler) veritabanının yapısı veya kuruluşunuz hakkında sağlayıcı, satır, tablo, sütun bilgileri gibi herhangi bir bilgi veya diğer bilgileri asıl veritabanını içerik yanı sıra değil. OLE DB şema satır kümeleri kullanarak satır açmadan gibi bilgileri almanızı sağlar.  
+
+Şema (veya meta veriler) veritabanının yapısı veya bilgi sağlayıcısı, satır, tablo, sütun gibi kuruluşunuza hakkındaki tüm bilgileri veya asıl veritabanını içeriği yanı sıra diğer bilgileri var. OLE DB satır kümesi şema satır kümeleri kullanarak açmadan gibi bilgi almanızı sağlar.  
   
- Şema satır kümeleri kullanma hakkında daha fazla bilgi için bkz: [şema satır kümeleri ile meta veri alma](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
+Şema satır kümeleri kullanma hakkında daha fazla bilgi için bkz: [kümelerinin şema satır kümeleri ile](../../data/oledb/obtaining-metadata-with-schema-rowsets.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)

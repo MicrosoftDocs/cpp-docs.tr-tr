@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d6e4dbae6232f50b9241f5542928311e8944501e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cd4b0e4ee89bc2cd2c31e476bdc4ee19bfb8a3aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229134"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043774"
 ---
 # <a name="compiler-error-c2656"></a>Derleyici Hatası C2656
-'function': bir bit alanı olarak izin verilmiyor işlevi  
-  
- Bir işlev bit alanının bir üyesi olarak bildirildi.  
-  
- Bu hata bir oluşturucu başlatıcı listesi bir sözdizimi hatası neden olabilir.
+
+'function': işleve bir bit alanı olarak izin verilmiyor
+
+Bir bit alanının bir üyesi olarak bildirilen bir işlev.
+
+Bu hata bir oluşturucu başlatıcı listesinde bir söz dizimi hatası neden olabilir.

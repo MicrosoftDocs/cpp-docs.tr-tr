@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ceccc1088e32382167e7e6400360b30de07fde1d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b0c5849c372cc4c7ebf27dbe010e65d406ad1ab1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032908"
 ---
 # <a name="compiler-error-c2030"></a>Derleyici Hatası C2030
-yıkıcı Erişilebilirlik 'özel korumalı' ile 'Kapalı' olarak bildirilen bir sınıf üyesi olamaz  
-  
- Windows çalışma zamanı sınıf olarak bildirilen `sealed` korumalı özel yıkıcı sahip olamaz. Yalnızca ortak sanal ve özel sanal olmayan Yıkıcılar korumalı türlerde izin verilir. Daha fazla bilgi için bkz: [Ref sınıflar ve yapılar](../../cppcx/ref-classes-and-structs-c-cx.md).  
-  
- Bu hatayı düzeltmek için yıkıcı erişilebilirliğini değiştirin.
+
+erişebilirliği 'protected private' olan bir yok edici 'sealed' olarak bildirilmiş bir sınıfın üyesi olamaz
+
+Bir Windows çalışma zamanı sınıf olarak bildirilen `sealed` özel korumalı bir yok Edicisi olamaz. Yalnızca genel sanal ve özel sanal olmayan yok ediciler sealed türlerde izin verilir. Daha fazla bilgi için [başvuru sınıfları ve yapıları](../../cppcx/ref-classes-and-structs-c-cx.md).
+
+Bu hatayı düzeltmek için yok edici erişilebilirliğini değiştirin.

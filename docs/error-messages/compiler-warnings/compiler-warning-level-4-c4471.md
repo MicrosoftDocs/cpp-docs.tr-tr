@@ -16,46 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a530cee3c3fcfec8566d46b116fcc4e71760ed11
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4bcbeafb6952bc40f7fb67c6a0baa2e90051d3ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023364"
 ---
 # <a name="compiler-warning-level-4-c4471"></a>Derleyici Uyarısı (düzey 4) C4471
-'*numaralandırma*': dizininden kapsam dışı numaralandırma ileriye dönük bildirimi bir temel alınan türü (int olduğu varsayılır) olması gerekir  
-  
-Dizininden kapsam dışı numaralandırma ileriye dönük bildirimi tanımlayıcısı için temel alınan tür bulundu. Varsayılan olarak, Visual C++ varsayar `int` numaralandırması için temel alınan tür değil. Farklı bir açık tür belirtilirse, farklı bir tür numaralandırma tanımı'nda, örneğin, kullanılıyorsa veya farklı bir tür başlatıcısı tarafından dolaylı olarak ayarlanmışsa, bu sorunlara neden olabilir. Taşınabilirlik sorunlarını da olabilir; diğer derleyiciler değil varsayın `int` numaralandırma temel türü.  
-  
-Varsayılan olarak bu uyarı kapalıdır; wln veya /w kullanabilirsiniz*N*komut satırında etkinleştirmek veya #pragma kullanmak için 4471 [uyarı](../../preprocessor/warning.md) kaynak dosyanızdaki.  
-  
-Bazı durumlarda, bu uyarıyı alacaklardır. Bir sabit listesi için ileriye dönük bildirimi sonra tanımı görünüyorsa, bu uyarıyı harekete. Örneğin, C4471 neden olabilir olsa bile bu kodu geçerli verilmiştir:  
-  
-```cpp  
+
+'*numaralandırma*': kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir temel türü (int varsayıldı) olmalıdır
+
+Kapsamsız bir numaralandırmanın İleri dönük bildiriminin bir tanımlayıcı temel alınan türü için bulunamadı. Varsayılan olarak, Visual C++ varsayar `int` numaralandırma için temel alınan türü. Farklı bir açık tür belirtilirse, farklı bir tür numaralandırma tanımında, örneğin, kullanılıyorsa veya farklı bir tür bir başlatıcısı tarafından örtük olarak ayarlanırsa bu sorunlara neden olabilir. Taşınabilirlik sorunlarını da olabilir; diğer derleyiciler değil varsayar `int` temel numaralandırma türüdür.
+
+Varsayılan olarak bu uyarıyı kapalıdır; /Wall veya /w kullanabileceğiniz*N*komut satırında etkinleştirmek veya #pragma 4471 [uyarı](../../preprocessor/warning.md) , kaynak dosyanızdaki.
+
+Bazı durumlarda bu sahte bir uyarıdır. Bu uyarı, İleri dönük bildiriminin bir sabit listesi için tanımından sonra görünüyorsa, harekete. Örneğin, C4471 neden olsa bile bu kod geçerli şöyledir:
+
+```cpp
 // C4471a.cpp
 // Compile with: cl /c /w14471 C4471a.cpp
 enum Example { item = 0x80000000UL };
 enum Example;    // Spurious C4471
 // ...
-```  
-  
-## <a name="example"></a>Örnek  
-Genel olarak, ileriye dönük bildirimi yerine dizininden kapsam dışı numaralandırması için tam tanımı kullanmak güvenlidir. Tanımı bir üstbilgi dosyasında koyun ve başvurduğu kaynak dosyaları dahil edin. Bu, C ++ 98 ve daha sonra yazılan kodu çalışır. Bu çözüm taşınabilirlik ve Bakım kolaylığı için öneririz.  
-  
-```cpp  
+```
+
+## <a name="example"></a>Örnek
+
+Genel olarak, İleri dönük bildirimi yerine kapsamlı olmayan numaralandırma için tam tanımı kullanmak güvenlidir. Tanımı bir üstbilgi dosyasında yerleştirin ve ona başvuran kaynak dosyaları dahil edin. Bu, C ++ 98 ve üzeri için yazılmış kod içinde çalışır. Bu çözüm taşınabilirlik ve Bakım kolaylığı için öneririz.
+
+```cpp
 // C4471b.cpp
 // Compile with: cl /c /w14471 C4471b.cpp
 enum Example;    // C4471
 // To fix, replace the line above with the enumeration definition:
 // enum Example { item = 0x80000000UL };
 // ...
-```  
-  
-## <a name="example"></a>Örnek  
-C ++ 11'de, bir açık tür dizininden kapsam dışı numaralandırma ve iletme bildiriminden ekleyebilirsiniz. Karmaşık üstbilgi ekleme mantığı ileriye dönük bildirimi yerine tanımı kullanımını engelliyorsa Bu çözüm öneririz. Bu çözüm bir bakım soruna yol açabilir: numaralandırma tanımı için kullanılan temel türünü değiştirmek tüm eşleşecek şekilde iletme bildirimlerinin da değiştirmelisiniz veya kodunuzda sessiz hataları olabilir. Bu sorunu en aza indirmek için bir üstbilgi dosyasına ileriye dönük bildirimi koyabilirsiniz.  
-  
-```cpp  
+```
+
+## <a name="example"></a>Örnek
+
+C ++ 11'de, kapsamlı olmayan numaralandırma ve kendi İleri dönük bildirimi için açık bir tür ekleyebilirsiniz. Karmaşık üstbilgi ekleme mantığı kullanmak yerine İleri dönük bildiriminin tanımının engelliyorsa Bu çözüm öneririz. Bu çözüm için bir bakım sorunu neden olabilir: numaralandırma tanımı için kullanılan temel alınan türünü değiştirmek tüm eşleştirilecek bildirimleri ayrıca değiştirmeli veya kodunuzda sessiz hataları olabilir. Bu sorunu en aza indirmek için bir üstbilgi dosyasına İleri dönük bildirimi koyabilirsiniz.
+
+```cpp
 // C4471c.cpp
 // Client code for enumeration defined in C4471d.cpp
 // Compile with: cl /c /w14471 C4471c.cpp C4471d.cpp
@@ -63,22 +66,23 @@ enum Example;    // C4471, int assumed
 // To fix, replace the lines above with the forward declarations:
 // enum Example : unsigned;
 // ...
-```  
-  
-```cpp  
+```
+
+```cpp
 // C4471d.cpp
 // Definition for enumeration used in C4471c.cpp
 // Compile with: cl /c /w14471 C4471c.cpp C4471d.cpp
 enum Example : unsigned { item = 0x80000000 }; // explicit type
 // ...
-```  
-  
-Bir sabit listesi için açık bir tür belirtirseniz, uyarı da etkinleştirmeniz önerilir [C4369](compiler-warning-level-1-C4369.md), hangi varsayılan olarak açıktır. Bu, burada açıkça belirtilen türü farklı bir type numaralandırması öğe gerektirdiği durumlar tanımlar.
-  
-## <a name="example"></a>Örnek  
-Kapsamlı bir liste, C ++ 11'de yeni bir özelliğini kullanmak için kodunuzu değiştirebilirsiniz. Tanım ve numaralandırma türü kullanan tüm istemci kodu kapsamlı bir liste kullanmak için değiştirilmesi gerekir. Ad alanı kirliliği sorunlar varsa, tanımlanan numaralandırma öğelerin adlarını enum kapsamına sınırlı olduğu gibi kapsamlı bir liste kullanmanızı öneririz. Başka bir kapsamlı bir liste üyeleri Zarif hataların bir kaynak olabilen başka bir tamsayı veya numaralandırma türüne örtük olarak dönüştürülemiyor özelliğidir.
+```
 
-```cpp  
+Bir numaralandırma için açık bir tür belirtirseniz, uyarı de etkinleştirmeniz önerilir [C4369](compiler-warning-level-1-C4369.md), hangi varsayılan olarak açıktır. Bu, burada bir sabit listesi öğesi farklı bir türe açıkça belirtilen türe ihtiyaç duyması tanımlar.
+
+## <a name="example"></a>Örnek
+
+C ++ 11'de yeni bir özellik kapsamlı enum kullanmak için kodunuzu değiştirebilirsiniz. Hem tanımı hem de sabit listesi türünü kullanan herhangi bir istemci kod kapsamlı enum kullanmak için değiştirilmesi gerekir. Ad alanı kirliliği ile ilgili sorunlar varsa, tanımlanan numaralandırma öğelerin adlarını enum kapsamına sınırlı olduğu gibi kapsamlı bir numaralandırma kullanmanızı öneririz. Başka bir kapsamlı numaralandırma üyelerini küçük hatalar, kaynak olabilecek başka bir integral veya numaralandırma türü, örtük olarak dönüştürülemez özelliğidir.
+
+```cpp
 // C4471e.cpp
 // Client code for scoped enumeration defined in C4471f.cpp
 // Compile with: cl /c /w14471 C4471e.cpp C4471f.cpp
@@ -86,13 +90,13 @@ enum Example;    // C4471
 // To fix, replace the line above with the forward declaration:
 // enum class Example;
 // ...
-```  
-  
-```cpp  
+```
+
+```cpp
 // C4471f.cpp
 // Definition for scoped enumeration used in C4471e.cpp
 // Compile with: cl /c /w14471 C4471e.cpp C4471f.cpp
 enum class Example { item = 0 };
 // ...
-```  
-  
+```
+

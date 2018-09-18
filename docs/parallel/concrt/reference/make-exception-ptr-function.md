@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f437695e8c0062f9a40f99ac75485101a65fe2e3
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: b3f483d266b8150dfd4aaa5299ffec280d447157
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695726"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037625"
 ---
 # <a name="makeexceptionptr-function"></a>make_exception_ptr İşlevi
 ## <a name="syntax"></a>Sözdizimi  
@@ -30,8 +30,11 @@ exception_ptr make_exception_ptr(_E _Except);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_E`  
- `_Except`  
+*_E*<br/>
+Özel durum türü.
+
+*_Except*<br/>
+Özel durum değeri.
   
 ## <a name="return-value"></a>Dönüş Değeri  
   

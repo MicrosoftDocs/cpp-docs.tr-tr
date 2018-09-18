@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 49e25fa8a730ea31caf747d07ce30a0622c4bd01
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 4cff60e5316202842b2ee22c5c6ba10813839b5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45714694"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035857"
 ---
 # <a name="application-settings-atl-project-wizard"></a>Uygulama ayarları, ATL Proje Sihirbazı
 
@@ -68,7 +68,7 @@ Kullanım **uygulama ayarları** tasarlamak ve temel özellikleri yeni bir ATL p
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)   
-[ATL projesi oluşturma](../../atl/reference/creating-an-atl-project.md)   
+[ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
+[ATL Projesi Oluşturma](../../atl/reference/creating-an-atl-project.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

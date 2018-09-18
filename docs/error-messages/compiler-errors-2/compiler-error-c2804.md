@@ -16,45 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47a0c9a785ae47e6df00b1303553228521d20d00
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 987176753d9c9dcd21ddbe06ef2e5b59c24dd79b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036950"
 ---
 # <a name="compiler-error-c2804"></a>Derleyici Hatası C2804
-İkili 'işleci işleci' çok fazla parametre yok  
-  
- Aşırı yüklenmiş ikili işleç üye işlevi ile birden fazla parametre bildirildi. İşlecin türü olan bir ikili işleç üye işlevi ilk işlenen parametresinin türü kapsayan, kapsanır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2804 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2804.cpp  
-// compile by using: cl /c /W4 C2804.cpp  
-class X {  
-public:  
-   X& operator+= (const X &left, const X &right);   // C2804  
-   X& operator+= (const X &right);   // OK - left operand implicitly *this  
-};  
-  
-int main() {  
-   X x, y;  
-   x += y;   // equivalent to x.operator+=(y)  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2804 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2804_2.cpp  
-// compile with: /clr /c  
-ref struct Y {  
-   Y^ operator +(Y^ hY, int i);   // C2804  
-   static Y^ operator +(Y^ hY, int i);   // OK  
-   Y^ operator +(int i);   // OK  
-};  
+
+İkili 'operator işleci' çok fazla parametreye sahip
+
+Aşırı yüklenmiş bir ikili işleç üye işlevi, birden fazla parametre ile bildirilir. İşlecin türü olan bir ikili işleç üye işlevi, ilk işlenen parametresi kapsayan tür, kapsanır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2804 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2804.cpp
+// compile by using: cl /c /W4 C2804.cpp
+class X {
+public:
+   X& operator+= (const X &left, const X &right);   // C2804
+   X& operator+= (const X &right);   // OK - left operand implicitly *this
+};
+
+int main() {
+   X x, y;
+   x += y;   // equivalent to x.operator+=(y)
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2804 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2804_2.cpp
+// compile with: /clr /c
+ref struct Y {
+   Y^ operator +(Y^ hY, int i);   // C2804
+   static Y^ operator +(Y^ hY, int i);   // OK
+   Y^ operator +(int i);   // OK
+};
 ```

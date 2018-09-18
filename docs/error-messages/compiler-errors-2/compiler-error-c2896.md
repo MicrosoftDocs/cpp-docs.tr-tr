@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31f8b26483557a862cde3f09e9ac8992dce6233b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7cd60c4b5d1046c0b5a828539ebd66036b7cf40c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244553"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042864"
 ---
 # <a name="compiler-error-c2896"></a>Derleyici Hatası C2896
-'function1': işlevi şablon 'function2' bağımsız değişken olarak kullanılamaz  
-  
- İşlev şablonu başka bir işlev şablon bağımsız değişken olamaz.  
-  
- Aşağıdaki örnek C2896 oluşturur:  
-  
-```  
-// C2896.cpp  
-template<class T1, class T2> void f1(void(*)(T1, T2));  
-template<class T1, class T2> void f2(T1, T2);  
-  
-int main() {  
-   f1(f2);   // C2896  
-}  
-```  
-  
- Genel türler kullandığınızda C2896 da oluşabilir:  
-  
-```  
-// C2896b.cpp  
-// compile with: /clr  
-generic<class T1> void gf1(T1){}  
-generic<class T1> void gf2(T1){}  
-  
-int main() {  
-   gf1(gf2);   // C2896  
-   gf1(1);   // OK  
-}  
+
+'function1': işlev şablonunun 'function2' bağımsız değişkeni olarak kullanılamaz
+
+Başka bir şablon bağımsız değişkeni bir işlev şablonu olamaz.
+
+Aşağıdaki örnek, C2896 oluşturur:
+
+```
+// C2896.cpp
+template<class T1, class T2> void f1(void(*)(T1, T2));
+template<class T1, class T2> void f2(T1, T2);
+
+int main() {
+   f1(f2);   // C2896
+}
+```
+
+C2896, genel türler kullandığınızda da meydana gelebilir:
+
+```
+// C2896b.cpp
+// compile with: /clr
+generic<class T1> void gf1(T1){}
+generic<class T1> void gf2(T1){}
+
+int main() {
+   gf1(gf2);   // C2896
+   gf1(1);   // OK
+}
 ```

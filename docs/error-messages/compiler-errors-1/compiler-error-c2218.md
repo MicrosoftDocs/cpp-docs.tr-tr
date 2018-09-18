@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1efda7258616862efc464b493b51ada2c6bd7674
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 52c449381c6e8a7391706ed6097bc38576bc69fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172217"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041291"
 ---
 # <a name="compiler-error-c2218"></a>Derleyici Hatası C2218
-'__vectorcall' ile kullanılamaz ' / arch: IA32'  
-  
- `__vectorcall` Çağırma yalnızca desteklenen yerel kodda Streaming SIMD Extensions 2 (SSE2) dahil x86 hem x64 işlemciler ve üstü. Daha fazla bilgi için bkz: [__vectorcall](../../cpp/vectorcall.md).  
-  
- Bu hatayı düzeltmek için hedef SSE2, AVX ya da AVX2 yönerge kümelerini derleyici seçeneklerini değiştirin. Daha fazla bilgi için bkz: [/(x86) arch](../../build/reference/arch-x86.md).
+
+'__vectorcall' kullanılamaz ' / arch: IA32'
+
+`__vectorcall` Çağırma kuralı yalnızca desteklenen yerel kodda, Streaming SIMD Extensions 2 (SSE2) içeren x86 ve x64 işlemciler ve üzeri. Daha fazla bilgi için [__vectorcall](../../cpp/vectorcall.md).
+
+Bu hatayı düzeltmek için hedef SSE2, AVX veya AVX2 yönerge kümesi için derleyici seçeneklerini değiştirin. Daha fazla bilgi için [/arch (x86)](../../build/reference/arch-x86.md).

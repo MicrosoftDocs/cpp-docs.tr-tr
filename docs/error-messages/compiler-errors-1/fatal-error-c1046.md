@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02c609d5f846fa6f339eac98b725919560df068f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 449b181167ef493c149e9e34cb2f1a681148411d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198488"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035480"
 ---
 # <a name="fatal-error-c1046"></a>Önemli hata C1046
-Derleyici sınırı: yapısı çok fazla iç içe  
-  
- Yapısı, UNION veya sınıf 15 düzeyden iç içe geçirme sınırı aştı. İç içe geçme düzeyini düşürmenin tanımı yeniden yazın. Yapısı, UNION veya sınıfı kullanarak iki veya daha fazla parçalara bölmek `typedef` bir veya daha fazla iç içe geçmiş yapılar tanımlamak için.
+
+Derleyici sınırı: yapısı çok derin iç içe
+
+Yapı, birlik veya 15 düzeyleri iç içe geçme sınırı aşıldı. İç içe geçme düzeyi azaltmak için tanımını yeniden yazın. Kullanarak yapı, birlik veya iki veya daha çok parçaya bölmek `typedef` bir veya daha fazla iç içe geçmiş yapılar tanımlamak için.

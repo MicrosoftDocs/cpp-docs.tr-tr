@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba85254d32ef6b92266d0556aa7f5eb760f1835e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb6bb5a7c35012b8879efe01ed7cab9b0e5954a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172773"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036208"
 ---
 # <a name="compiler-error-c2312"></a>Derleyici Hatası C2312
-'exception1': satır numarası 'exception2' tarafından yakalandı  
-  
- İki işleyicileri catch aynı özel durum türü.  
-  
- Aşağıdaki örnek C2312 oluşturur:  
-  
-```  
-// C2312.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-    try {  
-        throw "ooops!";  
-    }  
-    catch( signed int ) {}  
-    catch( int ) {}   // C2312  
-}  
+
+'exception1': satır numarası 'exception2' tarafından yakalandı
+
+İki işleyiciler, aynı özel durum türü yakalayın.
+
+Aşağıdaki örnek, C2312 oluşturur:
+
+```
+// C2312.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+    try {
+        throw "ooops!";
+    }
+    catch( signed int ) {}
+    catch( int ) {}   // C2312
+}
 ```

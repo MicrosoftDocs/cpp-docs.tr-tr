@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce88321173ee2c8cc286f18d8ab8f1bf5ec98e13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1983fa0a18667d98f84dfe5049afd4e872d87d93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198631"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021596"
 ---
 # <a name="fatal-error-c1047"></a>Önemli hata C1047
-Nesne veya kitaplık dosyası 'dosyası' diğer nesneleri daha eski bir derleyicisi ile oluşturulmuş; eski nesneler ve kitaplıkları yeniden derleme  
-  
- Nesne dosyaları veya kitaplıkları ile yapılandırıldığında C1047 nedeni **/LTCG** birlikte, ancak bu nesne dosyaları veya kitaplıkları Visual C++ araç takımını farklı sürümlerini burada yerleşik bağlanır.  
-  
- Derleyici yeni bir sürümünü kullanmaya başlamak, ancak varolan nesne dosyaları veya kitaplığı temiz bir yeniden oluşturma işlemi gerçekleştirmeyin bu durum oluşabilir.  
-  
- C1047 çözmek için tüm nesne dosyaları veya kitaplıkları yeniden oluşturun.
+
+'Dosya' nesne veya kitaplık dosyası diğer nesnelerden daha eski bir derleyici ile oluşturulmuş; eski nesneleri ve kitaplıkları yeniden oluşturun
+
+Nesne dosyalarında veya kitaplıklarındaki ile yapılandırıldığında C1047 neden **/LTCG** birlikte, ancak bu nesne dosyalarında veya kitaplıklarındaki Visual C++ araç takımı farklı sürümleriyle burada yerleşik bağlanır.
+
+Yeni bir derleyici sürümü kullanmaya başlamak, ancak varolan nesne dosyalarında veya kitaplıklarındaki temiz yeniden yapmayın bu durum oluşabilir.
+
+C1047 çözmek için tüm nesne dosyalarında veya kitaplıklarındaki yeniden oluşturun.

@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4a6ec241a9a8e175d542b1f3b9db9ea1cdc3ba0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ddeea660515ea0a71e4807a34d2172413796046
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198189"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036741"
 ---
 # <a name="fatal-error-c1022"></a>Önemli hata C1022
-Beklenen #endif  
-  
- Bir `#if`, `#ifdef`, veya `#ifndef` yönergesi sahip eşleşen `#endif` yönergesi. Her emin olmanız `#if`, `#ifdef`, veya `#ifndef` eşleşen bir `#endif`.  
-  
- Aşağıdaki örnek C1022 oluşturur:  
-  
-```  
-// C1022.cpp  
-#define true 1  
-  
-#if (true)  
-#else   
-#else    // C1022  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C1022b.cpp  
-// compile with: /c  
-#define true 1  
-  
-#if (true)  
-#else   
-#endif  
+
+#endif bekleniyor
+
+Bir `#if`, `#ifdef`, veya `#ifndef` yönergesi sahip eşleşen `#endif` yönergesi. Her emin olması `#if`, `#ifdef`, veya `#ifndef` eşleşen bir `#endif`.
+
+Aşağıdaki örnek, C1022 oluşturur:
+
+```
+// C1022.cpp
+#define true 1
+
+#if (true)
+#else
+#else    // C1022
+```
+
+Olası çözüm:
+
+```
+// C1022b.cpp
+// compile with: /c
+#define true 1
+
+#if (true)
+#else
+#endif
 ```

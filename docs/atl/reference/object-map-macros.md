@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1061b105b7fd1e344223da3850275910c164774b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3b85d157cd6124bb0ef6e6167a415c018e14b046
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761858"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040446"
 ---
 # <a name="object-map-macros"></a>Nesne işleme makroları
 
@@ -47,7 +47,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Sınıfı nesne açıklaması.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -74,10 +74,10 @@ OBJECT_ENTRY_AUTO( clsid, class )
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.
 
-*class*  
+*class*<br/>
 [in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -106,10 +106,10 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 
 ### <a name="parameters"></a>Parametreler
 
-*CLSID*  
+*CLSID*<br/>
 [in] Adlı bir C++ sınıfı tarafından uygulanan bir COM sınıfı CLSID'si *sınıfı*.
 
-*class*  
+*class*<br/>
 [in] COM sınıfı tarafından temsil edilen C++ sınıfı adı *CLSID*.
 
 ### <a name="remarks"></a>Açıklamalar

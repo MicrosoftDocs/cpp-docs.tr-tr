@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6aa84a411f91303c84acb44e2e6c0ab3d975e19f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3dc85b37d58e12602c02c2207c1f38bda9344e59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299425"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045516"
 ---
 # <a name="linker-tools-error-lnk1302"></a>Bağlayıcı Araçları Hatası LNK1302
-yalnızca güvenli .netmodules bağlama destekler; dosya .netmodule bağlantı kurulamıyor  
-  
- Bir .netmodule (ile derlenmiş **/LN**) bağlayıcıya MSIL bağlantılandırma çağırmak için bir kullanıcı girişimi geçirildi.  C++ modülü ile derlenmiş ise MSIL bağlantılandırma için geçerli **/CLR: safe**.  
-  
- İle bu hatayı düzeltmek için derleme **/CLR: safe** MSIL bağlantılandırma etkinleştirmek veya geçirmek için **/CLR** veya **/CLR: pure** modül yerine bağlayıcı .obj dosyasına.  
-  
- Daha fazla bilgi için bkz.  
-  
--   [/LN (MSIL Modülü Oluştur)](../../build/reference/ln-create-msil-module.md)  
-  
--   [Bağlayıcı Girişi olarak .netmodule Dosyaları](../../build/reference/netmodule-files-as-linker-input.md)
+
+yalnızca güvenli. netmodule'leri bağlamayı destekle; dosya .netmodule bağlanamıyor
+
+.Netmodule (ile derlenmiş **/LN**) bağlayıcıya MSIL bağlantılandırma çağırmak için bir kullanıcı girişimi geçirildi.  MSIL ile derlenmişse bağlamak için geçerli bir C++ modülünün **/CLR: safe**.
+
+Bu hatayı düzeltmek için derlemek **/CLR: safe** MSIL bağlamayı etkinleştir veya geçirmek için **/CLR** veya **/CLR: pure** modül yerine bağlayıcı .obj dosyasına.
+
+Daha fazla bilgi için bkz.
+
+- [/LN (MSIL Modülü Oluştur)](../../build/reference/ln-create-msil-module.md)
+
+- [Bağlayıcı Girişi olarak .netmodule Dosyaları](../../build/reference/netmodule-files-as-linker-input.md)

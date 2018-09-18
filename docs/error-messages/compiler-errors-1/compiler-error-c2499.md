@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6933d27a1f396dc08275c3f5149212be7abeaaf1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27f10cc2f48a72222a6e9a2a7187ba9a1f6fb450
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225731"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043956"
 ---
 # <a name="compiler-error-c2499"></a>Derleyici Hatası C2499
-'class': bir sınıf kendi temel sınıf olamaz  
-  
- Bir temel sınıf olarak tanımlama sınıfı belirtin çalışıldı.  
-  
- Aşağıdaki örnek C2499 oluşturur:  
-  
-```  
-// C2499.cpp  
-// compile with: /c  
-class CMyClass : public CMyClass {};   // C2499  
-class CMyClass{};   // OK  
+
+'class': bir sınıf kendisinin taban sınıfı olamaz
+
+Temel sınıf olarak tanımladığınız sınıf belirtin çalışıldı.
+
+Aşağıdaki örnek, C2499 oluşturur:
+
+```
+// C2499.cpp
+// compile with: /c
+class CMyClass : public CMyClass {};   // C2499
+class CMyClass{};   // OK
 ```

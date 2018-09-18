@@ -16,24 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77559679e4bb4f5a4d1f6f49223b21033c22e5c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d1e8a3533d1f2ac7a309f89e52a03b3ff8a62dec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037742"
 ---
 # <a name="compiler-error-c2674"></a>Derleyici Hatası C2674
-bir genel bildirimi bu bağlamda izin verilmiyor  
-  
- Genel yanlış bildirildi. Daha fazla bilgi için bkz: [genel türler](../../windows/generics-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2674 oluşturur.  
-  
-```  
-// C2674.cpp  
-// compile with: /clr /c  
-void F(generic <class T> ref class R1);   // C2674  
-generic <class T> ref class R2 {};   // OK  
+
+Bu bağlamda genel bir bildirimine izin verilmez
+
+Genel yanlış bildirildi. Daha fazla bilgi için [genel türler](../../windows/generics-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2674 oluşturur.
+
+```
+// C2674.cpp
+// compile with: /clr /c
+void F(generic <class T> ref class R1);   // C2674
+generic <class T> ref class R2 {};   // OK
 ```

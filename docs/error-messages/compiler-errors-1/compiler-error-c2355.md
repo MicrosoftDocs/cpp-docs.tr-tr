@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b88bf1619a003faa57d1fe1d4f03219267481d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 456049c60ce39fce3cdbf04512f306027e30db25
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195730"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035194"
 ---
 # <a name="compiler-error-c2355"></a>Derleyici Hatası C2355
-'this': yalnızca statik olmayan üye işlevleri veya statik olmayan veri üyesi başlatıcıları içinde başvurulabilir  
-  
- `this` İşaretçidir yalnızca statik olmayan üye işlevleri içinde veya statik olmayan veri üyesi başlatıcıları geçerli. Üye işlev tanımının sınıf bildiriminin dışında sınıf kapsamı değil düzgün yetkili olduğunu olduğunda bu hata neden olabilir. Hata da oluşabilir zaman `this` işaretçi sınıfında bildirilmemiş bir işlevdeki kullanılır.  
-  
- Bu sorunu gidermek için üye işlev tanımını üye işlevi bildirimi sınıfında eşleştiğinden ve bunu statik bildirilmedi, emin olun. Veri üye başlatıcıları için veri üyesi statik bildirilmedi emin olun.  
-  
- Aşağıdaki örnek C2355 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2355.cpp  
-// compile with: /c  
-class MyClass {};  
-MyClass *p = this;   // C2355  
-  
-// OK  
-class MyClass2 {  
-public:  
-   void Test() {  
-      MyClass2 *p = this;  
-   }  
-};  
+
+'this': yalnızca statik olmayan üye işlevlerin veya statik olmayan veri üyesi başlatıcıları içinde başvurulabilir
+
+`this` İşaretçisidir yalnızca statik olmayan üye işlevleri veya statik olmayan veri üyesi başlatıcıları geçerli. Sınıf bildirimi dışında bir üye işlev tanımının sınıf kapsamı düzgün nitelendirilmiş olduğunda bu hatayı neden olabilir. Hata olduğunda `this` işaretçi sınıfta bildirilen olmayan bir işlev kullanılır.
+
+Bu sorunu gidermek için bir sınıfın üye işlevi bildiriminde üye işlev tanımının eşleşir ve bu statik bildirilmedi, emin olun. Veri üyesi başlatıcıları için veri üyesi statik bildirilmedi emin olun.
+
+Aşağıdaki örnek, C2355 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2355.cpp
+// compile with: /c
+class MyClass {};
+MyClass *p = this;   // C2355
+
+// OK
+class MyClass2 {
+public:
+   void Test() {
+      MyClass2 *p = this;
+   }
+};
 ```

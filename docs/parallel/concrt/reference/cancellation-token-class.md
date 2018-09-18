@@ -23,15 +23,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d8741763295e96f3d0c221b687c8ef62fbfc55c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 125d08def4a1fb801cb1b6c911d8c8c9c154c296
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695947"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037982"
 ---
 # <a name="cancellationtoken-class"></a>cancellation_token Sınıfı
-`cancellation_token` Sınıfı, başka bir işlem iptal istendi olup olmadığını belirleme özelliğini temsil eder. Verilen bir belirteç ile ilişkili bir `task_group`, `structured_task_group`, veya `task` örtük iptal sağlamak için. Bu ayrıca iptalleri sorgulanmak veya bir geri çağırma için varsa ve kayıtlı sahip ilişkili `cancellation_token_source` iptal edilir.  
+`cancellation_token` Sınıfı, bazı işlemlerin iptal istendi olup olmadığını belirleme yeteneğini temsil eder. Verilen bir belirteç ile ilişkilendirilmiş bir `task_group`, `structured_task_group`, veya `task` örtük iptal sağlamak için. Ayrıca iptal için yoklanabilir veya bir geri çağırma için kayıtlı olan ilişkili `cancellation_token_source` iptal edilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -52,11 +52,11 @@ class cancellation_token;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[deregister_callback](#deregister_callback)|Aracılığıyla daha önce kaydedilen bir geri arama kaldırır `register` yöntemi temel alarak `cancellation_token_registration` kayıt zamanında nesne döndürdü.|  
-|[is_cancelable](#is_cancelable)|Olup bu belirteç veya iptal edilebilir bir gösterge döndürür.|  
-|[is_canceled](#is_canceled)|Döndürür `true` belirteci iptal ederseniz.|  
-|[Yok](#none)|Hangi asla iptal tabi olabilir bir iptal belirteci döndürür.|  
-|[register_callback](#register_callback)|Belirteçle bir geri çağırma işlevini kaydeder. Belirteci iptal zaman geri arama yapılır. Belirteç zaten burada bu yöntem çağrılır noktada iptal ederseniz, geri çağırma hemen ve eşzamanlı olarak yapılacak olduğunu unutmayın.|  
+|[deregister_callback](#deregister_callback)|Aracılığıyla önceden kayıtlı bir geri çağırmayı kaldırır `register` dayalı `cancellation_token_registration` kayıt zamanında döndürülen nesnesi.|  
+|[is_cancelable](#is_cancelable)|Bu belirteci veya iptal edilip bir göstergesini döndürür.|  
+|[is_canceled](#is_canceled)|Döndürür `true` belirteç iptal edilmişse.|  
+|[Yok](#none)|Hiçbir zaman iptale tabi olmayan bir iptal belirteci döndürür.|  
+|[register_callback](#register_callback)|Belirteç ile bir geri çağırma işlevini kaydeder. Belirteç iptal edilirse, geri arama yapılır. Belirteç zaten burada bu yöntemin çağrıldığı noktada iptal edilirse, geri çağırma hemen ve eşzamanlı olarak yapılacağına dikkat edin.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
@@ -89,45 +89,46 @@ cancellation_token(cancellation_token&& _Src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Src`  
+*_Src*<br/>
+Kopyalanamaz veya taşınamaz cancellation_token.
   
 ##  <a name="deregister_callback"></a> deregister_callback 
 
- Aracılığıyla daha önce kaydedilen bir geri arama kaldırır `register` yöntemi temel alarak `cancellation_token_registration` kayıt zamanında nesne döndürdü.  
+ Aracılığıyla önceden kayıtlı bir geri çağırmayı kaldırır `register` dayalı `cancellation_token_registration` kayıt zamanında döndürülen nesnesi.  
   
 ```
 void deregister_callback(const cancellation_token_registration& _Registration) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Registration`  
- `cancellation_token_registration` Kaydını sildi için geri çağırma karşılık gelen nesne. Bu belirteç önceden çağrısından verilinceye gerekir `register` yöntemi.  
+*_Registration*<br/>
+`cancellation_token_registration` Çıkarılması gereken geri aramaya karşılık gelen nesne. Bu belirteç önceden bir çağrıdan iade edilmiş gerekir `register` yöntemi.  
   
 ##  <a name="is_cancelable"></a> is_cancelable 
 
- Olup bu belirteç veya iptal edilebilir bir gösterge döndürür.  
+ Bu belirteci veya iptal edilip bir göstergesini döndürür.  
   
 ```
 bool is_cancelable() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Olup bu belirteç veya iptal edilebilir bir göstergesi.  
+ Bu belirteci veya iptal edilip bir göstergesi.  
   
 ##  <a name="is_canceled"></a> is_canceled 
 
- Döndürür `true` belirteci iptal ederseniz.  
+ Döndürür `true` belirteç iptal edilmişse.  
   
 ```
 bool is_canceled() const;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Değer `true` belirteç olması durumunda iptal edildi; Aksi takdirde değer `false`.  
+ Değer `true` belirteç iptal edildi; Aksi takdirde, değeri `false`.  
   
 ##  <a name="none"></a> Yok 
 
- Hangi asla iptal tabi olabilir bir iptal belirteci döndürür.  
+ Hiçbir zaman iptale tabi olmayan bir iptal belirteci döndürür.  
   
 ```
 static cancellation_token none();
@@ -136,15 +137,16 @@ static cancellation_token none();
 ### <a name="return-value"></a>Dönüş Değeri  
  İptal edilemez bir iptal belirteci.  
   
-##  <a name="operator_neq"></a> operator! = 
+##  <a name="operator_neq"></a> işleç! = 
 
 ```
 bool operator!= (const cancellation_token& _Src) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Src`  
-  
+*_Src*<br/>
+`cancellation_token` Karşılaştırmak için.
+
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ##  <a name="operator_eq"></a> işleç = 
@@ -156,24 +158,26 @@ cancellation_token& operator= (cancellation_token&& _Src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Src`  
+*_Src*<br/>
+`cancellation_token` Atamak için.
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
-##  <a name="operator_eq_eq"></a> operator == 
+##  <a name="operator_eq_eq"></a> işleç == 
 
 ```
 bool operator== (const cancellation_token& _Src) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Src`  
+*_Src*<br/>
+`cancellation_token` Karşılaştırmak için.
   
 ### <a name="return-value"></a>Dönüş Değeri  
   
 ##  <a name="register_callback"></a> register_callback 
 
- Belirteçle bir geri çağırma işlevini kaydeder. Belirteci iptal zaman geri arama yapılır. Belirteç zaten burada bu yöntem çağrılır noktada iptal ederseniz, geri çağırma hemen ve eşzamanlı olarak yapılacak olduğunu unutmayın.  
+ Belirteç ile bir geri çağırma işlevini kaydeder. Belirteç iptal edilirse, geri arama yapılır. Belirteç zaten burada bu yöntemin çağrıldığı noktada iptal edilirse, geri çağırma hemen ve eşzamanlı olarak yapılacağına dikkat edin.  
   
 ```
 template<typename _Function>
@@ -181,14 +185,14 @@ template<typename _Function>
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- Çağrılacak işlevin nesne türünü ne zaman geri bu `cancellation_token` iptal edilir.  
+*_Function*<br/>
+Çağrılacak işlev nesnesinin türü geri bu `cancellation_token` iptal edilir.  
   
- `_Func`  
- Çağrılacak işlev nesnesi ne zaman geri bu `cancellation_token` iptal edilir.  
+*_Func*<br/>
+Çağrılacak işlev nesnesi geri bu `cancellation_token` iptal edilir.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- A `cancellation_token_registration` içinde kullanılabilir nesne `deregister` daha önce kaydedilen bir geri çağırma kaydını silmek ve kullanılmasını önlemek için yöntem. Yöntemi özel durum oluşturacak bir [invalid_operation](invalid-operation-class.md) üzerinde çağrıldıysa özel bir `cancellation_token` kullanılarak oluşturulmuş nesne [cancellation_token::none](#none) yöntemi.  
+ A `cancellation_token_registration` kullanılabilen nesne `deregister` önceden kaydedilmiş bir geri arama kaydını kaldırmak ve yapılmasını önlemek için yöntem. Yöntemi bir [invalid_operation](invalid-operation-class.md) üzerinde çağrılırsa bir özel durum bir `cancellation_token` kullanılarak oluşturulmuş nesne [cancellation_token::none](#none) yöntemi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

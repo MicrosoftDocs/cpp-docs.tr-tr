@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb812e462ffac15626a0504a81f4a32f7231617f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a88ed68f48960afb7dd0a13e91f44f63d00313be
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278584"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037729"
 ---
 # <a name="compiler-warning-level-1-c4502"></a>Derleyici Uyarısı (düzey 1) C4502
-'bağlantı belirtimi' anahtar sözcüğü 'extern' kullanılmasını gerektirir ve diğer tanımlayıcıları gelmelidir  
-  
- Bir bağlantı olmadan belirtildi `extern` anahtar sözcüğü. Bağlantı extern olmayan türleriyle ilgili değildir.  
-  
- Kabul derleyici `extern` anahtar sözcüğü.
+
+'linkage specification' 'extern' anahtar sözcüğünün kullanılmasını gerektirir ve diğer tüm belirticilerden önce gelmelidir
+
+Bir bağlantı olmadan belirtildi `extern` anahtar sözcüğü. Bağlantı extern olmayan türleri için geçerli değildir.
+
+Kabul derleyici `extern` anahtar sözcüğü.

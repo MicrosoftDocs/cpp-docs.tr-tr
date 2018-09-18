@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f87f5b9f8295b49b9c1c4bec45cad96e3dec0872
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f4c035fad1fd675fd36fef73d405c63aab3be739
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040810"
 ---
 # <a name="catlcommodule-class"></a>CAtlComModule sınıfı
 
@@ -107,10 +107,10 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer FALSE olur.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -132,7 +132,7 @@ HRESULT RegisterTypeLib();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszIndex*  
+*lpszIndex*<br/>
 Biçim dizesinde "\\\N", burada N tamsayı TYPELIB kaynak dizinidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -155,10 +155,10 @@ HRESULT UnregisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 Tür kitaplığı kaydı olması gerekiyorsa TRUE. Varsayılan değer FALSE olur.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -180,7 +180,7 @@ HRESULT UnRegisterTypeLib();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszIndex*  
+*lpszIndex*<br/>
 Biçim dizesinde "\\\N", burada N tamsayı TYPELIB kaynak dizinidir.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -193,5 +193,5 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)   
+[_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

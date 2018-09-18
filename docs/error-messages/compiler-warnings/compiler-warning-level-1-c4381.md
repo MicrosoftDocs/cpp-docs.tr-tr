@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5cb72c373b5c0808b4b1600871cd8148bcc9c9d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 81c61dcbf49beeb41780cdaeff669cf21bfffee9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277998"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037833"
 ---
 # <a name="compiler-warning-level-1-c4381"></a>Derleyici Uyarısı (düzey 1) C4381
-'function1': arabirim yöntemi uygulanmadı genel yöntemle 'function2'  
-  
- Bir sınıfın tüm işlevi bir arabirim uygulamalıdır. Bir sınıf bu koşulu karşılayan bir temel sınıflarından biri işlevi uyguluyorsa. Ancak, işlev, ortak bir işlevi olarak uygulanmalıdır.
+
+'function1': arabirim yöntemi ortak olmayan 'function2' yöntemi tarafından uygulanmayacak
+
+Bir sınıf, arabirim içinde tüm işlevi uygulamak zorundadır. Bir sınıf, temel sınıflarının biri işlevi uyguluyorsa bu koşulu karşılayan. Bununla birlikte, işlev, genel bir işlev olarak uygulanmalıdır.

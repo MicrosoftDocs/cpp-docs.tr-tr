@@ -29,36 +29,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4774156f36e5f929db1c5ddd35f423caa5cf7831
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 47227d4be0ad1c5145a9064d11b4ea633c7d7fc1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45702513"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035792"
 ---
 # <a name="localunwind2"></a>_local_unwind2
-İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicilerini çalıştırır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-void _local_unwind2(  
-   PEXCEPTION_REGISTRATION xr,  
-   int stop  
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
+
+İç CRT işlevi. Belirtilen kapsam tabloda listelenen tüm sonlandırma işleyicilerini çalıştırır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+void _local_unwind2(
+   PEXCEPTION_REGISTRATION xr,
+   int stop
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
 *XR*<br/>
-[in] Bir kapsam tablo ile ilişkilendirilmiş bir kaydolma kaydı.  
-  
+[in] Bir kapsam tablo ile ilişkilendirilmiş bir kaydolma kaydı.
+
 *Durdur*<br/>
-[in] Yeri belirten sözcük düzeyi `_local_unwind2` durdurmanız gerekir.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu yöntem yalnızca çalışma zamanı ortamı tarafından kullanılır. Yöntemi, kodunuzda çağırmayın.  
-  
- Sonlandırma işleyicileri bu yöntem yürütür, geçerli sözcük düzeyinde başlar ve works düzeyi, ulaşana kadar sözcük düzeylerinde yedekleme yolu tarafından belirtilen `stop`. Sonlandırma işleyicileri tarafından belirtilen düzeyde yürütmez `stop`.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)
+[in] Yeri belirten sözcük düzeyi `_local_unwind2` durdurmanız gerekir.
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu yöntem yalnızca çalışma zamanı ortamı tarafından kullanılır. Yöntemi, kodunuzda çağırmayın.
+
+Sonlandırma işleyicileri bu yöntem yürütür, geçerli sözcük düzeyinde başlar ve works düzeyi, ulaşana kadar sözcük düzeylerinde yedekleme yolu tarafından belirtilen `stop`. Sonlandırma işleyicileri tarafından belirtilen düzeyde yürütmez `stop`.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Alfabetik İşlev Başvurusu](../c-runtime-library/reference/crt-alphabetical-function-reference.md)

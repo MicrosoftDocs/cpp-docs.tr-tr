@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8a0622e939d1c0cb93579baeb5fa35e11be516e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 5940461a16dcb86fbb062937fe7330c1b6e04f75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756580"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021141"
 ---
 # <a name="ccomcompositecontrol-class"></a>CComCompositeControl sınıfı
 
@@ -43,13 +43,13 @@ Bu sınıf, bileşik denetim uygulamak için gereken yöntemleri sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CComCompositeControl : public CComControl<T,CAxDialogImpl<T>>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa bileşik denetim için desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -122,28 +122,19 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAdvise*  
+*bAdvise*<br/>
 Tüm denetimleri tavsiye gerekiyorsa true; Aksi durumda false.
 
 ### <a name="return-value"></a>Dönüş Değeri
 
-S_OK  
-Tüm havuz harita bağlı veya kendi olay kaynağından bağlantısı başarıyla kesildi durumunda denetler.
-
-E_FAIL  
-Tüm havuz harita bağlı veya kendi olay kaynağından bağlantısı başarıyla kesildi durumunda denetler.
-
-E_POINTER  
-Bu hata genellikle bir giriş denetiminin olay havuzu eşlemesi ile ilgili bir sorun veya kullanılan bir şablon bağımsız değişkeni ile ilgili bir sorun gösterir bir `IDispEventImpl` veya `IDispEventSimpleImpl` temel sınıfı.
-
-CONNECT_E_ADVISELIMIT  
-Bağlantı noktası zaten bağlantı sınırına ulaştı ve daha fazla kabul edemez.
-
-CONNECT_E_CANNOTCONNECT  
-Havuz Bu bağlantı noktasınca istenen arabirimi desteklemiyor.
-
-CONNECT_E_NOCONNECTION  
-Tanımlama bilgisi değeri geçerli bir bağlantı temsil etmiyor. Bu hata genellikle bir giriş denetiminin olay havuzu eşlemesi ile ilgili bir sorun veya kullanılan bir şablon bağımsız değişkeni ile ilgili bir sorun gösterir bir `IDispEventImpl` veya `IDispEventSimpleImpl` temel sınıfı.
+|||
+|-|-|
+|S_OK  |Tüm havuz harita bağlı veya kendi olay kaynağından bağlantısı başarıyla kesildi durumunda denetler.|
+|E_FAIL  |Tüm havuz harita bağlı veya kendi olay kaynağından bağlantısı başarıyla kesildi durumunda denetler.|
+|E_POINTER  |Bu hata genellikle bir giriş denetiminin olay havuzu eşlemesi ile ilgili bir sorun veya kullanılan bir şablon bağımsız değişkeni ile ilgili bir sorun gösterir bir `IDispEventImpl` veya `IDispEventSimpleImpl` temel sınıfı.|
+|CONNECT_E_ADVISELIMIT  |Bağlantı noktası zaten bağlantı sınırına ulaştı ve daha fazla kabul edemez.|
+|CONNECT_E_CANNOTCONNECT  |Havuz Bu bağlantı noktasınca istenen arabirimi desteklemiyor.|
+|CONNECT_E_NOCONNECTION  |Tanımlama bilgisi değeri geçerli bir bağlantı temsil etmiyor. Bu hata genellikle bir giriş denetiminin olay havuzu eşlemesi ile ilgili bir sorun veya kullanılan bir şablon bağımsız değişkeni ile ilgili bir sorun gösterir bir `IDispEventImpl` veya `IDispEventSimpleImpl` temel sınıfı.|
 
 ### <a name="remarks"></a>Açıklamalar
 
@@ -159,7 +150,7 @@ BOOL CalcExtent(SIZE& size);
 
 ### <a name="parameters"></a>Parametreler
 
-*Boyutu*  
+*Boyutu*<br/>
 Bir başvuru bir `SIZE` yapısı bu yöntem tarafından doldurulmalıdır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,13 +174,13 @@ HWND Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 Denetimin ana penceresine tanıtıcı.
 
-*rcPos*  
+*rcPos*<br/>
 Ayrılmış.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 Denetim oluşturma sırasında denetime geçirilecek veriler. Veri olarak geçirilen *dwInitParam* LPARAM parametresi olarak görünür [WM_INITDIALOG](/windows/desktop/dlgbox/wm-initdialog) oluşturulan, bileşik denetime gönderilecek ileti.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -236,10 +227,10 @@ virtual HWND CreateControlWindow(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 Denetimin ana penceresine tanıtıcı.
 
-*rcPos*  
+*rcPos*<br/>
 Bileşik Denetim istemcisinde konumu dikdörtgenin koordinatları göreli *hWndParent*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -280,6 +271,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl sınıfı](../../atl/reference/ccomcontrol-class.md)   
-[Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)   
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
+[Bileşik Denetim temelleri](../../atl/atl-composite-control-fundamentals.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

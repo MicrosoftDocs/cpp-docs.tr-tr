@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 670dd386be82b4356262cb59442d36fb1d6f646b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bf3ecc18e1afc9b13e47ad8b20bb92f7686d0cfc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249248"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042279"
 ---
 # <a name="compiler-error-c3160"></a>Derleyici Hatası C3160
-'işaretçi': yönetilen veri üyesi ya da WinRT sınıfı bu türe sahip olamaz  
-  
- İç atık toplama işaretçileri iç yönetilen ya da WinRT sınıfı işaret edebilir. Tüm nesne işaretçileri yavaş çalışır ve atık toplayıcı tarafından özel olarak işlenmesi gerektiği için bir sınıfın üyeleri olarak yönetilen iç işaretçiler bildiremezsiniz.  
-  
- Aşağıdaki örnek C3160 oluşturur:  
-  
-```  
-// C3160.cpp  
-// compile with: /clr  
-ref struct A {  
-   // cannot create interior pointers inside a class  
-   interior_ptr<int> pg;   // C3160  
-   int g;   // OK  
-   int* pg2;   // OK  
-};  
-  
-int main() {  
-   interior_ptr<int> pg2;   // OK  
-}  
-```  
+
+'işaretçisi': WinRT sınıfı ya da yönetilen bir veri üyesi bu türe sahip olamaz
+
+İç çöp toplama işaretçileri, iç yönetilen bir kısmını veya WinRT sınıfa işaret edebilir. Çünkü bunlar tam nesne işaretçisi yavaş çalışır ve atık toplayıcı tarafından özel işlem gerektiren bir sınıfın üyeleri olarak iç yönetilen işaretçiler bildiremezsiniz.
+
+Aşağıdaki örnek, C3160 oluşturur:
+
+```
+// C3160.cpp
+// compile with: /clr
+ref struct A {
+   // cannot create interior pointers inside a class
+   interior_ptr<int> pg;   // C3160
+   int g;   // OK
+   int* pg2;   // OK
+};
+
+int main() {
+   interior_ptr<int> pg2;   // OK
+}
+```

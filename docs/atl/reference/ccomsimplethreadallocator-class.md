@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2c8c7b2e6132bb39c8e548f6057ded0b0ca6c1e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1538d5148eeb1eb95c51150a43ef5dd7b107cae3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033556"
 ---
 # <a name="ccomsimplethreadallocator-class"></a>CComSimpleThreadAllocator sınıfı
 
@@ -64,10 +64,10 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 
 ### <a name="parameters"></a>Parametreler
 
-*pApt*  
+*pApt*<br/>
 ATL'ın varsayılan uygulamasında kullanılmaz.
 
-*nThreads*  
+*nThreads*<br/>
 EXE modülü iş parçacıklarının sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -82,5 +82,5 @@ Geçersiz kılabilirsiniz `GetThread` seçimin farklı bir yöntem sağlamak vey
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComApartment sınıfı](../../atl/reference/ccomapartment-class.md)   
+[CComApartment Sınıfı](../../atl/reference/ccomapartment-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

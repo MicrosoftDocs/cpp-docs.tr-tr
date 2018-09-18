@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7cb64ea76ae38901b2db14ec4b68bba9db69f39c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f1bf2710acdc2a738b36ca9426ce55da9f6d769
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225299"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044347"
 ---
 # <a name="compiler-error-c2488"></a>Derleyici Hatası C2488
-'tanımlayıcısı': 'naked' yalnızca uygulanabilir üyesi olmayan işlev tanımları  
-  
- [Naked](../../cpp/naked-cpp.md) öznitelik, bir işlev bildirimi uygulandı.  
-  
- Aşağıdaki örnek C2488 oluşturur:  
-  
-```  
-// C2488.cpp  
-// compile with: /c  
-// processor: x86  
-__declspec( naked ) void func();   // C2488  declaration, not definition  
-__declspec( naked ) void i;   // C2488  i is not a function  
-  
-__declspec( naked ) void func() {}   // OK  
+
+'identifier': 'naked' yalnızca uygulanabilir üye olmayan işlev tanımlarına
+
+[Naked](../../cpp/naked-cpp.md) öznitelik, bir işlev bildirimi için uygulandı.
+
+Aşağıdaki örnek, C2488 oluşturur:
+
+```
+// C2488.cpp
+// compile with: /c
+// processor: x86
+__declspec( naked ) void func();   // C2488  declaration, not definition
+__declspec( naked ) void i;   // C2488  i is not a function
+
+__declspec( naked ) void func() {}   // OK
 ```

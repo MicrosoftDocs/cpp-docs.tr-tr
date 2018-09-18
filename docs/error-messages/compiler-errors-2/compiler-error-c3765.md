@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb8370a5c9c25fee211636214a82f22c05ccb311
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cac3930e4f5ec42587a9f557adc7a82d750b3819
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274774"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042136"
 ---
 # <a name="compiler-error-c3765"></a>Derleyici Hatası C3765
-'event': olay 'type', bir event_receiver işaretlenmiş bir sınıf/yapı tanımlayamazsınız  
-  
- Bir sınıf ile işaretlenmişse [event_receiver](../../windows/event-receiver.md) özniteliği, sınıf içeremez bir [__event](../../cpp/event.md) bildirimi.  
-  
- Aşağıdaki örnek C3765 oluşturur:  
-  
-```  
-// C3765.cpp  
-[event_receiver(native)]  
-struct ER2 {  
-   __event void f();   // C3765  
-   __event void b(int);   // C3765  
-};  
+
+'event': 'type' event_receiver olarak işaretlenmiş bir sınıf/yapı içinde olay tanımlanamaz
+
+Bir sınıf ile işaretlenmişse [event_receiver](../../windows/event-receiver.md) özniteliği, sınıf içeremez bir [__event](../../cpp/event.md) bildirimi.
+
+Aşağıdaki örnek, C3765 oluşturur:
+
+```
+// C3765.cpp
+[event_receiver(native)]
+struct ER2 {
+   __event void f();   // C3765
+   __event void b(int);   // C3765
+};
 ```

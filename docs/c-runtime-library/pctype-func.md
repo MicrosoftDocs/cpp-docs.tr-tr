@@ -27,34 +27,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c414ddee654897c88438ec879f9b481073888f4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 36c8dd0467dc50c9eba9db954f28711aa8525cd2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389300"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034299"
 ---
 # <a name="pctypefunc"></a>__pctype_func
-Karakter sınıflandırması bilgileri dizisi için bir işaretçi alır.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-const unsigned short *__pctype_func(  
-   )  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Karakter sınıflandırması bilgileri dizisi için bir işaretçi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Karakter sınıflandırması tabloda yer alan bilgiler yalnızca dahili kullanım içindir ve karakter türü sınıflandırmak çeşitli işlevleri tarafından kullanılan `char`. Daha fazla bilgi için bkz: `Remarks` bölümünü [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|__pctype_func|CType.h|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)
+
+Karakter sınıflandırması bilgileri dizisi için bir işaretçi alır.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+const unsigned short *__pctype_func(
+   )
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Karakter sınıflandırması bilgileri dizisi için bir işaretçi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Karakter sınıflandırması tabloda yer alan bilgiler yalnızca dahili kullanım içindir ve tür karakterleri sınıflandırmak çeşitli işlevler tarafından kullanılan `char`. Daha fazla bilgi için `Remarks` bölümünü [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|__pctype_func|CType.h|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md)

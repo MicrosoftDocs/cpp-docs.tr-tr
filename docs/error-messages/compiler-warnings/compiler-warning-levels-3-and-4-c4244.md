@@ -16,63 +16,64 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 36908fa5f46cee0b86941ec630c3716c918e556f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 55c862ee304c0ad0d95cbde34a5b6bb9b52798d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296903"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039511"
 ---
 # <a name="compiler-warning-levels-3-and-4-c4244"></a>Derleyici Uyarısı (Düzey 3 ve 4) C4244
-'type1' öğesinden 'type2', olası veri kaybını 'dönüştürme' dönüştürme  
-  
- Bir tamsayı türü daha küçük bir tamsayı türü dönüştürülür. Bu düzey 4 uyarı ise *type1* olan `int` ve *type2* değerinden küçük `int`. Aksi takdirde, Düzey 3 olur (türünde bir değer atanan [__int64](../../cpp/int8-int16-int32-int64.md) türünde bir değişken için `unsigned int`). Olası veri kaybını oluşmuş olabilir.  
-  
- C4244 alırsanız, uyumlu türleri kullanılacak programınızı değiştirmek veya olası değerleri aralığı her zaman, kullanmakta olduğunuz türleri ile uyumlu olmasını sağlamak için kodunuzun bazı mantığı ekleyin.  
-  
- C4244 ayrıca 2 düzeyinde tetikleyebilir; bkz: [Derleyici Uyarısı (Düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) daha fazla bilgi için.  
-  
- Dönüştürme örtük dönüşümler nedeniyle bir sorun olabilir.  
-  
- Aşağıdaki örnek C4244 oluşturur:  
-  
-```  
-// C4244_level4.cpp  
-// compile with: /W4  
-int aa;  
-unsigned short bb;  
-int main() {  
-   int b = 0, c = 0;  
-   short a = b + c;   // C4244  
-  
-   bb += c;   // C4244  
-   bb = bb + c;   // C4244  
-   bb += (unsigned short)aa;   // C4244  
-   bb = bb + (unsigned short)aa;   // OK  
-}  
-```  
-  
- Daha fazla bilgi için bkz: [olağan aritmetik dönüştürmeler](../../c-language/usual-arithmetic-conversions.md).  
-  
-```  
-// C4244_level3.cpp  
-// compile with: /W3  
-int main() {  
-   __int64 i = 8;  
-   unsigned int ii = i;   // C4244  
-}  
-```  
-  
- 64-bit hedefleri için kod oluşturma uyarı için 32-bit hedefleri oluşturulurken oluşturmaz C4244 uyarı ortaya çıkabilir. Örneğin, bir arasındaki işaretçileri 32-bit platformlarda 32-bitlik bir miktar ancak 64 bit platformlarda 64-bitlik bir miktar farktır.  
-  
- Aşağıdaki örnek, 64-bit hedefler için derlendiğinde C4244 oluşturur:  
-  
-```  
-// C4244_level3_b.cpp  
-// compile with: /W3   
-int main() {  
-   char* p1 = 0;  
-   char* p2 = 0;  
-   int x = p2 - p1;   // C4244  
-}  
+
+'type1' öğesinden 'type2', olası veri kaybı 'conversion' dönüştürme
+
+Bir tamsayı türü daha küçük bir tamsayı türüne dönüştürülür. Bu düzey 4 uyarısı ise *type1* olduğu `int` ve *type2* küçük olduğuna `int`. Aksi takdirde, bir düzey 3 olur (türünde bir değer atanmış [__int64](../../cpp/int8-int16-int32-int64.md) türünde bir değişkene `unsigned int`). Olası bir veri kaybı meydana gelebilir.
+
+C4244 alırsanız, uyumlu türler kullanmak için programınızı değiştirmenize veya mantığa olası değerler aralığı her zaman kullanmakta olduğunuz türleri ile uyumlu olmasını sağlamak için kodunuzu ekleyin.
+
+Ayrıca C4244 2 düzeyinde özelliği kullanabilirsiniz; bkz: [Derleyici Uyarısı (Düzey 2) C4244](../../error-messages/compiler-warnings/compiler-warning-level-2-c4244.md) daha fazla bilgi için.
+
+Dönüştürmenin örtük dönüştürmelerin nedeniyle bir sorun olabilir.
+
+Aşağıdaki örnek, C4244 oluşturur:
+
+```
+// C4244_level4.cpp
+// compile with: /W4
+int aa;
+unsigned short bb;
+int main() {
+   int b = 0, c = 0;
+   short a = b + c;   // C4244
+
+   bb += c;   // C4244
+   bb = bb + c;   // C4244
+   bb += (unsigned short)aa;   // C4244
+   bb = bb + (unsigned short)aa;   // OK
+}
+```
+
+Daha fazla bilgi için [olağan aritmetik dönüştürmeler](../../c-language/usual-arithmetic-conversions.md).
+
+```
+// C4244_level3.cpp
+// compile with: /W3
+int main() {
+   __int64 i = 8;
+   unsigned int ii = i;   // C4244
+}
+```
+
+64-bit hedefler için kod oluşturma uyarısı 32-bit hedefler için derleme yaparken oluşturmaz C4244 uyarı oluşabilir. Örneğin, işaretçiler arasında bir fark, 32-bit platformlarda 32-bit miktarı, ancak bir 64-bit miktarı 64-bit platformlarda olur.
+
+Aşağıdaki örnek, 64-bit hedefleri için derlendiğinde C4244 oluşturur:
+
+```
+// C4244_level3_b.cpp
+// compile with: /W3
+int main() {
+   char* p1 = 0;
+   char* p2 = 0;
+   int x = p2 - p1;   // C4244
+}
 ```

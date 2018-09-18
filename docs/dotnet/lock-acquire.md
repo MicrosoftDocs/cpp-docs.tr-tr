@@ -21,15 +21,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 54b74721e39489ce8fab5eb93f626f78493479b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c0b89b635ec0f0487027d5a90e43c57c39cde34
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33138975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042019"
 ---
 # <a name="lockacquire"></a>lock::acquire
-İsteğe bağlı olarak sonsuza kadar belirtilen bir miktar süre ya da hiç için kilidi için bekleyen bir nesne üzerinde bir kilit alır.  
+İsteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit için bekleyen bir nesne üzerinde bir kilit alır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,19 +44,19 @@ void acquire(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_timeout`  
- Zaman aşımı değerini milisaniye cinsinden veya farklı bir <xref:System.TimeSpan>.  
+*_Zaman aşımı*<br/>
+Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
- Oluşturur <xref:System.ApplicationException> kilit edinme zaman aşımından önce gerçekleşmezse.  
+ Oluşturur <xref:System.ApplicationException> kilit alma zaman aşımından önce gerçekleşmezse.  
   
 ## <a name="remarks"></a>Açıklamalar  
  Bir zaman aşımı değeri sağlanmazsa, varsayılan zaman aşımı olan <xref:System.Threading.Timeout.Infinite>.  
   
- Bu işlev bir kilidi zaten alınmış, hiçbir şey yapmaz.  
+ Bu işlev, bir kilidi zaten alınmış, hiçbir şey yapmaz.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, birden çok iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisini iç verilerine erişir her iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı bir kilit sınıfı aynı örneğinde hiçbir çalışan iş parçacığı hala var ve tüm çalışan iş parçacığı kadar çıkmak için bekleyeceği görevlerini tamamladınız görmek için düzenli aralıklarla denetlemek için kullanır.  
+ Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.  
   
 ```  
 // msl_lock_acquire.cpp  
@@ -145,7 +145,7 @@ All threads completed.
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\lock.h >  
+ **Üst bilgi dosyası** \<msclr\lock.h >  
   
  **Namespace** msclr  
   

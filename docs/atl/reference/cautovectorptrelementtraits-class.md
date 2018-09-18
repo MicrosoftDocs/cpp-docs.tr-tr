@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fd39f56d69aef836714d70b50f6e2c882cad9448
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8308051d44b0daa0a4691ba825890970762dcc2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754832"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036910"
 ---
 # <a name="cautovectorptrelementtraits-class"></a>CAutoVectorPtrElementTraits sınıfı
 
@@ -36,14 +36,14 @@ Bu sınıf, yöntem, statik işlevler ve tür tanımları akıllı işaretçiler
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
-class CAutoVectorPtrElementTraits : 
+template <typename T>
+class CAutoVectorPtrElementTraits :
    public CDefaultElementTraits<ATL::CAutoVectorPtr<T>>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`T`  
+*T*<br/>
 İşaretçi türü.
 
 ## <a name="members"></a>Üyeler
@@ -93,6 +93,6 @@ typedef T*& OUTARGTYPE;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CDefaultElementTraits sınıfı](../../atl/reference/cdefaultelementtraits-class.md)   
-[CAutoVectorPtr sınıfı](../../atl/reference/cautovectorptr-class.md)   
+[CDefaultElementTraits Sınıfı](../../atl/reference/cdefaultelementtraits-class.md)<br/>
+[CAutoVectorPtr Sınıfı](../../atl/reference/cautovectorptr-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

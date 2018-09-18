@@ -16,24 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ca4af4e7353595dc687b77fa87acf70861bcb6f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ab6939fe37260b906a43c4e2ff6683733348952
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295918"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039900"
 ---
 # <a name="compiler-warning-level-4-c4456"></a>Derleyici Uyarısı (düzey 4) C4456
-  
-> bildirimi '*tanımlayıcısı*' önceki yerel bildirimi gizler
-  
-Bildirimi *tanımlayıcısı* yerel kapsamda aynı ada sahip önceki yerel bildirimi bildirimi gizler. Bu uyarı, başvuran için bilmenizi sağlar *tanımlayıcısı* yerel kapsamında olabilir veya maksadınızı olmayabilir değil önceki yerel, yerel olarak bildirilen sürüme çözümleyin. Bu sorunu gidermek için yerel değişkenleri çakışmasını yerel diğer adları adlarıyla size öneririz.  
-    
+
+> bildirimi '*tanımlayıcı*' önceki yerel bildirimi gizliyor
+
+Bildirimi *tanımlayıcı* yerel kapsama önceki yerel bildirimi aynı adlı bildirimi gizler. Bu uyarı, başvuruları size sağlar *tanımlayıcı* yerel kapsama amacınızla olmayabilir veya değil önceki yerel, yerel olarak bildirilen sürümüne çözün. Bu sorunu çözmek için yerel değişkenler çakışmasını diğer yerel adları adlarla size öneririz.
+
 ## <a name="example"></a>Örnek
-  
-Döngü denetlemek için değişken aşağıdaki örnek C4456 oluşturur `int x` ve yerel değişken `double x` içinde `member_fn` aynı ada sahip. Bu sorunu gidermek için yerel değişkenleri için farklı adlar kullanın.  
-  
-```cpp  
+
+Aşağıdaki örnek, C4456 oluşturur, döngüyü denetlemek çünkü değişken `int x` ve yerel değişkeni `double x` içinde `member_fn` aynı ada sahip. Bu sorunu çözmek için yerel değişkenler için farklı adlar kullanın.
+
+```cpp
 // C4456_hide.cpp
 // compile with: cl /W4 /c C4456_hide.cpp
 
@@ -42,8 +42,8 @@ struct S {
         double x = 0;
         for (int x = 0; x < 10; ++x) {  // C4456
             u += x; // uses local int x
-        } 
+        }
         x += u; // uses local double x
     }
 } s;
-```  
+```

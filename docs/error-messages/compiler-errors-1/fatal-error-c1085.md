@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9affdfab4650402d210cea94457075d2e129e308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ab28c633ac7579e39f89d94d1c50e20cc156004a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226415"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043735"
 ---
 # <a name="fatal-error-c1085"></a>Önemli hata C1085
-Dosya türü dosyasına yazılamıyor: 'dosya': ileti  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Sürücü salt okunurdur.  
-  
-2.  Sürücü dolu.  
-  
-3.  Paylaşım ihlali.  
-  
-4.  İleti "hatalı dosya numarası" diyorsa dosyası ön planda arka planda derlenirken kapatılırken.
+
+Dosya türü dosyası yazılamıyor: 'file': ileti
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Sürücü salt okunur.
+
+1. Sürücü dolu.
+
+1. Paylaşım ihlali.
+
+1. İleti "hatalı dosya numarası" derse, dosyayı ön planda arka planda derlenirken kapatma.

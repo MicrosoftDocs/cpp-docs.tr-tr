@@ -1,5 +1,5 @@
 ---
-title: Yan etkiler | Microsoft Docs
+title: Yan etkileri | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -15,30 +15,32 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f20a73d9cf61873bb92ddd46f685a3257a18bc53
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6edd636ddb4f59ea0df32846869afc5400edb6dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387017"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46020114"
 ---
 # <a name="side-effects"></a>Yan Etkiler
-Belirli bir sıraya değerlendirme dil garanti sırasında bir ifade Değerlendirme sırasını belirli uygulama tarafından dışında tanımlanır (kısmında özetlendiği gibi [öncelik ve değerlendirme, sipariş](../c-language/precedence-and-order-of-evaluation.md)). Örneğin, aşağıdaki işlev çağrıları yan etkileri oluşur:  
-  
-```  
-add( i + 1, i = j + 2 );  
-myproc( getc(), getc() );  
-```  
-  
- Bir işlev çağrısı bağımsız değişkenleri herhangi bir sırada değerlendirilebilir. İfade `i + 1` önce değerlendirilmesi `i = j + 2`, veya `i = j + 2` önce değerlendirilmesi `i + 1`. Sonucu, her durumda farklıdır. Benzer şekilde, hangi karakterleri gerçekte geçirilecek garanti mümkün değildir `myproc`. Birli artırma ve azaltma itibaren işlemleri atamaları içerir, bu işlemler, aşağıdaki örnekte gösterildiği gibi yan etkileri neden olabilir:  
-  
-```  
-x[i] = i++;  
-```  
-  
- Bu örnekte, değeri `x` diğer bir deyişle öngörülemeyen olduğu değiştirdi. Alt simge değerini yeni veya eski değeri olabilir `i`. Sonuç altında farklı derleyicileri ya da farklı iyileştirme düzeylerinin farklılık gösterebilir.  
-  
- C yan etkileri Değerlendirme sırasını tanımlamıyor olduğundan, yukarıda açıklanan değerlendirme yöntemlerin her ikisi de doğru olduğundan ve ya da uygulanabilir. Kodunuzu taşınabilir ve açık olduğundan emin olmak için değerlendirme yan etkileri için belirli bir sıraya bağlıdır deyimleri kaçının.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İfade değerlendirme](../c-language/expression-evaluation-c.md)
+
+Dil belirli bir değerlendirme sırasını garanti eder, ifadelerin değerlendirilme sırasını belirli bir uygulama tarafından dışında tanımlanmış (açıklandığı şekilde [öncelik ve sipariş, değerlendirme](../c-language/precedence-and-order-of-evaluation.md)). Örneğin, aşağıdaki işlev çağrılarında yan etkileri gerçekleşir:
+
+```
+add( i + 1, i = j + 2 );
+myproc( getc(), getc() );
+```
+
+Bir işlev çağrısının bağımsız değişkenler herhangi bir sırayla değerlendirilir. İfade `i + 1` önce değerlendirilebilir `i = j + 2`, veya `i = j + 2` önce değerlendirilebilir `i + 1`. Her durumda sonuç farklıdır. Benzer şekilde, hangi karakter gerçekten geçirilen garanti mümkün değildir `myproc`. Tekli artırma ve azaltma beri işlemi atamaları içerir, bu işlemler, aşağıdaki örnekte gösterildiği gibi yan etkileri neden olabilir:
+
+```
+x[i] = i++;
+```
+
+Bu örnekte, değerini `x` diğer bir deyişle değiştirilmiş tahmin edilemez. Alt simge değerini yeni veya eski değeri olabilir `i`. Sonucu farklı derleyicilerini veya farklı iyileştirme düzeyleri altında değişebilir.
+
+C yan etkileri değerlendirme sırası tanımlamıyor yukarıda açıklanan iki değerlendirme yöntem doğru olduğundan ve ya da uygulanabilir. Kodunuzun taşınabilir ve açık olduğundan emin olmak için değerlendirme yan etkileri için belirli bir sıraya bağlıdır deyimleri kaçının.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İfade Değerlendirme](../c-language/expression-evaluation-c.md)

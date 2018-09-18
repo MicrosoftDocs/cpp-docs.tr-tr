@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7bfa501834102e37c14de11ee1af84a21e82c35f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 5707a7fd4ab83c8e3de3c4868ad41e3525621b07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45703852"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033959"
 ---
 # <a name="ccomgitptr-class"></a>Ccomgıtptr sınıfı
 
@@ -38,13 +38,13 @@ Bu sınıf, arabirim işaretçilerini başa çıkmak için yöntemleri ve genel 
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class CComGITPtr
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-`T`  
+*T*<br/>
 GİT'te depolanacak arabirim işaretçisi türü.
 
 ## <a name="members"></a>Üyeler
@@ -102,10 +102,10 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 GİT'e eklenecek arabirim işaretçisi.
 
-*dwCookie*  
+*dwCookie*<br/>
 Arabirim işaretçisi tanımlamak için kullanılan tanımlama bilgisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -170,7 +170,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*PP*  
+*PP*<br/>
 Arabirimi almak için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -262,7 +262,7 @@ Yeni bir değer atar bir `CComGITPtr` nesne, var olan bir nesne veya bir genel a
 
 İle ilişkili tanımlama döndürür `CComGITPtr` nesne.
 
-```  
+```
 operator DWORD() const;
 ```
 
@@ -288,7 +288,7 @@ Arabirim GIT deposundan kaldırır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ücretsiz iş parçacıklı Sıralayıcı](../../atl/atl-and-the-free-threaded-marshaler.md)   
-[Apartmanlar arasında arabirimi erişme](/windows/desktop/com/accessing-interfaces-across-apartments)   
-[Genel arabirim tablosu kullanma zamanı](/windows/desktop/com/when-to-use-the-global-interface-table)   
+[Ücretsiz iş parçacıklı Sıralayıcı](../../atl/atl-and-the-free-threaded-marshaler.md)<br/>
+[Apartmanlar arasında arabirimi erişme](/windows/desktop/com/accessing-interfaces-across-apartments)<br/>
+[Genel arabirim tablosu kullanma zamanı](/windows/desktop/com/when-to-use-the-global-interface-table)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

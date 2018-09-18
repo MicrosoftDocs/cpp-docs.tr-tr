@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 09b36d7210a3ed81b7049c1ab011a38c64f7d196
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 391414365549b462952045a7d9efe080097f3af6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198397"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036760"
 ---
 # <a name="fatal-error-c1506"></a>Önemli hata C1506
-kurtarılamaz bloğu kapsam hatası  
-  
- Blok derlemek için çok büyük.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Eşleşmeyen küme ayraçları  
-  
-2.  Olağan dışı derecede büyük işlevi veya sınıfı
+
+Kurtarılamayan blok kapsamı hatası
+
+Blok derlemek için çok büyük.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Eşleşmeyen ayraç
+
+1. Olağan dışı derecede büyük bir işlev veya sınıf

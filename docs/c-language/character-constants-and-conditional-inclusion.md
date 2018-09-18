@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ef20e1649b2592c29482dd0204c1daf6ffcb01d8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 2700d7ffa59a14e96f175e4e81933924a4bf5912
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381814"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034289"
 ---
 # <a name="character-constants-and-conditional-inclusion"></a>Karakter Sabitleri ve Koşullu Dahil Etme
-**ANSI 3.8.1** olup koşullu dahil etme denetimleri sabit bir ifade tek karakterli karakter sabitinde değerini yürütme karakter kümesi içinde aynı karakter sabit değeri eşleşir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı  
-  
- Önişlemci deyimlerinde kullanılacak karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci negatif karakter değerlerini tanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)
+
+**ANSI 3.8.1** koşullu içermeyi denetleyen sabit bir ifade bir tek karakter sabitinin değerinin yürütme karakter kümesindeki aynı karakter sabitinin değeri olup olmadığını eşleşir. Böyle bir karakter sabitinin negatif değere sahip olup olamayacağı
+
+Önişlemci deyimlerinde kullanılan karakter kümesi yürütme karakter kümesi ile aynıdır. Önişlemci negatif karakter değerlerini tanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Ön işleme Yönergeleri](../c-language/preprocessing-directives.md)

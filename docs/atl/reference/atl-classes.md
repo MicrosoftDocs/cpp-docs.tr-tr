@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c707eeb5a7899dd3ef7c8c2aa46098a70ab9c06d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 94d69debb4bde61fc76917c70d95bcc6314c7208
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753093"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044541"
 ---
 # <a name="atl-classes-and-structs"></a>ATL sınıfları ve yapıları
 
@@ -231,9 +231,9 @@ Aşağıdaki sınıflar ve yapılar Etkin Şablon kitaplığı (ATL) içerir. Be
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL COM Masaüstü bileşenleri](../../atl/atl-com-desktop-components.md)   
-[İşlevleri](../../atl/reference/atl-functions.md)   
-[Genel değişkenler](../../atl/reference/atl-global-variables.md)   
-[Tür tanımları](../../atl/reference/atl-typedefs.md)   
+[ATL COM Masaüstü Bileşenleri](../../atl/atl-com-desktop-components.md)<br/>
+[İşlevler](../../atl/reference/atl-functions.md)<br/>
+[Global Değişkenler](../../atl/reference/atl-global-variables.md)<br/>
+[Tür tanımları](../../atl/reference/atl-typedefs.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)
 

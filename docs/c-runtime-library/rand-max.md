@@ -16,25 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad1cfe5b9917df6b0fd5a6c69bc49c1b0c2ba2f6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: c44635a85bc3514db075fdbf51012ac92b0c233a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387563"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040953"
 ---
 # <a name="randmax"></a>RAND_MAX
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <stdlib.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Sabit `RAND_MAX` tarafından döndürülen en yüksek değer `rand` işlevi. `RAND_MAX` 0x7fff değeri olarak tanımlanır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [rand](../c-runtime-library/reference/rand.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <stdlib.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Sabit `RAND_MAX` tarafından döndürülen en yüksek değer `rand` işlevi. `RAND_MAX` 0x7fff değeri tanımlanır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[rand](../c-runtime-library/reference/rand.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

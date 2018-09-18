@@ -16,47 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ef882deb6a96117ec572aa675fe80158d192ce7
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1c4450682abbb5efd739b5eb08d228b4c55d00ec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382048"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029331"
 ---
 # <a name="c-compound-assignment"></a>C Bileşik Atama
-Bileşik atama işleçleri basit atama işleci başka bir ikili işleç ile birleştirin. Bileşik atama işleçleri ek operatör tarafından belirtilen işlemi gerçekleştirmek, sonra sol işleneni sonucu atayın. Örneğin, bir bileşik atama ifadesi gibi  
-  
-```  
-  
-expression1  
-+=  
-expression2  
-  
-```  
-  
- olarak anladım  
-  
-```  
-  
-expression1  
-=  
-expression1  
-+  
-expression2  
-  
-```  
-  
- Bileşik atama ifadeyi hesaplar ancak bileşik atama ifadesi genişletilmiş sürüme eşdeğer olmadığından *İfade1* genişletilmiş sürüm değerlendirir sırasında yalnızca bir kez,  *İfade1* iki kez: Ek işlemi ve atama işlemi.  
-  
- Bileşik atama işlecinin işlenenleri kayan veya tamsayı türünde olmalıdır. Her bileşik atama işleci karşılık gelen ikili işleç gerçekleştirir ve buna göre işlenenleri türlerini kısıtlar dönüşümleri gerçekleştirir. Toplama atama (`+=`) ve çıkarma Ataması (**-=**) işleçleri ayrıca sol işleneni durumda sağ işleneni Tamsayı türünde olmalıdır, işaretçi türü vardır. Bileşik atama işleminin sonucunu, sol işleneni türü ve değeri vardır.  
-  
-```  
-#define MASK 0xff00  
-  
-n &= MASK;  
-```  
-  
- Bit düzeyinde kapsayıcı-ve işlem gerçekleştirilir Bu örnekte, `n` ve `MASK`, ve sonucu atandığı `n`. Bildirim sabiti `MASK` ile tanımlanmış bir [#define](../preprocessor/hash-define-directive-c-cpp.md) önişlemci yönergesi.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Atama İşleçleri](../c-language/c-assignment-operators.md)
+
+Bileşik atama işleçleri, başka bir ikili işlecin basit atama işleciyle birleştirin. Bileşik atama işleçleri ek işleci tarafından belirtilen işlemi gerçekleştirmeyi ve ardından sol işleneni sonucu atayın. Örneğin, bir bileşik atama ifadesi gibi
+
+> *İfade1* **+=** *expression2*
+
+olarak anlaşılabilir
+
+> *İfade1* **=** *İfade1* **+** *expression2*
+
+Bileşik atama ifadesi değerlendirilir ancak bileşik atama ifadesi genişletilmiş bir sürümü için eşdeğer olmadığından *İfade1* genişletilmiş sürümü değerlendirir sırasında bir kez  *expression1* iki kez: toplama işlemi ve atama işlemi.
+
+Bileşik atama işlecinin işlenenleri tamsayı veya kayan türde olmalıdır. Her bileşik atama işleci, karşılık gelen ikili işleç gerçekleştirir ve tür işlenenlerini uygun şekilde kısıtlayan dönüştürmeleri gerçekleştirir. Toplama Ataması (`+=`) ve çıkarma Ataması (**-=**) işleçleri çalışması sağ işleneni integral türünde olmalıdır, işaretçi türünde bir sol işleneni de sahip olabilir. Bileşik atama işleminin sonucu, sol işlenen türü ve değeri vardır.
+
+```C
+#define MASK 0xff00
+
+n &= MASK;
+```
+
+Bu örnekte, üzerinde bir bit düzeyinde kapsamlı-ve işlem gerçekleştirilir `n` ve `MASK`, ve sonucu atandığı `n`. Bildirim sabiti `MASK` ile tanımlanmış bir [#define](../preprocessor/hash-define-directive-c-cpp.md) önişlemci yönergesi.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Atama İşleçleri](../c-language/c-assignment-operators.md)

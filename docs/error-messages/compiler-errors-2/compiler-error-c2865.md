@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70b2c6c831fde18f9054e139a120d834a75b6950
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc0a49f8e6ab42f7e607cd5f4f7cc91f6895abe0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246222"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035174"
 ---
 # <a name="compiler-error-c2865"></a>Derleyici Hatası C2865
-'function': handle_or_pointer için geçersiz karşılaştırma  
-  
- Başvurular karşılaştırabilirsiniz [sınıflar ve yapılar](../../windows/classes-and-structs-cpp-component-extensions.md) veya yönetilen bunlar aynı nesneye (==) veya farklı nesnelere başvurmak olmadığını görmek için eşitlik için yalnızca başvuru türleri (! =).  
-  
- Bunları .NET çalışma zamanı herhangi bir zamanda yönetilen nesneleri taşıma çünkü sıralama için test sonucunu değiştirme karşılaştırılamıyor.
+
+'function': handle_or_pointer için geçersiz karşılaştırma
+
+Başvurular karşılaştırabilirsiniz [sınıfları ve yapıları](../../windows/classes-and-structs-cpp-component-extensions.md) veya yönetilen bunlar aynı nesneye (==) veya farklı nesnelere başvuruyorsa, görmek için eşitlik için yalnızca başvuru türleri (! =).
+
+Bunları herhangi bir zamanda .NET çalışma zamanı yönetilen nesneleri taşıma çünkü sıralama için test sonucunu değiştirmek karşılaştırılamıyor.

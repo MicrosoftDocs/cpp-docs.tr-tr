@@ -58,68 +58,71 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c18605c7539636e3158bc1dd9fe3a47e1d3146d6
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 6a9d4e13a4b7382d15e601eba16a5a12edd2d00f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39465961"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034154"
 ---
 # <a name="variantt-extractors"></a>_variant_t Ayıklayıcıları
-**Microsoft'a özgü**  
-  
- Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-operator short( ) const;   
-operator long( ) const;   
-operator float( ) const;   
-operator double( ) const;   
-operator CY( ) const;   
-operator _bstr_t( ) const;   
-operator IDispatch*( ) const;   
-operator bool( ) const;   
-operator IUnknown*( ) const;   
-operator DECIMAL( ) const;   
-operator BYTE( ) const;  
-operator VARIANT() const throw();  
-operator char() const;  
-operator unsigned short() const;  
-operator unsigned long() const;  
-operator int() const;  
-operator unsigned int() const;  
-operator __int64() const;  
-operator unsigned __int64() const;  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bir kapsüllenmiş ham verileri ayıklar `VARIANT`. Varsa `VARIANT` zaten uygun türde değil `VariantChangeType` bir dönüştürme denemek için kullanılır ve başarısızlık durumunda bir hata oluşturulur:  
-  
--   **kısa () işleci** ayıklar bir **kısa** tamsayı değeri.  
-  
--   **uzun () işleci** ayıklar bir **uzun** tamsayı değeri.  
-  
--   **float () işleci** ayıklar bir **float** sayısal değer.  
-  
--   **çift () işleci** ayıklar bir **çift** tamsayı değeri.  
-  
--   **CY () işleci** ayıklar bir `CY` nesne.  
-  
--   **işleç bool (')** ayıklar bir **bool** değeri.  
-  
--   **ONDALIK () işleci** ayıklar bir `DECIMAL` değeri.  
-  
--   **işleç (bayt)** ayıklar bir `BYTE` değeri.  
-  
--   **işleç _bstr_t (')** bir dize içinde kapsüllenir ayıklar bir `_bstr_t` nesne.  
-  
--   **IDispatch işleci\*()** dispinterface işaretçi kapsüllenmiş ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.  
-  
--   **IUnknown işleci\*()** bir kapsüllenmiş COM arabirimi işaretçisini ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+**Microsoft'a özgü**
+
+Kapsüllenmiş verileri ayıklamak `VARIANT` nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+operator short( ) const; 
+operator long( ) const; 
+operator float( ) const; 
+operator double( ) const; 
+operator CY( ) const; 
+operator _bstr_t( ) const; 
+operator IDispatch*( ) const; 
+operator bool( ) const; 
+operator IUnknown*( ) const; 
+operator DECIMAL( ) const; 
+operator BYTE( ) const;
+operator VARIANT() const throw();
+operator char() const;
+operator unsigned short() const;
+operator unsigned long() const;
+operator int() const;
+operator unsigned int() const;
+operator __int64() const;
+operator unsigned __int64() const;
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bir kapsüllenmiş ham verileri ayıklar `VARIANT`. Varsa `VARIANT` zaten uygun türde değil `VariantChangeType` bir dönüştürme denemek için kullanılır ve başarısızlık durumunda bir hata oluşturulur:
+
+- **kısa () işleci** ayıklar bir **kısa** tamsayı değeri.
+
+- **uzun () işleci** ayıklar bir **uzun** tamsayı değeri.
+
+- **float () işleci** ayıklar bir **float** sayısal değer.
+
+- **çift () işleci** ayıklar bir **çift** tamsayı değeri.
+
+- **CY () işleci** ayıklar bir `CY` nesne.
+
+- **işleç bool (')** ayıklar bir **bool** değeri.
+
+- **ONDALIK () işleci** ayıklar bir `DECIMAL` değeri.
+
+- **işleç (bayt)** ayıklar bir `BYTE` değeri.
+
+- **işleç _bstr_t (')** bir dize içinde kapsüllenir ayıklar bir `_bstr_t` nesne.
+
+- **IDispatch işleci\*()** dispinterface işaretçi kapsüllenmiş ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.
+
+- **IUnknown işleci\*()** bir kapsüllenmiş COM arabirimi işaretçisini ayıklar `VARIANT`. `AddRef` Çağrı size, bu nedenle, elde edilen işaretçi üzerinde çağrılır `Release` ücretsiz için.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

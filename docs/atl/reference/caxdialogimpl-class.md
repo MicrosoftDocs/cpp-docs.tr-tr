@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 965aa7256fadd00d2ef435b6df64467460322991
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a22b04bd0a362824e20621eaa7f66cafd0e55cf5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753064"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024510"
 ---
 # <a name="caxdialogimpl-class"></a>Caxdialogımpl sınıfı
 
@@ -44,16 +44,16 @@ Bu sınıf, bir iletişim kutusu (kalıcı veya kısıtlayıcı olmayan) barınd
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class TBase = CWindow>  
+template <class T, class TBase = CWindow>
 class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `CAxDialogImpl`.
 
-*Ttemel*  
+*Ttemel*<br/>
 Ana pencere sınıfı için `CDialogImplBaseT`.
 
 ## <a name="members"></a>Üyeler
@@ -121,7 +121,7 @@ HRESULT AdviseSinkMap(bool bAdvise);
 
 ### <a name="parameters"></a>Parametreler
 
-*bAdvise*  
+*bAdvise*<br/>
 Tüm havuz girişleri olun gerekiyorsa true olarak ayarlayın; Tüm false havuz girişleri unadvised olacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -139,13 +139,13 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İşleci sahip penceresine.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
-*RECT &AMP;*  
+*RECT &AMP;*<br/>
 Bu parametre kullanılmaz. Bu parametre geçirilen `CComControl`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -180,16 +180,16 @@ Kalıcı bir iletişim kutusu oluşturmak için bu yöntemi çağırın.
 
 ```
 INT_PTR DoModal(
-    HWND hWndParent = ::GetActiveWindow(), 
+    HWND hWndParent = ::GetActiveWindow(),
     LPARAM dwInitParam = NULL);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İşleci sahip penceresine. Varsayılan değer dönüş değeri [GetActiveWindow](https://msdn.microsoft.com/library/windows/desktop/ms646292) Win32 işlevi.
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -212,7 +212,7 @@ BOOL EndDialog(int nRetCode);
 
 ### <a name="parameters"></a>Parametreler
 
-*nRetCode*  
+*nRetCode*<br/>
 [in] Tarafından döndürülen değer [DoModal](#domodal).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -264,7 +264,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 
 ### <a name="parameters"></a>Parametreler
 
-*pMsg*  
+*pMsg*<br/>
 İşaretçi bir [MSG](https://msdn.microsoft.com/library/windows/desktop/ms644958) denetlenecek iletiyi içeren yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,5 +285,5 @@ bool m_bModal;
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Cdialogımpl sınıfı](../../atl/reference/cdialogimpl-class.md)   
+[CDialogImpl Sınıfı](../../atl/reference/cdialogimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc9ac9fc7e638655b7b6b812d347ac26b8cf6967
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1c64db5a041845bbd068bab1a72ad461740170b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755807"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040485"
 ---
 # <a name="ccontainedwindowt-class"></a>CContainedWindowT sınıfı
 
@@ -49,16 +49,16 @@ Bu sınıf, başka bir nesne içinde yer alan bir pencere uygular.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class TBase = CWindow, class TWinTraits = CControlWinTraits>  
+template <class TBase = CWindow, class TWinTraits = CControlWinTraits>
 class CContainedWindowT : public TBase
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*Ttemel*  
+*Ttemel*<br/>
 Yeni sınıfın temel sınıf. Varsayılan temel sınıf `CWindow`.
 
-*TWinTraits*  
+*TWinTraits*<br/>
 Stilleri pencerenizin tanımlar nitelikler sınıfı. Varsayılan, `CControlWinTraits` değeridir.
 
 > [!NOTE]
@@ -148,13 +148,13 @@ CContainedWindowT(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] Kapsanan pencere dayanacak var olan bir pencere sınıfı adı.
 
-*pObject*  
+*pObject*<br/>
 [in] İleti eşlemesi bildirir içeren nesneye bir işaretçi. Bu nesnenin sınıfı öğesinden türetilmelidir [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] Kapsanan pencere iletilerini işleyecek ileti eşlemesi tanımlar. Varsayılan değer olan 0 ile bildirilen varsayılan ileti eşlemesi belirtir [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). Bir diğer ileti eşlemesi kullanmak için bildirilen [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), geçmesi `msgMapID`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -211,34 +211,34 @@ HWND Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszClassName*  
+*lpszClassName*<br/>
 [in] Kapsanan pencere dayanacak var olan bir pencere sınıfı adı.
 
-*pObject*  
+*pObject*<br/>
 [in] İleti eşlemesi bildirir içeren nesneye bir işaretçi. Bu nesnenin sınıfı öğesinden türetilmelidir [CMessageMap](../../atl/reference/cmessagemap-class.md).
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] Kapsanan pencere iletilerini işleyecek ileti eşlemesi tanımlar. Varsayılan değer olan 0 ile bildirilen varsayılan ileti eşlemesi belirtir [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map). Bir diğer ileti eşlemesi kullanmak için bildirilen [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), geçmesi `msgMapID`.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] Üst veya sahibi penceresine tanıtıcısı.
 
-*Rect*  
+*Rect*<br/>
 [in] A [RECT](https://msdn.microsoft.com/library/windows/desktop/dd162897) pencerenin konumunu belirten yapısı. `RECT` İşaretçi veya başvuruya göre geçirilebilir.
 
-*szWindowName*  
+*szWindowName*<br/>
 [in] Pencerenin adını belirtir. Varsayılan değer NULL olur.
 
-*dwStyle*  
+*dwStyle*<br/>
 [in] Pencere stili. Varsayılan değer: WS_CHILD &#124; ws_vısıble. Olası değerler listesi için bkz. [CreateWindow](/windows/desktop/api/winuser/nf-winuser-createwindowa) Windows SDK.
 
-*dwExStyle*  
+*dwExStyle*<br/>
 [in] Genişletilmiş pencere stili. Varsayılan değer, genişletilmiş stil yok anlamına gelen 0 ' dır. Olası değerler listesi için bkz. [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa) Windows SDK.
 
-*MenuOrID*  
+*MenuOrID*<br/>
 [in] Alt pencere için pencere tanımlayıcısı. Bir üst düzey pencere için bir pencere için menü tanıtıcısı. Varsayılan değer **0U**.
 
-*lpCreateParam*  
+*lpCreateParam*<br/>
 [in] Pencere oluşturma veri işaretçisi. Tam açıklama için son parametresi açıklamasına bakın [CreateWindowEx](/windows/desktop/api/winuser/nf-winuser-createwindowexa).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -269,13 +269,13 @@ LRESULT DefWindowProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -382,7 +382,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Sınıflandırma penceresine tanıtıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -406,7 +406,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwMsgMapID*  
+*dwMsgMapID*<br/>
 [in] İleti eşleme tanımlayıcısı. Varsayılan ileti eşlemesi kullanmak için bildirilen [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map), sıfır geçirin. Bir diğer ileti eşlemesi kullanmak için bildirilen [ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map), geçmesi `msgMapID`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -425,7 +425,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 
 ### <a name="parameters"></a>Parametreler
 
-*bForce*  
+*bForce*<br/>
 [in] Geri yüklenecek özgün pencere yordamını zorla true olarak ayarlayın olsa bile bu pencere yordamını `CContainedWindowT` nesnesi şu anda etkin değil. Varsa *bForce* FALSE ve pencere yordamı için bu ayar `CContainedWindowT` nesnesi şu anda etkin değil, özgün pencere yordamını geri yüklenmez.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -450,16 +450,16 @@ static LRESULT CALLBACK WindowProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*hWnd*  
+*hWnd*<br/>
 [in] Pencereye tanıtıcısı.
 
-*uMsg*  
+*uMsg*<br/>
 [in] Pencereye gönderilen ileti.
 
-*wParam*  
+*wParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
-*lParam*  
+*lParam*<br/>
 [in] İletiye özgü ek bilgiler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -472,9 +472,9 @@ static LRESULT CALLBACK WindowProc(
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CWindow sınıfı](../../atl/reference/cwindow-class.md)   
-[Cwindowımpl sınıfı](../../atl/reference/cwindowimpl-class.md)   
-[CMessageMap sınıfı](../../atl/reference/cmessagemap-class.md)   
-[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)   
-[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)   
+[CWindow Sınıfı](../../atl/reference/cwindow-class.md)<br/>
+[CWindowImpl Sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>
+[CMessageMap Sınıfı](../../atl/reference/cmessagemap-class.md)<br/>
+[BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)<br/>
+[ALT_MSG_MAP(msgMapID)](message-map-macros-atl.md#alt_msg_map)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 031703687c5ba57e1daaa299e9a276a64e3055a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dab72efea41e775f3ba028b374312975daf48d6b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300843"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044840"
 ---
 # <a name="linker-tools-error-lnk1215"></a>Bağlayıcı Araçları Hatası LNK1215
-meta veri işlemi başarısız oldu (HRESULT): hata  
-  
- Bağlayıcı, .NET çalışma zamanı aracılığıyla bir meta veri güncelleştirme yapmak çalışırken, .NET çalışma zamanı bir hata aldı.  
-  
- `HRESULT` .NET çalışma zamanı yöntemi HRESULT olur. `error` değil. NET sağlanan metin.  
-  
- Büyük ihtimalle eşleşmeyen bağlayıcı ve .NET çalışma zamanı vardır; Visual C++ yeniden yükleyin.
+
+meta veri işlemi başarısız oldu (HRESULT): hata
+
+Bağlayıcı, .NET çalışma zamanını şuradan .NET çalışma zamanı aracılığıyla bir meta veri güncelleştirme girişimi sırasında bir hata aldı.
+
+`HRESULT` .NET çalışma zamanı yöntemi HRESULT ' dir. `error` olduğu. NET olarak sağlanan metni.
+
+Büyük olasılıkla eşleşmeyen bağlayıcı ve .NET çalışma zamanı vardır; Visual C++ yeniden yükleyin.

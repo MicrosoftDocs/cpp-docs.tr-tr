@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b02b1d9d06706c70478d958dd3c2af8dbc9c2c03
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4c11a97dd99515ff7623b77ff31de5fb8577b5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040628"
 ---
 # <a name="linker-tools-error-lnk1241"></a>Bağlayıcı Araçları Hatası LNK1241
-Kaynak dosya 'zaten belirtilen kaynak dosyası  
-  
- Bu hata çalıştırırsanız oluşturulur **cvtres** komut satırından el ile ve sonra sonuçta elde edilen .obj geçirdiğiniz dosya bağlayıcıya ayrıca diğer .res dosyaları.  
-  
- Birden çok .res dosyaları belirtmek için bunları geçirmek tüm bağlayıcıya olarak .res dosyaları, içinden .obj dosyaları oluşturulmadı tarafından **cvtres**.
+
+'kaynak dosyası zaten belirtildi' kaynak dosyası
+
+Bu hata çalıştırırsanız oluşturulur **cvtres** komut satırından el ile ve sonra elde edilen .obj geçirirseniz dosya bağlayıcıya ayrıca diğer .res dosyaları.
+
+Birden çok .res dosyaları belirtmek için bunları geçirme tüm bağlayıcıya olarak .res dosyaları, içinden .obj dosyaları oluşturulmadı tarafından **cvtres**.

@@ -14,15 +14,17 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1eb59f476ae96dadad27e6db8995e6c60cc2f794
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59f6198de9f68414f285f4e5d2234bee6c151d12
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382279"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46031983"
 ---
 # <a name="constants-in-primary-expressions"></a>Birincil İfadelerdeki Sabitler (C++)
-Sabit bir işlenen, temsil ettiği sabit değerin değerine ve türüne sahiptir. Karakter sabiti `int` türündedir. Tamsayı sabiti sahip `int`, **uzun**, `unsigned int`, veya `unsigned long` türü, tamsayı 's boyutuna bağlı olarak ve değeri belirtilen yol üzerinde. Bkz: [sabitleri](../c-language/c-constants.md) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Birincil İfadeler](../c-language/c-primary-expressions.md)
+
+Sabit bir işlenen, temsil ettiği sabit değerin değerine ve türüne sahiptir. Karakter sabiti `int` türündedir. Bir tamsayı sabiti `int`, **uzun**, `unsigned int`, veya `unsigned long` türü, tamsayının boyutuna bağlı olarak ve değeri belirtilen şekilde. Bkz: [sabitleri](../c-language/c-constants.md) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Birincil İfadeler](../c-language/c-primary-expressions.md)

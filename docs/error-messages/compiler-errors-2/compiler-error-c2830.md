@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31c5fef787328b4e3d34bb49078fc53354598264
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d54028b50852fec4d525afa9a79f93edb4ae09ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033036"
 ---
 # <a name="compiler-error-c2830"></a>Derleyici Hatası C2830
-yalnızca 'yeni işleç' yerleştirme parametreleri varsayılan değerlere sahip olabilir  
-  
-Standart resmi parametrelerini [new işleci](../../standard-library/new-operators.md#op_new) varsayılan değere sahip olamaz. Yalnızca kullanıcı tanımlı yerleştirme parametreleri varsayılanlarını belirtebilirsiniz.
+
+yalnızca 'operator new' öğesine yönelik yerleştirme parametrelerinin varsayılan değerleri olabilir
+
+Standart biçimsel parametreler için [new işleci](../../standard-library/new-operators.md#op_new) varsayılan değere sahip olamaz. Yalnızca kullanıcı tarafından tanımlanan yerleştirme parametrelerinin varsayılan değerleri belirtebilirsiniz.

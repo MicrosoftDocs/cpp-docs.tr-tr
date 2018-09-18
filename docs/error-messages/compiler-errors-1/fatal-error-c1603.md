@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 39835900b1286fbc4e23f10b6135c625646c6a0f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8481b23970bb95125258fde680897b9cb2bbd67d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198371"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040973"
 ---
 # <a name="fatal-error-c1603"></a>Önemli hata C1603
-Satır içi derleme şube hedef 'numara' bayt olarak aralık dışında  
-  
- Belirtilen hedef etiketini JCXZ veya JECXZ yönergesi arasındaki hesaplanan uzaklığı 128 bayttan büyük. Yönerge etiketi yakındır şekilde kodunuzu güncelleştirin.
+
+Satır içi derleme dallanma hedefi 'number' bayt kadar aralığında dışında
+
+128 bayttan büyük JCXZ veya JECXZ yönerge ve belirtilen hedef etiketini arasındaki hesaplanan uzaklık. Kodunuzu güncelleştirin, böylece etiketi için talimat daha yakındır.

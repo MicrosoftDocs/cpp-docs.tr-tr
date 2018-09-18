@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d0382364c168fa2d9eb10999440ef9f175c60af4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b9ac25151c6d6c5d174d2af80f253e23a4b0765a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33322256"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037521"
 ---
 # <a name="resource-compiler-error-rc2167"></a>Kaynak Derleyicisi Hatası RC2167
-Tanınmayan VERSIONINFO alan; BEGIN veya virgül bekleniyor  
-  
- Tanınmayan bir alan bulundu **sabit** parçası bir **VERSIONINFO** yapısı bildirimi. A **VERSIONINFO** alan DWORD virgülle ayrılmış olması gerekir.
+
+Tanınmayan VERSIONINFO alan; BEGIN veya virgül bekleniyor
+
+Tanınmayan bir alan bulundu **sabit** parçası olan bir **VERSIONINFO** yapı bildirimi. A **VERSIONINFO** alan DWORD virgülle ayrılmış olması gerekir.

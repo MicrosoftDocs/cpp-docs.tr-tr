@@ -16,31 +16,35 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3f4d105efb7269c0c1344d6a9399ebbe4fa9fd2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 1fc2906827e6a465106a3dbdcb8b63c7b53a39ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39404300"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039354"
 ---
 # <a name="comerrorerrorinfo"></a>_com_error::ErrorInfo
-**Microsoft'a özgü**  
-  
- Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-IErrorInfo * ErrorInfo( ) const throw( );  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Ham `IErrorInfo` öğesi oluşturucuya geçirilen.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Kapsüllenmiş alır `IErrorInfo` öğesi bir `_com_error` nesne veya hiç yoksa NULL `IErrorInfo` öğesi kaydedilir. Çağıranın çağırmalıdır `Release` bittiğinde, döndürülen nesneyi kullanmayı.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_com_error Sınıfı](../cpp/com-error-class.md)
+
+**Microsoft'a özgü**
+
+Alır `IErrorInfo` oluşturucuya nesnesi geçirildi.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+IErrorInfo * ErrorInfo( ) const throw( );
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Ham `IErrorInfo` öğesi oluşturucuya geçirilen.
+
+## <a name="remarks"></a>Açıklamalar
+
+Kapsüllenmiş alır `IErrorInfo` öğesi bir `_com_error` nesne veya hiç yoksa NULL `IErrorInfo` öğesi kaydedilir. Çağıranın çağırmalıdır `Release` bittiğinde, döndürülen nesneyi kullanmayı.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_com_error Sınıfı](../cpp/com-error-class.md)

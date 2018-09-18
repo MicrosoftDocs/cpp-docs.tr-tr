@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82e902b3e2f18332ac6a9804a14c1c39b58d74c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e3c9903af3537e9e4003a913fc12412c9b87d614
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291732"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044424"
 ---
 # <a name="compiler-warning-level-2-c4007"></a>Derleyici Uyarısı (Düzey 2) C4007
-'function': 'öznitelik' olmalıdır  
-  
- İşlevi için gerekli bir öznitelik açıkça belirtilmedi. Örneğin, işlevi **ana** olmalıdır `__cdecl` özniteliği. Derleyici öznitelik zorlar.
+
+'function': 'özniteliği' olmalıdır
+
+Bir işlev için gerekli bir öznitelik açıkça belirtilmedi. Örneğin, işlev **ana** olmalıdır `__cdecl` özniteliği. Derleyici, öznitelik zorlar.

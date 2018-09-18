@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31597324c81675c268787915c4cb5ad2cfcb7db2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 42e40abb4b14bc821c043b79cf7ff7786c0dcc14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296815"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040875"
 ---
 # <a name="expression-evaluator-error-cxx0047"></a>İfade Değerlendirici Hatası CXX0047
-bir işlev bağımsız değişken listesiyle eşleşmiyor.  
-  
- Herhangi bir işlev biçimsel parametresi listesi programa tanımlanan aynı adla eşleşmiyor bir asıl parametre listesi olan bir işlevi olarak adlandırılan bir ifade.  
-  
- Yalnızca, bir tam parametresi eşleşmiyor veya bir nesne yapımı gerektirmeyen bir eşleşme varsa Aşırı yüklenen işlevler çağrılabilir.  
-  
- Bu hata için CAN0047 aynıdır.
+
+bir işlev bağımsız değişken listesiyle eşleşmiyor
+
+Bir ifade çağrılan bir işlev bir gerçek parametre listesiyle programda tanımlanmış aynı ada sahip bir işlevin biçimsel parametre listesi eşleşmedi.
+
+Aşırı yüklenmiş işlevler yalnızca, bir tam parametre eşleştirme veya bir nesnenin yapımı gerektirmeyen bir eşleşme yoksa çağrılabilir.
+
+Bu hata için CAN0047 aynıdır.

@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 57c85908d808243be8e6edce27ea22c18b4941f0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bbe3cd1b5c3aab71b38bca694df28fdf5b079474
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247246"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033309"
 ---
 # <a name="compiler-error-c3085"></a>Derleyici Hatası C3085
-'Oluşturucusu': bir Oluşturucu 'anahtar sözcüğü' olamaz  
-  
- Bir oluşturucu yanlış bildirildi. Bkz: [geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3085 oluşturur.  
-  
-```  
-// C3085.cpp  
-// compile with: /c /clr  
-ref struct S {  
-   S() abstract;   // C3085  
-   S(S%) abstract;   // C3085  
-};  
-  
-ref struct T {  
-   T() sealed {}   // C3085  
-   T(T%) sealed {}   // C3085  
-};  
+
+'Oluşturucu': bir Oluşturucu 'anahtar sözcüğü' olamaz
+
+Bir oluşturucu yanlış bildirildi. Bkz: [geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3085 oluşturur.
+
+```
+// C3085.cpp
+// compile with: /c /clr
+ref struct S {
+   S() abstract;   // C3085
+   S(S%) abstract;   // C3085
+};
+
+ref struct T {
+   T() sealed {}   // C3085
+   T(T%) sealed {}   // C3085
+};
 ```

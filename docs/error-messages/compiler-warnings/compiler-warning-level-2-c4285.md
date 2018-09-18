@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c4366142c14ec77c1c344312e50e7295c71ca93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 27ad828e25f647bddcc8a9ebe9662e2ba61f48d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291706"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040706"
 ---
 # <a name="compiler-warning-level-2-c4285"></a>Derleyici Uyarısı (Düzey 2) C4285
-'identifier::operator -> için' dönüş türü iç gösterimini kullanarak uyguladıysanız yinelemelidir  
-  
- Belirtilen **-> () işleci** işlev türü için döndüremiyor, tanımlanan veya için bunu tanımlanmış türüne bir başvuru.  
-  
- Aşağıdaki örnek C4285 oluşturur:  
-  
-```  
-// C4285.cpp  
-// compile with: /W2  
-class C  
-{  
-public:  
-    C operator->();   // C4285  
-   // C& operator->();  C4285, also  
-};  
-  
-int main()  
-{  
-}  
+
+'-> identifier::operator için' dönüş türü içtakı gösterimi kullanılırsa özyinelemelidir
+
+Belirtilen **-> () işleci** işlev dönüş türü olamaz, tanımlanan veya kendisi için tanımlanmış olduğu tür başvurusu.
+
+Aşağıdaki örnek, C4285 oluşturur:
+
+```
+// C4285.cpp
+// compile with: /W2
+class C
+{
+public:
+    C operator->();   // C4285
+   // C& operator->();  C4285, also
+};
+
+int main()
+{
+}
 ```

@@ -16,22 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 70edb3e7d8cf774a052837e62bdfc92e9981ba63
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f725e0f121e628a1cb8d28ca425d17abccfb397d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387576"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038652"
 ---
 # <a name="filenamemax"></a>FILENAME_MAX
-İzin verilen en büyük uzunluğunu bir `filename` dize arabellek boyutu.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <stdio.h>  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Yol alanı sınırları](../c-runtime-library/path-field-limits.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+İzin verilen maksimum uzunluğu bir `filename` dize arabellek boyutu.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <stdio.h>
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Yol Alanı Sınırları](../c-runtime-library/path-field-limits.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

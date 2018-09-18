@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9dc1d1064e6ed18870d60e3a421ceec0c54ca855
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ae8ee21b8cb8f2a5bffe471019e65d32c8872af3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037508"
 ---
 # <a name="math-error-m6102"></a>Matematik Hatası M6102
-normal dışı  
-  
- Bir işlem nedeniyle geçersiz çok küçük bir kayan noktalı sayı oluşturulan anlamlı kaybı. Normal dışı kayan nokta özel durumlar genellikle maskelenir, yakalanan ve üzerinde çalıştırıldığı için neden olur.  
-  
- Program 130 çıkış koduyla sona erer.
+
+normal dışı
+
+Bir işlem nedeniyle geçersiz çok küçük bir kayan noktalı sayı oluşturulan anlam kaybına. Denormal kayan nokta özel durumları genellikle maskelenmiş, bunları yakalanan ve üzerinde işlem neden olur.
+
+Program çıkış kodu ile 130 sonlandırır.

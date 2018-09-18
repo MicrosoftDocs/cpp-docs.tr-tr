@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bdf9ad03df6a342d47919eb576227422f687d15b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8f11c698b0f89e0584b673a112da10e82250cf5c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755637"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035779"
 ---
 # <a name="notifyhandler"></a>NotifyHandler
 
@@ -29,22 +29,22 @@ ms.locfileid: "43755637"
 
 ## <a name="syntax"></a>Sözdizimi
 
-```  
+```cpp
 LRESULT NotifyHandler(
-    int idCtrl,  
-    LPNMHDR pnmh,  
+    int idCtrl,
+    LPNMHDR pnmh,
     BOOL& bHandled);
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*idCtrl*  
+*idCtrl*<br/>
 İletiyi gönderen denetim tanımlayıcısı.
 
-*pnmh*  
+*pnmh*<br/>
 Adresi bir [NMHDR](/windows/desktop/api/richedit/ns-richedit-_nmhdr) bildirimi kodunu ve ek bilgiler içeren yapısı. Bazı bildirim iletileri için bu parametreyi olan daha büyük bir yapısına işaret `NMHDR` yapısı olarak kendi ilk üyesi.
 
-*bHandled*  
+*bHandled*<br/>
 İleti eşleme kümeleri *bHandled* önce true *NotifyHandler* çağrılır. Varsa *NotifyHandler* tam iletiyi işlemez ayarlamanız gerekir *bHandled* için **FALSE** ihtiyaç daha fazla işleme belirtmek için.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -57,6 +57,6 @@ Bu ileti işleyicisi bir ileti eşlemede kullanma örneği için bkz: [NOTIFY_HA
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Pencere uygulama](../atl/implementing-a-window.md)   
-[İleti eşlemeleri](../atl/message-maps-atl.md)   
+[Pencere Uygulama](../atl/implementing-a-window.md)<br/>
+[İleti eşlemeleri](../atl/message-maps-atl.md)<br/>
 [WM_NOTIFY](https://msdn.microsoft.com/library/windows/desktop/bb775583)

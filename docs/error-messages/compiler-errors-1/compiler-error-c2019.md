@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b8f9f36bef278edc4c40c732b86c012180535f74
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e6f1ae1b22cca0d00e990f64ccaf469359563f8e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164247"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038704"
 ---
 # <a name="compiler-error-c2019"></a>Derleyici Hatası C2019
-Beklenen önişlemci yönergesi bulundu 'karakter'  
-  
- Karakter ve ardından bir `#` oturum ancak değil önişlemci yönergesi ilk harfini.  
-  
- Aşağıdaki örnek C2019 oluşturur:  
-  
-```  
-// C2019.cpp  
-#!define TRUE 1   // C2019  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2019b.cpp  
-// compile with: /c  
-#define TRUE 1  
+
+Beklenen önişlemci yönergesi bulundu 'karakteri'
+
+Karakteri ve ardından bir `#` oturum ancak değil ilk harfini bir önişlemci yönergesi.
+
+Aşağıdaki örnek, C2019 oluşturur:
+
+```
+// C2019.cpp
+#!define TRUE 1   // C2019
+```
+
+Olası çözüm:
+
+```
+// C2019b.cpp
+// compile with: /c
+#define TRUE 1
 ```

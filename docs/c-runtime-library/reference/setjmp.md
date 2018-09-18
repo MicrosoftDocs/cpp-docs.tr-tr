@@ -32,12 +32,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06073527aae8112d231dbd971b3daae35276efef
-ms.sourcegitcommit: b92ca0b74f0b00372709e81333885750ba91f90e
+ms.openlocfilehash: 0bd7d57d0678744243356a0565e10cbe4065f8d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "42465645"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032548"
 ---
 # <a name="setjmp"></a>setjmp
 
@@ -53,7 +53,7 @@ int setjmp(
 
 ### <a name="parameters"></a>Parametreler
 
-*Env*  
+*Env*<br/>
 Ortam depolandığı değişken.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -74,7 +74,7 @@ Windows, Microsoft C++ kodu olarak **longjmp** aynı yığın geriye doğru izle
 
 **END Microsoft özgü**
 
-> [!NOTE]  
+> [!NOTE]
 > Taşınabilir C++ kodunda, varsayamazsınız `setjmp` ve `longjmp` C++ nesnesi semantiğini destekler. Özellikle, bir `setjmp` / `longjmp` çifti tanımsız davranış değiştirerek, çağrı `setjmp` ve `longjmp` tarafından **catch** ve **throw** çağırır Otomatik nesneler için tüm önemsiz yok ediciler. C++ programlarında C++ özel durum işleme mekanizmasını kullanmanız önerilir.
 
 Daha fazla bilgi için [setjmp ve longjmp kullanma](../../cpp/using-setjmp-longjmp.md).
@@ -93,5 +93,5 @@ Ek uyumluluk bilgileri için bkz. [Uyumluluk](../../c-runtime-library/compatibil
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)  
-[longjmp](longjmp.md)  
+[Süreç ve Ortam Denetimi](../../c-runtime-library/process-and-environment-control.md)<br/>
+[longjmp](longjmp.md)

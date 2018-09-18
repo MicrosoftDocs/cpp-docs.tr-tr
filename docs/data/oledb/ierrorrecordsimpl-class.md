@@ -76,14 +76,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 149508ee799ab2802dd2a106b503376851ac31cd
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 13e00d3d5ac7cb6cf6e4078ee24a7c3b02a2778e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42464885"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043397"
 ---
 # <a name="ierrorrecordsimpl-class"></a>IErrorRecordsImpl Sınıfı
+
 OLE DB uygulayan [IErrorRecords](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) kayıtları ekleme ve veri üyesi kayıtlar alınırken arabirimi ([m_rgErrors](../../data/oledb/ierrorrecordsimpl-m-rgerrors.md)) türü **CAtlArray <** `RecordClass`**>**.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -94,14 +95,16 @@ class IErrorRecordsImpl : public IErrorRecords
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Öğesinden türetilen bir sınıf `IErrorRecordsImpl`.  
+
+*T*<br/>
+Öğesinden türetilen bir sınıf `IErrorRecordsImpl`.  
   
- *RecordClass*  
- OLE DB hatası nesneyi temsil eden sınıf.  
+*RecordClass*<br/>
+OLE DB hatası nesneyi temsil eden sınıf.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -133,6 +136,7 @@ class IErrorRecordsImpl : public IErrorRecords
 |[m_rgErrors](#rgerrors)|Hata kayıt dizisi.|  
 
 ## <a name="geterrordescriptionstring"></a> Ierrorrecordsımpl::geterrordescriptionstring
+
 Hata açıklaması dizesi bir hatayla kayıttan alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -142,13 +146,16 @@ LPOLESTR GetErrorDescriptionString(ERRORINFO& rCurError);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *rCurError*  
- Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
+
+*rCurError*<br/>
+Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hatayı açıklayan bir dize işaretçisi.  
+
+Hatayı açıklayan bir dize işaretçisi.  
   
 ## <a name="geterrorguid"></a> Ierrorrecordsımpl::geterrorguıd
+
 ' % S'hata GUID bir hatayla kayıttan alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -158,13 +165,16 @@ REFGUID GetErrorGUID(ERRORINFO& rCurError);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *rCurError*  
- Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
+
+*rCurError*<br/>
+Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bir GUID hatası için bir başvuru.  
+
+Bir GUID hatası için bir başvuru.  
 
 ## <a name="geterrorhelpcontext"></a> Ierrorrecordsımpl::geterrorhelpcontext
+
 Yardım içeriği kimliği bir hatayla kayıttan alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -174,13 +184,16 @@ DWORD GetErrorHelpContext(ERRORINFO& rCurError);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *rCurError*  
- Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
+
+*rCurError*<br/>
+Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hata için Yardım içeriği kimliği.  
+
+Hata için Yardım içeriği kimliği.  
 
 ## <a name="geterrorhelpfile"></a> Ierrorrecordsımpl::geterrorhelpfile
+
 Yardım dosyasının yol adı bir hatayla kayıttan alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -190,13 +203,16 @@ LPOLESTR GetErrorHelpFile(ERRORINFO& rCurError);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *rCurError*  
- Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
+
+*rCurError*<br/>
+Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hata için Yardım dosyasına yol adını içeren bir dize işaretçisi.
+
+Hata için Yardım dosyasına yol adını içeren bir dize işaretçisi.
 
 ## <a name="geterrorsource"></a> Ierrorrecordsımpl::geterrorsource
+
 Bir hatayla kayıttan hataya neden olan kaynak kodunu alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -206,13 +222,16 @@ LPOLESTR GetErrorSource(ERRORINFO& rCurError);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *rCurError*  
- Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
+
+*rCurError*<br/>
+Bir `ERRORINFO` kaydında bir `IErrorInfo` arabirimi.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Hatanın kaynak kodunu içeren bir dize işaretçisi. 
+
+Hatanın kaynak kodunu içeren bir dize işaretçisi. 
 
 ## <a name="adderrorrecord"></a> Ierrorrecordsımpl::adderrorrecord
+
 OLE DB hatası nesnesine bir kayıt ekler.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -226,9 +245,11 @@ STDMETHOD(AddErrorRecord )(ERRORINFO *pErrorInfo,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::AddErrorRecord](/previous-versions/windows/desktop/ms725362\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getbasicerrorinfo"></a> Ierrorrecordsımpl::getbasicerrorınfo
+
 Dönüş kodu ve sağlayıcıya özgü hata numarası gibi bir hata ile ilgili temel bilgileri döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -239,9 +260,11 @@ STDMETHOD(GetBasicErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [IErrorRecords::GetBasicErrorInfo](/previous-versions/windows/desktop/ms723907\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="getcustomerrorobject"></a> Ierrorrecordsımpl::getcustomerrorobject
+
 Bir işaretçi, bir özel hata nesnesi üzerinde bir arabirim döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -253,9 +276,11 @@ STDMETHOD(GetCustomErrorObject )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetCustomErrorObject](/previous-versions/windows/desktop/ms725417\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="geterrorinfo"></a> Ierrorrecordsımpl::geterrorınfo
+
 Döndürür bir [IErrorInfo](/previous-versions/windows/desktop/ms718112\(v=vs.85\)) belirtilen kayıt arabirim işaretçisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -267,9 +292,11 @@ STDMETHOD(GetErrorInfo )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+
+Bkz: [IErrorRecords::GetErrorInfo](/previous-versions/windows/desktop/ms711230\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="geterrorparameters"></a> Ierrorrecordsımpl::geterrorparameters
+
 Hata parametrelerini döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -280,9 +307,11 @@ STDMETHOD(GetErrorParameters )(ULONG ulRecordNum,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetErrorParameters](/previous-versions/windows/desktop/ms715793\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="getrecordcount"></a> Ierrorrecordsımpl::getrecordcount
+
 OLE DB kayıt nesnesinde kayıt sayısını döndürür.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -292,9 +321,11 @@ STDMETHOD(GetRecordCount )(ULONG *pcRecords);
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IErrorRecords::GetRecordCount](/previous-versions/windows/desktop/ms722724\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
 
 ## <a name="rgerrors"></a> Ierrorrecordsımpl::m_rgerrors
+
 Hata kayıt dizisi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -304,5 +335,6 @@ CAtlArray< RecordClass > m_rgErrors;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

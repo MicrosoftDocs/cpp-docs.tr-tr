@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c6d4de93f964807003dbfcfb6717b8a858354c1c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c605d6cdf30a4c184e59627ddc3819812c290d68
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169029"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46029097"
 ---
 # <a name="compiler-error-c2246"></a>Derleyici Hatası C2246
-'tanımlayıcısı': yerel olarak tanımlanmış sınıfında geçersiz statik veri üyesi  
-  
- Sınıf, yapı veya yerel kapsamlı UNION üyesi bildirilmiş `static`.  
-  
- Aşağıdaki örnek C2246 oluşturur:  
-  
-```  
-// C2246.cpp  
-// compile with: /c  
-void func( void ) {  
-   class A { static int i; };   // C2246  i is local to func  
-   static int j;   // OK  
-};  
+
+'identifier': yerel olarak tanımlanan sınıfta geçersiz statik veri üyesi
+
+Bir sınıf, yapı veya birleşim yerel kapsama sahip bir üyesi bildirildiği `static`.
+
+Aşağıdaki örnek, C2246 oluşturur:
+
+```
+// C2246.cpp
+// compile with: /c
+void func( void ) {
+   class A { static int i; };   // C2246  i is local to func
+   static int j;   // OK
+};
 ```

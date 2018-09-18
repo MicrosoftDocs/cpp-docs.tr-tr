@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 16d9cad69d42f25af04f7ba0df7fa88f2eeb6aee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 97da0796b6b7f40462f4d0594e640ee98aa6aa49
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244855"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044177"
 ---
 # <a name="compiler-error-c2835"></a>Derleyici Hatası C2835
-Kullanıcı tanımlı dönüştürme 'type' biçimsel parametre almayan  
-  
- Kullanıcı tanımlı tür dönüşümleri resmi parametreleri alamıyor.  
-  
- Aşağıdaki örnek C2835 oluşturur:  
-  
-```  
-// C2835.cpp  
-class A {  
-public:  
-   char v_char;  
-  
-   A() {   
-      v_char = 'A';   
-   };  
-   operator char(char a) {   // C2835  
-   // try the following line instead  
-   // operator char() {     
-      return v_char + 1;   
-   };  
-};  
-  
-int main() {  
-   A a;  
-}  
+
+Kullanıcı tanımlı dönüştürme 'type' hiçbir biçimsel parametre almıyor
+
+Kullanıcı tanımlı tür dönüştürmeler, biçimsel parametre alamaz.
+
+Aşağıdaki örnek, C2835 oluşturur:
+
+```
+// C2835.cpp
+class A {
+public:
+   char v_char;
+
+   A() {
+      v_char = 'A';
+   };
+   operator char(char a) {   // C2835
+   // try the following line instead
+   // operator char() {
+      return v_char + 1;
+   };
+};
+
+int main() {
+   A a;
+}
 ```

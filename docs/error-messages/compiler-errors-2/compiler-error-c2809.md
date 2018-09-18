@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 283dfdbc3c6c0168cf9a6bd4887fa4b5599dabf1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6503f395a795056d0952c7a55f2c69300501313e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237550"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018880"
 ---
 # <a name="compiler-error-c2809"></a>Derleyici Hatası C2809
-'işleci işleci' biçimsel parametresi yok  
-  
- İşleç gerekli parametreler eksik.  
-  
- Aşağıdaki örnek C2809 oluşturur:  
-  
-```  
-// C2809.cpp  
-// compile with: /c  
-class A{};  
-int operator+ ();   // C2809  
-int operator+ (A);   // OK  
+
+'operator işleci' hiç biçimsel parametresi yok
+
+İşleci, gerekli parametreler eksik.
+
+Aşağıdaki örnek, C2809 oluşturur:
+
+```
+// C2809.cpp
+// compile with: /c
+class A{};
+int operator+ ();   // C2809
+int operator+ (A);   // OK
 ```

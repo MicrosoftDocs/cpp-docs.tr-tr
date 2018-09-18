@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0261ed9d1e84849f408c3d764693cb95ac7019d2
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 65b8a0420bc996812eed5996757e05d50aafc030
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408072"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023533"
 ---
 # <a name="nothrow-c"></a>nothrow (C++)
 
@@ -30,8 +30,8 @@ ms.locfileid: "39408072"
 
 A **__declspec** işlevlerin bildiriminde kullanılabilen genişletilmiş öznitelik.
 
-## <a name="syntax"></a>Sözdizimi  
-  
+## <a name="syntax"></a>Sözdizimi
+
 > *dönüş türü* __declspec(nothrow) [*çağrı kuralı*] *işlevi adı* ([*bağımsız değişken listesi*])
 
 ## <a name="remarks"></a>Açıklamalar
@@ -57,6 +57,7 @@ void __stdcall f3() throw();
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [__declspec](../cpp/declspec.md)  
- [noexcept](noexcept-cpp.md)  
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
+
+[__declspec](../cpp/declspec.md)<br/>
+[noexcept](noexcept-cpp.md)<br/>
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

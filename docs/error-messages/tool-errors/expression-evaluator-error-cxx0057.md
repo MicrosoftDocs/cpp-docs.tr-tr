@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 509c7e00236ed824c3213f7ba730909873646c2e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0f993b435df4d0b6804ab9b31698074d65a03112
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295993"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025028"
 ---
 # <a name="expression-evaluator-error-cxx0057"></a>İfade Değerlendirici Hatası CXX0057
-numaralı satırdaki kodu yok  
-  
- Hiçbir kod için belirtilen satır numarası oluşturuldu. Bir kesme noktası kullanılamaz.  
-  
- Bu hata için CAN0057 aynıdır.
+
+numaralı satırdaki kodu yok
+
+Belirtilen satır numarası için kod oluşturulmadı. Bir kesme noktası kullanılamaz.
+
+Bu hata için CAN0057 aynıdır.

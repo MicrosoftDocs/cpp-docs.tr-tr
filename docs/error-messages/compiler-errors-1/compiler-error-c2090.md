@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 718ed5ba8d422c2657dc58591ce285b0d85857cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 613d3214e652e994ec07e1fe4396b4eb15798067
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028785"
 ---
 # <a name="compiler-error-c2090"></a>Derleyici Hatası C2090
-işlev dizisi döndürür  
-  
- Bir işlevi bir dizi döndüremez. Bir işaretçi bunun yerine bir dizi döndürür.  
-  
- Aşağıdaki örnek C2090 oluşturur:  
-  
-```  
-// C2090.cpp  
-int func1(void)[] {}   // C2090  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2090b.cpp  
-// compile with: /c  
-int* func2(int * i) {  
-   return i;  
-}  
+
+işlev dizi döndürüyor
+
+Bir işlev dizisi döndüremez. Bir işaretçi, dizi için bunun yerine döndürür.
+
+Aşağıdaki örnek, C2090 oluşturur:
+
+```
+// C2090.cpp
+int func1(void)[] {}   // C2090
+```
+
+Olası çözüm:
+
+```
+// C2090b.cpp
+// compile with: /c
+int* func2(int * i) {
+   return i;
+}
 ```

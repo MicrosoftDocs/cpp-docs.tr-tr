@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: edc9e70ce000fe69876888ec94684d48d2ee9531
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 05ed1274f94c1df8e9654622ec059ea9707cdf87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163507"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043033"
 ---
 # <a name="compiler-error-c2033"></a>Derleyici Hatası C2033
-'tanımlayıcısı': bit alan yöneltme sahip olamaz  
-  
- Bit alanını verilmeyen bir işaretçi bildirildi.  
-  
- Aşağıdaki örnek C2033 oluşturur:  
-  
-```  
-// C2033.cpp  
-struct S {  
-   int *b : 1;  // C2033  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2033b.cpp  
-// compile with: /c  
-struct S {  
-   int b : 1;  
-};  
+
+'identifier': bit alanında yöneltme olamaz
+
+Bit alanı verilmeyen bir işaretçi olarak bildirildi.
+
+Aşağıdaki örnek, C2033 oluşturur:
+
+```
+// C2033.cpp
+struct S {
+   int *b : 1;  // C2033
+};
+```
+
+Olası çözüm:
+
+```
+// C2033b.cpp
+// compile with: /c
+struct S {
+   int b : 1;
+};
 ```

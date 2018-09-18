@@ -16,50 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64cfed070deaef12eb5465a02cc786eb76d83221
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ee8e99dcf0055f6e37ad9f232c401000c76f3b13
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251359"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038392"
 ---
 # <a name="compiler-error-c3450"></a>Derleyici Hatası C3450
-'type': öznitelik değil; [System::AttributeUsageAttribute] belirtemezsiniz veya [Windows::Foundation::Metadata::AttributeUsageAttribute]  
-  
- Kullanıcı tanımlı bir yönetilen öznitelik öğesinden devralmalıdır <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>. Windows çalışma zamanı özniteliği tanımlanmalıdır `Windows::Foundation::Metadata` ad alanı.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3450 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C3450.cpp  
-// compile with: /clr  
-// C3450 expected  
-using namespace System;  
-using namespace System::Security;  
-using namespace System::Security::Permissions;  
-  
-public ref class MyClass {};  
-  
-class MyClass2 {};  
-  
-[attribute(AttributeTargets::All)]  
-ref struct AtClass {  
-   AtClass(Type ^) {}  
-};  
-  
-[attribute(AttributeTargets::All)]  
-ref struct AtClass2 {  
-   AtClass2() {}  
-};  
-  
-// Apply the AtClass and AtClass2 attributes to class B  
-[AtClass(MyClass::typeid), AtClass2]     
-[AttributeUsage(AttributeTargets::All)]  
-// Delete the following line to resolve.  
-ref class B {};  
-// Uncomment the following line to resolve.  
-// ref class B : Attribute {};  
+
+'type': öznitelik değil; [System::AttributeUsageAttribute] belirtilemez. ya da [Windows::Foundation::Metadata::AttributeUsageAttribute]
+
+Kullanıcı tanımlı yönetilen özniteliği devralmalıdır <xref:System.ComponentModel.AttributeCollection.%23ctor%2A>. Bir Windows çalışma zamanı öznitelik tanımlanmalıdır `Windows::Foundation::Metadata` ad alanı.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3450 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C3450.cpp
+// compile with: /clr
+// C3450 expected
+using namespace System;
+using namespace System::Security;
+using namespace System::Security::Permissions;
+
+public ref class MyClass {};
+
+class MyClass2 {};
+
+[attribute(AttributeTargets::All)]
+ref struct AtClass {
+   AtClass(Type ^) {}
+};
+
+[attribute(AttributeTargets::All)]
+ref struct AtClass2 {
+   AtClass2() {}
+};
+
+// Apply the AtClass and AtClass2 attributes to class B
+[AtClass(MyClass::typeid), AtClass2]
+[AttributeUsage(AttributeTargets::All)]
+// Delete the following line to resolve.
+ref class B {};
+// Uncomment the following line to resolve.
+// ref class B : Attribute {};
 ```

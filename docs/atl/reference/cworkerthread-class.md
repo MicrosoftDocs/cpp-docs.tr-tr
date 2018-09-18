@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 92a6bb4cbd80cf0fa36b65d81a327b822493e264
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: e2c3e0eb625c492cb9f0e9a1234d33149ac201a1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752703"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040238"
 ---
 # <a name="cworkerthread-class"></a>CWorkerThread sınıfı
 
@@ -42,13 +42,13 @@ Bu sınıf bir çalışan iş parçacığı oluşturur veya mevcut bir kullanır
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class ThreadTraits = DefaultThreadTraits>  
+template <class ThreadTraits = DefaultThreadTraits>
 class CWorkerThread
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*ThreadTraits*  
+*ThreadTraits*<br/>
 İş parçacığı oluşturma işlevi gibi sağlama sınıfı [CRTThreadTraits](../../atl/reference/crtthreadtraits-class.md) veya [Win32ThreadTraits](../../atl/reference/win32threadtraits-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -115,13 +115,13 @@ HRESULT AddHandle(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Beklenebilir nesne için tanıtıcı.
 
-*pClient*  
+*pClient*<br/>
 İşaretçi [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabirimi nesne tanıtıcısını sinyal çağırılır.
 
-*dwParam*  
+*dwParam*<br/>
 Geçirilecek parametreyi [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) tanıtıcı sinyal zaman.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -146,16 +146,16 @@ HRESULT AddTimer(
 
 ### <a name="parameters"></a>Parametreler
 
-*dwInterval*  
+*dwInterval*<br/>
 Zamanlayıcının milisaniye cinsinden belirler.
 
-*pClient*  
+*pClient*<br/>
 İşaretçi [IWorkerThreadClient](../../atl/reference/iworkerthreadclient-interface.md) arabirimi nesne tanıtıcısını sinyal çağırılır.
 
-*dwParam*  
+*dwParam*<br/>
 Geçirilecek parametreyi [IWorkerThreadClient::Execute](../../atl/reference/iworkerthreadclient-interface.md#execute) tanıtıcı sinyal zaman.
 
-*phTimer*  
+*phTimer*<br/>
 [out] Başarı durumunda, yeni oluşturulan Zamanlayıcı tanıtıcısını alır, tanıtıcı değişkenin adresidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -224,7 +224,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pThread*  
+*pThread*<br/>
 Mevcut bir iş parçacığı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -249,7 +249,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Kaldırılacak işleyici.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -270,7 +270,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwWait*  
+*dwWait*<br/>
 Çalışan iş parçacığı kapatmak beklenecek milisaniye cinsinden süre. Varsayılan olarak 10 saniye ATL_WORKER_THREAD_WAIT. Gerekirse, atlutil.h eklemeden önce bu simgenin kendi değeri tanımlayabilirsiniz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -285,7 +285,7 @@ Nesnesini yeniden kullanmak için çağrı [CWorkerThread::Initialize](#initiali
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)   
-[Sınıfları](../../atl/reference/atl-classes.md)   
-[Çoklu iş parçacığı kullanımı: Çalışan iş parçacıkları oluşturma](../../parallel/multithreading-creating-worker-threads.md)   
+[DefaultThreadTraits](atl-typedefs.md#defaultthreadtraits)<br/>
+[Sınıflar](../../atl/reference/atl-classes.md)<br/>
+[Çoklu İş Parçacığı Kullanımı: Çalışan İş Parçacıkları Oluşturma](../../parallel/multithreading-creating-worker-threads.md)<br/>
 [IWorkerThreadClient Sınıfı](../../atl/reference/iworkerthreadclient-interface.md)

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9fa80b858494ab2a89e82a40f2c295d05cb1294
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d143624ae7312cfefc724471681d697394a1566
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245208"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037053"
 ---
 # <a name="compiler-error-c2859"></a>Derleyici Hatası C2859
-Dosya adı bu önceden derlenmiş üst bilgi oluşturulurken kullanılan türü dosyası değil, önceden derlenmiş üst bilgi yeniden oluşturun.  
-  
- Önceden derlenmiş üstbilgi dosyaları ve project veritabanı tutarlı bilgilerin emin olmak için birlikte oluşturulmalıdır. Önceden derlenmiş üst bilgi yeniden oluşturmak için projeyi yeniden oluşturun.  
-  
- Önceden derlenmiş üst bilgileri hakkında daha fazla bilgi için bkz: [/Y (önceden derlenmiş başlıklar)](../../build/reference/y-precompiled-headers.md).
+
+Dosya adı bu ön derlenmiş üstbilgi oluşturulduğunda kullanılan türü dosyası değil, önceden derlenmiş üstbilgiyi yeniden oluşturun.
+
+Proje veritabanını ve önceden derlenmiş üst bilgi dosyaları tutarlı bilgiler sağlamak için birlikte oluşturulmalıdır. Ön derlenmiş üstbilgiyi yeniden oluşturmak için projeyi yeniden derleyin.
+
+Önceden derlenmiş üst bilgiler hakkında daha fazla bilgi için bkz: [/Y (önceden derlenmiş üst bilgiler)](../../build/reference/y-precompiled-headers.md).

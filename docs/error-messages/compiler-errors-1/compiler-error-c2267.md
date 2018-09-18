@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc117bd692408773a2ef93ed319221b78646ba4b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 080f6ebfda8dbdaa1f0bf70faa3b6d5c7545d66e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169913"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035272"
 ---
 # <a name="compiler-error-c2267"></a>Derleyici Hatası C2267
-'function': blok kapsamlı statik işlevleri geçersiz  
-  
- Yerel bir işlev bildirilmiş `static`. Statik işlevler genel kapsama sahip olmalıdır.  
-  
- Aşağıdaki örnek C2267 oluşturur:  
-  
-```  
-// C2267.cpp  
-static int func2();   // OK  
-int main() {  
-    static int func1();   // C2267  
-}  
+
+'function': blok kapsamı olan statik işlevler geçersizdir
+
+Yerel bir işlev bildirildiği `static`. Statik işlevler genel kapsamda olması gerekir.
+
+Aşağıdaki örnek, C2267 oluşturur:
+
+```
+// C2267.cpp
+static int func2();   // OK
+int main() {
+    static int func1();   // C2267
+}
 ```

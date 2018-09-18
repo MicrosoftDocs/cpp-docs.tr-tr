@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a170e869a2d8869424b23fb154cd23f0ed26c9fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c5607df86a44174536f58242c5c0a98f7fe5e7dc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248202"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045282"
 ---
 # <a name="compiler-error-c2838"></a>Derleyici Hatası C2838
-'member': üye bildiriminde geçersiz tam ad  
-  
- Sınıf, yapı veya birleşim başka bir sınıf, yapı veya birleşim üyesi redeclare için bir tam ad kullanır.  
-  
- Aşağıdaki örnek C2838 oluşturur:  
-  
-```  
-// C2838.cpp  
-// compile with: /c  
-class Bellini {  
-public:  
-    void Norma();  
-};  
-  
-class Bottesini {  
-   Bellini::Norma();  // C2838  
-};  
+
+'member': üye bildiriminde geçersiz nitelenmiş ad
+
+Bir sınıf, yapı veya birleşim başka bir sınıf, yapı veya birleşim üyesi yeniden bildirmek için tam bir ad kullanır.
+
+Aşağıdaki örnek, C2838 oluşturur:
+
+```
+// C2838.cpp
+// compile with: /c
+class Bellini {
+public:
+    void Norma();
+};
+
+class Bottesini {
+   Bellini::Norma();  // C2838
+};
 ```

@@ -31,12 +31,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c88b73499948db4e8fc0645b2d59f7b92b3cfe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 77e7cd29c38706078dbcb2cc9718827d8c8cc583
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753184"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023000"
 ---
 # <a name="csid-class"></a>CSid sınıfı
 
@@ -156,22 +156,22 @@ explicit CSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 Mevcut bir `CSid` nesne veya `SID` (güvenlik kimliği) yapısı.
 
-*IdentifierAuthority*  
+*IdentifierAuthority*<br/>
 Yetkilisi.
 
-*nSubAuthorityCount*  
+*nSubAuthorityCount*<br/>
 Kimliğinin alt yetki sayısı.
 
-*pszAccountName*  
+*pszAccountName*<br/>
 Hesap adı.
 
-*pszSystem*  
+*pszSystem*<br/>
 Sistem adı. Bu dize bir uzak bilgisayar adı olabilir. Yerel Sistem, bu dize NULL ise, bunun yerine kullanılır.
 
-*Psıd*  
+*Psıd*<br/>
 Bir işaretçi bir `SID` yapısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -233,7 +233,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik kimliği) yapısı veya `CSid` Karşılaştırılacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -300,7 +300,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nSubAuthority*  
+*nSubAuthority*<br/>
 Kimliğinin alt yetki.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -363,13 +363,13 @@ bool LoadAccount(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszAccountName*  
+*pszAccountName*<br/>
 Hesap adı.
 
-*pszSystem*  
+*pszSystem*<br/>
 Sistem adı. Bu dize bir uzak bilgisayar adı olabilir. Yerel Sistem, bu dize NULL ise, bunun yerine kullanılır.
 
-*Psıd*  
+*Psıd*<br/>
 Bir işaretçi bir [SID](/windows/desktop/api/winnt/ns-winnt-_sid) yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -385,13 +385,13 @@ Başarılı olduğunda TRUE döndürür başarısız olduğunda FALSE. Genişlet
 Atama işleci.
 
 ```
-CSid& operator= (const CSid& rhs) throw(...);  
+CSid& operator= (const CSid& rhs) throw(...);
 CSid& operator= (const SID& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` atamak için `CSid` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -410,10 +410,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür == işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür == işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -432,10 +432,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür! = işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür! = işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -454,10 +454,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür! = işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür! = işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -476,10 +476,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür! = işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür! = işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -498,10 +498,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür! = işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür! = işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -520,10 +520,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Parametreler
 
-*lhs*  
+*lhs*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sol tarafında görünür! = işleci.
 
-*Sol*  
+*Sol*<br/>
 `SID` (Güvenlik tanımlayıcısı) veya `CSid` sağ tarafında görünür! = işleci.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -534,7 +534,7 @@ TRUE ise *lhs* büyüktür veya eşittir *sol*, aksi durumda FALSE.
 
 Yayınları bir `CSid` nesneye bir işaretçi bir `SID` (güvenlik kimliği) yapısı.
 
-```  
+```
 operator const SID *() const throw(...);
 ```
 
@@ -584,7 +584,7 @@ Durumunu açıklayan bir değer depolar veri üyesinin değerini döndürür `CS
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[Güvenlik genel işlevleri](../../atl/reference/security-global-functions.md)   
+[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)<br/>
 [İşleçler](../../atl/reference/atl-operators.md)

@@ -16,64 +16,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8fb294e567f759225a2899d39f2adaa7211d8d93
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b2af18a98304cafc70441acda7ef0ebb1a827d88
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234100"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035363"
 ---
 # <a name="compiler-error-c2678"></a>Derleyici Hatası C2678
-İkili 'işleci': 'type' türündeki sol işleneni aldığı hiçbir işleci tanımlanan (veya kabul edilebilir bir dönüştürme yok)  
-  
- İşleç kullanmak için belirtilen tür için aşırı yükleme veya işleci tanımlandığı bir türe dönüştürme tanımlayın.  
-  
-## <a name="example"></a>Örnek  
- C2678 const tam sol işleneni ancak işleci const olmayan bağımsız değişken yapılacak tanımlı ortaya çıkabilir.  
-  
- Aşağıdaki örnek C2678 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2678a.cpp  
-// Compile by using: cl /EHsc /W4 C2678a.cpp  
-struct Combo {  
-   int number;  
-   char letter;  
-};  
-  
-inline Combo& operator+=(Combo& lhs, int rhs) {  
-   lhs.number += rhs;  
-   return lhs;  
-}  
-  
-int main() {  
-   Combo const combo1{ 42, 'X' };  
-   Combo combo2{ 13, 'Z' };  
-  
-   combo1 += 6; // C2678  
-   combo2 += 9; // OK - operator+= matches non-const Combo  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Yerel üyesi üye işlevi çağrılmadan önce değil sabitlerseniz C2678 da oluşabilir.  
-  
- Aşağıdaki örnek C2678 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2678.cpp  
-// compile with: /clr /c  
-struct S { int _a; };  
-  
-ref class C {  
-public:  
-   void M( S param ) {  
-      test = param;   // C2678  
-  
-      // OK  
-      pin_ptr<S> ptest = &test;  
-      *ptest = param;  
-   }  
-   S test;  
-};  
-```  
+
+İkili 'operator': 'type' türünde bir sol işleneni alan hiçbir işleç tanımlanmış (veya hiç kabul edilebilir dönüştürme yok)
+
+İşlecini kullanmak için belirtilen tür için aşırı veya tanımlar işlecin tanımlandığı bir türe dönüştürmeyi gerekir.
+
+## <a name="example"></a>Örnek
+
+Sol işlenen const ile nitelenen ancak işleci const olmayan bir bağımsız değişken alan için tanımlanan C2678 oluşabilir.
+
+Aşağıdaki örnek, C2678 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2678a.cpp
+// Compile by using: cl /EHsc /W4 C2678a.cpp
+struct Combo {
+   int number;
+   char letter;
+};
+
+inline Combo& operator+=(Combo& lhs, int rhs) {
+   lhs.number += rhs;
+   return lhs;
+}
+
+int main() {
+   Combo const combo1{ 42, 'X' };
+   Combo combo2{ 13, 'Z' };
+
+   combo1 += 6; // C2678
+   combo2 += 9; // OK - operator+= matches non-const Combo
+}
+```
+
+## <a name="example"></a>Örnek
+
+Üye işlevini çağırmadan önce yerel bir üye sabitlemeyin C2678 de ortaya çıkabilir.
+
+Aşağıdaki örnek, C2678 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2678.cpp
+// compile with: /clr /c
+struct S { int _a; };
+
+ref class C {
+public:
+   void M( S param ) {
+      test = param;   // C2678
+
+      // OK
+      pin_ptr<S> ptest = &test;
+      *ptest = param;
+   }
+   S test;
+};
+```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f58d66e9d3dacfa2c0b38eb84fe51e0813a892d3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b46b3669978ff3735d5a16015ca0a01e65f07ae9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252438"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037859"
 ---
 # <a name="compiler-error-c3610"></a>Derleyici Hatası C3610
-'valuetype': değer türü gerekir 'Kutulu' yöntemi 'yöntemi' çağrılmadan önce  
-  
- Varsayılan olarak, bir değer türü yönetilen yığında değil. .NET çalışma zamanı sınıfları, yöntemleri gibi aramadan önce `Object`, yönetilen yığın değer türü taşımanız gerekir.  
-  
- C3610 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'valuetype': değer türü olmalıdır 'boxed' yapılmalıdır 'method' yönteminin çağrılabilmesi için önce
+
+Varsayılan olarak, bir değer türü yönetilen yığında değil. .NET çalışma zamanı sınıflardan gibi yöntemleri aramadan önce `Object`, yönetilen yığınla değer türü geçmeniz.
+
+C3610 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

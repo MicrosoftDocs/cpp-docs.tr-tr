@@ -16,48 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 439e6518c1e1f94918671f2e710ccf1a86621f16
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 63bbc18adbe9efb4236763efad9d943809db0547
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272272"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039609"
 ---
 # <a name="compiler-error-c3852"></a>Derleyici Hatası C3852
-'türü 'type' sahip member': Toplu başlatma bu üye başlatamadı  
-  
- Varsayılan başlatma veri üyesi varsayılan başlatma bir toplama başlatma alamaz toplu başlatma bir parçası olarak atamak için girişimde bulunuldu.  
-  
- Aşağıdaki örnekler C3852 oluştur:  
-  
-```  
-// C3852.cpp  
-struct S  
-{  
-   short s;  
-};  
-  
-struct S1  
-{  
-   int i;  
-   const S s;  
-};  
-  
-struct S2  
-{  
-   int i;  
-   char & rc;  
-};  
-  
-int main()  
-{  
-   S1 s1 = { 1 };   // C3852 const member   
-   // try the following line instead  
-   // S1 s1 = { 1, 2 };  
-  
-   S2 s2 = { 2 };   // C3852 reference member  
-   // try the following line instead  
-   // char c = 'a';  
-   S2 s2 = { 2, c };  
-}  
+
+'member' türü 'type' sahip: Toplu başlatma bu üyeyi başlatamadı
+
+Varsayılan başlatma varsayılan başlatma bir toplama başlatma alamıyor veri üyesi bir toplama başlatma bir parçası olarak atamak için girişimde bulunuldu.
+
+Aşağıdaki örnekler C3852 oluştur:
+
+```
+// C3852.cpp
+struct S
+{
+   short s;
+};
+
+struct S1
+{
+   int i;
+   const S s;
+};
+
+struct S2
+{
+   int i;
+   char & rc;
+};
+
+int main()
+{
+   S1 s1 = { 1 };   // C3852 const member
+   // try the following line instead
+   // S1 s1 = { 1, 2 };
+
+   S2 s2 = { 2 };   // C3852 reference member
+   // try the following line instead
+   // char c = 'a';
+   S2 s2 = { 2, c };
+}
 ```

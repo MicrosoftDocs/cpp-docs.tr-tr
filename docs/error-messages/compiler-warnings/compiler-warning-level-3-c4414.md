@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a1526b20732d7a1b08ec8d753cb64e33e42dd809
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fd0868fea89cd868178956c0aba171ce6525bd75
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33289714"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043215"
 ---
 # <a name="compiler-warning-level-3-c4414"></a>Derleyici Uyarısı (Düzey 3) C4414
-'function': yakınında dönüştürülür kısa atlama işlevi  
-  
- Kısa atlar hangi sınırlı bir aralıkta bir adres için yönerge dallar compact yönerge oluşturur. Yönerge atlama ve hedef adres, işlev tanımının arasındaki mesafeyi temsil eden kısa bir uzaklık içerir. Bir işlev bağlama sırasında kısa bir uzaklık ulaşılabilir aralık dışında taşınacak işlevi neden taşınmış veya konu için bağlama zamanı iyileştirmeler olabilir. Derleyici yakın veya uzak olarak jmp yönerge gerektirir atlama için özel bir kaydı oluşturmanız gerekir. Derleyici dönüştürme yapılan.  
-  
- Örneğin, aşağıdaki kod C4414 oluşturur:  
-  
-```  
-// C4414.cpp  
-// compile with: /W3 /c  
-// processor: x86  
-int DoParityEven();  
-int DoParityOdd();  
-unsigned char global;  
-int __declspec(naked) DoParityEither()  
-{  
-   __asm  
-   {  
-      test global,0  
-      jpe SHORT DoParityEven  // C4414  
-      jmp SHORT DoParityOdd   // C4414  
-   }  
-}  
+
+'function': işleve yönelik kısa atlama yakın olarak dönüştürüldü
+
+Kısa atlama hangi sınırlı bir aralıkta bir adres için yönergesinden dallar compact yönerge oluşturur. Yönergenin bağlantı hedef adresi, işlev tanımı arasındaki uzaklığı gösteren kısa bir uzaklık içerir. Bağlama sırasında bir işlev, işlev erişilebilir aralık dışında bir kısa uzaklığı taşınmasına neden taşınmış ya da konu için bağlama zamanı iyileştirmeleri olabilir. Derleyicinin yakın veya uzak jmp yönerge gerektiren atlama için özel bir kaydı oluşturmanız gerekir. Derleyici, dönüştürme yapılır.
+
+Örneğin, aşağıdaki kod C4414 oluşturur:
+
+```
+// C4414.cpp
+// compile with: /W3 /c
+// processor: x86
+int DoParityEven();
+int DoParityOdd();
+unsigned char global;
+int __declspec(naked) DoParityEither()
+{
+   __asm
+   {
+      test global,0
+      jpe SHORT DoParityEven  // C4414
+      jmp SHORT DoParityOdd   // C4414
+   }
+}
 ```

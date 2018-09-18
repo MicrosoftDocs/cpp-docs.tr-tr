@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee2d9057019c073035dfc07399e8c56580c8052d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c37b45cb86793c3c4ca7066f9d7adc047188f658
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241729"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46026342"
 ---
 # <a name="compiler-error-c2927"></a>Derleyici Hatası C2927
-'function': işlev şablonunun en az bir bağımsız değişkeni ile çağrılmalıdır  
-  
- Bağımsız değişkenler olmadan bir şablon işlevi çağrılamaz. Şablon bağımsız değişken türü oluşturmak için işlev sürümünü belirler.
+
+'function': işlev şablonunun en az bir bağımsız değişkeni ile çağrılmalıdır
+
+Bir şablon işlevi bağımsız değişkenler olmadan çağrılamıyor. Şablon bağımsız değişkenlerinin türü, işlev oluşturmak için hangi sürümünü belirler.

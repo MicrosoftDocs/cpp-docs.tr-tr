@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3d70f065c8cff6154aa706203210973f67b82a73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: af4a7c5cf4cf80595be0b21f3313dab1cf20acb2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245792"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46027251"
 ---
 # <a name="compiler-error-c3008"></a>Derleyici Hatası C3008
-'arg': bağımsız değişken kapanış eksik ')' üzerinde OpenMP 'yönergesi' yönergesi  
-  
- Bir bağımsız değişken bir OpenMP yönergesi kapanış parantezi sahip değil.  
-  
- Aşağıdaki örnek C3008 oluşturur:  
-  
-```  
-// C3008.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-   #pragma omp parallel shared(x   // C3008  
-   // Try the following line instead:  
-   #pragma omp parallel shared(x)  
-   {  
-   }  
-}  
+
+'değişken': bağımsız değişken eksik kapanış ')' OpenMP 'yönergesi' yönergesindeki
+
+Bir bağımsız değişken bir OpenMP yönergesi bir kapatma ayracı yok.
+
+Aşağıdaki örnek, C3008 oluşturur:
+
+```
+// C3008.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+   #pragma omp parallel shared(x   // C3008
+   // Try the following line instead:
+   #pragma omp parallel shared(x)
+   {
+   }
+}
 ```

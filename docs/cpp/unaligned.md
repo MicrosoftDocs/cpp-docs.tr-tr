@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e2690e52bb6145da5525c0e268c5ded8da3aa661
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 9593a0b3c6e6980f5be2ce9dcf13e505e94dcace
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39466767"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040210"
 ---
 # <a name="unaligned"></a>__unaligned
 
@@ -46,4 +46,5 @@ Hizalama hakkında daha fazla bilgi için bkz.
 - [Yapı Hizalama Örnekleri](../build/examples-of-structure-alignment.md)
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)

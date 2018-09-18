@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2c1b96a1ce4db7c16695c51d946ecb98827271
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9a9cc4a142a0aefc4937df493fa87552464b4294
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752794"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043423"
 ---
 # <a name="aggregation-and-class-factory-macros"></a>Toplama ve sınıf üreticisi makroları
 
@@ -67,7 +67,7 @@ DECLARE_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Toplanabilir olarak tanımlıyorsanız sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -131,7 +131,7 @@ DECLARE_CLASSFACTORY_EX( cf )
 
 ### <a name="parameters"></a>Parametreler
 
-*cf*  
+*cf*<br/>
 [in] Sınıf üretecini uygulayan sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -154,7 +154,7 @@ DECLARE_CLASSFACTORY2( lic )
 
 ### <a name="parameters"></a>Parametreler
 
-*Lisans Sözleşmesi*  
+*Lisans Sözleşmesi*<br/>
 [in] Uygulayan bir sınıf `VerifyLicenseKey`, `GetLicenseKey`, ve `IsLicenseValid`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -178,7 +178,7 @@ class  CComClassFactory2 : public IClassFactory2,
 
 ### <a name="parameters"></a>Parametreler
 
-*Lisans*  
+*Lisans*<br/>
 Aşağıdaki statik işlevler uygulayan bir sınıf:
 
 - `static BOOL VerifyLicenseKey( BSTR bstr );`
@@ -249,7 +249,7 @@ DECLARE_CLASSFACTORY_SINGLETON( obj )
 
 ### <a name="parameters"></a>Parametreler
 
-*obj*  
+*obj*<br/>
 [in] Sınıfı nesne adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -274,7 +274,7 @@ class CComClassFactorySingleton : public CComClassFactory
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza.
 
 `CComClassFactorySingleton` öğesinden türetilen [CComClassFactory](../../atl/reference/ccomclassfactory-class.md) ve kullandığı [CComObjectGlobal](../../atl/reference/ccomobjectglobal-class.md) tek bir nesne oluşturmak için. Her çağrı `CreateInstance` yöntemi yalnızca bu nesne bir arabirim işaretçisi için sorgular.
@@ -307,7 +307,7 @@ DECLARE_NOT_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Sınıfı nesne adı olarak toplanabilir tanımlıyorsunuz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -330,7 +330,7 @@ DECLARE_ONLY_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Yalnızca toplanabilir tanımladığınız sınıf nesnesi adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -353,7 +353,7 @@ DECLARE_POLY_AGGREGATABLE( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Toplanabilir veya toplanabilir değil olarak tanımlayan sınıf nesnesi adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -382,7 +382,7 @@ DECLARE_VIEW_STATUS( statusFlags )
 
 ### <a name="parameters"></a>Parametreler
 
-*statusFlags*  
+*statusFlags*<br/>
 [in] VIEWSTATUS bayraklar. Bkz: [VIEWSTATUS](/windows/desktop/api/ocidl/ne-ocidl-tagviewstatus) bayrakların listesi için.
 
 ### <a name="example"></a>Örnek

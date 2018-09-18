@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98fb1c50b6bdd46cc6cf0efe7739e8ada60f3274
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 9acbb55f09df3912ff61a54557cb013e86c48834
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762641"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036637"
 ---
 # <a name="ctokenprivileges-class"></a>CTokenPrivileges sınıfı
 
@@ -98,19 +98,19 @@ Windows, erişim denetimi modeli için bir giriş için bkz [erişim denetimi](/
 Bir veya daha fazla ayrıcalık ekler `CTokenPrivileges` erişim belirteci nesnesi.
 
 ```
-bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);  
+bool Add(LPCTSTR pszPrivilege, bool bEnable) throw(...);
 void Add(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Null ile sonlandırılmış WINNT içinde tanımlanan ayrıcalık adını belirten bir dize işaretçisi. H üst bilgi dosyası.
 
-*bSistemlerde*  
+*bSistemlerde*<br/>
 TRUE ise ayrıcalık etkinleştirilir. False ise, ayrıcalık devre dışı bırakıldı.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 Başvuru bir [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yapısı. Öznitelikler ve ayrıcalıkları bu yapısından kopyalanır ve eklenen `CTokenPrivileges` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -123,16 +123,16 @@ Oluşturucu.
 
 ```
 CTokenPrivileges() throw();
-CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );  
+CTokenPrivileges(const CTokenPrivileges& rhs) throw(... );
 CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `CTokenPrivileges` Yeni nesneye atamak için nesne.
 
-*rPrivileges*  
+*rPrivileges*<br/>
 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) yeni atamak yapısı `CTokenPrivileges` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -161,7 +161,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Null ile sonlandırılmış WINNT içinde tanımlanan ayrıcalık adını belirten bir dize işaretçisi. H üst bilgi dosyası. Örneğin, bu parametre sabiti SE_SECURITY_NAME veya karşılık gelen dize, "SeSecurityPrivilege." belirtebilirsiniz
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -194,7 +194,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDisplayNames*  
+*pDisplayNames*<br/>
 Bir dizi işaretçi `CString` nesneleri. `CNames` typedef tanımlanır: `CTokenPrivileges::CAtlArray<CString>`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -239,10 +239,10 @@ void GetLuidsAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*pPrivileges*  
+*pPrivileges*<br/>
 Bir dizi işaretçi [LUID'ini](/windows/desktop/api/winnt/ns-winnt-_luid) nesneleri. `CLUIDArray` typedef olarak tanımlanan `CAtlArray<LUID> CLUIDArray`.
 
-*pAttributes*  
+*pAttributes*<br/>
 DWORD nesnelerin dizisine yönelik işaretçi. Bu parametre belirtilmemişse veya NULL ise, öznitelikleri alınmamış. `CAttributes` typedef olarak tanımlanan `CAtlArray <DWORD> CAttributes`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -261,10 +261,10 @@ void GetNamesAndAttributes(
 
 ### <a name="parameters"></a>Parametreler
 
-*pNames*  
+*pNames*<br/>
 Bir dizi işaretçi `CString` nesneleri. `CNames` typedef olarak tanımlanan `CAtlArray <CString> CNames`.
 
-*pAttributes*  
+*pAttributes*<br/>
 DWORD nesnelerin dizisine yönelik işaretçi. Bu parametre belirtilmemişse veya NULL ise, öznitelikleri alınmamış. `CAttributes` typedef olarak tanımlanan `CAtlArray <DWORD> CAttributes`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -297,10 +297,10 @@ bool LookupPrivilege(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszPrivilege*  
+*pszPrivilege*<br/>
 Null ile sonlandırılmış WINNT içinde tanımlanan ayrıcalık adını belirten bir dize işaretçisi. H üst bilgi dosyası. Örneğin, bu parametre sabiti SE_SECURITY_NAME veya karşılık gelen dize, "SeSecurityPrivilege." belirtebilirsiniz
 
-*pdwAttributes*  
+*pdwAttributes*<br/>
 İşaretçi bir değişkene özniteliklerini alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -312,16 +312,16 @@ Null ile sonlandırılmış WINNT içinde tanımlanan ayrıcalık adını belirt
 Atama işleci.
 
 ```
-CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);  
+CTokenPrivileges& operator= (const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*rPrivileges*  
+*rPrivileges*<br/>
 [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges) atamak için yapı `CTokenPrivileges` nesne.
 
-*Sol*  
+*Sol*<br/>
 `CTokenPrivileges` Nesneye atamak için nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -332,7 +332,7 @@ Güncelleştirilmiş döndürür `CTokenPrivileges` nesne.
 
 Bir işaretçi değerine çevirir `TOKEN_PRIVILEGES` yapısı.
 
-```  
+```
 operator const TOKEN_PRIVILEGES *() const throw(...);
 ```
 
@@ -342,9 +342,9 @@ Bir işaretçi değerine çevirir [TOKEN_PRIVILEGES](/windows/desktop/api/winnt/
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)   
-[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)   
-[LUID'İNİ](/windows/desktop/api/winnt/ns-winnt-_luid)   
-[LUID_AND_ATTRIBUTES KONUSUNA](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[TOKEN_PRIVILEGES](/windows/desktop/api/winnt/ns-winnt-_token_privileges)<br/>
+[LUID'İNİ](/windows/desktop/api/winnt/ns-winnt-_luid)<br/>
+[LUID_AND_ATTRIBUTES KONUSUNA](/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

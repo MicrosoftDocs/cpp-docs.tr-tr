@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de30a19a2a27cde991cfce0ca061ce6f5447f033
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 88241989d54e1a068b226b59091a381f531dee9e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236913"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46028863"
 ---
 # <a name="compiler-error-c2798"></a>Derleyici Hatası C2798
-'super::member' belirsiz  
-  
- Birden çok devralınan yapıları başvurulan sahip üyeyi içeren [Süper](../../cpp/super.md). Hatayı düzeltin ya da:  
-  
--   B1 veya B2 D. devralma listesinden kaldırılıyor  
-  
--   Veri üyesi B1 veya B2 adının değiştirilmesi.  
-  
- Aşağıdaki örnek C2798 oluşturur:  
-  
-```  
-// C2798.cpp  
-struct B1 {  
-   int i;  
-};  
-  
-struct B2 {  
-   int i;  
-};  
-  
-struct D : B1, B2 {  
-   void g() {  
-      __super::i = 4; // C2798  
-   }  
-};  
+
+'super::member' belirsiz
+
+İle başvurulan üyesi birden fazla devralınan yapıları içeren [Süper](../../cpp/super.md). Hatayı düzeltin ya da:
+
+- B1 veya B2 D. devralma listesinden kaldırılıyor
+
+- B1 B2 de veri üyesinin adı değiştiriliyor.
+
+Aşağıdaki örnek, C2798 oluşturur:
+
+```
+// C2798.cpp
+struct B1 {
+   int i;
+};
+
+struct B2 {
+   int i;
+};
+
+struct D : B1, B2 {
+   void g() {
+      __super::i = 4; // C2798
+   }
+};
 ```

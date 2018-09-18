@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 636f263382c41806e04c50c0770340305a3013ce
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 038c3475a6041dfb719bb2270a87ac2898f8b958
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247158"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036767"
 ---
 # <a name="compiler-error-c2872"></a>Derleyici Hatası C2872
-'*sembol*': belirsiz simgesi  
-  
-Derleyici başvurduğunuz hangi sembolün belirleyemiyor. Belirtilen ada sahip birden fazla sembol kapsamıdır. Dosya konumları ve bildirimler için hata iletisini aşağıdaki notlara belirsiz simgenin bulunduğu derleyici bakın. Bu sorunu gidermek için tam olarak belirsiz simge kendi bu gibi bir durumda ad kullanarak nitelemek `std::byte` veya `::byte`. Aynı zamanda bir [ad alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) kaynak kodunuzu sembolleri belirsizliği zaman dahil edilen bir ad alanı kullanım için kullanışlı kısa bir ad vermek için.  
-  
-C2872 üstbilgi dosyası içeriyorsa oluşabilir bir [using yönergesi](../../cpp/namespaces-cpp.md#using_directives), ve bir sonraki üst bilgi dosyasını dahil ayrıca belirtilen ad alanında bir türü içeren `using` yönergesi. Belirtin bir `using` yalnızca tüm üst bilgi dosyaları ile belirtilir sonra yönerge `#include`.  
-  
- Bilgi Bankası makaleleri C2872 hakkında daha fazla bilgi için bkz: [sorun: derleyici hataları kullandığınız #import Visual C++ .NET XML ile](http://support.microsoft.com/kb/316317) ve ["hata C2872: 'Platformu': belirsiz simge" kullandığınızda hata iletisi Visual Studio 2013'te Windows::Foundation::metadata ad alanı](https://support.microsoft.com/kb/2890859).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2872, oluşturur ve belirsiz bir başvuruya adlı bir değişkene yapılan çünkü `i`; iki değişkenlerdir aynı ada sahip kapsamda:  
-  
-```cpp  
-// C2872.cpp  
-// compile with: cl /EHsc C2872.cpp  
-namespace A {  
-   int i;  
-}  
-  
-using namespace A;  
-int i;  
-int main() {  
-   ::i++;   // ok, uses i from global namespace  
-   A::i++;   // ok, uses i from namespace A  
-   i++;   // C2872 ambiguous: ::i or A::i? 
+
+'*sembol*': belirsiz simge
+
+Derleyici başvurduğunuz hangi sembol belirlenemiyor. Belirtilen ada sahip birden fazla sembol kapsamdadır. Dosya konumları ve bildirimler için hata iletisi aşağıdaki notlar, belirsiz simgesi bulunan derleyici bakın. Bu sorunu gidermek için tam olarak belirsiz simge ad alanı, örneğin, kullanarak belirtebilme `std::byte` veya `::byte`. Ayrıca bir [ad alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) eklenen bir ad kullanmak için kullanışlı bir kısa ad simgeleri, kaynak kodunuzdaki belirsizliğini sunmak için.
+
+Bir üstbilgi dosyası içeriyorsa C2872 oluşabilir bir [using yönergesi](../../cpp/namespaces-cpp.md#using_directives), ve bir sonraki üstbilgi dosyasına dahildir ayrıca belirtilen ad uzayında bir tür içeren `using` yönergesi. Belirtin bir `using` yönergesi yalnızca tüm ile belirtilen üst bilgi dosyalarınız sonra `#include`.
+
+C2872 hakkında daha fazla bilgi için bkz. Bilgi Bankası makaleleri [sorun: derleyici hatalarını, #import ile kullandığınız Visual C++ .NET XML'de](http://support.microsoft.com/kb/316317) ve ["hatası C2872: 'Platform': belirsiz simge" kullanırken bir hata iletisi Visual Studio 2013'te Windows::Foundation::metadata ad alanı](https://support.microsoft.com/kb/2890859).
+
+## <a name="example"></a>Örnek
+
+Adlı bir değişkene belirsiz bir başvuru yapıldığı için aşağıdaki örnek, C2872 oluşturur `i`; iki aboneliklerinin kapsamda aynı ada sahip değişkenler:
+
+```cpp
+// C2872.cpp
+// compile with: cl /EHsc C2872.cpp
+namespace A {
+   int i;
+}
+
+using namespace A;
+int i;
+int main() {
+   ::i++;   // ok, uses i from global namespace
+   A::i++;   // ok, uses i from namespace A
+   i++;   // C2872 ambiguous: ::i or A::i?
    // To fix this issue, use the fully qualified name
-   // for the intended variable. 
-}  
+   // for the intended variable.
+}
 ```

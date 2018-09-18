@@ -16,27 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c22573d26e09e14789f4cbd64d68f4082125c2b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70bf82cfdca787898a02fb52926981bfd1a1b3e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298645"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033387"
 ---
 # <a name="command-line-warning-d9041"></a>Komut Satırı Uyarısı D9041
-Geçersiz bir değer 'value' için '/ seçeneği'; ' değeri '; Ekle ' / analyze' Bu uyarı belirtirken komut satırı seçenekleri  
-  
- Kod çözümleme uyarı numarası eklendi **/wd**, **/we**, **/wo**, veya **/wl** debelirtmedenkomutsatırıseçeneği **/ analyze** komut satırı seçeneği. Bu hatayı düzeltmek için ekleyip ya da **/ analyze** komut satırı seçeneği ya da geçersiz uyarı numarasını uygun Kaldır **/w** komut satırı seçeneği.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek komut satırı uyarısı D9041 oluşturur:  
-  
-```  
-cl /EHsc /LD /wd6001 filename.cpp  
-```  
-  
- Uyarı düzeltmek için add **/ analyze** komut satırı seçeneği. Varsa **/ analyze** olan geçersiz uyarı numarasından kaldırma derleyici sürümünüz desteklenmiyor, **/wd** seçeneği.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Komut satırı hataları D8000-D9999](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)   
- [Derleyici Seçenekleri](../../build/reference/compiler-options.md)
+
+geçersiz değer 'value' için '/ seçenek'; ' değeri '; Ekle ' / analyze' Bu uyarıyı belirtirken komut satırı seçenekleri
+
+Kod Analizi uyarı numarası için eklenen **/wd**, **/we**, **/wo**, veya **/wl** dabelirtilmedenkomutsatırıseçeneği **/ analyze** komut satırı seçeneği. Bu hatayı düzeltmek için ya da ekleme **/ analyze** komut satırı seçeneği veya geçersiz bir uyarı numarası uygun kaldırmak **/w** komut satırı seçeneği.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek komut satırı uyarısı D9041 oluşturur:
+
+```
+cl /EHsc /LD /wd6001 filename.cpp
+```
+
+Uyarıyı çözmek için ekleme **/ analyze** komut satırı seçeneği. Varsa **/ analyze** olduğundan derleyici sürümünüze desteklenmiyor, Kaldır geçersiz uyarı numarasını **/wd** seçeneği.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[D8000 ile D9999 Arasındaki Komut Satırı Hataları](../../error-messages/tool-errors/command-line-errors-d8000-through-d9999.md)<br/>
+[Derleyici Seçenekleri](../../build/reference/compiler-options.md)

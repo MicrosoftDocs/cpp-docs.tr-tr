@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0abfecf605dfba95643e455d7f9523ca046b3002
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 352964f92c6475aa860dc8b0a73cd9e95a8b56ed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319240"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043839"
 ---
 # <a name="nmake-fatal-error-u1097"></a>NMAKE Önemli Hatası U1097
-Dosya adı parçaları sözdizimi bağımlı gerektirir  
-  
- Geçerli bağımlılık açık bağımlı ya da örtük bağımlı yok. Yüzde kullanan dosya adı parçaları sözdizimi (`%`) tanımlayıcısı, geçerli hedef ilk bağımlı bileşenleri temsil eder.
+
+filename-parts söz dizimi bağımlı gerektirir
+
+Açık bir bağımlı ya da örtük bir bağımlı geçerli bağımlılık yok. Yüzde kullanıyor Filename-parts söz dizimi (`%`) tanımlayıcısı, geçerli hedef ilk bağımlı bileşenleri temsil eder.

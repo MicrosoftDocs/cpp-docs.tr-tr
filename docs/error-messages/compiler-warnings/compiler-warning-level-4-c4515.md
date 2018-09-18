@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42bdf6edbd55f533a01c5c430ed328ded7e71dde
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1ae4fde16336b3bcd06b344641207b70279c7416
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291466"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037235"
 ---
 # <a name="compiler-warning-level-4-c4515"></a>Derleyici Uyarısı (düzey 4) C4515
-'namespace': ad alanı kendisini kullanır  
-  
- Bir ad alanı kullanılan yinelemeli olarak eşleştirilir.  
-  
- Aşağıdaki örnek C4515 oluşturur:  
-  
-```  
-// C4515.cpp  
-// compile with: /W4  
-namespace A  
-{  
-   using namespace A; // C4515  
-}  
-  
-int main()  
-{  
-}  
+
+'ad alanı': ad alanı kendini kullanıyor
+
+Kullanılan yinelemeli olarak bir ad alanıdır.
+
+Aşağıdaki örnek, C4515 oluşturur:
+
+```
+// C4515.cpp
+// compile with: /W4
+namespace A
+{
+   using namespace A; // C4515
+}
+
+int main()
+{
+}
 ```

@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5258c3dadd7ede384520b76e95c1b8e691882f8c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: da57a883bcf66535a531e98e23b5927d37cadccd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266978"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042239"
 ---
 # <a name="compiler-error-c3769"></a>Derleyici Hatası C3769
-'type': iç içe geçmiş sınıf hemen kapsayan sınıfı aynı ada sahip olamaz  
-  
- İç içe geçmiş sınıf hemen kapsayan sınıfı aynı ada sahip olamaz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3769 oluşturur.  
-  
-```  
-// C3769.cpp  
-// compile with: /c  
-class x {  
-   class x {};   // C3769  
-   class y {  
-      class x{};   // OK  
-   };  
-};  
+
+'type': iç içe geçmiş bir sınıf kapsayan sınıf ile aynı ada sahip olamaz
+
+İç içe geçmiş bir sınıf kapsayan sınıf ile aynı ada sahip olamaz.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3769 oluşturur.
+
+```
+// C3769.cpp
+// compile with: /c
+class x {
+   class x {};   // C3769
+   class y {
+      class x{};   // OK
+   };
+};
 ```

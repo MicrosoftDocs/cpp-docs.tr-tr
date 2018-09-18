@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcdfee9da378415afe0b88fe6eed18ec8f570d4a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 10b258b12bb1ad7e47a7b126b8fd503814186645
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302717"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041603"
 ---
 # <a name="c-runtime-error-r6024"></a>C çalışma zamanı hatası R6024
-_onexit/atexit tablo için yeterli alan yok  
-  
+
+_onexit/atexit tablo için yeterli alan yok
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hata genellikle bir son derece düşük bellek yetersizliği veya nadiren, program hatada veya tarafından kullandığı Visual C++ kitaplıkları'nın Bozulması kaynaklanır.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya Microsoft Visual C++ yeniden dağıtılabilir tüm kopyalarını yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Kullanılabilir bellek yok olduğundan bu hata oluşur. `_onexit` veya `atexit` işlevi. Bu hata, düşük bellek koşulunu tarafından kaynaklanır. Kullanıcı verilerini kaydetme ve temiz bir uygulama gerçekleştirme yardımcı olmak için uygulama başlatma sırasında önceden ayırma arabelleklerini düşük bellek koşullarında çıkmak düşünebilirsiniz.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hata genellikle bir son derece düşük bellek durumu veya nadiren de olsa bir programın hata veya tarafından kullandığı Visual C++ kitaplıklarının Bozulması neden olur.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya Microsoft Visual C++ yeniden dağıtılabilir tüm kopyalarını yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Kullanılabilir bellek yok olduğundan, bu hata oluştuğunda `_onexit` veya `atexit` işlevi. Bir düşük bellek koşul bu hataya neden olur. Kullanıcı verilerini kaydetme ve temiz bir uygulama gerçekleştirmek yardımcı olmak için uygulama başlatma sırasında önceden ayırma arabelleklerini düşük bellek koşulları çıkmak düşünebilirsiniz.

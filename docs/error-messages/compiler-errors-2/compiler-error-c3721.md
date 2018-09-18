@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e0bd4942dba3c49ecc06b015d6ed14b297d09ac2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: df6c2ff97e44ab679e59b3377e80e78398f12211
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275203"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039563"
 ---
 # <a name="compiler-error-c3721"></a>Derleyici Hatası C3721
-'imzası': olay için uyumsuz imzası  
-  
- Bir olay yanlış bildirildi. Daha fazla bilgi için bkz: [__event](../../cpp/event.md).  
-  
- C3721 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'imza': olay için uyumsuz imza
+
+Bir olayı yanlış bildirildi. Daha fazla bilgi için [__event](../../cpp/event.md).
+
+C3721 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

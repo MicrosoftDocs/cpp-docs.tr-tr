@@ -27,61 +27,65 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 163d6f90d31e27cc4d8a616074f7f4153ab58876
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 7c17669c4c229622008f96eaf94814a5736a7965
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43685501"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038613"
 ---
 # <a name="crtlcmapstringw"></a>__crtLCMapStringW
-Bir karakter dizesinin başka bir belirtilen yerel ayara bağımlı dönüştürmesi gerçekleştiriliyor eşler. Bu işlev, giriş dizesi için bir sıralama anahtarı oluşturmak için de kullanılabilir.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
-int __crtLCMapStringW(  
-   LCID    Locale,  
-   DWORD   dwMapFlags,  
-   LPCWSTR lpSrcStr,  
-   int     cchSrc,  
-   LPWSTR  lpDestStr,  
-   int     cchDest)  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `Locale`  
- Yerel ayar tanımlayıcısı. Yerel ayar sıralama anahtarı oluşturma ve dize eşleme için bir bağlam sağlar. Bir uygulamanın kullanabileceği `MAKELCID` bir yerel ayar tanımlayıcısı oluşturmak için.  
-  
- `dwMapFlags`  
- Dize eşlemesi veya sıralama anahtarı oluşturma sırasında kullanılacak dönüştürme türü.  
-  
- `lpSrcStr`  
- İşlev eşler veya sıralama anahtar oluşturmak için kullandığı bir kaynak dize işaretçisi. Bu parametre, bir Unicode dizesi olduğu varsayılır.  
-  
- `cchSrc`  
- Tarafından işaret edilen dizenin karakter cinsinden boyutu `lpSrcStr` parametresi. Bu sayı, null Sonlandırıcı dahil etmek veya eklemeniz gerekmez.  
-  
- A `cchSrc` -1 değerini belirtir dize tarafından gösterilen `lpSrcStr` null sonlandırılmıştır. Bu durumda ve bu işlev, dize eşleme modunda kullanılıyorsa, işlev dizenin uzunluğu kendisi hesaplar ve null-içinde depolanan eşleştirilen dizeyi sonlandıran `*lpDestStr`.  
-  
- `lpDestStr`  
- Uzun işaretçisi işlev eşlenen dize veya sıralama anahtarı depolayan arabellek.  
-  
- `cchDest`  
- İşaret ettiği arabelleğin karakter cinsinden boyutu `lpDestStr`.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Varsa değerini `cchDest` sıfır karakter veya bayt sayısı, `LCMAP_SORTKEY` belirtilen, yazılan arabellek başarılı olduğunu gösterir. Bu sayı, açmak için bir null Sonlandırıcı içerir.  
-  
- Varsa değerini `cchDest` sıfır, karakter veya bayt arabellek boyutu durumunda olduğundan `LCMAP_SORTKEY` belirtilen, çevrilmiş almak için gereken dize veya sıralama anahtarı başarı gösterir. Bu boyut, bir null Sonlandırıcı yer içerir.  
-  
- Sıfır hata gösterir. Genişletilmiş hata bilgilerini almak için arama `GetLastError` işlevi.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Varsa `cchSrc` sıfırdan büyük ve `lpSrcStr` null ile sonlandırılmış bir dize ise `__crtLCMapStringW` ayarlar `cchSrc` dize uzunluğu. Ardından `__crtLCMapStringW` geniş dize (Unicode) sürümünü çağırır `LCMapString` işlevi belirtilen parametrelere sahip. Parametreler ve bu işlevin dönüş değeri hakkında daha fazla bilgi için bkz: [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa).  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
+
+Bir karakter dizesinin başka bir belirtilen yerel ayara bağımlı dönüştürmesi gerçekleştiriliyor eşler. Bu işlev, giriş dizesi için bir sıralama anahtarı oluşturmak için de kullanılabilir.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
+int __crtLCMapStringW(
+   LCID    Locale,
+   DWORD   dwMapFlags,
+   LPCWSTR lpSrcStr,
+   int     cchSrc,
+   LPWSTR  lpDestStr,
+   int     cchDest)
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*locale*<br/>
+Yerel ayar tanımlayıcısı. Yerel ayar sıralama anahtarı oluşturma ve dize eşleme için bir bağlam sağlar. Bir uygulamanın kullanabileceği `MAKELCID` bir yerel ayar tanımlayıcısı oluşturmak için.
+
+*dwMapFlags*<br/>
+Dize eşlemesi veya sıralama anahtarı oluşturma sırasında kullanılacak dönüştürme türü.
+
+*lpSrcStr*<br/>
+İşlev eşler veya sıralama anahtar oluşturmak için kullandığı bir kaynak dize işaretçisi. Bu parametre, bir Unicode dizesi olduğu varsayılır.
+
+*cchSrc*<br/>
+Tarafından işaret edilen dizenin karakter cinsinden boyutu `lpSrcStr` parametresi. Bu sayı, null Sonlandırıcı dahil etmek veya eklemeniz gerekmez.
+
+A `cchSrc` -1 değerini belirtir dize tarafından gösterilen `lpSrcStr` null sonlandırılmıştır. Bu durumda ve bu işlev, dize eşleme modunda kullanılıyorsa, işlev dizenin uzunluğu kendisi hesaplar ve null-içinde depolanan eşleştirilen dizeyi sonlandıran `*lpDestStr`.
+
+*lpDestStr*<br/>
+Uzun işaretçisi işlev eşlenen dize veya sıralama anahtarı depolayan arabellek.
+
+*cchDest*<br/>
+İşaret ettiği arabelleğin karakter cinsinden boyutu `lpDestStr`.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Varsa değerini `cchDest` sıfır karakter veya bayt sayısı, `LCMAP_SORTKEY` belirtilen, yazılan arabellek başarılı olduğunu gösterir. Bu sayı, açmak için bir null Sonlandırıcı içerir.
+
+Varsa değerini `cchDest` sıfır, karakter veya bayt arabellek boyutu durumunda olduğundan `LCMAP_SORTKEY` belirtilen, çevrilmiş almak için gereken dize veya sıralama anahtarı başarı gösterir. Bu boyut, bir null Sonlandırıcı yer içerir.
+
+Sıfır hata gösterir. Genişletilmiş hata bilgilerini almak için arama `GetLastError` işlevi.
+
+## <a name="remarks"></a>Açıklamalar
+
+Varsa `cchSrc` sıfırdan büyük ve `lpSrcStr` null ile sonlandırılmış bir dize ise `__crtLCMapStringW` ayarlar `cchSrc` dize uzunluğu. Ardından `__crtLCMapStringW` geniş dize (Unicode) sürümünü çağırır `LCMapString` işlevi belirtilen parametrelere sahip. Parametreler ve bu işlevin dönüş değeri hakkında daha fazla bilgi için bkz: [LCMapString](/windows/desktop/api/winnls/nf-winnls-lcmapstringa).
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
 |__crtLCMapStringW|awint.h|

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e377c9692fdbed0e5d7bcae16c5b96473fa6955
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b179b56edaf6dc661d1c3c9c9a781195a2d37ee6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241987"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043293"
 ---
 # <a name="compiler-error-c2973"></a>Derleyici Hatası C2973
-Geçersiz şablon bağımsız değişken 'numara'  
-  
- Doğru türlerini bulmak için şablon tanımını denetleyin.
+
+Geçersiz şablon bağımsız değişkeni 'number'
+
+Doğru tür bulmak için şablon tanımı kontrol edin.

@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f68b3f575fcb8b909f58ac2ffbcaca26580279da
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d57ee5bf5f5152ef55852c9f9b829bc4a1d17d41
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33237098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040641"
 ---
 # <a name="compiler-error-c2801"></a>Derleyici Hatası C2801
-Statik olmayan üye 'işleci işleci' olmalıdır  
-  
- Statik olmayan üye olarak yalnızca aşağıdaki işleçleri aşırı yüklenebilir:  
-  
--   Atama `=`  
-  
--   Sınıf üye erişimi `->`  
-  
--   Alt simge oluşturma `[]`  
-  
--   İşlev çağrısı `()`  
-  
- Olası C2801 nedenler:  
-  
--   Aşırı yüklenmiş işleci bir sınıf, yapı veya bileşim üyesi değil.  
-  
--   Aşırı yüklenmiş işleci bildirilen `static`.  
-  
--   Aşağıdaki örnek C2801 oluşturur:  
-  
-```  
-// C2801.cpp  
-// compile with: /c  
-operator[]();   // C2801 not a member  
-class A {  
-   static operator->();   // C2801 static  
-   operator()();   // OK  
-};  
+
+'operator işleci' statik olmayan üye olmanız gerekir
+
+Aşağıdaki işleçleri yalnızca statik olmayan üye olarak aşırı yüklenebilir:
+
+- Atama `=`
+
+- Sınıf üyesi erişimi `->`
+
+- Subscripting `[]`
+
+- İşlev çağrısı `()`
+
+Olası C2801 neden olur:
+
+- Aşırı yüklenmiş işleç, bir sınıf, yapı veya birleşim üyesi değil.
+
+- Aşırı yüklenmiş işleç bildirilmiş `static`.
+
+- Aşağıdaki örnek, C2801 oluşturur:
+
+```
+// C2801.cpp
+// compile with: /c
+operator[]();   // C2801 not a member
+class A {
+   static operator->();   // C2801 static
+   operator()();   // OK
+};
 ```

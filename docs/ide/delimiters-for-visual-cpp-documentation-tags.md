@@ -14,25 +14,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4d22df877ab757134ee6da86a5ff22ec106f958
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: a2394516773f428ae62fb9e8e39dd78dd790bebd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39208581"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033921"
 ---
 # <a name="delimiters-for-visual-c-documentation-tags"></a>Visual C++ Belge Etiketleri için Sınırlayıcılar
 Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derleyici sınırlayıcılar gerektirir.  
   
  Aşağıdaki türde sınırlayıcıları ile XML belge etiketleri kullanabilirsiniz:  
+|||
+|-|-|
+|`///`  | Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  |
+| `/** */`  | Çok satırlı sınırlayıcı olarak bu kullanılır.  |
   
- `///`  
- Bu belge örneklerde gösterildiği ve Visual C++ proje şablonları tarafından kullanılan biçimidir.  
-  
- `/** */`  
- Çok satırlı sınırlayıcı olarak bu kullanılır.  
-  
- Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:  
+Var olan bazı biçimlendirme kurallarını kullanarak `/** */` sınırlayıcılar:  
   
 -   İçeren bir satır için `/**` ayırıcı, boşluk, satır satır geri kalanında ise açıklamalarına işlenmedi. İlk karakterin boşluk varsa bu boşluk karakteri göz ardı edilir ve satırın geri kalanını işlenir. Aksi takdirde, tüm metin satırının sonra `/**` sınırlayıcı açıklamayı bir parçası olarak işlenir.  
   
@@ -40,7 +38,7 @@ Belge etiketleri gösteren bir belge açıklaması burada başlar ve biter derle
   
 -   İle başlayan bir sonraki satırların için `/**` sınırlayıcı, derleyici, isteğe bağlı beyaz boşluk ve yıldız oluşan her satırın başında yaygın bir düzen arar (`*`) ve ardından daha fazla isteğe bağlı beyaz boşluk. Derleyici, ortak bir karakter kümesi, her satırın başında bulursa, sonra tüm satırlar için bu düzeni yoksayacak `/**` sınırlayıcı, en fazla ve büyük olasılıkla içeren satırı dahil olmak üzere `*/` sınırlayıcı.  
   
- Bazı örnekler:  
+Bazı örnekler:  
   
 -   Yalnızca işlenecek şu açıklama ile başlayan satırı parçasıdır `<summary>`. Aşağıdaki iki etiket biçimlerini aynı açıklamaları oluşturacak:  
   

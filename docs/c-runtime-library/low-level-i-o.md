@@ -20,18 +20,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34ce75fa9670f28079774f4ba564657d0b4614ac
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 9d263d1d61a6dcc6921d6918db2b89386e918551
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391288"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46018320"
 ---
 # <a name="low-level-io"></a>Düşük Düzey G/Ç
 
-Bu işlevler işletim sistemi akış g/ç tarafından sağlanan daha düşük düzeyli işlemi için doğrudan çağırma. Alt düzey giriş ve çıkış çağrı yapmak arabellek veya biçim verileri değil.
+Bu işlevler doğrudan akış g/ç tarafından sağlanan daha düşük düzeyli işlem için işletim sistemi çağırın. Alt düzey giriş ve çıkış çağrılar yapmak arabellek veya biçim verileri.
 
- Alt düzey yordamları aşağıdaki önceden tanımlanmış dosya tanımlayıcıları kullanarak programı başlangıçta açılan standart akışlarına erişebilir.
+Alt düzey yordamlar aşağıdaki önceden tanımlanmış dosya tanımlayıcıları kullanarak program başlangıcında açılmış olan bir standart akış erişebilirsiniz.
 
 |Akış|Dosya tanımlayıcısı|
 |------------|---------------------|
@@ -39,30 +39,30 @@ Bu işlevler işletim sistemi akış g/ç tarafından sağlanan daha düşük d�
 |**STDOUT**|1.|
 |**stderr**|2|
 
- Düşük düzey g/ç yordamları kümesi [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bir hata oluştuğunda genel değişkeni. STDIO eklemeniz gerekir. Yalnızca programınız STDIO içinde tanımlanan bir sabit gerektiriyorsa, alt düzey işlevleri kullandığınızda H. Dosya sonu göstergesi gibi H (**EOF**).
+Düşük düzey g/ç rutinleri kümesi [errno](../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) bir hata oluştuğunda genel değişkeni. STDIO eklemeniz gerekir. Yalnızca programınız STDIO içinde tanımlanmış bir sabit gerektiriyorsa, düşük düzeyli işlevleri kullandığınızda H. Dosya sonu göstergesi gibi H (**EOF**).
 
 ## <a name="low-level-io-functions"></a>Düşük düzey g/ç işlevleri
 
 |İşlev|Bir yönetim grubuna bağlanmak veya bağlı bir yönetim grubunun özelliklerini düzenlemek için Yönetim çalışma alanında|
 |--------------|---------|
 |[_close](../c-runtime-library/reference/close.md)|Dosyayı Kapat|
-|[_commit](../c-runtime-library/reference/commit.md)|Disk temizleme dosyasına|
-|[_creat, _wcreat](../c-runtime-library/reference/creat-wcreat.md)|Dosya Oluştur|
-|[_dup](../c-runtime-library/reference/dup-dup2.md)|Dosya için dönüş sonraki kullanılabilir dosya tanımlayıcısı verilen|
+|[_commit](../c-runtime-library/reference/commit.md)|Disk dosyası temizleme|
+|[_creat, _wcreat](../c-runtime-library/reference/creat-wcreat.md)|Dosya oluşturma|
+|[_dup](../c-runtime-library/reference/dup-dup2.md)|Sonraki kullanılabilir dosya tanımlayıcısını dönüş verilen dosya|
 |[_dup2](../c-runtime-library/reference/dup-dup2.md)|Belirtilen ikinci tanımlayıcısı oluşturun dosyası|
-|[_eof](../c-runtime-library/reference/eof.md)|Dosya sonu için test etme|
-|[_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)|Yeniden konumlandırma dosya işaretçisini konumu verilen|
-|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|dosyasını açın|
-|[_read](../c-runtime-library/reference/read.md)|Veri dosyasından okuma|
+|[_eof](../c-runtime-library/reference/eof.md)|Dosya sonu için sınama|
+|[_lseek, _lseeki64](../c-runtime-library/reference/lseek-lseeki64.md)|Yeniden konumlandırma dosya işaretçisi konumunu verilen|
+|[_open, _wopen](../c-runtime-library/reference/open-wopen.md)|Dosya Aç|
+|[_read](../c-runtime-library/reference/read.md)|Dosyasından veri okuma|
 |[_sopen, _wsopen](../c-runtime-library/reference/sopen-wsopen.md), [_sopen_s, _wsopen_s](../c-runtime-library/reference/sopen-s-wsopen-s.md)|Dosya Paylaşımı için Dosya Aç|
-|[_tell, _telli64](../c-runtime-library/reference/tell-telli64.md)|Geçerli dosya işaretçisini konumu Al|
-|[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Dosya izni maske ayarlama|
-|[_write](../c-runtime-library/reference/write.md)|Veri dosyasına yazma|
+|[_tell, _telli64](../c-runtime-library/reference/tell-telli64.md)|Geçerli dosya işaretçisi konumunu alma|
+|[_umask](../c-runtime-library/reference/umask.md), [_umask_s](../c-runtime-library/reference/umask-s.md)|Dosya izin maske ayarlama|
+|[_write](../c-runtime-library/reference/write.md)|Dosyasına veri yazma|
 
- **_dup** ve **_dup2** genellikle önceden tanımlanmış dosya tanımlayıcıları farklı dosyaları ile ilişkilendirmek için kullanılır.
+ **_dup** ve **_dup2** genellikle önceden tanımlanmış dosya tanımlayıcıları farklı dosya ile ilişkilendirmek için kullanılır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [Girdi ve Çıktı](../c-runtime-library/input-and-output.md)<br/>
- [Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
- [Sistem Çağrıları](../c-runtime-library/system-calls.md)<br/>
+[Kategoriye göre Evrensel C çalışma zamanı yordamları](../c-runtime-library/run-time-routines-by-category.md)<br/>
+[Sistem Çağrıları](../c-runtime-library/system-calls.md)<br/>

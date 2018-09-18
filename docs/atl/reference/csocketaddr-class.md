@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f0eba14e7b8a251fdc1287fc413e2c4ebcd7ae77
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2c39ca72136db7c11e925f28cc3413a5f7b77002
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766184"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040862"
 ---
 # <a name="csocketaddr-class"></a>CSocketAddr sınıfı
 
@@ -106,25 +106,25 @@ int FindAddr(
 
 ### <a name="parameters"></a>Parametreler
 
-*szHost*  
+*szHost*<br/>
 Konak adı veya IP adresi noktalı.
 
-*szPortOrServiceName*  
+*szPortOrServiceName*<br/>
 Bağlantı noktası numarası veya ana bilgisayar hizmetinin adı.
 
-*nPortNo*  
+*nPortNo*<br/>
 Bağlantı noktası numarası.
 
-*bayrakları*  
+*bayrakları*<br/>
 0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.
 
-*addr_family*  
+*addr_family*<br/>
 Adres ailesi (örneğin, PF_INET).
 
-*sock_type*  
+*sock_type*<br/>
 Yuva türü (örneğin, SOCK_STREAM).
 
-*ai_proto*  
+*ai_proto*<br/>
 Protokol (örneğin, IPPROTO_IP veya IPPROTO_IPV6).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -149,16 +149,16 @@ int FindINET4Addr(
 
 ### <a name="parameters"></a>Parametreler
 
-*szHost*  
+*szHost*<br/>
 Konak adı veya IP adresi noktalı.
 
-*nPortNo*  
+*nPortNo*<br/>
 Bağlantı noktası numarası.
 
-*bayrakları*  
+*bayrakları*<br/>
 0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.
 
-*sock_type*  
+*sock_type*<br/>
 Yuva türü (örneğin, SOCK_STREAM).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,16 +183,16 @@ int FindINET6Addr(
 
 ### <a name="parameters"></a>Parametreler
 
-*szHost*  
+*szHost*<br/>
 Konak adı veya IP adresi noktalı.
 
-*nPortNo*  
+*nPortNo*<br/>
 Bağlantı noktası numarası.
 
-*bayrakları*  
+*bayrakları*<br/>
 0 veya AI_PASSIVE, AI_CANONNAME veya AI_NUMERICHOST birleşimi.
 
-*sock_type*  
+*sock_type*<br/>
 Yuva türü (örneğin, SOCK_STREAM).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -213,7 +213,7 @@ addrinfo* const GetAddrInfoint nIndex = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Belirli bir öğeye bir başvuru [addrinfo](https://msdn.microsoft.com/library/windows/desktop/ms737530) listesi.
 
 ### <a name="return-value"></a>Dönüş Değeri

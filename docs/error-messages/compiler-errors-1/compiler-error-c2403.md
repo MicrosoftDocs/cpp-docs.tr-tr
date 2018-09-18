@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7ed937f2b6d0ca15b1c16470c239484a4996b019
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99de310b70b351730f181f332fc9ce8d68b7d45a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195626"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041889"
 ---
 # <a name="compiler-error-c2403"></a>Derleyici Hatası C2403
-'tanımlayıcısı': yazmaç temel / 'context' dizininde olması gerekir  
-  
- Dolaylı bellek işlenen kullanılan kayıt bu bağlamda bir temel veya dizin kayıt olması gerekir.
+
+'identifier': yazmaç 'context' içinde taban/dizin olmalıdır
+
+Bu bağlamda bir temel ya da dizin kaydı dolaylı bellek işleneni kullanılan kaydı olmalıdır.

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b6266ac31e2d6dec6eabc847b67b080b250837
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 533458b35e4589e04d95a4618a04a90aa1994c35
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751429"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039341"
 ---
 # <a name="cinterfacearray-class"></a>Cınterfacearray sınıfı
 
@@ -32,7 +32,7 @@ Bu sınıf, bir COM arabirimi işaretçiler dizisi oluştururken kullanışlı y
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class I, const IID* piid=& __uuidof(I)>  
+template <class I, const IID* piid=& __uuidof(I)>
 class CInterfaceArray : 
    public CAtlArray<ATL::CComQIPtr<I, piid>,
                     CComQIPtrElementTraits<I, piid>>
@@ -40,10 +40,10 @@ class CInterfaceArray :
 
 #### <a name="parameters"></a>Parametreler
 
-*I*  
+*I*<br/>
 Depolanacak işaretçi türü belirten bir COM arabirimi.
 
-*piid*  
+*piid*<br/>
 Laboratuvardaki işaretçisi *miyim*.
 
 ## <a name="members"></a>Üyeler
@@ -84,7 +84,7 @@ Akıllı işaretçi dizi başlatır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlArray sınıfı](../../atl/reference/catlarray-class.md)   
-[CComQIPtr sınıfı](../../atl/reference/ccomqiptr-class.md)   
-[Ccomqıptrelementtraits sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)   
+[CAtlArray Sınıfı](../../atl/reference/catlarray-class.md)<br/>
+[CComQIPtr Sınıfı](../../atl/reference/ccomqiptr-class.md)<br/>
+[CComQIPtrElementTraits Sınıfı](../../atl/reference/ccomqiptrelementtraits-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

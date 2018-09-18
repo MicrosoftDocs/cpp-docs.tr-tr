@@ -15,17 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a78a71ab42f466e16868ccb25f8082a27366b199
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6352723cc65ba1ed87d867fd1a9938269cc84832
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384973"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033595"
 ---
 # <a name="zero-length-files"></a>Sıfır Uzunluklu Dosyalar
-**ANSI 4.9.3** gerçekte sıfır uzunluğunda bir dosya var olup var  
-  
- Dosyaların sıfır uzunluğunda izin verilir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.3** gerçekten sıfır uzunluğunda bir dosya var olup var
+
+Sıfır uzunluğunda dosyalarına izin verilir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

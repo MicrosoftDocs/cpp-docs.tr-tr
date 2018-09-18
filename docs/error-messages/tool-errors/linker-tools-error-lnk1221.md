@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b09ce9b1b6ca1c7b873f6c87a6428a9cc6c0b2e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e6347bc4e7a14f335a006b666e03851fa8979801
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299233"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023325"
 ---
 # <a name="linker-tools-error-lnk1221"></a>Bağlayıcı Araçları Hatası LNK1221
-bir alt sistemi çıkarsanamıyor ve tanımlanmış olması gerekir  
-  
- Bağlayıcı hedeflemek istediğiniz hangi alt sistemi anlamak için yeterli bilgi yok.  
-  
- Bu hatayı düzeltmek için kullanmak [/SUBSYSTEM](../../build/reference/subsystem-specify-subsystem.md).
+
+bir alt sistem çıkarılamıyor ve tanımlanması gerekir
+
+Bağlayıcı hedeflemek istediğiniz alt sistemini çıkarsamak için yeterli bilgi yok.
+
+Bu hatayı düzeltmek için kullanmak [/Subsystem](../../build/reference/subsystem-specify-subsystem.md).

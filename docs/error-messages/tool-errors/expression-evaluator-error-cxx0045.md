@@ -17,24 +17,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ac52b16c2c8551282b79ef6a7fda40e24acc6bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4d9913bc77dfc3fbc95bd03fd32c954c4d304d27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299740"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46023208"
 ---
 # <a name="expression-evaluator-error-cxx0045"></a>İfade Değerlendirici Hatası CXX0045
-bir işlev değil  
-  
- Bir bağımsız değişken listesi bir işlevin adını değil program dosyasındaki bir simge için sağlandı.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-queue( alpha, beta )  
-```  
-  
- zaman `queue` bir işlev değil.  
-  
- Bu hata için CAN0045 aynıdır.
+
+bir işlev değil
+
+Bir işlevin adını değil programda bir sembol için bir bağımsız değişken listesi sağlandı.
+
+## <a name="example"></a>Örnek
+
+```
+queue( alpha, beta )
+```
+
+zaman `queue` bir işlev değil.
+
+Bu hata için CAN0045 aynıdır.

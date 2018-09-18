@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c5f91bbdc60ab1901c4afe4d5bea9f3258692ba
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ca6715e26705632dc3187cb6db7deed8636cd82
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296620"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033153"
 ---
 # <a name="compiler-warning-level-3-c4723"></a>Derleyici Uyarısı (Düzey 3) C4723
-olası sıfıra bölünme 0  
-  
- Tanımsız sonuçları vermiş sıfır derleme zamanında hesaplanan bir bölme işlemi ikinci işlenen.  
-  
- Bu uyarı yalnızca kullanırken görüntülenir [/Og](../../build/reference/og-global-optimizations.md) veya /Og gelir bir en iyi duruma getirme seçeneği.  
-  
- Derleyici sıfır işleneni oluşturulmuş.
+
+olası 0 ile bölme
+
+İkinci işlenen bir bölme işleminde tanımsız sonuçlar vererek sıfır derleme zamanında değerlendirilir.
+
+Bu uyarı yalnızca kullanırken verilir [/Og](../../build/reference/og-global-optimizations.md) veya /Og gelir bir iyileştirme seçeneği.
+
+Derleyici sıfır işlenen oluşturmuş olabilir.

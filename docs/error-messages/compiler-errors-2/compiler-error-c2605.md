@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 52653aa1d8aea68d455617870792ecb9bfcae930
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3689e7f0784c847d260c2e97c502b57db99a8918
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236203"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044333"
 ---
 # <a name="compiler-error-c2605"></a>Derleyici Hatası C2605
-'name': Bu yöntem, yönetilen veya WinRT içinde ayrılmış sınıfı  
-  
- Derleyici iç işlevler için tarafından belirli adları ayrılmıştır.  Daha fazla bilgi için bkz: [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2605 oluşturur.  
-  
-```  
-// C2605.cpp  
-// compile with: /clr /c  
-ref class R {  
-protected:  
-   void Finalize() {}   // C2605  
-};  
+
+'name': Bu yöntem, yönetilen veya WinRT içinde ayrılmış sınıfı
+
+İç işlevler için derleyici tarafından belirli adları ayrılmıştır.  Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2605 oluşturur.
+
+```
+// C2605.cpp
+// compile with: /clr /c
+ref class R {
+protected:
+   void Finalize() {}   // C2605
+};
 ```

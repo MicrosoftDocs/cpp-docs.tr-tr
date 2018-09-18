@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 288757f93e0cf7c478fae739f106482b5ba8a016
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 37e0810fa31e66b62553825892b53374b22e4263
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167313"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038649"
 ---
 # <a name="compiler-error-c2156"></a>Derleyici Hatası C2156
-pragma dış işlev olmalıdır  
-  
- (Dışında bir işlev gövdesi) genel düzeyde belirtilmelidir pragma içinde bir işlevdir.  
-  
- Aşağıdaki örnek C2156 oluşturur:  
-  
-```  
-// C2156.cpp  
-#pragma optimize( "l", on )   // OK  
-int main() {  
-   #pragma optimize( "l", on )   // C2156  
-}  
+
+pragma işlevin dışında olmalıdır
+
+(Bir işlev gövdesinin dışında) bir genel düzeyde belirtilmelidir bir pragma, içinde bir işlevdir.
+
+Aşağıdaki örnek, C2156 oluşturur:
+
+```
+// C2156.cpp
+#pragma optimize( "l", on )   // OK
+int main() {
+   #pragma optimize( "l", on )   // C2156
+}
 ```

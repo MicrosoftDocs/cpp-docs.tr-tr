@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c964701f9a26c655bbb9529a112f036c7c9f0bf5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 54911e3e9c696cd2a390dc2f5b42e3917b08014f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33685755"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037482"
 ---
 # <a name="contextunblockunbalanced-class"></a>context_unblock_unbalanced Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne değil düzgün eşlenmemiş.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne değil düzgün halindedir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class context_unblock_unbalanced : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[context_unblock_unbalanced](#ctor)|Fazla Yüklendi. Oluşturan bir `context_unblock_unbalanced` nesnesi.|  
+|[context_unblock_unbalanced](#ctor)|Fazla Yüklendi. Oluşturur bir `context_unblock_unbalanced` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne her zaman doğru eşleştirilmelidir. Eşzamanlılık Çalışma zamanı ya da sırada olmasını işlemlere izin verir. Örneğin, bir çağrı `Block` için yapılan bir çağrı tarafından izlenen `Unblock`, ya da tam tersini. Örneğin, iki için çağrılar içeriyorsa, bu özel durum `Unblock` yöntemi, üzerinde bir satırda yapıldı bir `Context` değil engellenmiş olan bir nesne.  
+ Çağrılar `Block` ve `Unblock` yöntemlerinin bir `Context` nesne her zaman doğru eşleştirilmelidir. Eşzamanlılık Çalışma zamanı içinde herhangi bir sırada yapılması işlemlere izin verir. Örneğin, bir çağrı `Block` bir çağrı tarafından izlenebilir `Unblock`, veya tam tersi. Örneğin, iki çağrılar, bu özel durum `Unblock` üzerinde bir satır, metodu yapıldı bir `Context` değil engellendi nesnesidir.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class context_unblock_unbalanced : public std::exception;
   
 ##  <a name="ctor"></a> context_unblock_unbalanced 
 
- Oluşturan bir `context_unblock_unbalanced` nesnesi.  
+ Oluşturur bir `context_unblock_unbalanced` nesne.  
   
 ```  
 explicit _CRTIMP context_unblock_unbalanced(_In_z_ const char* _Message) throw();
@@ -67,8 +67,8 @@ context_unblock_unbalanced() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

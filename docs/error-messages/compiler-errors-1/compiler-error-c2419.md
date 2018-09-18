@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a456a4844c596a7cacad6ca85af8923d23d480f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6fa3e6c562fe526df506a0f3aaf6944850f303b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223740"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041343"
 ---
 # <a name="compiler-error-c2419"></a>Derleyici Hatası C2419
-mod sıfır içinde 'context' tarafından  
-  
- Parametre sağındaki `MOD` işleci sıfırsa bu bağlamda.
+
+sıfır içinde 'context' ile mod
+
+Sağ parametre `MOD` işleci, bu bağlamda sıfır.

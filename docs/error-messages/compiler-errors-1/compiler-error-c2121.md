@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0fa7015880eee512cfdcaf6284c79b9c5965bb40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e40451a70744b7918301cd6dfa837df1295cea8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166136"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042409"
 ---
 # <a name="compiler-error-c2121"></a>Derleyici Hatası C2121
-'#': geçersiz karakter: büyük olasılıkla makrosu genişletme sonucu  
-  
- Geçersiz # karakteri belirteç yapıştıran işleç (#) yerine stringizing işlecini kullanan bir yanlış makrosu tarafından eklenmiş olabilir (#).
+
+'#': geçersiz karakter: olasılıkla bir makro genişletmesinin sonucu
+
+Geçersiz # karakter yerine dize haline getirme işleci belirteç yapıştıran işleç (##) kullanan yanlış bir makro tarafından eklenmiş olabilir (#).

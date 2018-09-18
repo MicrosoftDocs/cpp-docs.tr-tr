@@ -16,28 +16,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5d5a4598a83c448a36750dc1aac6b4a22ef3513f
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 6ac5fb523e1b1340d031cd5256995568b9b9e2a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45704359"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46034131"
 ---
 # <a name="switch-statement-c"></a>switch Deyimi (C)
-`switch` Ve **çalışması** deyimleri Yardım denetimi karmaşık koşullu ya da dal oluşturma işlemleri. `switch` Deyimi denetimi kendi gövdesi içindeki bir ifade aktarır.  
-  
+
+`switch` Ve **çalışması** deyimleri Yardım denetimi karmaşık koşullu ya da dal oluşturma işlemleri. `switch` Deyimi denetimi kendi gövdesi içindeki bir ifade aktarır.
+
 ## <a name="syntax"></a>Sözdizimi
 
 *Seçimi deyimi*:<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*  
-  
+&nbsp;&nbsp;&nbsp;&nbsp;**geçiş (** *ifade* **)** *deyimi*
+
 *Etiketli deyim*:<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;**Servis talebi***sabit-ifade***:***deyimi*<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi*  
-  
-Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşleşen **geçiş (** *ifade* **)**. `switch` Deyimi herhangi bir sayıda içerebilir **çalışması** örnekleri, ancak hiçbir iki büyük/küçük harf sabitleri aynı `switch` deyimi aynı değere sahip olabilir. Deyim gövdesinin yürütülmesini seçili ifadede başlar ve gövde veya kadar sonuna kadar devam eder. bir **sonu** denetimi gövdenin dışında deyime aktarır.  
-  
-Kullanım `switch` deyimi genellikle görünür aşağıdakine benzer:  
+&nbsp;&nbsp;&nbsp;&nbsp;**Varsayılan:***deyimi*
+
+Denetim özelliği deyime geçer **çalışması** *sabit-ifade* değeriyle eşleşen **geçiş (** *ifade* **)**. `switch` Deyimi herhangi bir sayıda içerebilir **çalışması** örnekleri, ancak hiçbir iki büyük/küçük harf sabitleri aynı `switch` deyimi aynı değere sahip olabilir. Deyim gövdesinin yürütülmesini seçili ifadede başlar ve gövde veya kadar sonuna kadar devam eder. bir **sonu** denetimi gövdenin dışında deyime aktarır.
+
+Kullanım `switch` deyimi genellikle görünür aşağıdakine benzer:
 
 ```C
 switch ( expression )
@@ -96,29 +97,29 @@ switch( i )
 }
 ```
 
-Bu örnekte, bir **sonu** deyimi takip eden her deyiminin `switch` gövdesi. **Sonu** deyimi bir deyim yürütüldükten sonra gelen deyim gövdesi bir çıkış zorlar. Varsa `i` -1 olarak, yalnızca eşittir `n` artırılır. **Sonu** deyiminin sonrasındaki `n++;` yürütme denetimi, deyim gövdesi dışında kalan deyimleri atlayarak geçmesine neden olur. Benzer şekilde, varsa `i` 0 olarak, yalnızca eşittir `z` ; artırılır `i` 1, yalnızca eşittir `p` artırılır. En son **sonu** deyimi kesinlikle gerekli olmadığı, dışı denetim geçer beri bileşik deyim, ancak daha uçtaki gövdesi tutarlılık sağlamak için dahil edilmiştir.  
-  
-Tek bir deyimde birden çok gerçekleştirebilirsiniz **çalışması** etiketleri, aşağıdaki örnekte gösterildiği gibi:  
-  
+Bu örnekte, bir **sonu** deyimi takip eden her deyiminin `switch` gövdesi. **Sonu** deyimi bir deyim yürütüldükten sonra gelen deyim gövdesi bir çıkış zorlar. Varsa `i` -1 olarak, yalnızca eşittir `n` artırılır. **Sonu** deyiminin sonrasındaki `n++;` yürütme denetimi, deyim gövdesi dışında kalan deyimleri atlayarak geçmesine neden olur. Benzer şekilde, varsa `i` 0 olarak, yalnızca eşittir `z` ; artırılır `i` 1, yalnızca eşittir `p` artırılır. En son **sonu** deyimi kesinlikle gerekli olmadığı, dışı denetim geçer beri bileşik deyim, ancak daha uçtaki gövdesi tutarlılık sağlamak için dahil edilmiştir.
+
+Tek bir deyimde birden çok gerçekleştirebilirsiniz **çalışması** etiketleri, aşağıdaki örnekte gösterildiği gibi:
+
 ```C
-case 'a' :  
-case 'b' :  
-case 'c' :  
-case 'd' :  
-case 'e' :  
-case 'f' :  hexcvt(c);  
-```  
-  
-Bu örnekte, *sabit-ifade* arasında herhangi bir harf eşittir `'a'` ve `'f'`, `hexcvt` işlevi çağrılır.  
-  
-**Microsoft'a özgü**  
-  
-Microsoft C, durum değeri sayısını sınırlamaz bir `switch` deyimi. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin bir `switch` deyimi.  
-  
-Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneğini kullanın.  
-  
-**END Microsoft özgü**  
-  
+case 'a' :
+case 'b' :
+case 'c' :
+case 'd' :
+case 'e' :
+case 'f' :  hexcvt(c);
+```
+
+Bu örnekte, *sabit-ifade* arasında herhangi bir harf eşittir `'a'` ve `'f'`, `hexcvt` işlevi çağrılır.
+
+**Microsoft'a özgü**
+
+Microsoft C, durum değeri sayısını sınırlamaz bir `switch` deyimi. Sayı yalnızca kullanılabilir bellekle sınırlıdır. ANSI C gerektiren en az 257 durum etiketi içinde izin bir `switch` deyimi.
+
+Microsoft C için varsayılan Microsoft genişletmelerinin etkinleştirilmiş olduğu. Bu uzantıları devre dışı bırakmak için /Za derleyici seçeneğini kullanın.
+
+**END Microsoft özgü**
+
 ## <a name="see-also"></a>Ayrıca Bkz.
 
 [switch Deyimi (C++)](../cpp/switch-statement-cpp.md)

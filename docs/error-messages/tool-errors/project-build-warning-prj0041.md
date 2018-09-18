@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e845967b0a7116d6edade98b571de5bc1bcd9a1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7677c5718783065f64e52f98f7ddbed76e905d2a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318067"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038145"
 ---
 # <a name="project-build-warning-prj0041"></a>Proje Derleme Uyarısı PRJ0041
-Eksik bulunamıyor bağımlılık 'dosya' dosya ' bağımlılığı'. Projenizi hala yapı, ancak bu dosya bulunana kadar güncel görüntülenmeye devam edebilir.  
-  
- Bir dosya (kaynak veya.idl/.odl dosyası, örneğin, dosyaladığınız proje sistemi çözümlenemedi bir INCLUDE deyimi.  
-  
- Proje sistemi önişlemci deyimleri (örneğin, #if) işlemez olduğundan, soruna neden olan deyim derleme parçası gerçekte olmayabilir.  
-  
- Bu uyarıyı çözmek için tüm gereksiz kodda .rc dosyaları silin veya uygun bir ad yer tutucu dosyaları ekleyin.
+
+Eksik bulunamıyor bağımlılık 'dosya' dosyası için ' bağımlılığı'. Projeniz derlenmeye devam edebilir, ancak bu dosya bulunana kadar proje güncel sayılmayabilir devam edebilir.
+
+Bir dosya (kaynak dosya veya.idl/.odl dosyası gibi yer alan, proje sistemi değil çözümlenemiyor INCLUDE deyimi.
+
+Proje sistemi önişlemci deyimleri (örneğin, #if) işlemez olduğundan, soruna neden olan deyim aslında yapının bir parçası olmayabilir.
+
+Bu uyarıyı çözmek için tüm gereksiz kodda .rc dosyaları silin veya uygun bir ad yer tutucusu dosyaları ekleyin.

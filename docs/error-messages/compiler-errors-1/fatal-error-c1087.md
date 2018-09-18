@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7d15a90bf1a17bb07c06c2bcfc74a12368ffcdbc
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5cd86b4634808d74e8aa094884d16dcc2e2cecab
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225371"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043410"
 ---
 # <a name="fatal-error-c1087"></a>Önemli hata C1087
-Dosya türünü dosya bildiremez: 'dosya': ileti  
-  
- Derleyici bir g/ç işlemi tamamlanamıyor.
+
+FileType dosyasına Bildirilemiyor: 'file': ileti
+
+Derleyici, bir g/ç işlemi tamamlanamıyor.

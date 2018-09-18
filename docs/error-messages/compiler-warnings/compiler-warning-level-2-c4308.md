@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3daff15f8e6eee179f04fd466f3595af1154e035
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ddb57d4d603be3182be8a77dc020ce0e0a673115
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290016"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039640"
 ---
 # <a name="compiler-warning-level-2-c4308"></a>Derleyici Uyarısı (Düzey 2) C4308
-İmzasız türe dönüştürülüp negatif tamsayı sabiti  
-  
- Bir ifadenin negatif tamsayı sabiti bir imzasız türüne dönüştürür. İfade büyük olasılıkla anlamsız sonucudur.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4308.cpp  
-// compile with: /W2  
-unsigned int u = (-5 + 3U);   // C4308  
-  
-int main()  
-{  
-}  
+
+Negatif tamsayı sabiti işaretsiz türe dönüştürüldü
+
+Bir ifade bir negatif tamsayı sabiti işaretsiz bir türe dönüştürür. İfadenin sonucu, büyük olasılıkla anlamsız olduğu.
+
+## <a name="example"></a>Örnek
+
+```
+// C4308.cpp
+// compile with: /W2
+unsigned int u = (-5 + 3U);   // C4308
+
+int main()
+{
+}
 ```

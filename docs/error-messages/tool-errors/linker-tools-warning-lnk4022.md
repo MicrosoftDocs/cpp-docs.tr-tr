@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cffb9c4c67bc3003b8dcdda0ad3a2e8d55abe932
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 644e7a9ba26dab15e2bfa2a269f62c04f0510180
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300377"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041005"
 ---
 # <a name="linker-tools-warning-lnk4022"></a>Bağlayıcı Araçları Uyarısı LNK4022
-Sembol 'simgesi' için benzersiz bir eşleşme bulunamadı.  
-  
- BAĞLANTI veya birden çok bulunan LIB için belirtilen ve simge ile eşleşen ve belirsizliği çözümlenemedi. Herhangi bir çıktı dosyası (.exe, .dll, .exp veya .lib) oluşturulur. Bu uyarı bir uyarı tarafından izlenir [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) her biri için yinelenen simgesi ve son olarak tarafından önemli hatası sonrasında [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md).  
-  
- Bu uyarı önlemek için simgeyi düzenlenmiş biçiminde belirtin. Çalıştırma [DUMPBIN](../../build/reference/dumpbin-options.md) görmek için bir nesne üzerinde adlar.
+
+'symbol' sembolü için benzersiz eşleşme bulunamıyor
+
+BAĞLANTI veya birden çok bulunan LIB için belirli tamamlanmamış sembol eşleşir ve belirsizlik çözümlenemedi. Çıkış dosyası (.exe, .dll, .exp veya .lib) oluşturulur. Bu uyarı, bir uyarı tarafından izlenen [LNK4002](../../error-messages/tool-errors/linker-tools-warning-lnk4002.md) her biri için yinelenen sembol ve son olarak önemli bir hata tarafından izlenir [LNK1152](../../error-messages/tool-errors/linker-tools-error-lnk1152.md).
+
+Bu uyarıyı engellemek için düzenlenmiş hâli içinde Sembol belirtin. Çalıştırma [DUMPBIN](../../build/reference/dumpbin-options.md) görmek için bir nesnede düzenlenmiş adları.

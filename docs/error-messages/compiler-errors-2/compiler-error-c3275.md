@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 48a9ed116e833c0302120fff52b57e08ca85afbb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad39cf081996f583367a8e5c2cf74bbefba35478
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263294"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042058"
 ---
 # <a name="compiler-error-c3275"></a>Derleyici Hatası C3275
-'enum member': Bu simgeyi niteleyicisi olmadan kullanamazsınız  
-  
-Yönetilen kod kullanırken ve iki veya daha fazla numaralandırma aynı ada sahip bir tanımlayıcı içerdiğinde tanımlayıcı başvurular açıkça nitelemeniz gerekir.  
-  
-C3275 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'sabit listesi üyesi': Bu simge niteleyici olmadan kullanılamaz
+
+Yönetilen kod kullanarak zaman ve iki veya daha fazla numaralandırma aynı ada sahip bir tanımlayıcı içerdiğinde, tanımlayıcı başvurularını açıkça nitelemeniz gerekir.
+
+C3275 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

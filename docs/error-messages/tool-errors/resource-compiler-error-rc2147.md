@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 434e61f701bf74ad77b5a8a210ebf1002bb95e6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1f3ca510dfd61e92a33f599c7ef261e03b8ad2cb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33329926"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032858"
 ---
 # <a name="resource-compiler-error-rc2147"></a>Kaynak Derleyicisi Hatası RC2147
-Alt dili kimliği sayı değil  
-  
- Alt dili kimliği değeri bir sayı olmalıdır.  
-  
- **Dil** deyimi aşağıdaki sözdizimini kullanın:  
-  
- **Dil** *primary_language_ID*,*secondary_language_ID*  
-  
- Geçerli alt dili kimlikleri olarak tanımlanan **SUBLANG_** sabitleri WINNT.h dosyasında.
+
+Alt dili kimliği bir sayı değil
+
+Alt dili kimliği değeri bir sayı olmalıdır.
+
+**Dil** deyimi aşağıdaki sözdizimini kullanın:
+
+**Dil** *primary_language_ID*,*secondary_language_ID*
+
+Geçerli bir alt dili kimlikleri olarak tanımlanan **SUBLANG_** WINNT.h dosyasındaki sabitler.

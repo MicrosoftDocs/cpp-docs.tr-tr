@@ -16,47 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 40a94d2aed0b455fda646214f4488c53045b7f6f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 41d21f2be76e67c58599e214df764316dc845e59
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296695"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044632"
 ---
 # <a name="compiler-warning-level-2-c4146"></a>Derleyici Uyarısı (Düzey 2) C4146
-birli işleç sonucu hala imzasız imzasız türüne uygulanacağını eksi  
-  
- Tekli eksi (değilleme) genellikle bir imzasız türüne uygulandığında anlamsız şekilde imzasız türler yalnızca negatif olmayan değerleri içerebilir. Negatif olmayan işleneni ve sonucu.  
-  
- Pratikte, programcı -2147483648 olan en küçük tamsayı değeri express çalışırken bu oluşur. Bu değer ifadesi iki aşamada işlendiğinden -2147483648 yazılamıyor:  
-  
-1.  Sayı 2147483648 değerlendirilir. 2147483647 en büyük tamsayı değerinden büyük olduğu için 2147483648 türünde değil [int](../../c-language/integer-types.md), ancak `unsigned int`.  
-  
-2.  Tekli eksi 2147483648 olmasını da yapılır imzasız bir sonuç değeri uygulanır.  
-  
- Sonuç imzasız türü beklenmeyen davranışlara neden olabilir. Sonuç bir karşılaştırma kullanılan sonra diğer işleneni olduğunda imzasız karşılaştırma, örneğin, kullanılabilir bir `int`. Bu, aşağıdaki örnek program tek bir satır neden yazdırır açıklanmaktadır.  
-  
- Beklenen ikinci satırın `1 is greater than the most negative int`, çünkü yazdırılan değil `((unsigned int)1) > 2147483648` false olur.  
-  
- Türüne sahip lımıts.h ınt_mın kullanarak C4146 önleyebilirsiniz **imzalı int**.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4146 oluşturur:  
-  
-```  
-// C4146.cpp  
-// compile with: /W2  
-#include <stdio.h>  
-  
-void check(int i)   
-{  
-    if (i > -2147483648)   // C4146  
-        printf_s("%d is greater than the most negative int\n", i);  
-}  
-  
-int main()   
-{  
-    check(-100);  
-    check(1);  
-}  
+
+birli eksi işleci, sonuç hala işaretsiz işaretsiz türe uygulandı
+
+Birli eksi (olumsuzlama) genellikle bir işaretsiz türe başvurulduğunda mantıklı şekilde imzasız türler yalnızca negatif olmayan değerleri tutabilir. Negatif olmayan hem işlenen hem de sonucu.
+
+Pratikte, programcı -2147483648 en küçük tamsayı değeri express çalışırken bu oluşur. İfade iki aşamada işlendiğinden, bu değer -2147483648 yazılamıyor:
+
+1. Sayı 2147483648 değerlendirilir. 2147483647 en büyük tamsayı değerinden daha büyük olduğundan, 2147483648 türünde değil [int](../../c-language/integer-types.md), ancak `unsigned int`.
+
+1. Tek İşlenenli eksi işareti ile de 2147483648 özelleştirmede işaretsiz bir sonuç değeri uygulanır.
+
+İşaretsiz bir sonuç türü beklenmeyen davranışlara neden olabilir. Sonucu bir Karşılaştırmada kullanılan sonra diğer işlenen olduğunda işaretsiz bir karşılaştırma, örneğin, kullanılabilir bir `int`. Bu, aşağıdaki örnek program tek bir satır neden yazdırır açıklanmaktadır.
+
+Beklenen ikinci satırın `1 is greater than the most negative int`, çünkü yazdırılmaz `((unsigned int)1) > 2147483648` false'tur.
+
+Int_mın türünde lımıts.h kullanarak C4146 kaçınabilirsiniz **signed int**.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4146 oluşturur:
+
+```
+// C4146.cpp
+// compile with: /W2
+#include <stdio.h>
+
+void check(int i)
+{
+    if (i > -2147483648)   // C4146
+        printf_s("%d is greater than the most negative int\n", i);
+}
+
+int main()
+{
+    check(-100);
+    check(1);
+}
 ```

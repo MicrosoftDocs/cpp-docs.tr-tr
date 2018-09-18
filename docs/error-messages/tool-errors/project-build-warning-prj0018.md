@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 914f05b6e2bb3dfb8932b306fb7c84b9a31466c7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e232ed90af6002a58356827421b2d49e68ba14a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317043"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033218"
 ---
 # <a name="project-build-warning-prj0018"></a>Proje Derleme Uyarısı PRJ0018
-Aşağıdaki ortam değişkenleri bulunamadı:  
-  
- Bir ortam değişkeni tanımlı değil. Bu hata tanımlanmamış ortam değişkenlerini listeler.  
-  
- Bkz: [özel yapı komutları için makrolar](../../ide/common-macros-for-build-commands-and-properties.md) derleme sürecindeki makroları hakkında bilgi için.
+
+Aşağıdaki ortam değişkenleri bulunamadı:
+
+Bir ortam değişkeni tanımlanmadı. Bu hata değil tanımlanan ortam değişkenleri listeler.
+
+Bkz: [özel derleme komutları için makrolar](../../ide/common-macros-for-build-commands-and-properties.md) yapı işleminde makrolar hakkında bilgi için.

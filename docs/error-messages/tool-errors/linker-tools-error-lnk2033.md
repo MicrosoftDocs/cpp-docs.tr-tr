@@ -16,36 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d03e8d2e0502d6e3664bff05c75fffb4f4ebd5da
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6c547b4d35e2e7fe057cdd67f0dad47f58d000c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301976"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040004"
 ---
 # <a name="linker-tools-error-lnk2033"></a>Bağlayıcı Araçları Hatası LNK2033
-'type' için çözümlenmemiş typeref belirteci (belirteç)  
-  
- Bir tür tanımı MSIL meta verilerde yok.  
-  
- LNK2033 ile derleme yapılırken oluşabilir **/CLR: safe** ve burada türü başvurulmaktadır MSIL modülünde bir MSIL modülü türü için yalnızca ileriye dönük bildirimi olduğu.  
-  
- Tür altında tanımlanması gerekiyor **/CLR: safe**.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek LNK2033 oluşturur.  
-  
-```  
-// LNK2033.cpp  
-// compile with: /clr:safe  
-// LNK2033 expected  
-ref class A;  
-ref class B {};  
-  
-int main() {  
-   A ^ aa = nullptr;  
-   B ^ bb = nullptr;   // OK  
-};  
+
+'type' için typeref belirteci (belirteç)
+
+Bir tür tanımı MSIL meta verilerde yok.
+
+İle derlerken LNK2033 oluşabilir **/CLR: safe** ve burada yalnızca ileri dönük bildiriminin bir türü burada türü başvuruluyor MSIL modülünde bir MSIL modülü için.
+
+Türü altında tanımlanmış olması gereken **/CLR: safe**.
+
+Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, LNK2033 oluşturur.
+
+```
+// LNK2033.cpp
+// compile with: /clr:safe
+// LNK2033 expected
+ref class A;
+ref class B {};
+
+int main() {
+   A ^ aa = nullptr;
+   B ^ bb = nullptr;   // OK
+};
 ```

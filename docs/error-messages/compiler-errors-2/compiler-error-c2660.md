@@ -16,161 +16,168 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9868dc7e5702b901b4e08593624d06f879e4a710
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 389e56c778a626572d0254324791af17a3108622
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235966"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042471"
 ---
 # <a name="compiler-error-c2660"></a>Derleyici Hatası C2660
-'function': işlevi sayı parametreleri olmaz  
-  
- İşlev yanlış sayıda parametre ile çağrılır.  
-  
- C2660 yanlışlıkla aynı ada sahip bir MFC üye işlevi yerine bir Windows API işlev çağrısı ortaya çıkabilir. Bu sorunu çözmek için:  
-  
--   Üye işlev çağrısı biçimine uygun olması için işlev çağrısı ayarlayın.  
-  
--   Kapsam çözümü işleci kullanın (`::`) genel ad alanı işlev adı arama derleyici bildirmek için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2660 oluşturur.  
-  
-```  
-// C2660.cpp  
-void func( int, int ) {}  
-  
-int main() {  
-   func( 1 );   // C2660 func( int ) not declared  
-   func( 1, 0 );   // OK  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Doğrudan yönetilen tür Dispose yöntemini çağırmayı denerseniz C2660 da oluşabilir. Daha fazla bilgi için bkz: [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). Aşağıdaki örnek C2660 oluşturur.  
-  
-```  
-// C2660_a.cpp  
-// compile with: /clr  
-using namespace System;  
-using namespace System::Threading;  
-  
-void CheckStatus( Object^ stateInfo ) {}  
-  
-int main() {  
-   ManualResetEvent^ event = gcnew ManualResetEvent( false );     
-   TimerCallback^ timerDelegate = gcnew TimerCallback( &CheckStatus );  
-   Timer^ stateTimer = gcnew Timer( timerDelegate, event, 1000, 250 );  
-  
-   stateTimer->Dispose();   // C2660  
-   stateTimer->~Timer();   // OK  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Bir işlev türetilmiş bir sınıf gizler C2660 meydana gelir.  
-  
-```  
-// C2660b.cpp  
-// C2660 expected  
-#include <stdio.h>  
-  
-class f {  
-public:  
-   void bar() {  
-      printf_s("in f::bar\n");  
-    }  
-};  
-  
-class f2 : public f {  
-public:  
-   void bar(int i){printf("in f2::bar\n");}  
-   // Uncomment the following line to resolve.  
-   // using f::bar;   // - using declaration added  
-   // or  
-   // void bar(){__super::bar();}  
-};  
-  
-int main() {  
-   f2 fObject;  
-   fObject.bar();  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- C2660 dizinli bir özelliği yanlış çağırma ortaya çıkabilir.  
-  
-```  
-// C2660c.cpp  
-// compile with: /clr  
-ref class X {  
-   double d;  
-public:  
-   X() : d(1.9) {}  
-   property double MyProp[] {  
-      double get(int i) {  
-         return d;  
-      }  
-   }   // end MyProp definition  
-};  
-  
-int main() {  
-   X ^ MyX = gcnew X();  
-   System::Console::WriteLine(MyX->MyProp(1));   // C2660  
-   System::Console::WriteLine(MyX->MyProp[1]);   // OK  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- C2660 dizinli bir özelliği yanlış çağırma ortaya çıkabilir.  
-  
-```  
-// C2660d.cpp  
-// compile with: /clr  
-ref class A{  
-public:  
-   property int default[int,int] {  
-      int get(int a, int b) {  
-         return a + b;  
-      }  
-   }  
-};  
-  
-int main() {  
-   A^ a = gcnew A;  
-   int x = a[3][5];   // C2660  
-   int x2 = a[3,5];   // OK  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- C2660 bir şablon sınıfı içinde yeni bir işleç tanımlarsanız, ancak yeni işleç türü kendilerini kapsayan türle dışında olan bir nesne oluşturur burada oluşabilir.  
-  
-```  
-// C2660e.cpp  
-// compile with: /c  
-#include <malloc.h>  
-  
-template <class T> class CA {  
-private:  
-    static T** line;  
-   void* operator new (size_t, int i) {   
-      return 0;  
-   }  
-   void operator delete(void* pMem, int i) {  
-      free(pMem);  
-   }  
-  
-public:  
-   CA () { new (1) T(); }   // C2660  
-   // try the following line instead  
-   // CA () { new (1) CA<int>(); }  
-};  
-  
-typedef CA <int> int_CA;  
-  
-void AAA() {  
-   int_CA  list;  
-}  
+
+'function': işlev numarası parametreler almaz
+
+İşlev, yanlış sayıda parametre ile çağrılır.
+
+Aynı ada sahip bir MFC üye işlevi yerine Windows API işlevi yanlışlıkla çağırırsanız C2660 ortaya çıkabilir. Bu sorunu çözmek için:
+
+- Üye işlev çağrısı biçimine uygun olması için işlev çağrısı yapın.
+
+- Kapsam çözümleme işlecini kullanın (`::`) işlev adı genel ad alanında aranacak derleyici söylemek için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2660 oluşturur.
+
+```
+// C2660.cpp
+void func( int, int ) {}
+
+int main() {
+   func( 1 );   // C2660 func( int ) not declared
+   func( 1, 0 );   // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+Yönetilen bir tür olan Dispose yöntemini doğrudan çağırmak çalışırsanız C2660 da meydana gelebilir. Daha fazla bilgi için [yok ediciler ve sonlandırıcılar](../../dotnet/how-to-define-and-consume-classes-and-structs-cpp-cli.md#BKMK_Destructors_and_finalizers). Aşağıdaki örnek, C2660 oluşturur.
+
+```
+// C2660_a.cpp
+// compile with: /clr
+using namespace System;
+using namespace System::Threading;
+
+void CheckStatus( Object^ stateInfo ) {}
+
+int main() {
+   ManualResetEvent^ event = gcnew ManualResetEvent( false );
+   TimerCallback^ timerDelegate = gcnew TimerCallback( &CheckStatus );
+   Timer^ stateTimer = gcnew Timer( timerDelegate, event, 1000, 250 );
+
+   stateTimer->Dispose();   // C2660
+   stateTimer->~Timer();   // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+Türetilmiş bir sınıf bir işlev gizliyor C2660 meydana gelir.
+
+```
+// C2660b.cpp
+// C2660 expected
+#include <stdio.h>
+
+class f {
+public:
+   void bar() {
+      printf_s("in f::bar\n");
+    }
+};
+
+class f2 : public f {
+public:
+   void bar(int i){printf("in f2::bar\n");}
+   // Uncomment the following line to resolve.
+   // using f::bar;   // - using declaration added
+   // or
+   // void bar(){__super::bar();}
+};
+
+int main() {
+   f2 fObject;
+   fObject.bar();
+}
+```
+
+## <a name="example"></a>Örnek
+
+Dizini oluşturulmuş özelliğe yanlış çağırma C2660 oluşabilir.
+
+```
+// C2660c.cpp
+// compile with: /clr
+ref class X {
+   double d;
+public:
+   X() : d(1.9) {}
+   property double MyProp[] {
+      double get(int i) {
+         return d;
+      }
+   }   // end MyProp definition
+};
+
+int main() {
+   X ^ MyX = gcnew X();
+   System::Console::WriteLine(MyX->MyProp(1));   // C2660
+   System::Console::WriteLine(MyX->MyProp[1]);   // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+Dizini oluşturulmuş özelliğe yanlış çağırma C2660 oluşabilir.
+
+```
+// C2660d.cpp
+// compile with: /clr
+ref class A{
+public:
+   property int default[int,int] {
+      int get(int a, int b) {
+         return a + b;
+      }
+   }
+};
+
+int main() {
+   A^ a = gcnew A;
+   int x = a[3][5];   // C2660
+   int x2 = a[3,5];   // OK
+}
+```
+
+## <a name="example"></a>Örnek
+
+New işleci bir şablon sınıfı tanımlarsanız ancak yeni işleç kapsayan türdeki dışında türü olan bir nesne oluşturur, C2660 ortaya çıkabilir.
+
+```
+// C2660e.cpp
+// compile with: /c
+#include <malloc.h>
+
+template <class T> class CA {
+private:
+    static T** line;
+   void* operator new (size_t, int i) {
+      return 0;
+   }
+   void operator delete(void* pMem, int i) {
+      free(pMem);
+   }
+
+public:
+   CA () { new (1) T(); }   // C2660
+   // try the following line instead
+   // CA () { new (1) CA<int>(); }
+};
+
+typedef CA <int> int_CA;
+
+void AAA() {
+   int_CA  list;
+}
 ```

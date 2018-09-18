@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e5bcbcb3502dba1497500a9bdd5b46345b729a26
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c799ec18eb062bbefcc91a8b1ef8364d9b2cdc03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33223952"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043683"
 ---
 # <a name="compiler-error-c2386"></a>Derleyici Hatası C2386
-'simgesi': Bu ada sahip bir sembolü geçerli kapsamda zaten var.  
-  
- Ad alanı diğer adı oluşturmayı denedi ancak zaten seçtiğiniz adı yok.  
-  
- Aşağıdaki örnek C2386 oluşturur:  
-  
-```  
-// C2386.cpp  
-namespace A {  
-   int k;  
-}  
-  
-int i;  
-namespace i = A;   // C2386, i already exists  
+
+'symbol': Bu ada sahip bir simge geçerli kapsamda zaten var.
+
+Ad alanı diğer adı oluşturmak denedik ancak önceden seçtiğiniz adı yok.
+
+Aşağıdaki örnek, C2386 oluşturur:
+
+```
+// C2386.cpp
+namespace A {
+   int k;
+}
+
+int i;
+namespace i = A;   // C2386, i already exists
 ```

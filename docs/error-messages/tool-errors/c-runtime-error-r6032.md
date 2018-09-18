@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f82690dd9b8f7c224db473b15627b632dcc96d8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 43155f24411fb5206a03d607f0551c2d34294aeb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297878"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46024209"
 ---
 # <a name="c-runtime-error-r6032"></a>C çalışma zamanı hatası R6032
-Yerel ayar bilgileri için yeterli alan yok  
-  
+
+Yerel ayar bilgileri için yeterli alan yok
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, bir iç bellek sorunu olduğundan uygulama kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak genellikle, son derece düşük bellek yetersizliği veya program bir hatadan kaynaklanır.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- Yerel ayara duyarlı işlevlere çağrıları işleyebilir böylece çalışma zamanı her iş parçacığında yerel ilgili bilgileri tutar. Bu bilgiler için bellek ayırma başarısız olursa, çalışma zamanı temel olanaklarının çok fazla bağımlı olduğundan devam edemiyor.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bellek sorunu olduğundan uygulaması kapatıldı. Bu hatanın birkaç olası nedeni vardır, ancak son derece düşük bellek durumu veya bir programın hata genellikle neden olur.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Çalışan diğer uygulamaları kapatın veya belleği boşaltmak için bilgisayarınızı yeniden başlatın.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+Yerel ayar duyarlı işlevleri çağrıları işleyebilmesi çalışma zamanı, her iş parçacığı yerel ayarı hakkında bilgi tutar. Bu bilgiler için bellek ayırma başarısız olursa, çalışma zamanı temel kendi tesislerinde çok fazla ona bağımlı olduğundan işleme devam edilemiyor.

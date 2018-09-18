@@ -38,12 +38,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 920cfbde9229131c5148c359f6a82ce002d7fb3a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 411b8f58b38d2b35c1353d1ff446407026977d66
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46030150"
 ---
 # <a name="ccomsafearray-class"></a>CComSafeArray sınıfı
 
@@ -58,7 +58,7 @@ class CComSafeArray
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Dizide depolanan verinin türü.
 
 ## <a name="members"></a>Üyeler
@@ -158,19 +158,19 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*psaSrc*  
+*psaSrc*<br/>
 Bir işaretçi bir `SAFEARRAY` nesne.
 
-*ulCount*  
+*ulCount*<br/>
 Diziye eklenecek nesne sayısı.
 
-*PT*  
+*PT*<br/>
 Diziye eklenecek bir veya daha fazla nesne işaretçisi.
 
-*T*  
+*T*<br/>
 Diziye eklenecek nesne bir başvuru.
 
-*bCopy*  
+*bCopy*<br/>
 Verilerin bir kopyasını oluşturulması gerekip gerekmediğini gösterir. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -193,7 +193,7 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*psaSrc*  
+*psaSrc*<br/>
 Bir işaretçi `SAFEARRAY` yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -220,25 +220,25 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*bağlı*  
+*bağlı*<br/>
 A `SAFEARRAYBOUND` yapısı.
 
-*ulCount*  
+*ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*lLBound*  
+*lLBound*<br/>
 Alt sınır değeri; diğer bir deyişle, dizideki ilk öğenin dizini.
 
-*pBound*  
+*pBound*<br/>
 Bir işaretçi bir `SAFEARRAYBOUND` yapısı.
 
-*uDims*  
+*uDims*<br/>
 Dizideki boyutların sayısı.
 
-*saSrc*  
+*saSrc*<br/>
 Bir başvuru bir `SAFEARRAY` yapısı veya `CComSafeArray` nesne. Her iki durumda da, dizi oluşturma başvurulmuyor dizisinin bir kopyasını olmak için bu başvuru Oluşturucusu kullanır.
 
-*psaSrc*  
+*psaSrc*<br/>
 Bir işaretçi bir `SAFEARRAY` yapısı. Oluşturucu, dizi oluşturma başvurulmuyor dizisinin bir kopyasını olmak için bu adresi kullanır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -267,7 +267,7 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppArray*  
+*ppArray*<br/>
 İşaretçi `SAFEARRAY` kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -288,7 +288,7 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppArray*  
+*ppArray*<br/>
 Yeni bir konum için bir işaretçi `SAFEARRAY`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -310,16 +310,16 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*pBound*  
+*pBound*<br/>
 Bir işaretçi bir `SAFEARRAYBOUND` nesne.
 
-*uDims*  
+*uDims*<br/>
 Dizideki boyutların sayısı.
 
-*ulCount*  
+*ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*lLBound*  
+*lLBound*<br/>
 Alt sınır değeri; diğer bir deyişle, dizideki ilk öğenin dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -372,7 +372,7 @@ T& GetAt(LONG lIndex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Değeri döndürmek için dizide dizin sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -389,7 +389,7 @@ ULONG GetCount(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*uDim*  
+*uDim*<br/>
 Dizi boyutu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -422,7 +422,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*uDim*  
+*uDim*<br/>
 Dizi boyutu alt sınırı alınacağı. Atlanırsa, varsayılan değer 0'dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -485,7 +485,7 @@ LONG GetUpperBound(UINT uDim = 0) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*uDim*  
+*uDim*<br/>
 Dizi boyut üst sınırı alınacağı. Atlanırsa, varsayılan değer 0'dır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -526,10 +526,10 @@ HRESULT MultiDimGetAt(const LONG* alIndex, T& t);
 
 ### <a name="parameters"></a>Parametreler
 
-*alIndex*  
+*alIndex*<br/>
 Dizideki her boyut için dizinleri oluşan bir vektörü işaretçisi. En soldaki (en önemli) boyutu `alIndex[0]`.
 
-*T*  
+*T*<br/>
 Döndürülen veriler bir başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -546,10 +546,10 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 
 ### <a name="parameters"></a>Parametreler
 
-*alIndex*  
+*alIndex*<br/>
 Dizideki her boyut için dizinleri oluşan bir vektörü işaretçisi. Sağdaki (en az önemli) boyutu `alIndex`[0].
 
-*T*  
+*T*<br/>
 Yeni öğenin değerini belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -571,7 +571,7 @@ T& operator[]int nindex) const;
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin, nIndex*  
+*Dizin, nIndex*<br/>
 Dizi içindeki gerekli öğe dizini sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -593,10 +593,10 @@ ATL::CComSafeArray<T>& operator=(const SAFEARRAY* psaSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*saSrc*  
+*saSrc*<br/>
 Bir başvuru bir `CComSafeArray` nesne.
 
-*psaSrc*  
+*psaSrc*<br/>
 Bir işaretçi bir `SAFEARRAY` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -626,13 +626,13 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 
 ### <a name="parameters"></a>Parametreler
 
-*pBound*  
+*pBound*<br/>
 Bir işaretçi bir `SAFEARRAYBOUND` öğe sayısını ve bir dizi alt sınırı hakkında bilgi içeren yapısı.
 
-*ulCount*  
+*ulCount*<br/>
 Yeniden boyutlandırılan dizisindeki nesnelere istenen sayısı.
 
-*lLBound*  
+*lLBound*<br/>
 Alt sınır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -653,13 +653,13 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 ### <a name="parameters"></a>Parametreler
 
-*Dizin*  
+*Dizin*<br/>
 Ayarlanacak dizi öğesinin dizin numarası.
 
-*T*  
+*T*<br/>
 Belirtilen öğenin yeni değeri.
 
-*bCopy*  
+*bCopy*<br/>
 Verilerin bir kopyasını oluşturulması gerekip gerekmediğini gösterir. Varsayılan değer True'dur.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -672,7 +672,7 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[SAFEARRAY veri türü](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)   
-[CComSafeArray::Create](#create)   
-[CComSafeArray::Destroy](#destroy)   
+[SAFEARRAY veri türü](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagsafearray)<br/>
+[CComSafeArray::Create](#create)<br/>
+[CComSafeArray::Destroy](#destroy)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

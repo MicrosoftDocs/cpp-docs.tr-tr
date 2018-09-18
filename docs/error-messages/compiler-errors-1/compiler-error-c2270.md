@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bbafbf35f2aed6d6bddc3298ecfe0e1bf9912e7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cb1c6d1028f5ea2a34693a5098a7a869f2ff80ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172378"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036936"
 ---
 # <a name="compiler-error-c2270"></a>Derleyici Hatası C2270
-'function': değiştiricileri dahil olmayan işlevlere izin verilmiyor  
-  
- Dahil olmayan işlevi ile bildirilmiş [const](../../cpp/const-cpp.md), [volatile](../../cpp/volatile-cpp.md), ya da başka bir bellek modeli değiştiricisi.  
-  
- Aşağıdaki örnek C2270 oluşturur:  
-  
-```  
-// C2270.cpp  
-// compile with: /c  
-void func1(void) const;   // C2270, nonmember function  
-  
-void func2(void);  
-  
-class CMyClass {  
-public:  
-   void func2(void) const;  
-};  
+
+'function': üye olmayan işlevlerde değiştiricilere izin verilmez
+
+İle bildirilen bir değiştiricilere işlevi [const](../../cpp/const-cpp.md), [geçici](../../cpp/volatile-cpp.md), veya başka bir bellek modeli değiştiricisi.
+
+Aşağıdaki örnek, C2270 oluşturur:
+
+```
+// C2270.cpp
+// compile with: /c
+void func1(void) const;   // C2270, nonmember function
+
+void func2(void);
+
+class CMyClass {
+public:
+   void func2(void) const;
+};
 ```

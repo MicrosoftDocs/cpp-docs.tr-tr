@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e70e744ca4eb9cfa4b84ac0cca58be2452a8e25
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4da59a76ccc4d51e82fd43805daa73d513fcde17
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756957"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044281"
 ---
 # <a name="atl-collections-and-enumerators"></a>ATL Koleksiyonları ve Numaralandırmalar
 
@@ -36,21 +36,21 @@ Numaralandırıcı arabirimleri okuyarak hakkında daha fazla başvuru içeriği
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ATL Koleksiyonu ve Numaralandırıcısı Sınıfları](../atl/atl-collection-and-enumerator-classes.md)  
+[ATL Koleksiyonu ve Numaralandırıcısı Sınıfları](../atl/atl-collection-and-enumerator-classes.md)<br/>
 Kısaca açıklayan ve koleksiyonları ve numaralandırıcıları yardımcı olacak ATL sınıfları için bağlantıları uygulama sağlar.
 
-[Koleksiyon ve Numaralandırıcı Arabirimleri için Tasarım İlkeleri](../atl/design-principles-for-collection-and-enumerator-interfaces.md)  
+[Koleksiyon ve Numaralandırıcı Arabirimleri için Tasarım İlkeleri](../atl/design-principles-for-collection-and-enumerator-interfaces.md)<br/>
 Her tür arabirimin arkasına farklı tasarım ilkelerini ele alınmaktadır.
 
-[C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)  
+[C++ Standart Kitaplığı Temelli Koleksiyon Uygulama](../atl/implementing-an-stl-based-collection.md)<br/>
 Bir C++ Standart Kitaplığı temelli koleksiyon uygulama size genişletilmiş bir örnek.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Active Template Library kullanarak programlama hakkında kavramsal konulara bağlantılar sağlar.
 
-[ATLCollections örnek](../visual-cpp-samples.md)  
+[ATLCollections örnek](../visual-cpp-samples.md)<br/>
 Kullanımını gösteren bir örnek `ICollectionOnSTLImpl` ve `CComEnumOnSTL`ve özel kopyalama İlkesi sınıfları uygulamasını.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

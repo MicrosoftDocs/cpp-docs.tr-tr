@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3cb98faf0c84210deb1a4c5164959d2ba4c08db9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b7eba833b547a54adc0644303ab51d3852740a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300153"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041980"
 ---
 # <a name="compiler-warning-level-2-c4309"></a>Derleyici Uyarısı (Düzey 2) C4309
-'dönüştürme': sabit değer kesilmesi  
-  
- Tür dönüştürmeleri için ayrılan alanı aşan bir sabit neden olur. Daha büyük bir tür için sabit kullanmanız gerekebilir.  
-  
- Aşağıdaki örnek C4309 oluşturur:  
-  
-```  
-// C4309.cpp  
-// compile with: /W2  
-int main()  
-{  
-   char c = 128;   // C4309  
-}  
+
+'conversion': sabit değer kesildi
+
+Tür dönüştürme sabit için ayrılan alanı aşmasına neden olur. Daha büyük bir tür için bir sabit kullanmanız gerekebilir.
+
+Aşağıdaki örnek, C4309 oluşturur:
+
+```
+// C4309.cpp
+// compile with: /W2
+int main()
+{
+   char c = 128;   // C4309
+}
 ```

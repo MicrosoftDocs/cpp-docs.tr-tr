@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0c859e69095b1a7e6b756b0bcc7ca8e74ba8826
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0df54714038ab0fb6020e34aa35d677af5e899b4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302795"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016136"
 ---
 # <a name="compiler-warning-level-3-c4265"></a>Derleyici Uyarısı (Düzey 3) C4265
-'class': sınıfı sanal işlevlere sahiptir, ancak yıkıcı sanal değil  
-  
- Bir sınıf sanal olmayan bir yıkıcı ancak sanal işlevler olduğunda, sınıfın temel sınıf işaretçiyi bozulduğunda türündeki nesneleri düzgün bir şekilde yok edilmesi değil.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4265 oluşturur:  
-  
-```  
-// C4265.cpp  
-// compile with: /W3 /c  
-#pragma warning(default : 4265)  
-class B  
-{  
-public:  
-   virtual void vmf();  
-  
-   ~B();  
-   // try the following line instead  
-   // virtual ~B();  
-};   // C4265  
-  
-int main()  
-{  
-   B b;  
-}  
+
+'class': sınıfın sanal işlevleri var ancak yok edici sanal değil
+
+Bir sınıf sanal işlevler ancak sanal olmayan bir yok Edicisi varsa, sınıf bir temel sınıf işaretçisi kaldırıldığında türünden nesnelerin düzgün şekilde yok değil.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4265 oluşturur:
+
+```
+// C4265.cpp
+// compile with: /W3 /c
+#pragma warning(default : 4265)
+class B
+{
+public:
+   virtual void vmf();
+
+   ~B();
+   // try the following line instead
+   // virtual ~B();
+};   // C4265
+
+int main()
+{
+   B b;
+}
 ```

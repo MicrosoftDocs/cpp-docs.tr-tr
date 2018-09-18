@@ -39,61 +39,67 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a24996fbf2aea97581038bed28297416541ce9da
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 23e3f28ddb96bb34b38b3dd90ff6720edb1d9224
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389855"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041356"
 ---
 # <a name="inp-inpw-inpd"></a>_inp, _inpw, _inpd
-Bir bayt bir bağlantı noktasından girişleri (`_inp`), bir sözcük (`_inpw`), veya bir çift sözcük (`_inpd`).  
-  
+
+Girişler, bir bağlantı noktası, bir bayt (`_inp`), bir sözcük (`_inpw`), veya çift sözcüğe (`_inpd`).
+
 > [!IMPORTANT]
->  Bu işlevler artık kullanılmıyor. Visual Studio 2015'te başlayarak, bunlar CRT kullanılabilir değildir.  
-  
+>  Bu işlevler kullanım dışıdır. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
 > [!IMPORTANT]
->  Bu API, Windows çalışma zamanı'nda yürütme uygulamalarda kullanılamaz. Daha fazla bilgi için bkz: [Evrensel Windows platformu uygulamaları desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-int _inp(   
-   unsigned short port   
-);  
-unsigned short _inpw(   
-   unsigned short port   
-);  
-unsigned long _inpd(   
-   unsigned short port   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- `port`  
- G/ç bağlantı noktası numarası.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Word, bayt işlevler döndürür veya çift word okuma `port`. Döndürülen hata yoktur.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `_inp`, `_inpw`, Ve `_inpd` işlevleri okuma byte, bir sözcük ve bir çift sözcük sırasıyla, belirtilen giriş bağlantı noktasından. Giriş değeri 0 - 65.535 aralığında imzasız herhangi kısa tamsayı olabilir.  
-  
- Bu işlevler doğrudan bir g/ç bağlantı noktasından okumak için kullanıcı kodunda kullanılamaz.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_inp`|\<conio.h >|  
-|`_inpw`|\<conio.h >|  
-|`_inpd`|\<conio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md).  
-  
-## <a name="libraries"></a>Kitaplıklar  
- Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)   
- [_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)
+>  Bu API, Windows çalışma zamanı'nda yürütülen uygulamalarda kullanılamaz. Daha fazla bilgi için [Evrensel Windows platformu uygulamalarında desteklenmeyen CRT işlevleri](../cppcx/crt-functions-not-supported-in-universal-windows-platform-apps.md).
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+int _inp(
+   unsigned short port
+);
+unsigned short _inpw(
+   unsigned short port
+);
+unsigned long _inpd(
+   unsigned short port
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*Bağlantı noktası*<br/>
+G/ç bağlantı noktası numarası.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+İşlevler döndürür bayt, kelime veya çift kelime okuma `port`. Döndürülen hata yok.
+
+## <a name="remarks"></a>Açıklamalar
+
+`_inp`, `_inpw`, Ve `_inpd` işlevleri okuma bir bayt, bir sözcük ve bir çift sözcük sırasıyla belirtilen giriş bağlantı noktasından. Giriş değeri 0 - 65,535 aralığında herhangi işaretsiz kısa tamsayı olabilir.
+
+Bu işlevler doğrudan bir I/O bağlantı noktasından okunduğu için kullanıcı kodunda kullanılamaz.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|`_inp`|\<conio.h >|
+|`_inpw`|\<conio.h >|
+|`_inpd`|\<conio.h >|
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md).
+
+## <a name="libraries"></a>Kitaplıklar
+
+Tüm sürümleri [C çalışma zamanı kitaplıkları](../c-runtime-library/crt-library-features.md).
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Konsol ve bağlantı noktası g/ç](../c-runtime-library/console-and-port-i-o.md)<br/>
+[_outp, _outpw, _outpd](../c-runtime-library/outp-outpw-outpd.md)

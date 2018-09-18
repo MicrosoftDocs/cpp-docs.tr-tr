@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cbc02c32463703f658cef1d5756926311d89b193
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a9a665dbb71157b37f72d3d0721357d00dc37230
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33282957"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46032611"
 ---
 # <a name="compiler-warning-level-1-c4407"></a>Derleyici Uyarısı (düzey 1) C4407
-üye Beyanları farklı işaretçi arasında cast, derleyici yanlış kod oluşturabilirsiniz  
-  
- Yanlış bir cast algılandı.  
-  
- Visual C++ 2005'te yapıldığı derleyici uyumluluğu iş nedeniyle C4407 oluşturulabilir. İşaretçi-üye şimdi gerektirir tam adı ve address-of işleci (&).  
-  
- C4407 bir birden çok devralma işaretçi-üye için bir tek devralma işaretçi-üye arasında cast ortaya çıkabilir. Bu bazen çalışabilir, ancak bazı durumlarda tek devralma işaretçi-üye gösterimi yeterli bilgiyi tutmak değil çünkü olamaz. İle derleme **/VMM** yardımcı olabilir (daha fazla bilgi için bkz: [/VMM, / VMs, / vmv (genel amaçlı temsil)](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)). Ayrıca, temel sınıfları yeniden düzenleme deneyin; bir taban sınıf sıfır uzaklığı türetilmiş olduğundan derleyici dönüştürme bilgi kaybına algılıyor.  
-  
- Aşağıdaki örnek C4407 oluşturur:  
-  
-```  
-// C4407.cpp  
-// compile with: /W1 /c  
-struct C1 {};  
-struct C2 {};  
-struct C3 : C1, C2 {};  
-  
-typedef void(C3::*PMF_C3)();  
-typedef void(C2::*PMF_C2)();  
-  
-PMF_C2 f1(PMF_C3 pmf) {  
-   return (PMF_C2)pmf;   // C4407, change type of cast,  
-   // or reverse base class inheritance of C3 (i.e. : C2, C1)  
-}  
+
+farklı işaretçiden üyeye gösterimleri arasında tür dönüştürme; derleyici yanlış kod üretebilir
+
+Hatalı bir tür dönüştürme algılandı.
+
+Visual C++ 2005'te yapıldığı derleyici uyumluluğu iş nedeniyle C4407 oluşturulabilir. İşaretçi-üye artık gerektiren bir tam adı ve address-of işleci (&).
+
+Bir çoklu devralma işaretçi-üye için bir tek devralma işaretçi-üye arasında dönüştürme C4407 oluşabilir. Bu bazen çalışabilir, ancak bazen tek devralma işaretçi-üye gösterimi yeterli bilgiyi tutmak değil olduğundan işlem gerçekleştirilemiyor. İle derlerken **/VMM** yardımcı olabilir (daha fazla bilgi için [/VMM, / VMs, / vmv (genel amaçlı temsil)](../../build/reference/vmm-vms-vmv-general-purpose-representation.md)). Taban sınıfları yeniden düzenleme de deneyebilirsiniz; sıfır olmayan uzaklığı türetilmiş bir temel sınıf olduğundan derleyici dönüştürmede bilgi kaybı algılıyor.
+
+Aşağıdaki örnek, C4407 oluşturur:
+
+```
+// C4407.cpp
+// compile with: /W1 /c
+struct C1 {};
+struct C2 {};
+struct C3 : C1, C2 {};
+
+typedef void(C3::*PMF_C3)();
+typedef void(C2::*PMF_C2)();
+
+PMF_C2 f1(PMF_C3 pmf) {
+   return (PMF_C2)pmf;   // C4407, change type of cast,
+   // or reverse base class inheritance of C3 (i.e. : C2, C1)
+}
 ```

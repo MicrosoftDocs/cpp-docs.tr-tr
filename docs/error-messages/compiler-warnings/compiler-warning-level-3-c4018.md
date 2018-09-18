@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5eb784c8a368b5f5836deaff17d07542519ba980
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99ca94a47925a64c91077ad5b363e953def186b1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290341"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041330"
 ---
 # <a name="compiler-warning-level-3-c4018"></a>Derleyici Uyarısı (Düzey 3) C4018
-'ifadesi': İmzalı ve imzasız uyuşmazlığı  
-  
- İmzalı ve imzasız birkaç karşılaştırma derleyici imzalı değeri için imzasız dönüştürmek için gereklidir.  
-  
- Bu uyarı sabit iki türlerinden birini imzalı ve imzasız türleri sınarken cast ise.  
-  
- Aşağıdaki örnek C4018 oluşturur:  
-  
-```  
-// C4018.cpp  
-// compile with: /W3  
-int main() {  
-   unsigned int uc = 0;  
-   int c = 0;  
-   unsigned int c2 = 0;  
-  
-   if (uc < c) uc = 0;   // C4018  
-  
-   // OK  
-   if (uc == c2) uc = 0;  
-}  
+
+'expression': imzalı/imzasız uyuşmazlığı
+
+İşaretli ve işaretsiz sayı karşılaştırma derleyici, işaretli değeri işaretsiz dönüştürmek için gereklidir.
+
+Bu uyarı, iki tür imzalı ve imzasız türler test ederken cast düzeltilebilir.
+
+Aşağıdaki örnek, C4018 oluşturur:
+
+```
+// C4018.cpp
+// compile with: /W3
+int main() {
+   unsigned int uc = 0;
+   int c = 0;
+   unsigned int c2 = 0;
+
+   if (uc < c) uc = 0;   // C4018
+
+   // OK
+   if (uc == c2) uc = 0;
+}
 ```

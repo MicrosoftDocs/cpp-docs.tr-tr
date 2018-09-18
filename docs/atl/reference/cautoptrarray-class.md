@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d83f98de4f1d07fbebdd07186729453d2ef1d3b2
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 23cc8e519fc47173efe413cc687ef48c0dc39945
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44108739"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46025171"
 ---
 # <a name="cautoptrarray-class"></a>CAutoPtrArray sınıfı
 
@@ -84,7 +84,7 @@ Akıllı işaretçi dizi başlatır.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlArray sınıfı](../../atl/reference/catlarray-class.md)   
-[CAutoPtrElementTraits sınıfı](../../atl/reference/cautoptrelementtraits-class.md)   
-[CAutoPtrList sınıfı](../../atl/reference/cautoptrlist-class.md)   
+[CAtlArray Sınıfı](../../atl/reference/catlarray-class.md)<br/>
+[CAutoPtrElementTraits Sınıfı](../../atl/reference/cautoptrelementtraits-class.md)<br/>
+[CAutoPtrList Sınıfı](../../atl/reference/cautoptrlist-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

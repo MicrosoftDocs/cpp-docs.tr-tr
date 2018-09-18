@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9aa6a67c13f76b0bf43159b9e9de95068102a2b1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 016e5bbf064643ddff0f63c5e16a967ed914f3e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229216"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044957"
 ---
 # <a name="fatal-error-c1853"></a>Önemli hata C1853
-  
-> '*filename*' önceden derlenmiş üstbilgi dosyası Derleyici önceki bir sürümünden veya önceden derlenmiş üst bilgi C++ olduğu ve c (veya tersi) kullanıyorsanız  
-  
-Olası nedenler:  
-  
--   Önceden derlenmiş üst bilgi, önceki bir derleyici sürümüyle derlendi. Geçerli derleyici üstbilgiyle yeniden derlenmesi deneyin.  
-  
--   Önceden derlenmiş üst bilgi C++ ise ve c C ile kullanılmak üzere üstbilgi birini belirterek yeniden derlenmesi deneyin kullanıyorsanız [tp](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçenekleri veya "c" soneki kaynak dosyasının değiştirme. Daha fazla bilgi için bkz: [kodu önceden derlemek için iki seçenek](../../build/reference/creating-precompiled-header-files.md#two-choices-for-precompiling-code).
+
+> '*filename*' Ön derlenmiş üstbilgi dosyası derleyicinin önceki bir sürümünden olduğu veya önceden derlenmiş üstbilgi C++ ve c (veya tersi) kullanıyorsanız
+
+Olası nedenler:
+
+- Önceden derlenmiş üst bilgi, önceki bir derleyici sürümü ile derlendi. Geçerli derleme üstbilgiyle yeniden derlemeden deneyin.
+
+- Önceden derlenmiş üstbilgi C++ ve c üstbilgi C ile kullanmak için aşağıdakilerden birini belirterek yeniden derlemeden deneyin kullanıyorsanız [/Tc](../../build/reference/tc-tp-tc-tp-specify-source-file-type.md) derleyici seçenekleri veya "c" soneki kaynak dosyasının değiştirme. Daha fazla bilgi için [kodu önceden derlemek için iki seçeneğiniz](../../build/reference/creating-precompiled-header-files.md#two-choices-for-precompiling-code).

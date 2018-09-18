@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c382f971c12b9ffb54c6e98c8b1f4609d7aadad4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a6c8f3030e1ee59b92b32d340e89e909f9da4fd8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296022"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039770"
 ---
 # <a name="command-line-warning-d9036"></a>Komut Satırı Uyarısı D9036
-'option_1' yerine 'option_2'  
-  
- Uyarısı D9036 olan devamını [komut satırı uyarısı D9035](../../error-messages/tool-errors/command-line-warning-d9035.md).
+
+'option_1' yerine 'option_2'
+
+Uyarısı D9036 devamı olan [komut satırı uyarısı D9035](../../error-messages/tool-errors/command-line-warning-d9035.md).

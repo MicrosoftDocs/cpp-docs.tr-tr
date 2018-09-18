@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad90ac69fa41a6bec70373b84044344592d2d86e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7d468e6e2770eca3bc01fca95fb585d1753210a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753944"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039029"
 ---
 # <a name="adding-a-new-interface-in-an-atl-project"></a>ATL projesine yeni arabirim ekleme
 
@@ -52,10 +52,10 @@ Yeni bir arabirim iki yoldan biriyle denetiminizi ekleyebilirsiniz: el ile veya 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)   
-[Visual C++ proje türleri](../../ide/visual-cpp-project-types.md)   
-[Uygulama sihirbazları kullanarak masaüstü projeleri oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)   
-[ATL ve C çalışma zamanı koduyla programlama](../../atl/programming-with-atl-and-c-run-time-code.md)   
-[ATL COM nesnelerinin temelleri](../../atl/fundamentals-of-atl-com-objects.md)   
+[ATL Projesi Sihirbazı](../../atl/reference/atl-project-wizard.md)<br/>
+[Visual C++ Proje Türleri](../../ide/visual-cpp-project-types.md)<br/>
+[Uygulama Sihirbazları Kullanarak Masaüstü Projeleri Oluşturma](../../ide/creating-desktop-projects-by-using-application-wizards.md)<br/>
+[ATL ve C Çalışma Zamanı Koduyla Programlama](../../atl/programming-with-atl-and-c-run-time-code.md)<br/>
+[ATL COM Nesnelerinin Temelleri](../../atl/fundamentals-of-atl-com-objects.md)<br/>
 [Varsayılan ATL Projesi Yapılandırmaları](../../atl/reference/default-atl-project-configurations.md)
 

@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 228fa8bd08c6761fbdeb018ff3ec1e027eb475dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 20198235e04fbcc95bafbcfe119462e754587a3f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196473"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036845"
 ---
 # <a name="compiler-error-c2411"></a>Derleyici Hatası C2411
-'tanımlayıcısı': 'context' geçersiz struct/union üyesi  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Tanımlayıcı görünür yapısı veya bu bağlamda Birliği üyesi değil.  
-  
-2.  Tanımlayıcı yapısı veya üye seçimi (.) işleciyle belirtilen birleşim üyesi değil.
+
+'identifier': 'context' içinde geçersiz yapı/birleşim üyesi
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Tanımlayıcı bir görünür yapı veya birleşim bu bağlamda bir üyesi değil.
+
+1. Tanımlayıcı, yapı veya birleşim (.) üye seçme işleci ile belirtilen bir üyesi değil.

@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2e718bd1a15df98487d0e9437c217c1750bfa5f5
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 2120f274dd783da00a43106338476c43cc0a9dad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33695791"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46021752"
 ---
 # <a name="invalidlinktarget-class"></a>invalid_link_target Sınıfı
-Bu sınıf ne zaman oluşturulan bir özel tanımlar `link_target` ileti bloğunun yöntemi çağrılır ve ileti bloğu hedef bağlanamıyor. Bu ileti bloğu izin verilen bağlantı sayısını aşan veya belirli bir hedefe iki kere aynı kaynağına bağlanma girişiminde sonucu olabilir.  
+Bu sınıf oluşan bir özel durumu anlatmaktadır `link_target` ileti bloğunun yöntemi çağrılır ve ileti bloğu Hedefe bağlanamıyor. Bu ileti bloğu izin verilen bağlantı sayısını aşan veya iki kez aynı kaynak için belirli bir hedef bağlantı girişimi sonucu olabilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class invalid_link_target : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_link_target](#ctor)|Fazla Yüklendi. Oluşturan bir `invalid_link_target` nesnesi.|  
+|[invalid_link_target](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_link_target` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class invalid_link_target : public std::exception;
   
 ##  <a name="ctor"></a> invalid_link_target 
 
- Oluşturan bir `invalid_link_target` nesnesi.  
+ Oluşturur bir `invalid_link_target` nesne.  
   
 ```
 explicit _CRTIMP invalid_link_target(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ invalid_link_target() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

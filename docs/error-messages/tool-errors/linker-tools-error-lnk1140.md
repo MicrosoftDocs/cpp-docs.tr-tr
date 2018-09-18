@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc0d59589a1882aca4ef2deb419e1e4f1081e52b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f850360bc749a41e548cebae9f58f9fc7d3d420
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302743"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044710"
 ---
 # <a name="linker-tools-error-lnk1140"></a>Bağlayıcı Araçları Hatası LNK1140
-program veritabanı için çok fazla modülleri; / pdb bağlantısıyla: yok  
-  
- Projenin birden fazla 4096 modüller içerir.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Kullanarak yeniden Bağla [/pdb: hiçbiri](../../build/reference/pdb-use-program-database.md).  
-  
-2.  Bazı modüller, hata ayıklama bilgisi olmadan derleyin.  
-  
-3.  Modülleri sayısını azaltın.
+
+program veritabanı için çok fazla modül; bağlantı/pdb: NONE
+
+Proje, en fazla 4096 modüller içerir.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Kullanarak yeniden Bağla [/pdb: NONE](../../build/reference/pdb-use-program-database.md).
+
+1. Bazı modüller, hata ayıklama bilgileri olmadan derleyin.
+
+1. Modüller sayısını azaltın.

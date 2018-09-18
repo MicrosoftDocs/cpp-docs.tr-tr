@@ -15,26 +15,28 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c3ddd1c32beb5660fd1fa3c0160756734b4c1923
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 184fd5a0e6c12cb58e9fed759459e7b8172896f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385263"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038303"
 ---
 # <a name="signed-bitwise-operations"></a>İmzalı Bit Düzeyinde İşlemler
-**ANSI 3.3** imzalı tamsayılar Bitsel işlemlerinin sonuçları  
-  
- İşaretli tamsayılarda bit düzeyinde işlemler, işaretsiz tamsayılarda bit düzeyinde işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` binary olarak ifade edilebilir  
-  
-```  
-  11111111 11110000  
-& 00000000 01100011  
-  _________________  
-  00000000 01100000  
-```  
-  
- Bit düzeyinde AND'in sonucu 96'dır.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Tam Sayılar](../c-language/integers.md)
+
+**ANSI 3.3** işaretli tamsayılarda bit düzeyinde sonuçları
+
+İşaretli tamsayılarda bit düzeyinde işlemler, işaretsiz tamsayılarda bit düzeyinde işlemlerle aynı şekilde çalışır. Örneğin, `-16 & 99` ikili olarak ifade edilebilir
+
+```
+  11111111 11110000
+& 00000000 01100011
+  _________________
+  00000000 01100000
+```
+
+Bit düzeyinde AND'in sonucu 96'dır.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Tam Sayılar](../c-language/integers.md)

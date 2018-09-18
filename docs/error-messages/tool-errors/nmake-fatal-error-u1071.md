@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c63b354bfbdd3dbdfc7704effcbe6c0495cede27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0bec5ed46b054002d1ae95e5e3f0b9b1c8ee4984
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323293"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46016162"
 ---
 # <a name="nmake-fatal-error-u1071"></a>NMAKE Önemli Hatası U1071
-Hedef 'targetname' için bağımlılık ağacında döngüsü  
-  
- Belirtilen hedef için bağımlılık ağacında döngüsel bağımlılık bulunmaktadır. Belirtilen hedef, belirtilen hedef bağımlılıklar birinin bağımlıdır. Döngüsel bağımlılıklar geçersizdir.
+
+'targetname' hedefi için bağımlılık aracında döngü
+
+Belirtilen hedef için bağımlılık aracında döngüsel bağımlılık var. Belirtilen hedefe, belirtilen hedef Etkilenenleri birinin bağlıdır. Döngüsel bağımlılıklar geçersizdir.

@@ -14,22 +14,25 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9d87998f7e9d579c012f5db2f38f20886c1e74c6
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 111acab00783de67dcb3ecc8b9d45fe112332158
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32387040"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46019530"
 ---
 # <a name="storage-of-string-literals"></a>Dize Değişmez Değerlerini Depolama
-Sabit değerli bir dize karakterlerini sırada bitişik bellek konumlara depolanır. Kaçış dizisi (gibi **\\ \\** veya  **\\"**) dize sabit değeri içinde tek bir karakter olarak sayılır. Bir null karakter (tarafından temsil edilen **\0** kaçış dizisi) otomatik olarak eklenir ve sonuna her dize değişmez değer işaretler. (Bu sistemdeki [çeviri aşaması](../preprocessor/phases-of-translation.md) 7.) Derleyici iki farklı adreslerde iki özdeş dizeleri depolayabilir değil olduğunu unutmayın. [/GF](../build/reference/gf-eliminate-duplicate-strings.md) aynı dize tek bir kopyasını yürütülebilir dosyaya yerleştirmek için derleyici zorlar.  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Microsoft özel**  
-  
- Statik depolama süresi dizelerine sahipsiniz. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) depolama süresi hakkında bilgi için.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dize Değişmez Değerleri](../c-language/c-string-literals.md)
+
+Bir sabit dize karakterlerini sırada bitişik bellek konumlarında depolanır. Bir kaçış dizisi (gibi **\\ \\** veya  **\\"**) dize sabit değeri içinde tek bir karakter olarak sayılır. Bir null karakteri (tarafından temsil edilen **\0** kaçış dizisi) otomatik olarak eklenir ve sonuna her dize sabit değeri olarak işaretler. (Bu sistemdeki [çeviri aşaması](../preprocessor/phases-of-translation.md) 7.) Derleyici iki özdeş dizeleri iki farklı adreslerde depolayabilir değil olduğunu unutmayın. [/GF](../build/reference/gf-eliminate-duplicate-strings.md) derleyicinin yürütülebilir dosyaya aynı dizelerin tek bir kopyasını zorlar.
+
+## <a name="remarks"></a>Açıklamalar
+
+**Microsoft'a özgü**
+
+Dizeleri statik depolama süresine sahip. Bkz: [depolama sınıfları](../c-language/c-storage-classes.md) depolama süresi hakkında bilgi için.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dize Değişmez Değerleri](../c-language/c-string-literals.md)

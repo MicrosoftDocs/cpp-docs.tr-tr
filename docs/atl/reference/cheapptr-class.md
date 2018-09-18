@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 34a6b019c2e3f71b70253ad2c15bc4b2758eeae7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8ea4fd429395fc78f36d1f9b3244068c737be49a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762086"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46033985"
 ---
 # <a name="cheapptr-class"></a>CHeapPtr sınıfı
 
@@ -37,16 +37,16 @@ Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T, class Allocator=CCRTAllocator>  
+template<typename T, class Allocator=CCRTAllocator>
 class CHeapPtr : public CHeapPtrBase<T, Allocator>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Yığın üzerinde depolanan nesne türü.
 
-*Ayırıcı*  
+*Ayırıcı*<br/>
 Bellek ayırma kullanmak için sınıf.
 
 ## <a name="members"></a>Üyeler
@@ -94,7 +94,7 @@ bool Allocate(size_t nElements = 1) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nElements*  
+*nElements*<br/>
 Ayrılacak bellek miktarını hesaplamak için kullanılan öğelerin sayısı. Varsayılan değer 1’dir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -121,7 +121,7 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Varolan bir yığın işaretçisi veya `CHeapPtr`.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -143,7 +143,7 @@ CHeapPtr<T, Allocator>& operator=(
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Varolan bir `CHeapPtr` nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -164,7 +164,7 @@ bool Reallocate(size_t nElements) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nElements*  
+*nElements*<br/>
 Ayrılacak bellek miktarını hesaplamak için kullanılan öğelerin yeni sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -177,6 +177,6 @@ Ayrılan bellek başarılı olduysa true değerini döndürür, başarısız old
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CHeapPtrBase sınıfı](../../atl/reference/cheapptrbase-class.md)   
-[CCRTAllocator sınıfı](../../atl/reference/ccrtallocator-class.md)   
+[CHeapPtrBase Sınıfı](../../atl/reference/cheapptrbase-class.md)<br/>
+[CCRTAllocator Sınıfı](../../atl/reference/ccrtallocator-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

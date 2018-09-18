@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 77a4afa4d5cd0be19163204d48e0a29b3b359a40
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8863c22bea588417025164bf2d303d01cfe6d7b6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301115"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042955"
 ---
 # <a name="linker-tools-error-lnk1314"></a>Bağlayıcı Araçları Hatası LNK1314
-bozuk veya geçersiz COFF sembol tablosunu (tanımsız statik veya etiket simgesi)  
-  
- Verilen nesne bölümünde derleyicinin ürettiği içeriğini bozuk gibi görünüyor.  
-  
- Bu hata derleyici hatasını gösterebilir.
+
+(tanımlanmamış statik veya etiket sembolü) COFF sembol tablosu bozuk veya geçersiz
+
+Bir bölümde verilen nesne için derleyici tarafından oluşturulan içerikleri bozuk gibi görünüyor.
+
+Bu hata, derleyici bir hata gösterebilir.

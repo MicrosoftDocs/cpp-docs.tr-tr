@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c722130a0dcf3bea3664e6b0a0ec306d359c8aac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7830e5c0ea57a7b6b6e42f020f723f1c4f80a7a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248694"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035493"
 ---
 # <a name="compiler-error-c3131"></a>Derleyici Hatası C3131
-Proje 'module' öznitelik 'name' özelliğine sahip olması gerekir  
-  
- [Modülü](../../windows/module-cpp.md) özniteliği name parametresi olması gerekir.  
-  
- Aşağıdaki örnek C3131 oluşturur:  
-  
-```  
-// C3131.cpp  
-[emitidl];  
-[module];   // C3131  
-// try the following line instead  
-// [module (name="MyLib")];  
-  
-[public]  
-typedef long int LongInt;  
+
+Proje 'name' özelliğine sahip bir 'module' özniteliği olmalıdır
+
+[Modülü](../../windows/module-cpp.md) özniteliği name parametresi olması gerekir.
+
+Aşağıdaki örnek, C3131 oluşturur:
+
+```
+// C3131.cpp
+[emitidl];
+[module];   // C3131
+// try the following line instead
+// [module (name="MyLib")];
+
+[public]
+typedef long int LongInt;
 ```
