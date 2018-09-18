@@ -83,12 +83,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46d96d574fedf9af2fe7eb46c872819cf54a364e
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: c96b5b18530cd9b983e5a4c022883919261cc22c
+ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43216465"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45701616"
 ---
 # <a name="cmfcribbonedit-class"></a>CMFCRibbonEdit sınıfı
 Bir Şerit çubuğunda bulunan bir düzenleme denetimi uygular.  
@@ -181,17 +181,17 @@ CMFCRibbonEdit();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nID*  
- Komut kimliği için `CMFCRibbonEdit` denetimi.  
+*nID*<br/>
+[in] Komut kimliği için `CMFCRibbonEdit` denetimi.  
   
- [in] *nWidth*  
- Piksel cinsinden için metin kutusunun genişliği `CMFCRibbonEdit` denetimi.  
+*nWidth*<br/>
+[in] Piksel cinsinden için metin kutusunun genişliği `CMFCRibbonEdit` denetimi.  
   
- [in] *lpszLabel*  
- Etiketi `CMFCRibbonEdit` denetimi.  
+*lpszLabel*<br/>
+[in] Etiketi `CMFCRibbonEdit` denetimi.  
   
- [in] *bir*  
- Küçük resmin dizini için kullanılacak `CMFCRibbonEdit` denetimi. Küçük resimler koleksiyonunu üst Şerit kategorisi tarafından korunur.  
+*Bir*<br/>
+[in] Küçük resmin dizini için kullanılacak `CMFCRibbonEdit` denetimi. Küçük resimler koleksiyonunu üst Şerit kategorisi tarafından korunur.  
   
 ### <a name="remarks"></a>Açıklamalar  
  `CMFCRibbonEdit` Denetim büyük bir görüntü kullanmaz.  
@@ -204,8 +204,8 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *src*  
- Kaynak `CMFCRibbonEdit` nesne.  
+*src*<br/>
+[in] Kaynak `CMFCRibbonEdit` nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  *Src* tür parametresi olmalıdır `CMFCRibbonEdit`.  
@@ -220,11 +220,11 @@ virtual CMFCRibbonRichEditCtrl* CreateEdit(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pWndParent*  
- Üst penceresine bir işaretçi `CMFCRibbonEdit` nesne.  
+*pWndParent*<br/>
+[in] Üst penceresine bir işaretçi `CMFCRibbonEdit` nesne.  
   
- [in] *dwEditStyle*  
- Metin kutusunun stilini belirtir. Pencere stilleri ile açıklamalar bölümünde listelenen birleştirebilirsiniz [düzenleme denetimi stilleri](/windows/desktop/Controls/edit-control-styles) Windows SDK'da açıklanmıştır.  
+*dwEditStyle*<br/>
+[in] Metin kutusunun stilini belirtir. Pencere stilleri ile açıklamalar bölümünde listelenen birleştirebilirsiniz [düzenleme denetimi stilleri](/windows/desktop/Controls/edit-control-styles) Windows SDK'da açıklanmıştır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Yöntem başarılı olursa yeni bir metin kutusu için bir işaretçi; Aksi takdirde NULL.  
@@ -273,11 +273,11 @@ void EnableSpinButtons(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nMin*  
- Değer değiştirme düğmesi minimum değer.  
+*nMin*<br/>
+[in] Değer değiştirme düğmesi minimum değer.  
   
- [in] *nMax*  
- Değer değiştirme düğmesi maksimum değer.  
+*nMax*<br/>
+[in] Değer değiştirme düğmesi maksimum değer.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Döndürme düğmelerini görüntüle yukarı ve aşağı oka ve sabit bir değer kümesi ile taşımak kullanıcıları etkinleştirin.  
@@ -290,8 +290,8 @@ virtual CSize GetCompactSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` nesne.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Compact boyutunu `CMFCRibbonEdit` nesne.  
@@ -318,8 +318,8 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` nesne.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Ara boyutu `CMFCRibbonEdit` nesne.  
@@ -355,8 +355,8 @@ int GetWidth(BOOL bInFloatyMode = FALSE) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bInFloatyMode*  
- TRUE ise `CMFCRibbonEdit` denetimidir kayan modunda; Aksi takdirde FALSE.  
+*bInFloatyMode*<br/>
+[in] TRUE ise `CMFCRibbonEdit` denetimidir kayan modunda; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Piksel cinsinden genişliği, `CMFCRibbonEdit` denetimi.  
@@ -433,8 +433,8 @@ virtual void OnAfterChangeRect(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -446,8 +446,8 @@ virtual void OnDraw(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -459,8 +459,8 @@ virtual void OnDrawLabelAndImage(CDC* pDC);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -478,23 +478,23 @@ virtual void OnDrawOnList(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *pDC*  
- Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
+*pDC*<br/>
+[in] Bir cihaz bağlamı için bir işaretçiye `CMFCRibbonEdit` denetimi.  
   
- [in] *strText*  
- Görüntülenecek metni [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı").  
+*strText*<br/>
+[in] Görüntülenecek metni [ ] (../../mfc/reference/cmfcribbonedit-class.md "cmfcribbonedit sınıfı").  
   
- [in] *nTextOffset*  
- Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
+*nTextOffset*<br/>
+[in] Görüntülenecek metni liste kutusuna sol tarafındaki piksel cinsinden uzaklığı.  
   
- [in] *dikdörtgen*  
- İçin görünen dikdörtgen `CMFCRibbonEdit` denetimi.  
+*Rect*<br/>
+[in] İçin görünen dikdörtgen `CMFCRibbonEdit` denetimi.  
   
- [in] *bIsSelected*  
- Bu parametre kullanılmaz.  
+*bIsSelected*<br/>
+[in] Bu parametre kullanılmaz.  
   
- [in] *bHighlighted*  
- Bu parametre kullanılmaz.  
+*bHighlighted*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Hızlı Erişim Araç çubuğunu özelleştirme olanağı Şerit denetimleri komutlar liste kutusu görüntüler.  
@@ -507,8 +507,8 @@ virtual void OnEnable(BOOL bEnable);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bSistemlerde*  
- Denetimi etkinleştirmek için TRUE; Denetimin devre dışı bırakmak için FALSE.  
+*bSistemlerde*<br/>
+[in] Denetimi etkinleştirmek için TRUE; Denetimin devre dışı bırakmak için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -520,8 +520,8 @@ virtual void OnHighlight(BOOL bHighlight);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bHighlight*  
- İşaretçinin sınırları içinde ise TRUE `CMFCRibbonEdit` denetler; Aksi takdirde FALSE.  
+*bHighlight*<br/>
+[in] İşaretçinin sınırları içinde ise TRUE `CMFCRibbonEdit` denetler; Aksi takdirde FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -533,8 +533,8 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bIsMenuKey*  
- Tuş ipucunu bir açılır menü görüntüleyen TRUE; Aksi takdirde FALSE.  
+*bIsMenuKey*<br/>
+[in] Tuş ipucunu bir açılır menü görüntüleyen TRUE; Aksi takdirde FALSE.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Olay işleniyorsa TRUE; Aksi takdirde FALSE.  
@@ -549,8 +549,8 @@ virtual void OnLButtonDown(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Bu parametre kullanılmaz.  
+*Noktası*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -562,8 +562,8 @@ virtual void OnLButtonUp(CPoint point);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *noktası*  
- Bu parametre kullanılmaz.  
+*Noktası*<br/>
+[in] Bu parametre kullanılmaz.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -575,8 +575,8 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bIsRTL*  
- Sağdan sola düzen ise TRUE; Soldan sağa düzen ise FALSE.  
+*bIsRTL*<br/>
+[in] Sağdan sola düzen ise TRUE; Soldan sağa düzen ise FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -588,8 +588,8 @@ virtual void OnShow(BOOL bShow);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *bBilgi Göster*  
- Denetim göstermek için TRUE; Denetimi gizlemek için FALSE.  
+*bBilgi Göster*<br/>
+[in] Denetim göstermek için TRUE; Denetimi gizlemek için FALSE.  
   
 ### <a name="remarks"></a>Açıklamalar  
   
@@ -632,8 +632,8 @@ void SetEditText(CString strText);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *strText*  
- Metin kutusu metni.  
+*strText*<br/>
+[in] Metin kutusu metni.  
   
 ##  <a name="settextalign"></a>  CMFCRibbonEdit::SetTextAlign  
  Metin kutusunda metin hizalamasını ayarlar.  
@@ -643,8 +643,8 @@ void SetTextAlign(int nAlign);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nAlign*  
- Metin hizalama numaralandırılmış değeri. Olası değerler için Açıklamalar bölümüne bakın.  
+*nAlign*<br/>
+[in] Metin hizalama numaralandırılmış değeri. Olası değerler için Açıklamalar bölümüne bakın.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Parametre *nAlign* denetim stilleri aşağıdaki düzen, biridir:  
@@ -667,8 +667,8 @@ void SetWidth(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- [in] *nWidth*  
- Metin kutusunun piksel cinsinden genişliği.  
+*nWidth*<br/>
+[in] Metin kutusunun piksel cinsinden genişliği.  
   
  *bInFloatyMode*  
  Kayan modu genişliğini ayarlamak için TRUE; Normal mod genişliğini ayarlamak için FALSE.  
