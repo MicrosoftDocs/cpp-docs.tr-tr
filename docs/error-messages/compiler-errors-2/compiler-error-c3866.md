@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: da9109e35f3c79d33a4c3439aa58befdbe91068c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: eb56440dd67bc59e7719acdf70cee2784c889db2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33273718"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048909"
 ---
 # <a name="compiler-error-c3866"></a>Derleyici Hatası C3866
-işlev çağrısı eksik bağımsız değişken listesi  
-  
- Statik olmayan üye fonksiyonu içinde yıkıcı veya sonlandırıcıyı çağrısı bir bağımsız değişken listesi sahip değil.  
-  
- Aşağıdaki örnek C3866 oluşturur:  
-  
-```  
-// C3866.cpp  
-// compile with: /c  
-class C {  
-   ~C();  
-   void f() {  
-      this->~C;   // C3866  
-      this->~C();   // OK  
-   }  
-};  
+
+bağımsız değişken listesi eksik işlev çağrısı
+
+Bir statik olmayan üye işlev içinde bir yıkıcı veya Sonlandırıcı çağrısı bir bağımsız değişken listesi yok.
+
+Aşağıdaki örnek, C3866 oluşturur:
+
+```
+// C3866.cpp
+// compile with: /c
+class C {
+   ~C();
+   void f() {
+      this->~C;   // C3866
+      this->~C();   // OK
+   }
+};
 ```

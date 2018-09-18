@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bc4004be27a057c96d9c10e7e7f261d8a5ddebe
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: bb2d345e0bb8be8f5150d48237df9845acf451dd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761358"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036182"
 ---
 # <a name="ccomcontrol-class"></a>CComControl sınıfı
 
@@ -46,17 +46,17 @@ Bu sınıf, oluşturmak ve ATL denetimleri yönetmek için yöntemler sağlar.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class WinBase = CWindowImpl<T>>  
+template <class T, class WinBase = CWindowImpl<T>>
 class ATL_NO_VTABLE CComControl : public CComControlBase,
     public WinBase;
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Denetimi uygulamak sınıfı.
 
-*WinBase*  
+*WinBase*<br/>
 Pencereleme işlevleri uygulayan temel sınıf. Varsayılan olarak [Cwindowımpl](../../atl/reference/cwindowimpl-class.md).
 
 ## <a name="members"></a>Üyeler
@@ -119,10 +119,10 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabiriminin GUID'si.
 
-*ppv*  
+*ppv*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*, veya arabirim bulunamazsa NULL.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -143,10 +143,10 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 
 ### <a name="parameters"></a>Parametreler
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] Üst veya sahibi penceresine işleyin. Geçerli pencere tanıtıcısı sağlanmalıdır. Denetimi pencerenin üst pencereye bölgesine sınırlıdır.
 
-*rcPos*  
+*rcPos*<br/>
 [in] Oluşturulacak pencerenin konumunu ve ilk boyutu.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -167,7 +167,7 @@ HRESULT FireOnChanged(DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*dispID*  
+*dispID*<br/>
 [in] Değişen özellik tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -194,7 +194,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 
 ### <a name="parameters"></a>Parametreler
 
-*dispID*  
+*dispID*<br/>
 [in] Değişmek üzere özellik tanımlayıcısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -203,7 +203,7 @@ Standart HRESULT değerlerinden biri.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özelliği hakkında değiştirmektir. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür.  
+Denetim sınıfınıza türetildiği varsa [Ipropertynotifysink](/windows/desktop/api/ocidl/nn-ocidl-ipropertynotifysink), bu yöntemin çağırdığı [CFirePropNotifyEvent::FireOnRequestEdit](cfirepropnotifyevent-class.md#fireonrequestedit) tüm bildirmek için bağlı `IPropertyNotifySink` , arabirimleri belirtilen Denetim özelliği hakkında değiştirmektir. Denetim sınıfınıza türünden türemez varsa `IPropertyNotifySink`, bu yöntem S_OK döndürür.
 
 Bu yöntem, denetim bağlantı noktalarını desteklemiyor olsa bile çağrılması güvenlidir.
 
@@ -224,13 +224,13 @@ int MessageBox(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszText*  
+*lpszText*<br/>
 İleti kutusunda görüntülenecek metin.
 
-*lpszCaption*  
+*lpszCaption*<br/>
 İletişim kutusu başlığı. Değilse boş (varsayılan), başlığı "Error" kullanılır.
 
-*nTür*  
+*nTür*<br/>
 İçeriği ve iletişim kutusunu davranışını belirtir. Bkz: [MessageBox](/windows/desktop/api/winuser/nf-winuser-messagebox) kullanılabilir farklı ileti kutuları bir listesi için Windows SDK belgelerine girişi. Basit bir varsayılan sağlar **Tamam** düğmesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -243,7 +243,7 @@ Bir menü öğesi altında listelenen değerleri belirten bir tamsayı değeri d
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Cwindowımpl sınıfı](../../atl/reference/cwindowimpl-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[CComControlBase sınıfı](../../atl/reference/ccomcontrolbase-class.md)   
+[CWindowImpl Sınıfı](../../atl/reference/cwindowimpl-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[CComControlBase Sınıfı](../../atl/reference/ccomcontrolbase-class.md)<br/>
 [CComCompositeControl Sınıfı](../../atl/reference/ccomcompositecontrol-class.md)

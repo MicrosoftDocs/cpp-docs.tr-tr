@@ -1083,21 +1083,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 25a68bb459122ea83d9be2491cb5fadaaf8a00c0
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1496fa844106b78e2a5dc735fad0cc33923aea53
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465739"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035766"
 ---
 # <a name="schema-rowset-classes-and-typedef-classes"></a>Şema Satır Kümesi Sınıfları ve Typedef Sınıfları
+
 Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan veritabanı nesneleri koleksiyonudur. Katalog, bir veya daha fazla şemalar içerebilir, ancak her zaman bilgi şemasının etki alanlarını ve görünümleri içeren INFORMATION_SCHEMA adlı bir şema içermelidir. OLE DB şema bilgileri önceden tanımlı bir şema satır kümeleri kullanarak alınır ve türleri, tablolar, sütunlar, dizinleri, görünümleri, onaylamalar ve kısıtlamaları, istatistikleri, karakter kümesi, harmanlamaları ve etki alanları içerir.  
   
- Şema satır kümeleri meta verileri temsil eden önceden tanımlanmış satır var. Şema satır kümeleri, burada veritabanı yapısı derleme zamanında bilinmeyen dinamik programlama, genel olarak kullanılır. Çalışma zamanında bir veritabanı hakkında bilgi edinmek için bu şema satır kümeleri'ni kullanabilirsiniz.  
+Şema satır kümeleri meta verileri temsil eden önceden tanımlanmış satır var. Şema satır kümeleri, burada veritabanı yapısı derleme zamanında bilinmeyen dinamik programlama, genel olarak kullanılır. Çalışma zamanında bir veritabanı hakkında bilgi edinmek için bu şema satır kümeleri'ni kullanabilirsiniz.  
   
- Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.  
+Şema satır kümeleri oluşturmak için bir typedef sınıfları kullanın. Şema satır kümesi sınıfları ve typedef karşılık gelen aşağıda listelenmiştir. Çağırmalısınız [CRestrictions::Open](../../data/oledb/crestrictions-open.md) şeması satır kümesi örneğini oluşturduktan sonra. Bu yöntem, belirttiğiniz kısıtlamalara göre bir sonuç kümesi döndürür. Bkz: [IDBSchemaRowset](/previous-versions/windows/desktop/ms713686\(v=vs.85\)) her şeması satır kümesi ile ilişkili kısıtlama sütunlar hakkında bilgi için.  
   
- Aşağıdaki tabloda her OLE DB şeması satır kümesi ve kendi ilişkili görüntüler OLE DB Şablonları typedef sınıfı ve Info sınıfı.  
+Aşağıdaki tabloda her OLE DB şeması satır kümesi ve kendi ilişkili görüntüler OLE DB Şablonları typedef sınıfı ve Info sınıfı.  
   
 |OLE DB şeması satır kümesi|TypeDef sınıfı|Info sınıfı|  
 |--------------------------|-------------------|----------------|  
@@ -1133,14 +1134,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |[VIEW_TABLE_USAGE](/previous-versions/windows/desktop/ms719727\(v=vs.85\))|[CViewTableUsage](#viewtable)|[Cviewtableınfo](#viewtable)|  
   
 ## <a name="assertion"></a> CAssertions, Cassertionınfo
+
 Çağrı typedef sınıfı `CAssertions` kendi parametre sınıfı uygulamak için `CAssertionInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya ait onaylar Kataloğu'nda tanımlanan tanımlar.  
+Bu sınıf belirli bir kullanıcıya ait onaylar Kataloğu'nda tanımlanan tanımlar.  
   
- Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](/previous-versions/windows/desktop/ms719776\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tablo için sınıf veri üyeleri listeler `CAssertionInfo` ve bunların karşılık gelen OLE DB sütunlarını. Bkz: [ONAYLAR satır kümesi](/previous-versions/windows/desktop/ms719776\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1152,14 +1155,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="catalog"></a> CCatalogs, Ccatalogınfo
+
 Çağrı typedef sınıfı `CCatalogs` kendi parametre sınıfı uygulamak için `CCatalogInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf DBMS erişilebilir kataloglar ile ilişkilendirilmiş fiziksel öznitelikleri tanımlar.  
+Bu sınıf DBMS erişilebilir kataloglar ile ilişkilendirilmiş fiziksel öznitelikleri tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](/previous-versions/windows/desktop/ms721241\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KATALOGLARI satır kümesi](/previous-versions/windows/desktop/ms721241\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1167,14 +1172,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="characterset"></a> CCharacterSets, Ccharactersetınfo
+
 Çağrı typedef sınıfı `CCharacterSets` kendi parametre sınıfı uygulamak için `CCharacterSetInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan karakter kümesini tanımlar.  
+Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan karakter kümesini tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](/previous-versions/windows/desktop/ms722638\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHARACTER_SETS satır kümesi](/previous-versions/windows/desktop/ms722638\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1188,14 +1195,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szCollateName|DEFAULT_COLLATE_NAME|  
 
 ## <a name="checkconstraint"></a> CCheckConstraints, Ccheckconstraintınfo
+
 Çağrı typedef sınıfı `CCheckConstraints` kendi parametre sınıfı uygulamak için `CCheckConstraintInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan denetim kısıtlamalarında, tanımlar. Bir denetim kısıtlaması, bir tablodaki bir veya daha fazla sütun olarak kabul edilen biçimler ve veri değerleri belirtir.  
+Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan denetim kısıtlamalarında, tanımlar. Bir denetim kısıtlaması, bir tablodaki bir veya daha fazla sütun olarak kabul edilen biçimler ve veri değerleri belirtir.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms712845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CHECK_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms712845\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1206,14 +1215,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="collation"></a> CCollations, Ccollationınfo
+
 Çağrı typedef sınıfı `CCollations` kendi parametre sınıfı uygulamak için `CCollationInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter harmanlamalara, tanımlar.  
+Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter harmanlamalara, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](/previous-versions/windows/desktop/ms715783\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [HARMANLAMALARI satır kümesi](/previous-versions/windows/desktop/ms715783\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1226,14 +1237,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szPadAttribute|PAD_ATTRIBUTE|  
 
 ## <a name="columndomainusage"></a> CColumnDomainUsage, Ccolumndomainusageınfo
+
 Çağrı typedef sınıfı `CColumnDomainUsage` kendi parametre sınıfı uygulamak için `CColumnDomainUsageInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait bir etki alanı bağımlı Kataloğu'nda tanımlanan sütunları tanımlar.  
+Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait bir etki alanı bağımlı Kataloğu'nda tanımlanan sütunları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](/previous-versions/windows/desktop/ms711240\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_DOMAIN_USAGE satır kümesi](/previous-versions/windows/desktop/ms711240\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1248,14 +1261,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_nColumnPropID|COLUMN_PROPID|  
 
 ## <a name="columnprivilege"></a> CColumnPrivileges, Ccolumnprivilegeınfo
+
 Çağrı typedef sınıfı `CColumnPrivileges` kendi parametre sınıfı uygulamak için `CColumnPrivilegeInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, ayrıcalıkların kullanımına veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tabloları, sütunları tanımlar.  
+Bu sınıf, ayrıcalıkların kullanımına veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tabloları, sütunları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms715800\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [COLUMN_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms715800\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1271,14 +1286,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="columns"></a> CColumns, Ccolumnsınfo
+
 Çağrı typedef sınıfı `CColumns` kendi parametre sınıfı uygulamak için `CColumnsInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcının erişebildiği tablo sütunlarını tanımlar.  
+Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcının erişebildiği tablo sütunlarını tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SÜTUNLARIN satır](/previous-versions/windows/desktop/ms723052\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1312,14 +1329,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
   
 ## <a name="constraintcolumnusage"></a> CConstraintColumnUsage, Cconstraintcolumnusageınfo
+
 Çağrı typedef sınıfı `CConstraintColumnUsage` kendi parametre sınıfı uygulamak için `CConstraintColumnUsageInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait sütunlarını tanımlar.  
+Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait sütunlarını tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1334,14 +1353,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szConstraintName|CONSTRAINT_NAME|  
 
 ## <a name="constrainttableusage"></a> CConstraintTableUsage, Cconstrainttableusageınfo
+
 Çağrı typedef sınıfı `CConstraintTableUsage` kendi parametre sınıfı uygulamak için `CConstraintTableUsageInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait tabloları tanımlar.  
+Bu sınıf, başvuru kısıtlamalarını, benzersiz kısıtlamalar, Denetim kısıtlamalarını ve onaylar tarafından kullanılan ve Kataloğu'nda tanımlanan belirli bir kullanıcıya ait tabloları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [CONSTRAINT_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms724522\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1353,14 +1374,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szConstraintName|CONSTRAINT_NAME|  
 
 ## <a name="foreignkeys"></a> CForeignKeys, Cforeignkeysınfo
+
 Çağrı typedef sınıfı `CForeignKeys` kendi parametre sınıfı uygulamak için `CForeignKeysInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan yabancı anahtar sütunları tanımlar.  
+Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan yabancı anahtar sütunları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](/previous-versions/windows/desktop/ms711276\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [FOREIGN_KEYS satır kümesi](/previous-versions/windows/desktop/ms711276\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1381,14 +1404,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDeleteRule|DELETE_RULE|  
 
 ## <a name="index"></a> Cındexes, Cındexınfo
+
 Çağrı typedef sınıfı `CIndexes` kendi parametre sınıfı uygulamak için `CIndexInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan dizin, tanımlar.  
+Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan dizin, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](/previous-versions/windows/desktop/ms709712\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [DİZİNLERİ satır kümesi](/previous-versions/windows/desktop/ms709712\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1418,14 +1443,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szFilterCondition|FILTER_CONDITION|  
   
 ## <a name="keycolumn"></a> CKeyColumns, Ckeycolumnınfo
+
 Çağrı typedef sınıfı `CKeyColumns` kendi parametre sınıfı uygulamak için `CKeyColumnInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf anahtarı olarak belirli bir kullanıcı tarafından kısıtlanmıştır Kataloğu'nda tanımlanan sütunları, tanımlar.  
+Bu sınıf anahtarı olarak belirli bir kullanıcı tarafından kısıtlanmıştır Kataloğu'nda tanımlanan sütunları, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms712990\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [KEY_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms712990\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1441,14 +1468,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_nOrdinalPosition|ORDINAL_POSITION|  
 
 ## <a name="primarykey"></a> CPrimaryKeys, Cprimarykeyınfo
+
 Çağrı typedef sınıfı `CPrimaryKeys` kendi parametre sınıfı uygulamak için `CPrimaryKeyInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan birincil anahtar sütunlarını tanımlar.  
+Bu sınıf, katalogda belirli bir kullanıcı tarafından tanımlanan birincil anahtar sütunlarını tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](/previous-versions/windows/desktop/ms714362\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PRIMARY_KEYS satır kümesi](/previous-versions/windows/desktop/ms714362\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1461,14 +1490,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_nOrdinal|SIRA|  
 
 ## <a name="procedurecolumn"></a> CProcedureColumns, Cprocedurecolumnınfo
+
 Çağrı typedef sınıfı `CProcedureColumns` kendi parametre sınıfı uygulamak için `CProcedureColumnInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, sütunları yordamları tarafından döndürülen satır kümeleri hakkında bilgi döndürür.  
+Bu sınıf, sütunları yordamları tarafından döndürülen satır kümeleri hakkında bilgi döndürür.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](/previous-versions/windows/desktop/ms723092\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_COLUMNS satır kümesi](/previous-versions/windows/desktop/ms723092\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1490,14 +1521,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="procedureparam"></a> CProcedureParameters Cprocedureparamınfo
+
 Çağrı typedef sınıfı `CProcedureParameters` kendi parametre sınıfı uygulamak için `CProcedureParamInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, parametreleri ve dönüş kodları yordamlar hakkında bilgi döndürür.  
+Bu sınıf, parametreleri ve dönüş kodları yordamlar hakkında bilgi döndürür.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](/previous-versions/windows/desktop/ms713623\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [PROCEDURE_PARAMETERS satır kümesi](/previous-versions/windows/desktop/ms713623\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1518,14 +1551,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="procedure"></a> CProcedures, Cprocedureınfo
+
 Çağrı typedef sınıfı `CProcedures` kendi parametre sınıfı uygulamak için `CProcedureInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait yordamlar, tanımlar.  
+Bu sınıf, Kataloğu'nda tanımlanan ve belirli bir kullanıcıya ait yordamlar, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](/previous-versions/windows/desktop/ms724021\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [YORDAMLARI satır kümesi](/previous-versions/windows/desktop/ms724021\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1537,14 +1572,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="provider"></a> CProviderTypes, Cproviderınfo
+
 Çağrı typedef sınıfı `CProviderTypes` kendi parametre sınıfı uygulamak için `CProviderInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, veri sağlayıcısı tarafından desteklenen (Temel) veri türlerini tanımlar.  
+Bu sınıf, veri sağlayıcısı tarafından desteklenen (Temel) veri türlerini tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](/previous-versions/windows/desktop/ms709785\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [provıder_types satır kümesi](/previous-versions/windows/desktop/ms709785\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1570,14 +1607,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_bBestMatch|BEST_MATCH|  
 
 ## <a name="referentialconstraint"></a> CReferentialConstraints, Creferentialconstraintınfo
+
 Çağrı typedef sınıfı `CReferentialConstraints` kendi parametre sınıfı uygulamak için `CReferentialConstraintInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan başvuru kısıtlamalarını, tanımlar.  
+Bu sınıf, belirli bir kullanıcı tarafından sahip olduğu Kataloğu'nda tanımlanan başvuru kısıtlamalarını, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms719737\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [REFERENTIAL_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms719737\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1593,14 +1632,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="schemata"></a> CSchemata, Cschemataınfo
+
 Çağrı typedef sınıfı `CSchemata` kendi parametre sınıfı uygulamak için `CSchemataInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya ait şemalar tanımlar.  
+Bu sınıf belirli bir kullanıcıya ait şemalar tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](/previous-versions/windows/desktop/ms716887\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ŞEMALARIN satır kümesi](/previous-versions/windows/desktop/ms716887\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1612,14 +1653,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szCharName|DEFAULT_CHARACTER_SET_NAME|  
 
 ## <a name="sqllanguage"></a> CSQLLanguages, Csqllanguageınfo
+
 Çağrı typedef sınıfı `CSQLLanguages` kendi parametre sınıfı uygulamak için `CSQLLanguageInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, uyumluluk düzeyleri, seçeneklerini ve SQL uygulama işleme veri Kataloğu'nda tanımlanan tarafından desteklenen diyalektleri tanımlar.  
+Bu sınıf, uyumluluk düzeyleri, seçeneklerini ve SQL uygulama işleme veri Kataloğu'nda tanımlanan tarafından desteklenen diyalektleri tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](/previous-versions/windows/desktop/ms714374\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [SQL_LANGUAGES satır kümesi](/previous-versions/windows/desktop/ms714374\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1632,14 +1675,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szProgrammingLanguage|SQL_LANGUAGE_PROGRAMMING_LANGUAGE|  
 
 ## <a name="statistic"></a> CStatistics, Cstatisticınfo
+
 Çağrı typedef sınıfı `CStatistics` kendi parametre sınıfı uygulamak için `CStatisticInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan istatistikleri, tanımlar.  
+Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan istatistikleri, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](/previous-versions/windows/desktop/ms715957\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [İSTATİSTİKLERİ satır kümesi](/previous-versions/windows/desktop/ms715957\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1649,14 +1694,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_nCardinality|ÖNEM DÜZEYİ|  
 
 ## <a name="tableconstraint"></a> CTableConstraints, Ctableconstraintınfo
+
 Çağrı typedef sınıfı `CTableConstraints` kendi parametre sınıfı uygulamak için `CTableConstraintInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan tablo kısıtlamaları, tanımlar.  
+Bu sınıf belirli bir kullanıcıya ait Kataloğu'nda tanımlanan tablo kısıtlamaları, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms715921\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_CONSTRAINTS satır kümesi](/previous-versions/windows/desktop/ms715921\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1672,14 +1719,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="tableprivilege"></a> CTablePrivileges, Ctableprivilegeınfo
+
 Çağrı typedef sınıfı `CTablePrivileges` kendi parametre sınıfı uygulamak için `CTablePrivilegeInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, Kataloğu'nda tanımlanan belirli bir kullanıcının erişebildiği tabloları tanımlar.  
+Bu sınıf, Kataloğu'nda tanımlanan belirli bir kullanıcının erişebildiği tabloları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms725428\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [TABLE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms725428\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1692,14 +1741,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="table"></a> CTables, Ctableınfo
+
 Çağrı typedef sınıfı `CTables` kendi parametre sınıfı uygulamak için `CTableInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf, kullanılabilir ya da belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tablolarda ayrıcalıkları tanımlar.  
+Bu sınıf, kullanılabilir ya da belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan tablolarda ayrıcalıkları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](/previous-versions/windows/desktop/ms716980\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [tablolar satır kümesi](/previous-versions/windows/desktop/ms716980\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1711,14 +1762,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="translation"></a> CTranslations, Ctranslationınfo
+
 Çağrı typedef sınıfı `CTranslations` kendi parametre sınıfı uygulamak için `CTranslationInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter çevirilerini tanımlar.  
+Bu sınıf belirli bir kullanıcıya erişilebilir Kataloğu'nda tanımlanan karakter çevirilerini tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](/previous-versions/windows/desktop/ms725365\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [ÇEVİRİLERİ satır kümesi](/previous-versions/windows/desktop/ms725365\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1733,14 +1786,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szTargetName|TARGET_CHARACTER_SET_NAME|  
 
 ## <a name="usageprivilege"></a> CUsagePrivileges, Cusageprivilegeınfo
+
 Çağrı typedef sınıfı `CUsagePrivileges` kendi parametre sınıfı uygulamak için `CUsagePrivilegeInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf için kullanılabilir veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan nesneler üzerinde kullanım ayrıcalıkları tanımlar.  
+Bu sınıf için kullanılabilir veya belirli bir kullanıcı tarafından verilen Kataloğu'nda tanımlanan nesneler üzerinde kullanım ayrıcalıkları tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms722743\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [USAGE_PRIVILEGES satır kümesi](/previous-versions/windows/desktop/ms722743\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1754,14 +1809,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_bIsGrantable|IS_GRANTABLE|  
 
 ## <a name="viewcolumn"></a> CViewColumnUsage, Cviewcolumnınfo
+
 Çağrı typedef sınıfı `CViewColumnUsage` kendi parametre sınıfı uygulamak için `CViewColumnInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf sütunlar üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.  
+Bu sınıf sütunlar üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms714896\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_COLUMN_USAGE satır kümesi](/previous-versions/windows/desktop/ms714896\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1776,14 +1833,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_nColumnPropID|COLUMN_PROPID|  
 
 ## <a name="view"></a> CViews, Cviewınfo
+
 Çağrı typedef sınıfı `CViews` kendi parametre sınıfı uygulamak için `CViewInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf tabloları üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.  
+Bu sınıf tabloları üzerinde tablolar, Kataloğu'nda tanımlanan görüntülenebilir ve belirli bir kullanıcıya ait bağımlı tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](/previous-versions/windows/desktop/ms723122\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [görünümleri satır kümesi](/previous-versions/windows/desktop/ms723122\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi için.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1796,14 +1855,16 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szDescription|AÇIKLAMASI|  
 
 ## <a name="viewtable"></a> CViewTableUsage, Cviewtableınfo
+
 Çağrı typedef sınıfı `CViewTableUsage` kendi parametre sınıfı uygulamak için `CViewTableInfo`.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
+
+Bkz: [şeması satır kümesi sınıfları ve Typedef sınıfları](../../data/oledb/schema-rowset-classes-and-typedef-classes.md) typedef sınıfları kullanma hakkında daha fazla bilgi için.  
   
- Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan görüntülenen tabloları, tanımlar.  
+Bu sınıf belirli bir kullanıcı erişimine açık olan Kataloğu'nda tanımlanan görüntülenen tabloları, tanımlar.  
   
- Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms719727\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
+Aşağıdaki tabloda, sınıf veri üyeleri ve bunların karşılık gelen OLE DB sütunlarını listeler. Bkz: [VIEW_TABLE_USAGE satır kümesi](/previous-versions/windows/desktop/ms719727\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* sütunları ve şeması hakkında daha fazla bilgi.  
   
 |Veri üyeleri|OLE DB sütunları|  
 |------------------|--------------------|  
@@ -1815,7 +1876,9 @@ Bir şema, sahip olduğu ya da belirli bir kullanıcı tarafından oluşturulan 
 |m_szTableName|TABLE_NAME|  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbsch.h  
+
+**Başlık:** atldbsch.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)
+
+[CRestrictions Sınıfı](../../data/oledb/crestrictions-class.md)

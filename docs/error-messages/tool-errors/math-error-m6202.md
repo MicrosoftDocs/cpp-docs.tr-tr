@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4596b9782bc1de0e6ccd52bfcd03965415adb353
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 328336e61c299cf9b9816ddfce7212f1798eae37
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33332058"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058555"
 ---
 # <a name="math-error-m6202"></a>Matematik Hatası M6202
-'function': _sıng hata  
-  
- Verilen işlevin bağımsız değişken singularity değeri bu işlev için idi. İşlevi, bağımsız değişkeni için tanımlı değil.  
-  
- Bu hata çağırır `_matherr` işlevi işlev adı, bağımsız değişkenlerini ve hata türü. Yeniden yazana `_matherr` belirli çalışma zamanı kayan nokta Matematiği hatalarının işlenmesini özelleştirmek için işlevi.
+
+'function': _sıng hata
+
+Verilen işlevin bağımsız değişkeni, bu işlev için singularity değerindeydi. İşlevi, bağımsız değişkeni tanımlanmadı.
+
+Bu hata çağırır `_matherr` işlevi işlev adı, bağımsız ve hata türü. Yeniden yazabilirsiniz `_matherr` belirli çalışma zamanı kayan nokta matematik hataları işleme özelleştirmek için işlevi.

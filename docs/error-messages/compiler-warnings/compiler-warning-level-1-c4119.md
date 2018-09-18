@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14a6f53c77c3139c6634f771a09eacb3027b74de
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d42e04feece0184ba0d36888c4daa4ccade45abe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061339"
 ---
 # <a name="compiler-warning-level-1-c4119"></a>Derleyici Uyarısı (düzey 1) C4119
-farklı Tabanları 'base1' ve 'belirtilen base2'  
-  
- İki tabanlı işaretçiler farklı temellerine sahip olduğundan uyumlu değil. Derleyici aralarında dönüştürülemiyor.
+
+farklı Tabanları 'base1' ve 'belirtilen base2'
+
+İki tabanlı işaretçiler, sahip oldukları farklı tabanları uyumsuzdur. Derleyici, aralarında dönüştürülemiyor.

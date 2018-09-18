@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf09696f6a13c11fbb37fa6e89ccb9b1241cadd0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b38aabbb418a355f85917a2d287c2f473cb2e7df
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751549"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062923"
 ---
 # <a name="ccomheap-class"></a>CComHeap sınıfı
 
@@ -80,7 +80,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -103,7 +103,7 @@ virtual void Free(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi. NULL, geçerli bir değer ve hiçbir şey yapmaz.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -120,7 +120,7 @@ virtual size_t GetSize(void* p) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -141,10 +141,10 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*p*  
+*p*<br/>
 Bu bellek yöneticisi tarafından önceden ayrılan bellek işaretçisi.
 
-*nBytes*  
+*nBytes*<br/>
 İstenen bayt yeni bellek bloğu sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -159,10 +159,10 @@ Kullanılarak uygulanan [CoTaskMemRealloc](/windows/desktop/api/combaseapi/nf-co
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[DynamicConsumer örnek](../../visual-cpp-samples.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[CWin32Heap sınıfı](../../atl/reference/cwin32heap-class.md)   
-[CLocalHeap sınıfı](../../atl/reference/clocalheap-class.md)   
-[CGlobalHeap sınıfı](../../atl/reference/cglobalheap-class.md)   
-[CCRTHeap sınıfı](../../atl/reference/ccrtheap-class.md)   
+[DynamicConsumer örnek](../../visual-cpp-samples.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[CWin32Heap Sınıfı](../../atl/reference/cwin32heap-class.md)<br/>
+[CLocalHeap Sınıfı](../../atl/reference/clocalheap-class.md)<br/>
+[CGlobalHeap Sınıfı](../../atl/reference/cglobalheap-class.md)<br/>
+[CCRTHeap Sınıfı](../../atl/reference/ccrtheap-class.md)<br/>
 [IAtlMemMgr Sınıfı](../../atl/reference/iatlmemmgr-class.md)

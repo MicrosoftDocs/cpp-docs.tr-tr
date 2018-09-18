@@ -18,62 +18,68 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 4983234cdbc64f4ca8364c5afcc2d8e735ba2d01
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3f9e5ac3d0a7f640ba9d7361d755763bd68dd728
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465724"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042201"
 ---
 # <a name="ole-db-provider-templates-c"></a>OLE DB Sağlayıcı Şablonları (C++)
+
 OLE DB, Microsoft evrensel veri erişimi stratejisinin önemli bir parçasıdır. OLE DB tasarım herhangi bir veri kaynağından yüksek performanslı veri erişimi sağlar. Hiç tablo verisi, bir veritabanından gelen bağımsız olarak OLE DB aracılığıyla görüntülenebilir. Esneklik, İnanılmaz derecede güç sağlar.  
   
- İçinde anlatıldığı gibi [OLE DB Tüketicileri ve sağlayıcıları](../../data/oledb/ole-db-consumers-and-providers.md), OLE DB Tüketicileri ve sağlayıcıları kavramını kullanır. Tüketici veri istekleri yapar; Sağlayıcı, tüketiciye verileri tablo biçiminde döndürür. Programlama açısından bakıldığında, bu modelin en önemli olduğu çıkarımında sağlayıcı tüketici yapabilirsiniz tüm çağrıların uygulamalıdır olur.  
+İçinde anlatıldığı gibi [OLE DB Tüketicileri ve sağlayıcıları](../../data/oledb/ole-db-consumers-and-providers.md), OLE DB Tüketicileri ve sağlayıcıları kavramını kullanır. Tüketici veri istekleri yapar; Sağlayıcı, tüketiciye verileri tablo biçiminde döndürür. Programlama açısından bakıldığında, bu modelin en önemli olduğu çıkarımında sağlayıcı tüketici yapabilirsiniz tüm çağrıların uygulamalıdır olur.  
   
 ## <a name="what-is-a-provider"></a>Sağlayıcısı nedir?  
- Bir OLE DB sağlayıcısı bir tüketici nesnesinden arabirimi çağrıları hizmet COM nesneleri verileri bir tablosal biçimde (bir veri deposu olarak adlandırılır), dayanıklı bir kaynaktan tüketiciye aktarma kümesidir.  
+
+Bir OLE DB sağlayıcısı bir tüketici nesnesinden arabirimi çağrıları hizmet COM nesneleri verileri bir tablosal biçimde (bir veri deposu olarak adlandırılır), dayanıklı bir kaynaktan tüketiciye aktarma kümesidir.  
   
- Sağlayıcıları, basit veya karmaşık olabilir. Sağlayıcı işlevselliği ya da tam gelişmiş üretim kalitesinde sağlayıcısına en az miktarda daha fazla arabirim uygulayarak destekler. Sağlayıcı bir tablo döndürür, bu tabloyu biçimini belirlemek için istemcinin izin ve bu veri işlemleri.  
+Sağlayıcıları, basit veya karmaşık olabilir. Sağlayıcı işlevselliği ya da tam gelişmiş üretim kalitesinde sağlayıcısına en az miktarda daha fazla arabirim uygulayarak destekler. Sağlayıcı bir tablo döndürür, bu tabloyu biçimini belirlemek için istemcinin izin ve bu veri işlemleri.  
   
- Standart bir standart anlama sahip istemci dil (C++ gibi ve temel) bağımsız olarak herhangi bir sağlayıcıdan gelen tüm OLE DB Tüketici veri erişebilirsiniz istekleri işlemek için COM nesnelerinin her bir sağlayıcı uygular.  
+Standart bir standart anlama sahip istemci dil (C++ gibi ve temel) bağımsız olarak herhangi bir sağlayıcıdan gelen tüm OLE DB Tüketici veri erişebilirsiniz istekleri işlemek için COM nesnelerinin her bir sağlayıcı uygular.  
   
- Her bir COM nesnesi bazıları gereklidir ve bazıları isteğe bağlı olan birkaç arabirimleri içerir. Zorunlu arabirimleri uygulayan bir sağlayıcı, herhangi bir istemci kullanabilir (uyumluluk denir) işlevselliği asgari düzeyde garanti eder. Bir sağlayıcı ek işlevsellik sağlamak için isteğe bağlı arabirimler uygulayabilirsiniz. [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md) ayrıntılı Bu arabirimler açıklanmaktadır. İstemci her zaman çağırmalıdır `QueryInterface` bir sağlayıcının belirli bir arabirim destekleyip desteklemediğini belirlemek için.  
+Her bir COM nesnesi bazıları gereklidir ve bazıları isteğe bağlı olan birkaç arabirimleri içerir. Zorunlu arabirimleri uygulayan bir sağlayıcı, herhangi bir istemci kullanabilir (uyumluluk denir) işlevselliği asgari düzeyde garanti eder. Bir sağlayıcı ek işlevsellik sağlamak için isteğe bağlı arabirimler uygulayabilirsiniz. [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md) ayrıntılı Bu arabirimler açıklanmaktadır. İstemci her zaman çağırmalıdır `QueryInterface` bir sağlayıcının belirli bir arabirim destekleyip desteklemediğini belirlemek için.  
   
 ## <a name="ole-db-specification-level-support"></a>OLE DB belirtim düzeyinde destek  
- OLE DB sağlayıcı şablonları, OLE DB sürüm 2.7 belirtimini destekler. OLE DB sağlayıcı şablonları kullanarak, bir düzey 0 uyumlu sağlayıcısı uygulayabilirsiniz. Sağlayıcı örneği, örneğin, dosya sistemini sorgulamaya DOS DIR komutunu yürüten bir non-MS-DOS komut sunucusu uygulamak için şablonlar kullanır. Sağlayıcı örneği tablo veri döndürmek için standart OLE DB mekanizması bir satır kümesi dizin bilgileri döndürür.  
+
+OLE DB sağlayıcı şablonları, OLE DB sürüm 2.7 belirtimini destekler. OLE DB sağlayıcı şablonları kullanarak, bir düzey 0 uyumlu sağlayıcısı uygulayabilirsiniz. Sağlayıcı örneği, örneğin, dosya sistemini sorgulamaya DOS DIR komutunu yürüten bir non-MS-DOS komut sunucusu uygulamak için şablonlar kullanır. Sağlayıcı örneği tablo veri döndürmek için standart OLE DB mekanizması bir satır kümesi dizin bilgileri döndürür.  
   
- OLE DB Şablonları tarafından desteklenen en basit türü ile hiçbir komut salt okunur bir sağlayıcıdır. Yer işareti ekleme ve okuma/yazma yeteneği gibi komutları sağlayıcılarıyla de desteklenir. Okuma/yazma sağlayıcısı, ek kod yazarak uygulayabilirsiniz. Dinamik satır kümeleri ve işlem geçerli sürümü tarafından desteklenmiyor, ancak isterseniz bunları ekleyebilirsiniz.  
+OLE DB Şablonları tarafından desteklenen en basit türü ile hiçbir komut salt okunur bir sağlayıcıdır. Yer işareti ekleme ve okuma/yazma yeteneği gibi komutları sağlayıcılarıyla de desteklenir. Okuma/yazma sağlayıcısı, ek kod yazarak uygulayabilirsiniz. Dinamik satır kümeleri ve işlem geçerli sürümü tarafından desteklenmiyor, ancak isterseniz bunları ekleyebilirsiniz.  
   
 ## <a name="when-do-you-need-to-create-an-ole-db-provider"></a>OLE DB sağlayıcısı oluşturmak ne zaman ihtiyacınız var?  
- Her zaman kendi sağlayıcısı oluşturmanız gerekmez; Microsoft, birkaç önceden paketlenmiş, standart sağlayıcı sağlar **veri bağlantı özellikleri** Visual C++'ta iletişim kutusu. Evrensel veri erişimi stratejisi yararlanmak için bir OLE DB sağlayıcısı oluşturmak için temel nedeni olan. Bu nedenle bunun avantajlarından bazıları şunlardır:  
+
+Her zaman kendi sağlayıcısı oluşturmanız gerekmez; Microsoft, birkaç önceden paketlenmiş, standart sağlayıcı sağlar **veri bağlantı özellikleri** Visual C++'ta iletişim kutusu. Evrensel veri erişimi stratejisi yararlanmak için bir OLE DB sağlayıcısı oluşturmak için temel nedeni olan. Bu nedenle bunun avantajlarından bazıları şunlardır:  
   
--   C++, Basic ve Visual Basic Scripting Edition gibi herhangi bir dilde aracılığıyla verilere erişme. Kuruluşunuzdaki farklı programcılar aynı şekilde, bakılmaksızın aynı verilere erişmek için kullandıkları hangi dillerden sağlar.  
+- C++, Basic ve Visual Basic Scripting Edition gibi herhangi bir dilde aracılığıyla verilere erişme. Kuruluşunuzdaki farklı programcılar aynı şekilde, bakılmaksızın aynı verilere erişmek için kullandıkları hangi dillerden sağlar.  
   
--   SQL Server, Excel ve erişim gibi diğer verileri, verilerin ifşa kaynakları. Bu, farklı biçimler arasında veri aktarmak istiyorsanız yararlı olabilir.  
+- SQL Server, Excel ve erişim gibi diğer verileri, verilerin ifşa kaynakları. Bu, farklı biçimler arasında veri aktarmak istiyorsanız yararlı olabilir.  
   
--   Çapraz-veri kaynağı (heterojen) işlemlerine katılma. Bu, veri ambarlama için etkili bir yol olabilir. OLE DB sağlayıcıları kullanarak, verileri kendi yerel biçiminde tutmak ve yine de basit bir işlemle erişebilir.  
+- Çapraz-veri kaynağı (heterojen) işlemlerine katılma. Bu, veri ambarlama için etkili bir yol olabilir. OLE DB sağlayıcıları kullanarak, verileri kendi yerel biçiminde tutmak ve yine de basit bir işlemle erişebilir.  
   
--   Verilerinizi sorgu işleme gibi ek özellikler ekliyor.  
+- Verilerinizi sorgu işleme gibi ek özellikler ekliyor.  
   
--   Değişiklikleri denetleyerek veri erişimi performans artırma.  
+- Değişiklikleri denetleyerek veri erişimi performans artırma.  
   
--   Sağlamlık artırma. Özel veri biçimi varsa tek programcının erişebilir, risk altındadır. OLE DB Sağlayıcısı'nı kullanarak bu özel biçimi, programcılar için açabilirsiniz.  
+- Sağlamlık artırma. Özel veri biçimi varsa tek programcının erişebilir, risk altındadır. OLE DB Sağlayıcısı'nı kullanarak bu özel biçimi, programcılar için açabilirsiniz.  
   
 ## <a name="read-only-and-updatable-providers"></a>Salt okunur ve güncelleştirilebilir sağlayıcılar  
- Sağlayıcıları, karmaşıklığı ve işlevselliği önemli ölçüde farklılık gösterebilir. Sağlayıcıları salt okunur sağlayıcılar ve güncelleştirilebilir sağlayıcılar kategorilere ayırma kullanışlıdır:  
+
+Sağlayıcıları, karmaşıklığı ve işlevselliği önemli ölçüde farklılık gösterebilir. Sağlayıcıları salt okunur sağlayıcılar ve güncelleştirilebilir sağlayıcılar kategorilere ayırma kullanışlıdır:  
   
--   Visual C++ 6.0 yalnızca salt okunur sağlayıcılar desteklenmiyor. [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md) salt okunur sağlayıcıyı oluşturma anlatılmaktadır.  
--   Visual C++ güncelleştirebilirsiniz güncelleştirilebilir sağlayıcılar destekler (yazma) veri deposu. Güncelleştirilebilir sağlayıcılar hakkında daha fazla bilgi için bkz: [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örnek güncelleştirilebilir sağlayıcı örneği verilmiştir.  
+- Visual C++ 6.0 yalnızca salt okunur sağlayıcılar desteklenmiyor. [OLE DB sağlayıcısı oluşturma](../../data/oledb/creating-an-ole-db-provider.md) salt okunur sağlayıcıyı oluşturma anlatılmaktadır.  
+- Visual C++ güncelleştirebilirsiniz güncelleştirilebilir sağlayıcılar destekler (yazma) veri deposu. Güncelleştirilebilir sağlayıcılar hakkında daha fazla bilgi için bkz: [güncelleştirilebilir sağlayıcı oluşturma](../../data/oledb/creating-an-updatable-provider.md); [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) örnek güncelleştirilebilir sağlayıcı örneği verilmiştir.  
   
- Daha fazla bilgi için bkz.:  
+Daha fazla bilgi için bkz.:  
   
--   [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)  
+- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)  
   
--   [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)  
+- [OLE DB Sağlayıcısı Oluşturma](../../data/oledb/creating-an-ole-db-provider.md)  
   
--   [OLE DB Programlama](../../data/oledb/ole-db-programming.md)  
+- [OLE DB Programlama](../../data/oledb/ole-db-programming.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri erişimi](../data-access-in-cpp.md)   
- [OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
- [OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))
+
+[Veri Erişimi](../data-access-in-cpp.md)<br/>
+[OLE DB SDK Belgeleri](/previous-versions/windows/desktop/ms722784\(v=vs.85\))   
+[OLE DB Programcının Başvurusu](/previous-versions/windows/desktop/ms713643\(v=vs.85\))

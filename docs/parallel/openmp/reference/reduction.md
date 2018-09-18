@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d2b90ef2eeca60a305cd8836e09dc81940392d2c
-ms.sourcegitcommit: e9ce38decc9f986edab5543de3464b11ebccb123
+ms.openlocfilehash: e004c129fb5482ed1bb50d091c8e4e53becbf20b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465719"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059101"
 ---
 # <a name="reduction"></a>reduction
 Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bölgenin sonunda azaltma işlemi konusunu olduğunu belirtir.  
@@ -32,14 +32,13 @@ Her iş parçacığı için özel bir veya daha fazla değişken bir paralel bö
 reduction(operation:var)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `operation`  
- Değişkenlerde gerçekleştirilecek işlem için işleç (`var`) bir paralel bölgenin sonunda.  
+*İşlemi*<br/>
+Değişkenlerde gerçekleştirilecek işlem için işleç (`var`) bir paralel bölgenin sonunda.  
   
- `var`  
- Bir veya daha fazla değişken skalar azalma gerçekleştirileceği. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
+*var*<br/>
+Bir veya daha fazla değişken skalar azalma gerçekleştirileceği. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `reduction` Aşağıdaki yönergeleri için geçerlidir:  

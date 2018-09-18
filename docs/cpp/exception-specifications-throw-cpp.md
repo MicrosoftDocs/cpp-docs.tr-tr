@@ -18,16 +18,16 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dfc9c50503fcd277f34e8f5dfc4a630d888eebf
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 4cc44672fe30af8b6521b617228fb70b88e61f83
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44318284"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040951"
 ---
 # <a name="exception-specifications-throw-noexcept-c"></a>Özel durum belirtimleri (throw, noexcept) (C++)
 
-Özel durum belirtimleri, işlev tarafından yayılan özel durum türleri hakkında programcının amacını belirten bir C++ dil özelliğidir. Bir işlevi olabilir veya bir özel durumun kullanarak sonlandırılabilir değil belirtebileceğiniz bir *özel durum belirtimi*. İşlev beklenmeyen bir özel durum, program sona erdirmek için çıkışları ve derleyici işlev için çağrılar iyileştirmek için bu bilgileri kullanabilirsiniz. 
+Özel durum belirtimleri, işlev tarafından yayılan özel durum türleri hakkında programcının amacını belirten bir C++ dil özelliğidir. Bir işlevi olabilir veya bir özel durumun kullanarak sonlandırılabilir değil belirtebileceğiniz bir *özel durum belirtimi*. İşlev beklenmeyen bir özel durum, program sona erdirmek için çıkışları ve derleyici işlev için çağrılar iyileştirmek için bu bilgileri kullanabilirsiniz.
 
 C ++ 17 önce özel durum belirtimi iki çeşit vardı. *Noexcept belirtimi* C ++ 11'de yeni olan. Bu işlev kaçış yapılacağını da olası özel durumları kümesi boş olup olmadığını belirtir. *Dinamik özel durum belirtimi*, veya `throw(optional_type_list)` belirtimi, C ++ 11'de kullanım dışı ve C ++ 17'de hariç kaldırıldı `throw()`, için bir diğer ad olduğu `noexcept(true)`. Bu özel durum belirtimi, bir işlevin hangi özel durumları muhtemel hakkında özet bilgi sağlamak için tasarlanmıştır ancak uygulamada sorunlu bulunamadı. Biraz faydalı olarak kanıtlamak bir dinamik özel durum belirtimi koşulsuz olan `throw()` belirtimi. Örneğin, işlev bildirimi:
 
@@ -138,5 +138,6 @@ in handler
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [try, throw ve catch Deyimleri (C++)](../cpp/try-throw-and-catch-statements-cpp.md)  
- [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)
+
+[try, throw ve catch Deyimleri (C++)](../cpp/try-throw-and-catch-statements-cpp.md)<br/>
+[C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

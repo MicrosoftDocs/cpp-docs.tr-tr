@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 059eaf684995dab6bdcbd1a65bbdb75f70b1551b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4371b8d63a57ef791dad9f1e593c8009d5361852
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248153"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052614"
 ---
 # <a name="compiler-error-c3106"></a>Derleyici Hatası C3106
-'öznitelik': adı olmayan bağımsız değişkenler, adlandırılmış bağımsız değişkenler gelmelidir  
-  
- Adı olmayan bağımsız değişkenler, adı olan bağımsız değişkenlerden önce bir özniteliğe geçirilmelidir.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3106 oluşturur.  
-  
-```  
-// C3106.cpp  
-// compile with: /c  
-[module(name="MyLib", dll)];   // C3106  
-[module(dll, name="MyLib")];   // OK  
+
+'attribute': Adsız bağımsız değişkenler adlandırılmış bağımsız değişkenler gelmelidir
+
+Adsız bağımsız değişkenleri, bir öznitelik adlandırılmış bağımsız değişkenler önce geçirilmelidir.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3106 oluşturur.
+
+```
+// C3106.cpp
+// compile with: /c
+[module(name="MyLib", dll)];   // C3106
+[module(dll, name="MyLib")];   // OK
 ```

@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 347330600e9b912d50522532f0c64e789e385520
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c588457743c601e31c24fd0a53de652477fbf05
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229480"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072608"
 ---
 # <a name="compiler-error-c2528"></a>Derleyici Hatası C2528
-'name': başvurmak için işaretçidir geçersiz  
-  
- Bir işaretçi bir başvuru belirtemezsiniz. Değişken bir işaretçi bildirme önce başvuru.  
-  
- Aşağıdaki örnek C2528 oluşturur:  
-  
-```  
-// C2528.cpp  
-int i;  
-int &ir = i;  
-int & (*irptr) = ir;    // C2528  
+
+'name': başvuruya yönelik işaretçi geçersizdir
+
+Bir işaretçi bir başvuruya bildiremezsiniz. Değişkeni bir işaretçiye bildirmeden önce başvuru.
+
+Aşağıdaki örnek, C2528 oluşturur:
+
+```
+// C2528.cpp
+int i;
+int &ir = i;
+int & (*irptr) = ir;    // C2528
 ```

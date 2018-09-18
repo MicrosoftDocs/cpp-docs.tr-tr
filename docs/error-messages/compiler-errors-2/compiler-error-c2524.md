@@ -16,42 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b21a907de69291c6d7fbc23f3ea093271a1ad3b3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7e091abdf9f61512d99625c0111f73d0d5fc5315
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230075"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060687"
 ---
 # <a name="compiler-error-c2524"></a>Derleyici Hatası C2524
-'yıkıcı': yıkıcı/sonlandırıcıyı 'void' parametre listesi olmalıdır  
-  
- Yıkıcı veya Sonlandırıcı olmayan bir parametre listesine sahip [void](../../cpp/void-cpp.md). Diğer parametre türleri izin verilmiyor.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod C2524 oluşmazsa.  
-  
-```  
-// C2524.cpp  
-// compile with: /c  
-class A {  
-   A() {}  
-   ~A(int i) {}    // C2524  
-   // try the following line instead  
-   // ~A() {}  
-};  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod C2524 oluşmazsa.  
-  
-```  
-// C2524_b.cpp  
-// compile with: /clr /c  
-ref struct I1 {  
-protected:  
-   !I1(int i);   // C2524  
-   // try the following line instead  
-   // !I1();  
-};  
+
+'yok edici': bir yok edici/Sonlandırıcı bir 'void' parametre listesine sahip olmalıdır
+
+Yıkıcı veya Sonlandırıcı olmayan bir parametre listesine sahip [void](../../cpp/void-cpp.md). Diğer parametre türleri izin verilmez.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod C2524 yeniden oluşturur.
+
+```
+// C2524.cpp
+// compile with: /c
+class A {
+   A() {}
+   ~A(int i) {}    // C2524
+   // try the following line instead
+   // ~A() {}
+};
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kod C2524 yeniden oluşturur.
+
+```
+// C2524_b.cpp
+// compile with: /clr /c
+ref struct I1 {
+protected:
+   !I1(int i);   // C2524
+   // try the following line instead
+   // !I1();
+};
 ```

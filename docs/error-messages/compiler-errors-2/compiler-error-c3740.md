@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53004e1a26fc0ead32680ac9b37b2e9aaa13087e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6bda1392ae4ebe95c6038b8dd0ec322b32ba4d8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264096"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044203"
 ---
 # <a name="compiler-error-c3740"></a>Derleyici Hatası C3740
-Şablonları kaynak veya olayları alma  
-  
- Şablonlu sınıfta veya yapı içeremez [olayları](../../cpp/event-handling.md).  
-  
- Aşağıdaki örnek C3740 oluşturur:  
-  
-```  
-// C3740.cpp  
-template <typename T>   // Delete the template specification  
-struct E {  
-   __event void f();   // C3740  
-};  
-  
-int main() {  
-}  
+
+Şablon kaynağı veya olayları alma
+
+Bir şablonlu sınıfın veya yapının içeremez [olayları](../../cpp/event-handling.md).
+
+Aşağıdaki örnek, C3740 oluşturur:
+
+```
+// C3740.cpp
+template <typename T>   // Delete the template specification
+struct E {
+   __event void f();   // C3740
+};
+
+int main() {
+}
 ```

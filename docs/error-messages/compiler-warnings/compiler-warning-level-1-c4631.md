@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc158f56344e3c81d48deba3fe1c5cf29efa1404
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c20493005933570df97a8e03bab7acc8bd4ae28f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33284036"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053810"
 ---
 # <a name="compiler-warning-level-1-c4631"></a>Derleyici Uyarısı (düzey 1) C4631
-MSXML veya XPath kullanılamaz, XML belge açıklamaları işlenmeyecek. Nedeni  
-  
- Ortak dil çalışma zamanı yüklemenizi işleme Belge açıklama desteklemek için gerekli dosyaları sahip değil. Ortak dil çalışma zamanı yeniden yükleyin.
+
+MSXML veya XPath kullanılamıyor, XML belgesi açıklamaları işlenmeyecek. Nedeni
+
+Ortak dil çalışma zamanı yüklemenizi işleme belge açıklamasının desteklemek için gereken dosyaları yok. Ortak dil çalışma zamanı yeniden yükleyin.

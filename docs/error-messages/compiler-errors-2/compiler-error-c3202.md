@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b6f7f059173e88bf9e76dde3f8448de218400a31
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 254843386943b677be6df2c1ab7f1da56265e1d8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246897"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070333"
 ---
 # <a name="compiler-error-c3202"></a>Derleyici Hatası C3202
-'arg name': 'parametresi' şablon parametresi için geçersiz varsayılan bağımsız değişken beklenen bir sınıf şablonu  
-  
- Şablon parametresi için geçersiz varsayılan bağımsız değişken geçirildi.  
-  
- Aşağıdaki örnek C3202 oluşturur:  
-  
-```  
-// C3202.cpp  
-template<typename T>  
-class X  
-{  
-};  
-  
-class Z  
-{  
-};  
-  
-template<template<typename U> class T1 = Z, typename T2> // C3202  
-class Y  
-{  
-};  
+
+'değişken adı': şablon parametresi 'parametresi' için geçersiz varsayılan bağımsız değişken; sınıf şablonu bekleniyor
+
+Bir şablon parametresi için geçersiz varsayılan bağımsız değişken geçirildi.
+
+Aşağıdaki örnek, C3202 oluşturur:
+
+```
+// C3202.cpp
+template<typename T>
+class X
+{
+};
+
+class Z
+{
+};
+
+template<template<typename U> class T1 = Z, typename T2> // C3202
+class Y
+{
+};
 ```

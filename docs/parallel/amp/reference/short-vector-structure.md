@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a79280196da13a73f8495ea79e8c9551763262be
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 651a0e17def0a171eb881ec852f56e1d4cbf2c3b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33705295"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045373"
 ---
 # <a name="shortvector-structure"></a>short_vector Yapısı
-short_vector kısa vektörlerinin genel programlama için yararlı olan meta tanımları sağlar.  
+short_vector kısa vektörleri genel programlama için yararlı olan azaltılarak tanımları sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -85,12 +85,14 @@ struct short_vector<double, 4>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_Scalar_type`  
- `_Size`  
+
+*_Scalar_type*<br/>
+
+*_Boyut*<br/>
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e272c9674270c1c600fee697dd77d050d6adb4e0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 79cace12447eccb9ac7dc560b6add45bd0dc81c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759835"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045087"
 ---
 # <a name="catlfilemappingbase-class"></a>CAtlFileMappingBase sınıfı
 
@@ -89,13 +89,13 @@ Daha fazla bilgi için [eşleme dosyası](/windows/desktop/Memory/file-mapping) 
 Oluşturucu.
 
 ```
-CAtlFileMappingBase(CAtlFileMappingBase& orig);  
+CAtlFileMappingBase(CAtlFileMappingBase& orig);
 CAtlFileMappingBase() throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*ORIG*  
+*ORIG*<br/>
 Yeni nesne oluşturma kopyalamak için orijinal dosya eşleme nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -128,7 +128,7 @@ HRESULT CopyFrom(CAtlFileMappingBase& orig) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ORIG*  
+*ORIG*<br/>
 Kopyalamak için orijinal dosya eşleme nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -190,19 +190,19 @@ HRESULT MapFile(
 
 ### <a name="parameters"></a>Parametreler
 
-*Hfıle*  
+*Hfıle*<br/>
 Eşleme nesnesi oluşturulacağı dosyasına işleyin. *Hfıle* geçerli olmalıdır ve INVALID_HANDLE_VALUE için ayarlanamaz.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 Eşleme boyutu. 0 ise, dosya eşleme nesnesinin boyutu tarafından tanımlanan dosyaya geçerli boyutuna eşit olan *Hfıle.*
 
-*nOffset*  
+*nOffset*<br/>
 Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin bellek ayırma tanecikliliğinin bir katı olmalıdır.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 Dosya görünümü için dosya eşlendiğinde istenen koruma. Bkz: *flProtect* içinde [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -233,22 +233,22 @@ HRESULT MapSharedMem(
 
 ### <a name="parameters"></a>Parametreler
 
-*nMappingSize*  
+*nMappingSize*<br/>
 Eşleme boyutu. 0 ise, dosya eşleme nesnesinin boyutu tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit olan *szName*.
 
-*szName*  
+*szName*<br/>
 Eşleme nesnesinin adı.
 
-*pbAlreadyExisted*  
+*pbAlreadyExisted*<br/>
 Gerekirse TRUE eşleme nesnesi zaten ayarlanmış bir BOOL değeri noktalarına vardı.
 
-*lpsa*  
+*lpsa*<br/>
 İşaretçiyi bir `SECURITY_ATTRIBUTES` döndürülen tanıtıcının alt işlemler tarafından devralınıp alınmayacağını belirleyen yapısı. Bkz: *lpAttributes* içinde [CreateFileMapping](/windows/desktop/api/winbase/nf-winbase-createfilemappinga) Windows SDK.
 
-*dwMappingProtection*  
+*dwMappingProtection*<br/>
 Dosya görünümü için dosyanın eşlendiğinde istenen koruma. Bkz: *flProtect* içinde `CreateFileMapping` Windows SDK.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -273,16 +273,16 @@ HRESULT OpenMapping(
 
 ### <a name="parameters"></a>Parametreler
 
-*szName*  
+*szName*<br/>
 Eşleme nesnesinin adı. Varsa bu adda bir dosya eşleme nesnesi açık bir tanıtıcısı ve eşleme nesnesinde güvenlik tanımlayıcısı ile çakışmaz *dwViewDesiredAccess* parametresi açma işlemi başarılı olur.
 
-*nMappingSize*  
+*nMappingSize*<br/>
 Eşleme boyutu. 0 ise, dosya eşleme nesnesinin boyutu tarafından tanımlanan dosya eşleme nesnesinin geçerli boyutuna eşit olan *szName*.
 
-*nOffset*  
+*nOffset*<br/>
 Başlamak için eşleme olduğu dosya uzaklığı. Uzaklık değeri, sistemin bellek ayırma tanecikliliğinin bir katı olmalıdır.
 
-*dwViewDesiredAccess*  
+*dwViewDesiredAccess*<br/>
 Dosya görünümü ve bu nedenle, dosya tarafından eşleştirilen sayfalarının koruma erişim türünü belirtir. Bkz: *dwDesiredAccess* içinde [MapViewOfFileEx](https://msdn.microsoft.com/library/windows/desktop/aa366763) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -303,7 +303,7 @@ CAtlFileMappingBase& operator=(CAtlFileMappingBase& orig);
 
 ### <a name="parameters"></a>Parametreler
 
-*ORIG*  
+*ORIG*<br/>
 Geçerli dosya eşleme nesnesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -328,5 +328,5 @@ Bkz: [UnmapViewOfFile](https://msdn.microsoft.com/library/windows/desktop/aa3668
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlFileMapping sınıfı](../../atl/reference/catlfilemapping-class.md)   
+[CAtlFileMapping Sınıfı](../../atl/reference/catlfilemapping-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

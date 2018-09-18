@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6009428a151ee9959766db6213d2447eaf836c2c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4849e138cdbef97595d4aa1bbb45c277e7feb96a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047336"
 ---
 # <a name="compiler-error-c2943"></a>Derleyici Hatası C2943
-'class': türü sınıfı kimliği bir şablon bir tür bağımsız değişkeni olarak yeniden tanımlandı  
-  
- Bir genel veya şablon tür bağımsız değişkeni olarak bir simge yerine, genel veya Şablon sınıfı kullanamazsınız.  
-  
- Aşağıdaki örnek C2943 oluşturur:  
-  
-```  
-// C2943.cpp  
-// compile with: /c  
-template<class T>  
-class List {};  
-  
-template<class List<int> > class MyList;   // C2943  
-template<class T >  class MyList;  
+
+'class': türü sınıf kimliği için bir şablon bir tür bağımsız değişkeni yeniden tanımlandı
+
+Bir sembol yerine, genel veya Şablon sınıfı, bir genel veya şablon türü bağımsız değişken olarak kullanamazsınız.
+
+Aşağıdaki örnek, C2943 oluşturur:
+
+```
+// C2943.cpp
+// compile with: /c
+template<class T>
+class List {};
+
+template<class List<int> > class MyList;   // C2943
+template<class T >  class MyList;
 ```

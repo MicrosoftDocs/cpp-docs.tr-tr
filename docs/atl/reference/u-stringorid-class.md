@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9c465e5da4d3822782bd9c7b81e497ea544e3bd1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 000e43926a83bdd7457c33c656383ae44dce6259
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759960"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046283"
 ---
 # <a name="ustringorid-class"></a>_U_strıngorıd sınıfı
 
@@ -76,16 +76,16 @@ LPCTSTR m_lpstr;
 UINT oluşturucu bağımsız değişkeni MAKEINTRESOURCE makrosu kullanılarak Windows Kaynak Yönetimi işlevleri ile uyumlu bir kaynak türü dönüştürür ve sonuç sınıfın tek veri üyesi içinde depolanır [m_lpstr](#_u_stringorid__m_lpstr).
 
 ```
-_U_STRINGorID(UINT nID);  
+_U_STRINGorID(UINT nID);
 _U_STRINGorID(LPCTSTR lpString);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*nID*  
+*nID*<br/>
 Bir kaynak kimliği
 
-*lpString*  
+*lpString*<br/>
 Bir kaynak adı.
 
 ### <a name="remarks"></a>Açıklamalar

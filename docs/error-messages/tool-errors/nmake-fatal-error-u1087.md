@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f07309c64066b0a17aab110035c700c229c439df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2f0e094c720222990ee90af7de900d8cf6ba4051
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319728"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036806"
 ---
 # <a name="nmake-fatal-error-u1087"></a>NMAKE Önemli Hatası U1087
-sahip olamaz: ve:: aynı hedef için bağımlılıklar  
-  
- Bir hedef hem de tek-iki nokta belirtilemez (**:**) ve çift nokta (`::`) bağımlılık.  
-  
- Hedef birden çok açıklama blokları içinde belirtmek için kullanın `::` her bağımlılık satırın.
+
+sahip olamaz: ve:: aynı hedef için bağımlılıklar
+
+Bir hedef hem tek-iki nokta belirtilemez (**:**) ve bir çift iki nokta (`::`) bağımlılık.
+
+Bir hedef içinde birden çok açıklama blokları belirtmek için kullanın `::` her bağımlılık satırda.

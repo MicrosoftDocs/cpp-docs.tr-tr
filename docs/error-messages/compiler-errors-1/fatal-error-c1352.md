@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 524b0bf5d25953c5c38cbe0e23dc5c7d9f3cb7be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f4f1f062e11651e4d851231e16569412f95b90d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226825"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042942"
 ---
 # <a name="fatal-error-c1352"></a>Önemli hata C1352
-Geçersiz veya bozuk MSIL Modülü 'dosya' ' fonksiyonundan' işlevinde  
-  
- Bir .netmodule derleyiciye geçirildi ancak derleyici dosyasında bozulma algılandı.  Kişinin kim araştırmak için .netmodule üretilen isteyin.  
-  
- Derleyici .netmodule dosyaları Bozulması tüm türleri denetlemez.  Ancak, tüm denetim yollarına işlevinin dönüş deyimi içeren iade.  
-  
- Daha fazla bilgi için bkz: [bağlayıcı girişi olarak .netmodule dosyaları](../../build/reference/netmodule-files-as-linker-input.md).
+
+Geçersiz veya bozuk MSIL işlevi 'file' modülünden ' function'
+
+Derleyiciye bir .netmodule geçirildi, ancak derleyici, dosyayı Bozulması algıladı.  Kişinin kim .netmodule araştırmak için üretilen isteyin.
+
+Derleyici .netmodule dosyaları bozulmasına tüm türleri için kontrol yapmaz.  Ancak, tüm denetim yolları bir işlevde dönüş deyimi içeren iade.
+
+Daha fazla bilgi için [bağlayıcı girişi olarak .netmodule dosyaları](../../build/reference/netmodule-files-as-linker-input.md).

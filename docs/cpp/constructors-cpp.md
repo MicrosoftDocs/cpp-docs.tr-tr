@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d90a3f4b2cbacb3071dcd552fd88f6cb11bb5d43
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: 08200320e30816ac45e6c91a14dc41508430cfae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131848"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069124"
 ---
 # <a name="constructors-c"></a>Oluşturucular (C++)
 
@@ -88,7 +88,7 @@ Bir üye Başlatıcısı listesini kullanarak doğrudan üye başlatır çünkü
     {}
 ```
 
-Tanımlayıcı, bir sınıf üyesine başvurmalıdır; bağımsız değişkenin değeri ile başlatıldı. Bağımsız değişken Oluşturucu parametrelerden biri, bir işlev çağrısı olabilir veya [std::initializer_list\<T >](../standard-library/initializer-list-class.md). 
+Tanımlayıcı, bir sınıf üyesine başvurmalıdır; bağımsız değişkenin değeri ile başlatıldı. Bağımsız değişken Oluşturucu parametrelerden biri, bir işlev çağrısı olabilir veya [std::initializer_list\<T >](../standard-library/initializer-list-class.md).
 
 **const** üyeleri ve üyeleri başvuru türündeki üye Başlatıcı listesinde başlatılmalıdır.
 
@@ -96,7 +96,7 @@ Parametreli bir temel sınıf oluşturucuları çağrısına, temel sınıfı t�
 
 ## <a name="default_constructors"></a> Varsayılan Oluşturucu
 
- *Varsayılan oluşturucular* genellikle parametresiz olmalıdır, ancak varsayılan değeri olan parametrelere sahip olabilir.
+*Varsayılan oluşturucular* genellikle parametresiz olmalıdır, ancak varsayılan değeri olan parametrelere sahip olabilir.
 
 ```cpp
 class Box {
@@ -216,6 +216,7 @@ Kopya Oluşturucu silindi olarak tanımlayarak kopyalanmasını nesnenizin engel
 Nesne kopyalamaya çalışırken hata üreten *C2280: silinmiş bir işleve başvurmaya çalışıyor*.
 
 ## <a name="move_constructors"></a> Taşıma oluşturucuları
+
 A *taşıma Oluşturucu* özgün veri kopyalama olmadan yeni bir değişken için var olan nesnenin veri sahipliğini taşıyan özel üye işlevi olmasıdır. İlk parametre olarak bir rvalue başvurusunu alır ve herhangi ek bir parametre varsayılan değerlere sahip olmalıdır. Büyük nesnelerin çevresinde geçirirken, taşıma oluşturucuları, programınızın verimliliğini önemli ölçüde artırabilir. Taşıma Oluşturucusu bir rvalue başvurusunu kendi ilk parametre olarak alır. Herhangi bir parametre varsayılan değerlere sahip olmalıdır.
 
 ```cpp

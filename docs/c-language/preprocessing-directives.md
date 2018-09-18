@@ -15,25 +15,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ff05b108e0debe2e408586e63bed244f87f6b76
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 47157fadca913cb436c84219bf1b4117aba619eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385617"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035584"
 ---
 # <a name="preprocessing-directives"></a>Ön işleme Yönergeleri
--   [Karakter Sabitleri ve Koşullu Dahil Etme](../c-language/character-constants-and-conditional-inclusion.md)  
-  
--   [Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme](../c-language/including-bracketed-filenames.md)  
-  
--   [Tırnak İşaretli Dosya Adlarını Dahil Etme](../c-language/including-quoted-filenames.md)  
-  
--   [Karakter Sıraları](../c-language/character-sequences.md)  
-  
--   [Pragmalar](../c-language/pragmas.md)  
-  
--   [Varsayılan Tarih ve Saat](../c-language/default-date-and-time.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)
+
+- [Karakter Sabitleri ve Koşullu Dahil Etme](../c-language/character-constants-and-conditional-inclusion.md)
+
+- [Köşeli Parantez İçindeki Dosya Adlarını Dahil Etme](../c-language/including-bracketed-filenames.md)
+
+- [Tırnak İşaretli Dosya Adlarını Dahil Etme](../c-language/including-quoted-filenames.md)
+
+- [Karakter Sıraları](../c-language/character-sequences.md)
+
+- [Pragmalar](../c-language/pragmas.md)
+
+- [Varsayılan Tarih ve Saat](../c-language/default-date-and-time.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Uygulama Tanımlı Davranış](../c-language/implementation-defined-behavior.md)

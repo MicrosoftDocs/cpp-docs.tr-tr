@@ -19,15 +19,16 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: c2b4f147943e09c0203f863d7514566de8466acf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f3dc76e7d3557f777bb8d521de968671defdde8d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33096226"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071568"
 ---
 # <a name="cmultipleresults-class"></a>CMultipleResults Sınıfı
-Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın `CMultipleResults` için `CCommand` şablon bağımsız değişken *TMultiple*.  
+
+Birden çok sonuç kümesi işlemek için bir komut istiyorsanız kullanın `CMultipleResults` için `CCommand` şablon bağımsız değişkeni *TMultiple*.  
   
 ## <a name="syntax"></a>Sözdizimi
 
@@ -36,11 +37,14 @@ class CMultipleResults
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Birden çok sonuç kümesini işlemek için [CCommand](../../data/oledb/ccommand-class.md) bu sınıftan devralınan gerekir.  
+
+Birden çok sonuç işlemek için ayarlar, [CCommand](../../data/oledb/ccommand-class.md) bu sınıftan devralmalıdır.  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli  
+
+**Başlık:** atldbcli  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

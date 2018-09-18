@@ -16,39 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5e57f32c715b6e6f0846025d5010631c746589bb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65662d3e62abbeb06127c7b5a49479a23fb20a7a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298941"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070944"
 ---
 # <a name="compiler-warning-level-3-c4522"></a>Derleyici Uyarısı (Düzey 3) C4522
-'class': belirtilen birden çok atama işleçleri  
-  
- Sınıfı, tek bir türde birden çok atama işleçleri vardır. Bu uyarı, bilgi amaçlıdır; Oluşturucular programınıza çağrılabilir.  
-  
- Kullanım [uyarı](../../preprocessor/warning.md) bu uyarıyı gizlemek için pragması.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4522 oluşturur.  
-  
-```  
-// C4522.cpp  
-// compile with: /EHsc /W3  
-#include <iostream>  
-  
-using namespace std;  
-class A {  
-public:  
-   A& operator=( A & o ) { cout << "A&" << endl; return *this; }  
-   A& operator=( const A &co ) { cout << "const A&" << endl; return *this; }   // C4522  
-};  
-  
-int main() {  
-   A o1, o2;  
-   o2 = o1;  
-   const A o3;  
-   o1 = o3;  
-}  
+
+'class': belirtilen birden fazla atama işleçleri
+
+Sınıfın tek bir türde birden fazla atama işleci vardır. Bu uyarı, bilgi amaçlıdır; Oluşturucular, programınızda çağrılabilir.
+
+Kullanım [uyarı](../../preprocessor/warning.md) Bu uyarının gösterilmemesi için pragması.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4522 oluşturur.
+
+```
+// C4522.cpp
+// compile with: /EHsc /W3
+#include <iostream>
+
+using namespace std;
+class A {
+public:
+   A& operator=( A & o ) { cout << "A&" << endl; return *this; }
+   A& operator=( const A &co ) { cout << "const A&" << endl; return *this; }   // C4522
+};
+
+int main() {
+   A o1, o2;
+   o2 = o1;
+   const A o3;
+   o1 = o3;
+}
 ```

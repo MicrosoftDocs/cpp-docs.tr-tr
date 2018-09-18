@@ -17,35 +17,35 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: fffc1ceef1f67dadde61190ccb12ce1cd5b7ba9b
-ms.sourcegitcommit: 7f3df9ff0310a4716b8136ca20deba699ca86c6c
+ms.openlocfilehash: cbf1c696a66024ec1d3b3022b1e3a03445e9b6fe
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "42464892"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043306"
 ---
 # <a name="creating-an-updatable-provider"></a>Güncelleştirilebilir Sağlayıcı Oluşturma
 
 Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz sağlayıcılarını destekler (yazma) veri deposu. Bu konu, OLE DB Şablonları kullanarak güncelleştirilebilir sağlayıcı oluşturma işlemini açıklar.  
   
- Bu konuda, uyumlu bir sağlayıcı ile başlayan varsayılır. Güncelleştirilebilir sağlayıcı oluşturma için iki adımı vardır. Sağlayıcı veri deposuna değişiklikleri nasıl yapacak önce karar vermeniz gerekir; Özellikle, değişiklikleri hemen yapılmasına olup bir güncelleştirme komut verilene kadar ertelendi. Bölüm "[sağlayıcıları güncelleştirilebilir yapmadan](#vchowmakingprovidersupdatable)" sağlayıcı kodunda yapmak için ihtiyacınız olan ayarları ve değişiklikleri açıklar.  
+Bu konuda, uyumlu bir sağlayıcı ile başlayan varsayılır. Güncelleştirilebilir sağlayıcı oluşturma için iki adımı vardır. Sağlayıcı veri deposuna değişiklikleri nasıl yapacak önce karar vermeniz gerekir; Özellikle, değişiklikleri hemen yapılmasına olup bir güncelleştirme komut verilene kadar ertelendi. Bölüm "[sağlayıcıları güncelleştirilebilir yapmadan](#vchowmakingprovidersupdatable)" sağlayıcı kodunda yapmak için ihtiyacınız olan ayarları ve değişiklikleri açıklar.  
   
- Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazmak için NULL ve varsayılan değerlerle Dağıt ve sütun bayraklarını ayarlayın açıklar.  
+Ardından, sağlayıcınız tüketici isteyebileceği desteklemek için tüm işlevselliklerini içerir emin olmanız gerekir. Tüketici veri deposunu güncelleştirin isterse, sağlayıcı veri deposunda veri devam kodu içermesi gerekir. Örneğin, veri kaynağı gibi işlemleri gerçekleştirmek için MFC ve C çalışma zamanı kitaplığı kullanabilirsiniz. Bölüm "[veri kaynağına yazma](#vchowwritingtothedatasource)" veri kaynağına yazmak için NULL ve varsayılan değerlerle Dağıt ve sütun bayraklarını ayarlayın açıklar.  
   
 > [!NOTE]
 >  [UpdatePV](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Provider/UPDATEPV) güncelleştirilebilir sağlayıcı örneğidir. UpdatePV MyProv ancak güncelleştirilebilir destekle aynıdır.  
   
 ##  <a name="vchowmakingprovidersupdatable"></a> Güncelleştirilebilir sağlayıcılar hale getirme  
 
- Anahtarı bir sağlayıcı güncelleştirilebilir yapmak istediğiniz veri deposuna ve bu işlemleri gerçekleştirmek için sağlayıcı istediğiniz gerçekleştirmek için sağlayıcınıza hangi işlemleri anlamaktır. Özellikle, veri deposuna güncelleştirmeleri hemen Bitti veya ertelenmiş olup önemli bir sorun olduğunu (toplanmış) güncelleştirme komut verilene kadar.  
+Anahtarı bir sağlayıcı güncelleştirilebilir yapmak istediğiniz veri deposuna ve bu işlemleri gerçekleştirmek için sağlayıcı istediğiniz gerçekleştirmek için sağlayıcınıza hangi işlemleri anlamaktır. Özellikle, veri deposuna güncelleştirmeleri hemen Bitti veya ertelenmiş olup önemli bir sorun olduğunu (toplanmış) güncelleştirme komut verilene kadar.  
   
- İlk devralınacak karar vermeniz gerekir `IRowsetChangeImpl` veya `IRowsetUpdateImpl` satır kümesi sınıfınızdaki. Bu uygulama seçiminize bağlı olarak, üç yöntem işlevselliği etkilenir: `SetData`, `InsertRows`, ve `DeleteRows`.  
+İlk devralınacak karar vermeniz gerekir `IRowsetChangeImpl` veya `IRowsetUpdateImpl` satır kümesi sınıfınızdaki. Bu uygulama seçiminize bağlı olarak, üç yöntem işlevselliği etkilenir: `SetData`, `InsertRows`, ve `DeleteRows`.  
   
 - Gelen devralıyorsanız [IRowsetChangeImpl](../../data/oledb/irowsetchangeimpl-class.md), hemen bu üç yöntem çağırma veri deposu değiştirir.  
   
 - Gelen devralıyorsanız [IRowsetUpdateImpl](../../data/oledb/irowsetupdateimpl-class.md), çağırana kadar yöntemleri veri deposuna değişiklikler erteleme `Update`, `GetOriginalData`, veya `Undo`. Güncelleştirme birkaç değişikliği içeriyorsa, bunlar toplu iş modunda (değişiklikleri toplu işleme önemli ölçüde Bellek Yükü ekleyebilirsiniz. Not) gerçekleştirilir.  
   
- Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `IRowsetUpdateImpl` değiştirme yeteneği yanı sıra batch yeteneği verir.  
+Unutmayın `IRowsetUpdateImpl` türetildiği `IRowsetChangeImpl`. Bu nedenle, `IRowsetUpdateImpl` değiştirme yeteneği yanı sıra batch yeteneği verir.  
   
 #### <a name="to-support-updatability-in-your-provider"></a>Sağlayıcınızdaki Güncelleştirilebilirlik desteklemek için  
   
@@ -72,21 +72,21 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
     > [!NOTE]
     >  Kaldırmalısınız `IRowsetChangeImpl` , devralma zincirini satırından. Bu daha önce bahsedilen yönergesi bir durum kodunu içermelidir `IRowsetChangeImpl`.  
   
-2.  COM haritanıza aşağıdakileri ekleyin (`BEGIN_COM_MAP ... END_COM_MAP`):  
+1. COM haritanıza aşağıdakileri ekleyin (`BEGIN_COM_MAP ... END_COM_MAP`):  
   
     |Uygularsanız|COM Eşlemesi Ekle|  
     |----------------------|--------------------|  
     |`IRowsetChangeImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)`|  
     |`IRowsetUpdateImpl`|`COM_INTERFACE_ENTRY(IRowsetChange)COM_INTERFACE_ENTRY(IRowsetUpdate)`|  
   
-3.  Özellik kümesi haritanıza komutunuza ekleyin (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
+1. Özellik kümesi haritanıza komutunuza ekleyin (`BEGIN_PROPSET_MAP ... END_PROPSET_MAP`):  
   
     |Uygularsanız|Özellik kümesi haritasına Ekle|  
     |----------------------|-----------------------------|  
     |`IRowsetChangeImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)`|  
     |`IRowsetUpdateImpl`|`PROPERTY_INFO_ENTRY_VALUE(IRowsetChange, VARIANT_FALSE)PROPERTY_INFO_ENTRY_VALUE(IRowsetUpdate, VARIANT_FALSE)`|  
   
-4.  Bunlar aşağıda görüldüğü gibi özellik kümesi eşlemesi, ayrıca tüm aşağıdaki ayarlardan birini içermelidir:  
+1. Bunlar aşağıda görüldüğü gibi özellik kümesi eşlemesi, ayrıca tüm aşağıdaki ayarlardan birini içermelidir:  
   
     ```cpp  
     PROPERTY_INFO_ENTRY_VALUE(UPDATABILITY, DBPROPVAL_UP_CHANGE |   
@@ -145,7 +145,8 @@ Visual C++ güncelleştirilebilir sağlayıcılar veya güncelleştirebilirsiniz
         >  Bildirimleri destekliyorsa, bazı diğer özellikleri de da olabilir; bölümüne `IRowsetNotifyCP` bu listesi.  
   
 ##  <a name="vchowwritingtothedatasource"></a> Veri kaynağına yazma  
- Veri kaynağından okumak için çağrı `Execute` işlevi. Veri kaynağına yazmak için çağrı `FlushData` işlevi. (Genel olarak, bir tablo veya dizini diske yaptığınız değişiklikleri kaydetmek için yol temizler.)  
+
+Veri kaynağından okumak için çağrı `Execute` işlevi. Veri kaynağına yazmak için çağrı `FlushData` işlevi. (Genel olarak, bir tablo veya dizini diske yaptığınız değişiklikleri kaydetmek için yol temizler.)  
 
 ```cpp
 
@@ -158,6 +159,7 @@ Erişimci tanıtıcısı (HACCESSOR) bağımsız değişkenleri ve satır tanıt
 `FlushData` Yöntemi içinde başlangıçta depolandığı biçiminde veri yazar. Bu işlev geçersiz kılmayacak sağlayıcınızın düzgün biçimde çalışmayacağıdır ancak değişiklikleri veri deposuna kullanılmaz.
 
 ### <a name="when-to-flush"></a>Ne zaman temizleme
+
 Verileri veri deposuna yazılması her sağlayıcı şablonları FlushData çağırın. Bu genellikle (ama her zaman kullanılmaz) aşağıdaki işlevlere çağrı sonucunda oluşur:
 
 - `IRowsetChange::DeleteRows`
@@ -312,6 +314,7 @@ Sağlayıcı geliştiricisi olarak, bu verileri nasıl depolar, nasıl bu verile
 Kod oluşturma bakın; Bu, NULL veri sağlayıcı nasıl işleyebileceğini gösterir. UpdatePV öğesinde sağlayıcı NULL veri dizesi "NULL" yazarak veri deposunda saklar. NULL veri veri deposundan okur, o dizeyi görür ve ardından boş bir dize oluşturma arabellek boşaltır. Ayrıca, bir geçersiz kılma sahip `IRowsetImpl::GetDBStatus` , veri değeri boşsa, BT DBSTATUS_S_ISNULL döndürür.
 
 ### <a name="marking-nullable-columns"></a>Boş değer atanabilir sütun işaretleme
+
 Şema satır kümeleri uygularsanız (bkz `IDBSchemaRowsetImpl`), uygulamanızın (genellikle sağlayıcınız tarafından CxxxSchemaColSchemaRowset işaretlenmiştir) DBSCHEMA_COLUMNS satır kümesindeki sütunu boş değer atanabilir belirtmeniz gerekir.
 
 Tüm null yapılabilir sütunlar sürümünüz DBCOLUMNFLAGS_ISNULLABLE değeri içerdiğini belirtmeniz gerekir `GetColumnInfo`.
@@ -441,4 +444,5 @@ m_rgRowData.Add(trData[0]);
 Bu kod, diğerlerinin yanı sıra sütunu yazılabilir, 0, varsayılan değeri destekler ve sütundaki tüm verilerin aynı uzunluğa sahip olduğunu belirtir. Değişken uzunluğa sahip bir sütun verileri istiyorsanız, bu bayrağı ayarlamazsınız.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [OLE DB Sağlayıcısı Oluşturma](creating-an-ole-db-provider.md)

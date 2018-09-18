@@ -16,55 +16,57 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ffb2ce4ef752d91eaadc66d17aadf3838ee560df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c45c5b271235e4ada0945a79087186a213c75343
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197916"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064275"
 ---
 # <a name="compiler-error-c2392"></a>Derleyici Hatası C2392
-'method1': türleri desteklenmiyor eşdeğişken döndürür yönetilen veya WinRTtypes, aksi takdirde 'method2' geçersiz  
-  
- Eşdeğişken dönüş türleri izin verilmez veya Windows çalışma zamanı üye işlevleri için ile derleme yapılırken [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2392 oluşturur ve nasıl düzeltileceği gösterir.  
-  
-```  
-// C2392.cpp  
-// compile with: /clr  
-public ref struct B {  
-public:  
-   int i;  
-};  
-  
-public ref struct D: public B{};  
-  
-public ref struct B1 {  
-public:  
-   virtual B^ mf() {  
-      B^ pB = gcnew B;  
-      pB->i = 11;  
-      return pB;  
-   }  
-};  
-  
-public ref struct D1: public B1 {  
-public:  
-   virtual D^ mf() override {  // C2392  
-   // try the following line instead  
-   // virtual B^ mf() override {  
-   // return type D^ is covariant with B^, not allowed with CLR types  
-      D^ pD = gcnew D;  
-      pD->i = 12;  
-      return pD;  
-   }  
-};  
-  
-int main() {  
-   B1^ pB1 = gcnew D1;  
-   B^ pB = pB1->mf();  
-   D^ pD = dynamic_cast<D^>(pB);  
-}  
+
+'yöntem1': yönetilen kovaryant türleri desteklenmez veya WinRTtypes, aksi takdirde 'method2' geçersiz
+
+Birlikte değişken dönüş türleri izin verilmez veya Windows çalışma zamanı üye işlevleri için ile derleme yaparken [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) seçeneği.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2392 oluşturur ve bu sorunun nasıl gösterir.
+
+```
+// C2392.cpp
+// compile with: /clr
+public ref struct B {
+public:
+   int i;
+};
+
+public ref struct D: public B{};
+
+public ref struct B1 {
+public:
+   virtual B^ mf() {
+      B^ pB = gcnew B;
+      pB->i = 11;
+      return pB;
+   }
+};
+
+public ref struct D1: public B1 {
+public:
+   virtual D^ mf() override {  // C2392
+   // try the following line instead
+   // virtual B^ mf() override {
+   // return type D^ is covariant with B^, not allowed with CLR types
+      D^ pD = gcnew D;
+      pD->i = 12;
+      return pD;
+   }
+};
+
+int main() {
+   B1^ pB1 = gcnew D1;
+   B^ pB = pB1->mf();
+   D^ pD = dynamic_cast<D^>(pB);
+}
 ```

@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f1943895b8db663239ed1bfb27b8e97fc3c416e5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1173633cd720ed6ee0e4aacdf75a8b305fdbfe4d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767912"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043371"
 ---
 # <a name="celementtraitsbase-class"></a>CElementTraitsBase sınıfı
 
@@ -35,13 +35,13 @@ Bu sınıf, varsayılan copy sağlar ve bir koleksiyon sınıfı yöntemleri ta�
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T>  
+template<typename T>
 class CElementTraitsBase
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -83,13 +83,13 @@ static void CopyElements(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDest*  
+*pDest*<br/>
 Kopyalanan veriler alacak ilk öğesinin işaretçisi.
 
-*pSrc*  
+*pSrc*<br/>
 Kopyalamak için ilk öğesinin işaretçisi.
 
-*nElements*  
+*nElements*<br/>
 Kopyalanacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -125,13 +125,13 @@ static void RelocateElements(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDest*  
+*pDest*<br/>
 Veriler yeni yerlerine alacak ilk öğesinin işaretçisi.
 
-*pSrc*  
+*pSrc*<br/>
 Dışında yeniden konumlandırmakta ilk öğesinin işaretçisi.
 
-*nElements*  
+*nElements*<br/>
 Dışında yeniden konumlandırmakta öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar

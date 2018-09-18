@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67904ec0c16fb1eddcf182d34f10cb09219dfc6e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7f9dff61a62eec37a503b1c0018ead6dce33065a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767422"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46077119"
 ---
 # <a name="ccomenum-class"></a>CComEnum sınıfı
 
@@ -32,7 +32,7 @@ Bu sınıf, bir dizi üzerinde temel bir COM Numaralandırıcı nesnesi tanımla
 
 ```
 template <class Base,
-    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>  
+    const IID* piid, class T, class Copy, class ThreadModel = CcomObjectThreadModel>
 class ATL_NO_VTABLE CComEnum : public CComEnumImpl<Base, piid,
 T,
     Copy>,
@@ -41,19 +41,19 @@ public CComObjectRootEx<ThreadModel>
 
 #### <a name="parameters"></a>Parametreler
 
-*temel*  
+*temel*<br/>
 COM Numaralandırıcı arabirimi. Bkz: [IEnumString](/windows/desktop/api/objidl/nn-objidl-ienumstring) örneği.
 
-*piid*  
+*piid*<br/>
 Numaralandırıcı arabirimi arabirim kimliği için bir işaretçi.
 
-*T*  
+*T*<br/>
 Numaralandırıcı arabirim tarafından sunulan öğe türü.
 
-*kopyalama*  
+*kopyalama*<br/>
 Bir homojen [kopyalama İlkesi sınıfı](../../atl/atl-copy-policy-classes.md).
 
-*ThreadModel*  
+*ThreadModel*<br/>
 Sınıfın iş parçacığı modeli. Bu parametre, projenizde kullanılan genel nesnesi iş parçacığı modelini varsayılan kullanır.
 
 ## <a name="remarks"></a>Açıklamalar
@@ -102,7 +102,7 @@ Bu kod oluşturur bir **typedef** için `CComEnum` çeşitler arasında oluşan 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)   
-[Ccomenumımpl sınıfı](../../atl/reference/ccomenumimpl-class.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[CComObjectThreadModel](atl-typedefs.md#ccomobjectthreadmodel)<br/>
+[CComEnumImpl Sınıfı](../../atl/reference/ccomenumimpl-class.md)<br/>
 [CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)

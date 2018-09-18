@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a558ff0ae3c33f25c4f07dc642607fd8a840c70c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6bf2b8f6f70db3d9cf385c87d1c9e71b4df05920
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275336"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044827"
 ---
 # <a name="compiler-warning-level-1-c4077"></a>Derleyici Uyarısı (düzey 1) C4077
-Bilinmeyen check_stack seçeneği  
-  
- Eski biçiminde **check_stack** pragma bilinmeyen bir bağımsız değişken ile kullanılır. Bağımsız değişken olmalıdır `+`, `-`, `(on)`, `(off)`, ya da boş.  
-  
- Derleyici pragma yoksayar ve yığını değişmeden bırakır.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4077.cpp  
-// compile with: /W1 /LD  
-#pragma check_stack yes // C4077  
-#pragma check_stack +    // Correct old form  
-#pragma check_stack (on) // Correct new form  
+
+Bilinmeyen check_stack seçeneği
+
+Eski biçiminde **check_stack** pragma ile Bilinmeyen bağımsız değişken olarak kullanılır. Bağımsız değişken olmalıdır `+`, `-`, `(on)`, `(off)`, ya da boş.
+
+Derleyici pragma yoksayar ve yığını değişmeden kalır.
+
+## <a name="example"></a>Örnek
+
+```
+// C4077.cpp
+// compile with: /W1 /LD
+#pragma check_stack yes // C4077
+#pragma check_stack +    // Correct old form
+#pragma check_stack (on) // Correct new form
 ```

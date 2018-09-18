@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dbb5032e49c0522fed1127a68cc27fe9135f777
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5526ba4578895f401ddc2fb177539bc025ca364f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33327833"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063261"
 ---
 # <a name="nmake-warning-u4006"></a>NMAKE Uyarısı U4006
-Özel makrosu tanımlanmamış: 'makroadı'  
-  
- Belirtilen özel makrosu adı tanımlı değil ve bir şey genişletir.
+
+Özel makro tanımsız: 'makroadı'
+
+Belirtilen özel makro adı tanımlı değildir ve hiçbir öğeye genişletilmez.

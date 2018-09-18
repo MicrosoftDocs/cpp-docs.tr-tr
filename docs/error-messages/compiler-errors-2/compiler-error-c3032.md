@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e4882887964ef707c955f5b7532aa13eec0077e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 611867002157928f4bc0ec67f77cc8c49af87e15
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244191"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037898"
 ---
 # <a name="compiler-error-c3032"></a>Derleyici Hatası C3032
-'var': 'yan tümcesi' yan tümcesinde değişkeni tamamlanmamış türü 'type' olamaz  
-  
- Belirli yan tümceleri geçirilen türler derleyiciye tam olarak görünür olması gerekir.  
-  
- Aşağıdaki örnek C3032 oluşturur:  
-  
-```  
-// C3032.cpp  
-// compile with: /openmp /link vcomps.lib  
-#include "omp.h"  
-  
-struct Incomplete;  
-extern struct Incomplete inc;  
-  
-int main() {  
-   int i = 9;  
-   #pragma omp parallel private(inc)   // C3032  
-      ;  
-  
-   #pragma omp parallel private(i)     // OK  
-      ;  
-  
-}  
+
+'var': 'yan tümcesi' yan tümcesindeki değişken 'type' eksik türe sahip olamaz
+
+Belirli bir yan tümce için geçirilen türler derleyici için tümüyle görünür olmalıdır.
+
+Aşağıdaki örnek, C3032 oluşturur:
+
+```
+// C3032.cpp
+// compile with: /openmp /link vcomps.lib
+#include "omp.h"
+
+struct Incomplete;
+extern struct Incomplete inc;
+
+int main() {
+   int i = 9;
+   #pragma omp parallel private(inc)   // C3032
+      ;
+
+   #pragma omp parallel private(i)     // OK
+      ;
+
+}
 ```

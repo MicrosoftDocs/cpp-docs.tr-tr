@@ -16,36 +16,37 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0775f9d771b2c9497b3dc731e26c6a3b4e6ab30c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 978d843243cdceb294bc83dbac7a2725a7ec9eed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246545"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070736"
 ---
 # <a name="compiler-error-c2970"></a>Derleyici Hatası C2970
-'class': 'param' şablon parametresi: 'arg': iç bağlantı nesneleri içeren bir ifade türü olmayan bağımsız değişken olarak kullanılamaz  
-  
- Adı veya adresi statik bir değişkenin bir şablon bağımsız değişken olarak kullanamazsınız. Şablon sınıfı derleme zamanında değerlendirilebilir sabit bir değere bekliyor.  
-  
- Aşağıdaki örnek C2970 oluşturur:  
-  
-```  
-// C2970.cpp  
-// compile with: /c  
-static int si;  
-// could declare nonstatic to resolve all errors  
-// int si;  
-  
-template <int i>   
-class X {};  
-  
-template <int *pi>   
-class Y {};  
-  
-X<si> anX;   // C2970 cannot use static variable in templates  
-  
-// this would also work  
-const int i = 10;  
-X<i> anX2;  
+
+'class': şablon parametresi 'param': 'değişken': iç bağlaması olan nesneler içeren bir ifade tür olmayan bir bağımsız değişken olarak kullanılamaz
+
+Bir şablon bağımsız değişkeni adı veya adresi statik bir değişkeni kullanamazsınız. Şablon sınıfı, derleme zamanında değerlendirilebilen bir sabit değer bekler.
+
+Aşağıdaki örnek, C2970 oluşturur:
+
+```
+// C2970.cpp
+// compile with: /c
+static int si;
+// could declare nonstatic to resolve all errors
+// int si;
+
+template <int i>
+class X {};
+
+template <int *pi>
+class Y {};
+
+X<si> anX;   // C2970 cannot use static variable in templates
+
+// this would also work
+const int i = 10;
+X<i> anX2;
 ```

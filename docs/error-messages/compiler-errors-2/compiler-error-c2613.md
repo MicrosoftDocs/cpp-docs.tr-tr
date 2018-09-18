@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b86737654a8b3643b473703e6d5f3acece3e29db
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 590171fb3a7927e205494dd88bb3351756e75fe7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228864"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041902"
 ---
 # <a name="compiler-error-c2613"></a>Derleyici Hatası C2613
-sondaki ',' temel sınıfı listesinde geçersiz  
-  
- Bir temel sınıf listedeki son temel sonra virgül görünür.
+
+sondaki ',' taban sınıfı listesinde geçersiz
+
+Son temel bir taban sınıfı listesinde sonra bir virgül görünür.

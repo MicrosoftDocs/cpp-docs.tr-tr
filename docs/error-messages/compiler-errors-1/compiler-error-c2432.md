@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8dfbadf2c7d53cce799efbd5f10286b31bb3cd3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ca8c2c62415b6ec3c29c820a23677a87a2695c5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196941"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055916"
 ---
 # <a name="compiler-error-c2432"></a>Derleyici Hatası C2432
-16 bit veri 'tanımlayıcısı' ın geçersiz başvuru  
-  
- Bir 16 bit kayıt bir dizin veya temel kayıt kullanılır. Derleyici, 16 bit veri başvuran desteklemez. 16 bit yazmaçlar dizini veya temel kasa için 32 bit kod derleme sırasında kullanılamaz.  
-  
- Aşağıdaki örnek C2432 oluşturur:  
-  
-```  
-// C2432.cpp  
-// processor: x86  
-int main() {  
-   _asm mov eax, DWORD PTR [bx]   // C2432  
-}  
+
+'identifier' içinde 16-bit verilere geçersiz başvuru
+
+Bir 16-bit kayıt temel kaydettirmeye veya bir dizin kullanılır. Derleyici, 16-bit verilere başvurma desteklemez. 16-bit kayıtlarını dizini veya temel kasa için 32-bit kod derlenirken kullanılamaz.
+
+Aşağıdaki örnek, C2432 oluşturur:
+
+```
+// C2432.cpp
+// processor: x86
+int main() {
+   _asm mov eax, DWORD PTR [bx]   // C2432
+}
 ```

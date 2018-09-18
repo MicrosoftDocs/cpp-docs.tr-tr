@@ -17,25 +17,27 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58ca4ab6fdfe06dec6d790db3135e42a6eeb39d8
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 82612d7502557c88c4abf5a974d42b3bf62c3403
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384629"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038717"
 ---
 # <a name="defining-inline-c-functions-with-dllexport-and-dllimport"></a>dllexport ve dllimport ile Satır İçin C İşlevlerini Tanımlama
-**Microsoft özel**  
-  
- `dllexport` özniteliğiyle bir işlevi satır içi olarak tanımlayabilirsiniz. Bu durumda, programdaki herhangi bir modülün işleve başvurup başvurmadığına bakılmaksızın işlevin her zaman örneği oluşturulur ve işlev dışarı aktarılır. İşlevin, başka bir program tarafından içeri aktarıldığı varsayılır.  
-  
- Satır içi olarak ile bildirilen bir işlev tanımlayabilirsiniz **dllimport** özniteliği. Bu durumda, işlev (/Ob (satır içi) derleyici seçeneği belirtimi tabi) genişletilmiş ancak hiçbir zaman örneği. Özellikle, satır içi içeri aktarılan bir işlevin adresi alınırsa, DLL'de yer alan işlevin adresi döndürülür. Bu davranış, satır içi olmayan içeri aktarılmış bir işlevin adresini almakla aynıdır.  
-  
- Tek bir program (diğer bir deyişle, yürütülebilir bir dosyanın DLL arabirimi olmadan) içinde yaptıkları gibi statik yerel veri ve satır içi işlevler dizelerde DLL ve istemci arasında aynı kimlikleri bakımını yapar.  
-  
- İçeri aktarılan satır içi işlevleri sağlarken dikkatli olun. Örneğin, DLL'yi güncelleştirirseniz, istemcinin değiştirilmiş DLL sürümünü kullanacağını varsaymayın. DLL'nin doğru sürümünü yüklediğinizden emin olmak için DLL'nin istemcisini de yeniden oluşturun.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)
+
+**Microsoft'a özgü**
+
+`dllexport` özniteliğiyle bir işlevi satır içi olarak tanımlayabilirsiniz. Bu durumda, programdaki herhangi bir modülün işleve başvurup başvurmadığına bakılmaksızın işlevin her zaman örneği oluşturulur ve işlev dışarı aktarılır. İşlevin, başka bir program tarafından içeri aktarıldığı varsayılır.
+
+Bildirilen bir işlevi de satır içi olarak tanımlayabilirsiniz **dllimport** özniteliği. Bu durumda, işlev Genişletilebilir (/Ob (satır içi) derleyici seçeneği belirtimi tabidir) ancak hiçbir zaman örneği. Özellikle, satır içi içeri aktarılan bir işlevin adresi alınırsa, DLL'de yer alan işlevin adresi döndürülür. Bu davranış, satır içi olmayan içeri aktarılmış bir işlevin adresini almakla aynıdır.
+
+Tek bir programda (yani, DLL arabirimi olmayan yürütülebilir dosyası) gibi statik yerel veriler ve dizeler satır içi işlevler, DLL ve istemci arasında aynı kimlikleri korur.
+
+İçeri aktarılan satır içi işlevleri sağlarken dikkatli olun. Örneğin, DLL'yi güncelleştirirseniz, istemcinin değiştirilmiş DLL sürümünü kullanacağını varsaymayın. DLL'nin doğru sürümünü yüklediğinizden emin olmak için DLL'nin istemcisini de yeniden oluşturun.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[DLL İçeri ve Dışarı Aktarma İşlevleri](../c-language/dll-import-and-export-functions.md)

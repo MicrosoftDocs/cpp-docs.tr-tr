@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2b0b63f4054459b7d8b3c8aae45cf583f635cd95
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 49e364e2676242ad75f185792faa545bbb90ef1e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43751899"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071217"
 ---
 # <a name="ca2aex-class"></a>CA2AEX sınıfı
 
@@ -43,7 +43,7 @@ class CA2AEX
 
 #### <a name="parameters"></a>Parametreler
 
-*t_nBufferLength*  
+*t_nBufferLength*<br/>
 Çeviri işlemde kullanılan arabellek boyutu. Varsayılan uzunluk 128 bayt'tır.
 
 ## <a name="members"></a>Üyeler
@@ -109,10 +109,10 @@ CA2AEX(LPCSTR psz) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*psz*  
+*psz*<br/>
 Dönüştürülecek metin dizesi.
 
-*nCodePage*  
+*nCodePage*<br/>
 Bu sınıftaki kullanılmayan.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -161,9 +161,9 @@ Metin dizesi LPSTR türü olarak döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CA2CAEX sınıfı](../../atl/reference/ca2caex-class.md)   
-[CA2WEX sınıfı](../../atl/reference/ca2wex-class.md)   
-[CW2AEX sınıfı](../../atl/reference/cw2aex-class.md)   
-[CW2CWEX sınıfı](../../atl/reference/cw2cwex-class.md)   
-[CW2WEX sınıfı](../../atl/reference/cw2wex-class.md)   
+[CA2CAEX Sınıfı](../../atl/reference/ca2caex-class.md)<br/>
+[CA2WEX Sınıfı](../../atl/reference/ca2wex-class.md)<br/>
+[CW2AEX Sınıfı](../../atl/reference/cw2aex-class.md)<br/>
+[CW2CWEX Sınıfı](../../atl/reference/cw2cwex-class.md)<br/>
+[CW2WEX Sınıfı](../../atl/reference/cw2wex-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

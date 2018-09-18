@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 665d868aeacbaf5c62bf59a4400baa2b31569972
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b1fbd8994be6fd86a764db400d8761a5d697079b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198735"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037339"
 ---
 # <a name="fatal-error-c1009"></a>Önemli hata C1009
-Derleyici sınırı: Makro çok fazla iç içe  
-  
- Aynı anda çok fazla makroları genişletmek derleyici çalıştı. Derleyici iç içe geçmiş makroları 256 düzeyini bir sınıra sahiptir. İç içe geçmiş makroları daha basit makroları bölün.
+
+Derleyici sınırı: makrolar çok derin iç içe
+
+Derleyici, aynı anda çok fazla makro genişletme denedi. Derleyici iç içe geçmiş makroları 256 düzeyini sınırı vardır. İç içe geçmiş makroları daha basit makroları bölün.

@@ -30,41 +30,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 410677f252dca6ff3d7fba4969b27cf3a18b12ce
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 5e34147c5d8990b9ec47f2a2b6ab3d2689190252
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32392243"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065926"
 ---
 # <a name="getoutputformat"></a>_get_output_format
-Çıktı biçimi bayrağı geçerli değerini alır.  
-  
+
+Çıkış biçimi bayrağı geçerli değerini alır.
+
 > [!IMPORTANT]
->  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT kullanılamaz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-unsigned int _get_output_format();  
-```  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Çıktı biçimi bayrağı geçerli değeri.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Çıktı biçimi bayrağı biçimlendirilmiş g/ç özelliklerini denetler. Şu anda bayrağı iki olası değerler vardır: 0 ve `_TWO_DIGIT_EXPONENT`. Varsa `_TWO_DIGIT_EXPONENT` ayarlanır kayan nokta numaraları yazdırılan üs yalnızca iki basamak ile üçüncü basamak üs boyutu tarafından gerekli olmadıkça. Kayan nokta bayrağı sıfırsa çıktısını görüntüler üç sıfır üç basamak değerine doldurulacak gerekirse kullanarak üs rakamı.  
-  
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
-|`_get_output_format`|\<stdio.h >|  
-  
- Daha fazla uyumluluk bilgileri için bkz: [Uyumluluk](../c-runtime-library/compatibility.md) giriş.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
-[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)  
- [Printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)   
- [printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)   
- [_set_output_format](../c-runtime-library/set-output-format.md)  
+>  Bu işlev artık kullanılmıyor. Visual Studio 2015'te başlayarak, CRT içinde kullanılamaz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+unsigned int _get_output_format();
+```
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Çıkış biçimi bayrağı geçerli değeri.
+
+## <a name="remarks"></a>Açıklamalar
+
+Çıkış biçimi bayrağı biçimlendirilmiş g/ç özelliklerini denetler. Şu anda iki olası değerler bayrak vardır: 0 ve `_TWO_DIGIT_EXPONENT`. Varsa `_TWO_DIGIT_EXPONENT` ayarlandığında, kayan nokta numaralarını yazdırılıp yalnızca iki basamak ile üçüncü basamak üs boyutu tarafından gerekmedikçe. Kayan nokta bayrağı sıfırsa çıktısını görüntüler üç basamak sıfır üç basamak değerine doldurulacak gerekirse kullanarak üs.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
+|`_get_output_format`|\<stdio.h >|
+
+Daha fazla uyumluluk bilgisi için bkz. [Uyumluluk](../c-runtime-library/compatibility.md) giriş.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Biçim Belirtim Sözdizimi: printf ve wprintf İşlevleri](../c-runtime-library/format-specification-syntax-printf-and-wprintf-functions.md)<br/>
+[printf, _printf_l, wprintf, _wprintf_l](../c-runtime-library/reference/printf-printf-l-wprintf-wprintf-l.md)<br/>
+[printf_s, _printf_s_l, wprintf_s, _wprintf_s_l](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md)<br/>
+[_set_output_format](../c-runtime-library/set-output-format.md)

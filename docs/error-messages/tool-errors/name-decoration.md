@@ -16,19 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 063464fe58417cfce58160ccba12fbcd514c7320
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: fa493a886509a85cc45c14f003ff07886c435280
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43894479"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036039"
 ---
 # <a name="name-decoration"></a>Düzenlemeyi Adlandır
 
 Düzenlemeyi Adlandır genellikle C++ adlandırma kurallarına başvuruyor, ancak C çalışmalarını bir dizi için geçerli olabilir. Varsayılan olarak, C++ işlevi için bir bağlayıcı adı oluşturmak için bu işlev adı, parametreleri ve dönüş türü kullanır. Aşağıdaki işlev göz önünde bulundurun:
 
 ```
-void CALLTYPE test(void)  
+void CALLTYPE test(void)
 ```
 
 Aşağıdaki tabloda, çeşitli çağırma kuralları bağlayıcı adını gösterir.

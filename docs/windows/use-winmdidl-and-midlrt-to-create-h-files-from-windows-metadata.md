@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 41859ae16ecd7f4c3261d644ce37d86fe416ec94
-ms.sourcegitcommit: 6f8dd98de57bb80bf4c9852abafef1c35a7600f1
+ms.openlocfilehash: dcc942bc69ebb37a7aba59e722b1a4cebbbab3ff
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "42589648"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071373"
 ---
 # <a name="how-to-use-winmdidlexe-and-midlrtexe-to-create-h-files-from-windows-metadata"></a>Nasıl yapılır: Windows meta verilerinden .h dosyaları oluşturmak için winmdidl.exe ve midlrt.exe programını kullanma
 
@@ -42,24 +42,25 @@ Varsayılan olarak [Windows 8.1, winmdidl.exe ve midlrt.exe C:\Program Files (x8
 Winmdidl.exe [/nologo] [/supressversioncheck] [/time] [/outdir:dir] [/banner:file] [/utf8] Winmdfile
 ```
 
-`/nologo`  
+**/nologo**<br/>
 Konsol winmdidl telif hakkı iletisi ve sürüm numarasını görüntülenmesini önler.
 
-`/supressversioncheck`  
+**/supressversioncheck**<br/>
 Kullanılmadı.
 
-`/time`  
+**/ saat**<br/>
 Toplam yürütme süresi, konsol çıkışında görüntüler.
 
-/OutDir:\<dir > çıktı dizini belirtir. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücüsü >*: \Users\\*\<kullanıcıadı >* \AppData\Local\VirtualStore\Program dosyaları (x86) \Microsoft Visual Studio 12.0\\.
+**/OutDir:**<em>dizini</em><br/>
+Çıktı dizini belirtir. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın. Varsayılan çıkış dizini  *\<sürücüsü >*: \Users\\*\<kullanıcıadı >* \AppData\Local\VirtualStore\Program dosyaları (x86) \Microsoft Visual Studio 12.0\\.
 
-`/banner:<file>`  
+**/ Başlık:**<em>dosyası</em><br/>
 Varsayılan telif hakkı iletisini ve oluşturulan .idl dosyasının en üstüne winmdidl sürüm numarasına önüne eklediğinizden özel metin içeren bir dosyayı belirtir. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın.
 
-`/utf8`  
+**/UTF8**<br/>
 UTF-8 biçimlendirilmesi için dosyayı neden olur.
 
-`Winmdfile`  
+*Wınmdfıle*<br/>
 Ayrıştırılacak .winmd dosyasının adı. Yol boşluklar içeriyorsa, tırnak işaretleri kullanın.
 
 ## <a name="midlrt-command-line-arguments"></a>Midlrt komut satırı bağımsız değişkenleri

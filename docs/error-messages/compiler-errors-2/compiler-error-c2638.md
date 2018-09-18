@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2917b1a947925b8bbd01f366f9540184b839a41
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7155de95ec4475a2b7b114292e507685717f8d78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230007"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060427"
 ---
 # <a name="compiler-error-c2638"></a>Derleyici Hatası C2638
-'tanımlayıcısı': değiştiricisi geçersiz işaretçiden üyeye üzerinde __based  
-  
- `__based` Değiştiricisi üye işaretçileri için kullanılamaz.  
-  
- Aşağıdaki örnek C2638 oluşturur:  
-  
-```  
-// C2638.cpp  
-void *a;  
-  
-class C {  
-public:  
-   int i;  
-   int j;  
-   int func();  
-};  
-int __based (a) C::* cpi = &C::i;  // C2638  
-int (__based (a) C::* cpf)() = &C::func; // c2638  
+
+'identifier': __based değiştiricisi üye işaretçisi üzerinde geçersizdir
+
+`__based` Değiştiricisi üye işaretçileri için kullanılamaz.
+
+Aşağıdaki örnek, C2638 oluşturur:
+
+```
+// C2638.cpp
+void *a;
+
+class C {
+public:
+   int i;
+   int j;
+   int func();
+};
+int __based (a) C::* cpi = &C::i;  // C2638
+int (__based (a) C::* cpf)() = &C::func; // c2638
 ```

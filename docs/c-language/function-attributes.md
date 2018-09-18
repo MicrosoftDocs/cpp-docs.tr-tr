@@ -17,19 +17,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff628dc0d4cca2d42401a1cc83a89926e42404e4
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0a2d1ff03041f83a3106553d69b6c111fb6f4a36
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382948"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066914"
 ---
 # <a name="function-attributes"></a>İşlev Öznitelikleri
-**Microsoft özel**  
-  
- İsteğe bağlı *özniteliği seq* nonterminal çağırma işlevi başına temelinde seçmenize olanak sağlar. İşlev olarak da belirtebilirsiniz `__fastcall` veya `__inline`.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C İşlev Tanımları](../c-language/c-function-definitions.md)
+
+**Microsoft'a özgü**
+
+İsteğe bağlı *öznitelik-seq* bildirimlere bir çağırma kuralı işlev başına temelinde seçmenize olanak sağlar. İşlev olarak da belirtebilirsiniz `__fastcall` veya `__inline`.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C İşlev Tanımları](../c-language/c-function-definitions.md)

@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 532320e275d233181868e3ab83ab307c176de765
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: af143e4c195c419155b2e23fd61195ccfe11c60f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690180"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073707"
 ---
 # <a name="concurrentunorderedmultimap-class"></a>concurrent_unordered_multimap Sınıfı
 `concurrent_unordered_multimap` Sınıfı, bir türdeki öğelerin değişen uzunluktaki dizisini denetleyen eşzamanlılığı güvenli bir kapsayıcıdır `std::pair<const K, _Element_type>`. Sıra, eşzamanlılık açısından güvenli sağlayan bir şekilde temsil edilir sona ekleme, öğe erişimi, yineleyici erişimi ve yineleyici çapraz geçiş işlemleri.  
@@ -55,20 +55,20 @@ template <typename K,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `K`  
- Anahtar türü.  
+*K*<br/>
+Anahtar türü.  
   
- `_Element_type`  
- Eşlenen tür.  
+*_Element_type*<br/>
+Eşlenen tür.  
   
- `_Hasher`  
- Karma işlev nesne türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::hash<K>`.  
+*_Hasher*<br/>
+Karma işlev nesne türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::hash<K>`.  
   
- `key_equality`  
- Eşitlik karşılaştırma işlevi nesne türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::equal_to<K>`.  
+*key_equality*<br/>
+Eşitlik karşılaştırma işlevi nesne türü. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::equal_to<K>`.  
   
- `_Allocator_type`  
- Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::allocator<std::pair<K`, `_Element_type>>`.  
+*_Allocator_type*<br/>
+Ayırma ve eşzamanlı vektör için bellek ayırmayı kaldırma hakkındaki ayrıntıları içeren saklı ayırıcı nesnesini gösteren tür. Bu bağımsız değişken isteğe bağlıdır ve varsayılan değer `std::allocator<std::pair<K`, `_Element_type>>`.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -207,29 +207,29 @@ concurrent_unordered_multimap(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Iterator`  
- Giriş yineleyicisinin türü.  
+*_Iterator*<br/>
+Giriş yineleyicisinin türü.  
   
- `_Number_of_buckets`  
- Sıralanmamış birden çok Bu eşleme için demet ilk sayısı.  
+*_Number_of_buckets*<br/>
+Sıralanmamış birden çok Bu eşleme için demet ilk sayısı.  
   
- `_Hasher`  
- Sıralanmamış birden çok Bu eşleme için karma işlevi.  
+*_Hasher*<br/>
+Sıralanmamış birden çok Bu eşleme için karma işlevi.  
   
- `key_equality`  
- Sıralanmamış birden çok Bu eşleme için eşitlik karşılaştırma işlevi.  
+*key_equality*<br/>
+Sıralanmamış birden çok Bu eşleme için eşitlik karşılaştırma işlevi.  
   
- `_Allocator`  
- Sıralanmamış birden çok Bu eşleme için ayırıcı.  
+*_Allocator*<br/>
+Sıralanmamış birden çok Bu eşleme için ayırıcı.  
   
- `_Begin`  
- Kopyalanacak öğe aralığındaki ilk öğenin konumu.  
+*_Begin*<br/>
+Kopyalanacak öğe aralığındaki ilk öğenin konumu.  
   
- `_End`  
- Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.  
+*_Bitiş*<br/>
+Kopyalanacak öğe aralığının dışındaki ilk öğenin konumu.  
   
- `_Umap`  
- Kaynak `concurrent_unordered_multimap` öğelerden kopyalanacak nesne.  
+*_Umap*<br/>
+Kaynak `concurrent_unordered_multimap` öğelerden kopyalanacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Tüm oluşturucular ayırıcı nesnesini depolar `_Allocator` ve sırasız multimap başlatır.  
@@ -253,8 +253,8 @@ size_type count(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `KVal`  
- Aranacak anahtar.  
+*KVal*<br/>
+Aranacak anahtar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Anahtar kapsayıcısında görünür sayısı çarpı.  
@@ -301,8 +301,8 @@ std::pair<const_iterator,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `KVal`  
- Aranacak anahtar değeri.  
+*KVal*<br/>
+Aranacak anahtar değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  A [çifti](../../../standard-library/pair-structure.md) burada bir yineleyici başına ilk öğesidir ve aralığın sonuna bir yineleyici ikinci öğedir.  
@@ -321,8 +321,8 @@ const_iterator find(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `KVal`  
- Aranacak anahtar değeri.  
+*KVal*<br/>
+Aranacak anahtar değeri.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Sağlanan anahtar eşleşen ilk öğenin konumu gösteren bir yineleyici veya yineleyici `end()` böyle bir öğe varsa.  
@@ -378,23 +378,23 @@ typename std::enable_if<!std::is_same<const_iterator,
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Iterator`  
- Ekleme için kullanılan yineleyici türü.  
+*_Iterator*<br/>
+Ekleme için kullanılan yineleyici türü.  
   
- `V`  
- Eşlemeye eklenen değerin türü.  
+*V*<br/>
+Eşlemeye eklenen değerin türü.  
   
- `value`  
- Eklenecek değer.  
+*value*<br/>
+Eklenecek değer.  
   
- `_Where`  
- Bir ekleme noktasını aramak için başlangıç konumu.  
+*_Where*<br/>
+Bir ekleme noktasını aramak için başlangıç konumu.  
   
- `first`  
- Eklenecek Aralık başlangıcı.  
+*ilk*<br/>
+Eklenecek Aralık başlangıcı.  
   
- `last`  
- Eklenecek aralık sonu.  
+*Son*<br/>
+Eklenecek aralık sonu.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Ekleme konumu gösteren bir yineleyici.  
@@ -471,8 +471,8 @@ concurrent_unordered_multimap& operator= (concurrent_unordered_multimap&& _Umap)
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Umap`  
- Kaynak `concurrent_unordered_multimap` nesne.  
+*_Umap*<br/>
+Kaynak `concurrent_unordered_multimap` nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `concurrent_unordered_multimap` nesne.  
@@ -489,8 +489,8 @@ void rehash(size_type _Buckets);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Buckets`  
- İstenen demet sayısı.  
+*_Buckets*<br/>
+İstenen demet sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Üye işlevi en az olacak şekilde demet sayısını değiştirir `_Buckets` ve gerektiğinde karma tabloyu yeniden oluşturur. Demet sayısı 2'in üssü olmalıdır. 2'in kuvveti değil ise 2 sonraki en büyük gücünü yuvarlanır.  
@@ -520,8 +520,8 @@ void swap(concurrent_unordered_multimap& _Umap);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Umap`  
- `concurrent_unordered_multimap` İle değiştirilecek nesne.  
+*_Umap*<br/>
+`concurrent_unordered_multimap` İle değiştirilecek nesne.  
   
 ##  <a name="unsafe_begin"></a> unsafe_begin 
 
@@ -534,8 +534,8 @@ const_local_iterator unsafe_begin(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Bucket`  
- Demet dizini.  
+*_Bucket*<br/>
+Demet dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Demet başlangıcına işaret eden bir yineleyici.  
@@ -549,8 +549,8 @@ size_type unsafe_bucket(const key_type& KVal) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `KVal`  
- Aranan öğe anahtarı.  
+*KVal*<br/>
+Aranan öğe anahtarı.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu kapsayıcıda anahtarı için demet dizini.  
@@ -575,8 +575,8 @@ size_type unsafe_bucket_size(size_type _Bucket);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Bucket`  
- Aramak için demet.  
+*_Bucket*<br/>
+Aramak için demet.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu kapsayıcı demet sayısı.  
@@ -590,8 +590,8 @@ const_local_iterator unsafe_cbegin(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Bucket`  
- Demet dizini.  
+*_Bucket*<br/>
+Demet dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Demet başlangıcına işaret eden bir yineleyici.  
@@ -605,8 +605,8 @@ const_local_iterator unsafe_cend(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Bucket`  
- Demet dizini.  
+*_Bucket*<br/>
+Demet dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Demet başlangıcına işaret eden bir yineleyici.  
@@ -622,8 +622,8 @@ const_local_iterator unsafe_end(size_type _Bucket) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Bucket`  
- Demet dizini.  
+*_Bucket*<br/>
+Demet dizini.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Demet sonuna işaret eden bir yineleyici.  
@@ -645,14 +645,15 @@ iterator unsafe_erase(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Where`  
- Silmeye başlanacak yineleme konumu.  
+*_Where*<br/>
+Silmeye başlanacak yineleme konumu.  
   
- `KVal`  
- Silinecek anahtar değer.  
+*KVal*<br/>
+Silinecek anahtar değer.  
   
- `first`  
- `last`  
+*ilk*<br/>
+*Son*<br/>
+Yineleyiciler.
   
 ### <a name="return-value"></a>Dönüş Değeri  
  İlk iki üye işlev kaldırılan tüm öğelerin ötesindeki ilk öğeyi belirleyen bir yineleyici döndürür veya `concurrent_unordered_multimap::end`böyle bir öğe mevcut değil ise. Üçüncü üye işlevi, kaldırdığı öğelerin sayısını döndürür.  

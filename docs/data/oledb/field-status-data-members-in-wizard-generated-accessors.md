@@ -16,19 +16,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 2538e2b14277b24c583ae2392dd9249c93d4854b
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: e289e2f40326142894894dad1bfe34c801889bb3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690271"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066862"
 ---
 # <a name="field-status-data-members-in-wizard-generated-accessors"></a>Sihirbazın Ürettiği Erişimcilerde Alan Durumu Veri Üyeleri
+
 Bir tüketici oluşturma için ATL OLE DB Tüketicisi Sihirbazı kullandığınızda, sihirbazın veri üyesi, sütun eşlemesinde belirttiğiniz her bir alan için kullanıcı kayıt sınıfı oluşturur. Her veri üyesi türünde `DWORD` ve kendi ilgili alana karşılık gelen bir durum değeri içerir.  
   
- Örneğin, bir veri üyesi için *m_OwnerID*, alan durumu için bir ek veri üyesi sihirbaz oluşturur (*dwOwnerIDStatus*) ve başka bir alan uzunluğu için (*dwOwnerIDLength*). Ayrıca, bir sütun eşlemesi COLUMN_ENTRY_LENGTH_STATUS girişi oluşturur.  
+Örneğin, bir veri üyesi için *m_OwnerID*, alan durumu için bir ek veri üyesi sihirbaz oluşturur (*dwOwnerIDStatus*) ve başka bir alan uzunluğu için (*dwOwnerIDLength*). Ayrıca, bir sütun eşlemesi COLUMN_ENTRY_LENGTH_STATUS girişi oluşturur.  
   
- Bu, aşağıdaki kodda gösterilmiştir:  
+Bu, aşağıdaki kodda gösterilmiştir:  
   
 ```cpp  
 [db_source("insert connection string")]  
@@ -81,20 +82,21 @@ END_COLUMN_MAP()
 > [!NOTE]
 >  Kullanıcı kayıt sınıfı değiştirin ya da kendi tüketici yazma, verileri değişkenleri durum ve uzunluğu değişkenlerinden önce gelmelidir.  
   
- Hata ayıklama amacıyla durum değerleri kullanabilirsiniz. ATL OLE DB Tüketici Sihirbazı tarafından oluşturulan kod derleme gibi DB_S_ERRORSOCCURRED veya DB_E_ERRORSOCCURRED oluşturursa, alan durumu veri üyeleri, geçerli değerlere önce görünmelidir. Sıfır olmayan değerler sahip olanlar sorunlu sütunlara karşılık gelir.  
+Hata ayıklama amacıyla durum değerleri kullanabilirsiniz. ATL OLE DB Tüketici Sihirbazı tarafından oluşturulan kod derleme gibi DB_S_ERRORSOCCURRED veya DB_E_ERRORSOCCURRED oluşturursa, alan durumu veri üyeleri, geçerli değerlere önce görünmelidir. Sıfır olmayan değerler sahip olanlar sorunlu sütunlara karşılık gelir.  
   
- Durum değerleri, belirli bir alan için bir NULL değer ayarlamak için de kullanabilirsiniz. Bunun yapılması, bir alan değeri sıfır yerine NULL olarak ayırmak istediğiniz durumlarda yardımcı olur. Bu NULL geçerli bir değer veya özel bir değeri olup olmadığına karar vermenize ve uygulamanızı bunu nasıl işleyeceğini karar size bağlıdır. OLE DB DBSTATUS_S_ISNULL genel bir NULL değer belirtme doğru şekilde tanımlar. Tüketici verileri okur ve değer null ise, Durum alanını DBSTATUS_S_ISNULL ayarlanır. Bir NULL değer ayarlamak tüketici isterse, tüketici sağlayıcı çağırmadan önce DBSTATUS_S_ISNULL durum değeri ayarlar.  
+Durum değerleri, belirli bir alan için bir NULL değer ayarlamak için de kullanabilirsiniz. Bunun yapılması, bir alan değeri sıfır yerine NULL olarak ayırmak istediğiniz durumlarda yardımcı olur. Bu NULL geçerli bir değer veya özel bir değeri olup olmadığına karar vermenize ve uygulamanızı bunu nasıl işleyeceğini karar size bağlıdır. OLE DB DBSTATUS_S_ISNULL genel bir NULL değer belirtme doğru şekilde tanımlar. Tüketici verileri okur ve değer null ise, Durum alanını DBSTATUS_S_ISNULL ayarlanır. Bir NULL değer ayarlamak tüketici isterse, tüketici sağlayıcı çağırmadan önce DBSTATUS_S_ISNULL durum değeri ayarlar.  
   
- Ardından, biçim açın ve arama `DBSTATUSENUM`. Sayısal değer sıfır olmayan durumuna karşı ardından eşleşebilir `DBSTATUSENUM` sabit listesi değerleri. Sabit listesi adı neyin yanlış olduğunu söylemek için yeterli değilse, "Bağlama veri değerleri" bölümünde "Durum" konusuna [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)). Bu konu, veri alma veya ayarlarken kullanılan durum değerleri tabloları içerir. Uzunluk değerleri hakkında daha fazla bilgi için aynı bölüme "Uzunluğu" bölümüne bakın.  
+Ardından, biçim açın ve arama `DBSTATUSENUM`. Sayısal değer sıfır olmayan durumuna karşı ardından eşleşebilir `DBSTATUSENUM` sabit listesi değerleri. Sabit listesi adı neyin yanlış olduğunu söylemek için yeterli değilse, "Bağlama veri değerleri" bölümünde "Durum" konusuna [OLE DB Programcı Kılavuzu](/previous-versions/windows/desktop/ms713643\(v=vs.85\)). Bu konu, veri alma veya ayarlarken kullanılan durum değerleri tabloları içerir. Uzunluk değerleri hakkında daha fazla bilgi için aynı bölüme "Uzunluğu" bölümüne bakın.  
   
 ## <a name="retrieving-the-length-or-status-of-a-column"></a>Uzunluk veya bir sütun durumunu alma  
- Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL için örneğin denetlemek için) durumunu alabilirsiniz:  
+
+Bir değişken uzunluklu sütun uzunluğu ya da bir sütun (DBSTATUS_S_ISNULL için örneğin denetlemek için) durumunu alabilirsiniz:  
   
--   Uzunluğu almak için COLUMN_ENTRY_LENGTH makrosu kullanın.  
+- Uzunluğu almak için COLUMN_ENTRY_LENGTH makrosu kullanın.  
   
--   Durumu almak için COLUMN_ENTRY_STATUS makrosu kullanın.  
+- Durumu almak için COLUMN_ENTRY_STATUS makrosu kullanın.  
   
--   Her ikisini de almak için COLUMN_ENTRY_LENGTH_STATUS, aşağıda gösterildiği gibi kullanın.  
+- Her ikisini de almak için COLUMN_ENTRY_LENGTH_STATUS, aşağıda gösterildiği gibi kullanın.  
   
 ```cpp  
 class CProducts  
@@ -123,7 +125,8 @@ while (product.MoveNext() == S_OK)
 }  
 ```  
   
- Kullanırken `CDynamicAccessor`, uzunluğu ve durum sizin için otomatik olarak bağlanır. Uzunluğu ve durum değerleri almak için kullanın `GetLength` ve `GetStatus` üye işlevleri.  
+Kullanırken `CDynamicAccessor`, uzunluğu ve durum sizin için otomatik olarak bağlanır. Uzunluğu ve durum değerleri almak için kullanın `GetLength` ve `GetStatus` üye işlevleri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

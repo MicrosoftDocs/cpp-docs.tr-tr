@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de3dffbbacd69d19b2a3fc5ba1fac360712db19e
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f34bd3f1594a49737f4298316b5eb3fe08b866a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895259"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038561"
 ---
 # <a name="string-and-character-literals--c"></a>Dize ve karakter değişmez değerleri (C++)
 
@@ -41,8 +41,8 @@ C++, çeşitli dize ve karakter türleri destekler ve bu türlerinden her birini
 #include <string>
 using namespace std::string_literals; // enables s-suffix for std::string literals
 
-int main()  
-{  
+int main()
+{
     // Character literals
     auto c0 =   'A'; // char
     auto c1 = u8'A'; // char
@@ -51,16 +51,16 @@ int main()
     auto c4 =  U'A'; // char32_t
 
     // String literals
-    auto s0 =   "hello"; // const char*  
+    auto s0 =   "hello"; // const char*
     auto s1 = u8"hello"; // const char*, encoded as UTF-8
-    auto s2 =  L"hello"; // const wchar_t*  
+    auto s2 =  L"hello"; // const wchar_t*
     auto s3 =  u"hello"; // const char16_t*, encoded as UTF-16
     auto s4 =  U"hello"; // const char32_t*, encoded as UTF-32
 
     // Raw string literals containing unescaped \ and "
-    auto R0 =   R"("Hello \ world")"; // const char*  
+    auto R0 =   R"("Hello \ world")"; // const char*
     auto R1 = u8R"("Hello \ world")"; // const char*, encoded as UTF-8
-    auto R2 =  LR"("Hello \ world")"; // const wchar_t*  
+    auto R2 =  LR"("Hello \ world")"; // const wchar_t*
     auto R3 =  uR"("Hello \ world")"; // const char16_t*, encoded as UTF-16
     auto R4 =  UR"("Hello \ world")"; // const char32_t*, encoded as UTF-32
 
@@ -72,13 +72,13 @@ int main()
     auto S4 =  U"hello"s; // std::u32string
 
     // Combining raw string literals with standard s-suffix
-    auto S5 =   R"("Hello \ world")"s; // std::string from a raw const char*  
+    auto S5 =   R"("Hello \ world")"s; // std::string from a raw const char*
     auto S6 = u8R"("Hello \ world")"s; // std::string from a raw const char*, encoded as UTF-8
-    auto S7 =  LR"("Hello \ world")"s; // std::wstring from a raw const wchar_t*  
+    auto S7 =  LR"("Hello \ world")"s; // std::wstring from a raw const wchar_t*
     auto S8 =  uR"("Hello \ world")"s; // std::u16string from a raw const char16_t*, encoded as UTF-16
     auto S9 =  UR"("Hello \ world")"s; // std::u32string from a raw const char32_t*, encoded as UTF-32
-}  
-```  
+}
+```
 
 Dize değişmez değerleri, önek olabilir veya `u8`, `L`, `u`, ve `U` önekleri belirtmek için (tek baytlı veya çok baytlı) karakteri, UTF-8, geniş karakteri (UCS-2 veya UTF-16), UTF-16 ve UTF-32 kodlamalarına sırasıyla daraltın. Ham dize sabit değeri olabilir `R`, `u8R`, `LR`, `uR` ve `UR` ön ekleri için bu kodlamalarda ham sürümünün eşdeğeridir.  Geçici veya statik std::string değerleri oluşturmak için dize sabit değerleri veya ham dize sabit değerleri kullanabilirsiniz bir `s` soneki. Daha fazla bilgi için aşağıdaki dize değişmez değerleri bölümüne bakın. Temel kaynak karakter hakkında daha fazla bilgi için set, evrensel karakter adları ve genişletilmiş kod sayfaları karakterlerinden kaynak kodunuzu kullanma, bkz [karakter kümesi](../cpp/character-sets.md).
 
@@ -86,15 +86,15 @@ Dize değişmez değerleri, önek olabilir veya `u8`, `L`, `u`, ve `U` önekleri
 
 A *karakter sabit değeri* sabit karakterden oluşur. Tek tırnak işareti içine alınmış karakter olarak temsil edilir. Beş tür karakter değişmez değeri vardır:
 
--   Normal karakter değişmez değerleri türü **char**, örneğin `'a'`  
+- Normal karakter değişmez değerleri türü **char**, örneğin `'a'`
 
--   Türünde UTF-8 karakter değişmez değerleri **char**, örneğin `u8'a'`  
+- Türünde UTF-8 karakter değişmez değerleri **char**, örneğin `u8'a'`
 
--   Türünde geniş karakter değişmez değerleri `wchar_t`, örneğin `L'a'`  
+- Türünde geniş karakter değişmez değerleri `wchar_t`, örneğin `L'a'`
 
--   Türünde UTF-16 karakter değişmez değerleri `char16_t`, örneğin `u'a'`  
+- Türünde UTF-16 karakter değişmez değerleri `char16_t`, örneğin `u'a'`
 
--   Türünde UTF-32 karakter değişmez değerleri `char32_t`, örneğin `U'a'`  
+- Türünde UTF-32 karakter değişmez değerleri `char32_t`, örneğin `U'a'`
 
 Ters eğik çizgi ayrılmış karakterler dışında herhangi bir karakter, bir karakter sabiti için kullanılan karakter olabilir ('\\'), tek tırnak işareti (') veya yeni satır. Ayrılmış karakterler bir çıkış sırası kullanılarak belirtilebilir. Tür karakter tutabilecek kadar büyük olduğu sürece karakter evrensel karakter adları kullanılarak belirtilebilir.
 
@@ -132,7 +132,7 @@ Aşağıdaki kod, kaçış karakterlerini normal karakter değişmez değerleri 
 #include <iostream>
 using namespace std;
 
-int main() {  
+int main() {
     char newline = '\n';
     char tab = '\t';
     char backspace = '\b';
@@ -145,24 +145,24 @@ int main() {
     cout << "Backspace character: " << backspace << "ending" << endl; // Backspace character : ending
     cout << "Backslash character: " << backslash << "ending" << endl; // Backslash character : \ending
     cout << "Null character: " << nullChar << "ending" << endl; //Null character:  ending
-}  
-```  
+}
+```
 
-**Microsoft'a özgü**  
+**Microsoft'a özgü**
 
 Bir değeri normal bir karakter sabiti (bir önek olmayanlar) oluşturmak için derleyicinin karakterin veya karakter dizisi halinde bir 32 bit tamsayı içindeki 8-bit değerleri tek tırnak işaretleri arasında dönüştürür. Birden çok karakter sabiti içinde karşılık gelen bayt düşük düzey yüksek sıralı gerektiği gibi doldurun. Oluşturmak için bir **char** değeri, derleyici, düşük düzey bayt alır. Oluşturmak için bir **wchar_t** veya `char16_t` değeri, derleyici, düşük düzey sözcüğü alır. Derleyici, herhangi bir BITS atanmış bayt veya word ayarlanırsa, sonuç kesilmiş sizi uyarır.
 
 ```cpp
 char c0    = 'abcd';    // C4305, C4309, truncates to 'd'
 wchar_t w0 = 'abcd';    // C4305, C4309, truncates to '\x6364'
-```  
+```
 
 Sekizli çıkış dizisi, en fazla 3 sekizlik basamak dizisi tarafından izlenen bir ters eğik çizgidir. Görünen üçten fazla basamak içeren sekizli bir atlatma sırasının davranış, sonraki basamak karakteri olarak arkasından bir 3 basamaklı sekizli bir dizisi olarak kabul edilir; Bu, şaşırtıcı sonuçlar verebilirler. Örneğin:
 
 ```cpp
 char c1 = '\100';   // '@'
 char c2 = '\1000';  // C4305, C4309, truncates to '0'
-```  
+```
 
 Sekizlik olmayan karakterler içeren görünmesini kaçış dizileri, kalan karakterleridir son sekizlik karaktere kadar sekizlik bir dizisi olarak değerlendirilir. Örneğin:
 
@@ -170,14 +170,14 @@ Sekizlik olmayan karakterler içeren görünmesini kaçış dizileri, kalan kara
 char c3 = '\009';   // '9'
 char c4 = '\089';   // C4305, C4309, truncates to '9'
 char c5 = '\qrs';   // C4129, C4305, C4309, truncates to 's'
-```  
+```
 
 Onaltılık kaçış sırası karakterinin ardından gelen ters eğik çizgi olduğundan `x`çizgidir onaltılık basamak dizisi. Derleyici Hatası C2153 onaltılık basamak içermeyen kaçış dizisi neden olur: "onaltılık değişmez değerleri en az bir onaltılık basamak olmalıdır". Baştaki sıfırlar dikkate alınmaz. Onaltılık ve onaltılık olmayan karakterler sahip görünür bir kaçış dizisi, onaltılık olmayan karakterleridir son onaltılık karaktere kadar bir onaltılı çıkış dizisi olarak değerlendirilir.   Bir sıradan veya u8 önekli karakter sabit değeri, en yüksek onaltılık değer 0xFF değeridir. Bir L ön eki veya u önekli geniş karakter olarak sabit değeri, en yüksek onaltılık değer 0xFFFF ' dir. Bir U öneki geniş karakter sabit değeri, en yüksek onaltılık değer 0xFFFFFFFF olduğu.
 
 ```cpp
 char c6 = '\x0050'; // 'P'
 char c7 = '\x0pqr'; // C4305, C4309, truncates to 'r'
-```  
+```
 
 Bir geniş karakter sabiti ön ekine sahip değilse `L` birden fazla karakter içeriyor. ilk karakter değeri alınır. Eşdeğer normal karakter sabiti davranışını, sonraki karakterler yoksayılır.
 
@@ -189,9 +189,9 @@ wchar_t w4 = L'\089';   // C4066 L'\0', 89 ignored
 wchar_t w5 = L'\qrs';   // C4129, C4066 L'q' escape, rs ignored
 wchar_t w6 = L'\x0050'; // L'P'
 wchar_t w7 = L'\x0pqr'; // C4066 L'\0', pqr ignored
-```  
+```
 
-**END Microsoft özgü**  
+**END Microsoft özgü**
 
 Ters eğik çizgi karakteri (\\) bir satırın sonuna yerleştirildiğinde bir satır devam ettirme karakteridir. Ters kesme karakterinin bir karakter sabiti olarak görünmesini istiyorsanız, bir satırda iki ters eğik çizgi yazmanız gerekir (`\\`). Satır devamı karakteri hakkında daha fazla bilgi için bkz: [çeviri aşamaları](../preprocessor/phases-of-translation.md).
 
@@ -205,7 +205,7 @@ char u2 = '\101';       // octal, 'A'
 char u3 = '\x41';       // hexadecimal, 'A'
 char u4 = '\u0041';     // \u UCN 'A'
 char u5 = '\U00000041'; // \U UCN 'A'
-```  
+```
 
 #### <a name="surrogate-pairs"></a>Yedek çiftler
 
@@ -226,7 +226,7 @@ const char *narrow = "abcd";
 
 // represents the string: yes\no
 const char *escaped = "yes\\no";
-```  
+```
 
 #### <a name="utf-8-encoded-strings"></a>UTF-8 olarak kodlanmış dizeler
 
@@ -235,7 +235,7 @@ UTF-8 kodlamalı dize bir u8 öneki, çift tırnak ayrılmış, null ile sonland
 ```cpp
 const char* str1 = u8"Hello World";
 const char* str2 = u8"\U0001F607 is O:-)";
-```  
+```
 
 ### <a name="wide-string-literals"></a>Geniş dize değişmez değerleri
 
@@ -244,16 +244,16 @@ Bir geniş dize değişmez değeri null ile sonlandırılmış bir dizi sabit ol
 ```cpp
 const wchar_t* wide = L"zyxw";
 const wchar_t* newline = L"hello\ngoodbye";
-```  
+```
 
-#### <a name="char16t-and-char32t-c11"></a>char16_t ve char32_t (C ++ 11)  
+#### <a name="char16t-and-char32t-c11"></a>char16_t ve char32_t (C ++ 11)
 
 C ++ 11 tanıtır taşınabilir `char16_t` (16-bit Unicode) ve `char32_t` (32-bit Unicode) karakter türleri:
 
 ```cpp
-auto s3 = u"hello"; // const char16_t*  
-auto s4 = U"hello"; // const char32_t*  
-```  
+auto s3 = u"hello"; // const char16_t*
+auto s4 = U"hello"; // const char32_t*
+```
 
 ### <a name="raw-string-literals-c11"></a>Ham dize değişmez değerleri (C ++ 11)
 
@@ -273,13 +273,13 @@ Sınırlayıcı, işlenmemiş bir dize sabitinin açma parantezinden hemen önce
 ```cpp
 // meant to represent the string: )"
 const char* bad_parens = R"()")";  // error C2059
-```  
+```
 
 Ancak bir sınırlayıcı bunu çözer:
 
 ```cpp
 const char* good_parens = R"xyz()")xyz";
-```  
+```
 
 İçinde yeni bir satır (atlatma karakteri değil) kaynak olarak bir ham dize değişmez değeri oluşturabilirsiniz:
 
@@ -288,7 +288,7 @@ const char* good_parens = R"xyz()")xyz";
 //goodbye
 const wchar_t* newline = LR"(hello
 goodbye)";
-```  
+```
 
 ### <a name="stdstring-literals-c14"></a>Std::String değişmez değerleri (C ++ 14)
 
@@ -302,13 +302,13 @@ string str2{ u8"Hello World" };
 wstring str3{ L"hello"s };
 u16string str4{ u"hello"s };
 u32string str5{ U"hello"s };
-```  
+```
 
 S soneki ayrıca ham dize değişmez değerleri üzerinde kullanılabilir:
 
 ```cpp
 u32string str6{ UR"(She said "hello.")"s };
-```  
+```
 
 Std::String değişmez değerleri ad alanında tanımlanan `std::literals::string_literals` içinde \<dizesi > üst bilgi dosyası. Çünkü `std::literals::string_literals`, ve `std::literals` her ikisi de olarak bildirilen [satır içi ad alanları](../cpp/namespaces-cpp.md), `std::literals::string_literals` doğrudan ad alanında aitse gibi otomatik olarak kabul edilir `std`.
 
@@ -319,7 +319,7 @@ ANSI karakter için\* dizeler ve diğer tek baytlık kodlamaları (UTF-8), bir d
 ```cpp
 const wchar_t* str = L"Hello!";
 const size_t byteSize = (wcslen(str) + 1) * sizeof(wchar_t);
-```  
+```
 
 Dikkat `strlen()` ve `wcslen()` boyutu dize türü öğesi boyutuna eşittir sondaki boş karakter boyutunu kapsamadığını: tek baytlık bir karakter üzerinde\* dize, wchar_t iki bayt\* veya char16_t\*dizeleri ve char32_t üzerindeki dört bayt\* dizeleri.
 
@@ -336,14 +336,14 @@ Visual c++'ta const olmayan bir işaretçi başlatmak için bir dize sabit değe
 ```cpp
 wchar_t* str = L"hello";
 str[2] = L'a'; // run-time error: access violation
-```  
+```
 
 Bir dize sabit değeri ayarladığınızda non_const karakter işaretçisi dönüştürüldüğünde hata dönüştüğünde derleyicinin neden olabilir [/ZC: strictstrings (dize değişmez değer türü dönüşümünü devre dışı bırakma)](../build/reference/zc-strictstrings-disable-string-literal-type-conversion.md) derleyici seçeneği. Bunun için standartlara uygun taşınabilir kod öneririz. Bu ayrıca kullanmak iyi bir uygulamadır **otomatik** doğru (const) türe çözümlendiğinden, dize sabit işaretçileri, bildirmek için anahtar sözcüğü. Örneğin, bu kod örneği, bir dize değişmez deşerini derleme sırasında yazma denemsi yakalamıştır:
 
 ```cpp
 auto str = L"hello";
 str[2] = L'a'; // C3892: you cannot assign to a variable that is const.
-```  
+```
 
 Bazı durumlarda, yürütülebilir dosyada yer kazanmak için aynı olan dize değişmezleri havuza. Düz dize havuzu içinde belirli her başvuru bellekte aynı konuma işaret edecek şekilde düz dize başvurularını derleyici nedenlerini dize sabit değerinin ayrı bir örneğine işaret edecek. Dize havuzunu etkinleştirmek için [/GF](../build/reference/gf-eliminate-duplicate-strings.md) derleyici seçeneği.
 
@@ -355,33 +355,33 @@ Bitişik geniş veya dar dize değişmez değerleri sıralanır. Bu bildirim:
 
 ```cpp
 char str[] = "12" "34";
-```  
+```
 
 bildirimle aynıdır:
 
 ```cpp
 char atr[] = "1234";
-```  
+```
 
 Bu bildirim ve:
 
 ```cpp
 char atr[] =  "12\
 34";
-```  
+```
 
 Dize değişmez değerleri belirtmek için katıştırılmış onaltılık atlatma kodları kullanma beklenmedik sonuçlara neden olabilir. Karakterleri, ardından da f ASCII 5 karakteri içeren bir dize değişmez değeri oluşturmak aşağıdaki istemektedir i, v ve e:
 
 ```cpp
 "\x05five"
-```  
+```
 
 Geldiği bir alt çizgi için ASCII kodu olan onaltılık 5F ve ardından, gerçek sonuç, i, v ve e. Doğru sonuçları elde etmek için bunlardan birini kullanabilirsiniz:
 
 ```cpp
 "\005five"     // Use octal literal.
 "\x05" "five"  // Use string splicing.
-```  
+```
 
 Std::String değişmez değerleri, çünkü bunlar std::string türleri birleştirilmiş ile + için tanımlanan işleci [basic_string](../standard-library/basic-string-class.md) türleri. Bitişik dize değişmez değerleri aynı şekilde de birleştirilebilir. Her iki durumda da, kodlama dizesi ve soneki eşleşmesi gerekir:
 
@@ -390,7 +390,7 @@ auto x1 = "hello" " " " world"; // OK
 auto x2 = U"hello" " " L"world"; // C2308: disagree on prefix
 auto x3 = u8"hello" " "s u8"world"s; // OK, agree on prefixes and suffixes
 auto x4 = u8"hello" " "s u8"world"z; // C3688, disagree on suffixes
-```  
+```
 
 ### <a name="string-literals-with-universal-character-names"></a>Evrensel karakter adları dize sabit değerleri
 
@@ -400,21 +400,21 @@ Evrensel karakter adı dize türünde bir veya daha fazla karakter olarak kodlan
 // ASCII smiling face
 const char*     s1 = ":-)";
 
-// UTF-16 (on Windows) encoded WINKING FACE (U+1F609)  
+// UTF-16 (on Windows) encoded WINKING FACE (U+1F609)
 const wchar_t*  s2 = L"😉 = \U0001F609 is ;-)";
 
-// UTF-8  encoded SMILING FACE WITH HALO (U+1F607)  
+// UTF-8  encoded SMILING FACE WITH HALO (U+1F607)
 const char*     s3 = u8"😇 = \U0001F607 is O:-)";
 
-// UTF-16 encoded SMILING FACE WITH OPEN MOUTH (U+1F603)  
+// UTF-16 encoded SMILING FACE WITH OPEN MOUTH (U+1F603)
 const char16_t* s4 = u"😃 = \U0001F603 is :-D";
 
-// UTF-32 encoded SMILING FACE WITH SUNGLASSES (U+1F60E)  
+// UTF-32 encoded SMILING FACE WITH SUNGLASSES (U+1F60E)
 const char32_t* s5 = U"😎 = \U0001F60E is B-)";
-```  
+```
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[Karakter kümesi](../cpp/character-sets.md)   
-[Sayısal, Boole ve işaretçi değişmez değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)   
+[Karakter Kümeleri](../cpp/character-sets.md)<br/>
+[Sayısal, Boole ve İşaretçi Değişmez Değerleri](../cpp/numeric-boolean-and-pointer-literals-cpp.md)<br/>
 [Kullanıcı Tanımlı Sabit Değerler](../cpp/user-defined-literals-cpp.md)

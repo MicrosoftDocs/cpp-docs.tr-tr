@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d088acfe817dc2980f593d3e013a021646586f8c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3dc13a7eb9a9b86ac57c66ff8c09c03ea9b3f3e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316163"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074754"
 ---
 # <a name="project-build-error-prj0014"></a>Proje Derleme Hatası PRJ0014
-Oluşturulan işlemleri denetlemek için kullanılan iş nesnesi başarısız oldu.  Yapı devam edemiyor.  
-  
- Geliştirme ortamında bir hata oluştu.  
-  
- Bu hatayı gidermek için kapatın ve projeyi yeniden yükleyin. Gerekirse, çıkmak ve Visual Studio'yu yeniden başlatın.
+
+Üretilmiş süreçleri denetleyen iş nesnesinde başarısız oldu.  Derleme devam edemiyor.
+
+Geliştirme ortamında bir hata oluştu.
+
+Bu hatayı gidermek için kapatın ve projeyi yeniden yükleyin. Gerekirse, çıkın ve Visual Studio'yu yeniden başlatın.

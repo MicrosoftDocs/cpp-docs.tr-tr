@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6e60d57942981aef6e613c1b4df36facfe27c71
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 74f61d7ca557ece5d15150022550288aa60eb922
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196224"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063274"
 ---
 # <a name="compiler-error-c2402"></a>Derleyici Hatası C2402
-'tanımlayıcısı': yazmaç 'context' dizininde olması gerekir  
-  
- Dolaylı bellek işlenen kullanılan kayıt bu bağlamda bir dizin kaydı olması gerekir.
+
+'identifier': yazmaç 'bağlamında' dizin olmalıdır
+
+Dolaylı bellek işleneni kullanılan kaydı bu bağlamda bir dizin yazmacı var olması gerekir.

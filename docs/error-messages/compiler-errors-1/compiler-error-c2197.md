@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf90d53aaba9550cecd93603344e0af5ec3c2ab0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fb8e13e21cbba3b6cbf6a4bd84a835270d7fee2c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171044"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036825"
 ---
 # <a name="compiler-error-c2197"></a>Derleyici Hatası C2197
-'function': çağrısı için çok fazla bağımsız değişken  
-  
- Derleyici arama işlevi ya da yanlış işlev bildirimi için çok fazla parametre algılandı.  
-  
- Aşağıdaki örnek C2197 oluşturur:  
-  
-```  
-// C2197.c  
-// compile with: /Za /c  
-void func( int );  
-int main() {  
-   func( 1, 2 );   // C2197 two actual parameters  
-   func( 2 );   // OK  
-}  
+
+'function': çok fazla bağımsız değişken çağrısı için
+
+Derleyici, işlev veya yanlış işlev bildirimi çağrısı için çok fazla sayıda parametre algıladı.
+
+Aşağıdaki örnek, C2197 oluşturur:
+
+```
+// C2197.c
+// compile with: /Za /c
+void func( int );
+int main() {
+   func( 1, 2 );   // C2197 two actual parameters
+   func( 2 );   // OK
+}
 ```

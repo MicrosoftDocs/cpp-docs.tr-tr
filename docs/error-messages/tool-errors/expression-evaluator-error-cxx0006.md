@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 636708042b2291e4edd295baa0da1ffb57dde4ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c44f950955db71e2f81873513a9052e345799d4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300247"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070268"
 ---
 # <a name="expression-evaluator-error-cxx0006"></a>İfade Değerlendirici Hatası CXX0006
-sol parantez eksik  
-  
- Parantezler ifade bulunamadı. İfade dengeli parantez ile yeniden yazın.  
-  
- Bu hata için CAN0006 aynıdır.
+
+sol parantez eksik
+
+Parantezler, ifade içinde bulunamadı. Dengeli parantezli ifade yazın.
+
+Bu hata için CAN0006 aynıdır.

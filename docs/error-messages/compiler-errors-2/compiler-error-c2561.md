@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4f8ece9a3d9347a5179844cbfca3425870c25e2f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8611af23ab884a853fc751ae82c636753993495b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230910"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070710"
 ---
 # <a name="compiler-error-c2561"></a>Derleyici Hatası C2561
-'tanımlayıcısı': işlevi bir değer döndürmesi gerekir  
-  
- İşlev değer döndürme olarak bildirildi, ancak işlev tanımı içermiyor bir `return` deyimi.  
-  
- Bu hata yanlış işlev prototipi tarafından kaynaklanabilir:  
-  
-1.  İşlevi bir değer döndürmezse, işlevin dönüş türüyle bildirme [void](../../cpp/void-cpp.md).  
-  
-2.  İşlev'in tüm olası dalları prototip bildirilen türü değeri döndürür denetleyin.  
-  
-3.  Dönüş değeri depolamak satır içi derleme yordamları içeren C++ işlevlerini `AX` kaydı bir dönüş ifadesi gerekebilir. Değer kopyalama `AX` geçici bir değişken için ve bu değişkeni işlevinden döndürür.  
-  
- Aşağıdaki örnek C2561 oluşturur:  
-  
-```  
-// C2561.cpp  
-int Test(int x) {  
-   if (x) {  
-      return;   // C2561  
-      // try the following line instead  
-      // return 1;  
-   }  
-   return 0;  
-}  
-  
-int main() {  
-   Test(1);  
-}  
+
+'identifier': işlev bir değer döndürmelidir
+
+İşlev değer döndürüyor olarak bildirildi, ancak işlev tanımı içermediğinden bir `return` deyimi.
+
+Bu hata, bir hatalı işlev prototipi tarafından kaynaklanabilir:
+
+1. İşlev bir değer döndürmezse işlevi dönüş türüyle bildirin [void](../../cpp/void-cpp.md).
+
+1. İşlevin tüm olası dalları prototip türünde bildirilen bir değer döndüren denetleyin.
+
+1. Dönüş değeri saklamak satır içi bütünleştirilmiş kod yordamlarını içeren C++ işlevlerini `AX` kaydı, bir return deyimi gerekebilir. Değeri kopyalamak `AX` geçici bir değişkene ve bu değişkeni işlevden döndürür.
+
+Aşağıdaki örnek, C2561 oluşturur:
+
+```
+// C2561.cpp
+int Test(int x) {
+   if (x) {
+      return;   // C2561
+      // try the following line instead
+      // return 1;
+   }
+   return 0;
+}
+
+int main() {
+   Test(1);
+}
 ```

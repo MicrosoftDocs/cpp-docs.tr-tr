@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 226c0b0d0f1fc316d5b78884a4d6e260296c52f9
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a5b025e29c93cffe9c600646a2475f7e3230fd03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752199"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039549"
 ---
 # <a name="connection-point-macros"></a>Bağlantı noktası makroları
 
@@ -49,7 +49,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Bağlantı noktalarını içeren sınıfın adı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -73,10 +73,10 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] Bağlantı noktası eşlemeye eklenen arabiriminin GUID'si. 
 
-*piid*  
+*piid*<br/>
 [in] GUID adde olan arabirimi işaretçi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -111,5 +111,5 @@ ATL bağlantı noktaları hakkında daha fazla bilgi için bkz [bağlantı nokta
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Makroları](../../atl/reference/atl-macros.md)   
+[Makroları](../../atl/reference/atl-macros.md)<br/>
 [Bağlantı Noktası Genel İşlevleri](../../atl/reference/connection-point-global-functions.md)

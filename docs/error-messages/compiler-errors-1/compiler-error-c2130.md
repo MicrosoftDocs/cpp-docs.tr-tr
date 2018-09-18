@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4484d183def04f764ae75faaa503449e7bdf9984
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 954930522651fcee6c29bf019f366e056fe681ef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33172082"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071536"
 ---
 # <a name="compiler-error-c2130"></a>Derleyici Hatası C2130
-\#satırından 'belirteci' bulunan dosya adını içeren bir dize bekleniyor  
-  
- İsteğe bağlı bir dosya adı belirteci aşağıdaki [#line](../../preprocessor/hash-line-directive-c-cpp.md) `linenumber` bir dize olmalıdır.  
-  
- Aşağıdaki örnek C2130 oluşturur:  
-  
-```  
-// C2130.cpp  
-int main() {  
-   #line 1000 test   // C2130  
-   #line 1000 "test"   // OK  
-}  
+
+\#Satır 'belirteci' bulunamadı dosya içeren bir dize bekleniyor
+
+İsteğe bağlı bir dosya adı belirteci aşağıdaki [#line](../../preprocessor/hash-line-directive-c-cpp.md) `linenumber` bir dize olmalıdır.
+
+Aşağıdaki örnek, C2130 oluşturur:
+
+```
+// C2130.cpp
+int main() {
+   #line 1000 test   // C2130
+   #line 1000 "test"   // OK
+}
 ```

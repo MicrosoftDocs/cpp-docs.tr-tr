@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2f01a3a4b6ccf1750ec3cd0df643c02b7678bac
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f22878ebb7caa5549779d4c53b1f6b7068dc480
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291043"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056839"
 ---
 # <a name="compiler-warning-level-3-c4133"></a>Derleyici Uyarısı (Düzey 3) C4133
-'type': uyumsuz türlerinden - 'type2' 'type1'  
-  
- Bu uyarı farklı türden iki işaretçileri çıkartılacak deneyerek neden olabilir.  
-  
- Bu uyarıyı önlemek için uygun bir tür cast sağlayın.
+
+'type': uyumsuz türler - 'type2' öğesine 'type1' öğesinden
+
+Bu uyarı farklı türden iki işaretçileri çıkarılacak deneyerek neden olabilir.
+
+Bu uyarıyı engellemek için uygun bir tür dönüştürme sağlar.

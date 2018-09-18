@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6b0d6d3ecda2bd996e7ef53ff5fd0eed6290e2b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ceb045c4001d6d2ab0cd5d1968abf453a85fab9d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195470"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047778"
 ---
 # <a name="compiler-error-c2375"></a>Derleyici Hatası C2375
-'function': şemadaki; farklı bağlantı  
-  
- İşlevi ile farklı bağlantı tanımlayıcısı zaten bildirildi.  
-  
- Aşağıdaki örnek C2375 oluşturur:  
-  
-```  
-// C2375.cpp  
-// compile with: /Za /c  
-extern void func( void );  
-static void func( void );   // C2375  
-static void func2( void );   // OK  
+
+'function': yeniden tanımlama; bağlantı farklı
+
+İşlev zaten farklı bir bağlantı tanımlayıcısı ile bildirilir.
+
+Aşağıdaki örnek, C2375 oluşturur:
+
+```
+// C2375.cpp
+// compile with: /Za /c
+extern void func( void );
+static void func( void );   // C2375
+static void func2( void );   // OK
 ```

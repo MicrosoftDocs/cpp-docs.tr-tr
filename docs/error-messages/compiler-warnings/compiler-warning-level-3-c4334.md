@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f26749c968c3cac18b509046633ba3d91d15a4be
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b7bb16ea38b2c2112c12c561398341a7d1adbfc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044021"
 ---
 # <a name="compiler-warning-level-3-c4334"></a>Derleyici Uyarısı (Düzey 3) C4334
-'işleci': 32-bit kaydırma sonucunu örtük olarak dönüştürülen 64 bit (64-bit kaydırma hedeflenen oldu mu?)  
-  
- 32-bit kaydırma sonucunu örtük olarak 64-bit ve 64-bit kaydırma tasarlanmıştır derleyici şüphelendiği dönüştürüldü.  Bu uyarıyı çözmek için 64-bit kaydırma kullanabilir veya 64-bit kaydırma sonucu açıkça dönüştürün.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4334 oluşturur.  
-  
-```  
-// C4334.cpp  
-// compile with: /W3 /c  
-void SetBit(unsigned __int64 *p, int i) {  
-   *p |= (1 << i);   // C4334  
-   *p |= (1i64 << i);   // OK  
-}  
+
+'operator': 32-bit kaydırmanın sonucu örtük olarak 64 bite dönüştürüldü (64-bit kaydırmanın hedeflenen oldu mu?)
+
+32-bit kaydırmanın sonucu örtük olarak 64-bit ve 64-bit kaydırmanın tasarlanmıştı derleyici şüphelerini dönüştürüldü.  Bu uyarıyı çözmek için 64-bit kaydırmanın kullanabilir veya 64-bit kaydırma sonucu açıkça dönüştürün.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4334 oluşturur.
+
+```
+// C4334.cpp
+// compile with: /W3 /c
+void SetBit(unsigned __int64 *p, int i) {
+   *p |= (1 << i);   // C4334
+   *p |= (1i64 << i);   // OK
+}
 ```

@@ -14,17 +14,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a9dcf628b4518b31a21b402763fdfe237461f06a
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 0251246595b72d2b092fb0e47a69f6d9872b4c9a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32384417"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067734"
 ---
 # <a name="fmod-function"></a>fmod İşlevi
-**ANSI 4.5.6.4** bir etki alanı hatası oluşur ya da sıfır ise döndürülür `fmod` işlevi sıfır ikinci bir bağımsız değişken var  
-  
- Zaman `fmod` işlevine sahip bir ikinci bağımsız değişkeni sıfır, sıfır işlevi döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.5.6.4** bir etki alanı hatası oluşur veya sıfır döndürülen `fmod` sahip ikinci bir bağımsız değişkeni sıfır işlevi
+
+Zaman `fmod` işleve sahip bir ikinci bağımsız değişkeni sıfır, sıfır döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

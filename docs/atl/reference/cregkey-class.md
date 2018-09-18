@@ -52,12 +52,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 75caf648b0c62827e9532fa3776def1a4e459a64
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4a502cbf61f3542c010a89b82131a95f94856cda
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764016"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042890"
 ---
 # <a name="cregkey-class"></a>CRegKey sınıfı
 
@@ -153,7 +153,7 @@ void Attach(HKEY hKey) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hKey*  
+*hKey*<br/>
 Bir kayıt defteri anahtarının tanıtıcısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -189,25 +189,25 @@ LONG Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*hKeyParent*  
+*hKeyParent*<br/>
 Açık bir anahtar tanıtıcısı.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
 
-*lpszClass*  
+*lpszClass*<br/>
 Açılan veya oluşturulacak anahtar sınıfını belirtir. REG_NONE varsayılan değerdir.
 
-*dwOptions*  
+*dwOptions*<br/>
 Anahtar seçenekleri. REG_OPTION_NON_VOLATILE varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.
 
-*samDesired*  
+*samDesired*<br/>
 Güvenlik erişim anahtarı. Varsayılan değer: KEY_READ &#124; KEY_WRITE. Olası değerler ve açıklamaları listesi için bkz. `RegCreateKeyEx`.
 
-*lpSecAttr*  
+*lpSecAttr*<br/>
 Bir işaretçi bir [SECURITY_ATTRIBUTES](https://msdn.microsoft.com/library/windows/desktop/aa379560) tanıtıcı anahtarının bir alt işlem tarafından devralınıp alınmayacağını belirten yapısı. Varsayılan olarak, bu parametre NULL (tanıtıcı devralınamaz anlamına gelir) olur.
 
-*lpdwDisposition*  
+*lpdwDisposition*<br/>
 [out] (Anahtar vardı ve açıldı varsa) NULL olmayan, REG_CREATED_NEW_KEY (anahtar yoktu ve oluşturulan ise) ya da REG_OPENED_EXISTING_KEY alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -231,13 +231,13 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Bir başvuru bir `CRegKey` nesne.
 
-*hKey*  
+*hKey*<br/>
 Bir kayıt defteri anahtarı için bir tanıtıcı.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager nesne işaretçisi
 
 ### <a name="remarks"></a>Açıklamalar
@@ -266,7 +266,7 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSubKey*  
+*lpszSubKey*<br/>
 Silinecek anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -287,7 +287,7 @@ LONG DeleteValue(LPCTSTR lpszValue) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszValue*  
+*lpszValue*<br/>
 Kaldırmak için değer alanını belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -320,16 +320,16 @@ LONG EnumKey(
 
 ### <a name="parameters"></a>Parametreler
 
-*İIndex*  
+*İIndex*<br/>
 Alt anahtar dizini. Bu parametre için ilk çağrı sıfır olmalıdır ve ardından sonraki çağrılar için artar
 
-*pszName*  
+*pszName*<br/>
 Sondaki null karakter de dahil olmak üzere alt anahtar adı alan arabellek için işaretçi. Arabellek için tam anahtar hiyerarşisini değil yalnızca alt anahtar adı kopyalanır.
 
-*pnNameLength*  
+*pnNameLength*<br/>
 TCHARs, tarafından belirtilen arabellek boyutunu belirten bir değişken işaretçisi *pszName* parametresi. Bu boyutu sondaki null karakter içermelidir. Bu yöntem döndürdüğünde, işaret ettiği değişken *pnNameLength* arabellekteki depolanan karakterlerin sayısını içerir. Bu sayı, döndürülen sondaki boş karakter içermez.
 
-*pftLastWriteTime*  
+*pftLastWriteTime*<br/>
 Zaman alan bir değişken işaretçisi numaralandırılmış alt son için yazılmıştır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -369,13 +369,13 @@ LONG GetKeySecurity(
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*  
+*sı*<br/>
 [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) istenen güvenlik bilgilerini belirten değer.
 
-*PSD*  
+*PSD*<br/>
 İstenen güvenlik tanımlayıcısı bir kopyasını alan arabellek için işaretçi.
 
-*pnBytes*  
+*pnBytes*<br/>
 İşaret ettiği arabelleğin bayt cinsinden boyutu *psd*.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -418,10 +418,10 @@ LONG NotifyChangeKeyValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*bWatchSubtree*  
+*bWatchSubtree*<br/>
 Belirtilen anahtarı ve tüm alt anahtarlarını veya yalnızca belirtilen anahtarı değişiklikleri rapor gösteren bir bayrak belirtir. Bu parametre TRUE ise, yöntem anahtarında ve onun alt değişiklikleri bildirir. Bu parametre FALSE ise, yöntemi yalnızca anahtar değişiklik bildirir.
 
-*dwNotifyFilter*  
+*dwNotifyFilter*<br/>
 Hangi değişiklikleri denetleyen bayrak kümesi bildirileceğini belirtir. Bu parametre aşağıdaki değerleri birleşimi olabilir:
 
 |Değer|Açıklama|
@@ -431,10 +431,10 @@ Hangi değişiklikleri denetleyen bayrak kümesi bildirileceğini belirtir. Bu p
 |REG_NOTIFY_CHANGE_LAST_SET|Anahtar değerini değişiklikleri çağıran bildirin. Bu, ekleme veya silme bir değer ya da var olan bir değer değiştirme içerebilir.|
 |REG_NOTIFY_CHANGE_SECURITY|Güvenlik tanımlayıcısı anahtarının değişiklikleri çağıran bildirin.|
 
-*hEvent*  
+*hEvent*<br/>
 Bir olay tanıtıcısı olarak ekleyin. Varsa *bAsync* parametre TRUE ise yöntem hemen döner ve değişiklikler, bu olayın sinyal tarafından raporlanır. Varsa *bAsync* false değerine *hEvent* göz ardı edilir.
 
-*bAsync*  
+*bAsync*<br/>
 Yöntem değişiklikleri nasıl raporları gösteren bir bayrak belirtir. Bu parametre TRUE ise, yöntem hemen döner ve belirtilen olaya sinyal tarafından değişiklikler raporlar. Bu parametre FALSE olduğunda, bir değişiklik meydana gelene kadar yöntemi döndürmez. Varsa *hEvent* geçerli bir olay belirtmiyor *bAsync* parametresi TRUE olamaz.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -461,13 +461,13 @@ LONG Open(
 
 ### <a name="parameters"></a>Parametreler
 
-*hKeyParent*  
+*hKeyParent*<br/>
 Açık bir anahtar tanıtıcısı.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
 
-*samDesired*  
+*samDesired*<br/>
 Güvenlik erişim anahtarı. KEY_ALL_ACCESS varsayılan değerdir. Olası değerler ve açıklamaları listesi için bkz. [RegCreateKeyEx](/windows/desktop/api/winreg/nf-winreg-regcreatekeyexa) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -484,7 +484,7 @@ Farklı [CRegKey::Create](#create), `Open` belirtilen anahtar mevcut değilse ol
 
 Dönüştürür bir `CRegKey` bir HKEY için nesne.
 
-```  
+```
 operator HKEY() const throw();
 ```
 
@@ -498,7 +498,7 @@ CRegKey& operator= (CRegKey& key) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Anahtarı*  
+*Anahtarı*<br/>
 Kopyalamak için anahtar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -522,13 +522,13 @@ LONG QueryBinaryValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*pValue*  
+*pValue*<br/>
 Değer verisini alan arabellek için işaretçi.
 
-*pnBytes*  
+*pnBytes*<br/>
 Arabelleğin bayt cinsinden boyutunu belirten bir değişken işaretçisi tarafından işaret edilen *pValue* parametresi. Yöntem döndürüldüğünde, bu değişken arabelleğe kopyalanan verilerin boyutunu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -554,10 +554,10 @@ LONG QueryDWORDValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*dwValue*  
+*dwValue*<br/>
 DWORD alan arabellek için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -583,10 +583,10 @@ LONG QueryGUIDValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*guidValue*  
+*guidValue*<br/>
 GUID alan bir değişken işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -613,13 +613,13 @@ LONG QueryMultiStringValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*pszValue*  
+*pszValue*<br/>
 Çok dizeli verileri alan bir arabellek için işaretçi. Bir multistring iki null karakter ile sona erdi, null ile sonlandırılmış dizeler dizisidir.
 
-*pnChars*  
+*pnChars*<br/>
 TCHARs, işaret ettiği arabellek büyüklüğü *pszValue*. Yöntem döndürüldüğünde *pnChars* multistring alındığında, bir sonlandırıcı null karakter de dahil olmak üzere, bir TCHARs boyutunu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -645,10 +645,10 @@ LONG QueryQWORDValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*qwValue*  
+*qwValue*<br/>
 QWORD alan arabellek için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -675,13 +675,13 @@ LONG QueryStringValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi.
 
-*pszValue*  
+*pszValue*<br/>
 Dize verileri alan arabellek için işaretçi.
 
-*pnChars*  
+*pnChars*<br/>
 TCHARs, işaret ettiği arabellek büyüklüğü *pszValue*. Yöntem döndürüldüğünde *pnChars* TCHARs, bir sonlandırıcı null karakter de dahil olmak üzere alınan, dizenin boyutunu içerir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -718,28 +718,28 @@ ATL_DEPRECATED LONG QueryValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Sorgu için değerin adını içeren null ile sonlandırılmış bir dize işaretçisi. Varsa *pszValueName* NULL veya boş bir dize, "", yöntemi türünü alır ve anahtarı için veri adlandırılmamış veya varsa varsayılan değer.
 
-*pdwType*  
+*pdwType*<br/>
 Belirtilen değerde depolanan verilerin türünü gösteren bir kod alan bir değişken işaretçisi. *PdwType* parametresi türü kodu gerekmiyorsa NULL olabilir.
 
-*pData*  
+*pData*<br/>
 Değer verisini alan arabellek için işaretçi. Veriler gerekli değilse bu parametre NULL olabilir.
 
-*pnBytes*  
+*pnBytes*<br/>
 Arabelleğin bayt cinsinden boyutunu belirten bir değişken işaretçisi tarafından işaret edilen *pData* parametresi. Yöntem döndürüldüğünde, bu değişken kopyalanan verilerin boyutunu içeren *pData.*
 
-*dwValue*  
+*dwValue*<br/>
 Değer alanın sayısal veriler.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Sorgulanacak değer alanını belirtir.
 
-*szValue*  
+*szValue*<br/>
 Değer alanın dize verileri.
 
-*pdwCount*  
+*pdwCount*<br/>
 Dize veri boyutu. Değerini başlangıçta boyutuna ayarlanır *szValue* arabellek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -765,7 +765,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszKey*  
+*lpszKey*<br/>
 Silinecek anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -789,13 +789,13 @@ LONG SetBinaryValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*pValue*  
+*pValue*<br/>
 Belirtilen değer adı ile depolanacak verileri içeren bir arabellek için işaretçi.
 
-*nBytes*  
+*nBytes*<br/>
 İşaret ettiği bilgiler bayt cinsinden boyutunu belirtir *pValue* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -816,10 +816,10 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*dwValue*  
+*dwValue*<br/>
 Belirtilen değer adı ile depolanacak DWORD veriler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -840,10 +840,10 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*guidValue*  
+*guidValue*<br/>
 Belirtilen değer adı ile depolanacak GUID başvuru.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -867,13 +867,13 @@ LONG SetKeyValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Açılan veya oluşturulacak anahtar adını belirtir. Bu ad, bir alt olmalıdır [m_hKey](#m_hkey).
 
-*lpszValue*  
+*lpszValue*<br/>
 Depolanan verileri belirtir. Bu parametre NULL olmayan olmalıdır.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -894,7 +894,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*sı*  
+*sı*<br/>
 Ayarlamak için güvenlik tanımlayıcısı bileşenlerini belirtir. Değer aşağıdaki değerlerinin bir birleşimi olabilir:
 
 |Değer|Açıklama|
@@ -904,7 +904,7 @@ Ayarlamak için güvenlik tanımlayıcısı bileşenlerini belirtir. Değer aşa
 |OWNER_SECURITY_INFORMATION|Anahtarın sahibi SID'si ayarlar. Anahtar WRITE_OWNER erişiminiz olmalıdır veya çağırma işlemine nesnenin sahibi olmanız veya etkin SE_TAKE_OWNERSHIP_NAME ayrıcalığına sahip olması gerekir.|
 |SACL_SECURITY_INFORMATION|Anahtarın sistem erişim denetimi listesini (SACL) ayarlar. Anahtar ACCESS_SYSTEM_SECURITY erişiminiz olmalıdır. Bu erişim elde etmek için en uygun yolu SE_SECURITY_NAME etkinleştirmektir [ayrıcalık](https://msdn.microsoft.com/library/windows/desktop/aa379306) çağıranın geçerli erişim belirteci ACCESS_SYSTEM_SECURITY erişim için tanıtıcı açın ve ayrıcalık devre dışı bırakın.|
 
-*PSD*  
+*PSD*<br/>
 İşaretçi bir [SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor) belirtilen anahtar için ayarlanacak güvenlik özniteliklerini belirten yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -925,10 +925,10 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*pszValue*  
+*pszValue*<br/>
 Belirtilen değer adı ile depolanacak çok dizeli veri işaretçisi. Bir multistring iki null karakter ile sona erdi, null ile sonlandırılmış dizeler dizisidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -949,10 +949,10 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*qwValue*  
+*qwValue*<br/>
 Belirtilen değer adı ile depolanacak QWORD veriler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -976,13 +976,13 @@ LONG SetStringValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer zaten yoksa, yöntem anahtara ekler.
 
-*pszValue*  
+*pszValue*<br/>
 Belirtilen değer adı ile depolanacak dize veri işaretçisi.
 
-*dwType*  
+*dwType*<br/>
 Kayıt defterine yazılacak dizenin türü: REG_SZ (varsayılan) veya REG_EXPAND_SZ (çoklu dizeler için).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1023,37 +1023,37 @@ ATL_DEPRECATED LONG SetValue(
 
 ### <a name="parameters"></a>Parametreler
 
-*pszValueName*  
+*pszValueName*<br/>
 Ayarlanacak değerin adını içeren bir dize işaretçisi. Bu ada sahip bir değer anahtar mevcut değilse, yöntem anahtara ekler. Varsa *pszValueName* NULL veya boş bir dize, "", yöntem türünü ayarlar ve anahtarı için veri adlandırılmamış veya varsayılan değer.
 
-*dwType*  
+*dwType*<br/>
 İşaret ettiği veri türünü gösteren bir kod belirtir *pValue* parametresi.
 
-*pValue*  
+*pValue*<br/>
 Belirtilen değer adı ile depolanacak verileri içeren bir arabellek için işaretçi.
 
-*nBytes*  
+*nBytes*<br/>
 İşaret ettiği bilgiler bayt cinsinden boyutunu belirtir *pValue* parametresi. Veri türü REG_SZ, REG_EXPAND_SZ veya REG_MULTI_SZ ise *nBytes* sondaki boş karakter boyutunu eklemeniz gerekir.
 
-*hKeyParent*  
+*hKeyParent*<br/>
 Açık bir anahtar tanıtıcısı.
 
-*lpszKeyName*  
+*lpszKeyName*<br/>
 Oluşturulacak veya açılan bir anahtarın adını belirtir. Bu ad, bir alt olmalıdır *hKeyParent*.
 
-*lpszValue*  
+*lpszValue*<br/>
 Depolanan verileri belirtir. Bu parametre NULL olmayan olmalıdır.
 
-*lpszValueName*  
+*lpszValueName*<br/>
 Ayarlanacak değer alanını belirtir. Bu ada sahip bir değer alanı anahtarı zaten mevcut değilse eklenir.
 
-*dwValue*  
+*dwValue*<br/>
 Depolanan verileri belirtir.
 
-*bMulti*  
+*bMulti*<br/>
 False ise, dize türünde REG_SZ gösterir. TRUE ise, dize türü REG_MULTI_SZ bir multistring gösterilir.
 
-*nValueLen*  
+*nValueLen*<br/>
 Varsa *bMulti* true ise *nValueLen* uzunluğu *lpszValue* karakter dizesi. Varsa *bMulti* yanlış, -1 değeri gösterir yöntemi uzunluğu otomatik olarak hesaplar.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -1068,5 +1068,5 @@ Başarılı olursa, ERROR_SUCCESS döndürür; Aksi takdirde, sıfır olmayan ha
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[DCOM örnek](../../visual-cpp-samples.md)   
+[DCOM örnek](../../visual-cpp-samples.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

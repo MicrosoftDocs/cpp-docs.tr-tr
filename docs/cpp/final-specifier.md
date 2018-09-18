@@ -16,59 +16,63 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f28ae7b7cb8bdcf335757c58d5e744974f4c7cad
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: e382bd75a734b205389b83455e3ab020f54ca6d3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405963"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066238"
 ---
 # <a name="final-specifier"></a>final Tanımlayıcısı
-Kullanabileceğiniz **son** türetilen bir sınıfta geçersiz kılınmış sanal işlevler atamak için anahtar sözcüğü. Ayrıca devralınamaz sınıflar aramak için de onu kullanabilirsiniz.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-function-declaration final;  
-class class-name final base-classes  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- **Son** duyarlıdır ve bir işlev bildiriminden sonra ya da sınıf adı; Aksi takdirde, ayrılmış bir anahtar sözcük değil yalnızca özel bir anlamı vardır.  
-  
- Zaman **son** sınıf bildirimlerinde kullanılır `base-classes` bildirimi isteğe bağlı bir parçasıdır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnekte **son** anahtar sözcüğü, bir sanal işlevi geçersiz kılınamaz belirtmek için.  
-  
-```cpp  
-class BaseClass  
-{  
-    virtual void func() final;  
-};  
-  
-class DerivedClass: public BaseClass  
-{  
-    virtual void func(); // compiler error: attempting to   
-                         // override a final function  
-};  
-```  
-  
- Üye işlevlerinin geçersiz kılınabileceğini belirtme hakkında daha fazla bilgi için bkz: [geçersiz kılma belirticisi](../cpp/override-specifier.md).  
-  
- Sonraki örnekte **son** anahtar sözcüğü bir sınıfın devralınamayacağını belirtmek için.  
-  
-```cpp  
-class BaseClass final   
-{  
-};  
-  
-class DerivedClass: public BaseClass // compiler error: BaseClass is   
-                                     // marked as non-inheritable  
-{  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [override Tanımlayıcısı](../cpp/override-specifier.md)
+
+Kullanabileceğiniz **son** türetilen bir sınıfta geçersiz kılınmış sanal işlevler atamak için anahtar sözcüğü. Ayrıca devralınamaz sınıflar aramak için de onu kullanabilirsiniz.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+function-declaration final;
+class class-name final base-classes
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+**Son** duyarlıdır ve bir işlev bildiriminden sonra ya da sınıf adı; Aksi takdirde, ayrılmış bir anahtar sözcük değil yalnızca özel bir anlamı vardır.
+
+Zaman **son** sınıf bildirimlerinde kullanılır `base-classes` bildirimi isteğe bağlı bir parçasıdır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnekte **son** anahtar sözcüğü, bir sanal işlevi geçersiz kılınamaz belirtmek için.
+
+```cpp
+class BaseClass
+{
+    virtual void func() final;
+};
+
+class DerivedClass: public BaseClass
+{
+    virtual void func(); // compiler error: attempting to
+                         // override a final function
+};
+```
+
+Üye işlevlerinin geçersiz kılınabileceğini belirtme hakkında daha fazla bilgi için bkz: [geçersiz kılma belirticisi](../cpp/override-specifier.md).
+
+Sonraki örnekte **son** anahtar sözcüğü bir sınıfın devralınamayacağını belirtmek için.
+
+```cpp
+class BaseClass final
+{
+};
+
+class DerivedClass: public BaseClass // compiler error: BaseClass is
+                                     // marked as non-inheritable
+{
+};
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[override Tanımlayıcısı](../cpp/override-specifier.md)

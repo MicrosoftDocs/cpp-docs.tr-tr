@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f3c9b143ca2f156a534f7ab803974f24771b2652
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 37a7591e185b1436bb3cd0f8b56a625f71bf8ed2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39403085"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073658"
 ---
 # <a name="logical-or-operator-"></a>Mantıksal OR işleci: ||
 
@@ -73,6 +73,7 @@ int main() {
 ```
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [C++ yerleşik işleçler öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)  
- [C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)  
- [C Mantıksal İşleçleri](../c-language/c-logical-operators.md)
+
+[C++ yerleşik işleçler öncelik ve İlişkisellik](cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C++ Yerleşik İşleçler, Öncelik ve İlişkisellik](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[C Mantıksal İşleçleri](../c-language/c-logical-operators.md)

@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e17e56ac999680728f14d0ea3a98cc7c05b66e31
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 593c7e71c315801bcf080b60916a92d72ac32cd4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268383"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064047"
 ---
 # <a name="compiler-error-c3886"></a>Derleyici Hatası C3886
-'var': değişmez değer veri üyesi başlatılması gerekir  
-  
- A [değişmez değer](../../windows/literal-cpp-component-extensions.md) declaraed olduğunda değişken başlatılmalıdır.  
-  
- Aşağıdaki örnek C3886 oluşturur:  
-  
-```  
-// C3886.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   literal int staticConst;   // C3886  
-   literal int staticConst2 = 0;   // OK  
-};  
+
+'var': sabit değerli veri üyesi başlatılmalıdır
+
+A [değişmez değer](../../windows/literal-cpp-component-extensions.md) declaraed olduğunda değişkeni'nin başlatılması gerekir.
+
+Aşağıdaki örnek, C3886 oluşturur:
+
+```
+// C3886.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   literal int staticConst;   // C3886
+   literal int staticConst2 = 0;   // OK
+};
 ```

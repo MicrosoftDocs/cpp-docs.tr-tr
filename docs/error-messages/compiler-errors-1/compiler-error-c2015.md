@@ -16,43 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91c682aadeab5a572ec2bb5c2e649a1511af77ef
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5fb9c3ba86224906f749088b96e5daae364d99e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165629"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076053"
 ---
 # <a name="compiler-error-c2015"></a>Derleyici Hatası C2015
-çok fazla karakter sabiti  
-  
- Karakter sabiti ikiden fazla karakter içeriyor. , Tek bir karakter için standart karakter sabitleri ve iki karakter uzunluğunda karakter sabitleri için sınırıdır.  
-  
- \T gibi kaçış dizisi için tek bir karakter dönüştürülür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2015 oluşturur:  
-  
-```  
-// C2015.cpp  
-// compile with: /c  
-  
-char test1 = 'error';   // C2015  
-char test2 = 'e';   // OK  
-```  
-  
-## <a name="example"></a>Örnek  
- Ayrıca C2015 karakter sabitleri tamsayılara dönüştürülen bir Microsoft uzantısı kullanılarak ortaya çıkabilir.  Aşağıdaki örnek C2015 oluşturur:  
-  
-```  
-// C2015b.cpp  
-#include <stdio.h>  
-  
-int main()   
-{  
-    int a = 'abcde';   // C2015  
-  
-    int b = 'a';   // 'a' = ascii 0x61  
-    printf_s("%x\n", b);  
-}  
+
+çok fazla karakter sabiti
+
+Bir karakter sabiti, ikiden fazla karakter içeriyor. , Bir karakter standart karakter sabitlerinin ve iki karakter uzunluğunda karakter sabitlerinin sınırdır.
+
+Örneğin, \t kaçış dizisi için tek bir karakter dönüştürülür.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2015 oluşturur:
+
+```
+// C2015.cpp
+// compile with: /c
+
+char test1 = 'error';   // C2015
+char test2 = 'e';   // OK
+```
+
+## <a name="example"></a>Örnek
+
+C2015, bir Microsoft uzantısı tam sayılara dönüştürülür karakter sabitleri kullanırken da meydana gelebilir.  Aşağıdaki örnek, C2015 oluşturur:
+
+```
+// C2015b.cpp
+#include <stdio.h>
+
+int main()
+{
+    int a = 'abcde';   // C2015
+
+    int b = 'a';   // 'a' = ascii 0x61
+    printf_s("%x\n", b);
+}
 ```

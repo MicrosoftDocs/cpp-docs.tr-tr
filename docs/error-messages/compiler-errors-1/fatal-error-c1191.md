@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf700db0e415fd7886cd8ba845f06a2d8f6c3249
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: daefec7c89fc98d056963c4f761b7298d6e491cc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226349"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062975"
 ---
 # <a name="fatal-error-c1191"></a>Önemli hata C1191
-Genel kapsamda 'dll' yalnızca alınabilir  
-  
- Yönerge mscorlib.dll/CLR programlama kullanan bir programa içeri aktarmak için bir ad alanı veya işlevinde yer alamaz, ancak genel kapsamda görünmesi gerekir.  
-  
- Aşağıdaki örnek C1191 oluşturur:  
-  
-```  
-// C1191.cpp  
-// compile with: /clr  
-namespace sample {  
-   #using <mscorlib.dll>   // C1191 not at global scope  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C1191b.cpp  
-// compile with: /clr /c  
-#using <mscorlib.dll>  
-namespace sample {}  
+
+'dll' yalnızca genel kapsamda içeri aktarılabilir
+
+/ CLR programlama kullanan bir programa mscorlib.dll dosyasını içeri aktarma yönergesi, bir ad alanı veya işlev içinde yer alamaz, ancak genel kapsamda yer almalıdır.
+
+Aşağıdaki örnek, C1191 oluşturur:
+
+```
+// C1191.cpp
+// compile with: /clr
+namespace sample {
+   #using <mscorlib.dll>   // C1191 not at global scope
+}
+```
+
+Olası çözüm:
+
+```
+// C1191b.cpp
+// compile with: /clr /c
+#using <mscorlib.dll>
+namespace sample {}
 ```

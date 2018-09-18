@@ -16,44 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62c505b5219cb76ad83c3b6ece13e7d10f16e555
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2083f08ad79a9fd53148e7c166ec276a9ddf4cde
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236578"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075247"
 ---
 # <a name="compiler-error-c2761"></a>Derleyici Hatası C2761
-'function': üye fonksiyonu yeniden bildirimi izin verilmiyor  
-  
- Üye işlevi redeclare olamaz. Tanımlayabilirsiniz, ancak redeclare değil.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2761 oluşturur.  
-  
-```  
-// C2761.cpp  
-class a {  
-   int t;  
-   void test();  
-};  
-  
-void a::a;     // C2761  
-void a::test;  // C2761  
-  
-```  
-  
-## <a name="example"></a>Örnek  
- Bir sınıf veya yapı statik olmayan üye tanımlanamaz.  Aşağıdaki örnek C2761 oluşturur.  
-  
-```  
-// C2761_b.cpp  
-// compile with: /c  
-struct C {  
-   int s;  
-   static int t;  
-};  
-  
-int C::s;   // C2761  
-int C::t;   // OK  
+
+'function': üye işlev yeniden bildirimi izin verilmiyor
+
+Üye işlevini yeniden bildirilemiyor. Tanımlayabilirsiniz, ancak yeniden bildirmek değil.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2761 oluşturur.
+
+```
+// C2761.cpp
+class a {
+   int t;
+   void test();
+};
+
+void a::a;     // C2761
+void a::test;  // C2761
+
+```
+
+## <a name="example"></a>Örnek
+
+Statik olmayan üye bir sınıfın veya yapının tanımlanamaz.  Aşağıdaki örnek, C2761 oluşturur.
+
+```
+// C2761_b.cpp
+// compile with: /c
+struct C {
+   int s;
+   static int t;
+};
+
+int C::s;   // C2761
+int C::t;   // OK
 ```

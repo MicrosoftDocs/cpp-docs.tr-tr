@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72b18f5c22e957c18b28de3a130f09427e623829
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dc5a719cac97a16ef6b8eaff277a9526a2f135ad
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33269250"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073844"
 ---
 # <a name="compiler-error-c3910"></a>Derleyici Hatası C3910
-'event': üye 'yöntemi' tanımlamanız gerekir  
-  
- Bir olay tanımlandı, ancak belirtilen, gerekli erişimci yöntemi içermiyordu.  
-  
- Daha fazla bilgi için bkz: [olay](../../windows/event-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3910 oluşturur:  
-  
-```  
-// C3910.cpp  
-// compile with: /clr /c  
-delegate void H();  
-ref class X {  
-   event H^ E {  
-      // uncomment the following lines  
-      // void add(H^) {}  
-      // void remove( H^ h ) {}  
-      // void raise( ) {}  
-   };   // C3910  
-  
-   event H^ E2; // OK data member  
-};  
+
+'event': üye 'method' tanımlamanız gerekir
+
+Bir olay tanımlandı, ancak belirtilen, gerekli bir erişimci metot içermiyordu.
+
+Daha fazla bilgi için [olay](../../windows/event-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3910 oluşturur:
+
+```
+// C3910.cpp
+// compile with: /clr /c
+delegate void H();
+ref class X {
+   event H^ E {
+      // uncomment the following lines
+      // void add(H^) {}
+      // void remove( H^ h ) {}
+      // void raise( ) {}
+   };   // C3910
+
+   event H^ E2; // OK data member
+};
 ```

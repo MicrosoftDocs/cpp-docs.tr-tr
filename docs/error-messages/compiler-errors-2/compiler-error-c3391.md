@@ -16,41 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 28615d85eca534966a4d8b90cef20ea577e0d592
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0dfe3db16954dff3dc76f707c4a14f5d56d53e18
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256620"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056436"
 ---
 # <a name="compiler-error-c3391"></a>Derleyici Hatası C3391
-'type_arg': 'param' genel 'generic_type' ın genel parametresi için geçersiz tür bağımsız değişkeni bir null değer türü olması gerekir  
-  
-Genel bir tür yanlış örneği. Tür tanımı kontrol edin. Daha fazla bilgi için bkz: <xref:System.Nullable> ve [genel türler](../../windows/generics-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C# kullanan C + genel türler yazılırken desteklenmez belirli kısıtlamalarına sahip genel bir tür içeren bir bileşen oluşturmak için +/ CLI. Daha fazla bilgi için bkz: [tür parametrelerindeki kısıtlamalar](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).  
-  
-```cs  
-// C3391.cs  
-// Compile by using: csc /target:library C3391.cs  
-// a C# program  
-public class GR<N>  
-where N : struct {}  
-```  
-  
-C3391.dll bileşeni kullanılabilir olduğunda, aşağıdaki örnek C3391 oluşturur.  
-  
-```cpp  
-// C3391_b.cpp  
-// Compile by using: cl /clr C3391_b.cpp  
-#using <C3391.dll>  
-using namespace System;  
-value class VClass {};  
-  
-int main() {  
-   GR< Nullable<VClass> >^ a =   
-      gcnew GR< Nullable<VClass> >();   // C3391 can't be Nullable  
-   GR<VClass>^ aa = gcnew GR<VClass>(); // OK  
-}  
+
+'type_arg': 'generic_type' genel ' param' genel parametresi için geçersiz tür bağımsız değişkeni, NULL olmayan bir değer türü olmalıdır
+
+Genel tür yanlış örneği. Tür tanımını denetleyin. Daha fazla bilgi için <xref:System.Nullable> ve [genel türler](../../windows/generics-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek C# kullanan C + genel türleri yazılırken desteklenmeyen bazı kısıtlamalar içeren bir genel tür içeren bir bileşen oluşturmak için +/ CLI. Daha fazla bilgi için [tür parametrelerindeki kısıtlamalar](/dotnet/csharp/programming-guide/generics/constraints-on-type-parameters).
+
+```cs
+// C3391.cs
+// Compile by using: csc /target:library C3391.cs
+// a C# program
+public class GR<N>
+where N : struct {}
+```
+
+Aşağıdaki örnek, C3391.dll bileşen kullanılabilir duruma geldiğinde C3391 oluşturur.
+
+```cpp
+// C3391_b.cpp
+// Compile by using: cl /clr C3391_b.cpp
+#using <C3391.dll>
+using namespace System;
+value class VClass {};
+
+int main() {
+   GR< Nullable<VClass> >^ a =
+      gcnew GR< Nullable<VClass> >();   // C3391 can't be Nullable
+   GR<VClass>^ aa = gcnew GR<VClass>(); // OK
+}
 ```

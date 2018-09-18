@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e8fd26a27d79860166b5a4268c330a0338a05a17
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a1af9ef4f36198190d174d69ec825aa6e655616
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167209"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065991"
 ---
 # <a name="compiler-error-c2238"></a>Derleyici Hatası C2238
-'belirteci' önceki beklenmeyen belirteçleri  
-  
- Yanlış bir belirteç bulundu.  
-  
- Aşağıdaki örnek C2238 oluşturur:  
-  
-```  
-// C2238.cpp  
-// compile with: /c  
-class v {  
-virtual: int vvv;   // C2238  
-};  
+
+'token' öncesinde beklenmeyen belirteçler
+
+Yanlış bir belirteç bulundu.
+
+Aşağıdaki örnek, C2238 oluşturur:
+
+```
+// C2238.cpp
+// compile with: /c
+class v {
+virtual: int vvv;   // C2238
+};
 ```

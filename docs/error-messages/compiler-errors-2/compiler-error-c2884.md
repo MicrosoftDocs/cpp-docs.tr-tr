@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 41bacfc53f8b1f14a9b7409a43db39fd943739e5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9d9266162d4608e39982cce1e94751e427bc5e47
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33261474"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054720"
 ---
 # <a name="compiler-error-c2884"></a>Derleyici Hatası C2884
-'name': yerel işlevi 'function' kullanarak bildirimi çakışıyor tarafından sunulan  
-  
- Bir işlev birden çok kez tanımlayın çalışıldı. İlk tanım yerel bir tanımıdır. İkinci içeren bir ad değil. bir `using` bildirimi.  
-  
- Aşağıdaki örnek C2884 oluşturur:  
-  
-```  
-// C2884.cpp  
-namespace A {  
-   void z(int);  
-}  
-  
-void f() {  
-   void z(int);  
-   using A::z;   // C2884 z is already defined  
-}  
+
+'name': yerel'function 'işlevini kullanarak bildirimiyle çakışıyor tarafından tanıtılan
+
+Birden çok kez bir fonksiyon tanımlayın denedi. Yerel bir tanımını ilk tanımıdır. Bir ad ile ikincisi ise bir `using` bildirimi.
+
+Aşağıdaki örnek, C2884 oluşturur:
+
+```
+// C2884.cpp
+namespace A {
+   void z(int);
+}
+
+void f() {
+   void z(int);
+   using A::z;   // C2884 z is already defined
+}
 ```

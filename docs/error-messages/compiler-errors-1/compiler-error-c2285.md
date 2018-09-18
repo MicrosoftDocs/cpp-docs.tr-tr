@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b22a0a7b325a6659d683f870bd87e50255e5a186
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a1987c83e256f1c3bc6fd601be318437a02373fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170446"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067661"
 ---
 # <a name="compiler-error-c2285"></a>Derleyici Hatası C2285
-üye gösterimi işaretçiler zaten belirledi - göz ardı pragması  
-  
- İki farklı sunumu sınıfı için mevcut.
+
+üye gösterimine yönelik işaretçiler zaten belirlendi - pragma yoksayıldı
+
+İki farklı temsilleri sınıfı için yok.

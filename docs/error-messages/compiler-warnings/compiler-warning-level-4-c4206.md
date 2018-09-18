@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db7069f9d1ad242f0c79f8c6f490f4632162e6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 746fbc4c8752afcd9d02b9985373d669c3aacc5f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293900"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048662"
 ---
 # <a name="compiler-warning-level-4-c4206"></a>Derleyici Uyarısı (düzey 4) C4206
-**kullanılan standart olmayan uzantısı: çeviri birimdir boş**  
-  
- Ön işleme sonra dosya boş.  
-  
- Bu uzantı kodunuzu diğer derleyiciler taşınabilir olmasını engelleyebilir. ANSI Uyumluluğu altında bir hata oluşturur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve yalnızca C kaynak koduna uygulanır.
+
+**Standart olmayan uzantı kullanıldı: çeviri birimi boş**
+
+Ön işleme sonra dosya boş.
+
+Bu uzantı, kodunuzun diğer derleyicileri için taşınabilir olmasını engelleyebilir. ANSI Uyumluluğu altında bir hata oluşturur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)) ve yalnızca C kaynak kodu için geçerlidir.

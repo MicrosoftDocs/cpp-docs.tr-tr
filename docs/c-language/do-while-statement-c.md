@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5254adbf533a30da65349f2f8aadd100b8776d7
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: ef670aca60b2e3156ea70480a1dafc315ae60624
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43755561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061483"
 ---
 # <a name="do-while-statement-c"></a>do-while Deyimi (C)
 
@@ -30,8 +30,7 @@ ms.locfileid: "43755561"
 
 ## <a name="syntax"></a>Sözdizimi
 
-*Yineleme deyiminin*:  
-&nbsp;&nbsp;&nbsp;&nbsp;**yapmak***deyimi***sırada (***ifade***);**
+*Yineleme deyiminin*: &nbsp; &nbsp; &nbsp; &nbsp; **yapmak***deyimi***sırada (** *ifade***);** 
 
 *İfade* içinde bir *yapın-sırada* deyimi, döngü gövdesinin yürütüldükten sonra değerlendirilir. Bu nedenle, döngü gövdesinin her zaman en az bir kez yürütülür.
 
@@ -47,10 +46,10 @@ Bu bir örnektir *yapın-sırada* deyimi:
 
 ```C
 do
-{  
-    y = f( x );  
-    x--;  
-} while ( x > 0 );  
+{
+    y = f( x );
+    x--;
+} while ( x > 0 );
 ```
 
 Bu *yapın-sırada* deyimi, iki deyim `y = f( x );` ve `x--;` başlangıç değerine bakılmaksızın yürütülür `x`. Ardından `x > 0` değerlendirilir. Varsa `x` 0'dan büyük olan deyim gövdesi yeniden yürütülür ve `x > 0` değerlendirilir. Deyim gövdesi sürekli çalıştırılan sürece `x` 0'dan büyük olarak kalır. Yürütülmesini *yapın-sırada* açıklamayı sonlandıran `x` 0 veya negatif olur. Döngü gövdesi en az bir kez yürütülür.

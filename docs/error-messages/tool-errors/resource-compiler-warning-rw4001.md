@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d74ff4164d1e0ace3fced51df4f8028b782e62d5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b6e430dd0c42ced94fb01c2d29fff0270e090dc6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323579"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040355"
 ---
 # <a name="resource-compiler-warning-rw4001"></a>Kaynak Derleyicisi Uyarısı RW4001
-. EXE işleme seçenekleri (/ l /M /P /T/k /E /31 veya /30)  
-  
- İşleme seçenekleri EXE belirtildi ancak işlemek için yürütülebilir dosya yoktu. Bu seçenekler .res dosyasıyla kullanmayın.
+
+. EXE işleme seçenekleri (/ l /M /P /T /K /E /31 veya /30)
+
+İşleme seçenekleri EXE belirtildi, ancak işlemek için hiçbir yürütülebilir dosyası. Bu seçenekler bir .res dosyası ile kullanmayın.

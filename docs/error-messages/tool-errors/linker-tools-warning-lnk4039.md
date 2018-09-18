@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7ea2f0ff7e6b76f08eee6fdcfa51b7aac3b5f54
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a78b7e7e488f274069c89e117543e9093a3acae8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300325"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073245"
 ---
 # <a name="linker-tools-warning-lnk4039"></a>Bağlayıcı Araçları Uyarısı LNK4039
-Bölüm '/SECTION seçeneğiyle belirtilen adı' mevcut değil  
-  
- [DUMPBIN](../../build/reference/dumpbin-reference.md) veya [EDITBIN](../../build/reference/editbin-reference.md) adlı bir bölüm bulunamadı `name` giriş dosyasındaki.  
-  
- Bir dosya bölümlerde görmek için DUMPBIN ile çalıştırın [/HEADERS](../../build/reference/headers.md) seçeneği.
+
+/ SECTION seçeneği ile belirtilen'name ' bölümü yok
+
+[DUMPBIN](../../build/reference/dumpbin-reference.md) veya [EDITBIN](../../build/reference/editbin-reference.md) adlı bir bölüm bulunamadı `name` girdi dosyasındaki.
+
+Bir dosyada bölümleri görmek için DUMPBIN ile çalıştırmak [OPTIONAL](../../build/reference/headers.md) seçeneği.

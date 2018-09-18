@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4b534190a4e7243f5192e6d703b056d8bcb327ca
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: 882a32b1a9f08f3fd07f1d53d508b101c5500f5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110649"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037066"
 ---
 # <a name="catlautothreadmodule-class"></a>CAtlAutoThreadModule sınıfı
 
@@ -62,7 +62,7 @@ Kullanmalısınız [DECLARE_CLASSFACTORY_AUTO_THREAD](aggregation-and-class-fact
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlAutoThreadModuleT sınıfı](../../atl/reference/catlautothreadmodulet-class.md)   
-[Iatlautothreadmodule sınıfı](../../atl/reference/iatlautothreadmodule-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CAtlAutoThreadModuleT Sınıfı](../../atl/reference/catlautothreadmodulet-class.md)<br/>
+[IAtlAutoThreadModule Sınıfı](../../atl/reference/iatlautothreadmodule-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

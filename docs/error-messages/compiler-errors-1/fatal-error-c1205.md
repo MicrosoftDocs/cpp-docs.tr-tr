@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcb1e32843c7c8c47589d4b75fd2613a1d73f135
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e70be77c224b8c1c6039a908d38e8e482ab36259
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230091"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035571"
 ---
 # <a name="fatal-error-c1205"></a>Önemli hata C1205
-Genel türler yüklü çalışma zamanı sürümü tarafından desteklenmiyor  
-  
- Derleyici kullanarak ortak dil çalışma zamanı sürümü geçerli derleyici tarafından desteklenen çalışma zamanı sürümü değil.  Örneğin, genel türler özellik derleyiciye eşleşen bir çalışma zamanı gerektirir.  
-  
- Yol belirtimi değiştirilmesi gerekebilir.
+
+Genel türler yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+
+Derleyici kullanarak ortak dil çalışma zamanı sürümü geçerli derleyici tarafından desteklenen çalışma zamanı sürümü değil.  Örneğin, genel türler özelliğini derleyici için eşleşen bir çalışma zamanı gerektirir.
+
+Yol belirtimi değiştirilmesi gerekebilir.

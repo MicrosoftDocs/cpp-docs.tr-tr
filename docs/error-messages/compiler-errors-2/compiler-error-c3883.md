@@ -16,51 +16,52 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6841a0ab5b5f1c61159b11d2aa559863189580e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4387eacb4e35c82af5c2617771b8c887dae42c4e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268859"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045477"
 ---
 # <a name="compiler-error-c3883"></a>Derleyici Hatası C3883
-'var': initonly statik veri üyesi başlatılması gerekir  
-  
- Bir değişken olarak [initonly](../../dotnet/initonly-cpp-cli.md) düzgün başlatılmadı.  
-  
- Aşağıdaki örnek C3883 oluşturur:  
-  
-```  
-// C3883.cpp  
-// compile with: /clr  
-ref struct Y1 {  
-   initonly  
-   static int staticConst1;   // C3883  
-};  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3883b.cpp  
-// compile with: /clr /c  
-ref struct Y1 {  
-   initonly  
-   static int staticConst2 = 0;  
-};  
-```  
-  
- Aşağıdaki örnek, statik bir oluşturucu başlatılamadı gösterilmektedir:  
-  
-```  
-// C3883c.cpp  
-// compile with: /clr /LD  
-ref struct Y1 {  
-   initonly  
-   static int staticConst1;  
-  
-   static Y1() {  
-      staticConst1 = 0;  
-   }  
-};  
+
+'var': initonly statik veri üyesi başlatılmalıdır
+
+Bir değişkeni işaretli [initonly](../../dotnet/initonly-cpp-cli.md) düzgün başlatılmadı.
+
+Aşağıdaki örnek, C3883 oluşturur:
+
+```
+// C3883.cpp
+// compile with: /clr
+ref struct Y1 {
+   initonly
+   static int staticConst1;   // C3883
+};
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3883b.cpp
+// compile with: /clr /c
+ref struct Y1 {
+   initonly
+   static int staticConst2 = 0;
+};
+```
+
+Aşağıdaki örnek, bir statik Oluşturucu başlatılamadı gösterilmektedir:
+
+```
+// C3883c.cpp
+// compile with: /clr /LD
+ref struct Y1 {
+   initonly
+   static int staticConst1;
+
+   static Y1() {
+      staticConst1 = 0;
+   }
+};
 ```

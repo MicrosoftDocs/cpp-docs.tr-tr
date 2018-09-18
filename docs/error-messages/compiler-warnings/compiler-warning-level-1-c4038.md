@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 215486cb1db0c56a458571abe3a528b65db799df
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8663c0a222ff9a20bca04a497dcdd6ceb1d99d06
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271953"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067824"
 ---
 # <a name="compiler-warning-level-1-c4038"></a>Derleyici Uyarısı (düzey 1) C4038
-'değiştiricisi': Geçersiz ortam sınıf değiştiricisi  
-  
- Bu değiştirici sınıflarıyla kullanılamaz **dllimport** veya [dllexport](../../cpp/dllexport-dllimport.md) öznitelikleri.
+
+'değiştiricisi': ortam geçersiz sınıf değiştiricisi
+
+Bu değiştirici, sahip sınıflar için kullanılamaz **dllimport** veya [dllexport](../../cpp/dllexport-dllimport.md) öznitelikleri.

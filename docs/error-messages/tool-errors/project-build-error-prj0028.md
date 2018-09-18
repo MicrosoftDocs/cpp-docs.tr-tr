@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 42c6e55cdce7294d7d2bc2e2a5634f362a539363
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f90e7f6629ae50f734ac127d05c6c70d002133a3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317732"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062624"
 ---
 # <a name="project-build-error-prj0028"></a>Proje Derleme Hatası PRJ0028
-Geçici dosya 'dosya' kullanıcının ANSI kod sayfasına çevrilemedi Unicode içeriği içerir.  
-  
- Bir değer ile belirtilen [/MIDL (MIDL komut satırı seçeneklerini belirtin)](../../build/reference/midl-specify-midl-command-line-options.md) sistem kod sayfası tarafından çözümlenemedi bağlayıcı seçeneği.  
-  
- MIDL komut (giriş kod sayfası) belirttiğinizde kullanılan kod sayfası sistem kod sayfası ile aynı olması gerekir.
+
+Geçici dosya 'dosyası' kullanıcının ANSI kodlu sayfasına çevrilemeyen Unicode içeriğe içerir.
+
+Bir değer ile belirtilen [/MIDL (MIDL komut satırı seçeneklerini belirtin)](../../build/reference/midl-specify-midl-command-line-options.md) sistem kod sayfası tarafından çözümlenemedi bağlayıcı seçeneği.
+
+MIDL komut (giriş kod sayfası) belirtirken kullanılan kod sayfasına sistem kod sayfası ile aynı olmalıdır.

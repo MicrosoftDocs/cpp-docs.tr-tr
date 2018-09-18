@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dbd3e6da3021303e1c66583383c2f514af4794a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ecf2b17b7b7db96f4ce8756ec9248a4c6cb9ef78
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246297"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068084"
 ---
 # <a name="compiler-error-c3036"></a>Derleyici Hatası C3036
-'işleci': OpenMP 'azaltma' yan tümcesinde geçersiz işleç simgesi  
-  
- A [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi doğru şekilde belirtilmedi.  
-  
- Aşağıdaki örnek C3036 oluşturur:  
-  
-```  
-// C3036.cpp  
-// compile with: /openmp  
-static float a[1000], b[1000], c[1000];  
-void test1(int first, int last) {  
-   static float dp = 0.0f;  
-   #pragma omp for nowait reduction(.:dp)   // C3036  
-   // try the following line instead  
-   // #pragma omp for nowait reduction(+: dp)  
-   for (int i = first ; i <= last ; ++i)  
-      dp += a[i] * b[i];  
-}  
+
+'operator': OpenMP 'reduction' yan tümcesinde geçersiz işleç belirteci
+
+A [azaltma](../../parallel/openmp/reference/reduction.md) yan tümcesi düzgün belirtilmedi.
+
+Aşağıdaki örnek, C3036 oluşturur:
+
+```
+// C3036.cpp
+// compile with: /openmp
+static float a[1000], b[1000], c[1000];
+void test1(int first, int last) {
+   static float dp = 0.0f;
+   #pragma omp for nowait reduction(.:dp)   // C3036
+   // try the following line instead
+   // #pragma omp for nowait reduction(+: dp)
+   for (int i = first ; i <= last ; ++i)
+      dp += a[i] * b[i];
+}
 ```

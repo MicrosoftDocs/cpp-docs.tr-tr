@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89b61155b42cf6ba9106c5079ebbf74d4050cf99
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 936370a97463c11d6fcdf15d1856c1dd2b0b4335
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294696"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060882"
 ---
 # <a name="compiler-warning-level-4-c4514"></a>Derleyici Uyarısı (düzey 4) C4514
-'function': başvurulmayan satır içi işlev kaldırıldı  
-  
- İyileştirici çağrılmaz bir satır içi işlev kaldırıldı.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4514 oluşturur:  
-  
-```  
-// C4514.cpp  
-// compile with: /W4  
-#pragma warning(default : 4514)  
-class A  
-{  
-   public:  
-      void func()   // C4514, remove the function to resolve  
-      {  
-      }  
-};  
-  
-int main()  
-{  
-}  
+
+'function': başvurulmayan satır içi işlev kaldırıldı
+
+İyileştirici çağrılmaz bir satır içi işlevi kaldırıldı.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4514 oluşturur:
+
+```
+// C4514.cpp
+// compile with: /W4
+#pragma warning(default : 4514)
+class A
+{
+   public:
+      void func()   // C4514, remove the function to resolve
+      {
+      }
+};
+
+int main()
+{
+}
 ```

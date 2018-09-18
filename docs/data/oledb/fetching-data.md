@@ -18,21 +18,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 1dca3cc2d51f0e165e9b17d9fe630752a427590f
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 05cfcb59100f1778b0266636fb3930fd9489e917
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339162"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067083"
 ---
 # <a name="fetching-data"></a>Veri Getirme
+
 Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Kullanmakta olduğunuz erişimci türüne bağlı olarak, sütunların bağlama gerekebilir.  
   
 ### <a name="to-fetch-data"></a>Verileri getirmek için  
   
-1.  Uygun kullanarak satır açın **açık** komutu.  
+1. Uygun kullanarak satır açın **açık** komutu.  
   
-2.  Kullanıyorsanız `CManualAccessor`, zaten yapmadıysanız, çıktı sütunlarını bağlayın. Sütunları bağlamak için çağrı `GetColumnInfo`, aşağıdaki örnekte gösterildiği gibi bir erişimci bağlamalarla sonra oluşturun:  
+1. Kullanıyorsanız `CManualAccessor`, zaten yapmadıysanız, çıktı sütunlarını bağlayın. Sütunları bağlamak için çağrı `GetColumnInfo`, aşağıdaki örnekte gösterildiği gibi bir erişimci bağlamalarla sonra oluşturun:  
   
     ```cpp  
     // From the DBViewer Sample CDBTreeView::OnQueryEdit  
@@ -49,7 +50,7 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
     rs.Bind();  
     ```  
   
-3.  Yazma bir `while` verileri almak üzere döngü. Döngüde çağrı `MoveNext` imleç geçin ve aşağıdaki örnekte gösterildiği gibi S_OK dönüş değerini test etmek için:  
+1. Yazma bir `while` verileri almak üzere döngü. Döngüde çağrı `MoveNext` imleç geçin ve aşağıdaki örnekte gösterildiği gibi S_OK dönüş değerini test etmek için:  
   
     ```cpp  
     while (rs.MoveNext() == S_OK)  
@@ -59,7 +60,7 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
     }  
     ```  
   
-4.  İçinde `while` döngüsü, erişimci türüne göre veri getirebilirsiniz.  
+1. İçinde `while` döngüsü, erişimci türüne göre veri getirebilirsiniz.  
   
     -   Kullanırsanız [CAccessor](../../data/oledb/caccessor-class.md) sınıfı veri üyelerini içeren bir kullanıcı kaydı olmalıdır. Aşağıdaki örnekte gösterildiği gibi bu veri üyelerini kullanarak verilerinize erişebilirsiniz:  
   
@@ -101,4 +102,5 @@ Veri kaynağı, oturum ve rowset nesneleri açtıktan sonra veri getirebilir. Ku
         ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)
+
+[OLE DB Tüketici Şablonlarıyla Çalışma](../../data/oledb/working-with-ole-db-consumer-templates.md)

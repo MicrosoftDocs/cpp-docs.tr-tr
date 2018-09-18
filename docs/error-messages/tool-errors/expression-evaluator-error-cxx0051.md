@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a922738aa9ba3672e1f8f7c801f02d13a90a99c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b89fb8de6bd9331a85d79ec8d8e21ba746c5c88
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301801"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065055"
 ---
 # <a name="expression-evaluator-error-cxx0051"></a>İfade Değerlendirici Hatası CXX0051
-kesme noktası içinde belirtilen birden fazla aşırı yüklenmiş simgesi  
-  
- İfade değerlendirici, bir kesme noktası kullanmak için birden fazla aşırı yüklenmiş simgesinin belirleyemedi.  
-  
- Bu hata için CAN0051 aynıdır.
+
+kesme noktasında birden fazla aşırı yüklenmiş simgesi
+
+İfade değerlendirici, bir kesme noktası kullanmak için birden fazla aşırı yüklenmiş sembol belirlenemedi.
+
+Bu hata için CAN0051 aynıdır.

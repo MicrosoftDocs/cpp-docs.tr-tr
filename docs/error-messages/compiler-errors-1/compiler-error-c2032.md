@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1db268222f3b9f7ca6f9ce297680866185e6661d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ab02ca695ec94f25054e3490232b782a46a53a4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167222"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064015"
 ---
 # <a name="compiler-error-c2032"></a>Derleyici Hatası C2032
-'tanımlayıcısı': işlevi struct/union 'structorunion' üyesi olamaz  
-  
- Yapı veya birlik C++ ancak C. izin üye işlevi vardır Hatayı gidermek için C++ programı olarak derleyin veya üye işlevi kaldırın.  
-  
- Aşağıdaki örnek C2032 oluşturur:  
-  
-```  
-// C2032.c  
-struct z {  
-   int i;  
-   void func();   // C2032  
-};  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2032b.c  
-// compile with: /c  
-struct z {  
-   int i;  
-};  
+
+'identifier': işlev, yapı/birleşim 'structorunion' üyesi olamaz
+
+Yapı veya birleşim c++ ancak c içinde izin verilen bir üye işlevi vardır. Hatayı gidermek için bir C++ programı olarak derleyin veya üye işlevi kaldırın.
+
+Aşağıdaki örnek, C2032 oluşturur:
+
+```
+// C2032.c
+struct z {
+   int i;
+   void func();   // C2032
+};
+```
+
+Olası çözüm:
+
+```
+// C2032b.c
+// compile with: /c
+struct z {
+   int i;
+};
 ```

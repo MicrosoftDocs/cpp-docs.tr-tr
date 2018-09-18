@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8b545e4f1a5654177f4fc787931b229f493d7826
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: bfd6bc68b7081e4bf38fe02f54b632a141313c4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232932"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036533"
 ---
 # <a name="compiler-error-c2771"></a>Derleyici Hatası C2771
-\#içeri aktarma yalnızca izin verilen genel veya ad alanı kapsamı  
-  
- `#import` Yönergesi, örneğin, bir işlev veya yapısı, verilmez.
+
+\#içeri aktarma yalnızca izin verilen genel kapsamda veya ad alanı kapsamında
+
+`#import` Yönergesi, örneğin, bir işlev veya yapı, verilmez.

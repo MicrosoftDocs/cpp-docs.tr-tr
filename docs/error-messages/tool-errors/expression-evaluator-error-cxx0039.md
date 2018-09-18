@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8681d73d2889433516b205a47c500193bbeabdb0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b5397426618c5dfcbaa6307105781ff2e6f2eb97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33297774"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048337"
 ---
 # <a name="expression-evaluator-error-cxx0039"></a>İfade Değerlendirici Hatası CXX0039
-Sembol belirsiz  
-  
- C ifade değerlendiricisi bir ifadede kullanmak için bir simge hangi örneğinin belirleyemiyor. Simgenin birden çok kez devralma ağacında oluşur.  
-  
- Kapsam çözümü işleci kullanmanız gerekir (`::`) örneği ifadede açıkça belirtmek için.  
-  
- Bu hata için CAN0039 aynıdır.
+
+Sembol belirsiz
+
+C ifade değerlendiricisi, hangi örneğinin bir ifadede kullanılacak bir simge olup olmadığını belirleyemez. Sembol birden çok devralma ağacında bir kez gerçekleşir.
+
+Kapsam çözümleme işleci kullanmanız gerekir (`::`) ifadede kullanılacak örneğini açıkça belirtmek için.
+
+Bu hata için CAN0039 aynıdır.

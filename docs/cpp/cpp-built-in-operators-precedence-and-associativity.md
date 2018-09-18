@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 504a6afb9815074efe0bda2b679d5ac6a720b220
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 5b40e5ab6cac64edbfdb5ab93c6864d0eacb9e63
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401899"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073115"
 ---
 # <a name="c-built-in-operators-precedence-and-associativity"></a>C++ yerleşik işleçler, öncelik ve İlişkisellik
 
@@ -115,4 +115,5 @@ C++ dili tüm C işleçlerini içerir ve birkaç yeni işleç ekler. İşleçler
 |[Virgül](../cpp/comma-operator.md)|[,](../cpp/comma-operator.md)|
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [İşleç Aşırı Yüklemesi](operator-overloading.md)
+
+[İşleç Aşırı Yüklemesi](operator-overloading.md)

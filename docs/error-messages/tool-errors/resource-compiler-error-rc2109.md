@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b5a5a01458c4117fb6cb49c967cc8ca94a77226
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5ef826dcdb439a28630221bdc9b4a90e9f6f324f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319975"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072972"
 ---
 # <a name="resource-compiler-error-rc2109"></a>Kaynak Derleyicisi Hatası RC2109
-beklenen sayısal iletişim sabiti  
-  
- A **iletişim** deyimi için tamsayı değerlerini gerektirir *x, y, genişlik*, ve *yükseklik* alanları. Bu değerleri sonra dahil olduğundan emin olun **iletişim** anahtar sözcüğü ve negatif olmalarını değil.
+
+Sayısal iletişim sabiti bekleniyordu
+
+A **iletişim** çalıştın için tamsayı değerleri *x, y, genişlik*, ve *yükseklik* alanları. Bu değerleri sonra dahil olduğundan emin olun **iletişim** anahtar sözcüğü ve negatif olduklarını değil.

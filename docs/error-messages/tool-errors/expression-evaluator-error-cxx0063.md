@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 962fd27cc174097ff4d6c72cf91ade89e74f1ce4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 835a396fdbf7f97e1dccde66581af463c8254cb5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296607"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039081"
 ---
 # <a name="expression-evaluator-error-cxx0063"></a>İfade Değerlendirici Hatası CXX0063
-Aşırı yüklenmiş işleç -> desteklenen  
-  
- Aşırı yüklenmiş sınıf üye erişimi işleci ifade kullanılan (**->**).  
-  
- Bu hata için CAN0063 aynıdır.
+
+Aşırı yüklenmiş operator -> desteklenen
+
+İfade kullanılan bir sınıfı aşırı yüklenmiş üye erişimi işleci (**->**).
+
+Bu hata için CAN0063 aynıdır.

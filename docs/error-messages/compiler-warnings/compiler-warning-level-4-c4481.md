@@ -16,34 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeef5f2121808c5444af942fac0e3b72919f2354
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48ed2ba08423f7540f4e0a855aacbcab993d41aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063768"
 ---
 # <a name="compiler-warning-level-4-c4481"></a>Derleyici Uyarısı (düzey 4) C4481
-kullanılan standart olmayan uzantısı: override tanımlayıcısı 'anahtar sözcüğü'  
-  
- Bir anahtar sözcük c++ standart, örneğin, biri de/CLR altında çalışır geçersiz kılma tanımlayıcılarını olmayan kullanıldı.  Daha fazla bilgi için bkz:  
-  
--   [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)  
-  
--   [Geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md)  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4481 oluşturur.  
-  
-```  
-// C4481.cpp  
-// compile with: /W4 /c  
-class B {  
-   virtual void f(unsigned);  
-};  
-  
-class C : B {  
-   void f(unsigned) override;   // C4481  
-   void f2(unsigned);  
-};  
+
+Standart olmayan uzantı kullanıldı: geçersiz kılma belirticisi 'anahtar sözcüğü'
+
+Bir anahtar sözcüğü C++ standardı, örneğin, bir/CLR altında da çalışır geçersiz kılma tanımlayıcılarını olmadığını kullanıldı.  Daha fazla bilgi için bkz:
+
+- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+
+- [Geçersiz kılma tanımlayıcıları](../../windows/override-specifiers-cpp-component-extensions.md)
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4481 oluşturur.
+
+```
+// C4481.cpp
+// compile with: /W4 /c
+class B {
+   virtual void f(unsigned);
+};
+
+class C : B {
+   void f(unsigned) override;   // C4481
+   void f2(unsigned);
+};
 ```

@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a5b27c1fffca8c21a0fa3e3e79eedae0c17ae580
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 01deb34c2e490eb8a2d6529a426aedca40f98901
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295398"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070580"
 ---
 # <a name="expression-evaluator-error-cxx0043"></a>İfade Değerlendirici Hatası CXX0043
-Bu işaretçinin kullanılan dış üye işlevi  
-  
- **Bu** işaretçi yalnızca statik olmayan üye işlevleri için kullanılabilir.  
-  
- Bu hata için CAN0043 aynıdır.
+
+Bu işaretçi üye işlevin dışında kullanılan
+
+**Bu** işaretçi yalnızca statik olmayan üye işlevleri için kullanılabilir.
+
+Bu hata için CAN0043 aynıdır.

@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9eb8ee0f6e00ac1bfb2ad531f2236bb2d9208d27
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c407e8f77990bdbeea143c252a27292ac282497e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251300"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063495"
 ---
 # <a name="compiler-error-c3217"></a>Derleyici Hatası C3217
-'param': genel parametresi bu bildirimi kısıtlanamaz  
-  
- Bir kısıtlama hatalı biçimlendirilmiş; kısıtlama genel parametresini genel sınıfı şablonu parametresiyle birlikte kabul etmeniz gerekir.  
-  
- Aşağıdaki örnek C3217 oluşturur:  
-  
-```  
-// C3217.cpp  
-// compile with: /clr  
-interface struct A {};  
-  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   where T : A   // C3217  
-   void f();  
-};  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3217b.cpp  
-// compile with: /clr /c  
-interface struct A {};  
-  
-generic <class T>  
-ref class C {  
-   generic <class T1>  
-   where T1 : A  
-   void f();  
-};  
+
+'param': Bu bildirimde genel parametre kısıtlanamaz
+
+Kısıtlama olgu biçimlendirildi; genel parametre kısıtlama ile genel bir sınıf şablonu parametre kabul etmesi gerekir.
+
+Aşağıdaki örnek, C3217 oluşturur:
+
+```
+// C3217.cpp
+// compile with: /clr
+interface struct A {};
+
+generic <class T>
+ref class C {
+   generic <class T1>
+   where T : A   // C3217
+   void f();
+};
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3217b.cpp
+// compile with: /clr /c
+interface struct A {};
+
+generic <class T>
+ref class C {
+   generic <class T1>
+   where T1 : A
+   void f();
+};
 ```

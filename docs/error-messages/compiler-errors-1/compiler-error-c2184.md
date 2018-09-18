@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 068850ea37811cc68c070a968cc2ddc5aa0ce8a5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c901dbbe97c47afd8096c89f33db6e3e355cba4d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171760"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050495"
 ---
 # <a name="compiler-error-c2184"></a>Derleyici Hatası C2184
-'type': ifade __except geçersiz türü için bir integral olması gerekir  
-  
- Bir tür olarak kullanılan bir [__except](../../c-language/try-except-statement-c.md) deyimi, ancak türü izin verilmez.  
-  
- Aşağıdaki örnek C2184 oluşturur:  
-  
-```  
-// C2184.cpp  
-void f() {  
-   int * p;  
-   __try{}  
-   __except(p){};   // C2184  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2184b.cpp  
-// compile with: /c  
-void f() {  
-   int i = 0;  
-   __try{}  
-   __except(i){};  
-}  
+
+'type': __except ifadesi için geçersiz tür, bir tamsayı olmalıdır
+
+Bir tür kullanıldı bir [__except](../../c-language/try-except-statement-c.md) deyimi, ancak türüne izin verilmiyor.
+
+Aşağıdaki örnek, C2184 oluşturur:
+
+```
+// C2184.cpp
+void f() {
+   int * p;
+   __try{}
+   __except(p){};   // C2184
+}
+```
+
+Olası çözüm:
+
+```
+// C2184b.cpp
+// compile with: /c
+void f() {
+   int i = 0;
+   __try{}
+   __except(i){};
+}
 ```

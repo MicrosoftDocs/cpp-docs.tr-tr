@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b9974635fabc07f17b9e46b16d163c72b6d3ea
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3926de61cdc41464c14c8610fee3033d10076506
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278040"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066849"
 ---
 # <a name="compiler-warning-level-1-c4353"></a>Derleyici Uyarısı (düzey 1) C4353
-kullanılan standart olmayan uzantısı: sabit 0 olarak işlev ifadesi. Bunun yerine '__noop' işlevini iç kullanın  
-  
- Bir işlev ifadesi olarak sabit sıfır (0) kullanamazsınız. Daha fazla bilgi için bkz: [__noop](../../intrinsics/noop.md).  
-  
- Aşağıdaki örnek C4353 oluşturur:  
-  
-```  
-// C4353.cpp  
-// compile with: /W1  
-void MyPrintf(void){};  
-#define X 0  
-#if X  
-   #define DBPRINT MyPrint  
-#else  
-   #define DBPRINT 0   // C4353 expected  
-#endif  
-int main(){  
-DBPRINT();  
-}  
+
+Standart olmayan uzantı kullanıldı: işlev ifadesi olarak 0 sabiti. Bunun yerine '__noop ' iç işlevini iç kullanın
+
+İşlev ifadesi olarak sabit sıfır (0) kullanamazsınız. Daha fazla bilgi için [__noop](../../intrinsics/noop.md).
+
+Aşağıdaki örnek, C4353 oluşturur:
+
+```
+// C4353.cpp
+// compile with: /W1
+void MyPrintf(void){};
+#define X 0
+#if X
+   #define DBPRINT MyPrint
+#else
+   #define DBPRINT 0   // C4353 expected
+#endif
+int main(){
+DBPRINT();
+}
 ```

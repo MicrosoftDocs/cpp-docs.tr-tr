@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9e28fe0f27834b1ec18236ab8734b24601baef72
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0ae9ef1017068fb2c515949110905a65e822d93a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295723"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074467"
 ---
 # <a name="expression-evaluator-error-cxx0072"></a>İfade Değerlendirici Hatası CXX0072
-Hata: tür bilgileri eksik veya bilinmeyen  
-  
- .Pch dosyası içinde bağlanmamış veya kod ile/zi derlenmemiş modülü türüne bir başvuru içeriyor.  
-  
- Bu hata için CAN0067 aynıdır.
+
+Hata: tür bilgisi eksik veya bilinmeyen
+
+.Pch dosyası Adlandır bağlanmadı veya /Zi ile derlenmemiş bir modüldeki bir türe başvuru koduna sahiptir.
+
+Bu hata için CAN0067 aynıdır.

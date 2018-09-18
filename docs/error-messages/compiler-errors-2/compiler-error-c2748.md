@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 336a2eb10f0a39f81547361e982aa744be88149e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d57c7919cd33f9e27ad34b1298d8af36ec360200
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236137"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058074"
 ---
 # <a name="compiler-error-c2748"></a>Derleyici Hatası C2748
-yönetilen veya WinRT dizi oluşturma dizi boyutu veya dizi Başlatıcı olmalıdır  
-  
- Bir yönetilen veya WinRT dizi ill biçimlendirilmiş. Daha fazla bilgi için bkz: [dizi](../../windows/arrays-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C2748 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2748.cpp  
-// compile with: /clr  
-int main() {  
-   array<int> ^p1 = new array<int>();   // C2748  
-   // try the following line instead  
-   array<int> ^p2 = new array<int>(2);  
-}  
+
+yönetilen veya WinRT dizi oluşturma, dizi boyutu ve dizi Başlatıcısı olmalıdır
+
+Yönetilen veya WinRT dizi ill biçimlendirilmiş. Daha fazla bilgi için [dizi](../../windows/arrays-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C2748 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2748.cpp
+// compile with: /clr
+int main() {
+   array<int> ^p1 = new array<int>();   // C2748
+   // try the following line instead
+   array<int> ^p2 = new array<int>(2);
+}
 ```

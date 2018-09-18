@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 739f6195d1f9203b1313815b3f4ee839374b1ad3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 321c226cf9edcb0860abb6917c6cff67a6df348d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229807"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052042"
 ---
 # <a name="compiler-error-c2575"></a>Derleyici Hatası C2575
-'tanımlayıcısı': yalnızca üye işlevleri ve temellerine sanal olabilir  
-  
- Genel işlev veya sınıf bildirilmiş `virtual`. Bu duruma izin verilmez.  
-  
- Aşağıdaki örnek C2575 oluşturur:  
-  
-```  
-// C2575.cpp  
-// compile with: /c  
-virtual void func() {}   // C2575  
-  
-void func2() {}  
-struct A {  
-   virtual void func2(){}  
-};  
+
+'identifier': yalnızca üye işlevler ve tabanlar sanal olabilir
+
+Bir genel işlev veya sınıf bildirilen `virtual`. Buna izin verilmez.
+
+Aşağıdaki örnek, C2575 oluşturur:
+
+```
+// C2575.cpp
+// compile with: /c
+virtual void func() {}   // C2575
+
+void func2() {}
+struct A {
+   virtual void func2(){}
+};
 ```

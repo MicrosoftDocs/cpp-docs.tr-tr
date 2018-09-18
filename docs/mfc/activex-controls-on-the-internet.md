@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5c64980cbdfeec92f0029828183c8f56b390dd85
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: d3e7603bfe2074022cdaa0e99024627c32452b46
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535320"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072803"
 ---
 # <a name="activex-controls-on-the-internet"></a>Internet'te ActiveX Denetimleri
 
@@ -174,33 +174,21 @@ Farklı kapsayıcılar, Internet üzerindeki COM kullanan Web tarayıcıları da
 ## <a name="displaying-a-control-on-a-web-page"></a>Bir Web sayfası denetiminde görüntüleme  
  Bir nesne etiketi ve özniteliklerinin bir denetimi Web sayfasına eklemek için bir örnek aşağıda verilmiştir.  
   
- `<OBJECT`  
-  
- `CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"`  
-  
- `CODEBASE="/ie/download/activex/iechart.ocx"`  
-  
- `ID=chart1`  
-  
- `WIDTH=400`  
-  
- `HEIGHT=200`  
-  
- `ALIGN=center`  
-  
- `HSPACE=0`  
-  
- `VSPACE=0`  
-  
- `>`  
-  
- `<PARAM NAME="BackColor" value="#ffffff">`  
-  
- `<PARAM NAME="ForeColor" value="#0000ff">`  
-  
- `<PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt">`  
-  
- `</OBJECT>`  
+```xml
+<OBJECT
+  CLASSID="clsid:FC25B780-75BE-11CF-8B01-444553540000"
+  CODEBASE="/ie/download/activex/iechart.ocx"
+  ID=chart1
+  WIDTH=400
+  HEIGHT=200
+  ALIGN=center
+  HSPACE=0
+  VSPACE=0>
+  <PARAM NAME="BackColor" value="#ffffff"/>
+  <PARAM NAME="ForeColor" value="#0000ff"/>
+  <PARAM NAME="url" VALUE="/ie/controls/chart/mychart.txt"/>
+</OBJECT>
+```
   
 ## <a name="updating-an-existing-ole-control-to-use-new-activex-control-features"></a>Yeni bir ActiveX denetimi özelliklerini kullanmak için mevcut bir OLE denetim güncelleştiriliyor  
  OLE denetim 4.2 önce Visual C++'ın bir sürümüyle oluşturulduysa, performansı ve işlevselliği geliştirmek için atabileceğiniz adımlar vardır. Bu değişiklikler hakkında ayrıntılı bilgi için bkz: [ActiveX denetimleri: iyileştirme](../mfc/mfc-activex-controls-optimization.md).  

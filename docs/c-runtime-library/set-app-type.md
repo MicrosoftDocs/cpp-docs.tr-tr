@@ -18,19 +18,20 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fc9b3901cb031a1cc08d911889dc97818cfb5a44
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 1b2ad7e22bf6ba366a33dd44ce49c1a384f88b87
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32410187"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041265"
 ---
 # <a name="setapptype"></a>_set_app_type
-Başlangıçta uygulama bir konsol uygulaması veya bir GUI uygulaması olup CRT bildirmek için kullanılan bir iç işlev.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```cpp  
+
+Başlangıçta, uygulamayı bir konsol uygulaması veya bir GUI uygulaması olup CRT bildirmek için kullanılan bir iç işlev.
+
+## <a name="syntax"></a>Sözdizimi
+
+```cpp
 typedef enum _crt_app_type
 {
     _crt_unknown_app,
@@ -40,25 +41,27 @@ typedef enum _crt_app_type
 
 void __cdecl _set_app_type(
     _crt_app_type appType
-    ); 
-```  
-  
-## <a name="parameters"></a>Parametreler  
- `appType`  
- Uygulama türünü belirten bir değer. Olası değerler şunlardır:  
-  
-|Değer|Açıklama|  
-|----------------|-----------------|  
-|_crt_unknown_app|Bilinmeyen uygulama türü.|  
-|_crt_console_app|(Komut satırı) konsol uygulaması.|  
-|_crt_gui_app|GUI (Windows) uygulama.|  
-  
-## <a name="remarks"></a>Açıklamalar  
- Normalde, bu işlevi çağırmak gerekmez. Önce yürütür C çalışma zamanı başlatma kodunu parçası olan `main` uygulamanızda olarak adlandırılır.
- 
-## <a name="requirements"></a>Gereksinimler  
-  
-|Yordam|Gerekli başlık|  
-|-------------|---------------------|  
+    );
+```
+
+## <a name="parameters"></a>Parametreler
+
+*uygulama türü*<br/>
+Uygulama türünü belirten bir değer. Olası değerler şunlardır:
+
+|Değer|Açıklama|
+|----------------|-----------------|
+|_crt_unknown_app|Bilinmeyen uygulama türü.|
+|_crt_console_app|(Komut satırı) konsol uygulaması.|
+|_crt_gui_app|GUI (Windows) uygulama.|
+
+## <a name="remarks"></a>Açıklamalar
+
+Normalde, bu işlevi çağırın gerekmez. Önce yürütülen C çalışma zamanı başlatma kod parçası `main` uygulamanızda çağrılır.
+
+## <a name="requirements"></a>Gereksinimler
+
+|Yordam|Gerekli başlık|
+|-------------|---------------------|
 |_set_app_type|Process.h|
 

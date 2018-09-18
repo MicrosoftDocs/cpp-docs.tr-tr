@@ -16,29 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc47c103e93fe1e4f20f5007c6688b5b6648bf32
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9ea2a6dcccd6de6d4fc3081106123f4ab37f71a2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248189"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052924"
 ---
-# <a name="compiler-error-c3286"></a>Derleyici Hatası C3286  
-  
-> '*belirticisi*': bir yineleme değişkeni tüm depolama sınıfı tanımlayıcıları sahip olamaz  
-  
-Depolama sınıfı bir yineleme değişkeni belirtilemez. Daha fazla bilgi için bkz: [depolama sınıfları (C++)](../../cpp/storage-classes-cpp.md) ve [her biri için de](../../dotnet/for-each-in.md).  
-  
-## <a name="example"></a>Örnek  
-  
-Aşağıdaki örnek C3286 oluşturur ve ayrıca doğru kullanımını gösterir.  
-  
-```cpp  
-// C3286.cpp  
-// compile with: /clr  
-int main() {  
-   array<int> ^p = { 1, 2, 3 };  
-   for each (static int i in p) {}   // C3286   
-   for each (int j in p) {}   // OK  
-}  
+# <a name="compiler-error-c3286"></a>Derleyici Hatası C3286
+
+> '*belirticisi*': bir yineleme değişkeninin herhangi bir depolama sınıfı tanımlayıcıları olamaz
+
+Bir depolama sınıfı üzerinde yineleme değişkeni belirtilemez. Daha fazla bilgi için [depolama sınıfları (C++)](../../cpp/storage-classes-cpp.md) ve [her, içinde](../../dotnet/for-each-in.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3286 oluşturur ve ayrıca doğru kullanımını gösterir.
+
+```cpp
+// C3286.cpp
+// compile with: /clr
+int main() {
+   array<int> ^p = { 1, 2, 3 };
+   for each (static int i in p) {}   // C3286
+   for each (int j in p) {}   // OK
+}
 ```

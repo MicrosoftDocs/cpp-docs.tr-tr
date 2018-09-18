@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5017494e5b16363a970d2ac0bef8bcf1c088b413
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 62e27fd7c028e059aa04cc3ff9f4b278cd1a120e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33169861"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048298"
 ---
 # <a name="compiler-error-c2251"></a>Derleyici Hatası C2251
-ad alanı 'namespace', 'member' üyesi yok - 'member' mu demek istediniz?  
-  
- Derleyici belirtilen ad alanında bir tanımlayıcı bulmayı tamamlayamadı.  
-  
- Aşağıdaki örnek C2251 oluşturur:  
-  
-```  
-// C2251.cpp  
-// compile with: /c  
-namespace A {  
-   namespace B {  
-      void f1();  
-   }  
-  
-   using namespace B;  
-}  
-  
-void A::f1() {}   // C2251  
-void A::B::f1() {}   // OK  
+
+ad alanı 'ad alanı', 'member' üyesi yok - 'member' şunu mu demek istediniz?
+
+Derleyici, bir tanımlayıcı belirtilen ad alanında bulunacak ulaşamadı.
+
+Aşağıdaki örnek, C2251 oluşturur:
+
+```
+// C2251.cpp
+// compile with: /c
+namespace A {
+   namespace B {
+      void f1();
+   }
+
+   using namespace B;
+}
+
+void A::f1() {}   // C2251
+void A::B::f1() {}   // OK
 ```

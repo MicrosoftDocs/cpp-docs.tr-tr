@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68699a235f461a0f5550802cc009d345ecdba7c4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e4e465af5b4fa22c5f0ba5a9e01ebde0a7ee89e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316016"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068149"
 ---
 # <a name="nmake-fatal-error-u1001"></a>NMAKE Önemli Hatası U1001
-sözdizimi hatası: geçersiz bir karakter makrosu ' character'  
-  
- Belirli bir karakter makro görünür ancak bir harf, sayı veya alt çizgi değil.  
-  
- Eksik virgülle makrosu genişletme içinde bu hatanın nedeni olabilir:  
-  
-```  
-syntax error : illegal character '=' in macro  
+
+sözdizimi hatası: makroda ' character' geçersiz bir karakter
+
+Verilen karakterin bir makroda görünür, ancak bir harf, sayı veya alt çizgi değildir.
+
+Bu hatanın nedeni eksik iki nokta makro genişletmesinde:
+
+```
+syntax error : illegal character '=' in macro
 ```

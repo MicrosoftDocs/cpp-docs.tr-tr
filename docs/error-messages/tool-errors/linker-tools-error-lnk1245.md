@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47a1c2e5f7bf66946dcc5816d7a20fd485b59b45
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef7bace5cec937399d7a2ed440e21b9b751f4141
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299246"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041798"
 ---
 # <a name="linker-tools-error-lnk1245"></a>Bağlayıcı Araçları Hatası LNK1245
-Geçersiz alt sistemi 'alt sistemi belirtilen;' / SUBSYSTEM WINDOWS, WINDOWSCE veya KONSOL olmalıdır  
-  
- [/ CLR](../../build/reference/clr-common-language-runtime-compilation.md) nesne derlemek için kullanılan ve aşağıdaki koşullardan biri doğru:  
-  
--   Özel giriş noktası tanımlandı ([/Entry](../../build/reference/entry-entry-point-symbol.md)), bağlayıcı bir alt çıkarılamadı şekilde.  
-  
--   Bir değer geçildi [/SUBSYSTEM ](../../build/reference/subsystem-specify-subsystem.md) /CLR nesneleri için geçerli değil bağlayıcı seçeneği.  
-  
- Her iki durumlarda, çözümleme /SUBSYSTEM bağlayıcı seçeneği için geçerli bir değer belirtmek içindir.
+
+Geçersiz 'alt sistem belirtilmedi;' alt sistemi / SUBSYSTEM WINDOWS, WINDOWSCE veya KONSOL olmalıdır
+
+[/ CLR](../../build/reference/clr-common-language-runtime-compilation.md) nesne derlemek için kullanılan ve aşağıdaki koşullar doğru:
+
+- Özel giriş noktası tanımlanmış ([/Entry](../../build/reference/entry-entry-point-symbol.md)), yani bir subsystem bağlayıcı çıkarılamadı.
+
+- Bir değer geçildi [/Subsystem](../../build/reference/subsystem-specify-subsystem.md) bağlayıcı seçeneği, / CLR nesneler için geçerli değil.
+
+Her iki durum için çözüm/Subsystem bağlayıcı seçeneği için geçerli bir değer belirtmek içindir.

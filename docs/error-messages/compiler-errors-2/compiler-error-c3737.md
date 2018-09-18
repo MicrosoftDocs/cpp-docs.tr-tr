@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29d31597e9581d03f97c2b07856ce81c5de50bd3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 99ab9394f2c475079ee226dd294cca346ec68e32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264616"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039263"
 ---
 # <a name="compiler-error-c3737"></a>Derleyici Hatası C3737
-'temsilci': bir temsilci açık bir çağrı kuralı olmayabilir  
-  
- Belirtemeyeceğiniz [çağırma](../../cpp/calling-conventions.md) için bir `delegate`.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C3737 oluşturur:  
-  
-```  
-// C3737a.cpp  
-// compile with: /clr  
-delegate void __stdcall MyFunc();   // C3737  
-// Try the following line instead.  
-// delegate void MyFunc();  
-  
-int main() {  
-}  
-```  
+
+'temsilci': temsilcinin açık bir çağırma kuralı olamaz
+
+Belirtemezsiniz [çağırma kuralı](../../cpp/calling-conventions.md) için bir `delegate`.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3737 oluşturur:
+
+```
+// C3737a.cpp
+// compile with: /clr
+delegate void __stdcall MyFunc();   // C3737
+// Try the following line instead.
+// delegate void MyFunc();
+
+int main() {
+}
+```

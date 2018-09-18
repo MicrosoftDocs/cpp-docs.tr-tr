@@ -17,16 +17,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61099ba206269f13413fefe14ef02002968c65b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8f028f53075aa540338e7abcce7f42fa132ad1af
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296269"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059128"
 ---
 # <a name="expression-evaluator-error-cxx0000"></a>İfade Değerlendirici Hatası CXX0000
-hata koşulu yok  
-  
- Herhangi bir hata oluştu. Normal olarak hata ayıklama devam edebilirsiniz.  
-  
- Koşullara dikkat edin ve Microsoft Ürün Destek Hizmetleri'ne bildirin.
+
+hata koşulu yok
+
+Herhangi bir hata oluştu. Normalde hata ayıklama devam edebilirsiniz.
+
+Koşullara dikkat edin ve Microsoft Ürün Destek Hizmetleri bildirir.

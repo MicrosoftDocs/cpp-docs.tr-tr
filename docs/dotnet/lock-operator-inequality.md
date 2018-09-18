@@ -20,12 +20,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6b34eb410e05bd102f7a10205e57b3731b8f476d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ca39249a73df4519c741182827036158169fd3ee
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33130353"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043020"
 ---
 # <a name="lockoperator"></a>lock::operator!=
 Eşitsizlik işleci.  
@@ -39,11 +39,11 @@ template<class T> bool operator!=(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `t`  
- Eşitsizlik için karşılaştırılacak nesne.  
+*T*<br/>
+Eşitsizlik için karşılaştırılacak nesne.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
- Döndürür `true` varsa `t` kilidi 's nesnesinden farklı `false` Aksi takdirde.  
+ Döndürür `true` varsa `t` farklı kilit 's nesneden `false` Aksi takdirde.  
   
 ## <a name="example"></a>Örnek  
   
@@ -71,7 +71,7 @@ Inequal!
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\lock.h >  
+ **Üst bilgi dosyası** \<msclr\lock.h >  
   
  **Namespace** msclr  
   

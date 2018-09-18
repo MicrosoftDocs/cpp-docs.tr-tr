@@ -18,12 +18,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a54e0ba354e76996d03503e116008aa200b0905b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: a471d6743da0cf803de72a9f257dfa67bc0dcbd1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43199363"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036364"
 ---
 # <a name="file-handling"></a>Dosya İşleme
 
@@ -86,7 +86,7 @@ Bu yordamların arasında dosya gösterimini değiştirmek için bir yol sağlay
 |[_get_osfhandle](../c-runtime-library/reference/get-osfhandle.md)|Mevcut C çalışma zamanı dosya tanımlayıcısı ile ilişkili dönüş işletim sistemi dosya tanıtıcısı|
 |[_open_osfhandle](../c-runtime-library/reference/open-osfhandle.md)|C çalışma zamanı dosya tanımlayıcısı, var olan bir işletim sistemi dosya tanıtıcısı ile ilişkilendirir.|
 
- Aşağıdaki Win32 işlevlerini de dosyalar ve kanallar açın:
+Aşağıdaki Win32 işlevlerini de dosyalar ve kanallar açın:
 
 - [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea)
 

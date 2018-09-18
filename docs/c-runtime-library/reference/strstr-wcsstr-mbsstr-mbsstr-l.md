@@ -54,14 +54,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf7e7e009d1f56d71e8f1b26a2e0eeefb8855492
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 2dce749440d3321c07d549a2862048206dee45ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214093"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070814"
 ---
 # <a name="strstr-wcsstr-mbsstr-mbsstrl"></a>strstr, wcsstr, _mbsstr, _mbsstr_l
+
 Bir arama dizesinin bir dizede ilk geçtiği yere bir işaretçi döndürür.
 
 > [!IMPORTANT]

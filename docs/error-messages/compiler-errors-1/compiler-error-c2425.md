@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ce9984273ba689bdabe6d1ad6c3c4eb96e151227
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 30f0bf6fb90a08647c9547108c17040fbf4c09ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196863"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071370"
 ---
 # <a name="compiler-error-c2425"></a>Derleyici Hatası C2425
-'belirteci': 'context' sabit olmayan ifade  
-  
- Bir sabit olmayan ifadesi bu bağlamda belirteci forms bölümü.  
-  
- Bu sorunu gidermek için belirteci bir hesaplama veya bir sabit değişmez değer ile değiştirin.  
-  
- Aşağıdaki örnek C2425 oluşturur:  
-  
-```  
-// C2425.cpp  
-// processor: x86  
-int main() {  
-   int i = 3;  
-   __asm {  
-      mov eax, [ebp - i]   // C2425  
-      mov eax, [ebp - 3]   // OK  
-   }  
-}  
+
+'token': 'bağlamında' sabit olmayan ifade
+
+Belirteç, bu bağlamda bir sabit olmayan ifade parçası oluşturur.
+
+Bu sorunu gidermek için belirteci bir hesaplama veya bir sabit hazır değeri ile değiştirin.
+
+Aşağıdaki örnek, C2425 oluşturur:
+
+```
+// C2425.cpp
+// processor: x86
+int main() {
+   int i = 3;
+   __asm {
+      mov eax, [ebp - i]   // C2425
+      mov eax, [ebp - 3]   // OK
+   }
+}
 ```

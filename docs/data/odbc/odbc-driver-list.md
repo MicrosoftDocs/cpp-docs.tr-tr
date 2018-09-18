@@ -17,31 +17,33 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 310f0c6d3b36f63d4ba9d1f165c808b6d417c321
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 10c5a4fd9b7f15e5f6532bbaf6b5d8af4d3c86ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33087799"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068008"
 ---
 # <a name="odbc-driver-list"></a>ODBC Sürücü Listesi
-Visual C++ aşağıdaki veritabanları için ODBC sürücüleri sağlar:  
+
+Visual C++, aşağıdaki veritabanlarını ODBC sürücüleri sağlar:  
   
--   SQL Server  
+- SQL Server  
   
--   Microsoft Access  
+- Microsoft Access  
   
--   Microsoft Excel  
+- Microsoft Excel  
   
--   dBASE  
+- dBASE  
   
--   Paradox  
+- Paradox  
   
--   Microsoft Oracle ODBC  
+- Microsoft Oracle ODBC  
   
--   Metin dosyaları  
+- Metin dosyaları  
   
- ODBC sürücüleri Microsoft ve ODBC sürücü paketi de dahil olmak üzere, diğer şirketler tarafından sunulan hakkında bilgi için Microsoft Ürün Destek Hizmetleri'ne başvurun.  
+Microsoft ve ODBC sürücü paketi dahil olmak üzere, diğer şirketlerin sunduğu ODBC sürücüleri hakkında daha fazla bilgi için Microsoft Ürün Destek Hizmetleri'ne başvurun.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+
+[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

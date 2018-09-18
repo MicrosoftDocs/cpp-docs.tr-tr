@@ -19,41 +19,53 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: bb74d27af485f765e1330bc83ab196e1d9ba6b5c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c8e2fc86d15472bd4ab63e472df99bb69393b386
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33090672"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060310"
 ---
 # <a name="data-access-in-visual-c"></a>Visual C++'da Veri Erişimi
 
-Neredeyse tüm veritabanı ürünler, SQL ve NoSQL, yerel C++ uygulamaları için bir arabirim sağlar. Endüstri Standart önde gelen tüm SQL veritabanı ürünleri ve birçok NoSQL ürünleri tarafından desteklenmeyen ODBC arabirimidir. Microsoft olmayan ürünler için daha fazla bilgi için satıcısına başvurun. Üçüncü taraf kitaplıklar çeşitli Lisans Koşulları'nı ile de kullanılabilir.
+Neredeyse tüm veritabanı ürünler, SQL ve NoSQL, yerel C++ uygulamaları için bir arabirim sağlar. Sektörde standart büyük SQL veritabanı ürün ve birçok NoSQL ürünleri tarafından desteklenen ODBC arabirimidir. Microsoft olmayan ürünler için daha fazla bilgi için satıcıya başvurun. Üçüncü taraf kitaplıklar çeşitli lisans koşullarıyla birlikte de kullanılabilir.
 
-Bu yana 2011 Microsoft, Microsoft SQL Server veritabanları, her iki şirket içi ve buluttaki bağlamak üzere yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için bkz: [veri erişim programlama \(MFC ATL\)](data-access-programming-mfc-atl.md). C + +/ CLI kitaplıkları yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için bkz: [veri erişimi kullanarak ADO.NET (C + +/ CLI)](/dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da veri erişimi](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
+2011'den beri Microsoft, Microsoft SQL Server veritabanlarını, hem şirket içinde ve bulutta bağlama için yerel uygulamalar için standart olarak ODBC hizalı. Daha fazla bilgi için [veri erişim programlama \(MFC-ATL\)](data-access-programming-mfc-atl.md). C + +/ CLI kitaplıklar, yerel ODBC sürücüleri ya da ADO.NET kullanabilirsiniz. Daha fazla bilgi için bkz. [veri erişim ADO.NET kullanma (C + +/ CLI)](/dotnet/data-access-using-adonet-cpp-cli.md) ve [Visual Studio'da verilere erişme](https://docs.microsoft.com/visualstudio/data-tools/accessing-data-in-visual-studio).
 
 ## <a name="in-this-section"></a>Bu Bölümde
-[Veri erişim programlama (MFC/ATL)](data-access-programming-mfc-atl.md) Describes eski veri erişim tercih edilen yol olduğu etkin şablon sınıf kitaplığı (ATL) veya Microsoft Foundation Class (MFC) kitaplığı gibi sınıf kitaplıklarından birini kullanmak için Visual C++ ile programlama hangi veritabanı API'leri ile çalışmayı kolaylaştırır.
 
-[Açık veritabanı bağlantısı (ODBC)](odbc/open-database-connectivity-odbc.md) Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar.
+[Veri erişim programlama (MFC/ATL)](data-access-programming-mfc-atl.md)<br/>
+Eski veri erişimi etkin şablon sınıf kitaplığı (ATL) veya Microsoft Foundation Class (MFC) kitaplığı gibi API'leri veritabanı ile çalışmayı basitleştiren sınıf kitaplıklarının kullanmayı tercih edilen yol olduğu Visual C++ ile programlama açıklar.
 
-[OLE DB programlama](oledb/ole-db-programming.md) özellikle, karşı programlama yaparken, bazı senaryolarda hala gereken daha çok eski bir arabirim bağlantılı sunucuları.
+[Açık Veritabanı Bağlantısı (ODBC)](odbc/open-database-connectivity-odbc.md)<br/>
+Microsoft Foundation sınıfları (MFC) kitaplığı programlama açık veritabanı bağlantısı (ODBC) için sınıflar sağlar.
+
+[OLE DB Programlama](oledb/ole-db-programming.md)<br/>
+Özellikle bağlı sunuculara karşı programlama yaparken yine de bazı senaryolarda gereken bir çoğunlukla eski arabirimi.
 
 ## <a name="related-topics"></a>İlgili Konular
-[C ve C++ kullanarak SQL veritabanına bağlan](/azure/sql-database/sql-database-develop-cplusplus-simple) C veya C++ uygulamaları Azure SQL veritabanına bağlanın.
 
-[C++ için Microsoft Azure Storage istemci Kitaplığı](https://github.com/Azure/azure-storage-cpp)
-[Azure Storage](/azure/storage/storage-introduction) bulut depolama çözümüdür dayanıklılık, kullanılabilirlik ve ölçeklenebilirlik gereksinimlerini karşılamak üzere kullanan modern uygulamalar için kendi Müşteriler. C++ için Azure Storage istemci kitaplığı kullanılarak C++ içinden Azure depolama birimine bağlayın.
+[C ve C++ kullanarak SQL veritabanına bağlanma](/azure/sql-database/sql-database-develop-cplusplus-simple)<br/>
+C veya C++ uygulamalarından Azure SQL veritabanı'na bağlanın.
 
-[ODBC sürücüsü 13,1 SQL Server - Windows yayımlanan](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server) C/C++ tabanlı uygulamaları için son ODBC sürücüsü Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için sağlam veri erişimi sağlar. Özellikleri dahil olmak üzere her zaman şifreli desteği, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. MacOS ve Linux için de kullanılabilir.     
+[C++ için Microsoft Azure depolama istemci kitaplığı](https://github.com/Azure/azure-storage-cpp)<br/>
+[Azure depolama](/azure/storage/storage-introduction) dayanıklılık, kullanılabilirlik ve ölçeklenebilirlik müşterilerinin ihtiyaçlarını karşılamak üzere dayanan modern uygulamalar için bulut depolama çözümüdür. Azure depolama için C++'tan C++ için Azure depolama istemci kitaplığı kullanarak bağlanın.
+
+[Yayımlanan ODBC sürücüsü 13.1 SQL Server - Windows](https://blogs.msdn.microsoft.com/sqlnativeclient/2016/08/01/announcing-the-odbc-driver-13-1-for-sql-server)<br/>
+En son ODBC sürücüsü, C/C++ tabanlı uygulamalar için Microsoft SQL Server 2016 Microsoft Azure SQL veritabanı için güçlü veri erişim sağlar. Her zaman şifreli gibi özellikleri için destek, Azure Active Directory ve AlwaysOn Kullanılabilirlik grupları sağlar. Ayrıca, MacOS ve Linux için de kullanılabilir.     
  
-[SQL Server Native Client](/sql/relational-databases/native-client/sql-server-native-client-programming) SQL Server Native Client olan OLE DB ve SQL Server 2005'te SQL Server 2014 aracılığıyla destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API). Yeni uygulamalar için SQL Server ODBC sürücüsü 13,1 kullanmalıdır.
+[SQL Server yerel istemcisi](/sql/relational-databases/native-client/sql-server-native-client-programming)<br/>
+OLE DB hem de SQL Server 2005, SQL Server 2014'e destekleyen ODBC için kullanılan tek başına veri erişim uygulama programlama arabirimi (API), SQL Server Native Client ' dir. Yeni uygulamalar için SQL Server ODBC sürücüsü 13.1 kullanmanız gerekir.
 
-[Microsoft Azure C ve C++ Geliştirme Merkezi](https://azure.microsoft.com/develop/cpp/) Azure artan esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçlarını kullanarak C++ uygulamalar oluşturmanızı kolaylaştırır.    
+[Microsoft Azure C ve C++ Geliştirici Merkezi](https://azure.microsoft.com/develop/cpp/)<br/>
+Azure ile daha fazla esneklik, ölçeklenebilirlik ve güvenilirlik sevdiğiniz araçları kullanarak C++ uygulamaları oluşturmayı kolaylaştırır.    
 
-[C++ içinden BLOB Storage kullanma](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs) Azure Blob storage, bulutta nesne/BLOB olarak yapılandırılmamış veri depolayan bir hizmetidir. BLOB Depolama metin veya ikili veriler, belge, ortam dosyası veya uygulama Yükleyici gibi herhangi bir türde depolayabilirsiniz. BLOB storage ayrıca nesne depolama olarak adlandırılır.
+[BLOB depolama alanından C++ kullanma](https://docs.microsoft.com/azure/storage/storage-c-plus-plus-how-to-use-blobs)<br/>
+Azure Blob Depolama, yapılandırılmamış verileri nesne/BLOB olarak bulutta depolayan bir hizmettir. BLOB Depolama, herhangi bir türde metin veya belge, medya dosyası veya uygulama Yükleyici gibi ikili veri depolayabilir. BLOB storage ayrıca nesne depolama olarak adlandırılır.
 
-[ ODBC Programcının Başvurusu](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference) ODBC arabirimi C programlama dili ile kullanılmak üzere tasarlanmıştır. ODBC arabirimi kullanımını yayılan üç alanları: SQL deyimlerini, ODBC işlev çağrılarını ve C programlama.
+[ ODBC Programcının Başvurusu](https://docs.microsoft.com/sql/odbc/reference/odbc-programmer-s-reference)<br/>
+ODBC arabirimi C programlama dilini ile kullanılmak üzere tasarlanmıştır. ODBC arabirimi kullanımını yayılmış üç alandan: SQL deyimleri, ODBC işlev çağrıları ve C programlama.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
+
 [Visual C++](../visual-cpp-in-visual-studio.md)

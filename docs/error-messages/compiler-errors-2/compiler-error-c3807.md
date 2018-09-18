@@ -16,28 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c4171b13d7605d296ac8ac6d1f06125d0fadd226
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7531d5e758828a83bc94ed88b137033182bbfea6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272324"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041122"
 ---
 # <a name="compiler-error-c3807"></a>Derleyici Hatası C3807
-'type': 'type2' bir sınıf ComImport özniteliğine sahip türetilemez, yalnızca arabirim uygulamasına izin verilir  
-  
- Türetilen bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> yalnızca bir arabirimi uygulayabilirsiniz.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3807 oluşturur.  
-  
-```  
-// C3807.cpp  
-// compile with: /clr /c  
-ref struct S {};  
-interface struct I {};  
-  
-[System::Runtime::InteropServices::ComImportAttribute()]  
-ref struct S1 : S {};   // C3807  
-ref struct S2 : I {};  
+
+'type': ComImport özniteliğine sahip sınıf 'type2' türetilemez; yalnızca arabirim uygulamaya izin verilir
+
+Tan türetilmiş bir tür <xref:System.Runtime.InteropServices.ComImportAttribute> yalnızca bir arabirim uygulayabilir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3807 oluşturur.
+
+```
+// C3807.cpp
+// compile with: /clr /c
+ref struct S {};
+interface struct I {};
+
+[System::Runtime::InteropServices::ComImportAttribute()]
+ref struct S1 : S {};   // C3807
+ref struct S2 : I {};
 ```

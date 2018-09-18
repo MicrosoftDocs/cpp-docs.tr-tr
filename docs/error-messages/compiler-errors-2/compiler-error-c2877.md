@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96ab91d64806e7d4ca28bf43e812640790b78e87
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2f293cefdc37c4adb2882f52d6676dcd912cfef
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245018"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047544"
 ---
 # <a name="compiler-error-c2877"></a>Derleyici Hatası C2877
-'simgesi' 'sınıfından' erişilebilir değil  
-  
- Bir taban sınıftan türetilen tüm üyeleri türetilen sınıfta erişilebilir olması gerekir.  
-  
- Aşağıdaki örnek C2877 oluşturur:  
-  
-```  
-// C2877.cpp  
-// compile with: /c  
-class A {  
-private:  
-   int a;  
-};  
-  
-class B : public A {  
-   using A::a;   // C2877  
-};  
+
+'symbol', 'sınıfı' erişilebilir değil.
+
+Bir temel sınıftan türetilmiş tüm üyeler türetilen sınıfta erişilebilir olmalıdır.
+
+Aşağıdaki örnek, C2877 oluşturur:
+
+```
+// C2877.cpp
+// compile with: /c
+class A {
+private:
+   int a;
+};
+
+class B : public A {
+   using A::a;   // C2877
+};
 ```

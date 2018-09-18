@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2ea21e5344b9eb20cc4dfd10103f4535f666c437
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2962303eeb32f6aae33c08fc7e9be31af03f880
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230143"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035688"
 ---
 # <a name="compiler-error-c2709"></a>Derleyici Hatası C2709
-'tanımlayıcısı': bayt resmi parametre uzunluğu önceki bildiriminden farklıdır  
-  
- Belirtilen işlev çağrısı imzada prototip farklıdır.
+
+'identifier': biçimsel parametrenin bayt uzunluğu önceki bildirimden farklı
+
+Belirtilen işlev çağrısında imza prototip farklıdır.

@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 443a10936ebb08a5d9243b534bd93bb6a2753871
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b4b605cdf090dea66507696f8ac7e9a00dce11c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049779"
 ---
 # <a name="compiler-error-c3013"></a>Derleyici Hatası C3013
-'yan tümcesi': yan tümcesi yalnızca görünebilir kez OpenMP 'yönergesi' yönergesi  
-  
- Bir yan tümcesi aynı yönergesi üzerinde iki kez görüldü. Yan tümcesinin bir oluşumu silin.  
-  
- Aşağıdaki örnek C3013 oluşturur:  
-  
-```  
-// C3013.cpp  
-// compile with: /openmp  
-int main() {  
-   int a, b, c, x, y, z;  
-  
-   #pragma omp parallel shared(a,b,c) private(x)  
-  
-   #pragma omp for nowait private(x) nowait   // C3013  
-   // The previous line generates C3013, with two nowait clauses  
-   // try the following line instead:  
-   // #pragma omp for nowait private(x)  
-   for (a = 0 ; a < 10 ; ++a) {  
-   }  
-}  
+
+'yan tümcesi': yan tümcesi yalnızca görüntülenebilir kez OpenMP 'yönergesi' yönergesinde
+
+Bir yan tümcesi aynı yönergesinde iki kez görüldü. Yan tümcesi bir örneğini silin.
+
+Aşağıdaki örnek, C3013 oluşturur:
+
+```
+// C3013.cpp
+// compile with: /openmp
+int main() {
+   int a, b, c, x, y, z;
+
+   #pragma omp parallel shared(a,b,c) private(x)
+
+   #pragma omp for nowait private(x) nowait   // C3013
+   // The previous line generates C3013, with two nowait clauses
+   // try the following line instead:
+   // #pragma omp for nowait private(x)
+   for (a = 0 ; a < 10 ; ++a) {
+   }
+}
 ```

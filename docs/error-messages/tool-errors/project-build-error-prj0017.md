@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 769c7b2d6c20fdc6daba6f1df2f576987c146641
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28348626417f6b4c961be4486f6d7573a0a67780
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320901"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076066"
 ---
 # <a name="project-build-error-prj0017"></a>Proje Derleme Hatası PRJ0017
-Geçerli çalışma dizini geçersiz.  
-  
- Geçerli çalışma dizini yolu _MAXPATH uzun. Bu hatayı çözmek için projeniz en derin düzeyinde oluşturmayın.
+
+Geçerli çalışma dizini geçersiz.
+
+Geçerli çalışma dizini yolu _MAXPATH uzun. Bu hatayı çözmek için projeniz en derin düzeyinde oluşturmayın.

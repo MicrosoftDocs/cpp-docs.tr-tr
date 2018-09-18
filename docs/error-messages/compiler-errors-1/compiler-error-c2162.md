@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cc7cfebd4563e4d41f6ca50e2cdec667e82fb5f5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48d59ed5f0bf85befac0f8c462620a23faa08f98
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167976"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054005"
 ---
 # <a name="compiler-error-c2162"></a>Derleyici Hatası C2162
-Beklenen makrosu biçimsel parametresi  
-  
- Stringizing işleci (#) izleyen belirteci biçimsel parametresi adı değil.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2162 oluşturur:  
-  
-```  
-// C2162.cpp  
-// compile with: /c  
-#include <stdio.h>  
-  
-#define print(a) printf_s(b)   // OK  
-#define print(a) printf_s(#b)    // C2162  
+
+Makro biçimsel parametresi bekleniyordu
+
+Bir dize haline getirme işleci (#) aşağıdaki belirteç biçimsel parametre adı değil.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2162 oluşturur:
+
+```
+// C2162.cpp
+// compile with: /c
+#include <stdio.h>
+
+#define print(a) printf_s(b)   // OK
+#define print(a) printf_s(#b)    // C2162
 ```

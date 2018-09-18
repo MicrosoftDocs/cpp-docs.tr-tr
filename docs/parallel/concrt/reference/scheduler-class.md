@@ -31,15 +31,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97abec33d5fa4b372bc26874fd37397a2b78bb29
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 26507b6fc9f83425cf283d9d8a6739fe12569428
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33693685"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066108"
 ---
 # <a name="scheduler-class"></a>Zamanlayıcı Sınıfı
-Bir Özet bir eşzamanlılık çalışma zamanı Zamanlayıcısı temsil eder.  
+Bir Özet için eşzamanlılık çalışma zamanı Zamanlayıcı temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -53,31 +53,31 @@ class Scheduler;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Zamanlayıcı](#ctor)|Bir nesnenin `Scheduler` sınıfı için Fabrika yöntemleri kullanılarak oluşturulan yalnızca ya da örtük olarak.|  
-|[~ Scheduler yok Edicisi](#dtor)|Bir nesnenin `Scheduler` sınıfı tüm dış başvuruları mevcut çalışmayı zaman örtük olarak yok.|  
+|[Zamanlayıcı](#ctor)|Bir nesnenin `Scheduler` yalnızca Fabrika yöntemleri kullanılarak oluşturulan sınıfı olabilir ya da örtük olarak.|  
+|[~ Scheduler yok Edicisi](#dtor)|Bir nesnenin `Scheduler` sınıfı mevcut tüm dış başvuruları sona zaman örtük olarak yok.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Attach](#attach)|Zamanlayıcı çağıran bağlamını ekler. Bu yöntem döndükten sonra çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.|  
-|[Oluşturma](#create)|Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametresi, ilk başvuru zamanlayıcıda yerleştirir ve devre dışı bir işaretçi döndürür.|  
-|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.|  
-|[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Sanal işlemcilerin sayısı için Zamanlayıcı'yı döndürür.|  
-|[GetPolicy](#getpolicy)|Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.|  
+|[Attach](#attach)|Zamanlayıcı için çağıran bağlamını ekler. Bu yöntemin dönüşünün ardından çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.|  
+|[Oluşturma](#create)|Davranışı, tarafından açıklanmıştır yeni bir zamanlayıcı oluşturur `_Policy` parametresi, bir ilk başvuru zamanlayıcıda yerleştirir ve bir işaretçi döndürür.|  
+|[CreateScheduleGroup](#createschedulegroup)|Fazla Yüklendi. Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametre sürüm `_Placement` görevleri bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle için yeni oluşturulan aynı zamanlama grubundaki neden olur.|  
+|[GetNumberOfVirtualProcessors](#getnumberofvirtualprocessors)|Geçerli sanal işlemci sayısı için Zamanlayıcıyı döndürür.|  
+|[GetPolicy](#getpolicy)|Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.|  
 |[Kimliği](#id)|Zamanlayıcı için benzersiz bir tanımlayıcı döndürür.|  
-|[Isavailablelocation](#isavailablelocation)|Verilen bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
-|[Başvuru](#reference)|Zamanlayıcı başvurusu sayısını artırır.|  
-|[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenler `_Event` Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.|  
-|[Sürüm](#release)|Azaltır Zamanlayıcı başvuru sayısı.|  
-|[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|Varsayılan Zamanlayıcı ilke çalışma zamanı varsayılan olarak sıfırlar. Bir varsayılan Zamanlayıcısı'nı bir sonraki oluşturulduğunda, çalışma zamanı varsayılan ilke ayarlarını kullanır.|  
-|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Hafif Görev Zamanlayıcı içinde zamanlar. Hafif görev çalışma zamanı tarafından belirlenen bir zamanlama grubunda yer alır. Parametresi alan sürüm `_Placement` görev belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.|  
-|[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|Varsayılan Zamanlayıcı oluşturmak için kullanılacak bir kullanıcı tanımlı ilke sağlar. Bu yöntem yalnızca varsayılan Zamanlayıcı işlemi içinde mevcut olduğunda çağrılabilir. Varsayılan bir ilke ayarladıktan sonra etkin ya da sonraki geçerli çağrısı kadar kalır `SetDefaultSchedulerPolicy` veya [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) yöntemi.|  
+|[Isavailablelocation](#isavailablelocation)|Belirli bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.|  
+|[Başvuru](#reference)|Zamanlayıcı başvuru sayısını artırır.|  
+|[RegisterShutdownEvent](#registershutdownevent)|Windows olay işleyici geçirilen nedenleri `_Event` Zamanlayıcı kapanır ve kendisini yok eder, sinyal parametresi. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.|  
+|[Sürüm](#release)|Zamanlayıcı başvuru sayısını azaltır.|  
+|[ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy)|Varsayılan Zamanlayıcı ilkesini çalışma zamanı varsayılan ayarlarına sıfırlar. Varsayılan Zamanlayıcı oluşturulur, sonraki açışınızda, çalışma zamanı varsayılan ilke ayarlarını kullanın.|  
+|[ScheduleTask](#scheduletask)|Fazla Yüklendi. Zamanlayıcı hafif bir görevi zamanlar. Çalışma zamanı tarafından belirlenen bir zamanlama grubundaki hafif görev yerleştirilir. Parametre sürüm `_Placement` görevi belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.|  
+|[SetDefaultSchedulerPolicy](#setdefaultschedulerpolicy)|Varsayılan Zamanlayıcı oluşturmak için kullanılacak bir kullanıcı tanımlı ilke sağlar. Bu yöntem, hiçbir varsayılan Zamanlayıcı işlemde yalnızca mevcut olduğunda çağrılabilir. Varsayılan ilke olarak ayarlandıktan sonra yürürlükte ya da sonraki geçerli çağrı kadar kalır `SetDefaultSchedulerPolicy` veya [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) yöntemi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- İş yürütmek için kendisine uygulamanız tarafından sıraya alınan, işletim sistemi yürütme bağlamı, bir iş parçacığı gibi Eşle yürütme bağlamı eşzamanlılık çalışma zamanı Zamanlayıcısı'nı kullanır. Herhangi bir zamanda bir zamanlayıcı eşzamanlılık düzeyi için kaynak yöneticisi tarafından verilen sanal işlemci sayısına eşittir. Bir sanal işlemcinin bir işlem kaynağı ve temeldeki sistemi donanım parçacığında eşlenir bir soyutlamadır. Yalnızca tek Zamanlayıcı bağlamında bir sanal işlemcinin üzerinde belirli bir zamanda çalıştırabilirsiniz.  
+ Eşzamanlılık Çalışma zamanı Zamanlayıcısı'nı kullanan bir iş parçacığı gibi işletim sistemi yürütme bağlamları eşleyen yürütme bağlamları, işi yürütmek için kendisine uygulamanız tarafından sıraya alınan. Herhangi bir zamanda bir Zamanlayıcının eşzamanlılık düzeyi kaynak yöneticisi tarafından kendisine verilen sanal işlemci sayısına eşittir. Bir sanal işlemci için bir işlem kaynağı ve Haritalar ve alttaki sistemde bir donanım iş parçacığına bir soyutlamadır. Yalnızca tek bir zamanlayıcı bağlamı bir sanal işlemci üzerinde belirli bir zamanda çalıştırabilirsiniz.  
   
- Eşzamanlılık Çalışma Zamanı paralel iş yürütmek için varsayılan Zamanlayıcı işlem başına oluşturur. Ayrıca kendi Zamanlayıcı örnekleri oluşturmak ve bu sınıfı kullanarak düzenleyebilirsiniz.  
+ Eşzamanlılık Çalışma zamanı, paralel iş yürütmek için varsayılan Zamanlayıcı işlem başına oluşturacaksınız. Buna ek olarak kendi Zamanlayıcı örnekleri oluşturmak ve bu sınıfı kullanarak işleme.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `Scheduler`  
@@ -89,46 +89,46 @@ class Scheduler;
   
 ##  <a name="attach"></a> Ekleme 
 
- Zamanlayıcı çağıran bağlamını ekler. Bu yöntem döndükten sonra çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.  
+ Zamanlayıcı için çağıran bağlamını ekler. Bu yöntemin dönüşünün ardından çağıran bağlamını Zamanlayıcı tarafından yönetilir ve geçerli Zamanlayıcı Zamanlayıcı olur.  
   
 ```
 virtual void Attach() = 0;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir zamanlayıcı örtük olarak ekleyerek bir başvuru zamanlayıcıda yerleştirir.  
+ Örtük olarak bir zamanlayıcı ekleme başvuru zamanlayıcıda yerleştirir.  
   
- Belirli bir noktada gelecekte çağırmalısınız [CurrentScheduler::Detach](currentscheduler-class.md#detach) Zamanlayıcısı'nı kapatmak izin vermek üzere yöntemi.  
+ Belirli bir noktada, gelecekte çağırmalıdır [CurrentScheduler::Detach](currentscheduler-class.md#detach) Zamanlayıcısı'nı kapatmak izin vermek için yöntemi.  
   
- Bu yöntem için farklı bir zamanlayıcı zaten eklenmiş bir bağlamından çağrılırsa, varolan Zamanlayıcı önceki Zamanlayıcı hatırlanan ve yeni oluşturulan Zamanlayıcı geçerli Zamanlayıcı olur. Çağırdığınızda `CurrentScheduler::Detach` önceki Zamanlayıcı sonraki bir zamanda yöntemi geçerli Zamanlayıcı geri.  
+ Bu yöntem için farklı bir zamanlayıcı zaten eklenmiş bir bağlamdan çağrılırsa, var olan bir zamanlayıcı önceki Zamanlayıcı hatırlanır ve yeni oluşturulan Zamanlayıcı geçerli Zamanlayıcı olur. Çağırdığınızda `CurrentScheduler::Detach` önceki Zamanlayıcı daha sonraki bir noktada yöntemi geçerli Zamanlayıcı geri yüklenir.  
   
- Bu yöntemi özel durum oluşturacak bir [improper_scheduler_attach](improper-scheduler-attach-class.md) Bu zamanlayıcı çağıran bağlamını geçerli Zamanlayıcı ise özel durum.  
+ Bu yöntemi bir [improper_scheduler_attach](improper-scheduler-attach-class.md) Bu zamanlayıcı çağrı bağlamının geçerli Zamanlayıcı ise özel durum.  
   
 ##  <a name="create"></a> Oluşturma 
 
- Tarafından davranışı açıklanan yeni bir zamanlayıcı oluşturur `_Policy` parametresi, ilk başvuru zamanlayıcıda yerleştirir ve devre dışı bir işaretçi döndürür.  
+ Davranışı, tarafından açıklanmıştır yeni bir zamanlayıcı oluşturur `_Policy` parametresi, bir ilk başvuru zamanlayıcıda yerleştirir ve bir işaretçi döndürür.  
   
 ```
 static Scheduler* __cdecl Create(const SchedulerPolicy& _Policy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Policy`  
- Yeni oluşturulan Zamanlayıcı davranışını tanımlayan Zamanlayıcı ilke.  
+*_İlkesi*<br/>
+Zamanlayıcı ilke yeni oluşturulan Zamanlayıcı davranışını tanımlar.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan bir zamanlayıcı için bir işaretçi. Bu `Scheduler` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısı sahiptir.  
+ Yeni oluşturulan bir zamanlayıcı işaretçisi. Bu `Scheduler` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısını sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir Zamanlayıcı ile oluşturulduktan sonra `Create` yöntemi, çağırmalıdır `Release` gelecekte ilk başvuru sayısı kaldırıp Zamanlayıcısı'nı kapatmak izin vermek için belirli bir noktada yöntemi.  
+ Bir Zamanlayıcı ile oluşturulduktan sonra `Create` yöntemini çağırmalıdır `Release` gelecekte ilk başvuru sayısını kaldırmak ve kapatmak Zamanlayıcı izin vermek için belirli bir noktada yöntemi.  
   
- Bu yöntem ile oluşturulan bir zamanlayıcı arama bağlamına bağlı değil. Kullanarak bir bağlam eklenebilecek [Attach](#attach) yöntemi.  
+ Bu yöntem ile oluşturulmuş bir zamanlayıcı çağrı bağlamına bağlı değil. Kullanarak bir bağlam eklenebilecek [iliştirme](#attach) yöntemi.  
   
- Bu yöntemi özel durumlar dahil olmak üzere, çeşitli atabilirsiniz [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) ve [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
+ Bu yöntem, özel durumlar dahil olmak üzere, çeşitli oluşturabilecek [scheduler_resource_allocation_error](scheduler-resource-allocation-error-class.md) ve [invalid_scheduler_policy_value](invalid-scheduler-policy-value-class.md).  
   
 ##  <a name="createschedulegroup"></a> CreateScheduleGroup 
 
- Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametresi alan sürüm `_Placement` görevleri bu parametresi tarafından belirtilen konumda yürütme doğrultusunda ağırlıklı için yeni oluşturulan zamanlama grubundaki neden olur.  
+ Zamanlayıcı içinde yeni bir zamanlama grubu oluşturur. Parametre sürüm `_Placement` görevleri bu parametre tarafından belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle için yeni oluşturulan aynı zamanlama grubundaki neden olur.  
   
 ```
 virtual ScheduleGroup* CreateScheduleGroup() = 0;
@@ -137,38 +137,38 @@ virtual ScheduleGroup* CreateScheduleGroup(location& _Placement) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Placement`  
- Zamanlama grup içindeki görevleri burada ağırlıklı adresindeki yürütme doğru bir konuma başvuru.  
+*Y_erleştirme*<br/>
+Burada aynı zamanlama grubundaki görevlerin ağırlıklı sırasında yürütülen doğrultusunda bir konuma başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni oluşturulan zamanlama grup için bir işaretçi. Bu `ScheduleGroup` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısı sahiptir.  
+ Yeni oluşturulan zamanlama grubu için bir işaretçi. Bu `ScheduleGroup` nesnesi üzerinde yerleştirilen bir ilk başvuru sayısını sahiptir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırmanız gerekir [sürüm](schedulegroup-class.md#release) zamanlama işi bittiğinde zamanlama grubunda yöntemi. Zamanlayıcı zamanlama silecektir tüm iş kuyruğa sırasında grubu tamamlandı.  
+ Çağırmanız gerekir [yayın](schedulegroup-class.md#release) zamanlama iş tamamlandığında bir zamanlama grubu yöntemi. Zamanlayıcı zamanlamasını yok etmek için tüm işi kuyruğa atılmış grubu tamamlandı.  
   
- Bu zamanlayıcı açıkça oluşturduysanız, Zamanlayıcı, başvurular bırakmadan önce içinde gruplar zamanlamak için tüm başvurularını serbest bırakmalısınız unutmayın.  
+ Bu zamanlayıcı açıkça oluşturduysanız, Zamanlayıcı üzerinde başvurularınızı yayımlamadan önce içinde gruplar zamanlamak için tüm başvurularını serbest bırakmalısınız unutmayın.  
   
 ##  <a name="getnumberofvirtualprocessors"></a> GetNumberOfVirtualProcessors 
 
- Sanal işlemcilerin sayısı için Zamanlayıcı'yı döndürür.  
+ Geçerli sanal işlemci sayısı için Zamanlayıcıyı döndürür.  
   
 ```
 virtual unsigned int GetNumberOfVirtualProcessors() const = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Sanal işlemciler Zamanlayıcı için geçerli sayısı.  
+ Zamanlayıcı için sanal işlemci sayısı.  
   
-##  <a name="getpolicy"></a> GetPolicy 
+##  <a name="getpolicy"></a> İlke alma 
 
- Zamanlayıcı ile oluşturulduğundan İlkesi kopyasını döndürür.  
+ Zamanlayıcı ile oluşturulan ilkeyi bir kopyasını döndürür.  
   
 ```
 virtual SchedulerPolicy GetPolicy() const = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Zamanlayıcı ile oluşturulduğundan İlkesi kopyası.  
+ Zamanlayıcı ile oluşturulan ilkeyi bir kopyası.  
   
 ##  <a name="id"></a> Kimliği 
 
@@ -183,53 +183,53 @@ virtual unsigned int Id() const = 0;
   
 ##  <a name="isavailablelocation"></a> Isavailablelocation 
 
- Verilen bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.  
+ Belirli bir konuma Zamanlayıcı üzerinde kullanılabilir olup olmadığını belirler.  
   
 ```
 virtual bool IsAvailableLocation(const location& _Placement) const = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Placement`  
- Konumun hakkında Zamanlayıcı sorgulamak için bir başvuru.  
+*Y_erleştirme*<br/>
+Zamanlayıcı hakkında sorgulamak için konumuna yönelik bir başvuru.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Konumun belirttiği olup olmadığına ilişkin bir gösterge `_Placement` bağımsız değişkeni Zamanlayıcı üzerinde kullanılabilir.  
+ Bir gösterge olup olmadığına göre konumu belirtilen `_Placement` bağımsız değişken Zamanlayıcı üzerinde kullanılabilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Dönüş değeri bir anlık örnekleme belirtilen konum kullanılabilir olup olmadığını unutmayın. Birden çok zamanlayıcılar varlığında dinamik kaynak yönetimi ekleyebilir veya kaynakları herhangi bir noktada zamanlayıcılar gelen çıkardığınız. Bu olacağını, belirtilen konum kullanılabilirlik değiştirebilirsiniz.  
+ Dönüş değeri, belirtilen konuma olup anlık bir örnekleme olduğuna dikkat edin. Birden çok zamanlayıcılar saklanacaktır dinamik kaynak yönetimi ekleyebilir veya herhangi bir noktada zamanlayıcılar gelen kaynakları çıkardığınız. Bu olacağını, belirtilen konuma kullanılabilirlik değiştirebilirsiniz.  
   
 ##  <a name="reference"></a> Başvuru 
 
- Zamanlayıcı başvurusu sayısını artırır.  
+ Zamanlayıcı başvuru sayısını artırır.  
   
 ```
 virtual unsigned int Reference() = 0 ;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni artırılır başvuru sayısı.  
+ Yeni artan başvuru sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu, genellikle Zamanlayıcı oluşturma için kullanım ömrünü yönetmek için kullanılır. Ne zaman sıfıra Zamanlayıcı düştüğünde başvuru sayısı, Zamanlayıcı kapanacak ve destruct kendisini zamanlayıcıda tüm iş tamamlandı.  
+ Bu, genellikle birleştirme için Zamanlayıcı ömrünü yönetmek için kullanılır. Ne zaman başvuru sayısı sıfıra Zamanlayıcı düştüğünde, Zamanlayıcı kapanır ve tüm iş Zamanlayıcısı destruct kendisini tamamlandı.  
   
- Yöntemi özel durum oluşturacak bir [improper_scheduler_reference](improper-scheduler-reference-class.md) önce arama başvuru sayısı, özel durum `Reference` yöntemi sıfır ve Zamanlayıcı tarafından sahiplenilmedi bağlamından çağrı yapılır.  
+ Yöntemi bir [improper_scheduler_reference](improper-scheduler-reference-class.md) çağırmadan önce başvuru sayısını özel durum `Reference` yöntemi sıfır ve Zamanlayıcı tarafından ait değil bir bağlamdan çağrı yapılır.  
   
 ##  <a name="registershutdownevent"></a> RegisterShutdownEvent 
 
- Windows olay işleyici geçirilen nedenler `_Event` Zamanlayıcı kapanır ve kendisini bozar bildirilmesini parametresi. Olay işaret zamanında Zamanlayıcı için zamanlanan tüm iş tamamlanır. Birden fazla kapatma olayları bu yöntemle kaydedilebilir.  
+ Windows olay işleyici geçirilen nedenleri `_Event` Zamanlayıcı kapanır ve kendisini yok eder, sinyal parametresi. Olay sinyalini zaman, Zamanlayıcı için zamanlanan tüm iş tamamlanmıştır. Birden fazla kapatma olayları, bu yöntem kullanılarak kaydedilebilir.  
   
 ```
 virtual void RegisterShutdownEvent(HANDLE _Event) = 0;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Event`  
- Zamanlayıcı kapanır ve kendisini bozar bağlandığınızda çalışma zamanı tarafından işaret Windows olay nesnesi için bir tanıtıcı.  
+*_Olay*<br/>
+Zamanlayıcı kapanır ve kendisini yok eder bağlandığınızda çalışma zamanı tarafından sinyal Windows olay nesnesi için bir tanıtıcı.  
   
-##  <a name="release"></a> Sürüm 
+##  <a name="release"></a> Yayın 
 
- Azaltır Zamanlayıcı başvuru sayısı.  
+ Zamanlayıcı başvuru sayısını azaltır.  
   
 ```
 virtual unsigned int Release() = 0;
@@ -239,35 +239,35 @@ virtual unsigned int Release() = 0;
  Yeni indirildiği başvuru sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu, genellikle Zamanlayıcı oluşturma için kullanım ömrünü yönetmek için kullanılır. Ne zaman sıfıra Zamanlayıcı düştüğünde başvuru sayısı, Zamanlayıcı kapanacak ve destruct kendisini zamanlayıcıda tüm iş tamamlandı.  
+ Bu, genellikle birleştirme için Zamanlayıcı ömrünü yönetmek için kullanılır. Ne zaman başvuru sayısı sıfıra Zamanlayıcı düştüğünde, Zamanlayıcı kapanır ve tüm iş Zamanlayıcısı destruct kendisini tamamlandı.  
   
 ##  <a name="resetdefaultschedulerpolicy"></a> ResetDefaultSchedulerPolicy 
 
- Varsayılan Zamanlayıcı ilke çalışma zamanı varsayılan olarak sıfırlar. Bir varsayılan Zamanlayıcısı'nı bir sonraki oluşturulduğunda, çalışma zamanı varsayılan ilke ayarlarını kullanır.  
+ Varsayılan Zamanlayıcı ilkesini çalışma zamanı varsayılan ayarlarına sıfırlar. Varsayılan Zamanlayıcı oluşturulur, sonraki açışınızda, çalışma zamanı varsayılan ilke ayarlarını kullanın.  
   
 ```
 static void __cdecl ResetDefaultSchedulerPolicy();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir varsayılan Zamanlayıcı işlemi içinde varken bu yöntem çağrılamaz. Var olan varsayılan Zamanlayıcı İlkesi etkilemez. Ancak, varsayılan Zamanlayıcı kapatma sırasında ve yeni bir varsayılan bundan sonraki bir noktada oluşturulacak yeni Zamanlayıcı çalışma zamanı varsayılan ilke ayarları kullanırsınız.  
+ Varsayılan Zamanlayıcı işlem içinde bulunduğu sürece bu yöntem çağrılabilir. Var olan varsayılan Zamanlayıcı ilkesini etkilemez. Ancak, varsayılan Zamanlayıcı gibi kapatmaya ve yeni bir varsayılan bundan sonraki bir noktada oluşturulması, yeni Zamanlayıcı çalışma zamanı varsayılan ilkesi ayarlarını kullanmanız gerekir.  
   
 ##  <a name="ctor"></a> Zamanlayıcı 
 
- Bir nesnenin `Scheduler` sınıfı için Fabrika yöntemleri kullanılarak oluşturulan yalnızca ya da örtük olarak.  
+ Bir nesnenin `Scheduler` yalnızca Fabrika yöntemleri kullanılarak oluşturulan sınıfı olabilir ya da örtük olarak.  
   
 ```
 Scheduler();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağıran bağlamını eklenmesi için bir zamanlayıcı gerektiren çalışma zamanı işlevleri çoğunu kullanmasına, işlem varsayılan Zamanlayıcı örtük olarak oluşturulur. İçinde yöntemlerini `CurrentScheduler` sınıfı ve özellikleri PPL ve aracıları katmanların genellikle örtük eki gerçekleştirirsiniz.  
+ İşlemin varsayılan Zamanlayıcı bir zamanlayıcı çağrı bağlamına bağlı olması gereken çalışma zamanı işlevlerin çoğunu yazılımınız örtük olarak oluşturulur. Yöntemlerinde `CurrentScheduler` sınıfı ve PPL ve aracıları katmanların özellikler genellikle örtük ek gerçekleştirir.  
   
- Bir zamanlayıcı açıkça ya da aracılığıyla oluşturabilirsiniz `CurrentScheduler::Create` yöntemi veya `Scheduler::Create` yöntemi.  
+ Bir zamanlayıcı açıkça ya da aracılığıyla da oluşturabilirsiniz `CurrentScheduler::Create` yöntemi veya `Scheduler::Create` yöntemi.  
   
-##  <a name="dtor"></a> ~ Zamanlayıcı 
+##  <a name="dtor"></a> ~ Scheduler 
 
- Bir nesnenin `Scheduler` sınıfı tüm dış başvuruları mevcut çalışmayı zaman örtük olarak yok.  
+ Bir nesnenin `Scheduler` sınıfı mevcut tüm dış başvuruları sona zaman örtük olarak yok.  
   
 ```
 virtual ~Scheduler();
@@ -275,7 +275,7 @@ virtual ~Scheduler();
   
 ##  <a name="scheduletask"></a> ScheduleTask 
 
- Hafif Görev Zamanlayıcı içinde zamanlar. Hafif görev çalışma zamanı tarafından belirlenen bir zamanlama grubunda yer alır. Parametresi alan sürüm `_Placement` görev belirtilen konumda yürütme doğrultusunda ağırlıklı neden olur.  
+ Zamanlayıcı hafif bir görevi zamanlar. Çalışma zamanı tarafından belirlenen bir zamanlama grubundaki hafif görev yerleştirilir. Parametre sürüm `_Placement` görevi belirtilen konumda yürütme doğru güçlü eğilimi nedeniyle neden olur.  
   
 ```
 virtual void ScheduleTask(
@@ -289,29 +289,29 @@ virtual void ScheduleTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Proc`  
- İşlev gövdesi hafif görev gerçekleştirmek için bir işaretçi.  
+*_Proc*<br/>
+İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.  
   
- `_Data`  
- Görev gövdesi için parametre olarak geçirilen verileri void işaretçi.  
+*_Veri*<br/>
+Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.  
   
- `_Placement`  
- Burada hafif görev, yürütme doğru ağırlıklı bir konuma başvuru.  
+*Y_erleştirme*<br/>
+Burada basit görev sırasında yürütülen doğru güçlü eğilimi nedeniyle bir konuma başvuru.  
   
 ##  <a name="setdefaultschedulerpolicy"></a> SetDefaultSchedulerPolicy 
 
- Varsayılan Zamanlayıcı oluşturmak için kullanılacak bir kullanıcı tanımlı ilke sağlar. Bu yöntem yalnızca varsayılan Zamanlayıcı işlemi içinde mevcut olduğunda çağrılabilir. Varsayılan bir ilke ayarladıktan sonra etkin ya da sonraki geçerli çağrısı kadar kalır `SetDefaultSchedulerPolicy` veya [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) yöntemi.  
+ Varsayılan Zamanlayıcı oluşturmak için kullanılacak bir kullanıcı tanımlı ilke sağlar. Bu yöntem, hiçbir varsayılan Zamanlayıcı işlemde yalnızca mevcut olduğunda çağrılabilir. Varsayılan ilke olarak ayarlandıktan sonra yürürlükte ya da sonraki geçerli çağrı kadar kalır `SetDefaultSchedulerPolicy` veya [ResetDefaultSchedulerPolicy](#resetdefaultschedulerpolicy) yöntemi.  
   
 ```
 static void __cdecl SetDefaultSchedulerPolicy(const SchedulerPolicy& _Policy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Policy`  
- Varsayılan Zamanlayıcı ilke olarak ayarlanması ilkesi.  
+*_İlkesi*<br/>
+Varsayılan Zamanlayıcı ilke olarak ayarlanması için ilke.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Varsa `SetDefaultSchedulerPolicy` yöntemi, bir varsayılan Zamanlayıcı işlemi içinde zaten mevcut olduğunda çağrılır, çalışma zamanı özel durum oluşturacak bir [default_scheduler_exists](default-scheduler-exists-class.md) özel durum.  
+ Varsa `SetDefaultSchedulerPolicy` yöntemi çağrıldığında bir varsayılan Zamanlayıcı işlem içinde zaten mevcut olduğunda, çalışma zamanı bir [default_scheduler_exists](default-scheduler-exists-class.md) özel durum.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

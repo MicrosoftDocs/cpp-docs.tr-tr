@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f6cd71605d08f28def87fa203bdbd5178a5dad9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14c1d2119598bcf48083f8b394a6bd0739bc3c40
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198657"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064951"
 ---
 # <a name="fatal-error-c1074"></a>Önemli hata C1074
-'IDB' olan PDB dosyası için geçersiz uzantı: dosya adı  
-  
- Derleyici program veritabanları .pdb uzantısına sahip olmasını bekler.
+
+'IDB', PDB dosyası için geçersiz bir uzantı: dosya adı
+
+Derleyici program veritabanları .pdb uzantısına sahip olmasını bekliyor.

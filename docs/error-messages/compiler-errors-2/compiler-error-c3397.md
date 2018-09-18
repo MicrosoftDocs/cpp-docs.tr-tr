@@ -16,29 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9a79718726f6d98e486dd286a48f11973c4fe237
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 80db76886b4de529b75fd402a70af7c9fa2a892c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253445"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064080"
 ---
 # <a name="compiler-error-c3397"></a>Derleyici Hatası C3397
-Toplu başlatma varsayılan bağımsız değişkenler izin verilmiyor  
-  
- Bir dizi yanlış bildirildi.  Bkz: [diziler](../../windows/arrays-cpp-component-extensions.md) daha fazla bilgi için.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3397 oluşturur.  
-  
-```  
-// C3397.cpp  
-// compile with: /clr  
-// /clr /c  
-void Func(array<int> ^p = gcnew array<int> { 1, 2, 3 });   // C3397  
-void Func2(array<int> ^p = gcnew array<int> (3));   // OK  
-  
-int main() {  
-   array<int> ^p = gcnew array<int> { 1, 2, 3};   // OK  
-}  
+
+Toplama başlatma varsayılan bağımsız değişkenler izin verilmiyor
+
+Bir dizi yanlış bildirildi.  Bkz: [diziler](../../windows/arrays-cpp-component-extensions.md) daha fazla bilgi için.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3397 oluşturur.
+
+```
+// C3397.cpp
+// compile with: /clr
+// /clr /c
+void Func(array<int> ^p = gcnew array<int> { 1, 2, 3 });   // C3397
+void Func2(array<int> ^p = gcnew array<int> (3));   // OK
+
+int main() {
+   array<int> ^p = gcnew array<int> { 1, 2, 3};   // OK
+}
 ```

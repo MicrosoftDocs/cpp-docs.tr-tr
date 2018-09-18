@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 285994620225f5752ec9a32c510add71593c11f8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9b9ba2a0e7fb984468d0d6e9d75fc10cdbad3c80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33225335"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062533"
 ---
 # <a name="fatal-error-c1079"></a>Önemli hata C1079
-Derleyici sınırı: PCH dosya boyutu sınırı aşıldı  
-  
- PCH dosya 4 GB boyut sınırını aşıyor.
+
+Derleyici sınırı: PCH dosyası boyut sınırı aşıldı
+
+PCH dosyası 4 GB boyut sınırını aşıyor.

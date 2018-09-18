@@ -20,23 +20,18 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c072074c24466458ebd19e1335f49169c5c22bd5
-ms.sourcegitcommit: 3b78ddea5fd3e22b7c5cd2d787ec71a518a52223
+ms.openlocfilehash: 2622702cd19dab3cad2613aa3df28b5cef464853
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "42465446"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076014"
 ---
 # <a name="locale-names-languages-and-countryregion-strings"></a>Yerel Ayar Adları, Diller ve Ülke/Bölge Dizeleri
 
 *Yerel* bağımsız değişkeni `setlocale` ve `_create_locale` işlevleri, yerel ayar adları, diller, ülke/bölge kodları ve Windows NLS API tarafından desteklenen kod sayfaları kullanılarak ayarlanabilir. *Yerel ayar* bağımsız değişkeni aşağıdaki biçimleri alır:
 
-> *yerel ayar* :: "*locale_name*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "*dil*\[\_*ülke / bölge*]\[. *code_page*]] "  
-&nbsp;&nbsp;&nbsp;&nbsp;| ". *code_page*"  
-&nbsp;&nbsp;&nbsp;&nbsp;| "C"  
-&nbsp;&nbsp;&nbsp;&nbsp;| ""  
-&nbsp;&nbsp;&nbsp;&nbsp;| NULL  
+> *yerel ayar* :: "*locale_name*" &nbsp; &nbsp; &nbsp; &nbsp;| "*dil*\[\_*ülke / bölge*]\[. *code_page*]] " &nbsp; &nbsp; &nbsp; &nbsp;| ". *code_page*" &nbsp; &nbsp; &nbsp; &nbsp;| "C" &nbsp; &nbsp; &nbsp; &nbsp;| "" &nbsp;&nbsp;&nbsp;&nbsp;| NULL
 
 Yerel ayar adı biçimi tercih edilir; Örneğin, `en-US` İngilizce (ABD) veya `bs-Cyrl-BA` Boşnakça (Kiril, Bosna-Hersek). Yerel ayar adları kümesi açıklanan [yerel ayar adları](/windows/desktop/Intl/locale-names). Windows işletim sistemi sürümü tarafından desteklenen yerel adlarının listesi için bkz. **dil etiketi** tablodaki sütunun [ek A: Ürün davranışı](https://msdn.microsoft.com/library/cc233982.aspx) [MS-LCID] içinde: Windows dil kodu tanımlayıcı (LCID) Başvuru. Bu kaynak yerel ayar adlarının desteklenen dilini, betiğini ve bölge bölümlerini listeler. Sıralama düzenlerine bkz varsayılan olmayan sahip desteklenen yerel ayar adları hakkında bilgi için **yerel ayar adı** sütununda [sıralama düzeni tanımlayıcıları](/windows/desktop/Intl/sort-order-identifiers). Altındaki Windows 10 veya sonraki sürümleri, geçerli BCP-47 dil etiketlerini karşılık gelen yerel ayar adlarına izin verilir. Örneğin, `jp-US` geçerli bir BCP-47 etikettir ancak yalnızca etkin olduğu `US` yerel ayar işlevselliği için.
 
@@ -50,8 +45,7 @@ A *yerel* bağımsız değişken değerini `C` C çeviri için en az ANSI uyumlu
 
 İçin aynı anda yerel ayar kategorilerinin tümünü belirtebilirsiniz `setlocale` ve `_wsetlocale` işlevleri kullanarak `LC_ALL` kategorisi. Kategorilerin tümü aynı yerel ayara ayarlanabilir veya bu biçime sahip bir yerel bağımsız değişken kullanarak her kategoriyi ayrı ayrı ayarlayabilirsiniz:
 
-> LC_ALL_specifier:: yerel ayar  
-&nbsp;&nbsp;&nbsp;&nbsp;| [LC_COLLATE yerel ayar =] [; LC_CTYPE yerel ayar =] [; LC_MONETARY yerel ayar =] [; Lc_numerıc yerel ayar =] [; Lc_tıme yerel ayar =]
+> LC_ALL_specifier:: yerel &nbsp; &nbsp; &nbsp; &nbsp;| [LC_COLLATE yerel ayar =] [; LC_CTYPE yerel ayar =] [; LC_MONETARY yerel ayar =] [; Lc_numerıc yerel ayar =] [; Lc_tıme yerel ayar =]
 
 Noktalı virgüllerle ayrılmış şekilde, birden çok kategori türü belirtebilirsiniz. Belirtilmemiş kategori türleri geçerli yerel ayarı kullanır. Örneğin, bu kod parçacığı tüm kategorilerin geçerli yerel ayarını ayarlar `de-DE`ve ardından ayarlar `LC_MONETARY` için `en-GB` ve `LC_TIME` için `es-ES`:
 
@@ -62,9 +56,9 @@ _wsetlocale(LC_ALL, L"LC_MONETARY=en-GB;LC_TIME=es-ES");
 
 ## <a name="see-also"></a>Ayrıca bkz.
 
-[C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)  
-[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)  
-[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)  
-[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)  
-[Dil Dizeleri](../c-runtime-library/language-strings.md)  
-[Ülke/bölge dizeleri](../c-runtime-library/country-region-strings.md)  
+[C Çalışma Zamanı Kitaplığı Başvurusu](../c-runtime-library/c-run-time-library-reference.md)<br/>
+[_get_current_locale](../c-runtime-library/reference/get-current-locale.md)<br/>
+[setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md)<br/>
+[_create_locale, _wcreate_locale](../c-runtime-library/reference/create-locale-wcreate-locale.md)<br/>
+[Dil Dizeleri](../c-runtime-library/language-strings.md)<br/>
+[Ülke/bölge dizeleri](../c-runtime-library/country-region-strings.md)

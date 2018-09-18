@@ -16,42 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53b0b77930acba6ecf2d0f3c6748ba52e9b28e0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f78b850f95614255fed372570742a0f88a9e30e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222182"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035987"
 ---
 # <a name="compiler-error-c2362"></a>Derleyici Hatası C2362
-'tanımlayıcısının' başlatma 'goto etiketle' atlandı  
-  
- İle derleme yapılırken [/Za](../../build/reference/za-ze-disable-language-extensions.md), etikete atladıktan engeller tanıtıcı başlatılmış.  
-  
- Bildirim değildir girildiği bir bloğunda içine sürece bir başlatıcı bildirimiyle geçmiş atlama olamaz veya değişken zaten başlatıldı.  
-  
- Aşağıdaki örnek C2326 oluşturur:  
-  
-```  
-// C2362.cpp  
-// compile with: /Za  
-int main() {  
-   goto label1;  
-   int i = 1;      // C2362, initialization skipped  
-label1:;  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2362b.cpp  
-// compile with: /Za  
-int main() {  
-   goto label1;  
-   {  
-      int j = 1;   // OK, this block is never entered  
-   }  
-label1:;  
-}  
+
+'identifier' öğesinin başlatılması 'goto etiketle' atlandı
+
+İle derlerken [/Za](../../build/reference/za-ze-disable-language-extensions.md), etikete atladıktan engeller tanımlayıcı başlatılmış.
+
+Bildirimi olmayan girilen bir bloğu içinde alınmış sürece bir bildirimi bir başlatıcıya sahip son atlama olamaz veya değişken zaten başlatıldı.
+
+Aşağıdaki örnek, C2326 oluşturur:
+
+```
+// C2362.cpp
+// compile with: /Za
+int main() {
+   goto label1;
+   int i = 1;      // C2362, initialization skipped
+label1:;
+}
+```
+
+Olası çözüm:
+
+```
+// C2362b.cpp
+// compile with: /Za
+int main() {
+   goto label1;
+   {
+      int j = 1;   // OK, this block is never entered
+   }
+label1:;
+}
 ```

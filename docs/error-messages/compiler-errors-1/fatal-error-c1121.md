@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 129bde75de99e979edd2bb5c7f23acd4ddbdb12f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4e46196bdf7b3fea7d5884c3805b7244b516271a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197266"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071880"
 ---
 # <a name="fatal-error-c1121"></a>Önemli hata C1121
-başarısız CryptoAPI çağırın  
-  
- Derleyici CryptoAPI yapılan bir çağrı ve çağrısı başarısız yapılır. Visual Studio'yu yeniden yükleyin ve büyük olasılıkla işletim sistemini yeniden yükleyin.
+
+CryptoAPI'ye kopyalama başarısız oldu
+
+Derleyici, bir çağrı CryptoAPI ve çağrısı başarısız hale. Visual Studio'yu yeniden yükleyin ve büyük olasılıkla işletim sistemini yükleyin.

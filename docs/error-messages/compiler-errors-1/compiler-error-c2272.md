@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e969e7cadadf1102dadfb8089a847046731b568f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e17765ee0acbf20d76e631bf7fccfb3413c5dc1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171773"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040316"
 ---
 # <a name="compiler-error-c2272"></a>Derleyici Hatası C2272
-'function': değiştiricileri statik üye işlevleri izin verilmiyor  
-  
- A `static` üye işlevi bildirilen bellek model tanımlayıcısı ile gibi [const](../../cpp/const-cpp.md) veya [volatile](../../cpp/volatile-cpp.md), ve bu tür değiştiricileri izin verilmez `static` üye işlevleri.  
-  
- Aşağıdaki örnek C2272 oluşturur:  
-  
-```  
-// C2272.cpp  
-// compile with: /c  
-class CMyClass {  
-public:  
-   static void func1() const volatile;   // C2272  func1 is static  
-   void func2() const volatile;   // OK  
-};  
+
+'function': statik üye işlevlerinde izin verilmez
+
+A `static` üye işlevi bildirilmiş bir bellek-model tanımlayıcısı ile gibi [const](../../cpp/const-cpp.md) veya [geçici](../../cpp/volatile-cpp.md), ve bu tür değiştiricilere izin verilmez `static` üye işlevleri.
+
+Aşağıdaki örnek, C2272 oluşturur:
+
+```
+// C2272.cpp
+// compile with: /c
+class CMyClass {
+public:
+   static void func1() const volatile;   // C2272  func1 is static
+   void func2() const volatile;   // OK
+};
 ```

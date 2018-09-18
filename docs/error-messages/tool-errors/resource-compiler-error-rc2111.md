@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5c47c83c75a9bdb62bf0cb6594399e5a551bb76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e8e0e0f153b5eed21f906dd228072a4239dec63e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317135"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076456"
 ---
 # <a name="resource-compiler-error-rc2111"></a>Kaynak Derleyicisi Hatası RC2111
-Geçersiz denetim türü  
-  
- Her denetim deyiminde bir **iletişim** deyimi şunlardan biri olmalıdır: 3STATE, AUTO3 AUTOCHECK, AUTORADIO, BDÜZEN, onay kutusu, COMBOBOX, Denetim, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, HEDIT, SİMGE, IEDIT, LISTBOX, LTEXT, PUSHBOX, BASMA DÜĞMESİ, RADIOBUTTON, RTEXT, KAYDIRMA ÇUBUĞU, USERBUTTON.  
-  
- Bu denetim ifadeleri doğru yazıldığından emin olun.
+
+Geçersiz denetim türü
+
+Her denetim deyiminde bir **iletişim** deyimi aşağıdakilerden biri olmalıdır: 3STATE AUTO3 AUTOCHECK, AUTORADIO, BDÜZEN, onay kutusunu, COMBOBOX, Denetim, CTEXT, DEFPUSHBUTTON, EDITTEXT, GROUPBOX, HEDIT, SİMGE, IEDIT, liste kutusu, LTEXT, PUSHBOX, BASMA DÜĞMESİ, RADIOBUTTON, RTEXT, KAYDIRMA ÇUBUĞU, USERBUTTON.
+
+Bu denetim ifadeleri doğru yazıldığından emin olun.

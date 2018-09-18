@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b445a0e1a2668047d34f18424f44b0dc7cc55f1
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 10e5a6fda373c79b85dac5cfcf19739276a5c12f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760925"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039523"
 ---
 # <a name="iregistrar-interface"></a>Iregistrar arabirimi
 
@@ -147,7 +147,7 @@ virtualHRESULT STDMETHODCALLTYPE ResourceUnregister(
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Değiştirilebilir parametreler (kaydedicinin ön işlemcisi) kullanma](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
-[Modül sınıfları](../../atl/atl-module-classes.md)   
+[Değiştirilebilir Parametreler Kullanma (Kaydedicinin Ön İşlemcisi)](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
+[Modül sınıfları](../../atl/atl-module-classes.md)<br/>
 [Kayıt defteri bileşeni (Kaydedici)](../../atl/atl-registry-component-registrar.md)

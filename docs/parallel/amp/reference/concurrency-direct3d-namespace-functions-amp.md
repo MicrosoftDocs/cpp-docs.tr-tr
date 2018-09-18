@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 099bd36908ef12d2cd4c6b4603dc047d7ed6e74f
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: aefb11f8028aa2af9822bc6433e85d06d0609a9d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107613"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039172"
 ---
 # <a name="concurrencydirect3d-namespace-functions-amp"></a>CONCURRENCY::Direct3D ad alanı işlevleri (AMP)
 ||||
@@ -60,7 +60,7 @@ inline int abs(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -83,13 +83,13 @@ inline int clamp(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Kenetlenecek değer
 
-`_Min`  
+*_Min*<br/>
 Clamping aralığının alt sınırı.
 
-`_Max`  
+*_Max*<br/>
 Clamping aralığının üst sınırı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -103,7 +103,7 @@ inline unsigned int countbits(unsigned int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 İşaretsiz bir tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -126,16 +126,16 @@ accelerator_view create_accelerator_view(
 ```  
 
 #### <a name="parameters"></a>Parametreler
-`_Accelerator`  
+*_Accelerator*<br/>
 Üzerinde yeni Hızlandırıcı görünümünün oluşturulması için Hızlandırıcı.
 
-`_D3D_device`  
+*_D3D_device*<br/>
 Direct3D cihaz arayüzü işaretçisi.
 
-`_Disable_timeout`  
+*_Disable_timeout*<br/>
 Zaman aşımı yeni oluşturulan accelerator_view için devre dışı olup olmadığını belirten bir Boole parametresi. Bu, Direct3D cihaz oluşturma için d3d11_create_devıce_dısable_gpu_tımeout bayrağına karşılık gelir ve işletim sistemi cihazı Windows zaman aşımı sıfırlamadan yürütmek için birden fazla 2 saniye Süren iş yükleri izin veriyorsa belirtmek için kullanılır Algılama ve kurtarma mekanizmanızı. Accelerator_view'de zaman alıcı görevleri gerçekleştirmek gerekiyorsa bu bayrağı kullanmanız önerilir.
 
-`_Qmode`  
+*_Qmode*<br/>
 [Queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) yeni oluşturulan accelerator_view için kullanılacak. Bu parametrenin varsayılan değeri `queuing_mode_automatic`.
 
 ## <a name="return-value"></a>Dönüş Değeri
@@ -157,7 +157,7 @@ void __cdecl d3d_access_lock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Av`  
+*_Av*<br/>
 Kilitlenecek accelerator_view.
 
 ##  <a name="d3d_access_try_lock"></a>  d3d_access_try_lock
@@ -168,7 +168,7 @@ bool __cdecl d3d_access_try_lock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Av`  
+*_Av*<br/>
 Kilitlenecek accelerator_view.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -182,7 +182,7 @@ void __cdecl d3d_access_unlock(accelerator_view& _Av);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Av`  
+*_Av*<br/>
 Kilidin serbest bırakılacağı accelerator_view.
 
 ##  <a name="firstbithigh"></a>  firstbithigh
@@ -193,7 +193,7 @@ inline int firstbithigh(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -207,7 +207,7 @@ inline int firstbitlow(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -226,13 +226,13 @@ IUnknown *get_buffer(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`value_type`  
+*value_type*<br/>
 Dizideki öğelerin türü.
 
-`_Rank`  
+*_Dizin*<br/>
 Dizinin boyut.
 
-`_Array`  
+*_Dizisi*<br/>
 Altındaki Direct3D arabellek arayüzünün bir Direct3D accelerator_view üzerindeki dizi döndürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -263,10 +263,10 @@ inline int imax(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
-`_Y`  
+*_Y*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -282,10 +282,10 @@ inline int imin(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
-`_Y`  
+*_Y*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -299,7 +299,7 @@ bool __cdecl is_timeout_disabled(const accelerator_view& _Accelerator_view);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Accelerator_view`  
+*_Accelerator_view*<br/>
 Sorgulanacağı accelerator_view için zaman aşımı ayarını devre dışı olduğundan.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -334,13 +334,13 @@ inline unsigned int mad(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 İlk belirtilen bağımsız değişken.
 
-`_Y`  
+*_Y*<br/>
 İkinci belirtilen bağımsız değişken.
 
-`_Z`  
+*_Z*<br/>
 Üçüncü belirtilen bağımsız değişken.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -361,19 +361,19 @@ array<value_type, _Rank> make_array(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`value_type`  
+*value_type*<br/>
 Oluşturulacak dizinin öğe türü.
 
-`_Rank`  
+*_Dizin*<br/>
 Oluşturulacak dizinin derecesi.
 
-`_Extent`  
+*_Extent*<br/>
 Dizi toplamanın şeklini açıklayan uzantı.
 
-`_Rv`  
+*_Rv*<br/>
 Üzerinde dizinin oluşturulması bir D3D Hızlandırıcısı görünümü.
 
-`_D3D_buffer`  
+*_D3D_buffer*<br/>
 Diziden oluşturulacağı D3D arabellek IUnknown arabirim işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -387,7 +387,7 @@ inline float noise(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Perlin gürültü içinden kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -401,7 +401,7 @@ inline float radians(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -418,7 +418,7 @@ inline double rcp(double _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Karşıtının istediğiniz değer.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -432,7 +432,7 @@ inline unsigned int reversebits(unsigned int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 İşaretsiz bir tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -446,7 +446,7 @@ inline float saturate(float _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -460,7 +460,7 @@ inline int sign(int _X) restrict(amp);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -477,13 +477,13 @@ inline float smoothstep(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Min`  
+*_Min*<br/>
 Kayan nokta değeri
 
-`_Max`  
+*_Max*<br/>
 Kayan nokta değeri
 
-`_X`  
+*_X'İ*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -499,10 +499,10 @@ inline float step(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Y`  
+*_Y*<br/>
 Kayan nokta değeri
 
-`_X`  
+*_X'İ*<br/>
 Kayan nokta değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -518,10 +518,10 @@ inline unsigned int umax(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
-`_Y`  
+*_Y*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -537,10 +537,10 @@ inline unsigned int umin(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_X`  
+*_X'İ*<br/>
 Tamsayı değeri
 
-`_Y`  
+*_Y*<br/>
 Tamsayı değeri
 
 ### <a name="return-value"></a>Dönüş Değeri

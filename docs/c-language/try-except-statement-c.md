@@ -20,89 +20,92 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c55ff2599fac14be0be9ac852727167dd34e02d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: f367bd5d9e61d44c24a876bf1d69ad24406d0630
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32391720"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036221"
 ---
 # <a name="try-except-statement-c"></a>try-except Deyimi (C)
-**Microsoft özel**  
-  
- **Deneyin-dışında** normalde yürütme sonlandırmak olaylar oluştuğunda bir programın denetim kazanmak uygulamalar sağlayan C dili için bir Microsoft uzantısı bir ifadedir. Böyle olaylara özel durumlar, özel durumlarla uğraşan mekanizmaya ise yapılandırılmış özel durum işleme adı verilir.  
-  
- Özel durumlar ya da donanım veya yazılım tabanlı olabilir. Uygulamalar donanım veya yazılım özel durumlarından tamamen kurtarılamadığında bile, yapılandırılmış özel durum işleme hata bilgilerinin görüntülenmesini ve sorunun tanılanmasına yardımcı olmak için uygulamanın iç durumunun yakalanmasını sağlar. Bu, özellikle kolayca yeniden oluşturulamayan aralıklı sorunlar için yararlıdır.  
-  
-## <a name="syntax"></a>Sözdizimi  
- *try dışında deyimi*:  
- **__try***bileşik deyim*   
-  
- **__except (***ifade***)***bileşik deyim*   
-  
- Bileşik deyim sonra `__try` yan tümcesi olan korumalı bölüm. `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici korumalı bölüm yürütülmesi sırasında bir özel durum oluşursa gerçekleştirilecek eylemleri kümesini belirtir. Yürütme gibi çalışır:  
-  
-1.  Korunan bölüm yürütülür.  
-  
-2.  Korunan bölümün yürütülmesi sırasında hiçbir özel durum gerçekleşmezse, yürütme işlemine `__except` yan tümcesinden sonra deyimde devam edilir.  
-  
-3.  Korumalı Bölüm yürütülmesi sırasında bir özel durum oluşur veya korumalı bölüm içindeki herhangi bir yordamı çağıran `__except` ifadenin değerlendirileceği ve döndürülen değer, özel durumun nasıl işlendiğini belirler. Üç değer vardır:  
-  
-     `EXCEPTION_CONTINUE_SEARCH` Özel durum tanınmıyor. Bir işleyici yığını yukarı ilk içeren için aramaya devam **deneyin-dışında** deyimlerini sonra işleyicileri sonraki en yüksek önceliğe sahip.  
-  
-     `EXCEPTION_CONTINUE_EXECUTION` Özel durum tanınan ancak kapatılır. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.  
-  
-     `EXCEPTION_EXECUTE_HANDLER` Özel durum tanınır. Denetim yürüterek özel durum işleyici aktarım `__except` bileşik deyim sonra yürütme özel durumu oluştuğu noktadan devam edin.  
-  
- Çünkü `__except` ifadenin C ifade olarak, tek bir değer, koşullu ifade işleci veya virgül işleci sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.  
-  
+
+**Microsoft'a özgü**
+
+**Deneyin-dışında** deyimi, uygulamaların normal olarak yürütülmesini sonlandıran olaylar gerçekleştiğinde bir programın denetimini sağlar C diline yönelik bir Microsoft uzantısıdır. Böyle olaylara özel durumlar, özel durumlarla uğraşan mekanizmaya ise yapılandırılmış özel durum işleme adı verilir.
+
+Özel durumlar ya da donanım veya yazılım tabanlı olabilir. Uygulamalar donanım veya yazılım özel durumlarından tamamen kurtarılamadığında bile, yapılandırılmış özel durum işleme hata bilgilerinin görüntülenmesini ve sorunun tanılanmasına yardımcı olmak için uygulamanın iç durumunun yakalanmasını sağlar. Bu, özellikle kolayca yeniden oluşturulamayan aralıklı sorunlar için yararlıdır.
+
+## <a name="syntax"></a>Sözdizimi
+
+*try haricinde deyimi*: **__try***bileşik deyim* 
+
+**__except (***ifade***)***bileşik deyim* 
+
+Sonra gelen bileşik deyim `__try` yan tümcesi ise korunan bölümün. `__except` yan tümcesinden sonra gelen bileşik deyim, özel durum işleyicisidir. İşleyici, bir dizi korunan bölümün yürütülmesi sırasında bir özel durum oluşturulursa gerçekleştirilecek eylemi belirtir. Yürütme aşağıdaki gibi çalışır:
+
+1. Korunan bölüm yürütülür.
+
+1. Korunan bölümün yürütülmesi sırasında hiçbir özel durum gerçekleşmezse, yürütme işlemine `__except` yan tümcesinden sonra deyimde devam edilir.
+
+1. Özel bir durum oluştuğunda korunan bölümün yürütülmesi sırasında veya korunan bölümün çağırdığı herhangi bir yordamda `__except` ifade değerlendirilir ve döndürülen değer özel durumun nasıl işlendiğini belirler. Üç değer vardır:
+
+     `EXCEPTION_CONTINUE_SEARCH` Özel durum tanınmıyor. Yığında bir işleyici ilk içeren için aramaya devam edin **deneyin-dışında** deyimleri, ardından sonraki en yüksek önceliğe sahip işleyicileri için.
+
+     `EXCEPTION_CONTINUE_EXECUTION` Özel durum kabul edilen ancak kapatıldı. Yürütmeye, özel durumun gerçekleştiği noktadan devam edin.
+
+     `EXCEPTION_EXECUTE_HANDLER` Özel durum tanınır. Yürüterek denetimi özel durum işleyicisine aktarma `__except` bileşik deyim, sonra yürütme özel durumun oluştuğu noktadan devam edin.
+
+Çünkü `__except` ifadesi C ifadesi olarak değerlendirildiği, tek bir değer, koşullu ifade işleci veya virgül işlecinin sınırlıdır. Daha kapsamlı bir işlem gerekliyse, ifade yukarıda listelenen üç değerden birini döndüren bir yordam çağırabilir.
+
 > [!NOTE]
->  Yapılandırılmış özel durum işleme C ve C++ kaynak dosyalar üzerinde çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum mekanizması işleme çok daha esnek ve herhangi bir tür özel durumlar işleyebilir olmamasıdır.  
-  
+>  Yapılandırılmış özel durum işleme, C ve C++ kaynak dosyaları ile çalışır. Ancak, özellikle C++ için tasarlanmamıştır. C++ özel durum işlemeyi kullanarak kodunuzun daha taşınabilir olduğundan emin olabilirsiniz. Ayrıca, C++ özel durum işleme mekanizmasını daha esnek, her türden özel durumları işleyebilir olmamasıdır.
+
 > [!NOTE]
->  C++ programları için C++ özel durum işleme yapılandırılmış özel durum işleme yerine kullanılmalıdır. Daha fazla bilgi için bkz: [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md) içinde *C++ dil başvurusu*.  
-  
- Her bir uygulama yordamında, kendi özel durum işleyici olabilir. `__except` İfade yürütür kapsamında `__try` gövdesi. Bu var. bildirilen herhangi bir yerel değişkenleri erişimi olduğu anlamına gelir.  
-  
- `__leave` Sözcüktür içinde geçerli bir **deneyin-dışında** deyimi bloğu. Etkisini `__leave` sonuna atlamak için **deneyin-dışında** bloğu. Yürütme, özel durum işleyici sonunda sürdürür. Ancak bir `goto` deyimi, aynı sonucu gerçekleştirmek için kullanılabilir bir `goto` deyimi neden yığını geriye doğru izleme. `__leave` Deyimi olduğundan daha verimli yığını geriye doğru izleme gerektirmez.  
-  
- Çıkma bir **deneyin-dışında** deyimiyle `longjmp` çalışma zamanı işlevi anormal sonlandırma olarak kabul edilir. İçine atlamak için geçersiz bir `__try` deyimi, ancak bir dışı atlamak için yasal. Bir işlem yürütülürken ortasında sonlandırılırsa özel durum işleyici çağrılmaz bir **deneyin-dışında** deyimi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki özel durum işleyicisi ve sonlandırma işleyicisi örneğidir. Bkz: [try-finally deyimi](../c-language/try-finally-statement-c.md) sonlandırma işleyicileri hakkında daha fazla bilgi.  
-  
-```  
-.  
-.  
-.  
-puts("hello");  
-__try{  
-   puts("in try");  
-   __try{  
-      puts("in try");  
-      RAISE_AN_EXCEPTION();  
-   }__finally{  
-      puts("in finally");  
-   }  
-}__except( puts("in filter"), EXCEPTION_EXECUTE_HANDLER ){  
-   puts("in except");  
-}  
-puts("world");  
-```  
-  
- Bu örnekle sağ tarafta eklenen yorumlar çıkışı.  
-  
-```  
-hello  
-in try              /* fall into try                     */  
-in try              /* fall into nested try                */  
-in filter           /* execute filter; returns 1 so accept  */  
-in finally          /* unwind nested finally                */  
-in except           /* transfer control to selected handler */  
-world               /* flow out of handler                  */  
-```  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [try-except Deyimi](../cpp/try-except-statement.md)
+>  C++ programları için C++ özel durum işleme, yapılandırılmış özel durum işleme yerine kullanılmalıdır. Daha fazla bilgi için [özel durum işleme](../cpp/exception-handling-in-visual-cpp.md) içinde *C++ dil başvurusu*.
+
+Bir uygulamada her bir rutin kendi özel durum işleyicisi olabilir. `__except` Deyimi yürütür kapsamında `__try` gövdesi. Başka bir deyişle, var. bildirilen herhangi bir yerel değişkenlere erişebilir.
+
+`__leave` Sözcüktür içinde geçerli bir **deneyin-dışında** deyim bloğu. Etkisini `__leave` sonuna başlayabiliriz **deneyin-dışında** blok. Yürütme, özel durum işleyicisi sonunda sürdürür. Ancak bir `goto` deyimi aynı sonuca ulaşmak için kullanılabilir bir `goto` deyimi, yığın geriye doğru izleme neden olur. `__leave` Deyimi olduğundan daha verimli yığın geriye doğru izleme gerektirmez.
+
+Çıkmadan bir **deneyin-dışında** using deyimi `longjmp` çalışma zamanı işlevi olağan dışı sonlandırma olarak kabul edilir. Bloğuna atlamak için geçersiz bir `__try` deyimi, ancak yasal birinden dışarı atlanabilir. Özel durum işleyicisi bir işlem yürütülürken sonlandırılırsa sonlandırılırsa çağrılmaz bir **deneyin-dışında** deyimi.
+
+## <a name="example"></a>Örnek
+
+Özel durum işleyicisi ve bir sonlandırma işleyicisi örneği aşağıda verilmiştir. Bkz: [try-finally deyimi](../c-language/try-finally-statement-c.md) sonlandırma işleyicileri hakkında daha fazla bilgi.
+
+```
+.
+.
+.
+puts("hello");
+__try{
+   puts("in try");
+   __try{
+      puts("in try");
+      RAISE_AN_EXCEPTION();
+   }__finally{
+      puts("in finally");
+   }
+}__except( puts("in filter"), EXCEPTION_EXECUTE_HANDLER ){
+   puts("in except");
+}
+puts("world");
+```
+
+Bu örnekte, sağ tarafta eklenen açıklamalar ile çıktı.
+
+```
+hello
+in try              /* fall into try                     */
+in try              /* fall into nested try                */
+in filter           /* execute filter; returns 1 so accept  */
+in finally          /* unwind nested finally                */
+in except           /* transfer control to selected handler */
+world               /* flow out of handler                  */
+```
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[try-except Deyimi](../cpp/try-except-statement.md)

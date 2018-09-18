@@ -1,5 +1,5 @@
 ---
-title: Mevcut bir adla yeniden adlandırma | Microsoft Docs
+title: Varolan adla yeniden adlandırma | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 50571a42d9b1115020cf63fb430cebcc85267825
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 10b9a9c4e42356a087c8cb6c10a470ba68acd4ba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386530"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067760"
 ---
 # <a name="renaming-with-a-name-that-exists"></a>Varolan Adla Yeniden Adlandırma
-**ANSI 4.9.4.2** Yeni adla bir dosya için bir çağrı önce varsa etkisi **yeniden adlandırma** işlevi  
-  
- Yoksa, bir ad kullanarak bir dosyayı yeniden adlandırmak çalışırsanız **yeniden adlandırma** işlevi başarısız olur ve bir hata kodu döndürür.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.4.2** Yeni adla bir dosya için bir çağrı önce varsa etkisi **Yeniden Adlandır** işlevi
+
+Varolan bir adı kullanarak bir dosyayı yeniden adlandırmak çalışırsanız **Yeniden Adlandır** işlevi başarısız olur ve bir hata kodu döndürür.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

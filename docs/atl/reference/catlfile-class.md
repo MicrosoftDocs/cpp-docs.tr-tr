@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d3d6ff72f9f5011d7c4e0f0b65cca9a82227b70d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 4ec124d1010a5870d47b9f1504655a7822505fe6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753259"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040498"
 ---
 # <a name="catlfile-class"></a>CAtlFile sınıfı
 
@@ -107,13 +107,13 @@ explicit CAtlFile(HANDLE hFile) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*Dosya*  
+*Dosya*<br/>
 Dosya nesnesi.
 
-*Hfıle*  
+*Hfıle*<br/>
 Dosya tanıtıcısı.
 
-*pTM*  
+*pTM*<br/>
 CAtlTransactionManager nesne işaretçisi
 
 ### <a name="remarks"></a>Açıklamalar
@@ -137,25 +137,25 @@ HRESULT Create(
 
 ### <a name="parameters"></a>Parametreler
 
-*szFilename*  
+*szFilename*<br/>
 Dosya adı.
 
-*dwDesiredAccess*  
+*dwDesiredAccess*<br/>
 İstenen erişim. Bkz: *dwDesiredAccess* içinde [CreateFile](/windows/desktop/api/fileapi/nf-fileapi-createfilea) Windows SDK.
 
-*dwShareMode*  
+*dwShareMode*<br/>
 Paylaşım modu. Bkz: *dwShareMode* içinde `CreateFile`.
 
-*dwCreationDisposition*  
+*dwCreationDisposition*<br/>
 Oluşturma değerlendirme. Bkz: *dwCreationDisposition* içinde `CreateFile`.
 
-*dwFlagsAndAttributes*  
+*dwFlagsAndAttributes*<br/>
 Bayraklar ve öznitelikleri. Bkz: *dwFlagsAndAttributes* içinde `CreateFile`.
 
-*lpsa*  
+*lpsa*<br/>
 Güvenlik öznitelikleri. Bkz: *lpSecurityAttributes* içinde `CreateFile`.
 
-*hTemplateFile*  
+*hTemplateFile*<br/>
 Şablon dosyası. Bkz: *hTemplateFile* içinde `CreateFile`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -195,13 +195,13 @@ HRESULT GetOverlappedResult(
 
 ### <a name="parameters"></a>Parametreler
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Çakışan yapı. Bkz: *lpOverlapped* içinde [GetOverlappedResult](/windows/desktop/api/ioapiset/nf-ioapiset-getoverlappedresult) Windows SDK.
 
-*dwBytesTransferred*  
+*dwBytesTransferred*<br/>
 Bayt aktarıldı. Bkz: *lpNumberOfBytesTransferred* içinde `GetOverlappedResult`.
 
-*bWait*  
+*bWait*<br/>
 Bekleme seçeneği. Bkz: *bWait* içinde `GetOverlappedResult`.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -222,7 +222,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Bayt cinsinden konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -243,7 +243,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nLen*  
+*nLen*<br/>
 Dosyanın bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -264,10 +264,10 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Kilit nerede başlayacağını dosyanın konumu.
 
-*nCount*  
+*nCount*<br/>
 Kilitlenecek bayt aralığı cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -316,19 +316,19 @@ HRESULT Read(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBuffer*  
+*pBuffer*<br/>
 Dosyadan okunan veriler alacak arabellek için işaretçi.
 
-*nBufSize*  
+*nBufSize*<br/>
 Arabellek boyutu bayt cinsinden.
 
-*nBytesRead*  
+*nBytesRead*<br/>
 Okunan bayt sayısı.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Çakışan yapı. Bkz: *lpOverlapped* içinde [ReadFile](/windows/desktop/api/fileapi/nf-fileapi-readfile) Windows SDK.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [ReadFileEx](/windows/desktop/api/fileapi/nf-fileapi-readfileex) Windows SDK.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -351,10 +351,10 @@ HRESULT Seek(
 
 ### <a name="parameters"></a>Parametreler
 
-*nOffset*  
+*nOffset*<br/>
 Başlangıç noktası tarafından verilen uzaklığı *dwFrom*.
 
-*dwFrom*  
+*dwFrom*<br/>
 Başlangıç noktası (FILE_BEGIN, FILE_CURRENT veya FILE_END).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -375,7 +375,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nNewLen*  
+*nNewLen*<br/>
 Yeni dosyanın bayt cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -396,10 +396,10 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPos*  
+*nPos*<br/>
 Kilit açma nerede başlayacağını dosya konumu.
 
-*nCount*  
+*nCount*<br/>
 Kilidinin açılması için bayt aralığı cinsinden uzunluğu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -434,19 +434,19 @@ HRESULT Write(
 
 ### <a name="parameters"></a>Parametreler
 
-*pBuffer*  
+*pBuffer*<br/>
 Dosyaya yazılacak veriler içeren arabellek.
 
-*nBufSize*  
+*nBufSize*<br/>
 Arabellekteki aktarılacak bayt sayısı.
 
-*pOverlapped*  
+*pOverlapped*<br/>
 Çakışan yapı. Bkz: *lpOverlapped* içinde [WriteFile](/windows/desktop/api/fileapi/nf-fileapi-writefile) Windows SDK.
 
-*pfnCompletionRoutine*  
+*pfnCompletionRoutine*<br/>
 Tamamlama yordamı. Bkz: *lpCompletionRoutine* içinde [WriteFileEx](/windows/desktop/api/fileapi/nf-fileapi-writefileex) Windows SDK.
 
-*pnBytesWritten*  
+*pnBytesWritten*<br/>
 Yazılan bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -459,6 +459,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Kayan örnek](../../visual-cpp-samples.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Kayan örnek](../../visual-cpp-samples.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [CHandle Sınıfı](../../atl/reference/chandle-class.md)

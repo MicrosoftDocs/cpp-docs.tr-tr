@@ -82,12 +82,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ac6e8215cc46fd190703981869a065df8d46b18d
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 8ad44aaaf22adce58cfdf01d108f172dc7cdf372
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43690477"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043943"
 ---
 # <a name="ctabctrl-class"></a>CTabCtrl sınıfı
 Windows ortak sekme denetimi işlevlerini sağlar.  
@@ -391,30 +391,34 @@ BOOL GetItem(int nItem,   TCITEM* pTabCtrlItem) const;
 ### <a name="remarks"></a>Açıklamalar  
  İleti gönderildiğinde `mask` üye döndürülecek öznitelikleri belirtir. Varsa `mask` üye TCIF_TEXT değeri belirtir `pszText` üye öğesi metni alan arabellek adresi içermelidir ve `cchTextMax` üyesi arabellek boyutu belirtin.  
   
- `mask`  
- Hangi belirten değeri `TCITEM` Yapı üyeleri alınamıyor veya ayarlanamıyor. Bu üye, sıfır veya bir birleşimi aşağıdaki değerlerden biri olabilir:  
+- `mask`
+
+   Hangi belirten değeri `TCITEM` Yapı üyeleri alınamıyor veya ayarlanamıyor. Bu üye, sıfır veya bir birleşimi aşağıdaki değerlerden biri olabilir:  
   
-- TCIF_TEXT `pszText` üye geçerlidir.  
+   - TCIF_TEXT `pszText` üye geçerlidir.  
   
-- TCIF_IMAGE `iImage` üye geçerlidir.  
+   - TCIF_IMAGE `iImage` üye geçerlidir.  
   
-- TCIF_PARAM `lParam` üye geçerlidir.  
+   - TCIF_PARAM `lParam` üye geçerlidir.  
   
-- TCIF_RTLREADING metin, `pszText` İbranice ve Arapça sistemlerinde sağdan sola okuma düzeni kullanılarak görüntülenir.  
+   - TCIF_RTLREADING metin, `pszText` İbranice ve Arapça sistemlerinde sağdan sola okuma düzeni kullanılarak görüntülenir.  
   
-- TCIF_STATE `dwState` üye geçerlidir.  
+   - TCIF_STATE `dwState` üye geçerlidir.  
   
- `pszText`  
- Yapı bir sekmesi hakkında bilgi içeriyorsa sekmesini metni içeren null ile sonlandırılmış bir dize işaretçisi. Yapı bilgileri alıyorsa, bu üye sekme metnine alan arabellek adresi belirtir.  
+- `pszText`  
+
+   Yapı bir sekmesi hakkında bilgi içeriyorsa sekmesini metni içeren null ile sonlandırılmış bir dize işaretçisi. Yapı bilgileri alıyorsa, bu üye sekme metnine alan arabellek adresi belirtir.  
   
- `cchTextMax`  
- Arabellek boyutu tarafından işaret edilen `pszText`. Bu üye yapısı bilgi almadığını yoksayılır.  
+- `cchTextMax`  
+
+   Arabellek boyutu tarafından işaret edilen `pszText`. Bu üye yapısı bilgi almadığını yoksayılır.  
   
- `iImage`  
+- `iImage`  
  Hiçbir görüntü için sekmesinde ise, sekme denetiminin resim listesi veya 1 - dizin.  
   
- lParam  
- Sekme ile ilişkili uygulama tanımlı veri. Sekme başına uygulama tanımlı veri dört bayttan daha fazla varsa, uygulamanın yapı tanımlamak ve yerine bunu kullanmanız gerekir `TCITEM` yapısı. Uygulama tanımlı yapısı ilk üye olmalıdır bir [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)yapısı. `TCITEMHEADER` Yapısıdır aynı `TCITEM` olmadan, yapı `lParam` üyesi. Yapınız boyutu ve boyutu arasındaki fark `TCITEMHEADER` yapısı sekme başına ek bayt sayısına eşit.  
+- `lParam`  
+
+   Sekme ile ilişkili uygulama tanımlı veri. Sekme başına uygulama tanımlı veri dört bayttan daha fazla varsa, uygulamanın yapı tanımlamak ve yerine bunu kullanmanız gerekir `TCITEM` yapısı. Uygulama tanımlı yapısı ilk üye olmalıdır bir [TCITEMHEADER](/windows/desktop/api/commctrl/ns-commctrl-tagtcitemheadera)yapısı. `TCITEMHEADER` Yapısıdır aynı `TCITEM` olmadan, yapı `lParam` üyesi. Yapınız boyutu ve boyutu arasındaki fark `TCITEMHEADER` yapısı sekme başına ek bayt sayısına eşit.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_CTabCtrl#4](../../mfc/reference/codesnippet/cpp/ctabctrl-class_4.cpp)]  

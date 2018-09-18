@@ -16,49 +16,53 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3aec62bfff59396ec73141746193e4e3f16d84fa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ad3c46117e77d432af27321165f1e1ab93d2ef3c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257322"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045113"
 ---
 # <a name="compiler-error-c3493"></a>Derleyici Hatası C3493
-hiçbir varsayılan yakalama modu belirtilmediğinden 'var' örtük olarak yakalanamazsa  
-  
- Boş lambda ifadesi yakalama `[]`, lambda ifadesi açıkça yapacağını belirtir veya örtülü hiçbir değişken yakalama.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Varsayılan bir yakalama modu sağlamak veya  
-  
--   Açıkça bir veya daha fazla değişken yakalayın.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, çünkü bir dış değişken değiştirir ancak boş yakalama yan tümcesi belirtir C3493 oluşturur:  
-  
-```  
-// C3493a.cpp  
-  
-int main()  
-{  
-   int m = 55;  
-   [](int n) { m = n; }(99); // C3493  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek, başvuru tarafından varsayılan yakalama modu olarak belirterek C3493 çözümler.  
-  
-```  
-// C3493b.cpp  
-  
-int main()  
-{  
-   int m = 55;  
-   [&](int n) { m = n; }(99);  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+hiçbir varsayılan yakalama modu belirtilmediğinden 'var' örtük olarak yakalanamıyor
+
+Boş bir lambda ifadesi yakalama `[]`, lambda ifadesi açıkça yapacağını belirtir veya tüm değişkenler örtük olarak yakalayın.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Varsayılan yakalama modu sağlayın veya
+
+- Açıkça bir veya daha fazla değişken yakalayın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, çünkü bir dış değişkenine değiştirir ancak boş yakalama yan tümcesi belirtir C3493 oluşturur:
+
+```
+// C3493a.cpp
+
+int main()
+{
+   int m = 55;
+   [](int n) { m = n; }(99); // C3493
+}
+```
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek varsayılan yakalama modu başvuruya göre belirterek C3493 çözümler.
+
+```
+// C3493b.cpp
+
+int main()
+{
+   int m = 55;
+   [&](int n) { m = n; }(99);
+}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

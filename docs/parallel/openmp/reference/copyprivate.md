@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96b1516970afb8729dc4e35c2226eb6ff00f5c2e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 1f698114fc1f2285cdcdb91ec1e8317ad1585a6b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33692944"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071139"
 ---
 # <a name="copyprivate"></a>copyprivate
-Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.  
+Bir veya daha fazla değişkenlerini tüm iş parçacıkları arasında paylaşılan olduğunu belirtir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,16 +32,15 @@ Bir veya daha fazla değişken tüm iş parçacıkları arasında paylaşılan o
 copyprivate(var)  
 ```  
   
+### <a name="parameters"></a>Parametreler
+  
+*var*<br/>
+Paylaşmak için bir veya daha fazla değişken. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
+  
 ## <a name="remarks"></a>Açıklamalar  
- Burada,  
+ `copyprivate` uygulandığı [tek](../../../parallel/openmp/reference/single.md) yönergesi.  
   
- `var`  
- Paylaşmak için bir veya daha fazla değişken. Birden fazla değişken belirtilirse, değişken adları virgül ile ayırın.  
-  
-## <a name="remarks"></a>Açıklamalar  
- `copyprivate` uygulandığı öğe [tek](../../../parallel/openmp/reference/single.md) yönergesi.  
-  
- Daha fazla bilgi için bkz: [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md).  
+ Daha fazla bilgi için [2.7.2.8 copyprivate](../../../parallel/openmp/2-7-2-8-copyprivate.md).  
   
 ## <a name="example"></a>Örnek  
   

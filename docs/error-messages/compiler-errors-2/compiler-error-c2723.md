@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 01476218683205d0fb06e81847cfe9727b733158
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2b1be2d81ecec7eb96fd9c1cd7e9938ce509f71e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33233790"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072023"
 ---
 # <a name="compiler-error-c2723"></a>Derleyici Hatası C2723
-'function': 'tanımlayıcısı' tanımlayıcısı işlev tanımı geçersiz  
-  
- Belirleyici işlevi tanımlı bir sınıf bildiriminin dışında yer alamaz. `virtual` Belirleyicisi yalnızca bir üye işlevi bildirimi sınıf bildirimi içinde üzerinde belirtilebilir.  
-  
- Aşağıdaki örnek C2723 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C2723.cpp  
-struct X {  
-   virtual void f();  
-   virtual void g();  
-};  
-  
-virtual void X::f() {}   // C2723  
-  
-// try the following line instead  
-void X::g() {}  
+
+'function': 'belirticisi' belirticisi işlev tanımında geçersizdir
+
+Belirleyicisi, bir işlev tanımının bir sınıf bildirimi dışında yer alamaz. `virtual` Belirleyicisi, yalnızca üye işlev bildiriminden bir sınıf bildirimi içinde üzerinde belirtilebilir.
+
+Aşağıdaki örnek, C2723 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C2723.cpp
+struct X {
+   virtual void f();
+   virtual void g();
+};
+
+virtual void X::f() {}   // C2723
+
+// try the following line instead
+void X::g() {}
 ```

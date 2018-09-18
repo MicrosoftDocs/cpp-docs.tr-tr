@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 94a3f94163e02b953a4739b56a04f92f2499d27f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 944bead5439abf686fd18e436664e3c1cf7bccb5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33197539"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049964"
 ---
 # <a name="compiler-error-c2431"></a>Derleyici Hatası C2431
-'tanımlayıcısı' ın geçersiz dizin Kaydet  
-  
- ESP kaydının ölçeklendirilmiş veya dizin ve temel kayıt kullanılır. İşlemci ya da izin verme x86 için kodlama SIB.  
-  
- Aşağıdaki örnek C2431 oluşturur:  
-  
-```  
-// C2431.cpp  
-// processor: x86  
-int main() {  
-   _asm mov ax, [ESI + 2*ESP]   // C2431  
-   _asm mov ax, [esp + esp]   // C2431  
-}  
+
+'identifier' içinde geçersiz dizin yazmacı var
+
+ESP kayıt ölçeği veya dizin ve temel kayıt kullanılır. İşlemci ya da izin vermiyor x86 için kodlama SIB.
+
+Aşağıdaki örnek, C2431 oluşturur:
+
+```
+// C2431.cpp
+// processor: x86
+int main() {
+   _asm mov ax, [ESI + 2*ESP]   // C2431
+   _asm mov ax, [esp + esp]   // C2431
+}
 ```

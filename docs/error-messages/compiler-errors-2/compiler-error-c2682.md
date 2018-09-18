@@ -16,49 +16,50 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9422dc079891e6536c825538c99f4179f2c086c1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 72dc19170729d7203b57e305ef2c8a0d2b2d6de1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234087"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049208"
 ---
 # <a name="compiler-error-c2682"></a>Derleyici Hatası C2682
-'type1' 'type2' dönüştürmek için casting_operator kullanamazsınız  
-  
- Atama işleci uyumsuz türleri arasında dönüştürme yapılmaya çalışıldı. Örneğin, kullanamazsınız [dynamic_cast](../../cpp/dynamic-cast-operator.md) bir işaretçi başvuru dönüştürmek için işleci. `dynamic_cast` İşleci, hemen niteleyicileri dönüştürmek için kullanılamaz. Tüm niteleyicileri türleriyle aynı olmalıdır.  
-  
- Kullanabileceğiniz `const_cast` öznitelikleri gibi kaldırmak için işleci `const`, `volatile`, veya `__unaligned`.  
-  
- Aşağıdaki örnek C2682 oluşturur:  
-  
-```  
-// C2682.cpp  
-class A { virtual void f(); };  
-class B: public A {};  
-  
-void g(A* pa) {  
-    B& rb = dynamic_cast<B&>(pa); // C2682  
-}  
-```  
-  
- Aşağıdaki örnek C2682 oluşturur:  
-  
-```  
-// C2682b.cpp  
-// compile with: /clr  
-ref struct R{};  
-ref struct RR : public R{};  
-ref struct H {  
-   RR^ r ;  
-   short s;  
-   int i;  
-};  
-  
-int main() {  
-   H^ h = gcnew H();    
-   interior_ptr<int>lr = &(h->i);  
-   interior_ptr<short>ssr = safe_cast<interior_ptr<short> >(lr);   // C2682  
-   interior_ptr<short>ssr = reinterpret_cast<interior_ptr<short> >(lr);   // OK  
-}  
+
+'type1' 'type2' dönüştürülecek casting_operator kullanamazsınız
+
+Bir yayım işleciyle uyumsuz türleri arasında dönüştürme denedi. Örneğin, kullanamazsınız [dynamic_cast](../../cpp/dynamic-cast-operator.md) başvurusu bir işaretçi dönüştürme işleci. `dynamic_cast` İşleci, hemen niteleyicileri dönüştürme için kullanılamaz. Tüm niteleyicileri türleri üzerinde eşleşmelidir.
+
+Kullanabileceğiniz `const_cast` öznitelikleri gibi kaldırmak işleci `const`, `volatile`, veya `__unaligned`.
+
+Aşağıdaki örnek, C2682 oluşturur:
+
+```
+// C2682.cpp
+class A { virtual void f(); };
+class B: public A {};
+
+void g(A* pa) {
+    B& rb = dynamic_cast<B&>(pa); // C2682
+}
+```
+
+Aşağıdaki örnek, C2682 oluşturur:
+
+```
+// C2682b.cpp
+// compile with: /clr
+ref struct R{};
+ref struct RR : public R{};
+ref struct H {
+   RR^ r ;
+   short s;
+   int i;
+};
+
+int main() {
+   H^ h = gcnew H();
+   interior_ptr<int>lr = &(h->i);
+   interior_ptr<short>ssr = safe_cast<interior_ptr<short> >(lr);   // C2682
+   interior_ptr<short>ssr = reinterpret_cast<interior_ptr<short> >(lr);   // OK
+}
 ```

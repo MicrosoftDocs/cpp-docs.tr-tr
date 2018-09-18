@@ -25,14 +25,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: ed8cc8fc2b61a3a85beb7297317c5b266557268c
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 1431fb9b35ab83f6cb0fc167eff4ba4508f2e301
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465538"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036195"
 ---
 # <a name="irowsetidentityimpl-class"></a>IRowsetIdentityImpl Sınıfı
+
 OLE DB uygulayan [IRowsetIdentity](/previous-versions/windows/desktop/ms715913\(v=vs.85\)) satır kimliği için test sağlayan arabirim.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -44,14 +45,16 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Öğesinden türetilen bir sınıf `IRowsetIdentityImpl`.  
+
+*T*<br/>
+Öğesinden türetilen bir sınıf `IRowsetIdentityImpl`.  
   
- *RowClass*  
- Depolama birimi için `HROW`.  
+*RowClass*<br/>
+Depolama birimi için `HROW`.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -62,6 +65,7 @@ class ATL_NO_VTABLE IRowsetIdentityImpl
 |[Issamerow](#issamerow)|Bunlar aynı satıra başvurmak için iki satır işleyicilerini karşılaştırır.|  
   
 ## <a name="issamerow"></a> Irowsetıdentityımpl::ıssamerow
+
 Bunlar aynı satıra başvurmak için iki satır işleyicilerini karşılaştırır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -72,11 +76,14 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
+
+Bkz: [IRowsetIdentity::IsSameRow](/previous-versions/windows/desktop/ms719629\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Satır işleyicilerini karşılaştırmak için bu yöntem bıraktığı `HROW` için işleme `RowClass` üyeleri ve çağrıları `memcmp` işaretçileri.  
+
+Satır işleyicilerini karşılaştırmak için bu yöntem bıraktığı `HROW` için işleme `RowClass` üyeleri ve çağrıları `memcmp` işaretçileri.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

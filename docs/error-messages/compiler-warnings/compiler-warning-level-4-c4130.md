@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 226b715689e506cb34ea6e7684f9ddcf041e638b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 21d73595e41c4c83eda61fa749c9f2dc72bb14bc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292181"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038106"
 ---
 # <a name="compiler-warning-level-4-c4130"></a>Derleyici Uyarısı (düzey 4) C4130
-'işleci': mantıksal işlemi adresi dize sabiti  
-  
- Bir dize sabit değeri adresiyle işlecini kullanarak beklenmeyen kod oluşturur.  
-  
- Aşağıdaki örnek C4130 oluşturur:  
-  
-```  
-// C4130.cpp  
-// compile with: /W4  
-int main()  
-{  
-   char *pc;  
-   pc = "Hello";  
-   if (pc == "Hello") // C4130  
-   {  
-   }  
-}  
-```  
-  
- **Varsa** deyimi işaretçinin depolanan değerle karşılaştırır `pc` "Hello" dizesini adresine hangi ayrılır ayrı olarak dize kodunda her defasında. **Varsa** deyimi gösterdiği dize karşılaştırma değil `pc` "Hello" dizesiyle.  
-  
- Dizeleri karşılaştırmak için kullanmak `strcmp` işlevi.
+
+'operator': dize sabitinin adresi üzerinde mantıksal işlem
+
+Bir dize sabitinin adresi ile işlecini kullanarak, beklenmeyen bir kod üretir.
+
+Aşağıdaki örnek, C4130 oluşturur:
+
+```
+// C4130.cpp
+// compile with: /W4
+int main()
+{
+   char *pc;
+   pc = "Hello";
+   if (pc == "Hello") // C4130
+   {
+   }
+}
+```
+
+**Varsa** deyimi işaretçide depolanan değeri karşılaştırır `pc` "Hello" dizesi adresine ayrıldığı ayrı olarak dize kod her gerçekleştiğinde. **Varsa** deyimi işaret ettiği dizeyi karşılaştırın değil `pc` "Hello" dizesi ile.
+
+Dizeleri karşılaştırmak için kullanın `strcmp` işlevi.

@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 51ebf253a1d1e5963ff05aa343295e133a0641c1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 466899de89e1f8760ec78e7d346ef949fab667be
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33255005"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074259"
 ---
 # <a name="compiler-error-c3201"></a>Derleyici Hatası C3201
-sınıf şablonu 'şablon' için şablon parametre listesi 'şablon' şablon parametresi için şablon parametre listesi eşleşmiyor.  
-  
- Sınıf şablonu bağımsız değişkeninde bir şablon parametresini almayan bir sınıf şablonu geçirilen veya eşleşmeyen birkaç varsayılan şablon bağımsız değişken için şablon bağımsız değişken geçirildi.  
-  
-```  
-// C3201.cpp  
-template<typename T1, typename T2>  
-class X1  
-{  
-};  
-  
-template<template<typename T> class U = X1>   // C3201  
-class X2  
-{  
-};  
-  
-template<template<typename T, typename V> class U = X1>   // OK  
-class X3  
-{  
-};  
+
+'şablon' sınıf şablonunun şablon parametre listesi 'şablon' şablon parametresinin şablon parametre listesiyle eşleşmiyor
+
+Bir sınıf şablonunun bir sınıf şablonunun şablon parametre almayan bağımsız değişken geçirilen veya eşleşmeyen birkaç varsayılan şablon bağımsız değişkeni için şablon bağımsız değişkenleri geçirildi.
+
+```
+// C3201.cpp
+template<typename T1, typename T2>
+class X1
+{
+};
+
+template<template<typename T> class U = X1>   // C3201
+class X2
+{
+};
+
+template<template<typename T, typename V> class U = X1>   // OK
+class X3
+{
+};
 ```

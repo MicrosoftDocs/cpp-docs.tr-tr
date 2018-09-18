@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0a41f46628e9103ae533282b6171d225f1307f0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 098da45e2dce1c3f306a9d7db515fc496af2b41a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242134"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043787"
 ---
 # <a name="compiler-error-c2934"></a>Derleyici Hatası C2934
-'class': türü sınıfı kimliği bir iç içe 'öğesinin' 'tanımlayıcısı' yeniden tanımlandı  
-  
- Genel veya Şablon sınıfı bir iç içe geçmiş öğesi olarak kullanamazsınız.
+
+'class': türü sınıf kimliği için bir iç içe geçmiş 'öğesinin' 'identifier' yeniden tanımlandı
+
+Genel veya Şablon sınıfı iç içe bir öğe kullanamazsınız.

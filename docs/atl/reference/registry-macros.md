@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a0cf941171ef992c677c619a1c6a45ab9868526a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 17040448771e4ca3c0f999e72a9c08f0e1fa28aa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767962"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058503"
 ---
 # <a name="registry-macros"></a>Kayıt defteri makroları
 
@@ -71,7 +71,7 @@ DECLARE_LIBID( libid )
 
 ### <a name="parameters"></a>Parametreler
 
-*Kitaplık kimliği*  
+*Kitaplık kimliği*<br/>
 Tür kitaplığının GUID.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -105,19 +105,19 @@ DECLARE_REGISTRY(
 
 ### <a name="parameters"></a>Parametreler
 
-*class*  
+*class*<br/>
 [in] Geriye dönük uyumluluk için dahildir.
 
-*PID*  
+*PID*<br/>
 [in] Sürüme özgü program tanımlayıcısı bir LPCTSTR.
 
-*vpid*  
+*vpid*<br/>
 [in] Bir sürüm bağımsız program tanımlayıcısı bir LPCTSTR.
 
-*nid*  
+*nid*<br/>
 [in] Kayıt programı'nın açıklaması kullanmak için kaynak dizenin bir dizin UINT.
 
-*bayrakları*  
+*bayrakları*<br/>
 [in] Kayıt defterinde programın iş parçacığı modeli içeren bir DWORD. Aşağıdaki değerlerden biri olmalıdır: THREADFLAGS_APARTMENT, THREADFLAGS_BOTH veya AUTPRXFLAG.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -138,10 +138,10 @@ DECLARE_REGISTRY_APPID_RESOURCEID(
 
 ### <a name="parameters"></a>Parametreler
 
-*resid*  
+*resid*<br/>
 Kaynak Kimliği hakkında bilgi içeren .rgs dosyanın *AppID*.
 
-*Uygulama Kimliği*  
+*Uygulama Kimliği*<br/>
 BİR GUID.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -162,7 +162,7 @@ DECLARE_REGISTRY_RESOURCE( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Kaynağınızın tanımlayıcı dize.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -187,7 +187,7 @@ DECLARE_REGISTRY_RESOURCEID( x )
 
 ### <a name="parameters"></a>Parametreler
 
-*x*  
+*x*<br/>
 [in] Sihirbazın ürettiği kaynak tanımlayıcısı.
 
 ### <a name="remarks"></a>Açıklamalar

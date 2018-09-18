@@ -15,17 +15,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 837361ce7116deb0b425e380959de3acb6dafa57
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: ed3d760989d131ecdc2491d0b1952e657949fb03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32385582"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065679"
 ---
 # <a name="truncation-of-text-files"></a>Metin Dosyalarının Kesilmesi
-**ANSI 4.9.3** olup bir metin akış üzerinde yazma bu noktanın ötesine kesilecek ilişkili dosya neden olur.  
-  
- Bir metin akışına yazma, dosyayı bu noktanın ötesinde kesmez.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.3** metin akışına yazmanın ilişkili dosyanın bu noktanın ötesinde mi neden oluyor
+
+Bir metin akışına yazma, dosyayı bu noktanın ötesinde kesmez.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

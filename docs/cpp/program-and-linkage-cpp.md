@@ -12,12 +12,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9998e7ad9605d6d2e32bcaff6204fb09dcbca2a5
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 2ef0f08efbcdf09420d53710a3f16326381f13c3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405564"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056787"
 ---
 # <a name="program-and-linkage-c"></a>Program ve Bağlantı (C++)
 
@@ -45,11 +45,11 @@ Ancak, bazı durumlarda bir genel değişken ya da bir .cpp dosyası sınıfınd
 
 ## <a name="linkage-vs-scope"></a>Bağlantı kapsamı karşılaştırması
 
-Kavramını *bağlantı* çeviri birimlerindeki program içinde genel simgeleri (örneğin, değişkenler, tür adları ve işlev adları) görünürlüğünü bir bütün olarak başvuruyor. Kavramını *kapsam* gibi bir ad alanı, sınıf veya işlev gövdesinin bir blok içinde bildirilen sembolleri ifade eder. Tür simgeleri, yalnızca içinde tanımlandıkları kapsamı içinde görülebilir; kavram bağlantı için geçerli değildir. 
+Kavramını *bağlantı* çeviri birimlerindeki program içinde genel simgeleri (örneğin, değişkenler, tür adları ve işlev adları) görünürlüğünü bir bütün olarak başvuruyor. Kavramını *kapsam* gibi bir ad alanı, sınıf veya işlev gövdesinin bir blok içinde bildirilen sembolleri ifade eder. Tür simgeleri, yalnızca içinde tanımlandıkları kapsamı içinde görülebilir; kavram bağlantı için geçerli değildir.
 
 ## <a name="external-vs-internal-linkage"></a>Dış ve iç bağlantı
 
-A *boş işlev* genel kapsamda tanımlanan bir işlev veya ad alanı kapsamında. Non-const genel değişkenler ve varsayılan olarak ücretsiz işlevleri *dış bağlantısı*; bunlar programın herhangi bir çeviri birimindeki görülebilir. Bu nedenle, diğer genel nesnesi yok (değişken, sınıf tanımı, vb.), bu ada sahip olabilir. Bir simgeyle *iç bağlantı* veya *bağlantısı olmayan adlar* yalnızca bu bildirilen çeviri birimi içinde görülebilir. Bir ad iç bağlantıya sahip olduğunda, aynı adı başka bir çeviri biriminde bulunabilir. Sınıf tanımları ile değişkenler veya işlev gövdeleri hiçbir bağlantısı yoktur. 
+A *boş işlev* genel kapsamda tanımlanan bir işlev veya ad alanı kapsamında. Non-const genel değişkenler ve varsayılan olarak ücretsiz işlevleri *dış bağlantısı*; bunlar programın herhangi bir çeviri birimindeki görülebilir. Bu nedenle, diğer genel nesnesi yok (değişken, sınıf tanımı, vb.), bu ada sahip olabilir. Bir simgeyle *iç bağlantı* veya *bağlantısı olmayan adlar* yalnızca bu bildirilen çeviri birimi içinde görülebilir. Bir ad iç bağlantıya sahip olduğunda, aynı adı başka bir çeviri biriminde bulunabilir. Sınıf tanımları ile değişkenler veya işlev gövdeleri hiçbir bağlantısı yoktur.
 
 Bir genel bir ad olarak açıkça bildirerek iç bağlantıya sahip olmasını zorunlu kılabilirsiniz **statik**. Bu, katmanın aynı çeviri birimi içinde bildirildiği için sınırlar. Bu bağlamda unutmayın **statik** yerel değişkenlere uygulandığında değerinden farklı bir şey anlamına gelir.
 
@@ -68,4 +68,5 @@ extern const int value = 42;
 Bkz: [extern](extern-cpp.md) daha fazla bilgi için.
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Temel Kavramlar](../cpp/basic-concepts-cpp.md)
+
+[Temel Kavramlar](../cpp/basic-concepts-cpp.md)

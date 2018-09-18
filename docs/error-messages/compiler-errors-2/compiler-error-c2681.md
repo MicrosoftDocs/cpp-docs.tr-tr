@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1e35cf6effdbb5aaed5a898bf19a6b42c3df519e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7a0f0ab4b9c6a2dd2ae69f0370f808e32e496b97
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33234730"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059088"
 ---
 # <a name="compiler-error-c2681"></a>Derleyici Hatası C2681
-'type': adı için geçersiz bir ifade türü  
-  
- Geçersiz bir türünden dönüştürmek bir atama işleci çalıştı. Örneğin, kullanırsanız [dynamic_cast](../../cpp/dynamic-cast-operator.md) kaynağı deyim, bir işaretçi türü bir ifadeyi dönüştürmek için işleci bir işaretçi olması gerekir.  
-  
- Aşağıdaki örnek C2681 oluşturur:  
-  
-```  
-// C2681.cpp  
-class A { virtual void f(); };  
-  
-void g(int i) {  
-    A* pa;  
-    pa = dynamic_cast<A*>(i);  // C2681  
-}  
+
+'type': geçersiz ifade türü adı
+
+Geçersiz bir türden dönüştürmek bir atama işleci çalıştı. Örneğin, kullanırsanız [dynamic_cast](../../cpp/dynamic-cast-operator.md) işleci bir ifade kaynak ifadesi bir işaretçi türüne dönüştürmek için bir işaretçi olması gerekir.
+
+Aşağıdaki örnek, C2681 oluşturur:
+
+```
+// C2681.cpp
+class A { virtual void f(); };
+
+void g(int i) {
+    A* pa;
+    pa = dynamic_cast<A*>(i);  // C2681
+}
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d97bed1bdc81c738ff20bb85038153181ddb06ee
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a5c975960310136729620ae8304364667f6e8e60
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198787"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045048"
 ---
 # <a name="fatal-error-c1099"></a>Önemli hata C1099
-Düzenle ve devam et altyapısı sonlandırma derleme  
-  
- Düzenle ve devam et yüklenen kod değişiklikleri, ancak sonraki eylemler derlemeyi hazırlığı önceden derlenmiş üstbilgi dosyasında (önceden derlenmiş üst bilgi önce kod değişiklikleri gibi `#include` deyimi veya hata ayıklamayı durdurma) Düzenle ve devam et gelen engelledi Bu işlem ile derleme tamamlanıyor. Bu hatayı düzeltmek için herhangi bir eylemde bulunmanız gerekmez.
+
+Düzenle ve devam et altyapısı derlemeyi sonlandırıyor
+
+Düzenle ve devam et yüklenen kod değişiklikleri, ancak sonraki eylemleri derlemek için hazırlık önceden derlenmiş üst bilgi dosyasında (önceden derlenmiş üst bilgi önce kod değişiklikleri gibi `#include` deyimi veya hata ayıklayıcının durdurulması) Düzenle ve devam et dan engelleyen Bu işlem ile derleme tamamlama. Bu hatayı düzeltmek için herhangi bir eylemde bulunmanız gerekmez.

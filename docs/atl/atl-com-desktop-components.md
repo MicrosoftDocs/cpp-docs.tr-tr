@@ -15,12 +15,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b16f2fd1a82d6199f1e035b06f8c0598810f0dfd
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eadbcd138bd9fc73835938b8ff59d694ede152b8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43752173"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065627"
 ---
 # <a name="atl-com-desktop-components"></a>ATL COM Masaüstü bileşenleri
 
@@ -28,37 +28,37 @@ Etkin Şablon kitaplığı (ATL), Bileşen Nesne Modeli (COM) nesneleri programl
 
 ## <a name="in-this-section"></a>Bu Bölümde
 
-[ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)  
+[ATL Sınıfına Genel Bakış](../atl/atl-class-overview.md)<br/>
 Bağlantılar ve kısa açıklamaları kategorilere göre düzenlenmiş ATL sınıfları sağlar.
 
-[ATL Sınıfları ve Yapıları](../atl/reference/atl-classes.md)  
+[ATL Sınıfları ve Yapıları](../atl/reference/atl-classes.md)<br/>
 Sınıflar ve yapılar alfabetik olarak düzenlenmiş başvuru malzemesi sağlar.
 
-[ATL İşlevleri](../atl/reference/atl-functions.md)  
+[ATL İşlevleri](../atl/reference/atl-functions.md)<br/>
 Alfabetik olarak düzenlenmiş genel işlevlerde başvuru malzemesi sağlar. İşlevler kategorilere göre düzenlemeye konularını içerir.
 
-[ATL Genel Değişkenler](../atl/reference/atl-global-variables.md)  
+[ATL Genel Değişkenler](../atl/reference/atl-global-variables.md)<br/>
 Alfabetik olarak düzenlenmiş genel değişkenlere başvuru malzemesi sağlar.
 
-[ATL Makroları](../atl/reference/atl-macros.md)  
+[ATL Makroları](../atl/reference/atl-macros.md)<br/>
 Alfabetik olarak düzenlenmiş makroları başvuru malzemesi sağlar. Makroları kategorilere göre düzenlemeye konularını içerir.
 
-[ATL Tür tanımları](../atl/reference/atl-typedefs.md)  
+[ATL Tür tanımları](../atl/reference/atl-typedefs.md)<br/>
 Alfabetik olarak düzenlenmiş tür tanımları üzerinde başvuru malzemesi sağlar
 
-[Çalışan Modeli](../atl/reference/worker-archetype.md)  
+[Çalışan Modeli](../atl/reference/worker-archetype.md)<br/>
 Bir ATL çalışan modeli bağlantılar sağlar.
 
 ## <a name="related-sections"></a>İlgili Bölümler
 
-[ATL](../atl/active-template-library-atl-concepts.md)  
+[ATL](../atl/active-template-library-atl-concepts.md)<br/>
 Etkin Şablon kitaplığı (ATL) kullanarak programlama hakkında konuları sağlar.
 
-[ATL öğretici](../atl/active-template-library-atl-tutorial.md)  
+[ATL öğretici](../atl/active-template-library-atl-tutorial.md)<br/>
 Bir denetimin oluşturulmasını müşteri adayları ve işleminde bazı ATL temelleri gösterir.
 
-[ATL örnekleri](../visual-cpp-samples.md)  
+[ATL örnekleri](../visual-cpp-samples.md)<br/>
 ATL COM nesneleri yazmak için nasıl kullanılacağını gösteren örnek kodu.
 
-[OLE DB Şablonları](../data/oledb/ole-db-templates.md)  
+[OLE DB Şablonları](../data/oledb/ole-db-templates.md)<br/>
 OLE DB Tüketici ve sağlayıcı şablonları için başvuru materyalleri pek çok yaygın olarak kullanılan OLE DB arabirimi uygulayan bir şablon sınıf kümesi sağlar.  

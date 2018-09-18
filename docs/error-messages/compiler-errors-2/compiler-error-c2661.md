@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcab577ae9cfd84c757ceb194d4a59ee63057993
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a8443e21db273aa7def879bd82ab823afb8a508a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231037"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074402"
 ---
 # <a name="compiler-error-c2661"></a>Derleyici Hatası C2661
-'function': aşırı yüklenmiş hiçbir işlev sayı parametreleri alır  
-  
- Olası nedenler:  
-  
-1.  İşlev çağrısı yanlış gerçek parametrelerinde.  
-  
-2.  Eksik işlev bildirimi.  
-  
- Aşağıdaki örnek C2661 oluşturur:  
-  
-```  
-// C2661.cpp  
-void func( int ){}  
-void func( int, int ){}  
-int main() {  
-   func( );   // C2661 func( void ) was not declared  
-   func( 1 );   // OK func( int ) was declared  
-}  
+
+'function': hiçbir aşırı yüklenmiş işlev numarası parametre alır
+
+Olası nedenler:
+
+1. İşlev çağrısında yanlış gerçek parametre.
+
+1. Eksik işlev bildirimi.
+
+Aşağıdaki örnek, C2661 oluşturur:
+
+```
+// C2661.cpp
+void func( int ){}
+void func( int, int ){}
+int main() {
+   func( );   // C2661 func( void ) was not declared
+   func( 1 );   // OK func( int ) was declared
+}
 ```

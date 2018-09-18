@@ -16,43 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c29499a82601dcf653ff2f003441935f1d6841a6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4c3a6f24a32267f221dbc37e242bae48c0056af5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293237"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044658"
 ---
 # <a name="compiler-warning-level-3-c4823"></a>Derleyici Uyarısı (Düzey 3) C4823
-'function': sabitleme işaretçileri ancak bırakma kullanır semantiği etkin değil. /EHa kullanmayı düşünün  
-  
-Nesnenin blok kapsamında bildirilen sabitleme işaretçisi işaret yönetilen yığında çıkarmak için derleyici "işaretçinin nullifies yıkıcı sabitleme işaretçiyle davranan" yerel sınıfların Yıkıcılar davranışını taklit eder. Bir özel durum atma sonra yapılan bir çağrı etkinleştirmek için nesneyi geriye doğru izleme, kullanarak bunu yapabilirsiniz etkinleştirmelisiniz [/EHsc](../../build/reference/eh-exception-handling-model.md).  
-  
-El ile de nesne sabitleme ve uyarıyı yok sayın.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C4823 oluşturur.  
-  
-```  
-// C4823.cpp  
-// compile with: /clr /W3 /EHa-  
-using namespace System;  
-  
-ref struct G {  
-   int m;  
-};  
-  
-void f(G ^ pG) {  
-   try {  
-      pin_ptr<int> p = &pG->m;  
-      // manually unpin, ignore warning  
-      // p = nullptr;  
-      throw gcnew Exception;  
-   }  
-   catch(Exception ^) {}  
-}   // C4823 warning  
-  
-int main() {  
-   f( gcnew G );  
-}  
-```  
+
+'function': kullanır ancak sabitleme işaretçileri geriye doğru izlenen semantik etkin değil. / Eha kullanmayı düşünün
+
+Yönetilen yığındaki bir blok kapsamı içinde bildirilen bir sabitleme işaretçisi tarafından işaret edilen nesneyi çıkarmak için derleyici yerel sınıfların "gibi davranan sabitleme işaretçisi işaretçi nullifies bir yok Edicisi olan" yok ediciler davranışını taklit eder. Bir özel durum sonra bir yok edici bir çağrı etkinleştirmek için nesne geriye doğru izleme, kullanarak bunu etkinleştirmelisiniz [/ehsc](../../build/reference/eh-exception-handling-model.md).
+
+El ile nesne kaldırın ve uyarıyı yok sayın.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4823 oluşturur.
+
+```
+// C4823.cpp
+// compile with: /clr /W3 /EHa-
+using namespace System;
+
+ref struct G {
+   int m;
+};
+
+void f(G ^ pG) {
+   try {
+      pin_ptr<int> p = &pG->m;
+      // manually unpin, ignore warning
+      // p = nullptr;
+      throw gcnew Exception;
+   }
+   catch(Exception ^) {}
+}   // C4823 warning
+
+int main() {
+   f( gcnew G );
+}
+```

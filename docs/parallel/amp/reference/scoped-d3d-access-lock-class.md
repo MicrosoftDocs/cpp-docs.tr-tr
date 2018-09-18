@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0053fa89139ac806a3d8ae0572cd053dd6bec72c
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: cbddd9181f48477de285e65b966aea354a55fa74
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688147"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059606"
 ---
 # <a name="scopedd3daccesslock-class"></a>scoped_d3d_access_lock Sınıfı
-Accelerator_view nesnedeki D3D erişim kilit RAII sarmalayıcı.  
+Hızlandırıcı görünümü nesnesindeki D3D erişim kilidi için RAII sarmalayıcı.  
   
 ### <a name="syntax"></a>Sözdizimi  
   
@@ -38,14 +38,14 @@ class scoped_d3d_access_lock;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[scoped_d3d_access_lock Constructor](#ctor)|Fazla Yüklendi. Oluşturan bir `scoped_d3d_access_lock` nesnesi. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.|  
-|[~ scoped_d3d_access_lock yok Edicisi](#dtor)|İlişkili üzerindeki D3D erişim kilidi serbest `accelerator_view` nesnesi.|  
+|[scoped_d3d_access_lock Constructor](#ctor)|Fazla Yüklendi. Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.|  
+|[~ scoped_d3d_access_lock yok Edicisi](#dtor)|İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|Başka bir kilit sahipliğini `scoped_d3d_access_lock`.|  
+|[operator=](#operator_eq)|Başka bir kilidi sahipliğini `scoped_d3d_access_lock`.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `scoped_d3d_access_lock`  
@@ -57,7 +57,7 @@ class scoped_d3d_access_lock;
 
 ##  <a name="ctor"></a> scoped_d3d_access_lock 
 
- Oluşturan bir `scoped_d3d_access_lock` nesnesi. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.  
+ Oluşturur bir `scoped_d3d_access_lock` nesne. Bu nesne kapsam dışına çıktığında kilidi serbest bırakılır.  
  
 ```  
 explicit scoped_d3d_access_lock(// [1] constructor  
@@ -74,44 +74,44 @@ scoped_d3d_access_lock(// [3] move constructor
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Av`  
- `accelerator_view` Benimsemek kilitleme.  
+*_Av*<br/>
+`accelerator_view` Benimsenecek kilit için.  
   
- `_T`  
- `adopt_d3d_access_lock_t` Nesnesi.  
+*_T*<br/>
+`adopt_d3d_access_lock_t` Nesne.  
   
- `_Other`  
- `scoped_d3d_access_lock` Varolan bir Kilitle taşımak nesnesi.  
+*_Diğer*<br/>
+`scoped_d3d_access_lock` Varolan bir kilidin kaldırılacağı nesne.  
   
-## <a name="construction"></a>Yapı  
+## <a name="construction"></a>Oluşturma  
  [1] Oluşturucusu  
- Üzerinde D3D erişim kilit alır verilen [accelerator_view](accelerator-view-class.md) nesnesi. Kilit edinilen kadar yapım engeller.  
+ Bir D3D erişim kilidini alır verilen [accelerator_view](accelerator-view-class.md) nesne. Kilit alınıncaya kadar oluşturma blokedir.  
   
  [2] Oluşturucusu  
- Gelen D3D erişim kilit benimsemeyi verilen [accelerator_view](accelerator-view-class.md) nesnesi.  
+ Bir D3D erişim kilidi edinin verilen [accelerator_view](accelerator-view-class.md) nesne.  
   
- [3] taşıma Oluşturucusu  
- Varolan bir D3D erişim Kilitle başka bir alan `scoped_d3d_access_lock` nesnesi. Yapım engellemez.  
+ [3] taşıma Oluşturucu  
+ Varolan D3D erişim kilidini başka bir alan `scoped_d3d_access_lock` nesne. Oluşturma bloke değildir.  
 
   
 ##  <a name="dtor"></a> ~scoped_d3d_access_lock 
 
- İlişkili üzerindeki D3D erişim kilidi serbest `accelerator_view` nesnesi.  
+ İlişkili D3D erişim kilidi serbest `accelerator_view` nesne.  
   
 ```  
 ~scoped_d3d_access_lock();
 ```  
 ## <a name="operator_eq"></a> işleç = 
 
-Başka bir D3D erişim kilit sahipliğini `scoped_d3d_access_lock` önceki kilidin açılması nesnesi.  
+Başka bir D3D erişim kilidi sahipliğini `scoped_d3d_access_lock` nesnesi ve önceki kilidi açar.  
  
 ```  
 scoped_d3d_access_lock& operator= (scoped_d3d_access_lock&& _Other);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Other`  
- Accelerator_view D3D erişim kilit taşımak üzere.  
+*_Diğer*<br/>
+D3D erişim kilidinin taşınacağı, accelerator_view.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
  Bu başvuru `scoped_accelerator_view_lock`.  

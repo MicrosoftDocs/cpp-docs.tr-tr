@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27cac655dc716904c1d4bf6c9f0aff092c902853
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 57a5bb6ac27192b8e5b0ffe6c1c343bbeab5a508
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293981"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043878"
 ---
 # <a name="command-line-error-d8021"></a>Komut Satırı Hatası D8021
-Geçersiz sayısal bağımsız değişken 'numara'  
-  
- 65,534 büyük bir sayı sayısal bir bağımsız değişken belirtildi.
+
+Geçersiz sayısal bağımsız değişken 'number'
+
+65,534 büyük bir sayı bir sayısal bağımsız değişken olarak belirtildi.

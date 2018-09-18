@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6c1421a32d06fb7d922670ac921971c684c0d0e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c326e058a65037da635ed32fcdd799a651a48ac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165278"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035727"
 ---
 # <a name="compiler-error-c2028"></a>Derleyici Hatası C2028
-struct/union üye struct/UNION içinde olmalıdır  
-  
- Yapı veya birlik içinde yapısı veya birleşim üyeleri bildirilmesi gerekir.
+
+Yapı/birleşim üyesi bir yapı/birleşim içinde olmalıdır
+
+Yapı veya birleşim üyeleri, yapı veya birleşim içinde bildirilmelidir.

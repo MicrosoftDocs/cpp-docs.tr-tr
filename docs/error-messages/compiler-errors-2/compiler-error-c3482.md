@@ -16,40 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ad7ea983d13f03add2772da173062b1ad5652d3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9921c25575888ab2db1c092f9325002d1becb921
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33258640"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053381"
 ---
 # <a name="compiler-error-c3482"></a>Derleyici Hatası C3482
-'this' statik olmayan üye fonksiyonu içinde lambda yakalama olarak yalnızca kullanılabilir  
-  
- Geçiremezsiniz `this` bir statik yöntem veya genel işlevinde bildirilmiş bir lambda ifadesi yakalama listesi.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Statik olmayan yönteme kapsayan işlevi Dönüştür veya  
-  
--   Kaldırma `this` lambda ifadesi yakalama listesi işaretçi.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3482 oluşturur:  
-  
-```  
-// C3482.cpp  
-// compile with: /c  
-  
-class C  
-{  
-public:  
-   static void staticMethod()  
-   {  
-      [this] {}(); // C3482  
-   }  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)
+
+'this' yalnızca statik olmayan üye işlevin içinde lambda yakalaması olarak kullanılır
+
+Geçiremezsiniz `this` statik bir yöntem veya genel bir işlev içinde bildirilen bir lambda ifadesinin yakalama listesi.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Kapsayan işlevin bir statik olmayan yönteme dönüştürmek veya
+
+- Kaldırma `this` lambda ifadesinin yakalama listeden işaretçi.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3482 oluşturur:
+
+```
+// C3482.cpp
+// compile with: /c
+
+class C
+{
+public:
+   static void staticMethod()
+   {
+      [this] {}(); // C3482
+   }
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Lambda İfadeleri](../../cpp/lambda-expressions-in-cpp.md)

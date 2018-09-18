@@ -16,35 +16,36 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bcc4123c18eb9765841a5f6b54446cd064407700
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 5bef2071cf31123b5b172df2651c0d6a6d87d4fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33278391"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067485"
 ---
 # <a name="compiler-warning-level-1-c4042"></a>Derleyici Uyarısı (düzey 1) C4042
-'tanımlayıcısı': hatalı depolama sınıfı var.  
-  
- Belirtilen depolama sınıfı, şu tanımlayıcıyla bu bağlamda kullanılamaz. Derleyici yerine varsayılan depolama sınıfı kullanır:  
-  
--   `extern`, varsa *tanımlayıcısı* bir işlevdir.  
-  
--   **Otomatik**, *tanımlayıcısı* biçimsel parametresi ya da yerel değişken.  
-  
--   Depolama sınıfı, varsa *tanımlayıcısı* genel bir değişkendir.  
-  
- Bu uyarı dışındaki bir depolama sınıfı belirterek kaynaklanabilir **kaydetmek** parametre bildirimi.  
-  
- Aşağıdaki örnek C4042 oluşturur  
-  
-```  
-// C4042.cpp  
-// compile with: /W1 /LD  
-int func2( __declspec( thread ) int tls_i )    // C4042  
-// try the following line instead  
-// int func2( int tls_i )  
-{  
-   return tls_i;  
-}  
+
+'identifier': hatalı depolama sınıfına sahip
+
+Belirtilen depolama sınıfı, şu tanımlayıcıyla bu bağlamda kullanılamaz. Bunun yerine, derleyici varsayılan depolama sınıfı kullanır:
+
+- `extern`, varsa *tanımlayıcı* bir işlevdir.
+
+- **Otomatik**, *tanımlayıcı* biçimsel parametre veya yerel değişken.
+
+- Hiçbir depolama sınıfı, *tanımlayıcı* genel bir değişkendir.
+
+Bu uyarı bir depolama sınıfı dışındaki belirterek kaynaklanabilir **kaydetme** parametre bildirimi.
+
+Aşağıdaki örnek C4042 oluşturur
+
+```
+// C4042.cpp
+// compile with: /W1 /LD
+int func2( __declspec( thread ) int tls_i )    // C4042
+// try the following line instead
+// int func2( int tls_i )
+{
+   return tls_i;
+}
 ```

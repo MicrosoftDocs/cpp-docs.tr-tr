@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c81a6afc3316c163e9d1451af51f57f208b6a209
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4186b531fce1b608122df676139b9c676ce2df27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321229"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070456"
 ---
 # <a name="resource-compiler-fatal-error-rc1022"></a>Kaynak Derleyicisi Önemli Hatası RC1022
-Beklenen '#endif'  
-  
- Bir `#if`, **#ifdef**, veya **#ifndef** yönergesi değil sona erdirildi ile bir `#endif` yönergesi.  
-  
- Olduğundan emin olun bir `#if`, **#ifdef**, veya **#ifndef** bu bildirimi önce geçerli deyim.
+
+'#endif' bekleniyor
+
+Bir `#if`, **#ifdef**, veya **#ifndef** yönergesi ile sonlandırılmamış bir `#endif` yönergesi.
+
+Olduğundan emin olun. bir `#if`, **#ifdef**, veya **#ifndef** aslında bu deyiminden önce deyimi.

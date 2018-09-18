@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f4735452f32ee1946119b1b055ed3d9eb08024d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 65d9c36946459372924adc23caa5a44c40568f33
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242633"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051938"
 ---
 # <a name="compiler-error-c2828"></a>Derleyici Hatası C2828
-'işleci işleci' ile ikili biçimini genel değiştirilemiyor  
-  
- İşleci, bir nesne dışında bir ikili biçimindeki sahip olamaz.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Aşırı yüklenmiş işleci bir nesneye yerel olun.  
-  
-2.  Bir uygun birli işleç aşırı yüklemeyi seçin.
+
+'operator işleci' genel olarak ikili biçim ile geçersiz kılınamaz
+
+İşleci, bir ikili biçimindeki bir nesne dışında olamaz.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Aşırı yüklenmiş işleç bir nesneye yerel olarak yapın.
+
+1. Uygun birli operatör aşırı yüklemeyi seçin.

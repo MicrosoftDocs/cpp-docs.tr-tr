@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 747fe2cd742686a7fda1f5031224cf7ab1607fb2
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 156a0a827a67e80369ca8b834b62bcf0e431ab14
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43754625"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076352"
 ---
 # <a name="ithreadpoolconfig-interface"></a>Ithreadpoolconfig arabirimi
 
@@ -71,7 +71,7 @@ STDMETHOD(GetSize)(int* pnNumThreads);
 
 ### <a name="parameters"></a>Parametreler
 
-*pnNumThreads*  
+*pnNumThreads*<br/>
 [out] Değişkeninin adresi, başarı, havuzda iş parçacığı sayısını alır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -92,7 +92,7 @@ STDMETHOD(GetTimeout)(DWORD* pdwMaxWait);
 
 ### <a name="parameters"></a>Parametreler
 
-*pdwMaxWait*  
+*pdwMaxWait*<br/>
 [out] Başarı durumunda, iş parçacığı havuzu kapatmak bir iş parçacığı için bekleyeceği milisaniye cinsinden en uzun süreyi alır. değişkenin adresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -113,7 +113,7 @@ STDMETHOD(SetSize)int nNumThreads);
 
 ### <a name="parameters"></a>Parametreler
 
-*nNumThreads*  
+*nNumThreads*<br/>
 İstenen havuzundaki iş parçacığı sayısı.
 
 Varsa *nNumThreads* olan negatif mutlak değerini toplam iş parçacığı sayısını almak için makinede işlemci sayısını çarpılacağı.
@@ -138,7 +138,7 @@ STDMETHOD(SetTimeout)(DWORD dwMaxWait);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwMaxWait*  
+*dwMaxWait*<br/>
 İstenen en uzun süreyi milisaniye kapatmak bir iş parçacığı için iş parçacığı havuzu bekler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -151,5 +151,5 @@ Bkz: [IThreadPoolConfig::GetSize](#getsize).
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfları](../../atl/reference/atl-classes.md)   
+[Sınıflar](../../atl/reference/atl-classes.md)<br/>
 [CThreadPool Sınıfı](../../atl/reference/cthreadpool-class.md)

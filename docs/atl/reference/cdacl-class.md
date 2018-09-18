@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e3ce384c2478359b3496aa2d816a30e9a240c998
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f96fe03288495eb109795e31c6dfd2bd3928d47c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760750"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036144"
 ---
 # <a name="cdacl-class"></a>CDacl sınıfı
 
@@ -108,19 +108,19 @@ bool AddAllowedAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 A [CSID](../../atl/reference/csid-class.md) nesne.
 
-*AccessMask*  
+*AccessMask*<br/>
 İzin verilmesi için erişim haklarını maskesini belirtir için belirtilen `CSid` nesne.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE devralma denetleyen bit bayrakları kümesini.
 
-*pObjectType*  
+*pObjectType*<br/>
 Nesne türü.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 Devralınan bir nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -153,19 +153,19 @@ bool AddDeniedAce(
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 A `CSid` nesne.
 
-*AccessMask*  
+*AccessMask*<br/>
 Erişim hakları reddedildi olarak maskesini belirtir için belirtilen `CSid` nesne.
 
-*AceFlags*  
+*AceFlags*<br/>
 ACE devralma denetleyen bit bayrakları kümesini. Varsayılan olarak 0 yöntemin ilk biçiminde.
 
-*pObjectType*  
+*pObjectType*<br/>
 Nesne türü.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 Devralınan bir nesne türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -183,13 +183,13 @@ Bkz: [ACE_HEADER](/windows/desktop/api/winnt/ns-winnt-_ace_header) içinde ayarl
 Oluşturucu.
 
 ```
-CDacl (const ACL& rhs) throw(...);  
+CDacl (const ACL& rhs) throw(...);
 CDacl () throw();
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 Mevcut bir `ACL` yapısı (erişim denetim listesi).
 
 ### <a name="remarks"></a>Açıklamalar
@@ -230,7 +230,7 @@ CDacl& operator= (const ACL& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 Var olan nesneye atamak için ACL (erişim denetim listesi).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -251,7 +251,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Kaldırmak için ACE giriş dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -272,9 +272,9 @@ Kaldırır her `ACE` (erişim denetimi girişi) yapısı (varsa) içinde `CDacl`
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)   
-[CAcl sınıfı](../../atl/reference/cacl-class.md)   
-[ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)   
-[ACE](/windows/desktop/SecAuthZ/access-control-entries)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[CAcl Sınıfı](../../atl/reference/cacl-class.md)<br/>
+[ACL'ler](/windows/desktop/SecAuthZ/access-control-lists)<br/>
+[ACE](/windows/desktop/SecAuthZ/access-control-entries)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

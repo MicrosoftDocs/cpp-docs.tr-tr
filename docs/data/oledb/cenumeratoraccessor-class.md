@@ -48,14 +48,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 0af12e1cd2f9925d5b7df8ccf16a7838a2e8c78b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: d87bcf20957b69577e709c8fcbd2c6a5f3c9b770
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43215617"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075929"
 ---
 # <a name="cenumeratoraccessor-class"></a>CEnumeratorAccessor Sınıfı
+
 Tarafından kullanılan [CEnumerator](../../data/oledb/cenumerator-class.md) Numaralandırıcı satır kümesinden verilere erişmek için.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -65,7 +66,8 @@ class CEnumeratorAccessor
 ```  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h  
+
+**Başlık:** atldbcli.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -80,9 +82,11 @@ class CEnumeratorAccessor
 |[m_szParseName](#szparsename)|Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu satır kümesi veri kaynakları ve geçerli Numaralandırıcının görünür numaralandırıcılar oluşur.  
+
+Bu satır kümesi veri kaynakları ve geçerli Numaralandırıcının görünür numaralandırıcılar oluşur.  
   
 ## <a name="bisparent"></a> Cenumeratoraccessor::m_bısparent
+
 Satır bir numaralandırıcı ise Numaralandırıcı bir üst Numaralandırıcı olup olmadığını belirten bir değişken.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -92,9 +96,11 @@ VARIANT_BOOL m_bIsParent;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için. 
+
+Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için. 
 
 ## <a name="ntype"></a> CEnumeratorAccessor::m_nType
+
 Satır bir veri kaynağı veya bir numaralandırıcı tanımlayıp tanımlamadığını belirten bir değişken.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -104,9 +110,11 @@ USHORT m_nType;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+
+Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
 
 ## <a name="szdescription"></a> CEnumeratorAccessor::m_szDescription
+
 Veri kaynağı veya numaralandırıcı açıklaması.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -116,9 +124,11 @@ WCHAR m_szDescription[129];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
+
+Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.
 
 ## <a name="szname"></a> CEnumeratorAccessor::m_szName
+
 Veri kaynağı veya numaralandırıcı adı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -128,9 +138,11 @@ WCHAR m_szName[129];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+
+Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
 
 ## <a name="szparsename"></a> CEnumeratorAccessor::m_szParseName
+
 Geçirilecek dize [IParseDisplayName](/windows/desktop/api/oleidl/nn-oleidl-iparsedisplayname) Numaralandırıcı ve veri kaynağı için bir bilinen ad elde edilir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -140,8 +152,10 @@ WCHAR m_szParseName[129];
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
+
+Bkz: [ISourcesRowset::GetSourcesRowset](/previous-versions/windows/desktop/ms711200\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu* daha fazla bilgi için.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

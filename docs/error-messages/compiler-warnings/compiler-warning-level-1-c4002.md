@@ -16,48 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa1943000becde663fbb0da445f861f408f01f9e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a3b3d51b4408e79236993d49f7ceba5fc9537b6d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272018"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050144"
 ---
 # <a name="compiler-warning-level-1-c4002"></a>Derleyici Uyarısı (düzey 1) C4002
-Makro 'tanımlayıcısı' için çok fazla gerçek parametreleri  
-  
- Makro gerçek parametre sayısı makro tanımı'ndaki resmi parametre sayısını aşıyor. Önişlemci toplar ek parametreler ancak yoksayar bunları makrosu genişletme sırasında.  
-  
- C4002 yanlış kullanılırken oluşabilir [Variadic makrolar](../../preprocessor/variadic-macros.md).  
-  
- Aşağıdaki örnek C4002 oluşturur:  
-  
-```  
-// C4002.cpp  
-// compile with: /W1  
-#define test(a) (a)  
-  
-int main() {  
-   int a = 1;  
-   int b = 2;  
-   a = test(a,b);   // C4002  
-   // try..  
-   a = test(a);  
-}  
-```  
-  
- Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucunda da oluşturulabilir: artık kabul makrosu fazladan virgül kullanımı.  
-  
- Derleyici artık makro fazladan virgül kullanımı kabul eder. Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli olması kod için fazladan virgül kaldırın.  
-  
-```  
-// C4002b.cpp  
-// compile with: /W1  
-#define F(x,y)  
-int main()  
-{  
-   F(2,,,,,,3,,,,,,)   // C4002  
-   // Try the following line instead:  
-   // F(2,3)  
-}  
+
+Makro 'identifier' için çok fazla sayıda gerçek parametre
+
+Makro gerçek parametre sayısı, Makro tanımında biçimsel parametre sayısını aşıyor. Önişlemci toplar ek parametreler ancak yoksayar bunları makro genişletme sırasında.
+
+Yanlış kullanırken C4002 oluşabilir [Variadic makrolar](../../preprocessor/variadic-macros.md).
+
+Aşağıdaki örnek, C4002 oluşturur:
+
+```
+// C4002.cpp
+// compile with: /W1
+#define test(a) (a)
+
+int main() {
+   int a = 1;
+   int b = 2;
+   a = test(a,b);   // C4002
+   // try..
+   a = test(a);
+}
+```
+
+Bu hata için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu olarak da oluşturulabilir: makroda artık kabul ek virgül.
+
+Derleyici artık bir makroda fazladan bir virgül kabul eder. Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümü geçerli olması kod için fazladan bir virgül kaldırın.
+
+```
+// C4002b.cpp
+// compile with: /W1
+#define F(x,y)
+int main()
+{
+   F(2,,,,,,3,,,,,,)   // C4002
+   // Try the following line instead:
+   // F(2,3)
+}
 ```

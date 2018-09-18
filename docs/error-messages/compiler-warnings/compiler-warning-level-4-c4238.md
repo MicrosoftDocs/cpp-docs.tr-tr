@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 06dbec01da8d1b47cb7b93c90a22ae5266e9b4c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f4d5f358d08f81e6b8097140ad47d54f4b3b3fed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292444"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057034"
 ---
 # <a name="compiler-warning-level-4-c4238"></a>Derleyici Uyarısı (düzey 4) C4238
-kullanılan standart olmayan uzantısı: lvalue kullanılan sınıf rvalue  
-  
- Visual C++, Microsoft uzantıları önceki sürümleriyle uyumluluk için (**/Ze**) bir rvalue bağlamda adresini bu örtük veya açık olarak yararlanırken bir sınıf türü kullanmanızı sağlar. Aşağıdaki örnekte, gibi bazı durumlarda bu tehlikeli olabilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4238.cpp  
-// compile with: /W4 /c  
-struct C {  
-   C() {}  
-};  
-  
-C * pC = &C();   // C4238  
-```  
-  
- Bu kullanım ANSI Uyumluluğu altında bir hataya neden olur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+Standart olmayan uzantı kullanıldı: sınıf rvalue değeri lvalue olarak kullanıldı
+
+Visual C++, Microsoft uzantıları önceki sürümleriyle uyumluluk için (**/Ze**), örtük veya açık olarak bir rvalue bir bağlamda, adresini alan gibi bir sınıf türü kullanmanıza izin verir. Aşağıdaki örnekte, gibi bazı durumlarda bu tehlikeli olabilir.
+
+## <a name="example"></a>Örnek
+
+```
+// C4238.cpp
+// compile with: /W4 /c
+struct C {
+   C() {}
+};
+
+C * pC = &C();   // C4238
+```
+
+Bu kullanım ANSI Uyumluluğu altında hataya neden olur ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

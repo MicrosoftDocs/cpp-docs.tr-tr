@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 766536426a0b183299d5028d90197fd058fb6126
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cc19c13804eefe88b20542d4eb8c9bc8ead101e4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247637"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066927"
 ---
 # <a name="compiler-error-c3041"></a>Derleyici Hatası C3041
-'var': 'copyprivate' yan tümcesinde değişkeni içeriği kapsayan özel olmalıdır  
-  
- Bir değişkenin geçirilen [copyprivate](../../parallel/openmp/reference/copyprivate.md) kapsayan bağlamda paylaşılamaz.  
-  
- Aşağıdaki örnek C3041 oluşturur:  
-  
-```  
-// C3041.cpp  
-// compile with: /openmp /c  
-#include "omp.h"  
-double d;  
-int main() {  
-   #pragma omp parallel shared(d)  
-   // try the following line instead  
-   // #pragma omp parallel private(d)  
-   {  
-      // or don't make d copyprivate  
-      #pragma omp single copyprivate(d)   // C3041  
-      {  
-      }  
-   }  
-}  
+
+'var': 'copyprivate' yan tümcesindeki değişken kapsayan bağlamda özel olmalıdır
+
+Bir değişken geçirilen [copyprivate](../../parallel/openmp/reference/copyprivate.md) kapsayan bağlamda paylaşılamaz.
+
+Aşağıdaki örnek, C3041 oluşturur:
+
+```
+// C3041.cpp
+// compile with: /openmp /c
+#include "omp.h"
+double d;
+int main() {
+   #pragma omp parallel shared(d)
+   // try the following line instead
+   // #pragma omp parallel private(d)
+   {
+      // or don't make d copyprivate
+      #pragma omp single copyprivate(d)   // C3041
+      {
+      }
+   }
+}
 ```

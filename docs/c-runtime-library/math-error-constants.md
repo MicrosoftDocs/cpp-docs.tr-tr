@@ -33,36 +33,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb491e8073acf2af525814b595ce79365df0fa1
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 63da23d30b12859c79427432bce38e1156e190de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389045"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063339"
 ---
 # <a name="math-error-constants"></a>Matematik Hatası Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <math.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Matematik yordamları çalışma zamanı kitaplığı matematik hatası sabitleri oluşturabilir.  
-  
- Açıklandığı gibi bu hataları MATEMATİK içinde tanımlanmış özel durum türleri karşılık gelir. H ve bu tarafından döndürülen `_matherr` bir matematik hatası oluştuğunda işlev.  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_DOMAIN`|İşlev bağımsız değişkeni dışında işlevinin etki alanıdır.|  
-|`_OVERFLOW`|Sonuç, işlevin dönüş türünü gösterilemeyecek kadar çok büyük.|  
-|`_PLOSS`|Kısmi bir kayıp anlamlı oluştu.|  
-|`_SING`|Bağımsız değişken singularity: işlevine bağımsız değişken geçersiz değere sahip. (Örneğin, 0 değeri, sıfır olmayan bir değer gerektiren işlevi geçirilir.)|  
-|`_TLOSS`|Anlamlı toplam kaybı oluştu.|  
-|`_UNDERFLOW`|Sonuç gösterilemeyecek kadar çok küçük.|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_matherr](../c-runtime-library/reference/matherr.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <math.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Matematik hatası sabitleri çalışma zamanı kitaplığının matematik yordamlarını üretebilir.
+
+Açıklandığı gibi bu hata, MATEMATİK tanımlanan özel durum türlerine karşılık gelir. Tarafından döndürülen H ve bu `_matherr` matematik hata oluştuğunda işlev.
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_DOMAIN`|İşlev bağımsız değişkeni, dışında işlevinin etki alanıdır.|
+|`_OVERFLOW`|Sonuç, işlevin dönüş türü gösterilemeyecek kadar çok büyük.|
+|`_PLOSS`|Anlam kısmi kaybı oluştu.|
+|`_SING`|Bağımsız değişken singularity: işlev bağımsız değişkeni geçersiz bir değere sahip. (Örneğin, değeri 0 sıfır olmayan bir değer gerektiren işleve geçirilir.)|
+|`_TLOSS`|Anlam toplam kaybı oluştu.|
+|`_UNDERFLOW`|Sonuç gösterilemeyecek kadar çok küçüktür.|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_matherr](../c-runtime-library/reference/matherr.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

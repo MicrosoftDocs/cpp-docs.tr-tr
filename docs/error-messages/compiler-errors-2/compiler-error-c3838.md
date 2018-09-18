@@ -16,23 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dea27fde00773ccdaf7acb2dff135cd3cf894da4
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dcf01ba87dc2e179e055417b6e2b78a90fd67cf5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33267332"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064197"
 ---
 # <a name="compiler-error-c3838"></a>Derleyici Hatası C3838
-'türünden' açıkça devral olamaz  
-  
- Belirtilen `type` herhangi bir sınıfın temel sınıf olarak davranamaz.  
-  
+
+açıkça 'type' devralamaz
+
+Belirtilen `type` herhangi bir sınıfın temel sınıf olarak davranamaz.
+
 ## <a name="example"></a>Örnek
- Aşağıdaki örnek C3838 oluşturur:  
-  
-```  
-// C3838a.cpp  
-// compile with: /clr /c  
-public ref class B : public System::Enum {};   // C3838  
-```  
+
+Aşağıdaki örnek, C3838 oluşturur:
+
+```
+// C3838a.cpp
+// compile with: /clr /c
+public ref class B : public System::Enum {};   // C3838
+```

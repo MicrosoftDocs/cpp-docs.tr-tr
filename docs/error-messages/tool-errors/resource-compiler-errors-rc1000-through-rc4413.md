@@ -12,12 +12,13 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31d40925f42f6082439bedadec8416f780e57016
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 14264cfa506595ba8ecde1d5e7747cd43b6e6543
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33339910"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045425"
 ---
 # <a name="resource-compiler-errors-rc1000-through-rc4413"></a>RC1000 ile RC4413 arasındaki Kaynak Derleyicisi Hataları
-Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli bir hata iletisi hakkında Yardım almak için fare çıktı penceresinde bir hata numarası tıklatıldığında ve F1'e basın ya da hata numarası yazın **Ara** dizinde kutusu.
+
+Bu bölüm, yapı araçları tarafından oluşturulan hatalara bir başvurudur. Belirli hata iletisi hakkında Yardım almak için çıktı penceresinde bir hata numarası üzerinde fareyle tıklayın ve F1 tuşuna basın veya hata numarası yazın **Ara** dizinde kutusu.

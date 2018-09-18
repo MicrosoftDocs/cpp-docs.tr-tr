@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13e04c7f1ae9873ebf2d044dd8b6d6948e55a120
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 138275468801f3db2f2c64f06e5a505c412723b5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43197478"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050963"
 ---
 # <a name="run-time-object-model-services"></a>Çalışma Süresi Nesne Modeli Hizmetleri
 Sınıfları [CObject](../../mfc/reference/cobject-class.md) ve [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) çalışma süresi sınıf bilgilerine, seri hale getirme ve dinamik Nesne oluşturma dahil olmak üzere birçok nesne Hizmetleri kapsüller. Tüm sınıflar türetilen `CObject` bu işlevselliği devralır.  
@@ -260,8 +260,8 @@ IMPLEMENT_DYNAMIC(class_name, base_class_name)
  *$class_name*  
  Sınıf gerçek adıdır.  
   
- `base_class_name`  
- Temel sınıfın adı.  
+*BASE_CLASS_NAME*<br/>
+Temel sınıfın adı.  
   
 ### <a name="remarks"></a>Açıklamalar  
  Implement_dynamıc makrosu bir .cpp Modülü'nü kullanın ve elde edilen nesne kodu yalnızca bir kez bağlayın.  

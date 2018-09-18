@@ -16,41 +16,42 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0152d6e04d40e3e0389cf51ba7bdf71de4cd4791
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d0b3873beb635afe81cee3030a78d2b1223197a7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33277874"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047096"
 ---
 # <a name="compiler-warning-level-1-c4391"></a>Derleyici Uyarısı (düzey 1) C4391
-'imzası': iç işlevi için dönüş türü yanlış beklenen 'type'  
-  
- Bir iç derleyici için işlev bildiriminden yanlış dönüş türü var. Elde edilen görüntü düzgün çalışmayabilir.  
-  
- Bu uyarıyı çözmenin bildirimi düzeltin ya da bildirimi silmeniz ve yalnızca # uygun üst bilgi dosyasını include.  
-  
- Aşağıdaki örnek C4391 oluşturur:  
-  
-```  
-// C4391.cpp  
-// compile with: /W1  
-// processor: x86  
-// uncomment the following line and delete the line that  
-// generated the warning to resolve  
-// #include "xmmintrin.h"  
-  
-#ifdef  __cplusplus  
-extern "C" {  
-#endif  
-  
-extern void _mm_load_ss(float *p);   // C4391  
-  
-#ifdef  __cplusplus  
-}  
-#endif  
-  
-int main()  
-{  
-}  
+
+'imza': iç işlev için yanlış dönüş türü, 'type' bekleniyor
+
+Bir işlev bildirimi için bir iç derleyici hatalı dönüş türüne sahip. Elde edilen görüntü düzgün çalışmayabilir.
+
+Bu uyarıyı düzeltmek için bildirimi düzeltin ya da silme bildirimi ve yalnızca # uygun üstbilgi dosyasını include.
+
+Aşağıdaki örnek, C4391 oluşturur:
+
+```
+// C4391.cpp
+// compile with: /W1
+// processor: x86
+// uncomment the following line and delete the line that
+// generated the warning to resolve
+// #include "xmmintrin.h"
+
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
+extern void _mm_load_ss(float *p);   // C4391
+
+#ifdef  __cplusplus
+}
+#endif
+
+int main()
+{
+}
 ```

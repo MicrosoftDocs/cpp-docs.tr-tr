@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 12c6720219a638d15b1b7bf684531dfe4d752d49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8091eb7316531c6bdda9bf714ec7a195b5406182
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198098"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047687"
 ---
 # <a name="fatal-error-c1037"></a>Önemli hata C1037
-Nesne dosyaadı dosyası açılamıyor  
-  
- Belirtilen nesne dosyası [/Fo](../../build/reference/fo-object-file-name.md) açılamıyor.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Geçersiz dosya adı.  
-  
-2.  Dosyayı açmak için bellek yetersiz.  
-  
-3.  Başka bir işlem dosyası kullanıyor.  
-  
-4.  Salt okunur bir dosya aynı ada sahiptir.  
-  
+
+Nesne dosyasının dosya adı açılamıyor
+
+Belirtilen nesne dosyası [/Fo](../../build/reference/fo-object-file-name.md) açılamıyor.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Geçersiz dosya adı.
+
+1. Dosyayı açmak için bellek yetersiz.
+
+1. Dosya başka bir işlem kullanıyor.
+
+1. Salt okunur bir dosya aynı ada sahip.
+

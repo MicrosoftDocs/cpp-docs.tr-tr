@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 00a7bfd149bb83dc31327e3ea235479532213e03
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: fb0bf24657a47cbe1cf1129f0202d120fb1d017e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760838"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039071"
 ---
 # <a name="cdebugreporthook-class"></a>CDebugReportHook sınıfı
 
@@ -84,13 +84,13 @@ CDebugReportHook(
 
 ### <a name="parameters"></a>Parametreler
 
-*szMachineName*  
+*szMachineName*<br/>
 Hata ayıklama çıkışını gönderilmesi gereken makine adı. Varsayılan olarak yerel makine.
 
-*szPipeName*  
+*szPipeName*<br/>
 Hata ayıklama çıkışını gönderilmesi gereken bir adlandırılmış kanal adı.
 
-*dwTimeout*  
+*dwTimeout*<br/>
 Bu sınıf, adlandırılmış kanal kullanılabilir olmasını bekleyeceği milisaniye cinsinden süre.
 
 ##  <a name="dtor"></a>  CDebugReportHook:: ~ CDebugReportHook
@@ -114,13 +114,13 @@ static int __cdecl CDebugReportHookProc(
 
 ### <a name="parameters"></a>Parametreler
 
-*reportType*  
+*reportType*<br/>
 Rapor (_CRT_WARN, _CRT_ERROR veya _CRT_ASSERT) türü.
 
-*message*  
+*message*<br/>
 İleti dizesi.
 
-*returnValue*  
+*returnValue*<br/>
 Tarafından döndürülen değer [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md).
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -169,10 +169,10 @@ BOOL SetPipeName(
 
 ### <a name="parameters"></a>Parametreler
 
-*szMachineName*  
+*szMachineName*<br/>
 Hata ayıklama çıkışını gönderilmesi gereken makine adı.
 
-*szPipeName*  
+*szPipeName*<br/>
 Hata ayıklama çıkışını gönderilmesi gereken bir adlandırılmış kanal adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -189,7 +189,7 @@ void SetTimeout(DWORD dwTimeout);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwTimeout*  
+*dwTimeout*<br/>
 Bu sınıf, adlandırılmış kanal kullanılabilir olmasını bekleyeceği milisaniye cinsinden süre.
 
 ## <a name="see-also"></a>Ayrıca Bkz.

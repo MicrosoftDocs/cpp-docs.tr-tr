@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9f5e71fbf1a24a38b0a18e70ce7d0fa044ad4ec5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: db7903dccfd851bb4bf76f1990424f887686d344
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767884"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070112"
 ---
 # <a name="cacl-class"></a>CAcl sınıfı
 
@@ -161,7 +161,7 @@ CAcl(const CAcl& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 Varolan bir `CAcl` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -206,16 +206,16 @@ void GetAclEntries(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSids*  
+*pSids*<br/>
 Bir dizi işaretçi [CSID](../../atl/reference/csid-class.md) nesneleri.
 
-*pAccessMasks*  
+*pAccessMasks*<br/>
 Erişim maskesi.
 
-*pAceTypes*  
+*pAceTypes*<br/>
 Erişim denetimi girişi (ACE) türleri.
 
-*pAceFlags*  
+*pAceFlags*<br/>
 ACE bayraklar.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -243,25 +243,25 @@ void GetAclEntry(
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Alınacak ACL girişi için dizin.
 
-*Psıd*  
+*Psıd*<br/>
 [CSID](../../atl/reference/csid-class.md) ACL girişi uygulandığı nesne.
 
-*pMask*  
+*pMask*<br/>
 Maske izinleri vermek veya erişimini engellemek için belirleme.
 
-*pType*  
+*pType*<br/>
 ACE türü.
 
-*pFlags*  
+*pFlags*<br/>
 ACE bayraklar.
 
-*pObjectType*  
+*pObjectType*<br/>
 Nesne türü. Bu GUID_NULL için nesne türü ACE belirtilmezse veya ACE nesne ACE değilse ayarlanır.
 
-*pInheritedObjectType*  
+*pInheritedObjectType*<br/>
 Devralınan bir nesne türü. Bu GUID_NULL için devralınan nesne türü ACE belirtilmezse veya ACE nesne ACE değilse ayarlanır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -322,7 +322,7 @@ Gerekirse TRUE döndürür `CAcl` nesnesi, NULL, yanlış Aksi takdirde.
 
 Yayınları bir `CAcl` nesnesini bir `ACL` yapısı (erişim denetim listesi).
 
-```  
+```
 operator const ACL *() const throw(...);
 ```
 
@@ -340,7 +340,7 @@ CAcl& operator= (const CAcl& rhs) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `CAcl` Var olan nesneye atamak için.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -357,7 +357,7 @@ void RemoveAce(UINT nIndex) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nIndex*  
+*nIndex*<br/>
 Kaldırmak için ACE giriş dizini.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -374,7 +374,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 
 ### <a name="parameters"></a>Parametreler
 
-*rSid*  
+*rSid*<br/>
 Bir başvuru bir `CSid` nesne.
 
 ##  <a name="setempty"></a>  CAcl::SetEmpty
@@ -403,5 +403,5 @@ void SetNull() throw();
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

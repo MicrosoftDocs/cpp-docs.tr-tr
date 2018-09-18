@@ -45,12 +45,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 02453ae14ab6e8cd4a75a9f2d8725ce69e2b7f02
-ms.sourcegitcommit: d10a2382832373b900b1780e1190ab104175397f
+ms.openlocfilehash: f0ab7906961936239ac564137d0760e6d64de9de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43895298"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068227"
 ---
 # <a name="curl-class"></a>CUrl sınıfı
 
@@ -154,7 +154,7 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Standartlaştırma denetleyen bayraklar. Bayrak belirtilmezse (*CertOpenStore* = 0), tüm güvenli olmayan karakterleri ve meta dizileri yöntemi dönüştürür (gibi \\., \.., ve \\...) kaçış dizileri. *CertOpenStore* aşağıdaki değerlerden biri olabilir:
 
 - ATL_URL_BROWSER_MODE: Kodlama etmez veya karakter kodunu çözme sonra: "#" veya "" ve boşluk sonra kaldırmaz "". Bu değer belirtilmezse, URL'nin tamamını kodlanır ve boşluk kaldırılır.
@@ -195,10 +195,10 @@ BOOL CrackUrl(LPCTSTR lpszUrl, DWORD dwFlags = 0) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszUrl*  
+*lpszUrl*<br/>
 URL.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Tüm çıkış karakterlerinin tanınmasından dönüştürülecek ATL_URL_DECODE veya ATL_URL_ESCAPE belirtin *lpszUrl* gerçek değerlerine ayrıştırma sonra. (Visual C++ 2005'den önce ATL_URL_DECODE tüm kaçış karakterleri ayrıştırma önce dönüştürülür.)
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -218,13 +218,13 @@ inline BOOL CreateUrl(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszUrl*  
+*lpszUrl*<br/>
 Tam URL dizesi tutmak için bir dize arabelleği.
 
-*pdwMaxLength*  
+*pdwMaxLength*<br/>
 En büyük uzunluğunu *lpszUrl* dizesi arabelleği.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Tüm çıkış karakterlerinin tanınmasından dönüştürülecek ATL_URL_ESCAPE belirtin *lpszUrl* gerçek değerlerine.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -256,7 +256,7 @@ CUrl(const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*urlThat*  
+*urlThat*<br/>
 `CUrl` URL'yi oluşturmak için nesne.
 
 ##  <a name="dtor"></a>  CUrl:: ~ CUrl
@@ -457,7 +457,7 @@ CUrl& operator= (const CUrl& urlThat) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*urlThat*  
+*urlThat*<br/>
 `CUrl` Nesne geçerli nesneye kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -474,7 +474,7 @@ inline BOOL SetExtraInfo(LPCTSTR lpszInfo) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszInfo*  
+*lpszInfo*<br/>
 URL'de dahil edilecek ek bilgileri içeren dize.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -491,7 +491,7 @@ inline BOOL SetHostName(LPCTSTR lpszHost) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszHost*  
+*lpszHost*<br/>
 Konak adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -508,7 +508,7 @@ inline BOOL SetPassword(LPCTSTR lpszPass) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszPass*  
+*lpszPass*<br/>
 Parola.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -525,7 +525,7 @@ inline BOOL SetPortNumber(ATL_URL_PORT nPrt) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nPrt*  
+*nPrt*<br/>
 Bağlantı noktası numarası.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -542,7 +542,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nScheme*  
+*nScheme*<br/>
 Aşağıdakilerden birini [ATL_URL_SCHEME](atl-url-scheme-enum.md) düzeni için değerler.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -563,7 +563,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszSchm*  
+*lpszSchm*<br/>
 URL Düzen adı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -584,7 +584,7 @@ inline BOOL SetUrlPath(LPCTSTR lpszPath) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszPath*  
+*lpszPath*<br/>
 URL yolu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -601,7 +601,7 @@ inline BOOL SetUserName(LPCTSTR lpszUser) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszUser*  
+*lpszUser*<br/>
 Kullanıcı adı.
 
 ### <a name="return-value"></a>Dönüş Değeri

@@ -27,12 +27,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 76a85b840aba9d52600b3cf730eada0e8095eb98
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8ffe21526dd106ad067c68da49d6b07bb9e50cf8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756330"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039835"
 ---
 # <a name="ccomaggobject-class"></a>CComAggObject sınıfı
 
@@ -41,14 +41,14 @@ Bu sınıfın uyguladığı [IUnknown](/windows/desktop/api/unknwn/nn-unknwn-iun
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class contained>  
-class CComAggObject : public IUnknown, 
+template<class contained>
+class CComAggObject : public IUnknown,
    public CComObjectRootEx<contained::_ThreadModel::ThreadModelNoCS>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*yer alan*  
+*yer alan*<br/>
 Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ## <a name="members"></a>Üyeler
@@ -119,7 +119,7 @@ CComAggObject(void* pv);
 
 ### <a name="parameters"></a>Parametreler
 
-*BD*  
+*BD*<br/>
 [in] Dış bilinmeyen.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -152,7 +152,7 @@ static HRESULT WINAPI CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*PP*  
+*PP*<br/>
 [out] Bir işaretçi bir **CComAggObject\<**<em>bulunan</em> **>** işaretçi. Varsa `CreateInstance` başarısız, *pp* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -195,7 +195,7 @@ CComContainedObject<contained> m_contained;
 
 ### <a name="parameters"></a>Parametreler
 
-*yer alan*  
+*yer alan*<br/>
 [in] Sınıfınız, türetilen [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) veya [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md)iyi herhangi diğer arabirimleri uğradıysa nesnede desteklemek istediğiniz gibi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -214,13 +214,13 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*IID*  
+*IID*<br/>
 [in] İstenen arabirim tanımlayıcısı.
 
-*ppvObject*  
+*ppvObject*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *IID*. Nesne bu arabirimi desteklemiyorsa *ppvObject* NULL olarak ayarlandı.
 
-*PP*  
+*PP*<br/>
 [out] Türe göre belirlenen arabirim işaretçisi için bir işaretçi `Q`. Nesne bu arabirimi desteklemiyorsa *pp* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -245,9 +245,9 @@ Hata ayıklama yapılarında `Release` tanılama için kullanışlı veya test o
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComObject sınıfı](../../atl/reference/ccomobject-class.md)   
-[CComPolyObject sınıfı](../../atl/reference/ccompolyobject-class.md)   
-[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)   
-[DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)   
-[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)   
+[CComObject Sınıfı](../../atl/reference/ccomobject-class.md)<br/>
+[CComPolyObject Sınıfı](../../atl/reference/ccompolyobject-class.md)<br/>
+[DECLARE_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_aggregatable)<br/>
+[DECLARE_ONLY_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_only_aggregatable)<br/>
+[DECLARE_NOT_AGGREGATABLE](aggregation-and-class-factory-macros.md#declare_not_aggregatable)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

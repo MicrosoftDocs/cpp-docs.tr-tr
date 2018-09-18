@@ -26,29 +26,31 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 94faf8a2d36b7e91e83166af1e83ce834b308af3
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: ee89644251122d97ea2e042270d2d965a56f47bd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39339045"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065432"
 ---
 # <a name="record-field-exchange-working-with-the-wizard-code"></a>Kayıt Alanı Değişimi: Sihirbaz Kodu ile Çalışma
+
 Bu konu, kod açıklar, MFC Uygulama Sihirbazı ve **sınıfı Ekle** (açıklandığı [MFC ODBC Tüketicisi Ekleme](../../mfc/reference/adding-an-mfc-odbc-consumer.md)) RFX ve bu kodu değiştirmek nasıl isteyebileceğiniz desteklemek yazma.  
   
 > [!NOTE]
 >  Bu konu, türetilen sınıflar için geçerlidir. `CRecordset` toplu satır getirme uygulanmadı. Toplu satır getirme kullanıyorsanız, toplu kayıt alanı değişimi (Bulk RFX) uygulanır. Toplu RFX RFX için benzerdir. Farkları anlamak için bkz: [kayıt kümesi: Kayıtları toplu (ODBC)](../../data/odbc/recordset-fetching-records-in-bulk-odbc.md).  
   
- MFC Uygulama Sihirbazı'nı kullanarak bir kayıt kümesi sınıfı oluşturduğunuzda, veya **sınıfı Ekle**, sihirbaz, veri kaynağını temel tablo ve sütun seçenekleri Sihirbazı'nda yapmak için aşağıdaki RFX ilgili öğeleri Yazar:  
+MFC Uygulama Sihirbazı'nı kullanarak bir kayıt kümesi sınıfı oluşturduğunuzda, veya **sınıfı Ekle**, sihirbaz, veri kaynağını temel tablo ve sütun seçenekleri Sihirbazı'nda yapmak için aşağıdaki RFX ilgili öğeleri Yazar:  
   
--   Kayıt kümesi sınıf veri üyeleri kayıt kümesinin bildirimleri alan  
+- Kayıt kümesi sınıf veri üyeleri kayıt kümesinin bildirimleri alan  
   
--   Geçersiz kılma `CRecordset::DoFieldExchange`  
+- Geçersiz kılma `CRecordset::DoFieldExchange`  
   
--   Kayıt kümesi sınıfı oluşturucusunda kayıt alan veri üyeleri başlatma  
+- Kayıt kümesi sınıfı oluşturucusunda kayıt alan veri üyeleri başlatma  
   
 ##  <a name="_core_the_field_data_member_declarations"></a> Alan veri üye bildirimleri  
- Sihirbazlar bir kayıt kümesi sınıf bildiriminin sınıf için aşağıdakine benzer bir .h dosyası yazma `CSections`:  
+
+Sihirbazlar bir kayıt kümesi sınıf bildiriminin sınıf için aşağıdakine benzer bir .h dosyası yazma `CSections`:  
   
 ```cpp  
 class CSections : public CRecordset  
@@ -80,15 +82,15 @@ public:
 };  
 ```  
   
- Parametre veri üyeleri veya kendiniz bağlama yeni alan veri üyeleri eklerseniz, bunları sonra sihirbazın ürettiği olanları ekleyin.  
+Parametre veri üyeleri veya kendiniz bağlama yeni alan veri üyeleri eklerseniz, bunları sonra sihirbazın ürettiği olanları ekleyin.  
   
- Ayrıca, sihirbaz geçersiz kılan bildirimi `DoFieldExchange` sınıfının üye işlevinde `CRecordset`.  
+Ayrıca, sihirbaz geçersiz kılan bildirimi `DoFieldExchange` sınıfının üye işlevinde `CRecordset`.  
   
 ##  <a name="_core_the_dofieldexchange_override"></a> DoFieldExchange geçersiz kılma  
 
- [DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX kalbidir. Framework çağrıları `DoFieldExchange` veri kaynağına veri kaynağı kayıt kümesine ya da kayıt kümesinden verileri taşımak için ihtiyaç duyduğu her zaman. `DoFieldExchange` Ayrıca desteklediği hakkında bilgi edinme alanı üzerinden veri üyelerine [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri.  
+[DoFieldExchange](../../mfc/reference/crecordset-class.md#dofieldexchange) RFX kalbidir. Framework çağrıları `DoFieldExchange` veri kaynağına veri kaynağı kayıt kümesine ya da kayıt kümesinden verileri taşımak için ihtiyaç duyduğu her zaman. `DoFieldExchange` Ayrıca desteklediği hakkında bilgi edinme alanı üzerinden veri üyelerine [IsFieldDirty](../../mfc/reference/crecordset-class.md#isfielddirty) ve [IsFieldNull](../../mfc/reference/crecordset-class.md#isfieldnull) üye işlevleri.  
   
- Aşağıdaki `DoFieldExchange` geçersiz kıldığından `CSections` sınıfı. Sihirbaz işlevi kayıt sınıfınız için .cpp dosyasına yazar.  
+Aşağıdaki `DoFieldExchange` geçersiz kıldığından `CSections` sınıfı. Sihirbaz işlevi kayıt sınıfınız için .cpp dosyasına yazar.  
   
 ```cpp  
 void CSections::DoFieldExchange(CFieldExchange* pFX)  
@@ -102,27 +104,28 @@ void CSections::DoFieldExchange(CFieldExchange* pFX)
 }  
 ```  
   
- İşlevin aşağıdaki önemli özelliklere dikkat edin:  
+İşlevin aşağıdaki önemli özelliklere dikkat edin:  
   
--   Bu bölümde işlevin alan eşlemesi çağrılır.  
+- Bu bölümde işlevin alan eşlemesi çağrılır.  
   
--   Bir çağrı `CFieldExchange::SetFieldType`temellidir `pFX` işaretçi. Bu çağrı, tüm RFX işlevi sonuna ProcessOrder belirtir `DoFieldExchange` veya sonraki çağrı `SetFieldType` çıktı sütunlarıdır. Daha fazla bilgi için [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).  
+- Bir çağrı `CFieldExchange::SetFieldType`temellidir `pFX` işaretçi. Bu çağrı, tüm RFX işlevi sonuna ProcessOrder belirtir `DoFieldExchange` veya sonraki çağrı `SetFieldType` çıktı sütunlarıdır. Daha fazla bilgi için [CFieldExchange::SetFieldType](../../mfc/reference/cfieldexchange-class.md#setfieldtype).  
   
--   Çeşitli çağrılar `RFX_Text` genel işlev — veri üyesi alanı başına bir (bir işlem olan tüm `CString` örnekte değişkenleri). Bu çağrılar veri kaynağında bir sütun adı ve alan veri üyesi arasındaki ilişkiyi belirtin. RFX işlevlerini gerçek veri aktarımı yapabilirsiniz. Sınıf kitaplığı, ortak veri türleri için RFX işlevleri sağlar. RFX işlevleri hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md).  
+- Çeşitli çağrılar `RFX_Text` genel işlev — veri üyesi alanı başına bir (bir işlem olan tüm `CString` örnekte değişkenleri). Bu çağrılar veri kaynağında bir sütun adı ve alan veri üyesi arasındaki ilişkiyi belirtin. RFX işlevlerini gerçek veri aktarımı yapabilirsiniz. Sınıf kitaplığı, ortak veri türleri için RFX işlevleri sağlar. RFX işlevleri hakkında daha fazla bilgi için bkz. [kayıt alanı değişimi: RFX işlevlerini kullanma](../../data/odbc/record-field-exchange-using-the-rfx-functions.md).  
   
     > [!NOTE]
     >  RFX işlev çağrılarında sırası, sonuç kümesindeki sütunların sırasını eşleşmelidir `DoFieldExchange`.  
   
--   `pFX` İşaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) çağırdığında framework geçirir nesnesini `DoFieldExchange`. `CFieldExchange` Nesnesini işlemi belirtir, `DoFieldExchange` gerçekleştirmek için aktarımı ve diğer bağlam bilgileriyle yönü.  
+- `pFX` İşaretçi bir [CFieldExchange](../../mfc/reference/cfieldexchange-class.md) çağırdığında framework geçirir nesnesini `DoFieldExchange`. `CFieldExchange` Nesnesini işlemi belirtir, `DoFieldExchange` gerçekleştirmek için aktarımı ve diğer bağlam bilgileriyle yönü.  
   
 ##  <a name="_core_the_recordset_constructor"></a> Kayıt kümesi Oluşturucusu  
- Sihirbazlar kayıt oluşturucusu için RFX ilgili iki şey içerir:  
+
+Sihirbazlar kayıt oluşturucusu için RFX ilgili iki şey içerir:  
   
--   Her alanın veri üyesi için bir başlatma  
+- Her alanın veri üyesi için bir başlatma  
   
--   İçin bir başlatma [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) alan veri üyeleri sayısını içeren veri üyesi  
+- İçin bir başlatma [m_nFields](../../mfc/reference/crecordset-class.md#m_nfields) alan veri üyeleri sayısını içeren veri üyesi  
   
- Oluşturucusu `CSections` kayıt örnek şöyle görünür:  
+Oluşturucusu `CSections` kayıt örnek şöyle görünür:  
   
 ```cpp  
 CSections::CSections(CDatabase* pdb)  
@@ -144,7 +147,8 @@ CSections::CSections(CDatabase* pdb)
 m_nFields += 3;  
 ```  
 
- Üç yeni alanlar eklemek için kod budur. Tüm parametre veri üyeleri eklerseniz, başlatmalıdır [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesi, parametre veri üyeleri sayısını içerir. PUT `m_nParams` başlatma köşeli ayraçlar dışında.  
+Üç yeni alanlar eklemek için kod budur. Tüm parametre veri üyeleri eklerseniz, başlatmalıdır [m_nParams](../../mfc/reference/crecordset-class.md#m_nparams) veri üyesi, parametre veri üyeleri sayısını içerir. PUT `m_nParams` başlatma köşeli ayraçlar dışında.  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)
+
+[Kayıt Alanı Değişimi (RFX)](../../data/odbc/record-field-exchange-rfx.md)

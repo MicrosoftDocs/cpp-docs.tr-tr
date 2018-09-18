@@ -16,46 +16,48 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8f378a60c79defed4fb1738515ca5b65b2851056
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fdea26e204032c27f00639ee46a928c7bf084a4e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035632"
 ---
 # <a name="compiler-error-c3068"></a>Derleyici Hatası C3068
-'function': 'naked' işlevi bir C++ özel durum oluştuysa, geriye doğru izleme gerektirecek nesneleri içeremez  
-  
- Derleyici üzerinde yığını geriye doğru izleme gerçekleştiremedi bir [naked](../../cpp/naked-cpp.md) geçici bir nesne işlev ve C++ özel durum işleme oluşturulduğundan, özel durum oluşturdu işlevi ([/EHsc](../../build/reference/eh-exception-handling-model.md)) belirtildi.  
-  
- Bu hatayı gidermek için en az aşağıdakilerden birini yapın:  
-  
--   /EHsc ile derleme değil.  
-  
--   İşlev olarak işaretlemeyin `naked`.  
-  
--   Geçici bir nesne işlevinde oluşturmayın.  
-  
- Geçici bir nesne yığında işlevi bir özel durum oluşturursa ve C++ özel durum işleme etkinse, bir işlev oluşturur, bir özel durum oluşursa derleyici yığını temizler.  
-  
- Bir özel durum, giriş çağrılan kodu derleyici oluşturulan ve bitiş ve hangi çıplak işlev içinde mevcut olmayan bir işlev için yürütülür.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3068 oluşturur:  
-  
-```  
-// C3068.cpp  
-// compile with: /EHsc  
-// processor: x86  
-class A {  
-public:  
-   A(){}  
-   ~A(){}  
-};  
-  
-void b(A){}  
-  
-__declspec(naked) void c() {  
-   b(A());   // C3068   
-};  
+
+'function': 'naked' işlev C++ özel durumu oluştuğunda geriye doğru izleme gerektirecek nesneler içeremez
+
+Derleyicinin yığın üzerinde geriye doğru izleme gerçekleştiremedi bir [naked](../../cpp/naked-cpp.md) geçici bir nesne işlevi ve C++ özel durum işleme oluşturulduğundan, bir özel durum belirtti işlevi ([/ehsc](../../build/reference/eh-exception-handling-model.md)) belirtildi.
+
+Bu hatayı gidermek için en az aşağıdakilerden birini yapın:
+
+- / Ehsc ile derlenmiyor.
+
+- İşlev olarak işaretlemeyin `naked`.
+
+- Geçici bir nesne işlevinde oluşturmayın.
+
+Geçici bir nesne yığını üzerinde işlev bir özel durum oluşturursa ve C++ özel durum işleme etkinse, bir işlev oluşturur, derleyici bir özel durum oluşturulursa yığını temizler.
+
+Bir özel durum, derleyici oluşturulan kod, giriş adlı ve epilog ve, çıplak bir işlev mevcut olmayan bir işlev için yürütülür.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3068 oluşturur:
+
+```
+// C3068.cpp
+// compile with: /EHsc
+// processor: x86
+class A {
+public:
+   A(){}
+   ~A(){}
+};
+
+void b(A){}
+
+__declspec(naked) void c() {
+   b(A());   // C3068
+};
 ```

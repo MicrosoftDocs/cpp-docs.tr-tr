@@ -16,21 +16,23 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b4db02292398da5c35f2894d4ce278cea88a584
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: eec964d9b81ee93f888bbd4152f06f6bdf51b6d0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32386835"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053836"
 ---
 # <a name="type-char"></a>Tür char
-`char` Türü gösterilebilir karakter kümesinin bir üyesi tamsayı değerini depolamak için kullanılır. Bu tamsayı değeri, belirtilen karakterine karşılık gelen ASCII kodudur.  
-  
- **Microsoft özel**  
-  
- Karakter türü değerleri `unsigned char` 0xFF onaltılık 0 arasında bir aralık sahip. A **char imzalı** 0x80-0x7F aralığındadır. Bu aralıklar sırasıyla 255 ondalık 0 ve -128 + 127 ondalık çevir. /J derleyici seçeneği varsayılandan değiştirir **imzalı** için `unsigned`.  
-  
- **SON Microsoft özel**  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Temel Türleri Depolama](../c-language/storage-of-basic-types.md)
+
+`char` Türü temsil edilebilir karakter kümesinin üyesi tamsayı değerini depolamak için kullanılır. Belirtilen karakterin ASCII kodu, tamsayı değeridir.
+
+**Microsoft'a özgü**
+
+Karakter türü değerlerinin `unsigned char` bir aralığı 0-0xFF onaltılık sahip. A **signed char** 0x80-0x7F aralığındadır. Bu aralıklar sırasıyla 0 ile 255 ondalık ve ondalık + 127 -128 çevir. /J derleyici seçeneğini varsayılandan değiştirir **imzalı** için `unsigned`.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Temel Türleri Depolama](../c-language/storage-of-basic-types.md)

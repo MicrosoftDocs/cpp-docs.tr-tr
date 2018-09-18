@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 242c83ce7a22d56d3c584b50ec93c941b45213ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3ddd11cf6c9fbc1b0a032a609f1315e581290c01
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33106498"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074987"
 ---
 # <a name="autogcrootattach"></a>auto_gcroot::attach
-Attach `auto_gcroot` nesneye.  
+Ekleme `auto_gcroot` bir nesne.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -46,14 +46,14 @@ auto_gcroot<_element_type> & attach(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_right`  
- Eklemek için nesneyi veya bir `auto_gcroot` eklemek için nesneyi içeren.  
+*_right*<br/>
+Eklemek için nesne veya bir `auto_gcroot` iliştirmek için nesneyi içeren.  
   
 ## <a name="return-value"></a>Dönüş Değeri  
  Geçerli `auto_gcroot`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Varsa `_right` olan bir `auto_gcroot`, geçerli nesne bağlanmadan önce nesnenin sahipliğini serbest `auto_gcroot`.  
+ Varsa `_right` olduğu bir `auto_gcroot`, geçerli nesne bağlanmadan önce nesnenin sahipliğini serbest `auto_gcroot`.  
   
 ## <a name="example"></a>Örnek  
   
@@ -121,7 +121,7 @@ in ClassA destructor:fourth
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\auto_gcroot.h >  
+ **Üst bilgi dosyası** \<msclr\auto_gcroot.h >  
   
  **Namespace** msclr  
   

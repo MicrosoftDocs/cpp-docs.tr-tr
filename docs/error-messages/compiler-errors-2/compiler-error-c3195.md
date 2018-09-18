@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6ce3c51da68b971c34d651826a9c84974957ac46
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3c299704b595ca6e6f6b81fb56ffad5534f81e6b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33256897"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040602"
 ---
 # <a name="compiler-error-c3195"></a>Derleyici Hatası C3195
-'işleci': ayrılmıştır ve ref sınıfı veya değer türünün bir üyesi olarak kullanılamaz. CLR veya WinRT işleçleri 'işleci' anahtar sözcüğünü kullanarak tanımlanmış olması gerekir  
-  
-Derleyici Yönetilen Uzantılar için C++ söz dizimini kullanarak bir işleç tanımı algıladı. C++ söz dizimini işleçler için kullanmanız gerekir.  
-  
-Aşağıdaki örnek C3195 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3195.cpp  
-// compile with: /clr /LD  
-#using <mscorlib.dll>  
-value struct V {  
-   static V op_Addition(V v, int i);   // C3195  
-   static V operator +(V v, char c);   // OK for new C++ syntax   
-};  
+
+'operator': ayrılmış ve bir başvuru sınıfının veya değer türünün üyesi olarak kullanılamaz. CLR veya WinRT işleçleri 'operator' anahtar sözcüğü kullanılarak tanımlanmalıdır.
+
+Derleyici C++ sözdizimi için Yönetilen Uzantılar'ı kullanarak bir işleç tanımını algıladı. İşleçler için C++ sözdizimini kullanmanız gerekir.
+
+Aşağıdaki örnek, C3195 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3195.cpp
+// compile with: /clr /LD
+#using <mscorlib.dll>
+value struct V {
+   static V op_Addition(V v, int i);   // C3195
+   static V operator +(V v, char c);   // OK for new C++ syntax
+};
 ```

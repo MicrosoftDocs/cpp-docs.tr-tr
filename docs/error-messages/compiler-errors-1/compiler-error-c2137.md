@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b1d546270b5f3edd71dbc0c68f2f40a6e7ba6343
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 11351f62664d2404bef1217c2f0815b1047964ab
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33164391"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036832"
 ---
 # <a name="compiler-error-c2137"></a>Derleyici Hatası C2137
-boş karakter sabiti  
-  
- Boş karakter sabiti (' ') izin verilmez.  
-  
- Aşağıdaki örnek C2137 oluşturur:  
-  
-```  
-// C2137.cpp  
-int main() {  
-   char c = '';   // C2137  
-   char d = ' ';   // OK  
-}  
+
+boş karakter sabiti
+
+Boş karakter sabiti (' ') izin verilmez.
+
+Aşağıdaki örnek, C2137 oluşturur:
+
+```
+// C2137.cpp
+int main() {
+   char c = '';   // C2137
+   char d = ' ';   // OK
+}
 ```

@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43eadfe636250c0acab9bcb2cd09323292f26a43
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 192c991cfee9fb1925601719ea61c47c5227c753
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33240824"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057670"
 ---
 # <a name="compiler-error-c2815"></a>Derleyici Hatası C2815
-'delete' işleci: ilk biçimsel parametresi olmalıdır ' void *', ancak 'param' kullanıldı  
-  
- Herhangi bir kullanıcı tarafından tanımlanan [delete işleci](../../standard-library/new-operators.md#op_delete) işlevi türünde ilk biçimsel parametresi almalıdır `void *`.  
-  
- Aşağıdaki örnek C2815 oluşturur:  
-  
-```  
-// C2815.cpp  
-// compile with: /c  
-class CMyClass {  
-public:  
-   void mf1(int *a);  
-   void operator delete(CMyClass *);   // C2815  
-   void operator delete(void *);   
-};  
+
+'operator delete': ilk biçimsel parametre olmalıdır ' void *', ancak 'param' kullanıldı
+
+Tüm kullanıcı tanımlı [delete işleci](../../standard-library/new-operators.md#op_delete) işlevi türünde bir ilk biçimsel parametre gerçekleştirmeniz gereken `void *`.
+
+Aşağıdaki örnek, C2815 oluşturur:
+
+```
+// C2815.cpp
+// compile with: /c
+class CMyClass {
+public:
+   void mf1(int *a);
+   void operator delete(CMyClass *);   // C2815
+   void operator delete(void *);
+};
 ```

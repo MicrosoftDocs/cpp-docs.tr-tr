@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c54794f09ffea78c005163cb30ceb5fd3b77417a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1b0193020adb6d3ec82d444a51551da30285535b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33251143"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068851"
 ---
 # <a name="compiler-error-c3333"></a>Derleyici Hatası C3333
-'tür kitaplığı': #import bozuk tür kitaplığı olamaz  
-  
- Belirtilen tür kitaplığı `#import` açıklamadır derleyici tarafından okunamaz. Tür kitaplığı mümkünse yeniden oluşturmak veya yeni bir tür kitaplığı sağlayıcınıza isteği isteyebilirsiniz. OLE Visual C++ ile sağlanan Görüntüleyici, sağlasa da onunla yenilikleri görmek için tür kitaplığı dosyayı görüntülemek için kullanmak isteyebilirsiniz.
+
+'tür kitaplığı': bozuk tür kitaplığı #import olamaz
+
+Belirtilen tür kitaplığı `#import` deyimi, derleyici tarafından okunamaz. Tür kitaplığı mümkünse yeniden oluşturmak veya yeni bir tür kitaplığı, tedarikçiden istek isteyebilirsiniz. Tür kitaplığı dosyasının sağlasa da onunla neler olacağıyla görüntülemek için OLE Visual C++ ile birlikte sağlanan Görüntüleyicisi'ni kullanmak isteyebilirsiniz.

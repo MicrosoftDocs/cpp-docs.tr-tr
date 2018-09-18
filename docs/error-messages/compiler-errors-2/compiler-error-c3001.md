@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a4c8275b1fc511ebf4e09b625f64cffae74a3ca6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c4cfa4dbd157a76422cfc86f20b72af5b84c15c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33263091"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051470"
 ---
 # <a name="compiler-error-c3001"></a>Derleyici Hatası C3001
-'error_text': bir OpenMP yönergesi adı bekleniyor  
-  
- `omp` Pragma yönergesi tarafından uyulması gerekir.  
-  
- Aşağıdaki örnek C3001 oluşturur:  
-  
-```  
-// C3001.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp   // C3001 missing token  
-}  
+
+'error_text': OpenMP yönergesi adı bekleniyor
+
+`omp` Pragma yönergesi tarafından gelmelidir.
+
+Aşağıdaki örnek, C3001 oluşturur:
+
+```
+// C3001.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp   // C3001 missing token
+}
 ```

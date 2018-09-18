@@ -16,42 +16,43 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 85b4cc897c5d24b841e7ad5c8428cd10d9a36961
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: b7d397eff2cfe561ace6f29b00601941779ef2b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245763"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053160"
 ---
 # <a name="compiler-error-c2939"></a>Derleyici Hatası C2939
-'class': türü sınıfı kimliği yerel veri değişken olarak yeniden tanımlandı  
-  
- Yerel veri değişkeni olarak bir genel veya Şablon sınıfı kullanamazsınız.  
-  
- Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.  
-  
- Aşağıdaki örnek C2939 oluşturur:  
-  
-```  
-// C2939.cpp  
-template<class T>  
-struct TC { };   
-int main() {  
-   int TC<int>;   // C2939  
-   int TC;   // OK  
-}  
-```  
-  
- Ayrıca C2939 genel türler kullanma ortaya çıkabilir:  
-  
-```  
-// C2939b.cpp  
-// compile with: /clr  
-generic<class T>  
-ref struct GC { };  
-  
-int main() {  
-   int GC<int>;   // C2939  
-   int GC;   // OK  
-}  
+
+'class': türü sınıf kimliği bir yerel veri değişken olarak yeniden tanımlandı
+
+Yerel veri değişkeni olarak bir genel veya Şablon sınıfı kullanamazsınız.
+
+Küme ayraçları yanlış eşleşirse bu hataya neden olabilir.
+
+Aşağıdaki örnek, C2939 oluşturur:
+
+```
+// C2939.cpp
+template<class T>
+struct TC { };
+int main() {
+   int TC<int>;   // C2939
+   int TC;   // OK
+}
+```
+
+C2939, genel türler kullanırken da meydana gelebilir:
+
+```
+// C2939b.cpp
+// compile with: /clr
+generic<class T>
+ref struct GC { };
+
+int main() {
+   int GC<int>;   // C2939
+   int GC;   // OK
+}
 ```

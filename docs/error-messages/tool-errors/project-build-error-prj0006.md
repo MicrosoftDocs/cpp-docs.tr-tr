@@ -16,32 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 151c22bf13c13de21e89a5c96185cf1c4c1ca349
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 264b2f90a2d778b1545117ce5c3b1272626ebad6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317485"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073258"
 ---
 # <a name="project-build-error-prj0006"></a>Proje Derleme Hatası PRJ0006
-Geçici dosya 'dosyası açılamadı. Dosyanın varolduğunu ve dizin değil yazma korumalı emin olun.  
-  
- Visual C++ derleme sırasında geçici dosya oluşturulamadı. Buna ilişkin nedenler:  
-  
--   Geçici dizin yok.  
-  
--   Salt okunur temp dizini.  
-  
--   Disk alanı yok.  
-  
--   $(Intdir) ya da klasördür salt okunur veya salt okunur geçici dosyaları içerir.  
-  
- Bu hata ayrıca hatası PRJ0007 ortaya çıkar: Çıktı 'dizin' oluşturulamadı. Hatası PRJ0007 $(ıntdir) dizin oluşturulamadı, geçici dosyaları oluşturma olduğunu belirtmek de başarısız olacak anlamına gelir.  
-  
- Belirttiğiniz her geçici dosyalar oluşturulur:  
-  
--   Bir yanıt dosyası.  
-  
--   Özel derleme adımı.  
-  
--   Bir yapı olayı.
+
+Geçici dosya 'dosyası açılamadı. Dosyanın varolduğundan ve dizinin değil yazma korumalı emin olun.
+
+Visual C++ derleme işlemi sırasında geçici dosya oluşturulamadı. Buna ilişkin nedenler:
+
+- Geçici dizin yok.
+
+- Geçici dizin salt okunur.
+
+- Disk alanı yetersiz.
+
+- $(Intdir) ya da klasördür salt okunur veya salt okunur geçici dosyalar içeriyor.
+
+Bu hata ayrıca şu hatayı PRJ0007 meydana gelir: çıkış dizini 'dizin' oluşturulamadı. Hatası PRJ0007 $(ıntdir) dizini oluşturulamadı, geçici olarak dosyalarının oluşturulmasını olduğunu belirtmek de başarısız olur anlamına gelir.
+
+Belirttiğiniz her geçici dosyalar oluşturulur:
+
+- Bir yanıt dosyası.
+
+- Özel derleme adımı.
+
+- Bir derleme olay.

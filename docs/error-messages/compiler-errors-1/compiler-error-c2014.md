@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 839fececb10897c799473ae328afb9f422b4c390
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4a9167d71e717490b89c1861abe9a9da9e0ab6a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165967"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064860"
 ---
 # <a name="compiler-error-c2014"></a>Derleyici Hatası C2014
-Önişlemci komutu ilk renkleri alan olarak başlamalıdır  
-  
- `#` Önişlemci yönergesi belirtisi ilk karakteri boşluk olmayan bir satırda olmalıdır.  
-  
- Aşağıdaki örnek C2014 oluşturur:  
-  
-```  
-// C2014.cpp  
-int k; #include <stdio.h>   // C2014  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2014b.cpp  
-// compile with: /c  
-int k;   
-#include <stdio.h>  
+
+Önişlemci komutu ilk boşluk olmayan karakterde başlamalıdır
+
+`#` Oturum önişlemci yönergesi, bir satırda beyaz boşluk olmayan ilk karakter olmalıdır.
+
+Aşağıdaki örnek, C2014 oluşturur:
+
+```
+// C2014.cpp
+int k; #include <stdio.h>   // C2014
+```
+
+Olası çözüm:
+
+```
+// C2014b.cpp
+// compile with: /c
+int k;
+#include <stdio.h>
 ```

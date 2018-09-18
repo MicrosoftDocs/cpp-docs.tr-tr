@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d015b5674ad8f64a68b86979ce93313fa098c867
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 48915f72acdaf0b02acd04de38f10fcdb2a20e93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296513"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065335"
 ---
 # <a name="compiler-warning-level-4-c4019"></a>Derleyici Uyarısı (düzey 4) C4019
-Genel kapsamlı boş deyim  
-  
- Noktalı genel kapsamlı bir deyimi tarafından öncesinde değil.  
-  
- Ek noktalı kaldırırsanız, bu uyarıyı düzeltilebilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4019.c  
-// compile with: /Za /W4  
-#define declint( varname ) int varname;  
-declint( a );   // C4019, int a;;  
-declint( b )   // OK, int b;  
-  
-int main()  
-{  
-}  
+
+Genel kapsamda boş deyim
+
+Genel kapsamda noktalı virgül deyimi tarafından öncesinde.
+
+Ek noktalı virgül kaldırmanız durumunda bu uyarı sabit olamaz.
+
+## <a name="example"></a>Örnek
+
+```
+// C4019.c
+// compile with: /Za /W4
+#define declint( varname ) int varname;
+declint( a );   // C4019, int a;;
+declint( b )   // OK, int b;
+
+int main()
+{
+}
 ```

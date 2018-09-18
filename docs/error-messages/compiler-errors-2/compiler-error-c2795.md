@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2431319c6da69dcb144dbb47b4fbb0e01c1eaa78
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 628aa2c0465018b635d015c56a0b38f69365bd88
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33236686"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060089"
 ---
 # <a name="compiler-error-c2795"></a>Derleyici Hatası C2795
-'super::function' üye işlevi değil  
-  
- Kullanmak istediğinizde bu hata iletisi görüntüleniyor [Süper](../../cpp/super.md) üye işlevi dışındaki bir üyeye erişmek için.
+
+'super::function' bir üye işlev değil
+
+Kullanmak istediğinizde, bu hata iletisi görünür [Süper](../../cpp/super.md) bir üye işlev dışındaki bir üyesine erişmek için.

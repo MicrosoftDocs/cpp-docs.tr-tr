@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa8a9f91050d1f8b7eab871ca81791c05829a077
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 748d6464994ef54cd20784a9004d5320389f0766
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198774"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046751"
 ---
 # <a name="fatal-error-c1075"></a>Önemli hata C1075
-Sol simge dosyanın sonunda eşleşmeyen  
-  
- Derleyici beklenen eşleşen *belirteci* önce dosya sonuna ulaşıldı.  
-  
- Bir eşleşmeyen ayracı parantezi, bu hataya neden olabilir veya diğer eşleştirilmiş karakter.
+
+Soldaki simge dosyasının sonunda eşleşmeyen
+
+Derleyici beklenen eşleşen *belirteci* önce dosya sonuna ulaşıldı.
+
+Bu hata bir eşleşmeyen köşeli ayraç tarafından küme ayracı, kaynaklanabilir veya diğer eşleştirilmiş karakter.

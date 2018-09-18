@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eec4b4b1df536a176fa05ea9095878ab5e1492cb
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 67adc99491a15503ee5580df37a612eb73013686
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33253373"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075897"
 ---
 # <a name="compiler-error-c3603"></a>Derleyici Hatası C3603
-'Simgesi': ' henüz desteklenmiyor ' yazın  
-  
- .NET çalışma zamanı'nda yönetilen bir nesne tarafından henüz desteklenmeyen bir veri türü kullanma girişimi.
+
+'Symbol': ' henüz desteklenmiyor ' yazın
+
+Henüz bir yönetilen nesne .NET çalışma zamanı tarafından desteklenmeyen bir veri türü kullanma girişimi.

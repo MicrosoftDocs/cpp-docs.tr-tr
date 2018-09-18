@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a92ab7a32babd181f282c799568e3a9dea436c49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8736902f4c3a1cfac7313806fde65d1b253716b3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33294040"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054239"
 ---
 # <a name="compiler-warning-level-4-c4718"></a>Derleyici Uyarısı (düzey 4) C4718
-'işlev çağrısı': Özyinelemeli çağrı silme hiçbir yan etkisi vardır  
-  
- Bir işlev yinelemeli bir çağrı içerir, ancak Aksi takdirde hiçbir yan etkisi vardır. Bu işlev için bir çağrı siliniyor. Program doğruluğunu etkilenmez, ancak bir davranıştır. Çalışma zamanı yığın taşması özel durumu içinde çağrısında bırakarak sonuçlanabilir gelirken, çağrı silinmesi bu olasılığı kaldırır.
+
+'işlev çağrısı': özyinelemeli çağrının silme hiçbir yan etkisi vardır
+
+Bir işlev Özyinelemeli çağrı içeriyor, ancak Aksi halde yan etkileri vardır. Bu işlev çağrısı siliniyor. Program doğruluğunu etkilenmez, ancak davranıştır. Çağrısında bırakarak çalışma zamanı yığın taşması özel neden olabilir ancak silme çağrısı bu olasılığını kaldırır.

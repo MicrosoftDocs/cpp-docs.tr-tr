@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7f121310318cbb91b1f983ec240b42d5d9ea34b8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f9c533ada388f876443021fbf159320f171a07a5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299968"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041851"
 ---
 # <a name="command-line-error-d8036"></a>Komut Satırı Hatası D8036
-'/ seçeneği' birden çok kaynak dosyalarını içeren izin verilmiyor  
-  
- Bu derleyici seçenekleri birden çok kaynak dosyalarıyla kullanılamaz:  
-  
--   Ad derleme dosyası listeleme (/ Fa)  
-  
--   Nesne dosyayı yeniden adlandırın (/ Fo)  
-  
--   Kaynak tarayıcı bilgileri yerel değişkenler olmadan oluşturun (/ Fr)  
-  
--   Yerel değişken içeren kaynak tarayıcısı bilgiler oluşturun (/ FR)
+
+'/ seçenek' birden çok kaynak dosyasıyla izin verilmiyor
+
+Bu derleyici seçeneklerinin birden çok kaynak dosyasıyla birlikte kullanılamaz:
+
+- Ad derleme dosyası listesi (/ Fa)
+
+- Nesne dosyası yeniden adlandır (/ Fo)
+
+- Kaynak tarayıcı bilgileri olmadan yerel değişkenleri oluşturun (/ Fr)
+
+- Yerel değişkenler içeren kaynak tarayıcı bilgisi oluştur (/ FR)

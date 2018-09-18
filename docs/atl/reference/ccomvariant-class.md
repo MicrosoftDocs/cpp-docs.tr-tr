@@ -30,12 +30,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf9fbd4967bbd3091d734f9b70aed9350d63a25e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 89b1dbfe9dcf00582f5f8736a4706a18439b51c6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43753200"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042552"
 ---
 # <a name="ccomvariant-class"></a>CComVariant sınıfı
 
@@ -43,9 +43,8 @@ Bu sınıf, depolanan veri türünü gösteren bir üye sağlama VARIANT türü 
 
 ## <a name="syntax"></a>Sözdizimi
 
-```  
-cpp
-class CComVariant : public tagVARIANT  
+```cpp
+class CComVariant : public tagVARIANT
 ```
 
 ## <a name="members"></a>Üyeler
@@ -108,7 +107,7 @@ HRESULT Attach(VARIANT* pSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*pSrc*  
+*pSrc*<br/>
 [in] İşaret [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) nesnesine eklenecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -151,39 +150,39 @@ CComVariant(const CComBSTR& bstrSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*varSrc*  
+*varSrc*<br/>
 [in] `CComVariant` Veya TÜREVLERİ başlatmak için kullanılan `CComVariant` nesne. Kaynak değişken içeriğini hedef dönüştürme olmadan kopyalanır.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] Başlatmak için kullanılan karakter dizesi `CComVariant` nesne. Geniş (Unicode) karakter sıfır ile sonlandırılmış dize oluşturucu veya bir ANSI dizesine LPCSTR sürüme LPCOLESTR sürümüne geçirebilirsiniz. Her iki durumda da, bir Unicode kullanılarak ayrılmış BSTR dizeye dönüştürülür `SysAllocString`. Türünü `CComVariant` nesne VT_BSTR olacaktır.
 
-*bSrc*  
+*bSrc*<br/>
 [in] **Bool** başlatmak için kullanılan `CComVariant` nesne. **Bool** depolanmadan önce bağımsız değişkeni için bir varıant_bool dönüştürülür. Türünü `CComVariant` nesne VT_BOOL olacaktır.
 
-*nSrc*  
+*nSrc*<br/>
 [in] **İnt**, **bayt**, **kısa**, **uzun**, LONGLONG, ULONGLONG, **işaretsiz**, **işaretsiz uzun**, veya **işaretsiz int** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne olacak VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4, sırasıyla.
 
-*vtSrc*  
+*vtSrc*<br/>
 [in] Değişken türü. İlk parametre olduğunda **int**, geçerli türler: VT_I4 ve VT_INT. İlk parametre olduğunda **uzun**, geçerli türler: VT_I4 ve VT_ERROR. İlk parametre olduğunda **çift**, geçerli türler: VT_R8 ve VT_DATE. İlk parametre olduğunda **işaretsiz int**, geçerli türler: VT_UI4 ve VT_UINT.
 
-*fltsrc &*  
+*fltsrc &*<br/>
 [in] **Float** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_R4 olacaktır.
 
-*dblsrc &*  
+*dblsrc &*<br/>
 [in] **Çift** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_R8 olacaktır.
 
-*cysrc &*  
+*cysrc &*<br/>
 [in] `CY` Başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_CY olacaktır.
 
-*pSrc*  
+*pSrc*<br/>
 [in] `IDispatch` Veya `IUnknown` işaretçi başlatmak için kullanılan `CComVariant` nesne. `AddRef` arabirim işaretçisi üzerinde çağrılır. Türünü `CComVariant` nesne olacak gt; vt_dıspatch & veya VT_UNKNOWN, sırasıyla.
 
 Veya, başlatmak için kullanılan SAFERRAY işaretçi `CComVariant` nesne. SAFEARRAY bir kopyasını depolanan `CComVariant` nesne. Türünü `CComVariant` nesne, özgün türü SAFEARRAY'i ve VT_ARRAY birleşimi olacaktır.
 
-*cSrc*  
+*cSrc*<br/>
 [in] **Char** başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_I1 olacaktır.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] BSTR başlatmak için kullanılan `CComVariant` nesne. Türünü `CComVariant` nesne VT_BSTR olacaktır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -212,10 +211,10 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 ### <a name="parameters"></a>Parametreler
 
-*vtNew*  
+*vtNew*<br/>
 [in] Yeni türü için `CComVariant` nesne.
 
-*pSrc*  
+*pSrc*<br/>
 [in] Değeri yeni türe dönüştürülüp dönüştürülmeyeceğini değişken bir işaretçi. Varsayılan değer NULL ise anlamı `CComVariant` nesne yerinde dönüştürülür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -252,7 +251,7 @@ HRESULT Copy(const VARIANT* pSrc);
 
 ### <a name="parameters"></a>Parametreler
 
-*pSrc*  
+*pSrc*<br/>
 [in] Bir işaretçi [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) kopyalanacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -269,7 +268,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 
 ### <a name="parameters"></a>Parametreler
 
-*pstrDest*  
+*pstrDest*<br/>
 İşaret içeriğini bir kopyasını alacak bir BSTR `CComVariant` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -290,7 +289,7 @@ HRESULT Detach(VARIANT* pDest);
 
 ### <a name="parameters"></a>Parametreler
 
-*pDest*  
+*pDest*<br/>
 [out] Temel alınan nesnenin değişken değerini döndürür.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -352,36 +351,36 @@ CComVariant& operator=(char cSrc) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*varSrc*  
+*varSrc*<br/>
 [in] `CComVariant` Veya [değişken](/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagvariant) atanacak `CComVariant` nesne. Kaynak değişken içeriğini hedef dönüştürme olmadan kopyalanır.
 
-*bstrSrc*  
+*bstrSrc*<br/>
 [in] Atanacak BSTR `CComVariant` nesne. Türünü `CComVariant` nesne VT_BSTR olacaktır.
 
-*lpszSrc*  
+*lpszSrc*<br/>
 [in] Atanacak karakter dizesi `CComVariant` nesne. Geniş (Unicode) karakter sıfır ile sonlandırılmış dize, işleci veya bir ANSI dizesine LPCSTR sürüme LPCOLESTR sürümüne geçirebilirsiniz. Her iki durumda da, bir Unicode kullanılarak ayrılmış BSTR dizeye dönüştürülür `SysAllocString`. Türünü `CComVariant` nesne VT_BSTR olacaktır.
 
-*bSrc*  
+*bSrc*<br/>
 [in] **Bool** atanacak `CComVariant` nesne. **Bool** depolanmadan önce bağımsız değişkeni için bir varıant_bool dönüştürülür. Türünü `CComVariant` nesne VT_BOOL olacaktır.
 
-*nSrc*  
+*nSrc*<br/>
 [in] **İnt**, BYTE, **kısa**, **uzun**, LONGLONG, ULONGLONG, **işaretsiz**, **işaretsiz uzun**, veya **işaretsiz int** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne olacak VT_I4, VT_UI1, VT_I2, VT_I4, VT_I8, VT_UI8, VT_UI2, VT_UI4 veya VT_UI4, sırasıyla.
 
-*fltsrc &*  
+*fltsrc &*<br/>
 [in] **Float** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne VT_R4 olacaktır.
 
-*dblsrc &*  
+*dblsrc &*<br/>
 [in] **Çift** atanacak `CComVariant` nesne. Türünü `CComVariant` nesne VT_R8 olacaktır.
 
-*cysrc &*  
+*cysrc &*<br/>
 [in] `CY` Atanacak `CComVariant` nesne. Türünü `CComVariant` nesne VT_CY olacaktır.
 
-*pSrc*  
+*pSrc*<br/>
 [in] `IDispatch` Veya `IUnknown` atanacak işaretçi `CComVariant` nesne. `AddRef` arabirim işaretçisi üzerinde çağrılır. Türünü `CComVariant` nesne olacak gt; vt_dıspatch & veya VT_UNKNOWN, sırasıyla.
 
 Veya, atanacak SAFEARRAY'i işaretçi `CComVariant` nesne. SAFEARRAY bir kopyasını depolanan `CComVariant` nesne. Türünü `CComVariant` nesne, özgün türü SAFEARRAY'i ve VT_ARRAY birleşimi olacaktır.
 
-*cSrc*  
+*cSrc*<br/>
 [in] Atanacak char `CComVariant` nesne. Türünü `CComVariant` nesne VT_I1 olacaktır.
 
 ##  <a name="operator_eq_eq"></a>  CComVariant::operator ==
@@ -446,7 +445,7 @@ HRESULT ReadFromStream(IStream* pStream);
 
 ### <a name="parameters"></a>Parametreler
 
-*pStream*  
+*pStream*<br/>
 [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) akış verilerini içeren bir arabirimdeki.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -468,10 +467,10 @@ void SetByRef(T* pT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Bir değişken, örneğin, BSTR türünde **int**, veya **char**.
 
-*PT*  
+*PT*<br/>
 İşaretçiyi başlatmak için kullanılan `CComVariant` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -490,7 +489,7 @@ HRESULT WriteToStream(IStream* pStream);
 
 ### <a name="parameters"></a>Parametreler
 
-*pStream*  
+*pStream*<br/>
 [in] Bir işaretçi [IStream](/windows/desktop/api/objidl/nn-objidl-istream) arabirimdeki bir akış.
 
 ### <a name="return-value"></a>Dönüş Değeri

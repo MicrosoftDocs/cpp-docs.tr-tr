@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 278783563d883d150f61d4c1e54ffef8287e24b5
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9f8beea0aa8ff319ab6bd5b33e8111a85e474549
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163442"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063963"
 ---
 # <a name="compiler-error-c2074"></a>Derleyici Hatası C2074
-'tanımlayıcısı': 'sınıf anahtarı' başlatma süslü ayraçlar gerekiyor  
-  
- Belirtilen sınıf, yapı veya birleşim Başlatıcı geçici hiçbir süslü ayraçlar vardı.
+
+'identifier': 'sınıf anahtarı' başlatma gerekli küme ayracı
+
+Belirtilen sınıf, yapı veya birleşim Başlatıcı etrafında hiçbir küme ayracı vardı.

@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dce01ecbc6913c844cadcf2d3f761cfe815f68a2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4ee5fc5467e656bd811c89f78ecf7d36f6df1b54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301534"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066394"
 ---
 # <a name="expression-evaluator-error-cxx0055"></a>İfade Değerlendirici Hatası CXX0055
-İçerik işlecinde belirsiz simgesi  
-  
- Context işleci dosyasındaki bir simge (**{}**) programı birden fazla sembol başvurulan.  
-  
- Kapsam çözümü işleci (`::`) karışıklığı çözmek mümkün olabilir.  
-  
- Bu hata için CAN0055 aynıdır.
+
+bağlam işlecinde belirsiz simge
+
+Bağlam işlecinde bir simge (**{}**) programda birden fazla sembol göstermektedir.
+
+Kapsam çözümleme işleci (`::`) belirsizliği çözmek mümkün olabilir.
+
+Bu hata için CAN0055 aynıdır.

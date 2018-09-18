@@ -16,24 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 815a669bc359121b13b1d636009cad81dc332304
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 36c6ac4d8c3e2899b744d1c456ae3079ec031698
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296308"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053589"
 ---
 # <a name="compiler-warning-level-4-c4295"></a>Derleyici Uyarısı (düzey 4) C4295
-  
-> '*dizi*': dizidir sonlandırma bir null karakter dahil etmek için çok küçük  
-  
-Bir dizi başlatıldı, ancak dizi son karakter bir null değil; dizi bir dize olarak erişme beklenmeyen sonuçlara neden olabilir.  
-  
-## <a name="example"></a>Örnek  
-  
-Aşağıdaki örnek C4295 oluşturur. Bu sorunu gidermek için dizi büyüklüğü tutabilecek kadar büyük bildirebilirsiniz sonlandırma null Başlatıcı dize veya bir dizi budur hedefi Temizle yapmak için bir dizi başlatıcı listesi kullanabilirsiniz `char`, bir null ile sonlandırılmış dize değil.  
-  
-```C  
+
+> '*dizi*': dizi Sonlandırıcı null karakterini içeremeyecek kadar küçük
+
+Bir dizi başlatıldı ancak dizideki son karakter bir null değil. dize olarak dizi erişme beklenmeyen sonuçlara neden olabilir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4295 oluşturur. Bu sorunu gidermek için dizi boyutu daha büyük tutacak bildirebilirsiniz Başlatıcı dize veya bir sonlandırıcı null bir dizi başlatıcı listesi bir dizi olan hedefi açıkça kullanabilir `char`, bir null ile sonlandırılmış dize değil.
+
+```C
 // C4295.c
 // compile with: /W4
 

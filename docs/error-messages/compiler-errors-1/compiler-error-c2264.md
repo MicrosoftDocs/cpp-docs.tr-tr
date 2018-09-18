@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8942c5537e7129c5ecd8b8ac6956fdd6c9e1efaa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e5b6f2cdf7a0c9708a34acd3e73241e942b2194b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168951"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045880"
 ---
 # <a name="compiler-error-c2264"></a>Derleyici Hatası C2264
-'function': hata işlev tanımı ya da bildiriminde; çağrılmaz işlevi  
-  
- Yanlış tanımı veya bildirimi nedeniyle işlevi çağrılamaz.  
-  
- Aşağıdaki örnek C2264 oluşturur:  
-  
-```  
-// C2264.cpp  
-struct C {  
-   // Delete the following line to resolve.  
-   operator int(int = 0){}   // incorrect declaration  
-};  
-  
-struct D {  
-   operator int(){return 0;}   // OK  
-};  
-  
-int main() {  
-   int i;  
-  
-   C c;  
-   i = c;   // C2264  
-  
-   D d;  
-   i = d;   // OK  
-}  
+
+'function': işlev tanımında veya bildiriminde hata işlev çağrılmadı
+
+İşlevi, bir tanım geçersiz veya bildirimi nedeniyle çağrılamaz.
+
+Aşağıdaki örnek, C2264 oluşturur:
+
+```
+// C2264.cpp
+struct C {
+   // Delete the following line to resolve.
+   operator int(int = 0){}   // incorrect declaration
+};
+
+struct D {
+   operator int(){return 0;}   // OK
+};
+
+int main() {
+   int i;
+
+   C c;
+   i = c;   // C2264
+
+   D d;
+   i = d;   // OK
+}
 ```

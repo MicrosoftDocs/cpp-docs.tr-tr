@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bf6287ff3c44d508a3e4293340e652edb201282f
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: e7e9e9ecad2f6ea53e2f922799340eee47dd4a7e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33694413"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037495"
 ---
 # <a name="atomic"></a>atomic
-Belirleyen bir bellek konumundan otomatik olarak güncelleştirilir.  
+Belirten bir bellek konumuna atomik olarak güncelleştirilecek.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,13 +34,13 @@ Belirleyen bir bellek konumundan otomatik olarak güncelleştirilir.
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `expression`  
- Birden çok yazma karşı korumak istediğiniz bellek konumu lvalue içeren ifade. OpenMP belirtimi yasal ifade formları hakkında daha fazla bilgi için bkz.  
+*İfade*<br/>
+Bellek konumu lvalue içeren deyimi birden fazla yazma karşı korumak istiyorsunuz. OpenMP belirtiminin yasal ifade biçimleri hakkında daha fazla bilgi için bkz.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `atomic` Yönergesi yok OpenMP yan tümceleri destekler.  
   
- Daha fazla bilgi için bkz: [2.6.4 atomic oluşturmak](../../../parallel/openmp/2-6-4-atomic-construct.md).  
+ Daha fazla bilgi için [2.6.4 atomic oluşturmak](../../../parallel/openmp/2-6-4-atomic-construct.md).  
   
 ## <a name="example"></a>Örnek  
   

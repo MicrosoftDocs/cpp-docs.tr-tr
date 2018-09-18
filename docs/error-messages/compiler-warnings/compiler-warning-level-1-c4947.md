@@ -16,54 +16,56 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: eee8c74e6767f881358db3d4ce21887b56da123e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fccb30128392c5e6de12f33f58e207502643e002
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290536"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050456"
 ---
 # <a name="compiler-warning-level-1-c4947"></a>Derleyici Uyarısı (düzey 1) C4947
-'type_or_member': kullanımdan kaldırılmış olarak işaretlenmiş  
-  
-Bir üye ya da türü ile kullanımdan kaldırılmış olarak işaretlenmiş <xref:System.ObsoleteAttribute> sınıfı.  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C4947 oluşturur:  
-  
-```cpp  
-// C4947.cpp  
-// compile with: /clr /W1  
-// C4947 expected  
-using namespace System;  
-  
-[System::ObsoleteAttribute]  
-ref struct S {  
-   [System::ObsoleteAttribute]  
-   int i;  
-  
-   [System::ObsoleteAttribute]  
-   void mFunc(){}  
-};  
-  
-// Any reference to Func1 should generate a warning  
-[System::ObsoleteAttribute]  
-Int32 Func1(Int32 a, Int32 b) {  
-   return (a + b);  
-}  
-  
-// Any reference to Func2 should generate a warning with  message  
-[System::ObsoleteAttribute("Will be removed in next version")]  
-Int32 Func2(Int32 a, Int32 b) {  
-   return (a + b);  
-}  
-  
-int main() {  
-   Int32 MyInt1 = ::Func1(2, 2);  
-   Int32 MyInt2 = ::Func2(2, 2);  
-  
-   S^ s = gcnew S();  
-   s->i = 10;  
-   s->mFunc();  
-}  
+
+'type_or_member': eski olarak işaretlendi
+
+Bir üyenin veya türün ile eski olarak işaretlendi <xref:System.ObsoleteAttribute> sınıfı.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4947 oluşturur:
+
+```cpp
+// C4947.cpp
+// compile with: /clr /W1
+// C4947 expected
+using namespace System;
+
+[System::ObsoleteAttribute]
+ref struct S {
+   [System::ObsoleteAttribute]
+   int i;
+
+   [System::ObsoleteAttribute]
+   void mFunc(){}
+};
+
+// Any reference to Func1 should generate a warning
+[System::ObsoleteAttribute]
+Int32 Func1(Int32 a, Int32 b) {
+   return (a + b);
+}
+
+// Any reference to Func2 should generate a warning with  message
+[System::ObsoleteAttribute("Will be removed in next version")]
+Int32 Func2(Int32 a, Int32 b) {
+   return (a + b);
+}
+
+int main() {
+   Int32 MyInt1 = ::Func1(2, 2);
+   Int32 MyInt2 = ::Func2(2, 2);
+
+   S^ s = gcnew S();
+   s->i = 10;
+   s->mFunc();
+}
 ```

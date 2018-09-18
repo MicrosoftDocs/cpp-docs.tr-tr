@@ -21,15 +21,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: cf679abbeb1134332d98ef0bd2ba8f2b845d30a4
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5df2ad30fca410a71bc6333e34948bc938ca38d2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688693"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040003"
 ---
 # <a name="schedulegroup-class"></a>ScheduleGroup Sınıfı
-Bir zamanlama grubu için bir Özet temsil eder. Zamanlama grupları bir dizi ilgili iş geçici olarak, başka bir gruba geçmeden önce aynı gruptaki başka bir görev yürütme ya da dağınık şekilde, aynı aynı grubu içindeki birden çok öğe çalıştırarak birbirine yakın zamanlanma gelen o avantajları düzenleyin. NUMA düğümü veya fiziksel yuva.  
+Bir zamanlama grubu için bir soyutlamayı temsil eder. Zamanlama grupları zamansal olarak, başka bir gruba geçmeden önce aynı grupta başka bir görev yürütülürken veya mekan, aynı birden çok öğe aynı grupta yürüterek birbirine yakın zamanlanmasını gelen faydalanan bir dizi ilgili iş düzenleme NUMA düğümünde veya fiziksel yuvadaki.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -49,10 +49,10 @@ class ScheduleGroup;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Kimliği](#id)|Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı döndürür.|  
-|[Başvuru](#reference)|Zamanlama Grup başvurusu sayısını artırır.|  
-|[Sürüm](#release)|Azaltır Zamanlayıcı Grup başvurusu sayısı.|  
-|[ScheduleTask](#scheduletask)|Hafif görev zamanlama grubundaki zamanlar.|  
+|[Kimliği](#id)|Grubun ait olduğu zamanlayıcıda benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.|  
+|[Başvuru](#reference)|Zamanlama grubu başvuru sayısını artırır.|  
+|[Sürüm](#release)|Zamanlayıcı grubu başvuru sayısını azaltır.|  
+|[ScheduleTask](#scheduletask)|Bir zamanlama grubundaki hafif görevi zamanlar.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `ScheduleGroup`  
@@ -64,18 +64,18 @@ class ScheduleGroup;
   
 ##  <a name="id"></a> Kimliği 
 
- Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı döndürür.  
+ Grubun ait olduğu zamanlayıcıda benzersiz olan zamanlama grubu için bir tanımlayıcı döndürür.  
   
 ```
 virtual unsigned int Id() const = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Grubun ait olduğu Zamanlayıcı içinde benzersizdir zamanlama grubu için bir tanımlayıcı.  
+ Grubun ait olduğu zamanlayıcıda benzersiz olan zamanlama grubu için bir tanımlayıcı.  
   
 ##  <a name="operator_delete"></a> delete işleci 
 
- A `ScheduleGroup` nesne bozulur dahili olarak çalışma zamanı tarafından tüm dış başvuruları yayımlandığında. Açıkça silinemiyor.  
+ A `ScheduleGroup` nesnesi yok edildiğinde dahili olarak çalışma zamanı tarafından tüm dış başvuruları serbest bırakıldığında. Açıkça silinemiyor.  
   
 ```
 void operator delete(
@@ -89,26 +89,26 @@ void operator delete(
 ```    
   
 ### <a name="parameters"></a>Parametreler  
- `_PObject`  
- Silinecek nesne için bir işaretçi.  
+*_PObject*<br/>
+Silinecek nesnenin bir işaretçi.  
   
 ##  <a name="reference"></a> Başvuru 
 
- Zamanlama Grup başvurusu sayısını artırır.  
+ Zamanlama grubu başvuru sayısını artırır.  
   
 ```
 virtual unsigned int Reference() = 0;
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Yeni artırılır başvuru sayısı.  
+ Yeni artan başvuru sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu, genellikle zamanlama Grup birleşim için kullanım ömrünü yönetmek için kullanılır. Bir zamanlama grubu başvuru sayısı sıfıra düşerse, zamanlama Grup çalışma zamanı tarafından silindi. Ya da kullanılarak oluşturulan bir zamanlama grubu [CurrentScheduler::CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) yöntemini veya [Scheduler::CreateScheduleGroup](scheduler-class.md#createschedulegroup) yöntemi başlar bir başvuru sayısına.  
+ Bu, genellikle birleştirme için zamanlama grubu ömrünü yönetmek için kullanılır. Bir zamanlama grubu başvuru sayısını sıfıra düşerse, zamanlama grubu için çalışma zamanı tarafından silindi. Ya da kullanılarak oluşturulan bir zamanlama grubu [CurrentScheduler::CreateScheduleGroup](currentscheduler-class.md#createschedulegroup) yöntemi veya [Scheduler::CreateScheduleGroup](scheduler-class.md#createschedulegroup) yöntemi bir başvuru sayımı Bir'den başlatır.  
   
-##  <a name="release"></a> Sürüm 
+##  <a name="release"></a> Yayın 
 
- Azaltır Zamanlayıcı Grup başvurusu sayısı.  
+ Zamanlayıcı grubu başvuru sayısını azaltır.  
   
 ```
 virtual unsigned int Release() = 0;
@@ -118,9 +118,9 @@ virtual unsigned int Release() = 0;
  Yeni indirildiği başvuru sayısı.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu, genellikle zamanlama Grup birleşim için kullanım ömrünü yönetmek için kullanılır. Bir zamanlama grubu başvuru sayısı sıfıra düşerse, zamanlama Grup çalışma zamanı tarafından silindi. Adlı sonra `Release` yöntemi oluşturma kaldırmak için belirli sayıda başvuru sayısı ve kullanılarak yerleştirilen herhangi bir ek başvurular `Reference` yöntemi, daha fazla zamanlama Grup kullanan olamaz. Bunun yapılması tanımsız davranışlara neden.  
+ Bu, genellikle birleştirme için zamanlama grubu ömrünü yönetmek için kullanılır. Bir zamanlama grubu başvuru sayısını sıfıra düşerse, zamanlama grubu için çalışma zamanı tarafından silindi. Çağrısı yapmanız sonrasında `Release` yöntemi oluşturma kaldırmak için belirli sayıda başvuru sayısı ve herhangi ek başvurular kullanarak yerleştirilen `Reference` yöntemi, daha fazla zamanlama grubu faydalanamaz. Bunun yapılması, tanımsız davranışlara neden.  
   
- Belirli Zamanlayıcı örneği ile ilişkili bir zamanlama grubudur. Zamanlayıcı tüm başvurularını serbest önce ikinci yok zamanlayıcıda neden olabilir çünkü zamanlama Grup yapılan tüm başvuruları yayımlanan emin olmanız gerekir. Tanımsız davranış aksi sonuçlarında yapılıyor.  
+ Bir zamanlama grubu, belirli bir zamanlayıcı örneğini ile ilişkilidir. Tüm başvuruları Zamanlayıcı yayımlanmadan önce ikinci imha Zamanlayıcısı'nda neden olabileceğinden zamanlama grubu için tüm başvurularını serbest bırakıldığından emin olmanız gerekir. Aksi takdirde sonuç tanımsız davranışa yapılıyor.  
   
 ##  <a name="dtor"></a> ~ ScheduleGroup 
 
@@ -130,7 +130,7 @@ virtual ~ScheduleGroup();
   
 ##  <a name="scheduletask"></a> ScheduleTask 
 
- Hafif görev zamanlama grubundaki zamanlar.  
+ Bir zamanlama grubundaki hafif görevi zamanlar.  
   
 ```
 virtual void ScheduleTask(
@@ -139,14 +139,14 @@ virtual void ScheduleTask(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Proc`  
- İşlev gövdesi hafif görev gerçekleştirmek için bir işaretçi.  
+*_Proc*<br/>
+İşlev gövdesi basit görev gerçekleştirmek için yürütmek için bir işaretçi.  
   
- `_Data`  
- Görev gövdesi için parametre olarak geçirilen verileri void işaretçi.  
+*_Veri*<br/>
+Void bir işaretçi verilere gövdesi bir görev için bir parametre olarak geçirilir.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Çağırma `ScheduleTask` yöntemi örtük olarak yerleştirir başvuru sayısı çalışma zamanı tarafından görev yürütüldükten sonra uygun bir zamanda kaldırılan zamanlama grubunda.  
+ Çağırma `ScheduleTask` yöntemi örtülü olarak yerleştirir başvuru sayısını görev yürütüldükten sonra uygun bir zamanda çalışma zamanı tarafından kaldırılır zamanlama grubu üzerinde.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Namespace](concurrency-namespace.md)   

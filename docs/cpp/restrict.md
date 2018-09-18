@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b3eb361d0b92a3977547388ebfd612915431ec98
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 955c3574358d59d23b644a31e42ee91ce6ce76eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463687"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068344"
 ---
 # <a name="restrict"></a>restrict
 
@@ -32,21 +32,21 @@ Bir işlev bildiriminin ya da bir işaretçi türü döndüren tanımı uyguland
 
 ## <a name="syntax"></a>Sözdizimi
 
-> **__declspec(restrict)** *pointer_return_type* *işlevi*();  
-  
+> **__declspec(restrict)** *pointer_return_type* *işlevi*();
+
 ## <a name="remarks"></a>Açıklamalar
 
 Derleyici yayar **__declspec(restrict)**. Örneğin CRT `malloc` işleve sahip bir **__declspec(restrict)** düzenleme ve bu nedenle, derleyici varsayar işaretçiler tarafından bellek konumları için başlatılan `malloc` ayrıca diğer adlı olarak olmayan daha önce Varolan işaretçilerin.
 
-Derleyici, döndürülen işaretçi gerçekten diğer adlı olmadığını denetlemez. Program yapar olmayan diğer ad ile işaretlenmiş bir işaretçi emin olmak için korumanın geliştiricinin sorumluluğunda olan **__declspec kısıtlama** değiştiricisi.  
-  
+Derleyici, döndürülen işaretçi gerçekten diğer adlı olmadığını denetlemez. Program yapar olmayan diğer ad ile işaretlenmiş bir işaretçi emin olmak için korumanın geliştiricinin sorumluluğunda olan **__declspec kısıtlama** değiştiricisi.
+
 Değişkenleri, benzer semantiğe için bkz. [__restrict](../cpp/extension-restrict.md).
- 
+
 Diğer ad kullanımı bir işlev içinde geçerlidir başka bir açıklama için bkz. [__declspec(noalias)](../cpp/noalias.md).
-  
-Hakkında bilgi için **kısıtlama** C++ AMP parçası olan anahtar sözcüğü bkz [(C++ AMP) kısıtlama](../cpp/restrict-cpp-amp.md).  
- 
-## <a name="example"></a>Örnek  
+
+Hakkında bilgi için **kısıtlama** C++ AMP parçası olan anahtar sözcüğü bkz [(C++ AMP) kısıtlama](../cpp/restrict-cpp-amp.md).
+
+## <a name="example"></a>Örnek
 
 Aşağıdaki örnek, kullanımını gösterir **__declspec(restrict)**.
 
@@ -122,6 +122,7 @@ int main()
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Anahtar Sözcükler](../cpp/keywords-cpp.md)  
- [__declspec](../cpp/declspec.md)  
- [__declspec(noalias)](../cpp/noalias.md)  
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[__declspec](../cpp/declspec.md)<br/>
+[__declspec(noalias)](../cpp/noalias.md)

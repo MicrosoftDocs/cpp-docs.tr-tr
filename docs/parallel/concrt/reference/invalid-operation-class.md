@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa6d1152bb1f9a9c5671d1f7f0cdf0e426c02575
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: c189649447b318a651957c82b8cfab8cd11fb60a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33696103"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054837"
 ---
 # <a name="invalidoperation-class"></a>invalid_operation Sınıfı
-Bu sınıf daha doğru bir şekilde eşzamanlılık çalışma zamanı tarafından oluşturulan başka bir özel durum türü tarafından açıklanmayan geçersiz bir işlem gerçekleştirilirken oluşturulan bir özel açıklar.  
+Bu sınıf, daha doğru bir şekilde eşzamanlılık çalışma zamanı tarafından oluşturulan başka bir özel durum türü tarafından açıklanmayan geçersiz bir işlem gerçekleştirildiğinde verilen bir özel durumu anlatmaktadır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,10 +40,10 @@ class invalid_operation : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[invalid_operation](#ctor)|Fazla Yüklendi. Oluşturan bir `invalid_operation` nesnesi.|  
+|[invalid_operation](#ctor)|Fazla Yüklendi. Oluşturur bir `invalid_operation` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Bu özel durum çeşitli yöntemleri, genellikle hangi durumlarda bunlar, özel durum oluşturacak altında belge.  
+ Bu özel durumun oluşturulacağı çeşitli yöntemler genellikle hangi durumlarda bunlar, altında oluşturulacağını belgeler.  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -57,7 +57,7 @@ class invalid_operation : public std::exception;
   
 ##  <a name="ctor"></a> invalid_operation 
 
- Oluşturan bir `invalid_operation` nesnesi.  
+ Oluşturur bir `invalid_operation` nesne.  
   
 ```
 explicit _CRTIMP invalid_operation(_In_z_ const char* _Message) throw();
@@ -66,8 +66,8 @@ invalid_operation() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

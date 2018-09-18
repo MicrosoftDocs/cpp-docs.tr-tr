@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 213d72e39575b447787c3e0ead7910baedc8e815
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fe457f9a6181fa11b34dd615ad4d5b9637c8bddc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290003"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045178"
 ---
 # <a name="compiler-warning-level-3-c4023"></a>Derleyici Uyarısı (Düzey 3) C4023
-'simgesi': tabanlı işaretçi prototipi oluşturulmamış işlevine geçirilen: parametre numarası  
-  
- Prototipi oluşturulmamış işleve göre bir işaretçi geçirme ile öngörülemeyen sonuçlara normalleştirilmiş için işaretçiyi neden olur.  
-  
- Tabanlı işaretçiler geçirilen prototip işlevleri kullanırsanız, bu uyarıyı düzeltilebilir.
+
+'symbol': prototipi oluşturulmamış işleve based işaretçi geçirildi: parametre numarası
+
+Bir prototipi oluşturulmamış işleve based işaretçi geçirme işaretçiyi, beklenmeyen sonuçlarla normalleştirilmesine neden olur.
+
+Tabanlı işaretçiler geçirilen prototip işlevleri kullanıyorsanız bu uyarıyı sabit olamaz.

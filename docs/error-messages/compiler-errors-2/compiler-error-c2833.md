@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ff066510292690bc940f18ab8d63605eb8627308
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 53360c1eaf81ad407589fbdb125d9e6fe017708e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070177"
 ---
 # <a name="compiler-error-c2833"></a>Derleyici Hatası C2833
-'işleci işleci' tanınan işleci veya türü değil  
-  
- Word `operator` geçersiz kılmak istediğiniz bir işleç veya dönüştürmek istediğiniz bir türü tarafından gelmelidir.  
-  
- Yönetilen bir tür tanımlayabilirsiniz işleçleri listesi için bkz: [kullanıcı tanımlı işleçler](../../dotnet/user-defined-operators-cpp-cli.md).  
-  
- Aşağıdaki örnek C2833 oluşturur:  
-  
-```  
-// C2833.cpp  
-// compile with: /c  
-class A {};  
-  
-void operator ::* ();   // C2833  
-void operator :: ();   // OK  
+
+'operator işleci' tanınan bir işleç veya tür değil
+
+Word `operator` geçersiz kılmak istediğiniz bir işleç veya dönüştürmek istediğiniz bir türe göre gelmelidir.
+
+Yönetilen bir tür tanımlayabilirsiniz işleçleri bir listesi için bkz. [kullanıcı tanımlı işleçler](../../dotnet/user-defined-operators-cpp-cli.md).
+
+Aşağıdaki örnek, C2833 oluşturur:
+
+```
+// C2833.cpp
+// compile with: /c
+class A {};
+
+void operator ::* ();   // C2833
+void operator :: ();   // OK
 ```

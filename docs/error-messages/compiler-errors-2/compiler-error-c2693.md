@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5bed9c0dcad60febf343357ee3e0762ab3d93ef6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2ecf51f5fdbe7d1c6b5d5070e048c69bfc840460
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33232780"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051262"
 ---
 # <a name="compiler-error-c2693"></a>Derleyici Hatası C2693
-'işleci': yönetilen başvurular veya WinRT dizi için geçersiz karşılaştırma  
-  
- Yönetilen bir test edilemez veya eşitsizlik herhangi bir tür için WinRT dizisi. Örneğin, yönetilen diziler eşit ancak bir dizi büyük ya da başka bir dizi değerinden olup olmadığını görmek için test edilemez görmek için test edebilirsiniz.  
+
+'operator': yönetilen başvurular veya WinRT dizi için geçersiz karşılaştırma
+
+Yönetilen bir test edilemez veya herhangi bir türden eşitsizlik için WinRT dizisi. Örneğin, yönetilen diziler eşit ancak bir dizi büyük veya başka bir dizi küçük olup olmadığını görmek için test edilemez görmek için test edebilirsiniz.

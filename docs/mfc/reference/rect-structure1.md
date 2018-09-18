@@ -1,5 +1,5 @@
 ---
-title: RECT Structure1 | Microsoft Docs
+title: RECT yapısı1 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b61c794b8fa383eeea62459a5a83948ef2efe10
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2e71459a1c22b9295c5c88ce29da9e494660fa26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33372599"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046309"
 ---
-# <a name="rect-structure1"></a>RECT Structure1
-`RECT` Yapısı dikdörtgenin sol üst ve sağ alt köşe koordinatlarını tanımlar.  
+# <a name="rect-structure1"></a>RECT yapısı1
+`RECT` Yapısını tanımlayan bir dikdörtgenin sol ve sağ alt köşe koordinatları.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,17 +40,17 @@ typedef struct tagRECT {
 ```  
   
 ## <a name="members"></a>Üyeler  
- `left`  
- Dikdörtgene sol üst köşesindeki x koordinatını belirtir.  
+`left`<br/>
+Bir dikdörtgenin sol üst köşesinin x koordinatını belirtir.  
   
- `top`  
- Dikdörtgene sol üst köşesindeki y koordinatını belirtir.  
+`top`<br/>
+Dikdörtgenin sol üst köşesinin y koordinatını belirtir.  
   
- `right`  
- Sağ alt köşedeki dikdörtgenin x koordinatını belirtir.  
+`right`<br/>
+Bir dikdörtgenin sağ alt köşesinin x koordinatını belirtir.  
   
- `bottom`  
- Dikdörtgene sağ alt köşesindeki y koordinatını belirtir.  
+`bottom`<br/>
+Bir dikdörtgenin sağ alt köşesinin y koordinatını belirtir.  
   
 ## <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFC_Utilities#38](../../mfc/codesnippet/cpp/rect-structure1_1.cpp)]  
@@ -59,5 +59,5 @@ typedef struct tagRECT {
  **Başlık:** windef.h  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Yapılar, stiller, geri aramalar ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
+ [Yapılar, stiller, geri çağırmaları ve ileti eşlemeleri](../../mfc/reference/structures-styles-callbacks-and-message-maps.md)   
  [CRect Sınıfı](../../atl-mfc-shared/reference/crect-class.md)

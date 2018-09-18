@@ -16,55 +16,58 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 29c2d6b0328fd8dd4cd6f9a226253036b62d03ab
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1d15072099c6329eced8ab9dd9c78f8f48c31fe7
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33295762"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057146"
 ---
 # <a name="compiler-warning-level-4-c4702"></a>Derleyici Uyarısı (düzey 4) C4702
-koda erişilemiyor  
-  
- Bu uyarı için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucudur: koda erişilemiyor. Derleyici (arka uç) ulaşılamaz kod algıladığında C4702, oluşturur düzey 4 uyarı.  
-  
- Visual C++, Visual Studio .NET 2003 ve Visual Studio sürümlerinde geçerli olan kodu için ulaşılamaz kod kaldırın veya tüm kaynak kodu yürütme bazı akış tarafından erişilebilir olduğunu güvence altına alır.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4702 oluşturur.  
-  
-```  
-// C4702.cpp  
-// compile with: /W4  
-#include <stdio.h>  
-  
-int main() {  
-   return 1;  
-   printf_s("I won't print.\n");   // C4702 unreachable  
-}  
-```  
-  
-## <a name="example"></a>Örnek  
- İle derleme yapılırken **/GX**, **/EHc**, **/EHsc**, veya **/EHac** ve extern C işlevleri kullanarak, kodu erişilemiyor olabilir çünkü extern C işlev oluşturma için kabul edilir, böylece catch bloğu erişilebilir değil.  İle bir işlev atabilirsiniz çünkü bu uyarıyı geçersiz olduğunu düşünüyorsanız, derleme **/EHa** veya **/EHs**bağlı olarak özel durum belirtildi.  
-  
- Daha fazla bilgi için bkz: [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) daha fazla bilgi için.  
-  
- Aşağıdaki örnek C4702 oluşturur.  
-  
-```  
-// C4702b.cpp  
-// compile with: /W4 /EHsc  
-#include <iostream>  
-  
-using namespace std;  
-extern "C" __declspec(dllexport) void Function2(){}  
-  
-int main() {  
-   try {  
-      Function2();  
-   }  
-   catch (...) {  
-      cout << "Exp: Function2!" << endl;   // C4702  
-   }  
-}  
+
+erişilemeyen kodları
+
+Bu bir uyarıdır için Visual Studio .NET 2003 yapıldığı derleyici uyumluluğu iş sonucu: erişilemeyen kod. Erişilemeyen kod derleyici (arka uç) algıladığında, C4702, oluşturur bir düzey 4 uyarısı.
+
+Visual Studio .NET 2003 ve Visual Studio .NET Visual C++ sürümlerinde geçerli olan kod, erişilemeyen kodları kaldırma veya tüm kaynak kodu yürütme bazı flow tarafından erişilebilir olduğunu güvence altına alır.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4702 oluşturur.
+
+```
+// C4702.cpp
+// compile with: /W4
+#include <stdio.h>
+
+int main() {
+   return 1;
+   printf_s("I won't print.\n");   // C4702 unreachable
+}
+```
+
+## <a name="example"></a>Örnek
+
+İle derlerken **/GX**, **/ehc**, **/ehsc**, veya **/EHac** ve extern C işlevleri'ni kullanarak kod ulaşılamaz hale gelebilir çünkü extern C İşlevler oluşturma için kabul edilir, böylece catch bloğu erişilebilir değil.  Bir işlev oluşturabilecek çünkü bu uyarının geçerli olmadığını düşünüyorsanız, derleme **/eha** veya **EHS**bağlı olarak özel durum oluştu.
+
+Daha fazla bilgi için [/EH (özel durum işleme modeli)](../../build/reference/eh-exception-handling-model.md) daha fazla bilgi için.
+
+Aşağıdaki örnek, C4702 oluşturur.
+
+```
+// C4702b.cpp
+// compile with: /W4 /EHsc
+#include <iostream>
+
+using namespace std;
+extern "C" __declspec(dllexport) void Function2(){}
+
+int main() {
+   try {
+      Function2();
+   }
+   catch (...) {
+      cout << "Exp: Function2!" << endl;   // C4702
+   }
+}
 ```

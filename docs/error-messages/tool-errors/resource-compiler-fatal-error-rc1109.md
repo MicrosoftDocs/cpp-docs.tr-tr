@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e71123230318d2da006be3c09fdb5855f713220f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 61197a4322690646bf3f89d155fbb526b00ba0de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33325896"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044814"
 ---
 # <a name="resource-compiler-fatal-error-rc1109"></a>Kaynak Derleyicisi Önemli Hatası RC1109
-Kaynak adı oluşturulurken hata oluştu  
-  
- Belirtilen .res dosyası oluşturulamadı. Bu bir salt okunur sürücüde oluşturuluyor değil emin olun. /V seçeneği olup olmadığını dosyası oluşturuldu çıkışı bulmak için kullanın.
+
+Kaynak adı oluşturulurken hata oluştu
+
+Belirtilen bir .res dosyası oluşturulamadı. Salt okunur bir sürücüde oluşturulması değil emin olun. /V seçeneği olup olmadığını dosyasının oluşturulduğunu kullanıma bulmak için kullanın.

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 67123349dd782beb9b547d3497d6c71d4390e434
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a7548e2154144ca502ab581bf804018b80cc0d8d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33231380"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072673"
 ---
 # <a name="compiler-error-c2627"></a>Derleyici Hatası C2627
-'function': üye işlevi anonim birleşim içinde izin verilmiyor  
-  
- Bir [anonim UNION](../../cpp/unions.md#anonymous_unions) üye işlevleri sahip olamaz.  
-  
- Aşağıdaki örnek C2627 oluşturur:  
-  
-```  
-// C2627.cpp  
-int main() {  
-   union { void f(){} };   // C2627  
-   union X { void f(){} };  
-}  
+
+'function': üye işlev anonim birleşimde izin verilmiyor
+
+Bir [anonim birleşim](../../cpp/unions.md#anonymous_unions) üye işlevleri sahip olamaz.
+
+Aşağıdaki örnek, C2627 oluşturur:
+
+```
+// C2627.cpp
+int main() {
+   union { void f(){} };   // C2627
+   union X { void f(){} };
+}
 ```

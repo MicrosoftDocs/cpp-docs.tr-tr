@@ -18,60 +18,62 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f073f82114c2d58b6d4d94bfeb35048b9e676c45
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: fe86770692554551b88e1aef9bbddc509e21f0f0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39405541"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039445"
 ---
 # <a name="how-catch-blocks-are-evaluated-c"></a>Catch Blokları Nasıl Değerlendirilir (C++)
-Genel olarak std::exception'dan türetilen türler oluşturulması önerilse de, C++ her türden özel durumlar oluşturmanıza olanak tanır. Bir C++ özel durum tarafından yakalanabilir bir **catch** oluşan özel durum olarak veya her türden özel durumu yakalamak bir işleyici tarafından aynı türü belirten bir işleyici.  
-  
- Oluşturulan özel durumun türü temel sınıfı (veya sınıfları) da olan bir sınıfsa, özel durum türünün temel sınıflarını kabul eden işleyiciler ve özel durum türünün başvuruları tarafından yakalanabilir. Özel durum bir başvuru tarafından yakalandığında oluşturulan gerçek özel durum nesnesine bağlanır; aksi takdirde bir kopya (işlevin bağımsız değişkeniyle hemen hemen aynı) olur.  
-  
- Bir özel durum oluştuğunda, bunu aşağıdaki türleri tarafından yakalanabilirler **catch** işleyiciler:  
-  
--   Herhangi bir türü kabul edebilen bir işleyici (üç nokta sözdizimini kullanarak).  
-  
--   Özel durum nesnesiyle aynı türü kabul eden bir işleyici; bir kopya olduğundan **const** ve **geçici** değiştiricileri yoksayılır.  
-  
--   Özel durum nesnesiyle aynı türe yapılan başvuruyu kabul eden bir işleyici.  
-  
--   Bir başvuruyu kabul eden bir işleyici bir **const** veya **geçici** özel durum nesnesiyle aynı türden formu.  
-  
--   Özel durum nesnesiyle aynı türden temel sınıf kabul eden bir işleyici; bir kopya olduğundan **const** ve **geçici** değiştiricileri yoksayılır. **Catch** bir temel sınıf için işleyici gelmemelidir **catch** türetilmiş sınıf için işleyici.  
-  
--   Özel durum nesnesiyle aynı türden temel sınıf başvurusunu kabul eden bir işleyici.  
-  
--   Bir başvuruyu kabul eden bir işleyici bir **const** veya **geçici** biçiminin özel durum nesnesiyle aynı türden temel sınıf.  
-  
--   Oluşturulan bir işaretçi nesnesinin standart işaretçi dönüştürme kurallarıyla dönüştürülebileceği bir işaretçiyi kabul eden bir işleyici.  
-  
- Bir sırayı **catch** işleyicilerinin görünme önemlidir; çünkü işleyicileri için bir verilen **deneyin** blok, görünme sırasına göre incelenir. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. Eşleşen bir sonra **catch** işleyicisi bulunursa, sonraki işleyiciler incelenmez. Sonuç olarak, üç nokta **catch** son işleyicisi olmalıdır, **deneyin** blok. Örneğin:  
-  
-```cpp 
-// ...  
-try  
-{  
-    // ...  
-}  
-catch( ... )  
-{  
-    // Handle exception here.  
-}  
-// Error: the next two handlers are never examined.  
-catch( const char * str )  
-{  
-    cout << "Caught exception: " << str << endl;  
-}  
-catch( CExcptClass E )  
-{  
-    // Handle CExcptClass exception here.  
-}  
-```  
-  
- Bu örnekte, üç nokta **catch** işleyicisidir incelenen tek işleyicidir.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)
+
+Genel olarak std::exception'dan türetilen türler oluşturulması önerilse de, C++ her türden özel durumlar oluşturmanıza olanak tanır. Bir C++ özel durum tarafından yakalanabilir bir **catch** oluşan özel durum olarak veya her türden özel durumu yakalamak bir işleyici tarafından aynı türü belirten bir işleyici.
+
+Oluşturulan özel durumun türü temel sınıfı (veya sınıfları) da olan bir sınıfsa, özel durum türünün temel sınıflarını kabul eden işleyiciler ve özel durum türünün başvuruları tarafından yakalanabilir. Özel durum bir başvuru tarafından yakalandığında oluşturulan gerçek özel durum nesnesine bağlanır; aksi takdirde bir kopya (işlevin bağımsız değişkeniyle hemen hemen aynı) olur.
+
+Bir özel durum oluştuğunda, bunu aşağıdaki türleri tarafından yakalanabilirler **catch** işleyiciler:
+
+- Herhangi bir türü kabul edebilen bir işleyici (üç nokta sözdizimini kullanarak).
+
+- Özel durum nesnesiyle aynı türü kabul eden bir işleyici; bir kopya olduğundan **const** ve **geçici** değiştiricileri yoksayılır.
+
+- Özel durum nesnesiyle aynı türe yapılan başvuruyu kabul eden bir işleyici.
+
+- Bir başvuruyu kabul eden bir işleyici bir **const** veya **geçici** özel durum nesnesiyle aynı türden formu.
+
+- Özel durum nesnesiyle aynı türden temel sınıf kabul eden bir işleyici; bir kopya olduğundan **const** ve **geçici** değiştiricileri yoksayılır. **Catch** bir temel sınıf için işleyici gelmemelidir **catch** türetilmiş sınıf için işleyici.
+
+- Özel durum nesnesiyle aynı türden temel sınıf başvurusunu kabul eden bir işleyici.
+
+- Bir başvuruyu kabul eden bir işleyici bir **const** veya **geçici** biçiminin özel durum nesnesiyle aynı türden temel sınıf.
+
+- Oluşturulan bir işaretçi nesnesinin standart işaretçi dönüştürme kurallarıyla dönüştürülebileceği bir işaretçiyi kabul eden bir işleyici.
+
+Bir sırayı **catch** işleyicilerinin görünme önemlidir; çünkü işleyicileri için bir verilen **deneyin** blok, görünme sırasına göre incelenir. Örneğin, temel sınıfa yönelik bir işleyicisi türetilmiş sınıfa yönelik bir işleyiciden önce yerleştirmek hatadır. Eşleşen bir sonra **catch** işleyicisi bulunursa, sonraki işleyiciler incelenmez. Sonuç olarak, üç nokta **catch** son işleyicisi olmalıdır, **deneyin** blok. Örneğin:
+
+```cpp
+// ...
+try
+{
+    // ...
+}
+catch( ... )
+{
+    // Handle exception here.
+}
+// Error: the next two handlers are never examined.
+catch( const char * str )
+{
+    cout << "Caught exception: " << str << endl;
+}
+catch( CExcptClass E )
+{
+    // Handle CExcptClass exception here.
+}
+```
+
+Bu örnekte, üç nokta **catch** işleyicisidir incelenen tek işleyicidir.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[C++ Özel Durum İşleme](../cpp/cpp-exception-handling.md)

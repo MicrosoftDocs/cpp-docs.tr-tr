@@ -1,7 +1,7 @@
 ---
 title: 'İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma | Microsoft Docs'
 ms.custom: ''
-ms.date: 11/04/2016
+ms.date: 09/17/2018
 ms.technology:
 - cpp-windows
 ms.topic: reference
@@ -13,12 +13,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 2775e0348f6bfe1e7fe960a105ebf0c31fcaae96
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 3eb82c5c86411af63ea79a4dbcf2e54d2d3ce5f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43214837"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038314"
 ---
 # <a name="walkthrough-creating-a-uwp-app-using-wrl-and-media-foundation"></a>İzlenecek yol: WRL ve medya altyapısı kullanarak UWP uygulaması oluşturma
 
@@ -101,7 +101,7 @@ Bu örnek, bir Web kamerası yakalanır görüntü gri tonlamalı etkisi uygulan
 
    1. Altında **giriş**, için **modül tanım dosyası**, belirtin `GrayScaleTransform.def`.
 
-   2. Ayrıca altında **giriş**, ekleme `runtimeobject.lib`, `mfuuid.lib`, ve `mfplatf.lib` için **ek bağımlılıklar** özelliği.
+   2. Ayrıca altında **giriş**, ekleme `runtimeobject.lib`, `mfuuid.lib`, ve `mfplat.lib` için **ek bağımlılıklar** özelliği.
 
    3. Altında **Windows meta verileri**ayarlayın **Windows meta verileri oluşturma** için **Evet (/ WINMD)**.
 

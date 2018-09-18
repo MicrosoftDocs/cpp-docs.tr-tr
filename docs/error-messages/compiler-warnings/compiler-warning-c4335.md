@@ -16,27 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: adb8a7b484ce0946f385c3b2a8669ba1b5ccf0d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2b28909d0c4b663fffeacbec58ad694131bb008
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270515"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036585"
 ---
 # <a name="compiler-warning-c4335"></a>Derleyici Uyarısı C4335
-Mac dosya biçimi algılandı: Lütfen kaynak dosyasını DOS veya UNIX biçimine Dönüştür  
-  
- Bir kaynak dosyasının ilk satırının satır sonlandırma karakteri UNIX ('\n') veya DOS ('\r\n') aksine Macintosh stili ('\r') ' dir.  
-  
- Bu uyarı, bir hatası her zaman görüntülenir.  Bkz: [uyarı](../../preprocessor/warning.md) pragma bu uyarıyı devre dışı bırakma hakkında bilgi için.  Ayrıca, bu yalnızca bir kez derlenecek dosya uyarı görüntülenir. Bu nedenle, yoksa birden çok `#include` dosyaları Macintosh biçiminde belirtin yönergeleri, C4335 yalnızca verilir kez.  
-  
- Macintosh biçiminde dosyaları oluşturmak için bir yoldur kullanarak **Gelişmiş kaydetme seçenekleri** (üzerinde **dosya** menüsü) Visual Studio.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4335 oluşturur.  
-  
-```  
-// C4335 expected  
-#include "c4335.h"   // assume both include files are in Macintosh format  
-#include "c4335_2.h"  
+
+Mac dosya biçimi algılandı: Lütfen kaynak dosyayı DOS veya UNIX biçimine dönüştürün
+
+Bir kaynak dosyasının ilk satırının satır sonlandırma karakteri UNIX ('\n') veya DOS ('\r\n') aksine Macintosh stili ('\r') ' dir.
+
+Bu uyarı, bir hata her zaman görüntülenir.  Bkz: [uyarı](../../preprocessor/warning.md) pragma bu uyarıyı devre dışı bırakma hakkında daha fazla bilgi için.  Ayrıca, bu uyarı yalnızca bir kez derlenecek görüntülenir. Bu nedenle, varsa birden çok `#include` Macintosh biçiminde dosyaları belirttiğiniz yönergeleri C4335 yalnızca gönderilmez kez.
+
+Macintosh biçiminde dosyaları oluşturmak için bir yoludur kullanarak **Gelişmiş kaydetme seçenekleri** (üzerinde **dosya** menüsü) Visual Studio'da.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4335 oluşturur.
+
+```
+// C4335 expected
+#include "c4335.h"   // assume both include files are in Macintosh format
+#include "c4335_2.h"
 ```

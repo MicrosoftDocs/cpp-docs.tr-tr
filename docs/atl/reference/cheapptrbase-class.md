@@ -23,12 +23,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 849e7ced8889cb46195946cca68243c37e1299a2
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: f2a6ab9e03a44f48acca9b949193ceec85eb3ef6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760129"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46063118"
 ---
 # <a name="cheapptrbase-class"></a>CHeapPtrBase sınıfı
 
@@ -40,16 +40,16 @@ Bu sınıfın birkaç akıllı yığın işaretçisi sınıfları temelini oluş
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T, class Allocator = CCRTAllocator>  
+template <class T, class Allocator = CCRTAllocator>
 class CHeapPtrBase
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Yığın üzerinde depolanan nesne türü.
 
-*Ayırıcı*  
+*Ayırıcı*<br/>
 Bellek ayırma kullanmak için sınıf. Varsayılan olarak, ayırmak ve belleği boşaltmak için CRT yordamlar kullanılır.
 
 ## <a name="members"></a>Üyeler
@@ -102,7 +102,7 @@ bool AllocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 Ayrılacak bellek bayt sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -123,7 +123,7 @@ void Attach(T* pData) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*  
+*pData*<br/>
 `CHeapPtrBase` Nesne, işaretçi sahipliğini alır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -216,7 +216,7 @@ Değerini döndürür [CHeapPtrBase::m_pData](#m_pdata) üye değişkeni.
 
 Atama işleci.
 
-```  
+```
 operator T*() const throw();
 ```
 
@@ -234,7 +234,7 @@ bool ReallocateBytes(size_t nBytes) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nBytes*  
+*nBytes*<br/>
 Yeni ayrılacak bayt cinsinden bellek miktarı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -243,6 +243,6 @@ Bellek başarıyla ise true değeri döndürür ayrılmış, yanlış Aksi takdi
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
-[CComHeapPtr sınıfı](../../atl/reference/ccomheapptr-class.md)   
+[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CComHeapPtr Sınıfı](../../atl/reference/ccomheapptr-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

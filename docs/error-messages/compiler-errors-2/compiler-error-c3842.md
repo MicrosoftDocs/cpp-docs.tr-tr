@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c29878f7d64bfe1ed444130c77461dece6d20302
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8db69ce3af28ed5878c43775b2c33542e5c817d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33270768"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055534"
 ---
 # <a name="compiler-error-c3842"></a>Derleyici Hatası C3842
-'function': 'const' ve 'geçici' niteleyicileri üye işlevleri WinRT ya da yönetilen türler üzerinde desteklenmiyor  
-  
- [const](../../cpp/const-cpp.md) ve [volatile](../../cpp/volatile-cpp.md) Windows çalışma zamanı veya yönetilen türlerini üye işlevleri desteklenmez.  
-  
- Aşağıdaki örnek C3842 oluşturur:  
-  
-```  
-// C3842a.cpp  
-// compile with: /clr /c  
-public ref struct A {  
-   void f() const {}   // C3842  
-   void f() volatile {}   // C3842  
-  
-   void f() {}  
-};  
+
+'function': WinRT yönetilen tür veya üye işlevlerinde 'const' ve 'volatile' niteleyicileri desteklenmiyor
+
+[const](../../cpp/const-cpp.md) ve [geçici](../../cpp/volatile-cpp.md) Windows çalışma zamanı yönetilen tür veya üye işlevleri desteklenmez.
+
+Aşağıdaki örnek, C3842 oluşturur:
+
+```
+// C3842a.cpp
+// compile with: /clr /c
+public ref struct A {
+   void f() const {}   // C3842
+   void f() volatile {}   // C3842
+
+   void f() {}
+};
 ```

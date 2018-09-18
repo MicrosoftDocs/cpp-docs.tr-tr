@@ -16,25 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a6e1446d8d062f97e9161e62fae5052580174c83
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 9a95b14df3701d26a249e8e0d0e8ec4bafe5eb0d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33245315"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041616"
 ---
 # <a name="compiler-error-c3087"></a>Derleyici Hatası C3087
-'named_argument': 'öznitelik' çağrısı zaten bu üye başlatır  
-  
- Adlandırılmış bağımsız değişken için aynı değeri adlandırılmamış bağımsız değişken olarak aynı öznitelik bloğundaki belirtildi. Yalnızca bir adlandırılmış veya adlandırılmamış bağımsız değişkenini belirtin.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3087 oluşturur.  
-  
-```  
-// C3087.cpp  
-// compile with: /c  
-[idl_quote("quote1", text="quote2")];   // C3087  
-[idl_quote(text="quote3")];   // OK  
-[idl_quote("quote4")];   // OK  
+
+'named_argument': 'attribute' çağrısı bu üyeyi zaten başlatıyor
+
+Aynı öznitelik engelle adlandırılmamış bir bağımsız değişken için aynı değer olarak adlandırılmış bir bağımsız değişken belirtildi. Yalnızca bir adlandırılmış veya adsız bağımsız değişkenini belirtin.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3087 oluşturur.
+
+```
+// C3087.cpp
+// compile with: /c
+[idl_quote("quote1", text="quote2")];   // C3087
+[idl_quote(text="quote3")];   // OK
+[idl_quote("quote4")];   // OK
 ```

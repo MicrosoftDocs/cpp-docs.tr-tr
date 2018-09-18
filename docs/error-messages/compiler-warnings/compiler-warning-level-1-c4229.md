@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3c902bf397d5906645a9310da337561627d7c443
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e485f4e49859a12b17eac5dd378853bb3795bd7e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33275421"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064054"
 ---
 # <a name="compiler-warning-level-1-c4229"></a>Derleyici Uyarısı (düzey 1) C4229
-kullanılan anachronism: değiştiricileri verileri yok sayılır  
-  
- Bir Microsoft değiştirici gibi kullanılarak `__cdecl` üzerinde veri bildirimi eski bir uygulamadır.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4229.cpp  
-// compile with: /W1 /LD  
-int __cdecl counter;   // C4229 cdecl ignored  
+
+anakronizm: veriler üzerindeki değiştiriciler yoksayıldı
+
+Gibi bir Microsoft değiştirici kullanılarak `__cdecl` veri bildirimi güncel olmayan bir uygulamadır.
+
+## <a name="example"></a>Örnek
+
+```
+// C4229.cpp
+// compile with: /W1 /LD
+int __cdecl counter;   // C4229 cdecl ignored
 ```

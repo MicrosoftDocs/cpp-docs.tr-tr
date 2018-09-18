@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 494aa6a04b1ec4844e243807e103d4d106380739
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f74e17b1dec3aba78a38d993da81995d00c93784
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252419"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065611"
 ---
 # <a name="compiler-error-c3230"></a>Derleyici Hatası C3230
-'function': 'template' için şablon tür bağımsız değişkeni bir genel tür parametresi içeremez: 'param'  
-  
- Şablonları derleme zamanında örneği, ancak genel türler çalışma zamanında örneği. Bu nedenle, şablon zaman genel tür son bilinen çalışma zamanında başlatılamaz olduğundan, şablon çağırabilirsiniz genel kod oluşturmak mümkün değil.  
-  
- Aşağıdaki örnek C3230 oluşturur:  
-  
-```  
-// C3230.cpp  
-// compile with: /clr /LD  
-template <class S>   
-void f(S t);  
-  
-generic <class U>  
-ref class C {  
-   void f1(U x) {  
-      f(x);   // C3230  
-   }  
-};  
+
+'function': şablon türü bağımsız değişkeni için 'şablon' genel tür parametresi içeremez: 'param'
+
+Şablon, derleme zamanında örneği oluşturulur, ancak genel türler çalışma zamanında örneği oluşturulur. Bu nedenle, genel tür son olarak bilinen, çalışma zamanında şablonu başlatılamaz çünkü şablon çağırabilirsiniz genel kod üretmek mümkün değildir.
+
+Aşağıdaki örnek, C3230 oluşturur:
+
+```
+// C3230.cpp
+// compile with: /clr /LD
+template <class S>
+void f(S t);
+
+generic <class U>
+ref class C {
+   void f1(U x) {
+      f(x);   // C3230
+   }
+};
 ```

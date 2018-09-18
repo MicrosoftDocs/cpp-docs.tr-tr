@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e766dfe2e4f5825830b7c218e6ea219558c533e3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1522587c20b661c1885880b9690f3dee54215f80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33323153"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045241"
 ---
 # <a name="profile-guided-optimization-warning-pg1087"></a>Profil Temelli İyileştirme Uyarısı PG1087
-PGC ' dosyası ' geçerli değil.  
-  
- Profil oluşturma oturumu için normal olmayan bir bitiş nedeni, bozuk bir .pgc dosyasıdır.  Profil oluşturma senaryosu yeniden çalıştırın ve normal şekilde sonlandırılamadı.
+
+PGC dosya 'dosyası geçerli değil.
+
+.Pgc dosyası, olağan dışı bir profil oluşturma oturumunu sona nedeni bozuk.  Profil oluşturma senaryosu yeniden çalıştırın ve bu normalde sonlandırın.

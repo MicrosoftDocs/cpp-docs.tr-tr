@@ -16,26 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3b03937ed442b169b960d573b44c0eb6ebca9660
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 95a55ec6b7cdf0b6e4c15bd283dde77c610698fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33318002"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074831"
 ---
 # <a name="math-error-m6111"></a>Matematik Hatası M6111
-Yığında  
-  
- Kayan nokta işlemi yığın underflow 287/8087/387 eşişlemcisi veya öykünücü ile sonuçlandı.  
-  
- Bu hata genellikle bir çağrı tarafından neden bir `long double` bir değer döndürmüyor işlevi. Örneğin, aşağıdaki bu hata derlenmiş ve çalışma oluşturur:  
-  
-```  
-long double ld() {};  
-main ()  
-{  
-  ld();  
-}  
-```  
-  
- Program 139 çıkış koduyla sona erer.
+
+Yığında
+
+Bir yığın underflow 8087/287/387 eşişlemcisi veya öykünücü, kayan noktalı bir işlemin sonuçlandı.
+
+Bu hata genellikle bir çağrı tarafından neden bir `long double` işlev bir değer döndürmez. Örneğin, aşağıdaki bu hatayı derlenmiş ve çalışma oluşturur:
+
+```
+long double ld() {};
+main ()
+{
+  ld();
+}
+```
+
+Program çıkış kodu ile 139 sonlandırır.

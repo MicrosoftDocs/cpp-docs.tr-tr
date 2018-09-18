@@ -23,15 +23,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 47f23fd421d5108648d88c9eeda83c255f9861dc
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 6cc17e429c0750b9f0cc8d9eb24bc94adf00484e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32388233"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070606"
 ---
 # <a name="exception-handling-constants"></a>Özel Durum İşleme Sabitleri
-Sabit `EXCEPTION_CONTINUE_SEARCH`, `EXCEPTION_CONTINUE_EXECUTION`, veya `EXCEPTION_EXECUTE_HANDLER` korunmuş bölümünü yürütülmesi sırasında bir özel durum oluştuğunda döndürülen bir **deneyin-dışında** deyimi. Dönüş değeri, özel durumun nasıl işleneceğini belirler. Daha fazla bilgi için bkz: [deneyin-except deyimi](../cpp/try-except-statement.md) içinde *C++ dil başvurusu*.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+Sabit `EXCEPTION_CONTINUE_SEARCH`, `EXCEPTION_CONTINUE_EXECUTION`, veya `EXCEPTION_EXECUTE_HANDLER` korunan bölümün yürütülmesi sırasında bir özel durum oluştuğunda döndürülen bir **deneyin-dışında** deyimi. Dönüş değeri, özel durumun nasıl işlendiğini belirler. Daha fazla bilgi için [deneyin-except deyimi](../cpp/try-except-statement.md) içinde *C++ dil başvurusu*.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Sabitler](../c-runtime-library/global-constants.md)

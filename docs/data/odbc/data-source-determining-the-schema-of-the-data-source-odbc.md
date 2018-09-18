@@ -17,18 +17,20 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 6da4067766eddab40bac75ee73d825dc5886dd0f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9db21b7531f71ba40be64018b71c4e2e3e555e2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33088283"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064977"
 ---
 # <a name="data-source-determining-the-schema-of-the-data-source-odbc"></a>Veri Kaynağı: Veri Kaynağının Şemasını Belirleme (ODBC)
-Bu konu MFC ODBC sınıfları için geçerlidir.  
+
+Bu konu MFC ODBC sınıflarına uygulanır.  
   
- Veri üyeleri ayarlamak için `CRecordset` nesneleri bağlanmakta veri kaynağının şemasını bilmeniz gerekir. Bir veri kaynağının şemasını belirleme alma veri kaynağındaki tablolar listesi, her tablodaki sütunlar, her sütunun veri türünü listesini ve tüm dizinlerin varlığını içerir.  
+Veri üyeleri ayarlamak için `CRecordset` nesnelerini bağlanmakta veri kaynağının şemasını bilmeniz gerekir. Bir veri kaynağının şemasını belirleme, alma veri kaynağındaki tabloların bir listesini, her tablo sütunları, her bir sütunun veri türünü listesini ve tüm dizinlerin varlığını içerir.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)   
- [Veri Kaynağı: Bağlantıları Yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)
+
+[Veri Kaynağı (ODBC)](../../data/odbc/data-source-odbc.md)<br/>
+[Veri Kaynağı: Bağlantıları Yönetme (ODBC)](../../data/odbc/data-source-managing-connections-odbc.md)

@@ -29,12 +29,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 715fcc37c41251b0a42fd6508f8a358758105a1f
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 47cd4cc765459acc6270c64b6cc37fe328f36757
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43680201"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069423"
 ---
 # <a name="tiledindex-class"></a>tiled_index Sınıfı
 Bir dizin sağlar bir [tiled_extent](tiled-extent-class.md) nesne. Bu sınıf öğelere yerel döşeme kaynağına ve genel kaynağa göre erişmek için özelliklere sahiptir. Döşeli boşluklar hakkında daha fazla bilgi için bkz. [kullanarak kutucuk](../../../parallel/amp/using-tiles.md).  
@@ -62,14 +62,14 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_Dim0`  
- En önemli boyutun uzunluğu.  
+*_Dim0*<br/>
+En önemli boyutun uzunluğu.  
   
- `_Dim1`  
- Sonraki en-önemli boyutun uzunluğu.  
+*_Dim1*<br/>
+Sonraki en-önemli boyutun uzunluğu.  
   
- `_Dim2`  
- En az önemli boyutun uzunluğu.  
+*_Dim2*<br/>
+En az önemli boyutun uzunluğu.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -140,23 +140,23 @@ tiled_index(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_Global`  
- Genel [dizin](index-class.md) oluşturulmuş `tiled_index`.  
+*Sadece _global*<br/>
+Genel [dizin](index-class.md) oluşturulmuş `tiled_index`.  
   
- `_Local`  
- Yerel [dizin](index-class.md) oluşturulmuş `tiled_index`  
+*_Yerel*<br/>
+Yerel [dizin](index-class.md) oluşturulmuş `tiled_index`  
   
- `_Tile`  
- Kutucuk [dizin](index-class.md) oluşturulmuş `tiled_index`  
+*_Tile*<br/>
+Kutucuk [dizin](index-class.md) oluşturulmuş `tiled_index`  
   
- `_Tile_origin`  
- Döşeme kaynağı [dizin](index-class.md) oluşturulmuş `tiled_index`  
+*_Tile_origin*<br/>
+Döşeme kaynağı [dizin](index-class.md) oluşturulmuş `tiled_index`  
   
- `_Barrier`  
- [Tile_barrier](tile-barrier-class.md) oluşturulmuş nesne `tiled_index`.  
+*_Barrier*<br/>
+[Tile_barrier](tile-barrier-class.md) oluşturulmuş nesne `tiled_index`.  
   
- `_Other`  
- `tile_index` Kopyalanacak nesne için oluşturulmuş `tiled_index`.  
+*_Diğer*<br/>
+`tile_index` Kopyalanacak nesne için oluşturulmuş `tiled_index`.  
   
 ## <a name="overloads"></a>Aşırı Yüklemeler  
   

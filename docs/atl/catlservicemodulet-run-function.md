@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9f1be2c862775c76bbaad36f84c871eff5a38d5
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 1f7306e11bd1cc23e4de17e67f0941d2b3ee8473
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43759628"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055304"
 ---
 # <a name="catlservicemoduletrun-function"></a>CAtlServiceModuleT::Run işlevi
 
@@ -37,9 +37,9 @@ Güvenlik belirlendikten sonra yeni istemcilerin programa bağlanabilmesi nesne 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Hizmetleri](../atl/atl-services.md)   
-[CSecurityDesc sınıfı](../atl/reference/csecuritydesc-class.md)   
-[CSid sınıfı](../atl/reference/csid-class.md)   
-[CDacl sınıfı](../atl/reference/cdacl-class.md)   
+[Hizmetler](../atl/atl-services.md)<br/>
+[CSecurityDesc Sınıfı](../atl/reference/csecuritydesc-class.md)<br/>
+[CSid Sınıfı](../atl/reference/csid-class.md)<br/>
+[CDacl Sınıfı](../atl/reference/cdacl-class.md)<br/>
 [CAtlServiceModuleT::Run](../atl/reference/catlservicemodulet-class.md#run)
 

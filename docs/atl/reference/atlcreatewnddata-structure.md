@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c5751fa3c5c8bc20f287ca3c48d885fc41c60ba0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 71c0fb14574aedb74d756e72a93cd0dc626ba086
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764335"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057385"
 ---
 # <a name="atlcreatewnddata-structure"></a>_AtlCreateWndData yapısı
 
@@ -42,13 +42,13 @@ Bu yapı ATL Pencereleme kodunda sınıfı örneği veri içeriyor
 
 ## <a name="members"></a>Üyeler
 
-`m_pThis`  
+`m_pThis`<br/>
 **Bu** sınıf örneği pencere yordamları erişmek için kullanılan bir işaretçi.
 
-`m_dwThreadID`  
+`m_dwThreadID`<br/>
 İş parçacığı kimliği geçerli sınıf örneğinin.
 
-`m_pNext`  
+`m_pNext`<br/>
 Sonraki işaretçisi `_AtlCreateWndData` nesne.
 
 ## <a name="requirements"></a>Gereksinimler

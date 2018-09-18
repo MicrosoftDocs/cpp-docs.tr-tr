@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 244f3c4a5cf5b34e75ad9d94a167648abdba38a7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: ef739da3bc106a654e11c4a13bae7be59d35fc90
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301547"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044138"
 ---
 # <a name="command-line-warning-d9028"></a>Komut Satırı Uyarısı D9028
-en az yeniden derleme hatası, normal derlemesine dönüştürme  
-  
- Proje .idb dosyası bozuk. Dosyayı silin ve yeniden derleyin.  
-  
- En az yeniden oluşturmayı ve .idb dosya ile ilgili daha fazla bilgi için bkz [/Gm derleyici seçeneği](../../build/reference/gm-enable-minimal-rebuild.md).
+
+en az yeniden derleme hatası, normal yapıma döndürülüyor
+
+Proje .idb dosyası bozuk. Dosyayı silin ve yeniden oluşturun.
+
+En az yeniden oluşturmayı ve .idb dosya hakkında daha fazla bilgi için bkz. [/Gm derleyici seçeneği](../../build/reference/gm-enable-minimal-rebuild.md).

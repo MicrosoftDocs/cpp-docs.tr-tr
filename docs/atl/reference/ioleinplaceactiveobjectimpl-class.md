@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4935c4cb936b803170f0fc11db5adb3f477a05a0
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 8e74df913b22684a61ab4f45ade561e55db18544
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43763821"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044515"
 ---
 # <a name="ioleinplaceactiveobjectimpl-class"></a>Ioleınplaceactiveobjectımpl sınıfı
 
@@ -49,7 +49,7 @@ class IOleInPlaceActiveObjectImpl
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `IOleInPlaceActiveObjectImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -201,6 +201,6 @@ Bkz: [IOleInPlaceActiveObject::TranslateAccelerator](/windows/desktop/api/oleidl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)  
-[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)  
+[CComControl Sınıfı](../../atl/reference/ccomcontrol-class.md)<br/>
+[Arabirimleri ActiveX denetimleri](/windows/desktop/com/activex-controls-interfaces)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

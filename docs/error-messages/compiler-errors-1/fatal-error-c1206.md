@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 27b690cf055d059d5088edba407c93b4a8ae85fd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 79aa3f33f076b6576363b0bdda63e55c5d9f13fd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33227388"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046465"
 ---
 # <a name="fatal-error-c1206"></a>Önemli hata C1206
-Appdomain başına veri yüklü çalışma zamanı sürümü tarafından desteklenmiyor  
-  
- Bazı özellikler gibi uygulama etki alanı verileri, göredir yalnızca bu özelliği destekleyen ortak dil çalışma zamanı tarafından desteklenir.  
-  
- Çalışma zamanı en son sürümü, bilgisayarda yüklü değil C1206 gösterir. Derleyici kullanmaya yönelik ortak dil çalışma zamanı sürümü yükleyin.  
-  
- Bkz: [appdomain](../../cpp/appdomain.md) daha fazla bilgi için.
+
+Appdomain başına veriler yüklü olan çalışma zamanı sürümü tarafından desteklenmiyor
+
+Bazı özellikler, uygulama etki alanı verileri göre gibi yalnızca bu özelliği destekleyen ortak dil çalışma zamanı tarafından desteklenir.
+
+C1206 çalışma zamanının en son sürümü, bilgisayarınızda yüklü olmadığını gösterir. Derleyici ile kullanıma yöneliktir ortak dil çalışma zamanı sürümünü yükleyin.
+
+Bkz: [appdomain](../../cpp/appdomain.md) daha fazla bilgi için.

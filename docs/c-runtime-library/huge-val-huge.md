@@ -24,24 +24,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d763b8c5379223ddacb8077c463efa0b91acfa
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: a9917d614261afaffe28ea92f913799c429a9611
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32390511"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060726"
 ---
 # <a name="hugeval-huge"></a>HUGE_VAL, _HUGE
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <math.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `HUGE_VAL` en büyük gösterilebilir çift değerdir. Hata oluştuğunda, bu değer birçok çalışma zamanı matematik işlevleri tarafından döndürülür. Bazı işlevler için-`HUGE_VAL` döndürülür. `HUGE_VAL` olarak tanımlanan `_HUGE`, ancak çalışma zamanında matematik işlevleri döndürür `HUGE_VAL`. Ayrıca kullanması gereken `HUGE_VAL` kodunuzda tutarlılık için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <math.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`HUGE_VAL` gösterilebilir en büyük çift değer olacaktır. Bu değer, bir hata oluştuğunda birçok çalışma zamanı matematik işlevleri tarafından döndürülür. Bazı işlevler için-`HUGE_VAL` döndürülür. `HUGE_VAL` olarak tanımlanan `_HUGE`, ancak çalışma zamanı matematik işlevleri dönüş `HUGE_VAL`. Ayrıca kullanmalısınız `HUGE_VAL` tutarlılık için kod.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Global Sabitler](../c-runtime-library/global-constants.md)

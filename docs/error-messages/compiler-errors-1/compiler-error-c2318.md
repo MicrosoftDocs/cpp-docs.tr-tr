@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4d20c3dfe8122b8795238d09ab2b376dcd91d437
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8c2d76a2d6f1a9f2342edfc6e174938816759cb8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222351"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035714"
 ---
 # <a name="compiler-error-c2318"></a>Derleyici Hatası C2318
-Bu yakalama işleyici ile ilişkili herhangi bir try engelleme  
-  
- A `catch` işleyici tanımlı ancak öncesinde olmayan bir `try` bloğu.  
-  
- Aşağıdaki örnek C2318 oluşturur:  
-  
-```  
-// C2318.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   // no try block  
-   catch( int ) {}   // C2318  
-}  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2318b.cpp  
-// compile with: /EHsc  
-#include <eh.h>  
-int main() {  
-   try{}  
-   catch( int ) {}  
-}  
+
+hiçbir try bloğu bu catch işleyicisiyle ilişkilendirilmedi
+
+A `catch` işleyici tanımlandı ancak öncesinde değil bir `try` blok.
+
+Aşağıdaki örnek, C2318 oluşturur:
+
+```
+// C2318.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   // no try block
+   catch( int ) {}   // C2318
+}
+```
+
+Olası çözüm:
+
+```
+// C2318b.cpp
+// compile with: /EHsc
+#include <eh.h>
+int main() {
+   try{}
+   catch( int ) {}
+}
 ```

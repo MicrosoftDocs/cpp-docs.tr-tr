@@ -1,5 +1,5 @@
 ---
-title: her biri için de | Microsoft Docs
+title: Her, | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2016
 ms.technology:
@@ -20,18 +20,18 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 6ab5f7309da1a037f7066d44815cafc934b162cf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a55425c891999142fe32ae08125cce22728daffa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33111949"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040705"
 ---
 # <a name="for-each-in"></a>for each, in
-Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem C++/CLI hem de yerel C++ projelerinde kullanılabilir. Ancak, kullanımı önerilmez. Standart bir kullanmayı [aralık tabanlı için deyimi (C++)](../cpp/range-based-for-statement-cpp.md) yerine.  
+Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem C++/CLI hem de yerel C++ projelerinde kullanılabilir. Ancak, kullanımı önerilmez. Standart kullanmayı [aralık tabanlı for deyimi (C++)](../cpp/range-based-for-statement-cpp.md) yerine.  
   
 ## <a name="all-runtimes"></a>Tüm Çalışma Zamanları  
- **Sözdizimi**  
+ **Söz dizimi**  
   
 ```  
   
@@ -43,23 +43,23 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
   
  **Parametreler**  
   
- `type`  
- Türü `identifier`.  
+*Türü*<br/>
+Türünü `identifier`.  
   
- `identifier`  
- Koleksiyon öğesini temsil eden yineleme değişkeni.  Zaman `identifier` olan bir [izleme başvurusu işleci](../windows/tracking-reference-operator-cpp-component-extensions.md), öğe değiştirebilirsiniz.  
+*tanımlayıcı*<br/>
+Koleksiyon öğesini temsil eden yineleme değişkeni.  Zaman `identifier` olduğu bir [Tracking Reference Operator](../windows/tracking-reference-operator-cpp-component-extensions.md), öğeyi değiştirebilirsiniz.  
   
- `expression`  
- Bir dizi ifadesi veya koleksiyon. Koleksiyon öğesi sağlayacak şekilde derleyici şekilde dönüştürebilirsiniz olmalıdır `identifier` türü.  
+*İfade*<br/>
+Bir dizi ifadesi veya koleksiyon. Koleksiyon öğesi, derleyicinin kendisine dönüştürebileceği şekilde olmalıdır `identifier` türü.  
   
- `statements`  
- Yürütülecek bir veya daha fazla deyim.  
+*Deyimleri*<br/>
+Yürütülecek bir veya daha fazla deyim.  
   
  **Açıklamalar**  
   
- `for each` Deyimi bir koleksiyonda yinelemek için kullanılır. Bir koleksiyondaki öğeleri değiştirebilirsiniz, ancak öğe ekleyemez veya silemezsiniz.  
+ `for each` Deyimi bir koleksiyon içinde yineleme için kullanılır. Bir koleksiyondaki öğeleri değiştirebilirsiniz, ancak öğe ekleyemez veya silemezsiniz.  
   
- *Deyimleri* dizisi ya da koleksiyonu her öğe için yürütüldü. Koleksiyondaki tüm öğeler için yineleme tamamladıktan sonra aşağıdaki deyim denetimi aktarılır `for each` bloğu.  
+ *Deyimleri* dizi veya koleksiyon içindeki her öğe için yürütülür. Koleksiyondaki tüm öğeler için yineleme tamamlandıktan sonra Denetim izleyen deyime aktarılır `for each` blok.  
   
  `for each` ve `in` olan [bağlama duyarlı anahtar sözcükler](../windows/context-sensitive-keywords-cpp-component-extensions.md).  
   
@@ -79,7 +79,7 @@ Bir dizi ya da koleksiyonda yinelenir. Bu standart olmayan anahtar sözcük, hem
  Derleyici seçeneği: **/ZW**  
   
 ### <a name="example"></a>Örnek  
- Bu örnek nasıl kullanılacağını gösterir `for each` bir dizeyi yinelemek için.  
+ Bu örnek nasıl kullanılacağını gösterir `for each` bir dize içinde yineleme için.  
   
 ```  
 // for_each_string1.cpp  
@@ -118,18 +118,18 @@ Testing
 ## <a name="common-language-runtime"></a>Ortak Dil Çalışma Zamanı 
  **Açıklamalar**  
   
- CLR sözdizimi aynıdır **tüm çalışma zamanları** söz dizimi şu şekilde hariç.  
+ CLR sözdizimi aynıdır **tüm çalışma zamanları** söz dizimiyle aynıdır.  
   
- *ifade*  
- Yönetilen dizi ifadesi veya koleksiyon. Koleksiyon öğesi sağlayacak şekilde derleyici ondan dönüştürebilirsiniz olmalıdır <xref:System.Object> için *tanımlayıcısı* türü.  
+ *İfade*  
+ Yönetilen dizi ifadesi veya koleksiyon. Koleksiyon öğesi, derleyicinin buradan dönüştürebileceği şekilde olmalıdır <xref:System.Object> için *tanımlayıcı* türü.  
   
- *ifade* uygulayan bir tür değerlendirir <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, ya da tanımlayan türü bir `GetEnumerator` ya da döndüren bir tür yöntemi uygulayan <xref:System.Collections.IEnumerator> veya tüm içindetanımlananyöntemleribildirir`IEnumerator`.  
+ *ifade* uygulayan bir türe değerlendirir <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, veya tanımlayan bir tür bir `GetEnumerator` ya da döndüren yöntemi uygulayan <xref:System.Collections.IEnumerator> veya tüm içindetanımlananyöntemleribildirir`IEnumerator`.  
   
 ### <a name="requirements"></a>Gereksinimler  
  Derleyici seçeneği:   **/CLR**  
   
 ### <a name="example"></a>Örnek  
- Bu örnek nasıl kullanılacağını gösterir `for each` bir dizeyi yinelemek için.  
+ Bu örnek nasıl kullanılacağını gösterir `for each` bir dize içinde yineleme için.  
   
 ```  
 // for_each_string2.cpp  

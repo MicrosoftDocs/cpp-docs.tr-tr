@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1af4e6a5a27c13d69351eaf0cddfafe11ba5f22
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 508c2ae29b0290332cc7c2b49aac0a1ecb10528f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054525"
 ---
 # <a name="compiler-error-c2947"></a>Derleyici Hatası C2947
-bekleniyor ' >' yapı sonlandırmak için 'sözdizimi' bulundu  
-  
- Genel veya şablon bağımsız değişken listesi doğru bir şekilde sona erdirildi değil.  
-  
- C2947 da sözdizimi hataları tarafından oluşturulabilir.  
-  
- Aşağıdaki örnek C2947 oluşturur:  
-  
-```  
-// C2947.cpp  
-// compile with: /c  
-template <typename T>=   // C2947  
-// try the following line instead  
-// template <typename T>  
-struct A {};  
+
+bekleniyor ' >' yapısı sonlandırmak için 'söz dizimi' bulundu.
+
+Bir genel veya şablon bağımsız değişken listesi doğru şekilde kapatılmış olabilir değil.
+
+C2947 de söz dizimi hataları meydana gelebilir.
+
+Aşağıdaki örnek, C2947 oluşturur:
+
+```
+// C2947.cpp
+// compile with: /c
+template <typename T>=   // C2947
+// try the following line instead
+// template <typename T>
+struct A {};
 ```

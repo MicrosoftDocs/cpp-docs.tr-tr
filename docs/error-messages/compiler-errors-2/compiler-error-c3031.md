@@ -16,38 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2f2508523c8cba570192ebcbe4f8e3cd29b6cce8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1e604e6d15e0f7d336b2e439c80f7150d4d88510
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33244979"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054668"
 ---
 # <a name="compiler-error-c3031"></a>Derleyici Hatası C3031
-'var': 'azaltma' yan tümcesinde değişkeni skaler aritmetik türe sahip olmalıdır  
-  
- Yanlış türde bir değişken azaltma yan tümcesine geçirildi.  
-  
- Aşağıdaki örnek C3031 oluşturur:  
-  
-```  
-// C3031.cpp  
-// compile with: /openmp /link vcomps.lib  
-#include <stdio.h>  
-#include "omp.h"  
-  
-typedef struct {  
-   int n;  
-} Incomplete;  
-  
-extern Incomplete inc;  
-int i = 9;  
-  
-int main() {  
-   #pragma omp parallel reduction(+: inc)   // C3031   
-      ;  
-  
-   #pragma omp parallel reduction(+: i)     // OK  
-      ;  
-}  
+
+'var': 'reduction' yan tümcesindeki değişken skalar aritmetik türünde olmalıdır
+
+Reduction yan tümcesini yanlış türde bir değişken geçirildi.
+
+Aşağıdaki örnek, C3031 oluşturur:
+
+```
+// C3031.cpp
+// compile with: /openmp /link vcomps.lib
+#include <stdio.h>
+#include "omp.h"
+
+typedef struct {
+   int n;
+} Incomplete;
+
+extern Incomplete inc;
+int i = 9;
+
+int main() {
+   #pragma omp parallel reduction(+: inc)   // C3031
+      ;
+
+   #pragma omp parallel reduction(+: i)     // OK
+      ;
+}
 ```

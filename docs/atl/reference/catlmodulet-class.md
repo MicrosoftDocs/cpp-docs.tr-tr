@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f468117cc4d3fad8f3eb1d94abc948c9a4a032b4
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3a88ecf9c5fcffa07066c3ab988fde1f36adf8d4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766834"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057489"
 ---
 # <a name="catlmodulet-class"></a>CAtlModuleT sınıfı
 
@@ -38,13 +38,13 @@ Bu sınıf bir ATL modül uygular.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza türetilen `CAtlModuleT`.
 
 ## <a name="members"></a>Üyeler
@@ -74,7 +74,7 @@ Sınıfınıza türetilen `CAtlModuleT`.
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -132,10 +132,10 @@ HRESULT RegisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegTypeLib*  
+*bRegTypeLib*<br/>
 Tür kitaplığı kayıtlı olması ise TRUE. Varsayılan değer FALSE olur.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret kaydedilecek nesne. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kayıtlı değilse.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -166,10 +166,10 @@ HRESULT UnregisterServer(
 
 ### <a name="parameters"></a>Parametreler
 
-*bUnRegTypeLib*  
+*bUnRegTypeLib*<br/>
 Tür kitaplığı da silinmesine izin ise TRUE.
 
-*pCLSID*  
+*pCLSID*<br/>
 CLSID işaret silinmesine izin nesnesi. NULL (varsayılan değer), nesne eşlemesindeki tüm nesneleri kaydı silinecek durumunda.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -186,7 +186,7 @@ static HRESULT WINAPI UpdateRegistryAppId(BOOL /* bRegister*/) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bRegister*  
+*bRegister*<br/>
 Ayrılmış.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -195,6 +195,6 @@ Başarılıysa S_OK veya hatasında bir hata HRESULT döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CAtlModule sınıfı](../../atl/reference/catlmodule-class.md)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[CAtlModule Sınıfı](../../atl/reference/catlmodule-class.md)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

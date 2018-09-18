@@ -16,17 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91003af2069ba32083caefa8f5a79cbe0e7cd9c9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 08c22d7e371fda7a229b541f78d4385f2943ee54
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252900"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047791"
 ---
 # <a name="compiler-error-c3550"></a>Derleyici Hatası C3550
-yalnızca düz 'decltype(auto)' Bu bağlamda izin verilir  
-  
- Varsa `decltype(auto)` kullanılan bir yer tutucu bir işlevin dönüş türü kendisi tarafından kullanılmalıdır. Bir işaretçi bildirimi bir parçası olarak kullanılamaz (`decltype(auto*)`), bir başvuru bildirimi (`decltype(auto&)`), ya da herhangi diğer tür nitelik.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [auto](../../cpp/auto-cpp.md)
+
+Bu bağlamda yalnızca düz 'decltype(auto)' kullanılabilir
+
+Varsa `decltype(auto)` kullanılan işlevin dönüş türü için bir yer tutucu olarak, kendisi tarafından kullanılmalıdır. Bir işaretçi bildirimi bir parçası olarak kullanılamaz (`decltype(auto*)`), bir başvuru bildirimi (`decltype(auto&)`), veya tüm diğer tür nitelemesini.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[auto](../../cpp/auto-cpp.md)

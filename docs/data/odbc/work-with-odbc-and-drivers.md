@@ -15,27 +15,29 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7d49fa24c6cb27bc54e8cc3dc6bba674cb12ae57
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 37888b735e76c42aaca20b3519efe381f3d7578c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33095121"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038795"
 ---
 # <a name="work-with-odbc-and-drivers"></a>ODBC ve Sürücülerle Çalışma
-ODBC yalnızca bir veritabanı yönetim sistemine (DBMS) bağımlı olmayan uygulamalar yazmanızı sağlar. Kullanıcılarınızın doğru DBMS özgü ODBC sürücüsü olan birden çok DBMS üzerinde çalışabilir bir uygulama yazabilirsiniz.  
+
+ODBC, yalnızca bir veritabanı yönetim sistemi (DBMS) üzerinde bağımlı olmayan uygulamalar yazma olanağı sağlar. Kullanıcılarınızın doğru DBMS özgü ODBC sürücüsü olan birden çok DBMS üzerinde çalışabilecek bir uygulama yazabilirsiniz.  
   
 ## <a name="in-this-section"></a>Bu Bölümde  
   
--   [Çalışma zamanında bir ODBC veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)  
+- [Çalışma zamanında bir ODBC veri kaynağının şemasını belirleme](../../data/odbc/data-source-determining-the-schema-of-the-data-source-odbc.md)  
   
--   [ODBC Yöneticisi'ni kullanarak sürücü açıklaması alma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
+- [ODBC Yöneticisi'ni kullanarak sürücü açıklaması Al](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
   
--   [ODBC sürücüsü için çevrimiçi Yardım alma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
+- [ODBC sürücünüz için çevrimiçi Yardım alma](../../data/odbc/data-source-programmatically-configuring-an-odbc-data-source.md)  
   
--   [Program aracılığıyla ODBC veri kaynağında tablo oluşturma](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)  
+- [Program aracılığıyla ODBC veri kaynağında tablo oluşturma](../../data/odbc/data-source-programmatically-creating-a-table-in-an-odbc-data-source.md)  
   
--   [ODBC API işlevlerini doğrudan MFC'de çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
+- [MFC'de doğrudan ODBC API işlevlerini çağırma](../../data/odbc/odbc-calling-odbc-api-functions-directly.md)  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)
+
+[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)

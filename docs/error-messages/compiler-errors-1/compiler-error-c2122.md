@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6651bda63ab011fd7ef50eb6f71c3df27bb95ccd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4eab9412be46949845e1ed16bb701ae8621fac42
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33166185"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072250"
 ---
 # <a name="compiler-error-c2122"></a>Derleyici Hatası C2122
-'tanımlayıcısı': prototip parametre adı listesi geçersiz  
-  
- Parametresi geçerli bir tür değil. ANSI C kullanıcı tanımlı türler desteklemez.
+
+'identifier': prototip parametre adı listesi geçersiz
+
+Parametresi, geçerli bir tür değil. ANSI C, kullanıcı tanımlı türleri desteklemez.

@@ -50,14 +50,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f59619db743d8f8d08b2a202e992cdfcd532e1e8
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 4f44d43d48f862ca2ca5465d5ea9ee44d0e9040e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465832"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072426"
 ---
 # <a name="idbinitializeimpl-class"></a>IDBInitializeImpl Sınıfı
+
 Bir uygulamasını sağlar [IDBInitialize](/previous-versions/windows/desktop/ms713706\(v=vs.85\)) arabirimi.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -68,11 +69,13 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *T*  
- Sınıfınız, türetilen `IDBInitializeImpl`.  
+
+*T*<br/>
+Sınıfınız, türetilen `IDBInitializeImpl`.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldb.h  
+
+**Başlık:** atldb.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -97,9 +100,11 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 |[m_pCUtlPropInfo](#pcutlpropinfo)|DB özellikleri bilgileri, uygulama için bir işaretçi.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Veri kaynağı nesneleri ve isteğe bağlı bir arabirim numaralandırıcılar üzerinde zorunlu bir arabirim.  
+
+Veri kaynağı nesneleri ve isteğe bağlı bir arabirim numaralandırıcılar üzerinde zorunlu bir arabirim.  
 
 ## <a name="idbinitializeimpl"></a> Idbınitializeımpl::ıdbınitializeımpl
+
 Oluşturucu.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -109,9 +114,11 @@ IDBInitializeImpl();
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Tüm veri üyeleri başlatır. 
+
+Tüm veri üyeleri başlatır. 
   
 ## <a name="initialize"></a> Idbınitializeımpl::Initialize
+
 Veri kaynağı nesnesinin özellik desteğini hazırlayarak başlatır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -121,9 +128,11 @@ STDMETHOD(Initialize)(void);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: [IDBInitialize::Initialize](/previous-versions/windows/desktop/ms718026\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="uninitialize"></a> Idbınitializeımpl::Uninitialize
+
 Basamak veri özelliği desteği gibi iç kaynaklara azaltarak başlatılmamış durumda nesne kaynağı.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -133,9 +142,11 @@ STDMETHOD(Uninitialize)(void);
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bkz: [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
+
+Bkz: [IDBInitialize::Uninitialize](/previous-versions/windows/desktop/ms719648\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.
 
 ## <a name="dwstatus"></a> Idbınitializeımpl::m_dwstatus
+
 Veri kaynağı bayraklar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -145,7 +156,8 @@ DWORD m_dwStatus;
 ```  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu bayraklar belirtin veya veri kaynağı nesnesi için çeşitli öznitelikler durumunu gösterir. Bir veya daha fazlasını içeren **enum** değerleri:  
+
+Bu bayraklar belirtin veya veri kaynağı nesnesi için çeşitli öznitelikler durumunu gösterir. Bir veya daha fazlasını içeren **enum** değerleri:  
   
 ```cpp  
 enum DATASOURCE_FLAGS {  
@@ -162,6 +174,7 @@ enum DATASOURCE_FLAGS {
 |`DSF_INITIALIZED`|Veri kaynağı başlatılmışsa ayarlayın.|  
 
 ## <a name="pcutlpropinfo"></a> Idbınitializeımpl::m_pcutlpropınfo
+
 DB özellikleri bilgileri uygulama nesnesi için bir işaretçi.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -171,5 +184,6 @@ CUtlPropInfo< T >* m_pCUtlPropInfo;
 ```  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)   
- [OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)
+
+[OLE DB sağlayıcı şablonları](../../data/oledb/ole-db-provider-templates-cpp.md)<br/>
+[OLE DB Sağlayıcı Şablonu Mimarisi](../../data/oledb/ole-db-provider-template-architecture.md)

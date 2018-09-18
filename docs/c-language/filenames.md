@@ -12,19 +12,21 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7b1eb1b8a9bf04260a317d21df558e6f49fd78b
-ms.sourcegitcommit: 9a0905c03a73c904014ec9fd3d6e59e4fa7813cd
+ms.openlocfilehash: 48b9491db4e535966de946fb0285bbd72782dea4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43213939"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051970"
 ---
 # <a name="filenames"></a>Dosya Adları
-**ANSI 4.9.3** geçerli adlar oluşturma kuralları  
-  
- Bir dosya belirtimi, bir dizi (ters eğik çizgi ile ayrılmış olarak) isteğe bağlı dizin adları ve dosya adı (her zaman bir iki nokta üst üste işaretiyle), bir isteğe bağlı bir sürücü harfi içerebilir.  
-  
- Daha fazla bilgi için [dosya adlandırma](/windows/desktop/FileIO/naming-a-file) daha fazla bilgi için.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Kitaplık İşlevleri](../c-language/library-functions.md)
+
+**ANSI 4.9.3** geçerli adlar oluşturma kuralları
+
+Bir dosya belirtimi, bir dizi (ters eğik çizgi ile ayrılmış olarak) isteğe bağlı dizin adları ve dosya adı (her zaman bir iki nokta üst üste işaretiyle), bir isteğe bağlı bir sürücü harfi içerebilir.
+
+Daha fazla bilgi için [dosya adlandırma](/windows/desktop/FileIO/naming-a-file) daha fazla bilgi için.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Kitaplık İşlevleri](../c-language/library-functions.md)

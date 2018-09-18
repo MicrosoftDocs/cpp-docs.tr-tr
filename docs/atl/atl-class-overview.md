@@ -17,12 +17,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e64ecd708f5ff159b61a6b7601c74dbf2b6abda6
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: de241532763267f5d20d051121e501934da972cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758673"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055162"
 ---
 # <a name="atl-class-overview"></a>ATL sınıfına genel bakış
 
@@ -52,10 +52,10 @@ ATL projelerinde kullanılabilir ek sınıfları için bkz: [paylaşılan sını
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıflar ve yapılar](../atl/reference/atl-classes.md)   
-[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)  
-[İşlevleri](../atl/reference/atl-functions.md)   
-[Genel değişkenler](../atl/reference/atl-global-variables.md)   
-[Makroları](../atl/reference/atl-macros.md)   
+[Sınıflar ve yapılar](../atl/reference/atl-classes.md)<br/>
+[ATL COM Masaüstü Bileşenleri](../atl/atl-com-desktop-components.md)<br/>
+[İşlevler](../atl/reference/atl-functions.md)<br/>
+[Global Değişkenler](../atl/reference/atl-global-variables.md)<br/>
+[Makroları](../atl/reference/atl-macros.md)<br/>
 [Tür tanımları](../atl/reference/atl-typedefs.md)
 

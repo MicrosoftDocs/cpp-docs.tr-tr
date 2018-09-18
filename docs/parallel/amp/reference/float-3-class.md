@@ -84,15 +84,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0579a728210dc74db13faaae7ea4c7161ad4142e
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 8fdc665fea4aefe744850a5b2ca2565cb32fae3c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688459"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047570"
 ---
 # <a name="float3-class"></a>float_3 Sınıfı
-Üç float kısa bir vektör temsil eder.  
+Üç kayanın kısa vektörünü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -102,7 +102,7 @@ class float_3;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -112,7 +112,7 @@ class float_3;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[float_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[float_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
@@ -162,7 +162,7 @@ class float_3;
 |float_3::operator-||  
 |float_3::operator--||  
 |float_3::operator*=||  
-|float_3::operator ve =||  
+|float_3::operator / =||  
 |float_3::operator++||  
 |float_3::operator+=||  
 |float_3::operator=||  
@@ -219,7 +219,7 @@ class float_3;
   
 ##  <a name="ctor"></a> float_3 
 
- Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+ Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ```  
 float_3() restrict(amp,
@@ -269,20 +269,20 @@ explicit inline float_3(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ##  <a name="float_3__size"></a> Boyutu 
 

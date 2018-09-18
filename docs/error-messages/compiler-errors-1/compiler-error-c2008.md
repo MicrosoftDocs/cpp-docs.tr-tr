@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88dcbc88b50ee46b406d383ec36e1fed167eca05
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a00c2a55d7176beae88f7e5db3045722568bd293
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33165525"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051249"
 ---
 # <a name="compiler-error-c2008"></a>Derleyici Hatası C2008
-'character': makrosu tanımında beklenmeyen  
-  
- Karakter hemen makrosu adı görünür. Hatayı gidermek için bir boşluk makrosu adı olmalıdır sonra.  
-  
- Aşağıdaki örnek C2008 oluşturur:  
-  
-```  
-// C2008.cpp  
-#define TEST1"mytest1"    // C2008  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2008b.cpp  
-// compile with: /c  
-#define TEST2 "mytest2"  
+
+'character': Makro tanımında beklenmiyor
+
+Hemen makro adı karakteri görüntülenir. Hatayı gidermek için olmalıdır bir boşluk sonra makro adı.
+
+Aşağıdaki örnek, C2008 oluşturur:
+
+```
+// C2008.cpp
+#define TEST1"mytest1"    // C2008
+```
+
+Olası çözüm:
+
+```
+// C2008b.cpp
+// compile with: /c
+#define TEST2 "mytest2"
 ```

@@ -16,39 +16,40 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 199895ecba509b291d3853f0adabb2b68eee1e49
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3b4ba372dd542bfb2c38435b6084b55d95b1bdf2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33246409"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043280"
 ---
 # <a name="compiler-error-c3175"></a>Derleyici Hatası C3175
-'function1': yönetilen bir türde bir yöntem yönetilmeyen işlevi 'function2' çağrılamıyor  
-  
- Yönetilmeyen İşlevler yönetilen sınıflar üye işlevlerini çağrılamaz.  
-  
- Aşağıdaki örnek C3175 oluşturur:  
-  
-```  
-// C3175_2.cpp  
-// compile with: /clr  
-  
-ref struct A {  
-   static void func() {  
-   }  
-};  
-  
-#pragma unmanaged   // remove this line to resolve  
-  
-void func2() {  
-   A::func();   // C3175  
-}  
-  
-#pragma managed  
-  
-int main() {  
-   A ^a = gcnew A;  
-   func2();  
-}  
-```  
+
+'function1': 'function2' yönetilmeyen işlevinden bir yönetilen türün bir yöntemi çağrılamaz
+
+Yönetilmeyen işlevleri yönetilen sınıflarının üye işlevleri çağrılamaz.
+
+Aşağıdaki örnek, C3175 oluşturur:
+
+```
+// C3175_2.cpp
+// compile with: /clr
+
+ref struct A {
+   static void func() {
+   }
+};
+
+#pragma unmanaged   // remove this line to resolve
+
+void func2() {
+   A::func();   // C3175
+}
+
+#pragma managed
+
+int main() {
+   A ^a = gcnew A;
+   func2();
+}
+```

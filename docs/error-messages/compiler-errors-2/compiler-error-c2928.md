@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0e88e3c86bb88f8b46c6e88f55cb57799ccf42bd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77f1b71d47ecd8cbf110367ccf00ed0f936978ae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33241810"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46076040"
 ---
 # <a name="compiler-error-c2928"></a>Derleyici Hatası C2928
-Açık örnekleme; 'tanımlayıcısı' işlevi veya şablon-class 'sınıfı statik veri üyesi değil  
-  
- Üye açıkça başlatılamıyor `class` diğer bir deyişle bir işlev değil veya `static` değişkeni.
+
+Açık örnek oluşturma; 'identifier' bir işlev veya Şablon sınıfı 'class' statik veri üyesi değil
+
+Açıkça üyesi başlatılamıyor `class` diğer bir deyişle bir işlev değil veya `static` değişkeni.

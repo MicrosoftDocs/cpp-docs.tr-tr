@@ -16,37 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b40e4500554d04c39e4009aeef104e0d8eacb7c8
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c80e7d3a6f9e3f97b05e1ec9e966de7f6d8a388d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302204"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047115"
 ---
 # <a name="compiler-warning-level-1-c4912"></a>Derleyici Uyarısı (düzey 1) C4912
-'öznitelik': öznitelik iç içe geçmiş UDT davranışı tanımlı olmayan  
-  
- İç içe geçmiş atama (typedef, UNION veya yapı olabilen kullanıcı tanımlı türü) için geçerli öznitelikleri yoksayılabilir.  
-  
- Aşağıdaki kod, nasıl bu uyarı oluşturulacağını gösterir:  
-  
-```  
-// C4912.cpp  
-// compile with: /W1  
-#include <windows.h>  
-[emitidl, module(name="xx")];  
-  
-[object, uuid("00000000-0000-0000-0000-000000000002")]  
-__interface IMy  
-{  
-};  
-  
-[coclass, default(IMy), appobject, uuid("00000000-0000-0000-0000-000000000001")]  
-class CMy : public IMy  
-{  
-   [export, v1_enum] typedef enum myEnum { k3_1 = 1, k3_2 = 2 } myEnumv;   // C4912  
-};  
-int main()  
-{  
-}  
+
+'attribute': özniteliği bir iç içe geçmiş UDT'de davranışı tanımlı değil
+
+İç içe geçmiş Udt'ler (bir tür tanımı, birleşim veya yapı olabilecek kullanıcı tanımlı türü) için uygulanan öznitelikleri yoksayılabilir.
+
+Aşağıdaki kod nasıl bu uyarı oluşturulacağını gösterir:
+
+```
+// C4912.cpp
+// compile with: /W1
+#include <windows.h>
+[emitidl, module(name="xx")];
+
+[object, uuid("00000000-0000-0000-0000-000000000002")]
+__interface IMy
+{
+};
+
+[coclass, default(IMy), appobject, uuid("00000000-0000-0000-0000-000000000001")]
+class CMy : public IMy
+{
+   [export, v1_enum] typedef enum myEnum { k3_1 = 1, k3_2 = 2 } myEnumv;   // C4912
+};
+int main()
+{
+}
 ```

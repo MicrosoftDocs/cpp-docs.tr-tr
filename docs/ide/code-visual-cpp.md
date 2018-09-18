@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 331828f5c2cd3001cef50a29388a10c0a6a26f1d
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 508f6b41c791cdb3a62e7c6e3de8a8a633dff3e9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33330125"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038886"
 ---
 # <a name="ltcodegt-visual-c"></a>&lt;kod&gt; (Visual C++)
-\<Kodu > etiketi bir veya daha fazla satır kodu olarak belirtmek için bir yol sağlar.  
+\<Kod > etiketini bir veya daha fazla kod olarak göstermek için bir yol sağlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -35,16 +35,16 @@ ms.locfileid: "33330125"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `content`  
- Kod olarak işaretlenmiş istediğiniz metin.  
+*İçeriği*<br/>
+Kod olarak işaretlenmiş istediğiniz metin.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Kullanım [ \<c >](../ide/c-visual-cpp.md) metnin bir bölümünü kodu olarak işaretlenmiş belirtmek için.  
+ Kullanım [ \<c >](../ide/c-visual-cpp.md) metnin bir bölümünü kod olarak işaretlenmemelidir belirtmek için.  
   
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
- Bkz: [ \<örnek >](../ide/example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek konu \<kodu > etiketi.  
+ Bkz: [ \<örnek >](../ide/example-visual-cpp.md) nasıl kullanılacağına ilişkin bir örnek için konu \<kod > etiketi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [XML Belgeleri](../ide/xml-documentation-visual-cpp.md)

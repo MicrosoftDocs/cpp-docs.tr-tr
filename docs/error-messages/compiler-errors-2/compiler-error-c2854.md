@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1555d36a9371145af2685ecd6650d7fdecc69660
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7bd49c9fbfa88667cdb2e8bd57466632c0a051e3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243628"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074818"
 ---
 # <a name="compiler-error-c2854"></a>Derleyici Hatası C2854
-#pragma hdrstop sözdizimi hatası  
-  
- `#pragma hdrstop` Geçersiz bir dosya adı sağlar. Pragma parantezler ve tırnak işaretleri isteğe bağlı bir dosya adı tarafından izlenebilir:  
-  
- Aşağıdaki örnek C2854 oluşturur:  
-  
-```  
-// C2854.cpp  
-// compile with: /c  
-#pragma hdrstop( "\\source\\pchfiles\\myheader.pch" ]   // C2854  
-// try the following line instead  
-// #pragma hdrstop( "\\source\\pchfiles\\myheader.pch" )  
+
+#pragma hdrstop içinde sözdizimi hatası
+
+`#pragma hdrstop` Geçersiz dosya adı sağlar. Pragma, parantezleri ve tırnak işaretleri içinde isteğe bağlı bir dosya adı tarafından izlenebilir:
+
+Aşağıdaki örnek, C2854 oluşturur:
+
+```
+// C2854.cpp
+// compile with: /c
+#pragma hdrstop( "\\source\\pchfiles\\myheader.pch" ]   // C2854
+// try the following line instead
+// #pragma hdrstop( "\\source\\pchfiles\\myheader.pch" )
 ```

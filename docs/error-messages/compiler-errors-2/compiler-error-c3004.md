@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c03f9b609bfa7f60794a120488315680e5f6df2d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d9ccca52b5977c5d709b79dbc6351b5a94605849
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243593"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068813"
 ---
 # <a name="compiler-error-c3004"></a>Derleyici Hatası C3004
-'yan tümcesi': yan tümcesi OpenMP 'yönergesi' yönergesi üzerinde geçerli değil  
-  
- OpenMP yan tümcesi için etkin bir yönerge kullanıldı.  
-  
- Aşağıdaki örnek C3004 oluşturur:  
-  
-```  
-// C3004.c  
-// compile with: /openmp  
-int main()  
-{  
-   int x, y, z;  
-  
-   // Shared clause not allowed for 'single' directive.  
-   #pragma omp single shared(x, y)   // C3004  
-  
-   x = y;  
-}  
+
+'yan tümcesi': yan tümce OpenMP 'yönergesi' yönergesinde geçerli değil
+
+Bir OpenMP tümcesi için etkin bir yönergesinde kullanıldı.
+
+Aşağıdaki örnek, C3004 oluşturur:
+
+```
+// C3004.c
+// compile with: /openmp
+int main()
+{
+   int x, y, z;
+
+   // Shared clause not allowed for 'single' directive.
+   #pragma omp single shared(x, y)   // C3004
+
+   x = y;
+}
 ```

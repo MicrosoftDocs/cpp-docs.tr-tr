@@ -24,12 +24,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 43581995e8979ec733d8c82374896009c843166b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 2359bb3909c803e4df1efdeef9058a3553908ff9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074064"
 ---
 # <a name="cstringelementtraits-class"></a>CStringElementTraits sınıfı
 
@@ -38,13 +38,13 @@ Statik işlevler depolama koleksiyon sınıfları tarafından kullanılan bu sı
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <typename T>  
+template <typename T>
 class CStringElementTraits
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Koleksiyonda depolanacak veri türü.
 
 ## <a name="members"></a>Üyeler
@@ -86,10 +86,10 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2);
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 İlk dize öğesi.
 
-*str2*  
+*str2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -106,10 +106,10 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2);
 
 ### <a name="parameters"></a>Parametreler
 
-*str1*  
+*str1*<br/>
 İlk dize öğesi.
 
-*str2*  
+*str2*<br/>
 İkinci dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -129,13 +129,13 @@ static void CopyElements(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDest*  
+*pDest*<br/>
 Kopyalanan veriler alacak ilk öğesinin işaretçisi.
 
-*pSrc*  
+*pSrc*<br/>
 Kopyalamak için ilk öğesinin işaretçisi.
 
-*nElements*  
+*nElements*<br/>
 Kopyalanacak öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -152,7 +152,7 @@ static ULONG Hash(INARGTYPE str);
 
 ### <a name="parameters"></a>Parametreler
 
-*str*  
+*str*<br/>
 Dize öğesi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -188,13 +188,13 @@ static void RelocateElements(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDest*  
+*pDest*<br/>
 Veriler yeni yerlerine alacak ilk öğesinin işaretçisi.
 
-*pSrc*  
+*pSrc*<br/>
 Dışında yeniden konumlandırmakta ilk öğesinin işaretçisi.
 
-*nElements*  
+*nElements*<br/>
 Dışında yeniden konumlandırmakta öğe sayısı.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -203,6 +203,6 @@ Bu statik işlev çağrıları [memmove](../../c-runtime-library/reference/memmo
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CElementTraitsBase sınıfı](../../atl/reference/celementtraitsbase-class.md)   
-[Cstringelementtraitsı sınıfı](../../atl/reference/cstringelementtraitsi-class.md)   
+[CElementTraitsBase Sınıfı](../../atl/reference/celementtraitsbase-class.md)<br/>
+[CStringElementTraitsI Sınıfı](../../atl/reference/cstringelementtraitsi-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

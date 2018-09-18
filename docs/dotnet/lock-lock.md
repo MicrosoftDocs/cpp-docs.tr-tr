@@ -20,15 +20,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: df35eed8711e83174316ac9912f7ba535ef9ebf9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 128a86b59ebf43ab87b0f4f4bcb7e9c684e4ad07
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33135033"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051834"
 ---
 # <a name="locklock"></a>lock::lock
-Oluşturan bir `lock` nesnesi, isteğe bağlı olarak her zaman, belirtilen bir miktar süre ya da hiç için kilit bekleniyor.  
+Oluşturur bir `lock` nesne, isteğe bağlı olarak her zaman, belirli bir süre süreyi veya hiç kilit bekleniyor.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -51,26 +51,26 @@ template<class T> lock(
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `_object`  
- Kilitlenecek nesne.  
+*n_esne*<br/>
+Kilitlenecek nesne.  
   
- `_timeout`  
- Zaman aşımı değerini milisaniye cinsinden veya farklı bir <xref:System.TimeSpan>.  
+*_Zaman aşımı*<br/>
+Zaman aşımı değerini milisaniye cinsinden veya olarak bir <xref:System.TimeSpan>.  
   
 ## <a name="exceptions"></a>Özel Durumlar  
- Oluşturur <xref:System.ApplicationException> kilit edinme zaman aşımından önce gerçekleşmezse.  
+ Oluşturur <xref:System.ApplicationException> kilit alma zaman aşımından önce gerçekleşmezse.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Oluşturucusu ilk üç formlarını üzerinde kilit elde etmeye `_object` belirtilen zaman aşımı süresi içinde (veya <xref:System.Threading.Timeout.Infinite> hiçbiri belirtilen).  
+ Oluşturucu, ilk üç formlar üzerinde kilit girişimi `_object` belirtilen zaman aşımı süresi içinde (veya <xref:System.Threading.Timeout.Infinite> hiçbiri belirtilmezse).  
   
- Oluşturucusu dördüncü biçiminde bir üzerinde kilit yok `_object`. `lock_later` üye [lock_when numaralandırması](../dotnet/lock-when-enum.md). Kullanım [lock::acquire](../dotnet/lock-acquire.md) veya [lock::try_acquire](../dotnet/lock-try-acquire.md) bu durumda kilidinin alınması.  
+ Dördüncü Oluşturucu biçiminde üzerinde kilit değil `_object`. `lock_later` bir üyesidir [lock_when numaralandırması](../dotnet/lock-when-enum.md). Kullanım [lock::acquire](../dotnet/lock-acquire.md) veya [lock::try_acquire](../dotnet/lock-try-acquire.md) kilit bu durumda.  
   
- Yok Edicisi çağrıldığında kilidi otomatik olarak yayınlanacaktır.  
+ Kilit, yok edici çağrıldığında otomatik olarak yayımlanacaktır.  
   
- `_object` olamaz <xref:System.Threading.ReaderWriterLock>.  Derleyici Hatası ise, neden olur.  
+ `_object` olamaz <xref:System.Threading.ReaderWriterLock>.  Bu durumda, bir derleyici hatasına neden olur.  
   
 ## <a name="example"></a>Örnek  
- Bu örnek, birden çok iş parçacıkları arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisini iç verilerine erişir her iş parçacığı için tutarlı olduğundan emin olmak için kullanır.  Ana uygulama iş parçacığı bir kilit sınıfı aynı örneğinde hiçbir çalışan iş parçacığı hala var ve tüm çalışan iş parçacığı kadar çıkmak için bekleyeceği görevlerini tamamladınız görmek için düzenli aralıklarla denetlemek için kullanır.  
+ Bu örnek, birden çok iş parçacığı arasında bir sınıfın tek bir örneğini kullanır.  Sınıfı bir kilit kendisine iç verilerine erişen her bir iş parçacığı için tutarlı olmasını sağlamak için kullanır.  Ana uygulama iş parçacığı herhangi bir çalışan iş parçacığı hala mevcut ve kadar tüm çalışan iş parçacığı'ndan çıkmak için beklediği görevlerini tamamladınız görmek için düzenli aralıklarla kontrol etmek için aynı sınıf örneği üzerinde bir kilit kullanır.  
   
 ```  
 // msl_lock_lock.cpp  
@@ -159,7 +159,7 @@ All threads completed.
 ```  
   
 ## <a name="requirements"></a>Gereksinimler  
- **Üstbilgi dosyası** \<msclr\lock.h >  
+ **Üst bilgi dosyası** \<msclr\lock.h >  
   
  **Namespace** msclr  
   

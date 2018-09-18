@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 88b27af84c390760274bb20665eec4452c8e7072
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1970dd1bd231716f59508a7cca9f82d3e13151ae
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279756"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074053"
 ---
 # <a name="compiler-warning-level-1-c4218"></a>Derleyici Uyarısı (düzey 1) C4218
-kullanılan standart olmayan uzantısı: en az bir depolama sınıfı ya da türü belirtmeniz gerekir  
-  
- Varsayılan Microsoft Uzantıları (/Ze), bir tür veya depolama sınıfı belirtmeden bir değişken bildirebilirsiniz. Varsayılan türdür `int`.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4218.c  
-// compile with: /W4  
-i;  // C4218  
-  
-int main()  
-{  
-}  
-```  
-  
- Bu tür bildirimleri ANSI Uyumluluğu altında geçersiz ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).
+
+Standart olmayan uzantı kullanıldı: en az bir depolama sınıfı veya türü belirtmeniz gerekir
+
+Varsayılan Microsoft Uzantıları (/Ze) ile bir türü veya depolama sınıfı belirtmeden bir değişken bildirebilir. Varsayılan türü `int`.
+
+## <a name="example"></a>Örnek
+
+```
+// C4218.c
+// compile with: /W4
+i;  // C4218
+
+int main()
+{
+}
+```
+
+Bu tür bildirimleri ANSI Uyumluluğu altında geçersiz ([/Za](../../build/reference/za-ze-disable-language-extensions.md)).

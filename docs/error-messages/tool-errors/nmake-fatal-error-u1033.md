@@ -16,40 +16,41 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1d39d4c35ec66d405d51d601b7c5d2b2ab37b02
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7492e5fd77f8e88b2191174f84c298c6166d8d89
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33319276"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066391"
 ---
 # <a name="nmake-fatal-error-u1033"></a>NMAKE Önemli Hatası U1033
-sözdizimi hatası: 'string' beklenmeyen  
-  
- Dize derleme görevleri dosyası söz diziminin geçerli bir parçası değil.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Kapanış köşeli ayarlarsanız (**<<**) satır içi dosya olmayan için bir satır başında, aşağıdaki hata oluşur:  
-  
-    ```  
-    syntax error : 'EOF' unexpected  
-    ```  
-  
-2.  Derleme görevleri dosyası makrosu tanımında eşittir işareti bulunan varsa (**=**) bir önceki adı veya bir şey genişletir makrosu adı tanımlanmakta ise olmadan aşağıdaki hata oluşur:  
-  
-    ```  
-    syntax error : '=' unexpected  
-    ```  
-  
-3.  Noktalı virgül (**;**) bir açıklama satırı araçlarında. INI satır başında aşağıdaki hata oluşuyor değil:  
-  
-    ```  
-    syntax error : ';' unexpected  
-    ```  
-  
-4.  Derleme görevleri dosyası bir sözcük işlemci tarafından biçimlendirilmiş, aşağıdaki hata oluşabilir:  
-  
-    ```  
-    syntax error : ':' unexpected  
+
+sözdizimi hatası: 'string' beklenmeyen
+
+Dize geçerli bir derleme görevleri dosyası sözdizimi bir parçası değil.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Kapanış açılı ayraçlar ayarlarsanız (**<<**) bir satırın başında bir satır içi dosyası için aşağıdaki hata oluşur:
+
+    ```
+    syntax error : 'EOF' unexpected
+    ```
+
+1. Derleme görevleri dosyası Makro tanımında bir eşittir işareti bulunan varsa (**=**) bir önceki adı veya ad tanımlanan hiçbir öğeye genişletilmez bir makro ise olmadan aşağıdaki hata oluşur:
+
+    ```
+    syntax error : '=' unexpected
+    ```
+
+1. Noktalı virgül (**;**) bir açıklama satırı araçları. INI satırın başında aşağıdaki hata oluşur değil:
+
+    ```
+    syntax error : ';' unexpected
+    ```
+
+1. Derleme görevleri dosyası bir sözcük işlemcisi tarafından biçimlendirilmiş, şu hata ortaya çıkabilir:
+
+    ```
+    syntax error : ':' unexpected
     ```

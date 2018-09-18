@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 457c880f7f7eb6c011637b438fa3bcc25d57303b
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 190716877090f53aa48023d493cded9793839380
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43758280"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039575"
 ---
 # <a name="ccomsafearraybound-class"></a>CComSafeArrayBound sınıfı
 
@@ -78,10 +78,10 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ulCount*  
+*ulCount*<br/>
 Dizideki öğelerin sayısı
 
-*lLowerBound*  
+*lLowerBound*<br/>
 Dizi numaralandırılmış gelen alt sınır.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -143,10 +143,10 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*bağlı*  
+*bağlı*<br/>
 A `CComSafeArrayBound` nesne.
 
-*ulCount*  
+*ulCount*<br/>
 Öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -167,7 +167,7 @@ ULONG SetCount(ULONG ulCount) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*ulCount*  
+*ulCount*<br/>
 Öğe sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -184,7 +184,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lLowerBound*  
+*lLowerBound*<br/>
 Alt sınır.
 
 ### <a name="return-value"></a>Dönüş Değeri

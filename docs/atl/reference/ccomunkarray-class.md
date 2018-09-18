@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9b977875655182f1cbc822540cf021635f525f7e
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 7cab0ea4ecf4bfabede365b9e0fbc9d4a02e2515
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756424"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057463"
 ---
 # <a name="ccomunkarray-class"></a>CComUnkArray sınıfı
 
@@ -45,7 +45,7 @@ class CComUnkArray
 
 #### <a name="parameters"></a>Parametreler
 
-*nMaxSize*  
+*nMaxSize*<br/>
 En fazla `IUnknown` statik dizideki tutulabilir işaretçileri.
 
 ## <a name="members"></a>Üyeler
@@ -92,7 +92,7 @@ DWORD Add(IUnknown* pUnk);
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnk*  
+*pUnk*<br/>
 Eklemek için bu yöntemi çağıran bir `IUnknown` dizi için işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -159,7 +159,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 ### <a name="parameters"></a>Parametreler
 
-*ppFind*  
+*ppFind*<br/>
 `IUnknown` İşaretçi için ilişkili tanımlama bilgisi gereklidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -180,7 +180,7 @@ IUnknown* WINAPI GetUnknown(DWORD dwCookie);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwCookie*  
+*dwCookie*<br/>
 Tanımlama bilgisi, ilişkili `IUnknown` işaretçisi gereklidir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -197,7 +197,7 @@ BOOL Remove(DWORD dwCookie);
 
 ### <a name="parameters"></a>Parametreler
 
-*dwCookie*  
+*dwCookie*<br/>
 Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -206,5 +206,5 @@ Tanımlama bilgisi başvuru `IUnknown` işaretçi diziden kaldırılacak.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CComDynamicUnkArray sınıfı](../../atl/reference/ccomdynamicunkarray-class.md)   
+[CComDynamicUnkArray Sınıfı](../../atl/reference/ccomdynamicunkarray-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

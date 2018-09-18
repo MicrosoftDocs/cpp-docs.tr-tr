@@ -14,27 +14,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 570cfec1f3894a766e8eb939e5cd77ad217ebf6d
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 59abbf46ba875aef015982650b355c0c4153c7de
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32382802"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059894"
 ---
 # <a name="lexical-grammar"></a>Sözcük Dilbilgisi
--   [Belirteçler](../c-language/summary-of-tokens.md)  
-  
--   [Anahtar Sözcükler](../c-language/summary-of-keywords.md)  
-  
--   [Tanımlayıcılar](../c-language/summary-of-identifiers.md)  
-  
--   [Sabitler](../c-language/summary-of-constants.md)  
-  
--   [Dize değişmez değerleri](../c-language/summary-of-string-literals.md)  
-  
--   [İşleçler](../c-language/operators-c.md)  
-  
--   [Noktalama İşaretçileri](../c-language/punctuators.md)  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)
+
+- [Belirteçler](../c-language/summary-of-tokens.md)
+
+- [Anahtar Sözcükler](../c-language/summary-of-keywords.md)
+
+- [Tanımlayıcılar](../c-language/summary-of-identifiers.md)
+
+- [Sabitler](../c-language/summary-of-constants.md)
+
+- [Dize değişmez değerleri](../c-language/summary-of-string-literals.md)
+
+- [İşleçler](../c-language/operators-c.md)
+
+- [Noktalama İşaretçileri](../c-language/punctuators.md)
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dili Sözdizimi Özeti](../c-language/c-language-syntax-summary.md)

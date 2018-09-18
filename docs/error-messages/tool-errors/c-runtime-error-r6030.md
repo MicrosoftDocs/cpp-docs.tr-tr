@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae8eb17fc9d074604586582be08c43289b680b4f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 63606624e1cbcc5ef2c5ea453ee6d346e3e686a8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299542"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46038132"
 ---
 # <a name="c-runtime-error-r6030"></a>C çalışma zamanı hatası R6030
-CRT başlatılmadı  
-  
+
+CRT başlatılmadı
+
 > [!NOTE]
->  Bir uygulama çalıştırırken bu hata iletisi alırsanız, dahili bir sorun olduğundan uygulama kapatıldı. Bu sorunu en sık belirli güvenlik yazılımı programları veya nadiren, programın bir hatadan kaynaklanır.  
->   
->  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:  
->   
->  -   Güvenlik yazılımının bu sorunu Azaltıcı yönelik özel yönergeler olabilir. Ayrıntılar için güvenlik yazılım satıcısının Web sitesini denetleyin. Alternatif olarak, güvenlik yazılımının güncelleştirilmiş sürümlerini denetleyin veya farklı güvenlik yazılımı deneyin.  
-> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasındaki **Denetim Masası** onarın veya program yeniden yükleyin.  
-> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.  
-> -   Uygulamanın güncelleştirilmiş bir sürümünü denetle. Sorun devam ederse uygulamanın satıcısına başvurun.  
-  
- **Programcıları için bilgi**  
-  
- C çalışma zamanı (CRT) kullanıyorsanız, ancak CRT başlatma kodunu yürütülmedi bu hata oluşur. Bağlayıcı geçerseniz bu hatayı almak olası [/Entry](../../build/reference/entry-entry-point-symbol.md) başlangıç adresi, genellikle varsayılan geçersiz kılmak için kullanılan **mainCRTStartup**, **wmainCRTStartup** için bir Konsol EXE **WinMainCRTStartup** veya **wWinMainCRTStartup** Windows EXE için veya **_DllMainCRTStartup** bir DLL için. Yukarıdaki işlevleri birini başlangıçta adlandırılır sürece C çalışma zamanı başlatılmayacak. C Çalışma Zamanı Kitaplığı'na bağlamak ve normal kullandığınızda bu başlangıç İşlevler normalde varsayılan olarak adlandırılır **ana**, **wmain**, **WinMain**, veya  **DllMain** giriş noktaları.  
-  
- Başka bir program bazı DLL Kitaplığı çağrıları yakalamak için kod ekleme teknikleri kullandığında bu hatayı almaya mümkündür. Bu teknik bazı zorlayıcı güvenlik programlarını kullanın. Visual C++ Visual Studio 2015 tarihinden önceki sürümlerinde, sorunu gidermek için bir statik olarak bağlantılı CRT kitaplık kullanmak da mümkündür, ancak bu güvenlik ve uygulama güncelleştirmelerini nedenleriyle önerilmez. Bu sorunu düzeltme son kullanıcı eylemi gerektirebilir.
+>  Bir uygulama çalıştırırken bu hatayla karşılaşırsanız, dahili bir sorun olduğundan uygulaması kapatıldı. Bu sorun genellikle belirli güvenlik yazılım programları veya nadiren de olsa bir programın hata neden olur.
+>
+>  Bu hatayı düzeltmek için aşağıdaki adımları deneyebilirsiniz:
+>
+>  -   Bu sorunu giderme için yönergeler güvenlik yazılımının olabilir. Ayrıntılar için güvenlik yazılım satıcısının Web sitesine bakın. Alternatif olarak, güvenlik yazılımının güncelleştirilmiş sürümlerini denetlemek ya da farklı güvenlik yazılımı deneyin.
+> -   Kullanım **uygulamalar ve Özellikler** veya **programlar ve Özellikler** sayfasını **Denetim Masası** onarın veya programı yeniden yükleyin.
+> -   Denetleme **Windows Update** içinde **Denetim Masası** yazılım güncelleştirmeleri için.
+> -   Uygulamanın güncelleştirilmiş bir sürümünü denetleyin. Sorun devam ederse uygulama satıcısına başvurun.
+
+**Programcıları için bilgi**
+
+C çalışma zamanı (CRT) kullanıyorsanız, ancak CRT başlatma kodunu yürütülmedi bu hata oluşur. Bağlayıcı geçiş yaparsanız, bu hatayı almak olası [/Entry](../../build/reference/entry-entry-point-symbol.md) başlangıç adresi, genellikle varsayılan geçersiz kılmak için kullanılan **mainCRTStartup**, **wmainCRTStartup** için bir Konsol EXE **WinMainCRTStartup** veya **wWinMainCRTStartup** için bir Windows EXE veya **_DllMainCRTStartup** bir DLL için. Yukarıdaki işlevlerden birini başlangıç olarak adlandırılan sürece, C çalışma zamanı başlatılmayacak. C Çalışma Zamanı Kitaplığı'na bağlamak ve normal kullandığınızda varsayılan olarak bu başlangıç İşlevler normalde çağrılır **ana**, **wmain**, **WinMain**, veya  **DllMain** giriş noktaları.
+
+Başka bir program, bazı DLL Kitaplığı çağrıları yakalamak için kod ekleme teknikleri kullanır. Bu hatayı almak mümkündür. Bazı müdahale eden güvenlik programlarını bu tekniği kullanın. Önce Visual Studio 2015 Visual C++ sürümlerinde, sorunu gidermek için bir statik olarak bağlanan CRT kitaplığı kullanmak da mümkündür, ancak bu güvenlik ve uygulama güncelleştirmelerini nedenleriyle önerilmez. Bu sorunu düzeltmek için son kullanıcı eylem gerektirebilir.

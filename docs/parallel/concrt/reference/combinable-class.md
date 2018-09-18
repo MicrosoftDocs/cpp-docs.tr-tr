@@ -22,15 +22,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 695081e6513965a89222d1108c632e2f22580184
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 5e8864b5c10b87813d89c55de806ceed24998754
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689210"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044580"
 ---
 # <a name="combinable-class"></a>combinable Sınıfı
-`combinable<T>` Nesne kilidi serbest iş parçacığı yerel alt sırasında paralel algoritmalar hesaplamalar veri, iş parçacığı özel kopyasının sağlamak için tasarlanmıştır. Paralel işlemin sonunda, iş parçacığı özel alt hesaplamalar sonra nihai sonucu birleştirilebilir. Bu sınıf, paylaşılan bir değişken yerine kullanılabilir ve aksi durumda olurdu, çok sayıda paylaşılan değişken üzerinde Çekişme bir performans geliştirmesinden ortaya çıkabilir.  
+`combinable<T>` Nesne sırasında paralel algoritmalar kilidi serbest iş parçacığı-yerel alt hesaplamalar gerçekleştirmek için veri, iş parçacığı özel kopyalarını sağlamak için tasarlanmıştır. Paralel işlemin sonunda, iş parçacığı özel alt hesaplamalar sonra bir nihai sonucu birleştirilebilir. Bu sınıf, paylaşılan bir değişken yerine kullanılabilir ve aksi durumda olacaktır, paylaşılan bir değişken üzerinde Çekişme birçok performans geliştirmeyle neden olabilir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,8 +40,8 @@ class combinable;
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `T`  
- Son birleştirilen sonucu veri türü. Tür kopya oluşturucu ve varsayılan bir oluşturucu sahip olmalıdır.  
+*T*<br/>
+Birleştirilmiş sonuç veri türü. Türü, bir kopya oluşturucu ve varsayılan bir oluşturucuya sahip olmalıdır.  
   
 ## <a name="members"></a>Üyeler  
   
@@ -49,26 +49,26 @@ class combinable;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[combinable](#ctor)|Fazla Yüklendi. Yeni bir oluşturur `combinable` nesnesi.|  
-|[~ combinable yok Edicisi](#dtor)|Bozar bir `combinable` nesnesi.|  
+|[birleştirilebilir](#ctor)|Fazla Yüklendi. Yeni bir oluşturur `combinable` nesne.|  
+|[~ combinable yok Edicisi](#dtor)|Yok eder bir `combinable` nesne.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[Temizle](#clear)|Herhangi bir önceki kullanımı hesaplama sonuçlarından Ara temizler.|  
-|[Birleştirme](#combine)|Sağlanan birleştirme functor çağırarak iş parçacığı yerel alt hesaplamalar kümesinden son değeri hesaplar.|  
-|[combine_each](#combine_each)|İş parçacığı yerel alt hesaplamalar kümesinden son bir değer, her iş parçacığı yerel alt hesaplama için bir kez sağlanan birleştirme functor çağırarak hesaplar. Nihai sonucu işlevi nesne tarafından toplanır.|  
+|[Temizle](#clear)|Herhangi bir önceki kullanım hesaplama sonuçlardan Ara temizler.|  
+|[Birleştirme](#combine)|Sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar.|  
+|[combine_each](#combine_each)|Her iş parçacığı-yerel alt hesaplama için bir kez sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar. Nihai sonucu işlev nesnesi tarafından toplanır.|  
 |[Yerel](#local)|Fazla Yüklendi. İş parçacığı özel alt hesaplama bir başvuru döndürür.|  
   
 ### <a name="public-operators"></a>Ortak İşleçler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operator=](#operator_eq)|Atar bir `combinable` başka bir nesne `combinable` nesne.|  
+|[operator=](#operator_eq)|Atayan bir `combinable` başka bir nesne `combinable` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).  
+ Daha fazla bilgi için [paralel kapsayıcılar ve nesneler](../../../parallel/concrt/parallel-containers-and-objects.md).  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `combinable`  
@@ -80,15 +80,15 @@ class combinable;
   
 ##  <a name="clear"></a> Temizle 
 
- Herhangi bir önceki kullanımı hesaplama sonuçlarından Ara temizler.  
+ Herhangi bir önceki kullanım hesaplama sonuçlardan Ara temizler.  
   
 ```
 void clear();
 ```  
   
-##  <a name="ctor"></a> combinable 
+##  <a name="ctor"></a> birleştirilebilir 
 
- Yeni bir oluşturur `combinable` nesnesi.  
+ Yeni bir oluşturur `combinable` nesne.  
   
 ```
 combinable();
@@ -100,25 +100,25 @@ combinable(const combinable& _Copy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- Başlatma functor nesnenin türü.  
+*_Function*<br/>
+Başlatma functor nesnenin türü.  
   
- `_FnInitialize`  
- Her yeni iş parçacığı özel değer türü başlatmak için çağrılacak bir işlev `T`. İşlev çağırma işleci imzalı desteklemelidir `T ()`.  
+*_FnInitialize*<br/>
+Her yeni iş parçacığı özel değer türü başlatmak için çağrılacak bir işlev `T`. İmzalı bir işlev çağrısı işleci desteklemelidir `T ()`.  
   
- `_Copy`  
- Varolan bir `combinable` nesne bunu kopyalanacak.  
+*_Kopyala*<br/>
+Mevcut bir `combinable` bunun kopyalanacak nesne.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Yeni öğe türü için varsayılan oluşturucu ile ilk Oluşturucu başlatır `T`.  
+ İlk Oluşturucu türü için varsayılan oluşturucu yeni öğelerle başlatır `T`.  
   
- İkinci oluşturucu olarak sağlanan başlatma functor kullanarak yeni öğeleri başlatır `_FnInitialize` parametresi.  
+ İkinci oluşturucu olarak sağlanan başlatma functor kullanarak yeni öğeler başlatır `_FnInitialize` parametresi.  
   
- Üçüncü Oluşturucusu kopya Oluşturucu ' dir.  
+ Üçüncü Oluşturucu, kopya oluşturucudur.  
   
 ##  <a name="dtor"></a> ~ combinable 
 
- Bozar bir `combinable` nesnesi.  
+ Yok eder bir `combinable` nesne.  
   
 ```
 ~combinable();
@@ -126,7 +126,7 @@ combinable(const combinable& _Copy);
   
 ##  <a name="combine"></a> Birleştirme 
 
- Sağlanan birleştirme functor çağırarak iş parçacığı yerel alt hesaplamalar kümesinden son değeri hesaplar.  
+ Sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar.  
   
 ```
 template<typename _Function>
@@ -134,18 +134,18 @@ T combine(_Function _FnCombine) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- İki iş parçacığı yerel alt hesaplamalar birleştirmek için çağrılan işlev nesnesi türü.  
+*_Function*<br/>
+İki iş parçacığı-yerel alt hesaplamalar birleştirmek için çağrılacak işlev nesnesinin türü.  
   
- `_FnCombine`  
- Alt hesaplamalar birleştirmek için kullanılan functor. Kendi imzası `T (T, T)` veya `T (const T&, const T&)`, ve ilişkilendirilebilir ve yer değiştirebilme olması gerekir.  
+*_FnCombine*<br/>
+Alt hesaplamalar birleştirmek için kullanılan functor. Kendi imzası `T (T, T)` veya `T (const T&, const T&)`, ve ilişkilendirilebilir ve yer değiştirebilirlik olmalıdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Tüm iş parçacığı özel alt hesaplamalar birleştirmenin nihai sonucu.  
+ Tüm iş parçacığı özel alt hesaplamalar birleştirme nihai sonucu.  
   
 ##  <a name="combine_each"></a> combine_each 
 
- İş parçacığı yerel alt hesaplamalar kümesinden son bir değer, her iş parçacığı yerel alt hesaplama için bir kez sağlanan birleştirme functor çağırarak hesaplar. Nihai sonucu işlevi nesne tarafından toplanır.  
+ Her iş parçacığı-yerel alt hesaplama için bir kez sağlanan birleştirme işlev nesnesini çağırarak iş parçacığı-yerel alt hesaplamalar kümesinden son değer hesaplar. Nihai sonucu işlev nesnesi tarafından toplanır.  
   
 ```
 template<typename _Function>
@@ -153,11 +153,11 @@ void combine_each(_Function _FnCombine) const;
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Function`  
- Tek bir iş parçacığı yerel alt hesaplama birleştirmek için çağrılan işlev nesnesi türü.  
+*_Function*<br/>
+Tek bir iş parçacığı-yerel alt hesaplama birleştirmek için çağrılacak işlev nesnesinin türü.  
   
- `_FnCombine`  
- Bir alt hesaplama birleştirmek için kullanılan functor. Kendi imzası `void (T)` veya `void (const T&)`ve ilişkilendirilebilir ve yer değiştirebilme olması gerekir.  
+*_FnCombine*<br/>
+Bir alt hesaplama birleştirmek için kullanılan functor. Kendi imzası `void (T)` veya `void (const T&)`ve ilişkilendirilebilir ve yer değiştirebilirlik olması gerekir.  
   
 ##  <a name="local"></a> Yerel 
 
@@ -170,26 +170,26 @@ T& local(bool& _Exists);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Exists`  
- Bir Boole değeri referansı. Bu bağımsız değişkeni tarafından başvurulan Boole değeri ayarlanacak `true` alt hesaplama zaten bu iş parçacığında var ve kümesine `false` bu ilk alt hesaplama bu iş parçacığı üzerinde ise.  
+*_Exists*<br/>
+Bir boolean değerine başvuru. Bu bağımsız değişkeni tarafından başvurulan bir Boole değeri ayarlanacak `true` alt hesaplama zaten bu iş parçacığı üzerinde varolan ve kümesine `false` bu ilk alt hesaplama bu iş parçacığı üzerinde ise.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- İş parçacığı özel alt hesaplama referansı.  
+ İş parçacığı özel alt hesaplama başvuru.  
   
 ##  <a name="operator_eq"></a> işleç = 
 
- Atar bir `combinable` başka bir nesne `combinable` nesne.  
+ Atayan bir `combinable` başka bir nesne `combinable` nesne.  
   
 ```
 combinable& operator= (const combinable& _Copy);
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Copy`  
- Varolan bir `combinable` nesne bunu kopyalanacak.  
+*_Kopyala*<br/>
+Mevcut bir `combinable` bunun kopyalanacak nesne.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bu başvuru `combinable` nesnesi.  
+ Bu başvuru `combinable` nesne.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

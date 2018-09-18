@@ -16,43 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a762a7c816f713f9371ff50524ccb582753535b0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4217a1e7a8475362c654ac34b6a345846341ec35
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33235616"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056501"
 ---
 # <a name="compiler-error-c2743"></a>Derleyici Hatası C2743
-'type': catch __clrcall yıkıcı veya kopya Oluşturucu ile yerel bir türü olamaz  
-  
- İle bir modül derlenmiş **/CLR** yerel tür ve burada tür yıkıcı veya kopya Oluşturucu kullanan bir özel durum catch çalışıldı `__clrcall` çağırma.  
-  
- İle derlendiğinde **/CLR**, özel durum işleme olacak şekilde, bir yerel tür üye işlevleri bekliyor [__cdecl](../../cpp/cdecl.md) ve [__clrcall](../../cpp/clrcall.md). Üye işlevlerini kullanarak ile yerel türler `__clrcall` çağırma olamaz yakalanan ile derlenmiş bir modülde **/CLR**.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C2743 oluşturur.  
-  
-```  
-// C2743.cpp  
-// compile with: /clr  
-public struct S {  
-   __clrcall ~S() {}  
-};  
-  
-public struct T {  
-   ~T() {}  
-};  
-  
-int main() {  
-   try {}  
-   catch(S) {}   // C2743  
-   // try the following line instead  
-   // catch(T) {}  
-  
-   try {}  
-   catch(S*) {}   // OK  
-}  
+
+'type': __clrcall yok Edicisi veya kopya Oluşturucusu olan bir yerel tür catch yapılamaz
+
+Bir modül ile derlenmiş **/CLR** yerel tür ve burada türün yok Edicisi veya kopya Oluşturucusu kullanan bir özel durum yakalamak çalışıldı `__clrcall` çağırma kuralı.
+
+İle derlendiğinde **/CLR**, özel durum işleme üye işlevleri bir yerel türe olmasını bekliyor [__cdecl](../../cpp/cdecl.md) değil [__clrcall](../../cpp/clrcall.md). Üye işlevlerini kullanarak ile yerel türler `__clrcall` çağırma kuralı olamaz yakalandı ile derlenmiş bir modülde **/CLR**.
+
+Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C2743 oluşturur.
+
+```
+// C2743.cpp
+// compile with: /clr
+public struct S {
+   __clrcall ~S() {}
+};
+
+public struct T {
+   ~T() {}
+};
+
+int main() {
+   try {}
+   catch(S) {}   // C2743
+   // try the following line instead
+   // catch(T) {}
+
+   try {}
+   catch(S*) {}   // OK
+}
 ```

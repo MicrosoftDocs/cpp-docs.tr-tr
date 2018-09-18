@@ -20,12 +20,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d231f493fd2b2f2c492eec224a0ae041f175f53d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: eb4611c52f65595eb84248507dfb3a85d1ab26fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767356"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035974"
 ---
 # <a name="ispecifypropertypagesimpl-class"></a>Ispecifypropertypagesımpl sınıfı
 
@@ -37,14 +37,14 @@ Bu sınıfın uyguladığı `IUnknown` ve varsayılan bir uygulama sağlar [ISpe
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<class T>  
+template<class T>
 class ATL_NO_VTABLE ISpecifyPropertyPagesImpl 
    : public ISpecifyPropertyPages
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınız, türetilen `ISpecifyPropertyPagesImpl`.
 
 ## <a name="members"></a>Üyeler
@@ -90,6 +90,6 @@ Bkz: [ISpecifyPropertyPages::GetPages](/windows/desktop/api/ocidl/nf-ocidl-ispec
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Ipropertypageımpl sınıfı](../../atl/reference/ipropertypageimpl-class.md)   
-[Iperpropertybrowsingımpl sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)   
+[IPropertyPageImpl Sınıfı](../../atl/reference/ipropertypageimpl-class.md)<br/>
+[IPerPropertyBrowsingImpl Sınıfı](../../atl/reference/iperpropertybrowsingimpl-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

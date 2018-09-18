@@ -16,33 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f7d5531bf9eb7352f1866bc0800734a78261b585
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8b8aa8d3d952f84b9fee0c00b5cfcb7c5e5c45d9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266636"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051314"
 ---
 # <a name="compiler-error-c3733"></a>Derleyici Hatası C3733
-'event': COM olay; belirtmek için yanlış sözdizimi '__interface' unuttunuz mu?  
-  
- COM olayı için yanlış sözdizimi kullanıldı. Bu hatayı düzeltmek için olay türünü değiştirin veya COM olay kurallarına uygun sözdizimini düzeltin.  
-  
- Aşağıdaki örnek C3733 oluşturur:  
-  
-```  
-#define _ATL_ATTRIBUTES 1  
-#include "atlbase.h"  
-#include "atlcom.h"  
-  
-[coclass, event_source(com), // change 'com' to 'native' to resolve  
-uuid("00000000-0000-0000-0000-000000000001")]  
-class A  
-{  
-   __event void func();   // C3733  
-};  
-  
-int main()  
-{  
-}  
+
+'event': bir COM olayı belirtmek için hatalı sözdizimi '__interface' belirtmeyi unuttunuz?
+
+Bir COM olay için hatalı sözdizimi kullanıldı. Bu hatayı düzeltmek için olay türünü değiştirin veya COM olay kurallarına uygun söz dizimini düzeltin.
+
+Aşağıdaki örnek, C3733 oluşturur:
+
+```
+#define _ATL_ATTRIBUTES 1
+#include "atlbase.h"
+#include "atlcom.h"
+
+[coclass, event_source(com), // change 'com' to 'native' to resolve
+uuid("00000000-0000-0000-0000-000000000001")]
+class A
+{
+   __event void func();   // C3733
+};
+
+int main()
+{
+}
 ```

@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6e864d4e85b3422431cdf14dabd7083fafe04c04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3f4993b32839fbd1dcdb18522021da685b865ed8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33195821"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46058386"
 ---
 # <a name="compiler-error-c2405"></a>Derleyici Hatası C2405
-Geçersiz kısa ileri başvuru uzaklıkları  
-  
- Kısa İleri başvuruları yalnızca bir etiket için başvurmalıdır. Ek bir uzaklık kullanılamaz.
+
+uzaklığı olan geçersiz kısa ileri başvuru
+
+Kısa ileri başvuru için bir etiket yalnızca başvurmalıdır. Ek bir uzaklık kullanılamaz.

@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dc93edb939001a1e1bed5d3f7a4113e8483e81dd
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8234835d3bb0545c8a72bf35cfb55b2e18bc7da2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296126"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070385"
 ---
 # <a name="command-line-error-d8027"></a>Komut Satırı Hatası D8027
-'bileşeni' yürütülemiyor  
-  
- Derleyici verilen derleyici bileşeni veya bağlayıcı çalıştıramadı.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Bileşeni yüklemek için yeterli bellek yok. NMAKE derleyici başlatılırsa, derleme görevleri dosyası dışında derleyici çalıştırın.  
-  
-2.  Geçerli işletim sistemi bileşeni çalıştıramadı. Yol noktalarını yürütülebilir dosyalar işletim sisteminize sağlayın.  
-  
-3.  Bileşen bozulmuş. Kurulum programını kullanarak dağıtım disklerden bileşeni yeniden kopyalanması.  
-  
-4.  Bir seçenek hatalı şekilde belirtildi. Örneğin:  
-  
-    ```  
-    cl /B1 file1.c  
+
+'bileşen' yürütülemiyor
+
+Derleyici, bağlayıcı ve belirtilen derleyici bileşeni çalıştırılamadı.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Bileşen yüklemek için yeterli bellek yok. NMAKE derleyici çağrılır, derleyici derleme görevleri dosyası dışında çalıştırın.
+
+1. Geçerli işletim sistemi bileşeni çalıştırılamadı. Yol noktalarını yürütülebilir dosyalar için işletim sisteminize uygun sağlayın.
+
+1. Bileşeni bozulmuş. Dağıtım disklerden Kurulum programını kullanarak bileşeni yeniden kopyalanması.
+
+1. Bir seçenek yanlış belirtildi. Örneğin:
+
+    ```
+    cl /B1 file1.c
     ```

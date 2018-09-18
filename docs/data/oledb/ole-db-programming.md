@@ -17,21 +17,22 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: f3f447c2cc45e0ccc96a1480b9d521f1bde09c9e
-ms.sourcegitcommit: a7046aac86f1c83faba1088c80698474e25fe7c3
+ms.openlocfilehash: 99d647e2e5a98c7e4c4433baaface66d1f987b32
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "43677215"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46073680"
 ---
 # <a name="ole-db-programming"></a>OLE DB Programlama
+
 Microsoft OLE DB eski bir teknolojidir; Yeni uygulamalar için bağlı SQL sunucuları için gereken veri erişimi API'si kullanılır. Diğer tüm yeni uygulamaları ODBC kullanmanız gerekir. SQL Server için geçerli OLE DB sağlayıcısı SQLNCLI11 ' dir. DLL. Sağlayıcı, SQL Server 2016'da hala sunulmamaktadır. Bu belge, OLE DB kullanmakta olan mevcut uygulamaları korumak için geliştiriciler içindir.
   
- OLE DB Şablonları, OLE DB arabirimlerini C++ şablonları, yüksek performanslı OLE DB veritabanı teknoloji uygulayan sınıflar sağlayarak kullanmak yaygın olarak birçok kolaylaştırmak kullanılan ' dir. Bu şablon kitaplığı Tüketici Şablonları ve sağlayıcı şablonları bölünmüştür.  
+OLE DB Şablonları, OLE DB arabirimlerini C++ şablonları, yüksek performanslı OLE DB veritabanı teknoloji uygulayan sınıflar sağlayarak kullanmak yaygın olarak birçok kolaylaştırmak kullanılan ' dir. Bu şablon kitaplığı Tüketici Şablonları ve sağlayıcı şablonları bölünmüştür.  
   
- Visual C++ OLE DB başlangıç uygulamaları oluşturmak için sihirbaz desteği de vardır.  
+Visual C++ OLE DB başlangıç uygulamaları oluşturmak için sihirbaz desteği de vardır.  
   
- Ayrıca, OLE DB Tüketici Şablonları uygulamak için öznitelikler kullanabilirsiniz.  
+Ayrıca, OLE DB Tüketici Şablonları uygulamak için öznitelikler kullanabilirsiniz.  
   
 |Hakkında daha fazla bilgi edinmek için|Bkz. |  
 |-------------------------|---------|  
@@ -45,4 +46,5 @@ Microsoft OLE DB eski bir teknolojidir; Yeni uygulamalar için bağlı SQL sunuc
 |ODBC kavramsal konular|[Açık Veritabanı Bağlantısı (ODBC)](../../data/odbc/open-database-connectivity-odbc.md)|  
 
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Veri Erişimi](../data-access-in-cpp.md)
+
+[Veri Erişimi](../data-access-in-cpp.md)

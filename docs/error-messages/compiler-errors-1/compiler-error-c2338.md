@@ -16,27 +16,27 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 156074f20517c1d2e2f4fdb4ac5c54d6cf014276
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 77bc98afdad36e0505abb58ee06ec1c7e7654ae5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33222312"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071581"
 ---
-# <a name="compiler-error-c2338"></a>Derleyici Hatası C2338  
-  
-> *Hata iletisi*  
-  
-Bu hatanın nedeni bir `static_assert` derleme sırasında bir hata oluştu. İleti tarafından sağlanan `static_assert` parametreleri.   
-  
-Bu hata iletisini derleyici dış sağlayıcıları tarafından da oluşturulabilir. Çoğu durumda, bu hataları özniteliği sağlayıcısını DLL ATLPROV gibi tarafından raporlanır. Bu iletinin bazı ortak formlar şunları içerir:
+# <a name="compiler-error-c2338"></a>Derleyici Hatası C2338
 
-> '*özniteliği*' Atl özniteliği sağlayıcısı: hata ATL*numarası* *iletisi*  
-  
+> *hata iletisi*
+
+Bu hataya neden olabilir bir `static_assert` derleme sırasında hata oluştu. İleti tarafından sağlanan `static_assert` parametreleri.
+
+Bu hata iletisi, dış sağlayıcıları için derleyici tarafından da oluşturulabilir. Çoğu durumda, bu hata, bir öznitelik sağlayıcısı ATLPROV gibi DLL tarafından raporlanır. Bu iletinin bazı ortak biçimleri şunlardır:
+
+> '*özniteliği*' Atl özniteliği sağlayıcısı: hata ATL*numarası* *iletisi*
+
 > Öznitelik yanlış kullanımı '*özniteliği*'
-  
-> '*kullanım*': 'kullanımı' özniteliği için yanlış biçim  
-  
-Bu hatalar genellikle kurtarılamaz ve önemli derleyici hatası tarafından takip edilebilir.  
-  
-Bu sorunları düzeltmek için öznitelik kullanımı düzeltin. Örneğin, kullanılabilmesi için önce bazı durumlarda, öznitelik parametreleri bildirilmesi gerekir. ATL hata numarası sağlanmazsa, daha fazla bilgi için hata belgelerini denetleyin.  
+
+> '*kullanım*': 'kullanımı' özniteliği için yanlış biçim
+
+Bu hatalar genellikle kurtarılamaz olarak kabul edilir ve önemli bir derleyici hatası tarafından izlenebilir.
+
+Bu sorunları düzeltmek için öznitelik kullanımı düzeltin. Örneğin, kullanılabilmesi için önce bazı durumlarda, öznitelik parametreleri bildirilmesi gerekir. Bir ATL hata numarası sağlanmazsa, daha fazla bilgi için hata belgelerine bakın.

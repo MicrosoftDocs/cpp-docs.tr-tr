@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bff8e3588e31414f50cb6d150c0e8c9f2603586b
-ms.sourcegitcommit: a4454b91d556a3dc43d8755cdcdeabcc9285a20e
+ms.openlocfilehash: 15133673a33930222d5bf4c621c9ec9361e31f24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "33323985"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046413"
 ---
 # <a name="ltlistgt-visual-c"></a>&lt;Liste&gt; (Visual C++)
-\<Listheader > bloğu bir tablo veya tanım listesi başlık satırının tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı'nda terim için sağlamanız gerekir.  
+\<Listheader > blok satırında bir tablo veya tanım listesi tanımlamak için kullanılır. Bir tablo tanımlarken, yalnızca bir giriş başlığı hükmün sağlamanız gerekir.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -44,22 +44,22 @@ ms.locfileid: "33323985"
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- `term`  
- İçinde tanımlanan tanımlamak için bir terim `description`.  
+*Terim*<br/>
+İçinde tanımlanan tanımlamak için bir terim `description`.  
   
- `description`  
- Her iki öğeyi madde işareti veya numaralı liste ya da tanımı bir `term`.  
+*Açıklaması*<br/>
+Bir ya da öğe bir madde işareti veya numaralı liste tanımını bir `term`.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Listedeki her bir öğe ile belirtilen bir \<öğesi > bloğu. Bir tanım listesi oluştururken, her ikisi de belirtmeniz gerekir `term` ve `description`. Ancak, bir tablo, listeyi veya numaralandırılmış listesi için yalnızca bir giriş için sağlamanız gerekir `description`.  
+ Listedeki her bir öğe ile belirtilen bir \<öğesi > bloğu. Tanım listesi oluştururken, her ikisi de belirtmeniz gerekir `term` ve `description`. Ancak, bir tablo, madde işaretli liste veya numaralı liste için bir giriş sağlamanız yeterlidir `description`.  
   
- Bir liste veya tablo kadar olabilir \<öğesi > gerektiğinde engeller.  
+ Bir listeyi veya tabloyu kadar olabilir \<öğesi > gerektiğinde engeller.  
   
- İle derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) bir dosyaya işlem belgesi açıklamaları için.  
+ Derleme [/doc](../build/reference/doc-process-documentation-comments-c-cpp.md) işlem belgeleri açıklamaları için bir dosya için.  
   
 ## <a name="example"></a>Örnek  
   
-```  
+```cpp  
 // xml_list_tag.cpp  
 // compile with: /doc /LD  
 // post-build command: xdcmake xml_list_tag.dll  

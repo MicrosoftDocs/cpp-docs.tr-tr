@@ -16,30 +16,31 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a44f272569741b1897caed1d1d64832d8b113eae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 3d1a23b8171c916b05df1d715f803893ab0720e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316442"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053823"
 ---
-# <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003  
-  
-> Hata oluşturma '*komut satırı*'.  
-  
-*Komut satırı* komutu biçimlendirilmiş girişinde gelen **özellik sayfaları** iletişim kutusu bir hata kodunu döndürdü, ancak hiçbir bilgi görünür **çıkış** penceresi.  
+# <a name="project-build-error-prj0003"></a>Proje Derleme Hatası PRJ0003
 
-Bu hata için olası nedenler şunlardır:  
-  
--   Projenize ATL sunucusuna bağlıdır. Visual Studio 2008'den itibaren ATL Sunucu artık Visual Studio bir parçası olarak dahil değildir, ancak CodePlex bir paylaşılan kaynağı proje olarak yayımlanmıştır. ATL Sunucu kaynak kodu ve araçları yüklemek için Git [ATL Sunucu kitaplığının ve araçları](http://go.microsoft.com/fwlink/p/?linkid=81979).  
-  
--   Sistem kaynaklarının yetersizliği. Bu sorunu gidermek için bazı uygulamaları kapatın.  
-  
--   Yeterli güvenlik ayrıcalıkları. Yeterli ayrıcalıklara sahip olduğunuzu doğrulayın.  
-  
--   Belirtilen yürütülebilir dosya yolları **VC ++ dizinleri** çalıştırmayı denediğiniz aracı yolu içermiyor. Bilgi için bkz: [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)  
-  
--   Derleme görevleri dosyası projeleri için üzerinde çalıştırılacak bir komut eksik **komut satırı derleme** veya **komut satırı yeniden**.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)
+> Hata UNICODE '*komut satırı*'.
+
+*Komut satırı* komut biçimlendirilmiş girişinde gelen **özellik sayfaları** iletişim kutusu, bir hata kodu döndürdü, ancak içinde hiçbir bilgi görünmüyor **çıkış** penceresi.
+
+Bu hata için olası nedenler şunlardır:
+
+- Projenize ATL sunucu üzerinde bağlıdır. Visual Studio 2008'de başlayarak, ATL Sunucu artık Visual Studio'nun bir parçası olarak dahil edilir, ancak CodePlex projesi bir paylaşılan kaynak olarak yayımlanmıştır. ATL Sunucu kaynak kodu ve Araçları'nı indirmek için Git [ATL Sunucu kitaplığının ve araçları](http://go.microsoft.com/fwlink/p/?linkid=81979).
+
+- Düşük sistem kaynakları. Bu sorunu çözmek için bazı uygulamaları kapatın.
+
+- Yeterli güvenlik ayrıcalıkları. Yeterli ayrıcalıklara sahip olduğunuzu doğrulayın.
+
+- Belirtilen çalıştırılabilir yolu **VC ++ dizinleri** çalıştırmayı denediğiniz araç için yolu içermiyor. Bilgi için [proje özellikleriyle çalışma](../../ide/working-with-project-properties.md)
+
+- Derleme görevleri dosyası projeleri için üzerinde çalışacak bir komut eksik **derleme komut satırı** veya **yeniden komut satırı**.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[Proje Derleme Hataları ve Uyarıları (PRJxxxx)](../../error-messages/tool-errors/project-build-errors-and-warnings-prjxxxx.md)

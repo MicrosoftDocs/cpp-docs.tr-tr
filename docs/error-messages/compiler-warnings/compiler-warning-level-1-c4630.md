@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d3db4e42e4bd54e1d2bd5af0eb6b19ce0fea1e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dadfd4cd38d1b1d0e67e49e81102135a8ced1d00
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33283318"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054733"
 ---
 # <a name="compiler-warning-level-1-c4630"></a>Derleyici Uyarısı (düzey 1) C4630
-'simgesi': 'extern' depolama sınıfı tanımlayıcısı üye tanımı geçersiz  
-  
- Veri üyesi veya üye fonksiyonu olarak tanımlanır `extern`. Tüm nesneler; ancak üyeleri dış, olamaz. Derleyici yoksayar `extern` anahtar sözcüğü. Aşağıdaki örnek C4630 oluşturur:  
-  
-```  
-// C4630.cpp  
-// compile with: /W1 /LD  
-class A {  
-   void func();  
-};  
-  
-extern void A::func() {   // C4630, remove 'extern' to resolve  
-}  
+
+'symbol': 'extern' depolama sınıfı belirticisi üye tanımında geçersizdir
+
+Bir veri üyesine veya üye işlevi olarak tanımlanır `extern`. Tüm nesneler, ancak üye harici olamaz. Derleyicinin yoksaydığı `extern` anahtar sözcüğü. Aşağıdaki örnek, C4630 oluşturur:
+
+```
+// C4630.cpp
+// compile with: /W1 /LD
+class A {
+   void func();
+};
+
+extern void A::func() {   // C4630, remove 'extern' to resolve
+}
 ```

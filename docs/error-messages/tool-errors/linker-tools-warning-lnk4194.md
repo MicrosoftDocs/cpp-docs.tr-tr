@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98a6c4803138a0f4fbfc71f17ed4e963478af684
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 530bcc0dab9182d0c194f23f6aa5575e431edb03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299194"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46060609"
 ---
 # <a name="linker-tools-warning-lnk4194"></a>Bağlayıcı Araçları Uyarısı LNK4194
-/DELAYLOAD:dll adı yoksayıldı  
-  
- Bağlayıcı olamaz [gecikme yükü](../../build/reference/delayload-delay-load-import.md) istenen DLL.
+
+/DELAYLOAD:dll adı yoksayıldı
+
+Bağlayıcı olamaz [gecikme yükü](../../build/reference/delayload-delay-load-import.md) istenen DLL.

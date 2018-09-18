@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c1cc77d8ee5393fe600ceadd9c1335d76e32efe
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1f6de17f7005db3834bfcfc93aff03f12f0293ce
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33296393"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46046101"
 ---
 # <a name="compiler-warning-level-4-c4710"></a>Derleyici Uyarısı (düzey 4) C4710
-'function': değil içermesinden işlevi  
-  
- Verilen işlevi için satır içi genişletme seçildi, ancak derleyici kullanılmayacak satır içi kullanım.  
-  
- Satır içi kullanım derleyicinin istediğiniz kadar gerçekleştirilir. **Satır içi** anahtar sözcüğü gibi **kaydetmek** anahtar sözcüğü, derleme için bir ipucu olarak kullanılır. Derleyici satır içi kod hızı derlerken hızlandırmak için belirli bir işlev olmalıdır veya satır içi kod alanı derlerken küçültmek için belirli bir işlev gerektiğini belirlemek için buluşsal yöntemler kullanır. Derleyici olur yalnızca satır içi çok küçük işlevleri için alanı derlerken.  
-  
- Bazı durumlarda, derleyici olacak hizalı değil belirli bir işlev mekanik nedenleri. Bkz: [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) derleyici olabilir olmayan bir işlev satır içi nedenleri listesi.  
-  
- Varsayılan olarak bu uyarı kapalıdır. Bkz: [derleyici uyarıları emin olduğunuz kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.
+
+'function': işlev alınmadı
+
+Verilen işlevin satır içi genişletme için seçildi, ancak derleyicinin kullanılmayacak satır içi kullanım.
+
+Satır içi kullanım derleyicinin denetiminde gerçekleştirilir. **Satır içi** anahtar sözcüğü gibi **kaydetme** için derleyicinin anahtar sözcüğü, bir ipucu olarak kullanılır. Derleyici, kod hızı için derleme yaparken hızlandırmak için belirli bir işlevi satır içi gerekir veya kod yazabileceğiniz derlenirken küçültmek için belirli bir işlevi satır içi gerektiğini belirlemek için buluşsal yöntemler kullanır. Derleyici olur yalnızca satır içi çok küçük işlevler için alan derlenirken.
+
+Bazı durumlarda, derleyicinin olur satır belirli bir işlev mekanik nedenleri. Bkz: [C4714](../../error-messages/compiler-warnings/compiler-warning-level-4-c4714.md) nedenleri olabilir değil bir işlevi satır içi derleyici listesi.
+
+Varsayılan olarak bu uyarıyı kapalıdır. Bkz: [derleyici uyarıları emin olan kapalı varsayılan](../../preprocessor/compiler-warnings-that-are-off-by-default.md) daha fazla bilgi için.

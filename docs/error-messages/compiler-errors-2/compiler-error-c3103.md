@@ -16,36 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6d20fae5584c9d410c8aade1722497c9010c83f7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: abdfbdae575b400dd44ba16bd453dc82eb03c721
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252812"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46050167"
 ---
 # <a name="compiler-error-c3103"></a>Derleyici Hatası C3103
-'bağımsız değişkeni': adlandırılmış bağımsız değişken yinelenen  
-  
- Bir öznitelik adlandırılmış bağımsız değişkenler yineleyebilirsiniz değil.  
-  
- Daha fazla bilgi için bkz: [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3103 oluşturur.  
-  
-```  
-// C3103.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[AttributeUsage(AttributeTargets::All)]  
-public ref class Attr : public Attribute {  
-public:  
-   int m_t;  
-};  
-  
-[Attr(m_t = 10, m_t = 1)]   // C3103  
-// try the following line instead  
-// [Attr(m_t = 10)]  
-ref class A {};  
+
+'bağımsız değişkeni': yinelenen adlandırılmış bağımsız değişken
+
+Bir öznitelik adlandırılmış bağımsız değişkenler yineleyebilirsiniz değil.
+
+Daha fazla bilgi için [kullanıcı tanımlı öznitelikler](../../windows/user-defined-attributes-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3103 oluşturur.
+
+```
+// C3103.cpp
+// compile with: /clr /c
+using namespace System;
+
+[AttributeUsage(AttributeTargets::All)]
+public ref class Attr : public Attribute {
+public:
+   int m_t;
+};
+
+[Attr(m_t = 10, m_t = 1)]   // C3103
+// try the following line instead
+// [Attr(m_t = 10)]
+ref class A {};
 ```

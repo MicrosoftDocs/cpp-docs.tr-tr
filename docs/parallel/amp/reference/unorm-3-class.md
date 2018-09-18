@@ -82,15 +82,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b93fbce07aa50e9b0a9f01ec762690ce21b78c02
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 7e10653eb4eb6ebb57215baceb1e3b67d7e1f8cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688381"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042526"
 ---
 # <a name="unorm3-class"></a>unorm_3 Sınıfı
-Kısa bir vektör üç imzasız normal sayıların temsil eder.  
+Üç işaretsiz normal sayıdan oluşan bir kısa vektörü temsil eder.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -100,7 +100,7 @@ class unorm_3;
   
 ## <a name="members"></a>Üyeler  
   
-### <a name="public-typedefs"></a>Genel tür tanımları  
+### <a name="public-typedefs"></a>Genel Typedefler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
@@ -110,14 +110,14 @@ class unorm_3;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[unorm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.|  
+|[unorm_3 Oluşturucusu](#ctor)|Fazla Yüklendi. Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.|  
   
 ### <a name="public-methods"></a>Ortak Yöntemler  
   
 |Ad|Açıklama|  
 |----------|-----------------|  
 |unorm_3::get_x||  
-|unorm_3::get_xy||  
+|unorm_3::get_x||  
 |unorm_3::get_xyz||  
 |unorm_3::get_xz||  
 |unorm_3::get_xzy||  
@@ -159,7 +159,7 @@ class unorm_3;
 |----------|-----------------|  
 |unorm_3::operator--||  
 |unorm_3::operator * =||  
-|unorm_3::operator ve =||  
+|unorm_3::operator / =||  
 |unorm_3::operator ++||  
 |unorm_3::operator +=||  
 |unorm_3::operator=||  
@@ -216,7 +216,7 @@ class unorm_3;
   
 ##  <a name="ctor"></a> unorm_3 
 
- Varsayılan Oluşturucu, tüm öğeleri 0 ile başlatır.  
+ Varsayılan Oluşturucu tüm öğeleri 0 ile başlatır.  
   
 ```  
 unorm_3() restrict(amp,
@@ -278,20 +278,20 @@ explicit inline unorm_3(
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_V0`  
- Öğeyi 0 başlatmak için değer.  
+*_V0*<br/>
+Öğe 0'ı başlatmak için değer.  
   
- `_V1`  
- 1 öğesi başlatmak için değeri.  
+*_V1*<br/>
+1 öğe başlatmak için değer.  
   
- `_V2`  
- Öğe 2 başlatmak için değeri.  
+*_V2*<br/>
+Öğe 2 başlatmak için değer.  
   
- `_V`  
- Başlatma için değer.  
+*_V*<br/>
+Başlatma için değer.  
   
- `_Other`  
- Başlatmak için kullanılan nesne.  
+*_Diğer*<br/>
+Başlatmak için kullanılan nesne.  
   
 ##  <a name="unorm_3__size"></a> Boyutu 
 

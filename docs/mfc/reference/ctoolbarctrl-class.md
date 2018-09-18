@@ -192,12 +192,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f97559dd962fefbb4e727c0e75d0102898c8f13
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 93752aa124bc144e42a337f757c9d9cdc9a226ca
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45724080"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46047934"
 ---
 # <a name="ctoolbarctrl-class"></a>CToolBarCtrl sınıfı
 Windows ortak araç çubuğu denetimi işlevlerini sağlar.  
@@ -410,65 +410,66 @@ BOOL AddButtons(
 ### <a name="remarks"></a>Açıklamalar  
  *LpButtons* işaretçinin işaret dizilerine `TBBUTTON` yapıları. Her `TBBUTTON` yapısı ilişkilendirir düğmenin stilini, görüntü ve/veya dizesi, komut kimliği, durum ve kullanıcı tanımlı veri eklenen düğmesi:  
   
- `typedef struct _TBBUTTON {`  
-  
- `int iBitmap;// zero-based index of button image`  
-  
- `int idCommand;  // command to be sent when button pressed`  
-  
- `BYTE fsState;   // button state--see below`  
-  
- `BYTE fsStyle;   // button style--see below`  
-  
- `DWORD dwData;   // application-defined value`  
-  
- `int iString;// zero-based index of button label string`  
-  
- `} TBBUTTON;`  
+```cpp
+typedef struct _TBBUTTON {
+    int iBitmap;    // zero-based index of button image
+    int idCommand;  // command to be sent when button pressed
+    BYTE fsState;   // button state--see below
+    BYTE fsStyle;   // button style--see below
+    DWORD dwData;   // application-defined value
+    int iString;    // zero-based index of button label string
+} TBBUTTON;
+```
   
  Üyeleri aşağıdaki gibidir:  
   
- `iBitmap`  
- Bu düğme için resim yok, -1 düğmesi sıfır tabanlı dizini.  
+- `iBitmap`  
+
+   Bu düğme için resim yok, -1 düğmesi sıfır tabanlı dizini.  
   
- `idCommand`  
- İlişkili düğme komut tanımlayıcı. Bu tanımlayıcı, düğme seçildiğinde WM_COMMAND ileti gönderilir. Varsa `fsStyle` üyenin TBSTYLE_SEP değeri, bu üye sıfır olmalıdır.  
+-  `idCommand`  
+
+   İlişkili düğme komut tanımlayıcı. Bu tanımlayıcı, düğme seçildiğinde WM_COMMAND ileti gönderilir. Varsa `fsStyle` üyenin TBSTYLE_SEP değeri, bu üye sıfır olmalıdır.  
   
- `fsState`  
- Düğme durumu bayrakları. Bu, aşağıda listelenen değerlerinin bir birleşimi olabilir:  
+-  `fsState`  
+
+   Düğme durumu bayrakları. Bu, aşağıda listelenen değerlerinin bir birleşimi olabilir:  
   
-- Düğme TBSTYLE_CHECKED stilde ve basıldığında TBSTATE_CHECKED.  
+   - Düğme TBSTYLE_CHECKED stilde ve basıldığında TBSTATE_CHECKED.  
   
-- TBSTATE_ENABLED düğmeyi, kullanıcı girişi kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girdisi kabul etmiyor ve renkte gösterilir.  
+   - TBSTATE_ENABLED düğmeyi, kullanıcı girişi kabul eder. Bu duruma sahip olmayan bir düğme kullanıcı girdisi kabul etmiyor ve renkte gösterilir.  
   
-- TBSTATE_HIDDEN düğmesi görünür değil ve kullanıcı girişi alamaz.  
+   - TBSTATE_HIDDEN düğmesi görünür değil ve kullanıcı girişi alamaz.  
   
-- TBSTATE_INDETERMINATE düğmesi gri.  
+   - TBSTATE_INDETERMINATE düğmesi gri.  
   
-- Düğmeye basıldığında TBSTATE_PRESSED.  
+   - Düğmeye basıldığında TBSTATE_PRESSED.  
   
-- Düğme TBSTATE_WRAP bir satır sonu izler. Düğme, ayrıca TBSTATE_ENABLED duruma sahip olmalıdır.  
+   - Düğme TBSTATE_WRAP bir satır sonu izler. Düğme, ayrıca TBSTATE_ENABLED duruma sahip olmalıdır.  
   
- `fsStyle`  
- Düğme stili. Bu, aşağıda listelenen değerlerinin bir birleşimi olabilir:  
+- `fsStyle`  
+
+   Düğme stili. Bu, aşağıda listelenen değerlerinin bir birleşimi olabilir:  
   
-- TBSTYLE_BUTTON standart bir düğme oluşturur.  
+   - TBSTYLE_BUTTON standart bir düğme oluşturur.  
   
-- Basılı ve basılmamış durumları her zaman arasında geçiş yapar kullanıcı bir düğme TBSTYLE_CHECK oluşturur, tıklar. Basılı durumdayken farklı arka plan rengi düğmesi vardır.  
+   - Basılı ve basılmamış durumları her zaman arasında geçiş yapar kullanıcı bir düğme TBSTYLE_CHECK oluşturur, tıklar. Basılı durumdayken farklı arka plan rengi düğmesi vardır.  
   
-- Başka bir düğme grubundaki basılana kadar kalır bir onay düğmesine basıldığında TBSTYLE_CHECKGROUP oluşturur.  
+   - Başka bir düğme grubundaki basılana kadar kalır bir onay düğmesine basıldığında TBSTYLE_CHECKGROUP oluşturur.  
   
-- Gruptaki başka bir düğmeye basıldığında kadar kalır bir düğmeye basıldığını TBSTYLE_GROUP oluşturur.  
+   - Gruptaki başka bir düğmeye basıldığında kadar kalır bir düğmeye basıldığını TBSTYLE_GROUP oluşturur.  
   
-- TBSTYLE_SEP düğme grupları arasında küçük bir aralık sağlayan bir ayırıcı oluşturur. Bu stil bulunan bir düğme, kullanıcı girişini almaz.  
+   - TBSTYLE_SEP düğme grupları arasında küçük bir aralık sağlayan bir ayırıcı oluşturur. Bu stil bulunan bir düğme, kullanıcı girişini almaz.  
   
- `dwData`  
- Kullanıcı tanımlı veri.  
+- `dwData`  
+
+   Kullanıcı tanımlı veri.  
   
- `iString`  
- Bu düğme için herhangi bir dize ise -1 kullanıcının düğmeyi etiket olarak kullanılacak dize sıfır tabanlı dizini.  
+- `iString`  
+
+   Bu düğme için herhangi bir dize ise -1 kullanıcının düğmeyi etiket olarak kullanılacak dize sıfır tabanlı dizini.  
   
- Görüntü ve/veya dize dizini verdiğiniz gerekir daha önce eklenmiş araç denetimin liste kullanarak [AddBitmap](#addbitmap), [AddString](#addstring), ve/veya [AddStrings](#addstrings).  
+Görüntü ve/veya dize dizini verdiğiniz gerekir daha önce eklenmiş araç denetimin liste kullanarak [AddBitmap](#addbitmap), [AddString](#addstring), ve/veya [AddStrings](#addstrings).  
   
 ##  <a name="addstring"></a>  CToolBarCtrl::AddString  
  Araç çubuğunun iç dize listesi için bir kaynak kodu olarak geçirilen yeni bir dize ekler.  

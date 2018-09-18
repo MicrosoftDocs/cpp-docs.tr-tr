@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 61bc7ab78fc0fc2816f42db4b6e162838ad74f6e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c6112c684dc4896393b35309a0a3af7eedd455d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33276623"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052003"
 ---
 # <a name="compiler-warning-level-1-c4166"></a>Derleyici Uyarısı (düzey 1) C4166
-**geçersiz çağırma oluşturucusu/yok Edicisi**  
-  
- Oluşturucular ve Yıkıcılar olamaz için platform çağırma kuralları varsayılandan (açıkça belirttiğinizde dışında **__clrcall**).
+
+**Oluşturucu/yıkıcı için geçersiz çağrı kuralı**
+
+Oluşturucular ve Yıkıcılar olamaz için platform çağırma kuralları varsayılan dışındaki (açıkça belirttiğinizde dışında **__clrcall**).

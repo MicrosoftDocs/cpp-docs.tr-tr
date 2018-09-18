@@ -16,22 +16,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fe0a8e766355dd5f8015fb49bbe584d699b0edaf
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a53af740cdc6652822da05a6591fd93063f2b4fa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272779"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069930"
 ---
 # <a name="compiler-warning-level-1-c4109"></a>Derleyici Uyarısı (düzey 1) C4109
-Beklenmeyen tanımlayıcı 'tanımlayıcısı'  
-  
- Beklenmeyen tanımlayıcısını içeren pragma göz ardı edilir.  
-  
-## <a name="example"></a>Örnek  
-  
-```  
-// C4109.cpp  
-// compile with: /W1 /LD  
-#pragma init_seg( abc ) // C4109  
+
+Beklenmeyen tanımlayıcı 'identifier'
+
+Beklenmeyen tanımlayıcı içeren pragma yoksayıldı.
+
+## <a name="example"></a>Örnek
+
+```
+// C4109.cpp
+// compile with: /W1 /LD
+#pragma init_seg( abc ) // C4109
 ```

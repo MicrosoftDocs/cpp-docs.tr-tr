@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1e44a99ad49945e441e1560f296dc66568ae3f3
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 202d93e4ff466ddb1509c3d30ad3a326c07d0861
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33228079"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051158"
 ---
 # <a name="compiler-error-c2518"></a>Derleyici Hatası C2518
-anahtar sözcüğü 'anahtar sözcüğü' taban sınıf listesinde; geçersiz göz ardı  
-  
- Anahtar sözcükler `class` ve `struct` bir temel sınıf listesinde görünmemesi gerekir.  
-  
- Aşağıdaki örnek C2518 oluşturur:  
-  
-```  
-// C2518.cpp  
-// compile with: /c  
-class B {};  
-class C : public class B {};   // C2518  
-class D: public B {};   // OK  
+
+anahtar sözcüğü 'anahtar sözcüğü' taban sınıfı listesinde; geçersiz yoksayıldı
+
+Anahtar sözcükler `class` ve `struct` bir temel sınıf listesinde görünmemelidir.
+
+Aşağıdaki örnek, C2518 oluşturur:
+
+```
+// C2518.cpp
+// compile with: /c
+class B {};
+class C : public class B {};   // C2518
+class D: public B {};   // OK
 ```

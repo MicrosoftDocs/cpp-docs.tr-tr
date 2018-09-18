@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e50d29af6ac563fadd3a52e5b1d3d15201289083
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8639919c74559829367108b36d62594e2a83a91a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33298658"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067999"
 ---
 # <a name="linker-tools-error-lnk1223"></a>Bağlayıcı Araçları Hatası LNK1223
-geçersiz veya bozuk dosya: dosya geçersiz ve.xdata'yı Katkıları içerir  
-  
- Sıralanmamış girişleri ve.xdata'yı bölümle derleyici yayılan, pdata kullanmak için RISC platformları, bu hata meydana gelir.  
-  
- Bu sorunu gidermek için olmadan derlemeyi deneyin [/GL (bütün Program iyileştirmesi)](../../error-messages/tool-errors/linker-tools-error-lnk1223.md) etkin. Boş işlevi gövdeleri bazı durumlarda bu hataya neden olabilir.
+
+dosya geçersiz veya bozuk: dosya geçersiz .pdata katılımları içeriyor
+
+Derleyici sıralanmamış girişleri .pdata bölüme yayılan, pdata kullanan RISC platformlar için bu hata oluşur.
+
+Bu sorunu gidermek için olmadan derlemeyi deneyin [/GL (bütün Program iyileştirmesi)](../../error-messages/tool-errors/linker-tools-error-lnk1223.md) etkin. Boş işlev gövdeleri bazı durumlarda bu hataya neden olabilir.

@@ -26,12 +26,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7a9ee4c25932064ddb76078701a1a6606f27cb1a
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: a2cdeef97b92550731b06dcb4a1d425d77f5920a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43766440"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075169"
 ---
 # <a name="security-global-functions"></a>Güvenlik genel işlevleri
 
@@ -72,13 +72,13 @@ inline bool AtlGetDacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini almak istediğiniz nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*pDacl*  
+*pDacl*<br/>
 Alınan güvenlik bilgilerini içeren bir DACL nesne işaretçisi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -106,16 +106,16 @@ inline bool AtlSetDacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*rDacl*  
+*rDacl*<br/>
 Yeni güvenlik bilgilerini içeren DACL.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 Devralma akış denetimi. Bu değer, 0 (varsayılan), PROTECTED_DACL_SECURITY_INFORMATION veya UNPROTECTED_DACL_SECURITY_INFORMATION olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -124,7 +124,7 @@ Başarılı olma durumunda true, aksi durumda false değerini döndürür.
 
 ### <a name="remarks"></a>Açıklamalar
 
-Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.  
+Hata ayıklama yapılarında, onaylama işlemi hatası meydana gelir *hObject* geçersiz veya *dwInheritanceFlowControl* üç izin verilen değerlerden biri değil.
 ### <a name="requirements"></a>Gereksinimler
 
 **Başlık:** atlsecurity.h 
@@ -145,13 +145,13 @@ inline bool AtlGetGroupSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgileri alınacağı nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*Psıd*  
+*Psıd*<br/>
 İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -178,13 +178,13 @@ inline bool AtlSetGroupSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*rSid*  
+*rSid*<br/>
 `CSid` Yeni güvenlik bilgilerini içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -211,13 +211,13 @@ inline bool AtlGetOwnerSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgileri alınacağı nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*Psıd*  
+*Psıd*<br/>
 İşaretçi bir `CSid` yeni güvenlik bilgilerini içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -244,13 +244,13 @@ inline bool AtlSetOwnerSid(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*rSid*  
+*rSid*<br/>
 `CSid` Yeni güvenlik bilgilerini içeren bir nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -278,16 +278,16 @@ inline bool AtlGetSacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini alınacağı nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*pSacl*  
+*pSacl*<br/>
 Alınan güvenlik bilgilerini içeren bir SACL nesne işaretçisi.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -320,19 +320,19 @@ inline bool AtlSetSacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*hObject*  
+*hObject*<br/>
 Güvenlik bilgilerini ayarlamak istediğiniz nesneye işleyin.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *hObject* parametresi.
 
-*rSacl*  
+*rSacl*<br/>
 Yeni güvenlik bilgilerini içeren SACL.
 
-*dwInheritanceFlowControl*  
+*dwInheritanceFlowControl*<br/>
 Devralma akış denetimi. Bu değer, 0 (varsayılan), PROTECTED_SACL_SECURITY_INFORMATION veya UNPROTECTED_SACL_SECURITY_INFORMATION olabilir.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -369,19 +369,19 @@ bool bRequestNeededPrivileges = true) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pszObjectName*  
+*pszObjectName*<br/>
 Güvenlik bilgileri alınacağı nesnesinin adını belirtir. null ile sonlandırılmış bir dize işaretçisi.
 
-*ObjectType*  
+*ObjectType*<br/>
 Bir değer belirtir [SE_OBJECT_TYPE](/windows/desktop/api/accctrl/ne-accctrl-_se_object_type) tarafından tanımlanan nesne türünü gösteren sabit listesi *pszObjectName* parametresi.
 
-*pSecurityDescriptor*  
+*pSecurityDescriptor*<br/>
 İstenen güvenlik tanımlayıcısı alan nesne.
 
-*requestedInfo*  
+*requestedInfo*<br/>
 Bir dizi [SECURITY_INFORMATION](/windows/desktop/SecAuthZ/security-information) bit almak için güvenlik bilgi türünü belirten bayraklar. Bu parametre aşağıdaki değerleri birleşimi olabilir.
 
-*bRequestNeededPrivileges*  
+*bRequestNeededPrivileges*<br/>
 TRUE ise, işlev SE_SECURITY_NAME ayrıcalık etkinleştirmek ve tamamlanma geri dener.
 
 ### <a name="return-value"></a>Dönüş Değeri

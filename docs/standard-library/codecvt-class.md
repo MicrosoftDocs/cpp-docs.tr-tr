@@ -50,12 +50,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3198a2d3ef91df80429f7cd245e5616ebe7af43a
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: f02f6a2810f5ac3a51abb80245c22a7f0c2df434
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44110637"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46074155"
 ---
 # <a name="codecvt-class"></a>codecvt Sınıfı
 
@@ -91,21 +91,24 @@ Statik nesne bir yerel ayar modelinde olduğu gibi `id` bir başlangıç sıfır
 
 C++ Standart Kitaplığı çeşitli açık uzmanlık tanımlar:
 
-`template<>`
-
-`codecvt<wchar_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<wchar_t, char, mbstate_t>
+```
 
 arasında dönüştürür **wchar_t** ve **char** dizileri.
 
-`template<>`
-
-`codecvt<char16_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char16_t, char, mbstate_t>
+```
 
 arasında dönüştürür `char16_t` UTF-16 kodlanmış diziler ve **char** UTF-8 olarak kodlanmış diziler.
 
-`template<>`
-
-`codecvt<char32_t, char, mbstate_t>`
+```cpp
+template<>
+codecvt<char32_t, char, mbstate_t>
+```
 
 arasında dönüştürür `char32_t` UTF-32 (UCS-4) kodlanmış diziler ve **char** UTF-8 olarak kodlanmış diziler.
 

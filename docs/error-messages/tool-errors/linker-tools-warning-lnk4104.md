@@ -16,46 +16,47 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d9ea3e074cc0db9591cd0ffe9329ff7f1936563f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6304f3ea928c89f4756a4594270ebb7914324f85
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300959"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057268"
 ---
 # <a name="linker-tools-warning-lnk4104"></a>Bağlayıcı Araçları Uyarısı LNK4104
-dışarı aktarma simgesi 'simgesi' özel olmalıdır  
-  
- `symbol` Şunlardan biri olabilir:  
-  
--   `DllCanUnloadNow`  
-  
--   `DllGetClassObject`  
-  
--   `DllGetClassFactoryFromClassString`  
-  
--   `DllGetDocumentation`  
-  
--   `DllInitialize`  
-  
--   `DllInstall`  
-  
--   `DllRegisterServer`  
-  
--   `DllRegisterServerEx`  
-  
--   `DllRegisterServerExW`  
-  
--   `DllUnload`  
-  
--   `DllUnregisterServer`  
-  
--   `RasCustomDeleteEntryNotify`  
-  
--   `RasCustomDial`  
-  
--   `RasCustomDialDlg`  
-  
--   `RasCustomEntryDlg`  
-  
- Bu uyarı bir DLL için içeri aktarma kitaplığı oluştururken yayılan ve yukarıdaki işlevleri biri, özel olarak modül tanım dosyasında belirtmeden verin. Genel olarak, bu işlevler yalnızca OLE tarafından kullanılmak üzere dışarı aktarılır. Kitaplığa yanlış bağlı bir program bunlara çağrı yaptığında içeri aktarma kitaplığı'nda yerleştirme olağan dışı davranış yol açabilir. PRIVATE anahtar sözcüğü hakkında daha fazla bilgi için bkz: [dışarı](../../build/reference/exports.md).
+
+'symbol' sembolünün dışarı aktarılması özel olmalıdır
+
+`symbol` Aşağıdakilerden biri olabilir:
+
+- `DllCanUnloadNow`
+
+- `DllGetClassObject`
+
+- `DllGetClassFactoryFromClassString`
+
+- `DllGetDocumentation`
+
+- `DllInitialize`
+
+- `DllInstall`
+
+- `DllRegisterServer`
+
+- `DllRegisterServerEx`
+
+- `DllRegisterServerExW`
+
+- `DllUnload`
+
+- `DllUnregisterServer`
+
+- `RasCustomDeleteEntryNotify`
+
+- `RasCustomDial`
+
+- `RasCustomDialDlg`
+
+- `RasCustomEntryDlg`
+
+Bu uyarı, bir DLL için bir içeri aktarma kitaplığı derlerken yayılan ve yukarıdaki işlevlerden biri, özel olarak modül tanım dosyasında belirtmeden dışarı aktarın. Genel olarak, bu işlevler yalnızca OLE tarafından kullanılmak üzere dışarı aktarılır. Kitaplığa yanlış bağlı bir programı bunlara çağrı yaptığında bunları içeri aktarma kitaplığı'nda yerleştirme olağan dışı davranışlara neden olabilir. PRIVATE anahtar sözcüğü hakkında daha fazla bilgi için bkz: [dışarı AKTARMALARI](../../build/reference/exports.md).

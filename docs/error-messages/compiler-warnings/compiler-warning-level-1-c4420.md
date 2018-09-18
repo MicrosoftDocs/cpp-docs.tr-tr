@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 98336a30e7174b62df48e93a04ba9ee7ddcc919a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e1ba4ef4c4fc006e1a5950d0d16dc530ccc06a1d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279116"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46049754"
 ---
 # <a name="compiler-warning-level-1-c4420"></a>Derleyici Uyarısı (düzey 1) C4420
-'işleci': 'işleci' bunun yerine; kullanarak işleci mevcut değil çalışma zamanı denetimi güvenliği aşılmış olabilir  
-  
- Kullandığınızda bu uyarı oluşturulur [/RTCv](../../build/reference/rtc-run-time-error-checks.md) (yeni/silme denetimi vektör) ve vektör form bulunduğunda. Bu durumda, vektör olmayan form kullanılır.  
-  
- Doğru çalışması /RTCv için sırayla derleyici her zaman vektör biçiminde çağırmalıdır [yeni](../../cpp/new-operator-cpp.md)/[silmek](../../cpp/delete-operator-cpp.md) vektör sözdizimi kullanıldığında.
+
+'operator': işleç kullanılamıyor, bunun yerine; 'operator' kullanma çalışma zamanı denetimi zarar görmüş
+
+Kullandığınızda, bu uyarı oluşturulur [/RTCv](../../build/reference/rtc-run-time-error-checks.md) (yeni/delete denetimi vektör) ve vektör form bulunduğunda. Bu durumda, vektör olmayan biçimi kullanılır.
+
+Exchange'in /RTCv düzgün çalışması, derleyici her zaman vektör biçiminde çağırmalıdır [yeni](../../cpp/new-operator-cpp.md)/[Sil](../../cpp/delete-operator-cpp.md) vektör söz dizimi kullanılıyorsa.

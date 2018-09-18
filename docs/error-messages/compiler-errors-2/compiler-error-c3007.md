@@ -16,25 +16,26 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d1424683db17247c6e31d0d26bce31f420353968
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70e580da61c3314978a071233a576049de2d83b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33262396"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054707"
 ---
 # <a name="compiler-error-c3007"></a>Derleyici Hatası C3007
-'arg': OpenMP 'yönergesi' yönergesi yan tümcesi bir bağımsız değişkeni olmaz  
-  
- Bağımsız değişken bir OpenMP yönergesi vardı, ancak yönergesi bağımsız değişken almaz.  
-  
- Aşağıdaki örnek C3007 oluşturur:  
-  
-```  
-// C3007.c  
-// compile with: /openmp  
-int main()  
-{  
-   #pragma omp parallel for ordered(2)   // C3007  
-}  
+
+'değişken': OpenMP 'yönergesi' yönergesindeki yan tümce bağımsız değişken almaz
+
+Bağımsız değişken bir OpenMP yönergesinde gerekiyordu, ancak yönergesi bir bağımsız değişken almaz.
+
+Aşağıdaki örnek, C3007 oluşturur:
+
+```
+// C3007.c
+// compile with: /openmp
+int main()
+{
+   #pragma omp parallel for ordered(2)   // C3007
+}
 ```

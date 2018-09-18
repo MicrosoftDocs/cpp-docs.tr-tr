@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 55ca9c282cbf36111bbc6b5d4316745508ccbb0c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 32b73fb8d86ff537912218ea35089382a93aec4c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33317355"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46065198"
 ---
 # <a name="project-build-error-prj0036"></a>Proje Derleme Hatası PRJ0036
-Web Dağıtım Aracı 'Ek dosyalar' özelliği geçersiz bir giriş içeriyor.  
-  
- Web dağıtımı özellik sayfasında ek dosyalar özellik makrosu değerlendirme sorun büyük olasılıkla nedeniyle bir hata içeriyordu. Bu hata, ayrıca yol hatalı, karakter veya bir dosya yolu geçersiz karakter bileşimlerini içeren biçimlendirildiğinden emin anlamına gelebilir.  
-  
- Bu hatayı gidermek için makrosu düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.  
-  
- Bu hata, ayrıca başvurulan dosyalardan birini yok anlamına gelebilir.
+
+Web Dağıtım Aracı 'Ek dosyalar' özelliği geçersiz bir girdi içeriyor.
+
+Web dağıtımı özellik sayfasında ek dosyaları özelliği, büyük olasılıkla bir makro değerlendirmesi sorun nedeniyle bir hata içeriyordu. Bu hata, da yolu yanlış, karakter veya bir dosya yolunda geçersiz karakter birleşimlerinin içeren biçimlendirildiğini anlamına gelebilir.
+
+Bu hatayı gidermek için makro düzeltin veya yolunu düzeltin. Proje dizininden mutlak bir yol değerlendirilen yoludur.
+
+Bu hata, başvurulan dosyalardan biri mevcut değil de gelebilir.

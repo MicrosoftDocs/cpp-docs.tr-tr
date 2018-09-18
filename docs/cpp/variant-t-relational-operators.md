@@ -25,45 +25,50 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32f9a45fcfaaff02cfb7cf765857957f20c41ba1
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 95cb1ac663607f26c4f168c2e98910f5b41963c0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39463047"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46040178"
 ---
 # <a name="variantt-relational-operators"></a>_variant_t İlişkisel İşleçleri
-**Microsoft'a özgü**  
-  
- Karşılaştırabilirsiniz `_variant_t` eşitlik ve eşitsizlik için nesneleri.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-bool operator==(  
-   const VARIANT& varSrc) const;  
-bool operator==(  
-   const VARIANT* pSrc) const;  
-bool operator!=(  
-   const VARIANT& varSrc) const;  
-bool operator!=(  
-   const VARIANT* pSrc) const;  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *varSrc*  
- A `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.  
-  
- *pSrc*  
- İşaretçi `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.  
-  
-## <a name="return-value"></a>Dönüş Değeri  
- Döndürür **true** karşılaştırma tutuyorsa **false** Aksi takdirde.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Karşılaştıran bir `_variant_t` nesnesi ile bir `VARIANT`, eşitlik ve eşitsizlik için test etme.  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+**Microsoft'a özgü**
+
+Karşılaştırabilirsiniz `_variant_t` eşitlik ve eşitsizlik için nesneleri.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+bool operator==(
+   const VARIANT& varSrc) const;
+bool operator==(
+   const VARIANT* pSrc) const;
+bool operator!=(
+   const VARIANT& varSrc) const;
+bool operator!=(
+   const VARIANT* pSrc) const;
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*varSrc*<br/>
+A `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.
+
+*pSrc*<br/>
+İşaretçi `VARIANT` ile Karşılaştırılacak `_variant_t` nesne.
+
+## <a name="return-value"></a>Dönüş Değeri
+
+Döndürür **true** karşılaştırma tutuyorsa **false** Aksi takdirde.
+
+## <a name="remarks"></a>Açıklamalar
+
+Karşılaştıran bir `_variant_t` nesnesi ile bir `VARIANT`, eşitlik ve eşitsizlik için test etme.
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

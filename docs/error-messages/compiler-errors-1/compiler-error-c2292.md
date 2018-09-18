@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: be3d00af54709d697461a8424041769aed9956e1
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a075b198f615e9b7d98577910f0866b9096fed79
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33171367"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041252"
 ---
 # <a name="compiler-error-c2292"></a>Derleyici Hatası C2292
-'tanımlayıcısı': devralma gösterimi'en iyi durumda: 'representation1 'representation2 gerekli' bildirilen'  
-  
- Aşağıdaki kod ile derleme [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("iyi her zaman" gösterimi) C2292 neden olur.  
-  
-```  
-// C2292.cpp  
-// compile with: /vmb  
-class __single_inheritance X;  
-  
-struct A { };  
-struct B { };  
-struct X : A, B { };  // C2292, X uses multiple inheritance  
+
+'identifier': en iyi durum devralma gösterimi: '' gerekli representation2' bildirilen representation1'
+
+Aşağıdaki kod ile derleme [/vmb](../../build/reference/vmb-vmg-representation-method.md) ("Best-case her zaman" gösterimi) C2292 neden olur.
+
+```
+// C2292.cpp
+// compile with: /vmb
+class __single_inheritance X;
+
+struct A { };
+struct B { };
+struct X : A, B { };  // C2292, X uses multiple inheritance
 ```

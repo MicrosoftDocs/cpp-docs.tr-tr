@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f8bcca58aecc3d5a5e7b621f45e102690c9f138c
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6da27531b95950a12cb9aa95e8e89da94c556d2d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254543"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035972"
 ---
 # <a name="compiler-error-c3382"></a>Derleyici Hatası C3382
-/ CLR: safe ile 'sizeof' desteklenmiyor  
-  
- Çıktı dosyası bir **/CLR: safe** derleme doğrulanabilir şekilde güvenli türü olan bir dosya olduğundan ve sizeof büyüklüğü işletim sistemine bağlı olarak değişir size_t sizeof işleci dönüş değeri olduğu için desteklenmiyor.  
-  
- Daha fazla bilgi için bkz:  
-  
--   [sizeof İşleci](../../cpp/sizeof-operator.md)  
-  
--   [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)  
-  
--   [Genel Visual C++ 64 Bit Geçiş Sorunları](../../build/common-visual-cpp-64-bit-migration-issues.md)  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3382 oluşturur.  
-  
-```  
-// C3382.cpp  
-// compile with: /clr:safe  
-int main() {  
-   sizeof( char );   // C3382  
-}  
+
+/ CLR: safe ile 'sizeof' desteklenmiyor
+
+Çıktı dosyası bir **/CLR: safe** derleme doğrulanabilir şekilde güvenli yazın olan bir dosya olduğu ve sizeof size_t boyutu işletim sistemine göre farklılık gösterir, sizeof işleci dönüş değeri olduğu için desteklenmiyor.
+
+Daha fazla bilgi için bkz:
+
+- [sizeof İşleci](../../cpp/sizeof-operator.md)
+
+- [/clr (Ortak Dil Çalışma Zamanı Derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md)
+
+- [Genel Visual C++ 64 Bit Geçiş Sorunları](../../build/common-visual-cpp-64-bit-migration-issues.md)
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3382 oluşturur.
+
+```
+// C3382.cpp
+// compile with: /clr:safe
+int main() {
+   sizeof( char );   // C3382
+}
 ```

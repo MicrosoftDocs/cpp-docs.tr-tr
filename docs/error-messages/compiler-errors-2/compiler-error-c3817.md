@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c5ff6f5579a12f14d0f2e39598f53dd3ea8cc68
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8fd4ff7b7ba597d5e5d0bdd9a451ab421f308b3d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268238"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46051795"
 ---
 # <a name="compiler-error-c3817"></a>Derleyici Hatası C3817
-'bildirimi': özellik yalnızca bir işleve uygulanabilir  
-  
- `property` Anahtar sözcüğü yalnızca uygulanacağını işlev tanımı olabilir.  
-  
- C3817 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.  
+
+'bildirim': özellik yalnızca bir işleve uygulanabilir
+
+`property` Anahtar sözcüğü yalnızca bir işlev tanımı bir uygulanan olabilir.
+
+C3817 eski derleyici seçeneği kullanılarak erişilebilir, yalnızca **/clr:oldSyntax**.

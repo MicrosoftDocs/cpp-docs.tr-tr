@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 14cbb110cf226a0a36a121ac9aa1901782357b04
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 974488a2f587c2fde02dd74baf64a98a7590e9b0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33168093"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066578"
 ---
 # <a name="compiler-error-c2163"></a>Derleyici Hatası C2163
-'function': iç bir işlevi olarak mevcut değil  
-  
- Bir `intrinsic` veya `function` pragma listeler işlevi iç formunda mevcut değil. Örneğin, belirli iç bilgileri/CLR programlama kullanan bir programı derlerken kullanılabilir değil.
+
+'function': iç işlev olarak kullanılamaz
+
+Bir `intrinsic` veya `function` pragma listeler bir işlev iç formunda kullanılabilir değil. Örneğin, bazı iç öğeler/CLR programlama kullanan bir program derlenirken kullanılabilir değil.

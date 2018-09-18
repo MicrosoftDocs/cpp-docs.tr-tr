@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fb1224b1e5b14c0f34e10b7eff972d4014cccdff
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 70f6773e65c167b980a4fd9967b910a3f760d58f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33268261"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059276"
 ---
 # <a name="compiler-error-c3874"></a>Derleyici Hatası C3874
-'işlevinin' dönüş türü 'type' yerine ' int' olmalıdır  
-  
- Bir işlev derleyici tarafından beklenen dönüş türüne sahip değil.  
-  
- Aşağıdaki örnek C3874 oluşturur:  
-  
-```  
-// C3874b.cpp  
-double main()  
-{   // C3874  
-}  
+
+'function' dönüş türü 'type' yerine ' int' olmalıdır
+
+Bir işlev derleyici tarafından beklenen dönüş türü yok.
+
+Aşağıdaki örnek, C3874 oluşturur:
+
+```
+// C3874b.cpp
+double main()
+{   // C3874
+}
 ```

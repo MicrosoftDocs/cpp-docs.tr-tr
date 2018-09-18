@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c312b7530fa11bb734dc99a872b36e926890f658
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 376da24d4619eacc3e6b3defe8fdfc582800a898
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33291003"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46045984"
 ---
 # <a name="compiler-warning-level-2-c4653"></a>Derleyici Uyarısı (Düzey 2) C4653
-'option' önceden derlenmiş üst bilgi ile; tutarsız derleyici seçeneği göz ardı geçerli komut satırı seçeneği  
-  
- Kullanım önceden derlenmiş üst bilgileri ile belirtilen bir seçenek ([/Yu](../../build/reference/yu-use-precompiled-header-file.md)) seçeneği önceden derlenmiş üst bilgi oluşturulduğu sırada belirtilen seçeneklerle tutarsız. Bu derleme önceden derlenmiş üst bilgi oluşturulduğu sırada belirtilen seçenek kullanılır.  
-  
- Bu uyarı farklı bir değer paketi yapıları seçeneği için ortaya çıkabilir ([/Zp](../../build/reference/zp-struct-member-alignment.md)) önceden derlenmiş üst bilgi derleme sırasında belirtildi.
+
+derleyici seçeneği 'seçeneği'; önceden derlenmiş üstbilgiyle tutarsız Geçerli komut satırı seçeneği yoksayıldı
+
+Önceden derlenmiş üst bilgi Kullan ile belirtilen bir seçenek ([/Yu](../../build/reference/yu-use-precompiled-header-file.md)) seçeneği önceden derlenmiş üstbilgi oluşturulduğunda belirtilen seçeneklerle tutarsız. Bu derleme seçeneği önceden derlenmiş üstbilgi oluşturulduğunda kullanılan.
+
+Bu uyarı, paketi yapıları seçeneği için farklı bir değer olduğunda oluşabilir ([/ZP](../../build/reference/zp-struct-member-alignment.md)) önceden derlenmiş üst bilgi derlenirken belirtilmedi.

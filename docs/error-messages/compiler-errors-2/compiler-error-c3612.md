@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e07c899dbacdc58e9048ffa21d6be1b6abc02632
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 16d960095942af34aa516341862c9a2bcf72bbba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33252851"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46053699"
 ---
 # <a name="compiler-error-c3612"></a>Derleyici Hatası C3612
-'type': korumalı bir sınıf soyut olamaz  
-  
-Kullanarak tanımlanmış türleri `value` varsayılan olarak, korumalı ve base tüm yöntemlerini uygular sürece bir sınıf soyuttur. Korumalı bir Özet sınıf, bir taban sınıf olabilir veya bu oluşturulabilir.  
-  
-Daha fazla bilgi için bkz: [sınıflar ve yapılar](../../windows/classes-and-structs-cpp-component-extensions.md).  
-  
-## <a name="example"></a>Örnek  
-Aşağıdaki örnek C3612 oluşturur:  
-  
-```  
-// C3612.cpp  
-// compile with: /clr /c  
-value struct V: public System::ICloneable {};   // C3612  
-  
-// OK  
-value struct V2: public System::ICloneable {  
-   Object^ Clone();  
-};  
+
+'type': kapalı bir sınıf, soyut olamaz
+
+Tarafından tanımlanan türleri `value` varsayılan olarak, korumalı ve sürece oluşturucularını tüm yöntemleri uygulayan bir sınıf soyuttur. Kapalı bir soyut sınıf bir temel sınıf diğerinden olabilir ya da oluşturulabilir.
+
+Daha fazla bilgi için [sınıfları ve yapıları](../../windows/classes-and-structs-cpp-component-extensions.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3612 oluşturur:
+
+```
+// C3612.cpp
+// compile with: /clr /c
+value struct V: public System::ICloneable {};   // C3612
+
+// OK
+value struct V2: public System::ICloneable {
+   Object^ Clone();
+};
 ```

@@ -17,18 +17,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 843de39120cee18b01d17d88fb2759bebb9d2dc9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dd89faa4de7b296d6a6771f857f3d16dbe2f94f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33302847"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043709"
 ---
 # <a name="expression-evaluator-error-cxx0025"></a>İfade Değerlendirici Hatası CXX0025
-struct/union işleç gerekli  
-  
- Bir ifadenin alan bir işleç `struct` veya **UNION** türü olmayan bir ifade uygulandığı bir `struct` veya **UNION**.  
-  
- Sınıf, yapı veya birleşim değişkenleri bileşenlerinin tam bir adı olması gerekir. Bileşenleri tam belirtimi girilemez.  
-  
- Bu hata için CAN0025 aynıdır.
+
+Yapı/birleşim işleci gerekiyor
+
+Bir ifade götüren bir işleç `struct` veya **birleşim** türü olmayan bir ifade olarak uygulandığı bir `struct` veya **birleşim**.
+
+Sınıf, yapı veya birleşim değişkenleri bileşenlerden tam adı olması gerekir. Bileşenleri tam belirtimini girilemez.
+
+Bu hata için CAN0025 aynıdır.

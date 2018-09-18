@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 80af78ffbf0d51a9ae8e7f4090aa5c6aa0d9045f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 061abaef158e309246528374b375b20fa75978f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196538"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46041120"
 ---
 # <a name="compiler-error-c2444"></a>Derleyici Hatası C2444
-'tanımlayıcısı': 'type' bekleniyordu, bulunan ANSI prototip kullanılan ' {' veya ';'  
-  
- İşlev prototipi türü tarafından izlenir.  
-  
- Bu hata, bir eksik noktalı virgül veya kuşak tarafından kaynaklanabilir.
+
+'identifier': ANSI prototipi 'type', beklenen bulunamadı, kullanılan ' {' veya ';'
+
+İşlev prototipi bir tür tarafından izlenir.
+
+Bu hata, bir eksik noktalı virgül veya küme ayracı tarafından kaynaklanabilir.

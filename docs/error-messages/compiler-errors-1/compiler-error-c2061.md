@@ -16,45 +16,46 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4d4b018dbab16e8e376a3331a85d0f1b1004f5d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 896fdb21c57e0f558b87ec23e2be309cf49f8095
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33167385"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057970"
 ---
 # <a name="compiler-error-c2061"></a>Derleyici Hatası C2061
-sözdizimi hatası: 'tanımlayıcısı' tanımlayıcısı  
-  
- Derleyici beklenirken değildi tanıtıcısı bulunamadı. Olduğundan emin olun `identifier` kullanmadan önce bildirilir.  
-  
- Bir başlatıcı parantez. Bu sorunu önlemek için bildirimcisi parantez içine alın veya onu bir `typedef`.  
-  
- Sınıf şablonu bağımsız değişkeni olarak bir ifade derleyici algıladığında, bu hata ayrıca nedeni olabilir; kullanmak [typename](../../cpp/typename.md) derleyici bir türü olduğunu bildirmek için.  
-  
- Aşağıdaki örnek C2061 oluşturur:  
-  
-```  
-// C2061.cpp  
-// compile with: /c  
-template < A a >   // C2061  
-// try the following line instead  
-// template < typename b >  
-class c{};  
-```  
-  
- Bir örnek adı geçirirseniz C2061 oluşabilir [TypeID](../../windows/typeid-cpp-component-extensions.md):  
-  
-```  
-// C2061b.cpp  
-// compile with: /clr  
-ref struct G {  
-   int i;  
-};  
-  
-int main() {  
-   G ^ pG = gcnew G;  
-   System::Type ^ pType = typeid<pG>;   // C2061  
-   System::Type ^ pType2 = typeid<G>;   // OK  
-}  
+
+sözdizimi hatası: 'identifier' tanımlayıcısı
+
+Derleyici, beklenirken değildi tanımlayıcı bulunamadı. Emin olun `identifier` kullanmadan önce bildirilir.
+
+Bir başlatıcı parantez ile kapatılan. Bu sorunu önlemek için bildirimci parantez içine veya hale bir `typedef`.
+
+Derleyici bir sınıf şablonu bağımsız değişkeni olarak bir ifade algıladığında bu hatayı da neden olmuş olabilir; kullanma [typename](../../cpp/typename.md) bir türü olduğundan derleyici söylemek için.
+
+Aşağıdaki örnek, C2061 oluşturur:
+
+```
+// C2061.cpp
+// compile with: /c
+template < A a >   // C2061
+// try the following line instead
+// template < typename b >
+class c{};
+```
+
+Bir örnek adı için geçirirseniz C2061 oluşabilir [TypeID](../../windows/typeid-cpp-component-extensions.md):
+
+```
+// C2061b.cpp
+// compile with: /clr
+ref struct G {
+   int i;
+};
+
+int main() {
+   G ^ pG = gcnew G;
+   System::Type ^ pType = typeid<pG>;   // C2061
+   System::Type ^ pType2 = typeid<G>;   // OK
+}
 ```

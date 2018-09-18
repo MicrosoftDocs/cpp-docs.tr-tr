@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 74028dc1d1dd96d2e84ff153fcf9b51fa20f1e13
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 694c4f57df22184c1a6981953d1057252c94030a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33242476"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061688"
 ---
 # <a name="compiler-error-c3017"></a>Derleyici Hatası C3017
-OpenMP sonlandırma testinde 'için' deyimi yanlış biçime sahip  
-  
- A `for` döngü OpenMP deyimi içinde tam olarak ve açıkça belirtilmesi gerekir.  
-  
- Aşağıdaki örnek C3017 oluşturur:  
-  
-```  
-// C3017.cpp  
-// compile with: /openmp  
-int main()  
-{  
-   int i = 0, j = 10;  
-  
-   #pragma omp parallel  
-   {  
-      #pragma omp for  
-      for (i = 0; i; ++i)   // C3017  
-      // Try the following line instead:  
-      // for (i = 0; i < 10; ++i)  
-         ;  
-   }  
-}  
+
+OpenMP 'for' deyimindeki sonlandırma sınaması hatalı biçimde
+
+A `for` OpenMP deyimi bir döngüde tam olarak ve açıkça belirtilmesi gerekir.
+
+Aşağıdaki örnek, C3017 oluşturur:
+
+```
+// C3017.cpp
+// compile with: /openmp
+int main()
+{
+   int i = 0, j = 10;
+
+   #pragma omp parallel
+   {
+      #pragma omp for
+      for (i = 0; i; ++i)   // C3017
+      // Try the following line instead:
+      // for (i = 0; i < 10; ++i)
+         ;
+   }
+}
 ```

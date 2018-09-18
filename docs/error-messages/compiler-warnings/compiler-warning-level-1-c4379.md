@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: df04a034d646692fb461a2f8b19455635a922750
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 172f042bd221299e90a2185e3c04fe19560831e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33279090"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042656"
 ---
 # <a name="compiler-warning-level-1-c4379"></a>Derleyici Uyarısı (düzey 1) C4379
-Ortak dil çalışma zamanı sürümü bu derleyici tarafından desteklenmiyor. Bu sürümünü kullanarak beklenmeyen sonuçlara neden olabilir.  
-  
- Ortak dil çalışma zamanı makinenizde önceki bir sürümünü, ancak güncel sürümü var. C4379 gidermek için derleyicisi ile birlikte gelen ortak dil çalışma zamanı sürümü yükleyin.
+
+Ortak dil çalışma zamanı sürümü bu derleyici tarafından desteklenmiyor. Bu sürümü kullanmaya beklenmeyen sonuçlara neden olabilir.
+
+Ortak dil çalışma zamanı, makinenizde önceki bir sürümünü, ancak güncel sürümü var. C4379 gidermek için derleyicinizin ile birlikte ortak dil çalışma zamanı sürümünü yükleyin.

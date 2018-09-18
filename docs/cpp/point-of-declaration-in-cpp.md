@@ -14,29 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 89f94cdee6be18436b3f39f840fb7880e5860adb
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 68ac24fcfe35701dd75d74800661aa5e41c005f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39408703"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072075"
 ---
 # <a name="point-of-declaration-in-c"></a>C++ bildirim noktası
-Kendi bildirimci hemen sonra ancak (isteğe bağlı) başlatıcısı önce bildirilmesi için bir ad olarak kabul edilir. (Bildirimciler hakkında daha fazla bilgi için bkz. [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md).)  
-  
- Bu örneği göz önünde bulundurun:  
-  
-```cpp 
-// point_of_declaration1.cpp  
-// compile with: /W1   
-double dVar = 7.0;  
-int main()  
-{  
-   double dVar = dVar;   // C4700  
-}  
-```  
-  
- Bildirim noktası olsaydı *sonra* başlatma ve ardından yerel `dVar` 7.0, genel değişkeninin değerini başlatılan `dVar`. Ancak, bu durumda olmadığından `dVar` tanımsız bir değerle başlatılır.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Kapsam](../cpp/scope-visual-cpp.md)
+
+Kendi bildirimci hemen sonra ancak (isteğe bağlı) başlatıcısı önce bildirilmesi için bir ad olarak kabul edilir. (Bildirimciler hakkında daha fazla bilgi için bkz. [bildirimlerinin ve tanımlarının](declarations-and-definitions-cpp.md).)
+
+Bu örneği göz önünde bulundurun:
+
+```cpp
+// point_of_declaration1.cpp
+// compile with: /W1
+double dVar = 7.0;
+int main()
+{
+   double dVar = dVar;   // C4700
+}
+```
+
+Bildirim noktası olsaydı *sonra* başlatma ve ardından yerel `dVar` 7.0, genel değişkeninin değerini başlatılan `dVar`. Ancak, bu durumda olmadığından `dVar` tanımsız bir değerle başlatılır.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Kapsam](../cpp/scope-visual-cpp.md)

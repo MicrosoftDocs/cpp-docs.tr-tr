@@ -27,48 +27,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 279f4beb3b550f672ac3950c31f3653ca1f00ba2
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: defd5f630f1d3832014e2cc7e9746c0e00e8d816
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32409364"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46070671"
 ---
 # <a name="signal-constants"></a>sinyal Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-#include <signal.h>  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- `sig` Bağımsız değişkeni (tanımlıysa sinyali. listelenen bildirim sabitler biri olması gerekir H).  
-  
- `SIGABRT`  
- Olağan dışı sonlandırma. Varsayılan eylem çağıran program 3 çıkış koduyla sona erer.  
-  
- `SIGABRT_COMPAT`  
- SIGABRT ile aynıdır. Diğer platformlar ile uyumluluk için.  
-  
- `SIGFPE`  
- Taşma, sıfır veya geçersiz işlem bölme gibi kayan nokta hata oluştu. Varsayılan eylem çağıran program sonlandırır.  
-  
- `SIGILL`  
- Geçersiz yönerge. Varsayılan eylem çağıran program sonlandırır.  
-  
- `SIGINT`  
- CTRL + C kesme. Varsayılan eylem çağıran program 3 çıkış koduyla sona erer.  
-  
- `SIGSEGV`  
- Geçersiz depolama erişim. Varsayılan eylem çağıran program sonlandırır.  
-  
- `SIGTERM`  
- Sonlandırma isteği programa gönderilir. Varsayılan eylem çağıran program 3 çıkış koduyla sona erer.  
-  
- `SIG_ERR`  
- Hata belirten bir sinyal dönüş türünden oluştu.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [Sinyal](../c-runtime-library/reference/signal.md)   
- [Yükselt](../c-runtime-library/reference/raise.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+#include <signal.h>
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+`sig` Bağımsız değişken bildirim Sabitleri (tanımlandığı SİNYAL. listelenen biri olması gerekir H).
+
+|||
+|-|-|
+|SIGABRT|Olağan dışı sonlandırma. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SIGABRT_COMPAT|SIGABRT ile aynıdır. Diğer platformlar ile uyumluluk için.  |
+|SIGFPE|Taşma, sıfır veya geçersiz işlem bölme gibi kayan nokta hatası. Varsayılan eylem çağırma programını sonlandırır.  |
+|SIGILL|Geçersiz yönerge. Varsayılan eylem çağırma programını sonlandırır.  |
+|SIGINT|CTRL + C kesme. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SIGSEGV|Geçersiz depo erişimi. Varsayılan eylem çağırma programını sonlandırır.  |
+|SIGTERM|Programa gönderilen sonlandırma isteği. Varsayılan eylem çağıran programı çıkış kodu 3 ile sonlandırır.  |
+|SIG_ERR|Bir dönüş türü sinyalinden belirten bir hata oluştu.  |
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[signal](../c-runtime-library/reference/signal.md)<br/>
+[raise](../c-runtime-library/reference/raise.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

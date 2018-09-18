@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3f21a5833c618c5a5dfcc9ff2b608c5ec15bd1aa
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7c35c039727cba004db879aea02c086cea4ddcec
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33257041"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46068816"
 ---
 # <a name="compiler-error-c3453"></a>Derleyici Hatası C3453
-'öznitelik': 'assembly' niteleyicisi eşleşmediği için uygulanmamış özniteliği  
-  
- Derleme veya modülü düzeyindeki öznitelikler yalnızca tek başına yönergeleri belirtilebilir.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3453 oluşturur.  
-  
-```  
-// C3453.cpp  
-// compile with: /clr /c  
-[assembly:System::CLSCompliant(true)]   // C3453  
-// try the following line instead  
-// [assembly:System::CLSCompliant(true)];  
-ref class X {};  
+
+'attribute': öznitelik 'assembly' niteleyicisi eşleşmediğinden uygulanmadı
+
+Derleme veya modül düzeyinde öznitelikleri yalnızca tek başına yönergeler belirtilebilir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3453 oluşturur.
+
+```
+// C3453.cpp
+// compile with: /clr /c
+[assembly:System::CLSCompliant(true)]   // C3453
+// try the following line instead
+// [assembly:System::CLSCompliant(true)];
+ref class X {};
 ```

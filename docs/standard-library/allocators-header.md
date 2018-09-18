@@ -16,12 +16,12 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dcda07b5d2ab499a769c389538e8f272fd8441a6
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: f860d90905c244327787182c40505207c4745201
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45713174"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069176"
 ---
 # <a name="ltallocatorsgt"></a>&lt;Ayırıcılar&gt;
 
@@ -68,23 +68,22 @@ Burada şablon bağımsız değişkeni `Type` ayırıcı örneği tarafından y�
 
 Aşağıdaki kod örneği gibi bir kapsayıcı oluştururken, uygun bir ayırıcı örneklemesi ikinci tür bağımsız değişkeni kullanın.
 
-`#include <list>`
-
-`#include <allocators>`
-
-`std::list<int, stdext::allocators::allocator_chunklist<int> > _List0;`
+```cpp
+#include <list>
+#include <allocators>
+std::list<int, stdext::allocators::allocator_chunklist<int> > _List0;
+```
 
 _List0 ayırır düğümleri `allocator_chunklist` ve varsayılan eşitleme filtresi.
 
 Makroyu kullanın [ALLOCATOR_DECL](../standard-library/allocators-functions.md#allocator_decl) eşitleme filtreleri varsayılan dışındaki ayırıcı şablonları oluşturmak için:
 
-`#include <list>`
-
-`#include <allocators>`
-
-`ALLOCATOR_DECL(CACHE_CHUNKLIST, stdext::allocators::sync_per_thread, Alloc);`
-
-`std::list<int, alloc<int> > _List1;`
+```cpp
+#include <list>
+#include <allocators>
+ALLOCATOR_DECL(CACHE_CHUNKLIST, stdext::allocators::sync_per_thread, Alloc);
+std::list<int, alloc<int> > _List1;
+```
 
 _Lst1 ayırır düğümleri `allocator_chunklist` ve [sync_per_thread](../standard-library/sync-per-thread-class.md) eşitleme filtresi.
 

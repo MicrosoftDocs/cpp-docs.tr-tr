@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 78679021289e41ed9c584abdd94348b55e30184e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4f97e96a7a5548de25ba9b0b45f76e4cdef87baa
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33170043"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46072595"
 ---
 # <a name="compiler-error-c2222"></a>Derleyici Hatası C2222
-Beklenmeyen türü 'type': bir temel sınıf veya üye bekleniyordu  
-  
- Başlatıcı listesi, yalnızca temel sınıflar ya da bir türün üyeleri başlatabilirsiniz. Bu hatayı düzeltmek için yalnızca temel sınıflar veya türün üyeleri Başlatıcı listesinde başlatıldığını doğrulayın.
+
+beklenmeyen tür 'type': taban sınıf veya üye bekleniyordu
+
+Başlatıcı listesi, yalnızca temel sınıflar veya bir türün üyeleri başlatabilirsiniz. Bu hatayı düzeltmek için yalnızca temel sınıf veya üye türü Başlatıcı listesinde başlatıldığını doğrulayın.

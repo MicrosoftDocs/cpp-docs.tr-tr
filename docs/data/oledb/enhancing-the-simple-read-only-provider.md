@@ -18,23 +18,25 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 7c88714e4e1651839cdc5fd4b92d3c5222aa08d0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 28a92f6193053baca80ca078bddc0de862f50279
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33100024"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036455"
 ---
 # <a name="enhancing-the-simple-read-only-provider"></a>Basit Salt Okunur Sağlayıcıyı Geliştirme
-Bu bölümde, geliştirmek gösterilmiştir [basit salt okunur sağlayıcıyı](../../data/oledb/implementing-the-simple-read-only-provider.md) önceki bölümde oluşturduğunuz. `IRowsetLocateImpl` için bir uygulama oluşturur `IRowsetLocate` arabirim ve, yer işareti desteği ekler.  
+
+Bu bölüm nasıl geliştirileceğini gösterir [basit salt okunur sağlayıcıyı](../../data/oledb/implementing-the-simple-read-only-provider.md) önceki bölümde oluşturduğunuz. `IRowsetLocateImpl` için bir uygulama oluşturur `IRowsetLocate` arabirim ve sizin için yer işareti desteği ekler.  
   
- Bir çalışma sağlayıcınız yoksa işlemleri işlemek veya satır getirme algoritması performansını geliştiren sağlayıcı güncelleştirme yapmak için geliştirmek isteyebilirsiniz. Varolan bir COM nesnesi arabirim ekleme çoğu sağlayıcı geliştirmeleri içerir.  
+Çalışma sağlayıcısı olduğunda olmak sağlayıcısı güncelleştirme işlemi işleyeceği veya satır getirme algoritmasının performansını artırmak için artırmak isteyebilirsiniz. Var olan bir COM nesnesine bir arabirim ekleme çoğu sağlayıcı geliştirmeleri içerir.  
   
- Aşağıdaki konular örnekte ekleyerek satır getirme mekanizmasını geliştirir `IRowsetLocate` arabirimini `CAgentRowset`. Konular şunları nasıl yapacağınızı için:  
+Aşağıdaki konularda örnek ekleyerek satır getirme mekanizması geliştirir `IRowsetLocate` arabirimini `CAgentRowset`. Konular şunları nasıl yapacağınız için:  
   
--   [IRowsetLocate devralınan RMyProviderRowset olun](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).  
+- [IRowsetLocate devralır RMyProviderRowset olun](../../data/oledb/modifying-the-inheritance-of-rmyproviderrowset.md).  
   
--   [Tüketiciye döndürülecek olan sütunları dinamik olarak belirleyen](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).  
+- [Tüketiciye döndürülecek olan sütunları dinamik olarak belirleyen](../../data/oledb/dynamically-determining-columns-returned-to-the-consumer.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Basit Bir Salt Okunur Sağlayıcı Oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)
+
+[Basit Bir Salt Okunur Sağlayıcı Oluşturma](../../data/oledb/creating-a-simple-read-only-provider.md)

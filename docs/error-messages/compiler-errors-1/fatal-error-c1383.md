@@ -16,18 +16,19 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae5e16959597e16f25320778be4d4b45ca5950e0
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 98f6fe881b2cdc46d4d2848d6faf850381f54c7b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33226980"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062195"
 ---
 # <a name="fatal-error-c1383"></a>Önemli hata C1383
-derleyici seçeneği /GL, ortak dil çalışma zamanı yüklü sürümüyle uyumlu değil  
-  
- Ortak dil çalışma zamanı önceki bir sürümünü daha yeni bir derleyicisi ile kullanırken ve ile derlerken C1383 oluşur **/CLR** ve **/GL.**  
-  
- Çözmek için ya da kullanmayın **/GL** ile **/CLR** veya derleyicisi ile birlikte gelen ortak dil çalışma zamanı sürümü yükleyin.  
-  
- Daha fazla bilgi için bkz: [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).
+
+derleyici seçeneği /GL, ortak dil çalışma zamanının yüklü sürümüyle uyumlu değil
+
+C1383 oluşur ortak dil çalışma zamanının önceki bir sürümü daha yeni bir derleyici ile kullanırken ve ile derleme yaparken **/CLR** ve **/GL**
+
+Çözmek için ya da kullanmayın **/GL** ile **/CLR** veya derleyici ile birlikte gelen ortak dil çalışma zamanı sürümünü yükleyin.
+
+Daha fazla bilgi için [/CLR (ortak dil çalışma zamanı derlemesi)](../../build/reference/clr-common-language-runtime-compilation.md) ve [/GL (bütün Program iyileştirmesi)](../../build/reference/gl-whole-program-optimization.md).

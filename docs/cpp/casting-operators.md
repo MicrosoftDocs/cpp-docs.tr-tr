@@ -15,27 +15,29 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5b2aa683f539e643127f8f71ff536d4c2ca2c9c0
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 341812299d8cf95e351a087e9957dc0425cb25b2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39407532"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075949"
 ---
 # <a name="casting-operators"></a>Atama İşleçleri
-C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili atamalarında bulunan belirsizliğin ve tehlikenin bir kısmının giderilmesini amaçlar. Bu işleçler şunlardır:  
-  
--   [dynamic_cast](../cpp/dynamic-cast-operator.md) çok biçimli türlerin dönüştürülmesi için kullanılır.  
-  
--   [static_cast](../cpp/static-cast-operator.md) dönüştürme olmayan türlerin dönüştürülmesi için kullanılır.  
-  
--   [const_cast](../cpp/const-cast-operator.md) kaldırmak için kullanılan **const**, **geçici**, ve **__unaligned** öznitelikleri.  
-  
--   [reinterpret_cast](../cpp/reinterpret-cast-operator.md) bitlerin basit reinterpretation için kullanılır.  
-  
--   [safe_cast](../windows/safe-cast-cpp-component-extensions.md) doğrulanabilir MSIL oluşturmak için kullanılır.  
-  
- Kullanım **const_cast** ve **reinterpret_cast** bu işleçler eski stil atamaları olarak aynı tehlikeleri arz ettiği atamalarla son çare olarak. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [Atama](../cpp/casting.md)
+
+C++ diline özgü birkaç atama işleci vardır. Bu işleçler, eski stil C dili atamalarında bulunan belirsizliğin ve tehlikenin bir kısmının giderilmesini amaçlar. Bu işleçler şunlardır:
+
+- [dynamic_cast](../cpp/dynamic-cast-operator.md) çok biçimli türlerin dönüştürülmesi için kullanılır.
+
+- [static_cast](../cpp/static-cast-operator.md) dönüştürme olmayan türlerin dönüştürülmesi için kullanılır.
+
+- [const_cast](../cpp/const-cast-operator.md) kaldırmak için kullanılan **const**, **geçici**, ve **__unaligned** öznitelikleri.
+
+- [reinterpret_cast](../cpp/reinterpret-cast-operator.md) bitlerin basit reinterpretation için kullanılır.
+
+- [safe_cast](../windows/safe-cast-cpp-component-extensions.md) doğrulanabilir MSIL oluşturmak için kullanılır.
+
+Kullanım **const_cast** ve **reinterpret_cast** bu işleçler eski stil atamaları olarak aynı tehlikeleri arz ettiği atamalarla son çare olarak. Bununla birlikte, eski stil atamaları tamamen değiştirmek için gereklidirler.
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Atama](../cpp/casting.md)

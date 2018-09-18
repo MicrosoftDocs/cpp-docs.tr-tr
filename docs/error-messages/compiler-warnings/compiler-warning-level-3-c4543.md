@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8434f6ce0a1f57e144bd4f58d2f19c4f3639fb66
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d2f0c076da0beb765a84485968dd57f72abb9824
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33301898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075477"
 ---
 # <a name="compiler-warning-level-3-c4543"></a>Derleyici Uyarısı (Düzey 3) C4543
-'No_injected_text' özniteliği tarafından gizlenen eklenen metin  
-  
- [No_injected_text](../../windows/no-injected-text.md) kaynak kodunda öznitelik görünen derleyici başka bir deyişle, öznitelikler kod injecting engeller.  
-  
- Öznitelikleri dosyanıza bir kod eklemesini mümkün olmaz anımsatmak için uyarı budur.
+
+Eklenen metin 'no_injected_text' özniteliğiyle gizlendi
+
+[No_injected_text](../../windows/no-injected-text.md) kaynak kodunda öznitelik görünen derleyici başka bir deyişle, öznitelikleri kod ekleme gelen engeller.
+
+Bu uyarı, öznitelikleri kod mümkün olmayacaktır anımsatmak sağlamaktır.

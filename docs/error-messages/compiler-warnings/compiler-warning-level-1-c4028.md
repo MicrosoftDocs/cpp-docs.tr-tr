@@ -16,31 +16,33 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c96abd732a00e5b37b48be8c3053cbfbb8c37c37
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 4b6c71f04b8f0829bbc321d38a18e4307df51ff0
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33274365"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054746"
 ---
 # <a name="compiler-warning-level-1-c4028"></a>Derleyici Uyarısı (düzey 1) C4028
-biçimsel parametresi 'numara' bildiriminden farklı  
-  
- Biçimsel parametresi türü bildirimi içinde karşılık gelen bir parametre ile kabul kaydedilmeyecek. Özgün bildiriminde türü kullanılır.  
-  
- Bu uyarı yalnızca C kaynak kodu için geçerli olur.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C4028 oluşturur.  
-  
-```  
-// C4028.c  
-// compile with: /W1 /Za  
-void f(int , ...);  
-void f(int i, int j) {}   // C4028  
-  
-void g(int , int);  
-void g(int i, int j) {}   // OK  
-  
-int main() {}  
+
+biçimsel parametre 'number' bildirimden farklı
+
+Biçimsel parametre türü bildirimi karşılık gelen parametre ile kabul değil. Özgün bildiriminde türü kullanılır.
+
+Bu uyarı yalnızca C kaynak kodu için geçerlidir.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C4028 oluşturur.
+
+```
+// C4028.c
+// compile with: /W1 /Za
+void f(int , ...);
+void f(int i, int j) {}   // C4028
+
+void g(int , int);
+void g(int i, int j) {}   // OK
+
+int main() {}
 ```

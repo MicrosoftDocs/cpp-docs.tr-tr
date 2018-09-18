@@ -16,27 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9723d444fb90ea4a8bbaac89f5fffd923ea75a76
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d5df31170578c2462c3e437d6eb7f65d6b76af8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254517"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46048415"
 ---
 # <a name="compiler-error-c3209"></a>Derleyici Hatası C3209
-'class': genel bir sınıf, yönetilen veya WinRTclass olmalıdır  
-  
- Genel bir sınıf, bir yönetilen sınıf veya bir Windows çalışma zamanı sınıf olmalıdır.  
-  
- Aşağıdaki örnek C3209 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C3209.cpp  
-// compile with: /clr  
-generic <class T>  
-class C {};   // C3209  
-  
-// OK - ref class can be generic  
-generic <class T>  
-ref class D {};  
+
+'class': Genel sınıf bir yönetilen veya WinRTclass olmalıdır
+
+Genel bir sınıf, yönetilen bir sınıf veya bir Windows çalışma zamanı sınıf olmalıdır.
+
+Aşağıdaki örnek, C3209 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C3209.cpp
+// compile with: /clr
+generic <class T>
+class C {};   // C3209
+
+// OK - ref class can be generic
+generic <class T>
+ref class D {};
 ```

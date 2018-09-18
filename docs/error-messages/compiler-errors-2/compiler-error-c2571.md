@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 96dea582cf5d1211d57eac94a7f70458a51542ae
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 30cc078251d0511da77e08690db275a788973ffb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33230780"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46067941"
 ---
 # <a name="compiler-error-c2571"></a>Derleyici Hatası C2571
-'function': sanal işlev Birliği 'union' olamaz  
-  
- Sanal işlevle UNION bildirildi. Bir sanal işleve yalnızca bir sınıf veya yapı bildirebilirsiniz.  Olası çözümler:  
-  
-1.  UNION, bir sınıf veya yapı değiştirin.  
-  
-2.  İşlev olmayan olun.  
-  
- Aşağıdaki örnek C2571 oluşturur:  
-  
-```  
-// C2571.cpp  
-// compile with: /c  
-union A {  
-   virtual void func1();   // C2571  
-   void func2();   // OK  
-};  
+
+'function': sanal işlevi, 'union' birleşimi içinde yer alamaz
+
+UNION, bir sanal işlev ile bildirilir. Bir sınıf veya yapı içinde yalnızca bir sanal işlev bildirebilirsiniz.  Olası çözümler:
+
+1. Bir sınıf veya yapı, birleşim değiştirin.
+
+1. Sanal olmayan işlev olun.
+
+Aşağıdaki örnek, C2571 oluşturur:
+
+```
+// C2571.cpp
+// compile with: /c
+union A {
+   virtual void func1();   // C2571
+   void func2();   // OK
+};
 ```

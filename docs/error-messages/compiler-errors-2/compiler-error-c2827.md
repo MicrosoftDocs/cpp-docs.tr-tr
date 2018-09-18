@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c96f9c3d43a289deb73fdb4414c344b7748da97
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 139a012f9ed4dd3b6d81d92be3c441df4f899aac
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33238595"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052224"
 ---
 # <a name="compiler-error-c2827"></a>Derleyici Hatası C2827
-'işleci işleci' birli formla genel değiştirilemiyor  
-  
- İşleci birli form nesneyi dışında sahip olamaz.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Aşırı yüklenmiş işleci bir nesneye yerel olun.  
-  
-2.  Bir uygun birli işleç aşırı yüklemeyi seçin.
+
+birli biçim ile 'operator işleci' genel değiştirilemiyor
+
+İşleci birli forma bir nesne dışında olamaz.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Aşırı yüklenmiş işleç bir nesneye yerel olarak yapın.
+
+1. Uygun birli operatör aşırı yüklemeyi seçin.

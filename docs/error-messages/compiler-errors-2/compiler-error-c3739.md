@@ -16,44 +16,45 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 283156f436695c011642dc2603d2cc846a449b3a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0cc0bbe61f807ccd6b2f2f1404fb8e5cc724107
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33264744"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46069891"
 ---
 # <a name="compiler-error-c3739"></a>Derleyici Hatası C3739
-'class': sözdizimi event_receiver 'layout_dependent' parametresi true olduğunda yalnızca desteklenir  
-  
- Tüm bir arabirim olayların kanca denedi ancak `layout_dependent` üzerinde [event_receiver](../../windows/event-receiver.md) özniteliği true değil; bir kerede tek bir olay bağlayın.  
-  
- Aşağıdaki örnek C3739 oluşturur:  
-  
-```  
-// C3739.cpp  
-struct A  
-{  
-   __event void e();  
-};  
-  
-// event_receiver is implied  
-// [ event_receiver(layout_dependent=false)]  
-  
-// use the following line instead  
-// [event_receiver(com, layout_dependent=true), coclass ]  
-struct B  
-{  
-   void f();  
-   B(A* a)  
-   {  
-      __hook(A, a, &B::f);   // C3739  
-      // use the following line instead to hook a single event  
-      // __hook(&A::e, a, &B::f);  
-   }  
-};  
-  
-int main()  
-{  
-}  
+
+'class': sözdizimi yalnızca event_receiver'ın 'layout_dependent' parametresi true olduğunda desteklenir
+
+Olayların bir arabirimin tamamı kanca denedi ancak `layout_dependent` üzerinde [event_receiver](../../windows/event-receiver.md) özniteliği true değil; bir kerede tek bir olay bağlama.
+
+Aşağıdaki örnek, C3739 oluşturur:
+
+```
+// C3739.cpp
+struct A
+{
+   __event void e();
+};
+
+// event_receiver is implied
+// [ event_receiver(layout_dependent=false)]
+
+// use the following line instead
+// [event_receiver(com, layout_dependent=true), coclass ]
+struct B
+{
+   void f();
+   B(A* a)
+   {
+      __hook(A, a, &B::f);   // C3739
+      // use the following line instead to hook a single event
+      // __hook(&A::e, a, &B::f);
+   }
+};
+
+int main()
+{
+}
 ```

@@ -16,16 +16,17 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4792be35ced122829410b284fb0ac15a5e15fa94
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d6a89a6bd11b3d63f23f65ccc1bfbe16c49c13f2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33292208"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054785"
 ---
 # <a name="compiler-warning-level-4-c4505"></a>Derleyici Uyarısı (düzey 4) C4505
-'function': başvurulmayan yerel işlevi kaldırıldı  
-  
- Verilen işlevin yerel ve modül gövdesinde başvurulan; Bu nedenle, ölü kod işlevdir.  
-  
- Derleyici ölü bu işlev için kod oluşturmadı.
+
+'function': başvurulmayan yerel işlev kaldırıldı
+
+Verilen işlevin yerel ve modülün gövdesi içinde başvurulan; Bu nedenle, ölü kod işlevdir.
+
+Derleyici, bu ölü işlev kodunu oluşturmadı.

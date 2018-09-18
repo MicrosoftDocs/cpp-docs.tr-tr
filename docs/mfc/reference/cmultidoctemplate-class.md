@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7c09234cbf41201df14aec4993174e6313c6a7d1
-ms.sourcegitcommit: f1b051abb1de3fe96350be0563aaf4e960da13c3
+ms.openlocfilehash: 01988097d2b05daa6fc056c16f34ec00b45d6893
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37040840"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071789"
 ---
 # <a name="cmultidoctemplate-class"></a>CMultiDocTemplate sınıfı
-Birden çok belge arabirimi (MDI) uygulayan bir belge şablonu tanımlar.  
+Çok Belgeli Arabirim (MDI) uygulayan bir belge şablonu tanımlar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,24 +40,24 @@ class CMultiDocTemplate : public CDocTemplate
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[CMultiDocTemplate::CMultiDocTemplate](#cmultidoctemplate)|Oluşturan bir `CMultiDocTemplate` nesnesi.|  
+|[CMultiDocTemplate::CMultiDocTemplate](#cmultidoctemplate)|Oluşturur bir `CMultiDocTemplate` nesne.|  
   
 ## <a name="remarks"></a>Açıklamalar  
- MDI uygulamanın ana çerçeve penceresi, her biri bir belgeyi görüntüler kullanıcı sıfır veya daha fazla belge çerçeve pencereleri açabilir bir çalışma alanı olarak kullanır. MDI daha ayrıntılı bir açıklaması için bkz *Windows arabirimi yönergelerine yazılım tasarımı için*.  
+ Bir MDI uygulaması ana çerçeve penceresinin her biri bir belgeyi görüntüler kullanıcı sıfır veya daha fazla belge çerçeve pencereleri açabilirsiniz bir çalışma alanı olarak kullanır. MDI daha ayrıntılı bir açıklaması için bkz. *yazılım tasarımı için Windows arabirimi yönergelerine*.  
   
- Belge şablonu sınıfları üç tür arasındaki ilişkileri tanımlar:  
+ Üç tür sınıflar arasındaki ilişkileri bir belge şablonu tanımlar:  
   
 -   Öğesinden türetilen bir belge sınıfı [CDocument](../../mfc/reference/cdocument-class.md).  
   
--   Yukarıda listelenen belge sınıfı verileri görüntüleyen bir görünüm sınıfı. Bu sınıftan türetilen [CView](../../mfc/reference/cview-class.md), `CScrollView`, `CFormView`, veya `CEditView`. (Aynı zamanda `CEditView` doğrudan.)  
+-   Yukarıda listelenen belge sınıfı verileri görüntüleyen bir görünüm sınıfı. Bu sınıftan türetilip [CView](../../mfc/reference/cview-class.md), `CScrollView`, `CFormView`, veya `CEditView`. (Ayrıca `CEditView` doğrudan.)  
   
--   Görünüm içeren bir çerçeve pencere sınıfı. Bir MDI belge şablonu için bu sınıftan türetilen `CMDIChildWnd`, ya da belge çerçeve pencereleri davranışını özelleştirmek gerekmiyorsa kullanabileceğiniz [Cmdıchildwnd](../../mfc/reference/cmdichildwnd-class.md) kendi sınıf türetme olmadan doğrudan.  
+-   Görünüm içeren bir çerçeve penceresi sınıfı. Bir MDI belge şablonu için bu sınıftan türetilen `CMDIChildWnd`, ya da belge çerçeve pencereleri davranışını özelleştirmek gerekmiyorsa, kullanabileceğiniz [Cmdıchildwnd](../../mfc/reference/cmdichildwnd-class.md) kendi sınıf türetme olmadan doğrudan.  
   
- MDI uygulamanın birden fazla belge türünü destekleyebilir ve belgeler farklı türlerde aynı anda açık olabilir. Uygulamanız destekliyorsa her bir belge türü için bir belge şablonu yok. MDI uygulamanıza elektronik tablolar ve metin belgeleri destekliyorsa, örneğin, uygulamanın iki var. `CMultiDocTemplate` nesneleri.  
+ Bir MDI uygulaması birden fazla belge türünü destekleyebilir ve aynı anda farklı türde açık olabilir. Uygulamanızın desteklediği her bir belge türü için bir belge şablonu vardır. MDI uygulamanıza elektronik hem metin belgeleri destekliyorsa, örneğin, uygulama iki içeren `CMultiDocTemplate` nesneleri.  
   
- Kullanıcı yeni bir belge oluşturduğunda uygulama belge şablonu kullanır. Uygulama birden fazla belge türünü destekliyorsa, framework belge şablonlardan desteklenen belge türlerinin adlarını alır ve bunları yeni dosya iletişim kutusu bir listede görüntüler. Kullanıcı bir belge türü seçtikten sonra uygulama belge sınıf nesnesi, bir çerçeve pencere nesnesi ve bir görünüm nesnesi oluşturur ve bunları birbirine ekler.  
+ Kullanıcı yeni bir belge oluşturduğunda, uygulamanın belge şablonlarını kullanır. Uygulama birden fazla belge türünü destekliyorsa, framework belge şablonlarından desteklenen belge türlerinin adlarını alır ve bunları bir listede yeni dosya iletişim kutusu görüntüler. Kullanıcı bir belge türü seçtikten sonra uygulama belge sınıf nesnesi, bir çerçeve pencere nesnesi ve bir görünüm nesnesi oluşturur ve bunları birbirine ekler.  
   
- Tüm üye işlevlerini çağırın gerekmez `CMultiDocTemplate` dışındaki Oluşturucusu. Framework tanıtıcıları `CMultiDocTemplate` dahili nesneleri.  
+ Herhangi bir üye işlevlerini çağırmaya gerek kalmayacak `CMultiDocTemplate` Oluşturucu dışında. Framework tutamaçları `CMultiDocTemplate` dahili olarak nesneleri.  
   
  Daha fazla bilgi için `CMultiDocTemplate`, bkz: [belge şablonları ve belge/görünüm oluşturma işlemi](../../mfc/document-templates-and-the-document-view-creation-process.md).  
   
@@ -74,7 +74,7 @@ class CMultiDocTemplate : public CDocTemplate
  **Başlık:** afxwin.h  
   
 ##  <a name="cmultidoctemplate"></a>  CMultiDocTemplate::CMultiDocTemplate  
- Oluşturan bir `CMultiDocTemplate` nesnesi.  
+ Oluşturur bir `CMultiDocTemplate` nesne.  
   
 ```  
 CMultiDocTemplate(
@@ -86,40 +86,38 @@ CMultiDocTemplate(
   
 ### <a name="parameters"></a>Parametreler  
  *nIDResource*  
- Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynaklarını içerebilir.  
+ Belge türü ile kullanılan kaynakları Kimliğini belirtir. Bu menü, simge, Hızlandırıcı tablosu ve dize kaynakları içerebilir.  
   
- En çok yedi alt dizeler '\n' karakteriyle ayrılmış dize kaynağını oluşur (ancak, sonunda '\n' karakterler gerekli değildir; bir alt dizesi dahil edilmezse '\n' karakteri yer tutucu gerekli); Bu alt dizeler belge türü açıklanmaktadır. Alt dizeler hakkında daha fazla bilgi için bkz: [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynak uygulamanın kaynak dosyası bulunamadı. Örneğin:  
+ '\N' karakteriyle ayrılmış en fazla yedi alt dizeler dize kaynağını oluşur ('\n' karakteri bir alt dizesi değilse, bir yer tutucu gereklidir; ancak, sonunda '\n' karakterler gerekli değildir) Bu alt dizeleri belge türü açıklar. Alt dizeler hakkında daha fazla bilgi için bkz: [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Bu dize kaynağı uygulama kaynak dosyası bulunamadı. Örneğin:  
   
- `// MYCALC.RC`  
+```RC
+// MYCALC.RC
+STRINGTABLE PRELOAD DISCARDABLE
+BEGIN
+  IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"
+END
+```
   
- `STRINGTABLE PRELOAD DISCARDABLE`  
+ Unutmayın; dize '\n' karakteri ile başlar. ilk alt dizeyi MDI uygulamaları için kullanılmaz ve bu nedenle dahil olmadığından budur. Dize Düzenleyicisi'ni kullanarak bu dizeni düzenleyebilirsiniz; Tüm dize tek bir giriş dizesini Düzenleyicisi'nde, olarak değil yedi ayrı girişleri olarak görünür.  
   
- `BEGIN`  
-  
- `IDR_SHEETTYPE "\nSheet\nWorksheet\nWorksheets (*.myc)\n.myc\n MyCalcSheet\nMyCalc Worksheet"`  
-  
- `END`  
-  
- Dize '\n' karakteriyle başlayan unutmayın; ilk alt dizeyi MDI uygulamaları için kullanılmaz ve bu nedenle dahil değildir çünkü budur. Dize Düzenleyicisi'ni kullanarak bu dize düzenleyebilirsiniz; tüm dizeyi tek Dize Düzenleyicisi'nde, bir giriş olarak değil yedi ayrı girişleri olarak görünür.  
-  
- Bu kaynak türleri hakkında daha fazla bilgi için bkz: [kaynak düzenleyicileri](../../windows/resource-editors.md).  
+ Bu kaynak türleri hakkında daha fazla bilgi için bkz. [kaynak düzenleyicileri](../../windows/resource-editors.md).  
   
  *pDocClass*  
- İşaret `CRuntimeClass` belge sınıfın nesnesi. Bu sınıf, bir `CDocument`-türetilmiş sınıf belgelerinizi temsil etmek için tanımlayın.  
+ İşaret `CRuntimeClass` belge sınıfının nesne. Bu sınıf, bir `CDocument`-türetilmiş tanımladığınız belgelerinizi temsil eden sınıf.  
   
  *pFrameClass*  
- İşaret `CRuntimeClass` çerçeve penceresi sınıfın nesnesi. Bu sınıf olabilir bir `CMDIChildWnd`-türetilmiş sınıf veya olabilir `CMDIChildWnd` kendisi, belge çerçeve pencereleri için varsayılan davranış istiyorsanız.  
+ İşaret `CRuntimeClass` çerçeve pencere sınıfının nesnesi. Bu sınıf olabilir bir `CMDIChildWnd`-derived class veya olabilir `CMDIChildWnd` kendisi, belge çerçeve pencereleri için varsayılan davranışı istiyorsanız.  
   
  *pViewClass*  
- İşaret `CRuntimeClass` görünüm sınıfın nesnesi. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.  
+ İşaret `CRuntimeClass` nesne görünüm sınıfı. Bu sınıf, bir `CView`-türetilmiş sınıf belgelerinizi görüntülenecek tanımlayın.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bir dinamik olarak ayırabilir `CMultiDocTemplate` uygulamanızı destekler ve her bir sonrakine her belge türü için nesne `CWinApp::AddDocTemplate` gelen `InitInstance` uygulama sınıfının üye işlevi.  
+ Bir dinamik olarak ayırabilir `CMultiDocTemplate` uygulamanızı destekleyen ve her bir sonrakine her bir belge türü için nesne `CWinApp::AddDocTemplate` gelen `InitInstance` uygulama sınıfının üye işlevi.  
   
 ### <a name="example"></a>Örnek  
  [!code-cpp[NVC_MFCDocView#92](../../mfc/codesnippet/cpp/cmultidoctemplate-class_1.cpp)]  
   
- Burada, ikinci bir örnek verilmiştir.  
+ İkinci bir örnek aşağıda verilmiştir.  
   
  [!code-cpp[NVC_MFCDocView#93](../../mfc/codesnippet/cpp/cmultidoctemplate-class_2.cpp)]  
   

@@ -18,12 +18,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c7a5b30ca507387b1529c9e9726e48735c844fac
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 3455e88c5a9852c902702544a0f915e8d20dc64e
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43764835"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043241"
 ---
 # <a name="ccomheapptr-class"></a>CComHeapPtr sınıfı
 
@@ -32,13 +32,13 @@ Yığın işaretçileri yönetmek için bir akıllı işaretçi sınıfının.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template<typename T>  
+template<typename T>
 class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Yığın üzerinde depolanan nesne türü.
 
 ## <a name="members"></a>Üyeler
@@ -76,7 +76,7 @@ explicit CComHeapPtr(T* pData) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pData*  
+*pData*<br/>
 Varolan bir `CComHeapPtr` nesnesi.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -85,7 +85,7 @@ Yığın işaretçisi isteğe bağlı olarak var olan bir oluşturulabilir `CCom
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[CHeapPtr sınıfı](../../atl/reference/cheapptr-class.md)   
-[CHeapPtrBase sınıfı](../../atl/reference/cheapptrbase-class.md)   
-[CComAllocator sınıfı](../../atl/reference/ccomallocator-class.md)   
+[CHeapPtr Sınıfı](../../atl/reference/cheapptr-class.md)<br/>
+[CHeapPtrBase Sınıfı](../../atl/reference/cheapptrbase-class.md)<br/>
+[CComAllocator Sınıfı](../../atl/reference/ccomallocator-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

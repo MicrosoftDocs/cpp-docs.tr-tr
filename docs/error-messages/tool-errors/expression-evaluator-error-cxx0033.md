@@ -17,22 +17,23 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 720b1aec6c9be16879119bc0e8148a301507577a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 04f37b53c30d36a43d339132bfd9baca3e5ec70c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299506"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46057205"
 ---
 # <a name="expression-evaluator-error-cxx0033"></a>İfade Değerlendirici Hatası CXX0033
-OMF tür bilgisinde hata  
-  
- Çalıştırılabilir dosya bir geçerli nesne modülü biçimi'hata ayıklama için (OMF) sahip değil.  
-  
- Bu hata için CAN0033 aynıdır.  
-  
-### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için  
-  
-1.  Yürütülebilir dosyanın bu sürümü Visual C++ ile yayımlanan bağlayıcı ile oluşturulmadı. LINK.exe geçerli sürümü kullanılarak nesne kodu yeniden bağlayın.  
-  
-2.  .Exe dosyası bozulmuş olabilir. Derlenir ve programı yeniden bağlayın.
+
+OMF tür bilgisi hatalı
+
+Yürütülebilir dosya hata ayıklama için bir geçerli nesne modülü biçimi (OMF) sahip değil.
+
+Bu hata için CAN0033 aynıdır.
+
+### <a name="to-fix-by-checking-the-following-possible-causes"></a>Aşağıdaki olası nedenleri kontrol ederek düzeltmek için
+
+1. Visual C++'ın bu sürümü ile sunulan bağlayıcı yürütülebilir dosyası oluşturulmadı. Nesne kodu LINK.exe geçerli sürümünü kullanarak yeniden bağlayın.
+
+1. .Exe dosyası bozulmuş olabilir. Yeniden derleyin ve programı yeniden bağlayın.

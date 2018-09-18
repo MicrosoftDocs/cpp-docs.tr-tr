@@ -16,48 +16,49 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fa119e0b1afd3f660dd04040965006f1b52cad01
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7e3651a305b8654b9d7d36238885233b8e583f27
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290432"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46043618"
 ---
 # <a name="compiler-warning-level-3-c4197"></a>Derleyici Uyarısı (Düzey 3) C4197
-'type': en üst düzey geçici cast içinde göz ardı edilir  
-  
- Hangi ile tam bir r türüne dönüştürme derleyici algılanan [volatile](../../cpp/volatile-cpp.md), veya bir r türünün geçici ile tam bazı türüne bir cast. C göre standart (6.5.3), tam türleriyle ilişkili özellikleri yalnızca l-değeri ifadeleri için anlamlıdır.  
-  
- Aşağıdaki örnek C4197 oluşturur:  
-  
-```  
-// C4197.cpp  
-// compile with: /W3  
-#include <stdio.h>  
-#include <signal.h>  
-#include <stdlib.h>  
-  
-void sigproc(int);  
-struct S  
-{  
-   int i;  
-} s;  
-  
-int main()  
-{  
-   signal(SIGINT, sigproc);  
-   s.i = 1;  
-   S *pS = &s;  
-   for ( ; (volatile int)pS->i ; )   // C4197  
-      break;  
-   // for ( ; *(volatile int *)&pS->i ; )   // OK  
-   //    break;  
-}  
-  
-void sigproc(int) // ctrl-C  
-{  
-   signal(SIGINT, sigproc);  
-   s.i = 0;  
-}  
-  
+
+'type': tür Dönüştürmedeki en üst düzey volatile yoksayıldı
+
+Derleyici ile nitelenmiş bir r türüne bir dönüştürme algıladı [geçici](../../cpp/volatile-cpp.md), veya bir tür dönüştürme ile geçici nitelikli tür için bir r türü. C göre standart (6.5.3), tam türleriyle ilişkili özellikler yalnızca l-değeri ifadeleri için anlamlıdır.
+
+Aşağıdaki örnek, C4197 oluşturur:
+
+```
+// C4197.cpp
+// compile with: /W3
+#include <stdio.h>
+#include <signal.h>
+#include <stdlib.h>
+
+void sigproc(int);
+struct S
+{
+   int i;
+} s;
+
+int main()
+{
+   signal(SIGINT, sigproc);
+   s.i = 1;
+   S *pS = &s;
+   for ( ; (volatile int)pS->i ; )   // C4197
+      break;
+   // for ( ; *(volatile int *)&pS->i ; )   // OK
+   //    break;
+}
+
+void sigproc(int) // ctrl-C
+{
+   signal(SIGINT, sigproc);
+   s.i = 0;
+}
+
 ```

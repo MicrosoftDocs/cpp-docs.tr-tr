@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 13ce6a5f26cba69aff8ebb296a6f4a716adf1c46
-ms.sourcegitcommit: 761c5f7c506915f5a62ef3847714f43e9b815352
+ms.openlocfilehash: abf907fe12f55b44e7f2e184b8752d2e09a326f8
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44107685"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46071737"
 ---
 # <a name="array-class"></a>array Sınıfı
 Verileri bir hızlandırıcıya taşımakta kullanılan veri depolayıcıyı temsil eder.
@@ -50,10 +50,10 @@ friend class array;
 ```  
 
 #### <a name="parameters"></a>Parametreler
-`value_type`  
+*value_type*<br/>
 Veri öğesi türü.
 
-`_Rank`  
+*_Dizin*<br/>
 Dizinin boyut.
 
 ## <a name="members"></a>Üyeler
@@ -404,46 +404,46 @@ array(array&& _Other) restrict(cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Associated_Av`  
+*_Associated_Av*<br/>
 Dizinin hedef konumunu belirten bir accelerator_view.
 
-`_Av`  
+*_Av*<br/>
 Bir [accelerator_view](accelerator-view-class.md) dizinin konumunu belirten bir nesne.
 
-`_Cpu_access_type`  
+*_Cpu_access_type*<br/>
 İstenen [access_type](concurrency-namespace-enums-amp.md#access_type) CPU üzerindeki dizi. Bu parametrenin varsayılan değeri `access_type_auto` CPU bırakarak `access_type` belirlemesini çalışma zamanına. Gerçek CPU `access_type` dizi kullanarak sorgulanabilir `get_cpu_access_type` yöntemi.
 
-`_Extent`  
+*_Extent*<br/>
 Dizinin her boyutundaki kapsam.
 
-`_E0`  
+*_E0*<br/>
 Bu bölümün kapsamının ikinci en önemli bileşeni.
 
-`_E1`  
+*_E1*<br/>
 Bu bölümün kapsamının sonraki-en-önemli bileşeni.
 
-`_E2`  
+*_E2*<br/>
 Bu bölümün kapsamının en az önemli bileşeni.
 
-`_InputIterator`  
+*_InputIterator*<br/>
 Giriş yineleyicisinin türü.
 
-`_Src`  
+*_Src*<br/>
 Kopyalanacak nesneye için.
 
-`_Src_first`  
+*_Src_first*<br/>
 Kaynak kapsayıcı içine bir başlangıç yineleyicisi.
 
-`_Src_last`  
+*_Src_last*<br/>
 Kaynak kapsayıcı içine bir bitiş yineleyicisi.
 
-`_Other`  
+*_Diğer*<br/>
 Başka bir veri kaynağı.
 
-`_Rank`  
+*_Dizin*<br/>
 Bölümün boyut sayısı.
 
-`value_type`  
+*value_type*<br/>
 Kopyalanan öğelerin veri türü.
 
 ##  <a name="associated_accelerator_view"></a> associated_accelerator_view
@@ -467,7 +467,7 @@ void copy_to(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Dest`  
+*_Dest*<br/>
 [Array_view](array-view-class.md) üstüne kopyalanacak nesne.
 
 ##  <a name="cpu_access_type"></a> cpu_access_type
@@ -551,7 +551,7 @@ operator std::vector<value_type>() const restrict(cpu);
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`value_type`  
+*value_type*<br/>
 Vector öğelerinin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -580,19 +580,19 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Index`  
+*_Index*<br/>
 Öğenin konumu.
 
-`_I0`  
+*_I0*<br/>
 Bu bölümün kaynağının ikinci en önemli bileşeni.
 
-`_I1`  
+*_I1*<br/>
 Bu bölümün kaynağının ikinci sonraki-en-önemli bileşeni.
 
-`_I2`  
+*_I2*<br/>
 Bu bölümün kaynağının ikinci en az önemli bileşeni.
 
-`_I`  
+*_I*<br/>
 Öğenin konumu.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -614,10 +614,10 @@ typename details::_Projection_result_type<value_type,_Rank>::_Const_result_type 
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Index`  
+*_Index*<br/>
 Dizini.
 
-`_I`  
+*_I*<br/>
 Dizini.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -637,10 +637,10 @@ array& operator= (
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_Other`  
+*_Diğer*<br/>
 `array` Kopyalanacak nesne.
 
-`_Src`  
+*_Src*<br/>
 `array` Kopyalanacak nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -752,40 +752,40 @@ array_view<const value_type,3> section(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_E0`  
+*_E0*<br/>
 Bu bölümün kapsamının ikinci en önemli bileşeni.
 
-`_E1`  
+*_E1*<br/>
 Bu bölümün kapsamının sonraki-en-önemli bileşeni.
 
-`_E2`  
+*_E2*<br/>
 Bu bölümün kapsamının en az önemli bileşeni.
 
-`_Ext`  
+*_Ext*<br/>
 [Uzantı](extent-class.md) nesnesi bölümün kapsamını belirtir. Kaynak 0'dır.
 
-`_Idx`  
+*_Idx*<br/>
 [Dizin](index-class.md) başlangıç konumunu belirten bir nesne. Altbölüm kapsamın geri kalan ' dir.
 
-`_I0`  
+*_I0*<br/>
 Bu bölümün kaynağının ikinci en önemli bileşeni.
 
-`_I1`  
+*_I1*<br/>
 Bu bölümün kaynağının ikinci sonraki-en-önemli bileşeni.
 
-`_I2`  
+*_I2*<br/>
 Bu bölümün kaynağının ikinci en az önemli bileşeni.
 
-`_Rank`  
+*_Dizin*<br/>
 Bölümün boyut sayısı.
 
-`_Section_extent`  
+*_Section_extent*<br/>
 [Uzantı](extent-class.md) nesnesi bölümün kapsamını belirtir.
 
-`_Section_origin`  
+*_Section_origin*<br/>
 [Dizin](index-class.md) başlangıç konumunu belirten bir nesne.
 
-`value_type`  
+*value_type*<br/>
 Kopyalanan öğelerin veri türü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -807,13 +807,13 @@ array_view<const value_type,_New_rank> view_as(
 ```  
 
 ### <a name="parameters"></a>Parametreler
-`_New_rank`  
+*_New_rank*<br/>
 Boyut sayısı `extent` nesnesi bir parametre olarak geçirilir.
 
-`_View_extent`  
+*_View_extent*<br/>
 Yeni oluşturmak için kullanılan uzantı [array_view](array-view-class.md) nesne.
 
-`value_type`  
+*value_type*<br/>
 Hem özgün öğelerin veri türü `array` nesne ve döndürülen `array_view` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri

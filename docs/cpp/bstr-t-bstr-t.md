@@ -18,73 +18,77 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba2935dcec7863e43c0dd6a0a4e55ee5c4f3d28d
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 54b61c6aa00a7ea9abf4892e6c3b8568284bd08f
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39401652"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056449"
 ---
 # <a name="bstrtbstrt"></a>_bstr_t::_bstr_t
-**Microsoft'a özgü**  
-  
- Oluşturur bir `_bstr_t` nesne.  
-  
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-_bstr_t( ) throw( );   
-_bstr_t(  
-   const _bstr_t& s1   
-) throw( );  
-_bstr_t(  
-   const char* s2   
-);  
-_bstr_t(  
-   const wchar_t* s3   
-);  
-_bstr_t(  
-   const _variant_t& var   
-);  
-_bstr_t(  
-   BSTR bstr,  
-   bool fCopy   
-);  
-```  
-  
-#### <a name="parameters"></a>Parametreler  
- *S1*  
- A `_bstr_t` kopyalanacak nesne.  
-  
- *S2*  
- Çok baytlı bir dize.  
-  
- *S3*  
- Unicode dizesi  
-  
- *var*  
- A [_variant_t](../cpp/variant-t-class.md) nesne.  
-  
- *BSTR*  
- Varolan bir `BSTR` nesnesi.  
-  
- *fCopy*  
- FALSE ise *bstr* bağımsız değişkeni, yeni nesneye çağırarak bir kopyası oluşturmadan takılı `SysAllocString`.  
-  
-## <a name="remarks"></a>Açıklamalar  
- Aşağıdaki tabloda açıklanmıştır `_bstr_t` oluşturucular.  
-  
-|Oluşturucu|Açıklama|  
-|-----------------|-----------------|  
-|`_bstr_t( )`|Varsayılan yapıları `_bstr_t` null yalıtan nesne `BSTR` nesne.|  
-|`_bstr_t( _bstr_t&`  `s1`  `)`|Oluşturur bir `_bstr_t` başka bir kopya olarak nesnesi.<br /><br /> Bu bir *yüzeysel* kapsüllenmiş başvuru sayısını artırır kopya `BSTR` yeni bir tane oluşturmak yerine nesne.|  
-|`_bstr_t( char*`  `s2`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|  
-|`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.|  
-|`_bstr_t( _variant_t&`  `var`  `)`|Oluşturur bir `_bstr_t` nesnesinden bir `_variant_t` ilk alarak nesne bir `BSTR` kapsüllenmiş değişken nesnesinden nesne.|  
-|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa *fCopy* yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|  
-  
- **END Microsoft özgü**  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [_bstr_t sınıfı](../cpp/bstr-t-class.md)   
- [_variant_t Sınıfı](../cpp/variant-t-class.md)
+
+**Microsoft'a özgü**
+
+Oluşturur bir `_bstr_t` nesne.
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+_bstr_t( ) throw( ); 
+_bstr_t(
+   const _bstr_t& s1
+) throw( );
+_bstr_t(
+   const char* s2
+);
+_bstr_t(
+   const wchar_t* s3
+);
+_bstr_t(
+   const _variant_t& var
+);
+_bstr_t(
+   BSTR bstr,
+   bool fCopy
+);
+```
+
+#### <a name="parameters"></a>Parametreler
+
+*S1*<br/>
+A `_bstr_t` kopyalanacak nesne.
+
+*S2*<br/>
+Çok baytlı bir dize.
+
+*S3*<br/>
+Unicode dizesi
+
+*var*<br/>
+A [_variant_t](../cpp/variant-t-class.md) nesne.
+
+*BSTR*<br/>
+Varolan bir `BSTR` nesnesi.
+
+*fCopy*<br/>
+FALSE ise *bstr* bağımsız değişkeni, yeni nesneye çağırarak bir kopyası oluşturmadan takılı `SysAllocString`.
+
+## <a name="remarks"></a>Açıklamalar
+
+Aşağıdaki tabloda açıklanmıştır `_bstr_t` oluşturucular.
+
+|Oluşturucu|Açıklama|
+|-----------------|-----------------|
+|`_bstr_t( )`|Varsayılan yapıları `_bstr_t` null yalıtan nesne `BSTR` nesne.|
+|`_bstr_t( _bstr_t&`  `s1`  `)`|Oluşturur bir `_bstr_t` başka bir kopya olarak nesnesi.<br /><br /> Bu bir *yüzeysel* kapsüllenmiş başvuru sayısını artırır kopya `BSTR` yeni bir tane oluşturmak yerine nesne.|
+|`_bstr_t( char*`  `s2`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.<br /><br /> Bu oluşturucu, ilk çok baytlı Unicode dönüştürme gerçekleştirir.|
+|`_bstr_t( wchar_t*`  `s3`  `)`|Oluşturur bir `_bstr_t` çağırarak `SysAllocString` yeni bir `BSTR` nesnesi ve ardından kapsüller.|
+|`_bstr_t( _variant_t&`  `var`  `)`|Oluşturur bir `_bstr_t` nesnesinden bir `_variant_t` ilk alarak nesne bir `BSTR` kapsüllenmiş değişken nesnesinden nesne.|
+|`_bstr_t( BSTR`  `bstr` `, bool`  `fCopy`  `)`|Oluşturur bir `_bstr_t` mevcut bir nesne `BSTR` (başlangıcı yerine sonundan bir `wchar_t*` dize). Varsa *fCopy* yanlışsa, sağlanan `BSTR` ile yeni bir kopya yapmadan yeni nesneye iliştirilmiş `SysAllocString`.<br /><br /> Bu oluşturucu şifreleyebilir ve sahipliğini almak için tür kitaplığı üstbilgi sarmalayıcı işlevleri tarafından kullanılır bir `BSTR` bir arabirim yöntemi tarafından döndürülür.|
+
+**END Microsoft özgü**
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[_bstr_t Sınıfı](../cpp/bstr-t-class.md)<br/>
+[_variant_t Sınıfı](../cpp/variant-t-class.md)

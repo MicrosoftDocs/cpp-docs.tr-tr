@@ -14,30 +14,31 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 688e62cc82446a2e52dc1b75a439881a4f2d8eed
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 276e82a7768520c6a75c87cb49fcb26ce1f01253
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381437"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46066472"
 ---
 # <a name="c-primary-expressions"></a>C Birincil İfadeler
-İşlenen ifadelerde "birincil ifadeler." olarak adlandırılır  
-  
-## <a name="syntax"></a>Sözdizimi  
- *Birincil ifade*:  
- *Tanımlayıcı*  
-  
- *sabiti*  
-  
- *dize değişmez değeri*  
-  
- **(***ifade***)**   
-  
- *ifade*:  
- *atama ifadesi*  
-  
- *ifade***,***atama ifadesi*   
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)
+
+İfadelerde işlenenlerin "birincil expressions." olarak adlandırılır
+
+## <a name="syntax"></a>Sözdizimi
+
+*Birincil ifade*: *tanımlayıcısı*
+
+*Sabit*
+
+*dize sabit değeri*
+
+**(***ifade***)** 
+
+*ifade*: *atama ifadesi*
+
+*ifade***,***atama ifadesi*
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[İşlenenler ve İfadeler](../c-language/operands-and-expressions.md)

@@ -16,35 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e7be8fbba29cf82070d6fd96c76f810bda961489
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 0e712a70bdd443d9a6c640853b958f29dac78dbd
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250895"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46061974"
 ---
 # <a name="compiler-error-c3163"></a>Derleyici Hatası C3163
-'oluşturmak': öznitelikler önceki bildirimiyle tutarsız  
-  
- Bir tanımına uygulanan öznitelikleri bir bildirimine uygulanan öznitelikleri çakışıyor.  
-  
- C3163 çözmenin bir yolu, ileriye dönük bildirimi özniteliklerinde ortadan kaldırmaktır. Herhangi bir iletme bildirimi özniteliklerinde tanımı özniteliklerinde değerinden küçük olması veya gerekir, en fazla onlara eşit.  
-  
- C3163 hatanın olası bir nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) içerir. Kullanarak projenizi derleme sürece SAL makroları genişletmeyin **/ analyze** bayrağı. İle derlemeniz çalışırsanız olmadan düzgün bir şekilde derler / analyze bir program C3163 throw / analyze seçeneği. SAL hakkında daha fazla bilgi için bkz: [SAL ek açıklamaları](../../c-runtime-library/sal-annotations.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3163 oluşturur.  
-  
-```  
-// C3163.cpp  
-// compile with: /clr /c  
-using namespace System;  
-  
-[CLSCompliant(true)] void f();  
-[CLSCompliant(false)] void f() {}   // C3163  
-// try the following line instead  
-// [CLSCompliant(true)] void f() {}  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)
+
+'oluşturmak': öznitelikler önceki bildirimle tutarsız
+
+Bir bildirimi için uygulanan öznitelikleri bir tanımına uygulanan öznitelikleri çakışıyor.
+
+İleri dönük bildirimi özniteliklerinde ortadan kaldırmak için C3163 çözmenin bir yolu var. İleri dönük bildiriminin üzerinde herhangi bir özniteliği tanımı özniteliklerinde değerinden küçük olması veya en fazla onlara eşit.
+
+C3163 hatanın olası nedeni, Microsoft kaynak kodu ek açıklama dili (SAL) içerir. SAL makroları kullanarak projenizi derleme sürece genişletmeyin **/ analyze** bayrağı. İle yeniden derlemeniz denerseniz, bir program olan olmadan düzgün bir şekilde derlendiğinden / analyze C3163 fırlatabilir / analyze seçeneği. SAL hakkında daha fazla bilgi için bkz: [SAL ek açıklamalarını](../../c-runtime-library/sal-annotations.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3163 oluşturur.
+
+```
+// C3163.cpp
+// compile with: /clr /c
+using namespace System;
+
+[CLSCompliant(true)] void f();
+[CLSCompliant(false)] void f() {}   // C3163
+// try the following line instead
+// [CLSCompliant(true)] void f() {}
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[SAL Ek Açıklamaları](../../c-runtime-library/sal-annotations.md)

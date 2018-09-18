@@ -16,23 +16,24 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0822c12e109cd5a89a8e1050197367b12a24efa9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 94a95ab1eab00424774d5117e3ae37685a2ac1fc
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33196772"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46035478"
 ---
 # <a name="compiler-error-c2458"></a>Derleyici Hatası C2458
-'tanımlayıcısı': tanımındaki yeniden tanımlama  
-  
- Sınıfı, yapısı, UNION veya numaralandırma kendi bildiriminde tanımlandı.  
-  
- Aşağıdaki örnek C2458 oluşturur:  
-  
-```  
-// C2458.cpp  
-class C {  
-   enum i { C };   // C2458  
-};  
+
+'identifier': tanım içinde yeniden tanımlama
+
+Sınıfı, yapı, birleşim veya numaralandırma kendi bildiriminde tanımlandı.
+
+Aşağıdaki örnek, C2458 oluşturur:
+
+```
+// C2458.cpp
+class C {
+   enum i { C };   // C2458
+};
 ```

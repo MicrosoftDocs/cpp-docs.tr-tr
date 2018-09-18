@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2cb0d4b8d78eb8c7cf1812abb1a7981c605f2c4e
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d11247c823a93604359b4cab6995b694bcf5a2f3
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33299906"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064688"
 ---
 # <a name="linker-tools-warning-lnk4071"></a>Bağlayıcı Araçları Uyarısı LNK4071
-sonraki bağlantıları artımlı olarak bağlanamaz  
-  
- BAĞLANTI bir veya daha fazla sembolleri için birden fazla tanımı bulundu ancak [/FORCE](../../build/reference/force-force-file-output.md) veya **/FORCE:MULTIPLE** hataları bağımsız olarak bir çıkış dosyası oluşturmak için kullanılan. BAĞLANTI artımlı durum (.ilk) dosyası silindi.
+
+sonraki bağlantıları artımlı olarak bağlı olamaz
+
+BAĞLANTI için bir veya daha fazla simge, birden çok tanım bulundu ancak [/FORCE](../../build/reference/force-force-file-output.md) veya **/Force: multıple** hataları bağımsız olarak bir çıkış dosyası oluşturmak için kullanılır. Artımlı durum (.ilk) dosyası bağlantısı silindi.

@@ -28,12 +28,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 91de6c09128acd3ef1a008437ae418b96b45ef66
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 54e4ab00a0d0df90601d06d9e2ffa100d82d4c03
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43762898"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46037365"
 ---
 # <a name="composite-control-global-functions"></a>Bileşik Denetim genel işlevleri
 
@@ -77,19 +77,19 @@ ATLAPI_(int) AtlAxDialogBox(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*  
+*HINSTANCE*<br/>
 [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.
 
-*lpTemplateName*  
+*lpTemplateName*<br/>
 [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İletişim kutusunun sahibi penceresini tanımlar.
 
-*lpDialogProc*  
+*lpDialogProc*<br/>
 [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -100,9 +100,9 @@ Standart HRESULT değerlerinden biri.
 
 Kullanılacak `AtlAxDialogBox` ActiveX denetimini içeren bir iletişim şablonunu ile geçerli bir CLSID, APPID veya URL dize olarak belirtin *metin* alanını **denetimi** bölümünü iletişim kutusu kaynağı ile birlikte " AtlAxWin80 "olarak *sınıf adı* aynı bölüme altında. Aşağıdaki ne bir geçerli gösterir **denetimi** bölümü gibi görünebilir:
 
-```  
+```
 CONTROL    "{04FE35E9-ADBC-4f1d-83FE-8FA4D1F71C7F}", IDC_TEST,  
-    "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100  
+    "AtlAxWin80", WS_GROUP | WS_TABSTOP, 0, 0, 100, 100
 ```
 
 Kaynak komut dosyaları düzenleme hakkında daha fazla bilgi için bkz. [nasıl yapılır: kaynak betik dosyasını metin biçiminde açma](../../windows/how-to-open-a-resource-script-file-in-text-format.md). Denetim kaynak tanımı ifadeleri hakkında daha fazla bilgi için bkz. [ortak denetim parametreleri](/windows/desktop/menurc/common-control-parameters) Windows SDK'sı altında *: SDK Tools*.
@@ -124,19 +124,19 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 
 ### <a name="parameters"></a>Parametreler
 
-*HINSTANCE*  
+*HINSTANCE*<br/>
 [in] İletişim kutusu şablonu, yürütülebilir dosya içeren modül bir örneğini tanımlar.
 
-*lpTemplateName*  
+*lpTemplateName*<br/>
 [in] İletişim kutusu şablonu tanımlar. Bu parametre, iletişim kutusu şablonunun adını belirten bir null ile sonlandırılmış dize işaretçisi veya iletişim kutusu şablonu kaynak tanımlayıcısını belirten bir tamsayı değeri olur. Parametre bir kaynak tanımlayıcısı belirtiyorsa, kendi dwpoint sıfır olmalıdır ve onun alt sıra sözcük tanımlayıcı içermelidir. Kullanabileceğiniz [MAKEINTRESOURCE](https://msdn.microsoft.com/library/windows/desktop/ms648029) makrosu bu değeri oluşturun.
 
-*hWndParent*  
+*hWndParent*<br/>
 [in] İletişim kutusunun sahibi penceresini tanımlar.
 
-*lpDialogProc*  
+*lpDialogProc*<br/>
 [in] İletişim kutusu yordamını işaret eder. İletişim kutusu yordamını hakkında daha fazla bilgi için bkz: [DialogProc](https://msdn.microsoft.com/library/windows/desktop/ms645469).
 
-*dwInitParam*  
+*dwInitParam*<br/>
 [in] İletişim kutusundaki geçirmek için bir değer belirtir *lParam* WM_INITDIALOG iletisinin parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -163,7 +163,7 @@ ATLAPI AtlAxCreateControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -179,13 +179,13 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir.
 
-*hWnd*  
+*hWnd*<br/>
 [in] Denetim iliştirilmiş penceresine işleyin.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -215,7 +215,7 @@ ATLAPI AtlAxCreateControlEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -231,22 +231,22 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir.
 
-*hWnd*  
+*hWnd*<br/>
 [in] Denetim iliştirilmiş penceresine işleyin.
 
-*pStream*  
+*pStream*<br/>
 [in] Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` oluşturulan denetimi. NULL olabilir.
 
-*iidSink*  
+*iidSink*<br/>
 Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı.
 
-*punkSink*  
+*punkSink*<br/>
 Bir işaretçi `IUnknown` arabirimi tarafından belirtilen bağlantı noktasına bağlı havuz nesnenin *iidSink* kapsanan nesne başarıyla oluşturulduktan sonra kapsanan nesne üzerinde.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -274,7 +274,7 @@ ATLAPI AtlAxCreateControlLic(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -290,16 +290,16 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir.
 
-*hWnd*  
+*hWnd*<br/>
 Denetim iliştirilmiş penceresine işleyin.
 
-*pStream*  
+*pStream*<br/>
 Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
-*bstrLic*  
+*bstrLic*<br/>
 Denetim için lisans içeren BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -328,7 +328,7 @@ ATLAPI AtlAxCreateControlLicEx(
 
 ### <a name="parameters"></a>Parametreler
 
-*lpszName*  
+*lpszName*<br/>
 Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle biçimlendirilmiş olması gerekir:
 
 - Bir ProgID gibi "MSCAL. Calendar.7 "
@@ -344,25 +344,25 @@ Denetime geçirilecek bir dizeye bir işaretçi. Aşağıdaki yollardan biriyle 
    > [!NOTE]
    > "MSHTML:" MSHTML stream olacak şekilde atanır böylece HTML parçasını gelmelidir.
 
-*hWnd*  
+*hWnd*<br/>
 Denetim iliştirilmiş penceresine işleyin.
 
-*pStream*  
+*pStream*<br/>
 Denetimin özelliklerini başlatmak için kullanılan bir akış için bir işaretçi. NULL olabilir.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 Adresi alacak bir işaretçi `IUnknown` kapsayıcının. NULL olabilir.
 
-*ppUnkControl*  
+*ppUnkControl*<br/>
 [out] Adresi alacak bir işaretçi `IUnknown` oluşturulan denetimi. NULL olabilir.
 
-*iidSink*  
+*iidSink*<br/>
 Kapsanan nesne üzerinde giden bir arabirim arabirimi tanımlayıcısı.
 
-*punkSink*  
+*punkSink*<br/>
 Bir işaretçi `IUnknown` arabirimi tarafından belirtilen bağlantı noktasına bağlı havuz nesnenin *iidSink* kapsanan nesne başarıyla oluşturulduktan sonra kapsanan nesne üzerinde.
 
-*bstrLic*  
+*bstrLic*<br/>
 Denetim için lisans içeren BSTR.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -390,13 +390,13 @@ ATLAPI AtlAxAttachControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*pControl*  
+*pControl*<br/>
 [in] Bir işaretçi `IUnknown` denetimi.
 
-*hWnd*  
+*hWnd*<br/>
 [in] Denetim barındıracak pencereyi işleyin.
 
-*ppUnkContainer*  
+*ppUnkContainer*<br/>
 [out] Bir işaretçi işaretçisi `IUnknown` kapsayıcı nesnesinin.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -420,10 +420,10 @@ ATLAPI AtlAxGetHost(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 [in] Denetim barındırma penceresi için bir tanıtıcı.
 
-*PP*  
+*PP*<br/>
 [out] `IUnknown` Kapsayıcısının denetimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -440,10 +440,10 @@ ATLAPI AtlAxGetControl(HWND h, IUnknown** pp);
 
 ### <a name="parameters"></a>Parametreler
 
-*h*  
+*h*<br/>
 [in] Denetim barındırma penceresi için bir tanıtıcı.
 
-*PP*  
+*PP*<br/>
 [out] `IUnknown` Barındırılması denetimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -460,10 +460,10 @@ HRESULT AtlSetChildSite(IUnknown* punkChild, IUnknown* punkParent);
 
 ### <a name="parameters"></a>Parametreler
 
-*punkChild*  
+*punkChild*<br/>
 [in] Bir işaretçi `IUnknown` alt arabirimi.
 
-*punkParent*  
+*punkParent*<br/>
 [in] Bir işaretçi `IUnknown` üst arabirimi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -519,19 +519,19 @@ ATLAPI AtlGetObjectSourceInterface(
 
 ### <a name="parameters"></a>Parametreler
 
-*punkObj*  
+*punkObj*<br/>
 [in] Bilgi döndürülecek nesne işaretçisi.
 
-*plibid*  
+*plibid*<br/>
 [out] Kaynak arabirimi tanımını içeren tür kitaplığının Kitaplık kimliği için bir işaretçi.
 
-*piid*  
+*piid*<br/>
 [out] Nesnenin varsayılan kaynak arabirimi arabirim kimliği için bir işaretçi.
 
-*pdwMajor*  
+*pdwMajor*<br/>
 [out] Ana sürüm numarası tür kitaplığının kaynak arabirimi tanımını içeren bir işaretçi.
 
-*pdwMinor*  
+*pdwMinor*<br/>
 [out] Alt sürüm numarasını tür kitaplığının kaynak arabirimi tanımını içeren bir işaretçi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -553,5 +553,5 @@ Aşağıdaki örnek, bir olay havuzu sınıfı nasıl tanımlayabilir gösterir 
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[İşlevleri](../../atl/reference/atl-functions.md)   
+[İşlevler](../../atl/reference/atl-functions.md)<br/>
 [Bileşik Denetim Makroları](../../atl/reference/composite-control-macros.md)

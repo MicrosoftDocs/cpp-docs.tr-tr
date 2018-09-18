@@ -16,30 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b57ede45c2b7b2271f1f6d347f97f7d33334c13b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 18a035d5a5be5e74d6925277dc1dc62bec8639c2
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33250227"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46036507"
 ---
 # <a name="compiler-error-c3223"></a>Derleyici Hatası C3223
-'property': 'TypeID' özelliği için uygulanamaz  
-  
- Uygulayamazsınız [TypeID](../../windows/typeid-cpp-component-extensions.md) özelliği.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3223 oluşturur.  
-  
-```  
-// C3223.cpp  
-// compile with: /clr  
-ref class R {  
-public:  
-   property int myprop;  
-};  
-  
-int main() {  
-   System::Type^ type2 = R::myprop::typeid;   // C3223  
-}  
+
+'property': bir özelliğe 'typeid' uygulayamazsınız
+
+Uygulayamazsınız [TypeID](../../windows/typeid-cpp-component-extensions.md) bir özelliğe.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3223 oluşturur.
+
+```
+// C3223.cpp
+// compile with: /clr
+ref class R {
+public:
+   property int myprop;
+};
+
+int main() {
+   System::Type^ type2 = R::myprop::typeid;   // C3223
+}
 ```

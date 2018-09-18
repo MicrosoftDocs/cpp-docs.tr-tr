@@ -16,33 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 465dd45c4ddfc41e3ba7a059619028711d6f73e2
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f2d507e13c6dde451e6693774f708333a9301f8b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33247585"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46064067"
 ---
 # <a name="compiler-error-c3076"></a>Derleyici Hatası C3076
-'Instance': yerel tür içinde bir başvuru türü 'type' örneği eklenemiyor  
-  
- Yerel tür CLR türünün bir örneği içeremez.  
-  
- Daha fazla bilgi için bkz: [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3076 oluşturur.  
-  
-```  
-// C3076.cpp  
-// compile with: /clr /c  
-ref struct U {};  
-  
-struct V {  
-   U y;   // C3076  
-};  
-  
-ref struct W {  
-   U y;   // OK  
-};  
+
+'instance': 'type' bir başvuru türünün örneğini bir yerel türe katıştıramazsınız
+
+Yerel bir tür bir CLR türünün örneğini içeremez.
+
+Daha fazla bilgi için [başvuru türleri için C++ yığın anlamları](../../dotnet/cpp-stack-semantics-for-reference-types.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3076 oluşturur.
+
+```
+// C3076.cpp
+// compile with: /clr /c
+ref struct U {};
+
+struct V {
+   U y;   // C3076
+};
+
+ref struct W {
+   U y;   // OK
+};
 ```

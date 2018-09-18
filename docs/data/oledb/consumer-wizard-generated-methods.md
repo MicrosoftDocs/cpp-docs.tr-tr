@@ -25,27 +25,28 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: 9c8a3605a94e0feffa1072d1c7cd92a8bdfecb66
-ms.sourcegitcommit: 889a75be1232817150be1e0e8d4d7f48f5993af2
+ms.openlocfilehash: 4a3f80d3e421701ac0612ddb2552d10d1eff1f02
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39340886"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46056033"
 ---
 # <a name="consumer-wizard-generated-methods"></a>Tüketici Sihirbazı Tarafından Oluşturulan Yöntemler
+
 ATL OLE DB Tüketicisi Sihirbazı ve MFC Uygulama Sihirbazı hangi bilmeniz gereken bazı işlevler oluşturun. Bazı uyarılar olduğundan bazı yöntemler öznitelikli projelerinde, farklı uygulandığını unutmayın. her durumda, aşağıda ele alınmıştır. Eklenen kodu görüntüleme hakkında daha fazla bilgi için bkz: [eklenen kodda hata ayıklama](/visualstudio/debugger/how-to-debug-injected-code).  
   
--   `OpenAll` veri kaynağı, satır açılır ve kullanılabilir olmaları durumunda yer işaretlerini açar.  
+- `OpenAll` veri kaynağı, satır açılır ve kullanılabilir olmaları durumunda yer işaretlerini açar.  
   
--   `CloseAll` Tüm açık satır kümeleri kapatır ve tüm komut yürütme serbest bırakır.  
+- `CloseAll` Tüm açık satır kümeleri kapatır ve tüm komut yürütme serbest bırakır.  
   
--   `OpenRowset` tüketicinin satır veya satır kümeleri açma OpenAll tarafından çağrılır.  
+- `OpenRowset` tüketicinin satır veya satır kümeleri açma OpenAll tarafından çağrılır.  
   
--   `GetRowsetProperties` Hangi özellikler ile ayarlanabilir satır kümesinin özelliği için bir işaretçi alır.  
+- `GetRowsetProperties` Hangi özellikler ile ayarlanabilir satır kümesinin özelliği için bir işaretçi alır.  
   
--   `OpenDataSource` içinde belirtilen başlatma dizesi kullanarak veri kaynağına açılır **veri bağlantı özellikleri** iletişim kutusu.  
+- `OpenDataSource` içinde belirtilen başlatma dizesi kullanarak veri kaynağına açılır **veri bağlantı özellikleri** iletişim kutusu.  
   
--   `CloseDataSource` veri kaynağı, uygun bir şekilde kapatılır.  
+- `CloseDataSource` veri kaynağı, uygun bir şekilde kapatılır.  
   
 ## <a name="openall-and-closeall"></a>OpenAll ve CloseAll  
   
@@ -55,7 +56,7 @@ HRESULT OpenAll();
 void CloseAll();  
 ```  
   
- Aşağıdaki örnek nasıl çağırabilirsiniz gösterir `OpenAll` ve `CloseAll` yürüttüğünüzde aynı komutu tekrar tekrar. Aşağıdaki kod örneğinde karşılaştırma [CCommand::Close](../../data/oledb/ccommand-close.md), çağıran bir değişim gösterir `Close` ve `ReleaseCommand` yerine `CloseAll`.  
+Aşağıdaki örnek nasıl çağırabilirsiniz gösterir `OpenAll` ve `CloseAll` yürüttüğünüzde aynı komutu tekrar tekrar. Aşağıdaki kod örneğinde karşılaştırma [CCommand::Close](../../data/oledb/ccommand-close.md), çağıran bir değişim gösterir `Close` ve `ReleaseCommand` yerine `CloseAll`.  
   
 ```cpp  
 int main(int argc, char* argv[])  
@@ -89,7 +90,8 @@ int main(int argc, char* argv[])
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenAll` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
+
+Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenAll` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
   
 ## <a name="openrowset"></a>OpenRowset  
   
@@ -100,7 +102,7 @@ HRESULT OpenRowset(DBPROPSET* pPropSet = NULL)
 HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand = NULL);  
 ```  
   
- `OpenAll` satır veya satır kümeleri tüketicideki açmak için bu yöntemi çağırır. Genellikle, arama gerekmez `OpenRowset` birden çok veri kaynakları/oturumları/satır kümesi ile çalışmak istemiyorsanız. `OpenRowset` komut veya tablo sınıf üstbilgi dosyasında bildirilir:  
+`OpenAll` satır veya satır kümeleri tüketicideki açmak için bu yöntemi çağırır. Genellikle, arama gerekmez `OpenRowset` birden çok veri kaynakları/oturumları/satır kümesi ile çalışmak istemiyorsanız. `OpenRowset` komut veya tablo sınıf üstbilgi dosyasında bildirilir:  
   
 ```  
 // OLE DB Template version:  
@@ -115,7 +117,7 @@ HRESULT OpenRowset(DBPROPSET *pPropSet = NULL)
 }  
 ```  
   
- Öznitelikler bu yöntem farklı şekilde uygular. Bu sürüm, bir oturum nesnesi ve farklı bir geçirebilirsiniz ancak db_command içinde belirtilen komut dizesi varsayılan olarak bir komut dizesi alır. Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenRowset` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
+Öznitelikler bu yöntem farklı şekilde uygular. Bu sürüm, bir oturum nesnesi ve farklı bir geçirebilirsiniz ancak db_command içinde belirtilen komut dizesi varsayılan olarak bir komut dizesi alır. Tanımladığınız gerçekleştiriyorsanız bir `HasBookmark` yöntemi `OpenRowset` kod DBPROP_IRowsetLocate özelliğini ayarlar; yalnızca bunu sağlayıcınız bu özellik destekliyorsa emin olun.  
   
 ```cpp  
 // Attribute-injected version:  
@@ -140,7 +142,7 @@ HRESULT OpenRowset(const CSession& session, LPCWSTR szCommand=NULL)
 void GetRowsetProperties(CDBPropSet* pPropSet);  
 ```  
   
- Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin DBPROP_IRowsetChange gibi özelliklerini ayarlamak için kullanabilirsiniz. `GetRowsetProperties` Kullanıcı kayıt sınıfı şu şekilde kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
+Bu yöntem satır kümesinin özellik kümesi için bir işaretçi alır; Bu işaretçinin DBPROP_IRowsetChange gibi özelliklerini ayarlamak için kullanabilirsiniz. `GetRowsetProperties` Kullanıcı kayıt sınıfı şu şekilde kullanılır. Ek satır kümesi özelliklerini ayarlamak için bu kodu değiştirebilirsiniz:  
   
 ```cpp  
 void GetRowsetProperties(CDBPropSet* pPropSet)  
@@ -153,7 +155,8 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Genel bir tanımlanmamalıdır `GetRowsetProperties` yöntemi ile bir çakışma çünkü sihirbaz tarafından tanımlanan. Şablonlu ve öznitelikli projeleriyle Alma Sihirbazı tarafından oluşturulan bir yöntem olduğunu unutmayın. öznitelikler, bu kod ekleme değil.  
+
+Genel bir tanımlanmamalıdır `GetRowsetProperties` yöntemi ile bir çakışma çünkü sihirbaz tarafından tanımlanan. Şablonlu ve öznitelikli projeleriyle Alma Sihirbazı tarafından oluşturulan bir yöntem olduğunu unutmayın. öznitelikler, bu kod ekleme değil.  
   
 ## <a name="opendatasource-and-closedatasource"></a>OpenDataSource ve CloseDataSource  
   
@@ -164,7 +167,9 @@ void CloseDataSource();
 ```  
   
 ## <a name="remarks"></a>Açıklamalar  
- Sihirbaz yöntemlerini `OpenDataSource` ve `CloseDataSource`; `OpenDataSource` çağrıları [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).  
+
+Sihirbaz yöntemlerini `OpenDataSource` ve `CloseDataSource`; `OpenDataSource` çağrıları [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)
+
+[Sihirbaz Kullanarak bir OLE DB Tüketicisi Oluşturma](../../data/oledb/creating-an-ole-db-consumer-using-a-wizard.md)

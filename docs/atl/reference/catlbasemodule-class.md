@@ -25,12 +25,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 067edba7bc0a8819925af533dd48a34c6f6e4536
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: c4b3c7d53e3500b5dd97fdbd49e4006916cd1a80
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43767757"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46055461"
 ---
 # <a name="catlbasemodule-class"></a>CAtlBaseModule sınıfı
 
@@ -93,7 +93,7 @@ bool AddResourceInstance(HINSTANCE hInst) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hInst*  
+*hInst*<br/>
 Eklemek için kaynak örneği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -122,7 +122,7 @@ HINSTANCE GetHInstanceAt(int i) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*i*  
+*i*<br/>
 Kaynak örneği sayısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -175,7 +175,7 @@ bool RemoveResourceInstance(HINSTANCE hInst) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hInst*  
+*hInst*<br/>
 Kaldırılacak kaynak örneği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -192,7 +192,7 @@ HINSTANCE SetResourceInstance(HINSTANCE hInst) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*hInst*  
+*hInst*<br/>
 Yeni kaynak örneği.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -201,5 +201,5 @@ Güncelleştirilmiş kaynak örneğini döndürür.
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Modül sınıfları](../../atl/atl-module-classes.md)

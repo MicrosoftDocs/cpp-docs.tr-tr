@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8bdcbab59744fcaac88836656639a0fa777aefb6
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ad012c067a5698eefa3f8a91e85252aef93d3e5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248176"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46044398"
 ---
 # <a name="compiler-error-c3236"></a>Derleyici Hatası C3236
-Genel olarak açık örnekleme izin verilmiyor  
-  
- Derleyici genel sınıfların açık örnekleme izin vermiyor.  
-  
- Aşağıdaki örnek C3236 oluşturur:  
-  
-```  
-// C3236.cpp  
-// compile with: /clr  
-generic<class T>  
-public ref class X {};  
-  
-generic ref class X<int>;   // C3236  
-```  
-  
- Aşağıdaki örnek, olası bir çözüm gösterilmektedir:  
-  
-```  
-// C3236b.cpp  
-// compile with: /clr /c  
-generic<class T>  
-public ref class X {};  
+
+Genel açıkça örneğinin izin verilmiyor
+
+Derleyici, Genel sınıflar açıkça örneğinin izin vermez.
+
+Aşağıdaki örnek, C3236 oluşturur:
+
+```
+// C3236.cpp
+// compile with: /clr
+generic<class T>
+public ref class X {};
+
+generic ref class X<int>;   // C3236
+```
+
+Aşağıdaki örnek, olası çözümü göstermektedir:
+
+```
+// C3236b.cpp
+// compile with: /clr /c
+generic<class T>
+public ref class X {};
 ```

@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b161375d9f8396854cc491e038e39d096d30d246
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6ce429c0c4cf0300b3818a9be9d28fd03e95f5eb
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33306471"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46039861"
 ---
 # <a name="bscmake-error-bk1512"></a>BSCMAKE Hatası BK1512
-Dosya adı: kapasitesi aşıldı  
-  
- Tanımları, başvurular, modüller veya diğer bilgileri sayısı üst sınırını aştığı için BSCMAKE gözatma bilgileri dosyası oluşturulamıyor.  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  /EM, /Es veya /Ei kullanarak bazı bilgileri hariç tutun.  
-  
-2.  /IU seçeneği atlayın.
+
+filename: kapasitesi aşıldı
+
+BSCMAKE, tanımları, başvurular, modüller ve diğer bilgileri sayısı üst sınırını aştığı için gözatma bilgisi dosyası oluşturulamıyor.
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. /EM, /Es veya /Ei kullanarak bazı bilgiler hariç tutun.
+
+1. /IU seçeneği atlayın.

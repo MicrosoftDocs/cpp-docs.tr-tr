@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 32137534a43eeb0b038eae547f9bc19283412159
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: 27afaee16a87ddf428570f7854212eed34634d38
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33688251"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46059335"
 ---
 # <a name="copyin"></a>copyin
-Ana iş parçacığının değeri erişmek iş parçacığı sağlayan bir [threadprivate](../../../parallel/openmp/reference/threadprivate.md) değişkeni.  
+Ana iş parçacığının değere erişmek iş parçacığı sağlayan bir [threadprivate](../../../parallel/openmp/reference/threadprivate.md) değişkeni.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -32,11 +32,10 @@ Ana iş parçacığının değeri erişmek iş parçacığı sağlayan bir [thre
 copyin(var)  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+## <a name="parameters"></a>Parametreler
   
- `var`  
- `threadprivate` Paralel yapı önce mevcut olduğundan, ana iş parçacığında değişkeninin değeri başlatılacağı değişkeni.  
+*var*<br/>
+`threadprivate` Paralel yapı önce mevcut olduğundan ana iş parçacığı değişkenin değeri ile başlatılmış bir değişken.  
   
 ## <a name="remarks"></a>Açıklamalar  
  `copyin` Aşağıdaki yönergeleri için geçerlidir:  
@@ -45,9 +44,9 @@ copyin(var)
   
 -   [for](../../../parallel/openmp/reference/for-openmp.md)  
   
--   [Bölümler](../../../parallel/openmp/reference/sections-openmp.md)  
+-   [Bölümleri](../../../parallel/openmp/reference/sections-openmp.md)  
   
- Daha fazla bilgi için bkz: [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copyin.md).  
+ Daha fazla bilgi için [2.7.2.7 copyin](../../../parallel/openmp/2-7-2-7-copyin.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [threadprivate](../../../parallel/openmp/reference/threadprivate.md) kullanma örneği için `copyin`.  

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ba1738da7d349ecafd9f10f31d8f05ac1f12df0a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 632142ea0efd8a9d009f18b898213cfa92514b16
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33243169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042482"
 ---
 # <a name="compiler-error-c2879"></a>Derleyici Hatası C2879
-'simgesi': varolan bir ad bir diğer ad ad alanı diğer ad tanımı verilebilir yalnızca  
-  
- Oluşturamazsınız bir [ad alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) için bir ad alanı dışında bir simge.  
-  
- Aşağıdaki örnek C2879 oluşturur:  
-  
-```  
-// C2879.cpp  
-int main() {  
-   int i;  
-   namespace A = i;   // C2879 i is not a namespace  
-}  
+
+'symbol': yalnızca var olan bir ad alanı ad alanı diğer ad tanımıyla alternatif ad verilebilir
+
+Oluşturamazsınız bir [ad alanı diğer adı](../../cpp/namespaces-cpp.md#namespace_aliases) için bir ad alanı dışındaki bir simge.
+
+Aşağıdaki örnek, C2879 oluşturur:
+
+```
+// C2879.cpp
+int main() {
+   int i;
+   namespace A = i;   // C2879 i is not a namespace
+}
 ```

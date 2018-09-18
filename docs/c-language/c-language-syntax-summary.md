@@ -17,18 +17,20 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 58a4d6618aeea9cc07731ba814644cf31b4a6941
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 73bbc4d8c80b6fa617710344f570da3498f3a94a
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32381935"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46062026"
 ---
 # <a name="c-language-syntax-summary"></a>C Dili Sözdizimi Özeti
-Bu bölüm C dili ve Microsoft'a özgü C dili özelliklerinin tam açıklamasını sağlar. Bu bölümde sözdizimi gösterimini herhangi bir dil bileşeni için tam sözdizimi belirlemek amacıyla kullanabilirsiniz. Bir konunun ele alındığı bu kılavuzun kısmında sözdizimi için açıklaması görünür.  
-  
+
+Bu bölüm C dili ve Microsoft'a özgü C dili özelliklerinin tam açıklamasını sağlar. Bu bölümde sözdizimi gösterimini herhangi bir dil bileşeni için tam sözdizimi belirlemek amacıyla kullanabilirsiniz. Bir konunun ele alındığı bu kılavuzun kısmında sözdizimi için açıklaması görünür.
+
 > [!NOTE]
->  Bu sözdizimi özeti standart ANSI C parçası değildir, yalnızca bilgilendirme amaçlı bulunmaktadır. Microsoft'a özgü söz dizimi, söz dizimini takip eden açıklamalarda belirtilmektedir.  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [C Dil Başvurusu](../c-language/c-language-reference.md)
+>  Bu sözdizimi özeti standart ANSI C parçası değildir, yalnızca bilgilendirme amaçlı bulunmaktadır. Microsoft'a özgü söz dizimi, söz dizimini takip eden açıklamalarda belirtilmektedir.
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[C Dil Başvurusu](../c-language/c-language-reference.md)

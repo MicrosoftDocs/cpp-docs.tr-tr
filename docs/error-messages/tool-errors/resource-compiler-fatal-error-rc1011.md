@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 86a8666939e5355c595cc3aca9ddb1d34dcd555b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f0e8e1b6d18251ff909592cbbdaa38bbd5fe458d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33316507"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46075936"
 ---
 # <a name="resource-compiler-fatal-error-rc1011"></a>Kaynak Derleyicisi Önemli Hatası RC1011
-Derleyici sınırı: 'tanımlayıcısı': çok büyük bir makro tanımı  
-  
- Daha kısa tanımları içine tanımı bölmek deneyin.
+
+Derleyici sınırı: 'identifier': Makro tanımında çok büyük
+
+Daha kısa tanımları tanımında bölmek deneyin.

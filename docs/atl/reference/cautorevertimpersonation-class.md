@@ -21,12 +21,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99f0615dc37070311428ec12894bcaeea8febe8d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 45a14f8c742393c60a026f7c58217407715ef282
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43760623"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46052757"
 ---
 # <a name="cautorevertimpersonation-class"></a>Cautorevertımpersonation sınıfı
 
@@ -77,7 +77,7 @@ void Attach(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pAT*  
+*pAT*<br/>
 Adresini [CAccessToken](../../atl/reference/caccesstoken-class.md) otomatik olarak döndürülecek nesne
 
 ### <a name="remarks"></a>Açıklamalar
@@ -94,7 +94,7 @@ CAutoRevertImpersonation(const CAccessToken* pAT) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*pAT*  
+*pAT*<br/>
 Adresini [CAccessToken](../../atl/reference/caccesstoken-class.md) otomatik olarak döndürülecek nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -147,6 +147,6 @@ Geri Al bir kimliğe bürünme eklemek amacıyla bu yöntemi çağrılırsa `CAc
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATLSecurity örnek](../../visual-cpp-samples.md)   
-[Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)   
+[ATLSecurity örnek](../../visual-cpp-samples.md)<br/>
+[Erişim belirteçleri](/windows/desktop/SecAuthZ/access-tokens)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

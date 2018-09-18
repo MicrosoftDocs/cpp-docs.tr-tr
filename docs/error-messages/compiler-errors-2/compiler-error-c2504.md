@@ -16,34 +16,35 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bac0f8f28955af172590535568289182c3489d6d
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 6fb11774f65454799761913babb428dc6a471743
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33229524"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46054135"
 ---
 # <a name="compiler-error-c2504"></a>Derleyici Hatası C2504
-'class': temel tanımsız sınıfı  
-  
- Taban sınıfı bildirilen ancak hiçbir zaman tanımlı.  Olası nedenler:  
-  
-1.  İçerme dosyası eksik.  
-  
-2.  Dış temel sınıf bildirilmemiş ile [extern](../../cpp/using-extern-to-specify-linkage.md).  
-  
- Aşağıdaki örnek C2504 oluşturur:  
-  
-```  
-// C2504.cpp  
-// compile with: /c  
-class A;  
-class B : public A {};   // C2504  
-```  
-  
- TAMAM  
-  
-```  
-class C{};  
-class D : public C {};  
+
+'class': taban sınıf tanımsız
+
+Temel sınıf bildirildi, ancak hiçbir zaman tanımlı.  Olası nedenler:
+
+1. İçerme dosyası eksik.
+
+1. Dış temel sınıf bildirilmemiş olan [extern](../../cpp/using-extern-to-specify-linkage.md).
+
+Aşağıdaki örnek, C2504 oluşturur:
+
+```
+// C2504.cpp
+// compile with: /c
+class A;
+class B : public A {};   // C2504
+```
+
+TAMAM
+
+```
+class C{};
+class D : public C {};
 ```

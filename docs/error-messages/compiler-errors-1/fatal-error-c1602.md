@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e108fee9b73e1fa66b8ca9a45e67eeb0ea93d290
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: c26e5199c3839069a938d34daf13408ce76e99b5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198332"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46042851"
 ---
 # <a name="fatal-error-c1602"></a>Önemli hata C1602
-İç desteklenmiyor  
-  
- Bu hata, tamamlanmamış bir yüklemesi nedeniyle oluşmuş olabilir, derleyici .exe dosyaları uyuşmazlık gösterir. Örneğin, bir hizmet paketi ancak işlemci paketi yüklemiş olabilirsiniz. Tüm gerekli ürünlerini yükleyin.
+
+desteklenmeyen iç öğe
+
+Bu hata, tamamlanmamış bir yükleme nedeniyle oluşmuş olabilir, derleyici .exe dosyaları uyuşmazlık gösterir. Örneğin, bir hizmet paketine ancak işlemci paketi yüklemiş olabilirsiniz. Tüm gerekli ürünlerini yükleyin.
