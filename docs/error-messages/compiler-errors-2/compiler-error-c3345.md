@@ -16,51 +16,54 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3e6b3a021d9c747e4ec30278d8a22bde899cb39a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 191c2184d14f991ab62f439b492c7fd7f4a00be5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33254241"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118953"
 ---
 # <a name="compiler-error-c3345"></a>Derleyici Hatası C3345
-'tanımlayıcısı': Modül adı için geçersiz tanımlayıcı  
-  
- *Tanımlayıcısı* bir modül bir veya daha fazla Kabul edilemeyen karakterler içeriyor. Tanımlayıcı ilk karakter alfabetik, alt çizgi ya da yüksek ANSI (0x80-FF) karakterini ve herhangi bir sonraki karakteri bir alfasayısal, geçerli ise alt çizgi veya yüksek ANSI karakter.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
-1.  Emin *tanımlayıcısı* boşlukları veya diğer Kabul edilemeyen karakterler içermiyor.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kod örneğinde hata iletisi C3345 neden olur `name` parametresinin `module` boş bir öznitelik içeriyor.  
-  
-```  
-// cpp_attr_name_module.cpp  
-// compile with: /LD /link /OPT:NOREF  
-#include <atlbase.h>  
-#include <atlcom.h>  
-#include <atlwin.h>  
-#include <atltypes.h>  
-#include <atlctl.h>  
-#include <atlhost.h>  
-#include <atlplus.h>  
-  
-// C3345 expected  
-[module(dll, name="My Library", version="1.2", helpfile="MyHelpFile")]   
-// Try the following line instead  
-//[module(dll, name="MyLibrary", version="1.2", helpfile="MyHelpFile")]   
-// Module attribute now applies to this class  
-class CMyClass {  
-public:  
-BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {  
-   // add your own code here  
-   return __super::DllMain(dwReason, lpReserved);  
-   }  
-};  
-```  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [__iscsym](../../c-runtime-library/reference/iscsym-functions.md)   
- [Karakter Sınıflaması](../../c-runtime-library/character-classification.md)   
- [Modülü](../../windows/module-cpp.md)
+
+'identifier': Modül adı için geçersiz tanımlayıcı
+
+*Tanımlayıcı* bir modül bir veya daha fazla Kabul edilemeyen karakterler içeriyor. Bir tanımlayıcının ilk karakteri alfabetik, alt çizgi veya yüksek ANSI (0x80-FF) karakterini ve herhangi bir sonraki karakteri bir alfasayısal karakterler, geçerli ise alt çizgi veya yüksek ANSI karakter.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+1. Emin *tanımlayıcı* boşluk veya diğer Kabul edilemeyen karakterler içermiyor.
+
+## <a name="example"></a>Örnek
+
+Çünkü aşağıdaki kod örneğinde hata iletisi C3345 neden `name` parametresinin `module` boş bir öznitelik içeriyor.
+
+```
+// cpp_attr_name_module.cpp
+// compile with: /LD /link /OPT:NOREF
+#include <atlbase.h>
+#include <atlcom.h>
+#include <atlwin.h>
+#include <atltypes.h>
+#include <atlctl.h>
+#include <atlhost.h>
+#include <atlplus.h>
+
+// C3345 expected
+[module(dll, name="My Library", version="1.2", helpfile="MyHelpFile")]
+// Try the following line instead
+//[module(dll, name="MyLibrary", version="1.2", helpfile="MyHelpFile")]
+// Module attribute now applies to this class
+class CMyClass {
+public:
+BOOL WINAPI DllMain(DWORD dwReason, LPVOID lpReserved) {
+   // add your own code here
+   return __super::DllMain(dwReason, lpReserved);
+   }
+};
+```
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[__iscsym](../../c-runtime-library/reference/iscsym-functions.md)<br/>
+[Karakter Sınıflaması](../../c-runtime-library/character-classification.md)<br/>
+[Modülü](../../windows/module-cpp.md)

@@ -19,12 +19,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 476edd2a199ca21a9067a72cac82a6ac7b608112
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 269fd977bf57f1b2daff4ec5550b1d2da97b58d6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757384"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114169"
 ---
 # <a name="ccomclassfactoryautothread-class"></a>CComClassFactoryAutoThread sınıfı
 
@@ -85,13 +85,13 @@ STDMETHODIMP CreateInstance(
 
 ### <a name="parameters"></a>Parametreler
 
-*pUnkOuter*  
+*pUnkOuter*<br/>
 [in] Nesne bir toplamanın parçası olarak ardından oluşturuluyorsa *pUnkOuter* dış bilinmeyen olması gerekir. Aksi takdirde, *pUnkOuter* NULL olmalıdır.
 
-*riid*  
+*riid*<br/>
 [in] İstenen arabirim Laboratuvardaki. Varsa *pUnkOuter* kullanmaktan, *riid* olmalıdır `IID_IUnknown`.
 
-*ppvObj*  
+*ppvObj*<br/>
 [out] Tarafından tanımlanan bir arabirim işaretçisi için bir işaretçi *riid*. Nesne bu arabirimi desteklemiyorsa *ppvObj* NULL olarak ayarlandı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -112,7 +112,7 @@ STDMETHODIMP LockServer(BOOL fLock);
 
 ### <a name="parameters"></a>Parametreler
 
-*fLock*  
+*fLock*<br/>
 [in] TRUE ise kilit sayacını artırılır; Aksi takdirde, kilit sayısı azaltılır.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -127,9 +127,9 @@ Kullanırken `CComClassFactoryAutoThread`, `_Module` genellikle global örneğin
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)   
-[CComClassFactory2 sınıfı](../../atl/reference/ccomclassfactory2-class.md)   
-[CComClassFactorySingleton sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)   
-[CComObjectRootEx sınıfı](../../atl/reference/ccomobjectrootex-class.md)   
-[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)   
+[IClassFactory](/windows/desktop/api/unknwnbase/nn-unknwnbase-iclassfactory)<br/>
+[CComClassFactory2 Sınıfı](../../atl/reference/ccomclassfactory2-class.md)<br/>
+[CComClassFactorySingleton Sınıfı](../../atl/reference/ccomclassfactorysingleton-class.md)<br/>
+[CComObjectRootEx Sınıfı](../../atl/reference/ccomobjectrootex-class.md)<br/>
+[CComGlobalsThreadModel](atl-typedefs.md#ccomglobalsthreadmodel)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f15efc139f9f09b86f77569349065719bace677
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f02e718edf732284c2bf6ab3158082b6ec545eba
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33293175"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115911"
 ---
 # <a name="compiler-warning-level-4-c4189"></a>Derleyici Uyarısı (düzey 4) C4189
-'tanımlayıcısı': yerel değişken başlatıldı ancak yapılmayan  
-  
- Bir değişken bildirildi ve başlatıldı ancak kullanılmadı.  
-  
- Aşağıdaki örnek C4189 oluşturur:  
-  
-```  
-// C4189.cpp  
-// compile with: /W4  
-int main() {  
-   int a = 1;   // C4189, remove declaration to resolve  
-}  
+
+'identifier': yerel değişken başlatıldı ancak başvurulmadı
+
+Bir değişken bildirildi ve başlatıldı ancak kullanılmaz.
+
+Aşağıdaki örnek, C4189 oluşturur:
+
+```
+// C4189.cpp
+// compile with: /W4
+int main() {
+   int a = 1;   // C4189, remove declaration to resolve
+}
 ```

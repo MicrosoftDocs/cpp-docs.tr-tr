@@ -33,36 +33,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 25118792500d679d243f55e5d87e62a4994eaa0f
-ms.sourcegitcommit: be2a7679c2bd80968204dee03d13ca961eaa31ff
+ms.openlocfilehash: 791509a7c67f5fa47128fda97688c43e592724ed
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32389936"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115183"
 ---
 # <a name="heap-constants"></a>Yığın Sabitleri
-## <a name="syntax"></a>Sözdizimi  
-  
-```  
-  
-#include <malloc.h>  
-  
-```  
-  
-## <a name="remarks"></a>Açıklamalar  
- Bu sabitleri öbek durumunu gösteren dönüş değeri verin.  
-  
-|Sabit|Açıklama|  
-|--------------|-------------|  
-|`_HEAPBADBEGIN`|İlk üst bilgileri bulunamadı veya geçersizdi.|  
-|`_HEAPBADNODE`|Yığın zarar görmüş veya hatalı düğüm bulunamadı.|  
-|`_HEAPBADPTR`|**_pentry** alanını **_heapınfo** yapısı geçerli işaretçi yığına içermiyor (`_heapwalk` yordamı yalnızca).|  
-|`_HEAPEMPTY`|Yığın başlatılmadı.|  
-|`_HEAPEND`|Yığın sonuna başarıyla ulaşıldı (`_heapwalk` yordamı yalnızca).|  
-|`_HEAPOK`|Yığın tutarlıdır (`_heapset` ve `_heapchk` yalnızca yordamları). Hiçbir hata kadarki; **_Heapınfo** yapısı sonraki giriş hakkında bilgiler içerir (`_heapwalk` yordamı yalnızca).|  
-  
-## <a name="see-also"></a>Ayrıca Bkz.  
- [_heapchk](../c-runtime-library/reference/heapchk.md)   
- [_heapset](../c-runtime-library/heapset.md)   
- [_heapwalk](../c-runtime-library/reference/heapwalk.md)   
- [Global Sabitler](../c-runtime-library/global-constants.md)
+
+## <a name="syntax"></a>Sözdizimi
+
+```
+
+#include <malloc.h>
+
+```
+
+## <a name="remarks"></a>Açıklamalar
+
+Bu sabitler yığının durumunu gösteren dönüş değeri verir.
+
+|Sabit|Açıklama|
+|--------------|-------------|
+|`_HEAPBADBEGIN`|İlk üstbilgi bilgileri bulunamadı veya geçersiz.|
+|`_HEAPBADNODE`|Bozuk düğümü bulundu veya yığın zarar görmüş.|
+|`_HEAPBADPTR`|**_pentry** alanını **_heapınfo** yapısı geçerli bir işaretçiyi yığına içermiyor (`_heapwalk` yalnızca yordam).|
+|`_HEAPEMPTY`|Yığın başlatılmadı.|
+|`_HEAPEND`|Yığının sonuna başarıyla ulaşıldı (`_heapwalk` yalnızca yordam).|
+|`_HEAPOK`|Yığın tutarlıdır (`_heapset` ve `_heapchk` yordamlar yalnızca). Kadar hiç hata; **_Heapınfo** yapısı sonraki giriş hakkında bilgiler içerir (`_heapwalk` yalnızca yordam).|
+
+## <a name="see-also"></a>Ayrıca Bkz.
+
+[_heapchk](../c-runtime-library/reference/heapchk.md)<br/>
+[_heapset](../c-runtime-library/heapset.md)<br/>
+[_heapwalk](../c-runtime-library/reference/heapwalk.md)<br/>
+[Global Sabitler](../c-runtime-library/global-constants.md)

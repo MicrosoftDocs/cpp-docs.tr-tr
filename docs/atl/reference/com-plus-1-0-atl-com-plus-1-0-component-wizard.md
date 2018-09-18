@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1dfab348aa9629cfba0b26c6c48d2ba2747e76e3
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: 471d6a273bfb4a446dbf5aba1c3b1bb31d988b24
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45717580"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116106"
 ---
 # <a name="com-10-atl-com-10-component-wizard"></a>COM + 1.0, ATL COM + 1.0 bileşeni Sihirbazı
 
@@ -63,6 +63,6 @@ ATL projeleri ve ATL COM sınıfları hakkında daha fazla bilgi için bkz. [ATL
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL COM + 1.0 bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)   
+[ATL COM+ 1.0 Bileşeni Sihirbazı](../../atl/reference/atl-com-plus-1-0-component-wizard.md)<br/>
 [ATL COM + 1.0 bileşeni](../../atl/reference/adding-an-atl-com-plus-1-0-component.md)
 

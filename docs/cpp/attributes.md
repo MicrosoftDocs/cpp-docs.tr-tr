@@ -8,12 +8,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c573f3e170929df1b988bf3e74535dd12b83a2f8
-ms.sourcegitcommit: f7703076b850c717c33d72fb0755fbb2215c5ddc
+ms.openlocfilehash: f2a6ef80edc5f6bbeaf43bbc5851336b67d8cf36
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "43131805"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118836"
 ---
 # <a name="attributes-in-c"></a>C++ öznitelikleri
 
@@ -45,7 +45,7 @@ void Foo(int);
 
 - `[[carries_dependency]]` İşlevi iş parçacığı eşitleme göre sıralama veri bağımlılığı yayar belirtir. Öznitelik, geçilen bağımsız değişken işlev gövdesine bağımlılık izleme belirtmek için bir veya daha fazla parametrelere uygulanabilir. Özniteliği işlevin dönüş değeri işlevin dışında bir bağımlılık gerçekleştirecek belirtmeniz kendisi için uygulanabilir. Derleyici, daha verimli kod oluşturmak için bu bilgileri kullanabilirsiniz.
 
-- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.  
+- `[[deprecated]]` **Visual Studio 2015 ve sonraki sürümler:** bir işlev kullanılmak üzere tasarlanmamıştır belirtir ve bir kitaplık arabirimi sürümleri gelecek mevcut olmayabilir. Derleyici bir işlevi çağırmak istemci kodu girişiminde bulunduğunda bir bilgi iletisidir oluşturmak için bunu kullanabilirsiniz. Bir sınıf, typedef adı, bir değişkenin, statik olmayan veri üyesi, bir işlev, bir ad alanı, bir numaralandırma, bir numaralandırıcı veya şablon uzmanlığı bildirimine uygulanabilir.
 
 - `[[fallthrough]]` **Visual Studio 2017 ve üzeri:** (bulunan [/Std: c ++ 17](../build/reference/std-specify-language-standard-version.md)) `[[fallthrough]]` özniteliği bağlamında kullanılabilir [geçiş](switch-statement-cpp.md) derleyici (veya herkesin okuma ipucu olarak deyimleri kodu), fallthrough davranıştır. Bu öznitelik hiçbir etkisi derleyici davranışı Bu nedenle Visual C++ derleyicisi fallthrough davranışı, şu anda uyarmaz.
 

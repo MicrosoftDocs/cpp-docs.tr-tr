@@ -18,36 +18,38 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: dbb46302c2ae8834ab9a2a626a3bfb77c41996a2
-ms.sourcegitcommit: 51f804005b8d921468775a0316de52ad39b77c3e
+ms.openlocfilehash: 1aab4a8c18424fdbd52ac24444dd35a1660a714b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39461484"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114351"
 ---
 # <a name="void-c"></a>void (C++)
-İşlev dönüş türü kullanıldığında **void** anahtar sözcüğü işlevin bir değer döndürmediğini belirtir. İşlevin parametre listesi için kullanıldığında, void işlevin parametre almadığını belirtir. Bir işaretçinin bildiriminde kullanıldığında, void işaretçinin "evrensel" olduğunu belirtir.  
-  
- Bir işaretçinin türü ise `void *`, işaretçi ile bildirilmedi herhangi bir değişken işaret edebilir **const** veya **geçici** anahtar sözcüğü. Başka bir türe atanmadığı sürece bir void işaretçisine tekrar başvurulamaz. Void bir işaretçi başka türde veri işaretçisine dönüştürülebilir.  
-  
- Void bir işaretçi, bir işlevi gösterebilir ancak C++'ta bir sınıf üyesini gösteremez.  
-  
- Void türünün değişkeninin bildirimini yapamazsınız.  
-  
-## <a name="example"></a>Örnek  
-  
-```cpp 
-// void.cpp  
-void vobject;   // C2182  
-void *pv;   // okay  
-int *pint; int i;  
-int main() {  
-   pv = &i;  
-   // Cast optional in C required in C++  
-   pint = (int *)pv;  
-}   
-``` 
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [anahtar sözcükler](../cpp/keywords-cpp.md)   
- [Temel Türler](../cpp/fundamental-types-cpp.md)
+
+İşlev dönüş türü kullanıldığında **void** anahtar sözcüğü işlevin bir değer döndürmediğini belirtir. İşlevin parametre listesi için kullanıldığında, void işlevin parametre almadığını belirtir. Bir işaretçinin bildiriminde kullanıldığında, void işaretçinin "evrensel" olduğunu belirtir.
+
+Bir işaretçinin türü ise `void *`, işaretçi ile bildirilmedi herhangi bir değişken işaret edebilir **const** veya **geçici** anahtar sözcüğü. Başka bir türe atanmadığı sürece bir void işaretçisine tekrar başvurulamaz. Void bir işaretçi başka türde veri işaretçisine dönüştürülebilir.
+
+Void bir işaretçi, bir işlevi gösterebilir ancak C++'ta bir sınıf üyesini gösteremez.
+
+Void türünün değişkeninin bildirimini yapamazsınız.
+
+## <a name="example"></a>Örnek
+
+```cpp
+// void.cpp
+void vobject;   // C2182
+void *pv;   // okay
+int *pint; int i;
+int main() {
+   pv = &i;
+   // Cast optional in C required in C++
+   pint = (int *)pv;
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[Anahtar Sözcükler](../cpp/keywords-cpp.md)<br/>
+[Temel Türler](../cpp/fundamental-types-cpp.md)

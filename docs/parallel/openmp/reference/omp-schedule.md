@@ -16,12 +16,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d873d29d5ac6de1073c1ba3f3065dd015cde1f5
-ms.sourcegitcommit: 92f2fff4ce77387b57a4546de1bd4bd464fb51b6
+ms.openlocfilehash: fd5bf96706b94ffbba8cb1b9aeeee8701b266e5d
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45720453"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115053"
 ---
 # <a name="ompschedule"></a>OMP_SCHEDULE
 Davranışını değiştiren [zamanlama](../../../parallel/openmp/reference/schedule.md) yan tümcesi olduğunda `schedule(runtime)` belirtilen bir `for` veya `parallel for` yönergesi.  
@@ -37,8 +37,8 @@ set OMP_SCHEDULE[=type[,size]]
 *Boyutu*<br/>
 (İsteğe bağlı) Yinelemeler boyutunu belirtir. `size` Pozitif bir tamsayı olmalıdır. Varsayılan değer 1, aşağıdakiler haricinde `type` statiktir. Geçersiz zaman `type` olduğu `runtime`.  
   
- `type`  
- Zamanlama türü:  
+*Türü*<br/>
+Zamanlama türü:  
   
 -   `dynamic`  
   

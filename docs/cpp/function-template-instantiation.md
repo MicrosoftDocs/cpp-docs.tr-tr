@@ -16,35 +16,37 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e773fd8e2c38311a1c36aff4c97199cbebb503e8
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: fb94a54c4f99b79e3be742c5b1448151cff140c4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406487"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116795"
 ---
 # <a name="function-template-instantiation"></a>İşlev Şablonu Örneklemesi
-Bir işlev şablonu her türü için ilk kez çağrıldığında, derleyici örneklemesi oluşturur. Şablonlu bir sürümünü her örneklemesi olan işlev türü için özelleştirilmiş. Bu örnek oluşturma, işlev türü için kullanılan her zaman çağrılır. Birden fazla özdeş örneklemeleri, hatta farklı modülde varsa, yalnızca bir kopyasını örneklemesinin yürütülebilir dosyada elde edebilirsiniz.  
-  
- İşlev bağımsız değişkenlerinin dönüştürme işlevi şablonlarında burada parametresi bir şablon bağımsız değişkenine bağımlı değildir bağımsız değişken ve parametre çifti için izin verilir.  
-  
- İşlev şablonlarının açık şablon bağımsız değişken olarak belirli bir tür ile bildirerek oluşturulabilir. Örneğin, aşağıdaki koda izin verilir:  
-  
+
+Bir işlev şablonu her türü için ilk kez çağrıldığında, derleyici örneklemesi oluşturur. Şablonlu bir sürümünü her örneklemesi olan işlev türü için özelleştirilmiş. Bu örnek oluşturma, işlev türü için kullanılan her zaman çağrılır. Birden fazla özdeş örneklemeleri, hatta farklı modülde varsa, yalnızca bir kopyasını örneklemesinin yürütülebilir dosyada elde edebilirsiniz.
+
+İşlev bağımsız değişkenlerinin dönüştürme işlevi şablonlarında burada parametresi bir şablon bağımsız değişkenine bağımlı değildir bağımsız değişken ve parametre çifti için izin verilir.
+
+İşlev şablonlarının açık şablon bağımsız değişken olarak belirli bir tür ile bildirerek oluşturulabilir. Örneğin, aşağıdaki koda izin verilir:
+
 ```cpp
-// function_template_instantiation.cpp  
-template<class T> void f(T) { }  
-  
-// Instantiate f with the explicitly specified template.  
-// argument 'int'  
-//  
-template void f<int> (int);  
-  
-// Instantiate f with the deduced template argument 'char'.  
-template void f(char);  
-int main()  
-{  
-}  
-```  
-  
-## <a name="see-also"></a>Ayrıca bkz.  
- [İşlev Şablonları](../cpp/function-templates.md)
+// function_template_instantiation.cpp
+template<class T> void f(T) { }
+
+// Instantiate f with the explicitly specified template.
+// argument 'int'
+//
+template void f<int> (int);
+
+// Instantiate f with the deduced template argument 'char'.
+template void f(char);
+int main()
+{
+}
+```
+
+## <a name="see-also"></a>Ayrıca bkz.
+
+[İşlev Şablonları](../cpp/function-templates.md)

@@ -32,12 +32,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aa212a6a58d1de417035f002b2caf3e206dabf1c
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: b9b19888f6eae3efe7baf4429ec1174432f99a10
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43757591"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118563"
 ---
 # <a name="catlexemodulet-class"></a>CAtlExeModuleT sınıfı
 
@@ -46,13 +46,13 @@ Bu sınıf, bir uygulama için modülü temsil eder.
 ## <a name="syntax"></a>Sözdizimi
 
 ```
-template <class T>  
+template <class T>
 class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 ```
 
 #### <a name="parameters"></a>Parametreler
 
-*T*  
+*T*<br/>
 Sınıfınıza türetilen `CAtlExeModuleT`.
 
 ## <a name="members"></a>Üyeler
@@ -100,7 +100,7 @@ ATL modüller hakkında daha fazla bilgi için bkz. [ATL modül sınıfları](..
 
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi
 
-[_ATL_MODULE](atl-typedefs.md#_atl_module)  
+[_ATL_MODULE](atl-typedefs.md#_atl_module)
 
 [CAtlModule](../../atl/reference/catlmodule-class.md)
 
@@ -200,10 +200,10 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*lpCmdLine*  
+*lpCmdLine*<br/>
 Komut satırı uygulamaya geçirildi.
 
-*pnRetCode*  
+*pnRetCode*<br/>
 Kayıt için (bir yerde gerçekleştirirse) karşılık gelen HRESULT.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -240,7 +240,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Olarak geçirilen değer *nShowCmd* WinMain parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -261,10 +261,10 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*dwClsContext*  
+*dwClsContext*<br/>
 Sınıf nesnesi çalıştırılacak bağlamı belirtir. Olası değerler şunlardır: CLSCTX_INPROC_SERVER, CLSCTX_INPROC_HANDLER veya CLSCTX_LOCAL_SERVER.
 
-*CertOpenStore*  
+*CertOpenStore*<br/>
 Bağlantı türleri sınıf nesnesi belirler. Olası değerler şunlardır: REGCLS_SINGLEUSE, REGCLS_MULTIPLEUSE veya REGCLS_MULTI_SEPARATE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -293,7 +293,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü. Varsayılan olarak SW_HIDE.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -350,7 +350,7 @@ int WinMain(int nShowCmd) throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*nShowCmd*  
+*nShowCmd*<br/>
 Pencerenin nasıl mı belirtir. Bu parametre ele değerlerden biri olabilir [WinMain](https://msdn.microsoft.com/library/windows/desktop/ms633559) bölümü.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -363,7 +363,7 @@ Bu yöntem geçersiz kılınabilir. Kılıyorsa [CAtlExeModuleT::PreMessageLoop]
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATLDuck örnek](../../visual-cpp-samples.md)   
-[CAtlModuleT sınıfı](../../atl/reference/catlmodulet-class.md)   
-[CAtlDllModuleT sınıfı](../../atl/reference/catldllmodulet-class.md)   
+[ATLDuck örnek](../../visual-cpp-samples.md)<br/>
+[CAtlModuleT Sınıfı](../../atl/reference/catlmodulet-class.md)<br/>
+[CAtlDllModuleT Sınıfı](../../atl/reference/catldllmodulet-class.md)<br/>
 [Sınıfına genel bakış](../../atl/atl-class-overview.md)

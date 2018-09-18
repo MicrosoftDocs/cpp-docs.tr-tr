@@ -16,31 +16,32 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ed70f364ad72160ddc3b9e875d8b1f3b6ee67e3b
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1129a25e628710121d667a44022eec5a0450b092
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266243"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115339"
 ---
 # <a name="compiler-error-c3670"></a>Derleyici Hatası C3670
-'override': 'yöntemi' erişilemez temel sınıf yöntemi geçersiz kılamaz  
-  
- Bir geçersiz kılma yalnızca, erişim düzeyi türetilmiş bir tür olarak kullanılabilir yapar işlevi üzerinde gerçekleşebilir. Daha fazla bilgi için bkz: [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3670 oluşturur:  
-  
-```  
-// C3670.cpp  
-// compile with: /clr /c  
-public ref class C {  
-// Uncomment the following line to resolve.  
-// public:  
-   virtual void g() { }  
-};  
-  
-public ref class D : public C {  
-public:  
-   virtual void f() new sealed = C::g {};   // C3670  
-};  
+
+'override': 'method' erişilemez taban sınıfı yöntemi geçersiz kılınamıyor
+
+Bir geçersiz kılma yalnızca türetilmiş bir tür içinde kullanılabilir getirir, erişim düzeyi bir işlev üzerinde gerçekleştirilebilir. Daha fazla bilgi için [açık geçersiz kılmalar](../../windows/explicit-overrides-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3670 oluşturur:
+
+```
+// C3670.cpp
+// compile with: /clr /c
+public ref class C {
+// Uncomment the following line to resolve.
+// public:
+   virtual void g() { }
+};
+
+public ref class D : public C {
+public:
+   virtual void f() new sealed = C::g {};   // C3670
+};
 ```

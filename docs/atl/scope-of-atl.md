@@ -14,12 +14,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 35256dcf1d43b2e176c722e7dfa1b2087029e277
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 99be937416642ec60466eb196dce64e68fea4de1
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43761787"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113974"
 ---
 # <a name="scope-of-atl"></a>ATL'nin kapsamı
 
@@ -29,6 +29,6 @@ ATL uygulamanızda içeren kaynak kodu olarak sevk edilir. ATL ayrıca bileşenl
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[ATL'ye giriş](../atl/introduction-to-atl.md)   
+[ATL’ye Giriş](../atl/introduction-to-atl.md)<br/>
 [ATL Projesi Sihirbazı](../atl/reference/atl-project-wizard.md)
 

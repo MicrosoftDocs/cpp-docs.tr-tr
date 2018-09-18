@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8d11bc5c8b5034fa305a22ba893c62faff18cc38
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: dbc482fe693da366a3ba3ce7e53d5e8bbf23618c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33281040"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118397"
 ---
 # <a name="compiler-warning-level-1-c4624"></a>Derleyici Uyarısı (düzey 1) C4624
-'türetilmiş bir sınıf': yıkıcı bir temel sınıf yıkıcı erişilemez veya silinmiş olduğundan silindi olarak örtük olarak tanımlanmıştı  
-  
- Bir yıkıcı erişilebilir ya da bir taban sınıf içinde silinen değildi ve türetilmiş bir sınıf için oluşturulmamış. Yığında bu türde bir nesne oluşturma girişimi herhangi bir derleyici hatasına neden olur.  
-  
- Aşağıdaki örnek C4624 oluşturur ve düzeltmek gösterilmektedir:  
-  
-```  
-// C4624.cpp  
-// compile with: /W1 /c  
-class B {  
-// Uncomment the following line to fix.  
-// public:  
-   ~B();  
-};  
-  
-class D : public B {};   // C4624 B's destructor not public  
+
+'derived class': yıkıcı örtük bir şekilde bir temel sınıf yok edicisini erişilemez veya silinmiş olduğundan silindi olarak tanımlandı
+
+Bir yok edici erişilebilir veya silinmiş bir temel sınıfta değil ve bir türetilmiş sınıf için oluşturulmadı. Yığında bu türde bir nesne oluşturmak için her türlü girişim, bir derleyici hatasına neden olur.
+
+Aşağıdaki örnek, C4624 oluşturur ve bu sorunun nasıl gösterir:
+
+```
+// C4624.cpp
+// compile with: /W1 /c
+class B {
+// Uncomment the following line to fix.
+// public:
+   ~B();
+};
+
+class D : public B {};   // C4624 B's destructor not public
 ```

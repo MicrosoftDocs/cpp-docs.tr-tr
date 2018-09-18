@@ -16,29 +16,30 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 53265c27bbac02ddbccb3b2a89b77a515e752f73
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: a849900f3d981de74702d972ad9f45b7f31e5619
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33163757"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113363"
 ---
 # <a name="compiler-error-c2013"></a>Derleyici Hatası C2013
-eksik ' >'  
-  
- Bir `#include` yönergesi kapanış açılı ayracı eksik. Hatayı gidermek için kapanış ayracı ekleyin.  
-  
- Aşağıdaki örnek C2013 oluşturur:  
-  
-```  
-// C2013.cpp  
-#include <stdio.h    // C2013  
-```  
-  
- Olası çözüm:  
-  
-```  
-// C2013b.cpp  
-// compile with: /c  
-#include <stdio.h>  
+
+eksik ' >'
+
+Bir `#include` yönergesi bir kapanış açılı ayracı eksik. Hatayı gidermek için sol ayraç ekleyin.
+
+Aşağıdaki örnek, C2013 oluşturur:
+
+```
+// C2013.cpp
+#include <stdio.h    // C2013
+```
+
+Olası çözüm:
+
+```
+// C2013b.cpp
+// compile with: /c
+#include <stdio.h>
 ```

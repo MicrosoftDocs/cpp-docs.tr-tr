@@ -16,28 +16,29 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f9a5f392500b47771c6f19cc38d2fa2b5e679935
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 26ffa49a6b54769db5b24d91ffcaf72579a6e458
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33272701"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115261"
 ---
 # <a name="compiler-error-c3912"></a>Derleyici Hatası C3912
-'event': olay türü, bir temsilci türü olmalıdır  
-  
- Bir olay bildirildi, ancak doğru türde değildi.  
-  
- Daha fazla bilgi için bkz: [olay](../../windows/event-cpp-component-extensions.md).  
-  
- Aşağıdaki örnek C3912 oluşturur:  
-  
-```  
-// C3912.cpp  
-// compile with: /clr  
-delegate void H();  
-ref class X {  
-   event int Ev;   // C3912  
-   event H^ Ev2;   // OK  
-};  
+
+'event': olayın türü bir temsilci türü olmalıdır
+
+Bir olay olarak bildirildi, ancak doğru türde değildi.
+
+Daha fazla bilgi için [olay](../../windows/event-cpp-component-extensions.md).
+
+Aşağıdaki örnek, C3912 oluşturur:
+
+```
+// C3912.cpp
+// compile with: /clr
+delegate void H();
+ref class X {
+   event int Ev;   // C3912
+   event H^ Ev2;   // OK
+};
 ```

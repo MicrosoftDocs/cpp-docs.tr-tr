@@ -39,12 +39,12 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - uwp
-ms.openlocfilehash: 07cd5fdc2aa47e5e7486f48c0106b7b24ff16d9f
-ms.sourcegitcommit: b4432d30f255f0cb58dce69cbc8cbcb9d44bc68b
+ms.openlocfilehash: 3bc016367495be8cc10c09605e8018811bde5ca9
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45535049"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118914"
 ---
 # <a name="runtimeclass-class"></a>RuntimeClass Sınıfı
 
@@ -69,7 +69,8 @@ Arabirimlerin listesini ötesinde nesne uygulayan `IUnknown`, `IInspectable` vey
 
 ## <a name="members"></a>Üyeler
 
-`RuntimeClassInitialize` Bir işlev, nesne başlatır `MakeAndInitialize` şablon işlevi, nesneyi oluşturmak için kullanılır. Başlatma başarısız olursa nesne başarıyla başlatıldı, S_OK veya bir COM hata kodu döndürür. COM hata kodu, dönüş değeri olarak yayılır `MakeAndInitialize`. Unutmayın `RuntimeClassInitialize` yönteminin çağrılmaması durumunda `Make` şablon işlevi, nesneyi oluşturmak için kullanılır.
+`RuntimeClassInitialize`<br/>
+Bir işlev, nesne başlatır `MakeAndInitialize` şablon işlevi, nesneyi oluşturmak için kullanılır. Başlatma başarısız olursa nesne başarıyla başlatıldı, S_OK veya bir COM hata kodu döndürür. COM hata kodu, dönüş değeri olarak yayılır `MakeAndInitialize`. Unutmayın `RuntimeClassInitialize` yönteminin çağrılmaması durumunda `Make` şablon işlevi, nesneyi oluşturmak için kullanılır.
 
 ### <a name="public-constructors"></a>Ortak Oluşturucular
 

@@ -113,14 +113,15 @@ ms.author: mblome
 ms.workload:
 - cplusplus
 - data-storage
-ms.openlocfilehash: e741055950449ea07c719cf6cd4c33a34d6f43b3
-ms.sourcegitcommit: a41c4d096afca1e9b619bbbce045b77135d32ae2
+ms.openlocfilehash: 3406614b99e2057c9469fe69d02a9fcbe4eae23b
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "42465169"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116769"
 ---
 # <a name="cbulkrowset-class"></a>CBulkRowset Sınıfı
+
 Getirir ve tek bir çağrı ile birden çok satır işleyicilerini alarak, toplu veriler üzerinde çalışmaya satırları yönetir.  
   
 ## <a name="syntax"></a>Sözdizimi
@@ -131,11 +132,13 @@ class CBulkRowset : public CRowset<TAccessor>
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- *TAccessor*  
- Bir erişimci sınıfı.  
+
+*TAccessor*<br/>
+Bir erişimci sınıfı.  
 
 ## <a name="requirements"></a>Gereksinimler  
- **Başlık:** atldbcli.h  
+
+**Başlık:** atldbcli.h  
   
 ## <a name="members"></a>Üyeler  
   
@@ -155,11 +158,13 @@ class CBulkRowset : public CRowset<TAccessor>
 |[SetRows](#setrows)|Bir çağrı tarafından alınacak olan satır işleyicilerini sayısını ayarlar.|  
   
 ## <a name="example"></a>Örnek  
- Aşağıdaki örnek, kullanımını gösterir. `CBulkRowset` sınıfı.  
+
+Aşağıdaki örnek, kullanımını gösterir. `CBulkRowset` sınıfı.  
   
- [!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
+[!code-cpp[NVC_OLEDB_Consumer#1](../../data/oledb/codesnippet/cpp/cbulkrowset-class_1.cpp)]  
 
 ## <a name="addrefrows"></a> CBulkRowset::AddRefRows
+
 Çağrıları [IRowset::AddRefRows](/previous-versions/windows/desktop/ms719619\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını artırmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -169,9 +174,11 @@ HRESULT AddRefRows() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT. 
+
+Standart bir HRESULT. 
   
 ## <a name="cbulkrowset"></a> CBulkRowset::CBulkRowset
+
 Yeni bir oluşturur `CBulkRowset` nesnesini ve varsayılan satır sayısı 10'a ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -181,6 +188,7 @@ CBulkRowset();
 ```  
 
 ## <a name="movefirst"></a> CBulkRowset::MoveFirst
+
 İlk veri satırı alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -190,9 +198,11 @@ HRESULT MoveFirst() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.
+
+Standart bir HRESULT.
 
 ## <a name="movelast"></a> CBulkRowset::MoveLast
+
 Son satıra taşır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -202,9 +212,11 @@ HRESULT MoveLast() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="movenext"></a> CBulkRowset::MoveNext
+
 Sonraki satırda veri alır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -214,9 +226,11 @@ HRESULT MoveNext() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT. Satır sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür. 
+
+Standart bir HRESULT. Satır sonuna ulaşıldığında DB_S_ENDOFROWSET döndürür. 
 
 ## <a name="moveprev"></a> CBulkRowset::MovePrev
+
 Önceki satıra taşır.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -226,9 +240,11 @@ HRESULT MovePrev() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="movetobookmark"></a> CBulkRowset::MoveToBookmark
+
 Bir yer işareti veya belirtilen bir uzaklık satırında tarafından işaretlenen satırı getirir (*lSkip*), yer işareti öğesinden.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -239,16 +255,19 @@ HRESULT MoveToBookmark(const CBookmarkBase& bookmark,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *Yer işareti*  
- [in] Veri getirmek istediğiniz yeri işaretlemek bir yer işareti.  
+
+*Yer işareti*<br/>
+[in] Veri getirmek istediğiniz yeri işaretlemek bir yer işareti.  
   
- *lSkip*  
- [in] Yer işareti hedef satır satır numarası sayısı. Varsa *lSkip* sıfırsa, getirilen ilk satır işaretli bir satırdır. Varsa *lSkip* 1, getirilen ilk satırın sonuna işaretli satır satırdır. Varsa *lSkip* -1, ilk satırın getirilen işaretli satır önce satırdır.  
+*lSkip*<br/>
+[in] Yer işareti hedef satır satır numarası sayısı. Varsa *lSkip* sıfırsa, getirilen ilk satır işaretli bir satırdır. Varsa *lSkip* 1, getirilen ilk satırın sonuna işaretli satır satırdır. Varsa *lSkip* -1, ilk satırın getirilen işaretli satır önce satırdır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
+
+Bkz: ['yı](/previous-versions/windows/desktop/ms716988\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*. 
 
 ## <a name="movetoratio"></a> CBulkRowset::MoveToRatio
+
 Satır kümesindeki kesirli bir konumdan başlayan satırları getirir.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -259,23 +278,27 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *nNumerator*  
- [in] Veri getirme kesirli konumu belirlemek için kullanılan pay.  
+
+*nNumerator*<br/>
+[in] Veri getirme kesirli konumu belirlemek için kullanılan pay.  
   
- *nDenominator*  
- [in] Payda verileri getirmek kesirli konumu belirlemek için kullanılır.  
+*nDenominator*<br/>
+[in] Payda verileri getirmek kesirli konumu belirlemek için kullanılır.  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
   
 ### <a name="remarks"></a>Açıklamalar  
- `MoveToRatio` aşağıdaki formülü göre kabaca satırları getirir:  
+
+`MoveToRatio` aşağıdaki formülü göre kabaca satırları getirir:  
   
- `(nNumerator *  RowsetSize ) / nDenominator`  
+`(nNumerator *  RowsetSize ) / nDenominator`  
   
- Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
+Burada `RowsetSize` satırlarda ölçülen satır boyutu. Bu formül doğruluğunu belirli sağlayıcısına bağlıdır. Ayrıntılar için bkz [IRowsetScroll::GetRowsAtRatio](/previous-versions/windows/desktop/ms709602\(v=vs.85\)) içinde *OLE DB Programcının Başvurusu*.   
 
 ## <a name="releaserows"></a> CBulkRowset::ReleaseRows
+
 Çağrıları [IRowset::ReleaseRows](/previous-versions/windows/desktop/ms719771\(v=vs.85\)) şu anda toplu satır kümesinden alınan tüm satırlar için başvuru sayısını azaltmak için.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -285,9 +308,11 @@ HRESULT ReleaseRows() throw();
 ```  
   
 ### <a name="return-value"></a>Dönüş Değeri  
- Standart bir HRESULT.  
+
+Standart bir HRESULT.  
 
 ## <a name="setrows"></a> CBulkRowset::SetRows
+
 Her bir çağrı tarafından alınan satır işleyicilerin sayısını ayarlar.  
   
 ### <a name="syntax"></a>Sözdizimi  
@@ -297,12 +322,15 @@ void SetRows(DBROWCOUNT nRows) throw();
 ```  
   
 #### <a name="parameters"></a>Parametreler  
- *nRows*  
- [in] Satır kümesi (satır sayısı) yeni boyutu.  
+
+*nRows*<br/>
+[in] Satır kümesi (satır sayısı) yeni boyutu.  
   
 ### <a name="remarks"></a>Açıklamalar  
- Bu işlev çağırırsanız, satır kümesi açılmadan önce olmalıdır.
+
+Bu işlev çağırırsanız, satır kümesi açılmadan önce olmalıdır.
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
- [OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)   
- [OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)
+
+[OLE DB Tüketici Şablonları](../../data/oledb/ole-db-consumer-templates-cpp.md)<br/>
+[OLE DB Tüketici Şablonları Başvurusu](../../data/oledb/ole-db-consumer-templates-reference.md)

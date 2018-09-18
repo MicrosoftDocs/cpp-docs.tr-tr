@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 886b44d0a51df10295428daa69c8ea358660fd25
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 8d54f49b7cce988c5902a01142efe061ba03e424
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321671"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46114533"
 ---
 # <a name="resource-compiler-fatal-error-rc1002"></a>Kaynak Derleyicisi Önemli Hatası RC1002
-yığın alanı kalmadı  
-  
-### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümlere kullanarak düzeltmek için  
-  
-1.  Windows takas dosyası alanı artırın. Takas dosyası alanını artırma hakkında daha fazla bilgi için sanal bellek Windows Yardım'a bakın.  
-  
-2.  Geçerli dosya küçük parçalara bölün ve ayrı olarak derleyin.  
-  
-3.  Diğer programları veya sürücüler sistemde çalışan kaldırın.
+
+yığın alanı kalmadı
+
+### <a name="to-fix-by-using-the-following-possible-solutions"></a>Aşağıdaki olası çözümleri kullanarak düzeltmek için
+
+1. Windows Dosya Takas alanı artırın. Takas dosyası alanı artırma hakkında daha fazla bilgi için Windows Yardım sanal bellekte bakın.
+
+1. Geçerli dosyayı daha küçük dosyalara bölün ve ayrı olarak derleyin.
+
+1. Diğer programları veya sürücüler sistemde çalışan kaldırın.

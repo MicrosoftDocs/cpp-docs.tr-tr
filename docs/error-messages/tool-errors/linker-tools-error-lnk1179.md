@@ -16,32 +16,34 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 72a531397c3c101fbff937f293f772c5f6778523
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: d22ebb329d390d44aea44ff9dc6f3bf2f86a1d26
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33300221"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117464"
 ---
 # <a name="linker-tools-error-lnk1179"></a>Bağlayıcı Araçları Hatası LNK1179
-geçersiz veya bozuk dosya: comdat'ı 'filename' Çoğalt  
-  
- İki veya daha fazla COMDATs aynı ada sahip bir nesne modülü içerir.  
-  
- Kullanarak bu hata oluşabilir [/H](../../build/reference/h-restrict-length-of-external-names.md), dış adların uzunluğunu sınırlar ve [/Gy](../../build/reference/gy-enable-function-level-linking.md), COMDATs işlevlerde paketler.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki kodda, `function1` ve `function2` ilk sekiz karakter aynıdır. İle derleme **/Gy** ve **/H8** bir bağlantı hatası oluşturur.  
-  
-```  
-void function1(void);  
-void function2(void);  
-  
-int main() {  
-    function1();  
-    function2();  
-}  
-  
-void function1(void) {}  
-void function2(void) {}  
+
+dosya geçersiz veya bozuk: Yinelenen COMDAT 'filename'
+
+İki veya daha fazla comdat'ları aynı ada sahip bir nesne modülü içerir.
+
+Kullanarak bu hata oluşabilir [/H](../../build/reference/h-restrict-length-of-external-names.md), dış adların uzunluğunu kısıtlar ve [/Gy](../../build/reference/gy-enable-function-level-linking.md), comdat'ları işlevlerde paketler.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki kodda, `function1` ve `function2` ilk sekiz karakterini içinde aynıdır. İle derlerken **/Gy** ve **/H8** bir bağlantı hatası oluşturur.
+
+```
+void function1(void);
+void function2(void);
+
+int main() {
+    function1();
+    function2();
+}
+
+void function1(void) {}
+void function2(void) {}
 ```

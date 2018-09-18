@@ -44,12 +44,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d771b24db830a03101b7a0041b02aeaeaf3b3b3d
-ms.sourcegitcommit: 92dbc4b9bf82fda96da80846c9cfcdba524035af
+ms.openlocfilehash: 591465ed9c16485498174a710d2d37ff68425058
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/05/2018
-ms.locfileid: "43756083"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116873"
 ---
 # <a name="csecuritydesc-class"></a>CSecurityDesc sınıfı
 
@@ -129,13 +129,13 @@ Oluşturucu.
 
 ```
 CSecurityDesc() throw();
-CSecurityDesc(const CSecurityDesc& rhs) throw(... );  
+CSecurityDesc(const CSecurityDesc& rhs) throw(... );
 CSecurityDesc(const SECURITY_DESCRIPTOR& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `CSecurityDesc` Nesne veya `SECURITY_DESCRIPTOR` yeni atamak yapısı `CSecurityDesc` nesne.
 
 ### <a name="remarks"></a>Açıklamalar
@@ -164,7 +164,7 @@ bool FromString(LPCTSTR pstr) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*pstr*  
+*pstr*<br/>
 İçeren null ile sonlandırılmış bir dize işaretçisine [dize biçimi güvenlik tanımlayıcısı](/windows/desktop/SecAuthZ/security-descriptor-string-format) dönüştürülecek.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -187,7 +187,7 @@ bool GetControl(SECURITY_DESCRIPTOR_CONTROL* psdc) const throw();
 
 ### <a name="parameters"></a>Parametreler
 
-*psdc*  
+*psdc*<br/>
 İşaretçi bir `SECURITY_DESCRIPTOR_CONTROL` güvenlik tanımlayıcının denetim bilgileri alan yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -211,13 +211,13 @@ bool GetDacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*pDacl*  
+*pDacl*<br/>
 İşaretçi bir `CDacl` yapısı güvenlik tanımlayıcısı'nın DACL bir kopyasını saklamak için. İsteğe bağlı bir ACL yoksa, yöntem ayarlar *pDacl* güvenlik tanımlayıcısı'nın gizli ACL adresine. İsteğe bağlı bir ACL yoksa hiçbir değer depolanır.
 
-*pbPresent*  
+*pbPresent*<br/>
 Belirtilen bir güvenlik tanımlayıcısının isteğe bağlı bir ACL'de varlığını gösteren bir değer işaretçisi. Güvenlik tanımlayıcısının isteğe bağlı bir ACL içeriyorsa, bu parametre için true. Güvenlik tanımlayıcısının isteğe bağlı bir ACL içermiyor, bu parametre false olarak ayarlanır.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 İşaretçi bir bayrak kümesi SE_DACL_DEFAULTED bayrağı değerine `SECURITY_DESCRIPTOR_CONTROL` isteğe bağlı bir ACL için güvenlik tanımlayıcısı varsa yapılandırın. Bu bayrak true ise, gizli ACL'yi varsayılan bir mekanizma tarafından alındı; false ise, gizli ACL, bir kullanıcı tarafından açıkça belirtildi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -236,10 +236,10 @@ bool GetGroup(
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*  
+*Psıd*<br/>
 İşaretçi bir [CSID](../../atl/reference/csid-class.md) (güvenlik tanımlayıcısı) CDacl içinde depolanan Grup bir kopyasını alır.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 İşaretçi bir bayrak kümesi SE_GROUP_DEFAULTED bayrağı değerine `SECURITY_DESCRIPTOR_CONTROL` yöntem döndürüldüğünde yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -258,10 +258,10 @@ bool GetOwner(
 
 ### <a name="parameters"></a>Parametreler
 
-*Psıd*  
+*Psıd*<br/>
 İşaretçi bir [CSID](../../atl/reference/csid-class.md) (güvenlik tanımlayıcısı) CDacl içinde depolanan Grup bir kopyasını alır.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 İşaretçi bir bayrak kümesi SE_OWNER_DEFAULTED bayrağı değerine `SECURITY_DESCRIPTOR_CONTROL` yöntem döndürüldüğünde yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -293,13 +293,13 @@ bool GetSacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*pSacl*  
+*pSacl*<br/>
 İşaretçi bir `CSacl` yapısı güvenlik tanımlayıcının SACL bir kopyasını saklamak için. Bir sistem ACL yoksa, yöntem ayarlar *pSacl* güvenlik tanımlayıcısı'nın sistem ACL adresine. Bir sistem ACL yoksa hiçbir değer depolanır.
 
-*pbPresent*  
+*pbPresent*<br/>
 Belirtilen güvenlik tanımlayıcısı bir sistemde ACL varlığını göstermek için bir bayrak yöntemi işaretçisine ayarlar. Güvenlik tanımlayıcısı bir sistem ACL içeriyorsa, bu parametre için true. Güvenlik tanımlayıcısı bir sistemi ACL içermiyor, bu parametre false olarak ayarlanır.
 
-*pbDefaulted*  
+*pbDefaulted*<br/>
 İşaretçi bir bayrak kümesi SE_SACL_DEFAULTED bayrağı değerine `SECURITY_DESCRIPTOR_CONTROL` bir sistem ACL için güvenlik tanımlayıcısı varsa yapısı.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -529,13 +529,13 @@ Mutlak biçimde güvenlik tanımlayıcısı bilgilerini içeren yerine, içerdi�
 Atama işleci.
 
 ```
-CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);  
+CSecurityDesc& operator= (const SECURITY_DESCRIPTOR& rhs) throw(...);
 CSecurityDesc& operator= (const CSecurityDesc& rhs) throw(...);
 ```
 
 ### <a name="parameters"></a>Parametreler
 
-*Sol*  
+*Sol*<br/>
 `SECURITY_DESCRIPTOR` Yapısı veya `CSecurityDesc` atamak için nesneyi `CSecurityDesc` nesne.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -546,7 +546,7 @@ Güncelleştirilmiş döndürür `CSecurityDesc` nesne.
 
 Bir işaretçi değerine çevirir `SECURITY_DESCRIPTOR` yapısı.
 
-```  
+```
 operator const SECURITY_DESCRIPTOR *() const throw();
 ```
 
@@ -562,10 +562,10 @@ bool SetControl(
 
 ### <a name="parameters"></a>Parametreler
 
-*Controlbitsofınterest*  
+*Controlbitsofınterest*<br/>
 Ayarlanacak denetim bitlerini gösteren SECURITY_DESCRIPTOR_CONTROL maskesi. Ayarlanabilecek bayrakların listesi için bkz. [SetSecurityDescriptorControl](https://msdn.microsoft.com/library/windows/desktop/aa379582\(v=vs.85\).aspx).
 
-*ControlBitsToSet*  
+*ControlBitsToSet*<br/>
 Tarafından belirtilen denetim bitleri için yeni değerler gösteren SECURITY_DESCRIPTOR_CONTROL maske *Controlbitsofınterest* maskesi. Bu parametre için listelenen bayrakların birleşimi olabilir *Controlbitsofınterest* parametresi.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -592,13 +592,13 @@ inline void SetDacl(
 
 ### <a name="parameters"></a>Parametreler
 
-*DACL*  
+*DACL*<br/>
 Başvuru bir `CDacl` güvenlik tanımlayıcısının DACL belirterek nesne. Bu parametre NULL olmamalıdır. Güvenlik tanımlayıcısı NULL DACL ayarlamak için yöntemin ilk formu ile kullanılmalıdır *bPresent* false olarak ayarlayın.
 
-*bPresent*  
+*bPresent*<br/>
 Güvenlik tanımlayıcısındaki DACL varlığını gösteren bir bayrak belirtir. Bu parametre true ise, yöntem SE_DACL_PRESENT bayrağı ayarlar `SECURITY_DESCRIPTOR_CONTROL` yapısı ve değerleri kullanan *Dacl* ve *bDefaulted* parametreleri. False ise, yöntem SE_DACL_PRESENT bayrağını temizler ve *bDefaulted* göz ardı edilir.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 DACL kaynağını belirten bir bayrak belirtir. Bu bayrak true ise, DACL bazı varsayılan bir mekanizma tarafından alındı. False ise, bir kullanıcı tarafından açıkça DACL belirtilmedi. Yöntemi, bu değer SE_DACL_DEFAULTED bayrağı depolar `SECURITY_DESCRIPTOR_CONTROL` yapısı. Bu parametre belirtilmezse, SE_DACL_DEFAULTED bayrağı temizlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -619,10 +619,10 @@ bool SetGroup(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*SID*  
+*SID*<br/>
 Başvuru bir [CSID](../../atl/reference/csid-class.md) güvenlik tanımlayıcısı'nın yeni birincil grubu için nesne. Bu parametre NULL olmamalıdır. Bir güvenlik tanımlayıcısının DACL veya SACL olmaması olarak işaretlenebilir, ancak bunlar bile bir grubu ve bir sahibi olması gerekir (yerleşik bir SID ile özel bir anlamı olan) NULL SID olan.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Birincil grup bilgileri varsayılan bir mekanizma türetilmişti gösterir. Bu değer true ise, varsayılan bilgilerdir ve yöntem SE_GROUP_DEFAULTED bayrağı olarak bu değeri depolar. `SECURITY_DESCRIPTOR_CONTROL` yapısı. Bu parametre sıfır ise SE_GROUP_DEFAULTED bayrağı temizlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -639,10 +639,10 @@ bool SetOwner(const CSid& Sid, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*SID*  
+*SID*<br/>
 [CSID](../../atl/reference/csid-class.md) nesne için güvenlik tanımlayıcısı'nın yeni birincil sahibi. Bu parametre NULL olmamalıdır.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 Sahiplik bilgilerini varsayılan bir mekanizma türetilip türetilmediğini gösterir. Bu değer true ise, varsayılan bilgileri olur. Yöntemi, SE_OWNER_DEFAULTED bayrağı olarak bu değeri depolar. `SECURITY_DESCRIPTOR_CONTROL` yapısı. Bu parametre sıfır ise SE_OWNER_DEFAULTED bayrağı temizlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -659,10 +659,10 @@ bool SetSacl(const CSacl& Sacl, bool bDefaulted = false) throw(...);
 
 ### <a name="parameters"></a>Parametreler
 
-*SACL*  
+*SACL*<br/>
 İşaretçi bir `CSacl` güvenlik tanımlayıcısının SACL belirterek nesne. Bu parametre NULL olmamalı ve CSacl nesnesi olmalıdır. DACL, NULL ve boş bir SACL arasında fark SACL nesneleri erişim hakları, yalnızca bilgi denetimini belirtmeyin gibi bulunur.
 
-*bDefaulted*  
+*bDefaulted*<br/>
 SACL kaynağını belirten bir bayrak belirtir. Bu bayrak true ise, SACL bazı varsayılan bir mekanizma tarafından alındı. False ise, bir kullanıcı tarafından açıkça SACL belirtilmedi. Yöntemi, bu değer SE_SACL_DEFAULTED bayrağı depolar `SECURITY_DESCRIPTOR_CONTROL` yapısı. Bu parametre belirtilmezse, SE_SACL_DEFAULTED bayrağı temizlenir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -682,10 +682,10 @@ bool ToString(
 
 ### <a name="parameters"></a>Parametreler
 
-*pstr*  
+*pstr*<br/>
 Alacak null ile sonlandırılmış bir dize işaretçisi [dize biçimi güvenlik tanımlayıcısı](/windows/desktop/SecAuthZ/security-descriptor-string-format).
 
-*sı*  
+*sı*<br/>
 Çıkış dizesine eklemek için güvenlik tanımlayıcısı bileşenlerini göstermek için SECURITY_INFORMATION bit bayrakları birleşimi belirtir.
 
 ### <a name="return-value"></a>Dönüş Değeri
@@ -713,7 +713,7 @@ Bu yöntemin çağırdığı [ConvertStringSecurityDescriptorToSecurityDescripto
 
 ## <a name="see-also"></a>Ayrıca Bkz.
 
-[Güvenliği örneği](../../visual-cpp-samples.md)   
-[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)   
-[Sınıfına genel bakış](../../atl/atl-class-overview.md)   
+[Güvenliği örneği](../../visual-cpp-samples.md)<br/>
+[SECURITY_DESCRIPTOR](/windows/desktop/api/winnt/ns-winnt-_security_descriptor)<br/>
+[Sınıfına genel bakış](../../atl/atl-class-overview.md)<br/>
 [Güvenlik Genel İşlevleri](../../atl/reference/security-global-functions.md)

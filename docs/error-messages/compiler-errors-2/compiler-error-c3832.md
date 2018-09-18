@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bc751880826731c3943028a935e26936b73240f
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 1c443242779fd355ed4f945bc33880ff8b96c566
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33266561"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115222"
 ---
 # <a name="compiler-error-c3832"></a>Derleyici Hatası C3832
-'tür kitaplığı': tür kitaplığı 32-bit işaretçileri; oluşturulmuşsa gibi görünüyor Lütfen 'ptrsize' niteleyicisi değiştirin  
-  
- Açık bilgi sağlanan ile `ptrsize` özniteliği [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi değil kabul ne derleyici tür kitaplığı'nda bulunan ile.
+
+'tür kitaplığı': tür kitaplığı 32-bit işaretçiler için; oluşturulduysa gibi görünüyor Lütfen 'ptrsize' niteleyicisi değiştirin
+
+Açık bilgi sağlanan ile `ptrsize` özniteliği [#import](../../preprocessor/hash-import-directive-cpp.md) yönergesi kabul ne derleyici tür kitaplığında bulunan ile.

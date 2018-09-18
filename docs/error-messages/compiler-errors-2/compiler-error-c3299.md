@@ -16,37 +16,39 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ecaa0b8d3ee1a3d33a5d750cc559da63e036ff16
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 7ca5a57ca1cdfe442386872d738a01cf4235685c
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33249907"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117835"
 ---
 # <a name="compiler-error-c3299"></a>Derleyici Hatası C3299
-'member_function': kısıtlamaları belirtemezsiniz temel yöntemden devralınan  
-  
- Genel üye işlevi geçersiz kılarken kısıtlaması yan tümceleri (kısıtlamaları gelir kısıtlamaları devralınmaz yinelenen) belirtilemez.  
-  
- Geçersiz kılma genel işlevi üzerinde kısıtlaması yan tümceleri devralınır.  
-  
- Daha fazla bilgi için bkz: [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3299 oluşturur.  
-  
-```  
-// C3299.cpp  
-// compile with: /clr /c  
-public ref struct R {  
-   generic<class T>   
-   where T : R  
-   virtual void f();  
-};  
-  
-public ref struct S : R {  
-   generic<class T>   
-   where T : R   // C3299  
-   virtual void f() override;  
-};  
+
+'member_function': kısıtlamalar belirtilemez bunlar temel yöntemden devralınır
+
+Genel üye işlevini geçersiz kılarken, kısıtlama yan tümceleri (kısıtlamaları gelir kısıtlamaları devralınmaz yinelenen) belirtilemez.
+
+Kısıtlama yan tümceleri geçersiz kıldıkları genel işlev üzerinde devralınır.
+
+Daha fazla bilgi için [genel tür parametrelerindeki kısıtlamalar (C + +/ CLI)](../../windows/constraints-on-generic-type-parameters-cpp-cli.md).
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3299 oluşturur.
+
+```
+// C3299.cpp
+// compile with: /clr /c
+public ref struct R {
+   generic<class T>
+   where T : R
+   virtual void f();
+};
+
+public ref struct S : R {
+   generic<class T>
+   where T : R   // C3299
+   virtual void f() override;
+};
 ```

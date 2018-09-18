@@ -22,12 +22,12 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 050317be4c5f933ca9e08055a02555f5597c583c
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 573af4088e288403edaa8e5c34fb84817442c8f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39406539"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116002"
 ---
 # <a name="ptr32-ptr64"></a>__ptr32, __ptr64
 
@@ -42,7 +42,7 @@ int * __ptr32 p32;
 int * __ptr64 p64;
 ```
 
- Bir işaretçi bir 32-bit sistemde bildirilen **__ptr64** 32 bit işaretçi kesilir. Bir işaretçi bir 64-bit sistemde bildirilen **__ptr32** 64-bit işaretçi durumunda bırakılması.
+Bir işaretçi bir 32-bit sistemde bildirilen **__ptr64** 32 bit işaretçi kesilir. Bir işaretçi bir 64-bit sistemde bildirilen **__ptr32** 64-bit işaretçi durumunda bırakılması.
 
 > [!NOTE]
 > Kullanamazsınız **__ptr32** veya **__ptr64** ile derleme yaparken **/CLR: pure**. Aksi halde, derleyici hatası C2472 oluşturulur. **/CLR: pure** ve **/CLR: safe** derleyici seçenekleri Visual Studio 2015'te kullanım dışı ve Visual Studio 2017'de desteklenmiyor.
@@ -80,4 +80,5 @@ int main()
 **END Microsoft özgü**
 
 ## <a name="see-also"></a>Ayrıca bkz.
- [Temel Türler](../cpp/fundamental-types-cpp.md)
+
+[Temel Türler](../cpp/fundamental-types-cpp.md)

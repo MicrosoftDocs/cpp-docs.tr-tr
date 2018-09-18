@@ -16,24 +16,25 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: fcc109fe3ccf06e0461deed449517850271a2024
-ms.sourcegitcommit: 7eadb968405bcb92ffa505e3ad8ac73483e59685
+ms.openlocfilehash: 479bd4ff8a4f48da679c9e17ec100668de84d089
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39209397"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46113714"
 ---
 # <a name="linker-tools-warning-lnk4237"></a>Bağlayıcı Araçları Uyarısı LNK4237
-'Dll'; dosyasından içeri aktarılırken belirtilen natıve / Subsystem: Console veya /SUBSYSTEM:WINDOWS kullanın.  
-  
- [Natıve](../../build/reference/subsystem-specify-subsystem.md) doğrudan windows (Win32) uygulaması oluşturmaya birini veya birkaçını kullandığında belirtildi:  
-  
--   Kernel32.dll  
-  
--   Gdi32.dll  
-  
--   User32.dll  
-  
--   msvcrt birini\* DLL'ler.  
-  
- Değil belirterek bu uyarıyı gidermek **natıve**.
+
+'Dll'; dosyasından içeri aktarılırken belirtilen natıve / Subsystem: Console veya /SUBSYSTEM:WINDOWS kullanın.
+
+[Natıve](../../build/reference/subsystem-specify-subsystem.md) doğrudan windows (Win32) uygulaması oluşturmaya birini veya birkaçını kullandığında belirtildi:
+
+- Kernel32.dll
+
+- Gdi32.dll
+
+- User32.dll
+
+- msvcrt birini\* DLL'ler.
+
+Değil belirterek bu uyarıyı gidermek **natıve**.

@@ -16,36 +16,38 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b937b6ecebedc6984279502a5f64b287f09bd2d9
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: fa0a084e90db9d48f517bfe65c6340eb532f0ae6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33290676"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46118576"
 ---
 # <a name="compiler-warning-level-2-c4396"></a>Derleyici Uyarısı (Düzey 2) C4396
-"name": arkadaş bildirimi işlevi şablonu özelleştirmesi için başvurduğunda satır içi belirticisi kullanılamaz  
-  
- İşlev şablonu uzmanlaşması herhangi birini belirtmek [satır içi](../../cpp/inline-functions-cpp.md) tanımlayıcıları. Derleyici Uyarısı C4396 sorunları ve satır içi tanımlayıcısı yok sayar.  
-  
-### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için  
-  
--   Kaldırma `inline`, `__inline`, veya `__forceinline` arkadaş işlev bildirimi gelen tanımlayıcısı.  
-  
-## <a name="example"></a>Örnek  
- Geçersiz bir arkadaş işlevi bildiriminde ile aşağıdaki kodu örnekte gösterildiği bir `inline` tanımlayıcısı.  
-  
-```  
-// C4396.cpp  
-// compile with: /W2 /c  
-  
-class X;   
-template<class T> void Func(T t, int i);  
-  
-class X {  
-    friend inline void Func<char>(char t, int i);  //C4396  
-// try the following line instead  
-//    friend void Func<char>(char t, int i);   
-    int i;  
-};  
+
+"name": işlev şablonunun bir özelleştirmesi için bir friend bildirimi başvurduğunda, satır içi belirtici kullanılamaz
+
+Herhangi bir işlev şablonunun bir özelleştirmesi belirtemezsiniz [satır içi](../../cpp/inline-functions-cpp.md) tanımlayıcıları. Derleyici Uyarısı C4396 sorunları ve satır içi belirticiyi yok sayar.
+
+### <a name="to-correct-this-error"></a>Bu hatayı düzeltmek için
+
+- Kaldırma `inline`, `__inline`, veya `__forceinline` belirticisi arkadaş işlev bildirimi öğesinden.
+
+## <a name="example"></a>Örnek
+
+Geçersiz bir arkadaş işlev bildirimi ile aşağıdaki kod örnekte gösterildiği bir `inline` tanımlayıcısı.
+
+```
+// C4396.cpp
+// compile with: /W2 /c
+
+class X;
+template<class T> void Func(T t, int i);
+
+class X {
+    friend inline void Func<char>(char t, int i);  //C4396
+// try the following line instead
+//    friend void Func<char>(char t, int i);
+    int i;
+};
 ```

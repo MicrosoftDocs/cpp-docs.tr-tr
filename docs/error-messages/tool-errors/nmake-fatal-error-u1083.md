@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: bd7ba60c712181abf0c519fdd072de566157a186
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e2d162551f0f1eea68fb008ba8b7d1c6d304b6a4
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33321567"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116663"
 ---
 # <a name="nmake-fatal-error-u1083"></a>NMAKE Önemli Hatası U1083
-Hedef makrosu 'target' için hiçbir şey genişletir.  
-  
- Belirtilen hedef, tanımlanmamış veya null değere sahip bir makro çağrıdır. NMAKE null hedef işleyemiyor.
+
+Hedef makro 'target' hiçbir öğeye genişletilmez
+
+Belirtilen hedef tanımlanmadı veya null bir değere sahip bir makronun bir çağrıdır. NMAKE null bir hedef işleme alınamıyor.

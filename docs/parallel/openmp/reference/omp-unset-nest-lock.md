@@ -16,15 +16,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8434fb3e4cb07b11f2142f78ee4b243e6945dfd9
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: ddc3605bfef5c96a8882872aafbe1a15dda3e4cf
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33691670"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115976"
 ---
 # <a name="ompunsetnestlock"></a>omp_unset_nest_lock
-Nestable bir kilidi serbest bırakır.  
+Nestable kilit serbest bırakır.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -34,14 +34,13 @@ void omp_unset_nest_lock(
 );  
 ```  
   
-## <a name="remarks"></a>Açıklamalar  
- Burada,  
+### <a name="parameters"></a>Parametreler
   
- `lock`  
- Türünde bir değişken [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) , başlatılmış ile [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md), iş parçacığı tarafından sahip olunan ve işlevinde yürütülüyor.  
+*lock*<br/>
+Türünde bir değişken [omp_nest_lock_t](../../../parallel/openmp/reference/omp-nest-lock-t.md) , başlatılan ile [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md), iş parçacığı tarafından sahip olunan ve işlev yürütme.  
   
 ## <a name="remarks"></a>Açıklamalar  
- Daha fazla bilgi için bkz: [3.2.4 omp_unset_lock ve omp_unset_nest_lock işlevleri](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md).  
+ Daha fazla bilgi için [3.2.4 omp_unset_lock ve omp_unset_nest_lock işlevleri](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md).  
   
 ## <a name="example"></a>Örnek  
  Bkz: [omp_init_nest_lock](../../../parallel/openmp/reference/omp-init-nest-lock.md) kullanma örneği için `omp_unset_nest_lock`.  

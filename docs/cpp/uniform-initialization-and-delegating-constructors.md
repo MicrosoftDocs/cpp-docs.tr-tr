@@ -12,17 +12,19 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f985d206a342611dfccb4f05347b0ecc9e9521b0
-ms.sourcegitcommit: f0c90000125a9497bf61e41624de189a043703c0
+ms.openlocfilehash: 80beb5e840e182396f519b6b827dd8d727252d61
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 09/10/2018
-ms.locfileid: "44314667"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116249"
 ---
 # <a name="uniform-initialization-and-delegating-constructors"></a>Tek Düzen Başlatma ve Oluşturucuları Temsilci Olarak Görevlendirme
+
 Modern C++'ta kullanabileceğiniz *başlatma ayracı* eşittir işareti olmadan herhangi bir tür için. Ayrıca, temsilci oluşturucuları benzer işi gerçekleştiren birden çok oluşturucuları varsa, kodu basitleştirmek için kullanabilirsiniz.
 
 ## <a name="brace-initialization"></a>Ayraç başlatma
+
 Bir sınıf, yapı veya birleşim ayraç başlatma kullanabilirsiniz. Türü örtük veya açık olarak bildirilen bir varsayılan oluşturucusu varsa, varsayılan ayraç başlatma (boş küme ayraçları ile) kullanabilirsiniz. Örneğin, aşağıdaki sınıf hem varsayılan hem de varsayılan olmayan ayraç başlatma kullanılarak başlatılmamış olabilir:
 
 ```cpp
@@ -99,6 +101,7 @@ return { 4.5 };
 ```
 
 ## <a name="initializerlist-constructors"></a>initializer_list oluşturucular
+
 [İnitializer_list sınıfı](../standard-library/initializer-list-class.md) bir oluşturucu ve diğer bağlamlarda kullanılacak belirtilen türdeki nesneleri listesini temsil eder. Ayraç başlatma kullanılarak bir initializer_list oluşturabilirsiniz:
 
 ```cpp
@@ -127,6 +130,7 @@ regex rgx{'x', 'y', 'z'};
 ```
 
 ## <a name="delegating-constructors"></a>Oluşturucuların Temsili
+
 Birçok sınıflar benzer bir şey yapmanız birden çok oluşturucular sahiptir — örneğin, parametrelerini doğrular:
 
 ```cpp

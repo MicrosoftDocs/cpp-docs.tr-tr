@@ -16,20 +16,21 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0ba216e63cb0cae92b4541800493a2fb6195553a
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: 2bf7bdeed320c004ffb75fa1d25d9b89147b0c13
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33320020"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46117406"
 ---
 # <a name="resource-compiler-fatal-error-rw1025"></a>Kaynak Derleyicisi Önemli Hatası RW1025
-Şimdiye kadar yığın bellek yetersiz  
-  
- Çok fazla yer işgal bellekte yazılım olup olmadığını denetleyin. CHKDSK program elinizde ne kadar bellek bulmak için kullanın.  
-  
- Büyük kaynak dosyası oluşturuyorsanız, bir kaynak betik iki dosyaya bölün. İki .res dosyaları oluşturduktan sonra bunları birlikte katılmaya MS-DOS komut satırını kullanın:  
-  
-```  
-copy first.res /b + second.res /b full.res  
+
+Şimdiye kadar yığın bellek yetersiz
+
+Çok fazla yer gerçekleşebilecek bellekte yazılım olup olmadığını denetleyin. CHKDSK program, sahip olduğunuz ne kadar bellek bulmak için kullanın.
+
+Büyük bir kaynak dosyasını oluşturuyorsanız, kaynak betiği iki dosyalara bölün. İki .res dosyası oluşturduktan sonra bunları birbirine birleştirmek için MS-DOS komut satırını kullanın:
+
+```
+copy first.res /b + second.res /b full.res
 ```

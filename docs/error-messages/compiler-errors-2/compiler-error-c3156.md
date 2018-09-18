@@ -16,26 +16,28 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9557043bac056435dd53b210359e7bb72b29b6d7
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: cfb52ad730df486ee804bcf958505512fadc0150
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33248235"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116710"
 ---
 # <a name="compiler-error-c3156"></a>Derleyici Hatası C3156
-'class': bir yönetilen yerel tanımını ya da WinRT türüne sahip olamaz  
-  
- Bir işlev tanımı veya yönetilen bir ya da WinRT bildirimi içeremez sınıf, yapı veya arabirim.  
-  
-## <a name="example"></a>Örnek  
- Aşağıdaki örnek C3156 oluşturur.  
-  
-```  
-// C3156.cpp  
-// compile with: /clr /c  
-void f() {  
-   ref class X {};   // C3156  
-   ref class Y;   // C3156  
-}  
-```  
+
+'class': bir yönetilen yerel tanımını ya da WinRT türüne sahip olamaz
+
+Bir işlev tanımı veya bir yönetilen veya WinRT bildirimi içeremez sınıf, yapı veya arabirim.
+
+## <a name="example"></a>Örnek
+
+Aşağıdaki örnek, C3156 oluşturur.
+
+```
+// C3156.cpp
+// compile with: /clr /c
+void f() {
+   ref class X {};   // C3156
+   ref class Y;   // C3156
+}
+```

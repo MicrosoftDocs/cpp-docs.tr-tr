@@ -17,25 +17,26 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d0c89df02c624d96c613f6241c9beefd466827e
-ms.sourcegitcommit: 2b9e8af9b7138f502ffcba64e2721f7ef52af23b
+ms.openlocfilehash: 9855dc406c56f82eb3ed87248316103397e44007
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39402620"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46112661"
 ---
 # <a name="char-wchart-char16t-char32t"></a>char, wchar_t, char16_t, char32_t
+
 Türleri **char**, **wchar_t**, **char16_t** ve **char32_t** alfasayısal karakterleri temsil eden yerleşik türleri olarak alfasayısal olmayan karakterleri ve yazdırılamayan karakterler.
 
 ## <a name="syntax"></a>Sözdizimi
 
-```cpp  
-char     ch1{ 'a' };  // or { u8'a' }   
-wchar_t  ch2{ L'a' };    
-char16_t ch3{ u'a' };    
-char32_t ch4{ U'a' };  
-```  
-  
+```cpp
+char     ch1{ 'a' };  // or { u8'a' }
+wchar_t  ch2{ L'a' };
+char16_t ch3{ u'a' };
+char32_t ch4{ U'a' };
+```
+
 ## <a name="remarks"></a>Açıklamalar
 
 **Char** türde C ve C++'ta orijinal karakter türü. Türü **imzasız char** temsil etmek için kullanılan bir *bayt*, C++'ta yerleşik bir tür değil. **Char** türü, ASCII karakter kümesi veya herhangi bir ISO-8859 karakter kümesi ve tek tek bayt Shift-JIS gibi çok baytlı karakter veya Unicode karakter kümesini UTF-8 kodlaması karakterlerinden depolamak için kullanılabilir. Dizeleri **char** türü denir *daraltmak* bile çok baytlı karakterleri kodlamak için kullanıldığında, dizeleri. Microsoft derleyicisi, **char** bir 8 bit türüdür.
@@ -44,4 +45,4 @@ char32_t ch4{ U'a' };
 
 **Char16_t** ve **char32_t** türleri 16-bit ve 32-bit geniş karakterler sırasıyla temsil eder. Unicode UTF-16 depolanabilir gibi kodlanmış **char16_t** türü ve Unicode UTF-32 depolanabilir gibi kodlanmış **char32_t** türü. Bu tür dizeleri ve **wchar_t** olan tüm denilen *geniş* dizeler özellikle dizeleri için genelde bu terim başvuruyor ancak **wchar_t** türü.
 
-C++ Standart Kitaplığı'nda `basic_string` türü için hem dar hem geniş dize özelleştirilmiş. Kullanım `std::string` karakter türü olduğunda **char**, `std::u16string` karakter türü olduğunda **char16_t**, `std::u32string` karakter türü olduğunda **char32_t** , ve `std::wstring` karakter türü olduğunda **wchar_t**. Metin, diğer türler dahil olmak üzere `std::stringstream` ve `std::cout` dar ve geniş dizeleri uzmanlıklar vardır.  
+C++ Standart Kitaplığı'nda `basic_string` türü için hem dar hem geniş dize özelleştirilmiş. Kullanım `std::string` karakter türü olduğunda **char**, `std::u16string` karakter türü olduğunda **char16_t**, `std::u32string` karakter türü olduğunda **char32_t** , ve `std::wstring` karakter türü olduğunda **wchar_t**. Metin, diğer türler dahil olmak üzere `std::stringstream` ve `std::cout` dar ve geniş dizeleri uzmanlıklar vardır.

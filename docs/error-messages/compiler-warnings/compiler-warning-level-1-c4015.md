@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d4ad81175a033f60bd866da445bfe4a7f2dabfca
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: e0cbf958cad0ddd15d2827881e0d33a15ad7a9e6
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33271811"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115300"
 ---
 # <a name="compiler-warning-level-1-c4015"></a>Derleyici Uyarısı (düzey 1) C4015
-'tanımlayıcısı': bit alan türü tamsayı olmalıdır  
-  
- Bit alanı bir tamsayı türü olarak bildirilmedi. Derleyici işaretsiz olacak bit alanı temel türünü varsayar. Bit alanları imzasız tamsayı türleri olarak bildirilmesi gerekir.
+
+'identifier': bit alanının türü tamsayı olmalıdır
+
+Bit alanı bir tamsayı türü bildirilmedi. Derleyici, işaretsiz olması bit alanının temel türü varsayar. Bit alanları işaretsiz tamsayı türleri olarak bildirilmelidir.

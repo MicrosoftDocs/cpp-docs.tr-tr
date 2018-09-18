@@ -18,15 +18,15 @@ author: mikeblome
 ms.author: mblome
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8964a373378c0959c2836cca4de309853f29c077
-ms.sourcegitcommit: 7019081488f68abdd5b2935a3b36e2a5e8c571f8
+ms.openlocfilehash: af30dd9d7ff6ac64d6c0659520a6e7a15f2d0d93
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33689408"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46116665"
 ---
 # <a name="operationtimedout-class"></a>operation_timed_out Sınıfı
-Bu sınıf, bir işlem zaman aşımına uğradı zaman oluşturulan bir özel açıklar.  
+Bu sınıf, bir işlem zaman aşımına uğradığında oluşturulan bir özel açıklar.  
   
 ## <a name="syntax"></a>Sözdizimi  
   
@@ -40,7 +40,7 @@ class operation_timed_out : public std::exception;
   
 |Ad|Açıklama|  
 |----------|-----------------|  
-|[operation_timed_out](#ctor)|Fazla Yüklendi. Oluşturan bir `operation_timed_out` nesnesi.|  
+|[operation_timed_out](#ctor)|Fazla Yüklendi. Oluşturur bir `operation_timed_out` nesne.|  
   
 ## <a name="inheritance-hierarchy"></a>Devralma Hiyerarşisi  
  `exception`  
@@ -54,7 +54,7 @@ class operation_timed_out : public std::exception;
   
 ##  <a name="ctor"></a> operation_timed_out 
 
- Oluşturan bir `operation_timed_out` nesnesi.  
+ Oluşturur bir `operation_timed_out` nesne.  
   
 ```
 explicit _CRTIMP operation_timed_out(_In_z_ const char* _Message) throw();
@@ -63,8 +63,8 @@ operation_timed_out() throw();
 ```  
   
 ### <a name="parameters"></a>Parametreler  
- `_Message`  
- Hata açıklayıcı bir ileti.  
+*İl_eti*<br/>
+Hatanın açıklayıcı bir iletisi.  
   
 ## <a name="see-also"></a>Ayrıca Bkz.  
  [Eşzamanlılık Ad Alanı](concurrency-namespace.md)

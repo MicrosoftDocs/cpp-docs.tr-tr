@@ -16,14 +16,15 @@ author: corob-msft
 ms.author: corob
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07456ebf093f12c7ca418e56f183ceb792460b72
-ms.sourcegitcommit: 76b7653ae443a2b8eb1186b789f8503609d6453e
+ms.openlocfilehash: f1ca04ec78d5c8baa2b69f3ec0c05fe84b7bc5f5
+ms.sourcegitcommit: 913c3bf23937b64b90ac05181fdff3df947d9f1c
 ms.translationtype: MT
 ms.contentlocale: tr-TR
-ms.lasthandoff: 05/04/2018
-ms.locfileid: "33198423"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46115846"
 ---
 # <a name="fatal-error-c1601"></a>Önemli hata C1601
-Desteklenmeyen satır içi derleme işlem kodu  
-  
- Bu hata, tamamlanmamış bir yüklemesi nedeniyle oluşmuş olabilir, derleyici .exe dosyaları uyuşmazlık gösterir. Örneğin, bir hizmet paketi ancak işlemci paketi yüklemiş olabilirsiniz. Tüm gerekli ürünlerini yükleyin.
+
+Desteklenmeyen satır içi derleme işlem kodu
+
+Bu hata, tamamlanmamış bir yükleme nedeniyle oluşmuş olabilir, derleyici .exe dosyaları uyuşmazlık gösterir. Örneğin, bir hizmet paketine ancak işlemci paketi yüklemiş olabilirsiniz. Tüm gerekli ürünlerini yükleyin.
